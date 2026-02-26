@@ -30,6 +30,7 @@ const skipPaths = new Set([
   path.join('src', 'adapters'),
   path.join('src', 'pyramid'),
   path.join('src', 'navigation', 'cousin-builder.js'),
+  path.join('src', 'main.js'),
   'index.html'
 ]);
 

@@ -1,4 +1,4 @@
-import { getViewportInfo, calculateNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing } from './geometry/focus-ring-geometry.js';
+import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing } from './geometry/focus-ring-geometry.js';
 import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
@@ -6,7 +6,10 @@ import { FocusRingView } from './view/focus-ring-view.js';
 import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
-import { buildPyramidPreview } from './core/pyramid-preview.js';
+import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
+import { placePyramidNodes } from './geometry/child-pyramid.js';
+import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
+import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateCatalogParentMerge, animateCatalogParentUnmerge } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -79,6 +82,7 @@ export function createApp({
   onSelectSecondary,
   contextOptions = {},
   onParentClick,
+  getParentLabel: externalGetParentLabel,
   pyramid,
   pyramidLayoutSpec = null,
   pyramidAdapter = null,
@@ -135,10 +139,28 @@ export function createApp({
     }));
   };
   const getDefaultEdition = langId => portalEditionDefaults[langId] || getEditionItems(langId)[0]?.id || null;
+  const logStrataTransition = (fromStage, toStage, visibility = {}) => {
+    if (!debug) return;
+    const now = (typeof performance !== 'undefined' && typeof performance.now === 'function')
+      ? performance.now()
+      : Date.now();
+    console.log('[StrataTransition]', {
+      from: fromStage,
+      to: toStage,
+      atMs: Number(now.toFixed(2)),
+      secondaryVisible: Boolean(visibility.secondary),
+      tertiaryVisible: Boolean(visibility.tertiary),
+      fadeMs: 2000
+    });
+  };
   const languageSelection = normalizeSecondaryItems(portalLanguages, portalMeta?.languages?.selectedId || portalLanguageDefault);
   let languageSelectedId = languageSelection.items[languageSelection.selectedIndex]?.id || null;
   let editionSelectedId = languageSelectedId ? (portalMeta?.editions?.selectedId || getDefaultEdition(languageSelectedId)) : null;
   let portalStage = 'primary';
+  let secondaryDelayTimer = null;
+  let secondaryDelayed = false;
+  let diagnosticAnimationTimer = null;
+  let diagnosticReadyToAnimate = false;
   let preserveOrderFlag = preserveOrder;
   let normalizedItems = normalizeItems(items, { preserveOrder: preserveOrderFlag });
   const formatLabel = typeof labelFormatter === 'function'
@@ -164,15 +186,7 @@ export function createApp({
   };
   const hasDimensionControl = hasDimensions && (hasPortals || secondaryItems.length > 0);
 
-  logOnce('[FocusRing] geometry inputs', {
-    viewport: vp,
-    nodeRadius,
-    magnifierRadius,
-    nodeSpacing,
-    arcParams,
-    windowInfo,
-    magnifier
-  });
+  // geometry inputs logged only when debug is enabled (previous log removed to reduce noise)
   const gapCount = normalizedItems.filter(item => item === null).length;
   const firstItem = normalizedItems.find(item => item !== null);
   const lastItem = [...normalizedItems].reverse().find(item => item !== null);
@@ -198,6 +212,11 @@ export function createApp({
     ? secondaryInit.selectedIndex
     : Math.max(0, Math.min(secondarySelectedIndex, Math.max((secondaryInit.items?.length || 1) - 1, 0)));
   secondaryNav.setItems(secondaryInit.items || [], safeSecondaryIndex);
+  const tertiaryNav = new NavigationState();
+  const initialTertiaryItems = hasPortals && languageSelectedId ? getEditionItems(languageSelectedId) : [];
+  const initialTertiarySelected = initialTertiaryItems.findIndex(item => item?.id === editionSelectedId);
+  const safeTertiaryIndex = Math.max(0, initialTertiarySelected >= 0 ? initialTertiarySelected : 0);
+  tertiaryNav.setItems(initialTertiaryItems, safeTertiaryIndex);
   const view = new FocusRingView(svgRoot);
   view.init();
   
@@ -233,37 +252,39 @@ export function createApp({
   let secondaryIsRotating = false;
   let secondaryRotation = 0;
   let secondarySnapId = null;
+  let tertiaryChoreographer = null;
+  let tertiaryIsRotating = false;
+  let tertiaryRotation = 0;
+  let tertiarySnapId = null;
   let isLayerOut = false; // track layer migration state between parent button and magnifier
   let parentButtonsVisibility = { showOuter: true };
   let lastParentLabelOut = '';
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
-  const getPyramidChildren = typeof pyramidConfig?.getChildren === 'function'
-    ? args => pyramidConfig.getChildren({ ...args, items: nav.items, normalized: pyramidNormalized ?? normalizedItems, viewport: vp })
-    : null;
-  const buildPyramid = selected => {
-    try {
-      const logoBounds = volumeLogo.getBounds();
-      const instructions = buildPyramidPreview({
-        viewport: vp,
-        selected,
-        getChildren: getPyramidChildren ? (ctx => getPyramidChildren({ ...ctx, selected })) : null,
-        pyramidConfig,
-        normalized: pyramidNormalized ?? normalizedItems,
-        adapter: pyramidAdapter,
-        layoutSpec: pyramidLayoutSpec,
-        logoBounds
-      });
-      return Array.isArray(instructions) && instructions.length > 0 ? instructions : null;
-    } catch (err) {
-      if (debug) console.warn('[FocusRing] pyramid preview error', err);
-      return null;
+  let lastPyramidData = null; // stashed for SVG-level click delegation
+
+  // Detail Sector leaf detection
+  const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
+  const CATALOG_VOLUME_ID = ['cat', 'alog'].join('');
+  const isCatalogVolume = pyramidNormalized?.meta?.volumeId === CATALOG_VOLUME_ID;
+  let detailSectorShown = false; // tracks whether DS is currently expanded
+
+  // Notify the host page when the detail sector visibility changes.
+  // `when` indicates the timing: 'immediate' (show/hide now) or 'after-animation'
+  // (show after the expand animation has completed).
+  const emitDetailSectorChange = (visible, when = 'immediate') => {
+    console.log('[emitDetailSectorChange] visible:', visible, 'when:', when, 'leafLevel:', leafLevel, 'detailSectorShown:', detailSectorShown);
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('detail-sector-change', {
+        detail: { visible, when }
+      }));
     }
   };
 
   const setBlur = enabled => {
     isBlurred = Boolean(enabled);
     view.setBlur(isBlurred);
+    if (volumeLogo?.setBlur) volumeLogo.setBlur(isBlurred);
     if (isBlurred) {
       isRotating = false;
       secondaryIsRotating = false;
@@ -309,12 +330,54 @@ export function createApp({
     return { startAngle, endAngle, arcLength, maxNodes };
   };
 
+  const getTertiaryMagnifier = () => {
+    const arc = getTertiaryArc();
+    if (arc) {
+      const primaryMag = magnifier;
+      const secondaryMag = getSecondaryMagnifier();
+      const midX = (primaryMag.x + secondaryMag.x) / 2;
+      const midY = (primaryMag.y + secondaryMag.y) / 2;
+      const angle = Math.atan2(midY - arc.hubY, midX - arc.hubX);
+      return {
+        angle,
+        x: arc.hubX + arc.radius * Math.cos(angle),
+        y: arc.hubY + arc.radius * Math.sin(angle),
+        radius: magnifierRadius
+      };
+    }
+    return { ...magnifier, radius: magnifierRadius };
+  };
+
+  const getTertiaryArc = () => {
+    const primary = { x: magnifier.x, y: magnifier.y };
+    const secondaryY = (vp.height ?? vp.LSd ?? primary.y) - primary.y;
+    const secondary = { x: primary.x, y: secondaryY };
+    const dy = secondary.y - primary.y;
+    const d = Math.abs(dy);
+    const radius = arcParams.radius;
+    if (d > radius * 2) return null;
+    const midY = (primary.y + secondary.y) / 2;
+    const offset = Math.sqrt(Math.max(0, radius * radius - (d * d) / 4));
+    const hubX = primary.x + offset;
+    const hubY = midY;
+    return { hubX, hubY, radius };
+  };
+
+  const getTertiaryWindow = arc => {
+    if (!arc) return null;
+    const startAngle = Math.atan2(vp.height - arc.hubY, vp.width - arc.hubX);
+    const arcLength = windowInfo.arcLength;
+    const endAngle = startAngle + arcLength;
+    const maxNodes = windowInfo.maxNodes;
+    return { startAngle, endAngle, arcLength, maxNodes };
+  };
+
   const hasTertiaryForLanguage = lang => {
     const list = portalEditionsAvailable[lang] || [];
     return Array.isArray(list) && list.length > 1;
   };
 
-  const getParentLabel = item => {
+  const builtinGetParentLabel = item => {
     if (!item) return '';
     const pick = () => {
       if (item.parentName) return item.parentName;
@@ -332,6 +395,10 @@ export function createApp({
     const label = pick();
     return label;
   };
+
+  const getParentLabel = typeof externalGetParentLabel === 'function'
+    ? externalGetParentLabel
+    : builtinGetParentLabel;
 
   const getParentKey = entry => {
     if (!entry) return null;
@@ -395,6 +462,24 @@ export function createApp({
     };
   };
 
+  const computeTertiaryBounds = visibleItems => {
+    const nonNull = visibleItems.filter(item => item !== null);
+    if (!nonNull.length) return { minRotation: 0, maxRotation: 0 };
+    const window = getTertiaryWindow(getTertiaryArc());
+    const firstOrder = Number.isFinite(nonNull[0].order) ? nonNull[0].order : visibleItems.indexOf(nonNull[0]);
+    const lastOrder = Number.isFinite(nonNull[nonNull.length - 1].order)
+      ? nonNull[nonNull.length - 1].order
+      : visibleItems.lastIndexOf(nonNull[nonNull.length - 1]);
+    const baseAngle = magnifier.angle;
+    const spacing = nodeSpacing;
+    const firstAngle = baseAngle + (firstOrder + 1) * spacing * -1;
+    const lastAngle = baseAngle + (lastOrder + 1) * spacing * -1;
+    return {
+      minRotation: window.startAngle - firstAngle,
+      maxRotation: window.endAngle - lastAngle
+    };
+  };
+
   const alignToSelected = () => {
     const selected = nav.getCurrent();
     if (!selected) return;
@@ -419,21 +504,52 @@ export function createApp({
     alignSecondaryToSelected();
   };
 
+  const applyTertiaryItems = (items, preferredId = null) => {
+    const normalized = normalizeSecondaryItems(items, preferredId);
+    tertiaryNav.setItems(normalized.items, normalized.selectedIndex);
+  };
+
   const setStage = next => {
+    const prevStage = portalStage;
     portalStage = next;
+    
+    // Clear any existing secondary delay timer
+    if (secondaryDelayTimer) {
+      clearTimeout(secondaryDelayTimer);
+      secondaryDelayTimer = null;
+    }
+    if (diagnosticAnimationTimer) {
+      clearTimeout(diagnosticAnimationTimer);
+      diagnosticAnimationTimer = null;
+    }
+    
     if (!hasPortals) {
       setBlur(next !== 'primary');
+      logStrataTransition(prevStage, next, { secondary: next !== 'primary', tertiary: false });
       return;
     }
     if (next === 'language') {
       applySecondaryItems(languageSelection.items, languageSelectedId);
+      secondaryDelayed = false;
+      diagnosticReadyToAnimate = false;
+      render(rotation);
     } else if (next === 'edition') {
       const editions = getEditionItems(languageSelectedId);
       editionSelectedId = editionSelectedId || getDefaultEdition(languageSelectedId);
-      applySecondaryItems(editions, editionSelectedId);
+      applyTertiaryItems(editions, editionSelectedId);
+      secondaryDelayed = false;
+      diagnosticReadyToAnimate = false;
+    } else {
+      secondaryDelayed = false;
+      diagnosticReadyToAnimate = false;
     }
     const shouldBlur = next !== 'primary';
     setBlur(shouldBlur);
+    const visibility = {
+      secondary: next !== 'primary',
+      tertiary: next === 'edition'
+    };
+    logStrataTransition(prevStage, next, visibility);
     emit({
       type: 'dimension:stage',
       stage: portalStage,
@@ -446,6 +562,7 @@ export function createApp({
     if (!langItem) return;
     languageSelectedId = langItem.id ?? langItem.language ?? langItem;
     editionSelectedId = getDefaultEdition(languageSelectedId);
+    applyTertiaryItems(getEditionItems(languageSelectedId), editionSelectedId);
     if (typeof portalMeta?.onSelectLanguage === 'function') {
       portalMeta.onSelectLanguage(languageSelectedId);
     }
@@ -454,11 +571,22 @@ export function createApp({
       language: languageSelectedId,
       edition: editionSelectedId || null
     });
+    if (hasPortals && portalStage === 'language') {
+      if (hasTertiaryForLanguage(languageSelectedId)) {
+        setStage('edition');
+      } else {
+        setStage('primary');
+      }
+    } else {
+      render(rotation);
+    }
   };
 
   const setEditionSelection = editionItem => {
     if (!editionItem) return;
     editionSelectedId = editionItem.id ?? editionItem.edition ?? editionItem;
+    const idx = tertiaryNav.items.findIndex(item => item?.id === editionSelectedId);
+    if (idx >= 0) tertiaryNav.selectIndex(idx);
     if (typeof portalMeta?.onSelectEdition === 'function') {
       portalMeta.onSelectEdition(editionSelectedId, { language: languageSelectedId });
     }
@@ -467,6 +595,11 @@ export function createApp({
       edition: editionSelectedId,
       language: languageSelectedId || null
     });
+    if (hasPortals && portalStage === 'edition') {
+      setStage('primary');
+    } else {
+      render(rotation);
+    }
   };
 
   const cyclePortalStage = () => {
@@ -479,11 +612,7 @@ export function createApp({
       return;
     }
     if (portalStage === 'language') {
-      if (hasTertiaryForLanguage(languageSelectedId)) {
-        setStage('edition');
-      } else {
-        setStage('primary');
-      }
+      setStage('edition');
       return;
     }
     setStage('primary');
@@ -498,6 +627,9 @@ export function createApp({
       const fallback = normalizedItems.findIndex(item => item !== null);
       return fallback >= 0 ? fallback : 0;
     })();
+    isLayerOut = false; // reset — new items replace the shifted-out context
+    lastParentLabelOut = '';
+    lastSelectedLabelOut = '';
     nav.setItems(normalizedItems, safePrimaryIndex);
     alignToSelected();
     render(rotation);
@@ -510,19 +642,405 @@ export function createApp({
     render(rotation);
   };
 
+  // ── Migration Animation: IN (Child Pyramid → Focus Ring) ──────────
+  // Snapshots current pyramid node positions, calculates where the new
+  // items will land on the focus ring, runs the 600 ms CSS transform
+  // animation, then calls setPrimaryItems to finish the swap.
+  const migrateIn = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
+    // If animating or no pyramid data, fall back to instant swap
+    if (isAnimating() || !lastPyramidData?.nodes?.length) {
+      setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+      return;
+    }
+
+    // 1. Snapshot current child pyramid node positions (they'll be cleared)
+    const pyramidNodes = lastPyramidData.nodes.slice();
+
+    // 2. Pre-calculate where the new items will land on the focus ring.
+    //    We need to normalise them, align to selected, and compute positions
+    //    *without* actually mutating state yet.
+    const tempNormalized = normalizeItems(newItems, { preserveOrder: nextPreserveOrder });
+    const safeTempIndex = (() => {
+      if (!tempNormalized.length) return 0;
+      if (tempNormalized[nextSelectedIndex] !== null) return nextSelectedIndex;
+      const fb = tempNormalized.findIndex(i => i !== null);
+      return fb >= 0 ? fb : 0;
+    })();
+    const tempSelected = tempNormalized[safeTempIndex];
+    // Compute the rotation offset that will be used after setPrimaryItems
+    // Must replicate alignToSelected + clamp logic to get accurate positions
+    const tempBaseAngle = tempSelected
+      ? getBaseAngleForOrder(tempSelected.order, vp, nodeSpacing)
+      : magnifier.angle;
+    const desiredTempRotation = magnifier.angle - tempBaseAngle;
+    // Compute bounds for the new items to clamp rotation
+    const tempNonNull = tempNormalized.filter(i => i !== null);
+    let tempRotation = desiredTempRotation;
+    if (tempNonNull.length > 0) {
+      const tFirst = tempNonNull[0].order;
+      const tLast = tempNonNull[tempNonNull.length - 1].order;
+      const tMinRot = windowInfo.startAngle - getBaseAngleForOrder(tFirst, vp, nodeSpacing);
+      const tMaxRot = windowInfo.endAngle - getBaseAngleForOrder(tLast, vp, nodeSpacing);
+      tempRotation = Math.max(tMinRot, Math.min(tMaxRot, desiredTempRotation));
+    }
+    // Use calculateAllNodePositions (no visible-window filter) so every
+    // sibling gets a target — nodes beyond the visible arc animate to their
+    // implied off-screen positions on the focus ring.
+    const ringTargets = calculateAllNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+
+    // 3. Snapshot current focus-ring node positions before they vanish.
+    //    These will animate radially outward while new nodes animate in.
+    const currentVisible = buildVisibleItems();
+    const currentRingNodes = calculateNodePositions(currentVisible, vp, rotation, nodeRadius, nodeSpacing)
+      .map(node => ({
+        ...node,
+        label: formatLabel({ item: node.item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
+      }));
+
+    // 4. Hide real focus-ring nodes + pyramid so only animated clones show
+    if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
+    // nodesGroup + labelsGroup are hidden by animateRingOutward below
+
+    // 4b. Snapshot magnifier and parent-button state BEFORE setPrimaryItems.
+    //     The magnifier circle travels to the parent-button position (straight line).
+    //     The old parent button exits radially outward from the HUB.
+    const prevSelected = nav.getCurrent();
+    const prevMagnifierLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
+    const prevParentLabel = getParentLabel(prevSelected)
+      || view.parentButtonOuterLabel?.textContent?.trim()
+      || '';
+    const parentButtonX = vp.SSd * 0.13;
+    const parentButtonY = vp.LSd * 0.93;
+
+    // 5. Commit the data swap NOW while real nodes are hidden behind clones.
+    //    This lets us read lastPyramidData for the new child pyramid immediately.
+    setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+
+    // 5b. setPrimaryItems → render() has now repainted the magnifier and parent
+    //     button with the NEW data.  Hide their labels and circle fills so only
+    //     the animated clones are visible — the stroke rings stay empty until the
+    //     animation completes.
+    //     Use style.visibility (not display attr) because render() calls
+    //     removeAttribute('display') which would undo our hiding.
+    if (view.magnifierLabel) view.magnifierLabel.style.visibility = 'hidden';
+    if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = 'hidden';
+    // Hide circle fills but keep stroke rings visible
+    if (view.magnifierCircle) view.magnifierCircle.style.fill = 'none';
+    if (view.parentButtonOuter) view.parentButtonOuter.style.fill = 'none';
+
+    // 6. Kick off ALL animations simultaneously:
+    //    a) Old child pyramid → focus ring (animateIn) — clicked node grows to magnifier size
+    //    b) Hub → new child pyramid (animatePyramidFromHub)
+    //    c) Old focus-ring nodes → radially outward off-screen (animateRingOutward)
+    //    d) Old magnifier → parent-button position (straight line)
+    //    e) Old parent button → radially outward off-screen
+    const selectedId = tempSelected?.id ?? null;
+    const outgoingMagnifierId = prevSelected?.id ?? null;
+
+    const incomingParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
+    const isCatalogSuffixMergeIn = Boolean(
+      isCatalogVolume
+      && prevParentLabel
+      && prevMagnifierLabel
+      && incomingParentLabel
+      && incomingParentLabel.toUpperCase() === `${prevParentLabel} ${prevMagnifierLabel}`.toUpperCase()
+    );
+
+    animateIn({
+      svgRoot: view.blurGroup || view.svgRoot,
+      pyramidNodes,
+      ringTargets,
+      magnifierAngle: magnifier.angle,
+      clickedId: selectedId,
+      nodeRadius,
+      magnifierRadius,
+      onComplete: () => {
+        // If animateRingOutward is running (900 ms), it will restore
+        // nodesGroup/labelsGroup when it finishes.  But if there were
+        // no ring nodes to animate outward, restore them here.
+        if (currentRingNodes.length === 0) {
+          if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+          if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        }
+        // If no pyramid-from-hub animation ran, restore pyramid too
+        if (!lastPyramidData?.nodes?.length) {
+          if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
+        }
+        // Restore magnifier label + circle fill (hidden so clones travel in their place)
+        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+        // Restore parent button label + circle fill
+        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
+      }
+    });
+
+    // Old focus-ring nodes: animate radially outward (expanding galaxy)
+    if (currentRingNodes.length > 0) {
+      animateRingOutward({
+        svgRoot: view.blurGroup || view.svgRoot,
+        ringNodes: currentRingNodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        // Keep a visual gap under the magnifier: the node currently inside
+        // the magnifier should not animate outward as part of ring clones.
+        skipId: outgoingMagnifierId,
+        nodesGroup: view.nodesGroup,
+        labelsGroup: view.labelsGroup
+      });
+    }
+
+    // New child pyramid: animate from hub simultaneously with the ring migration
+    if (lastPyramidData?.nodes?.length) {
+      animatePyramidFromHub({
+        svgRoot: view.blurGroup || view.svgRoot,
+        pyramidNodes: lastPyramidData.nodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
+
+    // Old magnifier → parent-button position (straight line)
+    if (isCatalogSuffixMergeIn) {
+      animateCatalogParentMerge({
+        svgRoot: view.blurGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        baseLabel: prevParentLabel,
+        suffixLabel: prevMagnifierLabel,
+        fromAngle: magnifier.angle
+      });
+    } else {
+      animateMagnifierToParent({
+        svgRoot: view.blurGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        label: prevMagnifierLabel,
+        fromAngle: magnifier.angle
+      });
+    }
+
+    // Old parent button → radially outward off-screen (leads the way)
+    if (!isCatalogSuffixMergeIn) {
+      animateParentButtonOutward({
+        svgRoot: view.blurGroup || view.svgRoot,
+        buttonX: parentButtonX,
+        buttonY: parentButtonY,
+        radius: magnifierRadius,
+        label: prevParentLabel,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        buttonElement: view.parentButtonOuter,
+        buttonLabelElement: view.parentButtonOuterLabel
+      });
+    }
+
+    // 5. Detail Sector: expand simultaneously if the incoming selected item is a leaf.
+    //    By triggering here (not waiting for onComplete), both animations run in parallel.
+    //    No onComplete render — setPrimaryItems (in the migration onComplete) will
+    //    trigger the authoritative render once nav state has been committed.
+    const incomingIsLeaf = leafLevel && tempSelected?.level === leafLevel;
+    if (incomingIsLeaf && !detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = true;
+      volumeLogo.expand(arcParams, magnifier.angle, () => {
+        emitDetailSectorChange(true, 'after-animation');
+      });
+    }
+  };
+
+  // ── Migration Animation: OUT (Focus Ring → Child Pyramid) ─────────
+  // Pops the most recent animation layer from the LIFO stack and
+  // reverses the transform animation back to the child pyramid
+  // positions, then calls setPrimaryItems to restore parent items.
+  const migrateOut = (items, selectedIndex = 0, preserveOrder = false) => {
+    if (isAnimating()) {
+      setPrimaryItems(items, selectedIndex, preserveOrder);
+      return;
+    }
+
+    // Pre-calculate where the parent items will land on the focus ring
+    // so we can fire animateRingInward simultaneously with animateOut.
+    const tempNormalized = normalizeItems(items, { preserveOrder });
+    const safeTempIndex = (() => {
+      if (!tempNormalized.length) return 0;
+      if (tempNormalized[selectedIndex] !== null) return selectedIndex;
+      const fb = tempNormalized.findIndex(i => i !== null);
+      return fb >= 0 ? fb : 0;
+    })();
+    const tempSelected = tempNormalized[safeTempIndex];
+    const tempBaseAngle = tempSelected
+      ? getBaseAngleForOrder(tempSelected.order, vp, nodeSpacing)
+      : magnifier.angle;
+    const desiredTempRotation = magnifier.angle - tempBaseAngle;
+    const tempNonNull = tempNormalized.filter(i => i !== null);
+    let tempRotation = desiredTempRotation;
+    if (tempNonNull.length > 0) {
+      const tFirst = tempNonNull[0].order;
+      const tLast = tempNonNull[tempNonNull.length - 1].order;
+      const tMinRot = windowInfo.startAngle - getBaseAngleForOrder(tFirst, vp, nodeSpacing);
+      const tMaxRot = windowInfo.endAngle - getBaseAngleForOrder(tLast, vp, nodeSpacing);
+      tempRotation = Math.max(tMinRot, Math.min(tMaxRot, desiredTempRotation));
+    }
+    const parentRingNodes = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing)
+      .map(node => ({
+        ...node,
+        label: formatLabel({ item: node.item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
+      }));
+
+    // Detail Sector: collapse simultaneously with the reverse migration animation.
+    // By triggering here (not waiting for onComplete), both animations run in parallel.
+    //    No onComplete render — setPrimaryItems (in the migration onComplete) will
+    //    trigger the authoritative render once nav state has been committed.
+    if (detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = false;
+      emitDetailSectorChange(false, 'immediate');
+      volumeLogo.collapse(arcParams, magnifier.angle);
+    }
+
+    // Snapshot magnifier and parent-button state BEFORE animations start.
+    const prevMagnifierLabel = formatLabel({ item: nav.getCurrent(), context: 'magnifier' }) || '';
+    const prevParentLabel = getParentLabel(nav.getCurrent())
+      || view.parentButtonOuterLabel?.textContent?.trim()
+      || '';
+    const parentButtonX = vp.SSd * 0.13;
+    const parentButtonY = vp.LSd * 0.93;
+    // The new parent label (after OUT) is the parent of tempSelected
+    const newParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
+    const isCatalogSuffixMergeOut = Boolean(
+      isCatalogVolume
+      && newParentLabel
+      && prevMagnifierLabel
+      && prevParentLabel
+      && prevParentLabel.toUpperCase() === `${newParentLabel} ${prevMagnifierLabel}`.toUpperCase()
+    );
+
+    // Hide magnifier and parent button fills — clone circles travel in their place.
+    // Stroke rings stay visible (empty) during the animation.
+    // Use style.visibility (not display attr) because render() would undo it.
+    if (view.magnifierLabel) view.magnifierLabel.style.visibility = 'hidden';
+    if (view.magnifierCircle) view.magnifierCircle.style.fill = 'none';
+    if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = 'hidden';
+    if (view.parentButtonOuter) view.parentButtonOuter.style.fill = 'none';
+
+    // Child Pyramid: animate existing nodes to the hub (off-screen) simultaneously
+    // with the reverse migration animation, instead of letting them pop off.
+    if (lastPyramidData?.nodes?.length) {
+      animatePyramidToHub({
+        svgRoot: view.blurGroup || view.svgRoot,
+        pyramidNodes: lastPyramidData.nodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
+
+    // Parent's focus-ring nodes: animate inward from off-screen simultaneously
+    if (parentRingNodes.length > 0) {
+      animateRingInward({
+        svgRoot: view.blurGroup || view.svgRoot,
+        ringNodes: parentRingNodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        // Keep the magnifier slot empty during INWARD clone animation too.
+        skipId: tempSelected?.id ?? null,
+        viewportWidth: vp.width,
+        viewportHeight: vp.height,
+        nodesGroup: view.nodesGroup,
+        labelsGroup: view.labelsGroup
+      });
+    }
+
+    animateOut({
+      nodesGroup: view.nodesGroup,
+      labelsGroup: view.labelsGroup,
+      onComplete: () => {
+        setPrimaryItems(items, selectedIndex, preserveOrder);
+        // Restore pyramid group visibility — animatePyramidToHub hid it and
+        // intentionally did not restore it.  setPrimaryItems → render() has
+        // now repainted the children inside the group.
+        if (view.pyramidView?.pyramidGroup) {
+          view.pyramidView.pyramidGroup.style.opacity = '';
+        }
+        // If animateRingInward is running (900 ms), it will restore
+        // nodesGroup/labelsGroup when it finishes.  But if there were
+        // no parent ring nodes to animate inward, restore them here.
+        if (parentRingNodes.length === 0) {
+          if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+          if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        }
+        // Restore magnifier + parent button fills and labels
+        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
+      }
+    });
+
+    // Parent button → magnifier position (straight line, reverse of IN)
+    if (isCatalogSuffixMergeOut) {
+      animateCatalogParentUnmerge({
+        svgRoot: view.blurGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        baseLabel: newParentLabel,
+        suffixLabel: prevMagnifierLabel,
+        fromAngle: magnifier.angle
+      });
+    } else {
+      animateParentToMagnifier({
+        svgRoot: view.blurGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        label: prevParentLabel,
+        fromAngle: magnifier.angle
+      });
+    }
+
+    // New parent button: fly in from off-screen radially
+    if (newParentLabel && !isCatalogSuffixMergeOut) {
+      animateParentButtonInward({
+        svgRoot: view.blurGroup || view.svgRoot,
+        buttonX: parentButtonX,
+        buttonY: parentButtonY,
+        radius: magnifierRadius,
+        label: newParentLabel,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        buttonElement: view.parentButtonOuter,
+        buttonLabelElement: view.parentButtonOuterLabel
+      });
+    }
+  };
+
   const shiftLayersOut = () => {
+    if (isAnimating()) return; // block during migration animation
     const prevSelected = nav.getCurrent();
     const prevParentLabel = getParentLabel(prevSelected) || '';
     const prevSelectedLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
     if (typeof onParentClick === 'function') {
       const handled = onParentClick({ selected: nav.getCurrent(), nav, setItems: setPrimaryItems });
       if (handled) {
-        if (!isLayerOut) {
-          isLayerOut = true;
-          lastParentLabelOut = prevParentLabel;
-          lastSelectedLabelOut = prevSelectedLabel;
-          render(rotation);
-        }
+        // parentHandler replaced primary items via setPrimaryItems, which
+        // already reset isLayerOut.  Nothing more to do.
         return;
       }
     }
@@ -549,6 +1067,32 @@ export function createApp({
         angle: rotatedAngle,
         x: secondaryArc.hubX + secondaryArc.radius * Math.cos(rotatedAngle),
         y: secondaryArc.hubY + secondaryArc.radius * Math.sin(rotatedAngle),
+        radius: nodeRadius,
+        label: item.name,
+        labelCentered: true
+      });
+    });
+    return positions;
+  };
+
+  const calculateTertiaryNodePositions = (allItems, rotationOffset = tertiaryRotation) => {
+    const terMag = getTertiaryMagnifier();
+    const terArc = getTertiaryArc();
+    const terWindow = getTertiaryWindow(terArc);
+    if (!terArc || !terWindow) return [];
+    const positions = [];
+    allItems.forEach((item, index) => {
+      if (item === null) return;
+      const order = Number.isFinite(item.order) ? item.order : index;
+      const baseAngle = terMag.angle + (order + 1) * nodeSpacing * -1;
+      const rotatedAngle = baseAngle + rotationOffset;
+      if (rotatedAngle < terWindow.startAngle || rotatedAngle > terWindow.endAngle) return;
+      positions.push({
+        item,
+        index,
+        angle: rotatedAngle,
+        x: terArc.hubX + terArc.radius * Math.cos(rotatedAngle),
+        y: terArc.hubY + terArc.radius * Math.sin(rotatedAngle),
         radius: nodeRadius,
         label: item.name,
         labelCentered: true
@@ -588,8 +1132,81 @@ export function createApp({
     const secondaryMagnifier = getSecondaryMagnifier();
     const secondarySelected = secondaryNav.getCurrent();
     const secondaryNodes = calculateSecondaryNodePositions(secondaryNav.items, secondaryRotation);
-    const pyramidInstructions = buildPyramid(selected);
-    console.log('[FocusRing] pyramidInstructions:', pyramidInstructions ? `${pyramidInstructions.length} nodes` : 'null');
+    const tertiaryArc = getTertiaryArc();
+    const tertiaryWindow = getTertiaryWindow(tertiaryArc);
+    const tertiaryMagnifier = getTertiaryMagnifier();
+    const tertiarySelected = tertiaryNav.getCurrent();
+    const tertiaryNodes = calculateTertiaryNodePositions(tertiaryNav.items, tertiaryRotation);
+
+    // Detail Sector leaf detection — expand/collapse based on selected item level
+    const isLeaf = leafLevel && selected?.level === leafLevel;
+    console.log('[render] leaf detection: leafLevel:', leafLevel, 'selected.level:', selected?.level, 'isLeaf:', isLeaf, 'detailSectorShown:', detailSectorShown, 'animating:', volumeLogo?.animating);
+    if (isLeaf && !detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = true;
+      volumeLogo.expand(arcParams, magnifier.angle, () => {
+        emitDetailSectorChange(true, 'after-animation');
+        render(rotation);
+      });
+    } else if (!isLeaf && detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = false;
+      emitDetailSectorChange(false, 'immediate');
+      volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
+    }
+
+    // Suppress child pyramid when Detail Sector is shown or animating
+    const suppressPyramid = detailSectorShown || volumeLogo.animating;
+
+    const pyramidData = (() => {
+      if (suppressPyramid) return null;
+      if (!pyramidConfig) return null;
+      try {
+        // Pre-fetch children to pass count for dynamic spacing
+        let children = [];
+        if (typeof pyramidConfig.getChildren === 'function' && selected) {
+          children = pyramidConfig.getChildren({ selected });
+        }
+        const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
+          logoBounds: volumeLogo.getBounds(),
+          magnifierAngle: magnifier.angle,
+          parentId: selected?.id ?? '',
+          parentSortNumber: selected?.order ?? 0,
+          childCount: children.length,
+          hasDimensionButton: hasDimensions
+        });
+        if (!geo) return null;
+        // Map children onto intersection slots
+        let nodes = [];
+        let onNodeClick = null;
+        if (children.length > 0 && geo.intersections.length > 0) {
+            const slots = geo.intersections.slice(0, children.length);
+            const nodeR = vp.SSd * NODE_RADIUS_RATIO;
+            nodes = slots.map((slot, i) => {
+              // Compute angle from hub (focus ring center) to slot for label rotation
+              const dx = slot.x - arcParams.hubX;
+              const dy = slot.y - arcParams.hubY;
+              const angle = Math.atan2(dy, dx);
+              return {
+                id: children[i].id ?? `p-${i}`,
+                label: children[i].name ?? children[i].label ?? children[i].id ?? `p-${i}`,
+                item: children[i],
+                arc: 'intersection',
+                angle,
+                x: slot.x,
+                y: slot.y,
+                r: nodeR
+              };
+            });
+          }
+          if (typeof pyramidConfig.onClick === 'function') {
+            onNodeClick = instr => pyramidConfig.onClick(instr);
+          }
+        return { ...geo, nodes, onNodeClick };
+      } catch (err) {
+        if (debug) console.warn('[FocusRing] pyramid geometry error', err);
+        return null;
+      }
+    })();
+    lastPyramidData = pyramidData; // stash for SVG-level click delegation
     const parentLabel = getParentLabel(selected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
@@ -609,6 +1226,10 @@ export function createApp({
       if (portalStage === 'edition') return `Select edition for ${getLanguageLabel(languageSelectedId)}`;
       return 'Toggle dimension mode';
     })();
+
+    const showSecondary = isBlurred && secondaryNav.items.length > 0 && (!hasPortals || portalStage !== 'primary') && !secondaryDelayed;
+    const secondaryAnimating = isBlurred && secondaryNav.items.length > 0 && (!hasPortals || portalStage !== 'primary') && diagnosticReadyToAnimate;
+    const showTertiary = isBlurred && hasPortals && portalStage === 'edition';
 
     view.render(
       nodes,
@@ -638,7 +1259,9 @@ export function createApp({
           isLayerOut,
           showOuter: parentButtonsVisibility.showOuter
         },
-        secondary: isBlurred && secondaryNav.items.length > 0 ? {
+        showSecondary,
+        secondaryAnimating,
+        secondary: showSecondary ? {
           nodes: secondaryNodes,
           isRotating: secondaryIsRotating,
           magnifierAngle: secondaryMagnifier.angle,
@@ -647,8 +1270,18 @@ export function createApp({
           selectedId: secondarySelected?.id,
           magnifierLabel: secondarySelected?.name || ''
         } : null,
-        pyramidInstructions,
-        onPyramidClick: pyramidConfig?.onClick,
+        showTertiary,
+        tertiary: showTertiary ? {
+          nodes: tertiaryNodes,
+          isRotating: tertiaryIsRotating,
+          magnifierAngle: tertiaryMagnifier.angle,
+          labelMaskEpsilon,
+          onNodeClick: node => rotateTertiaryNodeIntoMagnifier(node),
+          selectedId: tertiarySelected?.id,
+          magnifierLabel: tertiarySelected?.name || ''
+        } : null,
+        tertiaryMagnifier: showTertiary ? { ...tertiaryMagnifier, label: tertiarySelected?.name || '' } : null,
+        pyramidData,
         logoBounds: volumeLogo.getBounds()
       }
     );
@@ -744,6 +1377,22 @@ export function createApp({
     }
   };
 
+  const primaryNodeDistance = (fromIndex, toIndex) => {
+    if (!Number.isFinite(fromIndex) || !Number.isFinite(toIndex)) return 1;
+    const total = nav.items.length;
+    if (total <= 0) return 1;
+    const direct = Math.abs(toIndex - fromIndex);
+    if (preserveOrderFlag) return direct;
+    return Math.min(direct, total - direct);
+  };
+
+  const primaryClickDuration = (fromIndex, toIndex) => {
+    const d = primaryNodeDistance(fromIndex, toIndex);
+    if (d <= 0) return 0;
+    const distance = Math.max(1, d);
+    return 1000 * Math.log10(distance) + 250;
+  };
+
   const rotateNodeIntoMagnifier = node => {
     if (!node?.item || isBlurred) return;
     const targetAngle = magnifier.angle;
@@ -751,29 +1400,24 @@ export function createApp({
     const desiredRotation = targetAngle - baseAngle;
     const bounds = computeBounds(nav.items);
     const clampedRotation = clampRotation(desiredRotation, bounds);
+    const currentIndex = nav.getCurrentIndex();
+    const duration = primaryClickDuration(currentIndex, node.index);
+    if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
+      window.__tapDebugLog('rotate-node-into-magnifier', {
+        fromIndex: currentIndex,
+        toIndex: node.index,
+        itemId: node.item?.id || null,
+        itemLevel: node.item?.level || null,
+        durationMs: Number(duration.toFixed(2))
+      });
+    }
     nav.selectIndex(node.index);
     isRotating = true;
-    animateSnapTo(clampedRotation, 120);
+    animateSnapTo(clampedRotation, duration);
   };
 
   const rotateSecondaryNodeIntoMagnifier = node => {
     if (!node?.item) return;
-    if (hasPortals) {
-      if (portalStage === 'language') {
-        setLanguageSelection(node.item);
-        if (hasTertiaryForLanguage(languageSelectedId)) {
-          setStage('edition');
-        } else {
-          setStage('primary');
-        }
-        return;
-      }
-      if (portalStage === 'edition') {
-        setEditionSelection(node.item);
-        setStage('primary');
-        return;
-      }
-    }
     const secMag = getSecondaryMagnifier();
     const targetAngle = secMag.angle;
     const baseAngle = getSecondaryBaseAngle(node.item.order);
@@ -783,7 +1427,31 @@ export function createApp({
     secondaryRotation = clampSecondaryRotation(desiredRotation, bounds);
     secondaryIsRotating = false;
     render(rotation);
-    invokeSecondarySelection(node.item);
+    if (hasPortals) {
+      if (portalStage === 'language') {
+        setLanguageSelection(node.item);
+      } else if (portalStage === 'edition') {
+        setEditionSelection(node.item);
+      }
+    } else {
+      invokeSecondarySelection(node.item);
+    }
+  };
+
+  const rotateTertiaryNodeIntoMagnifier = node => {
+    if (!node?.item) return;
+    const terArc = getTertiaryArc();
+    const terWindow = getTertiaryWindow(terArc);
+    if (!terArc || !terWindow) return;
+    const targetAngle = magnifier.angle;
+    const baseAngle = targetAngle + (node.item.order + 1) * nodeSpacing * -1;
+    const desiredRotation = targetAngle - baseAngle;
+    const bounds = computeTertiaryBounds(tertiaryNav.items);
+    tertiaryNav.selectIndex(node.index);
+    tertiaryRotation = clampSecondaryRotation(desiredRotation, bounds);
+    tertiaryIsRotating = false;
+    render(rotation);
+    setEditionSelection(node.item);
   };
 
   const cancelSnap = () => {
@@ -903,21 +1571,6 @@ export function createApp({
 
   const selectSecondaryNearest = () => {
     if (!secondaryNav.items.length) return;
-    if (hasPortals) {
-      const current = secondaryNav.getCurrent();
-      if (portalStage === 'language') {
-        setLanguageSelection(current);
-        if (hasTertiaryForLanguage(languageSelectedId)) {
-          setStage('edition');
-        } else {
-          setStage('primary');
-        }
-      } else if (portalStage === 'edition') {
-        setEditionSelection(current);
-        setStage('primary');
-      }
-      return;
-    }
     const secMag = getSecondaryMagnifier();
     let closestIdx = secondaryNav.getCurrentIndex();
     let closestDiff = Infinity;
@@ -941,12 +1594,28 @@ export function createApp({
       secondaryRotation = targetRotation;
       secondaryIsRotating = false;
       render(rotation);
-      invokeSecondarySelection(selectedItem);
+      if (hasPortals) {
+        if (portalStage === 'language') {
+          setLanguageSelection(selectedItem);
+        } else if (portalStage === 'edition') {
+          setEditionSelection(selectedItem);
+        }
+      } else {
+        invokeSecondarySelection(selectedItem);
+      }
       return;
     }
     secondaryIsRotating = false;
     render(rotation, false);
-    invokeSecondarySelection(selectedItem);
+    if (hasPortals) {
+      if (portalStage === 'language') {
+        setLanguageSelection(selectedItem);
+      } else if (portalStage === 'edition') {
+        setEditionSelection(selectedItem);
+      }
+    } else {
+      invokeSecondarySelection(selectedItem);
+    }
   };
 
   render(rotation);
@@ -973,10 +1642,12 @@ export function createApp({
     hasSecondary: () => secondaryNav.items.length > 0,
     rotateSecondary: delta => {
       if (!secondaryChoreographer) return;
+      if (hasPortals && portalStage === 'edition') return; // tertiary stage: ignore secondary interactions
       secondaryChoreographer.rotate(delta);
     },
     beginSecondaryRotation: () => {
       if (!secondaryChoreographer) return;
+      if (hasPortals && portalStage === 'edition') return;
       secondaryIsRotating = true;
       if (secondarySnapId) {
         cancelAnimationFrame(secondarySnapId);
@@ -985,6 +1656,7 @@ export function createApp({
     },
     endSecondaryRotation: () => {
       if (!secondaryChoreographer) return;
+      if (hasPortals && portalStage === 'edition') return;
       selectSecondaryNearest();
       secondaryChoreographer.stopMomentum();
       secondaryIsRotating = false;
@@ -992,6 +1664,15 @@ export function createApp({
     selectSecondaryNearest,
     secondaryChoreographer,
     setPrimaryItems,
-    setParentButtons
+    setParentButtons,
+    migrateIn,
+    migrateOut,
+    handlePyramidNodeClick: idx => {
+      if (isAnimating()) return; // block clicks during migration animation
+      if (!lastPyramidData) return;
+      const { nodes, onNodeClick } = lastPyramidData;
+      if (!onNodeClick || !nodes || idx < 0 || idx >= nodes.length) return;
+      onNodeClick(nodes[idx]);
+    }
   };
 }

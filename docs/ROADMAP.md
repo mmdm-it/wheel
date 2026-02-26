@@ -8,7 +8,10 @@
 - v3.4 Volume-safe interaction loop — done (shipped as 3.4.0; queue/cancel + deep-link hydration + rapid-switch stress tests)
 - v3.5 Detail/pyramid rebuild on adapters + data-agnostic sweep — done (shipped as 3.5.0)
 - v3.6 Theming + accessibility hardening — done (shipped as 3.6.0)
-- v3.7 Dimension System (lens: language/time) — in progress (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; docs/changelog tracked for release)
+- v3.7 Dimension System + Child Pyramid — shipped (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; pyramid geometry refactored to CPUA fan-lines/spiral; child pyramid node rendering with CHILD_PARAM_TABLE, connector lines, sort-number rotation offset; catalog data cleanup; shipped as v3.7.28)
+- v3.8 IN/OUT Migration — done (shipped as v3.8.15; Child Pyramid ↔ Focus Ring animation with LIFO stack for multi-level undo)
+- v3.9 Detail Sector — planned (layout, design, plugin rendering for leaf-level content)
+- v4.0 Ship — planned (polish, deploy, final QA)
 
 ## Vision
 
@@ -102,6 +105,27 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Theme swap smoke tests across volumes; reduced-motion honored; focus order validated.
 - A11y: ARIA labels from normalized meta; keyboard activation on nodes/pyramid/parent/dimension controls; enforced tab order.
 - Perf: manifest fetch/cache and render budgets emitted and CI-guarded.
+
+### v3.8 — IN/OUT Migration Animation (shipped in v3.8.15)
+**Goal:** Restore the v0-era visual animation of Child Pyramid nodes into and out of the Focus Ring during hierarchy navigation.
+
+**Status:** Complete (released as v3.8.15). Migration animation module (`src/view/migration-animation.js`) provides `animateIn` and `animateOut` as flat function exports. A LIFO stack saves cloned nodes during IN for exact OUT reversal across multi-level navigation. All volume adapters (catalog, bible, calendar) use `app.migrateIn`/`app.migrateOut` with instant-swap fallback.
+
+**Architecture:**
+- `animateIn(opts)` — clones child pyramid nodes, applies CSS `transform: translate(dx,dy) rotate(Δ°)` with 600ms ease-in-out to slide them to their calculated focus ring positions, pushes to LIFO stack.
+- `animateOut(opts)` — pops from LIFO stack, shows saved clones at focus ring positions, reverse-animates back to pyramid positions, removes clones.
+- `isAnimating()` — guard that blocks pyramid clicks, parent button clicks, and rotation during animation.
+- `clearStack()` — resets animation state on full navigation reset.
+- `prefers-reduced-motion` respected via CSS (`transition: none !important`).
+
+**Integration pattern:** `index.js` exposes `migrateIn` and `migrateOut` on the app object. These pre-calculate focus ring target positions (normalise, align-to-selected, clamp), run the animation overlay, then call `setPrimaryItems` on completion. Pyramid `onClick` and adapter `parentHandler` use `app.migrateIn`/`app.migrateOut` when available, falling back to `app.setPrimaryItems`.
+
+**Exit criteria:** Animated IN/OUT transitions match v0 visual quality; LIFO stack supports multi-level undo; interaction blocked during animation; all existing tests pass. (Met.)
+
+**Build/Test Checkpoints:**
+- All 28 unit tests across 7 test files pass (volume-pyramid, catalog-adapter, bible-adapter, child-pyramid, navigation, volume-layout, adapter-types).
+- Visual verification on production: Ford → cylinder → family/subfamily IN/OUT cycles.
+- Reduced-motion honored; instant-swap fallback verified.
 
 ---
 

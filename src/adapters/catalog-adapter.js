@@ -11,15 +11,21 @@ let schemaPath = null;
 let nodeReadFile = null;
 let nodeReadFileSync = null;
 let AjvCtor = null;
-if (!isBrowser) {
-  const path = await import('path');
-  const { fileURLToPath } = await import('url');
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  manifestPath = path.resolve(__dirname, '../../data/mmdm/mmdm_catalog.json');
-  schemaPath = path.resolve(__dirname, '../../schemas/mmdm.schema.json');
-  nodeReadFile = (await import('fs/promises')).readFile;
-  nodeReadFileSync = (await import('fs')).readFileSync;
-  AjvCtor = (await import('ajv')).default;
+let _nodeReady = null;
+function _ensureNode() {
+  if (isBrowser) return Promise.resolve();
+  if (_nodeReady) return _nodeReady;
+  _nodeReady = (async () => {
+    const path = await import('path');
+    const { fileURLToPath } = await import('url');
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
+    manifestPath = path.resolve(__dirname, '../../data/mmdm/mmdm_catalog.json');
+    schemaPath = path.resolve(__dirname, '../../schemas/mmdm.schema.json');
+    nodeReadFile = (await import('fs/promises')).readFile;
+    nodeReadFileSync = (await import('fs')).readFileSync;
+    AjvCtor = (await import('ajv')).default;
+  })();
+  return _nodeReady;
 }
 let validateFn = null;
 let ajvInstance = null;
@@ -42,6 +48,7 @@ const getValidator = () => {
 
 export async function loadManifest() {
   if (isBrowser) return fetchJson(manifestUrl);
+  await _ensureNode();
   const raw = await nodeReadFile(manifestPath, 'utf-8');
   return JSON.parse(raw);
 }
@@ -88,26 +95,51 @@ export function normalize(raw) {
       const manufacturers = countryVal.manufacturers || {};
       Object.entries(manufacturers).forEach(([manuKey, manuVal], manuIdx) => {
         const manuId = `manufacturer:${manuKey}`;
-        addItem({ id: manuId, name: manuKey, level: 'manufacturer', parentId: countryId, order: manuIdx, meta: { founded: manuVal.year_founded, dissolved: manuVal.year_dissolved } });
+        addItem({ id: manuId, name: manuKey, level: 'manufacturer', parentId: countryId, order: manuVal.sort_number ?? manuIdx, meta: { founded: manuVal.year_founded, dissolved: manuVal.year_dissolved } });
 
         const cylinders = manuVal.cylinders || {};
         Object.entries(cylinders).forEach(([cylKey, cylVal], cylIdx) => {
           const cylId = `cylinder:${manuKey}:${cylKey}`;
-          addItem({ id: cylId, name: `${cylKey} Cyl`, level: 'cylinder', parentId: manuId, order: cylVal.sort_number ?? cylIdx });
+          addItem({ id: cylId, name: cylKey, level: 'cylinder', parentId: manuId, order: cylVal.sort_number ?? cylIdx });
 
-          const models = cylVal.models || [];
-          models.forEach((model, modelIdx) => {
-            const modelId = `model:${manuKey}:${cylKey}:${model.engine_model || modelIdx}`;
-            addItem({
-              id: modelId,
-              name: model.engine_model || `model-${modelIdx}`,
-              level: 'model',
-              parentId: cylId,
-              order: model.sort_number ?? modelIdx,
-              meta: {
-                year_introduced: model.year_introduced ?? null,
-                year_discontinued: model.year_discontinued ?? null
-              }
+          // Helper to add a models array under a given parent
+          const addModels = (modelsArr, parentNodeId, idPrefix) => {
+            (modelsArr || []).forEach((model, modelIdx) => {
+              const modelId = `${idPrefix}${model.engine_model || modelIdx}`;
+              addItem({
+                id: modelId,
+                name: model.engine_model || `model-${modelIdx}`,
+                level: 'model',
+                parentId: parentNodeId,
+                order: model.sort_number ?? modelIdx,
+                meta: {
+                  year_introduced: model.year_introduced ?? null,
+                  year_discontinued: model.year_discontinued ?? null
+                }
+              });
+            });
+          };
+
+          // Orphan models at cylinder level (no family)
+          addModels(cylVal.models, cylId, `model:${manuKey}:${cylKey}:`);
+
+          // Families
+          const families = cylVal.families || {};
+          Object.entries(families).forEach(([famName, famVal], famIdx) => {
+            const famId = `family:${manuKey}:${cylKey}:${famName}`;
+            addItem({ id: famId, name: famName, level: 'family', parentId: cylId, order: famVal.sort_number ?? famIdx });
+
+            // Orphan models at family level (no subfamily)
+            addModels(famVal.models, famId, `model:${manuKey}:${cylKey}:${famName}:`);
+
+            // Subfamilies
+            const subfamilies = famVal.subfamilies || {};
+            Object.entries(subfamilies).forEach(([subName, subVal], subIdx) => {
+              const subId = `subfamily:${manuKey}:${cylKey}:${famName}:${subName}`;
+              addItem({ id: subId, name: subName, level: 'subfamily', parentId: famId, order: subVal.sort_number ?? subIdx });
+
+              // Models under subfamily
+              addModels(subVal.models, subId, `model:${manuKey}:${cylKey}:${famName}:${subName}:`);
             });
           });
         });
@@ -121,7 +153,7 @@ export function normalize(raw) {
     meta: {
       volumeId: volumeKey,
       leafLevel: 'model',
-      levels: ['market', 'country', 'manufacturer', 'cylinder', 'model'],
+      levels: ['market', 'country', 'manufacturer', 'cylinder', 'family', 'subfamily', 'model'],
       dimensions
     }
   };
@@ -140,6 +172,8 @@ export function layoutSpec(normalized, viewport) {
         country: '#d98d00',
         manufacturer: '#b86c00',
         cylinder: '#8f5200',
+        family: '#7a4600',
+        subfamily: '#6e3f00',
         model: '#633a00'
       };
       return palette[level] || '#555';
@@ -192,22 +226,51 @@ export function detailFor(selected, manifest) {
     };
   }
 
-  // Model nodes come from pyramid clicks (`model:manufacturer:cyl:modelKey`).
+  // Model nodes: model:mfr:cyl:model OR model:mfr:cyl:fam:model OR model:mfr:cyl:fam:sub:model
   if (modelParts && modelParts.length >= 4) {
-    const [, manufacturerId, cylinderKey, modelKey] = modelParts;
+    const [, manufacturerId, cylinderKey, ...rest] = modelParts;
+    const modelKey = rest[rest.length - 1]; // last segment is always the model name
     const found = getManufacturer(manifest, manufacturerId);
     const cylinders = found?.manufacturer?.cylinders || {};
     const cyl = cylinders[cylinderKey] || {};
-    const models = Array.isArray(cyl.models) ? cyl.models : [];
-    const model = models.find(m => (m.engine_model || '').toString() === modelKey) || models.find((_, idx) => String(idx) === modelKey) || {};
+
+    // Collect all model arrays this model could live in
+    const searchArrays = [];
+    // Cylinder-level orphans
+    if (Array.isArray(cyl.models)) searchArrays.push(cyl.models);
+    // Family/subfamily models
+    for (const famVal of Object.values(cyl.families || {})) {
+      if (Array.isArray(famVal.models)) searchArrays.push(famVal.models);
+      for (const subVal of Object.values(famVal.subfamilies || {})) {
+        if (Array.isArray(subVal.models)) searchArrays.push(subVal.models);
+      }
+    }
+
+    let model = null;
+    for (const arr of searchArrays) {
+      model = arr.find(m => (m.engine_model || '').toString() === modelKey);
+      if (model) break;
+    }
+    console.log('[detailFor] mfr:', manufacturerId, 'cyl:', cylinderKey, 'modelKey:', modelKey, 'found:', !!found, 'model:', model ? model.engine_model : 'NOT FOUND', 'hasData:', !!model?.data, 'hasDesc:', !!model?.data?.description);
+    if (!model) model = {};
     const introduced = model.year_introduced ? `Introduced ${model.year_introduced}` : null;
     const discontinued = model.year_discontinued ? `Discontinued ${model.year_discontinued}` : null;
     const body = [introduced, discontinued, cylinderKey ? `${cylinderKey} cylinder` : null].filter(Boolean).join(' · ');
+    const description = model.data?.description || null;
     return {
       type: 'card',
       title: model.engine_model || modelKey || name,
       body: body || 'Model details',
-      image: model.image || null
+      image: model.image || null,
+      description
+    };
+  }
+
+  // Family/subfamily containers — show a simple card
+  if (id.startsWith('fam:') || id.startsWith('subfam:')) {
+    return {
+      type: 'text',
+      text: name
     };
   }
 
@@ -226,24 +289,63 @@ export const catalogAdapter = {
   detailFor,
   createHandlers: ({ chainMeta } = {}) => {
     let catalogMode = 'manufacturer';
-    const catalogRoot = chainMeta ? { ...chainMeta } : null;
+    const navStack = []; // stack of snapshots for multi-level IN/OUT
     const parentHandler = ({ app }) => {
-      if (catalogMode !== 'model') return false;
-      if (!catalogRoot) return false;
-      catalogMode = 'manufacturer';
+      if (catalogMode === 'manufacturer') return true; // already at top level — swallow click
+      if (navStack.length === 0) return false;
+      const snapshot = navStack.pop();
+      catalogMode = navStack.length === 0 ? 'manufacturer' : 'child';
+      // At manufacturer level (navStack empty), parent button must stay visible
+      // for the country label / shiftLayersOut default behaviour
       if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) {
-        const { items: rootItems, selectedIndex: rootSelected, preserveOrder: rootPreserve } = catalogRoot;
-        app.setPrimaryItems(rootItems || [], rootSelected ?? 0, rootPreserve ?? false);
+        const { items, selectedIndex, preserveOrder } = snapshot;
+        // Use migrateOut for animated transition when available; fall back to instant swap.
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(items || [], selectedIndex ?? 0, preserveOrder ?? false);
       }
       return true;
     };
+    // Build the parent button label from the navStack history.
+    // depth 0 (manufacturers on ring): label = country name from selected item's compound id
+    // depth 1 (cylinders on ring):     label = manufacturer name
+    // depth 2+ (family/model on ring): label = "MANUFACTURER N CIL" (frozen)
+    const getParentLabel = (item) => {
+      const depth = navStack.length;
+      if (depth === 0) {
+        // At manufacturer level — parent label is the country.
+        // Selected item id is "market__country__manufacturer".
+        if (!item) return '';
+        const id = typeof item.id === 'string' ? item.id : '';
+        if (id.includes('__')) {
+          const parts = id.split('__');
+          if (parts.length >= 2) return parts[1].toUpperCase();
+        }
+        return '';
+      }
+      // navStack[0] = manufacturer-level snapshot
+      const mfgSnapshot = navStack[0];
+      const mfgItem = mfgSnapshot?.items?.[mfgSnapshot.selectedIndex];
+      const mfgName = (mfgItem?.name || '').toUpperCase();
+      if (depth === 1) {
+        // At cylinder level — parent label is just the manufacturer.
+        return mfgName;
+      }
+      // depth >= 2: cylinder level and beyond — "MANUFACTURER N CIL"
+      const cylSnapshot = navStack[1];
+      const cylItem = cylSnapshot?.items?.[cylSnapshot.selectedIndex];
+      const cylName = cylItem?.name || '';
+      return `${mfgName} ${cylName} CIL`;
+    };
+
     return {
       parentHandler,
       childrenHandler: () => false,
+      getParentLabel,
       layoutBindings: {
         catalogModeRef: () => catalogMode,
         setCatalogMode: next => { catalogMode = next; },
+        savePreInState: snapshot => { navStack.push(snapshot); },
         pyramidBuilder: buildCatalogPyramid
       }
     };

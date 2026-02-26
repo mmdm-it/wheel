@@ -56,24 +56,35 @@ export function buildCatalogPyramid({
   getCatalogChildren,
   getApp,
   catalogModeRef,
-  setCatalogMode
+  setCatalogMode,
+  savePreInState
 } = {}) {
   if (!manifest || typeof getCatalogChildren !== 'function') return null;
   const getChildren = ({ selected }) => getCatalogChildren(manifest, selected);
   const onClick = instr => {
     if (!instr?.item) return;
-    if (typeof catalogModeRef === 'function' && catalogModeRef() !== 'manufacturer') return;
     const app = typeof getApp === 'function' ? getApp() : null;
     const parent = app?.nav?.getCurrent?.();
-    const models = getCatalogChildren(manifest, parent);
-    if (!models.length) return;
-    const selectedIdx = models.findIndex(m => m.id === instr.item.id);
-    if (typeof setCatalogMode === 'function') setCatalogMode('model');
+    const children = getCatalogChildren(manifest, parent);
+    if (!children.length) return;
+    // Snapshot current nav state before migrating IN
+    if (typeof savePreInState === 'function' && app?.nav) {
+      const currentItems = app.nav.items;
+      const currentIndex = currentItems.indexOf(app.nav.getCurrent());
+      savePreInState({ items: currentItems, selectedIndex: currentIndex >= 0 ? currentIndex : 0, preserveOrder: true });
+    }
+    const selectedIdx = children.findIndex(m => m.id === instr.item.id);
+    if (typeof setCatalogMode === 'function') setCatalogMode('child');
     if (app?.setParentButtons) {
       app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
-      app.setPrimaryItems(models, selectedIdx >= 0 ? selectedIdx : 0, true);
+      // Migrate IN: siblings land on the focus ring with the clicked item selected.
+      // If a leaf (model) lands in the magnifier, the render loop's leaf detection
+      // will trigger the Detail Sector expand and suppress the Child Pyramid.
+      // Use migrateIn for animated transition when available; fall back to instant swap.
+      const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+      migrateOrSet(children, selectedIdx >= 0 ? selectedIdx : 0, true);
     }
   };
   return { getChildren, onClick };
@@ -109,7 +120,8 @@ export function buildCalendarPyramid({
       app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
-      app.setPrimaryItems(months, selectedIdx >= 0 ? selectedIdx : 0, true);
+      const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+      migrateOrSet(months, selectedIdx >= 0 ? selectedIdx : 0, true);
     }
   };
   return { getChildren, onClick };
@@ -147,7 +159,8 @@ export function buildBiblePyramid({
       app.setParentButtons({ showOuter: true });
     }
     if (app?.setPrimaryItems) {
-      app.setPrimaryItems(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
+      const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+      migrateOrSet(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
     }
   };
   return { getChildren, onClick };

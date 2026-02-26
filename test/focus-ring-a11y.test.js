@@ -34,12 +34,20 @@ function createMockElement(tag) {
       node.parentNode = this;
       return node;
     },
+    remove() {
+      if (this.parentNode) {
+        this.parentNode.removeChild(this);
+      }
+    },
     removeChild(node) {
       const idx = children.indexOf(node);
       if (idx >= 0) {
         children.splice(idx, 1);
         node.parentNode = null;
       }
+    },
+    get firstChild() {
+      return children[0];
     },
     get children() {
       return children;
@@ -100,24 +108,6 @@ describe('FocusRingView accessibility', () => {
     assert.equal(evt.prevented, true);
   });
 
-  it('activates pyramid nodes via keyboard', () => {
-    let activated = 0;
-    view.render([], { hubX: 0, hubY: 0, radius: 100 }, { startAngle: 0, endAngle: Math.PI }, { x: 0, y: 0, radius: 12, angle: 0 }, {
-      pyramidInstructions: [{ id: 'p1', x: 5, y: 5, r: 6, label: 'Node P1' }],
-      onPyramidClick: () => { activated += 1; },
-      magnifierAngle: 0,
-      labelMaskEpsilon: 0
-    });
-
-    const node = view.pyramidNodesGroup.children[0];
-    assert.equal(node.getAttribute('role'), 'button');
-    assert.equal(node.getAttribute('tabindex'), '0');
-    const evt = { key: ' ', preventDefault() { this.prevented = true; } };
-    node.onkeydown(evt);
-    assert.equal(activated, 1);
-    assert.equal(evt.prevented, true);
-  });
-
   it('activates dimension and parent buttons via keyboard', () => {
     let dimensionClicks = 0;
     let outerClicks = 0;
@@ -154,7 +144,7 @@ describe('FocusRingView accessibility', () => {
     assert.equal(outerClicks, 1);
   });
 
-  it('applies aria-labels from labels/meta for primary, secondary, and pyramid nodes', () => {
+  it('applies aria-labels from labels/meta for primary and secondary nodes', () => {
     view.render([
       { item: { id: 'a', name: 'Alpha' }, x: 10, y: 10, radius: 12, angle: 0, label: 'Primary Label' }
     ], { hubX: 0, hubY: 0, radius: 100 }, { startAngle: 0, endAngle: Math.PI }, { x: 0, y: 0, radius: 12, angle: 0 }, {
@@ -167,17 +157,15 @@ describe('FocusRingView accessibility', () => {
         isRotating: false,
         magnifierAngle: 0,
         labelMaskEpsilon: 0
-      },
-      pyramidInstructions: [{ id: 'p1', x: 5, y: 5, r: 6, label: 'Pyramid Label' }]
+      }
     });
 
     const primary = view.nodesGroup.children[0];
     const secondary = view.mirroredNodesGroup.children[0];
-    const pyramid = view.pyramidNodesGroup.children[0];
 
     assert.equal(primary.getAttribute('aria-label'), 'Primary Label');
     assert.equal(secondary.getAttribute('aria-label'), 'Secondary Label');
-    assert.equal(pyramid.getAttribute('aria-label'), 'Pyramid Label');
+    assert.equal(view.pyramidNodesGroup.children.length, 0);
   });
 
   it('marks focusable controls with tabindex for keyboard order', () => {
@@ -196,7 +184,6 @@ describe('FocusRingView accessibility', () => {
         magnifierAngle: 0,
         labelMaskEpsilon: 0
       },
-      pyramidInstructions: [{ id: 'p1', x: 5, y: 5, r: 6, label: 'Pyramid Label' }],
       dimensionIcon: { href: '#', x: 20, y: 20, size: 10, onClick: () => {} },
       parentButtons: {
         showOuter: true,
@@ -209,7 +196,6 @@ describe('FocusRingView accessibility', () => {
     const focusables = [
       view.nodesGroup.children[0],
       view.mirroredNodesGroup.children[0],
-      view.pyramidNodesGroup.children[0],
       view.dimensionIcon,
       view.parentButtonOuter
     ];
@@ -217,6 +203,8 @@ describe('FocusRingView accessibility', () => {
     focusables.forEach(el => {
       assert.equal(el.getAttribute('tabindex'), '0');
     });
+
+    assert.equal(view.pyramidNodesGroup.children.length, 0);
   });
 
   it('maintains predictable focus order across controls', () => {
@@ -237,7 +225,6 @@ describe('FocusRingView accessibility', () => {
         labelMaskEpsilon: 0,
         onNodeClick: () => {}
       },
-      pyramidInstructions: [{ id: 'p1', x: 5, y: 5, r: 6, label: 'Pyramid Label' }],
       dimensionIcon: { href: '#', x: 20, y: 20, size: 10, onClick: () => {} },
       parentButtons: {
         showOuter: true,
@@ -268,7 +255,6 @@ describe('FocusRingView accessibility', () => {
         if (name === 'parent-outer') return aria === 'Parent';
         if (name === 'node-a') return id === 'focus-node-a';
         if (name === 'node-b') return id === 'focus-node-b';
-        if (name === 'pyramid') return dataId === 'p1';
         if (name === 'secondary') return id === 'secondary-node-s1';
         if (name === 'dimension') return cls?.includes('dimension-button');
         return false;
@@ -277,15 +263,14 @@ describe('FocusRingView accessibility', () => {
 
     assert(idx('parent-outer') >= 0, 'missing parent outer button');
     assert(idx('node-a') >= 0 && idx('node-b') >= 0, 'missing primary nodes');
-    assert(idx('pyramid') >= 0, 'missing pyramid node');
+    assert(idx('pyramid') === -1, 'pyramid nodes should be hidden');
     assert(idx('secondary') >= 0, 'missing secondary node');
     assert(idx('dimension') >= 0, 'missing dimension button');
 
     const orderChecks = [
       ['parent-outer', 'node-a'],
       ['node-a', 'node-b'],
-      ['node-b', 'pyramid'],
-      ['pyramid', 'secondary'],
+      ['node-b', 'secondary'],
       ['secondary', 'dimension']
     ];
 

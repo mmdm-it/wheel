@@ -87,6 +87,37 @@ export function calculateNodePositions(allItems, viewport, rotationOffset = 0, n
   return positions;
 }
 
+/**
+ * Like calculateNodePositions but without the visible-window filter.
+ * Returns arc positions for ALL items so migration animations can
+ * animate nodes to their implied off-screen positions on the arc.
+ */
+export function calculateAllNodePositions(allItems, viewport, rotationOffset = 0, nodeRadius = 10, nodeSpacing) {
+  if (!Array.isArray(allItems)) {
+    throw new Error('calculateAllNodePositions: allItems must be an array');
+  }
+  const arc = getArcParameters(viewport);
+  const spacing = nodeSpacing ?? getNodeSpacing(viewport);
+  const positions = [];
+
+  allItems.forEach((item, index) => {
+    if (item === null) return;
+    const order = Number.isFinite(item.order) ? item.order : index;
+    const baseAngle = getBaseAngleForOrder(order, viewport, spacing);
+    const rotatedAngle = baseAngle + rotationOffset;
+    positions.push({
+      item,
+      index,
+      angle: rotatedAngle,
+      x: arc.hubX + arc.radius * Math.cos(rotatedAngle),
+      y: arc.hubY + arc.radius * Math.sin(rotatedAngle),
+      radius: nodeRadius
+    });
+  });
+
+  return positions;
+}
+
 export const GeometryConstants = {
   SELECTION_THRESHOLD
 };

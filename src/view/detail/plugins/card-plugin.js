@@ -31,6 +31,14 @@ export class CardDetailPlugin extends BaseDetailPlugin {
     card.appendChild(title);
     card.appendChild(body);
 
+    // Narrative description block (e.g. Italian historical text)
+    if (item?.description) {
+      const desc = create('div');
+      desc.className = 'detail-card-description';
+      desc.textContent = item.description;
+      card.appendChild(desc);
+    }
+
     if (card.style) {
       if (bounds?.width) card.style.maxWidth = `${bounds.width}px`;
       if (bounds?.height) card.style.maxHeight = `${bounds.height}px`;

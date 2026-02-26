@@ -4,6 +4,8 @@
 
 The **Dimension System** provides alternate views of the hierarchical data. The Focus Ring rotates across items at the current level, while the Parent Button and Child Pyramid move IN/OUT through the hierarchy from top level to leaf; dimensions offer fundamentally different ways to **view and navigate the same structure**.
 
+In the demo app, portal metadata is auto-hydrated from `display_config.languages` and `display_config.editions` (plus the translations registry). When those are present, the dimension button cycles primary → language → edition, and the tertiary band renders in the edition stage whenever a selected language exposes multiple editions.
+
 **Core Principle**: A dimension must **transcend the hierarchy** - it applies to all (or most) levels, providing a parallel navigation system through the same data space.
 
 **Example**: Language dimension for Bible - every level can be translated (Old Testament→Vetus Testamentum, Genesis→Γένεσις, Chapter 1→Κεφάλαιον Α). You're viewing the **same structure** through a different linguistic lens.

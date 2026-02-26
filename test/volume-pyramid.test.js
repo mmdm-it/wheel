@@ -46,7 +46,7 @@ describe('createVolumePyramidConfig', () => {
     const children = config.getChildren({ selected: parentItem });
     assert.deepEqual(children, [childItem]);
     config.onClick({ item: childItem });
-    assert.equal(mode, 'model');
+    assert.equal(mode, 'child');
     assert.equal(primaryCalls.length, 1);
     assert.equal(parentButtonCalls.length, 1);
   });

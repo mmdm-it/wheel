@@ -1,9 +1,412 @@
 # Changelog
 
+## 3.8.39 — Mobile tap reliability + parent-button restore
+- Fixed unreliable tap-to-magnifier targeting on mobile at deeper levels
+  (cylinder/family/model): taps landing on transient `.child-pyramid-node`
+  clones without valid `data-index` are no longer swallowed; they now fall
+  through to proximity-based Focus Ring targeting.
+- Restored logarithmic click-to-magnifier duration behavior for primary ring
+  taps across levels.
+- Fixed duplicate touch activation causing occasional instant second jump
+  (`duration = 0`) by suppressing delayed native click events shortly after
+  manual touch-dispatched node activation.
+- Fixed Parent Button regression on touch devices: control targets are now
+  excluded from near-miss redirection so OUT migration triggers normally.
+- Removed temporary floating tap-log button used during on-device diagnostics.
+
+## 3.8.38 — Fix click-to-magnify after migrateIn (pointerup race)
+- Fixed click-to-magnify failing at deeper hierarchy levels (e.g. clicking
+  a cylinder after navigating IN from manufacturer → model). Root cause:
+  the `pointerup` handler called `selectNearest()` unconditionally, which
+  could start a snap animation before the browser's `click` event arrived.
+- Fix: mirror the v0 touch pattern — track `wasDragging` and call
+  `selectNearest()` only after real drags, never after taps.
+
+## 3.8.34 — iOS WebKit animation reliability fix
+- Fixed iOS WebKit animation "pop" (nodes jumping to final position instead
+  of animating).  Root cause: `requestAnimationFrame` on iOS can fire within
+  the same compositing pass (<12 ms), before the initial CSS transform has
+  been painted.  The `afterPaint` helper now measures elapsed time since the
+  reflow; if < 12 ms it pads the `setTimeout` delay so the total wait is
+  ≥ 34 ms (two 60 fps frames), guaranteeing at least one full paint cycle.
+  On well-behaved browsers this adds zero extra delay.
+- Applied `--iframe-scale` compensation to all Detail Sector font sizes and
+  panel dimensions (same GoDaddy iframe fix applied to Focus Ring earlier).
+- Removed diagnostic logging overlay and download button.
+
+## 3.8.33 — iOS animation fix & debug overlay removal
+- Removed debug overlay (ES5 error-catching panel) from production.
+- Fixed iOS Safari first-load animation failure: replaced all
+  `setTimeout(fn, 10)` reflow-gap calls in migration-animation.js with
+  double-`requestAnimationFrame` (`afterPaint`) pattern. iOS Safari's
+  compositor needs a full paint cycle to commit the initial CSS transform
+  before the transition target is applied; 10 ms was not enough on cold
+  start, causing the "ballet" migration to be skipped entirely.
+
+## 3.8.32 — Chrome 80 compatibility (Android 10 dumb-phone support)
+- Replaced top-level `await import()` in all 4 adapter modules with lazy
+  `_ensureNode()` init pattern. Top-level await requires Chrome 89+;
+  Android 10 ships with Chrome ~80, causing a fatal SyntaxError at parse
+  time that prevented the app from loading entirely.
+- Replaced CSS `gap` in flexbox (Chrome 84+) with `> * + *` margin
+  fallback for `.detail-panel` and `.detail-card`.
+- Logo circle now links to mailto:info@mmdm.it (configured via
+  `contact_email` in volume manifest).
+
+## 3.8.31 — Copyright notice & version badge relocation
+- Added copyright notice bar across top of screen:
+  "© 2026 Meccanismi Marittimi delle Marche. Tutti i diritti riservati."
+  White text on dark semi-transparent strip, iframe-scale-aware.
+- Version badge ("WHEEL V3.8.31") moved from top-right overlay into the
+  Detail Sector panel as a subtle footer line, visible when the detail
+  panel expands on leaf-level items.
+
+## 3.8.30 — Iframe font-size compensation (mmdm.it)
+- GoDaddy "Forward with Masking" wraps the app in an iframe without a viewport
+  meta tag, causing mobile browsers to default to a ~980 px layout viewport and
+  zoom out.  CSS `clamp()` floors (in px) resolve pre-zoom, so fonts appeared
+  much smaller than intended while SVG geometry (proportional to SSd) was fine.
+- Added iframe-zoom detection in `index.html`: compares `screen` dimensions to
+  `window.innerWidth/Height`; when the CSS viewport is >20 % wider than the
+  physical screen, sets `--iframe-scale` CSS custom property.
+- All `vmin`-based font-size `clamp()` rules now multiply their min/max bounds
+  by `var(--iframe-scale, 1)`, so the clamp floors survive the browser zoom.
+- Version badge `12px` likewise scales by `--iframe-scale`.
+- No effect on non-iframe or desktop browsing (`--iframe-scale` defaults to 1).
+
 ## [Unreleased]
 ### Added
 - Spiral Child Pyramid node layout: nodes are now placed equidistantly along an Archimedean spiral using true arc-length spacing. This provides visually uniform node distribution for all child counts.
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
+
+
+## [3.8.29] - 2026-02-17
+
+### Fixed
+- Magnifier and Parent Button labels now reliably hidden during migration animation — switched from `display` attribute (which `render()` clobbers via `removeAttribute('display')`) to `style.visibility: hidden` which render never touches
+- Circle fills use `style.fill: none` to keep stroke rings visible while hiding the gold fill during animation
+
+
+## [3.8.28] - 2026-02-17
+
+### Added
+- **Magnifier ↔ Parent Button migration animation**: during IN migration, the old magnifier circle+label travels in a straight line to the parent-button position (label transitions from centered to offset-left); during OUT, the parent button travels back up to the magnifier position (label transitions offset-left to centered)
+- **Parent Button radial exit/entry**: during IN, the old parent button exits radially outward from the HUB (same direction as Focus Ring nodes); during OUT, the new parent button flies in from off-screen along its radial ray
+- **Clicked node → magnifier growth**: the clicked Child Pyramid node now grows from pyramid node radius to magnifier radius during its IN animation to the Focus Ring
+- Magnifier and Parent Button stroke rings remain visible (empty) during animation, matching the Focus Ring band pattern
+- All animation durations temporarily set to 1200 ms for design/test
+
+
+## [3.8.27] - 2026-02-17
+
+### Fixed
+- Eliminated ~300 ms flicker at end of IN migration where Focus Ring nodes briefly disappeared: `animateIn` clones (600 ms) were hidden before `animateRingOutward` (900 ms) restored the real nodes — clones now stay visible until the outward overlay is removed and real nodes are restored
+
+
+## [3.8.26] - 2026-02-18
+
+### Fixed
+- Ring inward animation (OUT migration) now starts all nodes at a uniform distance from the HUB, just far enough that every node begins off-screen — nodes maintain equal radial distance from the HUB at every frame, and the rectangular viewport naturally causes staggered entry as nodes closer to their nearest edge appear first
+- Per-node ray-viewport intersection determines the minimum clearance for each node; the maximum across all nodes becomes the single uniform translate distance
+- Restored `ease-in-out` timing (from `ease-out`) since the slow-start phase is now visible, giving smooth acceleration-deceleration matching the outward animation
+
+
+## [3.8.25] - 2026-02-17
+
+### Fixed
+- OUT migration ring inward animation now uses 600 ms `ease-out` (matching animateOut and animatePyramidToHub) instead of 900 ms `ease-in-out` — all three OUT animations are now synchronous, simultaneous, and fluid
+- Previously the 900 ms ease-in-out started slow off-screen (wasted motion), then nodes appeared to jerk into the viewport late; the 600 ms ease-out enters decisively and decelerates smoothly into final position
+
+
+## [3.8.24] - 2026-02-16
+
+### Fixed
+- Synced `CHILD_PARAM_TABLE` in child-pyramid-geometry.js with docs/child_pyramid_params.csv: `minNodeDist` now decreases with child count (7→6 at 5, 6→5 at 7, 5→4 at 10, 4→3.5 at 12) instead of being hardcoded to 7 for all counts ≤ 11
+
+
+## [3.8.23] - 2026-02-16
+
+### Fixed
+- Focus Ring animation clones now replicate the real label positioning: offset/radial labels (`text-anchor: end`, pulled toward hub by `radius × -1.3`) for manufacturer-level nodes, centered labels for cylinder-level nodes — eliminates visible "snap" at start of outward and end of inward ring animations
+
+
+## [3.8.22] - 2026-02-16
+
+### Fixed
+- Eliminated doubled Focus Ring labels during IN animation (old ring nodes overlapping new ring nodes between 600–900 ms)
+- Eliminated doubled Focus Ring labels during OUT animation (real ring nodes reappearing at 600 ms while inward clones still settling until 900 ms)
+- Ring node group visibility now controlled solely by the ring radial animation (900 ms) instead of the shorter core animation (600 ms)
+
+
+## [3.8.21] - 2026-02-16
+
+### Changed
+- OUT migration: `animateRingInward` now fires simultaneously with `animateOut` and `animatePyramidToHub` instead of sequentially after them (eliminates ~600ms delay before parent ring nodes enter frame)
+- Parent ring node positions pre-calculated before animations start, matching the pattern used by IN migration
+
+
+## [3.8.20] - 2026-02-16
+
+### Added
+- Focus Ring radial outward animation during IN migration: existing ring nodes fly outward along their hub→node rays (expanding galaxy) while new nodes animate in
+- Focus Ring radial inward animation during OUT migration: parent ring nodes fly inward from off-screen along their radial rays to populate the ring
+- New exports `animateRingOutward` and `animateRingInward` in migration-animation module
+- `RING_RADIAL_DURATION` constant (900ms) — intentionally leisurely compared to 600ms core animations
+- Magnifier node excluded from radial animations (reserved for future Magnifier ↔ Parent Button animation)
+
+### Changed
+- IN migration now fires three simultaneous animations: animateIn + animateRingOutward + animatePyramidFromHub
+- OUT migration fires animateRingInward after animateOut completes and parent items are painted
+
+
+## [3.8.19] - 2026-02-16
+
+### Added
+- Adapter-driven Parent Button labelling: catalog adapter now exports `getParentLabel(item)` on its handler set
+- Parent label builds progressively from navStack depth: country (depth 0) → manufacturer (depth 1) → frozen "MANUFACTURER N CIL" compound (depth 2+)
+- All parent button suffixes forced uppercase for visual consistency
+- `createApp` accepts optional `getParentLabel` callback; delegates to adapter when provided, falls back to built-in logic
+
+### Changed
+- Renamed original `getParentLabel` in index.js to `builtinGetParentLabel` to avoid collision with adapter-supplied function
+- index.html wiring updated to extract `getParentLabel` from adapter handler set and pass to `createApp`
+
+
+## [3.8.18] - 2026-02-16
+
+### Changed
+- Hub ↔ Child Pyramid animation now runs simultaneously with Child Pyramid ↔ Focus Ring animation (parallel 600ms, down from ~1200ms sequential)
+- Restructured migrateIn to commit data swap immediately while real nodes are hidden, enabling both animations to fire at the same time
+- Fixed pyramid group opacity not restored after OUT migration
+- Removed duplicate animatePyramidFromHub call from migrateOut that caused nodes to vanish and re-animate from wrong direction
+
+
+## [3.8.17] - 2026-02-16
+
+### Added
+- Child Pyramid nodes now animate to/from the hub (off-screen focus-ring center) during IN and OUT migrations instead of popping on/off
+- New `animatePyramidFromHub` and `animatePyramidToHub` exports in migration-animation module
+
+
+## [3.8.16] - 2026-02-16
+
+### Changed
+- Migration animation now runs simultaneously with Detail Sector expand/collapse (parallel 600ms, down from ~1200ms sequential)
+- All child pyramid nodes animate during migration, including those destined for off-screen arc positions (no more filtering to visible window)
+- Added `calculateAllNodePositions` geometry export (unfiltered arc positions for animation targets)
+
+
+## [3.8.15] - 2026-02-15
+
+### Added
+- Migration animation: Child Pyramid nodes now animate smoothly to their Focus Ring positions during IN migration (600ms ease-in-out CSS transform), matching v0 behavior
+- Migration animation: Focus Ring nodes animate back to Child Pyramid positions during OUT migration (reverse of IN, LIFO stack for multi-level navigation)
+- New module `src/view/migration-animation.js` with `animateIn`, `animateOut`, LIFO stack, and `isAnimating` guard
+- All volume adapters (catalog, bible, calendar) use animated migration when available, with instant-swap fallback
+- Interaction blocked during animation (pyramid clicks, parent button clicks)
+- CSS `will-change: transform` on animation clones; `prefers-reduced-motion` support
+
+
+## [3.8.14] - 2026-02-15
+
+### Changed
+- revert: Focus Ring band back to original gray (#7a7979, opacity 1)
+
+
+## [3.8.13] - 2026-02-15
+
+### Changed
+- style: catalog band opacity 0.5 to match Detail Sector circle muted blue
+
+
+## [3.8.12] - 2026-02-15
+
+### Changed
+- style: catalog Focus Ring band color changed to Detail Sector blue (#362e6a)
+
+
+## [3.8.11] - 2026-02-15
+
+### Changed
+- fix: Child Pyramid reappears automatically after Detail Sector collapse
+
+
+## [3.8.10] - 2026-02-15
+
+### Changed
+- fix: Parent Button click at manufacturer level no longer duplicates country label in magnifier
+
+
+## [3.8.9] - 2026-02-15
+
+### Changed
+- fix: Parent Button + country label reappear after migrating all the way OUT
+
+
+## [3.8.8] - 2026-02-15
+
+### Changed
+- fix: Detail Sector logo animation — position relative to screen center not hub, fix opacity parity with v0
+
+
+## [3.8.7] - 2026-02-15
+
+### Added
+- feat: Detail Sector expand/collapse animation — VolumeLogo gains expand() and collapse() methods (600ms quadratic ease-in-out); circle grows from 12% SSd upper-right to 99% FR radius at hub center, logo shrinks to 10% watermark at -35% FR offset with magnifier-angle rotation; leaf detection in render loop suppresses Child Pyramid when model-level item is in Magnifier; CPUA bounds suppressed during animation
+
+### Fixed
+- fix: volume-pyramid test updated for child mode (setCatalogMode('child') not 'model')
+
+
+## [3.8.6] - 2026-02-15
+
+### Changed
+- feat: family/subfamily/orphan support — getCatalogChildren walks families, subfamilies, and orphan models; normalize builds full hierarchy graph; multi-level IN/OUT via navStack; detailFor resolves models at any depth; orphans sort before containers
+
+
+## [3.8.5] - 2026-02-15
+
+### Changed
+- fix: OUT migration restores pre-IN state instead of initial load state
+
+
+## [3.8.4] - 2026-02-15
+
+### Changed
+- fix: shiftLayersOut re-stashing isLayerOut after parentHandler already reset it
+
+
+## [3.8.3] - 2026-02-15
+
+### Changed
+- fix: magnifier stuck on old label after OUT migration — reset isLayerOut in setPrimaryItems
+
+
+## [3.8.2] - 2026-02-15
+
+### Changed
+- fix: parent button blank after child pyramid migration — add parentName to catalog children
+
+
+## [3.8.1] - 2026-02-15
+
+### Changed
+- fix: child pyramid click — SVG-level event delegation for reliable node migration on all platforms
+
+
+## [3.8.0] - 2026-02-15
+
+### Changed
+- feat: begin IN/OUT migration — child pyramid complete (v3.7.x)
+
+
+## [3.7.29] - 2026-02-15
+
+### Changed
+- chore: remove dead hashString01, archive 7 stale docs, update ROADMAP + version refs + WORKFLOW
+
+
+## [3.7.28] - 2026-02-14
+
+### Changed
+- refactor: replace fan line sweep + spiral with magnifier-to-node connector lines, remove debug logging
+
+
+## [3.7.27] - 2026-02-14
+
+### Changed
+- feat: sort-number rotation offset formula, fix node oscillation (CSS transform transition removal), min-distance-from-origin guard
+
+
+## [3.7.26] - 2026-02-14
+
+### Changed
+- feat: child pyramid params lookup table by childCount, alphabetical manufacturer sort, remove duplicate Mercruiser
+
+
+## [3.7.25] - 2026-02-14
+
+### Changed
+- feat: child pyramid params lookup table by childCount, alphabetical manufacturer sort, remove duplicate Mercruiser
+
+
+## [3.7.24] - 2026-02-14
+
+### Changed
+- fix: formatLabel crash on Bible — call factory with proper args, detect context-aware catalog formatter
+
+
+## [3.7.23] - 2026-02-14
+
+### Changed
+- feat: child pyramid placement — tighter spiral, dynamic spacing, arc margin, deterministic per-parent fan-line rotation
+
+
+## [3.7.22] - 2026-02-13
+
+### Changed
+- fix: rotate child pyramid labels relative to hub, not magnifier
+
+
+## [3.7.21] - 2026-02-13
+
+### Changed
+- fix: center and rotate child pyramid labels over nodes, matching focus ring label style
+
+
+## [3.7.20] - 2026-02-13
+
+### Changed
+- fix: center cylinder labels in focus ring, show N CIL suffix in magnifier
+
+
+## [3.7.19] - 2026-02-13
+
+### Changed
+- cosmetic: solid gold child nodes with black stroke, uppercase labels, cylinder labels number-only (N CIL in magnifier)
+
+
+## [3.7.18] - 2026-02-13
+
+### Changed
+- fix: restore V0 catalog colors (gray/gold/blue), add catalog logo, show cylinders (not models) as pyramid children, remove diagnostic green band lines
+
+
+## [3.7.17] - 2026-02-13
+
+### Changed
+- refactor: place child nodes at fan-line × spiral intersections instead of independent spiral walk; suppress red X markers when nodes present
+
+
+## [3.7.16] - 2026-02-13
+
+### Changed
+- Fix pyramidConfig merge: merge adapter layout (capacity/place) with volume layout (getChildren/onClick) so child nodes render
+
+
+## [3.7.15] - 2026-02-13
+
+### Changed
+- feat: enable child pyramid node rendering with click-to-drill for catalog
+
+
+## [3.7.14] - 2026-01-02
+
+### Changed
+- Tertiary magnifier now uses the same stroke/fill, font, and rotating label behavior as primary/secondary magnifiers for consistent styling across strata.
+
+
+## [3.7.13] - 2026-01-02
+
+### Changed
+- Dimension button now auto-hydrates language/edition portals from `display_config.languages/editions` and the translations registry in the demo bootstrap, restoring tertiary strata visibility when portal data exists.
+- Focus ring stage flags log `hasPortals` and allow the secondary stratum to render in blurred mode even without portals (while keeping tertiary gated to edition stage).
+
+
+## [3.7.12] - 2026-01-01
+
+### Changed
+- Focus ring now feeds child pyramid geometry data (fan lines/spiral/intersections) to PyramidView and removes legacy pyramid instruction wiring.
 
 
 ## [3.7.11] - 2025-12-31
