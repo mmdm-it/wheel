@@ -318,10 +318,23 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
   console.log('[renderDetail] plugin:', plugin?.getMetadata?.()?.name, 'has description:', !!payload?.description);
   if (!plugin) return;
   const bounds = detailPanel.getBoundingClientRect();
+  const cs = window.getComputedStyle(detailPanel);
+  console.log('[renderDetail] panel rect:', Math.round(bounds.width), '×', Math.round(bounds.height),
+    '| computed maxWidth:', cs.maxWidth, 'maxHeight:', cs.maxHeight,
+    '| visibility:', cs.visibility, 'opacity:', cs.opacity, 'display:', cs.display);
   const node = plugin.render(payload, { width: bounds.width, height: bounds.height }, { createElement: tag => document.createElement(tag) });
   if (node) {
     detailContent.appendChild(node);
-    console.log('[renderDetail] appended node, childCount:', detailContent.childNodes.length, 'innerHTML length:', detailContent.innerHTML.length);
+    const contentCs = window.getComputedStyle(detailContent);
+    console.log('[renderDetail] detail-content computed height:', contentCs.height, 'overflow:', contentCs.overflow);
+    const descEl = detailContent.querySelector('.detail-card-description');
+    if (descEl) {
+      const dcs = window.getComputedStyle(descEl);
+      console.log('[renderDetail] description el — scrollHeight:', descEl.scrollHeight,
+        'clientHeight:', descEl.clientHeight, 'flex:', dcs.flex,
+        'maxHeight:', dcs.maxHeight, 'overflow:', dcs.overflowY,
+        'text length:', descEl.textContent.length);
+    }
   }
 }
 

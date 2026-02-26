@@ -44,7 +44,20 @@ a *verified* state, not an attempted one.
   ```
   ./bump-version.sh patch "<one-line description of change>"
   ```
-- This updates `package.json`, `README.md`, and `CHANGELOG.md`.
+- The script will ask **9 yes/no questions** before touching any files.
+  Answer `n` to any of them and it aborts — go fix the gap and re-run.
+  The questions mirror the gate sequence above:
+  1. Live Server (laptop browser)
+  2. Chrome on iPhone X — LAN URL
+  3. Opera on iPhone X — LAN URL
+  4. DuckDuckGo on iPhone X — LAN URL
+  5. Safari on iPhone X — LAN URL
+  6. Chrome on Moto G 2025 — LAN URL
+  7. Firefox on Moto G 2025 — LAN URL
+  8. DuckDuckGo on Moto G 2025 — LAN URL
+  9. Browser on Kyocera E4830NC — LAN URL
+- After all 9 `y` answers the script updates `package.json`, `README.md`,
+  and `CHANGELOG.md`.
 - Run `npm run build` once more so `dist/app.js` embeds the new version.
 
 ### 5. Commit and Push

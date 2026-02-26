@@ -4,20 +4,20 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.8.40 (2026-02-26)
+- v3.8.41 (2026-02-26)
 
 ## Notable Changes in 3.8.40
 - Reverted commit 52cb891 which caused a black screen on load by suppressing the initial render and forcing pyramid nodes to `display:none`. Restored `src/index.js`, `src/view/detail/pyramid-view.js`, and `src/view/migration-animation.js` to their pre-52cb891 state.
 
 ## Release Train
-- v3.8.15 Baseline data + UI lift — done
-- v3.8.15 Adapter + state-store foundation — done
-- v3.8.15 Volume-safe interaction loop — done
-- v3.8.15 Detail/pyramid rebuild on adapters — done
-- v3.8.15 Theming + accessibility hardening — done (theming tokens, a11y pass, perf budgets, theme swap smoke)
-- v3.8.15 Dimension System (lens: language/time) — shipped: language + edition portals, schema/adapter hydration, UI cycling with aria/keyboard, perf budgets
-- v3.8.15 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
-- v3.8.19 Parent Button Labelling — shipped: adapter-driven `getParentLabel`, progressive depth labels (country → manufacturer → compound), uppercase suffix
+- v3.8.41 Baseline data + UI lift — done
+- v3.8.41 Adapter + state-store foundation — done
+- v3.8.41 Volume-safe interaction loop — done
+- v3.8.41 Detail/pyramid rebuild on adapters — done
+- v3.8.41 Theming + accessibility hardening — done (theming tokens, a11y pass, perf budgets, theme swap smoke)
+- v3.8.41 Dimension System (lens: language/time) — shipped: language + edition portals, schema/adapter hydration, UI cycling with aria/keyboard, perf budgets
+- v3.8.41 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
+- v3.8.41 Parent Button Labelling — shipped: adapter-driven `getParentLabel`, progressive depth labels (country → manufacturer → compound), uppercase suffix
 
 - `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.8.40`).
 - Historical majors are maintained outside the active v3 repository (archived folders/repos for v0/v1/v2).
