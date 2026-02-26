@@ -9,6 +9,7 @@ import { placesAdapter } from './adapters/places-adapter.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
+import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 
 const svg = document.getElementById('app');
 const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -293,49 +294,50 @@ const detailContent = document.getElementById('detail-content');
 // and hides immediately when the circle begins collapsing.
 window.addEventListener('detail-sector-change', (e) => {
   if (!detailPanel) return;
-  const { visible, when } = e.detail || {};
-  console.log('[detail-sector-change] visible:', visible, 'when:', when, 'panel classes before:', detailPanel.className);
+  const { visible } = e.detail || {};
   if (visible) {
-    // Show after expand animation completes
     detailPanel.classList.add('detail-panel--visible');
   } else {
-    // Hide immediately when collapsing
     detailPanel.classList.remove('detail-panel--visible');
   }
-  console.log('[detail-sector-change] panel classes after:', detailPanel.className);
 });
 
 function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
   if (!detailPanel || !detailContent) return;
   while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
   if (!selected) return;
+
   const payload = adapterInstance?.detailFor
     ? adapterInstance.detailFor(selected, manifest, { normalized: adapterNormalized })
     : { type: 'text', text: selected.name || selected.id || '' };
-  console.log('[renderDetail] selected:', selected?.id, 'level:', selected?.level, 'payload:', JSON.stringify(payload));
   if (!payload) return;
+
   const plugin = detailRegistry.getPlugin(payload);
-  console.log('[renderDetail] plugin:', plugin?.getMetadata?.()?.name, 'has description:', !!payload?.description);
   if (!plugin) return;
-  const bounds = detailPanel.getBoundingClientRect();
-  const cs = window.getComputedStyle(detailPanel);
-  console.log('[renderDetail] panel rect:', Math.round(bounds.width), '×', Math.round(bounds.height),
-    '| computed maxWidth:', cs.maxWidth, 'maxHeight:', cs.maxHeight,
-    '| visibility:', cs.visibility, 'opacity:', cs.opacity, 'display:', cs.display);
-  const node = plugin.render(payload, { width: bounds.width, height: bounds.height }, { createElement: tag => document.createElement(tag) });
-  if (node) {
-    detailContent.appendChild(node);
-    const contentCs = window.getComputedStyle(detailContent);
-    console.log('[renderDetail] detail-content computed height:', contentCs.height, 'overflow:', contentCs.overflow);
-    const descEl = detailContent.querySelector('.detail-card-description');
-    if (descEl) {
-      const dcs = window.getComputedStyle(descEl);
-      console.log('[renderDetail] description el — scrollHeight:', descEl.scrollHeight,
-        'clientHeight:', descEl.clientHeight, 'flex:', dcs.flex,
-        'maxHeight:', dcs.maxHeight, 'overflow:', dcs.overflowY,
-        'text length:', descEl.textContent.length);
-    }
-  }
+
+  // Build arc-aware bounds (DSUA — full area, no logo exclusion).
+  // The logo moves to the centre as a watermark when the circle expands,
+  // so its collapsed upper-right position does not restrict detail text.
+  const arcBounds = computeDetailSectorBounds(window.innerWidth, window.innerHeight);
+  const panelRect = detailPanel.getBoundingClientRect();
+  const renderBounds = { ...arcBounds, width: panelRect.width, height: panelRect.height };
+
+  // Arc layout diagnostic — copy from console to report layout issues
+  const lt = arcBounds.lineTable;
+  console.log(
+    `[arc-layout] ${window.innerWidth}×${window.innerHeight}` +
+    ` | SSd:${arcBounds.SSd}` +
+    ` | hub:(${arcBounds.arcCenterX.toFixed(0)},${arcBounds.arcCenterY.toFixed(0)})` +
+    ` r:${arcBounds.arcRadius.toFixed(0)}` +
+    ` | lines:${lt.length}` +
+    (lt.length ? ` [y:${lt[0].y.toFixed(0)}–${lt[lt.length-1].y.toFixed(0)}]` +
+                 ` leftX:${lt[0].leftX.toFixed(0)}–${lt[lt.length-1].leftX.toFixed(0)}` : '') +
+    ` | plugin:${plugin.getMetadata?.().name}` +
+    ` | type:${payload.type}`
+  );
+
+  const node = plugin.render(payload, renderBounds, { createElement: tag => document.createElement(tag) });
+  if (node) detailContent.appendChild(node);
 }
 
 function makeBibleLabelFormatter({ level, locale, namesMap }) {
