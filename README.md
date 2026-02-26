@@ -1,4 +1,4 @@
-# Wheel v3  [![CI](https://github.com/mmdm-it/wheel/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/mmdm-it/wheel/actions/workflows/ci.yml)
+# Wheel v3  [![CI](https://github.com/mmdm-it/wheel/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mmdm-it/wheel/actions/workflows/ci.yml)
 
 > v3.8.32 Designed
 
@@ -20,14 +20,15 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.8.15 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
 - v3.8.19 Parent Button Labelling — shipped: adapter-driven `getParentLabel`, progressive depth labels (country → manufacturer → compound), uppercase suffix
 
-- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.7.14`).
-- Historical majors live on archive branches (e.g., `archive/v0`, `archive/v1`, `archive/v2`).
+- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.8.39`).
+- Historical majors are maintained outside the active v3 repository (archived folders/repos for v0/v1/v2).
 - Future v4 will branch from the final v3 tag and tag releases as `v4.*` (no versioned folders).
+- GitHub flow is feature branch → pull request → merge into protected `main` after required checks pass.
 
 ## Scripts
 - `npm test` — run Node built-in tests (no external deps)
 - `npm run build` — esbuild bundle (`src/main.js` → `dist/app.js`, target Chrome 74, IIFE)
-- `npm run lint:forbidden` — guard for forbidden volume-specific literals in shared code (runs `test/forbidden-volume-literals.test.js`)
+- `npm run lint:forbidden` — guard for forbidden volume-specific literals in shared code (runs `test/forbidden-literals.test.js`)
 - `npm run bump-version -- 3.7.0` — bump package/changelog version for release (or run `./bump-version.sh 3.7.0`)
 - `bash sync-to-server.sh` — build + deploy using local team deployment config
 
