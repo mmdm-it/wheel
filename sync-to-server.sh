@@ -1,32 +1,24 @@
 #!/bin/bash
 
-# ============================================================
-# SCRIPT LOCKED — 2026-02-26
-# A critical bug has been identified in the local codebase.
-# Deployment has been disabled until the fix is confirmed.
-#
-# Locks applied:
-#   1. exit 1 guard below (this file)
-#   2. Execute permission removed (chmod -x)
-#   3. File renamed to sync-to-server.sh.LOCKED
-#
-# To restore:
-#   1. Remove or comment out the exit 1 block below
-#   2. chmod +x sync-to-server.sh.LOCKED
-#   3. mv sync-to-server.sh.LOCKED sync-to-server.sh
-# ============================================================
-echo "❌ Deployment is currently LOCKED. See the comment block at the top of this file." >&2
-exit 1
-
 # Sync wheel (v3) to catalog, bible, calendar, and places deployments
 # Catalog deploys to mmdm.it root (public_html/mmdm/)
 # Other volumes deploy to wheel-v3 subdirectories
 # Usage: ./sync-to-server.sh [catalog|bible|calendar|places|both|all]
+#
+# Note: this script was temporarily locked on 2026-02-26 while a black-screen
+# regression (commit 52cb891) was diagnosed and reverted. Unlocked at v3.8.41.
 
 SERVER="namecheap"
 REMOTE_BASE="~/public_html/mmdm/wheel-v3"
 REMOTE_CATALOG="~/public_html/mmdm"
 LOCAL_PATH="$(pwd)/"
+
+# Color codes
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
 
 # Build the bundle before syncing
 echo -e "${BLUE}📦 Building dist/app.js ...${NC}"
@@ -36,13 +28,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 echo -e "${GREEN}✅ Build complete${NC}"
-
-# Color codes
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-RED='\033[0;31m'
-YELLOW='\033[1;33m'
-NC='\033[0m' # No Color
 
 # Function to sync to a specific deployment
 sync_deployment() {
