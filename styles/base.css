@@ -258,9 +258,10 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(calc(420px * var(--iframe-scale, 1)), 48vw);
-  max-width: calc(480px * var(--iframe-scale, 1));
-  max-height: min(calc(380px * var(--iframe-scale, 1)), 50vh);
+  width: min(calc(460px * var(--iframe-scale, 1)), 56vw);
+  max-width: calc(520px * var(--iframe-scale, 1));
+  height: min(calc(560px * var(--iframe-scale, 1)), 72vh);
+  max-height: min(calc(560px * var(--iframe-scale, 1)), 72vh);
   padding: calc(16px * var(--iframe-scale, 1)) calc(24px * var(--iframe-scale, 1));
   background: transparent;
   border: none;
@@ -307,6 +308,7 @@ svg {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 100%;
 }
 
 .detail-card > * + * {
@@ -331,7 +333,8 @@ svg {
   color: rgba(255, 255, 255, 0.88);
   font-style: italic;
   text-align: left;
-  max-height: calc(220px * var(--iframe-scale, 1));
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
 }
 

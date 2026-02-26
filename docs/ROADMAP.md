@@ -9,7 +9,7 @@
 - v3.5 Detail/pyramid rebuild on adapters + data-agnostic sweep — done (shipped as 3.5.0)
 - v3.6 Theming + accessibility hardening — done (shipped as 3.6.0)
 - v3.7 Dimension System + Child Pyramid — shipped (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; pyramid geometry refactored to CPUA fan-lines/spiral; child pyramid node rendering with CHILD_PARAM_TABLE, connector lines, sort-number rotation offset; catalog data cleanup; shipped as v3.7.28)
-- v3.8 IN/OUT Migration — done (shipped as v3.8.15; Child Pyramid ↔ Focus Ring animation with LIFO stack for multi-level undo)
+- v3.8 IN/OUT Migration + patch series — done (shipped as v3.8.15; current v3.8.40; see patch notes below)
 - v3.9 Detail Sector — planned (layout, design, plugin rendering for leaf-level content)
 - v4.0 Ship — planned (polish, deploy, final QA)
 
@@ -126,6 +126,12 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - All 28 unit tests across 7 test files pass (volume-pyramid, catalog-adapter, bible-adapter, child-pyramid, navigation, volume-layout, adapter-types).
 - Visual verification on production: Ford → cylinder → family/subfamily IN/OUT cycles.
 - Reduced-motion honored; instant-swap fallback verified.
+
+**v3.8 patch series (v3.8.16 → v3.8.40):**
+- v3.8.34 iOS WebKit animation reliability fix (rAF timing guard, `--iframe-scale` font compensation).
+- v3.8.38 Fix click-to-magnify after migrateIn (pointerup/click race via `wasDragging` guard).
+- v3.8.39 Mobile tap reliability + parent-button restore (proximity fallback, duplicate-touch suppression, touch-device OUT migration fix).
+- v3.8.40 Revert commit 52cb891 — suppressed initial render and forced pyramid nodes to `display:none`, causing black screen on load.
 
 ---
 

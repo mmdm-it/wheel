@@ -9,7 +9,7 @@ import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
-import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateCatalogParentMerge, animateCatalogParentUnmerge } from './view/migration-animation.js';
+import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -265,8 +265,7 @@ export function createApp({
 
   // Detail Sector leaf detection
   const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
-  const CATALOG_VOLUME_ID = ['cat', 'alog'].join('');
-  const isCatalogVolume = pyramidNormalized?.meta?.volumeId === CATALOG_VOLUME_ID;
+  const isCatalogVolume = Boolean(pyramidNormalized?.meta?.suffixMerge);
   let detailSectorShown = false; // tracks whether DS is currently expanded
 
   // Notify the host page when the detail sector visibility changes.
@@ -531,20 +530,17 @@ export function createApp({
     if (next === 'language') {
       applySecondaryItems(languageSelection.items, languageSelectedId);
       secondaryDelayed = false;
-      diagnosticReadyToAnimate = false;
-      render(rotation);
     } else if (next === 'edition') {
       const editions = getEditionItems(languageSelectedId);
       editionSelectedId = editionSelectedId || getDefaultEdition(languageSelectedId);
       applyTertiaryItems(editions, editionSelectedId);
       secondaryDelayed = false;
-      diagnosticReadyToAnimate = false;
     } else {
       secondaryDelayed = false;
-      diagnosticReadyToAnimate = false;
     }
     const shouldBlur = next !== 'primary';
     setBlur(shouldBlur);
+    render(rotation);
     const visibility = {
       secondary: next !== 'primary',
       tertiary: next === 'edition'
@@ -571,14 +567,10 @@ export function createApp({
       language: languageSelectedId,
       edition: editionSelectedId || null
     });
-    if (hasPortals && portalStage === 'language') {
-      if (hasTertiaryForLanguage(languageSelectedId)) {
-        setStage('edition');
-      } else {
-        setStage('primary');
-      }
+    if (hasTertiaryForLanguage(languageSelectedId)) {
+      setStage('edition');
     } else {
-      render(rotation);
+      setStage('primary');
     }
   };
 
@@ -595,11 +587,7 @@ export function createApp({
       edition: editionSelectedId,
       language: languageSelectedId || null
     });
-    if (hasPortals && portalStage === 'edition') {
-      setStage('primary');
-    } else {
-      render(rotation);
-    }
+    setStage('primary');
   };
 
   const cyclePortalStage = () => {
@@ -805,7 +793,7 @@ export function createApp({
 
     // Old magnifier → parent-button position (straight line)
     if (isCatalogSuffixMergeIn) {
-      animateCatalogParentMerge({
+      animateVolumeParentMerge({
         svgRoot: view.blurGroup || view.svgRoot,
         fromX: magnifier.x,
         fromY: magnifier.y,
@@ -990,7 +978,7 @@ export function createApp({
 
     // Parent button → magnifier position (straight line, reverse of IN)
     if (isCatalogSuffixMergeOut) {
-      animateCatalogParentUnmerge({
+      animateVolumeParentUnmerge({
         svgRoot: view.blurGroup || view.svgRoot,
         fromX: magnifier.x,
         fromY: magnifier.y,

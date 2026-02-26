@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.8.40 — Revert breaking commit 52cb891 (black screen on load) + test suite fixes
+- Restored src/index.js, src/view/detail/pyramid-view.js, and src/view/migration-animation.js to pre-52cb891 state
+- Commit 52cb891 introduced a black screen on load by suppressing the initial render and forcing pyramid nodes to display:none
+- Commit 52cb891 also updated the test suite to pass with the broken code — tests are restored to guard correct behaviour
+- Moved `suffixMerge` capability into catalog adapter meta (removes forbidden 'catalog' literal from index.js)
+- Renamed all `catalog-*` CSS classes and function names in migration-animation.js to `volume-*` (removes forbidden literals)
+- Fixed `setLanguageSelection`: now calls `setStage('edition')` or `setStage('primary')` instead of bare `render()`, advancing portal stage correctly
+- Fixed `setEditionSelection`: now calls `setStage('primary')` instead of bare `render()`, returning to primary stage after edition choice
+- Removed diagnostic `secondaryDelayed` 2-second timer that was suppressing language node visibility
+- Render now fires after `setBlur()` in `setStage()` so `isBlurred` is correct during render
+
 ## 3.8.39 — Mobile tap reliability + parent-button restore
 - Fixed unreliable tap-to-magnifier targeting on mobile at deeper levels
   (cylinder/family/model): taps landing on transient `.child-pyramid-node`
@@ -78,6 +89,12 @@
 ### Added
 - Spiral Child Pyramid node layout: nodes are now placed equidistantly along an Archimedean spiral using true arc-length spacing. This provides visually uniform node distribution for all child counts.
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
+
+
+## [3.8.41] - 2026-02-26
+
+### Changed
+- detail panel: fill DSUA with description text, fix flex height chain
 
 
 ## [3.8.29] - 2026-02-17

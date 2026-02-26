@@ -986,11 +986,11 @@ export function animateParentToMagnifier(opts) {
 }
 
 /**
- * Volume-specific IN merge animation:
+ * Volume suffix-merge IN animation:
  * keep parent base label visually anchored while the magnifier suffix
  * (e.g. "4 CIL") travels into the parent label as a suffix.
  */
-export function animateCatalogParentMerge(opts) {
+export function animateVolumeParentMerge(opts) {
   const {
     svgRoot,
     fromX, fromY,
@@ -1083,11 +1083,11 @@ export function animateCatalogParentMerge(opts) {
 }
 
 /**
- * Volume-specific OUT unmerge animation:
+ * Volume suffix-merge OUT animation:
  * keep parent base label visually anchored while suffix detaches and
  * travels back to magnifier center.
  */
-export function animateCatalogParentUnmerge(opts) {
+export function animateVolumeParentUnmerge(opts) {
   const {
     svgRoot,
     fromX, fromY,

@@ -217,16 +217,59 @@ async function loadConfig() {
 function applyTheme(manifest, volume) {
   const theme = volumeConfigs[volume]?.theme || volume;
   const root = document.documentElement;
-  const themeBackground = {
-    catalog: '#868686',
-    bible: '#d4a574',
-    calendar: '#0c2c44',
-    places: '#132a29'
+  const palette = {
+    catalog: {
+      bg: '#868686',
+      node: '#f1b800',
+      text: '#000000',
+      band: '#7a7979',
+      accent: '#f1b800',
+      magnifierStroke: '#000000'
+    },
+    bible: {
+      bg: '#d4a574',
+      node: '#8b5a2b',
+      text: '#2a1a0f',
+      band: '#8a6a49',
+      accent: '#8b5a2b',
+      magnifierStroke: '#2a1a0f'
+    },
+    calendar: {
+      bg: '#0c2c44',
+      node: '#443300',
+      text: '#f5f7fb',
+      band: '#194567',
+      accent: '#f5f7fb',
+      magnifierStroke: '#f5f7fb'
+    },
+    places: {
+      bg: '#132a29',
+      node: '#e2b46c',
+      text: '#f4f1e9',
+      band: '#1f413f',
+      accent: '#e2b46c',
+      magnifierStroke: '#f4f1e9'
+    }
   };
-  const bg = themeBackground[theme] || '#f5f5f5';
+  const active = palette[theme] || {
+    bg: '#f5f5f5',
+    node: '#555555',
+    text: '#111111',
+    band: '#7a7979',
+    accent: '#1f6feb',
+    magnifierStroke: '#000000'
+  };
+  const bg = active.bg;
   root.setAttribute('data-theme', theme);
   root.style.backgroundColor = bg;
+  // Set ALL theme CSS variables inline so the first render has correct
+  // colors even before the async volume stylesheet finishes loading.
   root.style.setProperty('--theme-color-bg', bg);
+  root.style.setProperty('--theme-color-node', active.node);
+  root.style.setProperty('--theme-color-text', active.text);
+  root.style.setProperty('--theme-color-band', active.band);
+  root.style.setProperty('--theme-color-accent', active.accent);
+  root.style.setProperty('--theme-color-magnifier-stroke', active.magnifierStroke);
   if (document.body) {
     document.body.style.backgroundColor = bg;
   }
@@ -275,10 +318,23 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
   console.log('[renderDetail] plugin:', plugin?.getMetadata?.()?.name, 'has description:', !!payload?.description);
   if (!plugin) return;
   const bounds = detailPanel.getBoundingClientRect();
+  const cs = window.getComputedStyle(detailPanel);
+  console.log('[renderDetail] panel rect:', Math.round(bounds.width), '×', Math.round(bounds.height),
+    '| computed maxWidth:', cs.maxWidth, 'maxHeight:', cs.maxHeight,
+    '| visibility:', cs.visibility, 'opacity:', cs.opacity, 'display:', cs.display);
   const node = plugin.render(payload, { width: bounds.width, height: bounds.height }, { createElement: tag => document.createElement(tag) });
   if (node) {
     detailContent.appendChild(node);
-    console.log('[renderDetail] appended node, childCount:', detailContent.childNodes.length, 'innerHTML length:', detailContent.innerHTML.length);
+    const contentCs = window.getComputedStyle(detailContent);
+    console.log('[renderDetail] detail-content computed height:', contentCs.height, 'overflow:', contentCs.overflow);
+    const descEl = detailContent.querySelector('.detail-card-description');
+    if (descEl) {
+      const dcs = window.getComputedStyle(descEl);
+      console.log('[renderDetail] description el — scrollHeight:', descEl.scrollHeight,
+        'clientHeight:', descEl.clientHeight, 'flex:', dcs.flex,
+        'maxHeight:', dcs.maxHeight, 'overflow:', dcs.overflowY,
+        'text length:', descEl.textContent.length);
+    }
   }
 }
 
@@ -414,6 +470,7 @@ function wireInteractions(app, itemCount) {
   let lastX = 0;
   let lastY = 0;
   let lastTime = 0;
+  let suppressNativeClickUntil = 0;
   const isInteractionLocked = () => Boolean(app?.isBlurred?.());
   const hasSecondary = () => Boolean(app?.hasSecondary?.());
   const sensitivity = Math.PI / 4 / 100; // 100px → 45°
@@ -453,7 +510,6 @@ function wireInteractions(app, itemCount) {
       if (dist <= threshold && dist < nearestDist) {
         nearestDist = dist;
         nearest = node;
-      let suppressNativeClickUntil = 0;
       }
     });
     return nearest;
@@ -841,6 +897,38 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
   app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized));
   wireInteractions(app, items.length);
   showVersion();
+
+  // ── Startup diagnostics ──
+  const diagSvg = document.getElementById('app');
+  const diagNodes = diagSvg?.querySelectorAll('.focus-ring-node') || [];
+  const diagLabels = diagSvg?.querySelectorAll('.focus-ring-label') || [];
+  const diagBand = diagSvg?.querySelector('.focus-ring-band');
+  const diagMag = diagSvg?.querySelector('.focus-ring-magnifier-circle');
+  const diagRoot = document.documentElement;
+  console.log('%c[DIAG] ═══ Wheel startup diagnostics ═══', 'color:#f1b800;font-weight:bold');
+  console.log('[DIAG] volume:', volume);
+  console.log('[DIAG] items passed to createApp:', items.length, '| preserveOrder:', preserveOrder, '| selectedIndex:', selectedIndex);
+  console.log('[DIAG] first 3 items:', JSON.stringify(items.slice(0, 3).map(i => ({ id: i?.id, name: i?.name, order: i?.order, sort: i?.sort }))));
+  console.log('[DIAG] viewport:', JSON.stringify(viewport));
+  console.log('[DIAG] SVG element:', diagSvg?.tagName, '| size:', diagSvg?.getAttribute('width') || diagSvg?.style?.width || 'css', 'x', diagSvg?.getAttribute('height') || diagSvg?.style?.height || 'css');
+  console.log('[DIAG] SVG children:', diagSvg?.childNodes?.length, '| nodes:', diagNodes.length, '| labels:', diagLabels.length);
+  console.log('[DIAG] band:', diagBand ? 'd=' + (diagBand.getAttribute('d') || '').slice(0, 60) + '…' : 'MISSING');
+  console.log('[DIAG] magnifier:', diagMag ? 'cx=' + diagMag.getAttribute('cx') + ' cy=' + diagMag.getAttribute('cy') + ' r=' + diagMag.getAttribute('r') : 'MISSING');
+  console.log('[DIAG] theme:', diagRoot.getAttribute('data-theme'), '| bg:', diagRoot.style.backgroundColor);
+  console.log('[DIAG] CSS vars:', {
+    bg: getComputedStyle(diagRoot).getPropertyValue('--theme-color-bg').trim(),
+    node: getComputedStyle(diagRoot).getPropertyValue('--theme-color-node').trim(),
+    text: getComputedStyle(diagRoot).getPropertyValue('--theme-color-text').trim(),
+    band: getComputedStyle(diagRoot).getPropertyValue('--theme-color-band').trim()
+  });
+  if (diagNodes.length > 0) {
+    const n = diagNodes[0];
+    console.log('[DIAG] first node:', 'cx=' + n.getAttribute('cx'), 'cy=' + n.getAttribute('cy'), 'r=' + n.getAttribute('r'), 'fill=' + getComputedStyle(n).fill);
+  } else {
+    console.warn('[DIAG] ⚠ NO focus-ring-node elements found in SVG');
+  }
+  console.log('[DIAG] nav state:', { current: app?.nav?.getCurrent?.()?.name, index: app?.nav?.getSelectedIndex?.(), total: app?.nav?.items?.length });
+  console.log('%c[DIAG] ═══ End diagnostics ═══', 'color:#f1b800;font-weight:bold');
 }).catch(err => {
   console.error('Failed to initialize app', err);
 });

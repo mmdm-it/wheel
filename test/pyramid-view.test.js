@@ -72,28 +72,31 @@ function createMockDocument() {
 }
 
 describe('PyramidView rendering', () => {
-  it('renders fan lines, spiral, and intersections while hiding nodes', () => {
+  it('renders connector lines and visible nodes when nodes are provided', () => {
     const doc = createMockDocument();
     const root = createMockElement('g');
     const view = new PyramidView(root, doc);
     view.init();
 
     const data = {
-      fanLines: [
-        { id: 0, x1: 0, y1: 0, x2: 10, y2: 0 },
-        { id: 1, x1: 0, y1: 0, x2: 0, y2: 10 }
-      ],
-      spiral: { path: 'M 0 0 L 5 5' },
-      intersections: [{ x: 2, y: 2 }, { x: 3, y: 3 }]
+      magnifierOrigin: { x: 0, y: 0 },
+      nodes: [
+        { x: 10, y: 0, r: 9, label: 'Node A', angle: 0 },
+        { x: 0, y: 10, r: 9, label: 'Node B', angle: Math.PI / 2 }
+      ]
     };
 
     view.render(data);
 
+    // Pyramid group is visible
     assert.ok(!view.pyramidGroup.getAttribute('display'));
+    // Connector fan-lines drawn from magnifier origin to each node
     assert.equal(view.pyramidFanLinesGroup.children.length, 2);
-    assert.equal(view.pyramidSpiralGroup.children.length, 1 + data.intersections.length * 2);
-    assert.equal(view.pyramidNodesGroup.getAttribute('display'), 'none');
-    assert.equal(view.pyramidLabelsGroup.getAttribute('display'), 'none');
+    // Nodes and labels are visible
+    assert.equal(view.pyramidNodesGroup.children.length, 2);
+    assert.equal(view.pyramidLabelsGroup.children.length, 2);
+    assert.ok(!view.pyramidNodesGroup.getAttribute('display'));
+    assert.ok(!view.pyramidLabelsGroup.getAttribute('display'));
   });
 
   it('clears and hides when no data', () => {
