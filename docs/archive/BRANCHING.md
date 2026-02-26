@@ -1,30 +1,30 @@
 # Branching and Versioning Strategy
 
 ## Overview
-We keep one repo with branches and tags per major. Old majors are archived; the active major lives on the default branch.
+The active GitHub repository is `mmdm-it/wheel`, with v3.x on `main` and releases tracked by tags.
 
 ## Branches
-- `main` (or `master`): active development for the current major (now v3.x).
-- `archive/v0`, `archive/v1`, `archive/v2`: frozen branches holding historical majors.
-- `v3-main` (optional alias): tracks the v3 line if you prefer a dedicated branch name.
-- Future: when v4 starts, branch from the last v3 tag to `v4-main` (or keep using `main` after tagging `v3.last`).
+- `main`: active development for the current major (v3.x).
+- Feature branches: short-lived branches opened as pull requests into `main`.
+- No `master` branch and no long-lived `archive/v*` branches in the active repo.
+- Future: when v4 starts, branch from the final v3 tag and continue release tags on the new line.
 
 ## Tags
 - Release tags use SemVer: `v3.4.13`, `v3.4.0`, etc.
-- Old releases keep their tags on the archive branches (`v1.4.2`, etc.).
+- Old releases remain discoverable by tag history.
 
 ## Folder Layout
 - Repo root contains the active codebase (no versioned subfolders).
-- Historical branches keep their own layouts as imported; no new versioned folders will be created.
+- Historical majors (v0/v1/v2) are maintained outside the active v3 repo (archived folders/repos), not as active branches.
 
 ## Docs
 - Forward-looking specs (e.g., `ARCHITECTURE_V4.md`) remain as future plans even while the repo ships v3.x.
 - Roadmap tracks the current major in `docs/ROADMAP.md`.
 
 ## CI/CD
-- CI runs on `main` only; archive branches are excluded or marked skip.
+- CI validates pull requests and `main`; required checks gate merges to protected `main`.
 - Deploy scripts should reference repo-root paths and the current major’s public endpoint (now `wheel-v3`).
 
 ## Migration Notes
-- Package name is `wheel`; current version is `3.4.13` (v3.x track).
+- Package name is `wheel`; current version is on the v3.x track (see `package.json`).
 - Deploy script `sync-to-server.sh` uses `wheel-v3` endpoints; adjust hosting paths when v4 begins.
