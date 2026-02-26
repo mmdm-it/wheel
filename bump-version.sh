@@ -43,6 +43,35 @@ esac
 NEW_VERSION="$MAJOR.$MINOR.$PATCH"
 CURRENT_DATE=$(date +%Y-%m-%d)
 
+# ── Pre-release checklist ─────────────────────────────────────────────────────
+ask() {
+  local prompt="$1"
+  local answer
+  printf "%s [y/n] " "$prompt"
+  read -r answer
+  case "$answer" in
+    [Yy]) return 0 ;;
+    *)
+      echo "Aborted. Re-run after completing all checks."
+      exit 1 ;;
+  esac
+}
+
+echo ""
+echo "── Pre-release checklist (v$CURRENT_VERSION → v$NEW_VERSION) ──"
+ask "1. Has this change been tested on the Live Server?"
+ask "2. Has this change been tested with the Chrome browser on the iPhone X using the LAN URL?"
+ask "3. Has this change been tested with the Opera browser on the iPhone X using the LAN URL?"
+ask "4. Has this change been tested with the DuckDuckGo browser on the iPhone X using the LAN URL?"
+ask "5. Has this change been tested with the Safari browser on the iPhone X using the LAN URL?"
+ask "6. Has this change been tested with the Chrome browser on the Moto G 2025 using the LAN URL?"
+ask "7. Has this change been tested with the Firefox browser on the Moto G 2025 using the LAN URL?"
+ask "8. Has this change been tested with the DuckDuckGo browser on the Moto G 2025 using the LAN URL?"
+ask "9. Has this change been tested with the browser on the Kyocera E4830NC?"
+echo "All checks passed. Bumping version..."
+echo ""
+# ─────────────────────────────────────────────────────────────────────────────
+
 echo "Bumping version: $CURRENT_VERSION → $NEW_VERSION"
 
 echo "Updating $PACKAGE_FILE..."
