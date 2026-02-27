@@ -1,5 +1,8 @@
 import { PyramidView } from './detail/pyramid-view.js';
 
+// Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
+const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
+
 export class FocusRingView {
   constructor(svgRoot) {
     this.svgRoot = svgRoot;
@@ -59,6 +62,20 @@ export class FocusRingView {
     blur.setAttribute('stdDeviation', '8');
     this.blurFilter.appendChild(blur);
     defs.appendChild(this.blurFilter);
+
+    // Separate filter for blurring child pyramid nodes/labels during rotation.
+    // Using an SVG filter (not CSS filter) for iOS WebKit compatibility.
+    const pyramidBlurFilter = document.createElementNS('http://www.w3.org/2000/svg', 'filter');
+    pyramidBlurFilter.setAttribute('id', 'pyramid-rotate-blur');
+    pyramidBlurFilter.setAttribute('x', '-50%');
+    pyramidBlurFilter.setAttribute('y', '-50%');
+    pyramidBlurFilter.setAttribute('width', '200%');
+    pyramidBlurFilter.setAttribute('height', '200%');
+    const pyramidBlur = document.createElementNS('http://www.w3.org/2000/svg', 'feGaussianBlur');
+    pyramidBlur.setAttribute('stdDeviation', '4');
+    pyramidBlurFilter.appendChild(pyramidBlur);
+    defs.appendChild(pyramidBlurFilter);
+
     this.svgRoot.appendChild(defs);
 
     this.mirrorLayer = document.createElementNS('http://www.w3.org/2000/svg', 'g');
@@ -265,6 +282,46 @@ export class FocusRingView {
       this.pyramidSpiralGroup = this.pyramidView.pyramidSpiralGroup;
       this.pyramidNodesGroup = this.pyramidView.pyramidNodesGroup;
       this.pyramidLabelsGroup = this.pyramidView.pyramidLabelsGroup;
+      // Hide fan lines between Magnifier and Child Pyramid nodes while rotating
+      const _flg = this.pyramidFanLinesGroup;
+      const _prevRotating = this._dbgLastIsRotating;
+      if (isRotating !== _prevRotating || options.debug) {
+        console.log('[FocusRingView] fan-line visibility update', {
+          isRotating,
+          'options.isRotating (raw)': options.isRotating,
+          pyramidDataNull: options.pyramidData == null,
+          fanLinesGroupPresent: Boolean(_flg),
+          fanLinesChildCount: _flg ? _flg.childNodes.length : 'N/A',
+          displayBefore: _flg ? (_flg.getAttribute('display') ?? '(none set)') : 'N/A'
+        });
+      }
+      this._dbgLastIsRotating = isRotating;
+      if (_flg) {
+        if (isRotating) {
+          _flg.setAttribute('display', 'none');
+        } else {
+          _flg.removeAttribute('display');
+        }
+        if (isRotating !== _prevRotating || options.debug) {
+          console.log('[FocusRingView] fan-line display after set:', _flg.getAttribute('display') ?? '(none set)');
+        }
+      } else {
+        if (isRotating !== _prevRotating || options.debug) {
+          console.warn('[FocusRingView] pyramidFanLinesGroup is null — cannot hide fan lines');
+        }
+      }
+      // Blur and dim pyramid nodes/labels during rotation.
+      // SVG filter attribute is used instead of CSS filter for iOS WebKit compatibility.
+      this.pyramidGroup?.classList.toggle('is-rotating', isRotating);
+      const pyramidBlurRef = isRotating ? 'url(#pyramid-rotate-blur)' : null;
+      [this.pyramidNodesGroup, this.pyramidLabelsGroup].forEach(g => {
+        if (!g) return;
+        if (pyramidBlurRef) {
+          g.setAttribute('filter', pyramidBlurRef);
+        } else {
+          g.removeAttribute('filter');
+        }
+      });
     }
 
     if (this.band && arcParams && viewportWindow) {
@@ -386,7 +443,18 @@ export class FocusRingView {
       if (!Number.isFinite(nodeRadius)) {
         throw new Error('FocusRingView.render: node radius is required');
       }
-      el.setAttribute('r', nodeRadius);
+
+      // Scale circle and label when the node is near the magnifier during rotation.
+      // Gaussian bell centred on magnifierAngle; drops to ~1 within one node-spacing.
+      let magScale = 1;
+      if (isRotating && magnifierAngle != null) {
+        const dist = Math.abs(node.angle - magnifierAngle);
+        const sigma = labelMaskEpsilon * 0.5; // ≈ 0.3 × nodeSpacing
+        magScale = 1 + (MAGNIFIER_NODE_SCALE_PEAK - 1) * Math.exp(-(dist * dist) / (2 * sigma * sigma));
+      }
+      const effectiveRadius = nodeRadius * magScale;
+
+      el.setAttribute('r', effectiveRadius);
       el.dataset.index = node.index;
       const ariaLabel = node.label ?? node.item?.name ?? node.item?.id ?? '';
       if (ariaLabel) el.setAttribute('aria-label', ariaLabel);
@@ -401,24 +469,27 @@ export class FocusRingView {
         this.labelsGroup.appendChild(label);
       }
       const useCentered = Boolean(node.labelCentered);
-      if (useCentered) {
-        label.setAttribute('x', node.x);
-        label.setAttribute('y', node.y);
+      const rotDeg = (node.angle * 180) / Math.PI + 180;
+      if (useCentered || magScale > 1.01) {
+        // Center label on the node circle and apply scale via SVG transform.
+        // Setting x=0,y=0 with text-anchor:middle keeps glyphs centered at the
+        // translate destination, so scale() acts from the node center.
+        // This sidesteps the CSS font-size override entirely.
+        label.setAttribute('x', '0');
+        label.setAttribute('y', '0');
         label.setAttribute('text-anchor', 'middle');
         label.setAttribute('dominant-baseline', 'middle');
-        const rotation = (node.angle * 180) / Math.PI + 180;
-        label.setAttribute('transform', `rotate(${rotation}, ${node.x}, ${node.y})`);
+        label.setAttribute('transform',
+          `translate(${node.x}, ${node.y}) rotate(${rotDeg}) scale(${magScale.toFixed(3)})`);
       } else {
-        const radius = nodeRadius;
-        const offset = radius * -1.3; // pull anchor notably toward the hub without hardcoded px gap
+        const offset = nodeRadius * -1.3;
         const lx = node.x + Math.cos(node.angle) * offset;
         const ly = node.y + Math.sin(node.angle) * offset;
         label.setAttribute('x', lx);
         label.setAttribute('y', ly);
         label.setAttribute('text-anchor', 'end');
         label.setAttribute('dominant-baseline', 'middle');
-        const rotation = (node.angle * 180) / Math.PI + 180; // 90° more to flip vertical
-        label.setAttribute('transform', `rotate(${rotation}, ${lx}, ${ly})`);
+        label.setAttribute('transform', `rotate(${rotDeg}, ${lx}, ${ly})`);
       }
       const masked = this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
       const isSelected = selectedId && (node.item.id === selectedId);

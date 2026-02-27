@@ -237,6 +237,14 @@ svg {
   pointer-events: none;
 }
 
+/* Fade child pyramid nodes/labels while the Focus Ring is rotating.
+   Blur is applied via SVG filter attribute for iOS WebKit compatibility. */
+.child-pyramid.is-rotating .child-pyramid-node,
+.child-pyramid.is-rotating .child-pyramid-label {
+  opacity: 0.5;
+  transition: opacity 80ms linear;
+}
+
 /* Migration animation overlay — cloned nodes that travel from pyramid to ring */
 .migration-animation-overlay {
   pointer-events: none;

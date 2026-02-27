@@ -91,6 +91,12 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [3.8.42] - 2026-02-26
+
+### Changed
+- Focus Ring rotation visuals: fan lines hidden during rotation; child pyramid nodes blur (SVG filter, iOS-compatible) and fade to 50% opacity; child pyramid and parent button label track live nearest-to-magnifier node; ring nodes grow with Gaussian scale as they pass the magnifier; rotation overrun capped at 3 node-spacings
+
+
 ## [3.8.41] - 2026-02-26
 
 ### Changed

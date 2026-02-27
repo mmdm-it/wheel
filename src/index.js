@@ -434,9 +434,12 @@ export function createApp({
       : visibleItems.lastIndexOf(nonNull[nonNull.length - 1]);
     const firstAngle = getBaseAngleForOrder(firstOrder, vp, nodeSpacing);
     const lastAngle = getBaseAngleForOrder(lastOrder, vp, nodeSpacing);
+    // Allow 3 node-spacings of overrun past each end of the chain
+    // (i.e. the terminal node may travel 3 spacings beyond the magnifier).
+    const overrun = 3 * nodeSpacing;
     return {
-      minRotation: windowInfo.startAngle - firstAngle,
-      maxRotation: windowInfo.endAngle - lastAngle
+      minRotation: magnifier.angle - overrun - firstAngle,
+      maxRotation: magnifier.angle + overrun - lastAngle
     };
   };
 
@@ -1144,20 +1147,36 @@ export function createApp({
     // Suppress child pyramid when Detail Sector is shown or animating
     const suppressPyramid = detailSectorShown || volumeLogo.animating;
 
+    // During rotation use the visible node currently closest to the magnifier so
+    // the child pyramid refreshes live rather than waiting for a committed snap.
+    const pyramidSelected = (() => {
+      if (!isRotating || nodes.length === 0) return selected;
+      let closest = null;
+      let closestDist = Infinity;
+      for (const node of nodes) {
+        const dist = Math.abs(node.angle - magnifier.angle);
+        if (dist < closestDist) {
+          closestDist = dist;
+          closest = node.item;
+        }
+      }
+      return closest ?? selected;
+    })();
+
     const pyramidData = (() => {
       if (suppressPyramid) return null;
       if (!pyramidConfig) return null;
       try {
         // Pre-fetch children to pass count for dynamic spacing
         let children = [];
-        if (typeof pyramidConfig.getChildren === 'function' && selected) {
-          children = pyramidConfig.getChildren({ selected });
+        if (typeof pyramidConfig.getChildren === 'function' && pyramidSelected) {
+          children = pyramidConfig.getChildren({ selected: pyramidSelected });
         }
         const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
           logoBounds: volumeLogo.getBounds(),
           magnifierAngle: magnifier.angle,
-          parentId: selected?.id ?? '',
-          parentSortNumber: selected?.order ?? 0,
+          parentId: pyramidSelected?.id ?? '',
+          parentSortNumber: pyramidSelected?.order ?? 0,
           childCount: children.length,
           hasDimensionButton: hasDimensions
         });
@@ -1195,7 +1214,10 @@ export function createApp({
       }
     })();
     lastPyramidData = pyramidData; // stash for SVG-level click delegation
-    const parentLabel = getParentLabel(selected);
+    // Use the live nearest-to-magnifier node during rotation so the parent
+    // button label updates as different items pass through the magnifier.
+    // pyramidSelected already falls back to `selected` when not rotating.
+    const parentLabel = getParentLabel(pyramidSelected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
       ? (lastParentLabelOut || parentLabel || selectedMagnifierLabel)
