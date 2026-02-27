@@ -1,6 +1,7 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
 import { buildPyramidInstructions, PyramidView } from '../src/view/detail/pyramid-view.js';
+import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 
 const mkPlacement = (id, x, y, angle, arc = 'inner') => ({
   item: { id, name: `name-${id}` },
@@ -46,30 +47,6 @@ describe('pyramid view helper', () => {
     assert.throws(() => buildPyramidInstructions(null), /array/);
   });
 });
-
-function createMockElement(tag) {
-  const children = [];
-  const element = {
-    tag,
-    attrs: {},
-    style: {},
-    parentNode: null,
-    setAttribute(name, value) { this.attrs[name] = String(value); },
-    getAttribute(name) { return this.attrs[name]; },
-    removeAttribute(name) { delete this.attrs[name]; },
-    appendChild(node) { children.push(node); node.parentNode = this; return node; },
-    removeChild(node) { const idx = children.indexOf(node); if (idx >= 0) children.splice(idx, 1); },
-    get firstChild() { return children[0]; },
-    get children() { return children; }
-  };
-  return element;
-}
-
-function createMockDocument() {
-  return {
-    createElementNS(ns, tag) { return createMockElement(tag); }
-  };
-}
 
 describe('PyramidView rendering', () => {
   it('renders connector lines and visible nodes when nodes are provided', () => {

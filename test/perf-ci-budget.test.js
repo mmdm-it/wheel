@@ -2,36 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { createApp, getViewportInfo } from '../src/index.js';
 import { createStoreNavigationBridge } from '../src/core/store-navigation-bridge.js';
-
-function makeMockElement(tag) {
-  const children = [];
-  const listeners = {};
-  return {
-    tag,
-    attrs: {},
-    style: {},
-    dataset: {},
-    get children() { return children; },
-    get firstChild() { return children[0] || null; },
-    classList: { toggle() {}, add() {}, remove() {} },
-    parentNode: null,
-    textContent: '',
-    setAttribute(name, value) { this.attrs[name] = String(value); },
-    setAttributeNS(ns, name, value) { this.attrs[name] = String(value); },
-    removeAttribute(name) { delete this.attrs[name]; },
-    appendChild(node) { children.push(node); node.parentNode = this; return node; },
-    removeChild(node) { const i = children.indexOf(node); if (i >= 0) children.splice(i, 1); node.parentNode = null; },
-    remove() { if (this.parentNode?.removeChild) this.parentNode.removeChild(this); },
-    addEventListener(type, handler) { listeners[type] = handler; },
-    dispatchEvent(event) { const handler = listeners[event.type]; if (handler) handler(event); }
-  };
-}
-
-function makeMockDocument() {
-  return {
-    createElementNS(ns, tag) { return makeMockElement(tag); }
-  };
-}
+import { createMockElement as makeMockElement, createMockDocument as makeMockDocument } from './helpers/mock-dom.js';
 
 function makeAdapter(id = 'perf-ci') {
   return {
