@@ -60,30 +60,40 @@ a *verified* state, not an attempted one.
   and `CHANGELOG.md`.
 - Run `npm run build` once more so `dist/app.js` embeds the new version.
 
-### 5. Commit and Push
+### 5. Commit
 - Stage only the intended files (never `git add .` blindly):
   ```
-  git add <changed files> package.json README.md CHANGELOG.md dist/app.js
+  git add <changed files> package.json README.md CHANGELOG.md
   git commit -m "<type>: <summary>"
-  git push origin HEAD
   ```
-- Open a pull request into `main`; merge after required checks pass.
+- Repeat gates 1–5 for the next change.  Accumulate commits locally.
 
-### 6. Sync to Server
-- Pull latest `main` after merge:
+### 6. Push and Merge (once or twice daily)
+- When ready to publish the day's work, push a branch and open a PR:
+  ```
+  git push origin main:refs/heads/<branch-name>
+  ```
+- Open the PR at `https://github.com/mmdm-it/wheel/pulls`.
+- Wait for the `test` CI check to go green, then merge.
+- Pull locally to sync:
   ```
   git checkout main && git pull --ff-only origin main
   ```
-- Deploy:
+
+### 7. Sync to Server
+- Deploy after pulling (step 6 above):
   ```
   ./sync-to-server.sh
   ```
-- Spot-check at `https://howellgibbens.com/mmdm/` on at least one phone.
+- Spot-check at `https://mmdm.it/` on at least one phone.
 
 ---
 
 ## Rules
 
+- **Commit per change, push once or twice daily.** Each verified change
+  gets its own commit immediately. Push accumulates to a branch PR once
+  or twice a day to avoid redundant CI runs and branch merges.
 - **Test before you bump.** A version number marks a verified state.
 - **One topic per commit.** Code fix, data change, and doc update can be
   separate commits if they're independent.
