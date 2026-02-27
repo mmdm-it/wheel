@@ -46,28 +46,32 @@ export class CardDetailPlugin extends BaseDetailPlugin {
         });
       }
 
-      // ── Body subtitle at tier-4 ──────────────────────────────
+      // ── Description: bulk middle section ────────────────────────
+      const descText = item?.description ?? '';
       const bodyText = item?.body ?? item?.text ?? '';
+      if (descText && lineIdx < lineTable.length) {
+        lineIdx += SECTION_GAP; // blank line after title
+        // Reserve lines at the end for the body (year) line
+        const bodyReserve = bodyText ? BODY_MAX_LINES + SECTION_GAP : 0;
+        const descEnd = Math.max(lineIdx, lineTable.length - bodyReserve);
+        const descLines = wrapLines(descText, lineTable.slice(lineIdx, descEnd), 3.0);
+        descLines.forEach(text => {
+          if (lineIdx >= descEnd) return;
+          container.appendChild(
+            makeLineSpan(create, text, 'detail-card-description font-tier-4', lineTable[lineIdx++])
+          );
+        });
+      }
+
+      // ── Body subtitle at tier-4 (bottom) ────────────────────────
       if (bodyText && lineIdx < lineTable.length) {
+        lineIdx += SECTION_GAP; // blank line before year
         const bodyLines = wrapLines(bodyText, lineTable.slice(lineIdx), 3.0)
           .slice(0, BODY_MAX_LINES);
         bodyLines.forEach(text => {
           if (lineIdx >= lineTable.length) return;
           container.appendChild(
             makeLineSpan(create, text, 'detail-card-body font-tier-4', lineTable[lineIdx++])
-          );
-        });
-      }
-
-      // ── Description: remaining lines at tier-4 ──────────────────
-      const descText = item?.description ?? '';
-      if (descText && lineIdx < lineTable.length) {
-        lineIdx += SECTION_GAP; // blank line before description
-        const descLines = wrapLines(descText, lineTable.slice(lineIdx), 3.0);
-        descLines.forEach(text => {
-          if (lineIdx >= lineTable.length) return;
-          container.appendChild(
-            makeLineSpan(create, text, 'detail-card-description font-tier-4', lineTable[lineIdx++])
           );
         });
       }

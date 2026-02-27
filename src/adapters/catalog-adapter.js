@@ -253,16 +253,16 @@ export function detailFor(selected, manifest) {
       if (model) break;
     }
     if (!model) model = {};
-    const introduced = model.year_introduced ? `Introduced ${model.year_introduced}` : null;
-    const discontinued = model.year_discontinued ? `Discontinued ${model.year_discontinued}` : null;
-    const body = [introduced, discontinued, cylinderKey ? `${cylinderKey} cylinder` : null].filter(Boolean).join(' · ');
-    const description = model.data?.description || null;
+    const introduced = model.year_introduced ? `Introdotto ${model.year_introduced}` : null;
+    const discontinued = model.year_discontinued ? `Fuori produzione ${model.year_discontinued}` : null;
+    const yearLine = [introduced, discontinued].filter(Boolean).join(' · ');
+    const descText = model.data?.description || null;
     return {
       type: 'card',
       title: model.engine_model || modelKey || name,
-      body: body || 'Model details',
+      body: yearLine || null,
       image: model.image || null,
-      description
+      description: descText
     };
   }
 

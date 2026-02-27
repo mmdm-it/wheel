@@ -595,64 +595,6 @@
                                 },
                                 "sort_number": 66
                             },
-                            "Admiral": {
-                                "year_founded": 1966,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "2": {
-                                        "sort_number": 1,
-                                        "models": [
-                                            {
-                                                "engine_model": "Admiral 2-100",
-                                                "year_introduced": 1966,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
-                                            }
-                                        ]
-                                    },
-                                    "4": {
-                                        "sort_number": 2,
-                                        "models": [
-                                            {
-                                                "engine_model": "Admiral 4-200",
-                                                "year_introduced": 1966,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
-                                            },
-                                            {
-                                                "engine_model": "Admiral 4-250",
-                                                "year_introduced": 1970,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
-                                            },
-                                            {
-                                                "engine_model": "EX4-1000",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 3
-                                            }
-                                        ]
-                                    },
-                                    "8": {
-                                        "sort_number": 3,
-                                        "models": [
-                                            {
-                                                "engine_model": "Admiral 8-400",
-                                                "year_introduced": 1966,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
-                                            },
-                                            {
-                                                "engine_model": "Admiral 8-450",
-                                                "year_introduced": 1975,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
-                                            }
-                                        ]
-                                    }
-                                },
-                                "sort_number": 1
-                            },
                             "Lancia Marine": {
                                 "year_founded": 1906,
                                 "year_dissolved": null,
