@@ -1,10 +1,10 @@
 {
   "name": "wheel",
-  "version": "3.8.41",
+  "version": "3.8.42",
   "type": "module",
   "scripts": {
     "build": "esbuild src/main.js --bundle --format=iife --target=chrome74 --outfile=dist/app.js --sourcemap --external:path --external:url --external:fs --external:fs/promises --external:ajv",
-    "test": "node --test",
+    "test": "node --test && npm run lint:forbidden",
     "lint:forbidden": "node --test test/forbidden-literals.test.js"
   },
   "dependencies": {

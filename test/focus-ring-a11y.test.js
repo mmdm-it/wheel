@@ -1,75 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it, beforeEach, afterEach } from 'node:test';
 import { FocusRingView } from '../src/view/focus-ring-view.js';
-
-function createMockElement(tag) {
-  const listeners = {};
-  const children = [];
-  const element = {
-    tag,
-    attrs: {},
-    style: {},
-    dataset: {},
-    classList: { toggle() {}, add() {}, remove() {} },
-    parentNode: null,
-    textContent: '',
-    onclick: null,
-    onkeydown: null,
-    setAttribute(name, value) {
-      this.attrs[name] = String(value);
-    },
-    setAttributeNS(ns, name, value) {
-      this.attrs[name] = String(value);
-    },
-    removeAttribute(name) {
-      delete this.attrs[name];
-    },
-    getAttribute(name) {
-      return this.attrs[name];
-    },
-    appendChild(node) {
-      const idx = children.indexOf(node);
-      if (idx >= 0) children.splice(idx, 1);
-      children.push(node);
-      node.parentNode = this;
-      return node;
-    },
-    remove() {
-      if (this.parentNode) {
-        this.parentNode.removeChild(this);
-      }
-    },
-    removeChild(node) {
-      const idx = children.indexOf(node);
-      if (idx >= 0) {
-        children.splice(idx, 1);
-        node.parentNode = null;
-      }
-    },
-    get firstChild() {
-      return children[0];
-    },
-    get children() {
-      return children;
-    },
-    addEventListener(event, handler) {
-      listeners[event] = handler;
-    },
-    dispatchEvent(event) {
-      const handler = listeners[event.type];
-      if (handler) handler(event);
-    }
-  };
-  return element;
-}
-
-function createMockDocument() {
-  return {
-    createElementNS(ns, tag) {
-      return createMockElement(tag);
-    }
-  };
-}
+import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 
 describe('FocusRingView accessibility', () => {
   const originalDocument = globalThis.document;

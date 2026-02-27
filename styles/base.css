@@ -237,6 +237,14 @@ svg {
   pointer-events: none;
 }
 
+/* Fade child pyramid nodes/labels while the Focus Ring is rotating.
+   Blur is applied via SVG filter attribute for iOS WebKit compatibility. */
+.child-pyramid.is-rotating .child-pyramid-node,
+.child-pyramid.is-rotating .child-pyramid-label {
+  opacity: 0.5;
+  transition: opacity 80ms linear;
+}
+
 /* Migration animation overlay — cloned nodes that travel from pyramid to ring */
 .migration-animation-overlay {
   pointer-events: none;
@@ -252,46 +260,40 @@ svg {
   }
 }
 
-/* Detail panel driven by adapter detail templates */
+/* Detail panel — full-screen transparent overlay.
+   Arc-following text is positioned in viewport coordinates;
+   cards centre themselves within the full-screen container. */
 .detail-panel {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(calc(460px * var(--iframe-scale, 1)), 56vw);
-  max-width: calc(520px * var(--iframe-scale, 1));
-  height: min(calc(560px * var(--iframe-scale, 1)), 72vh);
-  max-height: min(calc(560px * var(--iframe-scale, 1)), 72vh);
-  padding: calc(16px * var(--iframe-scale, 1)) calc(24px * var(--iframe-scale, 1));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: transparent;
   border: none;
-  border-radius: 0;
-  box-shadow: none;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.35s ease-in;
   z-index: 200;
 }
 
-.detail-panel > * + * {
-  margin-top: var(--space-sm, 8px);
-}
-
 .detail-panel.detail-panel--visible {
-  display: flex;
+  display: block;
   opacity: 1;
-  pointer-events: auto;
+  /* pointer-events intentionally remain 'none' — the panel is a transparent
+     display overlay.  Only specific interactive children opt-in below. */
 }
 
 .detail-content {
-  flex: 1;
-  overflow: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Pass events through to the SVG; only opt-in children capture them. */
+  pointer-events: none;
   color: rgba(255, 255, 255, 0.92);
   font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
-  font-size: calc(15px * var(--iframe-scale, 1));
   line-height: 1.4;
 }
 
@@ -299,34 +301,109 @@ svg {
   color: rgba(255, 255, 255, 0.92);
 }
 
+/* ── Plain text fallback ─────────────────────────────────────────────── */
 .detail-text {
   white-space: pre-wrap;
+  padding: calc(16px * var(--iframe-scale, 1)) calc(24px * var(--iframe-scale, 1));
+  font-size: calc(15px * var(--iframe-scale, 1));
 }
 
+/* ── Arc-following text layout ───────────────────────────────────────── */
+/* Container covers the full detail-content area; lines are absolutely
+   positioned using viewport coordinates from the line table. */
+.detail-text--arc {
+  position: absolute;
+  inset: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Individual arc-positioned text lines */
+.detail-text-line {
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*
+  Font-size tiers expressed as a fraction of SSd.
+  --detail-SSd is set by TextDetailPlugin on the container element.
+  line-height is unitless so it scales with computed font-size.
+*/
+.font-tier-1 { font-size: calc(4.5 / 100 * var(--detail-SSd, 650px)); line-height: 1.4; }
+.font-tier-2 { font-size: calc(4.0 / 100 * var(--detail-SSd, 650px)); line-height: 1.4; }
+.font-tier-3 { font-size: calc(3.5 / 100 * var(--detail-SSd, 650px)); line-height: 1.4; }
+.font-tier-4 { font-size: calc(3.0 / 100 * var(--detail-SSd, 650px)); line-height: 1.4; }
+
+/* RTL language support */
+.detail-text--arc[lang="he"],
+.detail-text--arc[lang="ar"] {
+  direction: rtl;
+}
+.detail-text--arc[lang="he"] .detail-text-line,
+.detail-text--arc[lang="ar"] .detail-text-line {
+  text-align: right;
+}
+
+/* ── Arc-following card layout ───────────────────────────────────────── */
+/* Container identical to .detail-text--arc: full-layer, lines are spans
+   absolutely positioned by the JS line table. */
+.detail-card--arc {
+  position: absolute;
+  inset: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Title line — bold, inherits font-tier class for size */
+.detail-card-title {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Body subtitle line — muted */
+.detail-card-body {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Description lines — italic */
+.detail-card-description {
+  color: rgba(255, 255, 255, 0.88);
+  font-style: italic;
+}
+
+/* ── Fallback card (no line table) ──────────────────────────────────── */
 .detail-card {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  max-height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 100%;
+  align-items: flex-start;
+  text-align: left;
+  overflow: hidden;
 }
 
 .detail-card > * + * {
   margin-top: var(--space-sm, 8px);
 }
 
-.detail-card-title {
-  font-weight: 600;
+.detail-card .detail-card-title {
+  font-weight: 700;
   font-size: calc(19px * var(--iframe-scale, 1));
   color: rgba(255, 255, 255, 0.95);
 }
 
-.detail-card-body {
+.detail-card .detail-card-body {
   font-size: calc(13px * var(--iframe-scale, 1));
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.65);
 }
 
-.detail-card-description {
+.detail-card .detail-card-description {
   margin-top: var(--space-md, 12px);
   font-size: calc(14px * var(--iframe-scale, 1));
   line-height: 1.65;
@@ -336,6 +413,8 @@ svg {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
+  pointer-events: auto;
+  max-height: 100%;
 }
 
 .detail-card-image {
