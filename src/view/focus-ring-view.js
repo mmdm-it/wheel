@@ -283,31 +283,11 @@ export class FocusRingView {
       this.pyramidNodesGroup = this.pyramidView.pyramidNodesGroup;
       this.pyramidLabelsGroup = this.pyramidView.pyramidLabelsGroup;
       // Hide fan lines between Magnifier and Child Pyramid nodes while rotating
-      const _flg = this.pyramidFanLinesGroup;
-      const _prevRotating = this._dbgLastIsRotating;
-      if (isRotating !== _prevRotating || options.debug) {
-        console.log('[FocusRingView] fan-line visibility update', {
-          isRotating,
-          'options.isRotating (raw)': options.isRotating,
-          pyramidDataNull: options.pyramidData == null,
-          fanLinesGroupPresent: Boolean(_flg),
-          fanLinesChildCount: _flg ? _flg.childNodes.length : 'N/A',
-          displayBefore: _flg ? (_flg.getAttribute('display') ?? '(none set)') : 'N/A'
-        });
-      }
-      this._dbgLastIsRotating = isRotating;
-      if (_flg) {
+      if (this.pyramidFanLinesGroup) {
         if (isRotating) {
-          _flg.setAttribute('display', 'none');
+          this.pyramidFanLinesGroup.setAttribute('display', 'none');
         } else {
-          _flg.removeAttribute('display');
-        }
-        if (isRotating !== _prevRotating || options.debug) {
-          console.log('[FocusRingView] fan-line display after set:', _flg.getAttribute('display') ?? '(none set)');
-        }
-      } else {
-        if (isRotating !== _prevRotating || options.debug) {
-          console.warn('[FocusRingView] pyramidFanLinesGroup is null — cannot hide fan lines');
+          this.pyramidFanLinesGroup.removeAttribute('display');
         }
       }
       // Blur and dim pyramid nodes/labels during rotation.
