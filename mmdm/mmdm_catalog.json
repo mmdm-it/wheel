@@ -1113,7 +1113,16 @@
                                     "1": {
                                         "sort_number": 1,
                                         "models": [
-                                            { "engine_model": "B1 Penta", "year_introduced": 1907, "year_discontinued": null, "sort_number": 1, "data": { "key_notes": "Single-cylinder paraffin-fueled engine designed by Edvard Hubendick; the first engine produced by what would become Volvo Penta. Developed for a test project ordered by Ingenjörsfirman Fritz Egnell. Named 'Penta' from the Greek word for five, honoring the five men who attended the initial design meeting.", "description": "Edvard Hubendick progettò il Penta B1, il primo motore prodotto da quella che sarebbe diventata Volvo Penta. Sviluppato nel 1907, il B1 era un motore monocilindrico alimentato a paraffina, creato per un progetto di prova commissionato dall'Ingenjörsfirman Fritz Egnell, di cui Hubendick era ingegnere capo. Il motore fu chiamato Penta, derivato dalla parola greca che significa 'cinque', in onore dei cinque uomini che parteciparono alla riunione di progettazione iniziale. Questo motore segnò l'inizio di una tradizione nella propulsione marina e gettò le basi per le future innovazioni di Volvo Penta." } }
+                                            {
+                                                "engine_model": "B1 Penta",
+                                                "year_introduced": 1907,
+                                                "year_discontinued": null,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Single-cylinder paraffin-fueled engine designed by Edvard Hubendick; the first engine produced by what would become Volvo Penta. Developed for a test project ordered by Ingenjörsfirman Fritz Egnell. Named 'Penta' from the Greek word for five, honoring the five men who attended the initial design meeting.",
+                                                    "description": "Edvard Hubendick progettò il Penta B1, il primo motore prodotto da quella che sarebbe diventata Volvo Penta. Sviluppato nel 1907, il B1 era un motore monocilindrico alimentato a paraffina, creato per un progetto di prova commissionato dall'Ingenjörsfirman Fritz Egnell, di cui Hubendick era ingegnere capo. Il motore fu chiamato Penta, derivato dalla parola greca che significa 'cinque', in onore dei cinque uomini che parteciparono alla riunione di progettazione iniziale. Questo motore segnò l'inizio di una tradizione nella propulsione marina e gettò le basi per le future innovazioni di Volvo Penta."
+                                                }
+                                            }
                                         ]
                                     },
                                     "2": {
@@ -1122,33 +1131,118 @@
                                             "MD": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "MD1B", "year_introduced": 1968, "year_discontinued": 1975, "sort_number": 1 },
-                                                    { "engine_model": "MD2B", "year_introduced": 1972, "year_discontinued": 1983, "sort_number": 2 },
-                                                    { "engine_model": "MD5A", "year_introduced": 1966, "year_discontinued": 1975, "sort_number": 3 },
-                                                    { "engine_model": "MD6A", "year_introduced": 1970, "year_discontinued": 1980, "sort_number": 4 },
-                                                    { "engine_model": "MD6B", "year_introduced": 1980, "year_discontinued": 1987, "sort_number": 5 },
-                                                    { "engine_model": "MD7A", "year_introduced": 1976, "year_discontinued": 1983, "sort_number": 6 },
-                                                    { "engine_model": "MD7B", "year_introduced": 1983, "year_discontinued": 1993, "sort_number": 7 }
+                                                    {
+                                                        "engine_model": "MD1B",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "MD2B",
+                                                        "year_introduced": 1972,
+                                                        "year_discontinued": 1983,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "MD5A",
+                                                        "year_introduced": 1966,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "MD6A",
+                                                        "year_introduced": 1970,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "MD6B",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1987,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "MD7A",
+                                                        "year_introduced": 1976,
+                                                        "year_discontinued": 1983,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "MD7B",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 7
+                                                    }
                                                 ]
                                             },
                                             "2000": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "2001", "year_introduced": 1984, "year_discontinued": 1991, "sort_number": 1 },
-                                                    { "engine_model": "2002", "year_introduced": 1986, "year_discontinued": 1993, "sort_number": 2 },
-                                                    { "engine_model": "2002B", "year_introduced": 1991, "year_discontinued": 1998, "sort_number": 3 },
-                                                    { "engine_model": "2002D", "year_introduced": 1996, "year_discontinued": 2002, "sort_number": 4 }
+                                                    {
+                                                        "engine_model": "2001",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1991,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "2002",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "2002B",
+                                                        "year_introduced": 1991,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "2002D",
+                                                        "year_introduced": 1996,
+                                                        "year_discontinued": 2002,
+                                                        "sort_number": 4
+                                                    }
                                                 ]
                                             },
                                             "D1": {
                                                 "sort_number": 3,
                                                 "models": [
-                                                    { "engine_model": "D1-13", "year_introduced": 2006, "year_discontinued": 2014, "sort_number": 1 },
-                                                    { "engine_model": "D1-13F", "year_introduced": 2006, "year_discontinued": 2014, "sort_number": 2 },
-                                                    { "engine_model": "D1-20", "year_introduced": 2006, "year_discontinued": null, "sort_number": 3 },
-                                                    { "engine_model": "D1-20F", "year_introduced": 2006, "year_discontinued": null, "sort_number": 4 },
-                                                    { "engine_model": "D1-30", "year_introduced": 2006, "year_discontinued": null, "sort_number": 5 },
-                                                    { "engine_model": "D1-30F", "year_introduced": 2006, "year_discontinued": null, "sort_number": 6 }
+                                                    {
+                                                        "engine_model": "D1-13",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2014,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "D1-13F",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2014,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "D1-20",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "D1-20F",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "D1-30",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "D1-30F",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 6
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1159,31 +1253,106 @@
                                             "MD": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "MD11C", "year_introduced": 1975, "year_discontinued": 1984, "sort_number": 1 },
-                                                    { "engine_model": "MD11D", "year_introduced": 1984, "year_discontinued": 1993, "sort_number": 2 },
-                                                    { "engine_model": "MD17C", "year_introduced": 1978, "year_discontinued": 1984, "sort_number": 3 },
-                                                    { "engine_model": "MD17D", "year_introduced": 1984, "year_discontinued": 1993, "sort_number": 4 }
+                                                    {
+                                                        "engine_model": "MD11C",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1984,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "MD11D",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "MD17C",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1984,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "MD17D",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 4
+                                                    }
                                                 ]
                                             },
                                             "2000": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "2003", "year_introduced": 1986, "year_discontinued": 1997, "sort_number": 1 },
-                                                    { "engine_model": "2003B", "year_introduced": 1991, "year_discontinued": 1998, "sort_number": 2 },
-                                                    { "engine_model": "2003D", "year_introduced": 1997, "year_discontinued": 2004, "sort_number": 3 },
-                                                    { "engine_model": "2003T", "year_introduced": 1990, "year_discontinued": 1997, "sort_number": 4 },
-                                                    { "engine_model": "2003TB", "year_introduced": 1997, "year_discontinued": 2004, "sort_number": 5 }
+                                                    {
+                                                        "engine_model": "2003",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 1997,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "2003B",
+                                                        "year_introduced": 1991,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "2003D",
+                                                        "year_introduced": 1997,
+                                                        "year_discontinued": 2004,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "2003T",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 1997,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "2003TB",
+                                                        "year_introduced": 1997,
+                                                        "year_discontinued": 2004,
+                                                        "sort_number": 5
+                                                    }
                                                 ]
                                             },
                                             "D2": {
                                                 "sort_number": 3,
                                                 "models": [
-                                                    { "engine_model": "D2-40", "year_introduced": 2006, "year_discontinued": null, "sort_number": 1 },
-                                                    { "engine_model": "D2-40F", "year_introduced": 2006, "year_discontinued": null, "sort_number": 2 },
-                                                    { "engine_model": "D2-50", "year_introduced": 2014, "year_discontinued": null, "sort_number": 3 },
-                                                    { "engine_model": "D2-55", "year_introduced": 2006, "year_discontinued": null, "sort_number": 4 },
-                                                    { "engine_model": "D2-60F", "year_introduced": 2014, "year_discontinued": null, "sort_number": 5 },
-                                                    { "engine_model": "D2-75", "year_introduced": 2006, "year_discontinued": null, "sort_number": 6 }
+                                                    {
+                                                        "engine_model": "D2-40",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "D2-40F",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "D2-50",
+                                                        "year_introduced": 2014,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "D2-55",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "D2-60F",
+                                                        "year_introduced": 2014,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "D2-75",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 6
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1194,111 +1363,436 @@
                                             "MD": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "MD21A", "year_introduced": 1968, "year_discontinued": 1975, "sort_number": 1 },
-                                                    { "engine_model": "MD21B", "year_introduced": 1975, "year_discontinued": 1983, "sort_number": 2 },
-                                                    { "engine_model": "MD30A", "year_introduced": 1975, "year_discontinued": 1980, "sort_number": 3 },
-                                                    { "engine_model": "MD31A", "year_introduced": 1980, "year_discontinued": 1988, "sort_number": 4 },
-                                                    { "engine_model": "MD32A", "year_introduced": 1983, "year_discontinued": 1993, "sort_number": 5 },
-                                                    { "engine_model": "MD40A", "year_introduced": 1978, "year_discontinued": 1985, "sort_number": 6 }
+                                                    {
+                                                        "engine_model": "MD21A",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "MD21B",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1983,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "MD30A",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "MD31A",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1988,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "MD32A",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "MD40A",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 6
+                                                    }
                                                 ]
                                             },
                                             "TMD": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "TMD22A", "year_introduced": 1988, "year_discontinued": 1996, "sort_number": 1 },
-                                                    { "engine_model": "TMD22B", "year_introduced": 1996, "year_discontinued": 2003, "sort_number": 2 },
-                                                    { "engine_model": "TMD31A", "year_introduced": 1980, "year_discontinued": 1988, "sort_number": 3 },
-                                                    { "engine_model": "TMD31B", "year_introduced": 1988, "year_discontinued": 1993, "sort_number": 4 },
-                                                    { "engine_model": "TMD40A", "year_introduced": 1980, "year_discontinued": 1987, "sort_number": 5 },
-                                                    { "engine_model": "TMD40B", "year_introduced": 1987, "year_discontinued": 1993, "sort_number": 6 }
+                                                    {
+                                                        "engine_model": "TMD22A",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1996,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD22B",
+                                                        "year_introduced": 1996,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD31A",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1988,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD31B",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD40A",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1987,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD40B",
+                                                        "year_introduced": 1987,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 6
+                                                    }
                                                 ]
                                             },
                                             "TAMD": {
                                                 "sort_number": 3,
                                                 "models": [
-                                                    { "engine_model": "TAMD22", "year_introduced": 1990, "year_discontinued": 1999, "sort_number": 1 },
-                                                    { "engine_model": "TAMD31A", "year_introduced": 1980, "year_discontinued": 1988, "sort_number": 2 },
-                                                    { "engine_model": "TAMD31B", "year_introduced": 1988, "year_discontinued": 1993, "sort_number": 3 },
-                                                    { "engine_model": "TAMD40A", "year_introduced": 1980, "year_discontinued": 1987, "sort_number": 4 },
-                                                    { "engine_model": "TAMD40B", "year_introduced": 1987, "year_discontinued": 1993, "sort_number": 5 },
-                                                    { "engine_model": "TAMD41A", "year_introduced": 1984, "year_discontinued": 1993, "sort_number": 6 },
-                                                    { "engine_model": "TAMD41B", "year_introduced": 1993, "year_discontinued": 1999, "sort_number": 7 }
+                                                    {
+                                                        "engine_model": "TAMD22",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD31A",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1988,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD31B",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD40A",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1987,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD40B",
+                                                        "year_introduced": 1987,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD41A",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD41B",
+                                                        "year_introduced": 1993,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 7
+                                                    }
                                                 ]
                                             },
                                             "AD": {
                                                 "sort_number": 4,
                                                 "models": [
-                                                    { "engine_model": "AD31A", "year_introduced": 1988, "year_discontinued": 1994, "sort_number": 1 },
-                                                    { "engine_model": "AD31B", "year_introduced": 1994, "year_discontinued": 2000, "sort_number": 2 },
-                                                    { "engine_model": "AD31P-A", "year_introduced": 1992, "year_discontinued": 1998, "sort_number": 3 },
-                                                    { "engine_model": "AD41A", "year_introduced": 1990, "year_discontinued": 1996, "sort_number": 4 },
-                                                    { "engine_model": "AD41B", "year_introduced": 1996, "year_discontinued": 2002, "sort_number": 5 },
-                                                    { "engine_model": "AD41P-A", "year_introduced": 1992, "year_discontinued": 1999, "sort_number": 6 }
+                                                    {
+                                                        "engine_model": "AD31A",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1994,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "AD31B",
+                                                        "year_introduced": 1994,
+                                                        "year_discontinued": 2000,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "AD31P-A",
+                                                        "year_introduced": 1992,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "AD41A",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 1996,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "AD41B",
+                                                        "year_introduced": 1996,
+                                                        "year_discontinued": 2002,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "AD41P-A",
+                                                        "year_introduced": 1992,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 6
+                                                    }
                                                 ]
                                             },
                                             "KAD": {
                                                 "sort_number": 5,
                                                 "models": [
-                                                    { "engine_model": "KAD32P", "year_introduced": 1993, "year_discontinued": 2003, "sort_number": 1 },
-                                                    { "engine_model": "KAD42A", "year_introduced": 1993, "year_discontinued": 1999, "sort_number": 2 },
-                                                    { "engine_model": "KAD42B", "year_introduced": 1999, "year_discontinued": 2005, "sort_number": 3 },
-                                                    { "engine_model": "KAD42P-A", "year_introduced": 1993, "year_discontinued": 1999, "sort_number": 4 },
-                                                    { "engine_model": "KAD43P", "year_introduced": 1999, "year_discontinued": 2006, "sort_number": 5 },
-                                                    { "engine_model": "KAD44P-B", "year_introduced": 2003, "year_discontinued": 2009, "sort_number": 6 },
-                                                    { "engine_model": "KAD44P-C", "year_introduced": 2006, "year_discontinued": 2012, "sort_number": 7 }
+                                                    {
+                                                        "engine_model": "KAD32P",
+                                                        "year_introduced": 1993,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "KAD42A",
+                                                        "year_introduced": 1993,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "KAD42B",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": 2005,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "KAD42P-A",
+                                                        "year_introduced": 1993,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "KAD43P",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "KAD44P-B",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": 2009,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "KAD44P-C",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2012,
+                                                        "sort_number": 7
+                                                    }
                                                 ]
                                             },
                                             "2000": {
                                                 "sort_number": 6,
                                                 "models": [
-                                                    { "engine_model": "2010", "year_introduced": 1989, "year_discontinued": 1993, "sort_number": 1 },
-                                                    { "engine_model": "2020", "year_introduced": 1989, "year_discontinued": 1995, "sort_number": 2 },
-                                                    { "engine_model": "2020B", "year_introduced": 1995, "year_discontinued": 2001, "sort_number": 3 },
-                                                    { "engine_model": "2020D", "year_introduced": 2001, "year_discontinued": 2006, "sort_number": 4 },
-                                                    { "engine_model": "2030", "year_introduced": 1989, "year_discontinued": 1995, "sort_number": 5 },
-                                                    { "engine_model": "2030B", "year_introduced": 1995, "year_discontinued": 2001, "sort_number": 6 },
-                                                    { "engine_model": "2030D", "year_introduced": 2001, "year_discontinued": 2006, "sort_number": 7 },
-                                                    { "engine_model": "2040", "year_introduced": 1989, "year_discontinued": 1995, "sort_number": 8 },
-                                                    { "engine_model": "2040B", "year_introduced": 1995, "year_discontinued": 2001, "sort_number": 9 },
-                                                    { "engine_model": "2040D", "year_introduced": 2001, "year_discontinued": 2006, "sort_number": 10 }
+                                                    {
+                                                        "engine_model": "2010",
+                                                        "year_introduced": 1989,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "2020",
+                                                        "year_introduced": 1989,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "2020B",
+                                                        "year_introduced": 1995,
+                                                        "year_discontinued": 2001,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "2020D",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "2030",
+                                                        "year_introduced": 1989,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "2030B",
+                                                        "year_introduced": 1995,
+                                                        "year_discontinued": 2001,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "2030D",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 7
+                                                    },
+                                                    {
+                                                        "engine_model": "2040",
+                                                        "year_introduced": 1989,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 8
+                                                    },
+                                                    {
+                                                        "engine_model": "2040B",
+                                                        "year_introduced": 1995,
+                                                        "year_discontinued": 2001,
+                                                        "sort_number": 9
+                                                    },
+                                                    {
+                                                        "engine_model": "2040D",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 10
+                                                    }
                                                 ]
                                             },
                                             "D3": {
                                                 "sort_number": 7,
                                                 "models": [
-                                                    { "engine_model": "D3-110", "year_introduced": 2006, "year_discontinued": 2013, "sort_number": 1 },
-                                                    { "engine_model": "D3-130", "year_introduced": 2006, "year_discontinued": 2013, "sort_number": 2 },
-                                                    { "engine_model": "D3-150", "year_introduced": 2006, "year_discontinued": 2013, "sort_number": 3 },
-                                                    { "engine_model": "D3-170", "year_introduced": 2006, "year_discontinued": 2013, "sort_number": 4 },
-                                                    { "engine_model": "D3-200", "year_introduced": 2006, "year_discontinued": 2013, "sort_number": 5 },
-                                                    { "engine_model": "D3-220", "year_introduced": 2006, "year_discontinued": 2013, "sort_number": 6 }
+                                                    {
+                                                        "engine_model": "D3-110",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2013,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-130",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2013,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-150",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2013,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-170",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2013,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-200",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2013,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-220",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2013,
+                                                        "sort_number": 6
+                                                    }
                                                 ]
                                             },
                                             "D4": {
                                                 "sort_number": 8,
                                                 "models": [
-                                                    { "engine_model": "D4-180", "year_introduced": 2009, "year_discontinued": null, "sort_number": 1 },
-                                                    { "engine_model": "D4-210", "year_introduced": 2009, "year_discontinued": null, "sort_number": 2 },
-                                                    { "engine_model": "D4-225A-F", "year_introduced": 2009, "year_discontinued": null, "sort_number": 3 },
-                                                    { "engine_model": "D4-260", "year_introduced": 2009, "year_discontinued": null, "sort_number": 4 },
-                                                    { "engine_model": "D4-300", "year_introduced": 2013, "year_discontinued": null, "sort_number": 5 },
-                                                    { "engine_model": "D4-320", "year_introduced": 2018, "year_discontinued": null, "sort_number": 6 }
+                                                    {
+                                                        "engine_model": "D4-180",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "D4-210",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "D4-225A-F",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "D4-260",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "D4-300",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "D4-320",
+                                                        "year_introduced": 2018,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 6
+                                                    }
                                                 ]
                                             },
                                             "B (Gas)": {
                                                 "sort_number": 9,
                                                 "models": [
-                                                    { "engine_model": "B18", "year_introduced": 1961, "year_discontinued": 1968, "sort_number": 1 },
-                                                    { "engine_model": "B20", "year_introduced": 1969, "year_discontinued": 1975, "sort_number": 2 },
-                                                    { "engine_model": "B21", "year_introduced": 1975, "year_discontinued": 1985, "sort_number": 3 },
-                                                    { "engine_model": "B23", "year_introduced": 1981, "year_discontinued": 1988, "sort_number": 4 },
-                                                    { "engine_model": "B25", "year_introduced": 1988, "year_discontinued": 1996, "sort_number": 5 },
-                                                    { "engine_model": "AQ115", "year_introduced": 1966, "year_discontinued": 1977, "sort_number": 6 },
-                                                    { "engine_model": "AQ125A", "year_introduced": 1972, "year_discontinued": 1977, "sort_number": 7 },
-                                                    { "engine_model": "AQ130", "year_introduced": 1969, "year_discontinued": 1975, "sort_number": 8 },
-                                                    { "engine_model": "AQ131", "year_introduced": 1975, "year_discontinued": 1988, "sort_number": 9 },
-                                                    { "engine_model": "AQ145", "year_introduced": 1971, "year_discontinued": 1978, "sort_number": 10 },
-                                                    { "engine_model": "AQ151", "year_introduced": 1985, "year_discontinued": 1993, "sort_number": 11 }
+                                                    {
+                                                        "engine_model": "B18",
+                                                        "year_introduced": 1961,
+                                                        "year_discontinued": 1968,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "B20",
+                                                        "year_introduced": 1969,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "B21",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "B23",
+                                                        "year_introduced": 1981,
+                                                        "year_discontinued": 1988,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "B25",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1996,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ115",
+                                                        "year_introduced": 1966,
+                                                        "year_discontinued": 1977,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ125A",
+                                                        "year_introduced": 1972,
+                                                        "year_discontinued": 1977,
+                                                        "sort_number": 7
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ130",
+                                                        "year_introduced": 1969,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 8
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ131",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1988,
+                                                        "sort_number": 9
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ145",
+                                                        "year_introduced": 1971,
+                                                        "year_discontinued": 1978,
+                                                        "sort_number": 10
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ151",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 11
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1309,18 +1803,53 @@
                                             "D3": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "D3-140A-F", "year_introduced": 2013, "year_discontinued": null, "sort_number": 1 },
-                                                    { "engine_model": "D3-150A-F", "year_introduced": 2013, "year_discontinued": null, "sort_number": 2 },
-                                                    { "engine_model": "D3-170A-F", "year_introduced": 2013, "year_discontinued": null, "sort_number": 3 },
-                                                    { "engine_model": "D3-200A-F", "year_introduced": 2013, "year_discontinued": null, "sort_number": 4 },
-                                                    { "engine_model": "D3-220A-F", "year_introduced": 2013, "year_discontinued": null, "sort_number": 5 }
+                                                    {
+                                                        "engine_model": "D3-140A-F",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-150A-F",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-170A-F",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-200A-F",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "D3-220A-F",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 5
+                                                    }
                                                 ]
                                             },
                                             "AQ (Gas)": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "AQ171", "year_introduced": 1978, "year_discontinued": 1984, "sort_number": 1 },
-                                                    { "engine_model": "AQ171C", "year_introduced": 1984, "year_discontinued": 1990, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "AQ171",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1984,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ171C",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1990,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1331,66 +1860,241 @@
                                             "MD": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "MD70A", "year_introduced": 1975, "year_discontinued": 1982, "sort_number": 1 },
-                                                    { "engine_model": "MD70B", "year_introduced": 1982, "year_discontinued": 1990, "sort_number": 2 },
-                                                    { "engine_model": "MD96A", "year_introduced": 1978, "year_discontinued": 1985, "sort_number": 3 },
-                                                    { "engine_model": "MD96B", "year_introduced": 1985, "year_discontinued": 1993, "sort_number": 4 },
-                                                    { "engine_model": "MD100A", "year_introduced": 1976, "year_discontinued": 1983, "sort_number": 5 },
-                                                    { "engine_model": "MD100B", "year_introduced": 1983, "year_discontinued": 1991, "sort_number": 6 }
+                                                    {
+                                                        "engine_model": "MD70A",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1982,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "MD70B",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": 1990,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "MD96A",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "MD96B",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "MD100A",
+                                                        "year_introduced": 1976,
+                                                        "year_discontinued": 1983,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "MD100B",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": 1991,
+                                                        "sort_number": 6
+                                                    }
                                                 ]
                                             },
                                             "TMD": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "TMD70A", "year_introduced": 1978, "year_discontinued": 1985, "sort_number": 1 },
-                                                    { "engine_model": "TMD70B", "year_introduced": 1985, "year_discontinued": 1993, "sort_number": 2 },
-                                                    { "engine_model": "TMD100A", "year_introduced": 1980, "year_discontinued": 1988, "sort_number": 3 },
-                                                    { "engine_model": "TMD100C", "year_introduced": 1988, "year_discontinued": 1993, "sort_number": 4 },
-                                                    { "engine_model": "TMD120A", "year_introduced": 1983, "year_discontinued": 1993, "sort_number": 5 }
+                                                    {
+                                                        "engine_model": "TMD70A",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD70B",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD100A",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1988,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD100C",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "TMD120A",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 5
+                                                    }
                                                 ]
                                             },
                                             "TAMD": {
                                                 "sort_number": 3,
                                                 "models": [
-                                                    { "engine_model": "TAMD61A", "year_introduced": 1984, "year_discontinued": 1993, "sort_number": 1 },
-                                                    { "engine_model": "TAMD63L", "year_introduced": 1988, "year_discontinued": 1995, "sort_number": 2 },
-                                                    { "engine_model": "TAMD63P", "year_introduced": 1990, "year_discontinued": 1997, "sort_number": 3 },
-                                                    { "engine_model": "TAMD71A", "year_introduced": 1986, "year_discontinued": 1993, "sort_number": 4 },
-                                                    { "engine_model": "TAMD71B", "year_introduced": 1993, "year_discontinued": 2000, "sort_number": 5 },
-                                                    { "engine_model": "TAMD72A", "year_introduced": 1995, "year_discontinued": 2003, "sort_number": 6 },
-                                                    { "engine_model": "TAMD73P-A", "year_introduced": 1999, "year_discontinued": 2006, "sort_number": 7 },
-                                                    { "engine_model": "TAMD74A", "year_introduced": 2000, "year_discontinued": 2006, "sort_number": 8 },
-                                                    { "engine_model": "TAMD74P-A", "year_introduced": 2000, "year_discontinued": 2006, "sort_number": 9 },
-                                                    { "engine_model": "TAMD74P-B", "year_introduced": 2003, "year_discontinued": 2009, "sort_number": 10 },
-                                                    { "engine_model": "TAMD75P-A", "year_introduced": 2003, "year_discontinued": 2010, "sort_number": 11 }
+                                                    {
+                                                        "engine_model": "TAMD61A",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD63L",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD63P",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 1997,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD71A",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD71B",
+                                                        "year_introduced": 1993,
+                                                        "year_discontinued": 2000,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD72A",
+                                                        "year_introduced": 1995,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD73P-A",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 7
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD74A",
+                                                        "year_introduced": 2000,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 8
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD74P-A",
+                                                        "year_introduced": 2000,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 9
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD74P-B",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": 2009,
+                                                        "sort_number": 10
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD75P-A",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": 2010,
+                                                        "sort_number": 11
+                                                    }
                                                 ]
                                             },
                                             "KAD/KAMD": {
                                                 "sort_number": 4,
                                                 "models": [
-                                                    { "engine_model": "KAD300", "year_introduced": 2003, "year_discontinued": 2010, "sort_number": 1 },
-                                                    { "engine_model": "KAMD300", "year_introduced": 2003, "year_discontinued": 2010, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "KAD300",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": 2010,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "KAMD300",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": 2010,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "D6": {
                                                 "sort_number": 5,
                                                 "models": [
-                                                    { "engine_model": "D6-280A-E", "year_introduced": 2009, "year_discontinued": null, "sort_number": 1 },
-                                                    { "engine_model": "D6-310A-E", "year_introduced": 2009, "year_discontinued": null, "sort_number": 2 },
-                                                    { "engine_model": "D6-330A-E", "year_introduced": 2009, "year_discontinued": null, "sort_number": 3 },
-                                                    { "engine_model": "D6-370A-F", "year_introduced": 2009, "year_discontinued": null, "sort_number": 4 },
-                                                    { "engine_model": "D6-400A-F", "year_introduced": 2013, "year_discontinued": null, "sort_number": 5 },
-                                                    { "engine_model": "D6-435", "year_introduced": 2016, "year_discontinued": null, "sort_number": 6 },
-                                                    { "engine_model": "D6-IPS400", "year_introduced": 2009, "year_discontinued": null, "sort_number": 7 },
-                                                    { "engine_model": "D6-IPS500", "year_introduced": 2013, "year_discontinued": null, "sort_number": 8 }
+                                                    {
+                                                        "engine_model": "D6-280A-E",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "D6-310A-E",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "D6-330A-E",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "D6-370A-F",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "D6-400A-F",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "D6-435",
+                                                        "year_introduced": 2016,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "D6-IPS400",
+                                                        "year_introduced": 2009,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 7
+                                                    },
+                                                    {
+                                                        "engine_model": "D6-IPS500",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 8
+                                                    }
                                                 ]
                                             },
                                             "B (Gas)": {
                                                 "sort_number": 6,
                                                 "models": [
-                                                    { "engine_model": "B30", "year_introduced": 1969, "year_discontinued": 1975, "sort_number": 1 },
-                                                    { "engine_model": "AQ165", "year_introduced": 1973, "year_discontinued": 1980, "sort_number": 2 },
-                                                    { "engine_model": "AQ170", "year_introduced": 1968, "year_discontinued": 1975, "sort_number": 3 }
+                                                    {
+                                                        "engine_model": "B30",
+                                                        "year_introduced": 1969,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ165",
+                                                        "year_introduced": 1973,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ170",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 3
+                                                    }
                                                 ]
                                             },
                                             "GM (Gas)": {
@@ -1399,9 +2103,24 @@
                                                     "V6": {
                                                         "sort_number": 1,
                                                         "models": [
-                                                            { "engine_model": "4.3L GL", "year_introduced": 1990, "year_discontinued": 2004, "sort_number": 1 },
-                                                            { "engine_model": "4.3L GXi", "year_introduced": 2001, "year_discontinued": 2016, "sort_number": 2 },
-                                                            { "engine_model": "4.3L GXi-C", "year_introduced": 2003, "year_discontinued": 2016, "sort_number": 3 }
+                                                            {
+                                                                "engine_model": "4.3L GL",
+                                                                "year_introduced": 1990,
+                                                                "year_discontinued": 2004,
+                                                                "sort_number": 1
+                                                            },
+                                                            {
+                                                                "engine_model": "4.3L GXi",
+                                                                "year_introduced": 2001,
+                                                                "year_discontinued": 2016,
+                                                                "sort_number": 2
+                                                            },
+                                                            {
+                                                                "engine_model": "4.3L GXi-C",
+                                                                "year_introduced": 2003,
+                                                                "year_discontinued": 2016,
+                                                                "sort_number": 3
+                                                            }
                                                         ]
                                                     }
                                                 }
@@ -1414,31 +2133,106 @@
                                             "TAMD": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "TAMD102A", "year_introduced": 1990, "year_discontinued": 1998, "sort_number": 1 },
-                                                    { "engine_model": "TAMD102D", "year_introduced": 1998, "year_discontinued": 2005, "sort_number": 2 },
-                                                    { "engine_model": "TAMD162A", "year_introduced": 1992, "year_discontinued": 2000, "sort_number": 3 },
-                                                    { "engine_model": "TAMD162C", "year_introduced": 2000, "year_discontinued": 2006, "sort_number": 4 },
-                                                    { "engine_model": "TAMD163A", "year_introduced": 1994, "year_discontinued": 2002, "sort_number": 5 },
-                                                    { "engine_model": "TAMD163P-A", "year_introduced": 1998, "year_discontinued": 2004, "sort_number": 6 },
-                                                    { "engine_model": "TAMD165A", "year_introduced": 2000, "year_discontinued": 2006, "sort_number": 7 },
-                                                    { "engine_model": "TAMD165P", "year_introduced": 2002, "year_discontinued": 2008, "sort_number": 8 }
+                                                    {
+                                                        "engine_model": "TAMD102A",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD102D",
+                                                        "year_introduced": 1998,
+                                                        "year_discontinued": 2005,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD162A",
+                                                        "year_introduced": 1992,
+                                                        "year_discontinued": 2000,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD162C",
+                                                        "year_introduced": 2000,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD163A",
+                                                        "year_introduced": 1994,
+                                                        "year_discontinued": 2002,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD163P-A",
+                                                        "year_introduced": 1998,
+                                                        "year_discontinued": 2004,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD165A",
+                                                        "year_introduced": 2000,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 7
+                                                    },
+                                                    {
+                                                        "engine_model": "TAMD165P",
+                                                        "year_introduced": 2002,
+                                                        "year_discontinued": 2008,
+                                                        "sort_number": 8
+                                                    }
                                                 ]
                                             },
                                             "D11": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "D11A-370", "year_introduced": 2006, "year_discontinued": 2012, "sort_number": 1 },
-                                                    { "engine_model": "D11A-400", "year_introduced": 2006, "year_discontinued": 2012, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "D11A-370",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2012,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "D11A-400",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": 2012,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "D13": {
                                                 "sort_number": 3,
                                                 "models": [
-                                                    { "engine_model": "D13-800", "year_introduced": 2013, "year_discontinued": null, "sort_number": 1 },
-                                                    { "engine_model": "D13-900", "year_introduced": 2013, "year_discontinued": null, "sort_number": 2 },
-                                                    { "engine_model": "D13-1000", "year_introduced": 2016, "year_discontinued": null, "sort_number": 3 },
-                                                    { "engine_model": "D13-IPS1200", "year_introduced": 2013, "year_discontinued": null, "sort_number": 4 },
-                                                    { "engine_model": "D13-IPS1350", "year_introduced": 2016, "year_discontinued": null, "sort_number": 5 }
+                                                    {
+                                                        "engine_model": "D13-800",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "D13-900",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "D13-1000",
+                                                        "year_introduced": 2016,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "D13-IPS1200",
+                                                        "year_introduced": 2013,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "D13-IPS1350",
+                                                        "year_introduced": 2016,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 5
+                                                    }
                                                 ]
                                             },
                                             "GM (Gas)": {
@@ -1447,23 +2241,83 @@
                                                     "Small Block": {
                                                         "sort_number": 1,
                                                         "models": [
-                                                            { "engine_model": "5.0L GL", "year_introduced": 1985, "year_discontinued": 1998, "sort_number": 1 },
-                                                            { "engine_model": "5.0L GXi", "year_introduced": 1998, "year_discontinued": 2012, "sort_number": 2 },
-                                                            { "engine_model": "5.7L GL", "year_introduced": 1985, "year_discontinued": 1998, "sort_number": 3 },
-                                                            { "engine_model": "5.7L Gi", "year_introduced": 1998, "year_discontinued": 2008, "sort_number": 4 },
-                                                            { "engine_model": "5.7L GXi", "year_introduced": 2001, "year_discontinued": 2016, "sort_number": 5 },
-                                                            { "engine_model": "5.7L GXi-C", "year_introduced": 2003, "year_discontinued": 2016, "sort_number": 6 },
-                                                            { "engine_model": "5.7L OSi", "year_introduced": 2008, "year_discontinued": 2016, "sort_number": 7 }
+                                                            {
+                                                                "engine_model": "5.0L GL",
+                                                                "year_introduced": 1985,
+                                                                "year_discontinued": 1998,
+                                                                "sort_number": 1
+                                                            },
+                                                            {
+                                                                "engine_model": "5.0L GXi",
+                                                                "year_introduced": 1998,
+                                                                "year_discontinued": 2012,
+                                                                "sort_number": 2
+                                                            },
+                                                            {
+                                                                "engine_model": "5.7L GL",
+                                                                "year_introduced": 1985,
+                                                                "year_discontinued": 1998,
+                                                                "sort_number": 3
+                                                            },
+                                                            {
+                                                                "engine_model": "5.7L Gi",
+                                                                "year_introduced": 1998,
+                                                                "year_discontinued": 2008,
+                                                                "sort_number": 4
+                                                            },
+                                                            {
+                                                                "engine_model": "5.7L GXi",
+                                                                "year_introduced": 2001,
+                                                                "year_discontinued": 2016,
+                                                                "sort_number": 5
+                                                            },
+                                                            {
+                                                                "engine_model": "5.7L GXi-C",
+                                                                "year_introduced": 2003,
+                                                                "year_discontinued": 2016,
+                                                                "sort_number": 6
+                                                            },
+                                                            {
+                                                                "engine_model": "5.7L OSi",
+                                                                "year_introduced": 2008,
+                                                                "year_discontinued": 2016,
+                                                                "sort_number": 7
+                                                            }
                                                         ]
                                                     },
                                                     "Big Block": {
                                                         "sort_number": 2,
                                                         "models": [
-                                                            { "engine_model": "7.4L Gi", "year_introduced": 1992, "year_discontinued": 2004, "sort_number": 1 },
-                                                            { "engine_model": "7.4L GXi", "year_introduced": 2001, "year_discontinued": 2004, "sort_number": 2 },
-                                                            { "engine_model": "8.1L Gi", "year_introduced": 2001, "year_discontinued": 2009, "sort_number": 3 },
-                                                            { "engine_model": "8.1L GXi", "year_introduced": 2003, "year_discontinued": 2009, "sort_number": 4 },
-                                                            { "engine_model": "8.2L GL", "year_introduced": 1985, "year_discontinued": 1993, "sort_number": 5 }
+                                                            {
+                                                                "engine_model": "7.4L Gi",
+                                                                "year_introduced": 1992,
+                                                                "year_discontinued": 2004,
+                                                                "sort_number": 1
+                                                            },
+                                                            {
+                                                                "engine_model": "7.4L GXi",
+                                                                "year_introduced": 2001,
+                                                                "year_discontinued": 2004,
+                                                                "sort_number": 2
+                                                            },
+                                                            {
+                                                                "engine_model": "8.1L Gi",
+                                                                "year_introduced": 2001,
+                                                                "year_discontinued": 2009,
+                                                                "sort_number": 3
+                                                            },
+                                                            {
+                                                                "engine_model": "8.1L GXi",
+                                                                "year_introduced": 2003,
+                                                                "year_discontinued": 2009,
+                                                                "sort_number": 4
+                                                            },
+                                                            {
+                                                                "engine_model": "8.2L GL",
+                                                                "year_introduced": 1985,
+                                                                "year_discontinued": 1993,
+                                                                "sort_number": 5
+                                                            }
                                                         ]
                                                     }
                                                 }
@@ -1471,14 +2325,54 @@
                                             "AQ (Gas)": {
                                                 "sort_number": 5,
                                                 "models": [
-                                                    { "engine_model": "AQ190A", "year_introduced": 1973, "year_discontinued": 1978, "sort_number": 1 },
-                                                    { "engine_model": "AQ200", "year_introduced": 1968, "year_discontinued": 1975, "sort_number": 2 },
-                                                    { "engine_model": "AQ211A", "year_introduced": 1977, "year_discontinued": 1982, "sort_number": 3 },
-                                                    { "engine_model": "AQ225", "year_introduced": 1980, "year_discontinued": 1986, "sort_number": 4 },
-                                                    { "engine_model": "AQ231", "year_introduced": 1984, "year_discontinued": 1990, "sort_number": 5 },
-                                                    { "engine_model": "AQ255", "year_introduced": 1973, "year_discontinued": 1980, "sort_number": 6 },
-                                                    { "engine_model": "AQ260", "year_introduced": 1975, "year_discontinued": 1986, "sort_number": 7 },
-                                                    { "engine_model": "AQ271", "year_introduced": 1978, "year_discontinued": 1986, "sort_number": 8 }
+                                                    {
+                                                        "engine_model": "AQ190A",
+                                                        "year_introduced": 1973,
+                                                        "year_discontinued": 1978,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ200",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ211A",
+                                                        "year_introduced": 1977,
+                                                        "year_discontinued": 1982,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ225",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1986,
+                                                        "sort_number": 4
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ231",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1990,
+                                                        "sort_number": 5
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ255",
+                                                        "year_introduced": 1973,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 6
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ260",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1986,
+                                                        "sort_number": 7
+                                                    },
+                                                    {
+                                                        "engine_model": "AQ271",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1986,
+                                                        "sort_number": 8
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1619,9 +2513,8 @@
                             "Callesen": {
                                 "year_founded": null,
                                 "year_dissolved": null,
-                                "cylinders": {
-                                },
-                                "sort_number": 107
+                                "cylinders": {},
+                                "sort_number": 12
                             },
                             "Burmeister & Wain": {
                                 "year_founded": 1846,
@@ -1840,7 +2733,12 @@
                                             "KR": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "1KR-FE", "year_introduced": 2004, "year_discontinued": null, "sort_number": 1 }
+                                                    {
+                                                        "engine_model": "1KR-FE",
+                                                        "year_introduced": 2004,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1851,45 +2749,115 @@
                                             "R": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "20R", "year_introduced": 1975, "year_discontinued": 1980, "sort_number": 1 },
-                                                    { "engine_model": "22R", "year_introduced": 1981, "year_discontinued": 1995, "sort_number": 2 },
-                                                    { "engine_model": "22R-E", "year_introduced": 1983, "year_discontinued": 1997, "sort_number": 3 },
-                                                    { "engine_model": "22R-TE", "year_introduced": 1986, "year_discontinued": 1988, "sort_number": 4 }
+                                                    {
+                                                        "engine_model": "20R",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "22R",
+                                                        "year_introduced": 1981,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "22R-E",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": 1997,
+                                                        "sort_number": 3
+                                                    },
+                                                    {
+                                                        "engine_model": "22R-TE",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 1988,
+                                                        "sort_number": 4
+                                                    }
                                                 ]
                                             },
                                             "T": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "2T-G", "year_introduced": 1970, "year_discontinued": 1977, "sort_number": 1 },
-                                                    { "engine_model": "3T-GTE", "year_introduced": 1982, "year_discontinued": 1986, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "2T-G",
+                                                        "year_introduced": 1970,
+                                                        "year_discontinued": 1977,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "3T-GTE",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": 1986,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "A": {
                                                 "sort_number": 3,
                                                 "models": [
-                                                    { "engine_model": "4A-GE", "year_introduced": 1983, "year_discontinued": 1998, "sort_number": 1 },
-                                                    { "engine_model": "7A-FE", "year_introduced": 1990, "year_discontinued": 2002, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "4A-GE",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "7A-FE",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 2002,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "S": {
                                                 "sort_number": 4,
                                                 "models": [
-                                                    { "engine_model": "3S-GE", "year_introduced": 1986, "year_discontinued": 2007, "sort_number": 1 },
-                                                    { "engine_model": "3S-GTE", "year_introduced": 1990, "year_discontinued": 1999, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "3S-GE",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "3S-GTE",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "NZ": {
                                                 "sort_number": 5,
                                                 "models": [
-                                                    { "engine_model": "1NZ-FE", "year_introduced": 1999, "year_discontinued": 2017, "sort_number": 1 },
-                                                    { "engine_model": "2NZ-FE", "year_introduced": 1999, "year_discontinued": 2016, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "1NZ-FE",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": 2017,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "2NZ-FE",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": 2016,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "ZZ": {
                                                 "sort_number": 6,
                                                 "models": [
-                                                    { "engine_model": "1ZZ-FE", "year_introduced": 1998, "year_discontinued": 2008, "sort_number": 1 },
-                                                    { "engine_model": "2ZZ-GE", "year_introduced": 2000, "year_discontinued": 2006, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "1ZZ-FE",
+                                                        "year_introduced": 1998,
+                                                        "year_discontinued": 2008,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "2ZZ-GE",
+                                                        "year_introduced": 2000,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1900,36 +2868,86 @@
                                             "M (I6)": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "5M-GE", "year_introduced": 1981, "year_discontinued": 1988, "sort_number": 1 },
-                                                    { "engine_model": "7M-GTE", "year_introduced": 1986, "year_discontinued": 1992, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "5M-GE",
+                                                        "year_introduced": 1981,
+                                                        "year_discontinued": 1988,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "7M-GTE",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 1992,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "JZ (I6)": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "1JZ-GTE", "year_introduced": 1990, "year_discontinued": 2007, "sort_number": 1 },
-                                                    { "engine_model": "2JZ-GTE", "year_introduced": 1991, "year_discontinued": 2002, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "1JZ-GTE",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "2JZ-GTE",
+                                                        "year_introduced": 1991,
+                                                        "year_discontinued": 2002,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "VZ (V6)": {
                                                 "sort_number": 3,
                                                 "models": [
-                                                    { "engine_model": "1VZ-FE", "year_introduced": 1988, "year_discontinued": 1993, "sort_number": 1 },
-                                                    { "engine_model": "3VZ-FE", "year_introduced": 1988, "year_discontinued": 1999, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "1VZ-FE",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1993,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "3VZ-FE",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "MZ (V6)": {
                                                 "sort_number": 4,
                                                 "models": [
-                                                    { "engine_model": "1MZ-FE", "year_introduced": 1994, "year_discontinued": 2007, "sort_number": 1 },
-                                                    { "engine_model": "3MZ-FE", "year_introduced": 2003, "year_discontinued": 2010, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "1MZ-FE",
+                                                        "year_introduced": 1994,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "3MZ-FE",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": 2010,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             },
                                             "GR (V6)": {
                                                 "sort_number": 5,
                                                 "models": [
-                                                    { "engine_model": "1GR-FE", "year_introduced": 2002, "year_discontinued": null, "sort_number": 1 },
-                                                    { "engine_model": "2GR-FE", "year_introduced": 2005, "year_discontinued": null, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "1GR-FE",
+                                                        "year_introduced": 2002,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "2GR-FE",
+                                                        "year_introduced": 2005,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1940,16 +2958,41 @@
                                             "UZ (V8)": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "1UZ-FE", "year_introduced": 1989, "year_discontinued": 2006, "sort_number": 1 },
-                                                    { "engine_model": "2UZ-FE", "year_introduced": 1998, "year_discontinued": 2012, "sort_number": 2 },
-                                                    { "engine_model": "3UZ-FE", "year_introduced": 2000, "year_discontinued": 2006, "sort_number": 3 }
+                                                    {
+                                                        "engine_model": "1UZ-FE",
+                                                        "year_introduced": 1989,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "2UZ-FE",
+                                                        "year_introduced": 1998,
+                                                        "year_discontinued": 2012,
+                                                        "sort_number": 2
+                                                    },
+                                                    {
+                                                        "engine_model": "3UZ-FE",
+                                                        "year_introduced": 2000,
+                                                        "year_discontinued": 2006,
+                                                        "sort_number": 3
+                                                    }
                                                 ]
                                             },
                                             "UR (V8)": {
                                                 "sort_number": 2,
                                                 "models": [
-                                                    { "engine_model": "1UR-FE", "year_introduced": 2007, "year_discontinued": 2021, "sort_number": 1 },
-                                                    { "engine_model": "3UR-FE", "year_introduced": 2007, "year_discontinued": null, "sort_number": 2 }
+                                                    {
+                                                        "engine_model": "1UR-FE",
+                                                        "year_introduced": 2007,
+                                                        "year_discontinued": 2021,
+                                                        "sort_number": 1
+                                                    },
+                                                    {
+                                                        "engine_model": "3UR-FE",
+                                                        "year_introduced": 2007,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1960,7 +3003,12 @@
                                             "LR (V10)": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "1LR-GUE", "year_introduced": 2010, "year_discontinued": 2012, "sort_number": 1 }
+                                                    {
+                                                        "engine_model": "1LR-GUE",
+                                                        "year_introduced": 2010,
+                                                        "year_discontinued": 2012,
+                                                        "sort_number": 1
+                                                    }
                                                 ]
                                             }
                                         }
@@ -1971,7 +3019,12 @@
                                             "GZ (V12)": {
                                                 "sort_number": 1,
                                                 "models": [
-                                                    { "engine_model": "1GZ-FE", "year_introduced": 1997, "year_discontinued": 2017, "sort_number": 1 }
+                                                    {
+                                                        "engine_model": "1GZ-FE",
+                                                        "year_introduced": 1997,
+                                                        "year_discontinued": 2017,
+                                                        "sort_number": 1
+                                                    }
                                                 ]
                                             }
                                         }
@@ -2517,7 +3570,7 @@
                                         ]
                                     }
                                 },
-                                "sort_number": 12
+                                "sort_number": 13
                             },
                             "Cummins": {
                                 "year_founded": 1919,
@@ -3342,7 +4395,7 @@
                                         "models": []
                                     }
                                 },
-                                "sort_number": 13
+                                "sort_number": 14
                             },
                             "Hall-Scott": {
                                 "year_founded": 1910,
@@ -3401,32 +4454,13 @@
                                         "models": []
                                     }
                                 },
-                                "sort_number": 14
+                                "sort_number": 15
                             }
                         },
                         "sort_number": 1
                     },
                     "Canada": {
                         "manufacturers": {
-                            "Cooper Industries": {
-                                "year_founded": 1833,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 15
-                            },
                             "Marathon": {
                                 "year_founded": 1888,
                                 "year_dissolved": null,
