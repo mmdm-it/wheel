@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleSections } from './volume-helpers.js';
+import { buildBibleSections, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache } from './volume-helpers.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
 
@@ -129,7 +129,10 @@ export function normalize(raw) {
               testamentId,
               sectionId,
               bookId,
-              chapterNumber: Number.isFinite(chapterNumber) ? chapterNumber : null
+              chapterNumber: Number.isFinite(chapterNumber) ? chapterNumber : null,
+              chapterKey,
+              externalFile: chapterVal?._external_file
+                || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`
             }
           });
         });
@@ -137,7 +140,7 @@ export function normalize(raw) {
     });
   });
 
-  const levelOrder = ['root', 'testament', 'section', 'book', 'chapter'];
+  const levelOrder = ['root', 'testament', 'section', 'book', 'chapter', 'verse'];
   items.sort((a, b) => {
     const lo = levelOrder.indexOf(a.level);
     const ro = levelOrder.indexOf(b.level);
@@ -154,8 +157,8 @@ export function normalize(raw) {
     links,
     meta: {
       volumeId: volumeKey,
-      leafLevel: 'chapter',
-      levels: ['testament', 'section', 'book', 'chapter'],
+      leafLevel: 'verse',
+      levels: ['testament', 'section', 'book', 'chapter', 'verse'],
       colors: levelPalette,
       dimensions
     }
@@ -260,6 +263,22 @@ export function detailFor(selected, manifest) {
     };
   }
 
+  if (level === 'verse') {
+    const externalFile = selected.meta?.externalFile;
+    const verseKey = selected.meta?.verseKey;
+    if (externalFile && verseKey) {
+      // Prefer the translation from the URL query string; fall back to VUL then NAB.
+      const searchParams = typeof window !== 'undefined'
+        ? new URLSearchParams(window.location.search)
+        : null;
+      const urlTranslation = searchParams?.get('translation') || null;
+      const preferred = urlTranslation ? [urlTranslation, 'VUL', 'NAB', 'BYZ', 'SYN'] : ['VUL', 'NAB', 'BYZ', 'SYN'];
+      const text = getVerseTextFromCache(externalFile, verseKey, preferred);
+      if (text) return { type: 'text', text };
+    }
+    return { type: 'text', text: selected.name || id || '' };
+  }
+
   return { type: 'text', text: selected.name || id || '' };
 }
 
@@ -314,10 +333,29 @@ const buildSecondaryLanguages = (translationsMeta, currentTranslation) => {
 export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta }) {
   let bibleMode = 'book';
   let bibleChapterContext = null;
+  let bibleVerseContext = null;
   const lastBookBySection = {};
   const secondary = translationsMeta ? buildSecondaryLanguages(translationsMeta, options?.translation) : { items: [], selectedIndex: 0 };
 
   const parentHandler = ({ selected, app }) => {
+    if (bibleMode === 'verse') {
+      const ctx = bibleVerseContext;
+      if (!ctx?.bookId) return false;
+      // Navigate back to the chapter list for this book.
+      const chapterItems = getBibleChapters(manifest, { id: ctx.bookId }, namesMap, 'book');
+      if (!chapterItems.length) return false;
+      const chapterIdx = chapterItems.findIndex(c => c.id === ctx.chapterId);
+      bibleMode = 'chapter';
+      bibleVerseContext = null;
+      bibleChapterContext = { bookId: ctx.bookId, testamentId: ctx.testamentId, sectionId: ctx.sectionId };
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(chapterItems, chapterIdx >= 0 ? chapterIdx : 0, true);
+      }
+      return true;
+    }
+
     if (bibleMode === 'chapter') {
       const ctx = bibleChapterContext;
       const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
@@ -381,6 +419,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       bibleModeRef: () => bibleMode,
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
+      setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
+      getBibleVerseItems,
+      prefetchBibleVerses,
       pyramidBuilder: buildBiblePyramid
     }
   };

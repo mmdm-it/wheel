@@ -61,7 +61,7 @@ describe('bible adapter', () => {
     const normalized = normalizeBible(sampleManifest);
     const spec = bibleAdapter.layoutSpec(normalized, { width: 800, height: 600 });
     assert.ok(Array.isArray(spec.rings));
-    assert.equal(spec.rings.length, 4);
+    assert.equal(spec.rings.length, 5); // testament, section, book, chapter, verse
     const pyramid = spec.pyramid;
     assert.ok(pyramid);
     assert.ok(pyramid.capacity);

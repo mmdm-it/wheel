@@ -214,12 +214,15 @@ export function getBibleChapters(manifest, selected, namesMap, bibleMode) {
   return Object.entries(bookEntry.chapters).map(([chapterKey, chapterVal], idx) => {
     const chapterNum = Number.parseInt(chapterKey, 10);
     const label = Number.isFinite(chapterNum) ? `Chapter ${chapterNum}` : (namesMap?.sections?.[chapterKey] || chapterKey);
+    const externalFile = chapterVal?._external_file
+      || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`;
     return {
       id: chapterVal?.id || `${bookId}:${chapterKey}`,
       name: chapterVal?.name || label,
       order: Number.isFinite(chapterVal?.sort_number) ? chapterVal.sort_number : idx,
       parentId: bookId,
-      level: 'chapter'
+      level: 'chapter',
+      meta: { bookId, chapterKey, externalFile }
     };
   }).sort((a, b) => {
     if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
@@ -480,4 +483,72 @@ export function buildBibleBooks(manifest, namesMap = {}) {
     });
   });
   return items;
+}
+
+// ── Bible Verse Cache ────────────────────────────────────────────────────────
+// Verse items and raw text are fetched on demand and stored keyed by the
+// chapter's external file path.  getBibleVerseItems() returns synchronously
+// from cache; prefetchBibleVerses() triggers the async load and calls onLoaded
+// once complete so callers can trigger a re-render (e.g. app.refreshPyramid).
+
+const _verseCache = new Map(); // externalFile → { status, items, rawVerses }
+
+export function getBibleVerseItems(chapterItem) {
+  const externalFile = chapterItem?.meta?.externalFile;
+  if (!externalFile) return [];
+  const cached = _verseCache.get(externalFile);
+  return cached?.status === 'loaded' ? cached.items : [];
+}
+
+export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
+  const externalFile = chapterItem?.meta?.externalFile;
+  if (!externalFile) return;
+  const cached = _verseCache.get(externalFile);
+  if (cached?.status === 'loaded') {
+    if (typeof onLoaded === 'function') onLoaded();
+    return;
+  }
+  if (cached?.status === 'loading') return; // already in flight
+  _verseCache.set(externalFile, { status: 'loading', items: [], rawVerses: null });
+  const url = externalFile.startsWith('.') ? externalFile : `./${externalFile}`;
+  fetch(url)
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+    .then(data => {
+      const bookKey = data.book_key || chapterItem.meta?.bookId || '';
+      const chapterLabel = data.sequence ?? '';
+      const verses = data.verses || {};
+      const items = Object.entries(verses)
+        .map(([verseKey, verse]) => {
+          const seq = Number.isFinite(verse?.seq) ? verse.seq : (parseInt(verseKey, 10) || 0);
+          return {
+            id: `${bookKey}_${chapterLabel}_${verseKey}`,
+            name: `${chapterLabel}:${verseKey}`,
+            order: seq,
+            parentId: chapterItem.id,
+            level: 'verse',
+            meta: { bookId: bookKey, chapterId: chapterItem.id, verseKey, externalFile }
+          };
+        })
+        .sort((a, b) => a.order - b.order)
+        .map((item, idx) => ({ ...item, order: idx }));
+      _verseCache.set(externalFile, { status: 'loaded', items, rawVerses: verses });
+      if (typeof onLoaded === 'function') onLoaded();
+    })
+    .catch(err => {
+      console.warn('[prefetchBibleVerses] failed to load', externalFile, err);
+      _verseCache.set(externalFile, { status: 'error', items: [], rawVerses: null });
+    });
+}
+
+// Returns the text for a specific verse from cache.  Tries each translation in
+// `preferredTranslations` in order, then falls back to the first available one.
+export function getVerseTextFromCache(externalFile, verseKey, preferredTranslations = ['VUL', 'NAB', 'BYZ', 'SYN']) {
+  const cached = _verseCache.get(externalFile);
+  if (!cached?.rawVerses) return '';
+  const verse = cached.rawVerses[String(verseKey)];
+  if (!verse?.text) return '';
+  for (const t of preferredTranslations) {
+    if (verse.text[t]) return verse.text[t];
+  }
+  return Object.values(verse.text)[0] || '';
 }

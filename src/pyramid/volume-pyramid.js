@@ -131,36 +131,87 @@ export function buildBiblePyramid({
   manifest,
   namesMap,
   getBibleChapters,
+  getBibleVerseItems,
+  prefetchBibleVerses,
   getApp,
   bibleModeRef,
   setBibleMode,
-  setBibleChapterContext
+  setBibleChapterContext,
+  setBibleVerseContext
 } = {}) {
   if (!manifest || typeof getBibleChapters !== 'function') return null;
-  const getChildren = ({ selected }) => getBibleChapters(manifest, selected, namesMap, bibleModeRef?.());
+  const getChildren = ({ selected }) => {
+    const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
+    if (mode === 'book') {
+      return getBibleChapters(manifest, selected, namesMap, 'book');
+    }
+    if (mode === 'chapter') {
+      if (typeof getBibleVerseItems !== 'function') return [];
+      const items = getBibleVerseItems(selected);
+      // Trigger prefetch for this chapter if not yet cached; refresh pyramid when loaded.
+      if (items.length === 0 && typeof prefetchBibleVerses === 'function' && selected?.meta?.externalFile) {
+        const app = typeof getApp === 'function' ? getApp() : null;
+        prefetchBibleVerses(selected, {
+          onLoaded: () => { app?.refreshPyramid?.(); }
+        });
+      }
+      return items;
+    }
+    return [];
+  };
   const onClick = instr => {
     if (!instr?.item) return;
-    if (typeof bibleModeRef === 'function' && bibleModeRef() !== 'book') return;
+    const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
     const app = typeof getApp === 'function' ? getApp() : null;
-    const book = app?.nav?.getCurrent?.();
-    if (!book) return;
-    const chapters = getBibleChapters(manifest, book, namesMap, bibleModeRef?.());
-    if (!chapters.length) return;
-    const selectedIdx = chapters.findIndex(c => c.id === instr.item.id);
-    if (typeof setBibleMode === 'function') setBibleMode('chapter');
-    if (typeof setBibleChapterContext === 'function') {
-      setBibleChapterContext({
-        bookId: book.id,
-        sectionId: book.sectionId,
-        testamentId: book.testamentId
-      });
+
+    if (mode === 'book') {
+      const book = app?.nav?.getCurrent?.();
+      if (!book) return;
+      const chapters = getBibleChapters(manifest, book, namesMap, 'book');
+      if (!chapters.length) return;
+      const selectedIdx = chapters.findIndex(c => c.id === instr.item.id);
+      if (typeof setBibleMode === 'function') setBibleMode('chapter');
+      if (typeof setBibleChapterContext === 'function') {
+        setBibleChapterContext({
+          bookId: book.id,
+          sectionId: book.sectionId,
+          testamentId: book.testamentId
+        });
+      }
+      if (app?.setParentButtons) {
+        app.setParentButtons({ showOuter: true });
+      }
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+        migrateOrSet(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
+      }
+      return;
     }
-    if (app?.setParentButtons) {
-      app.setParentButtons({ showOuter: true });
-    }
-    if (app?.setPrimaryItems) {
-      const migrateOrSet = app.migrateIn || app.setPrimaryItems;
-      migrateOrSet(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
+
+    if (mode === 'chapter') {
+      if (typeof getBibleVerseItems !== 'function') return;
+      const chapter = app?.nav?.getCurrent?.();
+      if (!chapter) return;
+      const verseItems = getBibleVerseItems(chapter);
+      if (!verseItems.length) return;
+      const selectedIdx = verseItems.findIndex(v => v.id === instr.item.id);
+      if (typeof setBibleMode === 'function') setBibleMode('verse');
+      if (typeof setBibleVerseContext === 'function') {
+        setBibleVerseContext({
+          chapterId: chapter.id,
+          bookId: chapter.meta?.bookId || chapter.parentId,
+          testamentId: chapter.meta?.testamentId,
+          sectionId: chapter.meta?.sectionId,
+          externalFile: chapter.meta?.externalFile
+        });
+      }
+      if (app?.setParentButtons) {
+        app.setParentButtons({ showOuter: true });
+      }
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+        migrateOrSet(verseItems, selectedIdx >= 0 ? selectedIdx : 0, true);
+      }
     }
   };
   return { getChildren, onClick };

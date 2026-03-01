@@ -117,6 +117,7 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
         name: bookNames?.[id] || book?.book_name || book?.name || id,
         sort: Number.isFinite(book?.sort_number) ? book.sort_number : chain.length,
         order: chain.length,
+        level: 'book',
         testamentId: activeTestamentId,
         sectionId: sectionKey,
         parentName: sectionNames?.[sectionKey] || section?.name || sectionKey

@@ -381,9 +381,12 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
       const era = yearNumber < 0 ? t('bc') : t('ad');
       return `${Math.abs(yearNumber)} ${era}`;
     }
+    // Route by item.level first so the formatter works correctly when the focus
+    // ring transitions between book → chapter → verse levels at runtime.
+    const itemLevel = item?.level || level;
+    if (itemLevel === 'chapter') return formatChapter({ item, context });
+    if (itemLevel === 'verse') return formatVerse({ item, context });
     const localizedBook = bookNames?.[item.id];
-    if (level === 'chapter') return formatChapter({ item, context });
-    if (level === 'verse') return formatVerse({ item, context });
     return localizedBook || item.name || item.id || '';
   };
 }
@@ -829,6 +832,8 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     getCatalogChildren: layoutBindings.getCatalogChildren || ((m, selected) => getCatalogChildren(manifest, selected)),
     getCalendarMonths: layoutBindings.getCalendarMonths || ((m, selected, mode) => getCalendarMonths(manifest, selected, mode)),
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
+    getBibleVerseItems: layoutBindings.getBibleVerseItems,
+    prefetchBibleVerses: layoutBindings.prefetchBibleVerses,
     getApp: () => app,
     calendarModeRef: layoutBindings.calendarModeRef,
     setCalendarMode: layoutBindings.setCalendarMode,
@@ -836,6 +841,7 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     bibleModeRef: layoutBindings.bibleModeRef,
     setBibleMode: layoutBindings.setBibleMode,
     setBibleChapterContext: layoutBindings.setBibleChapterContext,
+    setBibleVerseContext: layoutBindings.setBibleVerseContext,
     catalogModeRef: layoutBindings.catalogModeRef,
     setCatalogMode: layoutBindings.setCatalogMode,
     savePreInState: layoutBindings.savePreInState,

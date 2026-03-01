@@ -1683,6 +1683,7 @@ export function createApp({
       const { nodes, onNodeClick } = lastPyramidData;
       if (!onNodeClick || !nodes || idx < 0 || idx >= nodes.length) return;
       onNodeClick(nodes[idx]);
-    }
+    },
+    refreshPyramid: () => render(rotation)
   };
 }
