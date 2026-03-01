@@ -7,4 +7,6 @@
   --theme-font-body: 'Montserrat', sans-serif;
   --theme-font-label: 'Montserrat', sans-serif;
   --theme-font-magnifier: 'Montserrat', sans-serif;
+  /* Detail sector uses EB Garamond — the v0 typographic choice for scripture */
+  --theme-font-detail: 'EB Garamond', Georgia, serif;
 }

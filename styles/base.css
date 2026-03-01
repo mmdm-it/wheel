@@ -293,7 +293,7 @@ svg {
   /* Pass events through to the SVG; only opt-in children capture them. */
   pointer-events: none;
   color: rgba(255, 255, 255, 0.92);
-  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-family: var(--theme-font-detail, var(--magnifier-font, 'Montserrat')), sans-serif;
   line-height: 1.4;
 }
 

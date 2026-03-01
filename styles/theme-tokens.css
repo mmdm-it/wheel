@@ -11,6 +11,9 @@
   --theme-font-body: 'Montserrat', sans-serif;
   --theme-font-label: 'Montserrat', sans-serif;
   --theme-font-magnifier: 'Montserrat', sans-serif;
+  /* Detail sector content font — override per theme for volumes that use a
+     different typeface inside the expanded Detail Sector (e.g. Bible → serif). */
+  --theme-font-detail: var(--theme-font-body);
 
   /* Spacing */
   --theme-space-2xs: 4px;
