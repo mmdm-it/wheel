@@ -23,29 +23,49 @@
         ],
         "default": "latin",
         "labels": {
-          "hebrew": "\u05e2\u05d1\u05e8\u05d9\u05ea",
-          "greek": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
+          "hebrew": "עברית",
+          "greek": "Ελληνικά",
           "latin": "LATINA",
           "english": "ENGLISH",
-          "french": "FRAN\u00c7AIS",
-          "spanish": "ESPA\u00d1OL",
+          "french": "FRANÇAIS",
+          "spanish": "ESPAÑOL",
           "italian": "ITALIANO",
-          "portuguese": "PORTUGU\u00caS",
-          "russian": "\u0420\u0423\u0421\u0421\u041a\u0418\u0419"
+          "portuguese": "PORTUGUÊS",
+          "russian": "РУССКИЙ"
         }
       },
       "editions": {
         "registry": "data/gutenberg/translations.json",
         "available": {
-          "hebrew": ["WLC"],
-          "greek": ["LXX", "BYZ"],
-          "latin": ["VUL"],
-          "english": ["NAB", "DRA"],
-          "french": ["NEO"],
-          "spanish": ["VAT_ES"],
-          "italian": ["CEI"],
-          "portuguese": ["POR"],
-          "russian": ["SYN"]
+          "hebrew": [
+            "WLC"
+          ],
+          "greek": [
+            "LXX",
+            "BYZ"
+          ],
+          "latin": [
+            "VUL"
+          ],
+          "english": [
+            "NAB",
+            "DRA"
+          ],
+          "french": [
+            "NEO"
+          ],
+          "spanish": [
+            "VAT_ES"
+          ],
+          "italian": [
+            "CEI"
+          ],
+          "portuguese": [
+            "POR"
+          ],
+          "russian": [
+            "SYN"
+          ]
         },
         "default": {
           "hebrew": "WLC",
@@ -65,7 +85,7 @@
           "VUL": "Clementine Vulgate",
           "NAB": "New American Bible",
           "DRA": "Douay-Rheims",
-          "NEO": "Bible Crampon / N\u00e9o-Crampon",
+          "NEO": "Bible Crampon / Néo-Crampon",
           "VAT_ES": "Vatican Spanish",
           "CEI": "CEI (Conferenza Episcopale Italiana)",
           "POR": "Portuguese Catholic",
@@ -133,15 +153,15 @@
           "color": "#8b6f47",
           "positioning": "arc",
           "display_name": "Chapter",
-          "display_name_hebrew": "\u05e4\u05e8\u05e7",
-          "display_name_greek": "\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf",
+          "display_name_hebrew": "פרק",
+          "display_name_greek": "Κεφάλαιο",
           "display_name_latin": "Caput",
           "display_name_english": "Chapter",
           "display_name_french": "Chapitre",
-          "display_name_spanish": "Cap\u00edtulo",
+          "display_name_spanish": "Capítulo",
           "display_name_italian": "Capitolo",
-          "display_name_portuguese": "Cap\u00edtulo",
-          "display_name_russian": "\u0413\u043b\u0430\u0432\u0430",
+          "display_name_portuguese": "Capítulo",
+          "display_name_russian": "Глава",
           "sort_type": "numeric_asc",
           "focus_text_position": "centered",
           "focus_text_transform": "number_only",
@@ -153,15 +173,15 @@
           "color": "#8b6f47",
           "positioning": "arc",
           "display_name": "Verse",
-          "display_name_hebrew": "\u05e4\u05e1\u05d5\u05e7",
-          "display_name_greek": "\u03a3\u03c4\u03af\u03c7\u03bf\u03c2",
+          "display_name_hebrew": "פסוק",
+          "display_name_greek": "Στίχος",
           "display_name_latin": "Versus",
           "display_name_english": "Verse",
           "display_name_french": "Verset",
-          "display_name_spanish": "Vers\u00edculo",
+          "display_name_spanish": "Versículo",
           "display_name_italian": "Verso",
-          "display_name_portuguese": "Vers\u00edculo",
-          "display_name_russian": "\u0421\u0442\u0438\u0445",
+          "display_name_portuguese": "Versículo",
+          "display_name_russian": "Стих",
           "sort_type": "numeric_asc",
           "focus_text_position": "centered",
           "focus_text_transform": "number_only",
@@ -505,18 +525,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Genesis",
-                "languages": {
-                  "hebrew": "Genesis",
-                  "greek": "Genesis",
-                  "latin": "Genesis",
-                  "english": "Genesis",
-                  "french": "Genesis",
-                  "spanish": "Genesis",
-                  "italian": "Genesis",
-                  "portuguese": "Genesis",
-                  "russian": "Genesis"
-                }
+                "name": "Genesis"
               },
               "EXO": {
                 "book_key": "EXO",
@@ -765,18 +774,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Exodus",
-                "languages": {
-                  "hebrew": "Exodus",
-                  "greek": "Exodus",
-                  "latin": "Exodus",
-                  "english": "Exodus",
-                  "french": "Exodus",
-                  "spanish": "Exodus",
-                  "italian": "Exodus",
-                  "portuguese": "Exodus",
-                  "russian": "Exodus"
-                }
+                "name": "Exodus"
               },
               "LEVI": {
                 "book_key": "LEVI",
@@ -947,18 +945,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Leviticus",
-                "languages": {
-                  "hebrew": "Leviticus",
-                  "greek": "Leviticus",
-                  "latin": "Leviticus",
-                  "english": "Leviticus",
-                  "french": "Leviticus",
-                  "spanish": "Leviticus",
-                  "italian": "Leviticus",
-                  "portuguese": "Leviticus",
-                  "russian": "Leviticus"
-                }
+                "name": "Leviticus"
               },
               "NUME": {
                 "book_key": "NUME",
@@ -1183,18 +1170,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Numbers",
-                "languages": {
-                  "hebrew": "Numbers",
-                  "greek": "Numbers",
-                  "latin": "Numbers",
-                  "english": "Numbers",
-                  "french": "Numbers",
-                  "spanish": "Numbers",
-                  "italian": "Numbers",
-                  "portuguese": "Numbers",
-                  "russian": "Numbers"
-                }
+                "name": "Numbers"
               },
               "DEUT": {
                 "book_key": "DEUT",
@@ -1407,32 +1383,10 @@
                     "_loaded": false
                   }
                 },
-                "name": "Deuteronomy",
-                "languages": {
-                  "hebrew": "Deuteronomy",
-                  "greek": "Deuteronomy",
-                  "latin": "Deuteronomy",
-                  "english": "Deuteronomy",
-                  "french": "Deuteronomy",
-                  "spanish": "Deuteronomy",
-                  "italian": "Deuteronomy",
-                  "portuguese": "Deuteronomy",
-                  "russian": "Deuteronomy"
-                }
+                "name": "Deuteronomy"
               }
             },
-            "sort_number": 1,
-            "languages": {
-              "hebrew": "Pentateuch",
-              "greek": "Pentateuch",
-              "latin": "Pentateuch",
-              "english": "Pentateuch",
-              "french": "Pentateuch",
-              "spanish": "Pentateuch",
-              "italian": "Pentateuch",
-              "portuguese": "Pentateuch",
-              "russian": "Pentateuch"
-            }
+            "sort_number": 1
           },
           "Libri_Historici_et_Novellae_Biblicae": {
             "name": "Libri Historici et Novellae Biblicae",
@@ -1600,18 +1554,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Joshua",
-                "languages": {
-                  "hebrew": "Joshua",
-                  "greek": "Joshua",
-                  "latin": "Joshua",
-                  "english": "Joshua",
-                  "french": "Joshua",
-                  "spanish": "Joshua",
-                  "italian": "Joshua",
-                  "portuguese": "Joshua",
-                  "russian": "Joshua"
-                }
+                "name": "Joshua"
               },
               "IUDI": {
                 "book_key": "IUDI",
@@ -1746,18 +1689,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Judges",
-                "languages": {
-                  "hebrew": "Judges",
-                  "greek": "Judges",
-                  "latin": "Judges",
-                  "english": "Judges",
-                  "french": "Judges",
-                  "spanish": "Judges",
-                  "italian": "Judges",
-                  "portuguese": "Judges",
-                  "russian": "Judges"
-                }
+                "name": "Judges"
               },
               "RUTH": {
                 "book_key": "RUTH",
@@ -1790,18 +1722,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Ruth",
-                "languages": {
-                  "hebrew": "Ruth",
-                  "greek": "Ruth",
-                  "latin": "Ruth",
-                  "english": "Ruth",
-                  "french": "Ruth",
-                  "spanish": "Ruth",
-                  "italian": "Ruth",
-                  "portuguese": "Ruth",
-                  "russian": "Ruth"
-                }
+                "name": "Ruth"
               },
               "I_SAM": {
                 "book_key": "I_SAM",
@@ -1996,18 +1917,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "1 Samuel",
-                "languages": {
-                  "hebrew": "1 Samuel",
-                  "greek": "1 Samuel",
-                  "latin": "1 Samuel",
-                  "english": "1 Samuel",
-                  "french": "1 Samuel",
-                  "spanish": "1 Samuel",
-                  "italian": "1 Samuel",
-                  "portuguese": "1 Samuel",
-                  "russian": "1 Samuel"
-                }
+                "name": "1 Samuel"
               },
               "II_SAM": {
                 "book_key": "II_SAM",
@@ -2160,18 +2070,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "2 Samuel",
-                "languages": {
-                  "hebrew": "2 Samuel",
-                  "greek": "2 Samuel",
-                  "latin": "2 Samuel",
-                  "english": "2 Samuel",
-                  "french": "2 Samuel",
-                  "spanish": "2 Samuel",
-                  "italian": "2 Samuel",
-                  "portuguese": "2 Samuel",
-                  "russian": "2 Samuel"
-                }
+                "name": "2 Samuel"
               },
               "III_REG": {
                 "book_key": "III_REG",
@@ -2312,18 +2211,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "1 Kings",
-                "languages": {
-                  "hebrew": "1 Kings",
-                  "greek": "1 Kings",
-                  "latin": "1 Kings",
-                  "english": "1 Kings",
-                  "french": "1 Kings",
-                  "spanish": "1 Kings",
-                  "italian": "1 Kings",
-                  "portuguese": "1 Kings",
-                  "russian": "1 Kings"
-                }
+                "name": "1 Kings"
               },
               "IV_REG": {
                 "book_key": "IV_REG",
@@ -2482,18 +2370,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "2 Kings",
-                "languages": {
-                  "hebrew": "2 Kings",
-                  "greek": "2 Kings",
-                  "latin": "2 Kings",
-                  "english": "2 Kings",
-                  "french": "2 Kings",
-                  "spanish": "2 Kings",
-                  "italian": "2 Kings",
-                  "portuguese": "2 Kings",
-                  "russian": "2 Kings"
-                }
+                "name": "2 Kings"
               },
               "TOBI": {
                 "book_key": "TOBI",
@@ -2586,18 +2463,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Tobit",
-                "languages": {
-                  "hebrew": "Tobit",
-                  "greek": "Tobit",
-                  "latin": "Tobit",
-                  "english": "Tobit",
-                  "french": "Tobit",
-                  "spanish": "Tobit",
-                  "italian": "Tobit",
-                  "portuguese": "Tobit",
-                  "russian": "Tobit"
-                }
+                "name": "Tobit"
               },
               "IUDITH": {
                 "book_key": "IUDITH",
@@ -2702,18 +2568,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Judith",
-                "languages": {
-                  "hebrew": "Judith",
-                  "greek": "Judith",
-                  "latin": "Judith",
-                  "english": "Judith",
-                  "french": "Judith",
-                  "spanish": "Judith",
-                  "italian": "Judith",
-                  "portuguese": "Judith",
-                  "russian": "Judith"
-                }
+                "name": "Judith"
               },
               "ESTH": {
                 "book_key": "ESTH",
@@ -2818,32 +2673,10 @@
                     "_loaded": false
                   }
                 },
-                "name": "Esther",
-                "languages": {
-                  "hebrew": "Esther",
-                  "greek": "Esther",
-                  "latin": "Esther",
-                  "english": "Esther",
-                  "french": "Esther",
-                  "spanish": "Esther",
-                  "italian": "Esther",
-                  "portuguese": "Esther",
-                  "russian": "Esther"
-                }
+                "name": "Esther"
               }
             },
-            "sort_number": 2,
-            "languages": {
-              "hebrew": "Historical Books",
-              "greek": "Historical Books",
-              "latin": "Historical Books",
-              "english": "Historical Books",
-              "french": "Historical Books",
-              "spanish": "Historical Books",
-              "italian": "Historical Books",
-              "portuguese": "Historical Books",
-              "russian": "Historical Books"
-            }
+            "sort_number": 2
           },
           "Libri_Sapientiae": {
             "name": "Libri Sapientiae",
@@ -3116,18 +2949,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Job",
-                "languages": {
-                  "hebrew": "Job",
-                  "greek": "Job",
-                  "latin": "Job",
-                  "english": "Job",
-                  "french": "Job",
-                  "spanish": "Job",
-                  "italian": "Job",
-                  "portuguese": "Job",
-                  "russian": "Job"
-                }
+                "name": "Job"
               },
               "PSAL": {
                 "book_key": "PSAL",
@@ -4036,18 +3858,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Psalms",
-                "languages": {
-                  "hebrew": "Psalms",
-                  "greek": "Psalms",
-                  "latin": "Psalms",
-                  "english": "Psalms",
-                  "french": "Psalms",
-                  "spanish": "Psalms",
-                  "italian": "Psalms",
-                  "portuguese": "Psalms",
-                  "russian": "Psalms"
-                }
+                "name": "Psalms"
               },
               "PROV": {
                 "book_key": "PROV",
@@ -4242,18 +4053,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Proverbs",
-                "languages": {
-                  "hebrew": "Proverbs",
-                  "greek": "Proverbs",
-                  "latin": "Proverbs",
-                  "english": "Proverbs",
-                  "french": "Proverbs",
-                  "spanish": "Proverbs",
-                  "italian": "Proverbs",
-                  "portuguese": "Proverbs",
-                  "russian": "Proverbs"
-                }
+                "name": "Proverbs"
               },
               "ECCLE": {
                 "book_key": "ECCLE",
@@ -4334,18 +4134,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Ecclesiastes",
-                "languages": {
-                  "hebrew": "Ecclesiastes",
-                  "greek": "Ecclesiastes",
-                  "latin": "Ecclesiastes",
-                  "english": "Ecclesiastes",
-                  "french": "Ecclesiastes",
-                  "spanish": "Ecclesiastes",
-                  "italian": "Ecclesiastes",
-                  "portuguese": "Ecclesiastes",
-                  "russian": "Ecclesiastes"
-                }
+                "name": "Ecclesiastes"
               },
               "CANT": {
                 "book_key": "CANT",
@@ -4402,18 +4191,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Song of Songs",
-                "languages": {
-                  "hebrew": "Song of Songs",
-                  "greek": "Song of Songs",
-                  "latin": "Song of Songs",
-                  "english": "Song of Songs",
-                  "french": "Song of Songs",
-                  "spanish": "Song of Songs",
-                  "italian": "Song of Songs",
-                  "portuguese": "Song of Songs",
-                  "russian": "Song of Songs"
-                }
+                "name": "Song of Songs"
               },
               "SAPI": {
                 "book_key": "SAPI",
@@ -4536,18 +4314,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Wisdom",
-                "languages": {
-                  "hebrew": "Wisdom",
-                  "greek": "Wisdom",
-                  "latin": "Wisdom",
-                  "english": "Wisdom",
-                  "french": "Wisdom",
-                  "spanish": "Wisdom",
-                  "italian": "Wisdom",
-                  "portuguese": "Wisdom",
-                  "russian": "Wisdom"
-                }
+                "name": "Wisdom"
               },
               "ECCLU": {
                 "book_key": "ECCLU",
@@ -4862,32 +4629,10 @@
                     "_loaded": false
                   }
                 },
-                "name": "Sirach",
-                "languages": {
-                  "hebrew": "Sirach",
-                  "greek": "Sirach",
-                  "latin": "Sirach",
-                  "english": "Sirach",
-                  "french": "Sirach",
-                  "spanish": "Sirach",
-                  "italian": "Sirach",
-                  "portuguese": "Sirach",
-                  "russian": "Sirach"
-                }
+                "name": "Sirach"
               }
             },
-            "sort_number": 3,
-            "languages": {
-              "hebrew": "Wisdom Books",
-              "greek": "Wisdom Books",
-              "latin": "Wisdom Books",
-              "english": "Wisdom Books",
-              "french": "Wisdom Books",
-              "spanish": "Wisdom Books",
-              "italian": "Wisdom Books",
-              "portuguese": "Wisdom Books",
-              "russian": "Wisdom Books"
-            }
+            "sort_number": 3
           },
           "Libri_Prophetici": {
             "name": "Libri Prophetici",
@@ -5315,18 +5060,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Isaiah",
-                "languages": {
-                  "hebrew": "Isaiah",
-                  "greek": "Isaiah",
-                  "latin": "Isaiah",
-                  "english": "Isaiah",
-                  "french": "Isaiah",
-                  "spanish": "Isaiah",
-                  "italian": "Isaiah",
-                  "portuguese": "Isaiah",
-                  "russian": "Isaiah"
-                }
+                "name": "Isaiah"
               },
               "IERE": {
                 "book_key": "IERE",
@@ -5647,18 +5381,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Jeremiah",
-                "languages": {
-                  "hebrew": "Jeremiah",
-                  "greek": "Jeremiah",
-                  "latin": "Jeremiah",
-                  "english": "Jeremiah",
-                  "french": "Jeremiah",
-                  "spanish": "Jeremiah",
-                  "italian": "Jeremiah",
-                  "portuguese": "Jeremiah",
-                  "russian": "Jeremiah"
-                }
+                "name": "Jeremiah"
               },
               "LAME": {
                 "book_key": "LAME",
@@ -5697,18 +5420,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Lamentations",
-                "languages": {
-                  "hebrew": "Lamentations",
-                  "greek": "Lamentations",
-                  "latin": "Lamentations",
-                  "english": "Lamentations",
-                  "french": "Lamentations",
-                  "spanish": "Lamentations",
-                  "italian": "Lamentations",
-                  "portuguese": "Lamentations",
-                  "russian": "Lamentations"
-                }
+                "name": "Lamentations"
               },
               "BARU": {
                 "book_key": "BARU",
@@ -5753,18 +5465,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Baruch",
-                "languages": {
-                  "hebrew": "Baruch",
-                  "greek": "Baruch",
-                  "latin": "Baruch",
-                  "english": "Baruch",
-                  "french": "Baruch",
-                  "spanish": "Baruch",
-                  "italian": "Baruch",
-                  "portuguese": "Baruch",
-                  "russian": "Baruch"
-                }
+                "name": "Baruch"
               },
               "EZE": {
                 "book_key": "EZE",
@@ -6061,18 +5762,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Ezekiel",
-                "languages": {
-                  "hebrew": "Ezekiel",
-                  "greek": "Ezekiel",
-                  "latin": "Ezekiel",
-                  "english": "Ezekiel",
-                  "french": "Ezekiel",
-                  "spanish": "Ezekiel",
-                  "italian": "Ezekiel",
-                  "portuguese": "Ezekiel",
-                  "russian": "Ezekiel"
-                }
+                "name": "Ezekiel"
               },
               "DAN": {
                 "book_key": "DAN",
@@ -6165,18 +5855,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Daniel",
-                "languages": {
-                  "hebrew": "Daniel",
-                  "greek": "Daniel",
-                  "latin": "Daniel",
-                  "english": "Daniel",
-                  "french": "Daniel",
-                  "spanish": "Daniel",
-                  "italian": "Daniel",
-                  "portuguese": "Daniel",
-                  "russian": "Daniel"
-                }
+                "name": "Daniel"
               },
               "OSE": {
                 "book_key": "OSE",
@@ -6269,18 +5948,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Hosea",
-                "languages": {
-                  "hebrew": "Hosea",
-                  "greek": "Hosea",
-                  "latin": "Hosea",
-                  "english": "Hosea",
-                  "french": "Hosea",
-                  "spanish": "Hosea",
-                  "italian": "Hosea",
-                  "portuguese": "Hosea",
-                  "russian": "Hosea"
-                }
+                "name": "Hosea"
               },
               "IOEL": {
                 "book_key": "IOEL",
@@ -6307,18 +5975,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Joel",
-                "languages": {
-                  "hebrew": "Joel",
-                  "greek": "Joel",
-                  "latin": "Joel",
-                  "english": "Joel",
-                  "french": "Joel",
-                  "spanish": "Joel",
-                  "italian": "Joel",
-                  "portuguese": "Joel",
-                  "russian": "Joel"
-                }
+                "name": "Joel"
               },
               "AMO": {
                 "book_key": "AMO",
@@ -6381,18 +6038,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Amos",
-                "languages": {
-                  "hebrew": "Amos",
-                  "greek": "Amos",
-                  "latin": "Amos",
-                  "english": "Amos",
-                  "french": "Amos",
-                  "spanish": "Amos",
-                  "italian": "Amos",
-                  "portuguese": "Amos",
-                  "russian": "Amos"
-                }
+                "name": "Amos"
               },
               "ABDI": {
                 "book_key": "ABDI",
@@ -6407,18 +6053,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Obadiah",
-                "languages": {
-                  "hebrew": "Obadiah",
-                  "greek": "Obadiah",
-                  "latin": "Obadiah",
-                  "english": "Obadiah",
-                  "french": "Obadiah",
-                  "spanish": "Obadiah",
-                  "italian": "Obadiah",
-                  "portuguese": "Obadiah",
-                  "russian": "Obadiah"
-                }
+                "name": "Obadiah"
               },
               "IONA": {
                 "book_key": "IONA",
@@ -6451,18 +6086,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Jonah",
-                "languages": {
-                  "hebrew": "Jonah",
-                  "greek": "Jonah",
-                  "latin": "Jonah",
-                  "english": "Jonah",
-                  "french": "Jonah",
-                  "spanish": "Jonah",
-                  "italian": "Jonah",
-                  "portuguese": "Jonah",
-                  "russian": "Jonah"
-                }
+                "name": "Jonah"
               },
               "MICH": {
                 "book_key": "MICH",
@@ -6513,18 +6137,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Micah",
-                "languages": {
-                  "hebrew": "Micah",
-                  "greek": "Micah",
-                  "latin": "Micah",
-                  "english": "Micah",
-                  "french": "Micah",
-                  "spanish": "Micah",
-                  "italian": "Micah",
-                  "portuguese": "Micah",
-                  "russian": "Micah"
-                }
+                "name": "Micah"
               },
               "NAHU": {
                 "book_key": "NAHU",
@@ -6551,18 +6164,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Nahum",
-                "languages": {
-                  "hebrew": "Nahum",
-                  "greek": "Nahum",
-                  "latin": "Nahum",
-                  "english": "Nahum",
-                  "french": "Nahum",
-                  "spanish": "Nahum",
-                  "italian": "Nahum",
-                  "portuguese": "Nahum",
-                  "russian": "Nahum"
-                }
+                "name": "Nahum"
               },
               "HAB": {
                 "book_key": "HAB",
@@ -6589,18 +6191,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Habakkuk",
-                "languages": {
-                  "hebrew": "Habakkuk",
-                  "greek": "Habakkuk",
-                  "latin": "Habakkuk",
-                  "english": "Habakkuk",
-                  "french": "Habakkuk",
-                  "spanish": "Habakkuk",
-                  "italian": "Habakkuk",
-                  "portuguese": "Habakkuk",
-                  "russian": "Habakkuk"
-                }
+                "name": "Habakkuk"
               },
               "SOPH": {
                 "book_key": "SOPH",
@@ -6627,18 +6218,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Zephaniah",
-                "languages": {
-                  "hebrew": "Zephaniah",
-                  "greek": "Zephaniah",
-                  "latin": "Zephaniah",
-                  "english": "Zephaniah",
-                  "french": "Zephaniah",
-                  "spanish": "Zephaniah",
-                  "italian": "Zephaniah",
-                  "portuguese": "Zephaniah",
-                  "russian": "Zephaniah"
-                }
+                "name": "Zephaniah"
               },
               "AGGE": {
                 "book_key": "AGGE",
@@ -6659,18 +6239,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Haggai",
-                "languages": {
-                  "hebrew": "Haggai",
-                  "greek": "Haggai",
-                  "latin": "Haggai",
-                  "english": "Haggai",
-                  "french": "Haggai",
-                  "spanish": "Haggai",
-                  "italian": "Haggai",
-                  "portuguese": "Haggai",
-                  "russian": "Haggai"
-                }
+                "name": "Haggai"
               },
               "ZACH": {
                 "book_key": "ZACH",
@@ -6763,18 +6332,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Zechariah",
-                "languages": {
-                  "hebrew": "Zechariah",
-                  "greek": "Zechariah",
-                  "latin": "Zechariah",
-                  "english": "Zechariah",
-                  "french": "Zechariah",
-                  "spanish": "Zechariah",
-                  "italian": "Zechariah",
-                  "portuguese": "Zechariah",
-                  "russian": "Zechariah"
-                }
+                "name": "Zechariah"
               },
               "MALA": {
                 "book_key": "MALA",
@@ -6807,44 +6365,11 @@
                     "_loaded": false
                   }
                 },
-                "name": "Malachi",
-                "languages": {
-                  "hebrew": "Malachi",
-                  "greek": "Malachi",
-                  "latin": "Malachi",
-                  "english": "Malachi",
-                  "french": "Malachi",
-                  "spanish": "Malachi",
-                  "italian": "Malachi",
-                  "portuguese": "Malachi",
-                  "russian": "Malachi"
-                }
+                "name": "Malachi"
               }
             },
-            "sort_number": 4,
-            "languages": {
-              "hebrew": "Prophetic Books",
-              "greek": "Prophetic Books",
-              "latin": "Prophetic Books",
-              "english": "Prophetic Books",
-              "french": "Prophetic Books",
-              "spanish": "Prophetic Books",
-              "italian": "Prophetic Books",
-              "portuguese": "Prophetic Books",
-              "russian": "Prophetic Books"
-            }
+            "sort_number": 4
           }
-        },
-        "languages": {
-          "hebrew": "Old Testament",
-          "greek": "Old Testament",
-          "latin": "Old Testament",
-          "english": "Old Testament",
-          "french": "Old Testament",
-          "spanish": "Old Testament",
-          "italian": "Old Testament",
-          "portuguese": "Old Testament",
-          "russian": "Old Testament"
         }
       },
       "Novum_Testamentum": {
@@ -7035,18 +6560,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Matthew",
-                "languages": {
-                  "hebrew": "Matthew",
-                  "greek": "Matthew",
-                  "latin": "Matthew",
-                  "english": "Matthew",
-                  "french": "Matthew",
-                  "spanish": "Matthew",
-                  "italian": "Matthew",
-                  "portuguese": "Matthew",
-                  "russian": "Matthew"
-                }
+                "name": "Matthew"
               },
               "MARC": {
                 "book_key": "MARC",
@@ -7151,18 +6665,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Mark",
-                "languages": {
-                  "hebrew": "Mark",
-                  "greek": "Mark",
-                  "latin": "Mark",
-                  "english": "Mark",
-                  "french": "Mark",
-                  "spanish": "Mark",
-                  "italian": "Mark",
-                  "portuguese": "Mark",
-                  "russian": "Mark"
-                }
+                "name": "Mark"
               },
               "LUCA": {
                 "book_key": "LUCA",
@@ -7315,18 +6818,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Luke",
-                "languages": {
-                  "hebrew": "Luke",
-                  "greek": "Luke",
-                  "latin": "Luke",
-                  "english": "Luke",
-                  "french": "Luke",
-                  "spanish": "Luke",
-                  "italian": "Luke",
-                  "portuguese": "Luke",
-                  "russian": "Luke"
-                }
+                "name": "Luke"
               },
               "IOHA": {
                 "book_key": "IOHA",
@@ -7461,32 +6953,10 @@
                     "_loaded": false
                   }
                 },
-                "name": "John",
-                "languages": {
-                  "hebrew": "John",
-                  "greek": "John",
-                  "latin": "John",
-                  "english": "John",
-                  "french": "John",
-                  "spanish": "John",
-                  "italian": "John",
-                  "portuguese": "John",
-                  "russian": "John"
-                }
+                "name": "John"
               }
             },
-            "sort_number": 1,
-            "languages": {
-              "hebrew": "Gospels",
-              "greek": "Gospels",
-              "latin": "Gospels",
-              "english": "Gospels",
-              "french": "Gospels",
-              "spanish": "Gospels",
-              "italian": "Gospels",
-              "portuguese": "Gospels",
-              "russian": "Gospels"
-            }
+            "sort_number": 1
           },
           "Actus_Apostolorum": {
             "name": "Actus Apostolorum",
@@ -7669,32 +7139,10 @@
                     "_loaded": false
                   }
                 },
-                "name": "Acts",
-                "languages": {
-                  "hebrew": "Acts",
-                  "greek": "Acts",
-                  "latin": "Acts",
-                  "english": "Acts",
-                  "french": "Acts",
-                  "spanish": "Acts",
-                  "italian": "Acts",
-                  "portuguese": "Acts",
-                  "russian": "Acts"
-                }
+                "name": "Acts"
               }
             },
-            "sort_number": 2,
-            "languages": {
-              "hebrew": "Acts of the Apostles",
-              "greek": "Acts of the Apostles",
-              "latin": "Acts of the Apostles",
-              "english": "Acts of the Apostles",
-              "french": "Acts of the Apostles",
-              "spanish": "Acts of the Apostles",
-              "italian": "Acts of the Apostles",
-              "portuguese": "Acts of the Apostles",
-              "russian": "Acts of the Apostles"
-            }
+            "sort_number": 2
           },
           "Epistolae": {
             "name": "Epistolae",
@@ -7825,18 +7273,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Romans",
-                "languages": {
-                  "hebrew": "Romans",
-                  "greek": "Romans",
-                  "latin": "Romans",
-                  "english": "Romans",
-                  "french": "Romans",
-                  "spanish": "Romans",
-                  "italian": "Romans",
-                  "portuguese": "Romans",
-                  "russian": "Romans"
-                }
+                "name": "Romans"
               },
               "I_COR": {
                 "book_key": "I_COR",
@@ -7941,18 +7378,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "1 Corinthians",
-                "languages": {
-                  "hebrew": "1 Corinthians",
-                  "greek": "1 Corinthians",
-                  "latin": "1 Corinthians",
-                  "english": "1 Corinthians",
-                  "french": "1 Corinthians",
-                  "spanish": "1 Corinthians",
-                  "italian": "1 Corinthians",
-                  "portuguese": "1 Corinthians",
-                  "russian": "1 Corinthians"
-                }
+                "name": "1 Corinthians"
               },
               "II_COR": {
                 "book_key": "II_COR",
@@ -8039,18 +7465,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "2 Corinthians",
-                "languages": {
-                  "hebrew": "2 Corinthians",
-                  "greek": "2 Corinthians",
-                  "latin": "2 Corinthians",
-                  "english": "2 Corinthians",
-                  "french": "2 Corinthians",
-                  "spanish": "2 Corinthians",
-                  "italian": "2 Corinthians",
-                  "portuguese": "2 Corinthians",
-                  "russian": "2 Corinthians"
-                }
+                "name": "2 Corinthians"
               },
               "GALA": {
                 "book_key": "GALA",
@@ -8095,18 +7510,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Galatians",
-                "languages": {
-                  "hebrew": "Galatians",
-                  "greek": "Galatians",
-                  "latin": "Galatians",
-                  "english": "Galatians",
-                  "french": "Galatians",
-                  "spanish": "Galatians",
-                  "italian": "Galatians",
-                  "portuguese": "Galatians",
-                  "russian": "Galatians"
-                }
+                "name": "Galatians"
               },
               "EPHE": {
                 "book_key": "EPHE",
@@ -8151,18 +7555,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Ephesians",
-                "languages": {
-                  "hebrew": "Ephesians",
-                  "greek": "Ephesians",
-                  "latin": "Ephesians",
-                  "english": "Ephesians",
-                  "french": "Ephesians",
-                  "spanish": "Ephesians",
-                  "italian": "Ephesians",
-                  "portuguese": "Ephesians",
-                  "russian": "Ephesians"
-                }
+                "name": "Ephesians"
               },
               "PHILI": {
                 "book_key": "PHILI",
@@ -8195,18 +7588,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Philippians",
-                "languages": {
-                  "hebrew": "Philippians",
-                  "greek": "Philippians",
-                  "latin": "Philippians",
-                  "english": "Philippians",
-                  "french": "Philippians",
-                  "spanish": "Philippians",
-                  "italian": "Philippians",
-                  "portuguese": "Philippians",
-                  "russian": "Philippians"
-                }
+                "name": "Philippians"
               },
               "COLO": {
                 "book_key": "COLO",
@@ -8239,18 +7621,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Colossians",
-                "languages": {
-                  "hebrew": "Colossians",
-                  "greek": "Colossians",
-                  "latin": "Colossians",
-                  "english": "Colossians",
-                  "french": "Colossians",
-                  "spanish": "Colossians",
-                  "italian": "Colossians",
-                  "portuguese": "Colossians",
-                  "russian": "Colossians"
-                }
+                "name": "Colossians"
               },
               "I_THES": {
                 "book_key": "I_THES",
@@ -8289,18 +7660,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "1 Thessalonians",
-                "languages": {
-                  "hebrew": "1 Thessalonians",
-                  "greek": "1 Thessalonians",
-                  "latin": "1 Thessalonians",
-                  "english": "1 Thessalonians",
-                  "french": "1 Thessalonians",
-                  "spanish": "1 Thessalonians",
-                  "italian": "1 Thessalonians",
-                  "portuguese": "1 Thessalonians",
-                  "russian": "1 Thessalonians"
-                }
+                "name": "1 Thessalonians"
               },
               "II_THES": {
                 "book_key": "II_THES",
@@ -8327,18 +7687,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "2 Thessalonians",
-                "languages": {
-                  "hebrew": "2 Thessalonians",
-                  "greek": "2 Thessalonians",
-                  "latin": "2 Thessalonians",
-                  "english": "2 Thessalonians",
-                  "french": "2 Thessalonians",
-                  "spanish": "2 Thessalonians",
-                  "italian": "2 Thessalonians",
-                  "portuguese": "2 Thessalonians",
-                  "russian": "2 Thessalonians"
-                }
+                "name": "2 Thessalonians"
               },
               "I_TIMO": {
                 "book_key": "I_TIMO",
@@ -8383,18 +7732,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "1 Timothy",
-                "languages": {
-                  "hebrew": "1 Timothy",
-                  "greek": "1 Timothy",
-                  "latin": "1 Timothy",
-                  "english": "1 Timothy",
-                  "french": "1 Timothy",
-                  "spanish": "1 Timothy",
-                  "italian": "1 Timothy",
-                  "portuguese": "1 Timothy",
-                  "russian": "1 Timothy"
-                }
+                "name": "1 Timothy"
               },
               "II_TIMO": {
                 "book_key": "II_TIMO",
@@ -8427,18 +7765,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "2 Timothy",
-                "languages": {
-                  "hebrew": "2 Timothy",
-                  "greek": "2 Timothy",
-                  "latin": "2 Timothy",
-                  "english": "2 Timothy",
-                  "french": "2 Timothy",
-                  "spanish": "2 Timothy",
-                  "italian": "2 Timothy",
-                  "portuguese": "2 Timothy",
-                  "russian": "2 Timothy"
-                }
+                "name": "2 Timothy"
               },
               "TITU": {
                 "book_key": "TITU",
@@ -8465,18 +7792,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Titus",
-                "languages": {
-                  "hebrew": "Titus",
-                  "greek": "Titus",
-                  "latin": "Titus",
-                  "english": "Titus",
-                  "french": "Titus",
-                  "spanish": "Titus",
-                  "italian": "Titus",
-                  "portuguese": "Titus",
-                  "russian": "Titus"
-                }
+                "name": "Titus"
               },
               "PHILE": {
                 "book_key": "PHILE",
@@ -8491,18 +7807,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Philemon",
-                "languages": {
-                  "hebrew": "Philemon",
-                  "greek": "Philemon",
-                  "latin": "Philemon",
-                  "english": "Philemon",
-                  "french": "Philemon",
-                  "spanish": "Philemon",
-                  "italian": "Philemon",
-                  "portuguese": "Philemon",
-                  "russian": "Philemon"
-                }
+                "name": "Philemon"
               },
               "HEBR": {
                 "book_key": "HEBR",
@@ -8589,18 +7894,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "Hebrews",
-                "languages": {
-                  "hebrew": "Hebrews",
-                  "greek": "Hebrews",
-                  "latin": "Hebrews",
-                  "english": "Hebrews",
-                  "french": "Hebrews",
-                  "spanish": "Hebrews",
-                  "italian": "Hebrews",
-                  "portuguese": "Hebrews",
-                  "russian": "Hebrews"
-                }
+                "name": "Hebrews"
               },
               "IACO": {
                 "book_key": "IACO",
@@ -8639,18 +7933,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "James",
-                "languages": {
-                  "hebrew": "James",
-                  "greek": "James",
-                  "latin": "James",
-                  "english": "James",
-                  "french": "James",
-                  "spanish": "James",
-                  "italian": "James",
-                  "portuguese": "James",
-                  "russian": "James"
-                }
+                "name": "James"
               },
               "I_PETR": {
                 "book_key": "I_PETR",
@@ -8689,18 +7972,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "1 Peter",
-                "languages": {
-                  "hebrew": "1 Peter",
-                  "greek": "1 Peter",
-                  "latin": "1 Peter",
-                  "english": "1 Peter",
-                  "french": "1 Peter",
-                  "spanish": "1 Peter",
-                  "italian": "1 Peter",
-                  "portuguese": "1 Peter",
-                  "russian": "1 Peter"
-                }
+                "name": "1 Peter"
               },
               "II_PETR": {
                 "book_key": "II_PETR",
@@ -8727,18 +7999,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "2 Peter",
-                "languages": {
-                  "hebrew": "2 Peter",
-                  "greek": "2 Peter",
-                  "latin": "2 Peter",
-                  "english": "2 Peter",
-                  "french": "2 Peter",
-                  "spanish": "2 Peter",
-                  "italian": "2 Peter",
-                  "portuguese": "2 Peter",
-                  "russian": "2 Peter"
-                }
+                "name": "2 Peter"
               },
               "I_IOHA": {
                 "book_key": "I_IOHA",
@@ -8777,18 +8038,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "1 John",
-                "languages": {
-                  "hebrew": "1 John",
-                  "greek": "1 John",
-                  "latin": "1 John",
-                  "english": "1 John",
-                  "french": "1 John",
-                  "spanish": "1 John",
-                  "italian": "1 John",
-                  "portuguese": "1 John",
-                  "russian": "1 John"
-                }
+                "name": "1 John"
               },
               "II_IOHA": {
                 "book_key": "II_IOHA",
@@ -8803,18 +8053,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "2 John",
-                "languages": {
-                  "hebrew": "2 John",
-                  "greek": "2 John",
-                  "latin": "2 John",
-                  "english": "2 John",
-                  "french": "2 John",
-                  "spanish": "2 John",
-                  "italian": "2 John",
-                  "portuguese": "2 John",
-                  "russian": "2 John"
-                }
+                "name": "2 John"
               },
               "III_IOHA": {
                 "book_key": "III_IOHA",
@@ -8829,18 +8068,7 @@
                     "_loaded": false
                   }
                 },
-                "name": "3 John",
-                "languages": {
-                  "hebrew": "3 John",
-                  "greek": "3 John",
-                  "latin": "3 John",
-                  "english": "3 John",
-                  "french": "3 John",
-                  "spanish": "3 John",
-                  "italian": "3 John",
-                  "portuguese": "3 John",
-                  "russian": "3 John"
-                }
+                "name": "3 John"
               },
               "IUDA": {
                 "book_key": "IUDA",
@@ -8855,32 +8083,10 @@
                     "_loaded": false
                   }
                 },
-                "name": "Jude",
-                "languages": {
-                  "hebrew": "Jude",
-                  "greek": "Jude",
-                  "latin": "Jude",
-                  "english": "Jude",
-                  "french": "Jude",
-                  "spanish": "Jude",
-                  "italian": "Jude",
-                  "portuguese": "Jude",
-                  "russian": "Jude"
-                }
+                "name": "Jude"
               }
             },
-            "sort_number": 3,
-            "languages": {
-              "hebrew": "Epistles",
-              "greek": "Epistles",
-              "latin": "Epistles",
-              "english": "Epistles",
-              "french": "Epistles",
-              "spanish": "Epistles",
-              "italian": "Epistles",
-              "portuguese": "Epistles",
-              "russian": "Epistles"
-            }
+            "sort_number": 3
           },
           "Apocalypsis": {
             "name": "Apocalypsis",
@@ -9027,44 +8233,11 @@
                     "_loaded": false
                   }
                 },
-                "name": "Revelation",
-                "languages": {
-                  "hebrew": "Revelation",
-                  "greek": "Revelation",
-                  "latin": "Revelation",
-                  "english": "Revelation",
-                  "french": "Revelation",
-                  "spanish": "Revelation",
-                  "italian": "Revelation",
-                  "portuguese": "Revelation",
-                  "russian": "Revelation"
-                }
+                "name": "Revelation"
               }
             },
-            "sort_number": 4,
-            "languages": {
-              "hebrew": "Revelation",
-              "greek": "Revelation",
-              "latin": "Revelation",
-              "english": "Revelation",
-              "french": "Revelation",
-              "spanish": "Revelation",
-              "italian": "Revelation",
-              "portuguese": "Revelation",
-              "russian": "Revelation"
-            }
+            "sort_number": 4
           }
-        },
-        "languages": {
-          "hebrew": "New Testament",
-          "greek": "New Testament",
-          "latin": "New Testament",
-          "english": "New Testament",
-          "french": "New Testament",
-          "spanish": "New Testament",
-          "italian": "New Testament",
-          "portuguese": "New Testament",
-          "russian": "New Testament"
         }
       }
     },
