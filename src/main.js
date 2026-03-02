@@ -341,10 +341,58 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
 }
 
 function makeBibleLabelFormatter({ level, locale, namesMap }) {
-  const translations = {
-    english: { chapter: 'Chapter', verse: 'Verse', bc: 'B.C.', ad: 'A.D.' }
+  // ── Vocabulary table (9 languages) ──────────────────────────────────────────
+  const VOCAB = {
+    latin:      { chapter: 'Caput',      verse: 'Versus',    bc: 'a.C.n.',      ad: 'p.C.n.'       },
+    greek:      { chapter: '\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf\u03bd', verse: '\u03a3\u03c4\u03af\u03c7\u03bf\u03c2',   bc: '\u03c0.\u03a7.',        ad: '\u03bc.\u03a7.'          },
+    hebrew:     { chapter: '\u05e4\u05bc\u05b6\u05bc\u05e8\u05b6\u05e7',     verse: '\u05e4\u05b8\u05bc\u05e1\u05d5\u05bc\u05e7',   bc: '\u05dc\u05e4\u05e0\u05d4"\u05e1', ad: '\u05dc\u05e1\u05e4\u05d4"\u05e0'  },
+    french:     { chapter: 'Chapitre',   verse: 'Verset',    bc: 'av. J.-C.',   ad: 'ap. J.-C.'    },
+    spanish:    { chapter: 'Cap\u00edtulo',  verse: 'Vers\u00edculo', bc: 'a.C.',       ad: 'd.C.'         },
+    english:    { chapter: 'Chapter',    verse: 'Verse',     bc: 'B.C.',        ad: 'A.D.'         },
+    italian:    { chapter: 'Capitolo',   verse: 'Versetto',  bc: 'a.C.',        ad: 'd.C.'         },
+    portuguese: { chapter: 'Cap\u00edtulo',  verse: 'Vers\u00edculo', bc: 'a.C.',       ad: 'd.C.'         },
+    russian:    { chapter: '\u0413\u043b\u0430\u0432\u0430',      verse: '\u0421\u0442\u0438\u0445',      bc: '\u0434\u043e \u043d.\u044d.',    ad: '\u043d.\u044d.'          }
   };
-  const t = key => translations[locale]?.[key] || translations.english[key] || key;
+  const t = key => VOCAB[locale]?.[key] ?? VOCAB.english[key] ?? key;
+
+  // ── Numeral converters ───────────────────────────────────────────────────────
+  const toRoman = n => {
+    if (!Number.isFinite(n) || n <= 0 || n > 3999) return String(n);
+    const vals = [1000,900,500,400,100,90,50,40,10,9,5,4,1];
+    const syms = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'];
+    let r = '', rem = n;
+    for (let i = 0; i < vals.length; i++) while (rem >= vals[i]) { r += syms[i]; rem -= vals[i]; }
+    return r;
+  };
+  const toHebrew = n => {
+    if (!Number.isFinite(n) || n <= 0 || n > 1200) return String(n);
+    const ones    = ['','\u05d0','\u05d1','\u05d2','\u05d3','\u05d4','\u05d5','\u05d6','\u05d7','\u05d8'];
+    const tens    = ['','\u05d9','\u05db','\u05dc','\u05de','\u05e0','\u05e1','\u05e2','\u05e4','\u05e6'];
+    const hundreds= ['','\u05e7','\u05e8','\u05e9','\u05ea','\u05ea\u05e7','\u05ea\u05e8','\u05ea\u05e9','\u05ea\u05ea','\u05ea\u05ea\u05e7'];
+    let r = '', rem = n;
+    if (rem >= 1000) { r += ones[Math.floor(rem / 1000)] + '\u05f3'; rem %= 1000; }
+    if (rem >= 100)  { r += hundreds[Math.floor(rem / 100)]; rem %= 100; }
+    if (rem === 15)  { r += '\u05d8\u05d5'; }
+    else if (rem === 16) { r += '\u05d8\u05d6'; }
+    else { if (rem >= 10) { r += tens[Math.floor(rem / 10)]; rem %= 10; } if (rem) r += ones[rem]; }
+    return r;
+  };
+  const toGreek = n => {
+    if (!Number.isFinite(n) || n <= 0 || n > 999) return String(n);
+    const ones  = ['','\u03b1','\u03b2','\u03b3','\u03b4','\u03b5','\u03db','\u03b6','\u03b7','\u03b8'];
+    const tns   = ['','\u03b9','\u03ba','\u03bb','\u03bc','\u03bd','\u03be','\u03bf','\u03c0','\u03df'];
+    const hunds = ['','\u03c1','\u03c3','\u03c4','\u03c5','\u03c6','\u03c7','\u03c8','\u03c9','\u03e1'];
+    const h = Math.floor(n / 100), ten = Math.floor((n % 100) / 10), o = n % 10;
+    return (hunds[h] + tns[ten] + ones[o]) + '\u02b9';
+  };
+  const toNumeral = n => {
+    if (!Number.isFinite(n)) return '';
+    if (locale === 'latin')  return toRoman(n);
+    if (locale === 'greek')  return toGreek(n);
+    if (locale === 'hebrew') return toHebrew(n);
+    return String(n);
+  };
+
   const getYearNumber = item => {
     if (Number.isFinite(item?.yearNumber)) return item.yearNumber;
     const parsed = Number.parseInt(item?.id, 10);
@@ -356,8 +404,10 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
       if (Number.isFinite(asNumber)) return asNumber;
       return item?.name;
     })();
-    if (context === 'node') return String(chapterVal ?? item?.id ?? '');
-    return `${t('chapter')} ${chapterVal ?? item?.id ?? ''}`.trim();
+    const n = Number(chapterVal);
+    const numStr = Number.isFinite(n) ? toNumeral(n) : String(chapterVal ?? item?.id ?? '');
+    if (context === 'node') return numStr;
+    return `${t('chapter')} ${numStr}`.trim();
   };
   const formatVerse = ({ item, context }) => {
     const extract = () => {
@@ -369,8 +419,10 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
       return item?.name;
     };
     const verseVal = extract();
-    if (context === 'node') return String(verseVal ?? item?.id ?? '');
-    return `${t('verse')} ${verseVal ?? item?.id ?? ''}`.trim();
+    const n = Number(verseVal);
+    const numStr = Number.isFinite(n) ? toNumeral(n) : String(verseVal ?? item?.id ?? '');
+    if (context === 'node') return numStr;
+    return `${t('verse')} ${numStr}`.trim();
   };
   const bookNames = namesMap?.books || namesMap;
   return ({ item, context }) => {
@@ -771,12 +823,15 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
   const localeNames = translationsMeta?.names?.[translationLang] || {};
   const namesMap = {
     books: localeNames.books || localeNames,
-    sections: localeNames.sections || {}
+    sections: localeNames.sections || {},
+    testaments: localeNames.testaments || {}
   };
+
+  const translationName = translationsMeta?.translations?.[translationId]?.name || translationId;
 
   const chainResult = await config.buildChain(manifest, options, namesMap);
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
-  const handlerSet = config.createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta: chainResult });
+  const handlerSet = config.createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta: chainResult, translationName });
   const secondary = handlerSet.secondary || { items: [], selectedIndex: 0 };
   if (!items.length) {
     console.error('No items found for volume', volume);

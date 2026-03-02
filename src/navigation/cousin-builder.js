@@ -103,11 +103,14 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   if (!activeTestamentId) return { items: [], selectedIndex: 0, preserveOrder: true };
   const activeTestament = bible.testaments[activeTestamentId];
   const sections = Object.entries(activeTestament?.sections || {}).sort(bySortNumber);
-  const sectionNames = names?.sections || {};
+  const testamentNames = names?.testaments || {};
   const bookNames = names?.books || names || {};
+  const testamentName = testamentNames[activeTestamentId] || activeTestament?.name || activeTestamentId;
   const chain = [];
 
-  sections.forEach(([sectionKey, section], sectionIdx) => {
+  // Books are displayed flat (no section gaps). Section is retained on each item
+  // as metadata for back-navigation context but is not shown as a UI level.
+  sections.forEach(([sectionKey, section]) => {
     const books = Object.entries(section?.books || {}).sort(bySortNumber);
     books.forEach(([, book]) => {
       const id = book?.book_key || book?.id || book?.name;
@@ -120,13 +123,9 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
         level: 'book',
         testamentId: activeTestamentId,
         sectionId: sectionKey,
-        parentName: sectionNames?.[sectionKey] || section?.name || sectionKey
+        parentName: testamentName
       });
     });
-    const isLastSection = sectionIdx === sections.length - 1;
-    if (!isLastSection) {
-      chain.push(GAP, GAP);
-    }
   });
 
   const selectedIndex = (() => {

@@ -485,6 +485,26 @@ export function buildBibleBooks(manifest, namesMap = {}) {
   return items;
 }
 
+export function buildBibleTestaments(manifest, namesMap = {}, { testamentId, translationName = '' } = {}) {
+  const bible = manifest?.Gutenberg_Bible;
+  if (!bible) return { items: [], selectedIndex: 0, preserveOrder: true };
+  const testamentNames = namesMap?.testaments || {};
+  const items = Object.entries(bible.testaments || {})
+    .sort(([, a], [, b]) => (a?.sort_number ?? 0) - (b?.sort_number ?? 0))
+    .map(([tid, testament], idx) => ({
+      id: tid,
+      name: testamentNames[tid] || testament?.name || tid,
+      sort: testament?.sort_number ?? idx,
+      order: idx,
+      level: 'testament',
+      parentName: translationName
+    }));
+  const selectedIndex = testamentId
+    ? Math.max(0, items.findIndex(i => i.id === testamentId))
+    : 0;
+  return { items, selectedIndex, preserveOrder: true };
+}
+
 // ── Bible Verse Cache ────────────────────────────────────────────────────────
 // Verse items and raw text are fetched on demand and stored keyed by the
 // chapter's external file path.  getBibleVerseItems() returns synchronously
