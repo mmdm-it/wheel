@@ -10,3 +10,19 @@
   /* Detail sector uses EB Garamond — the v0 typographic choice for scripture */
   --theme-font-detail: 'EB Garamond', Georgia, serif;
 }
+
+/* Bible child pyramid nodes: solid fill to cover fan lines beneath them */
+:root[data-theme="bible"] .child-pyramid-node {
+  fill: #8b6f47;
+  stroke: #5a3e20;
+  stroke-width: 1px;
+}
+
+:root[data-theme="bible"] .child-pyramid-node:hover {
+  fill: #a07d52;
+  stroke: #5a3e20;
+}
+
+:root[data-theme="bible"] .child-pyramid-label {
+  fill: #000000;
+}
