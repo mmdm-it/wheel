@@ -93,13 +93,13 @@
         }
       },
       "focus_ring_startup": {
-        "initial_magnified_item": "MATHE",
-        "top_navigation_level": "book",
+        "top_navigation_level": "chapter",
         "arrangement": "cousins-with-gaps",
         "parent_button_style": "simple"
       },
       "focus_ring_arrangements": {
-        "book": "cousins-with-gaps"
+        "book": "cousins-with-gaps",
+        "chapter": "cousins-with-gaps"
       },
       "ui_limits": {
         "focus_ring_max_depth": 7,
