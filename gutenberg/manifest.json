@@ -93,13 +93,14 @@
         }
       },
       "focus_ring_startup": {
-        "top_navigation_level": "chapter",
+        "top_navigation_level": "verse",
         "arrangement": "cousins-with-gaps",
         "parent_button_style": "simple"
       },
       "focus_ring_arrangements": {
         "book": "cousins-with-gaps",
-        "chapter": "cousins-with-gaps"
+        "chapter": "cousins-with-gaps",
+        "verse": "cousins-with-gaps"
       },
       "ui_limits": {
         "focus_ring_max_depth": 7,
