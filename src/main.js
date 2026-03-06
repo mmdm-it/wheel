@@ -72,7 +72,7 @@ const volumeConfigs = {
       return { translationsMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
-      const level = params.get('level') || startup.top_navigation_level || 'book';
+      const level = params.get('level') || startup.top_navigation_level || 'chapter';
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
@@ -80,9 +80,10 @@ const volumeConfigs = {
         level,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
-        bookId: params.get('book') || 'GENE',
+        bookId: params.get('book') || 'MATHE',
         testamentId: params.get('testament'),
-        chapterId: params.get('chapter'),
+        chapterId: params.get('chapter') || '16',
+        verseId: params.get('verse') || '18',
         translation: params.get('translation') || 'NAB',
         cousinMode,
         locale: params.get('lang') || null,
@@ -471,6 +472,14 @@ function buildBibleChain(manifest, options, namesMap) {
   const initialItemId = options.initialItemId;
   if (options.cousinMode && (arrangement || 'cousins-with-gaps') !== 'siblings-only') {
     const level = options.level || 'book';
+    if (level === 'chapter') {
+      const bookId = options.bookId || 'MATHE';
+      const chapterItems = getBibleChapters(manifest, { id: bookId }, namesMap, 'book');
+      const targetKey = options.chapterId || '16';
+      let chapterSelected = chapterItems.findIndex(ch => ch.meta?.chapterKey === targetKey);
+      if (chapterSelected < 0) chapterSelected = 0;
+      return { items: chapterItems, selectedIndex: chapterSelected, preserveOrder: true };
+    }
     if (level === 'verse') {
       return buildBibleVerseCousinChain(manifest, {
         bookId: options.bookId || 'GENE',
@@ -958,6 +967,35 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
   }
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized);
   app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized));
+  // If the Bible opens on a chapter with a featured verse, prefetch that chapter's
+  // verse data and re-render the Detail Sector with the verse text once available.
+  if (volume === 'bible' && options.level === 'chapter' && options.verseId && layoutBindings.prefetchBibleVerses) {
+    const initialChapter = items[selectedIndex];
+    console.log('[startup-verse] prefetch check | initialChapter:', initialChapter?.id, '| externalFile:', initialChapter?.meta?.externalFile, '| verseId:', options.verseId);
+    if (initialChapter?.meta?.externalFile) {
+      layoutBindings.prefetchBibleVerses(initialChapter, {
+        onLoaded() {
+          const { externalFile, bookId, chapterKey } = initialChapter.meta;
+          const verseKey = String(options.verseId);
+          console.log('[startup-verse] onLoaded | externalFile:', externalFile, '| verseKey:', verseKey, '| app.openDetailSector:', typeof app?.openDetailSector);
+          const syntheticVerse = {
+            id: `${bookId}_${chapterKey}_${verseKey}`,
+            name: `${chapterKey}:${verseKey}`,
+            level: 'verse',
+            parentId: initialChapter.id,
+            meta: { bookId, chapterId: initialChapter.id, verseKey, externalFile }
+          };
+          if (app?.openDetailSector) {
+            app.openDetailSector(() => renderDetail(syntheticVerse, adapter, manifest, adapterNormalized));
+          } else {
+            renderDetail(syntheticVerse, adapter, manifest, adapterNormalized);
+          }
+        }
+      });
+    }
+  } else {
+    console.log('[startup-verse] prefetch skipped | volume:', volume, '| level:', options.level, '| verseId:', options.verseId, '| hasPrefetch:', Boolean(layoutBindings.prefetchBibleVerses));
+  }
   wireInteractions(app, items.length);
   showVersion();
 

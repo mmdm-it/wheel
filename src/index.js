@@ -267,6 +267,9 @@ export function createApp({
   const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
   const isCatalogVolume = Boolean(pyramidNormalized?.meta?.suffixMerge);
   let detailSectorShown = false; // tracks whether DS is currently expanded
+  let forcedDetailOpen = false;   // request to open DS at a non-leaf level
+  let freezeDetailSector = false; // survives one post-expansion render without re-collapsing
+  let detailOpenCallback = null;  // called after forced-expansion animation completes
 
   // Notify the host page when the detail sector visibility changes.
   // `when` indicates the timing: 'immediate' (show/hide now) or 'after-animation'
@@ -1129,19 +1132,32 @@ export function createApp({
     const tertiarySelected = tertiaryNav.getCurrent();
     const tertiaryNodes = calculateTertiaryNodePositions(tertiaryNav.items, tertiaryRotation);
 
-    // Detail Sector leaf detection — expand/collapse based on selected item level
+    // Detail Sector leaf detection — expand/collapse based on selected item level.
+    // forcedDetailOpen allows external callers (e.g. startup featured verse) to
+    // open the sector at a non-leaf level; freezeDetailSector prevents the
+    // immediately-following render from collapsing it again.
     const isLeaf = leafLevel && selected?.level === leafLevel;
     console.log('[render] leaf detection: leafLevel:', leafLevel, 'selected.level:', selected?.level, 'isLeaf:', isLeaf, 'detailSectorShown:', detailSectorShown, 'animating:', volumeLogo?.animating);
-    if (isLeaf && !detailSectorShown && !volumeLogo.animating) {
+    if ((isLeaf || forcedDetailOpen) && !detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = true;
+      forcedDetailOpen = false;
+      const savedCb = detailOpenCallback;
+      detailOpenCallback = null;
       volumeLogo.expand(arcParams, magnifier.angle, () => {
         emitDetailSectorChange(true, 'after-animation');
+        freezeDetailSector = true;
         render(rotation);
+        if (typeof savedCb === 'function') savedCb();
       });
     } else if (!isLeaf && detailSectorShown && !volumeLogo.animating) {
-      detailSectorShown = false;
-      emitDetailSectorChange(false, 'immediate');
-      volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
+      if (freezeDetailSector) {
+        // Allow this one post-expansion render to pass without collapsing.
+        freezeDetailSector = false;
+      } else {
+        detailSectorShown = false;
+        emitDetailSectorChange(false, 'immediate');
+        volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
+      }
     }
 
     // Suppress child pyramid when Detail Sector is shown or animating
@@ -1684,6 +1700,18 @@ export function createApp({
       if (!onNodeClick || !nodes || idx < 0 || idx >= nodes.length) return;
       onNodeClick(nodes[idx]);
     },
-    refreshPyramid: () => render(rotation)
+    refreshPyramid: () => render(rotation),
+    // Open the Detail Sector at the current position regardless of leaf level.
+    // onOpen is called after the expansion animation completes.
+    openDetailSector(onOpen) {
+      console.log('[openDetailSector] called | detailSectorShown:', detailSectorShown, '| volumeLogo.animating:', volumeLogo?.animating);
+      if (detailSectorShown) {
+        if (typeof onOpen === 'function') onOpen();
+        return;
+      }
+      forcedDetailOpen = true;
+      if (typeof onOpen === 'function') detailOpenCallback = onOpen;
+      render(rotation);
+    }
   };
 }

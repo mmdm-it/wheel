@@ -331,8 +331,11 @@ const buildSecondaryLanguages = (translationsMeta, currentTranslation) => {
 };
 
 export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta, translationName = '' }) {
-  let bibleMode = 'book';
-  let bibleChapterContext = null;
+  const initialLevel = options?.level;
+  let bibleMode = (initialLevel === 'chapter' || initialLevel === 'verse') ? initialLevel : 'book';
+  let bibleChapterContext = (initialLevel === 'chapter' && options?.bookId)
+    ? { bookId: options.bookId, testamentId: null, sectionId: null }
+    : null;
   let bibleVerseContext = null;
   const lastBookByTestament = {};
   const secondary = translationsMeta ? buildSecondaryLanguages(translationsMeta, options?.translation) : { items: [], selectedIndex: 0 };
@@ -411,10 +414,30 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     return true;
   };
 
+  const getParentLabel = (item) => {
+    if (!item) return '';
+    // Chapter ring: parent is the book name (e.g. "MATTHEW")
+    if (item.level === 'chapter') {
+      const bookId = item.meta?.bookId || item.parentId;
+      if (!bookId) return '';
+      const book = findBook(manifest, bookId);
+      return (book?.book_name || bookId).toUpperCase();
+    }
+    // Verse ring: parent is the chapter number (e.g. "Chapter 16")
+    if (item.level === 'verse') {
+      const chapterId = item.meta?.chapterId || item.parentId || '';
+      const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
+      return chapterKey ? `Chapter ${chapterKey}` : '';
+    }
+    // Book ring: parent is the testament name (already stored on items as parentName)
+    return item.parentName || '';
+  };
+
   return {
     parentHandler,
     childrenHandler,
     secondary,
+    getParentLabel,
     layoutBindings: {
       bibleModeRef: () => bibleMode,
       setBibleMode: next => { bibleMode = next; },
