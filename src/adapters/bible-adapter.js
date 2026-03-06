@@ -349,6 +349,12 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         sectionId: ch.meta?.sectionId || null,
         externalFile: ch.meta?.externalFile || null
       };
+      // Also pre-populate chapter context so a second OUT (verse→chapter→book) works.
+      bibleChapterContext = {
+        bookId: options.bookId,
+        testamentId: ch.meta?.testamentId || null,
+        sectionId: ch.meta?.sectionId || null
+      };
     }
   }
   const lastBookByTestament = {};

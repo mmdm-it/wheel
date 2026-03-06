@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.8.43 — Bible startup at verse level + restore 600ms migration animation
+- Restored migration animation durations: `ANIM_DURATION` 1200ms → 600ms, `RING_RADIAL_DURATION` 1200ms → 900ms (both had been slowed for design/test)
+- Bible volume now starts at verse level (Matthew 16): magnifier shows 16:18, Parent Button shows Chapter 16, Detail Sector opens with verse text on load
+- Verse items from `buildBibleVerseCousinChain` now carry `level: 'verse'` and `parentId` so leaf detection expands the Detail Sector automatically
+- `createHandlers` pre-populates `bibleVerseContext` + `bibleChapterContext` at verse-level startup so two successive OUT taps work from the opening position
+- `data/gutenberg/manifest.json` `top_navigation_level` changed from `chapter` to `verse`; `verse` added to `focus_ring_arrangements`
+
 ## 3.8.40 — Revert breaking commit 52cb891 (black screen on load) + test suite fixes
 - Restored src/index.js, src/view/detail/pyramid-view.js, and src/view/migration-animation.js to pre-52cb891 state
 - Commit 52cb891 introduced a black screen on load by suppressing the initial render and forcing pyramid nodes to display:none
@@ -90,6 +97,11 @@
 - Spiral Child Pyramid node layout: nodes are now placed equidistantly along an Archimedean spiral using true arc-length spacing. This provides visually uniform node distribution for all child counts.
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
+
+## [3.8.43] - 2026-03-06
+
+### Changed
+- Restored migration animation durations to 600ms/900ms; Bible startup at verse level (Matthew 16:18); verse items carry level/parentId; bibleVerseContext + bibleChapterContext pre-populated at startup
 
 ## [data-2026.02.27] - 2026-02-27
 

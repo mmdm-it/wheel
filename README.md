@@ -4,11 +4,13 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.8.42 (2026-02-26)
+- v3.8.43 (2026-03-06)
 
-## Notable Changes in 3.8.40
-- Reverted commit 52cb891 which caused a black screen on load by suppressing the initial render and forcing pyramid nodes to `display:none`. Restored `src/index.js`, `src/view/detail/pyramid-view.js`, and `src/view/migration-animation.js` to their pre-52cb891 state.
-- Reverted commit 52cb891 which caused a black screen on load by suppressing the initial render and forcing pyramid nodes to `display:none`. Restored `src/index.js`, `src/view/detail/pyramid-view.js`, and `src/view/migration-animation.js` to their pre-52cb891 state.
+## Notable Changes in 3.8.43
+- Restored migration animation durations to 600ms (pyramid↔ring) and 900ms (ring radial); values had been slowed to 1200ms for design/test.
+- Bible volume starts at verse level: Matthew 16 verses on the ring, 16:18 in the magnifier, verse text in the Detail Sector.
+- Verse items from `buildBibleVerseCousinChain` now carry `level: 'verse'` and `parentId` for correct leaf detection and OUT navigation.
+- `createHandlers` pre-populates both `bibleVerseContext` and `bibleChapterContext` at verse-level startup so two successive OUT taps work from the opening position.
 
 ## Release Train
 - v3.8.42 Baseline data + UI lift — done
@@ -20,7 +22,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.8.42 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
 - v3.8.42 Parent Button Labelling — shipped: adapter-driven `getParentLabel`, progressive depth labels (country → manufacturer → compound), uppercase suffix
 
-- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.8.40`).
+- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.8.43`).
 - Historical majors are maintained outside the active v3 repository (archived folders/repos for v0/v1/v2).
 - Future v4 will branch from the final v3 tag and tag releases as `v4.*` (no versioned folders).
 - GitHub flow is feature branch → pull request → merge into protected `main` after required checks pass.
