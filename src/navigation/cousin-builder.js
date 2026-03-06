@@ -31,7 +31,7 @@ async function fetchChapterData(chapterMeta) {
   return res.json();
 }
 
-function buildVerseItems(chapterData, { bookId, translation }) {
+function buildVerseItems(chapterData, { bookId, translation, chapterId }) {
   const verses = chapterData?.verses || {};
   const entries = Object.entries(verses).sort((a, b) => {
     const as = Number.isFinite(a[1]?.seq) ? a[1].seq : parseInt(a[0], 10);
@@ -49,6 +49,8 @@ function buildVerseItems(chapterData, { bookId, translation }) {
       name,
       sort: seq,
       order: undefined, // set by caller
+      level: 'verse',
+      parentId: chapterId || `${bookKey}:${chapterLabel}`,
       verse: verseId,
       chapter: chapterLabel,
       book: bookKey,
@@ -67,9 +69,10 @@ export async function buildBibleVerseCousinChain(manifest, { bookId, startChapte
   const chain = [];
 
   for (let i = startIdx; i < chapters.length; i += 1) {
-    const [chapterId, chapterMeta] = chapters[i];
+    const [chapterKey, chapterMeta] = chapters[i];
+    const chapterId = chapterMeta?.id || `${bookId}:${chapterKey}`;
     const chapterData = await fetchChapterData(chapterMeta);
-    const verseItems = buildVerseItems(chapterData, { bookId, translation });
+    const verseItems = buildVerseItems(chapterData, { bookId, translation, chapterId });
     verseItems.forEach((item, idx) => {
       item.order = chain.length + idx; // preserve cumulative spacing including gaps
     });

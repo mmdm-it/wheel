@@ -276,7 +276,7 @@ export function detailFor(selected, manifest) {
       const text = getVerseTextFromCache(externalFile, verseKey, preferred);
       if (text) return { type: 'text', text };
     }
-    return { type: 'text', text: selected.name || id || '' };
+    return { type: 'text', text: selected.text || selected.name || id || '' };
   }
 
   return { type: 'text', text: selected.name || id || '' };
@@ -337,6 +337,20 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     ? { bookId: options.bookId, testamentId: null, sectionId: null }
     : null;
   let bibleVerseContext = null;
+  // Pre-populate verse context at startup so OUT navigation works immediately.
+  if (initialLevel === 'verse' && options?.bookId && options?.chapterId) {
+    const chapterItems = getBibleChapters(manifest, { id: options.bookId }, namesMap, 'book');
+    const ch = chapterItems.find(c => c.meta?.chapterKey === String(options.chapterId));
+    if (ch) {
+      bibleVerseContext = {
+        chapterId: ch.id,
+        bookId: options.bookId,
+        testamentId: ch.meta?.testamentId || null,
+        sectionId: ch.meta?.sectionId || null,
+        externalFile: ch.meta?.externalFile || null
+      };
+    }
+  }
   const lastBookByTestament = {};
   const secondary = translationsMeta ? buildSecondaryLanguages(translationsMeta, options?.translation) : { items: [], selectedIndex: 0 };
 

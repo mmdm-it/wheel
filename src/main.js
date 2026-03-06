@@ -72,7 +72,7 @@ const volumeConfigs = {
       return { translationsMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
-      const level = params.get('level') || startup.top_navigation_level || 'chapter';
+      const level = params.get('level') || startup.top_navigation_level || 'verse';
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
@@ -482,9 +482,16 @@ function buildBibleChain(manifest, options, namesMap) {
     }
     if (level === 'verse') {
       return buildBibleVerseCousinChain(manifest, {
-        bookId: options.bookId || 'GENE',
+        bookId: options.bookId || 'MATHE',
         startChapterId: options.chapterId || undefined,
         translation: options.translation || 'NAB'
+      }).then(chain => {
+        const verseId = options.verseId;
+        if (verseId && chain.items.length) {
+          const idx = chain.items.findIndex(item => item && item.verse === String(verseId));
+          if (idx >= 0) chain.selectedIndex = idx;
+        }
+        return chain;
       });
     }
     const chain = buildBibleBookCousinChain(manifest, {
