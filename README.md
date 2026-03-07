@@ -4,7 +4,7 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.8.43 (2026-03-06)
+- v3.8.44 (2026-03-07)
 
 ## Notable Changes in 3.8.43
 - Restored migration animation durations to 600ms (pyramid↔ring) and 900ms (ring radial); values had been slowed to 1200ms for design/test.

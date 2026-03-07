@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.8.44 — Bible testament navigation + card detail text rendering
+- `getBibleBooksForTestament` added to handlers, pyramid builder, and `createVolumeLayoutSpec` parameters — enables testament-level navigation within the Bible volume
+- `buildBibleBookCousinChain` now receives `bookId` from `createHandlers` so book-level cousin chains are correctly scoped
+- `renderDetail` in the Bible volume now reads the active translation, so detail text reflects any translation currently in scope
+- Card detail font tier selection enhanced with stride calculation for improved line-count accuracy at varying panel widths
+- Card detail font tiers and weight/spacing styles updated for cleaner on-screen rendering
+- Removed leftover debug `console.log` for leaf detection in `createApp`
+
 ## 3.8.43 — Bible startup at verse level + restore 600ms migration animation
 - Restored migration animation durations: `ANIM_DURATION` 1200ms → 600ms, `RING_RADIAL_DURATION` 1200ms → 900ms (both had been slowed for design/test)
 - Bible volume now starts at verse level (Matthew 16): magnifier shows 16:18, Parent Button shows Chapter 16, Detail Sector opens with verse text on load
