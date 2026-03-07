@@ -132,6 +132,7 @@ export function buildBiblePyramid({
   namesMap,
   getBibleChapters,
   getBibleVerseItems,
+  getBibleBooksForTestament,
   prefetchBibleVerses,
   getApp,
   bibleModeRef,
@@ -142,6 +143,10 @@ export function buildBiblePyramid({
   if (!manifest || typeof getBibleChapters !== 'function') return null;
   const getChildren = ({ selected }) => {
     const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
+    if (mode === 'testament') {
+      if (typeof getBibleBooksForTestament !== 'function') return [];
+      return getBibleBooksForTestament(selected?.id).items.filter(Boolean);
+    }
     if (mode === 'book') {
       return getBibleChapters(manifest, selected, namesMap, 'book');
     }
@@ -163,6 +168,26 @@ export function buildBiblePyramid({
     if (!instr?.item) return;
     const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
     const app = typeof getApp === 'function' ? getApp() : null;
+
+    if (mode === 'testament') {
+      // Clicking a book node in the pyramid when testaments are in the ring:
+      // navigate IN — ring advances to the books of that testament, selected
+      // to the clicked book, and bibleMode advances to 'book' (pyramid then
+      // shows chapters).
+      if (typeof getBibleBooksForTestament !== 'function') return;
+      const testament = app?.nav?.getCurrent?.();
+      if (!testament) return;
+      const { items: bookItems } = getBibleBooksForTestament(testament.id);
+      if (!bookItems.length) return;
+      const selectedIdx = bookItems.findIndex(b => b && b.id === instr.item.id);
+      if (typeof setBibleMode === 'function') setBibleMode('book');
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+        migrateOrSet(bookItems, selectedIdx >= 0 ? selectedIdx : 0, true);
+      }
+      return;
+    }
 
     if (mode === 'book') {
       const book = app?.nav?.getCurrent?.();

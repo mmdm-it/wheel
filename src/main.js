@@ -905,6 +905,7 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
     getBibleVerseItems: layoutBindings.getBibleVerseItems,
     prefetchBibleVerses: layoutBindings.prefetchBibleVerses,
+    getBibleBooksForTestament: layoutBindings.getBibleBooksForTestament,
     getApp: () => app,
     calendarModeRef: layoutBindings.calendarModeRef,
     setCalendarMode: layoutBindings.setCalendarMode,

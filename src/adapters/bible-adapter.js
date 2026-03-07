@@ -470,6 +470,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
       getBibleVerseItems,
       prefetchBibleVerses,
+      getBibleBooksForTestament: (testamentId) =>
+        buildBibleBookCousinChain(manifest, { testamentId, names: namesMap }),
       pyramidBuilder: buildBiblePyramid
     }
   };
