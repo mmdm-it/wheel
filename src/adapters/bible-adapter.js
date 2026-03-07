@@ -218,7 +218,7 @@ function findChapter(manifest, chapterId) {
   return null;
 }
 
-export function detailFor(selected, manifest) {
+export function detailFor(selected, manifest, { normalized, translation } = {}) {
   if (!selected) return null;
   const id = selected.id || '';
   const level = selected.level || '';
@@ -267,12 +267,16 @@ export function detailFor(selected, manifest) {
     const externalFile = selected.meta?.externalFile;
     const verseKey = selected.meta?.verseKey;
     if (externalFile && verseKey) {
-      // Prefer the translation from the URL query string; fall back to VUL then NAB.
+      // Use the active translation (passed in), then fall back to the URL query
+      // string, then to the remaining pool.  Never default to Latin (VUL) over
+      // English (NAB) — language only changes when the user explicitly selects one.
       const searchParams = typeof window !== 'undefined'
         ? new URLSearchParams(window.location.search)
         : null;
       const urlTranslation = searchParams?.get('translation') || null;
-      const preferred = urlTranslation ? [urlTranslation, 'VUL', 'NAB', 'BYZ', 'SYN'] : ['VUL', 'NAB', 'BYZ', 'SYN'];
+      const activeTranslation = urlTranslation || translation || null;
+      const others = ['NAB', 'VUL', 'BYZ', 'SYN'].filter(t => t !== activeTranslation);
+      const preferred = activeTranslation ? [activeTranslation, ...others] : others;
       const text = getVerseTextFromCache(externalFile, verseKey, preferred);
       if (text) return { type: 'text', text };
     }

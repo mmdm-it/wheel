@@ -303,13 +303,13 @@ window.addEventListener('detail-sector-change', (e) => {
   }
 });
 
-function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
+function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation } = {}) {
   if (!detailPanel || !detailContent) return;
   while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
   if (!selected) return;
 
   const payload = adapterInstance?.detailFor
-    ? adapterInstance.detailFor(selected, manifest, { normalized: adapterNormalized })
+    ? adapterInstance.detailFor(selected, manifest, { normalized: adapterNormalized, translation })
     : { type: 'text', text: selected.name || selected.id || '' };
   if (!payload) return;
 
@@ -972,8 +972,8 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
   if (options.dimensionEnabled && app?.setBlur) {
     app.setBlur(true);
   }
-  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized);
-  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized));
+  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId });
+  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId }));
   // If the Bible opens on a chapter with a featured verse, prefetch that chapter's
   // verse data and re-render the Detail Sector with the verse text once available.
   if (volume === 'bible' && options.level === 'chapter' && options.verseId && layoutBindings.prefetchBibleVerses) {
@@ -993,9 +993,9 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
             meta: { bookId, chapterId: initialChapter.id, verseKey, externalFile }
           };
           if (app?.openDetailSector) {
-            app.openDetailSector(() => renderDetail(syntheticVerse, adapter, manifest, adapterNormalized));
+            app.openDetailSector(() => renderDetail(syntheticVerse, adapter, manifest, adapterNormalized, { translation: translationId }));
           } else {
-            renderDetail(syntheticVerse, adapter, manifest, adapterNormalized);
+            renderDetail(syntheticVerse, adapter, manifest, adapterNormalized, { translation: translationId });
           }
         }
       });
