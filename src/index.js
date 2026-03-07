@@ -1137,7 +1137,6 @@ export function createApp({
     // open the sector at a non-leaf level; freezeDetailSector prevents the
     // immediately-following render from collapsing it again.
     const isLeaf = leafLevel && selected?.level === leafLevel;
-    console.log('[render] leaf detection: leafLevel:', leafLevel, 'selected.level:', selected?.level, 'isLeaf:', isLeaf, 'detailSectorShown:', detailSectorShown, 'animating:', volumeLogo?.animating);
     if ((isLeaf || forcedDetailOpen) && !detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = true;
       forcedDetailOpen = false;
