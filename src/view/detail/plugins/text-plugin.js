@@ -16,7 +16,7 @@ export class TextDetailPlugin extends BaseDetailPlugin {
 
     // ── Arc-following layout ─────────────────────────────────────────
     if (lineTable && lineTable.length > 0) {
-      const [tierClass, tierPercent] = selectFontTier(text, lineTable);
+      const [tierClass, tierPercent, stride] = selectFontTier(text, lineTable);
 
       const container = create('div');
       container.className = `detail-sector-content detail-text detail-text--arc ${tierClass}`;
@@ -28,7 +28,7 @@ export class TextDetailPlugin extends BaseDetailPlugin {
 
       const wrappedLines = wrapLines(text, lineTable, tierPercent);
       wrappedLines.forEach((lineText, idx) => {
-        const lineInfo = lineTable[idx];
+        const lineInfo = lineTable[idx * stride];
         if (!lineInfo) return;
         container.appendChild(makeLineSpan(create, lineText, '', lineInfo));
       });

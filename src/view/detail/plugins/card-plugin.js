@@ -35,14 +35,15 @@ export class CardDetailPlugin extends BaseDetailPlugin {
       const titleText = item?.title ?? item?.name ?? '';
       if (titleText && lineIdx < lineTable.length) {
         const titleBudget = lineTable.slice(lineIdx, lineIdx + TITLE_MAX_LINES);
-        const [tierClass, tierPercent] = selectFontTier(titleText, titleBudget, CARD_FONT_TIERS);
+        const [tierClass, tierPercent, titleStride] = selectFontTier(titleText, titleBudget, CARD_FONT_TIERS);
         const titleLines = wrapLines(titleText, lineTable.slice(lineIdx), tierPercent)
           .slice(0, TITLE_MAX_LINES);
         titleLines.forEach(text => {
           if (lineIdx >= lineTable.length) return;
           container.appendChild(
-            makeLineSpan(create, text, `detail-card-title ${tierClass}`, lineTable[lineIdx++])
+            makeLineSpan(create, text, `detail-card-title ${tierClass}`, lineTable[lineIdx])
           );
+          lineIdx += titleStride;
         });
       }
 

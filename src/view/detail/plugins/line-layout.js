@@ -38,7 +38,7 @@ export const CARD_FONT_TIERS = [
 /**
  * Estimate how many lines are needed to render `words` at a given font tier.
  *
- * `lineTable[].maxChars` is calibrated for tier-4 (3% SSd).
+ * `lineTable[].maxChars` is calibrated for tier-6 (3% SSd).
  * For larger fonts fewer characters fit per line, so we scale maxChars down.
  *
  * @param {string[]} words
@@ -67,6 +67,23 @@ export function estimateLineCount(words, lineTable, tierPercent) {
 }
 
 /**
+ * Compute the number of line-table slots a single rendered text line occupies
+ * at a given tier.  The line-table pitch is calibrated for tier-6 (3% SSd ×
+ * line-height 1.4 = 4.2% SSd per slot).  Larger tiers need proportionally
+ * more slots so their glyphs don't overlap.
+ *
+ * stride = ceil(tierPct × lineHeight / 4.2)
+ * This is viewport-size independent because SSd cancels out.
+ *
+ * @param {number} tierPercent  - font size as % of SSd
+ * @returns {number}
+ */
+export function tierStride(tierPercent) {
+  const LH = tierPercent >= 6 ? 1.3 : 1.4;
+  return Math.max(1, Math.ceil(tierPercent * LH / 4.2));
+}
+
+/**
  * Select the largest font tier whose text fits within the provided line table.
  *
  * Pass a sub-slice of the full line table to enforce a max-line budget.
@@ -74,36 +91,41 @@ export function estimateLineCount(words, lineTable, tierPercent) {
  * that fits the title in at most 2 lines.
  *
  * @param {string} text
- * @param {Array} lineTable
- * @returns {[string, number]} [cssClass, tierPercent]
+ * @param {Array}  lineTable
+ * @param {Array}  [tiers]   - defaults to FONT_TIERS
+ * @returns {[string, number, number]} [cssClass, tierPercent, stride]
  */
-export function selectFontTier(text, lineTable) {
-  if (!lineTable || lineTable.length === 0) return FONT_TIERS[FONT_TIERS.length - 1];
+export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {
+  if (!lineTable || lineTable.length === 0) {
+    const fb = tiers[tiers.length - 1];
+    return [fb[0], fb[1], tierStride(fb[1])];
+  }
   const words = text.split(/\s+/).filter(Boolean);
-  for (const tier of FONT_TIERS) {
-    const needed = estimateLineCount(words, lineTable, tier[1]);
-    if (needed <= lineTable.length) {
-      console.log(
-        `[font-tier] selected:${tier[0]} (${tier[1]}% SSd)` +
-        ` | linesUsed:${needed}/${lineTable.length}` +
-        ` | wordCount:${words.length}` +
-        ` | tier-1-would-need:${estimateLineCount(words, lineTable, FONT_TIERS[0][1])}` +
-        ` | maxChars[0]:${lineTable[0]?.maxChars}` +
-        ` | text:"${text.slice(0, 40)}${text.length > 40 ? '…' : ''}"`
-      );
-      return tier;
+  const linePitch = lineTable.length > 1 ? lineTable[1].y - lineTable[0].y : 0;
+  for (const tier of tiers) {
+    const [cssClass, pct] = tier;
+    const stride = tierStride(pct);
+    const textLines = estimateLineCount(words, lineTable, pct);
+    if (textLines * stride <= lineTable.length) {
+      if (linePitch > 0) {
+        const SSd_approx = linePitch / 0.042;
+        const fontHeightPx = (pct / 100) * SSd_approx * (pct >= 6 ? 1.3 : 1.4);
+        console.log(
+          `[font-tier] selected:${cssClass} (${pct}% SSd)` +
+          ` | textLines:${textLines}` +
+          ` | stride:${stride}` +
+          ` | slotsUsed:${textLines * stride}/${lineTable.length}` +
+          ` | linePitch:${linePitch.toFixed(1)}px` +
+          ` | fontHeight:${fontHeightPx.toFixed(1)}px` +
+          ` | text:"${text.slice(0, 40)}${text.length > 40 ? '\u2026' : ''}"`
+        );
+      }
+      return [cssClass, pct, stride];
     }
   }
-  const fallback = FONT_TIERS[FONT_TIERS.length - 1];
-  const needed = estimateLineCount(words, lineTable, fallback[1]);
-  console.log(
-    `[font-tier] OVERFLOW fallback:${fallback[0]} (${fallback[1]}% SSd)` +
-    ` | linesNeeded:${needed}/${lineTable.length}` +
-    ` | wordCount:${words.length}` +
-    ` | maxChars[0]:${lineTable[0]?.maxChars}` +
-    ` | text:"${text.slice(0, 40)}${text.length > 40 ? '…' : ''}"`
-  );
-  return fallback;
+  const fb = tiers[tiers.length - 1];
+  console.log(`[font-tier] OVERFLOW → fallback:${fb[0]} | text:"${text.slice(0, 40)}"`);
+  return [fb[0], fb[1], tierStride(fb[1])];
 }
 
 /**
