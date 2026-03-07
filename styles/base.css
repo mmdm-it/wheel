@@ -332,10 +332,12 @@ svg {
   --detail-SSd is set by TextDetailPlugin on the container element.
   line-height is unitless so it scales with computed font-size.
 */
-.font-tier-1 { font-size: calc(4.5 / 100 * var(--detail-SSd, 650px)); line-height: 1.4; }
-.font-tier-2 { font-size: calc(4.0 / 100 * var(--detail-SSd, 650px)); line-height: 1.4; }
-.font-tier-3 { font-size: calc(3.5 / 100 * var(--detail-SSd, 650px)); line-height: 1.4; }
-.font-tier-4 { font-size: calc(3.0 / 100 * var(--detail-SSd, 650px)); line-height: 1.4; }
+.font-tier-1 { font-size: calc(10.5 / 100 * var(--detail-SSd, 650px)); line-height: 1.3;  }
+.font-tier-2 { font-size: calc( 8.0 / 100 * var(--detail-SSd, 650px)); line-height: 1.3;  }
+.font-tier-3 { font-size: calc( 6.0 / 100 * var(--detail-SSd, 650px)); line-height: 1.35; }
+.font-tier-4 { font-size: calc( 4.5 / 100 * var(--detail-SSd, 650px)); line-height: 1.4;  }
+.font-tier-5 { font-size: calc( 3.5 / 100 * var(--detail-SSd, 650px)); line-height: 1.4;  }
+.font-tier-6 { font-size: calc( 3.0 / 100 * var(--detail-SSd, 650px)); line-height: 1.4;  }
 
 /* RTL language support */
 .detail-text--arc[lang="he"],

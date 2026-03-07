@@ -1,5 +1,5 @@
 import { BaseDetailPlugin } from '../plugin-registry.js';
-import { selectFontTier, wrapLines, makeLineSpan } from './line-layout.js';
+import { selectFontTier, wrapLines, makeLineSpan, CARD_FONT_TIERS } from './line-layout.js';
 
 /** Maximum lines to allocate to the title section. */
 const TITLE_MAX_LINES = 2;
@@ -35,7 +35,7 @@ export class CardDetailPlugin extends BaseDetailPlugin {
       const titleText = item?.title ?? item?.name ?? '';
       if (titleText && lineIdx < lineTable.length) {
         const titleBudget = lineTable.slice(lineIdx, lineIdx + TITLE_MAX_LINES);
-        const [tierClass, tierPercent] = selectFontTier(titleText, titleBudget);
+        const [tierClass, tierPercent] = selectFontTier(titleText, titleBudget, CARD_FONT_TIERS);
         const titleLines = wrapLines(titleText, lineTable.slice(lineIdx), tierPercent)
           .slice(0, TITLE_MAX_LINES);
         titleLines.forEach(text => {
@@ -58,7 +58,7 @@ export class CardDetailPlugin extends BaseDetailPlugin {
         descLines.forEach(text => {
           if (lineIdx >= descEnd) return;
           container.appendChild(
-            makeLineSpan(create, text, 'detail-card-description font-tier-4', lineTable[lineIdx++])
+            makeLineSpan(create, text, 'detail-card-description font-tier-6', lineTable[lineIdx++])
           );
         });
       }
@@ -71,7 +71,7 @@ export class CardDetailPlugin extends BaseDetailPlugin {
         bodyLines.forEach(text => {
           if (lineIdx >= lineTable.length) return;
           container.appendChild(
-            makeLineSpan(create, text, 'detail-card-body font-tier-4', lineTable[lineIdx++])
+            makeLineSpan(create, text, 'detail-card-body font-tier-6', lineTable[lineIdx++])
           );
         });
       }

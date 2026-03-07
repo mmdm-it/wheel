@@ -12,12 +12,27 @@
 /**
  * Font tiers in descending size order: [cssClass, sizePercentOfSSd].
  * The CSS file defines `font-size: calc(N/100 * var(--detail-SSd))` for each.
+ *
+ * Tiers 1-3 are large display sizes for verse text in the arc Detail Sector.
+ * Tiers 4-6 are the legacy range, still used for card titles and short labels.
  */
 export const FONT_TIERS = [
-  ['font-tier-1', 4.5],
-  ['font-tier-2', 4.0],
-  ['font-tier-3', 3.5],
-  ['font-tier-4', 3.0]
+  ['font-tier-1', 10.5],
+  ['font-tier-2',  8.0],
+  ['font-tier-3',  6.0],
+  ['font-tier-4',  4.5],
+  ['font-tier-5',  3.5],
+  ['font-tier-6',  3.0]
+];
+
+/**
+ * Restricted tier set for card titles and short labels.
+ * Capped at 4.5% SSd so volume card headings stay compact.
+ */
+export const CARD_FONT_TIERS = [
+  ['font-tier-4', 4.5],
+  ['font-tier-5', 3.5],
+  ['font-tier-6', 3.0]
 ];
 
 /**
@@ -67,9 +82,28 @@ export function selectFontTier(text, lineTable) {
   const words = text.split(/\s+/).filter(Boolean);
   for (const tier of FONT_TIERS) {
     const needed = estimateLineCount(words, lineTable, tier[1]);
-    if (needed <= lineTable.length) return tier;
+    if (needed <= lineTable.length) {
+      console.log(
+        `[font-tier] selected:${tier[0]} (${tier[1]}% SSd)` +
+        ` | linesUsed:${needed}/${lineTable.length}` +
+        ` | wordCount:${words.length}` +
+        ` | tier-1-would-need:${estimateLineCount(words, lineTable, FONT_TIERS[0][1])}` +
+        ` | maxChars[0]:${lineTable[0]?.maxChars}` +
+        ` | text:"${text.slice(0, 40)}${text.length > 40 ? '…' : ''}"`
+      );
+      return tier;
+    }
   }
-  return FONT_TIERS[FONT_TIERS.length - 1];
+  const fallback = FONT_TIERS[FONT_TIERS.length - 1];
+  const needed = estimateLineCount(words, lineTable, fallback[1]);
+  console.log(
+    `[font-tier] OVERFLOW fallback:${fallback[0]} (${fallback[1]}% SSd)` +
+    ` | linesNeeded:${needed}/${lineTable.length}` +
+    ` | wordCount:${words.length}` +
+    ` | maxChars[0]:${lineTable[0]?.maxChars}` +
+    ` | text:"${text.slice(0, 40)}${text.length > 40 ? '…' : ''}"`
+  );
+  return fallback;
 }
 
 /**
