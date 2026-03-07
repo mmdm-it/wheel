@@ -386,6 +386,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (bibleMode === 'chapter') {
       const ctx = bibleChapterContext;
       const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
+        bookId: ctx?.bookId,
         testamentId: ctx?.testamentId,
         initialItemId: ctx?.bookId,
         names: namesMap
