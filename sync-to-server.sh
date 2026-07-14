@@ -49,11 +49,15 @@ sync_deployment() {
     echo "   Remote: $SERVER:$remote_path"
     echo ""
     
-    # Per-deployment data exclusions — only ship the data that volume needs
+    # Per-deployment data exclusions — only ship the data that volume needs.
+    # NOTE: the catalog deployment MUST include data/gutenberg — the Gutenberg
+    # easter egg (gateway to the Bible volume) runs from the catalog site and
+    # fetches gutenberg data relative to it. A stale excluded copy caused
+    # English testament names in production (v3.10.0 era).
     local data_excludes=()
     case "$deployment" in
         catalog)
-            data_excludes=(--exclude='data/gutenberg/' --exclude='data/places/' --exclude='data/calendar/') ;;
+            data_excludes=(--exclude='data/places/' --exclude='data/calendar/') ;;
         bible)
             data_excludes=(--exclude='data/mmdm/' --exclude='data/places/' --exclude='data/calendar/') ;;
         calendar)

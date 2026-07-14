@@ -103,23 +103,24 @@ test('catalog detail templates render manufacturer card', async () => {
 test('catalog detail templates render model card from pyramid ids', async () => {
   const manifest = await readJson('data/mmdm/mmdm_catalog.json');
   // Walk manifest to build a model id like model:manufacturer:cylinder:modelKey
+  // Find the first manufacturer that has a cylinder-level orphan model —
+  // key order in the data is not a contract, so search rather than assume.
   const markets = manifest?.MMdM?.markets || {};
-  const firstMarket = Object.values(markets)[0];
-  assert.ok(firstMarket, 'expected at least one market');
-  const countries = firstMarket?.countries || {};
-  const firstCountry = Object.values(countries)[0];
-  assert.ok(firstCountry, 'expected at least one country');
-  const manufacturers = firstCountry?.manufacturers || {};
-  const [manufacturerId, manufacturerVal] = Object.entries(manufacturers)[0] || [];
-  assert.ok(manufacturerId && manufacturerVal, 'expected at least one manufacturer entry');
-  const cylinders = manufacturerVal?.cylinders || {};
-  const [cylKey, cylVal] = Object.entries(cylinders)[0] || [];
-  assert.ok(cylKey && cylVal, 'expected at least one cylinder entry');
-  const models = Array.isArray(cylVal.models) ? cylVal.models : [];
-  const modelIdx = 0;
-  const model = models[modelIdx];
-  assert.ok(model, 'expected at least one model');
-  const modelKey = model.engine_model || `${modelIdx}`;
+  let found = null;
+  outer:
+  for (const marketVal of Object.values(markets)) {
+    for (const countryVal of Object.values(marketVal?.countries || {})) {
+      for (const [manufacturerId, manufacturerVal] of Object.entries(countryVal?.manufacturers || {})) {
+        for (const [cylKey, cylVal] of Object.entries(manufacturerVal?.cylinders || {})) {
+          const models = Array.isArray(cylVal.models) ? cylVal.models : [];
+          if (models.length) { found = { manufacturerId, cylKey, model: models[0] }; break outer; }
+        }
+      }
+    }
+  }
+  assert.ok(found, 'expected at least one orphan model in the catalog');
+  const { manufacturerId, cylKey, model } = found;
+  const modelKey = model.engine_model || '0';
   const modelId = `model:${manufacturerId}:${cylKey}:${modelKey}`;
 
   const detail = catalogAdapter.detailFor({ id: modelId, level: 'model', name: model.engine_model || modelId }, manifest);

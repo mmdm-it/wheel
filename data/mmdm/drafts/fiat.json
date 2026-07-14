@@ -1,0 +1,58 @@
+{
+  "_dossier": "004 Fiat (pre-1975 marine) — Wow-doctrine dossier. Rulings: A.12 bis Marino IN; 615 Marino IN (forum-grade sourcing, hedged); 8061 prima serie IN with Aifo cross-reference; 8-cyl bucket DELETED. Thin record acknowledged throughout.",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "Fiat",
+  "node": {
+    "year_founded": 1899,
+    "year_dissolved": null,
+    "sort_number": 24,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "fiat:615-marino",
+            "engine_model": "615 Marino",
+            "year_introduced": 1955,
+            "year_discontinued": 1965,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Light marine diesel derived from the 615 truck/tractor block, c. 1955. Sparse documentation — period marinizations survive mainly in yard records and enthusiast memory. Wow-doctrine entry.",
+              "description": "Negli anni '50 il piccolo diesel del camioncino 615 conobbe anche il mare: marinizzazioni di cantiere, spesso artigianali, per barche da lavoro e primi cabinati economici. Ne sopravvivono più ricordi che documenti — ma in un'enciclopedia del motore marino italiano, il 615 merita il suo posto tra i pionieri del dopoguerra."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "fiat:a12bis-marino",
+            "engine_model": "A.12 bis Marino",
+            "year_introduced": 1917,
+            "year_discontinued": 1925,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Marinized WWI aviation six, ~300 hp, ~21.7L. Powered fast attack craft of the MAS era — the oldest Italian entry in this catalog.",
+              "description": "Un motore d'aviazione sceso in mare in tempo di guerra: il sei cilindri A.12 bis, oltre ventun litri e circa 300 cavalli, spinse i mezzi veloci dell'epoca dei MAS — quando l'Italia inventava la guerra navale di velocità. È la voce più antica di questo catalogo per l'Italia: rombo di aviazione, scia di siluro, e il nome Fiat già dappertutto."
+            }
+          },
+          {
+            "id": "fiat:8061-marino-prima-serie",
+            "engine_model": "8061 Marino (prima serie)",
+            "year_introduced": 1972,
+            "year_discontinued": 1975,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Truck-derived 5.9L marine six sold under the plain Fiat badge before AIFO's 1975 founding. Direct ancestor of the Aifo 8061 M-series (see Aifo → 6 CIL → 8000).",
+              "description": "Prima che nascesse AIFO, il sei cilindri 8061 già navigava con il solo marchio Fiat sulla punterie: 5,9 litri di derivazione stradale, marinizzati per la pesca e il lavoro. È l'anello di congiunzione della dinastia — lo stesso blocco che, dal 1975, diventerà l'Aifo 8061 M12 e M14 (vedi Aifo, 6 cilindri, serie 8000)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

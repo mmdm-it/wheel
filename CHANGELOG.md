@@ -1,5 +1,7 @@
 # Changelog
 
+## 3.10.1 — Child pyramid fit guarantee — every child gets a slot (fixes empty pyramids at childCount 4-5)
+
 ## 3.10.0 — Gutenberg easter egg: Bible reachable inside MMdM catalog via generic gateway nodes
 - New manufacturer GERMANIA → GUTENBERG (1440–1468) whose only child is the gateway node BIBLIA SACRA LATINA; tapping it boots the Bible volume in-app (no reload), theme crossing gray → brown
 - Generic gateway capability: `gateway_children` in volume data declare doors to other volumes; host gains rebootable `bootVolume()`, `launchGateway`/`returnThroughGateway`, pushState history (phone Back exits the egg)
