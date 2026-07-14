@@ -403,6 +403,35 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     });
   }
 
+  // ── Fit guarantee ────────────────────────────────────────────────────
+  // The pyramid is the only IN path, so every child MUST get a slot: the
+  // fan/spiral hunt above can starve small counts (childCount 4 yielded 0
+  // on phone viewports — an unreachable subtree). When it comes up short,
+  // harvest additional spiral points under progressively relaxed spacing
+  // and arc-margin constraints. Deterministic; no change when the hunt
+  // already produced enough slots.
+  if (childCount > 0 && intersections.length < childCount) {
+    const lb = options.logoBounds ?? null;
+    const inLogo = p => lb && p.x >= lb.left && p.x <= lb.right && p.y >= lb.top && p.y <= lb.bottom;
+    const inCpua = p => p.x >= cpua.left && p.x <= cpua.right && p.y >= cpua.top && p.y <= cpua.bottom;
+    const relaxSteps = [1, 0.6, 0.35, 0.2, 0.1];
+    for (const relax of relaxSteps) {
+      if (intersections.length >= childCount) break;
+      const spacing = minHitDistance * relax;
+      const margin = arcInnerMargin * relax;
+      for (let i = 0; i < points.length && intersections.length < childCount; i += 4) {
+        const p = points[i];
+        if (!inCpua(p) || inLogo(p)) continue;
+        const distToHub = Math.hypot(p.x - clipCircleCx, p.y - clipCircleCy);
+        if (distToHub > arcRadius - margin) continue;
+        if (Math.hypot(p.x - spiralCenterX, p.y - spiralCenterY) < minDistFromOrigin) continue;
+        const tooClose = intersections.some(h => Math.hypot(h.x - p.x, h.y - p.y) < spacing);
+        if (tooClose) continue;
+        intersections.push({ x: p.x, y: p.y, t: 0, u: 0, fanId: null, synthetic: true });
+      }
+    }
+  }
+
   return {
     cpua,
     fanLines,

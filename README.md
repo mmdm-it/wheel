@@ -4,7 +4,7 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.10.0 (2026-07-14)
+- v3.10.1 (2026-07-14)
 
 ## Notable Changes in 3.10.0
 - The Gutenberg easter egg: the Bible is reachable inside the MMdM catalog (GERMANIA → GUTENBERG → BIBLIA SACRA LATINA → testaments), with theme crossover and a working return door.
