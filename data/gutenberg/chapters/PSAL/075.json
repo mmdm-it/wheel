@@ -1,194 +1,228 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_075",
-  "book_key": "PSAL",
-  "sequence": 75,
-  "chapter_in": {
-    "MT": 75,
-    "VUL": 74,
-    "LXX": 74
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_075",
+ "book_key": "PSAL",
+ "sequence": 75,
+ "chapter_in": {
+  "VUL": 75,
+  "LXX": 75,
+  "MT": 76
+ },
+ "mt_sources": [
+  "76"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "לַ/מְנַצֵּ֥חַ בִּ/נְגִינֹ֑ת מִזְמ֖וֹר לְ/אָסָ֣ף שִֽׁיר׃",
+    "SYN": "Начальнику хора Идифумова. Псалом Асафа.",
+    "NEO": "Au maître de chant. Avec instruments à cordes. Psaume d’Asaph, cantique.",
+    "NAB": "For the leader; a psalm with stringed instruments. A song of Asaph.",
+    "CEI": "Al maestro del coro. Su strumenti a corda con cetre. Salmo. Di Asaf. Canto.",
+    "LXX": "Εἰς τὸ τέλος, ἐν ὕμνοις· ψαλμὸς τῷ Ἀσάφ, ᾠδή, πρὸς τὸν Ἀσσύριον.",
+    "VUL": "In finem, in laudibus. Psalmus Asaph, canticum ad Assyrios."
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "לַ/מְנַצֵּ֥חַ אַל תַּשְׁחֵ֑ת מִזְמ֖וֹר לְ/אָסָ֣ף שִֽׁיר׃",
-        "LXX": "Εἰς τὸ τέλος, ἐν ὕμνοις· ψαλμὸς τῷ Ἀσάφ, ᾠδή, πρὸς τὸν Ἀσσύριον.",
-        "VUL": "In finem, in laudibus. Psalmus Asaph, canticum ad Assyrios.",
-        "SYN": "Начальнику хора. На струнных _орудиях._ Псалом Асафа. Песнь.",
-        "NEO": "Au maître de chant. « Ne détruis pas ! » Psaume d’Asaph. Cantique.",
-        "NAB": "For the leader. Do not destroy! A psalm of Asaph; a song.",
-        "CEI": "Al maestro del coro. Su \"Non dimenticare\". Salmo. Di Asaf. Canto."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "ה֘וֹדִ֤ינוּ לְּ/ךָ֨ אֱֽלֹהִ֗ים ה֭וֹדִינוּ וְ/קָר֣וֹב שְׁמֶ֑/ךָ סִ֝פְּר֗וּ נִפְלְאוֹתֶֽי/ךָ׃",
-        "LXX": "Γνωστὸς ἐν τῇ Ἰουδαίᾳ ὁ θεός, ἐν τῷ Ἰσραὴλ μέγα τὸ ὄνομα αὐτοῦ.",
-        "VUL": "[Notus in Judæa Deus ;/ in Israël magnum nomen ejus./",
-        "SYN": "Ведом в Иудее Бог; у Израиля велико имя Его.",
-        "NEO": "Nous te louons, ô Dieu, nous te louons ; ton nom est proche : on raconte tes merveilles.",
-        "NAB": "We thank you, God, we give thanks; we call upon your name, declare your wonderful deeds. You said:",
-        "VAT_ES": "Te damos gracias, oh Dios, te damos gracias;",
-        "CEI": "Noi ti rendiamo grazie, o Dio, ti rendiamo grazie: invocando il tuo nome, raccontiamo le tue meraviglie."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "כִּ֭י אֶקַּ֣ח מוֹעֵ֑ד אֲ֝נִ֗י מֵישָׁרִ֥ים אֶשְׁפֹּֽט׃",
-        "LXX": "καὶ ἐγενήθη ἐν εἰρήνῃ ὁ τόπος αὐτοῦ, καὶ τὸ κατοικητήριον αὐτοῦ ἐν Σιών·",
-        "VUL": "Et factus est in pace locus ejus,/ et habitatio ejus in Sion./",
-        "SYN": "И было в Салиме жилище Его и пребывание Его на Сионе.",
-        "NEO": "« Quand le temps sera venu, je jugerai avec justice.",
-        "NAB": "\"I will choose the time; I will judge fairly.",
-        "VAT_ES": "«En el momento que yo decida,",
-        "CEI": "Nel tempo che avrò stabilito io giudicherò con rettitudine."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "נְֽמֹגִ֗ים אֶ֥רֶץ וְ/כָל יֹשְׁבֶ֑י/הָ אָנֹכִ֨י תִכַּ֖נְתִּי עַמּוּדֶ֣י/הָ סֶּֽלָה׃",
-        "LXX": "ἐκεῖ συνέτριψεν τὰ κράτη τῶν τόξων, ὅπλον καὶ ῥομφαίαν καὶ πόλεμον· ἐκεῖ συνκλάσει τὰ κέρατα. διάψαλμα.",
-        "VUL": "Ibi confregit potentias arcuum,/ scutum, gladium, et bellum./",
-        "SYN": "Там сокрушил Он стрелы лука, щит и меч и брань.",
-        "NEO": "La terre est ébranlée avec tous ceux qui l’habitent ; moi, j’affermis ses colonnes. » — \\+w Séla|strong=\"H5554\"\\+w*.*",
-        "NAB": "The earth and all its inhabitants will quake, but I have firmly set its pillars.\" Selah",
-        "VAT_ES": "Se conmueve la tierra con todos sus habitantes,",
-        "CEI": "Si scuota la terra con i suoi abitanti, io tengo salde le sue colonne."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "אָמַ֣רְתִּי לַֽ֭/הוֹלְלִים אַל תָּהֹ֑לּוּ וְ֝/לָ/רְשָׁעִ֗ים אַל תָּרִ֥ימוּ קָֽרֶן׃",
-        "LXX": "φωτίζεις σὺ θαυμαστῶς ἀπὸ ὀρέων αἰωνίων.",
-        "VUL": "Illuminans tu mirabiliter a montibus æternis ;/",
-        "SYN": "Ты славен, могущественнее гор хищнических.",
-        "NEO": "Je dis aux orgueilleux : Ne vous enorgueillissez pas ! et aux méchants : Ne levez pas la tête !",
-        "NAB": "So I say to the boastful: \"Do not boast!\" to the wicked: \"Do not raise your horns!",
-        "VAT_ES": "Digo a los arrogantes: \"&iexcl;Basta de arrogancia!\",",
-        "CEI": "Dico a chi si vanta: \"Non vantatevi\". E agli empi: \"Non alzate la testa!\"."
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "אַל תָּרִ֣ימוּ לַ/מָּר֣וֹם קַרְנְ/כֶ֑ם תְּדַבְּר֖וּ בְ/צַוָּ֣אר עָתָֽק׃",
-        "LXX": "ἐταράχθησαν πάντες οἱ ἀσύνετοι τῇ καρδίᾳ· ὕπνωσαν ὕπνον αὐτῶν, καὶ οὐχ εὗρον οὐδὲν πάντες οἱ ἄνδρες τοῦ πλούτου ταῖς χερσὶν αὐτῶν.",
-        "VUL": "turbati sunt omnes insipientes corde./ Dormierunt somnum suum,/ et nihil invenerunt omnes viri divitiarum in manibus suis./",
-        "SYN": "Крепкие сердцем стали добычею, уснули сном своим, и не нашли все мужи силы рук своих.",
-        "NEO": "Ne levez pas si haut la tête, ne parlez pas avec tant d’arrogance !",
-        "NAB": "Do not raise your horns against heaven! Do not speak arrogantly against the Rock!\"",
-        "VAT_ES": "no levanten la frente contra el cielo",
-        "CEI": "Non alzate la testa contro il cielo, non dite insulti a Dio."
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "כִּ֤י לֹ֣א מִ֭/מּוֹצָא וּ/מִֽ/מַּעֲרָ֑ב וְ֝/לֹ֗א מִ/מִּדְבַּ֥ר הָרִֽים׃",
-        "LXX": "ἀπὸ ἐπιτιμήσεώς σου, ὁ θεὸς Ἰακώβ, ἐνύσταξαν οἱ ἐπιβεβηκότες τοὺς ἵππους.",
-        "VUL": "Ab increpatione tua, Deus Jacob,/ dormitaverunt qui ascenderunt equos./",
-        "SYN": "От прещения Твоего, Боже Иакова, вздремали и колесница и конь.",
-        "NEO": "Car ce n’est ni de l’orient, ni de l’occident ; ni du désert des montagnes !...",
-        "NAB": "For judgment comes not from east or from west, not from the desert or from the mountains,",
-        "VAT_ES": "Porque ni del oriente ni del occidente,",
-        "CEI": "Non dall'oriente, non dall'occidente, non dal deserto, non dalle montagne"
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "כִּֽי אֱלֹהִ֥ים שֹׁפֵ֑ט זֶ֥ה יַ֝שְׁפִּ֗יל וְ/זֶ֣ה יָרִֽים׃",
-        "LXX": "σὺ φοβερὸς εἶ, καὶ τίς ἀντιστήσεταί σοι ἀπὸ τῆς ὀργῆς σου;",
-        "VUL": "Tu terribilis es ; et quis resistet tibi ?/ ex tunc ira tua./",
-        "SYN": "Ты страшен, и кто устоит пред лицем Твоим во время гнева Твоего?",
-        "NEO": "Non ; c’est Dieu qui exerce le jugement : il abaisse l’un et il élève l’autre.",
-        "NAB": "But from God who decides, who brings some low and raises others high.",
-        "VAT_ES": "&iexcl;Dios es el único Juez,",
-        "CEI": "ma da Dio viene il giudizio: è lui che abbatte l'uno e innalza l'altro."
-      }
-    },
-    "9": {
-      "seq": 9,
-      "v_in": {
-        "MT": 9,
-        "VUL": 9,
-        "LXX": 9
-      },
-      "text": {
-        "WLC": "כִּ֤י כ֪וֹס בְּֽ/יַד יְהוָ֡ה וְ/יַ֤יִן חָמַ֨ר מָ֥לֵא מֶסֶךְ֮ וַ/יַּגֵּ֪ר מִ֫/זֶּ֥ה אַךְ שְׁ֭מָרֶי/הָ יִמְצ֣וּ יִשְׁתּ֑וּ כֹּ֝֗ל רִשְׁעֵי אָֽרֶץ׃",
-        "LXX": "ἐκ τοῦ οὐρανοῦ ἠκόντισας κρίσιν, γῆ ἐφοβήθη καὶ ἡσύχασεν,",
-        "VUL": "De cælo auditum fecisti judicium :/ terra tremuit et quievit",
-        "SYN": "С небес Ты возвестил суд; земля убоялась и утихла,",
-        "NEO": "Car il y a dans la main de \\+w Yahweh|strong=\"H3068\"\\+w** une coupe, où bouillonne un vin plein d’aromates. Et il en verse : oui, ils en suceront la lie, ils boiront, tous les méchants de la terre.",
-        "NAB": "Yes, a cup is in the LORD'S hand, foaming wine, fully spiced. When God pours it out, they will drain it even to the dregs; all the wicked of the earth must drink.",
-        "VAT_ES": "Hay una copa en la mano del Señor,",
-        "CEI": "Poiché nella mano del Signore è un calice ricolmo di vino drogato. Egli ne versa: fino alla feccia ne dovranno sorbire, ne berranno tutti gli empi della terra."
-      }
-    },
-    "10": {
-      "seq": 10,
-      "v_in": {
-        "MT": 10,
-        "VUL": 10,
-        "LXX": 10
-      },
-      "text": {
-        "WLC": "וַ֭/אֲנִי אַגִּ֣יד לְ/עֹלָ֑ם אֲ֝זַמְּרָ֗ה לֵ/אלֹהֵ֥י יַעֲקֹֽב׃",
-        "LXX": "ἐν τῷ ἀναστῆναι εἰς κρίσιν τὸν, θεόν, τοῦ σῶσαι πάντας τοὺς πρᾳεῖς τῇ καρδίᾳ. διάψαλμα.",
-        "VUL": "cum exsurgeret in judicium Deus,/ ut salvos faceret omnes mansuetos terræ./",
-        "SYN": "когда восстал Бог на суд, чтобы спасти всех угнетенных земли.",
-        "NEO": "Et moi, je publierai à jamais, je chanterai les louanges du Dieu de Jacob.",
-        "NAB": "But I will rejoice forever; I will sing praise to the God of Jacob,",
-        "VAT_ES": "Pero yo me alegraré para siempre,",
-        "CEI": "Io invece esulterò per sempre, canterò inni al Dio di Giacobbe."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "נוֹדָ֣ע בִּֽ/יהוּדָ֣ה אֱלֹהִ֑ים בְּ֝/יִשְׂרָאֵ֗ל גָּד֥וֹל שְׁמֽ/וֹ׃",
+    "SYN": "Глас мой к Богу, и я буду взывать; глас мой к Богу, и Он услышит меня.",
+    "NEO": "Dieu s’est fait connaître en Juda, en Israël son nom est grand.",
+    "NAB": "Renowned in Judah is God, whose name is great in Israel.",
+    "VAT_ES": "Dios es bien conocido en Judá,",
+    "CEI": "Dio è conosciuto in Giuda, in Israele è grande il suo nome.",
+    "LXX": "Γνωστὸς ἐν τῇ Ἰουδαίᾳ ὁ θεός, ἐν τῷ Ἰσραὴλ μέγα τὸ ὄνομα αὐτοῦ.",
+    "VUL": "[Notus in Judæa Deus ;/ in Israël magnum nomen ejus./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "וַ/יְהִ֣י בְ/שָׁלֵ֣ם סֻכּ֑/וֹ וּ/מְע֖וֹנָת֣/וֹ בְ/צִיּֽוֹן׃",
+    "SYN": "В день скорби моей ищу Господа; рука моя простерта ночью и не опускается; душа моя отказывается от утешения.",
+    "NEO": "Il a son tabernacle à Salem, et sa demeure en Sion.",
+    "NAB": "On Salem is God's tent, a shelter on Zion.",
+    "VAT_ES": "En Jerusalén está su Tienda de campaña,",
+    "CEI": "È in Gerusalemme la sua dimora, la sua abitazione, in Sion.",
+    "LXX": "καὶ ἐγενήθη ἐν εἰρήνῃ ὁ τόπος αὐτοῦ, καὶ τὸ κατοικητήριον αὐτοῦ ἐν Σιών·",
+    "VUL": "Et factus est in pace locus ejus,/ et habitatio ejus in Sion./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "שָׁ֭מָּ/ה שִׁבַּ֣ר רִשְׁפֵי קָ֑שֶׁת מָגֵ֬ן וְ/חֶ֖רֶב וּ/מִלְחָמָ֣ה סֶֽלָה׃",
+    "SYN": "Вспоминаю о Боге и трепещу; помышляю, и изнемогает дух мой.",
+    "NEO": "C’est là qu’il a brisé les éclairs de l’arc, le bouclier, l’épée et la guerre. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "There the flashing arrows were shattered, shield, sword, and weapons of war. Selah",
+    "VAT_ES": "Allí quebró las flechas fulgurantes del arco,",
+    "CEI": "Qui spezzò le saette dell'arco, lo scudo, la spada, la guerra.",
+    "LXX": "ἐκεῖ συνέτριψεν τὰ κράτη τῶν τόξων, ὅπλον καὶ ῥομφαίαν καὶ πόλεμον· ἐκεῖ συνκλάσει τὰ κέρατα. διάψαλμα.",
+    "VUL": "Ibi confregit potentias arcuum,/ scutum, gladium, et bellum./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "נָ֭אוֹר אַתָּ֥ה אַדִּ֗יר מֵֽ/הַרְרֵי טָֽרֶף׃",
+    "SYN": "Ты не даешь мне сомкнуть очей моих; я потрясен и не могу говорить.",
+    "NEO": "Tu resplendis dans ta majesté, sur les montagnes d’où tu fonds sur ta proie.",
+    "NAB": "Terrible and awesome are you, stronger than the ancient mountains.",
+    "VAT_ES": "&iexcl;Tú eres resplandeciente, majestuoso!",
+    "CEI": "Splendido tu sei, o Potente, sui monti della preda;",
+    "LXX": "φωτίζεις σὺ θαυμαστῶς ἀπὸ ὀρέων αἰωνίων.",
+    "VUL": "Illuminans tu mirabiliter a montibus æternis ;/"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "אֶשְׁתּוֹלְל֨וּ אַבִּ֣ירֵי לֵ֭ב נָמ֣וּ שְׁנָתָ֑/ם וְ/לֹא מָצְא֖וּ כָל אַנְשֵׁי חַ֣יִל יְדֵי/הֶֽם׃",
+    "SYN": "Размышляю о днях древних, о летах веков _минувших;_",
+    "NEO": "Ils ont été dépouillés, ces héros pleins de cœur ; ils se sont endormis de leur sommeil, ils n’ont pas su, tous ces vaillants, se servir de leurs bras.",
+    "NAB": "Despoiled are the bold warriors; they sleep their final sleep; the hands of all the mighty have failed.",
+    "VAT_ES": "Montañas de botín fueron arrebatadas a los valientes,",
+    "CEI": "furono spogliati i valorosi, furono colti dal sonno, nessun prode ritrovava la sua mano.",
+    "LXX": "ἐταράχθησαν πάντες οἱ ἀσύνετοι τῇ καρδίᾳ· ὕπνωσαν ὕπνον αὐτῶν, καὶ οὐχ εὗρον οὐδὲν πάντες οἱ ἄνδρες τοῦ πλούτου ταῖς χερσὶν αὐτῶν.",
+    "VUL": "turbati sunt omnes insipientes corde./ Dormierunt somnum suum,/ et nihil invenerunt omnes viri divitiarum in manibus suis./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "מִ֭/גַּעֲרָ֣תְ/ךָ אֱלֹהֵ֣י יַעֲקֹ֑ב נִ֝רְדָּ֗ם וְ/רֶ֣כֶב וָ/סֽוּס׃",
+    "SYN": "припоминаю песни мои в ночи, беседую с сердцем моим, и дух мой испытывает:",
+    "NEO": "A ta menace, Dieu de Jacob, char et coursier sont restés immobiles.",
+    "NAB": "At your roar, O God of Jacob, chariots and steeds lay still.",
+    "VAT_ES": "Por tu amenaza, Dios de Jacob,",
+    "CEI": "Dio di Giacobbe, alla tua minaccia, si arrestarono carri e cavalli.",
+    "LXX": "ἀπὸ ἐπιτιμήσεώς σου, ὁ θεὸς Ἰακώβ, ἐνύσταξαν οἱ ἐπιβεβηκότες τοὺς ἵππους.",
+    "VUL": "Ab increpatione tua, Deus Jacob,/ dormitaverunt qui ascenderunt equos./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "אַתָּ֤ה נ֥וֹרָא אַ֗תָּה וּ/מִֽי יַעֲמֹ֥ד לְ/פָנֶ֗י/ךָ מֵ/אָ֥ז אַפֶּֽ/ךָ׃",
+    "SYN": "неужели навсегда отринул Господь, и не будет более благоволить?",
+    "NEO": "Tu es redoutable, toi ! Qui peut se tenir devant toi, quand ta colère éclate ?",
+    "NAB": "So terrible and awesome are you; who can stand before you and your great anger?",
+    "VAT_ES": "Sólo tú eres temible:",
+    "CEI": "Tu sei terribile; chi ti resiste quando si scatena la tua ira?",
+    "LXX": "σὺ φοβερὸς εἶ, καὶ τίς ἀντιστήσεταί σοι ἀπὸ τῆς ὀργῆς σου;",
+    "VUL": "Tu terribilis es ; et quis resistet tibi ?/ ex tunc ira tua./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "מִ֭/שָּׁמַיִם הִשְׁמַ֣עְתָּ דִּ֑ין אֶ֖רֶץ יָֽרְאָ֣ה וְ/שָׁקָֽטָה׃",
+    "SYN": "неужели навсегда престала милость Его, и пресеклось слово Его в род и род?",
+    "NEO": "Du haut du ciel tu as proclamé la sentence ; la terre a tremblé et s’est tue,",
+    "NAB": "From the heavens you pronounced sentence; the earth was terrified and reduced to silence,",
+    "VAT_ES": "Desde el cielo proclamas la sentencia:",
+    "CEI": "Dal cielo fai udire la sentenza: sbigottita la terra tace",
+    "LXX": "ἐκ τοῦ οὐρανοῦ ἠκόντισας κρίσιν, γῆ ἐφοβήθη καὶ ἡσύχασεν,",
+    "VUL": "De cælo auditum fecisti judicium :/ terra tremuit et quievit"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "בְּ/קוּם לַ/מִּשְׁפָּ֥ט אֱלֹהִ֑ים לְ/הוֹשִׁ֖יעַ כָּל עַנְוֵי אֶ֣רֶץ סֶֽלָה׃",
+    "SYN": "неужели Бог забыл миловать? Неужели во гневе затворил щедроты Свои?",
+    "NEO": "lorsque Dieu s’est levé pour faire justice, pour sauver tous les malheureux du pays. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "When you arose, O God, for judgment to deliver the afflicted of the land. Selah",
+    "VAT_ES": "cuando te alzas para el juicio, oh Dios,",
+    "CEI": "quando Dio si alza per giudicare, per salvare tutti gli umili della terra.",
+    "LXX": "ἐν τῷ ἀναστῆναι εἰς κρίσιν τὸν, θεόν, τοῦ σῶσαι πάντας τοὺς πρᾳεῖς τῇ καρδίᾳ. διάψαλμα.",
+    "VUL": "cum exsurgeret in judicium Deus,/ ut salvos faceret omnes mansuetos terræ./"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "כִּֽי חֲמַ֣ת אָדָ֣ם תּוֹדֶ֑/ךָּ שְׁאֵרִ֖ית חֵמֹ֣ת תַּחְגֹּֽר׃",
+    "SYN": "И сказал я: \"вот мое горе - изменение десницы Всевышнего\".",
+    "NEO": "Ainsi la fureur de l’homme tourne à la gloire et les restes de la colère...",
+    "NAB": "Even wrathful Edom praises you; the remnant of Hamath keeps your feast.",
+    "VAT_ES": "Sí, el furor de los hombres tendrá que alabarte,",
+    "CEI": "L'uomo colpito dal tuo furore ti dà gloria, gli scampati dall'ira ti fanno festa.",
+    "VUL": "Quoniam cogitatio hominis confitebitur tibi,/ et reliquiæ cogitationis diem festum agent tibi./"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "נִֽדֲר֣וּ וְ/שַׁלְּמוּ֮ לַ/יהוָ֪ה אֱֽלֹהֵ֫י/כֶ֥ם כָּל סְבִיבָ֑י/ו יוֹבִ֥ילוּ שַׁ֝֗י לַ/מּוֹרָֽא׃",
+    "SYN": "Буду вспоминать о делах Господа; буду вспоминать о чудесах Твоих древних;",
+    "NEO": "Faites des vœux et acquittez-les à \\+w Yahweh|strong=\"H3068\"\\+w**, votre Dieu ; que tous ceux qui l’environnent apportent des dons au Dieu terrible !",
+    "NAB": "Make and keep vows to the LORD your God. May all present bring gifts to this awesome God,",
+    "VAT_ES": "Hagan votos al Señor, su Dios, y cúmplanlos;",
+    "CEI": "Fate voti al Signore vostro Dio e adempiteli, quanti lo circondano portino doni al Terribile,",
+    "VUL": "Vovete et reddite Domino Deo vestro,/ omnes qui in circuitu ejus affertis munera :/ terribili,"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13
+   },
+   "text": {
+    "VUL": "et ei qui aufert spiritum principum :/ terribili apud reges terræ.]"
+   }
   }
+ }
 }

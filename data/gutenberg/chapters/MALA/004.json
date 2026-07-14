@@ -1,69 +1,81 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "MALA_004",
-  "book_key": "MALA",
-  "sequence": 4,
-  "chapter_in": {
+ "_schema_version": "2.0",
+ "chapter_id": "MALA_004",
+ "book_key": "MALA",
+ "sequence": 4,
+ "chapter_in": {
+  "MT": 4,
+  "VUL": 4,
+  "LXX": 4
+ },
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Prophetici",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "MT": 1,
+    "VUL": 1,
+    "LXX": 1
+   },
+   "text": {
+    "VUL": "Ecce enim dies veniet succensa quasi caminus : et erunt omnes superbi et omnes facientes impietatem stipula : et inflammabit eos dies veniens, dicit Dominus exercituum, quæ non derelinquet eis radicem et germen."
+   }
+  },
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "MT": 2,
+    "VUL": 2,
+    "LXX": 2
+   },
+   "text": {
+    "VUL": "Et orietur vobis timentibus nomen meum sol justitiæ, et sanitas in pennis ejus : et egrediemini, et salietis sicut vituli de armento."
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "MT": 3,
+    "VUL": 3,
+    "LXX": 3
+   },
+   "text": {
+    "VUL": "Et calcabitis impios, cum fuerint cinis sub planta pedum vestrorum, in die qua ego facio, dicit Dominus exercituum."
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
     "MT": 4,
     "VUL": 4,
     "LXX": 4
+   },
+   "text": {
+    "VUL": "Mementote legis Moysi servi mei, quam mandavi ei in Horeb ad omnem Israël, præcepta et judicia."
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Prophetici",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {}
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {}
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {}
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {}
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {}
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {}
-    }
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "MT": 5,
+    "VUL": 5,
+    "LXX": 5
+   },
+   "text": {
+    "VUL": "Ecce ego mittam vobis Eliam prophetam, antequam veniat dies Domini magnus et horribilis."
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "MT": 6,
+    "VUL": 6,
+    "LXX": 6
+   },
+   "text": {
+    "VUL": "Et convertet cor patrum ad filios, et cor filiorum ad patres eorum : ne forte veniam, et percutiam terram anathemate."
+   }
   }
+ }
 }

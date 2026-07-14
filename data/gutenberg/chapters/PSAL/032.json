@@ -1,212 +1,381 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_032",
-  "book_key": "PSAL",
-  "sequence": 32,
-  "chapter_in": {
-    "MT": 32,
-    "VUL": 31,
-    "LXX": 31
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_032",
+ "book_key": "PSAL",
+ "sequence": 32,
+ "chapter_in": {
+  "VUL": 32,
+  "LXX": 32,
+  "MT": 33
+ },
+ "mt_sources": [
+  "33"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "רַנְּנ֣וּ צַ֭דִּיקִים בַּֽ/יהוָ֑ה לַ֝/יְשָׁרִ֗ים נָאוָ֥ה תְהִלָּֽה׃",
+    "SYN": "Псалом Давида, когда он притворился безумным пред Авимелехом и был изгнан от него и удалился.",
+    "NEO": "Justes, réjouissez-vous en \\+w Yahweh|strong=\"H3068\"\\+w** ! Aux hommes droits sied la louange.",
+    "NAB": "Rejoice, you just, in the LORD; praise from the upright is fitting.",
+    "VAT_ES": "Aclamen, justos, al Señor;",
+    "CEI": "Esultate, giusti, nel Signore; ai retti si addice la lode.",
+    "LXX": "Τῷ Δαυείδ. Ἀγαλλιᾶσθε, δίκαιοι, ἐν τῷ κυρίῳ· τοῖς εὐθέσι πρέπει αἴνεσις.",
+    "VUL": "Psalmus David. [Exsultate, justi, in Domino ;/ rectos decet collaudatio./"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "לְ/דָוִ֗ד מַ֫שְׂכִּ֥יל אַשְׁרֵ֥י נְֽשׂוּי פֶּ֗שַׁע כְּס֣וּי חֲטָאָֽה׃",
-        "LXX": "Τῷ Δαυείδ. Ἀγαλλιᾶσθε, δίκαιοι, ἐν τῷ κυρίῳ· τοῖς εὐθέσι πρέπει αἴνεσις.",
-        "VUL": "Psalmus David. [Exsultate, justi, in Domino ;/ rectos decet collaudatio./",
-        "SYN": "Радуйтесь, праведные, о Господе: правым прилично славословить.",
-        "NEO": "De David. — Pieuse méditation.",
-        "NAB": "Of David. A maskil. Happy the sinner whose fault is removed, whose sin is forgiven.",
-        "CEI": "Di Davide. Maskil. Beato l'uomo a cui è rimessa la colpa, e perdonato il peccato."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "אַ֥שְֽׁרֵי אָדָ֗ם לֹ֤א יַחְשֹׁ֬ב יְהוָ֣ה ל֣/וֹ עָוֺ֑ן וְ/אֵ֖ין בְּ/רוּח֣/וֹ רְמִיָּה׃",
-        "LXX": "ἐξομολογεῖσθε τῷ κυρίῳ ἐν κιθάρᾳ, ἐν ψαλτηρίῳ δεκαχόρδῳ ψάλατε αὐτῷ·",
-        "VUL": "Confitemini Domino in cithara ;/ in psalterio decem chordarum psallite illi./",
-        "SYN": "Славьте Господа на гуслях, пойте Ему на десятиструнной псалтири;",
-        "NEO": "Heureux l’homme à qui \\+w Yahweh|strong=\"H3068\"\\+w** n’impute pas l’iniquité, et dans l’esprit duquel il n’y a pas de fraude !",
-        "NAB": "Happy those to whom the LORD imputes no guilt, in whose spirit is no deceit.",
-        "VAT_ES": "&iexcl;Feliz el hombre a quien el Señor",
-        "CEI": "Beato l'uomo a cui Dio non imputa alcun male e nel cui spirito non è inganno."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "כִּֽי הֶ֭חֱרַשְׁתִּי בָּל֣וּ עֲצָמָ֑/י בְּ֝/שַׁאֲגָתִ֗/י כָּל הַ/יּֽוֹם׃",
-        "LXX": "ᾄσατε αὐτῷ ᾆσμα καινόν, καλῶς ψάλατε ἐν ἀλαλαγμῷ.",
-        "VUL": "Cantate ei canticum novum ;/ bene psallite ei in vociferatione./",
-        "SYN": "пойте Ему новую песнь; пойте Ему стройно, с восклицанием,",
-        "NEO": "Tant que je me suis tu, mes os se consumaient dans mon gémissement, chaque jour.",
-        "NAB": "As long as I kept silent, my bones wasted away; I groaned all the day.",
-        "VAT_ES": "Mientras me quedé callado,",
-        "CEI": "Tacevo e si logoravano le mie ossa, mentre gemevo tutto il giorno."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "כִּ֤י יוֹמָ֣ם וָ/לַיְלָה֮ תִּכְבַּ֥ד עָלַ֗/י יָ֫דֶ֥/ךָ נֶהְפַּ֥ךְ לְשַׁדִּ֑/י בְּ/חַרְבֹ֖נֵי קַ֣יִץ סֶֽלָה׃",
-        "LXX": "ὅτι εὐθὴς ὁ λόγος τοῦ κυρίου, καὶ πάντα τὰ ἔργα αὐτοῦ ἐν πίστει·",
-        "VUL": "Quia rectum est verbum Domini,/ et omnia opera ejus in fide./",
-        "SYN": "ибо слово Господне право и все дела Его верны.",
-        "NEO": "Car jour et nuit ta main s’appesantissait sur moi ; la sève de ma vie se desséchait aux ardeurs de l’été. — \\+w Séla|strong=\"H5554\"\\+w*.*",
-        "NAB": "For day and night your hand was heavy upon me; my strength withered as in dry summer heat. Selah",
-        "VAT_ES": "porque de día y de noche tu mano pesaba sobre mí;",
-        "CEI": "Giorno e notte pesava su di me la tua mano, come per arsura d'estate inaridiva il mio vigore."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "חַטָּאתִ֨/י אוֹדִ֪יעֲ/ךָ֡ וַ/עֲוֺ֘נִ֤/י לֹֽא כִסִּ֗יתִי אָמַ֗רְתִּי אוֹדֶ֤ה עֲלֵ֣י פְ֭שָׁעַ/י לַ/יהוָ֑ה וְ/אַתָּ֨ה נָ֘שָׂ֤אתָ עֲוֺ֖ן חַטָּאתִ֣/י סֶֽלָה׃",
-        "LXX": "ἀγαπᾷ ἐλεημοσύνην καὶ κρίσιν, τοῦ ἐλέους Κυρίου πλήρης ἡ γῆ.",
-        "VUL": "Diligit misericordiam et judicium ;/ misericordia Domini plena est terra./",
-        "SYN": "Он любит правду и суд; милости Господней полна земля.",
-        "NEO": "Je t’ai fait connaître mon péché, je n’ai pas caché mon iniquité ; j’ai dit : « Je veux confesser à \\+w Yahweh|strong=\"H3068\"\\+w** mes transgressions » et toi, tu as remis l’iniquité de mon péché. — \\+w Séla|strong=\"H5554\"\\+w*.*",
-        "NAB": "Then I declared my sin to you; my guilt I did not hide. I said, \"I confess my faults to the LORD,\" and you took away the guilt of my sin. Selah",
-        "VAT_ES": "Pero yo reconocí mi pecado,",
-        "CEI": "Ti ho manifestato il mio peccato, non ho tenuto nascosto il mio errore. Ho detto: \"Confesserò al Signore le mie colpe\" e tu hai rimesso la malizia del mio peccato."
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "עַל זֹ֡את יִתְפַּלֵּ֬ל כָּל חָסִ֨יד אֵלֶי/ךָ֮ לְ/עֵ֪ת מְ֫צֹ֥א רַ֗ק לְ֭/שֵׁטֶף מַ֣יִם רַבִּ֑ים אֵ֝לָ֗י/ו לֹ֣א יַגִּֽיעוּ׃",
-        "LXX": "τῷ λόγῳ τοῦ κυρίου οἱ οὐρανοὶ ἐστερεώθησαν, καὶ τῷ πνεύματι τοῦ στόματος αὐτοῦ πᾶσα ἡ δύναμις αὐτῶν·",
-        "VUL": "Verbo Domini cæli firmati sunt,/ et spiritu oris ejus omnis virtus eorum./",
-        "SYN": "Словом Господа сотворены небеса, и духом уст Его - все воинство их:",
-        "NEO": "Que tout homme pieux te prie donc au temps favorable ! Non ! quand les grandes eaux déborderont, elles ne l’atteindront point.",
-        "NAB": "Thus should all your faithful pray in time of distress. Though flood waters threaten, they will never reach them.",
-        "VAT_ES": "Por eso, que todos tus fieles te supliquen",
-        "CEI": "Per questo ti prega ogni fedele nel tempo dell'angoscia. Quando irromperanno grandi acque non lo potranno raggiungere."
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "אַתָּ֤ה סֵ֥תֶר לִ/י֮ מִ/צַּ֪ר תִּ֫צְּרֵ֥/נִי רָנֵּ֥י פַלֵּ֑ט תְּס֖וֹבְבֵ֣/נִי סֶֽלָה׃",
-        "LXX": "συνάγων ὡς ἀσκὸν ὕδατα θαλάσσης, τιθεὶς ἐν θησαυροῖς ἀβύσσους.",
-        "VUL": "Congregans sicut in utre aquas maris ;/ ponens in thesauris abyssos./",
-        "SYN": "Он собрал, будто груды, морские воды, положил бездны в хранилищах.",
-        "NEO": "Tu es mon asile, tu me préserveras de la détresse ; tu m’entoureras de chants de délivrance. — \\+w Séla|strong=\"H5554\"\\+w*.*",
-        "NAB": "You are my shelter; from distress you keep me; with safety you ring me round. Selah",
-        "VAT_ES": "Tú eres mi refugio,",
-        "CEI": "Tu sei il mio rifugio, mi preservi dal pericolo, mi circondi di esultanza per la salvezza."
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "אַשְׂכִּֽילְ/ךָ֨ וְֽ/אוֹרְ/ךָ֗ בְּ/דֶֽרֶךְ ז֥וּ תֵלֵ֑ךְ אִֽיעֲצָ֖ה עָלֶ֣י/ךָ עֵינִֽ/י׃",
-        "LXX": "φοβηθήτω τὸν κύριον πᾶσα ἡ γῆ, ἀπ’ αὐτοῦ δὲ σαλευθήτωσαν πάντες οἱ κατοικοῦντες τὴν οἰκουμένην.",
-        "VUL": "Timeat Dominum omnis terra ;/ ab eo autem commoveantur omnes inhabitantes orbem./",
-        "SYN": "Да боится Господа вся земля; да трепещут пред Ним все живущие во вселенной,",
-        "NEO": "— « Je t’instruirai et te montrerai la voie que tu dois suivre ; je serai ton conseiller, mon œil sera sur toi. » —",
-        "NAB": "I will instruct you and show you the way you should walk, give you counsel and watch over you.",
-        "VAT_ES": "Yo te instruiré,",
-        "CEI": "Ti farò saggio, t'indicherò la via da seguire; con gli occhi su di te, ti darò consiglio."
-      }
-    },
-    "9": {
-      "seq": 9,
-      "v_in": {
-        "MT": 9,
-        "VUL": 9,
-        "LXX": 9
-      },
-      "text": {
-        "WLC": "אַל תִּֽהְי֤וּ כְּ/ס֥וּס כְּ/פֶרֶד֮ אֵ֤ין הָ֫בִ֥ין בְּ/מֶֽתֶג וָ/רֶ֣סֶן עֶדְי֣/וֹ לִ/בְל֑וֹם בַּ֝֗ל קְרֹ֣ב אֵלֶֽי/ךָ׃",
-        "LXX": "ὅτι αὐτὸς εἶπεν, καὶ ἐγενήθησαν· αὐτὸς ἐνετείλατο, καὶ ἐκτίσθησαν.",
-        "VUL": "Quoniam ipse dixit, et facta sunt ;/ ipse mandavit et creata sunt./",
-        "SYN": "ибо Он сказал, - и сделалось; Он повелел, - и явилось.",
-        "NEO": "Ne soyez pas comme le cheval ou le mulet sans intelligence ; il faut les gouverner avec le mors et le frein, autrement, ils n’obéissent pas.",
-        "NAB": "Do not be senseless like horses or mules; with bit and bridle their temper is curbed, else they will not come to you.",
-        "VAT_ES": "No sean irracionales como el caballo y la mula,",
-        "CEI": "Non siate come il cavallo e come il mulo privi d'intelligenza; si piega la loro fierezza con morso e briglie, se no, a te non si avvicinano."
-      }
-    },
-    "10": {
-      "seq": 10,
-      "v_in": {
-        "MT": 10,
-        "VUL": 10,
-        "LXX": 10
-      },
-      "text": {
-        "WLC": "רַבִּ֥ים מַכְאוֹבִ֗ים לָ/רָ֫שָׁ֥ע וְ/הַ/בּוֹטֵ֥חַ בַּ/יהוָ֑ה חֶ֝֗סֶד יְסוֹבְבֶֽ/נּוּ׃",
-        "LXX": "Κύριος διασκεδάζει βουλὰς ἐθνῶν, ἀθετεῖ δὲ λογισμοὺς λαῶν, καὶ ἀθετεῖ βουλὰς ἀρχόντων·",
-        "VUL": "Dominus dissipat consilia gentium ;/ reprobat autem cogitationes populorum,/ et reprobat consilia principum./",
-        "SYN": "Господь разрушает советы язычников, уничтожает замыслы народов, [уничтожает советы князей].",
-        "NEO": "De nombreuses douleurs sont la part du méchant, mais celui qui se confie en \\+w Yahweh|strong=\"H3068\"\\+w** est environné de sa grâce.",
-        "NAB": "Many are the sorrows of the wicked, but love surrounds those who trust in the LORD.",
-        "VAT_ES": "&iexcl;Cuántos son los tormentos del malvado!",
-        "CEI": "Molti saranno i dolori dell'empio, ma la grazia circonda chi confida nel Signore."
-      }
-    },
-    "11": {
-      "seq": 11,
-      "v_in": {
-        "MT": 11,
-        "VUL": 11,
-        "LXX": 11
-      },
-      "text": {
-        "WLC": "שִׂמְח֬וּ בַֽ/יהוָ֣ה וְ֭/גִילוּ צַדִּיקִ֑ים וְ֝/הַרְנִ֗ינוּ כָּל יִשְׁרֵי לֵֽב׃",
-        "LXX": "ἡ δὲ βουλὴ τοῦ κυρίου εἰς τὸν αἰῶνα μένει, λογισμοὶ τῆς καρδίας αὐτοῦ ἀπὸ γενεῶν εἰς γενεάς.",
-        "VUL": "Consilium autem Domini in æternum manet ;/ cogitationes cordis ejus in generatione et generationem./",
-        "SYN": "Совет же Господень стоит вовек; помышления сердца Его - в род и род.",
-        "NEO": "Justes, réjouissez-vous en \\+w Yahweh|strong=\"H3068\"\\+w** et soyez dans l’allégresse ! Poussez des cris de joie, vous tous qui avez le cœur droit !",
-        "NAB": "Be glad in the LORD and rejoice, you just; exult, all you upright of heart.",
-        "VAT_ES": "&iexcl;Alégrense en el Señor, regocíjense los justos!",
-        "CEI": "Gioite nel Signore ed esultate, giusti, giubilate, voi tutti, retti di cuore."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "הוֹד֣וּ לַ/יהוָ֣ה בְּ/כִנּ֑וֹר בְּ/נֵ֥בֶל עָ֝שׂ֗וֹר זַמְּרוּ לֽ/וֹ׃",
+    "SYN": "Благословлю Господа во всякое время; хвала Ему непрестанно в устах моих.",
+    "NEO": "Célébrez \\+w Yahweh|strong=\"H3068\"\\+w** avec la harpe, chantez-le sur le luth à dix cordes.",
+    "NAB": "Give thanks to the LORD on the harp; on the ten-stringed lyre offer praise.",
+    "VAT_ES": "Alaben al Señor con la cítara,",
+    "CEI": "Lodate il Signore con la cetra, con l'arpa a dieci corde a lui cantate.",
+    "LXX": "ἐξομολογεῖσθε τῷ κυρίῳ ἐν κιθάρᾳ, ἐν ψαλτηρίῳ δεκαχόρδῳ ψάλατε αὐτῷ·",
+    "VUL": "Confitemini Domino in cithara ;/ in psalterio decem chordarum psallite illi./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "שִֽׁירוּ ל֭/וֹ שִׁ֣יר חָדָ֑שׁ הֵיטִ֥יבוּ נַ֝גֵּ֗ן בִּ/תְרוּעָֽה׃",
+    "SYN": "Господом будет хвалиться душа моя; услышат кроткие и возвеселятся.",
+    "NEO": "Chantez à sa gloire un cantique nouveau ; unissez avec art vos instruments et vos voix.",
+    "NAB": "Sing to God a new song; skillfully play with joyful chant.",
+    "VAT_ES": "entonen para él un canto nuevo,",
+    "CEI": "Cantate al Signore un canto nuovo, suonate la cetra con arte e acclamate.",
+    "LXX": "ᾄσατε αὐτῷ ᾆσμα καινόν, καλῶς ψάλατε ἐν ἀλαλαγμῷ.",
+    "VUL": "Cantate ei canticum novum ;/ bene psallite ei in vociferatione./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "כִּֽי יָשָׁ֥ר דְּבַר יְהוָ֑ה וְ/כָל מַ֝עֲשֵׂ֗/הוּ בֶּ/אֱמוּנָֽה׃",
+    "SYN": "Величайте Господа со мною, и превознесем имя Его вместе.",
+    "NEO": "Car la parole de \\+w Yahweh|strong=\"H3068\"\\+w** est droite, et toutes ses œuvres s’accomplissent dans la fidélité.",
+    "NAB": "For the LORD'S word is true; all his works are trustworthy.",
+    "VAT_ES": "Porque la palabra del Señor es recta",
+    "CEI": "Poiché retta è la parola del Signore e fedele ogni sua opera.",
+    "LXX": "ὅτι εὐθὴς ὁ λόγος τοῦ κυρίου, καὶ πάντα τὰ ἔργα αὐτοῦ ἐν πίστει·",
+    "VUL": "Quia rectum est verbum Domini,/ et omnia opera ejus in fide./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "אֹ֭הֵב צְדָקָ֣ה וּ/מִשְׁפָּ֑ט חֶ֥סֶד יְ֝הוָ֗ה מָלְאָ֥ה הָ/אָֽרֶץ׃",
+    "SYN": "Я взыскал Господа, и Он услышал меня, и от всех опасностей моих избавил меня.",
+    "NEO": "il aime la justice et la droiture ; la terre est remplie de la bonté de \\+w Yahweh|strong=\"H3068\"\\+w**.",
+    "NAB": "The LORD loves justice and right and fills the earth with goodness.",
+    "VAT_ES": "él ama la justicia y el derecho,",
+    "CEI": "Egli ama il diritto e la giustizia, della sua grazia è piena la terra.",
+    "LXX": "ἀγαπᾷ ἐλεημοσύνην καὶ κρίσιν, τοῦ ἐλέους Κυρίου πλήρης ἡ γῆ.",
+    "VUL": "Diligit misericordiam et judicium ;/ misericordia Domini plena est terra./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "בִּ/דְבַ֣ר יְ֭הוָה שָׁמַ֣יִם נַעֲשׂ֑וּ וּ/בְ/ר֥וּחַ פִּ֝֗י/ו כָּל צְבָאָֽ/ם׃",
+    "SYN": "Кто обращал взор к Нему, те просвещались, и лица их не постыдятся.",
+    "NEO": "Par la parole de \\+w Yahweh|strong=\"H3068\"\\+w** les cieux ont été faits, et toute leur armée par le souffle de sa bouche.",
+    "NAB": "By the LORD'S word the heavens were made; by the breath of his mouth all their host.",
+    "VAT_ES": "La palabra del Señor hizo el cielo,",
+    "CEI": "Dalla parola del Signore furono fatti i cieli, dal soffio della sua bocca ogni loro schiera.",
+    "LXX": "τῷ λόγῳ τοῦ κυρίου οἱ οὐρανοὶ ἐστερεώθησαν, καὶ τῷ πνεύματι τοῦ στόματος αὐτοῦ πᾶσα ἡ δύναμις αὐτῶν·",
+    "VUL": "Verbo Domini cæli firmati sunt,/ et spiritu oris ejus omnis virtus eorum./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "כֹּנֵ֣ס כַּ֭/נֵּד מֵ֣י הַ/יָּ֑ם נֹתֵ֖ן בְּ/אֹצָר֣וֹת תְּהוֹמֽוֹת׃",
+    "SYN": "Сей нищий воззвал, - и Господь услышал и спас его от всех бед его.",
+    "NEO": "Il rassemble comme en un monceau les eaux de la mer ; il met dans des réservoirs les flots de l’abîme.",
+    "NAB": "The waters of the sea were gathered as in a bowl; in cellars the deep was confined.",
+    "VAT_ES": "él encierra en un cántaro las aguas del mar",
+    "CEI": "Come in un otre raccoglie le acque del mare, chiude in riserve gli abissi.",
+    "LXX": "συνάγων ὡς ἀσκὸν ὕδατα θαλάσσης, τιθεὶς ἐν θησαυροῖς ἀβύσσους.",
+    "VUL": "Congregans sicut in utre aquas maris ;/ ponens in thesauris abyssos./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "יִֽירְא֣וּ מֵ֭/יְהוָה כָּל הָ/אָ֑רֶץ מִמֶּ֥/נּוּ יָ֝ג֗וּרוּ כָּל יֹשְׁבֵ֥י תֵבֵֽל׃",
+    "SYN": "Ангел Господень ополчается вокруг боящихся Его и избавляет их.",
+    "NEO": "Que toute la terre craigne \\+w Yahweh|strong=\"H3068\"\\+w** ! Que tous les habitants de l’univers tremblent devant lui !",
+    "NAB": "Let all the earth fear the LORD; let all who dwell in the world show reverence.",
+    "VAT_ES": "Que toda la tierra tema al Señor,",
+    "CEI": "Tema il Signore tutta la terra, tremino davanti a lui gli abitanti del mondo,",
+    "LXX": "φοβηθήτω τὸν κύριον πᾶσα ἡ γῆ, ἀπ’ αὐτοῦ δὲ σαλευθήτωσαν πάντες οἱ κατοικοῦντες τὴν οἰκουμένην.",
+    "VUL": "Timeat Dominum omnis terra ;/ ab eo autem commoveantur omnes inhabitantes orbem./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "כִּ֤י ה֣וּא אָמַ֣ר וַ/יֶּ֑הִי הֽוּא צִ֝וָּ֗ה וַֽ/יַּעֲמֹֽד׃",
+    "SYN": "Вкусите, и увидите, как благ Господь! Блажен человек, который уповает на Него!",
+    "NEO": "Car il a dit, et tout a été fait ; il a ordonné, et tout a existé.",
+    "NAB": "For he spoke, and it came to be, commanded, and it stood in place.",
+    "VAT_ES": "porque él lo dijo, y el mundo existió,",
+    "CEI": "perché egli parla e tutto è fatto, comanda e tutto esiste.",
+    "LXX": "ὅτι αὐτὸς εἶπεν, καὶ ἐγενήθησαν· αὐτὸς ἐνετείλατο, καὶ ἐκτίσθησαν.",
+    "VUL": "Quoniam ipse dixit, et facta sunt ;/ ipse mandavit et creata sunt./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "יְֽהוָ֗ה הֵפִ֥יר עֲצַת גּוֹיִ֑ם הֵ֝נִ֗יא מַחְשְׁב֥וֹת עַמִּֽים׃",
+    "SYN": "Бойтесь Господа, [все] святые Его, ибо нет скудости у боящихся Его.",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** renverse les desseins des nations ; il réduit à néant les pensées des peuples.",
+    "NAB": "The LORD foils the plan of nations, frustrates the designs of peoples.",
+    "VAT_ES": "El Señor frustra el designio de las naciones",
+    "CEI": "Il Signore annulla i disegni delle nazioni, rende vani i progetti dei popoli.",
+    "LXX": "Κύριος διασκεδάζει βουλὰς ἐθνῶν, ἀθετεῖ δὲ λογισμοὺς λαῶν, καὶ ἀθετεῖ βουλὰς ἀρχόντων·",
+    "VUL": "Dominus dissipat consilia gentium ;/ reprobat autem cogitationes populorum,/ et reprobat consilia principum./"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "עֲצַ֣ת יְ֭הוָה לְ/עוֹלָ֣ם תַּעֲמֹ֑ד מַחְשְׁב֥וֹת לִ֝בּ֗/וֹ לְ/דֹ֣ר וָ/דֹֽר׃",
+    "SYN": "Скимны бедствуют и терпят голод, а ищущие Господа не терпят нужды ни в каком благе.",
+    "NEO": "Mais les desseins de \\+w Yahweh|strong=\"H3068\"\\+w** subsistent à jamais et les pensées de son cœur dans toutes les générations.",
+    "NAB": "But the plan of the LORD stands forever, wise designs through all generations.",
+    "VAT_ES": "pero el designio del Señor permanece para siempre,",
+    "CEI": "Ma il piano del Signore sussiste per sempre, i pensieri del suo cuore per tutte le generazioni.",
+    "LXX": "ἡ δὲ βουλὴ τοῦ κυρίου εἰς τὸν αἰῶνα μένει, λογισμοὶ τῆς καρδίας αὐτοῦ ἀπὸ γενεῶν εἰς γενεάς.",
+    "VUL": "Consilium autem Domini in æternum manet ;/ cogitationes cordis ejus in generatione et generationem./"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "אַשְׁרֵ֣י הַ֭/גּוֹי אֲשֶׁר יְהוָ֣ה אֱלֹהָ֑י/ו הָ/עָ֓ם בָּחַ֖ר לְ/נַחֲלָ֣ה לֽ/וֹ׃",
+    "SYN": "Придите, дети, послушайте меня: страху Господню научу вас.",
+    "NEO": "Heureuse la nation dont \\+w Yahweh|strong=\"H3068\"\\+w** est le Dieu, heureux le peuple qu’il a choisi pour son héritage !",
+    "NAB": "Happy the nation whose God is the LORD, the people chosen as his very own.",
+    "VAT_ES": "&iexcl;Feliz la nación cuyo Dios es el Señor,",
+    "CEI": "Beata la nazione il cui Dio è il Signore, il popolo che si è scelto come erede.",
+    "VUL": "Beata gens cujus est Dominus Deus ejus ;/ populus quem elegit in hæreditatem sibi./"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13,
+    "MT": 13
+   },
+   "text": {
+    "WLC": "מִ֭/שָּׁמַיִם הִבִּ֣יט יְהוָ֑ה רָ֝אָ֗ה אֶֽת כָּל בְּנֵ֥י הָ/אָדָֽם׃",
+    "SYN": "Хочет ли человек жить и любит ли долгоденствие, чтобы видеть благо?",
+    "NEO": "Du haut des cieux \\+w Yahweh|strong=\"H3068\"\\+w** regarde, il voit tous les enfants des hommes ;",
+    "NAB": "From heaven the LORD looks down and observes the whole human race,",
+    "VAT_ES": "El Señor observa desde el cielo",
+    "CEI": "Il Signore guarda dal cielo, egli vede tutti gli uomini.",
+    "VUL": "De cælo respexit Dominus ;/ vidit omnes filios hominum./"
+   }
+  },
+  "14": {
+   "seq": 14,
+   "v_in": {
+    "VUL": 14,
+    "MT": 14
+   },
+   "text": {
+    "WLC": "מִֽ/מְּכוֹן שִׁבְתּ֥/וֹ הִשְׁגִּ֑יחַ אֶ֖ל כָּל יֹשְׁבֵ֣י הָ/אָֽרֶץ׃",
+    "SYN": "Удерживай язык свой от зла и уста свои от коварных слов.",
+    "NEO": "du lieu de sa demeure, il observe tous les habitants de la terre,",
+    "NAB": "Surveying from the royal throne all who dwell on earth.",
+    "VAT_ES": "él mira desde su trono",
+    "CEI": "Dal luogo della sua dimora scruta tutti gli abitanti della terra,",
+    "VUL": "De præparato habitaculo suo/ respexit super omnes qui habitant terram :/"
+   }
+  },
+  "15": {
+   "seq": 15,
+   "v_in": {
+    "VUL": 15,
+    "MT": 15
+   },
+   "text": {
+    "WLC": "הַ/יֹּצֵ֣ר יַ֣חַד לִבָּ֑/ם הַ֝/מֵּבִ֗ין אֶל כָּל מַעֲשֵׂי/הֶֽם׃",
+    "SYN": "Уклоняйся от зла и делай добро; ищи мира и следуй за ним.",
+    "NEO": "lui qui forme leur cœur à tous, qui est attentif à toutes leurs actions.",
+    "NAB": "The one who fashioned the hearts of them all knows all their works.",
+    "VAT_ES": "modela el corazón de cada uno",
+    "CEI": "lui che, solo, ha plasmato il loro cuore e comprende tutte le loro opere.",
+    "VUL": "qui finxit sigillatim corda eorum ;/ qui intelligit omnia opera eorum./"
+   }
+  },
+  "16": {
+   "seq": 16,
+   "v_in": {
+    "VUL": 16,
+    "MT": 16
+   },
+   "text": {
+    "WLC": "אֵֽין הַ֭/מֶּלֶךְ נוֹשָׁ֣ע בְּ/רָב חָ֑יִל גִּ֝בּ֗וֹר לֹֽא יִנָּצֵ֥ל בְּ/רָב כֹּֽחַ׃",
+    "SYN": "Очи Господни _обращены_ на праведников, и уши Его - к воплю их.",
+    "NEO": "Ce n’est pas le nombre des soldats qui donne au roi la victoire, ce n’est pas une grande force qui fait triompher le guerrier.",
+    "NAB": "A king is not saved by a mighty army, nor a warrior delivered by great strength.",
+    "VAT_ES": "El rey no vence por su mucha fuerza",
+    "CEI": "Il re non si salva per un forte esercito né il prode per il suo grande vigore.",
+    "VUL": "Non salvatur rex per multam virtutem,/ et gigas non salvabitur in multitudine virtutis suæ./"
+   }
+  },
+  "17": {
+   "seq": 17,
+   "v_in": {
+    "VUL": 17,
+    "MT": 17
+   },
+   "text": {
+    "WLC": "שֶׁ֣קֶר הַ֭/סּוּס לִ/תְשׁוּעָ֑ה וּ/בְ/רֹ֥ב חֵ֝יל֗/וֹ לֹ֣א יְמַלֵּֽט׃",
+    "SYN": "Но лице Господне против делающих зло, чтобы истребить с земли память о них.",
+    "NEO": "Le cheval est impuissant à procurer le salut, et toute sa vigueur n’assure pas la délivrance.",
+    "NAB": "Useless is the horse for safety; its great strength, no sure escape.",
+    "VAT_ES": "de nada sirven los caballos para la victoria:",
+    "CEI": "Il cavallo non giova per la vittoria, con tutta la sua forza non potrà salvare.",
+    "VUL": "Fallax equus ad salutem ;/ in abundantia autem virtutis suæ non salvabitur./"
+   }
+  },
+  "18": {
+   "seq": 18,
+   "v_in": {
+    "VUL": 18,
+    "MT": 18
+   },
+   "text": {
+    "WLC": "הִנֵּ֤ה עֵ֣ין יְ֭הוָה אֶל יְרֵאָ֑י/ו לַֽ/מְיַחֲלִ֥ים לְ/חַסְדּֽ/וֹ׃",
+    "SYN": "Взывают [праведные], и Господь слышит, и от всех скорбей их избавляет их.",
+    "NEO": "L’œil de \\+w Yahweh|strong=\"H3068\"\\+w** est sur ceux qui le craignent, sur ceux qui espèrent en sa bonté,",
+    "NAB": "But the LORD'S eyes are upon the reverent, upon those who hope for his gracious help,",
+    "VAT_ES": "Los ojos del Señor están fijos sobre sus fieles,",
+    "CEI": "Ecco, l'occhio del Signore veglia su chi lo teme, su chi spera nella sua grazia,",
+    "VUL": "Ecce oculi Domini super metuentes eum,/ et in eis qui sperant super misericordia ejus :/"
+   }
+  },
+  "19": {
+   "seq": 19,
+   "v_in": {
+    "VUL": 19,
+    "MT": 19
+   },
+   "text": {
+    "WLC": "לְ/הַצִּ֣יל מִ/מָּ֣וֶת נַפְשָׁ֑/ם וּ֝/לְ/חַיּוֹתָ֗/ם בָּ/רָעָֽב׃",
+    "SYN": "Близок Господь к сокрушенным сердцем и смиренных духом спасет.",
+    "NEO": "pour délivrer leur âme de la mort, et les faire vivre au temps de la famine.",
+    "NAB": "Delivering them from death, keeping them alive in times of famine.",
+    "VAT_ES": "para librar sus vidas de la muerte",
+    "CEI": "per liberarlo dalla morte e nutrirlo in tempo di fame.",
+    "VUL": "ut eruat a morte animas eorum,/ et alat eos in fame./"
+   }
+  },
+  "20": {
+   "seq": 20,
+   "v_in": {
+    "VUL": 20,
+    "MT": 20
+   },
+   "text": {
+    "WLC": "נַ֭פְשֵׁ/נוּ חִכְּתָ֣ה לַֽ/יהוָ֑ה עֶזְרֵ֖/נוּ וּ/מָגִנֵּ֣/נוּ הֽוּא׃",
+    "SYN": "Много скорбей у праведного, и от всех их избавит его Господь.",
+    "NEO": "Notre âme attend avec confiance \\+w Yahweh|strong=\"H3068\"\\+w** ; il est notre secours et notre bouclier ;",
+    "NAB": "Our soul waits for the LORD, who is our help and shield.",
+    "VAT_ES": "Nuestra alma espera en el Señor;",
+    "CEI": "L'anima nostra attende il Signore, egli è nostro aiuto e nostro scudo.",
+    "VUL": "Anima nostra sustinet Dominum,/ quoniam adjutor et protector noster est./"
+   }
+  },
+  "21": {
+   "seq": 21,
+   "v_in": {
+    "VUL": 21,
+    "MT": 21
+   },
+   "text": {
+    "WLC": "כִּי ב֭/וֹ יִשְׂמַ֣ח לִבֵּ֑/נוּ כִּ֤י בְ/שֵׁ֖ם קָדְשׁ֣/וֹ בָטָֽחְנוּ׃",
+    "SYN": "Он хранит все кости его; ни одна из них не сокрушится.",
+    "NEO": "car en lui notre cœur met sa joie, car en son saint nom nous mettons notre confiance.",
+    "NAB": "For in God our hearts rejoice; in your holy name we trust.",
+    "VAT_ES": "Nuestro corazón se regocija en él:",
+    "CEI": "In lui gioisce il nostro cuore e confidiamo nel suo santo nome.",
+    "VUL": "Quia in eo lætabitur cor nostrum,/ et in nomine sancto ejus speravimus./"
+   }
+  },
+  "22": {
+   "seq": 22,
+   "v_in": {
+    "VUL": 22,
+    "MT": 22
+   },
+   "text": {
+    "WLC": "יְהִֽי חַסְדְּ/ךָ֣ יְהוָ֣ה עָלֵ֑י/נוּ כַּ֝/אֲשֶׁ֗ר יִחַ֥לְנוּ לָֽ/ךְ׃",
+    "SYN": "Убьет грешника зло, и ненавидящие праведного погибнут.",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, que ta grâce soit sur nous, comme nous espérons en toi !",
+    "NAB": "May your kindness, LORD, be upon us; we have put our hope in you.",
+    "VAT_ES": "Señor, que tu amor descienda sobre nosotros,",
+    "CEI": "Signore, sia su di noi la tua grazia, perché in te speriamo.",
+    "VUL": "Fiat misericordia tua, Domine, super nos,/ quemadmodum speravimus in te.]"
+   }
   }
+ }
 }

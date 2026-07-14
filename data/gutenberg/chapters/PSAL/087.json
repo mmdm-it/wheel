@@ -1,140 +1,321 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_087",
-  "book_key": "PSAL",
-  "sequence": 87,
-  "chapter_in": {
-    "MT": 87,
-    "VUL": 86,
-    "LXX": 86
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_087",
+ "book_key": "PSAL",
+ "sequence": 87,
+ "chapter_in": {
+  "VUL": 87,
+  "LXX": 87,
+  "MT": 88
+ },
+ "mt_sources": [
+  "88"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "שִׁ֥יר מִזְמ֗וֹר לִ/בְנֵ֫י קֹ֥רַח לַ/מְנַצֵּ֣חַ עַל מָחֲלַ֣ת לְ/עַנּ֑וֹת מַ֝שְׂכִּ֗יל לְ/הֵימָ֥ן הָ/אֶזְרָחִֽי׃",
+    "SYN": "Учение Ефама Езрахита.",
+    "NEO": "Cantiques. Psaume des fils de Coré. Au maître de chant. A chanter sur le ton plaintif. Cantique d’Héman l’Ezrahite.",
+    "NAB": "A song; a psalm of the Korahites. For the leader; according to Mahalath. For singing; a maskil of Heman the Ezrahite.",
+    "CEI": "Canto. Salmo. Dei figli di Core. Al maestro del coro. Su \"Macalat\". Per canto. Maskil. Di Eman l'Ezraita.",
+    "LXX": "ᾨδὴ ψαλμοῦ τοῖς υἱοῖς Κόρε· εἰς τὸ τέλος, ὑπὲρ μαελὲθ τοῦ ἀποκριθῆναι· συνέσεως Αἱμὰν τῷ Ἰσραηλείτῃ.",
+    "VUL": "Canticum Psalmi, filiis Core, in finem, pro Maheleth ad respondendum. Intellectus Eman Ezrahitæ."
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "לִ/בְנֵי קֹ֭רַח מִזְמ֣וֹר שִׁ֑יר יְ֝סוּדָת֗/וֹ בְּ/הַרְרֵי קֹֽדֶשׁ׃",
-        "LXX": "ᾨδὴ ψαλμοῦ τοῖς υἱοῖς Κόρε· εἰς τὸ τέλος, ὑπὲρ μαελὲθ τοῦ ἀποκριθῆναι· συνέσεως Αἱμὰν τῷ Ἰσραηλείτῃ.",
-        "VUL": "Canticum Psalmi, filiis Core, in finem, pro Maheleth ad respondendum. Intellectus Eman Ezrahitæ.",
-        "SYN": "Песнь. Псалом, Сынов Кореевых. Начальнику хора на Махалаф, для пения. Учение Емана Езрахита.",
-        "NEO": "Psaume des fils de Coré. Cantique.",
-        "NAB": "A psalm of the Korahites. A song. The LORD loves the city founded on holy mountains,",
-        "CEI": "Dei figli di Core. Salmo. Canto. Le sue fondamenta sono sui monti santi;"
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "אֹהֵ֣ב יְ֭הוָה שַׁעֲרֵ֣י צִיּ֑וֹן מִ֝/כֹּ֗ל מִשְׁכְּנ֥וֹת יַעֲקֹֽב׃",
-        "LXX": "Κύριε ὁ θεὸς τῆς σωτηρίας μου, ἡμέρας ἐκέκραξα καὶ ἐν νυκτὶ ἐναντίον σου·",
-        "VUL": "[Domine, Deus salutis meæ,/ in die clamavi et nocte coram te./",
-        "SYN": "Господи, Боже спасения моего! днем вопию и ночью пред Тобою:",
-        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** aime les portes de Sion, plus que toutes les demeures de Jacob.",
-        "NAB": "Loves the gates of Zion more than any dwelling in Jacob.",
-        "VAT_ES": "El ama las puertas de Sión",
-        "CEI": "il Signore ama le porte di Sion più di tutte le dimore di Giacobbe."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "נִ֭כְבָּדוֹת מְדֻבָּ֣ר בָּ֑/ךְ עִ֖יר הָ/אֱלֹהִ֣ים סֶֽלָה׃",
-        "LXX": "εἰσελθέτω ἐνώπιόν σου ἡ προσευχή μου, κλῖνον τὸ οὖς σου εἰς τὴν δέησίν μου, Κύριε.",
-        "VUL": "Intret in conspectu tuo oratio mea,/ inclina aurem tuam ad precem meam./",
-        "SYN": "да внидет пред лице Твое молитва моя; приклони ухо Твое к молению моему,",
-        "NEO": "Des choses glorieuses ont été dites sur toi, cité de Dieu ! — \\+w Séla|strong=\"H5554\"\\+w*.*",
-        "NAB": "Glorious things are said of you, O city of God! Selah",
-        "VAT_ES": "Cosas admirables se dicen de ti, Ciudad de Dios:",
-        "CEI": "Di te si dicono cose stupende, città di Dio."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "אַזְכִּ֤יר רַ֥הַב וּ/בָבֶ֗ל לְֽ/יֹ֫דְעָ֥/י הִנֵּ֤ה פְלֶ֣שֶׁת וְ/צ֣וֹר עִם כּ֑וּשׁ זֶ֝֗ה יֻלַּד שָֽׁם׃",
-        "LXX": "ὅτι ἐπλήσθη κακῶν ἡ ψυχή μου, καὶ ἡ ζωή μου τῷ ᾅδῃ ἤγγισεν.",
-        "VUL": "Quia repleta est malis anima mea,/ et vita mea inferno appropinquavit./",
-        "SYN": "ибо душа моя насытилась бедствиями, и жизнь моя приблизилась к преисподней.",
-        "NEO": "« Je nommerai Rahab et Babylone parmi ceux qui me connaissent ; voici les Philistins, et Tyr, avec l’Ethiopie : c’est là qu’ils sont nés. »",
-        "NAB": "From Babylon and Egypt I count those who acknowledge the LORD. Philistia, Ethiopia, Tyre, of them it can be said: \"This one was born there.\"",
-        "VAT_ES": "«Contaré a Egipto y a Babilonia",
-        "CEI": "Ricorderò Raab e Babilonia fra quelli che mi conoscono; ecco, Palestina, Tiro ed Etiopia: tutti là sono nati."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "וּֽ/לֲ/צִיּ֨וֹן יֵאָמַ֗ר אִ֣ישׁ וְ֭/אִישׁ יֻלַּד בָּ֑/הּ וְ/ה֖וּא יְכוֹנְנֶ֣/הָ עֶלְיֽוֹן׃",
-        "LXX": "προσελογίσθην μετὰ τῶν καταβαινόντων εἰς λάκκον, ἐγενήθην ὡς ἄνθρωπος ἀβοήθητος,",
-        "VUL": "Æstimatus sum cum descendentibus in lacum,/ factus sum sicut homo sine adjutorio,/",
-        "SYN": "Я сравнялся с нисходящими в могилу; я стал, как человек без силы,",
-        "NEO": "Et l’on dira de Sion : Celui-ci et celui-là y est né ; c’est Lui, le Très-Haut, qui l’a fondée.",
-        "NAB": "But of Zion it must be said: \"They all were born here.\" The Most High confirms this;",
-        "VAT_ES": "Así se hablará de Sión:",
-        "CEI": "Si dirà di Sion: \"L'uno e l'altro è nato in essa e l'Altissimo la tiene salda\"."
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "יְֽהוָ֗ה יִ֭סְפֹּר בִּ/כְת֣וֹב עַמִּ֑ים זֶ֖ה יֻלַּד שָׁ֣ם סֶֽלָה׃",
-        "LXX": "ἐν νεκροῖς ἐλεύθερος· ὡσεὶ τραυματίαι ἐρριμμένοι καθεύδοντες ἐν τάφῳ, ὧν οὐκ ἐμνήσθης ἔτι, καὶ αὐτοὶ ἐκ τῆς χειρός σου ἀπώσθησαν·",
-        "VUL": "inter mortuos liber ;/ sicut vulnerati dormientes in sepulchris,/ quorum non es memor amplius,/ et ipsi de manu tua repulsi sunt./",
-        "SYN": "между мертвыми брошенный, - как убитые, лежащие во гробе, о которых Ты уже не вспоминаешь и которые от руки Твоей отринуты.",
-        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** inscrira au rôle des peuples : « Celui-ci est né là. » — \\+w Séla|strong=\"H5554\"\\+w*.*",
-        "NAB": "the Lord notes in the register of the peoples: \"This one was born here.\" Selah",
-        "VAT_ES": "Al registrar a los pueblos, el Señor escribirá:",
-        "CEI": "Il Signore scriverà nel libro dei popoli: \"Là costui è nato\"."
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "וְ/שָׁרִ֥ים כְּ/חֹלְלִ֑ים כָּֽל מַעְיָנַ֥/י בָּֽ/ךְ׃",
-        "LXX": "ἔθεντό με ἐν λάκκῳ κατωτάτῳ, ἐν σκοτεινοῖς καὶ ἐν σκιᾷ θανάτου.",
-        "VUL": "Posuerunt me in lacu inferiori,/ in tenebrosis, et in umbra mortis./",
-        "SYN": "Ты положил меня в ров преисподний, во мрак, в бездну.",
-        "NEO": "Et chanteurs et musiciens disent : « Toutes mes sources sont en toi. »",
-        "NAB": "So all sing in their festive dance: \"Within you is my true home.\"",
-        "VAT_ES": "Y todos cantarán, mientras danzan:",
-        "CEI": "E danzando canteranno: \"Sono in te tutte le mie sorgenti\"."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "יְ֭הוָה אֱלֹהֵ֣י יְשׁוּעָתִ֑/י יוֹם צָעַ֖קְתִּי בַ/לַּ֣יְלָה נֶגְדֶּֽ/ךָ׃",
+    "SYN": "Милости [Твои], Господи, буду петь вечно, в род и род возвещать истину Твою устами моими.",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, Dieu de mon salut, quand je crie la nuit devant toi,",
+    "NAB": "LORD, my God, I call out by day; at night I cry aloud in your presence.",
+    "VAT_ES": "&iexcl;Señor, mi Dios y mi salvador,",
+    "CEI": "Signore, Dio della mia salvezza, davanti a te grido giorno e notte.",
+    "LXX": "Κύριε ὁ θεὸς τῆς σωτηρίας μου, ἡμέρας ἐκέκραξα καὶ ἐν νυκτὶ ἐναντίον σου·",
+    "VUL": "[Domine, Deus salutis meæ,/ in die clamavi et nocte coram te./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "תָּב֣וֹא לְ֭/פָנֶי/ךָ תְּפִלָּתִ֑/י הַטֵּֽה אָ֝זְנְ/ךָ֗ לְ/רִנָּתִֽ/י׃",
+    "SYN": "Ибо говорю: навек основана милость, на небесах утвердил Ты истину Твою, _когда сказал:_",
+    "NEO": "que ma prière arrive en ta présence, prête l’oreille à mes supplications !",
+    "NAB": "Let my prayer come before you; incline your ear to my cry.",
+    "VAT_ES": "que mi plegaria llegue a tu presencia;",
+    "CEI": "Giunga fino a te la mia preghiera, tendi l'orecchio al mio lamento.",
+    "LXX": "εἰσελθέτω ἐνώπιόν σου ἡ προσευχή μου, κλῖνον τὸ οὖς σου εἰς τὴν δέησίν μου, Κύριε.",
+    "VUL": "Intret in conspectu tuo oratio mea,/ inclina aurem tuam ad precem meam./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "כִּֽי שָֽׂבְעָ֣ה בְ/רָע֣וֹת נַפְשִׁ֑/י וְ/חַיַּ֗/י לִ/שְׁא֥וֹל הִגִּֽיעוּ׃",
+    "SYN": "\"Я поставил завет с избранным Моим, клялся Давиду, рабу Моему:",
+    "NEO": "Car mon âme est rassasiée de maux, et ma vie touche au schéol.",
+    "NAB": "For my soul is filled with troubles; my life draws near to Sheol.",
+    "VAT_ES": "Porque estoy saturado de infortunios,",
+    "CEI": "Io sono colmo di sventure, la mia vita è vicina alla tomba.",
+    "LXX": "ὅτι ἐπλήσθη κακῶν ἡ ψυχή μου, καὶ ἡ ζωή μου τῷ ᾅδῃ ἤγγισεν.",
+    "VUL": "Quia repleta est malis anima mea,/ et vita mea inferno appropinquavit./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "נֶ֭חְשַׁבְתִּי עִם י֣וֹרְדֵי ב֑וֹר הָ֝יִ֗יתִי כְּ/גֶ֣בֶר אֵֽין אֱיָֽל׃",
+    "SYN": "навек утвержу семя твое, в род и род устрою престол твой\".",
+    "NEO": "On me compte parmi ceux qui descendent dans la fosse, je suis comme un homme à bout de forces.",
+    "NAB": "I am reckoned with those who go down to the pit; I am weak, without strength.",
+    "VAT_ES": "me cuento entre los que bajaron a la tumba,",
+    "CEI": "Sono annoverato tra quelli che scendono nella fossa, sono come un morto ormai privo di forza.",
+    "LXX": "προσελογίσθην μετὰ τῶν καταβαινόντων εἰς λάκκον, ἐγενήθην ὡς ἄνθρωπος ἀβοήθητος,",
+    "VUL": "Æstimatus sum cum descendentibus in lacum,/ factus sum sicut homo sine adjutorio,/"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "בַּ/מֵּתִ֗ים חָ֫פְשִׁ֥י כְּמ֤וֹ חֲלָלִ֨ים שֹׁ֥כְבֵי קֶ֗בֶר אֲשֶׁ֤ר לֹ֣א זְכַרְתָּ֣/ם ע֑וֹד וְ֝/הֵ֗מָּה מִ/יָּדְ/ךָ֥ נִגְזָֽרוּ׃",
+    "SYN": "И небеса прославят чудные дела Твои, Господи, и истину Твою в собрании святых.",
+    "NEO": "je suis comme délaissé parmi les morts, pareil aux cadavres étendus dans le sépulcre, dont tu n’as plus le souvenir, et qui sont soustraits à ta main.",
+    "NAB": "My couch is among the dead, with the slain who lie in the grave. You remember them no more; they are cut off from your care.",
+    "VAT_ES": "Yo tengo mi lecho entre los muertos,",
+    "CEI": "È tra i morti il mio giaciglio, sono come gli uccisi stesi nel sepolcro, dei quali tu non conservi il ricordo e che la tua mano ha abbandonato.",
+    "LXX": "ἐν νεκροῖς ἐλεύθερος· ὡσεὶ τραυματίαι ἐρριμμένοι καθεύδοντες ἐν τάφῳ, ὧν οὐκ ἐμνήσθης ἔτι, καὶ αὐτοὶ ἐκ τῆς χειρός σου ἀπώσθησαν·",
+    "VUL": "inter mortuos liber ;/ sicut vulnerati dormientes in sepulchris,/ quorum non es memor amplius,/ et ipsi de manu tua repulsi sunt./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "שַׁ֭תַּ/נִי בְּ/ב֣וֹר תַּחְתִּיּ֑וֹת בְּ֝/מַחֲשַׁכִּ֗ים בִּ/מְצֹלֽוֹת׃",
+    "SYN": "Ибо кто на небесах сравнится с Господом? кто между сынами Божиими уподобится Господу?",
+    "NEO": "Tu m’as jeté au fond de la fosse, dans les ténèbres, dans les abîmes.",
+    "NAB": "You plunged me into the bottom of the pit, into the darkness of the abyss.",
+    "VAT_ES": "Me has puesto en lo más hondo de la fosa,",
+    "CEI": "Mi hai gettato nella fossa profonda, nelle tenebre e nell'ombra di morte.",
+    "LXX": "ἔθεντό με ἐν λάκκῳ κατωτάτῳ, ἐν σκοτεινοῖς καὶ ἐν σκιᾷ θανάτου.",
+    "VUL": "Posuerunt me in lacu inferiori,/ in tenebrosis, et in umbra mortis./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "עָ֭לַ/י סָמְכָ֣ה חֲמָתֶ֑/ךָ וְ/כָל מִ֝שְׁבָּרֶ֗י/ךָ עִנִּ֥יתָ סֶּֽלָה׃",
+    "SYN": "Страшен Бог в великом сонме святых, страшен Он для всех окружающих Его.",
+    "NEO": "Sur moi s’appesantit ta fureur, tu m’accables de tous tes flots. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "Your wrath lies heavy upon me; all your waves crash over me. Selah",
+    "VAT_ES": "tu indignación pesa sobre mí,",
+    "CEI": "Pesa su di me il tuo sdegno e con tutti i tuoi flutti mi sommergi.",
+    "VUL": "Super me confirmatus est furor tuus,/ et omnes fluctus tuos induxisti super me./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "הִרְחַ֥קְתָּ מְיֻדָּעַ֗/י מִ֫מֶּ֥/נִּי שַׁתַּ֣/נִי תוֹעֵב֣וֹת לָ֑/מוֹ כָּ֝לֻ֗א וְ/לֹ֣א אֵצֵֽא׃",
+    "SYN": "Господи, Боже сил! кто силен, как Ты, Господи? И истина Твоя окрест Тебя.",
+    "NEO": "Tu as éloigné de moi mes amis, tu m’as rendu pour eux un objet d’horreur ; je suis emprisonné sans pouvoir sortir ;",
+    "NAB": "Because of you my friends shun me; you make me loathsome to them; Caged in, I cannot escape;",
+    "VAT_ES": "Apartaste de mí a mis conocidos,",
+    "CEI": "Hai allontanato da me i miei compagni, mi hai reso per loro un orrore. Sono prigioniero senza scampo;",
+    "VUL": "Longe fecisti notos meos a me ;/ posuerunt me abominationem sibi./ Traditus sum, et non egrediebar ;/"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "עֵינִ֥/י דָאֲבָ֗ה מִנִּ֫י עֹ֥נִי קְרָאתִ֣י/ךָ יְהוָ֣ה בְּ/כָל י֑וֹם שִׁטַּ֖חְתִּי אֵלֶ֣י/ךָ כַפָּֽ/י׃",
+    "SYN": "Ты владычествуешь над яростью моря: когда воздымаются волны его, Ты укрощаешь их.",
+    "NEO": "mes yeux se consument dans la souffrance.",
+    "NAB": "my eyes grow dim from trouble. All day I call on you, LORD; I stretch out my hands to you.",
+    "VAT_ES": "y mis ojos se debilitan por la aflicción.",
+    "CEI": "si consumano i miei occhi nel patire. Tutto il giorno ti chiamo, Signore, verso di te protendo le mie mani.",
+    "VUL": "oculi mei languerunt præ inopia./ Clamavi ad te, Domine, tota die ;/ expandi ad te manus meas./"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "הֲ/לַ/מֵּתִ֥ים תַּעֲשֶׂה פֶּ֑לֶא אִם רְ֝פָאִ֗ים יָק֤וּמוּ יוֹד֬וּ/ךָ סֶּֽלָה׃",
+    "SYN": "Ты низложил Раава, как пораженного; крепкою мышцею Твоею рассеял врагов Твоих.",
+    "NEO": "Feras-tu un miracle pour les morts ; ou bien les ombres se lèveront-elles pour te louer ? — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "Do you work wonders for the dead? Do the shades arise and praise you? Selah",
+    "VAT_ES": "&iquest;Acaso haces prodigios por los muertos,",
+    "CEI": "Compi forse prodigi per i morti? O sorgono le ombre a darti lode?",
+    "VUL": "Numquid mortuis facies mirabilia ?/ aut medici suscitabunt, et confitebuntur tibi ?/"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "הַ/יְסֻפַּ֣ר בַּ/קֶּ֣בֶר חַסְדֶּ֑/ךָ אֱ֝מֽוּנָתְ/ךָ֗ בָּ/אֲבַדּֽוֹן׃",
+    "SYN": "Твои небеса и Твоя земля; вселенную и что наполняет ее, Ты основал.",
+    "NEO": "Publie-t-on ta bonté dans le sépulcre, ta fidélité dans l’abîme ?",
+    "NAB": "Is your love proclaimed in the grave, your fidelity in the tomb?",
+    "VAT_ES": "&iquest;Se proclama tu amor en el sepulcro,",
+    "CEI": "Si celebra forse la tua bontà nel sepolcro, la tua fedeltà negli inferi?",
+    "VUL": "Numquid narrabit aliquis in sepulchro misericordiam tuam,/ et veritatem tuam in perditione ?/"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13,
+    "MT": 13
+   },
+   "text": {
+    "WLC": "הֲ/יִוָּדַ֣ע בַּ/חֹ֣שֶׁךְ פִּלְאֶ֑/ךָ וְ֝/צִדְקָתְ/ךָ֗ בְּ/אֶ֣רֶץ נְשִׁיָּֽה׃",
+    "SYN": "Север и юг Ты сотворил; Фавор и Ермон о имени Твоем радуются.",
+    "NEO": "Tes prodiges sont-ils connus dans la région des ténèbres et ta justice dans la terre de l’oubli ?",
+    "NAB": "Are your marvels declared in the darkness, your righteous deeds in the land of oblivion?",
+    "VAT_ES": "&iquest;Se anuncian tus maravillas en las tinieblas,",
+    "CEI": "Nelle tenebre si conoscono forse i tuoi prodigi, la tua giustizia nel paese dell'oblio?",
+    "VUL": "Numquid cognoscentur in tenebris mirabilia tua ?/ et justitia tua in terra oblivionis ?/"
+   }
+  },
+  "14": {
+   "seq": 14,
+   "v_in": {
+    "VUL": 14,
+    "MT": 14
+   },
+   "text": {
+    "WLC": "וַ/אֲנִ֤י אֵלֶ֣י/ךָ יְהוָ֣ה שִׁוַּ֑עְתִּי וּ֝/בַ/בֹּ֗קֶר תְּֽפִלָּתִ֥/י תְקַדְּמֶֽ/ךָּ׃",
+    "SYN": "Крепка мышца Твоя, сильна рука Твоя, высока десница Твоя!",
+    "NEO": "Et moi, \\+w Yahweh|strong=\"H3068\"\\+w**, je crie vers toi, ma prière va au-devant de toi dès le matin.",
+    "NAB": "But I cry out to you, LORD; in the morning my prayer comes before you.",
+    "VAT_ES": "Yo invoco tu ayuda, Señor,",
+    "CEI": "Ma io a te, Signore, grido aiuto, e al mattino giunge a te la mia preghiera.",
+    "VUL": "Et ego ad te, Domine, clamavi,/ et mane oratio mea præveniet te./"
+   }
+  },
+  "15": {
+   "seq": 15,
+   "v_in": {
+    "VUL": 15,
+    "MT": 15
+   },
+   "text": {
+    "WLC": "לָ/מָ֣ה יְ֭הוָה תִּזְנַ֣ח נַפְשִׁ֑/י תַּסְתִּ֖יר פָּנֶ֣י/ךָ מִמֶּֽ/נִּי׃",
+    "SYN": "Правосудие и правота - основание престола Твоего; милость и истина предходят пред лицем Твоим.",
+    "NEO": "Pourquoi, \\+w Yahweh|strong=\"H3068\"\\+w**, repousses-tu mon âme, me caches-tu ta face ?",
+    "NAB": "Why do you reject me, LORD? Why hide your face from me?",
+    "VAT_ES": "&iquest;Por qué me rechazas, Señor?",
+    "CEI": "Perché, Signore, mi respingi, perché mi nascondi il tuo volto?",
+    "VUL": "Ut quid, Domine, repellis orationem meam ;/ avertis faciem tuam a me ?/"
+   }
+  },
+  "16": {
+   "seq": 16,
+   "v_in": {
+    "VUL": 16,
+    "MT": 16
+   },
+   "text": {
+    "WLC": "עָ֘נִ֤י אֲנִ֣י וְ/גֹוֵ֣עַ מִ/נֹּ֑עַר נָשָׂ֖אתִי אֵמֶ֣י/ךָ אָפֽוּנָה׃",
+    "SYN": "Блажен народ, знающий трубный зов! Они ходят во свете лица Твоего, Господи,",
+    "NEO": "Je suis malheureux et moribond depuis ma jeunesse ; sous le poids de tes terreurs, je ne sais que devenir.",
+    "NAB": "I am mortally afflicted since youth; lifeless, I suffer your terrible blows.",
+    "VAT_ES": "Estoy afligido y enfermo desde niño,",
+    "CEI": "Sono infelice e morente dall'infanzia, sono sfinito, oppresso dai tuoi terrori.",
+    "VUL": "Pauper sum ego, et in laboribus a juventute mea ;/ exaltatus autem, humiliatus sum et conturbatus./"
+   }
+  },
+  "17": {
+   "seq": 17,
+   "v_in": {
+    "VUL": 17,
+    "MT": 17
+   },
+   "text": {
+    "WLC": "עָ֭לַ/י עָבְר֣וּ חֲרוֹנֶ֑י/ךָ בִּ֝עוּתֶ֗י/ךָ צִמְּתוּתֻֽ/נִי׃",
+    "SYN": "о имени Твоем радуются весь день и правдою Твоею возносятся,",
+    "NEO": "Tes fureurs passent sur moi, tes épouvantes m’accablent.",
+    "NAB": "Your wrath has swept over me; your terrors have reduced me to silence.",
+    "VAT_ES": "tus enojos pasaron sobre mí,",
+    "CEI": "Sopra di me è passata la tua ira, i tuoi spaventi mi hanno annientato,",
+    "VUL": "In me transierunt iræ tuæ,/ et terrores tui conturbaverunt me :/"
+   }
+  },
+  "18": {
+   "seq": 18,
+   "v_in": {
+    "VUL": 18,
+    "MT": 18
+   },
+   "text": {
+    "WLC": "סַבּ֣וּ/נִי כַ֭/מַּיִם כָּל הַ/יּ֑וֹם הִקִּ֖יפוּ עָלַ֣/י יָֽחַד׃",
+    "SYN": "ибо Ты украшение силы их, и благоволением Твоим возвышается рог наш.",
+    "NEO": "Comme des eaux débordées elles m’environnent tout le jour ; elles m’assiègent toutes ensemble.",
+    "NAB": "All the day they surge round like a flood; from every side they close in on me.",
+    "VAT_ES": "Me rodearon todo el día como una correntada,",
+    "CEI": "mi circondano come acqua tutto il giorno, tutti insieme mi avvolgono.",
+    "VUL": "circumdederunt me sicut aqua tota die ;/ circumdederunt me simul./"
+   }
+  },
+  "19": {
+   "seq": 19,
+   "v_in": {
+    "VUL": 19
+   },
+   "text": {
+    "VUL": "Elongasti a me amicum et proximum,/ et notos meos a miseria.]"
+   }
   }
+ }
 }

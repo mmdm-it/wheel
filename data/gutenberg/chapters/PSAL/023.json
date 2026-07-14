@@ -1,122 +1,183 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_023",
-  "book_key": "PSAL",
-  "sequence": 23,
-  "chapter_in": {
-    "MT": 23,
-    "VUL": 22,
-    "LXX": 22
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_023",
+ "book_key": "PSAL",
+ "sequence": 23,
+ "chapter_in": {
+  "VUL": 23,
+  "LXX": 23,
+  "MT": 24
+ },
+ "mt_sources": [
+  "24"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "לְ/דָוִ֗ד מִ֫זְמ֥וֹר לַֽ֭/יהוָה הָ/אָ֣רֶץ וּ/מְלוֹאָ֑/הּ תֵּ֝בֵ֗ל וְ/יֹ֣שְׁבֵי בָֽ/הּ׃",
+    "SYN": "К Тебе, Господи, возношу душу мою.",
+    "NEO": "Psaume de David.",
+    "NAB": "A psalm of David. The earth is the LORD'S and all it holds, the world and those who live there.",
+    "CEI": "Di Davide. Salmo. Del Signore è la terra e quanto contiene, l'universo e i suoi abitanti.",
+    "LXX": "Ψαλμὸς τῷ Δαυείδ· τῆς μιᾶς σαββάτων. Τοῦ κυρίου ἡ γῆ καὶ τὸ πλήρωμα αὐτῆς, ἡ οἰκουμένη καὶ πάντες οἱ κατοικοῦντες ἐν αὐτῇ.",
+    "VUL": "Prima sabbati. Psalmus David. [Domini est terra, et plenitudo ejus ;/ orbis terrarum, et universi qui habitant in eo./"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "מִזְמ֥וֹר לְ/דָוִ֑ד יְהוָ֥ה רֹ֝עִ֗/י לֹ֣א אֶחְסָֽר׃",
-        "LXX": "Ψαλμὸς τῷ Δαυείδ· τῆς μιᾶς σαββάτων. Τοῦ κυρίου ἡ γῆ καὶ τὸ πλήρωμα αὐτῆς, ἡ οἰκουμένη καὶ πάντες οἱ κατοικοῦντες ἐν αὐτῇ.",
-        "VUL": "Prima sabbati. Psalmus David. [Domini est terra, et plenitudo ejus ;/ orbis terrarum, et universi qui habitant in eo./",
-        "SYN": "Господня земля и что наполняет ее, вселенная и все живущее в ней,",
-        "NEO": "Psaume de David.",
-        "NAB": "A psalm of David. The LORD is my shepherd; there is nothing I lack.",
-        "CEI": "Salmo. Di Davide. Il Signore è il mio pastore: non manco di nulla;"
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "בִּ/נְא֣וֹת דֶּ֭שֶׁא יַרְבִּיצֵ֑/נִי עַל מֵ֖י מְנֻח֣וֹת יְנַהֲלֵֽ/נִי׃",
-        "LXX": "αὐτὸς ἐπὶ θαλασσῶν ἐθεμελίωσεν αὐτήν, καὶ ἐπὶ ποταμῶν ἡτοίμασεν αὐτήν.",
-        "VUL": "Quia ipse super maria fundavit eum,/ et super flumina præparavit eum./",
-        "SYN": "ибо Он основал ее на морях и на реках утвердил ее.",
-        "NEO": "Il me fait reposer dans de verts pâturages, il me mène près des eaux rafraîchissantes ;",
-        "NAB": "In green pastures you let me graze; to safe waters you lead me;",
-        "VAT_ES": "El me hace descansar en verdes praderas,",
-        "CEI": "su pascoli erbosi mi fa riposare ad acque tranquille mi conduce."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "נַפְשִׁ֥/י יְשׁוֹבֵ֑ב יַֽנְחֵ֥/נִי בְ/מַעְגְּלֵי צֶ֝֗דֶק לְמַ֣עַן שְׁמֽ/וֹ׃",
-        "LXX": "τίς ἀναβήσεται εἰς τὸ ὄρος τοῦ κυρίου, καὶ τίς στήσεται ἐν τόπῳ ἁγίῳ αὐτοῦ;",
-        "VUL": "Quis ascendet in montem Domini ?/ aut quis stabit in loco sancto ejus ?/",
-        "SYN": "Кто взойдет на гору Господню, или кто станет на святом месте Его?",
-        "NEO": "il restaure mon âme.",
-        "NAB": "you restore my strength. You guide me along the right path for the sake of your name.",
-        "VAT_ES": "y repara mis fuerzas;",
-        "CEI": "Mi rinfranca, mi guida per il giusto cammino, per amore del suo nome."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "גַּ֤ם כִּֽי אֵלֵ֨ךְ בְּ/גֵ֪יא צַלְמָ֡וֶת לֹא אִ֘ירָ֤א רָ֗ע כִּי אַתָּ֥ה עִמָּדִ֑/י שִׁבְטְ/ךָ֥ וּ֝/מִשְׁעַנְתֶּ֗/ךָ הֵ֣מָּה יְנַֽחֲמֻֽ/נִי׃",
-        "LXX": "ἀθῷος χερσὶν καὶ καθαρὸς τῇ καρδίᾳ, ὃς οὐκ ἔλαβεν ἐπὶ ματαίῳ τὴν ψυχὴν αὐτοῦ, καὶ οὐκ ὤμοσεν ἐπὶ δόλῳ τῷ πλησίον αὐτοῦ.",
-        "VUL": "Innocens manibus et mundo corde,/ qui non accepit in vano animam suam,/ nec juravit in dolo proximo suo :/",
-        "SYN": "Тот, у которого руки неповинны и сердце чисто, кто не клялся душею своею напрасно и не божился ложно [ближнему своему], -",
-        "NEO": "Même quand je marche dans une vallée d’ombre mortelle, je ne crains aucun mal, car tu es avec moi : ta houlette et ton bâton me rassurent.",
-        "NAB": "Even when I walk through a dark valley, I fear no harm for you are at my side; your rod and staff give me courage.",
-        "VAT_ES": "Aunque cruce por oscuras quebradas,",
-        "CEI": "Se dovessi camminare in una valle oscura, non temerei alcun male, perché tu sei con me. Il tuo bastone e il tuo vincastro mi danno sicurezza."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "תַּעֲרֹ֬ךְ לְ/פָנַ֨/י שֻׁלְחָ֗ן נֶ֥גֶד צֹרְרָ֑/י דִּשַּׁ֖נְתָּ בַ/שֶּׁ֥מֶן רֹ֝אשִׁ֗/י כּוֹסִ֥/י רְוָיָֽה׃",
-        "LXX": "οὗτος λήμψεται εὐλογίαν παρὰ Κυρίου, καὶ ἐλεημοσύνην παρὰ θεοῦ σωτῆρος αὐτοῦ.",
-        "VUL": "hic accipiet benedictionem a Domino,/ et misericordiam a Deo salutari suo./",
-        "SYN": "_тот_ получит благословение от Господа и милость от Бога, Спасителя своего.",
-        "NEO": "Tu dresses devant moi une table en face de mes ennemis ; tu répands l’huile sur ma tête ; ma coupe est débordante.",
-        "NAB": "You set a table before me as my enemies watch; You anoint my head with oil; my cup overflows.",
-        "VAT_ES": "Tú preparas ante mí una mesa,",
-        "CEI": "Davanti a me tu prepari una mensa sotto gli occhi dei miei nemici; cospargi di olio il mio capo. Il mio calice trabocca."
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "אַ֤ךְ ט֤וֹב וָ/חֶ֣סֶד יִ֭רְדְּפוּ/נִי כָּל יְמֵ֣י חַיָּ֑/י וְ/שַׁבְתִּ֥י בְּ/בֵית יְ֝הוָ֗ה לְ/אֹ֣רֶךְ יָמִֽים׃",
-        "LXX": "αὕτη ἡ γενεὰ ζητούντων αὐτόν, ζητούντων τὸ πρόσωπον τοῦ θεοῦ Ἰακώβ. διάψαλμα.",
-        "VUL": "Hæc est generatio quærentium eum,/ quærentium faciem Dei Jacob./",
-        "SYN": "Таков род ищущих Его, ищущих лица Твоего, Боже Иакова!",
-        "NEO": "Oui, le bonheur et la grâce m’accompagneront, tous les jours de ma vie, et j’habiterai dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, pour de longs jours.",
-        "NAB": "Only goodness and love will pursue me all the days of my life; I will dwell in the house of the LORD for years to come.",
-        "VAT_ES": "Tu bondad y tu gracia me acompañan",
-        "CEI": "Felicità e grazia mi saranno compagne tutti i giorni della mia vita, e abiterò nella casa del Signore per lunghissimi anni."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "כִּי ה֭וּא עַל יַמִּ֣ים יְסָדָ֑/הּ וְ/עַל נְ֝הָר֗וֹת יְכוֹנְנֶֽ/הָ׃",
+    "SYN": "Боже мой! на Тебя уповаю, да не постыжусь [вовек], да не восторжествуют надо мною враги мои,",
+    "NEO": "Car c’est lui qui l’a fondée sur les mers, qui l’a affermie sur les fleuves.",
+    "NAB": "For God founded it on the seas, established it over the rivers.",
+    "VAT_ES": "porque él la fundó sobre los mares,",
+    "CEI": "È lui che l'ha fondata sui mari, e sui fiumi l'ha stabilita.",
+    "LXX": "αὐτὸς ἐπὶ θαλασσῶν ἐθεμελίωσεν αὐτήν, καὶ ἐπὶ ποταμῶν ἡτοίμασεν αὐτήν.",
+    "VUL": "Quia ipse super maria fundavit eum,/ et super flumina præparavit eum./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "מִֽי יַעֲלֶ֥ה בְ/הַר יְהוָ֑ה וּ/מִי יָ֝קוּם בִּ/מְק֥וֹם קָדְשֽׁ/וֹ׃",
+    "SYN": "да не постыдятся и все надеющиеся на Тебя: да постыдятся беззаконнующие втуне.",
+    "NEO": "Qui montera à la montagne de \\+w Yahweh|strong=\"H3068\"\\+w** ? qui se tiendra dans son lieu saint ? —",
+    "NAB": "Who may go up the mountain of the LORD? Who can stand in his holy place?",
+    "VAT_ES": "&iquest;Quién podrá subir a la Montaña del Señor",
+    "CEI": "Chi salirà il monte del Signore, chi starà nel suo luogo santo?",
+    "LXX": "τίς ἀναβήσεται εἰς τὸ ὄρος τοῦ κυρίου, καὶ τίς στήσεται ἐν τόπῳ ἁγίῳ αὐτοῦ;",
+    "VUL": "Quis ascendet in montem Domini ?/ aut quis stabit in loco sancto ejus ?/"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "נְקִ֥י כַפַּ֗יִם וּֽ/בַר לֵ֫בָ֥ב אֲשֶׁ֤ר לֹא נָשָׂ֣א לַ/שָּׁ֣וְא נַפְשִׁ֑/י וְ/לֹ֖א נִשְׁבַּ֣ע לְ/מִרְמָֽה׃",
+    "SYN": "Укажи мне, Господи, пути Твои и научи меня стезям Твоим.",
+    "NEO": "Celui qui a les mains innocentes et le cœur pur ; celui qui ne livre pas son âme au mensonge, et qui ne jure pas pour tromper.",
+    "NAB": "\"The clean of hand and pure of heart, who are not devoted to idols, who have not sworn falsely.",
+    "VAT_ES": "El que tiene las manos limpias",
+    "CEI": "Chi ha mani innocenti e cuore puro, chi non pronunzia menzogna, chi non giura a danno del suo prossimo.",
+    "LXX": "ἀθῷος χερσὶν καὶ καθαρὸς τῇ καρδίᾳ, ὃς οὐκ ἔλαβεν ἐπὶ ματαίῳ τὴν ψυχὴν αὐτοῦ, καὶ οὐκ ὤμοσεν ἐπὶ δόλῳ τῷ πλησίον αὐτοῦ.",
+    "VUL": "Innocens manibus et mundo corde,/ qui non accepit in vano animam suam,/ nec juravit in dolo proximo suo :/"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "יִשָּׂ֣א בְ֭רָכָה מֵ/אֵ֣ת יְהוָ֑ה וּ֝/צְדָקָ֗ה מֵ/אֱלֹהֵ֥י יִשְׁעֽ/וֹ׃",
+    "SYN": "Направь меня на истину Твою и научи меня, ибо Ты Бог спасения моего; на Тебя надеюсь всякий день.",
+    "NEO": "Il obtiendra la bénédiction de \\+w Yahweh|strong=\"H3068\"\\+w**, la justice du Dieu de son salut.",
+    "NAB": "They will receive blessings from the LORD, and justice from their saving God.",
+    "VAT_ES": "él recibirá la bendición del Señor,",
+    "CEI": "Otterrà benedizione dal Signore, giustizia da Dio sua salvezza.",
+    "LXX": "οὗτος λήμψεται εὐλογίαν παρὰ Κυρίου, καὶ ἐλεημοσύνην παρὰ θεοῦ σωτῆρος αὐτοῦ.",
+    "VUL": "hic accipiet benedictionem a Domino,/ et misericordiam a Deo salutari suo./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "זֶ֭ה דּ֣וֹר דרש/ו דֹּרְשָׁ֑י/ו מְבַקְשֵׁ֨י פָנֶ֖י/ךָ יַעֲקֹ֣ב סֶֽלָה׃",
+    "SYN": "Вспомни щедроты Твои, Господи, и милости Твои, ибо они от века.",
+    "NEO": "Telle est la race de ceux qui le cherchent, de ceux qui cherchent la face du Dieu de Jacob. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "Such are the people that love the LORD, that seek the face of the God of Jacob.\" Selah",
+    "VAT_ES": "Así son los que buscan al Señor,",
+    "CEI": "Ecco la generazione che lo cerca, che cerca il tuo volto, Dio di Giacobbe.",
+    "LXX": "αὕτη ἡ γενεὰ ζητούντων αὐτόν, ζητούντων τὸ πρόσωπον τοῦ θεοῦ Ἰακώβ. διάψαλμα.",
+    "VUL": "Hæc est generatio quærentium eum,/ quærentium faciem Dei Jacob./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "שְׂא֤וּ שְׁעָרִ֨ים רָֽאשֵׁי/כֶ֗ם וְֽ֭/הִנָּשְׂאוּ פִּתְחֵ֣י עוֹלָ֑ם וְ֝/יָב֗וֹא מֶ֣לֶךְ הַ/כָּבֽוֹד׃",
+    "SYN": "Грехов юности моей и преступлений моих не вспоминай; по милости Твоей вспомни меня Ты, ради благости Твоей, Господи!",
+    "NEO": "Portes, élevez vos linteaux ; élevez-vous, portes antiques : que le Roi de gloire fasse son entrée ! —",
+    "NAB": "Lift up your heads, O gates; rise up, you ancient portals, that the king of glory may enter.",
+    "VAT_ES": "&iexcl;Puertas, levanten sus dinteles,",
+    "CEI": "Sollevate, porte, i vostri frontali, alzatevi, porte antiche, ed entri il re della gloria.",
+    "VUL": "Attollite portas, principes, vestras,/ et elevamini, portæ æternales,/ et introibit rex gloriæ./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "מִ֥י זֶה֮ מֶ֤לֶךְ הַ/כָּ֫ב֥וֹד יְ֭הוָה עִזּ֣וּז וְ/גִבּ֑וֹר יְ֝הוָ֗ה גִּבּ֥וֹר מִלְחָמָֽה׃",
+    "SYN": "Благ и праведен Господь, посему наставляет грешников на путь,",
+    "NEO": "Quel est ce Roi de gloire ? — \\+w Yahweh|strong=\"H3068\"\\+w** fort et puissant, \\+w Yahweh|strong=\"H3068\"\\+w** puissant dans les combats.",
+    "NAB": "Who is this king of glory? The LORD, a mighty warrior, the LORD, mighty in battle.",
+    "VAT_ES": "&iexcl;Y quién es ese Rey de la gloria?",
+    "CEI": "Chi è questo re della gloria? Il Signore forte e potente, il Signore potente in battaglia.",
+    "VUL": "Quis est iste rex gloriæ ?/ Dominus fortis et potens,/ Dominus potens in prælio./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "שְׂא֤וּ שְׁעָרִ֨ים רָֽאשֵׁי/כֶ֗ם וּ֭/שְׂאוּ פִּתְחֵ֣י עוֹלָ֑ם וְ֝/יָבֹא מֶ֣לֶךְ הַ/כָּבֽוֹד׃",
+    "SYN": "направляет кротких к правде, и научает кротких путям Своим.",
+    "NEO": "Portes, élevez vos linteaux ; élevez-vous, portes antiques : que le Roi de gloire fasse son entrée ! —",
+    "NAB": "Lift up your heads, O gates; rise up, you ancient portals, that the king of glory may enter.",
+    "VAT_ES": "&iexcl;Puertas, levanten sus dinteles,",
+    "CEI": "Sollevate, porte, i vostri frontali, alzatevi, porte antiche, ed entri il re della gloria.",
+    "VUL": "Attollite portas, principes, vestras,/ et elevamini, portæ æternales,/ et introibit rex gloriæ./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "מִ֤י ה֣וּא זֶה֮ מֶ֤לֶךְ הַ/כָּ֫ב֥וֹד יְהוָ֥ה צְבָא֑וֹת ה֤וּא מֶ֖לֶךְ הַ/כָּב֣וֹד סֶֽלָה׃",
+    "SYN": "Все пути Господни - милость и истина к хранящим завет Его и откровения Его.",
+    "NEO": "Quel est ce Roi de gloire ? — \\+w Yahweh|strong=\"H3068\"\\+w** des armées, voilà le Roi de gloire ! — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "Who is this king of glory? The LORD of hosts is the king of glory. Selah",
+    "VAT_ES": "&iquest;Y quién es ese Rey de la gloria?",
+    "CEI": "Chi è questo re della gloria? Il Signore degli eserciti è il re della gloria.",
+    "VUL": "Quis est iste rex gloriæ ?/ Dominus virtutum ipse est rex gloriæ.]"
+   }
   }
+ }
 }
