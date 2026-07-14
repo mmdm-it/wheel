@@ -1,0 +1,145 @@
+{
+  "_dossier": "003a Aifo — the IVECO aifo era of the Fiat marine lineage (rulings: buckets 3+8 added; nameplate rule; year_founded 1975 division founding, corrected from 1955; year_dissolved 2003 = renaming to Iveco Motors).",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "Aifo",
+  "node": {
+    "year_founded": 1975,
+    "year_dissolved": 2003,
+    "sort_number": 2,
+    "cylinders": {
+      "3": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "8000": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "aifo:8031-m06",
+                "engine_model": "8031 M06",
+                "year_introduced": 1985,
+                "year_discontinued": 2003,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Three-cylinder 2.9L marine diesel, 57 hp at 2500 rpm. Smallest of the 8000 marine series; Fiat truck-block ancestry.",
+                  "description": "Il piccolo della serie 8000: tre cilindri, 2,9 litri, 57 cavalli tranquilli a 2500 giri. Derivato dalla meccanica stradale Fiat e marinizzato da AIFO, l'8031 M06 spinse pescherecci minori e lance da lavoro con la proverbiale parsimonia torinese."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "8000": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "aifo:8041-m08",
+                "engine_model": "8041 M08",
+                "year_introduced": 1984,
+                "year_discontinued": 2003,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Four-cylinder 3.9L marine diesel, ~85 hp class (c.). Naturally-aspirated workboat staple.",
+                  "description": "Il quattro cilindri aspirato della famiglia: 3,9 litri di derivazione stradale, sugli 85 cavalli. Un motore da lavoro senza fronzoli, comune su pescherecci e motobarche del Mediterraneo degli anni '80 e '90."
+                }
+              },
+              {
+                "id": "aifo:8041-m09",
+                "engine_model": "8041 M09",
+                "year_introduced": 1986,
+                "year_discontinued": 2003,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Four-cylinder 3.9L marine diesel, 95 hp at 3000 rpm.",
+                  "description": "Versione più brillante del quattro cilindri, 95 cavalli a 3000 giri. Con l'8041 M09 la serie 8000 copriva la fascia media della pesca costiera e del diporto dislocante — robustezza Fiat, cuore marino AIFO."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "8000": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "aifo:8061-m12",
+                "engine_model": "8061 M12",
+                "year_introduced": 1985,
+                "year_discontinued": 2003,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Six-cylinder 5.9L marine diesel, ~125 hp (c.).",
+                  "description": "Il sei cilindri di volume della serie: 5,9 litri derivati dal celebre blocco stradale, circa 125 cavalli. L'8061 in versione M12 fu una presenza fissa nelle sale macchine della pesca italiana."
+                }
+              },
+              {
+                "id": "aifo:8061-m14",
+                "engine_model": "8061 M14",
+                "year_introduced": 1987,
+                "year_discontinued": 2003,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Six-cylinder 5.9L marine diesel, 145 hp at 3000 rpm; the definitive mid-range Aifo.",
+                  "description": "La versione definitiva del sei cilindri medio: 145 cavalli a 3000 giri. Motore d'ordinanza per motopescherecci, pilotine e mezzi portuali, l'8061 M14 è forse il volto più riconoscibile dell'era 'IVECO aifo'."
+                }
+              },
+              {
+                "id": "aifo:8210-srm36",
+                "engine_model": "8210 SRM 36",
+                "year_introduced": 1988,
+                "year_discontinued": 2003,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Big six, 13.8L, 360 hp at 1800 rpm; heavy commercial marine propulsion.",
+                  "description": "Il grande sei cilindri: quasi quattordici litri e 360 cavalli a soli 1800 giri. L'8210 SRM 36 equipaggiò motopescherecci d'altura, rimorchiatori minori e traghetti locali — la taglia 'seria' della marina AIFO."
+                }
+              },
+              {
+                "id": "aifo:8361-srm45",
+                "engine_model": "8361 SRM 45",
+                "year_introduced": 1990,
+                "year_discontinued": 2003,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Six-cylinder 8.1L class, ~450 hp (c.); turbocharged commercial six.",
+                  "description": "Sei cilindri sovralimentato da circa 8 litri, attorno ai 450 cavalli. Colmava il divario tra l'8061 e il grande 8210, offrendo potenza moderna in ingombri contenuti."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "8": {
+        "sort_number": 4,
+        "models": [],
+        "families": {
+          "8000": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "aifo:8281-srm44",
+                "engine_model": "8281 SRM 44",
+                "year_introduced": 1989,
+                "year_discontinued": 2003,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "V8 17.2L marine diesel, ~440 hp; flagship of the 8000 marine series.",
+                  "description": "L'ammiraglia: un V8 di oltre 17 litri, circa 440 cavalli, destinato a pescherecci d'altura e imbarcazioni commerciali impegnative. Con l'8281 la serie 8000 toccò il proprio vertice di potenza — otto cilindri di Torino in mare aperto."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

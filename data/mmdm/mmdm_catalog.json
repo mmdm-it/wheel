@@ -206,6 +206,58 @@
                 "countries": {
                     "Italia": {
                         "manufacturers": {
+                            "Fiat": {
+                                "year_founded": 1899,
+                                "year_dissolved": null,
+                                "sort_number": 24,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": [
+                                            {
+                                                "id": "fiat:615-marino",
+                                                "engine_model": "615 Marino",
+                                                "year_introduced": 1955,
+                                                "year_discontinued": 1965,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Light marine diesel derived from the 615 truck/tractor block, c. 1955. Sparse documentation — period marinizations survive mainly in yard records and enthusiast memory. Wow-doctrine entry.",
+                                                    "description": "Negli anni '50 il piccolo diesel del camioncino 615 conobbe anche il mare: marinizzazioni di cantiere, spesso artigianali, per barche da lavoro e primi cabinati economici. Ne sopravvivono più ricordi che documenti — ma in un'enciclopedia del motore marino italiano, il 615 merita il suo posto tra i pionieri del dopoguerra."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "id": "fiat:a12bis-marino",
+                                                "engine_model": "A.12 bis Marino",
+                                                "year_introduced": 1917,
+                                                "year_discontinued": 1925,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Marinized WWI aviation six, ~300 hp, ~21.7L. Powered fast attack craft of the MAS era — the oldest Italian entry in this catalog.",
+                                                    "description": "Un motore d'aviazione sceso in mare in tempo di guerra: il sei cilindri A.12 bis, oltre ventun litri e circa 300 cavalli, spinse i mezzi veloci dell'epoca dei MAS — quando l'Italia inventava la guerra navale di velocità. È la voce più antica di questo catalogo per l'Italia: rombo di aviazione, scia di siluro, e il nome Fiat già dappertutto."
+                                                }
+                                            },
+                                            {
+                                                "id": "fiat:8061-marino-prima-serie",
+                                                "engine_model": "8061 Marino (prima serie)",
+                                                "year_introduced": 1972,
+                                                "year_discontinued": 1975,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "Truck-derived 5.9L marine six sold under the plain Fiat badge before AIFO's 1975 founding. Direct ancestor of the Aifo 8061 M-series (see Aifo → 6 CIL → 8000).",
+                                                    "description": "Prima che nascesse AIFO, il sei cilindri 8061 già navigava con il solo marchio Fiat sulla punterie: 5,9 litri di derivazione stradale, marinizzati per la pesca e il lavoro. È l'anello di congiunzione della dinastia — lo stesso blocco che, dal 1975, diventerà l'Aifo 8061 M12 e M14 (vedi Aifo, 6 cilindri, serie 8000)."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
+                                    }
+                                }
+                            },
                             "VM Motori": {
                                 "year_founded": 1947,
                                 "year_dissolved": null,
@@ -431,120 +483,1120 @@
                                 "sort_number": 39
                             },
                             "Lombardini": {
-                                "year_founded": 1922,
+                                "year_founded": 1933,
                                 "year_dissolved": null,
+                                "sort_number": 56,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": [
-                                            {
-                                                "engine_model": "LDW 702",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "LA": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:la300",
+                                                        "engine_model": "LA 300",
+                                                        "year_introduced": 1957,
+                                                        "year_discontinued": 1968,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "First-generation air-cooled single from the 1957 LA line — Lombardini's founding diesel series. Sparse surviving record; entry included for historical completeness.",
+                                                            "description": "Con la serie LA del 1957 Lombardini entrò nell'era del monocilindrico diesel raffreddato ad aria. Dell'LA 300 sopravvivono più memorie che documenti: piccolo, essenziale, instancabile sui motocoltivatori del dopoguerra. Lo includiamo qui come capostipite — testimone di un'epoca in cui ogni officina emiliana sognava il proprio motore."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:la490",
+                                                        "engine_model": "LA 490",
+                                                        "year_introduced": 1960,
+                                                        "year_discontinued": 1970,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Larger LA-series single, ~490cc class, c. 1960. Thin record; era-informed entry.",
+                                                            "description": "Il maggiore della prima serie: circa mezzo litro di cilindrata per il lavoro pesante nei campi. Anche dell'LA 490 il registro storico è avaro — ma i vecchi meccanici della Bassa lo ricordano ancora, e tanto basta perché figuri in questa enciclopedia."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "LDW 1003",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
+                                            "LDA": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:lda520",
+                                                        "engine_model": "LDA 520",
+                                                        "year_introduced": 1963,
+                                                        "year_discontinued": 1978,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single of the 1960s LDA generation, ~520cc, ~12 hp class; a mainstay of Italian walking tractors.",
+                                                            "description": "La generazione LDA portò i monocilindrici Lombardini alla maturità. Il 520, con circa mezzo litro e una dozzina di cavalli, motorizzò una quota memorabile dei motocoltivatori italiani degli anni '60 e '70 — e più d'uno finì marinizzato su barchini di valle."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:lda820",
+                                                        "engine_model": "LDA 820",
+                                                        "year_introduced": 1966,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Big LDA single, ~820cc; among the largest air-cooled singles of its era in Italy.",
+                                                            "description": "Un gigante tra i monocilindrici: l'LDA 820 sfiorava gli 0,8 litri di cilindrata, con una coppia da piccolo trattore. Raffreddato ad aria, avviabile a manovella da chi aveva braccia buone, resta uno dei singoli più imponenti mai costruiti a Reggio Emilia."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:lda91",
+                                                        "engine_model": "LDA 91",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1982,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Compact LDA single, ~9 hp class, late 1960s.",
+                                                            "description": "Il compatto della famiglia: circa 9 cavalli per motozappe, motopompe e piccoli generatori. L'LDA 91 chiuse il ciclo della serie prima dell'avvento delle sigle LD moderne."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "3LD": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:3ld450",
+                                                        "engine_model": "3LD 450",
+                                                        "year_introduced": 1972,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single, ~450cc, ~9-10 hp. With the 6LD, 'sold for decades to the five continents' — still in production under Kohler.",
+                                                            "description": "Uno dei monocilindrici più longevi della storia industriale italiana: il 3LD 450, nato nei primi anni '70, è ancora oggi a catalogo. Venduto — letteralmente — nei cinque continenti, ha zappato, pompato e generato corrente ovunque ci fosse gasolio e polvere."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:3ld510",
+                                                        "engine_model": "3LD 510",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Larger 3LD single, ~510cc, ~12 hp; the 3LD line's big brother, still current.",
+                                                            "description": "Fratello maggiore del 450, il 3LD 510 aggiunge cilindrata e coppia alla stessa architettura immortale. Mezzo secolo di produzione continua: pochi motori al mondo possono dire altrettanto."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "6LD": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:6ld360",
+                                                        "engine_model": "6LD 360",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 2005,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Compact air-cooled single, ~360cc, ~8 hp; the 6LD line's entry point.",
+                                                            "description": "Ingresso della fortunata serie 6LD: circa 360cc e 8 cavalli di semplicità assoluta. Insieme ai fratelli maggiori formò per decenni la spina dorsale delle motorizzazioni leggere Lombardini."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:6ld400",
+                                                        "engine_model": "6LD 400",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 2008,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Mid-line 6LD single, ~400cc, ~9-10 hp.",
+                                                            "description": "Il gradino di mezzo della famiglia, circa 400cc: onnipresente su motocoltivatori e motopompe italiane degli anni '80 e '90, con la consueta fama di indistruttibilità."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:6ld435",
+                                                        "engine_model": "6LD 435",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 2010,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Top 6LD single, ~435cc, ~11 hp.",
+                                                            "description": "Vertice della serie 6LD con circa 11 cavalli. Un monocilindrico maturo e raffinato, prodotto fin oltre l'ingresso nel gruppo Kohler."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "15LD": {
+                                                "sort_number": 5,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:15ld225",
+                                                        "engine_model": "15LD 225",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Smallest of the current 15LD singles: 224cc, ~3.7 hp.",
+                                                            "description": "Il più piccolo diesel della casa: 224cc e meno di 4 cavalli, per applicazioni dove contano peso e consumi. La famiglia 15LD è l'ultima generazione di monocilindrici Lombardini, tuttora a catalogo."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:15ld350",
+                                                        "engine_model": "15LD 350",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Current 15LD single, 349cc, ~7.5 hp.",
+                                                            "description": "Il 350 della serie moderna: 349cc, circa 7,5 cavalli, iniezione diretta. Il monocilindrico industriale portato agli standard del nuovo secolo."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:15ld440",
+                                                        "engine_model": "15LD 440",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Current 15LD single, 442cc, ~10 hp.",
+                                                            "description": "Con 442cc e una decina di cavalli, il 440 copre il cuore del mercato dei monocilindrici. Prodotto sotto Kohler, mantiene il nome e la scuola di Reggio Emilia."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:15ld500",
+                                                        "engine_model": "15LD 500",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Largest 15LD single, 505cc, ~12 hp.",
+                                                            "description": "Chiusura verso l'alto della gamma attuale: 505cc, circa 12 cavalli. L'ultimo erede diretto di settant'anni di monocilindrici emiliani."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": [
-                                            {
-                                                "engine_model": "LDW 1204",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "9LD": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:9ld561-2",
+                                                        "engine_model": "9LD 561-2",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": 2000,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled twin, ~1.1L, ~20 hp class.",
+                                                            "description": "Bicilindrico ad aria della generazione LD, il 9LD 561-2 offriva una ventina di cavalli per macchine operatrici e gruppi elettrogeni. Robustezza emiliana in formato doppio."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:9ld625-2",
+                                                        "engine_model": "9LD 625-2",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 2004,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Larger 9LD twin, ~1.25L, ~22 hp.",
+                                                            "description": "Evoluzione maggiorata del bicilindrico ad aria, circa 22 cavalli. Diffuso su miniescavatori, motoagricole e saldatrici semoventi in tutta Europa."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "LDW 1404",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
+                                            "25LD": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:25ld330-2",
+                                                        "engine_model": "25LD 330-2",
+                                                        "year_introduced": 1998,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Compact current-generation air-cooled twin, 654cc, ~13 hp.",
+                                                            "description": "Il piccolo bicilindrico moderno della casa: 654cc raffreddati ad aria, circa 13 cavalli, ancora oggi a catalogo Kohler. Compattezza e regolarità per generatori e macchine comunali."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:25ld425-2",
+                                                        "engine_model": "25LD 425-2",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Larger 25LD twin, 851cc, ~17 hp; still current.",
+                                                            "description": "Con 851cc e 17 cavalli, il 425-2 è il bicilindrico ad aria definitivo di Lombardini — tuttora in produzione, mezzo secolo di scuola dell'aria condensato in un motore attuale."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "LDW": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:ldw502",
+                                                        "engine_model": "LDW 502",
+                                                        "year_introduced": 1992,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Water-cooled FOCS twin, 505cc, ~13 hp; belt-driven OHC, aluminium head. Base of the LDW line; also automotive (microcars).",
+                                                            "description": "Con la famiglia FOCS Lombardini passò all'acqua: il LDW 502, mezzo litro bicilindrico con distribuzione a cinghia e testa in alluminio, divenne ubiquo — dalle minicar ai gruppi elettrogeni. È la base della dinastia LDW che domina ancora oggi la gamma."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:ldw602",
+                                                        "engine_model": "LDW 602",
+                                                        "year_introduced": 1994,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "FOCS twin, 611cc, ~15 hp.",
+                                                            "description": "Fratello maggiore del 502, il 602 porta la cilindrata a 611cc mantenendo l'architettura FOCS: compatto, silenzioso per la categoria, e adottato in innumerevoli applicazioni industriali."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:ldw702",
+                                                        "engine_model": "LDW 702",
+                                                        "year_introduced": 1995,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "FOCS twin, 686cc, ~17-20 hp. (Previously misfiled under 1-cyl in this catalog — LDW designations end in their cylinder count.)",
+                                                            "description": "Il maggiore dei bicilindrici FOCS: 686cc e fino a una ventina di cavalli. Con la variante marina è tra i motori ausiliari più diffusi della vela mediterranea."
+                                                        }
+                                                    }
+                                                ],
+                                                "subfamilies": {
+                                                    "Marine": {
+                                                        "sort_number": 1,
+                                                        "models": [
+                                                            {
+                                                                "id": "lombardini:ldw502m",
+                                                                "engine_model": "LDW 502 M",
+                                                                "year_introduced": 1996,
+                                                                "year_discontinued": null,
+                                                                "sort_number": 1,
+                                                                "data": {
+                                                                    "key_notes": "Lombardini Marine twin: 505cc, ~12-13 hp, aluminium block, heat-exchanger fresh-water cooling, zinc anodes. The pocket sailboat auxiliary.",
+                                                                    "description": "L'ausiliario tascabile di Lombardini Marine: 505cc, blocco in alluminio, raffreddamento a scambiatore con anodi di zinco. Leggerissimo e compatto, il 502 M ha motorizzato una generazione di piccoli cabinati a vela e derive cabinate di mezza Europa."
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "lombardini:ldw702m",
+                                                                "engine_model": "LDW 702 M",
+                                                                "year_introduced": 1997,
+                                                                "year_discontinued": null,
+                                                                "sort_number": 2,
+                                                                "data": {
+                                                                    "key_notes": "Marine FOCS twin, 686cc, 20 hp, heat-exchanger cooling, stainless water-injected exhaust elbow.",
+                                                                    "description": "Venti cavalli marini in formato FOCS: scambiatore di calore, gomito di scarico inox a iniezione d'acqua, e la proverbiale parsimonia nei consumi. Il 702 M resta una rimotorizzazione classica per barche a vela fino a 9-10 metri."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
                                             }
-                                        ]
+                                        }
                                     },
                                     "3": {
                                         "sort_number": 3,
-                                        "models": [
-                                            {
-                                                "engine_model": "LDW 2204",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "11LD": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:11ld535-3",
+                                                        "engine_model": "11LD 535-3",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 2002,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled triple, ~1.6L, ~30 hp class.",
+                                                            "description": "Il tricilindrico ad aria della generazione LD: circa 30 cavalli per macchine da cantiere e agricole di media taglia. L'aria di Reggio Emilia spinta alla sua taglia massima prima dell'era ad acqua."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:11ld626-3",
+                                                        "engine_model": "11LD 626-3",
+                                                        "year_introduced": 1987,
+                                                        "year_discontinued": 2004,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Larger 11LD triple, ~1.9L, ~34 hp.",
+                                                            "description": "Versione maggiorata del tricilindrico ad aria, circa 34 cavalli. Con esso la scuola dell'aria raggiunse il proprio canto del cigno, mentre in fabbrica nasceva la famiglia FOCS."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "LDW": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:ldw903",
+                                                        "engine_model": "LDW 903",
+                                                        "year_introduced": 1993,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "FOCS triple, 916cc, ~22-25 hp.",
+                                                            "description": "Il tricilindrico d'ingresso della famiglia FOCS: 916cc, regolarità da motore grande in dimensioni da motore piccolo. Base diffusissima per gruppi elettrogeni e veicoli speciali."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:ldw1003",
+                                                        "engine_model": "LDW 1003",
+                                                        "year_introduced": 1994,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "FOCS triple, 1028cc, ~27-30 hp. (Previously misfiled under 1-cyl in this catalog.)",
+                                                            "description": "Un litro esatto di FOCS: il 1003 è il tuttofare della gamma media, con la versione marina che ne ha fatto un classico degli ausiliari a vela tra i 30 e i 40 piedi."
+                                                        }
+                                                    }
+                                                ],
+                                                "subfamilies": {
+                                                    "Marine": {
+                                                        "sort_number": 1,
+                                                        "models": [
+                                                            {
+                                                                "id": "lombardini:ldw1003m",
+                                                                "engine_model": "LDW 1003 M",
+                                                                "year_introduced": 1996,
+                                                                "year_discontinued": null,
+                                                                "sort_number": 1,
+                                                                "data": {
+                                                                    "key_notes": "Marine FOCS triple, 1028cc, 30 hp; heat-exchanger cooling, cast-iron block, one-piece aluminium head.",
+                                                                    "description": "Trenta cavalli marini, tre cilindri, un litro: il 1003 M è il cuore della gamma Lombardini Marine, ausiliario prediletto per barche a vela di media taglia. Scambiatore, anodi, gomito inox: tutta la grammatica del diesel marino moderno in formato compatto."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
                                             }
-                                        ]
+                                        }
                                     },
                                     "4": {
                                         "sort_number": 4,
-                                        "models": [
-                                            {
-                                                "engine_model": "LDW 2004",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "LDW": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:ldw1204",
+                                                        "engine_model": "LDW 1204",
+                                                        "year_introduced": 1995,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "FOCS four, 1222cc, ~32-35 hp. (Previously misfiled under 2-cyl in this catalog.)",
+                                                            "description": "Il quattro cilindri compatto della famiglia FOCS, 1222cc: prediletto da veicoli commerciali leggeri, spazzatrici e applicazioni dove serve regolarità assoluta in poco spazio."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:ldw1404",
+                                                        "engine_model": "LDW 1404",
+                                                        "year_introduced": 1996,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "FOCS four, 1372cc, ~35-40 hp. (Previously misfiled under 2-cyl in this catalog.)",
+                                                            "description": "Ammiraglia della serie FOCS classica: 1372cc, quattro cilindri, fino a una quarantina di cavalli. Con la variante marina chiude verso l'alto la gamma degli ausiliari Lombardini Marine."
+                                                        }
+                                                    }
+                                                ],
+                                                "subfamilies": {
+                                                    "Marine": {
+                                                        "sort_number": 1,
+                                                        "models": [
+                                                            {
+                                                                "id": "lombardini:ldw1404m",
+                                                                "engine_model": "LDW 1404 M",
+                                                                "year_introduced": 1998,
+                                                                "year_discontinued": null,
+                                                                "sort_number": 1,
+                                                                "data": {
+                                                                    "key_notes": "Marine FOCS four, 1372cc, ~40 hp; heat exchanger, zinc anodes, self-priming sea-water pump.",
+                                                                    "description": "Il maggiore degli ausiliari FOCS: quaranta cavalli marini per barche a vela fino a 12-13 metri e piccoli motoryacht dislocanti. Quattro cilindri d'acqua dolce raffreddati a scambiatore, con la firma leggera e silenziosa della famiglia."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LDW CHD": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "lombardini:ldw2004",
+                                                        "engine_model": "LDW 2004",
+                                                        "year_introduced": 1997,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "CHD-architecture four, 2068cc, ~50 hp; the big-block LDW line, distinct architecture from FOCS.",
+                                                            "description": "Con la famiglia CHD Lombardini salì di taglia: il 2004, oltre due litri e una cinquantina di cavalli, aprì alla casa il mondo delle macchine operatrici medie e dei veicoli industriali leggeri."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lombardini:ldw2204",
+                                                        "engine_model": "LDW 2204",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Largest CHD four, 2199cc, ~60-65 hp; top of the Lombardini diesel range. (Previously misfiled under 3-cyl in this catalog.)",
+                                                            "description": "Il vertice assoluto della produzione diesel Lombardini: 2,2 litri, fino a 65 cavalli. Il 2204 — anche in versione marina — rappresenta il punto più alto raggiunto dalla scuola motoristica di Reggio Emilia prima e durante l'era Kohler."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     }
-                                },
-                                "sort_number": 56
+                                }
                             },
                             "Ruggerini": {
-                                "year_founded": 1919,
+                                "year_founded": 1942,
                                 "year_dissolved": null,
+                                "sort_number": 79,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "RM": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:rm80",
+                                                        "engine_model": "RM 80",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Single-cylinder raw-water-cooled marine diesel, ~8 hp at 3000 rpm, sold with integral reverse gear. Ruggerini's entry inboard for tenders, lagoon boats and small workboats.",
+                                                            "description": "Il monocilindrico marino per eccellenza di Ruggerini: l'RM 80 erogava circa 8 cavalli a regimi tranquilli, raffreddato ad acqua di mare, con invertitore integrato. Motore semplice e riparabile ovunque, spinse per decenni lance, tender e pescherecci minori lungo le coste e le lagune italiane. Il suo battito lento e inconfondibile resta, per molti, la voce stessa della piccola nautica da lavoro."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rm90",
+                                                        "engine_model": "RM 90",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Uprated sibling of the RM 80, ~9 hp single-cylinder marine diesel with raw-water cooling and reverse gear; shared most service parts with the RM 80.",
+                                                            "description": "Evoluzione dell'RM 80, l'RM 90 portava la potenza a circa 9 cavalli mantenendo l'architettura monocilindrica raffreddata ad acqua di mare e l'invertitore integrato. Condivideva gran parte della componentistica con il fratello minore — una scelta cara ai cantieri e ai pescatori, che potevano contare su ricambi comuni e su una manutenzione elementare anche nei porti più piccoli."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "RD": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:rd180",
+                                                        "engine_model": "RD 180",
+                                                        "year_introduced": 1972,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single-cylinder diesel, ~4 hp class. Workhorse of the RD single line; industrial and agricultural base widely adapted to small marine and pump duty.",
+                                                            "description": "Capostipite dei monocilindrici della serie RD, l'RD 180 era un diesel raffreddato ad aria da circa 4 cavalli (anni '70, c. 1972). Nato per motocoltivatori e motopompe, la sua robustezza lo portò anche a bordo di piccole imbarcazioni da lavoro. Avviamento a strappo, consumi minimi, ricambi ovunque: la formula Ruggerini nella sua espressione più essenziale."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rd200",
+                                                        "engine_model": "RD 200",
+                                                        "year_introduced": 1974,
+                                                        "year_discontinued": 1996,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single, ~5 hp class; direct successor step above the RD 180 in the single-cylinder RD line.",
+                                                            "description": "Gradino intermedio della serie RD, il monocilindrico RD 200 offriva circa 5 cavalli con lo stesso raffreddamento ad aria e la stessa semplicità costruttiva della famiglia. Diffusissimo nell'agricoltura italiana degli anni '70 e '80, non era raro trovarlo marinizzato artigianalmente su barchini e piccoli natanti da laguna."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rd210",
+                                                        "engine_model": "RD 210",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single, ~6-7 hp class, Bosch injection; one of the most common Ruggerini singles of the 1980s.",
+                                                            "description": "Tra i monocilindrici Ruggerini più diffusi degli anni '80, l'RD 210 (c. 1978) erogava 6-7 cavalli con iniezione Bosch e raffreddamento ad aria. La sua fama di motore instancabile ne fece un riferimento per motocoltivatori, generatori e motopompe — e, come per tutta la serie, non mancarono gli adattamenti marini nei cantieri minori."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rd240",
+                                                        "engine_model": "RD 240",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single, ~8 hp class; larger-displacement single in the RD line.",
+                                                            "description": "Con l'RD 240 la serie dei monocilindrici salì di cilindrata, raggiungendo circa 8 cavalli. Sempre raffreddato ad aria e costruito attorno alla consueta meccanica robusta, trovò impiego dove serviva più coppia: motopompe di grossa portata, mezzi agricoli e piccole applicazioni marine da lavoro."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rd270",
+                                                        "engine_model": "RD 270",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 5,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single at the top of the single-cylinder RD range, ~10 hp class.",
+                                                            "description": "Vertice dei monocilindrici RD, l'RD 270 arrivava a una decina di cavalli mantenendo il raffreddamento ad aria e l'avviamento anche a strappo. Un monocilindrico 'grande', apprezzato per la capacità di lavorare ore e ore sotto carico costante — qualità che i marinizzatori artigianali seppero sfruttare volentieri."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rd280",
+                                                        "engine_model": "RD 280",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 6,
+                                                        "data": {
+                                                            "key_notes": "Final evolution of the big RD singles, ~11-12 hp class, late 1980s.",
+                                                            "description": "Ultima evoluzione dei grandi monocilindrici della casa (c. 1986), l'RD 280 chiuse la serie con 11-12 cavalli e raffinamenti alla distribuzione e all'iniezione. Rappresenta il canto del cigno del monocilindrico industriale italiano prima della concentrazione del settore negli anni '90."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "RY": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:ry50",
+                                                        "engine_model": "RY 50",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 2002,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Compact air-cooled single, ~5 hp; the small end of the RY light-industrial line.",
+                                                            "description": "Il più piccolo della serie RY: un monocilindrico compatto da circa 5 cavalli, raffreddato ad aria, pensato per generatori, motozappe e piccole macchine da cantiere. Leggero e parco nei consumi, portava la qualità costruttiva Ruggerini nel segmento delle micro-motorizzazioni."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:ry75",
+                                                        "engine_model": "RY 75",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 2002,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single, ~7.5 hp, light-industrial duty.",
+                                                            "description": "Fratello di mezzo della famiglia RY, il 75 offriva circa 7,5 cavalli in un pacchetto essenziale e affidabile. La serie RY costituì negli anni '80 e '90 la spina dorsale delle applicazioni leggere della casa di Reggio Emilia."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:ry103",
+                                                        "engine_model": "RY 103",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single, ~10 hp; upper end of the RY line, also seen in small marine gensets.",
+                                                            "description": "Con circa 10 cavalli, l'RY 103 rappresentava il vertice della serie leggera RY. Oltre agli impieghi industriali e agricoli, trovò posto anche in piccoli gruppi elettrogeni marini, dove la semplicità del raffreddamento ad aria era un pregio nelle sale macchine più anguste."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:ry110",
+                                                        "engine_model": "RY 110",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 2004,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled single, ~11 hp; 1990s refinement of the RY line.",
+                                                            "description": "Aggiornamento anni '90 della gamma, l'RY 110 saliva a circa 11 cavalli con migliorie a iniezione e bilanciamento. Un monocilindrico maturo, prodotto fin dentro l'era Lombardini."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:ry125",
+                                                        "engine_model": "RY 125",
+                                                        "year_introduced": 1992,
+                                                        "year_discontinued": 2005,
+                                                        "sort_number": 5,
+                                                        "data": {
+                                                            "key_notes": "Largest RY single, ~12.5 hp; produced into the Lombardini era.",
+                                                            "description": "Il maggiore della famiglia RY chiudeva la gamma a circa 12,5 cavalli. Rimase in produzione oltre l'acquisizione Lombardini del 1999, testimone della continuità del marchio Ruggerini sotto la nuova proprietà."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "RS": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:rs5.0",
+                                                        "engine_model": "RS 5.0",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Kohler-era Ruggerini-branded air-cooled single, ~5 hp. Nameplate rule: files under Ruggerini; corporate parent Lombardini/Kohler.",
+                                                            "description": "Primo gradino della gamma RS nata dopo l'ingresso nel gruppo Lombardini: un monocilindrico da circa 5 cavalli che aggiornava la tradizione Ruggerini a norme ed esigenze del nuovo secolo, conservando il marchio storico sulla fusione."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rs7.0",
+                                                        "engine_model": "RS 7.0",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Kohler-era air-cooled single, ~7 hp.",
+                                                            "description": "Versione intermedia della serie RS, circa 7 cavalli. La sigla razionalizzata — potenza dichiarata nel nome — segnala l'epoca Lombardini, ma la meccanica resta figlia della scuola di Reggio Emilia."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rs8.5",
+                                                        "engine_model": "RS 8.5",
+                                                        "year_introduced": 2002,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Top of the RS singles, ~8.5 hp; also offered in pump-set (P) trim.",
+                                                            "description": "Vertice della gamma RS con circa 8,5 cavalli, offerto anche in allestimento motopompa. Un Ruggerini dell'era moderna: emissioni contenute, avviamento elettrico, e il consueto raffreddamento ad aria della tradizione."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "RX": {
+                                                "sort_number": 5,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:rx7.5",
+                                                        "engine_model": "RX 7.5",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Kohler-era single, ~7.5 hp; RX line sits alongside RS with different base architecture.",
+                                                            "description": "La serie RX affiancò la RS nei primi anni Duemila su architettura di base differente. L'RX 7.5, da circa 7,5 cavalli, proseguiva la vocazione della casa per i monocilindrici industriali compatti a marchio Ruggerini."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rx9.0",
+                                                        "engine_model": "RX 9.0",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Kohler-era single, ~9 hp.",
+                                                            "description": "Modello centrale della gamma RX, circa 9 cavalli: destinato a generatori, motopompe e macchine operatrici, con il nome storico di Reggio Emilia ben visibile sulla targhetta."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rx10.0",
+                                                        "engine_model": "RX 10.0",
+                                                        "year_introduced": 2004,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Largest RX single, ~10 hp.",
+                                                            "description": "Chiusura verso l'alto della serie RX con circa 10 cavalli. Insieme alla gamma RS costituisce l'ultima generazione di monocilindrici a portare il nome Ruggerini."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "MM": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:mm150",
+                                                        "engine_model": "MM 150",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Twin-cylinder marine diesel, 14-15 hp at 3000 rpm, heat-exchanger cooling, integral reverse gear. The flagship small marine twin of the house.",
+                                                            "description": "Cuore della gamma marina Ruggerini, l'MM 150 era un bicilindrico da 14-15 cavalli con raffreddamento a scambiatore di calore e invertitore integrato — una vera motorizzazione entrobordo, non un adattamento. Equipaggiò generazioni di barche a vela e piccoli cabinati, dove la sua regolarità di funzionamento e la facilità di manutenzione lo resero un beniamino dei diportisti italiani."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:mm156",
+                                                        "engine_model": "MM 156",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Updated MM 150 with detail improvements; same 15 hp class marine twin.",
+                                                            "description": "Aggiornamento dell'MM 150 (c. 1988), con migliorie di dettaglio a iniezione e raffreddamento. Restava il bicilindrico marino da 15 cavalli della casa, con scambiatore di calore e invertitore, destinato al diporto e al piccolo lavoro."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:mm190",
+                                                        "engine_model": "MM 190",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Larger marine twin, ~19-20 hp, heat-exchanger cooling and reverse gear.",
+                                                            "description": "Sorella maggiore dell'MM 150, l'MM 190 offriva 19-20 cavalli per barche più impegnative: cabinati a vela di media taglia, gozzi e imbarcazioni da lavoro costiere. Stessa impostazione — bicilindrico, scambiatore, invertitore — con più coppia a disposizione."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:mm191",
+                                                        "engine_model": "MM 191",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Final evolution of the MM marine twins, 20 hp with reverse gear; still sought after as a repower unit.",
+                                                            "description": "Ultima evoluzione dei bicilindrici marini MM (c. 1990), da 20 cavalli con invertitore. Ancora oggi ricercato come rimotorizzazione per barche d'epoca e gozzi, l'MM 191 chiude la storia marina del marchio prima dell'era Lombardini."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "RD": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:rd901",
+                                                        "engine_model": "RD 901",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Air-cooled twin-cylinder diesel, ~15-18 hp class; the defining Ruggerini twin, ubiquitous in Italian agriculture.",
+                                                            "description": "Il bicilindrico Ruggerini per antonomasia: raffreddato ad aria, robusto oltre ogni ragionevolezza, l'RD 901 (c. 1975) motorizzò trattorini, motoagricole e mezzi da cantiere in tutta Italia. La sua meccanica generosa ne fece anche una base apprezzata per marinizzazioni da lavoro."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rd902",
+                                                        "engine_model": "RD 902",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Evolution of the RD 901 twin with detail refinements.",
+                                                            "description": "Evoluzione del 901 con affinamenti a iniezione e distribuzione, l'RD 902 proseguì la carriera del grande bicilindrico ad aria attraverso gli anni '80 e '90, identica la vocazione: lavorare sempre, ovunque, con qualunque gasolio."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rd920",
+                                                        "engine_model": "RD 920",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Larger-displacement RD twin, ~20 hp class.",
+                                                            "description": "Il maggiore dei bicilindrici RD classici, con circa 20 cavalli. Cilindrata accresciuta e la solita architettura ad aria: un motore da fatica, pensato per macchine operatrici e adattato senza timori anche a bordo."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:rd951",
+                                                        "engine_model": "RD 951",
+                                                        "year_introduced": 2000,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Lombardini-era RD twin (CRD/2 series documentation); nameplate rule keeps it a Ruggerini.",
+                                                            "description": "Bicilindrico dell'era Lombardini, documentato nella serie CRD/2: l'RD 951 porta la famiglia RD nel nuovo secolo, con emissioni aggiornate e il marchio Ruggerini ancora in evidenza."
+                                                        }
+                                                    }
+                                                ],
+                                                "subfamilies": {
+                                                    "RDM": {
+                                                        "sort_number": 1,
+                                                        "models": [
+                                                            {
+                                                                "id": "ruggerini:rdm901-2",
+                                                                "engine_model": "RDM 901/2",
+                                                                "year_introduced": 1983,
+                                                                "year_discontinued": 1996,
+                                                                "sort_number": 1,
+                                                                "data": {
+                                                                    "key_notes": "Factory-marinized RD twin — the 'M' is for marino. Documented in 1989 factory marine manuals; raw-water cooling, marine gearbox.",
+                                                                    "description": "La versione ufficialmente marina del grande bicilindrico: l'RDM 901/2 usciva di fabbrica con raffreddamento ad acqua, invertitore e accessoristica navale, documentato nei manuali marini della casa (1989). Per i pescatori delle coste adriatiche e tirreniche era il compromesso perfetto: la meccanica agricola che tutti sapevano riparare, vestita da motore di bordo."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "MD": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:md150",
+                                                        "engine_model": "MD 150",
+                                                        "year_introduced": 1979,
+                                                        "year_discontinued": 1997,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Twin-cylinder diesel, ~10-12 hp class; base of the MD line.",
+                                                            "description": "Ingresso della famiglia MD, bicilindrico da 10-12 cavalli. La serie MD affiancò le RD con un'impostazione più moderna, e diede origine anche ai tricilindrici che chiudono verso l'alto la gamma Ruggerini."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:md151",
+                                                        "engine_model": "MD 151",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Refined MD twin, ~12 hp class.",
+                                                            "description": "Affinamento del 150, con dettagli aggiornati e la stessa vocazione universale: macchine agricole, gruppi elettrogeni e, all'occorrenza, piccole applicazioni di bordo."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:md190",
+                                                        "engine_model": "MD 190",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Larger MD twin, ~19 hp class.",
+                                                            "description": "Il bicilindrico grande della serie MD, circa 19 cavalli, apprezzato per l'equilibrio tra peso, potenza e consumi nella fascia medio-alta della gamma."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:md191",
+                                                        "engine_model": "MD 191",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Final MD twin, ~19-20 hp.",
+                                                            "description": "Ultima espressione dei bicilindrici MD (c. 1988), circa 20 cavalli, prodotto fino alla soglia dell'acquisizione Lombardini."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
-                                    "4": {
+                                    "3": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "MD": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "ruggerini:md350",
+                                                        "engine_model": "MD 350",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Three-cylinder diesel, ~28-30 hp; top of the Ruggerini range.",
+                                                            "description": "Con la serie MD a tre cilindri Ruggerini raggiunse il vertice della propria gamma: l'MD 350 offriva 28-30 cavalli per trattrici, macchine operatrici e motorizzazioni speciali — il più 'grande' pensiero mai uscito da Reggio Emilia."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:md351",
+                                                        "engine_model": "MD 351",
+                                                        "year_introduced": 1987,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Three-cylinder ~30 hp; licensed to Agrale in Brazil as the 4240 tractor engine — the family's international career.",
+                                                            "description": "Il tricilindrico più celebre della casa, non da ultimo per la sua carriera internazionale: l'MD 351 fu prodotto su licenza in Brasile da Agrale per la trattrice 4240. Circa 30 cavalli di meccanica reggiana esportata nel mondo — la consacrazione della serie MD."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ruggerini:md358",
+                                                        "engine_model": "MD 358",
+                                                        "year_introduced": 1992,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Final three-cylinder evolution, ~32 hp, 1990s.",
+                                                            "description": "Chiusura della famiglia tricilindrica negli anni '90, l'MD 358 arrivava a circa 32 cavalli. Con esso si spegne, alla vigilia dell'era Lombardini, la spinta di Ruggerini verso le potenze maggiori."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 79
+                                }
                             },
                             "Iveco": {
                                 "year_founded": 1975,
                                 "year_dissolved": null,
+                                "sort_number": 41,
                                 "cylinders": {
                                     "4": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "NEF": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "iveco:n40-atm",
+                                                        "engine_model": "N40 ATM",
+                                                        "year_introduced": 2002,
+                                                        "year_discontinued": 2005,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "First-generation NEF marine four, 4.0L, mechanical injection; sold under Iveco Motors plates before the FPT rebrand.",
+                                                            "description": "Con la famiglia NEF la stirpe marina torinese entrò nel nuovo secolo. L'N40 ATM, quattro cilindri a iniezione meccanica, portava la targhetta 'Iveco Motors' — il breve ponte di marca tra l'era AIFO e l'era FPT."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "8": {
-                                        "sort_number": 3,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "NEF": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "iveco:n60-ent-m37",
+                                                        "engine_model": "N60 ENT M37",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": 2005,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "NEF marine six, 5.9L, ~370 hp, early electronic injection under Iveco Motors branding.",
+                                                            "description": "Il sei cilindri NEF dell'era di transizione: 5,9 litri, circa 370 cavalli, con le prime centraline elettroniche della famiglia. Venduto a marchio Iveco Motors, è il diretto antenato degli attuali N67 di FPT."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Cursor": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "iveco:c87-ent-m38",
+                                                        "engine_model": "C87 ENT M38",
+                                                        "year_introduced": 2004,
+                                                        "year_discontinued": 2005,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Cursor marine six, 8.7L, ~380 hp; the Cursor architecture's marine debut under Iveco Motors plates.",
+                                                            "description": "Debutto marino dell'architettura Cursor: 8,7 litri, circa 380 cavalli. Anche il C87 visse la breve stagione 'Iveco Motors' prima che la gamma passasse sotto le insegne FPT."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 41
+                                }
                             },
                             "FPT Industrial": {
-                                "year_founded": 2013,
+                                "year_founded": 2005,
                                 "year_dissolved": null,
+                                "sort_number": 26,
                                 "cylinders": {
                                     "4": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "fpt:s30-ent-m23",
+                                                "engine_model": "S30 ENT M23",
+                                                "year_introduced": 2007,
+                                                "year_discontinued": null,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Compact 3.0L four, 230 hp; the small end of the FPT marine range (standalone S-series).",
+                                                    "description": "Il compatto della gamma: tre litri, 230 cavalli, per gommoni cabinati e piccoli motoscafi. L'S30 dimostra la vocazione FPT a portare tecnologia da veicolo industriale nella nautica leggera."
+                                                }
+                                            }
+                                        ],
+                                        "families": {
+                                            "NEF": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fpt:n40-250",
+                                                        "engine_model": "N40 250",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "NEF marine four, 4.0L common rail, 250 hp.",
+                                                            "description": "Il quattro cilindri NEF maturo: common rail, quattro valvole per cilindro, 250 cavalli. Cuore della gamma media FPT per il diporto e il lavoro costiero."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "fpt:n45-125",
+                                                        "engine_model": "N45 125",
+                                                        "year_introduced": 2008,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "NEF marine four, 4.5L, 125 hp commercial rating.",
+                                                            "description": "Versione commerciale del quattro cilindri, tarata a 125 cavalli per la lunga durata: pilotine, barche da pesca e servizio continuativo."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "NEF": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fpt:n60-400",
+                                                        "engine_model": "N60 400",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "NEF marine six, 5.9L, 400 hp.",
+                                                            "description": "Il sei cilindri NEF nella taratura da 400 cavalli: erede diretto dell'N60 dell'era Iveco Motors, ora con elettronica di seconda generazione."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "fpt:n67-570-evo",
+                                                        "engine_model": "N67 570 EVO",
+                                                        "year_introduced": 2012,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "NEF marine six, 6.7L common rail, 570 hp; flagship of the pleasure range.",
+                                                            "description": "L'ammiraglia della famiglia NEF: 6,7 litri, common rail, 570 cavalli. L'N67 EVO è oggi uno dei sei cilindri più diffusi del diporto mediterraneo — l'ultimo erede della dinastia iniziata con gli 8061."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Cursor": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "fpt:c90-650",
+                                                        "engine_model": "C90 650",
+                                                        "year_introduced": 2010,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Cursor marine six, 8.7L, 650 hp.",
+                                                            "description": "Il Cursor 9 marino: 650 cavalli per imbarcazioni plananti impegnative e mezzi professionali veloci."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "fpt:c13-825",
+                                                        "engine_model": "C13 825",
+                                                        "year_introduced": 2011,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Cursor 13 marine six, 12.9L, 825 hp; top of the FPT marine range.",
+                                                            "description": "Il vertice assoluto della gamma: quasi tredici litri, 825 cavalli. Con il C13 la stirpe marina di Torino — Fiat, AIFO, Iveco, FPT — raggiunge la sua massima espressione contemporanea."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 26
+                                }
                             },
                             "Selva Marine": {
                                 "year_founded": 1954,
@@ -562,38 +1614,143 @@
                                 "sort_number": 83
                             },
                             "Aifo": {
-                                "year_founded": 1955,
-                                "year_dissolved": null,
+                                "year_founded": 1975,
+                                "year_dissolved": 2003,
+                                "sort_number": 2,
                                 "cylinders": {
-                                    "4": {
+                                    "3": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "8000": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "aifo:8031-m06",
+                                                        "engine_model": "8031 M06",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Three-cylinder 2.9L marine diesel, 57 hp at 2500 rpm. Smallest of the 8000 marine series; Fiat truck-block ancestry.",
+                                                            "description": "Il piccolo della serie 8000: tre cilindri, 2,9 litri, 57 cavalli tranquilli a 2500 giri. Derivato dalla meccanica stradale Fiat e marinizzato da AIFO, l'8031 M06 spinse pescherecci minori e lance da lavoro con la proverbiale parsimonia torinese."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "4": {
+                                        "sort_number": 2,
+                                        "models": [],
+                                        "families": {
+                                            "8000": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "aifo:8041-m08",
+                                                        "engine_model": "8041 M08",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Four-cylinder 3.9L marine diesel, ~85 hp class (c.). Naturally-aspirated workboat staple.",
+                                                            "description": "Il quattro cilindri aspirato della famiglia: 3,9 litri di derivazione stradale, sugli 85 cavalli. Un motore da lavoro senza fronzoli, comune su pescherecci e motobarche del Mediterraneo degli anni '80 e '90."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "aifo:8041-m09",
+                                                        "engine_model": "8041 M09",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Four-cylinder 3.9L marine diesel, 95 hp at 3000 rpm.",
+                                                            "description": "Versione più brillante del quattro cilindri, 95 cavalli a 3000 giri. Con l'8041 M09 la serie 8000 copriva la fascia media della pesca costiera e del diporto dislocante — robustezza Fiat, cuore marino AIFO."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 2
-                            },
-                            "Motori Lombardini": {
-                                "year_founded": 1933,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "8000": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "aifo:8061-m12",
+                                                        "engine_model": "8061 M12",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Six-cylinder 5.9L marine diesel, ~125 hp (c.).",
+                                                            "description": "Il sei cilindri di volume della serie: 5,9 litri derivati dal celebre blocco stradale, circa 125 cavalli. L'8061 in versione M12 fu una presenza fissa nelle sale macchine della pesca italiana."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "aifo:8061-m14",
+                                                        "engine_model": "8061 M14",
+                                                        "year_introduced": 1987,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Six-cylinder 5.9L marine diesel, 145 hp at 3000 rpm; the definitive mid-range Aifo.",
+                                                            "description": "La versione definitiva del sei cilindri medio: 145 cavalli a 3000 giri. Motore d'ordinanza per motopescherecci, pilotine e mezzi portuali, l'8061 M14 è forse il volto più riconoscibile dell'era 'IVECO aifo'."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "aifo:8210-srm36",
+                                                        "engine_model": "8210 SRM 36",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Big six, 13.8L, 360 hp at 1800 rpm; heavy commercial marine propulsion.",
+                                                            "description": "Il grande sei cilindri: quasi quattordici litri e 360 cavalli a soli 1800 giri. L'8210 SRM 36 equipaggiò motopescherecci d'altura, rimorchiatori minori e traghetti locali — la taglia 'seria' della marina AIFO."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "aifo:8361-srm45",
+                                                        "engine_model": "8361 SRM 45",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Six-cylinder 8.1L class, ~450 hp (c.); turbocharged commercial six.",
+                                                            "description": "Sei cilindri sovralimentato da circa 8 litri, attorno ai 450 cavalli. Colmava il divario tra l'8061 e il grande 8210, offrendo potenza moderna in ingombri contenuti."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "8": {
+                                        "sort_number": 4,
+                                        "models": [],
+                                        "families": {
+                                            "8000": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "aifo:8281-srm44",
+                                                        "engine_model": "8281 SRM 44",
+                                                        "year_introduced": 1989,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V8 17.2L marine diesel, ~440 hp; flagship of the 8000 marine series.",
+                                                            "description": "L'ammiraglia: un V8 di oltre 17 litri, circa 440 cavalli, destinato a pescherecci d'altura e imbarcazioni commerciali impegnative. Con l'8281 la serie 8000 toccò il proprio vertice di potenza — otto cilindri di Torino in mare aperto."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 66
+                                }
                             },
                             "Lancia Marine": {
                                 "year_founded": 1906,
@@ -710,25 +1867,6 @@
                                 },
                                 "sort_number": 59
                             },
-                            "Fiat": {
-                                "year_founded": 1899,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "4": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "6": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "8": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 24
-                            },
                             "Kubota Germany": {
                                 "year_founded": 1968,
                                 "year_dissolved": null,
@@ -781,7 +1919,7 @@
                             "Gutenberg": {
                                 "year_founded": 1440,
                                 "year_dissolved": 1468,
-                                "sort_number": 30,
+                                "sort_number": 29.5,
                                 "gateway_children": [
                                     {
                                         "name": "BIBLIA SACRA LATINA",

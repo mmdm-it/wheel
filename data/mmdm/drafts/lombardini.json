@@ -1,0 +1,481 @@
+{
+  "_dossier": "002 Motori Lombardini. Rulings: plain 'LDW' family name; Marine subfamilies per bucket (RDM pattern); 9LD/25LD as two families; LDW CHD separate; LA singles IN per Wow doctrine (best-effort, hedged prose). Consolidation: absorbs the 6 misfiled placeholder stubs from the old 'Lombardini' node (LDW last digit = cylinder count); the empty 'Motori Lombardini' duplicate is deleted separately. year_founded 1933 (official founding; 1922 Slanzi-era origins in prose).",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "Lombardini",
+  "node": {
+    "year_founded": 1933,
+    "year_dissolved": null,
+    "sort_number": 56,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "LA": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lombardini:la300",
+                "engine_model": "LA 300",
+                "year_introduced": 1957,
+                "year_discontinued": 1968,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "First-generation air-cooled single from the 1957 LA line — Lombardini's founding diesel series. Sparse surviving record; entry included for historical completeness.",
+                  "description": "Con la serie LA del 1957 Lombardini entrò nell'era del monocilindrico diesel raffreddato ad aria. Dell'LA 300 sopravvivono più memorie che documenti: piccolo, essenziale, instancabile sui motocoltivatori del dopoguerra. Lo includiamo qui come capostipite — testimone di un'epoca in cui ogni officina emiliana sognava il proprio motore."
+                }
+              },
+              {
+                "id": "lombardini:la490",
+                "engine_model": "LA 490",
+                "year_introduced": 1960,
+                "year_discontinued": 1970,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Larger LA-series single, ~490cc class, c. 1960. Thin record; era-informed entry.",
+                  "description": "Il maggiore della prima serie: circa mezzo litro di cilindrata per il lavoro pesante nei campi. Anche dell'LA 490 il registro storico è avaro — ma i vecchi meccanici della Bassa lo ricordano ancora, e tanto basta perché figuri in questa enciclopedia."
+                }
+              }
+            ]
+          },
+          "LDA": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "lombardini:lda520",
+                "engine_model": "LDA 520",
+                "year_introduced": 1963,
+                "year_discontinued": 1978,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Air-cooled single of the 1960s LDA generation, ~520cc, ~12 hp class; a mainstay of Italian walking tractors.",
+                  "description": "La generazione LDA portò i monocilindrici Lombardini alla maturità. Il 520, con circa mezzo litro e una dozzina di cavalli, motorizzò una quota memorabile dei motocoltivatori italiani degli anni '60 e '70 — e più d'uno finì marinizzato su barchini di valle."
+                }
+              },
+              {
+                "id": "lombardini:lda820",
+                "engine_model": "LDA 820",
+                "year_introduced": 1966,
+                "year_discontinued": 1980,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Big LDA single, ~820cc; among the largest air-cooled singles of its era in Italy.",
+                  "description": "Un gigante tra i monocilindrici: l'LDA 820 sfiorava gli 0,8 litri di cilindrata, con una coppia da piccolo trattore. Raffreddato ad aria, avviabile a manovella da chi aveva braccia buone, resta uno dei singoli più imponenti mai costruiti a Reggio Emilia."
+                }
+              },
+              {
+                "id": "lombardini:lda91",
+                "engine_model": "LDA 91",
+                "year_introduced": 1968,
+                "year_discontinued": 1982,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Compact LDA single, ~9 hp class, late 1960s.",
+                  "description": "Il compatto della famiglia: circa 9 cavalli per motozappe, motopompe e piccoli generatori. L'LDA 91 chiuse il ciclo della serie prima dell'avvento delle sigle LD moderne."
+                }
+              }
+            ]
+          },
+          "3LD": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "lombardini:3ld450",
+                "engine_model": "3LD 450",
+                "year_introduced": 1972,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Air-cooled single, ~450cc, ~9-10 hp. With the 6LD, 'sold for decades to the five continents' — still in production under Kohler.",
+                  "description": "Uno dei monocilindrici più longevi della storia industriale italiana: il 3LD 450, nato nei primi anni '70, è ancora oggi a catalogo. Venduto — letteralmente — nei cinque continenti, ha zappato, pompato e generato corrente ovunque ci fosse gasolio e polvere."
+                }
+              },
+              {
+                "id": "lombardini:3ld510",
+                "engine_model": "3LD 510",
+                "year_introduced": 1975,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Larger 3LD single, ~510cc, ~12 hp; the 3LD line's big brother, still current.",
+                  "description": "Fratello maggiore del 450, il 3LD 510 aggiunge cilindrata e coppia alla stessa architettura immortale. Mezzo secolo di produzione continua: pochi motori al mondo possono dire altrettanto."
+                }
+              }
+            ]
+          },
+          "6LD": {
+            "sort_number": 4,
+            "models": [
+              {
+                "id": "lombardini:6ld360",
+                "engine_model": "6LD 360",
+                "year_introduced": 1978,
+                "year_discontinued": 2005,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Compact air-cooled single, ~360cc, ~8 hp; the 6LD line's entry point.",
+                  "description": "Ingresso della fortunata serie 6LD: circa 360cc e 8 cavalli di semplicità assoluta. Insieme ai fratelli maggiori formò per decenni la spina dorsale delle motorizzazioni leggere Lombardini."
+                }
+              },
+              {
+                "id": "lombardini:6ld400",
+                "engine_model": "6LD 400",
+                "year_introduced": 1980,
+                "year_discontinued": 2008,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Mid-line 6LD single, ~400cc, ~9-10 hp.",
+                  "description": "Il gradino di mezzo della famiglia, circa 400cc: onnipresente su motocoltivatori e motopompe italiane degli anni '80 e '90, con la consueta fama di indistruttibilità."
+                }
+              },
+              {
+                "id": "lombardini:6ld435",
+                "engine_model": "6LD 435",
+                "year_introduced": 1984,
+                "year_discontinued": 2010,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Top 6LD single, ~435cc, ~11 hp.",
+                  "description": "Vertice della serie 6LD con circa 11 cavalli. Un monocilindrico maturo e raffinato, prodotto fin oltre l'ingresso nel gruppo Kohler."
+                }
+              }
+            ]
+          },
+          "15LD": {
+            "sort_number": 5,
+            "models": [
+              {
+                "id": "lombardini:15ld225",
+                "engine_model": "15LD 225",
+                "year_introduced": 1999,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Smallest of the current 15LD singles: 224cc, ~3.7 hp.",
+                  "description": "Il più piccolo diesel della casa: 224cc e meno di 4 cavalli, per applicazioni dove contano peso e consumi. La famiglia 15LD è l'ultima generazione di monocilindrici Lombardini, tuttora a catalogo."
+                }
+              },
+              {
+                "id": "lombardini:15ld350",
+                "engine_model": "15LD 350",
+                "year_introduced": 1999,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Current 15LD single, 349cc, ~7.5 hp.",
+                  "description": "Il 350 della serie moderna: 349cc, circa 7,5 cavalli, iniezione diretta. Il monocilindrico industriale portato agli standard del nuovo secolo."
+                }
+              },
+              {
+                "id": "lombardini:15ld440",
+                "engine_model": "15LD 440",
+                "year_introduced": 2001,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Current 15LD single, 442cc, ~10 hp.",
+                  "description": "Con 442cc e una decina di cavalli, il 440 copre il cuore del mercato dei monocilindrici. Prodotto sotto Kohler, mantiene il nome e la scuola di Reggio Emilia."
+                }
+              },
+              {
+                "id": "lombardini:15ld500",
+                "engine_model": "15LD 500",
+                "year_introduced": 2003,
+                "year_discontinued": null,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Largest 15LD single, 505cc, ~12 hp.",
+                  "description": "Chiusura verso l'alto della gamma attuale: 505cc, circa 12 cavalli. L'ultimo erede diretto di settant'anni di monocilindrici emiliani."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "9LD": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lombardini:9ld561-2",
+                "engine_model": "9LD 561-2",
+                "year_introduced": 1982,
+                "year_discontinued": 2000,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Air-cooled twin, ~1.1L, ~20 hp class.",
+                  "description": "Bicilindrico ad aria della generazione LD, il 9LD 561-2 offriva una ventina di cavalli per macchine operatrici e gruppi elettrogeni. Robustezza emiliana in formato doppio."
+                }
+              },
+              {
+                "id": "lombardini:9ld625-2",
+                "engine_model": "9LD 625-2",
+                "year_introduced": 1985,
+                "year_discontinued": 2004,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Larger 9LD twin, ~1.25L, ~22 hp.",
+                  "description": "Evoluzione maggiorata del bicilindrico ad aria, circa 22 cavalli. Diffuso su miniescavatori, motoagricole e saldatrici semoventi in tutta Europa."
+                }
+              }
+            ]
+          },
+          "25LD": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "lombardini:25ld330-2",
+                "engine_model": "25LD 330-2",
+                "year_introduced": 1998,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Compact current-generation air-cooled twin, 654cc, ~13 hp.",
+                  "description": "Il piccolo bicilindrico moderno della casa: 654cc raffreddati ad aria, circa 13 cavalli, ancora oggi a catalogo Kohler. Compattezza e regolarità per generatori e macchine comunali."
+                }
+              },
+              {
+                "id": "lombardini:25ld425-2",
+                "engine_model": "25LD 425-2",
+                "year_introduced": 1999,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Larger 25LD twin, 851cc, ~17 hp; still current.",
+                  "description": "Con 851cc e 17 cavalli, il 425-2 è il bicilindrico ad aria definitivo di Lombardini — tuttora in produzione, mezzo secolo di scuola dell'aria condensato in un motore attuale."
+                }
+              }
+            ]
+          },
+          "LDW": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "lombardini:ldw502",
+                "engine_model": "LDW 502",
+                "year_introduced": 1992,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Water-cooled FOCS twin, 505cc, ~13 hp; belt-driven OHC, aluminium head. Base of the LDW line; also automotive (microcars).",
+                  "description": "Con la famiglia FOCS Lombardini passò all'acqua: il LDW 502, mezzo litro bicilindrico con distribuzione a cinghia e testa in alluminio, divenne ubiquo — dalle minicar ai gruppi elettrogeni. È la base della dinastia LDW che domina ancora oggi la gamma."
+                }
+              },
+              {
+                "id": "lombardini:ldw602",
+                "engine_model": "LDW 602",
+                "year_introduced": 1994,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "FOCS twin, 611cc, ~15 hp.",
+                  "description": "Fratello maggiore del 502, il 602 porta la cilindrata a 611cc mantenendo l'architettura FOCS: compatto, silenzioso per la categoria, e adottato in innumerevoli applicazioni industriali."
+                }
+              },
+              {
+                "id": "lombardini:ldw702",
+                "engine_model": "LDW 702",
+                "year_introduced": 1995,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "FOCS twin, 686cc, ~17-20 hp. (Previously misfiled under 1-cyl in this catalog — LDW designations end in their cylinder count.)",
+                  "description": "Il maggiore dei bicilindrici FOCS: 686cc e fino a una ventina di cavalli. Con la variante marina è tra i motori ausiliari più diffusi della vela mediterranea."
+                }
+              }
+            ],
+            "subfamilies": {
+              "Marine": {
+                "sort_number": 1,
+                "models": [
+                  {
+                    "id": "lombardini:ldw502m",
+                    "engine_model": "LDW 502 M",
+                    "year_introduced": 1996,
+                    "year_discontinued": null,
+                    "sort_number": 1,
+                    "data": {
+                      "key_notes": "Lombardini Marine twin: 505cc, ~12-13 hp, aluminium block, heat-exchanger fresh-water cooling, zinc anodes. The pocket sailboat auxiliary.",
+                      "description": "L'ausiliario tascabile di Lombardini Marine: 505cc, blocco in alluminio, raffreddamento a scambiatore con anodi di zinco. Leggerissimo e compatto, il 502 M ha motorizzato una generazione di piccoli cabinati a vela e derive cabinate di mezza Europa."
+                    }
+                  },
+                  {
+                    "id": "lombardini:ldw702m",
+                    "engine_model": "LDW 702 M",
+                    "year_introduced": 1997,
+                    "year_discontinued": null,
+                    "sort_number": 2,
+                    "data": {
+                      "key_notes": "Marine FOCS twin, 686cc, 20 hp, heat-exchanger cooling, stainless water-injected exhaust elbow.",
+                      "description": "Venti cavalli marini in formato FOCS: scambiatore di calore, gomito di scarico inox a iniezione d'acqua, e la proverbiale parsimonia nei consumi. Il 702 M resta una rimotorizzazione classica per barche a vela fino a 9-10 metri."
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "11LD": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lombardini:11ld535-3",
+                "engine_model": "11LD 535-3",
+                "year_introduced": 1984,
+                "year_discontinued": 2002,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Air-cooled triple, ~1.6L, ~30 hp class.",
+                  "description": "Il tricilindrico ad aria della generazione LD: circa 30 cavalli per macchine da cantiere e agricole di media taglia. L'aria di Reggio Emilia spinta alla sua taglia massima prima dell'era ad acqua."
+                }
+              },
+              {
+                "id": "lombardini:11ld626-3",
+                "engine_model": "11LD 626-3",
+                "year_introduced": 1987,
+                "year_discontinued": 2004,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Larger 11LD triple, ~1.9L, ~34 hp.",
+                  "description": "Versione maggiorata del tricilindrico ad aria, circa 34 cavalli. Con esso la scuola dell'aria raggiunse il proprio canto del cigno, mentre in fabbrica nasceva la famiglia FOCS."
+                }
+              }
+            ]
+          },
+          "LDW": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "lombardini:ldw903",
+                "engine_model": "LDW 903",
+                "year_introduced": 1993,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "FOCS triple, 916cc, ~22-25 hp.",
+                  "description": "Il tricilindrico d'ingresso della famiglia FOCS: 916cc, regolarità da motore grande in dimensioni da motore piccolo. Base diffusissima per gruppi elettrogeni e veicoli speciali."
+                }
+              },
+              {
+                "id": "lombardini:ldw1003",
+                "engine_model": "LDW 1003",
+                "year_introduced": 1994,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "FOCS triple, 1028cc, ~27-30 hp. (Previously misfiled under 1-cyl in this catalog.)",
+                  "description": "Un litro esatto di FOCS: il 1003 è il tuttofare della gamma media, con la versione marina che ne ha fatto un classico degli ausiliari a vela tra i 30 e i 40 piedi."
+                }
+              }
+            ],
+            "subfamilies": {
+              "Marine": {
+                "sort_number": 1,
+                "models": [
+                  {
+                    "id": "lombardini:ldw1003m",
+                    "engine_model": "LDW 1003 M",
+                    "year_introduced": 1996,
+                    "year_discontinued": null,
+                    "sort_number": 1,
+                    "data": {
+                      "key_notes": "Marine FOCS triple, 1028cc, 30 hp; heat-exchanger cooling, cast-iron block, one-piece aluminium head.",
+                      "description": "Trenta cavalli marini, tre cilindri, un litro: il 1003 M è il cuore della gamma Lombardini Marine, ausiliario prediletto per barche a vela di media taglia. Scambiatore, anodi, gomito inox: tutta la grammatica del diesel marino moderno in formato compatto."
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [],
+        "families": {
+          "LDW": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lombardini:ldw1204",
+                "engine_model": "LDW 1204",
+                "year_introduced": 1995,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "FOCS four, 1222cc, ~32-35 hp. (Previously misfiled under 2-cyl in this catalog.)",
+                  "description": "Il quattro cilindri compatto della famiglia FOCS, 1222cc: prediletto da veicoli commerciali leggeri, spazzatrici e applicazioni dove serve regolarità assoluta in poco spazio."
+                }
+              },
+              {
+                "id": "lombardini:ldw1404",
+                "engine_model": "LDW 1404",
+                "year_introduced": 1996,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "FOCS four, 1372cc, ~35-40 hp. (Previously misfiled under 2-cyl in this catalog.)",
+                  "description": "Ammiraglia della serie FOCS classica: 1372cc, quattro cilindri, fino a una quarantina di cavalli. Con la variante marina chiude verso l'alto la gamma degli ausiliari Lombardini Marine."
+                }
+              }
+            ],
+            "subfamilies": {
+              "Marine": {
+                "sort_number": 1,
+                "models": [
+                  {
+                    "id": "lombardini:ldw1404m",
+                    "engine_model": "LDW 1404 M",
+                    "year_introduced": 1998,
+                    "year_discontinued": null,
+                    "sort_number": 1,
+                    "data": {
+                      "key_notes": "Marine FOCS four, 1372cc, ~40 hp; heat exchanger, zinc anodes, self-priming sea-water pump.",
+                      "description": "Il maggiore degli ausiliari FOCS: quaranta cavalli marini per barche a vela fino a 12-13 metri e piccoli motoryacht dislocanti. Quattro cilindri d'acqua dolce raffreddati a scambiatore, con la firma leggera e silenziosa della famiglia."
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "LDW CHD": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "lombardini:ldw2004",
+                "engine_model": "LDW 2004",
+                "year_introduced": 1997,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "CHD-architecture four, 2068cc, ~50 hp; the big-block LDW line, distinct architecture from FOCS.",
+                  "description": "Con la famiglia CHD Lombardini salì di taglia: il 2004, oltre due litri e una cinquantina di cavalli, aprì alla casa il mondo delle macchine operatrici medie e dei veicoli industriali leggeri."
+                }
+              },
+              {
+                "id": "lombardini:ldw2204",
+                "engine_model": "LDW 2204",
+                "year_introduced": 1999,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Largest CHD four, 2199cc, ~60-65 hp; top of the Lombardini diesel range. (Previously misfiled under 3-cyl in this catalog.)",
+                  "description": "Il vertice assoluto della produzione diesel Lombardini: 2,2 litri, fino a 65 cavalli. Il 2204 — anche in versione marina — rappresenta il punto più alto raggiunto dalla scuola motoristica di Reggio Emilia prima e durante l'era Kohler."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
