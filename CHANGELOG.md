@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.9.0 — Phase A: single stratum — dimension UI removed, Bible pinned to Latin Vulgate
+- Dimension button, blur mode, secondary/tertiary strata rings, and portal cycling removed from the engine (`createApp` −400 lines), views, host wiring, adapters, and CSS (−1,700 lines total; removed code preserved in git history)
+- Bible volume pinned to the Latin Vulgate (`VUL`): `translation`/`dimension` URL params no longer read; redirect-based language switching eliminated
+- All four volumes now behave identically — no volume has dimension controls
+- Kept deliberately: rotation-feel visuals (`pyramid-rotate-blur`, magnifier node scaling) and the dormant v4 store/bridge dimension state (`src/core/`) as the foundation for dimensions' return
+- `FocusRingView` main group renamed `blurGroup` → `contentGroup`; view down from 870 to ~390 lines
+- Tests: `dimension-portals.test.js` removed; a11y and perf-render tests reworked without dimension fixtures (138 tests green)
+- `docs/ROADMAP.md`: Single-Stratum Program recorded (Phases A–D; strata design is canon for dimensions' return; pseudo-parents retired)
+
 ## 3.8.44 — Bible testament navigation + card detail text rendering
 - `getBibleBooksForTestament` added to handlers, pyramid builder, and `createVolumeLayoutSpec` parameters — enables testament-level navigation within the Bible volume
 - `buildBibleBookCousinChain` now receives `bookId` from `createHandlers` so book-level cousin chains are correctly scoped

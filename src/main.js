@@ -84,17 +84,18 @@ const volumeConfigs = {
         testamentId: params.get('testament'),
         chapterId: params.get('chapter') || '16',
         verseId: params.get('verse') || '18',
-        translation: params.get('translation') || 'NAB',
+        // Single-stratum era: the Bible is pinned to the Latin Vulgate.
+        // Dimension development is paused, not cancelled (see docs/ROADMAP.md).
+        translation: 'VUL',
         cousinMode,
-        locale: params.get('lang') || null,
-        dimensionEnabled: params.get('dimension') === '1'
+        locale: params.get('lang') || null
       };
     },
     formatLabel: ({ level, locale, namesMap }) => makeBibleLabelFormatter({ level, locale, namesMap }),
     buildChain: (manifest, options, namesMap) => buildBibleChain(manifest, options, namesMap),
     createHandlers: params => {
       const adapter = adapterLoader.load('bible');
-      return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, secondary: { items: [], selectedIndex: 0 }, layoutBindings: {} };
+      return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, layoutBindings: {} };
     }
   },
   catalog: {
@@ -539,13 +540,10 @@ function buildPlacesChain(manifest, options) {
 
 function wireInteractions(app, itemCount) {
   let isDragging = false;
-  let isSecondaryDragging = false;
   let lastX = 0;
   let lastY = 0;
   let lastTime = 0;
   let suppressNativeClickUntil = 0;
-  const isInteractionLocked = () => Boolean(app?.isBlurred?.());
-  const hasSecondary = () => Boolean(app?.hasSecondary?.());
   const sensitivity = Math.PI / 4 / 100; // 100px → 45°
   const velocityThreshold = 0.4; // px/ms below this → no gain
   const gainSlope = 1.1; // linear slope past threshold
@@ -589,11 +587,7 @@ function wireInteractions(app, itemCount) {
   };
 
   const onPointerMove = event => {
-    if (!isDragging && !isSecondaryDragging) return;
-    if (isInteractionLocked() && !isSecondaryDragging) {
-      isDragging = false;
-      return;
-    }
+    if (!isDragging) return;
     const dx = event.clientX - lastX;
     const dy = event.clientY - lastY;
     const dt = event.timeStamp - lastTime;
@@ -616,14 +610,9 @@ function wireInteractions(app, itemCount) {
       dt,
       velocity: Number(velocity.toFixed(3)),
       gain: Number(gain.toFixed(3)),
-      dragging: isDragging,
-      secondaryDragging: isSecondaryDragging
+      dragging: isDragging
     });
-    if (isSecondaryDragging) {
-      app.rotateSecondary(delta);
-    } else {
-      app.choreographer.rotate(delta);
-    }
+    app.choreographer.rotate(delta);
   };
 
   // When touch pointerdown manually dispatches a node onclick, suppress the
@@ -648,29 +637,9 @@ function wireInteractions(app, itemCount) {
       x: event.clientX,
       y: event.clientY
     });
-    const isDimensionButton = event.target && event.target.closest && event.target.closest('.dimension-button');
-    if (isDimensionButton) {
-      return; // let the Dimension button handle its own toggle without starting a drag
-    }
-    const blurred = isInteractionLocked();
-    if (blurred && hasSecondary()) {
-      isSecondaryDragging = true;
-      isDragging = false;
-      lastX = event.clientX;
-      lastY = event.clientY;
-      lastTime = event.timeStamp;
-      app.beginSecondaryRotation();
-      return;
-    }
-    if (blurred) {
-      isDragging = false;
-      app.choreographer.stopMomentum();
-      return;
-    }
     const isNode = event.target && event.target.closest && event.target.closest('.focus-ring-node');
     if (isNode) {
       isDragging = false;
-      isSecondaryDragging = false;
       logTap('node-hit', {
         pointerType: event.pointerType,
         nodeIndex: isNode.dataset?.index ?? null,
@@ -694,7 +663,6 @@ function wireInteractions(app, itemCount) {
     const isControlTarget = event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
     if (isControlTarget) {
       isDragging = false;
-      isSecondaryDragging = false;
       logTap('control-hit', {
         pointerType: event.pointerType,
         targetClass: event.target?.getAttribute?.('class') || null,
@@ -732,7 +700,6 @@ function wireInteractions(app, itemCount) {
       const nearby = nearestRingNode(event);
       if (nearby && typeof nearby.onclick === 'function') {
         isDragging = false;
-        isSecondaryDragging = false;
         logTap('near-miss-manual-onclick', {
           pointerType: event.pointerType,
           nodeIndex: nearby.dataset?.index ?? null,
@@ -756,12 +723,6 @@ function wireInteractions(app, itemCount) {
 
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
-      if (isSecondaryDragging) {
-        isSecondaryDragging = false;
-        logTap(type, { pointerType: event?.pointerType, secondaryDragging: true, action: 'end-secondary' });
-        if (app.endSecondaryRotation) app.endSecondaryRotation();
-        return;
-      }
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
       const wasDragging = isDragging;
@@ -769,11 +730,9 @@ function wireInteractions(app, itemCount) {
       logTap(type, {
         pointerType: event?.pointerType,
         wasDragging,
-        locked: isInteractionLocked(),
         action: wasDragging ? 'snap-nearest' : 'tap-no-snap'
       });
       if (!wasDragging) return;
-      if (isInteractionLocked()) return;
       app.selectNearest();
       app.choreographer.stopMomentum();
     });
@@ -794,46 +753,10 @@ async function showVersion() {
   }
 }
 
-const translationsForLanguage = (translationsMeta, language) => {
-  const translations = translationsMeta?.translations || {};
-  const entries = Object.entries(translations)
-    .filter(([, t]) => t?.language === language);
-  if (!entries.length) return null;
-  const both = entries.find(([, t]) => (t?.testament || '').toLowerCase() === 'both');
-  if (both) return both[0];
-  return entries[0][0];
-};
-
-function buildDimensionPortals(root) {
-  const cfg = root?.display_config || {};
-  const langs = cfg.languages || {};
-  const edits = cfg.editions || {};
-  const langIds = Array.isArray(langs.available) ? langs.available : [];
-  if (!langIds.length || !edits.available) return null;
-  const languageItems = langIds.map((id, idx) => ({
-    id,
-    name: langs.labels?.[id] || id,
-    order: idx
-  }));
-  return {
-    languages: {
-      items: languageItems,
-      labels: langs.labels || {},
-      defaultId: langs.default || languageItems[0]?.id || null
-    },
-    editions: {
-      available: edits.available || {},
-      default: edits.default || {},
-      labels: edits.labels || {}
-    }
-  };
-}
-
 loadConfig().then(async ({ volume, config, manifest, root, options, supplemental }) => {
   applyTheme(manifest, volume);
   const translationsMeta = supplemental?.translationsMeta || null;
-  const fallbackTranslation = translationsForLanguage(translationsMeta, options?.locale || 'english') || 'NAB';
-  const translationId = options.translation || fallbackTranslation;
+  const translationId = options.translation || null;
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
   const resolvedLocale = options.locale || translationLang || 'english';
   const localeNames = translationsMeta?.names?.[translationLang] || {};
@@ -848,7 +771,6 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
   const chainResult = await config.buildChain(manifest, options, namesMap);
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
   const handlerSet = config.createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta: chainResult, translationName });
-  const secondary = handlerSet.secondary || { items: [], selectedIndex: 0 };
   if (!items.length) {
     console.error('No items found for volume', volume);
     return;
@@ -932,22 +854,6 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     meta: { volumeId: volume }
   };
 
-  const onSelectSecondary = handlerSet.onSelectSecondary
-    || (secondary?.items?.length
-      ? translationId => {
-          const url = new URL(window.location.href);
-          const currentItem = app?.nav?.getCurrent?.();
-          if (currentItem?.id) {
-            url.searchParams.set('item', currentItem.id);
-          }
-          url.searchParams.set('translation', translationId);
-          url.searchParams.set('dimension', '1');
-          window.location.href = url.toString();
-        }
-      : undefined);
-
-  const dimensionPortals = buildDimensionPortals(root);
-
   app = createApp({
     svgRoot: svg,
     items,
@@ -956,23 +862,16 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     preserveOrder,
     labelFormatter,
     shouldCenterLabel,
-    secondaryItems: secondary.items,
-    secondarySelectedIndex: secondary.selectedIndex,
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,
     getParentLabel: adapterGetParentLabel,
     pyramid: pyramidConfig,
     pyramidLayoutSpec: pyramidLayout,
     pyramidNormalized: adapterNormalized || normalized,
-    pyramidAdapter: adapter,
-    onSelectSecondary,
-    dimensionPortals
+    pyramidAdapter: adapter
   });
   // Expose app to window for console API
   window.app = app;
-  if (options.dimensionEnabled && app?.setBlur) {
-    app.setBlur(true);
-  }
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId });
   app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId }));
   // If the Bible opens on a chapter with a featured verse, prefetch that chapter's

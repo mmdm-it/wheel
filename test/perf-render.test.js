@@ -77,7 +77,7 @@ describe('perf render telemetry', () => {
     }
   });
 
-  it('keeps dimension toggle renders within budget', () => {
+  it('keeps item-swap renders within budget', () => {
     globalThis.document = makeMockDocument();
     try {
       const events = [];
@@ -97,26 +97,17 @@ describe('perf render telemetry', () => {
           onEvent: evt => events.push(evt),
           perfRenderBudgetMs: renderBudget,
           debugPerf: false
-        },
-        dimensionPortals: {
-          languages: {
-            items: [{ id: 'english', name: 'English' }, { id: 'latin', name: 'Latina' }],
-            defaultId: 'english'
-          },
-          editions: {
-            available: { english: ['NAB', 'DRA'], latin: ['VUL'] },
-            default: { english: 'NAB', latin: 'VUL' }
-          }
         }
       });
 
-      const icon = app.view?.dimensionIcon;
-      assert.ok(icon, 'dimension icon missing');
-      icon.onclick(); // language stage
-      icon.onclick(); // edition or primary
+      app.setPrimaryItems([
+        { id: 'c', name: 'Gamma', order: 0 },
+        { id: 'd', name: 'Delta', order: 1 }
+      ], 0);
+      app.setPrimaryItems(items, 1);
 
       const renderEvents = events.filter(e => e?.type === 'perf:render');
-      assert.ok(renderEvents.length >= 2, 'expected perf:render events during portal cycle');
+      assert.ok(renderEvents.length >= 2, 'expected perf:render events during item swaps');
       renderEvents.forEach(evt => {
         assert.equal(evt.budgetMs, renderBudget);
         assert.equal(evt.overBudget, false, `render ${evt.durationMs}ms exceeded budget ${renderBudget}ms`);

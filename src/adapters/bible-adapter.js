@@ -286,54 +286,6 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
   return { type: 'text', text: selected.name || id || '' };
 }
 
-const translationsForLanguage = (translationsMeta, language) => {
-  const translations = translationsMeta?.translations || {};
-  const entries = Object.entries(translations).filter(([, t]) => t?.language === language);
-  if (!entries.length) return null;
-  const both = entries.find(([, t]) => (t?.testament || '').toLowerCase() === 'both');
-  if (both) return both[0];
-  return entries[0][0];
-};
-
-const buildSecondaryLanguages = (translationsMeta, currentTranslation) => {
-  const nativeNames = {
-    latin: 'Latina',
-    greek: 'Ελληνικά',
-    hebrew: 'עברית',
-    english: 'English',
-    french: 'Français',
-    spanish: 'Español',
-    italian: 'Italiano',
-    portuguese: 'Português',
-    russian: 'Русский'
-  };
-  const desiredOrder = ['hebrew', 'greek', 'latin', 'french', 'spanish', 'english', 'italian', 'portuguese', 'russian'];
-  const normalize = lang => (lang || '').toLowerCase().trim() === 'portugese' ? 'portuguese' : (lang || '').toLowerCase().trim();
-  const translations = translationsMeta?.translations || {};
-  const items = desiredOrder.map((lang, idx) => {
-    const normalizedLang = normalize(lang);
-    const translation = translationsForLanguage(translationsMeta, normalizedLang) || currentTranslation || 'NAB';
-    const name = nativeNames[normalizedLang]
-      || (translations[translation]?.language_name)
-      || (normalizedLang ? `${normalizedLang.charAt(0).toUpperCase()}${normalizedLang.slice(1)}` : 'Language');
-    return {
-      id: normalizedLang,
-      name,
-      order: idx,
-      translation
-    };
-  });
-  const currentLang = translations?.[currentTranslation]?.language;
-  const selectedIndex = (() => {
-    if (currentLang) {
-      const idx = items.findIndex(item => item.id === currentLang);
-      if (idx >= 0) return idx;
-    }
-    return 0;
-  })();
-  return { items, selectedIndex };
-};
-
 export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta, translationName = '' }) {
   const initialLevel = options?.level;
   let bibleMode = (initialLevel === 'chapter' || initialLevel === 'verse') ? initialLevel : 'book';
@@ -362,7 +314,6 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     }
   }
   const lastBookByTestament = {};
-  const secondary = translationsMeta ? buildSecondaryLanguages(translationsMeta, options?.translation) : { items: [], selectedIndex: 0 };
 
   const parentHandler = ({ selected, app }) => {
     if (bibleMode === 'verse') {
@@ -461,7 +412,6 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   return {
     parentHandler,
     childrenHandler,
-    secondary,
     getParentLabel,
     layoutBindings: {
       bibleModeRef: () => bibleMode,
