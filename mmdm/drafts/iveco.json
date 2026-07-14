@@ -1,0 +1,73 @@
+{
+  "_dossier": "003b Iveco — the Iveco Motors bridge era (~2001–2005) of the marine lineage (rulings: bucket 8 deleted — the V8 is Aifo's 8281; era-split per Howell ruling 3).",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "Iveco",
+  "node": {
+    "year_founded": 1975,
+    "year_dissolved": null,
+    "sort_number": 41,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "NEF": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "iveco:n40-atm",
+                "engine_model": "N40 ATM",
+                "year_introduced": 2002,
+                "year_discontinued": 2005,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "First-generation NEF marine four, 4.0L, mechanical injection; sold under Iveco Motors plates before the FPT rebrand.",
+                  "description": "Con la famiglia NEF la stirpe marina torinese entrò nel nuovo secolo. L'N40 ATM, quattro cilindri a iniezione meccanica, portava la targhetta 'Iveco Motors' — il breve ponte di marca tra l'era AIFO e l'era FPT."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "NEF": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "iveco:n60-ent-m37",
+                "engine_model": "N60 ENT M37",
+                "year_introduced": 2003,
+                "year_discontinued": 2005,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "NEF marine six, 5.9L, ~370 hp, early electronic injection under Iveco Motors branding.",
+                  "description": "Il sei cilindri NEF dell'era di transizione: 5,9 litri, circa 370 cavalli, con le prime centraline elettroniche della famiglia. Venduto a marchio Iveco Motors, è il diretto antenato degli attuali N67 di FPT."
+                }
+              }
+            ]
+          },
+          "Cursor": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "iveco:c87-ent-m38",
+                "engine_model": "C87 ENT M38",
+                "year_introduced": 2004,
+                "year_discontinued": 2005,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Cursor marine six, 8.7L, ~380 hp; the Cursor architecture's marine debut under Iveco Motors plates.",
+                  "description": "Debutto marino dell'architettura Cursor: 8,7 litri, circa 380 cavalli. Anche il C87 visse la breve stagione 'Iveco Motors' prima che la gamma passasse sotto le insegne FPT."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

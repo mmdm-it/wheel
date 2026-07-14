@@ -1,0 +1,468 @@
+{
+  "_dossier": "001 Ruggerini Motori — pilot. Rulings applied: 4-cyl bucket deleted; year_dissolved null (brand survives under Kohler); RY series included; RDM as subfamily of RD (iconic name, Howell ruling); nameplate rule — RS/RX are Ruggerini-branded Kohler-era models. Years marked 'c.' in prose where estimated.",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "Ruggerini",
+  "node": {
+    "year_founded": 1942,
+    "year_dissolved": null,
+    "sort_number": 79,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "RM": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "ruggerini:rm80",
+                "engine_model": "RM 80",
+                "year_introduced": 1980,
+                "year_discontinued": 1999,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Single-cylinder raw-water-cooled marine diesel, ~8 hp at 3000 rpm, sold with integral reverse gear. Ruggerini's entry inboard for tenders, lagoon boats and small workboats.",
+                  "description": "Il monocilindrico marino per eccellenza di Ruggerini: l'RM 80 erogava circa 8 cavalli a regimi tranquilli, raffreddato ad acqua di mare, con invertitore integrato. Motore semplice e riparabile ovunque, spinse per decenni lance, tender e pescherecci minori lungo le coste e le lagune italiane. Il suo battito lento e inconfondibile resta, per molti, la voce stessa della piccola nautica da lavoro."
+                }
+              },
+              {
+                "id": "ruggerini:rm90",
+                "engine_model": "RM 90",
+                "year_introduced": 1984,
+                "year_discontinued": 1999,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Uprated sibling of the RM 80, ~9 hp single-cylinder marine diesel with raw-water cooling and reverse gear; shared most service parts with the RM 80.",
+                  "description": "Evoluzione dell'RM 80, l'RM 90 portava la potenza a circa 9 cavalli mantenendo l'architettura monocilindrica raffreddata ad acqua di mare e l'invertitore integrato. Condivideva gran parte della componentistica con il fratello minore — una scelta cara ai cantieri e ai pescatori, che potevano contare su ricambi comuni e su una manutenzione elementare anche nei porti più piccoli."
+                }
+              }
+            ]
+          },
+          "RD": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "ruggerini:rd180",
+                "engine_model": "RD 180",
+                "year_introduced": 1972,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Air-cooled single-cylinder diesel, ~4 hp class. Workhorse of the RD single line; industrial and agricultural base widely adapted to small marine and pump duty.",
+                  "description": "Capostipite dei monocilindrici della serie RD, l'RD 180 era un diesel raffreddato ad aria da circa 4 cavalli (anni '70, c. 1972). Nato per motocoltivatori e motopompe, la sua robustezza lo portò anche a bordo di piccole imbarcazioni da lavoro. Avviamento a strappo, consumi minimi, ricambi ovunque: la formula Ruggerini nella sua espressione più essenziale."
+                }
+              },
+              {
+                "id": "ruggerini:rd200",
+                "engine_model": "RD 200",
+                "year_introduced": 1974,
+                "year_discontinued": 1996,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Air-cooled single, ~5 hp class; direct successor step above the RD 180 in the single-cylinder RD line.",
+                  "description": "Gradino intermedio della serie RD, il monocilindrico RD 200 offriva circa 5 cavalli con lo stesso raffreddamento ad aria e la stessa semplicità costruttiva della famiglia. Diffusissimo nell'agricoltura italiana degli anni '70 e '80, non era raro trovarlo marinizzato artigianalmente su barchini e piccoli natanti da laguna."
+                }
+              },
+              {
+                "id": "ruggerini:rd210",
+                "engine_model": "RD 210",
+                "year_introduced": 1978,
+                "year_discontinued": 1998,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Air-cooled single, ~6-7 hp class, Bosch injection; one of the most common Ruggerini singles of the 1980s.",
+                  "description": "Tra i monocilindrici Ruggerini più diffusi degli anni '80, l'RD 210 (c. 1978) erogava 6-7 cavalli con iniezione Bosch e raffreddamento ad aria. La sua fama di motore instancabile ne fece un riferimento per motocoltivatori, generatori e motopompe — e, come per tutta la serie, non mancarono gli adattamenti marini nei cantieri minori."
+                }
+              },
+              {
+                "id": "ruggerini:rd240",
+                "engine_model": "RD 240",
+                "year_introduced": 1980,
+                "year_discontinued": 1998,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Air-cooled single, ~8 hp class; larger-displacement single in the RD line.",
+                  "description": "Con l'RD 240 la serie dei monocilindrici salì di cilindrata, raggiungendo circa 8 cavalli. Sempre raffreddato ad aria e costruito attorno alla consueta meccanica robusta, trovò impiego dove serviva più coppia: motopompe di grossa portata, mezzi agricoli e piccole applicazioni marine da lavoro."
+                }
+              },
+              {
+                "id": "ruggerini:rd270",
+                "engine_model": "RD 270",
+                "year_introduced": 1982,
+                "year_discontinued": 1999,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "Air-cooled single at the top of the single-cylinder RD range, ~10 hp class.",
+                  "description": "Vertice dei monocilindrici RD, l'RD 270 arrivava a una decina di cavalli mantenendo il raffreddamento ad aria e l'avviamento anche a strappo. Un monocilindrico 'grande', apprezzato per la capacità di lavorare ore e ore sotto carico costante — qualità che i marinizzatori artigianali seppero sfruttare volentieri."
+                }
+              },
+              {
+                "id": "ruggerini:rd280",
+                "engine_model": "RD 280",
+                "year_introduced": 1986,
+                "year_discontinued": 1999,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "Final evolution of the big RD singles, ~11-12 hp class, late 1980s.",
+                  "description": "Ultima evoluzione dei grandi monocilindrici della casa (c. 1986), l'RD 280 chiuse la serie con 11-12 cavalli e raffinamenti alla distribuzione e all'iniezione. Rappresenta il canto del cigno del monocilindrico industriale italiano prima della concentrazione del settore negli anni '90."
+                }
+              }
+            ]
+          },
+          "RY": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "ruggerini:ry50",
+                "engine_model": "RY 50",
+                "year_introduced": 1985,
+                "year_discontinued": 2002,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Compact air-cooled single, ~5 hp; the small end of the RY light-industrial line.",
+                  "description": "Il più piccolo della serie RY: un monocilindrico compatto da circa 5 cavalli, raffreddato ad aria, pensato per generatori, motozappe e piccole macchine da cantiere. Leggero e parco nei consumi, portava la qualità costruttiva Ruggerini nel segmento delle micro-motorizzazioni."
+                }
+              },
+              {
+                "id": "ruggerini:ry75",
+                "engine_model": "RY 75",
+                "year_introduced": 1986,
+                "year_discontinued": 2002,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Air-cooled single, ~7.5 hp, light-industrial duty.",
+                  "description": "Fratello di mezzo della famiglia RY, il 75 offriva circa 7,5 cavalli in un pacchetto essenziale e affidabile. La serie RY costituì negli anni '80 e '90 la spina dorsale delle applicazioni leggere della casa di Reggio Emilia."
+                }
+              },
+              {
+                "id": "ruggerini:ry103",
+                "engine_model": "RY 103",
+                "year_introduced": 1988,
+                "year_discontinued": 2003,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Air-cooled single, ~10 hp; upper end of the RY line, also seen in small marine gensets.",
+                  "description": "Con circa 10 cavalli, l'RY 103 rappresentava il vertice della serie leggera RY. Oltre agli impieghi industriali e agricoli, trovò posto anche in piccoli gruppi elettrogeni marini, dove la semplicità del raffreddamento ad aria era un pregio nelle sale macchine più anguste."
+                }
+              },
+              {
+                "id": "ruggerini:ry110",
+                "engine_model": "RY 110",
+                "year_introduced": 1990,
+                "year_discontinued": 2004,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Air-cooled single, ~11 hp; 1990s refinement of the RY line.",
+                  "description": "Aggiornamento anni '90 della gamma, l'RY 110 saliva a circa 11 cavalli con migliorie a iniezione e bilanciamento. Un monocilindrico maturo, prodotto fin dentro l'era Lombardini."
+                }
+              },
+              {
+                "id": "ruggerini:ry125",
+                "engine_model": "RY 125",
+                "year_introduced": 1992,
+                "year_discontinued": 2005,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "Largest RY single, ~12.5 hp; produced into the Lombardini era.",
+                  "description": "Il maggiore della famiglia RY chiudeva la gamma a circa 12,5 cavalli. Rimase in produzione oltre l'acquisizione Lombardini del 1999, testimone della continuità del marchio Ruggerini sotto la nuova proprietà."
+                }
+              }
+            ]
+          },
+          "RS": {
+            "sort_number": 4,
+            "models": [
+              {
+                "id": "ruggerini:rs5.0",
+                "engine_model": "RS 5.0",
+                "year_introduced": 2001,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Kohler-era Ruggerini-branded air-cooled single, ~5 hp. Nameplate rule: files under Ruggerini; corporate parent Lombardini/Kohler.",
+                  "description": "Primo gradino della gamma RS nata dopo l'ingresso nel gruppo Lombardini: un monocilindrico da circa 5 cavalli che aggiornava la tradizione Ruggerini a norme ed esigenze del nuovo secolo, conservando il marchio storico sulla fusione."
+                }
+              },
+              {
+                "id": "ruggerini:rs7.0",
+                "engine_model": "RS 7.0",
+                "year_introduced": 2001,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Kohler-era air-cooled single, ~7 hp.",
+                  "description": "Versione intermedia della serie RS, circa 7 cavalli. La sigla razionalizzata — potenza dichiarata nel nome — segnala l'epoca Lombardini, ma la meccanica resta figlia della scuola di Reggio Emilia."
+                }
+              },
+              {
+                "id": "ruggerini:rs8.5",
+                "engine_model": "RS 8.5",
+                "year_introduced": 2002,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Top of the RS singles, ~8.5 hp; also offered in pump-set (P) trim.",
+                  "description": "Vertice della gamma RS con circa 8,5 cavalli, offerto anche in allestimento motopompa. Un Ruggerini dell'era moderna: emissioni contenute, avviamento elettrico, e il consueto raffreddamento ad aria della tradizione."
+                }
+              }
+            ]
+          },
+          "RX": {
+            "sort_number": 5,
+            "models": [
+              {
+                "id": "ruggerini:rx7.5",
+                "engine_model": "RX 7.5",
+                "year_introduced": 2003,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Kohler-era single, ~7.5 hp; RX line sits alongside RS with different base architecture.",
+                  "description": "La serie RX affiancò la RS nei primi anni Duemila su architettura di base differente. L'RX 7.5, da circa 7,5 cavalli, proseguiva la vocazione della casa per i monocilindrici industriali compatti a marchio Ruggerini."
+                }
+              },
+              {
+                "id": "ruggerini:rx9.0",
+                "engine_model": "RX 9.0",
+                "year_introduced": 2003,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Kohler-era single, ~9 hp.",
+                  "description": "Modello centrale della gamma RX, circa 9 cavalli: destinato a generatori, motopompe e macchine operatrici, con il nome storico di Reggio Emilia ben visibile sulla targhetta."
+                }
+              },
+              {
+                "id": "ruggerini:rx10.0",
+                "engine_model": "RX 10.0",
+                "year_introduced": 2004,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Largest RX single, ~10 hp.",
+                  "description": "Chiusura verso l'alto della serie RX con circa 10 cavalli. Insieme alla gamma RS costituisce l'ultima generazione di monocilindrici a portare il nome Ruggerini."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "MM": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "ruggerini:mm150",
+                "engine_model": "MM 150",
+                "year_introduced": 1982,
+                "year_discontinued": 1999,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Twin-cylinder marine diesel, 14-15 hp at 3000 rpm, heat-exchanger cooling, integral reverse gear. The flagship small marine twin of the house.",
+                  "description": "Cuore della gamma marina Ruggerini, l'MM 150 era un bicilindrico da 14-15 cavalli con raffreddamento a scambiatore di calore e invertitore integrato — una vera motorizzazione entrobordo, non un adattamento. Equipaggiò generazioni di barche a vela e piccoli cabinati, dove la sua regolarità di funzionamento e la facilità di manutenzione lo resero un beniamino dei diportisti italiani."
+                }
+              },
+              {
+                "id": "ruggerini:mm156",
+                "engine_model": "MM 156",
+                "year_introduced": 1988,
+                "year_discontinued": 1999,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Updated MM 150 with detail improvements; same 15 hp class marine twin.",
+                  "description": "Aggiornamento dell'MM 150 (c. 1988), con migliorie di dettaglio a iniezione e raffreddamento. Restava il bicilindrico marino da 15 cavalli della casa, con scambiatore di calore e invertitore, destinato al diporto e al piccolo lavoro."
+                }
+              },
+              {
+                "id": "ruggerini:mm190",
+                "engine_model": "MM 190",
+                "year_introduced": 1984,
+                "year_discontinued": 1999,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Larger marine twin, ~19-20 hp, heat-exchanger cooling and reverse gear.",
+                  "description": "Sorella maggiore dell'MM 150, l'MM 190 offriva 19-20 cavalli per barche più impegnative: cabinati a vela di media taglia, gozzi e imbarcazioni da lavoro costiere. Stessa impostazione — bicilindrico, scambiatore, invertitore — con più coppia a disposizione."
+                }
+              },
+              {
+                "id": "ruggerini:mm191",
+                "engine_model": "MM 191",
+                "year_introduced": 1990,
+                "year_discontinued": 1999,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Final evolution of the MM marine twins, 20 hp with reverse gear; still sought after as a repower unit.",
+                  "description": "Ultima evoluzione dei bicilindrici marini MM (c. 1990), da 20 cavalli con invertitore. Ancora oggi ricercato come rimotorizzazione per barche d'epoca e gozzi, l'MM 191 chiude la storia marina del marchio prima dell'era Lombardini."
+                }
+              }
+            ]
+          },
+          "RD": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "ruggerini:rd901",
+                "engine_model": "RD 901",
+                "year_introduced": 1975,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Air-cooled twin-cylinder diesel, ~15-18 hp class; the defining Ruggerini twin, ubiquitous in Italian agriculture.",
+                  "description": "Il bicilindrico Ruggerini per antonomasia: raffreddato ad aria, robusto oltre ogni ragionevolezza, l'RD 901 (c. 1975) motorizzò trattorini, motoagricole e mezzi da cantiere in tutta Italia. La sua meccanica generosa ne fece anche una base apprezzata per marinizzazioni da lavoro."
+                }
+              },
+              {
+                "id": "ruggerini:rd902",
+                "engine_model": "RD 902",
+                "year_introduced": 1980,
+                "year_discontinued": 1998,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Evolution of the RD 901 twin with detail refinements.",
+                  "description": "Evoluzione del 901 con affinamenti a iniezione e distribuzione, l'RD 902 proseguì la carriera del grande bicilindrico ad aria attraverso gli anni '80 e '90, identica la vocazione: lavorare sempre, ovunque, con qualunque gasolio."
+                }
+              },
+              {
+                "id": "ruggerini:rd920",
+                "engine_model": "RD 920",
+                "year_introduced": 1985,
+                "year_discontinued": 1999,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Larger-displacement RD twin, ~20 hp class.",
+                  "description": "Il maggiore dei bicilindrici RD classici, con circa 20 cavalli. Cilindrata accresciuta e la solita architettura ad aria: un motore da fatica, pensato per macchine operatrici e adattato senza timori anche a bordo."
+                }
+              },
+              {
+                "id": "ruggerini:rd951",
+                "engine_model": "RD 951",
+                "year_introduced": 2000,
+                "year_discontinued": null,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Lombardini-era RD twin (CRD/2 series documentation); nameplate rule keeps it a Ruggerini.",
+                  "description": "Bicilindrico dell'era Lombardini, documentato nella serie CRD/2: l'RD 951 porta la famiglia RD nel nuovo secolo, con emissioni aggiornate e il marchio Ruggerini ancora in evidenza."
+                }
+              }
+            ],
+            "subfamilies": {
+              "RDM": {
+                "sort_number": 1,
+                "models": [
+                  {
+                    "id": "ruggerini:rdm901-2",
+                    "engine_model": "RDM 901/2",
+                    "year_introduced": 1983,
+                    "year_discontinued": 1996,
+                    "sort_number": 1,
+                    "data": {
+                      "key_notes": "Factory-marinized RD twin — the 'M' is for marino. Documented in 1989 factory marine manuals; raw-water cooling, marine gearbox.",
+                      "description": "La versione ufficialmente marina del grande bicilindrico: l'RDM 901/2 usciva di fabbrica con raffreddamento ad acqua, invertitore e accessoristica navale, documentato nei manuali marini della casa (1989). Per i pescatori delle coste adriatiche e tirreniche era il compromesso perfetto: la meccanica agricola che tutti sapevano riparare, vestita da motore di bordo."
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "MD": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "ruggerini:md150",
+                "engine_model": "MD 150",
+                "year_introduced": 1979,
+                "year_discontinued": 1997,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Twin-cylinder diesel, ~10-12 hp class; base of the MD line.",
+                  "description": "Ingresso della famiglia MD, bicilindrico da 10-12 cavalli. La serie MD affiancò le RD con un'impostazione più moderna, e diede origine anche ai tricilindrici che chiudono verso l'alto la gamma Ruggerini."
+                }
+              },
+              {
+                "id": "ruggerini:md151",
+                "engine_model": "MD 151",
+                "year_introduced": 1984,
+                "year_discontinued": 1998,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Refined MD twin, ~12 hp class.",
+                  "description": "Affinamento del 150, con dettagli aggiornati e la stessa vocazione universale: macchine agricole, gruppi elettrogeni e, all'occorrenza, piccole applicazioni di bordo."
+                }
+              },
+              {
+                "id": "ruggerini:md190",
+                "engine_model": "MD 190",
+                "year_introduced": 1982,
+                "year_discontinued": 1998,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Larger MD twin, ~19 hp class.",
+                  "description": "Il bicilindrico grande della serie MD, circa 19 cavalli, apprezzato per l'equilibrio tra peso, potenza e consumi nella fascia medio-alta della gamma."
+                }
+              },
+              {
+                "id": "ruggerini:md191",
+                "engine_model": "MD 191",
+                "year_introduced": 1988,
+                "year_discontinued": 1999,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Final MD twin, ~19-20 hp.",
+                  "description": "Ultima espressione dei bicilindrici MD (c. 1988), circa 20 cavalli, prodotto fino alla soglia dell'acquisizione Lombardini."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "MD": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "ruggerini:md350",
+                "engine_model": "MD 350",
+                "year_introduced": 1985,
+                "year_discontinued": 1998,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Three-cylinder diesel, ~28-30 hp; top of the Ruggerini range.",
+                  "description": "Con la serie MD a tre cilindri Ruggerini raggiunse il vertice della propria gamma: l'MD 350 offriva 28-30 cavalli per trattrici, macchine operatrici e motorizzazioni speciali — il più 'grande' pensiero mai uscito da Reggio Emilia."
+                }
+              },
+              {
+                "id": "ruggerini:md351",
+                "engine_model": "MD 351",
+                "year_introduced": 1987,
+                "year_discontinued": 1999,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Three-cylinder ~30 hp; licensed to Agrale in Brazil as the 4240 tractor engine — the family's international career.",
+                  "description": "Il tricilindrico più celebre della casa, non da ultimo per la sua carriera internazionale: l'MD 351 fu prodotto su licenza in Brasile da Agrale per la trattrice 4240. Circa 30 cavalli di meccanica reggiana esportata nel mondo — la consacrazione della serie MD."
+                }
+              },
+              {
+                "id": "ruggerini:md358",
+                "engine_model": "MD 358",
+                "year_introduced": 1992,
+                "year_discontinued": 1999,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Final three-cylinder evolution, ~32 hp, 1990s.",
+                  "description": "Chiusura della famiglia tricilindrica negli anni '90, l'MD 358 arrivava a circa 32 cavalli. Con esso si spegne, alla vigilia dell'era Lombardini, la spinta di Ruggerini verso le potenze maggiori."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

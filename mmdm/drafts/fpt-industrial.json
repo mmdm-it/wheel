@@ -1,0 +1,118 @@
+{
+  "_dossier": "003c FPT Industrial — current era (rulings: era-split; year_founded 2005 FPT division, corrected from 2013; FPT Industrial spin-off 2011 in prose).",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "FPT Industrial",
+  "node": {
+    "year_founded": 2005,
+    "year_dissolved": null,
+    "sort_number": 26,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "fpt:s30-ent-m23",
+            "engine_model": "S30 ENT M23",
+            "year_introduced": 2007,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Compact 3.0L four, 230 hp; the small end of the FPT marine range (standalone S-series).",
+              "description": "Il compatto della gamma: tre litri, 230 cavalli, per gommoni cabinati e piccoli motoscafi. L'S30 dimostra la vocazione FPT a portare tecnologia da veicolo industriale nella nautica leggera."
+            }
+          }
+        ],
+        "families": {
+          "NEF": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fpt:n40-250",
+                "engine_model": "N40 250",
+                "year_introduced": 2006,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "NEF marine four, 4.0L common rail, 250 hp.",
+                  "description": "Il quattro cilindri NEF maturo: common rail, quattro valvole per cilindro, 250 cavalli. Cuore della gamma media FPT per il diporto e il lavoro costiero."
+                }
+              },
+              {
+                "id": "fpt:n45-125",
+                "engine_model": "N45 125",
+                "year_introduced": 2008,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "NEF marine four, 4.5L, 125 hp commercial rating.",
+                  "description": "Versione commerciale del quattro cilindri, tarata a 125 cavalli per la lunga durata: pilotine, barche da pesca e servizio continuativo."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "NEF": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fpt:n60-400",
+                "engine_model": "N60 400",
+                "year_introduced": 2006,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "NEF marine six, 5.9L, 400 hp.",
+                  "description": "Il sei cilindri NEF nella taratura da 400 cavalli: erede diretto dell'N60 dell'era Iveco Motors, ora con elettronica di seconda generazione."
+                }
+              },
+              {
+                "id": "fpt:n67-570-evo",
+                "engine_model": "N67 570 EVO",
+                "year_introduced": 2012,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "NEF marine six, 6.7L common rail, 570 hp; flagship of the pleasure range.",
+                  "description": "L'ammiraglia della famiglia NEF: 6,7 litri, common rail, 570 cavalli. L'N67 EVO è oggi uno dei sei cilindri più diffusi del diporto mediterraneo — l'ultimo erede della dinastia iniziata con gli 8061."
+                }
+              }
+            ]
+          },
+          "Cursor": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "fpt:c90-650",
+                "engine_model": "C90 650",
+                "year_introduced": 2010,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Cursor marine six, 8.7L, 650 hp.",
+                  "description": "Il Cursor 9 marino: 650 cavalli per imbarcazioni plananti impegnative e mezzi professionali veloci."
+                }
+              },
+              {
+                "id": "fpt:c13-825",
+                "engine_model": "C13 825",
+                "year_introduced": 2011,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Cursor 13 marine six, 12.9L, 825 hp; top of the FPT marine range.",
+                  "description": "Il vertice assoluto della gamma: quasi tredici litri, 825 cavalli. Con il C13 la stirpe marina di Torino — Fiat, AIFO, Iveco, FPT — raggiunge la sua massima espressione contemporanea."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
