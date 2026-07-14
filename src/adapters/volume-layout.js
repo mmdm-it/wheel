@@ -13,6 +13,7 @@ export function createVolumeLayoutSpec({
   getBibleChapters,
   getBibleVerseItems,
   getBibleBooksForTestament,
+  getBibleTestaments,
   prefetchBibleVerses,
   getApp,
   calendarModeRef,
@@ -25,7 +26,8 @@ export function createVolumeLayoutSpec({
   catalogModeRef,
   setCatalogMode,
   savePreInState,
-  pyramidBuilder
+  pyramidBuilder,
+  launchGateway
 } = {}) {
   const pyramid = createVolumePyramidConfig({
     volume,
@@ -39,6 +41,7 @@ export function createVolumeLayoutSpec({
     getBibleChapters,
     getBibleVerseItems,
     getBibleBooksForTestament,
+    getBibleTestaments,
     prefetchBibleVerses,
     getApp,
     calendarModeRef,
@@ -51,7 +54,8 @@ export function createVolumeLayoutSpec({
     catalogModeRef,
     setCatalogMode,
     savePreInState,
-    pyramidBuilder
+    pyramidBuilder,
+    launchGateway
   });
   return pyramid ? { pyramid } : {};
 }

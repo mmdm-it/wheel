@@ -4,12 +4,13 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.9.0 (2026-07-14)
+- v3.10.0 (2026-07-14)
 
-## Notable Changes in 3.9.0
-- Phase A of the Single-Stratum Program (see `docs/ROADMAP.md`): the dimension button, blur mode, and secondary/tertiary strata rings are removed; all four volumes behave identically.
-- Bible volume is pinned to the Latin Vulgate (`VUL`); language/edition switching is paused until dimension development resumes on the strata design.
-- Engine and view each shed several hundred lines; bundle down ~60KB.
+## Notable Changes in 3.10.0
+- The Gutenberg easter egg: the Bible is reachable inside the MMdM catalog (GERMANIA → GUTENBERG → BIBLIA SACRA LATINA → testaments), with theme crossover and a working return door.
+- Generic **gateway node** capability: catalog data can declare a door into any other volume; the host boots volumes in-app without a page reload (`bootVolume`), with browser history integration.
+- Full Latin identity for the Bible volume: Capitulum + Roman numerals for chapters and verses, Latin book names everywhere including the parent button.
+- Phase B Bible data: Psalms rebuilt to native Vulgate numbering from the Clementine corpus; Vulgate coverage 95.5% → 99.5%.
 
 ## Release Train
 - v3.2.17 Baseline data + UI lift — done
@@ -21,7 +22,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.8.15 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
 - v3.8.19 Parent Button Labelling — shipped: adapter-driven `getParentLabel`, progressive depth labels (country → manufacturer → compound), uppercase suffix
 
-- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.9.0`).
+- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.10.0`).
 - Historical majors are maintained outside the active v3 repository (archived folders/repos for v0/v1/v2).
 - Future v4 will branch from the final v3 tag and tag releases as `v4.*` (no versioned folders).
 - GitHub flow is feature branch → pull request → merge into protected `main` after required checks pass.
