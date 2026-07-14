@@ -1,104 +1,118 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_127",
-  "book_key": "PSAL",
-  "sequence": 127,
-  "chapter_in": {
-    "MT": 127,
-    "VUL": 126,
-    "LXX": 126
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_127",
+ "book_key": "PSAL",
+ "sequence": 127,
+ "chapter_in": {
+  "VUL": 127,
+  "LXX": 127,
+  "MT": 128
+ },
+ "mt_sources": [
+  "128"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "שִׁ֗יר הַֽ/מַּ֫עֲל֥וֹת אַ֭שְׁרֵי כָּל יְרֵ֣א יְהוָ֑ה הַ֝/הֹלֵ֗ךְ בִּ/דְרָכָֽי/ו׃",
+    "SYN": "Много теснили меня от юности моей, да скажет Израиль:",
+    "NEO": "Cantique des montées.",
+    "NAB": "A song of ascents. Happy are all who fear the LORD, who walk in the ways of God.",
+    "CEI": "Canto delle ascensioni. Beato l'uomo che teme il Signore e cammina nelle sue vie.",
+    "LXX": "ᾨδὴ τῶν ἀναβαθμῶν. Μακάριοι πάντες οἱ φοβούμενοι τὸν κύριον, οἱ πορευόμενοι ἐν ταῖς ὁδοῖς αὐτοῦ.",
+    "VUL": "Canticum graduum. [Beati omnes qui timent Dominum,/ qui ambulant in viis ejus./"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "שִׁ֥יר הַֽ/מַּֽעֲל֗וֹת לִ/שְׁלֹ֫מֹ֥ה אִם יְהוָ֤ה לֹא יִבְנֶ֬ה בַ֗יִת שָׁ֤וְא עָמְל֣וּ בוֹנָ֣י/ו בּ֑/וֹ אִם יְהוָ֥ה לֹֽא יִשְׁמָר עִ֝֗יר שָׁ֤וְא שָׁקַ֬ד שׁוֹמֵֽר׃",
-        "LXX": "ᾨδὴ τῶν ἀναβαθμῶν. Μακάριοι πάντες οἱ φοβούμενοι τὸν κύριον, οἱ πορευόμενοι ἐν ταῖς ὁδοῖς αὐτοῦ.",
-        "VUL": "Canticum graduum. [Beati omnes qui timent Dominum,/ qui ambulant in viis ejus./",
-        "SYN": "Блажен всякий боящийся Господа, ходящий путями Его!",
-        "NEO": "Cantique des montées. De Salomon.",
-        "NAB": "A song of ascents. Of Solomon. Unless the LORD build the house, they labor in vain who build. Unless the LORD guard the city, in vain does the guard keep watch.",
-        "CEI": "Canto delle ascensioni. Di Salomone. Se il Signore non costruisce la casa, invano vi faticano i costruttori. Se il Signore non custodisce la città, invano veglia il custode."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "שָׁ֤וְא לָ/כֶ֨ם מַשְׁכִּ֪ימֵי ק֡וּם מְאַֽחֲרֵי שֶׁ֗בֶת אֹ֭כְלֵי לֶ֣חֶם הָ/עֲצָבִ֑ים כֵּ֤ן יִתֵּ֖ן לִֽ/ידִיד֣/וֹ שֵׁנָֽא׃",
-        "LXX": "τοὺς καρποὺς τῶν πόνων σου φάγεσαι, μακάριος εἶ καὶ καλῶς σοι ἔσται.",
-        "VUL": "Labores manuum tuarum quia manducabis :/ beatus es, et bene tibi erit./",
-        "SYN": "Ты будешь есть от трудов рук твоих: блажен ты, и благо тебе!",
-        "NEO": "C’est en vain que vous vous levez avant le jour, et que vous retardez votre repos, mangeant le pain de la douleur : il en donne autant à son bien-aimé pendant son sommeil.",
-        "NAB": "It is vain for you to rise early and put off your rest at night, To eat bread earned by hard toil - all this God gives to his beloved in sleep.",
-        "VAT_ES": "Es inútil que ustedes madruguen;",
-        "CEI": "Invano vi alzate di buon mattino, tardi andate a riposare e mangiate pane di sudore: il Signore ne darà ai suoi amici nel sonno."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "הִנֵּ֤ה נַחֲלַ֣ת יְהוָ֣ה בָּנִ֑ים שָׂ֝כָ֗ר פְּרִ֣י הַ/בָּֽטֶן׃",
-        "LXX": "ἡ γυνή σου ὡς ἄμπελος εὐθηνοῦσα ἐν τοῖς κλίτεσι τῆς οἰκίας σου· οἱ υἱοί σου ὡς νεόφυτα ἐλαιῶν κύκλῳ τῆς τραπέζης σου.",
-        "VUL": "Uxor tua sicut vitis abundans/ in lateribus domus tuæ ;/ filii tui sicut novellæ olivarum/ in circuitu mensæ tuæ./",
-        "SYN": "Жена твоя, как плодовитая лоза, в доме твоем; сыновья твои, как масличные ветви, вокруг трапезы твоей:",
-        "NEO": "Voici, c’est un héritage de \\+w Yahweh|strong=\"H3068\"\\+w**, que les enfants ; une récompense, que les fruits d’un sein fécond.",
-        "NAB": "Children too are a gift from the LORD, the fruit of the womb, a reward.",
-        "VAT_ES": "Los hijos son un regalo del Señor,",
-        "CEI": "Ecco, dono del Signore sono i figli, è sua grazia il frutto del grembo."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "כְּ/חִצִּ֥ים בְּ/יַד גִּבּ֑וֹר כֵּ֝֗ן בְּנֵ֣י הַ/נְּעוּרִֽים׃",
-        "LXX": "ἰδοὺ οὕτως εὐλογηθήσεται ὁ ἄνθρωπος ὁ φοβούμενος τὸν κύριον.",
-        "VUL": "Ecce sic benedicetur homo/ qui timet Dominum./",
-        "SYN": "так благословится человек, боящийся Господа!",
-        "NEO": "Comme les flèches dans la main d’un guerrier, ainsi sont les fils de la jeunesse.",
-        "NAB": "Like arrows in the hand of a warrior are the children born in one's youth.",
-        "VAT_ES": "como flechas en la mano de un guerrero",
-        "CEI": "Come frecce in mano a un eroe sono i figli della giovinezza."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "אַשְׁרֵ֤י הַ/גֶּ֗בֶר אֲשֶׁ֤ר מִלֵּ֥א אֶת אַשְׁפָּת֗/וֹ מֵ֫/הֶ֥ם לֹֽא יֵבֹ֑שׁוּ כִּֽי יְדַבְּר֖וּ אֶת אוֹיְבִ֣ים בַּ/שָּֽׁעַר׃",
-        "LXX": "εὐλογήσαι σε Κύριος ἐκ Σιών, καὶ ἴδοις τὰ ἀγαθὰ Ἰερουσαλὴμ πάσας τὰς ἡμέρας τῆς ζωῆς σου,",
-        "VUL": "Benedicat tibi Dominus ex Sion,/ et videas bona Jerusalem omnibus diebus vitæ tuæ./",
-        "SYN": "Благословит тебя Господь с Сиона, и увидишь благоденствие Иерусалима во все дни жизни твоей;",
-        "NEO": "Heureux l’homme qui en a rempli son carquois ! Ils ne rougiront pas quand ils répondront aux ennemis, à la porte de la ville.",
-        "NAB": "Blessed are they whose quivers are full. They will never be shamed contending with foes at the gate.",
-        "VAT_ES": "&iexcl;Feliz el hombre que llena con ellos su aljaba!",
-        "CEI": "Beato l'uomo che ne ha piena la farètra: non resterà confuso quando verrà a trattare alla porta con i propri nemici."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "יְגִ֣יעַ כַּ֭פֶּי/ךָ כִּ֣י תֹאכֵ֑ל אַ֝שְׁרֶ֗י/ךָ וְ/ט֣וֹב לָֽ/ךְ׃",
+    "SYN": "много теснили меня от юности моей, но не одолели меня.",
+    "NEO": "Tu te nourris alors du travail de tes mains ; tu es heureux et comblé de biens.",
+    "NAB": "What your hands provide you will enjoy; you will be happy and prosper:",
+    "VAT_ES": "Comerás del fruto de tu trabajo,",
+    "CEI": "Vivrai del lavoro delle tue mani, sarai felice e godrai d'ogni bene.",
+    "LXX": "τοὺς καρποὺς τῶν πόνων σου φάγεσαι, μακάριος εἶ καὶ καλῶς σοι ἔσται.",
+    "VUL": "Labores manuum tuarum quia manducabis :/ beatus es, et bene tibi erit./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "אֶשְׁתְּ/ךָ֤ כְּ/גֶ֥פֶן פֹּרִיָּה֮ בְּ/יַרְכְּתֵ֪י בֵ֫יתֶ֥/ךָ בָּ֭נֶי/ךָ כִּ/שְׁתִלֵ֣י זֵיתִ֑ים סָ֝בִ֗יב לְ/שֻׁלְחָנֶֽ/ךָ׃",
+    "SYN": "На хребте моем орали оратаи, проводили длинные борозды свои.",
+    "NEO": "Ton épouse est comme une vigne féconde, dans l’intérieur de ta maison ; tes fils, comme de jeunes plants d’olivier, autour de ta table.",
+    "NAB": "Like a fruitful vine your wife within your home, Like olive plants your children around your table.",
+    "VAT_ES": "Tu esposa será como una vid fecunda",
+    "CEI": "La tua sposa come vite feconda nell'intimità della tua casa; i tuoi figli come virgulti d'ulivo intorno alla tua mensa.",
+    "LXX": "ἡ γυνή σου ὡς ἄμπελος εὐθηνοῦσα ἐν τοῖς κλίτεσι τῆς οἰκίας σου· οἱ υἱοί σου ὡς νεόφυτα ἐλαιῶν κύκλῳ τῆς τραπέζης σου.",
+    "VUL": "Uxor tua sicut vitis abundans/ in lateribus domus tuæ ;/ filii tui sicut novellæ olivarum/ in circuitu mensæ tuæ./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "הִנֵּ֣ה כִי כֵ֭ן יְבֹ֥רַךְ גָּ֗בֶר יְרֵ֣א יְהוָֽה׃",
+    "SYN": "Но Господь праведен: Он рассек узы нечестивых.",
+    "NEO": "Voilà comment sera béni l’homme qui craint \\+w Yahweh|strong=\"H3068\"\\+w**.",
+    "NAB": "Just so will they be blessed who fear the LORD.",
+    "VAT_ES": "&iexcl;Así será bendecido",
+    "CEI": "Così sarà benedetto l'uomo che teme il Signore.",
+    "LXX": "ἰδοὺ οὕτως εὐλογηθήσεται ὁ ἄνθρωπος ὁ φοβούμενος τὸν κύριον.",
+    "VUL": "Ecce sic benedicetur homo/ qui timet Dominum./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "יְבָרֶכְ/ךָ֥ יְהוָ֗ה מִ/צִּ֫יּ֥וֹן וּ֭/רְאֵה בְּ/ט֣וּב יְרוּשָׁלִָ֑ם כֹּ֝֗ל יְמֵ֣י חַיֶּֽי/ךָ׃",
+    "SYN": "Да постыдятся и обратятся назад все ненавидящие Сион!",
+    "NEO": "Que \\+w Yahweh|strong=\"H3068\"\\+w** te bénisse de Sion !",
+    "NAB": "May the LORD bless you from Zion, all the days of your life That you may share Jerusalem's joy",
+    "VAT_ES": "&iexcl;Que el Señor te bendiga desde Sión",
+    "CEI": "Ti benedica il Signore da Sion! Possa tu vedere la prosperità di Gerusalemme per tutti i giorni della tua vita.",
+    "LXX": "εὐλογήσαι σε Κύριος ἐκ Σιών, καὶ ἴδοις τὰ ἀγαθὰ Ἰερουσαλὴμ πάσας τὰς ἡμέρας τῆς ζωῆς σου,",
+    "VUL": "Benedicat tibi Dominus ex Sion,/ et videas bona Jerusalem omnibus diebus vitæ tuæ./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "וּ/רְאֵֽה בָנִ֥ים לְ/בָנֶ֑י/ךָ שָׁ֝ל֗וֹם עַל יִשְׂרָאֵֽל׃",
+    "SYN": "Да будут, как трава на кровлях, которая прежде, нежели будет исторгнута, засыхает,",
+    "NEO": "Puisses-tu voir les enfants de tes enfants ! Que la paix soit sur Israël !",
+    "NAB": "and live to see your children's children. Peace upon Israel!",
+    "VAT_ES": "y veas a los hijos de tus hijos!",
+    "CEI": "Possa tu vedere i figli dei tuoi figli. Pace su Israele!",
+    "VUL": "Et videas filios filiorum tuorum :/ pacem super Israël.]"
+   }
   }
+ }
 }

@@ -1,104 +1,198 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_015",
-  "book_key": "PSAL",
-  "sequence": 15,
-  "chapter_in": {
-    "MT": 15,
-    "VUL": 14,
-    "LXX": 14
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_015",
+ "book_key": "PSAL",
+ "sequence": 15,
+ "chapter_in": {
+  "VUL": 15,
+  "LXX": 15,
+  "MT": 16
+ },
+ "mt_sources": [
+  "16"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "מִכְתָּ֥ם לְ/דָוִ֑ד שָֽׁמְרֵ֥/נִי אֵ֝֗ל כִּֽי חָסִ֥יתִי בָֽ/ךְ׃",
+    "SYN": "Услышь, Господи, правду [мою], внемли воплю моему, прими мольбу из уст нелживых.",
+    "NEO": "Hymne de David.",
+    "NAB": "A miktam of David. Keep me safe, O God; in you I take refuge",
+    "CEI": "Miktam. Di Davide. Proteggimi, o Dio: in te mi rifugio.",
+    "LXX": "Στηλογραφία τῷ Δαυείδ. Φύλαξόν με, Κύριε, ὅτι ἐπὶ σοὶ ἤλπισα.",
+    "VUL": "Tituli inscriptio, ipsi David. [Conserva me, Domine, quoniam speravi in te./"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "מִזְמ֗וֹר לְ/דָ֫וִ֥ד יְ֭הֹוָה מִי יָג֣וּר בְּ/אָהֳלֶ֑/ךָ מִֽי יִ֝שְׁכֹּ֗ן בְּ/הַ֣ר קָדְשֶֽׁ/ךָ׃",
-        "LXX": "Στηλογραφία τῷ Δαυείδ. Φύλαξόν με, Κύριε, ὅτι ἐπὶ σοὶ ἤλπισα.",
-        "VUL": "Tituli inscriptio, ipsi David. [Conserva me, Domine, quoniam speravi in te./",
-        "SYN": "Храни меня, Боже, ибо я на Тебя уповаю.",
-        "NEO": "Psaume de David.",
-        "NAB": "A psalm of David. LORD, who may abide in your tent? Who may dwell on your holy mountain?",
-        "CEI": "Salmo. Di Davide. Signore, chi abiterà nella tua tenda? Chi dimorerà sul tuo santo monte?"
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "הוֹלֵ֣ךְ תָּ֭מִים וּ/פֹעֵ֥ל צֶ֑דֶק וְ/דֹבֵ֥ר אֱ֝מֶ֗ת בִּ/לְבָבֽ/וֹ׃",
-        "LXX": "εἶπα τῷ κυρίῳ Κύριός μου εἶ σύ.",
-        "VUL": "Dixi Domino : Deus meus es tu,/ quoniam bonorum meorum non eges./",
-        "SYN": "Я сказал Господу: Ты - Господь мой; блага мои Тебе не нужны.",
-        "NEO": "Celui qui marche dans l’innocence, qui pratique la justice, et qui dit la vérité dans son cœur.",
-        "NAB": "IWhoever walks without blame, doing what is right, speaking truth from the heart;",
-        "VAT_ES": "El que procede rectamente y practica la justicia;",
-        "CEI": "Colui che cammina senza colpa, agisce con giustizia e parla lealmente,"
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "לֹֽא רָגַ֨ל עַל לְשֹׁנ֗/וֹ לֹא עָשָׂ֣ה לְ/רֵעֵ֣/הוּ רָעָ֑ה וְ֝/חֶרְפָּ֗ה לֹא נָשָׂ֥א עַל קְרֹֽב/וֹ׃",
-        "LXX": "τοῖς ἁγίοις τοῖς ἐν τῇ γῇ αὐτοῦ ἐθαυμάστωσεν πάντα τὰ θελήματα αὐτοῦ ἐν αὐτοῖς.",
-        "VUL": "Sanctis qui sunt in terra ejus,/ mirificavit omnes voluntates meas in eis./",
-        "SYN": "К святым, которые на земле, и к дивным _Твоим_ - к ним все желание мое.",
-        "NEO": "Il ne calomnie pas avec sa langue, il ne fait pas de mal à son frère, et ne jette pas l’opprobre sur son prochain.",
-        "NAB": "Who does not slander a neighbor, does no harm to another, never defames a friend;",
-        "VAT_ES": "y no calumnia con su lengua. El que no hace mal a su prójimo",
-        "CEI": "non dice calunnia con la lingua, non fa danno al suo prossimo e non lancia insulto al suo vicino."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "נִבְזֶ֤ה בְּֽ/עֵ֘ינָ֤י/ו נִמְאָ֗ס וְ/אֶת יִרְאֵ֣י יְהוָ֣ה יְכַבֵּ֑ד נִשְׁבַּ֥ע לְ֝/הָרַ֗ע וְ/לֹ֣א יָמִֽר׃",
-        "LXX": "ἐπληθύνθησαν αἱ ἀσθένειαι αὐτῶν, μετὰ ταῦτα ἐτάχυναν· οὐ μὴ συναγάγω τὰς συναγωγὰς αὐτῶν ἐξ αἱμάτων, οὐδὲ μὴ μνησθῶ τῶν ὀνομάτων αὐτῶν διὰ χειλέων μου.",
-        "VUL": "Multiplicatæ sunt infirmitates eorum :/ postea acceleraverunt./ Non congregabo conventicula eorum de sanguinibus,/ nec memor ero nominum eorum per labia mea./",
-        "SYN": "Пусть умножаются скорби у тех, которые текут к _богу_ чужому; я не возлию кровавых возлияний их и не помяну имен их устами моими.",
-        "NEO": "A ses yeux le réprouvé est digne de honte, mais il honore ceux qui craignent \\+w Yahweh|strong=\"H3068\"\\+w**. S’il a fait un serment à son préjudice, il n’y change rien,",
-        "NAB": "Who disdains the wicked, but honors those who fear the LORD; Who keeps an oath despite the cost,",
-        "VAT_ES": "el que no estima a quien Dios reprueba",
-        "CEI": "Ai suoi occhi è spregevole il malvagio, ma onora chi teme il Signore. Anche se giura a suo danno, non cambia;"
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "כַּסְפּ֤/וֹ לֹא נָתַ֣ן בְּ/נֶשֶׁךְ֮ וְ/שֹׁ֥חַד עַל נָקִ֗י לֹ֥א לָ֫קָ֥ח עֹֽשֵׂה אֵ֑לֶּה לֹ֖א יִמּ֣וֹט לְ/עוֹלָֽם׃",
-        "LXX": "Κύριος ἡ μερὶς τῆς κληρονομίας μου καὶ τοῦ ποτηρίου μου· σὺ εἶ ὁ ἀποκαθιστῶν τὴν κληρονομίαν μου ἐμοί.",
-        "VUL": "Dominus pars hæreditatis meæ, et calicis mei :/ tu es qui restitues hæreditatem meam mihi./",
-        "SYN": "Господь есть часть наследия моего и чаши моей. Ты держишь жребий мой.",
-        "NEO": "Il ne prête pas son argent à usure, et il n’accepte pas de présent contre l’innocent :",
-        "NAB": "lends no money at interest, accepts no bribe against the innocent. III Whoever acts like this shall never be shaken.",
-        "VAT_ES": "el que no presta su dinero a usura",
-        "CEI": "presta denaro senza fare usura, e non accetta doni contro l'innocente. Colui che agisce in questo modo resterà saldo per sempre."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "אָמַ֣רְתְּ לַֽ֭/יהוָה אֲדֹנָ֣/י אָ֑תָּה ט֝וֹבָתִ֗/י בַּל עָלֶֽי/ךָ׃",
+    "SYN": "От Твоего лица суд мне да изыдет; да воззрят очи Твои на правоту.",
+    "NEO": "Je dis à \\+w Yahweh|strong=\"H3068\"\\+w** : « Tu es mon Seigneur, toi seul es mon bien. »",
+    "NAB": "I say to the Lord, you are my Lord, you are my only good.",
+    "VAT_ES": "Yo digo al Señor:",
+    "CEI": "Ho detto a Dio: \"Sei tu il mio Signore, senza di te non ho alcun bene\".",
+    "LXX": "εἶπα τῷ κυρίῳ Κύριός μου εἶ σύ.",
+    "VUL": "Dixi Domino : Deus meus es tu,/ quoniam bonorum meorum non eges./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "לִ֭/קְדוֹשִׁים אֲשֶׁר בָּ/אָ֣רֶץ הֵ֑מָּה וְ֝/אַדִּירֵ֗י כָּל חֶפְצִ/י בָֽ/ם׃",
+    "SYN": "Ты испытал сердце мое, посетил меня ночью, искусил меня и ничего не нашел; от мыслей моих не отступают уста мои.",
+    "NEO": "Les saints qui sont dans le pays, ces illustres, sont l’objet de toute mon affection.",
+    "NAB": "Worthless are all the false gods of the land. Accursed are all who delight in them.",
+    "VAT_ES": "Ellos, en cambio, dicen a los dioses de la tierra:",
+    "CEI": "Per i santi, che sono sulla terra, uomini nobili, è tutto il mio amore.",
+    "LXX": "τοῖς ἁγίοις τοῖς ἐν τῇ γῇ αὐτοῦ ἐθαυμάστωσεν πάντα τὰ θελήματα αὐτοῦ ἐν αὐτοῖς.",
+    "VUL": "Sanctis qui sunt in terra ejus,/ mirificavit omnes voluntates meas in eis./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "יִרְבּ֥וּ עַצְּבוֹתָ/ם֮ אַחֵ֪ר מָ֫הָ֥רוּ בַּל אַסִּ֣יךְ נִסְכֵּי/הֶ֣ם מִ/דָּ֑ם וּֽ/בַל אֶשָּׂ֥א אֶת שְׁ֝מוֹתָ֗/ם עַל שְׂפָתָֽ/י׃",
+    "SYN": "В делах человеческих, по слову уст Твоих, я охранял себя от путей притеснителя.",
+    "NEO": "On multiplie les idoles, on court après les dieux étrangers ; je ne répandrai pas leurs libations de sang, je ne mettrai pas leurs noms sur mes lèvres.",
+    "NAB": "They multiply their sorrows who court other gods. Blood libations to them I will not pour out, nor will I take their names upon my lips.",
+    "VAT_ES": "Multiplican sus ídolos y corren tras ellos,",
+    "CEI": "Si affrettino altri a costruire idoli: io non spanderò le loro libazioni di sangue né pronunzierò con le mie labbra i loro nomi.",
+    "LXX": "ἐπληθύνθησαν αἱ ἀσθένειαι αὐτῶν, μετὰ ταῦτα ἐτάχυναν· οὐ μὴ συναγάγω τὰς συναγωγὰς αὐτῶν ἐξ αἱμάτων, οὐδὲ μὴ μνησθῶ τῶν ὀνομάτων αὐτῶν διὰ χειλέων μου.",
+    "VUL": "Multiplicatæ sunt infirmitates eorum :/ postea acceleraverunt./ Non congregabo conventicula eorum de sanguinibus,/ nec memor ero nominum eorum per labia mea./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "יְֽהוָ֗ה מְנָת חֶלְקִ֥/י וְ/כוֹסִ֑/י אַ֝תָּ֗ה תּוֹמִ֥יךְ גּוֹרָלִֽ/י׃",
+    "SYN": "Утверди шаги мои на путях Твоих, да не колеблются стопы мои.",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est la part de mon héritage et de ma coupe, c’est toi qui m’assures mon lot.",
+    "NAB": "LORD, my allotted portion and my cup, you have made my destiny secure.",
+    "VAT_ES": "El Señor es la parte de mi herencia y mi cáliz,",
+    "CEI": "Il Signore è mia parte di eredità e mio calice: nelle tue mani è la mia vita.",
+    "LXX": "Κύριος ἡ μερὶς τῆς κληρονομίας μου καὶ τοῦ ποτηρίου μου· σὺ εἶ ὁ ἀποκαθιστῶν τὴν κληρονομίαν μου ἐμοί.",
+    "VUL": "Dominus pars hæreditatis meæ, et calicis mei :/ tu es qui restitues hæreditatem meam mihi./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "חֲבָלִ֣ים נָֽפְלוּ לִ֭/י בַּ/נְּעִמִ֑ים אַף נַ֝חֲלָ֗ת שָֽׁפְרָ֥ה עָלָֽ/י׃",
+    "SYN": "К Тебе взываю я, ибо Ты услышишь меня, Боже; приклони ухо Твое ко мне, услышь слова мои.",
+    "NEO": "Le cordeau a mesuré pour moi une portion délicieuse ; oui, un splendide héritage m’est échu.",
+    "NAB": "Pleasant places were measured out for me; fair to me indeed is my inheritance.",
+    "VAT_ES": "Me ha tocado un lugar de delicias,",
+    "CEI": "Per me la sorte è caduta su luoghi deliziosi, è magnifica la mia eredità.",
+    "VUL": "Funes ceciderunt mihi in præclaris ;/ etenim hæreditas mea præclara est mihi./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "אֲבָרֵ֗ךְ אֶת יְ֭הוָה אֲשֶׁ֣ר יְעָצָ֑/נִי אַף לֵ֝יל֗וֹת יִסְּר֥וּ/נִי כִלְיוֹתָֽ/י׃",
+    "SYN": "Яви дивную милость Твою, Спаситель уповающих [на Тебя] от противящихся деснице Твоей.",
+    "NEO": "Je bénis \\+w Yahweh|strong=\"H3068\"\\+w** qui m’a conseillé ; la nuit même, mes reins m’avertissent.",
+    "NAB": "I bless the LORD who counsels me; even at night my heart exhorts me.",
+    "VAT_ES": "Bendeciré al Señor que me aconseja,",
+    "CEI": "Benedico il Signore che mi ha dato consiglio; anche di notte il mio cuore mi istruisce.",
+    "VUL": "Benedicam Dominum qui tribuit mihi intellectum ;/ insuper et usque ad noctem increpuerunt me renes mei./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "שִׁוִּ֬יתִי יְהוָ֣ה לְ/נֶגְדִּ֣/י תָמִ֑יד כִּ֥י מִֽ֝/ימִינִ֗/י בַּל אֶמּֽוֹט׃",
+    "SYN": "Храни меня, как зеницу ока; в тени крыл Твоих укрой меня",
+    "NEO": "Je mets \\+w Yahweh|strong=\"H3068\"\\+w** constamment sous mes yeux, car il est à ma droite : je ne chancellerai point.",
+    "NAB": "I keep the LORD always before me; with the Lord at my right, I shall never be shaken.",
+    "VAT_ES": "Tengo siempre presente al Señor:",
+    "CEI": "Io pongo sempre innanzi a me il Signore, sta alla mia destra, non posso vacillare.",
+    "VUL": "Providebam Dominum in conspectu meo semper :/ quoniam a dextris est mihi, ne commovear./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "לָ/כֵ֤ן שָׂמַ֣ח לִ֭בִּ/י וַ/יָּ֣גֶל כְּבוֹדִ֑/י אַף בְּ֝שָׂרִ֗/י יִשְׁכֹּ֥ן לָ/בֶֽטַח׃",
+    "SYN": "от лица нечестивых, нападающих на меня, - от врагов души моей, окружающих меня:",
+    "NEO": "Aussi mon cœur est dans la joie, mon âme dans l’allégresse, mon corps lui-même repose en sécurité.",
+    "NAB": "Therefore my heart is glad, my soul rejoices; my body also dwells secure,",
+    "VAT_ES": "Por eso mi corazón se alegra,",
+    "CEI": "Di questo gioisce il mio cuore, esulta la mia anima; anche il mio corpo riposa al sicuro,",
+    "VUL": "Propter hoc lætatum est cor meum, et exsultavit lingua mea ;/ insuper et caro mea requiescet in spe./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "כִּ֤י לֹא תַעֲזֹ֣ב נַפְשִׁ֣/י לִ/שְׁא֑וֹל לֹֽא תִתֵּ֥ן חֲ֝סִידְ/ךָ֗ לִ/רְא֥וֹת שָֽׁחַת׃",
+    "SYN": "они заключились в туке своем, надменно говорят устами своими.",
+    "NEO": "Car tu ne livreras pas mon âme au schéol, tu ne permettras pas que celui qui t’aime voie la corruption.",
+    "NAB": "For you will not abandon me to Sheol, nor let your faithful servant see the pit.",
+    "VAT_ES": "porque no me entregarás la Muerte",
+    "CEI": "perché non abbandonerai la mia vita nel sepolcro, né lascerai che il tuo santo veda la corruzione.",
+    "VUL": "Quoniam non derelinques animam meam in inferno,/ nec dabis sanctum tuum videre corruptionem./ Notas mihi fecisti vias vitæ ;/ adimplebis me lætitia cum vultu tuo :/ delectationes in dextera tua usque in finem.]"
+   }
   }
+ },
+ "_unaligned_mt": [
+  {
+   "mt_psalm": 16,
+   "mt_verse": 11,
+   "text": {
+    "WLC": "תּֽוֹדִיעֵ/נִי֮ אֹ֤רַח חַ֫יִּ֥ים שֹׂ֣בַע שְׂ֭מָחוֹת אֶת פָּנֶ֑י/ךָ נְעִמ֖וֹת בִּ/ימִינְ/ךָ֣ נֶֽצַח׃",
+    "LXX": "ἐκβάλλοντές με νυνὶ περιεκύκλωσάν με, τοὺς ὀφθαλμοὺς αὐτῶν ἔθεντο ἐκκλῖναι ἐν τῇ γῇ·",
+    "VUL": "Projicientes me nunc circumdederunt me ;/ oculos suos statuerunt declinare in terram./",
+    "SYN": "На всяком шагу нашем ныне окружают нас; они устремили глаза свои, чтобы низложить _меня_ на землю;",
+    "NEO": "Tu me feras connaître le sentier de la vie ; il y a plénitude de joie devant ta face, des délices éternelles dans ta droite.",
+    "NAB": "You will show me the path to life, abounding joy in your presence, the delights at your right hand forever.",
+    "VAT_ES": "Me harás conocer el camino de la vida,",
+    "CEI": "Mi indicherai il sentiero della vita, gioia piena nella tua presenza, dolcezza senza fine alla tua destra."
+   }
+  }
+ ]
 }

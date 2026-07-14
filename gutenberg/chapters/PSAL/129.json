@@ -1,158 +1,148 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_129",
-  "book_key": "PSAL",
-  "sequence": 129,
-  "chapter_in": {
-    "MT": 129,
-    "VUL": 128,
-    "LXX": 128
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_129",
+ "book_key": "PSAL",
+ "sequence": 129,
+ "chapter_in": {
+  "VUL": 129,
+  "LXX": 129,
+  "MT": 130
+ },
+ "mt_sources": [
+  "130"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "שִׁ֥יר הַֽ/מַּעֲל֑וֹת מִ/מַּעֲמַקִּ֖ים קְרָאתִ֣י/ךָ יְהוָֽה׃",
+    "SYN": "Господи! не надмевалось сердце мое и не возносились очи мои, и я не входил в великое и для меня недосягаемое.",
+    "NEO": "Cantique des montées.",
+    "NAB": "A song of ascents. Out of the depths I call to you, LORD;",
+    "CEI": "Canto delle ascensioni. Dal profondo a te grido, o Signore;",
+    "LXX": "ᾨδὴ τῶν ἀναβαθμῶν. Ἐκ βαθέων ἐκέκραξά σε, Κύριε·",
+    "VUL": "Canticum graduum. [De profundis clamavi ad te, Domine ;/"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "שִׁ֗יר הַֽ/מַּ֫עֲל֥וֹת רַ֭בַּת צְרָר֣וּ/נִי מִ/נְּעוּרַ֑/י יֹֽאמַר נָ֝א יִשְׂרָאֵֽל׃",
-        "LXX": "ᾨδὴ τῶν ἀναβαθμῶν. Ἐκ βαθέων ἐκέκραξά σε, Κύριε·",
-        "VUL": "Canticum graduum. [De profundis clamavi ad te, Domine ;/",
-        "SYN": "Из глубины взываю к Тебе, Господи.",
-        "NEO": "Cantique des montées.",
-        "NAB": "A song of ascents. Much have they oppressed me from my youth, now let Israel say.",
-        "CEI": "Canto delle ascensioni. Dalla giovinezza molto mi hanno perseguitato, - lo dica Israele -"
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "רַ֭בַּת צְרָר֣וּ/נִי מִ/נְּעוּרָ֑/י גַּ֝ם לֹא יָ֥כְלוּ לִֽ/י׃",
-        "LXX": "Κύριε, εἰσάκουσον τῆς φωνῆς μου· γενηθήτω τὰ ὦτά σου προσέχοντα εἰς τὴν φωνὴν τῆς δεήσεώς μου.",
-        "VUL": "Domine, exaudi vocem meam./ Fiant aures tuæ intendentes in vocem deprecationis meæ./",
-        "SYN": "Господи! услышь голос мой. Да будут уши Твои внимательны к голосу молений моих.",
-        "NEO": "Ils m’ont cruellement opprimé dès ma jeunesse, mais ils n’ont pas prévalu contre moi.",
-        "NAB": "Much have they oppressed me from my youth, yet they have not prevailed.",
-        "VAT_ES": "cuánto me han asediado desde mi juventud,",
-        "CEI": "dalla giovinezza molto mi hanno perseguitato, ma non hanno prevalso."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "עַל גַּ֭בִּ/י חָרְשׁ֣וּ חֹרְשִׁ֑ים הֶ֝אֱרִ֗יכוּ ל/מענות/ם לְ/מַעֲנִיתָֽ/ם׃",
-        "LXX": "ἐὰν ἀνομίας παρατηρήσῃ, Κύριε, Κύριε, τίς ὑποστήσηται;",
-        "VUL": "Si iniquitates observaveris, Domine,/ Domine, quis sustinebit ?/",
-        "SYN": "Если Ты, Господи, будешь замечать беззакония, - Господи! кто устоит?",
-        "NEO": "Ils ont labouré mon dos, ils y ont tracé de longs sillons.",
-        "NAB": "Upon my back the plowers plowed, as they traced their long furrows.",
-        "VAT_ES": "Clavaron un arado en mis espaldas",
-        "CEI": "Sul mio dorso hanno arato gli aratori, hanno fatto lunghi solchi."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "יְהוָ֥ה צַדִּ֑יק קִ֝צֵּ֗ץ עֲב֣וֹת רְשָׁעִֽים׃",
-        "LXX": "ὅτι παρὰ σοὶ ὁ ἱλασμός ἐστιν. ἕνεκεν τοῦ ὀνόματός σου",
-        "VUL": "Quia apud te propitiatio est ;/ et propter legem tuam sustinui te, Domine./ Sustinuit anima mea in verbo ejus :/",
-        "SYN": "Но у Тебя прощение, да благоговеют пред Тобою.",
-        "NEO": "Mais \\+w Yahweh|strong=\"H3068\"\\+w** est juste : il a coupé les liens des méchants.",
-        "NAB": "But the just LORD cut me free from the ropes of the yoke of the wicked.",
-        "VAT_ES": "Pero el Señor, que es justo,",
-        "CEI": "Il Signore è giusto: ha spezzato il giogo degli empi."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "יֵ֭בֹשׁוּ וְ/יִסֹּ֣גוּ אָח֑וֹר כֹּ֝֗ל שֹׂנְאֵ֥י צִיּֽוֹן׃",
-        "LXX": "ὑπέμεινα, Κύριε· ὑπέμεινεν ἡ ψυχή μου εἰς τὸν νόμον αὐτοῦ.",
-        "VUL": "speravit anima mea in Domino./",
-        "SYN": "Надеюсь на Господа, надеется душа моя; на слово Его уповаю.",
-        "NEO": "Qu’ils soient confondus et qu’ils reculent en arrière, tous ceux qui haïssent Sion !",
-        "NAB": "May they be scattered in disgrace, all who hate Zion.",
-        "VAT_ES": "&iexcl;Retrocedan llenos de verg&uuml;enza",
-        "CEI": "Siano confusi e volgano le spalle quanti odiano Sion."
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "יִ֭הְיוּ כַּ/חֲצִ֣יר גַּגּ֑וֹת שֶׁ/קַּדְמַ֖ת שָׁלַ֣ף יָבֵֽשׁ׃",
-        "LXX": "ἤλπισεν ἡ ψυχή μου ἐπὶ τὸν κύριον ἀπὸ φυλακῆς πρωίας μέχρι νυκτός·",
-        "VUL": "A custodia matutina usque ad noctem,/ speret Israël in Domino./",
-        "SYN": "Душа моя ожидает Господа более, нежели стражи - утра, более, нежели стражи - утра.",
-        "NEO": "Qu’ils soient comme l’herbe des toits, qui sèche avant qu’on l’arrache.",
-        "NAB": "May they be like grass on the rooftops withered in early growth,",
-        "VAT_ES": "Sean como la hierba de los techos,",
-        "CEI": "Siano come l'erba dei tetti: prima che sia strappata, dissecca;"
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "שֶׁ/לֹּ֤א מִלֵּ֖א כַפּ֥/וֹ קוֹצֵ֗ר וְ/חִצְנ֥/וֹ מְעַמֵּֽר׃",
-        "LXX": "ὅτι παρὰ τῷ κυρίῳ τὸ ἔλεος, καὶ πολλὴ παρ’ αὐτῷ λύτρωσις,",
-        "VUL": "Quia apud Dominum misericordia,/ et copiosa apud eum redemptio./",
-        "SYN": "Да уповает Израиль на Господа, ибо у Господа милость и многое у Него избавление,",
-        "NEO": "Le moissonneur n’en remplit pas sa main, ni celui qui lie les gerbes, son giron ;",
-        "NAB": "Never to fill the reaper's hands, nor the arms of the binders of sheaves,",
-        "VAT_ES": "Con ella, el segador no llena su mano,",
-        "CEI": "non se ne riempie la mano il mietitore, né il grembo chi raccoglie covoni."
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "וְ/לֹ֤א אָֽמְר֨וּ הָ/עֹבְרִ֗ים בִּרְכַּֽת יְהוָ֥ה אֲלֵי/כֶ֑ם בֵּרַ֥כְנוּ אֶ֝תְ/כֶ֗ם בְּ/שֵׁ֣ם יְהוָֽה׃",
-        "LXX": "καὶ αὐτὸς λυτρώσεται τὸν Ἰσραὴλ ἐκ πασῶν τῶν ἀνομιῶν αὐτοῦ.",
-        "VUL": "Et ipse redimet Israël/ ex omnibus iniquitatibus ejus.]",
-        "SYN": "и Он избавит Израиля от всех беззаконий его.",
-        "NEO": "et les passants ne disent pas : « Que la bénédiction de \\+w Yahweh|strong=\"H3068\"\\+w** soit sur vous ! » — « Nous vous bénissons au nom de \\+w Yahweh|strong=\"H3068\"\\+w**. »",
-        "NAB": "With none passing by to call out: \"The blessing of the LORD be upon you! We bless you in the name of the LORD!\"",
-        "VAT_ES": "Y nadie comenta al pasar:",
-        "CEI": "I passanti non possono dire: \"La benedizione del Signore sia su di voi, vi benediciamo nel nome del Signore\"."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "אֲדֹנָ/י֮ שִׁמְעָ֪/ה בְ/ק֫וֹלִ֥/י תִּהְיֶ֣ינָה אָ֭זְנֶי/ךָ קַשֻּׁב֑וֹת לְ֝/ק֗וֹל תַּחֲנוּנָֽ/י׃",
+    "SYN": "Не смирял ли я и не успокаивал ли души моей, как дитяти, отнятого от груди матери? душа моя была во мне, как дитя, отнятое от груди.",
+    "NEO": "Seigneur, écoute ma voix ; que tes oreilles soient attentives aux accents de ma prière !",
+    "NAB": "Lord, hear my cry! May your ears be attentive to my cry for mercy.",
+    "VAT_ES": "&iexcl;Señor, oye mi voz!",
+    "CEI": "Signore, ascolta la mia voce. Siano i tuoi orecchi attenti alla voce della mia preghiera.",
+    "LXX": "Κύριε, εἰσάκουσον τῆς φωνῆς μου· γενηθήτω τὰ ὦτά σου προσέχοντα εἰς τὴν φωνὴν τῆς δεήσεώς μου.",
+    "VUL": "Domine, exaudi vocem meam./ Fiant aures tuæ intendentes in vocem deprecationis meæ./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "אִם עֲוֺנ֥וֹת תִּשְׁמָר יָ֑הּ אֲ֝דֹנָ֗/י מִ֣י יַעֲמֹֽד׃",
+    "SYN": "Да уповает Израиль на Господа отныне и вовек.",
+    "NEO": "Si tu gardes le souvenir de l’iniquité, \\+w Yahweh|strong=\"H3068\"\\+w**, Seigneur, qui pourra subsister ?",
+    "NAB": "If you, LORD, mark our sins, Lord, who can stand?",
+    "VAT_ES": "Si tienes en cuenta las culpas, Señor,",
+    "CEI": "Se consideri le colpe, Signore, Signore, chi potrà sussistere?",
+    "LXX": "ἐὰν ἀνομίας παρατηρήσῃ, Κύριε, Κύριε, τίς ὑποστήσηται;",
+    "VUL": "Si iniquitates observaveris, Domine,/ Domine, quis sustinebit ?/"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "כִּֽי עִמְּ/ךָ֥ הַ/סְּלִיחָ֑ה לְ֝מַ֗עַן תִּוָּרֵֽא׃",
+    "NEO": "Mais auprès de toi est le pardon, afin qu’on te révère.",
+    "NAB": "But with you is forgiveness and so you are revered.",
+    "VAT_ES": "Pero en ti se encuentra el perdón,",
+    "CEI": "Ma presso di te è il perdono: e avremo il tuo timore.",
+    "LXX": "ὅτι παρὰ σοὶ ὁ ἱλασμός ἐστιν. ἕνεκεν τοῦ ὀνόματός σου",
+    "VUL": "Quia apud te propitiatio est ;/ et propter legem tuam sustinui te, Domine./ Sustinuit anima mea in verbo ejus :/"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "קִוִּ֣יתִי יְ֭הוָה קִוְּתָ֣ה נַפְשִׁ֑/י וְֽ/לִ/דְבָר֥/וֹ הוֹחָֽלְתִּי׃",
+    "NEO": "J’espère en \\+w Yahweh|strong=\"H3068\"\\+w** ; mon âme espère, et j’attends sa parole.",
+    "NAB": "I wait with longing for the LORD, my soul waits for his word.",
+    "VAT_ES": "Mi alma espera en el Señor,",
+    "CEI": "Io spero nel Signore, l'anima mia spera nella sua parola.",
+    "LXX": "ὑπέμεινα, Κύριε· ὑπέμεινεν ἡ ψυχή μου εἰς τὸν νόμον αὐτοῦ.",
+    "VUL": "speravit anima mea in Domino./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "נַפְשִׁ֥/י לַֽ/אדֹנָ֑/י מִ/שֹּׁמְרִ֥ים לַ֝/בֹּ֗קֶר שֹׁמְרִ֥ים לַ/בֹּֽקֶר׃",
+    "NEO": "Mon âme aspire après le Seigneur plus que les guetteurs n’aspirent après l’aurore.",
+    "NAB": "My soul looks for the Lord more than sentinels for daybreak. More than sentinels for daybreak,",
+    "VAT_ES": "Mi alma espera al Señor,",
+    "CEI": "L'anima mia attende il Signore più che le sentinelle l'aurora.",
+    "LXX": "ἤλπισεν ἡ ψυχή μου ἐπὶ τὸν κύριον ἀπὸ φυλακῆς πρωίας μέχρι νυκτός·",
+    "VUL": "A custodia matutina usque ad noctem,/ speret Israël in Domino./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "יַחֵ֥ל יִשְׂרָאֵ֗ל אֶל יְה֫וָה כִּֽי עִם יְהוָ֥ה הַ/חֶ֑סֶד וְ/הַרְבֵּ֖ה עִמּ֣/וֹ פְדֽוּת׃",
+    "NEO": "Israël, mets ton espoir en \\+w Yahweh|strong=\"H3068\"\\+w** ! Car avec \\+w Yahweh|strong=\"H3068\"\\+w** est la miséricorde, avec lui une surabondante délivrance.",
+    "NAB": "let Israel look for the LORD, For with the LORD is kindness, with him is full redemption,",
+    "VAT_ES": "espere Israel al Señor,",
+    "CEI": "Israele attenda il Signore, perché presso il Signore è la misericordia e grande presso di lui la redenzione.",
+    "LXX": "ὅτι παρὰ τῷ κυρίῳ τὸ ἔλεος, καὶ πολλὴ παρ’ αὐτῷ λύτρωσις,",
+    "VUL": "Quia apud Dominum misericordia,/ et copiosa apud eum redemptio./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "וְ֭/הוּא יִפְדֶּ֣ה אֶת יִשְׂרָאֵ֑ל מִ֝/כֹּ֗ל עֲוֺנֹתָֽי/ו׃",
+    "NEO": "C’est lui qui rachètera Israël de toutes ses iniquités.",
+    "NAB": "And God will redeem Israel from all their sins.",
+    "VAT_ES": "él redimirá a Israel",
+    "CEI": "Egli redimerà Israele da tutte le sue colpe.",
+    "LXX": "καὶ αὐτὸς λυτρώσεται τὸν Ἰσραὴλ ἐκ πασῶν τῶν ἀνομιῶν αὐτοῦ.",
+    "VUL": "Et ipse redimet Israël/ ex omnibus iniquitatibus ejus.]"
+   }
   }
+ }
 }

@@ -1,248 +1,341 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_079",
-  "book_key": "PSAL",
-  "sequence": 79,
-  "chapter_in": {
-    "MT": 79,
-    "VUL": 78,
-    "LXX": 78
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_079",
+ "book_key": "PSAL",
+ "sequence": 79,
+ "chapter_in": {
+  "VUL": 79,
+  "LXX": 79,
+  "MT": 80
+ },
+ "mt_sources": [
+  "80"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "לַ/מְנַצֵּ֥חַ אֶל שֹׁשַׁנִּ֑ים עֵד֖וּת לְ/אָסָ֣ף מִזְמֽוֹר׃",
+    "SYN": "Начальнику хора. На Гефском орудии. Псалом Асафа.",
+    "NEO": "Au maître de chant. Sur les lis du témoignage. Psaume d’Asaph.",
+    "NAB": "For the leader; according to \"Lilies.\" Eduth. A psalm of Asaph.",
+    "CEI": "Al maestro del coro. Su \"Giglio del precetto\". Di Asaf. Salmo.",
+    "LXX": "Εἰς τὸ τέλος, ὑπὲρ τῶν ἀλλοιωθησομένων· μαρτύριον τῷ Ἀσάφ, ψαλμὸς ὑπὲρ τοῦ Ἀσσυρίου.",
+    "VUL": "In finem, pro iis qui commutabuntur. Testimonium Asaph, psalmus."
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "מִזְמ֗וֹר לְ/אָ֫סָ֥ף אֱֽלֹהִ֡ים בָּ֤אוּ גוֹיִ֨ם בְּֽ/נַחֲלָתֶ֗/ךָ טִ֭מְּאוּ אֶת הֵיכַ֣ל קָדְשֶׁ֑/ךָ שָׂ֖מוּ אֶת יְרוּשָׁלִַ֣ם לְ/עִיִּֽים׃",
-        "LXX": "Εἰς τὸ τέλος, ὑπὲρ τῶν ἀλλοιωθησομένων· μαρτύριον τῷ Ἀσάφ, ψαλμὸς ὑπὲρ τοῦ Ἀσσυρίου.",
-        "VUL": "In finem, pro iis qui commutabuntur. Testimonium Asaph, psalmus.",
-        "SYN": "Начальнику хора. На музыкальном _орудии_ Шошанним-Эдуф. Псалом Асафа.",
-        "NEO": "Psaume d’Asaph.",
-        "NAB": "A psalm of Asaph. O God, the nations have invaded your heritage; they have defiled your holy temple, have laid Jerusalem in ruins.",
-        "CEI": "Salmo. Di Asaf. O Dio, nella tua eredità sono entrate le nazioni, hanno profanato il tuo santo tempio, hanno ridotto in macerie Gerusalemme."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "נָֽתְנ֡וּ אֶת נִבְלַ֬ת עֲבָדֶ֗י/ךָ מַ֭אֲכָל לְ/ע֣וֹף הַ/שָּׁמָ֑יִם בְּשַׂ֥ר חֲ֝סִידֶ֗י/ךָ לְ/חַיְת/וֹ אָֽרֶץ׃",
-        "LXX": "Ὁ ποιμαίνων τὸν Ἰσραὴλ πρόσχες, ὁ ὁδηγῶν ὡσεὶ πρόβατα τὸν Ἰωσήφ· ὁ καθήμενος ἐπὶ τῶν χερουβεὶμ ἐμφάνηθι,",
-        "VUL": "[Qui regis Israël, intende ;/ qui deducis velut ovem Joseph./ Qui sedes super cherubim, manifestare/",
-        "SYN": "Пастырь Израиля! внемли; водящий, как овец, Иосифа, восседающий на Херувимах, яви Себя.",
-        "NEO": "Elles ont livré les cadavres de tes serviteurs en pâture aux oiseaux du ciel, et la chair de tes fidèles aux bêtes de la terre.",
-        "NAB": "They have left the corpses of your servants as food for the birds of the heavens, the flesh of your faithful for the beasts of the earth.",
-        "VAT_ES": "dieron los cadáveres de tus servidores",
-        "CEI": "Hanno abbandonato i cadaveri dei tuoi servi in pasto agli uccelli del cielo, la carne dei tuoi fedeli agli animali selvaggi."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "שָׁפְכ֬וּ דָמָ֨/ם כַּ/מַּ֗יִם סְֽבִ֘יב֤וֹת יְֽרוּשָׁלִָ֗ם וְ/אֵ֣ין קוֹבֵֽר׃",
-        "LXX": "ἐναντίον Ἐφράιμ καὶ Βενιαμεὶν καὶ Μανασσή, ἐξέγειρον τὴν δυναστείαν σου καὶ ἐλθὲ εἰς τὸ σῶσαι ἡμᾶς.",
-        "VUL": "coram Ephraim, Benjamin, et Manasse./ Excita potentiam tuam, et veni,/ ut salvos facias nos./",
-        "SYN": "Пред Ефремом и Вениамином и Манассиею воздвигни силу Твою, и приди спасти нас.",
-        "NEO": "Elles ont versé leur sang comme de l’eau, tout autour de Jérusalem, et personne pour leur donner la sépulture !",
-        "NAB": "They have spilled their blood like water all around Jerusalem, and no one is left to bury them.",
-        "VAT_ES": "Derramaron su sangre como agua",
-        "CEI": "Hanno versato il loro sangue come acqua intorno a Gerusalemme, e nessuno seppelliva."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "הָיִ֣ינוּ חֶ֭רְפָּה לִ/שְׁכֵנֵ֑י/נוּ לַ֥עַג וָ֝/קֶ֗לֶס לִ/סְבִיבוֹתֵֽי/נוּ׃",
-        "LXX": "ὁ θεός, ἐπίστρεψον ἡμᾶς καὶ ἐπίφανον τὸ πρόσωπόν σου, καὶ σωθησόμεθα.",
-        "VUL": "Deus, converte nos, et ostende faciem tuam,/ et salvi erimus./",
-        "SYN": "Боже! восстанови нас; да воссияет лице Твое, и спасемся!",
-        "NEO": "Nous sommes devenus un objet d’opprobre pour nos voisins, de risée et de moquerie pour ceux qui nous entourent.",
-        "NAB": "We have become the reproach of our neighbors, the scorn and derision of those around us.",
-        "VAT_ES": "Fuimos el escarnio de nuestros vecinos,",
-        "CEI": "Siamo divenuti l'obbrobrio dei nostri vicini, scherno e ludibrio di chi ci sta intorno."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "עַד מָ֣ה יְ֭הוָה תֶּאֱנַ֣ף לָ/נֶ֑צַח תִּבְעַ֥ר כְּמוֹ אֵ֝֗שׁ קִנְאָתֶֽ/ךָ׃",
-        "LXX": "Κύριε ὁ θεὸς τῶν δυνάμεων, ἕως πότε ὀργίζῃ ἐπὶ τὴν προσευχὴν τοῦ δούλου σου;",
-        "VUL": "Domine Deus virtutum,/ quousque irasceris super orationem servi tui ?/",
-        "SYN": "Господи, Боже сил! доколе будешь гневен к молитвам народа Твоего?",
-        "NEO": "Jusques à quand, \\+w Yahweh|strong=\"H3068\"\\+w**, seras-tu irrité pour toujours, et ta colère s’allumera-t-elle comme le feu ?",
-        "NAB": "How long, LORD? Will you be angry forever? Will your rage keep burning like fire?",
-        "VAT_ES": "&iquest;Hasta cuándo, Señor? &iquest;Estarás enojado para siempre?",
-        "CEI": "Fino a quando, Signore, sarai adirato: per sempre? Arderà come fuoco la tua gelosia?"
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "שְׁפֹ֤ךְ חֲמָתְ/ךָ֨ אֶֽל הַ/גּוֹיִם֮ אֲשֶׁ֪ר לֹא יְדָ֫ע֥וּ/ךָ וְ/עַ֥ל מַמְלָכ֑וֹת אֲשֶׁ֥ר בְּ֝/שִׁמְ/ךָ֗ לֹ֣א קָרָֽאוּ׃",
-        "LXX": "ψωμιεῖς ἡμᾶς ἄρτον δακρύων, καὶ ποτιεῖς ἡμᾶς ἐν δάκρυσιν ἐν μέτρῳ;",
-        "VUL": "cibabis nos pane lacrimarum,/ et potum dabis nobis in lacrimis in mensura ?/",
-        "SYN": "Ты напитал их хлебом слезным, и напоил их слезами в большой мере,",
-        "NEO": "Répands ta fureur sur les nations qui ne te connaissent pas, sur les royaumes qui n’invoquent pas ton nom.",
-        "NAB": "Pour out your wrath on nations that reject you, on kingdoms that do not call on your name,",
-        "VAT_ES": "Derrama tu furor",
-        "CEI": "Riversa il tuo sdegno sui popoli che non ti riconoscono e sui regni che non invocano il tuo nome,"
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "כִּ֭י אָכַ֣ל אֶֽת יַעֲקֹ֑ב וְֽ/אֶת נָוֵ֥/הוּ הֵשַֽׁמּוּ׃",
-        "LXX": "ἔθου ἡμᾶς εἰς ἀντιλογίαν τοῖς γείτοσιν ἡμῶν, καὶ οἱ ἐχθροὶ ἡμῶν ἐμυκτήρισαν ἡμᾶς.",
-        "VUL": "Posuisti nos in contradictionem vicinis nostris,/ et inimici nostri subsannaverunt nos./",
-        "SYN": "положил нас в пререкание соседям нашим, и враги наши издеваются _над нами._",
-        "NEO": "Car ils ont dévoré Jacob, et ravagé sa demeure.",
-        "NAB": "For they have devoured Jacob, laid waste his home.",
-        "VAT_ES": "porque han devorado a Jacob,",
-        "CEI": "perché hanno divorato Giacobbe, hanno devastato la sua dimora."
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "אַֽל תִּזְכָּר לָ/נוּ֮ עֲוֺנֹ֪ת רִאשֹׁ֫נִ֥ים מַ֭הֵר יְקַדְּמ֣וּ/נוּ רַחֲמֶ֑י/ךָ כִּ֖י דַלּ֣וֹנוּ מְאֹֽד׃",
-        "LXX": "Κύριε ὁ θεὸς τῶν δυνάμεων, ἐπίστρεψον ἡμᾶς καὶ ἐπίφανον τὸ πρόσωπόν σου, καὶ σωθησόμεθα. διάψαλμα.",
-        "VUL": "Deus virtutum, converte nos, et ostende faciem tuam,/ et salvi erimus./",
-        "SYN": "Боже сил! восстанови нас; да воссияет лице Твое, и спасемся!",
-        "NEO": "Ne te souviens plus contre nous des iniquités de nos pères ; que ta compassion vienne en hâte au-devant de nous, car notre misère est au comble.",
-        "NAB": "Do not hold past iniquities against us; may your compassion come quickly, for we have been brought very low.",
-        "VAT_ES": "No recuerdes para nuestro mal",
-        "CEI": "Non imputare a noi le colpe dei nostri padri, presto ci venga incontro la tua misericordia, poiché siamo troppo infelici."
-      }
-    },
-    "9": {
-      "seq": 9,
-      "v_in": {
-        "MT": 9,
-        "VUL": 9,
-        "LXX": 9
-      },
-      "text": {
-        "WLC": "עָזְרֵ֤/נוּ אֱלֹ֘הֵ֤י יִשְׁעֵ֗/נוּ עַל דְּבַ֥ר כְּבֽוֹד שְׁמֶ֑/ךָ וְ/הַצִּילֵ֥/נוּ וְ/כַפֵּ֥ר עַל חַ֝טֹּאתֵ֗י/נוּ לְמַ֣עַן שְׁמֶֽ/ךָ׃",
-        "LXX": "ἄμπελον ἐξ Αἰγύπτου μετῆρας, ἐξέβαλες ἔθνη καὶ κατεφύτευσας αὐτήν·",
-        "VUL": "Vineam de Ægypto transtulisti :/ ejecisti gentes, et plantasti eam./",
-        "SYN": "Из Египта перенес Ты виноградную лозу, выгнал народы и посадил ее;",
-        "NEO": "Secours-nous, Dieu de notre salut, pour la gloire de ton nom, délivre-nous et pardonne nos péchés à cause de ton nom.",
-        "NAB": "Help us, God our savior, for the glory of your name. Deliver us, pardon our sins for your name's sake.",
-        "VAT_ES": "Ayúdanos, Dios salvador nuestro,",
-        "CEI": "Aiutaci, Dio, nostra salvezza, per la gloria del tuo nome, salvaci e perdona i nostri peccati per amore del tuo nome."
-      }
-    },
-    "10": {
-      "seq": 10,
-      "v_in": {
-        "MT": 10,
-        "VUL": 10,
-        "LXX": 10
-      },
-      "text": {
-        "WLC": "לָ֤/מָּה יֹאמְר֣וּ הַ/גּוֹיִם֮ אַיֵּ֪ה אֱֽלֹהֵ֫י/הֶ֥ם יִוָּדַ֣ע ב/גיים בַּ/גּוֹיִ֣ם לְ/עֵינֵ֑י/נוּ נִ֝קְמַ֗ת דַּֽם עֲבָדֶ֥י/ךָ הַ/שָּׁפֽוּךְ׃",
-        "LXX": "ὡδοποίησας ἔμπροσθεν αὐτῆς, καὶ κατεφὺτευσας τὰς ῥίζας αὐτῆς, καὶ ἐπλήσθη ἡ γῆ.",
-        "VUL": "Dux itineris fuisti in conspectu ejus ;/ plantasti radices ejus, et implevit terram./",
-        "SYN": "очистил для нее место, и утвердил корни ее, и она наполнила землю.",
-        "NEO": "Pourquoi les nations diraient-elles : « Où est leur Dieu ? » Qu’on connaisse parmi les nations, et sous nos yeux, la vengeance que tu tires du sang de tes serviteurs, quand il est répandu !",
-        "NAB": "Why should the nations say, \"Where is their God?\" Before our eyes make clear to the nations that you avenge the blood of your servants.",
-        "VAT_ES": "&iquest;Por qué han de decir los paganos:",
-        "CEI": "Perché i popoli dovrebbero dire: \"Dov'è il loro Dio?\". Si conosca tra i popoli, sotto i nostri occhi, la vendetta per il sangue dei tuoi servi."
-      }
-    },
-    "11": {
-      "seq": 11,
-      "v_in": {
-        "MT": 11,
-        "VUL": 11,
-        "LXX": 11
-      },
-      "text": {
-        "WLC": "תָּ֤ב֣וֹא לְ/פָנֶי/ךָ֮ אֶנְקַ֪ת אָ֫סִ֥יר כְּ/גֹ֥דֶל זְרוֹעֲ/ךָ֑ ה֝וֹתֵ֗ר בְּנֵ֣י תְמוּתָֽה׃",
-        "LXX": "ἐκάλυψεν ὄρη ἡ σκιὰ αὐτῆς, καὶ αἱ ἀναδενδράδες αὐτῆς ⸂⸆⸃ τὰς κέδρους τοῦ θεοῦ.",
-        "VUL": "Operuit montes umbra ejus,/ et arbusta ejus cedros Dei./",
-        "SYN": "Горы покрылись тенью ее, и ветви ее как кедры Божии;",
-        "NEO": "Que les gémissements des captifs montent jusqu’à toi ; selon la grandeur de ton bras, sauve ceux qui vont périr !",
-        "NAB": "Let the groans of prisoners come before you; by your great power free those doomed to death.",
-        "VAT_ES": "Llegue hasta tu presencia el lamento de los cautivos,",
-        "CEI": "Giunga fino a te il gemito dei prigionieri; con la potenza della tua mano salva i votati alla morte."
-      }
-    },
-    "12": {
-      "seq": 12,
-      "v_in": {
-        "MT": 12,
-        "VUL": 12,
-        "LXX": 12
-      },
-      "text": {
-        "WLC": "וְ/הָ֘שֵׁ֤ב לִ/שְׁכֵנֵ֣י/נוּ שִׁ֭בְעָתַיִם אֶל חֵיקָ֑/ם חֶרְפָּ֘תָ֤/ם אֲשֶׁ֖ר חֵרְפ֣וּ/ךָ אֲדֹנָֽ/י׃",
-        "LXX": "ἐξέτεινεν τὰ κλήματα αὐτῆς ἕως θαλάσσης, καὶ ἕως ποταμοῦ τὰς παραφυάδας αὐτῆς.",
-        "VUL": "Extendit palmites suos usque ad mare,/ et usque ad flumen propagines ejus./",
-        "SYN": "она пустила ветви свои до моря и отрасли свои до реки.",
-        "NEO": "Fais retomber sept fois dans le sein de nos voisins les outrages qu’ils t’ont faits, Seigneur !",
-        "NAB": "Lord, inflict on our neighbors seven fold the disgrace they inflicted on you.",
-        "VAT_ES": "Devuelve siete veces a nuestros vecinos",
-        "CEI": "Fà ricadere sui nostri vicini sette volte l'affronto con cui ti hanno insultato, Signore."
-      }
-    },
-    "13": {
-      "seq": 13,
-      "v_in": {
-        "MT": 13,
-        "VUL": 13,
-        "LXX": 13
-      },
-      "text": {
-        "WLC": "וַ/אֲנַ֤חְנוּ עַמְּ/ךָ֨ וְ/צֹ֥אן מַרְעִיתֶ/ךָ֮ נ֤וֹדֶ֥ה לְּ/ךָ֗ לְ/ע֫וֹלָ֥ם לְ/דֹ֥ר וָ/דֹ֑ר נְ֝סַפֵּ֗ר תְּהִלָּתֶֽ/ךָ׃",
-        "LXX": "ἵνα τί καθεῖλες τὸν φραγμὸν αὐτῆς, καὶ τρυγῶσιν αὐτὴν πάντες οἱ παραπορευόμενοι τὴν ὁδόν;",
-        "VUL": "Ut quid destruxisti maceriam ejus,/ et vindemiant eam omnes qui prætergrediuntur viam ?/",
-        "SYN": "Для чего разрушил Ты ограды ее, так что обрывают ее все, проходящие по пути?",
-        "NEO": "Et nous, ton peuple, le troupeau de ton pâturage, nous te rendrons gloire à jamais ; d’âge en âge, nous publierons tes louanges.",
-        "NAB": "Then we, your people, the sheep of your pasture, will give thanks to you forever; through all ages we will declare your praise.",
-        "VAT_ES": "Y nosotros, que somos tu pueblo",
-        "CEI": "E noi, tuo popolo e gregge del tuo pascolo, ti renderemo grazie per sempre; di età in età proclameremo la tua lode."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "רֹ֘עֵ֤ה יִשְׂרָאֵ֨ל הַאֲזִ֗ינָ/ה נֹהֵ֣ג כַּ/צֹּ֣אן יוֹסֵ֑ף יֹשֵׁ֖ב הַ/כְּרוּבִ֣ים הוֹפִֽיעָ/ה׃",
+    "SYN": "Радостно пойте Богу, твердыне нашей; восклицайте Богу Иакова;",
+    "NEO": "Pasteur d’Israël, prête l’oreille, toi qui conduis Joseph comme un troupeau ; toi qui trônes sur les Chérubins, parais avec splendeur.",
+    "NAB": "Shepherd of Israel, listen, guide of the flock of Joseph! From your throne upon the cherubim reveal yourself",
+    "VAT_ES": "Escucha, Pastor de Israel,",
+    "CEI": "Tu, pastore d'Israele, ascolta, tu che guidi Giuseppe come un gregge. Assiso sui cherubini rifulgi",
+    "LXX": "Ὁ ποιμαίνων τὸν Ἰσραὴλ πρόσχες, ὁ ὁδηγῶν ὡσεὶ πρόβατα τὸν Ἰωσήφ· ὁ καθήμενος ἐπὶ τῶν χερουβεὶμ ἐμφάνηθι,",
+    "VUL": "[Qui regis Israël, intende ;/ qui deducis velut ovem Joseph./ Qui sedes super cherubim, manifestare/"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "לִ/פְנֵ֤י אֶפְרַ֨יִם וּ/בִנְיָ֘מִ֤ן וּ/מְנַשֶּׁ֗ה עוֹרְרָ֥/ה אֶת גְּבֽוּרָתֶ֑/ךָ וּ/לְכָ֖/ה לִ/ישֻׁעָ֣תָ/ה לָּֽ/נוּ׃",
+    "SYN": "возьмите псалом, дайте тимпан, сладкозвучные гусли с псалтирью;",
+    "NEO": "Devant Ephraïm, Benjamin et Manassé, réveille ta force, et viens à notre secours.",
+    "NAB": "to Ephraim, Benjamin, and Manasseh. Stir up your power, come to save us.",
+    "VAT_ES": "resplandece entre Efraím, Benjamín y Manasés;",
+    "CEI": "davanti a Efraim, Beniamino e Manasse. Risveglia la tua potenza e vieni in nostro soccorso.",
+    "LXX": "ἐναντίον Ἐφράιμ καὶ Βενιαμεὶν καὶ Μανασσή, ἐξέγειρον τὴν δυναστείαν σου καὶ ἐλθὲ εἰς τὸ σῶσαι ἡμᾶς.",
+    "VUL": "coram Ephraim, Benjamin, et Manasse./ Excita potentiam tuam, et veni,/ ut salvos facias nos./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "אֱלֹהִ֥ים הֲשִׁיבֵ֑/נוּ וְ/הָאֵ֥ר פָּ֝נֶ֗י/ךָ וְ/נִוָּשֵֽׁעָה׃",
+    "SYN": "трубите в новомесячие трубою, в определенное время, в день праздника нашего;",
+    "NEO": "O Dieu, rétablis-nous ; fais briller ta face, et nous serons sauvés.",
+    "NAB": "O LORD of hosts, restore us; Let your face shine upon us, that we may be saved.",
+    "VAT_ES": "&iexcl;Restáuranos, Dios de los ejércitos,",
+    "CEI": "Rialzaci, Signore, nostro Dio, fà splendere il tuo volto e noi saremo salvi.",
+    "LXX": "ὁ θεός, ἐπίστρεψον ἡμᾶς καὶ ἐπίφανον τὸ πρόσωπόν σου, καὶ σωθησόμεθα.",
+    "VUL": "Deus, converte nos, et ostende faciem tuam,/ et salvi erimus./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "יְהוָ֣ה אֱלֹהִ֣ים צְבָא֑וֹת עַד מָתַ֥י עָ֝שַׁ֗נְתָּ בִּ/תְפִלַּ֥ת עַמֶּֽ/ךָ׃",
+    "SYN": "ибо это закон для Израиля, устав от Бога Иаковлева.",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, Dieu des armées, jusques à quand seras-tu irrité contre la prière de ton peuple ?",
+    "NAB": "LORD of hosts, how long will you burn with anger while your people pray?",
+    "VAT_ES": "Señor, Dios de los ejércitos,",
+    "CEI": "Signore, Dio degli eserciti, fino a quando fremerai di sdegno contro le preghiere del tuo popolo?",
+    "LXX": "Κύριε ὁ θεὸς τῶν δυνάμεων, ἕως πότε ὀργίζῃ ἐπὶ τὴν προσευχὴν τοῦ δούλου σου;",
+    "VUL": "Domine Deus virtutum,/ quousque irasceris super orationem servi tui ?/"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "הֶ֭אֱכַלְתָּ/ם לֶ֣חֶם דִּמְעָ֑ה וַ֝/תַּשְׁקֵ֗/מוֹ בִּ/דְמָע֥וֹת שָׁלִֽישׁ׃",
+    "SYN": "Он установил это во свидетельство для Иосифа, когда он вышел из земли Египетской, где услышал звуки языка, которого не знал:",
+    "NEO": "Tu les as nourris d’un pain de larmes, tu les as abreuvés de larmes abondantes.",
+    "NAB": "You have fed them the bread of tears, made them drink tears in abundance.",
+    "VAT_ES": "Les diste de comer un pan de lágrimas,",
+    "CEI": "Tu ci nutri con pane di lacrime, ci fai bere lacrime in abbondanza.",
+    "LXX": "ψωμιεῖς ἡμᾶς ἄρτον δακρύων, καὶ ποτιεῖς ἡμᾶς ἐν δάκρυσιν ἐν μέτρῳ;",
+    "VUL": "cibabis nos pane lacrimarum,/ et potum dabis nobis in lacrimis in mensura ?/"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "תְּשִׂימֵ֣/נוּ מָ֭דוֹן לִ/שְׁכֵנֵ֑י/נוּ וְ֝/אֹיְבֵ֗י/נוּ יִלְעֲגוּ לָֽ/מוֹ׃",
+    "SYN": "\"Я снял с рамен его тяжести, и руки его освободились от корзин.",
+    "NEO": "Tu as fait de nous un objet de dispute pour nos voisins, et nos ennemis se raillent de nous.",
+    "NAB": "You have left us to be fought over by our neighbors; our enemies deride us.",
+    "VAT_ES": "nos entregaste a las disputas de nuestros vecinos,",
+    "CEI": "Ci hai fatto motivo di contesa per i vicini, e i nostri nemici ridono di noi.",
+    "LXX": "ἔθου ἡμᾶς εἰς ἀντιλογίαν τοῖς γείτοσιν ἡμῶν, καὶ οἱ ἐχθροὶ ἡμῶν ἐμυκτήρισαν ἡμᾶς.",
+    "VUL": "Posuisti nos in contradictionem vicinis nostris,/ et inimici nostri subsannaverunt nos./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "אֱלֹהִ֣ים צְבָא֣וֹת הֲשִׁיבֵ֑/נוּ וְ/הָאֵ֥ר פָּ֝נֶ֗י/ךָ וְ/נִוָּשֵֽׁעָה׃",
+    "SYN": "В бедствии ты призвал Меня, и Я избавил тебя; из среды грома Я услышал тебя, при водах Меривы испытал тебя.",
+    "NEO": "Dieu des armées, rétablis-nous ; fais briller sur nous ta face, et nous serons sauvés.",
+    "NAB": "O LORD of hosts, restore us; let your face shine upon us, that we may be saved.",
+    "VAT_ES": "&iexcl;Restáuranos, Señor de los ejércitos,",
+    "CEI": "Rialzaci, Dio degli eserciti, fà risplendere il tuo volto e noi saremo salvi.",
+    "LXX": "Κύριε ὁ θεὸς τῶν δυνάμεων, ἐπίστρεψον ἡμᾶς καὶ ἐπίφανον τὸ πρόσωπόν σου, καὶ σωθησόμεθα. διάψαλμα.",
+    "VUL": "Deus virtutum, converte nos, et ostende faciem tuam,/ et salvi erimus./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "גֶּ֭פֶן מִ/מִּצְרַ֣יִם תַּסִּ֑יעַ תְּגָרֵ֥שׁ גּ֝וֹיִ֗ם וַ/תִּטָּעֶֽ/הָ׃",
+    "SYN": "Слушай, народ Мой, и Я буду свидетельствовать тебе: Израиль! о, если бы ты послушал Меня!",
+    "NEO": "Tu as arraché de l’Égypte une vigne ; tu as chassé les nations et tu l’as plantée.",
+    "NAB": "You brought a vine out of Egypt; you drove away the nations and planted it.",
+    "VAT_ES": "Tú sacaste de Egipto una vid,",
+    "CEI": "Hai divelto una vite dall'Egitto, per trapiantarla hai espulso i popoli.",
+    "LXX": "ἄμπελον ἐξ Αἰγύπτου μετῆρας, ἐξέβαλες ἔθνη καὶ κατεφύτευσας αὐτήν·",
+    "VUL": "Vineam de Ægypto transtulisti :/ ejecisti gentes, et plantasti eam./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "פִּנִּ֥יתָ לְ/פָנֶ֑י/הָ וַ/תַּשְׁרֵ֥שׁ שָׁ֝רָשֶׁ֗י/הָ וַ/תְּמַלֵּא אָֽרֶץ׃",
+    "SYN": "Да не будет у тебя иного бога, и не поклоняйся богу чужеземному.",
+    "NEO": "Tu as ménagé de la place devant elle, elle a enfoncé ses racines et rempli la terre.",
+    "NAB": "You cleared the ground; it took root and filled the land.",
+    "VAT_ES": "le preparaste el terreno,",
+    "CEI": "Le hai preparato il terreno, hai affondato le sue radici e ha riempito la terra.",
+    "LXX": "ὡδοποίησας ἔμπροσθεν αὐτῆς, καὶ κατεφὺτευσας τὰς ῥίζας αὐτῆς, καὶ ἐπλήσθη ἡ γῆ.",
+    "VUL": "Dux itineris fuisti in conspectu ejus ;/ plantasti radices ejus, et implevit terram./"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "כָּסּ֣וּ הָרִ֣ים צִלָּ֑/הּ וַ֝/עֲנָפֶ֗י/הָ אַֽרְזֵי אֵֽל׃",
+    "SYN": "Я Господь, Бог твой, изведший тебя из земли Египетской; открой уста твои, и Я наполню их\".",
+    "NEO": "Son ombre couvrait les montagnes, et ses rameaux les cèdres de Dieu ;",
+    "NAB": "The mountains were covered by its shadow, the cedars of God by its branches.",
+    "VAT_ES": "Las montañas se cubrieron con su sombra,",
+    "CEI": "La sua ombra copriva le montagne e i suoi rami i più alti cedri.",
+    "LXX": "ἐκάλυψεν ὄρη ἡ σκιὰ αὐτῆς, καὶ αἱ ἀναδενδράδες αὐτῆς ⸂⸆⸃ τὰς κέδρους τοῦ θεοῦ.",
+    "VUL": "Operuit montes umbra ejus,/ et arbusta ejus cedros Dei./"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "תְּשַׁלַּ֣ח קְצִירֶ֣/הָ עַד יָ֑ם וְ/אֶל נָ֝הָ֗ר יֽוֹנְקוֹתֶֽי/הָ׃",
+    "SYN": "Но народ Мой не слушал гласа Моего, и Израиль не покорялся Мне;",
+    "NEO": "elle étendait ses branches jusqu’à la Mer, et ses rejetons jusqu’au Fleuve.",
+    "NAB": "It sent out boughs as far as the sea, shoots as far as the river.",
+    "VAT_ES": "extendió sus sarmientos hasta el mar",
+    "CEI": "Ha esteso i suoi tralci fino al mare e arrivavano al fiume i suoi germogli.",
+    "LXX": "ἐξέτεινεν τὰ κλήματα αὐτῆς ἕως θαλάσσης, καὶ ἕως ποταμοῦ τὰς παραφυάδας αὐτῆς.",
+    "VUL": "Extendit palmites suos usque ad mare,/ et usque ad flumen propagines ejus./"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13,
+    "MT": 13
+   },
+   "text": {
+    "WLC": "לָ֭/מָּה פָּרַ֣צְתָּ גְדֵרֶ֑י/הָ וְ֝/אָר֗וּ/הָ כָּל עֹ֥בְרֵי דָֽרֶךְ׃",
+    "SYN": "потому Я оставил их упорству сердца их, пусть ходят по своим помыслам.",
+    "NEO": "Pourquoi as-tu rompu ses clôtures, en sorte que tous les passants la dévastent ?",
+    "NAB": "Why have you broken down the walls, so that all who pass by pluck its fruit?",
+    "VAT_ES": "&iquest;Por qué has derribado sus cercos",
+    "CEI": "Perché hai abbattuto la sua cinta e ogni viandante ne fa vendemmia?",
+    "LXX": "ἵνα τί καθεῖλες τὸν φραγμὸν αὐτῆς, καὶ τρυγῶσιν αὐτὴν πάντες οἱ παραπορευόμενοι τὴν ὁδόν;",
+    "VUL": "Ut quid destruxisti maceriam ejus,/ et vindemiant eam omnes qui prætergrediuntur viam ?/"
+   }
+  },
+  "14": {
+   "seq": 14,
+   "v_in": {
+    "VUL": 14,
+    "MT": 14
+   },
+   "text": {
+    "WLC": "יְכַרְסְמֶ֣/נָּֽה חֲזִ֣יר מִ/יָּ֑ וְ/זִ֖יז שָׂדַ֣י יִרְעֶֽ/נָּה׃",
+    "SYN": "О, если бы народ Мой слушал Меня и Израиль ходил Моими путями!",
+    "NEO": "Le sanglier de la forêt la dévore, et les bêtes des champs en font leur pâture.",
+    "NAB": "The boar from the forest strips the vine; the beast of the field feeds upon it.",
+    "VAT_ES": "Los jabalíes del bosque la devastan",
+    "CEI": "La devasta il cinghiale del bosco e se ne pasce l'animale selvatico.",
+    "VUL": "Exterminavit eam aper de silva,/ et singularis ferus depastus est eam./"
+   }
+  },
+  "15": {
+   "seq": 15,
+   "v_in": {
+    "VUL": 15,
+    "MT": 15
+   },
+   "text": {
+    "WLC": "אֱלֹהִ֣ים צְבָאוֹת֮ שֽׁ֫וּב נָ֥א הַבֵּ֣ט מִ/שָּׁמַ֣יִם וּ/רְאֵ֑ה וּ֝/פְקֹ֗ד גֶּ֣פֶן זֹֽאת׃",
+    "SYN": "Я скоро смирил бы врагов их и обратил бы руку Мою на притеснителей их:",
+    "NEO": "Dieu des armées, reviens, regarde du haut du ciel et vois, considère cette vigne !",
+    "NAB": "Turn again, LORD of hosts; look down from heaven and see; Attend to this vine,",
+    "VAT_ES": "Vuélvete, Dios de los ejércitos,",
+    "CEI": "Dio degli eserciti, volgiti, guarda dal cielo e vedi e visita questa vigna,",
+    "VUL": "Deus virtutum, convertere,/ respice de cælo, et vide,/ et visita vineam istam :/"
+   }
+  },
+  "16": {
+   "seq": 16,
+   "v_in": {
+    "VUL": 16,
+    "MT": 16
+   },
+   "text": {
+    "WLC": "וְ֭/כַנָּה אֲשֶׁר נָטְעָ֣ה יְמִינֶ֑/ךָ וְ/עַל בֵּ֝֗ן אִמַּ֥צְתָּה לָּֽ/ךְ׃",
+    "SYN": "ненавидящие Господа раболепствовали бы им, а их благоденствие продолжалось бы навсегда;",
+    "NEO": "Protège ce que ta droite a planté, et le fils que tu t’es choisi !...",
+    "NAB": "the shoot your right hand has planted.",
+    "VAT_ES": "la cepa que plantó tu mano,",
+    "CEI": "proteggi il ceppo che la tua destra ha piantato, il germoglio che ti sei coltivato.",
+    "VUL": "et perfice eam quam plantavit dextera tua,/ et super filium hominis quem confirmasti tibi./"
+   }
+  },
+  "17": {
+   "seq": 17,
+   "v_in": {
+    "VUL": 17,
+    "MT": 17
+   },
+   "text": {
+    "WLC": "שְׂרֻפָ֣ה בָ/אֵ֣שׁ כְּסוּחָ֑ה מִ/גַּעֲרַ֖ת פָּנֶ֣י/ךָ יֹאבֵֽדוּ׃",
+    "SYN": "Я питал бы их туком пшеницы и насыщал бы их медом из скалы.",
+    "NEO": "Elle est brûlée par le feu, elle est coupée ; devant ta face menaçante, tout périt.",
+    "NAB": "Those who would burn or cut it down - may they perish at your rebuke.",
+    "VAT_ES": "&iexcl;Que perezcan ante el furor de tu mirada",
+    "CEI": "Quelli che l'arsero col fuoco e la recisero, periranno alla minaccia del tuo volto.",
+    "VUL": "Incensa igni et suffossa,/ ab increpatione vultus tui peribunt./"
+   }
+  },
+  "18": {
+   "seq": 18,
+   "v_in": {
+    "VUL": 18,
+    "MT": 18
+   },
+   "text": {
+    "WLC": "תְּֽהִי יָ֭דְ/ךָ עַל אִ֣ישׁ יְמִינֶ֑/ךָ עַל בֶּן אָ֝דָ֗ם אִמַּ֥צְתָּ לָּֽ/ךְ׃",
+    "NEO": "Que ta main soit sur l’homme de ta droite, sur le fils de l’homme que tu t’es choisi.",
+    "NAB": "May your help be with the man at your right hand, with the one whom you once made strong.",
+    "VAT_ES": "Que tu mano sostenga al que está a tu derecha,",
+    "CEI": "Sia la tua mano sull'uomo della tua destra, sul figlio dell'uomo che per te hai reso forte.",
+    "VUL": "Fiat manus tua super virum dexteræ tuæ,/ et super filium hominis quem confirmasti tibi./"
+   }
+  },
+  "19": {
+   "seq": 19,
+   "v_in": {
+    "VUL": 19,
+    "MT": 19
+   },
+   "text": {
+    "WLC": "וְ/לֹא נָס֥וֹג מִמֶּ֑/ךָּ תְּ֝חַיֵּ֗/נוּ וּ/בְ/שִׁמְ/ךָ֥ נִקְרָֽא׃",
+    "NEO": "Et nous ne nous éloignerons plus de toi ; rends-nous la vie, et nous invoquerons ton nom.",
+    "NAB": "Then we will not withdraw from you; revive us, and we will call on your name.",
+    "VAT_ES": "y nunca nos apartaremos de ti:",
+    "CEI": "Da te più non ci allontaneremo, ci farai vivere e invocheremo il tuo nome.",
+    "VUL": "Et non discedimus a te :/ vivificabis nos, et nomen tuum invocabimus./"
+   }
+  },
+  "20": {
+   "seq": 20,
+   "v_in": {
+    "VUL": 20
+   },
+   "text": {
+    "VUL": "Domine Deus virtutum, converte nos, et ostende faciem tuam,/ et salvi erimus.]"
+   }
   }
+ }
 }

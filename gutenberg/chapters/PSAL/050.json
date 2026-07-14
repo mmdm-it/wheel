@@ -1,422 +1,352 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_050",
-  "book_key": "PSAL",
-  "sequence": 50,
-  "chapter_in": {
-    "MT": 50,
-    "VUL": 49,
-    "LXX": 49
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_050",
+ "book_key": "PSAL",
+ "sequence": 50,
+ "chapter_in": {
+  "VUL": 50,
+  "LXX": 50,
+  "MT": 51
+ },
+ "mt_sources": [
+  "51"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "לַ/מְנַצֵּ֗חַ מִזְמ֥וֹר לְ/דָוִֽד׃",
+    "SYN": "Начальнику хора. Учение Давида,",
+    "NEO": "Au maître de chant. Psaume de David.",
+    "NAB": "For the leader. A psalm of David,",
+    "CEI": "Al maestro del coro. Salmo. Di Davide.",
+    "LXX": "Εἰς τὸ τέλος· ψαλμὸς τῷ Δαυείδ,",
+    "VUL": "In finem. Psalmus David,"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "מִזְמ֗וֹר לְ/אָ֫סָ֥ף אֵ֤ל אֱֽלֹהִ֡ים יְֽהוָ֗ה דִּבֶּ֥ר וַ/יִּקְרָא אָ֑רֶץ מִ/מִּזְרַח שֶׁ֝֗מֶשׁ עַד מְבֹאֽ/וֹ׃",
-        "LXX": "Εἰς τὸ τέλος· ψαλμὸς τῷ Δαυείδ,",
-        "VUL": "In finem. Psalmus David,",
-        "SYN": "Начальнику хора. Псалом Давида,",
-        "NEO": "Psaume d’Asaph.",
-        "NAB": "A psalm of Asaph. The LORD, the God of gods, has spoken and summoned the earth from the rising of the sun to its setting.",
-        "CEI": "Salmo. Di Asaf. Parla il Signore, Dio degli dei, convoca la terra da oriente a occidente."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "מִ/צִּיּ֥וֹן מִכְלַל יֹ֗פִי אֱלֹהִ֥ים הוֹפִֽיעַ׃",
-        "LXX": "ἐν τῷ ἐλθεῖν πρὸς αὐτὸν Ναθὰν τὸν προφήτην, ἡνίκα εἰσῆλθεν πρὸς Βηρσάβεε.",
-        "VUL": "cum venit ad eum Nathan propheta, quando intravit ad Bethsabee.",
-        "SYN": "когда приходил к нему пророк Нафан, после того, как Давид вошел к Вирсавии.",
-        "NEO": "De Sion, beauté parfaite, Dieu resplendit.",
-        "NAB": "From Zion God shines forth. perfect in beauty.",
-        "VAT_ES": "Dios resplandece desde Sión,",
-        "CEI": "Da Sion, splendore di bellezza, Dio rifulge."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "יָ֤בֹ֥א אֱלֹהֵ֗י/נוּ וְֽ/אַל יֶ֫חֱרַ֥שׁ אֵשׁ לְ/פָנָ֥י/ו תֹּאכֵ֑ל וּ֝/סְבִיבָ֗י/ו נִשְׂעֲרָ֥ה מְאֹֽד׃",
-        "LXX": "Ἐλέησόν με, ὁ θεός, κατὰ τὸ μέγα ἔλεός σου, καὶ κατὰ τὸ πλῆθος τῶν οἰκτιρμῶν σου ἐξάλειψον τὸ ἀνόμημά μου·",
-        "VUL": "[Miserere mei, Deus, secundum magnam misericordiam tuam ;/ et secundum multitudinem miserationum tuarum, dele iniquitatem meam./",
-        "SYN": "Помилуй меня, Боже, по великой милости Твоей, и по множеству щедрот Твоих изгладь беззакония мои.",
-        "NEO": "Il vient, notre Dieu, et il ne se taira point ; devant lui est un feu dévorant, autour de lui se déchaîne la tempête.",
-        "NAB": "Our God comes and will not be silent! Devouring fire precedes, storming fiercely round about.",
-        "VAT_ES": "ya viene nuestro Dios, y no callará;",
-        "CEI": "Viene il nostro Dio e non sta in silenzio; davanti a lui un fuoco divorante, intorno a lui si scatena la tempesta."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "יִקְרָ֣א אֶל הַ/שָּׁמַ֣יִם מֵ/עָ֑ל וְ/אֶל הָ֝/אָ֗רֶץ לָ/דִ֥ין עַמּֽ/וֹ׃",
-        "LXX": "ἐπὶ πλεῖον πλῦνόν με ἀπὸ τῆς ἀνομίας μου, καὶ ἀπὸ τῆς ἁμαρτίας μου καθάρισόν με.",
-        "VUL": "Amplius lava me ab iniquitate mea,/ et a peccato meo munda me./",
-        "SYN": "Многократно омой меня от беззакония моего, и от греха моего очисти меня,",
-        "NEO": "Il appelle les cieux en haut, et la terre, pour juger son peuple :",
-        "NAB": "God summons the heavens above and the earth to the judgment of his people:",
-        "VAT_ES": "El llama desde lo alto al cielo y a la tierra,",
-        "CEI": "Convoca il cielo dall'alto e la terra al giudizio del suo popolo:"
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "אִסְפוּ לִ֥/י חֲסִידָ֑/י כֹּרְתֵ֖י בְרִיתִ֣/י עֲלֵי זָֽבַח׃",
-        "LXX": "ὅτι τὴν ἀνομίαν μου ἐγὼ γινώσκω, καὶ ἡ ἁμαρτία μου ἐνώπιόν μού ἐστιν διὰ παντός.",
-        "VUL": "Quoniam iniquitatem meam ego cognosco,/ et peccatum meum contra me est semper./",
-        "SYN": "ибо беззакония мои я сознаю, и грех мой всегда предо мною.",
-        "NEO": "« Rassemblez-moi mes fidèles, qui ont fait alliance avec moi sur le sacrifice. »",
-        "NAB": "\"Gather my faithful ones before me, those who made a covenant with me by sacrifice.\"",
-        "VAT_ES": "«Reúnanme a mis amigos,",
-        "CEI": "\"Davanti a me riunite i miei fedeli, che hanno sancito con me l'alleanza offrendo un sacrificio\"."
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "וַ/יַּגִּ֣ידוּ שָׁמַ֣יִם צִדְק֑/וֹ כִּֽי אֱלֹהִ֓ים שֹׁפֵ֖ט ה֣וּא סֶֽלָה׃",
-        "LXX": "σοὶ μόνῳ ἥμαρτον, καὶ τὸ πονηρὸν ἐνώπιον σοῦ ἐποίησα· ὅπως ἄν δικαιωθῇς ἐν τοῖς λόγοις σου, καὶ νικήσῃς ἐν τῷ κρίνεσθαί σε.",
-        "VUL": "Tibi soli peccavi, et malum coram te feci ;/ ut justificeris in sermonibus tuis,/ et vincas cum judicaris./",
-        "SYN": "Тебе, Тебе единому согрешил я и лукавое пред очами Твоими сделал, так что Ты праведен в приговоре Твоем и чист в суде Твоем.",
-        "NEO": "Et les cieux proclament sa justice, car c’est Dieu qui va juger. — \\+w Séla|strong=\"H5554\"\\+w*.*",
-        "NAB": "The heavens proclaim divine justice, for God alone is the judge. Selah",
-        "VAT_ES": "&iexcl;Que el cielo proclame su justicia,",
-        "CEI": "Il cielo annunzi la sua giustizia, Dio è il giudice."
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "שִׁמְעָ֤/ה עַמִּ֨/י וַ/אֲדַבֵּ֗רָה יִ֭שְׂרָאֵל וְ/אָעִ֣ידָה בָּ֑/ךְ אֱלֹהִ֖ים אֱלֹהֶ֣י/ךָ אָנֹֽכִי׃",
-        "LXX": "ἰδοὺ γὰρ ἐν ἀνομίαις συνελήμφθην, καὶ ἐν ἁμαρτίαις ἐκίσσησέν με ἡ μήτηρ μου.",
-        "VUL": "Ecce enim in iniquitatibus conceptus sum,/ et in peccatis concepit me mater mea./",
-        "SYN": "Вот, я в беззаконии зачат, и во грехе родила меня мать моя.",
-        "NEO": "« Ecoute, mon peuple, et je parlerai ; Israël, et je te reprendrai : je suis Elohim, ton Dieu.",
-        "NAB": "\"Listen, my people, I will speak; Israel, I will testify against you; God, your God, am I.",
-        "VAT_ES": "«Escucha, pueblo mío, yo te hablo;",
-        "CEI": "\"Ascolta, popolo mio, voglio parlare, testimonierò contro di te, Israele: Io sono Dio, il tuo Dio."
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "לֹ֣א עַל זְ֭בָחֶי/ךָ אוֹכִיחֶ֑/ךָ וְ/עוֹלֹתֶ֖י/ךָ לְ/נֶגְדִּ֣/י תָמִֽיד׃",
-        "LXX": "ἰδοὺ γὰρ ἀλήθειαν ἠγάπησας, τὰ ἄδηλα καὶ τὰ κρύφια τῆς σοφίας σου ἐδήλωσάς μοι.",
-        "VUL": "Ecce enim veritatem dilexisti ;/ incerta et occulta sapientiæ tuæ manifestasti mihi./",
-        "SYN": "Вот, Ты возлюбил истину в сердце и внутрь меня явил мне мудрость [Твою].",
-        "NEO": "Ce n’est pas pour tes sacrifices que je te blâme ; tes holocaustes sont constamment devant moi.",
-        "NAB": "Not for your sacrifices do I rebuke you, nor for your holocausts, set before me daily.",
-        "VAT_ES": "No te acuso por tus sacrificios:",
-        "CEI": "Non ti rimprovero per i tuoi sacrifici; i tuoi olocausti mi stanno sempre davanti."
-      }
-    },
-    "9": {
-      "seq": 9,
-      "v_in": {
-        "MT": 9,
-        "VUL": 9,
-        "LXX": 9
-      },
-      "text": {
-        "WLC": "לֹא אֶקַּ֣ח מִ/בֵּיתְ/ךָ֣ פָ֑ר מִ֝/מִּכְלְאֹתֶ֗י/ךָ עַתּוּדִֽים׃",
-        "LXX": "ῥαντιεῖς με ὑσσώπῳ καὶ καθαρισθήσομαι, πλυνεῖς με καὶ ὑπὲρ χιόνα λευκανθήσομαι.",
-        "VUL": "Asperges me hyssopo, et mundabor ;/ lavabis me, et super nivem dealbabor./",
-        "SYN": "Окропи меня иссопом, и буду чист; омой меня, и буду белее снега.",
-        "NEO": "je ne prendrai pas un taureau dans ta maison, ni des boucs dans tes bergeries.",
-        "NAB": "I need no bullock from your house, no goats from your fold.",
-        "VAT_ES": "Pero yo no necesito los novillos de tu casa",
-        "CEI": "Non prenderò giovenchi dalla tua casa, né capri dai tuoi recinti."
-      }
-    },
-    "10": {
-      "seq": 10,
-      "v_in": {
-        "MT": 10,
-        "VUL": 10,
-        "LXX": 10
-      },
-      "text": {
-        "WLC": "כִּי לִ֥/י כָל חַיְת/וֹ יָ֑עַר בְּ֝הֵמ֗וֹת בְּ/הַרְרֵי אָֽלֶף׃",
-        "LXX": "ἀκουτιεῖς με ἀγαλλίασιν καὶ εὐφροσύνην· ἀγαλλιάσονται ὀστᾶ τεταπεινωμένα.",
-        "VUL": "Auditui meo dabis gaudium et lætitiam,/ et exsultabunt ossa humiliata./",
-        "SYN": "Дай мне услышать радость и веселие, и возрадуются кости, Тобою сокрушенные.",
-        "NEO": "Car à moi sont tous les animaux des forêts, toutes les bêtes des montagnes par milliers ;",
-        "NAB": "For every animal of the forest is mine, beasts by the thousands on my mountains.",
-        "VAT_ES": "Porque son mías todas las fieras de la selva,",
-        "CEI": "Sono mie tutte le bestie della foresta, animali a migliaia sui monti."
-      }
-    },
-    "11": {
-      "seq": 11,
-      "v_in": {
-        "MT": 11,
-        "VUL": 11,
-        "LXX": 11
-      },
-      "text": {
-        "WLC": "יָ֭דַעְתִּי כָּל ע֣וֹף הָרִ֑ים וְ/זִ֥יז שָׂ֝דַ֗י עִמָּדִֽ/י׃",
-        "LXX": "ἀπόστρεψον τὸ πρόσωπόν σου ἀπὸ τῶν ἁμαρτιῶν μου, καὶ πάσας τὰς ἀνομίας μου ἐξάλειψον.",
-        "VUL": "Averte faciem tuam a peccatis meis,/ et omnes iniquitates meas dele./",
-        "SYN": "Отврати лице Твое от грехов моих и изгладь все беззакония мои.",
-        "NEO": "je connais tous les oiseaux des montagnes, et ce qui se meut dans les champs est sous ma main.",
-        "NAB": "I know every bird of the heavens; the creatures of the field belong to me.",
-        "VAT_ES": "Yo conozco los pájaros de los montes",
-        "CEI": "Conosco tutti gli uccelli del cielo, è mio ciò che si muove nella campagna."
-      }
-    },
-    "12": {
-      "seq": 12,
-      "v_in": {
-        "MT": 12,
-        "VUL": 12,
-        "LXX": 12
-      },
-      "text": {
-        "WLC": "אִם אֶ֭רְעַב לֹא אֹ֣מַר לָ֑/ךְ כִּי לִ֥/י תֵ֝בֵ֗ל וּ/מְלֹאָֽ/הּ׃",
-        "LXX": "καρδίαν καθαρὰν κτίσον ἐν ἐμοί, ὁ θεός, καὶ πνεῦμα εὐθὲς ἐνκαίνισον ἐν τοῖς ἐγκάτοις μου.",
-        "VUL": "Cor mundum crea in me, Deus,/ et spiritum rectum innova in visceribus meis./",
-        "SYN": "Сердце чистое сотвори во мне, Боже, и дух правый обнови внутри меня.",
-        "NEO": "Si j’avais faim, je ne te le dirai pas, car le monde est à moi, et tout ce qu’il renferme.",
-        "NAB": "Were I hungry, I would not tell you, for mine is the world and all that fills it.",
-        "VAT_ES": "Si tuviera hambre, no te diría,",
-        "CEI": "Se avessi fame, a te non lo direi: mio è il mondo e quanto contiene."
-      }
-    },
-    "13": {
-      "seq": 13,
-      "v_in": {
-        "MT": 13,
-        "VUL": 13,
-        "LXX": 13
-      },
-      "text": {
-        "WLC": "הַֽ֭/אוֹכַל בְּשַׂ֣ר אַבִּירִ֑ים וְ/דַ֖ם עַתּוּדִ֣ים אֶשְׁתֶּֽה׃",
-        "LXX": "μὴ ἀπορρίψῃς με ἀπὸ τοῦ προσώπου σου, καὶ τὸ πνεῦμα τὸ ἅγιόν σου μὴ ἀντανέλῃς ἀπ’ ἐμοῦ.",
-        "VUL": "Ne projicias me a facie tua,/ et spiritum sanctum tuum ne auferas a me./",
-        "SYN": "Не отвергни меня от лица Твоего и Духа Твоего Святаго не отними от меня.",
-        "NEO": "Est-ce que je mange la chair des taureaux ? Est-ce que je bois le sang des boucs ?",
-        "NAB": "Do I eat the flesh of bulls or drink the blood of goats?",
-        "VAT_ES": "&iquest;Acaso voy a comer la carne de los toros",
-        "CEI": "Mangerò forse la carne dei tori, berrò forse il sangue dei capri?"
-      }
-    },
-    "14": {
-      "seq": 14,
-      "v_in": {
-        "MT": 14,
-        "VUL": 14,
-        "LXX": 14
-      },
-      "text": {
-        "WLC": "זְבַ֣ח לֵ/אלֹהִ֣ים תּוֹדָ֑ה וְ/שַׁלֵּ֖ם לְ/עֶלְי֣וֹן נְדָרֶֽי/ךָ׃",
-        "LXX": "ἀπόδος μοι τὴν ἀγαλλίασιν τοῦ σωτηρίου σου, καὶ πνεύματι ἡγεμονικῷ στήρισόν με.",
-        "VUL": "Redde mihi lætitiam salutaris tui,/ et spiritu principali confirma me./",
-        "SYN": "Возврати мне радость спасения Твоего и Духом владычественным утверди меня.",
-        "NEO": "Offre en sacrifice à Dieu l’action de grâces, et acquitte tes vœux envers le Très-Haut.",
-        "NAB": "Offer praise as your sacrifice to God; fulfill your vows to the Most High.",
-        "VAT_ES": "Ofrece al Señor un sacrificio de alabanza",
-        "CEI": "Offri a Dio un sacrificio di lode e sciogli all'Altissimo i tuoi voti;"
-      }
-    },
-    "15": {
-      "seq": 15,
-      "v_in": {
-        "MT": 15,
-        "VUL": 15,
-        "LXX": 15
-      },
-      "text": {
-        "WLC": "וּ֭/קְרָאֵ/נִי בְּ/י֣וֹם צָרָ֑ה אֲ֝חַלֶּצְ/ךָ֗ וּֽ/תְכַבְּדֵֽ/נִי׃",
-        "LXX": "διδάξω ἀνόμους τὰς ὁδούς σου, καὶ ἀσεβεῖς ἐπὶ σὲ ἐπιστρέψουσιν.",
-        "VUL": "Docebo iniquos vias tuas,/ et impii ad te convertentur./",
-        "SYN": "Научу беззаконных путям Твоим, и нечестивые к Тебе обратятся.",
-        "NEO": "Et invoque-moi au jour de la détresse : je te délivrerai, et tu me glorifieras. »",
-        "NAB": "Then call on me in time of distress; I will rescue you, and you shall honor me.\"",
-        "VAT_ES": "invócame en los momentos de peligro:",
-        "CEI": "invocami nel giorno della sventura: ti salverò e tu mi darai gloria\"."
-      }
-    },
-    "16": {
-      "seq": 16,
-      "v_in": {
-        "MT": 16,
-        "VUL": 16,
-        "LXX": 16
-      },
-      "text": {
-        "WLC": "וְ/לָ֤/רָשָׁ֨ע אָ֘מַ֤ר אֱלֹהִ֗ים מַה לְּ֭/ךָ לְ/סַפֵּ֣ר חֻקָּ֑/י וַ/תִּשָּׂ֖א בְרִיתִ֣/י עֲלֵי פִֽי/ךָ׃",
-        "LXX": "ῥῦσαί με ἐξ αἱμάτων, ὁ θεὸς ὁ θεὸς τῆς σωτηρίας μου· ἀγαλλιάσεται ἡ γλῶσσά μου τὴν δικαιοσύνην σου,",
-        "VUL": "Libera me de sanguinibus, Deus, Deus salutis meæ,/ et exsultabit lingua mea justitiam tuam./",
-        "SYN": "Избавь меня от кровей, Боже, Боже спасения моего, и язык мой восхвалит правду Твою.",
-        "NEO": "Mais au méchant Dieu dit : « Quoi donc ! tu énumères mes préceptes, et tu as mon alliance à la bouche,",
-        "NAB": "But to the wicked God says: \"Why do you recite my commandments and profess my covenant with your lips?",
-        "VAT_ES": "Dios dice al malvado:",
-        "CEI": "All'empio dice Dio: \"Perché vai ripetendo i miei decreti e hai sempre in bocca la mia alleanza,"
-      }
-    },
-    "17": {
-      "seq": 17,
-      "v_in": {
-        "MT": 17,
-        "VUL": 17,
-        "LXX": 17
-      },
-      "text": {
-        "WLC": "וְ֭/אַתָּה שָׂנֵ֣אתָ מוּסָ֑ר וַ/תַּשְׁלֵ֖ךְ דְּבָרַ֣/י אַחֲרֶֽי/ךָ׃",
-        "LXX": "κύριε. τὰ χείλη μου ἀνοίξεις, καὶ τὸ στόμα μου ἀναγγελεῖ τὴν αἴνεσίν σου.",
-        "VUL": "Domine, labia mea aperies,/ et os meum annuntiabit laudem tuam./",
-        "SYN": "Господи! отверзи уста мои, и уста мои возвестят хвалу Твою:",
-        "NEO": "toi qui détestes la discipline, et qui jettes mes paroles derrière toi !",
-        "NAB": "You hate discipline; you cast my words behind you!",
-        "VAT_ES": "tú, que aborreces toda enseñanza",
-        "CEI": "tu che detesti la disciplina e le mie parole te le getti alle spalle?"
-      }
-    },
-    "18": {
-      "seq": 18,
-      "v_in": {
-        "MT": 18,
-        "VUL": 18,
-        "LXX": 18
-      },
-      "text": {
-        "WLC": "אִם רָאִ֣יתָ גַ֭נָּב וַ/תִּ֣רֶץ עִמּ֑/וֹ וְ/עִ֖ם מְנָאֲפִ֣ים חֶלְקֶֽ/ךָ׃",
-        "LXX": "ὅτι εἰ ἠθέλησας θυσίαν, ἔδωκα ἄν· ὁλοκαυτώματα οὐκ εὐδοκήσεις.",
-        "VUL": "Quoniam si voluisses sacrificium, dedissem utique ;/ holocaustis non delectaberis./",
-        "SYN": "ибо жертвы Ты не желаешь, - я дал бы ее; к всесожжению не благоволишь.",
-        "NEO": "Si tu vois un voleur, tu te plais avec lui, et tu fais cause commune avec les adultères.",
-        "NAB": "When you see thieves, you befriend them; with adulterers you throw in your lot.",
-        "VAT_ES": "Si ves a un ladrón, tratas de emularlo;",
-        "CEI": "Se vedi un ladro, corri con lui; e degli adùlteri ti fai compagno."
-      }
-    },
-    "19": {
-      "seq": 19,
-      "v_in": {
-        "MT": 19,
-        "VUL": 19,
-        "LXX": 19
-      },
-      "text": {
-        "WLC": "פִּ֭י/ךָ שָׁלַ֣חְתָּ בְ/רָעָ֑ה וּ֝/לְשׁוֹנְ/ךָ֗ תַּצְמִ֥יד מִרְמָֽה׃",
-        "LXX": "θυσία τῷ θεῷ πνεῦμα συντετριμμένον, καρδίαν συντετριμμένην καὶ τεταπεινωμένην ὁ θεὸς οὐκ ἐξουθενώσει.",
-        "VUL": "Sacrificium Deo spiritus contribulatus ;/ cor contritum et humiliatum, Deus, non despicies./",
-        "SYN": "Жертва Богу - дух сокрушенный; сердца сокрушенного и смиренного Ты не презришь, Боже.",
-        "NEO": "Tu abandonnes ta bouche au mal, et ta langue ourdit la fraude.",
-        "NAB": "You give your mouth free rein for evil; you harness your tongue to deceit.",
-        "VAT_ES": "hablas mal sin ningún reparo",
-        "CEI": "Abbandoni la tua bocca al male e la tua lingua ordisce inganni."
-      }
-    },
-    "20": {
-      "seq": 20,
-      "v_in": {
-        "MT": 20,
-        "VUL": 20,
-        "LXX": 20
-      },
-      "text": {
-        "WLC": "תֵּ֭שֵׁב בְּ/אָחִ֣י/ךָ תְדַבֵּ֑ר בְּ/בֶֽן אִ֝מְּ/ךָ֗ תִּתֶּן דֹּֽפִי׃",
-        "LXX": "ἀγάθυνον, Κύριε, ἐν τῇ εὐδοκίᾳ σου τὴν Σιών, καὶ οἰκοδομηθήτω τὰ τείχη Ἰερουσαλήμ.",
-        "VUL": "Benigne fac, Domine, in bona voluntate tua Sion,/ ut ædificentur muri Jerusalem./",
-        "SYN": "Облагодетельствуй, [Господи,] по благоволению Твоему Сион; воздвигни стены Иерусалима:",
-        "NEO": "Tu t’assieds, et tu parles contre ton frère, tu diffames le fils de ta mère.",
-        "NAB": "You sit maligning your own kin, slandering the child of your own mother.",
-        "VAT_ES": "te sientas a conversar contra tu hermano,",
-        "CEI": "Ti siedi, parli contro il tuo fratello, getti fango contro il figlio di tua madre."
-      }
-    },
-    "21": {
-      "seq": 21,
-      "v_in": {
-        "MT": 21,
-        "VUL": 21,
-        "LXX": 21
-      },
-      "text": {
-        "WLC": "אֵ֤לֶּה עָשִׂ֨יתָ וְֽ/הֶחֱרַ֗שְׁתִּי דִּמִּ֗יתָ הֱֽיוֹת אֶֽהְיֶ֥ה כָמ֑וֹ/ךָ אוֹכִיחֲ/ךָ֖ וְ/אֶֽעֶרְכָ֣ה לְ/עֵינֶֽי/ךָ׃",
-        "LXX": "τότε εὐδοκήσεις θυσίαν δικαιοσύνης, ἀναφορὰν καὶ ὁλοκαυτώματα· τότε ἀνοίσουσιν ἐπὶ τὸ θυσιαστήριόν σου μόσχους.",
-        "VUL": "Tunc acceptabis sacrificium justitiæ, oblationes et holocausta ;/ tunc imponent super altare tuum vitulos.]",
-        "SYN": "тогда благоугодны будут Тебе жертвы правды, возношение и всесожжение; тогда возложат на алтарь Твой тельцов.",
-        "NEO": "Voilà ce que tu as fait, et je me suis tu. Tu t’es imaginé que j’étais pareil à toi ; mais je vais te reprendre et tout mettre sous tes yeux. »",
-        "NAB": "When you do these things should I be silent? Or do you think that I am like you? I accuse you, I lay the charge before you.",
-        "VAT_ES": "Haces esto, &iquest;y yo me voy a callar?",
-        "CEI": "Hai fatto questo e dovrei tacere? forse credevi ch'io fossi come te! Ti rimprovero: ti pongo innanzi i tuoi peccati\"."
-      }
-    },
-    "22": {
-      "seq": 22,
-      "v_in": {
-        "MT": 22,
-        "VUL": 22,
-        "LXX": 22
-      },
-      "text": {
-        "WLC": "בִּֽינוּ נָ֣א זֹ֭את שֹׁכְחֵ֣י אֱל֑וֹהַּ פֶּן אֶ֝טְרֹ֗ף וְ/אֵ֣ין מַצִּֽיל׃",
-        "NEO": "Prenez-y donc garde, vous qui oubliez Dieu, de peur que je ne déchire, sans que personne délivre.",
-        "NAB": "\"Understand this, you who forget God, lest I attack you with no one to rescue.",
-        "VAT_ES": "Entiendan bien esto, los que olvidan a Dios,",
-        "CEI": "Capite questo voi che dimenticate Dio, perché non mi adiri e nessuno vi salvi."
-      }
-    },
-    "23": {
-      "seq": 23,
-      "v_in": {
-        "MT": 23,
-        "VUL": 23,
-        "LXX": 23
-      },
-      "text": {
-        "WLC": "זֹבֵ֥חַ תּוֹדָ֗ה יְֽכַ֫בְּדָ֥/נְנִי וְ/שָׂ֥ם דֶּ֑רֶךְ אַ֝רְאֶ֗/נּוּ בְּ/יֵ֣שַׁע אֱלֹהִֽים׃",
-        "NEO": "Celui qui offre en sacrifice l’action de grâces m’honore, et à celui qui dispose sa voie je ferai voir le salut de Dieu.",
-        "NAB": "Those who offer praise as a sacrifice honor me; to the obedient I will show the salvation of God.\"",
-        "VAT_ES": "El que ofrece sacrificios de alabanza",
-        "CEI": "Chi offre il sacrificio di lode, questi mi onora, a chi cammina per la retta via mostrerò la salvezza di Dio."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "בְּֽ/בוֹא אֵ֭לָי/ו נָתָ֣ן הַ/נָּבִ֑יא כַּֽ/אֲשֶׁר בָּ֝֗א אֶל בַּת שָֽׁבַע׃",
+    "SYN": "после того, как приходил Доик Идумеянин и донес Саулу и сказал ему, что Давид пришел в дом Ахимелеха.",
+    "NEO": "Lorsque Nathan le prophète vint le trouver, après qu’il fut allé vers Bethsabée.",
+    "NAB": "when Nathan the prophet came to him after his affair with Bathsheba.",
+    "VAT_ES": "Cuando el profeta Natán lo visitó, después que aquel se había unido a Betsabé.",
+    "CEI": "Quando venne da lui il profeta Natan dopo che aveva peccato con Betsabea.",
+    "LXX": "ἐν τῷ ἐλθεῖν πρὸς αὐτὸν Ναθὰν τὸν προφήτην, ἡνίκα εἰσῆλθεν πρὸς Βηρσάβεε.",
+    "VUL": "cum venit ad eum Nathan propheta, quando intravit ad Bethsabee."
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "חָנֵּ֣/נִי אֱלֹהִ֣ים כְּ/חַסְדֶּ֑/ךָ כְּ/רֹ֥ב רַ֝חֲמֶ֗י/ךָ מְחֵ֣ה פְשָׁעָֽ/י׃",
+    "SYN": "Что хвалишься злодейством, сильный? милость Божия всегда _со мною;_",
+    "NEO": "Aie pitié de moi, ô Dieu, selon ta bonté ; selon ta grande miséricorde efface mes transgressions.",
+    "NAB": "Have mercy on me, God, in your goodness; in your abundant compassion blot out my offense.",
+    "VAT_ES": "&iexcl;Ten piedad de mí, oh Dios, por tu bondad,",
+    "CEI": "Pietà di me, o Dio, secondo la tua misericordia; nella tua grande bontà cancella il mio peccato.",
+    "LXX": "Ἐλέησόν με, ὁ θεός, κατὰ τὸ μέγα ἔλεός σου, καὶ κατὰ τὸ πλῆθος τῶν οἰκτιρμῶν σου ἐξάλειψον τὸ ἀνόμημά μου·",
+    "VUL": "[Miserere mei, Deus, secundum magnam misericordiam tuam ;/ et secundum multitudinem miserationum tuarum, dele iniquitatem meam./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "הרבה הֶ֭רֶב כַּבְּסֵ֣/נִי מֵ/עֲוֺנִ֑/י וּֽ/מֵ/חַטָּאתִ֥/י טַהֲרֵֽ/נִי׃",
+    "SYN": "гибель вымышляет язык твой; как изощренная бритва, он _у тебя,_ коварный!",
+    "NEO": "Lave-moi complètement de mon iniquité, et purifie-moi de mon péché.",
+    "NAB": "Wash away all my guilt; from my sin cleanse me.",
+    "VAT_ES": "&iexcl;Lávame totalmente de mi culpa",
+    "CEI": "Lavami da tutte le mie colpe, mondami dal mio peccato.",
+    "LXX": "ἐπὶ πλεῖον πλῦνόν με ἀπὸ τῆς ἀνομίας μου, καὶ ἀπὸ τῆς ἁμαρτίας μου καθάρισόν με.",
+    "VUL": "Amplius lava me ab iniquitate mea,/ et a peccato meo munda me./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "כִּֽי פְ֭שָׁעַ/י אֲנִ֣י אֵדָ֑ע וְ/חַטָּאתִ֖/י נֶגְדִּ֣/י תָמִֽיד׃",
+    "SYN": "ты любишь больше зло, нежели добро, больше ложь, нежели говорить правду;",
+    "NEO": "Car je reconnais mes transgressions, et mon péché est constamment devant moi.",
+    "NAB": "For I know my offense; my sin is always before me.",
+    "VAT_ES": "Porque yo reconozco mis faltas",
+    "CEI": "Riconosco la mia colpa, il mio peccato mi sta sempre dinanzi.",
+    "LXX": "ὅτι τὴν ἀνομίαν μου ἐγὼ γινώσκω, καὶ ἡ ἁμαρτία μου ἐνώπιόν μού ἐστιν διὰ παντός.",
+    "VUL": "Quoniam iniquitatem meam ego cognosco,/ et peccatum meum contra me est semper./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "לְ/ךָ֤ לְ/בַדְּ/ךָ֨ חָטָאתִי֮ וְ/הָ/רַ֥ע בְּ/עֵינֶ֗י/ךָ עָ֫שִׂ֥יתִי לְ֭מַעַן תִּצְדַּ֥ק בְּ/דָבְרֶ֗/ךָ תִּזְכֶּ֥ה בְ/שָׁפְטֶֽ/ךָ׃",
+    "SYN": "ты любишь всякие гибельные речи, язык коварный:",
+    "NEO": "C’est contre toi seul que j’ai péché, j’ai fait ce qui est mal à tes yeux, afin que tu sois trouvé juste dans ta sentence, sans reproche dans ton jugement.",
+    "NAB": "Against you alone have I sinned; I have done such evil in your sight That you are just in your sentence, blameless when you condemn.",
+    "VAT_ES": "Contra ti, contra ti solo pequé",
+    "CEI": "Contro di te, contro te solo ho peccato, quello che è male ai tuoi occhi, io l'ho fatto; perciò sei giusto quando parli, retto nel tuo giudizio.",
+    "LXX": "σοὶ μόνῳ ἥμαρτον, καὶ τὸ πονηρὸν ἐνώπιον σοῦ ἐποίησα· ὅπως ἄν δικαιωθῇς ἐν τοῖς λόγοις σου, καὶ νικήσῃς ἐν τῷ κρίνεσθαί σε.",
+    "VUL": "Tibi soli peccavi, et malum coram te feci ;/ ut justificeris in sermonibus tuis,/ et vincas cum judicaris./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "הֵן בְּ/עָו֥וֹן חוֹלָ֑לְתִּי וּ֝/בְ/חֵ֗טְא יֶֽחֱמַ֥תְ/נִי אִמִּֽ/י׃",
+    "SYN": "за то Бог сокрушит тебя вконец, изринет тебя и исторгнет тебя из жилища [твоего] и корень твой из земли живых.",
+    "NEO": "Voici que je suis né dans l’iniquité et ma mère m’a conçu dans le péché.",
+    "NAB": "True, I was born guilty, a sinner, even as my mother conceived me.",
+    "VAT_ES": "yo soy culpable desde que nací;",
+    "CEI": "Ecco, nella colpa sono stato generato, nel peccato mi ha concepito mia madre.",
+    "LXX": "ἰδοὺ γὰρ ἐν ἀνομίαις συνελήμφθην, καὶ ἐν ἁμαρτίαις ἐκίσσησέν με ἡ μήτηρ μου.",
+    "VUL": "Ecce enim in iniquitatibus conceptus sum,/ et in peccatis concepit me mater mea./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "הֵן אֱ֭מֶת חָפַ֣צְתָּ בַ/טֻּח֑וֹת וּ֝/בְ/סָתֻ֗ם חָכְמָ֥ה תוֹדִיעֵֽ/נִי׃",
+    "SYN": "Увидят праведники и убоятся, посмеются над ним [и скажут]:",
+    "NEO": "Voici que tu veux que la sincérité soit dans le cœur au dedans de moi fais-moi connaître la sagesse.",
+    "NAB": "Still, you insist on sincerity of heart; in my inmost being teach me wisdom.",
+    "VAT_ES": "Tú amas la sinceridad del corazón",
+    "CEI": "Ma tu vuoi la sincerità del cuore e nell'intimo m'insegni la sapienza.",
+    "LXX": "ἰδοὺ γὰρ ἀλήθειαν ἠγάπησας, τὰ ἄδηλα καὶ τὰ κρύφια τῆς σοφίας σου ἐδήλωσάς μοι.",
+    "VUL": "Ecce enim veritatem dilexisti ;/ incerta et occulta sapientiæ tuæ manifestasti mihi./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "תְּחַטְּאֵ֣/נִי בְ/אֵז֣וֹב וְ/אֶטְהָ֑ר תְּ֝כַבְּסֵ֗/נִי וּ/מִ/שֶּׁ֥לֶג אַלְבִּֽין׃",
+    "SYN": "\"вот человек, который не в Боге полагал крепость свою, а надеялся на множество богатства своего, укреплялся в злодействе своем\".",
+    "NEO": "Purifie-moi avec l’hysope, et je serai pur ; lave-moi, et je serai plus blanc que la neige.",
+    "NAB": "Cleanse me with hyssop, that I may be pure; wash me, make me whiter than snow.",
+    "VAT_ES": "Purifícame con el hisopo y quedaré limpio;",
+    "CEI": "Purificami con issopo e sarò mondo; lavami e sarò più bianco della neve.",
+    "LXX": "ῥαντιεῖς με ὑσσώπῳ καὶ καθαρισθήσομαι, πλυνεῖς με καὶ ὑπὲρ χιόνα λευκανθήσομαι.",
+    "VUL": "Asperges me hyssopo, et mundabor ;/ lavabis me, et super nivem dealbabor./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "תַּ֭שְׁמִיעֵ/נִי שָׂשׂ֣וֹן וְ/שִׂמְחָ֑ה תָּ֝גֵ֗לְנָה עֲצָמ֥וֹת דִּכִּֽיתָ׃",
+    "SYN": "А я, как зеленеющая маслина, в доме Божием, и уповаю на милость Божию во веки веков,",
+    "NEO": "Annonce-moi la joie et l’allégresse, et les os que tu as brisés se réjouiront.",
+    "NAB": "Let me hear sounds of joy and gladness; let the bones you have crushed rejoice.",
+    "VAT_ES": "Anúnciame el gozo y la alegría:",
+    "CEI": "Fammi sentire gioia e letizia, esulteranno le ossa che hai spezzato.",
+    "LXX": "ἀκουτιεῖς με ἀγαλλίασιν καὶ εὐφροσύνην· ἀγαλλιάσονται ὀστᾶ τεταπεινωμένα.",
+    "VUL": "Auditui meo dabis gaudium et lætitiam,/ et exsultabunt ossa humiliata./"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "הַסְתֵּ֣ר פָּ֭נֶי/ךָ מֵ/חֲטָאָ֑/י וְֽ/כָל עֲוֺ֖נֹתַ֣/י מְחֵֽה׃",
+    "SYN": "вечно буду славить Тебя за то, что Ты соделал, и уповать на имя Твое, ибо оно благо пред святыми Твоими.",
+    "NEO": "Détourne ta face de mes péchés, efface toutes mes iniquités.",
+    "NAB": "Turn away your face from my sins; blot out all my guilt.",
+    "VAT_ES": "Aparta tu vista de mis pecados",
+    "CEI": "Distogli lo sguardo dai miei peccati, cancella tutte le mie colpe.",
+    "LXX": "ἀπόστρεψον τὸ πρόσωπόν σου ἀπὸ τῶν ἁμαρτιῶν μου, καὶ πάσας τὰς ἀνομίας μου ἐξάλειψον.",
+    "VUL": "Averte faciem tuam a peccatis meis,/ et omnes iniquitates meas dele./"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "לֵ֣ב טָ֭הוֹר בְּרָא לִ֣/י אֱלֹהִ֑ים וְ/ר֥וּחַ נָ֝כ֗וֹן חַדֵּ֥שׁ בְּ/קִרְבִּֽ/י׃",
+    "NEO": "O Dieu, crée en moi un cœur pur, et renouvelle au dedans de moi un esprit ferme.",
+    "NAB": "A clean heart create for me, God; renew in me a steadfast spirit.",
+    "VAT_ES": "Crea en mí, Dios mío, un corazón puro,",
+    "CEI": "Crea in me, o Dio, un cuore puro, rinnova in me uno spirito saldo.",
+    "LXX": "καρδίαν καθαρὰν κτίσον ἐν ἐμοί, ὁ θεός, καὶ πνεῦμα εὐθὲς ἐνκαίνισον ἐν τοῖς ἐγκάτοις μου.",
+    "VUL": "Cor mundum crea in me, Deus,/ et spiritum rectum innova in visceribus meis./"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13,
+    "MT": 13
+   },
+   "text": {
+    "WLC": "אַל תַּשְׁלִיכֵ֥/נִי מִ/לְּ/פָנֶ֑י/ךָ וְ/ר֥וּחַ קָ֝דְשְׁ/ךָ֗ אַל תִּקַּ֥ח מִמֶּֽ/נִּי׃",
+    "NEO": "Ne me rejette pas loin de ta face, ne me retire pas ton esprit saint.",
+    "NAB": "Do not drive me from your presence, nor take from me your holy spirit.",
+    "VAT_ES": "No me arrojes lejos de tu presencia",
+    "CEI": "Non respingermi dalla tua presenza e non privarmi del tuo santo spirito.",
+    "LXX": "μὴ ἀπορρίψῃς με ἀπὸ τοῦ προσώπου σου, καὶ τὸ πνεῦμα τὸ ἅγιόν σου μὴ ἀντανέλῃς ἀπ’ ἐμοῦ.",
+    "VUL": "Ne projicias me a facie tua,/ et spiritum sanctum tuum ne auferas a me./"
+   }
+  },
+  "14": {
+   "seq": 14,
+   "v_in": {
+    "VUL": 14,
+    "MT": 14
+   },
+   "text": {
+    "WLC": "הָשִׁ֣יבָ/ה לִּ֭/י שְׂשׂ֣וֹן יִשְׁעֶ֑/ךָ וְ/ר֖וּחַ נְדִיבָ֣ה תִסְמְכֵֽ/נִי׃",
+    "NEO": "Rends-moi la joie de ton salut, et soutiens-moi par un esprit de bonne volonté.",
+    "NAB": "Restore my joy in your salvation; sustain in me a willing spirit.",
+    "VAT_ES": "Devuélveme la alegría de tu salvación,",
+    "CEI": "Rendimi la gioia di essere salvato, sostieni in me un animo generoso.",
+    "LXX": "ἀπόδος μοι τὴν ἀγαλλίασιν τοῦ σωτηρίου σου, καὶ πνεύματι ἡγεμονικῷ στήρισόν με.",
+    "VUL": "Redde mihi lætitiam salutaris tui,/ et spiritu principali confirma me./"
+   }
+  },
+  "15": {
+   "seq": 15,
+   "v_in": {
+    "VUL": 15,
+    "MT": 15
+   },
+   "text": {
+    "WLC": "אֲלַמְּדָ֣ה פֹשְׁעִ֣ים דְּרָכֶ֑י/ךָ וְ֝/חַטָּאִ֗ים אֵלֶ֥י/ךָ יָשֽׁוּבוּ׃",
+    "NEO": "J’enseignerai tes voies à ceux qui les transgressent, et les pécheurs reviendront à toi.",
+    "NAB": "I will teach the wicked your ways, that sinners may return to you.",
+    "VAT_ES": "yo enseñaré tu camino a los impíos",
+    "CEI": "Insegnerò agli erranti le tue vie e i peccatori a te ritorneranno.",
+    "LXX": "διδάξω ἀνόμους τὰς ὁδούς σου, καὶ ἀσεβεῖς ἐπὶ σὲ ἐπιστρέψουσιν.",
+    "VUL": "Docebo iniquos vias tuas,/ et impii ad te convertentur./"
+   }
+  },
+  "16": {
+   "seq": 16,
+   "v_in": {
+    "VUL": 16,
+    "MT": 16
+   },
+   "text": {
+    "WLC": "הַצִּ֘ילֵ֤/נִי מִ/דָּמִ֨ים אֱֽלֹהִ֗ים אֱלֹהֵ֥י תְּשׁוּעָתִ֑/י תְּרַנֵּ֥ן לְ֝שׁוֹנִ֗/י צִדְקָתֶֽ/ךָ׃",
+    "NEO": "O Dieu, Dieu de mon salut, délivre-moi du sang versé, et ma langue célébrera ta justice.",
+    "NAB": "Rescue me from death, God, my saving God, that my tongue may praise your healing power.",
+    "VAT_ES": "&iexcl;Líbrame de la muerte, Dios, salvador mío,",
+    "CEI": "Liberami dal sangue, Dio, Dio mia salvezza, la mia lingua esalterà la tua giustizia.",
+    "LXX": "ῥῦσαί με ἐξ αἱμάτων, ὁ θεὸς ὁ θεὸς τῆς σωτηρίας μου· ἀγαλλιάσεται ἡ γλῶσσά μου τὴν δικαιοσύνην σου,",
+    "VUL": "Libera me de sanguinibus, Deus, Deus salutis meæ,/ et exsultabit lingua mea justitiam tuam./"
+   }
+  },
+  "17": {
+   "seq": 17,
+   "v_in": {
+    "VUL": 17,
+    "MT": 17
+   },
+   "text": {
+    "WLC": "אֲ֭דֹנָ/י שְׂפָתַ֣/י תִּפְתָּ֑ח וּ֝/פִ֗/י יַגִּ֥יד תְּהִלָּתֶֽ/ךָ׃",
+    "NEO": "Seigneur, ouvre mes lèvres, et ma bouche publiera ta louange.",
+    "NAB": "Lord, open my lips; my mouth will proclaim your praise.",
+    "VAT_ES": "Abre mis labios, Señor,",
+    "CEI": "Signore, apri le mie labbra e la mia bocca proclami la tua lode;",
+    "LXX": "κύριε. τὰ χείλη μου ἀνοίξεις, καὶ τὸ στόμα μου ἀναγγελεῖ τὴν αἴνεσίν σου.",
+    "VUL": "Domine, labia mea aperies,/ et os meum annuntiabit laudem tuam./"
+   }
+  },
+  "18": {
+   "seq": 18,
+   "v_in": {
+    "VUL": 18,
+    "MT": 18
+   },
+   "text": {
+    "WLC": "כִּ֤י לֹא תַחְפֹּ֣ץ זֶ֣בַח וְ/אֶתֵּ֑נָה ע֝וֹלָ֗ה לֹ֣א תִרְצֶֽה׃",
+    "NEO": "Car tu ne désires pas de sacrifices, — je t’en offrirais, — tu ne prends pas plaisir aux holocaustes.",
+    "NAB": "For you do not desire sacrifice; a burnt offering you would not accept.",
+    "VAT_ES": "Los sacrificios no te satisfacen;",
+    "CEI": "poiché non gradisci il sacrificio e, se offro olocausti, non li accetti.",
+    "LXX": "ὅτι εἰ ἠθέλησας θυσίαν, ἔδωκα ἄν· ὁλοκαυτώματα οὐκ εὐδοκήσεις.",
+    "VUL": "Quoniam si voluisses sacrificium, dedissem utique ;/ holocaustis non delectaberis./"
+   }
+  },
+  "19": {
+   "seq": 19,
+   "v_in": {
+    "VUL": 19,
+    "MT": 19
+   },
+   "text": {
+    "WLC": "זִֽבְחֵ֣י אֱלֹהִים֮ ר֪וּחַ נִשְׁבָּ֫רָ֥ה לֵב נִשְׁבָּ֥ר וְ/נִדְכֶּ֑ה אֱ֝לֹהִ֗ים לֹ֣א תִבְזֶֽה׃",
+    "NEO": "Les sacrifices de Dieu, c’est un esprit brisé ; ô Dieu, tu ne dédaignes pas un cœur brisé et contrit.",
+    "NAB": "My sacrifice, God, is a broken spirit; God, do not spurn a broken, humbled heart.",
+    "VAT_ES": "mi sacrificio es un espíritu contrito,",
+    "CEI": "Uno spirito contrito è sacrificio a Dio, un cuore affranto e umiliato, Dio, tu non disprezzi.",
+    "LXX": "θυσία τῷ θεῷ πνεῦμα συντετριμμένον, καρδίαν συντετριμμένην καὶ τεταπεινωμένην ὁ θεὸς οὐκ ἐξουθενώσει.",
+    "VUL": "Sacrificium Deo spiritus contribulatus ;/ cor contritum et humiliatum, Deus, non despicies./"
+   }
+  },
+  "20": {
+   "seq": 20,
+   "v_in": {
+    "VUL": 20
+   },
+   "text": {
+    "LXX": "ἀγάθυνον, Κύριε, ἐν τῇ εὐδοκίᾳ σου τὴν Σιών, καὶ οἰκοδομηθήτω τὰ τείχη Ἰερουσαλήμ.",
+    "VUL": "Benigne fac, Domine, in bona voluntate tua Sion,/ ut ædificentur muri Jerusalem./"
+   }
+  },
+  "21": {
+   "seq": 21,
+   "v_in": {
+    "VUL": 21
+   },
+   "text": {
+    "LXX": "τότε εὐδοκήσεις θυσίαν δικαιοσύνης, ἀναφορὰν καὶ ὁλοκαυτώματα· τότε ἀνοίσουσιν ἐπὶ τὸ θυσιαστήριόν σου μόσχους.",
+    "VUL": "Tunc acceptabis sacrificium justitiæ, oblationes et holocausta ;/ tunc imponent super altare tuum vitulos.]"
+   }
   }
+ }
 }

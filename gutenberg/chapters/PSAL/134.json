@@ -1,68 +1,357 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_134",
-  "book_key": "PSAL",
-  "sequence": 134,
-  "chapter_in": {
-    "MT": 134,
-    "VUL": 133,
-    "LXX": 133
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_134",
+ "book_key": "PSAL",
+ "sequence": 134,
+ "chapter_in": {
+  "VUL": 134,
+  "LXX": 134,
+  "MT": 135
+ },
+ "mt_sources": [
+  "135"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "הַ֥לְלוּ יָ֨הּ הַֽ֭לְלוּ אֶת שֵׁ֣ם יְהוָ֑ה הַֽ֝לְלוּ עַבְדֵ֥י יְהוָֽה׃",
+    "SYN": "Славьте Господа, ибо Он благ, ибо вовек милость Его.",
+    "NEO": "Alleluia. Louez le nom de \\+w Yahweh|strong=\"H3068\"\\+w**, louez-le, serviteurs de \\+w Yahweh|strong=\"H3068\"\\+w**,",
+    "NAB": "Hallelujah! Praise the name of the LORD! Praise, you servants of the LORD,",
+    "VAT_ES": "&iexcl;Aleluya!",
+    "CEI": "Alleluia. Lodate il nome del Signore, lodatelo, servi del Signore,",
+    "LXX": "Ἁλληλουιά. Αἰνεῖτε τὸ ὄνομα Κυρίου, αἰνεῖτε δοῦλοι Κύριον,",
+    "VUL": "Alleluja. [Laudate nomen Domini ;/ laudate, servi, Dominum :/"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "שִׁ֗יר הַֽ/מַּ֫עֲל֥וֹת הִנֵּ֤ה בָּרֲכ֣וּ אֶת יְ֭הוָה כָּל עַבְדֵ֣י יְהוָ֑ה הָ/עֹמְדִ֥ים בְּ/בֵית יְ֝הוָ֗ה בַּ/לֵּילֽוֹת׃",
-        "LXX": "Ἁλληλουιά. Αἰνεῖτε τὸ ὄνομα Κυρίου, αἰνεῖτε δοῦλοι Κύριον,",
-        "VUL": "Alleluja. [Laudate nomen Domini ;/ laudate, servi, Dominum :/",
-        "SYN": "Хвалите имя Господне, хвалите, рабы Господни,",
-        "NEO": "Cantique des montées.",
-        "NAB": "A song of ascents. Come, bless the LORD, all you servants of the LORD Who stand in the house of the LORD through the long hours of night.",
-        "CEI": "Canto delle ascensioni. Ecco, benedite il Signore, voi tutti, servi del Signore; voi che state nella casa del Signore durante le notti."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "שְׂאֽוּ יְדֵ/כֶ֥ם קֹ֑דֶשׁ וּ֝/בָרֲכוּ אֶת יְהוָֽה׃",
-        "LXX": "οἱ ἑστῶτες ἐν οἴκῳ Κυρίου, ἐν αὐλαῖς οἴκου θεοῦ ἡμῶν.",
-        "VUL": "qui statis in domo Domini,/ in atriis domus Dei nostri./",
-        "SYN": "стоящие в доме Господнем, во дворах дома Бога нашего.",
-        "NEO": "Levez les mains vers le sanctuaire, et bénissez \\+w Yahweh|strong=\"H3068\"\\+w**.",
-        "NAB": "Lift up your hands toward the sanctuary, and bless the LORD.",
-        "VAT_ES": "Eleven las manos al Santuario",
-        "CEI": "Alzate le mani verso il tempio e benedite il Signore."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "יְבָרֶכְ/ךָ֣ יְ֭הוָה מִ/צִּיּ֑וֹן עֹ֝שֵׂ֗ה שָׁמַ֥יִם וָ/אָֽרֶץ׃",
-        "LXX": "αἰνεῖτε τὸν κύριον, ὅτι ἀγαθὸς Κύριος· ψάλατε τῷ ὀνόματι αὐτοῦ, ὅτι καλόν·",
-        "VUL": "Laudate Dominum, quia bonus Dominus ;/ psallite nomini ejus, quoniam suave./",
-        "SYN": "Хвалите Господа, ибо Господь благ; пойте имени Его, ибо это сладостно,",
-        "NEO": "Que \\+w Yahweh|strong=\"H3068\"\\+w** te bénisse de Sion, lui qui a fait les cieux et la terre !",
-        "NAB": "May the LORD who made heaven and earth bless you from Zion.",
-        "VAT_ES": "El Señor que hizo el cielo y la tierra",
-        "CEI": "Da Sion ti benedica il Signore, che ha fatto cielo e terra."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "שֶׁ֣֭/עֹֽמְדִים בְּ/בֵ֣ית יְהוָ֑ה בְּ֝/חַצְר֗וֹת בֵּ֣ית אֱלֹהֵֽי/נוּ׃",
+    "SYN": "Славьте Бога богов, ибо вовек милость Его.",
+    "NEO": "vous qui êtes de service dans la maison de \\+w Yahweh|strong=\"H3068\"\\+w**, dans les parvis de la maison de notre Dieu.",
+    "NAB": "Who stand in the house of the LORD, in the courts of the house of our God!",
+    "VAT_ES": "los que están en la Casa del Señor,",
+    "CEI": "voi che state nella casa del Signore, negli atri della casa del nostro Dio.",
+    "LXX": "οἱ ἑστῶτες ἐν οἴκῳ Κυρίου, ἐν αὐλαῖς οἴκου θεοῦ ἡμῶν.",
+    "VUL": "qui statis in domo Domini,/ in atriis domus Dei nostri./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "הַֽ֭לְלוּ יָהּ כִּי ט֣וֹב יְהוָ֑ה זַמְּר֥וּ לִ֝/שְׁמ֗/וֹ כִּ֣י נָעִֽים׃",
+    "SYN": "Славьте Господа господствующих, ибо вовек милость Его;",
+    "NEO": "Louez \\+w Yahweh|strong=\"H3068\"\\+w**, car \\+w Yahweh|strong=\"H3068\"\\+w** est bon ; chantez son nom sur la harpe, car il est plein de douceur.",
+    "NAB": "Praise the LORD; the LORD is good! Sing to God's name; it is gracious!",
+    "VAT_ES": "Alaben al Señor, porque es bueno,",
+    "CEI": "Lodate il Signore: il Signore è buono; cantate inni al suo nome, perché è amabile.",
+    "LXX": "αἰνεῖτε τὸν κύριον, ὅτι ἀγαθὸς Κύριος· ψάλατε τῷ ὀνόματι αὐτοῦ, ὅτι καλόν·",
+    "VUL": "Laudate Dominum, quia bonus Dominus ;/ psallite nomini ejus, quoniam suave./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "כִּֽי יַעֲקֹ֗ב בָּחַ֣ר ל֣/וֹ יָ֑הּ יִ֝שְׂרָאֵ֗ל לִ/סְגֻלָּתֽ/וֹ׃",
+    "SYN": "Того, Который один творит чудеса великие, ибо вовек милость Его;",
+    "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** s’est choisi Jacob, il s’est choisi Israël pour en faire son héritage.",
+    "NAB": "For the LORD has chosen Jacob, Israel as a treasured possession.",
+    "VAT_ES": "porque el Señor eligió a Jacob,",
+    "CEI": "Il Signore si è scelto Giacobbe, Israele come suo possesso.",
+    "VUL": "Quoniam Jacob elegit sibi Dominus ;/ Israël in possessionem sibi./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "כִּ֤י אֲנִ֣י יָ֭דַעְתִּי כִּי גָד֣וֹל יְהוָ֑ה וַ֝/אֲדֹנֵ֗י/נוּ מִ/כָּל אֱלֹהִֽים׃",
+    "SYN": "Который сотворил небеса премудро, ибо вовек милость Его;",
+    "NEO": "Oui, je le sais, \\+w Yahweh|strong=\"H3068\"\\+w** est grand, notre Seigneur est au-dessus de tous les dieux.",
+    "NAB": "I know that the LORD is great, our Lord is greater than all gods.",
+    "VAT_ES": "Sí, yo sé que el Señor es grande,",
+    "CEI": "Io so che grande è il Signore, il nostro Dio sopra tutti gli dei.",
+    "VUL": "Quia ego cognovi quod magnus est Dominus,/ et Deus noster præ omnibus diis./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "כֹּ֤ל אֲשֶׁר חָפֵ֥ץ יְהוָ֗ה עָ֫שָׂ֥ה בַּ/שָּׁמַ֥יִם וּ/בָ/אָ֑רֶץ בַּ֝/יַּמִּ֗ים וְ/כָל תְּהוֹמֽוֹת׃",
+    "SYN": "утвердил землю на водах, ибо вовек милость Его;",
+    "NEO": "Tout ce que veut \\+w Yahweh|strong=\"H3068\"\\+w**, il le fait, dans les cieux et sur la terre, dans la mer et dans tous les abîmes.",
+    "NAB": "Whatever the LORD wishes he does in heaven and on earth, in the seas and in all the deeps.",
+    "VAT_ES": "el Señor hace todo lo que quiere en el cielo y en la tierra,",
+    "CEI": "Tutto ciò che vuole il Signore, egli lo compie in cielo e sulla terra, nei mari e in tutti gli abissi.",
+    "VUL": "Omnia quæcumque voluit Dominus fecit,/ in cælo, in terra, in mari et in omnibus abyssis./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "מַֽעֲלֶ֣ה נְשִׂאִים֮ מִ/קְצֵ֪ה הָ֫/אָ֥רֶץ בְּרָקִ֣ים לַ/מָּטָ֣ר עָשָׂ֑ה מֽוֹצֵא ר֝וּחַ מֵ/אֽוֹצְרוֹתָֽי/ו׃",
+    "SYN": "сотворил светила великие, ибо вовек милость Его;",
+    "NEO": "Il fait monter les nuages des extrémités de la terre, il produit les éclairs avec la pluie, il tire le vent de ses trésors.",
+    "NAB": "He raises storm clouds from the end of the earth, makes lightning and rain, brings forth wind from the storehouse.",
+    "VAT_ES": "Levanta las nubes desde el horizonte,",
+    "CEI": "Fa salire le nubi dall'estremità della terra, produce le folgori per la pioggia, dalle sue riserve libera i venti.",
+    "VUL": "Educens nubes ab extremo terræ,/ fulgura in pluviam fecit ;/ qui producit ventos de thesauris suis./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "שֶֽׁ֭/הִכָּה בְּכוֹרֵ֣י מִצְרָ֑יִם מֵ֝/אָדָ֗ם עַד בְּהֵמָֽה׃",
+    "SYN": "солнце - для управления днем, ибо вовек милость Его;",
+    "NEO": "Il frappa jadis les premiers-nés de l’Égypte, depuis l’homme jusqu’à l’animal.",
+    "NAB": "He struck down Egypt's firstborn, human and beast alike,",
+    "VAT_ES": "El hirió a los primogénitos de Egipto,",
+    "CEI": "Egli percosse i primogeniti d'Egitto, dagli uomini fino al bestiame.",
+    "VUL": "Qui percussit primogenita Ægypti,/ ab homine usque ad pecus./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "שָׁלַ֤ח אֹת֣וֹת וּ֭/מֹפְתִים בְּ/תוֹכֵ֣/כִי מִצְרָ֑יִם בְּ֝/פַרְעֹ֗ה וּ/בְ/כָל עֲבָדָֽי/ו׃",
+    "SYN": "луну и звезды - для управления ночью, ибо вовек милость Его;",
+    "NEO": "Il fit éclater des signes et des prodiges au milieu de toi, ô Égypte, contre Pharaon et tous ses serviteurs.",
+    "NAB": "And sent signs and portents against you, Egypt, against Pharaoh and all his servants.",
+    "VAT_ES": "realizó señales y prodigios",
+    "CEI": "Mandò segni e prodigi in mezzo a te, Egitto, contro il faraone e tutti i suoi ministri.",
+    "VUL": "Et misit signa et prodigia in medio tui, Ægypte :/ in Pharaonem, et in omnes servos ejus./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "שֶֽׁ֭/הִכָּה גּוֹיִ֣ם רַבִּ֑ים וְ֝/הָרַ֗ג מְלָכִ֥ים עֲצוּמִֽים׃",
+    "SYN": "поразил Египет в первенцах его, ибо вовек милость Его;",
+    "NEO": "Il frappa des nations nombreuses, et fit mourir des rois puissants :",
+    "NAB": "The Lord struck down many nations, slew mighty kings -",
+    "VAT_ES": "Derrotó a muchas naciones",
+    "CEI": "Colpì numerose nazioni e uccise re potenti:",
+    "VUL": "Qui percussit gentes multas,/ et occidit reges fortes :/"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "לְ/סִיח֤וֹן מֶ֤לֶךְ הָ/אֱמֹרִ֗י וּ֭/לְ/עוֹג מֶ֣לֶךְ הַ/בָּשָׁ֑ן וּ֝/לְ/כֹ֗ל מַמְלְכ֥וֹת כְּנָֽעַן׃",
+    "SYN": "и вывел Израиля из среды его, ибо вовек милость Его;",
+    "NEO": "Séhon, roi des Amorrhéens, Og, roi de Basan, et tous les rois de Canaan.",
+    "NAB": "Sihon, king of the Amorites, Og, king of Bashan, all the kings of Canaan -",
+    "VAT_ES": "a Sijón, rey de los amorreos,",
+    "CEI": "Seon, re degli Amorrèi, Og, re di Basan, e tutti i regni di Cànaan.",
+    "VUL": "Sehon, regem Amorrhæorum, et Og, regem Basan,/ et omnia regna Chanaan :/"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "וְ/נָתַ֣ן אַרְצָ֣/ם נַחֲלָ֑ה נַ֝חֲלָ֗ה לְ/יִשְׂרָאֵ֥ל עַמּֽ/וֹ׃",
+    "SYN": "рукою крепкою и мышцею простертою, ибо вовек милость Его;",
+    "NEO": "Et il donna leur pays en héritage, en héritage à Israël, son peuple.",
+    "NAB": "And made their land a heritage, a heritage for Israel his people.",
+    "VAT_ES": "Y dio sus territorios en herencia,",
+    "CEI": "Diede la loro terra in eredità a Israele, in eredità a Israele suo popolo.",
+    "VUL": "et dedit terram eorum hæreditatem,/ hæreditatem Israël populo suo./"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13,
+    "MT": 13
+   },
+   "text": {
+    "WLC": "יְ֭הוָה שִׁמְ/ךָ֣ לְ/עוֹלָ֑ם יְ֝הוָ֗ה זִכְרְ/ךָ֥ לְ/דֹר וָ/דֹֽר׃",
+    "SYN": "разделил Чермное море, ибо вовек милость Его;",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, ton nom subsiste à jamais ; \\+w Yahweh|strong=\"H3068\"\\+w**, ton souvenir dure d’âge en âge.",
+    "NAB": "O LORD, your name is forever, your renown, from age to age!",
+    "VAT_ES": "Tu Nombre, Señor, permanece para siempre,",
+    "CEI": "Signore, il tuo nome è per sempre; Signore, il tuo ricordo per ogni generazione.",
+    "VUL": "Domine, nomen tuum in æternum ;/ Domine, memoriale tuum in generationem et generationem./"
+   }
+  },
+  "14": {
+   "seq": 14,
+   "v_in": {
+    "VUL": 14,
+    "MT": 14
+   },
+   "text": {
+    "WLC": "כִּֽי יָדִ֣ין יְהוָ֣ה עַמּ֑/וֹ וְ/עַל עֲ֝בָדָ֗י/ו יִתְנֶחָֽם׃",
+    "SYN": "и провел Израиля посреди его, ибо вовек милость Его;",
+    "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** fait droit à son peuple, et il a compassion de ses serviteurs.",
+    "NAB": "For the LORD defends his people, shows mercy to his servants.",
+    "VAT_ES": "porque el Señor defiende a su pueblo",
+    "CEI": "Il Signore guida il suo popolo, si muove a pietà dei suoi servi.",
+    "VUL": "Quia judicabit Dominus populum suum,/ et in servis suis deprecabitur./"
+   }
+  },
+  "15": {
+   "seq": 15,
+   "v_in": {
+    "VUL": 15,
+    "MT": 15
+   },
+   "text": {
+    "WLC": "עֲצַבֵּ֣י הַ֭/גּוֹיִם כֶּ֣סֶף וְ/זָהָ֑ב מַ֝עֲשֵׂ֗ה יְדֵ֣י אָדָֽם׃",
+    "SYN": "и низверг фараона и войско его в море Чермное, ибо вовек милость Его;",
+    "NEO": "Les idoles des nations sont de l’argent et de l’or, ouvrage de la main des hommes.",
+    "NAB": "The idols of the nations are silver and gold, the work of human hands.",
+    "VAT_ES": "Los ídolos de las naciones son plata y oro,",
+    "CEI": "Gli idoli dei popoli sono argento e oro, opera delle mani dell'uomo.",
+    "VUL": "Simulacra gentium argentum et aurum,/ opera manuum hominum./"
+   }
+  },
+  "16": {
+   "seq": 16,
+   "v_in": {
+    "VUL": 16,
+    "MT": 16
+   },
+   "text": {
+    "WLC": "פֶּֽה לָ֭/הֶם וְ/לֹ֣א יְדַבֵּ֑רוּ עֵינַ֥יִם לָ֝/הֶ֗ם וְ/לֹ֣א יִרְאֽוּ׃",
+    "SYN": "провел народ Свой чрез пустыню, ибо вовек милость Его;",
+    "NEO": "Elles ont une bouche et ne parlent pas ; elles ont des yeux et ne voient pas.",
+    "NAB": "They have mouths but speak not; they have eyes but see not;",
+    "VAT_ES": "tienen boca, pero no hablan;",
+    "CEI": "Hanno bocca e non parlano; hanno occhi e non vedono;",
+    "VUL": "Os habent, et non loquentur ;/ oculos habent, et non videbunt./"
+   }
+  },
+  "17": {
+   "seq": 17,
+   "v_in": {
+    "VUL": 17,
+    "MT": 17
+   },
+   "text": {
+    "WLC": "אָזְנַ֣יִם לָ֭/הֶם וְ/לֹ֣א יַאֲזִ֑ינוּ אַ֝֗ף אֵין יֶשׁ ר֥וּחַ בְּ/פִי/הֶֽם׃",
+    "SYN": "поразил царей великих, ибо вовек милость Его;",
+    "NEO": "Elles ont des oreilles et n’entendent pas ; Il n’y a pas même un souffle dans leur bouche.",
+    "NAB": "They have ears but hear not; no breath is in their mouths.",
+    "VAT_ES": "tienen orejas, pero no oyen,",
+    "CEI": "hanno orecchi e non odono; non c'è respiro nella loro bocca.",
+    "VUL": "Aures habent, et non audient ;/ neque enim est spiritus in ore ipsorum./"
+   }
+  },
+  "18": {
+   "seq": 18,
+   "v_in": {
+    "VUL": 18,
+    "MT": 18
+   },
+   "text": {
+    "WLC": "כְּ֭מוֹ/הֶם יִהְי֣וּ עֹשֵׂי/הֶ֑ם כֹּ֭ל אֲשֶׁר בֹּטֵ֣חַ בָּ/הֶֽם׃",
+    "SYN": "и убил царей сильных, ибо вовек милость Его;",
+    "NEO": "Qu’ils leur ressemblent ceux qui les font, quiconque se confie en elles !",
+    "NAB": "Their makers shall be like them, all who trust in them.",
+    "VAT_ES": "&iexcl;Qué sean como ellos los que los fabrican,",
+    "CEI": "Sia come loro chi li fabbrica e chiunque in essi confida.",
+    "VUL": "Similes illis fiant qui faciunt ea,/ et omnes qui confidunt in eis./"
+   }
+  },
+  "19": {
+   "seq": 19,
+   "v_in": {
+    "VUL": 19,
+    "MT": 19
+   },
+   "text": {
+    "WLC": "בֵּ֣ית יִ֭שְׂרָאֵל בָּרֲכ֣וּ אֶת יְהוָ֑ה בֵּ֥ית אַ֝הֲרֹ֗ן בָּרֲכ֥וּ אֶת יְהוָֽה׃",
+    "SYN": "Сигона, царя Аморрейского, ибо вовек милость Его;",
+    "NEO": "Maison d’Israël, bénissez \\+w Yahweh|strong=\"H3068\"\\+w** ! Maison d’Aaron, bénissez \\+w Yahweh|strong=\"H3068\"\\+w** !",
+    "NAB": "House of Israel, bless the LORD! House of Aaron, bless the LORD!",
+    "VAT_ES": "Pueblo de Israel, bendice al Señor;",
+    "CEI": "Benedici il Signore, casa d'Israele; benedici il Signore, casa di Aronne;",
+    "VUL": "Domus Israël, benedicite Domino ;/ domus Aaron, benedicite Domino./"
+   }
+  },
+  "20": {
+   "seq": 20,
+   "v_in": {
+    "VUL": 20,
+    "MT": 20
+   },
+   "text": {
+    "WLC": "בֵּ֣ית הַ֭/לֵּוִי בָּרֲכ֣וּ אֶת יְהוָ֑ה יִֽרְאֵ֥י יְ֝הוָ֗ה בָּרֲכ֥וּ אֶת יְהוָֽה׃",
+    "SYN": "и Ога, царя Васанского, ибо вовек милость Его;",
+    "NEO": "Maison de Lévi, bénissez \\+w Yahweh|strong=\"H3068\"\\+w** ! Vous qui craignez \\+w Yahweh|strong=\"H3068\"\\+w**, bénissez \\+w Yahweh|strong=\"H3068\"\\+w** !",
+    "NAB": "House of Levi, bless the LORD! You who fear the LORD, bless the LORD!",
+    "VAT_ES": "familia de Leví, bendice al Señor;",
+    "CEI": "Benedici il Signore, casa di Levi; voi che temete il Signore, benedite il Signore.",
+    "VUL": "Domus Levi, benedicite Domino ;/ qui timetis Dominum, benedicite Domino./"
+   }
+  },
+  "21": {
+   "seq": 21,
+   "v_in": {
+    "VUL": 21,
+    "MT": 21
+   },
+   "text": {
+    "WLC": "בָּ֘ר֤וּךְ יְהוָ֨ה מִ/צִּיּ֗וֹן שֹׁ֘כֵ֤ן יְֽרוּשָׁלִָ֗ם הַֽלְלוּ יָֽהּ׃",
+    "SYN": "и отдал землю их в наследие, ибо вовек милость Его;",
+    "NEO": "Que de Sion soit béni \\+w Yahweh|strong=\"H3068\"\\+w**, qui habite Jérusalem ! Alleluia !",
+    "NAB": "Blessed from Zion be the LORD, who dwells in Jerusalem! Hallelujah!",
+    "VAT_ES": "&iexcl;Bendito sea el Señor desde Sión,",
+    "CEI": "Da Sion sia benedetto il Signore. che abita a Gerusalemme. Alleluia.",
+    "VUL": "Benedictus Dominus ex Sion,/ qui habitat in Jerusalem.]"
+   }
   }
+ }
 }
