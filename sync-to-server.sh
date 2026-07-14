@@ -49,6 +49,19 @@ sync_deployment() {
     echo "   Remote: $SERVER:$remote_path"
     echo ""
     
+    # Per-deployment data exclusions — only ship the data that volume needs
+    local data_excludes=()
+    case "$deployment" in
+        catalog)
+            data_excludes=(--exclude='data/gutenberg/' --exclude='data/places/' --exclude='data/calendar/') ;;
+        bible)
+            data_excludes=(--exclude='data/mmdm/' --exclude='data/places/' --exclude='data/calendar/') ;;
+        calendar)
+            data_excludes=(--exclude='data/mmdm/' --exclude='data/gutenberg/' --exclude='data/places/') ;;
+        places)
+            data_excludes=(--exclude='data/mmdm/' --exclude='data/gutenberg/' --exclude='data/calendar/') ;;
+    esac
+
     # Sync files (excluding git, node_modules, docs, etc.)
     rsync -avz --delete \
         --exclude='.git' \
@@ -64,6 +77,7 @@ sync_deployment() {
         --exclude='README.md' \
         --exclude='src/' \
         --exclude='*.map' \
+        "${data_excludes[@]}" \
         "$LOCAL_PATH" "$SERVER:$remote_path"
     
     if [ $? -eq 0 ]; then

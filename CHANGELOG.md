@@ -1,5 +1,29 @@
 # Changelog
 
+## 3.9.0 — Phase A: single stratum — dimension UI removed, Bible pinned to Latin Vulgate
+- Dimension button, blur mode, secondary/tertiary strata rings, and portal cycling removed from the engine (`createApp` −400 lines), views, host wiring, adapters, and CSS (−1,700 lines total; removed code preserved in git history)
+- Bible volume pinned to the Latin Vulgate (`VUL`): `translation`/`dimension` URL params no longer read; redirect-based language switching eliminated
+- All four volumes now behave identically — no volume has dimension controls
+- Kept deliberately: rotation-feel visuals (`pyramid-rotate-blur`, magnifier node scaling) and the dormant v4 store/bridge dimension state (`src/core/`) as the foundation for dimensions' return
+- `FocusRingView` main group renamed `blurGroup` → `contentGroup`; view down from 870 to ~390 lines
+- Tests: `dimension-portals.test.js` removed; a11y and perf-render tests reworked without dimension fixtures (138 tests green)
+- `docs/ROADMAP.md`: Single-Stratum Program recorded (Phases A–D; strata design is canon for dimensions' return; pseudo-parents retired)
+
+## 3.8.44 — Bible testament navigation + card detail text rendering
+- `getBibleBooksForTestament` added to handlers, pyramid builder, and `createVolumeLayoutSpec` parameters — enables testament-level navigation within the Bible volume
+- `buildBibleBookCousinChain` now receives `bookId` from `createHandlers` so book-level cousin chains are correctly scoped
+- `renderDetail` in the Bible volume now reads the active translation, so detail text reflects any translation currently in scope
+- Card detail font tier selection enhanced with stride calculation for improved line-count accuracy at varying panel widths
+- Card detail font tiers and weight/spacing styles updated for cleaner on-screen rendering
+- Removed leftover debug `console.log` for leaf detection in `createApp`
+
+## 3.8.43 — Bible startup at verse level + restore 600ms migration animation
+- Restored migration animation durations: `ANIM_DURATION` 1200ms → 600ms, `RING_RADIAL_DURATION` 1200ms → 900ms (both had been slowed for design/test)
+- Bible volume now starts at verse level (Matthew 16): magnifier shows 16:18, Parent Button shows Chapter 16, Detail Sector opens with verse text on load
+- Verse items from `buildBibleVerseCousinChain` now carry `level: 'verse'` and `parentId` so leaf detection expands the Detail Sector automatically
+- `createHandlers` pre-populates `bibleVerseContext` + `bibleChapterContext` at verse-level startup so two successive OUT taps work from the opening position
+- `data/gutenberg/manifest.json` `top_navigation_level` changed from `chapter` to `verse`; `verse` added to `focus_ring_arrangements`
+
 ## 3.8.40 — Revert breaking commit 52cb891 (black screen on load) + test suite fixes
 - Restored src/index.js, src/view/detail/pyramid-view.js, and src/view/migration-animation.js to pre-52cb891 state
 - Commit 52cb891 introduced a black screen on load by suppressing the initial render and forcing pyramid nodes to display:none
@@ -89,6 +113,17 @@
 ### Added
 - Spiral Child Pyramid node layout: nodes are now placed equidistantly along an Archimedean spiral using true arc-length spacing. This provides visually uniform node distribution for all child counts.
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
+
+
+## [3.8.43] - 2026-03-06
+
+### Changed
+- Restored migration animation durations to 600ms/900ms; Bible startup at verse level (Matthew 16:18); verse items carry level/parentId; bibleVerseContext + bibleChapterContext pre-populated at startup
+
+## [data-2026.02.27] - 2026-02-27
+
+### Data
+- volume_data_version bump for: mmdm
 
 
 ## [3.8.42] - 2026-02-26

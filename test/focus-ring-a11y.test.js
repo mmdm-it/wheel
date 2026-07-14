@@ -40,8 +40,7 @@ describe('FocusRingView accessibility', () => {
     assert.equal(evt.prevented, true);
   });
 
-  it('activates dimension and parent buttons via keyboard', () => {
-    let dimensionClicks = 0;
+  it('activates the parent button via keyboard', () => {
     let outerClicks = 0;
     const viewport = { SSd: 800, LSd: 800, height: 800 };
     view.render([
@@ -50,13 +49,6 @@ describe('FocusRingView accessibility', () => {
       viewport,
       magnifierAngle: 0,
       labelMaskEpsilon: 0,
-      dimensionIcon: {
-        href: '#',
-        x: 20,
-        y: 20,
-        size: 10,
-        onClick: () => { dimensionClicks += 1; }
-      },
       parentButtons: {
         showOuter: true,
         onOuterClick: () => { outerClicks += 1; },
@@ -65,38 +57,24 @@ describe('FocusRingView accessibility', () => {
       }
     });
 
-    const dimension = view.dimensionIcon;
     const outer = view.parentButtonOuter;
-
     const keyEvt = key => ({ key, preventDefault() { this.prevented = true; } });
-    dimension.onkeydown(keyEvt('Enter'));
     outer.onkeydown(keyEvt(' '));
 
-    assert.equal(dimensionClicks, 1);
     assert.equal(outerClicks, 1);
   });
 
-  it('applies aria-labels from labels/meta for primary and secondary nodes', () => {
+  it('applies aria-labels from labels/meta for primary nodes', () => {
     view.render([
       { item: { id: 'a', name: 'Alpha' }, x: 10, y: 10, radius: 12, angle: 0, label: 'Primary Label' }
     ], { hubX: 0, hubY: 0, radius: 100 }, { startAngle: 0, endAngle: Math.PI }, { x: 0, y: 0, radius: 12, angle: 0 }, {
       magnifierAngle: 0,
-      labelMaskEpsilon: 0,
-      secondary: {
-        nodes: [
-          { item: { id: 's1', name: 'Secondary' }, x: 12, y: 12, radius: 10, angle: 0.1, label: 'Secondary Label', index: 0 }
-        ],
-        isRotating: false,
-        magnifierAngle: 0,
-        labelMaskEpsilon: 0
-      }
+      labelMaskEpsilon: 0
     });
 
     const primary = view.nodesGroup.children[0];
-    const secondary = view.mirroredNodesGroup.children[0];
 
     assert.equal(primary.getAttribute('aria-label'), 'Primary Label');
-    assert.equal(secondary.getAttribute('aria-label'), 'Secondary Label');
     assert.equal(view.pyramidNodesGroup.children.length, 0);
   });
 
@@ -108,15 +86,6 @@ describe('FocusRingView accessibility', () => {
       viewport,
       magnifierAngle: 0,
       labelMaskEpsilon: 0,
-      secondary: {
-        nodes: [
-          { item: { id: 's1', name: 'Secondary' }, x: 12, y: 12, radius: 10, angle: 0.1, label: 'Secondary Label', index: 0 }
-        ],
-        isRotating: false,
-        magnifierAngle: 0,
-        labelMaskEpsilon: 0
-      },
-      dimensionIcon: { href: '#', x: 20, y: 20, size: 10, onClick: () => {} },
       parentButtons: {
         showOuter: true,
         onOuterClick: () => {},
@@ -127,8 +96,6 @@ describe('FocusRingView accessibility', () => {
 
     const focusables = [
       view.nodesGroup.children[0],
-      view.mirroredNodesGroup.children[0],
-      view.dimensionIcon,
       view.parentButtonOuter
     ];
 
@@ -148,16 +115,6 @@ describe('FocusRingView accessibility', () => {
       viewport,
       magnifierAngle: 0,
       labelMaskEpsilon: 0,
-      secondary: {
-        nodes: [
-          { item: { id: 's1', name: 'Secondary' }, x: 12, y: 12, radius: 10, angle: 0.1, label: 'Secondary Label', index: 0 }
-        ],
-        isRotating: false,
-        magnifierAngle: 0,
-        labelMaskEpsilon: 0,
-        onNodeClick: () => {}
-      },
-      dimensionIcon: { href: '#', x: 20, y: 20, size: 10, onClick: () => {} },
       parentButtons: {
         showOuter: true,
         onOuterClick: () => {},
@@ -181,14 +138,10 @@ describe('FocusRingView accessibility', () => {
     const idx = name => {
       return tabbables.findIndex(el => {
         const id = el.getAttribute ? el.getAttribute('id') : null;
-        const cls = el.getAttribute ? el.getAttribute('class') : '';
         const aria = el.getAttribute ? el.getAttribute('aria-label') : '';
-        const dataId = el.dataset?.id;
         if (name === 'parent-outer') return aria === 'Parent';
         if (name === 'node-a') return id === 'focus-node-a';
         if (name === 'node-b') return id === 'focus-node-b';
-        if (name === 'secondary') return id === 'secondary-node-s1';
-        if (name === 'dimension') return cls?.includes('dimension-button');
         return false;
       });
     };
@@ -196,14 +149,10 @@ describe('FocusRingView accessibility', () => {
     assert(idx('parent-outer') >= 0, 'missing parent outer button');
     assert(idx('node-a') >= 0 && idx('node-b') >= 0, 'missing primary nodes');
     assert(idx('pyramid') === -1, 'pyramid nodes should be hidden');
-    assert(idx('secondary') >= 0, 'missing secondary node');
-    assert(idx('dimension') >= 0, 'missing dimension button');
 
     const orderChecks = [
       ['parent-outer', 'node-a'],
-      ['node-a', 'node-b'],
-      ['node-b', 'secondary'],
-      ['secondary', 'dimension']
+      ['node-a', 'node-b']
     ];
 
     orderChecks.forEach(([first, second]) => {

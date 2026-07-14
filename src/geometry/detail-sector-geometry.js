@@ -29,6 +29,12 @@ const MAGNIFIER_CLEARANCE = 4;
 /** Horizontal/vertical padding inside the arc, as a fraction of SSd */
 const TEXT_PAD_RATIO      = 0.04;
 
+/**
+ * Extra top offset so the first text line clears the copyright notice.
+ * First line y = topY + TOP_OFFSET_RATIO × SSd  (≈ 11% SSd total from viewport top)
+ */
+const TOP_OFFSET_RATIO    = 0.08;
+
 /** Skip lines whose available width is narrower than this fraction of SSd */
 const MIN_WIDTH_RATIO     = 0.10;
 
@@ -94,7 +100,7 @@ export function computeDetailSectorBounds(width, height, logoBounds = null) {
   const rightBound = width - margin;
 
   const lineTable = [];
-  let y = topY + textPad;
+  let y = topY + SSd * TOP_OFFSET_RATIO;
 
   while (y < bottomY - textPad) {
     const dy   = y - hubY;

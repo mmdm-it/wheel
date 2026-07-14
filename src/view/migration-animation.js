@@ -20,8 +20,8 @@
  */
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
-const ANIM_DURATION = 1200; // ms — temporarily slowed from 600 for design/test
-const RING_RADIAL_DURATION = 1200; // ms — temporarily slowed from 900 for design/test
+const ANIM_DURATION = 600; // ms
+const RING_RADIAL_DURATION = 900; // ms
 
 /**
  * Schedule a callback after the browser has fully painted the current frame.

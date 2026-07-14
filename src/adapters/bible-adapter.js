@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleSections } from './volume-helpers.js';
+import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache } from './volume-helpers.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
 
@@ -129,7 +129,10 @@ export function normalize(raw) {
               testamentId,
               sectionId,
               bookId,
-              chapterNumber: Number.isFinite(chapterNumber) ? chapterNumber : null
+              chapterNumber: Number.isFinite(chapterNumber) ? chapterNumber : null,
+              chapterKey,
+              externalFile: chapterVal?._external_file
+                || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`
             }
           });
         });
@@ -137,7 +140,7 @@ export function normalize(raw) {
     });
   });
 
-  const levelOrder = ['root', 'testament', 'section', 'book', 'chapter'];
+  const levelOrder = ['root', 'testament', 'section', 'book', 'chapter', 'verse'];
   items.sort((a, b) => {
     const lo = levelOrder.indexOf(a.level);
     const ro = levelOrder.indexOf(b.level);
@@ -154,8 +157,8 @@ export function normalize(raw) {
     links,
     meta: {
       volumeId: volumeKey,
-      leafLevel: 'chapter',
-      levels: ['testament', 'section', 'book', 'chapter'],
+      leafLevel: 'verse',
+      levels: ['testament', 'book', 'chapter', 'verse'],
       colors: levelPalette,
       dimensions
     }
@@ -163,7 +166,7 @@ export function normalize(raw) {
 }
 
 export function layoutSpec(normalized, viewport) {
-  const levels = normalized?.meta?.levels || ['testament', 'section', 'book', 'chapter'];
+  const levels = normalized?.meta?.levels || ['testament', 'book', 'chapter', 'verse'];
   const vp = viewport?.width && viewport?.height ? viewport : getViewportInfo(1280, 720);
   const pyramidCapacity = calculatePyramidCapacity(vp);
   const palette = normalized?.meta?.colors || {
@@ -215,7 +218,7 @@ function findChapter(manifest, chapterId) {
   return null;
 }
 
-export function detailFor(selected, manifest) {
+export function detailFor(selected, manifest, { normalized, translation } = {}) {
   if (!selected) return null;
   const id = selected.id || '';
   const level = selected.level || '';
@@ -260,67 +263,81 @@ export function detailFor(selected, manifest) {
     };
   }
 
+  if (level === 'verse') {
+    const externalFile = selected.meta?.externalFile;
+    const verseKey = selected.meta?.verseKey;
+    if (externalFile && verseKey) {
+      // Use the active translation (passed in), then fall back to the URL query
+      // string, then to the remaining pool.  Never default to Latin (VUL) over
+      // English (NAB) — language only changes when the user explicitly selects one.
+      const searchParams = typeof window !== 'undefined'
+        ? new URLSearchParams(window.location.search)
+        : null;
+      const urlTranslation = searchParams?.get('translation') || null;
+      const activeTranslation = urlTranslation || translation || null;
+      const others = ['NAB', 'VUL', 'BYZ', 'SYN'].filter(t => t !== activeTranslation);
+      const preferred = activeTranslation ? [activeTranslation, ...others] : others;
+      const text = getVerseTextFromCache(externalFile, verseKey, preferred);
+      if (text) return { type: 'text', text };
+    }
+    return { type: 'text', text: selected.text || selected.name || id || '' };
+  }
+
   return { type: 'text', text: selected.name || id || '' };
 }
 
-const translationsForLanguage = (translationsMeta, language) => {
-  const translations = translationsMeta?.translations || {};
-  const entries = Object.entries(translations).filter(([, t]) => t?.language === language);
-  if (!entries.length) return null;
-  const both = entries.find(([, t]) => (t?.testament || '').toLowerCase() === 'both');
-  if (both) return both[0];
-  return entries[0][0];
-};
-
-const buildSecondaryLanguages = (translationsMeta, currentTranslation) => {
-  const nativeNames = {
-    latin: 'Latina',
-    greek: 'Ελληνικά',
-    hebrew: 'עברית',
-    english: 'English',
-    french: 'Français',
-    spanish: 'Español',
-    italian: 'Italiano',
-    portuguese: 'Português',
-    russian: 'Русский'
-  };
-  const desiredOrder = ['hebrew', 'greek', 'latin', 'french', 'spanish', 'english', 'italian', 'portuguese', 'russian'];
-  const normalize = lang => (lang || '').toLowerCase().trim() === 'portugese' ? 'portuguese' : (lang || '').toLowerCase().trim();
-  const translations = translationsMeta?.translations || {};
-  const items = desiredOrder.map((lang, idx) => {
-    const normalizedLang = normalize(lang);
-    const translation = translationsForLanguage(translationsMeta, normalizedLang) || currentTranslation || 'NAB';
-    const name = nativeNames[normalizedLang]
-      || (translations[translation]?.language_name)
-      || (normalizedLang ? `${normalizedLang.charAt(0).toUpperCase()}${normalizedLang.slice(1)}` : 'Language');
-    return {
-      id: normalizedLang,
-      name,
-      order: idx,
-      translation
-    };
-  });
-  const currentLang = translations?.[currentTranslation]?.language;
-  const selectedIndex = (() => {
-    if (currentLang) {
-      const idx = items.findIndex(item => item.id === currentLang);
-      if (idx >= 0) return idx;
+export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta, translationName = '' }) {
+  const initialLevel = options?.level;
+  let bibleMode = (initialLevel === 'chapter' || initialLevel === 'verse') ? initialLevel : 'book';
+  let bibleChapterContext = (initialLevel === 'chapter' && options?.bookId)
+    ? { bookId: options.bookId, testamentId: null, sectionId: null }
+    : null;
+  let bibleVerseContext = null;
+  // Pre-populate verse context at startup so OUT navigation works immediately.
+  if (initialLevel === 'verse' && options?.bookId && options?.chapterId) {
+    const chapterItems = getBibleChapters(manifest, { id: options.bookId }, namesMap, 'book');
+    const ch = chapterItems.find(c => c.meta?.chapterKey === String(options.chapterId));
+    if (ch) {
+      bibleVerseContext = {
+        chapterId: ch.id,
+        bookId: options.bookId,
+        testamentId: ch.meta?.testamentId || null,
+        sectionId: ch.meta?.sectionId || null,
+        externalFile: ch.meta?.externalFile || null
+      };
+      // Also pre-populate chapter context so a second OUT (verse→chapter→book) works.
+      bibleChapterContext = {
+        bookId: options.bookId,
+        testamentId: ch.meta?.testamentId || null,
+        sectionId: ch.meta?.sectionId || null
+      };
     }
-    return 0;
-  })();
-  return { items, selectedIndex };
-};
-
-export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta }) {
-  let bibleMode = 'book';
-  let bibleChapterContext = null;
-  const lastBookBySection = {};
-  const secondary = translationsMeta ? buildSecondaryLanguages(translationsMeta, options?.translation) : { items: [], selectedIndex: 0 };
+  }
+  const lastBookByTestament = {};
 
   const parentHandler = ({ selected, app }) => {
+    if (bibleMode === 'verse') {
+      const ctx = bibleVerseContext;
+      if (!ctx?.bookId) return false;
+      // Navigate back to the chapter list for this book.
+      const chapterItems = getBibleChapters(manifest, { id: ctx.bookId }, namesMap, 'book');
+      if (!chapterItems.length) return false;
+      const chapterIdx = chapterItems.findIndex(c => c.id === ctx.chapterId);
+      bibleMode = 'chapter';
+      bibleVerseContext = null;
+      bibleChapterContext = { bookId: ctx.bookId, testamentId: ctx.testamentId, sectionId: ctx.sectionId };
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(chapterItems, chapterIdx >= 0 ? chapterIdx : 0, true);
+      }
+      return true;
+    }
+
     if (bibleMode === 'chapter') {
       const ctx = bibleChapterContext;
       const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
+        bookId: ctx?.bookId,
         testamentId: ctx?.testamentId,
         initialItemId: ctx?.bookId,
         names: namesMap
@@ -335,32 +352,32 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       }
       return true;
     }
-    if (bibleMode !== 'book') return false;
-    const sectionId = selected?.sectionId;
-    if (sectionId && selected?.id) {
-      lastBookBySection[sectionId] = selected.id;
+    if (bibleMode === 'book') {
+      const testamentId = selected?.testamentId;
+      if (testamentId && selected?.id) {
+        lastBookByTestament[testamentId] = selected.id;
+      }
+      const { items: testamentItems, selectedIndex: testamentSelected } = buildBibleTestaments(manifest, namesMap, {
+        testamentId,
+        translationName
+      });
+      if (!testamentItems.length) return false;
+      bibleMode = 'testament';
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: false });
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(testamentItems, testamentSelected, true);
+      }
+      return true;
     }
-    const testamentId = selected?.testamentId;
-    const { items: sectionItems, selectedIndex: sectionSelected } = buildBibleSections(manifest, {
-      testamentId,
-      sectionId,
-      namesMap
-    });
-    if (!sectionItems.length) return false;
-    bibleMode = 'section';
-    if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
-    if (app?.setPrimaryItems) {
-      const migrateOrSet = app.migrateOut || app.setPrimaryItems;
-      migrateOrSet(sectionItems, sectionSelected, true);
-    }
-    return true;
+    // bibleMode === 'testament': no parent above this level.
+    return false;
   };
 
   const childrenHandler = ({ selected, app }) => {
-    if (bibleMode !== 'section') return false;
-    const sectionId = selected?.id;
-    const testamentId = selected?.testamentId;
-    const initialBookId = sectionId ? lastBookBySection[sectionId] : null;
+    if (bibleMode !== 'testament') return false;
+    const testamentId = selected?.id;
+    const initialBookId = testamentId ? lastBookByTestament[testamentId] : null;
     const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
       testamentId,
       initialItemId: initialBookId,
@@ -373,14 +390,38 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     return true;
   };
 
+  const getParentLabel = (item) => {
+    if (!item) return '';
+    // Chapter ring: parent is the book name (e.g. "MATTHEW")
+    if (item.level === 'chapter') {
+      const bookId = item.meta?.bookId || item.parentId;
+      if (!bookId) return '';
+      const book = findBook(manifest, bookId);
+      return (book?.book_name || bookId).toUpperCase();
+    }
+    // Verse ring: parent is the chapter number (e.g. "Chapter 16")
+    if (item.level === 'verse') {
+      const chapterId = item.meta?.chapterId || item.parentId || '';
+      const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
+      return chapterKey ? `Chapter ${chapterKey}` : '';
+    }
+    // Book ring: parent is the testament name (already stored on items as parentName)
+    return item.parentName || '';
+  };
+
   return {
     parentHandler,
     childrenHandler,
-    secondary,
+    getParentLabel,
     layoutBindings: {
       bibleModeRef: () => bibleMode,
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
+      setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
+      getBibleVerseItems,
+      prefetchBibleVerses,
+      getBibleBooksForTestament: (testamentId) =>
+        buildBibleBookCousinChain(manifest, { testamentId, names: namesMap }),
       pyramidBuilder: buildBiblePyramid
     }
   };

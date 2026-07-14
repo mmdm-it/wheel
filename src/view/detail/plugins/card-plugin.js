@@ -1,5 +1,5 @@
 import { BaseDetailPlugin } from '../plugin-registry.js';
-import { selectFontTier, wrapLines, makeLineSpan } from './line-layout.js';
+import { selectFontTier, wrapLines, makeLineSpan, CARD_FONT_TIERS } from './line-layout.js';
 
 /** Maximum lines to allocate to the title section. */
 const TITLE_MAX_LINES = 2;
@@ -35,39 +35,44 @@ export class CardDetailPlugin extends BaseDetailPlugin {
       const titleText = item?.title ?? item?.name ?? '';
       if (titleText && lineIdx < lineTable.length) {
         const titleBudget = lineTable.slice(lineIdx, lineIdx + TITLE_MAX_LINES);
-        const [tierClass, tierPercent] = selectFontTier(titleText, titleBudget);
+        const [tierClass, tierPercent, titleStride] = selectFontTier(titleText, titleBudget, CARD_FONT_TIERS);
         const titleLines = wrapLines(titleText, lineTable.slice(lineIdx), tierPercent)
           .slice(0, TITLE_MAX_LINES);
         titleLines.forEach(text => {
           if (lineIdx >= lineTable.length) return;
           container.appendChild(
-            makeLineSpan(create, text, `detail-card-title ${tierClass}`, lineTable[lineIdx++])
+            makeLineSpan(create, text, `detail-card-title ${tierClass}`, lineTable[lineIdx])
+          );
+          lineIdx += titleStride;
+        });
+      }
+
+      // ── Description: bulk middle section ────────────────────────
+      const descText = item?.description ?? '';
+      const bodyText = item?.body ?? item?.text ?? '';
+      if (descText && lineIdx < lineTable.length) {
+        lineIdx += SECTION_GAP; // blank line after title
+        // Reserve lines at the end for the body (year) line
+        const bodyReserve = bodyText ? BODY_MAX_LINES + SECTION_GAP : 0;
+        const descEnd = Math.max(lineIdx, lineTable.length - bodyReserve);
+        const descLines = wrapLines(descText, lineTable.slice(lineIdx, descEnd), 3.0);
+        descLines.forEach(text => {
+          if (lineIdx >= descEnd) return;
+          container.appendChild(
+            makeLineSpan(create, text, 'detail-card-description font-tier-6', lineTable[lineIdx++])
           );
         });
       }
 
-      // ── Body subtitle at tier-4 ──────────────────────────────
-      const bodyText = item?.body ?? item?.text ?? '';
+      // ── Body subtitle at tier-4 (bottom) ────────────────────────
       if (bodyText && lineIdx < lineTable.length) {
+        lineIdx += SECTION_GAP; // blank line before year
         const bodyLines = wrapLines(bodyText, lineTable.slice(lineIdx), 3.0)
           .slice(0, BODY_MAX_LINES);
         bodyLines.forEach(text => {
           if (lineIdx >= lineTable.length) return;
           container.appendChild(
-            makeLineSpan(create, text, 'detail-card-body font-tier-4', lineTable[lineIdx++])
-          );
-        });
-      }
-
-      // ── Description: remaining lines at tier-4 ──────────────────
-      const descText = item?.description ?? '';
-      if (descText && lineIdx < lineTable.length) {
-        lineIdx += SECTION_GAP; // blank line before description
-        const descLines = wrapLines(descText, lineTable.slice(lineIdx), 3.0);
-        descLines.forEach(text => {
-          if (lineIdx >= lineTable.length) return;
-          container.appendChild(
-            makeLineSpan(create, text, 'detail-card-description font-tier-4', lineTable[lineIdx++])
+            makeLineSpan(create, text, 'detail-card-body font-tier-6', lineTable[lineIdx++])
           );
         });
       }

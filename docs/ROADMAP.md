@@ -9,9 +9,37 @@
 - v3.5 Detail/pyramid rebuild on adapters + data-agnostic sweep — done (shipped as 3.5.0)
 - v3.6 Theming + accessibility hardening — done (shipped as 3.6.0)
 - v3.7 Dimension System + Child Pyramid — shipped (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; pyramid geometry refactored to CPUA fan-lines/spiral; child pyramid node rendering with CHILD_PARAM_TABLE, connector lines, sort-number rotation offset; catalog data cleanup; shipped as v3.7.28)
-- v3.8 IN/OUT Migration + patch series — done (shipped as v3.8.15; current v3.8.40; see patch notes below)
-- v3.9 Detail Sector — planned (layout, design, plugin rendering for leaf-level content)
-- v4.0 Ship — planned (polish, deploy, final QA)
+- v3.8 IN/OUT Migration + patch series — done (shipped as v3.8.15; see patch notes below)
+- v3.9+ Single-Stratum Program — in progress (Phases A–D below)
+
+## Current Plan: Single-Stratum Program (decided 2026-07-13)
+
+Goal: a smooth-running single-stratum app before dimension development
+resumes. Dimensions are **paused, not cancelled** — the strata design
+(blur + mirrored secondary ring) is the ruled-canon UI for their return,
+and the dormant store/bridge dimension state (`src/core/`) is retained as
+the foundation they will land on. Pseudo-parents (v0's `rpp_` alternate
+hierarchies) are retired permanently.
+
+- **Phase A — Single stratum** (in progress): dimension button and all
+  strata/portal UI machinery removed from the engine and views; Bible
+  pinned to the Latin Vulgate (`VUL`); all four volumes behave
+  identically. Removed code is preserved in git history.
+- **Phase B — Data completeness**: fill missing Bible verses from the
+  `wheel-v0/sources/latin` corpus (vulgate + clementine); populate the
+  MMdM catalog's empty manufacturers. Full-density data is a
+  prerequisite for meaningful smoothness testing.
+- **Phase C — Smoothness campaign**: rotation inertia, pyramid↔ring and
+  parent-circle migrations, phone-gated per WORKFLOW.md. The calendar's
+  ~5,000-node ring (3000 BC → present, "a couple of thumb swipes") is
+  the primary physics test rig. Final feel constants documented with
+  rationale.
+- **Phase D — Packaging**: web remains the trunk; PWA groundwork
+  (manifest, service worker, offline volume cache), then Capacitor/TWA
+  store wrappers of the same bundle for iOS/Android.
+- **Then**: dimension development resumes on the strata design
+  (see `DIMENSION_SYSTEM.md`, to be rewritten to match the strata
+  ruling before work starts).
 
 ## Vision
 
@@ -147,4 +175,4 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 - Adapter contract: `docs/ARCHITECTURE_V4.md`
 - Prior spec (baseline geometry/contracts): `docs/ARCHITECTURE_V3.md`
 - Dimension behavior details: `docs/DIMENSION_SYSTEM.md`
-- Legacy launch tracker (v0.8/v1, bibliacatholica.org): see `../wheel/TODO.md`
+- Legacy launch tracker (v0.8/v1, bibliacatholica.org): see `../wheel-v0/TODO.md` (archive; naming explained in `VERSIONING.md`)

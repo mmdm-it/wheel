@@ -72,7 +72,7 @@ const volumeConfigs = {
       return { translationsMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
-      const level = params.get('level') || startup.top_navigation_level || 'book';
+      const level = params.get('level') || startup.top_navigation_level || 'verse';
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
@@ -80,20 +80,22 @@ const volumeConfigs = {
         level,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
-        bookId: params.get('book') || 'GENE',
+        bookId: params.get('book') || 'MATHE',
         testamentId: params.get('testament'),
-        chapterId: params.get('chapter'),
-        translation: params.get('translation') || 'NAB',
+        chapterId: params.get('chapter') || '16',
+        verseId: params.get('verse') || '18',
+        // Single-stratum era: the Bible is pinned to the Latin Vulgate.
+        // Dimension development is paused, not cancelled (see docs/ROADMAP.md).
+        translation: 'VUL',
         cousinMode,
-        locale: params.get('lang') || null,
-        dimensionEnabled: params.get('dimension') === '1'
+        locale: params.get('lang') || null
       };
     },
     formatLabel: ({ level, locale, namesMap }) => makeBibleLabelFormatter({ level, locale, namesMap }),
     buildChain: (manifest, options, namesMap) => buildBibleChain(manifest, options, namesMap),
     createHandlers: params => {
       const adapter = adapterLoader.load('bible');
-      return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, secondary: { items: [], selectedIndex: 0 }, layoutBindings: {} };
+      return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, layoutBindings: {} };
     }
   },
   catalog: {
@@ -302,13 +304,13 @@ window.addEventListener('detail-sector-change', (e) => {
   }
 });
 
-function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
+function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation } = {}) {
   if (!detailPanel || !detailContent) return;
   while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
   if (!selected) return;
 
   const payload = adapterInstance?.detailFor
-    ? adapterInstance.detailFor(selected, manifest, { normalized: adapterNormalized })
+    ? adapterInstance.detailFor(selected, manifest, { normalized: adapterNormalized, translation })
     : { type: 'text', text: selected.name || selected.id || '' };
   if (!payload) return;
 
@@ -341,10 +343,58 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized) {
 }
 
 function makeBibleLabelFormatter({ level, locale, namesMap }) {
-  const translations = {
-    english: { chapter: 'Chapter', verse: 'Verse', bc: 'B.C.', ad: 'A.D.' }
+  // ── Vocabulary table (9 languages) ──────────────────────────────────────────
+  const VOCAB = {
+    latin:      { chapter: 'Caput',      verse: 'Versus',    bc: 'a.C.n.',      ad: 'p.C.n.'       },
+    greek:      { chapter: '\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf\u03bd', verse: '\u03a3\u03c4\u03af\u03c7\u03bf\u03c2',   bc: '\u03c0.\u03a7.',        ad: '\u03bc.\u03a7.'          },
+    hebrew:     { chapter: '\u05e4\u05bc\u05b6\u05bc\u05e8\u05b6\u05e7',     verse: '\u05e4\u05b8\u05bc\u05e1\u05d5\u05bc\u05e7',   bc: '\u05dc\u05e4\u05e0\u05d4"\u05e1', ad: '\u05dc\u05e1\u05e4\u05d4"\u05e0'  },
+    french:     { chapter: 'Chapitre',   verse: 'Verset',    bc: 'av. J.-C.',   ad: 'ap. J.-C.'    },
+    spanish:    { chapter: 'Cap\u00edtulo',  verse: 'Vers\u00edculo', bc: 'a.C.',       ad: 'd.C.'         },
+    english:    { chapter: 'Chapter',    verse: 'Verse',     bc: 'B.C.',        ad: 'A.D.'         },
+    italian:    { chapter: 'Capitolo',   verse: 'Versetto',  bc: 'a.C.',        ad: 'd.C.'         },
+    portuguese: { chapter: 'Cap\u00edtulo',  verse: 'Vers\u00edculo', bc: 'a.C.',       ad: 'd.C.'         },
+    russian:    { chapter: '\u0413\u043b\u0430\u0432\u0430',      verse: '\u0421\u0442\u0438\u0445',      bc: '\u0434\u043e \u043d.\u044d.',    ad: '\u043d.\u044d.'          }
   };
-  const t = key => translations[locale]?.[key] || translations.english[key] || key;
+  const t = key => VOCAB[locale]?.[key] ?? VOCAB.english[key] ?? key;
+
+  // ── Numeral converters ───────────────────────────────────────────────────────
+  const toRoman = n => {
+    if (!Number.isFinite(n) || n <= 0 || n > 3999) return String(n);
+    const vals = [1000,900,500,400,100,90,50,40,10,9,5,4,1];
+    const syms = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'];
+    let r = '', rem = n;
+    for (let i = 0; i < vals.length; i++) while (rem >= vals[i]) { r += syms[i]; rem -= vals[i]; }
+    return r;
+  };
+  const toHebrew = n => {
+    if (!Number.isFinite(n) || n <= 0 || n > 1200) return String(n);
+    const ones    = ['','\u05d0','\u05d1','\u05d2','\u05d3','\u05d4','\u05d5','\u05d6','\u05d7','\u05d8'];
+    const tens    = ['','\u05d9','\u05db','\u05dc','\u05de','\u05e0','\u05e1','\u05e2','\u05e4','\u05e6'];
+    const hundreds= ['','\u05e7','\u05e8','\u05e9','\u05ea','\u05ea\u05e7','\u05ea\u05e8','\u05ea\u05e9','\u05ea\u05ea','\u05ea\u05ea\u05e7'];
+    let r = '', rem = n;
+    if (rem >= 1000) { r += ones[Math.floor(rem / 1000)] + '\u05f3'; rem %= 1000; }
+    if (rem >= 100)  { r += hundreds[Math.floor(rem / 100)]; rem %= 100; }
+    if (rem === 15)  { r += '\u05d8\u05d5'; }
+    else if (rem === 16) { r += '\u05d8\u05d6'; }
+    else { if (rem >= 10) { r += tens[Math.floor(rem / 10)]; rem %= 10; } if (rem) r += ones[rem]; }
+    return r;
+  };
+  const toGreek = n => {
+    if (!Number.isFinite(n) || n <= 0 || n > 999) return String(n);
+    const ones  = ['','\u03b1','\u03b2','\u03b3','\u03b4','\u03b5','\u03db','\u03b6','\u03b7','\u03b8'];
+    const tns   = ['','\u03b9','\u03ba','\u03bb','\u03bc','\u03bd','\u03be','\u03bf','\u03c0','\u03df'];
+    const hunds = ['','\u03c1','\u03c3','\u03c4','\u03c5','\u03c6','\u03c7','\u03c8','\u03c9','\u03e1'];
+    const h = Math.floor(n / 100), ten = Math.floor((n % 100) / 10), o = n % 10;
+    return (hunds[h] + tns[ten] + ones[o]) + '\u02b9';
+  };
+  const toNumeral = n => {
+    if (!Number.isFinite(n)) return '';
+    if (locale === 'latin')  return toRoman(n);
+    if (locale === 'greek')  return toGreek(n);
+    if (locale === 'hebrew') return toHebrew(n);
+    return String(n);
+  };
+
   const getYearNumber = item => {
     if (Number.isFinite(item?.yearNumber)) return item.yearNumber;
     const parsed = Number.parseInt(item?.id, 10);
@@ -356,8 +406,10 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
       if (Number.isFinite(asNumber)) return asNumber;
       return item?.name;
     })();
-    if (context === 'node') return String(chapterVal ?? item?.id ?? '');
-    return `${t('chapter')} ${chapterVal ?? item?.id ?? ''}`.trim();
+    const n = Number(chapterVal);
+    const numStr = Number.isFinite(n) ? toNumeral(n) : String(chapterVal ?? item?.id ?? '');
+    if (context === 'node') return numStr;
+    return `${t('chapter')} ${numStr}`.trim();
   };
   const formatVerse = ({ item, context }) => {
     const extract = () => {
@@ -369,8 +421,10 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
       return item?.name;
     };
     const verseVal = extract();
-    if (context === 'node') return String(verseVal ?? item?.id ?? '');
-    return `${t('verse')} ${verseVal ?? item?.id ?? ''}`.trim();
+    const n = Number(verseVal);
+    const numStr = Number.isFinite(n) ? toNumeral(n) : String(verseVal ?? item?.id ?? '');
+    if (context === 'node') return numStr;
+    return `${t('verse')} ${numStr}`.trim();
   };
   const bookNames = namesMap?.books || namesMap;
   return ({ item, context }) => {
@@ -381,9 +435,12 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
       const era = yearNumber < 0 ? t('bc') : t('ad');
       return `${Math.abs(yearNumber)} ${era}`;
     }
+    // Route by item.level first so the formatter works correctly when the focus
+    // ring transitions between book → chapter → verse levels at runtime.
+    const itemLevel = item?.level || level;
+    if (itemLevel === 'chapter') return formatChapter({ item, context });
+    if (itemLevel === 'verse') return formatVerse({ item, context });
     const localizedBook = bookNames?.[item.id];
-    if (level === 'chapter') return formatChapter({ item, context });
-    if (level === 'verse') return formatVerse({ item, context });
     return localizedBook || item.name || item.id || '';
   };
 }
@@ -416,11 +473,26 @@ function buildBibleChain(manifest, options, namesMap) {
   const initialItemId = options.initialItemId;
   if (options.cousinMode && (arrangement || 'cousins-with-gaps') !== 'siblings-only') {
     const level = options.level || 'book';
+    if (level === 'chapter') {
+      const bookId = options.bookId || 'MATHE';
+      const chapterItems = getBibleChapters(manifest, { id: bookId }, namesMap, 'book');
+      const targetKey = options.chapterId || '16';
+      let chapterSelected = chapterItems.findIndex(ch => ch.meta?.chapterKey === targetKey);
+      if (chapterSelected < 0) chapterSelected = 0;
+      return { items: chapterItems, selectedIndex: chapterSelected, preserveOrder: true };
+    }
     if (level === 'verse') {
       return buildBibleVerseCousinChain(manifest, {
-        bookId: options.bookId || 'GENE',
+        bookId: options.bookId || 'MATHE',
         startChapterId: options.chapterId || undefined,
         translation: options.translation || 'NAB'
+      }).then(chain => {
+        const verseId = options.verseId;
+        if (verseId && chain.items.length) {
+          const idx = chain.items.findIndex(item => item && item.verse === String(verseId));
+          if (idx >= 0) chain.selectedIndex = idx;
+        }
+        return chain;
       });
     }
     const chain = buildBibleBookCousinChain(manifest, {
@@ -468,13 +540,10 @@ function buildPlacesChain(manifest, options) {
 
 function wireInteractions(app, itemCount) {
   let isDragging = false;
-  let isSecondaryDragging = false;
   let lastX = 0;
   let lastY = 0;
   let lastTime = 0;
   let suppressNativeClickUntil = 0;
-  const isInteractionLocked = () => Boolean(app?.isBlurred?.());
-  const hasSecondary = () => Boolean(app?.hasSecondary?.());
   const sensitivity = Math.PI / 4 / 100; // 100px → 45°
   const velocityThreshold = 0.4; // px/ms below this → no gain
   const gainSlope = 1.1; // linear slope past threshold
@@ -518,11 +587,7 @@ function wireInteractions(app, itemCount) {
   };
 
   const onPointerMove = event => {
-    if (!isDragging && !isSecondaryDragging) return;
-    if (isInteractionLocked() && !isSecondaryDragging) {
-      isDragging = false;
-      return;
-    }
+    if (!isDragging) return;
     const dx = event.clientX - lastX;
     const dy = event.clientY - lastY;
     const dt = event.timeStamp - lastTime;
@@ -545,14 +610,9 @@ function wireInteractions(app, itemCount) {
       dt,
       velocity: Number(velocity.toFixed(3)),
       gain: Number(gain.toFixed(3)),
-      dragging: isDragging,
-      secondaryDragging: isSecondaryDragging
+      dragging: isDragging
     });
-    if (isSecondaryDragging) {
-      app.rotateSecondary(delta);
-    } else {
-      app.choreographer.rotate(delta);
-    }
+    app.choreographer.rotate(delta);
   };
 
   // When touch pointerdown manually dispatches a node onclick, suppress the
@@ -577,29 +637,9 @@ function wireInteractions(app, itemCount) {
       x: event.clientX,
       y: event.clientY
     });
-    const isDimensionButton = event.target && event.target.closest && event.target.closest('.dimension-button');
-    if (isDimensionButton) {
-      return; // let the Dimension button handle its own toggle without starting a drag
-    }
-    const blurred = isInteractionLocked();
-    if (blurred && hasSecondary()) {
-      isSecondaryDragging = true;
-      isDragging = false;
-      lastX = event.clientX;
-      lastY = event.clientY;
-      lastTime = event.timeStamp;
-      app.beginSecondaryRotation();
-      return;
-    }
-    if (blurred) {
-      isDragging = false;
-      app.choreographer.stopMomentum();
-      return;
-    }
     const isNode = event.target && event.target.closest && event.target.closest('.focus-ring-node');
     if (isNode) {
       isDragging = false;
-      isSecondaryDragging = false;
       logTap('node-hit', {
         pointerType: event.pointerType,
         nodeIndex: isNode.dataset?.index ?? null,
@@ -623,7 +663,6 @@ function wireInteractions(app, itemCount) {
     const isControlTarget = event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
     if (isControlTarget) {
       isDragging = false;
-      isSecondaryDragging = false;
       logTap('control-hit', {
         pointerType: event.pointerType,
         targetClass: event.target?.getAttribute?.('class') || null,
@@ -661,7 +700,6 @@ function wireInteractions(app, itemCount) {
       const nearby = nearestRingNode(event);
       if (nearby && typeof nearby.onclick === 'function') {
         isDragging = false;
-        isSecondaryDragging = false;
         logTap('near-miss-manual-onclick', {
           pointerType: event.pointerType,
           nodeIndex: nearby.dataset?.index ?? null,
@@ -685,12 +723,6 @@ function wireInteractions(app, itemCount) {
 
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
-      if (isSecondaryDragging) {
-        isSecondaryDragging = false;
-        logTap(type, { pointerType: event?.pointerType, secondaryDragging: true, action: 'end-secondary' });
-        if (app.endSecondaryRotation) app.endSecondaryRotation();
-        return;
-      }
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
       const wasDragging = isDragging;
@@ -698,11 +730,9 @@ function wireInteractions(app, itemCount) {
       logTap(type, {
         pointerType: event?.pointerType,
         wasDragging,
-        locked: isInteractionLocked(),
         action: wasDragging ? 'snap-nearest' : 'tap-no-snap'
       });
       if (!wasDragging) return;
-      if (isInteractionLocked()) return;
       app.selectNearest();
       app.choreographer.stopMomentum();
     });
@@ -723,58 +753,24 @@ async function showVersion() {
   }
 }
 
-const translationsForLanguage = (translationsMeta, language) => {
-  const translations = translationsMeta?.translations || {};
-  const entries = Object.entries(translations)
-    .filter(([, t]) => t?.language === language);
-  if (!entries.length) return null;
-  const both = entries.find(([, t]) => (t?.testament || '').toLowerCase() === 'both');
-  if (both) return both[0];
-  return entries[0][0];
-};
-
-function buildDimensionPortals(root) {
-  const cfg = root?.display_config || {};
-  const langs = cfg.languages || {};
-  const edits = cfg.editions || {};
-  const langIds = Array.isArray(langs.available) ? langs.available : [];
-  if (!langIds.length || !edits.available) return null;
-  const languageItems = langIds.map((id, idx) => ({
-    id,
-    name: langs.labels?.[id] || id,
-    order: idx
-  }));
-  return {
-    languages: {
-      items: languageItems,
-      labels: langs.labels || {},
-      defaultId: langs.default || languageItems[0]?.id || null
-    },
-    editions: {
-      available: edits.available || {},
-      default: edits.default || {},
-      labels: edits.labels || {}
-    }
-  };
-}
-
 loadConfig().then(async ({ volume, config, manifest, root, options, supplemental }) => {
   applyTheme(manifest, volume);
   const translationsMeta = supplemental?.translationsMeta || null;
-  const fallbackTranslation = translationsForLanguage(translationsMeta, options?.locale || 'english') || 'NAB';
-  const translationId = options.translation || fallbackTranslation;
+  const translationId = options.translation || null;
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
   const resolvedLocale = options.locale || translationLang || 'english';
   const localeNames = translationsMeta?.names?.[translationLang] || {};
   const namesMap = {
     books: localeNames.books || localeNames,
-    sections: localeNames.sections || {}
+    sections: localeNames.sections || {},
+    testaments: localeNames.testaments || {}
   };
+
+  const translationName = translationsMeta?.translations?.[translationId]?.name || translationId;
 
   const chainResult = await config.buildChain(manifest, options, namesMap);
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
-  const handlerSet = config.createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta: chainResult });
-  const secondary = handlerSet.secondary || { items: [], selectedIndex: 0 };
+  const handlerSet = config.createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta: chainResult, translationName });
   if (!items.length) {
     console.error('No items found for volume', volume);
     return;
@@ -829,6 +825,9 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     getCatalogChildren: layoutBindings.getCatalogChildren || ((m, selected) => getCatalogChildren(manifest, selected)),
     getCalendarMonths: layoutBindings.getCalendarMonths || ((m, selected, mode) => getCalendarMonths(manifest, selected, mode)),
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
+    getBibleVerseItems: layoutBindings.getBibleVerseItems,
+    prefetchBibleVerses: layoutBindings.prefetchBibleVerses,
+    getBibleBooksForTestament: layoutBindings.getBibleBooksForTestament,
     getApp: () => app,
     calendarModeRef: layoutBindings.calendarModeRef,
     setCalendarMode: layoutBindings.setCalendarMode,
@@ -836,6 +835,7 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     bibleModeRef: layoutBindings.bibleModeRef,
     setBibleMode: layoutBindings.setBibleMode,
     setBibleChapterContext: layoutBindings.setBibleChapterContext,
+    setBibleVerseContext: layoutBindings.setBibleVerseContext,
     catalogModeRef: layoutBindings.catalogModeRef,
     setCatalogMode: layoutBindings.setCatalogMode,
     savePreInState: layoutBindings.savePreInState,
@@ -854,22 +854,6 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     meta: { volumeId: volume }
   };
 
-  const onSelectSecondary = handlerSet.onSelectSecondary
-    || (secondary?.items?.length
-      ? translationId => {
-          const url = new URL(window.location.href);
-          const currentItem = app?.nav?.getCurrent?.();
-          if (currentItem?.id) {
-            url.searchParams.set('item', currentItem.id);
-          }
-          url.searchParams.set('translation', translationId);
-          url.searchParams.set('dimension', '1');
-          window.location.href = url.toString();
-        }
-      : undefined);
-
-  const dimensionPortals = buildDimensionPortals(root);
-
   app = createApp({
     svgRoot: svg,
     items,
@@ -878,25 +862,47 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     preserveOrder,
     labelFormatter,
     shouldCenterLabel,
-    secondaryItems: secondary.items,
-    secondarySelectedIndex: secondary.selectedIndex,
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,
     getParentLabel: adapterGetParentLabel,
     pyramid: pyramidConfig,
     pyramidLayoutSpec: pyramidLayout,
     pyramidNormalized: adapterNormalized || normalized,
-    pyramidAdapter: adapter,
-    onSelectSecondary,
-    dimensionPortals
+    pyramidAdapter: adapter
   });
   // Expose app to window for console API
   window.app = app;
-  if (options.dimensionEnabled && app?.setBlur) {
-    app.setBlur(true);
+  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId });
+  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId }));
+  // If the Bible opens on a chapter with a featured verse, prefetch that chapter's
+  // verse data and re-render the Detail Sector with the verse text once available.
+  if (volume === 'bible' && options.level === 'chapter' && options.verseId && layoutBindings.prefetchBibleVerses) {
+    const initialChapter = items[selectedIndex];
+    console.log('[startup-verse] prefetch check | initialChapter:', initialChapter?.id, '| externalFile:', initialChapter?.meta?.externalFile, '| verseId:', options.verseId);
+    if (initialChapter?.meta?.externalFile) {
+      layoutBindings.prefetchBibleVerses(initialChapter, {
+        onLoaded() {
+          const { externalFile, bookId, chapterKey } = initialChapter.meta;
+          const verseKey = String(options.verseId);
+          console.log('[startup-verse] onLoaded | externalFile:', externalFile, '| verseKey:', verseKey, '| app.openDetailSector:', typeof app?.openDetailSector);
+          const syntheticVerse = {
+            id: `${bookId}_${chapterKey}_${verseKey}`,
+            name: `${chapterKey}:${verseKey}`,
+            level: 'verse',
+            parentId: initialChapter.id,
+            meta: { bookId, chapterId: initialChapter.id, verseKey, externalFile }
+          };
+          if (app?.openDetailSector) {
+            app.openDetailSector(() => renderDetail(syntheticVerse, adapter, manifest, adapterNormalized, { translation: translationId }));
+          } else {
+            renderDetail(syntheticVerse, adapter, manifest, adapterNormalized, { translation: translationId });
+          }
+        }
+      });
+    }
+  } else {
+    console.log('[startup-verse] prefetch skipped | volume:', volume, '| level:', options.level, '| verseId:', options.verseId, '| hasPrefetch:', Boolean(layoutBindings.prefetchBibleVerses));
   }
-  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized);
-  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized));
   wireInteractions(app, items.length);
   showVersion();
 

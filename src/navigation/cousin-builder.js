@@ -31,7 +31,7 @@ async function fetchChapterData(chapterMeta) {
   return res.json();
 }
 
-function buildVerseItems(chapterData, { bookId, translation }) {
+function buildVerseItems(chapterData, { bookId, translation, chapterId }) {
   const verses = chapterData?.verses || {};
   const entries = Object.entries(verses).sort((a, b) => {
     const as = Number.isFinite(a[1]?.seq) ? a[1].seq : parseInt(a[0], 10);
@@ -49,6 +49,8 @@ function buildVerseItems(chapterData, { bookId, translation }) {
       name,
       sort: seq,
       order: undefined, // set by caller
+      level: 'verse',
+      parentId: chapterId || `${bookKey}:${chapterLabel}`,
       verse: verseId,
       chapter: chapterLabel,
       book: bookKey,
@@ -67,9 +69,10 @@ export async function buildBibleVerseCousinChain(manifest, { bookId, startChapte
   const chain = [];
 
   for (let i = startIdx; i < chapters.length; i += 1) {
-    const [chapterId, chapterMeta] = chapters[i];
+    const [chapterKey, chapterMeta] = chapters[i];
+    const chapterId = chapterMeta?.id || `${bookId}:${chapterKey}`;
     const chapterData = await fetchChapterData(chapterMeta);
-    const verseItems = buildVerseItems(chapterData, { bookId, translation });
+    const verseItems = buildVerseItems(chapterData, { bookId, translation, chapterId });
     verseItems.forEach((item, idx) => {
       item.order = chain.length + idx; // preserve cumulative spacing including gaps
     });
@@ -103,11 +106,14 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   if (!activeTestamentId) return { items: [], selectedIndex: 0, preserveOrder: true };
   const activeTestament = bible.testaments[activeTestamentId];
   const sections = Object.entries(activeTestament?.sections || {}).sort(bySortNumber);
-  const sectionNames = names?.sections || {};
+  const testamentNames = names?.testaments || {};
   const bookNames = names?.books || names || {};
+  const testamentName = testamentNames[activeTestamentId] || activeTestament?.name || activeTestamentId;
   const chain = [];
 
-  sections.forEach(([sectionKey, section], sectionIdx) => {
+  // Books are displayed flat (no section gaps). Section is retained on each item
+  // as metadata for back-navigation context but is not shown as a UI level.
+  sections.forEach(([sectionKey, section]) => {
     const books = Object.entries(section?.books || {}).sort(bySortNumber);
     books.forEach(([, book]) => {
       const id = book?.book_key || book?.id || book?.name;
@@ -117,15 +123,12 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
         name: bookNames?.[id] || book?.book_name || book?.name || id,
         sort: Number.isFinite(book?.sort_number) ? book.sort_number : chain.length,
         order: chain.length,
+        level: 'book',
         testamentId: activeTestamentId,
         sectionId: sectionKey,
-        parentName: sectionNames?.[sectionKey] || section?.name || sectionKey
+        parentName: testamentName
       });
     });
-    const isLastSection = sectionIdx === sections.length - 1;
-    if (!isLastSection) {
-      chain.push(GAP, GAP);
-    }
   });
 
   const selectedIndex = (() => {

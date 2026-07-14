@@ -137,6 +137,10 @@
 
   "names": {
     "hebrew": {
+      "testaments": {
+        "Vetus_Testamentum": "הברית הישנה",
+        "Novum_Testamentum": "הברית החדשה"
+      },
       "sections": {
         "Pentateuchus": "חמישה חומשי תורה",
         "Libri_Historici_et_Novellae_Biblicae": "ספרי היסטוריה",
@@ -218,6 +222,10 @@
       }
     },
     "greek": {
+      "testaments": {
+        "Vetus_Testamentum": "Παλαιὰ Διαθήκη",
+        "Novum_Testamentum": "Καινὴ Διαθήκη"
+      },
       "sections": {
         "Pentateuchus": "Πεντάτευχος",
         "Libri_Historici_et_Novellae_Biblicae": "Ιστορικά & Διηγήσεις",
@@ -299,6 +307,10 @@
       }
     },
     "latin": {
+      "testaments": {
+        "Vetus_Testamentum": "Vetus Testamentum",
+        "Novum_Testamentum": "Novum Testamentum"
+      },
       "sections": {
         "Pentateuchus": "Pentateuchus",
         "Libri_Historici_et_Novellae_Biblicae": "Historici & Novellae",
@@ -380,6 +392,10 @@
       }
     },
     "french": {
+      "testaments": {
+        "Vetus_Testamentum": "Ancien Testament",
+        "Novum_Testamentum": "Nouveau Testament"
+      },
       "sections": {
         "Pentateuchus": "Pentateuque",
         "Libri_Historici_et_Novellae_Biblicae": "Historiques & Nouv.",
@@ -461,6 +477,10 @@
       }
     },
     "spanish": {
+      "testaments": {
+        "Vetus_Testamentum": "Antiguo Testamento",
+        "Novum_Testamentum": "Nuevo Testamento"
+      },
       "sections": {
         "Pentateuchus": "Pentateuco",
         "Libri_Historici_et_Novellae_Biblicae": "Históricos y Novelas",
@@ -542,6 +562,10 @@
       }
     },
     "english": {
+      "testaments": {
+        "Vetus_Testamentum": "Old Testament",
+        "Novum_Testamentum": "New Testament"
+      },
       "sections": {
         "Pentateuchus": "Pentateuch",
         "Libri_Historici_et_Novellae_Biblicae": "Historical & Novellas",
@@ -623,6 +647,10 @@
       }
     },
     "italian": {
+      "testaments": {
+        "Vetus_Testamentum": "Antico Testamento",
+        "Novum_Testamentum": "Nuovo Testamento"
+      },
       "sections": {
         "Pentateuchus": "Pentateuco",
         "Libri_Historici_et_Novellae_Biblicae": "Storici e Novelle",
@@ -704,6 +732,10 @@
       }
     },
     "portuguese": {
+      "testaments": {
+        "Vetus_Testamentum": "Antigo Testamento",
+        "Novum_Testamentum": "Novo Testamento"
+      },
       "sections": {
         "Pentateuchus": "Pentateuco",
         "Libri_Historici_et_Novellae_Biblicae": "Históricos e Novelas",
@@ -785,6 +817,10 @@
       }
     },
     "russian": {
+      "testaments": {
+        "Vetus_Testamentum": "Ветхий Завет",
+        "Novum_Testamentum": "Новый Завет"
+      },
       "sections": {
         "Pentateuchus": "Пятикнижие",
         "Libri_Historici_et_Novellae_Biblicae": "Исторические книги",
