@@ -82,7 +82,9 @@ if grep -q "Current Version" "$README_FILE"; then
     prev == "## Current Version" && /^- v/ { print "- v" ver " (" date ")"; prev = $0; next }
     { print; prev = $0 }
   ' "$README_FILE" > "$TMP_README"
-  mv "$TMP_README" "$README_FILE"
+  mv "$TMP_README" "$README_FILE"  # Also refresh inline "(current `vX.Y.Z`)" references — the
+  # version-consistency test checks these too.
+  sed -i "s/(current \`v[0-9.]*\`)/(current \`v$NEW_VERSION\`)/" "$README_FILE"
 fi
 
 echo "Updating $CHANGELOG_FILE..."
