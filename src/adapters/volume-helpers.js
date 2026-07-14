@@ -1,6 +1,17 @@
 // Volume-specific chain/build helpers extracted from the host page.
 // These remain pure functions over manifests and options.
 
+// Roman numerals for the Bible volume's Latin identity (Psalms reach CL,
+// Psalm 118's verses reach CLXXVI).
+export function toRomanNumeral(n) {
+  if (!Number.isFinite(n) || n <= 0 || n > 3999) return String(n);
+  const vals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  const syms = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+  let out = '', rem = n;
+  for (let i = 0; i < vals.length; i++) while (rem >= vals[i]) { out += syms[i]; rem -= vals[i]; }
+  return out;
+}
+
 // Resolve the manufacturer object from a parentId containing market__country
 function resolveManufacturer(manifest, manufacturerId, parentId) {
   // Walk up through parentId chain or search all markets
@@ -144,10 +155,23 @@ export function getCatalogChildren(manifest, selected) {
       .map((child, idx) => ({ ...child, order: idx }));
   }
 
-  // --- Manufacturer-level: return cylinders ---
+  // --- Manufacturer-level: return cylinders (or gateway children) ---
   const [marketId, countryId, manufacturerId] = id.split('__');
   const manufacturer = manifest?.MMdM?.markets?.[marketId]?.countries?.[countryId]?.manufacturers?.[manufacturerId];
   if (!manufacturer) return [];
+  // Gateway children: data-declared doors into another volume. The target
+  // volume id comes from the data, never from code (data-agnostic).
+  if (Array.isArray(manufacturer.gateway_children)) {
+    return manufacturer.gateway_children.map((gw, idx) => ({
+      id: `gateway:${gw.volume}:${idx}`,
+      name: gw.name,
+      order: Number.isFinite(gw.sort_number) ? gw.sort_number : idx,
+      parentId: id,
+      parentName: manufacturerId,
+      level: 'gateway',
+      gateway: { volume: gw.volume, returnItemId: id }
+    }));
+  }
   const cylinders = manufacturer.cylinders || {};
   return Object.entries(cylinders)
     .map(([cylKey, cylVal]) => {
@@ -213,7 +237,7 @@ export function getBibleChapters(manifest, selected, namesMap, bibleMode) {
   if (!bookEntry?.chapters) return [];
   return Object.entries(bookEntry.chapters).map(([chapterKey, chapterVal], idx) => {
     const chapterNum = Number.parseInt(chapterKey, 10);
-    const label = Number.isFinite(chapterNum) ? `Chapter ${chapterNum}` : (namesMap?.sections?.[chapterKey] || chapterKey);
+    const label = Number.isFinite(chapterNum) ? `Capitulum ${toRomanNumeral(chapterNum)}` : (namesMap?.sections?.[chapterKey] || chapterKey);
     const externalFile = chapterVal?._external_file
       || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`;
     return {

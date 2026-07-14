@@ -1,248 +1,338 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_065",
-  "book_key": "PSAL",
-  "sequence": 65,
-  "chapter_in": {
-    "MT": 65,
-    "VUL": 64,
-    "LXX": 64
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_065",
+ "book_key": "PSAL",
+ "sequence": 65,
+ "chapter_in": {
+  "VUL": 65,
+  "LXX": 65,
+  "MT": 66
+ },
+ "mt_sources": [
+  "66"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "לַ֭/מְנַצֵּחַ שִׁ֣יר מִזְמ֑וֹר הָרִ֥יעוּ לֵ֝/אלֹהִים כָּל הָ/אָֽרֶץ׃",
+    "SYN": "Начальнику хора. На струнных _орудиях._ Псалом. Песнь.",
+    "NEO": "Au maître de chant. Cantique. Psaume.",
+    "NAB": "For the leader. A song; a psalm.",
+    "CEI": "Al maestro del coro. Canto. Salmo. Acclamate a Dio da tutta la terra,",
+    "LXX": "Εἰς τὸ τέλος· ᾠδὴ ψαλμοῦ ἀναστάσεως. Ἀλαλάξατε τῷ θεῷ, πᾶσα ἡ γῆ,",
+    "VUL": "In finem. Canticum psalmi resurrectionis. [Jubilate Deo, omnis terra ;/"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "לַ/מְנַצֵּ֥חַ מִזְמ֗וֹר לְ/דָוִ֥ד שִֽׁיר׃",
-        "LXX": "Εἰς τὸ τέλος· ᾠδὴ ψαλμοῦ ἀναστάσεως. Ἀλαλάξατε τῷ θεῷ, πᾶσα ἡ γῆ,",
-        "VUL": "In finem. Canticum psalmi resurrectionis. [Jubilate Deo, omnis terra ;/",
-        "SYN": "Начальнику хора. Песнь. Воскликните Богу, вся земля.",
-        "NEO": "Au maître de chant. Psaume de David. Cantique.",
-        "NAB": "For the leader. A psalm of David. A song.",
-        "CEI": "Al maestro del coro. Salmo. Di Davide. Canto."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "לְ/ךָ֤ דֻֽמִיָּ֬ה תְהִלָּ֓ה אֱלֹ֘הִ֥ים בְּ/צִיּ֑וֹן וּ֝/לְ/ךָ֗ יְשֻׁלַּם נֶֽדֶר׃",
-        "LXX": "ψάλατε δὴ τῷ ὀνόματι αὐτοῦ, δότε δόξαν αἰνέσει αὐτοῦ·",
-        "VUL": "psalmum dicite nomini ejus ;/ date gloriam laudi ejus./",
-        "SYN": "Пойте славу имени Его, воздайте славу, хвалу Ему.",
-        "NEO": "A toi est due la louange, ô Dieu, dans Sion ; c’est en ton honneur qu’on accomplit les vœux.",
-        "NAB": "To you we owe our hymn of praise, O God on Zion; To you our vows must be fulfilled,",
-        "VAT_ES": "A ti, oh Dios, te corresponde",
-        "CEI": "A te si deve lode, o Dio, in Sion; a te si sciolga il voto in Gerusalemme."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "שֹׁמֵ֥עַ תְּפִלָּ֑ה עָ֝דֶ֗י/ךָ כָּל בָּשָׂ֥ר יָבֹֽאוּ׃",
-        "LXX": "εἴπατε τῷ θεῷ Ὡς φοβερὰ τὰ ἔργα σου· ἐν τῷ πλήθει τῆς δυνάμεώς σου ψεύσονταί σε οἱ ἐχθροί σου·",
-        "VUL": "Dicite Deo : Quam terribilia sunt opera tua, Domine !/ in multitudine virtutis tuæ mentientur tibi inimici tui./",
-        "SYN": "Скажите Богу: как страшен Ты в делах Твоих! По множеству силы Твоей, покорятся Тебе враги Твои.",
-        "NEO": "O toi, qui écoutes la prière, tous les hommes viennent à toi.",
-        "NAB": "you who hear our prayers. To you all flesh must come",
-        "VAT_ES": "porque tú escuchas las plegarias.",
-        "CEI": "A te, che ascolti la preghiera, viene ogni mortale."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "דִּבְרֵ֣י עֲ֭וֺנֹת גָּ֣בְרוּ מֶ֑נִּ/י פְּ֝שָׁעֵ֗י/נוּ אַתָּ֥ה תְכַפְּרֵֽ/ם׃",
-        "LXX": "πᾶσα ἡ γῆ προσκυνησάτωσάν σοι καὶ ψαλάτωσάν σοι, ψαλάτωσαν τῷ ὀνόματί σου. διάψαλμα.",
-        "VUL": "Omnis terra adoret te, et psallat tibi ;/ psalmum dicat nomini tuo./",
-        "SYN": "Вся земля да поклонится Тебе и поет Тебе, да поет имени Твоему, [Вышний]!",
-        "NEO": "Un amas d’iniquités pesait sur moi : tu pardonnes nos transgressions.",
-        "NAB": "with its burden of wicked deeds. We are overcome by our sins; only you can pardon them.",
-        "VAT_ES": "bajo el peso de sus culpas;",
-        "CEI": "Pesano su di noi le nostre colpe, ma tu perdoni i nostri peccati."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "אַשְׁרֵ֤י תִּֽבְחַ֣ר וּ/תְקָרֵב֮ יִשְׁכֹּ֪ן חֲצֵ֫רֶ֥י/ךָ נִ֭שְׂבְּעָה בְּ/ט֣וּב בֵּיתֶ֑/ךָ קְ֝דֹ֗שׁ הֵיכָלֶֽ/ךָ׃",
-        "LXX": "δεῦτε, τέκνα, καὶ ἴδετε τὰ ἔργα τοῦ θεοῦ, φοβερὸς ἐν βουλαῖς ὑπὲρ τοὺς υἱοὺς τῶν ἀνθρώπων.",
-        "VUL": "Venite, et videte opera Dei :/ terribilis in consiliis super filios hominum./",
-        "SYN": "Придите и воззрите на дела Бога, страшного в делах над сынами человеческими.",
-        "NEO": "Heureux celui que tu choisis et que tu rapproches de toi, pour qu’il habite dans tes parvis ! Puissions-nous être rassasiés des biens de ta maison, de ton saint temple !",
-        "NAB": "Happy the chosen ones you bring to dwell in your courts. May we be filled with the good things of your house, the blessings of your holy temple!",
-        "VAT_ES": "Feliz el que tú eliges y atraes",
-        "CEI": "Beato chi hai scelto e chiamato vicino, abiterà nei tuoi atrii. Ci sazieremo dei beni della tua casa, della santità del tuo tempio."
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "נ֤וֹרָא֨וֹת בְּ/צֶ֣דֶק תַּ֭עֲנֵ/נוּ אֱלֹהֵ֣י יִשְׁעֵ֑/נוּ מִבְטָ֥ח כָּל קַצְוֵי אֶ֝֗רֶץ וְ/יָ֣ם רְחֹקִֽים׃",
-        "LXX": "ὁ μεταστρέφων τὴν θάλασσαν εἰς ξηράν, ἐν ποταμῷ διελεύσονται ποδί· ἐκεῖ εὐφρανθησόμεθα ἐπ’ αὐτῷ,",
-        "VUL": "Qui convertit mare in aridam ;/ in flumine pertransibunt pede :/ ibi lætabimur in ipso./",
-        "SYN": "Он превратил море в сушу; через реку перешли стопами, там веселились мы о Нем.",
-        "NEO": "Par des prodiges, tu nous exauces dans ta justice, Dieu de notre salut, espoir des extrémités de la terre, et des mers lointaines.",
-        "NAB": "You answer us with awesome deeds of justice, O God our savior, The hope of all the ends of the earth and of far distant islands.",
-        "VAT_ES": "Por tu justicia, Dios, salvador nuestro,",
-        "CEI": "Con i prodigi della tua giustizia, tu ci rispondi, o Dio, nostra salvezza, speranza dei confini della terra e dei mari lontani."
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "מֵכִ֣ין הָרִ֣ים בְּ/כֹח֑/וֹ נֶ֝אְזָ֗ר בִּ/גְבוּרָֽה׃",
-        "LXX": "τῷ δεσπόζοντι ἐν τῇ δυναστίᾳ τοῦ αἰῶνος αὐτοῦ. οἱ ὀφθαλμοὶ αὐτοῦ ἐπὶ τὰ ἔθνη ἐπιβλέπουσιν, οἱ παραπικραίνοντες μὴ ὑψούσθωσαν ἐν ἑαυτοῖς. διάψαλμα.",
-        "VUL": "Qui dominatur in virtute sua in æternum ;/ oculi ejus super gentes respiciunt :/ qui exasperant non exaltentur in semetipsis./",
-        "SYN": "Могуществом Своим владычествует Он вечно; очи Его зрят на народы, да не возносятся мятежники.",
-        "NEO": "— Il affermit les montagnes par sa force, il est ceint de sa puissance ;",
-        "NAB": "You are robed in power, you set up the mountains by your might.",
-        "VAT_ES": "Tú afianzas las montañas con tu poder,",
-        "CEI": "Tu rendi saldi i monti con la tua forza, cinto di potenza."
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "מַשְׁבִּ֤יחַ שְׁא֣וֹן יַ֭מִּים שְׁא֥וֹן גַּלֵּי/הֶ֗ם וַ/הֲמ֥וֹן לְאֻמִּֽים׃",
-        "LXX": "εὐλογεῖτε, ἔθνη, τὸν θεὸν ἡμῶν, καὶ ἀκουτίσασθε τὴν φωνὴν τῆς αἰνέσεως αὐτοῦ,",
-        "VUL": "Benedicite, gentes, Deum nostrum,/ et auditam facite vocem laudis ejus :/",
-        "SYN": "Благословите, народы, Бога нашего и провозгласите хвалу Ему.",
-        "NEO": "il apaise la fureur des mers, la fureur de leurs flots, et le tumulte des peuples. —",
-        "NAB": "You still the roaring of the seas, the roaring of their waves, the tumult of the peoples.",
-        "VAT_ES": "acallas el rugido de los mares,",
-        "CEI": "Tu fai tacere il fragore del mare, il fragore dei suoi flutti, tu plachi il tumulto dei popoli."
-      }
-    },
-    "9": {
-      "seq": 9,
-      "v_in": {
-        "MT": 9,
-        "VUL": 9,
-        "LXX": 9
-      },
-      "text": {
-        "WLC": "וַ/יִּ֤ירְא֨וּ יֹשְׁבֵ֣י קְ֭צָוֺת מֵ/אוֹתֹתֶ֑י/ךָ מ֤וֹצָֽאֵי בֹ֖קֶר וָ/עֶ֣רֶב תַּרְנִֽין׃",
-        "LXX": "τοῦ θεμένου τὴν ψυχήν μου εἰς ζωήν, καὶ μὴ δόντος εἰς σάλον τοὺς πόδας μου.",
-        "VUL": "qui posuit animam meam ad vitam,/ et non dedit in commotionem pedes meos./",
-        "SYN": "Он сохранил душе нашей жизнь и ноге нашей не дал поколебаться.",
-        "NEO": "Les habitants des pays lointains craignent devant tes prodiges, tu réjouis les extrémités, l’Orient et l’Occident.",
-        "NAB": "Distant peoples stand in awe of your marvels; east and west you make resound with joy.",
-        "VAT_ES": "Los que habitan en las tierras más lejanas",
-        "CEI": "Gli abitanti degli estremi confini stupiscono davanti ai tuoi prodigi: di gioia fai gridare la terra, le soglie dell'oriente e dell'occidente."
-      }
-    },
-    "10": {
-      "seq": 10,
-      "v_in": {
-        "MT": 10,
-        "VUL": 10,
-        "LXX": 10
-      },
-      "text": {
-        "WLC": "פָּקַ֥דְתָּ הָ/אָ֨רֶץ וַ/תְּשֹׁ֪קְקֶ֡/הָ רַבַּ֬ת תַּעְשְׁרֶ֗/נָּה פֶּ֣לֶג אֱ֭לֹהִים מָ֣לֵא מָ֑יִם תָּכִ֥ין דְּ֝גָנָ֗/ם כִּי כֵ֥ן תְּכִינֶֽ/הָ׃",
-        "LXX": "ὅτι ἐδοκίμασας ἡμᾶς, ὁ θεός, καὶ ἐπύρωσας ἡμᾶς ὡς πυροῦται τὸ ἀργύριον.",
-        "VUL": "Quoniam probasti nos, Deus ;/ igne nos examinasti, sicut examinatur argentum./",
-        "SYN": "Ты испытал нас, Боже, переплавил нас, как переплавляют серебро.",
-        "NEO": "Tu as visité la terre pour lui donner l’abondance, tu la combles de richesses ; la source divine est remplie d’eau : tu prépares le blé, quand tu la fertilises ainsi.",
-        "NAB": "You visit the earth and water it, make it abundantly fertile. God's stream is filled with water; with it you supply the world with grain. Thus do you prepare the earth:",
-        "VAT_ES": "Visitas la tierra, la haces fértil",
-        "CEI": "Tu visiti la terra e la disseti: la ricolmi delle sue ricchezze. Il fiume di Dio è gonfio di acque; tu fai crescere il frumento per gli uomini. Così prepari la terra:"
-      }
-    },
-    "11": {
-      "seq": 11,
-      "v_in": {
-        "MT": 11,
-        "VUL": 11,
-        "LXX": 11
-      },
-      "text": {
-        "WLC": "תְּלָמֶ֣י/הָ רַ֭וֵּה נַחֵ֣ת גְּדוּדֶ֑י/הָ בִּ/רְבִיבִ֥ים תְּ֝מֹגְגֶ֗/נָּה צִמְחָ֥/הּ תְּבָרֵֽךְ׃",
-        "LXX": "εἰσήγαγες ἡμᾶς εἰς τὴν παγίδα, ἔθου θλίψεις ἐνώπιον ἡμῶν,",
-        "VUL": "Induxisti nos in laqueum ;/ posuisti tribulationes in dorso nostro ;/",
-        "SYN": "Ты ввел нас в сеть, положил оковы на чресла наши,",
-        "NEO": "Arrosant ses sillons, aplanissant ses mottes, tu l’amollis par des ondées, tu bénis ses germes.",
-        "NAB": "you drench plowed furrows, and level their ridges. With showers you keep the ground soft, blessing its young sprouts.",
-        "VAT_ES": "riegas los surcos de la tierra,",
-        "CEI": "Ne irrighi i solchi, ne spiani le zolle, la bagni con le piogge e benedici i suoi germogli."
-      }
-    },
-    "12": {
-      "seq": 12,
-      "v_in": {
-        "MT": 12,
-        "VUL": 12,
-        "LXX": 12
-      },
-      "text": {
-        "WLC": "עִ֭טַּרְתָּ שְׁנַ֣ת טוֹבָתֶ֑/ךָ וּ֝/מַעְגָּלֶ֗י/ךָ יִרְעֲפ֥וּ/ן דָּֽשֶׁן׃",
-        "LXX": "ἐπεβίβασας ἀνθρώπους ἐπὶ τὰς κεφαλὰς ἡμῶν· διήλθομεν διὰ πυρὸς καὶ ὕδατος, καὶ ἐξήγαγες ἡμᾶς εἰς ἀναψυχήν.",
-        "VUL": "imposuisti homines super capita nostra./ Transivimus per ignem et aquam,/ et eduxisti nos in refrigerium./",
-        "SYN": "посадил человека на главу нашу. Мы вошли в огонь и в воду, и Ты вывел нас на свободу.",
-        "NEO": "Tu couronnes l’année de tes bienfaits, sur tes pas ruisselle la graisse.",
-        "NAB": "You adorn the year with your bounty; your paths drip with fruitful rain.",
-        "VAT_ES": "Tú coronas el año con tus bienes,",
-        "CEI": "Coroni l'anno con i tuoi benefici, al tuo passaggio stilla l'abbondanza."
-      }
-    },
-    "13": {
-      "seq": 13,
-      "v_in": {
-        "MT": 13,
-        "VUL": 13,
-        "LXX": 13
-      },
-      "text": {
-        "WLC": "יִ֭רְעֲפוּ נְא֣וֹת מִדְבָּ֑ר וְ֝/גִ֗יל גְּבָע֥וֹת תַּחְגֹּֽרְנָה׃",
-        "LXX": "εἰσελεύσομαι εἰς τὸν οἶκόν σου ἐν ὁλοκαυτώμασιν, ἀποδώσω σοι τὰς εὐχάς μου,",
-        "VUL": "Introibo in domum tuam in holocaustis ;/ reddam tibi vota mea",
-        "SYN": "Войду в дом Твой со всесожжениями, воздам Тебе обеты мои,",
-        "NEO": "Les pâturages du désert sont abreuvés, et les collines se revêtent d’allégresse.",
-        "NAB": "The untilled meadows also drip; the hills are robed with joy.",
-        "VAT_ES": "rebosan los pastos del desierto",
-        "CEI": "Stillano i pascoli del deserto e le colline si cingono di esultanza."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "זַמְּר֥וּ כְבֽוֹד שְׁמ֑/וֹ שִׂ֥ימוּ כָ֝ב֗וֹד תְּהִלָּתֽ/וֹ׃",
+    "SYN": "Боже! будь милостив к нам и благослови нас, освети нас лицем Твоим,",
+    "NEO": "Chantez la gloire de son nom, célébrez magnifiquement ses louanges !",
+    "NAB": "Shout joyfully to God, all you on earth; sing of his glorious name; give him glorious praise.",
+    "VAT_ES": "&iexcl;Canten la gloria de su Nombre!",
+    "CEI": "cantate alla gloria del suo nome, date a lui splendida lode.",
+    "LXX": "ψάλατε δὴ τῷ ὀνόματι αὐτοῦ, δότε δόξαν αἰνέσει αὐτοῦ·",
+    "VUL": "psalmum dicite nomini ejus ;/ date gloriam laudi ejus./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "אִמְר֣וּ לֵ֭/אלֹהִים מַה נּוֹרָ֣א מַעֲשֶׂ֑י/ךָ בְּ/רֹ֥ב עֻ֝זְּ/ךָ֗ יְֽכַחֲשׁ֖וּ לְ/ךָ֣ אֹיְבֶֽי/ךָ׃",
+    "SYN": "дабы познали на земле путь Твой, во всех народах спасение Твое.",
+    "NEO": "Dites à Dieu : « Que tes œuvres sont redoutables ! A cause de ta toute-puissance, tes ennemis te flattent.",
+    "NAB": "Say to God: \"How awesome your deeds! Before your great strength your enemies cringe.",
+    "VAT_ES": "digan a Dios: «&iexcl;Qué admirables son tus obras!».",
+    "CEI": "Dite a Dio: \"Stupende sono le tue opere! Per la grandezza della tua potenza a te si piegano i tuoi nemici.",
+    "LXX": "εἴπατε τῷ θεῷ Ὡς φοβερὰ τὰ ἔργα σου· ἐν τῷ πλήθει τῆς δυνάμεώς σου ψεύσονταί σε οἱ ἐχθροί σου·",
+    "VUL": "Dicite Deo : Quam terribilia sunt opera tua, Domine !/ in multitudine virtutis tuæ mentientur tibi inimici tui./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "כָּל הָ/אָ֤רֶץ יִשְׁתַּחֲו֣וּ לְ֭/ךָ וִֽ/יזַמְּרוּ לָ֑/ךְ יְזַמְּר֖וּ שִׁמְ/ךָ֣ סֶֽלָה׃",
+    "SYN": "Да восхвалят Тебя народы, Боже; да восхвалят Тебя народы все.",
+    "NEO": "Que toute la terre se prosterne devant toi, qu’elle chante en ton honneur, qu’elle chante ton nom ! » — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "All on earth fall in worship before you; they sing of you, sing of your name!\" Selah",
+    "VAT_ES": "toda la tierra se postra ante ti,",
+    "CEI": "A te si prostri tutta la terra, a te canti inni, canti al tuo nome\".",
+    "LXX": "πᾶσα ἡ γῆ προσκυνησάτωσάν σοι καὶ ψαλάτωσάν σοι, ψαλάτωσαν τῷ ὀνόματί σου. διάψαλμα.",
+    "VUL": "Omnis terra adoret te, et psallat tibi ;/ psalmum dicat nomini tuo./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "לְכ֣וּ וּ֭/רְאוּ מִפְעֲל֣וֹת אֱלֹהִ֑ים נוֹרָ֥א עֲ֝לִילָ֗ה עַל בְּנֵ֥י אָדָֽם׃",
+    "SYN": "Да веселятся и радуются племена, ибо Ты судишь народы праведно и управляешь на земле племенами.",
+    "NEO": "Venez et contemplez les œuvres de Dieu ! Il est redoutable dans ses desseins sur les fils de l’homme.",
+    "NAB": "Come and see the works of God, awesome in the deeds done for us.",
+    "VAT_ES": "Vengan a ver las obras de Dios,",
+    "CEI": "Venite e vedete le opere di Dio, mirabile nel suo agire sugli uomini.",
+    "LXX": "δεῦτε, τέκνα, καὶ ἴδετε τὰ ἔργα τοῦ θεοῦ, φοβερὸς ἐν βουλαῖς ὑπὲρ τοὺς υἱοὺς τῶν ἀνθρώπων.",
+    "VUL": "Venite, et videte opera Dei :/ terribilis in consiliis super filios hominum./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "הָ֤פַךְ יָ֨ם לְֽ/יַבָּשָׁ֗ה בַּ֭/נָּהָר יַֽעַבְר֣וּ בְ/רָ֑גֶל שָׁ֝֗ם נִשְׂמְחָה בּֽ/וֹ׃",
+    "SYN": "Да восхвалят Тебя народы, Боже, да восхвалят Тебя народы все.",
+    "NEO": "Il a changé la mer en une terre sèche, on a passé le fleuve à pied ; alors nous nous réjouîmes en lui.",
+    "NAB": "He changed the sea to dry land; through the river they passed on foot. Therefore let us rejoice in him,",
+    "VAT_ES": "él convirtió el Mar en tierra firme,",
+    "CEI": "Egli cambiò il mare in terra ferma, passarono a piedi il fiume; per questo in lui esultiamo di gioia.",
+    "LXX": "ὁ μεταστρέφων τὴν θάλασσαν εἰς ξηράν, ἐν ποταμῷ διελεύσονται ποδί· ἐκεῖ εὐφρανθησόμεθα ἐπ’ αὐτῷ,",
+    "VUL": "Qui convertit mare in aridam ;/ in flumine pertransibunt pede :/ ibi lætabimur in ipso./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "מֹ֘שֵׁ֤ל בִּ/גְבוּרָת֨/וֹ עוֹלָ֗ם עֵ֭ינָי/ו בַּ/גּוֹיִ֣ם תִּצְפֶּ֑ינָה הַ/סּוֹרְרִ֓ים אַל ירימו יָר֖וּמוּ לָ֣/מוֹ סֶֽלָה׃",
+    "SYN": "Земля дала плод свой; да благословит нас Бог, Бог наш.",
+    "NEO": "Il règne éternellement par sa puissance ; ses yeux observent les nations : que les rebelles ne s’élèvent point ! — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "who rules by might forever, Whose eyes are fixed upon the nations. Let no rebel rise to challenge! Selah",
+    "VAT_ES": "que gobierna eternamente con su fuerza;",
+    "CEI": "Con la sua forza domina in eterno, il suo occhio scruta le nazioni; i ribelli non rialzino la fronte.",
+    "LXX": "τῷ δεσπόζοντι ἐν τῇ δυναστίᾳ τοῦ αἰῶνος αὐτοῦ. οἱ ὀφθαλμοὶ αὐτοῦ ἐπὶ τὰ ἔθνη ἐπιβλέπουσιν, οἱ παραπικραίνοντες μὴ ὑψούσθωσαν ἐν ἑαυτοῖς. διάψαλμα.",
+    "VUL": "Qui dominatur in virtute sua in æternum ;/ oculi ejus super gentes respiciunt :/ qui exasperant non exaltentur in semetipsis./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "בָּרְכ֖וּ עַמִּ֥ים אֱלֹהֵ֑י/נוּ וְ֝/הַשְׁמִ֗יעוּ ק֣וֹל תְּהִלָּתֽ/וֹ׃",
+    "SYN": "Да благословит нас Бог, и да убоятся Его все пределы земли.",
+    "NEO": "Peuples, bénissez notre Dieu, faites retentir sa louange !",
+    "NAB": "Bless our God, you peoples; loudly sound his praise,",
+    "VAT_ES": "Bendigan, pueblos, a nuestro Dios,",
+    "CEI": "Benedite, popoli, il nostro Dio, fate risuonare la sua lode;",
+    "LXX": "εὐλογεῖτε, ἔθνη, τὸν θεὸν ἡμῶν, καὶ ἀκουτίσασθε τὴν φωνὴν τῆς αἰνέσεως αὐτοῦ,",
+    "VUL": "Benedicite, gentes, Deum nostrum,/ et auditam facite vocem laudis ejus :/"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "הַ/שָּׂ֣ם נַ֭פְשֵׁ/נוּ בַּֽ/חַיִּ֑ים וְ/לֹֽא נָתַ֖ן לַ/מּ֣וֹט רַגְלֵֽ/נוּ׃",
+    "NEO": "Il a conservé la vie à notre âme, et n’a pas permis que notre pied chancelât.",
+    "NAB": "Who has kept us alive and not allowed our feet to slip.",
+    "VAT_ES": "él nos concedió la vida",
+    "CEI": "è lui che salvò la nostra vita e non lasciò vacillare i nostri passi.",
+    "LXX": "τοῦ θεμένου τὴν ψυχήν μου εἰς ζωήν, καὶ μὴ δόντος εἰς σάλον τοὺς πόδας μου.",
+    "VUL": "qui posuit animam meam ad vitam,/ et non dedit in commotionem pedes meos./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "כִּֽי בְחַנְתָּ֥/נוּ אֱלֹהִ֑ים צְ֝רַפְתָּ֗/נוּ כִּ/צְרָף כָּֽסֶף׃",
+    "NEO": "Car tu nous as éprouvés, ô Dieu, tu nous as fait passer au creuset, comme l’argent.",
+    "NAB": "You tested us, O God, tried us as silver tried by fire.",
+    "VAT_ES": "Porque tú nos probaste, oh Dios,",
+    "CEI": "Dio, tu ci hai messi alla prova; ci hai passati al crogiuolo, come l'argento.",
+    "LXX": "ὅτι ἐδοκίμασας ἡμᾶς, ὁ θεός, καὶ ἐπύρωσας ἡμᾶς ὡς πυροῦται τὸ ἀργύριον.",
+    "VUL": "Quoniam probasti nos, Deus ;/ igne nos examinasti, sicut examinatur argentum./"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "הֲבֵאתָ֥/נוּ בַ/מְּצוּדָ֑ה שַׂ֖מְתָּ מוּעָקָ֣ה בְ/מָתְנֵֽי/נוּ׃",
+    "NEO": "Tu nous as conduits dans le filet, tu as mis sur nos reins un fardeau.",
+    "NAB": "You led us into a snare; you bound us at the waist as captives.",
+    "VAT_ES": "nos hiciste caer en una red,",
+    "CEI": "Ci hai fatti cadere in un agguato, hai messo un peso ai nostri fianchi.",
+    "LXX": "εἰσήγαγες ἡμᾶς εἰς τὴν παγίδα, ἔθου θλίψεις ἐνώπιον ἡμῶν,",
+    "VUL": "Induxisti nos in laqueum ;/ posuisti tribulationes in dorso nostro ;/"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "הִרְכַּ֥בְתָּ אֱנ֗וֹשׁ לְ/רֹ֫אשֵׁ֥/נוּ בָּֽאנוּ בָ/אֵ֥שׁ וּ/בַ/מַּ֑יִם וַ֝/תּוֹצִיאֵ֗/נוּ לָֽ/רְוָיָֽה׃",
+    "NEO": "Tu as fait marcher des hommes sur nos têtes ; nous avons passé par le feu et par l’eau ; mais tu nous en as tirés pour nous combler de biens.",
+    "NAB": "You let captors set foot on our neck; we went through fire and water; then you led us out to freedom.",
+    "VAT_ES": "Dejaste que cabalgaran sobre nuestras cabezas,",
+    "CEI": "Hai fatto cavalcare uomini sulle nostre teste; ci hai fatto passare per il fuoco e l'acqua, ma poi ci hai dato sollievo.",
+    "LXX": "ἐπεβίβασας ἀνθρώπους ἐπὶ τὰς κεφαλὰς ἡμῶν· διήλθομεν διὰ πυρὸς καὶ ὕδατος, καὶ ἐξήγαγες ἡμᾶς εἰς ἀναψυχήν.",
+    "VUL": "imposuisti homines super capita nostra./ Transivimus per ignem et aquam,/ et eduxisti nos in refrigerium./"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13,
+    "MT": 13
+   },
+   "text": {
+    "WLC": "אָב֣וֹא בֵיתְ/ךָ֣ בְ/עוֹל֑וֹת אֲשַׁלֵּ֖ם לְ/ךָ֣ נְדָרָֽ/י׃",
+    "NEO": "Je viens dans ta maison avec des holocaustes, pour m’acquitter envers toi de mes vœux,",
+    "NAB": "I will bring holocausts to your house; to you I will fulfill my vows,",
+    "VAT_ES": "Yo vengo a tu Casa a ofrecerte holocaustos,",
+    "CEI": "Entrerò nella tua casa con olocausti, a te scioglierò i miei voti,",
+    "LXX": "εἰσελεύσομαι εἰς τὸν οἶκόν σου ἐν ὁλοκαυτώμασιν, ἀποδώσω σοι τὰς εὐχάς μου,",
+    "VUL": "Introibo in domum tuam in holocaustis ;/ reddam tibi vota mea"
+   }
+  },
+  "14": {
+   "seq": 14,
+   "v_in": {
+    "VUL": 14,
+    "MT": 14
+   },
+   "text": {
+    "WLC": "אֲשֶׁר פָּצ֥וּ שְׂפָתָ֑/י וְ/דִבֶּר פִּ֝֗/י בַּ/צַּר לִֽ/י׃",
+    "NEO": "que mes lèvres ont proférés, que ma bouche a prononcés au jour de ma détresse.",
+    "NAB": "The vows my lips pronounced and my mouth spoke in distress.",
+    "VAT_ES": "los votos que pronunciaron mis labios",
+    "CEI": "i voti pronunziati dalle mie labbra, promessi nel momento dell'angoscia.",
+    "VUL": "quæ distinxerunt labia mea :/ et locutum est os meum in tribulatione mea./"
+   }
+  },
+  "15": {
+   "seq": 15,
+   "v_in": {
+    "VUL": 15,
+    "MT": 15
+   },
+   "text": {
+    "WLC": "עֹ֘ל֤וֹת מֵחִ֣ים אַעֲלֶה לָּ֭/ךְ עִם קְטֹ֣רֶת אֵילִ֑ים אֶ֥עֱשֶֽׂה בָקָ֖ר עִם עַתּוּדִ֣ים סֶֽלָה׃",
+    "NEO": "Je t’offre des brebis grasses en holocauste, avec la fumée des béliers ; j’immole le taureau avec le jeune bouc. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "Holocausts of fatlings I will offer you and burnt offerings of rams; I will sacrifice oxen and goats. Selah",
+    "VAT_ES": "Te ofreceré en holocausto animales cebados,",
+    "CEI": "Ti offrirò pingui olocausti con fragranza di montoni, immolerò a te buoi e capri.",
+    "VUL": "Holocausta medullata offeram tibi, cum incenso arietum ;/ offeram tibi boves cum hircis./"
+   }
+  },
+  "16": {
+   "seq": 16,
+   "v_in": {
+    "VUL": 16,
+    "MT": 16
+   },
+   "text": {
+    "WLC": "לְכֽוּ שִׁמְע֣וּ וַ֭/אֲסַפְּרָה כָּל יִרְאֵ֣י אֱלֹהִ֑ים אֲשֶׁ֖ר עָשָׂ֣ה לְ/נַפְשִֽׁ/י׃",
+    "NEO": "Venez, écoutez, et je vous raconterai, à vous tous qui craignez Dieu, ce qu’il a fait à mon âme.",
+    "NAB": "Come and hear, all you who fear God, while I recount what has been done for me.",
+    "VAT_ES": "Los que temen a Dios, vengan a escuchar,",
+    "CEI": "Venite, ascoltate, voi tutti che temete Dio, e narrerò quanto per me ha fatto.",
+    "VUL": "Venite, audite, et narrabo, omnes qui timetis Deum,/ quanta fecit animæ meæ./"
+   }
+  },
+  "17": {
+   "seq": 17,
+   "v_in": {
+    "VUL": 17,
+    "MT": 17
+   },
+   "text": {
+    "WLC": "אֵלָ֥י/ו פִּֽ/י קָרָ֑אתִי וְ֝/רוֹמַ֗ם תַּ֣חַת לְשׁוֹנִֽ/י׃",
+    "NEO": "J’ai crié vers lui de ma bouche, et sa louange était sur ma langue.",
+    "NAB": "I called to the Lord with my mouth; praise was upon my tongue.",
+    "VAT_ES": "apenas mi boca clamó hacia él,",
+    "CEI": "A lui ho rivolto il mio grido, la mia lingua cantò la sua lode.",
+    "VUL": "Ad ipsum ore meo clamavi,/ et exaltavi sub lingua mea./"
+   }
+  },
+  "18": {
+   "seq": 18,
+   "v_in": {
+    "VUL": 18,
+    "MT": 18
+   },
+   "text": {
+    "WLC": "אָ֭וֶן אִם רָאִ֣יתִי בְ/לִבִּ֑/י לֹ֖א יִשְׁמַ֣ע אֲדֹנָֽ/י׃",
+    "NEO": "Si j’avais vu l’iniquité dans mon cœur, le Seigneur ne m’exaucerait pas.",
+    "NAB": "Had I cherished evil in my heart, the Lord would not have heard.",
+    "VAT_ES": "Si hubiera tenido malas intenciones,",
+    "CEI": "Se nel mio cuore avessi cercato il male, il Signore non mi avrebbe ascoltato.",
+    "VUL": "Iniquitatem si aspexi in corde meo,/ non exaudiet Dominus./"
+   }
+  },
+  "19": {
+   "seq": 19,
+   "v_in": {
+    "VUL": 19,
+    "MT": 19
+   },
+   "text": {
+    "WLC": "אָ֭כֵן שָׁמַ֣ע אֱלֹהִ֑ים הִ֝קְשִׁ֗יב בְּ/ק֣וֹל תְּפִלָּתִֽ/י׃",
+    "NEO": "Mais Dieu m’a exaucé, il a été attentif à la voix de ma prière.",
+    "NAB": "But God did hear and listened to my voice in prayer.",
+    "VAT_ES": "pero Dios me escuchó",
+    "CEI": "Ma Dio ha ascoltato, si è fatto attento alla voce della mia preghiera.",
+    "VUL": "Propterea exaudivit Deus,/ et attendit voci deprecationis meæ./"
+   }
+  },
+  "20": {
+   "seq": 20,
+   "v_in": {
+    "VUL": 20,
+    "MT": 20
+   },
+   "text": {
+    "WLC": "בָּר֥וּךְ אֱלֹהִ֑ים אֲשֶׁ֥ר לֹֽא הֵסִ֘יר תְּפִלָּתִ֥/י וְ֝/חַסְדּ֗/וֹ מֵ/אִתִּֽ/י׃",
+    "NEO": "Béni soit Dieu, qui n’a pas repoussé ma prière, et n’a pas éloigné de moi sa grâce !",
+    "NAB": "Blessed be God, who did not refuse me the kindness I sought in prayer.",
+    "VAT_ES": "Bendito sea Dios,",
+    "CEI": "Sia benedetto Dio che non ha respinto la mia preghiera, non mi ha negato la sua misericordia.",
+    "VUL": "Benedictus Deus, qui non amovit orationem meam,/ et misericordiam suam a me.]"
+   }
   }
+ }
 }

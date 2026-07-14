@@ -1,158 +1,226 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_061",
-  "book_key": "PSAL",
-  "sequence": 61,
-  "chapter_in": {
-    "MT": 61,
-    "VUL": 60,
-    "LXX": 60
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_061",
+ "book_key": "PSAL",
+ "sequence": 61,
+ "chapter_in": {
+  "VUL": 61,
+  "LXX": 61,
+  "MT": 62
+ },
+ "mt_sources": [
+  "62"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "לַ/מְנַצֵּ֥חַ עַֽל יְדוּת֗וּן מִזְמ֥וֹר לְ/דָוִֽד׃",
+    "SYN": "Псалом Давида, когда он был в пустыне Иудейской.",
+    "NEO": "Au maître de chant... Idithun. Psaume de David.",
+    "NAB": "For the leader; al Jeduthun. A psalm of David.",
+    "CEI": "Al maestro del coro. Su \"Iduthun\". Salmo. Di Davide.",
+    "LXX": "Εἰς τὸ τέλος, ὑπὲρ Ἰδιθούν· ψαλμὸς τῷ Δαυείδ.",
+    "VUL": "In finem, pro Idithun. Psalmus David."
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "לַ/מְנַצֵּ֬חַ עַֽל נְגִינַ֬ת לְ/דָוִֽד׃",
-        "LXX": "Εἰς τὸ τέλος, ὑπὲρ Ἰδιθούν· ψαλμὸς τῷ Δαυείδ.",
-        "VUL": "In finem, pro Idithun. Psalmus David.",
-        "SYN": "Начальнику хора Идифумова. Псалом Давида.",
-        "NEO": "Au maître de chant. Sur les instruments à cordes. De David.",
-        "NAB": "For the leader; with stringed instruments. Of David.",
-        "CEI": "Al maestro del coro. Per strumenti a corda. Di Davide."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "שִׁמְעָ֣/ה אֱ֭לֹהִים רִנָּתִ֑/י הַ֝קְשִׁ֗יבָ/ה תְּפִלָּתִֽ/י׃",
-        "LXX": "Οὐχὶ τῷ θεῷ ὑποταγήσεται ἡ ψυχή μου; παρ’ αὐτοῦ γὰρ τὸ σωτήριόν μου.",
-        "VUL": "[Nonne Deo subjecta erit anima mea ?/ ab ipso enim salutare meum./",
-        "SYN": "Только в Боге успокаивается душа моя: от Него спасение мое.",
-        "NEO": "O Dieu, entends mes cris, sois attentif à ma prière.",
-        "NAB": "Hear my cry, O God, listen to my prayer!",
-        "VAT_ES": "&iexcl;Dios mío, escucha mi clamor,",
-        "CEI": "Ascolta, o Dio, il mio grido, sii attento alla mia preghiera."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "מִ/קְצֵ֤ה הָ/אָ֨רֶץ אֵלֶ֣י/ךָ אֶ֭קְרָא בַּ/עֲטֹ֣ף לִבִּ֑/י בְּ/צוּר יָר֖וּם מִמֶּ֣/נִּי תַנְחֵֽ/נִי׃",
-        "LXX": "καὶ γὰρ αὐτὸς ὁ θεός μου καὶ σωτήρ μου, ἀντιλήμπτωρ μου· οὐ μὴ σαλευθῶ ἐπὶ πλεῖον.",
-        "VUL": "Nam et ipse Deus meus et salutaris meus ;/ susceptor meus, non movebor amplius./",
-        "SYN": "Только Он - твердыня моя, спасение мое, убежище мое: не поколеблюсь более.",
-        "NEO": "De l’extrémité de la terre je crie vers toi, dans l’angoisse de mon cœur ; conduis-moi sur le rocher que je ne puis atteindre.",
-        "NAB": "From the brink of Sheol I call; my heart grows faint. Raise me up, set me on a rock,",
-        "VAT_ES": "Yo te invoco desde los confines de la tierra,",
-        "CEI": "Dai confini della terra io t'invoco; mentre il mio cuore viene meno, guidami su rupe inaccessibile."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "כִּֽי הָיִ֣יתָ מַחְסֶ֣ה לִ֑/י מִגְדַּל עֹ֝֗ז מִ/פְּנֵ֥י אוֹיֵֽב׃",
-        "LXX": "ἕως πότε ἐπιτίθεσθε ἐπ’ ἄνθρωπον; φονεύετε πάντες ὡς τοίχῳ κεκλιμένῳ καὶ φραγμῷ ὠσμένῳ.",
-        "VUL": "Quousque irruitis in hominem ?/ interficitis universi vos,/ tamquam parieti inclinato et maceriæ depulsæ./",
-        "SYN": "Доколе вы будете налегать на человека? Вы будете низринуты, все вы, как наклонившаяся стена, как ограда пошатнувшаяся.",
-        "NEO": "Car tu es pour moi un refuge, une tour puissante contre l’ennemi.",
-        "NAB": "for you are my refuge, a tower of strength against the foe.",
-        "VAT_ES": "porque tú eres para mí un refugio",
-        "CEI": "Tu sei per me rifugio, torre salda davanti all'avversario."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "אָג֣וּרָה בְ֭/אָהָלְ/ךָ עוֹלָמִ֑ים אֶֽחֱסֶ֨ה בְ/סֵ֖תֶר כְּנָפֶ֣י/ךָ סֶּֽלָה׃",
-        "LXX": "πλὴν τὴν τιμήν μου ἐβουλεύσαντο ἀπώσασθαι, ἔδραμον ἐν δίψει· τῷ στόματι αὐτῶν εὐλογοῦσαν, καὶ τῇ καρδίᾳ αὐτῶν κατηρῶντο. διάψαλμα.",
-        "VUL": "Verumtamen pretium meum cogitaverunt repellere ;/ cucurri in siti :/ ore suo benedicebant,/ et corde suo maledicebant./",
-        "SYN": "Они задумали свергнуть его с высоты, прибегли ко лжи; устами благословляют, а в сердце своем клянут.",
-        "NEO": "Je voudrais demeurer à jamais dans ta tente, me réfugier à l’abri de tes ailes ! — \\+w Séla|strong=\"H5554\"\\+w*.*",
-        "NAB": "Then I will ever dwell in your tent, take refuge in the shelter of your wings. Selah",
-        "VAT_ES": "&iexcl;Que yo sea siempre un huésped en tu Carpa",
-        "CEI": "Dimorerò nella tua tenda per sempre, all'ombra delle tue ali troverò riparo;"
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "כִּֽי אַתָּ֣ה אֱ֭לֹהִים שָׁמַ֣עְתָּ לִ/נְדָרָ֑/י נָתַ֥תָּ יְ֝רֻשַּׁ֗ת יִרְאֵ֥י שְׁמֶֽ/ךָ׃",
-        "LXX": "πλὴν τῷ θεῷ ὑποτάγηθι, ψυχή μου, ὅτι παρ’ αὐτοῦ ἡ ὑπομονή μου.",
-        "VUL": "Verumtamen Deo subjecta esto, anima mea,/ quoniam ab ipso patientia mea :/",
-        "SYN": "Только в Боге успокаивайся, душа моя! ибо на Него надежда моя.",
-        "NEO": "Car toi, ô Dieu, tu exauces mes vœux, tu m’as donné l’héritage de ceux qui révèrent ton nom.",
-        "NAB": "O God, when you accept my vows and hear the plea of those who revere your name in prayer:",
-        "VAT_ES": "Porque tú, Dios mío, tienes en cuenta mis votos",
-        "CEI": "perché tu, Dio, hai ascoltato i miei voti, mi hai dato l'eredità di chi teme il tuo nome."
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "יָמִ֣ים עַל יְמֵי מֶ֣לֶךְ תּוֹסִ֑יף שְׁ֝נוֹתָ֗י/ו כְּמוֹ דֹ֥ר וָ/דֹֽר׃",
-        "LXX": "ὅτι αὐτὸς θεός μου καὶ σωτήρ μου, ἀντιλήμπτωρ μου· οὐ μὴ μεταναστεύσω.",
-        "VUL": "quia ipse Deus meus et salvator meus,/ adjutor meus, non emigrabo./",
-        "SYN": "Только Он - твердыня моя и спасение мое, убежище мое: не поколеблюсь.",
-        "NEO": "Ajoute des jours aux jours du roi, que ses années se prolongent d’âge en âge !",
-        "NAB": "\"Add to the days of the king's life; may his years be many generations;",
-        "VAT_ES": "Añade días a los días del rey:",
-        "CEI": "Ai giorni del re aggiungi altri giorni, per molte generazioni siano i suoi anni."
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "יֵשֵׁ֣ב ע֭וֹלָם לִ/פְנֵ֣י אֱלֹהִ֑ים חֶ֥סֶד וֶ֝/אֱמֶ֗ת מַ֣ן יִנְצְרֻֽ/הוּ׃",
-        "LXX": "ἐπὶ τῷ θεῷ τὸ σωτήριόν μου καὶ ἡ δόξα μου· ὁ θεὸς τῆς βοηθείας μου, καὶ ἡ ἐλπίς μου ἐπὶ τῷ θεῷ.",
-        "VUL": "In Deo salutare meum et gloria mea ;/ Deus auxilii mei, et spes mea in Deo est./",
-        "SYN": "В Боге спасение мое и слава моя; крепость силы моей и упование мое в Боге.",
-        "NEO": "Qu’il demeure sur le trône éternellement devant Dieu ! Ordonne à ta bonté et à ta vérité de le garder !",
-        "NAB": "May he reign before God forever; may your love and fidelity preserve him\" -",
-        "VAT_ES": "que reine para siempre en la presencia de Dios,",
-        "CEI": "Regni per sempre sotto gli occhi di Dio; grazia e fedeltà lo custodiscano."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "אַ֣ךְ אֶל אֱ֭לֹהִים דּֽוּמִיָּ֣ה נַפְשִׁ֑/י מִ֝מֶּ֗/נּוּ יְשׁוּעָתִֽ/י׃",
+    "SYN": "Боже! Ты Бог мой, Тебя от ранней зари ищу я; Тебя жаждет душа моя, по Тебе томится плоть моя в земле пустой, иссохшей и безводной,",
+    "NEO": "Oui, à Dieu mon âme en paix s’abandonne, de lui vient mon secours.",
+    "NAB": "My soul rests in God alone, from whom comes my salvation.",
+    "VAT_ES": "Sólo en Dios descansa mi alma,",
+    "CEI": "Solo in Dio riposa l'anima mia; da lui la mia salvezza.",
+    "LXX": "Οὐχὶ τῷ θεῷ ὑποταγήσεται ἡ ψυχή μου; παρ’ αὐτοῦ γὰρ τὸ σωτήριόν μου.",
+    "VUL": "[Nonne Deo subjecta erit anima mea ?/ ab ipso enim salutare meum./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "אַךְ ה֣וּא צ֭וּרִ/י וִֽ/ישׁוּעָתִ֑/י מִ֝שְׂגַּבִּ֗/י לֹא אֶמּ֥וֹט רַבָּֽה׃",
+    "SYN": "чтобы видеть силу Твою и славу Твою, как я видел Тебя во святилище:",
+    "NEO": "Oui, il est mon rocher et mon salut ; il est ma forteresse : je ne serai pas tout à fait ébranlé.",
+    "NAB": "God alone is my rock and salvation, my secure height; I shall never fall.",
+    "VAT_ES": "Sólo él es mi Roca salvadora;",
+    "CEI": "Lui solo è mia rupe e mia salvezza, mia roccia di difesa: non potrò vacillare.",
+    "LXX": "καὶ γὰρ αὐτὸς ὁ θεός μου καὶ σωτήρ μου, ἀντιλήμπτωρ μου· οὐ μὴ σαλευθῶ ἐπὶ πλεῖον.",
+    "VUL": "Nam et ipse Deus meus et salutaris meus ;/ susceptor meus, non movebor amplius./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "עַד אָ֤נָה תְּהֽוֹתְת֣וּ עַל אִישׁ֮ תְּרָצְּח֪וּ כֻ֫לְּ/כֶ֥ם כְּ/קִ֥יר נָט֑וּי גָּ֝דֵ֗ר הַ/דְּחוּיָֽה׃",
+    "SYN": "ибо милость Твоя лучше, нежели жизнь. Уста мои восхвалят Тебя.",
+    "NEO": "Jusques à quand vous jetterez-vous sur un homme, pour l’abattre tous ensemble, comme une clôture qui penche, comme une muraille qui s’écroule ?",
+    "NAB": "How long will you set upon people, all of you beating them down, As though they were a sagging fence or a battered wall?",
+    "VAT_ES": "&iquest;Hasta cuándo se ensañarán con un hombre",
+    "CEI": "Fino a quando vi scaglierete contro un uomo, per abbatterlo tutti insieme, come muro cadente, come recinto che crolla?",
+    "LXX": "ἕως πότε ἐπιτίθεσθε ἐπ’ ἄνθρωπον; φονεύετε πάντες ὡς τοίχῳ κεκλιμένῳ καὶ φραγμῷ ὠσμένῳ.",
+    "VUL": "Quousque irruitis in hominem ?/ interficitis universi vos,/ tamquam parieti inclinato et maceriæ depulsæ./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "אַ֤ךְ מִ/שְּׂאֵת֨/וֹ יָעֲצ֣וּ לְ/הַדִּיחַ֮ יִרְצ֪וּ כָ֫זָ֥ב בְּ/פִ֥י/ו יְבָרֵ֑כוּ וּ֝/בְ/קִרְבָּ֗/ם יְקַלְלוּ סֶֽלָה׃",
+    "SYN": "Так благословлю Тебя в жизни моей; во имя Твое вознесу руки мои.",
+    "NEO": "Oui, ils complotent pour le précipiter de sa hauteur ; ils se plaisent au mensonge ; ils bénissent de leur bouche, et ils maudissent dans leur cœur. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "Even from my place on high they plot to dislodge me. They delight in lies; they bless with their mouths, but inwardly they curse. Selah",
+    "VAT_ES": "Sólo piensan en menoscabar mi dignidad",
+    "CEI": "Tramano solo di precipitarlo dall'alto, si compiacciono della menzogna. Con la bocca benedicono, e maledicono nel loro cuore.",
+    "LXX": "πλὴν τὴν τιμήν μου ἐβουλεύσαντο ἀπώσασθαι, ἔδραμον ἐν δίψει· τῷ στόματι αὐτῶν εὐλογοῦσαν, καὶ τῇ καρδίᾳ αὐτῶν κατηρῶντο. διάψαλμα.",
+    "VUL": "Verumtamen pretium meum cogitaverunt repellere ;/ cucurri in siti :/ ore suo benedicebant,/ et corde suo maledicebant./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "אַ֣ךְ לֵ֭/אלֹהִים דּ֣וֹמִּי נַפְשִׁ֑/י כִּי מִ֝מֶּ֗/נּוּ תִּקְוָתִֽ/י׃",
+    "SYN": "Как туком и елеем насыщается душа моя, и радостным гласом восхваляют Тебя уста мои,",
+    "NEO": "Oui, ô mon âme, à Dieu abandonne-toi en paix, car de lui vient mon espérance.",
+    "NAB": "My soul, be at rest in God alone, from whom comes my hope.",
+    "VAT_ES": "Sólo en Dios descansa mi alma,",
+    "CEI": "Solo in Dio riposa l'anima mia, da lui la mia speranza.",
+    "LXX": "πλὴν τῷ θεῷ ὑποτάγηθι, ψυχή μου, ὅτι παρ’ αὐτοῦ ἡ ὑπομονή μου.",
+    "VUL": "Verumtamen Deo subjecta esto, anima mea,/ quoniam ab ipso patientia mea :/"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "אַךְ ה֣וּא צ֭וּרִ/י וִֽ/ישׁוּעָתִ֑/י מִ֝שְׂגַּבִּ֗/י לֹ֣א אֶמּֽוֹט׃",
+    "SYN": "когда я вспоминаю о Тебе на постели моей, размышляю о Тебе в _ночные_ стражи,",
+    "NEO": "Oui, il est mon rocher et mon salut ; il est ma forteresse : je ne chancellerai point.",
+    "NAB": "God alone is my rock and my salvation, my secure height; I shall not fall.",
+    "VAT_ES": "Sólo él es mi Roca salvadora,",
+    "CEI": "Lui solo è mia rupe e mia salvezza, mia roccia di difesa: non potrò vacillare.",
+    "LXX": "ὅτι αὐτὸς θεός μου καὶ σωτήρ μου, ἀντιλήμπτωρ μου· οὐ μὴ μεταναστεύσω.",
+    "VUL": "quia ipse Deus meus et salvator meus,/ adjutor meus, non emigrabo./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "עַל אֱ֭לֹהִים יִשְׁעִ֣/י וּ/כְבוֹדִ֑/י צוּר עֻזִּ֥/י מַ֝חְסִ֗/י בֵּֽ/אלֹהִֽים׃",
+    "SYN": "ибо Ты помощь моя, и в тени крыл Твоих я возрадуюсь;",
+    "NEO": "Sur Dieu reposent mon salut et ma gloire ; le rocher de ma force, mon refuge, est en Dieu.",
+    "NAB": "My safety and glory are with God, my strong rock and refuge.",
+    "VAT_ES": "Mi salvación y mi gloria",
+    "CEI": "In Dio è la mia salvezza e la mia gloria; il mio saldo rifugio, la mia difesa è in Dio.",
+    "LXX": "ἐπὶ τῷ θεῷ τὸ σωτήριόν μου καὶ ἡ δόξα μου· ὁ θεὸς τῆς βοηθείας μου, καὶ ἡ ἐλπίς μου ἐπὶ τῷ θεῷ.",
+    "VUL": "In Deo salutare meum et gloria mea ;/ Deus auxilii mei, et spes mea in Deo est./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "בִּטְח֘וּ ב֤/וֹ בְ/כָל עֵ֨ת עָ֗ם שִׁפְכֽוּ לְ/פָנָ֥י/ו לְבַבְ/כֶ֑ם אֱלֹהִ֖ים מַחֲסֶה לָּ֣/נוּ סֶֽלָה׃",
+    "SYN": "к Тебе прилепилась душа моя; десница Твоя поддерживает меня.",
+    "NEO": "En tout temps, ô peuple, confie-toi en lui ; épanchez devant lui vos cœurs : Dieu est notre refuge. — \\+w Séla|strong=\"H5554\"\\+w*.*",
+    "NAB": "Trust God at all times, my people! Pour out your hearts to God our refuge! Selah",
+    "VAT_ES": "Confíen en Dios constantemente,",
+    "CEI": "Confida sempre in lui, o popolo, davanti a lui effondi il tuo cuore, nostro rifugio è Dio.",
+    "VUL": "Sperate in eo, omnis congregatio populi ;/ effundite coram illo corda vestra :/ Deus adjutor noster in æternum./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "אַ֤ךְ הֶ֥בֶל בְּנֵֽי אָדָם֮ כָּזָ֪ב בְּנֵ֫י אִ֥ישׁ בְּ/מֹאזְנַ֥יִם לַ/עֲל֑וֹת הֵ֝֗מָּה מֵ/הֶ֥בֶל יָֽחַד׃",
+    "SYN": "А те, которые ищут погибели душе моей, сойдут в преисподнюю земли;",
+    "NEO": "Oui les mortels sont vanité, les fils de l’homme sont mensonge ; dans la balance ils monteraient, tous ensemble plus légers qu’un souffle.",
+    "NAB": "Mortals are a mere breath, the powerful but an illusion; On a balance they rise; together they are lighter than air.",
+    "VAT_ES": "Los hombres no son más que un soplo,",
+    "CEI": "Sì, sono un soffio i figli di Adamo, una menzogna tutti gli uomini, insieme, sulla bilancia, sono meno di un soffio.",
+    "VUL": "Verumtamen vani filii hominum,/ mendaces filii hominum in stateris,/ ut decipiant ipsi de vanitate in idipsum./"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "אַל תִּבְטְח֣וּ בְ/עֹשֶׁק֮ וּ/בְ/גָזֵ֪ל אַל תֶּ֫הְבָּ֥לוּ חַ֤יִל כִּֽי יָנ֑וּב אַל תָּשִׁ֥יתוּ לֵֽב׃",
+    "SYN": "сразят их силою меча; достанутся они в добычу лисицам.",
+    "NEO": "Ne vous confiez pas dans la violence, et ne mettez pas un vain espoir dans la rapine ; Si vos richesses s’accroissent, n’y attachez pas votre cœur.",
+    "NAB": "Do not trust in extortion; in plunder put no empty hope. Though wealth increase, do not set your heart upon it.",
+    "VAT_ES": "No se fíen de la violencia,",
+    "CEI": "Non confidate nella violenza, non illudetevi della rapina; alla ricchezza, anche se abbonda, non attaccate il cuore.",
+    "VUL": "Nolite sperare in iniquitate,/ et rapinas nolite concupiscere ;/ divitiæ si affluant, nolite cor apponere./"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "אַחַ֤ת דִּבֶּ֬ר אֱלֹהִ֗ים שְׁתַּֽיִם ז֥וּ שָׁמָ֑עְתִּי כִּ֥י עֹ֝֗ז לֵ/אלֹהִֽים׃",
+    "SYN": "Царь же возвеселится о Боге, восхвален будет всякий, клянущийся Им, ибо заградятся уста говорящих неправду.",
+    "NEO": "Dieu a dit une parole, ou deux, que j’ai entendues : « La puissance est à Dieu ;",
+    "NAB": "One thing God has said; two things I have heard: Power belongs to God;",
+    "VAT_ES": "Dios ha dicho una cosa,",
+    "CEI": "Una parola ha detto Dio, due ne ho udite: il potere appartiene a Dio, tua, Signore, è la grazia;",
+    "VUL": "Semel locutus est Deus ;/ duo hæc audivi :/ quia potestas Dei est,"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13
+   },
+   "text": {
+    "VUL": "et tibi, Domine, misericordia :/ quia tu reddes unicuique juxta opera sua.]"
+   }
   }
+ }
 }

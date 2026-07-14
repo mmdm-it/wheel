@@ -1,105 +1,379 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_093",
-  "book_key": "PSAL",
-  "sequence": 93,
-  "chapter_in": {
-    "MT": 93,
-    "VUL": 92,
-    "LXX": 92
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_093",
+ "book_key": "PSAL",
+ "sequence": 93,
+ "chapter_in": {
+  "VUL": 93,
+  "LXX": 93,
+  "MT": 94
+ },
+ "mt_sources": [
+  "94"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "אֵל נְקָמ֥וֹת יְהוָ֑ה אֵ֖ל נְקָמ֣וֹת הוֹפִֽיַע׃",
+    "SYN": "Приидите, воспоем Господу, воскликнем [Богу], твердыне спасения нашего;",
+    "NEO": "Dieu des vengeances, \\+w Yahweh|strong=\"H3068\"\\+w**, Dieu des vengeances, parais !",
+    "NAB": "LORD, avenging God, avenging God, shine forth!",
+    "VAT_ES": "&iexcl;Dios vengador de las injusticias,",
+    "CEI": "Dio che fai giustizia, o Signore, Dio che fai giustizia: mostrati!",
+    "LXX": "Ψαλμὸς τῷ Δαυείδ, τετράδι σαββάτων. Ὁ θεὸς ἐκδικήσεων Κύριος, ὁ θεὸς ἐκδικήσεων ἐπαρρησιάσατο.",
+    "VUL": "Psalmus ipsi David, quarta sabbati. [Deus ultionum Dominus ;/ Deus ultionum libere egit./"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "יְהוָ֣ה מָלָךְ֮ גֵּא֪וּת לָ֫בֵ֥שׁ לָבֵ֣שׁ יְ֭הוָה עֹ֣ז הִתְאַזָּ֑ר אַף תִּכּ֥וֹן תֵּ֝בֵ֗ל בַּל תִּמּֽוֹט׃",
-        "LXX": "Ψαλμὸς τῷ Δαυείδ, τετράδι σαββάτων. Ὁ θεὸς ἐκδικήσεων Κύριος, ὁ θεὸς ἐκδικήσεων ἐπαρρησιάσατο.",
-        "VUL": "Psalmus ipsi David, quarta sabbati. [Deus ultionum Dominus ;/ Deus ultionum libere egit./",
-        "SYN": "Боже отмщений, Господи, Боже отмщений, яви Себя!",
-        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est roi, il est revêtu de majesté, \\+w Yahweh|strong=\"H3068\"\\+w** est revêtu, il est ceint de force : aussi le monde est ferme, il ne chancelle pas.",
-        "NAB": "The LORD is king, robed with majesty; the LORD is robed, girded with might. The world will surely stand in place, never to be moved.",
-        "VAT_ES": "&iexcl;Reina el Señor, revestido de majestad!",
-        "CEI": "Il Signore regna, si ammanta di splendore; il Signore si riveste, si cinge di forza; rende saldo il mondo, non sarà mai scosso."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "נָכ֣וֹן כִּסְאֲ/ךָ֣ מֵ/אָ֑ז מֵֽ/עוֹלָ֣ם אָֽתָּה׃",
-        "LXX": "ὑψώθητι ὁ κρίνων τὴν γῆν, ἀπόδος ἀνταπόδοσιν τοῖς ὑπερηφάνοις.",
-        "VUL": "Exaltare, qui judicas terram ;/ redde retributionem superbis./",
-        "SYN": "Восстань, Судия земли, воздай возмездие гордым.",
-        "NEO": "Ton trône est établi dès l’origine, tu es dès l’éternité.",
-        "NAB": "Your throne stands firm from of old; you are from everlasting, LORD.",
-        "VAT_ES": "Tu trono está firme desde siempre,",
-        "CEI": "Saldo è il tuo trono fin dal principio, da sempre tu sei."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "נָשְׂא֤וּ נְהָר֨וֹת יְֽהוָ֗ה נָשְׂא֣וּ נְהָר֣וֹת קוֹלָ֑/ם יִשְׂא֖וּ נְהָר֣וֹת דָּכְיָֽ/ם׃",
-        "LXX": "ἕως πότε ἁμαρτωλοί, Κύριε, ἕως πότε ἁμαρτωλοὶ καυχήσονται;",
-        "VUL": "Usquequo peccatores, Domine,/ usquequo peccatores gloriabuntur ;/",
-        "SYN": "Доколе, Господи, нечестивые, доколе нечестивые торжествовать будут?",
-        "NEO": "Les fleuves élèvent, ô \\+w Yahweh|strong=\"H3068\"\\+w**, les fleuves élèvent leurs voix, les fleuves élèvent leurs flots retentissants.",
-        "NAB": "The flood has raised up, LORD; the flood has raised up its roar; the flood has raised its pounding waves.",
-        "VAT_ES": "Los ríos hacen resonar sus voces,",
-        "CEI": "Alzano i fiumi, Signore, alzano i fiumi la loro voce, alzano i fiumi il loro fragore."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "מִ/קֹּל֨וֹת מַ֤יִם רַבִּ֗ים אַדִּירִ֣ים מִשְׁבְּרֵי יָ֑ם אַדִּ֖יר בַּ/מָּר֣וֹם יְהוָֽה׃",
-        "LXX": "φθέγξονται καὶ λαλήσουσιν ἀδικίαν, λαλήσουσιν πάντες οἱ ἐργαζόμενοι τὴν ἀνομίαν;",
-        "VUL": "effabuntur et loquentur iniquitatem ;/ loquentur omnes qui operantur injustitiam ?/",
-        "SYN": "Они изрыгают дерзкие речи; величаются все делающие беззаконие;",
-        "NEO": "Plus que la voix des grandes eaux, des vagues puissantes de la mer, \\+w Yahweh|strong=\"H3068\"\\+w** est magnifique dans les hauteurs !",
-        "NAB": "More powerful than the roar of many waters, more powerful than the breakers of the sea, powerful in the heavens is the LORD.",
-        "VAT_ES": "Pero más fuerte que las aguas impetuosas,",
-        "CEI": "Ma più potente delle voci di grandi acque, più potente dei flutti del mare, potente nell'alto è il Signore."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "עֵֽדֹתֶ֨י/ךָ נֶאֶמְנ֬וּ מְאֹ֗ד לְ/בֵיתְ/ךָ֥ נַאֲוָה קֹ֑דֶשׁ יְ֝הוָ֗ה לְ/אֹ֣רֶךְ יָמִֽים׃",
-        "LXX": "τὸν λαόν σου, Κύριε, ἐταπείνωσαν, καὶ τὴν κληρονομίαν σου ἐκάκωσαν·",
-        "VUL": "Populum tuum, Domine, humiliaverunt,/ et hæreditatem tuam vexaverunt./",
-        "SYN": "попирают народ Твой, Господи, угнетают наследие Твое;",
-        "NEO": "Tes témoignages sont immuables ; la sainteté convient à ta maison, \\+w Yahweh|strong=\"H3068\"\\+w**, pour toute la durée des jours.",
-        "NAB": "Your decrees are firmly established; holiness belongs to your house, LORD, for all the length of days.",
-        "VAT_ES": "Tus testimonios, Señor, son dignos de fe,",
-        "CEI": "Degni di fede sono i tuoi insegnamenti, la santità si addice alla tua casa per la durata dei giorni, Signore."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "הִ֭נָּשֵׂא שֹׁפֵ֣ט הָ/אָ֑רֶץ הָשֵׁ֥ב גְּ֝מ֗וּל עַל גֵּאִֽים׃",
+    "SYN": "предстанем лицу Его со славословием, в песнях воскликнем Ему,",
+    "NEO": "Lève-toi, juge de la terre, rends aux superbes selon leurs œuvres !",
+    "NAB": "Rise up, judge of the earth; give the proud what they deserve.",
+    "VAT_ES": "&iexcl;Levántate, Juez de la tierra,",
+    "CEI": "Alzati, giudice della terra, rendi la ricompensa ai superbi.",
+    "LXX": "ὑψώθητι ὁ κρίνων τὴν γῆν, ἀπόδος ἀνταπόδοσιν τοῖς ὑπερηφάνοις.",
+    "VUL": "Exaltare, qui judicas terram ;/ redde retributionem superbis./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "עַד מָתַ֖י רְשָׁעִ֥ים יְהוָ֑ה עַד מָ֝תַ֗י רְשָׁעִ֥ים יַעֲלֹֽזוּ׃",
+    "SYN": "ибо Господь есть Бог великий и Царь великий над всеми богами.",
+    "NEO": "Jusques à quand les méchants, \\+w Yahweh|strong=\"H3068\"\\+w**, jusques à quand les méchants triompheront-ils ?",
+    "NAB": "How long, LORD, shall the wicked, how long shall the wicked glory?",
+    "VAT_ES": "&iquest;Hasta cuándo triunfarán, Señor,",
+    "CEI": "Fino a quando gli empi, Signore, fino a quando gli empi trionferanno?",
+    "LXX": "ἕως πότε ἁμαρτωλοί, Κύριε, ἕως πότε ἁμαρτωλοὶ καυχήσονται;",
+    "VUL": "Usquequo peccatores, Domine,/ usquequo peccatores gloriabuntur ;/"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "יַבִּ֣יעוּ יְדַבְּר֣וּ עָתָ֑ק יִֽ֝תְאַמְּר֗וּ כָּל פֹּ֥עֲלֵי אָֽוֶן׃",
+    "SYN": "В Его руке глубины земли, и вершины гор - Его же;",
+    "NEO": "Ils se répandent en discours arrogants, ils se glorifient, tous ces artisans d’iniquité.",
+    "NAB": "How long will they mouth haughty speeches, go on boasting, all these evildoers?",
+    "VAT_ES": "&iquest;Hasta cuando hablarán con arrogancia",
+    "CEI": "Sparleranno, diranno insolenze, si vanteranno tutti i malfattori?",
+    "LXX": "φθέγξονται καὶ λαλήσουσιν ἀδικίαν, λαλήσουσιν πάντες οἱ ἐργαζόμενοι τὴν ἀνομίαν;",
+    "VUL": "effabuntur et loquentur iniquitatem ;/ loquentur omnes qui operantur injustitiam ?/"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "עַמְּ/ךָ֣ יְהוָ֣ה יְדַכְּא֑וּ וְֽ/נַחֲלָתְ/ךָ֥ יְעַנּֽוּ׃",
+    "SYN": "Его - море, и Он создал его, и сушу образовали руки Его.",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w**, ils écrasent ton peuple, ils oppriment ton héritage,",
+    "NAB": "They crush your people, LORD, torment your very own.",
+    "VAT_ES": "Ellos pisotean a tu pueblo, Señor,",
+    "CEI": "Signore, calpestano il tuo popolo, opprimono la tua eredità.",
+    "LXX": "τὸν λαόν σου, Κύριε, ἐταπείνωσαν, καὶ τὴν κληρονομίαν σου ἐκάκωσαν·",
+    "VUL": "Populum tuum, Domine, humiliaverunt,/ et hæreditatem tuam vexaverunt./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "אַ֭לְמָנָה וְ/גֵ֣ר יַהֲרֹ֑גוּ וִֽ/יתוֹמִ֣ים יְרַצֵּֽחוּ׃",
+    "SYN": "Приидите, поклонимся и припадем, преклоним колени пред лицем Господа, Творца нашего;",
+    "NEO": "ils égorgent la veuve et l’étranger, ils massacrent les orphelins.",
+    "NAB": "They kill the widow and alien; the fatherless they murder.",
+    "VAT_ES": "matan a la viuda y al extranjero,",
+    "CEI": "Uccidono la vedova e il forestiero, danno la morte agli orfani.",
+    "VUL": "Viduam et advenam interfecerunt,/ et pupillos occiderunt./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "וַ֭/יֹּ֣אמְרוּ לֹ֣א יִרְאֶה יָּ֑הּ וְ/לֹא יָ֝בִ֗ין אֱלֹהֵ֥י יַעֲקֹֽב׃",
+    "SYN": "ибо Он есть Бог наш, и мы - народ паствы Его и овцы руки Его. О, если бы вы ныне послушали гласа Его:",
+    "NEO": "Et ils disent : « \\+w Yahweh|strong=\"H3068\"\\+w** ne regarde pas, le Dieu de Jacob ne fait pas attention. »",
+    "NAB": "They say, \"The LORD does not see; the God of Jacob takes no notice.\"",
+    "VAT_ES": "y exclaman: «El Señor no lo ve,",
+    "CEI": "Dicono: \"Il Signore non vede, il Dio di Giacobbe non se ne cura\".",
+    "VUL": "Et dixerunt : Non videbit Dominus,/ nec intelliget Deus Jacob./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "בִּ֭ינוּ בֹּעֲרִ֣ים בָּ/עָ֑ם וּ֝/כְסִילִ֗ים מָתַ֥י תַּשְׂכִּֽילוּ׃",
+    "SYN": "\"не ожесточите сердца вашего, как в Мериве, как в день искушения в пустыне,",
+    "NEO": "Comprenez-donc, stupides enfants du peuple ! Insensés, quand aurez-vous l’intelligence ?",
+    "NAB": "Understand, you stupid people! You fools, when will you be wise?",
+    "VAT_ES": "&iexcl;Entiendan, los más necios del pueblo!",
+    "CEI": "Comprendete, insensati tra il popolo, stolti, quando diventerete saggi?",
+    "VUL": "Intelligite, insipientes in populo ;/ et stulti, aliquando sapite./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "הֲ/נֹ֣טַֽע אֹ֭זֶן הֲ/לֹ֣א יִשְׁמָ֑ע אִֽם יֹ֥צֵֽר עַ֝֗יִן הֲ/לֹ֣א יַבִּֽיט׃",
+    "SYN": "где искушали Меня отцы ваши, испытывали Меня, и видели дело Мое.",
+    "NEO": "Celui qui a planté l’oreille n’entendrait-il pas ? Celui qui a formé l’œil ne verrait-il pas ?",
+    "NAB": "Does the one who shaped the ear not hear? The one who formed the eye not see?",
+    "VAT_ES": "El que hizo el oído, &iquest;no va a escuchar?",
+    "CEI": "Chi ha formato l'orecchio, forse non sente? Chi ha plasmato l'occhio, forse non guarda?",
+    "VUL": "Qui plantavit aurem non audiet ?/ aut qui finxit oculum non considerat ?/"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "הֲ/יֹסֵ֣ר גּ֭וֹיִם הֲ/לֹ֣א יוֹכִ֑יחַ הַֽ/מְלַמֵּ֖ד אָדָ֣ם דָּֽעַת׃",
+    "SYN": "Сорок лет Я был раздражаем родом сим, и сказал: это народ, заблуждающийся сердцем; они не познали путей Моих,",
+    "NEO": "Celui qui châtie les nations ne punirait-il pas ? Celui qui donne à l’homme l’intelligence ne reconnaîtrait-il pas ?",
+    "NAB": "Does the one who guides nations not rebuke? The one who teaches humans not have knowledge?",
+    "VAT_ES": "&iquest;Dejará de castigar el que educa a las naciones",
+    "CEI": "Chi regge i popoli forse non castiga, lui che insegna all'uomo il sapere?",
+    "VUL": "Qui corripit gentes non arguet,/ qui docet hominem scientiam ?/"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "יְֽהוָ֗ה יֹ֭דֵעַ מַחְשְׁב֣וֹת אָדָ֑ם כִּי הֵ֥מָּה הָֽבֶל׃",
+    "SYN": "и потому Я поклялся во гневе Моем, что они не войдут в покой Мой\".",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** connaît les pensées des hommes, il sait qu’elles sont vaines.",
+    "NAB": "The LORD does know human plans; they are only puffs of air.",
+    "VAT_ES": "&iexcl;El Señor conoce los planes de los hombres",
+    "CEI": "Il Signore conosce i pensieri dell'uomo: non sono che un soffio.",
+    "VUL": "Dominus scit cogitationes hominum,/ quoniam vanæ sunt./"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "אַשְׁרֵ֤י הַ/גֶּ֣בֶר אֲשֶׁר תְּיַסְּרֶ֣/נּוּ יָּ֑הּ וּֽ/מִ/תּוֹרָתְ/ךָ֥ תְלַמְּדֶֽ/נּוּ׃",
+    "NEO": "Heureux l’homme que tu instruis, \\+w Yahweh|strong=\"H3068\"\\+w**, et à qui tu donnes l’enseignement de ta loi,",
+    "NAB": "Happy those whom you guide, LORD, whom you teach by your instruction.",
+    "VAT_ES": "Feliz el que es educado por ti, Señor,",
+    "CEI": "Beato l'uomo che tu istruisci, Signore, e che ammaestri nella tua legge,",
+    "VUL": "Beatus homo quem tu erudieris, Domine,/ et de lege tua docueris eum :/"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13,
+    "MT": 13
+   },
+   "text": {
+    "WLC": "לְ/הַשְׁקִ֣יט ל֭/וֹ מִ֣/ימֵי רָ֑ע עַ֤ד יִכָּרֶ֖ה לָ/רָשָׁ֣ע שָֽׁחַת׃",
+    "NEO": "pour l’apaiser aux jours du malheur, jusqu’à ce que la fosse soit creusée pour le méchant.",
+    "NAB": "You give them rest from evil days, while a pit is being dug for the wicked.",
+    "VAT_ES": "para darle un descanso después de la adversidad,",
+    "CEI": "per dargli riposo nei giorni di sventura, finché all'empio sia scavata la fossa.",
+    "VUL": "ut mitiges ei a diebus malis,/ donec fodiatur peccatori fovea./"
+   }
+  },
+  "14": {
+   "seq": 14,
+   "v_in": {
+    "VUL": 14,
+    "MT": 14
+   },
+   "text": {
+    "WLC": "כִּ֤י לֹא יִטֹּ֣שׁ יְהוָ֣ה עַמּ֑/וֹ וְ֝/נַחֲלָת֗/וֹ לֹ֣א יַעֲזֹֽב׃",
+    "NEO": "Car \\+w Yahweh|strong=\"H3068\"\\+w** ne rejettera pas son peuple, il n’abandonnera pas son héritage ;",
+    "NAB": "You, LORD, will not forsake your people, nor abandon your very own.",
+    "VAT_ES": "Porque el Señor no abandona a su pueblo",
+    "CEI": "Perché il Signore non respinge il suo popolo, la sua eredità non la può abbandonare,",
+    "VUL": "Quia non repellet Dominus plebem suam,/ et hæreditatem suam non derelinquet,/"
+   }
+  },
+  "15": {
+   "seq": 15,
+   "v_in": {
+    "VUL": 15,
+    "MT": 15
+   },
+   "text": {
+    "WLC": "כִּֽי עַד צֶ֭דֶק יָשׁ֣וּב מִשְׁפָּ֑ט וְ֝/אַחֲרָ֗י/ו כָּל יִשְׁרֵי לֵֽב׃",
+    "NEO": "mais le jugement redeviendra conforme à la justice, et tous les hommes au cœur droit y applaudiront.",
+    "NAB": "Judgment shall again be just, and all the upright of heart will follow it.",
+    "VAT_ES": "la justicia volverá a los tribunales",
+    "CEI": "ma il giudizio si volgerà a giustizia, la seguiranno tutti i retti di cuore.",
+    "VUL": "quoadusque justitia convertatur in judicium :/ et qui juxta illam, omnes qui recto sunt corde./"
+   }
+  },
+  "16": {
+   "seq": 16,
+   "v_in": {
+    "VUL": 16,
+    "MT": 16
+   },
+   "text": {
+    "WLC": "מִֽי יָק֣וּם לִ֭/י עִם מְרֵעִ֑ים מִֽי יִתְיַצֵּ֥ב לִ֝/י עִם פֹּ֥עֲלֵי אָֽוֶן׃",
+    "NEO": "Qui se lèvera pour moi contre les méchants ? Qui me soutiendra contre ceux qui font le mal ?",
+    "NAB": "Who will rise up for me against the wicked? Who will stand up for me against evildoers?",
+    "VAT_ES": "&iquest;Quién se pondrá a mi favor contra los impíos?",
+    "CEI": "Chi sorgerà per me contro i malvagi? Chi starà con me contro i malfattori?",
+    "VUL": "Quis consurget mihi adversus malignantes ?/ aut quis stabit mecum adversus operantes iniquitatem ?/"
+   }
+  },
+  "17": {
+   "seq": 17,
+   "v_in": {
+    "VUL": 17,
+    "MT": 17
+   },
+   "text": {
+    "WLC": "לוּלֵ֣י יְ֭הוָה עֶזְרָ֣תָ/ה לִּ֑/י כִּ/מְעַ֓ט שָֽׁכְנָ֖ה דוּמָ֣ה נַפְשִֽׁ/י׃",
+    "NEO": "Si \\+w Yahweh|strong=\"H3068\"\\+w** n’était pas mon secours, mon âme habiterait bientôt le séjour du silence.",
+    "NAB": "If the LORD were not my help, I would long have been silent in the grave.",
+    "VAT_ES": "Si el Señor no me hubiera ayudado,",
+    "CEI": "Se il Signore non fosse il mio aiuto, in breve io abiterei nel regno del silenzio.",
+    "VUL": "Nisi quia Dominus adjuvit me,/ paulominus habitasset in inferno anima mea./"
+   }
+  },
+  "18": {
+   "seq": 18,
+   "v_in": {
+    "VUL": 18,
+    "MT": 18
+   },
+   "text": {
+    "WLC": "אִם אָ֭מַרְתִּי מָ֣טָה רַגְלִ֑/י חַסְדְּ/ךָ֥ יְ֝הוָ֗ה יִסְעָדֵֽ/נִי׃",
+    "NEO": "Quand je dis : « Mon pied chancelle, » ta bonté, \\+w Yahweh|strong=\"H3068\"\\+w**, me soutient.",
+    "NAB": "When I say, \"My foot is slipping,\" your love, LORD, holds me up.",
+    "VAT_ES": "Cuando pienso que voy a resbalar,",
+    "CEI": "Quando dicevo: \"Il mio piede vacilla\", la tua grazia, Signore, mi ha sostenuto.",
+    "VUL": "Si dicebam : Motus est pes meus :/ misericordia tua, Domine, adjuvabat me./"
+   }
+  },
+  "19": {
+   "seq": 19,
+   "v_in": {
+    "VUL": 19,
+    "MT": 19
+   },
+   "text": {
+    "WLC": "בְּ/רֹ֣ב שַׂרְעַפַּ֣/י בְּ/קִרְבִּ֑/י תַּ֝נְחוּמֶ֗י/ךָ יְֽשַׁעַשְׁע֥וּ נַפְשִֽׁ/י׃",
+    "NEO": "Quand les angoisses s’agitent en foule dans ma pensée, tes consolations réjouissent mon âme.",
+    "NAB": "When cares increase within me, your comfort gives me joy.",
+    "VAT_ES": "cuando estoy cargado de preocupaciones,",
+    "CEI": "Quand'ero oppresso dall'angoscia, il tuo conforto mi ha consolato.",
+    "VUL": "Secundum multitudinem dolorum meorum in corde meo,/ consolationes tuæ lætificaverunt animam meam./"
+   }
+  },
+  "20": {
+   "seq": 20,
+   "v_in": {
+    "VUL": 20,
+    "MT": 20
+   },
+   "text": {
+    "WLC": "הַֽ֭/יְחָבְרְ/ךָ כִּסֵּ֣א הַוּ֑וֹת יֹצֵ֖ר עָמָ֣ל עֲלֵי חֹֽק׃",
+    "NEO": "A-t-il rien de commun avec toi le tribunal de perdition, qui fait le mal dans les formes légales ?",
+    "NAB": "Can unjust judges be your allies, those who create burdens in the name of law,",
+    "VAT_ES": "&iquest;Podrá aliarse contigo un tribunal inicuo,",
+    "CEI": "Può essere tuo alleato un tribunale iniquo, che fa angherie contro la legge?",
+    "VUL": "Numquid adhæret tibi sedes iniquitatis,/ qui fingis laborem in præcepto ?/"
+   }
+  },
+  "21": {
+   "seq": 21,
+   "v_in": {
+    "VUL": 21,
+    "MT": 21
+   },
+   "text": {
+    "WLC": "יָ֭גוֹדּוּ עַל נֶ֣פֶשׁ צַדִּ֑יק וְ/דָ֖ם נָקִ֣י יַרְשִֽׁיעוּ׃",
+    "NEO": "Ils s’empressent contre la vie du juste, et ils condamnent le sang innocent.",
+    "NAB": "Those who conspire against the just and condemn the innocent to death?",
+    "VAT_ES": "Ellos atentan contra la vida de los justos",
+    "CEI": "Si avventano contro la vita del giusto, e condannano il sangue innocente.",
+    "VUL": "Captabunt in animam justi,/ et sanguinem innocentem condemnabunt./"
+   }
+  },
+  "22": {
+   "seq": 22,
+   "v_in": {
+    "VUL": 22,
+    "MT": 22
+   },
+   "text": {
+    "WLC": "וַ/יְהִ֬י יְהוָ֣ה לִ֣/י לְ/מִשְׂגָּ֑ב וֵ֝/אלֹהַ֗/י לְ/צ֣וּר מַחְסִֽ/י׃",
+    "NEO": "Mais \\+w Yahweh|strong=\"H3068\"\\+w** est ma forteresse, mon Dieu est le rocher où je m’abrite.",
+    "NAB": "No, the LORD is my secure height, my God, the rock where I find refuge,",
+    "VAT_ES": "Pero el Señor es mi fortaleza,",
+    "CEI": "Ma il Signore è la mia difesa, roccia del mio rifugio è il mio Dio;",
+    "VUL": "Et factus est mihi Dominus in refugium,/ et Deus meus in adjutorium spei meæ./"
+   }
+  },
+  "23": {
+   "seq": 23,
+   "v_in": {
+    "VUL": 23,
+    "MT": 23
+   },
+   "text": {
+    "WLC": "וַ/יָּ֤שֶׁב עֲלֵי/הֶ֨ם אֶת אוֹנָ֗/ם וּ/בְ/רָעָתָ֥/ם יַצְמִיתֵ֑/ם יַ֝צְמִיתֵ֗/ם יְהוָ֥ה אֱלֹהֵֽי/נוּ׃",
+    "NEO": "Il fera retomber sur eux leur iniquité, il les exterminera par leur propre malice, il les exterminera, \\+w Yahweh|strong=\"H3068\"\\+w**, notre Dieu !",
+    "NAB": "Who will turn back their evil upon them and destroy them for their wickedness. Surely the LORD our God will destroy them!",
+    "VAT_ES": "él les devolverá a su misma iniquidad",
+    "CEI": "egli ritorcerà contro di essi la loro malizia, per la loro perfidia li farà perire, li farà perire il Signore, nostro Dio.",
+    "VUL": "Et reddet illis iniquitatem ipsorum,/ et in malitia eorum disperdet eos :/ disperdet illos Dominus Deus noster.]"
+   }
   }
+ }
 }

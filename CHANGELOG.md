@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.10.0 — Gutenberg easter egg: Bible reachable inside MMdM catalog via generic gateway nodes
+- New manufacturer GERMANIA → GUTENBERG (1440–1468) whose only child is the gateway node BIBLIA SACRA LATINA; tapping it boots the Bible volume in-app (no reload), theme crossing gray → brown
+- Generic gateway capability: `gateway_children` in volume data declare doors to other volumes; host gains rebootable `bootVolume()`, `launchGateway`/`returnThroughGateway`, pushState history (phone Back exits the egg)
+- Bible gains a gateway root mode: BIBLIA SACRA LATINA alone on the ring with testaments in the child pyramid; OUT from testaments returns to it; OUT again returns through the gateway to GUTENBERG
+- Full Latin identity: VOCAB latin chapter term corrected to "Capitulum"; Roman numerals for chapter/verse labels (`toRomanNumeral` in volume-helpers); parent-button book names now use Latin namesMap (was English)
+- Fixed during gate: parent button vanished at testament ring under gateway root; detail sector blank in all volumes (teardown destroyed #detail-content skeleton)
+- Cosmetic notes recorded in docs/PUNCHLIST.md, including child-pyramid undercount (2 of 7 Volvo Penta children shown) for Phase C
+
 ## 3.9.0 — Phase A: single stratum — dimension UI removed, Bible pinned to Latin Vulgate
 - Dimension button, blur mode, secondary/tertiary strata rings, and portal cycling removed from the engine (`createApp` −400 lines), views, host wiring, adapters, and CSS (−1,700 lines total; removed code preserved in git history)
 - Bible volume pinned to the Latin Vulgate (`VUL`): `translation`/`dimension` URL params no longer read; redirect-based language switching eliminated
@@ -113,6 +121,18 @@
 ### Added
 - Spiral Child Pyramid node layout: nodes are now placed equidistantly along an Archimedean spiral using true arc-length spacing. This provides visually uniform node distribution for all child counts.
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
+
+
+## [data-2026.07.14] - 2026-07-14
+
+### Data
+- volume_data_version bump for: mmdm
+
+
+## [data-2026.07.14] - 2026-07-14
+
+### Data
+- volume_data_version bump for: gutenberg
 
 
 ## [3.8.43] - 2026-03-06

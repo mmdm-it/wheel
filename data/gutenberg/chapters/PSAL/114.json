@@ -1,159 +1,163 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_114",
-  "book_key": "PSAL",
-  "sequence": 114,
-  "chapter_in": {
-    "MT": 114,
-    "VUL": 113,
-    "LXX": 113
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_114",
+ "book_key": "PSAL",
+ "sequence": 114,
+ "chapter_in": {
+  "VUL": 114,
+  "LXX": 114,
+  "MT": 116
+ },
+ "mt_sources": [
+  "116:1-9"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "אָ֭הַבְתִּי כִּֽי יִשְׁמַ֥ע יְהוָ֑ה אֶת ק֝וֹלִ֗/י תַּחֲנוּנָֽ/י׃",
+    "SYN": "Хвалите Господа, все народы, прославляйте Его, все племена;",
+    "NEO": "Je l’aime, car \\+w Yahweh|strong=\"H3068\"\\+w** entend ma voix, mes supplications.",
+    "NAB": "I love the LORD, who listened to my voice in supplication,",
+    "VAT_ES": "Amo al Señor, porque él escucha",
+    "CEI": "Alleluia. Amo il Signore perché ascolta il grido della mia preghiera.",
+    "LXX": "Ἁλληλουιά. Ἠγάπησα ὅτι εἰσακούσεται ὁ θεὸς τῆς φωνῆς τῆς δεήσεώς μου,",
+    "VUL": "Alleluja. [Dilexi, quoniam exaudiet Dominus/ vocem orationis meæ./"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "בְּ/צֵ֣את יִ֭שְׂרָאֵל מִ/מִּצְרָ֑יִם בֵּ֥ית יַ֝עֲקֹ֗ב מֵ/עַ֥ם לֹעֵֽז׃",
-        "LXX": "Ἁλληλουιά. Ἠγάπησα ὅτι εἰσακούσεται ὁ θεὸς τῆς φωνῆς τῆς δεήσεώς μου,",
-        "VUL": "Alleluja. [Dilexi, quoniam exaudiet Dominus/ vocem orationis meæ./",
-        "SYN": "Я радуюсь, что Господь услышал голос мой, моление мое;",
-        "NEO": "Quand Israël sortit d’Égypte, quand la maison de Jacob s’éloigna d’un peuple barbare,",
-        "NAB": "When Israel came forth from Egypt, the house of Jacob from an alien people,",
-        "VAT_ES": "Cuando Israel salió de Egipto,",
-        "CEI": "Alleluia. Quando Israele uscì dall'Egitto, la casa di Giacobbe da un popolo barbaro,"
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "הָיְתָ֣ה יְהוּדָ֣ה לְ/קָדְשׁ֑/וֹ יִ֝שְׂרָאֵ֗ל מַמְשְׁלוֹתָֽי/ו׃",
-        "LXX": "ὅτι ἔκλινεν τὸ οὖς αὐτοῦ ἐμοί, καὶ ἐν ταῖς ἡμέραις αὐτοῦ ἐπεκαλεσάμην.",
-        "VUL": "Quia inclinavit aurem suam mihi,/ et in diebus meis invocabo./",
-        "SYN": "приклонил ко мне ухо Свое, и потому буду призывать Его во _все_ дни мои.",
-        "NEO": "Juda devint son sanctuaire, Israël son domaine.",
-        "NAB": "Judah became God's holy place, Israel, God's domain.",
-        "VAT_ES": "Judá se convirtió en su Santuario,",
-        "CEI": "Giuda divenne il suo santuario, Israele il suo dominio."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "הַ/יָּ֣ם רָ֭אָה וַ/יָּנֹ֑ס הַ֝/יַּרְדֵּ֗ן יִסֹּ֥ב לְ/אָחֽוֹר׃",
-        "LXX": "περιέσχον με ὠδῖνες θανάτου, κίνδυνοι ᾅδου εὕροσάν με· θλίψιν καὶ ὀδύνην εὗρον.",
-        "VUL": "Circumdederunt me dolores mortis ;/ et pericula inferni invenerunt me./ Tribulationem et dolorem inveni,/",
-        "SYN": "Объяли меня болезни смертные, муки адские постигли меня; я встретил тесноту и скорбь.",
-        "NEO": "La mer le vit et s’enfuit, le Jourdain retourna en arrière ;",
-        "NAB": "The sea beheld and fled; the Jordan turned back.",
-        "VAT_ES": "El Mar, al verlos, huyó,",
-        "CEI": "Il mare vide e si ritrasse, il Giordano si volse indietro,"
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "הֶֽ֭/הָרִים רָקְד֣וּ כְ/אֵילִ֑ים גְּ֝בָע֗וֹת כִּ/בְנֵי צֹֽאן׃",
-        "LXX": "καὶ τὸ ὄνομα Κυρίου ἐπεκαλεσάμην Ὦ Κύριε, ῥῦσαι τὴν ψυχήν μου.",
-        "VUL": "et nomen Domini invocavi :/ o Domine, libera animam meam./",
-        "SYN": "Тогда призвал я имя Господне: Господи! избавь душу мою.",
-        "NEO": "les montagnes bondirent comme des béliers, les collines comme des agneaux.",
-        "NAB": "The mountains skipped like rams; the hills, like lambs of the flock.",
-        "VAT_ES": "los montes saltaron como carneros",
-        "CEI": "i monti saltellarono come arieti, le colline come agnelli di un gregge."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "מַה לְּ/ךָ֣ הַ֭/יָּם כִּ֣י תָנ֑וּס הַ֝/יַּרְדֵּ֗ן תִּסֹּ֥ב לְ/אָחֽוֹר׃",
-        "LXX": "ἐλεήμων καὶ δίκαιος ὁ κύριος, καὶ Κύριος ὁ θεὸς ἡμῶν ἐλεᾷ.",
-        "VUL": "Misericors Dominus et justus,/ et Deus noster miseretur./",
-        "SYN": "Милостив Господь и праведен, и милосерд Бог наш.",
-        "NEO": "Qu’as-tu, mer, pour t’enfuir ? Jourdain, pour retourner en arrière ?",
-        "NAB": "Why was it, sea, that you fled? Jordan, that you turned back?",
-        "VAT_ES": "&iquest;Qué tienes, Mar? &iquest;Por qué huyes?",
-        "CEI": "Che hai tu, mare, per fuggire, e tu, Giordano, perché torni indietro?"
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "הֶֽ֭/הָרִים תִּרְקְד֣וּ כְ/אֵילִ֑ים גְּ֝בָע֗וֹת כִּ/בְנֵי צֹֽאן׃",
-        "LXX": "φυλάσσων τὰ νήπια ὁ κύριος· ἐταπεινώθην, καὶ ἔσωσέν με.",
-        "VUL": "Custodiens parvulos Dominus ;/ humiliatus sum, et liberavit me./",
-        "SYN": "Хранит Господь простодушных: я изнемог, и Он помог мне.",
-        "NEO": "Qu’avez-vous, montagnes, pour bondir comme des béliers, et vous, collines, comme des agneaux ?",
-        "NAB": "You mountains, that you skipped like rams? You hills, like lambs of the flock?",
-        "VAT_ES": "Montes, &iquest;por qué saltan como carneros,",
-        "CEI": "Perché voi monti saltellate come arieti e voi colline come agnelli di un gregge?"
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "מִ/לִּ/פְנֵ֣י אָ֭דוֹן ח֣וּלִי אָ֑רֶץ מִ֝/לִּ/פְנֵ֗י אֱל֣וֹהַּ יַעֲקֹֽב׃",
-        "LXX": "ἐπίστρεψον, ἡ ψυχή μου, εἰς τὴν ἀνάπαυσίν σου, ὅτι Κύριος εὐηργέτησέν σε·",
-        "VUL": "Convertere, anima mea, in requiem tuam,/ quia Dominus benefecit tibi :/",
-        "SYN": "Возвратись, душа моя, в покой твой, ибо Господь облагодетельствовал тебя.",
-        "NEO": "Tremble, ô terre, devant la face du Seigneur, devant la face du Dieu de Jacob,",
-        "NAB": "Tremble, earth, before the Lord, before the God of Jacob,",
-        "VAT_ES": "Tiembla, tierra, delante del Señor,",
-        "CEI": "Trema, o terra, davanti al Signore, davanti al Dio di Giacobbe,"
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "הַ/הֹפְכִ֣י הַ/צּ֣וּר אֲגַם מָ֑יִם חַ֝לָּמִ֗ישׁ לְ/מַעְיְנ/וֹ מָֽיִם׃",
-        "LXX": "ὅτι ἐξείλατο τὴν ψυχήν μου ἐκ θανάτου, τοὺς ὀφθαλμούς μου ἀπὸ δακρύων, καὶ τοὺς πόδας μου ἀπὸ ὀλισθήματος.",
-        "VUL": "quia eripuit animam meam de morte,/ oculos meos a lacrimis,/ pedes meos a lapsu./",
-        "SYN": "Ты избавил душу мою от смерти, очи мои от слез и ноги мои от преткновения. Буду ходить пред лицем Господним на земле живых.",
-        "NEO": "qui change le rocher en étang, le roc en source d’eaux.",
-        "NAB": "Who turned rock into pools of water, stone into flowing springs.",
-        "VAT_ES": "el que convierte las rocas en estanques,",
-        "CEI": "che muta la rupe in un lago, la roccia in sorgenti d'acqua."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "כִּֽי הִטָּ֣ה אָזְנ֣/וֹ לִ֑/י וּ/בְ/יָמַ֥/י אֶקְרָֽא׃",
+    "SYN": "ибо велика милость Его к нам, и истина Господня [пребывает] вовек. Аллилуия.",
+    "NEO": "Car il a incliné vers moi son oreille, et toute ma vie, je l’invoquerai.",
+    "NAB": "Who turned an ear to me on the day I called.",
+    "VAT_ES": "porque inclina su oído hacia mí,",
+    "CEI": "Verso di me ha teso l'orecchio nel giorno in cui lo invocavo.",
+    "LXX": "ὅτι ἔκλινεν τὸ οὖς αὐτοῦ ἐμοί, καὶ ἐν ταῖς ἡμέραις αὐτοῦ ἐπεκαλεσάμην.",
+    "VUL": "Quia inclinavit aurem suam mihi,/ et in diebus meis invocabo./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "אֲפָפ֤וּ/נִי חֶבְלֵי מָ֗וֶת וּ/מְצָרֵ֣י שְׁא֣וֹל מְצָא֑וּ/נִי צָרָ֖ה וְ/יָג֣וֹן אֶמְצָֽא׃",
+    "NEO": "Les liens de la mort m’entouraient, et les angoisses du schéol m’avaient saisi ; j’étais en proie à la détresse et à l’affliction.",
+    "NAB": "I was caught by the cords of death; the snares of Sheol had seized me; I felt agony and dread.",
+    "VAT_ES": "Los lazos de la muerte me envolvieron,",
+    "CEI": "Mi stringevano funi di morte, ero preso nei lacci degli inferi. Mi opprimevano tristezza e angoscia",
+    "LXX": "περιέσχον με ὠδῖνες θανάτου, κίνδυνοι ᾅδου εὕροσάν με· θλίψιν καὶ ὀδύνην εὗρον.",
+    "VUL": "Circumdederunt me dolores mortis ;/ et pericula inferni invenerunt me./ Tribulationem et dolorem inveni,/"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "וּ/בְ/שֵֽׁם יְהוָ֥ה אֶקְרָ֑א אָנָּ֥ה יְ֝הוָ֗ה מַלְּטָ֥/ה נַפְשִֽׁ/י׃",
+    "NEO": "Et j’ai invoqué le nom de \\+w Yahweh|strong=\"H3068\"\\+w** : « \\+w Yahweh|strong=\"H3068\"\\+w**, sauve mon âme ! »",
+    "NAB": "Then I called on the name of the LORD, \"O LORD, save my life!\"",
+    "VAT_ES": "entonces invoqué al Señor:",
+    "CEI": "e ho invocato il nome del Signore: \"Ti prego, Signore, salvami\".",
+    "LXX": "καὶ τὸ ὄνομα Κυρίου ἐπεκαλεσάμην Ὦ Κύριε, ῥῦσαι τὴν ψυχήν μου.",
+    "VUL": "et nomen Domini invocavi :/ o Domine, libera animam meam./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "חַנּ֣וּן יְהֹוָ֣ה וְ/צַדִּ֑יק וֵ֖/אלֹהֵ֣י/נוּ מְרַחֵֽם׃",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est miséricordieux et juste, notre Dieu est compatissant.",
+    "NAB": "Gracious is the LORD and just; yes, our God is merciful.",
+    "VAT_ES": "El Señor es justo y bondadoso,",
+    "CEI": "Buono e giusto è il Signore, il nostro Dio è misericordioso.",
+    "LXX": "ἐλεήμων καὶ δίκαιος ὁ κύριος, καὶ Κύριος ὁ θεὸς ἡμῶν ἐλεᾷ.",
+    "VUL": "Misericors Dominus et justus,/ et Deus noster miseretur./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "שֹׁמֵ֣ר פְּתָאיִ֣ם יְהֹוָ֑ה דַּ֝לּוֹתִ֗י וְ/לִ֣/י יְהוֹשִֽׁיעַ׃",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** garde les faibles ; j’étais malheureux, et il m’a sauvé.",
+    "NAB": "The LORD protects the simple; I was helpless, but God saved me.",
+    "VAT_ES": "el Señor protege a los sencillos:",
+    "CEI": "Il Signore protegge gli umili: ero misero ed egli mi ha salvato.",
+    "LXX": "φυλάσσων τὰ νήπια ὁ κύριος· ἐταπεινώθην, καὶ ἔσωσέν με.",
+    "VUL": "Custodiens parvulos Dominus ;/ humiliatus sum, et liberavit me./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "שׁוּבִ֣י נַ֭פְשִׁ/י לִ/מְנוּחָ֑יְ/כִי כִּֽי יְ֝הוָ֗ה גָּמַ֥ל עָלָֽיְ/כִי׃",
+    "NEO": "Mon âme, retourne à ton repos ; car \\+w Yahweh|strong=\"H3068\"\\+w** te comble de biens.",
+    "NAB": "Return, my soul, to your rest; the LORD has been good to you.",
+    "VAT_ES": "Alma mía, recobra la calma,",
+    "CEI": "Ritorna, anima mia, alla tua pace, poiché il Signore ti ha beneficato;",
+    "LXX": "ἐπίστρεψον, ἡ ψυχή μου, εἰς τὴν ἀνάπαυσίν σου, ὅτι Κύριος εὐηργέτησέν σε·",
+    "VUL": "Convertere, anima mea, in requiem tuam,/ quia Dominus benefecit tibi :/"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "כִּ֤י חִלַּ֥צְתָּ נַפְשִׁ֗/י מִ֫/מָּ֥וֶת אֶת עֵינִ֥/י מִן דִּמְעָ֑ה אֶת רַגְלִ֥/י מִ/דֶּֽחִי׃",
+    "NEO": "Oui, tu as sauvé mon âme de la mort, mon œil des larmes, mes pieds de la chute.",
+    "NAB": "For my soul has been freed from death, my eyes from tears, my feet from stumbling.",
+    "VAT_ES": "El libró mi vida de la muerte,",
+    "CEI": "egli mi ha sottratto dalla morte, ha liberato i miei occhi dalle lacrime, ha preservato i miei piedi dalla caduta.",
+    "LXX": "ὅτι ἐξείλατο τὴν ψυχήν μου ἐκ θανάτου, τοὺς ὀφθαλμούς μου ἀπὸ δακρύων, καὶ τοὺς πόδας μου ἀπὸ ὀλισθήματος.",
+    "VUL": "quia eripuit animam meam de morte,/ oculos meos a lacrimis,/ pedes meos a lapsu./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "אֶ֭תְהַלֵּךְ לִ/פְנֵ֣י יְהוָ֑ה בְּ֝/אַרְצ֗וֹת הַֽ/חַיִּֽים׃",
+    "NEO": "Je marcherai encore devant \\+w Yahweh|strong=\"H3068\"\\+w**, dans la terre des vivants.",
+    "NAB": "I shall walk before the LORD in the land of the living.",
+    "VAT_ES": "Yo caminaré en la presencia del Señor,",
+    "CEI": "Camminerò alla presenza del Signore sulla terra dei viventi.",
+    "VUL": "Placebo Domino in regione vivorum.]"
+   }
   }
+ }
 }

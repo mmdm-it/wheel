@@ -1,158 +1,476 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_101",
-  "book_key": "PSAL",
-  "sequence": 101,
-  "chapter_in": {
-    "MT": 101,
-    "VUL": 100,
-    "LXX": 100
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_101",
+ "book_key": "PSAL",
+ "sequence": 101,
+ "chapter_in": {
+  "VUL": 101,
+  "LXX": 101,
+  "MT": 102
+ },
+ "mt_sources": [
+  "102"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "תְּ֭פִלָּה לְ/עָנִ֣י כִֽי יַעֲטֹ֑ף וְ/לִ/פְנֵ֥י יְ֝הוָ֗ה יִשְׁפֹּ֥ךְ שִׂיחֽ/וֹ׃",
+    "SYN": "Благослови, душа моя, Господа, и вся внутренность моя - святое имя Его.",
+    "NEO": "Prière du malheureux, lorsqu’il est accablé et qu’il répand sa plainte devant \\+w Yahweh|strong=\"H3068\"\\+w**.",
+    "NAB": "The prayer of one afflicted and wasting away whose anguish is poured out before the LORD.",
+    "CEI": "Preghiera di un afflitto che è stanco e sfoga dinanzi a Dio la sua angoscia.",
+    "LXX": "Προσευχὴ τῷ πτωχῷ, ὅταν ἀκηδιάσῃ καὶ ἐναντίον Κυρίου ἐκχέῃ τὴν δέησιν αὐτοῦ.",
+    "VUL": "Oratio pauperis, cum anxius fuerit, et in conspectu Domini effuderit precem suam."
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "לְ/דָוִ֗ד מִ֫זְמ֥וֹר חֶֽסֶד וּ/מִשְׁפָּ֥ט אָשִׁ֑ירָה לְ/ךָ֖ יְהוָ֣ה אֲזַמֵּֽרָה׃",
-        "LXX": "Προσευχὴ τῷ πτωχῷ, ὅταν ἀκηδιάσῃ καὶ ἐναντίον Κυρίου ἐκχέῃ τὴν δέησιν αὐτοῦ.",
-        "VUL": "Oratio pauperis, cum anxius fuerit, et in conspectu Domini effuderit precem suam.",
-        "SYN": "Молитва страждущего, когда он унывает и изливает пред Господом печаль свою.",
-        "NEO": "Psaume de David",
-        "NAB": "A psalm of David. I sing of love and justice; to you, LORD, I sing praise.",
-        "CEI": "Di Davide. Salmo. Amore e giustizia voglio cantare, voglio cantare inni a te, o Signore."
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "אַשְׂכִּ֤ילָה בְּ/דֶ֬רֶךְ תָּמִ֗ים מָ֭תַי תָּב֣וֹא אֵלָ֑/י אֶתְהַלֵּ֥ךְ בְּ/תָם לְ֝בָבִ֗/י בְּ/קֶ֣רֶב בֵּיתִֽ/י׃",
-        "LXX": "Εἰσάκουσον, Κύριε, τῆς προσευχῆς μου, καὶ ἡ κραυγή μου πρὸς σὲ ἐλθάτω.",
-        "VUL": "[Domine, exaudi orationem meam,/ et clamor meus ad te veniat./",
-        "SYN": "Господи! услышь молитву мою, и вопль мой да придет к Тебе.",
-        "NEO": "Je veux chanter la bonté et la justice ; C’est toi, \\+w Yahweh|strong=\"H3068\"\\+w**, que je veux célébrer.",
-        "NAB": "I follow the way of integrity; when will you come to me? I act with integrity of heart within my royal court.",
-        "VAT_ES": "expondré con sensatez el camino perfecto:",
-        "CEI": "Agirò con saggezza nella via dell'innocenza: quando verrai a me? Camminerò con cuore integro, dentro la mia casa."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "לֹֽא אָשִׁ֨ית לְ/נֶ֥גֶד עֵינַ֗/י דְּֽבַר בְּלִ֫יָּ֥עַל עֲשֹֽׂה סֵטִ֥ים שָׂנֵ֑אתִי לֹ֖א יִדְבַּ֣ק בִּֽ/י׃",
-        "LXX": "μὴ ἀποστρέψῃς τὸ πρόσωπόν σου ἀπ’ ἐμοῦ· ἐν ᾗ ἂν ἡμέρᾳ θλίβωμαι, κλῖνον τὸ οὖς σου πρὸς μέ· ἐν ᾗ ἂν ἡμέρᾳ ἐπικαλέσωμαί σε, ταχὺ εἰσάκουσόν μου.",
-        "VUL": "Non avertas faciem tuam a me :/ in quacumque die tribulor, inclina ad me aurem tuam ;/ in quacumque die invocavero te, velociter exaudi me./",
-        "SYN": "Не скрывай лица Твоего от меня; в день скорби моей приклони ко мне ухо Твое; в день, [когда] воззову [к Тебе], скоро услышь меня;",
-        "NEO": "Je prendrai garde à la voie de l’innocence. — Quand viendras-tu à moi ? —",
-        "NAB": "I do not allow into my presence anyone who speaks perversely. Whoever acts shamefully I hate; no such person can be my friend.",
-        "VAT_ES": "nunca pongo mis ojos",
-        "CEI": "Non sopporterò davanti ai miei occhi azioni malvagie; detesto chi fa il male, non mi sarà vicino."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "לֵבָ֣ב עִ֭קֵּשׁ יָס֣וּר מִמֶּ֑/נִּי רָ֝֗ע לֹ֣א אֵדָֽע׃",
-        "LXX": "ὅτι ἐξέλιπον ὡσεὶ καπνὸς αἱ ἡμέραι μου, καὶ τὰ ὀστᾶ μου ὡσεὶ φρύγιον συνεφρύγησαν.",
-        "VUL": "Quia defecerunt sicut fumus dies mei,/ et ossa mea sicut cremium aruerunt./",
-        "SYN": "ибо исчезли, как дым, дни мои, и кости мои обожжены, как головня;",
-        "NEO": "Je ne mettrai devant mes yeux aucune action mauvaise.",
-        "NAB": "I shun the devious of heart; the wicked I do not tolerate.",
-        "VAT_ES": "la gente falsa se aparta de mí",
-        "CEI": "Lontano da me il cuore perverso, il malvagio non lo voglio conoscere."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "מלושני מְלָשְׁנִ֬י בַ/סֵּ֨תֶר רֵעֵ/הוּ֮ אוֹת֪/וֹ אַ֫צְמִ֥ית גְּֽבַהּ עֵ֭ינַיִם וּ/רְחַ֣ב לֵבָ֑ב אֹ֝ת֗/וֹ לֹ֣א אוּכָֽל׃",
-        "LXX": "ἐπλήγην ὡσεὶ χόρτος καὶ ἐξηράνθη ἡ καρδία μου, ὅτι ἐπελαθόμην τοῦ φαγεῖν τὸν ἄρτον μου.",
-        "VUL": "Percussus sum ut fnum, et aruit cor meum,/ quia oblitus sum comedere panem meum./",
-        "SYN": "сердце мое поражено, и иссохло, как трава, так что я забываю есть хлеб мой;",
-        "NEO": "Un cœur faux ne sera jamais le mien ; je ne veux pas connaître le mal.",
-        "NAB": "Whoever slanders another in secret I reduce to silence. Haughty eyes and arrogant hearts I cannot endure.",
-        "VAT_ES": "Al que difama en secreto a su prójimo",
-        "CEI": "Chi calunnia in segreto il suo prossimo io lo farò perire; chi ha occhi altezzosi e cuore superbo non lo potrò sopportare."
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "עֵינַ֤/י בְּ/נֶֽאֶמְנֵי אֶרֶץ֮ לָ/שֶׁ֪בֶת עִמָּ֫דִ֥/י הֹ֭לֵךְ בְּ/דֶ֣רֶךְ תָּמִ֑ים ה֝֗וּא יְשָׁרְתֵֽ/נִי׃",
-        "LXX": "ἀπὸ φωνῆς τοῦ στεναγμοῦ μου ἐκολλήθη τὸ ὀστοῦν μου τῇ σαρκί μου.",
-        "VUL": "A voce gemitus mei/ adhæsit os meum carni meæ./",
-        "SYN": "от голоса стенания моего кости мои прильпнули к плоти моей.",
-        "NEO": "Le détracteur qui déchire en secret son prochain, je l’exterminerai ; L’homme au regard hautain et au cœur gonflé d’orgueil, je ne le supporterai pas.",
-        "NAB": "I look to the faithful of the land; they alone can be my companions. Those who follow the way of integrity, they alone can enter my service.",
-        "VAT_ES": "Pongo mis ojos en las personas leales",
-        "CEI": "I miei occhi sono rivolti ai fedeli del paese perché restino a me vicino: chi cammina per la via integra sarà mio servitore."
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "לֹֽא יֵשֵׁ֨ב בְּ/קֶ֥רֶב בֵּיתִ/י֮ עֹשֵׂ֪ה רְמִ֫יָּ֥ה דֹּבֵ֥ר שְׁקָרִ֑ים לֹֽא יִ֝כּ֗וֹן לְ/נֶ֣גֶד עֵינָֽ/י׃",
-        "LXX": "ὡμοιώθην πελεκᾶνι ἐρημικῷ, ἐγενήθην ὡσεὶ νυκτικόραξ ἐν οἰκοπέδῳ,",
-        "VUL": "Similis factus sum pellicano solitudinis ;/ factus sum sicut nycticorax in domicilio./",
-        "SYN": "Я уподобился пеликану в пустыне; я стал как филин на развалинах;",
-        "NEO": "J’aurai les yeux sur les hommes fidèles du pays, pour qu’ils demeurent auprès de moi ; celui qui marche dans une voie intègre sera mon serviteur.",
-        "NAB": "No one who practices deceit can hold a post in my court. No one who speaks falsely can be among my advisors.",
-        "VAT_ES": "No habita dentro de mi casa",
-        "CEI": "Non abiterà nella mia casa, chi agisce con inganno, chi dice menzogne non starà alla mia presenza."
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "לַ/בְּקָרִ֗ים אַצְמִ֥ית כָּל רִשְׁעֵי אָ֑רֶץ לְ/הַכְרִ֥ית מֵֽ/עִיר יְ֝הוָ֗ה כָּל פֹּ֥עֲלֵי אָֽוֶן׃",
-        "LXX": "ἠγρύπνησα καὶ ἐγενήθην ὡσεὶ στρουθίον μονάζον ἐπὶ δώματι.",
-        "VUL": "Vigilavi, et factus sum sicut passer solitarius in tecto./",
-        "SYN": "не сплю и сижу, как одинокая птица на кровле.",
-        "NEO": "Il n’aura pas de place dans ma maison, celui qui agit avec fourberie ; celui qui profère le mensonge ne subsistera pas devant mes yeux.",
-        "NAB": "Each morning I clear the wicked from the land, and rid the LORD'S city of all evildoers.",
-        "VAT_ES": "Hago desaparecer día tras día",
-        "CEI": "Sterminerò ogni mattino tutti gli empi del paese, per estirpare dalla città del Signore quanti operano il male."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "יְ֭הוָה שִׁמְעָ֣/ה תְפִלָּתִ֑/י וְ֝/שַׁוְעָתִ֗/י אֵלֶ֥י/ךָ תָבֽוֹא׃",
+    "SYN": "Благослови, душа моя, Господа и не забывай всех благодеяний Его.",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** écoute ma prière, et que mon cri arrive jusqu’à toi.",
+    "NAB": "LORD, hear my prayer; let my cry come to you.",
+    "VAT_ES": "Señor, escucha mi oración",
+    "CEI": "Signore, ascolta la mia preghiera, a te giunga il mio grido.",
+    "LXX": "Εἰσάκουσον, Κύριε, τῆς προσευχῆς μου, καὶ ἡ κραυγή μου πρὸς σὲ ἐλθάτω.",
+    "VUL": "[Domine, exaudi orationem meam,/ et clamor meus ad te veniat./"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "אַל תַּסְתֵּ֬ר פָּנֶ֨י/ךָ מִמֶּ/נִּי֮ בְּ/י֪וֹם צַ֫ר לִ֥/י הַטֵּֽה אֵלַ֥/י אָזְנֶ֑/ךָ בְּ/י֥וֹם אֶ֝קְרָ֗א מַהֵ֥ר עֲנֵֽ/נִי׃",
+    "SYN": "Он прощает все беззакония твои, исцеляет все недуги твои;",
+    "NEO": "Ne me cache pas ton visage, au jour de ma détresse ; incline vers moi ton oreille, quand je crie, hâte-toi de m’exaucer.",
+    "NAB": "Do not hide your face from me now that I am in distress. Turn your ear to me; when I call, answer me quickly.",
+    "VAT_ES": "no me ocultes tu rostro",
+    "CEI": "Non nascondermi il tuo volto; nel giorno della mia angoscia piega verso di me l'orecchio. Quando ti invoco: presto, rispondimi.",
+    "LXX": "μὴ ἀποστρέψῃς τὸ πρόσωπόν σου ἀπ’ ἐμοῦ· ἐν ᾗ ἂν ἡμέρᾳ θλίβωμαι, κλῖνον τὸ οὖς σου πρὸς μέ· ἐν ᾗ ἂν ἡμέρᾳ ἐπικαλέσωμαί σε, ταχὺ εἰσάκουσόν μου.",
+    "VUL": "Non avertas faciem tuam a me :/ in quacumque die tribulor, inclina ad me aurem tuam ;/ in quacumque die invocavero te, velociter exaudi me./"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "כִּֽי כָל֣וּ בְ/עָשָׁ֣ן יָמָ֑/י וְ֝/עַצְמוֹתַ֗/י כְּ/מוֹ קֵ֥ד נִחָֽרוּ׃",
+    "SYN": "избавляет от могилы жизнь твою, венчает тебя милостью и щедротами;",
+    "NEO": "Car mes jours s’évanouissent comme en fumée, et mes os sont embrasés comme par un feu.",
+    "NAB": "For my days vanish like smoke; my bones burn away as in a furnace.",
+    "VAT_ES": "Porque mis días se disipan como el humo,",
+    "CEI": "Si dissolvono in fumo i miei giorni e come brace ardono le mie ossa.",
+    "LXX": "ὅτι ἐξέλιπον ὡσεὶ καπνὸς αἱ ἡμέραι μου, καὶ τὰ ὀστᾶ μου ὡσεὶ φρύγιον συνεφρύγησαν.",
+    "VUL": "Quia defecerunt sicut fumus dies mei,/ et ossa mea sicut cremium aruerunt./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "הוּכָּֽה כָ֭/עֵשֶׂב וַ/יִּבַ֣שׁ לִבִּ֑/י כִּֽי שָׁ֝כַ֗חְתִּי מֵ/אֲכֹ֥ל לַחְמִֽ/י׃",
+    "SYN": "насыщает благами желание твое: обновляется, подобно орлу, юность твоя.",
+    "NEO": "Frappé comme l’herbe, mon cœur se dessèche ; j’oublie même de manger mon pain.",
+    "NAB": "I am withered, dried up like grass, too wasted to eat my food.",
+    "VAT_ES": "mi corazón se seca, marchitado como la hierba,",
+    "CEI": "Il mio cuore abbattuto come erba inaridisce, dimentico di mangiare il mio pane.",
+    "LXX": "ἐπλήγην ὡσεὶ χόρτος καὶ ἐξηράνθη ἡ καρδία μου, ὅτι ἐπελαθόμην τοῦ φαγεῖν τὸν ἄρτον μου.",
+    "VUL": "Percussus sum ut fnum, et aruit cor meum,/ quia oblitus sum comedere panem meum./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "מִ/קּ֥וֹל אַנְחָתִ֑/י דָּבְקָ֥ה עַ֝צְמִ֗/י לִ/בְשָׂרִֽ/י׃",
+    "SYN": "Господь творит правду и суд всем обиженным.",
+    "NEO": "A force de crier et de gémir, mes os s’attachent à ma chair.",
+    "NAB": "From my loud groaning I become just skin and bones.",
+    "VAT_ES": "Los huesos se me pegan a la piel,",
+    "CEI": "Per il lungo mio gemere aderisce la mia pelle alle mie ossa.",
+    "LXX": "ἀπὸ φωνῆς τοῦ στεναγμοῦ μου ἐκολλήθη τὸ ὀστοῦν μου τῇ σαρκί μου.",
+    "VUL": "A voce gemitus mei/ adhæsit os meum carni meæ./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "דָּ֭מִיתִי לִ/קְאַ֣ת מִדְבָּ֑ר הָ֝יִ֗יתִי כְּ/כ֣וֹס חֳרָבֽוֹת׃",
+    "SYN": "Он показал пути Свои Моисею, сынам Израилевым - дела Свои.",
+    "NEO": "Je ressemble au pélican du désert, je suis devenu comme le hibou des ruines.",
+    "NAB": "I am like a desert owl, like an owl among the ruins.",
+    "VAT_ES": "Me parezco a una lechuza del desierto,",
+    "CEI": "Sono simile al pellicano del deserto, sono come un gufo tra le rovine.",
+    "LXX": "ὡμοιώθην πελεκᾶνι ἐρημικῷ, ἐγενήθην ὡσεὶ νυκτικόραξ ἐν οἰκοπέδῳ,",
+    "VUL": "Similis factus sum pellicano solitudinis ;/ factus sum sicut nycticorax in domicilio./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "שָׁקַ֥דְתִּי וָ/אֶֽהְיֶ֑ה כְּ֝/צִפּ֗וֹר בּוֹדֵ֥ד עַל גָּֽג׃",
+    "SYN": "Щедр и милостив Господь, долготерпелив и многомилостив:",
+    "NEO": "Je passe les nuits sans sommeil, comme l’oiseau solitaire sur le toit.",
+    "NAB": "I lie awake and moan, like a lone sparrow on the roof.",
+    "VAT_ES": "estoy desvelado, y me lamento",
+    "CEI": "Veglio e gemo come uccello solitario sopra un tetto.",
+    "LXX": "ἠγρύπνησα καὶ ἐγενήθην ὡσεὶ στρουθίον μονάζον ἐπὶ δώματι.",
+    "VUL": "Vigilavi, et factus sum sicut passer solitarius in tecto./"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "כָּל הַ֭/יּוֹם חֵרְפ֣וּ/נִי אוֹיְבָ֑/י מְ֝הוֹלָלַ֗/י בִּ֣/י נִשְׁבָּֽעוּ׃",
+    "SYN": "не до конца гневается, и не вовек негодует.",
+    "NEO": "Tout le jour mes adversaires m’outragent, mes ennemis furieux jurent ma ruine.",
+    "NAB": "All day long my enemies taunt me; in their rage, they make my name a curse.",
+    "VAT_ES": "mis enemigos me insultan sin cesar,",
+    "CEI": "Tutto il giorno mi insultano i miei nemici, furenti imprecano contro il mio nome.",
+    "VUL": "Tota die exprobrabant mihi inimici mei,/ et qui laudabant me adversum me jurabant :/"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "כִּי אֵ֭פֶר כַּ/לֶּ֣חֶם אָכָ֑לְתִּי וְ֝/שִׁקֻּוַ֗/י בִּ/בְכִ֥י מָסָֽכְתִּי׃",
+    "SYN": "Не по беззакониям нашим сотворил нам, и не по грехам нашим воздал нам:",
+    "NEO": "Je mange la cendre comme du pain, et je mêle mes larmes à mon breuvage,",
+    "NAB": "I eat ashes like bread, mingle my drink with tears.",
+    "VAT_ES": "Yo como ceniza en vez de pan",
+    "CEI": "Di cenere mi nutro come di pane, alla mia bevanda mescolo il pianto,",
+    "VUL": "quia cinerem tamquam panem manducabam,/ et potum meum cum fletu miscebam,/"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "מִ/פְּנֵֽי זַֽעַמְ/ךָ֥ וְ/קִצְפֶּ֑/ךָ כִּ֥י נְ֝שָׂאתַ֗/נִי וַ/תַּשְׁלִיכֵֽ/נִי׃",
+    "SYN": "ибо как высоко небо над землею, так велика милость [Господа] к боящимся Его;",
+    "NEO": "à cause de ta colère et de ton indignation, car tu m’as soulevé et jeté au loin.",
+    "NAB": "Because of your furious wrath, you lifted me up just to cast me down.",
+    "VAT_ES": "a causa de tu indignación y tu furor,",
+    "CEI": "davanti alla tua collera e al tuo sdegno, perché mi sollevi e mi scagli lontano.",
+    "VUL": "a facie iræ et indignationis tuæ :/ quia elevans allisisti me./"
+   }
+  },
+  "12": {
+   "seq": 12,
+   "v_in": {
+    "VUL": 12,
+    "MT": 12
+   },
+   "text": {
+    "WLC": "יָ֭מַ/י כְּ/צֵ֣ל נָט֑וּי וַ֝/אֲנִ֗י כָּ/עֵ֥שֶׂב אִיבָֽשׁ׃",
+    "SYN": "как далеко восток от запада, так удалил Он от нас беззакония наши;",
+    "NEO": "Mes jours sont comme l’ombre qui s’allonge, et je me dessèche comme l’herbe.",
+    "NAB": "My days are like a lengthening shadow; I wither like the grass.",
+    "VAT_ES": "Mis días son como sombras que se agrandan,",
+    "CEI": "I miei giorni sono come ombra che declina, e io come erba inaridisco.",
+    "VUL": "Dies mei sicut umbra declinaverunt,/ et ego sicut fnum arui./"
+   }
+  },
+  "13": {
+   "seq": 13,
+   "v_in": {
+    "VUL": 13,
+    "MT": 13
+   },
+   "text": {
+    "WLC": "וְ/אַתָּ֣ה יְ֭הוָה לְ/עוֹלָ֣ם תֵּשֵׁ֑ב וְ֝/זִכְרְ/ךָ֗ לְ/דֹ֣ר וָ/דֹֽר׃",
+    "SYN": "как отец милует сынов, так милует Господь боящихся Его.",
+    "NEO": "Mais toi, \\+w Yahweh|strong=\"H3068\"\\+w**, tu es assis sur un trône éternel, et ta mémoire vit d’âge en âge.",
+    "NAB": "But you, LORD, are enthroned forever; your renown is for all generations.",
+    "VAT_ES": "Pero tú, Señor, reinas para siempre,",
+    "CEI": "Ma tu, Signore, rimani in eterno, il tuo ricordo per ogni generazione.",
+    "VUL": "Tu autem, Domine, in æternum permanes,/ et memoriale tuum in generationem et generationem./"
+   }
+  },
+  "14": {
+   "seq": 14,
+   "v_in": {
+    "VUL": 14,
+    "MT": 14
+   },
+   "text": {
+    "WLC": "אַתָּ֣ה תָ֭קוּם תְּרַחֵ֣ם צִיּ֑וֹן כִּי עֵ֥ת לְ֝/חֶֽנְנָ֗/הּ כִּי בָ֥א מוֹעֵֽד׃",
+    "SYN": "Ибо Он знает состав наш, помнит, что мы - персть.",
+    "NEO": "Tu te lèveras, tu auras pitié de Sion, car le temps de lui faire grâce, le moment fixé est venu.",
+    "NAB": "You will again show mercy to Zion; now is the time for pity; the appointed time has come.",
+    "VAT_ES": "Tú te levantarás, te compadecerás de Sión,",
+    "CEI": "Tu sorgerai, avrai pietà di Sion, perché è tempo di usarle misericordia: l'ora è giunta.",
+    "VUL": "Tu exsurgens misereberis Sion,/ quia tempus miserendi ejus, quia venit tempus :/"
+   }
+  },
+  "15": {
+   "seq": 15,
+   "v_in": {
+    "VUL": 15,
+    "MT": 15
+   },
+   "text": {
+    "WLC": "כִּֽי רָצ֣וּ עֲ֭בָדֶי/ךָ אֶת אֲבָנֶ֑י/הָ וְֽ/אֶת עֲפָרָ֥/הּ יְחֹנֵֽנוּ׃",
+    "SYN": "Дни человека - как трава; как цвет полевой, так он цветет.",
+    "NEO": "Car tes serviteurs en chérissent les pierres, ils s’attendrissent sur sa poussière.",
+    "NAB": "Its stones are dear to your servants; its dust moves them to pity.",
+    "VAT_ES": "tus servidores sienten amor por esas piedras",
+    "CEI": "Poiché ai tuoi servi sono care le sue pietre e li muove a pietà la sua rovina.",
+    "VUL": "quoniam placuerunt servis tuis lapides ejus,/ et terræ ejus miserebuntur./"
+   }
+  },
+  "16": {
+   "seq": 16,
+   "v_in": {
+    "VUL": 16,
+    "MT": 16
+   },
+   "text": {
+    "WLC": "וְ/יִֽירְא֣וּ ג֭וֹיִם אֶת שֵׁ֣ם יְהוָ֑ה וְֽ/כָל מַלְכֵ֥י הָ֝/אָ֗רֶץ אֶת כְּבוֹדֶֽ/ךָ׃",
+    "SYN": "Пройдет над ним ветер, и нет его, и место его уже не узнает его.",
+    "NEO": "Alors les nations révéreront le nom de \\+w Yahweh|strong=\"H3068\"\\+w**, et tous les rois de la terre ta majesté,",
+    "NAB": "The nations shall revere your name, LORD, all the kings of the earth, your glory,",
+    "VAT_ES": "Las naciones temerán tu Nombre, Señor,",
+    "CEI": "I popoli temeranno il nome del Signore e tutti i re della terra la tua gloria,",
+    "VUL": "Et timebunt gentes nomen tuum, Domine,/ et omnes reges terræ gloriam tuam :/"
+   }
+  },
+  "17": {
+   "seq": 17,
+   "v_in": {
+    "VUL": 17,
+    "MT": 17
+   },
+   "text": {
+    "WLC": "כִּֽי בָנָ֣ה יְהוָ֣ה צִיּ֑וֹן נִ֝רְאָ֗ה בִּ/כְבוֹדֽ/וֹ׃",
+    "SYN": "Милость же Господня от века и до века к боящимся Его,",
+    "NEO": "parce que \\+w Yahweh|strong=\"H3068\"\\+w** a rebâti Sion ; il s’est montré dans sa gloire.",
+    "NAB": "Once the LORD has rebuilt Zion and appeared in glory,",
+    "VAT_ES": "cuando el Señor reedifique a Sión",
+    "CEI": "quando il Signore avrà ricostruito Sion e sarà apparso in tutto il suo splendore.",
+    "VUL": "quia ædificavit Dominus Sion,/ et videbitur in gloria sua./"
+   }
+  },
+  "18": {
+   "seq": 18,
+   "v_in": {
+    "VUL": 18,
+    "MT": 18
+   },
+   "text": {
+    "WLC": "פָּ֭נָה אֶל תְּפִלַּ֣ת הָ/עַרְעָ֑ר וְ/לֹֽא בָ֝זָ֗ה אֶת תְּפִלָּתָֽ/ם׃",
+    "SYN": "и правда Его на сынах сынов, хранящих завет Его и помнящих заповеди Его, чтобы исполнять их.",
+    "NEO": "Il s’est tourné vers la prière du misérable, il n’a pas dédaigné sa supplication.",
+    "NAB": "Heeding the plea of the lowly, not scorning their prayer.",
+    "VAT_ES": "cuando acepte la oración del desvalido",
+    "CEI": "Egli si volge alla preghiera del misero e non disprezza la sua supplica.",
+    "VUL": "Respexit in orationem humilium/ et non sprevit precem eorum./"
+   }
+  },
+  "19": {
+   "seq": 19,
+   "v_in": {
+    "VUL": 19,
+    "MT": 19
+   },
+   "text": {
+    "WLC": "תִּכָּ֣תֶב זֹ֭את לְ/ד֣וֹר אַחֲר֑וֹן וְ/עַ֥ם נִ֝בְרָ֗א יְהַלֶּל יָֽהּ׃",
+    "SYN": "Господь на небесах поставил престол Свой, и царство Его всем обладает.",
+    "NEO": "Que cela soit écrit pour la génération future, et que le peuple qui sera créé célèbre \\+w Yahweh|strong=\"H3068\"\\+w**,",
+    "NAB": "Let this be written for the next generation, for a people not yet born, that they may praise the LORD:",
+    "VAT_ES": "Quede esto escrito para el tiempo futuro",
+    "CEI": "Questo si scriva per la generazione futura e un popolo nuovo darà lode al Signore.",
+    "VUL": "Scribantur hæc in generatione altera,/ et populus qui creabitur laudabit Dominum./"
+   }
+  },
+  "20": {
+   "seq": 20,
+   "v_in": {
+    "VUL": 20,
+    "MT": 20
+   },
+   "text": {
+    "WLC": "כִּֽי הִ֭שְׁקִיף מִ/מְּר֣וֹם קָדְשׁ֑/וֹ יְ֝הוָ֗ה מִ/שָּׁמַ֤יִם אֶל אֶ֬רֶץ הִבִּֽיט׃",
+    "SYN": "Благословите Господа, [все] Ангелы Его, крепкие силою, исполняющие слово Его, повинуясь гласу слова Его;",
+    "NEO": "parce qu’il a regardé de sa sainte hauteur, parce que \\+w Yahweh|strong=\"H3068\"\\+w** a regardé des cieux sur la terre,",
+    "NAB": "\"The LORD looked down from the holy heights, viewed the earth from heaven,",
+    "VAT_ES": "porque él se inclinó desde su alto Santuario",
+    "CEI": "Il Signore si è affacciato dall'alto del suo santuario, dal cielo ha guardato la terra,",
+    "VUL": "Quia prospexit de excelso sancto suo ;/ Dominus de cælo in terram aspexit :/"
+   }
+  },
+  "21": {
+   "seq": 21,
+   "v_in": {
+    "VUL": 21,
+    "MT": 21
+   },
+   "text": {
+    "WLC": "לִ֭/שְׁמֹעַ אֶנְקַ֣ת אָסִ֑יר לְ֝/פַתֵּ֗חַ בְּנֵ֣י תְמוּתָֽה׃",
+    "SYN": "благословите Господа, все воинства Его, служители Его, исполняющие волю Его;",
+    "NEO": "pour écouter les gémissements des captifs, pour délivrer ceux qui sont voués à la mort,",
+    "NAB": "To attend to the groaning of the prisoners, to release those doomed to die.\"",
+    "VAT_ES": "para escuchar el lamento de los cautivos",
+    "CEI": "per ascoltare il gemito del prigioniero, per liberare i condannati a morte;",
+    "VUL": "ut audiret gemitus compeditorum ;/ ut solveret filios interemptorum :/"
+   }
+  },
+  "22": {
+   "seq": 22,
+   "v_in": {
+    "VUL": 22,
+    "MT": 22
+   },
+   "text": {
+    "WLC": "לְ/סַפֵּ֣ר בְּ֭/צִיּוֹן שֵׁ֣ם יְהוָ֑ה וּ֝/תְהִלָּת֗/וֹ בִּ/ירוּשָׁלִָֽם׃",
+    "SYN": "благословите Господа, все дела Его, во всех местах владычества Его. Благослови, душа моя, Господа!",
+    "NEO": "afin qu’ils publient dans Sion le nom de \\+w Yahweh|strong=\"H3068\"\\+w**, et sa louange dans Jérusalem,",
+    "NAB": "Then the LORD'S name will be declared on Zion, the praise of God in Jerusalem,",
+    "VAT_ES": "para proclamar en Sión el nombre del Señor",
+    "CEI": "perché sia annunziato in Sion il nome del Signore e la sua lode in Gerusalemme,",
+    "VUL": "ut annuntient in Sion nomen Domini,/ et laudem ejus in Jerusalem :/"
+   }
+  },
+  "23": {
+   "seq": 23,
+   "v_in": {
+    "VUL": 23,
+    "MT": 23
+   },
+   "text": {
+    "WLC": "בְּ/הִקָּבֵ֣ץ עַמִּ֣ים יַחְדָּ֑ו וּ֝/מַמְלָכ֗וֹת לַ/עֲבֹ֥ד אֶת יְהוָֽה׃",
+    "NEO": "quand s’assembleront tous les peuples, et les royaumes pour servir \\+w Yahweh|strong=\"H3068\"\\+w**.",
+    "NAB": "When all peoples and kingdoms gather to worship the LORD.",
+    "VAT_ES": "cuando se reúnan los pueblos y los reinos,",
+    "CEI": "quando si aduneranno insieme i popoli e i regni per servire il Signore.",
+    "VUL": "in conveniendo populos in unum, et reges,/ ut serviant Domino./"
+   }
+  },
+  "24": {
+   "seq": 24,
+   "v_in": {
+    "VUL": 24,
+    "MT": 24
+   },
+   "text": {
+    "WLC": "עִנָּ֖ה בַ/דֶּ֥רֶךְ כח/ו כֹּחִ֗/י קִצַּ֥ר יָמָֽ/י׃",
+    "NEO": "Il a brisé ma force sur le chemin, il a abrégé mes jours.",
+    "NAB": "God has shattered my strength in mid-course, has cut short my days.",
+    "VAT_ES": "Mis fuerzas se debilitaron por el camino",
+    "CEI": "Ha fiaccato per via la mia forza, ha abbreviato i miei giorni.",
+    "VUL": "Respondit ei in via virtutis suæ :/ Paucitatem dierum meorum nuntia mihi :/"
+   }
+  },
+  "25": {
+   "seq": 25,
+   "v_in": {
+    "VUL": 25,
+    "MT": 25
+   },
+   "text": {
+    "WLC": "אֹמַ֗ר אֵלִ֗/י אַֽל תַּ֭עֲלֵ/נִי בַּ/חֲצִ֣י יָמָ֑/י בְּ/ד֖וֹר דּוֹרִ֣ים שְׁנוֹתֶֽי/ךָ׃",
+    "NEO": "Je dis : Mon Dieu, ne m’enlève pas au milieu de mes jours, toi, dont les années durent d’âge en âge.",
+    "NAB": "I plead, O my God, do not take me in the midst of my days. Your years last through all generations.",
+    "VAT_ES": "pero yo digo: «Dios mío,",
+    "CEI": "Io dico: Mio Dio, non rapirmi a metà dei miei giorni; i tuoi anni durano per ogni generazione.",
+    "VUL": "ne revoces me in dimidio dierum meorum,/ in generationem et generationem anni tui./"
+   }
+  },
+  "26": {
+   "seq": 26,
+   "v_in": {
+    "VUL": 26,
+    "MT": 26
+   },
+   "text": {
+    "WLC": "לְ֭/פָנִים הָ/אָ֣רֶץ יָסַ֑דְתָּ וּֽ/מַעֲשֵׂ֖ה יָדֶ֣י/ךָ שָׁמָֽיִם׃",
+    "NEO": "Au commencement tu as fondé la terre, et les cieux sont l’ouvrage de tes mains.",
+    "NAB": "Of old you laid the earth's foundations; the heavens are the work of your hands.",
+    "VAT_ES": "En tiempos remotos, fundaste la tierra,",
+    "CEI": "In principio tu hai fondato la terra, i cieli sono opera delle tue mani.",
+    "VUL": "Initio tu, Domine, terram fundasti,/ et opera manuum tuarum sunt cæli./"
+   }
+  },
+  "27": {
+   "seq": 27,
+   "v_in": {
+    "VUL": 27,
+    "MT": 27
+   },
+   "text": {
+    "WLC": "הֵ֤מָּה יֹאבֵדוּ֮ וְ/אַתָּ֪ה תַ֫עֲמֹ֥ד וְ֭/כֻלָּ/ם כַּ/בֶּ֣גֶד יִבְל֑וּ כַּ/לְּב֖וּשׁ תַּחֲלִיפֵ֣/ם וְֽ/יַחֲלֹֽפוּ׃",
+    "NEO": "Ils périront, mais toi, tu subsistes. Ils s’useront tous comme un vêtement ; Tu les changeras comme un manteau, et ils seront changés :",
+    "NAB": "They perish, but you remain; they all wear out like a garment; Like clothing you change them and they are changed,",
+    "VAT_ES": "ellos se acaban, y tú permaneces:",
+    "CEI": "Essi periranno, ma tu rimani, tutti si logorano come veste, come un abito tu li muterai ed essi passeranno.",
+    "VUL": "Ipsi peribunt, tu autem permanes ;/ et omnes sicut vestimentum veterascent./ Et sicut opertorium mutabis eos, et mutabuntur ;/"
+   }
+  },
+  "28": {
+   "seq": 28,
+   "v_in": {
+    "VUL": 28,
+    "MT": 28
+   },
+   "text": {
+    "WLC": "וְ/אַתָּה ה֑וּא וּ֝/שְׁנוֹתֶ֗י/ךָ לֹ֣א יִתָּֽמּוּ׃",
+    "NEO": "mais toi, tu restes le même, et tes années n’ont pas de fin.",
+    "NAB": "but you are the same, your years have no end.",
+    "VAT_ES": "Tú, en cambio, eres siempre el mismo,",
+    "CEI": "Ma tu resti lo stesso e i tuoi anni non hanno fine.",
+    "VUL": "tu autem idem ipse es, et anni tui non deficient./"
+   }
+  },
+  "29": {
+   "seq": 29,
+   "v_in": {
+    "VUL": 29
+   },
+   "text": {
+    "VUL": "Filii servorum tuorum habitabunt,/ et semen eorum in sæculum dirigetur.]"
+   }
   }
+ }
 }

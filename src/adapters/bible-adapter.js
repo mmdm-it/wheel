@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache } from './volume-helpers.js';
+import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
 
@@ -286,9 +286,18 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
   return { type: 'text', text: selected.name || id || '' };
 }
 
-export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta, translationName = '' }) {
+// Single-item root ring for gateway entry: BIBLIA SACRA LATINA alone in the
+// magnifier with the testaments in the child pyramid.
+export const buildBibleRootChain = () => ({
+  items: [{ id: 'BIBLIA_SACRA_LATINA', name: 'BIBLIA SACRA LATINA', level: 'bibleRoot', order: 0 }],
+  selectedIndex: 0,
+  preserveOrder: true
+});
+
+export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta, translationName = '', onGatewayReturn = null, gatewayLabel = '' }) {
   const initialLevel = options?.level;
-  let bibleMode = (initialLevel === 'chapter' || initialLevel === 'verse') ? initialLevel : 'book';
+  const hasRoot = initialLevel === 'root';
+  let bibleMode = (initialLevel === 'chapter' || initialLevel === 'verse') ? initialLevel : (hasRoot ? 'root' : 'book');
   let bibleChapterContext = (initialLevel === 'chapter' && options?.bookId)
     ? { bookId: options.bookId, testamentId: null, sectionId: null }
     : null;
@@ -363,14 +372,33 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       });
       if (!testamentItems.length) return false;
       bibleMode = 'testament';
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: false });
+      // With a gateway root above, the parent button stays visible
+      // (BIBLIA SACRA LATINA); without one, testaments are the top level.
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: hasRoot });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
         migrateOrSet(testamentItems, testamentSelected, true);
       }
       return true;
     }
-    // bibleMode === 'testament': no parent above this level.
+    if (bibleMode === 'testament' && hasRoot) {
+      // Gateway entry: OUT from the testament ring returns to the
+      // single-item BIBLIA SACRA LATINA root ring.
+      const rootChain = buildBibleRootChain();
+      bibleMode = 'root';
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayLabel) });
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(rootChain.items, rootChain.selectedIndex, rootChain.preserveOrder);
+      }
+      return true;
+    }
+    if (bibleMode === 'root') {
+      // OUT through the gateway back to the host volume.
+      if (typeof onGatewayReturn === 'function') return Boolean(onGatewayReturn());
+      return false;
+    }
+    // bibleMode === 'testament' without a root above: no parent.
     return false;
   };
 
@@ -392,18 +420,26 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
 
   const getParentLabel = (item) => {
     if (!item) return '';
-    // Chapter ring: parent is the book name (e.g. "MATTHEW")
+    // Gateway root ring: parent button points back through the gateway.
+    if (item.level === 'bibleRoot') return gatewayLabel || '';
+    // Testament ring under a gateway root: parent is the Biblia itself.
+    if (item.level === 'testament' && hasRoot) return 'BIBLIA SACRA LATINA';
+    // Chapter ring: parent is the book name in the display language
+    // (e.g. "MATTHAEUS" — namesMap carries the Latin names under VUL)
     if (item.level === 'chapter') {
       const bookId = item.meta?.bookId || item.parentId;
       if (!bookId) return '';
       const book = findBook(manifest, bookId);
-      return (book?.book_name || bookId).toUpperCase();
+      const localized = namesMap?.books?.[bookId];
+      return (localized || book?.book_name || bookId).toUpperCase();
     }
-    // Verse ring: parent is the chapter number (e.g. "Chapter 16")
+    // Verse ring: parent is the chapter number (e.g. "Capitulum XVI")
     if (item.level === 'verse') {
       const chapterId = item.meta?.chapterId || item.parentId || '';
       const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
-      return chapterKey ? `Chapter ${chapterKey}` : '';
+      if (!chapterKey) return '';
+      const n = Number.parseInt(chapterKey, 10);
+      return Number.isFinite(n) ? `Capitulum ${toRomanNumeral(n)}` : `Capitulum ${chapterKey}`;
     }
     // Book ring: parent is the testament name (already stored on items as parentName)
     return item.parentName || '';
@@ -414,6 +450,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     childrenHandler,
     getParentLabel,
     layoutBindings: {
+      getBibleTestaments: () => buildBibleTestaments(manifest, namesMap, { translationName }),
       bibleModeRef: () => bibleMode,
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },

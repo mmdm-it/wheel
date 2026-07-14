@@ -3,7 +3,7 @@ import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildBibleBooks,
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 import { catalogAdapter } from './adapters/catalog-adapter.js';
-import { bibleAdapter } from './adapters/bible-adapter.js';
+import { bibleAdapter, buildBibleRootChain } from './adapters/bible-adapter.js';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 import { placesAdapter } from './adapters/places-adapter.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
@@ -193,11 +193,11 @@ function resolveVolumeFromPath(path) {
   return match?.id || null;
 }
 
-async function loadConfig() {
-  const params = new URLSearchParams(window.location.search);
+async function loadConfig(volumeOverride = null, searchOverride = null) {
+  const params = new URLSearchParams(searchOverride ?? window.location.search);
   const path = (window.location.pathname || '').toLowerCase();
   const paramVolume = params.get('volume');
-  const resolvedVolume = volumeConfigs[paramVolume]?.id || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
+  const resolvedVolume = volumeConfigs[volumeOverride]?.id || volumeConfigs[paramVolume]?.id || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
   const config = volumeConfigs[resolvedVolume];
   const manifest = await fetch(config.manifestPath).then(r => r.json());
   const root = config.extractRoot(manifest);
@@ -345,7 +345,7 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
 function makeBibleLabelFormatter({ level, locale, namesMap }) {
   // ── Vocabulary table (9 languages) ──────────────────────────────────────────
   const VOCAB = {
-    latin:      { chapter: 'Caput',      verse: 'Versus',    bc: 'a.C.n.',      ad: 'p.C.n.'       },
+    latin:      { chapter: 'Capitulum',  verse: 'Versus',    bc: 'a.C.n.',      ad: 'p.C.n.'       },
     greek:      { chapter: '\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf\u03bd', verse: '\u03a3\u03c4\u03af\u03c7\u03bf\u03c2',   bc: '\u03c0.\u03a7.',        ad: '\u03bc.\u03a7.'          },
     hebrew:     { chapter: '\u05e4\u05bc\u05b6\u05bc\u05e8\u05b6\u05e7',     verse: '\u05e4\u05b8\u05bc\u05e1\u05d5\u05bc\u05e7',   bc: '\u05dc\u05e4\u05e0\u05d4"\u05e1', ad: '\u05dc\u05e1\u05e4\u05d4"\u05e0'  },
     french:     { chapter: 'Chapitre',   verse: 'Verset',    bc: 'av. J.-C.',   ad: 'ap. J.-C.'    },
@@ -469,6 +469,8 @@ function makeLabelFormatter({ config, volume, level, locale, namesMap, options, 
 }
 
 function buildBibleChain(manifest, options, namesMap) {
+  // Gateway entry: BIBLIA SACRA LATINA alone on the ring, testaments in the pyramid.
+  if (options.level === 'root') return buildBibleRootChain();
   const arrangement = options.arrangement;
   const initialItemId = options.initialItemId;
   if (options.cousinMode && (arrangement || 'cousins-with-gaps') !== 'siblings-only') {
@@ -538,7 +540,7 @@ function buildPlacesChain(manifest, options) {
 }
 
 
-function wireInteractions(app, itemCount) {
+function wireInteractions(getApp) {
   let isDragging = false;
   let lastX = 0;
   let lastY = 0;
@@ -588,6 +590,8 @@ function wireInteractions(app, itemCount) {
 
   const onPointerMove = event => {
     if (!isDragging) return;
+    const app = getApp();
+    if (!app) return;
     const dx = event.clientX - lastX;
     const dy = event.clientY - lastY;
     const dt = event.timeStamp - lastTime;
@@ -630,6 +634,8 @@ function wireInteractions(app, itemCount) {
   }, true);
 
   svg.addEventListener('pointerdown', event => {
+    const app = getApp();
+    if (!app) return;
     logTap('pointerdown', {
       pointerType: event.pointerType,
       targetClass: event.target?.getAttribute?.('class') || null,
@@ -725,6 +731,8 @@ function wireInteractions(app, itemCount) {
     svg.addEventListener(type, event => {
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
+      const app = getApp();
+      if (!app) return;
       const wasDragging = isDragging;
       isDragging = false;
       logTap(type, {
@@ -753,7 +761,55 @@ async function showVersion() {
   }
 }
 
-loadConfig().then(async ({ volume, config, manifest, root, options, supplemental }) => {
+let currentApp = null;
+let currentVolumeId = null;
+let gatewayReturnContext = null;
+let interactionsWired = false;
+
+function gatewayLabelFromItemId(itemId) {
+  if (typeof itemId !== 'string') return '';
+  const segments = itemId.split('__');
+  return (segments[segments.length - 1] || '').toUpperCase();
+}
+
+// Data-declared door into another volume: boot it in-app, remembering the
+// way back. The browser URL gains a history entry so Back exits the door.
+function launchGateway(gateway) {
+  if (!gateway?.volume || !volumeConfigs[gateway.volume]) return;
+  const returnContext = { volume: currentVolumeId, itemId: gateway.returnItemId || null };
+  const search = `?volume=${encodeURIComponent(gateway.volume)}&level=root`;
+  try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* history unavailable (e.g. file://) */ }
+  bootVolume(gateway.volume, search, returnContext).catch(err => console.error('[wheel] gateway boot failed', err));
+}
+
+function returnThroughGateway() {
+  const ctx = gatewayReturnContext;
+  if (!ctx?.volume || !volumeConfigs[ctx.volume]) return false;
+  const params = new URLSearchParams();
+  params.set('volume', ctx.volume);
+  if (ctx.itemId) params.set('item', ctx.itemId);
+  const search = `?${params.toString()}`;
+  try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* ignore */ }
+  bootVolume(ctx.volume, search, null).catch(err => console.error('[wheel] gateway return failed', err));
+  return true;
+}
+
+// Browser Back across a gateway pushState: reload resolves the URL cleanly.
+window.addEventListener('popstate', () => window.location.reload());
+
+async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null) {
+  const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
+  // Teardown any previous volume instance — gateway reboots reuse the SVG.
+  // Clear only the detail CONTENT: #detail-panel's inner skeleton
+  // (#detail-content, #version-badge) is owned by index.html and must survive.
+  while (svg.firstChild) svg.removeChild(svg.firstChild);
+  const detailContentEl = document.getElementById('detail-content');
+  if (detailContentEl) detailContentEl.innerHTML = '';
+  const detailPanelEl = document.getElementById('detail-panel');
+  if (detailPanelEl) detailPanelEl.classList.remove('detail-panel--visible');
+  currentApp = null;
+  currentVolumeId = volume;
+  gatewayReturnContext = gatewayReturn;
   applyTheme(manifest, volume);
   const translationsMeta = supplemental?.translationsMeta || null;
   const translationId = options.translation || null;
@@ -770,7 +826,16 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
 
   const chainResult = await config.buildChain(manifest, options, namesMap);
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
-  const handlerSet = config.createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta: chainResult, translationName });
+  const handlerSet = config.createHandlers({
+    manifest,
+    namesMap,
+    options,
+    translationsMeta,
+    chainMeta: chainResult,
+    translationName,
+    onGatewayReturn: returnThroughGateway,
+    gatewayLabel: gatewayReturn ? gatewayLabelFromItemId(gatewayReturn.itemId) : ''
+  });
   if (!items.length) {
     console.error('No items found for volume', volume);
     return;
@@ -828,7 +893,9 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     getBibleVerseItems: layoutBindings.getBibleVerseItems,
     prefetchBibleVerses: layoutBindings.prefetchBibleVerses,
     getBibleBooksForTestament: layoutBindings.getBibleBooksForTestament,
+    getBibleTestaments: layoutBindings.getBibleTestaments,
     getApp: () => app,
+    launchGateway,
     calendarModeRef: layoutBindings.calendarModeRef,
     setCalendarMode: layoutBindings.setCalendarMode,
     setCalendarMonthContext: layoutBindings.setCalendarMonthContext,
@@ -870,6 +937,7 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
     pyramidNormalized: adapterNormalized || normalized,
     pyramidAdapter: adapter
   });
+  currentApp = app;
   // Expose app to window for console API
   window.app = app;
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId });
@@ -903,7 +971,10 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
   } else {
     console.log('[startup-verse] prefetch skipped | volume:', volume, '| level:', options.level, '| verseId:', options.verseId, '| hasPrefetch:', Boolean(layoutBindings.prefetchBibleVerses));
   }
-  wireInteractions(app, items.length);
+  if (!interactionsWired) {
+    wireInteractions(() => currentApp);
+    interactionsWired = true;
+  }
   showVersion();
 
   // ── Startup diagnostics ──
@@ -937,6 +1008,8 @@ loadConfig().then(async ({ volume, config, manifest, root, options, supplemental
   }
   console.log('[DIAG] nav state:', { current: app?.nav?.getCurrent?.()?.name, index: app?.nav?.getSelectedIndex?.(), total: app?.nav?.items?.length });
   console.log('%c[DIAG] ═══ End diagnostics ═══', 'color:#f1b800;font-weight:bold');
-}).catch(err => {
+}
+
+bootVolume().catch(err => {
   console.error('Failed to initialize app', err);
 });

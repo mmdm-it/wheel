@@ -57,12 +57,19 @@ export function buildCatalogPyramid({
   getApp,
   catalogModeRef,
   setCatalogMode,
-  savePreInState
+  savePreInState,
+  launchGateway
 } = {}) {
   if (!manifest || typeof getCatalogChildren !== 'function') return null;
   const getChildren = ({ selected }) => getCatalogChildren(manifest, selected);
   const onClick = instr => {
     if (!instr?.item) return;
+    // Gateway node: a data-declared door into another volume. Hand off to
+    // the host instead of navigating within this volume.
+    if (instr.item.level === 'gateway' && instr.item.gateway && typeof launchGateway === 'function') {
+      launchGateway(instr.item.gateway);
+      return;
+    }
     const app = typeof getApp === 'function' ? getApp() : null;
     const parent = app?.nav?.getCurrent?.();
     const children = getCatalogChildren(manifest, parent);
@@ -133,6 +140,7 @@ export function buildBiblePyramid({
   getBibleChapters,
   getBibleVerseItems,
   getBibleBooksForTestament,
+  getBibleTestaments,
   prefetchBibleVerses,
   getApp,
   bibleModeRef,
@@ -143,6 +151,11 @@ export function buildBiblePyramid({
   if (!manifest || typeof getBibleChapters !== 'function') return null;
   const getChildren = ({ selected }) => {
     const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
+    if (mode === 'root') {
+      // Gateway root: BIBLIA SACRA LATINA in the magnifier, testaments below.
+      if (typeof getBibleTestaments !== 'function') return [];
+      return (getBibleTestaments().items || []).filter(Boolean);
+    }
     if (mode === 'testament') {
       if (typeof getBibleBooksForTestament !== 'function') return [];
       return getBibleBooksForTestament(selected?.id).items.filter(Boolean);
@@ -168,6 +181,21 @@ export function buildBiblePyramid({
     if (!instr?.item) return;
     const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
     const app = typeof getApp === 'function' ? getApp() : null;
+
+    if (mode === 'root') {
+      // Clicking a testament in the pyramid: ring advances to the testaments.
+      if (typeof getBibleTestaments !== 'function') return;
+      const { items: testamentItems } = getBibleTestaments();
+      if (!testamentItems?.length) return;
+      const selectedIdx = testamentItems.findIndex(t => t && t.id === instr.item.id);
+      if (typeof setBibleMode === 'function') setBibleMode('testament');
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+        migrateOrSet(testamentItems, selectedIdx >= 0 ? selectedIdx : 0, true);
+      }
+      return;
+    }
 
     if (mode === 'testament') {
       // Clicking a book node in the pyramid when testaments are in the ring:

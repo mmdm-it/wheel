@@ -1,195 +1,202 @@
 {
-  "_schema_version": "2.0",
-  "chapter_id": "PSAL_146",
-  "book_key": "PSAL",
-  "sequence": 146,
-  "chapter_in": {
-    "MT": 146,
-    "VUL": 145,
-    "LXX": 145
+ "_schema_version": "2.0",
+ "chapter_id": "PSAL_146",
+ "book_key": "PSAL",
+ "sequence": 146,
+ "chapter_in": {
+  "VUL": 146,
+  "LXX": 146,
+  "MT": 147
+ },
+ "mt_sources": [
+  "147:1-11"
+ ],
+ "testament": "Vetus_Testamentum",
+ "section": "Libri_Sapientiae",
+ "verses": {
+  "1": {
+   "seq": 1,
+   "v_in": {
+    "VUL": 1,
+    "MT": 1
+   },
+   "text": {
+    "WLC": "הַ֥לְלוּ יָ֨הּ כִּי ט֭וֹב זַמְּרָ֣ה אֱלֹהֵ֑י/נוּ כִּֽי נָ֝עִים נָאוָ֥ה תְהִלָּֽה׃",
+    "SYN": "Хвали, Иерусалим, Господа; хвали, Сион, Бога твоего,",
+    "NEO": "Alleluia — Louez \\+w Yahweh|strong=\"H3068\"\\+w**, car il est bon de célébrer notre Dieu, car il est doux, il est bienséant de le louer.",
+    "NAB": "Hallelujah! How good to celebrate our God in song; how sweet to give fitting praise.",
+    "VAT_ES": "&iexcl;Aleluya!",
+    "CEI": "Alleluia. Lodate il Signore: è bello cantare al nostro Dio, dolce è lodarlo come a lui conviene.",
+    "LXX": "Ἁλληλουιά. Ἁγγαίου καὶ Ζαχαρίου. Αἰνεῖτε τὸν κύριον, ὅτι ἀγαθὸν ψαλμός· τῷ θεῷ ἡμῶν ἡδυνθείη αἴνεσις·",
+    "VUL": "Alleluja. [Laudate Dominum, quoniam bonus est psalmus ;/ Deo nostro sit jucunda, decoraque laudatio./"
+   }
   },
-  "testament": "Vetus_Testamentum",
-  "section": "Libri_Sapientiae",
-  "verses": {
-    "1": {
-      "seq": 1,
-      "v_in": {
-        "MT": 1,
-        "VUL": 1,
-        "LXX": 1
-      },
-      "text": {
-        "WLC": "הַֽלְלוּ יָ֡הּ הַלְלִ֥י נַ֝פְשִׁ֗/י אֶת יְהוָֽה׃",
-        "LXX": "Ἁλληλουιά. Ἁγγαίου καὶ Ζαχαρίου. Αἰνεῖτε τὸν κύριον, ὅτι ἀγαθὸν ψαλμός· τῷ θεῷ ἡμῶν ἡδυνθείη αἴνεσις·",
-        "VUL": "Alleluja. [Laudate Dominum, quoniam bonus est psalmus ;/ Deo nostro sit jucunda, decoraque laudatio./",
-        "SYN": "Хвалите Господа, ибо благо петь Богу нашему, ибо это сладостно, - хвала подобающая.",
-        "NEO": "Alleluia !+ 146:1 \\+it Alleluia\\+it*. LXX et Vulg. ajoutent : \\+it D’Aggée et de Zacharie\\+it*.*",
-        "NAB": "Hallelujah!",
-        "VAT_ES": "&iexcl;Aleluya!",
-        "CEI": "Alleluia. Loda il Signore, anima mia:"
-      }
-    },
-    "2": {
-      "seq": 2,
-      "v_in": {
-        "MT": 2,
-        "VUL": 2,
-        "LXX": 2
-      },
-      "text": {
-        "WLC": "אֲהַלְלָ֣ה יְהוָ֣ה בְּ/חַיָּ֑/י אֲזַמְּרָ֖ה לֵֽ/אלֹהַ֣/י בְּ/עוֹדִֽ/י׃",
-        "LXX": "οἰκοδομῶν Ἰερουσαλὴμ ὁ κύριος, καὶ τὰς διασπορὰς τοῦ Ἰσραὴλ ἐπισυνάξει·",
-        "VUL": "Ædificans Jerusalem Dominus,/ dispersiones Israëlis congregabit :/",
-        "SYN": "Господь созидает Иерусалим, собирает изгнанников Израиля.",
-        "NEO": "Toute ma vie, je veux louer \\+w Yahweh|strong=\"H3068\"\\+w**, tant que je serai, je veux chanter mon Dieu.",
-        "NAB": "Praise the LORD, my soul; I shall praise the LORD all my life, sing praise to my God while I live.",
-        "VAT_ES": "Alabaré al Señor toda mi vida;",
-        "CEI": "loderò il Signore per tutta la mia vita, finché vivo canterò inni al mio Dio."
-      }
-    },
-    "3": {
-      "seq": 3,
-      "v_in": {
-        "MT": 3,
-        "VUL": 3,
-        "LXX": 3
-      },
-      "text": {
-        "WLC": "אַל תִּבְטְח֥וּ בִ/נְדִיבִ֑ים בְּ/בֶן אָדָ֓ם שֶׁ֤/אֵֽין ל֥/וֹ תְשׁוּעָֽה׃",
-        "LXX": "ὁ ἰώμενος τοὺς συντετριμμένους τὴν καρδίαν, καὶ δεσμεύων τὰ συντρίμματα αὐτῶν·",
-        "VUL": "qui sanat contritos corde,/ et alligat contritiones eorum ;/",
-        "SYN": "Он исцеляет сокрушенных сердцем и врачует скорби их;",
-        "NEO": "Ne mettez pas votre confiance dans les princes, dans le fils de l’homme, qui ne peut sauver.",
-        "NAB": "I Put no trust in princes, in mere mortals powerless to save.",
-        "VAT_ES": "No confíen en los poderosos,",
-        "CEI": "Non confidate nei potenti, in un uomo che non può salvare."
-      }
-    },
-    "4": {
-      "seq": 4,
-      "v_in": {
-        "MT": 4,
-        "VUL": 4,
-        "LXX": 4
-      },
-      "text": {
-        "WLC": "תֵּצֵ֣א ר֭וּח/וֹ יָשֻׁ֣ב לְ/אַדְמָת֑/וֹ בַּ/יּ֥וֹם הַ֝/ה֗וּא אָבְד֥וּ עֶשְׁתֹּנֹתָֽי/ו׃",
-        "LXX": "ὁ ἀριθμῶν πλήθη ἄστρων, καὶ πᾶσιν αὐτοῖς ὀνόματα καλῶν.",
-        "VUL": "qui numerat multitudinem stellarum,/ et omnibus eis nomina vocat./",
-        "SYN": "исчисляет количество звезд; всех их называет именами их.",
-        "NEO": "Son souffle s’en va, il retourne à sa poussière, et, ce même jour, ses desseins s’évanouissent.",
-        "NAB": "When they breathe their last, they return to the earth; that day all their planning comes to nothing.",
-        "VAT_ES": "cuando expiran, vuelven al polvo,",
-        "CEI": "Esala lo spirito e ritorna alla terra; in quel giorno svaniscono tutti i suoi disegni."
-      }
-    },
-    "5": {
-      "seq": 5,
-      "v_in": {
-        "MT": 5,
-        "VUL": 5,
-        "LXX": 5
-      },
-      "text": {
-        "WLC": "אַשְׁרֵ֗י שֶׁ֤/אֵ֣ל יַעֲקֹ֣ב בְּ/עֶזְר֑/וֹ שִׂ֝בְר֗/וֹ עַל יְהוָ֥ה אֱלֹהָֽי/ו׃",
-        "LXX": "μέγας ὁ κύριος ἡμῶν, καὶ μεγάλη ἡ ἰσχὺς αὐτοῦ, καὶ τῆς συνέσεως αὐτοῦ οὐκ ἔστιν ἀριθμός.",
-        "VUL": "Magnus Dominus noster, et magna virtus ejus,/ et sapientiæ ejus non est numerus./",
-        "SYN": "Велик Господь наш и велика крепость [Его], и разум Его неизмерим.",
-        "NEO": "Heureux celui qui a pour secours le Dieu de Jacob, qui met son espoir en \\+w Yahweh|strong=\"H3068\"\\+w**, son Dieu !",
-        "NAB": "Happy those whose help is Jacob's God, whose hope is in the LORD, their God,",
-        "VAT_ES": "Feliz el que se apoya en el Dios de Jacob",
-        "CEI": "Beato chi ha per aiuto il Dio di Giacobbe, chi spera nel Signore suo Dio,"
-      }
-    },
-    "6": {
-      "seq": 6,
-      "v_in": {
-        "MT": 6,
-        "VUL": 6,
-        "LXX": 6
-      },
-      "text": {
-        "WLC": "עֹשֶׂ֤ה שָׁ֘מַ֤יִם וָ/אָ֗רֶץ אֶת הַ/יָּ֥ם וְ/אֶת כָּל אֲשֶׁר בָּ֑/ם הַ/שֹּׁמֵ֖ר אֱמֶ֣ת לְ/עוֹלָֽם׃",
-        "LXX": "ἀναλαμβάνων πρᾳεῖς ὁ κύριος, ταπεινῶν δὲ ἁμαρτωλοὺς ἕως τῆς γῆς.",
-        "VUL": "Suscipiens mansuetos Dominus ;/ humilians autem peccatores usque ad terram./",
-        "SYN": "Смиренных возвышает Господь, а нечестивых унижает до земли.",
-        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** a fait le ciel et la terre, la mer et tout ce qu’elle renferme ; il garde à jamais sa fidélité.",
-        "NAB": "The maker of heaven and earth, the seas and all that is in them, Who keeps faith forever,",
-        "VAT_ES": "él hizo el cielo y la tierra,",
-        "CEI": "creatore del cielo e della terra, del mare e di quanto contiene. Egli è fedele per sempre,"
-      }
-    },
-    "7": {
-      "seq": 7,
-      "v_in": {
-        "MT": 7,
-        "VUL": 7,
-        "LXX": 7
-      },
-      "text": {
-        "WLC": "עֹשֶׂ֤ה מִשְׁפָּ֨ט לָ/עֲשׁוּקִ֗ים נֹתֵ֣ן לֶ֭חֶם לָ/רְעֵבִ֑ים יְ֝הוָ֗ה מַתִּ֥יר אֲסוּרִֽים׃",
-        "LXX": "ἐξάρξατε τῷ κυρίῳ ἐν ἐξομολογήσει, ψάλατε τῷ θεῷ ἡμῶν ἐν κιθάρᾳ,",
-        "VUL": "Præcinite Domino in confessione ;/ psallite Deo nostro in cithara./",
-        "SYN": "Пойте поочередно славословие Господу; пойте Богу нашему на гуслях.",
-        "NEO": "Il rend justice aux opprimés, il donne la nourriture à ceux qui ont faim. \\+w Yahweh|strong=\"H3068\"\\+w** délivre les captifs,",
-        "NAB": "secures justice for the oppressed, gives food to the hungry. The LORD sets prisoners free;",
-        "VAT_ES": "hace justicia a los oprimidos",
-        "CEI": "rende giustizia agli oppressi, dà il pane agli affamati. Il Signore libera i prigionieri,"
-      }
-    },
-    "8": {
-      "seq": 8,
-      "v_in": {
-        "MT": 8,
-        "VUL": 8,
-        "LXX": 8
-      },
-      "text": {
-        "WLC": "יְהוָ֤ה פֹּ֘קֵ֤חַ עִוְרִ֗ים יְ֭הוָה זֹקֵ֣ף כְּפוּפִ֑ים יְ֝הוָ֗ה אֹהֵ֥ב צַדִּיקִֽים׃",
-        "LXX": "τῷ περιβάλλοντι τὸν οὐρανὸν ἐν νεφέλαις, τῷ ἑτοιμάζοντι τῇ γῇ ὑετόν, τῷ ἐξανατέλλοντι ἐν ὄρεσι χόρτον καὶ χλόην τῇ δουλείᾳ τῶν ἀνθρώπων,",
-        "VUL": "Qui operit cælum nubibus,/ et parat terræ pluviam ;/ qui producit in montibus fnum,/ et herbam servituti hominum ;/",
-        "SYN": "Он покрывает небо облаками, приготовляет для земли дождь, произращает на горах траву [и злак на пользу человеку];",
-        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** ouvre les yeux des aveugles, \\+w Yahweh|strong=\"H3068\"\\+w** relève ceux qui sont courbés, \\+w Yahweh|strong=\"H3068\"\\+w** aime les justes.",
-        "NAB": "the LORD gives sight to the blind. The LORD raises up those who are bowed down; the LORD loves the righteous.",
-        "VAT_ES": "abre los ojos de los ciegos",
-        "CEI": "il Signore ridona la vista ai ciechi, il Signore rialza chi è caduto, il Signore ama i giusti,"
-      }
-    },
-    "9": {
-      "seq": 9,
-      "v_in": {
-        "MT": 9,
-        "VUL": 9,
-        "LXX": 9
-      },
-      "text": {
-        "WLC": "יְהוָ֤ה שֹׁ֘מֵ֤ר אֶת גֵּרִ֗ים יָת֣וֹם וְ/אַלְמָנָ֣ה יְעוֹדֵ֑ד וְ/דֶ֖רֶךְ רְשָׁעִ֣ים יְעַוֵּֽת׃",
-        "LXX": "καὶ διδόντι τοῖς κτήνεσι τροφὴν αὐτῶν καὶ τοῖς νοσσοῖς τῶν κοράκων τοῖς ἐπικαλουμένοις αὐτόν.",
-        "VUL": "qui dat jumentis escam ipsorum,/ et pullis corvorum invocantibus eum./",
-        "SYN": "дает скоту пищу его и птенцам ворона, взывающим _к Нему._",
-        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** garde les étrangers, il soutient l’orphelin et la veuve ; mais il rend tortueuse la voie des méchants.",
-        "NAB": "The LORD protects the stranger, sustains the orphan and the widow, but thwarts the way of the wicked.",
-        "VAT_ES": "El Señor protege a los extranjeros",
-        "CEI": "il Signore protegge lo straniero, egli sostiene l'orfano e la vedova, ma sconvolge le vie degli empi."
-      }
-    },
-    "10": {
-      "seq": 10,
-      "v_in": {
-        "MT": 10,
-        "VUL": 10,
-        "LXX": 10
-      },
-      "text": {
-        "WLC": "יִמְלֹ֤ךְ יְהוָ֨ה לְ/עוֹלָ֗ם אֱלֹהַ֣יִ/ךְ צִ֭יּוֹן לְ/דֹ֥ר וָ/דֹ֗ר הַֽלְלוּ יָֽהּ׃",
-        "LXX": "οὐκ ἐν τῇ δυναστείᾳ τοῦ ἵππου θελήσει, οὐδὲ ἐν ταῖς κνήμαις τοῦ ἀνδρὸς εὐδοκεῖ·",
-        "VUL": "Non in fortitudine equi voluntatem habebit,/ nec in tibiis viri beneplacitum erit ei./",
-        "SYN": "Не на силу коня смотрит Он, не к _быстроте_ ног человеческих благоволит, -",
-        "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** est roi pour l’éternité, ton Dieu, ô Sion, d’âge en âge. Alleluia !",
-        "NAB": "The LORD shall reign forever, your God, Zion, through all generations! Hallelujah!",
-        "VAT_ES": "El Señor reina eternamente,",
-        "CEI": "Il Signore regna per sempre, il tuo Dio, o Sion, per ogni generazione."
-      }
-    }
+  "2": {
+   "seq": 2,
+   "v_in": {
+    "VUL": 2,
+    "MT": 2
+   },
+   "text": {
+    "WLC": "בּוֹנֵ֣ה יְרוּשָׁלִַ֣ם יְהוָ֑ה נִדְחֵ֖י יִשְׂרָאֵ֣ל יְכַנֵּֽס׃",
+    "SYN": "ибо Он укрепляет вереи ворот твоих, благословляет сынов твоих среди тебя;",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** rebâtit Jérusalem, il rassemble les dispersés d’Israël.",
+    "NAB": "The LORD rebuilds Jerusalem, gathers the dispersed of Israel,",
+    "VAT_ES": "El Señor reconstruye a Jerusalén",
+    "CEI": "Il Signore ricostruisce Gerusalemme, raduna i dispersi d'Israele.",
+    "LXX": "οἰκοδομῶν Ἰερουσαλὴμ ὁ κύριος, καὶ τὰς διασπορὰς τοῦ Ἰσραὴλ ἐπισυνάξει·",
+    "VUL": "Ædificans Jerusalem Dominus,/ dispersiones Israëlis congregabit :/"
+   }
+  },
+  "3": {
+   "seq": 3,
+   "v_in": {
+    "VUL": 3,
+    "MT": 3
+   },
+   "text": {
+    "WLC": "הָ֭/רֹפֵא לִ/שְׁב֣וּרֵי לֵ֑ב וּ֝/מְחַבֵּ֗שׁ לְ/עַצְּבוֹתָֽ/ם׃",
+    "SYN": "утверждает в пределах твоих мир; туком пшеницы насыщает тебя;",
+    "NEO": "Il guérit ceux qui ont le cœur brisé, et il panse leurs blessures.",
+    "NAB": "Heals the brokenhearted, binds up their wounds,",
+    "VAT_ES": "sana a los que están afligidos",
+    "CEI": "Risana i cuori affranti e fascia le loro ferite;",
+    "LXX": "ὁ ἰώμενος τοὺς συντετριμμένους τὴν καρδίαν, καὶ δεσμεύων τὰ συντρίμματα αὐτῶν·",
+    "VUL": "qui sanat contritos corde,/ et alligat contritiones eorum ;/"
+   }
+  },
+  "4": {
+   "seq": 4,
+   "v_in": {
+    "VUL": 4,
+    "MT": 4
+   },
+   "text": {
+    "WLC": "מוֹנֶ֣ה מִ֭סְפָּר לַ/כּוֹכָבִ֑ים לְ֝/כֻלָּ֗/ם שֵׁמ֥וֹת יִקְרָֽא׃",
+    "SYN": "посылает слово Свое на землю; быстро течет слово Его;",
+    "NEO": "Il compte le nombre des étoiles, il les appelle toutes par leur nom.",
+    "NAB": "Numbers all the stars, calls each of them by name.",
+    "VAT_ES": "El cuenta el número de las estrellas",
+    "CEI": "egli conta il numero delle stelle e chiama ciascuna per nome.",
+    "LXX": "ὁ ἀριθμῶν πλήθη ἄστρων, καὶ πᾶσιν αὐτοῖς ὀνόματα καλῶν.",
+    "VUL": "qui numerat multitudinem stellarum,/ et omnibus eis nomina vocat./"
+   }
+  },
+  "5": {
+   "seq": 5,
+   "v_in": {
+    "VUL": 5,
+    "MT": 5
+   },
+   "text": {
+    "WLC": "גָּד֣וֹל אֲדוֹנֵ֣י/נוּ וְ/רַב כֹּ֑חַ לִ֝/תְבוּנָת֗/וֹ אֵ֣ין מִסְפָּֽר׃",
+    "SYN": "дает снег, как волну; сыплет иней, как пепел;",
+    "NEO": "Notre Seigneur est grand, et sa force est infinie, et son intelligence n’a pas de limites.",
+    "NAB": "Great is our Lord, vast in power, with wisdom beyond measure.",
+    "VAT_ES": "nuestro Señor es grande y poderoso,",
+    "CEI": "Grande è il Signore, onnipotente, la sua sapienza non ha confini.",
+    "LXX": "μέγας ὁ κύριος ἡμῶν, καὶ μεγάλη ἡ ἰσχὺς αὐτοῦ, καὶ τῆς συνέσεως αὐτοῦ οὐκ ἔστιν ἀριθμός.",
+    "VUL": "Magnus Dominus noster, et magna virtus ejus,/ et sapientiæ ejus non est numerus./"
+   }
+  },
+  "6": {
+   "seq": 6,
+   "v_in": {
+    "VUL": 6,
+    "MT": 6
+   },
+   "text": {
+    "WLC": "מְעוֹדֵ֣ד עֲנָוִ֣ים יְהוָ֑ה מַשְׁפִּ֖יל רְשָׁעִ֣ים עֲדֵי אָֽרֶץ׃",
+    "SYN": "бросает град Свой кусками; перед морозом Его кто устоит?",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** vient en aide aux humbles, il abaisse les méchants jusqu’à terre.",
+    "NAB": "The LORD sustains the poor, but casts the wicked to the ground.",
+    "VAT_ES": "El Señor eleva a los oprimidos",
+    "CEI": "Il Signore sostiene gli umili ma abbassa fino a terra gli empi.",
+    "LXX": "ἀναλαμβάνων πρᾳεῖς ὁ κύριος, ταπεινῶν δὲ ἁμαρτωλοὺς ἕως τῆς γῆς.",
+    "VUL": "Suscipiens mansuetos Dominus ;/ humilians autem peccatores usque ad terram./"
+   }
+  },
+  "7": {
+   "seq": 7,
+   "v_in": {
+    "VUL": 7,
+    "MT": 7
+   },
+   "text": {
+    "WLC": "עֱנ֣וּ לַ/יהוָ֣ה בְּ/תוֹדָ֑ה זַמְּר֖וּ לֵ/אלֹהֵ֣י/נוּ בְ/כִנּֽוֹר׃",
+    "SYN": "Пошлет слово Свое, и все растает; подует ветром Своим, и потекут воды.",
+    "NEO": "Chantez à \\+w Yahweh|strong=\"H3068\"\\+w** un cantique d’actions de grâces ; célébrez notre Dieu sur la harpe !",
+    "NAB": "Sing to the LORD with thanksgiving; with the lyre celebrate our God,",
+    "VAT_ES": "Respondan al Señor dándole gracias,",
+    "CEI": "Cantate al Signore un canto di grazie, intonate sulla cetra inni al nostro Dio.",
+    "LXX": "ἐξάρξατε τῷ κυρίῳ ἐν ἐξομολογήσει, ψάλατε τῷ θεῷ ἡμῶν ἐν κιθάρᾳ,",
+    "VUL": "Præcinite Domino in confessione ;/ psallite Deo nostro in cithara./"
+   }
+  },
+  "8": {
+   "seq": 8,
+   "v_in": {
+    "VUL": 8,
+    "MT": 8
+   },
+   "text": {
+    "WLC": "הַֽ/מְכַסֶּ֬ה שָׁמַ֨יִם בְּ/עָבִ֗ים הַ/מֵּכִ֣ין לָ/אָ֣רֶץ מָטָ֑ר הַ/מַּצְמִ֖יחַ הָרִ֣ים חָצִֽיר׃",
+    "SYN": "Он возвестил слово Свое Иакову, уставы Свои и суды Свои Израилю.",
+    "NEO": "Il couvre les cieux de nuages, et prépare la pluie pour la terre ; il fait croître l’herbe sur les montagnes.",
+    "NAB": "Who covers the heavens with clouds, provides rain for the earth, makes grass sprout on the mountains,",
+    "VAT_ES": "El cubre el cielo de nubes",
+    "CEI": "Egli copre il cielo di nubi, prepara la pioggia per la terra, fa germogliare l'erba sui monti.",
+    "LXX": "τῷ περιβάλλοντι τὸν οὐρανὸν ἐν νεφέλαις, τῷ ἑτοιμάζοντι τῇ γῇ ὑετόν, τῷ ἐξανατέλλοντι ἐν ὄρεσι χόρτον καὶ χλόην τῇ δουλείᾳ τῶν ἀνθρώπων,",
+    "VUL": "Qui operit cælum nubibus,/ et parat terræ pluviam ;/ qui producit in montibus fnum,/ et herbam servituti hominum ;/"
+   }
+  },
+  "9": {
+   "seq": 9,
+   "v_in": {
+    "VUL": 9,
+    "MT": 9
+   },
+   "text": {
+    "WLC": "נוֹתֵ֣ן לִ/בְהֵמָ֣ה לַחְמָ֑/הּ לִ/בְנֵ֥י עֹ֝רֵ֗ב אֲשֶׁ֣ר יִקְרָֽאוּ׃",
+    "SYN": "Не сделал Он того никакому _другому_ народу, и судов Его они не знают. Аллилуия.",
+    "NEO": "Il donne la nourriture au bétail, aux petits du corbeau qui crient vers lui.",
+    "NAB": "Who gives animals their food and ravens what they cry for.",
+    "VAT_ES": "dispensa su alimento al ganado,",
+    "CEI": "Provvede il cibo al bestiame, ai piccoli del corvo che gridano a lui.",
+    "LXX": "καὶ διδόντι τοῖς κτήνεσι τροφὴν αὐτῶν καὶ τοῖς νοσσοῖς τῶν κοράκων τοῖς ἐπικαλουμένοις αὐτόν.",
+    "VUL": "qui dat jumentis escam ipsorum,/ et pullis corvorum invocantibus eum./"
+   }
+  },
+  "10": {
+   "seq": 10,
+   "v_in": {
+    "VUL": 10,
+    "MT": 10
+   },
+   "text": {
+    "WLC": "לֹ֤א בִ/גְבוּרַ֣ת הַ/סּ֣וּס יֶחְפָּ֑ץ לֹֽא בְ/שׁוֹקֵ֖י הָ/אִ֣ישׁ יִרְצֶֽה׃",
+    "NEO": "Ce n’est pas dans la vigueur du cheval qu’il se complaît, ni dans les jambes de l’homme qu’il met son plaisir ;",
+    "NAB": "God takes no delight in the strength of horses, no pleasure in the runner's stride.",
+    "VAT_ES": "No le agrada el vigor de los caballos",
+    "CEI": "Non fa conto del vigore del cavallo, non apprezza l'agile corsa dell'uomo.",
+    "LXX": "οὐκ ἐν τῇ δυναστείᾳ τοῦ ἵππου θελήσει, οὐδὲ ἐν ταῖς κνήμαις τοῦ ἀνδρὸς εὐδοκεῖ·",
+    "VUL": "Non in fortitudine equi voluntatem habebit,/ nec in tibiis viri beneplacitum erit ei./"
+   }
+  },
+  "11": {
+   "seq": 11,
+   "v_in": {
+    "VUL": 11,
+    "MT": 11
+   },
+   "text": {
+    "WLC": "רוֹצֶ֣ה יְ֭הוָה אֶת יְרֵאָ֑י/ו אֶת הַֽ/מְיַחֲלִ֥ים לְ/חַסְדּֽ/וֹ׃",
+    "NEO": "\\+w Yahweh|strong=\"H3068\"\\+w** met son plaisir en ceux qui le craignent, en ceux qui espèrent en sa bonté.",
+    "NAB": "Rather the LORD takes pleasure in the devout, those who await his faithful care.",
+    "VAT_ES": "el Señor ama a los que lo temen",
+    "CEI": "Il Signore si compiace di chi lo teme, di chi spera nella sua grazia.",
+    "VUL": "Beneplacitum est Domino super timentes eum,/ et in eis qui sperant super misericordia ejus.]"
+   }
   }
+ }
 }
