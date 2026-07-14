@@ -1,64 +1,59 @@
 # Workflow Agreement
 
-Every change — code or JSON data — goes through the full gate sequence below
-before the version is bumped or anything is committed.  The version bump marks
+Every change — code or JSON data — goes through the gate sequence below
+before the version is bumped or anything is committed. The version bump marks
 a *verified* state, not an attempted one.
+
+**How this document stays current.** It contains only principles and
+procedure, layered by how fast they change:
+
+- The **gate sequence, smoke checklist, and rules** are near-permanent and
+  volume-agnostic. If a line here names a specific dataset, device, or bug,
+  that line is in the wrong place.
+- **Environment specifics** (LAN server commands, IPs, URLs, the device
+  roster) live in `TESTINGSETUP.local.md` — untracked, private, expected to
+  change freely.
+- **Regression watchpoints** (below) are explicitly temporal. Each entry is
+  pruned once it is covered by an automated test or has stayed clean for
+  three consecutive releases. That section is *supposed* to shrink.
 
 ---
 
 ## Gate Sequence
 
 ### 1. Make the Change
-- Edit source files or `data/mmdm/mmdm_catalog.json` as needed.
+- Edit source files or volume data as needed.
 - Run `npm run build` to produce a fresh `dist/app.js`.
 - Run `npm test` — all tests must pass before proceeding.
 
 ### 2. Laptop Browser Test (Live Server)
-- Start the LAN server if not already running:
-  ```
-  nohup python3 -m http.server 8080 --bind 0.0.0.0 \
-    --directory /media/howell/dev_workspace/wheel-v3 \
-    >/tmp/wheelv3-http.log 2>&1 &
-  ```
-- Open `http://127.0.0.1:8080/` in the laptop browser.
-- Verify: page loads (no black screen), wheel renders, magnifier visible,
-  basic navigation works.
+- Start the LAN server (commands in `TESTINGSETUP.local.md`).
+- Open the local URL in the laptop browser.
+- Run the smoke checklist below on the volume(s) affected by the change
+  (the default volume at minimum).
 
-### 3. LAN Phone Test (iPhone X + Moto G 2025)
-- On both devices open `http://192.168.88.167:8080/`
-  (force-refresh to clear cached bundle: long-press reload or hard-refresh).
-- **Minimum checklist — must pass on both phones:**
-  - [ ] Page loads — gray background visible, wheel nodes rendered
-  - [ ] Magnifier shows correct initial item (Volvo Penta)
-  - [ ] Tap a manufacturer → navigates IN (cylinder level appears)
-  - [ ] Parent button visible and tap navigates OUT
-  - [ ] IN/OUT migration animation plays (nodes slide, no pop/jump)
-  - [ ] Detail sector opens when a leaf node is at the magnifier
-- **iPhone X extras** (WebKit-specific regressions):
-  - [ ] Animation translates + rotates in sync (no lag between the two)
-  - [ ] No "pop" to final position (rAF timing guard)
-- Stop here and fix if anything fails.  Do not bump.
+### 3. Phone Test
+- Open the LAN URL on the phones (force-refresh to clear the cached
+  bundle). Device roster and per-device browsers: `TESTINGSETUP.local.md`.
+- **Tier by bump type:**
+  - **Patch:** smoke checklist on the primary browser of each engine —
+    one WebKit device, one Blink device.
+  - **Minor (feature boundary), or any bump that will be deployed:** full
+    device matrix.
+  - **Data-only change:** patch tier, on the affected volume.
+- Run the current regression watchpoints (below) on the WebKit device.
+- Stop here and fix if anything fails. Do not bump.
 
 ### 4. Bump Version
 - Once all gates pass:
   ```
-  ./bump-version.sh patch "<one-line description of change>"
+  ./bump-version.sh [patch|minor|major] "<one-line description>"
   ```
-- The script will ask **9 yes/no questions** before touching any files.
-  Answer `n` to any of them and it aborts — go fix the gap and re-run.
-  The questions mirror the gate sequence above:
-  1. Live Server (laptop browser)
-  2. Chrome on iPhone X — LAN URL
-  3. Opera on iPhone X — LAN URL
-  4. DuckDuckGo on iPhone X — LAN URL
-  5. Safari on iPhone X — LAN URL
-  6. Chrome on Moto G 2025 — LAN URL
-  7. Firefox on Moto G 2025 — LAN URL
-  8. DuckDuckGo on Moto G 2025 — LAN URL
-  9. Browser on Kyocera E4830NC — LAN URL
-- After all 9 `y` answers the script updates `package.json`, `README.md`,
-  and `CHANGELOG.md`.
-- Run `npm run build` once more so `dist/app.js` embeds the new version.
+- The script asks for a per-gate attestation (tiered to the bump type)
+  before touching any files. Answer `n` to any and it aborts — go fix the
+  gap and re-run.
+- After the bump, run `npm run build` once more so `dist/app.js` embeds
+  the new version.
 
 ### 5. Commit
 - Stage only the intended files (never `git add .` blindly):
@@ -66,26 +61,52 @@ a *verified* state, not an attempted one.
   git add <changed files> package.json README.md CHANGELOG.md
   git commit -m "<type>: <summary>"
   ```
-- Repeat gates 1–5 for the next change.  Accumulate commits locally.
+- Repeat gates 1–5 for the next change. Accumulate commits locally.
 
 ### 6. Push and Merge (once or twice daily)
-- When ready to publish the day's work, push a branch and open a PR:
-  ```
-  git push origin main:refs/heads/<branch-name>
-  ```
-- Open the PR at `https://github.com/mmdm-it/wheel/pulls`.
+- Push a branch and open a PR (see `TESTINGSETUP.local.md` for the
+  PR-first routine and repo URLs).
 - Wait for the `test` CI check to go green, then merge.
-- Pull locally to sync:
-  ```
-  git checkout main && git pull --ff-only origin main
-  ```
+- Pull locally to sync: `git checkout main && git pull --ff-only origin main`.
 
 ### 7. Sync to Server
-- Deploy after pulling (step 6 above):
-  ```
-  ./sync-to-server.sh
-  ```
-- Spot-check at `https://mmdm.it/` on at least one phone.
+- Deploy after pulling: `./sync-to-server.sh`
+- Spot-check the production URL on at least one phone.
+
+---
+
+## Smoke Checklist (volume-agnostic)
+
+Every item must hold for whichever volume is under test. None of these
+lines may name a specific dataset, item, or level.
+
+- [ ] App loads — themed background visible, focus ring nodes rendered
+      (no black screen)
+- [ ] Magnifier shows the volume's configured start item
+- [ ] Ring rotates under drag; momentum carries after release; selection
+      snaps to the magnifier
+- [ ] Tapping a node with children navigates IN — next level appears
+- [ ] Parent button is visible and tapping it navigates OUT
+- [ ] IN/OUT migration animation plays (nodes slide; no pop or jump)
+- [ ] With a leaf item at the magnifier, the Detail Sector opens and
+      shows content
+
+---
+
+## Regression Watchpoints (temporal — prune aggressively)
+
+Manual checks for recently fixed bugs that automated tests cannot yet
+cover. **Pruning rule:** each entry is either promoted to an automated
+test or deleted after three consecutive releases passing clean. If this
+section exceeds five entries, stop adding features and convert the oldest
+to tests.
+
+| Watchpoint | Origin | Added |
+|---|---|---|
+| iOS WebKit: migration translate + rotate stay synchronized (no lag between the two) | v3.8.34 rAF timing fix | 2026-02 |
+| iOS WebKit: no "pop" to final position at animation end | v3.8.34 rAF timing guard | 2026-02 |
+| Tap-to-magnify works immediately after an IN migration | v3.8.38 pointerup/click race | 2026-02 |
+| Android: parent-button tap and OUT migration work on touch (no duplicate-touch swallow) | v3.8.39 | 2026-02 |
 
 ---
 
@@ -97,10 +118,12 @@ a *verified* state, not an attempted one.
 - **Test before you bump.** A version number marks a verified state.
 - **One topic per commit.** Code fix, data change, and doc update can be
   separate commits if they're independent.
-- **Both phones, every UI change.** iPhone X catches WebKit regressions.
-  Moto G catches Android/Chrome regressions.  A fix that breaks one of them
-  is not done.
+- **Both engines, every UI change.** One WebKit device catches Safari/iOS
+  regressions; one Blink device catches Android/Chrome regressions. A fix
+  that breaks one of them is not done. (Current roster:
+  `TESTINGSETUP.local.md`.)
 - **JSON data changes follow the same gates** as code changes — a bad
-  catalog can cause a black screen just as surely as bad JS.
-- Minor bumps (e.g., 3.8 → 3.9) mark feature boundaries; patch bumps
+  volume file can cause a black screen just as surely as bad JS.
+- **Versioning policy** (what gets a number, tags, majors):
+  `docs/VERSIONING.md`. Minor bumps mark feature boundaries; patch bumps
   cover everything else.
