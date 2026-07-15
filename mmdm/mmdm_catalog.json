@@ -1598,21 +1598,6 @@
                                     }
                                 }
                             },
-                            "Selva Marine": {
-                                "year_founded": 1954,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "2": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 83
-                            },
                             "Aifo": {
                                 "year_founded": 1975,
                                 "year_dissolved": 2003,
@@ -1776,6 +1761,29 @@
                                 "year_founded": 1909,
                                 "year_dissolved": null,
                                 "cylinders": {
+                                    "8": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "16": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "20": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    }
+                                },
+                                "sort_number": 67
+                            },
+                            "Deutz": {
+                                "year_founded": 1864,
+                                "year_dissolved": null,
+                                "cylinders": {
                                     "1": {
                                         "sort_number": 1,
                                         "models": []
@@ -1787,20 +1795,13 @@
                                     "4": {
                                         "sort_number": 3,
                                         "models": []
-                                    }
-                                },
-                                "sort_number": 67
-                            },
-                            "Deutz": {
-                                "year_founded": 1864,
-                                "year_dissolved": null,
-                                "cylinders": {
+                                    },
                                     "6": {
-                                        "sort_number": 1,
+                                        "sort_number": 4,
                                         "models": []
                                     },
                                     "8": {
-                                        "sort_number": 2,
+                                        "sort_number": 5,
                                         "models": []
                                     }
                                 },
@@ -1833,16 +1834,12 @@
                                 "year_founded": 1916,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -1852,16 +1849,24 @@
                                 "year_founded": 1758,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "16": {
+                                        "sort_number": 5,
                                         "models": []
                                     }
                                 },
@@ -1871,11 +1876,11 @@
                                 "year_founded": 1968,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "2": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "3": {
                                         "sort_number": 2,
                                         "models": []
                                     },
@@ -1890,11 +1895,11 @@
                                 "year_founded": 1864,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "6": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "8": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     }
@@ -1937,16 +1942,20 @@
                                 "year_founded": 1918,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -1964,8 +1973,16 @@
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "3": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 5,
                                         "models": []
                                     }
                                 },
@@ -1975,12 +1992,20 @@
                                 "year_founded": 1916,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "6": {
+                                    "2": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "8": {
+                                    "3": {
                                         "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -2010,11 +2035,11 @@
                                 "year_founded": 1964,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "2": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "3": {
                                         "sort_number": 2,
                                         "models": []
                                     },
@@ -2045,6 +2070,10 @@
                                     "6": {
                                         "sort_number": 3,
                                         "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 4,
+                                        "models": []
                                     }
                                 },
                                 "sort_number": 76
@@ -2061,8 +2090,12 @@
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "3": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -2072,12 +2105,24 @@
                                 "year_founded": 1868,
                                 "year_dissolved": 1994,
                                 "cylinders": {
-                                    "6": {
+                                    "3": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "8": {
+                                    "4": {
                                         "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "5": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 5,
                                         "models": []
                                     }
                                 },
@@ -2106,16 +2151,20 @@
                                 "year_founded": 1904,
                                 "year_dissolved": 1984,
                                 "cylinders": {
-                                    "1": {
+                                    "2": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "4": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "6": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -2125,12 +2174,16 @@
                                 "year_founded": 1864,
                                 "year_dissolved": 1977,
                                 "cylinders": {
-                                    "6": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "8": {
+                                    "6": {
                                         "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -2140,15 +2193,15 @@
                                 "year_founded": 1877,
                                 "year_dissolved": 1979,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -2159,11 +2212,11 @@
                                 "year_founded": 1893,
                                 "year_dissolved": 1967,
                                 "cylinders": {
-                                    "6": {
+                                    "1": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "8": {
+                                    "2": {
                                         "sort_number": 2,
                                         "models": []
                                     }
@@ -2174,20 +2227,16 @@
                                 "year_founded": 1808,
                                 "year_dissolved": 1986,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "12": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "18": {
                                         "sort_number": 3,
-                                        "models": []
-                                    },
-                                    "6": {
-                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -3500,15 +3549,15 @@
                                 "year_founded": 1834,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "8": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -3524,16 +3573,24 @@
                                 "year_founded": 1834,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "16": {
+                                        "sort_number": 5,
                                         "models": []
                                     }
                                 },
@@ -3563,15 +3620,15 @@
                                 "year_founded": 1946,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "8": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -3595,7 +3652,7 @@
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "3": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -3605,12 +3662,6 @@
                             "Callesen": {
                                 "year_founded": null,
                                 "year_dissolved": null,
-                                "cylinders": {},
-                                "sort_number": 12
-                            },
-                            "Burmeister & Wain": {
-                                "year_founded": 1846,
-                                "year_dissolved": 1980,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
@@ -3619,8 +3670,23 @@
                                     "2": {
                                         "sort_number": 2,
                                         "models": []
+                                    }
+                                },
+                                "sort_number": 12
+                            },
+                            "Burmeister & Wain": {
+                                "year_founded": 1846,
+                                "year_dissolved": 1980,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
                                     },
-                                    "4": {
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -3667,15 +3733,15 @@
                                 "year_founded": 1916,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "3": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "4": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "6": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -3686,12 +3752,16 @@
                                 "year_founded": 1942,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "6": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "8": {
+                                    "6": {
                                         "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -3711,6 +3781,10 @@
                                     },
                                     "8": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -3743,15 +3817,15 @@
                                 "year_founded": 1933,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "3": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "4": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "6": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -3762,15 +3836,15 @@
                                 "year_founded": 1921,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -3781,39 +3855,20 @@
                                 "year_founded": 1896,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "8": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
                                 },
                                 "sort_number": 43
-                            },
-                            "Suzuki": {
-                                "year_founded": 1909,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 90
                             },
                             "Toyota": {
                                 "year_founded": 1937,
@@ -4128,16 +4183,20 @@
                                 "year_founded": 1955,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -4147,53 +4206,38 @@
                                 "year_founded": 1907,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "2": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "3": {
                                         "sort_number": 2,
                                         "models": []
                                     },
                                     "4": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
                                 "sort_number": 18
                             },
-                            "Honda Marine": {
-                                "year_founded": 1946,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 35
-                            },
                             "IHI": {
                                 "year_founded": 1853,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "8": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -4204,15 +4248,15 @@
                                 "year_founded": 1896,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "8": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -4223,16 +4267,12 @@
                                 "year_founded": 1920,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -4247,15 +4287,15 @@
                                 "year_founded": 1967,
                                 "year_dissolved": 1999,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -4266,15 +4306,15 @@
                                 "year_founded": 1967,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -4317,16 +4357,12 @@
                                 "year_founded": 1941,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "8": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "12": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -4377,15 +4413,15 @@
                                 "year_founded": 1900,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "8": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -4408,10 +4444,6 @@
                                     "2": {
                                         "sort_number": 2,
                                         "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
                                     }
                                 },
                                 "sort_number": 87
@@ -4426,10 +4458,6 @@
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -4446,16 +4474,36 @@
                                     "2": {
                                         "sort_number": 2,
                                         "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
                                     }
                                 },
                                 "sort_number": 7
                             }
                         },
                         "sort_number": 14
+                    },
+                    "Spagna": {
+                        "manufacturers": {
+                            "Guascor": {
+                                "year_founded": 1966,
+                                "year_dissolved": null,
+                                "sort_number": 29.25,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                }
+                            }
+                        },
+                        "sort_number": 15
                     }
                 },
                 "sort_number": 1
@@ -4835,8 +4883,16 @@
                                 "year_dissolved": null,
                                 "sort_number": 63,
                                 "cylinders": {
-                                    "8": {
+                                    "4": {
                                         "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
                                         "families": {
                                             "Small Block": {
                                                 "sort_number": 1,
@@ -4866,8 +4922,12 @@
                                 "year_dissolved": null,
                                 "sort_number": 19,
                                 "cylinders": {
-                                    "6": {
+                                    "4": {
                                         "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
                                         "families": {
                                             "71": {
                                                 "sort_number": 1,
@@ -4884,6 +4944,18 @@
                                                 ]
                                             }
                                         }
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "16": {
+                                        "sort_number": 5,
+                                        "models": []
                                     }
                                 }
                             },
@@ -4901,6 +4973,10 @@
                                     },
                                     "4": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -4921,6 +4997,10 @@
                                     "4": {
                                         "sort_number": 3,
                                         "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
+                                        "models": []
                                     }
                                 },
                                 "sort_number": 29
@@ -4940,6 +5020,10 @@
                                     "4": {
                                         "sort_number": 3,
                                         "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
+                                        "models": []
                                     }
                                 },
                                 "sort_number": 51
@@ -4955,10 +5039,6 @@
                                     "2": {
                                         "sort_number": 2,
                                         "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
                                     }
                                 },
                                 "sort_number": 64
@@ -4967,8 +5047,12 @@
                                 "year_founded": 1899,
                                 "year_dissolved": 1958,
                                 "cylinders": {
-                                    "12": {
+                                    "8": {
                                         "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 2,
                                         "models": [
                                             {
                                                 "engine_model": "Liberty 12",
@@ -5001,6 +5085,10 @@
                                                 "sort_number": 1
                                             }
                                         ]
+                                    },
+                                    "12": {
+                                        "sort_number": 2,
+                                        "models": []
                                     }
                                 },
                                 "sort_number": 34
@@ -5038,8 +5126,12 @@
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "3": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -5049,16 +5141,20 @@
                                 "year_founded": 1937,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "2": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "3": {
                                         "sort_number": 2,
                                         "models": []
                                     },
                                     "4": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -5068,15 +5164,15 @@
                                 "year_founded": 1837,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "3": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "4": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "6": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -5087,15 +5183,15 @@
                                 "year_founded": 1906,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -5144,16 +5240,12 @@
                                 "year_founded": 1915,
                                 "year_dissolved": 1999,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -5171,8 +5263,16 @@
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "6": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 5,
                                         "models": []
                                     }
                                 },
@@ -5182,16 +5282,12 @@
                                 "year_founded": 1908,
                                 "year_dissolved": 1972,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -5201,16 +5297,12 @@
                                 "year_founded": 1946,
                                 "year_dissolved": 2008,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -5222,212 +5314,15 @@
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 1",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
+                                        "models": []
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 2",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
+                                        "models": []
                                     },
                                     "3": {
                                         "sort_number": 3,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 3",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "4": {
-                                        "sort_number": 4,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 4",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "5": {
-                                        "sort_number": 5,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 5",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "6": {
-                                        "sort_number": 6,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 6",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "7": {
-                                        "sort_number": 7,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 7",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "8": {
-                                        "sort_number": 8,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 8",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "9": {
-                                        "sort_number": 9,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 9",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "10": {
-                                        "sort_number": 10,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 10",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "11": {
-                                        "sort_number": 11,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 11",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "12": {
-                                        "sort_number": 12,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 12",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "13": {
-                                        "sort_number": 13,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 13",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "14": {
-                                        "sort_number": 14,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 14",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "15": {
-                                        "sort_number": 15,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 15",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "16": {
-                                        "sort_number": 16,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 16",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "17": {
-                                        "sort_number": 17,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 17",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "18": {
-                                        "sort_number": 18,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 18",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
-                                    },
-                                    "19": {
-                                        "sort_number": 19,
-                                        "models": [
-                                            {
-                                                "sort_number": 1,
-                                                "engine_model": "Test Engine 19",
-                                                "year_introduced": 1905,
-                                                "year_discontinued": 1956
-                                            }
-                                        ]
+                                        "models": []
                                     }
                                 },
                                 "sort_number": 55
@@ -5436,16 +5331,12 @@
                                 "year_founded": 1987,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -5455,16 +5346,12 @@
                                 "year_founded": null,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "8": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "12": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -5474,15 +5361,15 @@
                                 "year_founded": 1925,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -5493,8 +5380,16 @@
                                 "year_founded": 1910,
                                 "year_dissolved": 1974,
                                 "cylinders": {
-                                    "12": {
+                                    "4": {
                                         "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 3,
                                         "models": [
                                             {
                                                 "engine_model": "Defender",
@@ -5514,15 +5409,15 @@
                                 "year_founded": 1901,
                                 "year_dissolved": 1969,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "12": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "16": {
                                         "sort_number": 3,
                                         "models": []
                                     }
@@ -5533,20 +5428,95 @@
                                 "year_founded": 1833,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "8": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "12": {
                                         "sort_number": 3,
                                         "models": []
                                     }
                                 },
                                 "sort_number": 15
+                            },
+                            "Allis Chalmers": {
+                                "year_founded": 1901,
+                                "year_dissolved": null,
+                                "sort_number": 3.5,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                }
+                            },
+                            "Climax Engineering": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "sort_number": 14.5,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                }
+                            },
+                            "International": {
+                                "year_founded": 1902,
+                                "year_dissolved": null,
+                                "sort_number": 38.5,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 3,
+                                        "models": []
+                                    }
+                                }
+                            },
+                            "Kay Industries": {
+                                "year_founded": null,
+                                "year_dissolved": null,
+                                "sort_number": 43.5,
+                                "cylinders": {
+                                    "4": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 2,
+                                        "models": []
+                                    }
+                                }
+                            },
+                            "Mack": {
+                                "year_founded": 1900,
+                                "year_dissolved": null,
+                                "sort_number": 57.5,
+                                "cylinders": {
+                                    "6": {
+                                        "sort_number": 1,
+                                        "models": []
+                                    }
+                                }
                             }
                         },
                         "sort_number": 1
@@ -5564,47 +5534,20 @@
                                     "2": {
                                         "sort_number": 2,
                                         "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
                                     }
                                 },
                                 "sort_number": 60
-                            },
-                            "Briggs & Stratton": {
-                                "year_founded": 1908,
-                                "year_dissolved": null,
-                                "cylinders": {
-                                    "1": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                },
-                                "sort_number": 9
                             },
                             "Universal": {
                                 "year_founded": 1963,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "2": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
                                     "4": {
-                                        "sort_number": 3,
+                                        "sort_number": 2,
                                         "models": []
                                     }
                                 },
@@ -5614,16 +5557,8 @@
                                 "year_founded": 1946,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "8": {
                                         "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "2": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
@@ -5648,16 +5583,20 @@
                                 "year_founded": 1914,
                                 "year_dissolved": 1942,
                                 "cylinders": {
-                                    "1": {
+                                    "4": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "6": {
                                         "sort_number": 2,
                                         "models": []
                                     },
-                                    "4": {
+                                    "8": {
                                         "sort_number": 3,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 4,
                                         "models": []
                                     }
                                 },
@@ -5678,6 +5617,18 @@
                                     "4": {
                                         "sort_number": 3,
                                         "models": []
+                                    },
+                                    "6": {
+                                        "sort_number": 4,
+                                        "models": []
+                                    },
+                                    "8": {
+                                        "sort_number": 5,
+                                        "models": []
+                                    },
+                                    "12": {
+                                        "sort_number": 6,
+                                        "models": []
                                     }
                                 },
                                 "sort_number": 45
@@ -5686,16 +5637,12 @@
                                 "year_founded": 1908,
                                 "year_dissolved": null,
                                 "cylinders": {
-                                    "1": {
+                                    "6": {
                                         "sort_number": 1,
                                         "models": []
                                     },
-                                    "2": {
+                                    "8": {
                                         "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "4": {
-                                        "sort_number": 3,
                                         "models": []
                                     }
                                 },
