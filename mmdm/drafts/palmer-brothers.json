@@ -1,0 +1,103 @@
+{
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Palmer Brothers",
+  "_dossier": "012c Palmer Brothers — best-documented of the quartet (Gas Engine Magazine catalog study); founded corrected 1896→1894 (first engine); dissolved ~1975; Four/Six hedged per ruling.",
+  "node": {
+    "year_founded": 1894,
+    "year_dissolved": 1975,
+    "sort_number": 75,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "palmer:model-b",
+            "engine_model": "Model B",
+            "year_introduced": 1910,
+            "year_discontinued": 1925,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1½ HP single (documented, 1910). The Palmers were telephone-makers from Mianus Electric who spent $5,000 perfecting the make-and-break sparker.",
+              "description": "Un cavallo e mezzo di storia industriale: i fratelli Palmer costruivano telefoni quando, nel 1894, vollero un motore per la loro barca sul fiume Mianus — e se lo fecero da soli, spendendo cinquemila dollari per perfezionare lo 'sparker'. Il Model B è il nipote diretto di quella testardaggine."
+            }
+          },
+          {
+            "id": "palmer:zr-1",
+            "engine_model": "ZR-1",
+            "year_introduced": 1946,
+            "year_discontinued": 1960,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "7 HP single, c. 1946 (documented) — the one-lunger surviving into the postwar world.",
+              "description": "Sette cavalli monocilindrici nel mondo del dopoguerra: lo ZR-1 dimostrò che per una passera da lavoro il one-lunger non era nostalgia, era ragioneria."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "palmer:q-1",
+            "engine_model": "Q-1",
+            "year_introduced": 1916,
+            "year_discontinued": 1930,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2 HP model, 1916 (documented).",
+              "description": "Il piccolo Q-1 del 1916: due cavalli di bronzo e ghisa per i tender e le barchette della domenica."
+            }
+          },
+          {
+            "id": "palmer:nr-2",
+            "engine_model": "NR-2",
+            "year_introduced": 1923,
+            "year_discontinued": 1940,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "12 HP twin, 1923 (documented).",
+              "description": "Il bicilindrico da dodici cavalli: la taglia da lavoro vero, con la firma elettrotecnica di famiglia nell'accensione."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "palmer:four-27",
+            "engine_model": "Four 27 HP",
+            "year_introduced": 1935,
+            "year_discontinued": 1965,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Later four; designation hedged (?).",
+              "description": "Il quattro cilindri dell'età adulta della casa di Cos Cob, tra marinizzazioni e produzione propria: ventisette cavalli da peschereccio minore."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "palmer:six-60",
+            "engine_model": "Six 60 HP",
+            "year_introduced": 1940,
+            "year_discontinued": 1970,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Later six; designation hedged (?).",
+              "description": "Il sei che accompagnò Palmer fino agli anni '70: ottant'anni dopo il primo 3×3 dei fratelli telefonisti, la ditta spegneva i motori con la stessa discrezione con cui li aveva accesi."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

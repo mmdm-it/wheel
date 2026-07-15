@@ -4601,225 +4601,707 @@
                             "Caterpillar": {
                                 "year_founded": 1925,
                                 "year_dissolved": null,
+                                "sort_number": 13,
                                 "cylinders": {
                                     "4": {
                                         "sort_number": 1,
-                                        "models": [
-                                            {
-                                                "engine_model": "3054",
-                                                "year_introduced": 1990,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
-                                            },
-                                            {
-                                                "engine_model": "3056",
-                                                "year_introduced": 1992,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
-                                            },
-                                            {
-                                                "engine_model": "C4.4",
-                                                "year_introduced": 2004,
-                                                "year_discontinued": null,
-                                                "sort_number": 3
-                                            },
-                                            {
-                                                "engine_model": "C6.6",
-                                                "year_introduced": 2006,
-                                                "year_discontinued": null,
-                                                "sort_number": 4
+                                        "models": [],
+                                        "families": {
+                                            "C": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3054",
+                                                        "engine_model": "3054",
+                                                        "year_introduced": 1995,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "4.4L four of the 3000 small line (stub adopted).",
+                                                            "description": "Il piccolo quattro della gamma compatta: ausiliari, verricelli e propulsioni minori con la livrea gialla di Peoria."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:c4.4",
+                                                        "engine_model": "C4.4",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Modern 4.4L ACERT four; workboat and genset staple.",
+                                                            "description": "Il quattro moderno: common rail, elettronica ACERT, e la solita promessa gialla — ore, ore, ore."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     },
                                     "6": {
                                         "sort_number": 2,
-                                        "models": [
-                                            {
-                                                "engine_model": "3306",
-                                                "year_introduced": 1973,
-                                                "year_discontinued": 2010,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "3300": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3306",
+                                                        "engine_model": "3306",
+                                                        "year_introduced": 1973,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "10.5L six; fishing-fleet stalwart (stub adopted).",
+                                                            "description": "Il sei da 10,5 litri delle flotte pescherecce: semplice, rigenerabile all'infinito, amatissimo dai motoristi di banchina."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "C7",
-                                                "year_introduced": 2003,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
+                                            "3400": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3406",
+                                                        "engine_model": "3406",
+                                                        "year_introduced": 1973,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "THE Cat six: 14.6L, gens A/B/C/E 1973-2007; marine ratings to 800 hp.",
+                                                            "description": "Il sei per antonomasia: 14,6 litri, quattro generazioni, trentaquattro anni di produzione. In mare spinse pescherecci, rimorchiatori e sportfisherman — il suono della serietà."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "C9",
-                                                "year_introduced": 2003,
-                                                "year_discontinued": null,
-                                                "sort_number": 3
+                                            "D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:d11000",
+                                                        "engine_model": "D11000",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1955,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "One of the three 1938 marine debut models (~).",
+                                                            "description": "Uno dei tre del debutto marino del 1938: sei cilindri a 900 giri, quando Caterpillar 'andò per mare' per la prima volta."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:d13000",
+                                                        "engine_model": "D13000",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1960,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Six-cylinder, 100 hp at 900 rpm; the 1938 marine debut's centerpiece.",
+                                                            "description": "Il cuore del debutto 1938: cento cavalli a novecento giri, ghisa a vista e pazienza infinita. Con il D13000 la potenza da trattore imparò il sale."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "C13",
-                                                "year_introduced": 2007,
-                                                "year_discontinued": null,
-                                                "sort_number": 4
-                                            },
-                                            {
-                                                "engine_model": "C15",
-                                                "year_introduced": 1999,
-                                                "year_discontinued": 2010,
-                                                "sort_number": 5
-                                            },
-                                            {
-                                                "engine_model": "C18",
-                                                "year_introduced": 2007,
-                                                "year_discontinued": null,
-                                                "sort_number": 6
-                                            },
-                                            {
-                                                "engine_model": "6C",
-                                                "year_introduced": 1985,
-                                                "year_discontinued": 2005,
-                                                "sort_number": 7
-                                            },
-                                            {
-                                                "engine_model": "6CT",
-                                                "year_introduced": 1988,
-                                                "year_discontinued": 2010,
-                                                "sort_number": 8
+                                            "C": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3056",
+                                                        "engine_model": "3056",
+                                                        "year_introduced": 1997,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "6.0L SIX (Perkins-based) — refiled from the 4-bucket where it sat misplaced, like its cousin C6.6.",
+                                                            "description": "Sei cilindri da sei litri su base Perkins, anch'esso restituito allo scomparto corretto: giaceva tra i quattro per lo stesso errore d'archivio del C6.6. Gamma leggera, vocazione da lavoro."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:c6.6",
+                                                        "engine_model": "C6.6",
+                                                        "year_introduced": 2006,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "6.6L SIX — refiled from the 4-bucket where it sat misplaced.",
+                                                            "description": "Sei cilindri da 6,6 litri, restituito allo scomparto giusto: giaceva tra i quattro per un errore d'archivio ora sanato."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:c7",
+                                                        "engine_model": "C7",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": 2010,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "7.2L six (stub adopted).",
+                                                            "description": "Il 7 litri elettronico della generazione ACERT, diffuso su motoryacht di media taglia."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:c9",
+                                                        "engine_model": "C9",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "9.3L six (stub adopted).",
+                                                            "description": "Nove litri per il diporto veloce e il lavoro: il gradino di mezzo della gamma C."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:c12",
+                                                        "engine_model": "C12",
+                                                        "year_introduced": 1996,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 5,
+                                                        "data": {
+                                                            "key_notes": "12L six (added on canon).",
+                                                            "description": "Dodici litri di transizione tra la vecchia scuola meccanica e l'era elettronica piena."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:c13",
+                                                        "engine_model": "C13",
+                                                        "year_introduced": 2004,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 6,
+                                                        "data": {
+                                                            "key_notes": "12.5L six (stub adopted).",
+                                                            "description": "L'erede del C12 in chiave ACERT, onnipresente sulle plance dei trawler oceanici."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:c15",
+                                                        "engine_model": "C15",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 7,
+                                                        "data": {
+                                                            "key_notes": "15.2L six (stub adopted).",
+                                                            "description": "Quindici litri, discendente diretto del 3406E: il grande sei moderno."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:c18",
+                                                        "engine_model": "C18",
+                                                        "year_introduced": 2005,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 8,
+                                                        "data": {
+                                                            "key_notes": "18.1L six; to ~1,150 hp marine (stub adopted).",
+                                                            "description": "Il vertice dei sei cilindri: oltre mille cavalli per yacht veloci e mezzi militari leggeri."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     },
                                     "8": {
                                         "sort_number": 3,
-                                        "models": [
-                                            {
-                                                "engine_model": "3208",
-                                                "year_introduced": 1975,
-                                                "year_discontinued": 1999,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "3200": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3208",
+                                                        "engine_model": "3208",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The ubiquitous 10.4L V8; naturally-aspirated to 435 hp TA marine. Possibly the most common yacht diesel of its era.",
+                                                            "description": "Il V8 di tutti: 10,4 litri, dal peschereccio al motoryacht, forse il diesel da diporto più diffuso della sua epoca. Non il più raffinato — il più presente."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:3208t",
+                                                        "engine_model": "3208T",
+                                                        "year_introduced": 1981,
+                                                        "year_discontinued": 1999,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Turbo variants of the 3208 (stub adopted).",
+                                                            "description": "La versione turbo del campione di diffusione: più cavalli, stessa indole bonaria."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "3208T",
-                                                "year_introduced": 1981,
-                                                "year_discontinued": 1999,
-                                                "sort_number": 2
+                                            "3500": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3508",
+                                                        "engine_model": "3508",
+                                                        "year_introduced": 1981,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V8 of the 3500 heavy family (~).",
+                                                            "description": "L'otto della famiglia pesante 3500: tugboat, draghe, generazione — la taglia da lavoro vero."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "C32",
-                                                "year_introduced": 2010,
-                                                "year_discontinued": null,
-                                                "sort_number": 3
-                                            },
-                                            {
-                                                "engine_model": "V504M",
-                                                "year_introduced": 1970,
-                                                "year_discontinued": 1990,
-                                                "sort_number": 4
-                                            },
-                                            {
-                                                "engine_model": "V555M",
-                                                "year_introduced": 1975,
-                                                "year_discontinued": 1995,
-                                                "sort_number": 5
-                                            },
-                                            {
-                                                "engine_model": "V903M",
-                                                "year_introduced": 1980,
-                                                "year_discontinued": 2000,
-                                                "sort_number": 6
+                                            "D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:d17000",
+                                                        "engine_model": "D17000",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1955,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The 1938 V8: 135 hp at 900 rpm.",
+                                                            "description": "Il V8 del debutto: 135 cavalli placidi. Un otto cilindri d'anteguerra che parlava già la lingua delle sale macchine."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:d379",
+                                                        "engine_model": "D379",
+                                                        "year_introduced": 1965,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "V8 of the classic D-line — refiled from the 12-bucket.",
+                                                            "description": "L'otto della serie D classica, restituito al suo scomparto: giaceva tra i dodici per svista d'archivio."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     },
                                     "12": {
                                         "sort_number": 4,
-                                        "models": [
-                                            {
-                                                "engine_model": "D379",
-                                                "year_introduced": 1965,
-                                                "year_discontinued": 1985,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "3400": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3412",
+                                                        "engine_model": "3412",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "27L V12, to ~1,400 hp marine (stub adopted).",
+                                                            "description": "Il V12 della serie 3400: ventisette litri, quattordicicento cavalli nelle tarature spinte, cuore di sportfisherman e pattugliatori."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:3412c",
+                                                        "engine_model": "3412C",
+                                                        "year_introduced": 1993,
+                                                        "year_discontinued": 2007,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Late electronic-era 3412 (stub adopted).",
+                                                            "description": "L'evoluzione matura del 3412, verso l'era elettronica."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "D398",
-                                                "year_introduced": 1968,
-                                                "year_discontinued": 1990,
-                                                "sort_number": 2
+                                            "3500": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3512",
+                                                        "engine_model": "3512",
+                                                        "year_introduced": 1981,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V12 of the 3500 series (added on canon); megayacht and workboat mainstay.",
+                                                            "description": "Il dodici della famiglia 3500: dagli anni '80 a oggi, la spina dorsale di megayacht, rimorchiatori e traghetti."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "D399",
-                                                "year_introduced": 1972,
-                                                "year_discontinued": 1995,
-                                                "sort_number": 3
+                                            "D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:d398",
+                                                        "engine_model": "D398",
+                                                        "year_introduced": 1965,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V12 of the classic D-line (stub adopted).",
+                                                            "description": "Il dodici della vecchia guardia: prima dei 3500, era lui il grande Cat delle flotte."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "3412",
-                                                "year_introduced": 1979,
-                                                "year_discontinued": 2006,
-                                                "sort_number": 4
-                                            },
-                                            {
-                                                "engine_model": "3412C",
-                                                "year_introduced": 1988,
-                                                "year_discontinued": 2010,
-                                                "sort_number": 5
-                                            },
-                                            {
-                                                "engine_model": "C32",
-                                                "year_introduced": 2010,
-                                                "year_discontinued": null,
-                                                "sort_number": 6
+                                            "C": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:c32",
+                                                        "engine_model": "C32",
+                                                        "year_introduced": 2005,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "32L V12 to 1,900+ hp (duplicate 8-bucket stub removed).",
+                                                            "description": "Il grande dodici moderno: fino a millenovecento cavalli. Il doppione che ne esisteva tra gli otto cilindri è stato soppresso — ne basta uno, ed è questo."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     },
                                     "16": {
                                         "sort_number": 5,
-                                        "models": [
-                                            {
-                                                "engine_model": "3516",
-                                                "year_introduced": 1982,
-                                                "year_discontinued": 2008,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "3500": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:3516",
+                                                        "engine_model": "3516",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V16 3500 (stub adopted).",
+                                                            "description": "Il sedici capostipite della famiglia 3500: potenza da nave in formato modulare."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:3516b",
+                                                        "engine_model": "3516B",
+                                                        "year_introduced": 1995,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Electronic 3516 (stub adopted).",
+                                                            "description": "La generazione elettronica del grande sedici."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cat:3516c",
+                                                        "engine_model": "3516C",
+                                                        "year_introduced": 2005,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Current-era 3516 (stub adopted).",
+                                                            "description": "L'attuale evoluzione: oltre tremila cavalli di ammiraglia gialla."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "3516B",
-                                                "year_introduced": 1995,
-                                                "year_discontinued": 2012,
-                                                "sort_number": 2
+                                            "D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:d399",
+                                                        "engine_model": "D399",
+                                                        "year_introduced": 1967,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V16 of the classic D-line — refiled from the 12-bucket.",
+                                                            "description": "Il sedici della serie D, anch'esso restituito al proprio scomparto: la taglia massima della vecchia scuola."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "3516C",
-                                                "year_introduced": 2008,
-                                                "year_discontinued": null,
-                                                "sort_number": 3
-                                            },
-                                            {
-                                                "engine_model": "C175-16",
-                                                "year_introduced": 2018,
-                                                "year_discontinued": null,
-                                                "sort_number": 4
+                                            "C": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "cat:c175-16",
+                                                        "engine_model": "C175-16",
+                                                        "year_introduced": 2008,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "85L V16, 4,000 hp class (stub adopted).",
+                                                            "description": "Il colosso: ottantacinque litri, quattromila cavalli. Il punto più alto mai raggiunto dal giallo Caterpillar in una sala macchine."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     }
-                                },
-                                "sort_number": 13
+                                }
                             },
                             "Cummins": {
                                 "year_founded": 1919,
                                 "year_dissolved": null,
+                                "sort_number": 16,
                                 "cylinders": {
                                     "4": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "B": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:4bt3.9",
+                                                        "engine_model": "4BT 3.9",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "3.9L four of the B family; compact repower favorite.",
+                                                            "description": "Il piccolo B: 3,9 litri di semplicità assoluta, rimotorizzazione prediletta per barche a vela robuste e lance da lavoro."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "B": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:6bt5.9",
+                                                        "engine_model": "6BT 5.9",
+                                                        "year_introduced": 1984,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "THE repower legend: 5.9L six, mechanical injection, 210-250 hp marine. Half the world's trawlers run one.",
+                                                            "description": "La leggenda della rimotorizzazione: 5,9 litri meccanici, indistruttibili, parchi. Metà dei trawler del mondo ne ha uno in sentina, e l'altra metà lo invidia."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cummins:6bta5.9",
+                                                        "engine_model": "6BTA 5.9",
+                                                        "year_introduced": 1989,
+                                                        "year_discontinued": 2003,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Aftercooled 6BT, to 370 hp marine.",
+                                                            "description": "La versione aftercooled: fino a 370 cavalli senza tradire l'indole contadina del blocco."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "C": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:6c8.3",
+                                                        "engine_model": "6C 8.3",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "8.3L six — stub extradited home from the Caterpillar shelf where it sat misfiled.",
+                                                            "description": "L'8,3 litri tornato a casa: giaceva, chissà come, sullo scaffale Caterpillar di questo catalogo. L'estradizione è compiuta."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cummins:6ct8.3",
+                                                        "engine_model": "6CT 8.3",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": 2000,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Turbo 8.3 — likewise extradited.",
+                                                            "description": "Il turbo della famiglia C, anch'esso rimpatriato. Otto litri e mezzo di sostanza per pesca e lavoro."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cummins:6cta8.3",
+                                                        "engine_model": "6CTA 8.3",
+                                                        "year_introduced": 1992,
+                                                        "year_discontinued": 2005,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Aftercooled 8.3, 430-450 hp marine; the 'diamond' era favorite.",
+                                                            "description": "L'aftercooled che tutti chiamavano Diamond: 430 cavalli generosi su mezzo diporto d'America."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "N": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:nt-855",
+                                                        "engine_model": "NT-855",
+                                                        "year_introduced": 1962,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The classic 855 cid six; NH/NT marine ratings for decades.",
+                                                            "description": "Il classico assoluto: 855 pollici cubi di sei cilindri, la voce profonda dei pescherecci e dei rimorchiatori di tre generazioni."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "K": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:kta19",
+                                                        "engine_model": "KTA19",
+                                                        "year_introduced": 1976,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "19L six, to 700 hp marine.",
+                                                            "description": "Il grande sei della famiglia K: diciannove litri per il lavoro oceanico."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "QS": {
+                                                "sort_number": 5,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:qsb5.9",
+                                                        "engine_model": "QSB 5.9",
+                                                        "year_introduced": 2002,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Electronic B — the CMD homecoming: sold as Cummins MerCruiser Diesel (see MerCruiser).",
+                                                            "description": "Il B elettronico dell'era CMD: venduto con la doppia insegna Cummins MerCruiser (vedi), torna qui per la regola della targhetta — il nome Cummins viene prima."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cummins:qsc8.3",
+                                                        "engine_model": "QSC 8.3",
+                                                        "year_introduced": 2003,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Electronic C, CMD era (see MerCruiser).",
+                                                            "description": "Il C dell'era common rail, anch'esso figlio del sodalizio con MerCruiser: elettronica moderna su ossa antiche."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cummins:qsm11",
+                                                        "engine_model": "QSM 11",
+                                                        "year_introduced": 2000,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "10.8L six, to 715 hp marine.",
+                                                            "description": "L'undici litri elettronico: il cuore della gamma media moderna, dal trawler al pilotino."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "8": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "V": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:v-504m",
+                                                        "engine_model": "V-504M",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Marine Vale V8, 504 cid — extradited home from the Caterpillar shelf.",
+                                                            "description": "Il piccolo dei V8 'Vale', rimpatriato dallo scaffale sbagliato: 504 pollici di compattezza, con i limiti strutturali di famiglia."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cummins:v-555m",
+                                                        "engine_model": "V-555M",
+                                                        "year_introduced": 1969,
+                                                        "year_discontinued": 1982,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "The 'Triple-Nickel' — trawler folk's 'cripple fives': weak bottom end unless remarinized, then honest. Scars recorded per doctrine.",
+                                                            "description": "Il Triplo-Cinque, che i trawleristi chiamano 'cripple fives': fondo motore gracile finché non lo si rimarinizza a dovere — poi, giurano i redenti, diventa onesto. Un'enciclopedia che tace i difetti è un dépliant: qui si registrano anche le cicatrici."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cummins:v-903m",
+                                                        "engine_model": "V-903M",
+                                                        "year_introduced": 1970,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "903 cid marine V8 — 'most flew to bits' per the old hands; truck versions fared better. Extradited + scarred.",
+                                                            "description": "Il 903 marino: 'per lo più volavano in pezzi', ricordano i vecchi motoristi — a terra, sui camion, andò meglio. Rimpatriato da casa Caterpillar con tutte le sue cicatrici al seguito."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "12": {
                                         "sort_number": 4,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "K": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:kta38",
+                                                        "engine_model": "KTA38",
+                                                        "year_introduced": 1980,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "38L V12, to 1,350 hp marine.",
+                                                            "description": "Il dodici della famiglia K: trentotto litri per traghetti, draghe e pescherecci oceanici."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "16": {
+                                        "sort_number": 5,
+                                        "models": [],
+                                        "families": {
+                                            "K": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:kta50",
+                                                        "engine_model": "KTA50",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "50L V16, to 1,800 hp marine — the bucket-16 justification.",
+                                                            "description": "Cinquanta litri, sedici cilindri: il gigante K che inaugura questo scomparto."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "QS": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "cummins:qsk50",
+                                                        "engine_model": "QSK50",
+                                                        "year_introduced": 2005,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Electronic 50L V16, 2,000+ hp.",
+                                                            "description": "L'erede elettronico: duemila cavalli e passa, per il lavoro pesante del nuovo secolo."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 16
+                                }
                             },
                             "Ford": {
                                 "year_founded": 1903,
@@ -5641,27 +6123,101 @@
                                 }
                             },
                             "Palmer Brothers": {
-                                "year_founded": 1896,
-                                "year_dissolved": 1938,
+                                "year_founded": 1894,
+                                "year_dissolved": 1975,
+                                "sort_number": 75,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "palmer:model-b",
+                                                "engine_model": "Model B",
+                                                "year_introduced": 1910,
+                                                "year_discontinued": 1925,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "1½ HP single (documented, 1910). The Palmers were telephone-makers from Mianus Electric who spent $5,000 perfecting the make-and-break sparker.",
+                                                    "description": "Un cavallo e mezzo di storia industriale: i fratelli Palmer costruivano telefoni quando, nel 1894, vollero un motore per la loro barca sul fiume Mianus — e se lo fecero da soli, spendendo cinquemila dollari per perfezionare lo 'sparker'. Il Model B è il nipote diretto di quella testardaggine."
+                                                }
+                                            },
+                                            {
+                                                "id": "palmer:zr-1",
+                                                "engine_model": "ZR-1",
+                                                "year_introduced": 1946,
+                                                "year_discontinued": 1960,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "7 HP single, c. 1946 (documented) — the one-lunger surviving into the postwar world.",
+                                                    "description": "Sette cavalli monocilindrici nel mondo del dopoguerra: lo ZR-1 dimostrò che per una passera da lavoro il one-lunger non era nostalgia, era ragioneria."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "palmer:q-1",
+                                                "engine_model": "Q-1",
+                                                "year_introduced": 1916,
+                                                "year_discontinued": 1930,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "2 HP model, 1916 (documented).",
+                                                    "description": "Il piccolo Q-1 del 1916: due cavalli di bronzo e ghisa per i tender e le barchette della domenica."
+                                                }
+                                            },
+                                            {
+                                                "id": "palmer:nr-2",
+                                                "engine_model": "NR-2",
+                                                "year_introduced": 1923,
+                                                "year_discontinued": 1940,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "12 HP twin, 1923 (documented).",
+                                                    "description": "Il bicilindrico da dodici cavalli: la taglia da lavoro vero, con la firma elettrotecnica di famiglia nell'accensione."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "4": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "palmer:four-27",
+                                                "engine_model": "Four 27 HP",
+                                                "year_introduced": 1935,
+                                                "year_discontinued": 1965,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Later four; designation hedged (?).",
+                                                    "description": "Il quattro cilindri dell'età adulta della casa di Cos Cob, tra marinizzazioni e produzione propria: ventisette cavalli da peschereccio minore."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "6": {
                                         "sort_number": 4,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "palmer:six-60",
+                                                "engine_model": "Six 60 HP",
+                                                "year_introduced": 1940,
+                                                "year_discontinued": 1970,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Later six; designation hedged (?).",
+                                                    "description": "Il sei che accompagnò Palmer fino agli anni '70: ottant'anni dopo il primo 3×3 dei fratelli telefonisti, la ditta spegneva i motori con la stessa discrezione con cui li aveva accesi."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     }
-                                },
-                                "sort_number": 75
+                                }
                             },
                             "Gray Marine": {
                                 "year_founded": 1906,
@@ -5811,41 +6367,130 @@
                             },
                             "Lathrop": {
                                 "year_founded": 1896,
-                                "year_dissolved": 1925,
+                                "year_dissolved": 1956,
+                                "sort_number": 51,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "lathrop:type-6",
+                                                "engine_model": "Type 6",
+                                                "year_introduced": 1915,
+                                                "year_discontinued": 1930,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "6 HP single, c. 1915, Mystic CT; a recovered example from the James River anchors the type.",
+                                                    "description": "Sei cavalli di Mystic, Connecticut: un Type 6 ripescato dal fango del James River è oggi la pietra d'ancoraggio documentale di tutta la casa. I Lathrop erano così: li perdevi in fondo a un fiume e funzionavano ancora."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "lathrop:type-12-twin",
+                                                "engine_model": "Type 12 Twin",
+                                                "year_introduced": 1916,
+                                                "year_discontinued": 1935,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Twin extrapolated from the Type nomenclature (~).",
+                                                    "description": "Il bicilindrico della serie Type: dodici cavalli per passere e barche da lavoro della costa atlantica."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "4": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "lathrop:heavy-duty-four",
+                                                "engine_model": "Heavy Duty Four",
+                                                "year_introduced": 1930,
+                                                "year_discontinued": 1955,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Workboat four of the later decades; designation hedged (?).",
+                                                    "description": "Il quattro cilindri da lavoro dell'età matura: pesante, lento, instancabile — la seconda vita di Lathrop, quando i one-lunger lasciarono il posto ai motori 'seri'."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "6": {
                                         "sort_number": 4,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "lathrop:heavy-duty-six",
+                                                "engine_model": "Heavy Duty Six",
+                                                "year_introduced": 1935,
+                                                "year_discontinued": 1956,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Workboat six; designation hedged (?).",
+                                                    "description": "Il sei da peschereccio che chiuse la storia della casa di Mystic, a metà anni '50: sessant'anni di motori dal medesimo lungofiume."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     }
-                                },
-                                "sort_number": 51
+                                }
                             },
                             "Mianus": {
                                 "year_founded": 1900,
-                                "year_dissolved": 1916,
+                                "year_dissolved": 1935,
+                                "sort_number": 64,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "mianus:single-3hp",
+                                                "engine_model": "3 HP Single",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1930,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Make-and-break one-lunger of the oyster and fishing fleets; nameplate specifics era-hedged.",
+                                                    "description": "Il monocilindrico delle flotte ostricole: accensione make-and-break, volano generoso, e la pazienza di lavorare un'intera marea senza un lamento. Dei Mianus si ricorda il battito più dei nomi — e il battito basta."
+                                                }
+                                            },
+                                            {
+                                                "id": "mianus:single-5hp",
+                                                "engine_model": "5 HP Single",
+                                                "year_introduced": 1910,
+                                                "year_discontinued": 1930,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "Larger single (c.).",
+                                                    "description": "Il fratello maggiore: cinque cavalli per barche più cariche, stessa filosofia — un cilindro, poche parti, nessuna fretta."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "mianus:twin-7hp",
+                                                "engine_model": "7 HP Twin",
+                                                "year_introduced": 1912,
+                                                "year_discontinued": 1930,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Twin of the teens (hedged).",
+                                                    "description": "Il bicilindrico di casa, per chi voleva un filo di ridondanza tra sé e la corrente di ritorno. Due battiti nel villaggio di Mianus, sullo stesso fiume dei fratelli Palmer."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     }
-                                },
-                                "sort_number": 64
+                                }
                             },
                             "Packard": {
                                 "year_founded": 1899,
@@ -6216,22 +6861,61 @@
                             },
                             "Lockwood-Ash": {
                                 "year_founded": 1902,
-                                "year_dissolved": 1956,
+                                "year_dissolved": 1929,
+                                "sort_number": 55,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "lockwood-ash:single-3hp",
+                                                "engine_model": "Single 3 HP",
+                                                "year_introduced": 1905,
+                                                "year_discontinued": 1922,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Jackson, Michigan launch single (hedged). A Lockwood-Ash marine engine sits in the Smithsonian.",
+                                                    "description": "Il monocilindrico di Jackson, Michigan — uno dei suoi fratelli riposa oggi allo Smithsonian. Qui, per anni, questo scomparto ospitò diciannove motori di prova: ora c'è quello vero, ed è più piccolo e più bello di tutti loro."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "lockwood-ash:twin-6hp",
+                                                "engine_model": "Twin 6 HP",
+                                                "year_introduced": 1910,
+                                                "year_discontinued": 1925,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Launch twin (hedged).",
+                                                    "description": "Il bicilindrico da lancia: sei cavalli tranquilli prima che la casa scoprisse i fuoribordo — e uscisse, con ciò, dalla giurisdizione di questo catalogo."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "3": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "lockwood-ash:triple-9hp",
+                                                "engine_model": "Triple 9 HP",
+                                                "year_introduced": 1915,
+                                                "year_discontinued": 1925,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Launch triple (? — thinnest entry of the quartet).",
+                                                    "description": "Il tre cilindri: la voce più incerta del quartetto, annotata con riserva. Se un giorno un collezionista ne smentirà l'esistenza, questo catalogo si correggerà con gratitudine."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     }
-                                },
-                                "sort_number": 55
+                                }
                             },
                             "Lugger": {
                                 "year_founded": 1987,

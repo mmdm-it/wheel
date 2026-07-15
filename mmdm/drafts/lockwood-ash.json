@@ -1,0 +1,64 @@
+{
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Lockwood-Ash",
+  "_dossier": "012d Lockwood-Ash — the 19-ghost bucket house gets its real engines; inboard years only (outboard pivot ~1925 ended catalog jurisdiction); dissolved 1929.",
+  "node": {
+    "year_founded": 1902,
+    "year_dissolved": 1929,
+    "sort_number": 55,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "lockwood-ash:single-3hp",
+            "engine_model": "Single 3 HP",
+            "year_introduced": 1905,
+            "year_discontinued": 1922,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Jackson, Michigan launch single (hedged). A Lockwood-Ash marine engine sits in the Smithsonian.",
+              "description": "Il monocilindrico di Jackson, Michigan — uno dei suoi fratelli riposa oggi allo Smithsonian. Qui, per anni, questo scomparto ospitò diciannove motori di prova: ora c'è quello vero, ed è più piccolo e più bello di tutti loro."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "lockwood-ash:twin-6hp",
+            "engine_model": "Twin 6 HP",
+            "year_introduced": 1910,
+            "year_discontinued": 1925,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Launch twin (hedged).",
+              "description": "Il bicilindrico da lancia: sei cavalli tranquilli prima che la casa scoprisse i fuoribordo — e uscisse, con ciò, dalla giurisdizione di questo catalogo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "lockwood-ash:triple-9hp",
+            "engine_model": "Triple 9 HP",
+            "year_introduced": 1915,
+            "year_discontinued": 1925,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Launch triple (? — thinnest entry of the quartet).",
+              "description": "Il tre cilindri: la voce più incerta del quartetto, annotata con riserva. Se un giorno un collezionista ne smentirà l'esistenza, questo catalogo si correggerà con gratitudine."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
