@@ -12,7 +12,7 @@
 - v3.8 IN/OUT Migration + patch series — done (shipped as v3.8.15; see patch notes below)
 - v3.9+ Single-Stratum Program — in progress (Phases A–D below)
 
-## Current Plan: Single-Stratum Program (decided 2026-07-13; five-phase scope ratified 2026-07-14)
+## Current Plan: Single-Stratum Program (decided 2026-07-13; six-phase scope ratified 2026-07-14)
 
 Goal: a smooth-running single-stratum app before dimension development
 resumes. Dimensions are **paused, not cancelled** — the strata design
@@ -21,11 +21,15 @@ and the dormant store/bridge dimension state (`src/core/`) is retained as
 the foundation they will land on. Pseudo-parents (v0's `rpp_` alternate
 hierarchies) are retired permanently.
 
-Dividing line between C and D: Phase C owns everything about how the
-wheel *responds* (physics, timing, geometry); Phase D owns everything
+Dividing line between C and E: Phase C owns everything about how the
+wheel *responds* (physics, timing, geometry); Phase E owns everything
 about how it *reads at rest* (typography, alignment, theming). Running
 cosmetic/jank observations are collected in `docs/PUNCHLIST.md`, tagged
-C or D, and drained by whichever phase owns them.
+C or E, and drained by whichever phase owns them. Dimensions (D) sit
+between them deliberately: the strata inherit C's tuned physics, and E
+then styles every surface — primary and strata — exactly once. The
+packaged apps ship the full dimensioned instrument, so Packaging is
+last (F).
 
 - **Phase A — Single stratum** — SHIPPED as v3.9.0 (2026-07-14).
   Dimension UI machinery removed; Bible pinned to the Latin Vulgate
@@ -45,16 +49,21 @@ C or D, and drained by whichever phase owns them.
   swipes") is the primary physics test rig. Heavy server-vs-LAN
   comparison testing; WORKFLOW.md may gain a staging deploy path.
   Final feel constants documented with rationale.
-- **Phase D — Presentation**: typography (sizes, families), label
+- **Phase D — Dimensions**: the strata design implemented on C's tuned
+  physics — blur + mirrored secondary ring, persist-on-select,
+  language/edition portals for the Bible. `DIMENSION_SYSTEM.md` is
+  rewritten to match the strata ruling before work starts. The
+  secondary ring inherits the rotation choreographer and migration
+  machinery as tuned in C.
+- **Phase E — Presentation**: typography (sizes, families), label
   alignment, spacing, per-volume theming polish, detail-sector layout
-  refinement. Restyled on top of stable Phase C physics.
-- **Phase E — Packaging**: web remains the trunk; PWA groundwork
+  refinement — across every surface, primary and strata, exactly once.
+- **Phase F — Packaging**: web remains the trunk; PWA groundwork
   (manifest, service worker, offline volume cache), then Capacitor/TWA
-  store wrappers of the same bundle for iOS/Android. The Bible
-  ultimately ships exclusively at bibliacatholica.org.
-- **Then**: dimension development resumes on the strata design
-  (see `DIMENSION_SYSTEM.md`, to be rewritten to match the strata
-  ruling before work starts).
+  store wrappers of the same bundle for iOS/Android, shipping the full
+  dimensioned instrument. The public web demo remains single-stratum
+  (the Gutenberg egg); full dimensions are gated to the apps and
+  bibliacatholica.org — deployment scoping designed in F, not before.
 
 ## Vision
 
