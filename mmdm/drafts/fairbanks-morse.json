@@ -1,5 +1,5 @@
 {
-  "_dossier": "015 Fairbanks Morse. Rulings: buckets 3, 9, 10 added; 38D entered once per configuration bucket (6/8/9/10/12); Model 32 marine trio hedged. Mesa: 38D8-1/8 LH+RH manifolds (#800/#801).",
+  "_dossier": "015 Fairbanks Morse. Rulings: buckets 3, 9, 10 added; 38D entered once per configuration bucket (6/8/9/10/12); Model 32 marine trio hedged. Baseline: 38D8-1/8 LH+RH manifolds (#800/#801).",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Fairbanks Morse",
@@ -154,8 +154,8 @@
                 "year_discontinued": null,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "38D 10-cylinder — THE fleet-submarine main engine; naval service into the 1990s. Mesa baseline sold LH and RH water-cooled manifolds for the 38D8-1/8 (#800/#801).",
-                  "description": "L'ammiraglia sommersa: dieci cilindri, venti pistoni contrapposti, i motori principali dei sommergibili di squadra americani nella Seconda guerra mondiale — e in servizio navale fino agli anni '90. Il catalogo Mesa ne vendeva i collettori, destro e sinistro: anche i sommergibili, in Alabama, avevano i pezzi di ricambio."
+                  "key_notes": "38D 10-cylinder — THE fleet-submarine main engine; naval service into the 1990s. Distinct LH and RH water-cooled manifolds served the 38D8-1/8, one per flank.",
+                  "description": "L'ammiraglia sommersa: dieci cilindri, venti pistoni contrapposti, i motori principali dei sommergibili di squadra americani nella Seconda guerra mondiale — e in servizio navale fino agli anni '90. Collettori destro e sinistro, uno per fiancata: anche i sommergibili avevano i pezzi di ricambio."
                 }
               }
             ]

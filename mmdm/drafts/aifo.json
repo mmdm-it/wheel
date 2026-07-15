@@ -1,5 +1,5 @@
 {
-  "_dossier": "003a Aifo — the IVECO aifo era of the Fiat marine lineage (rulings: buckets 3+8 added; nameplate rule; year_founded 1975 division founding, corrected from 1955; year_dissolved 2003 = renaming to Iveco Motors). Mesa retro-check: +8061 SRM 27; 8281 variant spelling noted. Mesa's 'Iveco' section = the 8000 series, confirming the Aifo carve.",
+  "_dossier": "003a Aifo — the IVECO aifo era of the Fiat marine lineage (rulings: buckets 3+8 added; nameplate rule; year_founded 1975 division founding, corrected from 1955; year_dissolved 2003 = renaming to Iveco Motors). Baseline retro-check: +8061 SRM 27; 8281 variant spelling noted. the baseline's 'Iveco' section = the 8000 series, confirming the Aifo carve.",
   "market": "eurasia",
   "country": "Italia",
   "manufacturer": "Aifo",
@@ -121,8 +121,8 @@
                 "year_discontinued": 2003,
                 "sort_number": 5,
                 "data": {
-                  "key_notes": "Higher-rating SRM variant of the 8061 (Mesa baseline '8061SRM27').",
-                  "description": "La taratura SRM del sei cilindri: la versione da lavoro continuativo che il catalogo Mesa serviva di collettori. Conferma, dal Nuovo Mondo, la diffusione globale dell'8061."
+                  "key_notes": "Higher-rating SRM variant of the 8061.",
+                  "description": "La taratura SRM del sei cilindri: la versione da lavoro continuativo. Conferma, dal Nuovo Mondo, la diffusione globale dell'8061."
                 }
               }
             ]
@@ -143,7 +143,7 @@
                 "year_discontinued": 2003,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "V8 17.2L marine diesel, ~440 hp; flagship of the 8000 marine series. Mesa baseline lists it as 8281SRM44.1.",
+                  "key_notes": "V8 17.2L marine diesel, ~440 hp; flagship of the 8000 marine series.",
                   "description": "L'ammiraglia: un V8 di oltre 17 litri, circa 440 cavalli, destinato a pescherecci d'altura e imbarcazioni commerciali impegnative. Con l'8281 la serie 8000 toccò il proprio vertice di potenza — otto cilindri di Torino in mare aperto."
                 }
               }

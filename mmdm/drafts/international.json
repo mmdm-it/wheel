@@ -1,0 +1,52 @@
+{
+  "_dossier": "022a International. Rulings: buckets shrink to [6]; 530E mystery SOLVED (was mis-sectioned under Detroit in an early baseline fetch — it is the Navistar DT-530E); 676 seated hedged.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "International",
+  "node": {
+    "year_founded": 1902,
+    "year_dissolved": null,
+    "sort_number": 38.5,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "international:dt466",
+            "engine_model": "DT466",
+            "year_introduced": 1971,
+            "year_discontinued": 2016,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The unkillable: 7.6L inline six, 2M+ built 1971-2016. Marine via surplus and workboat conversions; donor of MerCruiser's D7.3L cousin lineage (see MerCruiser).",
+              "description": "L'inammazzabile: 7,6 litri, oltre due milioni di esemplari in quarantacinque anni. Scuolabus, camion, trattori — e, per vie di surplus e cantieri, anche sale macchine. Il sei che l'America non è mai riuscita a rompere."
+            }
+          },
+          {
+            "id": "international:dt530e",
+            "engine_model": "DT530E",
+            "year_introduced": 1994,
+            "year_discontinued": 2004,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "8.7L electronic six (the mystery relic '530E' — originally mis-filed under Detroit in this catalog's own research; now home).",
+              "description": "Il fuggitivo: per settimane questo catalogo lo ha cercato sotto Detroit, dov'era finito per un errore di lettura. Era di casa International: 8,7 litri elettronici, fratello maggiore del 466. Il primo dei misteri di questo catalogo a trovare pace."
+            }
+          },
+          {
+            "id": "international:676",
+            "engine_model": "676",
+            "year_introduced": 1975,
+            "year_discontinued": 1990,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "baseline entry; attribution unresolved (~).",
+              "description": "La sigla 676: attribuzione ancora aperta, collettore documentato. Resta in attesa di carte."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

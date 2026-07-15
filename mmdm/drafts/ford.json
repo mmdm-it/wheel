@@ -1,5 +1,5 @@
 {
-  "_dossier": "017 Ford. Placeholders retired wholesale (pre-session entries). Rulings: Model T in; Interceptor kept under Ford as Y-block family (Ford's own marine nameplate, noted); Mesa '172DF418' → mystery pile; Lehman 80 donor cross-ref updated. Mesa items seated: 666T; '6Cyl Lehman' = the Dorset/Dover sixes. Personal addendum (Howell): FE 360 + 390 added — curator drives a 1974 F100 with the 360; 'there had to have been at least one of those in a boat somewhere.'",
+  "_dossier": "017 Ford. Placeholders retired wholesale (pre-session entries). Rulings: Model T in; Interceptor kept under Ford as Y-block family (Ford's own marine nameplate, noted); baseline '172DF418' → mystery pile; Lehman 80 donor cross-ref updated. Baseline items seated: 666T; '6Cyl Lehman' = the Dorset/Dover sixes. Personal addendum (Howell): FE 360 + 390 added — curator drives a 1974 F100 with the 360; 'there had to have been at least one of those in a boat somewhere.'",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Ford",
@@ -18,8 +18,8 @@
             "year_discontinued": 1927,
             "sort_number": 1,
             "data": {
-              "key_notes": "The 1910s-20s marinization craze: countless T engines went to sea via kit conversions (?). Admitted under the Wow doctrine and Howell's own 'several companies marinized Model T engines — so who knows?'",
-              "description": "Il motore che motorizzò l'America finì anche in acqua: kit di marinizzazione trasformarono innumerevoli T in propulsori di lance e barchini. Voce ammessa per dottrina del meraviglioso — e per la frase del curatore che diede scopo a questo catalogo: 'chi può dirlo?'"
+              "key_notes": "The 1910s-20s marinization craze: countless T engines went to sea via kit conversions (?). Admitted under the Wow doctrine: several companies marinized Model T engines — so who knows?",
+              "description": "Il motore che motorizzò l'America finì anche in acqua: kit di marinizzazione trasformarono innumerevoli T in propulsori di lance e barchini. Voce ammessa per dottrina del meraviglioso: 'chi può dirlo?'"
             }
           },
           {
@@ -68,7 +68,7 @@
                 "sort_number": 2,
                 "data": {
                   "key_notes": "Dorset four — the Lehman 80's donor block (see Lehman).",
-                  "description": "Il donatore del Lehman 80 (vedi): il quattro di Dagenham che il bancone dei ricambi conosceva meglio degli archivi. Ora i due si citano a vicenda, com'è giusto."
+                  "description": "Il donatore del Lehman 80 (vedi): il quattro di Dagenham che le sale macchine conoscevano meglio degli archivi. Ora i due si citano a vicenda, com'è giusto."
                 }
               }
             ]
@@ -177,8 +177,8 @@
                 "year_discontinued": 1990,
                 "sort_number": 2,
                 "data": {
-                  "key_notes": "Industrial turbo six (Mesa baseline '666T', ~).",
-                  "description": "Il sei turbo industriale annotato dal catalogo Mesa: la variante spinta della stirpe di Dagenham, con collettori d'Alabama a listino."
+                  "key_notes": "Industrial turbo six (~).",
+                  "description": "Il sei turbo industriale: la variante spinta della stirpe di Dagenham."
                 }
               }
             ]
@@ -226,8 +226,8 @@
                 "year_discontinued": 1963,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "Ford's OWN marine nameplate: the factory-marinized Y-block 292. Arguably nameplate-rule-worthy of its own house; kept under Ford by Howell's ruling, so noted.",
-                  "description": "L'Interceptor: la Ford che si marinizzò da sola. Y-block 292 con targhetta marina di fabbrica — a rigor di regola meriterebbe casa propria, e il catalogo lo annota; per decreto del curatore abita qui, sotto il tetto paterno."
+                  "key_notes": "Ford's OWN marine nameplate: the factory-marinized Y-block 292. Arguably nameplate-rule-worthy of its own house; kept under Ford, so noted.",
+                  "description": "L'Interceptor: la Ford che si marinizzò da sola. Y-block 292 con targhetta marina di fabbrica — a rigor di regola meriterebbe casa propria, e il catalogo lo annota; abita qui, sotto il tetto paterno."
                 }
               }
             ]

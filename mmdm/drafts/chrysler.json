@@ -1,5 +1,5 @@
 {
-  "_dossier": "011 Chrysler. PRIMARY SOURCE: 1974 Chrysler Marine brochure (Howell's eBay find) — hp-named line: V8s 375/330/280/250/225/200, six 155, four 40 (sailboat auxiliary). Bucket 4 SAVED by the brochure (delete proposal withdrawn). Royal = straight-eight family per research. Block attributions for hp models are informed estimates (c.). dissolved 1988 (last marine engine). Mesa retro-check: +M47-S (listed 'M4-7S').",
+  "_dossier": "011 Chrysler. PRIMARY SOURCE: 1974 Chrysler Marine brochure (Howell's eBay find) — hp-named line: V8s 375/330/280/250/225/200, six 155, four 40 (sailboat auxiliary). Bucket 4 SAVED by the brochure (delete proposal withdrawn). Royal = straight-eight family per research. Block attributions for hp models are informed estimates (c.). dissolved 1988 (last marine engine). Baseline retro-check: +M47-S (listed 'M4-7S').",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Chrysler",
@@ -18,8 +18,8 @@
             "year_discontinued": 1979,
             "sort_number": 1,
             "data": {
-              "key_notes": "Sailboat auxiliary four, 40 hp (1974 factory brochure, Howell collection). The bucket-saving engine: documented by the factory's own 1974 literature.",
-              "description": "L'ausiliario per barche a vela: quaranta cavalli discreti in fondo alla gamma 1974. È il motore che ha salvato questo scomparto del catalogo — documentato non da un forum, ma dal dépliant di fabbrica ritrovato dal curatore. Le enciclopedie si costruiscono anche così."
+              "key_notes": "Sailboat auxiliary four, 40 hp. The bucket-saving engine: documented by the factory's own 1974 literature.",
+              "description": "L'ausiliario per barche a vela: quaranta cavalli discreti in fondo alla gamma 1974. È il motore che ha salvato questo scomparto del catalogo — documentato non da un forum, ma dal dépliant di fabbrica del 1974. Le enciclopedie si costruiscono anche così."
             }
           }
         ],
@@ -35,7 +35,7 @@
             "year_discontinued": 1980,
             "sort_number": 1,
             "data": {
-              "key_notes": "155 hp six of the 1974 line (1974 factory brochure, Howell collection); block attribution (Slant 225 or 250 six) uncertain (c.).",
+              "key_notes": "155 hp six of the 1974 line; block attribution (Slant 225 or 250 six) uncertain (c.).",
               "description": "Il sei cilindri della gamma 1974: 155 cavalli, quasi certamente su base sei in linea di derivazione automobilistica. Il dépliant lo colloca da solo tra i V8 e il piccolo ausiliario — l'ultimo sei della casa."
             }
           }
@@ -73,8 +73,8 @@
                 "year_discontinued": 1960,
                 "sort_number": 3,
                 "data": {
-                  "key_notes": "Flathead six 'as common as the Crown' per period accounts; Mesa baseline lists it as M4-7S.",
-                  "description": "Il compagno dimenticato del Crown: le cronache d'epoca lo dicevano altrettanto diffuso, e il catalogo Mesa ne vendeva ancora i collettori. Riprende il suo posto accanto al fratello celebre."
+                  "key_notes": "Flathead six 'as common as the Crown' per period accounts; Also seen badged M4-7S.",
+                  "description": "Il compagno dimenticato del Crown: le cronache d'epoca lo dicevano altrettanto diffuso. Riprende il suo posto accanto al fratello celebre."
                 }
               }
             ]
@@ -133,7 +133,7 @@
                 "year_discontinued": 1980,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "200 hp V8 of the 1974 line (1974 factory brochure, Howell collection); ~318 block (c.).",
+                  "key_notes": "200 hp V8 of the 1974 line; ~318 block (c.).",
                   "description": "L'ingresso al mondo V8 di casa: duecento cavalli, quasi certamente su blocco 318. La porta d'accesso della gamma 1974."
                 }
               },
@@ -144,7 +144,7 @@
                 "year_discontinued": 1981,
                 "sort_number": 2,
                 "data": {
-                  "key_notes": "225 hp V8 (1974 factory brochure, Howell collection); 318 block, the LM318 of the parts books (c.).",
+                  "key_notes": "225 hp V8; 318 block, the LM318 of the parts books (c.).",
                   "description": "Il 225: l'LM318 dei manuali ricambi, qui col nome commerciale del dépliant. Il V8 medio che motorizzò una generazione di cruiser americani."
                 }
               },
@@ -155,7 +155,7 @@
                 "year_discontinued": 1981,
                 "sort_number": 3,
                 "data": {
-                  "key_notes": "250 hp V8 (1974 factory brochure, Howell collection); ~360 block (c.).",
+                  "key_notes": "250 hp V8; ~360 block (c.).",
                   "description": "Duecentocinquanta cavalli su base 360: la fascia alta dei piccoli blocchi nella gamma del 1974."
                 }
               },
@@ -166,7 +166,7 @@
                 "year_discontinued": 1981,
                 "sort_number": 4,
                 "data": {
-                  "key_notes": "280 hp V8 (1974 factory brochure, Howell collection); ~360 4-bbl (c.).",
+                  "key_notes": "280 hp V8; ~360 4-bbl (c.).",
                   "description": "La versione brillante del 360: carburatore quadricorpo e 280 cavalli, per chi voleva lo sci nautico dietro un cruiser."
                 }
               },
@@ -177,7 +177,7 @@
                 "year_discontinued": 1984,
                 "sort_number": 5,
                 "data": {
-                  "key_notes": "330 hp big-block V8 (1974 factory brochure, Howell collection); ~440 block, the M440 lineage (c.).",
+                  "key_notes": "330 hp big-block V8; ~440 block, the M440 lineage (c.).",
                   "description": "Il grande blocco nella taratura 330: coppia da rimorchiatore per scafi pesanti e bimotori. La stirpe M440 dei manuali, col vestito del dépliant."
                 }
               },
@@ -188,7 +188,7 @@
                 "year_discontinued": 1984,
                 "sort_number": 6,
                 "data": {
-                  "key_notes": "375 hp big-block V8, top of the 1974 page (1974 factory brochure, Howell collection); 440 4-bbl (c.).",
+                  "key_notes": "375 hp big-block V8, top of the 1974 page; 440 4-bbl (c.).",
                   "description": "In cima alla pagina del dépliant: 375 cavalli di 440 a quadricorpo, l'ammiraglia della Chrysler Marine anni '70. Quattordici anni dopo, la casa avrebbe chiuso la sala macchine per sempre."
                 }
               }

@@ -1,5 +1,5 @@
 {
-  "_dossier": "020a Daewoo. Rulings: V158TI hedged in (8-bucket kept). Mesa: DC24/DB33/DB58.",
+  "_dossier": "020a Daewoo. Rulings: V158TI hedged in (8-bucket kept). Baseline: DC24/DB33/DB58.",
   "market": "eurasia",
   "country": "Corea del Sud",
   "manufacturer": "Daewoo",
@@ -18,8 +18,8 @@
             "year_discontinued": 2005,
             "sort_number": 1,
             "data": {
-              "key_notes": "2,370cc four (Mesa baseline).",
-              "description": "Il piccolo quattro coreano: 2,4 litri per gruppi elettrogeni di bordo e lance da lavoro, con i collettori a catalogo in Alabama."
+              "key_notes": "2,370cc four.",
+              "description": "Il piccolo quattro coreano: 2,4 litri per gruppi elettrogeni di bordo e lance da lavoro."
             }
           },
           {
@@ -29,7 +29,7 @@
             "year_discontinued": 2008,
             "sort_number": 2,
             "data": {
-              "key_notes": "3.3L four (Mesa baseline).",
+              "key_notes": "3.3L four.",
               "description": "Il 3,3 litri: gradino di mezzo della gamma leggera Daewoo, oggi Doosan."
             }
           }
@@ -46,7 +46,7 @@
             "year_discontinued": 2010,
             "sort_number": 1,
             "data": {
-              "key_notes": "5,785cc six, 102x118mm (Mesa baseline); S/T/TI/TIS variant ladder.",
+              "key_notes": "5,785cc six, 102x118mm; S/T/TI/TIS variant ladder.",
               "description": "Il sei da 5,8 litri: la voce coreana più diffusa nelle sale macchine da pesca e lavoro dell'Estremo Oriente, in tutta la scala di varianti dalla aspirata alla turbo-intercooler."
             }
           }
@@ -63,7 +63,7 @@
             "year_discontinued": 2015,
             "sort_number": 1,
             "data": {
-              "key_notes": "Doosan marine V8 (~, not in Mesa — hedged bucket justification).",
+              "key_notes": "Doosan marine V8 (~, hedged bucket justification).",
               "description": "Il V8 marino della casa, annotato con prudenza: giustifica lo scomparto in attesa di carte migliori."
             }
           }

@@ -1,5 +1,5 @@
 {
-  "_dossier": "014 Cummins. Rulings: bucket 16 added; families B/C/N/V/K/QS; V-504M/V-555M/V-903M + 6C/6CT extradited home from Caterpillar; failure stories in prose per doctrine; QSB/QSC = CMD homecoming, cross-ref MerCruiser. Mesa cross-check round 2: +11 models (N14, L-10, M-11, QSX-15, QSK38, QSL9, QSB6.7, NH-743, NT-495, 4A, V-470M, VT-1710) + alias notes (KT 1150, VT555M, VTA903, 855M).",
+  "_dossier": "014 Cummins. Rulings: bucket 16 added; families B/C/N/V/K/QS; V-504M/V-555M/V-903M + 6C/6CT extradited home from Caterpillar; failure stories in prose per doctrine; QSB/QSC = CMD homecoming, cross-ref MerCruiser. Baseline cross-check round 2: +11 models (N14, L-10, M-11, QSX-15, QSK38, QSL9, QSB6.7, NH-743, NT-495, 4A, V-470M, VT-1710) + alias notes (KT 1150, VT555M, VTA903, 855M).",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Cummins",
@@ -38,8 +38,8 @@
                 "year_discontinued": 2000,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "Small A-series four (Mesa baseline, ~).",
-                  "description": "Il piccolo A: quattro cilindri d'ingresso, annotato sull'autorità del catalogo progenitore."
+                  "key_notes": "Small A-series four (~).",
+                  "description": "Il piccolo A: quattro cilindri d'ingresso, annotato con riserva."
                 }
               }
             ]
@@ -82,7 +82,7 @@
                 "year_discontinued": null,
                 "sort_number": 3,
                 "data": {
-                  "key_notes": "6.7L electronic B (Mesa baseline).",
+                  "key_notes": "6.7L electronic B.",
                   "description": "Il B cresciuto a 6,7 litri: l'attuale erede della leggenda, common rail e coscienza ecologica."
                 }
               }
@@ -131,7 +131,7 @@
                 "year_discontinued": null,
                 "sort_number": 4,
                 "data": {
-                  "key_notes": "8.9L six (Mesa lists 'QSL9' and '8.9') (Mesa baseline).",
+                  "key_notes": "8.9L six (also badged QSL9).",
                   "description": "L'evoluzione da 8,9 litri della stirpe C: il gradino tra QSC e QSM."
                 }
               }
@@ -158,7 +158,7 @@
                 "year_discontinued": 1970,
                 "sort_number": 2,
                 "data": {
-                  "key_notes": "743 cid six, NT-855 predecessor (Mesa lists '743' and '743 NH').",
+                  "key_notes": "743 cid six, NT-855 predecessor — badged '743' and '743 NH' in period.",
                   "description": "Il progenitore: 743 pollici cubi di sei cilindri, da cui discese l'855. Le radici della quercia N."
                 }
               },
@@ -169,8 +169,8 @@
                 "year_discontinued": 1972,
                 "sort_number": 3,
                 "data": {
-                  "key_notes": "Small N six (Mesa baseline, ~).",
-                  "description": "Il fratello minore della famiglia N, annotato con riserva sull'autorità Mesa."
+                  "key_notes": "Small N six (~).",
+                  "description": "Il fratello minore della famiglia N, annotato con riserva."
                 }
               },
               {
@@ -180,8 +180,8 @@
                 "year_discontinued": 2003,
                 "sort_number": 4,
                 "data": {
-                  "key_notes": "THE N14 — electronic swan song of the N family (Mesa baseline).",
-                  "description": "Il canto del cigno della famiglia N: elettronico, potente, amatissimo. Un vuoto della prima stesura che il catalogo Mesa ha colmato."
+                  "key_notes": "THE N14 — electronic swan song of the N family.",
+                  "description": "Il canto del cigno della famiglia N: elettronico, potente, amatissimo. Un vuoto della prima stesura, ora colmato."
                 }
               }
             ]
@@ -196,7 +196,7 @@
                 "year_discontinued": null,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "19L six, to 700 hp marine. Mesa lists it by cid as 'KT 1150'.",
+                  "key_notes": "19L six, to 700 hp marine. Known by cid as the 'KT 1150'.",
                   "description": "Il grande sei della famiglia K: diciannove litri per il lavoro oceanico."
                 }
               }
@@ -250,7 +250,7 @@
                 "year_discontinued": 1998,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "10L six (Mesa baseline).",
+                  "key_notes": "10L six.",
                   "description": "Il dieci litri degli anni '80: taglia media onesta tra B e N."
                 }
               },
@@ -261,7 +261,7 @@
                 "year_discontinued": 2004,
                 "sort_number": 2,
                 "data": {
-                  "key_notes": "10.8L six, QSM11 predecessor (Mesa baseline).",
+                  "key_notes": "10.8L six, QSM11 predecessor.",
                   "description": "Il padre meccanico-elettronico del QSM: la transizione fatta motore."
                 }
               },
@@ -272,7 +272,7 @@
                 "year_discontinued": null,
                 "sort_number": 3,
                 "data": {
-                  "key_notes": "15L six (Mesa baseline).",
+                  "key_notes": "15L six.",
                   "description": "Il quindici litri elettronico: il grande sei moderno della casa di Columbus."
                 }
               }
@@ -294,7 +294,7 @@
                 "year_discontinued": 1978,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "Smallest marine Vale V8 (Mesa baseline).",
+                  "key_notes": "Smallest marine Vale V8.",
                   "description": "Il più piccolo dei Vale marini: 470 pollici, stesse virtù e stessi peccati di famiglia."
                 }
               },
@@ -316,7 +316,7 @@
                 "year_discontinued": 1982,
                 "sort_number": 3,
                 "data": {
-                  "key_notes": "The 'Triple-Nickel' — trawler folk's 'cripple fives': weak bottom end unless remarinized, then honest. Scars recorded per doctrine. Mesa also lists VT555M (turbo variant).",
+                  "key_notes": "The 'Triple-Nickel' — trawler folk's 'cripple fives': weak bottom end unless remarinized, then honest. Scars recorded per doctrine. The VT555M was its turbo variant.",
                   "description": "Il Triplo-Cinque, che i trawleristi chiamano 'cripple fives': fondo motore gracile finché non lo si rimarinizza a dovere — poi, giurano i redenti, diventa onesto. Un'enciclopedia che tace i difetti è un dépliant: qui si registrano anche le cicatrici."
                 }
               },
@@ -327,7 +327,7 @@
                 "year_discontinued": 1985,
                 "sort_number": 4,
                 "data": {
-                  "key_notes": "903 cid marine V8 — 'most flew to bits' per the old hands; truck versions fared better. Extradited + scarred. Mesa also lists VTA903 (turbo-aftercooled) and 'V8 370M' rating.",
+                  "key_notes": "903 cid marine V8 — 'most flew to bits' per the old hands; truck versions fared better. Extradited + scarred. The VTA903 (turbo-aftercooled) and 'V8 370M' ratings followed.",
                   "description": "Il 903 marino: 'per lo più volavano in pezzi', ricordano i vecchi motoristi — a terra, sui camion, andò meglio. Rimpatriato da casa Caterpillar con tutte le sue cicatrici al seguito."
                 }
               }
@@ -360,7 +360,7 @@
                 "year_discontinued": null,
                 "sort_number": 2,
                 "data": {
-                  "key_notes": "Electronic 38L V12 (Mesa baseline).",
+                  "key_notes": "Electronic 38L V12.",
                   "description": "L'erede elettronico del KTA38: la K portata nell'era del common rail."
                 }
               }
@@ -376,8 +376,8 @@
                 "year_discontinued": 1980,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "1710 cid V12 (Mesa lists '1710', ~).",
-                  "description": "Il grande dodici da 1710 pollici cubi: il gigante Vale che precedette l'era K, annotato sull'autorità Mesa."
+                  "key_notes": "1710 cid V12 (~).",
+                  "description": "Il grande dodici da 1710 pollici cubi: il gigante Vale che precedette l'era K, annotato con riserva."
                 }
               }
             ]
