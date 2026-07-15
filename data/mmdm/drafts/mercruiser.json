@@ -1,0 +1,224 @@
+{
+  "_dossier": "010 MerCruiser. Rulings: Small Block/Big Block families; early hp trio in as orphans; diesels resolved BY nameplate rule — D-series (MerCruiser plates, VM/Navistar blocks) IN with lineage refs; CMD-era (Cummins plates) deferred to Cummins dossier.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "MerCruiser",
+  "node": {
+    "year_founded": 1961,
+    "year_dissolved": null,
+    "sort_number": 61,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "mercruiser:120",
+            "engine_model": "120",
+            "year_introduced": 1964,
+            "year_discontinued": 1982,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "GM 153 cid four, ~120 hp; the sterndrive starter of the sixties (c. years).",
+              "description": "Il quattro cilindri delle origini: blocco GM da 153 pollici, 120 cavalli, e la formula sterndrive appena inventata. Con lui il motoscafo americano del dopoguerra divenne un fenomeno di massa."
+            }
+          },
+          {
+            "id": "mercruiser:140",
+            "engine_model": "140",
+            "year_introduced": 1968,
+            "year_discontinued": 1989,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "GM 181 cid four, ~140 hp; the seventies stalwart (c. years).",
+              "description": "L'evoluzione da 181 pollici cubi: 140 cavalli onesti che spinsero una generazione di runabout e day-cruiser. Meccanica automobilistica, cuore nautico."
+            }
+          },
+          {
+            "id": "mercruiser:3.0l",
+            "engine_model": "3.0L",
+            "year_introduced": 1990,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "The eternal base sterndrive: GM 181 four, 135 hp, still the entry point decades on.",
+              "description": "L'immortale: il 3 litri base che da oltre trent'anni è la porta d'ingresso del mondo sterndrive. Semplice, economico, dovunque — il motore marino più democratico d'America."
+            }
+          },
+          {
+            "id": "mercruiser:d2.8l",
+            "engine_model": "D2.8L",
+            "year_introduced": 1993,
+            "year_discontinued": 2001,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "Diesel D-series four — VM Motori block under MerCruiser plates (see VM Motori, Italia). Nameplate rule at work.",
+              "description": "Il diesel di casa… costruito a Cento: blocco VM Motori (vedi) vestito MerCruiser. La regola della targhetta lo colloca qui, ma il sangue è emiliano — un piccolo ponte transatlantico in sala macchine."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "mercruiser:165",
+            "engine_model": "165",
+            "year_introduced": 1966,
+            "year_discontinued": 1981,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "GM 250 straight-six, ~165 hp (c. years).",
+              "description": "Il sei in linea GM da 250 pollici: coppia dolce e affidabilità da berlina per i cruiser compatti degli anni '70."
+            }
+          },
+          {
+            "id": "mercruiser:d4.2l",
+            "engine_model": "D4.2L",
+            "year_introduced": 1994,
+            "year_discontinued": 2001,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Diesel D-series six — VM Motori block, MerCruiser plates (see VM Motori).",
+              "description": "Il sei cilindri della parentesi diesel: ancora VM Motori sotto la vernice nera, per chi voleva gasolio senza rinunciare al piede poppiero."
+            }
+          }
+        ],
+        "families": {
+          "4.3L": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "mercruiser:4.3l",
+                "engine_model": "4.3L",
+                "year_introduced": 1985,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The GM V6 — 'a 350 with two cylinders off'; carbureted generations.",
+                  "description": "Il V6 che è un piccolo V8: derivato dal 350 GM amputato di due cilindri, divenne il cuore della fascia media sterndrive. Generazioni a carburatore, poi l'iniezione."
+                }
+              },
+              {
+                "id": "mercruiser:4.3l-mpi",
+                "engine_model": "4.3L MPI",
+                "year_introduced": 1996,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Multi-port injected 4.3, ~220 hp.",
+                  "description": "La maturità dell'iniezione multipoint: 220 cavalli, consumi civili, e la colonna sonora V6 dei laghi americani."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "mercruiser:d7.3l-dtronic",
+            "engine_model": "D7.3L D-Tronic",
+            "year_introduced": 1995,
+            "year_discontinued": 2001,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Diesel V8 — Navistar/International block under MerCruiser plates (see International). Electronic D-Tronic control.",
+              "description": "Il V8 a gasolio dell'era D-Tronic: blocco Navistar/International (vedi) con elettronica MerCruiser. La targhetta decide la casa; la genealogia attraversa il catalogo."
+            }
+          }
+        ],
+        "families": {
+          "Small Block": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "mercruiser:260",
+                "engine_model": "260",
+                "year_introduced": 1978,
+                "year_discontinued": 1982,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "5.7L small block, 260 hp rating era (c.).",
+                  "description": "Il piccolo blocco nella taratura 260: la potenza V8 degli anni della disco, su scafi che cominciavano a chiamarsi performance."
+                }
+              },
+              {
+                "id": "mercruiser:5.0l",
+                "engine_model": "5.0L",
+                "year_introduced": 1988,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "GM 305 small block, ~230-260 hp.",
+                  "description": "Il 305: l'otto cilindri d'accesso, equilibrio perfetto tra costo, consumi e quella voce che solo un small block sa fare."
+                }
+              },
+              {
+                "id": "mercruiser:5.7l",
+                "engine_model": "5.7L / 350 MAG",
+                "year_introduced": 1983,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "GM 350 small block incl. 350 MAG variants; the definitive sterndrive V8.",
+                  "description": "Il 350: se lo sterndrive americano ha un motore simbolo, è questo. Dalle versioni a carburatore ai MAG a iniezione, mezzo secolo di poppe alzate e scie dritte."
+                }
+              },
+              {
+                "id": "mercruiser:6.2l",
+                "engine_model": "6.2L",
+                "year_introduced": 2001,
+                "year_discontinued": null,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "377 cid small block evolution, ~320 hp.",
+                  "description": "L'evoluzione moderna del piccolo blocco: 6,2 litri, 320 cavalli, iniezione e catalizzatori — il classico aggiornato al nuovo secolo."
+                }
+              }
+            ]
+          },
+          "Big Block": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "mercruiser:454-mag",
+                "engine_model": "454 MAG",
+                "year_introduced": 1986,
+                "year_discontinued": 1998,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "GM 454 big block, ~365-385 hp (Alpha '86-'88, Bravo '88-'97 per sources).",
+                  "description": "Il grande blocco da 454 pollici: coppia oceanica per cruiser pesanti e primi high-performance. Il MAG che fece scuola."
+                }
+              },
+              {
+                "id": "mercruiser:502-mag",
+                "engine_model": "502 MAG",
+                "year_introduced": 1993,
+                "year_discontinued": 2001,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "GM 502 big block, ~415 hp (c.).",
+                  "description": "Mezzo migliaio di pollici cubi: il 502 MAG era il muscolo massimo del listino prima dell'era 496."
+                }
+              },
+              {
+                "id": "mercruiser:496-mag",
+                "engine_model": "496 MAG",
+                "year_introduced": 2001,
+                "year_discontinued": 2015,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "GM 8.1L (496) big block, 375-425 hp; the final carbureted-lineage big block.",
+                  "description": "L'ultimo dei grandi blocchi di stirpe classica: 8,1 litri, fino a 425 cavalli, prima che la nautica americana passasse ai V8 di nuova generazione. Chiusura degna di una dinastia."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "_dossier": "006 Isotta Fraschini. Rulings: 18-cyl bucket + ASM family IN; six existing stubs adopted into ID36/V170 families with hedged modern years; nothing further from Howell. ASM years staggered estimates (c.); Bari-era years hedged.",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "Isotta Fraschini",
+  "node": {
+    "year_founded": 1900,
+    "year_dissolved": null,
+    "sort_number": 39,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "ID36": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "isottafraschini:id36-sr",
+                "engine_model": "ID36 SR",
+                "year_introduced": 1985,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Modern Bari-era high-speed marine diesel, ID36 series, inline-six configuration (c. years).",
+                  "description": "La serie ID36 rappresenta l'Isotta Fraschini contemporanea: motori veloci e leggeri nati negli stabilimenti di Bari per pattugliatori, traghetti veloci e naviglio militare. L'SR è la configurazione a sei cilindri in linea — la voce d'ingresso di una famiglia modulare pensata per il servizio gravoso."
+                }
+              },
+              {
+                "id": "isottafraschini:id36-sr4",
+                "engine_model": "ID36 SR4",
+                "year_introduced": 1990,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "ID36 series six, later four-valve evolution (c. years).",
+                  "description": "Evoluzione plurivalvole del sei cilindri ID36: più aria, più potenza specifica, stessa architettura modulare. Con la sigla SR4 la famiglia si aggiornò agli standard delle motorizzazioni navali veloci di fine secolo."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "8": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "ID36": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "isottafraschini:id36-ss",
+                "engine_model": "ID36 SS",
+                "year_introduced": 1987,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "ID36 series V8 configuration (c. years).",
+                  "description": "La declinazione a otto cilindri della famiglia modulare ID36: potenza maggiore negli stessi ingombri contenuti, per pattugliatori e unità veloci dove il rapporto peso/potenza è tutto."
+                }
+              }
+            ]
+          },
+          "V170": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "isottafraschini:v1708",
+                "engine_model": "V1708",
+                "year_introduced": 1992,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "V170 family V8, 170mm bore class, high-speed marine diesel (c. years).",
+                  "description": "Con la famiglia V170 la casa di Bari salì di taglia: il V1708, otto cilindri a V da 170 mm di alesaggio, portò l'Isotta Fraschini nel mondo dei grandi pattugliatori e dei traghetti veloci."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "12": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "ID36": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "isottafraschini:id36-ssr",
+                "engine_model": "ID36 SSR",
+                "year_introduced": 1989,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "ID36 series V12 configuration (c. years).",
+                  "description": "Il vertice della famiglia ID36: dodici cilindri a V per le applicazioni più esigenti del naviglio veloce, militare e civile."
+                }
+              }
+            ]
+          },
+          "V170": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "isottafraschini:v1712",
+                "engine_model": "V1712",
+                "year_introduced": 1994,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "V170 family V12; flagship of the modern Bari range (c. years).",
+                  "description": "L'ammiraglia moderna: il V1712, dodici cilindri della famiglia V170, motorizza pattugliatori d'altura e unità veloci in mezzo mondo — l'erede diretto, per vocazione, dei grandi motori veloci che resero celebre il marchio."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "18": {
+        "sort_number": 4,
+        "models": [],
+        "families": {
+          "ASM": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "isottafraschini:asm180",
+                "engine_model": "ASM 180",
+                "year_introduced": 1931,
+                "year_discontinued": 1955,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Asso Marini: marinized Asso 1000 W-18, ~1,000 hp at 1,600 rpm, water-cooled exhaust, reversing gearbox. Giustino Cattaneo's aero masterpiece gone to sea (c. years).",
+                  "description": "ASM: Asso Marini. Il leggendario W18 aeronautico di Giustino Cattaneo, marinizzato con scarichi raffreddati ad acqua e invertitore: mille cavalli a 1600 giri che spinsero i MAS oltre i quaranta nodi. Diciotto cilindri in tre bancate — il motore più teatrale che questo catalogo possa offrire, e la ragione stessa per cui esiste un collettore di scarico raffreddato ad acqua."
+                }
+              },
+              {
+                "id": "isottafraschini:asm181",
+                "engine_model": "ASM 181",
+                "year_introduced": 1933,
+                "year_discontinued": 1958,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "ASM W-18 development; torpedo-boat service with Italy and export navies (c. years).",
+                  "description": "Sviluppo del capostipite, l'ASM 181 equipaggiò le motosiluranti italiane e trovò clienti anche all'estero: Finlandia e Svezia vollero il W18 di Bari... di Milano, allora — per le proprie unità veloci del Baltico."
+                }
+              },
+              {
+                "id": "isottafraschini:asm183",
+                "engine_model": "ASM 183",
+                "year_introduced": 1936,
+                "year_discontinued": 1960,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Late-1930s ASM evolution, uprated supercharging (c. years).",
+                  "description": "Terza evoluzione della famiglia, con sovralimentazione affinata e potenze in crescita. Gli ASM 183 servirono per tutta la guerra e oltre, testardi e cattedralici nelle sale macchine delle motosiluranti."
+                }
+              },
+              {
+                "id": "isottafraschini:asm184",
+                "engine_model": "ASM 184",
+                "year_introduced": 1938,
+                "year_discontinued": 1963,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Final ASM W-18; examples served with four navies into the mid-1960s.",
+                  "description": "L'ultimo dei diciotto cilindri: l'ASM 184 rimase in servizio — Italia, Finlandia, Svezia, Gran Bretagna — fino a metà anni '60, quarant'anni dopo il progetto aeronautico d'origine. Pochi motori marini possono vantare una simile parabola: nato per il cielo, consacrato dal mare."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

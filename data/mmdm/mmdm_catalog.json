@@ -427,60 +427,173 @@
                             "Isotta Fraschini": {
                                 "year_founded": 1900,
                                 "year_dissolved": null,
+                                "sort_number": 39,
                                 "cylinders": {
                                     "6": {
                                         "sort_number": 1,
-                                        "models": [
-                                            {
-                                                "engine_model": "ID36 SR",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
-                                            },
-                                            {
-                                                "engine_model": "ID36 SR4",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
+                                        "models": [],
+                                        "families": {
+                                            "ID36": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "isottafraschini:id36-sr",
+                                                        "engine_model": "ID36 SR",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Modern Bari-era high-speed marine diesel, ID36 series, inline-six configuration (c. years).",
+                                                            "description": "La serie ID36 rappresenta l'Isotta Fraschini contemporanea: motori veloci e leggeri nati negli stabilimenti di Bari per pattugliatori, traghetti veloci e naviglio militare. L'SR è la configurazione a sei cilindri in linea — la voce d'ingresso di una famiglia modulare pensata per il servizio gravoso."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "isottafraschini:id36-sr4",
+                                                        "engine_model": "ID36 SR4",
+                                                        "year_introduced": 1990,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "ID36 series six, later four-valve evolution (c. years).",
+                                                            "description": "Evoluzione plurivalvole del sei cilindri ID36: più aria, più potenza specifica, stessa architettura modulare. Con la sigla SR4 la famiglia si aggiornò agli standard delle motorizzazioni navali veloci di fine secolo."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     },
                                     "8": {
                                         "sort_number": 2,
-                                        "models": [
-                                            {
-                                                "engine_model": "ID36 SS",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "ID36": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "isottafraschini:id36-ss",
+                                                        "engine_model": "ID36 SS",
+                                                        "year_introduced": 1987,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "ID36 series V8 configuration (c. years).",
+                                                            "description": "La declinazione a otto cilindri della famiglia modulare ID36: potenza maggiore negli stessi ingombri contenuti, per pattugliatori e unità veloci dove il rapporto peso/potenza è tutto."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "V1708",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
+                                            "V170": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "isottafraschini:v1708",
+                                                        "engine_model": "V1708",
+                                                        "year_introduced": 1992,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V170 family V8, 170mm bore class, high-speed marine diesel (c. years).",
+                                                            "description": "Con la famiglia V170 la casa di Bari salì di taglia: il V1708, otto cilindri a V da 170 mm di alesaggio, portò l'Isotta Fraschini nel mondo dei grandi pattugliatori e dei traghetti veloci."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
                                     },
                                     "12": {
                                         "sort_number": 3,
-                                        "models": [
-                                            {
-                                                "engine_model": "ID36 SSR",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 1
+                                        "models": [],
+                                        "families": {
+                                            "ID36": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "isottafraschini:id36-ssr",
+                                                        "engine_model": "ID36 SSR",
+                                                        "year_introduced": 1989,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "ID36 series V12 configuration (c. years).",
+                                                            "description": "Il vertice della famiglia ID36: dodici cilindri a V per le applicazioni più esigenti del naviglio veloce, militare e civile."
+                                                        }
+                                                    }
+                                                ]
                                             },
-                                            {
-                                                "engine_model": "V1712",
-                                                "year_introduced": null,
-                                                "year_discontinued": null,
-                                                "sort_number": 2
+                                            "V170": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "isottafraschini:v1712",
+                                                        "engine_model": "V1712",
+                                                        "year_introduced": 1994,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V170 family V12; flagship of the modern Bari range (c. years).",
+                                                            "description": "L'ammiraglia moderna: il V1712, dodici cilindri della famiglia V170, motorizza pattugliatori d'altura e unità veloci in mezzo mondo — l'erede diretto, per vocazione, dei grandi motori veloci che resero celebre il marchio."
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        ]
+                                        }
+                                    },
+                                    "18": {
+                                        "sort_number": 4,
+                                        "models": [],
+                                        "families": {
+                                            "ASM": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "isottafraschini:asm180",
+                                                        "engine_model": "ASM 180",
+                                                        "year_introduced": 1931,
+                                                        "year_discontinued": 1955,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Asso Marini: marinized Asso 1000 W-18, ~1,000 hp at 1,600 rpm, water-cooled exhaust, reversing gearbox. Giustino Cattaneo's aero masterpiece gone to sea (c. years).",
+                                                            "description": "ASM: Asso Marini. Il leggendario W18 aeronautico di Giustino Cattaneo, marinizzato con scarichi raffreddati ad acqua e invertitore: mille cavalli a 1600 giri che spinsero i MAS oltre i quaranta nodi. Diciotto cilindri in tre bancate — il motore più teatrale che questo catalogo possa offrire, e la ragione stessa per cui esiste un collettore di scarico raffreddato ad acqua."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "isottafraschini:asm181",
+                                                        "engine_model": "ASM 181",
+                                                        "year_introduced": 1933,
+                                                        "year_discontinued": 1958,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "ASM W-18 development; torpedo-boat service with Italy and export navies (c. years).",
+                                                            "description": "Sviluppo del capostipite, l'ASM 181 equipaggiò le motosiluranti italiane e trovò clienti anche all'estero: Finlandia e Svezia vollero il W18 di Bari... di Milano, allora — per le proprie unità veloci del Baltico."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "isottafraschini:asm183",
+                                                        "engine_model": "ASM 183",
+                                                        "year_introduced": 1936,
+                                                        "year_discontinued": 1960,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Late-1930s ASM evolution, uprated supercharging (c. years).",
+                                                            "description": "Terza evoluzione della famiglia, con sovralimentazione affinata e potenze in crescita. Gli ASM 183 servirono per tutta la guerra e oltre, testardi e cattedralici nelle sale macchine delle motosiluranti."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "isottafraschini:asm184",
+                                                        "engine_model": "ASM 184",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1963,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Final ASM W-18; examples served with four navies into the mid-1960s.",
+                                                            "description": "L'ultimo dei diciotto cilindri: l'ASM 184 rimase in servizio — Italia, Finlandia, Svezia, Gran Bretagna — fino a metà anni '60, quarant'anni dopo il progetto aeronautico d'origine. Pochi motori marini possono vantare una simile parabola: nato per il cielo, consacrato dal mare."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 39
+                                }
                             },
                             "Lombardini": {
                                 "year_founded": 1933,
@@ -4881,37 +4994,216 @@
                             "MerCruiser": {
                                 "year_founded": 1961,
                                 "year_dissolved": null,
-                                "sort_number": 63,
+                                "sort_number": 61,
                                 "cylinders": {
                                     "4": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "mercruiser:120",
+                                                "engine_model": "120",
+                                                "year_introduced": 1964,
+                                                "year_discontinued": 1982,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "GM 153 cid four, ~120 hp; the sterndrive starter of the sixties (c. years).",
+                                                    "description": "Il quattro cilindri delle origini: blocco GM da 153 pollici, 120 cavalli, e la formula sterndrive appena inventata. Con lui il motoscafo americano del dopoguerra divenne un fenomeno di massa."
+                                                }
+                                            },
+                                            {
+                                                "id": "mercruiser:140",
+                                                "engine_model": "140",
+                                                "year_introduced": 1968,
+                                                "year_discontinued": 1989,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "GM 181 cid four, ~140 hp; the seventies stalwart (c. years).",
+                                                    "description": "L'evoluzione da 181 pollici cubi: 140 cavalli onesti che spinsero una generazione di runabout e day-cruiser. Meccanica automobilistica, cuore nautico."
+                                                }
+                                            },
+                                            {
+                                                "id": "mercruiser:3.0l",
+                                                "engine_model": "3.0L",
+                                                "year_introduced": 1990,
+                                                "year_discontinued": null,
+                                                "sort_number": 3,
+                                                "data": {
+                                                    "key_notes": "The eternal base sterndrive: GM 181 four, 135 hp, still the entry point decades on.",
+                                                    "description": "L'immortale: il 3 litri base che da oltre trent'anni è la porta d'ingresso del mondo sterndrive. Semplice, economico, dovunque — il motore marino più democratico d'America."
+                                                }
+                                            },
+                                            {
+                                                "id": "mercruiser:d2.8l",
+                                                "engine_model": "D2.8L",
+                                                "year_introduced": 1993,
+                                                "year_discontinued": 2001,
+                                                "sort_number": 4,
+                                                "data": {
+                                                    "key_notes": "Diesel D-series four — VM Motori block under MerCruiser plates (see VM Motori, Italia). Nameplate rule at work.",
+                                                    "description": "Il diesel di casa… costruito a Cento: blocco VM Motori (vedi) vestito MerCruiser. La regola della targhetta lo colloca qui, ma il sangue è emiliano — un piccolo ponte transatlantico in sala macchine."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "6": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "mercruiser:165",
+                                                "engine_model": "165",
+                                                "year_introduced": 1966,
+                                                "year_discontinued": 1981,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "GM 250 straight-six, ~165 hp (c. years).",
+                                                    "description": "Il sei in linea GM da 250 pollici: coppia dolce e affidabilità da berlina per i cruiser compatti degli anni '70."
+                                                }
+                                            },
+                                            {
+                                                "id": "mercruiser:d4.2l",
+                                                "engine_model": "D4.2L",
+                                                "year_introduced": 1994,
+                                                "year_discontinued": 2001,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "Diesel D-series six — VM Motori block, MerCruiser plates (see VM Motori).",
+                                                    "description": "Il sei cilindri della parentesi diesel: ancora VM Motori sotto la vernice nera, per chi voleva gasolio senza rinunciare al piede poppiero."
+                                                }
+                                            }
+                                        ],
+                                        "families": {
+                                            "4.3L": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "mercruiser:4.3l",
+                                                        "engine_model": "4.3L",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The GM V6 — 'a 350 with two cylinders off'; carbureted generations.",
+                                                            "description": "Il V6 che è un piccolo V8: derivato dal 350 GM amputato di due cilindri, divenne il cuore della fascia media sterndrive. Generazioni a carburatore, poi l'iniezione."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "mercruiser:4.3l-mpi",
+                                                        "engine_model": "4.3L MPI",
+                                                        "year_introduced": 1996,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Multi-port injected 4.3, ~220 hp.",
+                                                            "description": "La maturità dell'iniezione multipoint: 220 cavalli, consumi civili, e la colonna sonora V6 dei laghi americani."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "8": {
                                         "sort_number": 3,
+                                        "models": [
+                                            {
+                                                "id": "mercruiser:d7.3l-dtronic",
+                                                "engine_model": "D7.3L D-Tronic",
+                                                "year_introduced": 1995,
+                                                "year_discontinued": 2001,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Diesel V8 — Navistar/International block under MerCruiser plates (see International). Electronic D-Tronic control.",
+                                                    "description": "Il V8 a gasolio dell'era D-Tronic: blocco Navistar/International (vedi) con elettronica MerCruiser. La targhetta decide la casa; la genealogia attraversa il catalogo."
+                                                }
+                                            }
+                                        ],
                                         "families": {
                                             "Small Block": {
                                                 "sort_number": 1,
-                                                "subfamilies": {
-                                                    "Gen IV": {
+                                                "models": [
+                                                    {
+                                                        "id": "mercruiser:260",
+                                                        "engine_model": "260",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1982,
                                                         "sort_number": 1,
-                                                        "models": [
-                                                            {
-                                                                "engine_model": "6.2L",
-                                                                "year_introduced": 2014,
-                                                                "year_discontinued": null,
-                                                                "data": {
-                                                                    "key_notes": "Marinized version of GM's LS-series V8; purpose-modified for sterndrive and inboard boats; introduced around 2014; 300–430 hp."
-                                                                },
-                                                                "sort_number": 1
-                                                            }
-                                                        ]
+                                                        "data": {
+                                                            "key_notes": "5.7L small block, 260 hp rating era (c.).",
+                                                            "description": "Il piccolo blocco nella taratura 260: la potenza V8 degli anni della disco, su scafi che cominciavano a chiamarsi performance."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "mercruiser:5.0l",
+                                                        "engine_model": "5.0L",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "GM 305 small block, ~230-260 hp.",
+                                                            "description": "Il 305: l'otto cilindri d'accesso, equilibrio perfetto tra costo, consumi e quella voce che solo un small block sa fare."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "mercruiser:5.7l",
+                                                        "engine_model": "5.7L / 350 MAG",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "GM 350 small block incl. 350 MAG variants; the definitive sterndrive V8.",
+                                                            "description": "Il 350: se lo sterndrive americano ha un motore simbolo, è questo. Dalle versioni a carburatore ai MAG a iniezione, mezzo secolo di poppe alzate e scie dritte."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "mercruiser:6.2l",
+                                                        "engine_model": "6.2L",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "377 cid small block evolution, ~320 hp.",
+                                                            "description": "L'evoluzione moderna del piccolo blocco: 6,2 litri, 320 cavalli, iniezione e catalizzatori — il classico aggiornato al nuovo secolo."
+                                                        }
                                                     }
-                                                }
+                                                ]
+                                            },
+                                            "Big Block": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "mercruiser:454-mag",
+                                                        "engine_model": "454 MAG",
+                                                        "year_introduced": 1986,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "GM 454 big block, ~365-385 hp (Alpha '86-'88, Bravo '88-'97 per sources).",
+                                                            "description": "Il grande blocco da 454 pollici: coppia oceanica per cruiser pesanti e primi high-performance. Il MAG che fece scuola."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "mercruiser:502-mag",
+                                                        "engine_model": "502 MAG",
+                                                        "year_introduced": 1993,
+                                                        "year_discontinued": 2001,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "GM 502 big block, ~415 hp (c.).",
+                                                            "description": "Mezzo migliaio di pollici cubi: il 502 MAG era il muscolo massimo del listino prima dell'era 496."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "mercruiser:496-mag",
+                                                        "engine_model": "496 MAG",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": 2015,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "GM 8.1L (496) big block, 375-425 hp; the final carbureted-lineage big block.",
+                                                            "description": "L'ultimo dei grandi blocchi di stirpe classica: 8,1 litri, fino a 425 cavalli, prima che la nautica americana passasse ai V8 di nuova generazione. Chiusura degna di una dinastia."
+                                                        }
+                                                    }
+                                                ]
                                             }
                                         }
                                     }
@@ -4922,40 +5214,456 @@
                                 "year_dissolved": null,
                                 "sort_number": 19,
                                 "cylinders": {
-                                    "4": {
+                                    "1": {
                                         "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "6": {
-                                        "sort_number": 2,
+                                        "models": [],
                                         "families": {
                                             "71": {
                                                 "sort_number": 1,
                                                 "models": [
                                                     {
-                                                        "engine_model": "6-71",
-                                                        "year_introduced": 1940,
-                                                        "year_discontinued": null,
+                                                        "id": "detroit:1-71",
+                                                        "engine_model": "1-71",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1959,
+                                                        "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "Two-stroke diesel engine adapted for marine use; widely used in commercial vessels since the 1940s; 165–230 hp in marine configs."
-                                                        },
-                                                        "sort_number": 1
+                                                            "key_notes": "Single-cylinder 71-series two-stroke, ~24 hp; Roots-blown like all its kin.",
+                                                            "description": "Il monocilindrico della dinastia: 71 pollici cubi, compressore Roots, e il timbro inconfondibile della famiglia già tutto intero. Generatori di bordo, pompe, piccoli ausiliari — il seme da cui crebbe tutto."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "sort_number": 2,
+                                        "models": [],
+                                        "families": {
+                                            "53": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:2-53",
+                                                        "engine_model": "2-53",
+                                                        "year_introduced": 1957,
+                                                        "year_discontinued": 1975,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Twin 53-series (53 cid/cyl), compact two-stroke.",
+                                                            "description": "Il piccolo bicilindrico della serie compatta: ausiliari e piccole propulsioni dove i 71 non entravano."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "71": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:2-71",
+                                                        "engine_model": "2-71",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1970,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Twin 71-series two-stroke; Mesa baseline lists the 2-71N.",
+                                                            "description": "Il bicilindrico da lavoro: ausiliari, verricelli, piccole propulsioni. Come tutti i 71, condivideva pistoni, canne e testate coi fratelli — la logica modulare che rese la serie immortale."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "sort_number": 3,
+                                        "models": [],
+                                        "families": {
+                                            "53": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:3-53",
+                                                        "engine_model": "3-53",
+                                                        "year_introduced": 1957,
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Inline-three 53-series.",
+                                                            "description": "Tre cilindri compatti per barche da lavoro minori e gruppi elettrogeni marini."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "71": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:3-71",
+                                                        "engine_model": "3-71",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1974,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Inline-three 71-series, ~85 hp class.",
+                                                            "description": "Tre cilindri in linea per pescherecci minori e gruppi di bordo: la taglia di mezzo dei 71 in linea, robusta e riparabile con la cassetta degli attrezzi di sempre."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "4": {
+                                        "sort_number": 4,
+                                        "models": [],
+                                        "families": {
+                                            "53": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:4-53",
+                                                        "engine_model": "4-53",
+                                                        "year_introduced": 1957,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Inline-four, ~100-140 hp; a small-workboat favorite.",
+                                                            "description": "Il più amato dei 53: quattro cilindri, un quintale di coppia, e la proverbiale immortalità Detroit in formato ridotto."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "71": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:4-71",
+                                                        "engine_model": "4-71",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "Inline-four, ~120-140 hp marine; a workboat standard for decades.",
+                                                            "description": "Il quattro cilindri che motorizzò mezza flotta da lavoro americana: 120-140 cavalli marini, decenni di produzione, e la solita voce a due tempi che si riconosce a un miglio di distanza."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "6": {
+                                        "sort_number": 5,
+                                        "models": [],
+                                        "families": {
+                                            "53": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:6v-53",
+                                                        "engine_model": "6V-53",
+                                                        "year_introduced": 1962,
+                                                        "year_discontinued": 1990,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "V6 53-series, ~150-200 hp; baseline lists 6V-53N.",
+                                                            "description": "Il V6 compatto: due tempi pieno in dimensioni da automobile, caro a pescherecci minori e mezzi militari leggeri."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "60": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:series60-11.1",
+                                                        "engine_model": "Series 60 11.1L",
+                                                        "year_introduced": 1987,
+                                                        "year_discontinued": 2011,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The four-stroke apostasy: electronic inline-six, 11.1L variant (Mesa baseline '11.1').",
+                                                            "description": "L'eresia necessaria: dopo mezzo secolo di due tempi, il Series 60 portò Detroit al quattro tempi elettronico. La variante 11,1 litri aprì la gamma."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "detroit:series60-12.7",
+                                                        "engine_model": "Series 60 12.7L",
+                                                        "year_introduced": 1988,
+                                                        "year_discontinued": 2011,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "12.7L Series 60 — the most common marine variant (c.).",
+                                                            "description": "Il 12,7 litri fu il Series 60 per antonomasia, anche in versione marina: silenzioso, parco, elettronico — tutto ciò che i 71 non erano, e proprio per questo il loro successore."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "detroit:series60-14l",
+                                                        "engine_model": "Series 60 14L",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": 2011,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "14L final evolution (Mesa baseline '14L').",
+                                                            "description": "Ultima evoluzione della famiglia, quattordici litri: chiude la storia motoristica marina del marchio prima dell'era MTU."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "71": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:6-71",
+                                                        "engine_model": "6-71",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 5,
+                                                        "data": {
+                                                            "key_notes": "THE engine: inline-six, 426 cid, ~165-230 hp marine. 57,000 powered WWII landing craft (LCVP, LCM, LCI) — mostly wearing GRAY MARINE plates (see Gray Marine); civilian marine career ran six decades.",
+                                                            "description": "Il motore del secolo americano: sei cilindri in linea, due tempi, compressore Roots. Ne servirono 57.000 sui mezzi da sbarco della Seconda guerra mondiale — quasi tutti marinizzati e targati Gray Marine (vedi) — e altrettanti, dopo, su pescherecci, rimorchiatori e barche da lavoro di ogni mare. Se il diesel veloce ha una voce nell'immaginario collettivo, è la sua."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "detroit:6v-71",
+                                                        "engine_model": "6V-71",
+                                                        "year_introduced": 1957,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 6,
+                                                        "data": {
+                                                            "key_notes": "V6 71-series, 426 cid, 238-300+ hp; N/T/TI variants (Mesa baseline).",
+                                                            "description": "Con le bancate a V la serie 71 si fece compatta: il 6V-71, stessi 426 pollici cubi del 6 in linea in metà lunghezza, aprì ai 71 le sale macchine più anguste."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "92": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:6v-92",
+                                                        "engine_model": "6V-92",
+                                                        "year_introduced": 1974,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V6 92-series (92 cid/cyl), the 71's big-bore heir; N/T/TA variants.",
+                                                            "description": "Erede maggiorato del 6V-71, il 6V-92 portò la dinastia due tempi nell'era del turbo e dell'aftercooling."
+                                                        }
                                                     }
                                                 ]
                                             }
                                         }
                                     },
                                     "8": {
-                                        "sort_number": 3,
-                                        "models": []
+                                        "sort_number": 6,
+                                        "models": [
+                                            {
+                                                "id": "detroit:8.2-fuel-pincher",
+                                                "engine_model": "8.2 Fuel Pincher",
+                                                "year_introduced": 1980,
+                                                "year_discontinued": 1993,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "8.2L lightweight four-stroke V8 (Mesa baseline '8.2'); marinized for small workboats and pleasure craft.",
+                                                    "description": "Il 'Fuel Pincher': un V8 quattro tempi leggero ed economo, figlio delle crisi petrolifere. Marinizzato per barche da lavoro minori e diporto, è il Detroit meno detroit di tutti — e il catalogo Mesa ne vendeva i collettori."
+                                                }
+                                            }
+                                        ],
+                                        "families": {
+                                            "53": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:8v-53",
+                                                        "engine_model": "8V-53",
+                                                        "year_introduced": 1964,
+                                                        "year_discontinued": 1990,
+                                                        "sort_number": 5,
+                                                        "data": {
+                                                            "key_notes": "V8 53-series (~280 hp T); present in the Mesa baseline (8V-53N, 8V53) — added on baseline authority.",
+                                                            "description": "L'otto a V della serie compatta, riscoperto grazie al catalogo Mesa: potenza da 71 in ingombri da 53, meno celebre dei fratelli ma ben presente nelle sale macchine americane."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "71": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:8v-71",
+                                                        "engine_model": "8V-71",
+                                                        "year_introduced": 1957,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 7,
+                                                        "data": {
+                                                            "key_notes": "V8, ~318-450 hp marine; N/T/TI variants per baseline.",
+                                                            "description": "L'otto a V della dinastia: da 318 cavalli aspirato a oltre 450 turbo. Motoryacht, pescherecci d'altura, rimorchiatori: ovunque servisse coppia vera con ricambi ovunque."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "92": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:8v-92",
+                                                        "engine_model": "8V-92",
+                                                        "year_introduced": 1974,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "V8, ~450-735 hp marine; the sportfisherman classic (N/T/TI per baseline).",
+                                                            "description": "Il motore d'elezione degli sportfisherman americani anni '80: fino a 735 cavalli di due tempi turbo, e una colonna sonora che i pescatori d'altura ricordano con commozione."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "149": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:8v-149",
+                                                        "engine_model": "8V-149",
+                                                        "year_introduced": 1966,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "V8 149-series (149 cid/cyl!) — the giant line; N/T variants in the Mesa baseline. Added on baseline authority.",
+                                                            "description": "La serie dei giganti, riscoperta nel catalogo Mesa: 149 pollici cubi per cilindro. L'8V-149 apriva una famiglia pensata per rimorchiatori oceanici, draghe e generazione pesante."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "12": {
-                                        "sort_number": 4,
-                                        "models": []
+                                        "sort_number": 7,
+                                        "models": [],
+                                        "families": {
+                                            "71": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:12v-71",
+                                                        "engine_model": "12V-71",
+                                                        "year_introduced": 1957,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 8,
+                                                        "data": {
+                                                            "key_notes": "V12, ~600-800+ hp marine.",
+                                                            "description": "Dodici cilindri di due tempi urlante: il 12V-71 spinse pattugliatori, pescherecci oceanici e i primi sportfisherman seri. Con i turbo superò gli 800 cavalli."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "92": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:12v-92",
+                                                        "engine_model": "12V-92",
+                                                        "year_introduced": 1975,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "V12, ~900-1,080 hp marine.",
+                                                            "description": "Dodici cilindri della generazione 92: motoryacht veloci, traghetti, pattugliatori. Il canto del cigno ad alta potenza del due tempi Detroit."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "149": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:12v-149",
+                                                        "engine_model": "12V-149",
+                                                        "year_introduced": 1967,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "V12, ~1,800-2,000+ hp; 12V-149N/T per baseline.",
+                                                            "description": "Dodici cilindri da quasi trentamila centimetri cubi: propulsione di rimorchiatori d'altura, spintori fluviali e traghetti. Due tempi alla scala massima."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "16": {
-                                        "sort_number": 5,
-                                        "models": []
+                                        "sort_number": 8,
+                                        "models": [],
+                                        "families": {
+                                            "71": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:16v-71",
+                                                        "engine_model": "16V-71",
+                                                        "year_introduced": 1958,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 9,
+                                                        "data": {
+                                                            "key_notes": "V16, ~1,000+ hp.",
+                                                            "description": "Sedici cilindri per il lavoro pesante: propulsione di rimorchiatori e traghetti, generazione a bordo delle piattaforme. La modularità 71 portata quasi al limite."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "92": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:16v-92",
+                                                        "engine_model": "16V-92",
+                                                        "year_introduced": 1976,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "V16, ~1,200-1,500 hp.",
+                                                            "description": "Il grande sedici della serie 92, propulsione di traghetti veloci e grandi yacht prima dell'avvento dei quattro tempi elettronici."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "149": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:16v-149",
+                                                        "engine_model": "16V-149",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "V16, ~2,400-3,000+ hp; the largest Detroit two-strokes in regular marine service.",
+                                                            "description": "Il vertice assoluto del due tempi Detroit: sedici cilindri, tremila cavalli turbo, sale macchine di navi vere. Con il 16V-149 la dinastia nata dal piccolo 1-71 del 1938 chiuse il cerchio, quaranta volte più grande."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "24": {
+                                        "sort_number": 9,
+                                        "models": [],
+                                        "families": {
+                                            "71": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "detroit:24v-71",
+                                                        "engine_model": "24V-71",
+                                                        "year_introduced": 1965,
+                                                        "year_discontinued": 1985,
+                                                        "sort_number": 10,
+                                                        "data": {
+                                                            "key_notes": "V24 (!), ~1,800 hp, principally marine. The family's outer limit.",
+                                                            "description": "Il limite raggiunto: ventiquattro cilindri, 1.800 cavalli, quasi esclusivamente marino. Tre 8V in un solo blocco, per chi aveva bisogno della potenza di una centrale e dello spazio di una sala macchine sola."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
                                 }
                             },
@@ -4984,26 +5692,149 @@
                             },
                             "Gray Marine": {
                                 "year_founded": 1906,
-                                "year_dissolved": 1946,
+                                "year_dissolved": 1967,
+                                "sort_number": 29,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "gray:single-3hp",
+                                                "engine_model": "Single 3 HP",
+                                                "year_introduced": 1906,
+                                                "year_discontinued": 1925,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Archetypal Gray one-lunger of the make-and-break era; model naming era-hedged (Wow entry).",
+                                                    "description": "Il monocilindrico Gray delle origini: tre cavalli di pazienza infinita, accensione a strappo e il 'putt-putt' che riempì i porti americani del primo Novecento. Dei nomi precisi restano poche tracce; del suono, la memoria di intere marinerie."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "gray:twin-6hp",
+                                                "engine_model": "Twin 6 HP",
+                                                "year_introduced": 1908,
+                                                "year_discontinued": 1925,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Vintage Gray twin; era-hedged naming (Wow entry).",
+                                                    "description": "Il bicilindrico d'epoca: sei cavalli, due colpi per giro, e abbastanza spinta per le barche da pesca costiera dei Grandi Laghi e dell'Atlantico. Compagno maggiore del monocilindrico, ne condivideva la semplicità assoluta."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "4": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "gray:sea-scout",
+                                                "engine_model": "Sea Scout",
+                                                "year_introduced": 1935,
+                                                "year_discontinued": 1955,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "25 hp four — the beloved small marine gasoline four of the interwar and postwar decades.",
+                                                    "description": "Il piccolo quattro cilindri per antonomasia: 25 cavalli benzina, dolce e affidabile, cuore di mille runabout e barche da lavoro leggere. Il Sea Scout è la Gray gentile — quella dei laghi, delle domeniche, delle prime barche di famiglia."
+                                                }
+                                            },
+                                            {
+                                                "id": "gray:4-112",
+                                                "engine_model": "4-112",
+                                                "year_introduced": 1938,
+                                                "year_discontinued": 1958,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "31 hp, 112 cid four.",
+                                                    "description": "Il gradino sopra il Sea Scout: 112 pollici cubi e 31 cavalli per barche più cariche e stagioni più lunghe."
+                                                }
+                                            },
+                                            {
+                                                "id": "gray:model-620",
+                                                "engine_model": "Model 620",
+                                                "year_introduced": 1946,
+                                                "year_discontinued": 1960,
+                                                "sort_number": 3,
+                                                "data": {
+                                                    "key_notes": "140 cid four of the postwar range.",
+                                                    "description": "Quattro cilindri del dopoguerra, 140 pollici cubi: il tuttofare della gamma benzina negli anni del boom nautico americano."
+                                                }
+                                            }
+                                        ],
+                                        "families": {
+                                            "162": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "gray:4-75",
+                                                        "engine_model": "4-75",
+                                                        "year_introduced": 1948,
+                                                        "year_discontinued": 1962,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "162 cid family, 75 hp rating.",
+                                                            "description": "La famiglia da 162 pollici cubi declinata a 75 cavalli: robustezza da lavoro con la scorrevolezza del sei... in quattro cilindri."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gray:fireball-4-90",
+                                                        "engine_model": "Fireball 4-90",
+                                                        "year_introduced": 1950,
+                                                        "year_discontinued": 1965,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "162 cid family, 90 hp — the Fireball name at four cylinders.",
+                                                            "description": "Il nome Fireball diceva tutto: la versione brillante della famiglia 162, novanta cavalli per runabout veloci e sci nautico. La Gray sportiva."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
                                         "sort_number": 4,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "64": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "gray:6-71-diesel",
+                                                        "engine_model": "6-71 Diesel",
+                                                        "year_introduced": 1938,
+                                                        "year_discontinued": 1967,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "THE landing-craft engine: Gray-marinized Detroit 6-71 two-stroke (see Detroit Diesel → 6 → 71). ~100,000 built 1941-45; 52,000+ powered LCVPs, LCMs, Higgins boats. Water-cooled exhaust, marine gear, GRAY MARINE nameplate.",
+                                                            "description": "Il motore che toccò le spiagge: il 6-71 di Detroit (vedi), marinizzato da Gray con scarico raffreddato ad acqua e invertitore, targato GRAY MARINE. Centomila esemplari tra il 1941 e il 1945; più di cinquantamila spinsero LCVP, LCM e barche Higgins verso la Normandia e il Pacifico. Nessun motore di questo catalogo ha portato più storia sulla schiena — e dopo la guerra, con la stessa flemma, tornò a pescare."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Phantom": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "gray:phantom-six",
+                                                        "engine_model": "Phantom Six",
+                                                        "year_introduced": 1932,
+                                                        "year_discontinued": 1958,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The flagship gasoline sixes of the '30s-'50s (c. years).",
+                                                            "description": "L'ammiraglia benzina: il sei cilindri Phantom, morbido e silenzioso, motorizzò cruiser e commuter americani per un quarto di secolo. Il nome — fantasma — prometteva esattamente quella discrezione."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 29
+                                }
                             },
                             "Lathrop": {
                                 "year_founded": 1896,
@@ -5295,18 +6126,120 @@
                             },
                             "Lehman": {
                                 "year_founded": 1946,
-                                "year_dissolved": 2008,
+                                "year_dissolved": null,
+                                "sort_number": 51,
                                 "cylinders": {
                                     "4": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "lehman:80",
+                                                "engine_model": "80",
+                                                "year_introduced": 1965,
+                                                "year_discontinued": 1980,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Early Lehman four, ~80 hp; block attribution uncertain (c. years). In on Howell's parts-counter authority — absent from both web sources and the Mesa baseline.",
+                                                    "description": "Il quattro cilindri delle origini: ottanta cavalli circa, documentato più nei banconi dei ricambisti che negli archivi. Figura in questo catalogo sulla parola di chi quei ricambi li vendeva — la fonte più autorevole che un'enciclopedia possa desiderare."
+                                                }
+                                            }
+                                        ],
+                                        "families": {
+                                            "Dover": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "lehman:super-90",
+                                                        "engine_model": "Super 90",
+                                                        "year_introduced": 1977,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Four-cylinder sibling of the Dover sixes, ~90 hp.",
+                                                            "description": "Il fratello a quattro cilindri dei grandi sei: blocco Dover inglese, novanta cavalli tranquilli, per trawler minori e barche a vela di taglia generosa."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "Dorset": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "lehman:120",
+                                                        "engine_model": "120",
+                                                        "year_introduced": 1966,
+                                                        "year_discontinued": 1981,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "THE trawler engine: Dorset-block (2704C) six, 120 hp at 2,500 rpm; thousands still running, 12-15,000 hours between rebuilds. Base engine: see Ford → 6. (Mesa baseline lists Lehman as one line inside its Ford section: '6Cyl Lehman' manifold #805.)",
+                                                            "description": "Il motore dei trawler per antonomasia: sei cilindri su blocco Ford Dorset (vedi Ford), 120 cavalli a regimi da sinfonia lenta. Ne navigano ancora migliaia, con 12-15.000 ore tra una revisione e l'altra — l'affidabilità fatta ghisa. Da notare che il catalogo Mesa, progenitore di questo, archiviava i Lehman sotto Ford: qui il nome sulla targhetta ha vinto."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Dover": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "lehman:135",
+                                                        "engine_model": "135",
+                                                        "year_introduced": 1981,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Dover-block (2725E) six, 135 hp; the 120's successor. Base engine: see Ford → 6.",
+                                                            "description": "L'erede: blocco Dover, 135 cavalli, stessa vocazione dislocante. Con il 135 la ricetta Lehman attraversò gli anni '80 senza cambiare filosofia: giri bassi, consumi minimi, eternità meccanica."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "SP": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "lehman:sp185",
+                                                        "engine_model": "SP 185",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Turbocharged SP line, ~185 hp (c.).",
+                                                            "description": "Con la serie SP i Lehman scoprirono il turbo: 185 cavalli per chi voleva qualche nodo in più senza tradire il blocco inglese."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lehman:sp225",
+                                                        "engine_model": "SP 225",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Turbo SP line, ~225 hp (c.).",
+                                                            "description": "Il gradino di mezzo della gamma turbo: 225 cavalli, ancora su base Dover, per trawler veloci e motoryacht dislocanti."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lehman:sp275",
+                                                        "engine_model": "SP 275",
+                                                        "year_introduced": 1987,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "Top turbo SP, ~275 hp (uncertain — thin record).",
+                                                            "description": "Il vertice documentato con più incertezza: 275 cavalli dichiarati, poche tracce d'archivio. Resta in catalogo con riserva, in attesa di conferme dal mondo dei trawleristi."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 52
+                                }
                             },
                             "Lockwood-Ash": {
                                 "year_founded": 1902,

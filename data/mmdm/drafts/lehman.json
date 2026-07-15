@@ -1,0 +1,123 @@
+{
+  "_dossier": "009 Lehman. Rulings: donor-block families (Dorset/Dover/SP); SP trio in; Lehman 80 IN on Howell's parts-counter authority (absent from web sources AND Mesa). Mesa cross-check: no Lehman section — one line '6Cyl Lehman' manifold (#805) inside the FORD section; Mesa filed Lehman as Ford variant, MMdM gives the nameplate its own house.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Lehman",
+  "node": {
+    "year_founded": 1946,
+    "year_dissolved": null,
+    "sort_number": 51,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "lehman:80",
+            "engine_model": "80",
+            "year_introduced": 1965,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Early Lehman four, ~80 hp; block attribution uncertain (c. years). In on Howell's parts-counter authority — absent from both web sources and the Mesa baseline.",
+              "description": "Il quattro cilindri delle origini: ottanta cavalli circa, documentato più nei banconi dei ricambisti che negli archivi. Figura in questo catalogo sulla parola di chi quei ricambi li vendeva — la fonte più autorevole che un'enciclopedia possa desiderare."
+            }
+          }
+        ],
+        "families": {
+          "Dover": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lehman:super-90",
+                "engine_model": "Super 90",
+                "year_introduced": 1977,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Four-cylinder sibling of the Dover sixes, ~90 hp.",
+                  "description": "Il fratello a quattro cilindri dei grandi sei: blocco Dover inglese, novanta cavalli tranquilli, per trawler minori e barche a vela di taglia generosa."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "Dorset": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lehman:120",
+                "engine_model": "120",
+                "year_introduced": 1966,
+                "year_discontinued": 1981,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "THE trawler engine: Dorset-block (2704C) six, 120 hp at 2,500 rpm; thousands still running, 12-15,000 hours between rebuilds. Base engine: see Ford → 6. (Mesa baseline lists Lehman as one line inside its Ford section: '6Cyl Lehman' manifold #805.)",
+                  "description": "Il motore dei trawler per antonomasia: sei cilindri su blocco Ford Dorset (vedi Ford), 120 cavalli a regimi da sinfonia lenta. Ne navigano ancora migliaia, con 12-15.000 ore tra una revisione e l'altra — l'affidabilità fatta ghisa. Da notare che il catalogo Mesa, progenitore di questo, archiviava i Lehman sotto Ford: qui il nome sulla targhetta ha vinto."
+                }
+              }
+            ]
+          },
+          "Dover": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "lehman:135",
+                "engine_model": "135",
+                "year_introduced": 1981,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Dover-block (2725E) six, 135 hp; the 120's successor. Base engine: see Ford → 6.",
+                  "description": "L'erede: blocco Dover, 135 cavalli, stessa vocazione dislocante. Con il 135 la ricetta Lehman attraversò gli anni '80 senza cambiare filosofia: giri bassi, consumi minimi, eternità meccanica."
+                }
+              }
+            ]
+          },
+          "SP": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "lehman:sp185",
+                "engine_model": "SP 185",
+                "year_introduced": 1983,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Turbocharged SP line, ~185 hp (c.).",
+                  "description": "Con la serie SP i Lehman scoprirono il turbo: 185 cavalli per chi voleva qualche nodo in più senza tradire il blocco inglese."
+                }
+              },
+              {
+                "id": "lehman:sp225",
+                "engine_model": "SP 225",
+                "year_introduced": 1985,
+                "year_discontinued": 1995,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Turbo SP line, ~225 hp (c.).",
+                  "description": "Il gradino di mezzo della gamma turbo: 225 cavalli, ancora su base Dover, per trawler veloci e motoryacht dislocanti."
+                }
+              },
+              {
+                "id": "lehman:sp275",
+                "engine_model": "SP 275",
+                "year_introduced": 1987,
+                "year_discontinued": 1995,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Top turbo SP, ~275 hp (uncertain — thin record).",
+                  "description": "Il vertice documentato con più incertezza: 275 cavalli dichiarati, poche tracce d'archivio. Resta in catalogo con riserva, in attesa di conferme dal mondo dei trawleristi."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
