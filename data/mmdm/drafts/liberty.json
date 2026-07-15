@@ -1,0 +1,30 @@
+{
+  "_dossier": "024a Liberty. Rulings: stands as own house (Howell's fold-into-Packard premise disproven — US Government design, Vincent+Hall, six builders, Lincoln built most); 8-bucket DELETED (L-8 = 15 prototypes, never marine). One monumental model; converters (Smith, Grant, Gar Wood, Vimalert, Capital) in prose. Baseline: V12 LH/RH manifolds #827/828. founded 1917, dissolved 1948 (Vimalert's last 'new' units).",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Liberty",
+  "node": {
+    "year_founded": 1917,
+    "year_dissolved": 1948,
+    "sort_number": 53,
+    "cylinders": {
+      "12": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "liberty:l-12",
+            "engine_model": "L-12",
+            "year_introduced": 1917,
+            "year_discontinued": 1948,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "27L V12, 400 hp @ 1,800 (race-tuned ~450-500). US Government design — Vincent (Packard) + Hall (Hall-Scott), drafted in five days, 1917; ~20,500 built by six firms (Lincoln the most). Surplus units marinized 1919-1948 by Smith, Grant, Gar Wood, Capital, Vimalert. Powered every Miss America, Bell's 70-mph HD-4 hydrofoil, and the rum-running fleet.",
+              "description": "Il motore che non appartenne a nessuno e vinse per tutti: dodici cilindri disegnati in cinque giorni in un albergo di Washington, nel 1917, per ordine del governo. Sei fabbriche lo costruirono a decine di migliaia; la pace lo scaricò sui moli a prezzo di ferraglia, e lì cominciò la sua seconda vita. Spinse tutte le Miss America di Gar Wood, l'aliscafo di Graham Bell a settanta miglia orarie, e le lance dei contrabbandieri del proibizionismo — undici miglia più veloci della Guardia Costiera. Si vendette 'nuovo' fino al 1948. Nessun motore marino americano ha una leggenda più grande (vedi Packard, vedi Hall-Scott)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

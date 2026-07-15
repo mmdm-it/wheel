@@ -1,0 +1,58 @@
+{
+  "_dossier": "024h Nissan. Rulings: 3-bucket DELETED (only Nissan triples were Tohatsu-built outboards — excluded; the true ghost of the group: baseline nav link, zero section). Story: 1969 Chrysler-Nissan JV, yellow engines, Bayliner volume; orphaned by Chrysler Marine sale 1984. SD16 does not exist. UD/QD/TD marinizations = aftermarket, prose-note only.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Nissan",
+  "node": {
+    "year_founded": 1933,
+    "year_dissolved": null,
+    "sort_number": 72,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "nissan:sd22",
+            "engine_model": "SD22",
+            "year_introduced": 1970,
+            "year_discontinued": 1984,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.2L four, ~48 hp continuous / 70 hp max in marine trim; sold in North America as Chrysler-Nissan CN4-33 and later Chrysler M4-33 — factory yellow, water-cooled manifold, mechanical governor.",
+              "description": "Il quattro cilindri giallo: dal 1969 la joint venture con Chrysler lo portò in America vestito di giallo cromo, targhette 'Chrysler Nissan' sul coperchio punterie. Onesto, parco, instancabile — l'ausiliario e il piccolo propulsore di una generazione di barche americane che non sapevano di navigare giapponese."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "nissan:sd33",
+            "engine_model": "SD33",
+            "year_introduced": 1969,
+            "year_discontinued": 1984,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "3.2L six, ~105 hp @ 4,000 in Chrysler M6-33 trim (CN6-33 badge earlier); sold in volume to Bayliner. Weak point per the old hands: cracked head webs when run hard. Marinization parts orphaned after Chrysler Marine's 1984 sale.",
+              "description": "L'ammiraglia della coppia: tre litri e due di sei cilindri, centocinque cavalli, e le sale macchine dei Bayliner come casa americana. Aveva un difetto noto — la testa non perdonava chi lo spremeva — e una sfortuna postuma: quando Chrysler Marine chiuse, nel 1984, i ricambi della marinizzazione divennero introvabili. I superstiti navigano di parsimonia e di pazienza."
+            }
+          },
+          {
+            "id": "nissan:sd33t",
+            "engine_model": "SD33T",
+            "year_introduced": 1982,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Turbo SD33; no factory marine version — marine units are aftermarket conversions (~), sharing the head-cracking issue, amplified.",
+              "description": "Il turbo che la fabbrica non portò mai in acqua: le versioni marine sono conversioni artigianali, annotate con riserva. Il difetto della testa, sotto pressione, non migliorò. Sta qui come monito gentile: non tutti i cavalli in più sono un regalo."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

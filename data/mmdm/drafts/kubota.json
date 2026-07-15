@@ -1,0 +1,119 @@
+{
+  "_dossier": "023c Kubota. NOT a ghost — raw-HTML baseline fetch (2026-07-15) found 905B/1005B conversion kits + manifolds → D905 and D1005 triples added. Also certified by Howell's machinist testimony (NOT cited in prose per sui generis). Rulings: 1-cyl bucket DELETED (OC singles are oil-cooled — inboard doctrine); buckets [2,3,4]. The great donor house: Beta Marine, Nanni (partnership since 1974), Universal M-series.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Kubota",
+  "node": {
+    "year_founded": 1890,
+    "year_dissolved": null,
+    "sort_number": 48,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "kubota:z482",
+            "engine_model": "Z482",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "0.48L twin — the smallest serious marine donor block in the world; heart of Beta Marine's smallest auxiliaries.",
+              "description": "Mezzo litro scarso, due cilindri, e una carriera marina sterminata: lo Z482 è il blocco su cui i marinizzatori inglesi hanno costruito i più piccoli ausiliari da barca a vela degni del nome. Kubota lo pensò per i miniescavatori; il mare se lo prese subito. Il donatore in miniatura per eccellenza."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "kubota:d722",
+            "engine_model": "D722",
+            "year_introduced": 1988,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "0.72L triple; ubiquitous marinization donor — Beta, Nanni and kin all built on it.",
+              "description": "Il tre cilindri da 722 centimetri cubi: fluido dove il bicilindrico vibra, parco dove tutto il resto beve. È il cuore prestato a mezza flotta di ausiliari europei — inglesi e francesi se lo contendono da decenni, ciascuno vestendolo coi propri colori. Il blocco resta giapponese, e non sbaglia."
+            }
+          },
+          {
+            "id": "kubota:d905",
+            "engine_model": "D905",
+            "year_introduced": 1990,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "0.9L triple; marine conversions documented complete with manifold and thermostat-housing kits — a proper little inboard, not an improvisation.",
+              "description": "Il novecento: tre cilindri da 898 centimetri cubi che il mare ha preso sul serio — kit di conversione completi, collettore raffreddato ad acqua, corpo termostato dedicato. Non una marinizzazione di fortuna ma un piccolo entrobordo a pieno titolo, per lance e ausiliari che chiedono un gradino più del D722."
+            }
+          },
+          {
+            "id": "kubota:d1005",
+            "engine_model": "D1005",
+            "year_introduced": 1992,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "1.0L triple, the D905's stroked sibling; marine conversion kits documented in full.",
+              "description": "Il litro tondo: la corsa allungata del D905, stessa vocazione. Anche lui è andato per mare con corredo completo — kit, collettore, termostato — nella fascia dove il piccolo diesel smette di essere ausiliario e comincia a essere propulsione. La famiglia dei tre cilindri di Osaka non lascia vuoti tra un gradino e l'altro."
+            }
+          },
+          {
+            "id": "kubota:d1105",
+            "engine_model": "D1105",
+            "year_introduced": 1992,
+            "year_discontinued": null,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "1.1L triple, the D722's bigger sibling; same donor career, one size up.",
+              "description": "Il litro e uno: stesso carattere del D722, taglia superiore. Tre cilindri per barche a vela di dieci-dodici metri, dove serve qualche cavallo in più senza cambiare filosofia. Anche lui vive più spesso sotto insegne altrui che sotto la propria — destino onorevole dei grandi donatori."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "kubota:v1505",
+            "engine_model": "V1505",
+            "year_introduced": 1992,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.5L four; donor of a whole class of 35-40 hp sailboat and launch auxiliaries.",
+              "description": "Il quattro cilindri da un litro e mezzo: la spina dorsale degli ausiliari da 35-40 cavalli. Regolare come un orologio da stazione, gira a migliaia nelle sale macchine più piccole del mondo — sotto nomi che non sono il suo, com'è tradizione della casa di Osaka."
+            }
+          },
+          {
+            "id": "kubota:v2203",
+            "engine_model": "V2203",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2.2L four; the industrial classic — marinized for trawler auxiliaries and small launches; cousin of Universal's M-series era (see Universal).",
+              "description": "Il classico industriale da 2,2 litri: muletti, generatori, e — marinizzato — ausiliari da trawler e piccole lance. È il parente robusto della famiglia, quello che lavora e non parla. Anche l'America lo ha adottato: la stirpe marina di Universal degli ultimi decenni discende da blocchi come questo (vedi Universal)."
+            }
+          },
+          {
+            "id": "kubota:v3300",
+            "engine_model": "V3300",
+            "year_introduced": 2000,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "3.3L four, top of the donor ladder (~ marine years).",
+              "description": "In cima alla scala dei donatori: 3,3 litri per le marinizzazioni più ambiziose della famiglia, dove il piccolo ausiliario diventa propulsione vera. Annotato con riserva nelle date marine, non nella vocazione: chi costruisce sui blocchi Kubota, prima o poi, arriva anche qui."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

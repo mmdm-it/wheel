@@ -1,0 +1,164 @@
+{
+  "_dossier": "025f Waukesha. Rulings: 8-bucket ADDED; 16-bucket ADDED ('include 16s'). Decoder: F=6cyl, H=8cyl, L=V12, P=V16, number=total cid. Baseline rows all resolved: 1197, 140/F554, 145/F817, 1905, 6NKRB, L1616, WAK6(=6WAKD), H24, L7042. Climax loop CLOSED: 2475/3711 = redesigned Climax V85/V125 (cross-refs). Named marine line: Navigator/Cutwater/Vigilant/Defender/Wanderer; 'Bristol Bay' 197 for Alaskan gill-netters (seated in 4, hedged cyl count ?).",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Waukesha",
+  "node": {
+    "year_founded": 1906,
+    "year_dissolved": null,
+    "sort_number": 100,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "waukesha:navigator-197",
+            "engine_model": "Navigator 197 Bristol Bay",
+            "year_introduced": 1948,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The 'Bristol Bay' marine diesel built for Alaskan gill-netters — heat exchanger and reduction gear included; only ~80 built (cylinder count unconfirmed ?).",
+              "description": "Il Bristol Bay: costruito apposta per le lance da salmone dell'Alaska, scambiatore e riduttore compresi, in appena ottanta esemplari. Nella baia che gli diede il nome le stagioni sono brevi e brutali — un motore progettato per quelle acque è una dichiarazione di serietà. Collocazione annotata con riserva; la vocazione, nessuna."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "waukesha:f554",
+            "engine_model": "F554",
+            "year_introduced": 1950,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "554 cid inline six (the pre-1965 '140' series, renamed F554G); gasoline and gaseous trims; fire apparatus, industrial, marine.",
+              "description": "Il 554: nato serie 140, ribattezzato col codice moderno nel 1965 — F come sei cilindri, 554 come i pollici cubi. Servì i camion dei pompieri e le banchine con la stessa benzina generosa. Il gradino d'ingresso dei sei di Waukesha."
+            }
+          },
+          {
+            "id": "waukesha:f817",
+            "engine_model": "F817",
+            "year_introduced": 1950,
+            "year_discontinued": 1975,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "817 cid inline six (ex-'145' series); the marine trim carried the name 'Vigilant'.",
+              "description": "Il Vigilant: ottocentodiciassette pollici cubi di sei in linea, col nome da guardacoste che la casa dava alle sue versioni marine. Un'epoca in cui i motori avevano nomi propri, come le barche che li portavano."
+            }
+          },
+          {
+            "id": "waukesha:6wakd",
+            "engine_model": "6WAKD",
+            "year_introduced": 1945,
+            "year_discontinued": 1965,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "The 'Defender' marine diesel, parts-kin of the 1,197 cid F1197 line.",
+              "description": "Il Defender: il diesel marino della famiglia da millecentonovantasette pollici cubi, fratello di ricambi del F1197. Nei porti del dopoguerra i nomi di battesimo di Waukesha — Defender, Wanderer, Vigilant — componevano una piccola flotta araldica."
+            }
+          },
+          {
+            "id": "waukesha:f1905",
+            "engine_model": "F1905",
+            "year_introduced": 1945,
+            "year_discontinued": 1970,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "1,905 cid inline six (7\" x 8.25\"), the ex-6NKR — 'Wanderer' marine family; gas (NKR) and diesel (NKD) trims.",
+              "description": "Il Wanderer: quasi millenovecentocinque pollici cubi — trentuno litri — di sei in linea con alesaggio da sette pollici. Il vagabondo di nome e di fatto: rimorchiatori, draghe, pescherecci d'altura, ovunque servisse una forza che non alzasse mai la voce."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "waukesha:h2475",
+            "engine_model": "H2475",
+            "year_introduced": 1967,
+            "year_discontinued": 1989,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,475 cid V8 — the redesigned Climax V85 (see Climax Engineering), built through 1989, supported to 1998; the acquisition's living legacy.",
+              "description": "L'eredità di Clinton: il V85 di Climax, ridisegnato e ribattezzato dopo l'acquisizione del 1957, visse sotto le insegne di Waukesha fino al 1989. I motori delle case comprate non muoiono: cambiano monogramma (vedi Climax Engineering)."
+            }
+          },
+          {
+            "id": "waukesha:h24",
+            "engine_model": "H24",
+            "year_introduced": 1992,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "1,462 cid (24L) inline-eight of the modern VGF series, 415-530 hp, natural gas; H = eight, per the house code.",
+              "description": "L'otto in linea moderno: ventiquattro litri a gas naturale della serie VGF, col codice H che nella grammatica di Waukesha significa otto cilindri. La prova che le convenzioni della casa sopravvivono ai decenni — e continuano a confondere chi non ha il decodificatore."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "waukesha:l1616",
+            "engine_model": "L1616",
+            "year_introduced": 1966,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1,616 cid compact high-speed V12 diesel of the VC series; genuinely marine — equipped Royal Saudi Naval Forces minesweepers (1990 improved version).",
+              "description": "Il dodici compatto della serie VC: milleseicentosedici pollici cubi ad alta velocità, con una carriera navale vera — i dragamine sauditi degli anni Novanta montavano lui. Da Waukesha, Wisconsin al Golfo Persico: le rotte dei motori non guardano le carte."
+            }
+          },
+          {
+            "id": "waukesha:l3711",
+            "engine_model": "L3711",
+            "year_introduced": 1968,
+            "year_discontinued": 1989,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "3,711 cid V12, 648 hp @ 1,200 — the redesigned Climax V125 (see Climax Engineering).",
+              "description": "L'altro figlio di Clinton: il V125 di Climax rinato come 3711, seicentocinquanta cavalli a milleduecento giri fino al 1989. Con il fratello V8 chiude il cerchio d'una acquisizione che diede a Waukesha i suoi motori a V — e a Climax una seconda vita sotto mentite spoglie."
+            }
+          },
+          {
+            "id": "waukesha:l7042",
+            "engine_model": "L7042",
+            "year_introduced": 1967,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "7,042 cid V12 of the VHP family, to ~1,500 hp (G/GSI/GL trims); the famous gas-compression engine — and the 1974 marine brochure offered VHP V12s for main propulsion.",
+              "description": "Il gigante VHP: settemilaquarantadue pollici cubi — centoquindici litri — di V12 che da mezzo secolo comprime il gas d'America e, per chi lo volle, spinse anche scafi da lavoro. Ancora oggi assistito: certi motori non vanno in pensione, cambiano solo datore di lavoro."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "16": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "waukesha:p2154",
+            "engine_model": "P2154",
+            "year_introduced": 1970,
+            "year_discontinued": 1990,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,154 cid V16 of the compact VC series; the 1974 marine literature offered VC V16s for propulsion (~). P = sixteen, per the house code.",
+              "description": "Il sedici della serie VC: la P del codice di casa significa sedici cilindri, e la letteratura marina del 1974 lo offriva come propulsione a tutti gli effetti. Annotato con riserva sulle installazioni, non sull'offerta: il catalogo d'epoca è testimone."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

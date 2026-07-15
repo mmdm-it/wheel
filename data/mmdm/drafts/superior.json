@@ -1,0 +1,75 @@
+{
+  "_dossier": "025e Superior. Rulings: founded 1908→1889 (Shouvlin's Springfield shop); dissolved 1972→1976 (Cooper acquisition; era-breaks 1955 White, 1976 Cooper); 8-bucket ADDED (8G825 = 8 cyl x 825 cid/cyl); White-era V12/V16s LEFT OUT (oilfield iron). Naming decoded: [cyl]G[cid-per-cylinder]. WWII Maritime Commission M-award marine diesel program. Baseline: 8G825 #804, 8G825NA #807.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Superior",
+  "node": {
+    "year_founded": 1889,
+    "year_dissolved": 1976,
+    "sort_number": 89,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "superior:marine-diesel-four",
+            "engine_model": "Marine Diesel Four",
+            "year_introduced": 1935,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Low-speed heavy marine diesel four of the National Supply era (?); the wartime program earned the Maritime Commission 'M' award and Victory Fleet Flag.",
+              "description": "Il quattro pesante dell'era bellica: giri bassi, ghisa abbondante, e una fabbrica di Springfield che per lo sforzo navale meritò la bandiera della Victory Fleet. Le sigle di quest'epoca sopravvivono male; i motori, all'epoca, benissimo. Voce annotata con riserva, in memoria d'un programma documentato."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "superior:marine-diesel-six",
+            "engine_model": "Marine Diesel Six",
+            "year_introduced": 1935,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Low-speed heavy marine six (~300 hp @ 360 rpm; engines ran to 22 feet long); tugs, shrimpers, workboats — typically repowered by Detroit 6-71s decades later.",
+              "description": "Il sei da rimorchiatore: trecento cavalli a trecentosessanta giri, sette metri di motore, e una generazione di gamberetti del Golfo pescata al suo ritmo. Quando i Detroit 6-71 li ripotenziarono negli anni Sessanta, gli scafi guadagnarono spazio e persero solennità (vedi Detroit Diesel)."
+            }
+          },
+          {
+            "id": "superior:6g825",
+            "engine_model": "6G825",
+            "year_introduced": 1955,
+            "year_discontinued": 1980,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Inline six of the G-825 line, 825 cid PER CYLINDER (~4,950 total), 600 hp @ 900 rpm; spark-ignited natural gas; oilfield and stationary duty with workboat crossover.",
+              "description": "Il sei della linea 825: ottocentoventicinque pollici cubi per cilindro — il numero nel nome misura un cilindro solo, e già questo dice tutto. Nato per i campi petroliferi e la compressione del gas, con incursioni da lavoro in acqua. Il gigantismo tranquillo dell'Ohio industriale."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "superior:8g825",
+            "engine_model": "8G825",
+            "year_introduced": 1955,
+            "year_discontinued": 1985,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Inline EIGHT, 825 cid/cyl (~6,600 cid total; 10\" bore x 10.5\" stroke), 600-800 hp @ 850-900 rpm; NA (naturally aspirated) and GT (turbo) variants; White Superior era.",
+              "description": "L'otto in linea da seimilaseicento pollici cubi: alesaggio da dieci pollici, ottocento cavalli a giri da pendolo, varianti aspirate e turbo. Un motore che si misura in tonnellate e si ascolta in battiti separati — l'ultima grandezza americana della scuola a media velocità, con l'insegna White Superior sul basamento."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
