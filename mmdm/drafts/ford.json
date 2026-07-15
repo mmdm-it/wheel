@@ -1,5 +1,5 @@
 {
-  "_dossier": "017 Ford. Placeholders retired wholesale (pre-session entries). Rulings: Model T in; Interceptor kept under Ford as Y-block family (Ford's own marine nameplate, noted); Mesa '172DF418' → mystery pile; Lehman 80 donor cross-ref updated. Mesa items seated: 666T; '6Cyl Lehman' = the Dorset/Dover sixes.",
+  "_dossier": "017 Ford. Placeholders retired wholesale (pre-session entries). Rulings: Model T in; Interceptor kept under Ford as Y-block family (Ford's own marine nameplate, noted); Mesa '172DF418' → mystery pile; Lehman 80 donor cross-ref updated. Mesa items seated: 666T; '6Cyl Lehman' = the Dorset/Dover sixes. Personal addendum (Howell): FE 360 + 390 added — curator drives a 1974 F100 with the 360; 'there had to have been at least one of those in a boat somewhere.'",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Ford",
@@ -244,6 +244,28 @@
                 "data": {
                   "key_notes": "FE big block; racing marinizations (~, Wow).",
                   "description": "Il 427 in acqua: marinizzazioni da competizione per l'era d'oro dell'offshore. Voce del meraviglioso più che del quotidiano."
+                }
+              },
+              {
+                "id": "ford:360",
+                "engine_model": "360",
+                "year_introduced": 1968,
+                "year_discontinued": 1976,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "FE 360; marinization undocumented but inevitable (~, Wow doctrine — curator's note: a 1974 F100 with this engine still drives to the LAN tests).",
+                  "description": "Il 360 della famiglia FE: nessun archivio ne documenta la marinizzazione, ma da qualche parte, in qualche estate del 1971, qualcuno ne calò di sicuro uno in un cabinato. Nota di colore: un F100 del 1974 con questo motore porta ancora oggi il curatore di questa enciclopedia ai suoi collaudi."
+                }
+              },
+              {
+                "id": "ford:390",
+                "engine_model": "390",
+                "year_introduced": 1961,
+                "year_discontinued": 1976,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "FE 390; same probable-marine reasoning (~).",
+                  "description": "Il fratello maggiore da 390 pollici: stessa logica, stessa verosimiglianza — la coppia FE era fatta per trainare, e le carene dislocanti non se ne accorgono nemmeno, di che cosa le spinge."
                 }
               }
             ]

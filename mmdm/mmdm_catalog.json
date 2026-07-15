@@ -5970,6 +5970,28 @@
                                                             "key_notes": "FE big block; racing marinizations (~, Wow).",
                                                             "description": "Il 427 in acqua: marinizzazioni da competizione per l'era d'oro dell'offshore. Voce del meraviglioso più che del quotidiano."
                                                         }
+                                                    },
+                                                    {
+                                                        "id": "ford:360",
+                                                        "engine_model": "360",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1976,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "FE 360; marinization undocumented but inevitable (~, Wow doctrine — curator's note: a 1974 F100 with this engine still drives to the LAN tests).",
+                                                            "description": "Il 360 della famiglia FE: nessun archivio ne documenta la marinizzazione, ma da qualche parte, in qualche estate del 1971, qualcuno ne calò di sicuro uno in un cabinato. Nota di colore: un F100 del 1974 con questo motore porta ancora oggi il curatore di questa enciclopedia ai suoi collaudi."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ford:390",
+                                                        "engine_model": "390",
+                                                        "year_introduced": 1961,
+                                                        "year_discontinued": 1976,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "FE 390; same probable-marine reasoning (~).",
+                                                            "description": "Il fratello maggiore da 390 pollici: stessa logica, stessa verosimiglianza — la coppia FE era fatta per trainare, e le carene dislocanti non se ne accorgono nemmeno, di che cosa le spinge."
+                                                        }
                                                     }
                                                 ]
                                             },
@@ -6084,21 +6106,202 @@
                             "General Motors": {
                                 "year_founded": 1908,
                                 "year_dissolved": null,
+                                "sort_number": 28,
                                 "cylinders": {
                                     "4": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "gm:153",
+                                                "engine_model": "153",
+                                                "year_introduced": 1962,
+                                                "year_discontinued": 1989,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "153 cid four — donor of the MerCruiser 120/2.5 (see MerCruiser).",
+                                                    "description": "Il quattro da 153 pollici: nato per le Chevy II, visse la sua vera carriera in acqua come MerCruiser 120 (vedi). Il primo mattone dell'impero sterndrive."
+                                                }
+                                            },
+                                            {
+                                                "id": "gm:181",
+                                                "engine_model": "181",
+                                                "year_introduced": 1968,
+                                                "year_discontinued": 2015,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "181 cid four — the eternal 3.0L base (see MerCruiser 140/3.0L); GM Marine production ended 2015.",
+                                                    "description": "Il 181: mezzo secolo da motore d'ingresso della nautica americana, in livrea MerCruiser 140 e poi 3.0L (vedi). Pensionato da GM Marine solo nel 2015 — l'immortalità, o quasi."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "6": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "gm:230",
+                                                "engine_model": "230",
+                                                "year_introduced": 1963,
+                                                "year_discontinued": 1979,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "230 cid six; marinization probable but unsourced (~) — in on pattern per Howell ruling.",
+                                                    "description": "Il piccolo sei da 230 pollici: la marinizzazione è probabile più che documentata, e il catalogo lo dichiara. Siede qui per verosimiglianza, in attesa di prova."
+                                                }
+                                            },
+                                            {
+                                                "id": "gm:250",
+                                                "engine_model": "250",
+                                                "year_introduced": 1966,
+                                                "year_discontinued": 1984,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "250 cid six — donor of the MerCruiser 165 (see MerCruiser).",
+                                                    "description": "Il 250: il sei in linea che divenne MerCruiser 165 (vedi), dolcezza da berlina per i cruiser compatti degli anni '70."
+                                                }
+                                            },
+                                            {
+                                                "id": "gm:292",
+                                                "engine_model": "292",
+                                                "year_introduced": 1963,
+                                                "year_discontinued": 1988,
+                                                "sort_number": 3,
+                                                "data": {
+                                                    "key_notes": "The big 292 truck six; marinization probable (~) — torque made for displacement hulls, sources pending.",
+                                                    "description": "Il grande sei da camion: 292 pollici di coppia che implorano una carena dislocante. Anche lui annotato come probabile — la stazza c'era, le fonti verranno."
+                                                }
+                                            },
+                                            {
+                                                "id": "gm:4.3-v6",
+                                                "engine_model": "4.3 V6",
+                                                "year_introduced": 1985,
+                                                "year_discontinued": 2015,
+                                                "sort_number": 4,
+                                                "data": {
+                                                    "key_notes": "The 350-minus-two-cylinders V6; base of the MerCruiser 4.3 line (see MerCruiser); GM Marine production ended 2015.",
+                                                    "description": "Il V6 nato tagliando due cilindri al 350: per trent'anni la fascia media di ogni listino sterndrive (vedi MerCruiser). Congedato nel 2015, primo caduto dello smantellamento di GM Marine."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "8": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "Small Block": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "gm:283",
+                                                        "engine_model": "283",
+                                                        "year_introduced": 1957,
+                                                        "year_discontinued": 1967,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Early small block; marinized by the first sterndrive wave (~).",
+                                                            "description": "Il piccolo blocco delle origini, imbarcato dalla prima ondata sterndrive e dai runabout dell'era spaziale."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gm:327",
+                                                        "engine_model": "327",
+                                                        "year_introduced": 1962,
+                                                        "year_discontinued": 1969,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "327 small block (~).",
+                                                            "description": "Il 327: la cilindrata dei muscoli gentili, presente nelle sale macchine dei primi cruiser veloci."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gm:350",
+                                                        "engine_model": "350",
+                                                        "year_introduced": 1967,
+                                                        "year_discontinued": 2015,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "THE most-marinized engine in history: base of MerCruiser 5.7/350 MAG, Volvo Penta's US V8s, Crusader, Indmar, PCM, Marine Power. Per the trade, the 305 and 350 were designed with marine duty in the spec.",
+                                                            "description": "Il motore marino più diffuso della storia — e non nacque nemmeno marino, o forse sì: i registri del settore giurano che il 350 fu progettato anche per l'acqua. MerCruiser, Volvo Penta, Crusader, Indmar, PCM: mezzo secolo di nautica americana è una variazione sul tema di questo blocco. Se il catalogo avesse un motore-tipo, sarebbe lui."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gm:5.7-vortec",
+                                                        "engine_model": "5.7 Vortec",
+                                                        "year_introduced": 1996,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "The last one standing: when GM Marine wound down (3.0/4.3 2015, 5.0 2016, 7.4/8.2 2022), only the Vortec 5700 remained in production.",
+                                                            "description": "L'ultimo rimasto: quando GM Marine smantellò il listino — il 3.0 e il 4.3 nel 2015, il 5.0 nel 2016, i grandi blocchi nel 2022 — restò solo lui, il Vortec 5700, a presidiare mezzo secolo di piccolo blocco marino. Un impero ridotto a un solo soldato, ancora sull'attenti."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gm:6.2-ls",
+                                                        "engine_model": "6.2 LS",
+                                                        "year_introduced": 2007,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 5,
+                                                        "data": {
+                                                            "key_notes": "LS-architecture V8; base of the modern Ilmor, Indmar and PCM wake-boat engines.",
+                                                            "description": "L'era LS in acqua: la base dei moderni Ilmor, Indmar e PCM che spingono le wake-boat del nuovo secolo. Il piccolo blocco è morto, viva il piccolo blocco."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Big Block": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "gm:427",
+                                                        "engine_model": "427",
+                                                        "year_introduced": 1966,
+                                                        "year_discontinued": 1976,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Big block of the offshore-racing legend era (~ marine years).",
+                                                            "description": "Il 427 dell'epopea offshore: Miami-Nassau, schiene rotte e gloria. Il grande blocco nella sua stagione eroica."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gm:454",
+                                                        "engine_model": "454",
+                                                        "year_introduced": 1970,
+                                                        "year_discontinued": 2001,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "The 454 — base of MerCruiser's 7.4 line and every heavy sterndrive of its era.",
+                                                            "description": "Il 454: la coppia dei cruiser pesanti e degli ski-boat carichi, base dei MerCruiser 7.4 (vedi) e di una generazione di grandi poppe."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gm:502",
+                                                        "engine_model": "502",
+                                                        "year_introduced": 1991,
+                                                        "year_discontinued": 2009,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "502 big block (see MerCruiser 502 MAG).",
+                                                            "description": "Mezzo migliaio di pollici: il 502, muscolo massimo dell'era MAG."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gm:8.1-496",
+                                                        "engine_model": "8.1 (496)",
+                                                        "year_introduced": 2001,
+                                                        "year_discontinued": 2022,
+                                                        "sort_number": 4,
+                                                        "data": {
+                                                            "key_notes": "The final big block: 8.1L, retired 2022 — closing GM's marine big-block era.",
+                                                            "description": "L'ultimo grande blocco: 8,1 litri, congedato nel 2022. Con lui si chiude — dopo settant'anni — l'era dei big block marini di General Motors."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 28
+                                }
                             },
                             "MerCruiser": {
                                 "year_founded": 1961,
