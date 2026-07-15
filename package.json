@@ -1,6 +1,6 @@
 {
   "name": "wheel",
-  "version": "3.10.1",
+  "version": "3.10.2",
   "type": "module",
   "scripts": {
     "build": "esbuild src/main.js --bundle --format=iife --target=chrome74 --outfile=dist/app.js --sourcemap --external:path --external:url --external:fs --external:fs/promises --external:ajv",
