@@ -1,0 +1,386 @@
+{
+  "_dossier": "017 Ford. Placeholders retired wholesale (pre-session entries). Rulings: Model T in; Interceptor kept under Ford as Y-block family (Ford's own marine nameplate, noted); Mesa '172DF418' → mystery pile; Lehman 80 donor cross-ref updated. Mesa items seated: 666T; '6Cyl Lehman' = the Dorset/Dover sixes.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Ford",
+  "node": {
+    "year_founded": 1903,
+    "year_dissolved": null,
+    "sort_number": 25,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "ford:model-t",
+            "engine_model": "Model T",
+            "year_introduced": 1915,
+            "year_discontinued": 1927,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The 1910s-20s marinization craze: countless T engines went to sea via kit conversions (?). Admitted under the Wow doctrine and Howell's own 'several companies marinized Model T engines — so who knows?'",
+              "description": "Il motore che motorizzò l'America finì anche in acqua: kit di marinizzazione trasformarono innumerevoli T in propulsori di lance e barchini. Voce ammessa per dottrina del meraviglioso — e per la frase del curatore che diede scopo a questo catalogo: 'chi può dirlo?'"
+            }
+          },
+          {
+            "id": "ford:model-a",
+            "engine_model": "Model A",
+            "year_introduced": 1928,
+            "year_discontinued": 1934,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "200.5 cid four; widely marinized (the old placeholder had it right).",
+              "description": "Il quattro da 200,5 pollici: erede del T anche in mare, marinizzato da mezzo continente. Il vecchio segnaposto di questo catalogo, per una volta, diceva il vero."
+            }
+          },
+          {
+            "id": "ford:2.3-lima",
+            "engine_model": "2.3 Lima",
+            "year_introduced": 1974,
+            "year_discontinued": 1997,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "The Lima four; OMC and PCM base for small inboards and stern drives.",
+              "description": "Il quattro di Lima, Ohio: base di piccoli entrobordo e sterndrive OMC e PCM negli anni del downsizing."
+            }
+          }
+        ],
+        "families": {
+          "Dorset": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "ford:2711e",
+                "engine_model": "2711E",
+                "year_introduced": 1965,
+                "year_discontinued": 1977,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Dorset four (~).",
+                  "description": "Il quattro della serie Dorset: gasolio inglese in formato ridotto, marinizzato da mezzo Canale della Manica."
+                }
+              },
+              {
+                "id": "ford:2712e",
+                "engine_model": "2712E",
+                "year_introduced": 1965,
+                "year_discontinued": 1977,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Dorset four — the Lehman 80's donor block (see Lehman).",
+                  "description": "Il donatore del Lehman 80 (vedi): il quattro di Dagenham che il bancone dei ricambi conosceva meglio degli archivi. Ora i due si citano a vicenda, com'è giusto."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "ford:300",
+            "engine_model": "300",
+            "year_introduced": 1965,
+            "year_discontinued": 1996,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The 300 cid truck six; endlessly marinized for workboats.",
+              "description": "Il sei da camion per eccellenza: trecento pollici di coppia contadina, marinizzato ovunque servisse trascinare qualcosa senza fretta."
+            }
+          }
+        ],
+        "families": {
+          "Falcon Six": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "ford:170",
+                "engine_model": "170",
+                "year_introduced": 1960,
+                "year_discontinued": 1972,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Falcon-six small displacement (~).",
+                  "description": "Il piccolo dei sei Falcon, marinizzato per runabout economici."
+                }
+              },
+              {
+                "id": "ford:200",
+                "engine_model": "200",
+                "year_introduced": 1963,
+                "year_discontinued": 1978,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "200 cid Falcon six (placeholder vindicated).",
+                  "description": "Il 200 della famiglia Falcon: liscio, parco, perfetto per il diporto tranquillo."
+                }
+              },
+              {
+                "id": "ford:250",
+                "engine_model": "250",
+                "year_introduced": 1969,
+                "year_discontinued": 1980,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "250 cid Falcon six (placeholder vindicated).",
+                  "description": "Il maggiore dei Falcon: la taglia da cruiser compatto."
+                }
+              }
+            ]
+          },
+          "Dorset": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "ford:2704e",
+                "engine_model": "2704E",
+                "year_introduced": 1965,
+                "year_discontinued": 1981,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "THE Dorset six — over a million 2700-range engines built at Dagenham before 1980; base of the Lehman 120 generation and of Sabre, Mermaid, Parsons marinizations.",
+                  "description": "Il sei di Dagenham: oltre un milione di 2700 costruiti prima del 1980. Da questo blocco discesero i Lehman 120 (vedi), i Sabre, i Mermaid — mezzo mondo dislocante naviga ancora su queste ossa."
+                }
+              },
+              {
+                "id": "ford:2715e",
+                "engine_model": "2715E",
+                "year_introduced": 1968,
+                "year_discontinued": 1981,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Dorset six, likewise a Lehman 120-generation donor (sources split 2704/2715 attributions — both recorded).",
+                  "description": "Il gemello del 2704 nella genealogia dei trawler: le fonti si dividono su quale dei due generò quale Lehman — l'enciclopedia registra entrambi e lascia la disputa ai forum."
+                }
+              }
+            ]
+          },
+          "Dover": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "ford:2725e",
+                "engine_model": "2725E",
+                "year_introduced": 1982,
+                "year_discontinued": 1994,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Dover six, Dagenham 1982-94 then Ford-Otosan; 120/135 hp ratings; Lehman 135 donor (see Lehman).",
+                  "description": "L'erede: il Dover, costruito a Dagenham fino al '94 e poi in Turchia. Nelle tarature da 120 e 135 cavalli fu il cuore dei Lehman di seconda generazione."
+                }
+              },
+              {
+                "id": "ford:666t",
+                "engine_model": "666T",
+                "year_introduced": 1978,
+                "year_discontinued": 1990,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Industrial turbo six (Mesa baseline '666T', ~).",
+                  "description": "Il sei turbo industriale annotato dal catalogo Mesa: la variante spinta della stirpe di Dagenham, con collettori d'Alabama a listino."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "Flathead": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "ford:flathead-v8",
+                "engine_model": "Flathead V8",
+                "year_introduced": 1932,
+                "year_discontinued": 1953,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The 1932 V8 that democratized power — and promptly went to sea in every imaginable marinization.",
+                  "description": "Il V8 che democratizzò la potenza: dal 1932 in poi, non ci fu porto americano senza un flathead borbottante in qualche sentina. Non nacque marino — lo diventò per acclamazione popolare."
+                }
+              },
+              {
+                "id": "ford:flathead-v8-60",
+                "engine_model": "V8 60",
+                "year_introduced": 1937,
+                "year_discontinued": 1940,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "The small 60 hp flathead (~); midget racers and light launches.",
+                  "description": "Il piccolo flathead da 60 cavalli: amato dai midget e, in acqua, dalle lance leggere."
+                }
+              }
+            ]
+          },
+          "Y-block": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "ford:interceptor-292",
+                "engine_model": "Interceptor 292",
+                "year_introduced": 1956,
+                "year_discontinued": 1963,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Ford's OWN marine nameplate: the factory-marinized Y-block 292. Arguably nameplate-rule-worthy of its own house; kept under Ford by Howell's ruling, so noted.",
+                  "description": "L'Interceptor: la Ford che si marinizzò da sola. Y-block 292 con targhetta marina di fabbrica — a rigor di regola meriterebbe casa propria, e il catalogo lo annota; per decreto del curatore abita qui, sotto il tetto paterno."
+                }
+              }
+            ]
+          },
+          "FE": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "ford:427",
+                "engine_model": "427",
+                "year_introduced": 1963,
+                "year_discontinued": 1970,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "FE big block; racing marinizations (~, Wow).",
+                  "description": "Il 427 in acqua: marinizzazioni da competizione per l'era d'oro dell'offshore. Voce del meraviglioso più che del quotidiano."
+                }
+              }
+            ]
+          },
+          "Windsor": {
+            "sort_number": 4,
+            "models": [
+              {
+                "id": "ford:289",
+                "engine_model": "289",
+                "year_introduced": 1963,
+                "year_discontinued": 1972,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Windsor small block (placeholder vindicated).",
+                  "description": "Il piccolo Windsor delle origini, marinizzato per runabout e primi ski-boat."
+                }
+              },
+              {
+                "id": "ford:302",
+                "engine_model": "302",
+                "year_introduced": 1968,
+                "year_discontinued": 1995,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "302 Windsor; OMC/PCM/Indmar base for decades.",
+                  "description": "Il 302: per trent'anni la spina dorsale delle marinizzazioni americane di casa Ford."
+                }
+              },
+              {
+                "id": "ford:351w",
+                "engine_model": "351W",
+                "year_introduced": 1969,
+                "year_discontinued": 1996,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "THE ski-boat king: PCM and Indmar marinized it for Correct Craft and MasterCraft — 240 hp standard, 260, then 285 GT-40/HO, 310 TBI. Ford's marine gasoline empire ended when GM out-invested it on marine EFI in '92-93.",
+                  "description": "Il re dello sci nautico: dietro Correct Craft e MasterCraft, per una generazione, c'era quasi sempre un 351 Windsor vestito PCM o Indmar — 240, 260, 285 coi GT-40, 310 a iniezione. Poi, nel '92, GM investì sull'iniezione marina e Ford esitò: l'impero finì così, non per un difetto ma per una riunione mancata."
+                }
+              }
+            ]
+          },
+          "Cleveland": {
+            "sort_number": 5,
+            "models": [
+              {
+                "id": "ford:351c",
+                "engine_model": "351C",
+                "year_introduced": 1970,
+                "year_discontinued": 1978,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Cleveland variant, marinized less commonly (~).",
+                  "description": "Il cugino Cleveland: meno diffuso in acqua del Windsor, ma presente."
+                }
+              }
+            ]
+          },
+          "385": {
+            "sort_number": 6,
+            "models": [
+              {
+                "id": "ford:429",
+                "engine_model": "429",
+                "year_introduced": 1969,
+                "year_discontinued": 1978,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "385-family big block (~).",
+                  "description": "Il grande blocco 429, marinizzato per scafi pesanti."
+                }
+              },
+              {
+                "id": "ford:460",
+                "engine_model": "460",
+                "year_introduced": 1972,
+                "year_discontinued": 1992,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "The 460: ski boats, houseboats, and everything heavy.",
+                  "description": "Il 460: houseboat, ski-boat di taglia, e tutto ciò che pesava. L'ultimo grande benzina di casa prima del tramonto."
+                }
+              }
+            ]
+          },
+          "Modular": {
+            "sort_number": 7,
+            "models": [
+              {
+                "id": "ford:4.6-sohc",
+                "engine_model": "4.6L SOHC",
+                "year_introduced": 1996,
+                "year_discontinued": 2010,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Modular V8 (placeholder vindicated); marine via Indmar-era conversions.",
+                  "description": "Il Modular d'ingresso: l'era delle camme in testa arriva anche in sentina."
+                }
+              }
+            ],
+            "subfamilies": {
+              "Triton": {
+                "sort_number": 1,
+                "models": [
+                  {
+                    "id": "ford:5.4-triton",
+                    "engine_model": "5.4L Triton",
+                    "year_introduced": 1999,
+                    "year_discontinued": 2010,
+                    "sort_number": 1,
+                    "data": {
+                      "key_notes": "Triton branch; Indmar marinized it for Malibu's wakeboard era.",
+                      "description": "Il Triton in acqua: l'era wakeboard di Malibu girava su questo 5,4 vestito Indmar."
+                    }
+                  }
+                ]
+              },
+              "Coyote": {
+                "sort_number": 2,
+                "models": [
+                  {
+                    "id": "ford:5.0-coyote",
+                    "engine_model": "5.0L Coyote",
+                    "year_introduced": 2011,
+                    "year_discontinued": null,
+                    "sort_number": 1,
+                    "data": {
+                      "key_notes": "Coyote branch; base of Indmar's modern Raptor marine line.",
+                      "description": "Il Coyote: base dei Raptor marini di Indmar — la vendetta moderna di Ford nello sci nautico, un decennio dopo la disfatta EFI."
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

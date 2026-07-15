@@ -1,0 +1,189 @@
+{
+  "_dossier": "015 Fairbanks Morse. Rulings: buckets 3, 9, 10 added; 38D entered once per configuration bucket (6/8/9/10/12); Model 32 marine trio hedged. Mesa: 38D8-1/8 LH+RH manifolds (#800/#801).",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Fairbanks Morse",
+  "node": {
+    "year_founded": 1893,
+    "year_dissolved": null,
+    "sort_number": 23,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "Model 32": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fairbanks-morse:32d-single",
+                "engine_model": "32D Single",
+                "year_introduced": 1925,
+                "year_discontinued": 1945,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The earth-shaking semi-diesel one-lunger (Y-VA lineage, 1924→); marine installations documented by Old Tacoma Marine's survivor registry.",
+                  "description": "Il semi-diesel che faceva tremare la banchina: un cilindro di ghisa colossale, avviamento ad aria a 250 psi, nessuna valvola — e battiti così lenti che si contavano a orecchio. Alcuni lavorarono fino al 1991: la pazienza fatta motore."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "Model 32": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fairbanks-morse:32d-twin",
+                "engine_model": "32D Twin",
+                "year_introduced": 1926,
+                "year_discontinued": 1945,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Two-cylinder Model 32 marine configuration (~).",
+                  "description": "Il bicilindrico della cattedrale 32: doppia lentezza, doppia certezza, sui pescherecci del Pacifico nord-occidentale."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "Model 32": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fairbanks-morse:32d-triple",
+                "engine_model": "32D Triple",
+                "year_introduced": 1928,
+                "year_discontinued": 1945,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Three-cylinder Model 32 (?); survivors in the Old Tacoma registry anchor the type.",
+                  "description": "Il tre cilindri, annotato con riserva ma con testimoni: nel registro di Old Tacoma sopravvivono esemplari che ancora respirano."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [],
+        "families": {
+          "38D": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fairbanks-morse:38d-6",
+                "engine_model": "38D8-1/8",
+                "year_introduced": 1940,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Opposed-piston 38D, 6-cylinder configuration; auxiliary and small-vessel service.",
+                  "description": "La configurazione a sei del capolavoro a pistoni contrapposti: dodici pistoni, sei cilindri, nessuna testata — l'eresia geniale del 1939 in formato ausiliario."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "8": {
+        "sort_number": 5,
+        "models": [],
+        "families": {
+          "38D": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fairbanks-morse:38d-8",
+                "engine_model": "38D8-1/8",
+                "year_introduced": 1940,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "38D 8-cylinder configuration.",
+                  "description": "L'otto cilindri (sedici pistoni!) della famiglia OP: generazione e propulsione per unità maggiori."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "9": {
+        "sort_number": 6,
+        "models": [],
+        "families": {
+          "38D": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fairbanks-morse:38d-9",
+                "engine_model": "38D8-1/8",
+                "year_introduced": 1941,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "38D 9-cylinder — WWII fleet-boat main engine configuration.",
+                  "description": "Il nove cilindri delle unità subacquee: una configurazione che questo catalogo onora con il suo primo scomparto dispari sopra il tre."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "10": {
+        "sort_number": 7,
+        "models": [],
+        "families": {
+          "38D": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fairbanks-morse:38d-10",
+                "engine_model": "38D8-1/8",
+                "year_introduced": 1941,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "38D 10-cylinder — THE fleet-submarine main engine; naval service into the 1990s. Mesa baseline sold LH and RH water-cooled manifolds for the 38D8-1/8 (#800/#801).",
+                  "description": "L'ammiraglia sommersa: dieci cilindri, venti pistoni contrapposti, i motori principali dei sommergibili di squadra americani nella Seconda guerra mondiale — e in servizio navale fino agli anni '90. Il catalogo Mesa ne vendeva i collettori, destro e sinistro: anche i sommergibili, in Alabama, avevano i pezzi di ricambio."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "12": {
+        "sort_number": 8,
+        "models": [],
+        "families": {
+          "38D": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "fairbanks-morse:38d-12",
+                "engine_model": "38D8-1/8",
+                "year_introduced": 1942,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "38D 12-cylinder — largest configuration of the OP family.",
+                  "description": "La taglia massima: dodici cilindri e ventiquattro pistoni in danza contrapposta. Il vertice di una delle architetture più originali della storia del diesel marino."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
