@@ -1,0 +1,108 @@
+{
+  "_dossier": "022b Isuzu. Buckets [3,4,6] vindicated by the baseline (3KC1/3KR1 triples). Seven models, all from the baseline except hedge on QD145 era.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Isuzu",
+  "node": {
+    "year_founded": 1916,
+    "year_dissolved": null,
+    "sort_number": 40,
+    "cylinders": {
+      "3": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "isuzu:3kc1",
+            "engine_model": "3KC1",
+            "year_introduced": 1980,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Small triple.",
+              "description": "Il piccolo tre cilindri: ausiliari e gruppi di bordo in formato tascabile."
+            }
+          },
+          {
+            "id": "isuzu:3kr1",
+            "engine_model": "3KR1",
+            "year_introduced": 1982,
+            "year_discontinued": 1998,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Small triple.",
+              "description": "Il gemello della serie K: la conferma che lo scomparto a tre, qui, non era un azzardo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "isuzu:c240",
+            "engine_model": "C240",
+            "year_introduced": 1974,
+            "year_discontinued": 2000,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.4L four; the genset classic.",
+              "description": "Il 2,4 litri dei generatori: onnipresente, silenzioso, eterno — il piccolo Isuzu che tutti hanno sentito ronzare in qualche porto."
+            }
+          },
+          {
+            "id": "isuzu:qd145",
+            "engine_model": "QD145",
+            "year_introduced": 1970,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Older four (~).",
+              "description": "Il quattro della generazione precedente, annotato con riserva."
+            }
+          },
+          {
+            "id": "isuzu:4le1",
+            "engine_model": "4LE1",
+            "year_introduced": 1990,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Compact four.",
+              "description": "Il compatto moderno della serie LE, diffuso su gruppi marini e macchine portuali."
+            }
+          },
+          {
+            "id": "isuzu:4bd1",
+            "engine_model": "4BD1",
+            "year_introduced": 1980,
+            "year_discontinued": null,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "3.9L four, industrial/marine since ~1980.",
+              "description": "Il 3,9 litri: dal 1980 in poi, una presenza fissa nelle marinizzazioni giapponesi e nei refit economici di mezzo mondo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "isuzu:6bd1",
+            "engine_model": "6BD1",
+            "year_introduced": 1980,
+            "year_discontinued": 2000,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "5.8L six, 142 hp @ 2,800.",
+              "description": "Il sei da 5,8 litri: 142 cavalli metodici per pesca e lavoro, con la proverbiale parsimonia di casa Isuzu."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

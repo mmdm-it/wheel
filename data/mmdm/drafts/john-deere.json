@@ -1,0 +1,186 @@
+{
+  "_dossier": "022c John Deere. the baseline's 29 entries consolidated to 13 base models (first digit = cylinders; D/T/A aspiration ladder in key_notes). PowerTech family for the modern quartet. Lugger cross-refs throughout.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "John Deere",
+  "node": {
+    "year_founded": 1837,
+    "year_dissolved": null,
+    "sort_number": 42,
+    "cylinders": {
+      "3": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "john-deere:3179",
+            "engine_model": "3179",
+            "year_introduced": 1980,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: D/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il tre cilindri 3179 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "john-deere:4039",
+            "engine_model": "4039",
+            "year_introduced": 1982,
+            "year_discontinued": 1998,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: A/D/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il quattro cilindri 4039 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          },
+          {
+            "id": "john-deere:4239",
+            "engine_model": "4239",
+            "year_introduced": 1978,
+            "year_discontinued": 1992,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: A/D/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il quattro cilindri 4239 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          },
+          {
+            "id": "john-deere:4276",
+            "engine_model": "4276",
+            "year_introduced": 1975,
+            "year_discontinued": 1990,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: D/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il quattro cilindri 4276 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          }
+        ],
+        "families": {
+          "PowerTech": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "john-deere:4045",
+                "engine_model": "4045",
+                "year_introduced": 1997,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "PowerTech 4.5L four (D/T ladder); JD's own marine line at last — same engine as the 6068 minus two cylinders.",
+                  "description": "Il PowerTech da 4,5 litri: quando finalmente Deere entrò in mare a nome proprio, lo fece con lui. Identico al 6068 meno due cilindri — la modularità del Midwest."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "john-deere:6059",
+            "engine_model": "6059",
+            "year_introduced": 1984,
+            "year_discontinued": 1998,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: A/D/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il sei cilindri 6059 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          },
+          {
+            "id": "john-deere:6359",
+            "engine_model": "6359",
+            "year_introduced": 1978,
+            "year_discontinued": 1992,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: A/D/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il sei cilindri 6359 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          },
+          {
+            "id": "john-deere:6414",
+            "engine_model": "6414",
+            "year_introduced": 1980,
+            "year_discontinued": 1994,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: D/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il sei cilindri 6414 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          },
+          {
+            "id": "john-deere:6466",
+            "engine_model": "6466",
+            "year_introduced": 1975,
+            "year_discontinued": 1992,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: D/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il sei cilindri 6466 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          },
+          {
+            "id": "john-deere:6076",
+            "engine_model": "6076",
+            "year_introduced": 1988,
+            "year_discontinued": 1998,
+            "sort_number": 5,
+            "data": {
+              "key_notes": "Base industrial model; Aspiration ladder: A/T. Historic marinizer: Lugger (see Lugger).",
+              "description": "Il sei cilindri 6076 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+            }
+          }
+        ],
+        "families": {
+          "PowerTech": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "john-deere:6068",
+                "engine_model": "6068",
+                "year_introduced": 1997,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "THE trawler PowerTech: 6.8L six, the 10,000-hour darling of the long-range cruising world (D/T ladder).",
+                  "description": "Il 6068: se i trawler oceanici moderni hanno un cuore preferito, è questo 6,8 litri verde. Diecimila ore senza aprirlo non sono un miracolo — sono la norma documentata dai giornali di bordo. L'erede spirituale del Lehman 120."
+                }
+              },
+              {
+                "id": "john-deere:6125",
+                "engine_model": "6125",
+                "year_introduced": 1999,
+                "year_discontinued": 2010,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "12.5L PowerTech six.",
+                  "description": "Il grande PowerTech da 12,5 litri: la taglia da pattugliatore e da pesca d'altura."
+                }
+              },
+              {
+                "id": "john-deere:6081",
+                "engine_model": "6081",
+                "year_introduced": 1998,
+                "year_discontinued": 2008,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "8.1L PowerTech six.",
+                  "description": "L'8,1 litri: il gradino tra il 6068 e i giganti, con la stessa indole instancabile."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
