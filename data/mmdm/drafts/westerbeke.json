@@ -1,0 +1,114 @@
+{
+  "_dossier": "025h Westerbeke. No bucket rulings — [2,3,4,6] all confirmed. W58 is a FOUR (agent correction). Donor eras: Detroit 6-71 (1938, prose — files under Detroit by base-engine principle), Perkins (1959→, 4-91/4-107), Mitsubishi (late 70s→, W-line + 44s + WMD gensets). Bought Universal 1990 (cross-ref). No baseline section (ghost like Nissan).",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Westerbeke",
+  "node": {
+    "year_founded": 1937,
+    "year_dissolved": null,
+    "sort_number": 101,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "westerbeke:w13",
+            "engine_model": "W13",
+            "year_introduced": 1982,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "37 cid Mitsubishi-block twin, 13.5 hp @ 3,000; the W10 Two ('W'Otwo') sat below it.",
+              "description": "Il bicilindrico di Boston su cuore giapponese: tredici cavalli e mezzo per le barche a vela più piccole con pretese entrobordo. Sotto di lui solo il W10 Two — 'W'Otwo', come lo chiamava il listino, con l'umorismo asciutto del Massachusetts (vedi Mitsubishi)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "westerbeke:w21",
+            "engine_model": "W21",
+            "year_introduced": 1982,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "60 cid Mitsubishi-block triple, 22 hp @ 3,000 (RD60 sibling).",
+              "description": "Il tre cilindri della linea W: un litro scarso di blocco Mitsubishi vestito da Taunton, ventidue cavalli per la fascia media della vela americana. Il gemello RD60 girava accanto a lui nei listini (vedi Mitsubishi)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "westerbeke:4-107",
+            "engine_model": "4-107",
+            "year_introduced": 1964,
+            "year_discontinued": 1976,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "107 cid four on the Perkins 4.107 block — THE classic American sailboat auxiliary of its decade. J.H. Westerbeke flew to England in 1959 to secure the Perkins import rights himself.",
+              "description": "Il classico: il blocco Perkins 4.107 vestito da Boston, ausiliario di default della vela americana anni Sessanta e Settanta. Il fondatore volò personalmente in Inghilterra, nel 1959, per assicurarsi quei blocchi — poi Perkins divenne concorrente, com'è destino dei buoni donatori (vedi Perkins)."
+            }
+          },
+          {
+            "id": "westerbeke:44b",
+            "engine_model": "44B Four",
+            "year_introduced": 1992,
+            "year_discontinued": 2005,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "107.3 cid Mitsubishi-block four, 44 hp @ 3,000, freshwater cooling standard; the spiritual successor of the 4-107 at the same displacement.",
+              "description": "L'erede: stessa cilindrata del vecchio 4-107, blocco giapponese al posto dell'inglese, quarantaquattro cavalli moderni. Le dinastie dei marinizzatori si raccontano così — la cilindrata resta, il donatore cambia continente (vedi Mitsubishi)."
+            }
+          },
+          {
+            "id": "westerbeke:w58",
+            "engine_model": "W58",
+            "year_introduced": 1983,
+            "year_discontinued": 1995,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "154 cid four, 58 hp @ 3,000 — a FOUR, despite decades of catalogs assuming otherwise from the number.",
+              "description": "Il cinquantotto: centocinquantaquattro pollici cubi e cinquantotto cavalli — di quattro cilindri, checché ne dicano i cataloghi frettolosi che dal numero dedussero un sei. Questa enciclopedia lo registra com'è: le cifre nei nomi dei motori sono promesse di potenza, non di architettura."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "westerbeke:w100",
+            "engine_model": "W100",
+            "year_introduced": 1983,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "247 cid six, 100 hp @ 3,000; the W-line's six-cylinder anchor.",
+              "description": "Il sei della linea W: cento cavalli tondi per i cruiser e i piccoli trawler della clientela storica. La casa che nel 1938 marinizzava i Detroit 6-71 chiudeva il cerchio mezzo secolo dopo con sei cilindri propri di adozione."
+            }
+          },
+          {
+            "id": "westerbeke:w120",
+            "engine_model": "W120",
+            "year_introduced": 1985,
+            "year_discontinued": 1995,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "346 cid six, 115 hp @ 2,600; top of the line card. In 1990 the house bought Universal — the Atomic 4's keeper (see Universal).",
+              "description": "Il maggiore del listino: trecentoquarantasei pollici cubi, centoquindici cavalli, la voce più grossa della carta intestata. Nel 1990 la casa comprò Universal, custode dell'Atomic 4 — e due dinastie di ausiliari americani finirono sotto lo stesso tetto di Taunton (vedi Universal)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

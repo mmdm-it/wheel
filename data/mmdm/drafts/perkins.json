@@ -1,0 +1,202 @@
+{
+  "_dossier": "025c Perkins. No bucket rulings needed — [3,4,6,8] all confirmed. Baseline rows: 4.108 (#515), 4.236 (#503/567), 4.270 (#5013), 510=V8.510 (#565), 6.354 (dominant — a dozen manifold variants), 104-19 (kit ladder #520-524, = 100-series Shibaura-based four). Sabre relationship (1991→ 'Perkins Sabre', Cat acquired 2000). Westerbeke cross-refs (4-91/4-107 donors).",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Perkins",
+  "node": {
+    "year_founded": 1932,
+    "year_dissolved": null,
+    "sort_number": 76,
+    "cylinders": {
+      "3": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "perkins:p3",
+            "engine_model": "P3",
+            "year_introduced": 1953,
+            "year_discontinued": 1967,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,365cc triple, ~34-40 hp; tractor engine widely marinized — the historic root of the three-cylinder bucket.",
+              "description": "Il tre delle origini: il diesel da trattore che gli inglesi del dopoguerra calarono in ogni scafo disponibile. Trentacinque cavalli di ferro agricolo convertito alla navigazione — la radice storica dello scomparto."
+            }
+          },
+          {
+            "id": "perkins:perama-m30",
+            "engine_model": "Perama M30",
+            "year_introduced": 1986,
+            "year_discontinued": 2005,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "0.954L Shibaura-based triple, 29 hp; the Perama line (M20/M25/M30/M35) put a Perkins badge on a generation of sailboat auxiliaries.",
+              "description": "Il Perama: la risposta di Peterborough ai giapponesi fu — con onestà industriale — un giapponese con la targhetta Perkins. Blocco Shibaura, trenta cavalli, e una famiglia intera (M20, M25, M35) che ripopolò le sentine delle barche a vela europee negli anni Ottanta e Novanta."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "perkins:4.107",
+            "engine_model": "4.107",
+            "year_introduced": 1964,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1,760cc four, ~47 hp; evolution of the 1958 4.99; US debut at the New York Boat Show 1960 (as 4.99 line); marinized by Westerbeke as their 4-107 (see Westerbeke).",
+              "description": "Il piccolo quattro a canne umide che aprì l'America: presentato a New York nel 1960, adottato dai marinizzatori del New England, capostipite della dinastia degli ausiliari. La sua versione americana più celebre porta un altro nome sul coperchio (vedi Westerbeke)."
+            }
+          },
+          {
+            "id": "perkins:4.108",
+            "engine_model": "4.108",
+            "year_introduced": 1965,
+            "year_discontinued": 1992,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "1,760cc four (dry liners), ~50 hp — THE default auxiliary of the 1970s sailboat fleet: Westsail, Morgan, Irwin, C&C and countless others; thousands still running sixty years on.",
+              "description": "L'ausiliario per antonomasia: se una barca a vela degli anni Settanta aveva un diesel, con probabilità sconfortante era questo. Cinquanta cavalli di ghisa lenta, ricambi ovunque, e una longevità che ha trasformato i suoi difetti in affetti. Ne navigano ancora migliaia — sessant'anni dopo, il default resta in carica."
+            }
+          },
+          {
+            "id": "perkins:4.236",
+            "engine_model": "4.236",
+            "year_introduced": 1964,
+            "year_discontinued": 2000,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "3,865cc direct-injection four, ~72-85 hp marine; 70,000 built in its first three years; keel-cooled or heat-exchanger; no turbo ever offered for marine — it didn't need one.",
+              "description": "La leggenda da lavoro: settantamila esemplari nei primi tre anni, trentasei anni di listino, e la fiducia di ogni cantiere che costruisse barche per lavorare e non per apparire. Non ebbe mai un turbo in versione marina: certi motori non hanno bisogno di fretta."
+            }
+          },
+          {
+            "id": "perkins:4.270",
+            "engine_model": "4.270",
+            "year_introduced": 1958,
+            "year_discontinued": 1974,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "4,417cc slow-turning four, ~55-65 hp marine; wet liners, three-main-bearing crank — known to break if over-revved. Workboat unit of the old school.",
+              "description": "Il quattro lento della vecchia scuola: quattro litri e mezzo a canne umide, con un albero su tre supporti che puniva chi lo faceva correre. Trattato con rispetto, durava una generazione; trattato da sportivo, si vendicava. Un motore con un carattere, come si diceva allora."
+            }
+          },
+          {
+            "id": "perkins:prima-m50",
+            "engine_model": "Prima M50",
+            "year_introduced": 1986,
+            "year_discontinued": 1996,
+            "sort_number": 5,
+            "data": {
+              "key_notes": "2.0L Rover 'Prima' block marinized, 50 hp @ 4,000; hugely common sailboat repower of the late 1980s (M60 and turbo M80T above it).",
+              "description": "Il ripotenziamento degli anni Ottanta: il blocco della berlina Montego, marinizzato con serietà, entrò in migliaia di barche a vela al posto degli ausiliari stanchi. Cinquanta cavalli moderni in ingombri d'epoca — la formula del repower perfetto."
+            }
+          },
+          {
+            "id": "perkins:104-19",
+            "engine_model": "104-19",
+            "year_introduced": 1995,
+            "year_discontinued": 2008,
+            "sort_number": 6,
+            "data": {
+              "key_notes": "1,995cc 100-series four (Shibaura-derived), 30-43 hp; basis of the late-era M50 auxiliary (~); full marine conversion kits documented.",
+              "description": "Il quattro della serie 100: due litri di architettura giapponese e passaporto inglese, base dell'ultimo M50. La sua carriera marina è certificata dal corredo — kit completi, dalla chiglia allo scarico. Annotato con riserva sulle parentele, non sull'esistenza."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "perkins:p6",
+            "engine_model": "P6",
+            "year_introduced": 1938,
+            "year_discontinued": 1961,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4,730cc six, ~65-85 hp; THE post-war UK fishing-boat and lifeboat diesel — the legend before the legend.",
+              "description": "La leggenda prima della leggenda: il sei che motorizzò la ricostruzione della flotta peschereccia britannica e le scialuppe di salvataggio del dopoguerra. Quando il 6.354 arrivò a raccoglierne l'eredità, trovò un pubblico che a Peterborough credeva già come si crede a una banca."
+            }
+          },
+          {
+            "id": "perkins:6.354",
+            "engine_model": "6.354",
+            "year_introduced": 1961,
+            "year_discontinued": 1996,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "5,798cc six, 112-135 hp NA — over ONE MILLION built; the trawler and motor-yacht six of the 1960s-80s; inclined versions made to fit under cockpits; the most manifold-varianted engine of its generation.",
+              "description": "Il milione: nessun diesel marino medio è stato costruito in così tante copie. Trentacinque anni di produzione, versioni inclinate per infilarsi sotto i pozzetti, e una presenza così capillare che i suoi collettori esistono in più varianti di quante un archivio riesca a contarne. Se il 4.108 era il default della vela, questo era il default di tutto il resto."
+            }
+          },
+          {
+            "id": "perkins:t6.354",
+            "engine_model": "T6.354",
+            "year_introduced": 1966,
+            "year_discontinued": 1996,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Turbo 6.354, 145-235 hp across generations (6.3544 TU/TW/TX late redesign); racing derivatives past 270 hp — Perkins ran with the late-1960s offshore powerboat crowd.",
+              "description": "Il milione col turbo: da centoquarantacinque a duecentotrentacinque cavalli attraverso le generazioni, e derivati da corsa oltre i duecentosettanta — perché anche Peterborough, a fine anni Sessanta, corse l'offshore. Il lato veloce di una dinastia nata paziente."
+            }
+          },
+          {
+            "id": "perkins:m135",
+            "engine_model": "M135",
+            "year_introduced": 1994,
+            "year_discontinued": 2012,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "6.0L Phaser-1006 six, 135 hp NA; famously quiet and unburstable — the Dutch steel-cruiser favorite.",
+              "description": "Il silenzioso: sei litri della generazione Phaser, centotrentacinque cavalli senza turbo e senza rumore. Le motovedette private d'Olanda — quei cruiser d'acciaio che navigano i canali come salotti — lo scelsero in massa, e l'Olanda di motori se ne intende."
+            }
+          },
+          {
+            "id": "perkins:m300ti",
+            "engine_model": "M300Ti",
+            "year_introduced": 1998,
+            "year_discontinued": 2010,
+            "sort_number": 5,
+            "data": {
+              "key_notes": "6.0L turbo-intercooled six, 300 hp; flagship of the Sabre era — the Poole marinizers with offshore-racing blood (1972 London–Monte Carlo winners) who became Perkins' marine arm.",
+              "description": "L'ammiraglia dell'era Sabre: trecento cavalli firmati dai marinizzatori di Poole, gente con sangue da corsa — vinsero la Londra-Montecarlo del 1972 — diventata il braccio marino ufficiale della casa. Il capitolo in cui la vecchia signora di Peterborough scoprì di avere ancora un passo veloce."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "perkins:v8.510",
+            "engine_model": "V8.510",
+            "year_introduced": 1965,
+            "year_discontinued": 1978,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "8,369cc V8, 185 hp @ 2,800 marine; the V-programme's marine face — found even in the Hallberg-Rassy 49.",
+              "description": "L'otto di Peterborough: otto litri e mezzo, centottantacinque cavalli, e destinazioni insospettabili — perfino le maestose Hallberg-Rassy 49 ne ebbero in sala macchine. Il V8 con l'accento sbagliato e le referenze giuste."
+            }
+          },
+          {
+            "id": "perkins:v8.540",
+            "engine_model": "V8.540",
+            "year_introduced": 1972,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "8,834cc V8, ~235 hp marine; the bored successor (~).",
+              "description": "Il successore rialesato: quasi nove litri e duecentotrentacinque cavalli per l'ultima stagione degli otto inglesi. Annotato con riserva sulle date, com'è giusto per i figli minori delle grandi famiglie."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

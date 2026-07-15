@@ -1,0 +1,80 @@
+{
+  "_dossier": "025d Sisu. Rulings: 8-bucket DELETED ('84' = 8.4 LITRES, six cylinders — the Guascor-SF240 error in reverse); 4-bucket ADDED. Era chapters in prose (Fiat precedent): Valmet → SisuDiesel → AGCO Power, all from the Linnavuori works (1942 aircraft-engine plant; diesels from 1947). Catalog 1931 founding = the truck company; noted in prose. Baseline: literal 'TBD' row.",
+  "market": "eurasia",
+  "country": "Finlandia",
+  "manufacturer": "Sisu",
+  "node": {
+    "year_founded": 1931,
+    "year_dissolved": 2011,
+    "sort_number": 84,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "sisu:420-dsm",
+            "engine_model": "420 DSM",
+            "year_introduced": 1985,
+            "year_discontinued": 1998,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~4.4L four, 150 hp @ 2,200, SAE-3 housing; the Finnish fishing-boat four of the Valmet→Sisu badge era.",
+              "description": "Il quattro dei pescherecci finlandesi: quattro litri e mezzo, centocinquanta cavalli, e la doppia targhetta di un'epoca di passaggi di proprietà — nato Valmet, venduto Sisu, sempre uscito dalla stessa officina di Linnavuori. Nel Baltico d'inverno, l'affidabilità non è una virtù: è la definizione di motore."
+            }
+          },
+          {
+            "id": "sisu:49-ctim",
+            "engine_model": "49 CTIM",
+            "year_introduced": 2005,
+            "year_discontinued": 2012,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "4.9L four, ~133-168 kW; the Citius-generation marine four.",
+              "description": "Il quattro della generazione Citius: quasi cinque litri, common rail, e il nome latino della velocità scelto da una fabbrica nata per costruire motori d'aereo in tempo di guerra. L'ultima stagione col nome Sisu sul coperchio."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "sisu:612-dsm",
+            "engine_model": "612 DSM",
+            "year_introduced": 1975,
+            "year_discontinued": 1990,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "7.4L six, 226 hp marine; type code decoded: 6 cylinders x 1.2L per cylinder. The same block served in Finland's PASI armored carriers.",
+              "description": "Il sei di Linnavuori: sette litri e quattro secondo il codice di casa — sei cilindri per dodici decilitri l'uno. Lo stesso blocco portava i blindati finlandesi su ruota e i pescherecci fuori dal ghiaccio: due mestieri, una sola pazienza artica."
+            }
+          },
+          {
+            "id": "sisu:645-dsbim",
+            "engine_model": "645 DSBIM",
+            "year_introduced": 1994,
+            "year_discontinued": 2005,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "~7.4L six, 276 hp, turbo-intercooled, wet liners, twin heads; fishing boats, workboats, ferries; genset trim (DSBIE) alongside.",
+              "description": "L'era SisuDiesel: il sei sovralimentato e interrefrigerato da quasi trecento cavalli, con canne umide e doppia testa — ingegneria da motore grande in taglia media. Traghetti minori e pescherecci del Baltico lo portarono per un decennio abbondante."
+            }
+          },
+          {
+            "id": "sisu:84-ctim",
+            "engine_model": "84 CTIM",
+            "year_introduced": 2007,
+            "year_discontinued": 2012,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "8.4L SIX (the '84' = displacement, not cylinders — a designation that fools catalogs), 302 kW / 410 hp @ 2,100; flagship of the marine range.",
+              "description": "L'ammiraglia dall'equivoco facile: 84 come otto-virgola-quattro litri, non come otto cilindri — sei, sempre sei, come tutta la stirpe maggiore di Linnavuori. Quattrocentodieci cavalli di congedo: di lì a poco il nome Sisu sarebbe passato alla storia, e la fabbrica al futuro, sotto altre insegne."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

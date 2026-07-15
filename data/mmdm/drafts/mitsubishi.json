@@ -1,0 +1,220 @@
+{
+  "_dossier": "025a Mitsubishi. Rulings: buckets [2,3,16] ADDED; 4G54 seated under Mitsubishi with PCM prose (base-engine principle; baseline PCM4140 #813 = Pleasurecraft marinization, 4cyl/140hp, manifold-eater). Vetus/Solé donor story throughout. S8U kept hedged in 8.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Mitsubishi",
+  "node": {
+    "year_founded": 1870,
+    "year_dissolved": null,
+    "sort_number": 65,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "mitsubishi:l2e",
+            "engine_model": "L2E",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "0.635L twin, ~16 hp @ 3,600; the base of a whole class of European auxiliaries — Dutch and Spanish marinizers built their smallest engines on it.",
+              "description": "Il bicilindrico invisibile: seicento centimetri cubi che navigano su migliaia di barche a vela europee sotto altre insegne — olandesi, spagnole, tutte con questo cuore giapponese. Il grande donatore in scala minima."
+            }
+          },
+          {
+            "id": "mitsubishi:k2c",
+            "engine_model": "K2C",
+            "year_introduced": 1980,
+            "year_discontinued": 1995,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The legacy twin of the K-series, ~14 hp; the previous generation of the same donor story (~).",
+              "description": "Il gemello della generazione precedente: la serie K prestò i suoi blocchi agli stessi marinizzatori prima che la serie L raccogliesse il testimone. Quattordici cavalli di apprendistato marino, annotati con riserva."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "mitsubishi:s3l2",
+            "engine_model": "S3L2",
+            "year_introduced": 1992,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.3L triple, 25-30 hp; sold with factory keel-cooling and heat-exchanger marine versions; a mainstay of the European auxiliary market.",
+              "description": "Il tre cilindri di mezza Europa velica: un litro e tre, trenta cavalli, versioni marine di fabbrica con chiglia o scambiatore. Se il ponte è olandese o spagnolo, sotto la scaletta c'è spesso lui."
+            }
+          },
+          {
+            "id": "mitsubishi:l3e",
+            "engine_model": "L3E",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "0.952L triple, ~25 hp; auxiliary and genset donor.",
+              "description": "Il piccolo tre della serie L: sotto un metro cubo scarso di ingombro, venticinque cavalli buoni per spingere una barca a vela o tenere accesa una cambusa. Carriera doppia, discrezione totale."
+            }
+          },
+          {
+            "id": "mitsubishi:k3d",
+            "engine_model": "K3D",
+            "year_introduced": 1980,
+            "year_discontinued": 1995,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "0.86L legacy triple, ~23 hp; the 1980s generation of the donor line.",
+              "description": "Il tre della vecchia serie K: ventitré cavalli che negli anni Ottanta fecero scuola di marinizzazione. La generazione che insegnò all'Europa a fidarsi dei piccoli diesel giapponesi."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "mitsubishi:s4l2",
+            "engine_model": "S4L2",
+            "year_introduced": 1992,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.2L four, ~38-42 hp @ 3,000; keel-cooled marine versions factory-documented.",
+              "description": "Il quattro compatto: due litri e due di regolarità industriale, marinizzato in casa e fuori. La taglia dove l'ausiliario diventa propulsore a pieno titolo."
+            }
+          },
+          {
+            "id": "mitsubishi:s4q2",
+            "engine_model": "S4Q2",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2.5L four, ~38-60 hp; factory marine spec with heat exchanger and seawater pump documented.",
+              "description": "Il quattro di mezzo con la specifica marina di fabbrica — scambiatore, pompa acqua mare, tutto a listino. La casa delle tre losanghe non delega sempre: quando vuole, il mare se lo prende da sola."
+            }
+          },
+          {
+            "id": "mitsubishi:s4s",
+            "engine_model": "S4S",
+            "year_introduced": 1990,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "3.3L four, ~72 hp; upper end of the small marine range (~).",
+              "description": "Il maggiore dei piccoli: tre litri e tre, settanta cavalli, per lance e ausiliari di taglia generosa. Annotato con la consueta riserva sulle date, non sulla sostanza."
+            }
+          },
+          {
+            "id": "mitsubishi:4g54",
+            "engine_model": "4G54",
+            "year_introduced": 1984,
+            "year_discontinued": 1990,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "2.6L 'Astron' gasoline four, ~140 hp; marinized in the US as the PCM 4140 for Shamrock and Sunliner inboards. Chronic manifold corrosion at the #4 cylinder — three to five years in salt water — made it a manifold-maker's steady friend.",
+              "description": "L'Astron: il quattro a benzina dei pickup, marinizzato in America come PCM 4140 per gli entrobordo Shamrock e Sunliner. Aveva un vizio celebre — il collettore si corrodeva al quarto cilindro, tre-cinque anni di vita in acqua salata — che lo rese il miglior amico ricorrente di chi i collettori li costruisce. Certi difetti sono un modello di business altrui."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "mitsubishi:s6a3",
+            "engine_model": "S6A3",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "18.56L inline six, ~300-515 hp; crew boats and workboats, IMO Tier II trims.",
+              "description": "Il sei da lavoro: diciotto litri e mezzo in linea per crew boat e mezzi da servizio, con tarature che attraversano trent'anni di normative. Il gradino medio della scala pesante di Sagamihara."
+            }
+          },
+          {
+            "id": "mitsubishi:s6r",
+            "engine_model": "S6R",
+            "year_introduced": 1988,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "~24.5L inline six, ~600-800 hp; yachts and workboats.",
+              "description": "Il sei grande: quasi venticinque litri in linea — non una V, come il nome lascerebbe sospettare — per yacht dislocanti e pescherecci d'altura. La forza tranquilla della gamma."
+            }
+          },
+          {
+            "id": "mitsubishi:s6r2",
+            "engine_model": "S6R2",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "29.96L inline six, ~800-940 hp; competes head-on with the big Cat and Cummins sixes; patrol boats, ferries, yachts.",
+              "description": "Trenta litri di sei cilindri in linea: la risposta giapponese ai grandi sei americani, a suo agio su motovedette, traghetti e yacht che chiedono novecento cavalli senza teatralità. Il vertice della tradizione in linea della casa."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "mitsubishi:s8u",
+            "engine_model": "S8U",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "94.1L medium-speed eight (240x260mm), ~1,790 kW; tugs and inland cargo vessels (~).",
+              "description": "Il gigante di mezza velocità: novantaquattro litri per rimorchiatori e chiatte motorizzate, al confine dove il diporto finisce e la marina mercantile comincia. Annotato con riserva sulla configurazione, non sull'esistenza."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "mitsubishi:s12r",
+            "engine_model": "S12R",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "49L V12, 588-1,460 kW; patrol boats, ferries, tugs; marine genset trims too. The S12A2 (34L) sits below it.",
+              "description": "Il dodici: quarantanove litri a V per motovedette, traghetti e rimorchiatori, in propulsione come in generazione. Con il fratello minore S12A2 copre tutto lo spettro dove un dodici giapponese può rendersi indispensabile."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "16": {
+        "sort_number": 7,
+        "models": [
+          {
+            "id": "mitsubishi:s16r",
+            "engine_model": "S16R",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "65.37L V16 (170x180mm), 912-1,885 kW; large yachts, ferries, offshore vessels; still in production.",
+              "description": "Il sedici: sessantacinque litri a V, quasi millenovecento chilowatt, ancora a listino. Per i traghetti veloci e i grandi yacht del Pacifico è ciò che i V16 di Friedrichshafen sono per l'Atlantico — la stessa idea, con un altro alfabeto."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
