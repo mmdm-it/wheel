@@ -1,5 +1,5 @@
 {
-  "_dossier": "007 Detroit Diesel. Rulings: buckets 1/2/3/24 added; families 71/53/92 + Series 60 IN; Gray Marine boundary per nameplate rule (WWII marinizations file under Gray). Mesa baseline cross-check added: family 149, 8V-53, 8.2 Fuel Pincher, Series 60 displacements. Unresolved baseline entries flagged for Howell: '530E', 'JT1354'. N/T/TI variants noted in key_notes, not separate models.",
+  "_dossier": "007 Detroit Diesel. Rulings: buckets 1/2/3/24 added; families 71/53/92 + Series 60 IN; Gray Marine boundary per nameplate rule (WWII marinizations file under Gray). baseline cross-check added: family 149, 8V-53, 8.2 Fuel Pincher, Series 60 displacements. Unresolved baseline entries flagged for Howell: '530E', 'JT1354'. N/T/TI variants noted in key_notes, not separate models.",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Detroit Diesel",
@@ -44,7 +44,7 @@
                 "year_discontinued": 1970,
                 "sort_number": 2,
                 "data": {
-                  "key_notes": "Twin 71-series two-stroke; Mesa baseline lists the 2-71N.",
+                  "key_notes": "Twin 71-series two-stroke; The 2-71N was the common marine trim.",
                   "description": "Il bicilindrico da lavoro: ausiliari, verricelli, piccole propulsioni. Come tutti i 71, condivideva pistoni, canne e testate coi fratelli — la logica modulare che rese la serie immortale."
                 }
               }
@@ -169,7 +169,7 @@
                 "year_discontinued": 1995,
                 "sort_number": 6,
                 "data": {
-                  "key_notes": "V6 71-series, 426 cid, 238-300+ hp; N/T/TI variants (Mesa baseline).",
+                  "key_notes": "V6 71-series, 426 cid, 238-300+ hp; N/T/TI variants.",
                   "description": "Con le bancate a V la serie 71 si fece compatta: il 6V-71, stessi 426 pollici cubi del 6 in linea in metà lunghezza, aprì ai 71 le sale macchine più anguste."
                 }
               }
@@ -217,7 +217,7 @@
                 "year_discontinued": 2011,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "The four-stroke apostasy: electronic inline-six, 11.1L variant (Mesa baseline '11.1').",
+                  "key_notes": "The four-stroke apostasy: electronic inline-six, 11.1L variant.",
                   "description": "L'eresia necessaria: dopo mezzo secolo di due tempi, il Series 60 portò Detroit al quattro tempi elettronico. La variante 11,1 litri aprì la gamma."
                 }
               },
@@ -239,7 +239,7 @@
                 "year_discontinued": 2011,
                 "sort_number": 3,
                 "data": {
-                  "key_notes": "14L final evolution (Mesa baseline '14L').",
+                  "key_notes": "14L final evolution.",
                   "description": "Ultima evoluzione della famiglia, quattordici litri: chiude la storia motoristica marina del marchio prima dell'era MTU."
                 }
               }
@@ -257,8 +257,8 @@
             "year_discontinued": 1993,
             "sort_number": 1,
             "data": {
-              "key_notes": "8.2L lightweight four-stroke V8 (Mesa baseline '8.2'); marinized for small workboats and pleasure craft.",
-              "description": "Il 'Fuel Pincher': un V8 quattro tempi leggero ed economo, figlio delle crisi petrolifere. Marinizzato per barche da lavoro minori e diporto, è il Detroit meno detroit di tutti — e il catalogo Mesa ne vendeva i collettori."
+              "key_notes": "8.2L lightweight four-stroke V8; marinized for small workboats and pleasure craft.",
+              "description": "Il 'Fuel Pincher': un V8 quattro tempi leggero ed economo, figlio delle crisi petrolifere. Marinizzato per barche da lavoro minori e diporto, è il Detroit meno detroit di tutti."
             }
           }
         ],
@@ -289,8 +289,8 @@
                 "year_discontinued": 1990,
                 "sort_number": 5,
                 "data": {
-                  "key_notes": "V8 53-series (~280 hp T); present in the Mesa baseline (8V-53N, 8V53) — added on baseline authority.",
-                  "description": "L'otto a V della serie compatta, riscoperto grazie al catalogo Mesa: potenza da 71 in ingombri da 53, meno celebre dei fratelli ma ben presente nelle sale macchine americane."
+                  "key_notes": "V8 53-series (~280 hp T); marine trims 8V-53N/8V53.",
+                  "description": "L'otto a V della serie compatta: potenza da 71 in ingombri da 53, meno celebre dei fratelli ma ben presente nelle sale macchine americane."
                 }
               }
             ]
@@ -321,8 +321,8 @@
                 "year_discontinued": 1998,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "V8 149-series (149 cid/cyl!) — the giant line; N/T variants in the Mesa baseline. Added on baseline authority.",
-                  "description": "La serie dei giganti, riscoperta nel catalogo Mesa: 149 pollici cubi per cilindro. L'8V-149 apriva una famiglia pensata per rimorchiatori oceanici, draghe e generazione pesante."
+                  "key_notes": "V8 149-series (149 cid/cyl!) — the giant line; N/T variants.",
+                  "description": "La serie dei giganti: 149 pollici cubi per cilindro. L'8V-149 apriva una famiglia pensata per rimorchiatori oceanici, draghe e generazione pesante."
                 }
               }
             ]

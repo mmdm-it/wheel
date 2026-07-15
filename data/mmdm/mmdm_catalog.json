@@ -355,7 +355,7 @@
                                                         "min_stock_threshold": null,
                                                         "lead_time": "2 weeks",
                                                         "last_updated": "2025-10-12",
-                                                        "brand": "MESA",
+                                                        "brand": "MMdM",
                                                         "part_number": "44"
                                                     },
                                                     {
@@ -384,7 +384,7 @@
                                                         "min_stock_threshold": null,
                                                         "lead_time": "2 weeks",
                                                         "last_updated": "2025-10-12",
-                                                        "brand": "MESA",
+                                                        "brand": "MMdM",
                                                         "part_number": "eu"
                                                     }
                                                 ],
@@ -472,8 +472,8 @@
                                                 "year_discontinued": null,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Bari-era 8-cylinder per the Mesa baseline ('1308'); designation attribution uncertain (?) — likely the 1300-series V8.",
-                                                    "description": "Un otto cilindri dell'era di Bari, testimoniato dal catalogo Mesa: la sigla esatta resta da chiarire, ma il collettore esisteva — dunque il motore pure. Annotato con riserva, in attesa d'archivio."
+                                                    "key_notes": "Bari-era 8-cylinder known only as '1308'; designation attribution uncertain (?) — likely the 1300-series V8.",
+                                                    "description": "Un otto cilindri dell'era di Bari: la sigla esatta resta da chiarire, ma il collettore esisteva — dunque il motore pure. Annotato con riserva, in attesa d'archivio."
                                                 }
                                             }
                                         ],
@@ -1841,8 +1841,8 @@
                                                         "year_discontinued": 2003,
                                                         "sort_number": 5,
                                                         "data": {
-                                                            "key_notes": "Higher-rating SRM variant of the 8061 (Mesa baseline '8061SRM27').",
-                                                            "description": "La taratura SRM del sei cilindri: la versione da lavoro continuativo che il catalogo Mesa serviva di collettori. Conferma, dal Nuovo Mondo, la diffusione globale dell'8061."
+                                                            "key_notes": "Higher-rating SRM variant of the 8061.",
+                                                            "description": "La taratura SRM del sei cilindri: la versione da lavoro continuativo. Conferma, dal Nuovo Mondo, la diffusione globale dell'8061."
                                                         }
                                                     }
                                                 ]
@@ -1863,7 +1863,7 @@
                                                         "year_discontinued": 2003,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "V8 17.2L marine diesel, ~440 hp; flagship of the 8000 marine series. Mesa baseline lists it as 8281SRM44.1.",
+                                                            "key_notes": "V8 17.2L marine diesel, ~440 hp; flagship of the 8000 marine series.",
                                                             "description": "L'ammiraglia: un V8 di oltre 17 litri, circa 440 cavalli, destinato a pescherecci d'altura e imbarcazioni commerciali impegnative. Con l'8281 la serie 8000 toccò il proprio vertice di potenza — otto cilindri di Torino in mare aperto."
                                                         }
                                                     }
@@ -3983,21 +3983,104 @@
                             "Isuzu": {
                                 "year_founded": 1916,
                                 "year_dissolved": null,
+                                "sort_number": 40,
                                 "cylinders": {
                                     "3": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "isuzu:3kc1",
+                                                "engine_model": "3KC1",
+                                                "year_introduced": 1980,
+                                                "year_discontinued": 1995,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Small triple.",
+                                                    "description": "Il piccolo tre cilindri: ausiliari e gruppi di bordo in formato tascabile."
+                                                }
+                                            },
+                                            {
+                                                "id": "isuzu:3kr1",
+                                                "engine_model": "3KR1",
+                                                "year_introduced": 1982,
+                                                "year_discontinued": 1998,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "Small triple.",
+                                                    "description": "Il gemello della serie K: la conferma che lo scomparto a tre, qui, non era un azzardo."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "4": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "isuzu:c240",
+                                                "engine_model": "C240",
+                                                "year_introduced": 1974,
+                                                "year_discontinued": 2000,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "2.4L four; the genset classic.",
+                                                    "description": "Il 2,4 litri dei generatori: onnipresente, silenzioso, eterno — il piccolo Isuzu che tutti hanno sentito ronzare in qualche porto."
+                                                }
+                                            },
+                                            {
+                                                "id": "isuzu:qd145",
+                                                "engine_model": "QD145",
+                                                "year_introduced": 1970,
+                                                "year_discontinued": 1985,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "Older four (~).",
+                                                    "description": "Il quattro della generazione precedente, annotato con riserva."
+                                                }
+                                            },
+                                            {
+                                                "id": "isuzu:4le1",
+                                                "engine_model": "4LE1",
+                                                "year_introduced": 1990,
+                                                "year_discontinued": null,
+                                                "sort_number": 3,
+                                                "data": {
+                                                    "key_notes": "Compact four.",
+                                                    "description": "Il compatto moderno della serie LE, diffuso su gruppi marini e macchine portuali."
+                                                }
+                                            },
+                                            {
+                                                "id": "isuzu:4bd1",
+                                                "engine_model": "4BD1",
+                                                "year_introduced": 1980,
+                                                "year_discontinued": null,
+                                                "sort_number": 4,
+                                                "data": {
+                                                    "key_notes": "3.9L four, industrial/marine since ~1980.",
+                                                    "description": "Il 3,9 litri: dal 1980 in poi, una presenza fissa nelle marinizzazioni giapponesi e nei refit economici di mezzo mondo."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "6": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "isuzu:6bd1",
+                                                "engine_model": "6BD1",
+                                                "year_introduced": 1980,
+                                                "year_discontinued": 2000,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "5.8L six, 142 hp @ 2,800.",
+                                                    "description": "Il sei da 5,8 litri: 142 cavalli metodici per pesca e lavoro, con la proverbiale parsimonia di casa Isuzu."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     }
-                                },
-                                "sort_number": 40
+                                }
                             },
                             "Hino": {
                                 "year_founded": 1942,
@@ -4031,8 +4114,8 @@
                                                 "year_discontinued": 1995,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "THE Bayliner diesel: 6-cyl, 175/220 hp (N/TI), sold via US Marine as the 'MerCruiser 6.4L' (Mesa entry).",
-                                                    "description": "Il diesel dei Bayliner: sei cilindri giapponesi venduti in America sotto le insegne US Marine — perfino come 'MerCruiser 6.4L'. Il catalogo Mesa lo serviva, i diportisti lo ricordano: 175 cavalli di metodicità Toyota-group in sala macchine."
+                                                    "key_notes": "THE Bayliner diesel: 6-cyl, 175/220 hp (N/TI), sold via US Marine as the 'MerCruiser 6.4L'.",
+                                                    "description": "Il diesel dei Bayliner: sei cilindri giapponesi venduti in America sotto le insegne US Marine — perfino come 'MerCruiser 6.4L'. I diportisti lo ricordano: 175 cavalli di metodicità Toyota-group in sala macchine."
                                                 }
                                             },
                                             {
@@ -4059,8 +4142,8 @@
                                                 "year_discontinued": 1995,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "The truck V8; marine use unconfirmed (?) — holds the bucket per Howell ruling, awaiting evidence.",
-                                                    "description": "Il V8 da camion: l'impiego marino resta da dimostrare, e l'annotazione lo dice. Presidia lo scomparto per decreto del curatore, in attesa di prove."
+                                                    "key_notes": "The truck V8; marine use unconfirmed (?) — holds the bucket awaiting evidence.",
+                                                    "description": "Il V8 da camion: l'impiego marino resta da dimostrare, e l'annotazione lo dice. Presidia lo scomparto in attesa di prove."
                                                 }
                                             }
                                         ],
@@ -4599,8 +4682,8 @@
                                                 "year_discontinued": 2005,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "2,370cc four (Mesa baseline).",
-                                                    "description": "Il piccolo quattro coreano: 2,4 litri per gruppi elettrogeni di bordo e lance da lavoro, con i collettori a catalogo in Alabama."
+                                                    "key_notes": "2,370cc four.",
+                                                    "description": "Il piccolo quattro coreano: 2,4 litri per gruppi elettrogeni di bordo e lance da lavoro."
                                                 }
                                             },
                                             {
@@ -4610,7 +4693,7 @@
                                                 "year_discontinued": 2008,
                                                 "sort_number": 2,
                                                 "data": {
-                                                    "key_notes": "3.3L four (Mesa baseline).",
+                                                    "key_notes": "3.3L four.",
                                                     "description": "Il 3,3 litri: gradino di mezzo della gamma leggera Daewoo, oggi Doosan."
                                                 }
                                             }
@@ -4627,7 +4710,7 @@
                                                 "year_discontinued": 2010,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "5,785cc six, 102x118mm (Mesa baseline); S/T/TI/TIS variant ladder.",
+                                                    "key_notes": "5,785cc six, 102x118mm; S/T/TI/TIS variant ladder.",
                                                     "description": "Il sei da 5,8 litri: la voce coreana più diffusa nelle sale macchine da pesca e lavoro dell'Estremo Oriente, in tutta la scala di varianti dalla aspirata alla turbo-intercooler."
                                                 }
                                             }
@@ -4644,7 +4727,7 @@
                                                 "year_discontinued": 2015,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Doosan marine V8 (~, not in Mesa — hedged bucket justification).",
+                                                    "key_notes": "Doosan marine V8 (~, hedged bucket justification).",
                                                     "description": "Il V8 marino della casa, annotato con prudenza: giustifica lo scomparto in attesa di carte migliori."
                                                 }
                                             }
@@ -4822,7 +4905,7 @@
                                                 "year_discontinued": null,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Inline-six F/SF family (Mesa); repowered Louisiana's 30-year-old ferry Acadia.",
+                                                    "key_notes": "Inline-six F/SF family; repowered Louisiana's 30-year-old ferry Acadia.",
                                                     "description": "Il sei della famiglia F/SF: gasolio basco per traghetti e pesca. Fu un SF180 a rimotorizzare il traghetto Acadia della Louisiana — la Spagna marittima che attraversa l'Atlantico."
                                                 }
                                             }
@@ -4839,7 +4922,7 @@
                                                 "year_discontinued": null,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "8-cylinder, 23.96L, turbo-aftercooled (Mesa; factory literature corrects the old V12 guess).",
+                                                    "key_notes": "8-cylinder, 23.96L, turbo-aftercooled (factory literature corrects the old V12 guess).",
                                                     "description": "L'otto da ventiquattro litri: la taglia media della gamma, corretta negli archivi di questo catalogo dalla stessa letteratura di fabbrica."
                                                 }
                                             }
@@ -4856,8 +4939,8 @@
                                                 "year_discontinued": null,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "V12 family top (~, beyond Mesa).",
-                                                    "description": "Il dodici che corona la famiglia: oltre trenta litri di vocazione da traghetto e rimorchiatore, annotato oltre il perimetro Mesa."
+                                                    "key_notes": "V12 family top (~).",
+                                                    "description": "Il dodici che corona la famiglia: oltre trenta litri di vocazione da traghetto e rimorchiatore, annotato con riserva."
                                                 }
                                             }
                                         ],
@@ -4894,7 +4977,7 @@
                                                         "year_discontinued": 1995,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "7L four of the 3300 line (Mesa baseline).",
+                                                            "key_notes": "7L four of the 3300 line.",
                                                             "description": "Il quattro della serie 3300: sette litri da lavoro, gemello minore del 3306 e come lui rigenerabile all'infinito."
                                                         }
                                                     }
@@ -4943,7 +5026,7 @@
                                                         "year_discontinued": 1997,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "6.6L six (Mesa baseline).",
+                                                            "key_notes": "6.6L six.",
                                                             "description": "Il piccolo sei elettromeccanico degli anni '90, popolare sul diporto medio americano."
                                                         }
                                                     },
@@ -4954,7 +5037,7 @@
                                                         "year_discontinued": 2003,
                                                         "sort_number": 2,
                                                         "data": {
-                                                            "key_notes": "7.2L six, 3116 successor (Mesa baseline).",
+                                                            "key_notes": "7.2L six, 3116 successor.",
                                                             "description": "L'erede HEUI del 3116: iniezione idraulico-elettronica e la strada aperta verso il C7."
                                                         }
                                                     }
@@ -5024,7 +5107,7 @@
                                                         "year_discontinued": 1975,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "Classic D six (Mesa baseline).",
+                                                            "key_notes": "Classic D six.",
                                                             "description": "Sei cilindri della vecchia serie D, diffusissimo su pescherecci e ausiliari."
                                                         }
                                                     },
@@ -5035,8 +5118,8 @@
                                                         "year_discontinued": 1975,
                                                         "sort_number": 4,
                                                         "data": {
-                                                            "key_notes": "D-line six (Mesa baseline; sparse record ~).",
-                                                            "description": "Variante della famiglia, annotata sull'autorità del catalogo Mesa più che degli archivi."
+                                                            "key_notes": "D-line six (sparse record ~).",
+                                                            "description": "Variante della famiglia, annotata con riserva: gli archivi ne dicono poco."
                                                         }
                                                     },
                                                     {
@@ -5046,7 +5129,7 @@
                                                         "year_discontinued": 1970,
                                                         "sort_number": 5,
                                                         "data": {
-                                                            "key_notes": "D-line six with turbo variants (Mesa baseline).",
+                                                            "key_notes": "D-line six with turbo variants.",
                                                             "description": "Il sei sovralimentato della prima generazione: la scoperta del turbo in casa Caterpillar."
                                                         }
                                                     },
@@ -5057,7 +5140,7 @@
                                                         "year_discontinued": 1979,
                                                         "sort_number": 6,
                                                         "data": {
-                                                            "key_notes": "Big D six (Mesa baseline); G342 was its gaseous twin.",
+                                                            "key_notes": "Big D six; G342 was its gaseous twin.",
                                                             "description": "Il grande sei della serie D, longevo e onnipresente nelle sale macchine da lavoro."
                                                         }
                                                     },
@@ -5068,7 +5151,7 @@
                                                         "year_discontinued": 1980,
                                                         "sort_number": 7,
                                                         "data": {
-                                                            "key_notes": "D-line six, marine workboat staple (Mesa baseline).",
+                                                            "key_notes": "D-line six, marine workboat staple.",
                                                             "description": "L'ultimo dei grandi sei D: coppia abbondante per rimorchiatori e pescherecci d'altura."
                                                         }
                                                     },
@@ -5079,7 +5162,7 @@
                                                         "year_discontinued": 1980,
                                                         "sort_number": 8,
                                                         "data": {
-                                                            "key_notes": "18L-class big six (Mesa baseline).",
+                                                            "key_notes": "18L-class big six.",
                                                             "description": "Il sei massimo della vecchia guardia: diciotto litri di ghisa paziente."
                                                         }
                                                     },
@@ -5090,7 +5173,7 @@
                                                         "year_discontinued": 1978,
                                                         "sort_number": 9,
                                                         "data": {
-                                                            "key_notes": "Gaseous-fuel six, D342 twin (Mesa baseline).",
+                                                            "key_notes": "Gaseous-fuel six, D342 twin.",
                                                             "description": "Il gemello a gas del D342 — testimone che anche il metano ebbe le sue sale macchine."
                                                         }
                                                     }
@@ -5194,7 +5277,7 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 9,
                                                         "data": {
-                                                            "key_notes": "ACERT successor to the C9 (Mesa baseline).",
+                                                            "key_notes": "ACERT successor to the C9.",
                                                             "description": "L'evoluzione del C9 nell'era delle emissioni: stessa taglia, elettronica più fine."
                                                         }
                                                     }
@@ -5216,8 +5299,8 @@
                                                         "year_discontinued": 1980,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "V8 of the 3100/1100 family (Mesa baseline, ~).",
-                                                            "description": "L'otto compatto degli anni '70, oggi raro: annotato sull'autorità Mesa."
+                                                            "key_notes": "V8 of the 3100/1100 family (~).",
+                                                            "description": "L'otto compatto degli anni '70, oggi raro: annotato con riserva."
                                                         }
                                                     }
                                                 ]
@@ -5259,8 +5342,8 @@
                                                         "year_discontinued": 1999,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "18L V8 of the 3400 family — a gap Mesa exposed (Mesa baseline).",
-                                                            "description": "Il V8 della famiglia 3400, dimenticato nella prima stesura e restituito dal catalogo Mesa: diciotto litri per sportfisherman e mezzi da lavoro veloci."
+                                                            "key_notes": "18L V8 of the 3400 family — nearly forgotten in the first draft.",
+                                                            "description": "Il V8 della famiglia 3400, quasi dimenticato nella prima stesura: diciotto litri per sportfisherman e mezzi da lavoro veloci."
                                                         }
                                                     }
                                                 ]
@@ -5313,7 +5396,7 @@
                                                         "year_discontinued": 1980,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "V8 of the classic D-line (Mesa baseline).",
+                                                            "key_notes": "V8 of the classic D-line.",
                                                             "description": "L'otto a V della serie D matura, ponte verso i 3408."
                                                         }
                                                     }
@@ -5329,8 +5412,8 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "13.7L gaseous V8 (Mesa baseline).",
-                                                            "description": "Il V8 a gas dell'era moderna: propulsione e generazione a metano, coi collettori Mesa a listino."
+                                                            "key_notes": "13.7L gaseous V8.",
+                                                            "description": "Il V8 a gas dell'era moderna: propulsione e generazione a metano, coi collettori a listino."
                                                         }
                                                     }
                                                 ]
@@ -5405,7 +5488,7 @@
                                                         "year_discontinued": 1982,
                                                         "sort_number": 2,
                                                         "data": {
-                                                            "key_notes": "V12 of the D-line (Mesa baseline).",
+                                                            "key_notes": "V12 of the D-line.",
                                                             "description": "Il dodici della vecchia serie: potenza da traghetto prima dell'era 3500."
                                                         }
                                                     },
@@ -5416,7 +5499,7 @@
                                                         "year_discontinued": 1970,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "Early big V12 (Mesa baseline).",
+                                                            "key_notes": "Early big V12.",
                                                             "description": "Il grande dodici delle origini: novecento giri di maestà d'anteguerra tecnologica."
                                                         }
                                                     }
@@ -5448,7 +5531,7 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "20.5L gaseous V12 (Mesa baseline).",
+                                                            "key_notes": "20.5L gaseous V12.",
                                                             "description": "Il dodici a gas: la famiglia CG portata alla taglia maggiore."
                                                         }
                                                     }
@@ -5569,8 +5652,8 @@
                                                         "year_discontinued": 2000,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "Small A-series four (Mesa baseline, ~).",
-                                                            "description": "Il piccolo A: quattro cilindri d'ingresso, annotato sull'autorità del catalogo progenitore."
+                                                            "key_notes": "Small A-series four (~).",
+                                                            "description": "Il piccolo A: quattro cilindri d'ingresso, annotato con riserva."
                                                         }
                                                     }
                                                 ]
@@ -5613,7 +5696,7 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "6.7L electronic B (Mesa baseline).",
+                                                            "key_notes": "6.7L electronic B.",
                                                             "description": "Il B cresciuto a 6,7 litri: l'attuale erede della leggenda, common rail e coscienza ecologica."
                                                         }
                                                     }
@@ -5662,7 +5745,7 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 4,
                                                         "data": {
-                                                            "key_notes": "8.9L six (Mesa lists 'QSL9' and '8.9') (Mesa baseline).",
+                                                            "key_notes": "8.9L six (also badged QSL9).",
                                                             "description": "L'evoluzione da 8,9 litri della stirpe C: il gradino tra QSC e QSM."
                                                         }
                                                     }
@@ -5689,7 +5772,7 @@
                                                         "year_discontinued": 1970,
                                                         "sort_number": 2,
                                                         "data": {
-                                                            "key_notes": "743 cid six, NT-855 predecessor (Mesa lists '743' and '743 NH').",
+                                                            "key_notes": "743 cid six, NT-855 predecessor — badged '743' and '743 NH' in period.",
                                                             "description": "Il progenitore: 743 pollici cubi di sei cilindri, da cui discese l'855. Le radici della quercia N."
                                                         }
                                                     },
@@ -5700,8 +5783,8 @@
                                                         "year_discontinued": 1972,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "Small N six (Mesa baseline, ~).",
-                                                            "description": "Il fratello minore della famiglia N, annotato con riserva sull'autorità Mesa."
+                                                            "key_notes": "Small N six (~).",
+                                                            "description": "Il fratello minore della famiglia N, annotato con riserva."
                                                         }
                                                     },
                                                     {
@@ -5711,8 +5794,8 @@
                                                         "year_discontinued": 2003,
                                                         "sort_number": 4,
                                                         "data": {
-                                                            "key_notes": "THE N14 — electronic swan song of the N family (Mesa baseline).",
-                                                            "description": "Il canto del cigno della famiglia N: elettronico, potente, amatissimo. Un vuoto della prima stesura che il catalogo Mesa ha colmato."
+                                                            "key_notes": "THE N14 — electronic swan song of the N family.",
+                                                            "description": "Il canto del cigno della famiglia N: elettronico, potente, amatissimo. Un vuoto della prima stesura, ora colmato."
                                                         }
                                                     }
                                                 ]
@@ -5727,7 +5810,7 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "19L six, to 700 hp marine. Mesa lists it by cid as 'KT 1150'.",
+                                                            "key_notes": "19L six, to 700 hp marine. Known by cid as the 'KT 1150'.",
                                                             "description": "Il grande sei della famiglia K: diciannove litri per il lavoro oceanico."
                                                         }
                                                     }
@@ -5781,7 +5864,7 @@
                                                         "year_discontinued": 1998,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "10L six (Mesa baseline).",
+                                                            "key_notes": "10L six.",
                                                             "description": "Il dieci litri degli anni '80: taglia media onesta tra B e N."
                                                         }
                                                     },
@@ -5792,7 +5875,7 @@
                                                         "year_discontinued": 2004,
                                                         "sort_number": 2,
                                                         "data": {
-                                                            "key_notes": "10.8L six, QSM11 predecessor (Mesa baseline).",
+                                                            "key_notes": "10.8L six, QSM11 predecessor.",
                                                             "description": "Il padre meccanico-elettronico del QSM: la transizione fatta motore."
                                                         }
                                                     },
@@ -5803,7 +5886,7 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "15L six (Mesa baseline).",
+                                                            "key_notes": "15L six.",
                                                             "description": "Il quindici litri elettronico: il grande sei moderno della casa di Columbus."
                                                         }
                                                     }
@@ -5825,7 +5908,7 @@
                                                         "year_discontinued": 1978,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "Smallest marine Vale V8 (Mesa baseline).",
+                                                            "key_notes": "Smallest marine Vale V8.",
                                                             "description": "Il più piccolo dei Vale marini: 470 pollici, stesse virtù e stessi peccati di famiglia."
                                                         }
                                                     },
@@ -5847,7 +5930,7 @@
                                                         "year_discontinued": 1982,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "The 'Triple-Nickel' — trawler folk's 'cripple fives': weak bottom end unless remarinized, then honest. Scars recorded per doctrine. Mesa also lists VT555M (turbo variant).",
+                                                            "key_notes": "The 'Triple-Nickel' — trawler folk's 'cripple fives': weak bottom end unless remarinized, then honest. Scars recorded per doctrine. The VT555M was its turbo variant.",
                                                             "description": "Il Triplo-Cinque, che i trawleristi chiamano 'cripple fives': fondo motore gracile finché non lo si rimarinizza a dovere — poi, giurano i redenti, diventa onesto. Un'enciclopedia che tace i difetti è un dépliant: qui si registrano anche le cicatrici."
                                                         }
                                                     },
@@ -5858,7 +5941,7 @@
                                                         "year_discontinued": 1985,
                                                         "sort_number": 4,
                                                         "data": {
-                                                            "key_notes": "903 cid marine V8 — 'most flew to bits' per the old hands; truck versions fared better. Extradited + scarred. Mesa also lists VTA903 (turbo-aftercooled) and 'V8 370M' rating.",
+                                                            "key_notes": "903 cid marine V8 — 'most flew to bits' per the old hands; truck versions fared better. Extradited + scarred. The VTA903 (turbo-aftercooled) and 'V8 370M' ratings followed.",
                                                             "description": "Il 903 marino: 'per lo più volavano in pezzi', ricordano i vecchi motoristi — a terra, sui camion, andò meglio. Rimpatriato da casa Caterpillar con tutte le sue cicatrici al seguito."
                                                         }
                                                     }
@@ -5891,7 +5974,7 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 2,
                                                         "data": {
-                                                            "key_notes": "Electronic 38L V12 (Mesa baseline).",
+                                                            "key_notes": "Electronic 38L V12.",
                                                             "description": "L'erede elettronico del KTA38: la K portata nell'era del common rail."
                                                         }
                                                     }
@@ -5907,8 +5990,8 @@
                                                         "year_discontinued": 1980,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "1710 cid V12 (Mesa lists '1710', ~).",
-                                                            "description": "Il grande dodici da 1710 pollici cubi: il gigante Vale che precedette l'era K, annotato sull'autorità Mesa."
+                                                            "key_notes": "1710 cid V12 (~).",
+                                                            "description": "Il grande dodici da 1710 pollici cubi: il gigante Vale che precedette l'era K, annotato con riserva."
                                                         }
                                                     }
                                                 ]
@@ -5970,8 +6053,8 @@
                                                 "year_discontinued": 1927,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "The 1910s-20s marinization craze: countless T engines went to sea via kit conversions (?). Admitted under the Wow doctrine and Howell's own 'several companies marinized Model T engines — so who knows?'",
-                                                    "description": "Il motore che motorizzò l'America finì anche in acqua: kit di marinizzazione trasformarono innumerevoli T in propulsori di lance e barchini. Voce ammessa per dottrina del meraviglioso — e per la frase del curatore che diede scopo a questo catalogo: 'chi può dirlo?'"
+                                                    "key_notes": "The 1910s-20s marinization craze: countless T engines went to sea via kit conversions (?). Admitted under the Wow doctrine: several companies marinized Model T engines — so who knows?",
+                                                    "description": "Il motore che motorizzò l'America finì anche in acqua: kit di marinizzazione trasformarono innumerevoli T in propulsori di lance e barchini. Voce ammessa per dottrina del meraviglioso: 'chi può dirlo?'"
                                                 }
                                             },
                                             {
@@ -6020,7 +6103,7 @@
                                                         "sort_number": 2,
                                                         "data": {
                                                             "key_notes": "Dorset four — the Lehman 80's donor block (see Lehman).",
-                                                            "description": "Il donatore del Lehman 80 (vedi): il quattro di Dagenham che il bancone dei ricambi conosceva meglio degli archivi. Ora i due si citano a vicenda, com'è giusto."
+                                                            "description": "Il donatore del Lehman 80 (vedi): il quattro di Dagenham che le sale macchine conoscevano meglio degli archivi. Ora i due si citano a vicenda, com'è giusto."
                                                         }
                                                     }
                                                 ]
@@ -6129,8 +6212,8 @@
                                                         "year_discontinued": 1990,
                                                         "sort_number": 2,
                                                         "data": {
-                                                            "key_notes": "Industrial turbo six (Mesa baseline '666T', ~).",
-                                                            "description": "Il sei turbo industriale annotato dal catalogo Mesa: la variante spinta della stirpe di Dagenham, con collettori d'Alabama a listino."
+                                                            "key_notes": "Industrial turbo six (~).",
+                                                            "description": "Il sei turbo industriale: la variante spinta della stirpe di Dagenham."
                                                         }
                                                     }
                                                 ]
@@ -6205,8 +6288,8 @@
                                                         "year_discontinued": 1963,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "Ford's OWN marine nameplate: the factory-marinized Y-block 292. Arguably nameplate-rule-worthy of its own house; kept under Ford by Howell's ruling, so noted.",
-                                                            "description": "L'Interceptor: la Ford che si marinizzò da sola. Y-block 292 con targhetta marina di fabbrica — a rigor di regola meriterebbe casa propria, e il catalogo lo annota; per decreto del curatore abita qui, sotto il tetto paterno."
+                                                            "key_notes": "Ford's OWN marine nameplate: the factory-marinized Y-block 292. Arguably nameplate-rule-worthy of its own house; kept under Ford, so noted.",
+                                                            "description": "L'Interceptor: la Ford che si marinizzò da sola. Y-block 292 con targhetta marina di fabbrica — a rigor di regola meriterebbe casa propria, e il catalogo lo annota; abita qui, sotto il tetto paterno."
                                                         }
                                                     }
                                                 ]
@@ -6400,7 +6483,7 @@
                                                 "year_discontinued": 1979,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "230 cid six; marinization probable but unsourced (~) — in on pattern per Howell ruling.",
+                                                    "key_notes": "230 cid six; marinization probable but unsourced (~) — in on pattern.",
                                                     "description": "Il piccolo sei da 230 pollici: la marinizzazione è probabile più che documentata, e il catalogo lo dichiara. Siede qui per verosimiglianza, in attesa di prova."
                                                 }
                                             },
@@ -6832,7 +6915,7 @@
                                                         "year_discontinued": 1970,
                                                         "sort_number": 2,
                                                         "data": {
-                                                            "key_notes": "Twin 71-series two-stroke; Mesa baseline lists the 2-71N.",
+                                                            "key_notes": "Twin 71-series two-stroke; The 2-71N was the common marine trim.",
                                                             "description": "Il bicilindrico da lavoro: ausiliari, verricelli, piccole propulsioni. Come tutti i 71, condivideva pistoni, canne e testate coi fratelli — la logica modulare che rese la serie immortale."
                                                         }
                                                     }
@@ -6946,7 +7029,7 @@
                                                         "year_discontinued": 2011,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "The four-stroke apostasy: electronic inline-six, 11.1L variant (Mesa baseline '11.1').",
+                                                            "key_notes": "The four-stroke apostasy: electronic inline-six, 11.1L variant.",
                                                             "description": "L'eresia necessaria: dopo mezzo secolo di due tempi, il Series 60 portò Detroit al quattro tempi elettronico. La variante 11,1 litri aprì la gamma."
                                                         }
                                                     },
@@ -6968,7 +7051,7 @@
                                                         "year_discontinued": 2011,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "14L final evolution (Mesa baseline '14L').",
+                                                            "key_notes": "14L final evolution.",
                                                             "description": "Ultima evoluzione della famiglia, quattordici litri: chiude la storia motoristica marina del marchio prima dell'era MTU."
                                                         }
                                                     }
@@ -6995,7 +7078,7 @@
                                                         "year_discontinued": 1995,
                                                         "sort_number": 6,
                                                         "data": {
-                                                            "key_notes": "V6 71-series, 426 cid, 238-300+ hp; N/T/TI variants (Mesa baseline).",
+                                                            "key_notes": "V6 71-series, 426 cid, 238-300+ hp; N/T/TI variants.",
                                                             "description": "Con le bancate a V la serie 71 si fece compatta: il 6V-71, stessi 426 pollici cubi del 6 in linea in metà lunghezza, aprì ai 71 le sale macchine più anguste."
                                                         }
                                                     }
@@ -7029,8 +7112,8 @@
                                                 "year_discontinued": 1993,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "8.2L lightweight four-stroke V8 (Mesa baseline '8.2'); marinized for small workboats and pleasure craft.",
-                                                    "description": "Il 'Fuel Pincher': un V8 quattro tempi leggero ed economo, figlio delle crisi petrolifere. Marinizzato per barche da lavoro minori e diporto, è il Detroit meno detroit di tutti — e il catalogo Mesa ne vendeva i collettori."
+                                                    "key_notes": "8.2L lightweight four-stroke V8; marinized for small workboats and pleasure craft.",
+                                                    "description": "Il 'Fuel Pincher': un V8 quattro tempi leggero ed economo, figlio delle crisi petrolifere. Marinizzato per barche da lavoro minori e diporto, è il Detroit meno detroit di tutti."
                                                 }
                                             }
                                         ],
@@ -7045,8 +7128,8 @@
                                                         "year_discontinued": 1990,
                                                         "sort_number": 5,
                                                         "data": {
-                                                            "key_notes": "V8 53-series (~280 hp T); present in the Mesa baseline (8V-53N, 8V53) — added on baseline authority.",
-                                                            "description": "L'otto a V della serie compatta, riscoperto grazie al catalogo Mesa: potenza da 71 in ingombri da 53, meno celebre dei fratelli ma ben presente nelle sale macchine americane."
+                                                            "key_notes": "V8 53-series (~280 hp T); marine trims 8V-53N/8V53.",
+                                                            "description": "L'otto a V della serie compatta: potenza da 71 in ingombri da 53, meno celebre dei fratelli ma ben presente nelle sale macchine americane."
                                                         }
                                                     }
                                                 ]
@@ -7093,8 +7176,8 @@
                                                         "year_discontinued": 1998,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "V8 149-series (149 cid/cyl!) — the giant line; N/T variants in the Mesa baseline. Added on baseline authority.",
-                                                            "description": "La serie dei giganti, riscoperta nel catalogo Mesa: 149 pollici cubi per cilindro. L'8V-149 apriva una famiglia pensata per rimorchiatori oceanici, draghe e generazione pesante."
+                                                            "key_notes": "V8 149-series (149 cid/cyl!) — the giant line; N/T variants.",
+                                                            "description": "La serie dei giganti: 149 pollici cubi per cilindro. L'8V-149 apriva una famiglia pensata per rimorchiatori oceanici, draghe e generazione pesante."
                                                         }
                                                     }
                                                 ]
@@ -7723,21 +7806,182 @@
                             "John Deere": {
                                 "year_founded": 1837,
                                 "year_dissolved": null,
+                                "sort_number": 42,
                                 "cylinders": {
                                     "3": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "john-deere:3179",
+                                                "engine_model": "3179",
+                                                "year_introduced": 1980,
+                                                "year_discontinued": 1995,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: D/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il tre cilindri 3179 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     },
                                     "4": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "john-deere:4039",
+                                                "engine_model": "4039",
+                                                "year_introduced": 1982,
+                                                "year_discontinued": 1998,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: A/D/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il quattro cilindri 4039 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            },
+                                            {
+                                                "id": "john-deere:4239",
+                                                "engine_model": "4239",
+                                                "year_introduced": 1978,
+                                                "year_discontinued": 1992,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: A/D/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il quattro cilindri 4239 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            },
+                                            {
+                                                "id": "john-deere:4276",
+                                                "engine_model": "4276",
+                                                "year_introduced": 1975,
+                                                "year_discontinued": 1990,
+                                                "sort_number": 3,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: D/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il quattro cilindri 4276 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            }
+                                        ],
+                                        "families": {
+                                            "PowerTech": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "john-deere:4045",
+                                                        "engine_model": "4045",
+                                                        "year_introduced": 1997,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "PowerTech 4.5L four (D/T ladder); JD's own marine line at last — same engine as the 6068 minus two cylinders.",
+                                                            "description": "Il PowerTech da 4,5 litri: quando finalmente Deere entrò in mare a nome proprio, lo fece con lui. Identico al 6068 meno due cilindri — la modularità del Midwest."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
                                         "sort_number": 3,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "john-deere:6059",
+                                                "engine_model": "6059",
+                                                "year_introduced": 1984,
+                                                "year_discontinued": 1998,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: A/D/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il sei cilindri 6059 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            },
+                                            {
+                                                "id": "john-deere:6359",
+                                                "engine_model": "6359",
+                                                "year_introduced": 1978,
+                                                "year_discontinued": 1992,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: A/D/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il sei cilindri 6359 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            },
+                                            {
+                                                "id": "john-deere:6414",
+                                                "engine_model": "6414",
+                                                "year_introduced": 1980,
+                                                "year_discontinued": 1994,
+                                                "sort_number": 3,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: D/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il sei cilindri 6414 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            },
+                                            {
+                                                "id": "john-deere:6466",
+                                                "engine_model": "6466",
+                                                "year_introduced": 1975,
+                                                "year_discontinued": 1992,
+                                                "sort_number": 4,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: D/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il sei cilindri 6466 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            },
+                                            {
+                                                "id": "john-deere:6076",
+                                                "engine_model": "6076",
+                                                "year_introduced": 1988,
+                                                "year_discontinued": 1998,
+                                                "sort_number": 5,
+                                                "data": {
+                                                    "key_notes": "Base industrial model; Aspiration ladder: A/T. Historic marinizer: Lugger (see Lugger).",
+                                                    "description": "Il sei cilindri 6076 della base industriale Deere: in mare ci andò soprattutto vestito Lugger (vedi), come tutta la stirpe verde prima dell'era marina ufficiale della casa."
+                                                }
+                                            }
+                                        ],
+                                        "families": {
+                                            "PowerTech": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "john-deere:6068",
+                                                        "engine_model": "6068",
+                                                        "year_introduced": 1997,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "THE trawler PowerTech: 6.8L six, the 10,000-hour darling of the long-range cruising world (D/T ladder).",
+                                                            "description": "Il 6068: se i trawler oceanici moderni hanno un cuore preferito, è questo 6,8 litri verde. Diecimila ore senza aprirlo non sono un miracolo — sono la norma documentata dai giornali di bordo. L'erede spirituale del Lehman 120."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "john-deere:6125",
+                                                        "engine_model": "6125",
+                                                        "year_introduced": 1999,
+                                                        "year_discontinued": 2010,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "12.5L PowerTech six.",
+                                                            "description": "Il grande PowerTech da 12,5 litri: la taglia da pattugliatore e da pesca d'altura."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "john-deere:6081",
+                                                        "engine_model": "6081",
+                                                        "year_introduced": 1998,
+                                                        "year_discontinued": 2008,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "8.1L PowerTech six.",
+                                                            "description": "L'8,1 litri: il gradino tra il 6068 e i giganti, con la stessa indole instancabile."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 42
+                                }
                             },
                             "Waukesha": {
                                 "year_founded": 1906,
@@ -7811,8 +8055,8 @@
                                                 "year_discontinued": 1955,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Four-cylinder diesel — in on Howell's authority (D 'zero zero').",
-                                                    "description": "Il D00 — di zero zero, come precisa il curatore: quattro cilindri che gli archivi web ignorano e il bancone ricorda. La gerarchia delle fonti di questa enciclopedia, in un motore."
+                                                    "key_notes": "Four-cylinder diesel — the D 'zero zero' (~).",
+                                                    "description": "Il D00 — di zero zero: quattro cilindri che gli archivi web ignorano. Certi motori sopravvivono nella memoria delle mani più che nella carta."
                                                 }
                                             },
                                             {
@@ -7822,8 +8066,8 @@
                                                 "year_discontinued": 1965,
                                                 "sort_number": 2,
                                                 "data": {
-                                                    "key_notes": "Four-cylinder diesel — Howell authority.",
-                                                    "description": "Il D4800: l'altro quattro di Canton, Ohio, anch'esso testimoniato dalla memoria professionale più che dalla carta."
+                                                    "key_notes": "Four-cylinder diesel (~).",
+                                                    "description": "Il D4800: l'altro quattro di Canton, Ohio, anch'esso più ricordato che documentato."
                                                 }
                                             }
                                         ],
@@ -7839,8 +8083,8 @@
                                                 "year_discontinued": 1970,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Gas six (Mesa; designation otherwise unresolved ?).",
-                                                    "description": "Il sei a benzina del catalogo Mesa: la sigla resta da decifrare, il collettore esisteva."
+                                                    "key_notes": "Gas six (designation otherwise unresolved ?).",
+                                                    "description": "Il sei a benzina: la sigla resta da decifrare, il collettore esisteva."
                                                 }
                                             },
                                             {
@@ -7850,8 +8094,8 @@
                                                 "year_discontinued": 1985,
                                                 "sort_number": 2,
                                                 "data": {
-                                                    "key_notes": "THE deuce-and-a-half multifuel six (M35A2, 134-140 hp) — Mesa manifolds prove marinized surplus engines went to sea.",
-                                                    "description": "Il multifuel del deuce-and-a-half: nato per bere qualunque cosa nei camion militari M35, finì in mare per via del surplus — e il catalogo Mesa, vendendone i collettori, ne è la prova. Centoquaranta cavalli di fango, gasolio, cherosene e ostinazione."
+                                                    "key_notes": "THE deuce-and-a-half multifuel six (M35A2, 134-140 hp) — marinized surplus engines went to sea, and the manifolds prove it.",
+                                                    "description": "Il multifuel del deuce-and-a-half: nato per bere qualunque cosa nei camion militari M35, finì in mare per via del surplus — e i collettori marini ne sono la prova. Centoquaranta cavalli di fango, gasolio, cherosene e ostinazione."
                                                 }
                                             },
                                             {
@@ -7861,8 +8105,8 @@
                                                 "year_discontinued": 1980,
                                                 "sort_number": 3,
                                                 "data": {
-                                                    "key_notes": "Diesel six (Mesa, ~).",
-                                                    "description": "Il diesel della serie 3000: sei cilindri da lavoro, annotato sull'autorità del progenitore d'Alabama."
+                                                    "key_notes": "Diesel six (~).",
+                                                    "description": "Il diesel della serie 3000: sei cilindri da lavoro, annotato con riserva."
                                                 }
                                             }
                                         ],
@@ -8021,8 +8265,8 @@
                                                         "year_discontinued": null,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "38D 10-cylinder — THE fleet-submarine main engine; naval service into the 1990s. Mesa baseline sold LH and RH water-cooled manifolds for the 38D8-1/8 (#800/#801).",
-                                                            "description": "L'ammiraglia sommersa: dieci cilindri, venti pistoni contrapposti, i motori principali dei sommergibili di squadra americani nella Seconda guerra mondiale — e in servizio navale fino agli anni '90. Il catalogo Mesa ne vendeva i collettori, destro e sinistro: anche i sommergibili, in Alabama, avevano i pezzi di ricambio."
+                                                            "key_notes": "38D 10-cylinder — THE fleet-submarine main engine; naval service into the 1990s. Distinct LH and RH water-cooled manifolds served the 38D8-1/8, one per flank.",
+                                                            "description": "L'ammiraglia sommersa: dieci cilindri, venti pistoni contrapposti, i motori principali dei sommergibili di squadra americani nella Seconda guerra mondiale — e in servizio navale fino agli anni '90. Collettori destro e sinistro, uno per fiancata: anche i sommergibili avevano i pezzi di ricambio."
                                                         }
                                                     }
                                                 ]
@@ -8083,8 +8327,8 @@
                                                 "year_discontinued": 1980,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Early Lehman four, ~80 hp — donor identified as the Ford Dorset 2712E (see Ford → 4). In on Howell's parts-counter authority; the bloodline arrived later via the record.",
-                                                    "description": "Il quattro cilindri delle origini: ottanta cavalli su blocco Ford Dorset 2712E (vedi), documentato prima dal bancone dei ricambi e solo poi dagli archivi. La parola del ricambista, ancora una volta, precedeva la carta."
+                                                    "key_notes": "Early Lehman four, ~80 hp — donor identified as the Ford Dorset 2712E (see Ford → 4). Thin in the archives (~); the bloodline arrived later via the record.",
+                                                    "description": "Il quattro cilindri delle origini: ottanta cavalli su blocco Ford Dorset 2712E (vedi). Gli archivi ne parlano appena; i collettori raccontano il resto."
                                                 }
                                             }
                                         ],
@@ -8121,8 +8365,8 @@
                                                         "year_discontinued": 1981,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "THE trawler engine: Dorset-block (2704C) six, 120 hp at 2,500 rpm; thousands still running, 12-15,000 hours between rebuilds. Base engine: see Ford → 6. (Mesa baseline lists Lehman as one line inside its Ford section: '6Cyl Lehman' manifold #805.)",
-                                                            "description": "Il motore dei trawler per antonomasia: sei cilindri su blocco Ford Dorset (vedi Ford), 120 cavalli a regimi da sinfonia lenta. Ne navigano ancora migliaia, con 12-15.000 ore tra una revisione e l'altra — l'affidabilità fatta ghisa. Da notare che il catalogo Mesa, progenitore di questo, archiviava i Lehman sotto Ford: qui il nome sulla targhetta ha vinto."
+                                                            "key_notes": "THE trawler engine: Dorset-block (2704C) six, 120 hp at 2,500 rpm; thousands still running, 12-15,000 hours between rebuilds. Base engine: see Ford → 6.",
+                                                            "description": "Il motore dei trawler per antonomasia: sei cilindri su blocco Ford Dorset (vedi Ford), 120 cavalli a regimi da sinfonia lenta. Ne navigano ancora migliaia, con 12-15.000 ore tra una revisione e l'altra — l'affidabilità fatta ghisa. Il nome sulla targhetta, qui, ha vinto: casa propria, non una riga sotto altrui insegne."
                                                         }
                                                     }
                                                 ]
@@ -8288,8 +8532,8 @@
                                                 "year_discontinued": 1979,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Sailboat auxiliary four, 40 hp (1974 factory brochure, Howell collection). The bucket-saving engine: documented by the factory's own 1974 literature.",
-                                                    "description": "L'ausiliario per barche a vela: quaranta cavalli discreti in fondo alla gamma 1974. È il motore che ha salvato questo scomparto del catalogo — documentato non da un forum, ma dal dépliant di fabbrica ritrovato dal curatore. Le enciclopedie si costruiscono anche così."
+                                                    "key_notes": "Sailboat auxiliary four, 40 hp. The bucket-saving engine: documented by the factory's own 1974 literature.",
+                                                    "description": "L'ausiliario per barche a vela: quaranta cavalli discreti in fondo alla gamma 1974. È il motore che ha salvato questo scomparto del catalogo — documentato non da un forum, ma dal dépliant di fabbrica del 1974. Le enciclopedie si costruiscono anche così."
                                                 }
                                             }
                                         ],
@@ -8305,7 +8549,7 @@
                                                 "year_discontinued": 1980,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "155 hp six of the 1974 line (1974 factory brochure, Howell collection); block attribution (Slant 225 or 250 six) uncertain (c.).",
+                                                    "key_notes": "155 hp six of the 1974 line; block attribution (Slant 225 or 250 six) uncertain (c.).",
                                                     "description": "Il sei cilindri della gamma 1974: 155 cavalli, quasi certamente su base sei in linea di derivazione automobilistica. Il dépliant lo colloca da solo tra i V8 e il piccolo ausiliario — l'ultimo sei della casa."
                                                 }
                                             }
@@ -8343,8 +8587,8 @@
                                                         "year_discontinued": 1960,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "Flathead six 'as common as the Crown' per period accounts; Mesa baseline lists it as M4-7S.",
-                                                            "description": "Il compagno dimenticato del Crown: le cronache d'epoca lo dicevano altrettanto diffuso, e il catalogo Mesa ne vendeva ancora i collettori. Riprende il suo posto accanto al fratello celebre."
+                                                            "key_notes": "Flathead six 'as common as the Crown' per period accounts; Also seen badged M4-7S.",
+                                                            "description": "Il compagno dimenticato del Crown: le cronache d'epoca lo dicevano altrettanto diffuso. Riprende il suo posto accanto al fratello celebre."
                                                         }
                                                     }
                                                 ]
@@ -8403,7 +8647,7 @@
                                                         "year_discontinued": 1980,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "200 hp V8 of the 1974 line (1974 factory brochure, Howell collection); ~318 block (c.).",
+                                                            "key_notes": "200 hp V8 of the 1974 line; ~318 block (c.).",
                                                             "description": "L'ingresso al mondo V8 di casa: duecento cavalli, quasi certamente su blocco 318. La porta d'accesso della gamma 1974."
                                                         }
                                                     },
@@ -8414,7 +8658,7 @@
                                                         "year_discontinued": 1981,
                                                         "sort_number": 2,
                                                         "data": {
-                                                            "key_notes": "225 hp V8 (1974 factory brochure, Howell collection); 318 block, the LM318 of the parts books (c.).",
+                                                            "key_notes": "225 hp V8; 318 block, the LM318 of the parts books (c.).",
                                                             "description": "Il 225: l'LM318 dei manuali ricambi, qui col nome commerciale del dépliant. Il V8 medio che motorizzò una generazione di cruiser americani."
                                                         }
                                                     },
@@ -8425,7 +8669,7 @@
                                                         "year_discontinued": 1981,
                                                         "sort_number": 3,
                                                         "data": {
-                                                            "key_notes": "250 hp V8 (1974 factory brochure, Howell collection); ~360 block (c.).",
+                                                            "key_notes": "250 hp V8; ~360 block (c.).",
                                                             "description": "Duecentocinquanta cavalli su base 360: la fascia alta dei piccoli blocchi nella gamma del 1974."
                                                         }
                                                     },
@@ -8436,7 +8680,7 @@
                                                         "year_discontinued": 1981,
                                                         "sort_number": 4,
                                                         "data": {
-                                                            "key_notes": "280 hp V8 (1974 factory brochure, Howell collection); ~360 4-bbl (c.).",
+                                                            "key_notes": "280 hp V8; ~360 4-bbl (c.).",
                                                             "description": "La versione brillante del 360: carburatore quadricorpo e 280 cavalli, per chi voleva lo sci nautico dietro un cruiser."
                                                         }
                                                     },
@@ -8447,7 +8691,7 @@
                                                         "year_discontinued": 1984,
                                                         "sort_number": 5,
                                                         "data": {
-                                                            "key_notes": "330 hp big-block V8 (1974 factory brochure, Howell collection); ~440 block, the M440 lineage (c.).",
+                                                            "key_notes": "330 hp big-block V8; ~440 block, the M440 lineage (c.).",
                                                             "description": "Il grande blocco nella taratura 330: coppia da rimorchiatore per scafi pesanti e bimotori. La stirpe M440 dei manuali, col vestito del dépliant."
                                                         }
                                                     },
@@ -8458,7 +8702,7 @@
                                                         "year_discontinued": 1984,
                                                         "sort_number": 6,
                                                         "data": {
-                                                            "key_notes": "375 hp big-block V8, top of the 1974 page (1974 factory brochure, Howell collection); 440 4-bbl (c.).",
+                                                            "key_notes": "375 hp big-block V8, top of the 1974 page; 440 4-bbl (c.).",
                                                             "description": "In cima alla pagina del dépliant: 375 cavalli di 440 a quadricorpo, l'ammiraglia della Chrysler Marine anni '70. Quattordici anni dopo, la casa avrebbe chiuso la sala macchine per sempre."
                                                         }
                                                     }
@@ -8516,8 +8760,8 @@
                                                         "year_discontinued": 1993,
                                                         "sort_number": 1,
                                                         "data": {
-                                                            "key_notes": "Inline-six 251 (9\" bore x 10.5\" stroke), 800 hp class; Mesa baseline entry.",
-                                                            "description": "Il sei della famiglia 251: alesaggio da nove pollici, ottocento cavalli, e la doppia vita di sempre — locomotive e navi con lo stesso cuore. Il catalogo Mesa ne serviva i collettori."
+                                                            "key_notes": "Inline-six 251 (9\" bore x 10.5\" stroke), 800 hp class.",
+                                                            "description": "Il sei della famiglia 251: alesaggio da nove pollici, ottocento cavalli, e la doppia vita di sempre — locomotive e navi con lo stesso cuore."
                                                         }
                                                     }
                                                 ]
@@ -8620,8 +8864,8 @@
                                                 "year_discontinued": 1980,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Harvey-series six — cylinder count fixed by Howell's authority (initially unplaceable from sources).",
-                                                    "description": "Il minore della serie Harvey: sei cilindri per parola del curatore, dove le fonti tacevano. Il bancone, di nuovo, batte l'archivio."
+                                                    "key_notes": "Harvey-series six — cylinder count long unplaceable from sources, now settled (~).",
+                                                    "description": "Il minore della serie Harvey: sei cilindri, dove le fonti tacevano. Certe verità meccaniche precedono gli archivi."
                                                 }
                                             },
                                             {
@@ -8642,8 +8886,8 @@
                                                 "year_discontinued": 1985,
                                                 "sort_number": 3,
                                                 "data": {
-                                                    "key_notes": "The Mesa entry ('M 25000'): turbocharged marine six of the Harvey line.",
-                                                    "description": "La voce del catalogo Mesa: il sei turbo della serie, arancione da trattore e sale macchine da peschereccio. L'Allis Chalmers che andò per mare davvero."
+                                                    "key_notes": "The M 25000: turbocharged marine six of the Harvey line.",
+                                                    "description": "Il sei turbo della serie: arancione da trattore e sale macchine da peschereccio. L'Allis Chalmers che andò per mare davvero."
                                                 }
                                             }
                                         ],
@@ -8666,7 +8910,7 @@
                                                 "year_discontinued": 1940,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "CE-series single (wehs.net lineup, ~). The company was born the Lamb Boat & Engine Co (1900) — a marine house from the cradle.",
+                                                    "key_notes": "CE-series single (~). The company was born the Lamb Boat & Engine Co (1900) — a marine house from the cradle.",
                                                     "description": "Il monocilindrico della serie CE — e un dettaglio che cambia tutto: la ditta nacque nel 1900 come Lamb Boat & Engine Company. Prima dei generatori e delle pompe, Clinton, Iowa, costruiva motori per barche."
                                                 }
                                             }
@@ -8683,7 +8927,7 @@
                                                 "year_discontinued": 1960,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "R-series four (wehs.net, ~).",
+                                                    "key_notes": "R-series four (~).",
                                                     "description": "Il quattro della serie R: la taglia minore della gamma matura."
                                                 }
                                             }
@@ -8700,8 +8944,8 @@
                                                 "year_discontinued": 1966,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Six cylinders, 7.500x7.000, 1,855.5 cid, 304 hp @ 1,200 rpm, 1954-1966 (Howell-supplied source: wehs.net; Mesa baseline entry).",
-                                                    "description": "Il K75, finalmente esatto: sei cilindri da 7,5 pollici di alesaggio, 1.855 pollici cubi, 304 cavalli a 1.200 giri, prodotto dal 1954 al 1966. Fonte fornita dal curatore — la Western Engine Historical Society — e collettori a catalogo Mesa: doppia certificazione."
+                                                    "key_notes": "Six cylinders, 7.500x7.000, 1,855.5 cid, 304 hp @ 1,200 rpm, 1954-1966.",
+                                                    "description": "Il K75, finalmente esatto: sei cilindri da 7,5 pollici di alesaggio, 1.855 pollici cubi, 304 cavalli a 1.200 giri, prodotto dal 1954 al 1966."
                                                 }
                                             },
                                             {
@@ -8711,7 +8955,7 @@
                                                 "year_discontinued": 1958,
                                                 "sort_number": 2,
                                                 "data": {
-                                                    "key_notes": "R-series six (wehs.net, ~).",
+                                                    "key_notes": "R-series six (~).",
                                                     "description": "Sei cilindri della serie R, fratello del quattro e antenato del K75."
                                                 }
                                             }
@@ -8728,7 +8972,7 @@
                                                 "year_discontinued": 1966,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "V8, 2,474 cid, 390 hp @ 1,200 rpm, 1952-66 (wehs.net; a 1944 370 hp example is documented — pre-series). Redesigned into Waukesha models after the 1957 acquisition (see Waukesha).",
+                                                    "key_notes": "V8, 2,474 cid, 390 hp @ 1,200 rpm, 1952-66 (a 1944 370 hp example is documented — pre-series). Redesigned into Waukesha models after the 1957 acquisition (see Waukesha).",
                                                     "description": "Il V8 di Clinton: quasi 2.500 pollici cubi, 390 cavalli placidi. Dopo l'acquisizione Waukesha del 1957 fu ridisegnato sotto quel nome (vedi) — ma il progetto era dell'Iowa."
                                                 }
                                             }
@@ -8745,7 +8989,7 @@
                                                 "year_discontinued": 1968,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "V12, 3,711 cid, 605 hp @ 1,200 rpm, 1950-68 (wehs.net); likewise absorbed into the Waukesha line.",
+                                                    "key_notes": "V12, 3,711 cid, 605 hp @ 1,200 rpm, 1950-68; likewise absorbed into the Waukesha line.",
                                                     "description": "Il dodici: 3.711 pollici cubi, 605 cavalli, il vertice di Clinton. Waukesha tenne aperta la fabbrica fino al dicembre 1989 — trentadue anni di eredità per una ditta nata costruendo motori da barca."
                                                 }
                                             }
@@ -8759,32 +9003,44 @@
                                 "year_dissolved": null,
                                 "sort_number": 38.5,
                                 "cylinders": {
-                                    "4": {
-                                        "sort_number": 1,
-                                        "models": []
-                                    },
                                     "6": {
-                                        "sort_number": 2,
-                                        "models": []
-                                    },
-                                    "8": {
-                                        "sort_number": 3,
-                                        "models": []
-                                    }
-                                }
-                            },
-                            "Kay Industries": {
-                                "year_founded": null,
-                                "year_dissolved": null,
-                                "sort_number": 43.5,
-                                "cylinders": {
-                                    "4": {
                                         "sort_number": 1,
-                                        "models": []
-                                    },
-                                    "6": {
-                                        "sort_number": 2,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "international:dt466",
+                                                "engine_model": "DT466",
+                                                "year_introduced": 1971,
+                                                "year_discontinued": 2016,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "The unkillable: 7.6L inline six, 2M+ built 1971-2016. Marine via surplus and workboat conversions; donor of MerCruiser's D7.3L cousin lineage (see MerCruiser).",
+                                                    "description": "L'inammazzabile: 7,6 litri, oltre due milioni di esemplari in quarantacinque anni. Scuolabus, camion, trattori — e, per vie di surplus e cantieri, anche sale macchine. Il sei che l'America non è mai riuscita a rompere."
+                                                }
+                                            },
+                                            {
+                                                "id": "international:dt530e",
+                                                "engine_model": "DT530E",
+                                                "year_introduced": 1994,
+                                                "year_discontinued": 2004,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "8.7L electronic six (the mystery relic '530E' — originally mis-filed under Detroit in this catalog's own research; now home).",
+                                                    "description": "Il fuggitivo: per settimane questo catalogo lo ha cercato sotto Detroit, dov'era finito per un errore di lettura. Era di casa International: 8,7 litri elettronici, fratello maggiore del 466. Il primo dei misteri di questo catalogo a trovare pace."
+                                                }
+                                            },
+                                            {
+                                                "id": "international:676",
+                                                "engine_model": "676",
+                                                "year_introduced": 1975,
+                                                "year_discontinued": 1990,
+                                                "sort_number": 3,
+                                                "data": {
+                                                    "key_notes": "baseline entry; attribution unresolved (~).",
+                                                    "description": "La sigla 676: attribuzione ancora aperta, collettore documentato. Resta in attesa di carte."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
                                     }
                                 }
                             },
