@@ -1,0 +1,190 @@
+{
+  "_dossier": "011 Chrysler. PRIMARY SOURCE: 1974 Chrysler Marine brochure (Howell's eBay find) — hp-named line: V8s 375/330/280/250/225/200, six 155, four 40 (sailboat auxiliary). Bucket 4 SAVED by the brochure (delete proposal withdrawn). Royal = straight-eight family per research. Block attributions for hp models are informed estimates (c.). dissolved 1988 (last marine engine).",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Chrysler",
+  "node": {
+    "year_founded": 1925,
+    "year_dissolved": 1988,
+    "sort_number": 13,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "chrysler:40",
+            "engine_model": "40",
+            "year_introduced": 1970,
+            "year_discontinued": 1979,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Sailboat auxiliary four, 40 hp (1974 factory brochure, Howell collection). The bucket-saving engine: documented by the factory's own 1974 literature.",
+              "description": "L'ausiliario per barche a vela: quaranta cavalli discreti in fondo alla gamma 1974. È il motore che ha salvato questo scomparto del catalogo — documentato non da un forum, ma dal dépliant di fabbrica ritrovato dal curatore. Le enciclopedie si costruiscono anche così."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "chrysler:155",
+            "engine_model": "155",
+            "year_introduced": 1968,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "155 hp six of the 1974 line (1974 factory brochure, Howell collection); block attribution (Slant 225 or 250 six) uncertain (c.).",
+              "description": "Il sei cilindri della gamma 1974: 155 cavalli, quasi certamente su base sei in linea di derivazione automobilistica. Il dépliant lo colloca da solo tra i V8 e il piccolo ausiliario — l'ultimo sei della casa."
+            }
+          }
+        ],
+        "families": {
+          "Flathead Six": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "chrysler:ace",
+                "engine_model": "Ace",
+                "year_introduced": 1935,
+                "year_discontinued": 1959,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The smaller flathead six (RM-6 designation).",
+                  "description": "Il piccolo dei flathead: l'Ace, sei cilindri a valvole laterali, motorizzò lance e piccoli cruiser dell'anteguerra e oltre con la dolcezza tipica dei laterali Chrysler."
+                }
+              },
+              {
+                "id": "chrysler:crown",
+                "engine_model": "Crown",
+                "year_introduced": 1934,
+                "year_discontinued": 1965,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "THE Chrysler marine engine: 251-cid flathead six; West Coast fishing boats still run 60-year-old Crowns.",
+                  "description": "La corona, letteralmente: il flathead da 251 pollici che per trent'anni fu sinonimo di motore marino Chrysler. Sulla costa del Pacifico ci sono ancora pescherecci che escono in mare con Crown di sessant'anni — lenti, sussurranti, eterni."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "Royal": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "chrysler:m-8",
+                "engine_model": "M-8",
+                "year_introduced": 1941,
+                "year_discontinued": 1950,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Royal flathead straight-eight, 323.5 cid, 135 hp class.",
+                  "description": "L'otto in linea a valvole laterali: il Royal nella taratura d'ingresso, seta meccanica per commuter e cruiser signorili degli anni '40."
+                }
+              },
+              {
+                "id": "chrysler:m-28",
+                "engine_model": "M-28",
+                "year_introduced": 1946,
+                "year_discontinued": 1952,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Royal straight-eight, mid rating.",
+                  "description": "Il gradino di mezzo della famiglia Royal: stessa architettura, più compressione, per scafi più ambiziosi."
+                }
+              },
+              {
+                "id": "chrysler:m-48",
+                "engine_model": "M-48",
+                "year_introduced": 1948,
+                "year_discontinued": 1955,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Royal straight-eight, 165 hp top rating (incl. M48-S).",
+                  "description": "Il vertice dell'otto in linea: 165 cavalli di flathead, con la variante S a chiudere l'era degli straight-eight marini prima del regno dei V8."
+                }
+              }
+            ]
+          },
+          "V8": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "chrysler:200",
+                "engine_model": "200",
+                "year_introduced": 1970,
+                "year_discontinued": 1980,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "200 hp V8 of the 1974 line (1974 factory brochure, Howell collection); ~318 block (c.).",
+                  "description": "L'ingresso al mondo V8 di casa: duecento cavalli, quasi certamente su blocco 318. La porta d'accesso della gamma 1974."
+                }
+              },
+              {
+                "id": "chrysler:225",
+                "engine_model": "225",
+                "year_introduced": 1968,
+                "year_discontinued": 1981,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "225 hp V8 (1974 factory brochure, Howell collection); 318 block, the LM318 of the parts books (c.).",
+                  "description": "Il 225: l'LM318 dei manuali ricambi, qui col nome commerciale del dépliant. Il V8 medio che motorizzò una generazione di cruiser americani."
+                }
+              },
+              {
+                "id": "chrysler:250",
+                "engine_model": "250",
+                "year_introduced": 1970,
+                "year_discontinued": 1981,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "250 hp V8 (1974 factory brochure, Howell collection); ~360 block (c.).",
+                  "description": "Duecentocinquanta cavalli su base 360: la fascia alta dei piccoli blocchi nella gamma del 1974."
+                }
+              },
+              {
+                "id": "chrysler:280",
+                "engine_model": "280",
+                "year_introduced": 1972,
+                "year_discontinued": 1981,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "280 hp V8 (1974 factory brochure, Howell collection); ~360 4-bbl (c.).",
+                  "description": "La versione brillante del 360: carburatore quadricorpo e 280 cavalli, per chi voleva lo sci nautico dietro un cruiser."
+                }
+              },
+              {
+                "id": "chrysler:330",
+                "engine_model": "330",
+                "year_introduced": 1970,
+                "year_discontinued": 1984,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "330 hp big-block V8 (1974 factory brochure, Howell collection); ~440 block, the M440 lineage (c.).",
+                  "description": "Il grande blocco nella taratura 330: coppia da rimorchiatore per scafi pesanti e bimotori. La stirpe M440 dei manuali, col vestito del dépliant."
+                }
+              },
+              {
+                "id": "chrysler:375",
+                "engine_model": "375",
+                "year_introduced": 1972,
+                "year_discontinued": 1984,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "375 hp big-block V8, top of the 1974 page (1974 factory brochure, Howell collection); 440 4-bbl (c.).",
+                  "description": "In cima alla pagina del dépliant: 375 cavalli di 440 a quadricorpo, l'ammiraglia della Chrysler Marine anni '70. Quattordici anni dopo, la casa avrebbe chiuso la sala macchine per sempre."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
