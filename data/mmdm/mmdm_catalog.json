@@ -5710,82 +5710,351 @@
                                         "sort_number": 1,
                                         "models": [
                                             {
-                                                "engine_model": "Model A 200.5 CID",
-                                                "year_introduced": 1927,
-                                                "year_discontinued": 1931,
-                                                "sort_number": 1
+                                                "id": "ford:model-t",
+                                                "engine_model": "Model T",
+                                                "year_introduced": 1915,
+                                                "year_discontinued": 1927,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "The 1910s-20s marinization craze: countless T engines went to sea via kit conversions (?). Admitted under the Wow doctrine and Howell's own 'several companies marinized Model T engines — so who knows?'",
+                                                    "description": "Il motore che motorizzò l'America finì anche in acqua: kit di marinizzazione trasformarono innumerevoli T in propulsori di lance e barchini. Voce ammessa per dottrina del meraviglioso — e per la frase del curatore che diede scopo a questo catalogo: 'chi può dirlo?'"
+                                                }
                                             },
                                             {
-                                                "engine_model": "2.3L Lima",
+                                                "id": "ford:model-a",
+                                                "engine_model": "Model A",
+                                                "year_introduced": 1928,
+                                                "year_discontinued": 1934,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "200.5 cid four; widely marinized (the old placeholder had it right).",
+                                                    "description": "Il quattro da 200,5 pollici: erede del T anche in mare, marinizzato da mezzo continente. Il vecchio segnaposto di questo catalogo, per una volta, diceva il vero."
+                                                }
+                                            },
+                                            {
+                                                "id": "ford:2.3-lima",
+                                                "engine_model": "2.3 Lima",
                                                 "year_introduced": 1974,
                                                 "year_discontinued": 1997,
-                                                "sort_number": 2
+                                                "sort_number": 3,
+                                                "data": {
+                                                    "key_notes": "The Lima four; OMC and PCM base for small inboards and stern drives.",
+                                                    "description": "Il quattro di Lima, Ohio: base di piccoli entrobordo e sterndrive OMC e PCM negli anni del downsizing."
+                                                }
                                             }
-                                        ]
+                                        ],
+                                        "families": {
+                                            "Dorset": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:2711e",
+                                                        "engine_model": "2711E",
+                                                        "year_introduced": 1965,
+                                                        "year_discontinued": 1977,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Dorset four (~).",
+                                                            "description": "Il quattro della serie Dorset: gasolio inglese in formato ridotto, marinizzato da mezzo Canale della Manica."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ford:2712e",
+                                                        "engine_model": "2712E",
+                                                        "year_introduced": 1965,
+                                                        "year_discontinued": 1977,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Dorset four — the Lehman 80's donor block (see Lehman).",
+                                                            "description": "Il donatore del Lehman 80 (vedi): il quattro di Dagenham che il bancone dei ricambi conosceva meglio degli archivi. Ora i due si citano a vicenda, com'è giusto."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
                                         "sort_number": 2,
+                                        "models": [
+                                            {
+                                                "id": "ford:300",
+                                                "engine_model": "300",
+                                                "year_introduced": 1965,
+                                                "year_discontinued": 1996,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "The 300 cid truck six; endlessly marinized for workboats.",
+                                                    "description": "Il sei da camion per eccellenza: trecento pollici di coppia contadina, marinizzato ovunque servisse trascinare qualcosa senza fretta."
+                                                }
+                                            }
+                                        ],
                                         "families": {
                                             "Falcon Six": {
                                                 "sort_number": 1,
                                                 "models": [
                                                     {
-                                                        "engine_model": "200 CID I6",
-                                                        "year_introduced": 1965,
-                                                        "year_discontinued": 1983,
-                                                        "sort_number": 1
+                                                        "id": "ford:170",
+                                                        "engine_model": "170",
+                                                        "year_introduced": 1960,
+                                                        "year_discontinued": 1972,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Falcon-six small displacement (~).",
+                                                            "description": "Il piccolo dei sei Falcon, marinizzato per runabout economici."
+                                                        }
                                                     },
                                                     {
-                                                        "engine_model": "250 CID I6",
+                                                        "id": "ford:200",
+                                                        "engine_model": "200",
+                                                        "year_introduced": 1963,
+                                                        "year_discontinued": 1978,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "200 cid Falcon six (placeholder vindicated).",
+                                                            "description": "Il 200 della famiglia Falcon: liscio, parco, perfetto per il diporto tranquillo."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ford:250",
+                                                        "engine_model": "250",
                                                         "year_introduced": 1969,
-                                                        "year_discontinued": 1996,
-                                                        "sort_number": 2
+                                                        "year_discontinued": 1980,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "250 cid Falcon six (placeholder vindicated).",
+                                                            "description": "Il maggiore dei Falcon: la taglia da cruiser compatto."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Dorset": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:2704e",
+                                                        "engine_model": "2704E",
+                                                        "year_introduced": 1965,
+                                                        "year_discontinued": 1981,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "THE Dorset six — over a million 2700-range engines built at Dagenham before 1980; base of the Lehman 120 generation and of Sabre, Mermaid, Parsons marinizations.",
+                                                            "description": "Il sei di Dagenham: oltre un milione di 2700 costruiti prima del 1980. Da questo blocco discesero i Lehman 120 (vedi), i Sabre, i Mermaid — mezzo mondo dislocante naviga ancora su queste ossa."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ford:2715e",
+                                                        "engine_model": "2715E",
+                                                        "year_introduced": 1968,
+                                                        "year_discontinued": 1981,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Dorset six, likewise a Lehman 120-generation donor (sources split 2704/2715 attributions — both recorded).",
+                                                            "description": "Il gemello del 2704 nella genealogia dei trawler: le fonti si dividono su quale dei due generò quale Lehman — l'enciclopedia registra entrambi e lascia la disputa ai forum."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Dover": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:2725e",
+                                                        "engine_model": "2725E",
+                                                        "year_introduced": 1982,
+                                                        "year_discontinued": 1994,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Dover six, Dagenham 1982-94 then Ford-Otosan; 120/135 hp ratings; Lehman 135 donor (see Lehman).",
+                                                            "description": "L'erede: il Dover, costruito a Dagenham fino al '94 e poi in Turchia. Nelle tarature da 120 e 135 cavalli fu il cuore dei Lehman di seconda generazione."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ford:666t",
+                                                        "engine_model": "666T",
+                                                        "year_introduced": 1978,
+                                                        "year_discontinued": 1990,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Industrial turbo six (Mesa baseline '666T', ~).",
+                                                            "description": "Il sei turbo industriale annotato dal catalogo Mesa: la variante spinta della stirpe di Dagenham, con collettori d'Alabama a listino."
+                                                        }
                                                     }
                                                 ]
                                             }
-                                        },
-                                        "models": [
-                                            {
-                                                "engine_model": "300 CID I6",
-                                                "year_introduced": 1965,
-                                                "year_discontinued": 1996,
-                                                "sort_number": 3
-                                            }
-                                        ]
+                                        }
                                     },
                                     "8": {
                                         "sort_number": 3,
+                                        "models": [],
                                         "families": {
-                                            "Windsor": {
+                                            "385": {
+                                                "sort_number": 6,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:429",
+                                                        "engine_model": "429",
+                                                        "year_introduced": 1969,
+                                                        "year_discontinued": 1978,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "385-family big block (~).",
+                                                            "description": "Il grande blocco 429, marinizzato per scafi pesanti."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ford:460",
+                                                        "engine_model": "460",
+                                                        "year_introduced": 1972,
+                                                        "year_discontinued": 1992,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "The 460: ski boats, houseboats, and everything heavy.",
+                                                            "description": "Il 460: houseboat, ski-boat di taglia, e tutto ciò che pesava. L'ultimo grande benzina di casa prima del tramonto."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Flathead": {
                                                 "sort_number": 1,
                                                 "models": [
                                                     {
-                                                        "engine_model": "289",
-                                                        "year_introduced": 1963,
-                                                        "year_discontinued": 1968,
-                                                        "sort_number": 1
+                                                        "id": "ford:flathead-v8",
+                                                        "engine_model": "Flathead V8",
+                                                        "year_introduced": 1932,
+                                                        "year_discontinued": 1953,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The 1932 V8 that democratized power — and promptly went to sea in every imaginable marinization.",
+                                                            "description": "Il V8 che democratizzò la potenza: dal 1932 in poi, non ci fu porto americano senza un flathead borbottante in qualche sentina. Non nacque marino — lo diventò per acclamazione popolare."
+                                                        }
                                                     },
                                                     {
+                                                        "id": "ford:flathead-v8-60",
+                                                        "engine_model": "V8 60",
+                                                        "year_introduced": 1937,
+                                                        "year_discontinued": 1940,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "The small 60 hp flathead (~); midget racers and light launches.",
+                                                            "description": "Il piccolo flathead da 60 cavalli: amato dai midget e, in acqua, dalle lance leggere."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Y-block": {
+                                                "sort_number": 2,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:interceptor-292",
+                                                        "engine_model": "Interceptor 292",
+                                                        "year_introduced": 1956,
+                                                        "year_discontinued": 1963,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Ford's OWN marine nameplate: the factory-marinized Y-block 292. Arguably nameplate-rule-worthy of its own house; kept under Ford by Howell's ruling, so noted.",
+                                                            "description": "L'Interceptor: la Ford che si marinizzò da sola. Y-block 292 con targhetta marina di fabbrica — a rigor di regola meriterebbe casa propria, e il catalogo lo annota; per decreto del curatore abita qui, sotto il tetto paterno."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "FE": {
+                                                "sort_number": 3,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:427",
+                                                        "engine_model": "427",
+                                                        "year_introduced": 1963,
+                                                        "year_discontinued": 1970,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "FE big block; racing marinizations (~, Wow).",
+                                                            "description": "Il 427 in acqua: marinizzazioni da competizione per l'era d'oro dell'offshore. Voce del meraviglioso più che del quotidiano."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Windsor": {
+                                                "sort_number": 4,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:289",
+                                                        "engine_model": "289",
+                                                        "year_introduced": 1963,
+                                                        "year_discontinued": 1972,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Windsor small block (placeholder vindicated).",
+                                                            "description": "Il piccolo Windsor delle origini, marinizzato per runabout e primi ski-boat."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ford:302",
                                                         "engine_model": "302",
                                                         "year_introduced": 1968,
-                                                        "year_discontinued": 2000,
-                                                        "sort_number": 2
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "302 Windsor; OMC/PCM/Indmar base for decades.",
+                                                            "description": "Il 302: per trent'anni la spina dorsale delle marinizzazioni americane di casa Ford."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ford:351w",
+                                                        "engine_model": "351W",
+                                                        "year_introduced": 1969,
+                                                        "year_discontinued": 1996,
+                                                        "sort_number": 3,
+                                                        "data": {
+                                                            "key_notes": "THE ski-boat king: PCM and Indmar marinized it for Correct Craft and MasterCraft — 240 hp standard, 260, then 285 GT-40/HO, 310 TBI. Ford's marine gasoline empire ended when GM out-invested it on marine EFI in '92-93.",
+                                                            "description": "Il re dello sci nautico: dietro Correct Craft e MasterCraft, per una generazione, c'era quasi sempre un 351 Windsor vestito PCM o Indmar — 240, 260, 285 coi GT-40, 310 a iniezione. Poi, nel '92, GM investì sull'iniezione marina e Ford esitò: l'impero finì così, non per un difetto ma per una riunione mancata."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "Cleveland": {
+                                                "sort_number": 5,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:351c",
+                                                        "engine_model": "351C",
+                                                        "year_introduced": 1970,
+                                                        "year_discontinued": 1978,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Cleveland variant, marinized less commonly (~).",
+                                                            "description": "Il cugino Cleveland: meno diffuso in acqua del Windsor, ma presente."
+                                                        }
                                                     }
                                                 ]
                                             },
                                             "Modular": {
-                                                "sort_number": 2,
+                                                "sort_number": 7,
+                                                "models": [
+                                                    {
+                                                        "id": "ford:4.6-sohc",
+                                                        "engine_model": "4.6L SOHC",
+                                                        "year_introduced": 1996,
+                                                        "year_discontinued": 2010,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Modular V8 (placeholder vindicated); marine via Indmar-era conversions.",
+                                                            "description": "Il Modular d'ingresso: l'era delle camme in testa arriva anche in sentina."
+                                                        }
+                                                    }
+                                                ],
                                                 "subfamilies": {
                                                     "Triton": {
                                                         "sort_number": 1,
                                                         "models": [
                                                             {
+                                                                "id": "ford:5.4-triton",
                                                                 "engine_model": "5.4L Triton",
-                                                                "year_introduced": 1997,
+                                                                "year_introduced": 1999,
                                                                 "year_discontinued": 2010,
                                                                 "sort_number": 1,
                                                                 "data": {
-                                                                    "key_notes": "SOHC V8 from the Modular family; truck-oriented with 3-valve heads and variable cam timing; used in F-Series and Expedition."
+                                                                    "key_notes": "Triton branch; Indmar marinized it for Malibu's wakeboard era.",
+                                                                    "description": "Il Triton in acqua: l'era wakeboard di Malibu girava su questo 5,4 vestito Indmar."
                                                                 }
                                                             }
                                                         ]
@@ -5794,32 +6063,19 @@
                                                         "sort_number": 2,
                                                         "models": [
                                                             {
+                                                                "id": "ford:5.0-coyote",
                                                                 "engine_model": "5.0L Coyote",
                                                                 "year_introduced": 2011,
                                                                 "year_discontinued": null,
                                                                 "sort_number": 1,
                                                                 "data": {
-                                                                    "key_notes": "DOHC evolution of the Modular architecture (introduced 2011); high-revving design for Mustangs/F-150s; variants include Gen 1–4 with direct injection."
+                                                                    "key_notes": "Coyote branch; base of Indmar's modern Raptor marine line.",
+                                                                    "description": "Il Coyote: base dei Raptor marini di Indmar — la vendetta moderna di Ford nello sci nautico, un decennio dopo la disfatta EFI."
                                                                 }
                                                             }
                                                         ]
                                                     }
-                                                },
-                                                "models": [
-                                                    {
-                                                        "engine_model": "4.6L SOHC",
-                                                        "year_introduced": 1991,
-                                                        "year_discontinued": 2014,
-                                                        "sort_number": 3,
-                                                        "data": {
-                                                            "displacement_l": 4.6,
-                                                            "configuration": "V8",
-                                                            "valvetrain": "SOHC",
-                                                            "max_power_hp": 260,
-                                                            "key_notes": "Original Modular V8; 2-valve SOHC for Crown Victoria/Town Car; marine generator applications"
-                                                        }
-                                                    }
-                                                ]
+                                                }
                                             }
                                         }
                                     }
@@ -7101,29 +7357,185 @@
                             "Fairbanks Morse": {
                                 "year_founded": 1893,
                                 "year_dissolved": null,
+                                "sort_number": 23,
                                 "cylinders": {
                                     "1": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "Model 32": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fairbanks-morse:32d-single",
+                                                        "engine_model": "32D Single",
+                                                        "year_introduced": 1925,
+                                                        "year_discontinued": 1945,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The earth-shaking semi-diesel one-lunger (Y-VA lineage, 1924→); marine installations documented by Old Tacoma Marine's survivor registry.",
+                                                            "description": "Il semi-diesel che faceva tremare la banchina: un cilindro di ghisa colossale, avviamento ad aria a 250 psi, nessuna valvola — e battiti così lenti che si contavano a orecchio. Alcuni lavorarono fino al 1991: la pazienza fatta motore."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "2": {
                                         "sort_number": 2,
-                                        "models": []
+                                        "models": [],
+                                        "families": {
+                                            "Model 32": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fairbanks-morse:32d-twin",
+                                                        "engine_model": "32D Twin",
+                                                        "year_introduced": 1926,
+                                                        "year_discontinued": 1945,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Two-cylinder Model 32 marine configuration (~).",
+                                                            "description": "Il bicilindrico della cattedrale 32: doppia lentezza, doppia certezza, sui pescherecci del Pacifico nord-occidentale."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "sort_number": 3,
+                                        "models": [],
+                                        "families": {
+                                            "Model 32": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fairbanks-morse:32d-triple",
+                                                        "engine_model": "32D Triple",
+                                                        "year_introduced": 1928,
+                                                        "year_discontinued": 1945,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Three-cylinder Model 32 (?); survivors in the Old Tacoma registry anchor the type.",
+                                                            "description": "Il tre cilindri, annotato con riserva ma con testimoni: nel registro di Old Tacoma sopravvivono esemplari che ancora respirano."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "6": {
-                                        "sort_number": 3,
-                                        "models": []
+                                        "sort_number": 4,
+                                        "models": [],
+                                        "families": {
+                                            "38D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fairbanks-morse:38d-6",
+                                                        "engine_model": "38D8-1/8",
+                                                        "year_introduced": 1940,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Opposed-piston 38D, 6-cylinder configuration; auxiliary and small-vessel service.",
+                                                            "description": "La configurazione a sei del capolavoro a pistoni contrapposti: dodici pistoni, sei cilindri, nessuna testata — l'eresia geniale del 1939 in formato ausiliario."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "8": {
-                                        "sort_number": 4,
-                                        "models": []
+                                        "sort_number": 5,
+                                        "models": [],
+                                        "families": {
+                                            "38D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fairbanks-morse:38d-8",
+                                                        "engine_model": "38D8-1/8",
+                                                        "year_introduced": 1940,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "38D 8-cylinder configuration.",
+                                                            "description": "L'otto cilindri (sedici pistoni!) della famiglia OP: generazione e propulsione per unità maggiori."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "9": {
+                                        "sort_number": 6,
+                                        "models": [],
+                                        "families": {
+                                            "38D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fairbanks-morse:38d-9",
+                                                        "engine_model": "38D8-1/8",
+                                                        "year_introduced": 1941,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "38D 9-cylinder — WWII fleet-boat main engine configuration.",
+                                                            "description": "Il nove cilindri delle unità subacquee: una configurazione che questo catalogo onora con il suo primo scomparto dispari sopra il tre."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "10": {
+                                        "sort_number": 7,
+                                        "models": [],
+                                        "families": {
+                                            "38D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fairbanks-morse:38d-10",
+                                                        "engine_model": "38D8-1/8",
+                                                        "year_introduced": 1941,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "38D 10-cylinder — THE fleet-submarine main engine; naval service into the 1990s. Mesa baseline sold LH and RH water-cooled manifolds for the 38D8-1/8 (#800/#801).",
+                                                            "description": "L'ammiraglia sommersa: dieci cilindri, venti pistoni contrapposti, i motori principali dei sommergibili di squadra americani nella Seconda guerra mondiale — e in servizio navale fino agli anni '90. Il catalogo Mesa ne vendeva i collettori, destro e sinistro: anche i sommergibili, in Alabama, avevano i pezzi di ricambio."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "12": {
-                                        "sort_number": 5,
-                                        "models": []
+                                        "sort_number": 8,
+                                        "models": [],
+                                        "families": {
+                                            "38D": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "fairbanks-morse:38d-12",
+                                                        "engine_model": "38D8-1/8",
+                                                        "year_introduced": 1942,
+                                                        "year_discontinued": null,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "38D 12-cylinder — largest configuration of the OP family.",
+                                                            "description": "La taglia massima: dodici cilindri e ventiquattro pistoni in danza contrapposta. Il vertice di una delle architetture più originali della storia del diesel marino."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 23
+                                }
                             },
                             "Superior": {
                                 "year_founded": 1908,
@@ -7155,8 +7567,8 @@
                                                 "year_discontinued": 1980,
                                                 "sort_number": 1,
                                                 "data": {
-                                                    "key_notes": "Early Lehman four, ~80 hp; block attribution uncertain (c. years). In on Howell's parts-counter authority — absent from both web sources and the Mesa baseline.",
-                                                    "description": "Il quattro cilindri delle origini: ottanta cavalli circa, documentato più nei banconi dei ricambisti che negli archivi. Figura in questo catalogo sulla parola di chi quei ricambi li vendeva — la fonte più autorevole che un'enciclopedia possa desiderare."
+                                                    "key_notes": "Early Lehman four, ~80 hp — donor identified as the Ford Dorset 2712E (see Ford → 4). In on Howell's parts-counter authority; the bloodline arrived later via the record.",
+                                                    "description": "Il quattro cilindri delle origini: ottanta cavalli su blocco Ford Dorset 2712E (vedi), documentato prima dal bancone dei ricambi e solo poi dagli archivi. La parola del ricambista, ancora una volta, precedeva la carta."
                                                 }
                                             }
                                         ],
@@ -7763,19 +8175,106 @@
                                 "sort_number": 30
                             },
                             "Universal": {
-                                "year_founded": 1963,
+                                "year_founded": 1898,
                                 "year_dissolved": null,
+                                "sort_number": 94,
                                 "cylinders": {
                                     "2": {
                                         "sort_number": 1,
-                                        "models": []
+                                        "models": [
+                                            {
+                                                "id": "universal:blue-jacket-twin",
+                                                "engine_model": "Blue Jacket Twin",
+                                                "year_introduced": 1947,
+                                                "year_discontinued": 1962,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "The vintage gasoline twin (~); small sailboat and launch auxiliary.",
+                                                    "description": "Il bicilindrico d'epoca della casa: la 'giubba blu' che precedette il regno dell'Atomic 4 sugli ausiliari minori."
+                                                }
+                                            }
+                                        ],
+                                        "families": {}
+                                    },
+                                    "3": {
+                                        "sort_number": 2,
+                                        "models": [],
+                                        "families": {
+                                            "M": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "universal:m3-20",
+                                                        "engine_model": "M3-20",
+                                                        "year_introduced": 1983,
+                                                        "year_discontinued": 1995,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "Kubota-block diesel triple (see Kubota); ~20 hp.",
+                                                            "description": "Il tre cilindri dell'era Kubota (vedi): venti cavalli di gasolio giapponese in livrea americana, per barche a vela di media taglia."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     },
                                     "4": {
-                                        "sort_number": 2,
-                                        "models": []
+                                        "sort_number": 3,
+                                        "models": [
+                                            {
+                                                "id": "universal:utility-four",
+                                                "engine_model": "Utility Four",
+                                                "year_introduced": 1942,
+                                                "year_discontinued": 1949,
+                                                "sort_number": 1,
+                                                "data": {
+                                                    "key_notes": "WWII U.S. Navy lifeboat engine; the Atomic 4's direct ancestor.",
+                                                    "description": "Il progenitore: nato per le lance di salvataggio della U.S. Navy in guerra, ridisegnato in pace divenne l'Atomic 4. Le stirpi migliori nascono spesso in servizio."
+                                                }
+                                            },
+                                            {
+                                                "id": "universal:atomic-4",
+                                                "engine_model": "Atomic 4",
+                                                "year_introduced": 1949,
+                                                "year_discontinued": 1984,
+                                                "sort_number": 2,
+                                                "data": {
+                                                    "key_notes": "THE sailboat auxiliary: gasoline four, 18 and 30 hp versions, 40,000 built 1949-1984, ~20,000 still in service; Westerbeke (its eventual owner) and Beta Marine sell drop-in replacements to this day.",
+                                                    "description": "Il battito cardiaco della vela americana: quarantamila esemplari in trentacinque anni, e ventimila ancora in servizio — nessun ausiliario è mai stato così amato, maledetto e rimpianto insieme. Benzina in sentina e tutto, l'Atomic 4 è un monumento: quando Westerbeke comprò Universal, comprò soprattutto la sua leggenda. E chi lo sostituisce oggi compra, letteralmente, un motore progettato per entrare nel suo spazio."
+                                                }
+                                            }
+                                        ],
+                                        "families": {
+                                            "M": {
+                                                "sort_number": 1,
+                                                "models": [
+                                                    {
+                                                        "id": "universal:m-25",
+                                                        "engine_model": "M-25",
+                                                        "year_introduced": 1976,
+                                                        "year_discontinued": 1990,
+                                                        "sort_number": 1,
+                                                        "data": {
+                                                            "key_notes": "The Kubota-block diesel that answered Yanmar (see Kubota); Catalina's favorite auxiliary.",
+                                                            "description": "La risposta a Yanmar: blocco Kubota marinizzato (vedi), adottato in massa da Catalina. Il gasolio che pensionò — lentamente, mai del tutto — la benzina di bordo."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "universal:m4-30",
+                                                        "engine_model": "M4-30",
+                                                        "year_introduced": 1985,
+                                                        "year_discontinued": 1998,
+                                                        "sort_number": 2,
+                                                        "data": {
+                                                            "key_notes": "Larger M-series Kubota four, ~30 hp (~).",
+                                                            "description": "Il quattro maggiore della serie M: trenta cavalli diesel per gli scafi che l'Atomic 4 non bastava più a spingere."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
                                     }
-                                },
-                                "sort_number": 94
+                                }
                             }
                         },
                         "sort_number": 1

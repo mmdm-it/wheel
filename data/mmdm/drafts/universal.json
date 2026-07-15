@@ -1,0 +1,108 @@
+{
+  "_dossier": "016 Universal. Rulings: 3-bucket added (M3-20); Atomic 4 an orphan monument; M-family = Kubota era; Blue Jacket Twin hedged in. Mesa: absent from baseline (workboat catalog, sailboat engine) — noted per liturgy. Repatriated Canada→USA in batch 3.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Universal",
+  "node": {
+    "year_founded": 1898,
+    "year_dissolved": null,
+    "sort_number": 94,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "universal:blue-jacket-twin",
+            "engine_model": "Blue Jacket Twin",
+            "year_introduced": 1947,
+            "year_discontinued": 1962,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The vintage gasoline twin (~); small sailboat and launch auxiliary.",
+              "description": "Il bicilindrico d'epoca della casa: la 'giubba blu' che precedette il regno dell'Atomic 4 sugli ausiliari minori."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "M": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "universal:m3-20",
+                "engine_model": "M3-20",
+                "year_introduced": 1983,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Kubota-block diesel triple (see Kubota); ~20 hp.",
+                  "description": "Il tre cilindri dell'era Kubota (vedi): venti cavalli di gasolio giapponese in livrea americana, per barche a vela di media taglia."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "universal:utility-four",
+            "engine_model": "Utility Four",
+            "year_introduced": 1942,
+            "year_discontinued": 1949,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "WWII U.S. Navy lifeboat engine; the Atomic 4's direct ancestor.",
+              "description": "Il progenitore: nato per le lance di salvataggio della U.S. Navy in guerra, ridisegnato in pace divenne l'Atomic 4. Le stirpi migliori nascono spesso in servizio."
+            }
+          },
+          {
+            "id": "universal:atomic-4",
+            "engine_model": "Atomic 4",
+            "year_introduced": 1949,
+            "year_discontinued": 1984,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "THE sailboat auxiliary: gasoline four, 18 and 30 hp versions, 40,000 built 1949-1984, ~20,000 still in service; Westerbeke (its eventual owner) and Beta Marine sell drop-in replacements to this day.",
+              "description": "Il battito cardiaco della vela americana: quarantamila esemplari in trentacinque anni, e ventimila ancora in servizio — nessun ausiliario è mai stato così amato, maledetto e rimpianto insieme. Benzina in sentina e tutto, l'Atomic 4 è un monumento: quando Westerbeke comprò Universal, comprò soprattutto la sua leggenda. E chi lo sostituisce oggi compra, letteralmente, un motore progettato per entrare nel suo spazio."
+            }
+          }
+        ],
+        "families": {
+          "M": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "universal:m-25",
+                "engine_model": "M-25",
+                "year_introduced": 1976,
+                "year_discontinued": 1990,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The Kubota-block diesel that answered Yanmar (see Kubota); Catalina's favorite auxiliary.",
+                  "description": "La risposta a Yanmar: blocco Kubota marinizzato (vedi), adottato in massa da Catalina. Il gasolio che pensionò — lentamente, mai del tutto — la benzina di bordo."
+                }
+              },
+              {
+                "id": "universal:m4-30",
+                "engine_model": "M4-30",
+                "year_introduced": 1985,
+                "year_discontinued": 1998,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Larger M-series Kubota four, ~30 hp (~).",
+                  "description": "Il quattro maggiore della serie M: trenta cavalli diesel per gli scafi che l'Atomic 4 non bastava più a spingere."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
