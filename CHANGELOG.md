@@ -1,5 +1,7 @@
 # Changelog
 
+## 3.10.2 — Child pyramid: revert to original spacing with an at-least-one-node guarantee
+
 ## 3.10.1 — Child pyramid fit guarantee — every child gets a slot (fixes empty pyramids at childCount 4-5)
 
 ## 3.10.0 — Gutenberg easter egg: Bible reachable inside MMdM catalog via generic gateway nodes
