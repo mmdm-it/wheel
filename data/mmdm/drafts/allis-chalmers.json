@@ -1,0 +1,52 @@
+{
+  "_dossier": "019b Allis Chalmers. Ruling: 16000 is a SIX (Howell authority) — 4-bucket deleted; Harvey-series trio in the 6-bucket.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Allis Chalmers",
+  "node": {
+    "year_founded": 1901,
+    "year_dissolved": null,
+    "sort_number": 3.5,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "allis-chalmers:16000",
+            "engine_model": "16000",
+            "year_introduced": 1965,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Harvey-series six — cylinder count fixed by Howell's authority (initially unplaceable from sources).",
+              "description": "Il minore della serie Harvey: sei cilindri per parola del curatore, dove le fonti tacevano. Il bancone, di nuovo, batte l'archivio."
+            }
+          },
+          {
+            "id": "allis-chalmers:21000",
+            "engine_model": "21000",
+            "year_introduced": 1968,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Marine/industrial six, Mark II generations (~); marine manuals survive.",
+              "description": "Il gradino di mezzo, in versioni Mark II: i manuali marini sopravvissuti testimoniano una carriera di bordo concreta."
+            }
+          },
+          {
+            "id": "allis-chalmers:25000",
+            "engine_model": "25000",
+            "year_introduced": 1970,
+            "year_discontinued": 1985,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "The Mesa entry ('M 25000'): turbocharged marine six of the Harvey line.",
+              "description": "La voce del catalogo Mesa: il sei turbo della serie, arancione da trattore e sale macchine da peschereccio. L'Allis Chalmers che andò per mare davvero."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

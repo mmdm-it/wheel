@@ -1,0 +1,95 @@
+{
+  "_dossier": "019a Alco. Rulings: 539 family + 251 trio. Buckets [6,12,16] confirmed.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Alco",
+  "node": {
+    "year_founded": 1901,
+    "year_dissolved": 1969,
+    "sort_number": 3,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "539": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "alco:539",
+                "engine_model": "539",
+                "year_introduced": 1938,
+                "year_discontinued": 1959,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The WWII marine legend: inline-six of the sub-chasers and Army tugs; thousands served.",
+                  "description": "Il sei cilindri della guerra sull'acqua: cacciasommergibili, rimorchiatori dell'esercito, migliaia di sale macchine. Prima del 251, il nome Alco in mare era questo — lento, enorme, indistruttibile."
+                }
+              }
+            ]
+          },
+          "251": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "alco:6-251",
+                "engine_model": "6-251",
+                "year_introduced": 1954,
+                "year_discontinued": 1993,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Inline-six 251 (9\" bore x 10.5\" stroke), 800 hp class; Mesa baseline entry.",
+                  "description": "Il sei della famiglia 251: alesaggio da nove pollici, ottocento cavalli, e la doppia vita di sempre — locomotive e navi con lo stesso cuore. Il catalogo Mesa ne serviva i collettori."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "12": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "251": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "alco:12-251",
+                "engine_model": "12-251",
+                "year_introduced": 1955,
+                "year_discontinued": 1993,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "V12 251, built at Auburn NY from 1955 (~).",
+                  "description": "Il dodici di Auburn: la taglia media dei 251, per traghetti, draghe e generazione di bordo."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "16": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "251": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "alco:16-251",
+                "engine_model": "16-251",
+                "year_introduced": 1956,
+                "year_discontinued": 1993,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "V16 251, Schenectady-built, replacing the 244 (~).",
+                  "description": "Il sedici di Schenectady: il vertice della famiglia, erede del 244, con oltre duemila cavalli di vocazione ferroviaria e marittima insieme."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

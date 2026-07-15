@@ -1,0 +1,75 @@
+{
+  "_dossier": "021c Hino. Ruling: all three buckets kept, supporting cast hedged around the EH700 anchor.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Hino",
+  "node": {
+    "year_founded": 1942,
+    "year_dissolved": null,
+    "sort_number": 33,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "hino:w04d",
+            "engine_model": "W04D",
+            "year_introduced": 1985,
+            "year_discontinued": 1998,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "W-family four (~); smaller Bayliner-era installations.",
+              "description": "Il quattro della famiglia W: la taglia minore dell'era Bayliner, per cabinati compatti a gasolio."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "hino:eh700",
+            "engine_model": "EH700",
+            "year_introduced": 1984,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE Bayliner diesel: 6-cyl, 175/220 hp (N/TI), sold via US Marine as the 'MerCruiser 6.4L' (Mesa entry).",
+              "description": "Il diesel dei Bayliner: sei cilindri giapponesi venduti in America sotto le insegne US Marine — perfino come 'MerCruiser 6.4L'. Il catalogo Mesa lo serviva, i diportisti lo ricordano: 175 cavalli di metodicità Toyota-group in sala macchine."
+            }
+          },
+          {
+            "id": "hino:w06d",
+            "engine_model": "W06D",
+            "year_introduced": 1986,
+            "year_discontinued": 1998,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "W-family six (~).",
+              "description": "Il sei della famiglia W, compagno turbo dell'era EH700."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "hino:ef750",
+            "engine_model": "EF750",
+            "year_introduced": 1982,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The truck V8; marine use unconfirmed (?) — holds the bucket per Howell ruling, awaiting evidence.",
+              "description": "Il V8 da camion: l'impiego marino resta da dimostrare, e l'annotazione lo dice. Presidia lo scomparto per decreto del curatore, in attesa di prove."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

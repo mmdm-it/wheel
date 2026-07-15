@@ -1,0 +1,75 @@
+{
+  "_dossier": "020a Daewoo. Rulings: V158TI hedged in (8-bucket kept). Mesa: DC24/DB33/DB58.",
+  "market": "eurasia",
+  "country": "Corea del Sud",
+  "manufacturer": "Daewoo",
+  "node": {
+    "year_founded": 1967,
+    "year_dissolved": null,
+    "sort_number": 17,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "daewoo:dc24",
+            "engine_model": "DC24",
+            "year_introduced": 1990,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,370cc four (Mesa baseline).",
+              "description": "Il piccolo quattro coreano: 2,4 litri per gruppi elettrogeni di bordo e lance da lavoro, con i collettori a catalogo in Alabama."
+            }
+          },
+          {
+            "id": "daewoo:db33",
+            "engine_model": "DB33",
+            "year_introduced": 1992,
+            "year_discontinued": 2008,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "3.3L four (Mesa baseline).",
+              "description": "Il 3,3 litri: gradino di mezzo della gamma leggera Daewoo, oggi Doosan."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "daewoo:db58",
+            "engine_model": "DB58",
+            "year_introduced": 1993,
+            "year_discontinued": 2010,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "5,785cc six, 102x118mm (Mesa baseline); S/T/TI/TIS variant ladder.",
+              "description": "Il sei da 5,8 litri: la voce coreana più diffusa nelle sale macchine da pesca e lavoro dell'Estremo Oriente, in tutta la scala di varianti dalla aspirata alla turbo-intercooler."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "daewoo:v158ti",
+            "engine_model": "V158TI",
+            "year_introduced": 1998,
+            "year_discontinued": 2015,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Doosan marine V8 (~, not in Mesa — hedged bucket justification).",
+              "description": "Il V8 marino della casa, annotato con prudenza: giustifica lo scomparto in attesa di carte migliori."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
