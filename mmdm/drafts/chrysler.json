@@ -1,5 +1,5 @@
 {
-  "_dossier": "011 Chrysler. PRIMARY SOURCE: 1974 Chrysler Marine brochure (Howell's eBay find) — hp-named line: V8s 375/330/280/250/225/200, six 155, four 40 (sailboat auxiliary). Bucket 4 SAVED by the brochure (delete proposal withdrawn). Royal = straight-eight family per research. Block attributions for hp models are informed estimates (c.). dissolved 1988 (last marine engine).",
+  "_dossier": "011 Chrysler. PRIMARY SOURCE: 1974 Chrysler Marine brochure (Howell's eBay find) — hp-named line: V8s 375/330/280/250/225/200, six 155, four 40 (sailboat auxiliary). Bucket 4 SAVED by the brochure (delete proposal withdrawn). Royal = straight-eight family per research. Block attributions for hp models are informed estimates (c.). dissolved 1988 (last marine engine). Mesa retro-check: +M47-S (listed 'M4-7S').",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Chrysler",
@@ -64,6 +64,17 @@
                 "data": {
                   "key_notes": "THE Chrysler marine engine: 251-cid flathead six; West Coast fishing boats still run 60-year-old Crowns.",
                   "description": "La corona, letteralmente: il flathead da 251 pollici che per trent'anni fu sinonimo di motore marino Chrysler. Sulla costa del Pacifico ci sono ancora pescherecci che escono in mare con Crown di sessant'anni — lenti, sussurranti, eterni."
+                }
+              },
+              {
+                "id": "chrysler:m47-s",
+                "engine_model": "M47-S",
+                "year_introduced": 1946,
+                "year_discontinued": 1960,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Flathead six 'as common as the Crown' per period accounts; Mesa baseline lists it as M4-7S.",
+                  "description": "Il compagno dimenticato del Crown: le cronache d'epoca lo dicevano altrettanto diffuso, e il catalogo Mesa ne vendeva ancora i collettori. Riprende il suo posto accanto al fratello celebre."
                 }
               }
             ]

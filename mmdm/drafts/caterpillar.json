@@ -1,5 +1,5 @@
 {
-  "_dossier": "013 Caterpillar. Rulings: 5 Cummins stubs extradited (V504M/V555M/V903M/6C/6CT); misfiles fixed (C6.6→6, C32 dup out of 8, D379→8, D399→16); series families D/3200/3300/3400/3500/C; 3406+3508+3512+D11000 added; marine line born 1938. Post-merge fix: 3056 is a Perkins-based six — refiled 4→6, thinking-text purged from notes.",
+  "_dossier": "013 Caterpillar. Rulings: 5 Cummins stubs extradited (V504M/V555M/V903M/6C/6CT); misfiles fixed (C6.6→6, C32 dup out of 8, D379→8, D399→16); series families D/3200/3300/3400/3500/C; 3406+3508+3512+D11000 added; marine line born 1938. Post-merge fix: 3056 is a Perkins-based six — refiled 4→6, thinking-text purged from notes. Mesa cross-check round 2: +14 models on baseline authority (D-series depth, 3116/3126, 3304, 3408, 3160, C9.3, CG137s); unmapped Mesa entries '5202' and 'D1300' (if not D13000) join the next-week pile.",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Caterpillar",
@@ -38,6 +38,22 @@
                 }
               }
             ]
+          },
+          "3300": {
+            "sort_number": 9,
+            "models": [
+              {
+                "id": "cat:3304",
+                "engine_model": "3304",
+                "year_introduced": 1970,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "7L four of the 3300 line (Mesa baseline).",
+                  "description": "Il quattro della serie 3300: sette litri da lavoro, gemello minore del 3306 e come lui rigenerabile all'infinito."
+                }
+              }
+            ]
           }
         }
       },
@@ -68,6 +84,83 @@
                 "data": {
                   "key_notes": "Six-cylinder, 100 hp at 900 rpm; the 1938 marine debut's centerpiece.",
                   "description": "Il cuore del debutto 1938: cento cavalli a novecento giri, ghisa a vista e pazienza infinita. Con il D13000 la potenza da trattore imparò il sale."
+                }
+              },
+              {
+                "id": "cat:d333",
+                "engine_model": "D333",
+                "year_introduced": 1959,
+                "year_discontinued": 1975,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Classic D six (Mesa baseline).",
+                  "description": "Sei cilindri della vecchia serie D, diffusissimo su pescherecci e ausiliari."
+                }
+              },
+              {
+                "id": "cat:d334",
+                "engine_model": "D334",
+                "year_introduced": 1960,
+                "year_discontinued": 1975,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "D-line six (Mesa baseline; sparse record ~).",
+                  "description": "Variante della famiglia, annotata sull'autorità del catalogo Mesa più che degli archivi."
+                }
+              },
+              {
+                "id": "cat:d337",
+                "engine_model": "D337",
+                "year_introduced": 1955,
+                "year_discontinued": 1970,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "D-line six with turbo variants (Mesa baseline).",
+                  "description": "Il sei sovralimentato della prima generazione: la scoperta del turbo in casa Caterpillar."
+                }
+              },
+              {
+                "id": "cat:d342",
+                "engine_model": "D342",
+                "year_introduced": 1959,
+                "year_discontinued": 1979,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "Big D six (Mesa baseline); G342 was its gaseous twin.",
+                  "description": "Il grande sei della serie D, longevo e onnipresente nelle sale macchine da lavoro."
+                }
+              },
+              {
+                "id": "cat:d343",
+                "engine_model": "D343",
+                "year_introduced": 1966,
+                "year_discontinued": 1980,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "D-line six, marine workboat staple (Mesa baseline).",
+                  "description": "L'ultimo dei grandi sei D: coppia abbondante per rimorchiatori e pescherecci d'altura."
+                }
+              },
+              {
+                "id": "cat:d353",
+                "engine_model": "D353",
+                "year_introduced": 1961,
+                "year_discontinued": 1980,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "18L-class big six (Mesa baseline).",
+                  "description": "Il sei massimo della vecchia guardia: diciotto litri di ghisa paziente."
+                }
+              },
+              {
+                "id": "cat:g342",
+                "engine_model": "G342",
+                "year_introduced": 1962,
+                "year_discontinued": 1978,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "Gaseous-fuel six, D342 twin (Mesa baseline).",
+                  "description": "Il gemello a gas del D342 — testimone che anche il metano ebbe le sue sale macchine."
                 }
               }
             ]
@@ -194,6 +287,44 @@
                   "key_notes": "18.1L six; to ~1,150 hp marine (stub adopted).",
                   "description": "Il vertice dei sei cilindri: oltre mille cavalli per yacht veloci e mezzi militari leggeri."
                 }
+              },
+              {
+                "id": "cat:c9.3",
+                "engine_model": "C9.3",
+                "year_introduced": 2011,
+                "year_discontinued": null,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "ACERT successor to the C9 (Mesa baseline).",
+                  "description": "L'evoluzione del C9 nell'era delle emissioni: stessa taglia, elettronica più fine."
+                }
+              }
+            ]
+          },
+          "3100": {
+            "sort_number": 9,
+            "models": [
+              {
+                "id": "cat:3116",
+                "engine_model": "3116",
+                "year_introduced": 1988,
+                "year_discontinued": 1997,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "6.6L six (Mesa baseline).",
+                  "description": "Il piccolo sei elettromeccanico degli anni '90, popolare sul diporto medio americano."
+                }
+              },
+              {
+                "id": "cat:3126",
+                "engine_model": "3126",
+                "year_introduced": 1997,
+                "year_discontinued": 2003,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "7.2L six, 3116 successor (Mesa baseline).",
+                  "description": "L'erede HEUI del 3116: iniezione idraulico-elettronica e la strada aperta verso il C7."
+                }
               }
             ]
           }
@@ -226,6 +357,17 @@
                 "data": {
                   "key_notes": "V8 of the classic D-line — refiled from the 12-bucket.",
                   "description": "L'otto della serie D classica, restituito al suo scomparto: giaceva tra i dodici per svista d'archivio."
+                }
+              },
+              {
+                "id": "cat:d346",
+                "engine_model": "D346",
+                "year_introduced": 1967,
+                "year_discontinued": 1980,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "V8 of the classic D-line (Mesa baseline).",
+                  "description": "L'otto a V della serie D matura, ponte verso i 3408."
                 }
               }
             ]
@@ -272,6 +414,54 @@
                 }
               }
             ]
+          },
+          "3400": {
+            "sort_number": 9,
+            "models": [
+              {
+                "id": "cat:3408",
+                "engine_model": "3408",
+                "year_introduced": 1977,
+                "year_discontinued": 1999,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "18L V8 of the 3400 family — a gap Mesa exposed (Mesa baseline).",
+                  "description": "Il V8 della famiglia 3400, dimenticato nella prima stesura e restituito dal catalogo Mesa: diciotto litri per sportfisherman e mezzi da lavoro veloci."
+                }
+              }
+            ]
+          },
+          "3100": {
+            "sort_number": 10,
+            "models": [
+              {
+                "id": "cat:3160",
+                "engine_model": "3160",
+                "year_introduced": 1972,
+                "year_discontinued": 1980,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "V8 of the 3100/1100 family (Mesa baseline, ~).",
+                  "description": "L'otto compatto degli anni '70, oggi raro: annotato sull'autorità Mesa."
+                }
+              }
+            ]
+          },
+          "CG": {
+            "sort_number": 11,
+            "models": [
+              {
+                "id": "cat:cg137-8",
+                "engine_model": "CG137-8",
+                "year_introduced": 2015,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "13.7L gaseous V8 (Mesa baseline).",
+                  "description": "Il V8 a gas dell'era moderna: propulsione e generazione a metano, coi collettori Mesa a listino."
+                }
+              }
+            ]
           }
         }
       },
@@ -291,6 +481,28 @@
                 "data": {
                   "key_notes": "V12 of the classic D-line (stub adopted).",
                   "description": "Il dodici della vecchia guardia: prima dei 3500, era lui il grande Cat delle flotte."
+                }
+              },
+              {
+                "id": "cat:d348",
+                "engine_model": "D348",
+                "year_introduced": 1968,
+                "year_discontinued": 1982,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "V12 of the D-line (Mesa baseline).",
+                  "description": "Il dodici della vecchia serie: potenza da traghetto prima dell'era 3500."
+                }
+              },
+              {
+                "id": "cat:d397",
+                "engine_model": "D397",
+                "year_introduced": 1955,
+                "year_discontinued": 1970,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Early big V12 (Mesa baseline).",
+                  "description": "Il grande dodici delle origini: novecento giri di maestà d'anteguerra tecnologica."
                 }
               }
             ]
@@ -350,6 +562,22 @@
                 "data": {
                   "key_notes": "32L V12 to 1,900+ hp (duplicate 8-bucket stub removed).",
                   "description": "Il grande dodici moderno: fino a millenovecento cavalli. Il doppione che ne esisteva tra gli otto cilindri è stato soppresso — ne basta uno, ed è questo."
+                }
+              }
+            ]
+          },
+          "CG": {
+            "sort_number": 9,
+            "models": [
+              {
+                "id": "cat:cg137-12",
+                "engine_model": "CG137-12",
+                "year_introduced": 2016,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "20.5L gaseous V12 (Mesa baseline).",
+                  "description": "Il dodici a gas: la famiglia CG portata alla taglia maggiore."
                 }
               }
             ]

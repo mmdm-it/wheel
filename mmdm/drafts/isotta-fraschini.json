@@ -1,5 +1,5 @@
 {
-  "_dossier": "006 Isotta Fraschini. Rulings: 18-cyl bucket + ASM family IN; six existing stubs adopted into ID36/V170 families with hedged modern years; nothing further from Howell. ASM years staggered estimates (c.); Bari-era years hedged.",
+  "_dossier": "006 Isotta Fraschini. Rulings: 18-cyl bucket + ASM family IN; six existing stubs adopted into ID36/V170 families with hedged modern years; nothing further from Howell. ASM years staggered estimates (c.); Bari-era years hedged. Mesa retro-check: +1308 (hedged).",
   "market": "eurasia",
   "country": "Italia",
   "manufacturer": "Isotta Fraschini",
@@ -43,7 +43,19 @@
       },
       "8": {
         "sort_number": 2,
-        "models": [],
+        "models": [
+          {
+            "id": "isottafraschini:1308",
+            "engine_model": "1308",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Bari-era 8-cylinder per the Mesa baseline ('1308'); designation attribution uncertain (?) — likely the 1300-series V8.",
+              "description": "Un otto cilindri dell'era di Bari, testimoniato dal catalogo Mesa: la sigla esatta resta da chiarire, ma il collettore esisteva — dunque il motore pure. Annotato con riserva, in attesa d'archivio."
+            }
+          }
+        ],
         "families": {
           "ID36": {
             "sort_number": 1,
