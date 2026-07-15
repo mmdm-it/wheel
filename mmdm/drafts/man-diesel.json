@@ -1,0 +1,160 @@
+{
+  "_dossier": "024e MAN Diesel. Rulings: 4-bucket DELETED (no factory marine four); 10-bucket ADDED (D2840 V10 — baseline row #831); 16-bucket held by the 175D (MAN Energy Solutions sibling nameplate, noted honestly in prose). Families: D-series (truck-derived marinizations) per bucket; modern i6/V8/V12 yacht range flat (series in the names). Ship-scale two-stroke heritage (Rudolf Diesel 1893, U-boats) = prose only.",
+  "market": "eurasia",
+  "country": "Germania",
+  "manufacturer": "MAN Diesel",
+  "node": {
+    "year_founded": 1758,
+    "year_dissolved": null,
+    "sort_number": 59,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "man:i6-800",
+            "engine_model": "i6-800",
+            "year_introduced": 2015,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "12.4L common-rail inline six, 800 hp, 2,674 Nm @ 1,400-2,000 rpm; the modern yacht six (i6-730 below it, i6-850 above).",
+              "description": "Il sei in linea dell'era common-rail: dodici litri e quattro, ottocento cavalli, e una coppia da carro ferroviario disponibile quasi al minimo. La casa che costruì il primo diesel della storia mette oggi questo in sala macchine dei flybridge — la linea i6 corre da 730 a 850 cavalli, e questa è la sua voce di mezzo."
+            }
+          }
+        ],
+        "families": {
+          "Serie D": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "man:d0836",
+                "engine_model": "D0836",
+                "year_introduced": 2000,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "6.9L six, 320-500 hp marine; workboat staple — tugs, pilot boats, crew boats.",
+                  "description": "Il piccolo della serie D: sette litri scarsi da 320 a 500 cavalli, di casa su pilotine, rimorchiatori minori e mezzi da equipaggio. Il camion tedesco che ha imparato il mestiere del porto."
+                }
+              },
+              {
+                "id": "man:d2866",
+                "engine_model": "D2866",
+                "year_introduced": 1988,
+                "year_discontinued": 2005,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "11.97L six, ~280-400 hp marine trims; the D28 block that seeded the whole marine family.",
+                  "description": "Il capostipite marino della famiglia D28: dodici litri di sei cilindri da autocarro, marinizzati con la serietà di Norimberga. Da questo blocco — 128 per 142 di alesaggio e corsa — discende mezzo albero genealogico del diesel veloce tedesco."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "8": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "man:v8-1300",
+            "engine_model": "V8-1300",
+            "year_introduced": 2016,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "16.2L V8, 1,300 hp, 1,880 kg dry (1.96 kg/kW); flagship V8 of the yacht range.",
+              "description": "L'otto di punta: sedici litri, milletrecento cavalli, meno di due chili per chilowatt. Nato per gli sportfisherman che considerano l'orizzonte un appuntamento e il ritardo una scortesia."
+            }
+          },
+          {
+            "id": "man:d2848",
+            "engine_model": "D2848",
+            "year_introduced": 1992,
+            "year_discontinued": 2005,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "14.6L V8 of the D28 marine family, ~500-680 hp (~).",
+              "description": "Il V8 della vecchia guardia D28: quattordici litri e mezzo per motoryacht e mezzi da lavoro degli anni Novanta. Meno documentato dei fratelli, annotato con la riserva d'uso."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "10": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "man:d2840",
+            "engine_model": "D2840",
+            "year_introduced": 1990,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "18.27L V10, 809-820 hp (LE401) to 1,035-1,050 hp (LE403, electronic, 1998 — the '100 hp per cylinder' milestone); very common in 1990s Hatteras and Viking sportfish.",
+              "description": "Il dieci cilindri: diciotto litri a V larga, ottocento cavalli in prima versione e mille tondi nell'ultima — cento per cilindro, il traguardo dichiarato della casa. Gli sportfisherman americani degli anni Novanta lo montarono in coppia a migliaia: un tedesco trapiantato in Florida, perfettamente ambientato."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "man:d2842",
+            "engine_model": "D2842",
+            "year_introduced": 1988,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "21.93L V12 of the D28 family, 600 to ~1,500 hp across three decades of trims; 50,000-hour design-life claim.",
+              "description": "Il dodici di lungo corso: ventidue litri che hanno attraversato trent'anni di listini, dai seicento cavalli dei traghetti ai millecinquecento delle ultime tarature. La casa gli attribuiva cinquantamila ore di vita di progetto — una carriera da transatlantico in corpo da yacht."
+            }
+          },
+          {
+            "id": "man:v12-2000",
+            "engine_model": "V12-2000",
+            "year_introduced": 2016,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "24.2L V12, 2,000 hp, 2,380 kg (1.62 kg/kW); the only 2,000-hp twelve in its class at launch.",
+              "description": "Il dodici da duemila: ventiquattro litri e una densità di potenza da primato — un chilo e sei per chilowatt. Quando uscì non aveva rivali di pari cilindrata: il V12 veloce tedesco nella sua forma più concentrata."
+            }
+          },
+          {
+            "id": "man:v12x-2200",
+            "engine_model": "V12X-2200",
+            "year_introduced": 2024,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "New ~30L V12X flagship block, 2,200 hp; announced 2023, shipping from ~2024.",
+              "description": "Il nuovo vertice: blocco inedito da trenta litri, duemiladuecento cavalli, presentato nel 2023 come la nuova ammiraglia della gamma. Il capitolo che si sta ancora scrivendo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "16": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "man:175d-16v",
+            "engine_model": "175D 16V",
+            "year_introduced": 2016,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "175mm-bore high-speed V16 (12V/16V/20V family), to ~2,960 kW in 16V; workboats, ferries, superyachts. Built by the Augsburg ship-engine sibling of the house — same name, different works.",
+              "description": "Il sedici cilindri della famiglia 175D: alta velocità, vocazione da traghetto veloce e superyacht. Lo costruisce il ramo navale di Augusta — stessa insegna, officina diversa — ed è il ponte tra il mondo degli yacht e quello delle navi, percorso nei due sensi."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

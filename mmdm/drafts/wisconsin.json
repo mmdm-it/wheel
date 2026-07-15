@@ -1,0 +1,69 @@
+{
+  "_dossier": "025g Wisconsin. Rulings: RESTRUCTURED to water-cooled era only — buckets [1,2,4] → [4,6]; air-cooled era (1929+, incl. air-cooled marine Muskie AAM) EXCLUDED per doctrine, prose-only. Founded 1909 (correcting 1910); dissolved → null (brand extant as Wisconsin Motors LLC; water-cooled line ended 1939). White Cap = USCG Prohibition patrol boats (the counterpart to Liberty's rum-runners!). Baseline '25' row → mystery pile. Howell note: Wisconsin was the FIRST iteration of the ancestral catalog.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Wisconsin",
+  "node": {
+    "year_founded": 1909,
+    "year_dissolved": null,
+    "sort_number": 102,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "wisconsin:type-a",
+            "engine_model": "Type A",
+            "year_introduced": 1909,
+            "year_discontinued": 1920,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~390 cid water-cooled four (4.75\" x 5.5\"), 60 hp; the first Wisconsin — it powered the Stutz Bearcat, FWD trucks, and marine installations alike.",
+              "description": "Il primo Wisconsin: sessanta cavalli d'acqua e ghisa che spinsero la Stutz Bearcat sui circuiti, i camion FWD nel fango e più d'uno scafo fuori dal porto. Un motore da pionieri, quando la stessa fusione serviva la strada, la pista e il mare senza cambiare vestito."
+            }
+          },
+          {
+            "id": "wisconsin:white-cap-four",
+            "engine_model": "White Cap Four",
+            "year_introduced": 1922,
+            "year_discontinued": 1935,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Purpose-marine four of the White Cap line, corrosion-resistant marine fittings; powered US Coast Guard Prohibition-era patrol boats (~).",
+              "description": "Il White Cap: la linea marina di Milwaukee, con accessori anticorrosione e una clientela di riguardo — le motovedette della Guardia Costiera del proibizionismo. Dall'altra parte di quell'inseguimento correvano i Liberty dei contrabbandieri (vedi Liberty): questo catalogo, imparziale, onora entrambi gli equipaggi."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "wisconsin:model-pt",
+            "engine_model": "Model PT",
+            "year_introduced": 1925,
+            "year_discontinued": 1939,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~1,090 cid T-head six (5.75\" x 7\"); the heavy end of the water-cooled line, which ran to 200 hp before the 1939 sunset.",
+              "description": "Il sei a testa T: quasi millecento pollici cubi del ramo pesante — motori marini, ferroviari e industriali fino a duecento cavalli. Nel 1939 la casa completò la conversione all'aria e questa stirpe d'acqua si spense; gli esemplari superstiti vivono oggi nelle collezioni, lucidati come argenteria."
+            }
+          },
+          {
+            "id": "wisconsin:white-cap-six",
+            "engine_model": "White Cap Six",
+            "year_introduced": 1922,
+            "year_discontinued": 1935,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Six-cylinder of the marine White Cap line (~).",
+              "description": "Il maggiore dei White Cap: sei cilindri per le lance più rapide e gli scafi da servizio. Della linea marina di Milwaukee resta più leggenda che carta — annotato con riserva, e con simpatia per chi inseguiva."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

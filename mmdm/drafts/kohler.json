@@ -1,0 +1,92 @@
+{
+  "_dossier": "023a Kohler. Baseline ghost section. Rulings: hedged genset cylinder placements SHIPPED by Howell ruling (Kohler documents kilowatts, not cylinders); buckets [1,2,3,4] all kept. Marine Electric Plant = historic anchor.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Kohler",
+  "node": {
+    "year_founded": 1873,
+    "year_dissolved": null,
+    "sort_number": 46,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "kohler:marine-electric-plant",
+            "engine_model": "Marine Electric Plant",
+            "year_introduced": 1935,
+            "year_discontinued": 1965,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The historic 'Kohler of Kohler' marine light plants (?): single-cylinder gasoline gensets from the era when onboard electricity was a luxury. Designation generic per era practice.",
+              "description": "Il gruppo elettrogeno delle origini: negli anni in cui la luce elettrica a bordo era un lusso da panfilo, i 'light plants' di Kohler, Wisconsin portarono la corrente sotto coperta. Monocilindrici a benzina, instancabili, ronzavano nelle sentine mentre sopra si cenava. Voce annotata con riserva: di quest'epoca sopravvivono più aneddoti che targhette."
+            }
+          },
+          {
+            "id": "kohler:5e",
+            "engine_model": "5E",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "THE small gasoline marine genset, 5 kW / 60 Hz; the 4EF is its 50 Hz sibling. Cylinder placement hedged (~) — the house documents kilowatts, not cylinders.",
+              "description": "Il piccolo generatore a benzina che vive nella sentina di mezza flotta da diporto americana: cinque chilowatt a 60 hertz, col gemello 4EF per i mercati a 50. Non spinge la barca di un metro, ma tiene accesi frigorifero, radio e aria condizionata — e per questo lo si perdona sempre. Collocazione tra i monocilindrici annotata con riserva."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "kohler:7.3e",
+            "engine_model": "7.3E",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "7.3 kW / 60 Hz gasoline marine genset; 50 Hz sibling 6EF. Cylinder placement hedged (~).",
+              "description": "Il fratello maggiore del 5E: 7,3 chilowatt per barche con più appetito elettrico, gemello 6EF per l'export. La stessa filosofia della casa del Wisconsin — silenzioso, marinizzato di fabbrica, dimenticabile finché funziona, cioè quasi sempre. Collocazione tra i bicilindrici annotata con riserva."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "kohler:6ekod",
+            "engine_model": "6EKOD",
+            "year_introduced": 2000,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Diesel marine genset of the modern KOD line, ~6 kW; three-cylinder placement hedged (~).",
+              "description": "L'era del diesel: sei chilowatt di generazione a gasolio per barche che il carburante a benzina in sentina non lo vogliono più. Tre cilindri piccoli e metodici, annotati con riserva — la casa dichiara i chilowatt e tace i cilindri, e questa enciclopedia lo dice apertamente."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "kohler:9eozd",
+            "engine_model": "9EOZD",
+            "year_introduced": 2000,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Larger diesel marine genset, ~9 kW, low-CO EOZD line; four-cylinder placement hedged (~).",
+              "description": "Il quattro cilindri della gamma: nove chilowatt di gasolio per motoryacht e pescherecci minori, nella serie a basse emissioni. Dove il 5E accende il frigorifero, il 9EOZD tiene in vita un'intera cambusa. Collocazione annotata con riserva, per la solita ragione: i chilowatt sono certi, i cilindri dedotti."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

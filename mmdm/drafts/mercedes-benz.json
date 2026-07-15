@@ -1,0 +1,159 @@
+{
+  "_dossier": "024f Mercedes-Benz. Rulings: 10-bucket ADDED (OM403); 20-bucket ADDED — S-boat family IN ('MB' designations = Mercedes-Benz by nameplate). OM617 five = prose-note only (aftermarket). OM346 hedged in per baseline row #5009. Genealogy bridge: OM444LA-era V-engines became MTU Series 183 (cross-ref both ways). Baseline: OM346.",
+  "market": "eurasia",
+  "country": "Germania",
+  "manufacturer": "Mercedes-Benz",
+  "node": {
+    "year_founded": 1926,
+    "year_dissolved": null,
+    "sort_number": 62,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "mercedes:om636",
+            "engine_model": "OM636",
+            "year_introduced": 1949,
+            "year_discontinued": 1990,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.7L prechamber four, ~42 hp @ 3,300 — THE classic European sailboat auxiliary, factory-marinized and license-marinized for four decades; million-kilometer durability lore from its 170D/Unimog roots; parts still stocked by the Dutch specialists.",
+              "description": "L'ausiliario classico d'Europa: il quattro cilindri a precamera della 170D e dell'Unimog, marinizzato per quarant'anni da fabbrica e licenziatari. Quarantadue cavalli di pazienza prussiana, una fama di indistruttibilità da milione di chilometri, e ricambi ancora oggi a scaffale in Olanda. Nelle sentine delle barche a vela del dopoguerra, la stella a tre punte brillava a luce fissa."
+            }
+          },
+          {
+            "id": "mercedes:om314",
+            "engine_model": "OM314",
+            "year_introduced": 1964,
+            "year_discontinued": 1984,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "3.78L light-truck four, ~80 hp @ 2,800, factory-marinized in modest numbers (~); owner lore of 26 years without a failed start.",
+              "description": "Il quattro da autocarro leggero prestato al mare: ottanta cavalli senza pretese, marinizzato in numeri discreti. La sua leggenda è domestica — armatori che in un quarto di secolo non ricordano una mattina in cui non sia partito. Annotato con riserva, ammirato senza."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "mercedes:om346",
+            "engine_model": "OM346",
+            "year_introduced": 1963,
+            "year_discontinued": 1972,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "10.8L heavy-truck six of the 1960s; marine conversions documented thinly (~) — the manifold hardware survives.",
+              "description": "Il grande sei da autocarro dei primi anni Sessanta, quasi undici litri: la sua carriera marina è scritta più nella ferramenta superstite che negli archivi. Annotato con riserva — ma i collettori non si fabbricano per motori immaginari."
+            }
+          },
+          {
+            "id": "mercedes:om352",
+            "engine_model": "OM352",
+            "year_introduced": 1964,
+            "year_discontinued": 1995,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "5.7L six, ~100-168 hp (OM352A turbo), factory-level marinization; the classic MB workboat six, worldwide — Brazilian-built units included.",
+              "description": "Il sei da lavoro della stella: cinque litri e sette, marinizzato a livello di fabbrica e sparso per il mondo — lance, trawler, pescherecci, con interi lotti costruiti in Brasile. Se l'OM636 è il gentiluomo delle barche a vela, questo è il cugino con le mani callose."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "mercedes:om402",
+            "engine_model": "OM402",
+            "year_introduced": 1975,
+            "year_discontinued": 1988,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "12.8L V8 of the OM400 series (co-developed with MAN, mid-1970s), ~250-320 hp marine (~).",
+              "description": "Il V8 della serie 400, figlia di un patto tra giganti — Daimler-Benz e MAN la svilupparono insieme a metà anni Settanta. In acqua arrivò con manuali propri e numeri discreti: dodici litri e otto di diplomazia industriale tedesca."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "10": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "mercedes:om403",
+            "engine_model": "OM403",
+            "year_introduced": 1975,
+            "year_discontinued": 1988,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "16L V10 of the OM400 series, ~320-420 hp; marine use documented but scarce (~).",
+              "description": "Il dieci cilindri della serie: sedici litri a V, oltre quattrocento cavalli nelle tarature più generose. Raro in mare e per questo ricordato — chi ne ha incrociato uno in sala macchine non l'ha dimenticato. Annotato con riserva."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "mercedes:om404",
+            "engine_model": "OM404",
+            "year_introduced": 1976,
+            "year_discontinued": 1988,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "20.9L V12 of the OM400 series, ~400-500 hp marine (~); its OM444LA descendant was rebadged as the MTU 12V 183 (see MTU).",
+              "description": "Il dodici della serie 400: ventun litri di V12 stradale vestito da mare. La sua discendenza è la parte migliore della storia — l'evoluzione OM444LA passò sotto le insegne MTU come Serie 183, e continuò a navigare con un altro nome (vedi MTU). I motori, come i fiumi, cambiano nome attraversando i confini."
+            }
+          },
+          {
+            "id": "mercedes:mb507",
+            "engine_model": "MB 507",
+            "year_introduced": 1940,
+            "year_discontinued": 1945,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "42.4L diesel V12, ~700-850 hp; S-boat and special-craft use in WWII.",
+              "description": "Il dodici da guerra: quarantadue litri di diesel veloce per le unità costiere del conflitto. Della dinastia bellica è il fratello misurato — se tale può dirsi un V12 da ottocento cavalli. Il resto della famiglia gioca in un'altra categoria ancora (vedi lo scomparto a venti)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "20": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "mercedes:mb501",
+            "engine_model": "MB 501",
+            "year_introduced": 1937,
+            "year_discontinued": 1945,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "134L V20 diesel, 1,500-2,000 hp @ ~1,500 rpm, 185x250mm; three per Schnellboot — 43 knots. The supercharged MB 511 followed at 2,500 hp.",
+              "description": "Il venti cilindri: centotrentaquattro litri, duemila cavalli, e tre esemplari per ogni Schnellboot — quarantatré nodi di diesel puro quando altrove i motori veloci bevevano benzina. È il numero più alto di questo intero catalogo per una ragione: qualcuno, a Stoccarda, decise che venti cilindri erano una risposta ragionevole. Voce ammessa per dottrina del meraviglioso, a pieno titolo."
+            }
+          },
+          {
+            "id": "mercedes:mb518",
+            "engine_model": "MB 518",
+            "year_introduced": 1955,
+            "year_discontinued": 1968,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Post-war evolution of the V20, ~3,000 hp; powered the Bundesmarine's Jaguar-class fast attack boats. This lineage flowed into the 1960 Daimler-Maybach merger that became MTU (~).",
+              "description": "Il dopoguerra del gigante: tremila cavalli per le motosiluranti classe Jaguar della nuova marina federale. Fu tra gli ultimi a portare la sigla MB in mare — di lì a poco, la confluenza con Maybach avrebbe fondato MTU, e la dinastia avrebbe proseguito sotto altre insegne (vedi MTU)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "_dossier": "023b Komatsu. NOT a ghost — raw-HTML baseline fetch (2026-07-15) found SA6170 manifold #566 (Cenac Towing propriety) → 6D170 added. Also certified by Howell's machinist testimony (NOT cited in prose per sui generis). Rulings: 8-bucket KEPT with the SA8V170 tug V8.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Komatsu",
+  "node": {
+    "year_founded": 1921,
+    "year_dissolved": null,
+    "sort_number": 47,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "komatsu:4d95",
+            "engine_model": "4D95",
+            "year_introduced": 1975,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "3.3L four; the small workhorse of the lineup — auxiliaries, gensets, small workboats (~ marine years).",
+              "description": "Il piccolo della casa: 3,3 litri di quattro cilindri nati per gli escavatori e finiti, come spesso accade ai giapponesi robusti, anche in mare — ausiliari, generatori di bordo, lance da lavoro. Non ha mai preteso gloria: solo di avviarsi ogni mattina, cosa che fa da mezzo secolo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "komatsu:6d125",
+            "engine_model": "6D125",
+            "year_introduced": 1982,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "11L six; marine designation 6M125A (550 hp in A-2 trim) — the documented heart of Komatsu's marine line.",
+              "description": "L'undici litri: il sei cilindri che regge mezza gamma terrestre della casa e che in versione marina, siglato 6M125A, arriva a 550 cavalli. Pescherecci e rimorchiatori giapponesi lo conoscono bene — è il Komatsu che ha davvero preso il mare, non per conversione di fortuna ma con designazione propria."
+            }
+          },
+          {
+            "id": "komatsu:6d140",
+            "engine_model": "6D140",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "15.2L six, the big brother — dozers and haul trucks ashore, workboats afloat (~ marine years).",
+              "description": "Il fratello maggiore: 15,2 litri per i dozer e i dumper da miniera, e per le imbarcazioni da lavoro che di quella stessa pazienza hanno bisogno. Dove il 6D125 finisce, il 6D140 comincia — la scala Komatsu è fatta così, un gradino d'acciaio alla volta."
+            }
+          },
+          {
+            "id": "komatsu:6d170",
+            "engine_model": "6D170",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "23.15L six, top of the inline ladder; SA6D170 turbo-aftercooled trim in towboat service — Gulf-coast tug fleets ran it (~ years).",
+              "description": "Il vertice della scala: ventitré litri di sei cilindri, nato per i dumper giganti e adottato dai rimorchiatori del Golfo del Messico nella taratura sovralimentata SA6D170. Un motore che non conosce fretta e non conosce riposo — le flotte di spinta della Louisiana gli hanno affidato chiatte per decenni."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "komatsu:sa8v170",
+            "engine_model": "SA8V170",
+            "year_introduced": 1985,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V8 of the 170-series, turbo-aftercooled; Japanese harbor-tug service (~) — holds the 8-bucket.",
+              "description": "Il V8 della serie 170: sovralimentato, interrefrigerato, e di casa nei rimorchiatori portuali giapponesi, dove la coppia conta più della velocità e il motore lavora una vita intera a pochi metri dalla banchina. Voce annotata con riserva nelle date, non nella sostanza: i porti di Osaka se lo ricordano."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

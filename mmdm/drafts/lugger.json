@@ -1,0 +1,159 @@
+{
+  "_dossier": "024c Lugger. Rulings: founding corrected 1987→1958 (Anchorage 1958 → Alaska Diesel Electric Seattle 1970 → Northern Lights 2003); L6170A added per baseline row #5008 (Komatsu 6162-* part numbers → S6D170 donor). Families by donor block: John Deere / Komatsu. Buckets [4,6] stand. Name honors the old 'Lugger Four-162' of Aleutian salmon boats.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Lugger",
+  "node": {
+    "year_founded": 1958,
+    "year_dissolved": null,
+    "sort_number": 57,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "lugger:l1064",
+            "engine_model": "L1064",
+            "year_introduced": 2000,
+            "year_discontinued": 2008,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4.5L four on the John Deere PowerTech 4045 block, 67-140 hp; continuous-duty ratings, trawler auxiliary and small-propulsion duty.",
+              "description": "Il quattro della casa di Seattle: blocco John Deere PowerTech vestito da marinaio serio — raffreddamento ridisegnato, tarature da servizio continuo, niente cavalli di carta. Per i trawler che misurano i motori in decine di migliaia di ore, non in nodi (vedi John Deere)."
+            }
+          },
+          {
+            "id": "lugger:l4105",
+            "engine_model": "L4105",
+            "year_introduced": 2024,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The relaunch four: 174-300 hp, Tier 3 electronic, individual heads, wet liners, forged crank (~ base block undisclosed).",
+              "description": "Il ritorno: dopo quasi vent'anni di silenzio, il marchio è rinato nel 2024 con un quattro cilindri elettronico da 174 a 300 cavalli — teste singole, canne umide, albero forgiato. La leggenda dei trawler prova a scrivere un secondo capitolo, per ora solo oltremare."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "lugger:l6105",
+            "engine_model": "L6105",
+            "year_introduced": 2024,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Relaunch six, 255-425 hp, Tier 3; same architecture as the L4105.",
+              "description": "Il sei della rinascita: da 255 a 425 cavalli con la stessa architettura del fratello minore. Porta un nome che nei porti del Pacifico apre ancora le conversazioni."
+            }
+          }
+        ],
+        "families": {
+          "John Deere": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lugger:l6414",
+                "engine_model": "L6414",
+                "year_introduced": 1985,
+                "year_discontinued": 2005,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "6.8L / 414 cid on the John Deere 6414 block, 105-175 hp — THE Nordhavn 46 engine; circumnavigation-proven.",
+                  "description": "Il motore che ha fatto il giro del mondo più di ogni altro della sua classe: blocco John Deere 6414, tarature da passaggio oceanico, e la cabina di un Nordhavn 46 come indirizzo di casa. Tra i circumnavigatori il suo nome si pronuncia senza aggettivi: bastano le ore (vedi John Deere)."
+                }
+              },
+              {
+                "id": "lugger:l668d",
+                "engine_model": "L668D",
+                "year_introduced": 1992,
+                "year_discontinued": 2006,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "6.8L John Deere 6068 base, natural aspiration, 105-130 hp continuous; the Nordhavn 40 engine; retired by Tier II.",
+                  "description": "L'aspirato: sei cilindri John Deere senza turbo né fretta, 105 cavalli continui che non conoscono il concetto di sforzo. Fu il cuore del Nordhavn 40, finché le norme sulle emissioni non mandarono in pensione la sua semplicità — non la sua reputazione."
+                }
+              },
+              {
+                "id": "lugger:l1066",
+                "engine_model": "L1066",
+                "year_introduced": 2002,
+                "year_discontinued": 2008,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "John Deere PowerTech 6068 Tier II electronic base, 165-250 hp; the L668D's successor in the trawler fleets.",
+                  "description": "L'erede elettronico: PowerTech a controllo elettronico, da 165 a 250 cavalli, chiamato a sostituire l'aspirato nei trawler oceanici. Ci riuscì con discrezione, che nel mondo delle traversate lunghe è il massimo complimento."
+                }
+              },
+              {
+                "id": "lugger:l1276a",
+                "engine_model": "L1276A",
+                "year_introduced": 1998,
+                "year_discontinued": 2008,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "12.5L John Deere 6125 base, 340-500 hp; every unit test-run two hours before shipping.",
+                  "description": "Il maggiore della stirpe Deere: dodici litri e mezzo, fino a cinquecento cavalli, e un rito di casa — ogni esemplare girava due ore al banco prima di vedere una sala macchine. La fiducia, a Seattle, si guadagnava a motore acceso."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "Komatsu": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "lugger:l6108",
+                "engine_model": "L6108",
+                "year_introduced": 1992,
+                "year_discontinued": 2005,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "7.15L Komatsu S6D108 base, turbo-aftercooled, 330-407 hp.",
+                  "description": "Il primo gradino della scala giapponese: blocco Komatsu sovralimentato e interrefrigerato, oltre trecento cavalli di servizio continuo per scafi da lavoro che non guardano l'orologio (vedi Komatsu)."
+                }
+              },
+              {
+                "id": "lugger:l6125",
+                "engine_model": "L6125",
+                "year_introduced": 1993,
+                "year_discontinued": 2006,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Komatsu S6D125 base (~11L), 325-500 hp; individual heads, wet liners; Downeast lobster-boat favorite.",
+                  "description": "Il preferito dei pescatori di aragoste del Maine: undici litri Komatsu con teste singole e canne umide, da 325 a 500 cavalli. Dove le stagioni si misurano in trappole calate, il suo blocco è considerato moneta buona (vedi Komatsu → 6D125)."
+                }
+              },
+              {
+                "id": "lugger:l6140",
+                "engine_model": "L6140",
+                "year_introduced": 1995,
+                "year_discontinued": 2008,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Komatsu S6D140 base (~15L), 600-700 hp; folklore credits 20,000+ hours without pulling a head. The last propulsion Lugger of the first era (~2007-08).",
+                  "description": "Il gigante fumoso e leggendario: quindici litri Komatsu, seicento cavalli, e una fama da ventimila ore senza mai togliere una testa. Fu l'ultimo Lugger di propulsione della prima era — quando uscì di listino, i forum dei trawleristi lo piansero come si piange un capitano (vedi Komatsu → 6D140)."
+                }
+              },
+              {
+                "id": "lugger:l6170a",
+                "engine_model": "L6170A",
+                "year_introduced": 1995,
+                "year_discontinued": 2005,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Komatsu S6D170 base (23L), workboat/tug duty (~ years; thin record — the manifold hardware survives to prove it).",
+                  "description": "Il vertice assoluto: ventitré litri di blocco Komatsu 6D170 per rimorchiatori e scafi da spinta. Gli archivi ne parlano poco; la ferramenta marina che gli sopravvive parla per loro (vedi Komatsu → 6D170)."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      }
+    }
+  }
+}

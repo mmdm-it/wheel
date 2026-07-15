@@ -1,0 +1,164 @@
+{
+  "_dossier": "025b Onan. Rulings: 3-bucket ADDED (MDL3, Kubota MDKD era); hedged 6-bucket ADDED (MDL6 ~). Baseline '7.5' = 7.5 MDJE (period kW-naming); '366' UNRESOLVED → mystery pile. Genset house: J-series own blocks, L-series own, then Kubota MDK era (donor cross-link).",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Onan",
+  "node": {
+    "year_founded": 1920,
+    "year_dissolved": null,
+    "sort_number": 73,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "onan:mdja",
+            "engine_model": "MDJA",
+            "year_introduced": 1962,
+            "year_discontinued": 1982,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "30 cid single-cylinder marine diesel genset, 3.0 kW @ 1,800; 19:1 compression; heat-exchanger or raw-water cooled.",
+              "description": "Il monocilindrico dei tre chilowatt: mezzo litro di diesel a milleottocento giri, che è il battito cardiaco dei generatori marini. Nelle barche a vela d'altura degli anni Settanta era la differenza tra una cambusa e una ghiacciaia."
+            }
+          },
+          {
+            "id": "onan:majb",
+            "engine_model": "MAJB",
+            "year_introduced": 1991,
+            "year_discontinued": 1996,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "14.9 cid gasoline single, 3.0 kW @ 3,600, water-cooled; the little late-era gas plant.",
+              "description": "L'ultimo dei piccoli a benzina: un quarto di litro raffreddato ad acqua per tre chilowatt di servizio. La casa di Minneapolis non ha mai smesso di credere che anche un motore da tasca meriti un collettore fatto bene."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "onan:mcck",
+            "engine_model": "MCCK",
+            "year_introduced": 1967,
+            "year_discontinued": 1985,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "49.8 cid opposed gasoline twin, 4.0-6.5 kW @ 1,800, water-cooled with heat-exchanger option; the classic gasoline marine plant.",
+              "description": "Il boxer di bordo: due cilindri contrapposti a benzina, sei chilowatt e mezzo di elettricità silenziosa. Per vent'anni fu il generatore dei cruiser americani — il ronzio piatto sotto il pagliolo che significava aria condizionata e cubetti di ghiaccio."
+            }
+          },
+          {
+            "id": "onan:mdje",
+            "engine_model": "MDJE",
+            "year_introduced": 1971,
+            "year_discontinued": 1986,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "70 cid diesel twin, 6.0 and 7.5 kW @ 1,800 — the highest-volume marine Onan of the classic era; the '7.5' of a thousand trawler engine rooms.",
+              "description": "Il 7.5: il bicilindrico diesel che ha popolato più sale macchine di qualunque altro generatore della sua epoca. Nei trawler e negli sportfisherman degli anni Settanta e Ottanta era semplicemente 'l'Onan', articolo determinativo — la macchina che si dava per scontata finché non mancava."
+            }
+          },
+          {
+            "id": "onan:mdkbh",
+            "engine_model": "MDKBH",
+            "year_introduced": 2002,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Quiet Diesel twin on a Kubota block, ~5 kW; the modern donor era.",
+              "description": "L'era silenziosa: blocco Kubota, insonorizzazione da salotto, cinque chilowatt che non si sentono. Il generatore moderno ha rinunciato al carisma in cambio del silenzio — scambio che a bordo, di notte, nessuno rimpiange (vedi Kubota)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "onan:mdl3",
+            "engine_model": "MDL3",
+            "year_introduced": 1986,
+            "year_discontinued": 1992,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Onan's own L317D 1.7L triple, 12.5 kW marine; the short-lived house-block era.",
+              "description": "Il tre cilindri di casa propria: per una breve stagione, prima dell'era dei blocchi giapponesi, Minneapolis costruì anche il motore oltre al generatore. Dodici chilowatt e mezzo di orgoglio proprietario, durato sei anni di listino."
+            }
+          },
+          {
+            "id": "onan:mdkd",
+            "engine_model": "MDKD",
+            "year_introduced": 1988,
+            "year_discontinued": 1998,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Kubota-block triple, ~12.5 kW @ 1,800; the 1990s trawler/sportfish standard (~).",
+              "description": "Il classico degli anni Novanta: triplo su blocco Kubota, dodici chilowatt e mezzo, installato a migliaia. Il passaggio di consegne tra i blocchi di casa e i donatori di Osaka, raccontato da un solo modello (vedi Kubota)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "onan:mdjc",
+            "engine_model": "MDJC",
+            "year_introduced": 1965,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "120 cid J-series diesel four, 12.0 kW @ 1,800.",
+              "description": "Il quattro della serie J: due litri di diesel proprietario per dodici chilowatt di bordo. La taglia da motoryacht serio, quando il carico elettrico cominciava a somigliare a quello di una casa."
+            }
+          },
+          {
+            "id": "onan:mdjf",
+            "engine_model": "MDJF",
+            "year_introduced": 1972,
+            "year_discontinued": 1986,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "140 cid J-series four, 12.5-15.0 kW @ 1,800; top of the classic marine line.",
+              "description": "Il vertice della serie J: quindici chilowatt per gli scafi che navigavano con il congelatore pieno e l'aria condizionata accesa in rada. L'ultima parola della generazione a blocchi propri."
+            }
+          },
+          {
+            "id": "onan:mdkdr",
+            "engine_model": "MDKDR",
+            "year_introduced": 2005,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Quiet Diesel four on a Kubota 1.5L block, 21.5 kW; the modern range's middle class.",
+              "description": "Il quattro dell'era Quiet Diesel: blocco Kubota da un litro e mezzo, ventun chilowatt, e una capsula fonoassorbente che ha ridotto il mestiere del generatore a un sussurro. La discendenza continua (vedi Kubota)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "onan:mdl6",
+            "engine_model": "MDL6",
+            "year_introduced": 1986,
+            "year_discontinued": 1992,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "House L634 3.4L six, ~25-30 kW marine (~) — the thin top of the house-block era; holds the bucket hedged.",
+              "description": "Il sei di casa: tre litri e quattro del breve esperimento proprietario, per i carichi più esigenti. Documentato meno dei fratelli — presidia lo scomparto con annotazione di riserva, come si conviene ai testimoni rari."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

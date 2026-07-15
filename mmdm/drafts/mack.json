@@ -1,0 +1,87 @@
+{
+  "_dossier": "024d Mack. Rulings: 8-bucket ADDED for the E9 (baseline DME9-5 LH/RH manifolds #531/532, Fairfield Industries propriety; E7 #536 American Marine). Story: conversions only (Merlin/Daytona Marine, FL) until MackPower factory program ~2000 (E7M/MP ME7 350-650 hp), killed by Volvo acquisition 2001. Thermodyne family.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Mack",
+  "node": {
+    "year_founded": 1900,
+    "year_dissolved": null,
+    "sort_number": 57.5,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "mack:e6",
+            "engine_model": "E6",
+            "year_introduced": 1982,
+            "year_discontinued": 1998,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "672 cid six; Florida marinizers converted it for sportfish and trawlers through the 1980s-90s (~).",
+              "description": "Il sei degli anni Ottanta, marinizzato in Florida per sportfisherman e trawler: blocco indistruttibile, corredo marino artigianale. Quando i marinizzatori chiusero, i blocchi continuarono a girare — i pezzi del corredo, no. È il paradosso Mack: il ferro eterno, il contorno orfano."
+            }
+          },
+          {
+            "id": "mack:e7m",
+            "engine_model": "E7M",
+            "year_introduced": 1998,
+            "year_discontinued": 2003,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "12L six, 350-650 hp; the ONLY factory Mack marine program (raw-water and keel-cooled variants). Died quietly after the 2001 Volvo acquisition.",
+              "description": "L'unica volta che la fabbrica scese in acqua di persona: dodici litri da 350 a 650 cavalli, raffreddamento a chiglia o a scambiatore, ambizioni serie. Poi il marchio cambiò padrone, e il programma marino si spense senza comunicato — come si spengono le cose vere. I 'Mack 650' superstiti si difendono ancora nei porti del New England."
+            }
+          }
+        ],
+        "families": {
+          "Thermodyne": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "mack:end673",
+                "engine_model": "END 673",
+                "year_introduced": 1953,
+                "year_discontinued": 1966,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "673 cid / 11L direct-injection six, ~170-237 hp; ~80% of Mack trucks 1953-66 carried it; surplus units marinized into Downeast lobster boats (~ marine).",
+                  "description": "Il cuore di quattro camion Mack su cinque degli anni Cinquanta, finito in mare per la via più onesta: il surplus. Nei pescherecci del Maine ci arrivò senza kit di fabbrica — raffreddamento arrangiato in officina, ore infinite, fumo in proporzione. Il camionista dei mari."
+                }
+              },
+              {
+                "id": "mack:endt673",
+                "engine_model": "ENDT 673",
+                "year_introduced": 1959,
+                "year_discontinued": 1980,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Turbocharged Thermodyne, ~250-285 hp; same conversion-only marine story, workboat folklore of endless reliable hours (~).",
+                  "description": "Il Thermodyne col turbo: gli stessi undici litri con il fiato lungo. Nelle barche da lavoro che lo adottarono divenne materia di racconti da banchina — migliaia di ore senza un lamento, purché qualcuno gli avesse costruito un impianto marino degno del blocco."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "8": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "mack:e9",
+            "engine_model": "E9",
+            "year_introduced": 1985,
+            "year_discontinued": 2003,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "16L V8; marine conversions by the Florida houses, factory marine version announced ~2000 but overtaken by the Volvo sale (?). The marine manifold hardware — left and right — survives to prove the V8 went to sea.",
+              "description": "Il V8 da sedici litri: i marinizzatori della Florida lo vestirono da mare, la fabbrica lo promise e non fece in tempo. Ne restano i collettori, destro e sinistro — e quando sopravvive la ferramenta, il motore è esistito. Voce annotata con riserva, non con dubbio."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

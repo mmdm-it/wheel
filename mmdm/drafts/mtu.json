@@ -1,0 +1,203 @@
+{
+  "_dossier": "024g MTU. Rulings: 6-bucket ADDED (6R 183); 10-bucket ADDED (10V 2000 current-catalog). Families FLAT — series names (183/396/2000/4000) live in the model names themselves. Series 183 = rebadged Mercedes OM444LA (cross-ref); Series 60 correctly absent (Detroit design). Maybach MD + Series 538 heritage in prose. Baseline: 16V2000 elbow row. 20V 8000 out of scope (frigates), prose mention.",
+  "market": "eurasia",
+  "country": "Germania",
+  "manufacturer": "MTU",
+  "node": {
+    "year_founded": 1909,
+    "year_dissolved": null,
+    "sort_number": 67,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "mtu:6r183",
+            "engine_model": "6R 183",
+            "year_introduced": 1988,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "11L inline six, 409-591 hp; the smallest true MTU marine engine of its era.",
+              "description": "Il sei in linea di Friedrichshafen: undici litri, fino a quasi seicento cavalli, il gradino d'ingresso di una casa che di solito comincia dove gli altri finiscono. Per yacht di taglia umana che volevano comunque il blasone del lago di Costanza."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "mtu:8v183",
+            "engine_model": "8V 183",
+            "year_introduced": 1988,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "14.6L V8, 756 hp, 1,350 kg dry; heat-exchanger cooled.",
+              "description": "L'otto della serie di derivazione stradale: quattordici litri e mezzo, settecentocinquanta cavalli, il peso di un'utilitaria e mezza. Il V8 con cui mezza flotta europea degli anni Novanta imparò a pronunciare MTU."
+            }
+          },
+          {
+            "id": "mtu:8v396",
+            "engine_model": "8V 396",
+            "year_introduced": 1982,
+            "year_discontinued": 2002,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "31.6L purpose-built V8 (165x185mm), ~1,000-1,300 hp; not truck-derived — marine from the drawing board.",
+              "description": "L'otto di razza pura: trentun litri disegnati per il mare e non adattati a esso, oltre mille cavalli. La serie 396 era il mestiere navale di Friedrichshafen senza compromessi stradali."
+            }
+          },
+          {
+            "id": "mtu:8v2000",
+            "engine_model": "8V 2000",
+            "year_introduced": 1996,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "15.9L (later 17.8L M96) V8, ~900-1,600 hp; entry of the modern 2000 series.",
+              "description": "L'ingresso nell'era moderna: il V8 della serie 2000, cresciuto in vent'anni da novecento a milleseicento cavalli. Nei sportfisherman e nei flybridge di taglia media è ormai un'istituzione."
+            }
+          },
+          {
+            "id": "mtu:8v4000",
+            "engine_model": "8V 4000",
+            "year_introduced": 1997,
+            "year_discontinued": null,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "~32L V8 of the 4000 series, ~1,000-1,500 kW; tug and workboat staple.",
+              "description": "Il quattromila in formato otto: trentadue litri da rimorchiatore e supply vessel, potenza da megawatt e vocazione da turno doppio. Il lato in tuta da lavoro della serie ammiraglia."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "10": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "mtu:10v2000",
+            "engine_model": "10V 2000",
+            "year_introduced": 2011,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "22.3L V10 (M96L), 1,600 hp @ 2,450; current-catalog yacht engine — the odd bank count nobody expects.",
+              "description": "Il dieci cilindri che nessuno si aspetta: ventidue litri, milleseicento cavalli, perfettamente a listino. Tra l'otto e il dodici c'era una casella vuota, e Friedrichshafen — che detesta le caselle vuote — la riempì."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "mtu:12v183",
+            "engine_model": "12V 183",
+            "year_introduced": 1987,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "21.93L V12 — the marinized Mercedes-Benz OM444LA truck engine, rebadged (see Mercedes-Benz); 818-1,300 hp; huge installed base in 50-80 ft yachts.",
+              "description": "Il dodici che nacque Mercedes e morì MTU: il V12 stradale OM444LA, marinizzato e ribattezzato Serie 183 (vedi Mercedes-Benz). Ventidue litri e un parco installato sterminato negli yacht tra i cinquanta e gli ottanta piedi — la spina dorsale borghese della flotta anni Novanta."
+            }
+          },
+          {
+            "id": "mtu:12v396",
+            "engine_model": "12V 396",
+            "year_introduced": 1982,
+            "year_discontinued": 2002,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "47.5L V12, 2,285-2,575 hp, 4,830 kg dry; the classic 1990s superyacht and patrol engine.",
+              "description": "Il classico degli anni Novanta: quarantasette litri e mezzo, oltre duemilacinquecento cavalli, cinque tonnellate scarse. Superyacht e motovedette se lo contesero per vent'anni — quando si dice 'un MTU' senza specificare, spesso si intende lui."
+            }
+          },
+          {
+            "id": "mtu:12v2000",
+            "engine_model": "12V 2000",
+            "year_introduced": 1996,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "23.9-26.8L V12, 1,500-1,920 hp (M96L: 1,920 @ 2,450); the default 60-100 ft sportfish/yacht engine of the era.",
+              "description": "Il dodici di default: da vent'anni, chi ordina uno sportfisherman tra i sessanta e i cento piedi trova spesso questo nel preventivo prima ancora di chiederlo. Millenovecento cavalli di consuetudine planetaria."
+            }
+          },
+          {
+            "id": "mtu:12v4000",
+            "engine_model": "12V 4000",
+            "year_introduced": 1996,
+            "year_discontinued": null,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "48.8-57.2L V12, 2,000-2,600+ hp; at launch in 1996, the first big diesel with common-rail injection.",
+              "description": "Il pioniere del common rail: quando debuttò, nel 1996, nessun grande diesel al mondo iniettava così. Cinquanta litri di primato tecnico che il resto dell'industria avrebbe inseguito per un decennio."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "16": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "mtu:16v396",
+            "engine_model": "16V 396",
+            "year_introduced": 1982,
+            "year_discontinued": 2002,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "63.3L V16, ~2,700-3,500 hp; patrol craft, naval auxiliaries, megayachts.",
+              "description": "Il sedici della serie 396: sessantatré litri per motovedette d'altura e i primi megayacht che meritarono il prefisso. La taglia in cui la nautica smette di essere diporto e comincia a essere marina."
+            }
+          },
+          {
+            "id": "mtu:16v2000",
+            "engine_model": "16V 2000",
+            "year_introduced": 2011,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "35.7L V16 (M96L), 2,600 hp @ 2,450; top of the 2000 series.",
+              "description": "Il vertice della serie 2000: trentacinque litri, duemilaseicento cavalli, per gli scafi veloci che chiedono potenza da 4000 con giri e ingombri da 2000. Il compromesso che non si sente tale."
+            }
+          },
+          {
+            "id": "mtu:16v4000",
+            "engine_model": "16V 4000",
+            "year_introduced": 1998,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "65-76L V16, ~2,680-4,300 hp; superyachts, fast ferries, naval craft.",
+              "description": "Il sedici maggiore: fino a settantasei litri e oltre quattromila cavalli, di casa su traghetti veloci e superyacht da rivista patinata. Quando un porto trema piano, spesso è lui che manovra."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "20": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "mtu:20v4000",
+            "engine_model": "20V 4000",
+            "year_introduced": 2005,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "81-95L V20, up to ~4,800 hp; megayachts and fast ferries. The 20V 8000 (frigates, 100m+ yachts) sits above this catalog's scope.",
+              "description": "Il venti moderno: fino a novantacinque litri e quasi cinquemila cavalli per megayacht e traghetti veloci. Sopra di lui esiste solo il 20V 8000 delle fregate — ma quella è un'altra marina, e un altro catalogo. Erede diretto, per numero di cilindri e per lignaggio, dei V20 da Schnellboot con cui questa dinastia cominciò (vedi Mercedes-Benz)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

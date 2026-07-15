@@ -1,0 +1,240 @@
+{
+  "_dossier": "024b Lister Petter. Rulings: air-cooled legends (SR2/SR3/ST) EXCLUDED per inboard doctrine — honored in prose only; 6-bucket ADDED (JK6M/JW6/HRW6). Water-cooled marine lines only: JP vintage, STW (baseline row STW3 #597), HW/HRW, JK/JW/FR, Alpha LPW/LPWS Canal Star, Petter AC-W/PJW. Baseline 'CRK3-13' (#502/#504) matches nothing in the record → mystery pile. Alpha family repeated per bucket (Detroit 71-precedent).",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Lister Petter",
+  "node": {
+    "year_founded": 1867,
+    "year_dissolved": null,
+    "sort_number": 54,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "lister-petter:ac1wm",
+            "engine_model": "AC1WM Mini-Six",
+            "year_introduced": 1972,
+            "year_discontinued": 1987,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Petter's water-cooled sailboat auxiliary single: 304cc, 6 hp @ 3,000 — the 'Mini-Six' of the Petter Marine Division.",
+              "description": "Il monocilindrico gentile di casa Petter: trecento centimetri cubi raffreddati ad acqua, sei cavalli, e il compito più diplomatico della nautica — spingere una barca a vela quando il vento si offende. Piccolo abbastanza da sparire sotto una cuccetta, educato abbastanza da farsi perdonare l'esistenza."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "lister-petter:jp2m",
+            "engine_model": "JP2M",
+            "year_introduced": 1929,
+            "year_discontinued": 1971,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,868cc twin, 21 hp @ 1,200 rpm, ~1,170 kg of cast iron; water-cooled; vintage-narrowboat royalty — the Historic Narrow Boat Club darling.",
+              "description": "La regalità dei canali inglesi: due cilindri lenti come un pomeriggio di provincia, ventun cavalli a milleduecento giri, oltre una tonnellata di ghisa che batte il tempo del canale. Nei raduni delle narrowboat storiche il suo tonfo regolare è musica sacra — chi lo possiede non ha un motore, ha un titolo nobiliare."
+            }
+          },
+          {
+            "id": "lister-petter:stw2m",
+            "engine_model": "STW2M",
+            "year_introduced": 1974,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Water-cooled marine twin of the ST line, 1,266cc; the qualifying sibling of the air-cooled canal legends.",
+              "description": "Il gemello ad acqua: mentre i fratelli raffreddati ad aria assordavano i canali con la loro leggenda, lo STW girava più composto, collettore in acqua e coscienza in pace. In questa enciclopedia entra lui, per dottrina; ai fratelli rumorosi resta la gloria orale."
+            }
+          },
+          {
+            "id": "lister-petter:pjw2",
+            "engine_model": "PJW2",
+            "year_introduced": 1962,
+            "year_discontinued": 1985,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Petter PJ water-cooled marine twin, 1,620cc, 22.5 hp @ 2,000; fishing-boat workhorse.",
+              "description": "Il bicilindrico da lavoro di Yeovil: un litro e sei, ventidue cavalli e mezzo, e una clientela che non scriveva recensioni — la scriveva il pescato. Nei piccoli pescherecci inglesi fece il suo dovere per vent'anni di listino e molti di più di mare."
+            }
+          }
+        ],
+        "families": {
+          "Alpha": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lister-petter:lpw2",
+                "engine_model": "LPW2",
+                "year_introduced": 1988,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "930cc direct-injection twin, ~18 hp; the modern Alpha marine range's foundation.",
+                  "description": "Il fondamento della gamma moderna: novecento centimetri cubi a iniezione diretta, diciotto cavalli, disegnato quando la casa capì che anche la tradizione deve avviarsi al primo colpo. L'Alpha è il Lister che non chiede scuse al Novecento."
+                }
+              },
+              {
+                "id": "lister-petter:lpws2",
+                "engine_model": "LPWS2 Canal Star 18",
+                "year_introduced": 1992,
+                "year_discontinued": 2013,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Indirect-injection quiet version, 18 hp @ 2,600; ships in traditional Lister green with calorifier connections — the standard modern narrowboat Lister.",
+                  "description": "La versione silenziosa, in livrea verde Lister come vuole la liturgia: iniezione indiretta per il quieto vivere, attacchi per lo scaldacqua di bordo, e il nome che dice tutto — Canal Star. È il Lister che i canali comprano oggi, per somigliare a quelli di ieri senza svegliare nessuno."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "lister-petter:jp3m",
+            "engine_model": "JP3M",
+            "year_introduced": 1929,
+            "year_discontinued": 1971,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4,312cc triple, 30 hp @ 1,200; the JP2M's bigger sibling, same cult.",
+              "description": "Il fratello maggiore della dinastia JP: tre cilindri, quattro litri e trenta cavalli di andatura senatoriale. Stessa ghisa, stesso culto, un tonfo in più nel valzer. Le narrowboat che lo portano hanno la precedenza morale in ogni conca d'Inghilterra."
+            }
+          },
+          {
+            "id": "lister-petter:stw3m",
+            "engine_model": "STW3M",
+            "year_introduced": 1974,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Water-cooled marine triple of the ST line, 1,899cc, ~25 hp marine rating.",
+              "description": "Il tre cilindri ad acqua della famiglia ST: due litri scarsi di diligenza britannica, collettore raffreddato come si deve. Il gradino di mezzo della scala moderna, per chi trovava il twin corto e il quattro superbo."
+            }
+          }
+        ],
+        "families": {
+          "Alpha": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lister-petter:lpw3",
+                "engine_model": "LPW3",
+                "year_introduced": 1988,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "1,390cc direct-injection triple, ~28 hp.",
+                  "description": "L'Alpha di mezzo: un litro e quattro, ventotto cavalli, tre cilindri che girano tondi dove il twin sincopa. La misura giusta per la gran parte dei sessanta piedi dei canali."
+                }
+              },
+              {
+                "id": "lister-petter:lpws3",
+                "engine_model": "LPWS3 Canal Star 27",
+                "year_introduced": 1992,
+                "year_discontinued": 2013,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Quiet indirect-injection version, 27 hp @ 2,600; green livery, calorifier-ready.",
+                  "description": "Il Canal Star di mezzo: ventisette cavalli sottovoce, verde d'ordinanza, acqua calda per il tè di bordo. La modernità travestita da tradizione — il travestimento più inglese che ci sia."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "lister-petter:pjw4",
+            "engine_model": "PJW4",
+            "year_introduced": 1962,
+            "year_discontinued": 1985,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Water-cooled Petter PJ four, ~3.2L, up to ~45 hp; fishing-boat duty.",
+              "description": "Il quattro della serie PJ: tre litri abbondanti e quarantacinque cavalli per i pescherecci che chiedevano a Yeovil qualcosa di più del bicilindrico. Robusto, riparabile con attrezzi da bordo, dimenticato dagli archivi e non dai suoi equipaggi."
+            }
+          }
+        ],
+        "families": {
+          "Alpha": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "lister-petter:lpw4",
+                "engine_model": "LPW4",
+                "year_introduced": 1988,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "1,860cc direct-injection four, 37.5-43 hp; turbo LPWT4 topped the range at ~55 hp.",
+                  "description": "Il capofamiglia Alpha: un litro e nove, quaranta cavalli, e nella variante turbo il coraggio di arrivare a cinquantacinque. Il Lister moderno nella sua espressione più completa — canali, lance, gruppi di bordo, ovunque serva un diesel che si scusi poco e duri molto."
+                }
+              },
+              {
+                "id": "lister-petter:lpws4",
+                "engine_model": "LPWS4 Canal Star 36",
+                "year_introduced": 1992,
+                "year_discontinued": 2013,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Quiet four, 36 hp @ 2,600; the largest Canal Star.",
+                  "description": "Il maggiore dei Canal Star: trentasei cavalli di quieta potenza in verde liturgico. Per le narrowboat lunghe e le coppie che vivono a bordo, dove il motore è un coinquilino e conviene sceglierlo beneducato."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "lister-petter:jk6m",
+            "engine_model": "JK6M",
+            "year_introduced": 1959,
+            "year_discontinued": 1972,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "8,612cc water-cooled marine six, ~90 hp @ 1,500; dedicated marine propulsion for fishing boats and workboats.",
+              "description": "Il sei della serie JK: otto litri e mezzo pensati per il mare fin dal disegno, novanta cavalli a millecinquecento giri. La Dursley delle barche da pesca — meno celebre dei fratelli dei canali, più salata."
+            }
+          },
+          {
+            "id": "lister-petter:jw6mgr",
+            "engine_model": "JW6MGR",
+            "year_introduced": 1973,
+            "year_discontinued": 1987,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "10.6L marine six, 150 hp @ 2,000 base; turbo-intercooled JWSC6 reached ~300 hp; fishing/workboat engine.",
+              "description": "Il grande sei: dieci litri e mezzo, centocinquanta cavalli in versione aspirata e il doppio con turbo e intercooler. L'ammiraglia da lavoro della casa, per pescherecci che dal nome Lister pretendevano finalmente anche la stazza."
+            }
+          },
+          {
+            "id": "lister-petter:hrw6",
+            "engine_model": "HRW6",
+            "year_introduced": 1968,
+            "year_discontinued": 1991,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "6.27L water-cooled six of the HR family; turbo HRWS6 to ~102 hp @ 2,200; Lister or Hurth gearboxes.",
+              "description": "Il sei ad acqua della famiglia HR: sei litri e un quarto di moderazione britannica, un centinaio di cavalli nella versione più ardita. Ventitré anni di listino — a Dursley la fretta non è mai stata di casa, nemmeno nel congedare i motori."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
