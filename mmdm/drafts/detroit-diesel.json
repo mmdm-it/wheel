@@ -1,0 +1,464 @@
+{
+  "_dossier": "007 Detroit Diesel. Rulings: buckets 1/2/3/24 added; families 71/53/92 + Series 60 IN; Gray Marine boundary per nameplate rule (WWII marinizations file under Gray). Mesa baseline cross-check added: family 149, 8V-53, 8.2 Fuel Pincher, Series 60 displacements. Unresolved baseline entries flagged for Howell: '530E', 'JT1354'. N/T/TI variants noted in key_notes, not separate models.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Detroit Diesel",
+  "node": {
+    "year_founded": 1938,
+    "year_dissolved": null,
+    "sort_number": 19,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:1-71",
+                "engine_model": "1-71",
+                "year_introduced": 1938,
+                "year_discontinued": 1959,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Single-cylinder 71-series two-stroke, ~24 hp; Roots-blown like all its kin.",
+                  "description": "Il monocilindrico della dinastia: 71 pollici cubi, compressore Roots, e il timbro inconfondibile della famiglia già tutto intero. Generatori di bordo, pompe, piccoli ausiliari — il seme da cui crebbe tutto."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:2-71",
+                "engine_model": "2-71",
+                "year_introduced": 1938,
+                "year_discontinued": 1970,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Twin 71-series two-stroke; Mesa baseline lists the 2-71N.",
+                  "description": "Il bicilindrico da lavoro: ausiliari, verricelli, piccole propulsioni. Come tutti i 71, condivideva pistoni, canne e testate coi fratelli — la logica modulare che rese la serie immortale."
+                }
+              }
+            ]
+          },
+          "53": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "detroit:2-53",
+                "engine_model": "2-53",
+                "year_introduced": 1957,
+                "year_discontinued": 1975,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Twin 53-series (53 cid/cyl), compact two-stroke.",
+                  "description": "Il piccolo bicilindrico della serie compatta: ausiliari e piccole propulsioni dove i 71 non entravano."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:3-71",
+                "engine_model": "3-71",
+                "year_introduced": 1938,
+                "year_discontinued": 1974,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Inline-three 71-series, ~85 hp class.",
+                  "description": "Tre cilindri in linea per pescherecci minori e gruppi di bordo: la taglia di mezzo dei 71 in linea, robusta e riparabile con la cassetta degli attrezzi di sempre."
+                }
+              }
+            ]
+          },
+          "53": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "detroit:3-53",
+                "engine_model": "3-53",
+                "year_introduced": 1957,
+                "year_discontinued": 1980,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Inline-three 53-series.",
+                  "description": "Tre cilindri compatti per barche da lavoro minori e gruppi elettrogeni marini."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:4-71",
+                "engine_model": "4-71",
+                "year_introduced": 1938,
+                "year_discontinued": 1985,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "Inline-four, ~120-140 hp marine; a workboat standard for decades.",
+                  "description": "Il quattro cilindri che motorizzò mezza flotta da lavoro americana: 120-140 cavalli marini, decenni di produzione, e la solita voce a due tempi che si riconosce a un miglio di distanza."
+                }
+              }
+            ]
+          },
+          "53": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "detroit:4-53",
+                "engine_model": "4-53",
+                "year_introduced": 1957,
+                "year_discontinued": 1985,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Inline-four, ~100-140 hp; a small-workboat favorite.",
+                  "description": "Il più amato dei 53: quattro cilindri, un quintale di coppia, e la proverbiale immortalità Detroit in formato ridotto."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:6-71",
+                "engine_model": "6-71",
+                "year_introduced": 1938,
+                "year_discontinued": 1995,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "THE engine: inline-six, 426 cid, ~165-230 hp marine. 57,000 powered WWII landing craft (LCVP, LCM, LCI) — mostly wearing GRAY MARINE plates (see Gray Marine); civilian marine career ran six decades.",
+                  "description": "Il motore del secolo americano: sei cilindri in linea, due tempi, compressore Roots. Ne servirono 57.000 sui mezzi da sbarco della Seconda guerra mondiale — quasi tutti marinizzati e targati Gray Marine (vedi) — e altrettanti, dopo, su pescherecci, rimorchiatori e barche da lavoro di ogni mare. Se il diesel veloce ha una voce nell'immaginario collettivo, è la sua."
+                }
+              },
+              {
+                "id": "detroit:6v-71",
+                "engine_model": "6V-71",
+                "year_introduced": 1957,
+                "year_discontinued": 1995,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "V6 71-series, 426 cid, 238-300+ hp; N/T/TI variants (Mesa baseline).",
+                  "description": "Con le bancate a V la serie 71 si fece compatta: il 6V-71, stessi 426 pollici cubi del 6 in linea in metà lunghezza, aprì ai 71 le sale macchine più anguste."
+                }
+              }
+            ]
+          },
+          "53": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "detroit:6v-53",
+                "engine_model": "6V-53",
+                "year_introduced": 1962,
+                "year_discontinued": 1990,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "V6 53-series, ~150-200 hp; baseline lists 6V-53N.",
+                  "description": "Il V6 compatto: due tempi pieno in dimensioni da automobile, caro a pescherecci minori e mezzi militari leggeri."
+                }
+              }
+            ]
+          },
+          "92": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "detroit:6v-92",
+                "engine_model": "6V-92",
+                "year_introduced": 1974,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "V6 92-series (92 cid/cyl), the 71's big-bore heir; N/T/TA variants.",
+                  "description": "Erede maggiorato del 6V-71, il 6V-92 portò la dinastia due tempi nell'era del turbo e dell'aftercooling."
+                }
+              }
+            ]
+          },
+          "60": {
+            "sort_number": 4,
+            "models": [
+              {
+                "id": "detroit:series60-11.1",
+                "engine_model": "Series 60 11.1L",
+                "year_introduced": 1987,
+                "year_discontinued": 2011,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The four-stroke apostasy: electronic inline-six, 11.1L variant (Mesa baseline '11.1').",
+                  "description": "L'eresia necessaria: dopo mezzo secolo di due tempi, il Series 60 portò Detroit al quattro tempi elettronico. La variante 11,1 litri aprì la gamma."
+                }
+              },
+              {
+                "id": "detroit:series60-12.7",
+                "engine_model": "Series 60 12.7L",
+                "year_introduced": 1988,
+                "year_discontinued": 2011,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "12.7L Series 60 — the most common marine variant (c.).",
+                  "description": "Il 12,7 litri fu il Series 60 per antonomasia, anche in versione marina: silenzioso, parco, elettronico — tutto ciò che i 71 non erano, e proprio per questo il loro successore."
+                }
+              },
+              {
+                "id": "detroit:series60-14l",
+                "engine_model": "Series 60 14L",
+                "year_introduced": 2001,
+                "year_discontinued": 2011,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "14L final evolution (Mesa baseline '14L').",
+                  "description": "Ultima evoluzione della famiglia, quattordici litri: chiude la storia motoristica marina del marchio prima dell'era MTU."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "8": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "detroit:8.2-fuel-pincher",
+            "engine_model": "8.2 Fuel Pincher",
+            "year_introduced": 1980,
+            "year_discontinued": 1993,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "8.2L lightweight four-stroke V8 (Mesa baseline '8.2'); marinized for small workboats and pleasure craft.",
+              "description": "Il 'Fuel Pincher': un V8 quattro tempi leggero ed economo, figlio delle crisi petrolifere. Marinizzato per barche da lavoro minori e diporto, è il Detroit meno detroit di tutti — e il catalogo Mesa ne vendeva i collettori."
+            }
+          }
+        ],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:8v-71",
+                "engine_model": "8V-71",
+                "year_introduced": 1957,
+                "year_discontinued": 1995,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "V8, ~318-450 hp marine; N/T/TI variants per baseline.",
+                  "description": "L'otto a V della dinastia: da 318 cavalli aspirato a oltre 450 turbo. Motoryacht, pescherecci d'altura, rimorchiatori: ovunque servisse coppia vera con ricambi ovunque."
+                }
+              }
+            ]
+          },
+          "53": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "detroit:8v-53",
+                "engine_model": "8V-53",
+                "year_introduced": 1964,
+                "year_discontinued": 1990,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "V8 53-series (~280 hp T); present in the Mesa baseline (8V-53N, 8V53) — added on baseline authority.",
+                  "description": "L'otto a V della serie compatta, riscoperto grazie al catalogo Mesa: potenza da 71 in ingombri da 53, meno celebre dei fratelli ma ben presente nelle sale macchine americane."
+                }
+              }
+            ]
+          },
+          "92": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "detroit:8v-92",
+                "engine_model": "8V-92",
+                "year_introduced": 1974,
+                "year_discontinued": 1995,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "V8, ~450-735 hp marine; the sportfisherman classic (N/T/TI per baseline).",
+                  "description": "Il motore d'elezione degli sportfisherman americani anni '80: fino a 735 cavalli di due tempi turbo, e una colonna sonora che i pescatori d'altura ricordano con commozione."
+                }
+              }
+            ]
+          },
+          "149": {
+            "sort_number": 4,
+            "models": [
+              {
+                "id": "detroit:8v-149",
+                "engine_model": "8V-149",
+                "year_introduced": 1966,
+                "year_discontinued": 1998,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "V8 149-series (149 cid/cyl!) — the giant line; N/T variants in the Mesa baseline. Added on baseline authority.",
+                  "description": "La serie dei giganti, riscoperta nel catalogo Mesa: 149 pollici cubi per cilindro. L'8V-149 apriva una famiglia pensata per rimorchiatori oceanici, draghe e generazione pesante."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "12": {
+        "sort_number": 7,
+        "models": [],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:12v-71",
+                "engine_model": "12V-71",
+                "year_introduced": 1957,
+                "year_discontinued": 1995,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "V12, ~600-800+ hp marine.",
+                  "description": "Dodici cilindri di due tempi urlante: il 12V-71 spinse pattugliatori, pescherecci oceanici e i primi sportfisherman seri. Con i turbo superò gli 800 cavalli."
+                }
+              }
+            ]
+          },
+          "92": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "detroit:12v-92",
+                "engine_model": "12V-92",
+                "year_introduced": 1975,
+                "year_discontinued": 1995,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "V12, ~900-1,080 hp marine.",
+                  "description": "Dodici cilindri della generazione 92: motoryacht veloci, traghetti, pattugliatori. Il canto del cigno ad alta potenza del due tempi Detroit."
+                }
+              }
+            ]
+          },
+          "149": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "detroit:12v-149",
+                "engine_model": "12V-149",
+                "year_introduced": 1967,
+                "year_discontinued": 1998,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "V12, ~1,800-2,000+ hp; 12V-149N/T per baseline.",
+                  "description": "Dodici cilindri da quasi trentamila centimetri cubi: propulsione di rimorchiatori d'altura, spintori fluviali e traghetti. Due tempi alla scala massima."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "16": {
+        "sort_number": 8,
+        "models": [],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:16v-71",
+                "engine_model": "16V-71",
+                "year_introduced": 1958,
+                "year_discontinued": 1995,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "V16, ~1,000+ hp.",
+                  "description": "Sedici cilindri per il lavoro pesante: propulsione di rimorchiatori e traghetti, generazione a bordo delle piattaforme. La modularità 71 portata quasi al limite."
+                }
+              }
+            ]
+          },
+          "92": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "detroit:16v-92",
+                "engine_model": "16V-92",
+                "year_introduced": 1976,
+                "year_discontinued": 1995,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "V16, ~1,200-1,500 hp.",
+                  "description": "Il grande sedici della serie 92, propulsione di traghetti veloci e grandi yacht prima dell'avvento dei quattro tempi elettronici."
+                }
+              }
+            ]
+          },
+          "149": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "detroit:16v-149",
+                "engine_model": "16V-149",
+                "year_introduced": 1968,
+                "year_discontinued": 1998,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "V16, ~2,400-3,000+ hp; the largest Detroit two-strokes in regular marine service.",
+                  "description": "Il vertice assoluto del due tempi Detroit: sedici cilindri, tremila cavalli turbo, sale macchine di navi vere. Con il 16V-149 la dinastia nata dal piccolo 1-71 del 1938 chiuse il cerchio, quaranta volte più grande."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "24": {
+        "sort_number": 9,
+        "models": [],
+        "families": {
+          "71": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "detroit:24v-71",
+                "engine_model": "24V-71",
+                "year_introduced": 1965,
+                "year_discontinued": 1985,
+                "sort_number": 10,
+                "data": {
+                  "key_notes": "V24 (!), ~1,800 hp, principally marine. The family's outer limit.",
+                  "description": "Il limite raggiunto: ventiquattro cilindri, 1.800 cavalli, quasi esclusivamente marino. Tre 8V in un solo blocco, per chi aveva bisogno della potenza di una centrale e dello spazio di una sala macchine sola."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
