@@ -1,0 +1,64 @@
+{
+  "_dossier": "021a Guascor. Rulings: SF360 in. Mesa: SF180/SF240 (+combined listing). SF240 corrected to 8-cyl per factory literature.",
+  "market": "eurasia",
+  "country": "Spagna",
+  "manufacturer": "Guascor",
+  "node": {
+    "year_founded": 1966,
+    "year_dissolved": null,
+    "sort_number": 29.25,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "guascor:sf180",
+            "engine_model": "SF180",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Inline-six F/SF family (Mesa); repowered Louisiana's 30-year-old ferry Acadia.",
+              "description": "Il sei della famiglia F/SF: gasolio basco per traghetti e pesca. Fu un SF180 a rimotorizzare il traghetto Acadia della Louisiana — la Spagna marittima che attraversa l'Atlantico."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "guascor:sf240",
+            "engine_model": "SF240",
+            "year_introduced": 1988,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "8-cylinder, 23.96L, turbo-aftercooled (Mesa; factory literature corrects the old V12 guess).",
+              "description": "L'otto da ventiquattro litri: la taglia media della gamma, corretta negli archivi di questo catalogo dalla stessa letteratura di fabbrica."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "guascor:sf360",
+            "engine_model": "SF360",
+            "year_introduced": 1992,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V12 family top (~, beyond Mesa).",
+              "description": "Il dodici che corona la famiglia: oltre trenta litri di vocazione da traghetto e rimorchiatore, annotato oltre il perimetro Mesa."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
