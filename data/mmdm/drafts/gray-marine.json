@@ -1,0 +1,152 @@
+{
+  "_dossier": "008 Gray Marine. Rulings: hedged vintage single/twin IN; '162' displacement family + Phantom six family confirmed; year_dissolved 1967. 6-71 Diesel = nameplate-rule star, cross-referenced with Detroit Diesel base entry.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Gray Marine",
+  "node": {
+    "year_founded": 1906,
+    "year_dissolved": 1967,
+    "sort_number": 29,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "gray:single-3hp",
+            "engine_model": "Single 3 HP",
+            "year_introduced": 1906,
+            "year_discontinued": 1925,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Archetypal Gray one-lunger of the make-and-break era; model naming era-hedged (Wow entry).",
+              "description": "Il monocilindrico Gray delle origini: tre cavalli di pazienza infinita, accensione a strappo e il 'putt-putt' che riempì i porti americani del primo Novecento. Dei nomi precisi restano poche tracce; del suono, la memoria di intere marinerie."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "gray:twin-6hp",
+            "engine_model": "Twin 6 HP",
+            "year_introduced": 1908,
+            "year_discontinued": 1925,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Vintage Gray twin; era-hedged naming (Wow entry).",
+              "description": "Il bicilindrico d'epoca: sei cavalli, due colpi per giro, e abbastanza spinta per le barche da pesca costiera dei Grandi Laghi e dell'Atlantico. Compagno maggiore del monocilindrico, ne condivideva la semplicità assoluta."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "gray:sea-scout",
+            "engine_model": "Sea Scout",
+            "year_introduced": 1935,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "25 hp four — the beloved small marine gasoline four of the interwar and postwar decades.",
+              "description": "Il piccolo quattro cilindri per antonomasia: 25 cavalli benzina, dolce e affidabile, cuore di mille runabout e barche da lavoro leggere. Il Sea Scout è la Gray gentile — quella dei laghi, delle domeniche, delle prime barche di famiglia."
+            }
+          },
+          {
+            "id": "gray:4-112",
+            "engine_model": "4-112",
+            "year_introduced": 1938,
+            "year_discontinued": 1958,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "31 hp, 112 cid four.",
+              "description": "Il gradino sopra il Sea Scout: 112 pollici cubi e 31 cavalli per barche più cariche e stagioni più lunghe."
+            }
+          },
+          {
+            "id": "gray:model-620",
+            "engine_model": "Model 620",
+            "year_introduced": 1946,
+            "year_discontinued": 1960,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "140 cid four of the postwar range.",
+              "description": "Quattro cilindri del dopoguerra, 140 pollici cubi: il tuttofare della gamma benzina negli anni del boom nautico americano."
+            }
+          }
+        ],
+        "families": {
+          "162": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "gray:4-75",
+                "engine_model": "4-75",
+                "year_introduced": 1948,
+                "year_discontinued": 1962,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "162 cid family, 75 hp rating.",
+                  "description": "La famiglia da 162 pollici cubi declinata a 75 cavalli: robustezza da lavoro con la scorrevolezza del sei... in quattro cilindri."
+                }
+              },
+              {
+                "id": "gray:fireball-4-90",
+                "engine_model": "Fireball 4-90",
+                "year_introduced": 1950,
+                "year_discontinued": 1965,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "162 cid family, 90 hp — the Fireball name at four cylinders.",
+                  "description": "Il nome Fireball diceva tutto: la versione brillante della famiglia 162, novanta cavalli per runabout veloci e sci nautico. La Gray sportiva."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [],
+        "families": {
+          "Phantom": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "gray:phantom-six",
+                "engine_model": "Phantom Six",
+                "year_introduced": 1932,
+                "year_discontinued": 1958,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The flagship gasoline sixes of the '30s-'50s (c. years).",
+                  "description": "L'ammiraglia benzina: il sei cilindri Phantom, morbido e silenzioso, motorizzò cruiser e commuter americani per un quarto di secolo. Il nome — fantasma — prometteva esattamente quella discrezione."
+                }
+              }
+            ]
+          },
+          "64": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "gray:6-71-diesel",
+                "engine_model": "6-71 Diesel",
+                "year_introduced": 1938,
+                "year_discontinued": 1967,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "THE landing-craft engine: Gray-marinized Detroit 6-71 two-stroke (see Detroit Diesel → 6 → 71). ~100,000 built 1941-45; 52,000+ powered LCVPs, LCMs, Higgins boats. Water-cooled exhaust, marine gear, GRAY MARINE nameplate.",
+                  "description": "Il motore che toccò le spiagge: il 6-71 di Detroit (vedi), marinizzato da Gray con scarico raffreddato ad acqua e invertitore, targato GRAY MARINE. Centomila esemplari tra il 1941 e il 1945; più di cinquantamila spinsero LCVP, LCM e barche Higgins verso la Normandia e il Pacifico. Nessun motore di questo catalogo ha portato più storia sulla schiena — e dopo la guerra, con la stessa flemma, tornò a pescare."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
