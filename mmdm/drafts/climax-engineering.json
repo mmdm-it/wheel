@@ -1,0 +1,109 @@
+{
+  "_dossier": "019c Climax Engineering. Howell source (wehs.net) rewrites the house: born Lamb Boat & Engine Co 1900; K75 = six (exact specs); full lineup CE singles/R41/R-sixes/V8/V12; Waukesha 1957, Clinton plant to Dec 1989. Buckets [4,6]→[1,4,6,8,12].",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Climax Engineering",
+  "node": {
+    "year_founded": 1900,
+    "year_dissolved": 1957,
+    "sort_number": 14.5,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "climax:ce-single",
+            "engine_model": "CE Single",
+            "year_introduced": 1916,
+            "year_discontinued": 1940,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "CE-series single (wehs.net lineup, ~). The company was born the Lamb Boat & Engine Co (1900) — a marine house from the cradle.",
+              "description": "Il monocilindrico della serie CE — e un dettaglio che cambia tutto: la ditta nacque nel 1900 come Lamb Boat & Engine Company. Prima dei generatori e delle pompe, Clinton, Iowa, costruiva motori per barche."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "climax:r41",
+            "engine_model": "R41",
+            "year_introduced": 1945,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "R-series four (wehs.net, ~).",
+              "description": "Il quattro della serie R: la taglia minore della gamma matura."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "climax:k75",
+            "engine_model": "K75",
+            "year_introduced": 1954,
+            "year_discontinued": 1966,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Six cylinders, 7.500x7.000, 1,855.5 cid, 304 hp @ 1,200 rpm, 1954-1966 (Howell-supplied source: wehs.net; Mesa baseline entry).",
+              "description": "Il K75, finalmente esatto: sei cilindri da 7,5 pollici di alesaggio, 1.855 pollici cubi, 304 cavalli a 1.200 giri, prodotto dal 1954 al 1966. Fonte fornita dal curatore — la Western Engine Historical Society — e collettori a catalogo Mesa: doppia certificazione."
+            }
+          },
+          {
+            "id": "climax:r61",
+            "engine_model": "R61",
+            "year_introduced": 1946,
+            "year_discontinued": 1958,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "R-series six (wehs.net, ~).",
+              "description": "Sei cilindri della serie R, fratello del quattro e antenato del K75."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "climax:v-85",
+            "engine_model": "V-85",
+            "year_introduced": 1952,
+            "year_discontinued": 1966,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V8, 2,474 cid, 390 hp @ 1,200 rpm, 1952-66 (wehs.net; a 1944 370 hp example is documented — pre-series). Redesigned into Waukesha models after the 1957 acquisition (see Waukesha).",
+              "description": "Il V8 di Clinton: quasi 2.500 pollici cubi, 390 cavalli placidi. Dopo l'acquisizione Waukesha del 1957 fu ridisegnato sotto quel nome (vedi) — ma il progetto era dell'Iowa."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "climax:v-125",
+            "engine_model": "V-125",
+            "year_introduced": 1950,
+            "year_discontinued": 1968,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V12, 3,711 cid, 605 hp @ 1,200 rpm, 1950-68 (wehs.net); likewise absorbed into the Waukesha line.",
+              "description": "Il dodici: 3.711 pollici cubi, 605 cavalli, il vertice di Clinton. Waukesha tenne aperta la fabbrica fino al dicembre 1989 — trentadue anni di eredità per una ditta nata costruendo motori da barca."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

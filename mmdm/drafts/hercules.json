@@ -1,0 +1,80 @@
+{
+  "_dossier": "021b Hercules. Rulings: 4-bucket KEPT with D00 and D4800 (both fours, Howell parts-counter authority); Mesa trio (GTA48/LDT465/D3000) seated in 6.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Hercules",
+  "node": {
+    "year_founded": 1915,
+    "year_dissolved": 1999,
+    "sort_number": 32,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "hercules:d00",
+            "engine_model": "D00",
+            "year_introduced": 1935,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Four-cylinder diesel — in on Howell's authority (D 'zero zero').",
+              "description": "Il D00 — di zero zero, come precisa il curatore: quattro cilindri che gli archivi web ignorano e il bancone ricorda. La gerarchia delle fonti di questa enciclopedia, in un motore."
+            }
+          },
+          {
+            "id": "hercules:d4800",
+            "engine_model": "D4800",
+            "year_introduced": 1950,
+            "year_discontinued": 1965,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Four-cylinder diesel — Howell authority.",
+              "description": "Il D4800: l'altro quattro di Canton, Ohio, anch'esso testimoniato dalla memoria professionale più che dalla carta."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "hercules:gta48",
+            "engine_model": "GTA48",
+            "year_introduced": 1955,
+            "year_discontinued": 1970,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Gas six (Mesa; designation otherwise unresolved ?).",
+              "description": "Il sei a benzina del catalogo Mesa: la sigla resta da decifrare, il collettore esisteva."
+            }
+          },
+          {
+            "id": "hercules:ldt465",
+            "engine_model": "LDT465",
+            "year_introduced": 1963,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "THE deuce-and-a-half multifuel six (M35A2, 134-140 hp) — Mesa manifolds prove marinized surplus engines went to sea.",
+              "description": "Il multifuel del deuce-and-a-half: nato per bere qualunque cosa nei camion militari M35, finì in mare per via del surplus — e il catalogo Mesa, vendendone i collettori, ne è la prova. Centoquaranta cavalli di fango, gasolio, cherosene e ostinazione."
+            }
+          },
+          {
+            "id": "hercules:d3000",
+            "engine_model": "D3000",
+            "year_introduced": 1960,
+            "year_discontinued": 1980,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Diesel six (Mesa, ~).",
+              "description": "Il diesel della serie 3000: sei cilindri da lavoro, annotato sull'autorità del progenitore d'Alabama."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "_dossier": "020b Deutz. Rulings: buckets 1,2 deleted (no marine manifolds on air-cooled smalls); 9,12,16 added for the MWM 628 series. Mesa ghost 'TBD' section → mystery pile spiritual register. Founded 1864 by N.A. Otto — the four-stroke inventor's company.",
+  "market": "eurasia",
+  "country": "Germania",
+  "manufacturer": "Deutz",
+  "node": {
+    "year_founded": 1864,
+    "year_dissolved": null,
+    "sort_number": 20,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "deutz:bf4m1013",
+            "engine_model": "BF4M1013",
+            "year_introduced": 1994,
+            "year_discontinued": 2010,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1013-series marine four (~).",
+              "description": "Il quattro della serie 1013 in veste marina: gasolio di Colonia per il lavoro leggero."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "deutz:bf6m1013",
+            "engine_model": "BF6M1013",
+            "year_introduced": 1994,
+            "year_discontinued": 2012,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "7.15L inline six, 108x130mm (spec sheet).",
+              "description": "Il sei della 1013: 7,15 litri di rigore renano, diffuso su pescherecci e pilotine di mezza Europa."
+            }
+          },
+          {
+            "id": "deutz:bf6m1015",
+            "engine_model": "BF6M1015",
+            "year_introduced": 1996,
+            "year_discontinued": 2012,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "V6 of the 1015 family (~).",
+              "description": "Il V6 della famiglia maggiore: compattezza a V per sale macchine strette."
+            }
+          },
+          {
+            "id": "deutz:sbv6m628",
+            "engine_model": "SBV6M628",
+            "year_introduced": 1978,
+            "year_discontinued": 1995,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Inline-six 628 (MWM heritage, ~).",
+              "description": "Il sei in linea della stirpe MWM: l'ingresso alla famiglia 628, da 720 a 1.000 giri di flemma."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "deutz:bf8m1015",
+            "engine_model": "BF8M1015",
+            "year_introduced": 1996,
+            "year_discontinued": 2014,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V8 1015, 11.9-15.9L family (marine spec sheet).",
+              "description": "L'otto a V moderno: fino a sedici litri di famiglia 1015, per motovedette e lavoro veloce."
+            }
+          },
+          {
+            "id": "deutz:sbv8m628",
+            "engine_model": "SBV8M628",
+            "year_introduced": 1978,
+            "year_discontinued": 1995,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Inline-eight 628 (~).",
+              "description": "L'otto in linea — architettura d'altri tempi per potenze da traghetto."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "9": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "deutz:sbv9m628",
+            "engine_model": "SBV9M628",
+            "year_introduced": 1980,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The inline NINE of the 628 series (~) — the catalog's second 9-bucket, after Fairbanks Morse.",
+              "description": "Il nove in linea: architettura rara quanto affascinante, secondo scomparto dispari-alto del catalogo dopo i sommergibili Fairbanks Morse. Nove cilindri in fila, come una processione."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "deutz:sbv12m628",
+            "engine_model": "SBV12M628",
+            "year_introduced": 1980,
+            "year_discontinued": 1998,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V12 628 (parts trade active).",
+              "description": "Il dodici della famiglia: guardacoste canadesi e traghetti europei, con un mercato ricambi ancora vivo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "16": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "deutz:sbv16m628",
+            "engine_model": "SBV16M628",
+            "year_introduced": 1982,
+            "year_discontinued": 1998,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V16 628, 4,720 hp crown (~).",
+              "description": "La corona: sedici cilindri e quasi cinquemila cavalli. La casa fondata dall'inventore del quattro tempi — Nicolaus Otto, 1864, la più antica fabbrica di motori del mondo — al suo vertice marino."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
