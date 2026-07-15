@@ -1,0 +1,280 @@
+{
+  "_dossier": "014 Cummins. Rulings: bucket 16 added; families B/C/N/V/K/QS; V-504M/V-555M/V-903M + 6C/6CT extradited home from Caterpillar; failure stories in prose per doctrine; QSB/QSC = CMD homecoming, cross-ref MerCruiser.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Cummins",
+  "node": {
+    "year_founded": 1919,
+    "year_dissolved": null,
+    "sort_number": 16,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [],
+        "families": {
+          "B": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "cummins:4bt3.9",
+                "engine_model": "4BT 3.9",
+                "year_introduced": 1984,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "3.9L four of the B family; compact repower favorite.",
+                  "description": "Il piccolo B: 3,9 litri di semplicità assoluta, rimotorizzazione prediletta per barche a vela robuste e lance da lavoro."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [],
+        "families": {
+          "B": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "cummins:6bt5.9",
+                "engine_model": "6BT 5.9",
+                "year_introduced": 1984,
+                "year_discontinued": 1998,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "THE repower legend: 5.9L six, mechanical injection, 210-250 hp marine. Half the world's trawlers run one.",
+                  "description": "La leggenda della rimotorizzazione: 5,9 litri meccanici, indistruttibili, parchi. Metà dei trawler del mondo ne ha uno in sentina, e l'altra metà lo invidia."
+                }
+              },
+              {
+                "id": "cummins:6bta5.9",
+                "engine_model": "6BTA 5.9",
+                "year_introduced": 1989,
+                "year_discontinued": 2003,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Aftercooled 6BT, to 370 hp marine.",
+                  "description": "La versione aftercooled: fino a 370 cavalli senza tradire l'indole contadina del blocco."
+                }
+              }
+            ]
+          },
+          "C": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "cummins:6c8.3",
+                "engine_model": "6C 8.3",
+                "year_introduced": 1988,
+                "year_discontinued": 1998,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "8.3L six — stub extradited home from the Caterpillar shelf where it sat misfiled.",
+                  "description": "L'8,3 litri tornato a casa: giaceva, chissà come, sullo scaffale Caterpillar di questo catalogo. L'estradizione è compiuta."
+                }
+              },
+              {
+                "id": "cummins:6ct8.3",
+                "engine_model": "6CT 8.3",
+                "year_introduced": 1990,
+                "year_discontinued": 2000,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Turbo 8.3 — likewise extradited.",
+                  "description": "Il turbo della famiglia C, anch'esso rimpatriato. Otto litri e mezzo di sostanza per pesca e lavoro."
+                }
+              },
+              {
+                "id": "cummins:6cta8.3",
+                "engine_model": "6CTA 8.3",
+                "year_introduced": 1992,
+                "year_discontinued": 2005,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Aftercooled 8.3, 430-450 hp marine; the 'diamond' era favorite.",
+                  "description": "L'aftercooled che tutti chiamavano Diamond: 430 cavalli generosi su mezzo diporto d'America."
+                }
+              }
+            ]
+          },
+          "N": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "cummins:nt-855",
+                "engine_model": "NT-855",
+                "year_introduced": 1962,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "The classic 855 cid six; NH/NT marine ratings for decades.",
+                  "description": "Il classico assoluto: 855 pollici cubi di sei cilindri, la voce profonda dei pescherecci e dei rimorchiatori di tre generazioni."
+                }
+              }
+            ]
+          },
+          "K": {
+            "sort_number": 4,
+            "models": [
+              {
+                "id": "cummins:kta19",
+                "engine_model": "KTA19",
+                "year_introduced": 1976,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "19L six, to 700 hp marine.",
+                  "description": "Il grande sei della famiglia K: diciannove litri per il lavoro oceanico."
+                }
+              }
+            ]
+          },
+          "QS": {
+            "sort_number": 5,
+            "models": [
+              {
+                "id": "cummins:qsb5.9",
+                "engine_model": "QSB 5.9",
+                "year_introduced": 2002,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Electronic B — the CMD homecoming: sold as Cummins MerCruiser Diesel (see MerCruiser).",
+                  "description": "Il B elettronico dell'era CMD: venduto con la doppia insegna Cummins MerCruiser (vedi), torna qui per la regola della targhetta — il nome Cummins viene prima."
+                }
+              },
+              {
+                "id": "cummins:qsc8.3",
+                "engine_model": "QSC 8.3",
+                "year_introduced": 2003,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Electronic C, CMD era (see MerCruiser).",
+                  "description": "Il C dell'era common rail, anch'esso figlio del sodalizio con MerCruiser: elettronica moderna su ossa antiche."
+                }
+              },
+              {
+                "id": "cummins:qsm11",
+                "engine_model": "QSM 11",
+                "year_introduced": 2000,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "10.8L six, to 715 hp marine.",
+                  "description": "L'undici litri elettronico: il cuore della gamma media moderna, dal trawler al pilotino."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [],
+        "families": {
+          "V": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "cummins:v-504m",
+                "engine_model": "V-504M",
+                "year_introduced": 1968,
+                "year_discontinued": 1980,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Marine Vale V8, 504 cid — extradited home from the Caterpillar shelf.",
+                  "description": "Il piccolo dei V8 'Vale', rimpatriato dallo scaffale sbagliato: 504 pollici di compattezza, con i limiti strutturali di famiglia."
+                }
+              },
+              {
+                "id": "cummins:v-555m",
+                "engine_model": "V-555M",
+                "year_introduced": 1969,
+                "year_discontinued": 1982,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "The 'Triple-Nickel' — trawler folk's 'cripple fives': weak bottom end unless remarinized, then honest. Scars recorded per doctrine.",
+                  "description": "Il Triplo-Cinque, che i trawleristi chiamano 'cripple fives': fondo motore gracile finché non lo si rimarinizza a dovere — poi, giurano i redenti, diventa onesto. Un'enciclopedia che tace i difetti è un dépliant: qui si registrano anche le cicatrici."
+                }
+              },
+              {
+                "id": "cummins:v-903m",
+                "engine_model": "V-903M",
+                "year_introduced": 1970,
+                "year_discontinued": 1985,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "903 cid marine V8 — 'most flew to bits' per the old hands; truck versions fared better. Extradited + scarred.",
+                  "description": "Il 903 marino: 'per lo più volavano in pezzi', ricordano i vecchi motoristi — a terra, sui camion, andò meglio. Rimpatriato da casa Caterpillar con tutte le sue cicatrici al seguito."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "12": {
+        "sort_number": 4,
+        "models": [],
+        "families": {
+          "K": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "cummins:kta38",
+                "engine_model": "KTA38",
+                "year_introduced": 1980,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "38L V12, to 1,350 hp marine.",
+                  "description": "Il dodici della famiglia K: trentotto litri per traghetti, draghe e pescherecci oceanici."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "16": {
+        "sort_number": 5,
+        "models": [],
+        "families": {
+          "K": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "cummins:kta50",
+                "engine_model": "KTA50",
+                "year_introduced": 1982,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "50L V16, to 1,800 hp marine — the bucket-16 justification.",
+                  "description": "Cinquanta litri, sedici cilindri: il gigante K che inaugura questo scomparto."
+                }
+              }
+            ]
+          },
+          "QS": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "cummins:qsk50",
+                "engine_model": "QSK50",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Electronic 50L V16, 2,000+ hp.",
+                  "description": "L'erede elettronico: duemila cavalli e passa, per il lavoro pesante del nuovo secolo."
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

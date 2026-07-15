@@ -1,0 +1,58 @@
+{
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Mianus",
+  "_dossier": "012a Mianus — quartet ruling: hedged generic names ok; dissolved ~1935.",
+  "node": {
+    "year_founded": 1900,
+    "year_dissolved": 1935,
+    "sort_number": 64,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "mianus:single-3hp",
+            "engine_model": "3 HP Single",
+            "year_introduced": 1905,
+            "year_discontinued": 1930,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Make-and-break one-lunger of the oyster and fishing fleets; nameplate specifics era-hedged.",
+              "description": "Il monocilindrico delle flotte ostricole: accensione make-and-break, volano generoso, e la pazienza di lavorare un'intera marea senza un lamento. Dei Mianus si ricorda il battito più dei nomi — e il battito basta."
+            }
+          },
+          {
+            "id": "mianus:single-5hp",
+            "engine_model": "5 HP Single",
+            "year_introduced": 1910,
+            "year_discontinued": 1930,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Larger single (c.).",
+              "description": "Il fratello maggiore: cinque cavalli per barche più cariche, stessa filosofia — un cilindro, poche parti, nessuna fretta."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "mianus:twin-7hp",
+            "engine_model": "7 HP Twin",
+            "year_introduced": 1912,
+            "year_discontinued": 1930,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Twin of the teens (hedged).",
+              "description": "Il bicilindrico di casa, per chi voleva un filo di ridondanza tra sé e la corrente di ritorno. Due battiti nel villaggio di Mianus, sullo stesso fiume dei fratelli Palmer."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
