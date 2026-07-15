@@ -1,0 +1,81 @@
+{
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Lathrop",
+  "_dossier": "012b Lathrop — Type 6 anchored (James River recovery); Four/Six hedged generics per ruling; dissolved ~1956.",
+  "node": {
+    "year_founded": 1896,
+    "year_dissolved": 1956,
+    "sort_number": 51,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "lathrop:type-6",
+            "engine_model": "Type 6",
+            "year_introduced": 1915,
+            "year_discontinued": 1930,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "6 HP single, c. 1915, Mystic CT; a recovered example from the James River anchors the type.",
+              "description": "Sei cavalli di Mystic, Connecticut: un Type 6 ripescato dal fango del James River è oggi la pietra d'ancoraggio documentale di tutta la casa. I Lathrop erano così: li perdevi in fondo a un fiume e funzionavano ancora."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "lathrop:type-12-twin",
+            "engine_model": "Type 12 Twin",
+            "year_introduced": 1916,
+            "year_discontinued": 1935,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Twin extrapolated from the Type nomenclature (~).",
+              "description": "Il bicilindrico della serie Type: dodici cavalli per passere e barche da lavoro della costa atlantica."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "lathrop:heavy-duty-four",
+            "engine_model": "Heavy Duty Four",
+            "year_introduced": 1930,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Workboat four of the later decades; designation hedged (?).",
+              "description": "Il quattro cilindri da lavoro dell'età matura: pesante, lento, instancabile — la seconda vita di Lathrop, quando i one-lunger lasciarono il posto ai motori 'seri'."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "lathrop:heavy-duty-six",
+            "engine_model": "Heavy Duty Six",
+            "year_introduced": 1935,
+            "year_discontinued": 1956,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Workboat six; designation hedged (?).",
+              "description": "Il sei da peschereccio che chiuse la storia della casa di Mystic, a metà anni '50: sessant'anni di motori dal medesimo lungofiume."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
