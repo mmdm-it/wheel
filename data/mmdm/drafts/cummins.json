@@ -1,5 +1,5 @@
 {
-  "_dossier": "014 Cummins. Rulings: bucket 16 added; families B/C/N/V/K/QS; V-504M/V-555M/V-903M + 6C/6CT extradited home from Caterpillar; failure stories in prose per doctrine; QSB/QSC = CMD homecoming, cross-ref MerCruiser.",
+  "_dossier": "014 Cummins. Rulings: bucket 16 added; families B/C/N/V/K/QS; V-504M/V-555M/V-903M + 6C/6CT extradited home from Caterpillar; failure stories in prose per doctrine; QSB/QSC = CMD homecoming, cross-ref MerCruiser. Mesa cross-check round 2: +11 models (N14, L-10, M-11, QSX-15, QSK38, QSL9, QSB6.7, NH-743, NT-495, 4A, V-470M, VT-1710) + alias notes (KT 1150, VT555M, VTA903, 855M).",
   "market": "americhe",
   "country": "Stati Uniti",
   "manufacturer": "Cummins",
@@ -24,6 +24,22 @@
                 "data": {
                   "key_notes": "3.9L four of the B family; compact repower favorite.",
                   "description": "Il piccolo B: 3,9 litri di semplicità assoluta, rimotorizzazione prediletta per barche a vela robuste e lance da lavoro."
+                }
+              }
+            ]
+          },
+          "A": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "cummins:4a",
+                "engine_model": "4A",
+                "year_introduced": 1985,
+                "year_discontinued": 2000,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Small A-series four (Mesa baseline, ~).",
+                  "description": "Il piccolo A: quattro cilindri d'ingresso, annotato sull'autorità del catalogo progenitore."
                 }
               }
             ]
@@ -57,6 +73,17 @@
                 "data": {
                   "key_notes": "Aftercooled 6BT, to 370 hp marine.",
                   "description": "La versione aftercooled: fino a 370 cavalli senza tradire l'indole contadina del blocco."
+                }
+              },
+              {
+                "id": "cummins:qsb6.7",
+                "engine_model": "QSB 6.7",
+                "year_introduced": 2007,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "6.7L electronic B (Mesa baseline).",
+                  "description": "Il B cresciuto a 6,7 litri: l'attuale erede della leggenda, common rail e coscienza ecologica."
                 }
               }
             ]
@@ -96,6 +123,17 @@
                   "key_notes": "Aftercooled 8.3, 430-450 hp marine; the 'diamond' era favorite.",
                   "description": "L'aftercooled che tutti chiamavano Diamond: 430 cavalli generosi su mezzo diporto d'America."
                 }
+              },
+              {
+                "id": "cummins:qsl9",
+                "engine_model": "QSL 9",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "8.9L six (Mesa lists 'QSL9' and '8.9') (Mesa baseline).",
+                  "description": "L'evoluzione da 8,9 litri della stirpe C: il gradino tra QSC e QSM."
+                }
               }
             ]
           },
@@ -112,6 +150,39 @@
                   "key_notes": "The classic 855 cid six; NH/NT marine ratings for decades.",
                   "description": "Il classico assoluto: 855 pollici cubi di sei cilindri, la voce profonda dei pescherecci e dei rimorchiatori di tre generazioni."
                 }
+              },
+              {
+                "id": "cummins:nh-743",
+                "engine_model": "NH-743",
+                "year_introduced": 1950,
+                "year_discontinued": 1970,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "743 cid six, NT-855 predecessor (Mesa lists '743' and '743 NH').",
+                  "description": "Il progenitore: 743 pollici cubi di sei cilindri, da cui discese l'855. Le radici della quercia N."
+                }
+              },
+              {
+                "id": "cummins:nt-495",
+                "engine_model": "NT-495",
+                "year_introduced": 1955,
+                "year_discontinued": 1972,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "Small N six (Mesa baseline, ~).",
+                  "description": "Il fratello minore della famiglia N, annotato con riserva sull'autorità Mesa."
+                }
+              },
+              {
+                "id": "cummins:n14",
+                "engine_model": "N14",
+                "year_introduced": 1991,
+                "year_discontinued": 2003,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "THE N14 — electronic swan song of the N family (Mesa baseline).",
+                  "description": "Il canto del cigno della famiglia N: elettronico, potente, amatissimo. Un vuoto della prima stesura che il catalogo Mesa ha colmato."
+                }
               }
             ]
           },
@@ -125,7 +196,7 @@
                 "year_discontinued": null,
                 "sort_number": 1,
                 "data": {
-                  "key_notes": "19L six, to 700 hp marine.",
+                  "key_notes": "19L six, to 700 hp marine. Mesa lists it by cid as 'KT 1150'.",
                   "description": "Il grande sei della famiglia K: diciannove litri per il lavoro oceanico."
                 }
               }
@@ -168,6 +239,44 @@
                 }
               }
             ]
+          },
+          "L-M": {
+            "sort_number": 6,
+            "models": [
+              {
+                "id": "cummins:l10",
+                "engine_model": "L-10",
+                "year_introduced": 1982,
+                "year_discontinued": 1998,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "10L six (Mesa baseline).",
+                  "description": "Il dieci litri degli anni '80: taglia media onesta tra B e N."
+                }
+              },
+              {
+                "id": "cummins:m11",
+                "engine_model": "M-11",
+                "year_introduced": 1994,
+                "year_discontinued": 2004,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "10.8L six, QSM11 predecessor (Mesa baseline).",
+                  "description": "Il padre meccanico-elettronico del QSM: la transizione fatta motore."
+                }
+              },
+              {
+                "id": "cummins:qsx15",
+                "engine_model": "QSX-15",
+                "year_introduced": 2002,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "15L six (Mesa baseline).",
+                  "description": "Il quindici litri elettronico: il grande sei moderno della casa di Columbus."
+                }
+              }
+            ]
           }
         }
       },
@@ -179,11 +288,22 @@
             "sort_number": 1,
             "models": [
               {
+                "id": "cummins:v-470m",
+                "engine_model": "V-470M",
+                "year_introduced": 1966,
+                "year_discontinued": 1978,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "Smallest marine Vale V8 (Mesa baseline).",
+                  "description": "Il più piccolo dei Vale marini: 470 pollici, stesse virtù e stessi peccati di famiglia."
+                }
+              },
+              {
                 "id": "cummins:v-504m",
                 "engine_model": "V-504M",
                 "year_introduced": 1968,
                 "year_discontinued": 1980,
-                "sort_number": 1,
+                "sort_number": 2,
                 "data": {
                   "key_notes": "Marine Vale V8, 504 cid — extradited home from the Caterpillar shelf.",
                   "description": "Il piccolo dei V8 'Vale', rimpatriato dallo scaffale sbagliato: 504 pollici di compattezza, con i limiti strutturali di famiglia."
@@ -194,9 +314,9 @@
                 "engine_model": "V-555M",
                 "year_introduced": 1969,
                 "year_discontinued": 1982,
-                "sort_number": 2,
+                "sort_number": 3,
                 "data": {
-                  "key_notes": "The 'Triple-Nickel' — trawler folk's 'cripple fives': weak bottom end unless remarinized, then honest. Scars recorded per doctrine.",
+                  "key_notes": "The 'Triple-Nickel' — trawler folk's 'cripple fives': weak bottom end unless remarinized, then honest. Scars recorded per doctrine. Mesa also lists VT555M (turbo variant).",
                   "description": "Il Triplo-Cinque, che i trawleristi chiamano 'cripple fives': fondo motore gracile finché non lo si rimarinizza a dovere — poi, giurano i redenti, diventa onesto. Un'enciclopedia che tace i difetti è un dépliant: qui si registrano anche le cicatrici."
                 }
               },
@@ -205,9 +325,9 @@
                 "engine_model": "V-903M",
                 "year_introduced": 1970,
                 "year_discontinued": 1985,
-                "sort_number": 3,
+                "sort_number": 4,
                 "data": {
-                  "key_notes": "903 cid marine V8 — 'most flew to bits' per the old hands; truck versions fared better. Extradited + scarred.",
+                  "key_notes": "903 cid marine V8 — 'most flew to bits' per the old hands; truck versions fared better. Extradited + scarred. Mesa also lists VTA903 (turbo-aftercooled) and 'V8 370M' rating.",
                   "description": "Il 903 marino: 'per lo più volavano in pezzi', ricordano i vecchi motoristi — a terra, sui camion, andò meglio. Rimpatriato da casa Caterpillar con tutte le sue cicatrici al seguito."
                 }
               }
@@ -231,6 +351,33 @@
                 "data": {
                   "key_notes": "38L V12, to 1,350 hp marine.",
                   "description": "Il dodici della famiglia K: trentotto litri per traghetti, draghe e pescherecci oceanici."
+                }
+              },
+              {
+                "id": "cummins:qsk38",
+                "engine_model": "QSK38",
+                "year_introduced": 2000,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "Electronic 38L V12 (Mesa baseline).",
+                  "description": "L'erede elettronico del KTA38: la K portata nell'era del common rail."
+                }
+              }
+            ]
+          },
+          "V": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "cummins:vt-1710",
+                "engine_model": "VT-1710",
+                "year_introduced": 1965,
+                "year_discontinued": 1980,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "1710 cid V12 (Mesa lists '1710', ~).",
+                  "description": "Il grande dodici da 1710 pollici cubi: il gigante Vale che precedette l'era K, annotato sull'autorità Mesa."
                 }
               }
             ]
