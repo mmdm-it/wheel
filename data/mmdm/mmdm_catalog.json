@@ -2013,6 +2013,23 @@
                         },
                         "sort_number": 1
                     },
+                    "Stato Pontificio": {
+                        "sort_number": 1.5,
+                        "manufacturers": {
+                            "Gregorio XIII": {
+                                "year_founded": 1572,
+                                "year_dissolved": 1585,
+                                "sort_number": 29.1,
+                                "gateway_children": [
+                                    {
+                                        "name": "CALENDARIUM GREGORIANUM",
+                                        "volume": "calendar",
+                                        "sort_number": 1
+                                    }
+                                ]
+                            }
+                        }
+                    },
                     "Germania": {
                         "manufacturers": {
                             "MTU": {

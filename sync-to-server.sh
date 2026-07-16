@@ -57,7 +57,8 @@ sync_deployment() {
     local data_excludes=()
     case "$deployment" in
         catalog)
-            data_excludes=(--exclude='data/places/' --exclude='data/calendar/') ;;
+            # calendar data ships with the catalog: the Gregorio XIII gateway needs it
+            data_excludes=(--exclude='data/places/') ;;
         bible)
             data_excludes=(--exclude='data/mmdm/' --exclude='data/places/' --exclude='data/calendar/') ;;
         calendar)
