@@ -1,0 +1,5 @@
+# Serve JSON (and friends) compressed — the calendar manifest is 8.4 MB raw
+# and ~10x smaller gzipped; without this the gateway transit pays full price.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/json text/html text/css application/javascript image/svg+xml
+</IfModule>
