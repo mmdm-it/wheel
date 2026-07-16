@@ -1,0 +1,98 @@
+{
+  "_dossier": "026c Blaxland-Chapman. Rulings: fused house KEPT (nameplate 'Blaxland Chapman' real post-1949: Chapman & Sherack sold to Blaxland Rae 1949, 'embodying all Chapman patents'). Founded 1908 = Chapman's Erskineville business. Pup family (iconic name). Blaxland Rae outboard (~1963) EXCLUDED. Sydney putt-putt culture; 1936 Sydney→Thursday Island voyage.",
+  "market": "eurasia",
+  "country": "Australia",
+  "manufacturer": "Blaxland-Chapman",
+  "node": {
+    "year_founded": 1908,
+    "year_dissolved": null,
+    "sort_number": 7,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "blaxland-chapman:super-pup",
+            "engine_model": "Super Pup",
+            "year_introduced": 1935,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4¼ hp single, top of the Pup ladder.",
+              "description": "Il maggiore dei cuccioli: quattro cavalli e un quarto, che nella scala dei Pup era quasi arroganza. Per le lance della domenica che volevano arrivare a Manly con un filo di vento contrario."
+            }
+          }
+        ],
+        "families": {
+          "Pup": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "blaxland-chapman:chapman-pup",
+                "engine_model": "Chapman Pup",
+                "year_introduced": 1925,
+                "year_discontinued": 1949,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "2½ hp two-stroke single, patented January 1925 — the famous 'bounce start': no crank handle, you bounced the flywheel against compression; reversing by ignition timing, no gearbox. By the 1930s Chapman & Sherack claimed to be the Commonwealth's largest marine engine maker.",
+                  "description": "Il Pup: due cavalli e mezzo di genio semplificatore australiano. Niente manovella — si faceva rimbalzare il volano contro la compressione e il motore partiva; niente invertitore — si ritardava l'accensione e girava all'indietro. Il putt-putt di Sydney Harbour è il suo battito. Nel 1936 uno di questi cuccioli portò Walter Pankhurst da Sydney a Thursday Island: seimila chilometri di costa, due cavalli e mezzo, nessuna fretta."
+                }
+              },
+              {
+                "id": "blaxland-chapman:master-pup",
+                "engine_model": "Master Pup",
+                "year_introduced": 1932,
+                "year_discontinued": 1955,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "3 hp uprated Pup.",
+                  "description": "Il Pup cresciuto: tre cavalli per chi trovava il fratello minore troppo contemplativo. Stessa filosofia, stesso rimbalzo d'avviamento, mezzo nodo in più."
+                }
+              },
+              {
+                "id": "blaxland-chapman:blaxland-pup",
+                "engine_model": "Blaxland Pup",
+                "year_introduced": 1949,
+                "year_discontinued": 1965,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "3¾ hp single of the post-1949 era, when Blaxland Rae bought Chapman & Sherack and sold 'Blaxland Chapman' engines embodying all the Chapman patents — five-year guarantee.",
+                  "description": "Il Pup del dopoguerra: quando la Blaxland Rae rilevò Chapman & Sherack, nel 1949, i brevetti del cucciolo passarono di mano ma non di carattere. Vestito di rosso, garantito cinque anni, e ancora oggi conteso dai collezionisti alle regate dei putt-putt sul Hawkesbury."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "blaxland-chapman:greyhound",
+            "engine_model": "Greyhound",
+            "year_introduced": 1935,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "6-8 hp two-stroke twin.",
+              "description": "Il levriero: bicilindrico da otto cavalli per le lance che si prendevano sul serio. Nella liturgia dei nomi di Erskineville, dopo i cuccioli venivano i cani da corsa."
+            }
+          },
+          {
+            "id": "blaxland-chapman:seadog",
+            "engine_model": "Seadog",
+            "year_introduced": 1938,
+            "year_discontinued": 1960,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "10-20 hp twin, top of the range; even cited in Qantas service use (~).",
+              "description": "Il lupo di mare: fino a venti cavalli, il massimo che la casa australiana offrisse. Ne risultano perfino al servizio della Qantas degli esordi — quando le linee aeree avevano bisogno di barche, e le barche di Sydney avevano bisogno di questi."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

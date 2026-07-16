@@ -1,0 +1,187 @@
+{
+  "_dossier": "027c Gardner. Rulings: buckets [1,2] ADDED (1L2 single; 2LW narrowboat cult). The aristocracy: hand-lapped assembly, benchmark efficiency; RNLI Watson/Barnett/Oakley/Clyde classes; 4LK in X-craft midget submarines; first turbo only 1981; killed by emissions, not quality. Perkins 1986, production ceased ~1994.",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Gardner",
+  "node": {
+    "year_founded": 1868,
+    "year_dissolved": 1994,
+    "sort_number": 27,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "gardner:1l2",
+            "engine_model": "1L2",
+            "year_introduced": 1929,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.39L single, 9.5-11 hp @ 1,100 — the smallest true Gardner diesel.",
+              "description": "Il più piccolo dei Gardner: un cilindro solo, lavorato però con la stessa liturgia dei fratelli — superfici raschiate a mano, accoppiamenti lappati, nessuna tolleranza di troppo. L'aristocrazia non conosce taglie minori: conosce solo membri più giovani."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "gardner:2lw",
+            "engine_model": "2LW",
+            "year_introduced": 1931,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.8L twin, 28 hp @ 1,300; fuel figure of 0.360 lb/bhp-hr was the industry's efficiency benchmark. The narrowboat cult object — remanufactured and revered to this day.",
+              "description": "L'oggetto di culto: ventotto cavalli di bicilindrico che consuma come una lampada a petrolio e suona come un orologio da chiesa. Sui canali inglesi possedere un 2LW non è una scelta motoristica ma una posizione filosofica — e c'è ancora chi li rifabbrica, pezzo per pezzo, per una clientela che non accetterebbe altro."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "gardner:3lw",
+            "engine_model": "3LW",
+            "year_introduced": 1931,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4.2L triple, 47 hp @ 1,500; canal boats and launches.",
+              "description": "Il tre della dinastia LW: quarantasette cavalli per le narrowboat di famiglia e le lance serie. Un cilindro più del culto, tutte le sue virtù."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "gardner:4lw",
+            "engine_model": "4LW",
+            "year_introduced": 1931,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "5.6L four, 62 hp @ 1,500; twin installations powered the RNLI's 42-ft Watson-class lifeboats; trawlers and buses alike.",
+              "description": "Il quattro che salvava vite: in coppia, spingeva le scialuppe Watson da quarantadue piedi della RNLI nelle notti in cui nessun altro usciva. Lo stesso motore portava a casa gli autobus di mezza Inghilterra — la versatilità come forma di virtù."
+            }
+          },
+          {
+            "id": "gardner:4lk",
+            "engine_model": "4LK",
+            "year_introduced": 1935,
+            "year_discontinued": 1965,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "3.8L lightweight four, 51-57 hp — the engine of the Royal Navy's X-craft midget submarines in WWII.",
+              "description": "Il quattro leggero con il mestiere più segreto del catalogo: motorizzò gli X-craft, i sommergibili tascabili della Royal Navy che nel 1943 azzopparono la Tirpitz nel suo fiordo. Un motore da autocarro leggero, scelto per l'impresa più silenziosa della guerra — perché quando conta davvero, si sceglie un Gardner."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "5": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "gardner:5lw",
+            "engine_model": "5LW",
+            "year_introduced": 1931,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "7.0L five, 78 hp @ 1,500; the RNLI's 47-ft Watson class carried it.",
+              "description": "Il cinque: settantotto cavalli per le Watson maggiori del salvataggio britannico e per i pescherecci che consideravano il sei un lusso. La configurazione dispari trattata con la naturalezza di Patricroft."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "gardner:6lw",
+            "engine_model": "6LW",
+            "year_introduced": 1931,
+            "year_discontinued": 1974,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "8.4L six, 94-100 hp @ 1,500, in production 43 years — THE British heavy-duty diesel: Barnett lifeboats, tugs, trawlers, and half the bus industry.",
+              "description": "IL Gardner: quarantatré anni di produzione ininterrotta, le scialuppe Barnett, i rimorchiatori, i trawler scozzesi e mezzo trasporto pubblico d'Inghilterra. Cento cavalli che definirono cosa significasse, in inglese, la parola affidabilità. Quando morì di normative, nel Paese si scrissero necrologi veri."
+            }
+          },
+          {
+            "id": "gardner:6lx",
+            "engine_model": "6LX",
+            "year_introduced": 1958,
+            "year_discontinued": 1980,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "10.45L six, 150 hp (marine ~110-127); twin contra-rotating 6LXs powered all sixteen RNLI Oakley and Solent boats and the last ten 52-ft Barnetts.",
+              "description": "L'erede: dieci litri e mezzo per la generazione successiva del salvataggio — tutte le Oakley e le Solent della RNLI montavano coppie di 6LX controrotanti. Il testimone passato senza far cadere nulla."
+            }
+          },
+          {
+            "id": "gardner:6lxb",
+            "engine_model": "6LXB",
+            "year_introduced": 1966,
+            "year_discontinued": 1990,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "10.45L six, 180 hp (marine 127 @ 1,500); the definitive later Gardner — coasters, trawlers, buses.",
+              "description": "Il Gardner definitivo dell'era matura: la potenza cresciuta senza tradire il consumo, i trawler e i coaster fedeli come sempre. Per molti l'ultimo vero Gardner — un'opinione che a Manchester si pronuncia a bassa voce."
+            }
+          },
+          {
+            "id": "gardner:6lyt",
+            "engine_model": "6LYT",
+            "year_introduced": 1984,
+            "year_discontinued": 1994,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "15.49L six, 300-350 hp @ 1,800 — the last all-new Gardner (the first house turbo, the 6LXCT, arrived only in 1981).",
+              "description": "L'ultimo progetto: quindici litri e mezzo, trecentocinquanta cavalli, disegnato quando la casa aveva finalmente accettato il turbo — il primo era arrivato solo nel 1981, mezzo secolo dopo la concorrenza, per principio più che per ritardo. Morì giovane, di emissioni e di mercato. Le aristocrazie non si adattano: finiscono."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 7,
+        "models": [
+          {
+            "id": "gardner:8l3b",
+            "engine_model": "8L3B",
+            "year_introduced": 1962,
+            "year_discontinued": 1978,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "24L eight, 230 hp @ 1,150; twin installations powered the RNLI's Clyde-class cruising lifeboats — the biggest marine Gardner of its day.",
+              "description": "L'otto dei Clyde: ventiquattro litri a millecentocinquanta giri, in coppia sulle grandi scialuppe di crociera della RNLI — quelle che restavano in mare quando le altre rientravano. Il più grande Gardner marino del suo tempo, al servizio del mestiere più generoso del mare."
+            }
+          },
+          {
+            "id": "gardner:8lxb",
+            "engine_model": "8LXB",
+            "year_introduced": 1968,
+            "year_discontinued": 1990,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "13.93L eight, 170-240 hp; the eight-cylinder LXB for coasters and heavy workboats.",
+              "description": "L'otto della famiglia LXB: quattordici litri scarsi per i coaster e i mezzi pesanti che volevano la firma di Patricroft con due cilindri di margine. L'ultima taglia grande dell'aristocrazia."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

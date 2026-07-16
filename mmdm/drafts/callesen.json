@@ -1,0 +1,98 @@
+{
+  "_dossier": "026g Callesen. Rulings: buckets [3,4,6] ADDED (422/425/427 trawler diesels); founded → 1899 (Bukh's own centenary date). Naming: 4xx = bore in cm; letter = cyl count (B=2..F=6), T = turbo. Aabenraa Motorfabrik took over Bukh production 1994; today BUKH A/S services Callesen engines (cross-ref).",
+  "market": "eurasia",
+  "country": "Danimarca",
+  "manufacturer": "Callesen",
+  "node": {
+    "year_founded": 1899,
+    "year_dissolved": 2010,
+    "sort_number": 12,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "callesen:glodehoved",
+            "engine_model": "Glødehoved",
+            "year_introduced": 1909,
+            "year_discontinued": 1937,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The hot-bulb single, 8-80 hk across sizes; two-stroke semi-diesel designed WITHOUT water injection — the distinctive Aabenraa touch; the classic Danish kutter engine.",
+              "description": "La testa calda di Aabenraa: il semi-diesel a due tempi progettato — tratto distintivo della casa — senza iniezione d'acqua. Il suo tonfo lento è il suono dei kutter di legno danesi, e i pescatori del Limfjord lo tramandavano con le barche. In Danimarca certi motori non si comprano: si ereditano."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "callesen:425-bo",
+            "engine_model": "425-BO",
+            "year_introduced": 1969,
+            "year_discontinued": 1990,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "250mm-bore twin (naming: 425 = 25cm bore, B = two cylinders); ~120 hp class slow-turner.",
+              "description": "Il bicilindrico della serie 425: alesaggio da un quarto di metro, giri da metronomo pigro. La sigla si decodifica come tutto ciò che è danese — con ordine: venticinque di alesaggio, B come due cilindri."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "callesen:427-co",
+            "engine_model": "427-CO",
+            "year_introduced": 1959,
+            "year_discontinued": 1990,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "270mm-bore triple of the 427 line, ~240 hp; four-stroke direct-drive at 425 rpm, keel-cooled.",
+              "description": "Il tre della grande serie: duecentoquaranta cavalli a quattrocentoventicinque giri, presa diretta sull'elica, raffreddamento a chiglia. Un motore che gira al ritmo del respiro e dura al ritmo delle generazioni."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "callesen:427-dot",
+            "engine_model": "427-DOT",
+            "year_introduced": 1966,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Turbocharged 270mm four (T = turbo, from 1966), 460 hp @ 425 rpm.",
+              "description": "Il quattro turbo: quando nel 1966 Aabenraa aggiunse la T alla sigla, i suoi lenti giganti impararono a respirare in pressione senza cambiare passo. Quattrocentosessanta cavalli a giri da carillon — la potenza senza la fretta."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "callesen:427-fot",
+            "engine_model": "427-FOT",
+            "year_introduced": 1966,
+            "year_discontinued": 1999,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The iconic surviving Callesen: 270mm turbo six (~137L!), 690 hp @ 425 rpm; keel-cooled trawler classic. The house's spares live on with BUKH A/S (see Bukh).",
+              "description": "L'icona: sei cilindri da ventisette centimetri d'alesaggio — centotrentasette litri — per seicentonovanta cavalli a quattrocentoventicinque giri. Il grande lento dei pescherecci nordici, così longevo che i suoi ricambi hanno cambiato casa senza cambiare città: oggi li custodisce Bukh, l'antica rivale diventata coinquilina (vedi Bukh). Le dinastie danesi finiscono così — a vivere insieme."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

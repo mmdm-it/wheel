@@ -1,0 +1,153 @@
+{
+  "_dossier": "028b Kermath. Rulings: founded 1918→1910 (James Kermath, Detroit; 'Oscar' refuted); dissolved 1962→1957 (rights sold; production dead 1954); 8-bucket DELETED (no 8-cyl Kermath found). 'A Kermath Always Runs.' Sea Wolf 225 = Hacker-Craft standard (cross-ref); Sea Raider V12s in AAF crash boats; killed by the postwar auto-V8 wave it refused to join.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Kermath",
+  "node": {
+    "year_founded": 1910,
+    "year_dissolved": 1957,
+    "sort_number": 45,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "kermath:sea-pup",
+            "engine_model": "Sea Pup",
+            "year_introduced": 1946,
+            "year_discontinued": 1954,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "5 hp postwar single — the smallest bearer of the great slogan.",
+              "description": "Il cucciolo di mare: cinque cavalli postbellici col motto di famiglia sulle spalle — 'A Kermath Always Runs'. Anche il più piccolo doveva onorarlo, e per quanto risulta lo fece."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "kermath:sea-twin",
+            "engine_model": "Sea Twin",
+            "year_introduced": 1946,
+            "year_discontinued": 1954,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "10 hp postwar twin.",
+              "description": "Il gemello del dopoguerra: dieci cavalli per lance e tender, nell'ultima stagione della casa di Commonwealth Avenue. La discesa di scala d'un impero che aveva fatto correre i V12."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "kermath:the-kermath",
+            "engine_model": "The Kermath",
+            "year_introduced": 1911,
+            "year_discontinued": 1926,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The first: 12 hp L-head four of 1911. James Kermath — London, Ontario born, Detroit made — built the house on it, then lost it to investors and finished his career at Fisher Body.",
+              "description": "Il primo: dodici cavalli a testa piatta, 1911, e un nome messo direttamente sul motore come si firma un quadro. James Kermath costruì l'impero e lo perse — gli investitori presero la casa, lui finì alla Fisher Body. Il motto che aveva coniato continuò a correre senza di lui."
+            }
+          },
+          {
+            "id": "kermath:sea-jeep",
+            "engine_model": "Sea Jeep",
+            "year_introduced": 1953,
+            "year_discontinued": 1954,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "61 hp utility four of the very last catalogue (~).",
+              "description": "Il factotum dell'ultimo listino: sessantun cavalli senza pretese, un anno scarso di produzione, e poi il silenzio. Annotato con riserva, come si annotano gli ultimi nati delle grandi famiglie."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "kermath:sea-king",
+            "engine_model": "Sea King",
+            "year_introduced": 1922,
+            "year_discontinued": 1930,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "150 hp L-head six — flagship of the flathead era (Sea Farer alongside; the Sea-Bird/Sea-Dog/Sea-Eagle fleet below).",
+              "description": "Il re dell'era a testa piatta: centocinquanta cavalli al vertice d'una flotta di nomi marinari — Sea-Bird, Sea-Dog, Sea-Eagle, Sea-Queen. La Detroit degli anni Venti battezzava i motori come navi, e li vendeva come promesse."
+            }
+          },
+          {
+            "id": "kermath:sea-wolf-225",
+            "engine_model": "Sea Wolf 225",
+            "year_introduced": 1930,
+            "year_discontinued": 1943,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "678 cid OHV six, 225 hp — the highest-production Kermath and the standard power of Hacker-Craft's 26-30 ft runabouts; the 1926 original Sea Wolf brought overhead valves to the runabout world.",
+              "description": "Il lupo di mare: il sei a valvole in testa che nel 1926 cambiò il motoscafo americano, qui nella taratura da 225 cavalli che divenne la più prodotta della casa. I runabout di Hacker lo montavano di serie — il mogano più bello d'America correva a Kermath, e lo slogan reggeva la prova."
+            }
+          },
+          {
+            "id": "kermath:sea-raider-6",
+            "engine_model": "Sea Raider 6",
+            "year_introduced": 1942,
+            "year_discontinued": 1949,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "~800 cid stroked six, 250-275 hp; wartime and 42-ft boat duty.",
+              "description": "Il sei di guerra: il lupo allungato nella corsa fino a ottocento pollici cubi, per i mezzi militari minori e i cabinati veloci del dopoguerra immediato. Il ramo sobrio della famiglia Raider."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "kermath:sea-raider",
+            "engine_model": "Sea Raider",
+            "year_introduced": 1929,
+            "year_discontinued": 1940,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1,414 cid OHC V12, four valves per cylinder, twin-plug, dry sump — 300 to 450 hp. Race-engine architecture sold over the counter.",
+              "description": "Il predone: un V12 da millequattrocento pollici cubi con distribuzione in testa, quattro valvole per cilindro, doppia accensione e carter secco — architettura da Gran Premio venduta a listino per motoscafi. Nel 1929 l'America del mogano non aveva niente di più ambizioso."
+            }
+          },
+          {
+            "id": "kermath:sea-raider-special",
+            "engine_model": "Sea Raider Special",
+            "year_introduced": 1938,
+            "year_discontinued": 1945,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "450-550 hp war-rated V12; three per AAF 104-ft crash rescue boat — the contracts that carried the house through the war (the 1,560 cid Sea Raider 12 stretched to 580 hp).",
+              "description": "Il dodici in uniforme: tre per ogni crash boat da 104 piedi dell'aviazione americana, a ripescare equipaggi dove gli aerei finivano in mare. Cinquecentocinquanta cavalli per il mestiere più urgente del Pacifico — i contratti di guerra tennero in vita la casa, che della pace non avrebbe superato il primo decennio."
+            }
+          },
+          {
+            "id": "kermath:sea-zephyr",
+            "engine_model": "Sea Zephyr",
+            "year_introduced": 1937,
+            "year_discontinued": 1942,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Marinized Lincoln Zephyr V12, 292 cid, 100-120 hp — the affordable twelve.",
+              "description": "Il dodici democratico: il V12 della Lincoln Zephyr vestito da mare, cento cavalli di dolcezza automobilistica per chi voleva dodici cilindri senza il conto del Raider. L'ironia postuma: fu proprio la marinizzazione dei motori d'auto, che Kermath assaggiò qui, a ucciderla nel dopoguerra — quando gli altri la fecero con i V8 e lei no (vedi Chrysler, vedi MerCruiser)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "_dossier": "027b Dorman. Rulings: founded 1877→1870; dissolved 1979→1995 (GEC → Broadcrown 1987 → Perkins 1993, last Dorman engine 1995); buckets [4,6,8] → [2,3,4,6,8,12] (12Q V12 real). RNLI claim NOT verified — generic ships'-lifeboats only. 1969 catalogue: 36 diesels, 5.5-910 bhp.",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Dorman",
+  "node": {
+    "year_founded": 1870,
+    "year_dissolved": 1995,
+    "sort_number": 21,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "dorman:2dsm",
+            "engine_model": "2DSM",
+            "year_introduced": 1935,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Small marinized twin, 10 hp @ 1,000 — launch scale.",
+              "description": "Il bicilindrico da lancia: dieci cavalli a mille giri della Stafford minore, per i mezzi di servizio dei fiumi e degli estuari inglesi. La provincia industriale britannica in miniatura."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "dorman:3dl",
+            "engine_model": "3DL",
+            "year_introduced": 1945,
+            "year_discontinued": 1965,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Long-stroke triple of the DL workboat family, 64.5 hp @ 1,500; DLM marine trims.",
+              "description": "Il tre a corsa lunga: sessantacinque cavalli di famiglia DL, con le versioni marine a listino. Il diesel inglese che non aveva fretta perché la marea nemmeno."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "dorman:4dwd",
+            "engine_model": "4DWD",
+            "year_introduced": 1933,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The classic small Dorman four (4.53\" x 5.12\"), 69 hp industrial / 38 hp @ 1,000 in 4DWDM marine trim; tugs, dredgers, pilot vessels, ships' lifeboats.",
+              "description": "Il classico di Stafford: il quattro degli anni Trenta che servì rimorchiatori minori, draghe, pilotine e scialuppe di bordo. Trentotto cavalli marini a mille giri — la Gran Bretagna operosa che non finiva sui giornali e teneva in moto i porti."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "dorman:6lb",
+            "engine_model": "6LB",
+            "year_introduced": 1952,
+            "year_discontinued": 1968,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "110 hp @ 1,800 six of the mainstream post-war LB range (twins to eights).",
+              "description": "Il sei della serie LB: il centro del listino del dopoguerra, centodieci cavalli per pescherecci e mezzi da lavoro. La gamma andava dal bicilindrico all'otto — Stafford copriva il porto intero."
+            }
+          },
+          {
+            "id": "dorman:6qtm",
+            "engine_model": "6QTM",
+            "year_introduced": 1968,
+            "year_discontinued": 1990,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Turbo marine six of the Q range (from 1968, the English Electric/GEC era); survives in the spares trade (~).",
+              "description": "Il sei turbo dell'era Q: quando Dorman era ormai una divisione dei giganti elettrici, la gamma del 1968 tenne il marchio in acqua fino agli anni del tramonto. I ricambi girano ancora — i marchi muoiono, i basamenti no."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "dorman:8lb",
+            "engine_model": "8LB",
+            "year_introduced": 1954,
+            "year_discontinued": 1968,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "152 hp @ 1,800 eight, top of the LB line.",
+              "description": "L'otto della famiglia LB: il vertice della gamma classica, per gli scafi che chiedevano a Stafford l'ultima parola. Centocinquantadue cavalli di understatement."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "dorman:12qt",
+            "engine_model": "12QT",
+            "year_introduced": 1969,
+            "year_discontinued": 1987,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V12 top of the Q range — the 1969 catalogue peaked at 910 bhp (~ marine installs; charge-cooled QTCA/QTCW trims existed).",
+              "description": "Il dodici della serie Q: novecentodieci cavalli in cima al catalogo del 1969, con le varianti interrefrigerate a seguire. L'ambizione finale d'una casa nata per fare utensili da calzolaio un secolo prima — le biografie industriali inglesi finiscono spesso così, in dodici cilindri."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

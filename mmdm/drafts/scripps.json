@@ -1,0 +1,120 @@
+{
+  "_dossier": "030b Scripps. Rulings: founded 1914→1906 (W.E. Scripps, Detroit News family); dissolved 1942→1956 (Henkel acquired remains 1963, still services); +[2] (the transatlantic twin). Ford GAA and Miss Detroit claims REFUTED, dropped. V8 hedged on the surviving price list. Hacker cross-ref closed (1938 top-line Hackers = Scripps V12).",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Scripps",
+  "node": {
+    "year_founded": 1906,
+    "year_dissolved": 1956,
+    "sort_number": 82,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "scripps:transatlantic-twin",
+            "engine_model": "16 HP Twin",
+            "year_introduced": 1910,
+            "year_discontinued": 1920,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE MONUMENT: in 1912 this 16 hp twin drove the 35-ft double-ender 'Detroit' from New York to St. Petersburg, Russia — the smallest powerboat Atlantic crossing of its day, skippered by Thomas Fleming Day of The Rudder; the boat caught fire mid-ocean and finished anyway.",
+              "description": "Il gemello transatlantico: nel 1912 sedici cavalli di bicilindrico Scripps portarono il Detroit — dieci metri e mezzo di scafo a doppia punta — da New York a San Pietroburgo, attraverso un incendio a metà oceano e lo scetticismo di tutti. Al timone c'era il direttore d'una rivista nautica, deciso a dimostrare che il piccolo entrobordo poteva tutto. Dimostrato. La più piccola traversata atlantica a motore della sua epoca porta questa firma di Detroit."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "scripps:f4",
+            "engine_model": "F4",
+            "year_introduced": 1920,
+            "year_discontinued": 1935,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The period four of the E/F lines, kerosene-capable like most early Scripps (~).",
+              "description": "Il quattro dell'era E/F: benzina o cherosene, secondo la borsa dell'armatore. Il mestiere quotidiano d'una casa che sapeva fare anche i miracoli, ma viveva di lance e cabinati."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "scripps:f6",
+            "engine_model": "F6",
+            "year_introduced": 1924,
+            "year_discontinued": 1932,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The six that powered Chris-Craft's first-year 22-ft Cadet (1927) — and Gar Woods and Hackers besides.",
+              "description": "Il sei dei debutti: quando Chris-Craft varò il suo primo Cadet, nel 1927, in sala macchine c'era questo. Anche Gar Wood e Hacker attingevano al listino di casa Scripps — la Detroit del mogano era un condominio, e questa famiglia abitava al piano nobile."
+            }
+          },
+          {
+            "id": "scripps:202",
+            "engine_model": "202",
+            "year_introduced": 1928,
+            "year_discontinued": 1938,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "678 cid big six, 200 hp — the flagship below the V12s.",
+              "description": "Il grande sei: duecento cavalli da seicentosettantotto pollici cubi, l'ammiraglia di chi non arrivava al dodici. Nella Detroit degli anni ruggenti era già un biglietto da visita sontuoso."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "scripps:v8",
+            "engine_model": "V8",
+            "year_introduced": 1935,
+            "year_discontinued": 1948,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Known chiefly from the surviving 'V8 and V12 Price List' in the Puget Sound maritime archive (~) — the eight existed; the details await the archive.",
+              "description": "L'otto documentato da un listino: l'archivio marittimo di Puget Sound conserva il tariffario 'V8 e V12' della casa — prova che l'otto esistette, promessa che i dettagli arriveranno. Annotato con riserva e con fiducia negli archivisti."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "scripps:302",
+            "engine_model": "302",
+            "year_introduced": 1929,
+            "year_discontinued": 1947,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "894 cid 60° V12, 316 hp, dual ignition — the glamour engine of the Gar Wood Streamliners; wartime units built through 1942.",
+              "description": "Il dodici del glamour: novecento pollici cubi scarsi a doppia accensione, trecentosedici cavalli, e le Streamliner di Gar Wood come vetrina. Se il mogano americano avesse un profumo, sarebbe l'olio caldo di un 302."
+            }
+          },
+          {
+            "id": "scripps:312",
+            "engine_model": "312",
+            "year_introduced": 1937,
+            "year_discontinued": 1942,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The V12 of the 1938 top-line Hacker-Crafts — Seaflow II, one of two survivors, still carries hers.",
+              "description": "Il dodici dei grandi Hacker: i runabout maggiori del 1938 lo montavano in opzione, e la Seaflow II — una delle due superstiti — naviga ancora col suo. Il costruttore di barche più elegante d'America non fece mai un motore: scelse questi (e questo catalogo, che ha sciolto quella casa tra i motoristi, qui ne onora il gusto)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

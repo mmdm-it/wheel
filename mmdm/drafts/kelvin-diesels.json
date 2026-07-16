@@ -1,0 +1,192 @@
+{
+  "_dossier": "028a Kelvin Diesels. Rulings: dissolved 1984 → null (brand extant, British Polar Engines, Glasgow); buckets +[1,3]. Bergius car 1904 → rowing-gig race 1906 → marine pivot. Poppet 16,000+ built; Kelvin-Ricardo w/ Harry Ricardo; K-series 1931 petrol-start diesel = Scottish herring-fleet icon; T-series still listed.",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Kelvin Diesels",
+  "node": {
+    "year_founded": 1904,
+    "year_dissolved": null,
+    "sort_number": 44,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "kelvin:poppet-3.5",
+            "engine_model": "Poppet 3.5",
+            "year_introduced": 1915,
+            "year_discontinued": 1945,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "749cc petrol/paraffin single of the Poppet Valve range — a family that built over 16,000 units across three decades.",
+              "description": "Il piccolo della dinastia Poppet: sedicimila esemplari in trent'anni dicono quanto la Scozia si fidasse di questi motori a petrolio. Nato da una casa che aveva cominciato costruendo automobili — finché il motore di una di esse, messo in una lancia a remi nel 1906, vinse una regata e decise il destino di tutti."
+            }
+          },
+          {
+            "id": "kelvin:k1",
+            "engine_model": "K1",
+            "year_introduced": 1932,
+            "year_discontinued": 1960,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "4.0L diesel single, 21 hp @ 750; the K-series' petrol-start system — starts as a petrol engine, then switches to diesel.",
+              "description": "Il monocilindrico con il trucco di famiglia: si avvia a benzina, come un motore qualsiasi, poi passa al gasolio e diventa un diesel. Ventun cavalli di ingegno di Glasgow per barche che non avevano aria compressa né batterie da sprecare."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "kelvin:k2",
+            "engine_model": "K2",
+            "year_introduced": 1931,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "8.1L twin, 44 hp — the FIRST Kelvin diesel (1931), petrol-start; the sound of the Scottish ring-net herring fleet.",
+              "description": "Il primo diesel della casa: quarantaquattro cavalli a giri da pendolo, avviamento a benzina, e il tonfo lento che divenne la voce dei porti scozzesi. Le ring-netter delle aringhe uscivano al suo ritmo — 'On and On Forever', dice la letteratura dei devoti, e non è iperbole ma constatazione."
+            }
+          },
+          {
+            "id": "kelvin:p2",
+            "engine_model": "P2",
+            "year_introduced": 1954,
+            "year_discontinued": 1984,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "1.1L twin, 10 hp @ 1,500; the first non-Bergius design — the small modern Kelvin.",
+              "description": "Il bicilindrico moderno: il primo progetto non uscito dalla matita dei Bergius, per lance e piccole barche da lavoro del dopoguerra. La casa cambiava proprietari a ogni decennio; i motori, carattere mai."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "kelvin:k3",
+            "engine_model": "K3",
+            "year_introduced": 1932,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "12.1L triple, 66 hp; the middle of the herring-fleet range.",
+              "description": "Il tre della flotta: sessantasei cavalli per le barche di mezzo, tra il gozzo e il peschereccio vero. La scala K saliva per cilindri interi — e la Scozia comprava a ogni gradino."
+            }
+          },
+          {
+            "id": "kelvin:t3",
+            "engine_model": "T3",
+            "year_introduced": 1974,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "90 hp triple of the T-series — the range that still carries the Kelvin name under British Polar Engines, Glasgow.",
+              "description": "Il tre dell'era T: novanta cavalli, e la sorpresa più bella della pratica — il marchio vive ancora, a Glasgow, sotto le insegne British Polar. Centovent'anni dopo la corsa in barca a remi, si può ancora ordinare un Kelvin nuovo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "kelvin:poppet-12-14",
+            "engine_model": "Poppet 12/14",
+            "year_introduced": 1909,
+            "year_discontinued": 1946,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "3.0L petrol/paraffin four, 12-14 hp @ 900; thirty-seven years in the catalogue — by WWI a thousand fishing boats and 250 yachts ran Kelvin.",
+              "description": "Il quattro dei pionieri: trentasette anni di listino ininterrotto, e già alla Grande Guerra mille pescherecci e duecentocinquanta yacht andavano a Kelvin. Il petrolio illuminante come carburante e Glasgow come garanzia."
+            }
+          },
+          {
+            "id": "kelvin:k4",
+            "engine_model": "K4",
+            "year_introduced": 1932,
+            "year_discontinued": 1960,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "16.2L four, 88 hp; the big ring-netter and puffer engine (Clyde puffers converted from steam ran these).",
+              "description": "L'ottantotto cavalli delle grandi ring-netter — e dei puffer del Clyde convertiti dal vapore, che con un K4 in sala macchine smisero di fare carbone e non di fare storia. Sedici litri di Scozia essenziale."
+            }
+          },
+          {
+            "id": "kelvin:r4",
+            "engine_model": "R4",
+            "year_introduced": 1962,
+            "year_discontinued": 1978,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "7.2L four, 75 hp @ 1,500; the R-series modernization.",
+              "description": "Il quattro dell'ammodernamento: giri più alti, litri dimezzati, stessa clientela. La transizione dal mondo dei tonfi a quello dei regimi, gestita con prudenza presbiteriana."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "kelvin:k6",
+            "engine_model": "K6",
+            "year_introduced": 1933,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "24.3L six, 132 hp; top of the classic K range.",
+              "description": "Il sei maggiore della dinastia classica: centotrentadue cavalli per i pescherecci d'altura scozzesi che spingevano il mestiere fino alle Shetland. Il vertice dell'era Bergius."
+            }
+          },
+          {
+            "id": "kelvin:t6",
+            "engine_model": "T6",
+            "year_introduced": 1974,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "180 hp six of the T-series (TA/TAS trims above it).",
+              "description": "Il sei contemporaneo: centottanta cavalli nella forma base e tarature maggiori a salire. Il Kelvin che si compra oggi, per chi vuole che il porto suoni ancora giusto."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "kelvin:t8",
+            "engine_model": "T8",
+            "year_introduced": 1975,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "240 hp eight of the T-series.",
+              "description": "L'otto della gamma T: duecentoquaranta cavalli a mille giri per i pescherecci maggiori del marchio. La taglia grande della Scozia motorista."
+            }
+          },
+          {
+            "id": "kelvin:tbsc8",
+            "engine_model": "TBSC8",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "31.5L eight, 535 hp @ 1,350 — the mightiest Kelvin.",
+              "description": "Il più potente Kelvin mai costruito: trentun litri e mezzo, cinquecentotrentacinque cavalli. Dalla lancia a remi del 1906 fin qui — le dinastie serie non corrono, arrivano."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

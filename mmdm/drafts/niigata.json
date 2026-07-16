@@ -1,0 +1,120 @@
+{
+  "_dossier": "029c Niigata. Rulings: founded 1896→1895 (Nippon Oil works); buckets +[16,18] (16V20FX; 18MG28AHX inline-18). Japan's first industrial diesel 1919; Z-Peller 1969 (5,000+, only maker designing engine+drive together); bankruptcy 2001 → Niigata Power Systems 2003 → IHI Power Systems 2019 (cross-ref IHI). THE harbor-tug engine.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Niigata",
+  "node": {
+    "year_founded": 1895,
+    "year_dissolved": null,
+    "sort_number": 71,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "niigata:6m34nt",
+            "engine_model": "6M34NT",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "340mm-bore low-speed four-stroke six, ~1,900 kW at 280-310 rpm — the 6M line: ocean fishery and inland cargo, direct drive, unhurried.",
+              "description": "Il sei lento della tradizione: alesaggio da trentaquattro centimetri, giri sotto i trecento, presa quasi diretta sull'elica. La linea 6M ha portato la pesca oceanica giapponese per due generazioni — il battito calmo che nei porti del Mar del Giappone significa casa."
+            }
+          },
+          {
+            "id": "niigata:6mg28hx",
+            "engine_model": "6MG28HX",
+            "year_introduced": 1990,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "280x370mm medium-speed six, ~2,580 PS @ 750; the HX series is the house's best-seller — THE harbor-tug engine, usually married to the house's own Z-Peller azimuth drive (first delivered 1969, 5,000+ since).",
+              "description": "Il motore dei rimorchiatori: il sei della serie HX, best-seller della casa, quasi sempre sposato allo Z-Peller — il propulsore azimutale che Niigata inventò nel 1969 e di cui resta l'unico costruttore che disegna insieme motore e piede. Nei porti dall'Asia al Golfo, quando una nave da centomila tonnellate si gira docile, sotto c'è spesso questa coppia."
+            }
+          },
+          {
+            "id": "niigata:6l28ahx-df",
+            "engine_model": "6L28AHX-DF",
+            "year_introduced": 2015,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Dual-fuel six, 1,920 kW — the world's FIRST four-stroke dual-fuel engine direct-coupled to a fixed-pitch propeller on an LNG-fueled harbor tug; Tier III in gas mode.",
+              "description": "Il primato contemporaneo: il primo quattro tempi bicombustibile al mondo accoppiato in presa diretta su un rimorchiatore a gas naturale. La casa che nel 1919 costruì il primo diesel del Giappone apre anche il capitolo successivo — la storia, a Niigata, si scrive per prime volte."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "niigata:8mg28hx",
+            "engine_model": "8MG28HX",
+            "year_introduced": 1992,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The eight of the HX tug line, ~3,300 PS @ 750.",
+              "description": "L'otto della famiglia: tremilatrecento cavalli per i rimorchiatori maggiori e i mezzi da lavoro d'altura. La scala HX sale per cilindri interi, come le gru dei porti che serve."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "niigata:12mg28ahx",
+            "engine_model": "12MG28AHX",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Inline(!) twelve of the Miller-cycle AHX line, ~4,440 kW.",
+              "description": "Il dodici in linea — non a V: la serie AHX allunga la fila fino a dodici cilindri con ciclo Miller e fasatura variabile. L'ostinazione giapponese per la linea retta, portata alle sue conseguenze."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "16": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "niigata:16v20fx",
+            "engine_model": "16V20FX",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "205x220mm high-speed V16, 4,000 kW @ 1,650 — fast ferries and patrol craft.",
+              "description": "L'eccezione a V: sedici cilindri veloci per i traghetti rapidi e le motovedette del Pacifico. Quando serve correre, anche Niigata piega la fila in due."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "18": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "niigata:18mg28ahx",
+            "engine_model": "18MG28AHX",
+            "year_introduced": 2012,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "An INLINE EIGHTEEN — 6,660 kW / 9,055 PS at 800 rpm; the AHX line's improbable summit.",
+              "description": "Il diciotto in linea: novemila cavalli in una fila sola di cilindri, lunga come un autobus. Dove Napier risolse il diciotto col triangolo, Niigata lo risolse non risolvendolo — continuando ad aggiungere cilindri finché il problema si è arreso. Due filosofie, uno scomparto."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

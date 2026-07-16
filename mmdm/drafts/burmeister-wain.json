@@ -1,0 +1,92 @@
+{
+  "_dossier": "026f Burmeister & Wain. Rulings: 4-bucket ADDED (Alpha 404). At manifold scale this house = Alpha Diesel Frederikshavn (B&W majority 1938, renamed Alpha 1953); Selandia DM8150-X = heritage monument in 8. Dissolved 1980 confirmed (engine business → MAN). Ship-scale MC two-strokes = prose only.",
+  "market": "eurasia",
+  "country": "Danimarca",
+  "manufacturer": "Burmeister & Wain",
+  "node": {
+    "year_founded": 1846,
+    "year_dissolved": 1980,
+    "sort_number": 11,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "bw:alpha-404",
+            "engine_model": "Alpha 404",
+            "year_introduced": 1945,
+            "year_discontinued": 1965,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Two-stroke trunk four of the Alpha Frederikshavn works, ~280 hp; the Danish fishing-cutter staple, sold with the house's pioneering controllable-pitch propellers (~).",
+              "description": "Il quattro di Frederikshavn: due tempi a pistoni portanti, duecentottanta cavalli, e l'elica a passo variabile che la fabbrica dello Jutland offriva da prima che diventasse moda. I cutter danesi del dopoguerra navigavano così — a passo regolabile e a fiducia fissa."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "bw:alpha-406",
+            "engine_model": "Alpha 406",
+            "year_introduced": 1960,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Two-stroke six, 260mm bore (the naming: 40X = cylinders, -26 = bore in cm), ~600 hp; fishing vessels and small ferries.",
+              "description": "Il sei della serie: seicento cavalli di due tempi per pescherecci maggiori e piccoli traghetti danesi. La sigla si legge come un codice postale dello Jutland — quattro-zero-sei, sei cilindri; ventisei, l'alesaggio in centimetri. L'ordine danese applicato alla nomenclatura."
+            }
+          },
+          {
+            "id": "bw:6l23-30",
+            "engine_model": "6L23/30",
+            "year_introduced": 1972,
+            "year_discontinued": 1980,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "225x300mm four-stroke six, ~670 kW; the generation that replaced Alpha's two-strokes — small-ship propulsion and gensets (line continued under MAN B&W after 1980).",
+              "description": "Il cambio d'epoca: il quattro tempi che pensionò i due tempi di famiglia, per piccole navi e generazione di bordo. Dopo il 1980 avrebbe continuato la carriera sotto le insegne MAN — ma il progetto era danese, e Frederikshavn non l'ha dimenticato."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "bw:dm8150x",
+            "engine_model": "DM 8150-X",
+            "year_introduced": 1912,
+            "year_discontinued": 1920,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE MONUMENT: twin 8-cylinder four-stroke crosshead diesels, 1,250 ihp each, of M/S Selandia (1912) — the world's first ocean-going diesel motor ship. Famously funnel-less, exhaust up the mast; Churchill visited her in London.",
+              "description": "Il motore che cambiò il mare: due esemplari da otto cilindri e milleduecentocinquanta cavalli spinsero la Selandia, prima motonave oceanica della storia, da Copenaghen a Bangkok nel febbraio 1912. Niente fumaiolo — lo scarico saliva lungo l'albero, e i porti non capivano cosa stessero guardando. Churchill andò a vederla di persona. Ogni motore di questo catalogo, in un senso preciso, discende da questi due."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "bw:12u28l",
+            "engine_model": "12U28L",
+            "year_introduced": 1975,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "280x320mm twelve of the 28-type, to ~3,900 kW propulsion; coaster and ferry scale (~).",
+              "description": "Il dodici della serie 28: il gradino più alto che questo catalogo concede alla casa di Copenaghen — oltre, cominciano i due tempi da nave e un altro mestiere. Annotato con riserva, al confine del perimetro."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

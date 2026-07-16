@@ -1,0 +1,80 @@
+{
+  "_dossier": "027d Hyundai. Rulings: buckets [4,6,8] → [4,6] (no SeasAll eight; HiMSEN = ship-scale, different corporate group, prose-only). House = Hyundai SeasAll (founded Aug 2009, 'all of the oceans'), marinized Hyundai/Kia auto and truck blocks; S/P/J = sterndrive/shaft/jet trims.",
+  "market": "eurasia",
+  "country": "Corea del Sud",
+  "manufacturer": "Hyundai",
+  "node": {
+    "year_founded": 1967,
+    "year_dissolved": null,
+    "sort_number": 36,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "hyundai:u125",
+            "engine_model": "U125",
+            "year_introduced": 2009,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.6L common-rail four, 125 hp @ 4,000 — the entry SeasAll, on the U-series car diesel; sterndrive, shaft or jet trims.",
+              "description": "Il piccolo della flotta SeasAll: il millesei common rail delle utilitarie coreane, marinizzato con tre uscite a scelta — piede, asse o idrogetto. La Corea motoristica che nel 2009 decise che anche il mare era mercato interno."
+            }
+          },
+          {
+            "id": "hyundai:r200",
+            "engine_model": "R200",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2.2L R-engine four (the Santa Fe/Sorento donor), 200 hp @ 3,800.",
+              "description": "Il duemiladue delle Santa Fe prestato al diporto: duecento cavalli di common rail da SUV, vestiti da mare a Gyeonggi-do. Il donatore coreano moderno — la tradizione dei blocchi stradali in barca continua con un altro alfabeto."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "hyundai:s270",
+            "engine_model": "S270",
+            "year_introduced": 2009,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "3.0L V6 diesel (CGI block, piezo common rail, variable-geometry turbo), 270 hp — the leisure flagship.",
+              "description": "L'ammiraglia del diporto: il V6 diesel da tre litri con basamento in ghisa compattata e turbo a geometria variabile — ingegneria da salone dell'auto in sala macchine. Duecentosettanta cavalli di Corea contemporanea."
+            }
+          },
+          {
+            "id": "hyundai:h380",
+            "engine_model": "H380",
+            "year_introduced": 2012,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "10L truck-block inline six, 380 hp; the H-series workboat line.",
+              "description": "Il sei da camion in versione da lavoro: dieci litri e trecentottanta cavalli per pescherecci e mezzi da servizio del Pacifico. La SeasAll con la tuta da meccanico."
+            }
+          },
+          {
+            "id": "hyundai:l500",
+            "engine_model": "L500",
+            "year_introduced": 2012,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "12.7L inline six, 500 ps (L600/L700 above it); the heavy workboat line. The only Hyundai marine eights are HiMSEN ship engines — another corporate house entirely.",
+              "description": "Il maggiore della gamma: dodici litri e sette da cinquecento cavalli, con i fratelli 600 e 700 sopra. Qui la casa si ferma: gli otto cilindri marini che portano il nome Hyundai appartengono ai colossi navali di un altro ramo della dinastia — e a un'altra scala del mare."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

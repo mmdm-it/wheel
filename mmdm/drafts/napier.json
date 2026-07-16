@@ -1,0 +1,97 @@
+{
+  "_dossier": "029b Napier. Rulings: buckets [6,12,18] → [9,12,18] (Deltic 9 = real Hunt-class propulsion; no marine six found). 1808 London. Dorothy Levitt 1903 = FIRST water speed record ever (Napier launch, Harmsworth). Sea Lion ~2,200 built, RAF HSL fleet. Deltic triangle: 3 cranks, opposed pistons, fires every 20°. CORRECTION: Bluebird K3/K4 were Rolls-Royce — Napier's Bluebirds were the CARS.",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Napier",
+  "node": {
+    "year_founded": 1808,
+    "year_dissolved": 1986,
+    "sort_number": 70,
+    "cylinders": {
+      "9": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "napier:deltic-9-59k",
+            "engine_model": "Deltic 9-59K",
+            "year_introduced": 1975,
+            "year_discontinued": 1985,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "9-cylinder Deltic, 950 hp @ 1,700; three per Hunt-class minehunter — built NON-MAGNETIC (stainless cranks and rods) for the mine-hunting trade.",
+              "description": "Il Deltic minore, con la specifica più paranoica del catalogo: costruito amagnetico — alberi e bielle in acciaio inox — perché il suo mestiere era avvicinarsi alle mine magnetiche senza salutarle. Tre per ogni cacciamine classe Hunt: novecentocinquanta cavalli ciascuno di prudenza triangolare."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "napier:lion-racing",
+            "engine_model": "Lion (marine racing)",
+            "year_introduced": 1928,
+            "year_discontinued": 1933,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The racing W12 afloat: Miss England I's single 930 hp Schneider-spec Lion beat Gar Wood's 2,300 hp Miss America VII at Miami 1929 — the world's fastest single-engined boat. The house's water pedigree began in 1903: Dorothy Levitt, in a Napier launch, set the FIRST water speed record ever (19.3 mph, Cork), winning the inaugural Harmsworth Trophy.",
+              "description": "Il dodici da corsa a tre bancate: novecentotrenta cavalli nella Miss England I che a Miami, nel 1929, umiliò i duemilatrecento cavalli di Gar Wood con un motore solo. Ma il primato d'acqua della casa era più antico: nel 1903 Dorothy Levitt, su una lancia Napier, stabilì il primo record mondiale di velocità sull'acqua della storia — diciannove miglia orarie, il Trofeo Harmsworth inaugurale, e le congratulazioni personali di re Edoardo VII. Questo catalogo si toglie il cappello."
+            }
+          },
+          {
+            "id": "napier:sea-lion",
+            "engine_model": "Sea Lion",
+            "year_introduced": 1933,
+            "year_discontinued": 1955,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "500 hp marinized Lion W12 'broad arrow' (three banks of four), ~2,200 built; triple installations powered the RAF's 64-ft High Speed Launches — the air-sea rescue fleet — plus MTBs and landing craft; distinct center- and wing-bank manifold castings for triple-screw installs.",
+              "description": "Il leone di mare: il W12 a freccia larga — tre bancate di quattro — marinizzato a cinquecento cavalli e costruito in oltre duemila esemplari. A terne, spingeva le High Speed Launch della RAF che andavano a ripescare i piloti nella Manica: il mestiere gemello dei crash boat americani, con un motore solo per nome. Collettori distinti per la bancata centrale e le laterali — anche la fonderia sapeva di lavorare per un motore fuori dall'ordinario."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "18": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "napier:deltic-18-11b",
+            "engine_model": "Deltic 18-11B",
+            "year_introduced": 1950,
+            "year_discontinued": 1970,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The triangle: 18 cylinders, 36 opposed pistons, THREE crankshafts, 88.3L, firing every 20° of rotation — 2,500 hp. Its demo act: re-engining a captured German E-boat at half the size and a fifth the weight of its Mercedes diesels. Dark-class fast patrol boats ran pairs.",
+              "description": "Il triangolo: diciotto cilindri disposti a delta, trentasei pistoni contrapposti, tre alberi motore, un'accensione ogni venti gradi — duemilacinquecento cavalli che ronzano come nessun altro diesel al mondo. Per presentarlo, gli inglesi rimotorizzarono una S-boot tedesca catturata: metà dell'ingombro, un quinto del peso dei Mercedes originali. Il messaggio arrivò. La geometria più audace mai messa in una sala macchine."
+            }
+          },
+          {
+            "id": "napier:deltic-t18-37k",
+            "engine_model": "Deltic T18-37K",
+            "year_introduced": 1962,
+            "year_discontinued": 1975,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Turbocharged triangle, 3,100 hp; Norwegian Tjeld/Nasty-class boats — and the US Navy's PTF fleet that ran covert operations off Vietnam.",
+              "description": "Il triangolo col turbo: tremilacento cavalli nelle veloci Nasty norvegesi, che la marina americana comprò e mandò — come PTF — alle operazioni coperte al largo del Vietnam. Il diesel più strano del mondo, nel mestiere più riservato."
+            }
+          },
+          {
+            "id": "napier:deltic-ct18-42k",
+            "engine_model": "Deltic CT18-42K",
+            "year_introduced": 1970,
+            "year_discontinued": 1985,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Charge-cooled triangle, 3,700 hp @ 2,100 (Paxman-built) — the most powerful service Deltic; Indian Navy boats at 50 knots.",
+              "description": "L'ultimo ruggito: tremilasettecento cavalli interrefrigerati, il Deltic più potente mai entrato in servizio, sui mezzi veloci indiani da cinquanta nodi. La dinastia del triangolo si chiuse così — a tutta velocità, com'era nata."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

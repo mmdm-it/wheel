@@ -1,0 +1,103 @@
+{
+  "_dossier": "030c Solé Diesel. Rulings: REPATRIATED Francia → Spagna (Martorell, Barcelona — France confusion via distributor Fenwick); founded 1916→1912 (Enrique Solé Jorba, carriage workshop). Family-owned 4th generation. Own diesels 1949; Mitsubishi partnership 1978; Kubota/Deutz/New Holland families. Stuart Turner badge-engineered Solé diesels in the 70s-80s (cross-ref).",
+  "market": "eurasia",
+  "country": "Spagna",
+  "manufacturer": "Solé Diesel",
+  "node": {
+    "year_founded": 1912,
+    "year_dissolved": null,
+    "sort_number": 85,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "sole:mini-17",
+            "engine_model": "Mini-17",
+            "year_introduced": 1988,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "635cc twin on the Mitsubishi L2E, 16 hp @ 3,600 — the iconic Mediterranean sailboat auxiliary, in the catalogue for nearly four decades.",
+              "description": "L'icona catalana: il bicilindrico Mitsubishi vestito a Martorell, sedici cavalli che dal 1988 spingono la vela mediterranea. Quarant'anni di listino ininterrotto — nel Mediterraneo spagnolo, 'il motore' e 'il Mini' sono spesso la stessa parola (vedi Mitsubishi)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "sole:mini-29",
+            "engine_model": "Mini-29",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "952cc Mitsubishi L3E triple, 27 hp @ 3,600.",
+              "description": "Il tre della famiglia Mini: il blocco L3E di Mitsubishi con l'accento del Llobregat, ventisette cavalli per la crociera di famiglia. Il sodalizio con Osaka, firmato nel 1978, ha superato le nozze d'oro."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "sole:mini-62",
+            "engine_model": "Mini-62",
+            "year_introduced": 2000,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.3L Mitsubishi four, 59 hp @ 3,000; the volume four of the range.",
+              "description": "Il quattro di volume: sessanta cavalli scarsi per i dieci-dodici metri di mezzo Mediterraneo. La quarta generazione della famiglia Solé — la casa è ancora della famiglia fondatrice, dal 1912 — lo vende in sessanta paesi."
+            }
+          },
+          {
+            "id": "sole:sk-60",
+            "engine_model": "SK-60",
+            "year_introduced": 2018,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2.43L Kubota-based four, 60 hp @ 2,700 — the newer donor partnership (see Kubota).",
+              "description": "Il quattro giapponese dell'altro fornitore: blocco Kubota, sessanta cavalli, la diversificazione prudente d'una casa che di donatori se ne intende — negli anni ha marinizzato anche Perkins, Lombardini, Mercedes e Mazda (vedi Kubota)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "sole:sm-103",
+            "engine_model": "SM-103",
+            "year_introduced": 2005,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "5.0L Mitsubishi S6S six, 103 hp @ 2,500.",
+              "description": "Il sei tranquillo: cinque litri di S6S a regimi da passeggiata, per trawler minori e barche da lavoro del litorale. La taglia dove Martorell smette di servire la vela e comincia a servire la pesca."
+            }
+          },
+          {
+            "id": "sole:sdz-280",
+            "engine_model": "SDZ-280",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Deutz-based six, 272 hp @ 2,300 — top of the house.",
+              "description": "Il vertice su base Deutz: duecentosettantadue cavalli per i mezzi veloci e i pescherecci esigenti. Un secolo dopo il carro del fondatore, la bottega di Martorell corona la gamma con un sei tedesco — il Mediterraneo è sempre stato un buon posto per i matrimoni industriali."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

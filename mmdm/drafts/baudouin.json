@@ -1,0 +1,176 @@
+{
+  "_dossier": "026a Baudouin. Rulings: buckets [2,3,16] ADDED. The Mediterranean house: DK series >22,000 built; Weichai era since 2009 in prose.",
+  "market": "eurasia",
+  "country": "Francia",
+  "manufacturer": "Baudouin",
+  "node": {
+    "year_founded": 1918,
+    "year_dissolved": null,
+    "sort_number": 5,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "baudouin:dk2",
+            "engine_model": "DK2",
+            "year_introduced": 1946,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Twin of the DK line (140mm bore), ~40-50 hp; the smallest of the great Mediterranean fishing family (~).",
+              "description": "Il gemello della dinastia DK: due cilindri per le lance e i piccoli pointu di Marsiglia, con lo stesso alesaggio dei fratelli maggiori e la stessa vocazione — durare più del pescatore. Annotato con riserva sulle date, non sulla stirpe."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "baudouin:dk3",
+            "engine_model": "DK3",
+            "year_introduced": 1946,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Triple of the DK line, ~75 hp (~).",
+              "description": "Il tre della famiglia: settantacinque cavalli di pazienza provenzale per i pescherecci minori del Mediterraneo. Dove c'era una barca da lavoro francese, c'era quasi sempre un DK di qualche taglia."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "baudouin:db4",
+            "engine_model": "DB4",
+            "year_introduced": 1930,
+            "year_discontinued": 1950,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Four of the pioneering DB range — which ran at 750 rpm when the norm was ~400: nearly double the era's speed.",
+              "description": "Il quattro della serie che cambiò il passo: nel 1930 i diesel marini giravano a quattrocento giri, e la fonderia di Marsiglia ne presentò uno che ne faceva settecentocinquanta. La metà del peso a parità di cavalli — i pescatori capirono in fretta."
+            }
+          },
+          {
+            "id": "baudouin:dnp4",
+            "engine_model": "DNP4",
+            "year_introduced": 1965,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "~197 hp four of the DNP trawler generation (~).",
+              "description": "Il quattro della generazione DNP: quasi duecento cavalli per i chalutier del dopoguerra maturo. Specifiche avare negli archivi, presenza abbondante nei porti — il rapporto consueto, per i motori che lavorano davvero."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "baudouin:dk6",
+            "engine_model": "DK6",
+            "year_introduced": 1946,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "150 hp @ 1,500 six — flagship of the DK line: over 22,000 DKs built, hundreds still running; THE Mediterranean fishing-boat engine.",
+              "description": "L'arcitipo: il sei della famiglia da oltre ventiduemila esemplari, il motore che definì il peschereccio mediterraneo per due generazioni. Da Sète a Mazara del Vallo il suo battito a millecinquecento giri era il rumore stesso del mestiere. Ne girano ancora a centinaia — l'indistruttibilità, a Marsiglia, non era uno slogan."
+            }
+          },
+          {
+            "id": "baudouin:6m26",
+            "engine_model": "6M26",
+            "year_introduced": 1991,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "15.9L six (150x150mm), 450-814 hp across .1/.2/.3 generations; the modern flagship line, continued under Weichai ownership (2009).",
+              "description": "L'ammiraglia moderna: sedici litri quadri — alesaggio e corsa uguali, centocinquanta per centocinquanta — cresciuti in trent'anni da 450 a oltre 800 cavalli. Dal 2009 la casa parla anche cinese, ma il motore è rimasto marsigliese: pescherecci, motovedette, e la solita clientela che non perdona."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "baudouin:dv8",
+            "engine_model": "DV8",
+            "year_introduced": 1958,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V8 of the first Baudouin V range, to ~600 hp; offered with controllable-pitch propellers.",
+              "description": "L'otto della prima generazione a V: per i grandi chalutier atlantici che chiedevano a Marsiglia più di quanto un sei in linea potesse dare. Con l'elica a passo variabile a listino — la casa vendeva propulsione completa, non solo motori."
+            }
+          },
+          {
+            "id": "baudouin:8f21",
+            "engine_model": "8F21",
+            "year_introduced": 2015,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Current-range eight, 1,100-1,360 hp.",
+              "description": "L'otto contemporaneo: oltre milletrecento cavalli per la fascia veloce della gamma attuale. Il seguito della storia, scritto con il common rail."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "baudouin:dv12",
+            "engine_model": "DV12",
+            "year_introduced": 1958,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V12 top of the classic range, to ~900 hp.",
+              "description": "Il dodici classico: novecento cavalli per i pescherecci oceanici e i primi mezzi veloci. Il vertice dell'era meccanica della casa."
+            }
+          },
+          {
+            "id": "baudouin:12m26",
+            "engine_model": "12M26",
+            "year_introduced": 1993,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "31.8L V12, 900-1,652 hp; the modern heavy twelve.",
+              "description": "Il dodici moderno: trentadue litri a V per motovedette, traghetti minori e yacht da lavoro. La Francia marittima che conta ci naviga sopra da trent'anni."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "16": {
+        "sort_number": 7,
+        "models": [
+          {
+            "id": "baudouin:16m33.3",
+            "engine_model": "16M33.3",
+            "year_introduced": 2018,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Current-range sixteen, 1,750-2,100 hp; top of the M33 platform.",
+              "description": "Il sedici di Marsiglia: duemila cavalli in cima alla piattaforma M33, per gli scafi che un tempo avrebbero chiesto due motori. Il secolo della casa, compiuto e superato, con i cilindri raddoppiati rispetto agli esordi."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

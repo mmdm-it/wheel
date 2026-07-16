@@ -1,0 +1,159 @@
+{
+  "_dossier": "029a Nanni. Rulings: founded 1958→1952 (Milan, Farymann marinizations; 'fratelli Nanni di Bologna' legend UNVERIFIED, dropped); buckets → [1,2,3,4,6,8]. Five-donor house: Farymann → Kubota (~1974-76) → +RMC 1982 → Toyota 2000 → John Deere 2014 → Scania 2018. Amalia Festa owner since 1991, La Teste-de-Buch. Doosan + Z-series = phantoms, dropped. ~180,000 engines.",
+  "market": "eurasia",
+  "country": "Francia",
+  "manufacturer": "Nanni",
+  "node": {
+    "year_founded": 1952,
+    "year_dissolved": null,
+    "sort_number": 69,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "nanni:farymann-single",
+            "engine_model": "Farymann Single",
+            "year_introduced": 1952,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The founding act: Farymann industrial singles marinized in Milan from 1952 — the engines on which the whole house was built (~ designations).",
+              "description": "L'atto di fondazione: nel 1952, a Milano, la casa nacque marinizzando i monocilindrici industriali Farymann per il diporto italiano. Da quel primo mestiere sarebbero discesi centottantamila motori e cinque dinastie di donatori. Annotato con riserva sulle sigle, con certezza sulla genesi."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "nanni:n2.14",
+            "engine_model": "N2.14",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "0.479L twin, 14 hp @ 3,600 on the Kubota Z482 block (see Kubota) — the current small auxiliary.",
+              "description": "Il bicilindrico d'oggi: il blocco Kubota Z482 vestito d'Arcachon, quattordici cavalli per le barche a vela di taglia gentile (vedi Kubota). Il donatore giapponese e il sarto francese — la formula che regge da mezzo secolo."
+            }
+          },
+          {
+            "id": "nanni:2.60he",
+            "engine_model": "2.60HE",
+            "year_introduced": 1980,
+            "year_discontinued": 2000,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Kubota-based twin of the HE era (HE = heat exchanger), ~13 hp (~).",
+              "description": "Il gemello dell'era HE — scambiatore di calore di serie, blocco di Osaka, clientela mediterranea. La prima generazione del sodalizio con Kubota, annotata con riserva sulle cifre e nessuna sul successo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "nanni:n3.30",
+            "engine_model": "N3.30",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.123L triple, 29 hp on the Kubota D1105 (see Kubota).",
+              "description": "Il tre della gamma dislocante: il D1105 di Kubota con l'accento della Gironda, ventinove cavalli per la vela da crociera. Il centro esatto del mestiere di casa."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "nanni:n4.50",
+            "engine_model": "N4.50",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.197L Kubota-based four, 48 hp @ 2,800.",
+              "description": "Il quattro di volume: quarantotto cavalli per la fascia più affollata della nautica a vela. Se un dieci-dodici metri francese ha un motore recente, le probabilità puntano qui."
+            }
+          },
+          {
+            "id": "nanni:t4.180",
+            "engine_model": "T4.180",
+            "year_introduced": 2005,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2.755L Toyota Land Cruiser common-rail four, 180 hp @ 3,400, twin balance shafts — the exclusive Toyota partnership (2000).",
+              "description": "Il patto con Toyota: il common rail del Land Cruiser, due contralberi di equilibratura e centottanta cavalli per il diporto plananti. L'esclusiva firmata nel 2000 aggiunse il quarto donatore alla dinastia — la casa colleziona alleanze come altri collezionano brevetti."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "nanni:n6.405",
+            "engine_model": "N6.405",
+            "year_introduced": 2014,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "6.8L John Deere 6068 base, to 405 hp — the 2014 partnership (see John Deere).",
+              "description": "Il sei americano di casa francese: il blocco John Deere 6068 — lo stesso sangue dei Lugger d'oceano — nella taratura d'Arcachon (vedi John Deere). Quinta dinastia di donatori, stessa bottega."
+            }
+          },
+          {
+            "id": "nanni:n13-cr3",
+            "engine_model": "N13 CR3",
+            "year_introduced": 2018,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "12.7L Scania six, 700-930 hp; the Platinum range (2018 partnership).",
+              "description": "Il sei svedese della gamma Platinum: dodici litri e sette di Scania fino a novecentotrenta cavalli. Con questo patto la piccola marinizzatrice di Milano completò la scala — dal monocilindrico Farymann al quasi-mille, settant'anni dopo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "nanni:t8v.350",
+            "engine_model": "T8V.350",
+            "year_introduced": 2008,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4.5L Toyota Land Cruiser V8 diesel, 349 hp.",
+              "description": "L'otto giapponese: il V8 diesel del Land Cruiser, trecentocinquanta cavalli di morbidezza da fuoristrada di lusso trapiantata in sala macchine. Il lato mondano della dinastia."
+            }
+          },
+          {
+            "id": "nanni:n16-cr3",
+            "engine_model": "N16 CR3",
+            "year_introduced": 2018,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "16.4L Scania V8, 900-1,200 hp — top of the house.",
+              "description": "Il vertice: il V8 Scania da sedici litri e mille e più cavalli. La casa che nel 1952 vestiva monocilindrici da stagno oggi corona la gamma con un otto scandinavo — le biografie industriali migliori si leggono dalla prima all'ultima riga."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

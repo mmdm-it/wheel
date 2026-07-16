@@ -1,0 +1,69 @@
+{
+  "_dossier": "030d Steyr Motors. Rulings: REPATRIATED Germania → Austria (NEW country node, sort 14.5). Buckets [4,6] confirmed (no marine twin). Monoblock (no head gasket), 2-stage unit injectors, HDS hybrid 2008 = world's first serial marine hybrid (DAME+IBEX). Arc: Werndl 1864 → Steyr-Daimler-Puch → MBO 2001 → Phoenix Tree 2012 → insolvency → Thales 2019 → Mutares 2022 → Frankfurt IPO 2024. Bukh alliance (~).",
+  "market": "eurasia",
+  "country": "Austria",
+  "manufacturer": "Steyr Motors",
+  "node": {
+    "year_founded": 1864,
+    "year_dissolved": null,
+    "sort_number": 86,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "steyr:mo94k33",
+            "engine_model": "MO94K33",
+            "year_introduced": 2000,
+            "year_discontinued": 2020,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.1L monoblock four, 90 hp @ 3,300 — head and block one casting, no head gasket to fail; two-stage unit injectors to 2,000 bar; SOLAS-approved, runs diesel or kerosene. Naming: MO + PS + turbo class + rpm/100.",
+              "description": "Il monoblocco: testa e basamento fusi in un pezzo solo — la guarnizione di testa non può cedere perché non esiste. Novanta cavalli austriaci omologati SOLAS, capaci di bere gasolio o cherosene senza fare domande. L'ingegneria di Steyr applica al mare la stessa filosofia che applicava ai fucili: meno parti, meno guasti."
+            }
+          },
+          {
+            "id": "steyr:mo174v40",
+            "engine_model": "MO174V40",
+            "year_introduced": 2005,
+            "year_discontinued": 2022,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Top 2.1L four, 170 hp @ 4,000; military RIBs and fast patrol tenders — the house's core market.",
+              "description": "Il quattro di punta: centosettanta cavalli da due litri e uno, il preferito dei gommoni militari e dei tender veloci. Ottanta cavalli al litro da un diesel navale — la piccola Austria senza sbocco al mare che motorizza i reparti d'assalto costieri altrui."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "steyr:mo306h43",
+            "engine_model": "MO306H43",
+            "year_introduced": 2008,
+            "year_discontinued": 2022,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "3.2L monoblock six, 292 hp @ 4,300; the WJ trim carried a water-jacketed exhaust — our subject matter, factory-integrated. In 2008 the house shipped the HDS: the world's first serially-produced marine hybrid (DAME and IBEX awards).",
+              "description": "L'ammiraglia monoblocco: quasi trecento cavalli da tre litri e due, con la variante WJ che integrava lo scarico in camicia d'acqua direttamente in fabbrica. Nel 2008 la stessa casa presentò il primo ibrido marino di serie al mondo — premiato a Amsterdam e in America — mentre attraversava un romanzo societario da manuale: proprietari cinesi, insolvenza, Thales, un fondo tedesco, la Borsa di Francoforte. Il motore, imperturbabile, non se n'è mai accorto."
+            }
+          },
+          {
+            "id": "steyr:se286e40",
+            "engine_model": "SE286E40",
+            "year_introduced": 2023,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Current SE-generation six, 279 hp @ 4,000, Tier III/Stage V; the monoblock philosophy continues post-IPO.",
+              "description": "La generazione attuale: il monoblocco aggiornato alle norme d'oggi, duecentottanta cavalli quotati — dal 2024 — alla Borsa di Francoforte. Centosessant'anni dopo l'armeria di Werndl, Steyr vende ancora precisione in ghisa."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "_dossier": "027f Indmar. Rulings: founded 1946→1971 (Dick & Donna Rowe, Millington TN); buckets [8] → [4,6,8]. Donor eras: Ford 351W → GM Vortec (Assault/Monsoon/MCX) → Ford Raptor 6.2 (2011+) → Ford EcoBoost EcoJet (2021+, Indmar's own jet — Rotax claim dropped). Correct Craft acquisition Nov 2022.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Indmar",
+  "node": {
+    "year_founded": 1971,
+    "year_dissolved": null,
+    "sort_number": 38,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "indmar:ecojet-2.3",
+            "engine_model": "EcoJet 2.3",
+            "year_introduced": 2021,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Ford 2.3L EcoBoost turbo four with Indmar's own jet-drive package; debuted Miami 2021, award-winning, pontoon and jet applications.",
+              "description": "La svolta a quattro cilindri: il turbo EcoBoost di Ford accoppiato all'idrogetto sviluppato in casa. Mezzo secolo dopo le pompe da irrigazione delle origini, Millington torna a spingere acqua — questa volta per divertimento."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "indmar:4.3l-v6",
+            "engine_model": "4.3L V6",
+            "year_introduced": 1985,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "262 cid GM V6, 140 hp carbureted; the entry inboard of the ski-boat lines.",
+              "description": "Il sei d'ingresso: il 4.3 di General Motors per gli sci nautici di famiglia, centoquaranta cavalli a carburatore. La porta d'accesso al mondo del lago — molti campioni hanno cominciato dietro uno di questi."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "indmar:ford-351w",
+            "engine_model": "Ford 351W",
+            "year_introduced": 1971,
+            "year_discontinued": 2002,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "5.8L Windsor V8, 240-285 hp (the HO ran GT40 heads); THE MasterCraft/Supra ski-boat engine for three decades — the era ended when Ford couldn't match GM's EFI supply.",
+              "description": "Il motore dello sci nautico americano: il Windsor da 5,8 litri che per trent'anni tirò i campionati dietro i MasterCraft e i Supra. Duecentottantacinque cavalli nella versione HO con teste GT40 — mezzo mondo ha imparato a partire dall'acqua ferma grazie a questo V8 (vedi Ford)."
+            }
+          },
+          {
+            "id": "indmar:assault-325",
+            "engine_model": "Assault 325",
+            "year_introduced": 1996,
+            "year_discontinued": 2007,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "5.7L GM Vortec V8, 310-385 hp across the line; the GM-era workhorse (MCX and Monsoon siblings).",
+              "description": "L'era General Motors: il Vortec 5.7 nelle tarature Assault, con i fratelli MCX e Monsoon a coprire i marchi amici. Il wakeboard cresceva, e Millington cresceva con lui (vedi General Motors)."
+            }
+          },
+          {
+            "id": "indmar:monsoon-450",
+            "engine_model": "Monsoon 450",
+            "year_introduced": 2015,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "6.2L GM direct-injection V8, 450 hp; the Malibu-branded modern Monsoon.",
+              "description": "Il monsone moderno: iniezione diretta, quattrocentocinquanta cavalli, e le onde artificiali dei wakeboat contemporanei da sollevare. Il mestiere di sempre, con la centralina di oggi."
+            }
+          },
+          {
+            "id": "indmar:raptor-575",
+            "engine_model": "Raptor 575",
+            "year_introduced": 2018,
+            "year_discontinued": null,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "Supercharged Ford 6.2L SOHC V8, ~575 hp — flagship of the Raptor line (2011+ return to Ford); world's largest privately-held gasoline inboard maker until the Correct Craft acquisition (2022).",
+              "description": "Il rapace: il 6.2 Ford sovralimentato da quasi seicento cavalli, ammiraglia del ritorno a Dearborn dopo l'era GM. La casa fondata da un marine e da sua moglie nel 1971 è arrivata fin qui — dal pozzo d'irrigazione all'onda perfetta, sempre a benzina."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
