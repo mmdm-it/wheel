@@ -1,0 +1,47 @@
+{
+  "_dossier": "028e Nadler. Rulings: REPATRIATED Canada → Stati Uniti (Plaquemine, LOUISIANA); founded 1920→1888 (Henry Nadler + William Blackie; Nadler sole from 1900). Contract foundry for Lockwood-Ash and Sears Motorgo; acquired the L-A inboard design and built it as the Nadler ~1930-early 1950s. 'The workhorse of the bayou' / 'Model T of the water'; magneto pad drilled with only two holes (never offered a magneto) = the ID trait. Foundry building → Plaquemine community center (2020). Cross-ref Lockwood-Ash.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Nadler",
+  "node": {
+    "year_founded": 1888,
+    "year_dissolved": 1975,
+    "sort_number": 68,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "nadler:single",
+            "engine_model": "Single",
+            "year_introduced": 1930,
+            "year_discontinued": 1950,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Small single of the Lockwood-Ash-derived line, ~3-5 hp (?); implied by the design family, thinly recorded.",
+              "description": "Il monocilindrico del bayou: la taglia minima della stirpe ereditata da Lockwood-Ash (vedi), annotata con riserva perché gli archivi della Louisiana rurale sono fatti di memoria più che di carta. Ma i motori, laggiù, si ricordano a orecchio."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "nadler:8hp-twin",
+            "engine_model": "8 HP Twin",
+            "year_introduced": 1930,
+            "year_discontinued": 1952,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE bayou engine: 8 hp twin on the Lockwood-Ash design, cast and built in Plaquemine, Louisiana — 'the workhorse of the bayou,' 'the Model T of the water'; its exhaust note named the putt-putt bateau. ID trait: only two holes drilled in the magneto pad — Nadler never offered one.",
+              "description": "Il Modello T dell'acqua: otto cavalli fusi e montati a Plaquemine, Louisiana, sul disegno comprato da Lockwood-Ash (vedi). Il suo scarico battezzò un'intera categoria di barche — il putt-putt bateau — e mezza Louisiana paludosa andò a pesca al suo ritmo per vent'anni. Si riconosce dal piano magnete forato solo a metà: la casa il magnete non lo offrì mai, e non forava per ipotesi. La vecchia fonderia è oggi il centro civico del paese — i motori buoni finiscono così, diventando casa."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

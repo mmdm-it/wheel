@@ -1,0 +1,92 @@
+{
+  "_dossier": "026b Bergen Engines. Rulings: 9-bucket ADDED (the characteristic Bergen inline-nine; FBM precedent). 1946 = first own engine (DP6, wooden fishing vessel Draupne) — founding confirmed. Ownership saga: BMV → Ulstein → Vickers → Rolls-Royce → Langley 2021 (Norway blocked Russian buyer).",
+  "market": "eurasia",
+  "country": "Norvegia",
+  "manufacturer": "Bergen Engines",
+  "node": {
+    "year_founded": 1946,
+    "year_dissolved": null,
+    "sort_number": 6,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "bergen:dp6",
+            "engine_model": "DP6",
+            "year_introduced": 1946,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The first Bergen-designed diesel, delivered 1946 — installed in the 105-ft wooden fishing vessel Draupne.",
+              "description": "Il primo motore di Bergen: consegnato nel 1946 e calato nello scafo di legno del peschereccio Draupne, centocinque piedi di Norvegia costiera. Le grandi case cominciano così — un motore, una barca di legno, un fiordo da risalire."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "bergen:krm-8",
+            "engine_model": "KRM-8",
+            "year_introduced": 1972,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Inline-eight of the K-series (250x300mm) — the series ran forty years and over 2,100 units: ferries, coasters, offshore supply vessels (~ trims).",
+              "description": "L'otto in linea della serie K: la famiglia che per quarant'anni e duemilacento esemplari fu la spina dorsale della flotta costiera norvegese — traghetti, coaster, supply vessel del Mare del Nord. Un motore da orario ferroviario, in un paese dove i traghetti sono strade."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "9": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "bergen:krm-9",
+            "engine_model": "KRM-9",
+            "year_introduced": 1972,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The inline NINE — Bergen's signature configuration; ~2,000 kW class.",
+              "description": "Il nove in linea: la configurazione che a Bergen considerano normale e il resto del mondo un'eccentricità. Nove cilindri in fila per i traghetti dei fiordi e i pescherecci oceanici — la firma della casa, scritta in un numero dispari."
+            }
+          },
+          {
+            "id": "bergen:c25-33l9",
+            "engine_model": "C25:33L9",
+            "year_introduced": 2003,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Modern nine of the C-series (250x330mm), the K-series' successor; ferries and coastal cargo.",
+              "description": "Il nove moderno: la serie C raccolse l'eredità della K senza rinunciare alla configurazione di famiglia. Sotto le insegne Rolls-Royce prima e Langley poi — la Norvegia bloccò per sicurezza nazionale la vendita a un compratore russo — il dispari di Bergen continua a navigare."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "bergen:kvm-12",
+            "engine_model": "KVM-12",
+            "year_introduced": 1975,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "V12 of the K-series, to ~5,400 hp with the V16/V18 above it; propulsion and gensets.",
+              "description": "Il dodici a V della serie K: il ramo maggiore della famiglia, per i traghetti veloci e le navi da servizio più esigenti. Sopra di lui esistevano il sedici e il diciotto — ma quella è già marina mercantile, e questo catalogo si ferma sulla soglia."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

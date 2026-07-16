@@ -1,0 +1,52 @@
+{
+  "_dossier": "029e Rolls-Royce. Rulings: buckets [6,8,12] → [12] ONLY (marinized aero V12s = the honest content). R engine record boats; ~70 Marine Merlins; Sea Griffon w/ water-cooled exhaust manifolds as THE marine modification (RAF RTTLs to 1977). Modern corporate marine (Bergen, MTU/Power Systems, Kamewa→Kongsberg 2019) = prose cross-refs only. Miss Britain III was Napier — not conflated.",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Rolls-Royce",
+  "node": {
+    "year_founded": 1904,
+    "year_dissolved": null,
+    "sort_number": 78,
+    "cylinders": {
+      "12": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "rolls-royce:r",
+            "engine_model": "R",
+            "year_introduced": 1929,
+            "year_discontinued": 1939,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "36.7L supercharged V12, 1,800-2,530 hp, 19 built for the Schneider Trophy — then sent afloat: Miss England II (110.28 mph, 1931), Miss England III (119.81, 1932), Blue Bird K3 (130.91, 1938) and K4 (141.74 mph, Coniston 1939, on methanol blend).",
+              "description": "Il V12 dei primati: nato per il Trofeo Schneider in diciannove esemplari, prestato all'acqua per riscriverne i record — le Miss England di Kaye Don, poi i Blue Bird di Malcolm Campbell fino alle 141 miglia orarie del 1939 a Coniston. Trentasei litri sovralimentati che trattavano la superficie del lago come una pista d'atterraggio. Il motore più veloce di questo intero catalogo."
+            }
+          },
+          {
+            "id": "rolls-royce:marine-merlin",
+            "engine_model": "Marine Merlin",
+            "year_introduced": 1938,
+            "year_discontinued": 1940,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "27L V12 marinized at ~1,000 hp, ~70 converted; British MTBs, MGBs and RAF rescue launches (Scott-Paine's 70-ft private-venture boat carried three) — the program stopped when every Merlin was needed in the sky.",
+              "description": "Il Merlin col piede in acqua: un migliaio di cavalli marinizzati in una settantina di esemplari per motosiluranti e lance di soccorso, tre alla volta nei settanta piedi di Scott-Paine. Il programma finì quando ogni Merlin servì al cielo — la Battaglia d'Inghilterra aveva la precedenza, e nessuno discusse."
+            }
+          },
+          {
+            "id": "rolls-royce:sea-griffon",
+            "engine_model": "Sea Griffon",
+            "year_introduced": 1957,
+            "year_discontinued": 1977,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "36.7L marinized Griffon V12, 1,100 hp continuous / ~1,450 emergency; pairs in the RAF's Vosper 68-ft rescue and target-towing launches (39 kt) to 1977. Its signature marine modification: LARGE WATER-COOLED EXHAUST MANIFOLDS — this catalog's own subject, in its noblest form.",
+              "description": "L'ultimo dei dodici marini: il Griffon delle Shackleton, derivato e addomesticato per le lance veloci della RAF, in coppia fino al 1977. La sua modifica marina distintiva erano i grandi collettori di scarico raffreddati ad acqua — l'oggetto stesso di questo catalogo, nella sua forma più nobile. Quando la superstite RTTL 2757 entrò al museo della RAF, con lei si chiuse l'era dei V12 d'aviazione andati per mare. Il ramo moderno della casa naviga altrove: Bergen, MTU, gli idrogetti — altre case di questo stesso catalogo (vedi Bergen Engines, vedi MTU)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "_dossier": "029d Renault Marine. Rulings: buckets [4,6] → [1,2,4,6,10] (singles = the soul; RC320D ten = the crown). The Arcachon bloodline: Albert Couach 1897 → first motorized pinasse 1903 → Renault Marine Couach 1972 → SOLD TO NANNI 1982 (dissolved 1982). RC-singles = Hatz-based; mid-range = Renault/Indenor; big = Saviem truck blocks. Cross-refs: Nanni.",
+  "market": "eurasia",
+  "country": "Francia",
+  "manufacturer": "Renault Marine",
+  "node": {
+    "year_founded": 1899,
+    "year_dissolved": 1982,
+    "sort_number": 77,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "renault:bd1",
+            "engine_model": "BD1",
+            "year_introduced": 1950,
+            "year_discontinued": 1970,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "5 hp Couach petrol single — the engine of the Arcachon pinasse (the Arcoa 520 carried it); the house's roots go to Albert Couach's 1897 works and the first motorized pinasse of 1903.",
+              "description": "Il monocilindrico delle pinasse: cinque cavalli per le barche tradizionali del bacino d'Arcachon, dove Albert Couach aveva motorizzato la prima pinassa della storia nel 1903. Mezzo secolo dopo, il BD1 faceva ancora lo stesso mestiere sulle stesse acque — certe geografie e certi motori si appartengono."
+            }
+          },
+          {
+            "id": "renault:rc8d",
+            "engine_model": "RC8D",
+            "year_introduced": 1972,
+            "year_discontinued": 1982,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "~673cc Hatz-based diesel single, ~8 hp; splash lubrication, dual-purpose pump (cooling + bilge) — the classic French sailboat auxiliary, lovingly rebuilt to this day.",
+              "description": "L'ausiliario francese per antonomasia: base Hatz, lubrificazione a sbattimento, e una pompa sola che raffreddava il motore e asciugava la sentina — la parsimonia elevata a progetto. Nelle barche a vela francesi degli anni Settanta era di casa, e i devoti lo ricostruiscono ancora."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "renault:rc16d",
+            "engine_model": "RC16D",
+            "year_introduced": 1972,
+            "year_discontinued": 1982,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~16 hp twin of the RC diesel range (~).",
+              "description": "Il bicilindrico di mezzo: sedici cavalli per la vela di famiglia, tra il monocilindrico eroico e i quattro automobilistici. La Francia nautica degli anni della RMC — ventidue modelli a listino, tutti fabbricati in Gironda."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "renault:rc55d",
+            "engine_model": "RC55D",
+            "year_introduced": 1974,
+            "year_discontinued": 1982,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~55 hp four on automotive blocks (the range drew on Renault car diesels and Peugeot Indenor XDP units, ~).",
+              "description": "Il quattro stradale: blocchi d'automobile — Renault e Indenor — vestiti da mare per i cabinati e i pescherecci minori della costa atlantica. Annotato con riserva sulle parentele esatte: l'epoca mescolava i donatori con nonchalance francese."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "renault:rc140d",
+            "engine_model": "RC140D",
+            "year_introduced": 1974,
+            "year_discontinued": 1982,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~140 hp six on Saviem truck blocks (~).",
+              "description": "Il sei da camion: blocco Saviem, centoquaranta cavalli, per vedette e barche da lavoro. Il ramo pesante della gamma di Marcheprime, annotato con la riserva d'ordinanza."
+            }
+          },
+          {
+            "id": "renault:rc210d",
+            "engine_model": "RC210D",
+            "year_introduced": 1976,
+            "year_discontinued": 1982,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "~210 hp six with turbo (DT) trims; near the top of the RMC line.",
+              "description": "Il sei maggiore, col turbo a listino nelle varianti DT: duecentodieci cavalli per gli scafi veloci francesi dell'ultima stagione. Nel 1982 la casa passò a Nanni, e il mestiere restò sul bacino d'Arcachon — solo il nome cambiò targa (vedi Nanni)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "10": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "renault:rc320d",
+            "engine_model": "RC320D",
+            "year_introduced": 1976,
+            "year_discontinued": 1982,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The crown: a TEN-cylinder diesel, 320 hp, for fast vedettes — the oddest configuration France put to sea at this scale.",
+              "description": "La corona a dieci cilindri: trecentoventi cavalli nella configurazione più insolita che la nautica francese di serie abbia mai offerto. Un dieci in sala macchine è una dichiarazione — la RMC la fece, e due anni dopo uscì di scena. I finali migliori sono così: inspiegabilmente grandiosi."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

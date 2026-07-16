@@ -1,0 +1,47 @@
+{
+  "_dossier": "027e IHI. Rulings: buckets [6,8,12] → [3,4]; house = the IHI-Shibaura donor story (1950 Ishikawajima-Toshiba JV; 103/104-series blocks behind Perkins Perama, Volvo Penta smalls, Lugger/Northern Lights gensets; Perkins Shibaura JV 1994). Niigata-scale engines DEFERRED to the Niigata house (IHI owns Niigata Power Systems since 2019 — cross-ref there). 'SU-series' phantom — no evidence.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "IHI",
+  "node": {
+    "year_founded": 1853,
+    "year_dissolved": null,
+    "sort_number": 37,
+    "cylinders": {
+      "3": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "ihi:103-10",
+            "engine_model": "103-10",
+            "year_introduced": 1984,
+            "year_discontinued": 2008,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "0.954L Shibaura triple (75x72mm) — the block inside the Perkins Perama M30 and kin (see Perkins); the 103-09 sibling powered the M25. The hidden triple of a thousand sailboats.",
+              "description": "Il tre cilindri nascosto: il blocco Shibaura che, vestito da Perkins Perama, ripopolò le barche a vela europee degli anni Ottanta e Novanta (vedi Perkins). Migliaia di ausiliari con targhetta inglese e cuore di Matsumoto — il donatore che nessun diportista ha mai saputo di possedere."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "ihi:n844",
+            "engine_model": "N844",
+            "year_introduced": 1990,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.2L Shibaura four — OEM donor to Perkins (104-series kin), Caterpillar, New Holland; the block behind small Lugger/Northern Lights marine gensets (see Lugger).",
+              "description": "Il quattro OEM per antonomasia: due litri e due venduti a Perkins, Caterpillar e New Holland, e finiti in mare anche sotto le insegne dei generatoristi di Seattle (vedi Lugger). La joint venture del 1950 tra il cantiere di Ishikawajima e la Shibaura di Toshiba divenne così il donatore dei donatori — il gradino più profondo della catena alimentare di questo catalogo. Il ramo maggiore della casa, quello dei motori da nave, naviga sotto il nome Niigata (vedi Niigata)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

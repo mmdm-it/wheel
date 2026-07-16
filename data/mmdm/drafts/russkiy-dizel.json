@@ -1,0 +1,58 @@
+{
+  "_dossier": "029f Russkiy Dizel. Rulings: founded 1900→1862 (Ludwig Nobel plant); dissolved → 1999 (bankruptcy after 137 years); buckets [6,8,12] → [1,6]. E. Nobel bought Diesel's Russian license 1898; 1899 first Russian diesel ON CRUDE OIL ('the Russian diesel'); 1908 world's first direct-reversing marine diesel + Minoga (first diesel-electric submarine); G-series 6ChRN 36/45 river-sea sixes; DPN opposed-piston 4-crankshaft design in prose. Vandal's engines honestly Swedish. 40D = Kolomna, excluded.",
+  "market": "eurasia",
+  "country": "Russia",
+  "manufacturer": "Russkiy Dizel",
+  "node": {
+    "year_founded": 1862,
+    "year_dissolved": 1999,
+    "sort_number": 80,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "russkiy-dizel:nobel-20",
+            "engine_model": "Nobel 20 HP",
+            "year_introduced": 1899,
+            "year_discontinued": 1910,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE MONUMENT: the first Russian-built diesel (1899) — Emanuel Nobel bought Rudolf Diesel's exclusive Russian license in 1898 (800,000 marks), and the St. Petersburg works re-engineered the engine to run on CRUDE OIL. Europe took to calling the type 'the Russian diesel.' Paris Grand Prix, 1900. By 1908 the plant built the world's first direct-reversing marine diesel and the engines of Minoga — the first diesel-electric submarine.",
+              "description": "Il monumento russo: nel 1898 Emanuel Nobel comprò da Rudolf Diesel in persona la licenza esclusiva per l'impero, e un anno dopo l'officina di Pietroburgo — fondata da Ludwig Nobel nel 1862 — costruì il primo diesel russo, riprogettato per bere petrolio greggio invece del cherosene. L'Europa prese a chiamare il tipo 'il diesel russo'. Nel 1908 la stessa officina fece il primo diesel marino a inversione diretta del mondo e i motori del Minoga, primo sommergibile diesel-elettrico della storia. Voce ammessa per dottrina del meraviglioso — e per diritto di primogenitura."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "russkiy-dizel:g-60",
+            "engine_model": "G-60",
+            "year_introduced": 1960,
+            "year_discontinued": 1980,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "6ChRN 36/45: 360x450mm turbocharged reversible four-stroke six, 900 hp @ 375, ~29 tonnes dry; main engine of Soviet river-sea cargo ships.",
+              "description": "Il sei della flotta fluviale-marittima sovietica: novecento cavalli a trecentosettantacinque giri, ventinove tonnellate di ghisa reversibile. Le navi da carico che cucivano il Volga al Baltico e al Caspio battevano questo tempo — l'economia pianificata aveva un battito, ed era il suo."
+            }
+          },
+          {
+            "id": "russkiy-dizel:g-70",
+            "engine_model": "G-70",
+            "year_introduced": 1966,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The most common of the 36/45 family, 1,200 hp @ 375 (G-70-5 derated at 1,000; G-74 uprated to 1,500).",
+              "description": "Il più diffuso della famiglia: milleduecento cavalli, con i fratelli tarati sopra e sotto. La casa che serviva — parola d'epoca, da prendere con riserva sovietica — 'quasi tutta' la flotta cisterniera e peschereccia dell'URSS. Nel 1999, dopo centotrentasette anni, il fallimento chiuse i cancelli dei Nobel: le rivoluzioni passano, i bilanci restano."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

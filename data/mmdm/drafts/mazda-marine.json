@@ -1,0 +1,75 @@
+{
+  "_dossier": "028d Mazda Marine. Rulings: buckets [4,6] → [2,3,4] — rotaries bucketed by ROTOR count (12A/13B two-rotors in 2, 20B three-rotor in 3), prose owns the cheek; [4] = Perkins-licensed diesel folk conversions, hedged. No factory marine program ever (Toyo Kogyo rotary outboard R&D never productized). Atkins Rotary marine packages + NZ jet-sprint culture = the Wow.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Mazda Marine",
+  "node": {
+    "year_founded": 1920,
+    "year_dissolved": null,
+    "sort_number": 61,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "mazda:13b",
+            "engine_model": "13B",
+            "year_introduced": 1974,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1,308cc TWO-ROTOR Wankel (bucketed by rotors — this catalog admits the cheek), 135-250+ hp NA to turbo; the best-selling rotary ever, marinized commercially by Atkins Rotary and folk-installed from Louisiana bayous to a twin-Cosmo Chris-Craft.",
+              "description": "Due rotori in uno scomparto da due cilindri: questo catalogo confessa la licenza e la rivendica. Il Wankel più venduto della storia è andato per acqua davvero — pacchetti marini completi dall'officina Atkins dello stato di Washington, conversioni nei bayou della Louisiana, perfino un Chris-Craft con due 13B di Cosmo in sala macchine. La fabbrica non c'entrò mai nulla: il mare se lo presero i rotariani."
+            }
+          },
+          {
+            "id": "mazda:12a",
+            "engine_model": "12A",
+            "year_introduced": 1970,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "1,146cc two-rotor, ~100-130 hp; the 13B's elder sibling, same marine afterlife (~).",
+              "description": "Il fratello minore per cilindrata e maggiore per anagrafe: stesso destino marino artigianale, stessa estraneità della fabbrica. Annotato con riserva e con simpatia."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "mazda:20b",
+            "engine_model": "20B-REW",
+            "year_introduced": 1990,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1,962cc THREE-ROTOR (Eunos Cosmo), 280+ hp stock, far more built-up; the New Zealand jet-sprint scene runs 20B ski boats and quad-rotor 26B superboats near 1,000 hp.",
+              "description": "Il tre rotori della Cosmo, adottato dalla scena più rumorosa del Pacifico: gli sprint boat neozelandesi, dove i 20B urlano nei canali artificiali e i 26B a quattro rotori sfiorano i mille cavalli. L'idrogetto perdona al Wankel ciò che l'elica non perdonerebbe — e il risultato è il suono più inconfondibile della nautica da competizione."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "mazda:ha",
+            "engine_model": "HA",
+            "year_introduced": 1974,
+            "year_discontinued": 1985,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,977cc four — a licensed Perkins 4.182 built at Miyoshi (the S2/XA siblings were 4.135/4.154 licenses); marine use is informal Asian surplus conversion only (~). See Perkins.",
+              "description": "Il diesel con doppio passaporto: un Perkins costruito su licenza a Hiroshima, cugino di sangue del 4.154 che in Inghilterra ebbe versione marina ufficiale (vedi Perkins). In mare c'è finito per la via asiatica del surplus — pump boat filippini e conversioni di banchina, senza che Hiroshima o Peterborough ne sapessero nulla. Annotato con riserva, per completezza di stirpe."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

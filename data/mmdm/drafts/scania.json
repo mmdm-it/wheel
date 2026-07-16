@@ -1,0 +1,103 @@
+{
+  "_dossier": "030a Scania. Rulings: +[5] (DI09 is a FIVE). First marine engines 1902. DS11/DSI11 trawler sixes (US badge 'Waukesha-Scania' — cross-ref); DS14 V8 Nordic fleets; DI13/DI16 = Nanni Platinum donors (cross-ref). 4-bucket held by hedged 1902-era four.",
+  "market": "eurasia",
+  "country": "Svezia",
+  "manufacturer": "Scania",
+  "node": {
+    "year_founded": 1891,
+    "year_dissolved": null,
+    "sort_number": 81,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "scania:vabis-four",
+            "engine_model": "Vabis Marine Four",
+            "year_introduced": 1902,
+            "year_discontinued": 1920,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The house entered marine engines in 1902, in the Vabis era — small fours for Swedish launches (? designations lost to the archives).",
+              "description": "L'esordio marino del 1902: piccoli quattro cilindri dell'era Vabis per le lance svedesi, quando la casa non aveva ancora unito i suoi due nomi. Le sigle si sono perse; la data di battesimo no. Annotato con riserva, in omaggio alle origini."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "5": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "scania:di09",
+            "engine_model": "DI09",
+            "year_introduced": 2007,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "9.3L inline FIVE, 220-400 hp — the floor of the modern marine range, and the bucket nobody expects from Södertälje.",
+              "description": "Il cinque di Södertälje: nove litri e tre in cinque cilindri, il gradino d'ingresso della gamma marina moderna. La Svezia motorista ha sempre trattato il dispari con naturalezza — e questo catalogo gli apre volentieri lo scomparto."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "scania:ds11",
+            "engine_model": "DS11",
+            "year_introduced": 1963,
+            "year_discontinued": 1990,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "11L turbo six (DSI11 added intercooling, to 600 hp, derated for trawler duty); the Nordic workboat staple — sold in America as the Waukesha-Scania F673D (see Waukesha).",
+              "description": "L'undici litri: il sei da camion del 1963 vestito da mare, che nei pescherecci nordici lavorava derated e senza fretta. Attraversò perfino l'Atlantico con un doppio cognome — in America si vendette come Waukesha-Scania (vedi Waukesha). I blocchi buoni viaggiano sotto qualunque bandiera."
+            }
+          },
+          {
+            "id": "scania:di13",
+            "engine_model": "DI13",
+            "year_introduced": 2007,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "12.7L six, 250-1,050 hp across trims; pilot, patrol and crew boats — and the donor of Nanni's N13 Platinum line (see Nanni).",
+              "description": "Il cavallo da tiro contemporaneo: dodici litri e sette dal quarto di migliaio al migliaio di cavalli, sulle pilotine e i mezzi veloci di mezzo mondo. In Francia naviga anche sotto insegne d'Arcachon (vedi Nanni) — il mestiere di donatore è una tradizione svedese recente ma già solida."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "scania:ds14",
+            "engine_model": "DS14",
+            "year_introduced": 1969,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "14.2L V8 — the 'King of the Road' truck V8 marinized, ~420-750 hp across DSI/DI trims; the big Nordic fishing-boat engine of its era (~ fleet lore).",
+              "description": "Il re della strada andato per mare: il primo V8 di Scania, quattordici litri, marinizzato per i pescherecci scandinavi che volevano il rombo del camion ammiraglio sotto la coperta. Annotato con riserva sulla leggenda di flotta, con nessuna sul motore."
+            }
+          },
+          {
+            "id": "scania:di16",
+            "engine_model": "DI16",
+            "year_introduced": 2004,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "16.4L V8, 550-1,150 hp; pilot boats, SAR craft, sportfish — the Swedish Sea Rescue Society repowered with them; donor of Nanni's N16 (see Nanni).",
+              "description": "L'ammiraglia: sedici litri e quattro di V8 per pilotine, motovedette e i mezzi della Società Svedese di Salvataggio — che ripotenziandoli guadagnò nove nodi. Quando il mare del Nord chiama aiuto, spesso risponde in otto cilindri di Södertälje."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

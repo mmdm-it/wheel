@@ -1,0 +1,131 @@
+{
+  "_dossier": "026e Bukh. Rulings: buckets [4,6] ADDED (4K105/6K105, 1962-66 tractor-era marine diesels). DV48 is a TRIPLE. SOLAS lifeboat house (~claim, marketing commonplace but well-founded). Arc: Hørve 1904 → Kalundborg 1915 → Maersk 1929 → Aabenraa Motorfabrik takeover 1994 → BUKH A/S 2010, active. Callesen cross-link.",
+  "market": "eurasia",
+  "country": "Danimarca",
+  "manufacturer": "Bukh",
+  "node": {
+    "year_founded": 1904,
+    "year_dissolved": null,
+    "sort_number": 10,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "bukh:ev100",
+            "engine_model": "EV100",
+            "year_introduced": 1956,
+            "year_discontinued": 1962,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The oldest Bukh type still serviceable; single of the EV line (twins and triples alongside).",
+              "description": "Il decano: il monocilindrico degli anni Cinquanta che la fabbrica considera ancora assistibile — settant'anni dopo. In Danimarca la parola 'ricambio' ha un orizzonte temporale diverso dal resto del mondo."
+            }
+          },
+          {
+            "id": "bukh:dv10",
+            "engine_model": "DV10",
+            "year_introduced": 1972,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "10 hp single, raw-water or keel-cooled; enormous Danish and UK sailboat install base — the founding member of the DV dynasty.",
+              "description": "Il capostipite della dinastia DV: dieci cavalli di monocilindrico che popolò le barche a vela danesi e inglesi degli anni Settanta. Da questa radice sarebbe cresciuta la famiglia che oggi equipaggia le scialuppe di salvataggio di mezzo mondo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "bukh:dv20",
+            "engine_model": "DV20",
+            "year_introduced": 1972,
+            "year_discontinued": 1985,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "20 hp twin of the DV10; the classic era's mid-size auxiliary.",
+              "description": "Il gemello del capostipite: venti cavalli per le barche a vela di famiglia. Nei porti del Baltico il suo minimo regolare era il sottofondo delle estati."
+            }
+          },
+          {
+            "id": "bukh:dv24",
+            "engine_model": "DV24",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "24 hp @ 3,600 twin, still current (DV29 and turbo DV32 above it); approved as a lifeboat engine by every major classification body — the SOLAS staple.",
+              "description": "Il motore delle scialuppe: approvato da ogni registro navale che conti, installato nelle imbarcazioni di salvataggio di gran parte della flotta mercantile mondiale. Quando una nave affonda, con buona probabilità è un DV24 — o un suo fratello — che porta l'equipaggio via. Pochi motori possono vantare un mestiere più serio."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "bukh:dv36",
+            "engine_model": "DV36",
+            "year_introduced": 1974,
+            "year_discontinued": 2000,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "36 hp triple, the DV line's three-cylinder layout.",
+              "description": "Il tre della famiglia: trentasei cavalli per le barche più grandi e i mezzi da lavoro minori. La scala DV saliva così, un cilindro alla volta, senza mai perdere l'omologazione."
+            }
+          },
+          {
+            "id": "bukh:dv48",
+            "engine_model": "DV48",
+            "year_introduced": 2000,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "1,447cc turbo TRIPLE (not a four, despite the number), 48 hp @ 3,600, keel-cooled; current SOLAS lifeboat and fast-rescue-boat engine.",
+              "description": "Il quarantotto: tre cilindri turbo — non quattro, checché suggerisca il numero — da un litro e mezzo scarso, raffreddati a chiglia per partire sempre, comunque, a scafo rovesciato se serve. Il motore di salvataggio contemporaneo, costruito ad Aabenraa da una casa che di questo mestiere ha fatto una missione."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "bukh:4k105",
+            "engine_model": "4K105",
+            "year_introduced": 1962,
+            "year_discontinued": 1966,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Marine four of the K105 line, kin of the house's tractor engines of the era.",
+              "description": "Il quattro dell'era dei trattori: quando Kalundborg costruiva anche macchine agricole, i blocchi passavano dal campo al mare senza cerimonie. Un lustro di listino, una generazione di pescherecci."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "bukh:6k105",
+            "engine_model": "6K105",
+            "year_introduced": 1962,
+            "year_discontinued": 1966,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Marine six of the K105 line — the largest Bukh of its era.",
+              "description": "Il sei della serie K: il più grande Bukh del suo tempo, per i cutter danesi che chiedevano più di quanto i piccoli DV avrebbero poi offerto. La prova che la casa delle scialuppe sapeva pensare anche in grande."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
