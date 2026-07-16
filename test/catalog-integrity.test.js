@@ -124,3 +124,35 @@ describe('catalog integrity', () => {
     assert.deepEqual(bare, [], `models without full prose: ${bare.join(', ')}`);
   });
 });
+
+// Phase B audit M3: gateway declarations are data — a typo'd volume id or a
+// malformed child ships a clickable node that silently does nothing. The
+// known-volume set mirrors src/main.js volumeConfigs.
+const KNOWN_VOLUMES = ['catalog', 'bible', 'calendar', 'places'];
+
+describe('gateway integrity', () => {
+  it('gateway_children are well-formed and name known volumes only', () => {
+    for (const { name, node } of manufacturers()) {
+      if (node.gateway_children === undefined) continue;
+      assert.ok(
+        Array.isArray(node.gateway_children) && node.gateway_children.length > 0,
+        `${name}: gateway_children must be a non-empty array`
+      );
+      for (const gw of node.gateway_children) {
+        assert.ok(typeof gw.name === 'string' && gw.name.length > 0, `${name}: gateway child missing name`);
+        assert.ok(KNOWN_VOLUMES.includes(gw.volume), `${name}: gateway names unknown volume "${gw.volume}"`);
+        assert.ok(Number.isFinite(gw.sort_number), `${name}: gateway child "${gw.name}" missing sort_number`);
+      }
+    }
+  });
+
+  it('a manufacturer is a gateway or an engine house, never both', () => {
+    for (const { name, node } of manufacturers()) {
+      if (node.gateway_children === undefined) continue;
+      assert.ok(
+        Object.keys(node.cylinders ?? {}).length === 0,
+        `${name}: declares both gateway_children and cylinders — the cylinders would be unreachable`
+      );
+    }
+  });
+});

@@ -1,5 +1,5 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
-import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
+import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
@@ -445,10 +445,39 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     return item.parentName || '';
   };
 
+  // Startup-verse prefetch: when the Bible opens on a chapter with a
+  // featured verse, fetch the chapter's verse data and re-render the
+  // Detail Sector with the verse text once it arrives. (Moved from the
+  // host's bootVolume — Phase B audit, H1.)
+  const onBoot = ({ app, items, selectedIndex, renderDetail }) => {
+    if (options?.level !== 'chapter' || !options?.verseId) return;
+    const initialChapter = items[selectedIndex];
+    if (!initialChapter?.meta?.externalFile) return;
+    prefetchBibleVerses(initialChapter, {
+      onLoaded() {
+        const { externalFile, bookId, chapterKey } = initialChapter.meta;
+        const verseKey = String(options.verseId);
+        const syntheticVerse = {
+          id: `${bookId}_${chapterKey}_${verseKey}`,
+          name: `${chapterKey}:${verseKey}`,
+          level: 'verse',
+          parentId: initialChapter.id,
+          meta: { bookId, chapterId: initialChapter.id, verseKey, externalFile }
+        };
+        if (app?.openDetailSector) {
+          app.openDetailSector(() => renderDetail(syntheticVerse));
+        } else {
+          renderDetail(syntheticVerse);
+        }
+      }
+    });
+  };
+
   return {
     parentHandler,
     childrenHandler,
     getParentLabel,
+    onBoot,
     layoutBindings: {
       getBibleTestaments: () => buildBibleTestaments(manifest, namesMap, { translationName }),
       bibleModeRef: () => bibleMode,

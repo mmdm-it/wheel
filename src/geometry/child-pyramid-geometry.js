@@ -1,86 +1,9 @@
 // Computes CPUA fan lines, spiral path, and intersection hits for the child pyramid.
-// Pure functions: no DOM usage.
-
-// ── Console tuning knobs ─────────────────────────────────────────────
-// In the browser console:
-//   spiralOrigin({ x: 0.5, y: 0.5 })   ← normalised 0-1 within CPUA
-//   minNodeDist(3)                      ← multiplier of node radius
-//   fanAngle(5)                         ← degrees between fan lines
-//   arcMargin(0.1)                      ← SSd multiplier for gap inside arc
-//   spiralGrowth(0.005)                 ← spiral expansion rate
-//   <cmd>()  with no args prints current value; <cmd>(null) resets.
-// Click any parent node to re-render after changing.
-if (typeof globalThis.window !== 'undefined') {
-  globalThis.__spiralOverride = globalThis.__spiralOverride ?? { x: null, y: null };
-  globalThis.spiralOrigin = (pos) => {
-    if (!pos) {
-      console.log('spiralOrigin:', JSON.stringify(globalThis.__spiralOverride));
-      return globalThis.__spiralOverride;
-    }
-    if (typeof pos.x === 'number') globalThis.__spiralOverride.x = pos.x;
-    if (typeof pos.y === 'number') globalThis.__spiralOverride.y = pos.y;
-    console.log('spiralOrigin set to:', JSON.stringify(globalThis.__spiralOverride));
-    console.log('Click a parent node to see the change.');
-    return globalThis.__spiralOverride;
-  };
-
-  globalThis.__minNodeDistMul = null; // null = use default (4× node radius)
-  globalThis.minNodeDist = (mul) => {
-    if (mul === undefined) {
-      const cur = globalThis.__minNodeDistMul;
-      console.log('minNodeDist:', cur != null ? cur + '× nodeRadius' : 'default (4× nodeRadius)');
-      return cur;
-    }
-    globalThis.__minNodeDistMul = (typeof mul === 'number' && mul > 0) ? mul : null;
-    console.log('minNodeDist set to:', globalThis.__minNodeDistMul != null ? globalThis.__minNodeDistMul + '× nodeRadius' : 'default (4× nodeRadius)');
-    console.log('Click a parent node to see the change.');
-    return globalThis.__minNodeDistMul;
-  };
-
-  globalThis.__fanAngleDeg = null; // null = use default (3.75°)
-  globalThis.fanAngle = (deg) => {
-    if (deg === undefined) {
-      const cur = globalThis.__fanAngleDeg;
-      console.log('fanAngle:', cur != null ? cur + '°' : 'default (3.75°)');
-      return cur;
-    }
-    globalThis.__fanAngleDeg = (typeof deg === 'number' && deg > 0) ? deg : null;
-    console.log('fanAngle set to:', globalThis.__fanAngleDeg != null ? globalThis.__fanAngleDeg + '°' : 'default (3.75°)');
-    console.log('Click a parent node to see the change.');
-    return globalThis.__fanAngleDeg;
-  };
-
-  globalThis.__arcMarginMul = null; // null = use default (0.06)
-  globalThis.arcMargin = (mul) => {
-    if (mul === undefined) {
-      const cur = globalThis.__arcMarginMul;
-      console.log('arcMargin:', cur != null ? cur + ' × SSd' : 'default (0.06 × SSd)');
-      return cur;
-    }
-    globalThis.__arcMarginMul = (typeof mul === 'number' && mul >= 0) ? mul : null;
-    console.log('arcMargin set to:', globalThis.__arcMarginMul != null ? globalThis.__arcMarginMul + ' × SSd' : 'default (0.06 × SSd)');
-    console.log('Click a parent node to see the change.');
-    return globalThis.__arcMarginMul;
-  };
-
-  globalThis.__spiralGrowth = null; // null = use default (0.003)
-  globalThis.spiralGrowth = (rate) => {
-    if (rate === undefined) {
-      const cur = globalThis.__spiralGrowth;
-      console.log('spiralGrowth:', cur != null ? cur : 'default (0.003)');
-      return cur;
-    }
-    globalThis.__spiralGrowth = (typeof rate === 'number' && rate > 0) ? rate : null;
-    console.log('spiralGrowth set to:', globalThis.__spiralGrowth != null ? globalThis.__spiralGrowth : 'default (0.003)');
-    console.log('Click a parent node to see the change.');
-    return globalThis.__spiralGrowth;
-  };
-}
+// Pure functions: no DOM usage, no side effects on import. Dev-time console
+// tuning knobs live in ./pyramid-tuning-knobs.js (view layer imports them);
+// this module only READS the globalThis.__* overrides they set.
 
 const DEG_TO_RAD = Math.PI / 180;
-const DEFAULT_LINE_COUNT = 96;
-const DEFAULT_ANGLE_DELTA_DEG = 3.75; // fallback when no childCount supplied
-const DEFAULT_EXPANSION_RATE = 0.003; // fallback when no childCount supplied
 
 // ── Child-count → parameter lookup table ─────────────────────────────
 // Source: docs/child_pyramid_params.csv
@@ -376,19 +299,23 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   // Minimum distance from spiral/magnifier center — reject intersections
   // that land on top of the magnifier (causes visual oscillation).
   const minDistFromOrigin = baseNodeRadius * 3;
+
+  // Shared placement predicate — the ONLY definition of "this point may
+  // hold a node" relative to hub margin and magnifier origin. Both the
+  // main hunt and the at-least-one fallback use it, so Phase C retuning
+  // cannot silently diverge the two (Phase B audit, M7).
+  const isValidNodePosition = (p, margin) => {
+    if (Math.hypot(p.x - clipCircleCx, p.y - clipCircleCy) > arcRadius - margin) return false;
+    if (Math.hypot(p.x - spiralCenterX, p.y - spiralCenterY) < minDistFromOrigin) return false;
+    return true;
+  };
   for (let i = 1; i < points.length && pending.size > 0; i++) {
     const segSpiral = { x1: points[i - 1].x, y1: points[i - 1].y, x2: points[i].x, y2: points[i].y };
     fanLines.forEach(segFan => {
       if (!pending.has(segFan.id)) return;
       const hit = intersectSegments(segSpiral, segFan);
       if (hit) {
-        // Reject intersections inside the arc margin zone
-        const distToHub = Math.hypot(hit.x - clipCircleCx, hit.y - clipCircleCy);
-        if (distToHub > arcRadius - arcInnerMargin) return;
-
-        // Reject intersections too close to the spiral/magnifier origin
-        const distToOrigin = Math.hypot(hit.x - spiralCenterX, hit.y - spiralCenterY);
-        if (distToOrigin < minDistFromOrigin) return;
+        if (!isValidNodePosition(hit, arcInnerMargin)) return;
 
         const tooClose = intersections.some(h => {
           const dx = h.x - hit.x;
@@ -423,9 +350,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
       for (let i = 0; i < points.length; i += 4) {
         const p = points[i];
         if (!inCpua(p) || inLogo(p)) continue;
-        const distToHub = Math.hypot(p.x - clipCircleCx, p.y - clipCircleCy);
-        if (distToHub > arcRadius - margin) continue;
-        if (Math.hypot(p.x - spiralCenterX, p.y - spiralCenterY) < minDistFromOrigin) continue;
+        if (!isValidNodePosition(p, margin)) continue;
         intersections.push({ x: p.x, y: p.y, t: 0, u: 0, fanId: null, synthetic: true });
         break outer;
       }
