@@ -230,12 +230,16 @@ export function detailFor(selected, manifest) {
   return { type: 'text', text: selected.name || id || '' };
 }
 
-export function createHandlers({ manifest, options }) {
+export function createHandlers({ manifest, options, onGatewayReturn = null, gatewayLabel = '' }) {
   let calendarMode = 'year';
   let calendarMonthContext = null;
   const lastYearByMillennium = {};
 
   const parentHandler = ({ selected, app }) => {
+    if (calendarMode === 'millennium') {
+      if (typeof onGatewayReturn === 'function') return Boolean(onGatewayReturn());
+      return false;
+    }
     if (calendarMode === 'month') {
       const yearId = calendarMonthContext?.yearId;
       const milliId = calendarMonthContext?.millenniumId;
@@ -259,7 +263,7 @@ export function createHandlers({ manifest, options }) {
     }
     const { items: milliItems, selectedIndex: milliSelected } = buildCalendarMillennia(manifest, { initialItemId: millenniumId });
     calendarMode = 'millennium';
-    if (app?.setParentButtons) app.setParentButtons({ showOuter: false });
+    if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayLabel) });
     if (app?.setPrimaryItems) {
       const migrateOrSet = app.migrateOut || app.setPrimaryItems;
       migrateOrSet(milliItems, milliSelected, true);
