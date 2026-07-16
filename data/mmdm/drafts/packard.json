@@ -1,0 +1,97 @@
+{
+  "_dossier": "032b Packard. Rulings: 'Liberty 12' placeholder DELETED (redundant vs Liberty house — nameplate rule); the real dynasty seated per Dossier 024 research (Vincent's clean-sheet 1A-2500 lineage, 60° vs Liberty's 45°). Buckets [8,12] → [6,8,12].",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Packard",
+  "node": {
+    "year_founded": 1899,
+    "year_dissolved": 1958,
+    "sort_number": 74,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "packard:1m-621",
+            "engine_model": "1M-621",
+            "year_introduced": 1925,
+            "year_discontinued": 1936,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The 'Gold Cup Six': purpose-built 621 cid racing inline six, 275 hp @ 2,500 — the engine of El Lagarto, Gold Cup champion 1933, 1934 and 1935 (a Hacker-designed hull, no less).",
+              "description": "Il sei della Gold Cup: seicentoventuno pollici cubi costruiti apposta per correre, duecentosettantacinque cavalli. Spinse El Lagarto — 'la lucertola', scafo disegnato da Hacker — a tre Gold Cup consecutive negli anni della Depressione. La nobiltà di Detroit, in versione da regata."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "packard:1m-356",
+            "engine_model": "1M-356",
+            "year_introduced": 1947,
+            "year_discontinued": 1950,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Marinized 356 cid automotive STRAIGHT-EIGHT, 165 hp; ~1,525 built — the house's postwar civilian marine engine.",
+              "description": "L'otto in linea borghese: il 356 delle berline Packard, marinizzato nel dopoguerra per i cabinati della pace ritrovata. Millecinquecento esemplari di eleganza a otto cilindri in fila — l'ultima Packard che si potesse comprare per andare a pesca."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "packard:1m-2500",
+            "engine_model": "1M-2500",
+            "year_introduced": 1930,
+            "year_discontinued": 1935,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Supercharged marine V12 from the 1A-2500 aircraft lineage (Vincent's clean-sheet 60° design — 'anything but a re-popped Liberty'), 1,100-1,600 hp; two in Miss America IX (100+ mph), four in Miss America X (124.9 mph, Harmsworth 1932-33).",
+              "description": "Il dodici dei record: sessanta gradi di bancata, progetto pulito di Vincent — tutto fuorché un Liberty riscaldato, come precisano gli storici (vedi Liberty). Due esemplari portarono Miss America IX oltre le cento miglia orarie; quattro, sulla Miss America X, strapparono l'Harmsworth a centoventiquattro. Gar Wood e Packard: il sodalizio più veloce d'America."
+            }
+          },
+          {
+            "id": "packard:3m-2500",
+            "engine_model": "3M-2500",
+            "year_introduced": 1939,
+            "year_discontinued": 1940,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The experimental Navy marinization: only 7 built, and the project cost Packard $300,000 — the tuition for what came next.",
+              "description": "L'esperimento in perdita: sette esemplari per la Marina e trecentomila dollari bruciati — la retta pagata per imparare il mestiere. Il 4M avrebbe restituito tutto, con gli interessi della storia."
+            }
+          },
+          {
+            "id": "packard:4m-2500",
+            "engine_model": "4M-2500",
+            "year_introduced": 1940,
+            "year_discontinued": 1945,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "THE PT-boat engine: 2,490 cid supercharged V12, 1,200→1,500 hp through the war; three per boat, 768 boats, 12,000-14,000 built; 535 to the USSR by Lend-Lease.",
+              "description": "IL motore delle PT: dodici cilindri sovralimentati, milleduecento cavalli saliti a millecinquecento col progredire della guerra, tre per ogni scafo. Dodicimila e più esemplari, cinquecento dei quali attraversarono il mondo per il Lend-Lease sovietico. Se il Pacifico notturno ebbe un rumore, fu il trio di questi V12 al minimo, in agguato."
+            }
+          },
+          {
+            "id": "packard:5m-2500",
+            "engine_model": "5M-2500",
+            "year_introduced": 1945,
+            "year_discontinued": 1953,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "1,850 hp late-war/Korea evolution — bigger supercharger, aftercooler, 115/135-octane fuel.",
+              "description": "L'evoluzione finale: milleottocentocinquanta cavalli con compressore maggiorato e aftercooler, a benzina da caccia. Il canto estremo del V12 marino americano, tra la fine d'una guerra e l'inizio dell'altra."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "_dossier": "032a Toyota. Rulings: 32 car-engine-code placeholders RETIRED WHOLESALE (Ford precedent — official Toyota history shows zero marine activity pre-1990); rebuilt with the real house: Ponam line (1997+, Marine Business Division), Epic US ski boats (VT300i = marinized Lexus 1UZ-FE), hedged 2JZ jet-sprint Wow entry. Buckets [3,4,6,8,10,12] → [4,6,8]. Donor blocks live in Yanmar/Yamaha/Nanni houses (cross-refs). Ponam-37's 5.8L diesel (Hino W06D?) → mystery pile.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Toyota",
+  "node": {
+    "year_founded": 1937,
+    "year_dissolved": null,
+    "sort_number": 93,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "toyota:m1kz",
+            "engine_model": "M1KZ",
+            "year_introduced": 1997,
+            "year_discontinued": 2007,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Marinized 1KZ-TE (Hilux/Prado 3.0L turbo four), ~170 hp; powered the original Ponam-28 — Toyota's first boat, hulls consigned to New Zealand, name from the Maori for the South Island.",
+              "description": "Il debutto: il tre litri turbo dei fuoristrada, marinizzato per il Ponam-28 del 1997 — la prima barca di Toyota, con scafi costruiti in Nuova Zelanda e un nome preso in prestito dal maori. La più grande casa automobilistica del mondo entrò in acqua in punta di piedi, e con il motore giusto."
+            }
+          },
+          {
+            "id": "toyota:m1kd",
+            "engine_model": "M1KD",
+            "year_introduced": 2007,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Marinized 1KD common-rail four, 260 PS — by Toyota's own words the first Japan-made common-rail diesel for pleasure boats; twin installs in the Ponam-31 and 28V.",
+              "description": "Il primato dichiarato: il primo diesel common rail giapponese per il diporto, parola della casa. Duecentosessanta cavalli dal quattro dei Prado, in coppia sui Ponam della seconda generazione — il Land Cruiser dei mari, letteralmente."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "toyota:m1hd-t",
+            "engine_model": "M1HD-T",
+            "year_introduced": 1998,
+            "year_discontinued": 2007,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Marinized 1HD-T Land Cruiser six (4.2L turbo), marine ratings quoted to ~300 hp (~ figures vary); the Ponam line's six — the same block Yanmar dressed as the 6LP and Yamaha as the ME420 (see Yanmar, Yamaha).",
+              "description": "Il sei di famiglia: il 4.2 turbo del Land Cruiser in versione marina di fabbrica — lo stesso blocco che Yanmar vestiva da 6LP e Yamaha da ME420 (vedi). Il donatore nazionale del Giappone, qui finalmente col proprio cognome sul coperchio. Cifre di potenza annotate con riserva; parentele, con certezza."
+            }
+          },
+          {
+            "id": "toyota:2jz-gte",
+            "engine_model": "2JZ-GTE",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The folk legend afloat (~): New Zealand's Jetsprint Superboat class runs ~1,150 hp turbocharged 3.4L stroker 2JZs; 1,000 hp examples race US jet and drag boats. No factory marinization ever — admitted under the Wow doctrine.",
+              "description": "La leggenda di strada finita in acqua: il biturbo delle Supra, portato oltre i mille cavalli, urla nei canali artificiali del campionato neozelandese di jetsprint e nei drag boat americani. La fabbrica non c'entra nulla — c'entrano i preparatori, la dottrina del meraviglioso, e il fatto che certi motori non accettano di restare sull'asfalto. Annotato con riserva e con rispetto."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "toyota:vt300i",
+            "engine_model": "VT300i",
+            "year_introduced": 1998,
+            "year_discontinued": 2002,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The marinized Lexus 1UZ-FE V8 (4.0L DOHC 32v, 300 hp/310 lb-ft), waterproofed at Tahara alongside LS400 production; powered the US-built Toyota Epic ski boats (~700 Epic 21s) until the 2002 retreat.",
+              "description": "La Lexus da sci nautico: il V8 bialbero delle ammiraglie, impermeabilizzato a Tahara sulla stessa linea delle LS400, trecento cavalli di seta per i tournament boat Epic costruiti in Florida. Settecento scafi in quattro stagioni, poi la ritirata del 2002 — l'avventura americana più raffinata e più breve di questo catalogo."
+            }
+          },
+          {
+            "id": "toyota:m1uz",
+            "engine_model": "M1UZ",
+            "year_introduced": 1997,
+            "year_discontinued": 2002,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The Japan-market marine 1UZ designation (Toyota's official history) — the same Lexus V8 for Ponam and Epic gasoline installs.",
+              "description": "Il gemello domestico del VT300i: la sigla giapponese dello stesso V8 Lexus, per il mercato interno. La storia ufficiale della casa lo registra così, e questo catalogo con lei."
+            }
+          },
+          {
+            "id": "toyota:m1vd",
+            "engine_model": "M1VD",
+            "year_introduced": 2011,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Marinized 1VD-FTV twin-turbo V8 diesel (4.5L, Land Cruiser 200/Dakar lineage), 370 hp twin installs; the Ponam-35 was the first Japanese leisure boat with computer-controlled common-rail V8 power.",
+              "description": "L'ammiraglia diesel: il V8 biturbo dei Land Cruiser 200 — sangue da Dakar — in coppia sui Ponam-35, primo diporto giapponese con V8 common rail a controllo elettronico. Quando Toyota decide di fare una cosa sul serio, la fa anche in acqua."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "_dossier": "031c Vetus. Rulings: buckets [2,3,4] → [2,3,4,5,6] (VF5 five, VD6 Deutz). Willem den Ouden, Rotterdam 1964; VETUS = Latin 'old' punning on den Ouden (~). Donor lines: M = Mitsubishi, VH/VF = Hyundai, VD = Deutz. Cross-refs throughout.",
+  "market": "eurasia",
+  "country": "Olanda",
+  "manufacturer": "Vetus",
+  "node": {
+    "year_founded": 1964,
+    "year_dissolved": null,
+    "sort_number": 95,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "vetus:m2.06",
+            "engine_model": "M2.06",
+            "year_introduced": 1995,
+            "year_discontinued": 2010,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "635cc Mitsubishi L2E twin, ~12 hp; the M-line's little classic (M2.13/M2.18 continue it today). See Mitsubishi.",
+              "description": "Il bicilindrico della linea M: il blocco L2E di Osaka con il passaporto di Schiedam, dodici cavalli per la vela olandese e oltre. Il fondatore si chiamava den Ouden — 'il vecchio' — e battezzò la ditta VETUS, che in latino dice lo stesso: l'umorismo di Rotterdam è fatto così, bilingue e asciutto (vedi Mitsubishi)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "vetus:m3.29",
+            "engine_model": "M3.29",
+            "year_introduced": 2000,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "952cc Mitsubishi L3E triple, 27.6 hp.",
+              "description": "Il tre della linea M: ventotto cavalli scarsi di L3E per la crociera di famiglia. La casa nata nel 1964 vendendo un filtro per acqua di mare è oggi il grande emporio nautico d'Europa — e i suoi motori restano fedeli al primo donatore."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "vetus:m4.17",
+            "engine_model": "M4.17",
+            "year_introduced": 2002,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.758L Mitsubishi S4L2 four, ~42 hp; the volume four of the M-line.",
+              "description": "Il quattro di volume: l'S4L2 giapponese in livrea olandese, quarantadue cavalli per la fascia più popolata della vela europea. Lo stesso blocco naviga sotto altre bandiere di questo catalogo — il donatore di Osaka non fa preferenze (vedi Mitsubishi)."
+            }
+          },
+          {
+            "id": "vetus:vh4.80",
+            "engine_model": "VH4.80",
+            "year_introduced": 2008,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2.6L Hyundai D4BB four, 80 hp @ 4,000 — the H-line's Korean donor era (see Hyundai).",
+              "description": "L'era coreana: il quattro del furgone Hyundai H100, marinizzato a ottanta cavalli per il diporto veloce di taglia media. Schiedam colleziona donatori come Rotterdam colleziona container (vedi Hyundai)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "5": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "vetus:vf5.250",
+            "engine_model": "VF5.250",
+            "year_introduced": 2014,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~2.5L Hyundai-derived common-rail FIVE, 250 hp @ 4,200 — the odd-count flagship of the F-line.",
+              "description": "Il cinque cilindri: duecentocinquanta cavalli common rail su base coreana, l'ammiraglia dispari della linea F. Anche l'emporio d'Olanda ha il suo scomparto da cinque — questo catalogo li sta collezionando con affetto."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "vetus:vd6.210",
+            "engine_model": "VD6.210",
+            "year_introduced": 2015,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~4L Deutz-based six, 210 hp — the D-line top (see Deutz).",
+              "description": "Il sei tedesco: blocco Deutz da duecentodieci cavalli in cima al listino motori della casa. Tre donatori in tre decenni — giapponese, coreano, tedesco — e una sola livrea: il giallo Vetus che ogni diportista europeo riconosce a scaffale (vedi Deutz)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

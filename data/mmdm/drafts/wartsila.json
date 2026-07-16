@@ -1,0 +1,47 @@
+{
+  "_dossier": "031f Wärtsilä. Rulings: buckets [4,6,8,12,16] → [6,12] monument treatment (Sulzer precedent — no workboat-scale engine ever existed; Finland's small boat engines were Wickström/Olympia territory). Vasa 614 monument; W14 (Liebherr-based, 12V/16V, 2018) as modern bookend; Sulzer diesel inheritance 1997 (cross-ref).",
+  "market": "eurasia",
+  "country": "Finlandia",
+  "manufacturer": "Wärtsilä",
+  "node": {
+    "year_founded": 1834,
+    "year_dissolved": null,
+    "sort_number": 103,
+    "cylinders": {
+      "6": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "wartsila:vasa-614",
+            "engine_model": "Vasa 614",
+            "year_introduced": 1954,
+            "year_discontinued": 1970,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE MONUMENT: the first in-house Wärtsilä diesel six (the licensed Krupp engines came first, 1940, at the Turku yard); sold to Silja Line's m/s Skandia; one is preserved at the Vaasa factory. The Vasa 22/32/46 dynasty followed — number = bore in cm — all ship-scale.",
+              "description": "Il monumento finlandese: il primo diesel interamente Wärtsilä, un sei venduto alla Silja Line e oggi conservato in fabbrica a Vaasa come si conserva un capostipite. Da qui la dinastia Vasa — il numero è l'alesaggio in centimetri — e poi le taglie da nave che questo catalogo saluta dalla banchina. La casa del 1834, nata segheria in Carelia, sarebbe diventata il motore del mare mondiale: qui se ne onora il primo battito."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "wartsila:14-12v",
+            "engine_model": "W14 12V",
+            "year_introduced": 2018,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The 'smallest modern Wärtsilä': high-speed 12V (16V above), ~750-1,340 kW, co-developed with Liebherr; tugs, fishing vessels, hybrid packages. In 1997 the house also inherited Sulzer's diesel line (see Sulzer) — the heir of Winterthur speaks Finnish now.",
+              "description": "Il più piccolo dei giganti: il dodici veloce sviluppato con Liebherr per rimorchiatori, pescherecci d'altura e pacchetti ibridi — la soglia minima d'una casa che sopra di lui misura i motori in metri. Dal 1997 Wärtsilä custodisce anche l'eredità diesel di Sulzer (vedi): l'apprendistato di Rudolf Diesel a Winterthur, per vie traverse, parla oggi finlandese."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

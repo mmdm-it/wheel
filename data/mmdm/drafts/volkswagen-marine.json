@@ -1,0 +1,92 @@
+{
+  "_dossier": "031e Volkswagen Marine. Rulings: buckets [4,6] → [4,5,6,8] (R5 TDI line = the heart; V8 TDI 350-8 crown). Program ~2001-2013; dissolved 2013. Succession: Mercury Diesel (CMD partnership 2011, ended 2012, line continued under Mercury to ~2016) — Hyundai SeasAll theory REFUTED, dropped.",
+  "market": "eurasia",
+  "country": "Germania",
+  "manufacturer": "Volkswagen Marine",
+  "node": {
+    "year_founded": 1937,
+    "year_dissolved": 2013,
+    "sort_number": 98,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "vw:sdi-40-4",
+            "engine_model": "SDI 40-4",
+            "year_introduced": 2001,
+            "year_discontinued": 2012,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.9L naturally-aspirated SDI four, 40 hp; the sailboat/displacement entry of the program.",
+              "description": "Il quattro aspirato: il millenove SDI delle utilitarie, quaranta cavalli per barche a vela e dislocanti. Wolfsburg entrò in mare come guida in autostrada — senza strappi e senza sorprese."
+            }
+          },
+          {
+            "id": "vw:tdi-75-4",
+            "engine_model": "TDI 75-4",
+            "year_introduced": 2001,
+            "year_discontinued": 2012,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "1.9L TDI four, 75 hp; the turbo workhorse of the small range.",
+              "description": "Il TDI da barca: il turbodiesel più famoso d'Europa, marinizzato a settantacinque cavalli. Milioni di automobilisti ne conoscevano il carattere prima ancora di salire a bordo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "5": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "vw:tdi-150-5",
+            "engine_model": "TDI 150-5",
+            "year_introduced": 2001,
+            "year_discontinued": 2012,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,461cc R5 TDI five, 150 hp @ 4,000, 310 Nm; flagship of the five-cylinder line (100/120/165 siblings) — the heart of the whole program.",
+              "description": "Il cuore del programma: il cinque cilindri da due litri e mezzo, centocinquanta cavalli con geometria variabile, e i fratelli da cento a centosessantacinque intorno. Il suono del cinque — quel borbottio sincopato che nessun quattro sa fare — portato in sala macchine con l'accento di Wolfsburg."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "vw:tdi-265-6",
+            "engine_model": "TDI 265-6",
+            "year_introduced": 2008,
+            "year_discontinued": 2013,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,967cc common-rail V6 TDI, 265 hp @ 4,200, 550 Nm; lived on as the Mercury Diesel TDI 3.0 after the program closed (see MerCruiser).",
+              "description": "Il V6 common rail: tre litri, duecentosessantacinque cavalli, iniettori piezo — l'ingegneria delle ammiraglie stradali in versione salmastra. Quando Wolfsburg chiuse il capitolo marino, nel 2013, il blocco continuò a navigare sotto le insegne Mercury: i programmi finiscono, i motori no (vedi MerCruiser)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "vw:tdi-350-8",
+            "engine_model": "TDI 350-8",
+            "year_introduced": 2010,
+            "year_discontinued": 2013,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4.2L V8 TDI, twin variable-geometry turbos, 335-370 hp — the crown; continued as the Mercury Diesel TDI 4.2 until VW stopped supplying blocks (~2016).",
+              "description": "La corona: il V8 TDI da quattro litri e due con doppio turbo a geometria variabile, trecentocinquanta cavalli di morbidezza da ammiraglia. Sopravvisse alla propria casa madre per qualche stagione, in livrea Mercury, finché Wolfsburg smise di fornire i blocchi. L'epilogo tedesco dell'ultima grande marinizzazione automobilistica europea."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
