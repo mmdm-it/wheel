@@ -1,0 +1,233 @@
+{
+  "_dossier": "032f VM Motori. Rulings: rebuilt [4,6] → [3,4,5,6] per naming decode (first digit = cylinders, next two = bore mm: HR494 = 4-cyl 94mm etc.). Vancini & Martelli, Cento 1947 — first Italian air-cooled DI diesel. Tunnel-bore blocks behind BMW Marine D150/D190 and MerCruiser D-Tronic (cross-refs). HR588 five went into Toyota Land Cruiser IIs (donor web eats its tail). MR504LW3 carries Howell's original demo manifold_alternatives — preserved via post-write injection. HR496 kept hedged.",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "VM Motori",
+  "node": {
+    "year_founded": 1947,
+    "year_dissolved": null,
+    "sort_number": 97,
+    "cylinders": {
+      "3": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "vm:hr394",
+            "engine_model": "HR 394",
+            "year_introduced": 1985,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "3-cylinder, 94mm bore (per the house code: first digit = cylinders), small-auxiliary class (~ thin record).",
+              "description": "Il tre della grammatica di Cento: prima cifra i cilindri, le altre due l'alesaggio — la sigla si legge come una targa. Documentato poco, decodificato bene: annotato con riserva."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "vm:hr494",
+            "engine_model": "HR 494",
+            "year_introduced": 1990,
+            "year_discontinued": 2000,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4-cylinder, 94mm bore (~2.8L class, ~145-200 hp marine); tunnel-bore crankcase — the Cento signature; industrial and marinized trims documented.",
+              "description": "Il quattro da novantaquattro: canne a tunnel — la firma costruttiva di Cento — e tarature marine fino ai duecento cavalli. La provincia emiliana che riforniva di blocchi mezza nautica europea, senza quasi mai firmare in copertina."
+            }
+          },
+          {
+            "id": "vm:hr496",
+            "engine_model": "HR 496",
+            "year_introduced": 1992,
+            "year_discontinued": 2000,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "4-cylinder, 96mm bore — designation-valid, independently unsourced (?).",
+              "description": "Il quattro maggiore: valido per grammatica, avaro di carte. Presidia lo scomparto con la riserva piena e la fiducia nella nomenclatura."
+            }
+          },
+          {
+            "id": "vm:mr504lw3",
+            "engine_model": "MR504LW3",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Modern 2.0L common-rail four (1,600 bar, 4v/cyl, balancer shafts), 40-170 hp ratings, keel or heat-exchanger cooling, HVO-approved — the current VM marine line.",
+              "description": "Il quattro contemporaneo: due litri common rail a millesecento bar, contralberi di equilibratura, raffreddamento a chiglia o scambiatore, e l'omologazione ai carburanti vegetali. Cento continua il mestiere del 1947 — il primo diesel a iniezione diretta interamente italiano nacque qui — con la discrezione di sempre."
+            },
+            "manifold_alternatives": [
+              {
+                "id": "alt_da343dbd",
+                "type": "mmdm",
+                "price": 800,
+                "description": "Our best replacement manifold of carbon steel",
+                "rebranded_from": "",
+                "rebranded_as": "",
+                "specifications": {
+                  "material": "Carbon Steel",
+                  "weight": "18kg",
+                  "warranty": "2",
+                  "dimensions": {
+                    "height": "20cm",
+                    "width": "30cm",
+                    "length": "50cm"
+                  }
+                },
+                "photos": [
+                  "/photos/vm_motori/54397a/54397a_front.png",
+                  "/photos/vm_motori/54397a/54397a_back.png"
+                ],
+                "photo_count": 2,
+                "has_photos": true,
+                "notes": "Includes gasket",
+                "availability": "in_stock",
+                "stock_level": 8,
+                "min_stock_threshold": null,
+                "lead_time": "2 days",
+                "last_updated": "2025-10-12",
+                "brand": "MMdM",
+                "part_number": "54397a"
+              },
+              {
+                "id": "alt_43319bde",
+                "type": "oem",
+                "price": 900,
+                "rebranded_from": "",
+                "rebranded_as": "",
+                "specifications": {
+                  "material": "Carbon Steel",
+                  "weight": "",
+                  "warranty": "",
+                  "dimensions": {
+                    "height": "",
+                    "width": "",
+                    "length": ""
+                  }
+                },
+                "photos": [],
+                "photo_count": 0,
+                "has_photos": false,
+                "notes": "",
+                "availability": "",
+                "stock_level": 0,
+                "min_stock_threshold": null,
+                "lead_time": "Immediate",
+                "last_updated": "2025-10-12",
+                "brand": "VM Motori",
+                "part_number": "23"
+              },
+              {
+                "id": "alt_b695c3f4",
+                "type": "third_party",
+                "price": 1500,
+                "rebranded_from": "",
+                "rebranded_as": "",
+                "specifications": {
+                  "material": "",
+                  "weight": "",
+                  "warranty": "",
+                  "dimensions": {
+                    "height": "",
+                    "width": "",
+                    "length": ""
+                  }
+                },
+                "photos": [],
+                "photo_count": 0,
+                "has_photos": false,
+                "notes": "",
+                "availability": "",
+                "stock_level": 0,
+                "min_stock_threshold": null,
+                "lead_time": "2 weeks",
+                "last_updated": "2025-10-12",
+                "brand": "MMdM",
+                "part_number": "44"
+              },
+              {
+                "id": "alt_3dc34d08",
+                "type": "third_party",
+                "price": 23,
+                "description": "Fairhope's finest...",
+                "rebranded_from": "",
+                "rebranded_as": "",
+                "specifications": {
+                  "material": "ss",
+                  "weight": "",
+                  "warranty": "",
+                  "dimensions": {
+                    "height": "",
+                    "width": "",
+                    "length": ""
+                  }
+                },
+                "photos": [],
+                "photo_count": 0,
+                "has_photos": false,
+                "notes": "",
+                "availability": "",
+                "stock_level": 0,
+                "min_stock_threshold": null,
+                "lead_time": "2 weeks",
+                "last_updated": "2025-10-12",
+                "brand": "MMdM",
+                "part_number": "eu"
+              }
+            ]
+          }
+        ],
+        "families": {}
+      },
+      "5": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "vm:hr588",
+            "engine_model": "HR 588",
+            "year_introduced": 1985,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.5L FIVE (5 cyl x 88mm), ~140 hp marine class — and the same five went into Toyota Land Cruiser IIs: a VM diesel in a Toyota, while Toyota's blocks powered half this catalog's marinizers.",
+              "description": "Il cinque di Cento — con la migliore ironia del catalogo: questo diesel emiliano finì nei Land Cruiser, mentre i blocchi Toyota finivano in mezza nautica mondiale (vedi Toyota). La rete dei donatori, a furia di intrecciarsi, si morde la coda — e lo fa in cinque cilindri."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "vm:hr692",
+            "engine_model": "HR 692",
+            "year_introduced": 1990,
+            "year_discontinued": 1996,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "3.6L six (92mm) — sold across the Atlantic as the MerCruiser D219 Turbo AC / D3.6L (see MerCruiser); the same tunnel-bore family carried BMW Marine's D150/D190 (see BMW Marine).",
+              "description": "Il sei da novantadue: in America si chiamava MerCruiser D3.6L, in Germania aveva vestito i BMW Marine (vedi entrambi). Tre nomi, un basamento, una sola officina emiliana — il donatore perfetto non ha bisogno di fama, ha bisogno di canne a tunnel."
+            }
+          },
+          {
+            "id": "vm:hr694",
+            "engine_model": "HR 694",
+            "year_introduced": 1994,
+            "year_discontinued": 1999,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "4.2L six (94mm), 220-250 hp — the MerCruiser D254/D4.2L and, in 1997, the D4.2L D-Tronic: electronic injection with an Italian heart.",
+              "description": "Il sei maggiore: quattro litri e due che oltreoceano divennero il MerCruiser D-Tronic — l'iniezione elettronica di Brunswick col cuore di Cento. L'ultima grande stagione dei diesel emiliani in doppia cittadinanza."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

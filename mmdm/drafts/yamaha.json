@@ -1,0 +1,64 @@
+{
+  "_dossier": "031g Yamaha. Rulings: buckets [4,6,8,12] → [4,6,8] (12 baseless). INBOARDS ONLY (outboards excluded by doctrine). ME420 Toyota sixes = the honest core; GM sterndrive interlude 1989-93 (Crusader-marinized, Yamaha by nameplate); [4] via GM 3.0 L4 sterndrive. Jet-boat two-strokes noted in prose. MD350/MD630 phantoms dropped.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Yamaha",
+  "node": {
+    "year_founded": 1955,
+    "year_dissolved": null,
+    "sort_number": 104,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "yamaha:l4-3.0",
+            "engine_model": "L4 3.0 Sterndrive",
+            "year_introduced": 1989,
+            "year_discontinued": 1993,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "GM 181 four (~140 hp), Crusader-marinized, Yamaha by nameplate — the entry of the 1989-93 American sterndrive program, launched into a market that crashed the same year.",
+              "description": "Il quattro della campagna americana: blocco GM marinizzato dalla Crusader, targhetta Yamaha, e il tempismo peggiore della storia recente — debutto 1989, l'anno esatto in cui il mercato USA dei motoscafi crollò. Il programma durò quattro stagioni; la casa dei diapason tornò ai suoi mestieri."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "yamaha:me420sti",
+            "engine_model": "ME420STI",
+            "year_introduced": 1993,
+            "year_discontinued": 2008,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4.16L turbo six on the Toyota Land Cruiser block (~245-300 hp), Hydra-Drive sterndrive option — THE Yamaha inboard diesel, standard equipment of the Japanese fishing fleet (ME370/421/422/432 siblings around it).",
+              "description": "Il diesel vero di casa: il sei Toyota da quattro litri e due col turbo, fino a trecento cavalli, onnipresente sui pescherecci giapponesi col suo piede Hydra-Drive. Lo stesso blocco che Yanmar veste per il diporto (vedi Yanmar), qui in tuta da lavoro — il Land Cruiser è il donatore nazionale del Giappone."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "yamaha:ye-7.4l",
+            "engine_model": "YE-7.4L",
+            "year_introduced": 1990,
+            "year_discontinued": 1993,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "GM 454 V8 (~260 hp) with Yamaha's hydraulic-clutch sterndrive — IMTEC Innovation Award 1992; the program's crown, and nearly its whole legacy.",
+              "description": "L'otto premiato: il big block GM con l'innesto idraulico che valse a Yamaha un premio all'innovazione nel 1992 — un anno prima della chiusura del programma. Resta l'epitaffio elegante d'una campagna sfortunata: arrivare col motore giusto nel momento sbagliato è un'arte che non si sceglie."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

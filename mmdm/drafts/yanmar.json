@@ -1,0 +1,203 @@
+{
+  "_dossier": "031h Yanmar. No bucket rulings — [1,2,3,4,6,8] all richly confirmed. HB 1933 = world's first practical small diesel (national heritage artifact) seated as monument in [1]. Dynasties: YS singles → QM → GM (the sacred) → YM → JH (mechanical→CR) → Toyota-block 6LP/4LV → 6LY big sixes → 8LV V8 → commercial HA. JH launched 1985 (not 1982); 6LF = phantom, dropped. Yamaha-Toyota symmetry noted.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Yanmar",
+  "node": {
+    "year_founded": 1912,
+    "year_dissolved": null,
+    "sort_number": 105,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "yanmar:hb",
+            "engine_model": "HB",
+            "year_introduced": 1933,
+            "year_discontinued": 1945,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE MONUMENT: 23 December 1933 — the world's first practical SMALL diesel, a horizontal single designed for 3 hp that delivered ~5 under load. Magokichi Yamaoka had seen a diesel at the Leipzig fair and vowed to miniaturize it. Registered national heritage of Japanese science (2012). Not marine itself — but every auxiliary in every sailboat descends from this act.",
+              "description": "Il monumento giapponese: il 23 dicembre 1933 Magokichi Yamaoka — che aveva visto un diesel alla fiera di Lipsia e giurato di rimpicciolirlo — accese il primo piccolo diesel pratico della storia. Un monocilindrico orizzontale da tre cavalli dichiarati e cinque effettivi, oggi patrimonio nazionale della scienza giapponese. Non era un motore marino: era l'idea da cui discendono tutti gli ausiliari di tutte le barche a vela del mondo. Yanmar — libellula più Yamaoka — nacque qui davvero."
+            }
+          },
+          {
+            "id": "yanmar:yse12",
+            "engine_model": "YSE12",
+            "year_introduced": 1968,
+            "year_discontinued": 1975,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Horizontal raw-water-cooled single, 12 hp (YSE8 below; YSB/YSM updates followed) — the classic putt-putt auxiliary of the first fiberglass generation.",
+              "description": "Il monocilindrico orizzontale: dodici cavalli raffreddati ad acqua di mare, discendente diretto del monumento del 1933, nelle sentine della prima generazione della vetroresina. Il putt-putt gentile con cui mezzo mondo velico imparò il gasolio."
+            }
+          },
+          {
+            "id": "yanmar:1gm10",
+            "engine_model": "1GM10",
+            "year_introduced": 1983,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "318cc single, 9 hp @ 3,600 — THE small sailboat auxiliary, still in the catalogue after four decades.",
+              "description": "Il piccolo sacro: trecentodiciotto centimetri cubi e nove cavalli che dal 1983 spingono i sette-otto metri del pianeta. Quarant'anni di listino ininterrotto — nelle scuole vela si impara prima il suo nome del nodo di bolina."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "yanmar:2gm20",
+            "engine_model": "2GM20",
+            "year_introduced": 1981,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "635cc twin, 18 hp @ 3,600 (F = freshwater-cooled) — ubiquity itself: the auxiliary of the modern sailing world, by the hundred thousand.",
+              "description": "L'ubiquità fatta motore: il bicilindrico da diciotto cavalli che abita più sentine di qualunque altro diesel della storia della vela. Se una barca degli anni Ottanta o Novanta ha un motore, la scommessa è questa — e si vince quasi sempre. Il default planetario."
+            }
+          },
+          {
+            "id": "yanmar:2ym15",
+            "engine_model": "2YM15",
+            "year_introduced": 2002,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "570cc twin, 14 hp; the YM generation that succeeded the GMs.",
+              "description": "L'erede: la generazione YM che nel nuovo secolo raccolse il testimone dei GM senza clamore. Più silenzioso, più pulito, stesso mestiere — la successione giapponese perfetta."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "yanmar:3gm30",
+            "engine_model": "3GM30",
+            "year_introduced": 1983,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "954cc triple, 27 hp; the GM dynasty's three (3HM35 above it).",
+              "description": "Il tre della dinastia: ventisette cavalli per i dieci-undici metri, con il fratello HM sopra. La scala GM saliva di un cilindro alla volta e la vela mondiale saliva con lei."
+            }
+          },
+          {
+            "id": "yanmar:3ym30",
+            "engine_model": "3YM30",
+            "year_introduced": 2003,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "1,115cc triple, 29 hp @ 3,600; the 3GM30's direct successor.",
+              "description": "Il tre moderno: l'erede diretto del 3GM30, ventinove cavalli d'aggiornamento continuo. Nelle flotte charter del Mediterraneo è l'aria che si respira sotto il pagliolo."
+            }
+          },
+          {
+            "id": "yanmar:3jh40",
+            "engine_model": "3JH40",
+            "year_introduced": 2018,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "1,642cc triple, 40 hp @ 3,000 — the world's smallest common-rail inboard marine diesel (Miami Innovation Award 2018).",
+              "description": "Il primato contemporaneo: il più piccolo diesel marino common rail del mondo, premiato a Miami nel 2018. La casa che nel 1933 miniaturizzò il diesel continua a farlo — ottantacinque anni dopo, con l'elettronica al posto del volano."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "yanmar:4jh",
+            "engine_model": "4JH",
+            "year_introduced": 1985,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~2.0L four, 44-110 hp across four mechanical generations (4JH/-TE/-DTE, JH2, JH3, JH4) and the common-rail JH-CR era (4JH45→4JH110, 2014) — the cruising four of the world's blue-water fleet.",
+              "description": "Il quattro delle circumnavigazioni: dal 1985 a oggi, quattro generazioni meccaniche e una common rail, da quarantaquattro a centodieci cavalli. Nelle barche che attraversano gli oceani col piano B in sala macchine, il piano B si chiama quasi sempre così."
+            }
+          },
+          {
+            "id": "yanmar:4lv250",
+            "engine_model": "4LV250",
+            "year_introduced": 2017,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2,755cc common-rail four on the Toyota 1GD (Land Cruiser Prado/HiLux) block, 150-250 hp across the series; sterndrive trims complete it.",
+              "description": "Il patto con Toyota, capitolo recente: il common rail del Land Cruiser Prado in cinque tarature fino a duecentocinquanta cavalli. Lo stesso donatore che veste anche l'altro diapason di questo catalogo (vedi Yamaha) — in Giappone, il fuoristrada nazionale è anche il motore nazionale delle barche."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "yanmar:6lp",
+            "engine_model": "6LP",
+            "year_introduced": 1997,
+            "year_discontinued": 2008,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4.164L six — the marinized Toyota 1HD Land Cruiser block ('1HD' stamped on the casting), 250-315 hp; sportfish and flybridge staple.",
+              "description": "Il sei col doppio cognome: il blocco 1HD del Land Cruiser — la sigla è fusa nel basamento, per chi sa dove guardare — marinizzato fino a trecentoquindici cavalli. La discrezione giapponese: il donatore non si nomina, si stampa in ghisa."
+            }
+          },
+          {
+            "id": "yanmar:6ly440",
+            "engine_model": "6LY440",
+            "year_introduced": 2016,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "5,813cc own-design six (106x110), 440 hp — fourth generation of a line in service over three decades.",
+              "description": "Il grande sei di casa: cinque litri e otto interamente Yanmar, alla quarta generazione e a quota quattrocentoquaranta cavalli. Trent'anni di sportfisherman e motoryacht sotto lo stesso basamento — la continuità come specialità della casa."
+            }
+          },
+          {
+            "id": "yanmar:6ha2m",
+            "engine_model": "6HA2M",
+            "year_introduced": 2005,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "The commercial six (WHT/WDT trims, 350-405 hp @ 1,950); fishing boats and small ferries — the workboat face of the house (~ displacement figure).",
+              "description": "Il volto da lavoro: il sei commerciale da quattrocento cavalli a regimi bassi, per pescherecci e piccoli traghetti d'Asia. La casa degli ausiliari da vela non ha mai smesso di servire chi in mare ci lavora — era il mandato del fondatore, e i mandati a Osaka si rispettano."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "yanmar:8lv370",
+            "engine_model": "8LV370",
+            "year_introduced": 2011,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "4.46L twin-turbo common-rail V8, 320-370 hp, 450 kg — best power-to-weight in class at launch; sterndrive (Z) trims complete it.",
+              "description": "L'otto della maturità: un V8 biturbo da quattro litri e mezzo, trecentosettanta cavalli in quattrocentocinquanta chili — il miglior rapporto peso-potenza della categoria al debutto. Dal monocilindrico orizzontale del 1933 a qui: la libellula di Yamaoka ha messo su otto ali, senza mai cambiare indole."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

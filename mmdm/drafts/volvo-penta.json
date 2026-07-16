@@ -1,0 +1,2057 @@
+{
+  "_dossier": "B.3 finale — Volvo Penta rebuild. Placeholder tree audited and rebuilt: ~50 bucket corrections (40/41/42/43/44 + KAD + TAMD102-165 + D11/D13 = SIXES; D3 = FIVES, duplicates merged; MD1B/MD5A/2001 singles; MD11 twins; D1-20/30 triples; D2 fours; MD2010-2040 renamed w/ MD prefix — hp-naming not cylinders; AQ171 = four; 7.4GXi→GSi; 8.2L GL hedged). Full prose backfill: 175 models. Facts per 3-agent verification sweep 2026-07-15/16.",
+  "market": "eurasia",
+  "country": "Svezia",
+  "manufacturer": "Volvo Penta",
+  "node": {
+    "year_founded": 1907,
+    "year_dissolved": null,
+    "sort_number": 99,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "volvo:b1-penta",
+            "engine_model": "B1 Penta",
+            "year_introduced": 1907,
+            "year_discontinued": 1920,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE ORIGIN: the 1907 single from the Skövde foundry, ~3 hp, built with Stockholm engineer Fritz Egnell — the engine that founded the house. 'Penta' honors the five-man committee that, failing to invent a better name, named the brand after its own headcount.",
+              "description": "L'origine: il monocilindrico del 1907 dalla fonderia di Skövde, tre cavalli scarsi, disegnato con l'ingegner Egnell di Stoccolma. Il nome venne più tardi, da un comitato di cinque uomini che, non trovando di meglio, battezzò il marchio col proprio numero: Penta. Vent'anni dopo, questa piccola casa avrebbe motorizzato la prima automobile Volvo — la Penta precede la Volvo, non viceversa. Ogni impero comincia con un cilindro solo."
+            }
+          },
+          {
+            "id": "volvo:md1b",
+            "engine_model": "MD1B",
+            "year_introduced": 1970,
+            "year_discontinued": 1973,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "10 hp single @ 2,500, raw-water cooled; descendant of the 1958 MD1 — 'the world's smallest direct-injected diesel' at launch, the engine that put diesel into sailboats.",
+              "description": "L'erede diretto del MD1 del 1958 — il più piccolo diesel a iniezione diretta del mondo, al debutto — che portò il gasolio nelle barche a vela. Dieci cavalli raffreddati ad acqua di mare: la dinastia degli ausiliari svedesi comincia qui."
+            }
+          },
+          {
+            "id": "volvo:md5a",
+            "engine_model": "MD5A",
+            "year_introduced": 1975,
+            "year_discontinued": 1978,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "443cc single, 7.5 hp @ 2,500, hand-crankable; the classic auxiliary of ~26-ft cruisers.",
+              "description": "Il piccolo a manovella: quattrocento centimetri cubi e sette cavalli e mezzo, avviabile a braccia quando la batteria tradiva. Nelle cabinate da otto metri degli anni Settanta era il coinquilino ideale — minuscolo, frugale, testardo."
+            }
+          },
+          {
+            "id": "volvo:2001",
+            "engine_model": "2001",
+            "year_introduced": 1983,
+            "year_discontinued": 1991,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "9 hp single of the 1983 purpose-designed sail-auxiliary program; the naming encodes cylinders — 2001 means one.",
+              "description": "Il monocilindrico della serie 2000: il programma del 1983 disegnato apposta per la vela, con la sigla che dichiara i cilindri — duemila-e-uno, uno. La chiarezza svedese applicata alla nomenclatura."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "volvo:md2b",
+            "engine_model": "MD2B",
+            "year_introduced": 1970,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.12L twin, 25 hp; sibling of the MD1B, replaced by the MD11C.",
+              "description": "Il gemello della prima dinastia: venticinque cavalli d'acqua salata per le barche di famiglia. Passò il testimone al MD11C senza cerimonie."
+            }
+          },
+          {
+            "id": "volvo:md6a",
+            "engine_model": "MD6A",
+            "year_introduced": 1971,
+            "year_discontinued": 1975,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "10 hp twin, raw-water cooled.",
+              "description": "Dieci cavalli in due cilindri: la taglia gentile della gamma, per la vela svedese che usciva la domenica col motore in seconda fila."
+            }
+          },
+          {
+            "id": "volvo:md6b",
+            "engine_model": "MD6B",
+            "year_introduced": 1975,
+            "year_discontinued": 1976,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "10 hp twin; a one-year update.",
+              "description": "L'aggiornamento breve: un anno scarso di listino tra il fratello A e il MD7. Le dinastie serie contano anche i regni brevi."
+            }
+          },
+          {
+            "id": "volvo:md7a",
+            "engine_model": "MD7A",
+            "year_introduced": 1976,
+            "year_discontinued": 1981,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "13.4 hp twin — extremely common in late-70s production yachts (Hallberg-Rassy and kin).",
+              "description": "Il bicilindrico dei cantieri: nelle produzioni di serie di fine anni Settanta — Hallberg-Rassy in testa — era quasi una dotazione di scafo. Tredici cavalli di ubiquità scandinava."
+            }
+          },
+          {
+            "id": "volvo:md7b",
+            "engine_model": "MD7B",
+            "year_introduced": 1981,
+            "year_discontinued": 1983,
+            "sort_number": 5,
+            "data": {
+              "key_notes": "17.5 hp twin; the MD7 uprated.",
+              "description": "Il sette cresciuto: diciassette cavalli e mezzo per l'ultima stagione dei piccoli MD a due cilindri."
+            }
+          },
+          {
+            "id": "volvo:md11c",
+            "engine_model": "MD11C",
+            "year_introduced": 1975,
+            "year_discontinued": 1981,
+            "sort_number": 6,
+            "data": {
+              "key_notes": "1.12L twin, 23 hp @ 2,500 max — the beloved slow-revving classic of the raw-water era.",
+              "description": "Il classico lento: ventitré cavalli a duemilacinquecento giri di tetto, non uno di più. Gli armatori che l'hanno avuto ne parlano al presente — nella vela d'epoca scandinava è una piccola religione."
+            }
+          },
+          {
+            "id": "volvo:md11d",
+            "engine_model": "MD11D",
+            "year_introduced": 1981,
+            "year_discontinued": 1983,
+            "sort_number": 7,
+            "data": {
+              "key_notes": "25 hp twin; last of the MD11s.",
+              "description": "L'ultimo degli undici: venticinque cavalli a chiudere la stirpe dei bicilindrici d'acqua di mare."
+            }
+          },
+          {
+            "id": "volvo:md2010",
+            "engine_model": "MD2010",
+            "year_introduced": 1993,
+            "year_discontinued": 2005,
+            "sort_number": 8,
+            "data": {
+              "key_notes": "~10 hp twin on a Perkins 100-series/Shibaura block; in THIS series the number encodes horsepower, not cylinders — a trap this catalog fell into and has now corrected.",
+              "description": "Il primo dell'era giapponese: blocco Shibaura via Perkins, dieci cavalli — ed ecco il tranello: in questa serie il numero dichiara i cavalli, non i cilindri. Questo catalogo c'era cascato, e qui si emenda (vedi Perkins, vedi IHI)."
+            }
+          },
+          {
+            "id": "volvo:d1-13",
+            "engine_model": "D1-13",
+            "year_introduced": 2005,
+            "year_discontinued": null,
+            "sort_number": 9,
+            "data": {
+              "key_notes": "0.51L Shibaura-based twin, 12.2 hp, freshwater-cooled standard; 130S saildrive or shaft — the modern small auxiliary.",
+              "description": "Il piccolo contemporaneo: mezzo litro di bicilindrico su base Shibaura, raffreddamento a scambiatore di serie, piede saildrive a scelta. L'ausiliario moderno nella sua forma minima (vedi IHI)."
+            }
+          },
+          {
+            "id": "volvo:d1-13f",
+            "engine_model": "D1-13F",
+            "year_introduced": 2016,
+            "year_discontinued": null,
+            "sort_number": 10,
+            "data": {
+              "key_notes": "F-generation D1-13 (EU RCD 2013/53 refresh).",
+              "description": "La generazione F: lo stesso gemello, aggiornato alla direttiva europea del 2013. Le sigle cambiano per legge, il mestiere no."
+            }
+          }
+        ],
+        "families": {
+          "Serie 2000": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "volvo:2002",
+                "engine_model": "2002",
+                "year_introduced": 1983,
+                "year_discontinued": 1991,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "18 hp twin of the 2000-series.",
+                  "description": "Il due della serie parlante: diciotto cavalli, sigla che si spiega da sola. Il centro esatto del programma vela del 1983."
+                }
+              },
+              {
+                "id": "volvo:2002b",
+                "engine_model": "2002B",
+                "year_introduced": 1991,
+                "year_discontinued": 1993,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "18 hp twin, B revision.",
+                  "description": "La revisione B del gemello: gli ultimi anni della serie 2000, prima dell'era dei blocchi giapponesi."
+                }
+              },
+              {
+                "id": "volvo:2002d",
+                "engine_model": "2002D",
+                "year_introduced": 1992,
+                "year_discontinued": 1993,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "18 hp twin, final D trim.",
+                  "description": "L'ultima lettera del gemello: il congedo della serie che dichiarava i cilindri nel nome."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "volvo:md17c",
+            "engine_model": "MD17C",
+            "year_introduced": 1975,
+            "year_discontinued": 1981,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "1.68L triple, 35 hp @ 2,500 (3.5\" bore, 17.5:1 CR); big brother of the MD11C.",
+              "description": "Il tre della famiglia d'acqua salata: trentacinque cavalli con la stessa indole lenta del fratello minore. Per le barche che al MD11 chiedevano un cilindro di rispetto in più."
+            }
+          },
+          {
+            "id": "volvo:md17d",
+            "engine_model": "MD17D",
+            "year_introduced": 1981,
+            "year_discontinued": 1984,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "36 hp triple — the last of the raw-water MD classics.",
+              "description": "L'ultimo dei classici ad acqua di mare: con lui si chiude l'era in cui il mare entrava direttamente nel blocco. Dopo, solo scambiatori — il progresso ha le sue nostalgie."
+            }
+          },
+          {
+            "id": "volvo:d1-20",
+            "engine_model": "D1-20",
+            "year_introduced": 2005,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "0.76L TRIPLE, 18.8 hp @ 3,200, freshwater-cooled; saildrive or shaft.",
+              "description": "Il tre moderno in miniatura: diciannove cavalli scarsi di common sense svedese su base giapponese. Nelle flotte scuola del Baltico è l'alfabeto del diesel."
+            }
+          },
+          {
+            "id": "volvo:d1-20f",
+            "engine_model": "D1-20F",
+            "year_introduced": 2016,
+            "year_discontinued": null,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "F-generation D1-20.",
+              "description": "La generazione F del piccolo tre: la burocrazia europea come motore del progresso, letteralmente."
+            }
+          },
+          {
+            "id": "volvo:d1-30",
+            "engine_model": "D1-30",
+            "year_introduced": 2005,
+            "year_discontinued": null,
+            "sort_number": 5,
+            "data": {
+              "key_notes": "1.13L triple, 27 hp @ 3,200; the volume model of the modern sail range.",
+              "description": "Il tre di volume: ventisette cavalli per la fascia più popolata della vela contemporanea. Se una barca a vela nuova ha un motore svedese, con ogni probabilità è questo."
+            }
+          },
+          {
+            "id": "volvo:d1-30f",
+            "engine_model": "D1-30F",
+            "year_introduced": 2016,
+            "year_discontinued": null,
+            "sort_number": 6,
+            "data": {
+              "key_notes": "F-generation D1-30.",
+              "description": "La F del trenta: il presente della dinastia iniziata nel 1958 con un cilindro solo."
+            }
+          }
+        ],
+        "families": {
+          "Serie 2000": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "volvo:2003",
+                "engine_model": "2003",
+                "year_introduced": 1983,
+                "year_discontinued": 1990,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "1.28L triple, 28 hp.",
+                  "description": "Il tre parlante: ventotto cavalli nella serie che si legge da sola. Il gradino alto del programma vela."
+                }
+              },
+              {
+                "id": "volvo:2003b",
+                "engine_model": "2003B",
+                "year_introduced": 1991,
+                "year_discontinued": 1993,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "28 hp triple, B revision.",
+                  "description": "La revisione del tre: ordinaria amministrazione svedese, che è un complimento."
+                }
+              },
+              {
+                "id": "volvo:2003d",
+                "engine_model": "2003D",
+                "year_introduced": 1992,
+                "year_discontinued": 1993,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "28 hp triple, final trim.",
+                  "description": "Il congedo del tre aspirato, a un passo dal cambio d'epoca."
+                }
+              },
+              {
+                "id": "volvo:2003t",
+                "engine_model": "2003T",
+                "year_introduced": 1986,
+                "year_discontinued": 1993,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "1.28L turbo triple, 43 hp @ 3,200 — folklore calls it the first turbocharged sail auxiliary; the claim resists documentation and this catalog says so.",
+                  "description": "Il turbo della vela: quarantatré cavalli da un litro e tre. La leggenda lo vuole primo ausiliario turbo della storia — la carta non lo conferma, e questa enciclopedia registra entrambe le cose: la fama e il dubbio."
+                }
+              },
+              {
+                "id": "volvo:2003tb",
+                "engine_model": "2003TB",
+                "year_introduced": 1991,
+                "year_discontinued": 1993,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "43 hp turbo triple, B version.",
+                  "description": "L'ultima versione del turbo piccolo: la serie 2000 uscì di scena col fiato in pressione."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "MD20": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "volvo:md2020",
+                "engine_model": "MD2020",
+                "year_introduced": 1993,
+                "year_discontinued": 2005,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "~19 hp TRIPLE (Perkins 103.07 geometry) — despite the '20' in the name; horsepower naming, not cylinders.",
+                  "description": "Il tre travestito da due: la sigla promette venti — cavalli, non cilindri, che sono tre. Blocco di geometria Perkins, pazienza giapponese, nomenclatura da enigmistica (vedi Perkins)."
+                }
+              },
+              {
+                "id": "volvo:md2020b",
+                "engine_model": "MD2020B",
+                "year_introduced": 1996,
+                "year_discontinued": 2002,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "MD2020 B version.",
+                  "description": "La versione B del tre piccolo dell'era giapponese."
+                }
+              },
+              {
+                "id": "volvo:md2020d",
+                "engine_model": "MD2020D",
+                "year_introduced": 1999,
+                "year_discontinued": 2005,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "MD2020 D version.",
+                  "description": "L'ultima lettera del piccolo tre, fino al passaggio di consegne ai D1."
+                }
+              },
+              {
+                "id": "volvo:md2030",
+                "engine_model": "MD2030",
+                "year_introduced": 1993,
+                "year_discontinued": 2005,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "~29 hp triple, ~1.0-1.13L across versions.",
+                  "description": "Il tre di mezzo dell'era Shibaura: ventinove cavalli per la crociera di famiglia, robustezza da motozappa nobilitata."
+                }
+              },
+              {
+                "id": "volvo:md2030b",
+                "engine_model": "MD2030B",
+                "year_introduced": 1996,
+                "year_discontinued": 2002,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "MD2030 B version.",
+                  "description": "La B del tre di mezzo: aggiornamenti senza clamore."
+                }
+              },
+              {
+                "id": "volvo:md2030d",
+                "engine_model": "MD2030D",
+                "year_introduced": 1999,
+                "year_discontinued": 2005,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "MD2030 D version.",
+                  "description": "La D conclusiva, ponte verso il D1-30 che ne avrebbe ereditato la clientela."
+                }
+              },
+              {
+                "id": "volvo:md2040",
+                "engine_model": "MD2040",
+                "year_introduced": 1993,
+                "year_discontinued": 2005,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "1.50L TRIPLE (bore 84 x stroke 90 — Perkins 103.15 twin sources confirm), ~40 hp; its successor D2-40 is the four.",
+                  "description": "L'altro travestito: quaranta cavalli da tre cilindri — non quattro, come il nome e questo catalogo credevano. Il quattro sarebbe arrivato dopo, col D2-40. Due fonti indipendenti, un errore emendato."
+                }
+              },
+              {
+                "id": "volvo:md2040b",
+                "engine_model": "MD2040B",
+                "year_introduced": 1996,
+                "year_discontinued": 2002,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "MD2040 B version.",
+                  "description": "La B del quaranta: la maturità dell'era dei blocchi orientali."
+                }
+              },
+              {
+                "id": "volvo:md2040d",
+                "engine_model": "MD2040D",
+                "year_introduced": 1999,
+                "year_discontinued": 2005,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "MD2040 D version.",
+                  "description": "Il congedo della serie MD20x0 — dodici anni di servizio sotto mentite spoglie numeriche."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "volvo:md21a",
+            "engine_model": "MD21A",
+            "year_introduced": 1969,
+            "year_discontinued": 1979,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~2.0L four on the Volvo B20 CAR block, ~61 hp @ 4,500 (ratings conflict 45/61/75 across duty bases), freshwater-cooled; sterndrive sibling AQD21.",
+              "description": "Il diesel col cuore d'automobile: il blocco B20 delle berline, convertito a gasolio e a scambiatore. Le fonti litigano sui cavalli — quarantacinque, sessantuno, settantacinque, secondo la base di taratura — e questo catalogo registra la lite. La doppia vita dei blocchi di Göteborg comincia qui."
+            }
+          },
+          {
+            "id": "volvo:md21b",
+            "engine_model": "MD21B",
+            "year_introduced": 1979,
+            "year_discontinued": 1981,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "~62 hp B20-block four, freshwater-cooled.",
+              "description": "L'ultima stagione del ventuno: il blocco d'auto in congedo marino, prima della generazione dedicata."
+            }
+          },
+          {
+            "id": "volvo:md30a",
+            "engine_model": "MD30A",
+            "year_introduced": 1983,
+            "year_discontinued": 1986,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "~2.4L four, 62-65 hp, freshwater-cooled; NA base of the 30-series (AQD30/AQAD30 siblings).",
+              "description": "Il capostipite aspirato della serie 30: sessantadue cavalli tranquilli per dislocanti e vela grande. I fratelli col turbo avrebbero fatto più rumore — lui faceva le ore."
+            }
+          },
+          {
+            "id": "volvo:md31a",
+            "engine_model": "MD31A",
+            "year_introduced": 1986,
+            "year_discontinued": 1994,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "2.39L four, 62 hp; the naturally-aspirated base of the whole TMD31/TAMD31/AD31 family.",
+              "description": "La radice della famiglia 31: l'aspirato da cui discesero turbo, aftercooler e piedi poppieri. Ogni dinastia ha un antenato che non alza la voce."
+            }
+          },
+          {
+            "id": "volvo:tmd22a",
+            "engine_model": "TMD22A",
+            "year_introduced": 1993,
+            "year_discontinued": 1995,
+            "sort_number": 5,
+            "data": {
+              "key_notes": "2.0L turbo four, 78 hp @ 4,000; sailboat and small-cruiser power.",
+              "description": "Il turbo piccolo: settantotto cavalli per vela impegnata e piccoli dislocanti. Due litri di modernità novantiana."
+            }
+          },
+          {
+            "id": "volvo:tmd22b",
+            "engine_model": "TMD22B",
+            "year_introduced": 1995,
+            "year_discontinued": 1998,
+            "sort_number": 6,
+            "data": {
+              "key_notes": "78 hp turbo four, B version.",
+              "description": "La B del ventidue: ordinaria manutenzione d'una gamma in transizione."
+            }
+          },
+          {
+            "id": "volvo:tamd22",
+            "engine_model": "TAMD22",
+            "year_introduced": 1994,
+            "year_discontinued": 1998,
+            "sort_number": 7,
+            "data": {
+              "key_notes": "2.0L turbo-aftercooled four, 103 hp @ 4,000.",
+              "description": "Il ventidue con l'intercooler: centotre cavalli da due litri, per piccoli plananti che volevano l'architettura dei grandi in scala ridotta."
+            }
+          },
+          {
+            "id": "volvo:b18",
+            "engine_model": "B18",
+            "year_introduced": 1961,
+            "year_discontinued": 1969,
+            "sort_number": 8,
+            "data": {
+              "key_notes": "1.8L Volvo B18 car four marinized (AQ90/95/100/120 trims), 80-120 hp; the block of the Amazon and P1800 — the engine of the first Aquamatics.",
+              "description": "Il cuore delle Amazon e delle P1800 prestato al mare: il B18 spinse i primi Aquamatic dal 1961. La Svezia in barca guidava lo stesso motore con cui andava al lavoro — la coerenza come stile di vita."
+            }
+          },
+          {
+            "id": "volvo:b20",
+            "engine_model": "B20",
+            "year_introduced": 1969,
+            "year_discontinued": 1975,
+            "sort_number": 9,
+            "data": {
+              "key_notes": "2.0L Volvo car four (MB20 inboard trims); sailboat and launch auxiliary.",
+              "description": "Il due litri delle 140: in versione entrobordo MB20 servì vela e lance con la proverbiale indistruttibilità del ferro rosso di Göteborg."
+            }
+          },
+          {
+            "id": "volvo:b21",
+            "engine_model": "B21",
+            "year_introduced": 1977,
+            "year_discontinued": 1984,
+            "sort_number": 10,
+            "data": {
+              "key_notes": "2.1L OHC 'red block' (AQ120B/AQ140A era) — the car line's switch to overhead cam, reflected afloat.",
+              "description": "Il blocco rosso monoalbero: quando le berline passarono all'albero in testa, le barche seguirono a ruota. Il progresso di Göteborg viaggiava in convoglio."
+            }
+          },
+          {
+            "id": "volvo:b23",
+            "engine_model": "B23",
+            "year_introduced": 1979,
+            "year_discontinued": 1985,
+            "sort_number": 11,
+            "data": {
+              "key_notes": "2.3L big-bore four (AQ145 era), ~138 hp.",
+              "description": "L'alesaggio largo: il ventitré delle station wagon in tenuta da regata, centotrentotto cavalli di borghesia veloce."
+            }
+          },
+          {
+            "id": "volvo:b25",
+            "engine_model": "B25",
+            "year_introduced": 1984,
+            "year_discontinued": 1990,
+            "sort_number": 12,
+            "data": {
+              "key_notes": "2.5L Penta-exclusive stroked B230 — a displacement no Volvo car ever had.",
+              "description": "Il due e mezzo che le automobili non ebbero mai: albero a corsa lunga montato solo per il mare. Quando la figlia marina supera la madre stradale."
+            }
+          }
+        ],
+        "families": {
+          "Serie 31": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "volvo:tmd31a",
+                "engine_model": "TMD31A",
+                "year_introduced": 1986,
+                "year_discontinued": 1989,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "2.39L turbo four, 100 hp; small cruisers and workboats.",
+                  "description": "Il cento cavalli onesto: turbo senza aftercooler, per cabinati e piccoli mezzi da lavoro. La Svezia feriale."
+                }
+              },
+              {
+                "id": "volvo:tmd31b",
+                "engine_model": "TMD31B",
+                "year_introduced": 1989,
+                "year_discontinued": 1993,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "100 hp turbo four, B version.",
+                  "description": "La B del trentuno turbo: continuità come programma."
+                }
+              },
+              {
+                "id": "volvo:tamd31a",
+                "engine_model": "TAMD31A",
+                "year_introduced": 1986,
+                "year_discontinued": 1991,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "2.39L turbo-aftercooled four, 130 hp @ 3,800; family planing cruisers.",
+                  "description": "Il quattro di famiglia: centotrenta cavalli con turbo e aftercooler per i plananti di misura europea. Una generazione di flybridge mediterranei è cresciuta sopra questo basamento."
+                }
+              },
+              {
+                "id": "volvo:tamd31b",
+                "engine_model": "TAMD31B",
+                "year_introduced": 1989,
+                "year_discontinued": 1993,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "110-130 hp T+A four.",
+                  "description": "La B del TAMD31: la stessa ricetta, il decennio che cambia."
+                }
+              },
+              {
+                "id": "volvo:ad31a",
+                "engine_model": "AD31A",
+                "year_introduced": 1986,
+                "year_discontinued": 1989,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "2.39L T+A four for Duoprop sterndrives, ~130 hp (~).",
+                  "description": "Il quattro del piede a doppia elica: nato per il Duoprop del 1982 — due eliche controrotanti che cancellano la coppia di reazione. Annotato con riserva sulle date, non sull'idea."
+                }
+              },
+              {
+                "id": "volvo:ad31b",
+                "engine_model": "AD31B",
+                "year_introduced": 1989,
+                "year_discontinued": 1993,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "130 hp Duoprop four.",
+                  "description": "La B del trentuno da piede poppiero: il connubio col Duoprop ormai istituzione."
+                }
+              },
+              {
+                "id": "volvo:ad31p-a",
+                "engine_model": "AD31P-A",
+                "year_introduced": 1994,
+                "year_discontinued": 2000,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "150 hp @ 3,900 Duoprop four.",
+                  "description": "Il P: la taratura alta del quattro da sterndrive, centocinquanta cavalli per i sport cruiser del decennio."
+                }
+              },
+              {
+                "id": "volvo:kad32p",
+                "engine_model": "KAD32P",
+                "year_introduced": 1997,
+                "year_discontinued": 2005,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "2.39L four with COMPRESSOR + turbo + aftercooler, 170 hp @ 3,800 — the only four of the KAD dynasty: a Roots blower fills the boost before the turbo wakes.",
+                  "description": "L'unico quattro della dinastia KAD: compressore volumetrico più turbo più aftercooler — il soffiatore Roots riempie i bassi finché il turbo non si sveglia, e la barca plana senza il buco di coppia. Centosettanta cavalli da due litri e mezzo scarsi, con l'ingegno al posto della cilindrata."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "D2": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "volvo:d2-40",
+                "engine_model": "D2-40",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "1.51L FOUR (not a triple — corrected), 38 hp; freshwater-cooled, saildrive or shaft.",
+                  "description": "Il quattro piccolo dell'era moderna — quattro cilindri veri, checché ne dicesse la vecchia scheda: trentotto cavalli per la vela di misura media. L'erede dichiarato del MD2040, coi cilindri finalmente in regola."
+                }
+              },
+              {
+                "id": "volvo:d2-40f",
+                "engine_model": "D2-40F",
+                "year_introduced": 2016,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "F-generation D2-40.",
+                  "description": "La F del quaranta: aggiornamento di direttiva, carattere invariato."
+                }
+              },
+              {
+                "id": "volvo:d2-50",
+                "engine_model": "D2-50",
+                "year_introduced": 2017,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "2.2L four, ~49 hp @ 3,000 — real, not a phantom: the Q2 2017 RCD-driven replacement for the D2-55.",
+                  "description": "Il cinquanta esiste: arrivò nel 2017 per pensionare il 55 sotto la nuova direttiva europea. Questo catalogo lo aveva sospettato fantasma — le scartoffie di Bruxelles, stavolta, hanno generato un motore vero."
+                }
+              },
+              {
+                "id": "volvo:d2-55",
+                "engine_model": "D2-55",
+                "year_introduced": 2001,
+                "year_discontinued": 2016,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "2.2L four, 55 hp @ 3,000; the modern sail workhorse until the EU directive retired it (Dec 2016).",
+                  "description": "Il cavallo da tiro della vela contemporanea: cinquantacinque cavalli da due litri e due, quindici anni di listino, pensionato dalla normativa e non dalla stanchezza. Mezzo Mediterraneo charter naviga ancora così."
+                }
+              },
+              {
+                "id": "volvo:d2-60f",
+                "engine_model": "D2-60F",
+                "year_introduced": 2016,
+                "year_discontinued": null,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "2.2L four, ~60 hp — the directive-era uprate, real and current.",
+                  "description": "Il sessanta della nuova era: la taratura cresciuta del blocco 2.2, a listino dal dicembre 2016. L'altro presunto fantasma rivelatosi in carne e ghisa."
+                }
+              },
+              {
+                "id": "volvo:d2-75",
+                "engine_model": "D2-75",
+                "year_introduced": 2003,
+                "year_discontinued": null,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "2.2L turbo + charge-cooled four, 75 hp @ 3,000, 210 Nm @ 2,000; the big-sail auxiliary.",
+                  "description": "Il grande ausiliario: settantacinque cavalli turbo per le vele da quindici metri e i céntomiglia con vento in prua. La coppia a duemila giri è il suo argomento — le barche grandi non chiedono fretta, chiedono spinta."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "D4": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "volvo:d4-180",
+                "engine_model": "D4-180",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "3.7L common-rail four, 180 hp; displacement and semi-planing duty.",
+                  "description": "Il D4 tranquillo: centottanta cavalli common rail per dislocanti e semiplananti. La base della famiglia disegnata da zero nel 2003 — doppio albero a camme, duemila bar, niente eredità stradale."
+                }
+              },
+              {
+                "id": "volvo:d4-210",
+                "engine_model": "D4-210",
+                "year_introduced": 2003,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "3.7L four, 210 hp @ 3,500 — the 2003 launch rating of the all-new D4.",
+                  "description": "La taratura del debutto: il 2003 portò il primo diesel marino interamente nuovo di Göteborg da decenni. Duecentodieci cavalli e un'architettura pensata per il mare e basta."
+                }
+              },
+              {
+                "id": "volvo:d4-225",
+                "engine_model": "D4-225",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "3.7L four, 225 hp @ 3,500.",
+                  "description": "Il gradino di mezzo del D4: venticinque cavalli di rispetto sopra il debutto."
+                }
+              },
+              {
+                "id": "volvo:d4-260",
+                "engine_model": "D4-260",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "3.7L four, 260 hp; compressor-assisted on top ratings.",
+                  "description": "Il duecentosessanta: dove il quattro comincia a rubare il mestiere ai sei, col compressore in soccorso ai bassi regimi."
+                }
+              },
+              {
+                "id": "volvo:d4-300",
+                "engine_model": "D4-300",
+                "year_introduced": 2010,
+                "year_discontinued": null,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "3.7L four, 300 hp, T+A+K.",
+                  "description": "Trecento cavalli da un quattro cilindri di serie: la soglia psicologica varcata con la nonchalance di Göteborg."
+                }
+              },
+              {
+                "id": "volvo:d4-320",
+                "engine_model": "D4-320",
+                "year_introduced": 2019,
+                "year_discontinued": null,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "3.7L four, 320 hp — the next-generation top rating.",
+                  "description": "Il vertice attuale: la generazione 2019, ottanta cavalli al litro da un diesel nautico di serie. Il quattro che i sei guardano nello specchietto."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "Aquamatic": {
+            "sort_number": 4,
+            "models": [
+              {
+                "id": "volvo:aq115",
+                "engine_model": "AQ115",
+                "year_introduced": 1969,
+                "year_discontinued": 1974,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "2.0L B20 twin-carb four, 115 SAE hp — the model number IS the horsepower, a convention across the AQ line; 210 kg all in.",
+                  "description": "Il centoquindici — cavalli, dichiarati nel nome come da convenzione di casa: il B20 a doppio carburatore delle 1800E, duecentodieci chili tutto compreso. L'Aquamatic di mezzo, per la famiglia che cronometrava."
+                }
+              },
+              {
+                "id": "volvo:aq125a",
+                "engine_model": "AQ125A",
+                "year_introduced": 1977,
+                "year_discontinued": 1984,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "2.1L B21 OHC four, ~117-125 hp (~ years; the later AQ125B moved to the B230 block).",
+                  "description": "Il centoventicinque della generazione monoalbero: annotato con riserva sulle date — gli archivi dell'era AQ sono un carnevale di varianti — e con certezza sul blocco."
+                }
+              },
+              {
+                "id": "volvo:aq130",
+                "engine_model": "AQ130",
+                "year_introduced": 1968,
+                "year_discontinued": 1975,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "2.0L B20 twin-carb four, 130 SAE — the volume seller of the four-cylinder Aquamatics.",
+                  "description": "Il più venduto dei quattro: centotrenta cavalli di B20, lo stesso motore che nelle coupé 1800 inseguiva le statali svedesi. In acqua vendette come il pane di segale."
+                }
+              },
+              {
+                "id": "volvo:aq131",
+                "engine_model": "AQ131",
+                "year_introduced": 1985,
+                "year_discontinued": 1993,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "2.3L B230 single-carb four, ~120-130 hp; same red block as the 240/740 sedans.",
+                  "description": "Il blocco delle 240 in versione balneare: centoventi e rotti cavalli di rosso Göteborg, monocarburatore e coscienza pulita."
+                }
+              },
+              {
+                "id": "volvo:aq145",
+                "engine_model": "AQ145",
+                "year_introduced": 1979,
+                "year_discontinued": 1988,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "2.3L B23 four, ~138 hp; A then B trims.",
+                  "description": "Il quarantacinque: il ventitré a doppio corpo, per la fascia in cui l'Aquamatic si prendeva sul serio."
+                }
+              },
+              {
+                "id": "volvo:aq151",
+                "engine_model": "AQ151",
+                "year_introduced": 1986,
+                "year_discontinued": 1993,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "2.5L stroked B230, ~150 hp twin-carb — the marine-only displacement (86mm stroke crank Penta never gave the cars).",
+                  "description": "Il centocinquanta a corsa lunga: due litri e mezzo che esistettero solo in mare, con l'albero da 86 millimetri che le berline sognarono invano. La Penta faceva la primogenita anche da controllata."
+                }
+              },
+              {
+                "id": "volvo:aq171",
+                "engine_model": "AQ171",
+                "year_introduced": 1988,
+                "year_discontinued": 1990,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "2.5L FOUR (corrected — no 5-cyl gasoline AQ ever existed) with the B234F 16-valve DOHC head, ~170 hp, electronic ignition — the hottest four of the line.",
+                  "description": "Il sedici valvole — quattro cilindri, non cinque come questa scheda credeva: la testa bialbero delle 740 16V sul due e mezzo marino, centosettanta cavalli e accensione elettronica. Il canto del cigno tecnico dei quattro Aquamatic."
+                }
+              },
+              {
+                "id": "volvo:aq171c",
+                "engine_model": "AQ171C",
+                "year_introduced": 1990,
+                "year_discontinued": 1993,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "The DOHC four's final trim.",
+                  "description": "L'ultima taratura del bialbero: con lei si chiuse l'era dei quattro a benzina di sangue interamente svedese."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "5": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "volvo:d3-110",
+            "engine_model": "D3-110",
+            "year_introduced": 2004,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.4L FIVE-cylinder (aluminum block from Volvo Cars' D5 diesel), 110 hp @ 3,000, common-rail 1,800 bar with piezo injectors and VGT.",
+              "description": "Il cinque d'alluminio: il D5 delle berline V70 rifatto marinaio, common rail a milleottocento bar e iniettori piezo. Centodieci cavalli d'ingresso — e il ritorno del cinque cilindri in mare, con quel timbro sincopato che è mezzo motore e mezzo strumento musicale."
+            }
+          },
+          {
+            "id": "volvo:d3-130",
+            "engine_model": "D3-130",
+            "year_introduced": 2004,
+            "year_discontinued": 2010,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "130 hp early-generation D3 rating (~).",
+              "description": "La taratura di prima generazione, poi riassorbita dal listino: annotata con riserva, come i gradini che la scala dimentica."
+            }
+          },
+          {
+            "id": "volvo:d3-140",
+            "engine_model": "D3-140",
+            "year_introduced": 2006,
+            "year_discontinued": null,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "140 hp D3.",
+              "description": "Il centoquaranta: il gradino basso della gamma matura, per semiplananti parchi."
+            }
+          },
+          {
+            "id": "volvo:d3-150",
+            "engine_model": "D3-150",
+            "year_introduced": 2006,
+            "year_discontinued": null,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "150 hp D3.",
+              "description": "Il centocinquanta: la via di mezzo del cinque, senza storia e senza guai — che per un motore è una biografia eccellente."
+            }
+          },
+          {
+            "id": "volvo:d3-170",
+            "engine_model": "D3-170",
+            "year_introduced": 2006,
+            "year_discontinued": null,
+            "sort_number": 5,
+            "data": {
+              "key_notes": "170 hp D3 @ 4,000.",
+              "description": "Il centosettanta: regimi da benzina, consumi da gasolio. Il compromesso svedese nella sua forma più liquida."
+            }
+          },
+          {
+            "id": "volvo:d3-200",
+            "engine_model": "D3-200",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 6,
+            "data": {
+              "key_notes": "200 hp D3 @ 4,000.",
+              "description": "Il duecento: ottanta cavalli e passa al litro dal cinque d'alluminio. La generazione 2010 del piccolo prodigio."
+            }
+          },
+          {
+            "id": "volvo:d3-220",
+            "engine_model": "D3-220",
+            "year_introduced": 2010,
+            "year_discontinued": null,
+            "sort_number": 7,
+            "data": {
+              "key_notes": "220 hp @ 4,000 — the top D3: 90+ hp/liter from a production marine diesel five.",
+              "description": "Il vertice: duecentoventi cavalli da due litri e quattro — novanta al litro, da un diesel nautico di serie. Il cinque cilindri più ambizioso di questo intero catalogo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 6,
+        "models": [
+          {
+            "id": "volvo:b30",
+            "engine_model": "B30",
+            "year_introduced": 1968,
+            "year_discontinued": 1975,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "3.0L Volvo B30 inline six (the 164 sedan engine) — the six of the classic Aquamatics.",
+              "description": "Il sei delle berline 164: essenzialmente un B20 con due cilindri di cortesia in più, e il cuore dei grandi Aquamatic dell'epoca d'oro."
+            }
+          },
+          {
+            "id": "volvo:aq165",
+            "engine_model": "AQ165",
+            "year_introduced": 1968,
+            "year_discontinued": 1972,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "3.0L B30 six, ~165 SAE hp.",
+              "description": "Il centosessantacinque: la prima ammiraglia a sei della gamma Aquamatic."
+            }
+          },
+          {
+            "id": "volvo:aq170",
+            "engine_model": "AQ170",
+            "year_introduced": 1969,
+            "year_discontinued": 1976,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "3.0L B30 six, 170 SAE, triple carburetors — the flagship of the golden Aquamatic era.",
+              "description": "Il centosettanta a tre carburatori: l'ammiraglia dell'era d'oro, il canto pieno del sei svedese a benzina. Uscì di scena quando Göteborg pensionò le aste e i bilancieri — in strada come in mare."
+            }
+          },
+          {
+            "id": "volvo:4.3l-gl",
+            "engine_model": "4.3L GL",
+            "year_introduced": 1994,
+            "year_discontinued": 2007,
+            "sort_number": 4,
+            "data": {
+              "key_notes": "4.3L GM 262 Vortec V6, ~190 hp carbureted.",
+              "description": "Il V6 americano di casa svedese: il Vortec da quattro litri e tre, carburatore e buon senso, per la fascia d'ingresso degli sport cruiser (vedi General Motors)."
+            }
+          },
+          {
+            "id": "volvo:4.3l-gxi",
+            "engine_model": "4.3L GXi",
+            "year_introduced": 2002,
+            "year_discontinued": 2007,
+            "sort_number": 5,
+            "data": {
+              "key_notes": "4.3L GM V6, 225 hp MPI.",
+              "description": "L'iniezione multipoint sul V6: venticinque cavalli di elettronica in più e partenze senza cerimonie."
+            }
+          },
+          {
+            "id": "volvo:4.3l-gxi-c",
+            "engine_model": "4.3L GXi-C",
+            "year_introduced": 2008,
+            "year_discontinued": 2013,
+            "sort_number": 6,
+            "data": {
+              "key_notes": "225 hp catalyzed V6.",
+              "description": "Il catalizzato: la California detta, Göteborg esegue, il V6 respira pulito."
+            }
+          }
+        ],
+        "families": {
+          "Classici": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "volvo:md32a",
+                "engine_model": "MD32A",
+                "year_introduced": 1970,
+                "year_discontinued": 1977,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "~3.0L SIX (corrected — B30 car-block sister of the MD21), 106 hp, freshwater-cooled, 360 kg.",
+                  "description": "Il sei col cuore di berlina — sei cilindri, non quattro come questa scheda credeva: il B30 della Volvo 164 convertito a gasolio, centosei cavalli e la parentela d'officina col MD21. La doppia vita dei blocchi svedesi, capitolo maggiore."
+                }
+              },
+              {
+                "id": "volvo:md40a",
+                "engine_model": "MD40A",
+                "year_introduced": 1976,
+                "year_discontinued": 1985,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "~3.6L six, 72-85 hp; NA base of the TMD40 family (corrected from the fours bucket).",
+                  "description": "L'aspirato della famiglia 40 — anch'egli sei cilindri, riclassificato: la radice tranquilla da cui i turbo avrebbero tratto il triplo dei cavalli."
+                }
+              },
+              {
+                "id": "volvo:md70a",
+                "engine_model": "MD70A",
+                "year_introduced": 1965,
+                "year_discontinued": 1970,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "6.7L six on the TD70 truck block, ~99-158 hp; trawlers and workboats.",
+                  "description": "Il camion in barca: il TD70 dei mezzi pesanti di Göteborg, marinizzato per pescherecci e rimorchiatori minori. La Svezia da lavoro, senza fronzoli."
+                }
+              },
+              {
+                "id": "volvo:md70b",
+                "engine_model": "MD70B",
+                "year_introduced": 1970,
+                "year_discontinued": 1978,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "6.7L six, 110-145 hp.",
+                  "description": "La B del settanta: il decennio d'oro dei blocchi da autocarro in sala macchine."
+                }
+              },
+              {
+                "id": "volvo:md96a",
+                "engine_model": "MD96A",
+                "year_introduced": 1954,
+                "year_discontinued": 1959,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "~9.6L six derived from the D96 'Titan' truck diesel, 89-137 hp (~).",
+                  "description": "Il Titano: il grande diesel dei camion Titan degli anni Cinquanta, calato nei pescherecci del Baltico. Annotato con riserva sulle cifre — l'epoca documentava poco e lavorava molto."
+                }
+              },
+              {
+                "id": "volvo:md96b",
+                "engine_model": "MD96B",
+                "year_introduced": 1958,
+                "year_discontinued": 1965,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "Titan-block six, 89-137 hp (~).",
+                  "description": "La seconda vita del Titano, fino a metà anni Sessanta: nove litri e mezzo di dopoguerra svedese."
+                }
+              },
+              {
+                "id": "volvo:md100a",
+                "engine_model": "MD100A",
+                "year_introduced": 1965,
+                "year_discontinued": 1970,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "9.6L six, 133-182 hp; fishing and workboat duty.",
+                  "description": "Il cento: nove litri e sei per la pesca seria del Mare del Nord. Il gradino sopra il settanta, in tutto."
+                }
+              },
+              {
+                "id": "volvo:md100b",
+                "engine_model": "MD100B",
+                "year_introduced": 1969,
+                "year_discontinued": 1984,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "9.6L six, 150-189 hp.",
+                  "description": "Quindici anni di listino per il cento B: nelle flotte da pesca scandinave era un'unità di misura."
+                }
+              },
+              {
+                "id": "volvo:tmd70a",
+                "engine_model": "TMD70A",
+                "year_introduced": 1966,
+                "year_discontinued": 1969,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "6.7L turbo six, 170 hp — the early turbo era afloat.",
+                  "description": "Il turbo dei pionieri: centosettanta cavalli quando la sovralimentazione marina era ancora una scommessa. Göteborg la vinse presto."
+                }
+              },
+              {
+                "id": "volvo:tmd70b",
+                "engine_model": "TMD70B",
+                "year_introduced": 1972,
+                "year_discontinued": 1978,
+                "sort_number": 10,
+                "data": {
+                  "key_notes": "6.7L turbo six, 162-200 hp.",
+                  "description": "Il settanta turbo maturo: duecento cavalli di punta per i mezzi che pagavano il gasolio col pescato."
+                }
+              },
+              {
+                "id": "volvo:tmd100a",
+                "engine_model": "TMD100A",
+                "year_introduced": 1972,
+                "year_discontinued": 1983,
+                "sort_number": 11,
+                "data": {
+                  "key_notes": "9.6L turbo six, 195-264 hp (~ start year).",
+                  "description": "Il cento col fiato in pressione: fino a duecentosessanta cavalli per motovedette e pescherecci d'altura. Data d'esordio annotata con riserva."
+                }
+              },
+              {
+                "id": "volvo:tmd100c",
+                "engine_model": "TMD100C",
+                "year_introduced": 1983,
+                "year_discontinued": 1988,
+                "sort_number": 12,
+                "data": {
+                  "key_notes": "9.6L turbo six, 196-272 hp.",
+                  "description": "L'ultima lettera del cento turbo: la vecchia guardia da nove litri consegnò qui il testimone."
+                }
+              },
+              {
+                "id": "volvo:tmd120a",
+                "engine_model": "TMD120A",
+                "year_introduced": 1970,
+                "year_discontinued": 1982,
+                "sort_number": 13,
+                "data": {
+                  "key_notes": "11.97L turbo six on the TD120 truck block, 230-271 hp — the 1970s workboat and patrol flagship.",
+                  "description": "L'ammiraglia da lavoro dei Settanta: dodici litri di TD120 da autocarro pesante, per motovedette e pescherecci oceanici. Il più grande dei classici — quando la Svezia voleva dire potenza, diceva centoventi."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "Serie 40": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "volvo:tmd40a",
+                "engine_model": "TMD40A",
+                "year_introduced": 1976,
+                "year_discontinued": 1985,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "3.59L turbo six (indirect injection), 110-136 hp; sail and semi-planing (corrected from fours).",
+                  "description": "Il quaranta turbo — sei cilindri, come tutta la sua stirpe qui riclassificata: iniezione indiretta e vocazione trasversale, dalla vela grande al semiplanante."
+                }
+              },
+              {
+                "id": "volvo:tmd40b",
+                "engine_model": "TMD40B",
+                "year_introduced": 1982,
+                "year_discontinued": 1986,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "3.59L turbo six, 128-136 hp.",
+                  "description": "La B del quaranta: la messa a punto d'una formula già rodata."
+                }
+              },
+              {
+                "id": "volvo:tamd40a",
+                "engine_model": "TAMD40A",
+                "year_introduced": 1980,
+                "year_discontinued": 1985,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "3.59L T+A six, 110-148 hp; the aftercooler joins the family.",
+                  "description": "L'aftercooler entra in famiglia: aria più densa, cavalli più onesti. I plananti di gamma media trovarono qui il loro standard."
+                }
+              },
+              {
+                "id": "volvo:tamd40b",
+                "engine_model": "TAMD40B",
+                "year_introduced": 1983,
+                "year_discontinued": 1986,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "165 hp T+A six.",
+                  "description": "Il quaranta al vertice: centosessantacinque cavalli prima del salto generazionale."
+                }
+              },
+              {
+                "id": "volvo:tamd41a",
+                "engine_model": "TAMD41A",
+                "year_introduced": 1986,
+                "year_discontinued": 1989,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "3.59L direct-injection T+A six, 200 hp @ 3,800 — one of the best-loved leisure diesels Volvo Penta ever made.",
+                  "description": "Il quarantuno: l'iniezione diretta portò il quaranta a duecento cavalli tondi, e la clientela a una fedeltà da culto. Tra i diesel da diporto di Göteborg è il nome che si pronuncia con l'articolo — IL quarantuno."
+                }
+              },
+              {
+                "id": "volvo:tamd41b",
+                "engine_model": "TAMD41B",
+                "year_introduced": 1989,
+                "year_discontinued": 1993,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "3.59L T+A six, 145-200 hp.",
+                  "description": "La B del quarantuno: il culto prosegue, il decennio cambia."
+                }
+              },
+              {
+                "id": "volvo:ad41a",
+                "engine_model": "AD41A",
+                "year_introduced": 1986,
+                "year_discontinued": 1989,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "3.59L T+A six for Duoprop, ~200 hp (~).",
+                  "description": "Il quarantuno da piede poppiero: duecento cavalli sul Duoprop, annotato con riserva sulle date e con nessuna sul successo."
+                }
+              },
+              {
+                "id": "volvo:ad41b",
+                "engine_model": "AD41B",
+                "year_introduced": 1989,
+                "year_discontinued": 1993,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "200 hp Duoprop six.",
+                  "description": "La B da sterndrive: la coppia motore-piede più imitata del decennio."
+                }
+              },
+              {
+                "id": "volvo:ad41p-a",
+                "engine_model": "AD41P-A",
+                "year_introduced": 1994,
+                "year_discontinued": 2000,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "200 hp @ 3,800 Duoprop six.",
+                  "description": "Il P del quarantuno: l'ultima stagione della famiglia, coi fasti del Duoprop ormai proverbiali."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "KAD": {
+            "sort_number": 3,
+            "models": [
+              {
+                "id": "volvo:kad42a",
+                "engine_model": "KAD42A",
+                "year_introduced": 1991,
+                "year_discontinued": 1993,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "3.6L six with Roots COMPRESSOR + turbo + aftercooler, 230 hp @ 3,800 — 1991: the first compressor+turbo marine diesel, and with the Duoprop one of the world's best-selling marine diesels.",
+                  "description": "La rivoluzione del 1991: un compressore volumetrico riempie i bassi, il turbo prende il testimone in alto, l'aftercooler raddrizza i conti — e il buco di coppia sparisce dalla nautica. Duecentotrenta cavalli che schiaffavano in planata scafi pigri: col Duoprop divenne uno dei diesel marini più venduti del mondo."
+                }
+              },
+              {
+                "id": "volvo:kad42b",
+                "engine_model": "KAD42B",
+                "year_introduced": 1993,
+                "year_discontinued": 2001,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "230 hp K+T+A six.",
+                  "description": "La B del quarantadue: la rivoluzione diventata routine — il destino migliore delle rivoluzioni."
+                }
+              },
+              {
+                "id": "volvo:kad42p-a",
+                "engine_model": "KAD42P-A",
+                "year_introduced": 1994,
+                "year_discontinued": 1997,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "230 hp K+T+A six, P trim.",
+                  "description": "Il P del quarantadue: tarature e sigle d'una famiglia in piena espansione."
+                }
+              },
+              {
+                "id": "volvo:kad43p",
+                "engine_model": "KAD43P",
+                "year_introduced": 1996,
+                "year_discontinued": 2004,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "3.6L K+T+A six, 230 hp @ 3,900.",
+                  "description": "Il quarantatré: l'evoluzione di mezzo, per chi trovava il 42 vecchio e il 44 caro."
+                }
+              },
+              {
+                "id": "volvo:kad44p-b",
+                "engine_model": "KAD44P-B",
+                "year_introduced": 1997,
+                "year_discontinued": 2001,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "3.6L K+T+A six, 260 hp — 1997: the first with EDC electronic diesel control.",
+                  "description": "Il quarantaquattro elettronico: il primo della casa con la centralina EDC al comando, duecentosessanta cavalli governati al millisecondo. Il piede destro dell'armatore diventò un suggerimento."
+                }
+              },
+              {
+                "id": "volvo:kad44p-c",
+                "engine_model": "KAD44P-C",
+                "year_introduced": 2001,
+                "year_discontinued": 2004,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "260 hp EDC six.",
+                  "description": "La C del quarantaquattro: l'elettronica ormai madrelingua."
+                }
+              },
+              {
+                "id": "volvo:kad300",
+                "engine_model": "KAD300",
+                "year_introduced": 2001,
+                "year_discontinued": 2006,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "3.6L K+T+A six, 285 hp @ 3,800 — the ultimate KAD: more than double the original TMD40's output from the same block class.",
+                  "description": "L'ultimo dei KAD: duecentottantacinque cavalli — più del doppio del vecchio TMD40, dallo stesso ceppo da tre litri e sei. Vent'anni di ingegneria compressa in un basamento: quando uscì di listino, il mestiere passò ai D4 e nessuno riempì più i bassi con una puleggia."
+                }
+              },
+              {
+                "id": "volvo:kamd300",
+                "engine_model": "KAMD300",
+                "year_introduced": 2001,
+                "year_discontinued": 2004,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "The KAD300 in reverse-gear (shaft) configuration, 285 hp.",
+                  "description": "Il trecento in configurazione asse: la M di mezzo dice invertitore. Per gli scafi classici che vollero l'ultima parola dei KAD senza piede poppiero."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "TAMD": {
+            "sort_number": 4,
+            "models": [
+              {
+                "id": "volvo:tamd61a",
+                "engine_model": "TAMD61A",
+                "year_introduced": 1986,
+                "year_discontinued": 1995,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "5.48L T+A six, 306 hp — the 1986 launch of the purpose-developed workboat series (with the 71).",
+                  "description": "Il 1986 dei mestieri: con il 61 e il 71 Göteborg varò la serie da lavoro disegnata apposta, non più derivata dai camion. Trecentosei cavalli di nuovo corso."
+                }
+              },
+              {
+                "id": "volvo:tamd63l",
+                "engine_model": "TAMD63L",
+                "year_introduced": 1994,
+                "year_discontinued": 2005,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "5.48L T+A six, 235-318 hp; mid-range workboat/leisure.",
+                  "description": "Il sessantatré nella taratura da lavoro: le lettere L e P dividevano i mestieri, il basamento restava uno."
+                }
+              },
+              {
+                "id": "volvo:tamd63p",
+                "engine_model": "TAMD63P",
+                "year_introduced": 1994,
+                "year_discontinued": 2005,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "5.48L T+A six, 360-370 hp.",
+                  "description": "Il sessantatré P: la taratura da diporto veloce, trecentosettanta cavalli di flybridge anni Novanta."
+                }
+              },
+              {
+                "id": "volvo:tamd71a",
+                "engine_model": "TAMD71A",
+                "year_introduced": 1986,
+                "year_discontinued": 1994,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "6.73L T+A six, ~340-381 hp; the core of the workboat dynasty — sportfish and flybridge staple.",
+                  "description": "Il settantuno: il cuore della dinastia, sei litri e sette per sportfisherman e flybridge d'Europa e d'oltreoceano. Se un Princess o un Fairline degli anni Novanta romba in doppia coppia, l'orecchio esperto dice settantuno."
+                }
+              },
+              {
+                "id": "volvo:tamd71b",
+                "engine_model": "TAMD71B",
+                "year_introduced": 1989,
+                "year_discontinued": 2000,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "6.73L T+A six, commercial ratings from ~300 to ~380 hp (duty-rating spread).",
+                  "description": "La B del settantuno: la forbice dei cavalli — trecento in servizio pesante, quasi quattrocento in diporto — racconta la serietà delle tarature di Göteborg: stesso ferro, promesse diverse."
+                }
+              },
+              {
+                "id": "volvo:tamd72a",
+                "engine_model": "TAMD72A",
+                "year_introduced": 1991,
+                "year_discontinued": 1995,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "6.73L T+A six, 430 hp @ 2,600.",
+                  "description": "Il settantadue: quattrocentotrenta cavalli, il sei e sette spinto al gradino superiore."
+                }
+              },
+              {
+                "id": "volvo:tamd73p-a",
+                "engine_model": "TAMD73P-A",
+                "year_introduced": 1997,
+                "year_discontinued": 1999,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "6.7L T+A six, 430 hp — first EDC in the 7-liter class.",
+                  "description": "Il settantatré: l'elettronica EDC arriva nella classe dei sette litri. Due anni di listino, un passaggio d'epoca."
+                }
+              },
+              {
+                "id": "volvo:tamd74a",
+                "engine_model": "TAMD74A",
+                "year_introduced": 1996,
+                "year_discontinued": 2005,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "7.28L T+A six (107x135mm), 430 hp @ 2,600; the EDC-era refinement.",
+                  "description": "Il settantaquattro: la cilindrata cresce a sette litri e tre, l'EDC governa, il flybridge ringrazia. La maturità della dinastia."
+                }
+              },
+              {
+                "id": "volvo:tamd74p-a",
+                "engine_model": "TAMD74P-A",
+                "year_introduced": 1998,
+                "year_discontinued": 2005,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "7.28L six, 480 hp.",
+                  "description": "Il P del settantaquattro: quattrocentottanta cavalli, il tetto della classe prima dell'ultimo atto."
+                }
+              },
+              {
+                "id": "volvo:tamd74p-b",
+                "engine_model": "TAMD74P-B",
+                "year_introduced": 2000,
+                "year_discontinued": 2005,
+                "sort_number": 10,
+                "data": {
+                  "key_notes": "480 hp, P-B trim.",
+                  "description": "La P-B: sigle da fine dinastia, sostanza invariata."
+                }
+              },
+              {
+                "id": "volvo:tamd75p-a",
+                "engine_model": "TAMD75P-A",
+                "year_introduced": 2002,
+                "year_discontinued": 2005,
+                "sort_number": 11,
+                "data": {
+                  "key_notes": "7.28L T+A EDC six, 480 hp @ 2,600 — 2002: the final and finest TAMD; the D-series retired the whole dynasty by 2005.",
+                  "description": "L'ultimo TAMD: il settantacinque del 2002, quattrocentottanta cavalli di congedo. Nel 2005 la serie D mandò in pensione l'intera dinastia — quarant'anni di sei in linea da camion e da leggenda, chiusi con la taratura più fine mai uscita da quel ceppo."
+                }
+              },
+              {
+                "id": "volvo:tamd102a",
+                "engine_model": "TAMD102A",
+                "year_introduced": 1991,
+                "year_discontinued": 2000,
+                "sort_number": 12,
+                "data": {
+                  "key_notes": "9.6L SIX (corrected from the eights bucket), 320-360 hp; motoryacht and commercial.",
+                  "description": "Il centodue — sei cilindri in linea, non otto come questa scheda credeva: nove litri e sei per motoryacht e mezzi da lavoro. Göteborg non fece mai un V8 diesel marino: la fila era la sua fede."
+                }
+              },
+              {
+                "id": "volvo:tamd102d",
+                "engine_model": "TAMD102D",
+                "year_introduced": 1993,
+                "year_discontinued": 2000,
+                "sort_number": 13,
+                "data": {
+                  "key_notes": "9.6L six, ~449 hp @ 2,600 — the big flybridge staple of the Princess/Fairline era.",
+                  "description": "Il centodue D: quattrocentocinquanta cavalli nelle sale macchine dei grandi flybridge inglesi degli anni Novanta. In coppia, il suono del benessere nautico europeo."
+                }
+              },
+              {
+                "id": "volvo:tamd162a",
+                "engine_model": "TAMD162A",
+                "year_introduced": 1988,
+                "year_discontinued": 1991,
+                "sort_number": 14,
+                "data": {
+                  "key_notes": "16.1L six, to ~550 hp — the late-80s flagship.",
+                  "description": "Il sedici litri: l'ammiraglia di fine anni Ottanta, mezzo migliaio di cavalli da sei cilindri soli. La misura in cui il diporto confina con la marina."
+                }
+              },
+              {
+                "id": "volvo:tamd162c",
+                "engine_model": "TAMD162C",
+                "year_introduced": 1991,
+                "year_discontinued": 2000,
+                "sort_number": 15,
+                "data": {
+                  "key_notes": "16.1L six, ~510-600 hp.",
+                  "description": "La C del centosessantadue: seicento cavalli di vertice per motoryacht e motovedette."
+                }
+              },
+              {
+                "id": "volvo:tamd163a",
+                "engine_model": "TAMD163A",
+                "year_introduced": 1995,
+                "year_discontinued": 2001,
+                "sort_number": 16,
+                "data": {
+                  "key_notes": "16.1L six, 550-600 hp.",
+                  "description": "Il centosessantatré: la penultima parola dei sedici litri."
+                }
+              },
+              {
+                "id": "volvo:tamd163p-a",
+                "engine_model": "TAMD163P-A",
+                "year_introduced": 1994,
+                "year_discontinued": 2001,
+                "sort_number": 17,
+                "data": {
+                  "key_notes": "16.1L six, ~680-770 hp (~).",
+                  "description": "Il P del centosessantatré: verso gli ottocento cavalli, con la riserva d'ordinanza sulle cifre di punta."
+                }
+              },
+              {
+                "id": "volvo:tamd165a",
+                "engine_model": "TAMD165A",
+                "year_introduced": 2002,
+                "year_discontinued": 2005,
+                "sort_number": 18,
+                "data": {
+                  "key_notes": "16.1L six, 550 hp @ ~1,900 — last of the 16L TAMDs.",
+                  "description": "L'ultimo dei sedici litri: il congedo della taglia massima, a giri da cattedrale."
+                }
+              },
+              {
+                "id": "volvo:tamd165p",
+                "engine_model": "TAMD165P",
+                "year_introduced": 2002,
+                "year_discontinued": 2005,
+                "sort_number": 19,
+                "data": {
+                  "key_notes": "16.1L six, ~680-750 hp.",
+                  "description": "Il P finale: tre quarti di migliaio di cavalli a chiudere l'era TAMD dall'alto."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "Serie D": {
+            "sort_number": 5,
+            "models": [
+              {
+                "id": "volvo:d6-280",
+                "engine_model": "D6-280",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "5.5L common-rail DOHC six, 280 hp @ 3,500; the all-new 2003 family's entry.",
+                  "description": "Il D6 d'ingresso: cinque litri e mezzo di progetto interamente nuovo — bialbero, common rail, niente camion negli antenati. La generazione che pensionò i TAMD."
+                }
+              },
+              {
+                "id": "volvo:d6-310",
+                "engine_model": "D6-310",
+                "year_introduced": 2003,
+                "year_discontinued": null,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "5.5L six, 310 hp — the 2003 launch rating.",
+                  "description": "La taratura del debutto 2003: il nuovo sei di Göteborg si presentò così."
+                }
+              },
+              {
+                "id": "volvo:d6-330",
+                "engine_model": "D6-330",
+                "year_introduced": 2007,
+                "year_discontinued": null,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "5.5L six, 330 hp.",
+                  "description": "Il trecentotrenta: il gradino di mezzo della famiglia matura."
+                }
+              },
+              {
+                "id": "volvo:d6-370",
+                "engine_model": "D6-370",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "5.5L six, 370 hp, compressor-assisted top ratings.",
+                  "description": "Il trecentosettanta: col compressore in aiuto ai bassi, memoria tecnica dei KAD trasferita alla nuova era."
+                }
+              },
+              {
+                "id": "volvo:d6-400",
+                "engine_model": "D6-400",
+                "year_introduced": 2008,
+                "year_discontinued": null,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "5.5L six, 400 hp; DPH sterndrive or IPS.",
+                  "description": "Il quattrocento: la soglia varcata dal sei compatto, su piede DPH o pod IPS."
+                }
+              },
+              {
+                "id": "volvo:d6-435",
+                "engine_model": "D6-435",
+                "year_introduced": 2010,
+                "year_discontinued": 2019,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "5.5L six, 435 hp — top D6 until the 2019 next-gen.",
+                  "description": "Il vertice della prima generazione: quattrocentotrentacinque cavalli, fino al rinnovo del 2019."
+                }
+              },
+              {
+                "id": "volvo:d6-ips400",
+                "engine_model": "D6-IPS400",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "Original IPS launch pair member (~310 crank hp — IPS numbers denote shaft-drive EQUIVALENCE, not engine power).",
+                  "description": "Metà della coppia che lanciò l'IPS al salone di Londra 2005: pod orientabili, eliche traenti controrotanti, joystick in banchina. Il numero è un'equivalenza con l'asse tradizionale, non i cavalli veri — il marketing di Göteborg, annotato con la dovuta glossa."
+                }
+              },
+              {
+                "id": "volvo:d6-ips500",
+                "engine_model": "D6-IPS500",
+                "year_introduced": 2005,
+                "year_discontinued": null,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "The other IPS launch engine (~370 crank hp).",
+                  "description": "L'altra metà del debutto: con le eliche che tirano invece di spingere, l'acqua indisturbata rese il trenta per cento di consumi in meno. La rivoluzione del 2005 — la più grande dopo l'Aquamatic, dicono; e stavolta i dicono hanno ragione."
+                }
+              },
+              {
+                "id": "volvo:d11a-370",
+                "engine_model": "D11A-370",
+                "year_introduced": 2006,
+                "year_discontinued": null,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "10.8L SIX (corrected), 370 hp, common-rail twin-entry turbo.",
+                  "description": "L'undici litri — sei cilindri, riclassificato: il gradino commerciale tra i D6 e i D13, común rail e doppia voluta."
+                }
+              },
+              {
+                "id": "volvo:d11a-400",
+                "engine_model": "D11A-400",
+                "year_introduced": 2006,
+                "year_discontinued": null,
+                "sort_number": 10,
+                "data": {
+                  "key_notes": "10.8L six, 400 hp.",
+                  "description": "Il quattrocento dell'undici: pescherecci, passenger boat, diporto dislocante serio."
+                }
+              },
+              {
+                "id": "volvo:d13-800",
+                "engine_model": "D13-800",
+                "year_introduced": 2010,
+                "year_discontinued": null,
+                "sort_number": 11,
+                "data": {
+                  "key_notes": "12.8L six, 800 hp @ 2,300; unit injectors, twin-entry turbo.",
+                  "description": "Il tredici: ottocento cavalli da sei cilindri in fila, il nuovo vertice commerciale del 2010."
+                }
+              },
+              {
+                "id": "volvo:d13-900",
+                "engine_model": "D13-900",
+                "year_introduced": 2011,
+                "year_discontinued": null,
+                "sort_number": 12,
+                "data": {
+                  "key_notes": "12.8L six, 900 hp.",
+                  "description": "Il novecento: la scala del tredici sale a passi da cento."
+                }
+              },
+              {
+                "id": "volvo:d13-1000",
+                "engine_model": "D13-1000",
+                "year_introduced": 2012,
+                "year_discontinued": null,
+                "sort_number": 13,
+                "data": {
+                  "key_notes": "12.8L six, 1,000 hp @ 2,300 — the flagship inboard.",
+                  "description": "Il migliaio: mille cavalli in linea d'asse, l'ammiraglia entrobordo della casa. Dal B1 del 1907 a qui: da tre cavalli a mille, sempre in fila indiana."
+                }
+              },
+              {
+                "id": "volvo:d13-ips1200",
+                "engine_model": "D13-IPS1200",
+                "year_introduced": 2011,
+                "year_discontinued": null,
+                "sort_number": 14,
+                "data": {
+                  "key_notes": "12.8L six, 900 CRANK hp — '1200' is shaft-equivalence marketing; supercharger-assisted twin-entry turbo.",
+                  "description": "Il pod maggiore: novecento cavalli veri — il milleduecento è l'equivalenza commerciale, e questo catalogo tiene la contabilità onesta. Compressore più turbo a doppia voluta: i KAD, in grande."
+                }
+              },
+              {
+                "id": "volvo:d13-ips1350",
+                "engine_model": "D13-IPS1350",
+                "year_introduced": 2014,
+                "year_discontinued": null,
+                "sort_number": 15,
+                "data": {
+                  "key_notes": "12.8L six, 1,000 crank hp; ~2,400 lb-ft at 900 rpm — superyacht tenders and 80-120 ft flybridges by the pod-pair.",
+                  "description": "Il vertice dei pod: mille cavalli d'albero e una coppia da rimorchiatore già a novecento giri. Nei flybridge da venticinque-trenta metri lavorano in coppie e terne — il joystick comanda, la fisica obbedisce."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      },
+      "8": {
+        "sort_number": 7,
+        "models": [],
+        "families": {
+          "Aquamatic V8": {
+            "sort_number": 1,
+            "models": [
+              {
+                "id": "volvo:aq190a",
+                "engine_model": "AQ190A",
+                "year_introduced": 1971,
+                "year_discontinued": 1973,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "5.0L FORD 302 Windsor V8, ~190 hp — the front-mounted distributor is the dockside ID (GM = rear); a short two-year run.",
+                  "description": "L'otto di Dearborn in livrea svedese: il 302 Windsor, riconoscibile in banchina dallo spinterogeno davanti — i GM lo portano dietro. Due anni scarsi di listino: il matrimonio Ford-Göteborg fu breve e documentato (vedi Ford)."
+                }
+              },
+              {
+                "id": "volvo:aq200",
+                "engine_model": "AQ200",
+                "year_introduced": 1973,
+                "year_discontinued": 1988,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "5.0L GM V8, ~200 hp — with a trap: A/B trims = GM 307 block, C/D/F = GM 305; same badge, different iron.",
+                  "description": "Il duecento col trabocchetto: le prime serie montano il 307, le ultime il 305 — stessa targhetta, ghisa diversa, ricambisti avvisati. Il piccolo V8 democratico degli Aquamatic (vedi General Motors)."
+                }
+              },
+              {
+                "id": "volvo:aq211a",
+                "engine_model": "AQ211A",
+                "year_introduced": 1989,
+                "year_discontinued": 1990,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "5.0L GM 305 V8, ~211 hp; the AQ-naming era's end.",
+                  "description": "Il duecentoundici: due anni e via, l'ultima cifra dell'era in cui il nome dichiarava i cavalli."
+                }
+              },
+              {
+                "id": "volvo:aq225",
+                "engine_model": "AQ225",
+                "year_introduced": 1973,
+                "year_discontinued": 1988,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "5.0L GM V8 (307 then 305 blocks), 225 hp.",
+                  "description": "Il duecentoventicinque: il fratello brillante del 200, con lo stesso passaggio di blocco a metà carriera. La borghesia veloce dei mari d'Europa."
+                }
+              },
+              {
+                "id": "volvo:aq231",
+                "engine_model": "AQ231",
+                "year_introduced": 1989,
+                "year_discontinued": 1990,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "5.0L GM 305 V8, ~231 hp.",
+                  "description": "Il duecentotrentuno: il congedo del cinque litri a carburatore, un biennio di transizione."
+                }
+              },
+              {
+                "id": "volvo:aq255",
+                "engine_model": "AQ255",
+                "year_introduced": 1976,
+                "year_discontinued": 1977,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "5.7L GM 350 V8, ~255 hp (~ years).",
+                  "description": "Il primo 350: il piccolo blocco maggiore di Detroit debutta in casa Volvo. Date annotate con riserva, blocco con certezza."
+                }
+              },
+              {
+                "id": "volvo:aq260",
+                "engine_model": "AQ260",
+                "year_introduced": 1978,
+                "year_discontinued": 1985,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "5.7L GM 350 V8, 260 hp @ 4,400, 893 lb; the workhorse big V8.",
+                  "description": "Il cavallo da tiro degli otto: duecentosessanta cavalli di 350, quattro quintali scarsi, otto anni di listino. L'America al servizio della Svezia, con soddisfazione reciproca."
+                }
+              },
+              {
+                "id": "volvo:aq271",
+                "engine_model": "AQ271",
+                "year_introduced": 1986,
+                "year_discontinued": 1990,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "5.7L GM 350 V8, 271-275 hp, Holley 4-bbl and high-rise intake — the hottest of the carbureted 350s.",
+                  "description": "Il più cattivo dei 350 a carburatore: Holley a quattro corpi e collettore rialzato, duecentosettantacinque cavalli di ultima gioventù analogica."
+                }
+              }
+            ],
+            "subfamilies": {}
+          },
+          "GM": {
+            "sort_number": 2,
+            "models": [
+              {
+                "id": "volvo:5.0l-gl",
+                "engine_model": "5.0L GL",
+                "year_introduced": 1998,
+                "year_discontinued": 2007,
+                "sort_number": 1,
+                "data": {
+                  "key_notes": "5.0L GM 305 V8, ~220 hp carb.",
+                  "description": "Il cinque litri moderno d'ingresso: carburatore fino all'ultimo, per la clientela che diffidava dei fili."
+                }
+              },
+              {
+                "id": "volvo:5.0l-gxi",
+                "engine_model": "5.0L GXi",
+                "year_introduced": 2002,
+                "year_discontinued": 2007,
+                "sort_number": 2,
+                "data": {
+                  "key_notes": "5.0L GM V8, 270 hp MPI (BoatTEST verified).",
+                  "description": "Il GXi: l'iniezione porta il cinque litri a duecentosettanta cavalli certificati. La nomenclatura moderna — G come GM, X come extra, i come iniezione — sostituisce i numeri parlanti."
+                }
+              },
+              {
+                "id": "volvo:5.7l-gl",
+                "engine_model": "5.7L GL",
+                "year_introduced": 1996,
+                "year_discontinued": 2007,
+                "sort_number": 3,
+                "data": {
+                  "key_notes": "5.7L GM 350 Vortec, ~250 hp carb.",
+                  "description": "Il 350 Vortec a carburatore: la base della gamma grande, onesta come un pomeriggio di lago."
+                }
+              },
+              {
+                "id": "volvo:5.7l-gi",
+                "engine_model": "5.7L Gi",
+                "year_introduced": 1996,
+                "year_discontinued": 2005,
+                "sort_number": 4,
+                "data": {
+                  "key_notes": "5.7L GM 350, 280 hp (GM ne dichiarava 292).",
+                  "description": "Il Gi: duecentottanta cavalli dichiarati con prudenza svedese — Detroit ne contava dodici in più. Le culture aziendali si leggono anche nei libretti."
+                }
+              },
+              {
+                "id": "volvo:5.7l-gxi",
+                "engine_model": "5.7L GXi",
+                "year_introduced": 2002,
+                "year_discontinued": 2010,
+                "sort_number": 5,
+                "data": {
+                  "key_notes": "5.7L GM V8, 320 hp MPI (BoatTEST verified).",
+                  "description": "Il GXi maggiore: trecentoventi cavalli certificati al banco. Il V8 di volume dell'ultima era a benzina."
+                }
+              },
+              {
+                "id": "volvo:5.7l-gxi-c",
+                "engine_model": "5.7L GXi-C",
+                "year_introduced": 2008,
+                "year_discontinued": 2013,
+                "sort_number": 6,
+                "data": {
+                  "key_notes": "320 hp catalyzed.",
+                  "description": "Il catalizzato grande: la potenza intatta, lo scarico ripulito."
+                }
+              },
+              {
+                "id": "volvo:5.7l-osi",
+                "engine_model": "5.7L OSi",
+                "year_introduced": 2005,
+                "year_discontinued": 2008,
+                "sort_number": 7,
+                "data": {
+                  "key_notes": "5.7L GM V8, ~320 hp, Ocean Series saltwater corrosion package.",
+                  "description": "L'Ocean Series: lo stesso 350 vestito per l'acqua salata — trattamenti, anodi e circuiti pensati per chi non naviga nei laghi. Il dettaglio che i cataloghi dimenticano e i carene ringraziano."
+                }
+              },
+              {
+                "id": "volvo:7.4l-gi",
+                "engine_model": "7.4L Gi",
+                "year_introduced": 1994,
+                "year_discontinued": 2000,
+                "sort_number": 8,
+                "data": {
+                  "key_notes": "7.4L GM 454 big block, ~310 hp TBI-era.",
+                  "description": "Il big block: sette litri e quattro di 454 per gli scafi che misurano la stazza in tonnellate e la sete in litri al miglio."
+                }
+              },
+              {
+                "id": "volvo:7.4l-gsi",
+                "engine_model": "7.4L GSi",
+                "year_introduced": 1996,
+                "year_discontinued": 2000,
+                "sort_number": 9,
+                "data": {
+                  "key_notes": "7.4L GM 454, 385 hp MPI — corrected from 'GXi': the MPI 454 was sold as GSi; GXi naming arrived with the 8.1.",
+                  "description": "Il GSi — non GXi, come questa scheda credeva: la sigla giusta del 454 a iniezione, trecentottantacinque cavalli. Anche le lettere hanno una filologia, e questo catalogo la rispetta."
+                }
+              },
+              {
+                "id": "volvo:8.1l-gi",
+                "engine_model": "8.1L Gi",
+                "year_introduced": 2001,
+                "year_discontinued": 2010,
+                "sort_number": 10,
+                "data": {
+                  "key_notes": "8.1L GM 496 Vortec, 375 hp.",
+                  "description": "L'otto e uno: il 496 Vortec da trecentosettantacinque cavalli, l'ultima generazione dei giganti a benzina."
+                }
+              },
+              {
+                "id": "volvo:8.1l-gxi",
+                "engine_model": "8.1L GXi",
+                "year_introduced": 2001,
+                "year_discontinued": 2010,
+                "sort_number": 11,
+                "data": {
+                  "key_notes": "8.1L GM 496, 420 hp (BoatTEST verified).",
+                  "description": "Il vertice a benzina: quattrocentoventi cavalli certificati dal 496. Dopo di lui, il gasolio e i pod — ma il rombo resta negli annali."
+                }
+              },
+              {
+                "id": "volvo:8.2l-gl",
+                "engine_model": "8.2L GL",
+                "year_introduced": 1997,
+                "year_discontinued": 2000,
+                "sort_number": 12,
+                "data": {
+                  "key_notes": "8.2L GM 502 big block, ~330 hp carb (? — the GL trim on the 502 is weakly attested; Penta also sold the 502 as the 415 hp DPX415).",
+                  "description": "L'otto e due col punto interrogativo: il 502 in taratura GL è attestato debolmente — la versione celebre era il DPX415 da quattrocentoquindici cavalli. Annotato con riserva piena, in attesa d'archivio."
+                }
+              }
+            ],
+            "subfamilies": {}
+          }
+        }
+      }
+    }
+  }
+}

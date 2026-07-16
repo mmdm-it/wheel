@@ -1,0 +1,92 @@
+{
+  "_dossier": "031b Thornycroft. Rulings: dissolved 1977→null (that date = the TRUCK firm; marine brand extant as Kubota-based Thornycroft Engines Ltd); buckets [4,6,8]→[2,4,6,12]. DB2 Handy Billy; BMC-era T-90/T-154; hedged AEC six; RY12 = WWI Coastal Motor Boats. 'Sea Queen' = boat model, omitted.",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Thornycroft",
+  "node": {
+    "year_founded": 1864,
+    "year_dissolved": null,
+    "sort_number": 91,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "thornycroft:db2-handy-billy",
+            "engine_model": "DB2 Handy Billy",
+            "year_introduced": 1930,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "9 hp petrol twin with forward/reverse box — the classic British dinghy and launch auxiliary; a handful of restored survivors keep the name alive.",
+              "description": "Il factotum di bordo: nove cavalli di bicilindrico a benzina col suo invertitore, e un nome che è tutto un programma — Handy Billy, il tuttofare. Nei porti inglesi tra le guerre era la definizione stessa di motore ausiliario; i pochi superstiti restaurati vengono trattati da reliquie."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "thornycroft:t-90",
+            "engine_model": "T-90",
+            "year_introduced": 1962,
+            "year_discontinued": 1985,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Marinised BMC 1.5D four, 35 hp (the number = cubic inches); the canal-boat staple of the marinizing era.",
+              "description": "Il novanta — pollici cubi, come da battesimo: il diesel BMC da un litro e mezzo vestito da mare, trentacinque cavalli di narrowboat e lance. Quando Woolston smise di fondere motori propri, il nome continuò il mestiere sui blocchi altrui — con dignità intatta."
+            }
+          },
+          {
+            "id": "thornycroft:t-154",
+            "engine_model": "T-154",
+            "year_introduced": 1964,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Marinised BMC 2.5D four, 62 hp; workboat and canal favourite. The brand survives today as a Kubota-based marinizer — still trading.",
+              "description": "Il centocinquantaquattro: due litri e mezzo BMC, sessantadue cavalli, il preferito dei canali e dei piccoli mezzi da lavoro. E il finale che nessuna delle grandi case inglesi ha avuto: il marchio vive ancora, oggi su blocchi Kubota — centosessant'anni e non ha smesso (vedi Kubota)."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "thornycroft:aec-six",
+            "engine_model": "Marinised AEC Six",
+            "year_introduced": 1961,
+            "year_discontinued": 1977,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "After the 1961 AEC takeover the name went onto marinised AEC sixes for workboats (~ — the era is certain, the model codes await the archives).",
+              "description": "Il sei dell'era AEC: dopo il 1961 la targhetta di Thornycroft finì sui sei cilindri da autocarro del nuovo padrone, marinizzati per pescherecci e mezzi da lavoro. Le sigle esatte dormono negli archivi; l'epoca è certa. Annotato con riserva."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "thornycroft:ry12",
+            "engine_model": "RY12",
+            "year_introduced": 1916,
+            "year_discontinued": 1940,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "250 hp petrol V12 — the engine of the WWI Coastal Motor Boats: 40-foot stepped-hull torpedo boats at 30+ knots, one RY12 each (the 55-footers ran uprated pairs); still serving in WWII motor launches.",
+              "description": "Il dodici dei CMB: duecentocinquanta cavalli a benzina nelle Coastal Motor Boat della Grande Guerra — dodici metri di scafo a gradino, trenta nodi e un siluro da diciotto pollici, lanciato all'indietro con la preghiera di scansarsi in tempo. La casa che aveva costruito le prime lance a vapore veloci del mondo inventò anche questo mestiere: l'assalto costiero a motore. Il catalogo si inchina."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "_dossier": "031d Vire Marine. Rulings: REPATRIATED Australia → Finlandia (no Australian connection ever existed). Built by VALMET at LINNAVUORI — the same works as the Sisu diesels (cross-ref!); production 1950s-1984 Finland (~15,000), then Masnedø, Denmark to 2002 (>20,000 total). US importer WESTERBEKE (cross-ref). 'Vire' = Finnish for fair breeze/good trim. Founded 1948 (design), dissolved 2002.",
+  "market": "eurasia",
+  "country": "Finlandia",
+  "manufacturer": "Vire Marine",
+  "node": {
+    "year_founded": 1948,
+    "year_dissolved": 2002,
+    "sort_number": 96,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "vire:6",
+            "engine_model": "Vire 6",
+            "year_introduced": 1952,
+            "year_discontinued": 1973,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~250cc two-stroke petrol single, 6 hp @ 2,500 (BV/BVK/BVR trims, reversing box from ~1959); ~15,000 built in Finland — at the Linnavuori works, alongside the Valmet diesels (see Sisu).",
+              "description": "Il soffio finlandese: 'vire' significa brezza buona, e questo monocilindrico a due tempi ne diede quindicimila alle barche del Baltico. Usciva dalle officine di Linnavuori — le stesse dei diesel Valmet che questo catalogo archivia sotto Sisu (vedi): la fabbrica d'aerei di guerra che in pace fece di tutto, dal peschereccio al motorino da vela."
+            }
+          },
+          {
+            "id": "vire:7",
+            "engine_model": "Vire 7",
+            "year_introduced": 1970,
+            "year_discontinued": 2002,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "268cc single, ~7 hp @ 3,200, all cast iron with dynastart; the sailboat auxiliary of Folkboats and J24s worldwide — imported to America by Westerbeke (see Westerbeke); built in Denmark from 1984 to the very end in 2002.",
+              "description": "Il sette: ghisa integrale, avviamento-dinamo, e le sentine di Folkboat e J24 di mezzo mondo come indirizzo. In America lo vendeva Westerbeke col proprio catalogo (vedi Westerbeke); dal 1984 lo costruì una piccola officina danese, fino all'aprile del 2002 — l'ultimo due tempi da vela d'Europa si spense così, oltre ventimila esemplari dopo la prima brezza."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "vire:12",
+            "engine_model": "Vire 12",
+            "year_introduced": 1972,
+            "year_discontinued": 1985,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~537cc twin — the doubled Vire 7 architecture, 12 hp; the rare big brother (~).",
+              "description": "Il gemello raro: l'architettura del sette raddoppiata per dodici cavalli, destinata alle barche che chiedevano al Baltico un filo di vento in più. Annotato con riserva sulle cifre, con simpatia sul resto."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

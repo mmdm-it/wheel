@@ -1,0 +1,75 @@
+{
+  "_dossier": "032c Hall-Scott. Rulings: buckets [4,6,12]; dissolved 1974→1960 (Hercules bought the engine division 1958 — cross-ref; Berkeley plant closed). Elbert Hall co-designed the Liberty (cross-ref). Defender = two Invaders on one crank; >5,000 built; killed postwar by gasoline loyalty in a dieselizing market.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Hall-Scott",
+  "node": {
+    "year_founded": 1910,
+    "year_dissolved": 1960,
+    "sort_number": 31,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "hall-scott:lm-4",
+            "engine_model": "LM-4",
+            "year_introduced": 1920,
+            "year_discontinued": 1930,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "'L for Liberty': the marine four evolved from the war-era design, ~100-125 hp (~).",
+              "description": "La L sta per Liberty: il quattro marino disceso dal progetto di guerra che Elbert Hall aveva co-firmato con Vincent al Willard Hotel (vedi Liberty). La casa era troppo piccola per produrre in massa il figlio famoso — ne coltivò i nipoti."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "hall-scott:lm-6",
+            "engine_model": "LM-6",
+            "year_introduced": 1922,
+            "year_discontinued": 1931,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~825 cid Liberty-type marine six, 200-225 hp; the rum-runner and workboat staple of California's twenties.",
+              "description": "Il sei del proibizionismo pacifico: duecento cavalli di scuola Liberty per le lance da lavoro — e da contrabbando — della costa californiana. Berkeley riforniva entrambe le sponde della legge, con la stessa fusione."
+            }
+          },
+          {
+            "id": "hall-scott:invader",
+            "engine_model": "Invader",
+            "year_introduced": 1931,
+            "year_discontinued": 1955,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The cornerstone: 998 cid OHC six, 250-275 hp @ 2,100, dual ignition, LH/RH rotation pairs, reduction gears to 3:1, ~2,480 lb; twin installs in WWII 42-ft crash boats.",
+              "description": "La pietra angolare: mille pollici cubi scarsi di sei ad albero in testa, doppia accensione, rotazioni destra e sinistra per gli abbinamenti in coppia. Venticinque anni di listino, dai motoscafi di lusso ai crash boat da quarantadue piedi — il suono grave di Berkeley su due oceani."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "hall-scott:defender",
+            "engine_model": "Defender",
+            "year_introduced": 1937,
+            "year_discontinued": 1958,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "TWO INVADERS ON ONE CRANKSHAFT — the V12 born of a 1937 British request: 1,996 cid at 575 hp, enlarged to ~2,181 cid and 630-650 hp; >5,000 built by 1945, twin-powering nearly all 63-ft rescue boats and Fairmiles. Postwar, the 2,181 cid version was America's most powerful highway-truck engine.",
+              "description": "Due Invader su un solo albero: il V12 nato nel 1937 da una richiesta britannica, cresciuto in guerra fino a seicentocinquanta cavalli e cinquemila esemplari — la coppia di quasi tutti i crash boat da sessantatré piedi e delle Fairmile. Nel dopoguerra lo stesso gigante finì sui camion Kenworth come il motore stradale più potente d'America. Morì di fedeltà alla benzina, in un mondo passato al gasolio — venduto a Hercules nel 1958, spento nel 1960 (vedi Hercules, vedi Allison)."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "_dossier": "032e Hispano-Suiza. REPATRIATED Stati Uniti → Spagna (Birkigt, Barcelona 1904 — the US filing was flat wrong; many marine Hissos were Wright-built US licensees, noted in prose). Buckets [8,12] confirmed. Racing afterlife: 725-class MVPBA standard power; Baby Bootlegger Gold Cups; 'It's a Wonder'; Aurora 12Y.",
+  "market": "eurasia",
+  "country": "Spagna",
+  "manufacturer": "Hispano-Suiza",
+  "node": {
+    "year_founded": 1904,
+    "year_dissolved": 1968,
+    "sort_number": 34,
+    "cylinders": {
+      "8": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "hispano-suiza:8",
+            "engine_model": "8",
+            "year_introduced": 1919,
+            "year_discontinued": 1948,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Birkigt's 1914 masterpiece — the first cast-aluminum-block SOHC aero V8, ~50,000 built (many by US licensee Wright-Martin) — flooded surplus into interwar racing: standard power of the American 725 cid hydroplane class; a Wright-built Hisso won the 1924 and 1925 Gold Cups in Baby Bootlegger; the last to race was a boat literally named 'It's a Wonder'.",
+              "description": "Il capolavoro di Birkigt in seconda carriera: il V8 d'aviazione col primo monoblocco d'alluminio della storia, sceso dal cielo ai canali di gara col surplus della Grande Guerra. In America divenne il motore-standard della classe 725, vinse due Gold Cup nella Baby Bootlegger, e l'ultimo scafo a portarlo in gara si chiamava — alla lettera — 'It's a Wonder': la dottrina di questo catalogo, battezzata da un idroplano. Casa di Barcellona, gloria di due continenti."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "12": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "hispano-suiza:12y",
+            "engine_model": "12Y",
+            "year_introduced": 1935,
+            "year_discontinued": 1939,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "The Aurora: a one-off French unlimited-class racer carried the 36L 12Y aero V12 (760 hp, capable of 1,000+), won at the Cannes Semaine Nautique at 90.34 km/h average — and survives with original hull and engine.",
+              "description": "L'Aurora: trentasei litri di V12 d'aviazione in uno scafo di mogano a doppia diagonale, ordinato da un industriale francese e vincitore a Cannes. Sopravvive intera — scafo e motore originali — come una frase perfetta mai corretta. L'eccezione monumentale che giustifica da sola lo scomparto."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

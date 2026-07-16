@@ -1,0 +1,30 @@
+{
+  "_dossier": "032d Allison. Founded corrected 1907→1915 (Allison Engineering, Indianapolis). One monument model: V-1710 thunderboat era. 501-K naval gas turbines = out of scope, prose omitted.",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Allison",
+  "node": {
+    "year_founded": 1915,
+    "year_dissolved": null,
+    "sort_number": 4,
+    "cylinders": {
+      "12": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "allison:v-1710",
+            "engine_model": "V-1710",
+            "year_introduced": 1946,
+            "year_discontinued": 1995,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "28L supercharged aero V12 (1,475 hp military), reborn afloat in Unlimited hydroplane racing at 3,000+ hp: Miss Golden Gate III (1946), then Slo-Mo-Shun IV — 160.323 mph world record, Lake Washington, 26 June 1950, shattering Bluebird's 141.74. A surplus batch of ~750 G6-series engines fed the thunderboat sport into the 1990s. Wartime marine use: the experimental PT-8 ran two Allisons and a Hall-Scott (see Hall-Scott, Rolls-Royce).",
+              "description": "L'aquila d'Indianapolis in acqua: il V12 dei P-38 e dei P-40, comprato surplus e spinto oltre i tremila cavalli, fece l'era dei thunderboat. Slo-Mo-Shun IV, con uno di questi, portò il record mondiale a 160 miglia orarie sul lago Washington nel 1950 — frantumando il primato del Bluebird — e il suo scafo a tre punti che cavalca l'elica ridisegnò l'idroplano per sempre (vedi Rolls-Royce, per la rivalità di motori che ne seguì). Settecentocinquanta esemplari di scorta militare tennero acceso lo sport fino agli anni Novanta. In guerra aveva provato le motosiluranti sulla PT-8 sperimentale — in compagnia d'un Hall-Scott (vedi): questo catalogo apprezza le coincidenze ben motorizzate."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
