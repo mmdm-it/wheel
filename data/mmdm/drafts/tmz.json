@@ -1,0 +1,41 @@
+{
+  "_dossier": "031a TMZ. Rulings: founded 1941→1968 (Tutaev Motor Plant, Yaroslavl Oblast — YaMZ V8 satellite; 1941 unsupported); buckets [8,12]→[8] (no twelve exists — V12s are YaMZ territory). Marine record thin but real: dealer-marinized river-fleet V8s. Hedged throughout.",
+  "market": "eurasia",
+  "country": "Russia",
+  "manufacturer": "TMZ",
+  "node": {
+    "year_founded": 1968,
+    "year_dissolved": null,
+    "sort_number": 92,
+    "cylinders": {
+      "8": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "tmz:8481",
+            "engine_model": "TMZ-8481",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "17.24L turbo V8 of the YaMZ-840 lineage, 320-550 hp; marinized with Korean, ZF or Barnaul gears for river tugs and repowers (~).",
+              "description": "Il V8 di Tutaev: diciassette litri di stirpe YaMZ, marinizzati con riduttori di tre continenti per i rimorchiatori fluviali russi e i ripotenziamenti di flotta. La fabbrica satellite di Jaroslavl', nata nel 1968 per fare gli otto cilindri della casa madre, in acqua c'è arrivata per la via pratica — annotata con la riserva d'ordinanza."
+            }
+          },
+          {
+            "id": "tmz:8807",
+            "engine_model": "TMZ-8807",
+            "year_introduced": 2019,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "18.5L V8 of the new 880 family, ~450-653 hp; the river fleet is its declared marine market (~).",
+              "description": "La nuova generazione: diciotto litri e mezzo per la flotta fluviale dichiarata a listino e il mare 'in valutazione' — formula russa per ogni orizzonte. Voce recente, annotata con riserva e con curiosità."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

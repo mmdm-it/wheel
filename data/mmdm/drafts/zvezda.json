@@ -1,0 +1,114 @@
+{
+  "_dossier": "032g Zvezda. Rulings: founded 1954→1932 (Factory No.174, Leningrad, from the Bolshevik Plant; marine diesels since 1945; renamed 'Zvezda' — Star — after the radial layout); buckets [10,12] → [12,42,56,112] INCLUDING the 112 by Howell's ruling. Placeholders M527/M620/M650 unverified, retired. Yakovlev's cancelled M-501 bomber diesel = the ancestor, in prose.",
+  "market": "eurasia",
+  "country": "Russia",
+  "manufacturer": "Zvezda",
+  "node": {
+    "year_founded": 1932,
+    "year_dissolved": null,
+    "sort_number": 106,
+    "cylinders": {
+      "12": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "zvezda:m50",
+            "engine_model": "M50",
+            "year_introduced": 1949,
+            "year_discontinued": 1965,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "~62L all-aluminum supercharged V12 (180x200mm, DOHC, 4v/cyl), ~1,000 hp @ 1,700-1,850; descended from the prewar M-40 aircraft diesel; torpedo boats (three per East German Iltis = 48 knots) and the first Raketa hydrofoils.",
+              "description": "Il dodici d'alluminio: un'eredità d'aviazione — il diesel M-40 dei bombardieri d'anteguerra — convertita alle motosiluranti e ai primi aliscafi Raketa. Mille cavalli a giri bassi, quattro valvole per cilindro quando l'Occidente le considerava esotiche. Il ramo elegante della casa della stella."
+            }
+          },
+          {
+            "id": "zvezda:m400",
+            "engine_model": "M400",
+            "year_introduced": 1959,
+            "year_discontinued": 1985,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Civil V12 (12ChNS 18/20), 1,000 hp @ 1,700 — TWO per Meteor hydrofoil: 123 passengers at 66 km/h, 400+ built, the most-produced hydrofoil in the world.",
+              "description": "Il motore delle Meteor: due per ogni aliscafo, milleduecentotrenta chili di passeggeri sollevati sull'acqua a sessantasei all'ora, su ogni grande fiume dell'Unione. Con oltre quattrocento scafi, la Meteor resta l'aliscafo più costruito del mondo — e questo V12 il suo battito civile. Da Leningrado al Volga, l'estate sovietica volava così."
+            }
+          },
+          {
+            "id": "zvezda:m401",
+            "engine_model": "M401",
+            "year_introduced": 1970,
+            "year_discontinued": 1995,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "Supercharged V12, 1,000-1,090 hp @ 1,600, 2,200 kg; single-engined the Voskhod hydrofoil and refitted the Raketas.",
+              "description": "L'erede: un solo M401 bastava al Voskhod, la generazione successiva dell'aliscafo fluviale. Ancora oggi, dove i fiumi dell'Est portano passeggeri sulle ali, l'orecchio sente questo dodici."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "42": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "zvezda:m503",
+            "engine_model": "M503",
+            "year_introduced": 1962,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "FORTY-TWO CYLINDERS: seven banks of six around one crankshaft — a 143.6L liquid-cooled diesel STAR, 3,943 hp @ 2,200, 5,450 kg, 3.7m long. Three per Osa missile boat (~12,000 hp, 40 knots). Born of Yakovlev's cancelled M-501 bomber diesel; the factory renamed ITSELF 'Zvezda' — Star — after this layout.",
+              "description": "Quarantadue cilindri: sette bancate di sei, disposte a stella attorno a un solo albero — un radiale da nave, centoquarantatré litri, quasi quattromila cavalli. Nacque da un diesel da bombardiere strategico mai volato, e piacque tanto che la fabbrica prese il suo nome: Zvezda, la Stella. Tre per ogni motomissilistica classe Osa — quaranta nodi di geometria pura. Non esiste, in tutta la produzione mondiale, un'altra architettura così: questo scomparto è suo di diritto."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "56": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "zvezda:m504",
+            "engine_model": "M504",
+            "year_introduced": 1965,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "FIFTY-SIX cylinders — seven banks of eight: 191.4L, 5,163 hp @ 2,000, 7,250 kg, 4,000-hour TBO; the M503 with two more cylinders per bank (the M517 pushed to 6,370 hp).",
+              "description": "Cinquantasei: la stella cresciuta a sette bancate di otto, cinquemila cavalli abbondanti e quattromila ore tra le revisioni. Quando l'ingegneria sovietica trovava una geometria giusta, non la abbandonava — la moltiplicava."
+            }
+          },
+          {
+            "id": "zvezda:m520",
+            "engine_model": "M520",
+            "year_introduced": 1980,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Military variant of the 56-cylinder family (ChN 16/17 series); Svetlyak-class patrol boats per Russian naval sources (~).",
+              "description": "La variante militare della famiglia a cinquantasei: sui pattugliatori classe Svetlyak, secondo le fonti navali russe. Annotato con la riserva d'ordinanza per le cose che l'Est documenta a modo suo."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "112": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "zvezda:m507",
+            "engine_model": "M507",
+            "year_introduced": 1972,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "ONE HUNDRED AND TWELVE CYLINDERS: two M504 stars coupled to a single gearbox — 383 liters, 10,453 hp, seven meters, 17.1 tonnes. The most-cylindered production engine on earth, and this catalog's highest bucket, by the curator's ruling.",
+              "description": "Centododici cilindri: due stelle da cinquantasei accoppiate a un solo riduttore — trecentottantatré litri, diecimila cavalli, sette metri di motore. Non esiste al mondo un propulsore di serie con più cilindri, e per decisione di questo catalogo gli spetta uno scomparto tutto suo: la ruota che state facendo girare finisce qui, dove l'ingegneria smette di contare e comincia a costellare."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
