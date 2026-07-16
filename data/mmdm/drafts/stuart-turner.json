@@ -1,0 +1,69 @@
+{
+  "_dossier": "030e Stuart Turner. Rulings: RENAMED from 'Stuart Marine'; REPATRIATED Australia → Regno Unito (Henley-on-Thames; the Australia error = fan-club geography); founded 1906 (incorporation; 1898 Shiplake steam-model origin in prose). Marine production ceased 1978; late Solé-badged diesels (cross-ref). Stuart Models (steam) = separate lineage since 1991, prose note.",
+  "market": "eurasia",
+  "country": "Regno Unito",
+  "manufacturer": "Stuart Turner",
+  "node": {
+    "year_founded": 1906,
+    "year_dissolved": 1978,
+    "sort_number": 87,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "stuart-turner:r3m",
+            "engine_model": "R3M",
+            "year_introduced": 1934,
+            "year_discontinued": 1977,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "123cc two-stroke single, 1.5 hp; banjo water pump, centrifugal clutch — the beloved tiny inboard of dinghies and hire boats, in production forty-three years.",
+              "description": "Il più piccolo entrobordo amato d'Inghilterra: centoventitré centimetri cubi, un cavallo e mezzo, quarantatré anni di produzione. Nelle barchette a noleggio del Tamigi e nei dinghy dei circoli, il suo due tempi gentile era la colonna sonora del fine settimana. I restauratori se li contendono ancora, a uno a uno."
+            }
+          },
+          {
+            "id": "stuart-turner:p5",
+            "engine_model": "P5",
+            "year_introduced": 1936,
+            "year_discontinued": 1969,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "268cc single, 4 hp @ 1,500 — the classic British yacht-tender and launch auxiliary; the founder began in 1898 casting the No.1 model steam engine at Shiplake, and precision stayed the house habit.",
+              "description": "Il classico di Henley: quattro cavalli d'ottone e ghisa per tender e lance, trent'anni di listino. Il fondatore — Sidney Marmaduke Stuart Turner, un nome che è già un programma — aveva cominciato nel 1898 fondendo motorini a vapore in miniatura: la precisione da modellismo rimase il vizio di famiglia, e i P5 sopravvissuti girano ancora come orologi."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "stuart-turner:p55",
+            "engine_model": "P55",
+            "year_introduced": 1936,
+            "year_discontinued": 1969,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "535cc twin, 8 hp @ 1,500 — the archetypal British launch twin (P55ME = marine, electric start).",
+              "description": "Il gemello archetipico: mezzo litro scarso, otto cavalli, e le sigle gentili dell'epoca — M per marino, E per l'avviamento elettrico, un lusso dichiarato nel nome. La lancia inglese del dopoguerra in due cilindri."
+            }
+          },
+          {
+            "id": "stuart-turner:p66",
+            "engine_model": "P66",
+            "year_introduced": 1969,
+            "year_discontinued": 1978,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "Uprated twin, 10 hp @ 1,650 — the last Stuart marine twin; after 1978 the house sold Solé-badged diesels, then pivoted to water pumps (see Solé Diesel).",
+              "description": "L'ultimo gemello: dieci cavalli fino al 1978, quando Henley chiuse la sala motori marini, vendette per qualche stagione diesel catalani con la propria targhetta (vedi Solé Diesel) e si reinventò nelle pompe idrauliche domestiche. Le case longeve sopravvivono così — cambiando mestiere senza cambiare indirizzo."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

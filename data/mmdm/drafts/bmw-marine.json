@@ -1,0 +1,131 @@
+{
+  "_dossier": "026d BMW Marine. Rulings: buckets [1,2,3] ADDED (Hatz-based D7/D12/D35). Donor decode: D7-D50 = Hatz blocks (water-cooled marinizations); D150/D190 = VM Motori tunnel-bore. Division 1977-1987 (Verviers, Belgium); assets to Mercury 1987 → MerCruiser 530/636 D-TA. Z-Drive co-developed with ZF.",
+  "market": "eurasia",
+  "country": "Germania",
+  "manufacturer": "BMW Marine",
+  "node": {
+    "year_founded": 1916,
+    "year_dissolved": 1987,
+    "sort_number": 8,
+    "cylinders": {
+      "1": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "bmw:d7",
+            "engine_model": "D7",
+            "year_introduced": 1978,
+            "year_discontinued": 1987,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "7 hp sailboat auxiliary single on a Hatz block, water-cooled by BMW's marinization.",
+              "description": "Il monocilindrico con l'elica bianca e blu: sette cavalli di blocco Hatz vestito da Monaco, per barche a vela che volevano un'ausiliaria col pedigree. La casa dell'alta velocità che vende un motore da passeggio — il mare rende umili anche i bavaresi."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "2": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "bmw:d12",
+            "engine_model": "D12",
+            "year_introduced": 1978,
+            "year_discontinued": 1987,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "12 hp Hatz-based twin.",
+              "description": "Il gemello della serie piccola: dodici cavalli su base Hatz, cambio Hurth, finiture da concessionaria. L'ausiliario tedesco per chi leggeva le riviste giuste."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "3": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "bmw:d35",
+            "engine_model": "D35",
+            "year_introduced": 1979,
+            "year_discontinued": 1987,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "35 hp Hatz-based triple; the D35-2 revision addressed corrosion.",
+              "description": "Il tre della serie D: trentacinque cavalli con base Hatz e una seconda serie nata per correggere la corrosione — perché anche Monaco dovette imparare che l'acqua salata non rispetta i marchi."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "bmw:d50",
+            "engine_model": "D50",
+            "year_introduced": 1979,
+            "year_discontinued": 1987,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "50 hp Hatz-based four, top of the small-diesel line.",
+              "description": "Il quattro dei piccoli: cinquanta cavalli per i cabinati a vela di taglia piena. Il vertice della collaborazione silenziosa con Hatz — il nome sul coperchio era un altro, come spesso in questo catalogo."
+            }
+          },
+          {
+            "id": "bmw:b130",
+            "engine_model": "B130",
+            "year_introduced": 1977,
+            "year_discontinued": 1987,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2.0L M10-block gasoline four, ~130 hp; the entry of the B-series marinizations.",
+              "description": "Il quattro a benzina: il blocco M10 delle berline sportive, marinizzato a Verviers per i runabout europei. Centotrenta cavalli con l'accento di Monaco e la targa belga."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 5,
+        "models": [
+          {
+            "id": "bmw:b190",
+            "engine_model": "B190",
+            "year_introduced": 1977,
+            "year_discontinued": 1987,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2.8L M30 six, 190 hp SAE, 253 kg dry; inboard or the ZF-co-developed Z-Drive sterndrive.",
+              "description": "L'ammiraglia a benzina: il sei M30 delle coupé, centonovanta cavalli, disponibile con il piede poppiero Z-Drive sviluppato con ZF — frizioni multiple in bagno d'olio, guida idraulica, ingegneria da autostrada portata in rada. Il BMW marino nella sua espressione più sincera."
+            }
+          },
+          {
+            "id": "bmw:d150",
+            "engine_model": "D150",
+            "year_introduced": 1983,
+            "year_discontinued": 1987,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "3.6L turbo-diesel six on the VM Motori tunnel-bore block, 136 hp; W (inboard) and Z (sterndrive) trims.",
+              "description": "Il diesel veloce: blocco VM Motori di Cento — canne a tunnel, scuola emiliana — turbo e targhetta bavarese. Centotrentasei cavalli per i cabinati che volevano gasolio senza rinunciare al distintivo."
+            }
+          },
+          {
+            "id": "bmw:d190",
+            "engine_model": "D190",
+            "year_introduced": 1985,
+            "year_discontinued": 1987,
+            "sort_number": 3,
+            "data": {
+              "key_notes": "3.6L VM-based six, turbo-intercooled, 165 hp; after the 1987 shutdown Mercury continued the family as the MerCruiser 530/636 D-TA into the early 1990s (see MerCruiser).",
+              "description": "L'ultimo capitolo: turbo e intercooler sul blocco emiliano, centosessantacinque cavalli, e poi la chiusura del 1987 — il mercato dell'auto chiamava, quello dei motori marini non rispondeva. Mercury comprò tutto e continuò a venderli sotto altre insegne (vedi MerCruiser): i motori sopravvivono ai programmi che li generano."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

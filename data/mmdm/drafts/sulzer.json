@@ -1,0 +1,64 @@
+{
+  "_dossier": "030f Sulzer. Rulings: buckets [6,8,12] → [2,4,6] — split treatment: workboat-scale core (Venoge 1904, Admiralty launches 1911, S20 top), cathedral RTA two-strokes = monument prose. Rudolf Diesel apprenticed at Sulzer 1879; first Sulzer diesel 1898; diesel business → Wärtsilä 1997 (cross-ref). Petit Pierre myth killed (Dyckhoff engine). 6LDA28 = rail, marine unconfirmed.",
+  "market": "eurasia",
+  "country": "Svizzera",
+  "manufacturer": "Sulzer",
+  "node": {
+    "year_founded": 1834,
+    "year_dissolved": null,
+    "sort_number": 88,
+    "cylinders": {
+      "2": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "sulzer:venoge",
+            "engine_model": "Venoge Twin",
+            "year_introduced": 1904,
+            "year_discontinued": 1915,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "THE MONUMENT: Sulzer's first marine diesel (1904) — a 2-cylinder four-stroke, 260x450mm, 40 bhp @ 260 rpm, in the Lake Geneva cargo vessel Venoge. Rudolf Diesel himself had apprenticed at these works in 1879; the first Sulzer diesel ran in 1898.",
+              "description": "Il monumento svizzero: il primo diesel marino di Sulzer, quaranta cavalli a duecentosessanta giri, nella nave da carico Venoge del lago Lemano. Nelle stesse officine di Winterthur un giovane Rudolf Diesel aveva fatto pratica nel 1879 — il cerchio più elegante della storia di questo catalogo: l'apprendista inventò il motore, e la bottega lo mise in barca. Da qui la casa sarebbe salita fino alle cattedrali a due tempi alte dieci metri che muovono i mercantili del mondo — ma quella è un'altra scala, e qui si onora l'inizio."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "sulzer:admiralty-four",
+            "engine_model": "Admiralty Launch Four",
+            "year_introduced": 1911,
+            "year_discontinued": 1920,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "100 bhp two-stroke four for a 60-ft Royal Navy diesel launch — passed a 24-hour full-power trial; a 210 ihp icebreaking-tug four preceded it (1910).",
+              "description": "Il quattro dell'Ammiragliato: cento cavalli a due tempi per una lancia della Royal Navy, collaudati con ventiquattr'ore filate a tutta potenza — la Svizzera che vende motori marini agli inglesi, e li vede accettati. L'anno prima, un fratello da duecentodieci cavalli rompeva il ghiaccio davanti a un rimorchiatore baltico."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "sulzer:s20",
+            "engine_model": "6S20",
+            "year_introduced": 1985,
+            "year_discontinued": 1997,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "200x300mm six, ~775-1,300 hp; the smallest late-era Sulzer — coaster propulsion at the very edge of this catalog's scale. The Swiss lake motorships (Stäfa 1937, Schwyz's Sulzers ran 53 YEARS) carry the mid-century story; the diesel business passed to Wärtsilä in 1997 (see Wärtsilä).",
+              "description": "Il più piccolo dei Sulzer tardi: un sei da coaster al confine esatto del perimetro di questo catalogo. Dietro di lui, mezzo secolo di battelli dei laghi svizzeri — i motori della Schwyz lavorarono cinquantatré anni senza cerimonie — e davanti, la cessione del 1997 a Wärtsilä, che della dinastia raccolse il testimone (vedi Wärtsilä). Winterthur uscì di scena come si conviene: con i motori ancora accesi."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

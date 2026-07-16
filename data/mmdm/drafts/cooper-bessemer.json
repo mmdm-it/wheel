@@ -1,0 +1,92 @@
+{
+  "_dossier": "026h Cooper-Bessemer. Rulings: RENAMED from Cooper Industries (nameplate rule — all marine engines carried Cooper-Bessemer); buckets [6,8,12] → [3,4,6,8] (GN range; 12 baseless). Arc: C&G Cooper 1833 + Bessemer Gas Engine 1899 → Cooper-Bessemer 1929 → Cooper Industries 1965; acquired White Superior 1976 (SEPARATE house, no double-listing). FV/FW → GE FDL locomotive lineage. LST claim REFUTED (EMD boats). dissolved null (brand lives via Cooper Machinery Services).",
+  "market": "americhe",
+  "country": "Stati Uniti",
+  "manufacturer": "Cooper-Bessemer",
+  "node": {
+    "year_founded": 1833,
+    "year_dissolved": null,
+    "sort_number": 15,
+    "cylinders": {
+      "3": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "cooper-bessemer:gn-3",
+            "engine_model": "GN-3",
+            "year_introduced": 1936,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Three of the GN four-stroke range (documented from 1936), stationary and marine duty (~).",
+              "description": "Il tre della serie GN: il gradino minore d'una famiglia nata per lavorare a terra e in acqua senza distinguere. Da Mount Vernon, Ohio, con la solidità di chi costruiva macchine a vapore dal 1833."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "4": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "cooper-bessemer:gn-4",
+            "engine_model": "GN-4",
+            "year_introduced": 1936,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Four of the GN range (~).",
+              "description": "Il quattro GN: tonnellate di quattro tempi per rimorchiatori e generazione di bordo. Annotato con la riserva delle sigle d'anteguerra, che gli archivi trattano con avarizia."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "cooper-bessemer:gn-6",
+            "engine_model": "GN-6",
+            "year_introduced": 1936,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Six of the GN range; the workhorse middle of the pre-war marine line.",
+              "description": "Il sei della famiglia: il centro della gamma marina d'anteguerra, per rimorchiatori e navi da lavoro costiere. Il mestiere solido dell'Ohio, in attesa della chiamata che sarebbe arrivata nel 1941."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "cooper-bessemer:gsb-8",
+            "engine_model": "GSB-8",
+            "year_introduced": 1942,
+            "year_discontinued": 1945,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "855 shp @ ~750 rpm supercharged eight; installed in pairs, it powered the Admirable class — the largest and most successful US minesweeper class of WWII.",
+              "description": "L'otto dei dragamine: installato in coppia, spinse la classe Admirable — la più numerosa e fortunata classe di dragamine americani della Seconda guerra mondiale. Ottocentocinquantacinque cavalli asse per il lavoro più ingrato del mare: passare per primi dove nessuno vuole passare."
+            }
+          },
+          {
+            "id": "cooper-bessemer:gnd-8",
+            "engine_model": "GND-8",
+            "year_introduced": 1942,
+            "year_discontinued": 1944,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "~600-700 hp eight; diesel-electric pairs in the USCG 180-ft buoy tenders (Cactus/Mesquite classes) — many served into the 1990s and beyond.",
+              "description": "L'otto dei guardiani: in configurazione diesel-elettrica, mosse i tender da boe di 180 piedi della Guardia Costiera — navi nate nel 1942 e ancora in servizio negli anni Novanta, qualcuna oltre. Mezzo secolo a piazzare boe in ogni stagione: la gloria discreta dura più di quella rumorosa."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

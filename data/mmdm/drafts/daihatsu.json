@@ -1,0 +1,92 @@
+{
+  "_dossier": "027a Daihatsu. Rulings: buckets [2,3,4,6] → [3,5,6,8] (2-bucket phantom — no engine found; 5 real via 5DK-20; 8 via 8DK/8DL). House = Daihatsu Diesel (1966 spin-off, marine since 1909; brand named after the 1930 diesel; now DAIHATSU INFINEARTH). Ship-scale DK-32+/DL-32 prose-only.",
+  "market": "eurasia",
+  "country": "Giappone",
+  "manufacturer": "Daihatsu",
+  "node": {
+    "year_founded": 1907,
+    "year_dissolved": null,
+    "sort_number": 18,
+    "cylinders": {
+      "3": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "daihatsu:3dk-20",
+            "engine_model": "3DK-20",
+            "year_introduced": 2000,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "200mm-bore triple, ~610 hp — the smallest modern Daihatsu, and surely one of the mightiest three-cylinders in this catalog.",
+              "description": "Il tre cilindri da seicentodieci cavalli: alesaggio da venti centimetri, tre soli pistoni, e più potenza di interi scomparti a otto di altre case. Il gradino minimo di Osaka non è piccolo — è soltanto corto."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "5": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "daihatsu:5dk-20",
+            "engine_model": "5DK-20",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "Five of the DK-20 line (200x300mm), ~735 kW; harbor and coastal workboats, propulsion and gensets.",
+              "description": "Il cinque della serie DK: la configurazione dispari che il Giappone medio-veloce pratica senza imbarazzo, per rimorchiatori portuali e mezzi costieri. Un cilindro tolto al sei, nessuna serenità perduta."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 3,
+        "models": [
+          {
+            "id": "daihatsu:6dl-20",
+            "engine_model": "6DL-20",
+            "year_introduced": 1982,
+            "year_discontinued": 2005,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "DL-series propulsion six for coasters, trawlers and training ships — the workboat backbone of the 1980s-90s range.",
+              "description": "Il sei della serie DL: la spina dorsale costiera di Osaka — coaster, pescherecci d'altura, navi scuola. Nei porti giapponesi degli anni Ottanta il suo regime medio era una specie di ora esatta."
+            }
+          },
+          {
+            "id": "daihatsu:6dk-20",
+            "engine_model": "6DK-20",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "The DK-20 six, ~1,000 kW; current-generation medium-speed mainstay (the 'e' trims carry it forward).",
+              "description": "Il sei moderno: un megawatt scarso di medio-veloce contemporaneo, aggiornato di generazione in generazione senza mai cambiare indole. La casa che motorizza in silenzio gran parte della cantieristica giapponese, qui nella sua taglia da lavoro."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "8": {
+        "sort_number": 4,
+        "models": [
+          {
+            "id": "daihatsu:8dk-28",
+            "engine_model": "8DK-28",
+            "year_introduced": 1995,
+            "year_discontinued": null,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "280mm-bore eight, ~2,900 kW class; the top this catalog admits — the DK-32/36 and DL-32 above it are ship's business.",
+              "description": "L'otto da ventotto centimetri d'alesaggio: il confine superiore che questo catalogo concede a Osaka. Sopra di lui la serie continua a salire, ma quella è marina mercantile — e un altro libro."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "_dossier": "028c Lancia Marine. CORRECTION to the approved ruling: the dossier proposed '[4] only, delete [6]' based on a research-agent slip — the Aurelia/Flaminia marine engines are V6s (6 cylinders) and belong in bucket 6; the V4s (Ardea) hold bucket 4. Implemented as [4,6] with the Flaminia class in 6. No factory line ever — all entries are the documented racing-marinization culture (35 hulls in the three-point-hydroplane archive; class named 'Flaminia'). Wow doctrine, hedged. 2009 'Lancia Powerboat' = FPT engines, prose footnote only.",
+  "market": "eurasia",
+  "country": "Italia",
+  "manufacturer": "Lancia Marine",
+  "node": {
+    "year_founded": 1906,
+    "year_dissolved": null,
+    "sort_number": 50,
+    "cylinders": {
+      "4": {
+        "sort_number": 1,
+        "models": [
+          {
+            "id": "lancia:ardea-900",
+            "engine_model": "Ardea 900",
+            "year_introduced": 1951,
+            "year_discontinued": 1955,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "903cc narrow-V4, ~35 hp race-tuned; one documented Cranchi-Xylon hydroplane in the 900cc racing class (?). No factory marine Lancia ever existed — these are the racers' marinizations.",
+              "description": "Il V4 stretto dell'Ardea, marinizzato dai corridori per la classe 900 dell'entrobordo da corsa: un solo scafo documentato, un Cranchi-Xylon del 1951, e tanto basta alla dottrina del meraviglioso. La fabbrica di Borgo San Paolo non fece mai un motore marino; i suoi clienti più audaci rimediarono da soli."
+            }
+          }
+        ],
+        "families": {}
+      },
+      "6": {
+        "sort_number": 2,
+        "models": [
+          {
+            "id": "lancia:aurelia-v6",
+            "engine_model": "Aurelia V6",
+            "year_introduced": 1952,
+            "year_discontinued": 1960,
+            "sort_number": 1,
+            "data": {
+              "key_notes": "2,451cc 60° V6 — the world's FIRST production V6 — marinized for three-point hydroplane racing, ~120 hp with triple twin-chokes (~).",
+              "description": "Il primo V6 di serie della storia dell'automobile, portato in acqua dai preparatori dell'entrobordo corsa: tre doppi corpi, centoventi cavalli, scafi Timossi e San Marco. Trentacinque barche a motore Lancia risultano negli archivi dei tre punti — nessuna uscita dalla fabbrica, tutte uscite dalla passione."
+            }
+          },
+          {
+            "id": "lancia:flaminia-v6",
+            "engine_model": "Flaminia V6",
+            "year_introduced": 1958,
+            "year_discontinued": 1970,
+            "sort_number": 2,
+            "data": {
+              "key_notes": "2,458cc V6 of the racing class literally NAMED 'Flaminia' — the marinized engine that gave its name to a whole three-point hydroplane category, revived in historic racing to this day.",
+              "description": "L'unico motore di questo catalogo che ha dato il nome a una classe: la 'classe Flaminia' dell'idroplano a tre punti correva — e nelle rievocazioni storiche corre ancora — col V6 della berlina di Pininfarina marinizzato dai preparatori lombardi. Quando il 2009 volle una 'barca Lancia' ufficiale, i motori dovettero chiederli a Fiat Powertrain: la vera flotta Lancia restava quella dei garagisti col cronometro."
+            }
+          }
+        ],
+        "families": {}
+      }
+    }
+  }
+}
