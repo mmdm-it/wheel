@@ -3,7 +3,7 @@
 # Sync wheel (v3) to catalog, bible, calendar, and places deployments
 # Catalog deploys to mmdm.it root (public_html/mmdm/)
 # Other volumes deploy to wheel-v3 subdirectories
-# Usage: ./sync-to-server.sh [catalog|bible|calendar|places|both|all]
+# Usage: ./sync-to-server.sh [catalog|bible|calendar|places|all]
 #
 # Note: this script was temporarily locked on 2026-02-26 while a black-screen
 # regression (commit 52cb891) was diagnosed and reverted. Unlocked at v3.8.41.
@@ -11,7 +11,9 @@
 SERVER="namecheap"
 REMOTE_BASE="~/public_html/mmdm/wheel-v3"
 REMOTE_CATALOG="~/public_html/mmdm"
-LOCAL_PATH="$(pwd)/"
+# Anchored to the script's directory — running from elsewhere must not sync
+# a different tree (Phase B audit, M2).
+LOCAL_PATH="$(cd "$(dirname "$0")" && pwd)/"
 
 # Color codes
 GREEN='\033[0;32m'
@@ -68,7 +70,7 @@ sync_deployment() {
     esac
 
     # Sync files (excluding git, node_modules, docs, etc.)
-    rsync -avz --delete \
+    rsync -avz --delete --delete-excluded \
         --exclude='.git' \
         --exclude='.gitignore' \
         --exclude='node_modules' \
@@ -132,17 +134,10 @@ case $DEPLOYMENT in
         echo ""
         sync_deployment "places"
         ;;
-    both)
-        sync_deployment "catalog"
-        echo ""
-        echo "────────────────────────────────────────────────────"
-        echo ""
-        sync_deployment "bible"
-        ;;
     *)
         echo -e "${RED}❌ Invalid deployment: $DEPLOYMENT${NC}"
         echo ""
-        echo "Usage: ./sync-to-server.sh [catalog|bible|calendar|places|both|all]"
+        echo "Usage: ./sync-to-server.sh [catalog|bible|calendar|places|all]"
         echo ""
         echo "Examples:"
         echo "  ./sync-to-server.sh            # Sync all (default)"
@@ -150,7 +145,6 @@ case $DEPLOYMENT in
         echo "  ./sync-to-server.sh bible      # Sync Bible only"
         echo "  ./sync-to-server.sh calendar   # Sync Calendar dev dataset only"
         echo "  ./sync-to-server.sh places     # Sync Deep Places test volume"
-        echo "  ./sync-to-server.sh both       # Sync MMdM catalog and Bible"
         echo "  ./sync-to-server.sh all        # Sync catalog, Bible, calendar, and places"
         exit 1
         ;;

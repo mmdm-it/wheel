@@ -7,6 +7,7 @@ import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
+import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
 import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge } from './view/migration-animation.js';

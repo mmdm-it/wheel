@@ -1,5 +1,5 @@
 import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
-import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters } from './adapters/volume-helpers.js';
+import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 import { catalogAdapter } from './adapters/catalog-adapter.js';
@@ -199,7 +199,10 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
   const paramVolume = params.get('volume');
   const resolvedVolume = volumeConfigs[volumeOverride]?.id || volumeConfigs[paramVolume]?.id || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
   const config = volumeConfigs[resolvedVolume];
-  const manifest = await fetch(config.manifestPath).then(r => r.json());
+  const manifest = await fetch(config.manifestPath).then(r => {
+    if (!r.ok) throw new Error(`manifest missing for volume "${config.id}" (${config.manifestPath}: HTTP ${r.status})`);
+    return r.json();
+  });
   const root = config.extractRoot(manifest);
   const validation = validateVolumeRoot(root);
   if (!validation.ok) {
@@ -324,19 +327,6 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   const panelRect = detailPanel.getBoundingClientRect();
   const renderBounds = { ...arcBounds, width: panelRect.width, height: panelRect.height };
 
-  // Arc layout diagnostic — copy from console to report layout issues
-  const lt = arcBounds.lineTable;
-  console.log(
-    `[arc-layout] ${window.innerWidth}×${window.innerHeight}` +
-    ` | SSd:${arcBounds.SSd}` +
-    ` | hub:(${arcBounds.arcCenterX.toFixed(0)},${arcBounds.arcCenterY.toFixed(0)})` +
-    ` r:${arcBounds.arcRadius.toFixed(0)}` +
-    ` | lines:${lt.length}` +
-    (lt.length ? ` [y:${lt[0].y.toFixed(0)}–${lt[lt.length-1].y.toFixed(0)}]` +
-                 ` leftX:${lt[0].leftX.toFixed(0)}–${lt[lt.length-1].leftX.toFixed(0)}` : '') +
-    ` | plugin:${plugin.getMetadata?.().name}` +
-    ` | type:${payload.type}`
-  );
 
   const node = plugin.render(payload, renderBounds, { createElement: tag => document.createElement(tag) });
   if (node) detailContent.appendChild(node);
@@ -358,14 +348,7 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
   const t = key => VOCAB[locale]?.[key] ?? VOCAB.english[key] ?? key;
 
   // ── Numeral converters ───────────────────────────────────────────────────────
-  const toRoman = n => {
-    if (!Number.isFinite(n) || n <= 0 || n > 3999) return String(n);
-    const vals = [1000,900,500,400,100,90,50,40,10,9,5,4,1];
-    const syms = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'];
-    let r = '', rem = n;
-    for (let i = 0; i < vals.length; i++) while (rem >= vals[i]) { r += syms[i]; rem -= vals[i]; }
-    return r;
-  };
+  const toRoman = n => toRomanNumeral(n);
   const toHebrew = n => {
     if (!Number.isFinite(n) || n <= 0 || n > 1200) return String(n);
     const ones    = ['','\u05d0','\u05d1','\u05d2','\u05d3','\u05d4','\u05d5','\u05d6','\u05d7','\u05d8'];
@@ -487,7 +470,7 @@ function buildBibleChain(manifest, options, namesMap) {
       return buildBibleVerseCousinChain(manifest, {
         bookId: options.bookId || 'MATHE',
         startChapterId: options.chapterId || undefined,
-        translation: options.translation || 'NAB'
+        translation: options.translation || 'VUL'
       }).then(chain => {
         const verseId = options.verseId;
         if (verseId && chain.items.length) {
@@ -676,7 +659,7 @@ function wireInteractions(getApp) {
       });
       return;
     }
-            suppressNativeClickUntil = Date.now() + 450;
+    suppressNativeClickUntil = Date.now() + 450;
     // Child pyramid node — delegate to the app's pyramid click handler
     const isPyramidNode = event.target && event.target.closest && event.target.closest('.child-pyramid-node');
     if (isPyramidNode) {
@@ -716,7 +699,6 @@ function wireInteractions(getApp) {
         return;
       }
     }
-            suppressNativeClickUntil = Date.now() + 450;
 
     isDragging = true;
     logTap('drag-start', { pointerType: event.pointerType });
@@ -774,12 +756,29 @@ function gatewayLabelFromItemId(itemId) {
 
 // Data-declared door into another volume: boot it in-app, remembering the
 // way back. The browser URL gains a history entry so Back exits the door.
+function showBootError(message) {
+  // Minimal visible error surface: the console-only failures of the past
+  // left black screens (Phase B audit, H4/M1).
+  const el = document.getElementById('detail-content');
+  if (el) el.textContent = message;
+  console.error('[wheel]', message);
+}
+
 function launchGateway(gateway) {
-  if (!gateway?.volume || !volumeConfigs[gateway.volume]) return;
+  if (!gateway?.volume || !volumeConfigs[gateway.volume]) {
+    console.warn('[wheel] gateway names unknown volume', gateway?.volume);
+    return;
+  }
   const returnContext = { volume: currentVolumeId, itemId: gateway.returnItemId || null };
   const search = `?volume=${encodeURIComponent(gateway.volume)}&level=root`;
-  try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* history unavailable (e.g. file://) */ }
-  bootVolume(gateway.volume, search, returnContext).catch(err => console.error('[wheel] gateway boot failed', err));
+  // Boot first; only a successful boot earns the history entry (H4).
+  bootVolume(gateway.volume, search, returnContext)
+    .then(() => {
+      try {
+        window.history.pushState({ wheelGateway: true, gatewayReturn: returnContext }, '', search);
+      } catch (err) { /* history unavailable (e.g. file://) */ }
+    })
+    .catch(err => showBootError(`gateway boot failed: ${err.message}`));
 }
 
 function returnThroughGateway() {
@@ -789,28 +788,29 @@ function returnThroughGateway() {
   params.set('volume', ctx.volume);
   if (ctx.itemId) params.set('item', ctx.itemId);
   const search = `?${params.toString()}`;
-  try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* ignore */ }
-  bootVolume(ctx.volume, search, null).catch(err => console.error('[wheel] gateway return failed', err));
+  bootVolume(ctx.volume, search, null)
+    .then(() => {
+      try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* ignore */ }
+    })
+    .catch(err => showBootError(`gateway return failed: ${err.message}`));
   return true;
 }
 
 // Browser Back across a gateway pushState: reload resolves the URL cleanly.
 window.addEventListener('popstate', () => window.location.reload());
 
+// M4: history.state survives reloads — a refresh inside a gateway volume
+// restores its way back instead of stranding the visitor.
+function restoredGatewayReturn() {
+  try {
+    const st = window.history.state;
+    if (st?.gatewayReturn?.volume && volumeConfigs[st.gatewayReturn.volume]) return st.gatewayReturn;
+  } catch (err) { /* history unavailable */ }
+  return null;
+}
+
 async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null) {
   const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
-  // Teardown any previous volume instance — gateway reboots reuse the SVG.
-  // Clear only the detail CONTENT: #detail-panel's inner skeleton
-  // (#detail-content, #version-badge) is owned by index.html and must survive.
-  while (svg.firstChild) svg.removeChild(svg.firstChild);
-  const detailContentEl = document.getElementById('detail-content');
-  if (detailContentEl) detailContentEl.innerHTML = '';
-  const detailPanelEl = document.getElementById('detail-panel');
-  if (detailPanelEl) detailPanelEl.classList.remove('detail-panel--visible');
-  currentApp = null;
-  currentVolumeId = volume;
-  gatewayReturnContext = gatewayReturn;
-  applyTheme(manifest, volume);
   const translationsMeta = supplemental?.translationsMeta || null;
   const translationId = options.translation || null;
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
@@ -836,10 +836,23 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     onGatewayReturn: returnThroughGateway,
     gatewayLabel: gatewayReturn ? gatewayLabelFromItemId(gatewayReturn.itemId) : ''
   });
-  if (!items.length) {
-    console.error('No items found for volume', volume);
-    return;
-  }
+  if (!items.length) throw new Error(`no items found for volume "${volume}"`);
+
+  // ── Point of no return ── the new volume built successfully; only now
+  // tear down the previous instance (Phase B audit, M1: a late failure
+  // above leaves the old volume intact instead of a black screen).
+  // Teardown any previous volume instance — gateway reboots reuse the SVG.
+  // Clear only the detail CONTENT: #detail-panel's inner skeleton
+  // (#detail-content, #version-badge) is owned by index.html and must survive.
+  while (svg.firstChild) svg.removeChild(svg.firstChild);
+  const detailContentEl = document.getElementById('detail-content');
+  if (detailContentEl) detailContentEl.innerHTML = '';
+  const detailPanelEl = document.getElementById('detail-panel');
+  if (detailPanelEl) detailPanelEl.classList.remove('detail-panel--visible');
+  currentApp = null;
+  currentVolumeId = volume;
+  gatewayReturnContext = gatewayReturn;
+  applyTheme(manifest, volume);
 
   const adapter = adapterLoader.load(volume);
   let adapterNormalized = null;
@@ -942,34 +955,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   window.app = app;
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId });
   app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId }));
-  // If the Bible opens on a chapter with a featured verse, prefetch that chapter's
-  // verse data and re-render the Detail Sector with the verse text once available.
-  if (volume === 'bible' && options.level === 'chapter' && options.verseId && layoutBindings.prefetchBibleVerses) {
-    const initialChapter = items[selectedIndex];
-    console.log('[startup-verse] prefetch check | initialChapter:', initialChapter?.id, '| externalFile:', initialChapter?.meta?.externalFile, '| verseId:', options.verseId);
-    if (initialChapter?.meta?.externalFile) {
-      layoutBindings.prefetchBibleVerses(initialChapter, {
-        onLoaded() {
-          const { externalFile, bookId, chapterKey } = initialChapter.meta;
-          const verseKey = String(options.verseId);
-          console.log('[startup-verse] onLoaded | externalFile:', externalFile, '| verseKey:', verseKey, '| app.openDetailSector:', typeof app?.openDetailSector);
-          const syntheticVerse = {
-            id: `${bookId}_${chapterKey}_${verseKey}`,
-            name: `${chapterKey}:${verseKey}`,
-            level: 'verse',
-            parentId: initialChapter.id,
-            meta: { bookId, chapterId: initialChapter.id, verseKey, externalFile }
-          };
-          if (app?.openDetailSector) {
-            app.openDetailSector(() => renderDetail(syntheticVerse, adapter, manifest, adapterNormalized, { translation: translationId }));
-          } else {
-            renderDetail(syntheticVerse, adapter, manifest, adapterNormalized, { translation: translationId });
-          }
-        }
-      });
-    }
-  } else {
-    console.log('[startup-verse] prefetch skipped | volume:', volume, '| level:', options.level, '| verseId:', options.verseId, '| hasPrefetch:', Boolean(layoutBindings.prefetchBibleVerses));
+  // Generic post-boot hook: adapters may schedule volume-specific startup
+  // work (e.g. the Bible's featured-verse prefetch) without the host
+  // carrying volume literals (Phase B audit, H1).
+  if (typeof handlerSet.onBoot === 'function') {
+    handlerSet.onBoot({
+      app,
+      items,
+      selectedIndex,
+      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: translationId })
+    });
   }
   if (!interactionsWired) {
     wireInteractions(() => currentApp);
@@ -977,39 +972,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   }
   showVersion();
 
-  // ── Startup diagnostics ──
-  const diagSvg = document.getElementById('app');
-  const diagNodes = diagSvg?.querySelectorAll('.focus-ring-node') || [];
-  const diagLabels = diagSvg?.querySelectorAll('.focus-ring-label') || [];
-  const diagBand = diagSvg?.querySelector('.focus-ring-band');
-  const diagMag = diagSvg?.querySelector('.focus-ring-magnifier-circle');
-  const diagRoot = document.documentElement;
-  console.log('%c[DIAG] ═══ Wheel startup diagnostics ═══', 'color:#f1b800;font-weight:bold');
-  console.log('[DIAG] volume:', volume);
-  console.log('[DIAG] items passed to createApp:', items.length, '| preserveOrder:', preserveOrder, '| selectedIndex:', selectedIndex);
-  console.log('[DIAG] first 3 items:', JSON.stringify(items.slice(0, 3).map(i => ({ id: i?.id, name: i?.name, order: i?.order, sort: i?.sort }))));
-  console.log('[DIAG] viewport:', JSON.stringify(viewport));
-  console.log('[DIAG] SVG element:', diagSvg?.tagName, '| size:', diagSvg?.getAttribute('width') || diagSvg?.style?.width || 'css', 'x', diagSvg?.getAttribute('height') || diagSvg?.style?.height || 'css');
-  console.log('[DIAG] SVG children:', diagSvg?.childNodes?.length, '| nodes:', diagNodes.length, '| labels:', diagLabels.length);
-  console.log('[DIAG] band:', diagBand ? 'd=' + (diagBand.getAttribute('d') || '').slice(0, 60) + '…' : 'MISSING');
-  console.log('[DIAG] magnifier:', diagMag ? 'cx=' + diagMag.getAttribute('cx') + ' cy=' + diagMag.getAttribute('cy') + ' r=' + diagMag.getAttribute('r') : 'MISSING');
-  console.log('[DIAG] theme:', diagRoot.getAttribute('data-theme'), '| bg:', diagRoot.style.backgroundColor);
-  console.log('[DIAG] CSS vars:', {
-    bg: getComputedStyle(diagRoot).getPropertyValue('--theme-color-bg').trim(),
-    node: getComputedStyle(diagRoot).getPropertyValue('--theme-color-node').trim(),
-    text: getComputedStyle(diagRoot).getPropertyValue('--theme-color-text').trim(),
-    band: getComputedStyle(diagRoot).getPropertyValue('--theme-color-band').trim()
-  });
-  if (diagNodes.length > 0) {
-    const n = diagNodes[0];
-    console.log('[DIAG] first node:', 'cx=' + n.getAttribute('cx'), 'cy=' + n.getAttribute('cy'), 'r=' + n.getAttribute('r'), 'fill=' + getComputedStyle(n).fill);
-  } else {
-    console.warn('[DIAG] ⚠ NO focus-ring-node elements found in SVG');
-  }
-  console.log('[DIAG] nav state:', { current: app?.nav?.getCurrent?.()?.name, index: app?.nav?.getSelectedIndex?.(), total: app?.nav?.items?.length });
-  console.log('%c[DIAG] ═══ End diagnostics ═══', 'color:#f1b800;font-weight:bold');
 }
 
-bootVolume().catch(err => {
-  console.error('Failed to initialize app', err);
+bootVolume(null, null, restoredGatewayReturn()).catch(err => {
+  showBootError(`Failed to initialize app: ${err.message}`);
 });

@@ -23,3 +23,34 @@ describe('computeChildPyramidGeometry', () => {
     assert.ok(withLogo.fanLines.length <= withoutLogo.fanLines.length);
   });
 });
+
+// Phase B audit M7: the at-least-one guarantee — the fallback that prevents
+// unreachable subtrees when the fan/spiral hunt starves — must never lose
+// its floor of exactly one node. childCount 4 on a phone-shaped viewport is
+// the historically starving case (the empty-Lombardini-pyramid bug).
+describe('at-least-one guarantee', () => {
+  it('never returns zero intersections for a non-empty child set', () => {
+    const phone = { width: 393, height: 851 };
+    const mag = { x: 196, y: 700, r: 40 };
+    const arc = { SSd: 393, arcCenterX: 196, arcCenterY: 851, arcRadius: 420 };
+    for (const childCount of [1, 2, 3, 4, 5, 7, 12, 50]) {
+      const r = computeChildPyramidGeometry(phone, mag, arc, { childCount });
+      assert.ok(
+        r.intersections.length >= 1,
+        `childCount ${childCount} produced zero intersections`
+      );
+    }
+  });
+
+  it('synthetic fallback hits carry the synthetic flag and null fanId', () => {
+    // A viewport crushed enough that the hunt cannot place anything real.
+    const tiny = { width: 200, height: 300 };
+    const mag = { x: 100, y: 250, r: 30 };
+    const arc = { SSd: 200, arcCenterX: 100, arcCenterY: 300, arcRadius: 210 };
+    const r = computeChildPyramidGeometry(tiny, mag, arc, { childCount: 4 });
+    assert.ok(r.intersections.length >= 1, 'expected at least the guaranteed node');
+    for (const hit of r.intersections.filter(h => h.synthetic)) {
+      assert.equal(hit.fanId, null);
+    }
+  });
+});
