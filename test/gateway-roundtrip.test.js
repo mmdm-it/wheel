@@ -12,13 +12,12 @@ import { createHandlers as createBibleHandlers, buildBibleRootChain } from '../s
 const calendarManifest = {
   Calendar: {
     display_config: { volume_name: 'Cal', hierarchy_levels: {} },
-    millennia: {
-      m0: { id: 'm0', name: 'M0', sort_number: 1 },
-      m1: { id: 'm1', name: 'M1', sort_number: 2 }
+    month_template: {
+      jan: { id: 'jan', name: 'January', month_number: 1 }
     },
     years: {
-      y1: { id: 'y1', name: 'Year 1', millennium_id: 'm0', sort_number: 1, months: {} },
-      y2: { id: 'y2', name: 'Year 2', millennium_id: 'm1', sort_number: 2, months: {} }
+      y1: { id: 'y1', name: '1', year_number: 1, sort_number: 1 },
+      y2: { id: 'y2', name: '2', year_number: 2, sort_number: 2 }
     }
   }
 };
@@ -32,7 +31,7 @@ function stubApp(state) {
 }
 
 describe('gateway round trip (adapter contract)', () => {
-  it('calendar: OUT at the millennium ring returns through the gateway', () => {
+  it('calendar: OUT at the year ring (the top) returns through the gateway', () => {
     let returned = 0;
     const handlers = createCalendarHandlers({
       manifest: calendarManifest,
@@ -42,25 +41,27 @@ describe('gateway round trip (adapter contract)', () => {
     });
     const state = {};
     const app = stubApp(state);
-    // year ring → OUT → millennium ring
-    const up = handlers.parentHandler({ selected: { id: 'y1', parentId: 'm0' }, app });
-    assert.equal(up, true, 'year → millennium OUT should be handled');
+    // month ring → OUT → year ring (outer button stays: the gateway is above)
+    handlers.childrenHandler({ selected: { id: 'y1', level: 'year' }, app });
+    const up = handlers.parentHandler({ app });
+    assert.equal(up, true, 'month → year OUT should be handled');
     assert.equal(state.parentButtons?.showOuter, true,
-      'outer parent button must show at the millennium ring when a gateway label exists');
-    // millennium ring → OUT → back through the gateway
-    const out = handlers.parentHandler({ selected: { id: 'm0' }, app });
-    assert.equal(out, true, 'millennium OUT must be handled by the gateway return');
+      'outer parent button must show at the year ring when a gateway label exists');
+    // year ring (top) → OUT → back through the gateway
+    const out = handlers.parentHandler({ app });
+    assert.equal(out, true, 'top-level OUT must be handled by the gateway return');
     assert.equal(returned, 1, 'onGatewayReturn must be invoked exactly once');
   });
 
-  it('calendar: without a gateway, the millennium ring is the top (no OUT)', () => {
+  it('calendar: without a gateway, the year ring is the top (no OUT)', () => {
     const handlers = createCalendarHandlers({ manifest: calendarManifest, options: {} });
     const state = {};
     const app = stubApp(state);
-    handlers.parentHandler({ selected: { id: 'y1', parentId: 'm0' }, app });
+    handlers.childrenHandler({ selected: { id: 'y1', level: 'year' }, app });
+    handlers.parentHandler({ app });
     assert.equal(state.parentButtons?.showOuter, false,
       'no gateway label → no outer button at the top ring');
-    const out = handlers.parentHandler({ selected: { id: 'm0' }, app });
+    const out = handlers.parentHandler({ app });
     assert.equal(out, false, 'top-level OUT unhandled when there is no gateway');
   });
 

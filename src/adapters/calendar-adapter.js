@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildCalendarYears, buildCalendarMillennia, getCalendarMonths } from './volume-helpers.js';
+import { buildCalendarYears, getCalendarMonths } from './volume-helpers.js';
 import { buildCalendarPyramid } from '../pyramid/volume-pyramid.js';
 
 const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
@@ -91,37 +91,19 @@ export function normalize(raw) {
   const volumeName = volumeData?.display_config?.volume_name || volumeKey || 'calendar';
   addItem({ id: rootId, name: volumeName, level: 'root', parentId: null, order: 0 });
 
-  const millennia = volumeData.millennia || {};
-  Object.entries(millennia).forEach(([milliId, milli], idx) => {
-    const order = Number.isFinite(milli?.sort_number) ? milli.sort_number : idx;
-    addItem({ id: milliId, name: milli?.name || milliId, level: 'millennium', parentId: rootId, order });
-  });
-
+  // Years are the top level (millennia removed 2026-07-17). Months live in
+  // month_template and are synthesized per year on demand — normalize carries
+  // year items only; leaf behavior comes from meta.leafLevel.
   const years = volumeData.years || {};
   Object.entries(years).forEach(([yearId, year], idx) => {
-    const parentId = year.millennium_id || year.millenniumId || null;
     const order = Number.isFinite(year?.sort_number) ? year.sort_number : (Number.isFinite(year?.year_number) ? year.year_number : idx);
     addItem({
       id: yearId,
       name: year?.name || year?.year_display || String(year?.year_number ?? yearId),
       level: 'year',
-      parentId: parentId || rootId,
+      parentId: rootId,
       order,
       meta: { yearNumber: year?.year_number ?? null }
-    });
-
-    const months = year?.months || {};
-    Object.entries(months).forEach(([monthKey, monthVal], monthIdx) => {
-      const monthId = monthVal?.id || `${yearId}:${monthKey}`;
-      const monthOrder = Number.isFinite(monthVal?.sort_number) ? monthVal.sort_number : monthIdx;
-      addItem({
-        id: monthId,
-        name: monthVal?.name || monthKey,
-        level: 'month',
-        parentId: yearId,
-        order: monthOrder,
-        meta: { monthNumber: monthVal?.month_number ?? null, yearId }
-      });
     });
   });
 
@@ -130,7 +112,7 @@ export function normalize(raw) {
       if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
       return a.order - b.order;
     }
-    const levelOrder = ['root', 'millennium', 'year', 'month'];
+    const levelOrder = ['root', 'year', 'month'];
     return levelOrder.indexOf(a.level) - levelOrder.indexOf(b.level);
   });
   items.forEach((item, idx) => { item.order = idx; });
@@ -141,7 +123,7 @@ export function normalize(raw) {
     meta: {
       volumeId: volumeKey,
       leafLevel: 'month',
-      levels: ['millennium', 'year', 'month'],
+      levels: ['year', 'month'],
       colors: levelPalette,
       dimensions
     }
@@ -149,11 +131,10 @@ export function normalize(raw) {
 }
 
 export function layoutSpec(normalized, viewport) {
-  const levels = normalized?.meta?.levels || ['millennium', 'year', 'month'];
+  const levels = normalized?.meta?.levels || ['year', 'month'];
   const vp = viewport?.width && viewport?.height ? viewport : getViewportInfo(1280, 720);
   const pyramidCapacity = calculatePyramidCapacity(vp);
   const palette = normalized?.meta?.colors || {
-    millennium: '#5d3fd3',
     year: '#b8860b',
     month: '#556b2f'
   };
@@ -174,40 +155,30 @@ function findYear(manifest, yearId) {
 }
 
 function findMonth(manifest, monthId) {
-  const years = manifest?.Calendar?.years || {};
-  for (const year of Object.values(years)) {
-    const months = year?.months || {};
-    for (const val of Object.values(months)) {
-      const id = val?.id || '';
-      if (id && id === monthId) return { month: val, year };
-      const composed = `${year?.id || ''}:${val?.id || ''}`;
-      if (monthId && composed === monthId) return { month: val, year };
-    }
-  }
-  return null;
+  // Month ids are composed "yearId:monthKey" (months synthesized from the
+  // shared template — the yearId prefix is what makes them unique).
+  if (!monthId || typeof monthId !== 'string') return null;
+  const sep = monthId.lastIndexOf(':');
+  if (sep < 1) return null;
+  const yearId = monthId.slice(0, sep);
+  const monthKey = monthId.slice(sep + 1);
+  const year = findYear(manifest, yearId);
+  if (!year) return null;
+  const month = (year.months || manifest?.Calendar?.month_template || {})[monthKey];
+  return month ? { month, year } : null;
 }
 
 export function detailFor(selected, manifest) {
   if (!selected) return null;
   const id = selected.id || '';
-  const calendar = manifest?.Calendar || {};
-
-  if (selected.level === 'millennium' || id.startsWith('millennium')) {
-    const milli = calendar.millennia?.[id];
-    const span = [milli?.start_year, milli?.end_year].filter(v => v !== undefined && v !== null);
-    const subtitle = span.length === 2 ? `${span[0]} – ${span[1]}` : null;
-    return {
-      type: 'card',
-      title: milli?.name || selected.name || id,
-      body: subtitle || 'Millennium overview'
-    };
-  }
 
   if (selected.level === 'year') {
     const yearEntry = findYear(manifest, id) || {};
     const yearNumber = yearEntry.year_number ?? selected.meta?.yearNumber ?? null;
-    const era = Number.isFinite(yearNumber) ? (yearNumber < 0 ? 'B.C.' : 'A.D.') : '';
-    const label = Number.isFinite(yearNumber) ? `${Math.abs(yearNumber)} ${era}`.trim() : (yearEntry.name || selected.name || id);
+    // Era rule: bare number for AD, "BC" suffix only across the line.
+    const label = Number.isFinite(yearNumber)
+      ? (yearNumber < 0 ? `${Math.abs(yearNumber)} BC` : String(yearNumber))
+      : (yearEntry.name || selected.name || id);
     return {
       type: 'card',
       title: label,
@@ -231,77 +202,52 @@ export function detailFor(selected, manifest) {
 }
 
 export function createHandlers({ manifest, options, onGatewayReturn = null, gatewayLabel = '' }) {
+  // Two modes only: years are the top level (millennia removed 2026-07-17 —
+  // centuries/millennia are cousin-gap texture in the year chain, not a
+  // parent). Backing out from years exits through the gateway, if any.
   let calendarMode = 'year';
   let calendarMonthContext = null;
-  const lastYearByMillennium = {};
 
-  const parentHandler = ({ selected, app }) => {
-    if (calendarMode === 'millennium') {
-      if (typeof onGatewayReturn === 'function') return Boolean(onGatewayReturn());
-      return false;
-    }
+  const parentHandler = ({ app }) => {
     if (calendarMode === 'month') {
       const yearId = calendarMonthContext?.yearId;
-      const milliId = calendarMonthContext?.millenniumId;
       const { items: yearItems, selectedIndex: yearSelected } = buildCalendarYears(manifest, {
         arrangement: options?.arrangement,
-        initialItemId: yearId,
-        filterMillenniumId: milliId
+        initialItemId: yearId
       });
       calendarMode = 'year';
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayLabel) });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
         migrateOrSet(yearItems, yearSelected, true);
       }
       return true;
     }
-    if (calendarMode !== 'year') return false;
-    const millenniumId = selected?.parentId || selected?.parent_id || null;
-    if (millenniumId && selected?.id) {
-      lastYearByMillennium[millenniumId] = selected.id;
-    }
-    const { items: milliItems, selectedIndex: milliSelected } = buildCalendarMillennia(manifest, { initialItemId: millenniumId });
-    calendarMode = 'millennium';
-    if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayLabel) });
-    if (app?.setPrimaryItems) {
-      const migrateOrSet = app.migrateOut || app.setPrimaryItems;
-      migrateOrSet(milliItems, milliSelected, true);
-    }
-    return true;
+    if (typeof onGatewayReturn === 'function') return Boolean(onGatewayReturn());
+    return false;
   };
 
   const childrenHandler = ({ selected, app }) => {
-    if (calendarMode === 'year') {
-      const months = getCalendarMonths(manifest, selected, calendarMode);
-      if (!months.length) return false;
-      calendarMode = 'month';
-      calendarMonthContext = {
-        yearId: selected?.id || null,
-        millenniumId: selected?.parentId || selected?.parent_id || null
-      };
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
-      if (app?.setPrimaryItems) app.setPrimaryItems(months, 0, true);
-      return true;
-    }
-    if (calendarMode !== 'millennium') return false;
-    const millenniumId = selected?.id;
-    if (!millenniumId) return true;
-    const preferredYear = lastYearByMillennium[millenniumId];
-    const { items: yearItems, selectedIndex: yearSelected } = buildCalendarYears(manifest, {
-      arrangement: options?.arrangement,
-      initialItemId: preferredYear,
-      filterMillenniumId: millenniumId
-    });
-    calendarMode = 'year';
+    if (calendarMode !== 'year') return false;
+    const months = getCalendarMonths(manifest, selected, calendarMode);
+    if (!months.length) return false;
+    calendarMode = 'month';
+    calendarMonthContext = { yearId: selected?.id || null };
     if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
-    if (app?.setPrimaryItems) app.setPrimaryItems(yearItems, yearSelected, true);
+    if (app?.setPrimaryItems) app.setPrimaryItems(months, 0, true);
     return true;
+  };
+
+  // Boot lands on the year ring — the top. The outer button only exists when
+  // there is a gateway above us to return through.
+  const onBoot = ({ app }) => {
+    if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayLabel) });
   };
 
   return {
     parentHandler,
     childrenHandler,
+    onBoot,
     shouldCenterLabel: () => true,
     layoutBindings: {
       calendarModeRef: () => calendarMode,

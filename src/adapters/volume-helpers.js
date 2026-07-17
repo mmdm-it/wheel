@@ -204,11 +204,16 @@ export function getCalendarMonths(manifest, selected, calendarMode) {
   if (!yearId) return [];
   const years = manifest?.Calendar?.years || {};
   const yearEntry = years[yearId] || Object.values(years).find(y => String(y.id || '') === String(yearId));
-  if (!yearEntry?.months) return [];
-  return Object.entries(yearEntry.months).map(([monthKey, monthVal], idx) => ({
-    id: monthVal?.id || `${yearId}:${monthKey}`,
+  if (!yearEntry) return [];
+  // Months live once in month_template and are synthesized per year
+  // (composed ids keep them unique across years); per-year months, if a
+  // manifest ever carries them, take precedence.
+  const months = yearEntry.months || manifest?.Calendar?.month_template;
+  if (!months) return [];
+  return Object.entries(months).map(([monthKey, monthVal], idx) => ({
+    id: `${yearId}:${monthVal?.id || monthKey}`,
     name: monthVal?.name || monthKey,
-    order: Number.isFinite(monthVal?.sort_number) ? monthVal.sort_number : idx,
+    order: Number.isFinite(monthVal?.month_number) ? monthVal.month_number : idx,
     parentId: yearId,
     level: 'month'
   })).sort((a, b) => {
@@ -374,48 +379,30 @@ export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
   return { items, selectedIndex, preserveOrder: true };
 }
 
-export function buildCalendarMillennia(manifest, { initialItemId } = {}) {
-  const millennia = manifest?.Calendar?.millennia || {};
-  const items = Object.entries(millennia).map(([id, milli], idx) => ({
-    id,
-    name: milli.name || id,
-    sort: milli?.sort_number || idx,
-    order: milli?.sort_number || idx,
-    parentId: null
-  })).sort((a, b) => {
-    if (a.sort === b.sort) return (a.name || '').localeCompare(b.name || '');
-    return a.sort - b.sort;
-  }).map((item, idx) => ({ ...item, order: idx }));
-  const selectedIndex = (() => {
-    if (initialItemId) {
-      const idx = items.findIndex(item => item.id === initialItemId);
-      if (idx >= 0) return idx;
-    }
-    return 0;
-  })();
-  return { items, selectedIndex, preserveOrder: true };
-}
+// Century/millennium grouping keys. Historical numbering: no year zero, so
+// centuries run 1..100, 101..200 (and -100..-1); the era crossing -1 -> 1 is
+// itself a millennium boundary and gets the large gap.
+const centuryKey = y => (y > 0 ? Math.ceil(y / 100) : -Math.ceil(-y / 100));
+const millenniumKey = y => (y > 0 ? Math.ceil(y / 1000) : -Math.ceil(-y / 1000));
+const CENTURY_GAP = 1;    // small gap: one empty chain link
+const MILLENNIUM_GAP = 3; // larger gap: three
 
-export function buildCalendarYears(manifest, { arrangement, initialItemId, filterMillenniumId } = {}) {
+export function buildCalendarYears(manifest, { arrangement, initialItemId } = {}) {
   const years = manifest?.Calendar?.years;
   if (!years) return { items: [], selectedIndex: 0, preserveOrder: false };
-  const items = [];
+  const sorted = [];
   Object.entries(years).forEach(([yearId, year]) => {
-    if (filterMillenniumId && (year?.millennium_id || year?.millenniumId) !== filterMillenniumId) return;
-    items.push({
+    sorted.push({
       id: yearId,
       name: year.name || year.year_display || String(year.year_number || yearId),
-      sort: year?.sort_number || year?.year_number || items.length + 1,
+      sort: year?.sort_number || year?.year_number || sorted.length + 1,
       yearNumber: year.year_number,
-      parentId: year.millennium_id || year.millenniumId || null,
+      parentId: null,
       level: 'year'
     });
   });
 
-  items.sort((a, b) => {
-    if ((arrangement || '').startsWith('ascending')) {
-      return (a.sort || 0) - (b.sort || 0);
-    }
+  sorted.sort((a, b) => {
     if ((arrangement || '').startsWith('descending')) {
       return (b.sort || 0) - (a.sort || 0);
     }
@@ -424,14 +411,32 @@ export function buildCalendarYears(manifest, { arrangement, initialItemId, filte
     if (as === bs) return (a.name || '').localeCompare(b.name || '');
     return as - bs;
   });
-  items.forEach((item, idx) => { item.order = idx; });
+
+  // Years are the top level; centuries and millennia are cousin-gap texture,
+  // not parents (gaps are null links: they occupy space but do not render).
+  const items = [];
+  let prevYearNumber = null;
+  sorted.forEach(item => {
+    const y = item.yearNumber;
+    if (prevYearNumber !== null && Number.isFinite(y) && Number.isFinite(prevYearNumber)) {
+      if (millenniumKey(y) !== millenniumKey(prevYearNumber)) {
+        for (let i = 0; i < MILLENNIUM_GAP; i += 1) items.push(null);
+      } else if (centuryKey(y) !== centuryKey(prevYearNumber)) {
+        for (let i = 0; i < CENTURY_GAP; i += 1) items.push(null);
+      }
+    }
+    item.order = items.length;
+    items.push(item);
+    if (Number.isFinite(y)) prevYearNumber = y;
+  });
 
   const selectedIndex = (() => {
     if (initialItemId) {
-      const idx = items.findIndex(item => item.id === initialItemId);
+      const idx = items.findIndex(item => item && item.id === initialItemId);
       if (idx >= 0) return idx;
     }
-    return 0;
+    const firstReal = items.findIndex(item => item !== null);
+    return firstReal >= 0 ? firstReal : 0;
   })();
 
   return { items, selectedIndex, preserveOrder: true };

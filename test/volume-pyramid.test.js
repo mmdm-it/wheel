@@ -84,7 +84,7 @@ describe('createVolumePyramidConfig', () => {
     assert.deepEqual(children, [childMonth]);
     config.onClick({ item: childMonth });
     assert.equal(mode, 'month');
-    assert.deepEqual(ctx, { yearId: selectedYear.id, millenniumId: selectedYear.parentId });
+    assert.deepEqual(ctx, { yearId: selectedYear.id });
     assert.equal(primaryCalls.length, 1);
   });
 
