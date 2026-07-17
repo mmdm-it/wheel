@@ -74,7 +74,7 @@ const volumeConfigs = {
   catalog: {
     id: 'catalog',
     paths: ['/catalog'],
-    manifestPath: './data/mmdm/mmdm_catalog.json',
+    manifestPath: './data/mmdm/catalog-lite.json',
     theme: 'catalog',
     palette: {
       bg: '#868686',

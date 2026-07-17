@@ -2,6 +2,7 @@ import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookC
 import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
+import { mountFeelHud } from './view/feel-hud.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
@@ -49,6 +50,30 @@ if (_physSSd > 0 && _cssSSd > _physSSd * 1.2) {
     '--iframe-scale', (_cssSSd / _physSSd).toFixed(3));
 }
 
+
+// C.2 instrumentation: decompose boot time into phases. Read the result in
+// the feel HUD (?debug=1) or via window.__wheelBootPhases / console.table.
+function recordBootPhases(volume) {
+  try {
+    const ms = (a, b) => {
+      const ea = performance.getEntriesByName(a).pop();
+      const eb = performance.getEntriesByName(b).pop();
+      return ea && eb ? Math.round(eb.startTime - ea.startTime) : null;
+    };
+    const first = performance.getEntriesByName('wheel:html-start').pop();
+    const phases = {
+      volume,
+      htmlToBoot: first ? Math.round(performance.getEntriesByName('wheel:boot-start').pop().startTime - first.startTime) : null,
+      manifest: ms('wheel:boot-start', 'wheel:manifest-ready'),
+      chainBuild: ms('wheel:manifest-ready', 'wheel:chain-built'),
+      renderWire: ms('wheel:chain-built', 'wheel:render-done'),
+      total: first ? Math.round(performance.getEntriesByName('wheel:render-done').pop().startTime - first.startTime) : null
+    };
+    window.__wheelBootPhases = phases;
+    console.table([phases]);
+    ['wheel:boot-start', 'wheel:manifest-ready', 'wheel:chain-built', 'wheel:render-done'].forEach(n => performance.clearMarks(n));
+  } catch (err) { /* instrumentation must never break boot */ }
+}
 
 // Parsed-manifest cache: a volume visited once — or prefetched on approach —
 // boots without refetching or reparsing its manifest. Gateway RETURNS ride
@@ -483,7 +508,9 @@ function restoredGatewayReturn() {
 }
 
 async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null) {
+  performance.mark('wheel:boot-start');
   const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
+  performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
   const translationId = options.translation || null;
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
@@ -498,6 +525,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const translationName = translationsMeta?.translations?.[translationId]?.name || translationId;
 
   const chainResult = await config.buildChain(manifest, options, namesMap);
+  performance.mark('wheel:chain-built');
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
   const handlerSet = config.createHandlers({
     manifest,
@@ -644,6 +672,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     interactionsWired = true;
   }
   showVersion();
+  performance.mark('wheel:render-done');
+  recordBootPhases(volume);
+  if (options.debug) mountFeelHud();
   prefetchGatewayTargets(manifest);
 
 }
