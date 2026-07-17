@@ -148,17 +148,16 @@ export class FocusRingView {
           this.pyramidFanLinesGroup.removeAttribute('display');
         }
       }
-      // Blur and dim pyramid nodes/labels during rotation.
-      // SVG filter attribute is used instead of CSS filter for iOS WebKit compatibility.
+      // De-emphasize the pyramid during rotation. The dim (opacity 0.5 via
+      // the .is-rotating class) is GPU-cheap and stays. The SVG Gaussian
+      // blur that used to layer on top was the whole scroll bottleneck —
+      // a fixed ~150ms/frame paint at dpr:3 on the iPhone X, re-composited
+      // every frame (probe 2026-07-17). Removed; the #pyramid-rotate-blur
+      // filter def is left unused in <defs> for a possible device-gated
+      // revival. Feel decision (Howell): dim-only vs dim+blur.
       this.pyramidGroup?.classList.toggle('is-rotating', isRotating);
-      const pyramidBlurRef = isRotating ? 'url(#pyramid-rotate-blur)' : null;
       [this.pyramidNodesGroup, this.pyramidLabelsGroup].forEach(g => {
-        if (!g) return;
-        if (pyramidBlurRef) {
-          g.setAttribute('filter', pyramidBlurRef);
-        } else {
-          g.removeAttribute('filter');
-        }
+        if (g) g.removeAttribute('filter');
       });
     }
 
