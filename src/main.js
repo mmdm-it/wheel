@@ -3,6 +3,7 @@ import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildBibleBooks,
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
+import { mountProbe } from './diagnostics/probe.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
@@ -794,6 +795,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   performance.mark('wheel:render-done');
   recordBootPhases(volume);
   if (options.debug) mountFeelHud();
+  mountProbe(); // inert unless ?probe=1 — field diagnostics to the drop box
   prefetchGatewayTargets(manifest);
 
 }
