@@ -54,3 +54,28 @@ describe('at-least-one guarantee', () => {
     }
   });
 });
+
+// The render loop calls this every frame during a scrub; the result depends
+// only on geometry + childCount, so identical inputs must be a cache hit
+// (iPhone probe 2026-07-17: this was 64ms of render self-time per frame).
+describe('geometry memoization', () => {
+  const vp = { width: 800, height: 800, SSd: 800, LSd: 800 };
+  const mag = { x: 100, y: 400, radius: 48, angle: 0 };
+  const arc = { hubX: 100, hubY: 100, radius: 120 };
+
+  it('returns the identical object for identical inputs (cache hit)', () => {
+    const a = computeChildPyramidGeometry(vp, mag, arc, { childCount: 12 });
+    const b = computeChildPyramidGeometry(vp, mag, arc, { childCount: 12 });
+    assert.equal(a, b, 'a scrub through same-size pyramids must not recompute');
+  });
+
+  it('recomputes when childCount changes', () => {
+    const a = computeChildPyramidGeometry(vp, mag, arc, { childCount: 12 });
+    const b = computeChildPyramidGeometry(vp, mag, arc, { childCount: 5 });
+    assert.notEqual(a, b);
+    // and returns to a fresh compute when 12 recurs after 5 evicted it
+    const c = computeChildPyramidGeometry(vp, mag, arc, { childCount: 12 });
+    assert.notEqual(a, c, 'single-slot cache: the intervening 5 evicted the 12');
+    assert.equal(c.intersections.length, a.intersections.length, 'but the geometry is equivalent');
+  });
+});
