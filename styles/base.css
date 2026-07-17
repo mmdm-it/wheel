@@ -147,7 +147,7 @@ svg {
    Blur is applied via SVG filter attribute for iOS WebKit compatibility. */
 .child-pyramid.is-rotating .child-pyramid-node,
 .child-pyramid.is-rotating .child-pyramid-label {
-  opacity: 0.5;
+  opacity: 0.35;
   transition: opacity 80ms linear;
 }
 

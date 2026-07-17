@@ -8,8 +8,7 @@ import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
-import { getNodeSpacing, getViewportWindow } from './geometry/focus-ring-geometry.js';
-import { computeFlickLinks, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
+import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 
 const svg = document.getElementById('app');
 const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -515,20 +514,18 @@ function wireInteractions(getApp) {
       }
       lastFlickAt = isFast ? now : 0;
       lastFlickDir = isFast ? dir : 0;
-      // C.3 single flick (approved 2026-07-17): a fast swipe is ballistic —
-      // the ring glides one chain-relative unit, max(10% of chain, 2× the
-      // visible window), in the house tempo. Every chain is ten flicks long;
-      // glideTo's clamp makes a flick near the end arrive AT the end. The
-      // "fast" gate is the same 0.8 px/ms a double-flick leg uses (isFast).
+      // C.3 single flick: a fast swipe is ballistic — the ring glides
+      // FLICK_SCRUBS corner-to-corner scrubs' worth of rotation, in the house
+      // tempo. Scrub-anchored, not chain-relative, so it feels the same on any
+      // chain length (Howell 2026-07-17). glideTo clamps to the chain ends, so
+      // a flick that would overshoot a short chain lands at the end. The "fast"
+      // gate is the same 0.8 px/ms a double-flick leg uses (isFast).
       if (isFast) {
         const ch = app.choreographer;
-        const linkCount = app.nav?.items?.length || 0;
-        const spacing = getNodeSpacing(app.viewport);
-        const visibleMax = getViewportWindow(app.viewport, spacing)?.maxNodes || 0;
-        const flickLinks = computeFlickLinks(linkCount, visibleMax);
-        if (flickLinks > 0 && Number.isFinite(spacing) && spacing > 0) {
-          const target = ch.getRotation() + dir * flickLinks * spacing;
-          logTap('flick', { dir, flickLinks: Math.round(flickLinks) });
+        const flickRotation = computeFlickRotation(app.viewport, sensitivity);
+        if (flickRotation > 0) {
+          const target = ch.getRotation() + dir * flickRotation;
+          logTap('flick', { dir, flickRotation: Number(flickRotation.toFixed(3)) });
           ch.glideTo(target, FLICK_GLIDE_MS, () => app.selectNearest());
           return;
         }

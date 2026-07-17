@@ -1,30 +1,43 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { computeFlickLinks, FLICK_FRACTION, FLICK_MIN_FACTOR } from '../src/interaction/gesture-tiers.js';
+import { computeFlickRotation, FLICK_SCRUBS } from '../src/interaction/gesture-tiers.js';
 
-describe('flick tier (chain-relative travel)', () => {
-  it('is 10% of the chain on big chains — every chain is ten flicks long', () => {
-    assert.equal(computeFlickLinks(6000, 15), 600);
-    assert.equal(computeFlickLinks(1100, 15), 110);
+describe('flick tier (scrub-anchored, chain-independent)', () => {
+  const sensitivity = Math.PI / 4 / 100; // the drag sensitivity (matches main.js)
+  const vp = { width: 375, height: 640 };
+
+  const near = (a, b) => assert.ok(Math.abs(a - b) < 1e-9, `${a} ≈ ${b}`);
+
+  it('is FLICK_SCRUBS corner-to-corner scrubs of rotation', () => {
+    const oneScrub = (vp.width + vp.height) * sensitivity; // Manhattan span × sensitivity
+    near(computeFlickRotation(vp, sensitivity), FLICK_SCRUBS * oneScrub);
   });
 
-  it('floors at twice the visible window on small chains', () => {
-    // 12-month ring: 10% would be ~1 node; the floor takes over and the
-    // glide clamp turns it into "to the end" — the intended tier collapse.
-    assert.equal(computeFlickLinks(12, 15), 30);
-    assert.equal(computeFlickLinks(12, 15), FLICK_MIN_FACTOR * 15);
+  it('does NOT depend on chain length — identical viewport, identical result', () => {
+    // The function never sees the chain: that is the whole point of the fix.
+    assert.equal(computeFlickRotation(vp, sensitivity), computeFlickRotation(vp, sensitivity));
   });
 
-  it('crossover sits where fraction and floor agree', () => {
-    const visible = 15;
-    const crossover = (FLICK_MIN_FACTOR * visible) / FLICK_FRACTION; // 300 links
-    assert.equal(computeFlickLinks(crossover, visible), FLICK_MIN_FACTOR * visible);
-    assert.ok(computeFlickLinks(crossover + 100, visible) > FLICK_MIN_FACTOR * visible);
+  it('scales linearly with the scrub multiplier', () => {
+    const base = computeFlickRotation(vp, sensitivity, 4);
+    const doubled = computeFlickRotation(vp, sensitivity, 8);
+    assert.ok(Math.abs(doubled - 2 * base) < 1e-9);
+  });
+
+  it('honors the live console override (__flickScrubs)', () => {
+    const prev = globalThis.__flickScrubs;
+    globalThis.__flickScrubs = 10;
+    try {
+      const oneScrub = (vp.width + vp.height) * sensitivity;
+      near(computeFlickRotation(vp, sensitivity), 10 * oneScrub);
+    } finally {
+      if (prev === undefined) delete globalThis.__flickScrubs;
+      else globalThis.__flickScrubs = prev;
+    }
   });
 
   it('degrades safely on missing inputs', () => {
-    assert.equal(computeFlickLinks(0, 0), 0);
-    assert.equal(computeFlickLinks(NaN, undefined), 0);
-    assert.equal(computeFlickLinks(1000, NaN), 100);
+    assert.equal(computeFlickRotation(undefined, undefined), 0);
+    assert.equal(computeFlickRotation({ width: 0, height: 0 }, sensitivity), 0);
   });
 });
