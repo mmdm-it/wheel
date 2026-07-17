@@ -602,7 +602,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const namesMap = {
     books: localeNames.books || localeNames,
     sections: localeNames.sections || {},
-    testaments: localeNames.testaments || {}
+    testaments: localeNames.testaments || {},
+    bookAbbreviations: localeNames.book_abbreviations || {}
   };
 
   const translationName = translationsMeta?.translations?.[translationId]?.name || translationId;

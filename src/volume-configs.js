@@ -140,7 +140,12 @@ const volumeConfigs = {
       };
     },
     formatLabel: ({ locale }) => makeCalendarLabelFormatter({ locale }),
-    buildChain: (manifest, options) => buildCalendarYears(manifest, { arrangement: options.arrangement, initialItemId: options.initialItemId }),
+    // A calendar must see the future — and it boots on today, not on a
+    // hardcoded year that goes stale every January.
+    buildChain: (manifest, options) => buildCalendarYears(manifest, {
+      arrangement: options.arrangement,
+      initialItemId: options.initialItemId || String(new Date().getFullYear())
+    }),
     createHandlers: makeAdapterHandlers('calendar')
   },
   places: {
@@ -272,20 +277,26 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
 }
 
 function makeCalendarLabelFormatter({ locale }) {
-  const translations = { english: { bc: 'B.C.', ad: 'A.D.' } };
+  // Era rule (Howell, 2026-07-17): AD years are bare numbers everywhere —
+  // "most people refer to any AD year simply by its number". The BC suffix
+  // appears only across the line, making the era crossing legible at any
+  // scrub speed.
+  const translations = { english: { bc: 'BC' } };
   const t = key => translations[locale]?.[key] || translations.english[key] || key;
   const getYearNumber = item => {
     if (Number.isFinite(item?.yearNumber)) return item.yearNumber;
     const parsed = Number.parseInt(item?.id, 10);
     return Number.isFinite(parsed) ? parsed : null;
   };
-  return ({ item, context }) => {
+  return ({ item }) => {
     if (!item) return '';
+    // Only year items get era formatting — month ids ("2026:jan") would
+    // otherwise fool the parseInt fallback.
+    if (item.level && item.level !== 'year') return item?.name || item?.id || '';
     const yearNumber = getYearNumber(item);
     if (!Number.isFinite(yearNumber)) return item?.name || item?.id || '';
-    if (context === 'node') return String(Math.abs(yearNumber));
-    const era = yearNumber < 0 ? t('bc') : t('ad');
-    return `${Math.abs(yearNumber)} ${era}`;
+    if (yearNumber < 0) return `${Math.abs(yearNumber)} ${t('bc')}`;
+    return String(yearNumber);
   };
 }
 

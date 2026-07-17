@@ -7,37 +7,33 @@ const sampleManifest = {
     display_config: {
       volume_name: 'Calendar Sample',
       hierarchy_levels: {
-        millennium: { display_name: 'Millennium', color: '#111' },
         year: { display_name: 'Year', color: '#222' },
         month: { display_name: 'Month', color: '#333' }
       }
     },
-    millennia: {
-      m1: { id: 'm1', name: 'M1', sort_number: 2 },
-      m0: { id: 'm0', name: 'M0', sort_number: 1 }
+    month_template: {
+      jan: { id: 'jan', name: 'January', month_number: 1 },
+      feb: { id: 'feb', name: 'February', month_number: 2 }
     },
     years: {
-      y1: { id: 'y1', name: 'Year 1', millennium_id: 'm0', sort_number: 10, months: { jan: { id: 'jan', name: 'Jan', month_number: 1 } } },
-      y2: { id: 'y2', name: 'Year 2', millennium_id: 'm1', sort_number: 20, months: { feb: { id: 'feb', name: 'Feb', month_number: 2 } } }
+      '-753': { id: '-753', name: '753 BC', year_number: -753, sort_number: 1 },
+      1969: { id: '1969', name: '1969', year_number: 1969, sort_number: 2 }
     }
   }
 };
 
 describe('calendar adapter', () => {
-  it('normalizes calendar manifest into items and links', () => {
+  it('normalizes years as the top level (no millennia, months synthesized)', () => {
     const normalized = normalizeCalendar(sampleManifest);
     assert.equal(normalized.meta.volumeId, 'Calendar');
     assert.equal(normalized.items[0].id, 'volume:Calendar');
-    const millennia = normalized.items.filter(i => i.level === 'millennium');
     const years = normalized.items.filter(i => i.level === 'year');
-    const months = normalized.items.filter(i => i.level === 'month');
-    assert.equal(millennia.length, 2);
     assert.equal(years.length, 2);
-    assert.equal(months.length, 2);
-    const linkTargets = normalized.links.map(l => l.to);
-    assert.ok(linkTargets.includes('y1'));
-    assert.ok(linkTargets.includes('jan'));
+    assert.ok(years.every(y => y.parentId === 'volume:Calendar'),
+      'years hang directly off the volume root');
+    assert.equal(normalized.items.filter(i => i.level === 'millennium').length, 0);
     assert.equal(normalized.meta.leafLevel, 'month');
+    assert.deepEqual(normalized.meta.levels, ['year', 'month']);
     assert.equal(normalized.meta.colors.month, '#333');
   });
 
@@ -45,7 +41,7 @@ describe('calendar adapter', () => {
     const normalized = normalizeCalendar(sampleManifest);
     const spec = calendarAdapter.layoutSpec(normalized, { width: 800, height: 600 });
     assert.ok(Array.isArray(spec.rings));
-    assert.equal(spec.rings.length, 3);
+    assert.equal(spec.rings.length, 2);
     const pyramid = spec.pyramid;
     assert.ok(pyramid);
     assert.ok(pyramid.capacity);
@@ -53,11 +49,14 @@ describe('calendar adapter', () => {
   });
 
   it('emits detail payloads for year and month', () => {
-    const monthDetail = calendarAdapter.detailFor({ id: 'jan', level: 'month' }, sampleManifest);
+    const monthDetail = calendarAdapter.detailFor({ id: '1969:jan', level: 'month' }, sampleManifest);
     assert.equal(monthDetail.type, 'card');
-    assert.ok(monthDetail.title.includes('Jan'));
-    const yearDetail = calendarAdapter.detailFor({ id: 'y1', level: 'year', meta: { yearNumber: 1 } }, sampleManifest);
-    assert.equal(yearDetail.type, 'card');
-    assert.ok(yearDetail.title.includes('1'));
+    assert.ok(monthDetail.title.includes('January'));
+    assert.ok(monthDetail.body.includes('1969'));
+    const adDetail = calendarAdapter.detailFor({ id: '1969', level: 'year', meta: { yearNumber: 1969 } }, sampleManifest);
+    assert.equal(adDetail.type, 'card');
+    assert.equal(adDetail.title, '1969', 'AD years are bare numbers — no suffix');
+    const bcDetail = calendarAdapter.detailFor({ id: '-753', level: 'year', meta: { yearNumber: -753 } }, sampleManifest);
+    assert.equal(bcDetail.title, '753 BC', 'BC years carry the BC suffix');
   });
 });

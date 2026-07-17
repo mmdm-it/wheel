@@ -118,10 +118,7 @@ export function buildCalendarPyramid({
     const selectedIdx = months.findIndex(m => m.id === instr.item.id);
     if (typeof setCalendarMode === 'function') setCalendarMode('month');
     if (typeof setCalendarMonthContext === 'function') {
-      setCalendarMonthContext({
-        yearId: year?.id || null,
-        millenniumId: year?.parentId || year?.parent_id || null
-      });
+      setCalendarMonthContext({ yearId: year?.id || null });
     }
     if (app?.setParentButtons) {
       app.setParentButtons({ showOuter: true });
@@ -158,7 +155,13 @@ export function buildBiblePyramid({
     }
     if (mode === 'testament') {
       if (typeof getBibleBooksForTestament !== 'function') return [];
-      return getBibleBooksForTestament(selected?.id).items.filter(Boolean);
+      // Pyramid-only abbreviations (PG ebook #825): full book names are too
+      // long for pyramid nodes. The ring and magnifier keep the full names —
+      // this rename never travels past the pyramid (onClick matches by id).
+      const abbrevs = namesMap?.bookAbbreviations || null;
+      return getBibleBooksForTestament(selected?.id).items.filter(Boolean).map(item => (
+        abbrevs?.[item.id] ? { ...item, name: abbrevs[item.id] } : item
+      ));
     }
     if (mode === 'book') {
       return getBibleChapters(manifest, selected, namesMap, 'book');

@@ -4,10 +4,11 @@
   "patternProperties": {
     "^[A-Za-z0-9_]+$": {
       "type": "object",
-      "required": ["display_config", "millennia"],
+      "required": ["display_config", "years"],
       "properties": {
         "display_config": { "type": "object" },
-        "millennia": { "type": "object" }
+        "month_template": { "type": "object" },
+        "years": { "type": "object" }
       },
       "additionalProperties": true
     }
