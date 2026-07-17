@@ -32,7 +32,7 @@ describe('calendar adapter', () => {
     assert.ok(years.every(y => y.parentId === 'volume:Calendar'),
       'years hang directly off the volume root');
     assert.equal(normalized.items.filter(i => i.level === 'millennium').length, 0);
-    assert.equal(normalized.meta.leafLevel, 'month');
+    assert.equal(normalized.meta.leafLevel, null, 'no detail sector until days exist');
     assert.deepEqual(normalized.meta.levels, ['year', 'month']);
     assert.equal(normalized.meta.colors.month, '#333');
   });

@@ -55,14 +55,14 @@ describe('calendar year chain (gap doctrine)', () => {
   });
 
   it('inserts a small gap at century crossings', () => {
-    assert.equal(gapRunBefore('1901'), 1, '1900 → 1901 is a century crossing');
+    assert.equal(gapRunBefore('1901'), 2, '1900 → 1901 is a century crossing');
     assert.equal(gapRunBefore('1900'), 0, 'no gap inside a century');
   });
 
   it('inserts a larger gap at millennium crossings, including BC/AD', () => {
-    assert.equal(gapRunBefore('2001'), 3, '2000 → 2001 is a millennium crossing');
-    assert.equal(gapRunBefore('1'), 3, '1 BC → 1 AD crosses the era line');
-    assert.equal(gapRunBefore('-1000'), 3, 'BC millennium crossings gap too');
+    assert.equal(gapRunBefore('2001'), 4, '2000 → 2001 is a millennium crossing');
+    assert.equal(gapRunBefore('1'), 4, '1 BC → 1 AD crosses the era line');
+    assert.equal(gapRunBefore('-1000'), 4, 'BC millennium crossings gap too');
   });
 
   it('keeps both chain ends real (sprocket doctrine)', () => {

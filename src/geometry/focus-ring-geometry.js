@@ -57,6 +57,26 @@ export function getViewportWindow(viewport, nodeSpacing) {
   return { startAngle, endAngle, arcLength, maxNodes };
 }
 
+// Long-chain fast path: when every non-null item's order equals its array
+// index (true for all chain builders — gaps hold their slots), the visible
+// index range is pure arithmetic and each frame touches ~21 links instead
+// of the whole chain. Validated once per array; misaligned chains fall back
+// to the full scan. Without this, an 86k-link months chain pays an O(N)
+// sweep per frame.
+const indexAlignedChains = new WeakMap();
+
+function isIndexAligned(allItems) {
+  let aligned = indexAlignedChains.get(allItems);
+  if (aligned !== undefined) return aligned;
+  aligned = true;
+  for (let i = 0; i < allItems.length; i += 1) {
+    const item = allItems[i];
+    if (item !== null && Number.isFinite(item?.order) && item.order !== i) { aligned = false; break; }
+  }
+  indexAlignedChains.set(allItems, aligned);
+  return aligned;
+}
+
 export function calculateNodePositions(allItems, viewport, rotationOffset = 0, nodeRadius = 10, nodeSpacing) {
   if (!Array.isArray(allItems)) {
     throw new Error('calculateNodePositions: allItems must be an array');
@@ -66,8 +86,8 @@ export function calculateNodePositions(allItems, viewport, rotationOffset = 0, n
   const windowInfo = getViewportWindow(viewport, spacing);
   const positions = [];
 
-  allItems.forEach((item, index) => {
-    if (item === null) return; // gap occupies space but does not render
+  const pushIfVisible = (item, index) => {
+    if (item === null || item === undefined) return; // gap occupies space but does not render
     const order = Number.isFinite(item.order) ? item.order : index;
     const baseAngle = getBaseAngleForOrder(order, viewport, spacing); // reverse sort: lower order → larger angle
     const rotatedAngle = baseAngle + rotationOffset;
@@ -82,8 +102,19 @@ export function calculateNodePositions(allItems, viewport, rotationOffset = 0, n
       y: arc.hubY + arc.radius * Math.sin(rotatedAngle),
       radius: nodeRadius
     });
-  });
+  };
 
+  if (isIndexAligned(allItems)) {
+    // Invert baseAngle(order) = magnifierAngle - (order+1)·spacing for the
+    // window edges; ±1 of margin absorbs rounding at the boundaries.
+    const magnifierAngle = getMagnifierAngle(viewport);
+    const lo = Math.max(0, Math.floor((magnifierAngle + rotationOffset - windowInfo.endAngle) / spacing - 1) - 1);
+    const hi = Math.min(allItems.length - 1, Math.ceil((magnifierAngle + rotationOffset - windowInfo.startAngle) / spacing - 1) + 1);
+    for (let i = lo; i <= hi; i += 1) pushIfVisible(allItems[i], i);
+    return positions;
+  }
+
+  allItems.forEach(pushIfVisible);
   return positions;
 }
 

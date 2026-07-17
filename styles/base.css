@@ -100,6 +100,13 @@ svg {
   pointer-events: none;
 }
 
+/* Calendar parent-button labels arrive display-ready ("MMdM CATALOGO",
+   "753 BC") — render them verbatim; the lowercase d in MMdM must survive.
+   Other volumes' parent labels still rely on the uppercase transform. */
+:root[data-theme="calendar"] .focus-ring-parent-label {
+  text-transform: none;
+}
+
 .focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
   fill: none;
   stroke: var(--color-magnifier-stroke, #000);

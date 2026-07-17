@@ -100,12 +100,15 @@ export function buildCatalogPyramid({
 export function buildCalendarPyramid({
   manifest,
   getCalendarMonths,
+  getCalendarMonthChain,
   getApp,
   calendarModeRef,
   setCalendarMode,
   setCalendarMonthContext
 } = {}) {
   if (!manifest || typeof getCalendarMonths !== 'function') return null;
+  // The pyramid previews the selected year's own 12 months; clicking one
+  // lands on that month INSIDE the continuous months cousin chain.
   const getChildren = ({ selected }) => getCalendarMonths(manifest, selected, calendarModeRef?.());
   const onClick = instr => {
     if (!instr?.item) return;
@@ -113,9 +116,17 @@ export function buildCalendarPyramid({
     const app = typeof getApp === 'function' ? getApp() : null;
     const year = app?.nav?.getCurrent?.();
     if (!year) return;
-    const months = getCalendarMonths(manifest, year, calendarModeRef?.());
+    let months;
+    let selectedIdx;
+    if (typeof getCalendarMonthChain === 'function') {
+      const chain = getCalendarMonthChain(instr.item.id);
+      months = chain?.items || [];
+      selectedIdx = chain?.selectedIndex ?? 0;
+    } else {
+      months = getCalendarMonths(manifest, year, calendarModeRef?.());
+      selectedIdx = months.findIndex(m => m.id === instr.item.id);
+    }
     if (!months.length) return;
-    const selectedIdx = months.findIndex(m => m.id === instr.item.id);
     if (typeof setCalendarMode === 'function') setCalendarMode('month');
     if (typeof setCalendarMonthContext === 'function') {
       setCalendarMonthContext({ yearId: year?.id || null });

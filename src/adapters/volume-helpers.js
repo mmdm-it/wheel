@@ -379,13 +379,52 @@ export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
   return { items, selectedIndex, preserveOrder: true };
 }
 
-// Century/millennium grouping keys. Historical numbering: no year zero, so
-// centuries run 1..100, 101..200 (and -100..-1); the era crossing -1 -> 1 is
-// itself a millennium boundary and gets the large gap.
+// The cousin-gap grammar (Howell rulings 2026-07-17). Whatever level rides
+// the focus ring, each ancestor boundary above it is a cousin rank, and a
+// crossing inserts empty chain links — gaps occupy node slots and rotate
+// with the chain (the sprocket has empty links, not stretched spacing).
+// Rank ladder: 1st/2nd/3rd/4th cousins -> 2/4/6/8 links. Years ring:
+// century = cousins, millennium = second cousins. Months ring adds year as
+// cousins (century/millennium shift up a rank), days will add month.
+export const COUSIN_GAP_LINKS = [2, 4, 6, 8];
+
+// Grouping keys. Historical numbering: no year zero, so centuries run
+// 1..100, 101..200 (and -100..-1); the era crossing -1 -> 1 is itself a
+// millennium boundary and gets that rank's gap.
 const centuryKey = y => (y > 0 ? Math.ceil(y / 100) : -Math.ceil(-y / 100));
 const millenniumKey = y => (y > 0 ? Math.ceil(y / 1000) : -Math.ceil(-y / 1000));
-const CENTURY_GAP = 1;    // small gap: one empty chain link
-const MILLENNIUM_GAP = 3; // larger gap: three
+
+// Weave sorted items into a chain with cousin gaps. rankKeys: one key
+// function per cousin rank, nearest first (e.g. [year, century, millennium]
+// for a months ring). The HIGHEST crossed rank wins the gap size.
+export function weaveCousinChain(sorted, rankKeys) {
+  const items = [];
+  let prev = null;
+  sorted.forEach(item => {
+    if (prev !== null) {
+      let gap = 0;
+      rankKeys.forEach((keyOf, rank) => {
+        const a = keyOf(prev);
+        const b = keyOf(item);
+        if (a !== null && b !== null && a !== b) gap = COUSIN_GAP_LINKS[rank] || 0;
+      });
+      for (let i = 0; i < gap; i += 1) items.push(null);
+    }
+    item.order = items.length;
+    items.push(item);
+    prev = item;
+  });
+  return items;
+}
+
+function selectIndexIn(items, initialItemId) {
+  if (initialItemId) {
+    const idx = items.findIndex(item => item && item.id === initialItemId);
+    if (idx >= 0) return idx;
+  }
+  const firstReal = items.findIndex(item => item !== null);
+  return firstReal >= 0 ? firstReal : 0;
+}
 
 export function buildCalendarYears(manifest, { arrangement, initialItemId } = {}) {
   const years = manifest?.Calendar?.years;
@@ -412,34 +451,57 @@ export function buildCalendarYears(manifest, { arrangement, initialItemId } = {}
     return as - bs;
   });
 
-  // Years are the top level; centuries and millennia are cousin-gap texture,
-  // not parents (gaps are null links: they occupy space but do not render).
-  const items = [];
-  let prevYearNumber = null;
-  sorted.forEach(item => {
-    const y = item.yearNumber;
-    if (prevYearNumber !== null && Number.isFinite(y) && Number.isFinite(prevYearNumber)) {
-      if (millenniumKey(y) !== millenniumKey(prevYearNumber)) {
-        for (let i = 0; i < MILLENNIUM_GAP; i += 1) items.push(null);
-      } else if (centuryKey(y) !== centuryKey(prevYearNumber)) {
-        for (let i = 0; i < CENTURY_GAP; i += 1) items.push(null);
-      }
-    }
-    item.order = items.length;
-    items.push(item);
-    if (Number.isFinite(y)) prevYearNumber = y;
+  // Years are the top level; centuries and millennia are cousin texture.
+  const yearKey = item => (Number.isFinite(item.yearNumber) ? item.yearNumber : null);
+  const items = weaveCousinChain(sorted, [
+    item => { const y = yearKey(item); return y === null ? null : centuryKey(y); },
+    item => { const y = yearKey(item); return y === null ? null : millenniumKey(y); }
+  ]);
+
+  return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
+}
+
+// The months cousin chain: EVERY year's months on one ring, year crossings
+// as cousins, centuries as second cousins, millennia as third — the
+// hierarchy is one timeline at a deeper zoom, not a place you climb out of.
+// ~86k links for 6000 years; built on entry to months mode, not at boot.
+export function buildCalendarMonthsCousinChain(manifest, { initialItemId } = {}) {
+  const cal = manifest?.Calendar;
+  const years = cal?.years;
+  if (!years) return { items: [], selectedIndex: 0, preserveOrder: false };
+  const template = cal?.month_template || {};
+  const monthEntries = Object.entries(template)
+    .sort((a, b) => (a[1]?.month_number || 0) - (b[1]?.month_number || 0));
+  if (!monthEntries.length) return { items: [], selectedIndex: 0, preserveOrder: false };
+
+  const sortedYears = Object.values(years)
+    .filter(y => Number.isFinite(y?.year_number))
+    .sort((a, b) => (a.sort_number || 0) - (b.sort_number || 0));
+
+  const sorted = [];
+  sortedYears.forEach(year => {
+    const months = year.months
+      ? Object.entries(year.months).sort((a, b) => (a[1]?.month_number || 0) - (b[1]?.month_number || 0))
+      : monthEntries;
+    months.forEach(([monthKey, monthVal]) => {
+      sorted.push({
+        id: `${year.id}:${monthVal?.id || monthKey}`,
+        name: monthVal?.name || monthKey,
+        parentId: year.id,
+        yearNumber: year.year_number,
+        monthNumber: monthVal?.month_number || 0,
+        level: 'month'
+      });
+    });
   });
 
-  const selectedIndex = (() => {
-    if (initialItemId) {
-      const idx = items.findIndex(item => item && item.id === initialItemId);
-      if (idx >= 0) return idx;
-    }
-    const firstReal = items.findIndex(item => item !== null);
-    return firstReal >= 0 ? firstReal : 0;
-  })();
+  const items = weaveCousinChain(sorted, [
+    item => (Number.isFinite(item.yearNumber) ? item.yearNumber : null),
+    item => (Number.isFinite(item.yearNumber) ? centuryKey(item.yearNumber) : null),
+    item => (Number.isFinite(item.yearNumber) ? millenniumKey(item.yearNumber) : null)
+  ]);
 
-  return { items, selectedIndex, preserveOrder: true };
+  return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
 }
 
 export function buildBibleSections(manifest, { testamentId, sectionId, namesMap } = {}) {

@@ -31,38 +31,51 @@ function stubApp(state) {
 }
 
 describe('gateway round trip (adapter contract)', () => {
-  it('calendar: OUT at the year ring (the top) returns through the gateway', () => {
+  it('calendar: the year ring names the gateway-return destination and OUT goes through the gateway', () => {
     let returned = 0;
     const handlers = createCalendarHandlers({
       manifest: calendarManifest,
       options: {},
       onGatewayReturn: () => { returned += 1; return true; },
-      gatewayLabel: 'GREGORIO XIII'
+      gatewayLabel: 'GREGORIO XIII',
+      gatewayReturnLabel: 'MMdM CATALOGO'
     });
     const state = {};
     const app = stubApp(state);
-    // month ring → OUT → year ring (outer button stays: the gateway is above)
+    assert.equal(handlers.getParentLabel({ id: 'y1', level: 'year' }), 'MMdM CATALOGO',
+      'year ring parent button names the volume OUT returns to');
     handlers.childrenHandler({ selected: { id: 'y1', level: 'year' }, app });
+    assert.equal(state.parentButtons?.showOuter, true, 'months mode shows the parent button');
     const up = handlers.parentHandler({ app });
     assert.equal(up, true, 'month → year OUT should be handled');
     assert.equal(state.parentButtons?.showOuter, true,
-      'outer parent button must show at the year ring when a gateway label exists');
-    // year ring (top) → OUT → back through the gateway
+      'through a gateway the year ring keeps its parent button');
     const out = handlers.parentHandler({ app });
     assert.equal(out, true, 'top-level OUT must be handled by the gateway return');
     assert.equal(returned, 1, 'onGatewayReturn must be invoked exactly once');
   });
 
-  it('calendar: without a gateway, the year ring is the top (no OUT)', () => {
+  it('calendar: standalone, the year ring has no parent button and top-level OUT is unhandled', () => {
     const handlers = createCalendarHandlers({ manifest: calendarManifest, options: {} });
     const state = {};
     const app = stubApp(state);
+    assert.equal(handlers.getParentLabel({ id: 'y1', level: 'year' }), '',
+      'nothing above the year ring without a gateway');
     handlers.childrenHandler({ selected: { id: 'y1', level: 'year' }, app });
     handlers.parentHandler({ app });
-    assert.equal(state.parentButtons?.showOuter, false,
-      'no gateway label → no outer button at the top ring');
+    assert.equal(state.parentButtons?.showOuter, false);
     const out = handlers.parentHandler({ app });
     assert.equal(out, false, 'top-level OUT unhandled when there is no gateway');
+  });
+
+  it('calendar: parent button names the magnified month\'s year, live', () => {
+    const handlers = createCalendarHandlers({ manifest: calendarManifest, options: {} });
+    const app = stubApp({});
+    handlers.childrenHandler({ selected: { id: 'y1', level: 'year' }, app });
+    assert.equal(handlers.getParentLabel({ id: '1969:jul', parentId: '1969', yearNumber: 1969, level: 'month' }), '1969');
+    assert.equal(handlers.getParentLabel({ id: '-753:jan', parentId: '-753', yearNumber: -753, level: 'month' }), '753 BC',
+      'era rule holds in the parent button');
+    assert.equal(handlers.getParentLabel(null), '', 'a gap in the magnifier blanks the label');
   });
 
   it('bible: the root ring routes OUT through the gateway', () => {
