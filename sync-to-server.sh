@@ -3,7 +3,7 @@
 # Sync wheel (v3) to catalog, bible, calendar, and places deployments
 # Catalog deploys to mmdm.it root (public_html/mmdm/)
 # Other volumes deploy to wheel-v3 subdirectories
-# Usage: ./sync-to-server.sh [catalog|bible|calendar|places|all]
+# Usage: ./sync-to-server.sh [catalog|bible|calendar|places|staging|all]
 #
 # Note: this script was temporarily locked on 2026-02-26 while a black-screen
 # regression (commit 52cb891) was diagnosed and reverted. Unlocked at v3.8.41.
@@ -67,6 +67,9 @@ sync_deployment() {
             data_excludes=(--exclude='data/mmdm/' --exclude='data/gutenberg/' --exclude='data/places/') ;;
         places)
             data_excludes=(--exclude='data/mmdm/' --exclude='data/gutenberg/' --exclude='data/calendar/') ;;
+        staging)
+            # Full tree, every volume's data: the Phase C server-feel test bed.
+            data_excludes=() ;;
     esac
 
     # Sync files (excluding git, node_modules, docs, etc.)
@@ -119,6 +122,9 @@ case $DEPLOYMENT in
     places)
         sync_deployment "places"
         ;;
+    staging)
+        sync_deployment "staging"
+        ;;
     all)
         sync_deployment "catalog"
         echo ""
@@ -137,7 +143,7 @@ case $DEPLOYMENT in
     *)
         echo -e "${RED}❌ Invalid deployment: $DEPLOYMENT${NC}"
         echo ""
-        echo "Usage: ./sync-to-server.sh [catalog|bible|calendar|places|all]"
+        echo "Usage: ./sync-to-server.sh [catalog|bible|calendar|places|staging|all]"
         echo ""
         echo "Examples:"
         echo "  ./sync-to-server.sh            # Sync all (default)"

@@ -204,6 +204,25 @@ function getManufacturer(manifest, manufacturerId) {
   return null;
 }
 
+// C.2 catalog split: graft the separately-fetched prose map back onto the
+// lite manifest. detailFor reads model.data at render time, so enrichment
+// is invisible to every downstream path; a detail opened before the prose
+// arrives simply lacks its description until the post-boot re-render.
+export function enrichCatalogProse(manifest, proseMap) {
+  if (!proseMap || typeof proseMap !== 'object') return 0;
+  let attached = 0;
+  (function walk(node) {
+    if (Array.isArray(node)) { node.forEach(walk); return; }
+    if (!node || typeof node !== 'object') return;
+    if (node.engine_model !== undefined && node.id && !node.data && proseMap[node.id]) {
+      node.data = proseMap[node.id];
+      attached++;
+    }
+    Object.values(node).forEach(walk);
+  })(manifest);
+  return attached;
+}
+
 export function detailFor(selected, manifest) {
   if (!selected) return null;
   const id = selected.id || '';
@@ -287,8 +306,26 @@ export const catalogAdapter = {
   normalize,
   layoutSpec,
   detailFor,
-  createHandlers: ({ chainMeta } = {}) => {
+  createHandlers: ({ chainMeta, manifest } = {}) => {
     let catalogMode = 'manufacturer';
+
+    // C.2 catalog split: fetch the prose map after boot and graft it onto
+    // the lite manifest, then refresh whatever detail is showing so an
+    // early tap still gets its description.
+    const onBoot = ({ app, renderDetail }) => {
+      if (!manifest) return;
+      fetch('./data/mmdm/catalog-prose.json')
+        .then(r => (r.ok ? r.json() : null))
+        .then(proseMap => {
+          if (!proseMap) return;
+          const attached = enrichCatalogProse(manifest, proseMap);
+          if (attached && typeof renderDetail === 'function') {
+            const current = app?.nav?.getCurrent?.();
+            if (current) renderDetail(current);
+          }
+        })
+        .catch(() => { /* prose is an enhancement; boot never depends on it */ });
+    };
     const navStack = []; // stack of snapshots for multi-level IN/OUT
     const parentHandler = ({ app }) => {
       if (catalogMode === 'manufacturer') return true; // already at top level — swallow click
@@ -339,6 +376,7 @@ export const catalogAdapter = {
     };
 
     return {
+      onBoot,
       parentHandler,
       childrenHandler: () => false,
       getParentLabel,
