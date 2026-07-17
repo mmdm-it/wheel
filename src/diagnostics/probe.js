@@ -81,6 +81,9 @@ function buildReport(reason) {
     boot: window.__wheelBootPhases || null,
     resources: resourceAutopsy(),
     longFrames: journal.slice(),
+    // Render self-time since the last report: worst frame's JS cost + how
+    // many exceeded budget. A long frame with small render = browser paint.
+    render: window.__wheelRenderStats ? { ...window.__wheelRenderStats } : null,
     gesture: window.__wheelGestureTrace || null
   };
 }
@@ -98,6 +101,8 @@ function flush(reason) {
     }
   } catch (err) { /* diagnostics must never break the instrument */ }
   journal = [];
+  // Reset render stats so each report reflects only its own window.
+  if (window.__wheelRenderStats) window.__wheelRenderStats = { worst: 0, over: 0, n: 0 };
 }
 
 function mountSendButton() {

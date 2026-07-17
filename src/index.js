@@ -880,6 +880,15 @@ export function createApp({
       const durationMs = Number(elapsed.toFixed(2));
       const overBudget = durationMs > perfRenderBudget;
       emit({ type: 'perf:render', durationMs, budgetMs: perfRenderBudget, overBudget });
+      // Probe hook: rolling worst render self-time. If a frame is long but
+      // this stays small, the cost is browser paint/composite, not our JS —
+      // the discriminator the long-frame journal alone can't give.
+      if (typeof window !== 'undefined') {
+        const s = window.__wheelRenderStats || (window.__wheelRenderStats = { worst: 0, over: 0, n: 0 });
+        s.n += 1;
+        if (overBudget) s.over += 1;
+        if (durationMs > s.worst) s.worst = durationMs;
+      }
     }
 
     if (!isRotating && selected) {
@@ -1074,15 +1083,17 @@ export function createApp({
     let closestIdx = nav.getCurrentIndex();
     let closestDiff = Infinity;
     let closestAngle = null;
-    nav.items.forEach((item, idx) => {
-      if (item === null) return;
-      const baseAngle = getBaseAngleForOrder(item.order, vp, nodeSpacing);
-      const rotated = baseAngle + rotation;
-      const diff = Math.abs(rotated - targetAngle);
+    // The node nearest the magnifier is always on-screen, so only the visible
+    // window (~21 nodes) can win — never scan the whole chain (that walk was
+    // 84k trig ops per finger-lift on the months timeline, iPhone probe
+    // 2026-07-17). calculateNodePositions is windowed and gap-aware.
+    const visibleNodes = calculateNodePositions(nav.items, vp, rotation, nodeRadius, nodeSpacing);
+    visibleNodes.forEach(node => {
+      const diff = Math.abs(node.angle - targetAngle);
       if (diff < closestDiff) {
         closestDiff = diff;
-        closestIdx = idx;
-        closestAngle = rotated;
+        closestIdx = node.index;
+        closestAngle = node.angle;
       }
     });
     nav.selectIndex(closestIdx);
