@@ -144,7 +144,36 @@ function intersectSegments(a, b) {
   return null;
 }
 
+// The spiral + fan-line intersection trace below is heavy, and the render
+// loop calls it every frame during a scrub. But its output depends ONLY on
+// the geometry inputs and childCount — NOT on rotation or which children map
+// onto the slots. So during a scrub through same-size pyramids (e.g. a chain
+// whose every node has 12 children) it recomputes an identical result 60x/sec.
+// Memoize on the inputs that actually affect the output; a scrub becomes a
+// cache hit every frame (iPhone probe 2026-07-17: render self-time 64ms →
+// this was the bulk of it). The result is read-only at the call site.
+let _geoCacheKey = null;
+let _geoCacheValue = null;
+
+function geoKey(viewport, magnifier, arcParams, options) {
+  const b = options.logoBounds;
+  const bSig = b ? `${b.x},${b.y},${b.width},${b.height}` : '_';
+  const knobs = (typeof globalThis !== 'undefined')
+    ? `${globalThis.__arcMarginMul ?? '_'},${globalThis.__fanAngleDeg ?? '_'}`
+    : '_';
+  return [
+    viewport.width, viewport.height, viewport.SSd, viewport.LSd,
+    magnifier.cx ?? magnifier.x, magnifier.cy ?? magnifier.y,
+    arcParams.radius, arcParams.hubX, arcParams.hubY,
+    options.childCount ?? 0, options.hasDimensionButton ?? true,
+    options.angleDeltaDeg ?? '_', bSig, knobs
+  ].join('|');
+}
+
 export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcParams = {}, options = {}) {
+  const cacheKey = geoKey(viewport, magnifier, arcParams, options);
+  if (cacheKey === _geoCacheKey) return _geoCacheValue;
+
   const width = viewport.width ?? 0;
   const height = viewport.height ?? 0;
   const SSd = viewport.SSd ?? Math.min(width, height);
@@ -357,11 +386,14 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     }
   }
 
-  return {
+  const result = {
     cpua,
     fanLines,
     spiral: { path: spiralPath, points },
     intersections,
     magnifierOrigin: { x: magnifierX, y: magnifierY }
   };
+  _geoCacheKey = cacheKey;
+  _geoCacheValue = result;
+  return result;
 }
