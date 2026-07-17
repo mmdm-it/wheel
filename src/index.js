@@ -239,13 +239,32 @@ export function createApp({
     });
   };
 
+  // Bounds depend only on the chain's first/last real links — memoized per
+  // array identity so the render loop never pays an O(N) filter per frame
+  // (at 86k links that sweep alone would eat the frame budget).
+  let boundsCacheKey = null;
+  let boundsCacheValue = null;
   const computeBounds = visibleItems => {
-    const nonNull = visibleItems.filter(item => item !== null);
-    if (!nonNull.length) return { minRotation: 0, maxRotation: 0 };
-    const firstOrder = Number.isFinite(nonNull[0].order) ? nonNull[0].order : visibleItems.indexOf(nonNull[0]);
-    const lastOrder = Number.isFinite(nonNull[nonNull.length - 1].order)
-      ? nonNull[nonNull.length - 1].order
-      : visibleItems.lastIndexOf(nonNull[nonNull.length - 1]);
+    if (visibleItems === boundsCacheKey && boundsCacheValue) return boundsCacheValue;
+    const bounds = computeBoundsUncached(visibleItems);
+    boundsCacheKey = visibleItems;
+    boundsCacheValue = bounds;
+    return bounds;
+  };
+  const computeBoundsUncached = visibleItems => {
+    let first = null;
+    let firstIdx = -1;
+    let last = null;
+    let lastIdx = -1;
+    for (let i = 0; i < visibleItems.length; i += 1) {
+      if (visibleItems[i] !== null) { first = visibleItems[i]; firstIdx = i; break; }
+    }
+    for (let i = visibleItems.length - 1; i >= 0; i -= 1) {
+      if (visibleItems[i] !== null) { last = visibleItems[i]; lastIdx = i; break; }
+    }
+    if (!first) return { minRotation: 0, maxRotation: 0 };
+    const firstOrder = Number.isFinite(first.order) ? first.order : firstIdx;
+    const lastOrder = Number.isFinite(last.order) ? last.order : lastIdx;
     const firstAngle = getBaseAngleForOrder(firstOrder, vp, nodeSpacing);
     const lastAngle = getBaseAngleForOrder(lastOrder, vp, nodeSpacing);
     // Allow 3 node-spacings of overrun past each end of the chain
@@ -753,6 +772,11 @@ export function createApp({
     // the child pyramid refreshes live rather than waiting for a committed snap.
     const pyramidSelected = (() => {
       if (!isRotating || nodes.length === 0) return selected;
+      // A cousin gap under the magnifier means no node is selected — the
+      // pyramid must empty rather than borrow the nearest neighbor's
+      // children. The magnified slot is arithmetic: order = rotation/spacing - 1.
+      const nearestSlot = Math.round(rotation / nodeSpacing - 1);
+      if (nearestSlot >= 0 && nearestSlot < visible.length && visible[nearestSlot] === null) return null;
       let closest = null;
       let closestDist = Infinity;
       for (const node of nodes) {

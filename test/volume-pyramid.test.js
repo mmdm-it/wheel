@@ -7,6 +7,7 @@ import {
   buildBiblePyramid,
   buildPlacesPyramid
 } from '../src/pyramid/volume-pyramid.js';
+import { createVolumeLayoutSpec } from '../src/adapters/volume-layout.js';
 
 describe('createVolumePyramidConfig', () => {
   it('returns null when no builder is provided', () => {
@@ -86,6 +87,44 @@ describe('createVolumePyramidConfig', () => {
     assert.equal(mode, 'month');
     assert.deepEqual(ctx, { yearId: selectedYear.id });
     assert.equal(primaryCalls.length, 1);
+  });
+
+  it('calendar pyramid click lands in the months COUSIN chain when the binding is provided — through the real layout-spec plumbing', () => {
+    // Regression: getCalendarMonthChain was once dropped by the explicit
+    // whitelists in main.js/volume-layout.js, silently reverting months
+    // mode to 12 siblings. This goes through createVolumeLayoutSpec so a
+    // future whitelist drop fails here.
+    const manifest = { Calendar: { years: {} } };
+    const selectedYear = { id: '1969', parentId: null };
+    const clickedMonth = { id: '1969:jul' };
+    const chainItems = [null, { id: '1969:jun' }, { id: '1969:jul' }, { id: '1969:aug' }, null];
+    const primaryCalls = [];
+    const app = {
+      nav: { getCurrent: () => selectedYear },
+      setPrimaryItems: (...args) => primaryCalls.push(args),
+      setParentButtons: () => {}
+    };
+    let mode = 'year';
+    const spec = createVolumeLayoutSpec({
+      volume: 'calendar',
+      pyramidBuilder: buildCalendarPyramid,
+      manifest,
+      getCalendarMonths: () => [clickedMonth],
+      getCalendarMonthChain: monthId => ({
+        items: chainItems,
+        selectedIndex: chainItems.findIndex(i => i && i.id === monthId)
+      }),
+      getApp: () => app,
+      calendarModeRef: () => mode,
+      setCalendarMode: next => { mode = next; },
+      setCalendarMonthContext: () => {}
+    });
+    spec.pyramid.onClick({ item: clickedMonth });
+    assert.equal(mode, 'month');
+    assert.equal(primaryCalls.length, 1);
+    const [items, selectedIdx] = primaryCalls[0];
+    assert.equal(items, chainItems, 'ring receives the cousin chain, not the 12 siblings');
+    assert.equal(selectedIdx, 2, 'clicked month selected at its global chain index');
   });
 
   it('builds bible pyramid config and updates mode/context', () => {

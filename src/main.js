@@ -7,6 +7,8 @@ import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
+import { getNodeSpacing, getViewportWindow } from './geometry/focus-ring-geometry.js';
+import { computeFlickLinks, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 
 const svg = document.getElementById('app');
 const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -229,10 +231,15 @@ function wireInteractions(getApp) {
   let suppressNativeClickUntil = 0;
   // C.3 double-flick (see docs/FEEL.md) — additive; drag feel untouched.
   const DOUBLE_FLICK_WINDOW_MS = 400;   // max gap between two fast swipes
-  const DOUBLE_FLICK_MIN_VELOCITY = 0.8; // px/ms peak to count as "fast"
+  const DOUBLE_FLICK_MIN_VELOCITY = 0.8; // px/ms sustained at release = "fast"
   const GLIDE_TO_LIMIT_MS = 600;         // one tempo (= detail sector)
-  let gestureNetDelta = 0;      // signed rotation applied by current drag
-  let gesturePeakVelocity = 0;  // fastest sample within current drag
+  // "Fast" is judged by what the finger was doing AT RELEASE: distance over
+  // the trailing window, not the peak of any single event sample. Touch
+  // events arrive in bursts with ~1ms deltas, so per-sample velocity spikes
+  // past any threshold even mid-slow-scrub — that noise once made released
+  // scrubs take off on their own (2026-07-17 flick regression).
+  const VELOCITY_WINDOW_MS = 100;
+  let recentMoves = [];         // {t, dist, delta} samples inside the window
   let gestureTravelPx = 0;      // cumulative finger travel this drag
   let pointerCaptured = false;  // capture transferred to the svg root
   const trace = { downTarget: '', moves: 0, endedBy: '', travel: 0, captured: false, cancels: 0 };
@@ -245,11 +252,11 @@ function wireInteractions(getApp) {
   let lastFlickAt = 0;          // pointerup time of the last fast swipe
   let lastFlickDir = 0;         // its direction (sign of net delta)
   const sensitivity = Math.PI / 4 / 100; // 100px → 45°
-  const velocityThreshold = 0.4; // px/ms below this → no gain
-  const gainSlope = 1.1; // linear slope past threshold
-  const baseQuickNodes = 60; // empirical baseline nodes per quick swipe at gain 1
-  const targetSpinNodes = 350; // fixed quick-flick span for consistency across devices
-  const baseMaxGain = Math.max(1, targetSpinNodes / baseQuickNodes);
+  // C.3 flick tier (approved 2026-07-17): the drag is a pure 1:1 scrub at
+  // every speed — the old velocity-gain amplifier (velocityThreshold 0.4,
+  // gainSlope 1.1, targetSpinNodes 350) is retired. Fast-swipe distance now
+  // comes from the ballistic glide on release (gesture-tiers.js), so travel
+  // is chain-relative and never double-counted.
   const logTap = (event, payload = {}) => {
     if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
       window.__tapDebugLog(event, payload);
@@ -298,15 +305,10 @@ function wireInteractions(getApp) {
     lastTime = event.timeStamp;
 
     const distance = Math.abs(dx) + Math.abs(dy);
-    const velocity = dt > 0 ? distance / dt : 0;
-    const maxGain = baseMaxGain;
-    const gain = velocity <= velocityThreshold
-      ? 1
-      : Math.min(maxGain, 1 + (velocity - velocityThreshold) * gainSlope);
-
-    const delta = -(dx + dy) * sensitivity * gain;
-    gestureNetDelta += delta;
-    if (velocity > gesturePeakVelocity) gesturePeakVelocity = velocity;
+    const delta = -(dx + dy) * sensitivity;
+    const t = event.timeStamp;
+    recentMoves.push({ t, dist: distance, delta });
+    while (recentMoves.length && t - recentMoves[0].t > VELOCITY_WINDOW_MS) recentMoves.shift();
     gestureTravelPx += distance;
     trace.moves += 1; trace.travel = Math.round(gestureTravelPx); trace.captured = pointerCaptured;
     if ((trace.moves & 7) === 0) publishTrace();
@@ -324,8 +326,6 @@ function wireInteractions(getApp) {
       dx,
       dy,
       dt,
-      velocity: Number(velocity.toFixed(3)),
-      gain: Number(gain.toFixed(3)),
       dragging: isDragging
     });
     app.choreographer.rotate(delta);
@@ -427,14 +427,16 @@ function wireInteractions(getApp) {
     }
 
     isDragging = true;
-    gestureNetDelta = 0;
-    gesturePeakVelocity = 0;
+    recentMoves = [];
     gestureTravelPx = 0;
     pointerCaptured = false;
     trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
     trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
     publishTrace();
     logTap('drag-start', { pointerType: event.pointerType });
+    // Catch the ring mid-glide: a finger planted during a flick's glide
+    // stops the glide and takes over (flick, flick, catch).
+    app.choreographer?.stopMomentum?.();
     lastX = event.clientX;
     lastY = event.clientY;
     lastTime = event.timeStamp;
@@ -485,12 +487,20 @@ function wireInteractions(getApp) {
           return; // a tap: the node's click manages rotation, no snap
         }
       }
+      // "Fast" = what the finger was doing at release: distance and direction
+      // over the trailing VELOCITY_WINDOW_MS, so a pause before lifting (or a
+      // noisy 1ms event sample mid-scrub) can never read as a flick.
+      const now = event.timeStamp || Date.now();
+      const recent = recentMoves.filter(m => now - m.t <= VELOCITY_WINDOW_MS);
+      recentMoves = [];
+      const recentDist = recent.reduce((sum, m) => sum + m.dist, 0);
+      const recentDelta = recent.reduce((sum, m) => sum + m.delta, 0);
+      const releaseVelocity = recentDist / VELOCITY_WINDOW_MS;
+      const dir = Math.sign(recentDelta);
+      const isFast = releaseVelocity >= DOUBLE_FLICK_MIN_VELOCITY && dir !== 0;
       // C.3 double-flick: two fast swipes, same direction, inside the
       // window -> glide to that end of the chain (sprocket doctrine:
       // every chain is bounded; the last link is a real place).
-      const dir = Math.sign(gestureNetDelta);
-      const isFast = gesturePeakVelocity >= DOUBLE_FLICK_MIN_VELOCITY && dir !== 0;
-      const now = event.timeStamp || Date.now();
       if (isFast && dir === lastFlickDir && (now - lastFlickAt) <= DOUBLE_FLICK_WINDOW_MS) {
         lastFlickAt = 0;
         lastFlickDir = 0;
@@ -504,6 +514,24 @@ function wireInteractions(getApp) {
       }
       lastFlickAt = isFast ? now : 0;
       lastFlickDir = isFast ? dir : 0;
+      // C.3 single flick (approved 2026-07-17): a fast swipe is ballistic —
+      // the ring glides one chain-relative unit, max(10% of chain, 2× the
+      // visible window), in the house tempo. Every chain is ten flicks long;
+      // glideTo's clamp makes a flick near the end arrive AT the end. The
+      // "fast" gate is the same 0.8 px/ms a double-flick leg uses (isFast).
+      if (isFast) {
+        const ch = app.choreographer;
+        const linkCount = app.nav?.items?.length || 0;
+        const spacing = getNodeSpacing(app.viewport);
+        const visibleMax = getViewportWindow(app.viewport, spacing)?.maxNodes || 0;
+        const flickLinks = computeFlickLinks(linkCount, visibleMax);
+        if (flickLinks > 0 && Number.isFinite(spacing) && spacing > 0) {
+          const target = ch.getRotation() + dir * flickLinks * spacing;
+          logTap('flick', { dir, flickLinks: Math.round(flickLinks) });
+          ch.glideTo(target, FLICK_GLIDE_MS, () => app.selectNearest());
+          return;
+        }
+      }
       app.selectNearest();
       app.choreographer.stopMomentum();
     });
@@ -619,7 +647,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     chainMeta: chainResult,
     translationName,
     onGatewayReturn: returnThroughGateway,
-    gatewayLabel: gatewayReturn ? gatewayLabelFromItemId(gatewayReturn.itemId) : ''
+    gatewayLabel: gatewayReturn ? gatewayLabelFromItemId(gatewayReturn.itemId) : '',
+    // The origin volume's own display name (from its config) — for adapters
+    // whose top-ring OUT button names the volume you'd return TO rather
+    // than the gateway node you came through.
+    gatewayReturnLabel: gatewayReturn
+      ? (volumeConfigs[gatewayReturn.volume]?.gatewayReturnLabel || gatewayLabelFromItemId(gatewayReturn.itemId))
+      : ''
   });
   if (!items.length) throw new Error(`no items found for volume "${volume}"`);
 
@@ -687,6 +721,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     placesChildrenHandler: layoutBindings.placesChildrenHandler,
     getCatalogChildren: layoutBindings.getCatalogChildren || ((m, selected) => getCatalogChildren(manifest, selected)),
     getCalendarMonths: layoutBindings.getCalendarMonths || ((m, selected, mode) => getCalendarMonths(manifest, selected, mode)),
+    getCalendarMonthChain: layoutBindings.getCalendarMonthChain,
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
     getBibleVerseItems: layoutBindings.getBibleVerseItems,
     prefetchBibleVerses: layoutBindings.prefetchBibleVerses,

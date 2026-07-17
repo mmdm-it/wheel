@@ -69,7 +69,7 @@ export class FocusRingView {
     this.contentGroup.appendChild(this.parentButtonOuter);
 
     this.parentButtonOuterLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-    this.parentButtonOuterLabel.setAttribute('class', 'focus-ring-magnifier-label');
+    this.parentButtonOuterLabel.setAttribute('class', 'focus-ring-magnifier-label focus-ring-parent-label');
     this.parentButtonOuterLabel.setAttribute('text-anchor', 'start');
     this.parentButtonOuterLabel.setAttribute('dominant-baseline', 'middle');
     this.contentGroup.appendChild(this.parentButtonOuterLabel);

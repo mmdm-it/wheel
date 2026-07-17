@@ -75,6 +75,9 @@ const volumeConfigs = {
     id: 'catalog',
     paths: ['/catalog'],
     manifestPath: './data/mmdm/catalog-lite.json',
+    // Shown by other volumes' top-ring OUT button as the place a gateway
+    // return lands (Howell ruling 2026-07-17).
+    gatewayReturnLabel: 'MMdM CATALOGO',
     theme: 'catalog',
     palette: {
       bg: '#868686',
@@ -288,15 +291,25 @@ function makeCalendarLabelFormatter({ locale }) {
     const parsed = Number.parseInt(item?.id, 10);
     return Number.isFinite(parsed) ? parsed : null;
   };
-  return ({ item }) => {
+  const formatYear = yearNumber => (
+    yearNumber < 0 ? `${Math.abs(yearNumber)} ${t('bc')}` : String(yearNumber)
+  );
+  return ({ item, context }) => {
     if (!item) return '';
-    // Only year items get era formatting — month ids ("2026:jan") would
+    // Month items: nodes carry the month name alone; the magnifier appends
+    // the year — on the continuous months chain every January looks alike.
+    if (item.level === 'month') {
+      const name = item?.name || item?.id || '';
+      const y = Number.isFinite(item?.yearNumber) ? item.yearNumber : Number.parseInt(item?.parentId, 10);
+      if (context === 'magnifier' && Number.isFinite(y)) return `${name} ${formatYear(y)}`;
+      return name;
+    }
+    // Only year items get era formatting — composed ids ("2026:jan") would
     // otherwise fool the parseInt fallback.
     if (item.level && item.level !== 'year') return item?.name || item?.id || '';
     const yearNumber = getYearNumber(item);
     if (!Number.isFinite(yearNumber)) return item?.name || item?.id || '';
-    if (yearNumber < 0) return `${Math.abs(yearNumber)} ${t('bc')}`;
-    return String(yearNumber);
+    return formatYear(yearNumber);
   };
 }
 
