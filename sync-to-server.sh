@@ -63,8 +63,13 @@ sync_deployment() {
     local data_excludes=()
     case "$deployment" in
         catalog)
-            # calendar data ships with the catalog: the Gregorio XIII gateway needs it
-            data_excludes=(--exclude='data/places/') ;;
+            # calendar data ships with the catalog: the Gregorio XIII gateway needs it.
+            # The catalog syncs to the PARENT of the other deployments
+            # (~/public_html/mmdm/): wheel-v3/ must be protected or
+            # --delete/--delete-excluded wipes the bible/calendar/places
+            # deployments (this happened, 2026-07-17). 'P' = protect from
+            # deletion; the exclude keeps it out of the transfer.
+            data_excludes=(--exclude='data/places/' --exclude='wheel-v3/' --filter='P wheel-v3/') ;;
         bible)
             data_excludes=(--exclude='data/mmdm/' --exclude='data/places/' --exclude='data/calendar/') ;;
         calendar)
