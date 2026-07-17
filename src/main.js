@@ -227,6 +227,23 @@ function wireInteractions(getApp) {
   let lastY = 0;
   let lastTime = 0;
   let suppressNativeClickUntil = 0;
+  // C.3 double-flick (see docs/FEEL.md) — additive; drag feel untouched.
+  const DOUBLE_FLICK_WINDOW_MS = 400;   // max gap between two fast swipes
+  const DOUBLE_FLICK_MIN_VELOCITY = 0.8; // px/ms peak to count as "fast"
+  const GLIDE_TO_LIMIT_MS = 600;         // one tempo (= detail sector)
+  let gestureNetDelta = 0;      // signed rotation applied by current drag
+  let gesturePeakVelocity = 0;  // fastest sample within current drag
+  let gestureTravelPx = 0;      // cumulative finger travel this drag
+  let pointerCaptured = false;  // capture transferred to the svg root
+  const trace = { downTarget: '', moves: 0, endedBy: '', travel: 0, captured: false, cancels: 0 };
+  const publishTrace = () => { window.__wheelGestureTrace = { ...trace }; };
+  const DRAG_SLOP_PX = 8;       // past this, it's a drag, not a tap
+  let pendingTapNode = null;    // ring node under the finger at pointerdown;
+                                // its click fires at lift IF travel stayed
+                                // within tap slop — a press is ambiguous
+                                // until the finger commits
+  let lastFlickAt = 0;          // pointerup time of the last fast swipe
+  let lastFlickDir = 0;         // its direction (sign of net delta)
   const sensitivity = Math.PI / 4 / 100; // 100px → 45°
   const velocityThreshold = 0.4; // px/ms below this → no gain
   const gainSlope = 1.1; // linear slope past threshold
@@ -288,6 +305,20 @@ function wireInteractions(getApp) {
       : Math.min(maxGain, 1 + (velocity - velocityThreshold) * gainSlope);
 
     const delta = -(dx + dy) * sensitivity * gain;
+    gestureNetDelta += delta;
+    if (velocity > gesturePeakVelocity) gesturePeakVelocity = velocity;
+    gestureTravelPx += distance;
+    trace.moves += 1; trace.travel = Math.round(gestureTravelPx); trace.captured = pointerCaptured;
+    if ((trace.moves & 7) === 0) publishTrace();
+    // Ring nodes are disposable elements: a drag that began ON one holds an
+    // implicit pointer capture that dies if that node scrolls out of the
+    // window and is removed. Once travel exceeds tap slop, re-anchor the
+    // capture to the permanent svg root so the event stream survives the
+    // whole gesture. Taps never reach the slop, so node clicks are
+    // unaffected.
+    if (!pointerCaptured && gestureTravelPx > DRAG_SLOP_PX && event.pointerId != null) {
+      try { svg.setPointerCapture(event.pointerId); pointerCaptured = true; } catch (err) { /* capture unsupported */ }
+    }
     logTap('pointermove', {
       pointerType: event.pointerType,
       dx,
@@ -325,24 +356,21 @@ function wireInteractions(getApp) {
       y: event.clientY
     });
     const isNode = event.target && event.target.closest && event.target.closest('.focus-ring-node');
+    pendingTapNode = null;
     if (isNode) {
-      isDragging = false;
       logTap('node-hit', {
         pointerType: event.pointerType,
         nodeIndex: isNode.dataset?.index ?? null,
         nodeId: isNode.getAttribute?.('id') || null
       });
-      // Touch reliability: trigger immediately on pointerdown instead of
-      // waiting for delayed/sometimes-missed synthetic click on tiny targets.
-      if ((event.pointerType === 'touch' || event.pointerType === 'pen') && typeof isNode.onclick === 'function') {
-        isNode.onclick();
-        logTap('node-hit-manual-onclick', {
-          pointerType: event.pointerType,
-          nodeIndex: isNode.dataset?.index ?? null
-        });
-        event.preventDefault();
-      }
-      return; // click handler on node will manage rotation
+      // A press on a node is ambiguous until the finger commits: firing the
+      // click here at pointerdown is what made every over-ring swipe die as
+      // a 2-node tap. Arm a pending tap instead and start the drag machinery
+      // like anywhere else; pointerup decides — within slop it's the tap
+      // (fired manually, so tiny targets still never depend on the browser's
+      // synthetic click), past slop it was a swipe all along.
+      pendingTapNode = isNode;
+      if (event.pointerType === 'touch' || event.pointerType === 'pen') event.preventDefault();
     }
 
     // Parent/magnifier controls: don't start drag and don't near-miss redirect.
@@ -383,22 +411,29 @@ function wireInteractions(getApp) {
       || (event.target && event.target.closest && event.target.closest('.focus-ring-band'))
       || Boolean(isPyramidNode)
     );
-    if ((event.pointerType === 'touch' || event.pointerType === 'pen') && isBackgroundLikeTarget) {
+    if ((event.pointerType === 'touch' || event.pointerType === 'pen') && isBackgroundLikeTarget && !pendingTapNode) {
       const nearby = nearestRingNode(event);
       if (nearby && typeof nearby.onclick === 'function') {
-        isDragging = false;
-        logTap('near-miss-manual-onclick', {
+        // Same deferral as a direct node press: tap resolves at lift,
+        // movement past slop means this was a swipe born near a node.
+        logTap('near-miss-pending-tap', {
           pointerType: event.pointerType,
           nodeIndex: nearby.dataset?.index ?? null,
           nodeId: nearby.getAttribute?.('id') || null
         });
-        nearby.onclick();
+        pendingTapNode = nearby;
         event.preventDefault();
-        return;
       }
     }
 
     isDragging = true;
+    gestureNetDelta = 0;
+    gesturePeakVelocity = 0;
+    gestureTravelPx = 0;
+    pointerCaptured = false;
+    trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
+    trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
+    publishTrace();
     logTap('drag-start', { pointerType: event.pointerType });
     lastX = event.clientX;
     lastY = event.clientY;
@@ -415,12 +450,60 @@ function wireInteractions(getApp) {
       if (!app) return;
       const wasDragging = isDragging;
       isDragging = false;
+      if (wasDragging) {
+        trace.endedBy = type;
+        if (type === 'pointercancel') trace.cancels += 1;
+        trace.captured = pointerCaptured;
+        publishTrace();
+      }
+      if (pointerCaptured && event.pointerId != null) {
+        try { svg.releasePointerCapture(event.pointerId); } catch (err) { /* already released */ }
+        pointerCaptured = false;
+      }
       logTap(type, {
         pointerType: event?.pointerType,
         wasDragging,
         action: wasDragging ? 'snap-nearest' : 'tap-no-snap'
       });
       if (!wasDragging) return;
+      // Resolve a pending node tap: the press landed on (or near) a node and
+      // the finger never traveled past slop — fire that node's click now, at
+      // lift. Either way the node press is finished; suppress the browser's
+      // own delayed click so nothing fires twice.
+      const tapNode = pendingTapNode;
+      pendingTapNode = null;
+      if (tapNode) {
+        suppressNativeClickUntil = Date.now() + 450;
+        if (gestureTravelPx <= DRAG_SLOP_PX) {
+          if (type === 'pointerup' && typeof tapNode.onclick === 'function') {
+            logTap('node-tap-on-lift', {
+              pointerType: event?.pointerType,
+              nodeId: tapNode.getAttribute?.('id') || null
+            });
+            tapNode.onclick();
+          }
+          return; // a tap: the node's click manages rotation, no snap
+        }
+      }
+      // C.3 double-flick: two fast swipes, same direction, inside the
+      // window -> glide to that end of the chain (sprocket doctrine:
+      // every chain is bounded; the last link is a real place).
+      const dir = Math.sign(gestureNetDelta);
+      const isFast = gesturePeakVelocity >= DOUBLE_FLICK_MIN_VELOCITY && dir !== 0;
+      const now = event.timeStamp || Date.now();
+      if (isFast && dir === lastFlickDir && (now - lastFlickAt) <= DOUBLE_FLICK_WINDOW_MS) {
+        lastFlickAt = 0;
+        lastFlickDir = 0;
+        const ch = app.choreographer;
+        const limit = dir > 0 ? ch.maxRotation : ch.minRotation;
+        if (Number.isFinite(limit)) {
+          logTap('double-flick', { dir, limit });
+          ch.glideTo(limit, GLIDE_TO_LIMIT_MS, () => app.selectNearest());
+          return;
+        }
+      }
+      lastFlickAt = isFast ? now : 0;
+      lastFlickDir = isFast ? dir : 0;
       app.selectNearest();
       app.choreographer.stopMomentum();
     });
