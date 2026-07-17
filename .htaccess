@@ -1,14 +1,39 @@
-# Serve JSON (and friends) compressed — the calendar manifest is 8.4 MB raw
-# and ~10x smaller gzipped; without this the gateway transit pays full price.
+# Serve pre-compressed JSON. The host's compression layer (brotli) covers
+# text/javascript and text/css but NOT application/json, so manifests shipped
+# full-size — 1.3MB of uncompressed JSON on a catalog boot over cellular
+# (iPhone probe, 2026-07-17). scripts/precompress-json.mjs writes a .json.gz
+# sibling for every manifest at build; serve it when the client accepts gzip.
+# All guarded so a missing module degrades to the plain .json, never a 500.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP:Accept-Encoding} gzip
+  RewriteCond %{REQUEST_FILENAME}.gz -f
+  RewriteRule ^(.+)\.json$ $1.json.gz [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # The .gz is really JSON, gzip-encoded — tell the browser both.
+  <FilesMatch "\.json\.gz$">
+    Header set Content-Encoding gzip
+    Header set Content-Type application/json
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+# mod_deflate (if this host ever activates it) — belt to the pre-compressed
+# braces above; also covers html/css/svg.
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE application/json text/html text/css application/javascript image/svg+xml
 </IfModule>
 
 # Never serve a stale app: browsers must revalidate JS and JSON on each
 # load (cheap 304s when unchanged). Found the hard way — a phone silently
-# tested yesterday's bundle (C.2).
+# tested yesterday's bundle (C.2). The .gz variants revalidate too.
 <IfModule mod_headers.c>
   <FilesMatch "\.(js|json)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.json\.gz$">
     Header set Cache-Control "no-cache, must-revalidate"
   </FilesMatch>
 </IfModule>
