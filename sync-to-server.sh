@@ -8,6 +8,10 @@
 # Note: this script was temporarily locked on 2026-02-26 while a black-screen
 # regression (commit 52cb891) was diagnosed and reverted. Unlocked at v3.8.41.
 
+# Pin the project's node (system node is v10 and cannot run the ESM build
+# scripts — this bit the C.2 deploy).
+export PATH="$HOME/.nvm/versions/node/v18.20.8/bin:$PATH"
+
 SERVER="namecheap"
 REMOTE_BASE="~/public_html/mmdm/wheel-v3"
 REMOTE_CATALOG="~/public_html/mmdm"
