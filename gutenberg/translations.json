@@ -1,7 +1,6 @@
 {
   "_schema_version": "2.0",
   "_description": "Edition-level translation metadata (per-language) and versification systems for the multilingual Bible. Manifest files list languages; this file lists specific translations/editions within those languages (tertiary portal).",
-  
   "versification_systems": {
     "MT": {
       "name": "Masoretic Text",
@@ -19,7 +18,6 @@
       "description": "Greek Old Testament numbering, used by Orthodox churches"
     }
   },
-  
   "translations": {
     "WLC": {
       "name": "Westminster Leningrad Codex",
@@ -122,10 +120,9 @@
       "description": "Portuguese Catholic translation (pending)"
     }
   },
-  
   "language_display_order": [
     "latin",
-    "greek", 
+    "greek",
     "hebrew",
     "english",
     "french",
@@ -134,7 +131,6 @@
     "portuguese",
     "russian"
   ],
-
   "names": {
     "hebrew": {
       "testaments": {
@@ -389,6 +385,75 @@
         "III_IOHA": "3 Ioannis",
         "IUDA": "Iudas",
         "APOC": "Apocalypsis"
+      },
+      "book_abbreviations": {
+        "GENE": "GN",
+        "EXO": "EX",
+        "LEVI": "LV",
+        "NUME": "NM",
+        "DEUT": "DT",
+        "IOSU": "IOS",
+        "IUDI": "IDC",
+        "RUTH": "RT",
+        "I_SAM": "1 SM",
+        "II_SAM": "2 SM",
+        "III_REG": "3 RG",
+        "IV_REG": "4 RG",
+        "TOBI": "TOB",
+        "IUDITH": "IDT",
+        "ESTH": "EST",
+        "IOB": "IOB",
+        "PSAL": "PS",
+        "PROV": "PR",
+        "ECCLE": "ECL",
+        "CANT": "CT",
+        "SAPI": "SAP",
+        "ECCLU": "SIR",
+        "ISA": "IS",
+        "IERE": "IR",
+        "LAME": "LAM",
+        "BARU": "BAR",
+        "EZE": "EZ",
+        "DAN": "DN",
+        "OSE": "OS",
+        "IOEL": "IOEL",
+        "AMO": "AM",
+        "ABDI": "ABD",
+        "IONA": "ION",
+        "MICH": "MCH",
+        "NAHU": "NAH",
+        "HAB": "HAB",
+        "SOPH": "SOPH",
+        "AGGE": "AGG",
+        "ZACH": "ZACH",
+        "MALA": "MAL",
+        "MATHE": "MT",
+        "MARC": "MC",
+        "LUCA": "LC",
+        "IOHA": "IO",
+        "ACTU": "ACT",
+        "ROM": "ROM",
+        "I_COR": "1 COR",
+        "II_COR": "2 COR",
+        "GALA": "GAL",
+        "EPHE": "EPH",
+        "PHILI": "PHLP",
+        "COLO": "COL",
+        "I_THES": "1 THES",
+        "II_THES": "2 THES",
+        "I_TIMO": "1 TIM",
+        "II_TIMO": "2 TIM",
+        "TITU": "TIT",
+        "PHILE": "PHLM",
+        "HEBR": "HBR",
+        "IACO": "IAC",
+        "I_PETR": "1 PTR",
+        "II_PETR": "2 PTR",
+        "I_IOHA": "1 IO",
+        "II_IOHA": "2 IO",
+        "III_IOHA": "3 IO",
+        "IUDA": "IUD",
+        "APOC": "APC"
       }
     },
     "french": {

@@ -1,34 +1,20 @@
 {
   "name": "Calendar",
-  "version": "0.1-dev",
+  "version": "0.2-dev",
   "levels": [
     {
-      "name": "Millennium",
+      "name": "Year",
       "depth": 0,
       "properties": [
         "id",
         "name",
-        "era",
-        "bucket",
-        "start_year",
-        "end_year",
+        "year_number",
         "sort_number"
       ]
     },
     {
-      "name": "Year",
-      "depth": 1,
-      "properties": [
-        "id",
-        "name",
-        "year_number",
-        "sort_number",
-        "millennium_id"
-      ]
-    },
-    {
       "name": "Month",
-      "depth": 2,
+      "depth": 1,
       "properties": [
         "id",
         "name",
@@ -37,15 +23,9 @@
       "isLeaf": true
     }
   ],
-  "root": {
-    "id": "root",
-    "children": [
-      "millennium_bc_3",
-      "millennium_bc_2",
-      "millennium_bc_1",
-      "millennium_ad_1",
-      "millennium_ad_2",
-      "millennium_ad_3"
-    ]
+  "notes": {
+    "span": "3000 BC to 3000 AD, no year zero",
+    "months": "stored once as month_template, synthesized per year",
+    "millennia": "removed 2026-07-17 — centuries/millennia are cousin-gap texture, not a navigation level"
   }
 }
