@@ -3,7 +3,7 @@
   "version": "3.10.2",
   "type": "module",
   "scripts": {
-    "build": "node scripts/split-catalog.mjs && esbuild src/main.js --bundle --format=iife --target=chrome74 --outfile=dist/app.js --sourcemap --external:path --external:url --external:fs --external:fs/promises --external:ajv",
+    "build": "node scripts/split-catalog.mjs && esbuild src/main.js --bundle --format=iife --target=chrome74 --outfile=dist/app.js --sourcemap --external:path --external:url --external:fs --external:fs/promises --external:ajv && node scripts/precompress-json.mjs",
     "test": "node --test && npm run lint:forbidden",
     "lint:forbidden": "node --test test/forbidden-literals.test.js"
   },

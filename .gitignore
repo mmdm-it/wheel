@@ -9,3 +9,6 @@ npm-debug.log*
 # derived at build time by scripts/split-catalog.mjs
 data/mmdm/catalog-lite.json
 data/mmdm/catalog-prose.json
+
+# derived at build time by scripts/precompress-json.mjs
+*.json.gz
