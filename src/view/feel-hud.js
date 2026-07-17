@@ -50,10 +50,14 @@ export function mountFeelHud() {
     const bootLine = b
       ? `boot ${b.total}ms  html→js ${b.htmlToBoot}\nman ${b.manifest}  chain ${b.chainBuild}  rend ${b.renderWire}`
       : 'boot —';
+    const g = window.__wheelGestureTrace;
+    const gestureLine = g
+      ? `gest ${g.downTarget.slice(0, 14)} mv${g.moves} px${g.travel}\nend ${g.endedBy || '…'} cap${g.captured ? 1 : 0}`
+      : 'gest —';
     el.textContent =
       `fps ${String(fps).padStart(3)}  worst ${String(worst).padStart(3)}ms  drop ${drops}\n` +
       `in→fr ${inputLatency == null ? ' —' : Math.round(inputLatency) + 'ms'}\n` +
-      bootLine;
+      bootLine + '\n' + gestureLine;
     requestAnimationFrame(loop);
   }
   requestAnimationFrame(loop);

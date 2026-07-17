@@ -67,6 +67,32 @@ export class RotationChoreographer {
     // Selection snapping disabled for free-spinning ring.
   }
 
+  // C.3 double-flick: glide the ring to an absolute rotation (typically a
+  // chain end) over a fixed duration. Additive — normal drag/momentum feel
+  // is untouched (Howell's feel freeze). easeOutCubic: fast departure,
+  // gentle arrival at the last link.
+  glideTo(targetRotation, durationMs = 600, onArrive = null) {
+    this.stopMomentum();
+    const from = this.visualRotation;
+    const to = this.#clamp(targetRotation);
+    if (from === to) { if (onArrive) onArrive(); return; }
+    const start = (typeof performance !== 'undefined' ? performance.now() : Date.now());
+    const loop = () => {
+      const now = (typeof performance !== 'undefined' ? performance.now() : Date.now());
+      const t = Math.min(1, (now - start) / durationMs);
+      const eased = 1 - Math.pow(1 - t, 3);
+      this.visualRotation = from + (to - from) * eased;
+      this.onRender(this.visualRotation);
+      if (t < 1) {
+        this.rafId = raf(loop);
+      } else {
+        this.rafId = null;
+        if (onArrive) onArrive();
+      }
+    };
+    this.rafId = raf(loop);
+  }
+
   setBounds(minRotation, maxRotation) {
     if (Number.isFinite(minRotation)) this.minRotation = minRotation;
     if (Number.isFinite(maxRotation)) this.maxRotation = maxRotation;
