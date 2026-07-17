@@ -389,4 +389,11 @@ function buildPlacesChain(manifest, options) {
   return { items, selectedIndex, preserveOrder, meta: { levels, levelIndex, selections } };
 }
 
-export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter };
+// The probe's drop box (telemetry.php on the production host). Deployment
+// layout is a literal like any other — it lives here, not in diagnostics.
+const PROBE_SINK = {
+  relative: '/mmdm/telemetry.php',
+  absolute: 'https://howellgibbens.com/mmdm/telemetry.php'
+};
+
+export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE_SINK };
