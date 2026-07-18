@@ -111,7 +111,8 @@ function buildReport(reason) {
     // Render self-time since the last report: worst frame's JS cost + how
     // many exceeded budget. A long frame with small render = browser paint.
     render: window.__wheelRenderStats ? { ...window.__wheelRenderStats } : null,
-    gesture: window.__wheelGestureTrace || null
+    gesture: window.__wheelGestureTrace || null,
+    taps: window.__wheelTapTrace ? window.__wheelTapTrace.slice() : null
   };
 }
 
@@ -157,6 +158,36 @@ export function mountProbe() {
   if (!on) return;
   enabled = true;
   sessionId = Date.now().toString(36);
+
+  // Tap autopsy: every pointer/click event in capture phase, with target,
+  // coordinates, the visual viewport SCALE (a browser double-tap zoom shows
+  // up here), and whether something already cancelled it. App code pushes
+  // its own markers (pyramid click handled, gateway launched) into the same
+  // trace so we can see exactly where a tap died.
+  window.__wheelTapTrace = [];
+  const TAP_TRACE_MAX = 60;
+  const describeTarget = el => {
+    if (!el || !el.tagName) return '?';
+    const cls = (typeof el.getAttribute === 'function' && el.getAttribute('class')) || '';
+    const id = el.id ? `#${el.id}` : '';
+    return `${el.tagName.toLowerCase()}${id}${cls ? '.' + String(cls).split(' ')[0] : ''}`.slice(0, 48);
+  };
+  const traceEvent = e => {
+    const vv = window.visualViewport;
+    const touch = e.touches && e.touches[0];
+    window.__wheelTapTrace.push({
+      t: Math.round(performance.now()),
+      ev: e.type,
+      x: Math.round(e.clientX ?? touch?.clientX ?? -1),
+      y: Math.round(e.clientY ?? touch?.clientY ?? -1),
+      tgt: describeTarget(e.target),
+      scale: vv ? Number((vv.scale || 1).toFixed(3)) : 1,
+      def: e.defaultPrevented ? 1 : 0
+    });
+    if (window.__wheelTapTrace.length > TAP_TRACE_MAX) window.__wheelTapTrace.shift();
+  };
+  ['pointerdown', 'pointerup', 'pointercancel', 'click', 'dblclick', 'touchstart', 'touchend']
+    .forEach(type => window.addEventListener(type, traceEvent, { passive: true, capture: true }));
 
   // Long-frame journal, tagged with what the finger was doing.
   window.addEventListener('pointerdown', () => { touchDown = true; }, { passive: true, capture: true });

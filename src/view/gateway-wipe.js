@@ -1,18 +1,33 @@
 // Gateway transit: a cinema wipe (Howell 2026-07-18). No node moves — the
 // new volume boots fully rendered underneath a frozen snapshot of the old
-// screen, and a straight radius, pivoting on the off-screen hub, sweeps
-// from the top down to the lower right. Old above the line, new below it;
-// when the line has crossed the whole screen, the snapshot is gone.
+// screen, and a straight radius, pivoting on the off-screen hub, sweeps the
+// snapshot away: downward on launch, upward on return.
 //
 // The snapshot's appearance is FROZEN AT CAPTURE: every visual property is
 // inlined from computed style, because the live styling rides CSS theme
 // variables that flip to the incoming volume's palette the instant the new
 // theme applies — without inlining, the old drawing would suddenly wear the
 // new colors mid-wipe.
+//
+// Capture happens AT THE TAP, before the new manifest even fetches: the
+// snapshot covers the identical live screen for those frames, so any
+// first-paint rasterization lag (WebKit drew cloned text a frame late — the
+// "text blinks off" bug) lands invisibly over the same pixels. It also
+// swallows input for the whole transit.
 
 import { getArcParameters } from '../geometry/focus-ring-geometry.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
+
+// One wipe at a time: rapid volume alternation used to leave a previous
+// wipe's defs in the document, and its stale clip id captured the new
+// snapshot (whole screen flipped at once, only the seam line animating).
+let activeWipe = null;
+let wipeSeq = 0;
+
+export function cancelGatewayWipe() {
+  if (activeWipe) activeWipe.finish();
+}
 
 // The computed properties that determine how an SVG element looks.
 const FROZEN_PROPS = [
@@ -39,11 +54,15 @@ function freezeStyles(original, clone) {
 }
 
 /**
- * Capture the current screen as a self-contained frozen group. Call BEFORE
- * teardown, while the old volume and its theme are still live.
+ * Capture the current screen as a self-contained frozen group and lay it
+ * over the live (identical) content immediately. Call at the moment of the
+ * gateway tap, while the old volume and its theme are fully live. Any
+ * in-flight wipe is finished first so the capture sees a settled screen.
  */
 export function captureGatewaySnapshot(svg) {
   if (!svg || typeof document === 'undefined') return null;
+  cancelGatewayWipe();
+
   const g = document.createElementNS(SVG_NS, 'g');
   g.setAttribute('id', 'gateway-wipe-old');
 
@@ -68,24 +87,33 @@ export function captureGatewaySnapshot(svg) {
   });
 
   // The snapshot is scenery, not controls: swallow everything so a tap
-  // mid-wipe reaches neither the frozen clones nor the live app beneath.
+  // mid-transit reaches neither the frozen clones nor the live app beneath.
   const swallow = e => { e.stopPropagation(); e.preventDefault(); };
   ['pointerdown', 'pointerup', 'pointermove', 'click', 'touchstart', 'touchmove', 'touchend']
     .forEach(type => g.addEventListener(type, swallow));
 
+  // Cover the live screen NOW — identical pixels, so nothing changes to the
+  // eye, and the browser gets its warm-up frames before the swap beneath.
+  svg.appendChild(g);
+  g._wipeOldBg = bg || '#868686';
   return g;
 }
 
 const easeInOutCubic = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
 /**
- * Play the wipe: append the snapshot ON TOP of the freshly booted volume,
- * then sweep the dividing radius across the screen, erasing the snapshot
- * as it goes. Launch sweeps top → lower right; return sweeps bottom → top
+ * Play the wipe: raise the snapshot above the freshly booted volume, then
+ * sweep the dividing radius across the screen, erasing the snapshot as it
+ * goes. Launch sweeps top → lower right; return sweeps bottom → top
  * (direction: 'down' | 'up') — the wipe always flows away from where you
  * are going. The snapshot is hard-clipped (cheapest possible cut); a 5px
  * gradient seam of the old ground color rides the line so the edge still
  * reads soft, with no masks or filters anywhere.
+ *
+ * The page background OUTSIDE the canvas (the strip some browsers paint
+ * under the system navigation bar) can't be wiped — it flips wholesale at
+ * the moment the sweep line meets that edge: the END of a downward wipe,
+ * the START of an upward one.
  */
 export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', durationMs = 1800, onDone }) {
   if (!svg || !snapshot || !viewport) { if (onDone) onDone(); return; }
@@ -93,6 +121,9 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
   const arc = getArcParameters(viewport);
   const hubX = arc.hubX;
   const hubY = arc.hubY;
+  wipeSeq += 1;
+  const clipId = `gateway-wipe-clip-${wipeSeq}`;
+  const gradId = `gateway-wipe-feather-${wipeSeq}`;
 
   // Angular window: the screen's four corners as seen from the hub.
   const corners = [
@@ -104,13 +135,7 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
     if (a < 0) a += twoPi; // continuous range: down-left ≈ π/2..π, up-left ≈ π..3π/2
     return a;
   });
-  // Soft edge, at zero filter cost (Howell 2026-07-18: smoothness beats
-  // softness): the snapshot is CLIPPED hard (a clipPath is geometric and
-  // GPU-cheap — masking the whole snapshot re-composited it every frame,
-  // which stuttered on the field phones). The softness is a 5px cosmetic
-  // seam: a strip of the old ground color fading out along the line. Over
-  // background — most of every seam — it reads as a true feather.
-  const softness = 5;
+  const softness = 5; // seam width (Howell: smoothness beats softness)
   const nearDist = Math.min(...corners.map(([x, y]) => Math.hypot(x - hubX, y - hubY)));
   const margin = 0.02 + softness / nearDist;
   const topAngle = Math.max(...angles) + margin;    // above the top corner
@@ -118,19 +143,30 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
   const radius = Math.max(...corners.map(([x, y]) => Math.hypot(x - hubX, y - hubY))) * 1.05;
   const goingDown = direction !== 'up';
 
-  // The old ground color, recovered from the snapshot's backdrop rect.
-  const backdrop = snapshot.querySelector ? snapshot.querySelector('rect') : null;
-  const oldBg = (backdrop && backdrop.getAttribute('fill')) || '#868686';
+  const oldBg = snapshot._wipeOldBg || '#868686';
+  // The theme has already swapped: read the NEW page background, then pin
+  // the old one back until the sweep line reaches the off-canvas strip.
+  const rootEl = document.documentElement;
+  const newBg = typeof getComputedStyle === 'function'
+    ? getComputedStyle(rootEl).backgroundColor
+    : '';
+  const setPageBg = color => {
+    rootEl.style.backgroundColor = color;
+    if (document.body) document.body.style.backgroundColor = color;
+  };
+  setPageBg(oldBg);
+  const flipPageBg = () => { if (newBg) setPageBg(newBg); };
+  if (!goingDown) flipPageBg(); // upward wipe leaves the bottom edge first
 
   const defs = document.createElementNS(SVG_NS, 'defs');
   const clip = document.createElementNS(SVG_NS, 'clipPath');
-  clip.setAttribute('id', 'gateway-wipe-clip');
+  clip.setAttribute('id', clipId);
   const wedgePath = document.createElementNS(SVG_NS, 'path');
   clip.appendChild(wedgePath);
   defs.appendChild(clip);
 
   const grad = document.createElementNS(SVG_NS, 'linearGradient');
-  grad.setAttribute('id', 'gateway-wipe-feather');
+  grad.setAttribute('id', gradId);
   grad.setAttribute('gradientUnits', 'userSpaceOnUse');
   grad.setAttribute('x1', String(hubX));
   grad.setAttribute('y1', String(hubY));
@@ -154,7 +190,7 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
   band.setAttribute('y', String(goingDown ? hubY : hubY - softness));
   band.setAttribute('width', String(radius));
   band.setAttribute('height', String(softness));
-  band.setAttribute('fill', 'url(#gateway-wipe-feather)');
+  band.setAttribute('fill', `url(#${gradId})`);
   band.style.pointerEvents = 'none';
 
   // The clip keeps the NOT-YET-WIPED region — the wedge between the moving
@@ -181,13 +217,29 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
 
   wedgePath.setAttribute('d', regionFor(phiFrom));
   aim(phiFrom);
-  snapshot.setAttribute('clip-path', 'url(#gateway-wipe-clip)');
+  snapshot.setAttribute('clip-path', `url(#${clipId})`);
   svg.appendChild(defs);
-  svg.appendChild(snapshot); // on top of the new volume — no pop at swap
+  svg.appendChild(snapshot); // raise above the new volume — no pop at swap
   svg.appendChild(band);     // the seam rides above the boundary
+
+  const wipe = {
+    done: false,
+    finish: () => {
+      if (wipe.done) return;
+      wipe.done = true;
+      if (activeWipe === wipe) activeWipe = null;
+      snapshot.remove();
+      band.remove();
+      defs.remove();
+      flipPageBg();
+      if (onDone) onDone();
+    }
+  };
+  activeWipe = wipe;
 
   const start = typeof performance !== 'undefined' ? performance.now() : Date.now();
   const step = now => {
+    if (wipe.done) return; // cancelled by a newer transit
     const t = Math.min(1, (now - start) / durationMs);
     const phi = phiFrom + (phiTo - phiFrom) * easeInOutCubic(t);
     wedgePath.setAttribute('d', regionFor(phi));
@@ -195,10 +247,7 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
     if (t < 1) {
       requestAnimationFrame(step);
     } else {
-      snapshot.remove();
-      band.remove();
-      defs.remove();
-      if (onDone) onDone();
+      wipe.finish();
     }
   };
   requestAnimationFrame(step);

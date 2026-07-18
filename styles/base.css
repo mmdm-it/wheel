@@ -213,6 +213,14 @@ svg :focus-visible {
   font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
   pointer-events: none;
 }
+/* The REAL pyramid labels (inside the live pyramid group) are tappable
+   exactly like their circles — they carry data-index, and a tap on the word
+   used to fall through to the background and get read as a ring near-miss
+   (the iOS multi-tap gateway bug). Animation clones share the class but sit
+   outside .child-pyramid, so they stay inert. */
+.child-pyramid .child-pyramid-label {
+  pointer-events: auto;
+}
 
 /* Fade child pyramid nodes/labels while the Focus Ring is rotating.
    Blur is applied via SVG filter attribute for iOS WebKit compatibility. */
