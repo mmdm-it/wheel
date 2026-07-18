@@ -100,11 +100,15 @@ Voice metrics over 1,032 descriptions:
 key_notes notation is mixed (hp @ X,XXX dominant at 143/146 uses; 12 bare-rpm
 stragglers; PS/kW/cid used contextually). Low priority normalization.
 
-## 4. Appendix — DNS runbook (mmdm.it, when ready)
+## 4. Appendix — DNS runbook (mmdm.it) — EXECUTED 2026-07-17
 
 Goal: mmdm.it serves the site directly (no masked frame), Google/Wayback see
 real content, cPanel management preserved. All online; no registrar transfer
 required; no purchases from GoDaddy; no trip to Italy required.
+
+**Status: done.** Executed in one sitting, zero downtime, mail untouched.
+See "As executed" below for where reality diverged from the plan; the
+numbered steps are kept as the reference procedure.
 
 The three roles are independent — GoDaddy's marketing blurs them, this plan
 pries them apart: REGISTRAR (owns the registration; stays GoDaddy) · DNS
@@ -142,6 +146,49 @@ frameset, not content.
 7. GoDaddy remains registrar, demoted to a filing cabinet: annual renewal
    only, no services, no fees beyond it.
 
+### As executed (2026-07-17) — divergences and findings
+
+- **Step 1 (TTL pre-lowering) was impossible**: the forwarding service OWNS
+  its two A records (15.197.225.128 / 3.33.251.168, AWS accelerator IPs) and
+  GoDaddy grays out Edit on them. Skipped; the replacement record was born
+  with 600s TTL, so rollback speed was preserved anyway.
+- **Step 2 detour — ownership validation**: Namecheap refuses an addon
+  domain whose DNS points elsewhere. Fix: its "simpledcver" DNS validation —
+  a TXT record `_simpledcver` at GoDaddy carrying a JWT token. (A stale,
+  expired token of the same kind was already in the zone — a previous
+  attempt, now deleted.) HTTP/HTML validation variants are dead ends while
+  masking is live: the frameset answers instead of the validation file.
+  Modern cPanel calls the tool **Domains → Create a New Domain** (Addon
+  Domains is merged into it); "Registered Domain", uncheck shared document
+  root, root = `public_html/mmdm`, accept the suggested bookkeeping
+  subdomain. Ignore cPanel's "offline until you point nameservers" banner —
+  it assumes whole-DNS moves; an A record serves identically.
+- **Step 3 order matters**: deleting the forwarding rule is what unlocks /
+  removes the service-owned A records. End state: one `a @` →
+  199.188.201.227 (Namecheap shared IP), 600s TTL; forwarding's companion
+  `https @` record deleted with it. All Zoho mail records untouched
+  throughout, verified by MX query after the swap.
+- **Propagation was near-instant**: authoritative and 1.1.1.1 both answered
+  with the new IP within a minute of the edit.
+- **Step 5 SSL**: this plan's "AutoSSL" is a **Namecheap SSL** cPanel plugin
+  on this host (no SSL/TLS Status tool). Adding the addon domain
+  auto-triggered a free 1-year StandardSSL; issuance completed in ~20 min
+  once DNS pointed home. Note the ~200-day CA cap (post-2026-03 rule): a
+  "1-year" product now reissues mid-cycle. The panel's status rows lag
+  reality — verify with `openssl s_client`, not the dashboard.
+- **Verified end-to-end after cutover**: https + www 200 with real cert,
+  `?probe=1` reaches the app (query strings live for the first time),
+  `.json.gz` rewrite serving (catalog 167 KB on the wire), telemetry.php
+  204, deep links work.
+- **Wayback**: SavePageNow returned 520 on every attempt yet captured
+  anyway — first real-content snapshot
+  `web.archive.org/web/20260718041648/https://mmdm.it/`. Prior archive
+  history: 2013, the personal site of Marco Marzano De Marinis, the
+  domain's previous MMdM.
+- **Still open**: flip the plugin's HTTPS Redirect toggle to On (http
+  currently serves directly, no bounce); the optional 301 from
+  howellgibbens.com/mmdm/ (step 6) deliberately deferred.
+
 ### Annex A — Cloudflare (optional second step, free tier)
 
 Leave GoDaddy as registrar but switch mmdm.it's NAMESERVERS to Cloudflare's
@@ -165,4 +212,4 @@ trip. The masking problems are 100% solved by the DNS steps above without
 ever touching the registration.
 
 Deadline anchor: before this year's calendar mailing, so every printed QR
-lands on the real address.
+lands on the real address. **Met** — executed 2026-07-17.
