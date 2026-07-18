@@ -639,7 +639,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // now and hide the live wheel so it can be dissolved into, not popped on.
   const playSplash = !firstBootDone && bootSplashShouldPlay();
   firstBootDone = true;
-  if (playSplash && svg) svg.style.opacity = '0';
+  if (playSplash) {
+    if (svg) svg.style.opacity = '0';
+    // Hide the copyright as early as possible — it is an index.html div,
+    // visible from first paint; the splash brings it in only at the end.
+    const cr = document.getElementById('copyright-notice');
+    if (cr) cr.style.opacity = '0';
+  }
   const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
