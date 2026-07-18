@@ -9,6 +9,8 @@ import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
+import { getArcParameters, getViewportWindow, getNodeSpacing } from './geometry/focus-ring-geometry.js';
+import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 
 const svg = document.getElementById('app');
 const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
@@ -554,6 +556,21 @@ let currentApp = null;
 let currentVolumeId = null;
 let gatewayReturnContext = null;
 let interactionsWired = false;
+let firstBootDone = false; // the boot splash plays only on the initial load
+
+// Sample points along the visible focus-ring arc — the first stroke the boot
+// splash inks. Ordered endAngle→startAngle so the self-draw sweeps from the
+// upper-left corner down to the lower-right (Howell 2026-07-17).
+function computeArcPoints(vp, n = 72) {
+  const arc = getArcParameters(vp);
+  const win = getViewportWindow(vp, getNodeSpacing(vp));
+  const pts = [];
+  for (let i = 0; i <= n; i += 1) {
+    const a = win.endAngle + (win.startAngle - win.endAngle) * (i / n);
+    pts.push({ x: arc.hubX + arc.radius * Math.cos(a), y: arc.hubY + arc.radius * Math.sin(a) });
+  }
+  return pts;
+}
 
 function gatewayLabelFromItemId(itemId) {
   if (typeof itemId !== 'string') return '';
@@ -618,6 +635,11 @@ function restoredGatewayReturn() {
 
 async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null) {
   performance.mark('wheel:boot-start');
+  // The splash reveal is initial-load only, never a gateway transit. Decide
+  // now and hide the live wheel so it can be dissolved into, not popped on.
+  const playSplash = !firstBootDone && bootSplashShouldPlay();
+  firstBootDone = true;
+  if (playSplash && svg) svg.style.opacity = '0';
   const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
@@ -795,6 +817,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   mountProbe(); // inert unless ?probe=1 — field diagnostics to the drop box
   prefetchGatewayTargets(manifest);
 
+  if (playSplash) {
+    const contentGroup = app?.view?.contentGroup || null;
+    playBootSplash({ svg, contentGroup, viewport, arcPoints: computeArcPoints(viewport) })
+      .catch(err => {
+        console.warn('[wheel] boot splash failed', err);
+        if (contentGroup) contentGroup.style.opacity = '';
+        if (svg) svg.style.opacity = '';
+      });
+  }
 }
 
 bootVolume(null, null, restoredGatewayReturn()).catch(err => {

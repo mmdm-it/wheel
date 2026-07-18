@@ -23,7 +23,7 @@ again. Constants marked **FROZEN** are under Howell's standing order
 |---|---|---|
 | Tap | that node to the magnifier (fires at finger-lift, ≤8px slop) | shipped (pre-C; lift-decision added in C.3) |
 | Scrub | pure 1:1 drag at every speed — the precision hand | **FROZEN** (Howell 2026-07-17: "scrubbing seems fine — eliminate any changes") |
-| Flick | ballistic glide of max(10% of chain, 2 × visible nodes) | **shipped in C.3 (approved 2026-07-17)** |
+| Flick | ballistic glide of FLICK_SCRUBS (=4) corner-to-corner scrubs | **shipped in C.3 (scrub-anchored 2026-07-17)** |
 | Double-flick | to that end of the chain | shipped in C.3 |
 
 The fast-scrub tier (one scrub-length = one flick's distance) is DROPPED for
@@ -53,13 +53,22 @@ unused (no caller starts it).
 | `ANIMATION_DURATION` | 600 ms | view/volume-logo.js | detail sector enlargement — the house tempo everything else inherits |
 | `GLIDE_TO_LIMIT_MS` | 600 ms | main.js | double-flick travel: same tempo, any distance — arrival is predictable everywhere |
 
-### Flick (approved and shipped 2026-07-17)
+### Flick (scrub-anchored 2026-07-17)
+
+REVISION: the flick was first shipped as 10%-of-chain ("every chain is ten
+flicks long"). That ballooned on long chains — on the 84k-node months
+timeline one flick lurched ~700 years while a corner-to-corner scrub crawled
+~20 (a ~30× mismatch). Howell's principle: a swipe must not travel a
+magnitude more than a corner-to-corner scrub. So the flick is now anchored to
+the SCRUB, not the chain: it feels identical on 12 nodes or 84,000.
+`FLICK_FRACTION` / `FLICK_MIN_FACTOR` are retired.
 
 | Name | Value | Home | Why |
 |---|---|---|---|
-| `FLICK_FRACTION` | 0.10 | interaction/gesture-tiers.js | of the chain, gaps included: every chain is ten flicks long |
-| `FLICK_MIN_FACTOR` | 2 × visible nodes | gesture-tiers.js | the small-chain floor; with glideTo's clamp, a flick on a tiny ring goes to the end — intended tier collapse |
+| `FLICK_SCRUBS` | 4 | interaction/gesture-tiers.js | a flick = this many corner-to-corner scrubs; chain-INDEPENDENT. Live-tunable via `window.__flickScrubs` (no rebuild). Howell verified 4 on the Moto G: "It feels good" |
+| flick rotation | `k · (width+height) · sensitivity` | gesture-tiers.js computeFlickRotation | one scrub's rotation is the Manhattan finger span × the drag sensitivity — the flick reuses the drag's own px→rotation map, so it IS k scrubs by construction |
 | `FLICK_GLIDE_MS` | 600 | gesture-tiers.js | the house tempo; arrival is predictable everywhere |
+| (no floor) | — | glideTo clamp | a flick that overshoots a short chain lands at the end — the clamp replaces the old 2×visible floor |
 | gate | 0.8 px/ms sustained at release | main.js (`isFast`) | shared with the double-flick legs — one definition of "fast" |
 | `VELOCITY_WINDOW_MS` | 100 | main.js | "fast" is measured over the last 100ms before lift, NEVER per event sample — touch events arrive in ~1ms bursts whose instantaneous velocity spikes past any threshold mid-slow-scrub (the 2026-07-17 released-scrub-takes-off regression). A pause before lifting reads as 0. Direction comes from the same window, so a scrub ending in a quick opposite toss flicks the way the toss went |
 | catch | pointerdown stops a glide | main.js drag-start | flick, flick, catch: the finger always wins |
