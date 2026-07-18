@@ -104,21 +104,65 @@ stragglers; PS/kW/cid used contextually). Low priority normalization.
 
 Goal: mmdm.it serves the site directly (no masked frame), Google/Wayback see
 real content, cPanel management preserved. All online; no registrar transfer
-required; no trip to Italy required.
+required; no purchases from GoDaddy; no trip to Italy required.
 
-1. **Namecheap cPanel** → Addon Domains → add `mmdm.it`, document root: the
+The three roles are independent — GoDaddy's marketing blurs them, this plan
+pries them apart: REGISTRAR (owns the registration; stays GoDaddy) · DNS
+(answers "what IP is mmdm.it?"; edited free inside the existing GoDaddy
+account) · HOSTING (the server; stays the $5 Namecheap plan). Namecheap's
+inability to REGISTER .it domains is irrelevant here: Namecheap-the-host
+serves any domain from any registrar on any TLD as a cPanel addon domain —
+it never asks where a name is registered, only that its A record points at
+the server.
+
+Why (costs of the mask, all fixed at once by this runbook): query strings
+never reach the app (the frame src is hardcoded — ?probe/?volume/?splash all
+die); an extra document + frame on every load; mobile browsers ignore a
+framed page's viewport meta and render at ~980px scaled down ~0.42×, which
+thins fixed-pixel strokes (the splash arc, the fan lines — fonts are
+compensated by --iframe-scale, strokes are not); search engines index a
+frameset, not content.
+
+1. Lower the mmdm.it DNS TTL (e.g. 600s) a day ahead, if GoDaddy exposes it —
+   makes the switch (and any rollback) propagate in minutes.
+2. **Namecheap cPanel** → Addon Domains → add `mmdm.it`, document root: the
    directory currently serving `howellgibbens.com/mmdm/` (or a copy).
-2. **GoDaddy** → mmdm.it DNS management → delete the masked-forwarding rule →
+3. **GoDaddy** → mmdm.it DNS management → delete the masked-forwarding rule →
    set A record(s) (and `www` CNAME) to the Namecheap hosting IP shown in
-   cPanel (right column, "Shared IP Address").
-3. Wait for propagation (minutes to hours). Verify `https://mmdm.it` loads
+   cPanel (right column, "Shared IP Address"). This is a free DNS edit, NOT a
+   transfer — none of GoDaddy's 7-day/48-hour lockout machinery applies, and
+   it is reversible in minutes (re-enable forwarding).
+4. Wait for propagation (minutes to hours). Verify `https://mmdm.it` loads
    the wheel directly with the URL bar staying on mmdm.it *and deep links
    work* (masking never allowed them).
-4. SSL: cPanel → SSL/TLS Status → run AutoSSL for the new addon domain.
-5. Optional, later: 301 `howellgibbens.com/mmdm/` → `mmdm.it` to consolidate
+5. SSL: cPanel → SSL/TLS Status → run AutoSSL for the new addon domain
+   (needs DNS already pointing at the server; free, auto-renewing).
+6. Optional, later: 301 `howellgibbens.com/mmdm/` → `mmdm.it` to consolidate
    search equity; add Wayback SavePageNow call to sync-to-server.sh.
-6. GoDaddy remains registrar (renewals only). Transfer to a cheaper EU
-   registrar any time — auth code + email, nothing more.
+7. GoDaddy remains registrar, demoted to a filing cabinet: annual renewal
+   only, no services, no fees beyond it.
+
+### Annex A — Cloudflare (optional second step, free tier)
+
+Leave GoDaddy as registrar but switch mmdm.it's NAMESERVERS to Cloudflare's
+free plan (a nameserver change, not a transfer — no lockouts, reversible).
+Gains: a sane DNS panel instead of GoDaddy's, and Cloudflare's edge network —
+which matters specifically because the server is in the US and the QR-code
+audience is in Fano: with edge caching, an Italian shop's phone pulls most of
+the site from a Milan node instead of crossing the Atlantic. Do the A-record
+swap (above) first; this layers on any time after.
+
+### Annex B — registrar transfer: DON'T, for now
+
+Earlier drafts said "transfer any time — auth code + email, nothing more."
+Overconfident for .it: it is a ccTLD with an EEA residency/presence
+requirement for registrants. GoDaddy got a US registrant in under whatever
+arrangement it uses; a transfer would re-open that question. Leave the
+registration parked at GoDaddy until the Fano shop provides a genuine
+Italian presence — at which point an Italian registrar/host (Aruba.it,
+Register.it) aligns with the MMdM story anyway, possibly arranged on the
+trip. The masking problems are 100% solved by the DNS steps above without
+ever touching the registration.
 
 Deadline anchor: before this year's calendar mailing, so every printed QR
 lands on the real address.
