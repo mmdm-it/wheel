@@ -33,7 +33,8 @@ const T = {
   pyramidDrawMs: 700,  // pyramid circles
   logoFadeMs: 800,
   holdMs: 1000,        // the finished drawing sits complete before it dissolves
-  dissolveMs: 1000     // hand off to the live wheel
+  dissolveMs: 1000,    // hand off to the live wheel
+  inputUnlockMs: 500   // keep touch blocked this long PAST the final fade-in
 };
 // No graphite phase (Howell 2026-07-17): the line-work is drawn in the
 // finished wheel's own colours, read from each element. The arc is a
@@ -165,8 +166,21 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
   const src = svg || document.getElementById('app');
   if (!src) return;
 
-  // Hide the live wheel; draw on the grey SVG in its place.
+  // Swallow all touch input for the whole reveal (the wheel's handlers are
+  // live underneath) — removed only 500ms past the final fade-in (Howell).
+  const inputBlocker = document.createElement('div');
+  inputBlocker.id = 'boot-splash-blocker';
+  inputBlocker.style.cssText = 'position:fixed;inset:0;z-index:100000;background:transparent;touch-action:none';
+  if (document.body) document.body.appendChild(inputBlocker);
+
+  // Hide the live wheel; draw on the grey SVG in its place. The logo group
+  // (blue circle + image) sits OUTSIDE the content group and the copyright is
+  // an HTML div — both hidden too, to arrive only at the end (Howell).
+  const logoGroup = src.querySelector('#volume-logo-group');
+  const copyright = typeof document !== 'undefined' ? document.getElementById('copyright-notice') : null;
   if (contentGroup) contentGroup.style.opacity = '0';
+  if (logoGroup) logoGroup.style.opacity = '0';
+  if (copyright) copyright.style.opacity = '0';
   if (svg) svg.style.opacity = '';
 
   const layer = el('g', { id: 'boot-splash-layer' });
@@ -178,7 +192,10 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
 
   const reveal = () => {
     if (contentGroup) contentGroup.style.opacity = '';
+    if (logoGroup) logoGroup.style.opacity = '';
+    if (copyright) copyright.style.opacity = '';
     layer.remove();
+    inputBlocker.remove();
   };
 
   try {
@@ -250,16 +267,17 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
     await Promise.all(readLabelEls(src, '.child-pyramid-label').map(l => typeLabel(text, l)));
     await wait(T.gapMs);
 
-    // 6) The maker's mark dissolves in (the raster logo).
-    const logo = src.querySelector('image');
-    if (logo) {
-      const clone = logo.cloneNode(true);
-      clone.style.opacity = '0';
-      clone.style.transition = `opacity ${T.logoFadeMs}ms ease-in`;
-      layer.appendChild(clone);
-      requestAnimationFrame(() => { clone.style.opacity = '1'; });
-      await wait(T.logoFadeMs);
+    // 6) Only now — after all the line-work — the maker's mark (the real logo
+    // group: blue circle + image) and the copyright notice fade in.
+    if (logoGroup) {
+      logoGroup.style.transition = `opacity ${T.logoFadeMs}ms ease-in`;
+      logoGroup.style.opacity = '1';
     }
+    if (copyright) {
+      copyright.style.transition = `opacity ${T.logoFadeMs}ms ease-in`;
+      copyright.style.opacity = '1';
+    }
+    await wait(T.logoFadeMs);
 
     // 7) Hold — the finished drawing complete on the desk before it lifts.
     await wait(T.holdMs);
@@ -273,6 +291,10 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
     requestAnimationFrame(() => { layer.style.opacity = '0'; });
     await wait(T.dissolveMs);
     layer.remove();
+
+    // The wheel is fully faded in — hold input off a beat longer, then release.
+    await wait(T.inputUnlockMs);
+    inputBlocker.remove();
   } catch (err) {
     reveal();
     throw err;
