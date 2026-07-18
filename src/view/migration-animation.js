@@ -82,12 +82,13 @@ let _animating = false;
 /* ------------------------------------------------------------------ */
 let _txn = null;
 
-export function beginMigrationTransaction({ restore } = {}) {
+export function beginMigrationTransaction({ restore, watchdogMs = null } = {}) {
   if (_txn) _finishTransaction(_txn); // a stuck transaction must not wedge the next
   const txn = { restore: restore || null, pending: 0, finishers: [], watchdog: 0, done: false };
   // Watchdog: if an animation dies without settling, force the barrier so
-  // the real elements can never stay hidden.
-  txn.watchdog = setTimeout(() => _finishTransaction(txn), RING_RADIAL_DURATION * 2 + 500);
+  // the real elements can never stay hidden. Callers running longer-than-
+  // default animations (the gateway transit) pass their own horizon.
+  txn.watchdog = setTimeout(() => _finishTransaction(txn), watchdogMs || (RING_RADIAL_DURATION * 2 + 500));
   _txn = txn;
   return txn;
 }
@@ -387,8 +388,10 @@ export function animatePyramidFromHub(opts) {
     hubX,
     hubY,
     pyramidGroup,
-    onComplete
+    onComplete,
+    durationMs = null
   } = opts;
+  const dur = durationMs || ANIM_DURATION;
 
   const txn = txnArm();
   if (!svgRoot || pyramidNodes.length === 0) {
@@ -446,7 +449,7 @@ export function animatePyramidFromHub(opts) {
 
   afterPaint(() => {
     entries.forEach(e => {
-      e.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+      e.g.style.transition = `transform ${dur}ms ease-in-out`;
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
@@ -456,7 +459,7 @@ export function animatePyramidFromHub(opts) {
         overlay.remove();
         if (pyramidGroup) pyramidGroup.style.opacity = '';
       });
-    }, ANIM_DURATION);
+    }, dur);
   });
 }
 
@@ -479,8 +482,10 @@ export function animatePyramidToHub(opts) {
     hubX,
     hubY,
     pyramidGroup,
-    onComplete
+    onComplete,
+    durationMs = null
   } = opts;
+  const dur = durationMs || ANIM_DURATION;
 
   const txn = txnArm();
   if (!svgRoot || pyramidNodes.length === 0) {
@@ -537,7 +542,7 @@ export function animatePyramidToHub(opts) {
 
   afterPaint(() => {
     entries.forEach(e => {
-      e.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+      e.g.style.transition = `transform ${dur}ms ease-in-out`;
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
@@ -546,7 +551,7 @@ export function animatePyramidToHub(opts) {
       // onComplete → setPrimaryItems will repaint the parent's pyramid.
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    }, dur);
   });
 }
 
@@ -581,8 +586,10 @@ export function animateRingOutward(opts) {
     skipId = null,
     nodesGroup,
     labelsGroup,
-    onComplete
+    onComplete,
+    durationMs = null
   } = opts;
+  const dur = durationMs || RING_RADIAL_DURATION;
 
   // Filter out the magnifier node if skipId is provided
   const nodesToAnimate = skipId
@@ -668,7 +675,7 @@ export function animateRingOutward(opts) {
 
   afterPaint(() => {
     entries.forEach(e => {
-      e.g.style.transition = `transform ${RING_RADIAL_DURATION}ms ease-in-out`;
+      e.g.style.transition = `transform ${dur}ms ease-in-out`;
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
@@ -681,7 +688,7 @@ export function animateRingOutward(opts) {
         if (nodesGroup)  nodesGroup.style.opacity = '';
         if (labelsGroup) labelsGroup.style.opacity = '';
       });
-    }, RING_RADIAL_DURATION);
+    }, dur);
   });
 }
 
@@ -721,8 +728,10 @@ export function animateRingInward(opts) {
     viewportHeight = 0,
     nodesGroup,
     labelsGroup,
-    onComplete
+    onComplete,
+    durationMs = null
   } = opts;
+  const dur = durationMs || ANIM_DURATION;
 
   const nodesToAnimate = skipId
     ? ringNodes.filter(n => (n.item?.id ?? n.id) !== skipId)
@@ -850,7 +859,7 @@ export function animateRingInward(opts) {
       // 600 ms ease-in-out — in sync with animateOut and animatePyramidToHub.
       // The slow-start is now visible (nodes begin at the viewport edge) and
       // reads as gentle acceleration, matching the contracting-universe feel.
-      e.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+      e.g.style.transition = `transform ${dur}ms ease-in-out`;
       e.g.style.transform = 'translate(0px, 0px)';
     });
 
@@ -863,7 +872,7 @@ export function animateRingInward(opts) {
         if (nodesGroup)  nodesGroup.style.opacity = '';
         if (labelsGroup) labelsGroup.style.opacity = '';
       });
-    }, ANIM_DURATION);
+    }, dur);
   });
 }
 
@@ -1295,8 +1304,10 @@ export function animateParentButtonOutward(opts) {
     arcRadius,
     buttonElement,
     buttonLabelElement,
-    onComplete
+    onComplete,
+    durationMs = null
   } = opts;
+  const dur = durationMs || ANIM_DURATION;
 
   const txn = txnArm();
   if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
@@ -1347,14 +1358,14 @@ export function animateParentButtonOutward(opts) {
   overlay.getBoundingClientRect();
 
   afterPaint(() => {
-    g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+    g.style.transition = `transform ${dur}ms ease-in-out`;
     g.style.transform = `translate(${translateX}px, ${translateY}px)`;
 
     setTimeout(() => {
       // Real parent button will be restored by the render after setPrimaryItems
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    }, dur);
   });
 }
 
@@ -1375,8 +1386,10 @@ export function animateParentButtonInward(opts) {
     arcRadius,
     buttonElement,
     buttonLabelElement,
-    onComplete
+    onComplete,
+    durationMs = null
   } = opts;
+  const dur = durationMs || ANIM_DURATION;
 
   const txn = txnArm();
   if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
@@ -1427,14 +1440,14 @@ export function animateParentButtonInward(opts) {
   overlay.getBoundingClientRect();
 
   afterPaint(() => {
-    g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+    g.style.transition = `transform ${dur}ms ease-in-out`;
     g.style.transform = 'translate(0px, 0px)';
 
     setTimeout(() => {
       // Real parent button fill + label will be restored by the caller.
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    }, dur);
   });
 }
 

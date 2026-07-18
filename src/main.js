@@ -4,6 +4,7 @@ import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
+import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
@@ -616,7 +617,7 @@ function launchGateway(gateway) {
   const returnContext = { volume: currentVolumeId, itemId: gateway.returnItemId || null };
   const search = `?volume=${encodeURIComponent(gateway.volume)}&level=root`;
   // Boot first; only a successful boot earns the history entry (H4).
-  bootVolume(gateway.volume, search, returnContext)
+  bootVolume(gateway.volume, search, returnContext, { mode: 'launch' })
     .then(() => {
       try {
         window.history.pushState({ wheelGateway: true, gatewayReturn: returnContext }, '', search);
@@ -632,7 +633,7 @@ function returnThroughGateway() {
   params.set('volume', ctx.volume);
   if (ctx.itemId) params.set('item', ctx.itemId);
   const search = `?${params.toString()}`;
-  bootVolume(ctx.volume, search, null)
+  bootVolume(ctx.volume, search, null, { mode: 'return' })
     .then(() => {
       try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* ignore */ }
     })
@@ -653,7 +654,7 @@ function restoredGatewayReturn() {
   return null;
 }
 
-async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null) {
+async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null, transit = null) {
   performance.mark('wheel:boot-start');
   // The splash reveal is initial-load only, never a gateway transit. Decide
   // now and hide the live wheel so it can be dissolved into, not popped on.
@@ -702,6 +703,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       : ''
   });
   if (!items.length) throw new Error(`no items found for volume "${volume}"`);
+
+  // Gateway transit (C.4): freeze the outgoing screen — colors inlined,
+  // input swallowed — so the cinema wipe can erase it over the new volume.
+  const wipeSnapshot = transit ? captureGatewaySnapshot(svg) : null;
 
   // ── Point of no return ── the new volume built successfully; only now
   // tear down the previous instance (Phase B audit, M1: a late failure
@@ -825,6 +830,24 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   currentApp = app;
   // Expose app to window for console API
   window.app = app;
+  // Gateway transit: the new volume is fully rendered — lay the frozen old
+  // screen over it and sweep the wipe line, hub-centered, top → lower right.
+  // Same tick as the render above, so the swap itself never paints.
+  if (transit && wipeSnapshot) {
+    try {
+      // Launch wipes downward; return wipes back up — the wipe always flows
+      // away from where you are going.
+      playGatewayWipe({
+        svg,
+        snapshot: wipeSnapshot,
+        viewport,
+        direction: transit.mode === 'return' ? 'up' : 'down'
+      });
+    } catch (err) {
+      console.warn('[wheel] gateway wipe failed', err);
+      wipeSnapshot.remove();
+    }
+  }
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId });
   app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId }));
   // Generic post-boot hook: adapters may schedule volume-specific startup
