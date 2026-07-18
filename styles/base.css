@@ -42,6 +42,13 @@ html, body {
   overflow: hidden;
   overscroll-behavior: none;
   touch-action: none;
+  /* Android Chromium (Chrome, DuckDuckGo) flashes a translucent highlight box
+     over any element with a click handler on touch — on an SVG group that
+     means its whole bounding rect (seen over the parent button). Not a link,
+     not navigation: suppress it, and the text-selection long-press cousin. */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
 }
 body {
   position: fixed;
@@ -59,6 +66,13 @@ svg {
   height: 100vh;
   height: 100dvh;
   touch-action: none;
+}
+/* Tapping can also FOCUS the handler-bearing element in some browsers, which
+   paints a persistent outline box until the next tap. The instrument has no
+   keyboard navigation; nothing inside the canvas should ever show one. */
+svg :focus,
+svg :focus-visible {
+  outline: none;
 }
 
 /* Portrait gate: the wheel's geometry only works in portrait, so on a touch
