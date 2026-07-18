@@ -335,11 +335,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       bibleMode = 'chapter';
       bibleVerseContext = null;
       bibleChapterContext = { bookId: ctx.bookId, testamentId: ctx.testamentId, sectionId: ctx.sectionId };
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
         migrateOrSet(chapterItems, chapterIdx >= 0 ? chapterIdx : 0, true);
       }
+      // After the migration starts — an earlier call renders the post-ascent
+      // parent state in full view before anything is hidden.
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       return true;
     }
 
@@ -354,11 +356,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       if (!bookItems.length) return false;
       bibleMode = 'book';
       bibleChapterContext = null;
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
         migrateOrSet(bookItems, bookSelected, bookPreserve);
       }
+      // After the migration starts — an earlier call renders the post-ascent
+      // parent state in full view before anything is hidden.
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       return true;
     }
     if (bibleMode === 'book') {
@@ -374,11 +378,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       bibleMode = 'testament';
       // With a gateway root above, the parent button stays visible
       // (BIBLIA SACRA LATINA); without one, testaments are the top level.
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: hasRoot });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
         migrateOrSet(testamentItems, testamentSelected, true);
       }
+      // After the migration starts — an earlier call renders the post-ascent
+      // parent state in full view before anything is hidden.
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: hasRoot });
       return true;
     }
     if (bibleMode === 'testament' && hasRoot) {
@@ -386,11 +392,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // single-item BIBLIA SACRA LATINA root ring.
       const rootChain = buildBibleRootChain();
       bibleMode = 'root';
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayLabel) });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
         migrateOrSet(rootChain.items, rootChain.selectedIndex, rootChain.preserveOrder);
       }
+      // After the migration starts — an earlier call renders the post-ascent
+      // parent state in full view before anything is hidden.
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayLabel) });
       return true;
     }
     if (bibleMode === 'root') {

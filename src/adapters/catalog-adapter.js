@@ -153,7 +153,12 @@ export function normalize(raw) {
     meta: {
       volumeId: volumeKey,
       leafLevel: 'model',
-      suffixMerge: true,
+      // Migration grammar (declared, not inferred): descending FROM a ring of
+      // one of these levels, the magnifier label merges into the parent label
+      // as a suffix ("N CIL" joining the maker's name); ascending back to that
+      // ring splits it out again. Absent levels (and volumes that omit the
+      // field entirely) get plain replace.
+      suffixMerge: ['cylinder'],
       levels: ['market', 'country', 'manufacturer', 'cylinder', 'family', 'subfamily', 'model'],
       dimensions
     }
@@ -332,15 +337,17 @@ export const catalogAdapter = {
       if (navStack.length === 0) return false;
       const snapshot = navStack.pop();
       catalogMode = navStack.length === 0 ? 'manufacturer' : 'child';
-      // At manufacturer level (navStack empty), parent button must stay visible
-      // for the country label / shiftLayersOut default behaviour
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) {
         const { items, selectedIndex, preserveOrder } = snapshot;
         // Use migrateOut for animated transition when available; fall back to instant swap.
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
         migrateOrSet(items || [], selectedIndex ?? 0, preserveOrder ?? false);
       }
+      // After the migration starts — an earlier call renders the post-ascent
+      // parent state in full view before anything is hidden.
+      // At manufacturer level (navStack empty), parent button must stay visible
+      // for the country label / shiftLayersOut default behaviour
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       return true;
     };
     // Build the parent button label from the navStack history.

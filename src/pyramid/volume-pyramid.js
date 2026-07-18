@@ -82,9 +82,6 @@ export function buildCatalogPyramid({
     }
     const selectedIdx = children.findIndex(m => m.id === instr.item.id);
     if (typeof setCatalogMode === 'function') setCatalogMode('child');
-    if (app?.setParentButtons) {
-      app.setParentButtons({ showOuter: true });
-    }
     if (app?.setPrimaryItems) {
       // Migrate IN: siblings land on the focus ring with the clicked item selected.
       // If a leaf (model) lands in the magnifier, the render loop's leaf detection
@@ -92,6 +89,14 @@ export function buildCatalogPyramid({
       // Use migrateIn for animated transition when available; fall back to instant swap.
       const migrateOrSet = app.migrateIn || app.setPrimaryItems;
       migrateOrSet(children, selectedIdx >= 0 ? selectedIdx : 0, true);
+    }
+    // AFTER the migration starts, never before: setParentButtons renders
+    // immediately, and a render between the nav-stack push and migrateIn
+    // repaints the parent button with the POST-descend label in full view —
+    // the "label pops before the animation" bug. Once migrateIn has begun,
+    // the reals are hidden and the migration barrier owns their reveal.
+    if (app?.setParentButtons) {
+      app.setParentButtons({ showOuter: true });
     }
   };
   return { getChildren, onClick };
@@ -131,12 +136,14 @@ export function buildCalendarPyramid({
     if (typeof setCalendarMonthContext === 'function') {
       setCalendarMonthContext({ yearId: year?.id || null });
     }
-    if (app?.setParentButtons) {
-      app.setParentButtons({ showOuter: true });
-    }
     if (app?.setPrimaryItems) {
       const migrateOrSet = app.migrateIn || app.setPrimaryItems;
       migrateOrSet(months, selectedIdx >= 0 ? selectedIdx : 0, true);
+    }
+    // After the migration starts (see buildCatalogPyramid) — an earlier call
+    // would repaint the parent button pre-animation.
+    if (app?.setParentButtons) {
+      app.setParentButtons({ showOuter: true });
     }
   };
   return { getChildren, onClick };
@@ -203,11 +210,12 @@ export function buildBiblePyramid({
       if (!testamentItems?.length) return;
       const selectedIdx = testamentItems.findIndex(t => t && t.id === instr.item.id);
       if (typeof setBibleMode === 'function') setBibleMode('testament');
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateIn || app.setPrimaryItems;
         migrateOrSet(testamentItems, selectedIdx >= 0 ? selectedIdx : 0, true);
       }
+      // After the migration starts (see buildCatalogPyramid).
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       return;
     }
 
@@ -223,11 +231,12 @@ export function buildBiblePyramid({
       if (!bookItems.length) return;
       const selectedIdx = bookItems.findIndex(b => b && b.id === instr.item.id);
       if (typeof setBibleMode === 'function') setBibleMode('book');
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateIn || app.setPrimaryItems;
         migrateOrSet(bookItems, selectedIdx >= 0 ? selectedIdx : 0, true);
       }
+      // After the migration starts (see buildCatalogPyramid).
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       return;
     }
 
@@ -245,12 +254,13 @@ export function buildBiblePyramid({
           testamentId: book.testamentId
         });
       }
-      if (app?.setParentButtons) {
-        app.setParentButtons({ showOuter: true });
-      }
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateIn || app.setPrimaryItems;
         migrateOrSet(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
+      }
+      // After the migration starts (see buildCatalogPyramid).
+      if (app?.setParentButtons) {
+        app.setParentButtons({ showOuter: true });
       }
       return;
     }
@@ -272,12 +282,13 @@ export function buildBiblePyramid({
           externalFile: chapter.meta?.externalFile
         });
       }
-      if (app?.setParentButtons) {
-        app.setParentButtons({ showOuter: true });
-      }
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateIn || app.setPrimaryItems;
         migrateOrSet(verseItems, selectedIdx >= 0 ? selectedIdx : 0, true);
+      }
+      // After the migration starts (see buildCatalogPyramid).
+      if (app?.setParentButtons) {
+        app.setParentButtons({ showOuter: true });
       }
     }
   };

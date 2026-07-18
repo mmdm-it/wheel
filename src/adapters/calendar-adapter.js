@@ -236,11 +236,13 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
         initialItemId: yearId
       });
       calendarMode = 'year';
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayReturnLabel) });
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
         migrateOrSet(yearItems, yearSelected, true);
       }
+      // After the migration starts — an earlier call renders the post-ascent
+      // parent state in full view before anything is hidden.
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayReturnLabel) });
       return true;
     }
     if (typeof onGatewayReturn === 'function') return Boolean(onGatewayReturn());

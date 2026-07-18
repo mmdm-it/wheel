@@ -53,6 +53,17 @@ describe('catalog adapter', () => {
     assert.ok(catalogAdapter.layoutSpec);
   });
 
+  it('declares the migration grammar as levels, not a bare flag', async () => {
+    const manifest = await loadManifest();
+    const norm = normalize(manifest);
+    const merge = norm.meta.suffixMerge;
+    assert.ok(Array.isArray(merge), 'suffixMerge must be an array of level names');
+    assert.ok(merge.length > 0, 'catalog declares at least one merge level');
+    for (const level of merge) {
+      assert.ok(norm.meta.levels.includes(level), `merge level "${level}" must exist in meta.levels`);
+    }
+  });
+
   it('returns adapter-driven detail payloads', async () => {
     const manifest = await loadManifest();
     const manuf = { id: 'emea__italy__VM Motori', name: 'VM Motori' };
