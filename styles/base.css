@@ -28,17 +28,37 @@
 
 * { box-sizing: border-box; }
 
-body {
+/* Lock the page into a fixed, non-scrollable surface. A scrollable page is
+   what lets a mobile browser (e.g. DuckDuckGo/Android) treat a vertical scrub
+   as page-scroll and toggle its toolbar mid-gesture — our whole navigation is
+   vertical swiping, so the page must never scroll. touch-action must sit on
+   the SVG itself (the element the finger lands on), not just body — it is not
+   inherited. overscroll-behavior kills the rubber-band/pull effects. */
+html, body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+}
+body {
+  position: fixed;
+  inset: 0;
   background: var(--color-bg);
   font-family: var(--theme-font-body, var(--focus-node-font, 'Montserrat')), sans-serif;
-  overflow: hidden;
-  touch-action: none;
 }
 
 svg {
   width: 100vw;
+  /* 100vh is the toolbar-HIDDEN height on browsers with dynamic chrome, which
+     over-sizes the canvas and crops the bottom; dvh is the dynamic (current)
+     height. JS then pins the exact size (main.js). vh first as the fallback
+     for browsers without dvh. */
   height: 100vh;
+  height: 100dvh;
+  touch-action: none;
 }
 
 .copyright-notice {

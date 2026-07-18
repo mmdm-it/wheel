@@ -13,7 +13,27 @@ import { getArcParameters, getViewportWindow, getNodeSpacing } from './geometry/
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 
 const svg = document.getElementById('app');
-const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+
+// Viewport responsiveness, part one: measure the GENUINELY-visible area and
+// size the canvas from JS to the same numbers the geometry uses. window.inner*
+// reports the full screen as if there were no address bar; visualViewport is
+// the area actually visible BELOW a browser's chrome (e.g. a DuckDuckGo/Android
+// top address bar). Measuring inner* — and measuring it at module load, before
+// the bar drops in — computed for a full screen and the bar then cropped the
+// bottom. One source of truth, measured fresh at boot.
+function measureViewport() {
+  const vv = window.visualViewport;
+  const w = vv && vv.width ? Math.round(vv.width) : window.innerWidth;
+  const h = vv && vv.height ? Math.round(vv.height) : window.innerHeight;
+  return getViewportInfo(w, h);
+}
+function pinCanvas(vp) {
+  if (!svg) return;
+  svg.style.width = `${vp.width}px`;
+  svg.style.height = `${vp.height}px`;
+}
+let viewport = measureViewport();
+pinCanvas(viewport);
 const tapDebugEnabled = new URLSearchParams(window.location.search).get('tapdebug') === '1';
 
 if (tapDebugEnabled && typeof window !== 'undefined') {
@@ -779,6 +799,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       .map(item => ({ from: item.parentId, to: item.id })),
     meta: { volumeId: volume }
   };
+
+  // Re-measure just before rendering: by now the page has settled and the
+  // browser's address bar (if any) is present, so the visible viewport is
+  // accurate. Re-pin the canvas to it so layout and canvas agree with reality.
+  viewport = measureViewport();
+  pinCanvas(viewport);
 
   app = createApp({
     svgRoot: svg,

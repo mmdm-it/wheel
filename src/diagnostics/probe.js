@@ -66,6 +66,36 @@ function navigationAutopsy() {
   };
 }
 
+// Every viewport metric at once — mobile browsers disagree about what the
+// height "is" (innerHeight vs 100vh vs the visual viewport vs the client box),
+// and a bottom-crop is exactly that disagreement. Comparing a broken config
+// against a working one across these numbers names the culprit.
+function viewportMetrics() {
+  const de = document.documentElement;
+  const vv = window.visualViewport || null;
+  let css100 = null;
+  try {
+    const p = document.createElement('div');
+    p.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;visibility:hidden;pointer-events:none';
+    document.body.appendChild(p);
+    const r = p.getBoundingClientRect();
+    css100 = `${Math.round(r.width)}x${Math.round(r.height)}`; // what 100vw x 100vh resolves to
+    p.remove();
+  } catch (e) { /* ignore */ }
+  const app = document.getElementById('app');
+  const ar = app && app.getBoundingClientRect ? app.getBoundingClientRect() : null;
+  return {
+    inner: `${window.innerWidth}x${window.innerHeight}`,            // geometry uses this
+    client: `${de.clientWidth}x${de.clientHeight}`,
+    visual: vv ? `${Math.round(vv.width)}x${Math.round(vv.height)}@${Math.round(vv.offsetTop)}scale${(vv.scale || 1).toFixed(2)}` : null,
+    css100vh: css100,                                              // what the SVG (100vh) actually gets
+    appBox: ar ? `${Math.round(ar.width)}x${Math.round(ar.height)}@top${Math.round(ar.top)}` : null,
+    screen: `${window.screen ? window.screen.width : '?'}x${window.screen ? window.screen.height : '?'}`,
+    dpr: window.devicePixelRatio || 1,
+    orient: (window.screen && window.screen.orientation && window.screen.orientation.type) || (window.innerWidth > window.innerHeight ? 'landscape' : 'portrait')
+  };
+}
+
 function buildReport(reason) {
   return {
     session: sessionId,
@@ -73,10 +103,7 @@ function buildReport(reason) {
     seq: flushed,
     host: (typeof location !== 'undefined' && location.host) || '',
     path: (typeof location !== 'undefined' && location.pathname) || '',
-    device: {
-      viewport: `${window.innerWidth}x${window.innerHeight}`,
-      dpr: window.devicePixelRatio || 1
-    },
+    device: viewportMetrics(),
     nav: navigationAutopsy(),
     boot: window.__wheelBootPhases || null,
     resources: resourceAutopsy(),
