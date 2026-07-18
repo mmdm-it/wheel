@@ -30,7 +30,7 @@ const T = {
   circleDrawMs: 750,   // the magnifier / parent button
   charMs: 85,          // per typed character — unhurried, handcrafted
   gapMs: 360,          // breath between the focal labels
-  pyramidDrawMs: 700,  // pyramid circles
+  fanLineMs: 250,      // each fan line sweeping magnifier → child node
   logoFadeMs: 800,
   holdMs: 1000,        // the finished drawing sits complete before it dissolves
   dissolveMs: 1000,    // hand off to the live wheel
@@ -249,25 +249,48 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
       });
     await wait(T.circleDrawMs);
 
-    // 3) Focal labels IN ORDER: parent (country) → magnifier (maker).
+    // 3) The child pyramid, node by node (Howell 2026-07-18: ALL line-work
+    // completes before any text). Each circle compass-draws, then its fan
+    // line sweeps out from the magnifier to meet it. The live wheel runs the
+    // lines centre-to-centre and hides them under the filled shapes; in
+    // outline they'd stab through the circles, so trim each line to the rims.
+    const fanLines = Array.from(src.querySelectorAll('.child-pyramid-fan-line')).map(ln => ({
+      x1: parseFloat(ln.getAttribute('x1')), y1: parseFloat(ln.getAttribute('y1')),
+      x2: parseFloat(ln.getAttribute('x2')), y2: parseFloat(ln.getAttribute('y2')),
+      weight: parseFloat(getComputedStyle(ln).strokeWidth) || 1,
+      color: finalColor(ln)
+    })).filter(f => [f.x1, f.y1, f.x2, f.y2].every(Number.isFinite));
+    const fanFor = c => fanLines.find(f => Math.hypot(f.x2 - c.x, f.y2 - c.y) <= Math.max(2, c.r));
+    for (const c of readCircles(src, '.child-pyramid-node')) {
+      inkCircle(lines, c, T.nodeDrawMs);
+      await wait(T.nodeDrawMs + T.nodeGapMs);
+      const f = fanFor(c);
+      if (f) {
+        const dx = f.x2 - f.x1, dy = f.y2 - f.y1;
+        const len = Math.hypot(dx, dy) || 1;
+        const startTrim = (mag && Math.hypot(f.x1 - mag.x, f.y1 - mag.y) <= 2) ? mag.r : 0;
+        const x1 = f.x1 + (dx / len) * startTrim, y1 = f.y1 + (dy / len) * startTrim;
+        const x2 = f.x2 - (dx / len) * c.r, y2 = f.y2 - (dy / len) * c.r;
+        const seg = strokeLine(lines, `M${x1.toFixed(1)} ${y1.toFixed(1)} L${x2.toFixed(1)} ${y2.toFixed(1)}`, f.weight, f.color);
+        inkStroke(seg, len - startTrim - c.r, T.fanLineMs);
+        await wait(T.fanLineMs + T.nodeGapMs);
+      }
+    }
+    await wait(T.gapMs);
+
+    // 4) Only with every circle and line on the page does the typography
+    // begin (Howell 2026-07-18): parent → magnifier → child counts one, two,
+    // three → then every other visible name at once, the chorus.
     for (const l of readLabelEls(src, '.focus-ring-parent-label')) { await typeLabel(text, l); await wait(T.gapMs); }
     const magLabels = readLabelEls(src, '.focus-ring-magnifier-label:not(.focus-ring-parent-label)');
     for (const l of magLabels) { await typeLabel(text, l); await wait(T.gapMs); }
-
-    // 4) Every other visible manufacturer types at once — the chorus, before
-    // the pyramid (Howell 2026-07-17: manufacturer names come first).
+    for (const l of readLabelEls(src, '.child-pyramid-label')) { await typeLabel(text, l); await wait(T.gapMs); }
     const magText = new Set(magLabels.map(l => (l.textContent || '').trim()));
     const others = readLabelEls(src, '.focus-ring-label').filter(l => !magText.has((l.textContent || '').trim()));
     await Promise.all(others.map(l => typeLabel(text, l)));
     await wait(T.gapMs);
 
-    // 5) Then the child pyramid inks, and its labels (the cylinder counts) type.
-    readCircles(src, '.child-pyramid-node').forEach(c => inkCircle(lines, c));
-    await wait(T.pyramidDrawMs * 0.5);
-    await Promise.all(readLabelEls(src, '.child-pyramid-label').map(l => typeLabel(text, l)));
-    await wait(T.gapMs);
-
-    // 6) Only now — after all the line-work — the maker's mark (the real logo
+    // 5) Only now — after all the line-work — the maker's mark (the real logo
     // group: blue circle + image) and the copyright notice fade in.
     if (logoGroup) {
       logoGroup.style.transition = `opacity ${T.logoFadeMs}ms ease-in`;
@@ -279,10 +302,10 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
     }
     await wait(T.logoFadeMs);
 
-    // 7) Hold — the finished drawing complete on the desk before it lifts.
+    // 6) Hold — the finished drawing complete on the desk before it lifts.
     await wait(T.holdMs);
 
-    // 8) Cross-fade to the live coloured wheel underneath.
+    // 7) Cross-fade to the live coloured wheel underneath.
     if (contentGroup) {
       contentGroup.style.transition = `opacity ${T.dissolveMs}ms ease-in-out`;
       contentGroup.style.opacity = '';
