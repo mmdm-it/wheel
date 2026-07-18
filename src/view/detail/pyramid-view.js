@@ -130,6 +130,9 @@ export class PyramidView {
 
         const label = this.doc.createElementNS('http://www.w3.org/2000/svg', 'text');
         label.setAttribute('class', 'child-pyramid-label');
+        // The label is tappable exactly like its circle (the host's pointer
+        // delegation reads data-index from whichever the finger lands on).
+        label.setAttribute('data-index', idx);
         label.setAttribute('x', instr.x);
         label.setAttribute('y', instr.y);
         label.setAttribute('text-anchor', 'middle');

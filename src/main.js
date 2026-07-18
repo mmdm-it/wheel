@@ -409,8 +409,13 @@ function wireInteractions(getApp) {
       return;
     }
     suppressNativeClickUntil = Date.now() + 450;
-    // Child pyramid node — delegate to the app's pyramid click handler
-    const isPyramidNode = event.target && event.target.closest && event.target.closest('.child-pyramid-node');
+    // Child pyramid node OR ITS LABEL — delegate to the app's pyramid click
+    // handler. The label is a sibling <text>, not a descendant of the circle,
+    // so matching only the circle made a tap on the word itself fall through
+    // to ring near-miss targeting (the multi-tap gateway bug on iOS browsers
+    // whose touch-target adjustment doesn't rescue the miss).
+    const isPyramidNode = event.target && event.target.closest
+      && event.target.closest('.child-pyramid-node, .child-pyramid-label');
     if (isPyramidNode) {
       const attrIndex = isPyramidNode.getAttribute && isPyramidNode.getAttribute('data-index');
       const rawIndex = isPyramidNode.dataset?.index ?? attrIndex;
@@ -616,14 +621,22 @@ function launchGateway(gateway) {
   }
   const returnContext = { volume: currentVolumeId, itemId: gateway.returnItemId || null };
   const search = `?volume=${encodeURIComponent(gateway.volume)}&level=root`;
+  // Capture the outgoing screen AT THE TAP: the frozen copy covers its own
+  // identical pixels through the fetch (warming its rasterization so the
+  // wipe's first frames can't blink) and swallows input for the transit.
+  const transit = { mode: 'launch', snapshot: captureGatewaySnapshot(svg) };
   // Boot first; only a successful boot earns the history entry (H4).
-  bootVolume(gateway.volume, search, returnContext, { mode: 'launch' })
+  bootVolume(gateway.volume, search, returnContext, transit)
     .then(() => {
       try {
         window.history.pushState({ wheelGateway: true, gatewayReturn: returnContext }, '', search);
       } catch (err) { /* history unavailable (e.g. file://) */ }
     })
-    .catch(err => showBootError(`gateway boot failed: ${err.message}`));
+    .catch(err => {
+      // Failed boot leaves the OLD volume intact (M1) — uncover it.
+      if (transit.snapshot) transit.snapshot.remove();
+      showBootError(`gateway boot failed: ${err.message}`);
+    });
 }
 
 function returnThroughGateway() {
@@ -633,11 +646,15 @@ function returnThroughGateway() {
   params.set('volume', ctx.volume);
   if (ctx.itemId) params.set('item', ctx.itemId);
   const search = `?${params.toString()}`;
-  bootVolume(ctx.volume, search, null, { mode: 'return' })
+  const transit = { mode: 'return', snapshot: captureGatewaySnapshot(svg) };
+  bootVolume(ctx.volume, search, null, transit)
     .then(() => {
       try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* ignore */ }
     })
-    .catch(err => showBootError(`gateway return failed: ${err.message}`));
+    .catch(err => {
+      if (transit.snapshot) transit.snapshot.remove();
+      showBootError(`gateway return failed: ${err.message}`);
+    });
   return true;
 }
 
@@ -704,9 +721,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   });
   if (!items.length) throw new Error(`no items found for volume "${volume}"`);
 
-  // Gateway transit (C.4): freeze the outgoing screen — colors inlined,
-  // input swallowed — so the cinema wipe can erase it over the new volume.
-  const wipeSnapshot = transit ? captureGatewaySnapshot(svg) : null;
+  // Gateway transit (C.4): the outgoing screen was frozen at the tap
+  // (colors inlined, input swallowed) and has covered its own pixels since.
+  const wipeSnapshot = transit?.snapshot || null;
 
   // ── Point of no return ── the new volume built successfully; only now
   // tear down the previous instance (Phase B audit, M1: a late failure
@@ -714,7 +731,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // Teardown any previous volume instance — gateway reboots reuse the SVG.
   // Clear only the detail CONTENT: #detail-panel's inner skeleton
   // (#detail-content, #version-badge) is owned by index.html and must survive.
-  while (svg.firstChild) svg.removeChild(svg.firstChild);
+  Array.from(svg.childNodes).forEach(node => {
+    // The wipe snapshot stays: it is the old volume's face until the sweep.
+    if (node !== wipeSnapshot) svg.removeChild(node);
+  });
   const detailContentEl = document.getElementById('detail-content');
   if (detailContentEl) detailContentEl.innerHTML = '';
   const detailPanelEl = document.getElementById('detail-panel');
