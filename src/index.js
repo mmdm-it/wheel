@@ -10,7 +10,7 @@ import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.j
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
-import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge } from './view/migration-animation.js';
+import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -170,7 +170,12 @@ export function createApp({
 
   // Detail Sector leaf detection
   const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
-  const isCatalogVolume = Boolean(pyramidNormalized?.meta?.suffixMerge);
+  // Migration grammar, declared by the volume (meta.suffixMerge): the set of
+  // levels whose magnifier label merges into the parent label on descent and
+  // splits back out on ascent. Everything else is plain replace.
+  const suffixMergeLevels = new Set(
+    Array.isArray(pyramidNormalized?.meta?.suffixMerge) ? pyramidNormalized.meta.suffixMerge : []
+  );
   let detailSectorShown = false; // tracks whether DS is currently expanded
   let forcedDetailOpen = false;   // request to open DS at a non-leaf level
   let freezeDetailSector = false; // survives one post-expansion render without re-collapsing
@@ -374,9 +379,17 @@ export function createApp({
     //     The old parent button exits radially outward from the HUB.
     const prevSelected = nav.getCurrent();
     const prevMagnifierLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
-    const prevParentLabel = getParentLabel(prevSelected)
-      || view.parentButtonOuterLabel?.textContent?.trim()
-      || '';
+    // The OUTGOING parent label must be what is on screen right now — the DOM
+    // element, if visible. Asking getParentLabel here is unreliable: the
+    // adapter's nav stack has already been pushed by the pyramid click flow
+    // (savePreInState runs before migrateIn), so it answers with the
+    // POST-descend label — for a suffix-merge that's the already-merged text,
+    // which drew a doubled suffix ("… 2 CIL 2 CIL") during the flight.
+    const domParentLabel = (view.parentButtonOuterLabel
+      && view.parentButtonOuterLabel.getAttribute('display') !== 'none')
+      ? (view.parentButtonOuterLabel.textContent || '').trim()
+      : '';
+    const prevParentLabel = domParentLabel || getParentLabel(prevSelected) || '';
     const parentButtonX = vp.SSd * 0.13;
     const parentButtonY = vp.LSd * 0.93;
 
@@ -390,11 +403,45 @@ export function createApp({
     //     animation completes.
     //     Use style.visibility (not display attr) because render() calls
     //     removeAttribute('display') which would undo our hiding.
+    // Descending from a suffix-merge ring: the outgoing magnifier label joins
+    // the parent label as a suffix. Declared per level, no string sniffing.
+    const isSuffixMergeIn = Boolean(
+      prevSelected
+      && suffixMergeLevels.has(prevSelected.level)
+      && prevParentLabel
+      && prevMagnifierLabel
+    );
+
     if (view.magnifierLabel) view.magnifierLabel.style.visibility = 'hidden';
     if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = 'hidden';
-    // Hide circle fills but keep stroke rings visible
+    // Hide circle fills but keep stroke rings visible. The magnifier and
+    // parent button are FIXED VESSELS (Howell 2026-07-18): the circles never
+    // move — they empty during migration and their FILL travels as clones,
+    // refilling on arrival at the barrier.
     if (view.magnifierCircle) view.magnifierCircle.style.fill = 'none';
     if (view.parentButtonOuter) view.parentButtonOuter.style.fill = 'none';
+
+    // 5c. One transaction for the whole layer change: every animation below
+    //     arms it, and the reals are restored exactly once — at the barrier,
+    //     when ALL animations have finished — never from inside one
+    //     animation's callback racing the others.
+    beginMigrationTransaction({
+      restore: () => {
+        // If no ring nodes animated outward, nothing else restores the groups.
+        if (currentRingNodes.length === 0) {
+          if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+          if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        }
+        // If no pyramid-from-hub animation ran, restore pyramid here.
+        if (!lastPyramidData?.nodes?.length) {
+          if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
+        }
+        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
+      }
+    });
 
     // 6. Kick off ALL animations simultaneously:
     //    a) Old child pyramid → focus ring (animateIn) — clicked node grows to magnifier size
@@ -405,15 +452,6 @@ export function createApp({
     const selectedId = tempSelected?.id ?? null;
     const outgoingMagnifierId = prevSelected?.id ?? null;
 
-    const incomingParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
-    const isCatalogSuffixMergeIn = Boolean(
-      isCatalogVolume
-      && prevParentLabel
-      && prevMagnifierLabel
-      && incomingParentLabel
-      && incomingParentLabel.toUpperCase() === `${prevParentLabel} ${prevMagnifierLabel}`.toUpperCase()
-    );
-
     animateIn({
       svgRoot: view.contentGroup || view.svgRoot,
       pyramidNodes,
@@ -421,26 +459,8 @@ export function createApp({
       magnifierAngle: magnifier.angle,
       clickedId: selectedId,
       nodeRadius,
-      magnifierRadius,
-      onComplete: () => {
-        // If animateRingOutward is running (900 ms), it will restore
-        // nodesGroup/labelsGroup when it finishes.  But if there were
-        // no ring nodes to animate outward, restore them here.
-        if (currentRingNodes.length === 0) {
-          if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
-          if (view.labelsGroup) view.labelsGroup.style.opacity = '';
-        }
-        // If no pyramid-from-hub animation ran, restore pyramid too
-        if (!lastPyramidData?.nodes?.length) {
-          if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
-        }
-        // Restore magnifier label + circle fill (hidden so clones travel in their place)
-        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
-        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
-        // Restore parent button label + circle fill
-        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
-        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
-      }
+      magnifierRadius
+      // All restores happen at the transaction barrier (5c), not here.
     });
 
     // Old focus-ring nodes: animate radially outward (expanding galaxy)
@@ -470,8 +490,28 @@ export function createApp({
       });
     }
 
+    // (Launched before the merge overlay: SVG paints in document order, and
+    // the departing disc must slide out UNDER the anchored base label.)
+    // Old parent button fill → radially outward off-screen (leads the way).
+    // On a suffix-merge descent the LABEL is anchored (the merge overlay owns
+    // it), but the vessel's old fill still exits — as a label-less disc.
+    {
+      animateParentButtonOutward({
+        svgRoot: view.contentGroup || view.svgRoot,
+        buttonX: parentButtonX,
+        buttonY: parentButtonY,
+        radius: magnifierRadius,
+        label: isSuffixMergeIn ? '' : prevParentLabel,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        buttonElement: view.parentButtonOuter,
+        buttonLabelElement: view.parentButtonOuterLabel
+      });
+    }
+
     // Old magnifier → parent-button position (straight line)
-    if (isCatalogSuffixMergeIn) {
+    if (isSuffixMergeIn) {
       animateVolumeParentMerge({
         svgRoot: view.contentGroup || view.svgRoot,
         fromX: magnifier.x,
@@ -493,22 +533,6 @@ export function createApp({
         radius: magnifierRadius,
         label: prevMagnifierLabel,
         fromAngle: magnifier.angle
-      });
-    }
-
-    // Old parent button → radially outward off-screen (leads the way)
-    if (!isCatalogSuffixMergeIn) {
-      animateParentButtonOutward({
-        svgRoot: view.contentGroup || view.svgRoot,
-        buttonX: parentButtonX,
-        buttonY: parentButtonY,
-        radius: magnifierRadius,
-        label: prevParentLabel,
-        hubX: arcParams.hubX,
-        hubY: arcParams.hubY,
-        arcRadius: arcParams.radius,
-        buttonElement: view.parentButtonOuter,
-        buttonLabelElement: view.parentButtonOuterLabel
       });
     }
 
@@ -576,29 +600,62 @@ export function createApp({
     }
 
     // Snapshot magnifier and parent-button state BEFORE animations start.
+    // As in migrateIn: the OUTGOING parent label is what's on screen — the
+    // adapter has already popped its nav stack by the time migrateOut runs,
+    // so getParentLabel answers with the post-ascent label.
     const prevMagnifierLabel = formatLabel({ item: nav.getCurrent(), context: 'magnifier' }) || '';
-    const prevParentLabel = getParentLabel(nav.getCurrent())
-      || view.parentButtonOuterLabel?.textContent?.trim()
-      || '';
+    const domParentLabelOut = (view.parentButtonOuterLabel
+      && view.parentButtonOuterLabel.getAttribute('display') !== 'none')
+      ? (view.parentButtonOuterLabel.textContent || '').trim()
+      : '';
+    const prevParentLabel = domParentLabelOut || getParentLabel(nav.getCurrent()) || '';
     const parentButtonX = vp.SSd * 0.13;
     const parentButtonY = vp.LSd * 0.93;
     // The new parent label (after OUT) is the parent of tempSelected
     const newParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
-    const isCatalogSuffixMergeOut = Boolean(
-      isCatalogVolume
+    // Ascending back TO a suffix-merge ring: the suffix splits off the parent
+    // label and travels to the magnifier. The suffix is the INCOMING magnified
+    // item's own label (e.g. "3 CIL") — the old string-compare used the
+    // outgoing one, which never matched, so the unmerge popped instead of
+    // animating.
+    const nextMagnifierLabel = tempSelected
+      ? (formatLabel({ item: tempSelected, context: 'magnifier' }) || '')
+      : '';
+    const isSuffixMergeOut = Boolean(
+      tempSelected
+      && suffixMergeLevels.has(tempSelected.level)
       && newParentLabel
-      && prevMagnifierLabel
-      && prevParentLabel
-      && prevParentLabel.toUpperCase() === `${newParentLabel} ${prevMagnifierLabel}`.toUpperCase()
+      && nextMagnifierLabel
     );
 
     // Hide magnifier and parent button fills — clone circles travel in their place.
     // Stroke rings stay visible (empty) during the animation.
     // Use style.visibility (not display attr) because render() would undo it.
+    // EXCEPT on a suffix-merge ascent (Howell 2026-07-18): the parent's disc
+    // is anchored under its label and must never blink — the REAL disc stays
+    // filled the whole time while the clone (disc + suffix) peels off from
+    // under it. The label is still swapped for the overlay's base text, which
+    // paints ABOVE the traveling clone (the real label would sit below it).
     if (view.magnifierLabel) view.magnifierLabel.style.visibility = 'hidden';
     if (view.magnifierCircle) view.magnifierCircle.style.fill = 'none';
     if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = 'hidden';
     if (view.parentButtonOuter) view.parentButtonOuter.style.fill = 'none';
+
+    // One transaction for the whole layer change (see migrateIn 5c): reals
+    // restored once, at the barrier, after every animation has finished.
+    beginMigrationTransaction({
+      restore: () => {
+        // If no parent ring nodes animated inward, nothing else restores them.
+        if (parentRingNodes.length === 0) {
+          if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+          if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        }
+        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
+      }
+    });
 
     // Child Pyramid: animate existing nodes to the hub (off-screen) simultaneously
     // with the reverse migration animation, instead of letting them pop off.
@@ -633,6 +690,8 @@ export function createApp({
       nodesGroup: view.nodesGroup,
       labelsGroup: view.labelsGroup,
       onComplete: () => {
+        // Data commit happens at animation end (not at the barrier): the
+        // repaint lands while the reals are still hidden behind clones.
         setPrimaryItems(items, selectedIndex, preserveOrder);
         // Restore pyramid group visibility — animatePyramidToHub hid it and
         // intentionally did not restore it.  setPrimaryItems → render() has
@@ -640,23 +699,31 @@ export function createApp({
         if (view.pyramidView?.pyramidGroup) {
           view.pyramidView.pyramidGroup.style.opacity = '';
         }
-        // If animateRingInward is running (900 ms), it will restore
-        // nodesGroup/labelsGroup when it finishes.  But if there were
-        // no parent ring nodes to animate inward, restore them here.
-        if (parentRingNodes.length === 0) {
-          if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
-          if (view.labelsGroup) view.labelsGroup.style.opacity = '';
-        }
-        // Restore magnifier + parent button fills and labels
-        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
-        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
-        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
-        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
+        // Everything else restores at the transaction barrier.
       }
     });
 
+    // (Launched before the unmerge overlay: the arriving disc must dock
+    // UNDER the anchored base label — paint order is document order.)
+    // New parent button fill: fly in from off-screen radially. On a
+    // suffix-merge ascent the LABEL is anchored (the unmerge overlay owns
+    // it), but the vessel's new fill still arrives — as a label-less disc.
+    if (newParentLabel) {
+      animateParentButtonInward({
+        svgRoot: view.contentGroup || view.svgRoot,
+        buttonX: parentButtonX,
+        buttonY: parentButtonY,
+        radius: magnifierRadius,
+        label: isSuffixMergeOut ? '' : newParentLabel,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        buttonElement: view.parentButtonOuter,
+        buttonLabelElement: view.parentButtonOuterLabel
+      });
+    }
     // Parent button → magnifier position (straight line, reverse of IN)
-    if (isCatalogSuffixMergeOut) {
+    if (isSuffixMergeOut) {
       animateVolumeParentUnmerge({
         svgRoot: view.contentGroup || view.svgRoot,
         fromX: magnifier.x,
@@ -665,7 +732,7 @@ export function createApp({
         toY: parentButtonY,
         radius: magnifierRadius,
         baseLabel: newParentLabel,
-        suffixLabel: prevMagnifierLabel,
+        suffixLabel: nextMagnifierLabel,
         fromAngle: magnifier.angle
       });
     } else {
@@ -681,21 +748,6 @@ export function createApp({
       });
     }
 
-    // New parent button: fly in from off-screen radially
-    if (newParentLabel && !isCatalogSuffixMergeOut) {
-      animateParentButtonInward({
-        svgRoot: view.contentGroup || view.svgRoot,
-        buttonX: parentButtonX,
-        buttonY: parentButtonY,
-        radius: magnifierRadius,
-        label: newParentLabel,
-        hubX: arcParams.hubX,
-        hubY: arcParams.hubY,
-        arcRadius: arcParams.radius,
-        buttonElement: view.parentButtonOuter,
-        buttonLabelElement: view.parentButtonOuterLabel
-      });
-    }
   };
 
   const shiftLayersOut = () => {

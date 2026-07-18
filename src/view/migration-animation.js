@@ -68,6 +68,63 @@ const animatedNodesStack = [];
 let _animating = false;
 
 /* ------------------------------------------------------------------ */
+/*  Migration transaction                                             */
+/*                                                                    */
+/*  One layer change = one transaction: the caller hides the real     */
+/*  elements once and hands over a single restore; every animation    */
+/*  launched while the transaction is open arms it and settles on     */
+/*  completion. Only when ALL have settled does the barrier drop:     */
+/*  restore() brings the real elements back, and one frame later the  */
+/*  finishers retire the clones — so the hand-off is real-appears-    */
+/*  then-clone-leaves, never a gap. Previously each animation         */
+/*  restored/removed on its own timer, and the races between those    */
+/*  timers were the duplicate-text and popping bugs.                  */
+/* ------------------------------------------------------------------ */
+let _txn = null;
+
+export function beginMigrationTransaction({ restore } = {}) {
+  if (_txn) _finishTransaction(_txn); // a stuck transaction must not wedge the next
+  const txn = { restore: restore || null, pending: 0, finishers: [], watchdog: 0, done: false };
+  // Watchdog: if an animation dies without settling, force the barrier so
+  // the real elements can never stay hidden.
+  txn.watchdog = setTimeout(() => _finishTransaction(txn), RING_RADIAL_DURATION * 2 + 500);
+  _txn = txn;
+  return txn;
+}
+
+function _finishTransaction(txn) {
+  if (!txn || txn.done) return;
+  txn.done = true;
+  clearTimeout(txn.watchdog);
+  if (_txn === txn) _txn = null;
+  try { if (txn.restore) txn.restore(); } catch (e) { /* restore must never throw */ }
+  const finishers = txn.finishers;
+  if (typeof requestAnimationFrame === 'function') {
+    requestAnimationFrame(() => { finishers.forEach(f => { try { f(); } catch (e) { /* ignore */ } }); });
+  } else {
+    finishers.forEach(f => { try { f(); } catch (e) { /* ignore */ } });
+  }
+}
+
+/** Called at animation start: joins the open transaction, if any. */
+function txnArm() {
+  if (_txn) { _txn.pending += 1; return _txn; }
+  return null;
+}
+
+/**
+ * Called at animation completion. In a transaction the finisher (clone
+ * retirement) is deferred to the barrier; standalone it runs immediately —
+ * preserving the old per-animation behavior.
+ */
+function txnSettle(txn, finisher) {
+  if (!txn || txn.done) { if (finisher) finisher(); return; }
+  if (finisher) txn.finishers.push(finisher);
+  txn.pending -= 1;
+  if (txn.pending === 0) _finishTransaction(txn);
+}
+
+/* ------------------------------------------------------------------ */
 /*  Public API                                                        */
 /* ------------------------------------------------------------------ */
 
@@ -105,8 +162,10 @@ export function animateIn(opts) {
     onComplete
   } = opts;
 
+  const txn = txnArm();
   if (!svgRoot || pyramidNodes.length === 0 || ringTargets.length === 0) {
     if (onComplete) onComplete();
+    txnSettle(txn, null);
     return;
   }
 
@@ -195,6 +254,7 @@ export function animateIn(opts) {
     overlay.remove();
     _animating = false;
     if (onComplete) onComplete();
+    txnSettle(txn, null);
     return;
   }
 
@@ -217,32 +277,31 @@ export function animateIn(opts) {
       }
     });
 
-    // After animation ends: hide clones, signal complete
+    // After animation ends: signal complete; clone retirement is the
+    // transaction barrier's job (all animations settle, reals restore,
+    // THEN clones hide — no per-timer races).
     setTimeout(() => {
-
-      // Don't hide clones yet if an outward ring animation is still running —
-      // it won't restore nodesGroup/labelsGroup until RING_RADIAL_DURATION
-      // (900 ms), so hiding our clones at 600 ms would leave a ~300 ms gap
-      // with nothing visible.  Instead, defer hiding until the overlay from
-      // animateRingOutward is removed (which restores real node opacity).
-      const outwardOverlay = svgRoot.querySelector('.migration-animation-overlay.ring-outward');
-      if (outwardOverlay) {
-        // An outward animation is still in flight.  Use a MutationObserver
-        // to hide our clones the instant the outward overlay is removed
-        // (i.e. real nodes are restored).
-        const observer = new MutationObserver(() => {
-          if (!svgRoot.contains(outwardOverlay)) {
-            observer.disconnect();
-            animEntries.forEach(a => { a.g.style.opacity = '0'; });
-          }
-        });
-        observer.observe(svgRoot, { childList: true });
-      } else {
-        // No outward animation running — safe to hide immediately
-        animEntries.forEach(a => { a.g.style.opacity = '0'; });
-      }
       _animating = false;
       if (onComplete) onComplete();
+      if (txn) {
+        txnSettle(txn, () => { animEntries.forEach(a => { a.g.style.opacity = '0'; }); });
+      } else {
+        // Standalone (no transaction): keep the old coordination — don't
+        // hide clones while an outward ring animation (900 ms) still owns
+        // the real nodes' visibility, or nothing would be on screen.
+        const outwardOverlay = svgRoot.querySelector('.migration-animation-overlay.ring-outward');
+        if (outwardOverlay) {
+          const observer = new MutationObserver(() => {
+            if (!svgRoot.contains(outwardOverlay)) {
+              observer.disconnect();
+              animEntries.forEach(a => { a.g.style.opacity = '0'; });
+            }
+          });
+          observer.observe(svgRoot, { childList: true });
+        } else {
+          animEntries.forEach(a => { a.g.style.opacity = '0'; });
+        }
+      }
     }, ANIM_DURATION);
   });
 }
@@ -259,8 +318,10 @@ export function animateIn(opts) {
 export function animateOut(opts) {
   const { nodesGroup, labelsGroup, onComplete } = opts;
 
+  const txn = txnArm();
   if (animatedNodesStack.length === 0) {
     if (onComplete) onComplete();
+    txnSettle(txn, null);
     return;
   }
 
@@ -296,12 +357,12 @@ export function animateOut(opts) {
     });
 
     setTimeout(() => {
-      // Remove overlay entirely
-      overlay.remove();
-      // animateRingInward (same 600 ms duration) restores nodesGroup/labelsGroup
-      // on its own completion, so we don't duplicate that here.
+      // onComplete commits the data swap (setPrimaryItems) at animation end;
+      // the overlay retires at the transaction barrier. nodesGroup/labelsGroup
+      // are restored by animateRingInward's finisher.
       _animating = false;
       if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
     }, ANIM_DURATION);
   });
 }
@@ -329,8 +390,10 @@ export function animatePyramidFromHub(opts) {
     onComplete
   } = opts;
 
+  const txn = txnArm();
   if (!svgRoot || pyramidNodes.length === 0) {
     if (onComplete) onComplete();
+    txnSettle(txn, null);
     return;
   }
 
@@ -388,9 +451,11 @@ export function animatePyramidFromHub(opts) {
     });
 
     setTimeout(() => {
-      overlay.remove();
-      if (pyramidGroup) pyramidGroup.style.opacity = '';
       if (onComplete) onComplete();
+      txnSettle(txn, () => {
+        overlay.remove();
+        if (pyramidGroup) pyramidGroup.style.opacity = '';
+      });
     }, ANIM_DURATION);
   });
 }
@@ -417,8 +482,10 @@ export function animatePyramidToHub(opts) {
     onComplete
   } = opts;
 
+  const txn = txnArm();
   if (!svgRoot || pyramidNodes.length === 0) {
     if (onComplete) onComplete();
+    txnSettle(txn, null);
     return;
   }
 
@@ -475,10 +542,10 @@ export function animatePyramidToHub(opts) {
     });
 
     setTimeout(() => {
-      overlay.remove();
       // Do NOT restore pyramidGroup opacity — the OUT migration's
       // onComplete → setPrimaryItems will repaint the parent's pyramid.
       if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
     }, ANIM_DURATION);
   });
 }
@@ -522,8 +589,10 @@ export function animateRingOutward(opts) {
     ? ringNodes.filter(n => (n.item?.id ?? n.id) !== skipId)
     : ringNodes;
 
+  const txn = txnArm();
   if (!svgRoot || nodesToAnimate.length === 0) {
     if (onComplete) onComplete();
+    txnSettle(txn, null);
     return;
   }
 
@@ -604,12 +673,14 @@ export function animateRingOutward(opts) {
     });
 
     setTimeout(() => {
-      overlay.remove();
-      // Restore real focus-ring nodes now that outward clones are gone.
-      // This is the sole authority for restoring ring visibility during IN.
-      if (nodesGroup)  nodesGroup.style.opacity = '';
-      if (labelsGroup) labelsGroup.style.opacity = '';
       if (onComplete) onComplete();
+      // Sole authority for restoring ring visibility during IN — deferred
+      // to the barrier so the reveal is one synchronized frame.
+      txnSettle(txn, () => {
+        overlay.remove();
+        if (nodesGroup)  nodesGroup.style.opacity = '';
+        if (labelsGroup) labelsGroup.style.opacity = '';
+      });
     }, RING_RADIAL_DURATION);
   });
 }
@@ -657,8 +728,10 @@ export function animateRingInward(opts) {
     ? ringNodes.filter(n => (n.item?.id ?? n.id) !== skipId)
     : ringNodes;
 
+  const txn = txnArm();
   if (!svgRoot || nodesToAnimate.length === 0) {
     if (onComplete) onComplete();
+    txnSettle(txn, null);
     return;
   }
 
@@ -782,11 +855,14 @@ export function animateRingInward(opts) {
     });
 
     setTimeout(() => {
-      overlay.remove();
-      // Restore real nodes now that clones have settled into position
-      if (nodesGroup)  nodesGroup.style.opacity = '';
-      if (labelsGroup) labelsGroup.style.opacity = '';
       if (onComplete) onComplete();
+      // Clones sit at their final ring positions until the barrier: the
+      // real nodes appear in the same frame the clones leave.
+      txnSettle(txn, () => {
+        overlay.remove();
+        if (nodesGroup)  nodesGroup.style.opacity = '';
+        if (labelsGroup) labelsGroup.style.opacity = '';
+      });
     }, ANIM_DURATION);
   });
 }
@@ -823,7 +899,8 @@ export function animateMagnifierToParent(opts) {
     onComplete
   } = opts;
 
-  if (!svgRoot) { if (onComplete) onComplete(); return; }
+  const txn = txnArm();
+  if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
 
   const overlay = document.createElementNS(SVG_NS, 'g');
   overlay.setAttribute('class', 'migration-animation-overlay magnifier-to-parent');
@@ -892,8 +969,8 @@ export function animateMagnifierToParent(opts) {
     setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
 
     setTimeout(() => {
-      overlay.remove();
       if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
     }, ANIM_DURATION);
   });
 }
@@ -915,7 +992,8 @@ export function animateParentToMagnifier(opts) {
     onComplete
   } = opts;
 
-  if (!svgRoot) { if (onComplete) onComplete(); return; }
+  const txn = txnArm();
+  if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
 
   const overlay = document.createElementNS(SVG_NS, 'g');
   overlay.setAttribute('class', 'migration-animation-overlay parent-to-magnifier');
@@ -979,8 +1057,8 @@ export function animateParentToMagnifier(opts) {
     setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${dstRotDeg}deg)`);
 
     setTimeout(() => {
-      overlay.remove();
       if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
     }, ANIM_DURATION);
   });
 }
@@ -1002,7 +1080,8 @@ export function animateVolumeParentMerge(opts) {
     onComplete
   } = opts;
 
-  if (!svgRoot) { if (onComplete) onComplete(); return; }
+  const txn = txnArm();
+  if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
 
   const overlay = document.createElementNS(SVG_NS, 'g');
   overlay.setAttribute('class', 'migration-animation-overlay volume-parent-merge');
@@ -1049,6 +1128,11 @@ export function animateVolumeParentMerge(opts) {
   moving.appendChild(labelWrap);
 
   overlay.appendChild(moving);
+  // The base label must stay ON TOP of the arriving circle (SVG paints in
+  // document order; the real parent button's label sits above its fill too) —
+  // re-appending moves it after the moving group without disturbing the
+  // measurement taken above.
+  overlay.appendChild(staticBase);
 
   const tx = toX - fromX;
   const ty = toY - fromY;
@@ -1076,8 +1160,8 @@ export function animateVolumeParentMerge(opts) {
     setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
 
     setTimeout(() => {
-      overlay.remove();
       if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
     }, ANIM_DURATION);
   });
 }
@@ -1099,7 +1183,8 @@ export function animateVolumeParentUnmerge(opts) {
     onComplete
   } = opts;
 
-  if (!svgRoot) { if (onComplete) onComplete(); return; }
+  const txn = txnArm();
+  if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
 
   const overlay = document.createElementNS(SVG_NS, 'g');
   overlay.setAttribute('class', 'migration-animation-overlay volume-parent-unmerge');
@@ -1145,6 +1230,8 @@ export function animateVolumeParentUnmerge(opts) {
   moving.appendChild(labelWrap);
 
   overlay.appendChild(moving);
+  // Base label above the departing circle — same paint-order rule as the merge.
+  overlay.appendChild(staticBase);
 
   const tx = fromX - toX;
   const ty = fromY - toY;
@@ -1173,8 +1260,8 @@ export function animateVolumeParentUnmerge(opts) {
     setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${dstRotDeg}deg)`);
 
     setTimeout(() => {
-      overlay.remove();
       if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
     }, ANIM_DURATION);
   });
 }
@@ -1211,7 +1298,8 @@ export function animateParentButtonOutward(opts) {
     onComplete
   } = opts;
 
-  if (!svgRoot) { if (onComplete) onComplete(); return; }
+  const txn = txnArm();
+  if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
 
   // Real parent button fill + label are already hidden by the caller;
   // the stroke ring stays visible (empty) during the animation.
@@ -1263,9 +1351,9 @@ export function animateParentButtonOutward(opts) {
     g.style.transform = `translate(${translateX}px, ${translateY}px)`;
 
     setTimeout(() => {
-      overlay.remove();
       // Real parent button will be restored by the render after setPrimaryItems
       if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
     }, ANIM_DURATION);
   });
 }
@@ -1290,7 +1378,8 @@ export function animateParentButtonInward(opts) {
     onComplete
   } = opts;
 
-  if (!svgRoot) { if (onComplete) onComplete(); return; }
+  const txn = txnArm();
+  if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
 
   // Real parent button fill + label are already hidden by the caller;
   // the stroke ring stays visible (empty) during the animation.
@@ -1342,9 +1431,9 @@ export function animateParentButtonInward(opts) {
     g.style.transform = 'translate(0px, 0px)';
 
     setTimeout(() => {
-      overlay.remove();
       // Real parent button fill + label will be restored by the caller.
       if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
     }, ANIM_DURATION);
   });
 }
@@ -1358,6 +1447,9 @@ export function clearStack() {
   });
   animatedNodesStack.length = 0;
   _animating = false;
+  // A full reset must also drop any open migration transaction, or its
+  // hidden reals would stay hidden into the next volume.
+  if (_txn) _finishTransaction(_txn);
 }
 
 /**
