@@ -208,24 +208,36 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   // at full spacing, relax spacing progressively for the remainder — a
   // denser sky beats missing children (the old engine's starvation gave 3
   // slots to 12 months). relax=1 first, so roomy layouts are untouched.
-  const intersections = [];
+  let intersections = [];
   const maxK = Math.max(childCount * 120, 600);
   // k starts at 1, never 0: the k=0 star sits at radius zero — the exact
   // field center, where phase cannot move it — so the FIRST sibling
   // (January, Chapter 1) hung motionless while everything else danced
   // (Howell 2026-07-19). From k=1 every star has a radius for the phase
   // to swing around.
-  for (const relax of [1, 0.8, 0.6, 0.45, 0.3]) {
-    if (intersections.length >= childCount) break;
-    for (let k = 1; k <= maxK && intersections.length < childCount; k += 1) {
-      const r = c * Math.sqrt(k);
-      const a = phase + k * GOLDEN_ANGLE_RAD;
-      const x = centerX + r * Math.cos(a);
-      const y = centerY + r * Math.sin(a);
-      const labelHalf = ((labelLengths[intersections.length] ?? 0) * charWidth) / 2;
-      if (!isValid(x, y, intersections, relax, labelHalf)) continue;
-      intersections.push({ x, y, k, fanId: intersections.length });
+  //
+  // If a pass cannot seat everyone, DENSIFY and re-scatter with a smaller
+  // radial step. Small families with long labels are the trap: a field
+  // sized to spread 2 stars wide has only ~(R/c)^2 in-region candidates,
+  // and the label law can veto all but one (the one-testament sky,
+  // 2026-07-19). Densifying multiplies candidates; first pass keeps the
+  // roomy layout wherever it suffices.
+  for (let cCur = c; ; cCur *= 0.65) {
+    intersections = [];
+    for (const relax of [1, 0.8, 0.6, 0.45, 0.3]) {
+      if (intersections.length >= childCount) break;
+      for (let k = 1; k <= maxK && intersections.length < childCount; k += 1) {
+        const r = cCur * Math.sqrt(k);
+        const a = phase + k * GOLDEN_ANGLE_RAD;
+        const x = centerX + r * Math.cos(a);
+        const y = centerY + r * Math.sin(a);
+        const labelHalf = ((labelLengths[intersections.length] ?? 0) * charWidth) / 2;
+        if (!isValid(x, y, intersections, relax, labelHalf)) continue;
+        intersections.push({ x, y, k, fanId: intersections.length });
+      }
     }
+    if (intersections.length >= childCount) break;
+    if (cCur <= minSpacing) break; // densest honest field — take what seats
   }
 
   // ── At-least-one guarantee ───────────────────────────────────────────
