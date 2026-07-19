@@ -6,11 +6,11 @@ import { FocusRingView } from './view/focus-ring-view.js';
 import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
-import { computeChildPyramidGeometry } from './geometry/child-pyramid-geometry.js';
+import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-pyramid-geometry.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
-import { animateIn, animateOut, isAnimating, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
+import { animateIn, animateOut, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 
 export {
@@ -105,6 +105,16 @@ export function createApp({
     : ({ item }) => item?.name || item?.id || '';
 
   const vp = viewport || getViewportInfo(window.innerWidth, window.innerHeight);
+  // Pyramid label base font. NOTE (2026-07-19): a resolution-aware dpr
+  // boost lived here for an afternoon, built on the observation that the
+  // Moto g was harder to read — which turned out to be Chrome's hidden
+  // "Desktop site" checkbox miniaturizing the page. On honest glass the
+  // devices agree; one formula, no dpr term. (base also feeds the star
+  // walk's label-room math and the probe's font autopsy.)
+  const pyramidLabelBasePx = Math.min(26, Math.max(14, 0.016 * vp.LSd));
+  // Exposed for the probe's font autopsy (browsers rendered identical
+  // computed values at visibly different sizes on the same device).
+  if (typeof window !== 'undefined') window.__wheelLabelBase = pyramidLabelBasePx;
   const nodeRadius = vp.SSd * NODE_RADIUS_RATIO;
   const magnifierRadius = vp.SSd * MAGNIFIER_RADIUS_RATIO;
   const nodeSpacing = getNodeSpacing(vp);
@@ -782,6 +792,19 @@ export function createApp({
     const canTime = typeof performance !== 'undefined' && typeof performance.now === 'function';
     const renderStart = canTime ? performance.now() : null;
     rotation = nextRotation;
+    // SELF-HEAL (2026-07-19): migration-hidden state is only legitimate
+    // while a transaction is open. Any restore path that leaks (the
+    // invisible-verses bug; the sometimes-missing second ring node) is
+    // corrected by the next render instead of persisting forever.
+    if (!isAnimating() && !hasActiveTransaction()) {
+      if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+      if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+      if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
+      if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+      if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+      if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+      if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
+    }
     const selected = nav.getCurrent() || nav.items.find(item => item !== null) || nav.items[0];
     const visible = buildVisibleItems();
     const bounds = computeBounds(visible);
@@ -891,7 +914,7 @@ export function createApp({
         // chapter sky seats ~60, the smudge tail implying the rest (and the
         // processor thanks us at migration time). Tapping any star still
         // migrates the COMPLETE sibling set; nothing is unreachable.
-        const SEAT_CAP = 60;
+        const SEAT_CAP = 28; // 60 → 35 → 28, Howell's eye converging (2026-07-19)
         const seatCount = Math.min(children.length, SEAT_CAP);
 
         const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
@@ -904,7 +927,8 @@ export function createApp({
           // each child a safe distance from the right edge for ITS OWN
           // label's width, and spaces stars by their true drawn radii.
           labelLengths: seatOrder.slice(0, seatCount).map(i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length),
-          sizeScales: seatScales.slice(0, seatCount)
+          sizeScales: seatScales.slice(0, seatCount),
+          labelBaseFontPx: pyramidLabelBasePx
         });
         if (!geo) return null;
         // Map children onto intersection slots (seat j belongs to child seatOrder[j])
@@ -929,10 +953,12 @@ export function createApp({
                 y: slot.y,
                 r: nodeR * (slot.scale ?? 1),
                 labelScale: slot.scale ?? 1,
-                // Absolute px (same formula as the CSS clamp): an SVG 'em'
-                // rebases onto the INHERITED font-size, which shrank every
-                // scaled label and popped the migration handoff.
-                labelFontPx: Math.round(Math.min(Math.max(14, 0.016 * vp.LSd), 26) * (slot.scale ?? 1) * 10) / 10
+                halo: anyProminence && tierOf(child) === 1, // Favorites only
+                // Absolute px, one source of truth (resolution-aware base ×
+                // damped scale) — an SVG 'em' rebases onto the INHERITED
+                // font-size, which shrank every scaled label and popped the
+                // migration handoff.
+                labelFontPx: Math.round(pyramidLabelBasePx * dampLabelScale(slot.scale ?? 1) * 10) / 10
               };
             });
           }

@@ -219,6 +219,20 @@ svg :focus-visible {
   text-transform: uppercase;
   pointer-events: none;
 }
+/* The cartographer's stroke (Howell 2026-07-19): FAVORITES ONLY — the
+   unabbreviated names must stay legible across fan-line bundles; everyone
+   else is deliberate background noise. A separate element in its own layer
+   so the stack reads: fan lines < halo < node circle < label text. */
+.child-pyramid-label-halo {
+  fill: var(--color-bg);
+  stroke: var(--color-bg);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  text-transform: uppercase;
+  pointer-events: none;
+}
 /* The REAL pyramid labels (inside the live pyramid group) are tappable
    exactly like their circles — they carry data-index, and a tap on the word
    used to fall through to the background and get read as a ring near-miss

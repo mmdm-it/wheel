@@ -50,6 +50,9 @@ export class PyramidView {
     this.pyramidSpiralGroup = this.doc.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.pyramidSpiralGroup.setAttribute('class', 'child-pyramid-spiral-group');
 
+    this.pyramidHaloGroup = this.doc.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.pyramidHaloGroup.setAttribute('class', 'child-pyramid-halos');
+
     this.pyramidNodesGroup = this.doc.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.pyramidNodesGroup.setAttribute('class', 'child-pyramid-nodes');
 
@@ -58,6 +61,7 @@ export class PyramidView {
 
     this.pyramidGroup.appendChild(this.pyramidFanLinesGroup);
     this.pyramidGroup.appendChild(this.pyramidSpiralGroup);
+    this.pyramidGroup.appendChild(this.pyramidHaloGroup); // halo under the circles
     this.pyramidGroup.appendChild(this.pyramidNodesGroup);
     this.pyramidGroup.appendChild(this.pyramidLabelsGroup);
 
@@ -75,6 +79,7 @@ export class PyramidView {
       this.pyramidGroup.setAttribute('display', 'none');
       this.#clear(this.pyramidFanLinesGroup);
       this.#clear(this.pyramidSpiralGroup);
+      this.#clear(this.pyramidHaloGroup);
       this.#clear(this.pyramidNodesGroup);
       this.#clear(this.pyramidLabelsGroup);
       return;
@@ -84,6 +89,7 @@ export class PyramidView {
     this.pyramidGroup.removeAttribute('display');
     this.#clear(this.pyramidFanLinesGroup);
     this.#clear(this.pyramidSpiralGroup);
+    this.#clear(this.pyramidHaloGroup);
     this.#clear(this.pyramidNodesGroup);
     this.#clear(this.pyramidLabelsGroup);
 
@@ -140,13 +146,23 @@ export class PyramidView {
         // Rotate label along the fan-line angle, matching focus ring node label style
         const rotation = (instr.angle * 180) / Math.PI + 180;
         label.setAttribute('transform', `rotate(${rotation}, ${instr.x}, ${instr.y})`);
-        // Scaled stars carry their labels with them, in ABSOLUTE px (an SVG
-        // em rebases onto inherited font-size — labels shrank wholesale); at
-        // the taper floor the label is an honest smudge.
-        if (instr.labelScale && instr.labelScale !== 1 && instr.labelFontPx) {
+        // Every pyramid label wears its computed ABSOLUTE px (resolution-
+        // aware base × damped star scale) — CSS clamp is only the fallback
+        // for callers that don't compute one. At the taper floor the label
+        // is an honest smudge.
+        if (instr.labelFontPx) {
           label.style.fontSize = `${instr.labelFontPx}px`;
         }
         label.textContent = instr.label || '';
+        // Favorites carve a readable channel through the fan lines: a halo
+        // twin UNDER the node circles (fan lines < halo < circle < text).
+        if (instr.halo) {
+          const halo = label.cloneNode(false);
+          halo.setAttribute('class', 'child-pyramid-label-halo');
+          halo.removeAttribute('data-index');
+          halo.textContent = instr.label || '';
+          this.pyramidHaloGroup.appendChild(halo);
+        }
         this.pyramidLabelsGroup.appendChild(label);
       });
     } else {

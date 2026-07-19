@@ -112,7 +112,36 @@ function buildReport(reason) {
     // many exceeded budget. A long frame with small render = browser paint.
     render: window.__wheelRenderStats ? { ...window.__wheelRenderStats } : null,
     gesture: window.__wheelGestureTrace || null,
-    taps: window.__wheelTapTrace ? window.__wheelTapTrace.slice() : null
+    taps: window.__wheelTapTrace ? window.__wheelTapTrace.slice() : null,
+    // Font autopsy: what the app computed vs what the browser actually
+    // rendered for a pyramid label — catches any layer that rescales text
+    // between our px and the glass (2026-07-19 cross-browser size mystery).
+    fonts: (() => {
+      try {
+        const all = Array.from(document.querySelectorAll('.child-pyramid-label'));
+        const live = all.filter(el => !el.closest('.migration-animation-overlay') && !el.closest('#gateway-wipe-old') && !el.closest('#boot-splash-layer'));
+        const el = live[0] || all[0] || null;
+        const summary = {
+          base: window.__wheelLabelBase ?? null,
+          total: all.length,
+          live: live.length,
+          withInline: all.filter(e2 => e2.style.fontSize).length
+        };
+        if (!el) return summary;
+        const cs = getComputedStyle(el);
+        let bb = null;
+        try { bb = el.getBBox(); } catch (e) { /* detached */ }
+        return {
+          ...summary,
+          sampledOverlay: Boolean(el.closest('.migration-animation-overlay')),
+          inline: el.style.fontSize || '',
+          computed: cs.fontSize,
+          text: (el.textContent || '').slice(0, 12),
+          bboxH: bb ? Math.round(bb.height * 10) / 10 : null,
+          bboxW: bb ? Math.round(bb.width * 10) / 10 : null
+        };
+      } catch (e) { return null; }
+    })()
   };
 }
 
