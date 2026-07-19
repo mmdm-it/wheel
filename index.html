@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" style="background:#868686">
+<!-- lang is honest (the catalog is Italian) and translate is forbidden both
+     ways browsers understand: machine translation rewrites DOM text nodes in
+     place, which would mangle the instrument's SVG labels and fight the
+     render loop — this is an app whose labels are data, not a document. -->
+<html lang="it" translate="no" style="background:#868686">
 <head>
   <script>performance.mark('wheel:html-start');</script>
   <meta charset="UTF-8" />
+  <meta name="google" content="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
