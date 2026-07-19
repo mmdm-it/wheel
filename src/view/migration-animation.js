@@ -107,6 +107,11 @@ function _finishTransaction(txn) {
   }
 }
 
+/** True while a migration transaction is open (reals legitimately hidden). */
+export function hasActiveTransaction() {
+  return Boolean(_txn);
+}
+
 /** Called at animation start: joins the open transaction, if any. */
 function txnArm() {
   if (_txn) { _txn.pending += 1; return _txn; }
@@ -209,7 +214,7 @@ export function animateIn(opts) {
     label.setAttribute('class', 'child-pyramid-label');
     const srcRot = (pn.angle * 180) / Math.PI + 180;
     label.setAttribute('transform', `rotate(${srcRot}, ${pn.x}, ${pn.y})`);
-    if (pn.labelScale && pn.labelScale !== 1 && pn.labelFontPx) {
+    if (pn.labelFontPx) {
       label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
     }
     label.textContent = pn.label ?? pn.item?.name ?? '';
@@ -431,7 +436,7 @@ export function animatePyramidFromHub(opts) {
     label.setAttribute('class', 'child-pyramid-label');
     // Start label at 0° rotation (hub) — will rotate to pyramid angle
     label.setAttribute('transform', `rotate(0, ${hubX}, ${hubY})`);
-    if (pn.labelScale && pn.labelScale !== 1 && pn.labelFontPx) {
+    if (pn.labelFontPx) {
       label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
     }
     label.textContent = pn.label ?? pn.item?.name ?? '';
@@ -528,7 +533,7 @@ export function animatePyramidToHub(opts) {
     label.setAttribute('class', 'child-pyramid-label');
     const srcRot = (pn.angle * 180) / Math.PI + 180;
     label.setAttribute('transform', `rotate(${srcRot}, ${pn.x}, ${pn.y})`);
-    if (pn.labelScale && pn.labelScale !== 1 && pn.labelFontPx) {
+    if (pn.labelFontPx) {
       label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
     }
     label.textContent = pn.label ?? pn.item?.name ?? '';

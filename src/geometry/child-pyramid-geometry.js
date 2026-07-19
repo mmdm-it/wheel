@@ -26,6 +26,24 @@
 
 const GOLDEN_ANGLE_RAD = Math.PI * (3 - Math.sqrt(5)); // ≈ 137.5077640°
 
+// Label font growth is DAMPED above 1: a 1.45x star wears a ~1.22x label —
+// prominence reads just as clearly, spills far less (the GENESIS-over-PR
+// crowding, 2026-07-19). Below 1 the font tracks the star exactly, so the
+// smudge floor stays an honest smudge. Shared by geometry (label room) and
+// the render (labelFontPx) — one definition, no divergence.
+export const dampLabelScale = s => (s >= 1 ? 1 + (s - 1) * 0.5 : s);
+
+// Distance from point (px,py) to segment (x1,y1)-(x2,y2).
+function pointSegDist(px, py, x1, y1, x2, y2) {
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  const len2 = dx * dx + dy * dy;
+  if (!len2) return Math.hypot(px - x1, py - y1);
+  let t = ((px - x1) * dx + (py - y1) * dy) / len2;
+  t = Math.max(0, Math.min(1, t));
+  return Math.hypot(px - (x1 + t * dx), py - (y1 + t * dy));
+}
+
 const NODE_RADIUS_RATIO = 0.04;   // matches the render's pyramid node size
 const FILL_FRACTION = 0.55;       // how much of the usable area the field aims to cover
 const MIN_SPACING_RADII = 2.3;    // min center-to-center distance, in node radii
@@ -66,6 +84,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     childCount, parentSortNumber, hasDimButton, scaleMul,
     labelLengths.join(','),
     sizeScales.join(','),
+    options.labelBaseFontPx ?? '',
     logoBounds ? `${logoBounds.left},${logoBounds.top},${logoBounds.right},${logoBounds.bottom}` : ''
   ].join('|');
   if (cacheKey === _geoCacheKey) return _geoCacheValue;
@@ -93,17 +112,18 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const minSpacing = nodeR * MIN_SPACING_RADII;
   const LSd = viewport.LSd ?? Math.max(width, height);
   const vesselClearance = SSd * (0.06 + NODE_RADIUS_RATIO + 0.02);
-  // Pyramid label metrics: ~1.6vmin font (clamped 14..26px), middle-anchored
-  // on the star, half the label to each side. Glyph advance measured from a
-  // real render: UPPERCASE Montserrat runs ≈0.85em (0.6em under-measured —
-  // Moto g screenshot 2026-07-19, label ran onto the band while 'legal').
-  const charWidth = Math.min(Math.max(14, 0.016 * LSd), 26) * 0.85;
+  // Pyramid label metrics: base font supplied by the caller (resolution-
+  // aware), middle-anchored on the star, half the label to each side. Glyph
+  // advance measured from a real render: UPPERCASE Montserrat ≈0.85em.
+  const labelBaseFontPx = options.labelBaseFontPx
+    ?? Math.min(Math.max(14, 0.016 * LSd), 26);
+  const charWidth = labelBaseFontPx * 0.85;
   const edgeMargin = SSd * 0.02;
 
   // A candidate position must sit inside the CPUA (inset so the drawn circle
   // stays inside), outside the logo cutout, comfortably inside the arc, and
   // clear of the magnifier and of already-placed stars.
-  const isValid = (x, y, placed, relax = 1, labelHalf = 0, scale = 1) => {
+  const isValid = (x, y, placed, relax = 1, labelHalf = 0, scale = 1, fanRelax = 1) => {
     const rSelf = nodeR * scale;
     if (x < cpua.left + rSelf || x > cpua.right - rSelf) return false;
     // A star's own label must fit. Labels are ROTATED along the hub ray
@@ -112,6 +132,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     // label near the ring run its outward half across the band — Moto g
     // screenshot, 2026-07-19): both ends inside the viewport, and the
     // outward end short of the focus-ring band.
+    let labelSeg = null;
     if (labelHalf) {
       const ldx = x - hubX;
       const ldy = y - hubY;
@@ -119,9 +140,11 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
       if (ld + labelHalf > arcRadius - SSd * 0.1) return false; // band is law for text too
       const lux = ldx / ld;
       const luy = ldy / ld;
-      for (const sign of [1, -1]) {
-        const ex = x + sign * lux * labelHalf;
-        const ey = y + sign * luy * labelHalf;
+      labelSeg = {
+        x1: x + lux * labelHalf, y1: y + luy * labelHalf,
+        x2: x - lux * labelHalf, y2: y - luy * labelHalf
+      };
+      for (const [ex, ey] of [[labelSeg.x1, labelSeg.y1], [labelSeg.x2, labelSeg.y2]]) {
         if (ex < edgeMargin || ex > width - edgeMargin) return false;
         if (ey < edgeMargin || ey > height - edgeMargin) return false;
       }
@@ -140,18 +163,32 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     // (Howell 2026-07-19).
     if (Math.hypot(x - magnifierX, y - magnifierY) < vesselClearance) return false;
     const candAngle = Math.atan2(y - magnifierY, x - magnifierX);
+    const labelPad = nodeR * 0.35;
     for (const p of placed) {
       // Pairwise spacing on TRUE radii: a featured star and its neighbor
       // need (rA + rB) x the spacing factor, not the uniform default.
       const pairSpacing = nodeR * (MIN_SPACING_RADII / 2) * (scale + (p.scale ?? 1));
       if (Math.hypot(x - p.x, y - p.y) < pairSpacing * relax) return false;
+      // Labels are citizens of the collision law (GENESIS lay across PR):
+      // my label must clear your star; my star must clear your label.
+      if (labelSeg
+        && pointSegDist(p.x, p.y, labelSeg.x1, labelSeg.y1, labelSeg.x2, labelSeg.y2)
+           < nodeR * (p.scale ?? 1) + labelPad) return false;
+      if (p.labelSeg
+        && pointSegDist(x, y, p.labelSeg.x1, p.labelSeg.y1, p.labelSeg.x2, p.labelSeg.y2)
+           < rSelf + labelPad) return false;
       // Fan lines share the magnifier origin; without an angular floor,
       // near-collinear stars stack their lines into one thick stroke.
       let da = Math.abs(candAngle - Math.atan2(p.y - magnifierY, p.x - magnifierX));
       if (da > Math.PI) da = 2 * Math.PI - da;
-      if (da < fanSepRad * relax) return false;
+      // The floor bends with its own ladder, and the FINAL rung drops it
+      // entirely — seating every child outranks fanning (a floor at any
+      // strength halves greedy packing in cramped cases). Label legibility
+      // over line bundles is the HALO's job (styles), not angles': 28
+      // lines in ~90° of fan cannot exceed ~3° separation by arithmetic.
+      if (fanRelax > 0 && da < fanSepRad * fanRelax) return false;
     }
-    return true;
+    return { labelSeg };
   };
 
   // ── Measure the valid region ─────────────────────────────────────────
@@ -203,13 +240,17 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
       regionSpan = Math.max(regionSpan, da);
     }
   }
-  // The floor only governs SMALL families — that's where three near-collinear
-  // lines read as one stroke. Dense skies (chapters, verses) legitimately
-  // pack their fans tight, and an angular floor there fights the scatter's
-  // packing order and starves placement.
-  const fanSepRad = childCount <= 12
-    ? Math.min(FAN_SEP_DEG * (Math.PI / 180), regionSpan / Math.max(childCount + 1, 1))
-    : 0;
+  // UNIVERSAL fan floor (Howell 2026-07-19, resurrecting the old engine's
+  // min-angle rule): every sky gets FAN_SEP_DEG or a fair share of the
+  // span, whichever is smaller. An earlier universal floor starved big
+  // sets — but that predates densify-and-rescatter, whose denser candidate
+  // streams can fill the fragmented angular gaps. Labels crossing bundled
+  // near-parallel lines (GENESIS) were the legibility cost of exempting
+  // dense skies.
+  const fanSepRad = Math.min(
+    FAN_SEP_DEG * (Math.PI / 180),
+    regionSpan / Math.max(childCount + 1, 1)
+  );
 
   // ── The scatter ──────────────────────────────────────────────────────
   // Walk k outward placing valid stars. If the region can't hold everyone
@@ -232,7 +273,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   // roomy layout wherever it suffices.
   for (let cCur = c; ; cCur *= 0.65) {
     intersections = [];
-    for (const relax of [1, 0.8, 0.6, 0.45, 0.3]) {
+    for (const [relax, fanRelax] of [[1, 1], [0.8, 0.8], [0.6, 0.6], [0.45, 0.45], [0.3, 0.3], [0.3, 0]]) {
       if (intersections.length >= childCount) break;
       for (let k = 1; k <= maxK && intersections.length < childCount; k += 1) {
         const r = cCur * Math.sqrt(k);
@@ -241,11 +282,11 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
         const y = centerY + r * Math.sin(a);
         const seat = intersections.length;
         const scale = sizeScales[seat] ?? 1;
-        // Label fonts scale with their star, so a tapered star's label
-        // claims proportionally less room.
-        const labelHalf = ((labelLengths[seat] ?? 0) * charWidth * scale) / 2;
-        if (!isValid(x, y, intersections, relax, labelHalf, scale)) continue;
-        intersections.push({ x, y, k, fanId: seat, scale });
+        // Label room follows the DAMPED font scale (what will be rendered).
+        const labelHalf = ((labelLengths[seat] ?? 0) * charWidth * dampLabelScale(scale)) / 2;
+        const ok = isValid(x, y, intersections, relax, labelHalf, scale, fanRelax);
+        if (!ok) continue;
+        intersections.push({ x, y, k, fanId: seat, scale, labelSeg: ok.labelSeg });
       }
     }
     if (intersections.length >= childCount) break;
