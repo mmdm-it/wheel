@@ -177,3 +177,9 @@ echo "  📚 Bible:    https://mmdm.it/wheel-v3/bible/"
 echo "  📅 Calendar: https://mmdm.it/wheel-v3/calendar/"
 echo "  🧭 Places:   https://mmdm.it/wheel-v3/places/"
 echo ""
+
+# Prior-art evidence trail: archive the public deployments after each real
+# deploy (see docs/prior-art/). Non-fatal; SNAPSHOT=0 skips.
+if [ "${SNAPSHOT:-1}" = "1" ] && { [ "$DEPLOYMENT" = "catalog" ] || [ "$DEPLOYMENT" = "all" ]; }; then
+    bash "$(dirname "$0")/scripts/archive-snapshot.sh" || true
+fi

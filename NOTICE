@@ -1,0 +1,49 @@
+NOTICE — Wheel by MMdM
+======================
+
+Copyright © 2025–2026 MMdM — Meccanismi Marittimi delle Marche, Fano (PU), Italy.
+
+This repository contains two distinct kinds of material under two distinct
+licenses. The boundary between them is deliberate.
+
+1. THE ENGINE — GNU GPL v3
+--------------------------
+The Wheel navigation engine — all source code in src/, scripts/, test/,
+tests/, styles/, index.html, and the build configuration — is free software,
+licensed under the GNU General Public License, version 3 only (see LICENSE).
+
+You may use, study, modify, and redistribute the engine under the terms of
+the GPL. If you distribute software built from it, you must publish your
+source under the same license. That is the point.
+
+2. THE CARGO — ALL RIGHTS RESERVED
+----------------------------------
+The content the engine carries is NOT licensed under the GPL and is NOT open
+source. This includes, without limitation:
+
+  - The MMdM marine engine catalog (data/ catalog files): its selection,
+    arrangement, taxonomy, descriptions, and Italian prose.
+  - The curated scripture volumes: edition selection, structure, apparatus,
+    and presentation data.
+  - The calendar and other volume datasets: their curation and arrangement.
+  - All artwork, logos, and brand assets (art/, assets/).
+
+These materials are copyright © MMdM, all rights reserved. They are included
+in this repository so the engine can be seen doing real work. Reproduction or
+redistribution of the data and content outside this repository requires
+written permission. (Underlying public-domain texts — e.g. the Latin Vulgate
+itself — remain public domain; what is reserved is this curation, structure,
+and presentation of them.)
+
+3. TRADEMARKS
+-------------
+"MMdM", "Meccanismi Marittimi delle Marche", and "Wheel by MMdM" are trademarks of
+MMdM. The GPL license on the engine grants no trademark rights. Forks must
+not present themselves as MMdM products.
+
+4. PRIOR ART
+------------
+The navigation mechanisms implemented here are the subject of defensive
+publications establishing them as prior art — see docs/prior-art/. The ideas
+are unpatentable and free for all; this implementation is GPL; the cargo and
+the brand are ours.
