@@ -171,10 +171,12 @@ svg :focus-visible {
   pointer-events: none;
 }
 
-/* Calendar parent-button labels arrive display-ready ("MMdM CATALOGO",
-   "753 BC") — render them verbatim; the lowercase d in MMdM must survive.
-   Other volumes' parent labels still rely on the uppercase transform. */
-:root[data-theme="calendar"] .focus-ring-parent-label {
+/* Calendar and bible parent-button labels arrive display-ready ("MMdM
+   CATALOGO", "753 BC", "CAPITULUM XVI") — render them verbatim; the
+   lowercase d in MMdM must survive. The catalog's parent labels still rely
+   on the uppercase transform (mixed-case manufacturer data). */
+:root[data-theme="calendar"] .focus-ring-parent-label,
+:root[data-theme="bible"] .focus-ring-parent-label {
   text-transform: none;
 }
 
