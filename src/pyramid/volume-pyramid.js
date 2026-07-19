@@ -114,7 +114,14 @@ export function buildCalendarPyramid({
   if (!manifest || typeof getCalendarMonths !== 'function') return null;
   // The pyramid previews the selected year's own 12 months; clicking one
   // lands on that month INSIDE the continuous months cousin chain.
-  const getChildren = ({ selected }) => getCalendarMonths(manifest, selected, calendarModeRef?.());
+  // Pyramid-only abbreviations (Howell 2026-07-19): three letters, all caps
+  // (IAN, FEB, MAR... — Latin months truncate collision-free). The ring and
+  // magnifier keep the full names; the rename never travels past the
+  // pyramid (onClick matches by id), same contract as the book abbreviations.
+  const getChildren = ({ selected }) => getCalendarMonths(manifest, selected, calendarModeRef?.())
+    .map(item => (item?.name
+      ? { ...item, name: String(item.name).slice(0, 3).toUpperCase() }
+      : item));
   const onClick = instr => {
     if (!instr?.item) return;
     if (typeof calendarModeRef === 'function' && calendarModeRef() !== 'year') return;

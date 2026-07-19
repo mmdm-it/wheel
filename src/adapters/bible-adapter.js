@@ -294,7 +294,7 @@ export const buildBibleRootChain = () => ({
   preserveOrder: true
 });
 
-export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta, translationName = '', onGatewayReturn = null, gatewayLabel = '' }) {
+export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta, translationName = '', onGatewayReturn = null, gatewayLabel = '', gatewayReturnLabel = '' }) {
   const initialLevel = options?.level;
   const hasRoot = initialLevel === 'root';
   let bibleMode = (initialLevel === 'chapter' || initialLevel === 'verse') ? initialLevel : (hasRoot ? 'root' : 'book');
@@ -398,7 +398,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       }
       // After the migration starts — an earlier call renders the post-ascent
       // parent state in full view before anything is hidden.
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayLabel) });
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayReturnLabel || gatewayLabel) });
       return true;
     }
     if (bibleMode === 'root') {
@@ -429,7 +429,10 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   const getParentLabel = (item) => {
     if (!item) return '';
     // Gateway root ring: parent button points back through the gateway.
-    if (item.level === 'bibleRoot') return gatewayLabel || '';
+    // Top of this volume: the parent button is the way back through the
+    // gateway, so it names the DESTINATION volume (Howell 2026-07-18 —
+    // same contract as the calendar), not the gateway node came through.
+    if (item.level === 'bibleRoot') return gatewayReturnLabel || gatewayLabel || '';
     // Testament ring under a gateway root: parent is the Biblia itself.
     if (item.level === 'testament' && hasRoot) return 'BIBLIA SACRA LATINA';
     // Chapter ring: parent is the book name in the display language
@@ -447,10 +450,12 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
       if (!chapterKey) return '';
       const n = Number.parseInt(chapterKey, 10);
-      return Number.isFinite(n) ? `Capitulum ${toRomanNumeral(n)}` : `Capitulum ${chapterKey}`;
+      return Number.isFinite(n) ? `CAPITULUM ${toRomanNumeral(n)}` : `CAPITULUM ${chapterKey}`;
     }
-    // Book ring: parent is the testament name (already stored on items as parentName)
-    return item.parentName || '';
+    // Book ring: parent is the testament name (stored mixed-case on items as
+    // parentName; uppercased here because the theme no longer transforms —
+    // parent labels arrive display-ready so MMdM's lowercase d survives).
+    return (item.parentName || '').toUpperCase();
   };
 
   // Startup-verse prefetch: when the Bible opens on a chapter with a

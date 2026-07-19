@@ -855,7 +855,11 @@ export function createApp({
           magnifierAngle: magnifier.angle,
           parentId: pyramidSelected?.id ?? '',
           parentSortNumber: pyramidSelected?.order ?? 0,
-          childCount: children.length
+          childCount: children.length,
+          // Label lengths in sibling order: the star walk keeps each child a
+          // safe distance from the right edge for ITS OWN label's width
+          // (long names like a gateway's drift toward the field interior).
+          labelLengths: children.map(ch => String(ch?.name ?? ch?.label ?? ch?.id ?? '').length)
         });
         if (!geo) return null;
         // Map children onto intersection slots
