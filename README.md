@@ -50,3 +50,16 @@ team testing runbook and are not part of the public repository docs.
 
 ## Goals
 Keep modules small (<200 lines), zero inline styles/`!important`, pure functions where possible, and validate volumes at load to stay data-agnostic.
+
+## License & IP
+
+Copyright © 2025–2026 MMdM — Meccanismi Marittimi delle Marche.
+
+- **Engine** (src, scripts, tests, styles, build config): free software under
+  the **GNU GPL v3** — see [LICENSE](LICENSE).
+- **Data & content** (catalog, curated volumes, artwork, brand assets):
+  **all rights reserved** — see [NOTICE](NOTICE) for the exact boundary.
+- The navigation mechanisms are published as **prior art** and free for all
+  to use: see [docs/prior-art/](docs/prior-art/).
+- "MMdM" and "Wheel by MMdM" are trademarks of MMdM; the GPL grants no
+  trademark rights.
