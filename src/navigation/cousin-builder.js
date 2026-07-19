@@ -126,7 +126,10 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
         level: 'book',
         testamentId: activeTestamentId,
         sectionId: sectionKey,
-        parentName: testamentName
+        parentName: testamentName,
+        // Editorial prominence tier (1 featured, 2 notable, absent default):
+        // declared in the data, honored by the star field's seating and size.
+        prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
       });
     });
   });

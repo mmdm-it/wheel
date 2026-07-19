@@ -221,6 +221,7 @@
             "books": {
               "GENE": {
                 "book_key": "GENE",
+                "prominence": 1,
                 "book_name": "Genesis",
                 "sort_number": 1,
                 "chapter_count": 50,
@@ -530,6 +531,7 @@
               },
               "EXO": {
                 "book_key": "EXO",
+                "prominence": 2,
                 "book_name": "Exodus",
                 "sort_number": 2,
                 "chapter_count": 40,
@@ -2954,6 +2956,7 @@
               },
               "PSAL": {
                 "book_key": "PSAL",
+                "prominence": 1,
                 "book_name": "Psalms",
                 "sort_number": 17,
                 "chapter_count": 150,
@@ -3863,6 +3866,7 @@
               },
               "PROV": {
                 "book_key": "PROV",
+                "prominence": 2,
                 "book_name": "Proverbs",
                 "sort_number": 18,
                 "chapter_count": 31,
@@ -4660,6 +4664,7 @@
             "books": {
               "ISA": {
                 "book_key": "ISA",
+                "prominence": 2,
                 "book_name": "Isaiah",
                 "sort_number": 23,
                 "chapter_count": 66,
@@ -6388,6 +6393,7 @@
             "books": {
               "MATHE": {
                 "book_key": "MATHE",
+                "prominence": 1,
                 "book_name": "Matthew",
                 "sort_number": 41,
                 "chapter_count": 28,
@@ -6670,6 +6676,7 @@
               },
               "LUCA": {
                 "book_key": "LUCA",
+                "prominence": 2,
                 "book_name": "Luke",
                 "sort_number": 43,
                 "chapter_count": 24,
@@ -6823,6 +6830,7 @@
               },
               "IOHA": {
                 "book_key": "IOHA",
+                "prominence": 1,
                 "book_name": "John",
                 "sort_number": 44,
                 "chapter_count": 21,
@@ -7173,6 +7181,7 @@
             "books": {
               "ROM": {
                 "book_key": "ROM",
+                "prominence": 2,
                 "book_name": "Romans",
                 "sort_number": 46,
                 "chapter_count": 16,
@@ -8097,6 +8106,7 @@
             "books": {
               "APOC": {
                 "book_key": "APOC",
+                "prominence": 2,
                 "book_name": "Revelation",
                 "sort_number": 67,
                 "chapter_count": 22,

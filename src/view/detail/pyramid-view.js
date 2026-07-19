@@ -140,6 +140,12 @@ export class PyramidView {
         // Rotate label along the fan-line angle, matching focus ring node label style
         const rotation = (instr.angle * 180) / Math.PI + 180;
         label.setAttribute('transform', `rotate(${rotation}, ${instr.x}, ${instr.y})`);
+        // Scaled stars carry their labels with them, in ABSOLUTE px (an SVG
+        // em rebases onto inherited font-size — labels shrank wholesale); at
+        // the taper floor the label is an honest smudge.
+        if (instr.labelScale && instr.labelScale !== 1 && instr.labelFontPx) {
+          label.style.fontSize = `${instr.labelFontPx}px`;
+        }
         label.textContent = instr.label || '';
         this.pyramidLabelsGroup.appendChild(label);
       });

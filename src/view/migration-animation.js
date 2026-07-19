@@ -209,6 +209,9 @@ export function animateIn(opts) {
     label.setAttribute('class', 'child-pyramid-label');
     const srcRot = (pn.angle * 180) / Math.PI + 180;
     label.setAttribute('transform', `rotate(${srcRot}, ${pn.x}, ${pn.y})`);
+    if (pn.labelScale && pn.labelScale !== 1 && pn.labelFontPx) {
+      label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
+    }
     label.textContent = pn.label ?? pn.item?.name ?? '';
     g.appendChild(label);
 
@@ -428,6 +431,9 @@ export function animatePyramidFromHub(opts) {
     label.setAttribute('class', 'child-pyramid-label');
     // Start label at 0° rotation (hub) — will rotate to pyramid angle
     label.setAttribute('transform', `rotate(0, ${hubX}, ${hubY})`);
+    if (pn.labelScale && pn.labelScale !== 1 && pn.labelFontPx) {
+      label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
+    }
     label.textContent = pn.label ?? pn.item?.name ?? '';
     g.appendChild(label);
 
@@ -522,6 +528,9 @@ export function animatePyramidToHub(opts) {
     label.setAttribute('class', 'child-pyramid-label');
     const srcRot = (pn.angle * 180) / Math.PI + 180;
     label.setAttribute('transform', `rotate(${srcRot}, ${pn.x}, ${pn.y})`);
+    if (pn.labelScale && pn.labelScale !== 1 && pn.labelFontPx) {
+      label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
+    }
     label.textContent = pn.label ?? pn.item?.name ?? '';
     g.appendChild(label);
 
