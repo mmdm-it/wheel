@@ -425,6 +425,13 @@ export function createApp({
     //     arms it, and the reals are restored exactly once — at the barrier,
     //     when ALL animations have finished — never from inside one
     //     animation's callback racing the others.
+    // Restore responsibilities are decided AT LAUNCH, never re-read at the
+    // barrier: children that arrive by FETCH can populate lastPyramidData
+    // between launch and barrier, making the barrier think a fly-in it
+    // never launched would restore the pyramid — which left async-child
+    // pyramids painted at opacity 0 (the empty-sky bug, 2026-07-19,
+    // diagnosed by tab-title breadcrumb: c31 i17 n17, unseen).
+    let pyramidFromHubLaunched = false;
     beginMigrationTransaction({
       restore: () => {
         // If no ring nodes animated outward, nothing else restores the groups.
@@ -432,8 +439,8 @@ export function createApp({
           if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
           if (view.labelsGroup) view.labelsGroup.style.opacity = '';
         }
-        // If no pyramid-from-hub animation ran, restore pyramid here.
-        if (!lastPyramidData?.nodes?.length) {
+        // If no pyramid-from-hub animation was LAUNCHED, restore pyramid here.
+        if (!pyramidFromHubLaunched) {
           if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '';
         }
         if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
@@ -481,6 +488,7 @@ export function createApp({
 
     // New child pyramid: animate from hub simultaneously with the ring migration
     if (lastPyramidData?.nodes?.length) {
+      pyramidFromHubLaunched = true;
       animatePyramidFromHub({
         svgRoot: view.contentGroup || view.svgRoot,
         pyramidNodes: lastPyramidData.nodes,
