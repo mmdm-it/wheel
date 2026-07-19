@@ -213,6 +213,10 @@ svg :focus-visible {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  /* Everything in the instrument is ALL CAPS except the d in MMdM (Howell);
+     pyramid labels only looked capitalized before because abbreviations and
+     numerals already were — full-named Favorites exposed the gap. */
+  text-transform: uppercase;
   pointer-events: none;
 }
 /* The REAL pyramid labels (inside the live pyramid group) are tappable

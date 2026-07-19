@@ -50,6 +50,9 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const childCount = options.childCount ?? 0;
   const parentSortNumber = options.parentSortNumber ?? 0;
   const labelLengths = Array.isArray(options.labelLengths) ? options.labelLengths : [];
+  // Per-seat size scales (editorial prominence): seat i's star draws at
+  // nodeR * sizeScales[i]. Spacing and edge insets honor the true sizes.
+  const sizeScales = Array.isArray(options.sizeScales) ? options.sizeScales : [];
   const logoBounds = options.logoBounds ?? null;
   const hasDimButton = options.hasDimensionButton ?? true;
 
@@ -62,6 +65,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     arcParams?.hubX, arcParams?.hubY, arcParams?.radius,
     childCount, parentSortNumber, hasDimButton, scaleMul,
     labelLengths.join(','),
+    sizeScales.join(','),
     logoBounds ? `${logoBounds.left},${logoBounds.top},${logoBounds.right},${logoBounds.bottom}` : ''
   ].join('|');
   if (cacheKey === _geoCacheKey) return _geoCacheValue;
@@ -99,8 +103,9 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   // A candidate position must sit inside the CPUA (inset so the drawn circle
   // stays inside), outside the logo cutout, comfortably inside the arc, and
   // clear of the magnifier and of already-placed stars.
-  const isValid = (x, y, placed, relax = 1, labelHalf = 0) => {
-    if (x < cpua.left + nodeR || x > cpua.right - nodeR) return false;
+  const isValid = (x, y, placed, relax = 1, labelHalf = 0, scale = 1) => {
+    const rSelf = nodeR * scale;
+    if (x < cpua.left + rSelf || x > cpua.right - rSelf) return false;
     // A star's own label must fit. Labels are ROTATED along the hub ray
     // (middle-anchored), so the constraint is the two baseline ENDPOINTS,
     // not horizontal width (the first, horizontal-only rule let a long
@@ -121,7 +126,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
         if (ey < edgeMargin || ey > height - edgeMargin) return false;
       }
     }
-    if (y < cpua.top + nodeR || y > cpua.bottom - nodeR) return false;
+    if (y < cpua.top + rSelf || y > cpua.bottom - rSelf) return false;
     if (logoBounds
       && x > logoBounds.left - nodeR && x < logoBounds.right + nodeR
       && y > logoBounds.top - nodeR && y < logoBounds.bottom + nodeR) return false;
@@ -136,7 +141,10 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     if (Math.hypot(x - magnifierX, y - magnifierY) < vesselClearance) return false;
     const candAngle = Math.atan2(y - magnifierY, x - magnifierX);
     for (const p of placed) {
-      if (Math.hypot(x - p.x, y - p.y) < minSpacing * relax) return false;
+      // Pairwise spacing on TRUE radii: a featured star and its neighbor
+      // need (rA + rB) x the spacing factor, not the uniform default.
+      const pairSpacing = nodeR * (MIN_SPACING_RADII / 2) * (scale + (p.scale ?? 1));
+      if (Math.hypot(x - p.x, y - p.y) < pairSpacing * relax) return false;
       // Fan lines share the magnifier origin; without an angular floor,
       // near-collinear stars stack their lines into one thick stroke.
       let da = Math.abs(candAngle - Math.atan2(p.y - magnifierY, p.x - magnifierX));
@@ -231,13 +239,23 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
         const a = phase + k * GOLDEN_ANGLE_RAD;
         const x = centerX + r * Math.cos(a);
         const y = centerY + r * Math.sin(a);
-        const labelHalf = ((labelLengths[intersections.length] ?? 0) * charWidth) / 2;
-        if (!isValid(x, y, intersections, relax, labelHalf)) continue;
-        intersections.push({ x, y, k, fanId: intersections.length });
+        const seat = intersections.length;
+        const scale = sizeScales[seat] ?? 1;
+        // Label fonts scale with their star, so a tapered star's label
+        // claims proportionally less room.
+        const labelHalf = ((labelLengths[seat] ?? 0) * charWidth * scale) / 2;
+        if (!isValid(x, y, intersections, relax, labelHalf, scale)) continue;
+        intersections.push({ x, y, k, fanId: seat, scale });
       }
     }
     if (intersections.length >= childCount) break;
-    if (cCur <= minSpacing) break; // densest honest field — take what seats
+    // The densify floor follows the SMALLEST star in the set: a tapered
+    // smudge tier (0.3x) can seat on a 0.3x candidate grid — stopping at
+    // the full-size spacing capped overloaded skies at ~22 seats.
+    const minScale = sizeScales.length
+      ? Math.min(...sizeScales.slice(0, childCount).map(v => v || 1))
+      : 1;
+    if (cCur <= minSpacing * minScale) break; // densest honest field — take what seats
   }
 
   // ── At-least-one guarantee ───────────────────────────────────────────

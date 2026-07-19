@@ -184,8 +184,11 @@ export function buildBiblePyramid({
       // long for pyramid nodes. The ring and magnifier keep the full names —
       // this rename never travels past the pyramid (onClick matches by id).
       const abbrevs = namesMap?.bookAbbreviations || null;
+      // FAVORITES (Howell 2026-07-19): tier-1 prominence stars wear their
+      // FULL names in the sky — the editorial "start here" — while everyone
+      // else keeps the pyramid abbreviation.
       return getBibleBooksForTestament(selected?.id).items.filter(Boolean).map(item => (
-        abbrevs?.[item.id] ? { ...item, name: abbrevs[item.id] } : item
+        abbrevs?.[item.id] && item.prominence !== 1 ? { ...item, name: abbrevs[item.id] } : item
       ));
     }
     if (mode === 'book') {

@@ -858,38 +858,81 @@ export function createApp({
         if (typeof pyramidConfig.getChildren === 'function' && pyramidSelected) {
           children = pyramidConfig.getChildren({ selected: pyramidSelected });
         }
+        // Editorial prominence (declared in data, tier 1 featured / 2 notable /
+        // absent default): prominent children claim the NEAR seats — the
+        // scatter hands out seats center-first — and draw larger, while the
+        // rest recede slightly. A set with no prominence declared is a
+        // uniform sky (every volume today except where the data says so).
+        // The focus ring is untouched: prominence permutes pyramid seating
+        // only, never sibling order.
+        const tierOf = ch => {
+          const t = ch?.prominence ?? ch?.meta?.prominence;
+          return t === 1 || t === 2 ? t : 3;
+        };
+        const anyProminence = children.some(ch => tierOf(ch) < 3);
+        const seatOrder = children.map((_, i) => i);
+        if (anyProminence) seatOrder.sort((a, b) => (tierOf(children[a]) - tierOf(children[b])) || (a - b));
+        const scaleForTier = t => (!anyProminence ? 1 : (t === 1 ? 1.45 : t === 2 ? 1.15 : 0.8));
+        // Depth taper (Howell 2026-07-19): an overloaded sky implies its own
+        // "etcetera" — past the first seats, stars shrink toward a smudge
+        // floor where labels stop being legible, and the tiny tail packs
+        // dense (spacing uses true radii), so far more children seat.
+        // Small families stay untouched.
+        const TAPER_AFTER = 10;
+        // Bigger families descend to the smudge floor FASTER: the walk seats
+        // in order, so mid-size stars must not exhaust the region before the
+        // tiny tail gets its chance.
+        const taperRate = children.length > 60 ? 0.86 : children.length > 30 ? 0.9 : 0.95;
+        const taperFor = j => (children.length <= 16 || j < TAPER_AFTER)
+          ? 1
+          : Math.max(0.3, Math.pow(taperRate, j - TAPER_AFTER));
+        const seatScales = seatOrder.map((i, j) => scaleForTier(tierOf(children[i])) * taperFor(j));
+        // Seat cap (Howell 2026-07-19): etcetera means etcetera — a 150-
+        // chapter sky seats ~60, the smudge tail implying the rest (and the
+        // processor thanks us at migration time). Tapping any star still
+        // migrates the COMPLETE sibling set; nothing is unreachable.
+        const SEAT_CAP = 60;
+        const seatCount = Math.min(children.length, SEAT_CAP);
+
         const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
           logoBounds: volumeLogo.getBounds(),
           magnifierAngle: magnifier.angle,
           parentId: pyramidSelected?.id ?? '',
           parentSortNumber: pyramidSelected?.order ?? 0,
-          childCount: children.length,
-          // Label lengths in sibling order: the star walk keeps each child a
-          // safe distance from the right edge for ITS OWN label's width
-          // (long names like a gateway's drift toward the field interior).
-          labelLengths: children.map(ch => String(ch?.name ?? ch?.label ?? ch?.id ?? '').length)
+          childCount: seatCount,
+          // Label lengths and size scales in SEAT order: the star walk keeps
+          // each child a safe distance from the right edge for ITS OWN
+          // label's width, and spaces stars by their true drawn radii.
+          labelLengths: seatOrder.slice(0, seatCount).map(i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length),
+          sizeScales: seatScales.slice(0, seatCount)
         });
         if (!geo) return null;
-        // Map children onto intersection slots
+        // Map children onto intersection slots (seat j belongs to child seatOrder[j])
         let nodes = [];
         let onNodeClick = null;
         if (children.length > 0 && geo.intersections.length > 0) {
-            const slots = geo.intersections.slice(0, children.length);
+            const slots = geo.intersections.slice(0, seatCount);
             const nodeR = vp.SSd * NODE_RADIUS_RATIO;
-            nodes = slots.map((slot, i) => {
+            nodes = slots.map((slot, j) => {
+              const child = children[seatOrder[j] ?? j] ?? children[j];
               // Compute angle from hub (focus ring center) to slot for label rotation
               const dx = slot.x - arcParams.hubX;
               const dy = slot.y - arcParams.hubY;
               const angle = Math.atan2(dy, dx);
               return {
-                id: children[i].id ?? `p-${i}`,
-                label: children[i].name ?? children[i].label ?? children[i].id ?? `p-${i}`,
-                item: children[i],
+                id: child.id ?? `p-${j}`,
+                label: child.name ?? child.label ?? child.id ?? `p-${j}`,
+                item: child,
                 arc: 'intersection',
                 angle,
                 x: slot.x,
                 y: slot.y,
-                r: nodeR
+                r: nodeR * (slot.scale ?? 1),
+                labelScale: slot.scale ?? 1,
+                // Absolute px (same formula as the CSS clamp): an SVG 'em'
+                // rebases onto the INHERITED font-size, which shrank every
+                // scaled label and popped the migration handoff.
+                labelFontPx: Math.round(Math.min(Math.max(14, 0.016 * vp.LSd), 26) * (slot.scale ?? 1) * 10) / 10
               };
             });
           }
