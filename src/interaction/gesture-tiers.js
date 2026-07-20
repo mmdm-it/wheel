@@ -14,7 +14,6 @@
 // The choreographer clamps the glide to the chain ends, so a flick that would
 // overshoot a short chain simply lands at the end — no floor needed.
 
-export const FLICK_MIN_VELOCITY = 0.8; // px/ms — same gate as a double-flick leg
 export const FLICK_GLIDE_MS = 600;     // the house tempo — arrival is predictable everywhere
 export const FLICK_SCRUBS = 4;         // a flick travels this many corner-to-corner scrubs
 

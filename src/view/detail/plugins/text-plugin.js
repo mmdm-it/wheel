@@ -1,5 +1,5 @@
 import { BaseDetailPlugin } from '../plugin-registry.js';
-import { selectFontTier, wrapLines, makeLineSpan } from './line-layout.js';
+import { selectFontTier, wrapLines, makeLineSpan, stridedRows } from './line-layout.js';
 
 export class TextDetailPlugin extends BaseDetailPlugin {
   canHandle(item) {
@@ -26,9 +26,13 @@ export class TextDetailPlugin extends BaseDetailPlugin {
         container.style.setProperty('--detail-SSd', `${SSd}px`);
       }
 
-      const wrappedLines = wrapLines(text, lineTable, tierPercent);
+      // Wrap against the rows the lines will actually SIT on (every
+      // stride-th row) — the fence narrows with depth, and budgeting from
+      // sequential rows overflowed deep seats (Phase C audit M2).
+      const seats = stridedRows(lineTable, stride);
+      const wrappedLines = wrapLines(text, seats, tierPercent);
       wrappedLines.forEach((lineText, idx) => {
-        const lineInfo = lineTable[idx * stride];
+        const lineInfo = seats[idx];
         if (!lineInfo) return;
         container.appendChild(makeLineSpan(create, lineText, '', lineInfo));
       });

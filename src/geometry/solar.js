@@ -1,8 +1,15 @@
 // Solar events for the day ephemeris (docs/DETAIL_SECTOR_LOADS.md).
-// Pure math, NOAA sunrise/sunset algorithm — the app COMPUTES the sun for
-// the whole six-millennia chain (Howell 2026-07-20); nothing is stored.
-// Validated against the 2026 wall-print edition (mean deviation 1.9 min;
-// the check exposed a two-day misprint in the paper — Apr 24/25).
+// Pure math, NOAA sunrise/sunset algorithm — the app COMPUTES the sun at
+// render time for any date on the chain; nothing is stored. Validated
+// against the 2026 wall-print edition (mean deviation 1.9 min; the check
+// exposed a two-day misprint in the paper — Apr 24/25).
+//
+// HONESTY BOUNDS (Phase C audit M5): the formula is epoch-centered — it
+// answers with the modern-era sun for every year. Exact where it is
+// checked (the print window); drifts toward the deep past as Julian-era
+// dates slide against the seasons (~10 min medieval, ~30+ min at 3000
+// BC). Good enough for a day card's footnote sky; a full Meeus
+// implementation is the upgrade path if the deep past ever needs minutes.
 //
 // The station is the adapter's business (Fano, permanently); this module
 // takes coordinates and answers in UTC. Civil-time conversion also lives
@@ -21,10 +28,12 @@ const deg = r => (r * 180) / Math.PI;
 // Fractional UTC hours of sunrise/sunset for a civil date at lat/lon.
 // Returns null in polar day/night conditions (never at Adriatic latitudes).
 export function solarEventsUTC(year, month, day, lat, lon) {
-  const n1 = Math.floor((275 * month) / 9);
-  const n2 = Math.floor((month + 9) / 12);
-  const n3 = 1 + Math.floor((year - 4 * Math.floor(year / 4) + 2) / 3);
-  const n = n1 - n2 * n3 + day - 30;
+  // Day-of-year with the GREGORIAN leap rule (the classic NOAA n1/n2/n3
+  // shorthand used the Julian rule — 1900/2100 treated as leap, skewing
+  // March-onward by a day in those centuries; Phase C audit M5).
+  const isLeap = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+  const CUM = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+  const n = CUM[month - 1] + day + (month > 2 && isLeap ? 1 : 0);
   const lngHour = lon / 15;
   const events = [];
   for (const rising of [true, false]) {
@@ -64,6 +73,10 @@ const lastSundayOf = (year, month) => {
 // solar time at the station's longitude.
 export function civilOffsetHours(year, month, day, lon, zoneSince = 1893) {
   if (year < zoneSince) return lon / 15;
+  // Ora legale: none before 1916, irregular 1916–1965 (approximated here
+  // as none — Phase C audit M5 caught phantom summer time in 1900), the
+  // modern last-Sunday rule from 1966 on.
+  if (year < 1966) return 1;
   const dst = (month > 3 && month < 10)
     || (month === 3 && day >= lastSundayOf(year, 3))
     || (month === 10 && day < lastSundayOf(year, 10));

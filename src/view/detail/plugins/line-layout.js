@@ -95,6 +95,15 @@ export function tierStride(tierPercent) {
  * @param {Array}  [tiers]   - defaults to FONT_TIERS
  * @returns {[string, number, number]} [cssClass, tierPercent, stride]
  */
+// The rows a strided layout will actually SEAT lines on: rows 0, s, 2s, …
+// Budgets must come from these rows, not from rows 0,1,2,… — the fence's
+// rows narrow with depth (tapered arc), so a wide shallow row's budget
+// applied to a narrow deep seat overflows it (Phase C audit M2).
+export function stridedRows(lineTable, stride) {
+  if (!Array.isArray(lineTable) || stride <= 1) return lineTable;
+  return lineTable.filter((_, i) => i % stride === 0);
+}
+
 export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {
   if (!lineTable || lineTable.length === 0) {
     const fb = tiers[tiers.length - 1];
@@ -105,8 +114,9 @@ export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {
   for (const tier of tiers) {
     const [cssClass, pct] = tier;
     const stride = tierStride(pct);
-    const textLines = estimateLineCount(words, lineTable, pct);
-    if (textLines * stride <= lineTable.length) {
+    const seats = stridedRows(lineTable, stride);
+    const textLines = estimateLineCount(words, seats, pct);
+    if (textLines <= seats.length) {
       if (linePitch > 0) {
         const SSd_approx = linePitch / 0.042;
         const fontHeightPx = (pct / 100) * SSd_approx * (pct >= 6 ? 1.3 : 1.4);

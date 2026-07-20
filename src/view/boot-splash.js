@@ -25,7 +25,7 @@ const SVGNS = 'http://www.w3.org/2000/svg';
 const T = {
   preInkMs: 400,       // grey beat before the first line
   arcDrawMs: 1600,     // the ring arc inking itself, upper-left → lower-right
-  nodeDrawMs: 200,     // each ring node's compass draw (unchanged)
+  nodeDrawMs: 200,     // each ring node's compass draw (ring only — the pyramid has its own tempo)
   nodeGapMs: 130,      // tiny pause between nodes, so the sequence reads
   circleDrawMs: 750,   // the magnifier / parent button
   pyramidPauseMs: 200, // breath between the parent button and the pyramid

@@ -1228,7 +1228,10 @@ export function createApp({
     const items = nav.items || [];
     const from = pendingSelectionIndex ?? nav.getCurrentIndex();
     let next = from + 1;
-    while (next < items.length && !items[next]) next += 1;
+    // Empty links are stepped over; placebo links (the version stamp) can
+    // never be a reading stop either (Phase C audit L2 — latent until a
+    // volume combines a placebo tail with detailTapAdvances).
+    while (next < items.length && (!items[next] || items[next].placebo)) next += 1;
     if (next >= items.length) return false;
     return rotateToIndex(next);
   };
@@ -1389,7 +1392,6 @@ export function createApp({
     // Open the Detail Sector at the current position regardless of leaf level.
     // onOpen is called after the expansion animation completes.
     openDetailSector(onOpen) {
-      console.log('[openDetailSector] called | detailSectorShown:', detailSectorShown, '| volumeLogo.animating:', volumeLogo?.animating);
       if (detailSectorShown) {
         if (typeof onOpen === 'function') onOpen();
         return;

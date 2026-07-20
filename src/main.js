@@ -5,6 +5,7 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
+import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
@@ -245,7 +246,11 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // Build arc-aware bounds (DSUA — full area, no logo exclusion).
   // The logo moves to the centre as a watermark when the circle expands,
   // so its collapsed upper-right position does not restrict detail text.
-  const arcBounds = computeDetailSectorBounds(window.innerWidth, window.innerHeight);
+  // MEASURED viewport, never window.inner* — the wheel's geometry and the
+  // pinned canvas use the visual viewport, and a browser chrome bar makes
+  // innerHeight lie (Phase C audit M4; the DDG bottom-crop class of bug).
+  const vpm = measureViewport();
+  const arcBounds = computeDetailSectorBounds(vpm.width, vpm.height);
   const panelRect = detailPanel.getBoundingClientRect();
   const renderBounds = { ...arcBounds, width: panelRect.width, height: panelRect.height };
 
@@ -374,6 +379,12 @@ function wireInteractions(getApp) {
   svg.addEventListener('click', event => {
     const now = Date.now();
     if (now < suppressNativeClickUntil) {
+      // Control taps (magnifier, parent button) rely on their NATIVE click
+      // and their pointerdown path never arms a manual fire — suppressing
+      // them makes a quick node-then-parent rhythm eat the second tap
+      // (Phase C audit M6). Controls are exempt from suppression.
+      const isControl = event.target?.closest?.('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
+      if (isControl) return;
       logTap('native-click-suppressed', {
         targetClass: event.target?.getAttribute?.('class') || null,
         targetId: event.target?.getAttribute?.('id') || null
@@ -780,6 +791,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   if (detailContentEl) detailContentEl.innerHTML = '';
   const detailPanelEl = document.getElementById('detail-panel');
   if (detailPanelEl) detailPanelEl.classList.remove('detail-panel--visible');
+  // The migration LIFO belongs to the OLD volume: clear it, or its detached
+  // overlay clones leak per transit and a later ascent in the NEW volume can
+  // pop the old volume's entry and replay stale clones (Phase C audit M3).
+  clearMigrationStack();
   currentApp = null;
   currentVolumeId = volume;
   gatewayReturnContext = gatewayReturn;
@@ -838,6 +853,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getWeekdayLetters: layoutBindings.getWeekdayLetters,
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
     getBibleVerseItems: layoutBindings.getBibleVerseItems,
+    getBibleVerseCacheStatus: layoutBindings.getBibleVerseCacheStatus,
     getBibleVerseChain: layoutBindings.getBibleVerseChain,
     getBibleChapterChain: layoutBindings.getBibleChapterChain,
     prefetchBibleVerses: layoutBindings.prefetchBibleVerses,

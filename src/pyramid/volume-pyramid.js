@@ -74,13 +74,20 @@ export function buildCatalogPyramid({
     const parent = app?.nav?.getCurrent?.();
     const children = getCatalogChildren(manifest, parent);
     if (!children.length) return;
+    const selectedIdx = children.findIndex(m => m.id === instr.item.id);
+    // Mid-rotation the sky live-previews a PASSING parent's children while
+    // the committed selection is still travelling (selection commits on
+    // arrival). A tapped star that isn't among the committed parent's
+    // children would navigate relative to the WRONG parent — pour the old
+    // manufacturer's ring seeded at index 0 (Phase C audit H1). Such taps
+    // are noise: ignore them; the settled sky is tappable as ever.
+    if (selectedIdx < 0) return;
     // Snapshot current nav state before migrating IN
     if (typeof savePreInState === 'function' && app?.nav) {
       const currentItems = app.nav.items;
       const currentIndex = currentItems.indexOf(app.nav.getCurrent());
       savePreInState({ items: currentItems, selectedIndex: currentIndex >= 0 ? currentIndex : 0, preserveOrder: true });
     }
-    const selectedIdx = children.findIndex(m => m.id === instr.item.id);
     if (typeof setCatalogMode === 'function') setCatalogMode('child');
     if (app?.setPrimaryItems) {
       // Migrate IN: siblings land on the focus ring with the clicked item selected.
@@ -201,6 +208,7 @@ export function buildBiblePyramid({
   namesMap,
   getBibleChapters,
   getBibleVerseItems,
+  getBibleVerseCacheStatus,
   getBibleBooksForTestament,
   getBibleTestaments,
   prefetchBibleVerses,
@@ -246,12 +254,22 @@ export function buildBiblePyramid({
     if (mode === 'chapter') {
       if (typeof getBibleVerseItems !== 'function') return [];
       const items = getBibleVerseItems(selected);
-      // Trigger prefetch for this chapter if not yet cached; refresh pyramid when loaded.
+      // Trigger prefetch ONLY when the chapter has never been requested (or
+      // is in flight — the queue repaints on arrival). A chapter that loaded
+      // EMPTY is an honest data hole (the Esther stubs): re-requesting it
+      // fires onLoaded synchronously → refreshPyramid → render → here again
+      // — the hot loop that ground the Moto G to a near-crash (Phase C,
+      // 2026-07-20). An empty sky renders as an empty sky.
       if (items.length === 0 && typeof prefetchBibleVerses === 'function' && selected?.meta?.externalFile) {
-        const app = typeof getApp === 'function' ? getApp() : null;
-        prefetchBibleVerses(selected, {
-          onLoaded: () => { app?.refreshPyramid?.(); }
-        });
+        const status = typeof getBibleVerseCacheStatus === 'function'
+          ? getBibleVerseCacheStatus(selected.meta.externalFile)
+          : null;
+        if (status === null || status === 'loading') {
+          const app = typeof getApp === 'function' ? getApp() : null;
+          prefetchBibleVerses(selected, {
+            onLoaded: () => { app?.refreshPyramid?.(); }
+          });
+        }
       }
       return items;
     }
