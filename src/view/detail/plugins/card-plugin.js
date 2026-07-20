@@ -33,6 +33,8 @@ export class CardDetailPlugin extends BaseDetailPlugin {
 
       // ── Title: largest tier that fits in TITLE_MAX_LINES ────────────
       const titleText = item?.title ?? item?.name ?? '';
+      // A card may ask for its title on the viewport's centre line.
+      const titleCenterWidth = item?.titleAlign === 'center' ? (bounds?.width || 0) : 0;
       if (titleText && lineIdx < lineTable.length) {
         const titleBudget = lineTable.slice(lineIdx, lineIdx + TITLE_MAX_LINES);
         const [tierClass, tierPercent, titleStride] = selectFontTier(titleText, titleBudget, CARD_FONT_TIERS);
@@ -41,7 +43,8 @@ export class CardDetailPlugin extends BaseDetailPlugin {
         titleLines.forEach(text => {
           if (lineIdx >= lineTable.length) return;
           container.appendChild(
-            makeLineSpan(create, text, `detail-card-title ${tierClass}`, lineTable[lineIdx])
+            makeLineSpan(create, text, `detail-card-title ${tierClass}`, lineTable[lineIdx],
+              { centerWidth: titleCenterWidth })
           );
           lineIdx += titleStride;
         });
@@ -95,6 +98,7 @@ export class CardDetailPlugin extends BaseDetailPlugin {
     const title = create('div');
     title.className = 'detail-card-title';
     title.textContent = item?.title ?? item?.name ?? '';
+    if (item?.titleAlign === 'center' && title.style) title.style.textAlign = 'center';
     card.appendChild(title);
 
     const body = create('div');

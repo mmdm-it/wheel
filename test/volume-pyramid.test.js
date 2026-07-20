@@ -166,6 +166,28 @@ describe('createVolumePyramidConfig', () => {
     assert.equal(primaryCalls.length, 1, 'header tap does nothing');
   });
 
+  it('hands the wedge its column headers through the real layout-spec plumbing', () => {
+    // The third binding to run this gauntlet (getCalendarMonthChain, then
+    // getCalendarDayChain): a binding dropped by either whitelist fails
+    // silently — here the lattice would quietly keep its built-in row and
+    // a translated volume would show English headers over Italian prose.
+    const manifest = { Calendar: {} };
+    const spec = createVolumeLayoutSpec({
+      volume: 'calendar',
+      pyramidBuilder: buildCalendarPyramid,
+      manifest,
+      getCalendarMonths: () => [],
+      getWeekdayLetters: () => ['D', 'L', 'M', 'M', 'G', 'V', 'S'],
+      getApp: () => null,
+      calendarModeRef: () => 'month'
+    });
+    const grid = spec.pyramid.gridFor({
+      selected: { id: '2026:jul', level: 'month', yearNumber: 2026, monthNumber: 7 }
+    });
+    assert.deepEqual(grid.weekdayLetters, ['D', 'L', 'M', 'M', 'G', 'V', 'S'],
+      'the volume names its own columns');
+  });
+
   it('builds bible pyramid config and updates mode/context', () => {
     const manifest = { Gutenberg_Bible: { testaments: {} } };
     const book = { id: 'GEN', sectionId: 'sec1', testamentId: 'old' };

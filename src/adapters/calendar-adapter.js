@@ -1,6 +1,8 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths } from './volume-helpers.js';
+import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths,
+  getCalendarWeekdayNames, getCalendarWeekdayLetters } from './volume-helpers.js';
+import { dayOfWeek } from '../geometry/day-grid.js';
 import { buildCalendarPyramid } from '../pyramid/volume-pyramid.js';
 
 const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
@@ -122,10 +124,12 @@ export function normalize(raw) {
     links,
     meta: {
       volumeId: volumeKey,
-      // No leaf detail yet (Howell 2026-07-17: months in the ring need no
-      // detail sector). Days will claim leafLevel when they exist.
-      leafLevel: null,
-      levels: ['year', 'month'],
+      // Days claim the leaf (Howell 2026-07-20): a date settling into the
+      // magnifier opens the detail sector by itself — this one field is
+      // what the host reads to decide that. Months in the ring still get
+      // no sector; they get the wedge.
+      leafLevel: 'day',
+      levels: ['year', 'month', 'day'],
       colors: levelPalette,
       dimensions
     }
@@ -173,6 +177,21 @@ function findMonth(manifest, monthId) {
 export function detailFor(selected, manifest) {
   if (!selected) return null;
   const id = selected.id || '';
+
+  // A DATE in the magnifier (Howell 2026-07-20). The weekday to begin
+  // with; the printed wall calendar's sunrise, sunset and tide tables for
+  // Fano are where this panel is headed, which is exactly why the sector
+  // updates on SETTLE only and never mid-scrub.
+  if (selected.level === 'day') {
+    const parts = /^d:(-?\d+):(\d+):(\d+)$/.exec(id);
+    const yearNumber = Number.isFinite(selected.yearNumber) ? selected.yearNumber : Number(parts?.[1]);
+    const monthNumber = Number.isFinite(selected.monthNumber) ? selected.monthNumber : Number(parts?.[2]);
+    const dayNumber = Number.isFinite(selected.dayNumber) ? selected.dayNumber : Number(parts?.[3]);
+    if (![yearNumber, monthNumber, dayNumber].every(Number.isFinite)) return null;
+    const weekday = getCalendarWeekdayNames(manifest)[dayOfWeek(yearNumber, monthNumber, dayNumber)] || '';
+    if (!weekday) return null;
+    return { type: 'card', title: weekday.toUpperCase(), body: '', titleAlign: 'center' };
+  }
 
   if (selected.level === 'year') {
     const yearEntry = findYear(manifest, id) || {};
@@ -341,6 +360,7 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       calendarModeRef: () => calendarMode,
       getCalendarMonthChain: monthId => monthChain(monthId),
       getCalendarDayChain,
+      getWeekdayLetters: () => getCalendarWeekdayLetters(manifest),
       setCalendarMode: next => { calendarMode = next; },
       setCalendarMonthContext: ctx => { calendarMonthContext = ctx; },
       getCalendarMonths: (m, selected, mode) => getCalendarMonths(m, selected, mode || calendarMode),
@@ -359,6 +379,9 @@ export const calendarAdapter = {
   capabilities: {
     search: false,
     deepLink: false,
-    theming: true
+    theming: true,
+    // At the leaf the detail sector doubles as a NEXT button
+    // (a date leads to the next date).
+    detailTapAdvances: true
   }
 };

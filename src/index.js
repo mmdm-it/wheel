@@ -13,6 +13,7 @@ import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
 import { animateIn, animateOut, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
+import { computeDSUA } from './geometry/usable-areas.js';
 
 export {
   getViewportInfo,
@@ -85,7 +86,10 @@ export function createApp({
   pyramid,
   pyramidLayoutSpec = null,
   pyramidAdapter = null,
-  pyramidNormalized = null
+  pyramidNormalized = null,
+  // The detail sector doubles as a NEXT button at the leaf, where a volume
+  // asks for it (Howell 2026-07-20 — the e-reader gesture).
+  detailTapAdvances = false
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const debug = Boolean(contextOptions.debug);
@@ -189,7 +193,13 @@ export function createApp({
   );
   let detailSectorShown = false; // tracks whether DS is currently expanded
   let forcedDetailOpen = false;   // request to open DS at a non-leaf level
-  let freezeDetailSector = false; // survives one post-expansion render without re-collapsing
+  let freezeDetailSector = false; // skips collapse for exactly ONE render after an expansion
+  // Where a rotation currently in flight is HEADED. The selection itself
+  // commits only on arrival, so without this a second tap during the
+  // journey would reckon from the seat the ring has already left, aim at
+  // the same node, and be swallowed — reading three verses would advance
+  // one (Howell's e-reader, 2026-07-20).
+  let pendingSelectionIndex = null;
   let detailOpenCallback = null;  // called after forced-expansion animation completes
 
   // Notify the host page when the detail sector visibility changes.
@@ -827,6 +837,17 @@ export function createApp({
     // open the sector at a non-leaf level; freezeDetailSector prevents the
     // immediately-following render from collapsing it again.
     const isLeaf = leafLevel && selected?.level === leafLevel;
+    // The freeze lasts exactly one render — claim it here, whatever this
+    // render turns out to do. It used to be cleared only inside the
+    // collapse branch, which a leaf render never reaches: expanding on a
+    // leaf therefore left the flag armed indefinitely, and it ate the
+    // first genuine collapse. That is the ascent out of the leaf, so the
+    // sector stayed open, kept the pyramid suppressed, and the level
+    // above came back empty until some later render (a stray tap) undid
+    // it. Bug found on the day ring, 2026-07-20; it was latent in every
+    // volume with a leaf.
+    const collapseFrozen = freezeDetailSector;
+    freezeDetailSector = false;
     if ((isLeaf || forcedDetailOpen) && !detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = true;
       forcedDetailOpen = false;
@@ -838,15 +859,10 @@ export function createApp({
         render(rotation);
         if (typeof savedCb === 'function') savedCb();
       });
-    } else if (!isLeaf && detailSectorShown && !volumeLogo.animating) {
-      if (freezeDetailSector) {
-        // Allow this one post-expansion render to pass without collapsing.
-        freezeDetailSector = false;
-      } else {
-        detailSectorShown = false;
-        emitDetailSectorChange(false, 'immediate');
-        volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
-      }
+    } else if (!isLeaf && detailSectorShown && !volumeLogo.animating && !collapseFrozen) {
+      detailSectorShown = false;
+      emitDetailSectorChange(false, 'immediate');
+      volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
     }
 
     // Suppress child pyramid when Detail Sector is shown or animating
@@ -888,6 +904,7 @@ export function createApp({
             const grid = computeDayGridLayout(vp, magnifier, arcParams, {
               yearNumber: gridInfo.yearNumber,
               month: gridInfo.month,
+              weekdayLetters: gridInfo.weekdayLetters,
               fraction,
               rotating: isRotating,
               logoBounds: volumeLogo.getBounds()
@@ -1148,27 +1165,71 @@ export function createApp({
     return 1000 * Math.log10(distance) + 250;
   };
 
-  const rotateNodeIntoMagnifier = node => {
-    if (!node?.item) return;
+  const rotateToIndex = index => {
+    const item = nav.items?.[index];
+    if (!item) return false; // an empty link is never a destination
     const targetAngle = magnifier.angle;
-    const baseAngle = getBaseAngleForOrder(node.item.order, vp, nodeSpacing);
+    const baseAngle = getBaseAngleForOrder(item.order, vp, nodeSpacing);
     const desiredRotation = targetAngle - baseAngle;
     const bounds = computeBounds(nav.items);
     const clampedRotation = clampRotation(desiredRotation, bounds);
-    const currentIndex = nav.getCurrentIndex();
-    const duration = primaryClickDuration(currentIndex, node.index);
+    // Travel is measured from where the ring is GOING, not where it sat.
+    const fromIndex = pendingSelectionIndex ?? nav.getCurrentIndex();
+    const duration = primaryClickDuration(fromIndex, index);
     if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
       window.__tapDebugLog('rotate-node-into-magnifier', {
-        fromIndex: currentIndex,
-        toIndex: node.index,
-        itemId: node.item?.id || null,
-        itemLevel: node.item?.level || null,
+        fromIndex,
+        toIndex: index,
+        itemId: item.id || null,
+        itemLevel: item.level || null,
         durationMs: Number(duration.toFixed(2))
       });
     }
-    nav.selectIndex(node.index);
+    // The selection commits when the ring ARRIVES, not when it is asked to
+    // travel (Howell 2026-07-20). A click can send the ring turning for a
+    // second or more, and the detail sector reads the settled selection —
+    // updating it up front made the panel describe a date that had not
+    // reached the lens yet. The drag path already behaved: its snap is
+    // 100ms, too short to see. Everything that must track the lens LIVE
+    // (parent-button header, pyramid) follows the geometry, not this.
+    pendingSelectionIndex = index;
     isRotating = true;
-    animateSnapTo(clampedRotation, duration);
+    animateSnapTo(clampedRotation, duration, () => {
+      pendingSelectionIndex = null;
+      nav.selectIndex(index);
+    });
+    return true;
+  };
+
+  const rotateNodeIntoMagnifier = node => {
+    if (!node?.item) return;
+    rotateToIndex(node.index);
+  };
+
+  /**
+   * THE NEXT GESTURE: step one leaf forward. Empty links are stepped OVER,
+   * not landed on — cousin gaps are texture for a scrubbing thumb, never
+   * stops in a reading path (a month boundary is two blank links, a book
+   * boundary more). Returns false at the end of the chain, silently.
+   */
+  const advanceLeaf = () => {
+    const items = nav.items || [];
+    const from = pendingSelectionIndex ?? nav.getCurrentIndex();
+    let next = from + 1;
+    while (next < items.length && !items[next]) next += 1;
+    if (next >= items.length) return false;
+    return rotateToIndex(next);
+  };
+
+  /**
+   * Is this point (in SVG user units) inside the live NEXT area? The
+   * canonical DSUA fence is the hit region deliberately: it already
+   * excludes the ring's tapered margin and the control deck, so this can
+   * never swallow a ring tap, the magnifier, or the parent button.
+   */
+  const detailAreaAdvances = (x, y) => {
+    if (!detailTapAdvances || !detailSectorShown) return false;
+    return computeDSUA(vp, arcParams, magnifier).contains(x, y);
   };
 
   const cancelSnap = () => {
@@ -1178,7 +1239,10 @@ export function createApp({
     }
   };
 
-  const animateSnapTo = (targetRotation, duration = 100) => {
+  // `onArrive` fires once the ring is actually at rest at its destination,
+  // on every exit path — animated, instant, or reduced-motion — and always
+  // BEFORE the settling render, so that render already paints the arrival.
+  const animateSnapTo = (targetRotation, duration = 100, onArrive = null) => {
     if (prefersReducedMotion) {
       cancelSnap();
       rotation = targetRotation;
@@ -1187,6 +1251,7 @@ export function createApp({
         rotation = choreographer.getRotation();
       }
       isRotating = false;
+      if (onArrive) onArrive();
       render(rotation);
       return;
     }
@@ -1200,6 +1265,7 @@ export function createApp({
         rotation = targetRotation;
       }
       isRotating = false;
+      if (onArrive) onArrive();
       render(rotation);
       return;
     }
@@ -1222,6 +1288,9 @@ export function createApp({
       } else {
         snapId = null;
         isRotating = false;
+        // Arrival: a redirected click cancels this frame loop, so a
+        // superseded journey never commits its destination.
+        if (onArrive) onArrive();
         render(rotation);
       }
     };
@@ -1262,6 +1331,7 @@ export function createApp({
         closestAngle = node.angle;
       }
     });
+    pendingSelectionIndex = null; // a thumb overrides any journey in flight
     nav.selectIndex(closestIdx);
     if (closestAngle !== null) {
       const delta = targetAngle - closestAngle;
@@ -1277,6 +1347,8 @@ export function createApp({
   render(rotation);
 
   return {
+    advanceLeaf,
+    detailAreaAdvances,
     nav,
     view,
     choreographer,

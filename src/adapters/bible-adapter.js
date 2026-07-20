@@ -1,6 +1,7 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
+import { buildBibleVerseChain } from '../navigation/cousin-builder.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
 
@@ -218,6 +219,70 @@ function findChapter(manifest, chapterId) {
   return null;
 }
 
+// READING AHEAD. The verse ring spans the whole volume but verse TEXT
+// arrives one chapter-file at a time, so a reader crossing into a new
+// chapter would meet a bare reference ("2:1") where the words should be.
+// Two habits fix that: load the chapter under the magnifier if it is not
+// yet here (and repaint when it lands), and — once the reader is within
+// sight of the last verse — quietly fetch the chapter after it, so the
+// crossing itself is never a wait.
+const VERSES_BEFORE_READING_AHEAD = 5;
+const byDeclaredOrder = (a, b) => {
+  const rank = entry => (Number.isFinite(entry?.[1]?.sort_number)
+    ? entry[1].sort_number
+    : (Number.parseInt(entry?.[0], 10) || 0));
+  return rank(a) - rank(b);
+};
+let _renderDetail = null;          // captured at boot; repaints when text lands
+const _requestedChapters = new Set(); // asked-for files, so a failure is not re-asked forever
+let _chapterOrder = null;          // flat reading order, memoized
+
+function chaptersInReadingOrder(manifest) {
+  if (_chapterOrder) return _chapterOrder;
+  const bible = manifest?.Gutenberg_Bible;
+  const order = [];
+  Object.entries(bible?.testaments || {}).sort(byDeclaredOrder).forEach(([, testament]) => {
+    Object.entries(testament?.sections || {}).sort(byDeclaredOrder).forEach(([, section]) => {
+      Object.entries(section?.books || {}).sort(byDeclaredOrder).forEach(([bookId, book]) => {
+        Object.entries(book?.chapters || {}).sort(byDeclaredOrder).forEach(([chapterKey, chapter]) => {
+          order.push({
+            chapterId: chapter?.id || `${bookId}:${chapterKey}`,
+            bookId: book?.book_key || bookId,
+            externalFile: chapter?._external_file || chapter?.external_file || '',
+            verseCount: Number.isFinite(chapter?.verse_count) ? chapter.verse_count : 0
+          });
+        });
+      });
+    });
+  });
+  _chapterOrder = order;
+  return order;
+}
+
+function requestChapter(chapterId, bookId, externalFile) {
+  if (!externalFile || _requestedChapters.has(externalFile)) return;
+  _requestedChapters.add(externalFile);
+  prefetchBibleVerses(
+    { id: chapterId, meta: { externalFile, bookId } },
+    { onLoaded: () => { if (typeof _renderDetail === 'function') _renderDetail(); } }
+  );
+}
+
+function readAhead(selected, manifest) {
+  const meta = selected?.meta;
+  if (!meta?.externalFile) return;
+  requestChapter(meta.chapterId, meta.bookId, meta.externalFile);
+  const order = chaptersInReadingOrder(manifest);
+  const here = order.findIndex(c => c.chapterId === meta.chapterId);
+  if (here < 0 || here + 1 >= order.length) return;
+  const verseKey = Number.parseInt(meta.verseKey, 10);
+  const remaining = order[here].verseCount - verseKey;
+  if (Number.isFinite(remaining) && remaining <= VERSES_BEFORE_READING_AHEAD) {
+    const next = order[here + 1];
+    requestChapter(next.chapterId, next.bookId, next.externalFile);
+  }
+}
+
 export function detailFor(selected, manifest, { normalized, translation } = {}) {
   if (!selected) return null;
   const id = selected.id || '';
@@ -278,7 +343,10 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       const others = ['NAB', 'VUL', 'BYZ', 'SYN'].filter(t => t !== activeTranslation);
       const preferred = activeTranslation ? [activeTranslation, ...others] : others;
       const text = getVerseTextFromCache(externalFile, verseKey, preferred);
+      readAhead(selected, manifest);
       if (text) return { type: 'text', text };
+      // The chapter is on its way; the repaint comes with it.
+      return { type: 'text', text: selected.text || '' };
     }
     return { type: 'text', text: selected.text || selected.name || id || '' };
   }
@@ -324,9 +392,33 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   }
   const lastBookByTestament = {};
 
+  // The ~34k-link verse chain is the same on every entry; build it once
+  // and only re-locate the verse entered at.
+  let verseChainItems = null;
+  const verseChain = initialVerseId => {
+    if (!verseChainItems) {
+      verseChainItems = buildBibleVerseChain(manifest, {}).items;
+    }
+    let selectedIndex = 0;
+    if (initialVerseId) {
+      const idx = verseChainItems.findIndex(item => item && item.id === initialVerseId);
+      if (idx >= 0) selectedIndex = idx;
+    }
+    return { items: verseChainItems, selectedIndex };
+  };
+
   const parentHandler = ({ selected, app }) => {
     if (bibleMode === 'verse') {
-      const ctx = bibleVerseContext;
+      // The verse ring spans the whole volume, so the reader may be far
+      // from the chapter they entered at. Land on the MAGNIFIED verse's
+      // own chapter; the entry context is only a fallback (the same live
+      // contract the timeline uses for a date over its month).
+      const ctx = {
+        bookId: selected?.meta?.bookEntryId || selected?.meta?.bookId || bibleVerseContext?.bookId,
+        chapterId: selected?.meta?.chapterId || bibleVerseContext?.chapterId,
+        testamentId: selected?.meta?.testamentId || bibleVerseContext?.testamentId,
+        sectionId: selected?.meta?.sectionId || bibleVerseContext?.sectionId
+      };
       if (!ctx?.bookId) return false;
       // Navigate back to the chapter list for this book.
       const chapterItems = getBibleChapters(manifest, { id: ctx.bookId }, namesMap, 'book');
@@ -463,6 +555,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // Detail Sector with the verse text once it arrives. (Moved from the
   // host's bootVolume — Phase B audit, H1.)
   const onBoot = ({ app, items, selectedIndex, renderDetail }) => {
+    // Held for the whole session: when a chapter's text lands, whatever
+    // verse is under the magnifier repaints itself.
+    if (typeof renderDetail === 'function') {
+      _renderDetail = item => renderDetail(item || app?.nav?.getCurrent?.());
+    }
     if (options?.level !== 'chapter' || !options?.verseId) return;
     const initialChapter = items[selectedIndex];
     if (!initialChapter?.meta?.externalFile) return;
@@ -498,6 +595,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
       getBibleVerseItems,
+      getBibleVerseChain: verseId => verseChain(verseId),
       prefetchBibleVerses,
       getBibleBooksForTestament: (testamentId) =>
         buildBibleBookCousinChain(manifest, { testamentId, names: namesMap }),
@@ -516,6 +614,9 @@ export const bibleAdapter = {
   capabilities: {
     search: false,
     deepLink: false,
-    theming: true
+    theming: true,
+    // At the leaf the detail sector doubles as a NEXT button
+    // (the e-reader gesture: tap the verse, read the next).
+    detailTapAdvances: true
   }
 };

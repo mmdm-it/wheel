@@ -178,15 +178,24 @@ export function wrapLines(text, lineTable, tierPercent) {
  * @param {{ y: number, leftX: number, availableWidth: number }} lineInfo
  * @returns {HTMLElement}
  */
-export function makeLineSpan(create, text, cssClass, lineInfo) {
+export function makeLineSpan(create, text, cssClass, lineInfo, { centerWidth = 0 } = {}) {
   const span = create('span');
   span.className = `detail-text-line ${cssClass}`;
   span.textContent = text;
   if (span.style) {
     span.style.position  = 'absolute';
-    span.style.left      = `${lineInfo.leftX}px`;
     span.style.top       = `${lineInfo.y}px`;
-    span.style.maxWidth  = `${lineInfo.availableWidth}px`;
+    if (centerWidth > 0) {
+      // Centered on the VIEWPORT, not within the arc-indented line: the
+      // line keeps its vertical seat in the table, but spans the full
+      // width so the text sits on the screen's centre line.
+      span.style.left      = '0px';
+      span.style.width     = `${centerWidth}px`;
+      span.style.textAlign = 'center';
+    } else {
+      span.style.left      = `${lineInfo.leftX}px`;
+      span.style.maxWidth  = `${lineInfo.availableWidth}px`;
+    }
   }
   return span;
 }
