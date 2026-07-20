@@ -35,7 +35,7 @@ describe('gateway round trip (adapter contract)', () => {
     let returned = 0;
     const handlers = createCalendarHandlers({
       manifest: calendarManifest,
-      options: {},
+      options: { level: 'year' },
       onGatewayReturn: () => { returned += 1; return true; },
       gatewayLabel: 'GREGORIO XIII',
       gatewayReturnLabel: 'MMdM CATALOGO'
@@ -56,7 +56,7 @@ describe('gateway round trip (adapter contract)', () => {
   });
 
   it('calendar: standalone, the year ring has no parent button and top-level OUT is unhandled', () => {
-    const handlers = createCalendarHandlers({ manifest: calendarManifest, options: {} });
+    const handlers = createCalendarHandlers({ manifest: calendarManifest, options: { level: 'year' } });
     const state = {};
     const app = stubApp(state);
     assert.equal(handlers.getParentLabel({ id: 'y1', level: 'year' }), '',
@@ -69,13 +69,29 @@ describe('gateway round trip (adapter contract)', () => {
   });
 
   it('calendar: parent button names the magnified month\'s year, live', () => {
-    const handlers = createCalendarHandlers({ manifest: calendarManifest, options: {} });
+    const handlers = createCalendarHandlers({ manifest: calendarManifest, options: { level: 'year' } });
     const app = stubApp({});
     handlers.childrenHandler({ selected: { id: 'y1', level: 'year' }, app });
     assert.equal(handlers.getParentLabel({ id: '1969:jul', parentId: '1969', yearNumber: 1969, level: 'month' }), '1969');
     assert.equal(handlers.getParentLabel({ id: '-753:jan', parentId: '-753', yearNumber: -753, level: 'month' }), '753 BC',
       'era rule holds in the parent button');
     assert.equal(handlers.getParentLabel(null), '', 'a gap in the magnifier blanks the label');
+  });
+
+  it('calendar: default boot lands in the months ring with an OUT to the years ring', () => {
+    // Howell 2026-07-19: entry (gateway or standalone) magnifies the
+    // CURRENT MONTH; the years ring is one OUT away.
+    const handlers = createCalendarHandlers({ manifest: calendarManifest, options: {} });
+    const state = {};
+    const app = stubApp(state);
+    handlers.onBoot({ app });
+    assert.equal(state.parentButtons?.showOuter, true,
+      'months mode always has an OUT (up to the years ring)');
+    assert.equal(handlers.getParentLabel({ id: '1969:jul', parentId: '1969', yearNumber: 1969, level: 'month' }),
+      '1969', 'the parent button is the live year header from boot');
+    const up = handlers.parentHandler({ app });
+    assert.equal(up, true, 'OUT ascends to the years ring');
+    assert.ok(state.items?.length, 'years ring delivered');
   });
 
   it('bible: the root ring routes OUT through the gateway', () => {

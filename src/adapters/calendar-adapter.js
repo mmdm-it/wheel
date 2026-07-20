@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildCalendarYears, buildCalendarMonthsCousinChain, getCalendarMonths } from './volume-helpers.js';
+import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths } from './volume-helpers.js';
 import { buildCalendarPyramid } from '../pyramid/volume-pyramid.js';
 
 const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
@@ -204,10 +204,13 @@ export function detailFor(selected, manifest) {
 }
 
 export function createHandlers({ manifest, options, onGatewayReturn = null, gatewayLabel = '', gatewayReturnLabel = '' }) {
-  // Two modes only: years are the top level (millennia removed 2026-07-17 —
-  // centuries/millennia are cousin-gap texture in the year chain, not a
-  // parent). Backing out from years exits through the gateway, if any.
-  let calendarMode = 'year';
+  // Years are the top level (millennia removed 2026-07-17 — centuries/
+  // millennia are cousin-gap texture in the year chain, not a parent);
+  // backing out from years exits through the gateway, if any. The DEFAULT
+  // BOOT lands one level down: the months ring on the current month
+  // (Howell 2026-07-19), so the handlers must start in the ring the chain
+  // builder actually delivered.
+  let calendarMode = options?.level === 'year' ? 'year' : 'month';
   let calendarMonthContext = null;
 
   // The ~86k-link months chain is identical on every entry; build it once
@@ -225,7 +228,37 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     return { items: monthChainItems, selectedIndex };
   };
 
+  // The day chain is a ±5-year window around the tapped day (thumb
+  // doctrine) — rebuilt only when the center moves, reused across the
+  // renders of one visit.
+  let dayChainCache = null;
+  const getCalendarDayChain = centerId => {
+    if (!dayChainCache || dayChainCache.centerId !== centerId) {
+      const chain = buildCalendarDaysCousinChain(manifest, { centerId });
+      dayChainCache = chain ? { centerId, chain } : null;
+    }
+    return dayChainCache?.chain ?? null;
+  };
+
   const parentHandler = ({ selected, app }) => {
+    if (calendarMode === 'day') {
+      // Ascend day ring -> months ring, landing on the magnified day's month.
+      const { items: monthItems } = monthChain(null);
+      let idx = 0;
+      if (Number.isFinite(selected?.yearNumber) && Number.isFinite(selected?.monthNumber)) {
+        const found = monthItems.findIndex(it => it
+          && it.yearNumber === selected.yearNumber
+          && it.monthNumber === selected.monthNumber);
+        if (found >= 0) idx = found;
+      }
+      calendarMode = 'month';
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(monthItems, idx, true);
+      }
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      return true;
+    }
     if (calendarMode === 'month') {
       // The months ring is the whole timeline — the user may have scrubbed
       // far from the year they entered at. Land on the CURRENT month's year;
@@ -255,6 +288,13 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
   // show the gateway-return destination (e.g. the catalog's display name)
   // when there is one, nothing when standalone.
   const getParentLabel = item => {
+    if (calendarMode === 'day') {
+      if (!item) return '';
+      const y = item.yearNumber;
+      if (!Number.isFinite(y) || !item.monthName) return '';
+      const yearLabel = y < 0 ? `${Math.abs(y)} BC` : String(y);
+      return `${String(item.monthName).toUpperCase()} ${yearLabel}`;
+    }
     if (calendarMode !== 'month') return gatewayReturnLabel || '';
     if (!item) return '';
     const y = Number.isFinite(item.yearNumber) ? item.yearNumber : Number.parseInt(item.parentId, 10);
@@ -281,7 +321,11 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
   // button names the return destination; standalone there is nothing above,
   // so no button.
   const onBoot = ({ app }) => {
-    if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayReturnLabel) });
+    // Months mode always has an OUT (up to the years ring); the years ring
+    // only when a gateway waits behind it.
+    if (app?.setParentButtons) {
+      app.setParentButtons({ showOuter: calendarMode === 'month' || Boolean(gatewayReturnLabel) });
+    }
   };
 
   return {
@@ -292,10 +336,11 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     // Years stay centered on their nodes (numerals); MONTHS align like
     // manufacturers — magnifier centered, ring labels right-aligned
     // (Howell 2026-07-19).
-    shouldCenterLabel: ({ item } = {}) => !Number.isFinite(item?.monthNumber),
+    shouldCenterLabel: ({ item } = {}) => item?.level !== 'month',
     layoutBindings: {
       calendarModeRef: () => calendarMode,
       getCalendarMonthChain: monthId => monthChain(monthId),
+      getCalendarDayChain,
       setCalendarMode: next => { calendarMode = next; },
       setCalendarMonthContext: ctx => { calendarMonthContext = ctx; },
       getCalendarMonths: (m, selected, mode) => getCalendarMonths(m, selected, mode || calendarMode),

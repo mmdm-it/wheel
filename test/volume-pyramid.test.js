@@ -127,6 +127,45 @@ describe('createVolumePyramidConfig', () => {
     assert.equal(selectedIdx, 2, 'clicked month selected at its global chain index');
   });
 
+  it('wedge day tap pours the day chain into the ring — through the real layout-spec plumbing', () => {
+    // Regression: getCalendarDayChain was dropped by the volume-layout.js
+    // invocation whitelist (the getCalendarMonthChain trap, again) — taps
+    // in the wedge silently no-oped. This goes through createVolumeLayoutSpec
+    // so a future whitelist drop fails here.
+    const manifest = { Calendar: {} };
+    const tappedDay = { id: 'd:2026:7:19', level: 'day', yearNumber: 2026, monthNumber: 7, dayNumber: 19 };
+    const chainItems = [null, { id: 'd:2026:7:18' }, { id: 'd:2026:7:19' }, { id: 'd:2026:7:20' }, null];
+    const primaryCalls = [];
+    const app = {
+      setPrimaryItems: (...args) => primaryCalls.push(args),
+      setParentButtons: () => {}
+    };
+    let mode = 'month';
+    const spec = createVolumeLayoutSpec({
+      volume: 'calendar',
+      pyramidBuilder: buildCalendarPyramid,
+      manifest,
+      getCalendarMonths: () => [],
+      getCalendarDayChain: centerId => ({
+        items: chainItems,
+        selectedIndex: chainItems.findIndex(i => i && i.id === centerId)
+      }),
+      getApp: () => app,
+      calendarModeRef: () => mode,
+      setCalendarMode: next => { mode = next; }
+    });
+    spec.pyramid.onClick({ item: tappedDay });
+    assert.equal(mode, 'day');
+    assert.equal(primaryCalls.length, 1);
+    const [items, selectedIdx] = primaryCalls[0];
+    assert.equal(items, chainItems, 'ring receives the day chain');
+    assert.equal(selectedIdx, 2, 'tapped day selected at its chain index');
+
+    // Weekday header cells stay inert.
+    spec.pyramid.onClick({ item: { id: 'wd:3', level: 'weekday' } });
+    assert.equal(primaryCalls.length, 1, 'header tap does nothing');
+  });
+
   it('builds bible pyramid config and updates mode/context', () => {
     const manifest = { Gutenberg_Bible: { testaments: {} } };
     const book = { id: 'GEN', sectionId: 'sec1', testamentId: 'old' };

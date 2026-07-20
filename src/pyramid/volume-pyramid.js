@@ -106,6 +106,7 @@ export function buildCalendarPyramid({
   manifest,
   getCalendarMonths,
   getCalendarMonthChain,
+  getCalendarDayChain,
   getApp,
   calendarModeRef,
   setCalendarMode,
@@ -118,14 +119,32 @@ export function buildCalendarPyramid({
   // (IAN, FEB, MAR... — Latin months truncate collision-free). The ring and
   // magnifier keep the full names; the rename never travels past the
   // pyramid (onClick matches by id), same contract as the book abbreviations.
-  const getChildren = ({ selected }) => getCalendarMonths(manifest, selected, calendarModeRef?.())
+  const getChildren = ({ selected }) => (calendarModeRef?.() === 'day'
+    ? [] // the days ring has no pyramid (its detail era comes with C.6's boot state)
+    : getCalendarMonths(manifest, selected, calendarModeRef?.()))
     .map(item => (item?.name
       ? { ...item, name: String(item.name).slice(0, 3).toUpperCase() }
       : item));
   const onClick = instr => {
     if (!instr?.item) return;
-    if (typeof calendarModeRef === 'function' && calendarModeRef() !== 'year') return;
     const app = typeof getApp === 'function' ? getApp() : null;
+    // A DAY tapped in the wedge (Howell 2026-07-19): the month's days pour
+    // from the lattice into the focus ring — the ±5-year day chain, entered
+    // at the tapped date. Weekday-header cells are inert.
+    if (calendarModeRef?.() === 'month') {
+      if (instr.item.level !== 'day' || typeof getCalendarDayChain !== 'function') return;
+      const chain = getCalendarDayChain(instr.item.id);
+      if (!chain?.items?.length) return;
+      if (typeof setCalendarMode === 'function') setCalendarMode('day');
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+        migrateOrSet(chain.items, chain.selectedIndex, true);
+      }
+      // After the migration starts (see buildCatalogPyramid).
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      return;
+    }
+    if (typeof calendarModeRef === 'function' && calendarModeRef() !== 'year') return;
     const year = app?.nav?.getCurrent?.();
     if (!year) return;
     let months;
@@ -155,7 +174,8 @@ export function buildCalendarPyramid({
   };
   // Months in the ring → the DAY GRID pyramid (Howell 2026-07-19): the one
   // pyramid that is an array, not a star field. The host renders it from
-  // this descriptor; taps stay inert until the days ring exists (C.6).
+  // this descriptor; tapping a day pours the day chain into the ring
+  // (onClick above).
   const gridFor = ({ selected } = {}) => {
     if (calendarModeRef?.() !== 'month') return null;
     if (!selected || !Number.isFinite(selected.monthNumber)) return null;

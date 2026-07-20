@@ -58,4 +58,23 @@ describe('day grid arithmetic', () => {
     assert.ok(ribbon.nodes.some(n => n.dim), 'neighbor months present but dimmed');
     assert.ok(ribbon.nodes.some(n => !n.dim), 'anchor month full-strength');
   });
+
+  it('marks today — and only today — in its own month', () => {
+    const vp = { width: 375, height: 700, SSd: 375, LSd: 700 };
+    const mag = { x: 178.2, y: 517.7 };
+    const arc = { hubX: 840.8, hubY: 0, radius: 840.8 };
+    const now = new Date();
+    const home = computeDayGridLayout(vp, mag, arc, {
+      yearNumber: now.getFullYear(), month: now.getMonth() + 1, rotating: false
+    });
+    const marked = home.nodes.filter(n => n.today);
+    assert.equal(marked.length, 1, 'exactly one today cell');
+    assert.equal(marked[0].label, String(now.getDate()));
+    // A month that is not this one carries no today (headers never do).
+    const elsewhereMonth = now.getMonth() === 0 ? 2 : 1;
+    const away = computeDayGridLayout(vp, mag, arc, {
+      yearNumber: now.getFullYear(), month: elsewhereMonth, rotating: false
+    });
+    assert.ok(away.nodes.every(n => !n.today));
+  });
 });
