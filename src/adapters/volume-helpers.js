@@ -532,6 +532,29 @@ export function buildCalendarMonthsCousinChain(manifest, { initialItemId } = {})
 }
 
 /**
+ * Weekday names, indexed 0 = Sunday .. 6 = Saturday (the week starts on
+ * Sunday, Howell 2026-07-19). ONE source: the wedge's header letters and
+ * the detail sector's weekday both read this, so a translation moves them
+ * together instead of drifting apart.
+ */
+export function getCalendarWeekdayNames(manifest) {
+  const template = manifest?.Calendar?.weekday_template;
+  if (!template) return [];
+  const names = [];
+  Object.values(template).forEach(day => {
+    if (Number.isFinite(day?.weekday_number)) names[day.weekday_number] = day?.name || '';
+  });
+  return names;
+}
+
+/** The wedge's column headers: one letter per weekday, from those names. */
+export function getCalendarWeekdayLetters(manifest) {
+  const names = getCalendarWeekdayNames(manifest);
+  if (names.length !== 7 || names.some(n => !n)) return null; // let the lattice keep its default
+  return names.map(n => n.charAt(0).toUpperCase());
+}
+
+/**
  * The DAYS ring chain (C.6 opener, Howell's thumb doctrine 2026-07-19):
  * days spanning ±5 years around the entered date — "scanning six thousand
  * years by the day is ridiculous" — woven with the full cousin ladder:

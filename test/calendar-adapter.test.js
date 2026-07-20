@@ -1,6 +1,12 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { calendarAdapter, normalize as normalizeCalendar } from '../src/adapters/calendar-adapter.js';
+import { getCalendarWeekdayNames, getCalendarWeekdayLetters } from '../src/adapters/volume-helpers.js';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const sampleManifest = {
   Calendar: {
@@ -32,8 +38,10 @@ describe('calendar adapter', () => {
     assert.ok(years.every(y => y.parentId === 'volume:Calendar'),
       'years hang directly off the volume root');
     assert.equal(normalized.items.filter(i => i.level === 'millennium').length, 0);
-    assert.equal(normalized.meta.leafLevel, null, 'no detail sector until days exist');
-    assert.deepEqual(normalized.meta.levels, ['year', 'month']);
+    // Days exist now, and they are the leaf: a date settling into the
+    // magnifier is what opens the detail sector (Howell 2026-07-20).
+    assert.equal(normalized.meta.leafLevel, 'day', 'a settled date opens the sector');
+    assert.deepEqual(normalized.meta.levels, ['year', 'month', 'day']);
     assert.equal(normalized.meta.colors.month, '#333');
   });
 
@@ -41,11 +49,39 @@ describe('calendar adapter', () => {
     const normalized = normalizeCalendar(sampleManifest);
     const spec = calendarAdapter.layoutSpec(normalized, { width: 800, height: 600 });
     assert.ok(Array.isArray(spec.rings));
-    assert.equal(spec.rings.length, 2);
+    assert.equal(spec.rings.length, 3, 'year, month, day');
     const pyramid = spec.pyramid;
     assert.ok(pyramid);
     assert.ok(pyramid.capacity);
     assert.equal(typeof pyramid.place, 'function');
+  });
+
+  it('names the weekday when a date settles in the magnifier', () => {
+    const manifest = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../data/calendar/manifest.json'), 'utf-8'));
+    const dayDetail = calendarAdapter.detailFor(
+      { id: 'd:2026:7:20', level: 'day', yearNumber: 2026, monthNumber: 7, dayNumber: 20 }, manifest);
+    assert.equal(dayDetail.type, 'card');
+    assert.equal(dayDetail.title, 'MONDAY', 'all caps, at the top of the DSUA');
+    // The weekday is read off the real reckoning, so the reform reads true.
+    const lastJulian = calendarAdapter.detailFor(
+      { id: 'd:1582:10:4', level: 'day', yearNumber: 1582, monthNumber: 10, dayNumber: 4 }, manifest);
+    const firstGregorian = calendarAdapter.detailFor(
+      { id: 'd:1582:10:15', level: 'day', yearNumber: 1582, monthNumber: 10, dayNumber: 15 }, manifest);
+    assert.equal(lastJulian.title, 'THURSDAY');
+    assert.equal(firstGregorian.title, 'FRIDAY', 'the very next day, ten dates later');
+    // An id alone is enough — no carried fields required.
+    assert.equal(calendarAdapter.detailFor({ id: 'd:2026:7:20', level: 'day' }, manifest).title, 'MONDAY');
+  });
+
+  it('names the wedge columns from the same weekday data as the prose', () => {
+    const manifest = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../data/calendar/manifest.json'), 'utf-8'));
+    assert.deepEqual(getCalendarWeekdayNames(manifest),
+      ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']);
+    assert.deepEqual(getCalendarWeekdayLetters(manifest), ['S', 'M', 'T', 'W', 'T', 'F', 'S']);
+    // A volume without the data leaves the lattice its built-in row.
+    assert.equal(getCalendarWeekdayLetters({ Calendar: {} }), null);
   });
 
   it('emits detail payloads for year and month', () => {

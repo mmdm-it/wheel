@@ -9,6 +9,7 @@ import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
+import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing } from './geometry/focus-ring-geometry.js';
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
@@ -223,6 +224,11 @@ window.addEventListener('detail-sector-change', (e) => {
 
 function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation } = {}) {
   if (!detailPanel || !detailContent) return;
+  // Only the leaf is described here. Note this returns WITHOUT clearing:
+  // on the way up out of a leaf the panel is already fading, and it should
+  // fade carrying what it was describing rather than flash the level
+  // above's payload on its way out.
+  if (!isDetailLevel(selected, adapterNormalized)) return;
   while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
   if (!selected) return;
 
@@ -268,6 +274,7 @@ function wireInteractions(getApp) {
   const trace = { downTarget: '', moves: 0, endedBy: '', travel: 0, captured: false, cancels: 0 };
   const publishTrace = () => { window.__wheelGestureTrace = { ...trace }; };
   const DRAG_SLOP_PX = 8;       // past this, it's a drag, not a tap
+  let pendingAdvanceTap = false; // press landed in the sector's NEXT area
   let pendingTapNode = null;    // ring node under the finger at pointerdown;
                                 // its click fires at lift IF travel stayed
                                 // within tap slop — a press is ambiguous
@@ -286,15 +293,19 @@ function wireInteractions(getApp) {
     }
   };
 
-  const nearestRingNode = event => {
+  const svgPointOf = event => {
     if (!svg || typeof svg.createSVGPoint !== 'function') return null;
     const ctm = svg.getScreenCTM?.();
     if (!ctm) return null;
-
     const pt = svg.createSVGPoint();
     pt.x = event.clientX;
     pt.y = event.clientY;
-    const p = pt.matrixTransform(ctm.inverse());
+    return pt.matrixTransform(ctm.inverse());
+  };
+
+  const nearestRingNode = event => {
+    const p = svgPointOf(event);
+    if (!p) return null;
 
     const nodes = svg.querySelectorAll('.focus-ring-node');
     let nearest = null;
@@ -380,6 +391,7 @@ function wireInteractions(getApp) {
     });
     const isNode = event.target && event.target.closest && event.target.closest('.focus-ring-node');
     pendingTapNode = null;
+    pendingAdvanceTap = false;
     if (isNode) {
       logTap('node-hit', {
         pointerType: event.pointerType,
@@ -432,6 +444,18 @@ function wireInteractions(getApp) {
       logTap('pyramid-hit-no-index-fallback', { pointerType: event.pointerType });
     }
 
+    // THE NEXT GESTURE (Howell 2026-07-20): at a leaf, in volumes that ask
+    // for it, the detail sector is one large button — read the verse, tap
+    // it with your thumb, read the next. Resolved at lift like every other
+    // tap here, so a scrub that merely ends over the sector never advances.
+    if (!pendingTapNode && typeof app.detailAreaAdvances === 'function') {
+      const p = svgPointOf(event);
+      if (p && app.detailAreaAdvances(p.x, p.y)) {
+        pendingAdvanceTap = true;
+        logTap('detail-advance-pending', { pointerType: event.pointerType });
+      }
+    }
+
     // Touch near-miss support: if the tap lands close to a tiny ring node,
     // trigger its click handler instead of starting a drag.
     const isBackgroundLikeTarget = (
@@ -439,7 +463,8 @@ function wireInteractions(getApp) {
       || (event.target && event.target.closest && event.target.closest('.focus-ring-band'))
       || Boolean(isPyramidNode)
     );
-    if ((event.pointerType === 'touch' || event.pointerType === 'pen') && isBackgroundLikeTarget && !pendingTapNode) {
+    if ((event.pointerType === 'touch' || event.pointerType === 'pen') && isBackgroundLikeTarget
+      && !pendingTapNode && !pendingAdvanceTap) {
       const nearby = nearestRingNode(event);
       if (nearby && typeof nearby.onclick === 'function') {
         // Same deferral as a direct node press: tap resolves at lift,
@@ -502,6 +527,18 @@ function wireInteractions(getApp) {
       // own delayed click so nothing fires twice.
       const tapNode = pendingTapNode;
       pendingTapNode = null;
+      const advanceTap = pendingAdvanceTap;
+      pendingAdvanceTap = false;
+      if (advanceTap && !tapNode) {
+        suppressNativeClickUntil = Date.now() + 450;
+        if (gestureTravelPx <= DRAG_SLOP_PX && type === 'pointerup') {
+          logTap('detail-advance-on-lift', { pointerType: event?.pointerType });
+          app.advanceLeaf?.();
+          return; // a tap: the advance manages rotation, no snap
+        }
+        // Travelled: this was a scrub that began in the sector. Fall
+        // through and let it settle like any other scrub.
+      }
       if (tapNode) {
         suppressNativeClickUntil = Date.now() + 450;
         if (gestureTravelPx <= DRAG_SLOP_PX) {
@@ -794,8 +831,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getCalendarMonths: layoutBindings.getCalendarMonths || ((m, selected, mode) => getCalendarMonths(manifest, selected, mode)),
     getCalendarMonthChain: layoutBindings.getCalendarMonthChain,
     getCalendarDayChain: layoutBindings.getCalendarDayChain,
+    getWeekdayLetters: layoutBindings.getWeekdayLetters,
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
     getBibleVerseItems: layoutBindings.getBibleVerseItems,
+    getBibleVerseChain: layoutBindings.getBibleVerseChain,
     prefetchBibleVerses: layoutBindings.prefetchBibleVerses,
     getBibleBooksForTestament: layoutBindings.getBibleBooksForTestament,
     getBibleTestaments: layoutBindings.getBibleTestaments,
@@ -846,7 +885,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     pyramid: pyramidConfig,
     pyramidLayoutSpec: pyramidLayout,
     pyramidNormalized: adapterNormalized || normalized,
-    pyramidAdapter: adapter
+    pyramidAdapter: adapter,
+    detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances)
   });
   currentApp = app;
   // Expose app to window for console API

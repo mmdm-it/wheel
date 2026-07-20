@@ -299,6 +299,12 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   const height = viewport.height ?? 0;
   const SSd = viewport.SSd ?? width;
   const { yearNumber = 1, month = 1, fraction = 0, rotating = false } = opts;
+  // Header letters come from the volume's own naming when it offers them
+  // (so a translation moves the lattice and the prose together); the
+  // built-in row is the fallback, and keeps this module volume-agnostic.
+  const weekdayLetters = Array.isArray(opts.weekdayLetters) && opts.weekdayLetters.length === 7
+    ? opts.weekdayLetters
+    : WEEKDAY_LETTERS;
 
   const lattice = computeWedgeLattice(viewport, arcParams, magnifier);
 
@@ -347,7 +353,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   if (!rotating) {
     // The weekday header pops on WITH the settled month (S M T W T F S on
     // the top ray) and disappears during the scroll (Howell 2026-07-19).
-    WEEKDAY_LETTERS.forEach((letter, ci) => {
+    weekdayLetters.forEach((letter, ci) => {
       pushCell(lattice.rayAngle(0), ci, letter, false, `wd:${ci}`);
     });
     const rows = monthWeeks(yearNumber, month);

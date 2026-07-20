@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { weaveCousinChain, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, COUSIN_GAP_LINKS } from '../src/adapters/volume-helpers.js';
+import { buildBibleVerseChain } from '../src/navigation/cousin-builder.js';
 import { calculateNodePositions, getViewportInfo, getNodeSpacing, getViewportWindow, getBaseAngleForOrder } from '../src/geometry/focus-ring-geometry.js';
 
 // The cousin-gap grammar (Howell, 2026-07-17): whatever level rides the
@@ -125,6 +126,63 @@ describe('day cousin chain (thumb doctrine)', () => {
   it('refuses ids that are not dates (weekday headers stay inert)', () => {
     const { items: none } = buildCalendarDaysCousinChain(manifest, { centerId: 'wd:3' });
     assert.equal(none.length, 0);
+  });
+});
+
+describe('the continuous verse chain', () => {
+  // Howell 2026-07-20: "the Bible should have cousin gaps and second
+  // cousin gaps just like the calendar." Before this, the verse ring held
+  // ONE chapter — reaching the end of Genesis 1 meant backing out to the
+  // chapters ring to enter Genesis 2.
+  const bibleManifest = JSON.parse(readFileSync(
+    path.resolve(__dirname, '../data/gutenberg/manifest.json'), 'utf-8'));
+  const { items } = buildBibleVerseChain(bibleManifest, {});
+  const at = id => items.findIndex(x => x && x.id === id);
+  const gapBefore = id => {
+    let run = 0;
+    for (let i = at(id) - 1; i >= 0 && items[i] === null; i -= 1) run += 1;
+    return run;
+  };
+
+  it('runs unbroken from the first verse to the last', () => {
+    const verses = items.filter(Boolean);
+    assert.equal(verses[0].id, 'GENE_1_1', 'it begins at the beginning');
+    assert.equal(verses[verses.length - 1].id, 'APOC_22_21', 'and ends at the end');
+    assert.ok(verses.length > 30000, `the whole volume rides the ring (${verses.length})`);
+  });
+
+  it('wears the cousin ladder at every kind of boundary', () => {
+    assert.equal(gapBefore('GENE_1_2'), 0, 'no gap inside a chapter');
+    assert.equal(gapBefore('GENE_2_1'), 2, 'a chapter crossing is a cousin gap');
+    assert.equal(gapBefore('EXO_1_1'), 4, 'a book crossing is a second cousin');
+    assert.equal(gapBefore('MATHE_1_1'), 6, 'a testament crossing is a third cousin');
+  });
+
+  it('reads on past the end of a chapter — the whole point', () => {
+    // The reader finishing Genesis 1:31 must find Genesis 2:1 ahead of
+    // them in the chain, with only empty links between.
+    const from = at('GENE_1_31');
+    const next = items.slice(from + 1).find(Boolean);
+    assert.equal(next.id, 'GENE_2_1', 'the next verse is simply next');
+    assert.equal(at('GENE_2_1') - from, 3, 'two empty links, then the new chapter');
+  });
+
+  it('names verses exactly as a loaded chapter does', () => {
+    // The descent taps a verse rendered from its chapter file and must
+    // find that same id seated in this chain.
+    const v = items[at('IOHA_3_16')];
+    assert.ok(v, 'a famous verse is present');
+    assert.equal(v.name, '3:16');
+    assert.equal(v.level, 'verse');
+    assert.equal(v.meta.verseKey, '16');
+    assert.ok(v.meta.externalFile.endsWith('IOHA/003.json'), 'and knows where its words live');
+  });
+
+  it('carries enough context to ascend from wherever reading led', () => {
+    const v = items[at('EXO_3_4')];
+    assert.equal(v.meta.bookEntryId, 'EXO');
+    assert.equal(v.meta.chapterId, 'EXO:3');
+    assert.equal(v.meta.testamentId, 'Vetus_Testamentum');
   });
 });
 

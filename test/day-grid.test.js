@@ -140,6 +140,20 @@ describe('day grid arithmetic', () => {
     assert.deepEqual(serialToDate(daySerial(1582, 10, 7)), { yearNumber: 1582, month: 10, day: 15 });
   });
 
+  it('takes its column headers from the caller, and keeps a fallback', () => {
+    const vp = { width: 375, height: 700, SSd: 375, LSd: 700 };
+    const mag = { x: 178.2, y: 517.7 };
+    const arc = { hubX: 840.8, hubY: 0, radius: 840.8 };
+    const headersOf = opts => computeDayGridLayout(vp, mag, arc,
+      { yearNumber: 2026, month: 7, rotating: false, ...opts })
+      .nodes.filter(n => n.id.startsWith('wd:')).map(n => n.label);
+    assert.deepEqual(headersOf({}), ['S', 'M', 'T', 'W', 'T', 'F', 'S'], 'built-in row');
+    assert.deepEqual(headersOf({ weekdayLetters: ['D', 'L', 'M', 'M', 'G', 'V', 'S'] }),
+      ['D', 'L', 'M', 'M', 'G', 'V', 'S'], 'the volume may name them');
+    assert.deepEqual(headersOf({ weekdayLetters: ['X', 'Y'] }),
+      ['S', 'M', 'T', 'W', 'T', 'F', 'S'], 'a malformed row is refused, not drawn');
+  });
+
   it('marks today — and only today — in its own month', () => {
     const vp = { width: 375, height: 700, SSd: 375, LSd: 700 };
     const mag = { x: 178.2, y: 517.7 };

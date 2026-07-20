@@ -107,6 +107,7 @@ export function buildCalendarPyramid({
   getCalendarMonths,
   getCalendarMonthChain,
   getCalendarDayChain,
+  getWeekdayLetters,
   getApp,
   calendarModeRef,
   setCalendarMode,
@@ -183,13 +184,19 @@ export function buildCalendarPyramid({
       ? selected.yearNumber
       : Number.parseInt(selected.parentId, 10);
     if (!Number.isFinite(yearNumber)) return null;
-    return { yearNumber, month: selected.monthNumber };
+    return {
+      yearNumber,
+      month: selected.monthNumber,
+      // The lattice's column headers, named by the volume's own data.
+      weekdayLetters: typeof getWeekdayLetters === 'function' ? getWeekdayLetters() : null
+    };
   };
   return { getChildren, onClick, gridFor };
 }
 
 export function buildBiblePyramid({
   manifest,
+  getBibleVerseChain,
   namesMap,
   getBibleChapters,
   getBibleVerseItems,
@@ -313,7 +320,19 @@ export function buildBiblePyramid({
       if (!chapter) return;
       const verseItems = getBibleVerseItems(chapter);
       if (!verseItems.length) return;
-      const selectedIdx = verseItems.findIndex(v => v.id === instr.item.id);
+      // The verse ring is the WHOLE volume, entered at the tapped verse
+      // (Howell 2026-07-20) — reading runs on past the end of a chapter
+      // instead of dead-ending there. The chapter's own verses are the
+      // fallback if no chain builder is bound.
+      let ringItems = verseItems;
+      let selectedIdx = verseItems.findIndex(v => v.id === instr.item.id);
+      if (typeof getBibleVerseChain === 'function') {
+        const chain = getBibleVerseChain(instr.item.id);
+        if (chain?.items?.length) {
+          ringItems = chain.items;
+          selectedIdx = chain.selectedIndex;
+        }
+      }
       if (typeof setBibleMode === 'function') setBibleMode('verse');
       if (typeof setBibleVerseContext === 'function') {
         setBibleVerseContext({
@@ -326,7 +345,7 @@ export function buildBiblePyramid({
       }
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateIn || app.setPrimaryItems;
-        migrateOrSet(verseItems, selectedIdx >= 0 ? selectedIdx : 0, true);
+        migrateOrSet(ringItems, selectedIdx >= 0 ? selectedIdx : 0, true);
       }
       // After the migration starts (see buildCatalogPyramid).
       if (app?.setParentButtons) {
