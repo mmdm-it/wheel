@@ -24,6 +24,8 @@
 // single slot — render calls it every frame during rotation and the inputs
 // only change when the magnified parent does.
 
+import { computeCPUA } from './usable-areas.js';
+
 const GOLDEN_ANGLE_RAD = Math.PI * (3 - Math.sqrt(5)); // ≈ 137.5077640°
 
 // Label font growth is DAMPED above 1: a 1.45x star wears a ~1.22x label —
@@ -49,12 +51,10 @@ const FILL_FRACTION = 0.55;       // how much of the usable area the field aims 
 const MIN_SPACING_RADII = 2.3;    // min center-to-center distance, in node radii
 const FAN_SEP_DEG = 8;            // min angle between fan lines at the magnifier
                                   // (aesthetic: the fan must FAN — Howell 2026-07-19)
-// Region margins (Howell's eye, 2026-07-19, two rounds of tuning):
-// bottom ruled correct at the first cut; top and arc split the difference
-// between the original values and the first cut.
-const TOP_MARGIN_RATIO = 0.115;   // original 0.05, first cut 0.18 — split
-const ARC_MARGIN_RATIO = 0.225;   // original 0.35, first cut 0.10 — split
-const BOTTOM_DROP_RATIO = 0.30;   // below magnifier latitude — ruled correct
+// Region margins live in usable-areas.js — THE canonical CPUA (Howell
+// 2026-07-19: firm boundaries, standard canvas; no local margins).
+const LABEL_BAND_CLEARANCE_RATIO = 0.1; // TEXT-specific: labels may sit
+                                        // closer to the band than nodes
 
 let _geoCacheKey = null;
 let _geoCacheValue = null;
@@ -89,29 +89,15 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   ].join('|');
   if (cacheKey === _geoCacheKey) return _geoCacheValue;
 
-  // ── CPUA (Child Pyramid Usable Area) ─────────────────────────────────
-  const topMargin = SSd * TOP_MARGIN_RATIO;
-  const rightMargin = SSd * 0.1;
-  const cpuaBottom = hasDimButton
-    ? Math.min(height - SSd * 0.05, magnifierY + SSd * BOTTOM_DROP_RATIO)
-    : height - SSd * 0.05;
-  const cpua = {
-    left: 0,
-    top: topMargin,
-    rightFull: width - rightMargin,
-    right: width - rightMargin,
-    bottom: cpuaBottom
-  };
-
+  // ── THE canonical CPUA (usable-areas.js) — rect, arc, logo, vessel ───
+  const cpua = computeCPUA(viewport, arcParams, magnifier, { logoBounds });
   const arcRadius = arcParams?.radius ?? SSd;
-  const hubX = arcParams?.hubX ?? width / 2;
-  const hubY = arcParams?.hubY ?? 0;
-  const arcInnerMargin = SSd * ARC_MARGIN_RATIO;
+  const hubX = cpua.hubX;
+  const hubY = cpua.hubY;
 
   const nodeR = NODE_RADIUS_RATIO * SSd;
   const minSpacing = nodeR * MIN_SPACING_RADII;
   const LSd = viewport.LSd ?? Math.max(width, height);
-  const vesselClearance = SSd * (0.06 + NODE_RADIUS_RATIO + 0.02);
   // Pyramid label metrics: base font supplied by the caller (resolution-
   // aware), middle-anchored on the star, half the label to each side. Glyph
   // advance measured from a real render: UPPERCASE Montserrat ≈0.85em.
@@ -120,12 +106,12 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const charWidth = labelBaseFontPx * 0.85;
   const edgeMargin = SSd * 0.02;
 
-  // A candidate position must sit inside the CPUA (inset so the drawn circle
-  // stays inside), outside the logo cutout, comfortably inside the arc, and
-  // clear of the magnifier and of already-placed stars.
+  // A candidate must be a member of the canonical CPUA (one verdict: rect,
+  // arc — LAW, never relaxes — logo, vessel), then satisfy the engine's own
+  // laws: label endpoints, spacing, fan separation.
   const isValid = (x, y, placed, relax = 1, labelHalf = 0, scale = 1, fanRelax = 1) => {
     const rSelf = nodeR * scale;
-    if (x < cpua.left + rSelf || x > cpua.right - rSelf) return false;
+    if (!cpua.contains(x, y, rSelf)) return false;
     // A star's own label must fit. Labels are ROTATED along the hub ray
     // (middle-anchored), so the constraint is the two baseline ENDPOINTS,
     // not horizontal width (the first, horizontal-only rule let a long
@@ -137,7 +123,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
       const ldx = x - hubX;
       const ldy = y - hubY;
       const ld = Math.hypot(ldx, ldy) || 1;
-      if (ld + labelHalf > arcRadius - SSd * 0.1) return false; // band is law for text too
+      if (ld + labelHalf > arcRadius - SSd * LABEL_BAND_CLEARANCE_RATIO) return false; // band is law for text too
       const lux = ldx / ld;
       const luy = ldy / ld;
       labelSeg = {
@@ -148,20 +134,17 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
         if (ex < edgeMargin || ex > width - edgeMargin) return false;
         if (ey < edgeMargin || ey > height - edgeMargin) return false;
       }
+      // The WHOLE baseline stays out of the logo notch — endpoint checks
+      // let CALENDARIUM GREGORIANUM lie across the artwork (2026-07-19).
+      if (cpua.logoBounds) {
+        const lb = cpua.logoBounds;
+        for (const t of [0, 0.25, 0.5, 0.75, 1]) {
+          const sx = labelSeg.x2 + (labelSeg.x1 - labelSeg.x2) * t;
+          const sy = labelSeg.y2 + (labelSeg.y1 - labelSeg.y2) * t;
+          if (sx > lb.left && sx < lb.right && sy > lb.top && sy < lb.bottom) return false;
+        }
+      }
     }
-    if (y < cpua.top + rSelf || y > cpua.bottom - rSelf) return false;
-    if (logoBounds
-      && x > logoBounds.left - nodeR && x < logoBounds.right + nodeR
-      && y > logoBounds.top - nodeR && y < logoBounds.bottom + nodeR) return false;
-    // The arc margin is LAW — it never relaxes. (It briefly did, and the
-    // overflow stars of big chapter sets crept up against the ring band —
-    // Howell's screenshots, 2026-07-19.) Only star-to-star spacing bends.
-    if (Math.hypot(x - hubX, y - hubY) > arcRadius - arcInnerMargin) return false;
-    // The magnifier is sacrosanct: with the CPUA floor below its latitude,
-    // it needs an exclusion zone (vessel radius + node radius + breathing
-    // room). The parent button needs none — it lies outside the CPUA
-    // (Howell 2026-07-19).
-    if (Math.hypot(x - magnifierX, y - magnifierY) < vesselClearance) return false;
     const candAngle = Math.atan2(y - magnifierY, x - magnifierX);
     const labelPad = nodeR * 0.35;
     for (const p of placed) {
