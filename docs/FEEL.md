@@ -113,9 +113,11 @@ object:
 |---|---|---|
 | `T.preInkMs` | 400 | grey beat before the first line |
 | `T.arcDrawMs` | 1600 | the ring arc inking itself, upper-left → lower-right |
-| `T.nodeDrawMs` | 200 | each ring node's compass draw |
-| `T.nodeGapMs` | 130 | tiny pause between nodes, so the sequence reads |
+| `T.nodeDrawMs` | 200 | each ring node's compass draw (ring only, since 2026-07-20) |
+| `T.nodeGapMs` | 130 | tiny pause between ring nodes, so the sequence reads |
 | `T.circleDrawMs` | 750 | the magnifier / parent button |
+| `T.pyramidPauseMs` | 200 | breath between the parent button and the pyramid (Howell 2026-07-20) |
+| `T.pyramidNodeMs` | 750 | each child pyramid circle — the parent's stately tempo; the ring-node tick "didn't have time to register". The fan line (250ms) IS the beat between nodes — the old 130ms gaps are gone |
 | `T.charMs` | 85 | per typed character — unhurried, handcrafted |
 | `T.gapMs` | 360 | breath between the focal labels |
 | `T.fanLineMs` | 250 | each fan line sweeping magnifier → child node |

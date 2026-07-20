@@ -28,6 +28,10 @@ const T = {
   nodeDrawMs: 200,     // each ring node's compass draw (unchanged)
   nodeGapMs: 130,      // tiny pause between nodes, so the sequence reads
   circleDrawMs: 750,   // the magnifier / parent button
+  pyramidPauseMs: 200, // breath between the parent button and the pyramid
+  pyramidNodeMs: 750,  // each child pyramid circle — the parent's stately
+                       // tempo; the ring-node tick was too quick to register
+                       // (Howell 2026-07-20)
   charMs: 85,          // per typed character — unhurried, handcrafted
   gapMs: 360,          // breath between the focal labels
   fanLineMs: 250,      // each fan line sweeping magnifier → child node
@@ -247,13 +251,15 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
         };
         if ([c.x, c.y, c.r].every(Number.isFinite)) inkCircle(lines, c, T.circleDrawMs);
       });
-    await wait(T.circleDrawMs);
+    await wait(T.circleDrawMs + T.pyramidPauseMs);
 
     // 3) The child pyramid, node by node (Howell 2026-07-18: ALL line-work
-    // completes before any text). Each circle compass-draws, then its fan
-    // line sweeps out from the magnifier to meet it. The live wheel runs the
-    // lines centre-to-centre and hides them under the filled shapes; in
-    // outline they'd stab through the circles, so trim each line to the rims.
+    // completes before any text). Each circle compass-draws at the parent's
+    // stately tempo, then its fan line sweeps out from the magnifier to meet
+    // it — the fan line IS the beat between nodes, no extra gap (Howell
+    // 2026-07-20). The live wheel runs the lines centre-to-centre and hides
+    // them under the filled shapes; in outline they'd stab through the
+    // circles, so trim each line to the rims.
     const fanLines = Array.from(src.querySelectorAll('.child-pyramid-fan-line')).map(ln => ({
       x1: parseFloat(ln.getAttribute('x1')), y1: parseFloat(ln.getAttribute('y1')),
       x2: parseFloat(ln.getAttribute('x2')), y2: parseFloat(ln.getAttribute('y2')),
@@ -262,8 +268,8 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
     })).filter(f => [f.x1, f.y1, f.x2, f.y2].every(Number.isFinite));
     const fanFor = c => fanLines.find(f => Math.hypot(f.x2 - c.x, f.y2 - c.y) <= Math.max(2, c.r));
     for (const c of readCircles(src, '.child-pyramid-node')) {
-      inkCircle(lines, c, T.nodeDrawMs);
-      await wait(T.nodeDrawMs + T.nodeGapMs);
+      inkCircle(lines, c, T.pyramidNodeMs);
+      await wait(T.pyramidNodeMs);
       const f = fanFor(c);
       if (f) {
         const dx = f.x2 - f.x1, dy = f.y2 - f.y1;
@@ -273,7 +279,7 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
         const x2 = f.x2 - (dx / len) * c.r, y2 = f.y2 - (dy / len) * c.r;
         const seg = strokeLine(lines, `M${x1.toFixed(1)} ${y1.toFixed(1)} L${x2.toFixed(1)} ${y2.toFixed(1)}`, f.weight, f.color);
         inkStroke(seg, len - startTrim - c.r, T.fanLineMs);
-        await wait(T.fanLineMs + T.nodeGapMs);
+        await wait(T.fanLineMs);
       }
     }
     await wait(T.gapMs);
