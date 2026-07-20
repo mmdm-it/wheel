@@ -1,5 +1,40 @@
 # Changelog
 
+## 3.12.0 — The detail sector learns its loads — ephemeris day card, dossier media slot, the fence obeyed
+- **The loads scoped and ruled** (docs/DETAIL_SECTOR_LOADS.md, before Phases
+  D/E per the 2026-07-19 ruling): three content kinds — the Bible FETCHES
+  text, the catalog STORES dossiers, the calendar COMPUTES ephemeris
+- **The ephemeris day card**: weekday at the top in the parent button's own
+  font (no date — the magnifier says it), then alba/tramonto, alta/bassa
+  marea with heights, and the moon quarter as printed — double-size rows,
+  centered in the sector. Feast weekdays wear the print's red. Sector tap
+  still means NEXT: a page-a-day calendar
+- **The wall calendar is the source of truth**: scripts/extract-calendario.py
+  reads the 2026 print edition's SVGs (committed under
+  data/calendar/sources/) into ephemeris-2026.json — 365/365 days, 61 red
+  days (52 Sundays + 9 feasts), 50 moon quarters, 5.7KB on the wire. Tides
+  are stored and bounded (window extends per print edition); outside it the
+  card shows no tides — never invents
+- **The sun is computed, and it checked the paper**: src/geometry/solar.js
+  (NOAA, Fano permanently; civil time from 1893, solar before) agrees with
+  the print within 6 minutes on 363 days (mean 1.9) — and exposed a two-day
+  MISPRINT in the 2026 wall calendar (Apr 24–25 sunset ~96 min early). The
+  app shows the correct sky; a test pins both the agreement and the misprint
+- **The sector obeys the canonical fence**: detail-sector-geometry now
+  consumes computeDSUA — top 0.15·SSd, tapered arc margin (0.06→0.28)
+  pushing text right of the ring, control-deck floor. Retires the sector's
+  private pre-C.5 margins in all three volumes
+- **The redundancy rule reaches the catalog**: model cards drop their title
+  — the magnifier already names the engine
+- **The dossier media slot**: cards render an inline video (preload
+  metadata, streams only on play) — built, tested, currently EMPTY; the
+  Twin 6 HP batteau film is recorded in the loads doc for its return
+- Boot splash: child pyramid circles slow to the parent button's 750ms
+  tempo, 200ms breath before the pyramid, fan lines are the beat between
+  nodes (docs/FEEL.md ledger updated)
+- Suite 274 green (solar-vs-print acceptance incl. misprint teeth, day-card
+  payloads, ephemeris plugin, dormant video slot)
+
 ## 3.11.2 — Placebo-tail symmetry, siblings-only bible sky, snapshots once per version
 - **Placebo-tail symmetry**: holding the chain past ZVEZDA once again shows its
   cylinder counts dim in the sky — the same past-the-end hold as AIFO, GENESIS,
