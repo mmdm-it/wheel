@@ -48,7 +48,10 @@ describe('day grid arithmetic', () => {
     const arc = { hubX: 840.8, hubY: 0, radius: 840.8 }; // getArcParameters(vp)
     const settled = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, rotating: false });
     assert.equal(settled.gridMode, true);
-    assert.equal(settled.nodes.length, 31, 'every day of July, nothing else');
+    const dayCells = settled.nodes.filter(n => /^\d+$/.test(n.label));
+    const headerCells = settled.nodes.filter(n => /^[A-Z]$/.test(n.label));
+    assert.equal(dayCells.length, 31, 'every day of July');
+    assert.equal(headerCells.length, 7, 'S M T W T F S on the top ray');
     assert.ok(settled.nodes.every(n => !n.dim));
     const ribbon = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, fraction: 0.4, rotating: true });
     assert.ok(ribbon.nodes.length > 31, 'ribbon shows continuous weeks');

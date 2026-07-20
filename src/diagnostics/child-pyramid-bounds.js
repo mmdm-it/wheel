@@ -12,6 +12,7 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { getArcParameters, getMagnifierAngle, getMagnifierPosition } from '../geometry/focus-ring-geometry.js';
 import { computeCPUA, traceFence } from '../geometry/usable-areas.js';
+import { computeWedgeLattice, WEDGE } from '../geometry/day-grid.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const DIAG_ID = 'childPyramidBoundsDiag';
@@ -60,6 +61,63 @@ export function showPyramidBounds() {
     box.setAttribute('stroke-width', '2');
     box.setAttribute('stroke-dasharray', '7 6');
     g.appendChild(box);
+  }
+
+  g.style.pointerEvents = 'none';
+  svg.appendChild(g);
+}
+
+/**
+ * Day-wedge construction lines (design session, Howell 2026-07-19): a NEW
+ * off-screen hub on the magnifier→hub axis, FURTHER from the magnifier
+ * than the original hub, with five rays at 5° fanned toward (and beyond)
+ * the viewport. ?wedge=1 draws them; ?wedgemul=N sets how much further
+ * the new hub sits (multiplier on the original magnifier→hub distance,
+ * default 1.5).
+ */
+export function showDayWedge() {
+  const svg = document.querySelector('svg');
+  if (!svg) return;
+  const old = document.getElementById('dayWedgeDiag');
+  if (old) old.remove();
+
+  // Draws the ENGINE's lattice (day-grid.js computeWedgeLattice) — the
+  // diagnostic cannot drift from the layout it documents.
+  const viewport = getViewportInfo(window.innerWidth, window.innerHeight);
+  const arcParams = getArcParameters(viewport);
+  const mag = getMagnifierPosition(viewport);
+  const lat = computeWedgeLattice(viewport, arcParams, mag);
+
+  const g = document.createElementNS(SVG_NS, 'g');
+  g.setAttribute('id', 'dayWedgeDiag');
+  const reach = lat.radiusFor(0) * 1.6;
+  for (let w = 1; w <= 6; w += 1) {
+    const a = lat.rayAngle(w);
+    const line = document.createElementNS(SVG_NS, 'line');
+    line.setAttribute('x1', lat.hub2.x.toFixed(1));
+    line.setAttribute('y1', lat.hub2.y.toFixed(1));
+    line.setAttribute('x2', (lat.hub2.x + Math.cos(a) * reach).toFixed(1));
+    line.setAttribute('y2', (lat.hub2.y + Math.sin(a) * reach).toFixed(1));
+    line.setAttribute('stroke', '#ff6a00');
+    line.setAttribute('stroke-width', '2.5');
+    g.appendChild(line);
+  }
+  for (let d = 0; d <= 6; d += 1) {
+    const r = lat.radiusFor(d);
+    const pts = [];
+    for (let a = lat.base - (35 * Math.PI) / 180; a <= lat.base + (35 * Math.PI) / 180; a += 0.004) {
+      const x = lat.hub2.x + Math.cos(a) * r;
+      const y = lat.hub2.y + Math.sin(a) * r;
+      if (x < -40 || x > viewport.width + 40 || y < -40 || y > viewport.height + 40) continue;
+      pts.push(`${pts.length ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`);
+    }
+    if (!pts.length) continue;
+    const arc = document.createElementNS(SVG_NS, 'path');
+    arc.setAttribute('d', pts.join(' '));
+    arc.setAttribute('fill', 'none');
+    arc.setAttribute('stroke', '#ff6a00');
+    arc.setAttribute('stroke-width', '2.5');
+    g.appendChild(arc);
   }
 
   g.style.pointerEvents = 'none';
@@ -209,6 +267,7 @@ export function hideDetailSectorBounds() {
 // Expose to global window for console access
 if (typeof window !== 'undefined') {
   window.showPyramidBounds = showPyramidBounds;
+  window.showDayWedge = showDayWedge;
   window.hidePyramidBounds = hidePyramidBounds;
   window.showDetailSectorBounds = showDetailSectorBounds;
   window.hideDetailSectorBounds = hideDetailSectorBounds;

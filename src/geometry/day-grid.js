@@ -95,67 +95,131 @@ export function monthWeeks(yearNumber, month) {
 }
 
 /**
- * Layout the day-grid pyramid inside the usable region.
+ * THE WEDGE LATTICE (designed live with Howell, 2026-07-19 evening): the
+ * day grid is not rectangular — it is a wedge of the instrument's own
+ * radial grammar. A SECOND HUB sits on the magnifier→hub axis beyond the
+ * original (making the wedge less wedge-shaped, more square); six RAYS at
+ * 2° spacing are the week rows; seven concentric ARCS are the weekday
+ * columns, Sunday on the OUTERMOST arc (nearest the ring band). Day
+ * numerals sit on the intersections. The lattice itself is invisible —
+ * only the ?wedge=1 diagnostic draws it, from this same math.
+ */
+export const WEDGE = {
+  HUB_DIST_MUL: 1.5,   // second hub: this × the magnifier→hub distance
+  FAN_ROTATION_DEG: 14, // whole fan clockwise off the axis (13 + Howell's +1)
+  RAY_STEP_DEG: 2,      // between week rows
+  // Seven rays: index 0 = the TOP ray, the WEEKDAY HEADER (S M T W T F S);
+  // indices 1..6 = week rows 1..6. In this quadrant of the circle,
+  // INCREASING angle moves UP the screen.
+  RAY_OFFSETS_DEG: [4, 2, 0, -2, -4, -6, -8]
+};
+
+export const WEEKDAY_LETTERS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+
+export function computeWedgeLattice(viewport, arcParams, magnifier) {
+  const width = viewport.width ?? 0;
+  const SSd = viewport.SSd ?? width;
+  const magX = magnifier.x ?? magnifier.cx ?? 0;
+  const magY = magnifier.y ?? magnifier.cy ?? 0;
+  const hubX = arcParams.hubX ?? width * 2;
+  const hubY = arcParams.hubY ?? 0;
+
+  const dx = hubX - magX;
+  const dy = hubY - magY;
+  const d1 = Math.hypot(dx, dy) || 1;
+  const hub2 = {
+    x: magX + (dx / d1) * d1 * WEDGE.HUB_DIST_MUL,
+    y: magY + (dy / d1) * d1 * WEDGE.HUB_DIST_MUL
+  };
+  const base = Math.atan2(magY - hub2.y, magX - hub2.x)
+    + (WEDGE.FAN_ROTATION_DEG * Math.PI) / 180;
+
+  // Radii: derived from what is ON THE GLASS, canonically (volume-
+  // independent — anchoring to the logo made the lattice shift between
+  // volumes, and blind construction let inner columns fall off other
+  // viewports). The innermost arc (Saturday) sits just inside the reach
+  // of the canonical top-right corner — the closest any arc can come to
+  // the screen — and the outermost (Sunday) just short of the ring band
+  // at the magnifier; seven even steps between.
+  const rBand = Math.hypot(magX - hub2.x, magY - hub2.y);
+  const corner = { x: width - SSd * 0.02, y: SSd * 0.15 };
+  const rCorner = Math.hypot(corner.x - hub2.x, corner.y - hub2.y);
+  // Howell's tuned construction: gaps of 1/8 the corner→band span, family
+  // clustered toward the corner (Sunday well SHORT of the band — the
+  // visible-span first cut stretched it nearly to the ring). Tightened a
+  // touch further per the second sitting.
+  const step = ((rBand - rCorner) / 8) * 0.765; // 0.9, tightened 15% more —
+                                                // anchored at the INNERMOST arc
+                                                // (Saturday holds; larger arcs
+                                                // draw inward)
+  // Binding cell: the BOTTOM ray (most clockwise, furthest right at small
+  // radii) at the innermost arc must stay on the glass — solve exactly.
+  const lowRayAngle = base + (WEDGE.RAY_OFFSETS_DEG[6] * Math.PI) / 180;
+  const cosLow = Math.cos(lowRayAngle);
+  const rEdge = cosLow < 0
+    ? (hub2.x - (width - SSd * 0.045)) / -cosLow
+    : 0;
+  const rIn = Math.max(rCorner - step * 1.5, rEdge); // Saturday
+
+
+  return {
+    hub2,
+    base,
+    step,
+    // Ray index 0 = the weekday header; weeks 1..6 sit on rays 1..6.
+    rayAngle: idx => base + ((WEDGE.RAY_OFFSETS_DEG[idx] ?? 0) * Math.PI) / 180,
+    // Continuous version for the rotating ribbon: fractional rows allowed;
+    // rowOffset 0 = week row 1's ray; later weeks descend (decreasing angle).
+    angleForRowOffset: rowOffset => base
+      + ((WEDGE.RAY_OFFSETS_DEG[1] - rowOffset * WEDGE.RAY_STEP_DEG) * Math.PI) / 180,
+    // Weekday column (0 = Sunday … 6 = Saturday) → radius; SUNDAY is the
+    // OUTERMOST arc (greatest radius, nearest the ring band).
+    radiusFor: weekday => rIn + step * (6 - weekday),
+    pointAt(angle, radius) {
+      return { x: hub2.x + Math.cos(angle) * radius, y: hub2.y + Math.sin(angle) * radius };
+    }
+  };
+}
+
+/**
+ * Layout the day pyramid on the wedge lattice.
  *
- * At rest (rotating=false): the magnified month's weeks, hard-cropped.
- * In motion (rotating=true): the RIBBON — continuous week rows around the
- * fractional timeline position, every cell labeled with its true date,
- * cells of the anchor month full-strength, neighbors present but dimmed
- * (continuity is the point of the ribbon; the crop applies at rest).
- *
- * @param {Object} viewport      getViewportInfo output
- * @param {Object} magnifier     magnifier position {x, y}
- * @param {Object} opts          { yearNumber, month, fraction, rotating, logoBounds }
- * @returns {{ nodes: Array, gridMode: true }}
+ * At rest: the magnified month's weeks, hard-cropped (its days only), week
+ * row 1 on the top ray, day numerals on the intersections.
+ * In motion: the RIBBON AS ROTATION — the infinite week sequence turns
+ * about the second hub, geared to the ring; anchor-month cells full-
+ * strength, neighbors dimmed.
  */
 export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts = {}) {
   const width = viewport.width ?? 0;
+  const height = viewport.height ?? 0;
   const SSd = viewport.SSd ?? width;
-  const magnifierY = magnifier.y ?? magnifier.cy ?? 0;
-  const { yearNumber = 1, month = 1, fraction = 0, rotating = false, logoBounds = null } = opts;
+  const { yearNumber = 1, month = 1, fraction = 0, rotating = false } = opts;
 
-  // Region: THE canonical CPUA (usable-areas.js). The grid additionally
-  // refuses holes: its bottom row must clear the magnifier's vessel zone
-  // entirely, so its effective floor is the vessel's top edge when that is
-  // higher than the CPUA floor — derived from canon, not a local margin.
-  const cpua = computeCPUA(viewport, arcParams, magnifier, { logoBounds });
-  const top = cpua.top;
-  const bottom = cpua.bottom; // the control-deck floor already clears the magnifier
-  const baseLeft = Math.max(cpua.left, SSd * 0.04); // half-cell breathing off the raw edge
-  const right = cpua.right;
-  const cols = DAYS_PER_WEEK;
+  const lattice = computeWedgeLattice(viewport, arcParams, magnifier);
 
-  const fitGrid = rowsCount => {
-    let left = baseLeft;
-    let cellW = (right - left) / cols;
-    let rowH = rotating ? cellW : Math.min(cellW, (bottom - top) / Math.max(rowsCount, 1));
-    for (let i = 0; i < 3; i += 1) {
-      const bottomRowY = rotating ? bottom - rowH / 2 : top + (rowsCount - 0.5) * rowH;
-      const minX = cpua.arcXAt(bottomRowY);
-      left = Math.max(baseLeft, (Number.isFinite(minX) ? minX : baseLeft) + cellW * 0.4);
-      cellW = (right - left) / cols;
-      rowH = rotating ? cellW : Math.min(cellW, (bottom - top) / Math.max(rowsCount, 1));
-    }
-    return { left, cellW, rowH };
-  };
+  // Cell size from the lattice's own gaps: radial step vs angular gap at
+  // the middle radius, whichever is tighter.
+  const midR = lattice.radiusFor(3);
+  const angularGap = midR * (WEDGE.RAY_STEP_DEG * Math.PI) / 180;
+  const nodeR = Math.min(lattice.step, angularGap) * 0.38; // +15% then +10% (sittings)
+  const labelFontPx = Math.max(11, Math.min(20, nodeR * 1.05));
 
   const nodes = [];
-  const makePushCell = (left, cellW, nodeR, labelFontPx) => (colIdx, y, dayNum, dim, key) => {
-    const x = left + (colIdx + 0.5) * cellW;
-    if (y < top + nodeR || y > bottom - nodeR) return;
-    // Canon safety net: a cell the CPUA rejects is not drawn (the fitted
-    // grid should already sit inside; this is belt-and-suspenders).
-    if (!cpua.contains(x, y, Math.min(nodeR, cellW * 0.2))) return;
+  const pushCell = (angle, weekday, dayNum, dim, key) => {
+    const p = lattice.pointAt(angle, lattice.radiusFor(weekday));
+    if (p.x < -nodeR || p.x > width + nodeR || p.y < -nodeR || p.y > height + nodeR) return;
     nodes.push({
       id: key,
       label: String(dayNum),
       item: { id: key, name: String(dayNum), level: 'day' },
       arc: 'grid',
-      // The view rotates every pyramid label by (angle + 180°); π here makes
-      // that identity — angle 0 rendered the numbers upside-down.
-      angle: Math.PI,
-      x,
-      y,
+      // Numerals align with their RAY, like every child label in the
+      // instrument (the view rotates by angle + 180°; the ray angle from
+      // the second hub gives the same rising tilt the ring labels wear).
+      angle,
+      x: p.x,
+      y: p.y,
       r: nodeR,
       labelScale: 1,
       labelFontPx,
@@ -164,41 +228,36 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   };
 
   if (!rotating) {
+    // The weekday header pops on WITH the settled month (S M T W T F S on
+    // the top ray) and disappears during the scroll (Howell 2026-07-19).
+    WEEKDAY_LETTERS.forEach((letter, ci) => {
+      pushCell(lattice.rayAngle(0), ci, letter, false, `wd:${ci}`);
+    });
     const rows = monthWeeks(yearNumber, month);
-    const { left, cellW, rowH } = fitGrid(rows.length);
-    const nodeR = Math.min(cellW * 0.36, SSd * 0.032);
-    const labelFontPx = Math.max(11, Math.min(20, nodeR * 1.05));
-    const pushCell = makePushCell(left, cellW, nodeR, labelFontPx);
     rows.forEach((row, ri) => {
       row.forEach((dayNum, ci) => {
-        if (dayNum === null) return; // hard crop — no neighbors at rest
-        pushCell(ci, top + (ri + 0.5) * rowH, dayNum, false, `d:${yearNumber}:${month}:${dayNum}`);
+        if (dayNum === null) return; // hard crop — the month's own days only
+        pushCell(lattice.rayAngle(ri + 1), ci, dayNum, false, `d:${yearNumber}:${month}:${dayNum}`);
       });
     });
     return { nodes, gridMode: true };
   }
 
-  // The ribbon: continuous week rows around the fractional position.
-  const ribbonRows = Math.max(3, Math.floor((bottom - top) / ((right - baseLeft) / cols)));
-  const { left, cellW, rowH } = fitGrid(ribbonRows);
-  const nodeR = Math.min(cellW * 0.36, SSd * 0.032);
-  const labelFontPx = Math.max(11, Math.min(20, nodeR * 1.05));
-  const pushCell = makePushCell(left, cellW, nodeR, labelFontPx);
-  const visibleRows = Math.max(3, Math.floor((bottom - top) / rowH));
+  // The rotating ribbon: week rows sweep about the second hub, geared to
+  // the ring via the fractional chain position.
   const monthStart = daySerial(yearNumber, month, 1);
   const serialFloat = monthStart + fraction * daysInMonth(yearNumber, month);
-  // Week row index of a serial: rows count from the week containing serial 0,
-  // aligned to Sunday (serial 0 is a Thursday; Sunday of that week is -4).
-  const rowFloat = (serialFloat + 4) / DAYS_PER_WEEK;
-  const firstRow = Math.floor(rowFloat) - Math.floor(visibleRows / 2);
-  const subRow = rowFloat - Math.floor(rowFloat);
-  for (let r = firstRow; r <= firstRow + visibleRows + 1; r += 1) {
-    const sundaySerial = r * DAYS_PER_WEEK - 4;
-    const y = top + (r - firstRow - subRow + 0.5) * rowH;
-    for (let c = 0; c < cols; c += 1) {
+  const rowFloat = (serialFloat + 4) / 7; // week rows since the Sunday of serial 0
+  const centerRow = Math.floor(rowFloat);
+  const subRow = rowFloat - centerRow;
+  for (let dr = -5; dr <= 6; dr += 1) {
+    const rowAbs = centerRow + dr;
+    const angle = lattice.angleForRowOffset(dr - subRow + 2); // anchor near mid-fan
+    const sundaySerial = rowAbs * 7 - 4;
+    for (let c = 0; c < 7; c += 1) {
       const date = serialToDate(sundaySerial + c);
       const inAnchor = date.yearNumber === yearNumber && date.month === month;
-      pushCell(c, y, date.day, !inAnchor, `d:${date.yearNumber}:${date.month}:${date.day}`);
+      pushCell(angle, c, date.day, !inAnchor, `d:${date.yearNumber}:${date.month}:${date.day}`);
     }
   }
   return { nodes, gridMode: true };
