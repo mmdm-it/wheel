@@ -282,11 +282,15 @@ export function createApp({
     let firstIdx = -1;
     let last = null;
     let lastIdx = -1;
+    // Placebo links (the version footnote) never anchor the bounds: the
+    // chain's overrun is measured from the last REAL link, so the stamp
+    // trails beyond the springback and structurally cannot reach the
+    // magnifier.
     for (let i = 0; i < visibleItems.length; i += 1) {
-      if (visibleItems[i] !== null) { first = visibleItems[i]; firstIdx = i; break; }
+      if (visibleItems[i] !== null && !visibleItems[i].placebo) { first = visibleItems[i]; firstIdx = i; break; }
     }
     for (let i = visibleItems.length - 1; i >= 0; i -= 1) {
-      if (visibleItems[i] !== null) { last = visibleItems[i]; lastIdx = i; break; }
+      if (visibleItems[i] !== null && !visibleItems[i].placebo) { last = visibleItems[i]; lastIdx = i; break; }
     }
     if (!first) return { minRotation: 0, maxRotation: 0 };
     const firstOrder = Number.isFinite(first.order) ? first.order : firstIdx;
@@ -1324,6 +1328,7 @@ export function createApp({
     // 2026-07-17). calculateNodePositions is windowed and gap-aware.
     const visibleNodes = calculateNodePositions(nav.items, vp, rotation, nodeRadius, nodeSpacing);
     visibleNodes.forEach(node => {
+      if (node.item?.placebo) return; // the version footnote is never a seat
       const diff = Math.abs(node.angle - targetAngle);
       if (diff < closestDiff) {
         closestDiff = diff;

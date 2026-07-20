@@ -1,9 +1,9 @@
 {
   "name": "wheel",
-  "version": "3.11.0",
+  "version": "3.11.1",
   "type": "module",
   "scripts": {
-    "build": "node scripts/split-catalog.mjs && esbuild src/main.js --bundle --format=iife --target=chrome74 --outfile=dist/app.js --sourcemap --external:path --external:url --external:fs --external:fs/promises --external:ajv && node scripts/precompress-json.mjs",
+    "build": "node scripts/split-catalog.mjs && esbuild src/main.js --bundle --format=iife --target=chrome74 --define:__WHEEL_VERSION__=\\\"$npm_package_version\\\" --outfile=dist/app.js --sourcemap --external:path --external:url --external:fs --external:fs/promises --external:ajv && node scripts/precompress-json.mjs",
     "test": "node --test && npm run lint:forbidden",
     "lint:forbidden": "node --test test/forbidden-literals.test.js"
   },

@@ -352,6 +352,17 @@ export function buildPlacesLevel(manifest, levels, levelIndex, { selectedId, par
   return { items, selectedIndex, preserveOrder: true };
 }
 
+// THE VERSION FOOTNOTE (Howell 2026-07-20): a factory stamp at the end of
+// the manufacturers chain — four empty links past the last manufacturer,
+// then one placebo node carrying the build's version, bare ("3.11.0").
+// Placebo means the engine ignores it everywhere: bounds anchor on the
+// last REAL link (so at full stretch the stamp stays two spacings short
+// of the magnifier), snap never lands on it, taps pass through it. The
+// version is stamped into the bundle at build time; unbundled runs
+// (tests, raw source) read 'dev'.
+const WHEEL_VERSION = typeof __WHEEL_VERSION__ !== 'undefined' ? __WHEEL_VERSION__ : 'dev';
+const VERSION_FOOTNOTE_GAPS = 4;
+
 export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
   const markets = manifest?.MMdM?.markets;
   if (!markets) return { items: [], selectedIndex: 0, preserveOrder: false };
@@ -382,6 +393,7 @@ export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
   const selectedIndex = (() => {
     if (target) {
       const idx = items.findIndex(item => {
+        if (!item || item.placebo) return false;
         const simple = String(item.name || '').toLowerCase();
         if (simple === target) return true;
         return String(item.id || '').toLowerCase() === target;
@@ -390,6 +402,11 @@ export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
     }
     return 0;
   })();
+
+  if (items.length) {
+    for (let i = 0; i < VERSION_FOOTNOTE_GAPS; i += 1) items.push(null);
+    items.push({ id: 'version-footnote', name: WHEEL_VERSION, placebo: true, order: items.length });
+  }
 
   return { items, selectedIndex, preserveOrder: true };
 }

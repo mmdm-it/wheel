@@ -1,5 +1,22 @@
 # Changelog
 
+## 3.11.1 — The version footnote — a factory stamp past the last link
+- The catalog's manufacturers chain ends with four empty links past ZVEZDA and
+  one **placebo** node carrying the build's version, bare ("3.11.1") — text
+  only, no circle, black ink, smaller than a working label, centered on its
+  seat and hub-rotated like every numeral
+- It lives entirely in the overshoot zone: visible only while the thumb holds
+  the chain at full stretch (its closest approach is two spacings short of the
+  magnifier); the springback carries it off-glass — of interest only to the maker
+- Placebo is a generic engine flag: bounds anchor on the last REAL link, snap
+  never seats it, near-miss redirect skips it, deep links never resolve to it,
+  taps pass through it, no ARIA/tab exposure
+- The version is stamped into the bundle at build time (`--define` from
+  package.json) — bump → build now updates the stamp with no further work;
+  unbundled runs (tests) read 'dev'
+- 7 new tests (chain shape, index alignment, deep-link guard, rendered
+  inertness incl. no magnifier-approach swell); suite 263 green
+
 ## 3.11.0 — Catch-up release: Phase B closed, Phase C sprint C.1–C.5 (2026-07-14 → 2026-07-20)
 
 > The per-change bump ritual lapsed during this sprint (122 commits, PRs #27–#66

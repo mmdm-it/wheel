@@ -238,6 +238,23 @@ a ring tap, the magnifier, or the parent button.
 | taps mid-travel | accumulate from where the ring is HEADED | selection commits on ARRIVAL; three quick taps advance three leaves |
 | advance tempo | rotateToIndex → animateSnapTo (100 ms) | the reading step is a snap, not a journey |
 
+## The version footnote (Howell 2026-07-20, src/adapters/volume-helpers.js)
+
+A factory stamp at the end of the catalog's manufacturers chain: four empty
+links past the last manufacturer, then one placebo node carrying the build's
+version — text only, no circle, black ink, centered and hub-rotated. The
+discovered feel is the point: the stamp lives entirely in the overshoot
+zone, so it is visible ONLY while the thumb holds the chain at full
+stretch; the springback carries it off-glass the instant the thumb lifts.
+Of interest only to the maker, by construction.
+
+| Name | Value | Why |
+|---|---|---|
+| `VERSION_FOOTNOTE_GAPS` | 4 | with the chain-end overrun of 3 spacings, the stamp's closest approach is 2 spacings short of the magnifier — it can never seat |
+| `placebo` (item flag) | true | the generic inertness contract: bounds, snap, near-miss redirect, deep links, taps, ARIA all ignore it |
+| stamp label | bare version ("3.11.1") | build-time `--define` from package.json; unbundled runs read 'dev' |
+| `.is-placebo` label font | clamp(10px, 1.15vmin, 19px) | ~72% of a working label — a footnote, not a node |
+
 ## Live tuning knobs (console, no rebuild)
 
 | Knob | Home | Tunes |

@@ -173,19 +173,34 @@ export class FocusRingView {
 
     nodes.forEach(node => {
       if (node.item === null) return; // gaps are spacing only
+      // THE VERSION FOOTNOTE (Howell 2026-07-20): a placebo link wears the
+      // factory stamp costume (ink only, no fill) and is inert — no role,
+      // no tab stop, no click, no magnifier-approach swell. Always toggled,
+      // never merely set: these elements are recycled.
+      const isPlacebo = Boolean(node.item.placebo);
       const id = `focus-node-${node.item.id || node.index}`;
       let el = existingNodes.get(id);
       if (!el) {
         el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
         el.setAttribute('id', id);
         el.setAttribute('class', 'focus-ring-node');
-        el.setAttribute('role', 'button');
-        el.setAttribute('tabindex', '0');
         this.nodesGroup.appendChild(el);
       }
-      if (onNodeClick) {
-        el.onclick = () => onNodeClick(node);
-        this.#attachKeyActivation(el, () => onNodeClick(node));
+      el.classList.toggle('is-placebo', isPlacebo);
+      if (isPlacebo) {
+        el.removeAttribute('role');
+        el.removeAttribute('tabindex');
+        el.setAttribute('aria-hidden', 'true');
+        el.onclick = null;
+        el.onkeydown = null;
+      } else {
+        el.setAttribute('role', 'button');
+        el.setAttribute('tabindex', '0');
+        el.removeAttribute('aria-hidden');
+        if (onNodeClick) {
+          el.onclick = () => onNodeClick(node);
+          this.#attachKeyActivation(el, () => onNodeClick(node));
+        }
       }
       el.setAttribute('cx', node.x);
       el.setAttribute('cy', node.y);
@@ -197,7 +212,7 @@ export class FocusRingView {
       // Scale circle and label when the node is near the magnifier during rotation.
       // Gaussian bell centred on magnifierAngle; drops to ~1 within one node-spacing.
       let magScale = 1;
-      if (isRotating && magnifierAngle != null) {
+      if (isRotating && magnifierAngle != null && !isPlacebo) {
         const dist = Math.abs(node.angle - magnifierAngle);
         const sigma = labelMaskEpsilon * 0.5; // ≈ 0.3 × nodeSpacing
         magScale = 1 + (MAGNIFIER_NODE_SCALE_PEAK - 1) * Math.exp(-(dist * dist) / (2 * sigma * sigma));
@@ -226,7 +241,9 @@ export class FocusRingView {
         label.setAttribute('class', 'focus-ring-label');
         this.labelsGroup.appendChild(label);
       }
-      const useCentered = Boolean(node.labelCentered);
+      label.classList.toggle('is-placebo', isPlacebo);
+      // The stamp's numerals sit ON the node, like every numeral label.
+      const useCentered = Boolean(node.labelCentered) || isPlacebo;
       const rotDeg = (node.angle * 180) / Math.PI + 180;
       if (useCentered || magScale > 1.01) {
         // Center label on the node circle and apply scale via SVG transform.

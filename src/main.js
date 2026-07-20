@@ -307,7 +307,9 @@ function wireInteractions(getApp) {
     const p = svgPointOf(event);
     if (!p) return null;
 
-    const nodes = svg.querySelectorAll('.focus-ring-node');
+    // Placebo nodes (the version footnote) are not tap targets — excluding
+    // them here keeps a real neighbor eligible for the redirect.
+    const nodes = svg.querySelectorAll('.focus-ring-node:not(.is-placebo)');
     let nearest = null;
     let nearestDist = Infinity;
     nodes.forEach(node => {
