@@ -10,7 +10,10 @@
 - v3.6 Theming + accessibility hardening — done (shipped as 3.6.0)
 - v3.7 Dimension System + Child Pyramid — shipped (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; pyramid geometry refactored to CPUA fan-lines/spiral; child pyramid node rendering with CHILD_PARAM_TABLE, connector lines, sort-number rotation offset; catalog data cleanup; shipped as v3.7.28)
 - v3.8 IN/OUT Migration + patch series — done (shipped as v3.8.15; see patch notes below)
-- v3.9+ Single-Stratum Program — in progress (Phases A–D below)
+- v3.9+ Single-Stratum Program — in progress (Phases A–F below)
+  - v3.9.0 Phase A (single stratum) — done
+  - v3.10.x Phase B.2 gateway capability + interim pyramid guarantee — done
+  - v3.11.0 Phase B close + Phase C sprint C.1–C.5 (catch-up release, 2026-07-20) — done
 
 ## Current Plan: Single-Stratum Program (decided 2026-07-13; six-phase scope ratified 2026-07-14)
 
@@ -34,21 +37,48 @@ last (F).
 - **Phase A — Single stratum** — SHIPPED as v3.9.0 (2026-07-14).
   Dimension UI machinery removed; Bible pinned to the Latin Vulgate
   (`VUL`); all four volumes behave identically.
-- **Phase B — Data completeness + single-site consolidation** (in
-  progress). B.1 Bible: Psalms rebuilt to native Vulgate numbering,
-  Latin filled from the Clementine corpus (99.5%; 152 divergent-
-  recension residuals documented) — done. B.2 (proposed): the Bible
-  becomes reachable as an "easter egg" inside the MMdM catalog via a
-  generic cross-volume **gateway node** capability, so alpha/beta
-  testing needs only one deployed site. B.3 MMdM: populate the 261
-  empty manufacturer/cylinder buckets (domain knowledge + worksheet).
-- **Phase C — Feel**: rotation inertia, momentum constants, animation
-  timing, pyramid↔ring and parent-circle migration reliability, child
-  pyramid geometry/placement; phone-gated per WORKFLOW.md. The
-  calendar's ~5,000-node ring (3000 BC → present, "a couple of thumb
-  swipes") is the primary physics test rig. Heavy server-vs-LAN
-  comparison testing; WORKFLOW.md may gain a staging deploy path.
-  Final feel constants documented with rationale.
+- **Phase B — Data completeness + single-site consolidation** — DONE
+  (closed 2026-07-16 with the first end-of-phase audit,
+  `docs/AUDIT-PHASE-B.md`). B.1 Bible: Psalms rebuilt to native Vulgate
+  numbering, Latin filled from the Clementine corpus (99.5%; 152
+  divergent-recension residuals documented). B.2: the Gutenberg easter
+  egg — generic cross-volume **gateway node** capability (shipped as
+  v3.10.0). B.3 MMdM: population complete — 1,032 models / 100
+  manufacturers, full prose, guarded by
+  `test/catalog-integrity.test.js`. B.4: the Gregorio XIII gateway to
+  the calendar volume — second gateway instance, zero shared-code
+  changes.
+- **Phase C — Feel** (in progress; shipped in the 3.11.0 catch-up
+  release through C.5). Phone-gated per WORKFLOW.md; the calendar's
+  6,000-year ring is the primary physics test rig; constants ledgered
+  in `docs/FEEL.md`. As-run sub-phases:
+  - **C.1/C.1b** — Phase B audit debts cleared (13 of 14);
+    `src/volume-configs.js` as the one home for volume literals;
+    gateway speed (cache + idle prefetch).
+  - **C.2** — instruments (boot-phase decomposition, feel HUD, field
+    probe `?probe=1`), catalog lite/prose split, cache hygiene, staging
+    deploy target. Perf series: pre-compressed JSON, O(visible)
+    selectNearest, memoized pyramid geometry, rotation blur dropped.
+  - **C.3** — the gesture ladder: tap / scrub (frozen 1:1) /
+    scrub-anchored flick / double-flick; velocity-gain amplifier
+    retired.
+  - **C.4** — arrivals: boot splash "the instrument arrives";
+    migration rebuild (declared grammar, transaction barrier,
+    fixed-vessel fills); gateway cinema wipe.
+  - **C.5** — the star field (golden-angle scatter, prominence tiers,
+    Favorites halo, seat cap 28); canonical usable areas
+    (`src/geometry/usable-areas.js`); the wedge calendar.
+  - **C.6** — the day ring: grid-tap migration (±5-year chain, thumb
+    doctrine), months-ring front door on the current month, historical
+    Julian/Gregorian reckoning (Gregory's ten missing days fall out of
+    the arithmetic), the present-moment mark. Plus early C.7 arrivals:
+    the e-reader (NEXT gesture, continuous verse chain) and the sweep
+    at every level (books/chapters/verses).
+  - **Remaining C scope**: catalog family flattening (ruled 2026-07-19
+    — families leave navigation, become the live parent-button suffix;
+    star field prerequisite now exists); C.7 phase close (FEEL.md
+    final, end-of-phase audit, native-vs-wrapper evidence memo for F);
+    draining the [C] punchlist items.
 - **Phase D — Dimensions**: the strata design implemented on C's tuned
   physics — blur + mirrored secondary ring, persist-on-select,
   language/edition portals for the Bible. `DIMENSION_SYSTEM.md` is
