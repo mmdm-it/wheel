@@ -1,5 +1,23 @@
 # Changelog
 
+## 3.11.2 — Placebo-tail symmetry, siblings-only bible sky, snapshots once per version
+- **Placebo-tail symmetry**: holding the chain past ZVEZDA once again shows its
+  cylinder counts dim in the sky — the same past-the-end hold as AIFO, GENESIS,
+  and APOCALYPSIS. The stamp's trailing gaps are NOT cousin texture: tail slots
+  fall through to the nearest REAL link instead of emptying the pyramid (the
+  parent button holds honest through the stretch too); mid-chain cousin gaps
+  still empty it as ruled
+- **Siblings only in the sky**: at the testament ring the child pyramid seats
+  only the magnified testament's OWN books — Genesis and Matthew are cousins,
+  not siblings. The sweep is untouched: tapping a book still pours the full
+  67-book cousin chain into the ring
+- **Snapshots once per version**: sync-to-server.sh requests Wayback captures
+  only when the deployed version changed (`.snapshot-version` state, untracked;
+  SNAPSHOT=force overrides) — each capture is an edition, not a redeploy, so
+  the archive's timeline stays one layer per version
+- Suite 264 green (testament-sky siblings test added; one pre-sweep fixture
+  taught to carry `testamentId` like every real chain item)
+
 ## 3.11.1 — The version footnote — a factory stamp past the last link
 - The catalog's manufacturers chain ends with four empty links past ZVEZDA and
   one **placebo** node carrying the build's version, bare ("3.11.1") — text

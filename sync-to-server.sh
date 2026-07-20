@@ -178,8 +178,21 @@ echo "  📅 Calendar: https://mmdm.it/wheel-v3/calendar/"
 echo "  🧭 Places:   https://mmdm.it/wheel-v3/places/"
 echo ""
 
-# Prior-art evidence trail: archive the public deployments after each real
-# deploy (see docs/prior-art/). Non-fatal; SNAPSHOT=0 skips.
-if [ "${SNAPSHOT:-1}" = "1" ] && { [ "$DEPLOYMENT" = "catalog" ] || [ "$DEPLOYMENT" = "all" ]; }; then
-    bash "$(dirname "$0")/scripts/archive-snapshot.sh" || true
+# Prior-art evidence trail: archive the public deployments ONCE PER RELEASED
+# VERSION (Howell 2026-07-20) — each capture is an edition, not a redeploy,
+# so the archive's timeline stays one layer per version for future
+# archaeology (and we lean on Save Page Now no more than we release).
+# Non-fatal; SNAPSHOT=0 skips, SNAPSHOT=force re-snapshots a same-version
+# redeploy. State lives in .snapshot-version (untracked, local).
+SNAPSHOT_STATE="${LOCAL_PATH}.snapshot-version"
+DEPLOYED_VERSION=$(grep '"version"' "${LOCAL_PATH}package.json" | head -n1 | sed 's/.*"version": "\([0-9.]*\)".*/\1/')
+LAST_SNAPSHOT_VERSION=""
+[ -f "$SNAPSHOT_STATE" ] && LAST_SNAPSHOT_VERSION=$(cat "$SNAPSHOT_STATE")
+if [ "${SNAPSHOT:-1}" != "0" ] && { [ "$DEPLOYMENT" = "catalog" ] || [ "$DEPLOYMENT" = "all" ]; }; then
+    if [ "$DEPLOYED_VERSION" != "$LAST_SNAPSHOT_VERSION" ] || [ "${SNAPSHOT:-1}" = "force" ]; then
+        bash "$(dirname "$0")/scripts/archive-snapshot.sh" || true
+        echo "$DEPLOYED_VERSION" > "$SNAPSHOT_STATE"
+    else
+        echo "📸 Snapshot skipped — v$DEPLOYED_VERSION already archived (SNAPSHOT=force to override)"
+    fi
 fi

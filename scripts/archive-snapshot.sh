@@ -8,9 +8,12 @@
 # record of what was public and when.
 #
 # Usage: ./scripts/archive-snapshot.sh
-# Called automatically by sync-to-server.sh on catalog/all deploys
-# (set SNAPSHOT=0 to skip). Anonymous SPN requests are rate-limited;
-# failures are non-fatal by design — a missed snapshot never blocks a deploy.
+# Called automatically by sync-to-server.sh on catalog/all deploys, once
+# per released version — a capture is an edition, not a redeploy (SNAPSHOT=0
+# skips, SNAPSHOT=force re-snapshots). Anonymous SPN requests are
+# rate-limited; failures are non-fatal by design — a missed snapshot never
+# blocks a deploy. Note: SPN sometimes reports an error (000/520) yet
+# captures anyway — verify via the availability API before retrying.
 
 URLS=(
     "https://mmdm.it/"
