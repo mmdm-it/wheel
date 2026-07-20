@@ -793,6 +793,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getCatalogChildren: layoutBindings.getCatalogChildren || ((m, selected) => getCatalogChildren(manifest, selected)),
     getCalendarMonths: layoutBindings.getCalendarMonths || ((m, selected, mode) => getCalendarMonths(manifest, selected, mode)),
     getCalendarMonthChain: layoutBindings.getCalendarMonthChain,
+    getCalendarDayChain: layoutBindings.getCalendarDayChain,
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
     getBibleVerseItems: layoutBindings.getBibleVerseItems,
     prefetchBibleVerses: layoutBindings.prefetchBibleVerses,

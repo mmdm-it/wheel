@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { weaveCousinChain, buildCalendarMonthsCousinChain, COUSIN_GAP_LINKS } from '../src/adapters/volume-helpers.js';
+import { weaveCousinChain, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, COUSIN_GAP_LINKS } from '../src/adapters/volume-helpers.js';
 import { calculateNodePositions, getViewportInfo, getNodeSpacing, getViewportWindow, getBaseAngleForOrder } from '../src/geometry/focus-ring-geometry.js';
 
 // The cousin-gap grammar (Howell, 2026-07-17): whatever level rides the
@@ -61,6 +61,52 @@ describe('months cousin chain', () => {
   it('lands the requested month', () => {
     const { items: chain, selectedIndex } = buildCalendarMonthsCousinChain(manifest, { initialItemId: '1969:jul' });
     assert.equal(chain[selectedIndex]?.id, '1969:jul');
+  });
+});
+
+describe('day cousin chain (thumb doctrine)', () => {
+  const { items, selectedIndex } = buildCalendarDaysCousinChain(manifest, { centerId: 'd:2026:7:19' });
+  const days = items.filter(Boolean);
+
+  it('lands the tapped day at the exact center of a ±5-year window', () => {
+    assert.equal(items[selectedIndex]?.id, 'd:2026:7:19');
+    assert.equal(days[0].id, 'd:2021:7:19', 'five years back');
+    assert.equal(days[days.length - 1].id, 'd:2031:7:19', 'five years forward');
+    assert.equal(days.length, 3653, 'every day in the window, leap days included');
+  });
+
+  it('gaps months at rank 1 and years at rank 2', () => {
+    const gapRunBefore = id => {
+      const idx = items.findIndex(item => item && item.id === id);
+      let run = 0;
+      for (let i = idx - 1; i >= 0 && items[i] === null; i -= 1) run += 1;
+      return run;
+    };
+    assert.equal(gapRunBefore('d:2026:7:2'), 0, 'no gap inside a month');
+    assert.equal(gapRunBefore('d:2026:8:1'), 2, 'month crossing = first cousins');
+    assert.equal(gapRunBefore('d:2027:1:1'), 4, 'year crossing = second cousins');
+  });
+
+  it('carries the fields the ring and parent button need', () => {
+    const center = items[selectedIndex];
+    assert.equal(center.name, '19');
+    assert.equal(center.level, 'day');
+    assert.equal(center.monthName, 'July');
+    assert.deepEqual(
+      [center.yearNumber, center.monthNumber, center.dayNumber],
+      [2026, 7, 19]
+    );
+  });
+
+  it('clamps the window at the calendar horizon', () => {
+    const { items: edge } = buildCalendarDaysCousinChain(manifest, { centerId: 'd:2999:6:15' });
+    const edgeDays = edge.filter(Boolean);
+    assert.equal(edgeDays[edgeDays.length - 1].id, 'd:3000:12:31', 'no days past the horizon');
+  });
+
+  it('refuses ids that are not dates (weekday headers stay inert)', () => {
+    const { items: none } = buildCalendarDaysCousinChain(manifest, { centerId: 'wd:3' });
+    assert.equal(none.length, 0);
   });
 });
 

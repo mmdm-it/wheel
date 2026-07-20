@@ -897,7 +897,11 @@ export function createApp({
               fanLines: [],
               intersections: [],
               magnifierOrigin: null,
-              onNodeClick: null // inert until the days ring exists (C.6)
+              // The wedge is tappable: a day pours the ±5-year chain into
+              // the ring (header cells are level 'weekday' — inert there).
+              onNodeClick: typeof pyramidConfig.onClick === 'function'
+                ? instr => pyramidConfig.onClick(instr)
+                : null
             };
           }
         }

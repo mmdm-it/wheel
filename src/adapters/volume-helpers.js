@@ -1,3 +1,4 @@
+import { daySerial, serialToDate } from '../geometry/day-grid.js';
 // Volume-specific chain/build helpers extracted from the host page.
 // These remain pure functions over manifests and options.
 
@@ -502,6 +503,55 @@ export function buildCalendarMonthsCousinChain(manifest, { initialItemId } = {})
   ]);
 
   return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
+}
+
+/**
+ * The DAYS ring chain (C.6 opener, Howell's thumb doctrine 2026-07-19):
+ * days spanning ±5 years around the entered date — "scanning six thousand
+ * years by the day is ridiculous" — woven with the full cousin ladder:
+ * month 2, year 4, century 6, millennium 8. Plain array (~3,900 links).
+ * Ids match the wedge grid's cells: d:<year>:<month>:<day>.
+ */
+export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
+  const m = /^d:(-?\d+):(\d+):(\d+)$/.exec(centerId || '');
+  if (!m) return { items: [], selectedIndex: 0, preserveOrder: true };
+  const cy = Number(m[1]);
+  const cm = Number(m[2]);
+  const cd = Number(m[3]);
+
+  const template = manifest?.Calendar?.month_template || {};
+  const monthNameByNumber = {};
+  Object.values(template).forEach(mv => {
+    if (Number.isFinite(mv?.month_number)) monthNameByNumber[mv.month_number] = mv?.name || '';
+  });
+
+  const HALF_SPAN_DAYS = 1826; // five years, thumb-doctrine cap
+  const center = daySerial(cy, cm, cd);
+  const first = Math.max(center - HALF_SPAN_DAYS, daySerial(-3000, 1, 1));
+  const last = Math.min(center + HALF_SPAN_DAYS, daySerial(3000, 12, 31));
+
+  const sorted = [];
+  for (let serial = first; serial <= last; serial += 1) {
+    const date = serialToDate(serial);
+    sorted.push({
+      id: `d:${date.yearNumber}:${date.month}:${date.day}`,
+      name: String(date.day),
+      dayNumber: date.day,
+      monthNumber: date.month,
+      yearNumber: date.yearNumber,
+      monthName: monthNameByNumber[date.month] || '',
+      level: 'day'
+    });
+  }
+
+  const items = weaveCousinChain(sorted, [
+    item => `${item.yearNumber}:${item.monthNumber}`,
+    item => item.yearNumber,
+    item => centuryKey(item.yearNumber),
+    item => millenniumKey(item.yearNumber)
+  ]);
+
+  return { items, selectedIndex: selectIndexIn(items, centerId), preserveOrder: true };
 }
 
 export function buildBibleSections(manifest, { testamentId, sectionId, namesMap } = {}) {

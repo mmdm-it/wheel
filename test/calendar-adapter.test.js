@@ -60,3 +60,38 @@ describe('calendar adapter', () => {
     assert.equal(bcDetail.title, '753 BC', 'BC years carry the BC suffix');
   });
 });
+
+describe('calendar front door (volume config)', () => {
+  it('boots the months ring on the current month, whatever the manifest names as top level', async () => {
+    // Regression: the manifest's focus_ring_startup.top_navigation_level
+    // ("year" — truthfully the top of the hierarchy) was consulted as the
+    // ENTRY level, so gateway transits (level=root) kept landing on the
+    // years ring instead of the current month (Howell 2026-07-19).
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const cfg = volumeConfigs.calendar;
+    const gatewayOptions = cfg.buildOptions({
+      params: new URLSearchParams('volume=calendar&level=root'),
+      startup: { top_navigation_level: 'year' },
+      arrangements: {}
+    });
+    assert.equal(gatewayOptions.level, 'month', 'gateway transit enters at months');
+    const bare = cfg.buildOptions({ params: new URLSearchParams(''), startup: { top_navigation_level: 'year' }, arrangements: {} });
+    assert.equal(bare.level, 'month', 'standalone boot enters at months');
+    const explicit = cfg.buildOptions({ params: new URLSearchParams('level=year'), startup: {}, arrangements: {} });
+    assert.equal(explicit.level, 'year', '?level=year keeps the years-ring entrance');
+
+    const now = new Date();
+    const monthKeys = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+    const template = Object.fromEntries(monthKeys.map((k, i) => [k, { id: k, name: k, month_number: i + 1 }]));
+    const yearId = String(now.getFullYear());
+    const manifest = {
+      Calendar: {
+        month_template: template,
+        years: { [yearId]: { id: yearId, year_number: now.getFullYear(), sort_number: 0 } }
+      }
+    };
+    const { items, selectedIndex } = cfg.buildChain(manifest, gatewayOptions);
+    assert.equal(items[selectedIndex]?.id, `${yearId}:${monthKeys[now.getMonth()]}`,
+      'the current month arrives magnified');
+  });
+});

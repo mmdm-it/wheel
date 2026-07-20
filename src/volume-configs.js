@@ -4,7 +4,7 @@
 // declared here; src/main.js stays volume-agnostic and is scanned by
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
-import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toRomanNumeral } from './adapters/volume-helpers.js';
+import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toRomanNumeral } from './adapters/volume-helpers.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 import { catalogAdapter } from './adapters/catalog-adapter.js';
 import { bibleAdapter, buildBibleRootChain } from './adapters/bible-adapter.js';
@@ -130,7 +130,15 @@ const volumeConfigs = {
     extractRoot: manifest => manifest?.Calendar,
     async loadSupplemental() { return { translationsMeta: null }; },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
-      const level = params.get('level') || startup.top_navigation_level || 'year';
+      // Default entry is the MONTHS ring on the current month (Howell
+      // 2026-07-19) — gateway transits arrive with level=root, which is
+      // "the volume's front door", not a level request. ?level=year still
+      // boots the years ring explicitly. The manifest's
+      // top_navigation_level states what the TOP of the hierarchy is
+      // (years) — it does not pick the front door, so it is deliberately
+      // not consulted here.
+      const rawLevel = params.get('level');
+      const level = (rawLevel && rawLevel !== 'root') ? rawLevel : 'month';
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
@@ -144,11 +152,23 @@ const volumeConfigs = {
     },
     formatLabel: ({ locale }) => makeCalendarLabelFormatter({ locale }),
     // A calendar must see the future — and it boots on today, not on a
-    // hardcoded year that goes stale every January.
-    buildChain: (manifest, options) => buildCalendarYears(manifest, {
-      arrangement: options.arrangement,
-      initialItemId: options.initialItemId || String(new Date().getFullYear())
-    }),
+    // hardcoded date that goes stale. Default entry: the months ring with
+    // the CURRENT month magnified; ?level=year gives the years ring.
+    buildChain: (manifest, options) => {
+      if (options.level === 'year') {
+        return buildCalendarYears(manifest, {
+          arrangement: options.arrangement,
+          initialItemId: options.initialItemId || String(new Date().getFullYear())
+        });
+      }
+      const now = new Date();
+      const monthEntries = Object.entries(manifest?.Calendar?.month_template || {})
+        .sort((a, b) => (a[1]?.month_number || 0) - (b[1]?.month_number || 0));
+      const monthKey = monthEntries[now.getMonth()]?.[0];
+      return buildCalendarMonthsCousinChain(manifest, {
+        initialItemId: options.initialItemId || `${now.getFullYear()}:${monthKey}`
+      });
+    },
     createHandlers: makeAdapterHandlers('calendar')
   },
   places: {

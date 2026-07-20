@@ -206,13 +206,25 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   const labelFontPx = Math.max(11, Math.min(20, nodeR * 1.05));
 
   const nodes = [];
-  const pushCell = (angle, weekday, dayNum, dim, key) => {
+  // TODAY wears its own colors in the lattice (Howell 2026-07-19): the
+  // one cell the reader is standing on.
+  const now = new Date();
+  const todayY = now.getFullYear();
+  const todayM = now.getMonth() + 1;
+  const todayD = now.getDate();
+  const pushCell = (angle, weekday, dayNum, dim, key, itemFields = null) => {
     const p = lattice.pointAt(angle, lattice.radiusFor(weekday));
     if (p.x < -nodeR || p.x > width + nodeR || p.y < -nodeR || p.y > height + nodeR) return;
+    const isToday = Boolean(itemFields
+      && itemFields.yearNumber === todayY
+      && itemFields.monthNumber === todayM
+      && itemFields.dayNumber === todayD);
     nodes.push({
       id: key,
       label: String(dayNum),
-      item: { id: key, name: String(dayNum), level: 'day' },
+      item: itemFields
+        ? { id: key, name: String(dayNum), level: 'day', ...itemFields }
+        : { id: key, name: String(dayNum), level: 'weekday' }, // header: inert
       arc: 'grid',
       // Numerals align with their RAY, like every child label in the
       // instrument (the view rotates by angle + 180°; the ray angle from
@@ -223,7 +235,8 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
       r: nodeR,
       labelScale: 1,
       labelFontPx,
-      dim: Boolean(dim)
+      dim: Boolean(dim),
+      today: isToday
     });
   };
 
@@ -237,7 +250,8 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     rows.forEach((row, ri) => {
       row.forEach((dayNum, ci) => {
         if (dayNum === null) return; // hard crop — the month's own days only
-        pushCell(lattice.rayAngle(ri + 1), ci, dayNum, false, `d:${yearNumber}:${month}:${dayNum}`);
+        pushCell(lattice.rayAngle(ri + 1), ci, dayNum, false, `d:${yearNumber}:${month}:${dayNum}`,
+          { yearNumber, monthNumber: month, dayNumber: dayNum });
       });
     });
     return { nodes, gridMode: true };
@@ -257,7 +271,8 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     for (let c = 0; c < 7; c += 1) {
       const date = serialToDate(sundaySerial + c);
       const inAnchor = date.yearNumber === yearNumber && date.month === month;
-      pushCell(angle, c, date.day, !inAnchor, `d:${date.yearNumber}:${date.month}:${date.day}`);
+      pushCell(angle, c, date.day, !inAnchor, `d:${date.yearNumber}:${date.month}:${date.day}`,
+        { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day });
     }
   }
   return { nodes, gridMode: true };

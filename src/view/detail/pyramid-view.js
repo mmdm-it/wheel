@@ -132,6 +132,9 @@ export class PyramidView {
         circle.setAttribute('data-index', idx);
         if (instr.label) circle.setAttribute('aria-label', instr.label);
         if (instr.dim) circle.setAttribute('opacity', '0.35'); // ribbon neighbors
+        // TODAY (the day grid): dark-red seat, so the reader always knows
+        // where they stand in the lattice.
+        if (instr.today) circle.style.fill = '#7a1010';
         if (this._onNodeClick) {
           circle.style.cursor = 'pointer';
         }
@@ -157,6 +160,7 @@ export class PyramidView {
           label.style.fontSize = `${instr.labelFontPx}px`;
         }
         if (instr.dim) label.setAttribute('opacity', '0.35'); // ribbon neighbors
+        if (instr.today) label.style.fill = '#ffd700'; // yellow over the dark-red seat
         label.textContent = instr.label || '';
         // Favorites carve a readable channel through the fan lines: a halo
         // twin UNDER the node circles (fan lines < halo < circle < text).
