@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
+import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
 import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
@@ -629,6 +629,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
       getBibleVerseItems,
+      getBibleVerseCacheStatus,
       getBibleVerseChain: verseId => verseChain(verseId),
       getBibleChapterChain: chapterId => chapterChain(chapterId),
       prefetchBibleVerses,
