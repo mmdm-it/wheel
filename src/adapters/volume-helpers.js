@@ -527,6 +527,11 @@ export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
 
   const HALF_SPAN_DAYS = 1826; // five years, thumb-doctrine cap
   const center = daySerial(cy, cm, cd);
+  // A date that never happened (Gregory's ten, or a hand-typed id) has no
+  // link of its own; the serial resolves it to the day the count resumed,
+  // and the ring must magnify THAT day rather than fall back to link zero.
+  const centerDate = serialToDate(center);
+  const resolvedCenterId = `d:${centerDate.yearNumber}:${centerDate.month}:${centerDate.day}`;
   const first = Math.max(center - HALF_SPAN_DAYS, daySerial(-3000, 1, 1));
   const last = Math.min(center + HALF_SPAN_DAYS, daySerial(3000, 12, 31));
 
@@ -551,7 +556,7 @@ export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
     item => millenniumKey(item.yearNumber)
   ]);
 
-  return { items, selectedIndex: selectIndexIn(items, centerId), preserveOrder: true };
+  return { items, selectedIndex: selectIndexIn(items, resolvedCenterId), preserveOrder: true };
 }
 
 export function buildBibleSections(manifest, { testamentId, sectionId, namesMap } = {}) {

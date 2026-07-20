@@ -104,6 +104,24 @@ describe('day cousin chain (thumb doctrine)', () => {
     assert.equal(edgeDays[edgeDays.length - 1].id, 'd:3000:12:31', 'no days past the horizon');
   });
 
+  it('carries the day ring across Gregory\'s seam without a phantom link', () => {
+    const { items: reform, selectedIndex: idx } = buildCalendarDaysCousinChain(manifest, { centerId: 'd:1582:10:4' });
+    const real = reform.filter(Boolean);
+    assert.equal(reform[idx]?.id, 'd:1582:10:4', 'the last Julian day magnified');
+    // The chain is elapsed days, so 4 and 15 October are neighbors in it —
+    // separated only by the gap links their shared month does not create.
+    const at = id => reform.findIndex(item => item && item.id === id);
+    assert.equal(at('d:1582:10:15') - at('d:1582:10:4'), 1, 'adjacent links, as they were adjacent days');
+    assert.ok(!real.some(d => d.yearNumber === 1582 && d.monthNumber === 10
+      && d.dayNumber >= 5 && d.dayNumber <= 14), 'no ghost day ever enters the ring');
+  });
+
+  it('magnifies the resumption day when handed a date that never happened', () => {
+    const { items, selectedIndex } = buildCalendarDaysCousinChain(manifest, { centerId: 'd:1582:10:7' });
+    assert.equal(items[selectedIndex]?.id, 'd:1582:10:15',
+      'a ghost id lands on the day the reckoning resumed, not on link zero');
+  });
+
   it('refuses ids that are not dates (weekday headers stay inert)', () => {
     const { items: none } = buildCalendarDaysCousinChain(manifest, { centerId: 'wd:3' });
     assert.equal(none.length, 0);
