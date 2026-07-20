@@ -93,9 +93,11 @@ export class PyramidView {
     this.#clear(this.pyramidNodesGroup);
     this.#clear(this.pyramidLabelsGroup);
 
-    // Draw connector lines from magnifier origin to each child node
+    // Draw connector lines from magnifier origin to each child node.
+    // Grid pyramids (the day grid) have none — the array's rigid order is
+    // its own connection to the parent.
     const origin = data.magnifierOrigin;
-    if (origin && nodes.length > 0) {
+    if (origin && nodes.length > 0 && !data.gridMode) {
       nodes.forEach(instr => {
         const el = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
         el.setAttribute('class', 'child-pyramid-fan-line');
@@ -129,6 +131,7 @@ export class PyramidView {
         circle.setAttribute('tabindex', '0');
         circle.setAttribute('data-index', idx);
         if (instr.label) circle.setAttribute('aria-label', instr.label);
+        if (instr.dim) circle.setAttribute('opacity', '0.35'); // ribbon neighbors
         if (this._onNodeClick) {
           circle.style.cursor = 'pointer';
         }
@@ -153,6 +156,7 @@ export class PyramidView {
         if (instr.labelFontPx) {
           label.style.fontSize = `${instr.labelFontPx}px`;
         }
+        if (instr.dim) label.setAttribute('opacity', '0.35'); // ribbon neighbors
         label.textContent = instr.label || '';
         // Favorites carve a readable channel through the fan lines: a halo
         // twin UNDER the node circles (fan lines < halo < circle < text).

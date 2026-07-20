@@ -890,6 +890,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   recordBootPhases(volume);
   if (options.debug) mountFeelHud();
   mountProbe(); // inert unless ?probe=1 — field diagnostics to the drop box
+  // ?bounds=1 — green region outlines (solid: star field, dashed: day grid)
+  // for phone-side layout tuning; phones have no console for the old call.
+  try {
+    if (new URLSearchParams(window.location.search).get('bounds') === '1') {
+      window.showPyramidBounds?.();
+    }
+  } catch (err) { /* diagnostics never break boot */ }
   prefetchGatewayTargets(manifest);
 
   if (playSplash) {

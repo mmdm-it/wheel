@@ -7,6 +7,7 @@ import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-pyramid-geometry.js';
+import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
@@ -876,6 +877,30 @@ export function createApp({
       if (suppressPyramid) return null;
       if (!pyramidConfig) return null;
       try {
+        // Grid pyramids (the day grid): an ARRAY, not a star field. During
+        // rotation the ribbon scrolls, geared to the ring via the fractional
+        // chain position; at rest it hard-crops to the magnified month.
+        if (typeof pyramidConfig.gridFor === 'function') {
+          const gridInfo = pyramidConfig.gridFor({ selected: pyramidSelected });
+          if (gridInfo) {
+            const slotFloat = rotation / nodeSpacing - 1;
+            const fraction = slotFloat - Math.round(slotFloat);
+            const grid = computeDayGridLayout(vp, magnifier, arcParams, {
+              yearNumber: gridInfo.yearNumber,
+              month: gridInfo.month,
+              fraction,
+              rotating: isRotating,
+              logoBounds: volumeLogo.getBounds()
+            });
+            return {
+              ...grid,
+              fanLines: [],
+              intersections: [],
+              magnifierOrigin: null,
+              onNodeClick: null // inert until the days ring exists (C.6)
+            };
+          }
+        }
         // Pre-fetch children to pass count for dynamic spacing
         let children = [];
         if (typeof pyramidConfig.getChildren === 'function' && pyramidSelected) {

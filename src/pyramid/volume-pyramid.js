@@ -153,7 +153,19 @@ export function buildCalendarPyramid({
       app.setParentButtons({ showOuter: true });
     }
   };
-  return { getChildren, onClick };
+  // Months in the ring → the DAY GRID pyramid (Howell 2026-07-19): the one
+  // pyramid that is an array, not a star field. The host renders it from
+  // this descriptor; taps stay inert until the days ring exists (C.6).
+  const gridFor = ({ selected } = {}) => {
+    if (calendarModeRef?.() !== 'month') return null;
+    if (!selected || !Number.isFinite(selected.monthNumber)) return null;
+    const yearNumber = Number.isFinite(selected.yearNumber)
+      ? selected.yearNumber
+      : Number.parseInt(selected.parentId, 10);
+    if (!Number.isFinite(yearNumber)) return null;
+    return { yearNumber, month: selected.monthNumber };
+  };
+  return { getChildren, onClick, gridFor };
 }
 
 export function buildBiblePyramid({
