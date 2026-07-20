@@ -289,7 +289,10 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     childrenHandler,
     onBoot,
     getParentLabel,
-    shouldCenterLabel: () => true,
+    // Years stay centered on their nodes (numerals); MONTHS align like
+    // manufacturers — magnifier centered, ring labels right-aligned
+    // (Howell 2026-07-19).
+    shouldCenterLabel: ({ item } = {}) => !Number.isFinite(item?.monthNumber),
     layoutBindings: {
       calendarModeRef: () => calendarMode,
       getCalendarMonthChain: monthId => monthChain(monthId),

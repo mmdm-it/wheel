@@ -893,8 +893,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // ?bounds=1 — green region outlines (solid: star field, dashed: day grid)
   // for phone-side layout tuning; phones have no console for the old call.
   try {
-    if (new URLSearchParams(window.location.search).get('bounds') === '1') {
+    const diagParams = new URLSearchParams(window.location.search);
+    if (diagParams.get('bounds') === '1') {
       window.showPyramidBounds?.();
+    }
+    // ?wedge=1 — day-wedge construction rays; ?wedgemul=N tunes the new
+    // hub's distance (multiplier on magnifier→hub, default 1.5).
+    if (diagParams.get('wedge') === '1') {
+      window.showDayWedge?.(Number(diagParams.get('wedgemul')) || 1.5);
     }
   } catch (err) { /* diagnostics never break boot */ }
   prefetchGatewayTargets(manifest);
