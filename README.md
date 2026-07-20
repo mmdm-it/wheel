@@ -4,13 +4,13 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.10.2 (2026-07-14)
+- v3.11.0 (2026-07-20)
 
-## Notable Changes in 3.10.0
-- The Gutenberg easter egg: the Bible is reachable inside the MMdM catalog (GERMANIA → GUTENBERG → BIBLIA SACRA LATINA → testaments), with theme crossover and a working return door.
-- Generic **gateway node** capability: catalog data can declare a door into any other volume; the host boots volumes in-app without a page reload (`bootVolume`), with browser history integration.
-- Full Latin identity for the Bible volume: Capitulum + Roman numerals for chapters and verses, Latin book names everywhere including the parent button.
-- Phase B Bible data: Psalms rebuilt to native Vulgate numbering from the Clementine corpus; Vulgate coverage 95.5% → 99.5%.
+## Notable Changes in 3.11.0 (catch-up release — see CHANGELOG for the full sprint)
+- **Phase B closed**: MMdM population complete — 1,032 models / 100 manufacturers, full prose; Gregorio XIII gateway to the calendar volume; end-of-phase audit ritual (docs/AUDIT-PHASE-B.md).
+- **Phase C sprint (C.1–C.5)**: gesture ladder (tap / scrub / flick / double-flick, docs/FEEL.md); boot splash "the instrument arrives"; migration rebuild + gateway cinema wipe; golden-angle star field with editorial prominence; canonical usable areas; wedge calendar with historical Julian/Gregorian reckoning; day ring with the present-moment mark.
+- **The e-reader**: NEXT gesture in the detail sector; one continuous verse chain Genesis 1:1 → Apocalypse 22:21; the sweep at books/chapters/verses levels; Roman chapters, Arabic verses.
+- **Platform**: mmdm.it unmasked (direct DNS, real SEO); GPL-3.0 engine / reserved data IP split; pre-compressed JSON + perf probe cycle (cellular boot 1.3MB → 180KB).
 
 ## Release Train
 - v3.2.17 Baseline data + UI lift — done
@@ -22,7 +22,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.8.15 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
 - v3.8.19 Parent Button Labelling — shipped: adapter-driven `getParentLabel`, progressive depth labels (country → manufacturer → compound), uppercase suffix
 
-- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.10.2`).
+- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.11.0`).
 - Historical majors are maintained outside the active v3 repository (archived folders/repos for v0/v1/v2).
 - Future v4 will branch from the final v3 tag and tag releases as `v4.*` (no versioned folders).
 - GitHub flow is feature branch → pull request → merge into protected `main` after required checks pass.

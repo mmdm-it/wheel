@@ -1,5 +1,116 @@
 # Changelog
 
+## 3.11.0 — Catch-up release: Phase B closed, Phase C sprint C.1–C.5 (2026-07-14 → 2026-07-20)
+
+> The per-change bump ritual lapsed during this sprint (122 commits, PRs #27–#66
+> merged with per-PR phone gates but no version bumps). This entry restores the
+> ledger in one honest stroke; each theme below was verified at its own merge.
+
+### Phase B closed
+- **B.3 MMdM population complete** (batches 2–12): 261 empty buckets filled →
+  **1,032 models / 100 manufacturers, full prose on every model**. Mesa baseline
+  elevated to mandatory dossier step; sui-generis purge (no source/curator
+  references in shipped prose); one-displacement-one-node doctrine; Volvo Penta
+  rebuilt (174 models); mystery pile closed. New guard:
+  `test/catalog-integrity.test.js` (no empty buckets/families/countries, prose
+  everywhere).
+- **B.4 Gregorio XIII gateway**: STATO PONTIFICIO → Gregorio XIII → CALENDARIUM
+  GREGORIANUM boots the calendar volume — second gateway instance with zero
+  shared-code changes, proving the abstraction generic. Return path wired
+  (audit finding H2).
+- **Phase B audit** (`docs/AUDIT-PHASE-B.md`): first edition of the end-of-phase
+  ritual — perf baselines, adversarial code+prose reviews, findings triaged.
+
+### C.1/C.1b — audit debts cleared
+- 13 of 14 audit findings resolved (H1 bible logic → adapter `onBoot` hook; H3
+  merge-script splice hazard; H4/M1/M4 gateway boot error paths + history-state
+  return context; M2/L4 sync-script `--delete-excluded`; M3 gateway integrity
+  tests; M6 debug artifacts; M7 shared `isValidNodePosition`).
+- `src/volume-configs.js`: the ONE declared home for volume literals; main.js
+  now volume-agnostic and scanned by the forbidden-literals guard.
+- Gateway speed: parsed-manifest cache + idle prefetch-on-approach + mod_deflate
+  — Moto G calendar gateway 8s → ~instant.
+
+### C.2 — instruments, catalog split, cache hygiene
+- Boot-phase decomposition, feel HUD (`?debug=1`), early themed paint.
+- `split-catalog.mjs`: boots on catalog-lite (151KB), prose grafted post-render.
+- Cache-Control hygiene + `lan-server.py` no-store dev server; staging deploy
+  target. Moto G boot 2215→1164ms.
+
+### C.3 — the gesture ladder (see docs/FEEL.md)
+- Tap / scrub (frozen 1:1) / flick / double-flick. Flick is scrub-anchored
+  (`FLICK_SCRUBS`=4, chain-independent); velocity-gain amplifier retired;
+  "fast" measured over the last 100ms before lift; pointerdown catches a glide.
+- Over-ring swipe fix (pending-tap resolves at finger-lift); gesture autopsy in
+  the feel HUD.
+
+### Perf series (iPhone probe cycle)
+- Field diagnostics probe (`?probe=1`) → telemetry.php drop box.
+- Pre-compressed JSON (`.json.gz` at build): cellular boot payload 1.3MB→180KB.
+- O(visible) `selectNearest`; memoized child-pyramid geometry (64→31ms worst
+  render); pyramid rotation blur dropped (the ~150ms/frame SVG filter) — dim
+  preserved at 0.35.
+
+### C.4 — arrivals and departures
+- **Boot splash "the instrument arrives"**: first-visit line-drawing reveal —
+  ring arc, nodes, magnifier, labels typing in, logo, dissolve to the live
+  wheel. `?splash=1`/`?splash=0`; input blocked through the reveal.
+- **Migration rebuild**: declared grammar (`suffixMerge` per level), one
+  transaction per layer change with a single restore barrier, fixed-vessel
+  magnifier/parent that empty and refill with radial fill discs.
+- **Gateway transit**: hub-centered cinema wipe over a frozen snapshot, soft
+  gradient seam, input swallowed mid-wipe; degrades to hard cut.
+
+### C.5 — the star field and the calendar's lattice
+- **Star field child pyramid**: golden-angle scatter replaces the ray×spiral
+  hunt — deterministic, unique per parent, no starvation; densify/re-scatter
+  fallback; label placement law; fan-line floor; seat cap 28.
+- **Prominence**: editorial tiers (featured 1.45×, notable 1.15×, default
+  0.8×), Favorites wear full names + cartographer's halo; overloaded skies
+  taper to a smudge floor.
+- **Canonical usable areas** (`src/geometry/usable-areas.js`): one fence
+  (top/right/control-deck floor + tapered arc margin), CPUA ⊆ DSUA, `?bounds=1`
+  diagnostic.
+- **Wedge calendar**: day grid on a second hub — seven rays, seven concentric
+  weekday arcs (Sunday outermost), ribbon rotates geared to the ring; months
+  ring is the front door with the current month magnified.
+- **Historical reckoning**: Gregorian from 15 Oct 1582, Julian before — the ten
+  ghost days have no serial; weekday cycle unbroken; Julian leap rule
+  pre-reform. Verified against JDN 0.
+- **Day ring**: tapping a wedge day pours the ±5-year day cousin chain into the
+  ring; today wears dark-red/yellow at every depth (`now` flag, one dresser
+  module — two clone-pop bugs retired).
+
+### The e-reader and the sweep
+- **NEXT gesture**: at a leaf, the detail sector is one large button
+  (`capabilities.detailTapAdvances`: bible + calendar); empty links stepped
+  over; taps accumulate mid-travel; selection commits on arrival.
+- **Continuous verse chain**: 31,345 verses Genesis 1:1 → Apocalypse 22:21 in
+  one ring; chapter text prefetched five verses ahead; ascent follows the
+  reader. Books (67) and chapters (1,215) rings sweep the whole volume with the
+  same 2/4/6 gap ladder.
+- **Bible labels**: chapters ROMAN, verses ARABIC (the numeral system is the
+  disambiguator — no colon needed); numerals sit ON nodes, names BESIDE them;
+  parent button "IOHANNES III".
+- Calendar to 3000 AD (6000-year chain, no year zero, era rule at the BC/AD
+  line); millennia layer removed — years are top-level; months timeline is one
+  86k-link cousin chain.
+
+### Platform, IP, and deployment
+- **GPL-3.0 engine / all-rights-reserved data** split (LICENSE + NOTICE);
+  prior-art V2 defensive publication, Zenodo DOI 10.5281/zenodo.21434298;
+  Wayback snapshot ritual in the deploy script.
+- **mmdm.it unmasked**: DNS A-record cutover executed 2026-07-17 (no more
+  GoDaddy frame; query strings, real SEO, deep links all live). Marine SEO
+  metadata on the landing page.
+- Portrait gate (rotate prompt in landscape); mobile bottom-crop fixed (visual
+  viewport as the one source of truth); translate-prompt suppression
+  (`lang=it`, `translate=no`); Android tap-highlight suppression.
+- sync-to-server.sh: protect rule for wheel-v3/ against the `--delete` sweep;
+  project node pinned.
+
+256 tests green at close.
+
 ## 3.10.2 — Child pyramid: revert to original spacing with an at-least-one-node guarantee
 
 ## 3.10.1 — Child pyramid fit guarantee — every child gets a slot (fixes empty pyramids at childCount 4-5)
