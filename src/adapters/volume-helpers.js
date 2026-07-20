@@ -250,12 +250,19 @@ export function getBibleChapters(manifest, selected, namesMap, bibleMode) {
   if (!bookEntry?.chapters) return [];
   return Object.entries(bookEntry.chapters).map(([chapterKey, chapterVal], idx) => {
     const chapterNum = Number.parseInt(chapterKey, 10);
-    const label = Number.isFinite(chapterNum) ? `Capitulum ${toRomanNumeral(chapterNum)}` : (namesMap?.sections?.[chapterKey] || chapterKey);
+    // CHAPTERS ARE ROMAN, VERSES ARE ARABIC (Howell 2026-07-20) — the
+    // convention Latin scripture has always cited by (Ioh. III, 16). The
+    // numeral system itself says which is which, so neither wears a word
+    // ("Capitulum") nor a colon to explain itself.
+    const label = Number.isFinite(chapterNum) ? toRomanNumeral(chapterNum) : (namesMap?.sections?.[chapterKey] || chapterKey);
     const externalFile = chapterVal?._external_file
       || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`;
     return {
       id: chapterVal?.id || `${bookId}:${chapterKey}`,
-      name: chapterVal?.name || label,
+      // The manifest's own "name" for a chapter is just its number as a
+      // string, so the numeral form we chose has to win it. A chapter
+      // keyed by something other than a number keeps whatever name it has.
+      name: Number.isFinite(chapterNum) ? label : (chapterVal?.name || label),
       order: Number.isFinite(chapterVal?.sort_number) ? chapterVal.sort_number : idx,
       parentId: bookId,
       level: 'chapter',
@@ -741,7 +748,9 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
           const seq = Number.isFinite(verse?.seq) ? verse.seq : (parseInt(verseKey, 10) || 0);
           return {
             id: `${bookKey}_${chapterLabel}_${verseKey}`,
-            name: `${chapterLabel}:${verseKey}`,
+            // The verse number alone: the parent button carries the book
+            // and chapter, live, so the ring need not repeat them.
+            name: String(verseKey),
             order: seq,
             parentId: chapterItem.id,
             level: 'verse',

@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { weaveCousinChain, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, COUSIN_GAP_LINKS } from '../src/adapters/volume-helpers.js';
-import { buildBibleVerseChain } from '../src/navigation/cousin-builder.js';
+import { buildBibleVerseChain, buildBibleChapterChain, buildBibleBookCousinChain } from '../src/navigation/cousin-builder.js';
 import { calculateNodePositions, getViewportInfo, getNodeSpacing, getViewportWindow, getBaseAngleForOrder } from '../src/geometry/focus-ring-geometry.js';
 
 // The cousin-gap grammar (Howell, 2026-07-17): whatever level rides the
@@ -172,7 +172,10 @@ describe('the continuous verse chain', () => {
     // find that same id seated in this chain.
     const v = items[at('IOHA_3_16')];
     assert.ok(v, 'a famous verse is present');
-    assert.equal(v.name, '3:16');
+    // Chapters are Roman, verses Arabic and BARE (Howell 2026-07-20) —
+    // the parent button carries book and chapter, live, so the ring says
+    // only which verse.
+    assert.equal(v.name, '16');
     assert.equal(v.level, 'verse');
     assert.equal(v.meta.verseKey, '16');
     assert.ok(v.meta.externalFile.endsWith('IOHA/003.json'), 'and knows where its words live');
@@ -183,6 +186,63 @@ describe('the continuous verse chain', () => {
     assert.equal(v.meta.bookEntryId, 'EXO');
     assert.equal(v.meta.chapterId, 'EXO:3');
     assert.equal(v.meta.testamentId, 'Vetus_Testamentum');
+  });
+});
+
+describe('the sweep works at every level, not just verses', () => {
+  // Howell 2026-07-20: a double-flick already ran Genesis I,1 to
+  // Apocalypse XXII,21 in the VERSE ring — "the same complete sweep needs
+  // to work with chapters and books". Before this, books stopped at the
+  // end of their testament (and carried no gaps at all despite the
+  // builder's name) and chapters covered a single book.
+  const bibleManifest = JSON.parse(readFileSync(
+    path.resolve(__dirname, '../data/gutenberg/manifest.json'), 'utf-8'));
+  const gapBefore = (items, id) => {
+    const i = items.findIndex(x => x && x.id === id);
+    let run = 0;
+    for (let j = i - 1; j >= 0 && items[j] === null; j -= 1) run += 1;
+    return run;
+  };
+
+  it('the BOOKS ring runs the whole volume, gapping at the testament', () => {
+    const { items } = buildBibleBookCousinChain(bibleManifest, {});
+    const books = items.filter(Boolean);
+    assert.equal(books.length, 67, 'every book rides the ring');
+    assert.equal(books[0].id, 'GENE');
+    assert.equal(books[books.length - 1].id, 'APOC', 'the sweep reaches the end');
+    assert.equal(gapBefore(items, 'EXO'), 0, 'no gap between books of one testament');
+    assert.equal(gapBefore(items, 'MATHE'), 2, 'the testament crossing is a cousin gap');
+  });
+
+  it('the CHAPTERS ring runs the whole volume, book then testament', () => {
+    const { items } = buildBibleChapterChain(bibleManifest, {});
+    const chapters = items.filter(Boolean);
+    assert.equal(chapters.length, 1215);
+    assert.equal(chapters[0].id, 'GENE:1');
+    assert.equal(chapters[chapters.length - 1].id, 'APOC:22');
+    assert.equal(gapBefore(items, 'GENE:2'), 0, 'no gap inside a book');
+    assert.equal(gapBefore(items, 'EXO:1'), 2, 'a book crossing is a cousin gap');
+    assert.equal(gapBefore(items, 'MATHE:1'), 4, 'a testament crossing is a second cousin');
+  });
+
+  it('each level gaps one rank shallower than the level below it', () => {
+    // The grammar the timeline established: the gap rank is how far above
+    // the ring the boundary sits. Verses see chapter/book/testament as
+    // 2/4/6; chapters see book/testament as 2/4; books see testament as 2.
+    const verses = buildBibleVerseChain(bibleManifest, {}).items;
+    const chapters = buildBibleChapterChain(bibleManifest, {}).items;
+    const books = buildBibleBookCousinChain(bibleManifest, {}).items;
+    assert.equal(gapBefore(verses, 'MATHE_1_1'), 6);
+    assert.equal(gapBefore(chapters, 'MATHE:1'), 4);
+    assert.equal(gapBefore(books, 'MATHE'), 2);
+  });
+
+  it('chapters in the ring keep their Roman numerals', () => {
+    const { items } = buildBibleChapterChain(bibleManifest, {});
+    const byId = id => items.find(x => x && x.id === id);
+    assert.equal(byId('GENE:1').name, 'I');
+    assert.equal(byId('APOC:22').name, 'XXII');
+    assert.equal(byId('MATHE:1').meta.testamentId, 'Novum_Testamentum', 'and know where they sit');
   });
 });
 

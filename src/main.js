@@ -835,6 +835,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
     getBibleVerseItems: layoutBindings.getBibleVerseItems,
     getBibleVerseChain: layoutBindings.getBibleVerseChain,
+    getBibleChapterChain: layoutBindings.getBibleChapterChain,
     prefetchBibleVerses: layoutBindings.prefetchBibleVerses,
     getBibleBooksForTestament: layoutBindings.getBibleBooksForTestament,
     getBibleTestaments: layoutBindings.getBibleTestaments,
