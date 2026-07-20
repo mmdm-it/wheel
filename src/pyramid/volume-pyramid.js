@@ -227,9 +227,18 @@ export function buildBiblePyramid({
       // FAVORITES (Howell 2026-07-19): tier-1 prominence stars wear their
       // FULL names in the sky — the editorial "start here" — while everyone
       // else keeps the pyramid abbreviation.
-      return getBibleBooksForTestament(selected?.id).items.filter(Boolean).map(item => (
-        abbrevs?.[item.id] && item.prominence !== 1 ? { ...item, name: abbrevs[item.id] } : item
-      ));
+      //
+      // SIBLINGS ONLY (Howell 2026-07-20): the books chain is now the whole
+      // volume (the sweep — a cousin chain crossing testaments), but the
+      // child pyramid is a preview of the MAGNIFIED testament's OWN books.
+      // Genesis and Matthew are cousins, not siblings: the sky filters to
+      // the selected testament; the ring migration on tap still pours the
+      // full chain.
+      return getBibleBooksForTestament(selected?.id).items
+        .filter(item => Boolean(item) && (!selected?.id || item.testamentId === selected.id))
+        .map(item => (
+          abbrevs?.[item.id] && item.prominence !== 1 ? { ...item, name: abbrevs[item.id] } : item
+        ));
     }
     if (mode === 'book') {
       return getBibleChapters(manifest, selected, namesMap, 'book');
