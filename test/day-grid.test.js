@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import {
-  isLeapYear, daysInMonth, daySerial, dayOfWeek, serialToDate, monthWeeks, computeDayGridLayout
+  isLeapYear, daysInMonth, monthDaySpan, daySerial, dayOfWeek, serialToDate, monthWeeks,
+  dayExists, computeDayGridLayout, GREGORIAN_REFORM, REFORM_SERIAL
 } from '../src/geometry/day-grid.js';
 
 describe('day grid arithmetic', () => {
@@ -11,7 +12,7 @@ describe('day grid arithmetic', () => {
     assert.equal(dayOfWeek(2026, 7, 19), 0);  // Sunday (the day of these rulings)
   });
 
-  it('knows its leap years (proleptic Gregorian; Julian is the C.6 seam)', () => {
+  it('knows its leap years — Gregorian after the reform, Julian before', () => {
     assert.equal(isLeapYear(2000), true);
     assert.equal(isLeapYear(1900), false);
     assert.equal(isLeapYear(2024), true);
@@ -19,6 +20,11 @@ describe('day grid arithmetic', () => {
     assert.equal(daysInMonth(2024, 2), 29);
     assert.equal(daysInMonth(2026, 2), 28);
     assert.equal(daysInMonth(2026, 7), 31);
+    // Before 1582 the century exception did not exist yet.
+    assert.equal(isLeapYear(1500), true, 'Julian: every fourth year, no exception');
+    assert.equal(isLeapYear(1300), true);
+    assert.equal(daysInMonth(1500, 2), 29);
+    assert.equal(isLeapYear(1700), false, 'Gregorian rule owns the first century year it changed');
   });
 
   it('round-trips serials, including across the BC boundary (no year zero)', () => {
@@ -57,6 +63,81 @@ describe('day grid arithmetic', () => {
     assert.ok(ribbon.nodes.length > 31, 'ribbon shows continuous weeks');
     assert.ok(ribbon.nodes.some(n => n.dim), 'neighbor months present but dimmed');
     assert.ok(ribbon.nodes.some(n => !n.dim), 'anchor month full-strength');
+  });
+
+  it('honors Gregory: the ten days of October 1582 never happened', () => {
+    GREGORIAN_REFORM.missingDays.forEach(d => {
+      assert.equal(dayExists(1582, 10, d), false, `5-14 Oct 1582 is a ghost: ${d}`);
+    });
+    assert.equal(dayExists(1582, 10, 4), true, 'the last Julian day was lived');
+    assert.equal(dayExists(1582, 10, 15), true, 'the first Gregorian day was lived');
+    assert.equal(dayExists(1583, 10, 7), true, 'only that one October lost days');
+    // No serial belongs to a ghost, so nothing can ever scroll onto one.
+    const seen = new Set();
+    for (let s = REFORM_SERIAL - 40; s <= REFORM_SERIAL + 40; s += 1) {
+      const d = serialToDate(s);
+      assert.equal(dayExists(d.yearNumber, d.month, d.day), true, `serial ${s} is a real day`);
+      seen.add(`${d.yearNumber}:${d.month}:${d.day}`);
+    }
+    assert.equal(seen.size, 81, 'each serial names its own distinct day');
+  });
+
+  it('closes the seam: 4 October is followed by 15 October, and the week never breaks', () => {
+    assert.equal(daySerial(1582, 10, 4) + 1, daySerial(1582, 10, 15), 'adjacent days');
+    assert.equal(daySerial(1582, 10, 15), REFORM_SERIAL);
+    // Gregory moved the date, never the weekday cycle.
+    assert.equal(dayOfWeek(1582, 10, 4), 4, 'Thursday');
+    assert.equal(dayOfWeek(1582, 10, 15), 5, 'Friday, the very next day');
+  });
+
+  it('measures October 1582 as the 21 days it held, though it still ends on the 31st', () => {
+    assert.equal(daysInMonth(1582, 10), 31, 'the last day still wears the number 31');
+    assert.equal(monthDaySpan(1582, 10), 21, 'but only 21 days were lived');
+    assert.equal(monthDaySpan(1582, 9), 30, 'neighbors untouched');
+    assert.equal(monthDaySpan(2026, 7), 31);
+    assert.equal(monthDaySpan(2024, 2), 29, 'leap Februaries measured whole');
+    assert.equal(monthDaySpan(2026, 12), 31, 'December spans into the new year cleanly');
+    assert.equal(monthDaySpan(-1, 12), 31, 'and across the year with no zero');
+  });
+
+  it('lays October 1582 into the grid as history did — 4 and 15 in adjacent seats', () => {
+    const rows = monthWeeks(1582, 10);
+    assert.deepEqual(rows[0], [null, 1, 2, 3, 4, 15, 16],
+      'the jump lives in the numerals; the week itself is unbroken');
+    assert.deepEqual(rows[1], [17, 18, 19, 20, 21, 22, 23]);
+    const days = rows.flat().filter(v => v !== null);
+    assert.equal(days.length, 21);
+    assert.ok(!days.some(d => d >= 5 && d <= 14), 'no ghost ever reaches the grid');
+  });
+
+  it('agrees with the astronomers at the far end of the timeline', () => {
+    // Julian Day Number 0: 1 January 4713 BC (Julian) is the very same day
+    // as 24 November 4714 BC (proleptic Gregorian) — an anchor computed
+    // entirely outside this engine.
+    assert.equal(daySerial(-4713, 1, 1), -2440588);
+    // Dates before the reform are Julian, as historians write them.
+    assert.deepEqual(serialToDate(daySerial(-753, 4, 21)), { yearNumber: -753, month: 4, day: 21 });
+  });
+
+  it('round-trips every day across the seam and the era boundary', () => {
+    const spans = [
+      [daySerial(1582, 9, 1), daySerial(1582, 11, 30)], // the reform itself
+      [daySerial(-1, 12, 1), daySerial(1, 1, 31)],      // the BC/AD line
+      [daySerial(1700, 2, 1), daySerial(1700, 3, 5)]    // first century year the rule changed
+    ];
+    spans.forEach(([from, to]) => {
+      for (let s = from; s <= to; s += 1) {
+        const d = serialToDate(s);
+        assert.equal(daySerial(d.yearNumber, d.month, d.day), s, `serial ${s}`);
+      }
+    });
+  });
+
+  it('resolves a ghost date to the day the reckoning resumed', () => {
+    // Nothing in the instrument can produce 7 October 1582, but a
+    // hand-typed id might ask for it.
+    assert.equal(daySerial(1582, 10, 7), REFORM_SERIAL);
+    assert.deepEqual(serialToDate(daySerial(1582, 10, 7)), { yearNumber: 1582, month: 10, day: 15 });
   });
 
   it('marks today — and only today — in its own month', () => {

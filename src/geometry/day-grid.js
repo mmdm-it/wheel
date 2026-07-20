@@ -6,8 +6,20 @@
 // window hard-crops to the magnified month's own weeks.
 //
 // Everything here is arithmetic — month lengths, weekdays, leap years —
-// computed, never fetched. Proleptic Gregorian throughout; the Julian
-// rules and October 1582's ten missing days are C.6's seam, marked below.
+// computed, never fetched.
+//
+// THE RECKONING IS HISTORICAL, NOT PROLEPTIC (Howell's 1582 ruling): dates
+// from 15 October 1582 onward are GREGORIAN; everything before 4 October
+// 1582 is JULIAN, the reckoning those days were actually lived under. The
+// ten days between — 5–14 October 1582 — never existed, and this module
+// simply cannot produce them. The seam is not a special case bolted onto
+// the grid: it falls out of the arithmetic, because serials count REAL
+// ELAPSED DAYS and no serial maps to a day nobody lived.
+//
+// Two consequences worth knowing: the WEEKDAY CYCLE IS UNBROKEN across
+// the reform (Thursday 4 Oct is followed by Friday 15 Oct — Gregory moved
+// the date, never the week), and pre-reform leap years follow the Julian
+// rule (every 4th year, no century exception), so 1500 and 1300 are leap.
 //
 // Pure module: geometry in, geometry out; no DOM access.
 
@@ -19,70 +31,162 @@ const DAYS_PER_WEEK = 7;
 // 1 BC (yearNumber -1) is astronomical 0, 2 BC is -1, etc.
 const astro = yearNumber => (yearNumber < 0 ? yearNumber + 1 : yearNumber);
 
+// Gregory XIII's reform: the last Julian day, the first Gregorian day,
+// and the ten ghosts in between.
+export const GREGORIAN_REFORM = {
+  yearNumber: 1582,
+  month: 10,
+  lastJulianDay: 4,
+  firstGregorianDay: 15,
+  missingDays: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+};
+
+// Epoch offsets for the two civil-date algorithms (both put serial 0 at
+// 1970-01-01, a Thursday); the Julian constant differs by the two days
+// the two reckonings had already drifted apart by year 1.
+const GREGORIAN_EPOCH_SHIFT = -719468;
+const JULIAN_EPOCH_SHIFT = -719470;
+
+const gregorianSerial = (yearNumber, month, day) => {
+  const y = astro(yearNumber) - (month <= 2 ? 1 : 0);
+  const era = Math.floor(y / 400);
+  const yoe = y - era * 400;
+  const doy = Math.floor((153 * (month + (month > 2 ? -3 : 9)) + 2) / 5) + day - 1;
+  const doe = yoe * 365 + Math.floor(yoe / 4) - Math.floor(yoe / 100) + doy;
+  return era * 146097 + doe + GREGORIAN_EPOCH_SHIFT;
+};
+
+// The Julian analog: the same March-anchored civil algorithm on a plain
+// 4-year cycle (1461 days), with no century exception to subtract.
+const julianSerial = (yearNumber, month, day) => {
+  const y = astro(yearNumber) - (month <= 2 ? 1 : 0);
+  const doy = Math.floor((153 * (month + (month > 2 ? -3 : 9)) + 2) / 5) + day - 1;
+  return 365 * y + Math.floor(y / 4) + doy + JULIAN_EPOCH_SHIFT;
+};
+
+// The instant the Gregorian reckoning begins: serial of 15 October 1582.
+export const REFORM_SERIAL = gregorianSerial(
+  GREGORIAN_REFORM.yearNumber, GREGORIAN_REFORM.month, GREGORIAN_REFORM.firstGregorianDay
+);
+
+// Which reckoning was this date lived under?
+const isJulianDate = (yearNumber, month, day) => (
+  yearNumber < GREGORIAN_REFORM.yearNumber
+  || (yearNumber === GREGORIAN_REFORM.yearNumber
+    && (month < GREGORIAN_REFORM.month
+      || (month === GREGORIAN_REFORM.month && day <= GREGORIAN_REFORM.lastJulianDay)))
+);
+
+/**
+ * Did this date ever happen? False for exactly the ten days Gregory cut
+ * out of October 1582 (and only those — every other slot in the timeline
+ * is a day someone lived through).
+ */
+export function dayExists(yearNumber, month, day) {
+  return !(yearNumber === GREGORIAN_REFORM.yearNumber
+    && month === GREGORIAN_REFORM.month
+    && day > GREGORIAN_REFORM.lastJulianDay
+    && day < GREGORIAN_REFORM.firstGregorianDay);
+}
+
 export function isLeapYear(yearNumber) {
   const y = astro(yearNumber);
-  // C.6 seam: proleptic GREGORIAN leap rule for all years; before the 1582
-  // reform the historical rule was JULIAN (every 4th year) — revisit with
-  // the days ring.
+  // Julian rule before the reform, Gregorian from 1582 on. (The two rules
+  // agree on every year from 1582 until 1700 — the first century year the
+  // reform actually changed — so the switch year is not observable here.)
+  if (yearNumber < GREGORIAN_REFORM.yearNumber) return y % 4 === 0;
   return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0;
 }
 
 const MONTH_LENGTHS = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
+/**
+ * The number the month's LAST DAY wears (October 1582 still ends on the
+ * 31st). For how many days a month actually contained, see monthDaySpan.
+ */
 export function daysInMonth(yearNumber, month) {
   if (month === 2 && isLeapYear(yearNumber)) return 29;
   return MONTH_LENGTHS[month - 1] ?? 30;
 }
 
-// Serial day number (days since 1970-01-01) via the days-from-civil
-// algorithm — valid across negative years. 0 = 1970-01-01 (a Thursday).
-export function daySerial(yearNumber, month, day) {
-  let y = astro(yearNumber);
-  const m = month;
-  y -= m <= 2 ? 1 : 0;
-  const era = Math.floor(y / 400);
-  const yoe = y - era * 400;
-  const doy = Math.floor((153 * (m + (m > 2 ? -3 : 9)) + 2) / 5) + day - 1;
-  const doe = yoe * 365 + Math.floor(yoe / 4) - Math.floor(yoe / 100) + doy;
-  return era * 146097 + doe - 719468;
+/**
+ * How many days the month REALLY held — 21 for October 1582, where the
+ * last day is still the 31st. This is the honest measure for anything
+ * that paces or scrolls through a month.
+ */
+export function monthDaySpan(yearNumber, month) {
+  const nextMonth = month === 12 ? 1 : month + 1;
+  let nextYear = month === 12 ? yearNumber + 1 : yearNumber;
+  if (month === 12 && nextYear === 0) nextYear = 1; // no year zero
+  return daySerial(nextYear, nextMonth, 1) - daySerial(yearNumber, month, 1);
 }
 
-// 0 = Sunday … 6 = Saturday (Howell: weeks start on Sunday).
+/**
+ * Serial day number: REAL ELAPSED DAYS, 0 = 1970-01-01 (a Thursday).
+ * Julian arithmetic before the reform, Gregorian after, so the count
+ * never includes a day nobody lived. The ten ghost days of October 1582
+ * have no serial of their own; should one be asked for (a hand-typed
+ * URL, say), it resolves to the moment the reckoning resumed.
+ */
+export function daySerial(yearNumber, month, day) {
+  if (!dayExists(yearNumber, month, day)) return REFORM_SERIAL;
+  return isJulianDate(yearNumber, month, day)
+    ? julianSerial(yearNumber, month, day)
+    : gregorianSerial(yearNumber, month, day);
+}
+
+// 0 = Sunday … 6 = Saturday (Howell: weeks start on Sunday). Derived from
+// the serial, so the week runs unbroken straight through the reform.
 export function dayOfWeek(yearNumber, month, day) {
   const s = daySerial(yearNumber, month, day);
   return ((s + 4) % 7 + 7) % 7; // serial 0 = Thursday = 4
 }
 
-// Inverse of daySerial — needed to label ribbon cells during the scroll.
-export function serialToDate(serial) {
-  let z = serial + 719468;
-  const era = Math.floor(z / 146097);
-  const doe = z - era * 146097;
-  const yoe = Math.floor((doe - Math.floor(doe / 1460) + Math.floor(doe / 36524) - Math.floor(doe / 146096)) / 365);
-  let y = yoe + era * 400;
-  const doy = doe - (365 * yoe + Math.floor(yoe / 4) - Math.floor(yoe / 100));
+const civilFromDayOfYear = (yearShifted, doy) => {
   const mp = Math.floor((5 * doy + 2) / 153);
   const day = doy - Math.floor((153 * mp + 2) / 5) + 1;
   const month = mp + (mp < 10 ? 3 : -9);
-  y += month <= 2 ? 1 : 0;
+  const y = yearShifted + (month <= 2 ? 1 : 0);
   // Back to no-year-zero numbering.
-  const yearNumber = y <= 0 ? y - 1 : y;
-  return { yearNumber, month, day };
+  return { yearNumber: y <= 0 ? y - 1 : y, month, day };
+};
+
+// Inverse of daySerial — needed to label ribbon cells during the scroll.
+// Never returns one of the ten ghosts: they have no serial to arrive on.
+export function serialToDate(serial) {
+  if (serial < REFORM_SERIAL) {
+    const z = serial - JULIAN_EPOCH_SHIFT;
+    const quad = Math.floor(z / 1461);
+    const rem = z - quad * 1461;
+    let yearOfQuad = Math.floor(rem / 365);
+    if (yearOfQuad === 4) yearOfQuad = 3; // the leap day closing the cycle
+    return civilFromDayOfYear(quad * 4 + yearOfQuad, rem - yearOfQuad * 365);
+  }
+  const z = serial - GREGORIAN_EPOCH_SHIFT;
+  const era = Math.floor(z / 146097);
+  const doe = z - era * 146097;
+  const yoe = Math.floor((doe - Math.floor(doe / 1460) + Math.floor(doe / 36524) - Math.floor(doe / 146096)) / 365);
+  const doy = doe - (365 * yoe + Math.floor(yoe / 4) - Math.floor(yoe / 100));
+  return civilFromDayOfYear(yoe + era * 400, doy);
 }
 
 /**
  * The settled view: the magnified month's own weeks, hard-cropped —
  * cells outside the month are absent (Howell: no dimmed neighbors).
  * Returns rows of 7 slots; empty slots are null.
+ *
+ * Walks the month by SERIAL rather than counting 1..31, so October 1582
+ * lays itself down as history did — ...3, 4, 15, 16... in adjacent seats,
+ * the week unbroken and the jump living in the numerals.
  */
 export function monthWeeks(yearNumber, month) {
-  const lead = dayOfWeek(yearNumber, month, 1);
-  const count = daysInMonth(yearNumber, month);
+  const first = daySerial(yearNumber, month, 1);
+  const last = first + monthDaySpan(yearNumber, month) - 1;
   const rows = [];
   let row = new Array(DAYS_PER_WEEK).fill(null);
-  let col = lead;
-  for (let d = 1; d <= count; d += 1) {
-    row[col] = d;
+  let col = ((first + 4) % 7 + 7) % 7;
+  for (let serial = first; serial <= last; serial += 1) {
+    row[col] = serialToDate(serial).day;
     col += 1;
     if (col === DAYS_PER_WEEK) {
       rows.push(row);
@@ -260,7 +364,9 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   // The rotating ribbon: week rows sweep about the second hub, geared to
   // the ring via the fractional chain position.
   const monthStart = daySerial(yearNumber, month, 1);
-  const serialFloat = monthStart + fraction * daysInMonth(yearNumber, month);
+  // The ribbon is geared to REAL days, so scrubbing October 1582 travels
+  // the 21 days it held, not 31.
+  const serialFloat = monthStart + fraction * monthDaySpan(yearNumber, month);
   const rowFloat = (serialFloat + 4) / 7; // week rows since the Sunday of serial 0
   const centerRow = Math.floor(rowFloat);
   const subRow = rowFloat - centerRow;
