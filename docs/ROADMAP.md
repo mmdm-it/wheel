@@ -43,7 +43,7 @@ last (F).
   numbering, Latin filled from the Clementine corpus (99.5%; 152
   divergent-recension residuals documented). B.2: the Gutenberg easter
   egg — generic cross-volume **gateway node** capability (shipped as
-  v3.10.0). B.3 MMdM: population complete — 1,032 models / 100
+  v3.10.0). B.3 MMdM: population complete — 1,032 models across 99 real
   manufacturers, full prose, guarded by
   `test/catalog-integrity.test.js`. B.4: the Gregorio XIII gateway to
   the calendar volume — second gateway instance, zero shared-code
@@ -52,7 +52,7 @@ last (F).
   release through C.5). Phone-gated per WORKFLOW.md; the calendar's
   6,000-year ring is the primary physics test rig; constants ledgered
   in `docs/FEEL.md`. As-run sub-phases:
-  - **C.1/C.1b** — Phase B audit debts cleared (13 of 14);
+  - **C.1/C.1b** — Phase B audit debts cleared (12 of 14; L1 deferred to D, L3 to C.7);
     `src/volume-configs.js` as the one home for volume literals;
     gateway speed (cache + idle prefetch).
   - **C.2** — instruments (boot-phase decomposition, feel HUD, field
@@ -68,17 +68,30 @@ last (F).
   - **C.5** — the star field (golden-angle scatter, prominence tiers,
     Favorites halo, seat cap 28); canonical usable areas
     (`src/geometry/usable-areas.js`); the wedge calendar.
-  - **C.6** — the day ring: grid-tap migration (±5-year chain, thumb
+  - **C.6 — "five thousand nodes"** (Howell's post-it): DONE, declared
+    2026-07-20. The day ring: grid-tap migration (±5-year chain, thumb
     doctrine), months-ring front door on the current month, historical
     Julian/Gregorian reckoning (Gregory's ten missing days fall out of
-    the arithmetic), the present-moment mark. Plus early C.7 arrivals:
-    the e-reader (NEXT gesture, continuous verse chain) and the sweep
-    at every level (books/chapters/verses).
-  - **Remaining C scope**: catalog family flattening (ruled 2026-07-19
-    — families leave navigation, become the live parent-button suffix;
-    star field prerequisite now exists); C.7 phase close (FEEL.md
-    final, end-of-phase audit, native-vs-wrapper evidence memo for F);
-    draining the [C] punchlist items.
+    the arithmetic), the present-moment mark; plus the e-reader (NEXT
+    gesture, continuous verse chain) and the sweep at every level. The
+    6,000-year chain, the 86k-link months timeline, and the 31k-verse
+    chain all scrub at speed on the field phones — the O(visible)
+    render path made chain length free. (As-run, this work shipped
+    across the C.5/day-ring/e-reader series, not as one labeled drop.)
+  - **C.7 — phase close** (in progress, opened 2026-07-20): end-of-phase
+    audit ritual (adversarial code + prose reviews, performance
+    baselines), FEEL.md final pass, native-vs-wrapper evidence memo for
+    Phase F, [C] punchlist drained or explicitly carried.
+- **Between D and E — catalog family flattening** (ruled 2026-07-19;
+  DEFERRED out of C by Howell 2026-07-20 to reach dimensions sooner).
+  Families leave the navigation hierarchy; the parent button becomes the
+  live family suffix ("FORD WINDSOR", replacing, never accumulating;
+  orphans bare "FORD"). Safe to defer: the shared engine never knew
+  families existed (adapter-level change), and D's strata mirror
+  whatever chain the adapter hands them. MUST land before E, which
+  styles every surface exactly once and shouldn't style doomed family
+  rings. When built, it needs its own brief on-device feel pass and one
+  new check: the suffix's behavior with a secondary stratum present.
 - **Phase D — Dimensions**: the strata design implemented on C's tuned
   physics — blur + mirrored secondary ring, persist-on-select,
   language/edition portals for the Bible. `DIMENSION_SYSTEM.md` is

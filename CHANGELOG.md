@@ -1,5 +1,40 @@
 # Changelog
 
+## 3.12.1 — Phase C close: the audit sweep
+- **Phase C end-of-phase audit** (docs/AUDIT-PHASE-C.md): two fresh-context
+  adversarial reviews (code + docs) instructed to refute, plus performance
+  baselines and the Phase F native-vs-wrapper evidence memo
+  (docs/WRAPPER_EVIDENCE.md)
+- **H1 (code)**: a child-pyramid tap mid-rotation could pour the WRONG
+  manufacturer's cylinders — the sky live-previews the passing parent while
+  selection commits on arrival. A tapped star not among the committed
+  parent's children is now noise (bible/calendar were immune)
+- **The Esther hot loop**: a chapter that loads EMPTY (Esther ships 15/16
+  verse-less — a data hole, punchlisted) re-fired its prefetch's onLoaded
+  synchronously → refresh → render → re-request, spinning flat-out and
+  near-crashing the Moto G. The cache now distinguishes "never asked" from
+  "loaded-empty"; a terminal-empty chapter renders an empty sky and asks
+  nothing. Test pins all four cache states
+- **Six mediums**: dropped verse-prefetch callback (queued now); text plugin
+  wrapped against sequential rows but seated on strided rows (overflowed the
+  tapered fence — both now use the seat rows); migration stack never cleared
+  across gateway transits (leaked overlays, stale-clone replay — cleared at
+  teardown); detail line table measured window.inner* not the visual
+  viewport (the DDG-bar mismatch); solar.js used the JULIAN leap rule and
+  granted phantom summer time 1893–1915 (both fixed; epoch-centering
+  documented as an honesty bound); the 450ms click-suppressor could swallow
+  a fast parent-button tap (controls exempt now)
+- **Docs audit**: four release tags created (nothing since v3.10.2 was
+  "shipped" by VERSIONING's own definition — the script only echoed the tag
+  command); v4-vs-v5 next-major contradiction resolved to v5; "100
+  manufacturers" corrected to 99 + 2 gateway patrons across three docs and
+  pinned by a new census guard; DETAIL_SECTOR_LOADS schema block trued to
+  the shipped ephemeris file
+- **Hygiene**: dead FLICK_MIN_VELOCITY removed; stale comments corrected;
+  two unledgered usable-areas literals added to FEEL.md; fade-only rotation
+  ruled permanent (Howell)
+- Suite 276 green
+
 ## 3.12.0 — The detail sector learns its loads — ephemeris day card, dossier media slot, the fence obeyed
 - **The loads scoped and ruled** (docs/DETAIL_SECTOR_LOADS.md, before Phases
   D/E per the 2026-07-19 ruling): three content kinds — the Bible FETCHES
@@ -78,7 +113,7 @@
 
 ### Phase B closed
 - **B.3 MMdM population complete** (batches 2–12): 261 empty buckets filled →
-  **1,032 models / 100 manufacturers, full prose on every model**. Mesa baseline
+  **1,032 models across 99 manufacturers (plus two gateway patrons), full prose on every model**. Mesa baseline
   elevated to mandatory dossier step; sui-generis purge (no source/curator
   references in shipped prose); one-displacement-one-node doctrine; Volvo Penta
   rebuilt (174 models); mystery pile closed. New guard:
@@ -92,7 +127,7 @@
   ritual — perf baselines, adversarial code+prose reviews, findings triaged.
 
 ### C.1/C.1b — audit debts cleared
-- 13 of 14 audit findings resolved (H1 bible logic → adapter `onBoot` hook; H3
+- 12 of 14 audit findings resolved (L1 deferred to D, L3 to C.7) (H1 bible logic → adapter `onBoot` hook; H3
   merge-script splice hazard; H4/M1/M4 gateway boot error paths + history-state
   return context; M2/L4 sync-script `--delete-excluded`; M3 gateway integrity
   tests; M6 debug artifacts; M7 shared `isValidNodePosition`).

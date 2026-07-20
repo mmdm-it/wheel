@@ -86,8 +86,11 @@ the specification. Rulings (Howell 2026-07-20):
   planned. The printed legend is the doctrine: "gli orari … si
   riferiscono a Fano (PU)."
 - **Sunrise / sunset: the whole six millennia.** Pure astronomy, computed
-  client-side, no data payload. Moon phase likewise (the four quarters,
-  as printed).
+  client-side at render time (`src/geometry/solar.js`); the app never
+  reads stored sun times. (The extracted file DOES carry the printed
+  alba/tramonto per day — they are the acceptance-test record, riding
+  along at negligible wire cost, not a render source.) Moon quarters
+  come from the print inside the window; computing them is future work.
 - **Tides: stored, bounded, honest.** Source of truth = the 2026 wall
   calendar (12 months, SVGs to be provided; per-day highest-high and
   lowest-low, time + height, as printed), then forward through **2029**.
@@ -106,18 +109,28 @@ the specification. Rulings (Howell 2026-07-20):
   2026-07-17 ("movable feasts computed forward"), and fittingly, Easter
   arithmetic is why the volume's gateway patron is Gregorio XIII.
 
-### What is actually stored (the whole calendar "schema")
+### What is actually stored (as shipped: data/calendar/ephemeris-2026.json)
 
 ```jsonc
-"ephemeris": {
-  "station": { "name": "Fano (PU)", "lat": 43.84, "lon": 13.02,
-               "timezone": "Europe/Rome", "solar_before": 1893 },
-  "tides": { "window": [2026, 2029],
-             "days": { "2026-07-01": { "high": ["00:26", 0.9],
-                                        "low":  ["07:01", 0.0] } } },
-  "feasts": { "fixed": [ /* rules */ ], "movable": "computus" }
+{
+  "station": { "name": "Fano (PU)", "lat": 43.8433, "lon": 13.0172,
+               "timezone": "Europe/Rome" },
+  "source": "MMdM wall calendar 2026 (print edition; data/calendar/sources/)",
+  "days": {
+    "2026-07-01": { "alba": "5:27", "tramonto": "20:55",   // print record
+                     "alta": ["0:26", 0.9], "bassa": ["7:01", 0.0],
+                     "luna": null,           // or nuova/primo/piena/ultima
+                     "festivo": false }      // the print's red numeral
+  }
 }
 ```
+
+Notes vs the original sketch (trued up at the Phase C audit, 2026-07-20):
+the solar/civil seam year lives in CODE (`FANO.zoneSince` in
+`calendar-adapter.js`), not the file; feasts ship as per-day booleans read
+off the print, not as rules — the rules/computus formulation is future
+work for extending past the print window; the tide window is implicit in
+which days exist (one file per extracted year, merged as editions land).
 
 ## Open items
 

@@ -158,6 +158,8 @@ SSd, eye-tuned canon as of C.5:
 | `ARC_MARGIN_BOTTOM_RATIO` | 0.28 | swelling toward the deck (thumb territory, where scrubbing happens); linear between |
 | `LOGO_PAD_LEFT_RATIO` | 0.035 | logo notch padding (drawn artwork spills past getBounds()) |
 | `LOGO_PAD_BOTTOM_RATIO` | 0.01 | logo notch bottom pad |
+| (unnamed) bottom clamp | 0.02 × SSd | floor guard vs viewport bottom, inline in computeCPUA (Phase C audit L2 — name it with the sweep) |
+| (unnamed) peninsula threshold | 0.1 × SSd | strip thinner than this beside the logo is annexed to the edge (same note) |
 
 ## C.5 — the star field (src/geometry/child-pyramid-geometry.js)
 
@@ -225,6 +227,17 @@ through the lens during a fast scroll). Data declares it (`now` flag via
 | `NOW_LABEL_FILL` | #ffd700 | gold — its label |
 | `DIM_OPACITY` | 0.35 | ribbon neighbors: present, but plainly not the month you are reading (also the pyramid's rotation dim — "a little more dimming", 0.5 → 0.35) |
 
+### Pyramid rotation: fade-only — **FROZEN** (Howell 2026-07-20)
+
+During a scrub the child pyramid dims to `DIM_OPACITY` (0.35) via the
+`.is-rotating` class and does NOT blur. The SVG Gaussian blur that once
+layered on top was the whole scroll bottleneck (~150 ms/frame at dpr:3 on
+the iPhone X, re-composited every frame) and was removed in C.2. Howell's
+ruling at C close: **fade-only is permanent — no device-gated blur
+revival.** The unused `#pyramid-rotate-blur` filter def may be deleted at
+the next convenience (its retention was only for the revival that is now
+ruled out).
+
 ## The NEXT gesture (src/index.js advanceLeaf, src/main.js)
 
 At a leaf, in volumes that declare `capabilities.detailTapAdvances` (bible,
@@ -255,7 +268,7 @@ Of interest only to the maker, by construction.
 | `VERSION_FOOTNOTE_GAPS` | 4 | with the chain-end overrun of 3 spacings, the stamp's closest approach is 2 spacings short of the magnifier — it can never seat |
 | `placebo` (item flag) | true | the generic inertness contract: bounds, snap, near-miss redirect, deep links, taps, ARIA all ignore it |
 | stamp label | bare version ("3.11.1") | build-time `--define` from package.json; unbundled runs read 'dev' |
-| `.is-placebo` label font | clamp(10px, 1.15vmin, 19px) | ~72% of a working label — a footnote, not a node |
+| `.is-placebo` label font | clamp(10px, 1.15vmin, 19px), min/max × `--iframe-scale` | ~72% of a working label — a footnote, not a node |
 
 ## Live tuning knobs (console, no rebuild)
 
