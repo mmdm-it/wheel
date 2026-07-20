@@ -1,7 +1,7 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
-import { buildBibleVerseChain } from '../navigation/cousin-builder.js';
+import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
 
@@ -392,6 +392,20 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   }
   const lastBookByTestament = {};
 
+  // The chapter chain is the same on every entry; build it once.
+  let chapterChainItems = null;
+  const chapterChain = initialChapterId => {
+    if (!chapterChainItems) {
+      chapterChainItems = buildBibleChapterChain(manifest, { namesMap }).items;
+    }
+    let selectedIndex = 0;
+    if (initialChapterId) {
+      const idx = chapterChainItems.findIndex(item => item && item.id === initialChapterId);
+      if (idx >= 0) selectedIndex = idx;
+    }
+    return { items: chapterChainItems, selectedIndex };
+  };
+
   // The ~34k-link verse chain is the same on every entry; build it once
   // and only re-locate the verse entered at.
   let verseChainItems = null;
@@ -438,7 +452,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     }
 
     if (bibleMode === 'chapter') {
-      const ctx = bibleChapterContext;
+      // The chapters ring spans the volume, so land on the MAGNIFIED
+      // chapter's own book rather than the one entered at.
+      const ctx = {
+        bookId: selected?.meta?.bookId || bibleChapterContext?.bookId,
+        testamentId: selected?.meta?.testamentId || bibleChapterContext?.testamentId,
+        sectionId: selected?.meta?.sectionId || bibleChapterContext?.sectionId
+      };
       const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
         bookId: ctx?.bookId,
         testamentId: ctx?.testamentId,
@@ -536,13 +556,22 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const localized = namesMap?.books?.[bookId];
       return (localized || book?.book_name || bookId).toUpperCase();
     }
-    // Verse ring: parent is the chapter number (e.g. "Capitulum XVI")
+    // Verse ring: the book AND its chapter, live — "IOHANNES III". The
+    // ring now runs the whole volume (2026-07-20), so a bare chapter is
+    // ambiguous: reading Genesis into Exodus would go L → I with nothing
+    // marking the crossing. No word between them: the Roman numeral is
+    // already the citation form for a chapter, so "CAP" would only
+    // re-state what the numeral says (Howell: "it's redundant").
     if (item.level === 'verse') {
       const chapterId = item.meta?.chapterId || item.parentId || '';
       const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
       if (!chapterKey) return '';
       const n = Number.parseInt(chapterKey, 10);
-      return Number.isFinite(n) ? `CAPITULUM ${toRomanNumeral(n)}` : `CAPITULUM ${chapterKey}`;
+      const chapterLabel = Number.isFinite(n) ? toRomanNumeral(n) : String(chapterKey);
+      const bookId = item.meta?.bookEntryId || item.meta?.bookId || '';
+      const book = bookId ? findBook(manifest, bookId) : null;
+      const bookName = (namesMap?.books?.[bookId] || book?.book_name || bookId || '').toUpperCase();
+      return bookName ? `${bookName} ${chapterLabel}` : chapterLabel;
     }
     // Book ring: parent is the testament name (stored mixed-case on items as
     // parentName; uppercased here because the theme no longer transforms —
@@ -588,6 +617,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     childrenHandler,
     getParentLabel,
     onBoot,
+    // NUMERALS SIT ON THEIR NODES, NAMES SIT BESIDE THEM (Howell
+    // 2026-07-20): chapters and verses centre over the node; book and
+    // testament NAMES keep the offset that reads well for words — the
+    // same instinct the catalog's cylinder counts already follow.
+    shouldCenterLabel: ({ item } = {}) => item?.level === 'chapter' || item?.level === 'verse',
     layoutBindings: {
       getBibleTestaments: () => buildBibleTestaments(manifest, namesMap, { translationName }),
       bibleModeRef: () => bibleMode,
@@ -596,6 +630,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
       getBibleVerseItems,
       getBibleVerseChain: verseId => verseChain(verseId),
+      getBibleChapterChain: chapterId => chapterChain(chapterId),
       prefetchBibleVerses,
       getBibleBooksForTestament: (testamentId) =>
         buildBibleBookCousinChain(manifest, { testamentId, names: namesMap }),

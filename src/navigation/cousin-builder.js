@@ -1,4 +1,4 @@
-import { weaveCousinChain } from '../adapters/volume-helpers.js';
+import { weaveCousinChain, toRomanNumeral } from '../adapters/volume-helpers.js';
 
 const GAP = null;
 
@@ -44,7 +44,7 @@ function buildVerseItems(chapterData, { bookId, translation, chapterId }) {
   const bookKey = chapterData?.book_key || bookId;
   return entries.map(([verseId, verse]) => {
     const seq = Number.isFinite(verse?.seq) ? verse.seq : parseInt(verseId, 10) || 0;
-    const name = `${chapterLabel}:${verseId}`;
+    const name = String(verseId);
     const text = verse?.text?.[translation] || verse?.text?.NAB || '';
     return {
       id: `${bookKey}_${chapterLabel}_${verseId}`,
@@ -99,7 +99,7 @@ export function buildBibleVerseChain(manifest, { initialVerseId = null } = {}) {
               // Ids and names match what a loaded chapter produces, so a
               // verse tapped in the pyramid finds its seat in this chain.
               id: `${bookKey}_${chapterLabel}_${verseKey}`,
-              name: `${chapterLabel}:${verseKey}`,
+              name: String(verseKey), // Arabic, bare — the header holds the rest
               level: 'verse',
               parentId: chapterId,
               chapterKey: `${bookId}:${chapterKey}`,
@@ -179,48 +179,116 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
 
   const activeTestamentId = resolveTestamentId();
   if (!activeTestamentId) return { items: [], selectedIndex: 0, preserveOrder: true };
-  const activeTestament = bible.testaments[activeTestamentId];
-  const sections = Object.entries(activeTestament?.sections || {}).sort(bySortNumber);
   const testamentNames = names?.testaments || {};
   const bookNames = names?.books || names || {};
-  const testamentName = testamentNames[activeTestamentId] || activeTestament?.name || activeTestamentId;
-  const chain = [];
 
-  // Books are displayed flat (no section gaps). Section is retained on each item
-  // as metadata for back-navigation context but is not shown as a UI level.
-  sections.forEach(([sectionKey, section]) => {
-    const books = Object.entries(section?.books || {}).sort(bySortNumber);
-    books.forEach(([, book]) => {
-      const id = book?.book_key || book?.id || book?.name;
-      if (!id) return;
-      chain.push({
-        id,
-        name: bookNames?.[id] || book?.book_name || book?.name || id,
-        sort: Number.isFinite(book?.sort_number) ? book.sort_number : chain.length,
-        order: chain.length,
-        level: 'book',
-        testamentId: activeTestamentId,
-        sectionId: sectionKey,
-        parentName: testamentName,
-        // Editorial prominence tier (1 featured, 2 notable, absent default):
-        // declared in the data, honored by the star field's seating and size.
-        prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
+  // EVERY book in the volume, not just one testament's (Howell 2026-07-20:
+  // "the same complete sweep needs to work with chapters and books"). A
+  // double-flick runs Genesis to Apocalypse at this level too, and the
+  // testament crossing is a COUSIN gap — one rank up from the ring, the
+  // same grammar the timeline uses for a year over its months.
+  //
+  // Books stay FLAT across sections: the section is carried as metadata for
+  // back-navigation but is not a UI level and earns no gap.
+  const sorted = [];
+  Object.entries(bible.testaments || {}).sort(bySortNumber).forEach(([testamentKey, testament]) => {
+    const testamentName = testamentNames[testamentKey] || testament?.name || testamentKey;
+    Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionKey, section]) => {
+      Object.entries(section?.books || {}).sort(bySortNumber).forEach(([, book]) => {
+        const id = book?.book_key || book?.id || book?.name;
+        if (!id) return;
+        sorted.push({
+          id,
+          name: bookNames?.[id] || book?.book_name || book?.name || id,
+          sort: Number.isFinite(book?.sort_number) ? book.sort_number : sorted.length,
+          level: 'book',
+          testamentId: testamentKey,
+          sectionId: sectionKey,
+          parentName: testamentName,
+          // Editorial prominence tier (1 featured, 2 notable, absent default):
+          // declared in the data, honored by the star field's seating and size.
+          prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
+        });
       });
     });
   });
 
+  const chain = weaveCousinChain(sorted, [item => item.testamentId]);
+
   const selectedIndex = (() => {
+    const findId = wanted => chain.findIndex(item => item && item.id === wanted);
     if (initialItemId) {
-      const idx = chain.findIndex(item => item && (item.id === initialItemId || item.book_key === initialItemId));
+      const idx = findId(initialItemId);
       if (idx >= 0) return idx;
     }
     if (bookId) {
-      const idx = chain.findIndex(item => item && item.id === bookId);
+      const idx = findId(bookId);
       if (idx >= 0) return idx;
     }
+    // No book named: open at the first book of the testament asked for.
+    const idx = chain.findIndex(item => item && item.testamentId === activeTestamentId);
+    if (idx >= 0) return idx;
     const firstReal = chain.findIndex(item => item !== GAP);
     return firstReal >= 0 ? firstReal : 0;
   })();
 
   return { items: chain, selectedIndex, preserveOrder: true };
+}
+
+/**
+ * THE CONTINUOUS CHAPTER CHAIN — every chapter in the volume, so the
+ * chapters ring sweeps Genesis I to Apocalypse XXII exactly as the verse
+ * ring does. Gap ladder, one rank per level above the ring: a BOOK
+ * crossing is a cousin gap (2), a TESTAMENT crossing a second cousin (4).
+ *
+ * Item shape matches getBibleChapters(), so descent, ascent and the
+ * chapter prefetch all keep working on ids they already understand.
+ */
+export function buildBibleChapterChain(manifest, { initialChapterId = null, namesMap = null } = {}) {
+  const bible = manifest?.Gutenberg_Bible;
+  if (!bible?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
+
+  const sorted = [];
+  Object.entries(bible.testaments).sort(bySortNumber).forEach(([testamentKey, testament]) => {
+    Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionKey, section]) => {
+      Object.entries(section?.books || {}).sort(bySortNumber).forEach(([bookId, book]) => {
+        Object.entries(book?.chapters || {}).sort(bySortNumber).forEach(([chapterKey, chapterVal]) => {
+          const chapterNum = Number.parseInt(chapterKey, 10);
+          // Chapters are ROMAN (see getBibleChapters — same rule, one source
+          // of truth for the numeral form would be better still).
+          const label = Number.isFinite(chapterNum)
+            ? toRomanNumeral(chapterNum)
+            : (namesMap?.sections?.[chapterKey] || chapterKey);
+          sorted.push({
+            id: chapterVal?.id || `${bookId}:${chapterKey}`,
+            name: label,
+            level: 'chapter',
+            parentId: bookId,
+            bookKey: bookId,
+            testamentKey: testamentKey,
+            meta: {
+              bookId,
+              chapterKey,
+              sectionId: sectionKey,
+              testamentId: testamentKey,
+              externalFile: chapterVal?._external_file
+                || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`
+            }
+          });
+        });
+      });
+    });
+  });
+
+  const items = weaveCousinChain(sorted, [
+    item => item.bookKey,
+    item => item.testamentKey
+  ]);
+
+  let selectedIndex = 0;
+  if (initialChapterId) {
+    const idx = items.findIndex(item => item && item.id === initialChapterId);
+    if (idx >= 0) selectedIndex = idx;
+  }
+  return { items, selectedIndex, preserveOrder: true };
 }

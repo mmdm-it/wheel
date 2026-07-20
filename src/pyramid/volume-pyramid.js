@@ -197,6 +197,7 @@ export function buildCalendarPyramid({
 export function buildBiblePyramid({
   manifest,
   getBibleVerseChain,
+  getBibleChapterChain,
   namesMap,
   getBibleChapters,
   getBibleVerseItems,
@@ -294,7 +295,18 @@ export function buildBiblePyramid({
       if (!book) return;
       const chapters = getBibleChapters(manifest, book, namesMap, 'book');
       if (!chapters.length) return;
-      const selectedIdx = chapters.findIndex(c => c.id === instr.item.id);
+      // The chapters ring is the WHOLE volume, entered at the tapped
+      // chapter (Howell 2026-07-20) — the same complete sweep the verse
+      // ring has. This book's own chapters are the fallback.
+      let ringItems = chapters;
+      let selectedIdx = chapters.findIndex(c => c.id === instr.item.id);
+      if (typeof getBibleChapterChain === 'function') {
+        const chain = getBibleChapterChain(instr.item.id);
+        if (chain?.items?.length) {
+          ringItems = chain.items;
+          selectedIdx = chain.selectedIndex;
+        }
+      }
       if (typeof setBibleMode === 'function') setBibleMode('chapter');
       if (typeof setBibleChapterContext === 'function') {
         setBibleChapterContext({
@@ -305,7 +317,7 @@ export function buildBiblePyramid({
       }
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateIn || app.setPrimaryItems;
-        migrateOrSet(chapters, selectedIdx >= 0 ? selectedIdx : 0, true);
+        migrateOrSet(ringItems, selectedIdx >= 0 ? selectedIdx : 0, true);
       }
       // After the migration starts (see buildCatalogPyramid).
       if (app?.setParentButtons) {
