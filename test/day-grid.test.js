@@ -148,7 +148,7 @@ describe('day grid arithmetic', () => {
     const home = computeDayGridLayout(vp, mag, arc, {
       yearNumber: now.getFullYear(), month: now.getMonth() + 1, rotating: false
     });
-    const marked = home.nodes.filter(n => n.today);
+    const marked = home.nodes.filter(n => n.now);
     assert.equal(marked.length, 1, 'exactly one today cell');
     assert.equal(marked[0].label, String(now.getDate()));
     // A month that is not this one carries no today (headers never do).
@@ -156,6 +156,6 @@ describe('day grid arithmetic', () => {
     const away = computeDayGridLayout(vp, mag, arc, {
       yearNumber: now.getFullYear(), month: elsewhereMonth, rotating: false
     });
-    assert.ok(away.nodes.every(n => !n.today));
+    assert.ok(away.nodes.every(n => !n.now));
   });
 });

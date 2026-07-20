@@ -19,6 +19,8 @@
  * Modelled after wheel-v0/mobile/mobile-animation.js.
  */
 
+import { applyPyramidNodeAppearance, labelRotationDeg } from './node-appearance.js';
+
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const ANIM_DURATION = 600; // ms
 const RING_RADIAL_DURATION = 900; // ms
@@ -212,11 +214,11 @@ export function animateIn(opts) {
     label.setAttribute('text-anchor', 'middle');
     label.setAttribute('dominant-baseline', 'middle');
     label.setAttribute('class', 'child-pyramid-label');
-    const srcRot = (pn.angle * 180) / Math.PI + 180;
+    const srcRot = labelRotationDeg(pn.angle);
     label.setAttribute('transform', `rotate(${srcRot}, ${pn.x}, ${pn.y})`);
-    if (pn.labelFontPx) {
-      label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
-    }
+    // The clone wears the real node's face — font size, dim, today's
+    // colors — so nothing pops on when the live pyramid unhides.
+    applyPyramidNodeAppearance({ circle, label, instr: pn });
     label.textContent = pn.label ?? pn.item?.name ?? '';
     g.appendChild(label);
 
@@ -225,7 +227,7 @@ export function animateIn(opts) {
     // -- Compute translation & rotation delta --
     const translateX = target.x - pn.x;
     const translateY = target.y - pn.y;
-    const dstRot = (target.angle * 180) / Math.PI + 180;
+    const dstRot = labelRotationDeg(target.angle);
     let rotDelta = dstRot - srcRot;
     while (rotDelta > 180) rotDelta -= 360;
     while (rotDelta < -180) rotDelta += 360;
@@ -434,11 +436,16 @@ export function animatePyramidFromHub(opts) {
     label.setAttribute('text-anchor', 'middle');
     label.setAttribute('dominant-baseline', 'middle');
     label.setAttribute('class', 'child-pyramid-label');
-    // Start label at 0° rotation (hub) — will rotate to pyramid angle
-    label.setAttribute('transform', `rotate(0, ${hubX}, ${hubY})`);
-    if (pn.labelFontPx) {
-      label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
-    }
+    // The label carries its final tilt from the hub onward, about its own
+    // origin, so the wedge slides in already settled — the mirror image of
+    // animatePyramidToHub, which has always kept its rotation on the way
+    // out. (It used to start flat "and rotate to the pyramid angle", but
+    // nothing ever rotated it: the tilt simply appeared when the real
+    // pyramid unhid at the end.)
+    label.setAttribute('transform', `rotate(${labelRotationDeg(pn.angle)}, ${hubX}, ${hubY})`);
+    // The clone wears the real node's face — font size, dim, today's
+    // colors — so nothing pops on when the live pyramid unhides.
+    applyPyramidNodeAppearance({ circle, label, instr: pn });
     label.textContent = pn.label ?? pn.item?.name ?? '';
     g.appendChild(label);
 
@@ -531,11 +538,11 @@ export function animatePyramidToHub(opts) {
     label.setAttribute('text-anchor', 'middle');
     label.setAttribute('dominant-baseline', 'middle');
     label.setAttribute('class', 'child-pyramid-label');
-    const srcRot = (pn.angle * 180) / Math.PI + 180;
+    const srcRot = labelRotationDeg(pn.angle);
     label.setAttribute('transform', `rotate(${srcRot}, ${pn.x}, ${pn.y})`);
-    if (pn.labelFontPx) {
-      label.style.fontSize = `${pn.labelFontPx}px`; // match the real label — no pop
-    }
+    // The clone wears the real node's face — font size, dim, today's
+    // colors — so nothing pops on when the live pyramid unhides.
+    applyPyramidNodeAppearance({ circle, label, instr: pn });
     label.textContent = pn.label ?? pn.item?.name ?? '';
     g.appendChild(label);
 

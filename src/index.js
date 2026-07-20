@@ -983,6 +983,10 @@ export function createApp({
                 r: nodeR * (slot.scale ?? 1),
                 labelScale: slot.scale ?? 1,
                 halo: anyProminence && tierOf(child) === 1, // Favorites only
+                // A child that contains the present moment says so itself;
+                // the dresser paints it, and the migration clones inherit
+                // the same face so nothing pops on at settle.
+                now: Boolean(child?.now),
                 // Absolute px, one source of truth (resolution-aware base ×
                 // damped scale) — an SVG 'em' rebases onto the INHERITED
                 // font-size, which shrank every scaled label and popped the
