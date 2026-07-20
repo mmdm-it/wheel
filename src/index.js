@@ -879,11 +879,19 @@ export function createApp({
       // A cousin gap under the magnifier means no node is selected — the
       // pyramid must empty rather than borrow the nearest neighbor's
       // children. The magnified slot is arithmetic: order = rotation/spacing - 1.
+      // The placebo tail is NOT cousin texture (Howell 2026-07-20): holding
+      // the chain past its last real link must keep that link's children dim
+      // in the sky — the same past-the-end hold both chain ends have always
+      // had — so tail slots (gaps or the stamp) fall through to the nearest
+      // REAL node instead of emptying the pyramid.
+      let lastRealIdx = visible.length - 1;
+      while (lastRealIdx >= 0 && (visible[lastRealIdx] === null || visible[lastRealIdx]?.placebo)) lastRealIdx -= 1;
       const nearestSlot = Math.round(rotation / nodeSpacing - 1);
-      if (nearestSlot >= 0 && nearestSlot < visible.length && visible[nearestSlot] === null) return null;
+      if (nearestSlot >= 0 && nearestSlot <= lastRealIdx && visible[nearestSlot] === null) return null;
       let closest = null;
       let closestDist = Infinity;
       for (const node of nodes) {
+        if (node.item?.placebo) continue; // the stamp has no children to show
         const dist = Math.abs(node.angle - magnifier.angle);
         if (dist < closestDist) {
           closestDist = dist;
