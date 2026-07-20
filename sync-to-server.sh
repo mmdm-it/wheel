@@ -90,6 +90,7 @@ sync_deployment() {
         --exclude='*.swp' \
         --exclude='*.log' \
         --exclude='docs/' \
+        --exclude='data/calendar/sources/' \
         --exclude='sync-to-server.sh' \
         --exclude='bump-version.sh' \
         --exclude='CHANGELOG.md' \
