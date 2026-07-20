@@ -1,6 +1,8 @@
 // Pure helper to convert pyramid placements into renderable instructions.
 // Keeps view consumption data-agnostic: placements -> drawable circles/labels.
 
+import { applyPyramidNodeAppearance, labelRotationDeg } from '../node-appearance.js';
+
 export function buildPyramidInstructions(placements = [], options = {}) {
   if (!Array.isArray(placements)) {
     throw new Error('buildPyramidInstructions: placements must be an array');
@@ -131,10 +133,6 @@ export class PyramidView {
         circle.setAttribute('tabindex', '0');
         circle.setAttribute('data-index', idx);
         if (instr.label) circle.setAttribute('aria-label', instr.label);
-        if (instr.dim) circle.setAttribute('opacity', '0.35'); // ribbon neighbors
-        // TODAY (the day grid): dark-red seat, so the reader always knows
-        // where they stand in the lattice.
-        if (instr.today) circle.style.fill = '#7a1010';
         if (this._onNodeClick) {
           circle.style.cursor = 'pointer';
         }
@@ -150,17 +148,15 @@ export class PyramidView {
         label.setAttribute('text-anchor', 'middle');
         label.setAttribute('dominant-baseline', 'middle');
         // Rotate label along the fan-line angle, matching focus ring node label style
-        const rotation = (instr.angle * 180) / Math.PI + 180;
+        const rotation = labelRotationDeg(instr.angle);
         label.setAttribute('transform', `rotate(${rotation}, ${instr.x}, ${instr.y})`);
         // Every pyramid label wears its computed ABSOLUTE px (resolution-
         // aware base × damped star scale) — CSS clamp is only the fallback
         // for callers that don't compute one. At the taper floor the label
         // is an honest smudge.
-        if (instr.labelFontPx) {
-          label.style.fontSize = `${instr.labelFontPx}px`;
-        }
-        if (instr.dim) label.setAttribute('opacity', '0.35'); // ribbon neighbors
-        if (instr.today) label.style.fill = '#ffd700'; // yellow over the dark-red seat
+        // Dim, today's colors, and the absolute label px all come from the
+        // shared dresser, so the migration clones wear exactly the same face.
+        applyPyramidNodeAppearance({ circle, label, instr });
         label.textContent = instr.label || '';
         // Favorites carve a readable channel through the fan lines: a halo
         // twin UNDER the node circles (fan lines < halo < circle < text).

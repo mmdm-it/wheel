@@ -211,12 +211,19 @@ export function getCalendarMonths(manifest, selected, calendarMode) {
   // manifest ever carries them, take precedence.
   const months = yearEntry.months || manifest?.Calendar?.month_template;
   if (!months) return [];
+  // The month we are living through wears the present moment's colors in
+  // the pyramid, exactly as today does in the day grid — but only inside
+  // its own year (Howell 2026-07-20).
+  const present = presentMoment();
+  const isThisYear = yearEntry.year_number === present.yearNumber;
+  const currentMonthNumber = present.monthNumber;
   return Object.entries(months).map(([monthKey, monthVal], idx) => ({
     id: `${yearId}:${monthVal?.id || monthKey}`,
     name: monthVal?.name || monthKey,
     order: Number.isFinite(monthVal?.month_number) ? monthVal.month_number : idx,
     parentId: yearId,
-    level: 'month'
+    level: 'month',
+    now: isThisYear && monthVal?.month_number === currentMonthNumber
   })).sort((a, b) => {
     if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
     return a.order - b.order;
@@ -392,6 +399,20 @@ export const COUSIN_GAP_LINKS = [2, 4, 6, 8];
 // Grouping keys. Historical numbering: no year zero, so centuries run
 // 1..100, 101..200 (and -100..-1); the era crossing -1 -> 1 is itself a
 // millennium boundary and gets that rank's gap.
+// THE PRESENT MOMENT (Howell 2026-07-20): the year, the month and the day
+// we are living through carry a mark wherever they ride the focus ring, so
+// the reader can always find where they are standing at any depth. Only
+// ring NODES wear it — the magnifier stays its ordinary self, which is the
+// view's business, not the data's.
+const presentMoment = () => {
+  const wallClock = new Date();
+  return {
+    yearNumber: wallClock.getFullYear(),
+    monthNumber: wallClock.getMonth() + 1,
+    dayNumber: wallClock.getDate()
+  };
+};
+
 const centuryKey = y => (y > 0 ? Math.ceil(y / 100) : -Math.ceil(-y / 100));
 const millenniumKey = y => (y > 0 ? Math.ceil(y / 1000) : -Math.ceil(-y / 1000));
 
@@ -430,6 +451,7 @@ function selectIndexIn(items, initialItemId) {
 export function buildCalendarYears(manifest, { arrangement, initialItemId } = {}) {
   const years = manifest?.Calendar?.years;
   if (!years) return { items: [], selectedIndex: 0, preserveOrder: false };
+  const present = presentMoment();
   const sorted = [];
   Object.entries(years).forEach(([yearId, year]) => {
     sorted.push({
@@ -438,7 +460,8 @@ export function buildCalendarYears(manifest, { arrangement, initialItemId } = {}
       sort: year?.sort_number || year?.year_number || sorted.length + 1,
       yearNumber: year.year_number,
       parentId: null,
-      level: 'year'
+      level: 'year',
+      now: year.year_number === present.yearNumber
     });
   });
 
@@ -479,6 +502,7 @@ export function buildCalendarMonthsCousinChain(manifest, { initialItemId } = {})
     .filter(y => Number.isFinite(y?.year_number))
     .sort((a, b) => (a.sort_number || 0) - (b.sort_number || 0));
 
+  const present = presentMoment();
   const sorted = [];
   sortedYears.forEach(year => {
     const months = year.months
@@ -491,7 +515,9 @@ export function buildCalendarMonthsCousinChain(manifest, { initialItemId } = {})
         parentId: year.id,
         yearNumber: year.year_number,
         monthNumber: monthVal?.month_number || 0,
-        level: 'month'
+        level: 'month',
+        now: year.year_number === present.yearNumber
+          && (monthVal?.month_number || 0) === present.monthNumber
       });
     });
   });
@@ -535,6 +561,7 @@ export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
   const first = Math.max(center - HALF_SPAN_DAYS, daySerial(-3000, 1, 1));
   const last = Math.min(center + HALF_SPAN_DAYS, daySerial(3000, 12, 31));
 
+  const present = presentMoment();
   const sorted = [];
   for (let serial = first; serial <= last; serial += 1) {
     const date = serialToDate(serial);
@@ -545,7 +572,10 @@ export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
       monthNumber: date.month,
       yearNumber: date.yearNumber,
       monthName: monthNameByNumber[date.month] || '',
-      level: 'day'
+      level: 'day',
+      now: date.yearNumber === present.yearNumber
+        && date.month === present.monthNumber
+        && date.day === present.dayNumber
     });
   }
 

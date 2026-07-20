@@ -310,8 +310,8 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   const labelFontPx = Math.max(11, Math.min(20, nodeR * 1.05));
 
   const nodes = [];
-  // TODAY wears its own colors in the lattice (Howell 2026-07-19): the
-  // one cell the reader is standing on.
+  // TODAY wears the present moment's colors in the lattice (Howell
+  // 2026-07-19): the one cell the reader is standing on.
   const now = new Date();
   const todayY = now.getFullYear();
   const todayM = now.getMonth() + 1;
@@ -340,7 +340,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
       labelScale: 1,
       labelFontPx,
       dim: Boolean(dim),
-      today: isToday
+      now: isToday
     });
   };
 

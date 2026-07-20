@@ -1,4 +1,5 @@
 import { PyramidView } from './detail/pyramid-view.js';
+import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
 
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
 const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
@@ -204,6 +205,14 @@ export class FocusRingView {
       const effectiveRadius = nodeRadius * magScale;
 
       el.setAttribute('r', effectiveRadius);
+      // THE PRESENT MOMENT (Howell 2026-07-20): the year, month or day we
+      // are living through wears its colors as a RING NODE only — never in
+      // the magnifier, which stays its ordinary self whatever is settled
+      // in it. Nothing to suppress at rest: the vessel is opaque when
+      // settled and covers the node beneath, and goes hollow during a
+      // scrub precisely so the ring can be read streaming through it.
+      // Always assigned, never merely set: these elements are recycled.
+      el.style.fill = node.item?.now ? NOW_NODE_FILL : '';
       el.dataset.index = node.index;
       const ariaLabel = node.label ?? node.item?.name ?? node.item?.id ?? '';
       if (ariaLabel) el.setAttribute('aria-label', ariaLabel);
@@ -240,6 +249,7 @@ export class FocusRingView {
         label.setAttribute('dominant-baseline', 'middle');
         label.setAttribute('transform', `rotate(${rotDeg}, ${lx}, ${ly})`);
       }
+      label.style.fill = node.item?.now ? NOW_LABEL_FILL : '';
       const masked = this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
       const isSelected = selectedId && (node.item.id === selectedId);
       const showNodeLabel = isRotating || (!masked && !isSelected);
