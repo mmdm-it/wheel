@@ -50,6 +50,31 @@ export class CardDetailPlugin extends BaseDetailPlugin {
         });
       }
 
+      // ── Media slot: an inline video under the title ─────────────
+      // (docs/DETAIL_SECTOR_LOADS.md). preload=metadata + range requests
+      // mean nothing streams until play is tapped; card volumes never
+      // claim the NEXT tap, so the controls collide with nothing.
+      if (item?.video && lineIdx < lineTable.length) {
+        lineIdx += SECTION_GAP;
+        const seat = lineTable[Math.min(lineIdx, lineTable.length - 1)];
+        const vw = Math.min(seat.availableWidth, (bounds.width || seat.availableWidth) * 0.62);
+        const vh = vw * 0.75; // 4:3 estimate until metadata arrives — err tall, never overlap
+        const video = create('video');
+        video.className = 'detail-card-video';
+        video.setAttribute('controls', '');
+        video.setAttribute('preload', 'metadata');
+        video.setAttribute('playsinline', '');
+        video.src = item.video;
+        if (video.style) {
+          video.style.position = 'absolute';
+          video.style.top = `${seat.y}px`;
+          video.style.left = `${seat.leftX}px`;
+          video.style.width = `${vw}px`;
+        }
+        container.appendChild(video);
+        while (lineIdx < lineTable.length && lineTable[lineIdx].y < seat.y + vh + 16) lineIdx += 1;
+      }
+
       // ── Description: bulk middle section ────────────────────────
       const descText = item?.description ?? '';
       const bodyText = item?.body ?? item?.text ?? '';
@@ -93,6 +118,16 @@ export class CardDetailPlugin extends BaseDetailPlugin {
       img.alt = item?.title ?? item?.name ?? '';
       img.src = item.image;
       card.appendChild(img);
+    }
+
+    if (item?.video) {
+      const video = create('video');
+      video.className = 'detail-card-video';
+      video.setAttribute('controls', '');
+      video.setAttribute('preload', 'metadata');
+      video.setAttribute('playsinline', '');
+      video.src = item.video;
+      card.appendChild(video);
     }
 
     const title = create('div');

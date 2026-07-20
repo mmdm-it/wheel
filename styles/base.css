@@ -396,6 +396,37 @@ svg :focus-visible {
   font-style: italic;
 }
 
+/* ── The ephemeris day card (the wall calendar's day cell) ──────────── */
+/* The weekday wears the parent button's font (Howell 2026-07-20) — same
+   clamp as .focus-ring-magnifier-label. */
+.detail-ephemeris-title {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
+}
+
+/* Feast days wear the print's red numeral color on the weekday. */
+.detail-ephemeris-title--festivo {
+  color: #d10000;
+}
+
+/* The numbers: twice the old tier-6 (Howell 2026-07-20). */
+.detail-ephemeris-row {
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.5px;
+  font-variant-numeric: tabular-nums;
+  font-size: calc(6.0 / 100 * var(--detail-SSd, 650px));
+  line-height: 1.4;
+}
+
+/* The dossier's inline media (the Twin 6 HP film, and photos to come) */
+.detail-card-video {
+  display: block;
+  background: #000;
+  border-radius: 2px;
+  max-width: 100%;
+}
+
 /* ── Fallback card (no line table) ──────────────────────────────────── */
 .detail-card {
   position: absolute;

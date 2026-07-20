@@ -8,6 +8,7 @@ import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js'
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
+import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
@@ -206,6 +207,7 @@ function applyTheme(manifest, volume) {
 const detailRegistry = new DetailPluginRegistry();
 detailRegistry.register(new TextDetailPlugin());
 detailRegistry.register(new CardDetailPlugin());
+detailRegistry.register(new EphemerisDetailPlugin());
 const detailPanel = document.getElementById('detail-panel');
 const detailContent = document.getElementById('detail-content');
 
