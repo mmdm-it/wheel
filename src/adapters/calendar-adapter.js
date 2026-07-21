@@ -384,10 +384,16 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
   // Boot lands on the year ring — the top. Through a gateway, the parent
   // button names the return destination; standalone there is nothing above,
   // so no button.
-  const onBoot = ({ app }) => {
+  const onBoot = ({ app, renderDetail }) => {
     // Warm the ephemeris table (tides/moon/feasts from the wall calendar)
-    // so the day card has it long before any leaf settles.
-    loadEphemeris();
+    // so the day card has it long before any leaf settles. If a slow fetch
+    // loses that race, repaint the settled day when the table lands —
+    // otherwise a sun-only card sits stale until the user scrubs
+    // (Phase C audit L1).
+    loadEphemeris()?.then(() => {
+      const settled = app?.nav?.getCurrent?.();
+      if (settled?.level === 'day' && typeof renderDetail === 'function') renderDetail(settled);
+    });
     // Months mode always has an OUT (up to the years ring); the years ring
     // only when a gateway waits behind it.
     if (app?.setParentButtons) {
