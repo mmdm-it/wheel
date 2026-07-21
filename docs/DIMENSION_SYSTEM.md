@@ -104,7 +104,9 @@ collapses what looked like two selectors into one stratum:
 - **Orbit the secondary ring → pick a LANGUAGE** (Latin, Greek, Hebrew,
   English…).
 - **Dive its CHILD PYRAMID → pick a TRANSLATION within that language**
-  (Clementine vs Neovulgate Latin; NAB vs Douay-Rheims English).
+  (NAB vs Douay-Rheims English — today's registry has one translation for
+  most languages; English is the first with two. D.2 corrected an earlier
+  draft here: `NEO` is the French Crampon, not a Neovulgate).
 
 No third stratum is needed: language→translation is a parent→child tree,
 exactly the shape ring→pyramid expresses. A translation belongs to exactly

@@ -332,14 +332,12 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
     const externalFile = selected.meta?.externalFile;
     const verseKey = selected.meta?.verseKey;
     if (externalFile && verseKey) {
-      // Use the active translation (passed in), then fall back to the URL query
-      // string, then to the remaining pool.  Never default to Latin (VUL) over
-      // English (NAB) — language only changes when the user explicitly selects one.
-      const searchParams = typeof window !== 'undefined'
-        ? new URLSearchParams(window.location.search)
-        : null;
-      const urlTranslation = searchParams?.get('translation') || null;
-      const activeTranslation = urlTranslation || translation || null;
+      // The translation comes from the dimension state, passed in — the ONE
+      // source of truth (D.2). The old URL-param fallback is gone: Phase A
+      // retired ?translation= reading, but a vestige survived here and let a
+      // stale bookmark override the dimension store (found when the first
+      // live swap demo stayed Latin, 2026-07-21).
+      const activeTranslation = translation || null;
       const others = ['NAB', 'VUL', 'BYZ', 'SYN'].filter(t => t !== activeTranslation);
       const preferred = activeTranslation ? [activeTranslation, ...others] : others;
       const text = getVerseTextFromCache(externalFile, verseKey, preferred);

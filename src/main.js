@@ -6,6 +6,8 @@ import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
+import { createInteractionStore } from './core/interaction-store.js';
+import { createDimensionBridge } from './core/dimension-bridge.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
@@ -38,6 +40,23 @@ function pinCanvas(vp) {
 }
 let viewport = measureViewport();
 pinCanvas(viewport);
+
+// D.2 — the dimension state lives at the HOST level, above bootVolume, so a
+// choice survives volume reboots and gateway round trips (Howell ruling
+// 2026-07-20, docs/DIMENSION_SYSTEM.md). The store and bridge are created
+// once; each boot refreshes the bridge's registry and its render hook.
+// Headless: no chooser stratum exists yet — the console knob below is the
+// D.2 instrument (like ?debug=1 was C.2's).
+const dimensionStore = createInteractionStore();
+const dimensionBridge = createDimensionBridge({ store: dimensionStore });
+if (typeof window !== 'undefined') {
+  window.__wheelDimension = {
+    get: () => dimensionBridge.getSelection(),
+    // Accepts a translation key ('NAB') or a language id ('english').
+    set: id => dimensionBridge.setTranslation(id) || dimensionBridge.setLanguage(id),
+    languages: () => dimensionBridge.languagesAvailable()
+  };
+}
 const tapDebugEnabled = new URLSearchParams(window.location.search).get('tapdebug') === '1';
 
 if (tapDebugEnabled && typeof window !== 'undefined') {
@@ -739,7 +758,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
-  const translationId = options.translation || null;
+  dimensionBridge.setTranslationsMeta(translationsMeta);
+  // The sticky dimension choice (survives reboots/gateways) wins over the
+  // volume's pinned default; boot-time derivations (namesMap, labels) still
+  // use the boot value — swapping those live is D.6's work, not D.2's.
+  const activeTranslation = () => dimensionStore.getState().edition || options.translation || null;
+  const translationId = activeTranslation();
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
   const resolvedLocale = options.locale || translationLang || 'english';
   const localeNames = translationsMeta?.names?.[translationLang] || {};
@@ -930,8 +954,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       wipeSnapshot.remove();
     }
   }
-  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId });
-  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId }));
+  // Detail renders resolve the translation LIVE (the sticky choice can
+  // change between renders); the settle hook below regenerates the open
+  // panel the moment a new choice commits.
+  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
+  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() }));
+  dimensionBridge.onSettle(translation => {
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
+  });
   // Generic post-boot hook: adapters may schedule volume-specific startup
   // work (e.g. a featured-item prefetch) without the host
   // carrying volume literals (Phase B audit, H1).
@@ -940,7 +970,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       app,
       items,
       selectedIndex,
-      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: translationId })
+      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
     });
   }
   if (!interactionsWired) {

@@ -130,7 +130,13 @@ last (F).
     yet; but VUL vs MT numbering means it already proves the content-anchor
     map. Prerequisite: verify English chapter-text completeness. Then the
     translation pyramid, more languages, persist-across-gateway, full
-    choreography. Plus deployment scoping: single-stratum public demo (the
+    choreography. **D.6's headline is the LIVE LABEL SWAP** (found at D.2's
+    close): the reading text already swaps live because its render takes the
+    translation as a live argument, but book/testament names, ring labels,
+    and the parent button are baked from a `namesMap` fixed at BOOT — they
+    only re-derive on a reboot (a gateway return catches them up). Live
+    labels = re-derive `namesMap` and re-render the ring in place without a
+    reboot — the same in-place re-render D.5's living preview needs. Plus deployment scoping: single-stratum public demo (the
     Gutenberg egg) vs full dimensions gated to the apps and
     bibliacatholica.org.
   - **D.7 — Phase close**: audit ritual, FEEL.md dimension constants, the

@@ -50,6 +50,18 @@ describe('interaction-store', () => {
     assert.equal(store.getState().hoverId, null);
   });
 
+  it('dimension choices SURVIVE volume changes (the gateway ruling)', () => {
+    // Howell 2026-07-20 (docs/DIMENSION_SYSTEM.md): pick Greek, leave
+    // through the gateway, come back — still Greek. The portal-era reducer
+    // cleared language/edition on SET_VOLUME; that clearing is retired.
+    const store = createInteractionStore();
+    store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: 'greek', defaultEdition: 'LXX' });
+    store.dispatch({ type: interactionEvents.SET_VOLUME, volume: 'elsewhere' });
+    store.dispatch({ type: interactionEvents.SET_VOLUME, volume: 'back' });
+    assert.equal(store.getState().language, 'greek');
+    assert.equal(store.getState().edition, 'LXX');
+  });
+
   it('queues rotation while animating and applies on animation end', () => {
     const store = createInteractionStore();
     store.dispatch({ type: interactionEvents.ANIMATION_START, animation: 'transitioning' });

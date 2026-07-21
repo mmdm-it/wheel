@@ -33,7 +33,12 @@ const reducer = (state, action) => {
     case 'SET_DIMENSION':
       return { ...state, volume: action.dimension ?? action.volume ?? null, hoverId: null };
     case interactionEvents.SET_VOLUME:
-      return { ...state, volume: action.volume ?? null, hoverId: null, language: null, edition: null, dimensions: null };
+      // Dimension choices SURVIVE volume changes and gateway round trips
+      // (Howell ruling 2026-07-20, docs/DIMENSION_SYSTEM.md): pick Greek,
+      // leave through the gateway, come back — still Greek. The portal-era
+      // reducer cleared language/edition/dimensions here; that clearing is
+      // retired with the portals.
+      return { ...state, volume: action.volume ?? null, hoverId: null };
     case interactionEvents.SET_DIMENSIONS:
       return { ...state, dimensions: action.dimensions ?? null };
     case interactionEvents.SET_LANGUAGE: {
