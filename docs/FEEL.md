@@ -11,9 +11,15 @@ again. Constants marked **FROZEN** are under Howell's standing order
   wrapping an off-screen sprocket. Chains never loop; both ends are real
   places; overshoot + springback is the feel of the last link going taut.
 - **One tempo.** All costume changes and travel animations share 600 ms.
-- **Motion semantics.** Rotation = browsing. Constant-radius arrival =
-  changing volume (lateral). Z-travel (radius change) = changing dimension —
-  reserved exclusively for Phase D strata.
+- **Motion semantics — three axes.** Two live on the focus-ring plane:
+  **orbital** (rotate = browse siblings) and **radial** (in/out = the
+  hierarchy, child pyramid in / parent out). The third is **z — the dolly
+  through the door**: changing dimension/stratum. Clicking the dimension
+  button backs you through a doorway — the primary stratum recedes ahead
+  (smaller, distant, soft-focus but still legible and LIVE), the secondary
+  stratum arrives from behind. Reserved exclusively for Phase D strata; the
+  canon is `docs/DIMENSION_SYSTEM.md`. (Volume change stays the lateral,
+  constant-radius arrival — distinct from z.)
 - **Chain-relative gestures.** The tier ladder (below) addresses chains in
   fractions, not nodes: every chain is the same size in gesture-space.
 

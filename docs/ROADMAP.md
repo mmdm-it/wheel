@@ -92,12 +92,49 @@ last (F).
   styles every surface exactly once and shouldn't style doomed family
   rings. When built, it needs its own brief on-device feel pass and one
   new check: the suffix's behavior with a secondary stratum present.
-- **Phase D — Dimensions**: the strata design implemented on C's tuned
-  physics — blur + mirrored secondary ring, persist-on-select,
-  language/edition portals for the Bible. `DIMENSION_SYSTEM.md` is
-  rewritten to match the strata ruling before work starts. The
-  secondary ring inherits the rotation choreographer and migration
-  machinery as tuned in C.
+- **Phase D — Dimensions**: the strata design (blur + mirrored secondary
+  ring, z-travel = dimension change) implemented on C's tuned physics.
+  D inherits the choreographer, migration machinery, and gesture ladder
+  from C, so the risk is NOT motion mechanics; it is (a) getting the
+  dimension MODEL right on paper, and (b) the strata blur — the returning
+  C.2 perf villain at whole-ring scale, and the native-vs-wrapper decider
+  the evidence memo waits on. Subphase outline blessed by Howell
+  2026-07-20; deliberately uncompressed (subphases grow, not shrink).
+  - **D.1 — Doctrine + schema (paper first)**: rewrite
+    `DIMENSION_SYSTEM.md` to the strata canon before any code moves —
+    what a dimension IS, the data schema (axes + parallel values), motion
+    semantics (z-travel), persist-on-select. Audit the dormant
+    `src/core/` store/bridge state: revive vs rebuild. No visible feature;
+    this is where the rulings land.
+  - **D.2 — The dimension model, headless**: wire dimension state into
+    the live store (current dimension, select, persist-on-select) WITHOUT
+    strata visuals. Prove it by swapping the Bible's translation in-app
+    via state (the pre-3.9 portals did this by page redirect). Dimension
+    instrumentation, as C.2 gave the feel HUD.
+  - **D.3 — The secondary ring, static**: the mirrored secondary ring
+    appears — geometry, radius placement, mirroring — sharp and unblurred
+    first, as scaffolding, before fighting the compositor.
+  - **D.4 — Z-travel: gesture + choreography**: the reserved
+    radius-change motion made real — a gesture ruling (the C.3-of-D) and
+    the strata-change animation, inheriting the choreographer and
+    migration machinery. Phone-gated feel.
+  - **D.5 — The blur, and paying for it**: add the strata blur canon
+    requires and reckon with the perf. The SVG-blur villain of C.2 at
+    whole-ring scale on the iPhone X floor; likely a non-SVG-blur
+    technique. The hardest subphase and very likely the native-vs-wrapper
+    decider (see `docs/WRAPPER_EVIDENCE.md`). Isolated on purpose.
+  - **D.6 — The Bible, dimensioned, end to end**: the first real
+    dimensioned volume on the tuned physics. First cut (ruled 2026-07-20):
+    **two languages — Latin + English — one translation each**, so it is
+    just z-travel + mirrored ring + live preview, no translation pyramid
+    yet; but VUL vs MT numbering means it already proves the content-anchor
+    map. Prerequisite: verify English chapter-text completeness. Then the
+    translation pyramid, more languages, persist-across-gateway, full
+    choreography. Plus deployment scoping: single-stratum public demo (the
+    Gutenberg egg) vs full dimensions gated to the apps and
+    bibliacatholica.org.
+  - **D.7 — Phase close**: audit ritual, FEEL.md dimension constants, the
+    wrapper-evidence memo's decisive final entry, punchlist drain.
 - **Phase E — Presentation**: typography (sizes, families), label
   alignment, spacing, per-volume theming polish, detail-sector layout
   refinement — across every surface, primary and strata, exactly once.
