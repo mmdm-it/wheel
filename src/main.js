@@ -1086,7 +1086,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     pyramidLayoutSpec: pyramidLayout,
     pyramidNormalized: adapterNormalized || normalized,
     pyramidAdapter: adapter,
-    detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances)
+    detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances),
+    // Leaf-advance paints the text ahead of the ring's arrival — same
+    // renderer the settle hook uses, resolving the translation live.
+    onDetailPreview: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
   });
   currentApp = app;
   // Expose app to window for console API

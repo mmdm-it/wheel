@@ -89,7 +89,12 @@ export function createApp({
   pyramidNormalized = null,
   // The detail sector doubles as a NEXT button at the leaf, where a volume
   // asks for it (Howell 2026-07-20 — the e-reader gesture).
-  detailTapAdvances = false
+  detailTapAdvances = false,
+  // Paint the detail sector for a specific item NOW, ahead of the ring's
+  // arrival — the reader is looking at the text, not the ring (Howell
+  // 2026-07-21). Used by the leaf-advance tap so the words don't wait out
+  // the catch-up rotation.
+  onDetailPreview = null
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const debug = Boolean(contextOptions.debug);
@@ -1237,6 +1242,12 @@ export function createApp({
     // volume combines a placebo tail with detailTapAdvances).
     while (next < items.length && (!items[next] || items[next].placebo)) next += 1;
     if (next >= items.length) return false;
+    // The text leads, the ring follows. Paint the destination leaf's detail
+    // NOW, then let the catch-up rotation run — the selection still commits on
+    // arrival (rotateToIndex is untouched), which re-paints the same text.
+    // Scoped to this single-step reading advance; a distant click still waits
+    // for the lens, per the arrival-commit rule above (Howell 2026-07-21).
+    if (typeof onDetailPreview === 'function') onDetailPreview(items[next]);
     return rotateToIndex(next);
   };
 

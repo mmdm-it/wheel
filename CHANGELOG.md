@@ -1,5 +1,30 @@
 # Changelog
 
+## 3.13.1 — Verse type, and the reading tap
+- **Verse text is one calm size, filling the sector.** The old auto-fit
+  ballooned short verses and shrank long ones; verses now share a single
+  CONTINUOUS size — the largest at which the longest verse (Esther 8:9)
+  fills the sector — and flow at their true line height (no discrete tiers,
+  no integer row-stride waste), so the type roughly doubles from before.
+  Device-adaptive; scoped to verses (chapter titles, calendar, catalog keep
+  their own fitting)
+- **Wrapping measures real glyph widths** (canvas.measureText in EB Garamond
+  at the actual size) instead of a per-character estimate. The estimate
+  over-measured the serif and broke every line ~12% early by a constant
+  proportion — bending the ragged right edge concentric with the arc and
+  stranding words that plainly fit. Measured wrapping breaks at the true
+  edge: the right margin goes ragged-but-full, words that fit stay up, and a
+  line can't clip. Falls back to the estimate only where there's no canvas
+  (tests); size recomputes once the web font loads
+- **The detail sector's tap-to-advance paints the text first.** A leaf-advance
+  tap now renders the next verse/day immediately, then the ring rotates to
+  catch up — the reader is looking at the words, not the ring. Scoped to the
+  single-step advance; a distant click still commits on arrival, and the
+  selection still commits on arrival here too (the preview never touches nav)
+- **docs**: the Phase D subphase outline (ROADMAP) rewritten to what shipped
+  — D.1–D.3 done (the strata), D.4 the remaining motion (rotation + the
+  tween), D.5 mostly folded into it, D.6 the Bible data campaign
+
 ## 3.13.0 — Phase D.3: the dimension strata
 - **The receding stack** (docs/DIMENSION_SYSTEM.md, D.3): the dimension
   button cycles primary → secondary → tertiary → primary, each press

@@ -342,11 +342,13 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       const preferred = activeTranslation ? [activeTranslation, ...others] : others;
       const text = getVerseTextFromCache(externalFile, verseKey, preferred);
       readAhead(selected, manifest);
-      if (text) return { type: 'text', text };
+      // uniform: every verse shares the longest verse's type size (Howell
+      // 2026-07-21) — a constant reading page, not size-by-length.
+      if (text) return { type: 'text', text, uniform: true };
       // The chapter is on its way; the repaint comes with it.
-      return { type: 'text', text: selected.text || '' };
+      return { type: 'text', text: selected.text || '', uniform: true };
     }
-    return { type: 'text', text: selected.text || selected.name || id || '' };
+    return { type: 'text', text: selected.text || selected.name || id || '', uniform: true };
   }
 
   return { type: 'text', text: selected.name || id || '' };

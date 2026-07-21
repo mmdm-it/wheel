@@ -92,53 +92,75 @@ last (F).
   styles every surface exactly once and shouldn't style doomed family
   rings. When built, it needs its own brief on-device feel pass and one
   new check: the suffix's behavior with a secondary stratum present.
-- **Phase D — Dimensions**: the strata design (blur + mirrored secondary
-  ring, z-travel = dimension change) implemented on C's tuned physics.
-  D inherits the choreographer, migration machinery, and gesture ladder
-  from C, so the risk is NOT motion mechanics; it is (a) getting the
-  dimension MODEL right on paper, and (b) the strata blur — the returning
-  C.2 perf villain at whole-ring scale, and the native-vs-wrapper decider
-  the evidence memo waits on. Subphase outline blessed by Howell
-  2026-07-20; deliberately uncompressed (subphases grow, not shrink).
-  - **D.1 — Doctrine + schema (paper first)**: rewrite
-    `DIMENSION_SYSTEM.md` to the strata canon before any code moves —
-    what a dimension IS, the data schema (axes + parallel values), motion
-    semantics (z-travel), persist-on-select. Audit the dormant
-    `src/core/` store/bridge state: revive vs rebuild. No visible feature;
-    this is where the rulings land.
-  - **D.2 — The dimension model, headless**: wire dimension state into
-    the live store (current dimension, select, persist-on-select) WITHOUT
-    strata visuals. Prove it by swapping the Bible's translation in-app
-    via state (the pre-3.9 portals did this by page redirect). Dimension
-    instrumentation, as C.2 gave the feel HUD.
-  - **D.3 — The secondary ring, static**: the mirrored secondary ring
-    appears — geometry, radius placement, mirroring — sharp and unblurred
-    first, as scaffolding, before fighting the compositor.
-  - **D.4 — Z-travel: gesture + choreography**: the reserved
-    radius-change motion made real — a gesture ruling (the C.3-of-D) and
-    the strata-change animation, inheriting the choreographer and
-    migration machinery. Phone-gated feel.
-  - **D.5 — The blur, and paying for it**: add the strata blur canon
-    requires and reckon with the perf. The SVG-blur villain of C.2 at
-    whole-ring scale on the iPhone X floor; likely a non-SVG-blur
-    technique. The hardest subphase and very likely the native-vs-wrapper
-    decider (see `docs/WRAPPER_EVIDENCE.md`). Isolated on purpose.
-  - **D.6 — The Bible, dimensioned, end to end**: the first real
-    dimensioned volume on the tuned physics. First cut (ruled 2026-07-20):
-    **two languages — Latin + English — one translation each**, so it is
-    just z-travel + mirrored ring + live preview, no translation pyramid
-    yet; but VUL vs MT numbering means it already proves the content-anchor
-    map. Prerequisite: verify English chapter-text completeness. Then the
-    translation pyramid, more languages, persist-across-gateway, full
-    choreography. **D.6's headline is the LIVE LABEL SWAP** (found at D.2's
-    close): the reading text already swaps live because its render takes the
-    translation as a live argument, but book/testament names, ring labels,
-    and the parent button are baked from a `namesMap` fixed at BOOT — they
-    only re-derive on a reboot (a gateway return catches them up). Live
-    labels = re-derive `namesMap` and re-render the ring in place without a
-    reboot — the same in-place re-render D.5's living preview needs. Plus deployment scoping: single-stratum public demo (the
-    Gutenberg egg) vs full dimensions gated to the apps and
-    bibliacatholica.org.
+- **Phase D — Dimensions**: the strata design (mirrored/standard rings,
+  z-travel = dimension change) on C's tuned physics. D inherits the
+  choreographer, migration machinery, and gesture ladder from C, so the risk
+  was never motion mechanics; it was (a) the dimension MODEL on paper, and
+  (b) the strata blur — the returning C.2 perf villain and the
+  native-vs-wrapper decider. **Both softened in the build (2026-07-21):** the
+  model landed and was then revised past its own draft (a third stratum
+  appeared), and the recede+blur shipped as a cheap STATIC snap the
+  iPhone/Moto floor takes without complaint — the C.2 villain only bites
+  PER-FRAME blur, which a snap never asks for. The open risk moved
+  downstream, to the animated tween (D.4). Outline blessed 2026-07-20,
+  revised 2026-07-21 as the build overtook the plan.
+  - **D.1 — Doctrine + schema (paper first)** — ✅ shipped. `DIMENSION_SYSTEM.md`
+    rewritten to the strata canon; the dormant `src/core/` store/bridge
+    revived, not rebuilt. NOTE: the canon was revised again 2026-07-21 — the
+    "no third stratum is needed" ruling was **reversed** (see D.3).
+  - **D.2 — The dimension model, headless** — ✅ shipped (`feat(D.2)`).
+    Dimension state in the live store (select, persist-on-select, host-level
+    survival across gateway reboots); the Bible's translation swaps in-app
+    via state, no page redirect. Its close surfaced the LIVE LABEL SWAP
+    problem (carried to D.6).
+  - **D.3 — The strata, built** — ✅ shipped (**v3.13.0**). Far past the
+    original "static, sharp, unblurred scaffolding" scope; it absorbed most
+    of D.4's visual and all of D.5's static blur:
+    - Secondary (mirrored) AND **tertiary** (standard) rings — the third
+      stratum the D.1 draft called unneeded, now the translation plane, with
+      the single-translation skip (Latin ⇄ secondary only; English/Greek
+      earn the third).
+    - The **honest sprocket chain**: bands are arc + straight tangent runs
+      (vertical up / ~SE, mirrored), not a circle — a receded ring must read
+      as a straight chain, never a hose-reel coil.
+    - The **receding stack** as a SNAP: primary → secondary → tertiary,
+      depths 1.0/0.4/0.2, a straight camera pull-back (2D scale about the
+      viewport centre). Static blur 0/5/10px — affordable *because* static.
+    - **Tangent fill** (the receded chain populates its straight runs), the
+      globe gated to the detail sector, native-tongue language labels.
+    - Left unbuilt on purpose: the MOTION (D.4). Selection is tap-for-now;
+      the strata transition is a snap.
+  - **D.4 — The motion made real**: the two stopgaps D.3 shipped, retired.
+    (a) **Orbital rotation of the secondary/tertiary rings** —
+    magnifier-as-selection, whatever's in the lens is obeyed; retires
+    tap-for-now and restores the two-motion premise. The strata become
+    rotatable focus rings inheriting C's choreographer and gesture ladder
+    (their chains are short, so bounds/snap are simpler than the primary's).
+    (b) **The z-travel TWEEN** — the multiplane pull-back animated (glide,
+    not snap), the incoming plane sliding in from behind the head. **Deferred
+    by Howell 2026-07-21** ("we can live with the skip a while longer"); the
+    snap is an honest resting state meanwhile.
+  - **D.5 — Blur under motion** (the residue of the old "hardest subphase"):
+    the STATIC blur already ships and performs (D.3), so the
+    native-vs-wrapper decider softened. What remains is only blur DURING the
+    D.4 tween — the C.2 per-frame villain returns *only if* the glide
+    animates blur. Likely resolved by the C.2 lesson: drop blur during
+    motion, snap it back on settle. Effectively folds into D.4's tween; kept
+    as a slot for the wrapper-evidence entry if the animated case forces the
+    question.
+  - **D.6 — The Bible, dimensioned, end to end**: much shipped early —
+    Latin/English/Greek and more on the secondary, translations on the
+    tertiary, the live TEXT swap (D.2). What remains: (a) the **LIVE LABEL
+    SWAP** — book/testament/ring/parent-button labels re-derive their
+    language on a translation change without a reboot (D.2's carried-over
+    headline; the reading text already swaps because its render takes the
+    translation live, but labels bake from a boot-fixed `namesMap`); (b) the
+    **translation + versification DATA campaign** — DRA is declared but
+    empty, BYZ is NT-only, versification maps are unbuilt; "weeks of work,"
+    deliberately deferred by Howell 2026-07-21 (see the debt note). (c) the
+    Greek OT/NT one-per-book collapse decision. Deployment scoping
+    (single-stratum public egg vs full dimensions gated to the apps and
+    bibliacatholica.org) still stands.
   - **D.7 — Phase close**: audit ritual, FEEL.md dimension constants, the
     wrapper-evidence memo's decisive final entry, punchlist drain.
 - **Phase E — Presentation**: typography (sizes, families), label
