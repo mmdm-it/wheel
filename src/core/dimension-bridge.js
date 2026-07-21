@@ -22,6 +22,22 @@
 
 import { interactionEvents } from './interaction-store.js';
 
+// Each language names itself in its own tongue (Howell 2026-07-21): the
+// secondary stratum reads as a native would read it, not as English glosses.
+// Keyed by the registry's `language` id. Non-Latin scripts fall back to the
+// system font where the ring font lacks the glyphs.
+const LANGUAGE_AUTONYMS = {
+  hebrew: 'עברית',
+  latin: 'Latina',
+  greek: 'Ελληνικά',
+  english: 'English',
+  russian: 'Русский',
+  french: 'Français',
+  italian: 'Italiano',
+  spanish: 'Español',
+  portuguese: 'Português'
+};
+
 export function createDimensionBridge({ store, translationsMeta = null } = {}) {
   if (!store) throw new Error('createDimensionBridge: store is required');
 
@@ -79,6 +95,26 @@ export function createDimensionBridge({ store, translationsMeta = null } = {}) {
         if (t?.language && !seen.includes(t.language)) seen.push(t.language);
       }
       return seen;
+    },
+
+    // The language's own name, for the secondary stratum's labels. Falls back
+    // to the id (then whatever the registry calls it) if no autonym is known.
+    languageLabel(id) {
+      return LANGUAGE_AUTONYMS[id]
+        || Object.values(meta?.translations || {}).find(t => t?.language === id)?.language_name
+        || id;
+    },
+
+    // The tertiary stratum's nodes: every translation KEY in a language, in
+    // registry order (VUL before NEO, NAB before DRA). Defaults to the
+    // selected language, then to the first language in the registry — so the
+    // tertiary is never empty when a dimension exists.
+    translationsOf(languageId) {
+      let lang = languageId || store.getState().language;
+      if (!lang) {
+        for (const t of Object.values(meta?.translations || {})) { if (t?.language) { lang = t.language; break; } }
+      }
+      return lang ? translationsOf(lang) : [];
     },
 
     // The render side registers what "regenerate" means. Re-registering

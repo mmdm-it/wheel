@@ -194,6 +194,10 @@ export function createApp({
   let detailSectorShown = false; // tracks whether DS is currently expanded
   let forcedDetailOpen = false;   // request to open DS at a non-leaf level
   let freezeDetailSector = false; // skips collapse for exactly ONE render after an expansion
+  // Tangent fill (Phase D): 0 keeps the ring arc-only (the hot rotation path);
+  // when the ring recedes behind a dimension stratum, the stack sets a span so
+  // the chain populates its straight tangent runs (verses climbing overhead).
+  let tangentFillSpan = 0;
   // Where a rotation currently in flight is HEADED. The selection itself
   // commits only on arrival, so without this a second tap during the
   // journey would reckon from the seat the ring has already left, aim at
@@ -830,7 +834,7 @@ export function createApp({
       choreographer.setRotation(rotation, { emit: false });
       rotation = choreographer.getRotation();
     }
-    const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing).map(node => ({
+    const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing, tangentFillSpan).map(node => ({
       ...node,
       label: formatLabel({ item: node.item, context: 'node' }),
       labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
@@ -1389,6 +1393,16 @@ export function createApp({
       onNodeClick(nodes[idx]);
     },
     refreshPyramid: () => render(rotation),
+    // The dimension stack recedes/returns the primary. When receded, fill the
+    // straight tangent runs with the chain's beyond-window links; when at the
+    // front, span 0 restores the arc-only window. A static re-render — off the
+    // rotation hot path.
+    setTangentFill(span) {
+      const next = Number.isFinite(span) && span > 0 ? span : 0;
+      if (next === tangentFillSpan) return;
+      tangentFillSpan = next;
+      render(rotation);
+    },
     // Open the Detail Sector at the current position regardless of leaf level.
     // onOpen is called after the expansion animation completes.
     openDetailSector(onOpen) {

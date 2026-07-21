@@ -33,35 +33,47 @@ literal thesis: *"You're traveling through another dimension."*
 ## What a dimension is
 
 **A dimension is another focus ring, on its own hub** — a full wheel,
-structurally identical to the reader (orbital rotation, a child pyramid),
+structurally identical to the primary strata (orbital rotation, a child pyramid),
 but centered on a *mirrored* hub so the eye knows instantly it is not the
 text. "Dimension" and "stratum" are used interchangeably.
 
-Two modes, one instrument:
+Up to three strata, one instrument. **Primary strata**, **secondary
+strata**, **tertiary strata** are the names (primary/secondary/tertiary for
+short); these words are used nowhere else in the app, so they are
+unambiguous. "Reader" is wrong — a volume may be a music library, not a text.
 
-- **READ** — the **primary stratum**: the reader (testaments → books →
-  chapters → verses).
-- **CHOOSE** — the **secondary stratum**: a chooser ring on its own hub,
-  **not for reading**. Its only job is to set the parameters you read
-  *with* when you return.
+- The **primary strata** — the volume itself (testaments → books →
+  chapters → verses; a music library's artists → albums → tracks). The
+  instrument as built so far.
+- The **secondary strata** — a second focus ring on its own *mirrored*
+  hub, **not for reading**. Its only job is to set the parameters the
+  primary strata reads *with* when you return (for the Bible: the
+  language).
+- The **tertiary strata** — a third ring, standard-hubbed again, for the
+  choice *within* the secondary's selection (for the Bible: which
+  translation of the chosen language). It appears only when that choice is
+  real — a language with a single translation skips it (D.3, below).
 
 **The dimension button toggles the two.** It is the wireframe globe parked
 in a corner — a **neutral icon** that does not display the current value
-(ruled 2026-07-20). Tap it in READ → z-travel to the secondary stratum. Tap
-the *same* button again → z-travel back to the reader. On/off. The button
-does not cycle values and does not itself pick anything; it only switches
-strata.
-A volume that declares no dimension shows no globe.
+(ruled 2026-07-20). Tap it in the primary strata → z-travel to the
+secondary. Tap the *same* button again → z-travel back to the primary.
+On/off. The button does not cycle values and does not itself pick anything;
+it only switches strata. A volume that declares no dimension shows no
+globe.
 
 ## Z-travel — the motion between strata
 
 Click the globe and you **back through a door**: the primary stratum you
 were reading **recedes ahead of you** — smaller, into the middle distance,
 soft-focus — while the secondary stratum **arrives from behind your head**,
-its mirrored arc running lower-left → upper-right (the reverse of the
-reader's upper-left → lower-right). Click again and you **push forward
-through the door**: the reader swells and sharpens as you arrive, the
-secondary falls away behind.
+its mirrored arc running lower-left → upper-right (the primary's
+upper-left → lower-right reflected across the screen's **horizontal**
+centerline — the primary's magnifier low, the secondary's high). Because
+the primary shrinks and recedes as the secondary arrives, the two never
+share the viewport at full size; where their full-size arcs would cross is
+a non-question. Click again and you **push forward through the door**: the
+primary swells and sharpens as you arrive, the secondary falls away behind.
 
 Orbital and radial happen *within* a stratum (the frozen C physics,
 untouched). Z happens *between* strata. One rule covers the whole
@@ -96,35 +108,42 @@ the secondary magnifier.** Live, but bounded. It regenerates only when a new
 value **settles** in the secondary magnifier (ruled 2026-07-20) — never
 mid-rotation, consistent with the hold-stale detail-sector doctrine.
 
-## The Bible chooser, concretely
+## The Bible's secondary strata, concretely
 
-The chooser is a focus ring, so it arrives with **both** motions, and that
-collapses what looked like two selectors into one stratum:
+Language then translation is a two-step choice. D.1 drafted it as one
+stratum — orbit the secondary ring for the language, dive its child pyramid
+for the translation. **D.3 replaced the pyramid with a third stratum**
+(Howell, 2026-07-21): the dimension button cycles **primary → secondary →
+tertiary → primary**, each press pushing the stack one plane deeper. The
+reason is the z-axis itself — a translation is a *parallel* to its language,
+a stratum of the same rank behind it, not a child hanging off it. Three
+mirrored planes receding read as the instrument's defining cinematic pull;
+a pyramid would have read as ordinary drill-down.
 
 - **Orbit the secondary ring → pick a LANGUAGE** (Latin, Greek, Hebrew,
-  English…).
-- **Dive its CHILD PYRAMID → pick a TRANSLATION within that language**
-  (NAB vs Douay-Rheims English — today's registry has one translation for
-  most languages; English is the first with two. D.2 corrected an earlier
-  draft here: `NEO` is the French Crampon, not a Neovulgate).
+  English…), named in its own tongue (ESPAÑOL, ΕΛΛΗΝΙΚΆ, עברית).
+- **Orbit the tertiary ring → pick a TRANSLATION within that language**
+  (NAB vs Douay-Rheims English; LXX vs BYZ Greek).
 
-No third stratum is needed: language→translation is a parent→child tree,
-exactly the shape ring→pyramid expresses. A translation belongs to exactly
-one language (no Greek KJV; the data carries a single `language` per
-translation), so the tree is clean.
+A translation belongs to exactly one language (no Greek KJV; the data
+carries a single `language` per translation), so the ladder is clean. The
+tertiary appears **only when the choice is real**: Latin has one
+translation (the Vulgate), so its cycle is just primary ⇄ secondary; a
+language with two or more earns the third plane. The gate reads the language
+in the secondary magnifier, so it follows the wheel.
 
-**Prominence is the default.** The chooser's pyramid uses the C.5 star
+**Prominence is the default.** The secondary strata's pyramid uses the C.5 star
 field: the most-used translation in the magnified language is the largest
 node, so orbiting to "Greek" and toggling straight back — without touching
 the pyramid — lands on Greek's primary translation. The pyramid is there for
-the reader who wants a *specific* edition. (This asks one thing of the data:
+the user who wants a *specific* edition. (This asks one thing of the data:
 translations need a popularity ranking, the same editorial tier the verses
 and books await.) One star-field mechanism now serves three jobs — sizing
-verses, sizing engine models once families flatten, and sizing chooser
-options.
+verses, sizing engine models once families flatten, and sizing the secondary
+strata's options.
 
 **It scales like any volume.** Because the secondary stratum is a full focus
-ring, the chooser inherits everything C proved: a language dimension holds a
+ring, the secondary strata inherits everything C proved: a language dimension holds a
 handful of nodes, but the mechanism does not care — a dimension could hold
 **six thousand** choices and scan them with the same two thumb-flicks as the
 calendar's six thousand years. That is the whole advantage over a
@@ -144,7 +163,7 @@ even VUL has holes.)
 
 ## Three shapes of parameter (bank for the schema)
 
-Not every chooser does the same job:
+The secondary strata does not always do the same job:
 
 | Shape | Effect | Example | Cardinality |
 |---|---|---|---|
@@ -173,11 +192,11 @@ values. The multi-select selection gesture is **deferred to the calendar**
   **Full cross-numbering from the start** (ruled 2026-07-20): the map spans
   the systems (MT / VUL / LXX); no share-numbering shortcut. The first
   *build* is small but still crosses a boundary (see below).
-- **Absent dimension → no button.** A volume that declares no chooser hides
+- **Absent dimension → no button.** A volume that declares no secondary strata hides
   the globe entirely. (Already the code's posture: every adapter declares
-  `search: false`; a chooser is the same kind of declared capability.)
+  `search: false`; a secondary strata is the same kind of declared capability.)
 - **Read-time application, never a data mutation.** A dimension changes how
-  an item is *presented*, not which items exist; the reader's hierarchy
+  an item is *presented*, not which items exist; the primary strata's hierarchy
   position is untouched by a dimension change. (The v3.7 read-time filtering
   + per-combination caching survives; the interaction model around it does
   not.)
@@ -195,10 +214,54 @@ values. The multi-select selection gesture is **deferred to the calendar**
   from the catalog, not a choice; within a volume the primary and secondary
   may even share colors. An E-era decision.
 
+## D.3 — the strata, built (2026-07-21)
+
+The visual stack shipped. What landed, and the decisions the sketches left open:
+
+- **Three-deep stack.** The dimension button cycles primary → secondary →
+  tertiary → primary; each press pushes the front plane one deeper. Depths
+  `[1.0, 0.4, 0.2]`, static blurs `[0, 5, 10]` px, indexed by planes behind
+  the front. The recede is a **straight camera pull-back** — a 2D scale about
+  the *viewport centre* (Disney multiplane), which drops the off-screen hub
+  down-and-left for free, no 3D. Locked with Howell.
+- **The strata render in their own layer** (`#strata-layer`, z 250) above the
+  primary's detail panel (z 200), so a front stratum opaquely covers the
+  receded primary where its band and nodes fall, and the blurred primary shows
+  through the gaps. The wheel-and-chain reading depends on this.
+- **The band is the honest sprocket chain, not a circle.** `bandCenterlinePoints`
+  draws the arc where the chain rides the off-screen sprocket, then **straight
+  tangent runs** past the two viewport exits — vertical up at the upper-left,
+  ~SE at the lower-right (the exact lower angle set by the viewport ratio).
+  Mirrored for the secondary (vertical *down*). Stroked centreline, not a
+  filled annulus. At full size the tangents are off-screen; the recede scales
+  them into view, so a receded ring reads as a straight chain vanishing off
+  the top — never a hose-reel coil. Shared by the primary and the strata.
+- **Tangent fill.** When the primary recedes, `calculateNodePositions` takes a
+  `tangentSpan` and populates the straight runs with the chain's beyond-window
+  links (verses climbing overhead). Sized per depth (`STRATA_TANGENT_SPANS`).
+  A **static re-render**, off the rotation hot path — the front ring stays
+  arc-only, so rotation perf is untouched.
+- **The button lives in the detail sector.** The globe appears only where a
+  dimension exists *and* the purple sill is on screen (a leaf). Over a child
+  pyramid it hides and any open stack recedes — the analogy only holds where
+  the round wheel (the purple) is visible for the straight chain to wrap.
+- **Native tongues, magnified-label span.** The secondary names each language
+  in its own script (`languageLabel`); the magnified label is start-anchored
+  and pulled back over its node so the name spans it weighted inward, off the
+  left edge.
+- **Colour** resolved to the primary's own band/node colours per volume (the
+  gray/brown is the theme's, not borrowed) — the E-era question the sketch
+  flagged, closed for now.
+
+**Still open (the animation phase).** Selection is **tap-for-now** — a stopgap
+that violates the two-motion premise; magnifier-as-selection (rotating the
+secondary/tertiary rings) is the next build. And the transition between strata
+is a **snap**, not yet the multiplane tween. Both are D.4/D.5 work.
+
 ## Data schema (sketch — D.1 designs, D.2 builds)
 
 ```jsonc
-// volume manifest — a declared chooser capability
+// volume manifest — a declared dimension capability
 "dimension": {
   "shape": "swap",              // swap | sort | filter
   "parameter": "language",       // what the secondary ring browses
@@ -211,7 +274,7 @@ values. The multi-select selection gesture is **deferred to the calendar**
 The *data* largely exists: each verse already carries `text` keyed by
 translation (`VUL`, `NAB`, `BYZ`…), and `translations.json` declares each
 translation's `language`, `versification`, and `direction`. D.1's schema
-work is (a) the manifest chooser declaration above, (b) the translation
+work is (a) the manifest dimension declaration above, (b) the translation
 popularity tier, and (c) the versification map the content anchor requires.
 
 ## The dormant core — revive the state, rebuild the bridge
@@ -225,7 +288,7 @@ is wired live). The D.1 verdict from reading it:
   state for "reading in Greek, Byzantine edition." Keep the shape; refit
   action names to swap/sort/filter if needed.
 - **REBUILD** `store-navigation-bridge.js` — it drives that state the
-  *portal* way (extract from manifest, dispatch, redirect). The chooser ring
+  *portal* way (extract from manifest, dispatch, redirect). The secondary strata
   replaces that interaction model wholesale; the bridge is the piece to
   rewrite to connect a secondary-stratum selection to the store.
 - Both have tests (`interaction-store.test.js`,
@@ -236,12 +299,12 @@ is wired live). The D.1 verdict from reading it:
 The v3.7 litmus test — "can I navigate the ENTIRE hierarchy through this
 lens?" — still names the *purest* dimension (language: every level
 translates, the structure identical across languages). But Howell's
-generalization is broader than a lens: a chooser stratum legitimately holds
+generalization is broader than a lens: a secondary stratum legitimately holds
 **any** orthogonal parameter a user would otherwise toggle — a sort key that
 reorders one level, a filter that hides layers. So:
 
 - A **true dimension** (swap/lens) transcends the hierarchy — language.
-- The **chooser mechanism** serves that *and* sort *and* filter.
+- The **secondary strata** serves that *and* sort *and* filter.
 - Still NOT a dimension: a leaf-only property dressed up as one (currency,
   price range, in-stock) — display preferences or filters within a view.
   The old doc's rejections (market, currency, price) stand.
@@ -250,7 +313,7 @@ The discipline the old doc urged remains: **hundreds of hierarchies, a
 handful of dimensions.** Make the things a user would genuinely toggle
 through a list, not everything.
 
-## Candidate choosers by volume
+## Candidate dimensions by volume
 
 - **Bible** — language (swap; the D.6 build), translation as its pyramid.
 - **Catalog** — sort order (alphabetical / horsepower / displacement); most
@@ -274,6 +337,6 @@ through a list, not everything.
 6. Secondary-stratum colors **carried to E**.
 
 **Deferred out of D by design:** the multi-select gesture (→ calendar), the
-color scheme (→ E), and the catalog/calendar/music choosers (D lands on the
+color scheme (→ E), and the catalog/calendar/music dimensions (D lands on the
 Bible first). **The one live prerequisite for D.6:** confirm the English
 text's completeness in the chapter files.

@@ -8,6 +8,7 @@ import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js'
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
+import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
@@ -33,10 +34,12 @@ function measureViewport() {
   const h = vv && vv.height ? Math.round(vv.height) : window.innerHeight;
   return getViewportInfo(w, h);
 }
+const strataLayer = typeof document !== 'undefined' ? document.getElementById('strata-layer') : null;
 function pinCanvas(vp) {
-  if (!svg) return;
-  svg.style.width = `${vp.width}px`;
-  svg.style.height = `${vp.height}px`;
+  if (svg) { svg.style.width = `${vp.width}px`; svg.style.height = `${vp.height}px`; }
+  // The strata layer shares the primary's exact coordinate system (px, no
+  // viewBox) so a stratum drawn at (x,y) lands where the geometry says.
+  if (strataLayer) { strataLayer.style.width = `${vp.width}px`; strataLayer.style.height = `${vp.height}px`; }
 }
 let viewport = measureViewport();
 pinCanvas(viewport);
@@ -45,16 +48,155 @@ pinCanvas(viewport);
 // choice survives volume reboots and gateway round trips (Howell ruling
 // 2026-07-20, docs/DIMENSION_SYSTEM.md). The store and bridge are created
 // once; each boot refreshes the bridge's registry and its render hook.
-// Headless: no chooser stratum exists yet — the console knob below is the
-// D.2 instrument (like ?debug=1 was C.2's).
 const dimensionStore = createInteractionStore();
 const dimensionBridge = createDimensionBridge({ store: dimensionStore });
+
+// D — the strata STACK (docs/DIMENSION_SYSTEM.md). Up to three deep for a
+// dimensioned volume: primary (the volume) → secondary (languages, mirrored)
+// → tertiary (translations, standard). The dimension button cycles which
+// stratum is at
+// the FRONT: primary → secondary → tertiary → primary. Each press pushes the
+// stack one layer deeper — the front is full size, one layer back recedes to
+// 0.4, two layers back to 0.2 — each receding one straight-pull-back
+// (Disney multiplane: a 2D scale about the viewport centre, which drops the
+// off-screen hub) and softening under a static rack-focus blur. The front
+// opaquely covers the layers behind; strata not yet entered are hidden
+// ("behind the user's head"). Selection is still tap-for-now — rotation
+// (magnifier-as-selection) is the next build.
+const STRATA_DEPTHS = [1.0, 0.4, 0.2];  // scale, indexed by levels behind the front
+const STRATA_BLURS = [0, 5, 10];        // px local, same index
+// Tangent fill span (radians past each viewport exit), sized to reach the
+// screen edge at each recede scale — the deeper the ring, the more of the
+// straight chain climbs into view (Howell 2026-07-21). Level 0 = arc-only.
+const STRATA_TANGENT_SPANS = [0, 1.1, 2.2];
+const CHOOSERS = [
+  { id: 'secondary', mirrored: true,
+    items: () => dimensionBridge.languagesAvailable(),
+    label: id => dimensionBridge.languageLabel(id), // each tongue names itself
+    selected: () => dimensionBridge.getSelection().language,
+    select: id => dimensionBridge.setLanguage(id) },
+  { id: 'tertiary', mirrored: false,
+    items: () => dimensionBridge.translationsOf(),
+    selected: () => dimensionBridge.getSelection().translation,
+    select: key => dimensionBridge.setTranslation(key) }
+];
+let strataFront = 0;                       // 0 = primary at front
+const isStrataOpen = () => strataFront !== 0;
+const isSecondaryOpen = isStrataOpen;      // the primary pointer guard reads this
+// The dimension feature lives IN the detail sector: strata recede only when
+// the purple sill is on screen (a leaf), never over a child pyramid — that is
+// where the sprocket-wheel-and-chain analogy reads (Howell 2026-07-21).
+let detailSectorVisible = false;
+const dimensionButton = typeof document !== 'undefined' ? document.getElementById('dimension-button') : null;
+
+function scaleAboutCentre(scale) {
+  const cx = viewport.width / 2;
+  const cy = viewport.height / 2;
+  return `translate(${cx} ${cy}) scale(${scale}) translate(${-cx} ${-cy})`;
+}
+// Depth (scale + blur) applied to the primary plane — its ring/logo (SVG,
+// in #app) and its detail sector (HTML panel), both scaled about the
+// viewport centre so the off-screen hub drops. The strata render in a layer
+// ABOVE both, so a front stratum covers this receded content on its own.
+function applyPrimaryDepth(level) {
+  const receded = level > 0;
+  const scale = STRATA_DEPTHS[level];
+  const tf = receded ? scaleAboutCentre(scale) : null;
+  const blur = receded ? `blur(${STRATA_BLURS[level]}px)` : '';
+  ['.focus-content-group', '#volume-logo-group'].forEach(sel => {
+    const g = document.querySelector(`#app ${sel}`);
+    if (!g) return;
+    if (tf) g.setAttribute('transform', tf); else g.removeAttribute('transform');
+    g.style.filter = blur;
+  });
+  // Fill the straight tangent runs with beyond-window chain links while the
+  // ring is receded; span 0 restores the arc-only window at the front.
+  if (currentApp && typeof currentApp.setTangentFill === 'function') {
+    currentApp.setTangentFill(STRATA_TANGENT_SPANS[level] || 0);
+  }
+  const panel = document.getElementById('detail-panel');
+  if (panel) {
+    const cx = viewport.width / 2, cy = viewport.height / 2;
+    const rect = panel.getBoundingClientRect();
+    panel.style.transformOrigin = `${cx - rect.left}px ${cy - rect.top}px`;
+    panel.style.transform = receded ? `scale(${scale})` : '';
+    panel.style.filter = blur;
+    // No z-index games: the strata render in #strata-layer, which already
+    // sits above the panel, so a front stratum covers this receded text.
+  }
+}
+function applyStratumDepth(g, level) {
+  if (!g) return;
+  if (level === 0) { g.removeAttribute('transform'); g.style.filter = ''; return; }
+  g.setAttribute('transform', scaleAboutCentre(STRATA_DEPTHS[level]));
+  g.style.filter = `blur(${STRATA_BLURS[level]}px)`;
+}
+
+function renderStack() {
+  applyPrimaryDepth(strataFront); // primary is stack position 0; its level == front
+  // Choosers are positions 1..N. Render (front to back so the SVG z-order —
+  // last child on top — puts the front stratum highest) any at or ahead of
+  // the front; hide the rest.
+  CHOOSERS.forEach((ch, ci) => {
+    const pos = ci + 1;
+    if (pos > strataFront) { hideStratum(strataLayer, ch.id); return; }
+    const items = ch.items();
+    const g = renderStratum(strataLayer, {
+      id: ch.id, viewport, items,
+      selectedIndex: Math.max(0, items.indexOf(ch.selected())),
+      mirrored: ch.mirrored,
+      labelFor: ch.label,
+      onSelect: i => { ch.select(items[i]); renderStack(); }
+    });
+    applyStratumDepth(g, strataFront - pos);
+  });
+  if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
+}
+
+const dimensionAvailable = () => dimensionBridge.languagesAvailable().length > 0;
+
+// The tertiary stratum (translations) is redundant for a language with a
+// single translation — Latin has only the Vulgate, so its cycle is just
+// primary ⇄ secondary (Howell 2026-07-21). English (NAB/DRA) and Greek
+// (LXX/BYZ) have two, so they earn the third stratum. The gate reads the
+// language now in the magnifier (== the current selection under tap-select).
+const tertiaryAvailable = () => dimensionBridge.translationsOf(dimensionBridge.getSelection().language).length > 1;
+const maxStrataFront = () => (tertiaryAvailable() ? 2 : 1);
+
+function cycleStrata() {
+  if (!dimensionAvailable()) return;
+  const max = maxStrataFront();
+  strataFront = strataFront >= max ? 0 : strataFront + 1;
+  renderStack();
+}
+function resetStrata() {
+  strataFront = 0;
+  CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
+  renderStack();
+}
+// The globe shows only where a dimension EXISTS and the detail sector is open;
+// over a child pyramid it hides, and any open stack recedes back to the
+// primary. A volume boot (including a gateway transit) resets the stack.
+function updateDimensionButton() {
+  if (!dimensionButton) return;
+  const show = dimensionAvailable() && detailSectorVisible;
+  dimensionButton.hidden = !show;
+  if (!show && isStrataOpen()) resetStrata();
+}
+function refreshDimensionButton() {
+  if (!dimensionButton) return;
+  resetStrata();
+  updateDimensionButton();
+}
+if (dimensionButton) {
+  dimensionButton.addEventListener('click', cycleStrata);
+}
 if (typeof window !== 'undefined') {
   window.__wheelDimension = {
     get: () => dimensionBridge.getSelection(),
-    // Accepts a translation key ('NAB') or a language id ('english').
     set: id => dimensionBridge.setTranslation(id) || dimensionBridge.setLanguage(id),
-    languages: () => dimensionBridge.languagesAvailable()
+    languages: () => dimensionBridge.languagesAvailable(),
+    cycle: cycleStrata
   };
 }
 const tapDebugEnabled = new URLSearchParams(window.location.search).get('tapdebug') === '1';
@@ -235,13 +377,14 @@ const detailContent = document.getElementById('detail-content');
 // The panel fades in after the blue circle has finished expanding,
 // and hides immediately when the circle begins collapsing.
 window.addEventListener('detail-sector-change', (e) => {
-  if (!detailPanel) return;
   const { visible } = e.detail || {};
-  if (visible) {
-    detailPanel.classList.add('detail-panel--visible');
-  } else {
-    detailPanel.classList.remove('detail-panel--visible');
+  if (detailPanel) {
+    detailPanel.classList.toggle('detail-panel--visible', Boolean(visible));
   }
+  // The dimension button follows the sill: present at a leaf, gone over a
+  // child pyramid (which also recedes any open stack back to the primary).
+  detailSectorVisible = Boolean(visible);
+  updateDimensionButton();
 });
 
 function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation } = {}) {
@@ -416,6 +559,10 @@ function wireInteractions(getApp) {
   svg.addEventListener('pointerdown', event => {
     const app = getApp();
     if (!app) return;
+    // While the secondary strata is up, the primary is receded and INERT —
+    // its ring must not take taps (D.3). The secondary nodes handle their
+    // own pointerdown and stop it here anyway; this is the belt.
+    if (isSecondaryOpen()) return;
     logTap('pointerdown', {
       pointerType: event.pointerType,
       targetClass: event.target?.getAttribute?.('class') || null,
@@ -537,6 +684,7 @@ function wireInteractions(getApp) {
       // target node's click handler run without a competing snap animation.
       const app = getApp();
       if (!app) return;
+      if (isSecondaryOpen()) return; // primary inert while the secondary is up (D.3)
       const wasDragging = isDragging;
       isDragging = false;
       if (wasDragging) {
@@ -759,6 +907,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
   dimensionBridge.setTranslationsMeta(translationsMeta);
+  // Seed the dimension state with the volume's default translation, so the
+  // secondary/tertiary strata and the primary text all agree from boot —
+  // unless a sticky choice already survived a gateway/reboot.
+  if (!dimensionStore.getState().language && options.translation) {
+    dimensionBridge.setTranslation(options.translation);
+  }
+  refreshDimensionButton(); // show the globe only where a dimension exists
   // The sticky dimension choice (survives reboots/gateways) wins over the
   // volume's pinned default; boot-time derivations (namesMap, labels) still
   // use the boot value — swapping those live is D.6's work, not D.2's.

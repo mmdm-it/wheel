@@ -43,10 +43,18 @@
     © 2026 Meccanismi Marittimi delle Marche. Tutti i diritti riservati.
   </div>
   <svg id="app" aria-label="Wheel v3"></svg>
+  <button id="dimension-button" type="button" hidden
+          aria-label="Change dimension" aria-pressed="false">
+    <img src="assets/dimension-sphere.png" alt="" draggable="false" />
+  </button>
   <div id="detail-panel" class="detail-panel" aria-label="Detail panel">
     <div id="detail-content" class="detail-content"></div>
     <div id="version-badge" class="detail-version" aria-label="Application version"></div>
   </div>
+  <!-- The dimension strata (secondary/tertiary) render here, ABOVE the
+       primary and its detail panel, so a front stratum opaquely covers the
+       receded primary beneath it (Phase D). -->
+  <svg id="strata-layer" aria-hidden="true"></svg>
   <div id="portrait-gate" aria-hidden="true">
     <svg class="portrait-gate-icon" viewBox="0 0 120 120" role="img" aria-label="Rotate to portrait"
          fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">

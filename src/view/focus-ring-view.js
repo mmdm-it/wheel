@@ -1,5 +1,6 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
+import { bandCenterlinePoints, pointsToPath } from '../geometry/focus-ring-geometry.js';
 
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
 const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
@@ -164,6 +165,8 @@ export class FocusRingView {
 
     if (this.band && arcParams && viewportWindow) {
       this.band.setAttribute('d', this.#ringPath(arcParams, viewportWindow));
+      // Stroked centreline: the band width is the old 0.99r–1.01r annulus.
+      this.band.setAttribute('stroke-width', (arcParams.radius * 0.02).toFixed(1));
     }
 
     const existingNodes = new Map();
@@ -362,29 +365,14 @@ export class FocusRingView {
     }
   }
 
+  // The band is the sprocket-chain centreline (focus-ring-geometry): the arc
+  // where the chain rides the off-screen sprocket, then STRAIGHT tangent runs
+  // beyond the two viewport exits — vertical up at the upper-left, ~SE at the
+  // lower-right. Stroked (not a filled annulus) at the band width, so the
+  // straight runs are honest lines, not a coil, when the ring recedes (Howell
+  // 2026-07-21). Off-screen and clipped at full size.
   #ringPath(arcParams, viewportWindow) {
-    const outerR = arcParams.radius * 1.01;
-    const innerR = arcParams.radius * 0.99;
-    const { startAngle, endAngle } = viewportWindow;
-    const largeArc = endAngle - startAngle > Math.PI ? 1 : 0;
-
-    const polar = (r, angle) => ({
-      x: arcParams.hubX + r * Math.cos(angle),
-      y: arcParams.hubY + r * Math.sin(angle)
-    });
-
-    const oStart = polar(outerR, startAngle);
-    const oEnd = polar(outerR, endAngle);
-    const iEnd = polar(innerR, endAngle);
-    const iStart = polar(innerR, startAngle);
-
-    return [
-      `M ${oStart.x} ${oStart.y}`,
-      `A ${outerR} ${outerR} 0 ${largeArc} 1 ${oEnd.x} ${oEnd.y}`,
-      `L ${iEnd.x} ${iEnd.y}`,
-      `A ${innerR} ${innerR} 0 ${largeArc} 0 ${iStart.x} ${iStart.y}`,
-      'Z'
-    ].join(' ');
+    return pointsToPath(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle));
   }
 
   #isNearMagnifier(angle, magnifierAngle, epsilon) {

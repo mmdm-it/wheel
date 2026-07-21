@@ -432,10 +432,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         sectionId: selected?.meta?.sectionId || bibleVerseContext?.sectionId
       };
       if (!ctx?.bookId) return false;
-      // Navigate back to the chapter list for this book.
-      const chapterItems = getBibleChapters(manifest, { id: ctx.bookId }, namesMap, 'book');
+      // Back to the chapters ring — the VOLUME-SPANNING cousin chain, the same
+      // one descent builds, landing on the chapter just left. Using
+      // getBibleChapters here (one book, no gaps) was the bug: ascending out
+      // of a leaf stranded the ring on the parent book's chapters alone, so
+      // rotating never crossed into the next book (Howell 2026-07-21).
+      const { items: chapterItems, selectedIndex: chapterIdx } = chapterChain(ctx.chapterId);
       if (!chapterItems.length) return false;
-      const chapterIdx = chapterItems.findIndex(c => c.id === ctx.chapterId);
       bibleMode = 'chapter';
       bibleVerseContext = null;
       bibleChapterContext = { bookId: ctx.bookId, testamentId: ctx.testamentId, sectionId: ctx.sectionId };

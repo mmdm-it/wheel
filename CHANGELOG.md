@@ -1,5 +1,42 @@
 # Changelog
 
+## 3.13.0 — Phase D.3: the dimension strata
+- **The receding stack** (docs/DIMENSION_SYSTEM.md, D.3): the dimension
+  button cycles primary → secondary → tertiary → primary, each press
+  pushing the front plane one deeper. Depths [1.0, 0.4, 0.2], static blurs
+  [0, 5, 10]px. The recede is a straight camera pull-back — a 2D scale about
+  the viewport centre (Disney multiplane), which drops the off-screen hub
+  for free. Strata render in their own layer (#strata-layer, z 250) above
+  the primary's detail panel, so a front stratum opaquely covers the receded
+  primary while the blurred primary shows through the gaps
+- **The honest sprocket chain**: the focus-ring band is no longer an arc
+  that curls into a circle when it recedes. `bandCenterlinePoints` draws the
+  arc where the chain rides the off-screen sprocket, then STRAIGHT tangent
+  runs past the viewport exits — vertical up at the upper-left, ~SE at the
+  lower-right, mirrored (vertical down) for the secondary. Stroked
+  centreline, shared by the primary and every stratum; off-screen at full
+  size, scaled into view on the recede
+- **Tangent fill**: when the primary recedes, the chain populates its
+  straight runs with the beyond-window links (verses climbing overhead),
+  sized per depth. A static re-render, off the rotation hot path — the front
+  ring stays arc-only, rotation perf untouched
+- **The button lives in the detail sector**: the globe appears only where a
+  dimension exists and the purple sill is on screen (a leaf); over a child
+  pyramid it hides and any open stack recedes. The tertiary stratum is
+  skipped for a single-translation language (Latin cycles primary ⇄
+  secondary; English/Greek earn the third plane)
+- **Native tongues**: the secondary stratum names each language in its own
+  script (ESPAÑOL, ITALIANO, ΕΛΛΗΝΙΚΆ, עברית); the magnified label spans its
+  node weighted inward, off the left edge. The globe icon is a clean
+  wireframe sphere, lifted clear of the ring
+- **fix(bible): the cousin ascent** — backing out of a leaf verse to the
+  chapters ring rebuilt it from one book (getBibleChapters), stranding the
+  ring on the parent book with no cousin gaps; rotating never crossed into
+  the next book. It now uses the same volume-spanning chapter chain the
+  descent builds, landing on the chapter reached. The test that demanded the
+  single-book ring (while its sibling required all 67 books) encoded the bug
+  and was corrected
+
 ## 3.12.1 — Phase C close: the audit sweep
 - **Phase C end-of-phase audit** (docs/AUDIT-PHASE-C.md): two fresh-context
   adversarial reviews (code + docs) instructed to refute, plus performance

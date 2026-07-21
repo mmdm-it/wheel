@@ -165,8 +165,90 @@ svg :focus-visible {
   font-size: clamp(calc(10px * var(--iframe-scale, 1)), 1.15vmin, calc(19px * var(--iframe-scale, 1)));
 }
 
+/* The dimension button (D.3) — the wireframe globe, parked in a corner.
+   A neutral icon (it does not display the current value). Toggles the
+   secondary strata; tap-sized for the thumb (Howell 2026-07-21). */
+#dimension-button {
+  position: fixed;
+  right: calc(3% * var(--iframe-scale, 1));
+  bottom: calc(9% * var(--iframe-scale, 1)); /* clear of the focus-ring band */
+  width: clamp(52px, 13vmin, 96px);
+  height: clamp(52px, 13vmin, 96px);
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 260; /* above the strata layer so the globe stays tappable */
+  opacity: 0.85;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+#dimension-button[hidden] { display: none; }
+#dimension-button img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+#dimension-button:hover { opacity: 1; }
+#dimension-button[aria-pressed="true"] { opacity: 1; transform: scale(1.08); }
+#dimension-button:focus-visible { outline: 2px solid var(--color-nodes, #f2b41c); outline-offset: 3px; border-radius: 50%; }
+
+/* The strata layer sits above the primary and its detail panel, below the
+   dimension button. It is click-through except on its nodes, so taps on
+   empty space still fall to the (inert) primary. */
+#strata-layer {
+  position: fixed;
+  inset: 0;
+  /* Above the primary's detail panel (200) so a front stratum covers the
+     receded primary text; below the copyright strip (300). */
+  z-index: 250;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* The secondary strata (D.3) — identical colors, band, and font to the
+   primary strata (Howell 2026-07-21). Color placeholder retired. */
+.secondary-strata-band {
+  fill: none;
+  stroke: var(--color-band);
+  stroke-linecap: round;
+  opacity: 1;
+}
+.secondary-strata-node {
+  fill: var(--color-nodes);
+  stroke: none;
+  cursor: pointer;
+  pointer-events: auto; /* the layer is click-through; its nodes are not */
+}
+/* The magnified language wears a 1px black stroke (Howell 2026-07-21). */
+.secondary-strata-node.is-magnified {
+  stroke: #000;
+  stroke-width: 1;
+}
+.secondary-strata-label {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  text-transform: var(--focus-label-transform, uppercase);
+  pointer-events: none;
+}
+/* The magnified language's label is larger, as in the primary strata. Its
+   anchoring (offset + start) is set in the view so the name spans the node
+   weighted inward, off the left edge — like the catalog's unselected nodes. */
+.secondary-strata-label.is-magnified {
+  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
+  font-weight: 700;
+}
+
 .focus-ring-band {
-  fill: var(--color-band);
+  /* A stroked centreline now (sprocket chain: arc + straight tangents), not a
+     filled annulus. stroke-width is set per-render to the 0.02r band width. */
+  fill: none;
+  stroke: var(--color-band);
   opacity: 1;
 }
 
