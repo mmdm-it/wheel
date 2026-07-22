@@ -1,5 +1,25 @@
 # Changelog
 
+## 3.14.0 — the dimension rings turn (D.4a)
+- **Magnifier-as-selection** retires the tap-for-now stopgap: the front
+  stratum is a rotatable focus ring. **Drag** to scrub it (mapped to the
+  primary's exact rate — π/4 of arc per 100px — so it feels like the ring
+  the reader knows), or **tap** a node to glide it into the lens. Either way
+  the selection commits on the settle, which is when the receded primary
+  re-renders its live preview
+- **The lodestar** (docs/DESIGN_CLARIFICATIONS.md): the strata magnifier is
+  now a FIXED point the nodes rotate through — it never floats. While turning
+  it's an empty hollow lens the nodes stream through; on the settle it fills
+  with the item nearest the lens, magnified. Matches the primary exactly
+- **Overshoot + springback**: the chain lets you pull ~3 nodes past either
+  end into empty space, then eases the nearest node home (easeOutCubic) — the
+  sprocket's last-link-taut feel, no more dead twitch at the wall. The
+  geometry now takes a fractional center index (integer = settled, fraction =
+  mid-rotation)
+- **fix(fonts): iPhone bold** — four CSS rules use font-weight:700 but only
+  Montserrat 500 was loaded, so every bold was synthesised; iOS Safari's
+  faux-bold was blotchy. Load the real Montserrat 700 and EB Garamond 700
+
 ## 3.13.2 — the strata move
 - **The strata transition glides** (D.4b) instead of snapping — a camera
   pull-back: the front plane recedes while the incoming plane travels in on

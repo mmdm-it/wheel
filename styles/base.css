@@ -229,6 +229,11 @@ svg :focus-visible {
   stroke: #000;
   stroke-width: 1;
 }
+/* While the ring rotates the lodestar is a HOLLOW lens: no fill, so the nodes
+   stream through it, exactly as the primary magnifier empties (Howell). */
+.secondary-strata-node.is-magnified.lens-empty {
+  fill: none;
+}
 .secondary-strata-label {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;

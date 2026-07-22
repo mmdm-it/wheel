@@ -28,7 +28,7 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, onSelect, labelFor, centerMagnified = false } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false } = {}) {
   if (!svg || !Array.isArray(items) || !items.length) return null;
   hideStratum(svg, id);
 
@@ -50,37 +50,54 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     'stroke-width': (layout.arc.radius * BAND_THICKNESS_RATIO).toFixed(1)
   }));
 
+  // The rotating nodes — all uniform, flowing THROUGH the lens. While turning,
+  // EVERY node is drawn (they stream through the empty lens, as on the primary);
+  // once settled, the node in the lens (magIndex) is omitted and the filled
+  // lodestar shows it instead, so nothing floats where the lens is anchored.
   layout.nodes.forEach(node => {
-    const r = node.isMagnified ? magR : nodeR;
+    if (!rotating && node.index === layout.magIndex) return;
     const circle = svgEl('circle', {
-      cx: node.x.toFixed(1), cy: node.y.toFixed(1), r: r.toFixed(1),
-      class: 'secondary-strata-node' + (node.isMagnified ? ' is-magnified' : ''),
-      role: 'button', tabindex: '0'
+      cx: node.x.toFixed(1), cy: node.y.toFixed(1), r: nodeR.toFixed(1),
+      class: 'secondary-strata-node'
     });
     circle.dataset.index = String(node.index);
-    if (typeof onSelect === 'function') {
-      circle.addEventListener('pointerdown', e => { e.stopPropagation(); e.preventDefault(); onSelect(node.index); });
-      circle.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onSelect(node.index); } };
-    }
     g.appendChild(circle);
-
     const rotDeg = (node.angle * 180) / Math.PI + 180;
-    // Magnified: start-anchored, pulled back over the node so the name spans it
-    // weighted inward — UNLESS centerMagnified (the tertiary's magnifier sits
-    // central enough that the full title reads best simply centred, Howell
-    // 2026-07-21). Unselected nodes are always centred on the node.
-    const pulled = node.isMagnified && !centerMagnified;
-    const labelX = pulled ? -magR * MAG_LABEL_SPAN_PULL : 0;
     const label = svgEl('text', {
-      x: labelX.toFixed(1), y: '0',
-      'text-anchor': pulled ? 'start' : 'middle', 'dominant-baseline': 'middle',
-      class: 'secondary-strata-label' + (node.isMagnified ? ' is-magnified' : ''),
+      x: '0', y: '0', 'text-anchor': 'middle', 'dominant-baseline': 'middle',
+      class: 'secondary-strata-label',
       transform: `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})`
     });
-    const raw = typeof labelFor === 'function' ? labelFor(items[node.index], node.isMagnified) : items[node.index];
+    const raw = typeof labelFor === 'function' ? labelFor(items[node.index], false) : items[node.index];
     label.textContent = String(raw ?? '').toUpperCase();
     g.appendChild(label);
   });
+
+  // THE LODESTAR (docs/DESIGN_CLARIFICATIONS.md): the magnifier is a FIXED point
+  // at magA — the reference everything rotates around. It never moves. WHILE
+  // ROTATING it is an EMPTY hollow lens the nodes stream through (like the
+  // primary's); SETTLED it fills with the item nearest the lens (magIndex),
+  // magnified. Drawn last, so a node sliding through passes behind it.
+  const mag = layout.magnifier;
+  const magRotDeg = (mag.angle * 180) / Math.PI + 180;
+  g.appendChild(svgEl('circle', {
+    cx: mag.x.toFixed(1), cy: mag.y.toFixed(1), r: magR.toFixed(1),
+    class: 'secondary-strata-node is-magnified' + (rotating ? ' lens-empty' : '')
+  }));
+  if (!rotating) {
+    // Centred for a central magnifier (the tertiary's), else start-anchored and
+    // pulled inward off the left edge (the secondary's, hard against it).
+    const pulled = !centerMagnified;
+    const magLabel = svgEl('text', {
+      x: (pulled ? -magR * MAG_LABEL_SPAN_PULL : 0).toFixed(1), y: '0',
+      'text-anchor': pulled ? 'start' : 'middle', 'dominant-baseline': 'middle',
+      class: 'secondary-strata-label is-magnified',
+      transform: `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`
+    });
+    const magRaw = typeof labelFor === 'function' ? labelFor(items[layout.magIndex], true) : items[layout.magIndex];
+    magLabel.textContent = String(magRaw ?? '').toUpperCase();
+    g.appendChild(magLabel);
+  }
 
   svg.appendChild(g);
   return g;

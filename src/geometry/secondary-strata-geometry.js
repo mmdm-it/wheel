@@ -19,26 +19,29 @@ export function getStrataArcParameters(viewport, mirrored) {
   return { hubX: primary.hubX, hubY, radius: primary.radius };
 }
 
-// Static placement: the selected item sits AT the magnifier; each sibling
-// steps one node-spacing along the arc. (Rotation — magnifier-as-selection —
-// is wired next; this is the static frame.)
-export function computeStrataLayout(viewport, itemCount, selectedIndex = 0, mirrored = false) {
+// Placement: whatever CENTER INDEX sits at the magnifier, each sibling steps
+// one node-spacing along the arc. centerIndex is a FLOAT — an integer is the
+// settled frame (a node in the lens), a fraction is mid-rotation (the ring
+// between nodes). Magnifier-as-selection: the obeyed node is the one nearest
+// the lens, round(centerIndex) (Howell 2026-07-21).
+export function computeStrataLayout(viewport, itemCount, centerIndex = 0, mirrored = false) {
   const arc = getStrataArcParameters(viewport, mirrored);
   const spacing = getNodeSpacing(viewport);
   const baseAngle = (mirrored ? MIRRORED_MAG_ANGLE_DEG : STANDARD_MAG_ANGLE_DEG) * Math.PI / 180;
   const offset = mirrored ? MIRRORED_MAG_NODE_OFFSET : 0;
   const magA = baseAngle - offset * spacing; // decreasing angle lowers the magnifier down the arc
+  const magIndex = Math.max(0, Math.min(itemCount - 1, Math.round(centerIndex)));
   const nodes = [];
   for (let i = 0; i < itemCount; i += 1) {
-    const angle = magA - (i - selectedIndex) * spacing;
+    const angle = magA - (i - centerIndex) * spacing;
     nodes.push({
       index: i,
       angle,
       x: arc.hubX + arc.radius * Math.cos(angle),
       y: arc.hubY + arc.radius * Math.sin(angle),
-      isMagnified: i === selectedIndex
+      isMagnified: i === magIndex
     });
   }
   const magnifier = { x: arc.hubX + arc.radius * Math.cos(magA), y: arc.hubY + arc.radius * Math.sin(magA), angle: magA };
-  return { arc, spacing, magA, magnifier, nodes };
+  return { arc, spacing, magA, magnifier, nodes, magIndex };
 }

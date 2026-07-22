@@ -35,11 +35,31 @@ function measureViewport() {
   return getViewportInfo(w, h);
 }
 const strataLayer = typeof document !== 'undefined' ? document.getElementById('strata-layer') : null;
+// A transparent full-viewport hit target, kept as the FIRST (bottom) child of
+// the strata layer, so the front stratum can be rotated by a drag STARTED
+// anywhere — not only on the thin band or a node. Strata groups append after
+// it, so it never covers them. Its pointer-events ride the layer's (toggled by
+// strataFront), so it's inert at the primary.
+const strataHit = strataLayer && typeof document !== 'undefined'
+  ? (() => {
+    const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    r.setAttribute('id', 'strata-hit');
+    r.setAttribute('x', '0'); r.setAttribute('y', '0');
+    r.setAttribute('fill', 'transparent');
+    // Inert by default — turned on ONLY while a stratum is front (renderStack).
+    // pointer-events:all here overrides the layer's none, so it must be gated,
+    // or it swallows every tap/swipe on the primary (Howell 2026-07-21).
+    r.style.pointerEvents = 'none';
+    strataLayer.appendChild(r);
+    return r;
+  })()
+  : null;
 function pinCanvas(vp) {
   if (svg) { svg.style.width = `${vp.width}px`; svg.style.height = `${vp.height}px`; }
   // The strata layer shares the primary's exact coordinate system (px, no
   // viewBox) so a stratum drawn at (x,y) lands where the geometry says.
   if (strataLayer) { strataLayer.style.width = `${vp.width}px`; strataLayer.style.height = `${vp.height}px`; }
+  if (strataHit) { strataHit.setAttribute('width', String(vp.width)); strataHit.setAttribute('height', String(vp.height)); }
 }
 let viewport = measureViewport();
 pinCanvas(viewport);
@@ -164,12 +184,147 @@ function renderStack() {
       selectedIndex: Math.max(0, items.indexOf(ch.selected())),
       mirrored: ch.mirrored,
       labelFor: ch.label,
-      centerMagnified: ch.centerMag,
-      onSelect: i => { ch.select(items[i]); renderStack(); }
+      centerMagnified: ch.centerMag
     });
     applyStratumDepth(g, strataFront - pos);
   });
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
+  // The front stratum is drag-rotatable; the layer and its full-area hit target
+  // catch pointer events ONLY while a stratum is front — at the primary they
+  // stay out of the way so the ring below gets every tap and swipe.
+  if (strataLayer) strataLayer.style.pointerEvents = strataFront > 0 ? 'auto' : 'none';
+  if (strataHit) strataHit.style.pointerEvents = strataFront > 0 ? 'all' : 'none';
+}
+
+// ── Magnifier-as-selection: rotate the front stratum (D.4a) ────────────────
+// The front stratum is a rotatable focus ring: drag it, and whatever node
+// SETTLES in the magnifier is obeyed — retiring tap-for-now, restoring the
+// two-motion premise (Howell 2026-07-21). Short chains, so a gentle per-node
+// sensitivity; the selection commits on release (the settle), which is when
+// the receded primary re-renders its live preview.
+// Match the PRIMARY's drag-to-rotation rate exactly (π/4 of arc per 100px), so
+// the strata feel as graceful as the ring the reader already knows — mapping
+// pixels straight to arc angle, then to node travel via the node spacing. (A
+// flat px-per-node was geared down ~7×; the thumb had to crawl — Howell.)
+const STRATA_DRAG_SENSITIVITY = Math.PI / 4 / 100; // rad per px
+const STRATA_OVERRUN = 3;         // nodes of overshoot past each end, then the wall
+const STRATA_SPRINGBACK_MS = 280; // the eased return from the overrun / into the lens
+const STRATA_TAP_SLOP = 8;        // px of travel below which a press is a TAP, not a drag
+let strataDrag = null;            // { items, center, spacing, lastX/Y, startX/Y, moved }
+let strataSnap = null;            // rAF id of an in-flight springback / snap glide
+const clampCenter = (c, n) => Math.max(0, Math.min(n - 1, c));
+const clampDrag = (c, n) => Math.max(-STRATA_OVERRUN, Math.min(n - 1 + STRATA_OVERRUN, c));
+const activeChooser = () => (strataFront > 0 ? CHOOSERS[strataFront - 1] : null);
+
+// The real node nearest a tap point (for tap-to-magnifier), or null if the tap
+// is nearest the lodestar (already selected — no move) or out in empty space.
+function nodeIndexNearPoint(event, ch) {
+  if (!ch || !strataLayer) return null;
+  const group = strataLayer.querySelector(`#${ch.id}`);
+  if (!group) return null;
+  const rect = strataLayer.getBoundingClientRect();
+  const x = event.clientX - rect.left, y = event.clientY - rect.top;
+  let best = null, bd = Infinity;
+  group.querySelectorAll('.secondary-strata-node[data-index]').forEach(n => {
+    const d = Math.hypot(Number(n.getAttribute('cx')) - x, Number(n.getAttribute('cy')) - y);
+    if (d < bd) { bd = d; best = Number(n.dataset.index); }
+  });
+  const lens = group.querySelector('.secondary-strata-node.is-magnified');
+  if (lens && Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) < bd) {
+    return null; // nearest the lens itself → already the selection
+  }
+  return best != null && bd <= viewport.SSd * 0.14 ? best : null;
+}
+
+// Re-render ONLY the front stratum at a (fractional) center index, front depth.
+// rotating (default) = the empty hollow lens with every node streaming through;
+// false = the settled, filled lodestar (used at the end of the springback).
+function renderFrontStratumAt(centerIndex, rotating = true) {
+  const ch = activeChooser();
+  if (!ch) return;
+  const items = ch.items();
+  const g = renderStratum(strataLayer, {
+    id: ch.id, viewport, items,
+    selectedIndex: centerIndex,
+    mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag,
+    rotating
+  });
+  setStratumVisual(g, 1, 0, 1); // front plane: sharp, in place
+}
+
+// Ease the ring from wherever it settled (maybe out in the overrun) back to the
+// nearest real node — the SPRINGBACK that makes the last link go taut, and the
+// snap-glide into the lens. Commit on arrival (the settle → the live preview).
+function springbackStrata(fromCenter, toIndex, ch, items) {
+  if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; }
+  const commit = () => { renderFrontStratumAt(toIndex, false); if (ch) ch.select(items[toIndex]); };
+  if (Math.abs(fromCenter - toIndex) < 0.001) { commit(); return; }
+  let start = 0;
+  const step = now => {
+    if (!start) start = now;
+    const t = Math.min(1, (now - start) / STRATA_SPRINGBACK_MS);
+    const e = 1 - Math.pow(1 - t, 3); // easeOutCubic — matches the primary's glideTo
+    renderFrontStratumAt(fromCenter + (toIndex - fromCenter) * e);
+    if (t < 1) { strataSnap = requestAnimationFrame(step); }
+    else { strataSnap = null; commit(); }
+  };
+  strataSnap = requestAnimationFrame(step);
+}
+
+if (strataLayer) {
+  strataLayer.addEventListener('pointerdown', event => {
+    const ch = activeChooser();
+    if (!ch || strataAnim) return; // nothing to rotate at the primary or mid-glide
+    if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; } // catch a springback
+    const items = ch.items();
+    strataDrag = {
+      items,
+      center: clampCenter(items.indexOf(ch.selected()), items.length),
+      spacing: getNodeSpacing(viewport), // rad per node — constant through the drag
+      lastX: event.clientX, lastY: event.clientY,
+      startX: event.clientX, startY: event.clientY,
+      moved: false
+    };
+    try { strataLayer.setPointerCapture(event.pointerId); } catch (_) { /* unsupported */ }
+  });
+  strataLayer.addEventListener('pointermove', event => {
+    if (!strataDrag) return;
+    const dx = event.clientX - strataDrag.lastX;
+    const dy = event.clientY - strataDrag.lastY;
+    strataDrag.lastX = event.clientX; strataDrag.lastY = event.clientY;
+    // Hold still until the press clears the tap slop — otherwise a tap jitters
+    // the ring. Past it, it's a drag.
+    if (!strataDrag.moved) {
+      if (Math.hypot(event.clientX - strataDrag.startX, event.clientY - strataDrag.startY) <= STRATA_TAP_SLOP) return;
+      strataDrag.moved = true;
+    }
+    // Same drag sign for BOTH rings: the mirror flips the arc's look, not the
+    // index→magnifier mapping, so no per-ring inversion — the mirrored secondary
+    // read backwards until this flip came out (Howell 2026-07-21). Pixels → arc
+    // angle → node travel (primary's rate); clampDrag allows the sprocket's
+    // 3-node overshoot past each end before the wall.
+    strataDrag.center = clampDrag(
+      strataDrag.center - (dx + dy) * STRATA_DRAG_SENSITIVITY / strataDrag.spacing,
+      strataDrag.items.length
+    );
+    renderFrontStratumAt(strataDrag.center);
+  });
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>
+    strataLayer.addEventListener(type, event => {
+      if (!strataDrag) return;
+      const { items, center, moved } = strataDrag;
+      strataDrag = null;
+      const ch = activeChooser();
+      // Tap (no drag) on a node → glide THAT node into the lens; a drag → snap
+      // to the nearest. Either way springbackStrata eases it home and commits.
+      let target = clampCenter(Math.round(center), items.length);
+      if (!moved && type === 'pointerup') {
+        const tapped = nodeIndexNearPoint(event, ch);
+        if (tapped != null) target = tapped;
+      }
+      springbackStrata(center, target, ch, items);
+    })
+  );
 }
 
 // ── The strata transition tween (D.4) ─────────────────────────────────────
@@ -206,6 +361,8 @@ function layerStates(front) {
 
 function transitionStrata(fromFront, toFront) {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
+  if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
+  if (strataHit) strataHit.style.pointerEvents = 'none';
   const from = layerStates(fromFront);
   const to = layerStates(toFront);
 
@@ -221,8 +378,7 @@ function transitionStrata(fromFront, toFront) {
       id: ch.id, viewport, items,
       selectedIndex: Math.max(0, items.indexOf(ch.selected())),
       mirrored: ch.mirrored, labelFor: ch.label,
-      centerMagnified: ch.centerMag,
-      onSelect: i => { ch.select(items[i]); renderStack(); }
+      centerMagnified: ch.centerMag
     });
     // Slide diagonally in from / out to the left: the vertical bias follows
     // each ring's home half (mirrored ⇒ from above, standard ⇒ from below), so
