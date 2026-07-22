@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.16.1 — overture tempo — rotation begins on the chorus
+- **No beat before the rotation**: the instant the chorus's last name is
+  typed, the ring moves — the stray 360ms post-chorus gap and the 750ms
+  register pause are both retired (registerMs: 0 stays as the knob)
+
 ## 3.16.0 — the overture — arrival in motion
 - **The boot reveal teaches rotation** (Rams rule 4, taught by the instrument
   itself): the wireframe now draws at an OVERTURE item and, once complete,

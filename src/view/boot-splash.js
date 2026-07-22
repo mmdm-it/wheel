@@ -44,7 +44,9 @@ const T = {
   // The overture (arrival in motion, Howell 2026-07-22): the drawing sits
   // complete for registerMs, then the LIVE wheel takes over in ink and glides
   // home — steady, no easing — while the colour arrives mid-rotation.
-  registerMs: 750,     // the finished wireframe registers with the user
+  registerMs: 0,       // NO beat between the chorus and the rotation — the
+                       // instant the last name is in, the ring moves (Howell
+                       // 2026-07-22, retiring the earlier 750ms register)
   rotateMs: 4000,      // the whole homeward rotation (linear — deliberate;
                        // tuned up from 1000 through 2500 — Howell 2026-07-22)
   colorDelayMs: 3500,  // PURE wireframe rotation this long — colour holds off
@@ -316,7 +318,9 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints, o
     const magText = new Set(magLabels.map(l => (l.textContent || '').trim()));
     const others = readLabelEls(src, '.focus-ring-label').filter(l => !magText.has((l.textContent || '').trim()));
     await Promise.all(others.map(l => typeLabel(text, l)));
-    await wait(T.gapMs);
+    // No gap here — registerMs (below) is the ONLY beat between the last of
+    // the chorus and the rotation; a stray gapMs on top made the pause ~1.1s
+    // (Howell felt it, 2026-07-22).
 
     // 5) The coda's cast: the maker's mark (the real logo group: blue circle
     // + image) and the copyright notice — they arrive only at the very end,
