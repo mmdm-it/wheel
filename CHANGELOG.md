@@ -1,5 +1,26 @@
 # Changelog
 
+## 3.17.1 — the migration keeps its color — de-popping the pyramid flight
+- **The dress changes in flight** (the pop hunt begins): migrating nodes flew
+  the pyramid→ring journey wearing the pyramid's brown and popped to the
+  ring's brown when the reals swapped in at the barrier. The clone's fill and
+  stroke now fade to the destination dress over the same 600ms ease as the
+  travel — the clicked node to the magnifier's fill-and-ring — so the swap
+  lands on identical pixels. The OUT flight mirrors it home
+- **The verse numbers grow as they fly**: pyramid labels wear an absolute px
+  size fitted to the pyramid; ring labels wear the theme's clamp. Each clone
+  label now reads its destination size off the real elements (magnifier size
+  for the clicked node) and transitions font-size in flight — and shrinks
+  back on the way home
+- **Strata render-skip**: a stratum whose requested render is identical to
+  what its group already shows keeps its children untouched (less DOM churn
+  on every stack render)
+- **KNOWN LIMIT documented**: WebKit ignores CSS filters on SVG child
+  elements — receded SVG planes don't blur on iPhone (the HTML verse panel
+  does). An SVG-native feGaussianBlur repair was tried and reverted same-day
+  (sluggish tween, filter-region cropping mid-flight); the lesson and the
+  future avenue are recorded at setPrimaryVisual and in project memory
+
 ## 3.17.0 — the globe turns — drawn wireframe dimension button
 - **The dimension button's globe is drawn by code** (src/view/dimension-globe.js)
   and retires the static PNG: an orthographic wireframe — limb, three still

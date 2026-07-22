@@ -129,6 +129,12 @@ function setPrimaryVisual(scale, blurPx) {
   const scaled = scale < 0.999;
   const tf = scaled ? scaleAboutCentre(scale) : null;
   const filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
+  // KNOWN LIMIT (Howell 2026-07-22): WebKit ignores CSS filters on SVG child
+  // elements, so iPhones show the receded SVG planes sharp (the HTML verse
+  // panel below blurs fine). An SVG-native feGaussianBlur repair was tried
+  // and reverted the same day — sluggish tween + visible filter-region
+  // cropping mid-flight. Revisit with a fresh approach; until then, iOS
+  // trades the rack-focus for smoothness.
   ['.focus-content-group', '#volume-logo-group'].forEach(sel => {
     const g = document.querySelector(`#app ${sel}`);
     if (!g) return;

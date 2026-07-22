@@ -41,17 +41,24 @@ export function hideStratum(svg, id) {
 export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false } = {}) {
   if (!svg || !Array.isArray(items) || !items.length) return null;
 
+  // Reuse a STABLE group per id — and if NOTHING about this render differs
+  // from what the group already shows, leave its children entirely alone.
+  // iOS Safari does not reliably apply a CSS `filter` to freshly-inserted
+  // SVG content: a receded stratum whose children were rebuilt in the same
+  // beat its blur was set stayed SHARP on iPhone (the settle's re-render —
+  // Howell 2026-07-22, second sighting). The primary blurs fine because its
+  // subtree persists across the filter change; with the signature skip, a
+  // settled stratum's subtree persists the same way.
+  const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height]);
+  let g = svg.querySelector(`#${id}`);
+  if (g && g.dataset.signature === signature) return g;
+  if (g) { while (g.firstChild) g.removeChild(g.firstChild); }
+  else { g = svgEl('g', { id, class: 'secondary-strata' }); svg.appendChild(g); }
+  g.dataset.signature = signature;
+
   const layout = computeStrataLayout(viewport, items.length, selectedIndex, mirrored);
   const nodeR = viewport.SSd * NODE_RADIUS_RATIO;
   const magR = viewport.SSd * MAGNIFIER_RADIUS_RATIO;
-  // Reuse a STABLE group per id — clear its children and repopulate — rather
-  // than remove-and-recreate. A freshly-inserted SVG element does not reliably
-  // receive its CSS `filter` on iOS Safari, so a receded (blurred) stratum
-  // rendered into a brand-new <g> stayed SHARP on iPhone; a persistent element
-  // (like the primary's content group) blurs correctly (Howell 2026-07-22).
-  let g = svg.querySelector(`#${id}`);
-  if (g) { while (g.firstChild) g.removeChild(g.firstChild); }
-  else { g = svgEl('g', { id, class: 'secondary-strata' }); svg.appendChild(g); }
 
   // The band is the sprocket-chain centreline (arc + straight tangents),
   // shared with the primary. A mirrored stratum reflects it across the
