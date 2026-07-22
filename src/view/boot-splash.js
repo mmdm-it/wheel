@@ -25,8 +25,10 @@ const SVGNS = 'http://www.w3.org/2000/svg';
 const T = {
   preInkMs: 400,       // grey beat before the first line
   arcDrawMs: 1600,     // the ring arc inking itself, upper-left → lower-right
-  nodeDrawMs: 200,     // each ring node's compass draw (ring only — the pyramid has its own tempo)
-  nodeGapMs: 130,      // tiny pause between nodes, so the sequence reads
+  nodeDrawMs: 100,     // each ring node's compass draw (ring only — the pyramid has
+                       // its own tempo); halved with its gap (Howell 2026-07-22):
+                       // each bead still its own little sweep, twice as brisk
+  nodeGapMs: 65,       // tiny pause between nodes, so the sequence reads
   circleDrawMs: 750,   // the magnifier / parent button
   pyramidPauseMs: 200, // breath between the parent button and the pyramid
   pyramidNodeMs: 750,  // each child pyramid circle — the parent's stately
@@ -38,7 +40,18 @@ const T = {
   logoFadeMs: 800,
   holdMs: 1000,        // the finished drawing sits complete before it dissolves
   dissolveMs: 1000,    // hand off to the live wheel
-  inputUnlockMs: 500   // keep touch blocked this long PAST the final fade-in
+  inputUnlockMs: 500,  // keep touch blocked this long PAST the final fade-in
+  // The overture (arrival in motion, Howell 2026-07-22): the drawing sits
+  // complete for registerMs, then the LIVE wheel takes over in ink and glides
+  // home — steady, no easing — while the colour arrives mid-rotation.
+  registerMs: 750,     // the finished wireframe registers with the user
+  rotateMs: 4000,      // the whole homeward rotation (linear — deliberate;
+                       // tuned up from 1000 through 2500 — Howell 2026-07-22)
+  colorDelayMs: 3500,  // PURE wireframe rotation this long — colour holds off
+                       // (the early 250ms-head-start idea is retired: the
+                       // rotation begins immediately, in ink, no beat)
+  colorFadeMs: 500     // ...then one brief fade at the end
+                       // (delay + fade = rotateMs: complete exactly at the settle)
 };
 // No graphite phase (Howell 2026-07-17): the line-work is drawn in the
 // finished wheel's own colours, read from each element. The arc is a
@@ -165,7 +178,7 @@ function typeLabel(layer, srcEl) {
   });
 }
 
-export async function playBootSplash({ svg, contentGroup, viewport, arcPoints }) {
+export async function playBootSplash({ svg, contentGroup, viewport, arcPoints, overture = null }) {
   markSeen();
   const src = svg || document.getElementById('app');
   if (!src) return;
@@ -194,10 +207,16 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
   layer.appendChild(text);
   src.appendChild(layer);
 
+  const clearColorize = () => {
+    src.classList.remove('boot-colorize');
+    src.style.removeProperty('--boot-ink');
+    src.style.removeProperty('--boot-paint');
+  };
   const reveal = () => {
-    if (contentGroup) contentGroup.style.opacity = '';
+    if (contentGroup) { contentGroup.style.transition = ''; contentGroup.style.opacity = ''; }
     if (logoGroup) logoGroup.style.opacity = '';
     if (copyright) copyright.style.opacity = '';
+    clearColorize();
     layer.remove();
     inputBlocker.remove();
   };
@@ -205,10 +224,13 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
   try {
     await wait(T.preInkMs);
 
-    // 1) The ring arc sweeps in — its compass pivot is off the page.
+    // 1) The ring arc sweeps in — its compass pivot is off the page. Kept by
+    // name: in the overture it stays on as the band's ink stand-in, fading as
+    // the real band's grey fades up.
+    let arcPath = null;
     if (arcPoints && arcPoints.length) {
-      const arc = strokeLine(lines, smoothPath(arcPoints), 2.5, ARC_COLOR);
-      inkStroke(arc, arc.getTotalLength ? arc.getTotalLength() : 2000, T.arcDrawMs);
+      arcPath = strokeLine(lines, smoothPath(arcPoints), 2.5, ARC_COLOR);
+      inkStroke(arcPath, arcPath.getTotalLength ? arcPath.getTotalLength() : 2000, T.arcDrawMs);
       await wait(T.arcDrawMs);
     }
 
@@ -257,9 +279,10 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
     // completes before any text). Each circle compass-draws at the parent's
     // stately tempo, then its fan line sweeps out from the magnifier to meet
     // it — the fan line IS the beat between nodes, no extra gap (Howell
-    // 2026-07-20). The live wheel runs the lines centre-to-centre and hides
-    // them under the filled shapes; in outline they'd stab through the
-    // circles, so trim each line to the rims.
+    // 2026-07-20). The lines run centre-to-centre exactly as the live wheel
+    // runs them — the stubs showing inside the hollow circles are WANTED: it
+    // should look like a rough draft, and the arriving colour fills obliterate
+    // them at the overture (Howell 2026-07-22, retiring the earlier rim-trim).
     const fanLines = Array.from(src.querySelectorAll('.child-pyramid-fan-line')).map(ln => ({
       x1: parseFloat(ln.getAttribute('x1')), y1: parseFloat(ln.getAttribute('y1')),
       x2: parseFloat(ln.getAttribute('x2')), y2: parseFloat(ln.getAttribute('y2')),
@@ -272,21 +295,20 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
       await wait(T.pyramidNodeMs);
       const f = fanFor(c);
       if (f) {
-        const dx = f.x2 - f.x1, dy = f.y2 - f.y1;
-        const len = Math.hypot(dx, dy) || 1;
-        const startTrim = (mag && Math.hypot(f.x1 - mag.x, f.y1 - mag.y) <= 2) ? mag.r : 0;
-        const x1 = f.x1 + (dx / len) * startTrim, y1 = f.y1 + (dy / len) * startTrim;
-        const x2 = f.x2 - (dx / len) * c.r, y2 = f.y2 - (dy / len) * c.r;
-        const seg = strokeLine(lines, `M${x1.toFixed(1)} ${y1.toFixed(1)} L${x2.toFixed(1)} ${y2.toFixed(1)}`, f.weight, f.color);
-        inkStroke(seg, len - startTrim - c.r, T.fanLineMs);
+        const len = Math.hypot(f.x2 - f.x1, f.y2 - f.y1) || 1;
+        const seg = strokeLine(lines, `M${f.x1.toFixed(1)} ${f.y1.toFixed(1)} L${f.x2.toFixed(1)} ${f.y2.toFixed(1)}`, f.weight, f.color);
+        inkStroke(seg, len, T.fanLineMs);
         await wait(T.fanLineMs);
       }
     }
     await wait(T.gapMs);
 
     // 4) Only with every circle and line on the page does the typography
-    // begin (Howell 2026-07-18): parent → magnifier → child counts one, two,
-    // three → then every other visible name at once, the chorus.
+    // begin (Howell 2026-07-18), in the hierarchy's own logic (Howell
+    // 2026-07-22): country → manufacturer → its cylinders → then the chorus
+    // of sibling manufacturers, all at once. The chorus is on the page BEFORE
+    // the overture rotation, so the familiar names are seen riding by —
+    // first in wireframe, then in colour.
     for (const l of readLabelEls(src, '.focus-ring-parent-label')) { await typeLabel(text, l); await wait(T.gapMs); }
     const magLabels = readLabelEls(src, '.focus-ring-magnifier-label:not(.focus-ring-parent-label)');
     for (const l of magLabels) { await typeLabel(text, l); await wait(T.gapMs); }
@@ -296,34 +318,84 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints })
     await Promise.all(others.map(l => typeLabel(text, l)));
     await wait(T.gapMs);
 
-    // 5) Only now — after all the line-work — the maker's mark (the real logo
-    // group: blue circle + image) and the copyright notice fade in.
-    if (logoGroup) {
-      logoGroup.style.transition = `opacity ${T.logoFadeMs}ms ease-in`;
-      logoGroup.style.opacity = '1';
-    }
-    if (copyright) {
-      copyright.style.transition = `opacity ${T.logoFadeMs}ms ease-in`;
-      copyright.style.opacity = '1';
-    }
-    await wait(T.logoFadeMs);
+    // 5) The coda's cast: the maker's mark (the real logo group: blue circle
+    // + image) and the copyright notice — they arrive only at the very end,
+    // whichever ending plays.
+    const fadeInCoda = async () => {
+      if (logoGroup) {
+        logoGroup.style.transition = `opacity ${T.logoFadeMs}ms ease-in`;
+        logoGroup.style.opacity = '1';
+      }
+      if (copyright) {
+        copyright.style.transition = `opacity ${T.logoFadeMs}ms ease-in`;
+        copyright.style.opacity = '1';
+      }
+      await wait(T.logoFadeMs);
+    };
 
-    // 6) Hold — the finished drawing complete on the desk before it lifts.
-    await wait(T.holdMs);
+    if (overture && typeof overture.glide === 'function') {
+      // 6a) THE OVERTURE — arrival in motion (Howell 2026-07-22). The finished
+      // wireframe registers, then the LIVE wheel takes over mid-drawing: same
+      // geometry, restyled in ink (hollow nodes, black outlines, the thin arc
+      // standing in for the band) via the boot-colorize class. It glides home
+      // steadily — everything performing as the full program (the chorus
+      // riding by, the pyramid dancing, the lens emptying and refilling) —
+      // while the colour fades up mid-rotation: grey band, golden fills.
+      await wait(T.registerMs);
 
-    // 7) Cross-fade to the live coloured wheel underneath.
-    if (contentGroup) {
-      contentGroup.style.transition = `opacity ${T.dissolveMs}ms ease-in-out`;
-      contentGroup.style.opacity = '';
+      src.classList.add('boot-colorize');
+      src.style.setProperty('--boot-ink', '1');
+      src.style.setProperty('--boot-paint', '0');
+      if (contentGroup) { contentGroup.style.transition = ''; contentGroup.style.opacity = ''; }
+      // The cloned drawing bows out — the live wheel in ink is its double,
+      // stroke for stroke. Only the arc line stays (the band's stand-in),
+      // fading against the real band's grey.
+      if (arcPath) layer.appendChild(arcPath);
+      lines.remove();
+      text.remove();
+
+      const colorRamp = new Promise(resolve => {
+        const t0 = performance.now();
+        const tick = now => {
+          const t = now - t0;
+          const paint = t <= T.colorDelayMs ? 0 : Math.min(1, (t - T.colorDelayMs) / T.colorFadeMs);
+          src.style.setProperty('--boot-paint', paint.toFixed(3));
+          src.style.setProperty('--boot-ink', (1 - paint).toFixed(3));
+          if (arcPath) arcPath.style.opacity = (1 - paint).toFixed(3);
+          if (paint < 1) requestAnimationFrame(tick); else resolve();
+        };
+        requestAnimationFrame(tick);
+      });
+      // Rotation and colour run on the same clock: both linear, both done at
+      // rotateMs (colorDelay + colorFade = rotateMs). If the home item is
+      // missing (data drift) the glide resolves false and the wheel simply
+      // rests where it was drawn — in full colour either way.
+      await Promise.all([overture.glide(T.rotateMs), colorRamp]);
+      clearColorize();
+      layer.remove();
+
+      // 7a) Settled at home — the coda, then release.
+      await fadeInCoda();
+      await wait(T.inputUnlockMs);
+      inputBlocker.remove();
+    } else {
+      // 6b) The classic ending (volumes without an overture): coda on the
+      // drawing, hold, dissolve to the live coloured wheel.
+      await fadeInCoda();
+      await wait(T.holdMs);
+      if (contentGroup) {
+        contentGroup.style.transition = `opacity ${T.dissolveMs}ms ease-in-out`;
+        contentGroup.style.opacity = '';
+      }
+      layer.style.transition = `opacity ${T.dissolveMs}ms ease-in-out`;
+      requestAnimationFrame(() => { layer.style.opacity = '0'; });
+      await wait(T.dissolveMs);
+      layer.remove();
+
+      // The wheel is fully faded in — hold input off a beat longer, then release.
+      await wait(T.inputUnlockMs);
+      inputBlocker.remove();
     }
-    layer.style.transition = `opacity ${T.dissolveMs}ms ease-in-out`;
-    requestAnimationFrame(() => { layer.style.opacity = '0'; });
-    await wait(T.dissolveMs);
-    layer.remove();
-
-    // The wheel is fully faded in — hold input off a beat longer, then release.
-    await wait(T.inputUnlockMs);
-    inputBlocker.remove();
   } catch (err) {
     reveal();
     throw err;

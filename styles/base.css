@@ -266,6 +266,27 @@ svg :focus-visible {
   opacity: 1;
 }
 
+/* ── The boot overture's ink (the splash's rotation beat) ─────────────────
+   The LIVE wheel performs in wireframe: hollow nodes with black outlines and
+   the grey band held back, while the splash's thin arc line stands in for the
+   band. Fan lines stay at full strength throughout — their stubs inside the
+   hollow circles are the rough-draft look (Howell 2026-07-22); the arriving
+   fills obliterate them. Per frame the splash drives --boot-paint 0→1 (the
+   colour arriving) and --boot-ink 1→0 (the outlines retiring); the class
+   comes off at the settle and these rules vanish with it. */
+#app.boot-colorize .focus-ring-band { opacity: var(--boot-paint, 1); }
+#app.boot-colorize .focus-ring-node {
+  fill-opacity: var(--boot-paint, 1);
+  stroke: #000;
+  stroke-opacity: var(--boot-ink, 0);
+  /* 1px, matching the drawn wireframe beads (the splash inks them at the
+     node's COMPUTED stroke-width — the 1px default — so anything heavier
+     visibly fattens the outlines at the handoff; Moto G caught it). */
+  stroke-width: 1px;
+}
+#app.boot-colorize .child-pyramid-node { fill-opacity: var(--boot-paint, 1); }
+#app.boot-colorize .focus-ring-magnifier-circle { fill-opacity: var(--boot-paint, 1); }
+
 /* diagnostic band removed — was debug scaffolding */
 
 .focus-ring-magnifier-circle {

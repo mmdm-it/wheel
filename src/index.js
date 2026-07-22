@@ -1186,7 +1186,7 @@ export function createApp({
     return 1000 * Math.log10(distance) + 250;
   };
 
-  const rotateToIndex = index => {
+  const rotateToIndex = (index, opts = {}) => {
     const item = nav.items?.[index];
     if (!item) return false; // an empty link is never a destination
     const targetAngle = magnifier.angle;
@@ -1196,7 +1196,9 @@ export function createApp({
     const clampedRotation = clampRotation(desiredRotation, bounds);
     // Travel is measured from where the ring is GOING, not where it sat.
     const fromIndex = pendingSelectionIndex ?? nav.getCurrentIndex();
-    const duration = primaryClickDuration(fromIndex, index);
+    // A caller may fix the duration (the boot overture's steady, deliberate
+    // glide); otherwise the click's log-of-distance tempo applies.
+    const duration = Number.isFinite(opts.durationMs) ? opts.durationMs : primaryClickDuration(fromIndex, index);
     if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
       window.__tapDebugLog('rotate-node-into-magnifier', {
         fromIndex,
@@ -1218,6 +1220,7 @@ export function createApp({
     animateSnapTo(clampedRotation, duration, () => {
       pendingSelectionIndex = null;
       nav.selectIndex(index);
+      if (typeof opts.onArrive === 'function') opts.onArrive();
     });
     return true;
   };
@@ -1404,6 +1407,20 @@ export function createApp({
       onNodeClick(nodes[idx]);
     },
     refreshPyramid: () => render(rotation),
+    // Glide the ring to a named item over a FIXED duration — the boot
+    // overture's steady travel (animateSnapTo is linear: no accel, no decel).
+    // Resolves true on arrival (selection committed), false if the item is
+    // not in the chain. Everything live (parent header, pyramid) dances along
+    // per frame, exactly as in a finger drag.
+    glideToItem(itemId, durationMs) {
+      const items = nav.items || [];
+      const idx = items.findIndex(it => it && (it.id === itemId || it.name === itemId || it.label === itemId));
+      if (idx < 0) return Promise.resolve(false);
+      return new Promise(resolve => {
+        const ok = rotateToIndex(idx, { durationMs, onArrive: () => resolve(true) });
+        if (!ok) resolve(false);
+      });
+    },
     // The dimension stack recedes/returns the primary. When receded, fill the
     // straight tangent runs with the chain's beyond-window links; when at the
     // front, span 0 restores the arc-only window. A static re-render — off the

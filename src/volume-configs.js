@@ -99,6 +99,10 @@ const volumeConfigs = {
         level,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
+        // The boot reveal's overture (data-declared): the item the splash
+        // DRAWS at before its rotation beat glides the ring home to
+        // initialItemId. Volumes without the key boot the classic reveal.
+        splashOvertureItem: startup.splash_overture_item || null,
         locale: params.get('lang') || null,
         cousinMode: arrangement !== 'siblings-only'
       };

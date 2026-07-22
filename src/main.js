@@ -1202,6 +1202,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
 
   const translationName = translationsMeta?.translations?.[translationId]?.name || translationId;
 
+  // The splash overture (data-declared, volume-agnostic): when the reveal
+  // will play and the volume names an overture item, the chain BOOTS there —
+  // the wireframe is drawn at the overture — and the splash's rotation beat
+  // glides the live wheel home to the configured start. Returning visitors
+  // skip the splash and boot at home directly; nothing changes for them.
+  const overtureHomeId = options.initialItemId || null;
+  const overtureItemId = playSplash && options.splashOvertureItem && overtureHomeId
+    && options.splashOvertureItem !== overtureHomeId ? options.splashOvertureItem : null;
+  if (overtureItemId) options.initialItemId = overtureItemId;
+
   const chainResult = await config.buildChain(manifest, options, namesMap);
   performance.mark('wheel:chain-built');
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
@@ -1428,11 +1438,19 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
 
   if (playSplash) {
     const contentGroup = app?.view?.contentGroup || null;
-    playBootSplash({ svg, contentGroup, viewport, arcPoints: computeArcPoints(viewport) })
+    playBootSplash({
+      svg, contentGroup, viewport, arcPoints: computeArcPoints(viewport),
+      // The overture's homeward glide — the splash calls this at its rotation
+      // beat; the wheel travels steady (linear) and commits on arrival.
+      overture: overtureItemId && app ? { glide: ms => app.glideToItem(overtureHomeId, ms) } : null
+    })
       .catch(err => {
         console.warn('[wheel] boot splash failed', err);
         if (contentGroup) contentGroup.style.opacity = '';
         if (svg) svg.style.opacity = '';
+        // Never strand the wheel at the overture: if the reveal died before
+        // its rotation, snap home now (0ms — the error path has no theatre).
+        if (overtureItemId && app) app.glideToItem(overtureHomeId, 0);
       });
   }
 }

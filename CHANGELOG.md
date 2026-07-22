@@ -1,5 +1,37 @@
 # Changelog
 
+## 3.16.0 — the overture — arrival in motion
+- **The boot reveal teaches rotation** (Rams rule 4, taught by the instrument
+  itself): the wireframe now draws at an OVERTURE item and, once complete,
+  the LIVE wheel takes over mid-drawing — same geometry, restyled in ink —
+  and glides home to the configured boot item in one steady, linear travel.
+  Everything performs as the full program during the glide: the chorus of
+  names rides by, the lens empties and refills, the parent header follows,
+  the child pyramid dances — while the colour (grey band, golden fills)
+  fades up over the final half second, completing exactly at the settle
+- **The first manufacturer's honest pyramid**: the overture draws at a
+  four-child manufacturer (buckets 6, 8, 12, 18) — the fan visibly DEPENDS
+  on what is in the lens, four children before the glide, two at home
+- **Data-declared, volume-agnostic**: `splash_overture_item` sits beside
+  `initial_magnified_item` in a volume's own display config; shared code
+  ferries only the generic key (test-enforced, 4 new tests). Volumes without
+  the key keep the classic hold-and-dissolve reveal. Returning visitors skip
+  the splash and boot at home directly — nothing changes for them
+- **Typography in the hierarchy's own logic**: country → manufacturer → its
+  cylinder counts → the chorus of sibling manufacturers, all before a 750ms
+  register pause and the rotation
+- **Rough-draft fan lines**: drawn centre-to-centre exactly as the live
+  wheel runs them, stubs showing inside the hollow circles (the rim-trim is
+  retired); the arriving fills obliterate the stubs
+- **Tempo**: bead sweep twice as brisk (100ms draw / 65ms gap); rotation
+  4000ms linear — 3.5s pure wireframe, then a 500ms colour fade landing on
+  the settle. All knobs in the T block
+- **`glideToItem(id, durationMs)`** joins the wheel's API — fixed-duration
+  linear travel to a named item, selection committed on arrival
+- **fix: ink stroke weight** — the rotation's node outlines fattened from
+  1px to 1.5px at handoff (Blink showed it; WebKit smoothed it). The live
+  wireframe now holds the drawing's own 1px until the colour retires it
+
 ## 3.15.0 — the fifty tongues — language registry stress test, strata fixes
 - **The fifty tongues** (data/gutenberg/languages.json): the secondary
   stratum now carries fifty languages — a thumbnail history of the expansion
