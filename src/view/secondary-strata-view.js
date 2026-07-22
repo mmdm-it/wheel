@@ -28,7 +28,7 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, onSelect, labelFor } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, onSelect, labelFor, centerMagnified = false } = {}) {
   if (!svg || !Array.isArray(items) || !items.length) return null;
   hideStratum(svg, id);
 
@@ -66,15 +66,18 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
 
     const rotDeg = (node.angle * 180) / Math.PI + 180;
     // Magnified: start-anchored, pulled back over the node so the name spans it
-    // weighted inward. Others: centred on the node, as before.
-    const labelX = node.isMagnified ? -magR * MAG_LABEL_SPAN_PULL : 0;
+    // weighted inward — UNLESS centerMagnified (the tertiary's magnifier sits
+    // central enough that the full title reads best simply centred, Howell
+    // 2026-07-21). Unselected nodes are always centred on the node.
+    const pulled = node.isMagnified && !centerMagnified;
+    const labelX = pulled ? -magR * MAG_LABEL_SPAN_PULL : 0;
     const label = svgEl('text', {
       x: labelX.toFixed(1), y: '0',
-      'text-anchor': node.isMagnified ? 'start' : 'middle', 'dominant-baseline': 'middle',
+      'text-anchor': pulled ? 'start' : 'middle', 'dominant-baseline': 'middle',
       class: 'secondary-strata-label' + (node.isMagnified ? ' is-magnified' : ''),
       transform: `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})`
     });
-    const raw = typeof labelFor === 'function' ? labelFor(items[node.index]) : items[node.index];
+    const raw = typeof labelFor === 'function' ? labelFor(items[node.index], node.isMagnified) : items[node.index];
     label.textContent = String(raw ?? '').toUpperCase();
     g.appendChild(label);
   });

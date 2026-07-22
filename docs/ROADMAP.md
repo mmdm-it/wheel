@@ -117,9 +117,10 @@ last (F).
     original "static, sharp, unblurred scaffolding" scope; it absorbed most
     of D.4's visual and all of D.5's static blur:
     - Secondary (mirrored) AND **tertiary** (standard) rings — the third
-      stratum the D.1 draft called unneeded, now the translation plane, with
-      the single-translation skip (Latin ⇄ secondary only; English/Greek
-      earn the third).
+      stratum the D.1 draft called unneeded, now the translation plane, shown
+      for EVERY language (even single-translation Latin, whose one-node
+      tertiary names the Clementine Vulgate — Howell reversed the earlier
+      skip 2026-07-21: the reader wants to know which edition they read).
     - The **honest sprocket chain**: bands are arc + straight tangent runs
       (vertical up / ~SE, mirrored), not a circle — a receded ring must read
       as a straight chain, never a hose-reel coil.

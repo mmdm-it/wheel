@@ -75,8 +75,11 @@ const CHOOSERS = [
     label: id => dimensionBridge.languageLabel(id), // each tongue names itself
     selected: () => dimensionBridge.getSelection().language,
     select: id => dimensionBridge.setLanguage(id) },
-  { id: 'tertiary', mirrored: false,
+  { id: 'tertiary', mirrored: false, centerMag: true,
     items: () => dimensionBridge.translationsOf(),
+    // Magnified node: the full, spelled-out translation title (centred in the
+    // magnifier); the rest keep the abbreviation/key — Howell 2026-07-21.
+    label: (key, isMagnified) => (isMagnified ? dimensionBridge.translationName(key) : key),
     selected: () => dimensionBridge.getSelection().translation,
     select: key => dimensionBridge.setTranslation(key) }
 ];
@@ -94,42 +97,57 @@ function scaleAboutCentre(scale) {
   const cy = viewport.height / 2;
   return `translate(${cx} ${cy}) scale(${scale}) translate(${-cx} ${-cy})`;
 }
-// Depth (scale + blur) applied to the primary plane — its ring/logo (SVG,
-// in #app) and its detail sector (HTML panel), both scaled about the
-// viewport centre so the off-screen hub drops. The strata render in a layer
-// ABOVE both, so a front stratum covers this receded content on its own.
-function applyPrimaryDepth(level) {
-  const receded = level > 0;
-  const scale = STRATA_DEPTHS[level];
-  const tf = receded ? scaleAboutCentre(scale) : null;
-  const blur = receded ? `blur(${STRATA_BLURS[level]}px)` : '';
+// A plane's DEPTH is a uniform scale about the viewport centre (which drops
+// the off-screen hub — Disney multiplane) plus a rack-focus blur. These
+// setters apply an ARBITRARY scale/blur/opacity, so the settled snap and the
+// animated tween drive the same pixels through one path.
+function setPrimaryVisual(scale, blurPx) {
+  const scaled = scale < 0.999;
+  const tf = scaled ? scaleAboutCentre(scale) : null;
+  const filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
   ['.focus-content-group', '#volume-logo-group'].forEach(sel => {
     const g = document.querySelector(`#app ${sel}`);
     if (!g) return;
     if (tf) g.setAttribute('transform', tf); else g.removeAttribute('transform');
-    g.style.filter = blur;
+    g.style.filter = filter;
   });
-  // Fill the straight tangent runs with beyond-window chain links while the
-  // ring is receded; span 0 restores the arc-only window at the front.
-  if (currentApp && typeof currentApp.setTangentFill === 'function') {
-    currentApp.setTangentFill(STRATA_TANGENT_SPANS[level] || 0);
-  }
   const panel = document.getElementById('detail-panel');
   if (panel) {
     const cx = viewport.width / 2, cy = viewport.height / 2;
-    const rect = panel.getBoundingClientRect();
-    panel.style.transformOrigin = `${cx - rect.left}px ${cy - rect.top}px`;
-    panel.style.transform = receded ? `scale(${scale})` : '';
-    panel.style.filter = blur;
-    // No z-index games: the strata render in #strata-layer, which already
-    // sits above the panel, so a front stratum covers this receded text.
+    // Scale about the viewport CENTRE — the point the SVG ring/logo scale
+    // about — so the verse text stays seated on the blue circle. The panel is
+    // fixed at inset:0, so (cx,cy) is its centre; transform-origin is defined
+    // pre-transform, so it's stable across successive scales. (Reading
+    // getBoundingClientRect here slid the origin on a second recede, Howell
+    // 2026-07-21.)
+    panel.style.transformOrigin = `${cx}px ${cy}px`;
+    panel.style.transform = scaled ? `scale(${scale})` : '';
+    panel.style.filter = filter;
+  }
+}
+function setStratumVisual(g, scale, blurPx, opacity = 1, offsetX = 0, offsetY = 0) {
+  if (!g) return;
+  const still = Math.abs(offsetX) < 0.5 && Math.abs(offsetY) < 0.5;
+  if (scale > 0.999 && blurPx < 0.01 && opacity > 0.999 && still) {
+    g.removeAttribute('transform'); g.style.filter = ''; g.style.opacity = ''; return;
+  }
+  const slide = still ? '' : `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) `;
+  g.setAttribute('transform', `${slide}${scaleAboutCentre(scale)}`);
+  g.style.filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
+  g.style.opacity = String(opacity);
+}
+
+// Settled depths (the snap, and the end of a tween): a plane at stack-level L
+// sits at STRATA_DEPTHS[L], blurred STRATA_BLURS[L]. The primary also fills
+// its tangent runs to match its recede.
+function applyPrimaryDepth(level) {
+  setPrimaryVisual(STRATA_DEPTHS[level], STRATA_BLURS[level]);
+  if (currentApp && typeof currentApp.setTangentFill === 'function') {
+    currentApp.setTangentFill(STRATA_TANGENT_SPANS[level] || 0);
   }
 }
 function applyStratumDepth(g, level) {
-  if (!g) return;
-  if (level === 0) { g.removeAttribute('transform'); g.style.filter = ''; return; }
-  g.setAttribute('transform', scaleAboutCentre(STRATA_DEPTHS[level]));
-  g.style.filter = `blur(${STRATA_BLURS[level]}px)`;
+  setStratumVisual(g, STRATA_DEPTHS[level], STRATA_BLURS[level], 1);
 }
 
 function renderStack() {
@@ -146,6 +164,7 @@ function renderStack() {
       selectedIndex: Math.max(0, items.indexOf(ch.selected())),
       mirrored: ch.mirrored,
       labelFor: ch.label,
+      centerMagnified: ch.centerMag,
       onSelect: i => { ch.select(items[i]); renderStack(); }
     });
     applyStratumDepth(g, strataFront - pos);
@@ -153,23 +172,118 @@ function renderStack() {
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
 }
 
+// ── The strata transition tween (D.4) ─────────────────────────────────────
+// The recede is a snap today; this glides it — a camera pull-back. The front
+// plane recedes to 0.4/0.2 while the incoming plane arrives from "behind the
+// head" (starting a touch closer than the film plane, ENTER_SCALE) and settles
+// at the front; a leaving plane drifts back and fades. Blur is DROPPED during
+// motion (the C.2 per-frame villain) and snapped back on settle, where the
+// receded planes are static again. Tunable feel knobs below.
+const STRATA_TWEEN_MS = 600;
+// Incoming/leaving strata TRAVEL in from / out to the left, DIAGONALLY: mostly
+// horizontal, with a vertical bias toward each ring's own home half — the
+// mirrored secondary from ABOVE-left, the standard tertiary from BELOW-left —
+// so the slide runs on the same diagonal the recede backs away on, not a flat
+// horizontal shift (Howell 2026-07-21). A translate (the whole ring travels),
+// NOT a scale about centre (which only inflates the edges and reads as a pop).
+const STRATA_SLIDE_X = 0.9;  // × viewport width
+const STRATA_SLIDE_Y = 0.4;  // × viewport height — the diagonal's vertical bias
+const lerp = (a, b, t) => a + (b - a) * t;
+const easeInOut = t => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);
+let strataAnim = null;
+
+// Each plane's settled visual for a given front (level < 0 ⇒ off-stack, hidden).
+function layerStates(front) {
+  const states = { __primary: { scale: STRATA_DEPTHS[front], blur: STRATA_BLURS[front], opacity: 1, offsetX: 0, offsetY: 0 } };
+  CHOOSERS.forEach((ch, ci) => {
+    const level = front - (ci + 1);
+    states[ch.id] = level >= 0
+      ? { scale: STRATA_DEPTHS[level], blur: STRATA_BLURS[level], opacity: 1, offsetX: 0, offsetY: 0 }
+      : { scale: 1, blur: 0, opacity: 0, offsetX: 0, offsetY: 0 };
+  });
+  return states;
+}
+
+function transitionStrata(fromFront, toFront) {
+  if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
+  const from = layerStates(fromFront);
+  const to = layerStates(toFront);
+
+  // Render every chooser present at EITHER end, so a leaving plane persists
+  // through the glide and an entering one has something to animate; hide the rest.
+  const groups = {};
+  CHOOSERS.forEach((ch, ci) => {
+    const pos = ci + 1;
+    const inFrom = pos <= fromFront, inTo = pos <= toFront;
+    if (!inFrom && !inTo) { hideStratum(strataLayer, ch.id); return; }
+    const items = ch.items();
+    groups[ch.id] = renderStratum(strataLayer, {
+      id: ch.id, viewport, items,
+      selectedIndex: Math.max(0, items.indexOf(ch.selected())),
+      mirrored: ch.mirrored, labelFor: ch.label,
+      centerMagnified: ch.centerMag,
+      onSelect: i => { ch.select(items[i]); renderStack(); }
+    });
+    // Slide diagonally in from / out to the left: the vertical bias follows
+    // each ring's home half (mirrored ⇒ from above, standard ⇒ from below), so
+    // the whole ring travels on the recede's diagonal. Full opacity — the
+    // travel carries it in, no fade.
+    const dx = -viewport.width * STRATA_SLIDE_X;
+    const dy = (ch.mirrored ? -1 : 1) * viewport.height * STRATA_SLIDE_Y;
+    if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], offsetX: dx, offsetY: dy };
+    if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], offsetX: dx, offsetY: dy };
+  });
+
+  // Populate the primary's tangent chain for the DESTINATION now, so the links
+  // are already there as it recedes (static re-render, off the per-frame path).
+  if (currentApp && typeof currentApp.setTangentFill === 'function') {
+    currentApp.setTangentFill(STRATA_TANGENT_SPANS[toFront] || 0);
+  }
+
+  let raf = 0, start = 0, cancelled = false;
+  const frame = now => {
+    if (cancelled) return;
+    if (!start) start = now;
+    const e = easeInOut(Math.min(1, (now - start) / STRATA_TWEEN_MS));
+    // Hold each plane's STARTING blur through the motion — a receded plane must
+    // never sharpen (Howell 2026-07-21); a front plane holds 0 and recedes
+    // sharp as before. Constant radius = the blurred layer renders once, only
+    // the scale moves. Blur snaps to its destination on settle (renderStack).
+    setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), from.__primary.blur);
+    CHOOSERS.forEach(ch => {
+      const g = groups[ch.id]; if (!g) return;
+      const f = from[ch.id], t = to[ch.id];
+      setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, lerp(f.opacity, t.opacity, e),
+        lerp(f.offsetX || 0, t.offsetX || 0, e), lerp(f.offsetY || 0, t.offsetY || 0, e));
+    });
+    if (e < 1) { raf = requestAnimationFrame(frame); }
+    else { strataAnim = null; renderStack(); } // settle: final depths + blur, prune hidden
+  };
+  raf = requestAnimationFrame(frame);
+  strataAnim = { cancel: () => { cancelled = true; cancelAnimationFrame(raf); } };
+}
+
 const dimensionAvailable = () => dimensionBridge.languagesAvailable().length > 0;
 
-// The tertiary stratum (translations) is redundant for a language with a
-// single translation — Latin has only the Vulgate, so its cycle is just
-// primary ⇄ secondary (Howell 2026-07-21). English (NAB/DRA) and Greek
-// (LXX/BYZ) have two, so they earn the third stratum. The gate reads the
-// language now in the magnifier (== the current selection under tap-select).
-const tertiaryAvailable = () => dimensionBridge.translationsOf(dimensionBridge.getSelection().language).length > 1;
-const maxStrataFront = () => (tertiaryAvailable() ? 2 : 1);
+// EVERY language shows a tertiary stratum, even a single-translation one: the
+// reader wants to know WHICH translation they're reading — the Vulgate is a
+// specific edition, not an absence of choice — so Latin's magnifier names the
+// Clementine Vulgate all the same (Howell 2026-07-21, reversing the earlier
+// single-translation skip). Every language has at least one translation, so
+// the tertiary always has a node to show.
+const maxStrataFront = () => CHOOSERS.length; // primary(0) → secondary(1) → tertiary(2)
 
 function cycleStrata() {
   if (!dimensionAvailable()) return;
   const max = maxStrataFront();
+  const from = strataFront;
   strataFront = strataFront >= max ? 0 : strataFront + 1;
-  renderStack();
+  if (from === strataFront) return;
+  transitionStrata(from, strataFront);
+  if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
 }
 function resetStrata() {
+  if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
   strataFront = 0;
   CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
   renderStack();

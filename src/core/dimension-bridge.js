@@ -105,6 +105,14 @@ export function createDimensionBridge({ store, translationsMeta = null } = {}) {
         || id;
     },
 
+    // A translation's full name (registry `name`), for the magnified node on
+    // the tertiary stratum — the spelled-out edition title, not the key/
+    // abbreviation. Unselected nodes keep the abbreviation. Falls back to the
+    // key if the registry names no title.
+    translationName(key) {
+      return meta?.translations?.[key]?.name || key;
+    },
+
     // The tertiary stratum's nodes: every translation KEY in a language, in
     // registry order (VUL before NEO, NAB before DRA). Defaults to the
     // selected language, then to the first language in the registry — so the

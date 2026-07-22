@@ -51,8 +51,9 @@ unambiguous. "Reader" is wrong — a volume may be a music library, not a text.
   language).
 - The **tertiary strata** — a third ring, standard-hubbed again, for the
   choice *within* the secondary's selection (for the Bible: which
-  translation of the chosen language). It appears only when that choice is
-  real — a language with a single translation skips it (D.3, below).
+  translation of the chosen language). It appears for **every** language,
+  even a single-translation one — the reader wants to know *which* edition
+  they're reading, choice or not (Howell 2026-07-21, D.3 below).
 
 **The dimension button toggles the two.** It is the wireframe globe parked
 in a corner — a **neutral icon** that does not display the current value
@@ -127,10 +128,12 @@ a pyramid would have read as ordinary drill-down.
 
 A translation belongs to exactly one language (no Greek KJV; the data
 carries a single `language` per translation), so the ladder is clean. The
-tertiary appears **only when the choice is real**: Latin has one
-translation (the Vulgate), so its cycle is just primary ⇄ secondary; a
-language with two or more earns the third plane. The gate reads the language
-in the secondary magnifier, so it follows the wheel.
+tertiary appears for **every** language — a single-translation one (Latin →
+Clementine Vulgate) shows a one-node ring that *names* the edition, because
+the reader wants to know which translation they're reading whether or not
+there's a choice (Howell 2026-07-21, reversing an earlier skip). The
+magnified tertiary node carries the edition's full title; the rest keep
+their abbreviations.
 
 **Prominence is the default.** The secondary strata's pyramid uses the C.5 star
 field: the most-used translation in the magnified language is the largest

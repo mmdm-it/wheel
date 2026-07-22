@@ -1,5 +1,25 @@
 # Changelog
 
+## 3.13.2 — the strata move
+- **The strata transition glides** (D.4b) instead of snapping — a camera
+  pull-back: the front plane recedes while the incoming plane travels in on
+  a diagonal (the mirrored secondary from above-left, the standard tertiary
+  from below-left, matching the recede's axis), and leaving planes slide back
+  out. 600ms. Each plane HOLDS its starting blur through the motion (a
+  receded plane never sharpens) and snaps to its destination blur on settle;
+  the held-constant blur renders once and only the transform moves, so it
+  stays smooth even on the Moto G
+- **The receded detail panel scales about the viewport centre** — the same
+  point the SVG ring/logo use — so the verse text stays seated on the blue
+  circle at every depth (was reading getBoundingClientRect, which drifted the
+  origin on a second recede and slid the text off the circle)
+- **The magnified translation node names its edition** — the full registry
+  title (Clementine Vulgate, Douay-Rheims…), centred in the magnifier;
+  unselected nodes keep the abbreviation (VUL, DRA)
+- **Every language shows a tertiary stratum**, even a single-translation one:
+  the reader wants to know which edition they're reading, choice or not
+  (reverses the earlier single-translation skip)
+
 ## 3.13.1 — Verse type, and the reading tap
 - **Verse text is one calm size, filling the sector.** The old auto-fit
   ballooned short verses and shrank long ones; verses now share a single
