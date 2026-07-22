@@ -26,7 +26,8 @@
       "versification": "MT",
       "direction": "rtl",
       "testament": "OT",
-      "description": "Digital version of the Leningrad Codex"
+      "description": "Digital version of the Leningrad Codex",
+      "nativeName": "כתב יד לנינגרד"
     },
     "VUL": {
       "name": "Clementine Vulgate",
@@ -35,7 +36,8 @@
       "versification": "VUL",
       "direction": "ltr",
       "testament": "both",
-      "description": "Official Latin Bible of the Catholic Church (1592)"
+      "description": "Official Latin Bible of the Catholic Church (1592)",
+      "nativeName": "Vulgata Clementina"
     },
     "LXX": {
       "name": "Septuagint",
@@ -44,7 +46,8 @@
       "versification": "LXX",
       "direction": "ltr",
       "testament": "OT",
-      "description": "Greek translation of the Hebrew Bible (3rd-1st c. BCE)"
+      "description": "Greek translation of the Hebrew Bible (3rd-1st c. BCE)",
+      "nativeName": "Οἱ Ἑβδομήκοντα"
     },
     "BYZ": {
       "name": "Byzantine Textform",
@@ -53,7 +56,8 @@
       "versification": "MT",
       "direction": "ltr",
       "testament": "NT",
-      "description": "Majority Text of the Greek New Testament"
+      "description": "Majority Text of the Greek New Testament",
+      "nativeName": "Βυζαντινὸν Κείμενον"
     },
     "NAB": {
       "name": "New American Bible",
@@ -63,7 +67,8 @@
       "direction": "ltr",
       "testament": "both",
       "approved_by": "USCCB",
-      "description": "Modern Catholic English translation (uses Hebrew numbering)"
+      "description": "Modern Catholic English translation (uses Hebrew numbering)",
+      "nativeName": "New American Bible"
     },
     "DRA": {
       "name": "Douay-Rheims",
@@ -72,7 +77,8 @@
       "versification": "VUL",
       "direction": "ltr",
       "testament": "both",
-      "description": "Traditional Catholic English translation (uses Vulgate numbering)"
+      "description": "Traditional Catholic English translation (uses Vulgate numbering)",
+      "nativeName": "Douay-Rheims"
     },
     "SYN": {
       "name": "Russian Synodal",
@@ -81,7 +87,8 @@
       "versification": "LXX",
       "direction": "ltr",
       "testament": "both",
-      "description": "Russian Orthodox Synodal translation (1876)"
+      "description": "Russian Orthodox Synodal translation (1876)",
+      "nativeName": "Синодальный перевод"
     },
     "NEO": {
       "name": "Bible Crampon / Néo-Crampon",
@@ -90,7 +97,8 @@
       "versification": "VUL",
       "direction": "ltr",
       "testament": "both",
-      "description": "French Catholic translation"
+      "description": "French Catholic translation",
+      "nativeName": "Bible Crampon"
     },
     "CEI": {
       "name": "CEI (Conferenza Episcopale Italiana)",
@@ -99,7 +107,8 @@
       "versification": "VUL",
       "direction": "ltr",
       "testament": "both",
-      "description": "Official Italian Catholic translation"
+      "description": "Official Italian Catholic translation",
+      "nativeName": "Bibbia CEI"
     },
     "VAT_ES": {
       "name": "Vatican Spanish",
@@ -108,7 +117,8 @@
       "versification": "VUL",
       "direction": "ltr",
       "testament": "both",
-      "description": "Spanish translation from Vatican sources"
+      "description": "Spanish translation from Vatican sources",
+      "nativeName": "Biblia (Vaticano)"
     },
     "POR": {
       "name": "Portuguese Catholic",
@@ -117,7 +127,8 @@
       "versification": "VUL",
       "direction": "ltr",
       "testament": "both",
-      "description": "Portuguese Catholic translation (pending)"
+      "description": "Portuguese Catholic translation (pending)",
+      "nativeName": "Bíblia (Vaticano)"
     }
   },
   "language_display_order": [
