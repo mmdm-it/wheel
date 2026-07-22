@@ -18,6 +18,7 @@ import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing } from './geometry/focus-ring-geometry.js';
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
+import { mountDimensionGlobe } from './view/dimension-globe.js';
 
 const svg = document.getElementById('app');
 
@@ -111,6 +112,9 @@ const isSecondaryOpen = isStrataOpen;      // the primary pointer guard reads th
 // where the sprocket-wheel-and-chain analogy reads (Howell 2026-07-21).
 let detailSectorVisible = false;
 const dimensionButton = typeof document !== 'undefined' ? document.getElementById('dimension-button') : null;
+// The button's wireframe globe, drawn by code so it can truly turn: once on
+// arrival, and once per press — settling exactly as the stratum recedes.
+const dimensionGlobe = mountDimensionGlobe(dimensionButton);
 
 function scaleAboutCentre(scale) {
   const cx = viewport.width / 2;
@@ -436,6 +440,8 @@ function cycleStrata() {
   strataFront = strataFront >= max ? 0 : strataFront + 1;
   if (from === strataFront) return;
   transitionStrata(from, strataFront);
+  // The globe turns with the recede — same duration, settling together.
+  if (dimensionGlobe) dimensionGlobe.spin(STRATA_TWEEN_MS);
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
 }
 function resetStrata() {
@@ -450,7 +456,11 @@ function resetStrata() {
 function updateDimensionButton() {
   if (!dimensionButton) return;
   const show = dimensionAvailable() && detailSectorVisible;
+  const arriving = show && dimensionButton.hidden;
   dimensionButton.hidden = !show;
+  // The entrance: the globe appears with a quick turn when the detail
+  // sector brings it in (Howell 2026-07-22).
+  if (arriving && dimensionGlobe) dimensionGlobe.spin();
   if (!show && isStrataOpen()) resetStrata();
 }
 function refreshDimensionButton() {

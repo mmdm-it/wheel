@@ -193,12 +193,15 @@ svg :focus-visible {
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 #dimension-button[hidden] { display: none; }
-#dimension-button img {
+#dimension-button svg {
   width: 100%;
   height: 100%;
   display: block;
   pointer-events: none;
   user-select: none;
+  /* The globe's line-work rides currentColor — dark grey, not ink: present
+     when sought, quiet when not (Howell 2026-07-22, tuned by eye). */
+  color: #363636;
 }
 #dimension-button:hover { opacity: 1; }
 #dimension-button[aria-pressed="true"] { opacity: 1; transform: scale(1.08); }

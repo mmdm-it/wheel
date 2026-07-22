@@ -1,5 +1,23 @@
 # Changelog
 
+## 3.17.0 — the globe turns — drawn wireframe dimension button
+- **The dimension button's globe is drawn by code** (src/view/dimension-globe.js)
+  and retires the static PNG: an orthographic wireframe — limb, three still
+  parallels, four meridian ellipses whose widths follow R·|sin(longitude +
+  phase)| — on a tilted axis. Driving the phase turns the sphere honestly:
+  meridians slide across the face and around the back; the parallels, as on
+  a real globe, never move
+- **It turns on arrival**: when the detail sector opens and the button
+  appears, it comes in spinning
+- **It turns on every press**: a quarter axial turn sharing the strata
+  tween's 600ms clock — the globe and the receding stratum settle on the
+  same frame. Spins accumulate (never rewind), and every quarter-turn lands
+  back on the balanced canonical pose
+- **One-pixel line-work** (vector-effect: non-scaling-stroke — a true screen
+  pixel at any button size), dark grey #363636 rather than ink black:
+  present when sought, quiet when not. Vector, filter-free, themable via
+  currentColor; reduced-motion users get the pose without the theatre
+
 ## 3.16.1 — overture tempo — rotation begins on the chorus
 - **No beat before the rotation**: the instant the chorus's last name is
   typed, the ring moves — the stray 360ms post-chorus gap and the 750ms
