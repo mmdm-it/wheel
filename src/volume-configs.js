@@ -118,7 +118,12 @@ const volumeConfigs = {
       return name;
     },
     buildChain: (manifest, options) => buildCatalogManufacturers(manifest, { initialItemId: options.initialItemId }),
-    createHandlers: makeAdapterHandlers('catalog')
+    createHandlers: makeAdapterHandlers('catalog'),
+    // Search (the navigator's dividers) exists only here: this volume's
+    // model namespace is flat and arbitrary — the index beats the walk.
+    // Structured volumes (scripture's ordered books, the calendar's dates)
+    // are already optimally served by the wheel itself (Howell 2026-07-22).
+    hasSearch: true
   },
   calendar: {
     id: 'calendar',

@@ -16,9 +16,10 @@ import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
-import { getArcParameters, getViewportWindow, getNodeSpacing } from './geometry/focus-ring-geometry.js';
+import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle } from './geometry/focus-ring-geometry.js';
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 import { mountDimensionGlobe } from './view/dimension-globe.js';
+import { mountSearchDividers } from './view/search-dividers.js';
 
 const svg = document.getElementById('app');
 
@@ -115,6 +116,242 @@ const dimensionButton = typeof document !== 'undefined' ? document.getElementByI
 // The button's wireframe globe, drawn by code so it can truly turn: once on
 // arrival, and once per press — settling exactly as the stratum recedes.
 const dimensionGlobe = mountDimensionGlobe(dimensionButton);
+// The navigator's dividers — the search instrument's icon, sharing the
+// globe's corner: dividers while browsing, globe at a leaf.
+const searchButton = typeof document !== 'undefined' ? document.getElementById('search-button') : null;
+mountSearchDividers(searchButton);
+let searchAvailable = false; // set per volume at boot (config.hasSearch)
+
+// ── Search mode (Howell 2026-07-22): the alphanumeric ring + the strike ───
+// Tap the dividers and the browse chain yields the focus ring to a bounded
+// chain of characters — A..Z, a two-link seam, 0..9 — rotatable with the
+// instrument's own grammar. TAP THE MAGNIFIER to strike the settled letter:
+// it joins the carriage (the search string riding just left of the lens,
+// rotated on the lens's own axis, growing leftward like paper past a
+// platen), and the ring prunes to only the characters that could possibly
+// follow. The child pyramid holds the live completions — dancing per
+// character through the lens — and tapping one arrives at its place in the
+// volume. Tap the dividers again to abandon and restore the browse chain.
+const SEARCH_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
+const SEARCH_COMPLETION_CAP = 14; // pyramid seats for candidates
+const searchNorm = s => String(s).toUpperCase().replace(/[^A-Z0-9]/g, '');
+let searchRestore = null;       // the browse chain to restore on exit
+let searchPrefix = '';          // the struck characters so far (normalized)
+let searchCorpusEntries = [];   // [{ item, label, norm }] — the volume's searchable leaves
+let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
+let searchStringEl = null;      // the carriage — SVG text left of the lens
+
+function searchCharItems(allowed = null) {
+  // Letters, a two-link breath, then digits — gap links (nulls) are the
+  // chain's own idiom for a seam. Orders are array positions so the gaps
+  // hold their seats. `allowed` (a Set) prunes to surviving characters.
+  const keep = c => !allowed || allowed.has(c);
+  const letters = SEARCH_CHARS.slice(0, 26).filter(keep);
+  const digits = SEARCH_CHARS.slice(26).filter(keep);
+  const seam = letters.length && digits.length ? [null, null] : [];
+  return [...letters, ...seam, ...digits]
+    .map((c, i) => (c === null ? null : { id: `char:${c}`, name: c, level: 'character', order: i }));
+}
+
+// Every character that could follow the prefix in some completion.
+function searchNextChars(prefix) {
+  const next = new Set();
+  for (const e of searchCorpusEntries) {
+    if (e.norm.length > prefix.length && e.norm.startsWith(prefix)) next.add(e.norm[prefix.length]);
+  }
+  return next;
+}
+
+// The pyramid's candidates while searching: completions of prefix + the
+// character in (or passing through) the lens. Wired into the volume's
+// pyramid config at boot; dances live during rotation for free.
+function searchCompletions(selected) {
+  if (!selected || selected.level !== 'character') return [];
+  const p = searchPrefix + selected.name;
+  const out = [];
+  for (const e of searchCorpusEntries) {
+    if (e.norm.startsWith(p)) {
+      // The candidate wears its REAL id: the arrival migration pairs pyramid
+      // clones with ring targets by id, and a namespaced id left the tapped
+      // star unpaired — it jumped to the lens instead of flying (Howell).
+      out.push({ id: e.item.id, name: e.label, level: e.item.level, searchEntry: e });
+      if (out.length >= SEARCH_COMPLETION_CAP) break;
+    }
+  }
+  return out;
+}
+
+// The carriage: the struck string, seated just left of the lens on the
+// lens's own rotated axis, end-anchored so each new strike pushes the
+// older characters leftward — the typewriter's platen. Each character is
+// its own tspan and TAPPABLE: the backspace that came to us (Howell
+// 2026-07-22) — tap a struck letter and it returns to the lens, the string
+// truncating to just before it, the completions widening back out.
+function updateSearchCarriage() {
+  if (!searchStringEl && svg) {
+    const p = getMagnifierPosition(viewport);
+    const deg = (getMagnifierAngle(viewport) * 180) / Math.PI + 180;
+    searchStringEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    searchStringEl.setAttribute('class', 'focus-ring-magnifier-label');
+    searchStringEl.setAttribute('x', String(-viewport.SSd * 0.115));
+    searchStringEl.setAttribute('y', '0');
+    searchStringEl.setAttribute('text-anchor', 'end');
+    searchStringEl.setAttribute('dominant-baseline', 'middle');
+    searchStringEl.setAttribute('transform', `translate(${p.x.toFixed(1)}, ${p.y.toFixed(1)}) rotate(${deg.toFixed(1)})`);
+    // The label class disables pointer events; the carriage takes them back.
+    searchStringEl.style.pointerEvents = 'auto';
+    searchStringEl.style.cursor = 'pointer';
+    searchStringEl.addEventListener('click', e => {
+      const t = e.target && e.target.closest ? e.target.closest('tspan') : null;
+      if (t && t.dataset.index != null) searchBackspaceTo(Number(t.dataset.index));
+    });
+    svg.appendChild(searchStringEl);
+  }
+  if (!searchStringEl) return;
+  while (searchStringEl.firstChild) searchStringEl.removeChild(searchStringEl.firstChild);
+  [...searchPrefix].forEach((ch, i) => {
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+    t.textContent = ch;
+    t.dataset.index = String(i);
+    // An imaginary blank between characters — each is its own backspace
+    // key, and thumbs need the room (Howell 2026-07-22).
+    if (i > 0) t.setAttribute('dx', '0.45em');
+    searchStringEl.appendChild(t);
+  });
+}
+
+// Tap a struck character: everything from it onward un-strikes, the tapped
+// letter returns to the lens as the settled character, and the ring/pyramid
+// rebuild for the shortened string.
+function searchBackspaceTo(i) {
+  const app = currentApp;
+  if (!app?.nav || !searchRestore) return;
+  const letter = searchPrefix[i];
+  if (!letter) return;
+  searchPrefix = searchPrefix.slice(0, i);
+  updateSearchCarriage();
+  // An empty string restores the virgin full ring (as the mode opened);
+  // otherwise prune for the shortened prefix. The tapped letter is by
+  // construction among the survivors — seat it back in the lens.
+  const survivors = searchPrefix ? searchNextChars(searchPrefix) : null;
+  const items = searchCharItems(survivors);
+  const idx = Math.max(0, items.findIndex(it => it && it.name === letter));
+  app.setPrimaryItems(items, idx, true);
+}
+
+// THE STRIKE: the settled character joins the carriage and the ring prunes
+// to what can still follow. A dead-end strike (nothing follows) is refused —
+// the completions in the pyramid are the only way onward from there.
+function strikeSettledChar() {
+  const app = currentApp;
+  if (!app?.nav || !searchRestore) return;
+  const cur = app.nav.getCurrent();
+  if (!cur || cur.level !== 'character') return;
+  const nextPrefix = searchPrefix + cur.name;
+  const survivors = searchNextChars(nextPrefix);
+  const hasAnyMatch = searchCorpusEntries.some(e => e.norm.startsWith(nextPrefix));
+  if (!hasAnyMatch) return; // a character no name continues with: no strike
+  searchPrefix = nextPrefix;
+  updateSearchCarriage();
+  if (survivors.size) app.setPrimaryItems(searchCharItems(survivors), 0, true);
+  // No survivors = the string is complete: the ring rests, the pyramid holds
+  // the exact match(es); arrival is a pyramid tap away.
+}
+
+// ARRIVAL (Howell 2026-07-22, second draft — the cascade was overwhelming):
+// a completion tap lands the found leaf DIRECTLY, exactly as picking a model
+// from its cylinder group does — the tapped candidate migrates from pyramid
+// to magnifier, its sibling set pours onto the ring, the detail sector
+// enlarges in sync, and the character ring migrates off screen as every
+// outgoing ring does. The parent button does not fight the tide: no flight,
+// it simply fades on. The browse chain the search began from is planted as
+// the breadcrumb, so OUT of the found leaf returns there — never to letters.
+let searchVolumePyramid = null; // the volume's own pyramid config (set at boot)
+function searchArrive(entry) {
+  const app = currentApp;
+  if (!app || !searchRestore || !entry?.item) return;
+  const breadcrumb = {
+    items: searchRestore.items,
+    selectedIndex: searchRestore.selectedIndex,
+    preserveOrder: true
+  };
+  const landed = typeof searchVolumePyramid?.descendTo === 'function'
+    ? searchVolumePyramid.descendTo({ item: entry.item, breadcrumb })
+    : false;
+  // Search bookkeeping ends either way — but WITHOUT restoring the character
+  // ring: it is mid-flight outward (or, if the landing failed, the dividers
+  // remain the way back).
+  if (landed) {
+    searchRestore = null;
+    searchPrefix = '';
+    if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+    if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
+    // The empty corner is dressed in strict order (Howell 2026-07-22):
+    // FIRST the golden fill arrives (the labelless disc, handing off to the
+    // real circle's fill at the barrier), THEN the stroke ring and the name
+    // label come on together. The stroke must not pop on ahead of the fill —
+    // hold it invisible from the migration's start until the label's moment.
+    const view = app.view;
+    const outer = view?.parentButtonOuter;
+    if (outer) outer.style.strokeOpacity = '0';
+    setTimeout(() => {
+      const label = view?.parentButtonOuterLabel;
+      if (label) {
+        label.style.transition = 'none';
+        label.style.opacity = '0';
+      }
+      requestAnimationFrame(() => {
+        if (label) { label.style.transition = 'opacity 400ms ease'; label.style.opacity = ''; }
+        if (outer) { outer.style.transition = 'stroke-opacity 400ms ease'; outer.style.strokeOpacity = ''; }
+      });
+      setTimeout(() => {
+        if (label) label.style.transition = '';
+        if (outer) outer.style.transition = '';
+      }, 500);
+    }, 900);
+  }
+}
+
+function exitSearchMode() {
+  const app = currentApp;
+  if (!app?.nav || !searchRestore) return;
+  // Clear the flag FIRST: restoring the chain triggers a render, and the
+  // pyramid wrapper must already answer in browse voice — clearing after
+  // painted an empty pyramid over the restored ring (Howell caught it).
+  const restore = searchRestore;
+  searchRestore = null;
+  searchPrefix = '';
+  app.setPrimaryItems(restore.items, restore.selectedIndex, true);
+  app.setParentButtons({ showOuter: true }); // the vessel returns with the browse chain
+  if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+  if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
+}
+
+function toggleSearchRing() {
+  const app = currentApp;
+  if (!app?.nav || !searchAvailable || detailSectorVisible) return;
+  if (searchRestore) { exitSearchMode(); return; }
+  searchRestore = {
+    items: (app.nav.items || []).slice(),
+    selectedIndex: app.nav.getCurrentIndex()
+  };
+  searchPrefix = '';
+  updateSearchCarriage(); // seats the (empty) carriage at the lens
+  app.setPrimaryItems(searchCharItems(), 0, true);
+  // The parent button has no meaning over the character ring — no vessel,
+  // nothing to ascend to. It leaves entirely (Howell 2026-07-22).
+  app.setParentButtons({ showOuter: false });
+  if (searchButton) searchButton.setAttribute('aria-pressed', 'true');
+}
+if (searchButton) searchButton.addEventListener('click', toggleSearchRing);
+function updateSearchButton() {
+  if (!searchButton) return;
+  // Only where the volume declares a searchable namespace; hidden at a leaf
+  // (the globe's turf) and while the boot reveal owns the screen; present
+  // while browsing.
+  const splashUp = typeof document !== 'undefined' && document.getElementById('boot-splash-blocker');
+  searchButton.hidden = !searchAvailable || detailSectorVisible || Boolean(splashUp);
+}
 
 function scaleAboutCentre(scale) {
   const cx = viewport.width / 2;
@@ -671,6 +908,7 @@ window.addEventListener('detail-sector-change', (e) => {
   // child pyramid (which also recedes any open stack back to the primary).
   detailSectorVisible = Boolean(visible);
   updateDimensionButton();
+  updateSearchButton();
 });
 
 function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation } = {}) {
@@ -1201,6 +1439,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     dimensionBridge.setTranslation(options.translation);
   }
   refreshDimensionButton(); // show the globe only where a dimension exists
+  // The dividers only in volumes that declare search, only while browsing —
+  // and never during the reveal (the blocker isn't up yet at this point, so
+  // gate on the decision itself; the splash's finally() brings them in).
+  searchAvailable = Boolean(config.hasSearch);
+  // A volume boot always lands in browse, never mid-search.
+  searchRestore = null;
+  searchPrefix = '';
+  if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+  if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
+  if (!playSplash) updateSearchButton();
   // The sticky dimension choice (survives reboots/gateways) wins over the
   // volume's pinned default; boot-time derivations (namesMap, labels) still
   // use the boot value — swapping those live is D.6's work, not D.2's.
@@ -1292,6 +1540,23 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     }
   }
 
+  // The search corpus: the volume's leaves, by the name each shows in the
+  // magnifier, from the adapter's normalized graph. The graph map lets a
+  // found leaf walk up its parent chain to the ring level for the arrival.
+  searchCorpusEntries = [];
+  searchGraphById = new Map();
+  if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
+    const leafLevel = root?.display_config?.leaf_level || null;
+    searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));
+    if (leafLevel) {
+      searchCorpusEntries = adapterNormalized.items
+        .filter(i => i?.level === leafLevel && (i.name || i.id))
+        .map(i => ({ item: i, label: String(i.name || i.id), norm: searchNorm(i.name || i.id) }))
+        .filter(e => e.norm.length > 0)
+        .sort((a, b) => a.label.localeCompare(b.label));
+    }
+  }
+
   const configLabel = makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
   const adapterLabel = adapterLayoutSpec?.label;
   // Prefer the config's formatter when it is context-aware (receives { item, context }),
@@ -1306,6 +1571,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (Boolean(config?.centerLabel)) return true;
     // Cylinder items (short numeric labels) should always be centered
     if (item?.level === 'cylinder') return true;
+    // The search ring's characters sit ON their nodes, like all numerals
+    if (item?.level === 'character') return true;
     return false;
   });
   let app;
@@ -1349,9 +1616,27 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     savePreInState: layoutBindings.savePreInState,
     pyramidBuilder: layoutBindings.pyramidBuilder
   });
-  const pyramidConfig = {
+  const volumePyramidConfig = {
     ...(layoutSpec?.pyramid || {}),
     ...(adapterLayoutSpec?.pyramid || {})
+  };
+  searchVolumePyramid = volumePyramidConfig; // the cascade descends with the volume's own hands
+  // In search mode the pyramid belongs to the completions: candidates for
+  // the character in (or streaming through) the lens, and a candidate tap
+  // is the arrival. Browse mode passes straight through to the volume's own
+  // pyramid. One wrapper, no volume knowledge.
+  const pyramidConfig = {
+    ...volumePyramidConfig,
+    getChildren: args => (searchRestore
+      ? searchCompletions(args?.selected)
+      : (typeof volumePyramidConfig.getChildren === 'function' ? volumePyramidConfig.getChildren(args) : [])),
+    onClick: instr => {
+      if (searchRestore) {
+        if (instr?.item?.searchEntry) searchArrive(instr.item.searchEntry);
+        return;
+      }
+      if (typeof volumePyramidConfig.onClick === 'function') volumePyramidConfig.onClick(instr);
+    }
   };
   const pyramidLayout = adapterLayoutSpec || layoutSpec;
   const normalized = {
@@ -1389,6 +1674,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     onDetailPreview: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
   });
   currentApp = app;
+  // THE STRIKE: in search mode — and only there — the magnifier receives
+  // its first-ever click (Howell 2026-07-22): tap the lens, commit the
+  // settled character to the carriage. Inert in browse mode.
+  if (app?.view?.magnifierCircle) {
+    app.view.magnifierCircle.addEventListener('click', () => {
+      if (searchRestore) strikeSettledChar();
+    });
+  }
   // Expose app to window for console API
   window.app = app;
   // Gateway transit: the new volume is fully rendered — lay the frozen old
@@ -1467,7 +1760,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         // Never strand the wheel at the overture: if the reveal died before
         // its rotation, snap home now (0ms — the error path has no theatre).
         if (overtureItemId && app) app.glideToItem(overtureHomeId, 0);
-      });
+      })
+      .finally(() => updateSearchButton()); // the dividers arrive once the reveal is over
   }
 }
 

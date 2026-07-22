@@ -187,6 +187,9 @@ export function createApp({
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
   let lastPyramidData = null; // stashed for SVG-level click delegation
+  let labelessParentFlight = false; // one-shot: next migrateIn flies the magnifier
+                                    // fill to the parent seat UNLABELED, and skips
+                                    // the (hidden) old parent's outgoing flight
 
   // Detail Sector leaf detection
   const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
@@ -537,7 +540,26 @@ export function createApp({
     // Old parent button fill → radially outward off-screen (leads the way).
     // On a suffix-merge descent the LABEL is anchored (the merge overlay owns
     // it), but the vessel's old fill still exits — as a label-less disc.
-    {
+    // The search arrival flies a LABELLESS magnifier disc (one-shot): the
+    // half-typed string must not ride into the parent seat, but the golden
+    // FILL must — its travel is the radial-in cue, in sync with the ring
+    // departing and the detail circle expanding (Howell 2026-07-22). The
+    // old parent's outgoing flight stays skipped: the vessel was hidden,
+    // and a disc departing an empty seat is nonsense.
+    if (labelessParentFlight) {
+      labelessParentFlight = false;
+      animateMagnifierToParent({
+        svgRoot: view.contentGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        label: '',
+        bare: true, // fill only — the stroke arrives later, with the name
+        fromAngle: magnifier.angle
+      });
+    } else {
       animateParentButtonOutward({
         svgRoot: view.contentGroup || view.svgRoot,
         buttonX: parentButtonX,
@@ -550,32 +572,32 @@ export function createApp({
         buttonElement: view.parentButtonOuter,
         buttonLabelElement: view.parentButtonOuterLabel
       });
-    }
 
-    // Old magnifier → parent-button position (straight line)
-    if (isSuffixMergeIn) {
-      animateVolumeParentMerge({
-        svgRoot: view.contentGroup || view.svgRoot,
-        fromX: magnifier.x,
-        fromY: magnifier.y,
-        toX: parentButtonX,
-        toY: parentButtonY,
-        radius: magnifierRadius,
-        baseLabel: prevParentLabel,
-        suffixLabel: prevMagnifierLabel,
-        fromAngle: magnifier.angle
-      });
-    } else {
-      animateMagnifierToParent({
-        svgRoot: view.contentGroup || view.svgRoot,
-        fromX: magnifier.x,
-        fromY: magnifier.y,
-        toX: parentButtonX,
-        toY: parentButtonY,
-        radius: magnifierRadius,
-        label: prevMagnifierLabel,
-        fromAngle: magnifier.angle
-      });
+      // Old magnifier → parent-button position (straight line)
+      if (isSuffixMergeIn) {
+        animateVolumeParentMerge({
+          svgRoot: view.contentGroup || view.svgRoot,
+          fromX: magnifier.x,
+          fromY: magnifier.y,
+          toX: parentButtonX,
+          toY: parentButtonY,
+          radius: magnifierRadius,
+          baseLabel: prevParentLabel,
+          suffixLabel: prevMagnifierLabel,
+          fromAngle: magnifier.angle
+        });
+      } else {
+        animateMagnifierToParent({
+          svgRoot: view.contentGroup || view.svgRoot,
+          fromX: magnifier.x,
+          fromY: magnifier.y,
+          toX: parentButtonX,
+          toY: parentButtonY,
+          radius: magnifierRadius,
+          label: prevMagnifierLabel,
+          fromAngle: magnifier.angle
+        });
+      }
     }
 
     // 5. Detail Sector: expand simultaneously if the incoming selected item is a leaf.
@@ -1407,6 +1429,10 @@ export function createApp({
       onNodeClick(nodes[idx]);
     },
     refreshPyramid: () => render(rotation),
+    // The next migrateIn flies the magnifier fill to the parent seat with
+    // NO label, and skips the hidden old parent's outgoing flight — the
+    // search arrival's radial-in cue (Howell 2026-07-22).
+    labelessParentFlightOnce() { labelessParentFlight = true; },
     // Glide the ring to a named item over a FIXED duration — the boot
     // overture's steady travel (animateSnapTo is linear: no accel, no decel).
     // Resolves true on arrival (selection committed), false if the item is

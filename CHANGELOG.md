@@ -1,5 +1,47 @@
 # Changelog
 
+## 3.18.0 — the search instrument — ring-based character entry
+- **Search without a keyboard** — the verboten feature, admitted through the
+  instrument's own door. The premise never banned finding; it banned the
+  QWERTY slab and the editor's mindset. Search over a closed corpus is
+  navigation, and navigation is what this instrument does
+- **The navigator's dividers** (src/view/search-dividers.js): the search
+  icon — wing dividers drawn by code in the globe's idiom (1px, #363636),
+  sharing the globe's corner: dividers while browsing, globe at a leaf.
+  Declared per volume (`hasSearch`); only the manifold volume carries it.
+  Both corner instruments lifted clear of the band (bottom 9% → 13%)
+- **The alphanumeric ring**: tap the dividers and the browse chain yields to
+  A–Z ‖ 0–9 (two-link seam), rotatable in the instrument's grammar,
+  characters centered on their nodes, parent button retired for the duration
+- **The strike**: tap the magnifier — its first-ever click — to commit the
+  settled character. The carriage rides just left of the lens, rotated on
+  its axis, each strike pushing older characters leftward
+- **Live pruning**: after each strike the ring rebuilds to only characters
+  some model name can continue with — the chain visibly shortens as the
+  query converges. Dead-end strikes are refused. Matching is normalized
+  (case-insensitive, separators ignored: ID36SR finds ID36 SR)
+- **The backspace that came to us**: every carriage character is its own
+  backspace key — tap one and the string truncates to just before it, the
+  letter returns to the lens, the candidates widen back out. Spaced for
+  thumbs, no delete key anywhere
+- **Candidates in the pyramid**, dancing live as characters stream through
+  the lens. Measured on the full corpus (1,032 model names): avg 2.1
+  strikes until the target is among ≤14 candidates; worst case 5
+- **Arrival as migration, radially true**: a candidate tap lands exactly
+  like picking a model from its cylinder group — the star flies to the
+  lens, siblings pour in, the detail circle expands in sync, the unused
+  letters stream off, and the magnifier's golden fill (bare — no stroke,
+  no half-typed label) travels to the parent seat to begin the vessel's
+  restoration; stroke ring and true name breathe on together after. The
+  honest ancestor stack is planted, so OUT ascends the real shelf
+- **Defensive publication**: docs/SEARCH_ENTRY_DISCLOSURE.md places the
+  method (prune-shortened ring, lens-strike, carriage-as-backspace,
+  candidates-as-children, migration arrival) in the public record as of
+  this dated, tagged release
+- Known data debt: one of 1,032 models (a family literally named with a
+  colon inside a colon-delimited id scheme) cannot land; its ordinary
+  navigation shares the flaw
+
 ## 3.17.1 — the migration keeps its color — de-popping the pyramid flight
 - **The dress changes in flight** (the pop hunt begins): migrating nodes flew
   the pyramid→ring journey wearing the pyramid's brown and popped to the

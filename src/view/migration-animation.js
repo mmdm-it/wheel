@@ -969,6 +969,9 @@ export function animateMagnifierToParent(opts) {
     radius,
     label = '',
     fromAngle = 0,
+    // The search arrival's disc travels BARE — golden fill only, no stroke:
+    // the black ring joins the vessel later, with the name (Howell 2026-07-22).
+    bare = false,
     onComplete
   } = opts;
 
@@ -988,6 +991,7 @@ export function animateMagnifierToParent(opts) {
   circle.setAttribute('cy', fromY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  if (bare) circle.style.stroke = 'none';
   g.appendChild(circle);
 
   // Label centered at magnifier (text-anchor: middle)

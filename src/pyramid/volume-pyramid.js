@@ -106,7 +106,73 @@ export function buildCatalogPyramid({
       app.setParentButtons({ showOuter: true });
     }
   };
-  return { getChildren, onClick };
+
+  // SEARCH ARRIVAL (Howell 2026-07-22): land a found leaf directly — its
+  // sibling set pours onto the ring with the leaf selected (the detail
+  // sector enlarging in sync at the leaf, as any pyramid pick does), while
+  // the current ring (the character chain) migrates off as every outgoing
+  // ring does. The parent choreography is suppressed — the outgoing
+  // "selection" was a struck character and the parent vessel was hidden —
+  // so the new parent simply appears. `breadcrumb` (the browse chain the
+  // search was opened from) is pushed as the pre-IN snapshot, so backing
+  // OUT of the found leaf returns to where the search began, never to the
+  // letter ring.
+  const descendTo = ({ item, breadcrumb } = {}) => {
+    if (!item?.id) return false;
+    const app = typeof getApp === 'function' ? getApp() : null;
+    if (!app?.setPrimaryItems) return false;
+    // The leaf's id encodes its whole shelf path —
+    // model:manu:cyl[:family[:subfamily]]:name — so its parent can be named
+    // in the children-helper's own dialect (cyl:/fam:/subfam:) directly.
+    const parts = String(item.id).split(':');
+    if (parts[0] !== 'model' || parts.length < 4) return false;
+    const mid = parts.slice(3, -1);
+    const parentId = mid.length === 0 ? `cyl:${parts[1]}:${parts[2]}`
+      : mid.length === 1 ? `fam:${parts[1]}:${parts[2]}:${mid[0]}`
+        : `subfam:${parts[1]}:${parts[2]}:${mid[0]}:${mid[1]}`;
+    const children = getCatalogChildren(manifest, { id: parentId });
+    const idx = children.findIndex(m => m && m.id === item.id);
+    if (idx < 0) return false;
+    // Plant the FULL honest nav stack — the snapshots a reader would have
+    // pushed walking the shelf path by hand: top ring at the maker's seat,
+    // its cylinder ring at the right bucket, the family ring where one
+    // exists. The parent label derives from this stack's shape (a flat
+    // breadcrumb read as the boot manufacturer at every arrival — Howell),
+    // and OUT now ascends the real shelf, level by honest level.
+    if (typeof savePreInState === 'function' && breadcrumb?.items) {
+      const makerIdx = breadcrumb.items.findIndex(it => it && it.name === parts[1]);
+      if (makerIdx >= 0) {
+        const stack = [{ items: breadcrumb.items, selectedIndex: makerIdx, preserveOrder: true }];
+        const cylId = `cyl:${parts[1]}:${parts[2]}`;
+        const cylRing = getCatalogChildren(manifest, breadcrumb.items[makerIdx]);
+        const cylIdx = cylRing.findIndex(k => k && k.id === cylId);
+        if (cylIdx >= 0) stack.push({ items: cylRing, selectedIndex: cylIdx, preserveOrder: true });
+        if (mid.length >= 1) {
+          const famId = `fam:${parts[1]}:${parts[2]}:${mid[0]}`;
+          const famRing = getCatalogChildren(manifest, { id: cylId });
+          const famIdx = famRing.findIndex(k => k && k.id === famId);
+          if (famIdx >= 0) stack.push({ items: famRing, selectedIndex: famIdx, preserveOrder: true });
+          if (mid.length >= 2) {
+            const subId = `subfam:${parts[1]}:${parts[2]}:${mid[0]}:${mid[1]}`;
+            const subRing = getCatalogChildren(manifest, { id: famId });
+            const subIdx = subRing.findIndex(k => k && k.id === subId);
+            if (subIdx >= 0) stack.push({ items: subRing, selectedIndex: subIdx, preserveOrder: true });
+          }
+        }
+        stack.forEach(s => savePreInState(s));
+      } else {
+        // The provided ring doesn't hold the maker (search opened from a
+        // deeper ring) — fall back to the single snapshot.
+        savePreInState(breadcrumb);
+      }
+    }
+    if (typeof setCatalogMode === 'function') setCatalogMode('child');
+    if (typeof app.labelessParentFlightOnce === 'function') app.labelessParentFlightOnce();
+    (app.migrateIn || app.setPrimaryItems)(children, idx, true);
+    if (app.setParentButtons) app.setParentButtons({ showOuter: true });
+    return true;
+  };
+  return { getChildren, onClick, descendTo };
 }
 
 export function buildCalendarPyramid({
