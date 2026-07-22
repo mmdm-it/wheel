@@ -23,6 +23,16 @@ const svgEl = (tag, attrs) => {
   return n;
 };
 
+// Uppercase Latin-script labels (as the ring always has), but leave every
+// other script in its given form: uppercasing strips polytonic Greek's
+// breathings/accents, is meaningless for Hebrew/Arabic/CJK/Indic, and can
+// mangle scripts with their own casing (Howell 2026-07-22). With 50 languages
+// now on the ring, invert the test: uppercase ONLY when a label is pure Latin
+// (Basic + Latin-1 + Extended-A/B + Additional + combining marks \u2014 covers
+// Vietnamese, Turkish, Czech, Welsh, \u2026), otherwise leave it untouched.
+const LATIN_SCRIPT_ONLY = /^[\u0020-\u024F\u0300-\u036F\u1E00-\u1EFF]+$/;
+const displayCase = s => (LATIN_SCRIPT_ONLY.test(s) ? s.toUpperCase() : s);
+
 export function hideStratum(svg, id) {
   const g = svg?.querySelector?.(`#${id}`);
   if (g) g.remove();
@@ -30,12 +40,18 @@ export function hideStratum(svg, id) {
 
 export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false } = {}) {
   if (!svg || !Array.isArray(items) || !items.length) return null;
-  hideStratum(svg, id);
 
   const layout = computeStrataLayout(viewport, items.length, selectedIndex, mirrored);
   const nodeR = viewport.SSd * NODE_RADIUS_RATIO;
   const magR = viewport.SSd * MAGNIFIER_RADIUS_RATIO;
-  const g = svgEl('g', { id, class: 'secondary-strata' });
+  // Reuse a STABLE group per id — clear its children and repopulate — rather
+  // than remove-and-recreate. A freshly-inserted SVG element does not reliably
+  // receive its CSS `filter` on iOS Safari, so a receded (blurred) stratum
+  // rendered into a brand-new <g> stayed SHARP on iPhone; a persistent element
+  // (like the primary's content group) blurs correctly (Howell 2026-07-22).
+  let g = svg.querySelector(`#${id}`);
+  if (g) { while (g.firstChild) g.removeChild(g.firstChild); }
+  else { g = svgEl('g', { id, class: 'secondary-strata' }); svg.appendChild(g); }
 
   // The band is the sprocket-chain centreline (arc + straight tangents),
   // shared with the primary. A mirrored stratum reflects it across the
@@ -69,7 +85,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       transform: `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})`
     });
     const raw = typeof labelFor === 'function' ? labelFor(items[node.index], false) : items[node.index];
-    label.textContent = String(raw ?? '').toUpperCase();
+    label.textContent = displayCase(String(raw ?? ''));
     g.appendChild(label);
   });
 
@@ -95,10 +111,11 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       transform: `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`
     });
     const magRaw = typeof labelFor === 'function' ? labelFor(items[layout.magIndex], true) : items[layout.magIndex];
-    magLabel.textContent = String(magRaw ?? '').toUpperCase();
+    magLabel.textContent = displayCase(String(magRaw ?? ''));
     g.appendChild(magLabel);
   }
 
-  svg.appendChild(g);
+  // Already appended on create; a reused group stays put so its DOM order (and
+  // thus z-order: secondary below, tertiary above) holds without re-inserting.
   return g;
 }

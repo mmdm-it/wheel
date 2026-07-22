@@ -99,7 +99,7 @@ const CHOOSERS = [
     items: () => dimensionBridge.translationsOf(),
     // Magnified node: the full, spelled-out translation title (centred in the
     // magnifier); the rest keep the abbreviation/key — Howell 2026-07-21.
-    label: (key, isMagnified) => (isMagnified ? dimensionBridge.translationName(key) : key),
+    label: (key, isMagnified) => (isMagnified ? dimensionBridge.translationName(key) : dimensionBridge.translationAbbrev(key)),
     selected: () => dimensionBridge.getSelection().translation,
     select: key => dimensionBridge.setTranslation(key) }
 ];
@@ -1177,6 +1177,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
   dimensionBridge.setTranslationsMeta(translationsMeta);
+  dimensionBridge.setLanguagesMeta(supplemental?.languagesMeta || null);
   // Seed the dimension state with the volume's default translation, so the
   // secondary/tertiary strata and the primary text all agree from boot —
   // unless a sticky choice already survived a gateway/reboot.

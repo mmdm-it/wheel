@@ -42,6 +42,13 @@ html, body {
   overflow: hidden;
   overscroll-behavior: none;
   touch-action: none;
+  /* Pin text auto-inflation OFF. Chrome-on-iOS "font boosts" a wide text block
+     — inflating the RENDERED verse beyond its set px size — while our off-screen
+     measure span (absolute, nowrap) escapes the boost, so rendered ran wider
+     than measured and crowded the right edge. Only Chrome iOS boosts; Safari and
+     DuckDuckGo don't, which is why it was Chrome-iOS-only (Howell 2026-07-22). */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   /* Android Chromium (Chrome, DuckDuckGo) flashes a translucent highlight box
      over any element with a click handler on touch — on an SVG group that
      means its whole bounding rect (seen over the parent button). Not a link,
@@ -238,7 +245,9 @@ svg :focus-visible {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
-  text-transform: var(--focus-label-transform, uppercase);
+  /* Casing is owned by displayCase() in JS — it uppercases Latin but leaves
+     Greek/Cyrillic/Hebrew in their proper form. A CSS text-transform:uppercase
+     here re-uppercased the native scripts (Русский → РУССКИЙ) — removed. */
   pointer-events: none;
 }
 /* The magnified language's label is larger, as in the primary strata. Its
@@ -430,8 +439,9 @@ svg :focus-visible {
   display: block;
   position: absolute;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* NEVER clip or ellipsise a verse line — the wrap is sized so the text fits,
+     and a hair of overhang beats truncating scripture (Howell 2026-07-22). */
+  overflow: visible;
 }
 
 /*

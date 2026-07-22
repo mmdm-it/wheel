@@ -139,32 +139,45 @@ const VERSE_CHAR_EM = 0.50;     // fallback estimate only (no canvas, e.g. tests
 const VERSE_LINE_HEIGHT = 1.30; // vertical pitch between verse lines
 const VERSE_FILL = 1.0;         // fraction of sector height the longest verse may use
 
-// A cached 2D context for measuring, or null where none exists (node tests).
-let measureCtx;
-function getMeasureCtx() {
-  if (measureCtx !== undefined) return measureCtx;
-  measureCtx = null;
+// Measure with the ACTUAL DOM — a hidden span in the real font — NOT canvas.
+// Safari's canvas measureText under-measures a web font even after it loads
+// (it disagrees with what it paints), which packed verses wide to the very edge
+// on iPhone while Chrome measured true (Howell 2026-07-22). A DOM span can't
+// disagree with the render. It also self-corrects for load timing: before EB
+// Garamond arrives the span falls back to Georgia (WIDER), so the wrap breaks
+// early and can't overflow; once the font lands the measure is exact.
+let measureSpan;
+function getMeasureSpan() {
+  if (measureSpan !== undefined) return measureSpan;
+  measureSpan = null;
   try {
-    if (typeof document !== 'undefined' && typeof document.createElement === 'function') {
-      const canvas = document.createElement('canvas');
-      measureCtx = canvas && typeof canvas.getContext === 'function' ? canvas.getContext('2d') : null;
+    if (typeof document !== 'undefined' && document.body && typeof document.createElement === 'function') {
+      const s = document.createElement('span');
+      s.style.cssText = 'position:absolute;left:-9999px;top:0;visibility:hidden;white-space:nowrap;pointer-events:none;';
+      s.style.fontFamily = VERSE_FONT_STACK;
+      document.body.appendChild(s);
+      measureSpan = s;
     }
-  } catch (_) { measureCtx = null; }
-  return measureCtx;
+  } catch (_) { measureSpan = null; }
+  return measureSpan;
 }
-// Is the real serif actually loaded? Until it is, measureText falls back to
-// Georgia (a hair WIDER, so lines wrap a touch early — never clipped); once it
-// loads, the size recomputes (the cache keys on this) and settles exact.
-function verseFontReady() {
-  try {
-    return typeof document !== 'undefined' && document.fonts
-      && typeof document.fonts.check === 'function' && document.fonts.check("16px 'EB Garamond'");
-  } catch (_) { return false; }
+// Whether the real serif has loaded — the size cache keys on it, so the shared
+// verse size recomputes (from the Georgia estimate to the exact EB Garamond)
+// the moment the font arrives. document.fonts.ready is the honest signal
+// (document.fonts.check() lies — returns true too early).
+let verseFontLoaded = false;
+if (typeof document !== 'undefined' && document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(() => { verseFontLoaded = true; }).catch(() => {});
 }
+function verseFontReady() { return verseFontLoaded; }
 function measureWidth(text, fontPx) {
-  const ctx = getMeasureCtx();
-  if (ctx) { ctx.font = `${fontPx}px ${VERSE_FONT_STACK}`; return ctx.measureText(text).width; }
-  return text.length * fontPx * VERSE_CHAR_EM;
+  const span = getMeasureSpan();
+  if (span) {
+    span.style.fontSize = `${fontPx}px`;
+    span.textContent = text;
+    return span.getBoundingClientRect().width;
+  }
+  return text.length * fontPx * VERSE_CHAR_EM; // node/tests: no DOM
 }
 
 // availableWidth / leftX at an arbitrary y, interpolated from the REAL (arc-
@@ -236,11 +249,10 @@ export function uniformVerseFontPx(bounds) {
 // its last line ellipsized rather than overrunning the sector.
 export function layoutVerse(text, bounds) {
   const fontPx = uniformVerseFontPx(bounds);
-  const { lines, overflow } = flowVerseAt(text, bounds, fontPx);
-  if (overflow && lines.length) {
-    const last = lines[lines.length - 1];
-    last.text = `${last.text.replace(/\s*\S*$/, '')}…`;
-  }
+  // The size is the one the LONGEST verse fills the sector at, so every verse
+  // fits; lines are wrapped to their measured width, so no line runs long.
+  // NEVER ellipsise scripture, even on a defensive overflow (Howell 2026-07-22).
+  const { lines } = flowVerseAt(text, bounds, fontPx);
   return { fontPx, lines };
 }
 

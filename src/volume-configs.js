@@ -44,8 +44,11 @@ const volumeConfigs = {
     },
     extractRoot: manifest => manifest?.Gutenberg_Bible,
     async loadSupplemental() {
-      const translationsMeta = await fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null);
-      return { translationsMeta };
+      const [translationsMeta, languagesMeta] = await Promise.all([
+        fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null),
+        fetch('./data/gutenberg/languages.json').then(r => r.json()).catch(() => null)
+      ]);
+      return { translationsMeta, languagesMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
       const level = params.get('level') || startup.top_navigation_level || 'verse';

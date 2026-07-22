@@ -1,5 +1,45 @@
 # Changelog
 
+## 3.15.0 — the fifty tongues — language registry stress test, strata fixes
+- **The fifty tongues** (data/gutenberg/languages.json): the secondary
+  stratum now carries fifty languages — a thumbnail history of the expansion
+  of the church, ordered by the approximate date of each tongue's first major
+  Bible translation, עברית → Ελληνικά → Latina → Հայերեն → … → Bahasa
+  Indonesia. Nine carry real text; the other forty-one are POPULATION HOOKS
+  (`comingSoon: true`) that render in the ring and are ready to be promoted
+  by dropping in edition data — no code change needed
+- **Coming soon, natively**: settling a placeholder language leaves the
+  reader exactly where it was (nothing to load, nothing blanks) and the
+  tertiary shows a single node speaking that language's own promise —
+  Demnächst, Wkrótce, விரைவில், 近日公開 — in and OUT of the lens
+  (the sentinel key never shows)
+- **Edition names in their own tongues** (translations.json `nativeName`):
+  the tertiary magnifier reads Vulgata Clementina, Οἱ Ἑβδομήκοντα, כתב יד
+  לנינגרד, Синодальный перевод — not English glosses
+- **fix(strata): nodes ride the chain** — strata nodes were placed on the
+  bare circle while the band runs arc + straight tangents; nine nodes never
+  strayed far enough to tell, fifty wrapped the circle and peeled off the
+  track. Nodes now follow the same sprocket centerline the band draws
+  (chainPointAt, mirrored window for the secondary) — max deviation 0.05px
+- **fix(strata): receded blur sticks on iPhone** — iOS Safari doesn't
+  reliably apply a CSS filter to a freshly-inserted SVG element, so the
+  recreated-per-render stratum group stayed sharp. The group is now a stable
+  element, cleared and repopulated in place
+- **fix(labels): uppercase only pure Latin** — the casing test is inverted
+  for fifty languages: a label uppercases ONLY if it is entirely Latin
+  script; Greek keeps its breathings, and Hebrew, Arabic, CJK, Indic, Thai,
+  Armenian, Georgian, Amharic pass through untouched
+- **fix(verse): never truncate the Word** — ellipsis removed from the verse
+  layout path entirely; the uniform-size flow always shows every word
+- **fix(verse): honest measurement** — Safari's canvas measureText
+  under-measures a loaded web font, packing lines wide to the viewport edge
+  on iPhone. Wrapping now measures with a hidden DOM span in the real font
+  stack — the same engine that paints is the one that measures
+- **fix(verse): no font boosting** — Chrome-on-iOS auto-inflates a wide
+  rendered text block past its set px size (its measure span was exempt),
+  crowding the right edge in that one browser. `text-size-adjust: 100%`
+  pins rendered to measured everywhere
+
 ## 3.14.0 — the dimension rings turn (D.4a)
 - **Magnifier-as-selection** retires the tap-for-now stopgap: the front
   stratum is a rotatable focus ring. **Drag** to scrub it (mapped to the
