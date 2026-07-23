@@ -20,6 +20,7 @@ import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPositi
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 import { mountDimensionGlobe } from './view/dimension-globe.js';
 import { mountSearchDividers } from './view/search-dividers.js';
+import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
 
 const svg = document.getElementById('app');
 
@@ -142,6 +143,7 @@ let searchScopedCorpus = [];    // the active subset: leaves under the ring the 
 let searchOpeningAllowed = null;// first-characters the opening ring is pruned to when scoped
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
+let searchAllLabel = 'TUTTI';   // what the scope label says when nothing is filtered
 
 // THE SCOPE (Howell 2026-07-22): the corpus is every leaf DESCENDED FROM the
 // items on the focus ring the search opened from — not the parent button.
@@ -221,7 +223,9 @@ function updateSearchCarriage() {
     const p = getMagnifierPosition(viewport);
     const deg = (getMagnifierAngle(viewport) * 180) / Math.PI + 180;
     searchStringEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-    searchStringEl.setAttribute('class', 'focus-ring-magnifier-label');
+    // The carriage wears the magnifier label's type, plus its own class so
+    // it can be lit for the dark ground (it sits on the GROUND, not on a node).
+    searchStringEl.setAttribute('class', 'focus-ring-magnifier-label search-carriage');
     searchStringEl.setAttribute('x', String(-viewport.SSd * 0.115));
     searchStringEl.setAttribute('y', '0');
     searchStringEl.setAttribute('text-anchor', 'end');
@@ -314,6 +318,7 @@ function searchArrive(entry) {
     searchRestore = null;
     searchPrefix = '';
     if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+    exitSearchLook({ svg }); // the lights come up as the found leaf arrives
     if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
     // The empty corner is dressed in strict order (Howell 2026-07-22):
     // FIRST the golden fill arrives (the labelless disc, handing off to the
@@ -353,6 +358,7 @@ function exitSearchMode() {
   app.setPrimaryItems(restore.items, restore.selectedIndex, true);
   app.setParentButtons({ showOuter: true }); // the vessel returns with the browse chain
   if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+  exitSearchLook({ svg }); // the lights come back up
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
 }
 
@@ -374,7 +380,27 @@ function toggleSearchRing() {
   // simply absent from the ring (Howell 2026-07-22).
   const narrowed = searchScopedCorpus.length < searchCorpusEntries.length;
   searchOpeningAllowed = narrowed ? new Set(searchScopedCorpus.map(e => e.norm[0])) : null;
+  // The scope, in words — captured BEFORE the character chain lands (a
+  // render would recompute the parent label against letters). Narrowed: the
+  // container's own name, which is exactly what the parent button was
+  // saying. Unnarrowed: the volume's "all" word — at the top the parent
+  // button names the COUNTRY of whoever is in the lens, which would lie
+  // about a search that spans every country (Howell 2026-07-22).
+  const parentLabelEl = app.view?.parentButtonOuterLabel;
+  const parentShown = parentLabelEl && parentLabelEl.getAttribute('display') !== 'none';
+  const scopeText = narrowed
+    ? ((parentLabelEl?.textContent || '').trim() || searchAllLabel)
+    : searchAllLabel;
+  const scopeX = parentShown ? Number(parentLabelEl.getAttribute('x')) : viewport.SSd * 0.028;
+  const scopeY = parentShown ? Number(parentLabelEl.getAttribute('y')) : viewport.LSd * 0.93;
   updateSearchCarriage(); // seats the (empty) carriage at the lens
+  // The lights dim for close work, and the pressed tool ghosts in behind.
+  enterSearchLook({ svg, viewport });
+  setSearchScopeLabel(svg, {
+    text: scopeText,
+    x: Number.isFinite(scopeX) ? scopeX : viewport.SSd * 0.028,
+    y: Number.isFinite(scopeY) ? scopeY : viewport.LSd * 0.93
+  });
   app.setPrimaryItems(searchCharItems(searchOpeningAllowed), 0, true);
   // The parent button has no meaning over the character ring — no vessel,
   // nothing to ascend to. It leaves entirely (Howell 2026-07-22).
@@ -1487,6 +1513,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchScopedCorpus = [];
   searchOpeningAllowed = null;
   if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+  exitSearchLook({ svg }); // a boot never inherits the dimmed lights
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
   if (!playSplash) updateSearchButton();
   // The sticky dimension choice (survives reboots/gateways) wins over the
@@ -1585,6 +1612,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // found leaf walk up its parent chain to the ring level for the arrival.
   searchCorpusEntries = [];
   searchGraphById = new Map();
+  searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
   if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
     const leafLevel = root?.display_config?.leaf_level || null;
     searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));

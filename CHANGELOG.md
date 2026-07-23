@@ -1,5 +1,35 @@
 # Changelog
 
+## 3.19.0 — search mode wears its own light
+- **The lights dim for close work.** Swapping manufacturer names for letters
+  wasn't shift enough — nothing said you had picked up a different tool. Now
+  entering search dims the ground to the volume's own logo-disc colour over
+  300ms while the letters arrive: the same room under a different light, not
+  a different place (search is a tool applied to where you stand, not a
+  volume or a stratum). The gold ring simply leaps forward against it —
+  nodes and their on-node labels are untouched, one token doing the work of
+  a repaint (gold-on-ground 1.9:1 → 6.6:1)
+- **The watermark**: the dividers you just pressed, blown up huge and faint
+  behind the completions — the same vocabulary the volume marks already use
+  behind detail text, no new visual language
+- **The scope, in words**: the parent button's LABEL stays (lit, no vessel,
+  no click, no ascent) naming what the search is filtered to. Inside the
+  letters the ring you were standing on is gone, and nothing else said
+  "Ford only". At the top the parent button names the COUNTRY of whoever is
+  in the lens — which would lie about a search spanning every country — so
+  it reads the volume's own "all" word instead (`search_all_label`,
+  data-declared: TUTTI)
+- **Six things inverted or they'd have vanished on a dark ground**: the
+  completion labels and fan lines (painted black by the volume theme), the
+  carriage, the hollow lens during rotation (the lodestar must never be
+  lost), the dividers icon (the way OUT), and the band. Volume themes
+  outrank plain class rules, so these carry `[data-theme]`
+- The ground is the disc's RAW fill, never a composite: the disc is half
+  transparent and paints over this very ground, so compositing darkened it
+  twice. `mix(G, D, α) === G` has one solution — `G === D`
+- All of it a transform on the ACTIVE theme, so any volume that later earns
+  dividers dims in its own hue
+
 ## 3.18.1 — search scope follows the focus ring
 - **Scope inheritance**: the search corpus is every leaf DESCENDED FROM the
   items on the focus ring the search opened from — not the parent button.

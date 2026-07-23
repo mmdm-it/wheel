@@ -210,6 +210,47 @@ svg :focus-visible {
 }
 #dimension-button:hover,
 #search-button:hover { opacity: 1; }
+
+/* ── Search mode: the same room under a different light ───────────────────
+   The ground dims for close work (computed from the ACTIVE theme in
+   search-mode.js, so every volume dims in its own hue) and the gold ring
+   leaps forward against it — the nodes and their on-node labels are
+   deliberately left alone, one token doing the work of a repaint.
+
+   But everything styled DARK-ON-LIGHT vanishes on a dark ground, and a
+   volume theme outranks a plain .class rule — so these carry
+   [data-theme] to sit above the theme's own selectors. Inverted here: the
+   completion labels and fan lines, the carriage, the hollow lens, and the
+   dividers icon itself, which is the way OUT and must never disappear
+   (Howell 2026-07-22). Pyramid NODES are left to the theme: gold stars on a
+   dark ground read beautifully; the base rule below only catches volumes
+   whose stars are dark-on-light. */
+#search-button svg { transition: color 300ms ease; }
+:root.search-mode #search-button svg { color: #cfcfcf; }
+:root.search-mode .child-pyramid-node {
+  fill: rgba(255, 255, 255, 0.14);
+  stroke: rgba(255, 255, 255, 0.30);
+}
+.child-pyramid-label { transition: fill 300ms ease; }
+:root[data-theme].search-mode .child-pyramid-label { fill: rgba(255, 255, 255, 0.92); }
+/* The fan lines out to the completions — ink connectors, lit for the dark. */
+:root[data-theme].search-mode .child-pyramid-fan-line { stroke: rgba(255, 255, 255, 0.34); }
+/* The carriage sits on the GROUND (not on a node), so it must be lit. */
+:root[data-theme].search-mode .search-carriage { fill: rgba(255, 255, 255, 0.92); }
+/* The scope label — the parent button's words without its vessel: what the
+   search is filtered to. A statement, never a control. */
+.search-scope-label { pointer-events: none; }
+:root[data-theme].search-mode .search-scope-label { fill: rgba(255, 255, 255, 0.92); }
+/* The lens goes hollow while the chain turns — its dark ring would vanish,
+   and the lodestar is the one point that must never be lost. */
+:root[data-theme].search-mode .focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
+  stroke: rgba(255, 255, 255, 0.78);
+}
+/* The watermark: the pressed tool, ghosted in the volume's own node colour. */
+.search-watermark {
+  color: var(--color-nodes);
+  pointer-events: none;
+}
 #dimension-button[aria-pressed="true"] { opacity: 1; transform: scale(1.08); }
 #dimension-button:focus-visible { outline: 2px solid var(--color-nodes, #f2b41c); outline-offset: 3px; border-radius: 50%; }
 
