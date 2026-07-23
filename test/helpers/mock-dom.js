@@ -14,7 +14,19 @@ export function createMockElement(tag) {
     attrs: {},
     style: {},
     dataset: {},
-    classList: { toggle() {}, add() {}, remove() {}, contains() { return false; } },
+    classList: (() => {
+      const set = new Set();
+      return {
+        toggle(name, force) {
+          const want = force === undefined ? !set.has(name) : Boolean(force);
+          if (want) set.add(name); else set.delete(name);
+          return want;
+        },
+        add(name) { set.add(name); },
+        remove(name) { set.delete(name); },
+        contains(name) { return set.has(name); }
+      };
+    })(),
     parentNode: null,
     textContent: '',
     onclick: null,

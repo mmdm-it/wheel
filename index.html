@@ -26,7 +26,11 @@
   <meta property="og:locale:alternate" content="en_US" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <!-- Load the REAL bold (700) faces: four CSS rules use font-weight:700
+       (magnified ring labels, card/ephemeris titles). Without the 700 face the
+       browser SYNTHESISES bold from 500, and iOS Safari's faux-bold is ugly
+       (Howell 2026-07-21). -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/theme-tokens.css" />
   <link rel="stylesheet" href="./styles/base.css" />
   <link id="volume-style" rel="stylesheet" href="" />
@@ -43,10 +47,20 @@
     © 2026 Meccanismi Marittimi delle Marche. Tutti i diritti riservati.
   </div>
   <svg id="app" aria-label="Wheel v3"></svg>
+  <!-- The wireframe globe is drawn (and turned) by src/view/dimension-globe.js -->
+  <button id="dimension-button" type="button" hidden
+          aria-label="Change dimension" aria-pressed="false"></button>
+  <!-- The navigator's dividers (search) share the globe's corner: dividers
+       while browsing, globe at a leaf. Drawn by src/view/search-dividers.js -->
+  <button id="search-button" type="button" hidden aria-label="Search"></button>
   <div id="detail-panel" class="detail-panel" aria-label="Detail panel">
     <div id="detail-content" class="detail-content"></div>
     <div id="version-badge" class="detail-version" aria-label="Application version"></div>
   </div>
+  <!-- The dimension strata (secondary/tertiary) render here, ABOVE the
+       primary and its detail panel, so a front stratum opaquely covers the
+       receded primary beneath it (Phase D). -->
+  <svg id="strata-layer" aria-hidden="true"></svg>
   <div id="portrait-gate" aria-hidden="true">
     <svg class="portrait-gate-icon" viewBox="0 0 120 120" role="img" aria-label="Rotate to portrait"
          fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">

@@ -3,11 +3,34 @@ import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths,
   getCalendarWeekdayNames, getCalendarWeekdayLetters } from './volume-helpers.js';
 import { dayOfWeek } from '../geometry/day-grid.js';
+import { localSunTimes } from '../geometry/solar.js';
 import { buildCalendarPyramid } from '../pyramid/volume-pyramid.js';
 
 const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
 const manifestUrl = './data/calendar/manifest.json';
 const schemaUrl = './schemas/calendar.schema.json';
+
+// THE STATION (Howell 2026-07-20, docs/DETAIL_SECTOR_LOADS.md): Fano (PU),
+// permanently — the printed legend is the doctrine. Sun times are COMPUTED
+// for the whole chain; tides/moon/feasts come from the extracted wall
+// calendar (the print edition is the source of truth), bounded to its
+// window — outside it the card simply shows less, never invents.
+const FANO = { lat: 43.8433, lon: 13.0172, zoneSince: 1893 };
+const ephemerisUrl = './data/calendar/ephemeris-2026.json';
+const MOON_PRINT = { nuova: 'LUNA NUOVA', primo: 'PRIMO QUARTO', piena: 'LUNA PIENA', ultima: 'ULTIMA QUARTO' };
+
+let ephemerisDays = null;
+let ephemerisFetch = null;
+// Test seam (and future node path): inject an ephemeris table directly.
+export function primeEphemeris(days) { ephemerisDays = days || null; }
+function loadEphemeris() {
+  if (!isBrowser || ephemerisFetch) return ephemerisFetch;
+  ephemerisFetch = fetch(ephemerisUrl)
+    .then(r => (r.ok ? r.json() : null))
+    .then(json => { ephemerisDays = json?.days || null; })
+    .catch(() => { ephemerisDays = null; });
+  return ephemerisFetch;
+}
 
 let manifestPath = null;
 let schemaPath = null;
@@ -190,7 +213,29 @@ export function detailFor(selected, manifest) {
     if (![yearNumber, monthNumber, dayNumber].every(Number.isFinite)) return null;
     const weekday = getCalendarWeekdayNames(manifest)[dayOfWeek(yearNumber, monthNumber, dayNumber)] || '';
     if (!weekday) return null;
-    return { type: 'card', title: weekday.toUpperCase(), body: '', titleAlign: 'center' };
+
+    // The wall calendar's day cell, as a card (docs/DETAIL_SECTOR_LOADS.md).
+    // NO date — the magnifier already says it (Howell: no redundancy).
+    // Sun computed for any date on the chain; tides/moon/festivo only
+    // inside the extracted print window.
+    const rows = [];
+    const sun = localSunTimes(yearNumber, monthNumber, dayNumber, FANO.lat, FANO.lon, FANO.zoneSince);
+    if (sun) rows.push(`↑ ${sun.alba}    ↓ ${sun.tramonto}`);
+    const key = `${yearNumber}-${String(monthNumber).padStart(2, '0')}-${String(dayNumber).padStart(2, '0')}`;
+    const eph = ephemerisDays?.[key];
+    if (eph) {
+      const h = v => Number(v).toFixed(1).replace('.', ',');
+      rows.push(`▲ ${eph.alta[0]}  ${h(eph.alta[1])} m`);
+      rows.push(`▽ ${eph.bassa[0]}  ${h(eph.bassa[1])} m`);
+      if (eph.luna && MOON_PRINT[eph.luna]) rows.push(MOON_PRINT[eph.luna]);
+    }
+    return {
+      type: 'ephemeris',
+      title: weekday.toUpperCase(),
+      titleAlign: 'center',
+      festivo: Boolean(eph?.festivo),
+      rows
+    };
   }
 
   if (selected.level === 'year') {
@@ -339,7 +384,16 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
   // Boot lands on the year ring — the top. Through a gateway, the parent
   // button names the return destination; standalone there is nothing above,
   // so no button.
-  const onBoot = ({ app }) => {
+  const onBoot = ({ app, renderDetail }) => {
+    // Warm the ephemeris table (tides/moon/feasts from the wall calendar)
+    // so the day card has it long before any leaf settles. If a slow fetch
+    // loses that race, repaint the settled day when the table lands —
+    // otherwise a sun-only card sits stale until the user scrubs
+    // (Phase C audit L1).
+    loadEphemeris()?.then(() => {
+      const settled = app?.nav?.getCurrent?.();
+      if (settled?.level === 'day' && typeof renderDetail === 'function') renderDetail(settled);
+    });
     // Months mode always has an OUT (up to the years ring); the years ring
     // only when a gateway waits behind it.
     if (app?.setParentButtons) {

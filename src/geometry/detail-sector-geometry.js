@@ -13,27 +13,7 @@ import {
   getArcParameters,
   getMagnifierPosition
 } from './focus-ring-geometry.js';
-
-/** Fraction of arc radius used as the inner usable boundary */
-const INNER_RADIUS_RATIO  = 0.98;
-
-/** Viewport-edge margin as a fraction of SSd */
-const MARGIN_RATIO        = 0.03;
-
-/** Magnifier circle radius as a fraction of SSd */
-const MAGNIFIER_RATIO     = 0.060;
-
-/** Bottom clearance: this many magnifier-radii above the magnifier centre */
-const MAGNIFIER_CLEARANCE = 4;
-
-/** Horizontal/vertical padding inside the arc, as a fraction of SSd */
-const TEXT_PAD_RATIO      = 0.04;
-
-/**
- * Extra top offset so the first text line clears the copyright notice.
- * First line y = topY + TOP_OFFSET_RATIO × SSd  (≈ 11% SSd total from viewport top)
- */
-const TOP_OFFSET_RATIO    = 0.08;
+import { computeDSUA, CPUA_SPEC } from './usable-areas.js';
 
 /** Skip lines whose available width is narrower than this fraction of SSd */
 const MIN_WIDTH_RATIO     = 0.10;
@@ -85,60 +65,54 @@ export function computeDetailSectorBounds(width, height, logoBounds = null) {
   const arcParams    = getArcParameters(viewport);
   const magnifierPos = getMagnifierPosition(viewport);
 
-  const { SSd }                = viewport;
-  const { hubX, hubY, radius } = arcParams;
-  const innerRadius            = radius * INNER_RADIUS_RATIO;
+  const { SSd } = viewport;
 
-  const margin          = SSd * MARGIN_RATIO;
-  const magnifierRadius = SSd * MAGNIFIER_RATIO;
-  const textPad         = SSd * TEXT_PAD_RATIO;
-  const linePitch       = SSd * LINE_PITCH_RATIO;
-  const avgCharWidth    = SSd * CHAR_WIDTH_RATIO;
+  // THE FENCE (Howell 2026-07-20): the sector's text obeys the CANONICAL
+  // usable area — src/geometry/usable-areas.js, one fence for everything.
+  // Top 0.15·SSd, right 0.02·SSd off the glass, floor at the control deck,
+  // and the TAPERED arc margin pushing lines right, away from the ring,
+  // more the deeper they sit. This retires the sector's private margins,
+  // which sat text high and tight against the band.
+  const dsua = computeDSUA(viewport, arcParams, magnifierPos);
 
-  const topY       = margin;
-  const bottomY    = Math.min(height, magnifierPos.y - MAGNIFIER_CLEARANCE * magnifierRadius);
-  const rightBound = width - margin;
+  const linePitch    = SSd * LINE_PITCH_RATIO;
+  const avgCharWidth = SSd * CHAR_WIDTH_RATIO;
 
   const lineTable = [];
-  let y = topY + SSd * TOP_OFFSET_RATIO;
+  let y = dsua.top + linePitch; // first baseline one pitch inside the fence
 
-  while (y < bottomY - textPad) {
-    const dy   = y - hubY;
-    const disc = innerRadius * innerRadius - dy * dy;
+  while (y < dsua.bottom) {
+    let leftX = Math.max(dsua.left, dsua.arcXAt(y));
+    const rightX = dsua.right;
 
-    if (disc >= 0) {
-      let leftX    = hubX - Math.sqrt(disc) + textPad;
-      const rightX = Math.min(rightBound, hubX + Math.sqrt(disc)) - textPad;
+    // Push leftX past the logo exclusion zone if needed
+    if (logoBounds && y >= logoBounds.top && y <= logoBounds.bottom) {
+      leftX = Math.max(leftX, logoBounds.right + SSd * CPUA_SPEC.LOGO_PAD_LEFT_RATIO);
+    }
 
-      // Push leftX past the logo exclusion zone if needed
-      if (logoBounds && y >= logoBounds.top && y <= logoBounds.bottom) {
-        leftX = Math.max(leftX, logoBounds.right + textPad);
-      }
+    const availableWidth = Math.max(0, rightX - leftX);
 
-      const availableWidth = Math.max(0, rightX - leftX);
-
-      if (availableWidth > SSd * MIN_WIDTH_RATIO) {
-        lineTable.push({
-          y,
-          leftX,
-          rightX,
-          availableWidth,
-          maxChars: Math.floor(availableWidth / avgCharWidth)
-        });
-      }
+    if (availableWidth > SSd * MIN_WIDTH_RATIO) {
+      lineTable.push({
+        y,
+        leftX,
+        rightX,
+        availableWidth,
+        maxChars: Math.floor(availableWidth / avgCharWidth)
+      });
     }
 
     y += linePitch;
   }
 
   return {
-    topY,
-    bottomY,
-    leftBound: 0,
-    rightBound,
-    arcCenterX: hubX,
-    arcCenterY: hubY,
-    arcRadius:  innerRadius,
+    topY: dsua.top,
+    bottomY: dsua.bottom,
+    leftBound: dsua.left,
+    rightBound: dsua.right,
+    arcCenterX: arcParams.hubX,
+    arcCenterY: arcParams.hubY,
+    arcRadius:  arcParams.radius,
     viewportWidth:  width,
     viewportHeight: height,
     SSd,

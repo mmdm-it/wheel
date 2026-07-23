@@ -155,4 +155,30 @@ describe('gateway integrity', () => {
       );
     }
   });
+
+  it('the census holds: 1,032 models across 99 houses plus 2 gateway patrons', () => {
+    // The Phase C docs audit caught "100 manufacturers" drifting into three
+    // documents — false under every reading. Pin the real numbers so the
+    // prose can be checked against a guard, and any data change that moves
+    // them is a DELIBERATE census event, not a silent drift.
+    let models = 0;
+    let houses = 0;
+    let patrons = 0;
+    for (const { node } of manufacturers()) {
+      if (node.gateway_children !== undefined) { patrons += 1; continue; }
+      houses += 1;
+      for (const cylVal of Object.values(node.cylinders ?? {})) {
+        models += Array.isArray(cylVal.models) ? cylVal.models.length : 0;
+        for (const famVal of Object.values(cylVal.families ?? {})) {
+          models += Array.isArray(famVal.models) ? famVal.models.length : 0;
+          for (const subVal of Object.values(famVal.subfamilies ?? {})) {
+            models += Array.isArray(subVal.models) ? subVal.models.length : 0;
+          }
+        }
+      }
+    }
+    assert.equal(models, 1032, 'model census');
+    assert.equal(houses, 99, 'engine-house census');
+    assert.equal(patrons, 2, 'gateway patrons (Gutenberg, Gregorio XIII)');
+  });
 });

@@ -352,6 +352,17 @@ export function buildPlacesLevel(manifest, levels, levelIndex, { selectedId, par
   return { items, selectedIndex, preserveOrder: true };
 }
 
+// THE VERSION FOOTNOTE (Howell 2026-07-20): a factory stamp at the end of
+// the manufacturers chain — four empty links past the last manufacturer,
+// then one placebo node carrying the build's version, bare (e.g. "3.12.0").
+// Placebo means the engine ignores it everywhere: bounds anchor on the
+// last REAL link (so at full stretch the stamp stays two spacings short
+// of the magnifier), snap never lands on it, taps pass through it. The
+// version is stamped into the bundle at build time; unbundled runs
+// (tests, raw source) read 'dev'.
+const WHEEL_VERSION = typeof __WHEEL_VERSION__ !== 'undefined' ? __WHEEL_VERSION__ : 'dev';
+const VERSION_FOOTNOTE_GAPS = 4;
+
 export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
   const markets = manifest?.MMdM?.markets;
   if (!markets) return { items: [], selectedIndex: 0, preserveOrder: false };
@@ -382,6 +393,7 @@ export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
   const selectedIndex = (() => {
     if (target) {
       const idx = items.findIndex(item => {
+        if (!item || item.placebo) return false;
         const simple = String(item.name || '').toLowerCase();
         if (simple === target) return true;
         return String(item.id || '').toLowerCase() === target;
@@ -390,6 +402,11 @@ export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
     }
     return 0;
   })();
+
+  if (items.length) {
+    for (let i = 0; i < VERSION_FOOTNOTE_GAPS; i += 1) items.push(null);
+    items.push({ id: 'version-footnote', name: WHEEL_VERSION, placebo: true, order: items.length });
+  }
 
   return { items, selectedIndex, preserveOrder: true };
 }
@@ -726,6 +743,15 @@ export function getBibleVerseItems(chapterItem) {
   return cached?.status === 'loaded' ? cached.items : [];
 }
 
+// The cache's terminal state for a chapter file: null = never requested,
+// 'loading' | 'loaded' | 'error'. Lets callers distinguish "not yet asked"
+// from "asked, and the answer is genuinely empty" (the Esther stubs) —
+// re-requesting a loaded-empty chapter loops forever (Phase C, the Moto G
+// Esther incident).
+export function getBibleVerseCacheStatus(externalFile) {
+  return _verseCache.get(externalFile)?.status || null;
+}
+
 export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
   const externalFile = chapterItem?.meta?.externalFile;
   if (!externalFile) return;
@@ -734,8 +760,15 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
     if (typeof onLoaded === 'function') onLoaded();
     return;
   }
-  if (cached?.status === 'loading') return; // already in flight
-  _verseCache.set(externalFile, { status: 'loading', items: [], rawVerses: null });
+  if (cached?.status === 'loading') {
+    // Already in flight: QUEUE the callback, never drop it (Phase C audit
+    // M1 — the read-ahead's renderDetail and a later pyramid refresh can
+    // both be waiting on the same chapter; dropping the second left the
+    // verse sky empty until the user nudged the ring).
+    if (typeof onLoaded === 'function') cached.waiters = [...(cached.waiters || []), onLoaded];
+    return;
+  }
+  _verseCache.set(externalFile, { status: 'loading', items: [], rawVerses: null, waiters: [] });
   const url = externalFile.startsWith('.') ? externalFile : `./${externalFile}`;
   fetch(url)
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
@@ -759,8 +792,10 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
         })
         .sort((a, b) => a.order - b.order)
         .map((item, idx) => ({ ...item, order: idx }));
+      const waiters = _verseCache.get(externalFile)?.waiters || [];
       _verseCache.set(externalFile, { status: 'loaded', items, rawVerses: verses });
       if (typeof onLoaded === 'function') onLoaded();
+      waiters.forEach(fn => { try { fn(); } catch { /* a waiter must not break the rest */ } });
     })
     .catch(err => {
       console.warn('[prefetchBibleVerses] failed to load', externalFile, err);

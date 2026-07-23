@@ -1,5 +1,499 @@
 # Changelog
 
+## 3.18.1 — search scope follows the focus ring
+- **Scope inheritance**: the search corpus is every leaf DESCENDED FROM the
+  items on the focus ring the search opened from — not the parent button.
+  Standing in a manufacturer's cylinders, search is that maker only; at the
+  top the ring holds all manufacturers, so the union is the whole volume and
+  the country in the parent button scopes nothing — the "big exception" that
+  needed no carving, because the ring never holds a country
+- **No scope UI**: the ring you just left is the scope display; the pyramid
+  candidates confirm it. Nothing new on screen
+- **Foreclosure**: when scope is narrowed, the opening ring prunes to the
+  scope's first characters — a path no in-scope model begins (no maker-X
+  model starting with G) is simply absent from the ring, not merely refused
+  on strike. At whole-volume scope the ring stays full (the dead X and 0
+  kept — the virgin alphabet reads "type anything")
+- Implemented as pure id-prefix containment (every model id encodes its
+  shelf path; every ring item id is a prefix of it) — no graph walk, no
+  cross-dialect ambiguity
+
+## 3.18.0 — the search instrument — ring-based character entry
+- **Search without a keyboard** — the verboten feature, admitted through the
+  instrument's own door. The premise never banned finding; it banned the
+  QWERTY slab and the editor's mindset. Search over a closed corpus is
+  navigation, and navigation is what this instrument does
+- **The navigator's dividers** (src/view/search-dividers.js): the search
+  icon — wing dividers drawn by code in the globe's idiom (1px, #363636),
+  sharing the globe's corner: dividers while browsing, globe at a leaf.
+  Declared per volume (`hasSearch`); only the manifold volume carries it.
+  Both corner instruments lifted clear of the band (bottom 9% → 13%)
+- **The alphanumeric ring**: tap the dividers and the browse chain yields to
+  A–Z ‖ 0–9 (two-link seam), rotatable in the instrument's grammar,
+  characters centered on their nodes, parent button retired for the duration
+- **The strike**: tap the magnifier — its first-ever click — to commit the
+  settled character. The carriage rides just left of the lens, rotated on
+  its axis, each strike pushing older characters leftward
+- **Live pruning**: after each strike the ring rebuilds to only characters
+  some model name can continue with — the chain visibly shortens as the
+  query converges. Dead-end strikes are refused. Matching is normalized
+  (case-insensitive, separators ignored: ID36SR finds ID36 SR)
+- **The backspace that came to us**: every carriage character is its own
+  backspace key — tap one and the string truncates to just before it, the
+  letter returns to the lens, the candidates widen back out. Spaced for
+  thumbs, no delete key anywhere
+- **Candidates in the pyramid**, dancing live as characters stream through
+  the lens. Measured on the full corpus (1,032 model names): avg 2.1
+  strikes until the target is among ≤14 candidates; worst case 5
+- **Arrival as migration, radially true**: a candidate tap lands exactly
+  like picking a model from its cylinder group — the star flies to the
+  lens, siblings pour in, the detail circle expands in sync, the unused
+  letters stream off, and the magnifier's golden fill (bare — no stroke,
+  no half-typed label) travels to the parent seat to begin the vessel's
+  restoration; stroke ring and true name breathe on together after. The
+  honest ancestor stack is planted, so OUT ascends the real shelf
+- **Defensive publication**: docs/SEARCH_ENTRY_DISCLOSURE.md places the
+  method (prune-shortened ring, lens-strike, carriage-as-backspace,
+  candidates-as-children, migration arrival) in the public record as of
+  this dated, tagged release
+- Known data debt: one of 1,032 models (a family literally named with a
+  colon inside a colon-delimited id scheme) cannot land; its ordinary
+  navigation shares the flaw
+
+## 3.17.1 — the migration keeps its color — de-popping the pyramid flight
+- **The dress changes in flight** (the pop hunt begins): migrating nodes flew
+  the pyramid→ring journey wearing the pyramid's brown and popped to the
+  ring's brown when the reals swapped in at the barrier. The clone's fill and
+  stroke now fade to the destination dress over the same 600ms ease as the
+  travel — the clicked node to the magnifier's fill-and-ring — so the swap
+  lands on identical pixels. The OUT flight mirrors it home
+- **The verse numbers grow as they fly**: pyramid labels wear an absolute px
+  size fitted to the pyramid; ring labels wear the theme's clamp. Each clone
+  label now reads its destination size off the real elements (magnifier size
+  for the clicked node) and transitions font-size in flight — and shrinks
+  back on the way home
+- **Strata render-skip**: a stratum whose requested render is identical to
+  what its group already shows keeps its children untouched (less DOM churn
+  on every stack render)
+- **KNOWN LIMIT documented**: WebKit ignores CSS filters on SVG child
+  elements — receded SVG planes don't blur on iPhone (the HTML verse panel
+  does). An SVG-native feGaussianBlur repair was tried and reverted same-day
+  (sluggish tween, filter-region cropping mid-flight); the lesson and the
+  future avenue are recorded at setPrimaryVisual and in project memory
+
+## 3.17.0 — the globe turns — drawn wireframe dimension button
+- **The dimension button's globe is drawn by code** (src/view/dimension-globe.js)
+  and retires the static PNG: an orthographic wireframe — limb, three still
+  parallels, four meridian ellipses whose widths follow R·|sin(longitude +
+  phase)| — on a tilted axis. Driving the phase turns the sphere honestly:
+  meridians slide across the face and around the back; the parallels, as on
+  a real globe, never move
+- **It turns on arrival**: when the detail sector opens and the button
+  appears, it comes in spinning
+- **It turns on every press**: a quarter axial turn sharing the strata
+  tween's 600ms clock — the globe and the receding stratum settle on the
+  same frame. Spins accumulate (never rewind), and every quarter-turn lands
+  back on the balanced canonical pose
+- **One-pixel line-work** (vector-effect: non-scaling-stroke — a true screen
+  pixel at any button size), dark grey #363636 rather than ink black:
+  present when sought, quiet when not. Vector, filter-free, themable via
+  currentColor; reduced-motion users get the pose without the theatre
+
+## 3.16.1 — overture tempo — rotation begins on the chorus
+- **No beat before the rotation**: the instant the chorus's last name is
+  typed, the ring moves — the stray 360ms post-chorus gap and the 750ms
+  register pause are both retired (registerMs: 0 stays as the knob)
+
+## 3.16.0 — the overture — arrival in motion
+- **The boot reveal teaches rotation** (Rams rule 4, taught by the instrument
+  itself): the wireframe now draws at an OVERTURE item and, once complete,
+  the LIVE wheel takes over mid-drawing — same geometry, restyled in ink —
+  and glides home to the configured boot item in one steady, linear travel.
+  Everything performs as the full program during the glide: the chorus of
+  names rides by, the lens empties and refills, the parent header follows,
+  the child pyramid dances — while the colour (grey band, golden fills)
+  fades up over the final half second, completing exactly at the settle
+- **The first manufacturer's honest pyramid**: the overture draws at a
+  four-child manufacturer (buckets 6, 8, 12, 18) — the fan visibly DEPENDS
+  on what is in the lens, four children before the glide, two at home
+- **Data-declared, volume-agnostic**: `splash_overture_item` sits beside
+  `initial_magnified_item` in a volume's own display config; shared code
+  ferries only the generic key (test-enforced, 4 new tests). Volumes without
+  the key keep the classic hold-and-dissolve reveal. Returning visitors skip
+  the splash and boot at home directly — nothing changes for them
+- **Typography in the hierarchy's own logic**: country → manufacturer → its
+  cylinder counts → the chorus of sibling manufacturers, all before a 750ms
+  register pause and the rotation
+- **Rough-draft fan lines**: drawn centre-to-centre exactly as the live
+  wheel runs them, stubs showing inside the hollow circles (the rim-trim is
+  retired); the arriving fills obliterate the stubs
+- **Tempo**: bead sweep twice as brisk (100ms draw / 65ms gap); rotation
+  4000ms linear — 3.5s pure wireframe, then a 500ms colour fade landing on
+  the settle. All knobs in the T block
+- **`glideToItem(id, durationMs)`** joins the wheel's API — fixed-duration
+  linear travel to a named item, selection committed on arrival
+- **fix: ink stroke weight** — the rotation's node outlines fattened from
+  1px to 1.5px at handoff (Blink showed it; WebKit smoothed it). The live
+  wireframe now holds the drawing's own 1px until the colour retires it
+
+## 3.15.0 — the fifty tongues — language registry stress test, strata fixes
+- **The fifty tongues** (data/gutenberg/languages.json): the secondary
+  stratum now carries fifty languages — a thumbnail history of the expansion
+  of the church, ordered by the approximate date of each tongue's first major
+  Bible translation, עברית → Ελληνικά → Latina → Հայերեն → … → Bahasa
+  Indonesia. Nine carry real text; the other forty-one are POPULATION HOOKS
+  (`comingSoon: true`) that render in the ring and are ready to be promoted
+  by dropping in edition data — no code change needed
+- **Coming soon, natively**: settling a placeholder language leaves the
+  reader exactly where it was (nothing to load, nothing blanks) and the
+  tertiary shows a single node speaking that language's own promise —
+  Demnächst, Wkrótce, விரைவில், 近日公開 — in and OUT of the lens
+  (the sentinel key never shows)
+- **Edition names in their own tongues** (translations.json `nativeName`):
+  the tertiary magnifier reads Vulgata Clementina, Οἱ Ἑβδομήκοντα, כתב יד
+  לנינגרד, Синодальный перевод — not English glosses
+- **fix(strata): nodes ride the chain** — strata nodes were placed on the
+  bare circle while the band runs arc + straight tangents; nine nodes never
+  strayed far enough to tell, fifty wrapped the circle and peeled off the
+  track. Nodes now follow the same sprocket centerline the band draws
+  (chainPointAt, mirrored window for the secondary) — max deviation 0.05px
+- **fix(strata): receded blur sticks on iPhone** — iOS Safari doesn't
+  reliably apply a CSS filter to a freshly-inserted SVG element, so the
+  recreated-per-render stratum group stayed sharp. The group is now a stable
+  element, cleared and repopulated in place
+- **fix(labels): uppercase only pure Latin** — the casing test is inverted
+  for fifty languages: a label uppercases ONLY if it is entirely Latin
+  script; Greek keeps its breathings, and Hebrew, Arabic, CJK, Indic, Thai,
+  Armenian, Georgian, Amharic pass through untouched
+- **fix(verse): never truncate the Word** — ellipsis removed from the verse
+  layout path entirely; the uniform-size flow always shows every word
+- **fix(verse): honest measurement** — Safari's canvas measureText
+  under-measures a loaded web font, packing lines wide to the viewport edge
+  on iPhone. Wrapping now measures with a hidden DOM span in the real font
+  stack — the same engine that paints is the one that measures
+- **fix(verse): no font boosting** — Chrome-on-iOS auto-inflates a wide
+  rendered text block past its set px size (its measure span was exempt),
+  crowding the right edge in that one browser. `text-size-adjust: 100%`
+  pins rendered to measured everywhere
+
+## 3.14.0 — the dimension rings turn (D.4a)
+- **Magnifier-as-selection** retires the tap-for-now stopgap: the front
+  stratum is a rotatable focus ring. **Drag** to scrub it (mapped to the
+  primary's exact rate — π/4 of arc per 100px — so it feels like the ring
+  the reader knows), or **tap** a node to glide it into the lens. Either way
+  the selection commits on the settle, which is when the receded primary
+  re-renders its live preview
+- **The lodestar** (docs/DESIGN_CLARIFICATIONS.md): the strata magnifier is
+  now a FIXED point the nodes rotate through — it never floats. While turning
+  it's an empty hollow lens the nodes stream through; on the settle it fills
+  with the item nearest the lens, magnified. Matches the primary exactly
+- **Overshoot + springback**: the chain lets you pull ~3 nodes past either
+  end into empty space, then eases the nearest node home (easeOutCubic) — the
+  sprocket's last-link-taut feel, no more dead twitch at the wall. The
+  geometry now takes a fractional center index (integer = settled, fraction =
+  mid-rotation)
+- **fix(fonts): iPhone bold** — four CSS rules use font-weight:700 but only
+  Montserrat 500 was loaded, so every bold was synthesised; iOS Safari's
+  faux-bold was blotchy. Load the real Montserrat 700 and EB Garamond 700
+
+## 3.13.2 — the strata move
+- **The strata transition glides** (D.4b) instead of snapping — a camera
+  pull-back: the front plane recedes while the incoming plane travels in on
+  a diagonal (the mirrored secondary from above-left, the standard tertiary
+  from below-left, matching the recede's axis), and leaving planes slide back
+  out. 600ms. Each plane HOLDS its starting blur through the motion (a
+  receded plane never sharpens) and snaps to its destination blur on settle;
+  the held-constant blur renders once and only the transform moves, so it
+  stays smooth even on the Moto G
+- **The receded detail panel scales about the viewport centre** — the same
+  point the SVG ring/logo use — so the verse text stays seated on the blue
+  circle at every depth (was reading getBoundingClientRect, which drifted the
+  origin on a second recede and slid the text off the circle)
+- **The magnified translation node names its edition** — the full registry
+  title (Clementine Vulgate, Douay-Rheims…), centred in the magnifier;
+  unselected nodes keep the abbreviation (VUL, DRA)
+- **Every language shows a tertiary stratum**, even a single-translation one:
+  the reader wants to know which edition they're reading, choice or not
+  (reverses the earlier single-translation skip)
+
+## 3.13.1 — Verse type, and the reading tap
+- **Verse text is one calm size, filling the sector.** The old auto-fit
+  ballooned short verses and shrank long ones; verses now share a single
+  CONTINUOUS size — the largest at which the longest verse (Esther 8:9)
+  fills the sector — and flow at their true line height (no discrete tiers,
+  no integer row-stride waste), so the type roughly doubles from before.
+  Device-adaptive; scoped to verses (chapter titles, calendar, catalog keep
+  their own fitting)
+- **Wrapping measures real glyph widths** (canvas.measureText in EB Garamond
+  at the actual size) instead of a per-character estimate. The estimate
+  over-measured the serif and broke every line ~12% early by a constant
+  proportion — bending the ragged right edge concentric with the arc and
+  stranding words that plainly fit. Measured wrapping breaks at the true
+  edge: the right margin goes ragged-but-full, words that fit stay up, and a
+  line can't clip. Falls back to the estimate only where there's no canvas
+  (tests); size recomputes once the web font loads
+- **The detail sector's tap-to-advance paints the text first.** A leaf-advance
+  tap now renders the next verse/day immediately, then the ring rotates to
+  catch up — the reader is looking at the words, not the ring. Scoped to the
+  single-step advance; a distant click still commits on arrival, and the
+  selection still commits on arrival here too (the preview never touches nav)
+- **docs**: the Phase D subphase outline (ROADMAP) rewritten to what shipped
+  — D.1–D.3 done (the strata), D.4 the remaining motion (rotation + the
+  tween), D.5 mostly folded into it, D.6 the Bible data campaign
+
+## 3.13.0 — Phase D.3: the dimension strata
+- **The receding stack** (docs/DIMENSION_SYSTEM.md, D.3): the dimension
+  button cycles primary → secondary → tertiary → primary, each press
+  pushing the front plane one deeper. Depths [1.0, 0.4, 0.2], static blurs
+  [0, 5, 10]px. The recede is a straight camera pull-back — a 2D scale about
+  the viewport centre (Disney multiplane), which drops the off-screen hub
+  for free. Strata render in their own layer (#strata-layer, z 250) above
+  the primary's detail panel, so a front stratum opaquely covers the receded
+  primary while the blurred primary shows through the gaps
+- **The honest sprocket chain**: the focus-ring band is no longer an arc
+  that curls into a circle when it recedes. `bandCenterlinePoints` draws the
+  arc where the chain rides the off-screen sprocket, then STRAIGHT tangent
+  runs past the viewport exits — vertical up at the upper-left, ~SE at the
+  lower-right, mirrored (vertical down) for the secondary. Stroked
+  centreline, shared by the primary and every stratum; off-screen at full
+  size, scaled into view on the recede
+- **Tangent fill**: when the primary recedes, the chain populates its
+  straight runs with the beyond-window links (verses climbing overhead),
+  sized per depth. A static re-render, off the rotation hot path — the front
+  ring stays arc-only, rotation perf untouched
+- **The button lives in the detail sector**: the globe appears only where a
+  dimension exists and the purple sill is on screen (a leaf); over a child
+  pyramid it hides and any open stack recedes. The tertiary stratum is
+  skipped for a single-translation language (Latin cycles primary ⇄
+  secondary; English/Greek earn the third plane)
+- **Native tongues**: the secondary stratum names each language in its own
+  script (ESPAÑOL, ITALIANO, ΕΛΛΗΝΙΚΆ, עברית); the magnified label spans its
+  node weighted inward, off the left edge. The globe icon is a clean
+  wireframe sphere, lifted clear of the ring
+- **fix(bible): the cousin ascent** — backing out of a leaf verse to the
+  chapters ring rebuilt it from one book (getBibleChapters), stranding the
+  ring on the parent book with no cousin gaps; rotating never crossed into
+  the next book. It now uses the same volume-spanning chapter chain the
+  descent builds, landing on the chapter reached. The test that demanded the
+  single-book ring (while its sibling required all 67 books) encoded the bug
+  and was corrected
+
+## 3.12.1 — Phase C close: the audit sweep
+- **Phase C end-of-phase audit** (docs/AUDIT-PHASE-C.md): two fresh-context
+  adversarial reviews (code + docs) instructed to refute, plus performance
+  baselines and the Phase F native-vs-wrapper evidence memo
+  (docs/WRAPPER_EVIDENCE.md)
+- **H1 (code)**: a child-pyramid tap mid-rotation could pour the WRONG
+  manufacturer's cylinders — the sky live-previews the passing parent while
+  selection commits on arrival. A tapped star not among the committed
+  parent's children is now noise (bible/calendar were immune)
+- **The Esther hot loop**: a chapter that loads EMPTY (Esther ships 15/16
+  verse-less — a data hole, punchlisted) re-fired its prefetch's onLoaded
+  synchronously → refresh → render → re-request, spinning flat-out and
+  near-crashing the Moto G. The cache now distinguishes "never asked" from
+  "loaded-empty"; a terminal-empty chapter renders an empty sky and asks
+  nothing. Test pins all four cache states
+- **Six mediums**: dropped verse-prefetch callback (queued now); text plugin
+  wrapped against sequential rows but seated on strided rows (overflowed the
+  tapered fence — both now use the seat rows); migration stack never cleared
+  across gateway transits (leaked overlays, stale-clone replay — cleared at
+  teardown); detail line table measured window.inner* not the visual
+  viewport (the DDG-bar mismatch); solar.js used the JULIAN leap rule and
+  granted phantom summer time 1893–1915 (both fixed; epoch-centering
+  documented as an honesty bound); the 450ms click-suppressor could swallow
+  a fast parent-button tap (controls exempt now)
+- **Docs audit**: four release tags created (nothing since v3.10.2 was
+  "shipped" by VERSIONING's own definition — the script only echoed the tag
+  command); v4-vs-v5 next-major contradiction resolved to v5; "100
+  manufacturers" corrected to 99 + 2 gateway patrons across three docs and
+  pinned by a new census guard; DETAIL_SECTOR_LOADS schema block trued to
+  the shipped ephemeris file
+- **Hygiene**: dead FLICK_MIN_VELOCITY removed; stale comments corrected;
+  two unledgered usable-areas literals added to FEEL.md; fade-only rotation
+  ruled permanent (Howell)
+- Suite 276 green
+
+## 3.12.0 — The detail sector learns its loads — ephemeris day card, dossier media slot, the fence obeyed
+- **The loads scoped and ruled** (docs/DETAIL_SECTOR_LOADS.md, before Phases
+  D/E per the 2026-07-19 ruling): three content kinds — the Bible FETCHES
+  text, the catalog STORES dossiers, the calendar COMPUTES ephemeris
+- **The ephemeris day card**: weekday at the top in the parent button's own
+  font (no date — the magnifier says it), then alba/tramonto, alta/bassa
+  marea with heights, and the moon quarter as printed — double-size rows,
+  centered in the sector. Feast weekdays wear the print's red. Sector tap
+  still means NEXT: a page-a-day calendar
+- **The wall calendar is the source of truth**: scripts/extract-calendario.py
+  reads the 2026 print edition's SVGs (committed under
+  data/calendar/sources/) into ephemeris-2026.json — 365/365 days, 61 red
+  days (52 Sundays + 9 feasts), 50 moon quarters, 5.7KB on the wire. Tides
+  are stored and bounded (window extends per print edition); outside it the
+  card shows no tides — never invents
+- **The sun is computed, and it checked the paper**: src/geometry/solar.js
+  (NOAA, Fano permanently; civil time from 1893, solar before) agrees with
+  the print within 6 minutes on 363 days (mean 1.9) — and exposed a two-day
+  MISPRINT in the 2026 wall calendar (Apr 24–25 sunset ~96 min early). The
+  app shows the correct sky; a test pins both the agreement and the misprint
+- **The sector obeys the canonical fence**: detail-sector-geometry now
+  consumes computeDSUA — top 0.15·SSd, tapered arc margin (0.06→0.28)
+  pushing text right of the ring, control-deck floor. Retires the sector's
+  private pre-C.5 margins in all three volumes
+- **The redundancy rule reaches the catalog**: model cards drop their title
+  — the magnifier already names the engine
+- **The dossier media slot**: cards render an inline video (preload
+  metadata, streams only on play) — built, tested, currently EMPTY; the
+  Twin 6 HP batteau film is recorded in the loads doc for its return
+- Boot splash: child pyramid circles slow to the parent button's 750ms
+  tempo, 200ms breath before the pyramid, fan lines are the beat between
+  nodes (docs/FEEL.md ledger updated)
+- Suite 274 green (solar-vs-print acceptance incl. misprint teeth, day-card
+  payloads, ephemeris plugin, dormant video slot)
+
+## 3.11.2 — Placebo-tail symmetry, siblings-only bible sky, snapshots once per version
+- **Placebo-tail symmetry**: holding the chain past ZVEZDA once again shows its
+  cylinder counts dim in the sky — the same past-the-end hold as AIFO, GENESIS,
+  and APOCALYPSIS. The stamp's trailing gaps are NOT cousin texture: tail slots
+  fall through to the nearest REAL link instead of emptying the pyramid (the
+  parent button holds honest through the stretch too); mid-chain cousin gaps
+  still empty it as ruled
+- **Siblings only in the sky**: at the testament ring the child pyramid seats
+  only the magnified testament's OWN books — Genesis and Matthew are cousins,
+  not siblings. The sweep is untouched: tapping a book still pours the full
+  67-book cousin chain into the ring
+- **Snapshots once per version**: sync-to-server.sh requests Wayback captures
+  only when the deployed version changed (`.snapshot-version` state, untracked;
+  SNAPSHOT=force overrides) — each capture is an edition, not a redeploy, so
+  the archive's timeline stays one layer per version
+- Suite 264 green (testament-sky siblings test added; one pre-sweep fixture
+  taught to carry `testamentId` like every real chain item)
+
+## 3.11.1 — The version footnote — a factory stamp past the last link
+- The catalog's manufacturers chain ends with four empty links past ZVEZDA and
+  one **placebo** node carrying the build's version, bare ("3.11.1") — text
+  only, no circle, black ink, smaller than a working label, centered on its
+  seat and hub-rotated like every numeral
+- It lives entirely in the overshoot zone: visible only while the thumb holds
+  the chain at full stretch (its closest approach is two spacings short of the
+  magnifier); the springback carries it off-glass — of interest only to the maker
+- Placebo is a generic engine flag: bounds anchor on the last REAL link, snap
+  never seats it, near-miss redirect skips it, deep links never resolve to it,
+  taps pass through it, no ARIA/tab exposure
+- The version is stamped into the bundle at build time (`--define` from
+  package.json) — bump → build now updates the stamp with no further work;
+  unbundled runs (tests) read 'dev'
+- 7 new tests (chain shape, index alignment, deep-link guard, rendered
+  inertness incl. no magnifier-approach swell); suite 263 green
+
+## 3.11.0 — Catch-up release: Phase B closed, Phase C sprint C.1–C.5 (2026-07-14 → 2026-07-20)
+
+> The per-change bump ritual lapsed during this sprint (122 commits, PRs #27–#66
+> merged with per-PR phone gates but no version bumps). This entry restores the
+> ledger in one honest stroke; each theme below was verified at its own merge.
+
+### Phase B closed
+- **B.3 MMdM population complete** (batches 2–12): 261 empty buckets filled →
+  **1,032 models across 99 manufacturers (plus two gateway patrons), full prose on every model**. Mesa baseline
+  elevated to mandatory dossier step; sui-generis purge (no source/curator
+  references in shipped prose); one-displacement-one-node doctrine; Volvo Penta
+  rebuilt (174 models); mystery pile closed. New guard:
+  `test/catalog-integrity.test.js` (no empty buckets/families/countries, prose
+  everywhere).
+- **B.4 Gregorio XIII gateway**: STATO PONTIFICIO → Gregorio XIII → CALENDARIUM
+  GREGORIANUM boots the calendar volume — second gateway instance with zero
+  shared-code changes, proving the abstraction generic. Return path wired
+  (audit finding H2).
+- **Phase B audit** (`docs/AUDIT-PHASE-B.md`): first edition of the end-of-phase
+  ritual — perf baselines, adversarial code+prose reviews, findings triaged.
+
+### C.1/C.1b — audit debts cleared
+- 12 of 14 audit findings resolved (L1 deferred to D, L3 to C.7) (H1 bible logic → adapter `onBoot` hook; H3
+  merge-script splice hazard; H4/M1/M4 gateway boot error paths + history-state
+  return context; M2/L4 sync-script `--delete-excluded`; M3 gateway integrity
+  tests; M6 debug artifacts; M7 shared `isValidNodePosition`).
+- `src/volume-configs.js`: the ONE declared home for volume literals; main.js
+  now volume-agnostic and scanned by the forbidden-literals guard.
+- Gateway speed: parsed-manifest cache + idle prefetch-on-approach + mod_deflate
+  — Moto G calendar gateway 8s → ~instant.
+
+### C.2 — instruments, catalog split, cache hygiene
+- Boot-phase decomposition, feel HUD (`?debug=1`), early themed paint.
+- `split-catalog.mjs`: boots on catalog-lite (151KB), prose grafted post-render.
+- Cache-Control hygiene + `lan-server.py` no-store dev server; staging deploy
+  target. Moto G boot 2215→1164ms.
+
+### C.3 — the gesture ladder (see docs/FEEL.md)
+- Tap / scrub (frozen 1:1) / flick / double-flick. Flick is scrub-anchored
+  (`FLICK_SCRUBS`=4, chain-independent); velocity-gain amplifier retired;
+  "fast" measured over the last 100ms before lift; pointerdown catches a glide.
+- Over-ring swipe fix (pending-tap resolves at finger-lift); gesture autopsy in
+  the feel HUD.
+
+### Perf series (iPhone probe cycle)
+- Field diagnostics probe (`?probe=1`) → telemetry.php drop box.
+- Pre-compressed JSON (`.json.gz` at build): cellular boot payload 1.3MB→180KB.
+- O(visible) `selectNearest`; memoized child-pyramid geometry (64→31ms worst
+  render); pyramid rotation blur dropped (the ~150ms/frame SVG filter) — dim
+  preserved at 0.35.
+
+### C.4 — arrivals and departures
+- **Boot splash "the instrument arrives"**: first-visit line-drawing reveal —
+  ring arc, nodes, magnifier, labels typing in, logo, dissolve to the live
+  wheel. `?splash=1`/`?splash=0`; input blocked through the reveal.
+- **Migration rebuild**: declared grammar (`suffixMerge` per level), one
+  transaction per layer change with a single restore barrier, fixed-vessel
+  magnifier/parent that empty and refill with radial fill discs.
+- **Gateway transit**: hub-centered cinema wipe over a frozen snapshot, soft
+  gradient seam, input swallowed mid-wipe; degrades to hard cut.
+
+### C.5 — the star field and the calendar's lattice
+- **Star field child pyramid**: golden-angle scatter replaces the ray×spiral
+  hunt — deterministic, unique per parent, no starvation; densify/re-scatter
+  fallback; label placement law; fan-line floor; seat cap 28.
+- **Prominence**: editorial tiers (featured 1.45×, notable 1.15×, default
+  0.8×), Favorites wear full names + cartographer's halo; overloaded skies
+  taper to a smudge floor.
+- **Canonical usable areas** (`src/geometry/usable-areas.js`): one fence
+  (top/right/control-deck floor + tapered arc margin), CPUA ⊆ DSUA, `?bounds=1`
+  diagnostic.
+- **Wedge calendar**: day grid on a second hub — seven rays, seven concentric
+  weekday arcs (Sunday outermost), ribbon rotates geared to the ring; months
+  ring is the front door with the current month magnified.
+- **Historical reckoning**: Gregorian from 15 Oct 1582, Julian before — the ten
+  ghost days have no serial; weekday cycle unbroken; Julian leap rule
+  pre-reform. Verified against JDN 0.
+- **Day ring**: tapping a wedge day pours the ±5-year day cousin chain into the
+  ring; today wears dark-red/yellow at every depth (`now` flag, one dresser
+  module — two clone-pop bugs retired).
+
+### The e-reader and the sweep
+- **NEXT gesture**: at a leaf, the detail sector is one large button
+  (`capabilities.detailTapAdvances`: bible + calendar); empty links stepped
+  over; taps accumulate mid-travel; selection commits on arrival.
+- **Continuous verse chain**: 31,345 verses Genesis 1:1 → Apocalypse 22:21 in
+  one ring; chapter text prefetched five verses ahead; ascent follows the
+  reader. Books (67) and chapters (1,215) rings sweep the whole volume with the
+  same 2/4/6 gap ladder.
+- **Bible labels**: chapters ROMAN, verses ARABIC (the numeral system is the
+  disambiguator — no colon needed); numerals sit ON nodes, names BESIDE them;
+  parent button "IOHANNES III".
+- Calendar to 3000 AD (6000-year chain, no year zero, era rule at the BC/AD
+  line); millennia layer removed — years are top-level; months timeline is one
+  86k-link cousin chain.
+
+### Platform, IP, and deployment
+- **GPL-3.0 engine / all-rights-reserved data** split (LICENSE + NOTICE);
+  prior-art V2 defensive publication, Zenodo DOI 10.5281/zenodo.21434298;
+  Wayback snapshot ritual in the deploy script.
+- **mmdm.it unmasked**: DNS A-record cutover executed 2026-07-17 (no more
+  GoDaddy frame; query strings, real SEO, deep links all live). Marine SEO
+  metadata on the landing page.
+- Portrait gate (rotate prompt in landscape); mobile bottom-crop fixed (visual
+  viewport as the one source of truth); translate-prompt suppression
+  (`lang=it`, `translate=no`); Android tap-highlight suppression.
+- sync-to-server.sh: protect rule for wheel-v3/ against the `--delete` sweep;
+  project node pinned.
+
+256 tests green at close.
+
 ## 3.10.2 — Child pyramid: revert to original spacing with an at-least-one-node guarantee
 
 ## 3.10.1 — Child pyramid fit guarantee — every child gets a slot (fixes empty pyramids at childCount 4-5)

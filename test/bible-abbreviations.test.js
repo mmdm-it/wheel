@@ -29,7 +29,7 @@ describe('bible book abbreviations (#825)', () => {
 
   it('renames book nodes in the pyramid only — the chain keeps full names', () => {
     const fullName = 'Ad Corinthios II';
-    const chainItems = [{ id: 'II_COR', name: fullName, level: 'book' }];
+    const chainItems = [{ id: 'II_COR', name: fullName, level: 'book', testamentId: 'Novum_Testamentum' }];
     const pyramid = buildBiblePyramid({
       manifest: { Gutenberg_Bible: {} },
       namesMap: { bookAbbreviations: { II_COR: '2 COR' } },

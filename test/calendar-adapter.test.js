@@ -61,7 +61,7 @@ describe('calendar adapter', () => {
       path.resolve(__dirname, '../data/calendar/manifest.json'), 'utf-8'));
     const dayDetail = calendarAdapter.detailFor(
       { id: 'd:2026:7:20', level: 'day', yearNumber: 2026, monthNumber: 7, dayNumber: 20 }, manifest);
-    assert.equal(dayDetail.type, 'card');
+    assert.equal(dayDetail.type, 'ephemeris');
     assert.equal(dayDetail.title, 'MONDAY', 'all caps, at the top of the DSUA');
     // The weekday is read off the real reckoning, so the reform reads true.
     const lastJulian = calendarAdapter.detailFor(

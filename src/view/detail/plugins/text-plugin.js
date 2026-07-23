@@ -1,5 +1,5 @@
 import { BaseDetailPlugin } from '../plugin-registry.js';
-import { selectFontTier, wrapLines, makeLineSpan } from './line-layout.js';
+import { selectFontTier, layoutVerse, wrapLines, makeLineSpan, stridedRows } from './line-layout.js';
 
 export class TextDetailPlugin extends BaseDetailPlugin {
   canHandle(item) {
@@ -16,6 +16,21 @@ export class TextDetailPlugin extends BaseDetailPlugin {
 
     // ── Arc-following layout ─────────────────────────────────────────
     if (lineTable && lineTable.length > 0) {
+      // Verses share ONE continuous size — the largest at which the longest
+      // verse fills the sector — and flow at their true line height, so the
+      // page reads calm and constant, filling the sector (Howell 2026-07-21).
+      // Everything else keeps the discrete tiers, fit to its own text.
+      if (item?.uniform) {
+        const { fontPx, lines } = layoutVerse(text, bounds);
+        const container = create('div');
+        container.className = 'detail-sector-content detail-text detail-text--arc';
+        if (container.style) container.style.fontSize = `${fontPx.toFixed(1)}px`;
+        lines.forEach(lineInfo => {
+          container.appendChild(makeLineSpan(create, lineInfo.text, '', lineInfo));
+        });
+        return container;
+      }
+
       const [tierClass, tierPercent, stride] = selectFontTier(text, lineTable);
 
       const container = create('div');
@@ -26,9 +41,13 @@ export class TextDetailPlugin extends BaseDetailPlugin {
         container.style.setProperty('--detail-SSd', `${SSd}px`);
       }
 
-      const wrappedLines = wrapLines(text, lineTable, tierPercent);
+      // Wrap against the rows the lines will actually SIT on (every
+      // stride-th row) — the fence narrows with depth, and budgeting from
+      // sequential rows overflowed deep seats (Phase C audit M2).
+      const seats = stridedRows(lineTable, stride);
+      const wrappedLines = wrapLines(text, seats, tierPercent);
       wrappedLines.forEach((lineText, idx) => {
-        const lineInfo = lineTable[idx * stride];
+        const lineInfo = seats[idx];
         if (!lineInfo) return;
         container.appendChild(makeLineSpan(create, lineText, '', lineInfo));
       });

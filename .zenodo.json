@@ -1,0 +1,45 @@
+{
+  "upload_type": "software",
+  "title": "Wheel — a rotational sprocket-chain navigator for deep hierarchies",
+  "creators": [
+    {
+      "name": "Gibbens, Howell",
+      "orcid": "0009-0000-9904-9864",
+      "affiliation": "Meccanismi Marittimi delle Marche (MMdM), Fano (PU), Italy"
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "access_right": "open",
+  "language": "eng",
+  "description": "<p>Wheel is a mobile-first instrument for navigating large hierarchical and sequential datasets by rotating a bounded chain of nodes around an eccentric, off-screen hub. A fixed magnifier lens on the visible arc acts as the selection lodestar; nodes are links in a sprocketed chain that never loops and signals its ends physically. The engine is domain-agnostic and has been demonstrated on a marine-engine catalogue, the Latin Vulgate Bible, a six-millennium calendar (chains to ~84,000 nodes), and a music library.</p><p><strong>Licensing — this archive contains material under two different licenses, by design.</strong> The <em>engine</em> (source in src/, scripts/, test/, tests/, styles/, index.html and the build configuration) is free software under the GNU GPL v3. The <em>data and content</em> it carries — the MMdM marine catalogue, the curated scripture and calendar volumes, artwork and brand assets — are Copyright (c) 2025-2026 Meccanismi Marittimi delle Marche, all rights reserved, and are NOT covered by the GPL. They are included so the engine can be seen doing real work. See the NOTICE file in this archive for the exact boundary. Underlying public-domain texts (e.g. the Latin Vulgate itself) remain public domain; what is reserved is their curation, structure and presentation.</p><p>The navigation and interaction methods implemented here are the subject of defensive publications establishing them as prior art, so that they cannot be patented by any party. See docs/prior-art/ and the related identifiers below.</p>",
+  "keywords": [
+    "human-computer interaction",
+    "hierarchical navigation",
+    "radial navigation",
+    "rotational user interface",
+    "gesture navigation",
+    "touch interface",
+    "information visualization",
+    "keyboard-free search",
+    "JavaScript"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.21434298",
+      "relation": "isDocumentedBy",
+      "scheme": "doi",
+      "resource_type": "publication-workingpaper"
+    },
+    {
+      "identifier": "10.5281/zenodo.21501550",
+      "relation": "isDocumentedBy",
+      "scheme": "doi",
+      "resource_type": "publication-workingpaper"
+    },
+    {
+      "identifier": "https://github.com/mmdm-it/wheel",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

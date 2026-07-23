@@ -57,6 +57,48 @@ export function getViewportWindow(viewport, nodeSpacing) {
   return { startAngle, endAngle, arcLength, maxNodes };
 }
 
+// The sprocket chain, told honestly (Howell 2026-07-21). The focus ring is
+// NOT a circle — it is a bounded chain riding an off-screen sprocket. Over the
+// viewport the chain wraps the sprocket (the arc we see); beyond the two
+// viewport exits it leaves the sprocket and runs DEAD STRAIGHT along the
+// tangent — vertical up at the upper-left (180°), ~south-east at the
+// lower-right (the exact angle set by the device's viewport ratio). At full
+// size the straight runs are off-screen; when the ring recedes (a dimension
+// z-pull-back) they scale into view, and the eye reads a straight chain
+// vanishing off the top — never a hose-reel coil.
+//
+// Returns the centreline as an ordered point list: far-SE tangent → lower
+// exit → arc → upper exit → far-up tangent. Stroke it with the band width.
+export function bandCenterlinePoints(arcParams, startAngle, endAngle) {
+  const { hubX, hubY, radius } = arcParams;
+  const T = radius * 3; // tangent run; clipped at 1.0, reaches the edge by 0.2
+  const pt = a => [hubX + radius * Math.cos(a), hubY + radius * Math.sin(a)];
+  const lower = pt(startAngle);
+  const upper = pt(endAngle);
+  // Tangent unit vectors, each continuing the chain AWAY from the arc: past
+  // the lower exit (decreasing angle) and past the upper exit (increasing).
+  const downDir = [Math.sin(startAngle), -Math.cos(startAngle)];
+  const upDir = [-Math.sin(endAngle), Math.cos(endAngle)];
+  const pts = [[lower[0] + downDir[0] * T, lower[1] + downDir[1] * T]];
+  const N = 48;
+  for (let i = 0; i <= N; i += 1) pts.push(pt(startAngle + ((endAngle - startAngle) * i) / N));
+  pts.push([upper[0] + upDir[0] * T, upper[1] + upDir[1] * T]);
+  return pts;
+}
+
+// The standard primary chain centreline for a viewport. A mirrored stratum
+// reflects these points across the horizontal centreline (y → height − y),
+// which turns the vertical-up exit into vertical-DOWN and the SE tangent into
+// NE — the mirror the secondary needs, for free.
+export function standardBandCenterline(viewport) {
+  const w = getViewportWindow(viewport);
+  return bandCenterlinePoints(getArcParameters(viewport), w.startAngle, w.endAngle);
+}
+
+export function pointsToPath(pts) {
+  return pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+}
+
 // Long-chain fast path: when every non-null item's order equals its array
 // index (true for all chain builders — gaps hold their slots), the visible
 // index range is pure arithmetic and each frame touches ~21 links instead
@@ -77,13 +119,47 @@ function isIndexAligned(allItems) {
   return aligned;
 }
 
-export function calculateNodePositions(allItems, viewport, rotationOffset = 0, nodeRadius = 10, nodeSpacing) {
+// Map a chain angle to a point on the honest sprocket chain: on the arc while
+// within the viewport window, else on the STRAIGHT tangent run beyond the exit
+// (vertical up past the upper exit, ~SE past the lower). Same centreline the
+// band follows (bandCenterlinePoints). tangentAngle is the label rotation — the
+// true angle on the arc, CLAMPED to the exit on the straight runs so tangent
+// labels stay square to the chain instead of continuing to turn.
+export function chainPointAt(arc, startAngle, endAngle, a) {
+  const { hubX, hubY, radius } = arc;
+  if (a > endAngle) {
+    const d = (a - endAngle) * radius;
+    return {
+      x: hubX + radius * Math.cos(endAngle) - Math.sin(endAngle) * d,
+      y: hubY + radius * Math.sin(endAngle) + Math.cos(endAngle) * d,
+      tangentAngle: endAngle, onArc: false
+    };
+  }
+  if (a < startAngle) {
+    const d = (startAngle - a) * radius;
+    return {
+      x: hubX + radius * Math.cos(startAngle) + Math.sin(startAngle) * d,
+      y: hubY + radius * Math.sin(startAngle) - Math.cos(startAngle) * d,
+      tangentAngle: startAngle, onArc: false
+    };
+  }
+  return { x: hubX + radius * Math.cos(a), y: hubY + radius * Math.sin(a), tangentAngle: a, onArc: true };
+}
+
+// tangentSpan (radians, default 0) widens the window past both exits so the
+// beyond-arc links populate the STRAIGHT tangent runs — the chain climbing
+// vertically overhead when the ring recedes (Howell 2026-07-21). 0 keeps the
+// hot rotation path arc-only, as before; a receded ring passes a span sized to
+// reach the viewport edge at its scale.
+export function calculateNodePositions(allItems, viewport, rotationOffset = 0, nodeRadius = 10, nodeSpacing, tangentSpan = 0) {
   if (!Array.isArray(allItems)) {
     throw new Error('calculateNodePositions: allItems must be an array');
   }
   const arc = getArcParameters(viewport);
   const spacing = nodeSpacing ?? getNodeSpacing(viewport);
   const windowInfo = getViewportWindow(viewport, spacing);
+  const loA = windowInfo.startAngle - tangentSpan;
+  const hiA = windowInfo.endAngle + tangentSpan;
   const positions = [];
 
   const pushIfVisible = (item, index) => {
@@ -91,25 +167,27 @@ export function calculateNodePositions(allItems, viewport, rotationOffset = 0, n
     const order = Number.isFinite(item.order) ? item.order : index;
     const baseAngle = getBaseAngleForOrder(order, viewport, spacing); // reverse sort: lower order → larger angle
     const rotatedAngle = baseAngle + rotationOffset;
-    if (rotatedAngle < windowInfo.startAngle || rotatedAngle > windowInfo.endAngle) {
+    if (rotatedAngle < loA || rotatedAngle > hiA) {
       return;
     }
+    const p = chainPointAt(arc, windowInfo.startAngle, windowInfo.endAngle, rotatedAngle);
     positions.push({
       item,
       index,
-      angle: rotatedAngle,
-      x: arc.hubX + arc.radius * Math.cos(rotatedAngle),
-      y: arc.hubY + arc.radius * Math.sin(rotatedAngle),
-      radius: nodeRadius
+      angle: p.tangentAngle,
+      x: p.x,
+      y: p.y,
+      radius: nodeRadius,
+      onTangent: !p.onArc
     });
   };
 
   if (isIndexAligned(allItems)) {
     // Invert baseAngle(order) = magnifierAngle - (order+1)·spacing for the
-    // window edges; ±1 of margin absorbs rounding at the boundaries.
+    // (tangent-widened) window edges; ±1 of margin absorbs rounding.
     const magnifierAngle = getMagnifierAngle(viewport);
-    const lo = Math.max(0, Math.floor((magnifierAngle + rotationOffset - windowInfo.endAngle) / spacing - 1) - 1);
-    const hi = Math.min(allItems.length - 1, Math.ceil((magnifierAngle + rotationOffset - windowInfo.startAngle) / spacing - 1) + 1);
+    const lo = Math.max(0, Math.floor((magnifierAngle + rotationOffset - hiA) / spacing - 1) - 1);
+    const hi = Math.min(allItems.length - 1, Math.ceil((magnifierAngle + rotationOffset - loA) / spacing - 1) + 1);
     for (let i = lo; i <= hi; i += 1) pushIfVisible(allItems[i], i);
     return positions;
   }

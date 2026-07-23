@@ -11,9 +11,15 @@ again. Constants marked **FROZEN** are under Howell's standing order
   wrapping an off-screen sprocket. Chains never loop; both ends are real
   places; overshoot + springback is the feel of the last link going taut.
 - **One tempo.** All costume changes and travel animations share 600 ms.
-- **Motion semantics.** Rotation = browsing. Constant-radius arrival =
-  changing volume (lateral). Z-travel (radius change) = changing dimension —
-  reserved exclusively for Phase D strata.
+- **Motion semantics — three axes.** Two live on the focus-ring plane:
+  **orbital** (rotate = browse siblings) and **radial** (in/out = the
+  hierarchy, child pyramid in / parent out). The third is **z — the dolly
+  through the door**: changing dimension/stratum. Clicking the dimension
+  button backs you through a doorway — the primary stratum recedes ahead
+  (smaller, distant, soft-focus but still legible and LIVE), the secondary
+  stratum arrives from behind. Reserved exclusively for Phase D strata; the
+  canon is `docs/DIMENSION_SYSTEM.md`. (Volume change stays the lateral,
+  constant-radius arrival — distinct from z.)
 - **Chain-relative gestures.** The tier ladder (below) addresses chains in
   fractions, not nodes: every chain is the same size in gesture-space.
 
@@ -92,3 +98,193 @@ approved change updates this file in the same commit.
 |---|---|---|
 | `SCRUB_LENGTH_IN` | ~1 inch, device-normalized standard scrub | dropped with the fast-scrub tier |
 | `SLOW_SCRUB_RATE` | detented clicks per scrub-length | dropped — the scrub stays a smooth 1:1 drag |
+
+---
+
+# C.4/C.5 ledger (recorded 2026-07-20, from the sprint's shipped code)
+
+Three canonical named-tunable blocks arrived with C.4/C.5, each documented
+in-source as "tune here and only here": the splash's `T` budget, the
+usable-area `CPUA_SPEC`, and the wedge's `WEDGE`. Everything below has a
+home in one of those blocks or an adjacent module.
+
+## C.4 — boot splash "the instrument arrives" (src/view/boot-splash.js)
+
+Budgeted to ~7s total; plays once per browser (`SEEN_KEY`
+`'wheel-splash-seen'` in localStorage; `?splash=1` forces, `?splash=0`
+skips). Phone-tuned by Howell on the Moto G. All timings live in the `T`
+object:
+
+| Name | Value | Why |
+|---|---|---|
+| `T.preInkMs` | 400 | grey beat before the first line |
+| `T.arcDrawMs` | 1600 | the ring arc inking itself, upper-left → lower-right |
+| `T.nodeDrawMs` | 200 | each ring node's compass draw (ring only, since 2026-07-20) |
+| `T.nodeGapMs` | 130 | tiny pause between ring nodes, so the sequence reads |
+| `T.circleDrawMs` | 750 | the magnifier / parent button |
+| `T.pyramidPauseMs` | 200 | breath between the parent button and the pyramid (Howell 2026-07-20) |
+| `T.pyramidNodeMs` | 750 | each child pyramid circle — the parent's stately tempo; the ring-node tick "didn't have time to register". The fan line (250ms) IS the beat between nodes — the old 130ms gaps are gone |
+| `T.charMs` | 85 | per typed character — unhurried, handcrafted |
+| `T.gapMs` | 360 | breath between the focal labels |
+| `T.fanLineMs` | 250 | each fan line sweeping magnifier → child node |
+| `T.logoFadeMs` | 800 | maker's mark + copyright fade-in |
+| `T.holdMs` | 1000 | the finished drawing sits complete before it dissolves |
+| `T.dissolveMs` | 1000 | hand off to the live wheel |
+| `T.inputUnlockMs` | 500 | touch stays blocked this long PAST the final fade-in |
+| `ARC_COLOR` | #000000 | structural line, drawn in the wheel's ink colour |
+
+## C.4 — gateway transit wipe (src/view/gateway-wipe.js)
+
+The new volume boots fully rendered beneath a frozen snapshot; a straight
+radius pivoting on the hub sweeps the snapshot away. Input swallowed
+mid-wipe; degrades to the old hard cut.
+
+| Name | Value | Why |
+|---|---|---|
+| `durationMs` | 1800 | the wipe's travel — deliberately slower than the house tempo; it is a scene change, not a costume change |
+| `direction` | 'down' launch / 'up' return | the sweep says which way you are passing through the door |
+| `softness` | 5 px | gradient seam width (Howell: "smoothness beats softness") — hard clipPath + thin seam, zero filter cost |
+| easing | easeInOutCubic | the radius accelerates through the middle of the sweep |
+| (unnamed) | 0.02 angular margin, 1.05 radius, '#868686' ×3 | flagged in PUNCHLIST for naming |
+
+## C.5 — canonical usable areas (src/geometry/usable-areas.js, `CPUA_SPEC`)
+
+One fence for both areas; CPUA ⊆ DSUA by construction; both engines (star
+field, day grid) consume `cpua.contains()` — one membership verdict.
+`?bounds=1` draws solid fence + dashed conditional logo box. Ratios are ×
+SSd, eye-tuned canon as of C.5:
+
+| Name | Value | Why |
+|---|---|---|
+| `TOP_RATIO` | 0.15 | top margin — clears the copyright block |
+| `RIGHT_MARGIN_RATIO` | 0.02 | nearly the viewport edge |
+| `LEFT` | 0 | the left edge is the canvas edge |
+| `DECK_CLEARANCE_RATIO` | 0.08 | THE CONTROL DECK: floor = magY − (0.06 magnifier + 0.02 pad) × SSd; magnifier, parent button, and Phase D's dimension button live in this reserved band — retires the vessel exclusion circle |
+| `ARC_MARGIN_TOP_RATIO` | 0.06 | tapered arc: tight at the top (display territory) |
+| `ARC_MARGIN_BOTTOM_RATIO` | 0.28 | swelling toward the deck (thumb territory, where scrubbing happens); linear between |
+| `LOGO_PAD_LEFT_RATIO` | 0.035 | logo notch padding (drawn artwork spills past getBounds()) |
+| `LOGO_PAD_BOTTOM_RATIO` | 0.01 | logo notch bottom pad |
+| (unnamed) bottom clamp | 0.02 × SSd | floor guard vs viewport bottom, inline in computeCPUA (Phase C audit L2 — name it with the sweep) |
+| (unnamed) peninsula threshold | 0.1 × SSd | strip thinner than this beside the logo is annexed to the edge (same note) |
+
+## C.5 — the star field (src/geometry/child-pyramid-geometry.js)
+
+Golden-angle (sunflower) scatter; deterministic and unique per parent
+(phase = sortNumber × golden angle); densify/re-scatter at 0.65× radial
+step when a pass can't seat every child; relax ladder ends by yielding the
+fan floor entirely — seating outranks fanning.
+
+| Name | Value | Why |
+|---|---|---|
+| `GOLDEN_ANGLE_RAD` | π(3−√5) ≈ 137.508° | uniform density, no starvation (12/12 months place where the ray×spiral hunt yielded 3) |
+| `NODE_RADIUS_RATIO` | 0.04 | matches the render's pyramid node size |
+| `FILL_FRACTION` | 0.55 | how much of the usable area the field aims to cover |
+| `MIN_SPACING_RADII` | 2.3 | min center-to-center distance, in node radii |
+| `FAN_SEP_DEG` | 8 | min angle between fan lines at the magnifier — the fan must FAN |
+| `LABEL_BAND_CLEARANCE_RATIO` | 0.1 | labels may sit closer to the band than nodes |
+| label glyph advance | 0.85 em | UPPERCASE Montserrat measured advance — label placement law (rotated baseline endpoints stay on-glass, short of the band) |
+| `dampLabelScale` | 1 + (s−1)·0.5 | a 1.45× star wears a ~1.22× label — prominence reads, spills less |
+| labelBaseFontPx | clamp(14, 0.016·LSd, 26) | resolution-aware base; ABSOLUTE px (SVG em rebases on inherited font-size — the shrunken-labels/migration-pop bug) |
+
+## C.5 — prominence and the seat cap (src/index.js render)
+
+Editorial tiers from sparse data (1 featured / 2 notable / absent =
+default); ring order never permuted; uniform skies stay uniform.
+
+| Name | Value | Why |
+|---|---|---|
+| `scaleForTier` | 1.45 / 1.15 / 0.8 | featured near-center, notable, receding default |
+| Favorites | tier 1 | wear FULL names in the sky (everyone else may abbreviate) + the cartographer's halo — a background-colored label twin UNDER the circles (fan < halo < circle < text), carving legibility through line bundles |
+| `TAPER_AFTER` | 10 | past the first seats, stars shrink toward the smudge floor |
+| `taperRate` | 0.86 / 0.9 / 0.95 (by family size >60 / >30 / else) | bigger families descend to the floor faster; families ≤16 untouched |
+| smudge floor | 0.3× | etcetera means etcetera |
+| `SEAT_CAP` | 28 | 60 → 35 → 28, Howell's eye converging (2026-07-19) |
+
+## C.5 — the wedge (src/geometry/day-grid.js, `WEDGE`)
+
+The day grid on the instrument's own lattice: a second hub on the
+magnifier-hub axis, seven rays, seven concentric weekday arcs (Sunday
+outermost), day numerals on the intersections aligned with their rays. The
+lattice is invisible; `?wedge=1` draws it FROM the engine's own math.
+During a scrub the ribbon rotates about the second hub, geared to the ring.
+
+| Name | Value | Why |
+|---|---|---|
+| `HUB_DIST_MUL` | 1.5 | second hub at this × the magnifier→hub distance (makes the wedge more square); live: `?wedgemul=N` |
+| `FAN_ROTATION_DEG` | 14 | whole fan clockwise off the axis (13 + Howell's +1) |
+| `RAY_STEP_DEG` | 2 | between week rows |
+| `RAY_OFFSETS_DEG` | [4,2,0,−2,−4,−6,−8] | index 0 = weekday header ray; 1..6 = week rows |
+| arc step | (rBand−rCorner)/8 × 0.765 | gaps of 1/8 the corner→band span, tightened; binding edge cell solved exactly — 31/31 days seat on every tested viewport |
+| `nodeR` | min(step, angularGap) × 0.38 | day-node radius (two sittings of +15%/+10%) |
+| `labelFontPx` | clamp(11, nodeR×1.05, 20) | day-numeral font |
+
+## The present moment's mark (src/view/node-appearance.js)
+
+ONE lonely red-and-yellow node on the page at a time — the year, month, or
+day being lived through, at every depth, NEVER in the magnifier (the vessel
+is opaque when settled and hollow while scrubbing, so the mark streams
+through the lens during a fast scroll). Data declares it (`now` flag via
+`presentMoment()`); one dresser module paints it — both render paths (live
++ migration clones) share the dresser and the rotation law.
+
+| Name | Value | Why |
+|---|---|---|
+| `NOW_NODE_FILL` | #7a1010 | dark red — the seat of the present |
+| `NOW_LABEL_FILL` | #ffd700 | gold — its label |
+| `DIM_OPACITY` | 0.35 | ribbon neighbors: present, but plainly not the month you are reading (also the pyramid's rotation dim — "a little more dimming", 0.5 → 0.35) |
+
+### Pyramid rotation: fade-only — **FROZEN** (Howell 2026-07-20)
+
+During a scrub the child pyramid dims to `DIM_OPACITY` (0.35) via the
+`.is-rotating` class and does NOT blur. The SVG Gaussian blur that once
+layered on top was the whole scroll bottleneck (~150 ms/frame at dpr:3 on
+the iPhone X, re-composited every frame) and was removed in C.2. Howell's
+ruling at C close: **fade-only is permanent — no device-gated blur
+revival.** The unused `#pyramid-rotate-blur` filter def may be deleted at
+the next convenience (its retention was only for the revival that is now
+ruled out).
+
+## The NEXT gesture (src/index.js advanceLeaf, src/main.js)
+
+At a leaf, in volumes that declare `capabilities.detailTapAdvances` (bible,
+calendar — never the catalog), the detail sector is one large button. The
+hit region is the canonical DSUA fence, so NEXT structurally cannot swallow
+a ring tap, the magnifier, or the parent button.
+
+| Name | Value | Why |
+|---|---|---|
+| hit region | the DSUA fence | one membership verdict; reaching up past it remains how you go BACK |
+| resolve | at finger-lift, ≤ `DRAG_SLOP_PX` (8) | a scrub ending over the sector settles normally — same slop law as every tap |
+| empty links | stepped OVER | cousin gaps are texture for a scrubbing thumb, never stops in a reading path |
+| taps mid-travel | accumulate from where the ring is HEADED | selection commits on ARRIVAL; three quick taps advance three leaves |
+| advance tempo | rotateToIndex → animateSnapTo (100 ms) | the reading step is a snap, not a journey |
+
+## The version footnote (Howell 2026-07-20, src/adapters/volume-helpers.js)
+
+A factory stamp at the end of the catalog's manufacturers chain: four empty
+links past the last manufacturer, then one placebo node carrying the build's
+version — text only, no circle, black ink, centered and hub-rotated. The
+discovered feel is the point: the stamp lives entirely in the overshoot
+zone, so it is visible ONLY while the thumb holds the chain at full
+stretch; the springback carries it off-glass the instant the thumb lifts.
+Of interest only to the maker, by construction.
+
+| Name | Value | Why |
+|---|---|---|
+| `VERSION_FOOTNOTE_GAPS` | 4 | with the chain-end overrun of 3 spacings, the stamp's closest approach is 2 spacings short of the magnifier — it can never seat |
+| `placebo` (item flag) | true | the generic inertness contract: bounds, snap, near-miss redirect, deep links, taps, ARIA all ignore it |
+| stamp label | bare version ("3.11.1") | build-time `--define` from package.json; unbundled runs read 'dev' |
+| `.is-placebo` label font | clamp(10px, 1.15vmin, 19px), min/max × `--iframe-scale` | ~72% of a working label — a footnote, not a node |
+
+## Live tuning knobs (console, no rebuild)
+
+| Knob | Home | Tunes |
+|---|---|---|
+| `window.__flickScrubs` | gesture-tiers.js | flick distance in scrubs (default 4) |
+| `globalThis.__starScaleMul` | child-pyramid-geometry.js | star field scale multiplier |
+| `?wedgemul=N` | main.js | wedge hub distance multiplier (default 1.5) |
+| `?splash=1` / `?splash=0` | boot-splash.js | force / skip the boot splash |
+| `?wedge=1`, `?bounds=1` | diagnostics | draw the wedge lattice / the usable-area fence from the engine's own math |
+
+(`src/geometry/pyramid-tuning-knobs.js` still carries knobs for the RETIRED
+ray×spiral engine — flagged in PUNCHLIST for the L3 dead-code sweep.)

@@ -283,9 +283,16 @@ export function detailFor(selected, manifest) {
     const descText = model.data?.description || null;
     return {
       type: 'card',
-      title: model.engine_model || modelKey || name,
+      // NO title — the model's name is already in the magnifier (Howell
+      // 2026-07-20: the redundancy rule; same law as the day card's date).
+      title: null,
       body: yearLine || null,
-      image: model.image || null,
+      image: model.image || model.data?.media?.photo || null,
+      // The dossier's media slot (docs/DETAIL_SECTOR_LOADS.md): a video
+      // plays inline in the card. Safe by construction — the catalog's
+      // sector never claimed the NEXT tap, so player controls collide
+      // with nothing.
+      video: model.data?.media?.video || null,
       description: descText
     };
   }

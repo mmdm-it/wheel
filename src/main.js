@@ -5,14 +5,21 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
+import { clearStack as clearMigrationStack } from './view/migration-animation.js';
+import { createInteractionStore } from './core/interaction-store.js';
+import { createDimensionBridge } from './core/dimension-bridge.js';
+import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
+import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
-import { getArcParameters, getViewportWindow, getNodeSpacing } from './geometry/focus-ring-geometry.js';
+import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle } from './geometry/focus-ring-geometry.js';
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
+import { mountDimensionGlobe } from './view/dimension-globe.js';
+import { mountSearchDividers } from './view/search-dividers.js';
 
 const svg = document.getElementById('app');
 
@@ -29,13 +36,730 @@ function measureViewport() {
   const h = vv && vv.height ? Math.round(vv.height) : window.innerHeight;
   return getViewportInfo(w, h);
 }
+const strataLayer = typeof document !== 'undefined' ? document.getElementById('strata-layer') : null;
+// A transparent full-viewport hit target, kept as the FIRST (bottom) child of
+// the strata layer, so the front stratum can be rotated by a drag STARTED
+// anywhere — not only on the thin band or a node. Strata groups append after
+// it, so it never covers them. Its pointer-events ride the layer's (toggled by
+// strataFront), so it's inert at the primary.
+const strataHit = strataLayer && typeof document !== 'undefined'
+  ? (() => {
+    const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    r.setAttribute('id', 'strata-hit');
+    r.setAttribute('x', '0'); r.setAttribute('y', '0');
+    r.setAttribute('fill', 'transparent');
+    // Inert by default — turned on ONLY while a stratum is front (renderStack).
+    // pointer-events:all here overrides the layer's none, so it must be gated,
+    // or it swallows every tap/swipe on the primary (Howell 2026-07-21).
+    r.style.pointerEvents = 'none';
+    strataLayer.appendChild(r);
+    return r;
+  })()
+  : null;
 function pinCanvas(vp) {
-  if (!svg) return;
-  svg.style.width = `${vp.width}px`;
-  svg.style.height = `${vp.height}px`;
+  if (svg) { svg.style.width = `${vp.width}px`; svg.style.height = `${vp.height}px`; }
+  // The strata layer shares the primary's exact coordinate system (px, no
+  // viewBox) so a stratum drawn at (x,y) lands where the geometry says.
+  if (strataLayer) { strataLayer.style.width = `${vp.width}px`; strataLayer.style.height = `${vp.height}px`; }
+  if (strataHit) { strataHit.setAttribute('width', String(vp.width)); strataHit.setAttribute('height', String(vp.height)); }
 }
 let viewport = measureViewport();
 pinCanvas(viewport);
+
+// D.2 — the dimension state lives at the HOST level, above bootVolume, so a
+// choice survives volume reboots and gateway round trips (Howell ruling
+// 2026-07-20, docs/DIMENSION_SYSTEM.md). The store and bridge are created
+// once; each boot refreshes the bridge's registry and its render hook.
+const dimensionStore = createInteractionStore();
+const dimensionBridge = createDimensionBridge({ store: dimensionStore });
+
+// D — the strata STACK (docs/DIMENSION_SYSTEM.md). Up to three deep for a
+// dimensioned volume: primary (the volume) → secondary (languages, mirrored)
+// → tertiary (translations, standard). The dimension button cycles which
+// stratum is at
+// the FRONT: primary → secondary → tertiary → primary. Each press pushes the
+// stack one layer deeper — the front is full size, one layer back recedes to
+// 0.4, two layers back to 0.2 — each receding one straight-pull-back
+// (Disney multiplane: a 2D scale about the viewport centre, which drops the
+// off-screen hub) and softening under a static rack-focus blur. The front
+// opaquely covers the layers behind; strata not yet entered are hidden
+// ("behind the user's head"). Selection is still tap-for-now — rotation
+// (magnifier-as-selection) is the next build.
+const STRATA_DEPTHS = [1.0, 0.4, 0.2];  // scale, indexed by levels behind the front
+const STRATA_BLURS = [0, 5, 10];        // px local, same index
+// Tangent fill span (radians past each viewport exit), sized to reach the
+// screen edge at each recede scale — the deeper the ring, the more of the
+// straight chain climbs into view (Howell 2026-07-21). Level 0 = arc-only.
+const STRATA_TANGENT_SPANS = [0, 1.1, 2.2];
+const CHOOSERS = [
+  { id: 'secondary', mirrored: true,
+    items: () => dimensionBridge.languagesAvailable(),
+    label: id => dimensionBridge.languageLabel(id), // each tongue names itself
+    selected: () => dimensionBridge.getSelection().language,
+    select: id => dimensionBridge.setLanguage(id) },
+  { id: 'tertiary', mirrored: false, centerMag: true,
+    items: () => dimensionBridge.translationsOf(),
+    // Magnified node: the full, spelled-out translation title (centred in the
+    // magnifier); the rest keep the abbreviation/key — Howell 2026-07-21.
+    label: (key, isMagnified) => (isMagnified ? dimensionBridge.translationName(key) : dimensionBridge.translationAbbrev(key)),
+    selected: () => dimensionBridge.getSelection().translation,
+    select: key => dimensionBridge.setTranslation(key) }
+];
+let strataFront = 0;                       // 0 = primary at front
+const isStrataOpen = () => strataFront !== 0;
+const isSecondaryOpen = isStrataOpen;      // the primary pointer guard reads this
+// The dimension feature lives IN the detail sector: strata recede only when
+// the purple sill is on screen (a leaf), never over a child pyramid — that is
+// where the sprocket-wheel-and-chain analogy reads (Howell 2026-07-21).
+let detailSectorVisible = false;
+const dimensionButton = typeof document !== 'undefined' ? document.getElementById('dimension-button') : null;
+// The button's wireframe globe, drawn by code so it can truly turn: once on
+// arrival, and once per press — settling exactly as the stratum recedes.
+const dimensionGlobe = mountDimensionGlobe(dimensionButton);
+// The navigator's dividers — the search instrument's icon, sharing the
+// globe's corner: dividers while browsing, globe at a leaf.
+const searchButton = typeof document !== 'undefined' ? document.getElementById('search-button') : null;
+mountSearchDividers(searchButton);
+let searchAvailable = false; // set per volume at boot (config.hasSearch)
+
+// ── Search mode (Howell 2026-07-22): the alphanumeric ring + the strike ───
+// Tap the dividers and the browse chain yields the focus ring to a bounded
+// chain of characters — A..Z, a two-link seam, 0..9 — rotatable with the
+// instrument's own grammar. TAP THE MAGNIFIER to strike the settled letter:
+// it joins the carriage (the search string riding just left of the lens,
+// rotated on the lens's own axis, growing leftward like paper past a
+// platen), and the ring prunes to only the characters that could possibly
+// follow. The child pyramid holds the live completions — dancing per
+// character through the lens — and tapping one arrives at its place in the
+// volume. Tap the dividers again to abandon and restore the browse chain.
+const SEARCH_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
+const SEARCH_COMPLETION_CAP = 14; // pyramid seats for candidates
+const searchNorm = s => String(s).toUpperCase().replace(/[^A-Z0-9]/g, '');
+let searchRestore = null;       // the browse chain to restore on exit
+let searchPrefix = '';          // the struck characters so far (normalized)
+let searchCorpusEntries = [];   // [{ item, label, norm }] — ALL the volume's searchable leaves
+let searchScopedCorpus = [];    // the active subset: leaves under the ring the search opened from
+let searchOpeningAllowed = null;// first-characters the opening ring is pruned to when scoped
+let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
+let searchStringEl = null;      // the carriage — SVG text left of the lens
+
+// THE SCOPE (Howell 2026-07-22): the corpus is every leaf DESCENDED FROM the
+// items on the focus ring the search opened from — not the parent button.
+// Standing in Mercedes' cylinders, search is Mercedes only; at the top the
+// ring holds all manufacturers, so the union is the whole volume and the
+// country in the parent button never scopes anything (the exception that
+// isn't). A ring item's id encodes its shelf-path prefix, and every model's
+// id is that same prefix — so scope is pure id-prefix containment, no graph
+// walk, no cross-dialect ambiguity.
+function searchScopeSpec(item) {
+  const id = String(item?.id || '');
+  if (id.startsWith('model:')) return { exact: id };            // ring of models: those very siblings
+  if (id.startsWith('subfam:')) return { prefix: `model:${id.slice(7)}:` };
+  if (id.startsWith('fam:')) return { prefix: `model:${id.slice(4)}:` };
+  if (id.startsWith('cyl:')) return { prefix: `model:${id.slice(4)}:` };
+  if (id.startsWith('cylinder:')) return { prefix: `model:${id.slice(9)}:` }; // normalize dialect
+  if (id.startsWith('manufacturer:')) return { prefix: `model:${id.slice(13)}:` };
+  if (id.includes('__')) return { prefix: `model:${id.split('__').slice(2).join('__')}:` }; // top-level maker
+  return null;
+}
+function scopeCorpusForRing(ringItems) {
+  const specs = (ringItems || []).filter(Boolean).map(searchScopeSpec).filter(Boolean);
+  if (!specs.length) return searchCorpusEntries.slice(); // unrecognized ring: no scope, whole corpus
+  const exacts = new Set(specs.filter(s => s.exact).map(s => s.exact));
+  const prefixes = specs.filter(s => s.prefix).map(s => s.prefix);
+  return searchCorpusEntries.filter(e => exacts.has(e.item.id) || prefixes.some(p => e.item.id.startsWith(p)));
+}
+
+function searchCharItems(allowed = null) {
+  // Letters, a two-link breath, then digits — gap links (nulls) are the
+  // chain's own idiom for a seam. Orders are array positions so the gaps
+  // hold their seats. `allowed` (a Set) prunes to surviving characters.
+  const keep = c => !allowed || allowed.has(c);
+  const letters = SEARCH_CHARS.slice(0, 26).filter(keep);
+  const digits = SEARCH_CHARS.slice(26).filter(keep);
+  const seam = letters.length && digits.length ? [null, null] : [];
+  return [...letters, ...seam, ...digits]
+    .map((c, i) => (c === null ? null : { id: `char:${c}`, name: c, level: 'character', order: i }));
+}
+
+// Every character that could follow the prefix in some completion.
+function searchNextChars(prefix) {
+  const next = new Set();
+  for (const e of searchScopedCorpus) {
+    if (e.norm.length > prefix.length && e.norm.startsWith(prefix)) next.add(e.norm[prefix.length]);
+  }
+  return next;
+}
+
+// The pyramid's candidates while searching: completions of prefix + the
+// character in (or passing through) the lens. Wired into the volume's
+// pyramid config at boot; dances live during rotation for free.
+function searchCompletions(selected) {
+  if (!selected || selected.level !== 'character') return [];
+  const p = searchPrefix + selected.name;
+  const out = [];
+  for (const e of searchScopedCorpus) {
+    if (e.norm.startsWith(p)) {
+      // The candidate wears its REAL id: the arrival migration pairs pyramid
+      // clones with ring targets by id, and a namespaced id left the tapped
+      // star unpaired — it jumped to the lens instead of flying (Howell).
+      out.push({ id: e.item.id, name: e.label, level: e.item.level, searchEntry: e });
+      if (out.length >= SEARCH_COMPLETION_CAP) break;
+    }
+  }
+  return out;
+}
+
+// The carriage: the struck string, seated just left of the lens on the
+// lens's own rotated axis, end-anchored so each new strike pushes the
+// older characters leftward — the typewriter's platen. Each character is
+// its own tspan and TAPPABLE: the backspace that came to us (Howell
+// 2026-07-22) — tap a struck letter and it returns to the lens, the string
+// truncating to just before it, the completions widening back out.
+function updateSearchCarriage() {
+  if (!searchStringEl && svg) {
+    const p = getMagnifierPosition(viewport);
+    const deg = (getMagnifierAngle(viewport) * 180) / Math.PI + 180;
+    searchStringEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    searchStringEl.setAttribute('class', 'focus-ring-magnifier-label');
+    searchStringEl.setAttribute('x', String(-viewport.SSd * 0.115));
+    searchStringEl.setAttribute('y', '0');
+    searchStringEl.setAttribute('text-anchor', 'end');
+    searchStringEl.setAttribute('dominant-baseline', 'middle');
+    searchStringEl.setAttribute('transform', `translate(${p.x.toFixed(1)}, ${p.y.toFixed(1)}) rotate(${deg.toFixed(1)})`);
+    // The label class disables pointer events; the carriage takes them back.
+    searchStringEl.style.pointerEvents = 'auto';
+    searchStringEl.style.cursor = 'pointer';
+    searchStringEl.addEventListener('click', e => {
+      const t = e.target && e.target.closest ? e.target.closest('tspan') : null;
+      if (t && t.dataset.index != null) searchBackspaceTo(Number(t.dataset.index));
+    });
+    svg.appendChild(searchStringEl);
+  }
+  if (!searchStringEl) return;
+  while (searchStringEl.firstChild) searchStringEl.removeChild(searchStringEl.firstChild);
+  [...searchPrefix].forEach((ch, i) => {
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+    t.textContent = ch;
+    t.dataset.index = String(i);
+    // An imaginary blank between characters — each is its own backspace
+    // key, and thumbs need the room (Howell 2026-07-22).
+    if (i > 0) t.setAttribute('dx', '0.45em');
+    searchStringEl.appendChild(t);
+  });
+}
+
+// Tap a struck character: everything from it onward un-strikes, the tapped
+// letter returns to the lens as the settled character, and the ring/pyramid
+// rebuild for the shortened string.
+function searchBackspaceTo(i) {
+  const app = currentApp;
+  if (!app?.nav || !searchRestore) return;
+  const letter = searchPrefix[i];
+  if (!letter) return;
+  searchPrefix = searchPrefix.slice(0, i);
+  updateSearchCarriage();
+  // An empty string restores the opening ring as the mode opened it (full
+  // when unscoped, scope-pruned when narrowed); otherwise prune for the
+  // shortened prefix. The tapped letter is by construction a survivor.
+  const survivors = searchPrefix ? searchNextChars(searchPrefix) : searchOpeningAllowed;
+  const items = searchCharItems(survivors);
+  const idx = Math.max(0, items.findIndex(it => it && it.name === letter));
+  app.setPrimaryItems(items, idx, true);
+}
+
+// THE STRIKE: the settled character joins the carriage and the ring prunes
+// to what can still follow. A dead-end strike (nothing follows) is refused —
+// the completions in the pyramid are the only way onward from there.
+function strikeSettledChar() {
+  const app = currentApp;
+  if (!app?.nav || !searchRestore) return;
+  const cur = app.nav.getCurrent();
+  if (!cur || cur.level !== 'character') return;
+  const nextPrefix = searchPrefix + cur.name;
+  const survivors = searchNextChars(nextPrefix);
+  const hasAnyMatch = searchScopedCorpus.some(e => e.norm.startsWith(nextPrefix));
+  if (!hasAnyMatch) return; // a character no name continues with: no strike
+  searchPrefix = nextPrefix;
+  updateSearchCarriage();
+  if (survivors.size) app.setPrimaryItems(searchCharItems(survivors), 0, true);
+  // No survivors = the string is complete: the ring rests, the pyramid holds
+  // the exact match(es); arrival is a pyramid tap away.
+}
+
+// ARRIVAL (Howell 2026-07-22, second draft — the cascade was overwhelming):
+// a completion tap lands the found leaf DIRECTLY, exactly as picking a model
+// from its cylinder group does — the tapped candidate migrates from pyramid
+// to magnifier, its sibling set pours onto the ring, the detail sector
+// enlarges in sync, and the character ring migrates off screen as every
+// outgoing ring does. The parent button does not fight the tide: no flight,
+// it simply fades on. The browse chain the search began from is planted as
+// the breadcrumb, so OUT of the found leaf returns there — never to letters.
+let searchVolumePyramid = null; // the volume's own pyramid config (set at boot)
+function searchArrive(entry) {
+  const app = currentApp;
+  if (!app || !searchRestore || !entry?.item) return;
+  const breadcrumb = {
+    items: searchRestore.items,
+    selectedIndex: searchRestore.selectedIndex,
+    preserveOrder: true
+  };
+  const landed = typeof searchVolumePyramid?.descendTo === 'function'
+    ? searchVolumePyramid.descendTo({ item: entry.item, breadcrumb })
+    : false;
+  // Search bookkeeping ends either way — but WITHOUT restoring the character
+  // ring: it is mid-flight outward (or, if the landing failed, the dividers
+  // remain the way back).
+  if (landed) {
+    searchRestore = null;
+    searchPrefix = '';
+    if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+    if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
+    // The empty corner is dressed in strict order (Howell 2026-07-22):
+    // FIRST the golden fill arrives (the labelless disc, handing off to the
+    // real circle's fill at the barrier), THEN the stroke ring and the name
+    // label come on together. The stroke must not pop on ahead of the fill —
+    // hold it invisible from the migration's start until the label's moment.
+    const view = app.view;
+    const outer = view?.parentButtonOuter;
+    if (outer) outer.style.strokeOpacity = '0';
+    setTimeout(() => {
+      const label = view?.parentButtonOuterLabel;
+      if (label) {
+        label.style.transition = 'none';
+        label.style.opacity = '0';
+      }
+      requestAnimationFrame(() => {
+        if (label) { label.style.transition = 'opacity 400ms ease'; label.style.opacity = ''; }
+        if (outer) { outer.style.transition = 'stroke-opacity 400ms ease'; outer.style.strokeOpacity = ''; }
+      });
+      setTimeout(() => {
+        if (label) label.style.transition = '';
+        if (outer) outer.style.transition = '';
+      }, 500);
+    }, 900);
+  }
+}
+
+function exitSearchMode() {
+  const app = currentApp;
+  if (!app?.nav || !searchRestore) return;
+  // Clear the flag FIRST: restoring the chain triggers a render, and the
+  // pyramid wrapper must already answer in browse voice — clearing after
+  // painted an empty pyramid over the restored ring (Howell caught it).
+  const restore = searchRestore;
+  searchRestore = null;
+  searchPrefix = '';
+  app.setPrimaryItems(restore.items, restore.selectedIndex, true);
+  app.setParentButtons({ showOuter: true }); // the vessel returns with the browse chain
+  if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+  if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
+}
+
+function toggleSearchRing() {
+  const app = currentApp;
+  if (!app?.nav || !searchAvailable || detailSectorVisible) return;
+  if (searchRestore) { exitSearchMode(); return; }
+  searchRestore = {
+    items: (app.nav.items || []).slice(),
+    selectedIndex: app.nav.getCurrentIndex()
+  };
+  searchPrefix = '';
+  // Scope to the ring the search opened from.
+  searchScopedCorpus = scopeCorpusForRing(searchRestore.items);
+  // The opening ring stays FULL when scope is the whole volume (keep the
+  // dead X and 0 — the virgin alphabet reads "type anything", Howell's
+  // baby-steps ruling); when NARROWED it prunes to the scope's first
+  // characters, so a foreclosed path (no Mercedes model starts with G) is
+  // simply absent from the ring (Howell 2026-07-22).
+  const narrowed = searchScopedCorpus.length < searchCorpusEntries.length;
+  searchOpeningAllowed = narrowed ? new Set(searchScopedCorpus.map(e => e.norm[0])) : null;
+  updateSearchCarriage(); // seats the (empty) carriage at the lens
+  app.setPrimaryItems(searchCharItems(searchOpeningAllowed), 0, true);
+  // The parent button has no meaning over the character ring — no vessel,
+  // nothing to ascend to. It leaves entirely (Howell 2026-07-22).
+  app.setParentButtons({ showOuter: false });
+  if (searchButton) searchButton.setAttribute('aria-pressed', 'true');
+}
+if (searchButton) searchButton.addEventListener('click', toggleSearchRing);
+function updateSearchButton() {
+  if (!searchButton) return;
+  // Only where the volume declares a searchable namespace; hidden at a leaf
+  // (the globe's turf) and while the boot reveal owns the screen; present
+  // while browsing.
+  const splashUp = typeof document !== 'undefined' && document.getElementById('boot-splash-blocker');
+  searchButton.hidden = !searchAvailable || detailSectorVisible || Boolean(splashUp);
+}
+
+function scaleAboutCentre(scale) {
+  const cx = viewport.width / 2;
+  const cy = viewport.height / 2;
+  return `translate(${cx} ${cy}) scale(${scale}) translate(${-cx} ${-cy})`;
+}
+// A plane's DEPTH is a uniform scale about the viewport centre (which drops
+// the off-screen hub — Disney multiplane) plus a rack-focus blur. These
+// setters apply an ARBITRARY scale/blur/opacity, so the settled snap and the
+// animated tween drive the same pixels through one path.
+function setPrimaryVisual(scale, blurPx) {
+  const scaled = scale < 0.999;
+  const tf = scaled ? scaleAboutCentre(scale) : null;
+  const filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
+  // KNOWN LIMIT (Howell 2026-07-22): WebKit ignores CSS filters on SVG child
+  // elements, so iPhones show the receded SVG planes sharp (the HTML verse
+  // panel below blurs fine). An SVG-native feGaussianBlur repair was tried
+  // and reverted the same day — sluggish tween + visible filter-region
+  // cropping mid-flight. Revisit with a fresh approach; until then, iOS
+  // trades the rack-focus for smoothness.
+  ['.focus-content-group', '#volume-logo-group'].forEach(sel => {
+    const g = document.querySelector(`#app ${sel}`);
+    if (!g) return;
+    if (tf) g.setAttribute('transform', tf); else g.removeAttribute('transform');
+    g.style.filter = filter;
+  });
+  const panel = document.getElementById('detail-panel');
+  if (panel) {
+    const cx = viewport.width / 2, cy = viewport.height / 2;
+    // Scale about the viewport CENTRE — the point the SVG ring/logo scale
+    // about — so the verse text stays seated on the blue circle. The panel is
+    // fixed at inset:0, so (cx,cy) is its centre; transform-origin is defined
+    // pre-transform, so it's stable across successive scales. (Reading
+    // getBoundingClientRect here slid the origin on a second recede, Howell
+    // 2026-07-21.)
+    panel.style.transformOrigin = `${cx}px ${cy}px`;
+    panel.style.transform = scaled ? `scale(${scale})` : '';
+    panel.style.filter = filter;
+  }
+}
+function setStratumVisual(g, scale, blurPx, opacity = 1, offsetX = 0, offsetY = 0) {
+  if (!g) return;
+  const still = Math.abs(offsetX) < 0.5 && Math.abs(offsetY) < 0.5;
+  if (scale > 0.999 && blurPx < 0.01 && opacity > 0.999 && still) {
+    g.removeAttribute('transform'); g.style.filter = ''; g.style.opacity = ''; return;
+  }
+  const slide = still ? '' : `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) `;
+  g.setAttribute('transform', `${slide}${scaleAboutCentre(scale)}`);
+  g.style.filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
+  g.style.opacity = String(opacity);
+}
+
+// Settled depths (the snap, and the end of a tween): a plane at stack-level L
+// sits at STRATA_DEPTHS[L], blurred STRATA_BLURS[L]. The primary also fills
+// its tangent runs to match its recede.
+function applyPrimaryDepth(level) {
+  setPrimaryVisual(STRATA_DEPTHS[level], STRATA_BLURS[level]);
+  if (currentApp && typeof currentApp.setTangentFill === 'function') {
+    currentApp.setTangentFill(STRATA_TANGENT_SPANS[level] || 0);
+  }
+}
+function applyStratumDepth(g, level) {
+  setStratumVisual(g, STRATA_DEPTHS[level], STRATA_BLURS[level], 1);
+}
+
+function renderStack() {
+  applyPrimaryDepth(strataFront); // primary is stack position 0; its level == front
+  // Choosers are positions 1..N. Render (front to back so the SVG z-order —
+  // last child on top — puts the front stratum highest) any at or ahead of
+  // the front; hide the rest.
+  CHOOSERS.forEach((ch, ci) => {
+    const pos = ci + 1;
+    if (pos > strataFront) { hideStratum(strataLayer, ch.id); return; }
+    const items = ch.items();
+    const g = renderStratum(strataLayer, {
+      id: ch.id, viewport, items,
+      selectedIndex: Math.max(0, items.indexOf(ch.selected())),
+      mirrored: ch.mirrored,
+      labelFor: ch.label,
+      centerMagnified: ch.centerMag
+    });
+    applyStratumDepth(g, strataFront - pos);
+  });
+  if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
+  // The front stratum is drag-rotatable; the layer and its full-area hit target
+  // catch pointer events ONLY while a stratum is front — at the primary they
+  // stay out of the way so the ring below gets every tap and swipe.
+  if (strataLayer) strataLayer.style.pointerEvents = strataFront > 0 ? 'auto' : 'none';
+  if (strataHit) strataHit.style.pointerEvents = strataFront > 0 ? 'all' : 'none';
+}
+
+// ── Magnifier-as-selection: rotate the front stratum (D.4a) ────────────────
+// The front stratum is a rotatable focus ring: drag it, and whatever node
+// SETTLES in the magnifier is obeyed — retiring tap-for-now, restoring the
+// two-motion premise (Howell 2026-07-21). Short chains, so a gentle per-node
+// sensitivity; the selection commits on release (the settle), which is when
+// the receded primary re-renders its live preview.
+// Match the PRIMARY's drag-to-rotation rate exactly (π/4 of arc per 100px), so
+// the strata feel as graceful as the ring the reader already knows — mapping
+// pixels straight to arc angle, then to node travel via the node spacing. (A
+// flat px-per-node was geared down ~7×; the thumb had to crawl — Howell.)
+const STRATA_DRAG_SENSITIVITY = Math.PI / 4 / 100; // rad per px
+const STRATA_OVERRUN = 3;         // nodes of overshoot past each end, then the wall
+const STRATA_SPRINGBACK_MS = 280; // the eased return from the overrun / into the lens
+const STRATA_TAP_SLOP = 8;        // px of travel below which a press is a TAP, not a drag
+let strataDrag = null;            // { items, center, spacing, lastX/Y, startX/Y, moved }
+let strataSnap = null;            // rAF id of an in-flight springback / snap glide
+const clampCenter = (c, n) => Math.max(0, Math.min(n - 1, c));
+const clampDrag = (c, n) => Math.max(-STRATA_OVERRUN, Math.min(n - 1 + STRATA_OVERRUN, c));
+const activeChooser = () => (strataFront > 0 ? CHOOSERS[strataFront - 1] : null);
+
+// The real node nearest a tap point (for tap-to-magnifier), or null if the tap
+// is nearest the lodestar (already selected — no move) or out in empty space.
+function nodeIndexNearPoint(event, ch) {
+  if (!ch || !strataLayer) return null;
+  const group = strataLayer.querySelector(`#${ch.id}`);
+  if (!group) return null;
+  const rect = strataLayer.getBoundingClientRect();
+  const x = event.clientX - rect.left, y = event.clientY - rect.top;
+  let best = null, bd = Infinity;
+  group.querySelectorAll('.secondary-strata-node[data-index]').forEach(n => {
+    const d = Math.hypot(Number(n.getAttribute('cx')) - x, Number(n.getAttribute('cy')) - y);
+    if (d < bd) { bd = d; best = Number(n.dataset.index); }
+  });
+  const lens = group.querySelector('.secondary-strata-node.is-magnified');
+  if (lens && Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) < bd) {
+    return null; // nearest the lens itself → already the selection
+  }
+  return best != null && bd <= viewport.SSd * 0.14 ? best : null;
+}
+
+// Re-render ONLY the front stratum at a (fractional) center index, front depth.
+// rotating (default) = the empty hollow lens with every node streaming through;
+// false = the settled, filled lodestar (used at the end of the springback).
+function renderFrontStratumAt(centerIndex, rotating = true) {
+  const ch = activeChooser();
+  if (!ch) return;
+  const items = ch.items();
+  const g = renderStratum(strataLayer, {
+    id: ch.id, viewport, items,
+    selectedIndex: centerIndex,
+    mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag,
+    rotating
+  });
+  setStratumVisual(g, 1, 0, 1); // front plane: sharp, in place
+}
+
+// Ease the ring from wherever it settled (maybe out in the overrun) back to the
+// nearest real node — the SPRINGBACK that makes the last link go taut, and the
+// snap-glide into the lens. Commit on arrival (the settle → the live preview).
+function springbackStrata(fromCenter, toIndex, ch, items) {
+  if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; }
+  const commit = () => { renderFrontStratumAt(toIndex, false); if (ch) ch.select(items[toIndex]); };
+  if (Math.abs(fromCenter - toIndex) < 0.001) { commit(); return; }
+  let start = 0;
+  const step = now => {
+    if (!start) start = now;
+    const t = Math.min(1, (now - start) / STRATA_SPRINGBACK_MS);
+    const e = 1 - Math.pow(1 - t, 3); // easeOutCubic — matches the primary's glideTo
+    renderFrontStratumAt(fromCenter + (toIndex - fromCenter) * e);
+    if (t < 1) { strataSnap = requestAnimationFrame(step); }
+    else { strataSnap = null; commit(); }
+  };
+  strataSnap = requestAnimationFrame(step);
+}
+
+if (strataLayer) {
+  strataLayer.addEventListener('pointerdown', event => {
+    const ch = activeChooser();
+    if (!ch || strataAnim) return; // nothing to rotate at the primary or mid-glide
+    if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; } // catch a springback
+    const items = ch.items();
+    strataDrag = {
+      items,
+      center: clampCenter(items.indexOf(ch.selected()), items.length),
+      spacing: getNodeSpacing(viewport), // rad per node — constant through the drag
+      lastX: event.clientX, lastY: event.clientY,
+      startX: event.clientX, startY: event.clientY,
+      moved: false
+    };
+    try { strataLayer.setPointerCapture(event.pointerId); } catch (_) { /* unsupported */ }
+  });
+  strataLayer.addEventListener('pointermove', event => {
+    if (!strataDrag) return;
+    const dx = event.clientX - strataDrag.lastX;
+    const dy = event.clientY - strataDrag.lastY;
+    strataDrag.lastX = event.clientX; strataDrag.lastY = event.clientY;
+    // Hold still until the press clears the tap slop — otherwise a tap jitters
+    // the ring. Past it, it's a drag.
+    if (!strataDrag.moved) {
+      if (Math.hypot(event.clientX - strataDrag.startX, event.clientY - strataDrag.startY) <= STRATA_TAP_SLOP) return;
+      strataDrag.moved = true;
+    }
+    // Same drag sign for BOTH rings: the mirror flips the arc's look, not the
+    // index→magnifier mapping, so no per-ring inversion — the mirrored secondary
+    // read backwards until this flip came out (Howell 2026-07-21). Pixels → arc
+    // angle → node travel (primary's rate); clampDrag allows the sprocket's
+    // 3-node overshoot past each end before the wall.
+    strataDrag.center = clampDrag(
+      strataDrag.center - (dx + dy) * STRATA_DRAG_SENSITIVITY / strataDrag.spacing,
+      strataDrag.items.length
+    );
+    renderFrontStratumAt(strataDrag.center);
+  });
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>
+    strataLayer.addEventListener(type, event => {
+      if (!strataDrag) return;
+      const { items, center, moved } = strataDrag;
+      strataDrag = null;
+      const ch = activeChooser();
+      // Tap (no drag) on a node → glide THAT node into the lens; a drag → snap
+      // to the nearest. Either way springbackStrata eases it home and commits.
+      let target = clampCenter(Math.round(center), items.length);
+      if (!moved && type === 'pointerup') {
+        const tapped = nodeIndexNearPoint(event, ch);
+        if (tapped != null) target = tapped;
+      }
+      springbackStrata(center, target, ch, items);
+    })
+  );
+}
+
+// ── The strata transition tween (D.4) ─────────────────────────────────────
+// The recede is a snap today; this glides it — a camera pull-back. The front
+// plane recedes to 0.4/0.2 while the incoming plane arrives from "behind the
+// head" (starting a touch closer than the film plane, ENTER_SCALE) and settles
+// at the front; a leaving plane drifts back and fades. Blur is DROPPED during
+// motion (the C.2 per-frame villain) and snapped back on settle, where the
+// receded planes are static again. Tunable feel knobs below.
+const STRATA_TWEEN_MS = 600;
+// Incoming/leaving strata TRAVEL in from / out to the left, DIAGONALLY: mostly
+// horizontal, with a vertical bias toward each ring's own home half — the
+// mirrored secondary from ABOVE-left, the standard tertiary from BELOW-left —
+// so the slide runs on the same diagonal the recede backs away on, not a flat
+// horizontal shift (Howell 2026-07-21). A translate (the whole ring travels),
+// NOT a scale about centre (which only inflates the edges and reads as a pop).
+const STRATA_SLIDE_X = 0.9;  // × viewport width
+const STRATA_SLIDE_Y = 0.4;  // × viewport height — the diagonal's vertical bias
+const lerp = (a, b, t) => a + (b - a) * t;
+const easeInOut = t => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);
+let strataAnim = null;
+
+// Each plane's settled visual for a given front (level < 0 ⇒ off-stack, hidden).
+function layerStates(front) {
+  const states = { __primary: { scale: STRATA_DEPTHS[front], blur: STRATA_BLURS[front], opacity: 1, offsetX: 0, offsetY: 0 } };
+  CHOOSERS.forEach((ch, ci) => {
+    const level = front - (ci + 1);
+    states[ch.id] = level >= 0
+      ? { scale: STRATA_DEPTHS[level], blur: STRATA_BLURS[level], opacity: 1, offsetX: 0, offsetY: 0 }
+      : { scale: 1, blur: 0, opacity: 0, offsetX: 0, offsetY: 0 };
+  });
+  return states;
+}
+
+function transitionStrata(fromFront, toFront) {
+  if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
+  if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
+  if (strataHit) strataHit.style.pointerEvents = 'none';
+  const from = layerStates(fromFront);
+  const to = layerStates(toFront);
+
+  // Render every chooser present at EITHER end, so a leaving plane persists
+  // through the glide and an entering one has something to animate; hide the rest.
+  const groups = {};
+  CHOOSERS.forEach((ch, ci) => {
+    const pos = ci + 1;
+    const inFrom = pos <= fromFront, inTo = pos <= toFront;
+    if (!inFrom && !inTo) { hideStratum(strataLayer, ch.id); return; }
+    const items = ch.items();
+    groups[ch.id] = renderStratum(strataLayer, {
+      id: ch.id, viewport, items,
+      selectedIndex: Math.max(0, items.indexOf(ch.selected())),
+      mirrored: ch.mirrored, labelFor: ch.label,
+      centerMagnified: ch.centerMag
+    });
+    // Slide diagonally in from / out to the left: the vertical bias follows
+    // each ring's home half (mirrored ⇒ from above, standard ⇒ from below), so
+    // the whole ring travels on the recede's diagonal. Full opacity — the
+    // travel carries it in, no fade.
+    const dx = -viewport.width * STRATA_SLIDE_X;
+    const dy = (ch.mirrored ? -1 : 1) * viewport.height * STRATA_SLIDE_Y;
+    if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], offsetX: dx, offsetY: dy };
+    if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], offsetX: dx, offsetY: dy };
+  });
+
+  // Populate the primary's tangent chain for the DESTINATION now, so the links
+  // are already there as it recedes (static re-render, off the per-frame path).
+  if (currentApp && typeof currentApp.setTangentFill === 'function') {
+    currentApp.setTangentFill(STRATA_TANGENT_SPANS[toFront] || 0);
+  }
+
+  let raf = 0, start = 0, cancelled = false;
+  const frame = now => {
+    if (cancelled) return;
+    if (!start) start = now;
+    const e = easeInOut(Math.min(1, (now - start) / STRATA_TWEEN_MS));
+    // Hold each plane's STARTING blur through the motion — a receded plane must
+    // never sharpen (Howell 2026-07-21); a front plane holds 0 and recedes
+    // sharp as before. Constant radius = the blurred layer renders once, only
+    // the scale moves. Blur snaps to its destination on settle (renderStack).
+    setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), from.__primary.blur);
+    CHOOSERS.forEach(ch => {
+      const g = groups[ch.id]; if (!g) return;
+      const f = from[ch.id], t = to[ch.id];
+      setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, lerp(f.opacity, t.opacity, e),
+        lerp(f.offsetX || 0, t.offsetX || 0, e), lerp(f.offsetY || 0, t.offsetY || 0, e));
+    });
+    if (e < 1) { raf = requestAnimationFrame(frame); }
+    else { strataAnim = null; renderStack(); } // settle: final depths + blur, prune hidden
+  };
+  raf = requestAnimationFrame(frame);
+  strataAnim = { cancel: () => { cancelled = true; cancelAnimationFrame(raf); } };
+}
+
+const dimensionAvailable = () => dimensionBridge.languagesAvailable().length > 0;
+
+// EVERY language shows a tertiary stratum, even a single-translation one: the
+// reader wants to know WHICH translation they're reading — the Vulgate is a
+// specific edition, not an absence of choice — so Latin's magnifier names the
+// Clementine Vulgate all the same (Howell 2026-07-21, reversing the earlier
+// single-translation skip). Every language has at least one translation, so
+// the tertiary always has a node to show.
+const maxStrataFront = () => CHOOSERS.length; // primary(0) → secondary(1) → tertiary(2)
+
+function cycleStrata() {
+  if (!dimensionAvailable()) return;
+  const max = maxStrataFront();
+  const from = strataFront;
+  strataFront = strataFront >= max ? 0 : strataFront + 1;
+  if (from === strataFront) return;
+  transitionStrata(from, strataFront);
+  // The globe turns with the recede — same duration, settling together.
+  if (dimensionGlobe) dimensionGlobe.spin(STRATA_TWEEN_MS);
+  if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
+}
+function resetStrata() {
+  if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
+  strataFront = 0;
+  CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
+  renderStack();
+}
+// The globe shows only where a dimension EXISTS and the detail sector is open;
+// over a child pyramid it hides, and any open stack recedes back to the
+// primary. A volume boot (including a gateway transit) resets the stack.
+function updateDimensionButton() {
+  if (!dimensionButton) return;
+  const show = dimensionAvailable() && detailSectorVisible;
+  const arriving = show && dimensionButton.hidden;
+  dimensionButton.hidden = !show;
+  // The entrance: the globe appears with a quick turn when the detail
+  // sector brings it in (Howell 2026-07-22).
+  if (arriving && dimensionGlobe) dimensionGlobe.spin();
+  if (!show && isStrataOpen()) resetStrata();
+}
+function refreshDimensionButton() {
+  if (!dimensionButton) return;
+  resetStrata();
+  updateDimensionButton();
+}
+if (dimensionButton) {
+  dimensionButton.addEventListener('click', cycleStrata);
+}
+if (typeof window !== 'undefined') {
+  window.__wheelDimension = {
+    get: () => dimensionBridge.getSelection(),
+    set: id => dimensionBridge.setTranslation(id) || dimensionBridge.setLanguage(id),
+    languages: () => dimensionBridge.languagesAvailable(),
+    cycle: cycleStrata
+  };
+}
 const tapDebugEnabled = new URLSearchParams(window.location.search).get('tapdebug') === '1';
 
 if (tapDebugEnabled && typeof window !== 'undefined') {
@@ -206,6 +930,7 @@ function applyTheme(manifest, volume) {
 const detailRegistry = new DetailPluginRegistry();
 detailRegistry.register(new TextDetailPlugin());
 detailRegistry.register(new CardDetailPlugin());
+detailRegistry.register(new EphemerisDetailPlugin());
 const detailPanel = document.getElementById('detail-panel');
 const detailContent = document.getElementById('detail-content');
 
@@ -213,13 +938,15 @@ const detailContent = document.getElementById('detail-content');
 // The panel fades in after the blue circle has finished expanding,
 // and hides immediately when the circle begins collapsing.
 window.addEventListener('detail-sector-change', (e) => {
-  if (!detailPanel) return;
   const { visible } = e.detail || {};
-  if (visible) {
-    detailPanel.classList.add('detail-panel--visible');
-  } else {
-    detailPanel.classList.remove('detail-panel--visible');
+  if (detailPanel) {
+    detailPanel.classList.toggle('detail-panel--visible', Boolean(visible));
   }
+  // The dimension button follows the sill: present at a leaf, gone over a
+  // child pyramid (which also recedes any open stack back to the primary).
+  detailSectorVisible = Boolean(visible);
+  updateDimensionButton();
+  updateSearchButton();
 });
 
 function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation } = {}) {
@@ -243,7 +970,11 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // Build arc-aware bounds (DSUA — full area, no logo exclusion).
   // The logo moves to the centre as a watermark when the circle expands,
   // so its collapsed upper-right position does not restrict detail text.
-  const arcBounds = computeDetailSectorBounds(window.innerWidth, window.innerHeight);
+  // MEASURED viewport, never window.inner* — the wheel's geometry and the
+  // pinned canvas use the visual viewport, and a browser chrome bar makes
+  // innerHeight lie (Phase C audit M4; the DDG bottom-crop class of bug).
+  const vpm = measureViewport();
+  const arcBounds = computeDetailSectorBounds(vpm.width, vpm.height);
   const panelRect = detailPanel.getBoundingClientRect();
   const renderBounds = { ...arcBounds, width: panelRect.width, height: panelRect.height };
 
@@ -307,7 +1038,9 @@ function wireInteractions(getApp) {
     const p = svgPointOf(event);
     if (!p) return null;
 
-    const nodes = svg.querySelectorAll('.focus-ring-node');
+    // Placebo nodes (the version footnote) are not tap targets — excluding
+    // them here keeps a real neighbor eligible for the redirect.
+    const nodes = svg.querySelectorAll('.focus-ring-node:not(.is-placebo)');
     let nearest = null;
     let nearestDist = Infinity;
     nodes.forEach(node => {
@@ -370,6 +1103,12 @@ function wireInteractions(getApp) {
   svg.addEventListener('click', event => {
     const now = Date.now();
     if (now < suppressNativeClickUntil) {
+      // Control taps (magnifier, parent button) rely on their NATIVE click
+      // and their pointerdown path never arms a manual fire — suppressing
+      // them makes a quick node-then-parent rhythm eat the second tap
+      // (Phase C audit M6). Controls are exempt from suppression.
+      const isControl = event.target?.closest?.('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
+      if (isControl) return;
       logTap('native-click-suppressed', {
         targetClass: event.target?.getAttribute?.('class') || null,
         targetId: event.target?.getAttribute?.('id') || null
@@ -382,6 +1121,10 @@ function wireInteractions(getApp) {
   svg.addEventListener('pointerdown', event => {
     const app = getApp();
     if (!app) return;
+    // While the secondary strata is up, the primary is receded and INERT —
+    // its ring must not take taps (D.3). The secondary nodes handle their
+    // own pointerdown and stop it here anyway; this is the belt.
+    if (isSecondaryOpen()) return;
     logTap('pointerdown', {
       pointerType: event.pointerType,
       targetClass: event.target?.getAttribute?.('class') || null,
@@ -503,6 +1246,7 @@ function wireInteractions(getApp) {
       // target node's click handler run without a competing snap animation.
       const app = getApp();
       if (!app) return;
+      if (isSecondaryOpen()) return; // primary inert while the secondary is up (D.3)
       const wasDragging = isDragging;
       isDragging = false;
       if (wasDragging) {
@@ -724,7 +1468,32 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
-  const translationId = options.translation || null;
+  dimensionBridge.setTranslationsMeta(translationsMeta);
+  dimensionBridge.setLanguagesMeta(supplemental?.languagesMeta || null);
+  // Seed the dimension state with the volume's default translation, so the
+  // secondary/tertiary strata and the primary text all agree from boot —
+  // unless a sticky choice already survived a gateway/reboot.
+  if (!dimensionStore.getState().language && options.translation) {
+    dimensionBridge.setTranslation(options.translation);
+  }
+  refreshDimensionButton(); // show the globe only where a dimension exists
+  // The dividers only in volumes that declare search, only while browsing —
+  // and never during the reveal (the blocker isn't up yet at this point, so
+  // gate on the decision itself; the splash's finally() brings them in).
+  searchAvailable = Boolean(config.hasSearch);
+  // A volume boot always lands in browse, never mid-search.
+  searchRestore = null;
+  searchPrefix = '';
+  searchScopedCorpus = [];
+  searchOpeningAllowed = null;
+  if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+  if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
+  if (!playSplash) updateSearchButton();
+  // The sticky dimension choice (survives reboots/gateways) wins over the
+  // volume's pinned default; boot-time derivations (namesMap, labels) still
+  // use the boot value — swapping those live is D.6's work, not D.2's.
+  const activeTranslation = () => dimensionStore.getState().edition || options.translation || null;
+  const translationId = activeTranslation();
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
   const resolvedLocale = options.locale || translationLang || 'english';
   const localeNames = translationsMeta?.names?.[translationLang] || {};
@@ -736,6 +1505,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   };
 
   const translationName = translationsMeta?.translations?.[translationId]?.name || translationId;
+
+  // The splash overture (data-declared, volume-agnostic): when the reveal
+  // will play and the volume names an overture item, the chain BOOTS there —
+  // the wireframe is drawn at the overture — and the splash's rotation beat
+  // glides the live wheel home to the configured start. Returning visitors
+  // skip the splash and boot at home directly; nothing changes for them.
+  const overtureHomeId = options.initialItemId || null;
+  const overtureItemId = playSplash && options.splashOvertureItem && overtureHomeId
+    && options.splashOvertureItem !== overtureHomeId ? options.splashOvertureItem : null;
+  if (overtureItemId) options.initialItemId = overtureItemId;
 
   const chainResult = await config.buildChain(manifest, options, namesMap);
   performance.mark('wheel:chain-built');
@@ -776,6 +1555,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   if (detailContentEl) detailContentEl.innerHTML = '';
   const detailPanelEl = document.getElementById('detail-panel');
   if (detailPanelEl) detailPanelEl.classList.remove('detail-panel--visible');
+  // The migration LIFO belongs to the OLD volume: clear it, or its detached
+  // overlay clones leak per transit and a later ascent in the NEW volume can
+  // pop the old volume's entry and replay stale clones (Phase C audit M3).
+  clearMigrationStack();
   currentApp = null;
   currentVolumeId = volume;
   gatewayReturnContext = gatewayReturn;
@@ -797,6 +1580,23 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     }
   }
 
+  // The search corpus: the volume's leaves, by the name each shows in the
+  // magnifier, from the adapter's normalized graph. The graph map lets a
+  // found leaf walk up its parent chain to the ring level for the arrival.
+  searchCorpusEntries = [];
+  searchGraphById = new Map();
+  if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
+    const leafLevel = root?.display_config?.leaf_level || null;
+    searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));
+    if (leafLevel) {
+      searchCorpusEntries = adapterNormalized.items
+        .filter(i => i?.level === leafLevel && (i.name || i.id))
+        .map(i => ({ item: i, label: String(i.name || i.id), norm: searchNorm(i.name || i.id) }))
+        .filter(e => e.norm.length > 0)
+        .sort((a, b) => a.label.localeCompare(b.label));
+    }
+  }
+
   const configLabel = makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
   const adapterLabel = adapterLayoutSpec?.label;
   // Prefer the config's formatter when it is context-aware (receives { item, context }),
@@ -811,6 +1611,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (Boolean(config?.centerLabel)) return true;
     // Cylinder items (short numeric labels) should always be centered
     if (item?.level === 'cylinder') return true;
+    // The search ring's characters sit ON their nodes, like all numerals
+    if (item?.level === 'character') return true;
     return false;
   });
   let app;
@@ -834,6 +1636,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getWeekdayLetters: layoutBindings.getWeekdayLetters,
     getBibleChapters: layoutBindings.getBibleChapters || ((m, selected, nm, mode) => getBibleChapters(manifest, selected, nm, mode)),
     getBibleVerseItems: layoutBindings.getBibleVerseItems,
+    getBibleVerseCacheStatus: layoutBindings.getBibleVerseCacheStatus,
     getBibleVerseChain: layoutBindings.getBibleVerseChain,
     getBibleChapterChain: layoutBindings.getBibleChapterChain,
     prefetchBibleVerses: layoutBindings.prefetchBibleVerses,
@@ -853,9 +1656,27 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     savePreInState: layoutBindings.savePreInState,
     pyramidBuilder: layoutBindings.pyramidBuilder
   });
-  const pyramidConfig = {
+  const volumePyramidConfig = {
     ...(layoutSpec?.pyramid || {}),
     ...(adapterLayoutSpec?.pyramid || {})
+  };
+  searchVolumePyramid = volumePyramidConfig; // the cascade descends with the volume's own hands
+  // In search mode the pyramid belongs to the completions: candidates for
+  // the character in (or streaming through) the lens, and a candidate tap
+  // is the arrival. Browse mode passes straight through to the volume's own
+  // pyramid. One wrapper, no volume knowledge.
+  const pyramidConfig = {
+    ...volumePyramidConfig,
+    getChildren: args => (searchRestore
+      ? searchCompletions(args?.selected)
+      : (typeof volumePyramidConfig.getChildren === 'function' ? volumePyramidConfig.getChildren(args) : [])),
+    onClick: instr => {
+      if (searchRestore) {
+        if (instr?.item?.searchEntry) searchArrive(instr.item.searchEntry);
+        return;
+      }
+      if (typeof volumePyramidConfig.onClick === 'function') volumePyramidConfig.onClick(instr);
+    }
   };
   const pyramidLayout = adapterLayoutSpec || layoutSpec;
   const normalized = {
@@ -887,9 +1708,20 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     pyramidLayoutSpec: pyramidLayout,
     pyramidNormalized: adapterNormalized || normalized,
     pyramidAdapter: adapter,
-    detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances)
+    detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances),
+    // Leaf-advance paints the text ahead of the ring's arrival — same
+    // renderer the settle hook uses, resolving the translation live.
+    onDetailPreview: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
   });
   currentApp = app;
+  // THE STRIKE: in search mode — and only there — the magnifier receives
+  // its first-ever click (Howell 2026-07-22): tap the lens, commit the
+  // settled character to the carriage. Inert in browse mode.
+  if (app?.view?.magnifierCircle) {
+    app.view.magnifierCircle.addEventListener('click', () => {
+      if (searchRestore) strikeSettledChar();
+    });
+  }
   // Expose app to window for console API
   window.app = app;
   // Gateway transit: the new volume is fully rendered — lay the frozen old
@@ -910,8 +1742,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       wipeSnapshot.remove();
     }
   }
-  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId });
-  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: translationId }));
+  // Detail renders resolve the translation LIVE (the sticky choice can
+  // change between renders); the settle hook below regenerates the open
+  // panel the moment a new choice commits.
+  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
+  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() }));
+  dimensionBridge.onSettle(translation => {
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
+  });
   // Generic post-boot hook: adapters may schedule volume-specific startup
   // work (e.g. a featured-item prefetch) without the host
   // carrying volume literals (Phase B audit, H1).
@@ -920,7 +1758,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       app,
       items,
       selectedIndex,
-      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: translationId })
+      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
     });
   }
   if (!interactionsWired) {
@@ -949,12 +1787,21 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
 
   if (playSplash) {
     const contentGroup = app?.view?.contentGroup || null;
-    playBootSplash({ svg, contentGroup, viewport, arcPoints: computeArcPoints(viewport) })
+    playBootSplash({
+      svg, contentGroup, viewport, arcPoints: computeArcPoints(viewport),
+      // The overture's homeward glide — the splash calls this at its rotation
+      // beat; the wheel travels steady (linear) and commits on arrival.
+      overture: overtureItemId && app ? { glide: ms => app.glideToItem(overtureHomeId, ms) } : null
+    })
       .catch(err => {
         console.warn('[wheel] boot splash failed', err);
         if (contentGroup) contentGroup.style.opacity = '';
         if (svg) svg.style.opacity = '';
-      });
+        // Never strand the wheel at the overture: if the reveal died before
+        // its rotation, snap home now (0ms — the error path has no theatre).
+        if (overtureItemId && app) app.glideToItem(overtureHomeId, 0);
+      })
+      .finally(() => updateSearchButton()); // the dividers arrive once the reveal is over
   }
 }
 

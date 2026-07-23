@@ -44,8 +44,11 @@ const volumeConfigs = {
     },
     extractRoot: manifest => manifest?.Gutenberg_Bible,
     async loadSupplemental() {
-      const translationsMeta = await fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null);
-      return { translationsMeta };
+      const [translationsMeta, languagesMeta] = await Promise.all([
+        fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null),
+        fetch('./data/gutenberg/languages.json').then(r => r.json()).catch(() => null)
+      ]);
+      return { translationsMeta, languagesMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
       const level = params.get('level') || startup.top_navigation_level || 'verse';
@@ -96,6 +99,10 @@ const volumeConfigs = {
         level,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
+        // The boot reveal's overture (data-declared): the item the splash
+        // DRAWS at before its rotation beat glides the ring home to
+        // initialItemId. Volumes without the key boot the classic reveal.
+        splashOvertureItem: startup.splash_overture_item || null,
         locale: params.get('lang') || null,
         cousinMode: arrangement !== 'siblings-only'
       };
@@ -111,7 +118,12 @@ const volumeConfigs = {
       return name;
     },
     buildChain: (manifest, options) => buildCatalogManufacturers(manifest, { initialItemId: options.initialItemId }),
-    createHandlers: makeAdapterHandlers('catalog')
+    createHandlers: makeAdapterHandlers('catalog'),
+    // Search (the navigator's dividers) exists only here: this volume's
+    // model namespace is flat and arbitrary — the index beats the walk.
+    // Structured volumes (scripture's ordered books, the calendar's dates)
+    // are already optimally served by the wheel itself (Howell 2026-07-22).
+    hasSearch: true
   },
   calendar: {
     id: 'calendar',

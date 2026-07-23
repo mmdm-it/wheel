@@ -226,6 +226,60 @@ describe('createVolumePyramidConfig', () => {
     assert.equal(primaryCalls.length, 1);
   });
 
+  it('testament sky seats siblings only — cousins stay in the ring', () => {
+    // The books chain is the whole volume (the sweep), but the child pyramid
+    // is a preview of the MAGNIFIED testament's OWN books: Genesis and
+    // Matthew are cousins, not siblings (Howell 2026-07-20).
+    const manifest = { Gutenberg_Bible: { testaments: {} } };
+    const sweepChain = [
+      { id: 'GEN', testamentId: 'old', level: 'book' },
+      { id: 'MAL', testamentId: 'old', level: 'book' },
+      null, null,
+      { id: 'MT', testamentId: 'new', level: 'book' },
+      { id: 'APOC', testamentId: 'new', level: 'book' }
+    ];
+    const config = createVolumePyramidConfig({
+      volume: 'bible',
+      pyramidBuilder: buildBiblePyramid,
+      manifest,
+      getBibleChapters: () => [],
+      getBibleBooksForTestament: () => ({ items: sweepChain }),
+      getApp: () => null,
+      bibleModeRef: () => 'testament'
+    });
+    const oldSky = config.getChildren({ selected: { id: 'old', level: 'testament' } });
+    assert.deepEqual(oldSky.map(c => c.id), ['GEN', 'MAL'], 'old testament sky holds only its own books');
+    const newSky = config.getChildren({ selected: { id: 'new', level: 'testament' } });
+    assert.deepEqual(newSky.map(c => c.id), ['MT', 'APOC'], 'new testament sky holds only its own books');
+  });
+
+  it('a loaded-but-empty chapter never re-prefetches — the Esther hot loop', () => {
+    // Esther 1–7 and 9–16 ship as verse-less stubs; re-requesting a
+    // loaded-empty chapter fired onLoaded synchronously → refreshPyramid →
+    // render → request again, grinding the Moto G to a near-crash
+    // (Phase C, 2026-07-20). Terminal cache states must render an empty
+    // sky and ask nothing.
+    const chapter = { id: 'ESTH:1', level: 'chapter', meta: { externalFile: 'data/x/ESTH/001.json' } };
+    const calls = [];
+    const makeConfig = status => createVolumePyramidConfig({
+      volume: 'bible',
+      pyramidBuilder: buildBiblePyramid,
+      manifest: { Gutenberg_Bible: { testaments: {} } },
+      getBibleChapters: () => [],
+      getBibleVerseItems: () => [],
+      getBibleVerseCacheStatus: () => status,
+      prefetchBibleVerses: (item, opts) => calls.push(status),
+      getApp: () => null,
+      bibleModeRef: () => 'chapter'
+    });
+    makeConfig('loaded').getChildren({ selected: chapter });
+    makeConfig('error').getChildren({ selected: chapter });
+    assert.deepEqual(calls, [], 'terminal states never re-request');
+    makeConfig(null).getChildren({ selected: chapter });
+    makeConfig('loading').getChildren({ selected: chapter });
+    assert.deepEqual(calls, [null, 'loading'], 'unrequested and in-flight states do request');
+  });
+
   it('builds places pyramid config and defers to handlers', () => {
     const manifest = { Places: { regions: {}, root: { children: [] } } };
     const levels = ['country', 'city'];

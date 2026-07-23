@@ -185,6 +185,23 @@ export function animateIn(opts) {
     if (t.item?.id) targetById.set(t.item.id, t);
   });
 
+  // The DESTINATION dress. A clone takes off wearing the pyramid's face and
+  // must LAND wearing the ring's — one shade of brown to another. Fading the
+  // fill/stroke over the flight itself removes the arrival pop (Howell
+  // 2026-07-22): when the barrier swaps reals for clones, the colours already
+  // match. Resolved once from the theme variables.
+  const rootStyle = typeof getComputedStyle === 'function' ? getComputedStyle(svgRoot) : null;
+  const ringFill = (rootStyle?.getPropertyValue('--color-nodes') || '').trim() || '#555';
+  const magnifierStroke = (rootStyle?.getPropertyValue('--color-magnifier-stroke') || '').trim() || '#000';
+  // Labels too: pyramid labels wear an absolute px size fitted to the
+  // pyramid; ring labels wear the theme's clamp. The size must travel with
+  // the flight or the verse numbers pop at the lens (Howell 2026-07-22).
+  // Read the destination sizes off the real (hidden) elements.
+  const ringLabelEl = svgRoot.querySelector?.('.focus-ring-label');
+  const ringLabelSize = ringLabelEl && typeof getComputedStyle === 'function' ? getComputedStyle(ringLabelEl).fontSize : '';
+  const magLabelEl = svgRoot.querySelector?.('.focus-ring-magnifier-label:not(.focus-ring-parent-label)');
+  const magLabelSize = (magLabelEl && typeof getComputedStyle === 'function' ? getComputedStyle(magLabelEl).fontSize : '') || ringLabelSize;
+
   // Create an overlay <g> that sits on top of everything
   const overlay = document.createElementNS(SVG_NS, 'g');
   overlay.setAttribute('class', 'migration-animation-overlay');
@@ -241,6 +258,11 @@ export function animateIn(opts) {
     g.style.transformOrigin = `${pn.x}px ${pn.y}px`;
     g.style.transform = 'translate(0px, 0px) rotate(0deg)';
 
+    // Snapshot the RESOLVED pyramid dress the clone took off in, so the
+    // OUT reversal can fade it back into exactly what it left with.
+    const takeoffStyle = typeof getComputedStyle === 'function' ? getComputedStyle(circle) : null;
+    const takeoffLabelStyle = typeof getComputedStyle === 'function' ? getComputedStyle(label) : null;
+
     animEntries.push({
       g,
       circle,
@@ -250,6 +272,14 @@ export function animateIn(opts) {
       rotDelta,
       startRadius: pn.r,
       endRadius,
+      pyramidFill: takeoffStyle ? takeoffStyle.fill : '',
+      pyramidStroke: takeoffStyle ? takeoffStyle.stroke : '',
+      pyramidFontSize: takeoffLabelStyle ? takeoffLabelStyle.fontSize : '',
+      ringFill,
+      ringStroke: (isClickedNode && magnifierRadius) ? magnifierStroke : 'transparent',
+      // The clicked node's label grows to the magnifier's size; the rest to
+      // the ring label's.
+      ringFontSize: (isClickedNode && magnifierRadius) ? magLabelSize : ringLabelSize,
       // Original pyramid position (needed for OUT reversal)
       srcX: pn.x,
       srcY: pn.y,
@@ -281,10 +311,17 @@ export function animateIn(opts) {
       a.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
       a.g.style.transform = `translate(${a.translateX}px, ${a.translateY}px) rotate(${a.rotDelta}deg)`;
 
-      // Animate circle radius if it changed
-      if (a.startRadius !== a.endRadius) {
-        a.circle.style.transition = `r ${ANIM_DURATION}ms ease-in-out`;
-        a.circle.setAttribute('r', a.endRadius);
+      // The dress changes IN FLIGHT: radius (where it changes), the pyramid
+      // brown fading into the ring brown, and the label growing into the
+      // ring's type size — so the barrier's clone-for-real swap lands on
+      // identical pixels, no pop.
+      a.circle.style.transition = `r ${ANIM_DURATION}ms ease-in-out, fill ${ANIM_DURATION}ms ease-in-out, stroke ${ANIM_DURATION}ms ease-in-out`;
+      if (a.startRadius !== a.endRadius) a.circle.setAttribute('r', a.endRadius);
+      a.circle.style.fill = a.ringFill;
+      a.circle.style.stroke = a.ringStroke;
+      if (a.ringFontSize && a.ringFontSize !== a.pyramidFontSize) {
+        a.label.style.transition = `font-size ${ANIM_DURATION}ms ease-in-out`;
+        a.label.style.fontSize = a.ringFontSize;
       }
     });
 
@@ -360,10 +397,16 @@ export function animateOut(opts) {
       a.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
       a.g.style.transform = 'translate(0px, 0px) rotate(0deg)';
 
-      // Reverse radius
-      if (a.startRadius !== a.endRadius) {
-        a.circle.style.transition = `r ${ANIM_DURATION}ms ease-in-out`;
-        a.circle.setAttribute('r', a.startRadius);
+      // Reverse radius AND the dress — the ring brown fades back into the
+      // pyramid brown it took off in, the label back to its pyramid size,
+      // mirroring the IN flight.
+      a.circle.style.transition = `r ${ANIM_DURATION}ms ease-in-out, fill ${ANIM_DURATION}ms ease-in-out, stroke ${ANIM_DURATION}ms ease-in-out`;
+      if (a.startRadius !== a.endRadius) a.circle.setAttribute('r', a.startRadius);
+      if (a.pyramidFill) a.circle.style.fill = a.pyramidFill;
+      if (a.pyramidStroke) a.circle.style.stroke = a.pyramidStroke;
+      if (a.pyramidFontSize && a.pyramidFontSize !== a.ringFontSize) {
+        a.label.style.transition = `font-size ${ANIM_DURATION}ms ease-in-out`;
+        a.label.style.fontSize = a.pyramidFontSize;
       }
     });
 
@@ -926,6 +969,9 @@ export function animateMagnifierToParent(opts) {
     radius,
     label = '',
     fromAngle = 0,
+    // The search arrival's disc travels BARE — golden fill only, no stroke:
+    // the black ring joins the vessel later, with the name (Howell 2026-07-22).
+    bare = false,
     onComplete
   } = opts;
 
@@ -945,6 +991,7 @@ export function animateMagnifierToParent(opts) {
   circle.setAttribute('cy', fromY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  if (bare) circle.style.stroke = 'none';
   g.appendChild(circle);
 
   // Label centered at magnifier (text-anchor: middle)

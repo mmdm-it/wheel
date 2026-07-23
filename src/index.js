@@ -89,7 +89,12 @@ export function createApp({
   pyramidNormalized = null,
   // The detail sector doubles as a NEXT button at the leaf, where a volume
   // asks for it (Howell 2026-07-20 — the e-reader gesture).
-  detailTapAdvances = false
+  detailTapAdvances = false,
+  // Paint the detail sector for a specific item NOW, ahead of the ring's
+  // arrival — the reader is looking at the text, not the ring (Howell
+  // 2026-07-21). Used by the leaf-advance tap so the words don't wait out
+  // the catch-up rotation.
+  onDetailPreview = null
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const debug = Boolean(contextOptions.debug);
@@ -182,6 +187,9 @@ export function createApp({
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
   let lastPyramidData = null; // stashed for SVG-level click delegation
+  let labelessParentFlight = false; // one-shot: next migrateIn flies the magnifier
+                                    // fill to the parent seat UNLABELED, and skips
+                                    // the (hidden) old parent's outgoing flight
 
   // Detail Sector leaf detection
   const leafLevel = pyramidNormalized?.meta?.leafLevel || null;
@@ -194,6 +202,10 @@ export function createApp({
   let detailSectorShown = false; // tracks whether DS is currently expanded
   let forcedDetailOpen = false;   // request to open DS at a non-leaf level
   let freezeDetailSector = false; // skips collapse for exactly ONE render after an expansion
+  // Tangent fill (Phase D): 0 keeps the ring arc-only (the hot rotation path);
+  // when the ring recedes behind a dimension stratum, the stack sets a span so
+  // the chain populates its straight tangent runs (verses climbing overhead).
+  let tangentFillSpan = 0;
   // Where a rotation currently in flight is HEADED. The selection itself
   // commits only on arrival, so without this a second tap during the
   // journey would reckon from the seat the ring has already left, aim at
@@ -282,11 +294,15 @@ export function createApp({
     let firstIdx = -1;
     let last = null;
     let lastIdx = -1;
+    // Placebo links (the version footnote) never anchor the bounds: the
+    // chain's overrun is measured from the last REAL link, so the stamp
+    // trails beyond the springback and structurally cannot reach the
+    // magnifier.
     for (let i = 0; i < visibleItems.length; i += 1) {
-      if (visibleItems[i] !== null) { first = visibleItems[i]; firstIdx = i; break; }
+      if (visibleItems[i] !== null && !visibleItems[i].placebo) { first = visibleItems[i]; firstIdx = i; break; }
     }
     for (let i = visibleItems.length - 1; i >= 0; i -= 1) {
-      if (visibleItems[i] !== null) { last = visibleItems[i]; lastIdx = i; break; }
+      if (visibleItems[i] !== null && !visibleItems[i].placebo) { last = visibleItems[i]; lastIdx = i; break; }
     }
     if (!first) return { minRotation: 0, maxRotation: 0 };
     const firstOrder = Number.isFinite(first.order) ? first.order : firstIdx;
@@ -524,7 +540,26 @@ export function createApp({
     // Old parent button fill → radially outward off-screen (leads the way).
     // On a suffix-merge descent the LABEL is anchored (the merge overlay owns
     // it), but the vessel's old fill still exits — as a label-less disc.
-    {
+    // The search arrival flies a LABELLESS magnifier disc (one-shot): the
+    // half-typed string must not ride into the parent seat, but the golden
+    // FILL must — its travel is the radial-in cue, in sync with the ring
+    // departing and the detail circle expanding (Howell 2026-07-22). The
+    // old parent's outgoing flight stays skipped: the vessel was hidden,
+    // and a disc departing an empty seat is nonsense.
+    if (labelessParentFlight) {
+      labelessParentFlight = false;
+      animateMagnifierToParent({
+        svgRoot: view.contentGroup || view.svgRoot,
+        fromX: magnifier.x,
+        fromY: magnifier.y,
+        toX: parentButtonX,
+        toY: parentButtonY,
+        radius: magnifierRadius,
+        label: '',
+        bare: true, // fill only — the stroke arrives later, with the name
+        fromAngle: magnifier.angle
+      });
+    } else {
       animateParentButtonOutward({
         svgRoot: view.contentGroup || view.svgRoot,
         buttonX: parentButtonX,
@@ -537,32 +572,32 @@ export function createApp({
         buttonElement: view.parentButtonOuter,
         buttonLabelElement: view.parentButtonOuterLabel
       });
-    }
 
-    // Old magnifier → parent-button position (straight line)
-    if (isSuffixMergeIn) {
-      animateVolumeParentMerge({
-        svgRoot: view.contentGroup || view.svgRoot,
-        fromX: magnifier.x,
-        fromY: magnifier.y,
-        toX: parentButtonX,
-        toY: parentButtonY,
-        radius: magnifierRadius,
-        baseLabel: prevParentLabel,
-        suffixLabel: prevMagnifierLabel,
-        fromAngle: magnifier.angle
-      });
-    } else {
-      animateMagnifierToParent({
-        svgRoot: view.contentGroup || view.svgRoot,
-        fromX: magnifier.x,
-        fromY: magnifier.y,
-        toX: parentButtonX,
-        toY: parentButtonY,
-        radius: magnifierRadius,
-        label: prevMagnifierLabel,
-        fromAngle: magnifier.angle
-      });
+      // Old magnifier → parent-button position (straight line)
+      if (isSuffixMergeIn) {
+        animateVolumeParentMerge({
+          svgRoot: view.contentGroup || view.svgRoot,
+          fromX: magnifier.x,
+          fromY: magnifier.y,
+          toX: parentButtonX,
+          toY: parentButtonY,
+          radius: magnifierRadius,
+          baseLabel: prevParentLabel,
+          suffixLabel: prevMagnifierLabel,
+          fromAngle: magnifier.angle
+        });
+      } else {
+        animateMagnifierToParent({
+          svgRoot: view.contentGroup || view.svgRoot,
+          fromX: magnifier.x,
+          fromY: magnifier.y,
+          toX: parentButtonX,
+          toY: parentButtonY,
+          radius: magnifierRadius,
+          label: prevMagnifierLabel,
+          fromAngle: magnifier.angle
+        });
+      }
     }
 
     // 5. Detail Sector: expand simultaneously if the incoming selected item is a leaf.
@@ -826,7 +861,7 @@ export function createApp({
       choreographer.setRotation(rotation, { emit: false });
       rotation = choreographer.getRotation();
     }
-    const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing).map(node => ({
+    const nodes = calculateNodePositions(visible, vp, rotation, nodeRadius, nodeSpacing, tangentFillSpan).map(node => ({
       ...node,
       label: formatLabel({ item: node.item, context: 'node' }),
       labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
@@ -875,11 +910,19 @@ export function createApp({
       // A cousin gap under the magnifier means no node is selected — the
       // pyramid must empty rather than borrow the nearest neighbor's
       // children. The magnified slot is arithmetic: order = rotation/spacing - 1.
+      // The placebo tail is NOT cousin texture (Howell 2026-07-20): holding
+      // the chain past its last real link must keep that link's children dim
+      // in the sky — the same past-the-end hold both chain ends have always
+      // had — so tail slots (gaps or the stamp) fall through to the nearest
+      // REAL node instead of emptying the pyramid.
+      let lastRealIdx = visible.length - 1;
+      while (lastRealIdx >= 0 && (visible[lastRealIdx] === null || visible[lastRealIdx]?.placebo)) lastRealIdx -= 1;
       const nearestSlot = Math.round(rotation / nodeSpacing - 1);
-      if (nearestSlot >= 0 && nearestSlot < visible.length && visible[nearestSlot] === null) return null;
+      if (nearestSlot >= 0 && nearestSlot <= lastRealIdx && visible[nearestSlot] === null) return null;
       let closest = null;
       let closestDist = Infinity;
       for (const node of nodes) {
+        if (node.item?.placebo) continue; // the stamp has no children to show
         const dist = Math.abs(node.angle - magnifier.angle);
         if (dist < closestDist) {
           closestDist = dist;
@@ -1165,7 +1208,7 @@ export function createApp({
     return 1000 * Math.log10(distance) + 250;
   };
 
-  const rotateToIndex = index => {
+  const rotateToIndex = (index, opts = {}) => {
     const item = nav.items?.[index];
     if (!item) return false; // an empty link is never a destination
     const targetAngle = magnifier.angle;
@@ -1175,7 +1218,9 @@ export function createApp({
     const clampedRotation = clampRotation(desiredRotation, bounds);
     // Travel is measured from where the ring is GOING, not where it sat.
     const fromIndex = pendingSelectionIndex ?? nav.getCurrentIndex();
-    const duration = primaryClickDuration(fromIndex, index);
+    // A caller may fix the duration (the boot overture's steady, deliberate
+    // glide); otherwise the click's log-of-distance tempo applies.
+    const duration = Number.isFinite(opts.durationMs) ? opts.durationMs : primaryClickDuration(fromIndex, index);
     if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
       window.__tapDebugLog('rotate-node-into-magnifier', {
         fromIndex,
@@ -1197,6 +1242,7 @@ export function createApp({
     animateSnapTo(clampedRotation, duration, () => {
       pendingSelectionIndex = null;
       nav.selectIndex(index);
+      if (typeof opts.onArrive === 'function') opts.onArrive();
     });
     return true;
   };
@@ -1216,8 +1262,17 @@ export function createApp({
     const items = nav.items || [];
     const from = pendingSelectionIndex ?? nav.getCurrentIndex();
     let next = from + 1;
-    while (next < items.length && !items[next]) next += 1;
+    // Empty links are stepped over; placebo links (the version stamp) can
+    // never be a reading stop either (Phase C audit L2 — latent until a
+    // volume combines a placebo tail with detailTapAdvances).
+    while (next < items.length && (!items[next] || items[next].placebo)) next += 1;
     if (next >= items.length) return false;
+    // The text leads, the ring follows. Paint the destination leaf's detail
+    // NOW, then let the catch-up rotation run — the selection still commits on
+    // arrival (rotateToIndex is untouched), which re-paints the same text.
+    // Scoped to this single-step reading advance; a distant click still waits
+    // for the lens, per the arrival-commit rule above (Howell 2026-07-21).
+    if (typeof onDetailPreview === 'function') onDetailPreview(items[next]);
     return rotateToIndex(next);
   };
 
@@ -1324,6 +1379,7 @@ export function createApp({
     // 2026-07-17). calculateNodePositions is windowed and gap-aware.
     const visibleNodes = calculateNodePositions(nav.items, vp, rotation, nodeRadius, nodeSpacing);
     visibleNodes.forEach(node => {
+      if (node.item?.placebo) return; // the version footnote is never a seat
       const diff = Math.abs(node.angle - targetAngle);
       if (diff < closestDiff) {
         closestDiff = diff;
@@ -1373,10 +1429,37 @@ export function createApp({
       onNodeClick(nodes[idx]);
     },
     refreshPyramid: () => render(rotation),
+    // The next migrateIn flies the magnifier fill to the parent seat with
+    // NO label, and skips the hidden old parent's outgoing flight — the
+    // search arrival's radial-in cue (Howell 2026-07-22).
+    labelessParentFlightOnce() { labelessParentFlight = true; },
+    // Glide the ring to a named item over a FIXED duration — the boot
+    // overture's steady travel (animateSnapTo is linear: no accel, no decel).
+    // Resolves true on arrival (selection committed), false if the item is
+    // not in the chain. Everything live (parent header, pyramid) dances along
+    // per frame, exactly as in a finger drag.
+    glideToItem(itemId, durationMs) {
+      const items = nav.items || [];
+      const idx = items.findIndex(it => it && (it.id === itemId || it.name === itemId || it.label === itemId));
+      if (idx < 0) return Promise.resolve(false);
+      return new Promise(resolve => {
+        const ok = rotateToIndex(idx, { durationMs, onArrive: () => resolve(true) });
+        if (!ok) resolve(false);
+      });
+    },
+    // The dimension stack recedes/returns the primary. When receded, fill the
+    // straight tangent runs with the chain's beyond-window links; when at the
+    // front, span 0 restores the arc-only window. A static re-render — off the
+    // rotation hot path.
+    setTangentFill(span) {
+      const next = Number.isFinite(span) && span > 0 ? span : 0;
+      if (next === tangentFillSpan) return;
+      tangentFillSpan = next;
+      render(rotation);
+    },
     // Open the Detail Sector at the current position regardless of leaf level.
     // onOpen is called after the expansion animation completes.
     openDetailSector(onOpen) {
-      console.log('[openDetailSector] called | detailSectorShown:', detailSectorShown, '| volumeLogo.animating:', volumeLogo?.animating);
       if (detailSectorShown) {
         if (typeof onOpen === 'function') onOpen();
         return;

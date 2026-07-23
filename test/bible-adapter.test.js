@@ -117,7 +117,13 @@ describe('reading on through the volume', () => {
     };
     assert.equal(h.parentHandler({ selected: reached, app }), true);
     assert.equal(state.items[state.idx].id, 'EXO:3', 'lands on Exodus 3');
-    assert.equal(state.items.length, 40, 'among Exodus\'s own chapters');
+    // The chapters ring spans the WHOLE volume (cousin chain), the same as on
+    // descent and the same as the chapter→book ascent — so rotating out of the
+    // landed chapter crosses book boundaries. It used to strand on Exodus's 40
+    // chapters alone; that was the cousin-ascent bug (Howell 2026-07-21).
+    assert.ok(state.items.length > 1000, 'the whole volume is in the ring, not one book');
+    assert.ok(state.items.some(c => c && c.id === 'GENE:1'), 'Genesis reachable by rotating back');
+    assert.ok(state.items.some(c => c && c.id === 'APOC:22'), 'Revelation by rotating forward');
   });
 
   it('names the book and chapter under the magnifier, live', () => {

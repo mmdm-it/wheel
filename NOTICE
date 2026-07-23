@@ -43,7 +43,22 @@ not present themselves as MMdM products.
 
 4. PRIOR ART
 ------------
-The navigation mechanisms implemented here are the subject of defensive
-publications establishing them as prior art — see docs/prior-art/. The ideas
-are unpatentable and free for all; this implementation is GPL; the cargo and
-the brand are ours.
+The navigation and interaction mechanisms implemented here are the subject of
+defensive publications establishing them as prior art. All live in
+docs/prior-art/:
+
+  - DEFENSIVE_PUBLICATION_V1_2025.md  — the v0-era navigator (2025-11-21).
+    Superseded in part by V2; retained as the dated historical record.
+  - DEFENSIVE_PUBLICATION_V2_2026.md  — the current instrument: eccentric
+    off-screen hub, sprocket-chain doctrine, cousin chains, gesture tier
+    ladder, migration choreography, gateways, dimension/strata system
+    (2026-07-18). DOI 10.5281/zenodo.21434298
+  - SEARCH_ENTRY_DISCLOSURE_2026.md   — keyboard-free search: ring-based
+    character entry with live corpus pruning, the strike, the carriage as
+    backspace, candidates as children, arrival as migration (2026-07-22,
+    first published in release v3.18.0). DOI 10.5281/zenodo.21501550
+
+These disclosures place the described METHODS in the public record so that no
+party — including MMdM — may patent them. That is deliberate and separate from
+the license on the code: the ideas are unpatentable and free for all; this
+implementation is GPL; the cargo and the brand are ours.

@@ -20,9 +20,18 @@ each phase close; alarm threshold suggestion: gzip > 400 KB.
 
 ## 2. Code audit — findings and triage
 
+> **Resolution status (recorded 2026-07-20).** Phase C opened by clearing
+> these debts: C.1 (`9e8494b`) fixed H1, H3, H4, M1–M4, M6, M7, L4 and
+> most of M5; C.1b (`434c667`) completed H1/M5 (volume-configs split,
+> forbidden-literals scan of main.js) and L2 (gateway round-trip tests).
+> Still open: **L3** (dead-code sweep — cheap, any passing release) and
+> the [D]-tagged **L1** residue (gatewayReturnLabel now comes from volume
+> config per ff2be5c; move it fully into gateway data when dimensions
+> work reopens the gateway schema). Per-finding tags below.
+
 ### High
 
-- **H1 [C]** `volume === 'bible'` branch + ~25 lines of bible logic inside
+- **H1 [FIXED, C.1/C.1b]** `volume === 'bible'` branch + ~25 lines of bible logic inside
   shared `bootVolume` (main.js:947) — doctrine violation; and
   forbidden-literals.test.js exempts main.js wholesale, so the guard is blind
   exactly where the gateway machinery lives. Fix: move startup-verse prefetch
@@ -30,39 +39,39 @@ each phase close; alarm threshold suggestion: gzip > 400 KB.
 - **H2 [FIXED, PR #25]** Calendar gateway was a one-way door: adapter ignored
   `onGatewayReturn`/`gatewayLabel`. Now mirrors the bible pattern (millennium
   ring OUT = gateway return).
-- **H3 [C, before next data batch]** merge-mmdm-manufacturer.mjs scopes
+- **H3 [FIXED, C.1]** merge-mmdm-manufacturer.mjs scopes
   neither market nor country-bounds when locating the manufacturer key, and
   family names colliding with manufacturer names (Lugger's "Komatsu"/"John
   Deere" families) make a wrong-block splice possible; count-only validation
   passes prose-only merges. Fix: brace-match market→country, bound the key
   search, deep-equal the merged node, assert rest-of-tree unchanged.
-- **H4 [C]** Gateway boot: no `r.ok` check on manifest fetch (404 → cryptic
+- **H4 [FIXED, C.1]** Gateway boot: no `r.ok` check on manifest fetch (404 → cryptic
   SyntaxError); `pushState` fires before boot resolves — failed boot strands
   the URL on the broken volume. Fix: named errors, pushState on success,
   visible error state.
 
 ### Medium
 
-- **M1 [C]** Teardown-before-validation in bootVolume → black-screen failure
+- **M1 [FIXED, C.1]** Teardown-before-validation in bootVolume → black-screen failure
   mode on late boot errors.
-- **M2 [C]** sync-to-server.sh: excludes without `--delete-excluded` leave
+- **M2 [FIXED, C.1]** sync-to-server.sh: excludes without `--delete-excluded` leave
   stale data on the remote (the gutenberg-bug mechanism, still armed for
   other volume pairings); exclude lists are hand-maintained and not derived
   from the gateway graph; `LOCAL_PATH=$(pwd)` unanchored.
-- **M3 [C]** No validation that `gateway_children[].volume` names a known
+- **M3 [FIXED, C.1]** No validation that `gateway_children[].volume` names a known
   volume (typo = silently dead node); integrity test's gateway checks are
   shape-blind; `gateway_children`+`cylinders` coexistence unguarded.
-- **M4 [C]** Gateway return context is in-memory only — reload inside a
+- **M4 [FIXED, C.1]** Gateway return context is in-memory only — reload inside a
   gateway loses the way back. Persist in history state.
-- **M5 [C/E]** Duplication: two Roman-numeral implementations; `Capitulum`
+- **M5 [FIXED, C.1/C.1b]** Duplication: two Roman-numeral implementations; `Capitulum`
   formatting in three places; four identical createHandlers blocks in
   volumeConfigs; ~100 lines of bible label/chain logic living in main.js
   (with a `'NAB'` default contradicting the pinned-VUL comment).
-- **M6 [C]** Debug artifacts in shipped paths: `[DIAG]` block (20+ lines per
+- **M6 [FIXED, C.1]** Debug artifacts in shipped paths: `[DIAG]` block (20+ lines per
   boot), `[startup-verse]`/`[arc-layout]` logs, duplicated
   `suppressNativeClickUntil` paste remnant, 65 lines of module-level console
   tuning knobs in child-pyramid-geometry.js (file header claims purity).
-- **M7 [C]** At-least-one pyramid block: honest in intent, but re-implements
+- **M7 [FIXED, C.1]** At-least-one pyramid block: honest in intent, but re-implements
   the hunt's rejection predicates in a second dialect (will silently diverge
   when Phase C retunes constraints) and has zero test coverage. Extract
   shared `isValidNodePosition`; add a zero-intersection test case.
@@ -71,10 +80,10 @@ each phase close; alarm threshold suggestion: gzip > 400 KB.
 
 - **L1 [D]** `gatewayLabelFromItemId` bakes the catalog id convention into
   shared code; label belongs in gateway data (`returnLabel`).
-- **L2 [C]** No test exercises launchGateway/returnThroughGateway round trip.
+- **L2 [FIXED, C.1b]** No test exercises launchGateway/returnThroughGateway round trip.
 - **L3 [C]** Dead code: unused DEFAULT_* constants in geometry, unused
   imports/destructures.
-- **L4 [C]** sync script: legacy `both` option; stray root `data/manifest.json`.
+- **L4 [FIXED, C.1]** sync script: legacy `both` option; stray root `data/manifest.json`.
 
 Phase tags: **[C]** = queue at Phase C entry (most are feel/infra-adjacent);
 **[D]** = with dimensions work; **[E]** = presentation era.

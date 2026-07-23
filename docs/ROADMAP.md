@@ -10,7 +10,10 @@
 - v3.6 Theming + accessibility hardening — done (shipped as 3.6.0)
 - v3.7 Dimension System + Child Pyramid — shipped (portals wired: language/edition metadata, store/bridge hydration, portal UI cycling, telemetry + perf budgets; pyramid geometry refactored to CPUA fan-lines/spiral; child pyramid node rendering with CHILD_PARAM_TABLE, connector lines, sort-number rotation offset; catalog data cleanup; shipped as v3.7.28)
 - v3.8 IN/OUT Migration + patch series — done (shipped as v3.8.15; see patch notes below)
-- v3.9+ Single-Stratum Program — in progress (Phases A–D below)
+- v3.9+ Single-Stratum Program — in progress (Phases A–F below)
+  - v3.9.0 Phase A (single stratum) — done
+  - v3.10.x Phase B.2 gateway capability + interim pyramid guarantee — done
+  - v3.11.0 Phase B close + Phase C sprint C.1–C.5 (catch-up release, 2026-07-20) — done
 
 ## Current Plan: Single-Stratum Program (decided 2026-07-13; six-phase scope ratified 2026-07-14)
 
@@ -34,27 +37,133 @@ last (F).
 - **Phase A — Single stratum** — SHIPPED as v3.9.0 (2026-07-14).
   Dimension UI machinery removed; Bible pinned to the Latin Vulgate
   (`VUL`); all four volumes behave identically.
-- **Phase B — Data completeness + single-site consolidation** (in
-  progress). B.1 Bible: Psalms rebuilt to native Vulgate numbering,
-  Latin filled from the Clementine corpus (99.5%; 152 divergent-
-  recension residuals documented) — done. B.2 (proposed): the Bible
-  becomes reachable as an "easter egg" inside the MMdM catalog via a
-  generic cross-volume **gateway node** capability, so alpha/beta
-  testing needs only one deployed site. B.3 MMdM: populate the 261
-  empty manufacturer/cylinder buckets (domain knowledge + worksheet).
-- **Phase C — Feel**: rotation inertia, momentum constants, animation
-  timing, pyramid↔ring and parent-circle migration reliability, child
-  pyramid geometry/placement; phone-gated per WORKFLOW.md. The
-  calendar's ~5,000-node ring (3000 BC → present, "a couple of thumb
-  swipes") is the primary physics test rig. Heavy server-vs-LAN
-  comparison testing; WORKFLOW.md may gain a staging deploy path.
-  Final feel constants documented with rationale.
-- **Phase D — Dimensions**: the strata design implemented on C's tuned
-  physics — blur + mirrored secondary ring, persist-on-select,
-  language/edition portals for the Bible. `DIMENSION_SYSTEM.md` is
-  rewritten to match the strata ruling before work starts. The
-  secondary ring inherits the rotation choreographer and migration
-  machinery as tuned in C.
+- **Phase B — Data completeness + single-site consolidation** — DONE
+  (closed 2026-07-16 with the first end-of-phase audit,
+  `docs/AUDIT-PHASE-B.md`). B.1 Bible: Psalms rebuilt to native Vulgate
+  numbering, Latin filled from the Clementine corpus (99.5%; 152
+  divergent-recension residuals documented). B.2: the Gutenberg easter
+  egg — generic cross-volume **gateway node** capability (shipped as
+  v3.10.0). B.3 MMdM: population complete — 1,032 models across 99 real
+  manufacturers, full prose, guarded by
+  `test/catalog-integrity.test.js`. B.4: the Gregorio XIII gateway to
+  the calendar volume — second gateway instance, zero shared-code
+  changes.
+- **Phase C — Feel** (in progress; shipped in the 3.11.0 catch-up
+  release through C.5). Phone-gated per WORKFLOW.md; the calendar's
+  6,000-year ring is the primary physics test rig; constants ledgered
+  in `docs/FEEL.md`. As-run sub-phases:
+  - **C.1/C.1b** — Phase B audit debts cleared (12 of 14; L1 deferred to D, L3 to C.7);
+    `src/volume-configs.js` as the one home for volume literals;
+    gateway speed (cache + idle prefetch).
+  - **C.2** — instruments (boot-phase decomposition, feel HUD, field
+    probe `?probe=1`), catalog lite/prose split, cache hygiene, staging
+    deploy target. Perf series: pre-compressed JSON, O(visible)
+    selectNearest, memoized pyramid geometry, rotation blur dropped.
+  - **C.3** — the gesture ladder: tap / scrub (frozen 1:1) /
+    scrub-anchored flick / double-flick; velocity-gain amplifier
+    retired.
+  - **C.4** — arrivals: boot splash "the instrument arrives";
+    migration rebuild (declared grammar, transaction barrier,
+    fixed-vessel fills); gateway cinema wipe.
+  - **C.5** — the star field (golden-angle scatter, prominence tiers,
+    Favorites halo, seat cap 28); canonical usable areas
+    (`src/geometry/usable-areas.js`); the wedge calendar.
+  - **C.6 — "five thousand nodes"** (Howell's post-it): DONE, declared
+    2026-07-20. The day ring: grid-tap migration (±5-year chain, thumb
+    doctrine), months-ring front door on the current month, historical
+    Julian/Gregorian reckoning (Gregory's ten missing days fall out of
+    the arithmetic), the present-moment mark; plus the e-reader (NEXT
+    gesture, continuous verse chain) and the sweep at every level. The
+    6,000-year chain, the 86k-link months timeline, and the 31k-verse
+    chain all scrub at speed on the field phones — the O(visible)
+    render path made chain length free. (As-run, this work shipped
+    across the C.5/day-ring/e-reader series, not as one labeled drop.)
+  - **C.7 — phase close** (in progress, opened 2026-07-20): end-of-phase
+    audit ritual (adversarial code + prose reviews, performance
+    baselines), FEEL.md final pass, native-vs-wrapper evidence memo for
+    Phase F, [C] punchlist drained or explicitly carried.
+- **Between D and E — catalog family flattening** (ruled 2026-07-19;
+  DEFERRED out of C by Howell 2026-07-20 to reach dimensions sooner).
+  Families leave the navigation hierarchy; the parent button becomes the
+  live family suffix ("FORD WINDSOR", replacing, never accumulating;
+  orphans bare "FORD"). Safe to defer: the shared engine never knew
+  families existed (adapter-level change), and D's strata mirror
+  whatever chain the adapter hands them. MUST land before E, which
+  styles every surface exactly once and shouldn't style doomed family
+  rings. When built, it needs its own brief on-device feel pass and one
+  new check: the suffix's behavior with a secondary stratum present.
+- **Phase D — Dimensions**: the strata design (mirrored/standard rings,
+  z-travel = dimension change) on C's tuned physics. D inherits the
+  choreographer, migration machinery, and gesture ladder from C, so the risk
+  was never motion mechanics; it was (a) the dimension MODEL on paper, and
+  (b) the strata blur — the returning C.2 perf villain and the
+  native-vs-wrapper decider. **Both softened in the build (2026-07-21):** the
+  model landed and was then revised past its own draft (a third stratum
+  appeared), and the recede+blur shipped as a cheap STATIC snap the
+  iPhone/Moto floor takes without complaint — the C.2 villain only bites
+  PER-FRAME blur, which a snap never asks for. The open risk moved
+  downstream, to the animated tween (D.4). Outline blessed 2026-07-20,
+  revised 2026-07-21 as the build overtook the plan.
+  - **D.1 — Doctrine + schema (paper first)** — ✅ shipped. `DIMENSION_SYSTEM.md`
+    rewritten to the strata canon; the dormant `src/core/` store/bridge
+    revived, not rebuilt. NOTE: the canon was revised again 2026-07-21 — the
+    "no third stratum is needed" ruling was **reversed** (see D.3).
+  - **D.2 — The dimension model, headless** — ✅ shipped (`feat(D.2)`).
+    Dimension state in the live store (select, persist-on-select, host-level
+    survival across gateway reboots); the Bible's translation swaps in-app
+    via state, no page redirect. Its close surfaced the LIVE LABEL SWAP
+    problem (carried to D.6).
+  - **D.3 — The strata, built** — ✅ shipped (**v3.13.0**). Far past the
+    original "static, sharp, unblurred scaffolding" scope; it absorbed most
+    of D.4's visual and all of D.5's static blur:
+    - Secondary (mirrored) AND **tertiary** (standard) rings — the third
+      stratum the D.1 draft called unneeded, now the translation plane, shown
+      for EVERY language (even single-translation Latin, whose one-node
+      tertiary names the Clementine Vulgate — Howell reversed the earlier
+      skip 2026-07-21: the reader wants to know which edition they read).
+    - The **honest sprocket chain**: bands are arc + straight tangent runs
+      (vertical up / ~SE, mirrored), not a circle — a receded ring must read
+      as a straight chain, never a hose-reel coil.
+    - The **receding stack** as a SNAP: primary → secondary → tertiary,
+      depths 1.0/0.4/0.2, a straight camera pull-back (2D scale about the
+      viewport centre). Static blur 0/5/10px — affordable *because* static.
+    - **Tangent fill** (the receded chain populates its straight runs), the
+      globe gated to the detail sector, native-tongue language labels.
+    - Left unbuilt on purpose: the MOTION (D.4). Selection is tap-for-now;
+      the strata transition is a snap.
+  - **D.4 — The motion made real**: the two stopgaps D.3 shipped, retired.
+    (a) **Orbital rotation of the secondary/tertiary rings** —
+    magnifier-as-selection, whatever's in the lens is obeyed; retires
+    tap-for-now and restores the two-motion premise. The strata become
+    rotatable focus rings inheriting C's choreographer and gesture ladder
+    (their chains are short, so bounds/snap are simpler than the primary's).
+    (b) **The z-travel TWEEN** — the multiplane pull-back animated (glide,
+    not snap), the incoming plane sliding in from behind the head. **Deferred
+    by Howell 2026-07-21** ("we can live with the skip a while longer"); the
+    snap is an honest resting state meanwhile.
+  - **D.5 — Blur under motion** (the residue of the old "hardest subphase"):
+    the STATIC blur already ships and performs (D.3), so the
+    native-vs-wrapper decider softened. What remains is only blur DURING the
+    D.4 tween — the C.2 per-frame villain returns *only if* the glide
+    animates blur. Likely resolved by the C.2 lesson: drop blur during
+    motion, snap it back on settle. Effectively folds into D.4's tween; kept
+    as a slot for the wrapper-evidence entry if the animated case forces the
+    question.
+  - **D.6 — The Bible, dimensioned, end to end**: much shipped early —
+    Latin/English/Greek and more on the secondary, translations on the
+    tertiary, the live TEXT swap (D.2). What remains: (a) the **LIVE LABEL
+    SWAP** — book/testament/ring/parent-button labels re-derive their
+    language on a translation change without a reboot (D.2's carried-over
+    headline; the reading text already swaps because its render takes the
+    translation live, but labels bake from a boot-fixed `namesMap`); (b) the
+    **translation + versification DATA campaign** — DRA is declared but
+    empty, BYZ is NT-only, versification maps are unbuilt; "weeks of work,"
+    deliberately deferred by Howell 2026-07-21 (see the debt note). (c) the
+    Greek OT/NT one-per-book collapse decision. Deployment scoping
+    (single-stratum public egg vs full dimensions gated to the apps and
+    bibliacatholica.org) still stands.
+  - **D.7 — Phase close**: audit ritual, FEEL.md dimension constants, the
+    wrapper-evidence memo's decisive final entry, punchlist drain.
 - **Phase E — Presentation**: typography (sizes, families), label
   alignment, spacing, per-volume theming polish, detail-sector layout
   refinement — across every surface, primary and strata, exactly once.

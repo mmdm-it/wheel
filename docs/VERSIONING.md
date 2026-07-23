@@ -17,9 +17,12 @@ version names used *inside* those directories. That confusion ends here.
 2. **"Shipped" means a git tag.**
    A version exists when the full gate sequence in `WORKFLOW.md` has passed
    and `bump-version.sh` has run. The version bump marks a *verified* state,
-   not an attempted one. Tags are `v3.*` on the current line; a future major
-   line is tagged `v4.*` in this same repository, branched from the final
-   `v3.*` tag.
+   not an attempted one. **The tag is part of the ritual, not a suggestion:
+   after the release's commit lands, `git tag -a vX.Y.Z <commit>`** (the
+   Phase C audit found four releases untagged — the script only echoed the
+   command). Tags are `v3.*` on the current line; the next major line is
+   tagged `v5.*` (see "What v4 means" below — the `v4.*` namespace is
+   occupied by a historical artifact), branched from the final `v3.*` tag.
 
 3. **"Working on" has no version name.**
    Work in progress is simply `main` ahead of the last tag. A change earns

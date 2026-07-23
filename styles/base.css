@@ -42,6 +42,13 @@ html, body {
   overflow: hidden;
   overscroll-behavior: none;
   touch-action: none;
+  /* Pin text auto-inflation OFF. Chrome-on-iOS "font boosts" a wide text block
+     — inflating the RENDERED verse beyond its set px size — while our off-screen
+     measure span (absolute, nowrap) escapes the boost, so rendered ran wider
+     than measured and crowded the right edge. Only Chrome iOS boosts; Safari and
+     DuckDuckGo don't, which is why it was Chrome-iOS-only (Howell 2026-07-22). */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   /* Android Chromium (Chrome, DuckDuckGo) flashes a translucent highlight box
      over any element with a click handler on touch — on an SVG group that
      means its whole bounding rect (seen over the parent button). Not a link,
@@ -150,10 +157,144 @@ svg :focus-visible {
   pointer-events: none;
 }
 
-.focus-ring-band {
-  fill: var(--color-band);
+/* The version footnote (Howell 2026-07-20): a factory stamp at the end of
+   the manufacturers chain. Text alone — no circle at all (Howell's ruling);
+   the numerals hold the chain seat themselves, in the line-work black of
+   the boot splash, smaller than a working node's label. The circle element
+   still anchors the geometry but never paints; taps pass straight through. */
+.focus-ring-node.is-placebo {
+  display: none;
+  pointer-events: none;
+}
+
+.focus-ring-label.is-placebo {
+  fill: #000;
+  font-size: clamp(calc(10px * var(--iframe-scale, 1)), 1.15vmin, calc(19px * var(--iframe-scale, 1)));
+}
+
+/* The dimension button (D.3) — the wireframe globe, parked in a corner.
+   A neutral icon (it does not display the current value). Toggles the
+   secondary strata; tap-sized for the thumb (Howell 2026-07-21). */
+#dimension-button,
+#search-button {
+  position: fixed;
+  right: calc(3% * var(--iframe-scale, 1));
+  bottom: calc(13% * var(--iframe-scale, 1)); /* clear of the focus-ring band,
+     lifted off it a touch further (Howell 2026-07-22) — still well inside
+     the DSUA/CPUA boundaries */
+  width: clamp(52px, 13vmin, 96px);
+  height: clamp(52px, 13vmin, 96px);
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 260; /* above the strata layer so the globe stays tappable */
+  opacity: 0.85;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+#dimension-button[hidden],
+#search-button[hidden] { display: none; }
+#dimension-button svg,
+#search-button svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  /* The globe's line-work rides currentColor — dark grey, not ink: present
+     when sought, quiet when not (Howell 2026-07-22, tuned by eye). */
+  color: #363636;
+}
+#dimension-button:hover,
+#search-button:hover { opacity: 1; }
+#dimension-button[aria-pressed="true"] { opacity: 1; transform: scale(1.08); }
+#dimension-button:focus-visible { outline: 2px solid var(--color-nodes, #f2b41c); outline-offset: 3px; border-radius: 50%; }
+
+/* The strata layer sits above the primary and its detail panel, below the
+   dimension button. It is click-through except on its nodes, so taps on
+   empty space still fall to the (inert) primary. */
+#strata-layer {
+  position: fixed;
+  inset: 0;
+  /* Above the primary's detail panel (200) so a front stratum covers the
+     receded primary text; below the copyright strip (300). */
+  z-index: 250;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* The secondary strata (D.3) — identical colors, band, and font to the
+   primary strata (Howell 2026-07-21). Color placeholder retired. */
+.secondary-strata-band {
+  fill: none;
+  stroke: var(--color-band);
+  stroke-linecap: round;
   opacity: 1;
 }
+.secondary-strata-node {
+  fill: var(--color-nodes);
+  stroke: none;
+  cursor: pointer;
+  pointer-events: auto; /* the layer is click-through; its nodes are not */
+}
+/* The magnified language wears a 1px black stroke (Howell 2026-07-21). */
+.secondary-strata-node.is-magnified {
+  stroke: #000;
+  stroke-width: 1;
+}
+/* While the ring rotates the lodestar is a HOLLOW lens: no fill, so the nodes
+   stream through it, exactly as the primary magnifier empties (Howell). */
+.secondary-strata-node.is-magnified.lens-empty {
+  fill: none;
+}
+.secondary-strata-label {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  /* Casing is owned by displayCase() in JS — it uppercases Latin but leaves
+     Greek/Cyrillic/Hebrew in their proper form. A CSS text-transform:uppercase
+     here re-uppercased the native scripts (Русский → РУССКИЙ) — removed. */
+  pointer-events: none;
+}
+/* The magnified language's label is larger, as in the primary strata. Its
+   anchoring (offset + start) is set in the view so the name spans the node
+   weighted inward, off the left edge — like the catalog's unselected nodes. */
+.secondary-strata-label.is-magnified {
+  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
+  font-weight: 700;
+}
+
+.focus-ring-band {
+  /* A stroked centreline now (sprocket chain: arc + straight tangents), not a
+     filled annulus. stroke-width is set per-render to the 0.02r band width. */
+  fill: none;
+  stroke: var(--color-band);
+  opacity: 1;
+}
+
+/* ── The boot overture's ink (the splash's rotation beat) ─────────────────
+   The LIVE wheel performs in wireframe: hollow nodes with black outlines and
+   the grey band held back, while the splash's thin arc line stands in for the
+   band. Fan lines stay at full strength throughout — their stubs inside the
+   hollow circles are the rough-draft look (Howell 2026-07-22); the arriving
+   fills obliterate them. Per frame the splash drives --boot-paint 0→1 (the
+   colour arriving) and --boot-ink 1→0 (the outlines retiring); the class
+   comes off at the settle and these rules vanish with it. */
+#app.boot-colorize .focus-ring-band { opacity: var(--boot-paint, 1); }
+#app.boot-colorize .focus-ring-node {
+  fill-opacity: var(--boot-paint, 1);
+  stroke: #000;
+  stroke-opacity: var(--boot-ink, 0);
+  /* 1px, matching the drawn wireframe beads (the splash inks them at the
+     node's COMPUTED stroke-width — the 1px default — so anything heavier
+     visibly fattens the outlines at the handoff; Moto G caught it). */
+  stroke-width: 1px;
+}
+#app.boot-colorize .child-pyramid-node { fill-opacity: var(--boot-paint, 1); }
+#app.boot-colorize .focus-ring-magnifier-circle { fill-opacity: var(--boot-paint, 1); }
 
 /* diagnostic band removed — was debug scaffolding */
 
@@ -328,8 +469,9 @@ svg :focus-visible {
   display: block;
   position: absolute;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* NEVER clip or ellipsise a verse line — the wrap is sized so the text fits,
+     and a hair of overhang beats truncating scripture (Howell 2026-07-22). */
+  overflow: visible;
 }
 
 /*
@@ -379,6 +521,37 @@ svg :focus-visible {
 .detail-card-description {
   color: rgba(255, 255, 255, 0.88);
   font-style: italic;
+}
+
+/* ── The ephemeris day card (the wall calendar's day cell) ──────────── */
+/* The weekday wears the parent button's font (Howell 2026-07-20) — same
+   clamp as .focus-ring-magnifier-label. */
+.detail-ephemeris-title {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
+}
+
+/* Feast days wear the print's red numeral color on the weekday. */
+.detail-ephemeris-title--festivo {
+  color: #d10000;
+}
+
+/* The numbers: twice the old tier-6 (Howell 2026-07-20). */
+.detail-ephemeris-row {
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.5px;
+  font-variant-numeric: tabular-nums;
+  font-size: calc(6.0 / 100 * var(--detail-SSd, 650px));
+  line-height: 1.4;
+}
+
+/* The dossier's inline media (the Twin 6 HP film, and photos to come) */
+.detail-card-video {
+  display: block;
+  background: #000;
+  border-radius: 2px;
+  max-width: 100%;
 }
 
 /* ── Fallback card (no line table) ──────────────────────────────────── */

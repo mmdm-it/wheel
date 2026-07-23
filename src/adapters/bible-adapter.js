@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
+import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
 import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
@@ -332,23 +332,23 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
     const externalFile = selected.meta?.externalFile;
     const verseKey = selected.meta?.verseKey;
     if (externalFile && verseKey) {
-      // Use the active translation (passed in), then fall back to the URL query
-      // string, then to the remaining pool.  Never default to Latin (VUL) over
-      // English (NAB) — language only changes when the user explicitly selects one.
-      const searchParams = typeof window !== 'undefined'
-        ? new URLSearchParams(window.location.search)
-        : null;
-      const urlTranslation = searchParams?.get('translation') || null;
-      const activeTranslation = urlTranslation || translation || null;
+      // The translation comes from the dimension state, passed in — the ONE
+      // source of truth (D.2). The old URL-param fallback is gone: Phase A
+      // retired ?translation= reading, but a vestige survived here and let a
+      // stale bookmark override the dimension store (found when the first
+      // live swap demo stayed Latin, 2026-07-21).
+      const activeTranslation = translation || null;
       const others = ['NAB', 'VUL', 'BYZ', 'SYN'].filter(t => t !== activeTranslation);
       const preferred = activeTranslation ? [activeTranslation, ...others] : others;
       const text = getVerseTextFromCache(externalFile, verseKey, preferred);
       readAhead(selected, manifest);
-      if (text) return { type: 'text', text };
+      // uniform: every verse shares the longest verse's type size (Howell
+      // 2026-07-21) — a constant reading page, not size-by-length.
+      if (text) return { type: 'text', text, uniform: true };
       // The chapter is on its way; the repaint comes with it.
-      return { type: 'text', text: selected.text || '' };
+      return { type: 'text', text: selected.text || '', uniform: true };
     }
-    return { type: 'text', text: selected.text || selected.name || id || '' };
+    return { type: 'text', text: selected.text || selected.name || id || '', uniform: true };
   }
 
   return { type: 'text', text: selected.name || id || '' };
@@ -434,10 +434,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         sectionId: selected?.meta?.sectionId || bibleVerseContext?.sectionId
       };
       if (!ctx?.bookId) return false;
-      // Navigate back to the chapter list for this book.
-      const chapterItems = getBibleChapters(manifest, { id: ctx.bookId }, namesMap, 'book');
+      // Back to the chapters ring — the VOLUME-SPANNING cousin chain, the same
+      // one descent builds, landing on the chapter just left. Using
+      // getBibleChapters here (one book, no gaps) was the bug: ascending out
+      // of a leaf stranded the ring on the parent book's chapters alone, so
+      // rotating never crossed into the next book (Howell 2026-07-21).
+      const { items: chapterItems, selectedIndex: chapterIdx } = chapterChain(ctx.chapterId);
       if (!chapterItems.length) return false;
-      const chapterIdx = chapterItems.findIndex(c => c.id === ctx.chapterId);
       bibleMode = 'chapter';
       bibleVerseContext = null;
       bibleChapterContext = { bookId: ctx.bookId, testamentId: ctx.testamentId, sectionId: ctx.sectionId };
@@ -629,6 +632,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
       getBibleVerseItems,
+      getBibleVerseCacheStatus,
       getBibleVerseChain: verseId => verseChain(verseId),
       getBibleChapterChain: chapterId => chapterChain(chapterId),
       prefetchBibleVerses,
