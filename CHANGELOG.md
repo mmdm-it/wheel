@@ -1,5 +1,23 @@
 # Changelog
 
+## 3.18.1 — search scope follows the focus ring
+- **Scope inheritance**: the search corpus is every leaf DESCENDED FROM the
+  items on the focus ring the search opened from — not the parent button.
+  Standing in a manufacturer's cylinders, search is that maker only; at the
+  top the ring holds all manufacturers, so the union is the whole volume and
+  the country in the parent button scopes nothing — the "big exception" that
+  needed no carving, because the ring never holds a country
+- **No scope UI**: the ring you just left is the scope display; the pyramid
+  candidates confirm it. Nothing new on screen
+- **Foreclosure**: when scope is narrowed, the opening ring prunes to the
+  scope's first characters — a path no in-scope model begins (no maker-X
+  model starting with G) is simply absent from the ring, not merely refused
+  on strike. At whole-volume scope the ring stays full (the dead X and 0
+  kept — the virgin alphabet reads "type anything")
+- Implemented as pure id-prefix containment (every model id encodes its
+  shelf path; every ring item id is a prefix of it) — no graph walk, no
+  cross-dialect ambiguity
+
 ## 3.18.0 — the search instrument — ring-based character entry
 - **Search without a keyboard** — the verboten feature, admitted through the
   instrument's own door. The premise never banned finding; it banned the

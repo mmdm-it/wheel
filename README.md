@@ -4,7 +4,7 @@
 Minimal scaffold, data-agnostic: interaction → navigation → view → geometry → data, with the Magnifier as lodestar. Designed to handle deep, wide, varied hierarchies (e.g., calendar, catalog, Gutenberg, places) without dataset-specific assumptions.
 
 ## Current Version
-- v3.18.0 (2026-07-22)
+- v3.18.1 (2026-07-22)
 
 ## Notable Changes in 3.11.0 (catch-up release — see CHANGELOG for the full sprint)
 - **Phase B closed**: MMdM population complete — 1,032 models across 99 manufacturers (plus two gateway patrons), full prose; Gregorio XIII gateway to the calendar volume; end-of-phase audit ritual (docs/AUDIT-PHASE-B.md).
@@ -22,7 +22,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.8.15 Migration Animation (Child Pyramid ↔ Focus Ring) — shipped: `animateIn`/`animateOut` with LIFO stack, 600ms CSS transform, `isAnimating` guard, `prefers-reduced-motion` support
 - v3.8.19 Parent Button Labelling — shipped: adapter-driven `getParentLabel`, progressive depth labels (country → manufacturer → compound), uppercase suffix
 
-- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.18.0`).
+- `main` carries the active v3.x line; releases are tagged `v3.*` (current `v3.18.1`).
 - Historical majors are maintained outside the active v3 repository (archived folders/repos for v0/v1/v2).
 - The next major line branches from the final v3 tag and is tagged `v5.*` (the `v4.*` tag namespace is occupied by a 2025 artifact — see docs/VERSIONING.md; "v4" remains the architecture era's name, not a future tag line). No versioned folders.
 - GitHub flow is feature branch → pull request → merge into protected `main` after required checks pass.

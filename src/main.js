@@ -137,9 +137,38 @@ const SEARCH_COMPLETION_CAP = 14; // pyramid seats for candidates
 const searchNorm = s => String(s).toUpperCase().replace(/[^A-Z0-9]/g, '');
 let searchRestore = null;       // the browse chain to restore on exit
 let searchPrefix = '';          // the struck characters so far (normalized)
-let searchCorpusEntries = [];   // [{ item, label, norm }] — the volume's searchable leaves
+let searchCorpusEntries = [];   // [{ item, label, norm }] — ALL the volume's searchable leaves
+let searchScopedCorpus = [];    // the active subset: leaves under the ring the search opened from
+let searchOpeningAllowed = null;// first-characters the opening ring is pruned to when scoped
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
+
+// THE SCOPE (Howell 2026-07-22): the corpus is every leaf DESCENDED FROM the
+// items on the focus ring the search opened from — not the parent button.
+// Standing in Mercedes' cylinders, search is Mercedes only; at the top the
+// ring holds all manufacturers, so the union is the whole volume and the
+// country in the parent button never scopes anything (the exception that
+// isn't). A ring item's id encodes its shelf-path prefix, and every model's
+// id is that same prefix — so scope is pure id-prefix containment, no graph
+// walk, no cross-dialect ambiguity.
+function searchScopeSpec(item) {
+  const id = String(item?.id || '');
+  if (id.startsWith('model:')) return { exact: id };            // ring of models: those very siblings
+  if (id.startsWith('subfam:')) return { prefix: `model:${id.slice(7)}:` };
+  if (id.startsWith('fam:')) return { prefix: `model:${id.slice(4)}:` };
+  if (id.startsWith('cyl:')) return { prefix: `model:${id.slice(4)}:` };
+  if (id.startsWith('cylinder:')) return { prefix: `model:${id.slice(9)}:` }; // normalize dialect
+  if (id.startsWith('manufacturer:')) return { prefix: `model:${id.slice(13)}:` };
+  if (id.includes('__')) return { prefix: `model:${id.split('__').slice(2).join('__')}:` }; // top-level maker
+  return null;
+}
+function scopeCorpusForRing(ringItems) {
+  const specs = (ringItems || []).filter(Boolean).map(searchScopeSpec).filter(Boolean);
+  if (!specs.length) return searchCorpusEntries.slice(); // unrecognized ring: no scope, whole corpus
+  const exacts = new Set(specs.filter(s => s.exact).map(s => s.exact));
+  const prefixes = specs.filter(s => s.prefix).map(s => s.prefix);
+  return searchCorpusEntries.filter(e => exacts.has(e.item.id) || prefixes.some(p => e.item.id.startsWith(p)));
+}
 
 function searchCharItems(allowed = null) {
   // Letters, a two-link breath, then digits — gap links (nulls) are the
@@ -156,7 +185,7 @@ function searchCharItems(allowed = null) {
 // Every character that could follow the prefix in some completion.
 function searchNextChars(prefix) {
   const next = new Set();
-  for (const e of searchCorpusEntries) {
+  for (const e of searchScopedCorpus) {
     if (e.norm.length > prefix.length && e.norm.startsWith(prefix)) next.add(e.norm[prefix.length]);
   }
   return next;
@@ -169,7 +198,7 @@ function searchCompletions(selected) {
   if (!selected || selected.level !== 'character') return [];
   const p = searchPrefix + selected.name;
   const out = [];
-  for (const e of searchCorpusEntries) {
+  for (const e of searchScopedCorpus) {
     if (e.norm.startsWith(p)) {
       // The candidate wears its REAL id: the arrival migration pairs pyramid
       // clones with ring targets by id, and a namespaced id left the tapped
@@ -230,10 +259,10 @@ function searchBackspaceTo(i) {
   if (!letter) return;
   searchPrefix = searchPrefix.slice(0, i);
   updateSearchCarriage();
-  // An empty string restores the virgin full ring (as the mode opened);
-  // otherwise prune for the shortened prefix. The tapped letter is by
-  // construction among the survivors — seat it back in the lens.
-  const survivors = searchPrefix ? searchNextChars(searchPrefix) : null;
+  // An empty string restores the opening ring as the mode opened it (full
+  // when unscoped, scope-pruned when narrowed); otherwise prune for the
+  // shortened prefix. The tapped letter is by construction a survivor.
+  const survivors = searchPrefix ? searchNextChars(searchPrefix) : searchOpeningAllowed;
   const items = searchCharItems(survivors);
   const idx = Math.max(0, items.findIndex(it => it && it.name === letter));
   app.setPrimaryItems(items, idx, true);
@@ -249,7 +278,7 @@ function strikeSettledChar() {
   if (!cur || cur.level !== 'character') return;
   const nextPrefix = searchPrefix + cur.name;
   const survivors = searchNextChars(nextPrefix);
-  const hasAnyMatch = searchCorpusEntries.some(e => e.norm.startsWith(nextPrefix));
+  const hasAnyMatch = searchScopedCorpus.some(e => e.norm.startsWith(nextPrefix));
   if (!hasAnyMatch) return; // a character no name continues with: no strike
   searchPrefix = nextPrefix;
   updateSearchCarriage();
@@ -336,8 +365,17 @@ function toggleSearchRing() {
     selectedIndex: app.nav.getCurrentIndex()
   };
   searchPrefix = '';
+  // Scope to the ring the search opened from.
+  searchScopedCorpus = scopeCorpusForRing(searchRestore.items);
+  // The opening ring stays FULL when scope is the whole volume (keep the
+  // dead X and 0 — the virgin alphabet reads "type anything", Howell's
+  // baby-steps ruling); when NARROWED it prunes to the scope's first
+  // characters, so a foreclosed path (no Mercedes model starts with G) is
+  // simply absent from the ring (Howell 2026-07-22).
+  const narrowed = searchScopedCorpus.length < searchCorpusEntries.length;
+  searchOpeningAllowed = narrowed ? new Set(searchScopedCorpus.map(e => e.norm[0])) : null;
   updateSearchCarriage(); // seats the (empty) carriage at the lens
-  app.setPrimaryItems(searchCharItems(), 0, true);
+  app.setPrimaryItems(searchCharItems(searchOpeningAllowed), 0, true);
   // The parent button has no meaning over the character ring — no vessel,
   // nothing to ascend to. It leaves entirely (Howell 2026-07-22).
   app.setParentButtons({ showOuter: false });
@@ -1446,6 +1484,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // A volume boot always lands in browse, never mid-search.
   searchRestore = null;
   searchPrefix = '';
+  searchScopedCorpus = [];
+  searchOpeningAllowed = null;
   if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
   if (!playSplash) updateSearchButton();
