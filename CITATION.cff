@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you reference this work, please cite it as below."
+title: "Wheel — a rotational sprocket-chain navigator for deep hierarchies"
+abstract: >-
+  A mobile-first instrument for navigating large hierarchical and sequential
+  datasets by rotating a bounded chain of nodes around an eccentric,
+  off-screen hub. The engine is GPL-3.0; the data and content it carries are
+  reserved — see NOTICE for the boundary.
+type: software
+authors:
+  - family-names: Gibbens
+    given-names: Howell
+    orcid: "https://orcid.org/0009-0000-9904-9864"
+    affiliation: "Meccanismi Marittimi delle Marche (MMdM), Fano (PU), Italy"
+license: GPL-3.0-only
+repository-code: "https://github.com/mmdm-it/wheel"
+url: "https://mmdm.it/"
+keywords:
+  - human-computer interaction
+  - hierarchical navigation
+  - radial navigation
+  - rotational user interface
+  - keyboard-free search
+references:
+  - type: article
+    title: "Defensive Publication v2: The Wheel Instrument"
+    authors:
+      - family-names: Gibbens
+        given-names: Howell
+    doi: 10.5281/zenodo.21434298
+    year: 2026
+  - type: article
+    title: "Defensive Publication: Ring-Based Character Entry with Live Corpus Pruning"
+    authors:
+      - family-names: Gibbens
+        given-names: Howell
+    doi: 10.5281/zenodo.21501550
+    year: 2026
