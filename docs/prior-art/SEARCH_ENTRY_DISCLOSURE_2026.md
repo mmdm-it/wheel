@@ -3,9 +3,13 @@
 **Date of first publication:** 2026-07-22
 **Author:** Howell Gibbens (ORCID 0009-0000-9904-9864)
 **Context:** wheel v3 (this repository), v3.18.0 — the search instrument
+**DOI:** [10.5281/zenodo.21501550](https://doi.org/10.5281/zenodo.21501550)
+(Zenodo, CC BY 4.0). Companion publication covering the navigator itself:
+[10.5281/zenodo.21434298](https://doi.org/10.5281/zenodo.21434298)
 **License note:** engine code GPL-3.0; this document is a prior-art disclosure
-placing the described interaction method in the public domain as of the date
-above, so that it remains free for all to use.
+publishing the described interaction method to establish it as prior art as of
+the date above — defeating novelty, so that the method remains free for all to
+use and cannot be patented by any party, MMdM included.
 
 ## The problem
 
