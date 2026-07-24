@@ -124,8 +124,11 @@ declare -A VOLUME_FILE=(
 sync_volume() {
   local volume=$1
   local manifest="$LOCAL_PATH/${VOLUME_FILE[$volume]}"
+  # Parse the version out of the JSON properly. A grep|sed regex breaks on the
+  # minified single-line manifests (calendar/places), where a greedy match
+  # grabs a later field's value — it reported "Saturday" for the calendar.
   local data_version="(unknown)"
-  [[ -f "$manifest" ]] && data_version=$(grep '"volume_data_version"' "$manifest" | head -n1 | sed 's/.*: *"\([^"]*\)".*/\1/')
+  [[ -f "$manifest" ]] && data_version=$(python3 -c "import json;d=json.load(open('$manifest'));print(d[list(d)[0]].get('display_config',{}).get('volume_data_version','?'))" 2>/dev/null || echo '?')
 
   # Per-volume exclusions.
   #   calendar/sources — 31MB of scanned wall-calendar source material, never fetched.
