@@ -2,7 +2,7 @@
     "MMdM": {
         "display_config": {
             "volume_schema_version": "1.0.0",
-            "volume_data_version": "2026.07.14",
+            "volume_data_version": "2026.07.24",
             "structure_type": "monolithic",
             "volume_type": "wheel_hierarchical",
             "volume_name": "MMdM Catalog",
@@ -9654,6 +9654,7 @@
                                 }
                             },
                             "Caterpillar": {
+                                "prominence": 1,
                                 "year_founded": 1925,
                                 "year_dissolved": null,
                                 "sort_number": 13,
@@ -10864,6 +10865,7 @@
                                 }
                             },
                             "Cummins": {
+                                "prominence": 1,
                                 "year_founded": 1919,
                                 "year_dissolved": null,
                                 "sort_number": 16,
@@ -11285,6 +11287,7 @@
                                 }
                             },
                             "Detroit Diesel": {
+                                "prominence": 1,
                                 "year_founded": 1938,
                                 "year_dissolved": null,
                                 "sort_number": 19,
@@ -13389,6 +13392,7 @@
                                 }
                             },
                             "John Deere": {
+                                "prominence": 1,
                                 "year_founded": 1837,
                                 "year_dissolved": null,
                                 "sort_number": 42,
