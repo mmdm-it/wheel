@@ -1,6 +1,6 @@
 {
   "_schema_version": "1.0",
-  "_description": "The secondary-stratum language registry — a thumbnail history of the expansion of the church, ordered by the approximate date of each tongue's first major Bible translation. Nine languages carry real text (comingSoon:false) and map to editions in translations.json; the rest are POPULATION HOOKS (comingSoon:true) — display-only placeholders that render in the ring and show their native 'coming soon' on the tertiary. To promote a placeholder: add its editions to translations.json and flip comingSoon to false. Years are approximate ('first major/complete translation'), good enough to order the chain, not scholarship.",
+  "_description": "The secondary-stratum language registry — a thumbnail history of the expansion of the church, ordered by the approximate date of each tongue's first major Bible translation. Eight languages carry real text (comingSoon:false) and map to editions in translations.json; the rest are POPULATION HOOKS (comingSoon:true) — display-only placeholders that render in the ring and show their native 'coming soon' on the tertiary. To promote a placeholder: add its editions to translations.json and flip comingSoon to false. Years are approximate ('first major/complete translation'), good enough to order the chain, not scholarship.",
   "languages": [
     { "id": "hebrew",     "autonym": "עברית",            "year": -1000, "comingSoon": false },
     { "id": "greek",      "autonym": "Ελληνικά",         "year": -250,  "comingSoon": false },
@@ -24,7 +24,7 @@
     { "id": "slovene",    "autonym": "Slovenščina",      "year": 1584,  "comingSoon": true, "comingSoonText": "Kmalu" },
     { "id": "icelandic",  "autonym": "Íslenska",         "year": 1584,  "comingSoon": true, "comingSoonText": "Væntanlegt" },
     { "id": "welsh",      "autonym": "Cymraeg",          "year": 1588,  "comingSoon": true, "comingSoonText": "Yn dod yn fuan" },
-    { "id": "portuguese", "autonym": "Português",        "year": 1681,  "comingSoon": false },
+    { "id": "portuguese", "autonym": "Português",        "year": 1681,  "comingSoon": true, "comingSoonText": "Em breve" },
     { "id": "irish",      "autonym": "Gaeilge",          "year": 1685,  "comingSoon": true, "comingSoonText": "Ag teacht go luath" },
     { "id": "romanian",   "autonym": "Română",           "year": 1688,  "comingSoon": true, "comingSoonText": "În curând" },
     { "id": "latvian",    "autonym": "Latviešu",         "year": 1694,  "comingSoon": true, "comingSoonText": "Drīzumā" },
