@@ -1,7 +1,6 @@
 {
     "MMdM": {
         "display_config": {
-            "wheel_volume_version": "1.0",
             "volume_schema_version": "1.0.0",
             "volume_data_version": "2026.07.14",
             "structure_type": "monolithic",
@@ -15,7 +14,6 @@
                 "arrangement": "cousins-flat",
                 "splash_overture_item": "Isotta Fraschini"
             },
-            "search_all_label": "TUTTI",
             "focus_ring_arrangements": {
                 "manufacturer": "cousins-flat",
                 "model": "siblings-only"

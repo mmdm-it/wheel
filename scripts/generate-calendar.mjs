@@ -45,7 +45,6 @@ for (let y = START_YEAR; y <= END_YEAR; y += 1) {
 const manifest = {
   Calendar: {
     display_config: {
-      wheel_volume_version: '0.2-dev',
       volume_schema_version: '0.2-dev',
       volume_data_version: '0.2-dev',
       structure_type: 'calendar',
