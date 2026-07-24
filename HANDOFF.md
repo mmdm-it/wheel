@@ -143,11 +143,39 @@ blue — invisible).
 - **`splash_overture_item`** (catalog `focus_ring_startup`): the boot
   reveal's overture seat; sibling of `initial_magnified_item`. Shipped
   pre-ledger (v3.16.0), recorded here for completeness.
-- **Commit separation (Howell's ruling pending execution):** the working
-  tree holds ~1K of Wilbur's corpus-repair files plus Orville's engine work,
-  all uncommitted. Plan: Orville commits engine paths as the next release;
-  Wilbur commits `data/**` from his session with his own version bump and
-  changelog. Neither commits without Howell's OK.
+- **Commit separation — DONE on the data side (Wilbur, 2026-07-24).** Wilbur's
+  5 data commits (corpus repairs, field retirement, prominence tiers, tooling,
+  sync fix) are pushed to the **`wilbur-data`** branch on origin — NOT merged to
+  `main` (branch protection requires the CI "test" check via PR). They ride atop
+  Orville's still-unpushed `ef9da6f` v3.19.0 release. Local working tree stays on
+  `main`, Orville's `src/` untouched. **Open item for Orville/Howell:** open the
+  PR (ideally after Orville's engine commit, so one green PR catches `main` up on
+  release + data + engine). Data is already live on the server via sync.
+- **Deploy-order compatibility (Wilbur proposed 2026-07-24 — needs Orville's
+  ACK).** Invariant: **every sync must leave the live site working against
+  whatever the OTHER side currently has deployed.** From it:
+    - Data changes ship **backward-compatible with the live engine** → Wilbur
+      may sync anytime; the deployed engine tolerates the new data.
+    - When a feature spans both sides, default order is **data first, then
+      engine**: data is the easy side to keep backward-compatible, so it moves
+      first safely; the engine then lands to find its data already live.
+      (Engine-first would render e.g. a `prominence` star field empty against
+      old data — the broken window this avoids.)
+    - **Exception that flips the order:** a data change that would *break* the
+      live engine (removing/renaming a field it requires, changing a parsed
+      shape) is NOT a solo sync — it waits for the tolerant engine and gets its
+      own CONTRACT entry.
+    - **When unsure, verify against the deployed bundle or coordinate — don't
+      assume.** Worked example: today's `search_all_label`/TUTTI removal looked
+      breaking, but the live v3.19.0 bundle guards it `(…search_all_label) ||
+      "TUTTI"`, so removal was a no-op. Checked before trusting.
+- **Wilbur owns the end-of-phase audit (Howell, 2026-07-24).** At the end of
+  each phase — or after significant engine changes — Wilbur runs a methodical
+  deep dive across the **whole** codebase (data and engine): questioning the
+  architecture, and hunting correctness, simplification, efficiency, elegance.
+  Consistent with the ownership split, this is **read-and-report**: audit
+  findings in `src/` become `→ ORVILLE` ledger entries, never direct edits.
+  (The name was picked for the methodical brother; the role follows the name.)
 
 ---
 
