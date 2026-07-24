@@ -1,9 +1,8 @@
 {
   "Gutenberg_Bible": {
     "display_config": {
-      "wheel_volume_version": "1.0.1",
       "volume_schema_version": "3.0.0",
-      "volume_data_version": "2026.07.14",
+      "volume_data_version": "2026.07.23",
       "structure_type": "split_chapters",
       "volume_type": "wheel_hierarchical",
       "volume_name": "Gutenberg Bible",
@@ -18,7 +17,6 @@
           "french",
           "spanish",
           "italian",
-          "portuguese",
           "russian"
         ],
         "default": "latin",
@@ -48,8 +46,7 @@
             "VUL"
           ],
           "english": [
-            "NAB",
-            "DRA"
+            "NAB"
           ],
           "french": [
             "NEO"
@@ -59,9 +56,6 @@
           ],
           "italian": [
             "CEI"
-          ],
-          "portuguese": [
-            "POR"
           ],
           "russian": [
             "SYN"
@@ -75,7 +69,6 @@
           "french": "NEO",
           "spanish": "VAT_ES",
           "italian": "CEI",
-          "portuguese": "POR",
           "russian": "SYN"
         },
         "labels": {
@@ -9477,15 +9470,15 @@
         "chapters": 50,
         "verses": 1533,
         "languages": {
-          "hebrew": "Genesis",
-          "greek": "Genesis",
+          "hebrew": "בראשית",
+          "greek": "Γένεσις",
           "latin": "Genesis",
           "english": "Genesis",
-          "french": "Genesis",
-          "spanish": "Genesis",
-          "italian": "Genesis",
-          "portuguese": "Genesis",
-          "russian": "Genesis"
+          "french": "Genèse",
+          "spanish": "Génesis",
+          "italian": "Genesi",
+          "portuguese": "Gênesis",
+          "russian": "Бытие"
         }
       },
       "EXO": {
@@ -9494,18 +9487,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 2,
-        "chapters": 1,
-        "verses": 1,
+        "chapters": 40,
+        "verses": 1213,
         "languages": {
-          "hebrew": "Exodus",
-          "greek": "Exodus",
+          "hebrew": "שמות",
+          "greek": "Ἔξοδος",
           "latin": "Exodus",
           "english": "Exodus",
-          "french": "Exodus",
-          "spanish": "Exodus",
-          "italian": "Exodus",
-          "portuguese": "Exodus",
-          "russian": "Exodus"
+          "french": "Exode",
+          "spanish": "Éxodo",
+          "italian": "Esodo",
+          "portuguese": "Êxodo",
+          "russian": "Исход"
         }
       },
       "LEVI": {
@@ -9514,18 +9507,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 3,
-        "chapters": 1,
-        "verses": 1,
+        "chapters": 27,
+        "verses": 859,
         "languages": {
-          "hebrew": "Leviticus",
-          "greek": "Leviticus",
+          "hebrew": "ויקרא",
+          "greek": "Λευιτικόν",
           "latin": "Leviticus",
           "english": "Leviticus",
-          "french": "Leviticus",
-          "spanish": "Leviticus",
-          "italian": "Leviticus",
-          "portuguese": "Leviticus",
-          "russian": "Leviticus"
+          "french": "Lévitique",
+          "spanish": "Levítico",
+          "italian": "Levitico",
+          "portuguese": "Levítico",
+          "russian": "Левит"
         }
       },
       "NUME": {
@@ -9534,18 +9527,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 4,
-        "chapters": 1,
-        "verses": 1,
+        "chapters": 36,
+        "verses": 1288,
         "languages": {
-          "hebrew": "Numbers",
-          "greek": "Numbers",
-          "latin": "Numbers",
+          "hebrew": "במדבר",
+          "greek": "Ἀριθμοί",
+          "latin": "Numeri",
           "english": "Numbers",
-          "french": "Numbers",
-          "spanish": "Numbers",
-          "italian": "Numbers",
-          "portuguese": "Numbers",
-          "russian": "Numbers"
+          "french": "Nombres",
+          "spanish": "Números",
+          "italian": "Numeri",
+          "portuguese": "Números",
+          "russian": "Числа"
         }
       },
       "DEUT": {
@@ -9554,18 +9547,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Pentateuchus",
         "sort_number": 5,
-        "chapters": 1,
-        "verses": 1,
+        "chapters": 34,
+        "verses": 959,
         "languages": {
-          "hebrew": "Deuteronomy",
-          "greek": "Deuteronomy",
-          "latin": "Deuteronomy",
+          "hebrew": "דברים",
+          "greek": "Δευτερονόμιον",
+          "latin": "Deuteronomium",
           "english": "Deuteronomy",
-          "french": "Deuteronomy",
-          "spanish": "Deuteronomy",
-          "italian": "Deuteronomy",
-          "portuguese": "Deuteronomy",
-          "russian": "Deuteronomy"
+          "french": "Deutéronome",
+          "spanish": "Deuteronomio",
+          "italian": "Deuteronomio",
+          "portuguese": "Deuteronômio",
+          "russian": "Второзаконие"
         }
       },
       "IOSU": {
@@ -9574,18 +9567,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 6,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 24,
+        "verses": 658,
         "languages": {
-          "hebrew": "Joshua",
-          "greek": "Joshua",
-          "latin": "Joshua",
+          "hebrew": "יהושע",
+          "greek": "Ἰησοῦς Ναυή",
+          "latin": "Iosue",
           "english": "Joshua",
-          "french": "Joshua",
-          "spanish": "Joshua",
-          "italian": "Joshua",
-          "portuguese": "Joshua",
-          "russian": "Joshua"
+          "french": "Josué",
+          "spanish": "Josué",
+          "italian": "Giosuè",
+          "portuguese": "Josué",
+          "russian": "Иисус Навин"
         }
       },
       "IUDI": {
@@ -9594,18 +9587,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 7,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 21,
+        "verses": 618,
         "languages": {
-          "hebrew": "Judges",
-          "greek": "Judges",
-          "latin": "Judges",
+          "hebrew": "שופטים",
+          "greek": "Κριταί",
+          "latin": "Iudices",
           "english": "Judges",
-          "french": "Judges",
-          "spanish": "Judges",
-          "italian": "Judges",
-          "portuguese": "Judges",
-          "russian": "Judges"
+          "french": "Juges",
+          "spanish": "Jueces",
+          "italian": "Giudici",
+          "portuguese": "Juízes",
+          "russian": "Судей"
         }
       },
       "RUTH": {
@@ -9614,18 +9607,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 8,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 4,
+        "verses": 84,
         "languages": {
-          "hebrew": "Ruth",
-          "greek": "Ruth",
+          "hebrew": "רות",
+          "greek": "Ῥούθ",
           "latin": "Ruth",
           "english": "Ruth",
           "french": "Ruth",
-          "spanish": "Ruth",
-          "italian": "Ruth",
-          "portuguese": "Ruth",
-          "russian": "Ruth"
+          "spanish": "Rut",
+          "italian": "Rut",
+          "portuguese": "Rute",
+          "russian": "Руфь"
         }
       },
       "I_SAM": {
@@ -9634,18 +9627,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 9,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 31,
+        "verses": 810,
         "languages": {
-          "hebrew": "1 Samuel",
-          "greek": "1 Samuel",
-          "latin": "1 Samuel",
+          "hebrew": "שמואל א",
+          "greek": "Αʹ Σαμουήλ",
+          "latin": "1 Samuelis",
           "english": "1 Samuel",
           "french": "1 Samuel",
           "spanish": "1 Samuel",
-          "italian": "1 Samuel",
+          "italian": "1 Samuele",
           "portuguese": "1 Samuel",
-          "russian": "1 Samuel"
+          "russian": "1 Царств"
         }
       },
       "II_SAM": {
@@ -9654,18 +9647,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 10,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 24,
+        "verses": 695,
         "languages": {
-          "hebrew": "2 Samuel",
-          "greek": "2 Samuel",
-          "latin": "2 Samuel",
+          "hebrew": "שמואל ב",
+          "greek": "Βʹ Σαμουήλ",
+          "latin": "2 Samuelis",
           "english": "2 Samuel",
           "french": "2 Samuel",
           "spanish": "2 Samuel",
-          "italian": "2 Samuel",
+          "italian": "2 Samuele",
           "portuguese": "2 Samuel",
-          "russian": "2 Samuel"
+          "russian": "2 Царств"
         }
       },
       "III_REG": {
@@ -9674,18 +9667,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 11,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 22,
+        "verses": 816,
         "languages": {
-          "hebrew": "1 Kings",
-          "greek": "1 Kings",
-          "latin": "1 Kings",
+          "hebrew": "מלכים א",
+          "greek": "Γʹ Βασιλειῶν",
+          "latin": "3 Regum",
           "english": "1 Kings",
-          "french": "1 Kings",
-          "spanish": "1 Kings",
-          "italian": "1 Kings",
-          "portuguese": "1 Kings",
-          "russian": "1 Kings"
+          "french": "1 Rois",
+          "spanish": "1 Reyes",
+          "italian": "1 Re",
+          "portuguese": "1 Reis",
+          "russian": "3 Царств"
         }
       },
       "IV_REG": {
@@ -9694,18 +9687,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 12,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 25,
+        "verses": 719,
         "languages": {
-          "hebrew": "2 Kings",
-          "greek": "2 Kings",
-          "latin": "2 Kings",
+          "hebrew": "מלכים ב",
+          "greek": "Δʹ Βασιλειῶν",
+          "latin": "4 Regum",
           "english": "2 Kings",
-          "french": "2 Kings",
-          "spanish": "2 Kings",
-          "italian": "2 Kings",
-          "portuguese": "2 Kings",
-          "russian": "2 Kings"
+          "french": "2 Rois",
+          "spanish": "2 Reyes",
+          "italian": "2 Re",
+          "portuguese": "2 Reis",
+          "russian": "4 Царств"
         }
       },
       "TOBI": {
@@ -9714,18 +9707,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 13,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 14,
+        "verses": 244,
         "languages": {
-          "hebrew": "Tobit",
-          "greek": "Tobit",
-          "latin": "Tobit",
+          "hebrew": "טוביה",
+          "greek": "Τωβίτ",
+          "latin": "Tobiae",
           "english": "Tobit",
-          "french": "Tobit",
+          "french": "Tobie",
           "spanish": "Tobit",
-          "italian": "Tobit",
-          "portuguese": "Tobit",
-          "russian": "Tobit"
+          "italian": "Tobia",
+          "portuguese": "Tobias",
+          "russian": "Товит"
         }
       },
       "IUDITH": {
@@ -9734,18 +9727,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Historici_et_Novellae_Biblicae",
         "sort_number": 14,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 16,
+        "verses": 378,
         "languages": {
-          "hebrew": "Judith",
-          "greek": "Judith",
-          "latin": "Judith",
+          "hebrew": "יהודית",
+          "greek": "Ἰουδίθ",
+          "latin": "Iudith",
           "english": "Judith",
           "french": "Judith",
-          "spanish": "Judith",
-          "italian": "Judith",
-          "portuguese": "Judith",
-          "russian": "Judith"
+          "spanish": "Judit",
+          "italian": "Giuditta",
+          "portuguese": "Judite",
+          "russian": "Иудифь"
         }
       },
       "ESTH": {
@@ -9757,15 +9750,15 @@
         "chapters": 16,
         "verses": 17,
         "languages": {
-          "hebrew": "Esther",
-          "greek": "Esther",
+          "hebrew": "אסתר",
+          "greek": "Ἐσθήρ",
           "latin": "Esther",
           "english": "Esther",
           "french": "Esther",
-          "spanish": "Esther",
-          "italian": "Esther",
-          "portuguese": "Esther",
-          "russian": "Esther"
+          "spanish": "Ester",
+          "italian": "Ester",
+          "portuguese": "Ester",
+          "russian": "Есфирь"
         }
       },
       "IOB": {
@@ -9774,18 +9767,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 16,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 42,
+        "verses": 1070,
         "languages": {
-          "hebrew": "Job",
-          "greek": "Job",
-          "latin": "Job",
+          "hebrew": "איוב",
+          "greek": "Ἰώβ",
+          "latin": "Iob",
           "english": "Job",
           "french": "Job",
           "spanish": "Job",
-          "italian": "Job",
-          "portuguese": "Job",
-          "russian": "Job"
+          "italian": "Giobbe",
+          "portuguese": "Jó",
+          "russian": "Иов"
         }
       },
       "PSAL": {
@@ -9794,18 +9787,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 17,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 150,
+        "verses": 2527,
         "languages": {
-          "hebrew": "Psalms",
-          "greek": "Psalms",
-          "latin": "Psalms",
+          "hebrew": "תהילים",
+          "greek": "Ψαλμοί",
+          "latin": "Psalmi",
           "english": "Psalms",
-          "french": "Psalms",
-          "spanish": "Psalms",
-          "italian": "Psalms",
-          "portuguese": "Psalms",
-          "russian": "Psalms"
+          "french": "Psaumes",
+          "spanish": "Salmos",
+          "italian": "Salmi",
+          "portuguese": "Salmos",
+          "russian": "Псалтирь"
         }
       },
       "PROV": {
@@ -9814,18 +9807,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 18,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 31,
+        "verses": 915,
         "languages": {
-          "hebrew": "Proverbs",
-          "greek": "Proverbs",
-          "latin": "Proverbs",
+          "hebrew": "משלי",
+          "greek": "Παροιμίαι",
+          "latin": "Proverbia",
           "english": "Proverbs",
-          "french": "Proverbs",
-          "spanish": "Proverbs",
-          "italian": "Proverbs",
-          "portuguese": "Proverbs",
-          "russian": "Proverbs"
+          "french": "Proverbes",
+          "spanish": "Proverbios",
+          "italian": "Proverbi",
+          "portuguese": "Provérbios",
+          "russian": "Притчи"
         }
       },
       "ECCLE": {
@@ -9834,18 +9827,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 19,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 12,
+        "verses": 222,
         "languages": {
-          "hebrew": "Ecclesiastes",
-          "greek": "Ecclesiastes",
+          "hebrew": "קהלת",
+          "greek": "Ἐκκλησιαστής",
           "latin": "Ecclesiastes",
           "english": "Ecclesiastes",
-          "french": "Ecclesiastes",
-          "spanish": "Ecclesiastes",
-          "italian": "Ecclesiastes",
-          "portuguese": "Ecclesiastes",
-          "russian": "Ecclesiastes"
+          "french": "Ecclésiaste",
+          "spanish": "Eclesiastés",
+          "italian": "Qoèlet",
+          "portuguese": "Eclesiastes",
+          "russian": "Екклесиаст"
         }
       },
       "CANT": {
@@ -9854,18 +9847,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 20,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 8,
+        "verses": 117,
         "languages": {
-          "hebrew": "Song of Songs",
-          "greek": "Song of Songs",
-          "latin": "Song of Songs",
+          "hebrew": "שיר השירים",
+          "greek": "Ἄσμα Ἀσμάτων",
+          "latin": "Canticum Canticorum",
           "english": "Song of Songs",
-          "french": "Song of Songs",
-          "spanish": "Song of Songs",
-          "italian": "Song of Songs",
-          "portuguese": "Song of Songs",
-          "russian": "Song of Songs"
+          "french": "Cantique des Cantiques",
+          "spanish": "Cantar de los Cantares",
+          "italian": "Cantico dei Cantici",
+          "portuguese": "Cântico dos Cânticos",
+          "russian": "Песня Песней"
         }
       },
       "SAPI": {
@@ -9874,18 +9867,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 21,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 19,
+        "verses": 436,
         "languages": {
-          "hebrew": "Wisdom",
-          "greek": "Wisdom",
-          "latin": "Wisdom",
+          "hebrew": "חכמת שלמה",
+          "greek": "Σοφία Σολομῶνος",
+          "latin": "Sapientia",
           "english": "Wisdom",
-          "french": "Wisdom",
-          "spanish": "Wisdom",
-          "italian": "Wisdom",
-          "portuguese": "Wisdom",
-          "russian": "Wisdom"
+          "french": "Sagesse",
+          "spanish": "Sabiduría",
+          "italian": "Sapienza",
+          "portuguese": "Sabedoria",
+          "russian": "Премудрость Соломона"
         }
       },
       "ECCLU": {
@@ -9894,18 +9887,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Sapientiae",
         "sort_number": 22,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 51,
+        "verses": 1407,
         "languages": {
-          "hebrew": "Sirach",
-          "greek": "Sirach",
-          "latin": "Sirach",
+          "hebrew": "בן סירא",
+          "greek": "Σοφία Σειράχ",
+          "latin": "Ecclesiasticus",
           "english": "Sirach",
-          "french": "Sirach",
-          "spanish": "Sirach",
-          "italian": "Sirach",
-          "portuguese": "Sirach",
-          "russian": "Sirach"
+          "french": "Siracide",
+          "spanish": "Eclesiástico",
+          "italian": "Siracide",
+          "portuguese": "Eclesiástico",
+          "russian": "Сирах"
         }
       },
       "ISA": {
@@ -9914,18 +9907,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 23,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 66,
+        "verses": 1292,
         "languages": {
-          "hebrew": "Isaiah",
-          "greek": "Isaiah",
-          "latin": "Isaiah",
+          "hebrew": "ישעיהו",
+          "greek": "Ἠσαΐας",
+          "latin": "Isaias",
           "english": "Isaiah",
-          "french": "Isaiah",
-          "spanish": "Isaiah",
-          "italian": "Isaiah",
-          "portuguese": "Isaiah",
-          "russian": "Isaiah"
+          "french": "Isaïe",
+          "spanish": "Isaías",
+          "italian": "Isaia",
+          "portuguese": "Isaías",
+          "russian": "Исаия"
         }
       },
       "IERE": {
@@ -9934,18 +9927,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 24,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 52,
+        "verses": 1364,
         "languages": {
-          "hebrew": "Jeremiah",
-          "greek": "Jeremiah",
-          "latin": "Jeremiah",
+          "hebrew": "ירמיהו",
+          "greek": "Ἰερεμίας",
+          "latin": "Ieremias",
           "english": "Jeremiah",
-          "french": "Jeremiah",
-          "spanish": "Jeremiah",
-          "italian": "Jeremiah",
-          "portuguese": "Jeremiah",
-          "russian": "Jeremiah"
+          "french": "Jérémie",
+          "spanish": "Jeremías",
+          "italian": "Geremia",
+          "portuguese": "Jeremias",
+          "russian": "Иеремия"
         }
       },
       "LAME": {
@@ -9954,18 +9947,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 25,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 5,
+        "verses": 110,
         "languages": {
-          "hebrew": "Lamentations",
-          "greek": "Lamentations",
-          "latin": "Lamentations",
+          "hebrew": "איכה",
+          "greek": "Θρῆνοι",
+          "latin": "Threni",
           "english": "Lamentations",
           "french": "Lamentations",
-          "spanish": "Lamentations",
-          "italian": "Lamentations",
-          "portuguese": "Lamentations",
-          "russian": "Lamentations"
+          "spanish": "Lamentaciones",
+          "italian": "Lamentazioni",
+          "portuguese": "Lamentações",
+          "russian": "Плач Иеремии"
         }
       },
       "BARU": {
@@ -9974,18 +9967,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 26,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 6,
+        "verses": 249,
         "languages": {
-          "hebrew": "Baruch",
-          "greek": "Baruch",
+          "hebrew": "ברוך",
+          "greek": "Βαρούχ",
           "latin": "Baruch",
           "english": "Baruch",
           "french": "Baruch",
-          "spanish": "Baruch",
-          "italian": "Baruch",
-          "portuguese": "Baruch",
-          "russian": "Baruch"
+          "spanish": "Baruc",
+          "italian": "Baruc",
+          "portuguese": "Baruc",
+          "russian": "Варух"
         }
       },
       "EZE": {
@@ -9994,18 +9987,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 27,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 48,
+        "verses": 1273,
         "languages": {
-          "hebrew": "Ezekiel",
-          "greek": "Ezekiel",
-          "latin": "Ezekiel",
+          "hebrew": "יחזקאל",
+          "greek": "Ἰεζεκιήλ",
+          "latin": "Ezechiel",
           "english": "Ezekiel",
-          "french": "Ezekiel",
-          "spanish": "Ezekiel",
-          "italian": "Ezekiel",
-          "portuguese": "Ezekiel",
-          "russian": "Ezekiel"
+          "french": "Ézéchiel",
+          "spanish": "Ezequiel",
+          "italian": "Ezechiele",
+          "portuguese": "Ezequiel",
+          "russian": "Иезекииль"
         }
       },
       "DAN": {
@@ -10014,18 +10007,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 28,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 14,
+        "verses": 463,
         "languages": {
-          "hebrew": "Daniel",
-          "greek": "Daniel",
+          "hebrew": "דניאל",
+          "greek": "Δανιήλ",
           "latin": "Daniel",
           "english": "Daniel",
           "french": "Daniel",
           "spanish": "Daniel",
-          "italian": "Daniel",
+          "italian": "Daniele",
           "portuguese": "Daniel",
-          "russian": "Daniel"
+          "russian": "Даниил"
         }
       },
       "OSE": {
@@ -10034,18 +10027,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 29,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 14,
+        "verses": 197,
         "languages": {
-          "hebrew": "Hosea",
-          "greek": "Hosea",
-          "latin": "Hosea",
+          "hebrew": "הושע",
+          "greek": "Ὡσηέ",
+          "latin": "Osee",
           "english": "Hosea",
-          "french": "Hosea",
-          "spanish": "Hosea",
-          "italian": "Hosea",
-          "portuguese": "Hosea",
-          "russian": "Hosea"
+          "french": "Osée",
+          "spanish": "Oseas",
+          "italian": "Osea",
+          "portuguese": "Oseias",
+          "russian": "Осия"
         }
       },
       "IOEL": {
@@ -10054,18 +10047,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 30,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 3,
+        "verses": 73,
         "languages": {
-          "hebrew": "Joel",
-          "greek": "Joel",
-          "latin": "Joel",
+          "hebrew": "יואל",
+          "greek": "Ἰωήλ",
+          "latin": "Ioel",
           "english": "Joel",
-          "french": "Joel",
+          "french": "Joël",
           "spanish": "Joel",
-          "italian": "Joel",
+          "italian": "Gioele",
           "portuguese": "Joel",
-          "russian": "Joel"
+          "russian": "Иоиль"
         }
       },
       "AMO": {
@@ -10074,18 +10067,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 31,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 9,
+        "verses": 146,
         "languages": {
-          "hebrew": "Amos",
-          "greek": "Amos",
+          "hebrew": "עמוס",
+          "greek": "Ἀμώς",
           "latin": "Amos",
           "english": "Amos",
           "french": "Amos",
-          "spanish": "Amos",
+          "spanish": "Amós",
           "italian": "Amos",
-          "portuguese": "Amos",
-          "russian": "Amos"
+          "portuguese": "Amós",
+          "russian": "Амос"
         }
       },
       "ABDI": {
@@ -10094,18 +10087,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 32,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 1,
+        "verses": 21,
         "languages": {
-          "hebrew": "Obadiah",
-          "greek": "Obadiah",
-          "latin": "Obadiah",
+          "hebrew": "עובדיה",
+          "greek": "Ἀβδιού",
+          "latin": "Abdias",
           "english": "Obadiah",
-          "french": "Obadiah",
-          "spanish": "Obadiah",
-          "italian": "Obadiah",
-          "portuguese": "Obadiah",
-          "russian": "Obadiah"
+          "french": "Abdias",
+          "spanish": "Abdías",
+          "italian": "Abdia",
+          "portuguese": "Abdias",
+          "russian": "Авдий"
         }
       },
       "IONA": {
@@ -10114,18 +10107,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 33,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 4,
+        "verses": 49,
         "languages": {
-          "hebrew": "Jonah",
-          "greek": "Jonah",
-          "latin": "Jonah",
+          "hebrew": "יונה",
+          "greek": "Ἰωνᾶς",
+          "latin": "Ionas",
           "english": "Jonah",
-          "french": "Jonah",
-          "spanish": "Jonah",
-          "italian": "Jonah",
-          "portuguese": "Jonah",
-          "russian": "Jonah"
+          "french": "Jonas",
+          "spanish": "Jonás",
+          "italian": "Giona",
+          "portuguese": "Jonas",
+          "russian": "Иона"
         }
       },
       "MICH": {
@@ -10134,18 +10127,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 34,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 7,
+        "verses": 105,
         "languages": {
-          "hebrew": "Micah",
-          "greek": "Micah",
-          "latin": "Micah",
+          "hebrew": "מיכה",
+          "greek": "Μιχαίας",
+          "latin": "Michaeas",
           "english": "Micah",
-          "french": "Micah",
-          "spanish": "Micah",
-          "italian": "Micah",
-          "portuguese": "Micah",
-          "russian": "Micah"
+          "french": "Michée",
+          "spanish": "Miqueas",
+          "italian": "Michea",
+          "portuguese": "Miqueias",
+          "russian": "Михей"
         }
       },
       "NAHU": {
@@ -10154,18 +10147,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 35,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 3,
+        "verses": 48,
         "languages": {
-          "hebrew": "Nahum",
-          "greek": "Nahum",
+          "hebrew": "נחום",
+          "greek": "Ναούμ",
           "latin": "Nahum",
           "english": "Nahum",
           "french": "Nahum",
-          "spanish": "Nahum",
-          "italian": "Nahum",
-          "portuguese": "Nahum",
-          "russian": "Nahum"
+          "spanish": "Nahúm",
+          "italian": "Naum",
+          "portuguese": "Naum",
+          "russian": "Наум"
         }
       },
       "HAB": {
@@ -10174,18 +10167,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 36,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 3,
+        "verses": 56,
         "languages": {
-          "hebrew": "Habakkuk",
-          "greek": "Habakkuk",
-          "latin": "Habakkuk",
+          "hebrew": "חבקוק",
+          "greek": "Ἀμβακούμ",
+          "latin": "Habacuc",
           "english": "Habakkuk",
-          "french": "Habakkuk",
-          "spanish": "Habakkuk",
-          "italian": "Habakkuk",
-          "portuguese": "Habakkuk",
-          "russian": "Habakkuk"
+          "french": "Habacuc",
+          "spanish": "Habacuc",
+          "italian": "Abacuc",
+          "portuguese": "Habacuque",
+          "russian": "Аввакум"
         }
       },
       "SOPH": {
@@ -10194,18 +10187,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 37,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 3,
+        "verses": 53,
         "languages": {
-          "hebrew": "Zephaniah",
-          "greek": "Zephaniah",
-          "latin": "Zephaniah",
+          "hebrew": "צפניה",
+          "greek": "Σοφονίας",
+          "latin": "Sophonias",
           "english": "Zephaniah",
-          "french": "Zephaniah",
-          "spanish": "Zephaniah",
-          "italian": "Zephaniah",
-          "portuguese": "Zephaniah",
-          "russian": "Zephaniah"
+          "french": "Sophonie",
+          "spanish": "Sofonías",
+          "italian": "Sofonia",
+          "portuguese": "Sofonias",
+          "russian": "Софония"
         }
       },
       "AGGE": {
@@ -10214,18 +10207,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 38,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 2,
+        "verses": 38,
         "languages": {
-          "hebrew": "Haggai",
-          "greek": "Haggai",
-          "latin": "Haggai",
+          "hebrew": "חגי",
+          "greek": "Ἀγγαῖος",
+          "latin": "Aggaeus",
           "english": "Haggai",
-          "french": "Haggai",
-          "spanish": "Haggai",
-          "italian": "Haggai",
-          "portuguese": "Haggai",
-          "russian": "Haggai"
+          "french": "Aggée",
+          "spanish": "Ageo",
+          "italian": "Aggeo",
+          "portuguese": "Ageu",
+          "russian": "Аггей"
         }
       },
       "ZACH": {
@@ -10234,18 +10227,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 39,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 14,
+        "verses": 211,
         "languages": {
-          "hebrew": "Zechariah",
-          "greek": "Zechariah",
-          "latin": "Zechariah",
+          "hebrew": "זכריה",
+          "greek": "Ζαχαρίας",
+          "latin": "Zacharias",
           "english": "Zechariah",
-          "french": "Zechariah",
-          "spanish": "Zechariah",
-          "italian": "Zechariah",
-          "portuguese": "Zechariah",
-          "russian": "Zechariah"
+          "french": "Zacharie",
+          "spanish": "Zacarías",
+          "italian": "Zaccaria",
+          "portuguese": "Zacarias",
+          "russian": "Захария"
         }
       },
       "MALA": {
@@ -10254,18 +10247,18 @@
         "testament": "Vetus_Testamentum",
         "section": "Libri_Prophetici",
         "sort_number": 40,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 4,
+        "verses": 55,
         "languages": {
-          "hebrew": "Malachi",
-          "greek": "Malachi",
-          "latin": "Malachi",
+          "hebrew": "מלאכי",
+          "greek": "Μαλαχίας",
+          "latin": "Malachias",
           "english": "Malachi",
-          "french": "Malachi",
-          "spanish": "Malachi",
-          "italian": "Malachi",
-          "portuguese": "Malachi",
-          "russian": "Malachi"
+          "french": "Malachie",
+          "spanish": "Malaquías",
+          "italian": "Malachia",
+          "portuguese": "Malaquias",
+          "russian": "Малахия"
         }
       },
       "MATHE": {
@@ -10274,18 +10267,18 @@
         "testament": "Novum_Testamentum",
         "section": "Evangelia",
         "sort_number": 41,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 28,
+        "verses": 1071,
         "languages": {
-          "hebrew": "Matthew",
-          "greek": "Matthew",
-          "latin": "Matthew",
+          "hebrew": "מתי",
+          "greek": "Ματθαῖος",
+          "latin": "Matthaeus",
           "english": "Matthew",
-          "french": "Matthew",
-          "spanish": "Matthew",
-          "italian": "Matthew",
-          "portuguese": "Matthew",
-          "russian": "Matthew"
+          "french": "Matthieu",
+          "spanish": "Mateo",
+          "italian": "Matteo",
+          "portuguese": "Mateus",
+          "russian": "Матфей"
         }
       },
       "MARC": {
@@ -10294,18 +10287,18 @@
         "testament": "Novum_Testamentum",
         "section": "Evangelia",
         "sort_number": 42,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 16,
+        "verses": 678,
         "languages": {
-          "hebrew": "Mark",
-          "greek": "Mark",
-          "latin": "Mark",
+          "hebrew": "מרקוס",
+          "greek": "Μᾶρκος",
+          "latin": "Marcus",
           "english": "Mark",
-          "french": "Mark",
-          "spanish": "Mark",
-          "italian": "Mark",
-          "portuguese": "Mark",
-          "russian": "Mark"
+          "french": "Marc",
+          "spanish": "Marcos",
+          "italian": "Marco",
+          "portuguese": "Marcos",
+          "russian": "Марка"
         }
       },
       "LUCA": {
@@ -10314,18 +10307,18 @@
         "testament": "Novum_Testamentum",
         "section": "Evangelia",
         "sort_number": 43,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 24,
+        "verses": 1151,
         "languages": {
-          "hebrew": "Luke",
-          "greek": "Luke",
-          "latin": "Luke",
+          "hebrew": "לוקס",
+          "greek": "Λουκᾶς",
+          "latin": "Lucas",
           "english": "Luke",
-          "french": "Luke",
-          "spanish": "Luke",
-          "italian": "Luke",
-          "portuguese": "Luke",
-          "russian": "Luke"
+          "french": "Luc",
+          "spanish": "Lucas",
+          "italian": "Luca",
+          "portuguese": "Lucas",
+          "russian": "Лука"
         }
       },
       "IOHA": {
@@ -10334,18 +10327,18 @@
         "testament": "Novum_Testamentum",
         "section": "Evangelia",
         "sort_number": 44,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 21,
+        "verses": 879,
         "languages": {
-          "hebrew": "John",
-          "greek": "John",
-          "latin": "John",
+          "hebrew": "יוחנן",
+          "greek": "Ἰωάννης",
+          "latin": "Ioannes",
           "english": "John",
-          "french": "John",
-          "spanish": "John",
-          "italian": "John",
-          "portuguese": "John",
-          "russian": "John"
+          "french": "Jean",
+          "spanish": "Juan",
+          "italian": "Giovanni",
+          "portuguese": "João",
+          "russian": "Иоанн"
         }
       },
       "ACTU": {
@@ -10354,18 +10347,18 @@
         "testament": "Novum_Testamentum",
         "section": "Actus_Apostolorum",
         "sort_number": 45,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 28,
+        "verses": 1007,
         "languages": {
-          "hebrew": "Acts",
-          "greek": "Acts",
-          "latin": "Acts",
+          "hebrew": "מעשי השליחים",
+          "greek": "Πράξεις Ἀποστόλων",
+          "latin": "Actus Apostolorum",
           "english": "Acts",
-          "french": "Acts",
-          "spanish": "Acts",
-          "italian": "Acts",
-          "portuguese": "Acts",
-          "russian": "Acts"
+          "french": "Actes des Apôtres",
+          "spanish": "Hechos de los Apóstoles",
+          "italian": "Atti degli Apostoli",
+          "portuguese": "Atos dos Apóstolos",
+          "russian": "Деяния Апостолов"
         }
       },
       "ROM": {
@@ -10374,18 +10367,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 46,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 16,
+        "verses": 433,
         "languages": {
-          "hebrew": "Romans",
-          "greek": "Romans",
-          "latin": "Romans",
+          "hebrew": "אל הרומים",
+          "greek": "Πρὸς Ῥωμαίους",
+          "latin": "Ad Romanos",
           "english": "Romans",
-          "french": "Romans",
-          "spanish": "Romans",
-          "italian": "Romans",
-          "portuguese": "Romans",
-          "russian": "Romans"
+          "french": "Romains",
+          "spanish": "Romanos",
+          "italian": "Romani",
+          "portuguese": "Romanos",
+          "russian": "Римлянам"
         }
       },
       "I_COR": {
@@ -10394,18 +10387,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 47,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 16,
+        "verses": 437,
         "languages": {
-          "hebrew": "1 Corinthians",
-          "greek": "1 Corinthians",
-          "latin": "1 Corinthians",
+          "hebrew": "קורינתים א",
+          "greek": "Πρὸς Κορινθίους Αʹ",
+          "latin": "1 ad Corinthios",
           "english": "1 Corinthians",
-          "french": "1 Corinthians",
-          "spanish": "1 Corinthians",
-          "italian": "1 Corinthians",
-          "portuguese": "1 Corinthians",
-          "russian": "1 Corinthians"
+          "french": "1 Corinthiens",
+          "spanish": "1 Corintios",
+          "italian": "1 Corinzi",
+          "portuguese": "1 Coríntios",
+          "russian": "1 Коринфянам"
         }
       },
       "II_COR": {
@@ -10414,18 +10407,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 48,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 13,
+        "verses": 257,
         "languages": {
-          "hebrew": "2 Corinthians",
-          "greek": "2 Corinthians",
-          "latin": "2 Corinthians",
+          "hebrew": "קורינתים ב",
+          "greek": "Πρὸς Κορινθίους Βʹ",
+          "latin": "2 ad Corinthios",
           "english": "2 Corinthians",
-          "french": "2 Corinthians",
-          "spanish": "2 Corinthians",
-          "italian": "2 Corinthians",
-          "portuguese": "2 Corinthians",
-          "russian": "2 Corinthians"
+          "french": "2 Corinthiens",
+          "spanish": "2 Corintios",
+          "italian": "2 Corinzi",
+          "portuguese": "2 Coríntios",
+          "russian": "2 Коринфянам"
         }
       },
       "GALA": {
@@ -10434,18 +10427,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 49,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 6,
+        "verses": 149,
         "languages": {
-          "hebrew": "Galatians",
-          "greek": "Galatians",
-          "latin": "Galatians",
+          "hebrew": "אל הגלטים",
+          "greek": "Πρὸς Γαλάτας",
+          "latin": "Ad Galatas",
           "english": "Galatians",
-          "french": "Galatians",
-          "spanish": "Galatians",
-          "italian": "Galatians",
-          "portuguese": "Galatians",
-          "russian": "Galatians"
+          "french": "Galates",
+          "spanish": "Gálatas",
+          "italian": "Galati",
+          "portuguese": "Gálatas",
+          "russian": "Галатам"
         }
       },
       "EPHE": {
@@ -10454,18 +10447,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 50,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 6,
+        "verses": 155,
         "languages": {
-          "hebrew": "Ephesians",
-          "greek": "Ephesians",
-          "latin": "Ephesians",
+          "hebrew": "אל האפסים",
+          "greek": "Πρὸς Ἐφεσίους",
+          "latin": "Ad Ephesios",
           "english": "Ephesians",
-          "french": "Ephesians",
-          "spanish": "Ephesians",
-          "italian": "Ephesians",
-          "portuguese": "Ephesians",
-          "russian": "Ephesians"
+          "french": "Éphésiens",
+          "spanish": "Efesios",
+          "italian": "Efesini",
+          "portuguese": "Efésios",
+          "russian": "Ефесянам"
         }
       },
       "PHILI": {
@@ -10474,18 +10467,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 51,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 4,
+        "verses": 104,
         "languages": {
-          "hebrew": "Philippians",
-          "greek": "Philippians",
-          "latin": "Philippians",
+          "hebrew": "אל הפיליפים",
+          "greek": "Πρὸς Φιλιππησίους",
+          "latin": "Ad Philippenses",
           "english": "Philippians",
-          "french": "Philippians",
-          "spanish": "Philippians",
-          "italian": "Philippians",
-          "portuguese": "Philippians",
-          "russian": "Philippians"
+          "french": "Philippiens",
+          "spanish": "Filipenses",
+          "italian": "Filippesi",
+          "portuguese": "Filipenses",
+          "russian": "Филиппийцам"
         }
       },
       "COLO": {
@@ -10494,18 +10487,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 52,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 4,
+        "verses": 95,
         "languages": {
-          "hebrew": "Colossians",
-          "greek": "Colossians",
-          "latin": "Colossians",
+          "hebrew": "אל הקולוסים",
+          "greek": "Πρὸς Κολοσσαεῖς",
+          "latin": "Ad Colossenses",
           "english": "Colossians",
-          "french": "Colossians",
-          "spanish": "Colossians",
-          "italian": "Colossians",
-          "portuguese": "Colossians",
-          "russian": "Colossians"
+          "french": "Colossiens",
+          "spanish": "Colosenses",
+          "italian": "Colossesi",
+          "portuguese": "Colossenses",
+          "russian": "Колоссянам"
         }
       },
       "I_THES": {
@@ -10514,18 +10507,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 53,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 5,
+        "verses": 89,
         "languages": {
-          "hebrew": "1 Thessalonians",
-          "greek": "1 Thessalonians",
-          "latin": "1 Thessalonians",
+          "hebrew": "תסלוניקים א",
+          "greek": "Πρὸς Θεσσαλονικεῖς Αʹ",
+          "latin": "1 ad Thessalonicenses",
           "english": "1 Thessalonians",
-          "french": "1 Thessalonians",
-          "spanish": "1 Thessalonians",
-          "italian": "1 Thessalonians",
-          "portuguese": "1 Thessalonians",
-          "russian": "1 Thessalonians"
+          "french": "1 Thessaloniciens",
+          "spanish": "1 Tesalonicenses",
+          "italian": "1 Tessalonicesi",
+          "portuguese": "1 Tessalonicenses",
+          "russian": "1 Фессалоникийцам"
         }
       },
       "II_THES": {
@@ -10534,18 +10527,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 54,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 3,
+        "verses": 47,
         "languages": {
-          "hebrew": "2 Thessalonians",
-          "greek": "2 Thessalonians",
-          "latin": "2 Thessalonians",
+          "hebrew": "תסלוניקים ב",
+          "greek": "Πρὸς Θεσσαλονικεῖς Βʹ",
+          "latin": "2 ad Thessalonicenses",
           "english": "2 Thessalonians",
-          "french": "2 Thessalonians",
-          "spanish": "2 Thessalonians",
-          "italian": "2 Thessalonians",
-          "portuguese": "2 Thessalonians",
-          "russian": "2 Thessalonians"
+          "french": "2 Thessaloniciens",
+          "spanish": "2 Tesalonicenses",
+          "italian": "2 Tessalonicesi",
+          "portuguese": "2 Tessalonicenses",
+          "russian": "2 Фессалоникийцам"
         }
       },
       "I_TIMO": {
@@ -10554,18 +10547,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 55,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 6,
+        "verses": 113,
         "languages": {
-          "hebrew": "1 Timothy",
-          "greek": "1 Timothy",
-          "latin": "1 Timothy",
+          "hebrew": "אל טימותיוס א",
+          "greek": "Πρὸς Τιμόθεον Αʹ",
+          "latin": "1 ad Timotheum",
           "english": "1 Timothy",
-          "french": "1 Timothy",
-          "spanish": "1 Timothy",
-          "italian": "1 Timothy",
-          "portuguese": "1 Timothy",
-          "russian": "1 Timothy"
+          "french": "1 Timothée",
+          "spanish": "1 Timoteo",
+          "italian": "1 Timoteo",
+          "portuguese": "1 Timóteo",
+          "russian": "1 Тимофею"
         }
       },
       "II_TIMO": {
@@ -10574,18 +10567,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 56,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 4,
+        "verses": 83,
         "languages": {
-          "hebrew": "2 Timothy",
-          "greek": "2 Timothy",
-          "latin": "2 Timothy",
+          "hebrew": "אל טימותיוס ב",
+          "greek": "Πρὸς Τιμόθεον Βʹ",
+          "latin": "2 ad Timotheum",
           "english": "2 Timothy",
-          "french": "2 Timothy",
-          "spanish": "2 Timothy",
-          "italian": "2 Timothy",
-          "portuguese": "2 Timothy",
-          "russian": "2 Timothy"
+          "french": "2 Timothée",
+          "spanish": "2 Timoteo",
+          "italian": "2 Timoteo",
+          "portuguese": "2 Timóteo",
+          "russian": "2 Тимофею"
         }
       },
       "TITU": {
@@ -10594,18 +10587,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 57,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 3,
+        "verses": 46,
         "languages": {
-          "hebrew": "Titus",
-          "greek": "Titus",
-          "latin": "Titus",
+          "hebrew": "אל טיטוס",
+          "greek": "Πρὸς Τίτον",
+          "latin": "Ad Titum",
           "english": "Titus",
-          "french": "Titus",
-          "spanish": "Titus",
-          "italian": "Titus",
-          "portuguese": "Titus",
-          "russian": "Titus"
+          "french": "Tite",
+          "spanish": "Tito",
+          "italian": "Tito",
+          "portuguese": "Tito",
+          "russian": "Титу"
         }
       },
       "PHILE": {
@@ -10614,18 +10607,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 58,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 1,
+        "verses": 25,
         "languages": {
-          "hebrew": "Philemon",
-          "greek": "Philemon",
-          "latin": "Philemon",
+          "hebrew": "אל פילמון",
+          "greek": "Πρὸς Φιλήμονα",
+          "latin": "Ad Philemonem",
           "english": "Philemon",
-          "french": "Philemon",
-          "spanish": "Philemon",
-          "italian": "Philemon",
-          "portuguese": "Philemon",
-          "russian": "Philemon"
+          "french": "Philémon",
+          "spanish": "Filemón",
+          "italian": "Filemone",
+          "portuguese": "Filemom",
+          "russian": "Филимону"
         }
       },
       "HEBR": {
@@ -10634,18 +10627,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 59,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 13,
+        "verses": 303,
         "languages": {
-          "hebrew": "Hebrews",
-          "greek": "Hebrews",
-          "latin": "Hebrews",
+          "hebrew": "אל העברים",
+          "greek": "Πρὸς Ἑβραίους",
+          "latin": "Ad Hebraeos",
           "english": "Hebrews",
-          "french": "Hebrews",
-          "spanish": "Hebrews",
-          "italian": "Hebrews",
-          "portuguese": "Hebrews",
-          "russian": "Hebrews"
+          "french": "Hébreux",
+          "spanish": "Hebreos",
+          "italian": "Ebrei",
+          "portuguese": "Hebreus",
+          "russian": "Евреям"
         }
       },
       "IACO": {
@@ -10654,18 +10647,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 60,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 5,
+        "verses": 108,
         "languages": {
-          "hebrew": "James",
-          "greek": "James",
-          "latin": "James",
+          "hebrew": "יעקב",
+          "greek": "Ἰάκωβος",
+          "latin": "Iacobus",
           "english": "James",
-          "french": "James",
-          "spanish": "James",
-          "italian": "James",
-          "portuguese": "James",
-          "russian": "James"
+          "french": "Jacques",
+          "spanish": "Santiago",
+          "italian": "Giacomo",
+          "portuguese": "Tiago",
+          "russian": "Иакова"
         }
       },
       "I_PETR": {
@@ -10674,18 +10667,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 61,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 5,
+        "verses": 105,
         "languages": {
-          "hebrew": "1 Peter",
-          "greek": "1 Peter",
-          "latin": "1 Peter",
+          "hebrew": "פטרוס א",
+          "greek": "Πέτρου Αʹ",
+          "latin": "1 Petri",
           "english": "1 Peter",
-          "french": "1 Peter",
-          "spanish": "1 Peter",
-          "italian": "1 Peter",
-          "portuguese": "1 Peter",
-          "russian": "1 Peter"
+          "french": "1 Pierre",
+          "spanish": "1 Pedro",
+          "italian": "1 Pietro",
+          "portuguese": "1 Pedro",
+          "russian": "1 Петра"
         }
       },
       "II_PETR": {
@@ -10694,18 +10687,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 62,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 3,
+        "verses": 61,
         "languages": {
-          "hebrew": "2 Peter",
-          "greek": "2 Peter",
-          "latin": "2 Peter",
+          "hebrew": "פטרוס ב",
+          "greek": "Πέτρου Βʹ",
+          "latin": "2 Petri",
           "english": "2 Peter",
-          "french": "2 Peter",
-          "spanish": "2 Peter",
-          "italian": "2 Peter",
-          "portuguese": "2 Peter",
-          "russian": "2 Peter"
+          "french": "2 Pierre",
+          "spanish": "2 Pedro",
+          "italian": "2 Pietro",
+          "portuguese": "2 Pedro",
+          "russian": "2 Петра"
         }
       },
       "I_IOHA": {
@@ -10714,18 +10707,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 63,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 5,
+        "verses": 105,
         "languages": {
-          "hebrew": "1 John",
-          "greek": "1 John",
-          "latin": "1 John",
+          "hebrew": "יוחנן א",
+          "greek": "Ἰωάννου Αʹ",
+          "latin": "1 Ioannis",
           "english": "1 John",
-          "french": "1 John",
-          "spanish": "1 John",
-          "italian": "1 John",
-          "portuguese": "1 John",
-          "russian": "1 John"
+          "french": "1 Jean",
+          "spanish": "1 Juan",
+          "italian": "1 Giovanni",
+          "portuguese": "1 João",
+          "russian": "1 Иоанна"
         }
       },
       "II_IOHA": {
@@ -10734,18 +10727,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 64,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 1,
+        "verses": 13,
         "languages": {
-          "hebrew": "2 John",
-          "greek": "2 John",
-          "latin": "2 John",
+          "hebrew": "יוחנן ב",
+          "greek": "Ἰωάννου Βʹ",
+          "latin": "2 Ioannis",
           "english": "2 John",
-          "french": "2 John",
-          "spanish": "2 John",
-          "italian": "2 John",
-          "portuguese": "2 John",
-          "russian": "2 John"
+          "french": "2 Jean",
+          "spanish": "2 Juan",
+          "italian": "2 Giovanni",
+          "portuguese": "2 João",
+          "russian": "2 Иоанна"
         }
       },
       "III_IOHA": {
@@ -10754,18 +10747,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 65,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 1,
+        "verses": 14,
         "languages": {
-          "hebrew": "3 John",
-          "greek": "3 John",
-          "latin": "3 John",
+          "hebrew": "יוחנן ג",
+          "greek": "Ἰωάννου Γʹ",
+          "latin": "3 Ioannis",
           "english": "3 John",
-          "french": "3 John",
-          "spanish": "3 John",
-          "italian": "3 John",
-          "portuguese": "3 John",
-          "russian": "3 John"
+          "french": "3 Jean",
+          "spanish": "3 Juan",
+          "italian": "3 Giovanni",
+          "portuguese": "3 João",
+          "russian": "3 Иоанна"
         }
       },
       "IUDA": {
@@ -10774,18 +10767,18 @@
         "testament": "Novum_Testamentum",
         "section": "Epistolae",
         "sort_number": 66,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 1,
+        "verses": 25,
         "languages": {
-          "hebrew": "Jude",
-          "greek": "Jude",
-          "latin": "Jude",
+          "hebrew": "יהודה",
+          "greek": "Ἰούδας",
+          "latin": "Iudas",
           "english": "Jude",
           "french": "Jude",
-          "spanish": "Jude",
-          "italian": "Jude",
-          "portuguese": "Jude",
-          "russian": "Jude"
+          "spanish": "Judas",
+          "italian": "Giuda",
+          "portuguese": "Judas",
+          "russian": "Иуды"
         }
       },
       "APOC": {
@@ -10794,18 +10787,18 @@
         "testament": "Novum_Testamentum",
         "section": "Apocalypsis",
         "sort_number": 67,
-        "chapters": 0,
-        "verses": 0,
+        "chapters": 22,
+        "verses": 404,
         "languages": {
-          "hebrew": "Revelation",
-          "greek": "Revelation",
-          "latin": "Revelation",
+          "hebrew": "התגלות",
+          "greek": "Ἀποκάλυψις",
+          "latin": "Apocalypsis",
           "english": "Revelation",
-          "french": "Revelation",
-          "spanish": "Revelation",
-          "italian": "Revelation",
-          "portuguese": "Revelation",
-          "russian": "Revelation"
+          "french": "Apocalypse",
+          "spanish": "Apocalipsis",
+          "italian": "Apocalisse",
+          "portuguese": "Apocalipse",
+          "russian": "Откровение"
         }
       }
     }

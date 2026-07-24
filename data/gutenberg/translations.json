@@ -77,7 +77,7 @@
       "versification": "VUL",
       "direction": "ltr",
       "testament": "both",
-      "description": "Traditional Catholic English translation (uses Vulgate numbering)",
+      "description": "Traditional Catholic English translation (uses Vulgate numbering). NOT YET POPULATED — no verse carries DRA text, so it is withheld from display_config.editions.available.english until an import lands.",
       "nativeName": "Douay-Rheims"
     },
     "SYN": {
@@ -127,7 +127,7 @@
       "versification": "VUL",
       "direction": "ltr",
       "testament": "both",
-      "description": "Portuguese Catholic translation (pending)",
+      "description": "Portuguese Catholic translation. NOT YET POPULATED — only Genesis 1:1 carries POR text, so Portuguese is a coming-soon hook in languages.json rather than a live language.",
       "nativeName": "Bíblia (Vaticano)"
     }
   },
@@ -927,7 +927,7 @@
         "PSAL": "Псалтирь",
         "PROV": "Притчи",
         "ECCLE": "Екклесиаст",
-        "CANT": "Песня Песней",
+        "CANT": "Песнь песней",
         "SAPI": "Премудрость Соломона",
         "ECCLU": "Сирах",
         "ISA": "Исаия",
@@ -949,7 +949,7 @@
         "ZACH": "Захария",
         "MALA": "Малахия",
         "MATHE": "Матфей",
-        "MARC": "Марка",
+        "MARC": "Марк",
         "LUCA": "Лука",
         "IOHA": "Иоанн",
         "ACTU": "Деяния Апостолов",
