@@ -347,7 +347,7 @@ export const catalogAdapter = {
     // road only.
     const goHome = (app) => {
       const home = manifest?.MMdM?.display_config?.focus_ring_startup?.initial_magnified_item || null;
-      const chain = buildCatalogManufacturers(manifest, { initialItemId: home });
+      const chain = buildCatalogManufacturers(manifest, { initialItemId: home, dataStampLetters: ['M', 'B', 'C'] });
       catalogMode = 'manufacturer';
       navStack.length = 0;
       if (app?.setPrimaryItems) {
@@ -356,6 +356,9 @@ export const catalogAdapter = {
         (app.migrateInGathered || app.migrateIn || app.setPrimaryItems)(chain.items, chain.selectedIndex, chain.preserveOrder ?? false);
       }
       if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      // The rebuilt chain carries placeholder data stamps — ask the host to
+      // resolve them again (cached versions apply instantly; see main.js).
+      if (typeof app?.refreshDataStamps === 'function') app.refreshDataStamps();
       return true;
     };
     // The scoped makers ring is recognizable by pure state: child mode with

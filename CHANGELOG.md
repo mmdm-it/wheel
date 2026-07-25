@@ -1,5 +1,25 @@
 # Changelog
 
+## 3.21.0 — the data stamps — runtime data versions, the honest search shelf
+- **The data stamps** (W-7): below the engine's factory stamp, three quiet
+  lines — M, B, C — each volume's `volume_data_version`, read at RUNTIME
+  from its manifest (never baked into the bundle: data ships independently,
+  and the stamp exists to answer "did the push land?"). Fetched with
+  no-cache revalidation on every boot; a manifest that doesn't answer shows
+  `?`, never a silently absent line
+- **Typographic spacing**: the stamp is a block of text, not a run of
+  nodes — its lines carry FRACTIONAL chain orders (a quarter node-spacing,
+  "single spaced"), so the whole block reads like a word processor set it
+- The globe's homecoming rebuilds the top chain with the stamp lines
+  aboard and re-resolves them (session-cached versions apply instantly)
+- **The honest shelf under search arrivals** (fix): landing on a leaf from
+  a country-scoped search planted only the countries ring, so the parent
+  button wore the scope's name (STATI UNITI at a Ford leaf). Arrival now
+  plants the full shelf the reader would have walked — countries ring at
+  the scope, the country's makers at the maker, the cylinder and family
+  floors — so the parent reads MAKER N CIL and OUT descends level by level
+  back to where the search began
+
 ## 3.20.1 — the Tufte erasure — fan lines retired
 - **The fan lines are gone**, convicted by their own absence: the program
   already hid them during every rotation as too busy, and months of daily

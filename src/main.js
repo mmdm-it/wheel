@@ -440,6 +440,46 @@ function updateSearchButton() {
   searchButton.hidden = !searchAvailable || detailSectorVisible || Boolean(splashUp);
 }
 
+// THE DATA STAMPS (W-7): the factory stamp's data lines — each volume's
+// volume_data_version under the engine version, read at RUNTIME from each
+// manifest (data syncs independently of the bundle; a baked stamp would lie
+// exactly when it's used to check whether a data push landed). Fetches use
+// no-cache: always revalidated against the server (a 304 when unchanged
+// costs nothing), so the stamp shows the server's truth. A volume whose
+// manifest never answers shows '?' — never a silently absent line.
+const dataStampCache = new Map(); // letter → last resolved version this session
+async function refreshDataStamps(app) {
+  const items = app?.nav?.items || [];
+  const stamps = items.filter(it => it && typeof it.id === 'string' && it.id.startsWith('data-stamp-'));
+  if (!stamps.length) return; // volumes without the footnote
+  // A rebuilt chain arrives with placeholder lines — re-dress them from the
+  // session cache immediately, then revalidate below.
+  stamps.forEach(it => {
+    const letter = it.id.slice('data-stamp-'.length);
+    if (dataStampCache.has(letter)) it.name = `${letter} ${dataStampCache.get(letter)}`;
+  });
+  await Promise.all(stamps.map(async it => {
+    const letter = it.id.slice('data-stamp-'.length);
+    const cfg = Object.values(volumeConfigs).find(c => c?.stampLetter === letter);
+    let version = '?';
+    if (cfg?.manifestPath) {
+      try {
+        const res = await fetch(cfg.manifestPath, { cache: 'no-cache' });
+        if (res.ok) {
+          const m = await res.json();
+          const root = typeof cfg.extractRoot === 'function' ? cfg.extractRoot(m) : null;
+          version = root?.display_config?.volume_data_version || '?';
+        }
+      } catch (e) { /* '?' stands — the honest unknown */ }
+    }
+    if (version !== '?') dataStampCache.set(letter, version);
+    it.name = `${letter} ${version}`;
+  }));
+  // If the reader is parked near the stamp, one static re-render shows the
+  // resolved lines; otherwise they're correct whenever the chain reaches them.
+  if (currentApp === app && typeof app.refreshPyramid === 'function') app.refreshPyramid();
+}
+
 function scaleAboutCentre(scale) {
   const cx = viewport.width / 2;
   const cy = viewport.height / 2;
@@ -1854,6 +1894,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     }
   } catch (err) { /* diagnostics never break boot */ }
   prefetchGatewayTargets(manifest);
+  // Adapters that rebuild the top chain (the globe's homecoming) re-invoke
+  // this through the hook so rebuilt stamp lines resolve again.
+  app.refreshDataStamps = () => refreshDataStamps(app);
+  app.refreshDataStamps();
 
   if (playSplash) {
     const contentGroup = app?.view?.contentGroup || null;

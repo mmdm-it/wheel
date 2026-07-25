@@ -64,10 +64,16 @@ collaborative track (Wilbur scours, Howell approves). 442 verses corpus-wide
 carry no English today; the flag makes that honest until the text lands.
 
 ### W-7 · Three data versions under the factory stamp
-**Raised:** 2026-07-23 by Wilbur · **Status: ACK**
-M/B/C lines under the engine version, read at RUNTIME from each manifest
-(never build-time — already doctrine in shared memory). `M ?` when a manifest
-is unreadable. Layout is Orville's, settled with Howell at the bench.
+**Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-25)**
+Built as chain links below the engine stamp: one blank link, then M/B/C
+placebo lines. Versions read at RUNTIME per your requirement — fetched
+`cache: no-cache` (revalidated against the server every boot; 304 when
+unchanged), extracted via each volume's own `extractRoot`, so the stamp
+shows the server's truth, never the bundle's memory. `?` when a manifest
+doesn't answer — the line never silently vanishes. Letters are declared on
+the volume configs (`stampLetter`), M reads the lite manifest (carries
+`volume_data_version`, verified). Layout knobs (gap counts) tune at
+Howell's bench if the spacing wants adjusting.
 
 ### W-8 · Cap the child pyramid, and size manufacturer stars in 3 tiers
 **Raised:** 2026-07-24 by Wilbur · **Status: DONE, engine side (Orville, 2026-07-24)**
