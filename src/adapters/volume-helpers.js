@@ -53,6 +53,32 @@ export function getCatalogChildren(manifest, selected) {
   const id = selected?.id;
   if (!id) return [];
 
+  // --- Country-level: the country's manufacturers, as a starfield ---
+  // Children carry WORLD-CHAIN ids (market__country__manu), so a tapped star
+  // re-enters the one continuous manufacturers chain seeded at that maker —
+  // countries index the chain, they never contain it (Howell 2026-07-23).
+  if (id.startsWith('country:')) {
+    const countryKey = id.slice(8);
+    const markets = manifest?.MMdM?.markets || {};
+    for (const [marketId, market] of Object.entries(markets)) {
+      const country = market?.countries?.[countryKey];
+      if (!country) continue;
+      return Object.entries(country.manufacturers || {})
+        .map(([manuKey, manuVal]) => ({
+          id: `${marketId}__${countryKey}__${manuKey}`,
+          name: manuKey,
+          order: Number.isFinite(manuVal?.sort_number) ? manuVal.sort_number : 0,
+          parentId: id,
+          parentName: countryKey,
+          level: 'manufacturer',
+          prominence: manuVal?.prominence // ranked stars, when the data declares tiers
+        }))
+        .sort((a, b) => (a.order - b.order) || a.name.localeCompare(b.name))
+        .map((child, idx) => ({ ...child, order: idx }));
+    }
+    return [];
+  }
+
   // --- Subfamily-level: return models under that subfamily ---
   if (id.startsWith('subfam:')) {
     // id = "subfam:manufacturer:cyl:family:subfamily"
@@ -362,6 +388,31 @@ export function buildPlacesLevel(manifest, levels, levelIndex, { selectedId, par
 // (tests, raw source) read 'dev'.
 const WHEEL_VERSION = typeof __WHEEL_VERSION__ !== 'undefined' ? __WHEEL_VERSION__ : 'dev';
 const VERSION_FOOTNOTE_GAPS = 4;
+
+// THE COUNTRIES RING (Howell 2026-07-23, 5b): a siblings-only index layer
+// ABOVE the world chain. Countries never contain makers on any ring — the
+// manufacturers chain stays one continuous world (the gentleman's design);
+// this ring is how a reader stands somewhere broader (its lens scopes
+// search to a country, its pyramid fans the country's makers). Ids match
+// the adapter graph (`country:KEY`) so the search scope can walk them.
+export function buildCatalogCountries(manifest, { initialItemId } = {}) {
+  const markets = manifest?.MMdM?.markets;
+  if (!markets) return { items: [], selectedIndex: 0, preserveOrder: true };
+  const items = [];
+  Object.entries(markets).forEach(([, market]) => {
+    Object.entries(market?.countries || {}).forEach(([countryKey]) => {
+      items.push({ id: `country:${countryKey}`, name: countryKey, level: 'country', order: 0 });
+    });
+  });
+  // Alphabetical, in the names' own language (Howell 2026-07-23).
+  items.sort((a, b) => a.name.localeCompare(b.name, 'it'));
+  items.forEach((it, idx) => { it.order = idx; });
+  const target = initialItemId ? String(initialItemId).toLowerCase() : null;
+  const idx = target
+    ? items.findIndex(it => it.name.toLowerCase() === target || it.id.toLowerCase() === target)
+    : -1;
+  return { items, selectedIndex: idx >= 0 ? idx : 0, preserveOrder: true };
+}
 
 export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
   const markets = manifest?.MMdM?.markets;

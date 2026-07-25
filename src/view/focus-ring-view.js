@@ -1,6 +1,7 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
-import { bandCenterlinePoints, pointsToPath } from '../geometry/focus-ring-geometry.js';
+import { bandCenterlinePoints, pointsToPath, getParentSeat } from '../geometry/focus-ring-geometry.js';
+import { appendGlobeGlyph } from './dimension-globe.js';
 
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
 const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
@@ -67,7 +68,9 @@ export class FocusRingView {
     this.bandDiagnostic = null;
 
     this.parentButtonOuter = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-    this.parentButtonOuter.setAttribute('class', 'focus-ring-magnifier-circle');
+    // The parent vessel travels RADIALLY — it keeps the radial color while
+    // the magnifier (whose class it shares for size/stroke) wears orbital.
+    this.parentButtonOuter.setAttribute('class', 'focus-ring-magnifier-circle focus-ring-parent-circle');
     this.contentGroup.appendChild(this.parentButtonOuter);
 
     this.parentButtonOuterLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
@@ -247,6 +250,9 @@ export class FocusRingView {
       label.classList.toggle('is-placebo', isPlacebo);
       // The stamp's numerals sit ON the node, like every numeral label.
       const useCentered = Boolean(node.labelCentered) || isPlacebo;
+      // On-node labels sit on the ORBITAL surface and wear its ink
+      // (dark text dies on a dark orbital color — Howell 2026-07-23).
+      label.classList.toggle('label-on-node', useCentered && !isPlacebo);
       const rotDeg = (node.angle * 180) / Math.PI + 180;
       if (useCentered || magScale > 1.01) {
         // Center label on the node circle and apply scale via SVG transform.
@@ -315,14 +321,43 @@ export class FocusRingView {
     if (this.parentButtonOuter && arcParams && magnifier) {
       const magRadius = magnifier.radius || 14;
 
-      // Parent button: explicit viewport-relative placement (top-left origin)
-      const ss = viewport?.SSd ?? 0;
-      const ls = viewport?.LSd ?? viewport?.height ?? 0;
-      const outerX = ss * 0.13;
-      const outerY = ls * 0.93;
+      // Parent button: the SPLIT seat (Howell 2026-07-23) — the vessel sits
+      // directly under the magnifier where the thumb lives; the label keeps
+      // the lower-left corner. Geometry owns the numbers (getParentSeat).
+      const seat = getParentSeat(viewport, magRadius);
+      const outerX = seat.discX;
+      const outerY = seat.discY;
 
       const showOuter = parentButtons?.showOuter !== false;
-      if (showOuter) {
+      // The disc is an AFFORDANCE (Howell 2026-07-23): it draws only when
+      // tapping it migrates data. A context-only label — the top ring's
+      // passing country — gets its words with no vessel.
+      const actionable = parentButtons?.actionable !== false;
+      // The seat can wear an ICON instead of vessel+words: the countries
+      // ring's world globe — tap it and everything returns. The glyph is a
+      // PERSISTENT element, reused across renders like the vessel disc — a
+      // recreated-per-render glyph died between finger-down and finger-up
+      // (a tap's own render destroyed it), so its click never fired.
+      const worldIcon = parentButtons?.icon === 'world';
+      if (showOuter && worldIcon) {
+        if (!this.parentWorldGlyph) {
+          this.parentWorldGlyph = appendGlobeGlyph(this.contentGroup, outerX, outerY, magRadius * 0.92);
+          if (this.parentWorldGlyph) {
+            this.parentWorldGlyph.style.cursor = 'pointer';
+            this.parentWorldGlyph.setAttribute('role', 'button');
+            this.parentWorldGlyph.setAttribute('aria-label', 'All');
+          }
+        }
+        if (this.parentWorldGlyph) {
+          this.parentWorldGlyph.setAttribute('transform', `translate(${outerX} ${outerY})`);
+          this.parentWorldGlyph.removeAttribute('display');
+          this.parentWorldGlyph.onclick = parentButtons?.onOuterClick || null;
+        }
+      } else if (this.parentWorldGlyph) {
+        this.parentWorldGlyph.setAttribute('display', 'none');
+        this.parentWorldGlyph.onclick = null;
+      }
+      if (showOuter && actionable && !worldIcon) {
         this.parentButtonOuter.setAttribute('cx', outerX);
         this.parentButtonOuter.setAttribute('cy', outerY);
         this.parentButtonOuter.setAttribute('r', magRadius);
@@ -345,13 +380,18 @@ export class FocusRingView {
       if (this.parentButtonOuterLabel) {
         const text = parentButtons?.outerLabel || '';
         if (showOuter && text) {
-          const labelX = outerX + magRadius * -1.7; // small negative multiplier to slide start just past stroke
+          const labelX = seat.labelX; // the corner — unchanged by the vessel's move
           this.parentButtonOuterLabel.setAttribute('x', labelX);
-          this.parentButtonOuterLabel.setAttribute('y', outerY);
+          this.parentButtonOuterLabel.setAttribute('y', seat.labelY);
           this.parentButtonOuterLabel.removeAttribute('transform');
           this.parentButtonOuterLabel.textContent = text;
-          this.parentButtonOuterLabel.onclick = parentButtons?.onOuterClick || null;
-          this.parentButtonOuterLabel.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
+          const labelClick = actionable ? (parentButtons?.onOuterClick || null) : null;
+          this.parentButtonOuterLabel.onclick = labelClick;
+          this.parentButtonOuterLabel.style.cursor = labelClick ? 'pointer' : 'default';
+          // Inline, belt-and-suspenders: the label's class family carries
+          // pointer-events:none; the stylesheet override alone proved
+          // fragile in the field (Howell 2026-07-23). Tappable iff live.
+          this.parentButtonOuterLabel.style.pointerEvents = labelClick ? 'auto' : 'none';
           this.parentButtonOuterLabel.removeAttribute('display');
         } else {
           this.parentButtonOuterLabel.setAttribute('display', 'none');

@@ -1,6 +1,7 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildCatalogPyramid } from '../pyramid/volume-pyramid.js';
+import { buildCatalogCountries, buildCatalogManufacturers } from './volume-helpers.js';
 
 const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
 const manifestUrl = './data/mmdm/mmdm_catalog.json';
@@ -339,11 +340,62 @@ export const catalogAdapter = {
         .catch(() => { /* prose is an enhancement; boot never depends on it */ });
     };
     const navStack = []; // stack of snapshots for multi-level IN/OUT
+    // THE ONE ROAD HOME (Howell 2026-07-24): the globe always delivers the
+    // same unique ring — the world's makers, cousins-flat, alphabetical,
+    // gapless (the volume's sanctioned exception to cousin-gap grammar),
+    // seated at the data-declared boot star. It appears at boot and by this
+    // road only.
+    const goHome = (app) => {
+      const home = manifest?.MMdM?.display_config?.focus_ring_startup?.initial_magnified_item || null;
+      const chain = buildCatalogManufacturers(manifest, { initialItemId: home });
+      catalogMode = 'manufacturer';
+      navStack.length = 0;
+      if (app?.setPrimaryItems) {
+        // The homecoming choreography: stars pour onto their world seats,
+        // the rest of the world arrives, the departing ring falls away.
+        (app.migrateInGathered || app.migrateIn || app.setPrimaryItems)(chain.items, chain.selectedIndex, chain.preserveOrder ?? false);
+      }
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      return true;
+    };
+    // The scoped makers ring is recognizable by pure state: child mode with
+    // an EMPTY stack (the only descent that plants no breadcrumb is the one
+    // out of the countries index). Its parent seat wears the globe.
+    const atScopedRoot = () => catalogMode === 'child' && navStack.length === 0;
     const parentHandler = ({ app }) => {
-      if (catalogMode === 'manufacturer') return true; // already at top level — swallow click
+      // THE COUNTRIES RING (Howell 2026-07-23, 5b). From the world chain's
+      // top, OUT ascends to the index layer: the magnified maker's country
+      // rises into the lens, the countries pour in as its siblings, and the
+      // parent seat becomes the globe. From the countries ring, the globe
+      // pours the whole world chain back — every road out of the index
+      // leads down into content.
+      if (catalogMode === 'countries' || atScopedRoot()) return goHome(app);
+      if (catalogMode === 'manufacturer') {
+        const current = app?.nav?.getCurrent?.();
+        const parts = typeof current?.id === 'string' ? current.id.split('__') : [];
+        const countryKey = parts.length >= 2 ? parts[1] : null;
+        if (!countryKey) return true; // no country context (stamp in lens): swallow
+        const chain = buildCatalogCountries(manifest, { initialItemId: countryKey });
+        catalogMode = 'countries';
+        if (app?.setPrimaryItems) {
+          // The kinship sort: siblings fold into the starfield, cousins
+          // fall away, the country rises into the lens.
+          (app.migrateOutFiltered || app.migrateOut || app.setPrimaryItems)(chain.items, chain.selectedIndex, true);
+        }
+        if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+        return true;
+      }
       if (navStack.length === 0) return false;
       const snapshot = navStack.pop();
-      catalogMode = navStack.length === 0 ? 'manufacturer' : 'child';
+      // The mode is what the RESTORED RING IS, not how deep the stack was
+      // (Howell 2026-07-23: popping back to the countries ring with an empty
+      // stack claimed 'manufacturer' — no globe, no label, dead seat).
+      const restoredSel = snapshot?.items?.[snapshot.selectedIndex];
+      const restoredLevel = restoredSel?.level
+        || (typeof restoredSel?.id === 'string' && restoredSel.id.includes('__') ? 'manufacturer' : null);
+      catalogMode = restoredLevel === 'country'
+        ? 'countries'
+        : (navStack.length === 0 ? 'manufacturer' : 'child');
       if (app?.setPrimaryItems) {
         const { items, selectedIndex, preserveOrder } = snapshot;
         // Use migrateOut for animated transition when available; fall back to instant swap.
@@ -361,11 +413,18 @@ export const catalogAdapter = {
     // depth 0 (manufacturers on ring): label = country name from selected item's compound id
     // depth 1 (cylinders on ring):     label = manufacturer name
     // depth 2+ (family/model on ring): label = "MANUFACTURER N CIL" (frozen)
+    // LEVEL-AWARE labels (Howell 2026-07-23): the old depth arithmetic
+    // assumed the stack always began at the world's makers — the countries
+    // layer at the stack's base shifted every floor ("ITALIA FIAT CIL" at a
+    // cylinder ring). Now the stack's SELECTED ITEMS say what they are, and
+    // the label reads from what actually stands there. Works for both ring
+    // flavors: world chain and country-scoped.
     const getParentLabel = (item) => {
-      const depth = navStack.length;
-      if (depth === 0) {
-        // At manufacturer level — parent label is the country.
-        // Selected item id is "market__country__manufacturer".
+      // On the countries ring the parent seat is the GLOBE — no words.
+      if (catalogMode === 'countries') return '';
+      if (navStack.length === 0) {
+        // World makers ring, no stack — parent label is the passing
+        // country, parsed from the compound id "market__country__manu".
         if (!item) return '';
         const id = typeof item.id === 'string' ? item.id : '';
         if (id.includes('__')) {
@@ -374,19 +433,28 @@ export const catalogAdapter = {
         }
         return '';
       }
-      // navStack[0] = manufacturer-level snapshot
-      const mfgSnapshot = navStack[0];
-      const mfgItem = mfgSnapshot?.items?.[mfgSnapshot.selectedIndex];
-      const mfgName = (mfgItem?.name || '').toUpperCase();
-      if (depth === 1) {
-        // At cylinder level — parent label is just the manufacturer.
-        return mfgName;
+      const levelOf = it => it?.level
+        || (typeof it?.id === 'string' && it.id.includes('__') ? 'manufacturer' : null);
+      const selections = navStack
+        .map(s => s?.items?.[s.selectedIndex])
+        .filter(Boolean);
+      const tail = selections[selections.length - 1] || null;
+      const tailLevel = levelOf(tail);
+      // One floor down from a country or a maker: the container's own name.
+      if (tailLevel === 'country' || tailLevel === 'manufacturer') {
+        return (tail.name || '').toUpperCase();
       }
-      // depth >= 2: cylinder level and beyond — "MANUFACTURER N CIL"
-      const cylSnapshot = navStack[1];
-      const cylItem = cylSnapshot?.items?.[cylSnapshot.selectedIndex];
-      const cylName = cylItem?.name || '';
-      return `${mfgName} ${cylName} CIL`;
+      // Deeper (cylinder ring and beyond): the frozen "MAKER N CIL".
+      let maker = null;
+      let cyl = null;
+      for (const it of selections) {
+        const lvl = levelOf(it);
+        if (lvl === 'manufacturer') maker = it;
+        else if (lvl === 'cylinder') cyl = it;
+      }
+      const makerName = (maker?.name || '').toUpperCase();
+      const cylName = cyl?.name || '';
+      return cylName ? `${makerName} ${cylName} CIL` : makerName;
     };
 
     return {
@@ -394,6 +462,17 @@ export const catalogAdapter = {
       parentHandler,
       childrenHandler: () => false,
       getParentLabel,
+      // The vessel shows at every level, the top included (Howell
+      // 2026-07-23): the country's disc is about to become the ascent into
+      // the countries ring (5b) — it stays present now rather than blinking
+      // out for an interim build. The disc-iff-actionable plumbing remains
+      // for any future context-only seat.
+      getParentActionable: () => true,
+      // The globe — the one road home — sits in the parent seat wherever
+      // home is elsewhere: the countries index AND the country-scoped
+      // makers ring (Howell 2026-07-24). At home it never shows: you don't
+      // show the home button when you're home.
+      getParentIcon: () => (catalogMode === 'countries' || atScopedRoot() ? 'world' : null),
       layoutBindings: {
         catalogModeRef: () => catalogMode,
         setCatalogMode: next => { catalogMode = next; },

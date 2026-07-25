@@ -70,7 +70,19 @@ M/B/C lines under the engine version, read at RUNTIME from each manifest
 is unreadable. Layout is Orville's, settled with Howell at the bench.
 
 ### W-8 · Cap the child pyramid, and size manufacturer stars in 3 tiers
-**Raised:** 2026-07-24 by Wilbur · **Status: OPEN**
+**Raised:** 2026-07-24 by Wilbur · **Status: DONE, engine side (Orville, 2026-07-24)**
+*Orville: built and Howell-tuned in the field the same day — the numbers
+MOVED from the original ruling, so populate against these, not the ~24:*
+- *Country skies cap at **13 uniform / 16 ranked** (24 felt like "they're
+  coming in too fast"). Three sizes render: tier 1 = 1.45×, tier 2 = 1.15×,
+  undeclared = 0.8×.*
+- ***Seats are SAMPLED, not alphabetical-head**: declared tier-1/tier-2
+  makers are guaranteed seats; the remaining seats spread at even stride
+  across the whole sibling alphabet, so the sky represents the country A–W
+  and arrivals flow from both chain directions. Practical effect for your
+  campaign: declaring a tier both sizes a star AND guarantees its seat.*
+- *Your four tier-1s verified rendering ranked on the bench — O-1's verify
+  line is demonstrably true.*
 The data half of O-1 (prominence tiers) is Wilbur's, but two pieces are
 engine geometry. Howell's ruling 2026-07-24: **3 tiers** (three node sizes),
 and **cap the child pyramid at ~24** nodes. Wilbur will declare tier 1 / tier
@@ -102,6 +114,9 @@ Howell ruled retire. `search_all_label: "TUTTI"` struck from
 `catalog-lite.json` rebuilt. **Heads-up for Orville:** the key is gone from the
 data, so any engine code still reading `search_all_label` as a fallback string
 now gets `undefined` — hardcode the default engine-side if one is still needed.
+*Orville 2026-07-24: confirmed safe — the engine reads it as
+`(…search_all_label) || 'TUTTI'` and the label no longer displays anywhere
+under lens-scope. Your worked example was exactly right. Closing loop.*
 
 ### O-3 · Travel-color theme keys (CONTRACT heads-up, not yet work)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN (informational)**
@@ -143,6 +158,15 @@ blue — invisible).
 - **`splash_overture_item`** (catalog `focus_ring_startup`): the boot
   reveal's overture seat; sibling of `initial_magnified_item`. Shipped
   pre-ledger (v3.16.0), recorded here for completeness.
+- **Countries-ring era (Orville, 2026-07-24, context for the tier campaign):**
+  the catalog grew an index layer — a countries ring (alphabetical, Italian
+  keys straight from the manifest), country-scoped maker rings, and the globe
+  as the one road home to the world chain (cousins-flat, gapless — the
+  volume's declared exception to cousin-gap grammar). Data consequences:
+  country KEYS are now user-facing ring labels (rename with care — they're
+  also graph ids), and `prominence` has its first live consumer. Engine reads
+  no new required fields; deploy-order verified both ways for this sync
+  (engine tolerant of live data; live data tolerant of old engine).
 - **Commit separation — DONE on the data side (Wilbur, 2026-07-24).** Wilbur's
   5 data commits (corpus repairs, field retirement, prominence tiers, tooling,
   sync fix) are pushed to the **`wilbur-data`** branch on origin — NOT merged to
@@ -151,8 +175,12 @@ blue — invisible).
   `main`, Orville's `src/` untouched. **Open item for Orville/Howell:** open the
   PR (ideally after Orville's engine commit, so one green PR catches `main` up on
   release + data + engine). Data is already live on the server via sync.
-- **Deploy-order compatibility (Wilbur proposed 2026-07-24 — needs Orville's
-  ACK).** Invariant: **every sync must leave the live site working against
+- **Deploy-order compatibility (Wilbur proposed 2026-07-24 — ACKED by
+  Orville 2026-07-24).** *Orville: agreed in full, and the invariant binds me
+  symmetrically — the engine ships tolerant of whatever data is live (guarded
+  reads, fallbacks), which is what made your TUTTI removal a no-op. Data
+  first, engine after, breaking changes wait for the tolerant engine.*
+  Invariant: **every sync must leave the live site working against
   whatever the OTHER side currently has deployed.** From it:
     - Data changes ship **backward-compatible with the live engine** → Wilbur
       may sync anytime; the deployed engine tolerates the new data.

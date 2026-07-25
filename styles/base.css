@@ -2,6 +2,19 @@
   /* bridge theme tokens to legacy variables */
   --color-bg: var(--theme-color-bg, #f5f5f5);
   --color-nodes: var(--theme-color-node, #555555);
+  /* COLOR = DIRECTION OF TRAVEL (Howell 2026-07-23): ORBITAL movement (the
+     focus ring's nodes and the magnifier) wears the band's own gray one
+     step darker — applyTheme derives it from the active band, so every
+     volume follows. RADIAL movement (the parent vessel, the pyramid stars)
+     keeps --color-nodes. The fallback below only fires if applyTheme never
+     ran. */
+  --color-orbital: var(--theme-color-orbital, #5f5e5e);
+  /* On-orbital label ink. DEFAULT = the volume's own text color (Howell
+     2026-07-24: no label is ever white outside the search page — the paper
+     ink was a relic of the demo red). A volume may still declare
+     --theme-color-orbital-label if its orbital goes dark enough to need it;
+     search mode's own rules keep search white regardless. */
+  --color-orbital-label: var(--theme-color-orbital-label, var(--color-text));
   --color-text: var(--theme-color-text, #111111);
   --color-band: var(--theme-color-band, #7a7979);
   --color-accent: var(--theme-color-accent, #1f6feb);
@@ -145,7 +158,7 @@ svg :focus-visible {
 }
 
 .focus-ring-node {
-  fill: var(--color-nodes);
+  fill: var(--color-orbital); /* orbital travel */
   stroke: none;
 }
 
@@ -227,6 +240,13 @@ svg :focus-visible {
    whose stars are dark-on-light. */
 #search-button svg { transition: color 300ms ease; }
 :root.search-mode #search-button svg { color: #cfcfcf; }
+/* TEMPORARY (until Wilbur declares per-volume travel colors): the demo's
+   brick-red orbital measures 1.0:1 against the search ground (the logo-disc
+   blue) — invisible. Search keeps the gold for now. The CONTRACT constraint
+   this proves: an orbital value must read on BOTH grounds, the theme bg AND
+   the detail-sector color the search dims to. */
+:root[data-theme].search-mode .focus-ring-node { fill: var(--color-nodes); }
+:root[data-theme].search-mode .focus-ring-magnifier-circle { fill: var(--color-nodes); }
 :root.search-mode .child-pyramid-node {
   fill: rgba(255, 255, 255, 0.14);
   stroke: rgba(255, 255, 255, 0.30);
@@ -276,7 +296,7 @@ svg :focus-visible {
   opacity: 1;
 }
 .secondary-strata-node {
-  fill: var(--color-nodes);
+  fill: var(--color-orbital); /* the chooser rings travel orbitally too */
   stroke: none;
   cursor: pointer;
   pointer-events: auto; /* the layer is click-through; its nodes are not */
@@ -340,6 +360,31 @@ svg :focus-visible {
 /* diagnostic band removed — was debug scaffolding */
 
 .focus-ring-magnifier-circle {
+  fill: var(--color-orbital); /* the lens is the orbital fixed point */
+}
+
+/* Labels seated ON orbital surfaces wear the orbital ink: centered node
+   numerals/characters, and the magnifier's own label (which sits on the
+   lens). The parent label — despite sharing the magnifier label's class —
+   sits on the GROUND in its corner and keeps the ground's text color. */
+.focus-ring-label.label-on-node { fill: var(--color-orbital-label); }
+.focus-ring-magnifier-label { fill: var(--color-orbital-label); }
+.focus-ring-parent-label {
+  fill: var(--color-text);
+  /* The corner label is TAPPABLE (its class family disables pointer-events;
+     historically the disc sat under it so taps landed anyway — the split
+     seat exposed the truth, Howell 2026-07-23). Its onclick is nulled when
+     the seat is inert, so this never makes a dead label swallow taps. */
+  pointer-events: auto;
+}
+
+/* The countries ring's parent seat wears the world globe — the corner
+   instruments' grey, tap-sized by its hit disc. */
+.world-glyph { color: #363636; }
+
+/* The parent vessel moves data RADIALLY: it keeps the radial color (the
+   historic node yellow), splitting from the magnifier class it shares. */
+.focus-ring-parent-circle {
   fill: var(--color-nodes);
   stroke: var(--color-magnifier-stroke, #000);
   stroke-width: 1px;

@@ -72,6 +72,13 @@ export function buildCatalogPyramid({
     }
     const app = typeof getApp === 'function' ? getApp() : null;
     const parent = app?.nav?.getCurrent?.();
+    // NOTE (Howell 2026-07-23/24): a star tapped in a COUNTRY's sky pours
+    // only that country's makers — the reader DECLARED the filter. NO
+    // breadcrumb is planted for that descent: the scoped ring's parent seat
+    // wears the GLOBE, the one road home, and home is where the index is
+    // reached from. (Deeper drills below the scoped ring breadcrumb
+    // normally.)
+    const parentIsCountry = typeof parent?.id === 'string' && parent.id.startsWith('country:');
     const children = getCatalogChildren(manifest, parent);
     if (!children.length) return;
     const selectedIdx = children.findIndex(m => m.id === instr.item.id);
@@ -82,8 +89,9 @@ export function buildCatalogPyramid({
     // manufacturer's ring seeded at index 0 (Phase C audit H1). Such taps
     // are noise: ignore them; the settled sky is tappable as ever.
     if (selectedIdx < 0) return;
-    // Snapshot current nav state before migrating IN
-    if (typeof savePreInState === 'function' && app?.nav) {
+    // Snapshot current nav state before migrating IN — except when leaving
+    // the countries index (the globe replaces the way back).
+    if (!parentIsCountry && typeof savePreInState === 'function' && app?.nav) {
       const currentItems = app.nav.items;
       const currentIndex = currentItems.indexOf(app.nav.getCurrent());
       savePreInState({ items: currentItems, selectedIndex: currentIndex >= 0 ? currentIndex : 0, preserveOrder: true });
@@ -172,7 +180,21 @@ export function buildCatalogPyramid({
     if (app.setParentButtons) app.setParentButtons({ showOuter: true });
     return true;
   };
-  return { getChildren, onClick, descendTo };
+  // Country skies cap tighter than the default 28 (Howell 2026-07-24):
+  // 13 stars uniform — his observed maximum for Giappone's single-size sky —
+  // or 20 when prominence tiers rank the sizes and make visual room. Other
+  // levels return null and keep the engine default. Display-only: tapping
+  // any star still pours the COMPLETE sibling set.
+  const getSeatCap = ({ selected, anyProminence } = {}) => {
+    if (typeof selected?.id === 'string' && selected.id.startsWith('country:')) {
+      // 20 → 16, Howell 2026-07-24 ("coming in too fast"). spread: the
+      // undeclared seats sample the WHOLE alphabet, so the sky represents
+      // the country A to W and the flocks arrive from both directions.
+      return { cap: anyProminence ? 16 : 13, spread: true };
+    }
+    return null;
+  };
+  return { getChildren, onClick, descendTo, getSeatCap };
 }
 
 export function buildCalendarPyramid({

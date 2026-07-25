@@ -190,9 +190,9 @@ describe('pyramid node appearance', () => {
     const live = read('src/view/detail/pyramid-view.js');
     const clones = read('src/view/migration-animation.js');
     assert.ok(live.includes('applyPyramidNodeAppearance'), 'the live pyramid dresses its nodes');
-    // Every clone builder — animateIn, from-hub, to-hub — must dress too,
-    // or a node changes face mid-flight.
+    // Every clone builder — animateIn, from-hub, to-hub, stars-away — must
+    // dress too, or a node changes face mid-flight.
     const dressed = clones.split('applyPyramidNodeAppearance(').length - 1;
-    assert.equal(dressed, 3, 'all three migration clone builders dress their nodes');
+    assert.equal(dressed, 4, 'all four migration clone builders dress their nodes');
   });
 });

@@ -1,5 +1,51 @@
 # Changelog
 
+## 3.20.0 — the countries era — color as direction, the index ring, the one road home
+- **Color = direction of travel**: ORBITAL movement (ring nodes, magnifier,
+  strata rings) wears the band's own gray one step darker, derived per
+  volume from its band; RADIAL movement (parent vessel, pyramid stars)
+  keeps the node gold. Migration clones fade between the two dresses IN
+  FLIGHT — a disc becomes the vessel as it travels, a star becomes a ring
+  node as it lands. On-orbital label ink defaults to the volume's text
+  color (nothing is ever white outside the search page)
+- **The parent seat splits**: the vessel sits directly under the magnifier —
+  the thumb's home column — while its label keeps the lower-left corner.
+  Every flight retargets: fills travel to the seat, words to the corner.
+  The corner label is now genuinely tappable (its taps had been landing on
+  the disc that used to sit beneath it — for a year)
+- **One seat means back**: the parent vessel while browsing, the search
+  dividers while searching, the globe on filtered rings — whatever sits
+  under the lens takes you back
+- **Search scopes to the lens**: the dividers search whatever is IN the
+  magnifier — KOHLER in the lens searches KOHLER, a country in the lens
+  searches the country. The opening ring forecloses characters no in-scope
+  model begins with; the corner names the scope
+- **THE COUNTRIES RING**: tap the boot ring's country label and ascend to an
+  alphabetical index of eighteen countries. A magnified country fans its
+  makers as a ranked starfield (13 seats uniform / 16 ranked, three tier
+  sizes from the data's prominence declarations, seats SAMPLED across the
+  whole alphabet). Tap a star and that country's makers alone pour onto the
+  ring — the reader's declared filter, honored until released
+- **The globe is the one road home**: it sits in the parent seat wherever
+  home is elsewhere (the index, any filtered ring) and always delivers the
+  same unique ring — the world's makers, cousins-flat, alphabetical,
+  gapless (the volume's declared exception to cousin-gap grammar), seated
+  at the boot star. At home it never shows: you don't show the home button
+  when you're home
+- **The filtering migration**: ascending to a country, the old ring SORTS
+  ITSELF BY KINSHIP — the country's own makers fold inward to their
+  starfield seats (labels rotating in flight, never snapping), unseated kin
+  dissolve into the sky's crowd, foreigners fall away lower-left. Off-screen
+  kin arrive as two flocks from fixed origins — up-chain from above the
+  upper-left corner, down-chain from the lower tangent's extension —
+  assignment by chain order alone
+- **The homecoming mirrors it**: stars with visible world seats pour onto
+  them; stars whose seats lie beyond the window depart along the chain to
+  the flock points; kin who dissolved into the sky re-condense from its
+  centroid, growing into their ring seats. They come back the way they left
+- Index scenes run at half tempo (FILTER_SCENE_SCALE = 2) while the
+  choreography is lived with; one knob restores flight speed
+
 ## 3.19.0 — search mode wears its own light
 - **The lights dim for close work.** Swapping manufacturer names for letters
   wasn't shift enough — nothing said you had picked up a different tool. Now
