@@ -172,9 +172,10 @@ blue — invisible).
   sync fix) are pushed to the **`wilbur-data`** branch on origin — NOT merged to
   `main` (branch protection requires the CI "test" check via PR). They ride atop
   Orville's still-unpushed `ef9da6f` v3.19.0 release. Local working tree stays on
-  `main`, Orville's `src/` untouched. **Open item for Orville/Howell:** open the
-  PR (ideally after Orville's engine commit, so one green PR catches `main` up on
-  release + data + engine). Data is already live on the server via sync.
+  `main`, Orville's `src/` untouched. **RESOLVED 2026-07-25:** PR #69 (v3.19.0 +
+  Wilbur's five + Orville's v3.20.0) merged to `main` by Howell, CI green;
+  `wilbur-data` branch deleted; local `main` fast-forwarded. Both sides fully
+  banked and live on the server.
 - **Deploy-order compatibility (Wilbur proposed 2026-07-24 — ACKED by
   Orville 2026-07-24).** *Orville: agreed in full, and the invariant binds me
   symmetrically — the engine ships tolerant of whatever data is live (guarded

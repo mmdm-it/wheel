@@ -145,14 +145,9 @@ export class FocusRingView {
       this.pyramidSpiralGroup = this.pyramidView.pyramidSpiralGroup;
       this.pyramidNodesGroup = this.pyramidView.pyramidNodesGroup;
       this.pyramidLabelsGroup = this.pyramidView.pyramidLabelsGroup;
-      // Hide fan lines between Magnifier and Child Pyramid nodes while rotating
-      if (this.pyramidFanLinesGroup) {
-        if (isRotating) {
-          this.pyramidFanLinesGroup.setAttribute('display', 'none');
-        } else {
-          this.pyramidFanLinesGroup.removeAttribute('display');
-        }
-      }
+      // (Fan lines retired 2026-07-25 — the group stays as an empty anchor;
+      // the rotating-hide that once lived here was the erasure experiment
+      // that convicted them.)
       // De-emphasize the pyramid during rotation. The dim (opacity 0.5 via
       // the .is-rotating class) is GPU-cheap and stays. The SVG Gaussian
       // blur that used to layer on top was the whole scroll bottleneck —

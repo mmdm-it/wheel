@@ -1,5 +1,20 @@
 # Changelog
 
+## 3.20.1 — the Tufte erasure — fan lines retired
+- **The fan lines are gone**, convicted by their own absence: the program
+  already hid them during every rotation as too busy, and months of daily
+  use never missed them. Howell: "if it's too busy for the dance, how is it
+  not too busy when the dancers take a seat?" Parentage is carried by
+  proximity, the sky's embrace of the lens, and the migration choreography
+  itself. Erased everywhere at once — the live pyramid, the search sky, the
+  boot overture's fan-sweep beats (the reveal's pyramid rhythm tightens)
+- **The cartographer's stroke retired with them** — the label halo existed
+  only to carve Favorites' names a channel through fan-line bundles
+- The fan GEOMETRY survives as the seating lattice (stars sit at fan×spiral
+  intersections): construction lines, never inked
+- The boot overture stands acquitted under the same audit: a tutorial that
+  plays exactly once is self-erasing ink, not ornament
+
 ## 3.20.0 — the countries era — color as direction, the index ring, the one road home
 - **Color = direction of travel**: ORBITAL movement (ring nodes, magnifier,
   strata rings) wears the band's own gray one step darker, derived per

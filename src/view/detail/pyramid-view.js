@@ -95,23 +95,15 @@ export class PyramidView {
     this.#clear(this.pyramidNodesGroup);
     this.#clear(this.pyramidLabelsGroup);
 
-    // Draw connector lines from magnifier origin to each child node.
-    // Grid pyramids (the day grid) have none — the array's rigid order is
-    // its own connection to the parent.
-    const origin = data.magnifierOrigin;
-    if (origin && nodes.length > 0 && !data.gridMode) {
-      nodes.forEach(instr => {
-        const el = this.doc.createElementNS('http://www.w3.org/2000/svg', 'line');
-        el.setAttribute('class', 'child-pyramid-fan-line');
-        el.setAttribute('x1', origin.x);
-        el.setAttribute('y1', origin.y);
-        el.setAttribute('x2', instr.x);
-        el.setAttribute('y2', instr.y);
-        el.setAttribute('stroke', 'black');
-        el.setAttribute('stroke-width', '1');
-        this.pyramidFanLinesGroup.appendChild(el);
-      });
-    }
+    // THE FAN LINES ARE GONE (Howell 2026-07-25, permanent — the Tufte
+    // erasure): convicted by their own absence. The program already hid
+    // them during every rotation as too busy, and months of daily use never
+    // missed them — "if it's too busy for the dance, how is it not too busy
+    // when the dancers take a seat?" Parentage is carried by proximity, the
+    // sky's embrace of the lens, and the migration choreography itself.
+    // The fan GEOMETRY survives in child-pyramid.js as the seating lattice
+    // (stars sit at fan×spiral intersections): construction lines, never
+    // inked.
 
     // Render child nodes at intersection/placement positions.
     this.#clear(this.pyramidNodesGroup);
@@ -158,15 +150,10 @@ export class PyramidView {
         // shared dresser, so the migration clones wear exactly the same face.
         applyPyramidNodeAppearance({ circle, label, instr });
         label.textContent = instr.label || '';
-        // Favorites carve a readable channel through the fan lines: a halo
-        // twin UNDER the node circles (fan lines < halo < circle < text).
-        if (instr.halo) {
-          const halo = label.cloneNode(false);
-          halo.setAttribute('class', 'child-pyramid-label-halo');
-          halo.removeAttribute('data-index');
-          halo.textContent = instr.label || '';
-          this.pyramidHaloGroup.appendChild(halo);
-        }
+        // The cartographer's halo retired WITH the fan lines (Howell
+        // 2026-07-25): its only job was carving a readable channel through
+        // fan-line bundles for the Favorites' long names. No fans, no
+        // channel needed.
         this.pyramidLabelsGroup.appendChild(label);
       });
     } else {
