@@ -1,6 +1,6 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
-import { bandCenterlinePoints, pointsToPath, getParentSeat } from '../geometry/focus-ring-geometry.js';
+import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
 
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
@@ -129,7 +129,19 @@ export class FocusRingView {
     const onNodeClick = options.onNodeClick;
     const selectedId = options.selectedId;
     const parentButtons = options.parentButtons;
-    // Ensure correct z-ordering: pyramid group (with fan lines), then magnifier on top
+    // Ensure correct z-ordering: the PARENT SEAT above the ring labels —
+    // rotating node labels sweep across the seat's ground and must pass
+    // UNDER the vessel and its name, never over them (Howell 2026-07-25) —
+    // then pyramid group, then magnifier on top.
+    if (this.parentButtonOuter?.parentNode === this.contentGroup) {
+      this.contentGroup.appendChild(this.parentButtonOuter);
+    }
+    if (this.parentButtonOuterLabel?.parentNode === this.contentGroup) {
+      this.contentGroup.appendChild(this.parentButtonOuterLabel);
+    }
+    if (this.parentWorldGlyph?.parentNode === this.contentGroup) {
+      this.contentGroup.appendChild(this.parentWorldGlyph);
+    }
     if (this.pyramidGroup?.parentNode === this.contentGroup) {
       this.contentGroup.appendChild(this.pyramidGroup);
     }
@@ -375,11 +387,19 @@ export class FocusRingView {
       if (this.parentButtonOuterLabel) {
         const text = parentButtons?.outerLabel || '';
         if (showOuter && text) {
-          const labelX = seat.labelX; // the corner — unchanged by the vessel's move
+          // The label rejoined its vessel (Howell 2026-07-25): seat by
+          // measured width — short centers on the disc, longer right-aligns
+          // over it ring-style, the longest fall back to the corner.
+          // Content first, then measure, then place.
+          this.parentButtonOuterLabel.textContent = text;
+          this.parentButtonOuterLabel.removeAttribute('display');
+          const w = typeof this.parentButtonOuterLabel.getComputedTextLength === 'function'
+            ? this.parentButtonOuterLabel.getComputedTextLength()
+            : 0;
+          const labelX = getParentLabelLeftX(viewport, magRadius, w);
           this.parentButtonOuterLabel.setAttribute('x', labelX);
           this.parentButtonOuterLabel.setAttribute('y', seat.labelY);
           this.parentButtonOuterLabel.removeAttribute('transform');
-          this.parentButtonOuterLabel.textContent = text;
           const labelClick = actionable ? (parentButtons?.onOuterClick || null) : null;
           this.parentButtonOuterLabel.onclick = labelClick;
           this.parentButtonOuterLabel.style.cursor = labelClick ? 'pointer' : 'default';

@@ -1208,7 +1208,11 @@ export function animateMagnifierToParent(opts) {
   const labelWidth = typeof text.getComputedTextLength === 'function'
     ? text.getComputedTextLength()
     : 0;
-  const labelSeatX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7;
+  // Width-aware seat (the label rejoined its vessel, Howell 2026-07-25):
+  // the caller hands the placement rule as a function of measured width.
+  const labelSeatX = typeof opts.labelLeftXForWidth === 'function'
+    ? opts.labelLeftXForWidth(labelWidth)
+    : (Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7);
   const endLocalDx = (labelSeatX - toX) + (labelWidth * 0.5);
 
   g.style.transformOrigin = `${fromX}px ${fromY}px`;
@@ -1308,7 +1312,11 @@ export function animateParentToMagnifier(opts) {
   const labelWidth = typeof text.getComputedTextLength === 'function'
     ? text.getComputedTextLength()
     : 0;
-  const labelSeatX = Number.isFinite(opts.labelFromX) ? opts.labelFromX : toX + radius * -1.7;
+  // Width-aware seat: departure must start exactly where the settled
+  // label sits (the label rejoined its vessel, Howell 2026-07-25).
+  const labelSeatX = typeof opts.labelLeftXForWidth === 'function'
+    ? opts.labelLeftXForWidth(labelWidth)
+    : (Number.isFinite(opts.labelFromX) ? opts.labelFromX : toX + radius * -1.7);
   const startLocalDx = (labelSeatX - toX) + (labelWidth * 0.5);
 
   g.style.transformOrigin = `${toX}px ${toY}px`;
@@ -1365,16 +1373,13 @@ export function animateVolumeParentMerge(opts) {
   overlay.setAttribute('class', 'migration-animation-overlay volume-parent-merge');
   svgRoot.appendChild(overlay);
 
-  const parentLabelX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7; // the label seat (split from the disc, Howell 2026-07-23)
   const dressMerge = travelColors(svgRoot); // orbital → radial on arrival
 
   const staticBase = document.createElementNS(SVG_NS, 'text');
-  staticBase.setAttribute('x', parentLabelX);
   staticBase.setAttribute('y', toY);
   staticBase.setAttribute('text-anchor', 'start');
   staticBase.setAttribute('dominant-baseline', 'middle');
   staticBase.setAttribute('class', 'focus-ring-magnifier-label');
-  staticBase.setAttribute('transform', `rotate(360, ${parentLabelX}, ${toY})`);
   staticBase.textContent = baseLabel;
   staticBase.style.fill = dressMerge.groundInk; // corner label: ground ink, not lens ink
   overlay.appendChild(staticBase);
@@ -1382,7 +1387,6 @@ export function animateVolumeParentMerge(opts) {
   const baseAdvance = typeof staticBase.getComputedTextLength === 'function'
     ? staticBase.getComputedTextLength()
     : 0;
-  const suffixTargetX = parentLabelX + baseAdvance + (baseLabel ? radius * 0.25 : 0);
 
   const moving = document.createElementNS(SVG_NS, 'g');
   moving.setAttribute('class', 'migration-node');
@@ -1420,6 +1424,19 @@ export function animateVolumeParentMerge(opts) {
   const suffixWidth = typeof text.getComputedTextLength === 'function'
     ? text.getComputedTextLength()
     : 0;
+  // Width-aware seats (the label rejoined its vessel, Howell 2026-07-25):
+  // the base stands at its SOLO seat now and will settle at the seat of
+  // the WHOLE merged label — so it glides between the two while the
+  // suffix flies in. Under the fixed-corner fallback both seats coincide
+  // and the glide is a no-op.
+  const mergeGap = baseLabel ? radius * 0.25 : 0;
+  const seatFn = typeof opts.labelLeftXForWidth === 'function' ? opts.labelLeftXForWidth : null;
+  const fallbackX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7;
+  const soloBaseX = seatFn ? seatFn(baseAdvance) : fallbackX;
+  const mergedBaseX = seatFn ? seatFn(baseAdvance + mergeGap + suffixWidth) : fallbackX;
+  staticBase.setAttribute('x', soloBaseX);
+  setTransform(staticBase, 'translate3d(0px, 0px, 0px)');
+  const suffixTargetX = mergedBaseX + baseAdvance + mergeGap;
   const endLocalDx = (suffixTargetX + (suffixWidth * 0.5)) - toX;
 
   moving.style.transformOrigin = `${fromX}px ${fromY}px`;
@@ -1442,6 +1459,10 @@ export function animateVolumeParentMerge(opts) {
 
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
+
+    // The base slides from its solo seat to the merged label's seat.
+    setTransition(staticBase, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(staticBase, `translate3d(${mergedBaseX - soloBaseX}px, 0px, 0px)`);
 
     setTimeout(() => {
       if (onComplete) onComplete();
@@ -1474,23 +1495,19 @@ export function animateVolumeParentUnmerge(opts) {
   overlay.setAttribute('class', 'migration-animation-overlay volume-parent-unmerge');
   svgRoot.appendChild(overlay);
 
-  const parentLabelX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7; // the label seat (split from the disc, Howell 2026-07-23)
   const dressUnmerge = travelColors(svgRoot);
 
   const staticBase = document.createElementNS(SVG_NS, 'text');
-  staticBase.setAttribute('x', parentLabelX);
   staticBase.setAttribute('y', toY);
   staticBase.setAttribute('text-anchor', 'start');
   staticBase.setAttribute('dominant-baseline', 'middle');
   staticBase.setAttribute('class', 'focus-ring-magnifier-label');
-  staticBase.setAttribute('transform', `rotate(360, ${parentLabelX}, ${toY})`);
   staticBase.textContent = baseLabel;
   overlay.appendChild(staticBase);
 
   const baseAdvance = typeof staticBase.getComputedTextLength === 'function'
     ? staticBase.getComputedTextLength()
     : 0;
-  const suffixStartX = parentLabelX + baseAdvance + (baseLabel ? radius * 0.25 : 0);
 
   const moving = document.createElementNS(SVG_NS, 'g');
   moving.setAttribute('class', 'migration-node');
@@ -1527,6 +1544,17 @@ export function animateVolumeParentUnmerge(opts) {
   const suffixWidth = typeof text.getComputedTextLength === 'function'
     ? text.getComputedTextLength()
     : 0;
+  // Width-aware seats, the merge's mirror (Howell 2026-07-25): the base
+  // stands inside the MERGED label now and settles at its SOLO seat — it
+  // glides home while the suffix departs. Fallback: both seats coincide.
+  const unmergeGap = baseLabel ? radius * 0.25 : 0;
+  const seatFn = typeof opts.labelLeftXForWidth === 'function' ? opts.labelLeftXForWidth : null;
+  const fallbackX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7;
+  const mergedBaseX = seatFn ? seatFn(baseAdvance + unmergeGap + suffixWidth) : fallbackX;
+  const soloBaseX = seatFn ? seatFn(baseAdvance) : fallbackX;
+  staticBase.setAttribute('x', mergedBaseX);
+  setTransform(staticBase, 'translate3d(0px, 0px, 0px)');
+  const suffixStartX = mergedBaseX + baseAdvance + unmergeGap;
   const startLocalDx = (suffixStartX + (suffixWidth * 0.5)) - toX;
 
   moving.style.transformOrigin = `${toX}px ${toY}px`;
@@ -1550,6 +1578,10 @@ export function animateVolumeParentUnmerge(opts) {
     const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${dstRotDeg}deg)`);
+
+    // The base slides home from the merged seat to its solo seat.
+    setTransition(staticBase, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransform(staticBase, `translate3d(${soloBaseX - mergedBaseX}px, 0px, 0px)`);
 
     setTimeout(() => {
       if (onComplete) onComplete();
@@ -1618,8 +1650,6 @@ export function animateParentButtonOutward(opts) {
   }
 
   const text = document.createElementNS(SVG_NS, 'text');
-  const labelX = Number.isFinite(opts.labelX) ? opts.labelX : buttonX + radius * -1.7; // the label seat (split from the disc)
-  text.setAttribute('x', labelX);
   text.setAttribute('y', buttonY);
   text.setAttribute('text-anchor', 'start');
   text.setAttribute('dominant-baseline', 'middle');
@@ -1629,6 +1659,16 @@ export function animateParentButtonOutward(opts) {
   g.appendChild(text);
 
   overlay.appendChild(g);
+
+  // Width-aware seat (the label rejoined its vessel, Howell 2026-07-25):
+  // the clone departs from exactly where the settled label stood.
+  const departWidth = typeof text.getComputedTextLength === 'function'
+    ? text.getComputedTextLength()
+    : 0;
+  const labelX = typeof opts.labelLeftXForWidth === 'function'
+    ? opts.labelLeftXForWidth(departWidth)
+    : (Number.isFinite(opts.labelX) ? opts.labelX : buttonX + radius * -1.7);
+  text.setAttribute('x', labelX);
 
   // Radial direction from hub through the parent button
   const dx = buttonX - hubX;
@@ -1706,8 +1746,6 @@ export function animateParentButtonInward(opts) {
   }
 
   const text = document.createElementNS(SVG_NS, 'text');
-  const labelX = Number.isFinite(opts.labelX) ? opts.labelX : buttonX + radius * -1.7; // the label seat (split from the disc)
-  text.setAttribute('x', labelX);
   text.setAttribute('y', buttonY);
   text.setAttribute('text-anchor', 'start');
   text.setAttribute('dominant-baseline', 'middle');
@@ -1717,6 +1755,16 @@ export function animateParentButtonInward(opts) {
   g.appendChild(text);
 
   overlay.appendChild(g);
+
+  // Width-aware seat (the label rejoined its vessel, Howell 2026-07-25):
+  // the clone arrives at exactly where the render will seat the label.
+  const arriveWidth = typeof text.getComputedTextLength === 'function'
+    ? text.getComputedTextLength()
+    : 0;
+  const labelX = typeof opts.labelLeftXForWidth === 'function'
+    ? opts.labelLeftXForWidth(arriveWidth)
+    : (Number.isFinite(opts.labelX) ? opts.labelX : buttonX + radius * -1.7);
+  text.setAttribute('x', labelX);
 
   // Radial direction from hub through the parent button
   const dx = buttonX - hubX;

@@ -1,5 +1,27 @@
 # Changelog
 
+## 3.21.2 — the label comes home
+- **The parent label leaves the corner and rejoins its vessel**, placed by
+  measured text width under three rules: short labels (IHI) center on the
+  disc; longer labels (FINLANDIA, MITSUBISHI) right-align over it with the
+  ring's own 1.3-radius spill — the parent seat now speaks the same
+  typographic grammar as the unselected ring nodes; labels too long for
+  that fall back to the historic corner start so they never exit the
+  viewport. One min/max expression, continuous at both boundaries
+- **Every flight lands true**: all six flight builders measure their own
+  clone text and ask the same geometry for the settled seat — no pop at
+  settle in any direction
+- **The merge glides**: "FORD" alone sits centered but "FORD 8 CIL" sits
+  right-aligned, so the base label slides between its solo and merged
+  seats while the suffix flies in (and mirrors home on unmerge)
+- Search mode untouched: the scope label keeps its corner — the search
+  page's own grammar
+- **The seat paints above the ring's words**: rotating node labels used to
+  sweep OVER the vessel and clash with its name — the parent seat (disc,
+  label, globe) now rises above the label layer every render, so passing
+  words duck under it and the resting ring never obscures the parent
+  label
+
 ## 3.21.1 — the desktop gate
 - **Desktop visitors get the brand's card, not a broken-feeling wheel**:
   full name ("MECCANISMI MARITTIMI delle MARCHE"), the QR to mmdm.it, "MMdM
