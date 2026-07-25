@@ -48,6 +48,23 @@ function afterPaint(fn) {
   });
 }
 
+// COLOR = DIRECTION OF TRAVEL (Howell 2026-07-23): orbital (ring, magnifier)
+// vs radial (parent vessel, pyramid). Clones fade between the two IN FLIGHT,
+// per the dress doctrine — a node's color belongs to where it is going.
+function travelColors(el) {
+  try {
+    const cs = getComputedStyle(el);
+    const radial = (cs.getPropertyValue('--color-nodes') || '').trim() || '#555';
+    const orbital = (cs.getPropertyValue('--color-orbital') || '').trim() || radial;
+    // Inks: labels ON an orbital surface wear orbitalInk; labels on the
+    // GROUND (the parent's corner) wear the ground's text color. Flying
+    // labels fade between the two as they cross surfaces.
+    const groundInk = (cs.getPropertyValue('--color-text') || '').trim() || '#111';
+    const orbitalInk = (cs.getPropertyValue('--color-orbital-label') || '').trim() || groundInk;
+    return { radial, orbital, groundInk, orbitalInk };
+  } catch (e) { return { radial: '#555', orbital: '#555', groundInk: '#111', orbitalInk: '#111' }; }
+}
+
 function setTransform(el, value) {
   if (!el) return;
   el.style.transform = value;
@@ -167,6 +184,7 @@ export function animateIn(opts) {
     clickedId,
     nodeRadius = 10,
     magnifierRadius,
+    durationMs = null,
     onComplete
   } = opts;
 
@@ -191,7 +209,10 @@ export function animateIn(opts) {
   // 2026-07-22): when the barrier swaps reals for clones, the colours already
   // match. Resolved once from the theme variables.
   const rootStyle = typeof getComputedStyle === 'function' ? getComputedStyle(svgRoot) : null;
-  const ringFill = (rootStyle?.getPropertyValue('--color-nodes') || '').trim() || '#555';
+  // Destination dress = the ORBITAL color: these clones are becoming ring
+  // nodes (radial stars arriving on the orbital track).
+  const ringFill = (rootStyle?.getPropertyValue('--color-orbital') || '').trim()
+    || (rootStyle?.getPropertyValue('--color-nodes') || '').trim() || '#555';
   const magnifierStroke = (rootStyle?.getPropertyValue('--color-magnifier-stroke') || '').trim() || '#000';
   // Labels too: pyramid labels wear an absolute px size fitted to the
   // pyramid; ring labels wear the theme's clamp. The size must travel with
@@ -299,6 +320,8 @@ export function animateIn(opts) {
     return;
   }
 
+  const durIn = durationMs || ANIM_DURATION;
+
   // Force reflow so the browser registers the initial transform
   overlay.getBoundingClientRect();
 
@@ -308,19 +331,19 @@ export function animateIn(opts) {
   // Kick off the animation after the browser has painted the initial state
   afterPaint(() => {
     animEntries.forEach(a => {
-      a.g.style.transition = `transform ${ANIM_DURATION}ms ease-in-out`;
+      a.g.style.transition = `transform ${durIn}ms ease-in-out`;
       a.g.style.transform = `translate(${a.translateX}px, ${a.translateY}px) rotate(${a.rotDelta}deg)`;
 
       // The dress changes IN FLIGHT: radius (where it changes), the pyramid
       // brown fading into the ring brown, and the label growing into the
       // ring's type size — so the barrier's clone-for-real swap lands on
       // identical pixels, no pop.
-      a.circle.style.transition = `r ${ANIM_DURATION}ms ease-in-out, fill ${ANIM_DURATION}ms ease-in-out, stroke ${ANIM_DURATION}ms ease-in-out`;
+      a.circle.style.transition = `r ${durIn}ms ease-in-out, fill ${durIn}ms ease-in-out, stroke ${durIn}ms ease-in-out`;
       if (a.startRadius !== a.endRadius) a.circle.setAttribute('r', a.endRadius);
       a.circle.style.fill = a.ringFill;
       a.circle.style.stroke = a.ringStroke;
       if (a.ringFontSize && a.ringFontSize !== a.pyramidFontSize) {
-        a.label.style.transition = `font-size ${ANIM_DURATION}ms ease-in-out`;
+        a.label.style.transition = `font-size ${durIn}ms ease-in-out`;
         a.label.style.fontSize = a.ringFontSize;
       }
     });
@@ -350,7 +373,7 @@ export function animateIn(opts) {
           animEntries.forEach(a => { a.g.style.opacity = '0'; });
         }
       }
-    }, ANIM_DURATION);
+    }, durIn);
   });
 }
 
@@ -757,6 +780,165 @@ export function animateRingOutward(opts) {
 }
 
 /**
+ * THE KINSHIP SORT (Howell 2026-07-23, the filtering migration): on an
+ * ascent to an index layer, the old ring partitions itself BY ID against
+ * the new pyramid's seats — no predicate, no volume knowledge. Nodes with
+ * a seat waiting (the arriving parent's kin) fly INTO the starfield,
+ * dressing as stars on the way: radius, fill, label size all travel. The
+ * rest (cousins, strangers) fall away lower-left, dimming as they go —
+ * the offstage direction the strata established. With an empty seat map
+ * every node is a stranger: the whole ring falls away (the homecoming's
+ * departing index).
+ *
+ * @param {Object}   opts
+ * @param {SVGElement} opts.svgRoot     — container for the clone overlay
+ * @param {Object[]}   opts.ringNodes   — current ring positions (+label, labelCentered)
+ * @param {Map}        opts.seatsById   — id → pyramid seat {x, y, r, angle, labelFontPx}
+ * @param {Object}     [opts.starStyle] — {fill, stroke, labelFill} probed from the real pyramid
+ * @param {number}     opts.exitDx      — strangers' translation x (off-screen lower-left)
+ * @param {number}     opts.exitDy      — strangers' translation y
+ * @param {SVGElement} [opts.nodesGroup]  — real ring nodes to hide (restored at the barrier by the inward flight)
+ * @param {SVGElement} [opts.labelsGroup]
+ * @param {Function}   [opts.onComplete]
+ */
+export function animateRingPartition(opts) {
+  const {
+    svgRoot,
+    ringNodes = [],
+    seatsById = new Map(),
+    // TRUE kinship, independent of seating (Howell 2026-07-24: the seat map
+    // alone exiled Scripps and every unseated American — kin beyond the sky's
+    // cap must ABSORB into the crowd, not leave with the strangers).
+    kinIds = null,      // Set of ids that belong under the arriving parent
+    absorbPoint = null, // where unseated kin dissolve (the sky's centroid)
+    // The hub, for aiming each kin label's IN-FLIGHT rotation at its seat's
+    // final angle (Howell 2026-07-24: an end-of-flight snap will never look
+    // good; the rotation must travel with the node).
+    hubX = null, hubY = null,
+    starStyle = null,
+    exitDx = -800,
+    exitDy = 400,
+    nodesGroup,
+    labelsGroup,
+    onComplete,
+    durationMs = null
+  } = opts;
+  const dur = durationMs || ANIM_DURATION;
+
+  const txn = txnArm();
+  if (!svgRoot || ringNodes.length === 0) {
+    if (onComplete) onComplete();
+    txnSettle(txn, null);
+    return;
+  }
+
+  _animating = true;
+  if (nodesGroup) nodesGroup.style.opacity = '0';
+  if (labelsGroup) labelsGroup.style.opacity = '0';
+
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay ring-partition');
+  svgRoot.appendChild(overlay);
+
+  const entries = [];
+  ringNodes.forEach(node => {
+    const id = String(node.item?.id ?? node.id ?? '');
+    const seat = id ? seatsById.get(id) : null;
+
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', node.x);
+    circle.setAttribute('cy', node.y);
+    circle.setAttribute('r', node.radius);
+    circle.setAttribute('class', 'focus-ring-node');
+    g.appendChild(circle);
+
+    // Label in a rotating WRAPPER (the parent-flight pattern): the group
+    // translates, the wrapper rotates about the label's own anchor — so a
+    // kin label turns smoothly toward its seat's final angle in flight
+    // instead of snapping there at the barrier.
+    const labelWrap = document.createElementNS(SVG_NS, 'g');
+    labelWrap.setAttribute('class', 'migration-label-wrap');
+    const label = document.createElementNS(SVG_NS, 'text');
+    const rot = (node.angle * 180) / Math.PI + 180;
+    let anchorX; let anchorY;
+    if (node.labelCentered) {
+      anchorX = node.x; anchorY = node.y;
+      label.setAttribute('x', node.x);
+      label.setAttribute('y', node.y);
+      label.setAttribute('text-anchor', 'middle');
+    } else {
+      const offset = node.radius * -1.3;
+      anchorX = node.x + Math.cos(node.angle) * offset;
+      anchorY = node.y + Math.sin(node.angle) * offset;
+      label.setAttribute('x', anchorX);
+      label.setAttribute('y', anchorY);
+      label.setAttribute('text-anchor', 'end');
+    }
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'focus-ring-label');
+    label.textContent = node.label ?? node.item?.name ?? '';
+    labelWrap.appendChild(label);
+    labelWrap.style.transformOrigin = `${anchorX}px ${anchorY}px`;
+    labelWrap.style.webkitTransformOrigin = `${anchorX}px ${anchorY}px`;
+    setTransform(labelWrap, `rotate(${rot}deg)`);
+    g.appendChild(labelWrap);
+    overlay.appendChild(g);
+
+    g.style.transformOrigin = `${node.x}px ${node.y}px`;
+    g.style.transform = 'translate(0px, 0px)';
+    entries.push({ g, circle, label, labelWrap, node, seat, srcRot: rot });
+  });
+
+  overlay.getBoundingClientRect();
+
+  afterPaint(() => {
+    entries.forEach(e => {
+      e.g.style.transition = `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`;
+      if (e.seat) {
+        // KIN: into the starfield, dressing as a star on the way — and
+        // TURNING to its seat's angle in flight (never snapping at the end).
+        e.g.style.transform = `translate(${(e.seat.x - e.node.x).toFixed(1)}px, ${(e.seat.y - e.node.y).toFixed(1)}px)`;
+        e.circle.style.transition = `r ${dur}ms ease-in-out, fill ${dur}ms ease-in-out, stroke ${dur}ms ease-in-out`;
+        if (Number.isFinite(e.seat.r)) e.circle.setAttribute('r', e.seat.r);
+        if (starStyle?.fill) e.circle.style.fill = starStyle.fill;
+        if (starStyle?.stroke) e.circle.style.stroke = starStyle.stroke;
+        e.label.style.transition = `font-size ${dur}ms ease-in-out, fill ${dur}ms ease-in-out`;
+        if (Number.isFinite(e.seat.labelFontPx)) e.label.style.fontSize = `${e.seat.labelFontPx}px`;
+        if (starStyle?.labelFill) e.label.style.fill = starStyle.labelFill;
+        if (Number.isFinite(hubX) && Number.isFinite(hubY)) {
+          const dstRot = (Math.atan2(e.seat.y - hubY, e.seat.x - hubX) * 180) / Math.PI + 180;
+          let delta = dstRot - e.srcRot;
+          while (delta > 180) delta -= 360;
+          while (delta < -180) delta += 360;
+          setTransition(e.labelWrap, `transform ${dur}ms ease-in-out`);
+          setTransform(e.labelWrap, `rotate(${(e.srcRot + delta).toFixed(1)}deg)`);
+        }
+      } else if (kinIds && absorbPoint && kinIds.has(String(e.node.item?.id ?? e.node.id ?? ''))) {
+        // UNSEATED KIN: belongs in this sky but the cap left it no seat —
+        // it folds into the crowd and dissolves there, joining the
+        // etcetera. Never exiled with the strangers.
+        e.g.style.transform = `translate(${(absorbPoint.x - e.node.x).toFixed(1)}px, ${(absorbPoint.y - e.node.y).toFixed(1)}px)`;
+        e.circle.style.transition = `r ${dur}ms ease-in-out`;
+        e.circle.setAttribute('r', Math.max(1, e.node.radius * 0.4));
+        e.g.style.opacity = '0';
+      } else {
+        // STRANGER: falls away lower-left, dimming — released, not deleted.
+        e.g.style.transform = `translate(${exitDx.toFixed(1)}px, ${exitDy.toFixed(1)}px)`;
+        e.g.style.opacity = '0';
+      }
+    });
+
+    setTimeout(() => {
+      _animating = false;
+      if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
+    }, dur);
+  });
+}
+
+/**
  * Animate Focus Ring nodes inward from just outside the viewport to their
  * ring positions.  Used during OUT migration so the parent's focus-ring
  * nodes enter the frame simultaneously with the other animations.
@@ -993,6 +1175,9 @@ export function animateMagnifierToParent(opts) {
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
   if (bare) circle.style.stroke = 'none';
   g.appendChild(circle);
+  // Bound for the parent vessel: orbital fades to radial in flight, the
+  // label ink fades lens' ink to ground ink as it lands in the corner.
+  const dressM2P = travelColors(svgRoot);
 
   // Label centered at magnifier (text-anchor: middle)
   const labelWrap = document.createElementNS(SVG_NS, 'g');
@@ -1014,15 +1199,17 @@ export function animateMagnifierToParent(opts) {
   const translateX = toX - fromX;
   const translateY = toY - fromY;
 
-  // At the parent-button end, the label is offset left by radius × -1.7.
-  // Keep text-anchor fixed (middle) and animate via CSS transform only;
-  // this avoids iOS/WebKit snapping when x/text-anchor/transform-attr
-  // are changed together on SVG <text>.
+  // At the parent end the label lands at ITS OWN seat — the lower-left
+  // corner when the caller passes labelToX (the split seat, Howell
+  // 2026-07-23), else the historic offset left of the disc. Keep
+  // text-anchor fixed (middle) and animate via CSS transform only; this
+  // avoids iOS/WebKit snapping when x/text-anchor/transform-attr are
+  // changed together on SVG <text>.
   const labelWidth = typeof text.getComputedTextLength === 'function'
     ? text.getComputedTextLength()
     : 0;
-  const parentOffsetX = radius * -1.7;
-  const endLocalDx = parentOffsetX + (labelWidth * 0.5);
+  const labelSeatX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7;
+  const endLocalDx = (labelSeatX - toX) + (labelWidth * 0.5);
 
   g.style.transformOrigin = `${fromX}px ${fromY}px`;
   g.style.webkitTransformOrigin = `${fromX}px ${fromY}px`;
@@ -1038,6 +1225,10 @@ export function animateMagnifierToParent(opts) {
   afterPaint(() => {
     setTransition(g, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(g, `translate3d(${translateX}px, ${translateY}px, 0px)`);
+    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
+    circle.style.fill = dressM2P.radial; // orbital → radial: the vessel's dress
+    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
+    text.style.fill = dressM2P.groundInk; // landing on the ground, in its ink
 
     // Rotate to horizontal while translating to parent-label left offset.
     // 360° (instead of 0°) preserves the short interpolation path from
@@ -1066,9 +1257,11 @@ export function animateParentToMagnifier(opts) {
     radius,
     label = '',
     fromAngle = 0,  // magnifier angle (destination angle)
+    durationMs = null,
     onComplete
   } = opts;
 
+  const durP2M = durationMs || ANIM_DURATION;
   const txn = txnArm();
   if (!svgRoot) { if (onComplete) onComplete(); txnSettle(txn, null); return; }
 
@@ -1079,12 +1272,15 @@ export function animateParentToMagnifier(opts) {
   const g = document.createElementNS(SVG_NS, 'g');
   g.setAttribute('class', 'migration-node');
 
-  // Circle starting at parent-button position
+  // Circle starting at parent-button position — in the vessel's RADIAL
+  // dress; it fades to orbital on its way into the lens.
   const circle = document.createElementNS(SVG_NS, 'circle');
   circle.setAttribute('cx', toX);
   circle.setAttribute('cy', toY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  const dressP2M = travelColors(svgRoot);
+  circle.style.fill = dressP2M.radial;
   g.appendChild(circle);
 
   // Label starting offset-left of the parent button (text-anchor: start).
@@ -1099,6 +1295,7 @@ export function animateParentToMagnifier(opts) {
   text.setAttribute('dominant-baseline', 'middle');
   text.setAttribute('class', 'focus-ring-magnifier-label');
   text.textContent = label;
+  text.style.fill = dressP2M.groundInk; // departs the corner in the ground's ink
   labelWrap.appendChild(text);
   g.appendChild(labelWrap);
 
@@ -1111,8 +1308,8 @@ export function animateParentToMagnifier(opts) {
   const labelWidth = typeof text.getComputedTextLength === 'function'
     ? text.getComputedTextLength()
     : 0;
-  const parentOffsetX = radius * -1.7;
-  const startLocalDx = parentOffsetX + (labelWidth * 0.5);
+  const labelSeatX = Number.isFinite(opts.labelFromX) ? opts.labelFromX : toX + radius * -1.7;
+  const startLocalDx = (labelSeatX - toX) + (labelWidth * 0.5);
 
   g.style.transformOrigin = `${toX}px ${toY}px`;
   g.style.webkitTransformOrigin = `${toX}px ${toY}px`;
@@ -1125,18 +1322,22 @@ export function animateParentToMagnifier(opts) {
   overlay.getBoundingClientRect();
 
   afterPaint(() => {
-    setTransition(g, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransition(g, `transform ${durP2M}ms ease-in-out`);
     setTransform(g, `translate3d(${translateX}px, ${translateY}px, 0px)`);
 
     // Reverse label transform back to magnifier-centered + arc rotation.
     const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
-    setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
+    setTransition(labelWrap, `transform ${durP2M}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${dstRotDeg}deg)`);
+    circle.style.transition = `fill ${durP2M}ms ease-in-out`;
+    circle.style.fill = dressP2M.orbital; // radial → orbital: entering the lens
+    text.style.transition = `fill ${durP2M}ms ease-in-out`;
+    text.style.fill = dressP2M.orbitalInk; // ground ink → lens ink
 
     setTimeout(() => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    }, durP2M);
   });
 }
 
@@ -1164,7 +1365,8 @@ export function animateVolumeParentMerge(opts) {
   overlay.setAttribute('class', 'migration-animation-overlay volume-parent-merge');
   svgRoot.appendChild(overlay);
 
-  const parentLabelX = toX + radius * -1.7;
+  const parentLabelX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7; // the label seat (split from the disc, Howell 2026-07-23)
+  const dressMerge = travelColors(svgRoot); // orbital → radial on arrival
 
   const staticBase = document.createElementNS(SVG_NS, 'text');
   staticBase.setAttribute('x', parentLabelX);
@@ -1174,6 +1376,7 @@ export function animateVolumeParentMerge(opts) {
   staticBase.setAttribute('class', 'focus-ring-magnifier-label');
   staticBase.setAttribute('transform', `rotate(360, ${parentLabelX}, ${toY})`);
   staticBase.textContent = baseLabel;
+  staticBase.style.fill = dressMerge.groundInk; // corner label: ground ink, not lens ink
   overlay.appendChild(staticBase);
 
   const baseAdvance = typeof staticBase.getComputedTextLength === 'function'
@@ -1232,6 +1435,10 @@ export function animateVolumeParentMerge(opts) {
   afterPaint(() => {
     setTransition(moving, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(moving, `translate3d(${tx}px, ${ty}px, 0px)`);
+    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
+    circle.style.fill = dressMerge.radial; // the suffix's disc becomes the vessel
+    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
+    text.style.fill = dressMerge.groundInk; // the suffix lands on the ground
 
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
@@ -1267,7 +1474,8 @@ export function animateVolumeParentUnmerge(opts) {
   overlay.setAttribute('class', 'migration-animation-overlay volume-parent-unmerge');
   svgRoot.appendChild(overlay);
 
-  const parentLabelX = toX + radius * -1.7;
+  const parentLabelX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7; // the label seat (split from the disc, Howell 2026-07-23)
+  const dressUnmerge = travelColors(svgRoot);
 
   const staticBase = document.createElementNS(SVG_NS, 'text');
   staticBase.setAttribute('x', parentLabelX);
@@ -1292,6 +1500,7 @@ export function animateVolumeParentUnmerge(opts) {
   circle.setAttribute('cy', toY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  circle.style.fill = dressUnmerge.radial; // departs in the vessel's dress
   moving.appendChild(circle);
 
   const labelWrap = document.createElementNS(SVG_NS, 'g');
@@ -1303,10 +1512,12 @@ export function animateVolumeParentUnmerge(opts) {
   text.setAttribute('dominant-baseline', 'middle');
   text.setAttribute('class', 'focus-ring-magnifier-label');
   text.textContent = suffixLabel;
+  text.style.fill = dressUnmerge.groundInk; // departs the corner in ground ink
   labelWrap.appendChild(text);
   moving.appendChild(labelWrap);
 
   overlay.appendChild(moving);
+  staticBase.style.fill = dressUnmerge.groundInk; // corner label: ground ink
   // Base label above the departing circle — same paint-order rule as the merge.
   overlay.appendChild(staticBase);
 
@@ -1331,6 +1542,10 @@ export function animateVolumeParentUnmerge(opts) {
   afterPaint(() => {
     setTransition(moving, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(moving, `translate3d(${tx}px, ${ty}px, 0px)`);
+    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
+    circle.style.fill = dressUnmerge.orbital; // radial → orbital: back into the lens
+    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
+    text.style.fill = dressUnmerge.orbitalInk; // ground ink → lens ink
 
     const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
@@ -1390,21 +1605,27 @@ export function animateParentButtonOutward(opts) {
   const g = document.createElementNS(SVG_NS, 'g');
   g.setAttribute('class', 'migration-node');
 
-  const circle = document.createElementNS(SVG_NS, 'circle');
-  circle.setAttribute('cx', buttonX);
-  circle.setAttribute('cy', buttonY);
-  circle.setAttribute('r', radius);
-  circle.setAttribute('class', 'focus-ring-magnifier-circle');
-  g.appendChild(circle);
+  // discless (Howell 2026-07-23): a context-only parent (the top ring's
+  // country) has no vessel — its clone departs as words alone.
+  if (!opts.discless) {
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', buttonX);
+    circle.setAttribute('cy', buttonY);
+    circle.setAttribute('r', radius);
+    circle.setAttribute('class', 'focus-ring-magnifier-circle');
+    circle.style.fill = travelColors(svgRoot).radial; // the vessel travels radially
+    g.appendChild(circle);
+  }
 
   const text = document.createElementNS(SVG_NS, 'text');
-  const labelX = buttonX + radius * -1.7;
+  const labelX = Number.isFinite(opts.labelX) ? opts.labelX : buttonX + radius * -1.7; // the label seat (split from the disc)
   text.setAttribute('x', labelX);
   text.setAttribute('y', buttonY);
   text.setAttribute('text-anchor', 'start');
   text.setAttribute('dominant-baseline', 'middle');
   text.setAttribute('class', 'focus-ring-magnifier-label');
   text.textContent = label;
+  text.style.fill = travelColors(svgRoot).groundInk; // a corner label, ground ink
   g.appendChild(text);
 
   overlay.appendChild(g);
@@ -1472,21 +1693,27 @@ export function animateParentButtonInward(opts) {
   const g = document.createElementNS(SVG_NS, 'g');
   g.setAttribute('class', 'migration-node');
 
-  const circle = document.createElementNS(SVG_NS, 'circle');
-  circle.setAttribute('cx', buttonX);
-  circle.setAttribute('cy', buttonY);
-  circle.setAttribute('r', radius);
-  circle.setAttribute('class', 'focus-ring-magnifier-circle');
-  g.appendChild(circle);
+  // discless: arriving at a context-only seat (the top), the clone brings
+  // words alone — no vessel will exist there after the barrier.
+  if (!opts.discless) {
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', buttonX);
+    circle.setAttribute('cy', buttonY);
+    circle.setAttribute('r', radius);
+    circle.setAttribute('class', 'focus-ring-magnifier-circle');
+    circle.style.fill = travelColors(svgRoot).radial; // the vessel travels radially
+    g.appendChild(circle);
+  }
 
   const text = document.createElementNS(SVG_NS, 'text');
-  const labelX = buttonX + radius * -1.7;
+  const labelX = Number.isFinite(opts.labelX) ? opts.labelX : buttonX + radius * -1.7; // the label seat (split from the disc)
   text.setAttribute('x', labelX);
   text.setAttribute('y', buttonY);
   text.setAttribute('text-anchor', 'start');
   text.setAttribute('dominant-baseline', 'middle');
   text.setAttribute('class', 'focus-ring-magnifier-label');
   text.textContent = label;
+  text.style.fill = travelColors(svgRoot).groundInk; // a corner label, ground ink
   g.appendChild(text);
 
   overlay.appendChild(g);
@@ -1513,6 +1740,164 @@ export function animateParentButtonInward(opts) {
 
     setTimeout(() => {
       // Real parent button fill + label will be restored by the caller.
+      if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
+    }, dur);
+  });
+}
+
+/**
+ * Stars whose world seats lie beyond the viewport DEPART ALONG THE CHAIN —
+ * each flies to its flock point (up-chain or down-chain), shrinking and
+ * fading as it goes (Howell 2026-07-24: the circle-wrapped targets sent
+ * them to the hub, the one direction that's never true). Star-dressed
+ * clones, mirroring the arrival flocks.
+ *
+ * @param {Object}   opts
+ * @param {SVGElement} opts.svgRoot — clone overlay container
+ * @param {Object[]}   opts.stars   — pyramid-node-shaped entries, each with
+ *                                    a `to: {x, y}` flock destination
+ * @param {number}    [opts.durationMs]
+ * @param {Function}  [opts.onComplete]
+ */
+export function animateStarsAway(opts) {
+  const { svgRoot, stars = [], durationMs = null, onComplete } = opts;
+  const dur = durationMs || ANIM_DURATION;
+  const txn = txnArm();
+  if (!svgRoot || stars.length === 0) {
+    if (onComplete) onComplete();
+    txnSettle(txn, null);
+    return;
+  }
+  _animating = true;
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay stars-away');
+  svgRoot.appendChild(overlay);
+
+  const flights = [];
+  stars.forEach(star => {
+    if (!star?.to) return;
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', star.x);
+    circle.setAttribute('cy', star.y);
+    circle.setAttribute('r', star.r);
+    circle.setAttribute('class', 'child-pyramid-node');
+    g.appendChild(circle);
+    const label = document.createElementNS(SVG_NS, 'text');
+    label.setAttribute('x', star.x);
+    label.setAttribute('y', star.y);
+    label.setAttribute('text-anchor', 'middle');
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'child-pyramid-label');
+    label.setAttribute('transform', `rotate(${labelRotationDeg(star.angle)}, ${star.x}, ${star.y})`);
+    applyPyramidNodeAppearance({ circle, label, instr: star });
+    label.textContent = star.label ?? star.item?.name ?? '';
+    g.appendChild(label);
+    overlay.appendChild(g);
+    g.style.transformOrigin = `${star.x}px ${star.y}px`;
+    g.style.transform = 'translate(0px, 0px)';
+    flights.push({ g, circle, star });
+  });
+
+  overlay.getBoundingClientRect();
+
+  afterPaint(() => {
+    flights.forEach(f => {
+      f.g.style.transition = `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`;
+      f.g.style.transform = `translate(${(f.star.to.x - f.star.x).toFixed(1)}px, ${(f.star.to.y - f.star.y).toFixed(1)}px)`;
+      f.circle.style.transition = `r ${dur}ms ease-in-out`;
+      f.circle.setAttribute('r', Math.max(1, (f.star.r || 6) * 0.5));
+      f.g.style.opacity = '0';
+    });
+    setTimeout(() => {
+      _animating = false;
+      if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
+    }, dur);
+  });
+}
+
+/**
+ * The absorb, reversed (Howell 2026-07-24): kin who dissolved INTO the sky
+ * on ascent re-condense FROM it on the homecoming — materializing at the
+ * sky's centroid, small and transparent, growing into their ring seats.
+ * They come back the way they left.
+ *
+ * @param {Object}   opts
+ * @param {SVGElement} opts.svgRoot
+ * @param {Object[]}   opts.nodes  — ring-node-shaped targets ({x,y,angle,
+ *                                   radius,label,labelCentered,item}), each
+ *                                   with `from: {x, y}` (the sky centroid)
+ * @param {number}    [opts.durationMs]
+ * @param {Function}  [opts.onComplete]
+ */
+export function animateNodesEmerge(opts) {
+  const { svgRoot, nodes = [], durationMs = null, onComplete } = opts;
+  const dur = durationMs || ANIM_DURATION;
+  const txn = txnArm();
+  if (!svgRoot || nodes.length === 0) {
+    if (onComplete) onComplete();
+    txnSettle(txn, null);
+    return;
+  }
+  _animating = true;
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay nodes-emerge');
+  svgRoot.appendChild(overlay);
+
+  const flights = [];
+  nodes.forEach(node => {
+    if (!node?.from) return;
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', node.x);
+    circle.setAttribute('cy', node.y);
+    circle.setAttribute('r', Math.max(1, node.radius * 0.4));
+    circle.setAttribute('class', 'focus-ring-node');
+    g.appendChild(circle);
+    const label = document.createElementNS(SVG_NS, 'text');
+    const rot = (node.angle * 180) / Math.PI + 180;
+    if (node.labelCentered) {
+      label.setAttribute('x', node.x);
+      label.setAttribute('y', node.y);
+      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('transform', `rotate(${rot}, ${node.x}, ${node.y})`);
+    } else {
+      const offset = node.radius * -1.3;
+      const lx = node.x + Math.cos(node.angle) * offset;
+      const ly = node.y + Math.sin(node.angle) * offset;
+      label.setAttribute('x', lx);
+      label.setAttribute('y', ly);
+      label.setAttribute('text-anchor', 'end');
+      label.setAttribute('transform', `rotate(${rot}, ${lx}, ${ly})`);
+    }
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'focus-ring-label');
+    label.textContent = node.label ?? node.item?.name ?? '';
+    g.appendChild(label);
+    overlay.appendChild(g);
+    // Start AT the sky: translated to the centroid, invisible.
+    g.style.transformOrigin = `${node.x}px ${node.y}px`;
+    setTransform(g, `translate3d(${(node.from.x - node.x).toFixed(1)}px, ${(node.from.y - node.y).toFixed(1)}px, 0px)`);
+    g.style.opacity = '0';
+    flights.push({ g, circle, node });
+  });
+
+  overlay.getBoundingClientRect();
+
+  afterPaint(() => {
+    flights.forEach(f => {
+      setTransition(f.g, `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`);
+      setTransform(f.g, 'translate3d(0px, 0px, 0px)');
+      f.g.style.opacity = '1';
+      f.circle.style.transition = `r ${dur}ms ease-in-out`;
+      f.circle.setAttribute('r', f.node.radius);
+    });
+    setTimeout(() => {
+      _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
     }, dur);

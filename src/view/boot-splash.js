@@ -268,6 +268,8 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints, o
     // the magnifier.
     Array.from(src.querySelectorAll('.focus-ring-magnifier-circle'))
       .filter(pe => !pe.closest('.focus-ring-magnifier'))
+      // A context-only parent has no disc (display:none) — don't ink one.
+      .filter(pe => pe.getAttribute('display') !== 'none')
       .forEach(pe => {
         const c = {
           x: parseFloat(pe.getAttribute('cx')), y: parseFloat(pe.getAttribute('cy')),

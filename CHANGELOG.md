@@ -1,5 +1,81 @@
 # Changelog
 
+## 3.20.0 — the countries era — color as direction, the index ring, the one road home
+- **Color = direction of travel**: ORBITAL movement (ring nodes, magnifier,
+  strata rings) wears the band's own gray one step darker, derived per
+  volume from its band; RADIAL movement (parent vessel, pyramid stars)
+  keeps the node gold. Migration clones fade between the two dresses IN
+  FLIGHT — a disc becomes the vessel as it travels, a star becomes a ring
+  node as it lands. On-orbital label ink defaults to the volume's text
+  color (nothing is ever white outside the search page)
+- **The parent seat splits**: the vessel sits directly under the magnifier —
+  the thumb's home column — while its label keeps the lower-left corner.
+  Every flight retargets: fills travel to the seat, words to the corner.
+  The corner label is now genuinely tappable (its taps had been landing on
+  the disc that used to sit beneath it — for a year)
+- **One seat means back**: the parent vessel while browsing, the search
+  dividers while searching, the globe on filtered rings — whatever sits
+  under the lens takes you back
+- **Search scopes to the lens**: the dividers search whatever is IN the
+  magnifier — KOHLER in the lens searches KOHLER, a country in the lens
+  searches the country. The opening ring forecloses characters no in-scope
+  model begins with; the corner names the scope
+- **THE COUNTRIES RING**: tap the boot ring's country label and ascend to an
+  alphabetical index of eighteen countries. A magnified country fans its
+  makers as a ranked starfield (13 seats uniform / 16 ranked, three tier
+  sizes from the data's prominence declarations, seats SAMPLED across the
+  whole alphabet). Tap a star and that country's makers alone pour onto the
+  ring — the reader's declared filter, honored until released
+- **The globe is the one road home**: it sits in the parent seat wherever
+  home is elsewhere (the index, any filtered ring) and always delivers the
+  same unique ring — the world's makers, cousins-flat, alphabetical,
+  gapless (the volume's declared exception to cousin-gap grammar), seated
+  at the boot star. At home it never shows: you don't show the home button
+  when you're home
+- **The filtering migration**: ascending to a country, the old ring SORTS
+  ITSELF BY KINSHIP — the country's own makers fold inward to their
+  starfield seats (labels rotating in flight, never snapping), unseated kin
+  dissolve into the sky's crowd, foreigners fall away lower-left. Off-screen
+  kin arrive as two flocks from fixed origins — up-chain from above the
+  upper-left corner, down-chain from the lower tangent's extension —
+  assignment by chain order alone
+- **The homecoming mirrors it**: stars with visible world seats pour onto
+  them; stars whose seats lie beyond the window depart along the chain to
+  the flock points; kin who dissolved into the sky re-condense from its
+  centroid, growing into their ring seats. They come back the way they left
+- Index scenes run at half tempo (FILTER_SCENE_SCALE = 2) while the
+  choreography is lived with; one knob restores flight speed
+
+## 3.19.0 — search mode wears its own light
+- **The lights dim for close work.** Swapping manufacturer names for letters
+  wasn't shift enough — nothing said you had picked up a different tool. Now
+  entering search dims the ground to the volume's own logo-disc colour over
+  300ms while the letters arrive: the same room under a different light, not
+  a different place (search is a tool applied to where you stand, not a
+  volume or a stratum). The gold ring simply leaps forward against it —
+  nodes and their on-node labels are untouched, one token doing the work of
+  a repaint (gold-on-ground 1.9:1 → 6.6:1)
+- **The watermark**: the dividers you just pressed, blown up huge and faint
+  behind the completions — the same vocabulary the volume marks already use
+  behind detail text, no new visual language
+- **The scope, in words**: the parent button's LABEL stays (lit, no vessel,
+  no click, no ascent) naming what the search is filtered to. Inside the
+  letters the ring you were standing on is gone, and nothing else said
+  "Ford only". At the top the parent button names the COUNTRY of whoever is
+  in the lens — which would lie about a search spanning every country — so
+  it reads the volume's own "all" word instead (`search_all_label`,
+  data-declared: TUTTI)
+- **Six things inverted or they'd have vanished on a dark ground**: the
+  completion labels and fan lines (painted black by the volume theme), the
+  carriage, the hollow lens during rotation (the lodestar must never be
+  lost), the dividers icon (the way OUT), and the band. Volume themes
+  outrank plain class rules, so these carry `[data-theme]`
+- The ground is the disc's RAW fill, never a composite: the disc is half
+  transparent and paints over this very ground, so compositing darkened it
+  twice. `mix(G, D, α) === G` has one solution — `G === D`
+- All of it a transform on the ACTIVE theme, so any volume that later earns
+  dividers dims in its own hue
+
 ## 3.18.1 — search scope follows the focus ring
 - **Scope inheritance**: the search corpus is every leaf DESCENDED FROM the
   items on the focus ring the search opened from — not the parent button.
@@ -619,6 +695,19 @@
 ### Added
 - Spiral Child Pyramid node layout: nodes are now placed equidistantly along an Archimedean spiral using true arc-length spacing. This provides visually uniform node distribution for all child counts.
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
+
+
+## [data-2026.07.24] - 2026-07-24
+
+### Data
+- MMdM catalog: editorial prominence tier 1 (featured) declared on Caterpillar, Cummins, Detroit Diesel, John Deere — first ranked stars for the star-field redesign (HANDOFF O-1)
+- volume_data_version bump for: mmdm
+
+
+## [data-2026.07.23] - 2026-07-23
+
+### Data
+- volume_data_version bump for: gutenberg
 
 
 ## [data-2026.07.14] - 2026-07-14

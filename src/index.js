@@ -1,4 +1,4 @@
-import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing } from './geometry/focus-ring-geometry.js';
+import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat } from './geometry/focus-ring-geometry.js';
 import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
@@ -11,7 +11,7 @@ import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
-import { animateIn, animateOut, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
+import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
 
@@ -83,6 +83,14 @@ export function createApp({
   contextOptions = {},
   onParentClick,
   getParentLabel: externalGetParentLabel,
+  // Whether tapping the parent button would actually migrate data RIGHT NOW.
+  // The vessel (disc) draws only when this is true — a context-only label
+  // (the top ring's passing country) gets words, no disc (Howell 2026-07-23:
+  // the disc is an affordance, present exactly when it does something).
+  getParentActionable = null,
+  // Optional icon replacing the parent vessel+label at its seat (the
+  // countries ring wears the world globe there — Howell 2026-07-23).
+  getParentIcon = null,
   pyramid,
   pyramidLayoutSpec = null,
   pyramidAdapter = null,
@@ -427,8 +435,16 @@ export function createApp({
       ? (view.parentButtonOuterLabel.textContent || '').trim()
       : '';
     const prevParentLabel = domParentLabel || getParentLabel(prevSelected) || '';
-    const parentButtonX = vp.SSd * 0.13;
-    const parentButtonY = vp.LSd * 0.93;
+    // Was the DEPARTING parent a context-only label (no disc)? The DOM is
+    // the honest pre-state — the adapter has already advanced by now.
+    const departingParentDiscless = view.parentButtonOuter?.getAttribute('display') === 'none';
+    // The split seat (Howell 2026-07-23): disc under the magnifier, label in
+    // the corner. Flights carry the fill to the disc seat and the words to
+    // the label seat.
+    const parentSeat = getParentSeat(vp, magnifierRadius);
+    const parentButtonX = parentSeat.discX;
+    const parentButtonY = parentSeat.discY;
+    const parentLabelSeatX = parentSeat.labelX;
 
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
@@ -554,6 +570,7 @@ export function createApp({
         fromY: magnifier.y,
         toX: parentButtonX,
         toY: parentButtonY,
+        labelToX: parentLabelSeatX,
         radius: magnifierRadius,
         label: '',
         bare: true, // fill only — the stroke arrives later, with the name
@@ -564,6 +581,8 @@ export function createApp({
         svgRoot: view.contentGroup || view.svgRoot,
         buttonX: parentButtonX,
         buttonY: parentButtonY,
+        labelX: parentLabelSeatX,
+        discless: departingParentDiscless,
         radius: magnifierRadius,
         label: isSuffixMergeIn ? '' : prevParentLabel,
         hubX: arcParams.hubX,
@@ -581,6 +600,7 @@ export function createApp({
           fromY: magnifier.y,
           toX: parentButtonX,
           toY: parentButtonY,
+          labelToX: parentLabelSeatX,
           radius: magnifierRadius,
           baseLabel: prevParentLabel,
           suffixLabel: prevMagnifierLabel,
@@ -593,6 +613,7 @@ export function createApp({
           fromY: magnifier.y,
           toX: parentButtonX,
           toY: parentButtonY,
+        labelToX: parentLabelSeatX,
           radius: magnifierRadius,
           label: prevMagnifierLabel,
           fromAngle: magnifier.angle
@@ -673,8 +694,13 @@ export function createApp({
       ? (view.parentButtonOuterLabel.textContent || '').trim()
       : '';
     const prevParentLabel = domParentLabelOut || getParentLabel(nav.getCurrent()) || '';
-    const parentButtonX = vp.SSd * 0.13;
-    const parentButtonY = vp.LSd * 0.93;
+    // The split seat (Howell 2026-07-23): disc under the magnifier, label in
+    // the corner. Flights carry the fill to the disc seat and the words to
+    // the label seat.
+    const parentSeat = getParentSeat(vp, magnifierRadius);
+    const parentButtonX = parentSeat.discX;
+    const parentButtonY = parentSeat.discY;
+    const parentLabelSeatX = parentSeat.labelX;
     // The new parent label (after OUT) is the parent of tempSelected
     const newParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
     // Ascending back TO a suffix-merge ring: the suffix splits off the parent
@@ -777,6 +803,10 @@ export function createApp({
         svgRoot: view.contentGroup || view.svgRoot,
         buttonX: parentButtonX,
         buttonY: parentButtonY,
+        labelX: parentLabelSeatX,
+        // Arriving at a context-only seat (the top): words alone. The
+        // adapter has already advanced, so it answers for the destination.
+        discless: typeof getParentActionable === 'function' ? !getParentActionable() : false,
         radius: magnifierRadius,
         label: isSuffixMergeOut ? '' : newParentLabel,
         hubX: arcParams.hubX,
@@ -794,6 +824,7 @@ export function createApp({
         fromY: magnifier.y,
         toX: parentButtonX,
         toY: parentButtonY,
+        labelToX: parentLabelSeatX,
         radius: magnifierRadius,
         baseLabel: newParentLabel,
         suffixLabel: nextMagnifierLabel,
@@ -806,12 +837,401 @@ export function createApp({
         fromY: magnifier.y,
         toX: parentButtonX,
         toY: parentButtonY,
+        labelFromX: parentLabelSeatX,
         radius: magnifierRadius,
         label: prevParentLabel,
         fromAngle: magnifier.angle
       });
     }
 
+  };
+
+  // Review pace (Howell 2026-07-23): the two index scenes run at half speed
+  // while their choreography is being judged — set to 1 for flight tempo.
+  const FILTER_SCENE_SCALE = 2;
+
+  // The two FLOCK ORIGINS (Howell 2026-07-24): fixed off-screen points the
+  // chain's unseen links arrive from and depart to. Up-chain: above the
+  // upper-left corner on the y-axis. Down-chain: the lower tangent's
+  // extension past the lower-right exit. Both at ¼·LSd out.
+  const flockOrigins = () => {
+    const upper = { x: 0, y: -vp.LSd * 0.25, angle: windowInfo.endAngle };
+    const ex = arcParams.hubX + arcParams.radius * Math.cos(windowInfo.startAngle);
+    const ey = arcParams.hubY + arcParams.radius * Math.sin(windowInfo.startAngle);
+    const lower = {
+      x: ex + Math.sin(windowInfo.startAngle) * vp.LSd * 0.25,
+      y: ey - Math.cos(windowInfo.startAngle) * vp.LSd * 0.25,
+      angle: windowInfo.startAngle
+    };
+    return { upper, lower };
+  };
+
+  // ── THE FILTERING MIGRATION (Howell 2026-07-23) ──────────────────────────
+  // Ascent to an index layer: the old ring SORTS ITSELF BY KINSHIP against
+  // the new pyramid — nodes with a starfield seat waiting fly into it,
+  // dressing as stars; the rest fall away lower-left, dimming. The arriving
+  // parent travels seat → lens; the index's ring pours in. Kinship is pure
+  // id-matching against the committed pyramid: no predicate, no volume
+  // knowledge.
+  const migrateOutFiltered = (newItems, nextSelectedIndex = 0, nextPreserveOrder = true) => {
+    if (isAnimating() || !nav.items?.length) {
+      setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+      return;
+    }
+    // Pre-commit snapshots: the old ring's visible nodes, the old pyramid.
+    const oldVisible = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
+      .map(node => ({
+        ...node,
+        label: formatLabel({ item: node.item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
+      }));
+    const oldPyramidNodes = (lastPyramidData?.nodes || []).slice();
+    // Off-screen kin enter as TWO FLOCKS from fixed origins (Howell
+    // 2026-07-24): up-chain kin from a point above the upper-left corner,
+    // down-chain kin from the lower tangent's extension past the lower-right
+    // corner — assignment by CHAIN ORDER alone. (Per-item circle math placed
+    // far links around the circle at the hub — the same off-the-track
+    // disease the strata nodes had.) Captured before the commit.
+    const oldOrderById = new Map(
+      (nav.items || []).filter(Boolean)
+        .map((it, i) => [String(it.id), Number.isFinite(it.order) ? it.order : i])
+    );
+    // The traveling occupant of the parent seat (the arriving country):
+    // what's on screen, read from the DOM — the adapter has already
+    // advanced its mode.
+    const travelingLabel = (view.parentButtonOuterLabel
+      && view.parentButtonOuterLabel.getAttribute('display') !== 'none')
+      ? (view.parentButtonOuterLabel.textContent || '').trim()
+      : '';
+    const parentSeat = getParentSeat(vp, magnifierRadius);
+
+    if (detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = false;
+      emitDetailSectorChange(false, 'immediate');
+      volumeLogo.collapse(arcParams, magnifier.angle);
+    }
+
+    // The lens and vessel empty; their fills travel as clones.
+    if (view.magnifierLabel) view.magnifierLabel.style.visibility = 'hidden';
+    if (view.magnifierCircle) view.magnifierCircle.style.fill = 'none';
+    if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = 'hidden';
+    if (view.parentButtonOuter) view.parentButtonOuter.style.fill = 'none';
+
+    let pyramidRestoreOwned = false;
+    beginMigrationTransaction({
+      watchdogMs: 2300 * FILTER_SCENE_SCALE,
+      restore: () => {
+        if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+        if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        if (!pyramidRestoreOwned && view.pyramidView?.pyramidGroup) {
+          view.pyramidView.pyramidGroup.style.opacity = '';
+        }
+        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
+      }
+    });
+
+    // The old pyramid retires to the hub while the starfield forms.
+    if (oldPyramidNodes.length) {
+      animatePyramidToHub({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 600 * FILTER_SCENE_SCALE,
+        pyramidNodes: oldPyramidNodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
+
+    // Commit: the ring becomes the index, the pyramid becomes the starfield
+    // (both hidden — the clones carry the scene until the barrier).
+    setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+    if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
+
+    // The SEAT map (who has a place in the new sky) and TRUE KINSHIP (who
+    // belongs under the arriving parent, cap or no cap). The seat map alone
+    // exiled unseated kin — the Scripps bug (Howell 2026-07-24).
+    const seats = new Map((lastPyramidData?.nodes || []).map(n => [String(n.id), n]));
+    const kinIds = new Set(
+      (typeof pyramidConfig?.getChildren === 'function'
+        ? (pyramidConfig.getChildren({ selected: nav.getCurrent() }) || [])
+        : []).map(c => String(c.id)).filter(Boolean)
+    );
+    // Where unseated kin dissolve: the sky's centroid.
+    let absorbPoint = null;
+    if (seats.size) {
+      let sx = 0, sy = 0;
+      seats.forEach(s => { sx += s.x; sy += s.y; });
+      absorbPoint = { x: sx / seats.size, y: sy / seats.size };
+    }
+    // The stars' dress, probed from the real (hidden) pyramid.
+    const probeNode = view.pyramidView?.pyramidNodesGroup?.querySelector?.('.child-pyramid-node');
+    const probeLabel = view.pyramidView?.pyramidLabelsGroup?.querySelector?.('.child-pyramid-label');
+    const starStyle = (typeof getComputedStyle === 'function' && probeNode) ? {
+      fill: getComputedStyle(probeNode).fill,
+      stroke: getComputedStyle(probeNode).stroke,
+      labelFill: probeLabel ? getComputedStyle(probeLabel).fill : null
+    } : null;
+
+    // Kin beyond the viewport arrive as two flocks. Direction is chain
+    // ORDER against the visible window: earlier links stream in from the
+    // upper origin, later links from the lower — each clone rotated to its
+    // entry tangent so the name arrives already reading correctly.
+    const visibleIds = new Set(oldVisible.map(n => String(n.item?.id ?? '')));
+    const visibleOrders = oldVisible
+      .map(n => oldOrderById.get(String(n.item?.id ?? '')))
+      .filter(Number.isFinite);
+    const minVis = visibleOrders.length ? Math.min(...visibleOrders) : 0;
+    const { upper: upperOrigin, lower: lowerOrigin } = flockOrigins();
+    const offscreenKin = [];
+    seats.forEach((seat, id) => {
+      if (visibleIds.has(id)) return;
+      const order = oldOrderById.get(id);
+      if (!Number.isFinite(order)) return; // no chain history — hub safety takes it
+      const flock = order < minVis ? upperOrigin : lowerOrigin;
+      const item = seat.item || { id, name: seat.label };
+      offscreenKin.push({
+        item,
+        x: flock.x,
+        y: flock.y,
+        angle: flock.angle,
+        radius: nodeRadius,
+        label: formatLabel({ item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item }))
+      });
+    });
+
+    animateRingPartition({
+      svgRoot: view.contentGroup || view.svgRoot,
+      durationMs: 600 * FILTER_SCENE_SCALE,
+      ringNodes: [...oldVisible, ...offscreenKin],
+      seatsById: seats,
+      kinIds,
+      absorbPoint,
+      hubX: arcParams.hubX,
+      hubY: arcParams.hubY,
+      starStyle,
+      exitDx: -vp.width * 1.15,
+      exitDy: vp.height * 0.5,
+      nodesGroup: view.nodesGroup,
+      labelsGroup: view.labelsGroup
+    });
+
+    // Hub safety net: only for a seated star with NO chain history at all
+    // (should be empty on any ascent from a complete chain).
+    const covered = new Set([...visibleIds, ...offscreenKin.map(n => String(n.item?.id ?? ''))]);
+    const hubStars = (lastPyramidData?.nodes || []).filter(n => !covered.has(String(n.id)));
+    if (hubStars.length) {
+      pyramidRestoreOwned = true;
+      animatePyramidFromHub({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 600 * FILTER_SCENE_SCALE,
+        pyramidNodes: hubStars,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
+
+    // The index's ring pours in; its lens occupant arrives by the parent
+    // flight below, so its seat stays empty in the pour.
+    const newVisible = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
+      .map(node => ({
+        ...node,
+        label: formatLabel({ item: node.item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
+      }));
+    if (newVisible.length) {
+      animateRingInward({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 900 * FILTER_SCENE_SCALE,
+        ringNodes: newVisible,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        skipId: nav.getCurrent()?.id ?? null,
+        viewportWidth: vp.width,
+        viewportHeight: vp.height,
+        nodesGroup: view.nodesGroup,
+        labelsGroup: view.labelsGroup
+      });
+    }
+
+    // The arriving parent: seat → lens, radial dress fading to orbital.
+    animateParentToMagnifier({
+      svgRoot: view.contentGroup || view.svgRoot,
+      durationMs: 600 * FILTER_SCENE_SCALE,
+      fromX: magnifier.x,
+      fromY: magnifier.y,
+      toX: parentSeat.discX,
+      toY: parentSeat.discY,
+      labelFromX: parentSeat.labelX,
+      radius: magnifierRadius,
+      label: travelingLabel,
+      fromAngle: magnifier.angle
+    });
+  };
+
+  // THE HOMECOMING (the globe): the ring assembles from two sources — the
+  // starfield pours its stars onto their world seats (visible or implied
+  // off-screen), the rest of the world arrives from off-screen — while the
+  // departing index falls away lower-left. The mirror of the ascent.
+  const migrateInGathered = (newItems, nextSelectedIndex = 0, nextPreserveOrder = false) => {
+    if (isAnimating()) {
+      setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+      return;
+    }
+    const oldVisible = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
+      .map(node => ({
+        ...node,
+        label: formatLabel({ item: node.item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
+      }));
+    const oldStars = (lastPyramidData?.nodes || []).slice();
+    // Who dissolved into this sky on the ascent? The magnified country's
+    // FULL kin, minus the seated stars — captured pre-commit so they can
+    // re-condense from the sky's centroid on the way home (Howell
+    // 2026-07-24: they come back the way they left).
+    const preKinIds = new Set(
+      (typeof pyramidConfig?.getChildren === 'function'
+        ? (pyramidConfig.getChildren({ selected: nav.getCurrent() }) || [])
+        : []).map(c => String(c.id)).filter(Boolean)
+    );
+    let skyCentroid = null;
+    if (oldStars.length) {
+      let cx = 0; let cy = 0;
+      oldStars.forEach(s => { cx += s.x; cy += s.y; });
+      skyCentroid = { x: cx / oldStars.length, y: cy / oldStars.length };
+    }
+
+    if (view.magnifierLabel) view.magnifierLabel.style.visibility = 'hidden';
+    if (view.magnifierCircle) view.magnifierCircle.style.fill = 'none';
+    if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = 'hidden';
+    if (view.parentButtonOuter) view.parentButtonOuter.style.fill = 'none';
+
+    let pyramidFromHubLaunched = false;
+    beginMigrationTransaction({
+      watchdogMs: 2300 * FILTER_SCENE_SCALE,
+      restore: () => {
+        if (view.nodesGroup)  view.nodesGroup.style.opacity = '';
+        if (view.labelsGroup) view.labelsGroup.style.opacity = '';
+        if (!pyramidFromHubLaunched && view.pyramidView?.pyramidGroup) {
+          view.pyramidView.pyramidGroup.style.opacity = '';
+        }
+        if (view.magnifierLabel) view.magnifierLabel.style.visibility = '';
+        if (view.magnifierCircle) view.magnifierCircle.style.fill = '';
+        if (view.parentButtonOuterLabel) view.parentButtonOuterLabel.style.visibility = '';
+        if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
+      }
+    });
+
+    // Commit: the world chain, at home.
+    setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+    if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
+
+    // Source one: stars with VISIBLE world seats pour onto them. Stars whose
+    // seats lie beyond the window DEPART ALONG THE CHAIN to the flock points
+    // instead (circle-wrapped far targets sent them to the hub — Howell
+    // 2026-07-24).
+    const targets = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing);
+    const targetIds = new Set(targets.map(t => String(t.item?.id ?? '')));
+    const newOrderById = new Map((nav.items || []).filter(Boolean)
+      .map((it, i) => [String(it.id), Number.isFinite(it.order) ? it.order : i]));
+    const visOrders = targets.map(t => newOrderById.get(String(t.item?.id ?? ''))).filter(Number.isFinite);
+    const minVisOrder = visOrders.length ? Math.min(...visOrders) : 0;
+    const { upper: awayUpper, lower: awayLower } = flockOrigins();
+    const departing = oldStars
+      .filter(s => !targetIds.has(String(s.id)))
+      .map(s => ({ ...s, to: (newOrderById.get(String(s.id)) ?? Infinity) < minVisOrder ? awayUpper : awayLower }));
+    if (departing.length) {
+      animateStarsAway({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 600 * FILTER_SCENE_SCALE,
+        stars: departing
+      });
+    }
+    const arriving = oldStars.filter(s => targetIds.has(String(s.id)));
+    if (arriving.length) {
+      animateIn({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 600 * FILTER_SCENE_SCALE,
+        pyramidNodes: arriving,
+        ringTargets: targets,
+        magnifierAngle: magnifier.angle,
+        clickedId: null,
+        nodeRadius,
+        magnifierRadius
+      });
+    }
+
+    // Source two: the rest of the world arrives from off-screen — EXCEPT
+    // kin who dissolved into the sky on the ascent (in the country's kin
+    // set but never seated): they re-condense FROM the sky's centroid,
+    // growing into their ring seats. They come back the way they left.
+    const starIds = new Set(oldStars.map(n => String(n.id)));
+    const allVisible = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
+      .map(node => ({
+        ...node,
+        label: formatLabel({ item: node.item, context: 'node' }),
+        labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
+      }))
+      .filter(n => !starIds.has(String(n.item?.id ?? '')));
+    const dissolvedKin = allVisible.filter(n => {
+      const id = String(n.item?.id ?? '');
+      return skyCentroid && preKinIds.has(id) && !starIds.has(id);
+    });
+    if (dissolvedKin.length) {
+      animateNodesEmerge({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 600 * FILTER_SCENE_SCALE,
+        nodes: dissolvedKin.map(n => ({ ...n, from: skyCentroid }))
+      });
+    }
+    const emergedIds = new Set(dissolvedKin.map(n => String(n.item?.id ?? '')));
+    const newVisible = allVisible.filter(n => !emergedIds.has(String(n.item?.id ?? '')));
+    if (newVisible.length) {
+      animateRingInward({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 900 * FILTER_SCENE_SCALE,
+        ringNodes: newVisible,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        arcRadius: arcParams.radius,
+        skipId: null,
+        viewportWidth: vp.width,
+        viewportHeight: vp.height,
+        nodesGroup: view.nodesGroup,
+        labelsGroup: view.labelsGroup
+      });
+    }
+
+    // The departing index falls away lower-left (empty seat map: all
+    // strangers). Group hiding/restoring belongs to the inward flight.
+    if (oldVisible.length) {
+      animateRingPartition({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 600 * FILTER_SCENE_SCALE,
+        ringNodes: oldVisible,
+        seatsById: new Map(),
+        exitDx: -vp.width * 1.15,
+        exitDy: vp.height * 0.5
+      });
+    }
+
+    // Home's own pyramid forms from the hub.
+    if (lastPyramidData?.nodes?.length) {
+      pyramidFromHubLaunched = true;
+      animatePyramidFromHub({
+        svgRoot: view.contentGroup || view.svgRoot,
+        durationMs: 600 * FILTER_SCENE_SCALE,
+        pyramidNodes: lastPyramidData.nodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
   };
 
   const shiftLayersOut = () => {
@@ -982,8 +1402,33 @@ export function createApp({
           return t === 1 || t === 2 ? t : 3;
         };
         const anyProminence = children.some(ch => tierOf(ch) < 3);
-        const seatOrder = children.map((_, i) => i);
+        // A volume may supply a per-sky policy: a number (the cap) or
+        // { cap, spread } — spread SAMPLES the undeclared seats uniformly
+        // across the whole sibling range instead of taking the alphabet's
+        // head (Howell 2026-07-24: a head-only sky made every flock arrive
+        // from one direction, and showed A–H as if it were the country).
+        const policy = typeof pyramidConfig?.getSeatCap === 'function'
+          ? pyramidConfig.getSeatCap({ selected: pyramidSelected, anyProminence, childCount: children.length })
+          : null;
+        const policyCap = typeof policy === 'object' && policy !== null ? policy.cap : policy;
+        const policySpread = Boolean(typeof policy === 'object' && policy !== null && policy.spread);
+        const SEAT_CAP = Number.isFinite(policyCap) && policyCap > 0 ? policyCap : 28;
+        const seatCount = Math.min(children.length, SEAT_CAP);
+
+        let seatPool = children.map((_, i) => i);
+        if (policySpread && children.length > seatCount) {
+          const prominent = seatPool.filter(i => tierOf(children[i]) < 3);
+          const rest = seatPool.filter(i => tierOf(children[i]) === 3);
+          const room = Math.max(0, seatCount - prominent.length);
+          const sampled = [];
+          for (let k = 0; k < room && rest.length; k += 1) {
+            sampled.push(rest[Math.floor((k * rest.length) / room)]);
+          }
+          seatPool = [...prominent, ...sampled];
+        }
+        const seatOrder = seatPool.slice();
         if (anyProminence) seatOrder.sort((a, b) => (tierOf(children[a]) - tierOf(children[b])) || (a - b));
+        else seatOrder.sort((a, b) => a - b);
         const scaleForTier = t => (!anyProminence ? 1 : (t === 1 ? 1.45 : t === 2 ? 1.15 : 0.8));
         // Depth taper (Howell 2026-07-19): an overloaded sky implies its own
         // "etcetera" — past the first seats, stars shrink toward a smudge
@@ -1003,8 +1448,8 @@ export function createApp({
         // chapter sky seats ~60, the smudge tail implying the rest (and the
         // processor thanks us at migration time). Tapping any star still
         // migrates the COMPLETE sibling set; nothing is unreachable.
-        const SEAT_CAP = 28; // 60 → 35 → 28, Howell's eye converging (2026-07-19)
-        const seatCount = Math.min(children.length, SEAT_CAP);
+        // 60 → 35 → 28, Howell's eye converging (2026-07-19); country skies
+        // ride the policy above.
 
         const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
           logoBounds: volumeLogo.getBounds(),
@@ -1094,7 +1539,9 @@ export function createApp({
           outerLabel: parentOuterLabel,
           onOuterClick: shiftLayersOut,
           isLayerOut,
-          showOuter: parentButtonsVisibility.showOuter
+          showOuter: parentButtonsVisibility.showOuter,
+          actionable: typeof getParentActionable === 'function' ? Boolean(getParentActionable()) : true,
+          icon: typeof getParentIcon === 'function' ? getParentIcon() : null
         },
         pyramidData,
         logoBounds: volumeLogo.getBounds()
@@ -1421,6 +1868,8 @@ export function createApp({
     setParentButtons,
     migrateIn,
     migrateOut,
+    migrateOutFiltered,
+    migrateInGathered,
     handlePyramidNodeClick: idx => {
       if (isAnimating()) return; // block clicks during migration animation
       if (!lastPyramidData) return;

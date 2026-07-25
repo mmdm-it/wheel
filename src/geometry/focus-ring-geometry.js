@@ -38,6 +38,22 @@ export function getMagnifierPosition(viewport) {
   };
 }
 
+// The parent button's SPLIT seat (Howell 2026-07-23, ergonomics): the VESSEL
+// (disc) sits directly under the magnifier — the thumb's home column — while
+// its LABEL stays in the lower-left corner, exactly where the combined seat
+// always put it (the historic 0.13·SSd disc minus the 1.7-radius label
+// offset). One source of truth: the live render, every migration flight, and
+// the boot splash all read this seat.
+export function getParentSeat(viewport, magnifierRadius = null) {
+  const magR = Number.isFinite(magnifierRadius) ? magnifierRadius : viewport.SSd * 0.06;
+  return {
+    discX: getMagnifierPosition(viewport).x,
+    discY: viewport.LSd * 0.93,
+    labelX: viewport.SSd * 0.13 + magR * -1.7,
+    labelY: viewport.LSd * 0.93
+  };
+}
+
 export function getBaseAngleForOrder(order, viewport, nodeSpacing) {
   const magnifierAngle = getMagnifierAngle(viewport);
   const normalizedOrder = Number.isFinite(order) ? order : 0;

@@ -38,6 +38,39 @@ const el = (tag, attrs) => {
   return n;
 };
 
+// A STATIC globe glyph drawn into an existing SVG container — the countries
+// ring's parent seat wears this (the world: tap it and everything returns —
+// Howell 2026-07-23). Same construction as the button globe, at rest pose,
+// plus an invisible hit disc so thin strokes don't make a thin target.
+export function appendGlobeGlyph(container, cx, cy, r) {
+  if (!container || typeof document === 'undefined') return null;
+  // Outer group = position only (safe for a caller to retranslate on reuse);
+  // inner group carries the fixed tilt.
+  const outer = el('g', { class: 'world-glyph', transform: `translate(${cx} ${cy})` });
+  const g = el('g', { transform: `rotate(${TILT_DEG})` });
+  outer.appendChild(g);
+  const line = attrs => g.appendChild(el('ellipse', {
+    cx: '0', cy: '0', fill: 'none', stroke: 'currentColor',
+    'stroke-width': '1', 'vector-effect': 'non-scaling-stroke', ...attrs
+  }));
+  g.appendChild(el('circle', {
+    cx: '0', cy: '0', r: String(r * 1.25), fill: 'transparent', stroke: 'none'
+  })); // the hit disc
+  line({ rx: String(r), ry: String(r) });
+  for (const lat of PARALLEL_LATS) {
+    const a = (lat * Math.PI) / 180;
+    const prx = r * Math.cos(a);
+    line({ cy: String((-r * Math.sin(a)).toFixed(2)), rx: prx.toFixed(2), ry: (prx * PARALLEL_SQUASH).toFixed(2) });
+  }
+  const rest = Math.PI / (2 * MERIDIAN_COUNT); // the balanced pose
+  for (let i = 0; i < MERIDIAN_COUNT; i += 1) {
+    const rx = Math.max(MIN_RX, r * Math.abs(Math.sin((i * Math.PI) / MERIDIAN_COUNT + rest)));
+    line({ rx: rx.toFixed(2), ry: String(r) });
+  }
+  container.appendChild(outer);
+  return outer;
+}
+
 // Draw the globe into the button (replacing whatever art is there) and hand
 // back its spin. Meridian phases persist across spins, so successive presses
 // keep turning the same globe the same way instead of rewinding it.

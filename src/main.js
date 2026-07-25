@@ -16,10 +16,11 @@ import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
-import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle } from './geometry/focus-ring-geometry.js';
+import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 import { mountDimensionGlobe } from './view/dimension-globe.js';
 import { mountSearchDividers } from './view/search-dividers.js';
+import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
 
 const svg = document.getElementById('app');
 
@@ -142,13 +143,35 @@ let searchScopedCorpus = [];    // the active subset: leaves under the ring the 
 let searchOpeningAllowed = null;// first-characters the opening ring is pruned to when scoped
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
+let searchAllLabel = 'TUTTI';   // what the scope label says when nothing is filtered
 
-// THE SCOPE (Howell 2026-07-22): the corpus is every leaf DESCENDED FROM the
-// items on the focus ring the search opened from — not the parent button.
-// Standing in Mercedes' cylinders, search is Mercedes only; at the top the
-// ring holds all manufacturers, so the union is the whole volume and the
-// country in the parent button never scopes anything (the exception that
-// isn't). A ring item's id encodes its shelf-path prefix, and every model's
+// IN SEARCH, the dividers take the parent disc's seat — directly under the
+// magnifier. That seat means BACK on every screen (Howell 2026-07-23): the
+// parent vessel while browsing, the dividers while searching. Out of search
+// they return to their corner (the stylesheet's position).
+function seatSearchButton(inSearch) {
+  if (!searchButton) return;
+  if (inSearch) {
+    const seat = getParentSeat(viewport);
+    searchButton.style.left = `${seat.discX.toFixed(0)}px`;
+    searchButton.style.top = `${seat.discY.toFixed(0)}px`;
+    searchButton.style.right = 'auto';
+    searchButton.style.bottom = 'auto';
+    searchButton.style.transform = 'translate(-50%, -50%)';
+  } else {
+    searchButton.style.left = '';
+    searchButton.style.top = '';
+    searchButton.style.right = '';
+    searchButton.style.bottom = '';
+    searchButton.style.transform = '';
+  }
+}
+
+// THE SCOPE (Howell 2026-07-23, superseding the ring rule): the corpus is
+// every leaf DESCENDED FROM WHAT IS IN THE MAGNIFIER. With KOHLER in the
+// lens, the dividers search KOHLER — the search is the deep version of the
+// pyramid, everything under the lens filtered by letters. One object of
+// attention. An item's id encodes its shelf-path prefix, and every model's
 // id is that same prefix — so scope is pure id-prefix containment, no graph
 // walk, no cross-dialect ambiguity.
 function searchScopeSpec(item) {
@@ -162,12 +185,21 @@ function searchScopeSpec(item) {
   if (id.includes('__')) return { prefix: `model:${id.split('__').slice(2).join('__')}:` }; // top-level maker
   return null;
 }
-function scopeCorpusForRing(ringItems) {
-  const specs = (ringItems || []).filter(Boolean).map(searchScopeSpec).filter(Boolean);
-  if (!specs.length) return searchCorpusEntries.slice(); // unrecognized ring: no scope, whole corpus
-  const exacts = new Set(specs.filter(s => s.exact).map(s => s.exact));
-  const prefixes = specs.filter(s => s.prefix).map(s => s.prefix);
-  return searchCorpusEntries.filter(e => exacts.has(e.item.id) || prefixes.some(p => e.item.id.startsWith(p)));
+function scopeCorpusForLens(lensItem) {
+  // A COUNTRY in the lens scopes to all its makers' models. Model ids don't
+  // carry the country, so walk the adapter graph: the country's manufacturer
+  // children each contribute their model-id prefix.
+  if (typeof lensItem?.id === 'string' && lensItem.id.startsWith('country:')) {
+    const prefixes = [];
+    for (const it of searchGraphById.values()) {
+      if (it?.level === 'manufacturer' && it.parentId === lensItem.id) prefixes.push(`model:${it.name}:`);
+    }
+    if (prefixes.length) return searchCorpusEntries.filter(e => prefixes.some(p => e.item.id.startsWith(p)));
+  }
+  const spec = lensItem ? searchScopeSpec(lensItem) : null;
+  if (!spec) return searchCorpusEntries.slice(); // unrecognized lens: whole volume
+  if (spec.exact) return searchCorpusEntries.filter(e => e.item.id === spec.exact);
+  return searchCorpusEntries.filter(e => e.item.id.startsWith(spec.prefix));
 }
 
 function searchCharItems(allowed = null) {
@@ -221,7 +253,9 @@ function updateSearchCarriage() {
     const p = getMagnifierPosition(viewport);
     const deg = (getMagnifierAngle(viewport) * 180) / Math.PI + 180;
     searchStringEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-    searchStringEl.setAttribute('class', 'focus-ring-magnifier-label');
+    // The carriage wears the magnifier label's type, plus its own class so
+    // it can be lit for the dark ground (it sits on the GROUND, not on a node).
+    searchStringEl.setAttribute('class', 'focus-ring-magnifier-label search-carriage');
     searchStringEl.setAttribute('x', String(-viewport.SSd * 0.115));
     searchStringEl.setAttribute('y', '0');
     searchStringEl.setAttribute('text-anchor', 'end');
@@ -314,6 +348,8 @@ function searchArrive(entry) {
     searchRestore = null;
     searchPrefix = '';
     if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+    exitSearchLook({ svg }); // the lights come up as the found leaf arrives
+    seatSearchButton(false); // back to the corner — the arriving parent owns the seat
     if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
     // The empty corner is dressed in strict order (Howell 2026-07-22):
     // FIRST the golden fill arrives (the labelless disc, handing off to the
@@ -348,11 +384,13 @@ function exitSearchMode() {
   // pyramid wrapper must already answer in browse voice — clearing after
   // painted an empty pyramid over the restored ring (Howell caught it).
   const restore = searchRestore;
+  seatSearchButton(false); // the dividers yield the seat back to the parent vessel
   searchRestore = null;
   searchPrefix = '';
   app.setPrimaryItems(restore.items, restore.selectedIndex, true);
   app.setParentButtons({ showOuter: true }); // the vessel returns with the browse chain
   if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+  exitSearchLook({ svg }); // the lights come back up
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
 }
 
@@ -365,16 +403,27 @@ function toggleSearchRing() {
     selectedIndex: app.nav.getCurrentIndex()
   };
   searchPrefix = '';
-  // Scope to the ring the search opened from.
-  searchScopedCorpus = scopeCorpusForRing(searchRestore.items);
-  // The opening ring stays FULL when scope is the whole volume (keep the
-  // dead X and 0 — the virgin alphabet reads "type anything", Howell's
-  // baby-steps ruling); when NARROWED it prunes to the scope's first
-  // characters, so a foreclosed path (no Mercedes model starts with G) is
-  // simply absent from the ring (Howell 2026-07-22).
+  // 5a (Howell 2026-07-23): scope = WHAT IS IN THE MAGNIFIER. The lens item
+  // is captured before the character chain replaces it.
+  const lensItem = app.nav.getCurrent();
+  searchScopedCorpus = scopeCorpusForLens(lensItem);
+  // The opening ring prunes to the scope's first characters — a path no
+  // in-scope model begins is simply absent, foreclosed (Howell's Mercedes
+  // ruling). The virgin full ring survives only in the unrecognized-lens
+  // fallback, where scope is the whole volume.
   const narrowed = searchScopedCorpus.length < searchCorpusEntries.length;
   searchOpeningAllowed = narrowed ? new Set(searchScopedCorpus.map(e => e.norm[0])) : null;
+  // The scope, in words: the LENS's own label — the user searches the thing
+  // they were looking at, and the corner says so. Read from the magnifier's
+  // DOM (the display form: KOHLER), before the letters land there.
+  const lensLabel = (app.view?.magnifierLabel?.textContent || '').trim()
+    || String(lensItem?.name || '') || searchAllLabel;
+  const seat = getParentSeat(viewport);
   updateSearchCarriage(); // seats the (empty) carriage at the lens
+  // The lights dim for close work, and the pressed tool ghosts in behind.
+  enterSearchLook({ svg, viewport });
+  seatSearchButton(true); // the dividers take the back seat under the lens
+  setSearchScopeLabel(svg, { text: lensLabel, x: seat.labelX, y: seat.labelY });
   app.setPrimaryItems(searchCharItems(searchOpeningAllowed), 0, true);
   // The parent button has no meaning over the character ring — no vessel,
   // nothing to ascend to. It leaves entirely (Howell 2026-07-22).
@@ -913,6 +962,19 @@ function applyTheme(manifest, volume) {
   root.style.setProperty('--theme-color-node', active.node);
   root.style.setProperty('--theme-color-text', active.text);
   root.style.setProperty('--theme-color-band', active.band);
+  // ORBITAL = the band's own gray, a step darker (Howell 2026-07-23,
+  // retiring the demo red as too distracting): the ring's nodes are made of
+  // the band's material — chain and links, one metal — while RADIAL travel
+  // (parent vessel, pyramid) keeps the volume's node color. Derived from
+  // whatever band the volume wears, so every volume follows automatically.
+  const darkenHex = (hex, f) => {
+    const m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim());
+    if (!m) return hex;
+    const n = parseInt(m[1], 16);
+    const ch = v => Math.max(0, Math.round(v * f)).toString(16).padStart(2, '0');
+    return `#${ch((n >> 16) & 255)}${ch((n >> 8) & 255)}${ch(n & 255)}`;
+  };
+  root.style.setProperty('--theme-color-orbital', darkenHex(active.band, 0.78));
   root.style.setProperty('--theme-color-accent', active.accent);
   root.style.setProperty('--theme-color-magnifier-stroke', active.magnifierStroke);
   if (document.body) {
@@ -1107,7 +1169,7 @@ function wireInteractions(getApp) {
       // and their pointerdown path never arms a manual fire — suppressing
       // them makes a quick node-then-parent rhythm eat the second tap
       // (Phase C audit M6). Controls are exempt from suppression.
-      const isControl = event.target?.closest?.('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
+      const isControl = event.target?.closest?.('.focus-ring-magnifier-circle, .focus-ring-magnifier-label, .world-glyph');
       if (isControl) return;
       logTap('native-click-suppressed', {
         targetClass: event.target?.getAttribute?.('class') || null,
@@ -1151,9 +1213,12 @@ function wireInteractions(getApp) {
       if (event.pointerType === 'touch' || event.pointerType === 'pen') event.preventDefault();
     }
 
-    // Parent/magnifier controls: don't start drag and don't near-miss redirect.
-    // Let their native click handlers run.
-    const isControlTarget = event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
+    // Parent/magnifier controls — and the countries ring's world glyph, a
+    // control in a class of its own (the globe-tap hunt, 2026-07-23: every
+    // non-control tap arms the native-click suppressor at the line below,
+    // which ate the glyph's click while its pointer events sailed through):
+    // don't start drag, don't near-miss redirect, let native click run.
+    const isControlTarget = event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label, .world-glyph');
     if (isControlTarget) {
       isDragging = false;
       logTap('control-hit', {
@@ -1486,7 +1551,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchPrefix = '';
   searchScopedCorpus = [];
   searchOpeningAllowed = null;
+  seatSearchButton(false);
   if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
+  exitSearchLook({ svg }); // a boot never inherits the dimmed lights
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
   if (!playSplash) updateSearchButton();
   // The sticky dimension choice (survives reboots/gateways) wins over the
@@ -1585,6 +1652,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // found leaf walk up its parent chain to the ring level for the arrival.
   searchCorpusEntries = [];
   searchGraphById = new Map();
+  searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
   if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
     const leafLevel = root?.display_config?.leaf_level || null;
     searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));
@@ -1704,6 +1772,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,
     getParentLabel: adapterGetParentLabel,
+    getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
+    getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
     pyramid: pyramidConfig,
     pyramidLayoutSpec: pyramidLayout,
     pyramidNormalized: adapterNormalized || normalized,

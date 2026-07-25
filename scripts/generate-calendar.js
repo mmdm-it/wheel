@@ -99,7 +99,6 @@ function buildCalendarData() {
   const manifest = {
     Calendar: {
       display_config: {
-        wheel_volume_version: '0.1-dev',
         volume_schema_version: '0.1-dev',
         volume_data_version: '0.1-dev',
         structure_type: 'calendar',
