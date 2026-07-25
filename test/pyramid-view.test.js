@@ -67,8 +67,8 @@ describe('PyramidView rendering', () => {
 
     // Pyramid group is visible
     assert.ok(!view.pyramidGroup.getAttribute('display'));
-    // Connector fan-lines drawn from magnifier origin to each node
-    assert.equal(view.pyramidFanLinesGroup.children.length, 2);
+    // Fan lines retired (Tufte erasure, 2026-07-25): none are drawn
+    assert.equal(view.pyramidFanLinesGroup.children.length, 0);
     // Nodes and labels are visible
     assert.equal(view.pyramidNodesGroup.children.length, 2);
     assert.equal(view.pyramidLabelsGroup.children.length, 2);

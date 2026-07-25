@@ -36,7 +36,6 @@ const T = {
                        // (Howell 2026-07-20)
   charMs: 85,          // per typed character — unhurried, handcrafted
   gapMs: 360,          // breath between the focal labels
-  fanLineMs: 250,      // each fan line sweeping magnifier → child node
   logoFadeMs: 800,
   holdMs: 1000,        // the finished drawing sits complete before it dissolves
   dissolveMs: 1000,    // hand off to the live wheel
@@ -280,30 +279,13 @@ export async function playBootSplash({ svg, contentGroup, viewport, arcPoints, o
     await wait(T.circleDrawMs + T.pyramidPauseMs);
 
     // 3) The child pyramid, node by node (Howell 2026-07-18: ALL line-work
-    // completes before any text). Each circle compass-draws at the parent's
-    // stately tempo, then its fan line sweeps out from the magnifier to meet
-    // it — the fan line IS the beat between nodes, no extra gap (Howell
-    // 2026-07-20). The lines run centre-to-centre exactly as the live wheel
-    // runs them — the stubs showing inside the hollow circles are WANTED: it
-    // should look like a rough draft, and the arriving colour fills obliterate
-    // them at the overture (Howell 2026-07-22, retiring the earlier rim-trim).
-    const fanLines = Array.from(src.querySelectorAll('.child-pyramid-fan-line')).map(ln => ({
-      x1: parseFloat(ln.getAttribute('x1')), y1: parseFloat(ln.getAttribute('y1')),
-      x2: parseFloat(ln.getAttribute('x2')), y2: parseFloat(ln.getAttribute('y2')),
-      weight: parseFloat(getComputedStyle(ln).strokeWidth) || 1,
-      color: finalColor(ln)
-    })).filter(f => [f.x1, f.y1, f.x2, f.y2].every(Number.isFinite));
-    const fanFor = c => fanLines.find(f => Math.hypot(f.x2 - c.x, f.y2 - c.y) <= Math.max(2, c.r));
+    // completes before any text), each circle compass-drawing at the
+    // parent's stately tempo. (The fan-line sweeps that once beat between
+    // nodes retired with the fan lines themselves — the Tufte erasure,
+    // Howell 2026-07-25; the inter-node beat is pyramidNodeMs alone now.)
     for (const c of readCircles(src, '.child-pyramid-node')) {
       inkCircle(lines, c, T.pyramidNodeMs);
       await wait(T.pyramidNodeMs);
-      const f = fanFor(c);
-      if (f) {
-        const len = Math.hypot(f.x2 - f.x1, f.y2 - f.y1) || 1;
-        const seg = strokeLine(lines, `M${f.x1.toFixed(1)} ${f.y1.toFixed(1)} L${f.x2.toFixed(1)} ${f.y2.toFixed(1)}`, f.weight, f.color);
-        inkStroke(seg, len, T.fanLineMs);
-        await wait(T.fanLineMs);
-      }
     }
     await wait(T.gapMs);
 
