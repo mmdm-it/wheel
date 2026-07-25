@@ -148,11 +148,12 @@ export function buildCatalogPyramid({
     // breadcrumb read as the boot manufacturer at every arrival — Howell),
     // and OUT now ascends the real shelf, level by honest level.
     if (typeof savePreInState === 'function' && breadcrumb?.items) {
-      const makerIdx = breadcrumb.items.findIndex(it => it && it.name === parts[1]);
-      if (makerIdx >= 0) {
-        const stack = [{ items: breadcrumb.items, selectedIndex: makerIdx, preserveOrder: true }];
+      // The floors below the maker are the same whichever ring the search
+      // was opened from — derive them from the leaf id's shelf path.
+      const floorsUnderMaker = (makerItem) => {
+        const stack = [];
         const cylId = `cyl:${parts[1]}:${parts[2]}`;
-        const cylRing = getCatalogChildren(manifest, breadcrumb.items[makerIdx]);
+        const cylRing = getCatalogChildren(manifest, makerItem);
         const cylIdx = cylRing.findIndex(k => k && k.id === cylId);
         if (cylIdx >= 0) stack.push({ items: cylRing, selectedIndex: cylIdx, preserveOrder: true });
         if (mid.length >= 1) {
@@ -167,7 +168,27 @@ export function buildCatalogPyramid({
             if (subIdx >= 0) stack.push({ items: subRing, selectedIndex: subIdx, preserveOrder: true });
           }
         }
+        return stack;
+      };
+      const makerIdx = breadcrumb.items.findIndex(it => it && it.name === parts[1]);
+      const scopeSel = breadcrumb.items[breadcrumb.selectedIndex];
+      if (makerIdx >= 0) {
+        const stack = [{ items: breadcrumb.items, selectedIndex: makerIdx, preserveOrder: true }];
+        stack.push(...floorsUnderMaker(breadcrumb.items[makerIdx]));
         stack.forEach(s => savePreInState(s));
+      } else if (typeof scopeSel?.id === 'string' && scopeSel.id.startsWith('country:')) {
+        // Search opened from the countries index — the maker isn't aboard
+        // that ring, but the scope country is the leaf's own country, so the
+        // honest shelf runs: countries ring at the scope, the country's
+        // makers at the maker, then the floors. Without this, arrival wore
+        // the scope's name ("STATI UNITI") at every leaf (Howell 2026-07-25).
+        savePreInState(breadcrumb);
+        const makerRing = getCatalogChildren(manifest, scopeSel);
+        const scopedIdx = makerRing.findIndex(it => it && it.name === parts[1]);
+        if (scopedIdx >= 0) {
+          savePreInState({ items: makerRing, selectedIndex: scopedIdx, preserveOrder: true });
+          floorsUnderMaker(makerRing[scopedIdx]).forEach(s => savePreInState(s));
+        }
       } else {
         // The provided ring doesn't hold the maker (search opened from a
         // deeper ring) — fall back to the single snapshot.

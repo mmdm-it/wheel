@@ -42,6 +42,7 @@ const volumeConfigs = {
       accent: '#8b5a2b',
       magnifierStroke: '#2a1a0f'
     },
+    stampLetter: 'B', // the factory stamp's data line (W-7)
     extractRoot: manifest => manifest?.Gutenberg_Bible,
     async loadSupplemental() {
       const [translationsMeta, languagesMeta] = await Promise.all([
@@ -90,6 +91,7 @@ const volumeConfigs = {
       accent: '#f1b800',
       magnifierStroke: '#000000'
     },
+    stampLetter: 'M', // the factory stamp's data line (W-7)
     extractRoot: manifest => manifest?.MMdM,
     async loadSupplemental() { return { translationsMeta: null }; },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
@@ -117,7 +119,7 @@ const volumeConfigs = {
       }
       return name;
     },
-    buildChain: (manifest, options) => buildCatalogManufacturers(manifest, { initialItemId: options.initialItemId }),
+    buildChain: (manifest, options) => buildCatalogManufacturers(manifest, { initialItemId: options.initialItemId, dataStampLetters: ['M', 'B', 'C'] }),
     createHandlers: makeAdapterHandlers('catalog'),
     // Search (the navigator's dividers) exists only here: this volume's
     // model namespace is flat and arbitrary — the index beats the walk.
@@ -139,6 +141,7 @@ const volumeConfigs = {
       magnifierStroke: '#f5f7fb'
     },
     centerLabel: true,
+    stampLetter: 'C', // the factory stamp's data line (W-7)
     extractRoot: manifest => manifest?.Calendar,
     async loadSupplemental() { return { translationsMeta: null }; },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {

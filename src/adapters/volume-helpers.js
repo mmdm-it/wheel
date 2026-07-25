@@ -414,7 +414,7 @@ export function buildCatalogCountries(manifest, { initialItemId } = {}) {
   return { items, selectedIndex: idx >= 0 ? idx : 0, preserveOrder: true };
 }
 
-export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
+export function buildCatalogManufacturers(manifest, { initialItemId, dataStampLetters = [] } = {}) {
   const markets = manifest?.MMdM?.markets;
   if (!markets) return { items: [], selectedIndex: 0, preserveOrder: false };
   const items = [];
@@ -457,6 +457,29 @@ export function buildCatalogManufacturers(manifest, { initialItemId } = {}) {
   if (items.length) {
     for (let i = 0; i < VERSION_FOOTNOTE_GAPS; i += 1) items.push(null);
     items.push({ id: 'version-footnote', name: WHEEL_VERSION, placebo: true, order: items.length });
+    // THE DATA STAMPS (W-7, Howell 2026-07-25): one blank link below the
+    // engine stamp, then a line per volume letter — each showing that
+    // volume's volume_data_version, resolved at RUNTIME by the host (data
+    // syncs independently of the bundle; a baked stamp would lie exactly
+    // when it's used to check whether a data push landed). '…' until the
+    // manifests answer; '?' if one never does — a silently absent line
+    // would look identical to a volume that's fine (W-6's lesson).
+    // TYPOGRAPHIC spacing, not chain spacing (Howell 2026-07-25): the stamp
+    // is a block of text, not a run of nodes — its lines sit like a word
+    // processor's, measured in line-heights. Orders are FRACTIONAL: position
+    // along the arc is order × node-spacing, so a quarter-step reads as
+    // "single spaced" at the stamp's small type. One blank line separates
+    // the engine version from the data block (the i+2 below).
+    const STAMP_LINE_STEP = 0.25; // the "single spacing" — Howell tunes by eye
+    const engineStampOrder = items[items.length - 1].order;
+    dataStampLetters.forEach((letter, i) => {
+      items.push({
+        id: `data-stamp-${letter}`,
+        name: `${letter} …`,
+        placebo: true,
+        order: engineStampOrder + STAMP_LINE_STEP * (i + 2)
+      });
+    });
   }
 
   return { items, selectedIndex, preserveOrder: true };
