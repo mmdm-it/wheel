@@ -132,6 +132,76 @@ svg :focus-visible {
   }
 }
 
+/* Desktop gate: the instrument is a phone instrument — a mouse-driven
+   screen gets a card pointing the reader at their phone instead of a
+   broken-feeling wheel. The honest desktop signal is a fine primary
+   pointer THAT HOVERS (screen size lies: a narrowed desktop window is
+   still a desktop; a large phone is still a phone). Touch devices never
+   match. Hidden by default, pure CSS like the portrait gate above. */
+#desktop-gate {
+  display: none;
+}
+@media (pointer: fine) and (hover: hover) {
+  #desktop-gate {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 48px;
+    box-sizing: border-box;
+    /* The gate is the BRAND'S card, not the volume's: catalog gray on
+       every page, matching the gray baked into the QR's quiet zone. */
+    background: #868686;
+    color: #000;
+    font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+    text-align: center;
+  }
+  #desktop-gate .desktop-gate-qr {
+    width: min(280px, 40vmin);
+    height: auto;
+    /* The QR is a bitmap of hard squares — keep its edges square when scaled */
+    image-rendering: pixelated;
+  }
+  #desktop-gate .desktop-gate-title {
+    margin: 0 0 24px;
+    font-size: 34px;
+    letter-spacing: 0.1em;
+    max-width: 90vw;
+  }
+  /* Case is set in the markup, never transformed: the mark is "MMdM",
+     and "delle" rides lowercase inside the full name. */
+  #desktop-gate .desktop-gate-text {
+    margin: 12px 0 0;
+    font-size: 21px;
+    letter-spacing: 0.08em;
+  }
+  #desktop-gate .desktop-gate-sub {
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    opacity: 0.75;
+  }
+  #desktop-gate .desktop-gate-mail {
+    margin: 24px 0 0;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
+  #desktop-gate .desktop-gate-mail a {
+    color: inherit;
+    opacity: 0.75;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+  #desktop-gate .desktop-gate-mail a:hover {
+    opacity: 1;
+  }
+}
+
 .copyright-notice {
   position: fixed;
   top: 0;

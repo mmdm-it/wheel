@@ -1,5 +1,18 @@
 # Changelog
 
+## 3.21.1 — the desktop gate
+- **Desktop visitors get the brand's card, not a broken-feeling wheel**:
+  full name ("MECCANISMI MARITTIMI delle MARCHE"), the QR to mmdm.it, "MMdM
+  è PROGETTATO PER IL TELEFONO", and info@mmdm.it — on the catalog gray at
+  every volume's door. Pure CSS on the portrait-gate pattern: the desktop
+  signal is a fine primary pointer that hovers (screen size lies — a
+  narrowed desktop window is still a desktop, a large phone is still a
+  phone). Touch devices never see it
+- The QR's white recolored to the catalog gray — black squares straight on
+  the card, no white plate
+- Case is set in markup, never text-transformed: the mark stays "MMdM",
+  "delle" rides lowercase
+
 ## 3.21.0 — the data stamps — runtime data versions, the honest search shelf
 - **The data stamps** (W-7): below the engine's factory stamp, three quiet
   lines — M, B, C — each volume's `volume_data_version`, read at RUNTIME
