@@ -16,6 +16,11 @@
   seats while the suffix flies in (and mirrors home on unmerge)
 - Search mode untouched: the scope label keeps its corner — the search
   page's own grammar
+- **The seat paints above the ring's words**: rotating node labels used to
+  sweep OVER the vessel and clash with its name — the parent seat (disc,
+  label, globe) now rises above the label layer every render, so passing
+  words duck under it and the resting ring never obscures the parent
+  label
 
 ## 3.21.1 — the desktop gate
 - **Desktop visitors get the brand's card, not a broken-feeling wheel**:

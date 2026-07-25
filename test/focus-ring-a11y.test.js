@@ -150,9 +150,13 @@ describe('FocusRingView accessibility', () => {
     assert(idx('node-a') >= 0 && idx('node-b') >= 0, 'missing primary nodes');
     assert(idx('pyramid') === -1, 'pyramid nodes should be hidden');
 
+    // The parent seat paints ABOVE the ring labels (Howell 2026-07-25:
+    // rotating labels pass under the vessel), and SVG paint order IS
+    // document order — so the seat now follows the nodes in the DOM and
+    // in tab order. Predictability is the contract, not a fixed sequence.
     const orderChecks = [
-      ['parent-outer', 'node-a'],
-      ['node-a', 'node-b']
+      ['node-a', 'node-b'],
+      ['node-b', 'parent-outer']
     ];
 
     orderChecks.forEach(([first, second]) => {

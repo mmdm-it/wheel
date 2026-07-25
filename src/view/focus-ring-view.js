@@ -129,7 +129,19 @@ export class FocusRingView {
     const onNodeClick = options.onNodeClick;
     const selectedId = options.selectedId;
     const parentButtons = options.parentButtons;
-    // Ensure correct z-ordering: pyramid group (with fan lines), then magnifier on top
+    // Ensure correct z-ordering: the PARENT SEAT above the ring labels —
+    // rotating node labels sweep across the seat's ground and must pass
+    // UNDER the vessel and its name, never over them (Howell 2026-07-25) —
+    // then pyramid group, then magnifier on top.
+    if (this.parentButtonOuter?.parentNode === this.contentGroup) {
+      this.contentGroup.appendChild(this.parentButtonOuter);
+    }
+    if (this.parentButtonOuterLabel?.parentNode === this.contentGroup) {
+      this.contentGroup.appendChild(this.parentButtonOuterLabel);
+    }
+    if (this.parentWorldGlyph?.parentNode === this.contentGroup) {
+      this.contentGroup.appendChild(this.parentWorldGlyph);
+    }
     if (this.pyramidGroup?.parentNode === this.contentGroup) {
       this.contentGroup.appendChild(this.pyramidGroup);
     }
