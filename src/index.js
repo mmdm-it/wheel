@@ -1,4 +1,4 @@
-import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat } from './geometry/focus-ring-geometry.js';
+import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX } from './geometry/focus-ring-geometry.js';
 import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
@@ -445,6 +445,9 @@ export function createApp({
     const parentButtonX = parentSeat.discX;
     const parentButtonY = parentSeat.discY;
     const parentLabelSeatX = parentSeat.labelX;
+    // Width-aware label seat (Howell 2026-07-25): flights measure their own
+    // clone text and ask this for the settled left edge.
+    const parentLabelLeftX = (w) => getParentLabelLeftX(vp, magnifierRadius, w);
 
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
@@ -571,6 +574,7 @@ export function createApp({
         toX: parentButtonX,
         toY: parentButtonY,
         labelToX: parentLabelSeatX,
+        labelLeftXForWidth: parentLabelLeftX,
         radius: magnifierRadius,
         label: '',
         bare: true, // fill only — the stroke arrives later, with the name
@@ -582,6 +586,7 @@ export function createApp({
         buttonX: parentButtonX,
         buttonY: parentButtonY,
         labelX: parentLabelSeatX,
+        labelLeftXForWidth: parentLabelLeftX,
         discless: departingParentDiscless,
         radius: magnifierRadius,
         label: isSuffixMergeIn ? '' : prevParentLabel,
@@ -601,6 +606,7 @@ export function createApp({
           toX: parentButtonX,
           toY: parentButtonY,
           labelToX: parentLabelSeatX,
+        labelLeftXForWidth: parentLabelLeftX,
           radius: magnifierRadius,
           baseLabel: prevParentLabel,
           suffixLabel: prevMagnifierLabel,
@@ -614,6 +620,7 @@ export function createApp({
           toX: parentButtonX,
           toY: parentButtonY,
         labelToX: parentLabelSeatX,
+        labelLeftXForWidth: parentLabelLeftX,
           radius: magnifierRadius,
           label: prevMagnifierLabel,
           fromAngle: magnifier.angle
@@ -701,6 +708,9 @@ export function createApp({
     const parentButtonX = parentSeat.discX;
     const parentButtonY = parentSeat.discY;
     const parentLabelSeatX = parentSeat.labelX;
+    // Width-aware label seat (Howell 2026-07-25): flights measure their own
+    // clone text and ask this for the settled left edge.
+    const parentLabelLeftX = (w) => getParentLabelLeftX(vp, magnifierRadius, w);
     // The new parent label (after OUT) is the parent of tempSelected
     const newParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
     // Ascending back TO a suffix-merge ring: the suffix splits off the parent
@@ -804,6 +814,7 @@ export function createApp({
         buttonX: parentButtonX,
         buttonY: parentButtonY,
         labelX: parentLabelSeatX,
+        labelLeftXForWidth: parentLabelLeftX,
         // Arriving at a context-only seat (the top): words alone. The
         // adapter has already advanced, so it answers for the destination.
         discless: typeof getParentActionable === 'function' ? !getParentActionable() : false,
@@ -825,6 +836,7 @@ export function createApp({
         toX: parentButtonX,
         toY: parentButtonY,
         labelToX: parentLabelSeatX,
+        labelLeftXForWidth: parentLabelLeftX,
         radius: magnifierRadius,
         baseLabel: newParentLabel,
         suffixLabel: nextMagnifierLabel,
@@ -838,6 +850,7 @@ export function createApp({
         toX: parentButtonX,
         toY: parentButtonY,
         labelFromX: parentLabelSeatX,
+        labelLeftXForWidth: parentLabelLeftX,
         radius: magnifierRadius,
         label: prevParentLabel,
         fromAngle: magnifier.angle
@@ -1068,6 +1081,7 @@ export function createApp({
       toX: parentSeat.discX,
       toY: parentSeat.discY,
       labelFromX: parentSeat.labelX,
+      labelLeftXForWidth: (w) => getParentLabelLeftX(vp, magnifierRadius, w),
       radius: magnifierRadius,
       label: travelingLabel,
       fromAngle: magnifier.angle

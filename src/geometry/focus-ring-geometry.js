@@ -54,6 +54,29 @@ export function getParentSeat(viewport, magnifierRadius = null) {
   };
 }
 
+// THE LABEL COMES HOME (Howell 2026-07-25): the parent label leaves the
+// corner and rejoins its vessel, placed by TEXT WIDTH under three rules —
+//   1. short labels center on the vessel (IHI);
+//   2. longer labels right-align over it with the ring's own 1.3-radius
+//      spill past center, exactly how unselected ring nodes wear their
+//      words (FINLANDIA, MITSUBISHI);
+//   3. labels too long for rule 2 fall back to the historic corner start
+//      (PALMER BROTHERS) so they never exit the viewport's left edge.
+// One expression: rule 1 vs 2 is a min (the shorter label takes the
+// lefter, centered seat), the corner is the floor. The transitions are
+// continuous — at each boundary the two rules agree to the pixel.
+// Returns the label's LEFT EDGE x (the labelToX dialect every flight
+// already speaks).
+export function getParentLabelLeftX(viewport, magnifierRadius, textWidth) {
+  const magR = Number.isFinite(magnifierRadius) ? magnifierRadius : viewport.SSd * 0.06;
+  const seat = getParentSeat(viewport, magR);
+  const w = Number.isFinite(textWidth) ? textWidth : 0;
+  return Math.max(
+    seat.labelX,
+    Math.min(seat.discX - w / 2, seat.discX + magR * 1.3 - w)
+  );
+}
+
 export function getBaseAngleForOrder(order, viewport, nodeSpacing) {
   const magnifierAngle = getMagnifierAngle(viewport);
   const normalizedOrder = Number.isFinite(order) ? order : 0;
