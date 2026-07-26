@@ -2,7 +2,7 @@
   "Gutenberg_Bible": {
     "display_config": {
       "volume_schema_version": "3.0.0",
-      "volume_data_version": "2026.07.26",
+      "volume_data_version": "2026.07.26.2",
       "structure_type": "split_chapters",
       "volume_type": "wheel_hierarchical",
       "volume_name": "Gutenberg Bible",
@@ -65,7 +65,7 @@
           "hebrew": "WLC",
           "greek": "LXX",
           "latin": "VUL",
-          "english": "NAB",
+          "english": "DRA",
           "french": "NEO",
           "spanish": "VAT_ES",
           "italian": "CEI",
