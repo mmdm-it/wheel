@@ -54,7 +54,7 @@ const registryWithDefaults = () => {
 };
 
 test('bible detail templates render card and text', async () => {
-  const manifest = await readJson('data/gutenberg/manifest.json');
+  const manifest = await readJson('test/fixtures/data/gutenberg/manifest.json');
   const bookEntry = buildBibleBooks(manifest)[0];
   assert.ok(bookEntry, 'expected at least one book');
 
@@ -83,7 +83,7 @@ test('bible detail templates render card and text', async () => {
 });
 
 test('catalog detail templates render manufacturer card', async () => {
-  const manifest = await readJson('data/mmdm/mmdm_catalog.json');
+  const manifest = await readJson('test/fixtures/data/mmdm/mmdm_catalog.json');
   const { items } = buildCatalogManufacturers(manifest);
   const manufacturer = items[0];
   assert.ok(manufacturer, 'expected at least one manufacturer');
@@ -101,7 +101,7 @@ test('catalog detail templates render manufacturer card', async () => {
 });
 
 test('catalog detail templates render model card from pyramid ids', async () => {
-  const manifest = await readJson('data/mmdm/mmdm_catalog.json');
+  const manifest = await readJson('test/fixtures/data/mmdm/mmdm_catalog.json');
   // Walk manifest to build a model id like model:manufacturer:cylinder:modelKey
   // Find the first manufacturer that has a cylinder-level orphan model —
   // key order in the data is not a contract, so search rather than assume.
@@ -136,7 +136,7 @@ test('catalog detail templates render model card from pyramid ids', async () => 
 });
 
 test('calendar detail templates render year and month cards', async () => {
-  const manifest = await readJson('data/calendar/manifest.json');
+  const manifest = await readJson('test/fixtures/data/calendar/manifest.json');
   const { items: years } = buildCalendarYears(manifest, {});
   const year = years[0];
   assert.ok(year, 'expected at least one year');
@@ -166,7 +166,7 @@ test('calendar detail templates render year and month cards', async () => {
 });
 
 test('places detail templates render hierarchical cards', async () => {
-  const manifest = await readJson('data/places/manifest.json');
+  const manifest = await readJson('test/fixtures/data/places/manifest.json');
   const levels = getPlacesLevels(manifest);
   assert.ok(levels.length >= 1, 'expected at least one places level');
   const levelIndex = 0;

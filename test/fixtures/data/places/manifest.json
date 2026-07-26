@@ -1,0 +1,22 @@
+{
+  "Places": {
+    "display_config": {
+      "_fixture": "Small SYNTHETIC places hierarchy for the public engine test suite (W-10). Two levels, one populated branch — just enough for getPlacesLevels, buildPlacesLevel, and a places detail card.",
+      "volume_schema_version": "0.0-fixture",
+      "volume_data_version": "0000.00.00",
+      "volume_name": "Fixture Places",
+      "leaf_level": "star",
+      "hierarchy_levels": {
+        "galaxy": { "display_name": "Galaxy", "color": "#2a3b55" },
+        "star": { "display_name": "Star", "color": "#c9a227" }
+      }
+    },
+    "root": { "id": "root", "children": ["milky_way"] },
+    "galaxies": {
+      "milky_way": { "id": "milky_way", "name": "Milky Way", "sort_number": 1, "stars": ["sol"] }
+    },
+    "stars": {
+      "sol": { "id": "sol", "name": "Sol", "galaxy_id": "milky_way", "sort_number": 1 }
+    }
+  }
+}

@@ -254,7 +254,7 @@ describe('the detail sector as a NEXT button', () => {
 
 describe('the e-reader, end to end', () => {
   const bibleManifest = JSON.parse(readFileSync(
-    path.resolve(__dirname, '../data/gutenberg/manifest.json'), 'utf-8'));
+    path.resolve(__dirname, 'fixtures/data/gutenberg/manifest.json'), 'utf-8'));
 
   it('taps straight out of one chapter and into the next', () => {
     // Howell's report: "when I get to the end of Genesis chapter one, I

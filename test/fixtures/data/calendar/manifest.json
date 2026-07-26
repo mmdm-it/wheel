@@ -1,0 +1,59 @@
+{
+  "Calendar": {
+    "display_config": {
+      "_fixture": "Small SYNTHETIC calendar for the public engine test suite (W-10). A curated handful of years chosen to exercise the cousin-gap engine (century + millennium + era crossings) and the era naming rule — NOT the real 6000-year calendar (that, and its runtime 'current year', are validated in the cargo repo's data CI). Dates are public-domain facts.",
+      "volume_schema_version": "0.0-fixture",
+      "volume_data_version": "0000.00.00",
+      "structure_type": "wheel_hierarchical",
+      "volume_type": "wheel_hierarchical",
+      "volume_name": "Fixture Calendar",
+      "leaf_level": "day",
+      "focus_ring_startup": { "top_navigation_level": "year" },
+      "hierarchy_levels": {
+        "year": { "display_name": "Year", "color": "#222" },
+        "month": { "display_name": "Month", "color": "#333" },
+        "day": { "display_name": "Day", "color": "#444" }
+      }
+    },
+    "years": {
+      "-3000": { "id": "-3000", "name": "3000 BC", "year_number": -3000, "sort_number": 1 },
+      "-1000": { "id": "-1000", "name": "1000 BC", "year_number": -1000, "sort_number": 2 },
+      "-753": { "id": "-753", "name": "753 BC", "year_number": -753, "sort_number": 3 },
+      "-1": { "id": "-1", "name": "1 BC", "year_number": -1, "sort_number": 4 },
+      "1": { "id": "1", "name": "1", "year_number": 1, "sort_number": 5 },
+      "1582": { "id": "1582", "name": "1582", "year_number": 1582, "sort_number": 6 },
+      "1899": { "id": "1899", "name": "1899", "year_number": 1899, "sort_number": 7 },
+      "1900": { "id": "1900", "name": "1900", "year_number": 1900, "sort_number": 8 },
+      "1901": { "id": "1901", "name": "1901", "year_number": 1901, "sort_number": 9 },
+      "1969": { "id": "1969", "name": "1969", "year_number": 1969, "sort_number": 10 },
+      "1999": { "id": "1999", "name": "1999", "year_number": 1999, "sort_number": 11 },
+      "2000": { "id": "2000", "name": "2000", "year_number": 2000, "sort_number": 12 },
+      "2001": { "id": "2001", "name": "2001", "year_number": 2001, "sort_number": 13 },
+      "2026": { "id": "2026", "name": "2026", "year_number": 2026, "sort_number": 14 },
+      "3000": { "id": "3000", "name": "3000", "year_number": 3000, "sort_number": 15 }
+    },
+    "month_template": {
+      "jan": { "id": "jan", "name": "January", "month_number": 1 },
+      "feb": { "id": "feb", "name": "February", "month_number": 2 },
+      "mar": { "id": "mar", "name": "March", "month_number": 3 },
+      "apr": { "id": "apr", "name": "April", "month_number": 4 },
+      "may": { "id": "may", "name": "May", "month_number": 5 },
+      "jun": { "id": "jun", "name": "June", "month_number": 6 },
+      "jul": { "id": "jul", "name": "July", "month_number": 7 },
+      "aug": { "id": "aug", "name": "August", "month_number": 8 },
+      "sep": { "id": "sep", "name": "September", "month_number": 9 },
+      "oct": { "id": "oct", "name": "October", "month_number": 10 },
+      "nov": { "id": "nov", "name": "November", "month_number": 11 },
+      "dec": { "id": "dec", "name": "December", "month_number": 12 }
+    },
+    "weekday_template": {
+      "sun": { "id": "sun", "name": "Sunday", "weekday_number": 0 },
+      "mon": { "id": "mon", "name": "Monday", "weekday_number": 1 },
+      "tue": { "id": "tue", "name": "Tuesday", "weekday_number": 2 },
+      "wed": { "id": "wed", "name": "Wednesday", "weekday_number": 3 },
+      "thu": { "id": "thu", "name": "Thursday", "weekday_number": 4 },
+      "fri": { "id": "fri", "name": "Friday", "weekday_number": 5 },
+      "sat": { "id": "sat", "name": "Saturday", "weekday_number": 6 }
+    }
+  }
+}

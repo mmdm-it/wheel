@@ -50,9 +50,9 @@ describe('splash overture — data-declared, volume-agnostic', () => {
     assert.equal(options.splashOvertureItem, 'Overture Item');
   });
 
-  it('the real volume data declares an overture that exists in its own chain', async () => {
+  it('the volume data declares an overture that exists in its own chain', async () => {
     const fs = await import('node:fs');
-    const manifest = JSON.parse(fs.readFileSync(new URL('../data/mmdm/mmdm_catalog.json', import.meta.url)));
+    const manifest = JSON.parse(fs.readFileSync(new URL('./fixtures/data/mmdm/mmdm_catalog.json', import.meta.url)));
     const top = manifest[Object.keys(manifest)[0]];
     const startup = top.display_config.focus_ring_startup;
     assert.ok(startup.splash_overture_item, 'overture item declared');

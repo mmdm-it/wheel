@@ -1,0 +1,22 @@
+{
+  "_schema_version": "2.0",
+  "_description": "Fixture translation registry — public-domain editions only (Vulgate + Douay-Rheims).",
+  "translations": {
+    "VUL": {
+      "name": "Clementine Vulgate",
+      "language": "latin",
+      "language_name": "Latin",
+      "direction": "ltr",
+      "testament": "both",
+      "nativeName": "Vulgata Clementina"
+    },
+    "DRA": {
+      "name": "Douay-Rheims",
+      "language": "english",
+      "language_name": "English",
+      "direction": "ltr",
+      "testament": "both",
+      "nativeName": "Douay-Rheims"
+    }
+  }
+}

@@ -28,7 +28,7 @@ describe('version footnote — chain shape', () => {
   let chain;
 
   beforeEach(async () => {
-    const manifest = await readJson('data/mmdm/mmdm_catalog.json');
+    const manifest = await readJson('test/fixtures/data/mmdm/mmdm_catalog.json');
     chain = buildCatalogManufacturers(manifest);
   });
 
@@ -53,7 +53,7 @@ describe('version footnote — chain shape', () => {
   });
 
   it('never resolves a deep link to the placebo stamp', async () => {
-    const manifest = await readJson('data/mmdm/mmdm_catalog.json');
+    const manifest = await readJson('test/fixtures/data/mmdm/mmdm_catalog.json');
     const { items, selectedIndex } = buildCatalogManufacturers(manifest, { initialItemId: 'version-footnote' });
     assert.equal(items[selectedIndex]?.placebo, undefined, 'selection must land on a real item');
     assert.equal(selectedIndex, 0, 'an unmatchable target falls back to the first item');

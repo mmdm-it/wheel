@@ -19,7 +19,7 @@ const readJson = async rel => JSON.parse(await readFile(path.resolve(__dirname, 
 
 describe('dimension bridge — selection and defaults', () => {
   let translationsMeta;
-  before(async () => { translationsMeta = await readJson('data/gutenberg/translations.json'); });
+  before(async () => { translationsMeta = await readJson('test/fixtures/data/gutenberg/translations.json'); });
 
   const makeBridge = () => {
     const store = createInteractionStore();
@@ -29,17 +29,17 @@ describe('dimension bridge — selection and defaults', () => {
   it('setLanguage adopts the language with its default translation', () => {
     const { bridge } = makeBridge();
     // Document order stands in for the prominence tier until translations
-    // carry it: VUL before NEO, NAB before DRA.
+    // carry it: the fixture registry is public-domain-only (VUL for latin,
+    // DRA for english), so english's default edition is DRA.
     assert.equal(bridge.setLanguage('english'), true);
-    assert.deepEqual(bridge.getSelection(), { language: 'english', translation: 'NAB' });
+    assert.deepEqual(bridge.getSelection(), { language: 'english', translation: 'DRA' });
     assert.equal(bridge.setLanguage('latin'), true);
     assert.deepEqual(bridge.getSelection(), { language: 'latin', translation: 'VUL' });
   });
 
   it('setTranslation adopts the translation and implies its language', () => {
-    // English is the registry's first two-edition language (NAB, DRA) —
-    // the real pyramid case. (NEO is the French Crampon, a D.2 discovery
-    // that corrected the canon's draft.)
+    // DRA is the fixture's public-domain english edition; setting it adopts
+    // english as its implied language.
     const { bridge } = makeBridge();
     assert.equal(bridge.setTranslation('DRA'), true);
     assert.deepEqual(bridge.getSelection(), { language: 'english', translation: 'DRA' });
@@ -58,7 +58,7 @@ describe('dimension bridge — selection and defaults', () => {
     bridge.setLanguage('english');
     store.dispatch({ type: interactionEvents.SET_VOLUME, volume: 'away' });
     store.dispatch({ type: interactionEvents.SET_VOLUME, volume: 'home' });
-    assert.deepEqual(bridge.getSelection(), { language: 'english', translation: 'NAB' });
+    assert.deepEqual(bridge.getSelection(), { language: 'english', translation: 'DRA' });
   });
 
   it('onSettle fires once per committed change, never on a repeat', () => {
@@ -67,9 +67,9 @@ describe('dimension bridge — selection and defaults', () => {
     bridge.onSettle(t => settled.push(t));
     bridge.setLanguage('english');
     bridge.setLanguage('english'); // same value — no settle
-    bridge.setTranslation('NAB');  // still the same translation — no settle
-    bridge.setTranslation('DRA');
-    assert.deepEqual(settled, ['NAB', 'DRA']);
+    bridge.setTranslation('DRA');  // still the same translation — no settle
+    bridge.setLanguage('latin');   // a real change — one settle
+    assert.deepEqual(settled, ['DRA', 'VUL']);
   });
 
   it('re-registering the settle hook replaces it (gateway reboots rehook)', () => {
@@ -81,7 +81,7 @@ describe('dimension bridge — selection and defaults', () => {
     bridge.onSettle(t => second.push(t));
     bridge.setLanguage('english');
     assert.deepEqual(first, ['VUL'], 'the replaced hook must not keep firing');
-    assert.deepEqual(second, ['NAB']);
+    assert.deepEqual(second, ['DRA']);
   });
 
   it('lists available languages from the registry', () => {
@@ -96,7 +96,7 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
   let manifest;
 
   before(async () => {
-    manifest = await readJson('data/gutenberg/manifest.json');
+    manifest = await readJson('test/fixtures/data/gutenberg/manifest.json');
     // The verse cache loads chapter files by fetch; serve them from disk.
     globalThis.fetch = async url => {
       const rel = String(url).replace(/^\.\//, '');
@@ -114,14 +114,14 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
     // Phase A retired ?translation= reading; a vestige in detailFor let a
     // stale bookmark pin the text to Latin against the store's choice —
     // exactly what the first live swap demo hit. The URL must be inert.
-    const externalFile = 'data/gutenberg/chapters/GENE/001.json';
+    const externalFile = 'test/fixtures/data/gutenberg/chapters/GENE/001.json';
     const chapterItem = { id: 'GENE:1', level: 'chapter', meta: { externalFile, bookId: 'GENE' } };
     await new Promise(resolve => prefetchBibleVerses(chapterItem, { onLoaded: resolve }));
     const originalWindow = globalThis.window;
     globalThis.window = { location: { search: '?volume=bible&translation=VUL' } };
     try {
       const verse = { id: 'GENE_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
-      const english = detailFor(verse, manifest, { translation: 'NAB' });
+      const english = detailFor(verse, manifest, { translation: 'DRA' });
       assert.match(english.text, /beginning/i, 'the store wins; the URL is inert');
     } finally {
       globalThis.window = originalWindow;
@@ -129,16 +129,16 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
   });
 
   it('the same verse renders Latin or English by the translation in scope', async () => {
-    const externalFile = 'data/gutenberg/chapters/GENE/001.json';
+    const externalFile = 'test/fixtures/data/gutenberg/chapters/GENE/001.json';
     const chapterItem = { id: 'GENE:1', level: 'chapter', meta: { externalFile, bookId: 'GENE' } };
     await new Promise(resolve => prefetchBibleVerses(chapterItem, { onLoaded: resolve }));
 
     const verse = { id: 'GENE_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
     const latin = detailFor(verse, manifest, { translation: 'VUL' });
-    const english = detailFor(verse, manifest, { translation: 'NAB' });
+    const english = detailFor(verse, manifest, { translation: 'DRA' });
 
     assert.match(latin.text, /principio/i, 'VUL renders the Latin');
-    assert.match(english.text, /beginning/i, 'NAB renders the English');
+    assert.match(english.text, /beginning/i, 'DRA renders the English');
     assert.notEqual(latin.text, english.text, 'the swap genuinely changes the content');
   });
 });

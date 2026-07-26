@@ -54,9 +54,19 @@ describe('pyramid node appearance', () => {
   });
 
   it('marks the month being lived through, and only inside its own year', () => {
-    const manifest = JSON.parse(readFileSync(
-      path.resolve(__dirname, '../data/calendar/manifest.json'), 'utf-8'));
     const wallClock = new Date();
+    // Built inline from the wall clock so the "now" logic is tested against
+    // whatever the current year actually is — a static fixture would rot the
+    // day this test ran in a new year (W-10).
+    const monthKeys = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+    const month_template = Object.fromEntries(
+      monthKeys.map((k, i) => [k, { id: k, name: k, month_number: i + 1 }]));
+    const yr = n => ({ id: String(n), name: String(n), year_number: n, sort_number: n });
+    const manifest = { Calendar: { month_template, years: {
+      [String(wallClock.getFullYear())]: yr(wallClock.getFullYear()),
+      '1969': yr(1969),
+      '1582': yr(1582)
+    } } };
     const thisYear = getCalendarMonths(manifest, { id: String(wallClock.getFullYear()) }, 'year');
     const marked = thisYear.filter(m => m.now);
     assert.equal(marked.length, 1, 'one month carries the present moment');

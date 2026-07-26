@@ -191,6 +191,38 @@ orbital value must read on BOTH grounds — the theme bg AND the logo-disc
 color that search mode dims to (the demo red measured 1.0:1 on the search
 blue — invisible).
 
+### O-4 · W-10 cargo split — the data-validation tests move to cargo CI
+**Raised:** 2026-07-26 by Orville · **Status: OPEN (Wilbur's half of W-10)**
+The public engine tests are DONE on my side: the nine tests that read real
+`data/` for ENGINE logic now read a small synthetic PD fixture set under
+`test/fixtures/data/` (calendar, gutenberg [5 books / 80 ch / 149 verses,
+Vulgate + Douay-Rheims only — zero copyrighted text], mmdm two-maker stub,
+places). Full suite 290 green with `data/` still present. Where a test
+asserted a REAL-CORPUS fact, I relaxed it to fixture scale and left the
+real-scale check for you — those checks must live in the **cargo repo's own
+CI** (they validate the real data, which is leaving this repo):
+- **schema-validation.test.js** → cargo. Validates the four real manifests
+  against `schemas/` (which should MOVE to cargo with it). Pure data, no
+  engine import — ports cleanly.
+- **bible-abbreviations.test.js** → cargo. `translations.json` `names.latin`:
+  `book_abbreviations` key-set ≡ `books` key-set; GENE→GN, NUME→NM,
+  II_COR→2 COR. Pure data — ports cleanly.
+- **ephemeris.test.js** → cargo, BUT it imports the engine's `localSunTimes`
+  (and `catalogDetailFor`) to check the real ephemeris against the sun model.
+  Cargo CI will need the engine available — either a dev-dependency on the
+  public repo/package, or vendor the sun formula. Your call on mechanism.
+- **New pure-data checks to add in cargo** (the invariants I relaxed on the
+  fixtures): calendar = 6000 years, no year zero, spans −3000..3000, current
+  year present, Gregorian seam (no 1582-10-05..14); months chain = 6000×12;
+  bible = 67 books / 1215 chapters / 31,345 verses, GENE first / APOC last.
+**Coordinated final step (do NOT do solo, either side):** once these live in
+cargo CI, one commit removes `data/` from the public HEAD (git rm --cached +
+`.gitignore data/`; the local files stay, sourced from a cargo checkout) AND
+deletes the three tests above from the public suite. That commit is the
+actual W-10 close — it waits on your cargo CI being green and on Howell.
+The fixtures + test conversions ship first as their own PR (engine-only,
+safe against live data).
+
 ---
 
 ## CONTRACT

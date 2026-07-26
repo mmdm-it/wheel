@@ -1,0 +1,17 @@
+{
+  "_schema_version": "2.0",
+  "chapter_id": "GENE_001",
+  "book_key": "GENE",
+  "sequence": 1,
+  "testament": "Vetus_Testamentum",
+  "section": "Pentateuchus",
+  "verses": {
+    "1": {
+      "seq": 1,
+      "text": {
+        "VUL": "In principio creavit Deus cælum et terram.",
+        "DRA": "In the beginning God created heaven and earth."
+      }
+    }
+  }
+}

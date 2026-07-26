@@ -1,0 +1,80 @@
+{
+  "MMdM": {
+    "display_config": {
+      "_fixture": "Small SYNTHETIC catalog stub for the public engine test suite (W-10). NOT real MMdM data — the reserved catalog lives in the private wheel-cargo repo. Just enough shape to exercise buildCatalogManufacturers, the version footnote, the splash overture, and the detail-card walk. Two invented manufacturers.",
+      "volume_schema_version": "3.0.0",
+      "volume_data_version": "0000.00.00",
+      "structure_type": "wheel_hierarchical",
+      "volume_type": "wheel_hierarchical",
+      "volume_name": "Fixture Catalog",
+      "focus_ring_startup": {
+        "initial_magnified_item": "Lockwood-Ash",
+        "top_navigation_level": "manufacturer",
+        "arrangement": "cousins-flat",
+        "splash_overture_item": "Isotta Fraschini"
+      }
+    },
+    "markets": {
+      "americhe": {
+        "sort_number": 2,
+        "countries": {
+          "stati_uniti": {
+            "sort_number": 1,
+            "manufacturers": {
+              "Lockwood-Ash": {
+                "sort_number": 1,
+                "year_founded": 1904,
+                "year_dissolved": 1931,
+                "cylinders": {
+                  "2": {
+                    "sort_number": 2,
+                    "models": [
+                      {
+                        "id": "model:Lockwood-Ash:2:Twin 6 HP",
+                        "engine_model": "Twin 6 HP",
+                        "year_introduced": 1910,
+                        "sort_number": 1,
+                        "data": {}
+                      }
+                    ],
+                    "families": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "eurasia": {
+        "sort_number": 1,
+        "countries": {
+          "italia": {
+            "sort_number": 1,
+            "manufacturers": {
+              "Isotta Fraschini": {
+                "sort_number": 2,
+                "year_founded": 1900,
+                "year_dissolved": 1949,
+                "cylinders": {
+                  "6": {
+                    "sort_number": 6,
+                    "models": [
+                      {
+                        "id": "model:Isotta Fraschini:6:Tipo 8",
+                        "engine_model": "Tipo 8",
+                        "year_introduced": 1919,
+                        "sort_number": 1,
+                        "data": {}
+                      }
+                    ],
+                    "families": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
