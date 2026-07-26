@@ -55,11 +55,17 @@ sync_deployment() {
     echo "   Remote: $SERVER:$remote_path"
     echo ""
     
-    # Per-deployment data exclusions — only ship the data that volume needs.
-    # NOTE: the catalog deployment MUST include data/gutenberg — the Gutenberg
-    # easter egg (gateway to the Bible volume) runs from the catalog site and
-    # fetches gutenberg data relative to it. A stale excluded copy caused
-    # English testament names in production (v3.10.0 era).
+    # THE APP SYNC SHIPS NO DATA (2026-07-26, W-11 leak fix). The common rsync
+    # below excludes ALL of data/ and PROTECTS it from deletion. Data — the
+    # copyrighted-text-stripped gutenberg included — reaches the server ONLY
+    # through sync-data-to-server.sh, which runs the PD deploy filter. Before
+    # this, the app sync shipped the LOCAL (unfiltered) data/ with
+    # --delete-excluded and would OVERWRITE the filtered corpus with
+    # copyrighted text — an end-run around the whole W-11 protection.
+    # The per-deployment excludes below are now redundant for data (data/ is
+    # globally excluded) but the catalog's wheel-v3 PROTECT stays: it guards
+    # the sibling deployments from --delete-excluded when the catalog syncs to
+    # their parent dir (~/public_html/mmdm/).
     local data_excludes=()
     case "$deployment" in
         catalog)
@@ -91,6 +97,8 @@ sync_deployment() {
         --exclude='*.log' \
         --exclude='docs/' \
         --exclude='data/calendar/sources/' \
+        --exclude='data/' \
+        --filter='P data/' \
         --exclude='sync-to-server.sh' \
         --exclude='bump-version.sh' \
         --exclude='CHANGELOG.md' \
