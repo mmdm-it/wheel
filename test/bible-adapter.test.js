@@ -87,7 +87,7 @@ describe('bible adapter', () => {
 describe('reading on through the volume', () => {
   const __d = _pathBible.dirname(_fileURLToPathBible(import.meta.url));
   const realManifest = JSON.parse(_readFileSyncBible(
-    _pathBible.resolve(__d, '../data/gutenberg/manifest.json'), 'utf-8'));
+    _pathBible.resolve(__d, 'fixtures/data/gutenberg/manifest.json'), 'utf-8'));
 
   const inVerseMode = () => {
     const h = bibleAdapter.createHandlers({ manifest: realManifest, namesMap: {}, options: {} });
@@ -102,7 +102,7 @@ describe('reading on through the volume', () => {
     assert.equal(typeof h.layoutBindings.getBibleVerseChain, 'function');
     const chain = h.layoutBindings.getBibleVerseChain('GENE_1_31');
     assert.equal(chain.items[chain.selectedIndex].id, 'GENE_1_31', 'entered at the verse tapped');
-    assert.ok(chain.items.length > 30000, 'and the whole volume is in the ring');
+    assert.ok(chain.items.length > 300, 'and the whole volume is in the ring');
   });
 
   it('ascends to the chapter the READER reached, not the one they entered at', () => {
@@ -121,7 +121,7 @@ describe('reading on through the volume', () => {
     // descent and the same as the chapter→book ascent — so rotating out of the
     // landed chapter crosses book boundaries. It used to strand on Exodus's 40
     // chapters alone; that was the cousin-ascent bug (Howell 2026-07-21).
-    assert.ok(state.items.length > 1000, 'the whole volume is in the ring, not one book');
+    assert.ok(state.items.length > 60, 'the whole volume is in the ring, not one book');
     assert.ok(state.items.some(c => c && c.id === 'GENE:1'), 'Genesis reachable by rotating back');
     assert.ok(state.items.some(c => c && c.id === 'APOC:22'), 'Revelation by rotating forward');
   });
@@ -164,7 +164,7 @@ describe('reading on through the volume', () => {
     };
     assert.equal(h.parentHandler({ selected: reached, app }), true);
     assert.equal(state.items[state.idx].id, 'MATHE', 'lands on Matthew, not Genesis');
-    assert.equal(state.items.filter(Boolean).length, 67, 'among every book in the volume');
+    assert.equal(state.items.filter(Boolean).length, 5, 'among every book in the volume');
   });
 
   it('centres numerals on their nodes but leaves names beside them', () => {

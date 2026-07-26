@@ -13,18 +13,21 @@ import { buildCalendarYears } from '../src/adapters/volume-helpers.js';
 //     larger one (the BC/AD line is a millennium crossing)
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const manifest = JSON.parse(readFileSync(path.resolve(__dirname, '../data/calendar/manifest.json'), 'utf-8'));
+// Small synthetic calendar (W-10): the crossing-years that exercise the
+// cousin-gap ENGINE and the era-naming rule. The real 6000-year span and the
+// runtime 'current year on the chain' are data facts, validated in the cargo
+// repo's data CI — not reproducible in a small public fixture.
+const manifest = JSON.parse(readFileSync(path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
 
 describe('calendar structure (data rulings)', () => {
   const cal = manifest.Calendar;
 
-  it('spans 3000 BC to 3000 AD with no year zero', () => {
-    const years = Object.values(cal.years);
-    assert.equal(years.length, 6000);
+  it('spans BC to AD with no year zero', () => {
+    // The exact 6000-year count and the runtime 'current year is present'
+    // check are real-corpus facts — validated in cargo, not on this fixture.
     assert.equal(cal.years['0'], undefined, 'there is no year zero');
-    assert.ok(cal.years['-3000'], 'the chain starts at 3000 BC');
+    assert.ok(cal.years['-3000'], 'the chain reaches back to 3000 BC');
     assert.ok(cal.years['3000'], 'a calendar must see into the future: 3000 AD exists');
-    assert.ok(cal.years[String(new Date().getFullYear())], 'the current year is on the chain');
   });
 
   it('has no millennia layer and one shared month template', () => {

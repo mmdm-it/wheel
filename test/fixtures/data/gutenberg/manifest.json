@@ -1,0 +1,600 @@
+{
+  "Gutenberg_Bible": {
+    "display_config": {
+      "volume_name": "Gutenberg Bible (fixture)",
+      "leaf_level": "verse",
+      "hierarchy_levels": {
+        "testament": {
+          "color": "#111"
+        },
+        "section": {
+          "color": "#222"
+        },
+        "book": {
+          "color": "#333"
+        },
+        "chapter": {
+          "color": "#444"
+        }
+      },
+      "languages": {
+        "available": [
+          "latin",
+          "english"
+        ],
+        "default": "latin",
+        "labels": {
+          "latin": "LATINA",
+          "english": "ENGLISH"
+        }
+      },
+      "editions": {
+        "registry": "test/fixtures/data/gutenberg/translations.json",
+        "available": {
+          "latin": [
+            "VUL"
+          ],
+          "english": [
+            "DRA"
+          ]
+        },
+        "default": {
+          "latin": "VUL",
+          "english": "DRA"
+        }
+      }
+    },
+    "testaments": {
+      "Vetus_Testamentum": {
+        "name": "Old Testament",
+        "sort_number": 1,
+        "sections": {
+          "Pentateuchus": {
+            "name": "Pentateuchus",
+            "sort_number": 1,
+            "books": {
+              "GENE": {
+                "book_key": "GENE",
+                "book_name": "Genesis",
+                "book_number": 1,
+                "sort_number": 1,
+                "chapters": {
+                  "1": {
+                    "sort_number": 1,
+                    "name": "1",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/001.json",
+                    "verse_count": 31
+                  },
+                  "2": {
+                    "sort_number": 2,
+                    "name": "2",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/002.json",
+                    "verse_count": 2
+                  },
+                  "3": {
+                    "sort_number": 3,
+                    "name": "3",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/003.json",
+                    "verse_count": 1
+                  },
+                  "4": {
+                    "sort_number": 4,
+                    "name": "4",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/004.json",
+                    "verse_count": 1
+                  },
+                  "5": {
+                    "sort_number": 5,
+                    "name": "5",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/005.json",
+                    "verse_count": 1
+                  },
+                  "6": {
+                    "sort_number": 6,
+                    "name": "6",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/006.json",
+                    "verse_count": 1
+                  },
+                  "7": {
+                    "sort_number": 7,
+                    "name": "7",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/007.json",
+                    "verse_count": 1
+                  },
+                  "8": {
+                    "sort_number": 8,
+                    "name": "8",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/008.json",
+                    "verse_count": 1
+                  },
+                  "9": {
+                    "sort_number": 9,
+                    "name": "9",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/009.json",
+                    "verse_count": 1
+                  },
+                  "10": {
+                    "sort_number": 10,
+                    "name": "10",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/010.json",
+                    "verse_count": 1
+                  },
+                  "11": {
+                    "sort_number": 11,
+                    "name": "11",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/011.json",
+                    "verse_count": 1
+                  },
+                  "12": {
+                    "sort_number": 12,
+                    "name": "12",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/012.json",
+                    "verse_count": 1
+                  },
+                  "13": {
+                    "sort_number": 13,
+                    "name": "13",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/013.json",
+                    "verse_count": 1
+                  },
+                  "14": {
+                    "sort_number": 14,
+                    "name": "14",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/014.json",
+                    "verse_count": 1
+                  },
+                  "15": {
+                    "sort_number": 15,
+                    "name": "15",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/015.json",
+                    "verse_count": 1
+                  },
+                  "16": {
+                    "sort_number": 16,
+                    "name": "16",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/016.json",
+                    "verse_count": 1
+                  },
+                  "17": {
+                    "sort_number": 17,
+                    "name": "17",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/017.json",
+                    "verse_count": 1
+                  },
+                  "18": {
+                    "sort_number": 18,
+                    "name": "18",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/018.json",
+                    "verse_count": 1
+                  },
+                  "19": {
+                    "sort_number": 19,
+                    "name": "19",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/019.json",
+                    "verse_count": 1
+                  },
+                  "20": {
+                    "sort_number": 20,
+                    "name": "20",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/020.json",
+                    "verse_count": 1
+                  },
+                  "21": {
+                    "sort_number": 21,
+                    "name": "21",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/021.json",
+                    "verse_count": 1
+                  },
+                  "22": {
+                    "sort_number": 22,
+                    "name": "22",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/022.json",
+                    "verse_count": 1
+                  },
+                  "23": {
+                    "sort_number": 23,
+                    "name": "23",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/023.json",
+                    "verse_count": 1
+                  },
+                  "24": {
+                    "sort_number": 24,
+                    "name": "24",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/024.json",
+                    "verse_count": 1
+                  },
+                  "25": {
+                    "sort_number": 25,
+                    "name": "25",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/025.json",
+                    "verse_count": 1
+                  },
+                  "26": {
+                    "sort_number": 26,
+                    "name": "26",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/026.json",
+                    "verse_count": 1
+                  },
+                  "27": {
+                    "sort_number": 27,
+                    "name": "27",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/027.json",
+                    "verse_count": 1
+                  },
+                  "28": {
+                    "sort_number": 28,
+                    "name": "28",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/028.json",
+                    "verse_count": 1
+                  },
+                  "29": {
+                    "sort_number": 29,
+                    "name": "29",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/029.json",
+                    "verse_count": 1
+                  },
+                  "30": {
+                    "sort_number": 30,
+                    "name": "30",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/030.json",
+                    "verse_count": 1
+                  },
+                  "31": {
+                    "sort_number": 31,
+                    "name": "31",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/031.json",
+                    "verse_count": 1
+                  },
+                  "32": {
+                    "sort_number": 32,
+                    "name": "32",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/032.json",
+                    "verse_count": 1
+                  },
+                  "33": {
+                    "sort_number": 33,
+                    "name": "33",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/033.json",
+                    "verse_count": 1
+                  },
+                  "34": {
+                    "sort_number": 34,
+                    "name": "34",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/034.json",
+                    "verse_count": 1
+                  },
+                  "35": {
+                    "sort_number": 35,
+                    "name": "35",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/035.json",
+                    "verse_count": 1
+                  },
+                  "36": {
+                    "sort_number": 36,
+                    "name": "36",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/036.json",
+                    "verse_count": 1
+                  },
+                  "37": {
+                    "sort_number": 37,
+                    "name": "37",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/037.json",
+                    "verse_count": 1
+                  },
+                  "38": {
+                    "sort_number": 38,
+                    "name": "38",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/038.json",
+                    "verse_count": 1
+                  },
+                  "39": {
+                    "sort_number": 39,
+                    "name": "39",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/039.json",
+                    "verse_count": 1
+                  },
+                  "40": {
+                    "sort_number": 40,
+                    "name": "40",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/040.json",
+                    "verse_count": 1
+                  },
+                  "41": {
+                    "sort_number": 41,
+                    "name": "41",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/041.json",
+                    "verse_count": 1
+                  },
+                  "42": {
+                    "sort_number": 42,
+                    "name": "42",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/042.json",
+                    "verse_count": 1
+                  },
+                  "43": {
+                    "sort_number": 43,
+                    "name": "43",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/043.json",
+                    "verse_count": 1
+                  },
+                  "44": {
+                    "sort_number": 44,
+                    "name": "44",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/044.json",
+                    "verse_count": 1
+                  },
+                  "45": {
+                    "sort_number": 45,
+                    "name": "45",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/045.json",
+                    "verse_count": 1
+                  },
+                  "46": {
+                    "sort_number": 46,
+                    "name": "46",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/046.json",
+                    "verse_count": 1
+                  },
+                  "47": {
+                    "sort_number": 47,
+                    "name": "47",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/047.json",
+                    "verse_count": 1
+                  },
+                  "48": {
+                    "sort_number": 48,
+                    "name": "48",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/048.json",
+                    "verse_count": 1
+                  },
+                  "49": {
+                    "sort_number": 49,
+                    "name": "49",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/049.json",
+                    "verse_count": 1
+                  },
+                  "50": {
+                    "sort_number": 50,
+                    "name": "50",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/GENE/050.json",
+                    "verse_count": 1
+                  }
+                }
+              },
+              "EXO": {
+                "book_key": "EXO",
+                "book_name": "Exodus",
+                "book_number": 2,
+                "sort_number": 2,
+                "chapters": {
+                  "1": {
+                    "sort_number": 1,
+                    "name": "1",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/EXO/001.json",
+                    "verse_count": 1
+                  },
+                  "2": {
+                    "sort_number": 2,
+                    "name": "2",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/EXO/002.json",
+                    "verse_count": 1
+                  },
+                  "3": {
+                    "sort_number": 3,
+                    "name": "3",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/EXO/003.json",
+                    "verse_count": 4
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Novum_Testamentum": {
+        "name": "New Testament",
+        "sort_number": 2,
+        "sections": {
+          "Evangelia": {
+            "name": "Evangelia",
+            "sort_number": 1,
+            "books": {
+              "MATHE": {
+                "book_key": "MATHE",
+                "book_name": "Matthew",
+                "book_number": 41,
+                "sort_number": 41,
+                "chapters": {
+                  "1": {
+                    "sort_number": 1,
+                    "name": "1",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/MATHE/001.json",
+                    "verse_count": 1
+                  }
+                }
+              },
+              "IOHA": {
+                "book_key": "IOHA",
+                "book_name": "John",
+                "book_number": 44,
+                "sort_number": 44,
+                "chapters": {
+                  "1": {
+                    "sort_number": 1,
+                    "name": "1",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/IOHA/001.json",
+                    "verse_count": 1
+                  },
+                  "2": {
+                    "sort_number": 2,
+                    "name": "2",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/IOHA/002.json",
+                    "verse_count": 1
+                  },
+                  "3": {
+                    "sort_number": 3,
+                    "name": "3",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/IOHA/003.json",
+                    "verse_count": 16
+                  },
+                  "4": {
+                    "sort_number": 4,
+                    "name": "4",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/IOHA/004.json",
+                    "verse_count": 1
+                  }
+                }
+              }
+            }
+          },
+          "Apocalypsis": {
+            "name": "Apocalypsis",
+            "sort_number": 2,
+            "books": {
+              "APOC": {
+                "book_key": "APOC",
+                "book_name": "Revelation",
+                "book_number": 67,
+                "sort_number": 67,
+                "chapters": {
+                  "1": {
+                    "sort_number": 1,
+                    "name": "1",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/001.json",
+                    "verse_count": 1
+                  },
+                  "2": {
+                    "sort_number": 2,
+                    "name": "2",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/002.json",
+                    "verse_count": 1
+                  },
+                  "3": {
+                    "sort_number": 3,
+                    "name": "3",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/003.json",
+                    "verse_count": 1
+                  },
+                  "4": {
+                    "sort_number": 4,
+                    "name": "4",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/004.json",
+                    "verse_count": 1
+                  },
+                  "5": {
+                    "sort_number": 5,
+                    "name": "5",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/005.json",
+                    "verse_count": 1
+                  },
+                  "6": {
+                    "sort_number": 6,
+                    "name": "6",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/006.json",
+                    "verse_count": 1
+                  },
+                  "7": {
+                    "sort_number": 7,
+                    "name": "7",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/007.json",
+                    "verse_count": 1
+                  },
+                  "8": {
+                    "sort_number": 8,
+                    "name": "8",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/008.json",
+                    "verse_count": 1
+                  },
+                  "9": {
+                    "sort_number": 9,
+                    "name": "9",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/009.json",
+                    "verse_count": 1
+                  },
+                  "10": {
+                    "sort_number": 10,
+                    "name": "10",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/010.json",
+                    "verse_count": 1
+                  },
+                  "11": {
+                    "sort_number": 11,
+                    "name": "11",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/011.json",
+                    "verse_count": 1
+                  },
+                  "12": {
+                    "sort_number": 12,
+                    "name": "12",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/012.json",
+                    "verse_count": 1
+                  },
+                  "13": {
+                    "sort_number": 13,
+                    "name": "13",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/013.json",
+                    "verse_count": 1
+                  },
+                  "14": {
+                    "sort_number": 14,
+                    "name": "14",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/014.json",
+                    "verse_count": 1
+                  },
+                  "15": {
+                    "sort_number": 15,
+                    "name": "15",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/015.json",
+                    "verse_count": 1
+                  },
+                  "16": {
+                    "sort_number": 16,
+                    "name": "16",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/016.json",
+                    "verse_count": 1
+                  },
+                  "17": {
+                    "sort_number": 17,
+                    "name": "17",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/017.json",
+                    "verse_count": 1
+                  },
+                  "18": {
+                    "sort_number": 18,
+                    "name": "18",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/018.json",
+                    "verse_count": 1
+                  },
+                  "19": {
+                    "sort_number": 19,
+                    "name": "19",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/019.json",
+                    "verse_count": 1
+                  },
+                  "20": {
+                    "sort_number": 20,
+                    "name": "20",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/020.json",
+                    "verse_count": 1
+                  },
+                  "21": {
+                    "sort_number": 21,
+                    "name": "21",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/021.json",
+                    "verse_count": 1
+                  },
+                  "22": {
+                    "sort_number": 22,
+                    "name": "22",
+                    "_external_file": "test/fixtures/data/gutenberg/chapters/APOC/022.json",
+                    "verse_count": 21
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

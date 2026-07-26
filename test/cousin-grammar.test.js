@@ -12,7 +12,7 @@ import { calculateNodePositions, getViewportInfo, getNodeSpacing, getViewportWin
 // 1st..4th cousins, highest crossed rank wins.
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const manifest = JSON.parse(readFileSync(path.resolve(__dirname, '../data/calendar/manifest.json'), 'utf-8'));
+const manifest = JSON.parse(readFileSync(path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
 
 describe('cousin gap grammar', () => {
   it('ladder is 2/4/6/8', () => {
@@ -48,7 +48,10 @@ describe('months cousin chain', () => {
   };
 
   it('holds every month of every year on one chain', () => {
-    assert.equal(items.filter(Boolean).length, 72000);
+    // 15 fixture years × 12 months. The real 72,000 (6000×12) is a
+    // corpus-scale fact validated in cargo; here we prove the chain holds
+    // EVERY month of EVERY year, not one year's twelve.
+    assert.equal(items.filter(Boolean).length, 180);
   });
 
   it('gaps by cousin rank: year 2, century 4, millennium 6', () => {
@@ -135,7 +138,7 @@ describe('the continuous verse chain', () => {
   // ONE chapter — reaching the end of Genesis 1 meant backing out to the
   // chapters ring to enter Genesis 2.
   const bibleManifest = JSON.parse(readFileSync(
-    path.resolve(__dirname, '../data/gutenberg/manifest.json'), 'utf-8'));
+    path.resolve(__dirname, '../test/fixtures/data/gutenberg/manifest.json'), 'utf-8'));
   const { items } = buildBibleVerseChain(bibleManifest, {});
   const at = id => items.findIndex(x => x && x.id === id);
   const gapBefore = id => {
@@ -148,7 +151,7 @@ describe('the continuous verse chain', () => {
     const verses = items.filter(Boolean);
     assert.equal(verses[0].id, 'GENE_1_1', 'it begins at the beginning');
     assert.equal(verses[verses.length - 1].id, 'APOC_22_21', 'and ends at the end');
-    assert.ok(verses.length > 30000, `the whole volume rides the ring (${verses.length})`);
+    assert.ok(verses.length > 100, `the whole volume rides the ring (${verses.length})`);
   });
 
   it('wears the cousin ladder at every kind of boundary', () => {
@@ -196,7 +199,7 @@ describe('the sweep works at every level, not just verses', () => {
   // end of their testament (and carried no gaps at all despite the
   // builder's name) and chapters covered a single book.
   const bibleManifest = JSON.parse(readFileSync(
-    path.resolve(__dirname, '../data/gutenberg/manifest.json'), 'utf-8'));
+    path.resolve(__dirname, '../test/fixtures/data/gutenberg/manifest.json'), 'utf-8'));
   const gapBefore = (items, id) => {
     const i = items.findIndex(x => x && x.id === id);
     let run = 0;
@@ -207,7 +210,7 @@ describe('the sweep works at every level, not just verses', () => {
   it('the BOOKS ring runs the whole volume, gapping at the testament', () => {
     const { items } = buildBibleBookCousinChain(bibleManifest, {});
     const books = items.filter(Boolean);
-    assert.equal(books.length, 67, 'every book rides the ring');
+    assert.equal(books.length, 5, 'every book rides the ring (real 67 validated in cargo)');
     assert.equal(books[0].id, 'GENE');
     assert.equal(books[books.length - 1].id, 'APOC', 'the sweep reaches the end');
     assert.equal(gapBefore(items, 'EXO'), 0, 'no gap between books of one testament');
@@ -217,7 +220,7 @@ describe('the sweep works at every level, not just verses', () => {
   it('the CHAPTERS ring runs the whole volume, book then testament', () => {
     const { items } = buildBibleChapterChain(bibleManifest, {});
     const chapters = items.filter(Boolean);
-    assert.equal(chapters.length, 1215);
+    assert.equal(chapters.length, 80, 'real 1215 validated in cargo');
     assert.equal(chapters[0].id, 'GENE:1');
     assert.equal(chapters[chapters.length - 1].id, 'APOC:22');
     assert.equal(gapBefore(items, 'GENE:2'), 0, 'no gap inside a book');

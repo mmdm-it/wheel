@@ -58,7 +58,7 @@ describe('calendar adapter', () => {
 
   it('names the weekday when a date settles in the magnifier', () => {
     const manifest = JSON.parse(readFileSync(
-      path.resolve(__dirname, '../data/calendar/manifest.json'), 'utf-8'));
+      path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
     const dayDetail = calendarAdapter.detailFor(
       { id: 'd:2026:7:20', level: 'day', yearNumber: 2026, monthNumber: 7, dayNumber: 20 }, manifest);
     assert.equal(dayDetail.type, 'ephemeris');
@@ -76,7 +76,7 @@ describe('calendar adapter', () => {
 
   it('names the wedge columns from the same weekday data as the prose', () => {
     const manifest = JSON.parse(readFileSync(
-      path.resolve(__dirname, '../data/calendar/manifest.json'), 'utf-8'));
+      path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
     assert.deepEqual(getCalendarWeekdayNames(manifest),
       ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']);
     assert.deepEqual(getCalendarWeekdayLetters(manifest), ['S', 'M', 'T', 'W', 'T', 'F', 'S']);
