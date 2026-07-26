@@ -732,6 +732,14 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [data-2026.07.26] - 2026-07-26
+
+### Data
+- Bible: pendingLicense flags on NAB, CEI, VAT_ES, POR; comingSoon on DRA (HANDOFF W-11)
+- Deploy: new scripts/deploy-pd-filter.mjs — the public server receives a PD-only copy of the gutenberg volume; copyrighted texts stay in the private cargo repo pending licensing
+- volume_data_version bump for: gutenberg
+
+
 ## [data-2026.07.24] - 2026-07-24
 
 ### Data

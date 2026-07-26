@@ -113,6 +113,20 @@ node "$LOCAL_PATH/scripts/precompress-json.mjs"
 echo -e "${GREEN}✅ Derived data current${NC}"
 echo ""
 
+# ── PD filter: the gutenberg volume NEVER deploys from data/ directly ────────
+# Copyrighted translation texts (NAB, CEI, VAT_ES, POR) live in the local tree
+# and the private wheel-cargo repo, but must not reach the public server while
+# licensing is pending (HANDOFF W-10/W-11; LICENSING.local.md). The filter
+# writes a PD-only copy to a throwaway staging dir and HARD-FAILS if any
+# non-allowlisted text survives — a failed filter aborts the whole sync
+# (set -e), so there is no path where unfiltered data ships.
+PD_STAGING="$(mktemp -d /tmp/wheel-pd-deploy.XXXXXX)"
+trap 'rm -rf "$PD_STAGING"' EXIT
+echo -e "${BLUE}⛪ Building PD-only gutenberg deploy copy...${NC}"
+node "$LOCAL_PATH/scripts/deploy-pd-filter.mjs" "$LOCAL_PATH/data/gutenberg" "$PD_STAGING/gutenberg"
+echo -e "${GREEN}✅ PD filter verified${NC}"
+echo ""
+
 # ── Helper: report what version is about to ship ─────────────────────────────
 declare -A VOLUME_FILE=(
   [mmdm]="data/mmdm/mmdm_catalog.json"
@@ -147,6 +161,13 @@ sync_volume() {
   local deployments="${VOLUME_DEPLOYMENTS[$volume]}"
   [[ "${INCLUDE_STAGING:-0}" == "1" ]] && deployments="$deployments staging"
 
+  # gutenberg deploys ONLY from the PD-filtered staging copy (see above);
+  # every other volume deploys from the local data/ tree as before.
+  local src_dir="$LOCAL_PATH/data/${volume}"
+  if [[ "$volume" == "gutenberg" ]]; then
+    src_dir="$PD_STAGING/gutenberg"
+  fi
+
   for deployment in $deployments; do
     local remote="${DEPLOY_DATA_DIR[$deployment]}/${volume}/"
     echo -e "${BLUE}  🚀 → ${deployment}${NC}  ${SERVER}:${remote}"
@@ -157,7 +178,7 @@ sync_volume() {
       --exclude='.DS_Store' \
       --exclude='*.swp' \
       "${excludes[@]}" \
-      "$LOCAL_PATH/data/${volume}/" "$SERVER:$remote"
+      "${src_dir}/" "$SERVER:$remote"
 
     if [ $? -eq 0 ]; then
       echo -e "${GREEN}  ✅ ${volume} → ${deployment}${NC}"
