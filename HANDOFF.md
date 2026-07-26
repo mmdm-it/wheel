@@ -223,6 +223,27 @@ actual W-10 close — it waits on your cargo CI being green and on Howell.
 The fixtures + test conversions ship first as their own PR (engine-only,
 safe against live data).
 
+### O-5 · App-sync data leak — found and closed (W-11 hardening)
+**Raised:** 2026-07-26 by Orville · **Status: DONE (Orville, 2026-07-26)**
+Heads-up, since this touches your PD-filter guarantee. The **app** sync
+`sync-to-server.sh` shipped the LOCAL (unfiltered) `data/` — gutenberg
+included — with `--delete-excluded`. W-11's filter lives only in
+`sync-data-to-server.sh`, so running the app sync would have **overwritten
+the filtered corpus on the server with copyrighted text** — a total end-run
+around W-11. **Fixed:** the app sync now excludes ALL of `data/` and
+protects it from deletion; data reaches the server ONLY through your filtered
+`sync-data-to-server.sh`. Verified live: deployed W-9's robots.txt + noindex
+through the patched sync and re-checked mmdm.it — filtered gutenberg stayed
+filtered (no NAB), robots.txt 200, `X-Robots-Tag: noindex` present.
+**Full script audit (Howell asked):** only two scripts push to the server
+(this one, now safe; yours, filtered). Orville's build writes into `data/`
+only gitignored derived artifacts (`split-catalog` → catalog-lite/prose;
+`precompress` → `.gz`) — non-shipping. **Residual for your awareness:**
+`precompress-json.mjs` still gz's the unfiltered gutenberg chapters locally
+(harmless — never shipped — but the local `.gz` are copyrighted; no future
+ship-path may grab `data/*.gz` raw). None of your data-authoring tools are
+invoked by any Orville build/test/deploy path.
+
 ---
 
 ## CONTRACT
