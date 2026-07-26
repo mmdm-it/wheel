@@ -13,3 +13,7 @@ data/mmdm/catalog-prose.json
 # derived at build time by scripts/precompress-json.mjs
 *.json.gz
 .snapshot-version
+
+# Session-local licensing working papers (Wilbur's dossiers). The repo is
+# public and these are negotiation drafts — they must NEVER be committed.
+*.local.md

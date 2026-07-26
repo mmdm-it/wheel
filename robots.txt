@@ -1,0 +1,22 @@
+# mmdm.it — the engine is public (GPL-3.0-only); the cargo is reserved.
+#
+# The marine-engine catalog and the scripture/calendar/places corpora are
+# fetched by the app as JSON at runtime, at predictable URLs under /data/.
+# The app is client-rendered, so that text never reaches crawlable HTML —
+# but the JSON itself is fetchable, so we forbid crawling it by POLICY here
+# rather than relying on that luck (W-9). Third-party scripture (NAB, CEI,
+# El Libro del Pueblo de Dios) is held under reserved rights; it must not be
+# indexed or redistributed.
+#
+# robots.txt is honored only at the origin root, so this one file (shipped to
+# the mmdm.it root with the catalog) governs every /data/ path on the domain,
+# including the volume sub-deployments under /wheel-v3/. The .htaccess
+# X-Robots-Tag on *.json is the per-directory belt-and-suspenders.
+
+User-agent: *
+Disallow: /data/
+Disallow: /wheel-v3/bible/data/
+Disallow: /wheel-v3/calendar/data/
+Disallow: /wheel-v3/places/data/
+# Wildcard catch for any /…/data/ depth, for crawlers that honor it.
+Disallow: /*/data/

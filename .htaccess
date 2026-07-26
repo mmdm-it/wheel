@@ -37,3 +37,18 @@
     Header set Cache-Control "no-cache, must-revalidate"
   </FilesMatch>
 </IfModule>
+
+# Reserved cargo (W-9): the corpus JSON is the app's runtime data, but must
+# never be indexed by search engines. robots.txt forbids CRAWLING at the
+# origin root; this header is the per-directory belt — X-Robots-Tag is
+# honored at any depth, unlike a subdirectory robots.txt, so it also covers
+# the volume sub-deployments. Harmless to the app's own XHR fetches: only
+# crawlers act on it.
+<IfModule mod_headers.c>
+  <FilesMatch "\.json$">
+    Header set X-Robots-Tag "noindex"
+  </FilesMatch>
+  <FilesMatch "\.json\.gz$">
+    Header set X-Robots-Tag "noindex"
+  </FilesMatch>
+</IfModule>
