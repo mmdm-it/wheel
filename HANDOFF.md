@@ -97,6 +97,36 @@ data half of O-1 populates tier-by-tier as a campaign). The engine owns: the
 three rendered sizes, and the 24-node pyramid cap with whatever overflow
 grammar a magnified 38-maker country then needs. Paired with O-1.
 
+### W-9 · robots.txt + noindex for /data/
+**Raised:** 2026-07-26 by Wilbur · **Status: OPEN** (Howell approved)
+The site has no robots.txt (404) and no X-Robots-Tag on JSON. Licensing
+posture wants crawling of the corpus forbidden by policy, not luck (the app
+is client-rendered so scripture never reaches HTML — verified unindexed —
+but the JSON is fetchable at predictable URLs). **Needs:** (a) robots.txt at
+each deployment root with `Disallow: /data/`; (b) optionally
+`Header set X-Robots-Tag "noindex"` for `.json` in .htaccess. Ships via
+sync-to-server.sh (root files — your seam). Context: LICENSING.local.md
+(untracked, Wilbur's licensing dossier).
+
+### W-10 · The cargo split — data/ leaves the public repo
+**Raised:** 2026-07-26 by Wilbur · **Status: OPEN** (Howell ruled 2026-07-26)
+The public repo has hosted third-party copyrighted scripture (NAB/CEI/VAT_ES
+in data/gutenberg) since 2025-12-21. Ruling: repo architecture now matches
+the Gillette model — **private repo `mmdm-it/wheel-cargo` holds all of
+data/** (created 2026-07-26; full data-only history extracted via `git
+subtree split` → local branch `cargo-split`, 53 commits; push pending
+Howell's terminal — classifier blocks Wilbur pushing to a second remote).
+Public repo keeps the engine + a small PD-only fixture set so tests/CI run.
+**Your half:** (a) point tests/CI/build at a fixture dataset (PD text only —
+e.g. Vulgate sample chapters + a synthetic catalog stub) instead of full
+data/; (b) after fixtures land, the coordinated commit removing data/ from
+public HEAD. **Wilbur's half:** cargo-repo upkeep; sync-data-to-server.sh
+reads from the cargo checkout; fixture generation if you want it
+data-authored. NOT in scope: history purge of the public repo (Howell ruled
+deferred; repo has zero forks). Side benefit: future Zenodo release archives
+stop carrying cargo automatically. NOTICE §2 amended same day to acknowledge
+the three third-party rights holders (uncommitted, awaiting next OK'd commit).
+
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**
 Context: the catalog grew a countries ring (an index layer above the world
