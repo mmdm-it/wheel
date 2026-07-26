@@ -97,6 +97,61 @@ data half of O-1 populates tier-by-tier as a campaign). The engine owns: the
 three rendered sizes, and the 24-node pyramid cap with whatever overflow
 grammar a magnified 38-maker country then needs. Paired with O-1.
 
+*(W-9 and W-10 below were first filed the morning of 2026-07-26 and were lost
+in a concurrent rewrite of this file — restored same day. If you triaged a
+version without them, re-read from here.)*
+
+### W-9 · robots.txt + noindex for /data/
+**Raised:** 2026-07-26 by Wilbur · **Status: OPEN** (Howell approved)
+The site has no robots.txt (404) and no X-Robots-Tag on JSON. Licensing
+posture wants crawling of the corpus forbidden by policy, not luck (the app
+is client-rendered so scripture never reaches HTML — verified unindexed —
+but the JSON is fetchable at predictable URLs). **Needs:** (a) robots.txt at
+each deployment root with `Disallow: /data/`; (b) optionally
+`Header set X-Robots-Tag "noindex"` for `.json` in .htaccess. Ships via
+sync-to-server.sh (root files — your seam). Context: LICENSING.local.md
+(untracked, Wilbur's licensing dossier).
+
+### W-10 · The cargo split — data/ leaves the public repo
+**Raised:** 2026-07-26 by Wilbur · **Status: OPEN** (Howell ruled 2026-07-26)
+The public repo has hosted third-party copyrighted scripture (NAB/CEI/VAT_ES
+in data/gutenberg) since 2025-12-21. Ruling: repo architecture now matches
+the Gillette model — **private repo `mmdm-it/wheel-cargo` now holds all of
+data/** (LIVE as of 2026-07-26: full data-only history via `git subtree
+split`, 53 commits, pushed by Howell; verified private; README + .gitignore
+in place; note the cargo repo roots at gutenberg/, mmdm/… with NO data/
+prefix). Public repo keeps the engine + a small PD-only fixture set so
+tests/CI run. **Your half:** (a) point tests/CI/build at a fixture dataset
+(PD text only — e.g. Vulgate sample chapters + a synthetic catalog stub);
+(b) after fixtures land, the coordinated commit removing data/ from public
+HEAD. **Wilbur's half:** cargo-repo upkeep; sync-data-to-server.sh reads
+from the cargo checkout; fixture generation if you want it data-authored.
+NOT in scope: history purge of the public repo (Howell ruled deferred; zero
+forks). Side benefit: future Zenodo release archives stop carrying cargo.
+NOTICE §2 needs the third-party-rights paragraph before licensing letters go
+out (the corrected Zenodo records link to NOTICE as their rights statement).
+
+### W-11 · pendingLicense editions — the shelf shows them, the vault holds them
+**Raised:** 2026-07-26 by Wilbur · **Status: OPEN** (Howell ruled 2026-07-26)
+Howell's ruling: copyrighted texts must not be SERVED, not merely not shown
+(a UI gate in front of already-fetched JSON is a curtain, not a wall). Data
+side is DONE: `translations.json` now carries `"pendingLicense": true` on
+**NAB, CEI, VAT_ES, POR** and `"comingSoon": true` on DRA (PD, text not yet
+sourced) — note these are the first edition-level flags; W-4's filter
+previously had nothing to read. New `scripts/deploy-pd-filter.mjs` (Wilbur's,
+per the scripts/ function seam) builds a PD-only deploy copy of gutenberg
+(strips 90,296 verse-texts, hard-fails the sync if one survives); the sync
+script deploys gutenberg ONLY from that staging copy. After next sync the
+server carries zero copyrighted verses.
+**Your half (the UX):** render `pendingLicense` editions in the tertiary as
+visible-but-unselectable, labeled per Howell roughly "This translation not
+available pending licensing from the copyright holder." Design consequence:
+english/italian/spanish then have NO selectable edition → needs a language-
+level pending state in the secondary. Also: with NAB/CEI/VAT_ES text gone
+from deployed chapters, W-6's fallback engages for ALL former NAB readers —
+flagged-Latin becomes the whole English experience until DRA text lands
+(Wilbur's sourcing queue, top priority).
+
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**
 Context: the catalog grew a countries ring (an index layer above the world
@@ -139,6 +194,13 @@ blue — invisible).
 ---
 
 ## CONTRACT
+
+- **Single-owner rule (Howell, 2026-07-26):** only ONE session open at a
+  time; Howell closes a session before switching tabs. Adopted after
+  simultaneous sessions caused a concurrent HANDOFF.md rewrite that silently
+  dropped W-9/W-10 (restored same day) and left Orville holding on an
+  ambiguous tree. The ledger's write protocol handles sequential handoffs,
+  not simultaneous editors.
 
 - **Versioning policy (Howell, 2026-07-23, from the proposal):** data tracks
   dates (`volume_data_version` = YYYY.MM.DD, `.2` suffix for same-day), the
