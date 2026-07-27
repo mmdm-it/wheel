@@ -7,11 +7,18 @@
 //
 // Runs after split-catalog in `npm run build`. Build output, gitignored,
 // shipped by sync-to-server.sh.
-import { readdirSync, statSync, readFileSync, writeFileSync } from 'node:fs';
+import { readdirSync, statSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { gzipSync } from 'node:zlib';
 import { join } from 'node:path';
 
 const DATA_DIR = new URL('../data', import.meta.url).pathname;
+
+// No data/ in a public engine-only checkout (W-10 — the corpus is in
+// wheel-cargo). Nothing to compress; skip cleanly so the build still finishes.
+if (!existsSync(DATA_DIR)) {
+  console.warn('precompress-json: no data/ (corpus is in wheel-cargo, W-10) — nothing to compress.');
+  process.exit(0);
+}
 
 function* walkJson(dir) {
   for (const entry of readdirSync(dir)) {

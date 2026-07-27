@@ -6,11 +6,16 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# derived at build time by scripts/split-catalog.mjs
-data/mmdm/catalog-lite.json
-data/mmdm/catalog-prose.json
+# THE CORPUS LIVES IN THE PRIVATE wheel-cargo REPO (W-10, 2026-07-26).
+# data/ here is a LOCAL working copy — a checkout of mmdm-it/wheel-cargo —
+# never tracked in this public engine repo (it held third-party copyrighted
+# scripture). Local files stay on disk; git just ignores them. Tests run
+# against test/fixtures/ (public-domain); the app fetches data at runtime;
+# the deploy ships data via sync-data-to-server.sh from the cargo checkout.
+data/
 
-# derived at build time by scripts/precompress-json.mjs
+# derived at build time by scripts/precompress-json.mjs (belt — data/ already
+# covers these, kept for clarity)
 *.json.gz
 .snapshot-version
 
