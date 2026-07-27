@@ -146,38 +146,91 @@ const VERSE_FILL = 1.0;         // fraction of sector height the longest verse m
 // disagree with the render. It also self-corrects for load timing: before EB
 // Garamond arrives the span falls back to Georgia (WIDER), so the wrap breaks
 // early and can't overflow; once the font lands the measure is exact.
-let measureSpan;
-function getMeasureSpan() {
-  if (measureSpan !== undefined) return measureSpan;
-  measureSpan = null;
+// A measurer is a FRESH span per layout pass, fully styled — family AND size —
+// BEFORE it enters the DOM; only its textContent changes between word
+// measures. This is the one recipe iOS Chrome measures honestly. The previous
+// persistent span (created once, fontSize set per call on the already-attached
+// element) NEVER applied those later sizes on iOS — it measured every string
+// at the ~16px default, which under-measured every wrap and drove the uniform
+// size search to absurd heights (probe 2026-07-27: 47 chars "fitting" a 338px
+// budget that truly needed 620px at the requested 33.5px). The probe's
+// autopsy spans, styled-before-append, measured true — so measure exactly the
+// way the autopsy does.
+function makeMeasurer(fontPx) {
   try {
-    if (typeof document !== 'undefined' && document.body && typeof document.createElement === 'function') {
-      const s = document.createElement('span');
-      s.style.cssText = 'position:absolute;left:-9999px;top:0;visibility:hidden;white-space:nowrap;pointer-events:none;';
-      s.style.fontFamily = VERSE_FONT_STACK;
-      document.body.appendChild(s);
-      measureSpan = s;
-    }
-  } catch (_) { measureSpan = null; }
-  return measureSpan;
+    if (typeof document === 'undefined' || typeof document.createElement !== 'function') return null;
+    // Host on document.BODY, never inside #detail-panel: the panel wears a
+    // SCALE TRANSFORM while the strata are open (the recede), and a span
+    // inside it measures scaled — a translation switch made mid-chooser
+    // re-rendered the verse with 0.4× measures and ballooned the font
+    // (probe 2026-07-27: bodyMeas 620 true vs panelMeas 248 = 620×0.4).
+    // The body is never transformed; layout coordinates stay honest.
+    const host = document.body;
+    if (!host || typeof host.appendChild !== 'function') return null;
+    const s = document.createElement('span');
+    s.style.cssText = 'position:absolute;left:0;top:-9999px;opacity:0;white-space:nowrap;pointer-events:none;margin:0;padding:0;';
+    s.style.fontFamily = VERSE_FONT_STACK;
+    s.style.fontSize = `${fontPx}px`;
+    host.appendChild(s);
+    if (typeof s.getBoundingClientRect !== 'function') { s.remove?.(); return null; }
+    return {
+      width(text) { s.textContent = text; return s.getBoundingClientRect().width; },
+      done() { try { s.remove(); } catch (_) { /* detached */ } }
+    };
+  } catch (_) { return null; }
 }
 // Whether the real serif has loaded — the size cache keys on it, so the shared
-// verse size recomputes (from the Georgia estimate to the exact EB Garamond)
-// the moment the font arrives. document.fonts.ready is the honest signal
-// (document.fonts.check() lies — returns true too early).
+// verse size recomputes (from the fallback estimate to the exact EB Garamond)
+// the moment the font arrives. document.fonts.load() is the honest signal: it
+// FETCHES the face and resolves when it is truly usable (fonts.ready can
+// resolve before a lazily-used face is even requested; fonts.check() lies
+// early). CRITICAL (Howell 2026-07-27, the iOS overflow): the old assumption
+// that the Georgia fallback measures WIDER than EB Garamond — so a pre-load
+// wrap "can't overflow" — is FALSE on iOS, where EB Garamond runs ~2-3% wider.
+// A wrap measured in Georgia then painted in Garamond pushed the line past
+// the fence to the glass edge. So when the face lands, notify: main.js
+// re-renders the open detail, and the wrap re-measures in the real serif.
 let verseFontLoaded = false;
-if (typeof document !== 'undefined' && document.fonts && document.fonts.ready) {
-  document.fonts.ready.then(() => { verseFontLoaded = true; }).catch(() => {});
+const verseFontCallbacks = [];
+function noteVerseFontLoaded() {
+  if (verseFontLoaded) return;
+  verseFontLoaded = true;
+  // Sizes memoised under the fallback metrics die with the fallback.
+  verseSizeCache.clear();
+  verseFontCallbacks.splice(0).forEach(cb => { try { cb(); } catch (_) { /* diagnostics never break render */ } });
+}
+if (typeof document !== 'undefined' && document.fonts) {
+  try {
+    if (typeof document.fonts.load === 'function') {
+      document.fonts.load('16px "EB Garamond"').then(noteVerseFontLoaded).catch(() => {});
+    }
+    // Belt: whenever any font batch finishes, flip if the face is now real.
+    if (typeof document.fonts.addEventListener === 'function') {
+      document.fonts.addEventListener('loadingdone', () => {
+        try { if (document.fonts.check('16px "EB Garamond"')) noteVerseFontLoaded(); } catch (_) { /* keep waiting */ }
+      });
+    }
+    if (document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        try { if (document.fonts.check('16px "EB Garamond"')) noteVerseFontLoaded(); } catch (_) { /* keep waiting */ }
+      }).catch(() => {});
+    }
+  } catch (_) { /* no Font Loading API: stay on the fallback metrics */ }
 }
 function verseFontReady() { return verseFontLoaded; }
-function measureWidth(text, fontPx) {
-  const span = getMeasureSpan();
-  if (span) {
-    span.style.fontSize = `${fontPx}px`;
-    span.textContent = text;
-    return span.getBoundingClientRect().width;
-  }
-  return text.length * fontPx * VERSE_CHAR_EM; // node/tests: no DOM
+// Nuke the memoised uniform size so the next layout re-measures from
+// scratch (spans are already per-pass). Called by the post-paint overflow
+// verifier: if the PAINT proves the measures wrong (a line's content wider
+// than its box), whatever produced them is stale.
+export function invalidateVerseMeasurement() {
+  verseSizeCache.clear();
+}
+// Register a one-shot "the real serif just arrived" callback (fires
+// immediately if it already has).
+export function onVerseFontReady(cb) {
+  if (typeof cb !== 'function') return;
+  if (verseFontLoaded) { try { cb(); } catch (_) { /* ignore */ } return; }
+  verseFontCallbacks.push(cb);
 }
 
 // availableWidth / leftX at an arbitrary y, interpolated from the REAL (arc-
@@ -212,18 +265,26 @@ function flowVerseAt(text, bounds, fontPx) {
   const lines = [];
   let y = top, cur = '';
   if (y + lineH > bottom) return { lines, overflow: true }; // sector too short for one line
-  const seat = () => { const m = sectorMetricAt(lt, y); lines.push({ text: cur, y, leftX: m.leftX, availableWidth: m.width }); };
-  for (const w of words) {
-    const m = sectorMetricAt(lt, y);
-    const test = cur ? `${cur} ${w}` : w;
-    if (measureWidth(test, fontPx) <= m.width) { cur = test; continue; }
-    if (!cur) { cur = w; continue; } // a lone word wider than its column: keep it (never loop)
-    seat();
-    y += lineH; cur = w;
-    if (y + lineH > bottom) return { lines, overflow: true }; // next line has no room, words remain
+  // One measurer for this whole pass — created at THIS fontPx, styled before
+  // it enters the DOM (see makeMeasurer). Estimate fallback for node/tests.
+  const meas = makeMeasurer(fontPx);
+  const widthOf = meas ? t => meas.width(t) : t => t.length * fontPx * VERSE_CHAR_EM;
+  try {
+    const seat = () => { const m = sectorMetricAt(lt, y); lines.push({ text: cur, y, leftX: m.leftX, availableWidth: m.width }); };
+    for (const w of words) {
+      const m = sectorMetricAt(lt, y);
+      const test = cur ? `${cur} ${w}` : w;
+      if (widthOf(test) <= m.width) { cur = test; continue; }
+      if (!cur) { cur = w; continue; } // a lone word wider than its column: keep it (never loop)
+      seat();
+      y += lineH; cur = w;
+      if (y + lineH > bottom) return { lines, overflow: true }; // next line has no room, words remain
+    }
+    if (cur) seat();
+    return { lines, overflow: false };
+  } finally {
+    if (meas) meas.done();
   }
-  if (cur) seat();
-  return { lines, overflow: false };
 }
 
 // The uniform verse font size (px) for this sector: the largest at which the
