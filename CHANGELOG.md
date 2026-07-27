@@ -1,5 +1,30 @@
 # Changelog
 
+## 3.22.0 — iOS strata rack-focus + servable edition defaults
+- **The rack-focus blur finally reaches iOS.** WebKit silently drops a CSS
+  `filter` on an SVG child `<g>` (and, it turns out, on a nested `<svg>`
+  too) — so for months iPhones showed the receded planes razor-sharp while
+  only the HTML verse panel blurred. The blur now rides SVG *roots*, which
+  WebKit honors like HTML: the primary blurs at the `#app` root, and each
+  stratum is its own top-level `<svg>` inside an HTML `#strata-layer` div
+  (the hit-target became a div too; the coordinate-based pointer handlers
+  are untouched). Both the primary-under-secondary and the full
+  primary+secondary-under-tertiary depth stacks now soften on iPhone.
+- **Gentler depth gradient**: recede blur eased to `[0, 1.5, 3]` px (was
+  `5/10`) — a receded plane's nodes must stay legible, never dissolve into
+  a smear (Howell). Front sharp, one back soft, the primary two back
+  blurrier so it reads further away.
+- **A language defaults to a translation we actually have.** Entering the
+  tertiary from English used to land on the New American Bible, which is
+  held back for licensing — now `setLanguage` defaults to the first
+  *servable* edition (skipping `pendingLicense`/`comingSoon`), so English
+  opens on the Douay-Rheims.
+- **Foreign editions can read in their own script.** The unselected
+  tertiary node now renders `nativeAbbrev` when the registry carries it
+  (Greek `LXX`/`BYZ` → a Greek abbreviation), falling back to the key —
+  the magnified node already showed the native name. Data half tracked as
+  HANDOFF O-6.
+
 ## 3.21.2 — the label comes home
 - **The parent label leaves the corner and rejoins its vessel**, placed by
   measured text width under three rules: short labels (IHI) center on the
