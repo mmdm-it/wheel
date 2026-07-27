@@ -143,12 +143,46 @@ let searchAvailable = false; // set per volume at boot (config.hasSearch)
 // volume. Tap the dividers again to abandon and restore the browse chain.
 const SEARCH_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
 const SEARCH_COMPLETION_CAP = 14; // pyramid seats for candidates
-const searchNorm = s => String(s).toUpperCase().replace(/[^A-Z0-9]/g, '');
+// Normalize a label for striking (A-Z0-9, punctuation and spaces dropped)
+// AND record which norm-indices begin a WORD in the raw label — the substring
+// ranking (Howell 2026-07-27) seats name-start matches first, word-start
+// second, anywhere third, so "IN" surfaces INTERCEPTOR above 8.2 FUEL PINCHER.
+const searchAnalyze = s => {
+  const label = String(s).toUpperCase();
+  let norm = '';
+  const wordStarts = new Set();
+  let newWord = true;
+  for (const ch of label) {
+    if (/[A-Z0-9]/.test(ch)) {
+      if (newWord) wordStarts.add(norm.length);
+      norm += ch;
+      newWord = false;
+    } else {
+      newWord = true;
+    }
+  }
+  return { norm, wordStarts };
+};
+// Best match tier of the struck string in an entry: 0 = name-start,
+// 1 = word-start, 2 = anywhere, -1 = no match. Checks every occurrence —
+// "IN" in "INBOARD INTERCEPTOR" is tier 0 even though a later occurrence
+// is mid-word.
+const searchMatchTier = (e, struck) => {
+  let at = e.norm.indexOf(struck);
+  if (at === -1) return -1;
+  let tier = 2;
+  while (at !== -1) {
+    if (at === 0) return 0;
+    if (e.wordStarts && e.wordStarts.has(at)) tier = 1;
+    at = e.norm.indexOf(struck, at + 1);
+  }
+  return tier;
+};
 let searchRestore = null;       // the browse chain to restore on exit
-let searchPrefix = '';          // the struck characters so far (normalized)
+let searchStruck = '';          // the struck string so far (normalized; matches ANYWHERE in a name)
 let searchCorpusEntries = [];   // [{ item, label, norm }] — ALL the volume's searchable leaves
 let searchScopedCorpus = [];    // the active subset: leaves under the ring the search opened from
-let searchOpeningAllowed = null;// first-characters the opening ring is pruned to when scoped
+let searchOpeningAllowed = null;// characters the opening ring is pruned to when scoped (any position)
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
 let searchAllLabel = 'TUTTI';   // what the scope label says when nothing is filtered
@@ -222,32 +256,47 @@ function searchCharItems(allowed = null) {
     .map((c, i) => (c === null ? null : { id: `char:${c}`, name: c, level: 'character', order: i }));
 }
 
-// Every character that could follow the prefix in some completion.
-function searchNextChars(prefix) {
+// Every character that could EXTEND the struck string at some occurrence in
+// some name (Howell 2026-07-27, substring search): after "IN", "T" survives
+// for INTERCEPTOR and "C" for 8.2 FUEL PINCHER alike. The foreclosure
+// principle is unchanged — the ring never offers a dead strike — computed
+// as "can extend a match" instead of "can extend a prefix".
+function searchNextChars(struck) {
   const next = new Set();
   for (const e of searchScopedCorpus) {
-    if (e.norm.length > prefix.length && e.norm.startsWith(prefix)) next.add(e.norm[prefix.length]);
+    let at = e.norm.indexOf(struck);
+    while (at !== -1) {
+      const c = e.norm[at + struck.length];
+      if (c) next.add(c);
+      at = e.norm.indexOf(struck, at + 1);
+    }
   }
   return next;
 }
 
-// The pyramid's candidates while searching: completions of prefix + the
-// character in (or passing through) the lens. Wired into the volume's
-// pyramid config at boot; dances live during rotation for free.
+// The pyramid's candidates while searching: every name CONTAINING the struck
+// string + the character in (or passing through) the lens, seated by tier —
+// name-start matches first, word-start second, anywhere third (Howell
+// 2026-07-27), alphabetical within a tier — so the old prefix behavior stays
+// the front of the results and substring hits extend rather than scramble it.
+// Wired into the volume's pyramid config at boot; dances live during rotation.
 function searchCompletions(selected) {
   if (!selected || selected.level !== 'character') return [];
-  const p = searchPrefix + selected.name;
-  const out = [];
+  const p = searchStruck + selected.name;
+  const matched = [];
   for (const e of searchScopedCorpus) {
-    if (e.norm.startsWith(p)) {
-      // The candidate wears its REAL id: the arrival migration pairs pyramid
-      // clones with ring targets by id, and a namespaced id left the tapped
-      // star unpaired — it jumped to the lens instead of flying (Howell).
-      out.push({ id: e.item.id, name: e.label, level: e.item.level, searchEntry: e });
-      if (out.length >= SEARCH_COMPLETION_CAP) break;
-    }
+    const tier = searchMatchTier(e, p);
+    if (tier === -1) continue;
+    // The candidate wears its REAL id: the arrival migration pairs pyramid
+    // clones with ring targets by id, and a namespaced id left the tapped
+    // star unpaired — it jumped to the lens instead of flying (Howell).
+    matched.push({ tier, cand: { id: e.item.id, name: e.label, level: e.item.level, searchEntry: e } });
   }
-  return out;
+  // Corpus is already alphabetical, so a stable tier sort keeps each tier
+  // alphabetical without re-comparing labels.
+  return matched.sort((a, b) => a.tier - b.tier)
+    .slice(0, SEARCH_COMPLETION_CAP)
+    .map(m => m.cand);
 }
 
 // The carriage: the struck string, seated just left of the lens on the
@@ -280,7 +329,7 @@ function updateSearchCarriage() {
   }
   if (!searchStringEl) return;
   while (searchStringEl.firstChild) searchStringEl.removeChild(searchStringEl.firstChild);
-  [...searchPrefix].forEach((ch, i) => {
+  [...searchStruck].forEach((ch, i) => {
     const t = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
     t.textContent = ch;
     t.dataset.index = String(i);
@@ -297,14 +346,14 @@ function updateSearchCarriage() {
 function searchBackspaceTo(i) {
   const app = currentApp;
   if (!app?.nav || !searchRestore) return;
-  const letter = searchPrefix[i];
+  const letter = searchStruck[i];
   if (!letter) return;
-  searchPrefix = searchPrefix.slice(0, i);
+  searchStruck = searchStruck.slice(0, i);
   updateSearchCarriage();
   // An empty string restores the opening ring as the mode opened it (full
   // when unscoped, scope-pruned when narrowed); otherwise prune for the
   // shortened prefix. The tapped letter is by construction a survivor.
-  const survivors = searchPrefix ? searchNextChars(searchPrefix) : searchOpeningAllowed;
+  const survivors = searchStruck ? searchNextChars(searchStruck) : searchOpeningAllowed;
   const items = searchCharItems(survivors);
   const idx = Math.max(0, items.findIndex(it => it && it.name === letter));
   app.setPrimaryItems(items, idx, true);
@@ -318,11 +367,11 @@ function strikeSettledChar() {
   if (!app?.nav || !searchRestore) return;
   const cur = app.nav.getCurrent();
   if (!cur || cur.level !== 'character') return;
-  const nextPrefix = searchPrefix + cur.name;
-  const survivors = searchNextChars(nextPrefix);
-  const hasAnyMatch = searchScopedCorpus.some(e => e.norm.startsWith(nextPrefix));
-  if (!hasAnyMatch) return; // a character no name continues with: no strike
-  searchPrefix = nextPrefix;
+  const nextStruck = searchStruck + cur.name;
+  const survivors = searchNextChars(nextStruck);
+  const hasAnyMatch = searchScopedCorpus.some(e => e.norm.includes(nextStruck));
+  if (!hasAnyMatch) return; // a character no name contains: no strike
+  searchStruck = nextStruck;
   updateSearchCarriage();
   if (survivors.size) app.setPrimaryItems(searchCharItems(survivors), 0, true);
   // No survivors = the string is complete: the ring rests, the pyramid holds
@@ -354,7 +403,7 @@ function searchArrive(entry) {
   // remain the way back).
   if (landed) {
     searchRestore = null;
-    searchPrefix = '';
+    searchStruck = '';
     if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
     exitSearchLook({ svg }); // the lights come up as the found leaf arrives
     seatSearchButton(false); // back to the corner — the arriving parent owns the seat
@@ -394,7 +443,7 @@ function exitSearchMode() {
   const restore = searchRestore;
   seatSearchButton(false); // the dividers yield the seat back to the parent vessel
   searchRestore = null;
-  searchPrefix = '';
+  searchStruck = '';
   app.setPrimaryItems(restore.items, restore.selectedIndex, true);
   app.setParentButtons({ showOuter: true }); // the vessel returns with the browse chain
   if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
@@ -410,17 +459,20 @@ function toggleSearchRing() {
     items: (app.nav.items || []).slice(),
     selectedIndex: app.nav.getCurrentIndex()
   };
-  searchPrefix = '';
+  searchStruck = '';
   // 5a (Howell 2026-07-23): scope = WHAT IS IN THE MAGNIFIER. The lens item
   // is captured before the character chain replaces it.
   const lensItem = app.nav.getCurrent();
   searchScopedCorpus = scopeCorpusForLens(lensItem);
-  // The opening ring prunes to the scope's first characters — a path no
-  // in-scope model begins is simply absent, foreclosed (Howell's Mercedes
-  // ruling). The virgin full ring survives only in the unrecognized-lens
-  // fallback, where scope is the whole volume.
+  // The opening ring prunes to characters appearing ANYWHERE in the scope's
+  // names (Howell 2026-07-27, substring search — superseding the first-
+  // character rule of the Mercedes ruling): a character no in-scope name
+  // contains is simply absent, foreclosed. The virgin full ring survives
+  // only in the unrecognized-lens fallback, where scope is the whole volume.
   const narrowed = searchScopedCorpus.length < searchCorpusEntries.length;
-  searchOpeningAllowed = narrowed ? new Set(searchScopedCorpus.map(e => e.norm[0])) : null;
+  searchOpeningAllowed = narrowed
+    ? new Set(searchScopedCorpus.flatMap(e => [...e.norm]))
+    : null;
   // The scope, in words: the LENS's own label — the user searches the thing
   // they were looking at, and the corner says so. Read from the magnifier's
   // DOM (the display form: KOHLER), before the letters land there.
@@ -1632,7 +1684,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchAvailable = Boolean(config.hasSearch);
   // A volume boot always lands in browse, never mid-search.
   searchRestore = null;
-  searchPrefix = '';
+  searchStruck = '';
   searchScopedCorpus = [];
   searchOpeningAllowed = null;
   seatSearchButton(false);
@@ -1743,7 +1795,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (leafLevel) {
       searchCorpusEntries = adapterNormalized.items
         .filter(i => i?.level === leafLevel && (i.name || i.id))
-        .map(i => ({ item: i, label: String(i.name || i.id), norm: searchNorm(i.name || i.id) }))
+        .map(i => {
+          const label = String(i.name || i.id);
+          const { norm, wordStarts } = searchAnalyze(label);
+          return { item: i, label, norm, wordStarts };
+        })
         .filter(e => e.norm.length > 0)
         .sort((a, b) => a.label.localeCompare(b.label));
     }
