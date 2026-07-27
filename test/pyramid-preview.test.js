@@ -3,6 +3,10 @@ import { describe, it } from 'node:test';
 import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
 import { buildPyramidPreview } from '../src/core/pyramid-preview.js';
 import { catalogAdapter } from '../src/adapters/catalog-adapter.js';
+import { fileURLToPath } from 'node:url';
+
+// Real corpus lives in wheel-cargo now (W-10); read the small PD fixture.
+const FIXTURE = fileURLToPath(new URL('./fixtures/data/mmdm/mmdm_catalog.json', import.meta.url));
 
 describe('buildPyramidPreview', () => {
   const viewport = getViewportInfo(800, 600);
@@ -109,7 +113,7 @@ describe('buildPyramidPreview', () => {
   });
 
   it('builds instructions via catalog adapter layoutSpec and normalized children', async () => {
-    const manifest = await catalogAdapter.loadManifest();
+    const manifest = await catalogAdapter.loadManifest(FIXTURE);
     const validation = catalogAdapter.validate(manifest);
     assert.equal(validation.ok, true, `catalog manifest invalid: ${validation.errors}`);
 

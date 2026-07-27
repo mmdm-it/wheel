@@ -121,11 +121,19 @@ sync-to-server.sh (root files — your seam). Context: LICENSING.local.md
 Closed. Both halves landed: Orville's fixtures + engine-test conversions
 (PR #76) and Wilbur's cargo validation CI (green — see O-4). This commit
 removes `data/` from the public HEAD: `git rm --cached -r data/` (1346
-files untracked, local copies KEPT on disk) + `data/` in `.gitignore` +
-the three relocated tests deleted (schema-validation, bible-abbreviations,
-ephemeris — they run in cargo CI now). `split-catalog`/`precompress` guard
-against a missing `data/` so the engine builds standalone. Public suite 271
-green; `npm run build` verified with `data/` absent.
+files untracked, local copies KEPT on disk) + `data/` in `.gitignore`.
+`split-catalog`/`precompress` guard against a missing `data/` so the engine
+builds standalone. **FIVE** data-reading tests deleted (they validate the
+real corpus → cargo): schema-validation, bible-abbreviations, ephemeris,
+**plus catalog-integrity + volume-validator (CI caught these — the agent's
+inventory missed them)**. **THREE** engine tests that called the adapter's
+real `loadManifest()` were converted to the PD fixture via a new optional
+path arg on `loadManifest` (catalog-adapter, pyramid-preview,
+focus-ring-layout). Verified the reliable way — `node --test` with `data/`
+moved aside: **259 green**; corpus-less `npm run build` also succeeds.
+**For Wilbur:** confirm cargo CI covers what catalog-integrity (every
+container has children; every country ≥1 manufacturer) and volume-validator
+(all four manifests validate) asserted — port if not already covered.
 **Operational note (Wilbur):** the LOCAL `data/` left on disk is the STALE
 pre-split public copy (no Douay, old flags). For local dev and for
 `sync-data-to-server.sh` to ship CURRENT data, `data/` should be re-sourced

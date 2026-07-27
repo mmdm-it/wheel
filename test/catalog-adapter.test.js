@@ -1,24 +1,28 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
+import { fileURLToPath } from 'node:url';
 import { catalogAdapter, loadManifest, validate, normalize, layoutSpec, detailFor } from '../src/adapters/catalog-adapter.js';
 import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
 
+// The real corpus lives in wheel-cargo now (W-10); read the small PD fixture.
+const FIXTURE = fileURLToPath(new URL('./fixtures/data/mmdm/mmdm_catalog.json', import.meta.url));
+
 describe('catalog adapter', () => {
   it('loads manifest', async () => {
-    const manifest = await loadManifest();
+    const manifest = await loadManifest(FIXTURE);
     const keys = Object.keys(manifest);
     assert.ok(keys.length > 0, 'manifest should have a volume root');
     assert.ok(manifest.MMdM, 'manifest should include MMdM root');
   });
 
   it('validates manifest against schema', async () => {
-    const manifest = await loadManifest();
+    const manifest = await loadManifest(FIXTURE);
     const result = validate(manifest);
     assert.ok(result.ok, `schema validation failed: ${result.errors?.join('; ')}`);
   });
 
   it('normalizes into items and links', async () => {
-    const manifest = await loadManifest();
+    const manifest = await loadManifest(FIXTURE);
     const norm = normalize(manifest);
     assert.ok(Array.isArray(norm.items) && norm.items.length > 0, 'normalized items missing');
     assert.ok(Array.isArray(norm.links) && norm.links.length > 0, 'normalized links missing');
@@ -28,12 +32,12 @@ describe('catalog adapter', () => {
     assert.ok(hasMarket, 'expected at least one market');
     assert.ok(hasManufacturer, 'expected at least one manufacturer');
     assert.ok(hasModel, 'expected at least one model');
-    const vm = norm.items.find(i => i.id.includes('VM Motori') || i.name === 'VM Motori');
-    assert.ok(vm, 'expected VM Motori manufacturer');
+    const maker = norm.items.find(i => i.name === 'Isotta Fraschini');
+    assert.ok(maker, 'expected the Isotta Fraschini manufacturer');
   });
 
   it('provides layout spec', async () => {
-    const manifest = await loadManifest();
+    const manifest = await loadManifest(FIXTURE);
     const norm = normalize(manifest);
     const viewport = getViewportInfo(1200, 900);
     const spec = layoutSpec(norm, viewport);
@@ -54,7 +58,7 @@ describe('catalog adapter', () => {
   });
 
   it('declares the migration grammar as levels, not a bare flag', async () => {
-    const manifest = await loadManifest();
+    const manifest = await loadManifest(FIXTURE);
     const norm = normalize(manifest);
     const merge = norm.meta.suffixMerge;
     assert.ok(Array.isArray(merge), 'suffixMerge must be an array of level names');
@@ -65,10 +69,10 @@ describe('catalog adapter', () => {
   });
 
   it('returns adapter-driven detail payloads', async () => {
-    const manifest = await loadManifest();
-    const manuf = { id: 'emea__italy__VM Motori', name: 'VM Motori' };
+    const manifest = await loadManifest(FIXTURE);
+    const manuf = { id: 'eurasia__italia__Isotta Fraschini', name: 'Isotta Fraschini' };
     const detail = detailFor(manuf, manifest);
     assert.equal(detail.type, 'card');
-    assert.match(detail.title, /VM Motori/i);
+    assert.match(detail.title, /Isotta Fraschini/i);
   });
 });

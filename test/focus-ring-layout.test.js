@@ -2,12 +2,16 @@ import assert from 'assert/strict';
 import { describe, it } from 'node:test';
 import { catalogAdapter } from '../src/adapters/catalog-adapter.js';
 import { buildFocusRingLayout } from '../src/core/focus-ring-layout.js';
+import { fileURLToPath } from 'node:url';
+
+// Real corpus lives in wheel-cargo now (W-10); read the small PD fixture.
+const FIXTURE = fileURLToPath(new URL('./fixtures/data/mmdm/mmdm_catalog.json', import.meta.url));
 
 const finite = value => Number.isFinite(value);
 
 describe('focus-ring-layout', () => {
   it('builds node positions from adapter output', async () => {
-    const manifest = await catalogAdapter.loadManifest();
+    const manifest = await catalogAdapter.loadManifest(FIXTURE);
     const validation = catalogAdapter.validate(manifest);
     assert.ok(validation.ok, `expected manifest to validate: ${validation.errors?.join('; ')}`);
 

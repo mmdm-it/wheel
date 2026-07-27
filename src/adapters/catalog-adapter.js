@@ -47,10 +47,14 @@ const getValidator = () => {
   return validateFn;
 };
 
-export async function loadManifest() {
-  if (isBrowser) return fetchJson(manifestUrl);
+// overridePath (Node) / overrideUrl (browser) lets the test suite point the
+// loader at a public-domain fixture — the real corpus lives in wheel-cargo
+// now (W-10) and isn't present in a public checkout. Production calls pass
+// nothing and read the deployed data as before.
+export async function loadManifest(override) {
+  if (isBrowser) return fetchJson(override || manifestUrl);
   await _ensureNode();
-  const raw = await nodeReadFile(manifestPath, 'utf-8');
+  const raw = await nodeReadFile(override || manifestPath, 'utf-8');
   return JSON.parse(raw);
 }
 
