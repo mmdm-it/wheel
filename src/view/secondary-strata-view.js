@@ -50,11 +50,38 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // subtree persists across the filter change; with the signature skip, a
   // settled stratum's subtree persists the same way.
   const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height]);
-  let g = svg.querySelector(`#${id}`);
-  if (g && g.dataset.signature === signature) return g;
-  if (g) { while (g.firstChild) g.removeChild(g.firstChild); }
-  else { g = svgEl('g', { id, class: 'secondary-strata' }); svg.appendChild(g); }
-  g.dataset.signature = signature;
+  // A nested <svg> per stratum, NOT a bare <g> (Howell 2026-07-27): iOS/WebKit
+  // honors a CSS `filter` on an <svg> element (as on the #app root and the HTML
+  // verse panel) but SILENTLY DROPS it on a <g>. So the recede BLUR rides this
+  // outer <svg>; the recede TRANSFORM rides the inner <g>. The element persists
+  // across renders (the signature skip) so the filter sticks — WebKit won't
+  // re-apply a filter to freshly-inserted SVG content.
+  let outer = svg.querySelector(`#${id}`);
+  if (outer && outer.dataset.signature === signature) return outer;
+  let g;
+  if (outer) {
+    g = outer.querySelector('.stratum-inner');
+    while (g.firstChild) g.removeChild(g.firstChild);
+  } else {
+    outer = svgEl('svg', { id, class: 'secondary-strata' });
+    // A TOP-LEVEL svg overlaying the strata-layer div (all strata stacked at
+    // inset:0). WebKit blurs an svg root but not a <g> or a nested svg, so each
+    // stratum is its own root here.
+    outer.style.position = 'absolute';
+    outer.style.left = '0';
+    outer.style.top = '0';
+    outer.style.width = '100%';
+    outer.style.height = '100%';
+    outer.style.overflow = 'visible'; // clip at the strata layer, as the bare <g> did
+    g = svgEl('g', { class: 'stratum-inner' });
+    outer.appendChild(g);
+    svg.appendChild(outer);
+  }
+  outer.setAttribute('x', '0');
+  outer.setAttribute('y', '0');
+  outer.setAttribute('width', String(viewport.width));
+  outer.setAttribute('height', String(viewport.height));
+  outer.dataset.signature = signature;
 
   const layout = computeStrataLayout(viewport, items.length, selectedIndex, mirrored);
   const nodeR = viewport.SSd * NODE_RADIUS_RATIO;
@@ -122,7 +149,9 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     g.appendChild(magLabel);
   }
 
-  // Already appended on create; a reused group stays put so its DOM order (and
-  // thus z-order: secondary below, tertiary above) holds without re-inserting.
-  return g;
+  // Already appended on create; a reused stratum stays put so its DOM order
+  // (and thus z-order: secondary below, tertiary above) holds without
+  // re-inserting. Return the OUTER <svg> — the blur rides it; callers pass it
+  // to setStratumVisual, which drives the transform on the inner <g>.
+  return outer;
 }

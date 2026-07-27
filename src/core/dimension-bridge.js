@@ -69,6 +69,16 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     .filter(([, t]) => t?.language === languageId)
     .map(([key]) => key);
 
+  // A servable edition is one we can actually show the reader: NOT held back
+  // for licensing (pendingLicense) and NOT still unsourced (comingSoon). The
+  // language's DEFAULT must be servable — landing a reader on NAB (pending)
+  // when Douay is right there was the "default is a translation we don't have"
+  // bug (Howell 2026-07-26).
+  const isServable = t => t && !t.pendingLicense && !t.comingSoon;
+  const servableEditionsOf = languageId => Object.entries(meta?.translations || {})
+    .filter(([, t]) => t?.language === languageId && isServable(t))
+    .map(([key]) => key);
+
   const languageOf = translationKey => meta?.translations?.[translationKey]?.language || null;
 
   // The chronological language registry supplied at boot. When present it is
@@ -101,7 +111,13 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       if (!options.length && !languageEntry(languageId)) return false;
       displayLanguage = languageId;
       if (!options.length) return true; // placeholder: display-only, reader untouched
-      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition: options[0] });
+      // Default to the first SERVABLE edition (skip pendingLicense/comingSoon),
+      // not merely the first listed. English lists NAB (pending) before DRA —
+      // the reader must land on Douay. Falls back to options[0] only if a
+      // language has editions but none is servable yet (a W-11 pending state).
+      const servable = servableEditionsOf(languageId);
+      const defaultEdition = servable[0] ?? options[0];
+      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition });
       return true;
     },
 
@@ -161,7 +177,13 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // sentinel key — it stays in the native phrase even scrubbed out of the lens
     // (there is no abbreviation for a promise — Howell 2026-07-22).
     translationAbbrev(key) {
-      return key === COMING_SOON_KEY ? comingSoonText(currentLanguage()) : key;
+      if (key === COMING_SOON_KEY) return comingSoonText(currentLanguage());
+      // The unselected node's short label in its OWN script (Howell 2026-07-26):
+      // Greek editions must show a Greek abbreviation, not the Latin key
+      // (LXX/BYZ), just as the magnified node already shows the Greek nativeName.
+      // Reads the registry's nativeAbbrev; falls back to the key until the data
+      // carries one, so no regression before Wilbur populates it (O-6).
+      return meta?.translations?.[key]?.nativeAbbrev || key;
     },
 
     // The tertiary stratum's nodes: every edition KEY in a language, in registry

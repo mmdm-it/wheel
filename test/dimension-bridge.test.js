@@ -37,6 +37,49 @@ describe('dimension bridge — selection and defaults', () => {
     assert.deepEqual(bridge.getSelection(), { language: 'latin', translation: 'VUL' });
   });
 
+  it('setLanguage defaults to the first SERVABLE edition, skipping pending/coming-soon (Howell 2026-07-26)', () => {
+    // The bug: english lists NAB (pendingLicense) before DRA, so the default
+    // landed on a translation we cannot show. The default must skip
+    // pendingLicense (held for licensing) and comingSoon (unsourced) editions.
+    const store = createInteractionStore();
+    const meta = { translations: {
+      NABX: { language: 'english', name: 'Pending', pendingLicense: true },
+      SOONX: { language: 'english', name: 'Unsourced', comingSoon: true },
+      DRA: { language: 'english', name: 'Douay-Rheims' }
+    } };
+    const bridge = createDimensionBridge({ store, translationsMeta: meta });
+    assert.equal(bridge.setLanguage('english'), true);
+    assert.equal(bridge.getSelection().translation, 'DRA',
+      'lands on the servable edition, not the pending or coming-soon ones');
+  });
+
+  it('setLanguage falls back to the first listed when NO edition is servable yet', () => {
+    // A language with editions but all pendingLicense (a W-11 pending state):
+    // no servable default exists, so keep the first listed rather than break.
+    const store = createInteractionStore();
+    const meta = { translations: {
+      A: { language: 'italian', name: 'Held A', pendingLicense: true },
+      B: { language: 'italian', name: 'Held B', pendingLicense: true }
+    } };
+    const bridge = createDimensionBridge({ store, translationsMeta: meta });
+    assert.equal(bridge.setLanguage('italian'), true);
+    assert.equal(bridge.getSelection().translation, 'A');
+  });
+
+  it('translationAbbrev shows the native-script abbreviation when present (Howell 2026-07-26)', () => {
+    // The unselected Greek option must read as Greek (Οʹ), not the Latin key
+    // (LXX) — mirroring the magnified node's Greek nativeName. Falls back to
+    // the key until the registry carries nativeAbbrev (O-6).
+    const withNative = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
+      translations: { LXX: { language: 'greek', name: 'Septuagint', nativeName: 'Οἱ Ἑβδομήκοντα', nativeAbbrev: 'Οʹ' } }
+    } });
+    assert.equal(withNative.translationAbbrev('LXX'), 'Οʹ', 'Greek abbreviation, not the Latin key');
+    const withoutNative = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
+      translations: { BYZ: { language: 'greek', name: 'Byzantine' } }
+    } });
+    assert.equal(withoutNative.translationAbbrev('BYZ'), 'BYZ', 'falls back to the key, no regression');
+  });
+
   it('setTranslation adopts the translation and implies its language', () => {
     // DRA is the fixture's public-domain english edition; setting it adopts
     // english as its implied language.

@@ -276,6 +276,22 @@ only gitignored derived artifacts (`split-catalog` → catalog-lite/prose;
 ship-path may grab `data/*.gz` raw). None of your data-authoring tools are
 invoked by any Orville build/test/deploy path.
 
+### O-6 · Native-script abbreviations for translations (`nativeAbbrev`)
+**Raised:** 2026-07-26 by Orville · **Status: OPEN (Wilbur's data half)**
+Howell 2026-07-26: on the tertiary stratum a foreign edition's UNSELECTED
+node must show its abbreviation in its OWN script, not the Latin key — Greek
+editions read `LXX`/`BYZ` today; they should read a Greek abbreviation, just
+as the magnified node already shows the Greek `nativeName`. **Engine is
+DONE:** `dimension-bridge.translationAbbrev(key)` now returns
+`translations[key].nativeAbbrev || key` (falls back to the key, so no
+regression before the field exists). **Your half:** add a `nativeAbbrev`
+field to each translation in `translations.json` (cargo) — the native-script
+abbreviation is an editorial/scholarly choice (e.g. Greek LXX → `Οʹ`?
+Byzantine → `Βυζ.`?; Hebrew WLC → ?), so it's yours + Howell's to set, not
+mine to invent. Latin/English editions can keep their existing keys (VUL,
+DRA) or gain a native form as you see fit. The magnified node already reads
+`nativeName`; this makes the unselected nodes match.
+
 ---
 
 ## CONTRACT

@@ -43,18 +43,22 @@ const strataLayer = typeof document !== 'undefined' ? document.getElementById('s
 // anywhere — not only on the thin band or a node. Strata groups append after
 // it, so it never covers them. Its pointer-events ride the layer's (toggled by
 // strataFront), so it's inert at the primary.
+// The strata layer is an HTML <div> (each stratum a top-level <svg> inside it)
+// so WebKit honors the recede blur on each stratum's svg root — a filter on an
+// SVG child <g>, or even a NESTED <svg>, is silently dropped on iOS (Howell
+// 2026-07-27). The hit target is therefore an HTML div too, kept as the FIRST
+// (bottom) child so the stratum svgs append on top of it.
 const strataHit = strataLayer && typeof document !== 'undefined'
   ? (() => {
-    const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-    r.setAttribute('id', 'strata-hit');
-    r.setAttribute('x', '0'); r.setAttribute('y', '0');
-    r.setAttribute('fill', 'transparent');
-    // Inert by default — turned on ONLY while a stratum is front (renderStack).
-    // pointer-events:all here overrides the layer's none, so it must be gated,
+    const d = document.createElement('div');
+    d.id = 'strata-hit';
+    d.style.position = 'absolute';
+    d.style.inset = '0';
+    // Inert by default — turned on ONLY while a stratum is front (renderStack),
     // or it swallows every tap/swipe on the primary (Howell 2026-07-21).
-    r.style.pointerEvents = 'none';
-    strataLayer.appendChild(r);
-    return r;
+    d.style.pointerEvents = 'none';
+    strataLayer.appendChild(d);
+    return d;
   })()
   : null;
 function pinCanvas(vp) {
@@ -62,7 +66,7 @@ function pinCanvas(vp) {
   // The strata layer shares the primary's exact coordinate system (px, no
   // viewBox) so a stratum drawn at (x,y) lands where the geometry says.
   if (strataLayer) { strataLayer.style.width = `${vp.width}px`; strataLayer.style.height = `${vp.height}px`; }
-  if (strataHit) { strataHit.setAttribute('width', String(vp.width)); strataHit.setAttribute('height', String(vp.height)); }
+  // strataHit is an HTML div at inset:0 — it sizes with the layer, no attrs.
 }
 let viewport = measureViewport();
 pinCanvas(viewport);
@@ -87,7 +91,10 @@ const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 // ("behind the user's head"). Selection is still tap-for-now — rotation
 // (magnifier-as-selection) is the next build.
 const STRATA_DEPTHS = [1.0, 0.4, 0.2];  // scale, indexed by levels behind the front
-const STRATA_BLURS = [0, 5, 10];        // px local, same index
+const STRATA_BLURS = [0, 1.5, 3];       // px local, same index — front sharp,
+// one back a soft rack-focus, two back (the primary under the tertiary) twice
+// that so it reads further away. Kept GENTLE on purpose: a receded plane's
+// nodes must stay legible, never dissolve into a smear (Howell 2026-07-27).
 // Tangent fill span (radians past each viewport exit), sized to reach the
 // screen edge at each recede scale — the deeper the ring, the more of the
 // straight chain climbs into view (Howell 2026-07-21). Level 0 = arc-only.
@@ -493,18 +500,23 @@ function setPrimaryVisual(scale, blurPx) {
   const scaled = scale < 0.999;
   const tf = scaled ? scaleAboutCentre(scale) : null;
   const filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
-  // KNOWN LIMIT (Howell 2026-07-22): WebKit ignores CSS filters on SVG child
-  // elements, so iPhones show the receded SVG planes sharp (the HTML verse
-  // panel below blurs fine). An SVG-native feGaussianBlur repair was tried
-  // and reverted the same day — sluggish tween + visible filter-region
-  // cropping mid-flight. Revisit with a fresh approach; until then, iOS
-  // trades the rack-focus for smoothness.
+  // The scale (recede) rides the child groups; the BLUR rides the #app <svg>
+  // ROOT (Howell 2026-07-27, WebKit fix, phase 1). WebKit silently ignores
+  // `filter` on SVG *child* elements (`<g>`) — the old per-group blur was
+  // invisible on iPhone (ring/parent/crown stayed sharp; only the HTML verse
+  // panel blurred). WebKit DOES honor `filter` on the root <svg>, just as it
+  // does on the HTML panel — so blurring #app itself blurs the whole primary
+  // plane on iOS too. (The SVG-native feGaussianBlur route was tried and
+  // reverted 2026-07-22: sluggish + region-crop. This is the HTML/root-level
+  // avenue that memory scoped instead.)
   ['.focus-content-group', '#volume-logo-group'].forEach(sel => {
     const g = document.querySelector(`#app ${sel}`);
     if (!g) return;
     if (tf) g.setAttribute('transform', tf); else g.removeAttribute('transform');
-    g.style.filter = filter;
+    g.style.filter = ''; // never on the child group — WebKit drops it
   });
+  const app = document.getElementById('app');
+  if (app) app.style.filter = filter;
   const panel = document.getElementById('detail-panel');
   if (panel) {
     const cx = viewport.width / 2, cy = viewport.height / 2;
@@ -519,16 +531,20 @@ function setPrimaryVisual(scale, blurPx) {
     panel.style.filter = filter;
   }
 }
-function setStratumVisual(g, scale, blurPx, opacity = 1, offsetX = 0, offsetY = 0) {
-  if (!g) return;
+function setStratumVisual(el, scale, blurPx, opacity = 1, offsetX = 0, offsetY = 0) {
+  if (!el) return;
+  // The recede TRANSFORM rides the inner <g>; the BLUR + opacity ride the
+  // outer <svg> — WebKit honors a filter on an <svg>, not on a <g> (Howell
+  // 2026-07-27, the strata half of the iOS blur fix).
+  const inner = el.querySelector?.('.stratum-inner') || el;
   const still = Math.abs(offsetX) < 0.5 && Math.abs(offsetY) < 0.5;
   if (scale > 0.999 && blurPx < 0.01 && opacity > 0.999 && still) {
-    g.removeAttribute('transform'); g.style.filter = ''; g.style.opacity = ''; return;
+    inner.removeAttribute('transform'); el.style.filter = ''; el.style.opacity = ''; return;
   }
   const slide = still ? '' : `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) `;
-  g.setAttribute('transform', `${slide}${scaleAboutCentre(scale)}`);
-  g.style.filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
-  g.style.opacity = String(opacity);
+  inner.setAttribute('transform', `${slide}${scaleAboutCentre(scale)}`);
+  el.style.filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
+  el.style.opacity = String(opacity);
 }
 
 // Settled depths (the snap, and the end of a tween): a plane at stack-level L
@@ -567,7 +583,7 @@ function renderStack() {
   // catch pointer events ONLY while a stratum is front — at the primary they
   // stay out of the way so the ring below gets every tap and swipe.
   if (strataLayer) strataLayer.style.pointerEvents = strataFront > 0 ? 'auto' : 'none';
-  if (strataHit) strataHit.style.pointerEvents = strataFront > 0 ? 'all' : 'none';
+  if (strataHit) strataHit.style.pointerEvents = strataFront > 0 ? 'auto' : 'none';
 }
 
 // ── Magnifier-as-selection: rotate the front stratum (D.4a) ────────────────
