@@ -1,5 +1,31 @@
 # Changelog
 
+## 3.24.0 — the globe at the front door
+- **The dimension globe now shows at the Bible's threshold** (Howell
+  2026-07-27): gateway entry — MMdM CATALOGO in the parent, BIBLIA SACRA
+  LATINA magnified, the testaments in the pyramid — as well as at a leaf.
+  The two moments where language is a live question: "give me this book in
+  my tongue" at the door, "what did the original say?" at the verse.
+  Between them — drilling down, backing out — it hides as clutter. The
+  adapter declares its door (`showsDimensionAt`); the host stays
+  volume-agnostic. Same strata, same chooser, two doorways.
+- **The corner icons are part of the image** (Howell's second ruling): a
+  gateway wipe now swaps the icon at the INSTANT the sweep line crosses
+  its corner — the wipe itself reports the moment (`onCross`, computed
+  from the sweep's own hub-angle geometry and easing) — exactly as every
+  node and color swaps when the line passes. Going in, the line reaches
+  the lower-right corner late: dividers ride most of the sweep, then a
+  STATIC globe stands revealed; when the sweep completes, it does its
+  hello turn. Coming back, the line leaves that corner early: the globe
+  is simply wiped away — no goodbye spin — and the dividers stand
+  revealed near the start.
+- Wilbur's half is ledgered as O-7 — the names campaign: testaments,
+  books, and the volume title in EVERY registry language, Hebrew to
+  Bahasa Indonesia, no Latin fallback (Howell's ruling) — starting with
+  the edition-bearing tongues.
+
+## 3.24.0 — the globe at the front door
+
 ## 3.23.0 — the strike wheel hears the middle of a name
 - **Search matches ANY part of a name, not just its start** (Howell
   2026-07-27): striking "IN" in a STATI UNITI scope now surfaces the

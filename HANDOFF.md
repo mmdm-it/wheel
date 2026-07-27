@@ -292,9 +292,29 @@ mine to invent. Latin/English editions can keep their existing keys (VUL,
 DRA) or gain a native form as you see fit. The magnified node already reads
 `nativeName`; this makes the unselected nodes match.
 
----
-
-## CONTRACT
+### O-7 · The names campaign — testaments, books, and the title in every tongue
+**Raised:** 2026-07-27 by Orville · **Status: OPEN (Wilbur's data half; engine half SHIPPED)**
+Howell's feature ruling 2026-07-27: the dimension globe now shows at the
+Bible's FRONT DOOR (gateway entry: MMdM CATALOGO in the parent, BIBLIA SACRA
+LATINA magnified, testaments in the pyramid) as well as at a leaf — the two
+moments where language is a live question — and hides while drilling
+between them. Engine half is DONE (adapter hook `showsDimensionAt`; host
+stays volume-agnostic). **Your half:** a reader who switches language at the
+door must see the WHOLE shelf speak that language — so the campaign is:
+- **testament names**, **book names** (+ abbreviations where the pyramid
+  wants them), and **the volume title itself** (what stands in for "BIBLIA
+  SACRA LATINA") — in **every language of the registry**, Hebrew to Bahasa
+  Indonesia.
+- **Howell ruled: NO Latin fallback** — this differs from W-6's flagged-
+  Latin doctrine for verse TEXT; navigation names must be fully covered per
+  language, not substituted. Practical order: start with the edition-
+  bearing languages (Hebrew, Greek, Latin, English, Russian), then the
+  pendingLicense tongues, then the placeholder registry.
+- Schema is yours to design (the engine's namesMap/localized-name hooks
+  exist from the early era; `translations.json` carries `names.latin`
+  today). A new-shape proposal gets a CONTRACT entry and I adapt the
+  engine's readers to it. Ties into O-6 (nativeAbbrev) — one campaign
+  could populate both.
 
 - **Single-owner rule (Howell, 2026-07-26):** only ONE session open at a
   time; Howell closes a session before switching tabs. Adopted after

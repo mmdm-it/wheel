@@ -115,8 +115,8 @@ const easeInOutCubic = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 
  * the moment the sweep line meets that edge: the END of a downward wipe,
  * the START of an upward one.
  */
-export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', durationMs = 1800, onDone }) {
-  if (!svg || !snapshot || !viewport) { if (onDone) onDone(); return; }
+export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', durationMs = 1800, onDone, onCross = null }) {
+  if (!svg || !snapshot || !viewport) { if (onDone) onDone(); if (onCross?.fn) onCross.fn(); return; }
 
   const arc = getArcParameters(viewport);
   const hubX = arc.hubX;
@@ -210,6 +210,25 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
   const phiTo = goingDown ? bottomAngle : topAngle;
   const regionFor = phi => (goingDown ? wedge(phi, bottomAngle) : wedge(topAngle, phi));
 
+  // A caller-registered screen point whose crossing moment matters (the
+  // corner icons, Howell 2026-07-27: an icon is part of the IMAGE — it must
+  // swap exactly when the sweep line rewrites its patch of screen, not at
+  // the wipe's start or end). Same angular normalization as the corners.
+  let crossPhi = null;
+  let crossFired = !onCross;
+  if (onCross && Number.isFinite(onCross.x) && Number.isFinite(onCross.y)) {
+    let a = Math.atan2(onCross.y - hubY, onCross.x - hubX);
+    if (a < 0) a += twoPi;
+    crossPhi = a;
+  } else {
+    crossFired = true;
+  }
+  const fireCross = () => {
+    if (crossFired) return;
+    crossFired = true;
+    try { onCross.fn(); } catch (_) { /* the wipe must never break */ }
+  };
+
   const aim = phi => {
     const deg = (phi * 180) / Math.PI;
     band.setAttribute('transform', `rotate(${deg.toFixed(3)}, ${hubX}, ${hubY})`);
@@ -232,6 +251,7 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
       band.remove();
       defs.remove();
       flipPageBg();
+      fireCross(); // safety: a cancelled/short wipe still delivers the swap
       if (onDone) onDone();
     }
   };
@@ -244,6 +264,9 @@ export function playGatewayWipe({ svg, snapshot, viewport, direction = 'down', d
     const phi = phiFrom + (phiTo - phiFrom) * easeInOutCubic(t);
     wedgePath.setAttribute('d', regionFor(phi));
     aim(phi);
+    // The sweep passes the registered point: downward sweeps decrease phi,
+    // upward increase — either way, fire the moment the line rewrites it.
+    if (!crossFired && crossPhi !== null && (goingDown ? phi <= crossPhi : phi >= crossPhi)) fireCross();
     if (t < 1) {
       requestAnimationFrame(step);
     } else {

@@ -121,6 +121,15 @@ const isSecondaryOpen = isStrataOpen;      // the primary pointer guard reads th
 // the purple sill is on screen (a leaf), never over a child pyramid — that is
 // where the sprocket-wheel-and-chain analogy reads (Howell 2026-07-21).
 let detailSectorVisible = false;
+// During a gateway wipe the corner icons are FROZEN — part of the image
+// (Howell 2026-07-27, second ruling): the departing volume's icon stays put
+// under the frozen screen and the swap happens at the INSTANT the sweep line
+// crosses the icon's corner (the wipe's onCross), exactly as every node and
+// color swaps when the line passes it. While frozen the updaters leave the
+// buttons untouched. The globe's hello spin comes only at wipe END, only on
+// an arrival (never a goodbye), revealed static first.
+let cornerIconHold = false;
+let globeSpinMuted = false; // the crossing swap reveals the globe STATIC
 const dimensionButton = typeof document !== 'undefined' ? document.getElementById('dimension-button') : null;
 // The button's wireframe globe, drawn by code so it can truly turn: once on
 // arrival, and once per press — settling exactly as the stratum recedes.
@@ -493,6 +502,7 @@ function toggleSearchRing() {
 if (searchButton) searchButton.addEventListener('click', toggleSearchRing);
 function updateSearchButton() {
   if (!searchButton) return;
+  if (cornerIconHold) return; // frozen mid-wipe: the icon is part of the image
   // Only where the volume declares a searchable namespace; hidden at a leaf
   // (the globe's turf) and while the boot reveal owns the screen; present
   // while browsing.
@@ -889,17 +899,29 @@ function resetStrata() {
   CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
   renderStack();
 }
-// The globe shows only where a dimension EXISTS and the detail sector is open;
-// over a child pyramid it hides, and any open stack recedes back to the
-// primary. A volume boot (including a gateway transit) resets the stack.
+// The globe shows only where a dimension EXISTS and the reader stands at one
+// of the two language-question moments (Howell 2026-07-27): a LEAF (detail
+// sector open — "what did the original say?") or the volume's FRONT DOOR
+// (the adapter-declared threshold item magnified — "give me this book in my
+// tongue"). Between the two — drilling down or backing out — it is clutter
+// and hides; any open stack recedes back to the primary. A volume boot
+// (including a gateway transit) resets the stack. The door is declared by
+// the adapter (dimensionFrontDoorAt), so the host stays volume-agnostic.
+let dimensionFrontDoorAt = () => false;
 function updateDimensionButton() {
   if (!dimensionButton) return;
-  const show = dimensionAvailable() && detailSectorVisible;
+  if (cornerIconHold) return; // frozen mid-wipe: the icon is part of the image
+  const atFrontDoor = (() => {
+    try { return Boolean(dimensionFrontDoorAt(currentApp?.nav?.getCurrent?.())); } catch (_) { return false; }
+  })();
+  const show = dimensionAvailable() && (detailSectorVisible || atFrontDoor);
   const arriving = show && dimensionButton.hidden;
   dimensionButton.hidden = !show;
   // The entrance: the globe appears with a quick turn when the detail
-  // sector brings it in (Howell 2026-07-22).
-  if (arriving && dimensionGlobe) dimensionGlobe.spin();
+  // sector brings it in (Howell 2026-07-22) — EXCEPT when a wipe reveals
+  // it: then it arrives static, part of the image, and says hello only
+  // once the sweep completes (the wipe block's onDone).
+  if (arriving && dimensionGlobe && !globeSpinMuted) dimensionGlobe.spin();
   if (!show && isStrataOpen()) resetStrata();
 }
 function refreshDimensionButton() {
@@ -1655,6 +1677,11 @@ function restoredGatewayReturn() {
 
 async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null, transit = null) {
   performance.mark('wheel:boot-start');
+  // Arm the corner-icon hold BEFORE anything in this boot can show an icon
+  // (the mid-boot updateSearchButton showed the dividers at wipe START on a
+  // return transit — Howell 2026-07-27). Armed only when a wipe will
+  // actually play (same condition as the wipe block); its onDone clears it.
+  cornerIconHold = Boolean(transit?.snapshot);
   // The splash reveal is initial-load only, never a gateway transit. Decide
   // now and hide the live wheel so it can be dissolved into, not popped on.
   const playSplash = !firstBootDone && bootSplashShouldPlay();
@@ -1828,6 +1855,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const parentHandler = params => (handlerSet.parentHandler ? handlerSet.parentHandler({ ...params, app }) : false);
   const childrenHandler = params => (handlerSet.childrenHandler ? handlerSet.childrenHandler({ ...params, app }) : false);
   const adapterGetParentLabel = typeof handlerSet.getParentLabel === 'function' ? handlerSet.getParentLabel : null;
+  // The volume's dimension front door, if its adapter declares one (the
+  // globe-at-the-threshold rule — see updateDimensionButton).
+  dimensionFrontDoorAt = typeof handlerSet.showsDimensionAt === 'function' ? handlerSet.showsDimensionAt : () => false;
 
   const layoutBindings = handlerSet.layoutBindings || {};
   const layoutSpec = createVolumeLayoutSpec({
@@ -1940,23 +1970,64 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   if (transit && wipeSnapshot) {
     try {
       // Launch wipes downward; return wipes back up — the wipe always flows
-      // away from where you are going.
+      // away from where you are going. The corner icons are PART OF THE
+      // IMAGE (Howell 2026-07-27): frozen while the hold is armed (boot
+      // start), swapped at the INSTANT the sweep line crosses their corner
+      // (onCross — static, no flourish), exactly as every node swaps when
+      // the line passes it. Then, sweep complete and the ground fully the
+      // new volume's, the globe — if it stands at a front door — does its
+      // hello turn. An arrival greeting only: leaving a dimensioned volume
+      // plays no goodbye spin (the globe is simply wiped away).
+      const iconR = (() => {
+        const vmin = Math.min(viewport.width, viewport.height);
+        const size = Math.min(Math.max(52, vmin * 0.13), 96); // the buttons' CSS clamp
+        return {
+          x: viewport.width * 0.97 - size / 2,
+          y: viewport.height * 0.87 - size / 2
+        };
+      })();
       playGatewayWipe({
         svg,
         snapshot: wipeSnapshot,
         viewport,
-        direction: transit.mode === 'return' ? 'up' : 'down'
+        direction: transit.mode === 'return' ? 'up' : 'down',
+        onCross: {
+          ...iconR,
+          fn: () => {
+            cornerIconHold = false;
+            globeSpinMuted = true;
+            updateDimensionButton();
+            updateSearchButton();
+            globeSpinMuted = false;
+          }
+        },
+        onDone: () => {
+          cornerIconHold = false; // safety — onCross normally cleared it
+          if (transit.mode !== 'return' && dimensionButton && !dimensionButton.hidden && dimensionGlobe) {
+            dimensionGlobe.spin(); // "I'm here, hello"
+          }
+        }
       });
     } catch (err) {
       console.warn('[wheel] gateway wipe failed', err);
       wipeSnapshot.remove();
+      cornerIconHold = false;
+      updateDimensionButton();
+      updateSearchButton();
     }
   }
   // Detail renders resolve the translation LIVE (the sticky choice can
   // change between renders); the settle hook below regenerates the open
   // panel the moment a new choice commits.
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
-  app?.nav?.onChange?.(() => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() }));
+  // The globe follows the magnifier: at the volume's front door it appears,
+  // one step of descent hides it (nav change), the leaf brings it back
+  // (detail-sector-change). This call catches the boot/gateway arrival.
+  updateDimensionButton();
+  app?.nav?.onChange?.(() => {
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
+    updateDimensionButton();
+  });
   dimensionBridge.onSettle(translation => {
     renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
   });
