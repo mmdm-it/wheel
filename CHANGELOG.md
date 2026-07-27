@@ -1,5 +1,29 @@
 # Changelog
 
+## 3.23.0 — the strike wheel hears the middle of a name
+- **Search matches ANY part of a name, not just its start** (Howell
+  2026-07-27): striking "IN" in a STATI UNITI scope now surfaces the
+  INTERCEPTORs *and* the 8.2 FUEL P-IN-CHER — 26 matches where the prefix
+  rule found 5. Model names are exactly the vocabulary where nobody knows
+  how a name begins (the Fuel Pincher starts with "8.2"); substring turns
+  the strike wheel from "spell it from the start" into "strike any part
+  you remember".
+- **Tiered seating in the completions pyramid**: name-start matches first
+  (the old prefix world, still the front), word-start second, anywhere
+  third — alphabetical within a tier — so INTERCEPTOR never drowns under
+  the mid-word crowd.
+- **Foreclosure survives, redefined**: the ring offers exactly the
+  characters that can EXTEND a match at some occurrence — after "IN", "T"
+  lives for INTERCEPTOR and "C" for PINCHER. The opening ring prunes to
+  characters appearing anywhere in the scope (superseding the
+  first-character Mercedes rule). The ring still never offers a dead
+  strike.
+- Carriage, backspace-prune, scope logic, and the arrival migration are
+  untouched; `searchPrefix` renamed `searchStruck` — "prefix" would now
+  lie.
+
+## 3.23.0 — the strike wheel hears the middle of a name
+
 ## 3.22.1 — the honest measure — the iPhone verse-wrap saga ends
 - **The verse text finally wraps correctly on iPhone.** The wrap is decided
   entirely by hidden-span width measurements, and on iOS Chrome those lied
