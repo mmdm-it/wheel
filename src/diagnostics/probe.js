@@ -25,9 +25,9 @@ import { PROBE_SINK } from '../volume-configs.js';
 function sinkUrl() {
   const host = (typeof location !== 'undefined' && location.hostname) || '';
   const isLan = /^(localhost|127\.|10\.|192\.168\.|172\.)/.test(host);
-  // On the LAN dev server there is no PHP — post to production's sink so
-  // LAN runs still land in the same log (sendBeacon needs no CORS reply).
-  return isLan ? PROBE_SINK.absolute : PROBE_SINK.relative;
+  // On the LAN the dev server itself accepts the POST and drops it to a file
+  // Orville reads directly (2026-07-27; production keeps its PHP sink).
+  return isLan ? PROBE_SINK.lan : PROBE_SINK.relative;
 }
 
 function resourceAutopsy() {
@@ -113,6 +113,62 @@ function buildReport(reason) {
     render: window.__wheelRenderStats ? { ...window.__wheelRenderStats } : null,
     gesture: window.__wheelGestureTrace || null,
     taps: window.__wheelTapTrace ? window.__wheelTapTrace.slice() : null,
+    // Verse-wrap autopsy (Howell 2026-07-27, the iOS Chrome overflow): the
+    // ACTUALLY-rendered width of the first verse lines vs the sector budget
+    // the wrap was computed against, plus the same text re-measured in body
+    // and panel context. renderDetail stashes its bounds on
+    // window.__wheelVerseBounds for this.
+    verse: (() => {
+      try {
+        const lines = Array.from(document.querySelectorAll('.detail-text-line')).slice(0, 3);
+        if (!lines.length) return null;
+        const vb = window.__wheelVerseBounds || null;
+        const panel = document.getElementById('detail-panel');
+        const measureIn = (host, text, fontPx, fontFamily) => {
+          if (!host) return -1;
+          const s = document.createElement('span');
+          s.style.cssText = 'position:absolute;left:0;top:-9999px;opacity:0;white-space:nowrap;pointer-events:none;margin:0;padding:0;';
+          s.style.fontFamily = fontFamily;
+          s.style.fontSize = `${fontPx}px`;
+          s.textContent = text;
+          host.appendChild(s);
+          const w = s.getBoundingClientRect().width;
+          s.remove();
+          return Math.round(w);
+        };
+        const panelCS = panel ? getComputedStyle(panel) : null;
+        return {
+          ebGaramond: (document.fonts && document.fonts.check) ? document.fonts.check('16px "EB Garamond"') : null,
+          panel: panel ? {
+            w: Math.round(panel.getBoundingClientRect().width),
+            tf: panelCS.transform, fontFamily: panelCS.fontFamily.slice(0, 40)
+          } : null,
+          boundsRight: vb ? Math.round(vb.rightBound) : null,
+          lt0: vb && vb.lineTable && vb.lineTable[0] ? {
+            leftX: Math.round(vb.lineTable[0].leftX),
+            avail: Math.round(vb.lineTable[0].availableWidth)
+          } : null,
+          lines: lines.map(el => {
+            const r = el.getBoundingClientRect();
+            const cs = getComputedStyle(el);
+            const fontPx = parseFloat(cs.fontSize) || 0;
+            const text = el.textContent || '';
+            return {
+              text: text.slice(0, 28),
+              chars: text.length,
+              rendered: Math.round(r.width),
+              left: Math.round(r.left),
+              right: Math.round(r.right),
+              cssLeft: el.style.left, cssMaxW: el.style.maxWidth,
+              fontPx: Math.round(fontPx * 10) / 10,
+              ff: cs.fontFamily.slice(0, 40),
+              bodyMeas: measureIn(document.body, text, fontPx, cs.fontFamily),
+              panelMeas: measureIn(panel, text, fontPx, cs.fontFamily)
+            };
+          })
+        };
+      } catch (e) { return { err: String(e).slice(0, 80) }; }
+    })(),
     // Font autopsy: what the app computed vs what the browser actually
     // rendered for a pyramid label — catches any layer that rescales text
     // between our px and the glass (2026-07-19 cross-browser size mystery).

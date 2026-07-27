@@ -428,7 +428,8 @@ function buildPlacesChain(manifest, options) {
 // layout is a literal like any other — it lives here, not in diagnostics.
 const PROBE_SINK = {
   relative: '/mmdm/telemetry.php',
-  absolute: 'https://howellgibbens.com/mmdm/telemetry.php'
+  absolute: 'https://howellgibbens.com/mmdm/telemetry.php',
+  lan: '/probe-drop' // the LAN dev server writes these to files (2026-07-27)
 };
 
 export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE_SINK };

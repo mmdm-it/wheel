@@ -14,6 +14,7 @@ import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
+import { onVerseFontReady, invalidateVerseMeasurement } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
@@ -1067,7 +1068,8 @@ window.addEventListener('detail-sector-change', (e) => {
   updateSearchButton();
 });
 
-function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation } = {}) {
+let detailRenderSeq = 0; // stale-verify guard: each render invalidates pending checks
+function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation, wrapAttempt = 0 } = {}) {
   if (!detailPanel || !detailContent) return;
   // Only the leaf is described here. Note this returns WITHOUT clearing:
   // on the way up out of a leaf the panel is already fading, and it should
@@ -1097,8 +1099,34 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   const renderBounds = { ...arcBounds, width: panelRect.width, height: panelRect.height };
 
 
+  window.__wheelVerseBounds = renderBounds; // probe's verse-wrap autopsy reads this (?probe=1)
   const node = plugin.render(payload, renderBounds, { createElement: tag => document.createElement(tag) });
   if (node) detailContent.appendChild(node);
+
+  // POST-PAINT WRAP VERIFY (Howell 2026-07-27, the iOS overflow endgame).
+  // The wrap is computed from hidden-span measurements, and on iOS those can
+  // lie: the font-load promise resolves BEFORE the face reaches layout, so
+  // even a fresh span still measures the Georgia fallback while the verse
+  // paints in (wider) EB Garamond — Genesis ran 27px past the fence to the
+  // glass. Rather than keep racing the font pipeline, trust the only honest
+  // witness: the PAINT. Two frames after rendering, if any line's content
+  // overflows its box (scrollWidth > clientWidth), the measurements were
+  // wrong whatever the reason — dump every measurement cache and re-wrap.
+  // Capped at 3 attempts; a newer render (seq guard) cancels the check.
+  const seq = ++detailRenderSeq;
+  if (wrapAttempt < 3 && typeof requestAnimationFrame === 'function') {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (seq !== detailRenderSeq) return; // superseded by a newer render
+      let overflows = false;
+      detailContent.querySelectorAll('.detail-text-line').forEach(el => {
+        if ((el.scrollWidth || 0) - (el.clientWidth || 0) > 2) overflows = true;
+      });
+      if (!overflows) return;
+      invalidateVerseMeasurement();
+      renderDetail(selected, adapterInstance, manifest, adapterNormalized,
+        { translation, wrapAttempt: wrapAttempt + 1 });
+    }));
+  }
 }
 
 function wireInteractions(getApp) {
@@ -1876,6 +1904,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   dimensionBridge.onSettle(translation => {
     renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
   });
+  // Re-wrap the open detail the moment EB Garamond truly lands (Howell
+  // 2026-07-27): the first wrap may have measured in the Georgia fallback,
+  // which on iOS is NARROWER than the serif that then paints — the line ran
+  // past the fence to the glass edge. One-shot per font arrival; fires
+  // immediately (harmless re-render) if the face was already loaded.
+  onVerseFontReady(() => renderDetail(
+    app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+    { translation: activeTranslation() }));
   // Generic post-boot hook: adapters may schedule volume-specific startup
   // work (e.g. a featured-item prefetch) without the host
   // carrying volume literals (Phase B audit, H1).

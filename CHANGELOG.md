@@ -1,5 +1,37 @@
 # Changelog
 
+## 3.22.1 — the honest measure — the iPhone verse-wrap saga ends
+- **The verse text finally wraps correctly on iPhone.** The wrap is decided
+  entirely by hidden-span width measurements, and on iOS Chrome those lied
+  three different ways — hunted down with the field probe's new verse-wrap
+  autopsy (each probe report disproved the previous theory):
+  1. **The persistent measuring span never applied a fontSize set after it
+     was attached** — iOS measured every string at the ~16px default, so
+     the sizer inflated the shared verse size until line-height overflowed
+     (33.5px, one giant clipped line). Measurement is now a FRESH span per
+     layout pass, fully styled — family and size — BEFORE entering the DOM:
+     the one recipe iOS measures honestly.
+  2. **A span hosted inside #detail-panel measured scaled** while the
+     strata recede transform was on (0.4×) — a translation switch made in
+     the chooser re-wrapped the verse against 40% measures. The measurer
+     lives on document.body: never transformed, layout-honest.
+  3. **The font-load race**: a wrap measured in the Georgia fallback then
+     painted in (wider-on-iOS) EB Garamond ran past the fence. The size
+     cache keys on font-load state and the open detail re-renders once the
+     face truly lands (document.fonts.load, not the lying check()).
+- **The paint audits itself**: two frames after any detail render, if a
+  line's content overflows its box (scrollWidth vs clientWidth — transform-
+  immune), every measurement cache is dumped and the verse re-wraps, capped
+  at three attempts. The paint is the only witness that never lies.
+- **The probe grew a verse-wrap autopsy** (rendered vs budgeted vs
+  re-measured widths, font-load state, panel transform) and the LAN dev
+  server accepts probe drops directly — same ⇪ SEND ritual as the
+  globe-tap hunt (PROBE_SINK.lan). Production keeps its PHP sink.
+- Final probe verified: measure == paint == 317px within the 338px budget,
+  two honest lines, sane 20.1px — on the device that caught every lie.
+
+## 3.22.1 — the honest measure
+
 ## 3.22.0 — iOS strata rack-focus + servable edition defaults
 - **The rack-focus blur finally reaches iOS.** WebKit silently drops a CSS
   `filter` on an SVG child `<g>` (and, it turns out, on a nested `<svg>`
