@@ -102,7 +102,11 @@ in a concurrent rewrite of this file — restored same day. If you triaged a
 version without them, re-read from here.)*
 
 ### W-9 · robots.txt + noindex for /data/
-**Raised:** 2026-07-26 by Wilbur · **Status: OPEN** (Howell approved)
+**Raised:** 2026-07-26 by Wilbur · **Status: DONE (Orville, 2026-07-26) — LIVE**
+robots.txt (`Disallow: /data/` + sub-paths + `/*/data/`) and `.htaccess`
+`X-Robots-Tag: noindex` on `.json`/`.json.gz` shipped and verified on
+mmdm.it (robots.txt 200, noindex header present). Deployed via the patched
+app sync — see O-5 (the app sync used to ship unfiltered data; fixed).
 The site has no robots.txt (404) and no X-Robots-Tag on JSON. Licensing
 posture wants crawling of the corpus forbidden by policy, not luck (the app
 is client-rendered so scripture never reaches HTML — verified unindexed —
@@ -113,7 +117,22 @@ sync-to-server.sh (root files — your seam). Context: LICENSING.local.md
 (untracked, Wilbur's licensing dossier).
 
 ### W-10 · The cargo split — data/ leaves the public repo
-**Raised:** 2026-07-26 by Wilbur · **Status: OPEN** (Howell ruled 2026-07-26)
+**Raised:** 2026-07-26 by Wilbur · **Status: DONE (2026-07-26) — data/ off public HEAD**
+Closed. Both halves landed: Orville's fixtures + engine-test conversions
+(PR #76) and Wilbur's cargo validation CI (green — see O-4). This commit
+removes `data/` from the public HEAD: `git rm --cached -r data/` (1346
+files untracked, local copies KEPT on disk) + `data/` in `.gitignore` +
+the three relocated tests deleted (schema-validation, bible-abbreviations,
+ephemeris — they run in cargo CI now). `split-catalog`/`precompress` guard
+against a missing `data/` so the engine builds standalone. Public suite 271
+green; `npm run build` verified with `data/` absent.
+**Operational note (Wilbur):** the LOCAL `data/` left on disk is the STALE
+pre-split public copy (no Douay, old flags). For local dev and for
+`sync-data-to-server.sh` to ship CURRENT data, `data/` should be re-sourced
+as a checkout of `wheel-cargo`. Confirm the data sync reads the cargo
+checkout, not this stale copy. The licensing letters are now unblocked
+(data/ is off the public HEAD).
+*Original entry:*
 The public repo has hosted third-party copyrighted scripture (NAB/CEI/VAT_ES
 in data/gutenberg) since 2025-12-21. Ruling: repo architecture now matches
 the Gillette model — **private repo `mmdm-it/wheel-cargo` now holds all of
@@ -192,7 +211,12 @@ color that search mode dims to (the demo red measured 1.0:1 on the search
 blue — invisible).
 
 ### O-4 · W-10 cargo split — the data-validation tests move to cargo CI
-**Raised:** 2026-07-26 by Orville · **Status: OPEN (Wilbur's half of W-10)**
+**Raised:** 2026-07-26 by Orville · **Status: DONE (Wilbur, 2026-07-26)**
+Wilbur built `wheel-cargo`'s validation CI (`.github/workflows/ci.yml`) —
+ported schema-validation, bible-abbreviations, ephemeris + the `schemas/`,
+and added `bible-corpus-invariants` + `calendar-invariants` for the
+real-scale checks I relaxed. Both cargo-ci runs GREEN. That green was the
+gate on W-10's removal commit, now done.
 The public engine tests are DONE on my side: the nine tests that read real
 `data/` for ENGINE logic now read a small synthetic PD fixture set under
 `test/fixtures/data/` (calendar, gutenberg [5 books / 80 ch / 149 verses,
