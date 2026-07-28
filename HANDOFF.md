@@ -47,11 +47,13 @@ correctly becomes an "Em breve" placeholder (Wilbur's languages.json demotion
 already landed).
 
 ### W-5 · Stale `.gz` hazard in the build script
-**Raised:** 2026-07-23 by Wilbur · **Status: ACK**
-Durable fix goes in `precompress-json.mjs` (Orville's file): remove any `.gz`
-whose source is gone or under threshold, every run. Wilbur's wipe in
+**Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-27)**
+Durable fix landed in `precompress-json.mjs`: every run removes any `.gz`
+whose source is gone or under the 2048-byte floor, then rewrites survivors
+from the current source; the build line reports `removed N stale .gz` when
+it fires. **Verified by your recipe, both cases:** shrunk a JSON below 2048
+→ orphan removed; deleted a source outright → orphan removed. Your wipe in
 `sync-data-to-server.sh` stays as belt-and-suspenders.
-**Verify:** shrink a JSON below 2048 bytes, build, confirm no orphan `.gz`.
 
 ### W-6 · Silent translation fallback disguises data gaps as Latin
 **Raised:** 2026-07-23 by Wilbur · **Status: ACK — RULED, engine to implement**
