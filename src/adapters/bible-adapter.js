@@ -620,6 +620,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     childrenHandler,
     getParentLabel,
     onBoot,
+    // THE FRONT-DOOR GLOBE (Howell 2026-07-27): the dimension globe shows at
+    // the volume's threshold — the root item magnified, testaments in the
+    // pyramid — as well as at a leaf. The two moments where language is a
+    // live question: "what is this book? — in my tongue" at the door, "what
+    // did the original say?" at the verse. Between them it is clutter; the
+    // host hides it while drilling. The adapter names the door (its own
+    // dialect); the host stays volume-agnostic.
+    showsDimensionAt: item => item?.level === 'bibleRoot',
     // NUMERALS SIT ON THEIR NODES, NAMES SIT BESIDE THEM (Howell
     // 2026-07-20): chapters and verses centre over the node; book and
     // testament NAMES keep the offset that reads well for words — the
