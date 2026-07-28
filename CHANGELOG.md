@@ -932,6 +932,11 @@
 - Cargo CI: new no-empty-branches suite (HANDOFF W-3) — no chapter without verses, no country without makers, no maker without models
 - volume_data_version bump for: gutenberg
 
+### Fixed
+- **English was dark in production.** The Douay import set the English *default* edition to DRA but never added DRA to the *available* list, which still held only the licence-held NAB — so the engine unseated every English edition and the language showed a "coming soon" placeholder while the complete Douay-Rheims sat in the served data. `available.english` is now `["DRA", "NAB"]`.
+- Italian and Spanish flipped to `comingSoon: true` — they claimed to carry text while both their editions are held for licensing. They flip back when a public-domain text or a licence lands.
+- New cargo CI suite `edition-registry-coherence` — the manifest and translations.json make claims about each other and nothing checked they agreed. Now: every available edition exists in the registry, every default is available and servable, and no language promises text it cannot serve.
+
 ### Notes
 - NOTICE §2 rewritten for the post-split architecture: the cargo is held privately, third-party scripture rights are acknowledged explicitly, and the public-domain sources are disclaimed as such.
 - Finding raised for ruling: 78 verse slots correspond to no verse in any edition — phantom structure in Baruch (37) and Judith (29) from an early import, not missing text. Pinned in cargo CI; removing slots re-cuts the verse chain, so it awaits a decision.
