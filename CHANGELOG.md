@@ -923,6 +923,46 @@
 > Versioning note: items previously labeled v4.x are now tracked as v3.x. Mapping: v4.2.x → v3.4.x, v4.1.x → v3.3.x, v4.0.x → v3.2.17/18. Package version is set to 3.5.0.
 
 
+## [data-2026.07.28.2] - 2026-07-28
+
+### Added
+- **The verse aligner** (`scripts/verse-aligner.mjs`, cargo) — matches an incoming edition to the corpus spine by content instead of verse number, using dynamic programming over pairings scored against a reference already in the corpus. Handles verse merges and splits between editions, and refuses any pairing that would require inventing a split point in scripture. Reusable for every future edition whose versification wanders.
+- **Bible de Sacy (SAC)** as a second French edition — 27,564 verses across 1,061 of 1,215 chapters. Port-Royal translation from the Vulgate (1667–96, rev. 1759), public domain. **French is now the first language with two seated editions**, so the tertiary stratum has a real shelf.
+
+### Notes
+- Number-matching had to be abandoned, and Genesis 32 is why: Sacy and the spine have the *same* verse count there while being shifted throughout, so filing by number would have put "Jacob continued his journey" under the verse where "Laban rose early" belongs — silently. The aligner recovers the shift.
+- The confidence test is discrimination (does a verse match its partner better than its partner's neighbours?), not absolute similarity. Sacy and Crampon are 250 years apart, so an absolute threshold refused 585 correctly-aligned chapters; the scale-free test cut refusals to 153.
+- The 153 refusals are principled: Tobit survives in two materially different recensions, so Sacy's and Crampon's Tobit genuinely are not the same text, and the aligner declines to pretend otherwise.
+- SAC added to the deploy public-domain allowlist — without it the new edition would have been stripped before reaching the server.
+
+
+## [data-2026.07.28] - 2026-07-28
+
+### Data
+- Bible: **Esther completed** — the corpus's last structural hole. 15 empty chapters filled, 258 verses, from six public-domain sources (Clementine Vulgate, Douay-Rheims, Crampon, Synodal 77-book, Septuagint, Westminster Leningrad Codex). Chapters 11–16 are the Greek additions and carry no Masoretic numbering, as is correct. Book: 17 → 275 verses; corpus: 31,345 → 31,603.
+- Bible: `comingSoonText` added for all eight edition-bearing languages, so any tongue that becomes shelf-less speaks in its own voice (HANDOFF O-10)
+- New `scripts/import-esther.mjs` (cargo repo) — every parser proved against already-stored text before a byte is written
+- Cargo CI: new no-empty-branches suite (HANDOFF W-3) — no chapter without verses, no country without makers, no maker without models
+- volume_data_version bump for: gutenberg
+
+### Changed
+- Manifest hygiene: `editions.available.english` was `["NAB"]` while `editions.default.english` was `DRA`. Now `["DRA", "NAB"]`. **Not an outage** — first reported as one, wrongly: the engine seats editions from `translations.json`, never from `editions.available`, so English served Douay correctly throughout. The stale list was latent (a boot fallback that never fired), not live.
+- New cargo CI suite `edition-registry-coherence`, scoped to the fields the engine actually reads: every available edition exists in the registry, every default is listed as available, every language with editions declares a `comingSoonText`.
+
+### Notes
+- NOTICE §2 rewritten for the post-split architecture: the cargo is held privately, third-party scripture rights are acknowledged explicitly, and the public-domain sources are disclaimed as such.
+- Finding raised for ruling: 78 verse slots correspond to no verse in any edition — phantom structure in Baruch (37) and Judith (29) from an early import, not missing text. Pinned in cargo CI; removing slots re-cuts the verse chain, so it awaits a decision.
+
+
+## [data-2026.07.26.2] - 2026-07-26
+
+### Data
+- Bible: Douay-Rheims (Challoner, 1899 American Edition — public domain) imported from eBible.org USFM: 31,192 verses filled across 1,200 chapters, aligned on the Vulgate verse spine. English lights up license-free.
+- Bible: DRA comingSoon flag removed; English default edition NAB → DRA
+- New scripts/import-dra-usfm.mjs (repeatable importer; now in the cargo repo)
+- volume_data_version bump for: gutenberg (.2 same-day suffix)
+
+
 ## [data-2026.07.26] - 2026-07-26
 
 ### Data

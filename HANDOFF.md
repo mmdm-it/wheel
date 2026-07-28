@@ -51,8 +51,21 @@ italics (6,806 verses) are the near-term piece. Howell rules on presentation
 when we get there.
 
 ### W-3 · Empty chapters need a reader fallback
-**Raised:** 2026-07-23 by Wilbur · **Status: ENGINE HALF DECLINED (Howell,
-2026-07-28) — this is a DATA task, yours**
+**Raised:** 2026-07-23 by Wilbur · **Status: CLOSED (Wilbur, 2026-07-28) —
+Esther is sourced; the hole the entry existed for is gone**
+*Wilbur 2026-07-28: your ruling was right and it's done. Esther's 15 empty
+chapters now hold 258 verses from six PD sources (Clementine, Douay,
+Crampon, Synodal 77-book, Septuagint, Leningrad). Chapters 11-16 are the
+Greek additions — they carry VUL numbering only, no Masoretic, because no
+Hebrew text of them exists. Corpus 31,345 → 31,603 verses; ESTH 17 → 275.
+**Your empty-branch check is built** (cargo `test/no-empty-branches.test.js`):
+no chapter without verses on disk OR with `verse_count: 0` in the manifest
+(the engine builds the verse chain from that count, so a zero would leave
+real text invisible), no country without makers, no maker without models —
+gateway portals exempt by design, models nested under `families` counted as
+leaves. It went green the moment Esther landed, exactly the life cycle you
+described. Note also: `add-verse-counts.mjs` had to run — 15 counts written.*
+*Original ruling below.*
 Howell's ruling, and it's the right one: *"we shouldn't spend too much time
 writing code for a problem that can be, must be, and will be fixed
 somewhere else."* Sourcing Esther's missing 15 chapters closes this; an
@@ -238,6 +251,63 @@ from deployed chapters, W-6's fallback engages for ALL former NAB readers —
 flagged-Latin becomes the whole English experience until DRA text lands
 (Wilbur's sourcing queue, top priority).
 
+### W-12 · Two findings from the Esther pass, both needing Howell (FYI to you)
+**Raised:** 2026-07-28 by Wilbur · **Status: OPEN (Howell's ruling; no engine
+work asked of you — recorded here because both touch things you can see)**
+1. **78 phantom verse slots.** Baruch (37) and Judith (29) declare verses that
+   exist in no edition — Baruch chapter 5 has 44 slots where the Vulgate has
+   9. Not missing text: wrong skeleton, from an early import. Removing slots
+   re-cuts the continuous verse chain and changes `verse_count`, so it waits
+   on a ruling. Pinned in cargo CI at the current count, so a NEW hole still
+   fails while the backlog stays visible. **Reader-visible today** as verses
+   that render the honest-empty state you built for W-6.
+2. **50 stale remote branches carry the copyrighted corpus.** 51 of 53
+   branches on the public repo still hold `data/` with NAB/CEI/VAT_ES text at
+   their tips; 50 of those are already merged into `main`, so deleting them
+   loses no work and removes 50 public copies. Not done unilaterally — that's
+   a lot of deletion on shared infrastructure, and some may be yours. Flagging
+   for Howell; say if any branch there is still live for you.
+
+### W-13 · The purchase mechanism, and its demonstration on the tertiary
+**Raised:** 2026-07-28 by Wilbur · **Status: OPEN (Howell's design; engine work
+is yours — flagged now because it partly REVERSES W-11)**
+Context: the licensing letters must show publishers not just that we intend to
+pay them, but the machinery that would pay them. Howell's ruling 2026-07-28:
+a demonstration belongs **in the tertiary stratum**, so a letter can say "open
+the app, find your own translation, and see where it would sit."
+
+**The reversal:** W-11's final shape unseats held editions entirely ("too
+inside baseball"). For the demonstration, a `pendingLicense` edition needs a
+seat again — but a narrow, honest one. Wilbur's recommendation (Howell to
+rule): selecting it does NOT offer a live purchase, because we cannot deliver
+text we have no rights to and a dead "Buy" button reads as presumption.
+Instead the lens says roughly *"This translation is under copyright by
+[holder]. We are seeking a licence; when it is agreed it unlocks here"* above
+a real payment sheet shown INERT. That demonstrates the whole flow, is true in
+every particular, and flatters the rights holder rather than presuming on them.
+
+**The happy architectural fact:** Apple Pay / Google Pay / PayPal One Touch are
+OS-level sheets confirmed by biometric. **A purchase needs no keyboard** — the
+premise survives intact ([[the-premise]]: a reader, never an editor). Worth
+knowing before you design the flow; it is also going in the letters.
+
+**Commercial constraints that shape what you build** (recorded so the engine
+doesn't get designed around the wrong model):
+- Native iOS/Android would FORCE store IAP at 15-30%; web via Stripe/PayPal is
+  ~3%. The website is therefore the intended storefront, not just the shop
+  window. Anything you build should not assume a native IAP surface.
+- **Per-edition unlock, not subscription** — a subscription would require
+  tracking which edition each reader actually used in order to split revenue,
+  i.e. usage surveillance inside a reading instrument. One-time unlock per
+  edition attributes revenue exactly and records nothing about the reader.
+  Please don't add per-edition usage telemetry; the business model is
+  deliberately built to not need it.
+- Royalty base is **75% of NET receipts** to the publisher (gross less
+  processing, store commission, refunds — a closed list). No cash up front;
+  Howell earns only after a rights holder does.
+Non-code long poles (Howell's, not ours): legal entity, merchant account, EU
+VAT via OSS, contracts, reporting. Dossier: LICENSING.local.md.
+
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**
 Context: the catalog grew a countries ring (an index layer above the world
@@ -376,7 +446,15 @@ door must see the WHOLE shelf speak that language — so the campaign is:
   could populate both.
 
 ### O-10 · comingSoonText for every language that can stand shelf-less
-**Raised:** 2026-07-27 by Orville · **Status: OPEN (small, data)**
+**Raised:** 2026-07-27 by Orville · **Status: DONE (Wilbur, 2026-07-28)**
+Added to all EIGHT edition-bearing languages, not just the two shelf-less
+ones — any of them could join italian and spanish if its editions are ever
+all held, and you asked for exactly that. Hebrew בקרוב · Greek Σύντομα ·
+Latin Mox · English "Coming soon" · Italian Prossimamente · French Bientôt ·
+Spanish Próximamente · Russian Скоро. (Portuguese already had "Em breve".)
+Ships with the 2026.07.28 data sync; the "…" placeholder should stop
+appearing for italian/spanish the moment it lands.
+*Original entry:*
 Howell's final W-11 ruling: the tertiary shows ONLY servable editions —
 no pendingLicense seats, no notices ("too inside baseball") — and a
 language with nothing servable shows its native "coming soon", exactly
@@ -413,6 +491,10 @@ readers already flow through one source each). Data ask is tiny: 12 month
 names + 7 weekday names per language, reusing O-7's language registry.
 No ruling yet on which languages; likely the same edition-bearing set
 first. Engine half rides the strata-everywhere program in the roadmap.
+
+---
+
+## CONTRACT
 
 - **Single-owner rule (Howell, 2026-07-26):** only ONE session open at a
   time; Howell closes a session before switching tabs. Adopted after

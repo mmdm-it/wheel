@@ -16,24 +16,42 @@ You may use, study, modify, and redistribute the engine under the terms of
 the GPL. If you distribute software built from it, you must publish your
 source under the same license. That is the point.
 
-2. THE CARGO — ALL RIGHTS RESERVED
-----------------------------------
+2. THE CARGO — ALL RIGHTS RESERVED, AND HELD SEPARATELY
+-------------------------------------------------------
 The content the engine carries is NOT licensed under the GPL and is NOT open
-source. This includes, without limitation:
+source. Since 2026-07-26 it does not live in this repository at all: the
+cargo is maintained privately, and this repository carries only the engine
+plus a small public-domain fixture set (test/fixtures/) sufficient to build
+and test it. What follows describes the cargo wherever it is encountered —
+including in this repository's history, and in the release archives made
+before the split.
 
-  - The MMdM marine engine catalog (data/ catalog files): its selection,
-    arrangement, taxonomy, descriptions, and Italian prose.
-  - The curated scripture volumes: edition selection, structure, apparatus,
-    and presentation data.
+The reserved cargo includes, without limitation:
+
+  - The MMdM marine engine catalog: its selection, arrangement, taxonomy,
+    descriptions, and Italian prose.
+  - The curated scripture volumes: edition selection, versification mapping,
+    structure, apparatus, and presentation data.
   - The calendar and other volume datasets: their curation and arrangement.
   - All artwork, logos, and brand assets (art/, assets/).
 
-These materials are copyright © MMdM, all rights reserved. They are included
-in this repository so the engine can be seen doing real work. Reproduction or
-redistribution of the data and content outside this repository requires
-written permission. (Underlying public-domain texts — e.g. the Latin Vulgate
-itself — remain public domain; what is reserved is this curation, structure,
-and presentation of them.)
+These materials are copyright © MMdM, all rights reserved. Reproduction or
+redistribution requires written permission.
+
+Underlying public-domain texts — the Clementine Vulgate, the Douay-Rheims,
+the Crampon, the Septuagint, the Westminster Leningrad Codex, the Russian
+Synodal — remain in the public domain, and nothing here asserts any claim
+over them. What is reserved is MMdM's curation, structure, and presentation
+of them.
+
+Certain scripture texts carried as cargo are the property of THIRD PARTIES —
+including the New American Bible (© Confraternity of Christian Doctrine,
+Washington, D.C.), the Italian CEI translation (© Conferenza Episcopale
+Italiana), and the Spanish El Libro del Pueblo de Dios (© Fundación Palabra
+de Vida). These are not MMdM's to license under any terms, and MMdM's
+reservation of rights does not extend to them. They are held pending
+licensing arrangements with their rights holders and are not published: the
+public deployment serves public-domain editions only.
 
 3. TRADEMARKS
 -------------
