@@ -40,11 +40,12 @@ scours the web, Howell approves, AFTER the current engine rework — same track
 as the W-6 text repair. This entry is only the engine's empty-state rendering.*
 
 ### W-4 · Retire POR and DRA from the edition picker
-**Raised:** 2026-07-23 by Wilbur · **Status: ACK**
-Engine will filter editions flagged `comingSoon` in `translations.json` from
-the tertiary ring. Cascade noted: Portuguese then has zero real editions and
-correctly becomes an "Em breve" placeholder (Wilbur's languages.json demotion
-already landed).
+**Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-28)**
+Subsumed by the honesty cluster's final ruling (see W-11): the tertiary
+seats ONLY servable editions — `comingSoon` and `pendingLicense` alike are
+unseated. A language with nothing servable shows its native "coming soon"
+placeholder (your Em breve cascade, generalized). DRA no longer carries
+`comingSoon` (your Douay import), so English seats it.
 
 ### W-5 · Stale `.gz` hazard in the build script
 **Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-27)**
@@ -56,14 +57,25 @@ it fires. **Verified by your recipe, both cases:** shrunk a JSON below 2048
 `sync-data-to-server.sh` stays as belt-and-suspenders.
 
 ### W-6 · Silent translation fallback disguises data gaps as Latin
-**Raised:** 2026-07-23 by Wilbur · **Status: ACK — RULED, engine to implement**
-The any-language last resort (`Object.values(verse.text)[0]` — unmarked Greek
-to English readers) dies unconditionally. For the declared-order fallback,
-**Howell ruled 2026-07-24: option (b) — flagged Latin.** Show the fallback
-text but visibly mark it as a substitute, not the requested translation.
-Restoring the missing NAB *text* is a separate job, parked to the post-engine
-collaborative track (Wilbur scours, Howell approves). 442 verses corpus-wide
-carry no English today; the flag makes that honest until the text lands.
+**Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-28)**
+Every silent fallback is dead — three were found, not one: (a) the
+any-language last resort in `getVerseTextFromCache`; (b) a `|| text.NAB`
+vestige inside the chain builder's verse baking; (c) `translation = 'NAB'`
+as the chain builder's default. The chain is now: the reader's edition,
+else the VULGATE — **flagged** (Howell's bench ruling 2026-07-27 from three
+sketches: the stood-in verse speaks in ITALIC, with a small upright
+right-aligned footer notice IN THE READER'S CHOSEN LANGUAGE — "латинский
+текст · перевод недоступен" for a Russian reader; engine notice map is
+provisional, registry-per-language rides O-7) — else the honest empty.
+**Bonus root-cause (the stale-Latin bug, 2026-07-28):** the boot verse
+ring's items bake text at CHAIN-BUILD time and carried no cache
+coordinates, so a live language switch repainted build-time Latin,
+unflagged. Boot-ring verses now carry `meta.externalFile` like the
+continuous chain, and baked text is honored ONLY in its own language.
+**Ledger consequence for W-2:** italics now MEAN substitution — the
+Synodal supplied-words rendering must find another voice when its pass
+comes. The 442 missing-English verses (NAB-era count) render as flagged
+Latin until texts land.
 
 ### W-7 · Three data versions under the factory stamp
 **Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-25)**
@@ -161,7 +173,16 @@ NOTICE §2 needs the third-party-rights paragraph before licensing letters go
 out (the corrected Zenodo records link to NOTICE as their rights statement).
 
 ### W-11 · pendingLicense editions — the shelf shows them, the vault holds them
-**Raised:** 2026-07-26 by Wilbur · **Status: OPEN** (Howell ruled 2026-07-26)
+**Raised:** 2026-07-26 by Wilbur · **Status: DONE (Orville, 2026-07-28) — UX
+RE-RULED at the bench 2026-07-27:** the seated-but-unselectable draft (and
+its licensing notice) is OUT — "it doesn't concern the user, too inside
+baseball." Final shape: **the tertiary seats ONLY servable editions**; a
+language whose every edition is held (italian, spanish) behaves exactly
+like a placeholder tongue — browsable, native "coming soon" in the lens
+(O-10 asks you for the missing phrases; "…" until then), display-only, the
+reader keeps reading what it had. `setLanguage` commits only servable
+defaults; `setTranslation` refuses non-servable keys as belt. English
+seats Douay alone. Your original entry below, kept for the record:
 Howell's ruling: copyrighted texts must not be SERVED, not merely not shown
 (a UI gate in front of already-fetched JSON is a curtain, not a wall). Data
 side is DONE: `translations.json` now carries `"pendingLicense": true` on
@@ -317,6 +338,19 @@ door must see the WHOLE shelf speak that language — so the campaign is:
   today). A new-shape proposal gets a CONTRACT entry and I adapt the
   engine's readers to it. Ties into O-6 (nativeAbbrev) — one campaign
   could populate both.
+
+### O-10 · comingSoonText for every language that can stand shelf-less
+**Raised:** 2026-07-27 by Orville · **Status: OPEN (small, data)**
+Howell's final W-11 ruling: the tertiary shows ONLY servable editions —
+no pendingLicense seats, no notices ("too inside baseball") — and a
+language with nothing servable shows its native "coming soon", exactly
+like the placeholder tongues. Consequence: **italian and spanish** (all
+editions held for licensing) now stand shelf-less, and neither carries
+`comingSoonText` in languages.json (they had editions when the registry
+was populated; english/russian/french are servable and fine, portuguese
+already has "Em breve"). The engine shows "…" until the data lands —
+please add native phrases for italian and spanish, and for any language
+that could join them if its editions are ever all held.
 
 ### O-8 · Catalog sort-field audit — the data behind the coming sort stratum
 **Raised:** 2026-07-27 by Orville · **Status: OPEN (no rush — gates a future

@@ -28,6 +28,29 @@ export class TextDetailPlugin extends BaseDetailPlugin {
         lines.forEach(lineInfo => {
           container.appendChild(makeLineSpan(create, lineInfo.text, '', lineInfo));
         });
+        // W-6, FLAGGED LATIN — THE RULED MARK (Howell, bench 2026-07-27,
+        // from three sketches): a verse whose text is a SUBSTITUTE (the
+        // reader's edition lacks it; the Vulgate stands in) speaks in
+        // ITALIC, with a small upright footer notice in the READER'S chosen
+        // language, RIGHT-aligned so it reads as an annotation, never as
+        // the verse's last line. (Consequence noted in the ledger: italics
+        // now mean substitution — W-2's supplied-words rendering must find
+        // another voice.)
+        if (item?.substituted && lines.length) {
+          const last = lines[lines.length - 1];
+          container.className += ' detail-substituted--italic';
+          const s = create('span');
+          s.className = 'detail-text-line detail-sub-footer';
+          s.textContent = item.substituted.notice || 'latin text · translation not available';
+          if (s.style) {
+            s.style.position = 'absolute';
+            s.style.top = `${(last.y + fontPx * 1.45)}px`;
+            s.style.left = `${last.leftX}px`;
+            s.style.width = `${last.availableWidth}px`;
+            s.style.textAlign = 'right';
+          }
+          container.appendChild(s);
+        }
         return container;
       }
 

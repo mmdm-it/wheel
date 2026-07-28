@@ -105,14 +105,22 @@ const CHOOSERS = [
     items: () => dimensionBridge.languagesAvailable(),
     label: id => dimensionBridge.languageLabel(id), // each tongue names itself
     selected: () => dimensionBridge.getSelection().language,
-    select: id => dimensionBridge.setLanguage(id) },
+    select: id => {
+      const ok = dimensionBridge.setLanguage(id);
+      window.__wheelTapTrace?.push({ ev: 'select-lang', id, ok: ok ? 1 : 0 });
+      return ok;
+    } },
   { id: 'tertiary', mirrored: false, centerMag: true,
     items: () => dimensionBridge.translationsOf(),
     // Magnified node: the full, spelled-out translation title (centred in the
     // magnifier); the rest keep the abbreviation/key — Howell 2026-07-21.
     label: (key, isMagnified) => (isMagnified ? dimensionBridge.translationName(key) : dimensionBridge.translationAbbrev(key)),
     selected: () => dimensionBridge.getSelection().translation,
-    select: key => dimensionBridge.setTranslation(key) }
+    select: key => {
+      const ok = dimensionBridge.setTranslation(key);
+      window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
+      return ok;
+    } }
 ];
 let strataFront = 0;                       // 0 = primary at front
 const isStrataOpen = () => strataFront !== 0;
@@ -1149,7 +1157,11 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // on the way up out of a leaf the panel is already fading, and it should
   // fade carrying what it was describing rather than flash the level
   // above's payload on its way out.
-  if (!isDetailLevel(selected, adapterNormalized)) return;
+  if (!isDetailLevel(selected, adapterNormalized)) {
+    window.__wheelTapTrace?.push({ ev: 'render-detail-skip', lvl: selected?.level || '?', tr: translation || '' });
+    return;
+  }
+  window.__wheelTapTrace?.push({ ev: 'render-detail', lvl: selected?.level || '?', tr: translation || '' });
   while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
   if (!selected) return;
 
@@ -1157,6 +1169,18 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
     ? adapterInstance.detailFor(selected, manifest, { normalized: adapterNormalized, translation })
     : { type: 'text', text: selected.name || selected.id || '' };
   if (!payload) return;
+  window.__wheelTapTrace?.push({
+    ev: 'render-payload', tr: translation || '',
+    sub: payload.substituted?.edition || '',
+    txt: String(payload.text || '').slice(0, 14)
+  });
+
+  // A substituted verse's footer speaks the reader's CHOSEN language (the
+  // secondary stratum's selection), not the substitute's — W-6, the ruled
+  // mark (the ?w6mark bench scaffold retired with the ruling, 2026-07-28).
+  if (payload?.type === 'text' && payload.substituted) {
+    payload.substituted.notice = dimensionBridge.substitutionNotice();
+  }
 
   const plugin = detailRegistry.getPlugin(payload);
   if (!plugin) return;
@@ -2029,6 +2053,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     updateDimensionButton();
   });
   dimensionBridge.onSettle(translation => {
+    window.__wheelTapTrace?.push({ ev: 'dim-settle', tr: translation || '' });
     renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
   });
   // Re-wrap the open detail the moment EB Garamond truly lands (Howell

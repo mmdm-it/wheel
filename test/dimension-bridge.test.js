@@ -53,17 +53,50 @@ describe('dimension bridge — selection and defaults', () => {
       'lands on the servable edition, not the pending or coming-soon ones');
   });
 
-  it('setLanguage falls back to the first listed when NO edition is servable yet', () => {
-    // A language with editions but all pendingLicense (a W-11 pending state):
-    // no servable default exists, so keep the first listed rather than break.
+  it('an all-pending language is DISPLAY-ONLY: the reader keeps its edition (W-11)', () => {
+    // Howell ruled 2026-07-27 (superseding the earlier first-listed
+    // fallback): a language whose every edition is held for licensing must
+    // not commit anything — the deploy filter has stripped those texts, so
+    // committing one pointed the reader at a blank page wearing a real
+    // edition's name. The shelf shows; the reader keeps reading.
     const store = createInteractionStore();
     const meta = { translations: {
+      VUL: { language: 'latin', name: 'Vulgate' },
       A: { language: 'italian', name: 'Held A', pendingLicense: true },
       B: { language: 'italian', name: 'Held B', pendingLicense: true }
     } };
     const bridge = createDimensionBridge({ store, translationsMeta: meta });
-    assert.equal(bridge.setLanguage('italian'), true);
-    assert.equal(bridge.getSelection().translation, 'A');
+    assert.equal(bridge.setTranslation('VUL'), true, 'the reader starts on Latin');
+    assert.equal(bridge.setLanguage('italian'), true, 'the pending language is browsable');
+    assert.deepEqual(bridge.getSelection(), { language: 'italian', translation: 'VUL' },
+      'display follows the shelf; the reader keeps the Vulgate');
+  });
+
+  it('the shelf shows ONLY what opens; an empty shelf says coming soon (W-4 + W-11, final ruling)', () => {
+    // Howell 2026-07-27, superseding the seated-but-unselectable draft: a
+    // pendingLicense notice "doesn't concern the user — too inside baseball."
+    // Held and unsourced editions alike have no seat; a language with
+    // nothing servable shows its native "coming soon" placeholder.
+    const store = createInteractionStore();
+    const meta = { translations: {
+      VUL: { language: 'latin', name: 'Vulgate' },
+      SOON: { language: 'latin', name: 'Unsourced', comingSoon: true },
+      CEIX: { language: 'italian', name: 'Held', nativeName: 'La Sacra Bibbia CEI', pendingLicense: true }
+    } };
+    const langMeta = { languages: [
+      { id: 'latin', autonym: 'Latina' },
+      { id: 'italian', autonym: 'Italiano', comingSoonText: 'in arrivo' }
+    ] };
+    const bridge = createDimensionBridge({ store, translationsMeta: meta, languagesMeta: langMeta });
+    bridge.setTranslation('VUL');
+    assert.deepEqual(bridge.translationsOf('latin'), ['VUL'], 'the unsourced edition is not seated');
+    assert.deepEqual(bridge.translationsOf('italian'), ['__coming_soon__'],
+      'an all-held language shows the placeholder, not the held edition');
+    bridge.setLanguage('italian');
+    assert.equal(bridge.translationName('__coming_soon__'), 'in arrivo',
+      'the placeholder speaks the language\'s own tongue');
+    assert.equal(bridge.setTranslation('CEIX'), false, 'a held edition never commits');
+    assert.equal(bridge.getSelection().translation, 'VUL', 'the reader is untouched');
   });
 
   it('translationAbbrev shows the native-script abbreviation when present (Howell 2026-07-26)', () => {
@@ -183,5 +216,55 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
     assert.match(latin.text, /principio/i, 'VUL renders the Latin');
     assert.match(english.text, /beginning/i, 'DRA renders the English');
     assert.notEqual(latin.text, english.text, 'the swap genuinely changes the content');
+  });
+
+  it('a missing edition falls to the Vulgate — FLAGGED, never passed off (W-6)', async () => {
+    const externalFile = 'test/fixtures/data/gutenberg/chapters/GENE/001.json';
+    const chapterItem = { id: 'GENE:1', level: 'chapter', meta: { externalFile, bookId: 'GENE' } };
+    await new Promise(resolve => prefetchBibleVerses(chapterItem, { onLoaded: resolve }));
+
+    const verse = { id: 'GENE_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
+    // The fixture chapter carries VUL and DRA only — SYN is absent, as NAB
+    // is from every deployed chapter since the PD filter.
+    const substituted = detailFor(verse, manifest, { translation: 'SYN' });
+    assert.match(substituted.text, /principio/i, 'the Latin stands in');
+    assert.deepEqual(substituted.substituted, { edition: 'VUL' },
+      'and the payload SAYS so — the render wears the mark');
+    // The honest match wears no flag.
+    const honest = detailFor(verse, manifest, { translation: 'DRA' });
+    assert.equal(honest.substituted, undefined, 'a served edition is no substitute');
+  });
+
+  it('a live language switch outruns the chain\'s baked text (the stale-Latin bug, 2026-07-28)', async () => {
+    // The boot verse ring bakes each verse's text at CHAIN-BUILD time. The
+    // bug: a later language switch repainted that build-time Latin —
+    // unflagged — because the baked items carried no cache coordinates and
+    // detailFor trusted selected.text regardless of language. Now the items
+    // carry meta and the bake is honored only in its own language.
+    const { buildBibleVerseCousinChain } = await import('../src/navigation/cousin-builder.js');
+    const manifest2 = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../test/fixtures/data/gutenberg/manifest.json'), 'utf-8'));
+    // The fixture ships only GENE/001; the builder walks the whole book, so
+    // serve chapter 001 for every GENE chapter — the regression needs only
+    // the first verse's bake.
+    const realFetch = globalThis.fetch;
+    globalThis.fetch = async url => realFetch(
+      /chapters\/GENE\//.test(String(url)) ? './test/fixtures/data/gutenberg/chapters/GENE/001.json' : url);
+    let items;
+    try {
+      ({ items } = await buildBibleVerseCousinChain(manifest2, { bookId: 'GENE', translation: 'VUL' }));
+    } finally {
+      globalThis.fetch = realFetch;
+    }
+    const bootVerse = items.find(v => v && v.id === 'GENE_1_1');
+    assert.match(bootVerse.text, /principio/i, 'the chain baked Latin at build time');
+    assert.ok(bootVerse.meta?.externalFile, 'boot-ring verses now carry cache coordinates');
+    // The chapter is cached (prefetched by the earlier tests). A live DRA
+    // selection must render English through the cache — never the bake.
+    const english = detailFor(bootVerse, manifest2, { translation: 'DRA' });
+    assert.match(english.text, /beginning/i, 'the live selection wins over the bake');
+    // And in its OWN language the bake is still honest.
+    const latin = detailFor(bootVerse, manifest2, { translation: 'VUL' });
+    assert.match(latin.text, /principio/i);
   });
 });

@@ -879,13 +879,23 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
 
 // Returns the text for a specific verse from cache.  Tries each translation in
 // `preferredTranslations` in order, then falls back to the first available one.
-export function getVerseTextFromCache(externalFile, verseKey, preferredTranslations = ['VUL', 'NAB', 'BYZ', 'SYN']) {
+// Resolve a verse's text AND say which translation supplied it — the caller
+// decides whether that was a substitution worth flagging (W-6). The old
+// any-language last resort (`Object.values(verse.text)[0]`) is DEAD,
+// unconditionally (Howell ruled 2026-07-24): it served unmarked Greek to
+// English readers — a silent lie. Only the declared preference order may
+// answer; past it, the honest empty.
+export function getVerseTextResolved(externalFile, verseKey, preferredTranslations = ['VUL']) {
   const cached = _verseCache.get(externalFile);
-  if (!cached?.rawVerses) return '';
+  if (!cached?.rawVerses) return null;
   const verse = cached.rawVerses[String(verseKey)];
-  if (!verse?.text) return '';
+  if (!verse?.text) return null;
   for (const t of preferredTranslations) {
-    if (verse.text[t]) return verse.text[t];
+    if (verse.text[t]) return { text: verse.text[t], translation: t };
   }
-  return Object.values(verse.text)[0] || '';
+  return null;
+}
+
+export function getVerseTextFromCache(externalFile, verseKey, preferredTranslations = ['VUL', 'NAB', 'BYZ', 'SYN']) {
+  return getVerseTextResolved(externalFile, verseKey, preferredTranslations)?.text || '';
 }

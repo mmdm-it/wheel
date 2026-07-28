@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextFromCache, toRomanNumeral } from './volume-helpers.js';
+import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, toRomanNumeral } from './volume-helpers.js';
 import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
@@ -331,6 +331,12 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
   if (level === 'verse') {
     const externalFile = selected.meta?.externalFile;
     const verseKey = selected.meta?.verseKey;
+    // Baked chain text is trustworthy ONLY in the language it was baked in
+    // (the 2026-07-28 stale-Latin bug: a live language switch repainted the
+    // boot ring's build-time Latin, unflagged, because this fallback didn't
+    // check). No live selection = any bake serves; otherwise they must match.
+    const bakedOk = selected.text && (!translation || selected.translation === translation);
+    const bakedText = bakedOk ? selected.text : '';
     if (externalFile && verseKey) {
       // The translation comes from the dimension state, passed in — the ONE
       // source of truth (D.2). The old URL-param fallback is gone: Phase A
@@ -338,17 +344,30 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       // stale bookmark override the dimension store (found when the first
       // live swap demo stayed Latin, 2026-07-21).
       const activeTranslation = translation || null;
-      const others = ['NAB', 'VUL', 'BYZ', 'SYN'].filter(t => t !== activeTranslation);
-      const preferred = activeTranslation ? [activeTranslation, ...others] : others;
-      const text = getVerseTextFromCache(externalFile, verseKey, preferred);
+      // THE DECLARED ORDER (W-6, Howell ruled 2026-07-24: flagged Latin).
+      // The reader's translation first; failing that, the Vulgate — VISIBLY
+      // MARKED as a substitute, never passed off as the requested edition.
+      // The old promiscuous chain (NAB/BYZ/SYN and then ANY language at all)
+      // is gone: with the deploy filter stripping unlicensed texts, that
+      // chain was poised to serve unmarked anything to everyone.
+      const preferred = activeTranslation && activeTranslation !== 'VUL'
+        ? [activeTranslation, 'VUL'] : ['VUL'];
+      const resolved = getVerseTextResolved(externalFile, verseKey, preferred);
       readAhead(selected, manifest);
       // uniform: every verse shares the longest verse's type size (Howell
       // 2026-07-21) — a constant reading page, not size-by-length.
-      if (text) return { type: 'text', text, uniform: true };
-      // The chapter is on its way; the repaint comes with it.
-      return { type: 'text', text: selected.text || '', uniform: true };
+      if (resolved) {
+        const substituted = activeTranslation && resolved.translation !== activeTranslation;
+        return {
+          type: 'text', text: resolved.text, uniform: true,
+          ...(substituted ? { substituted: { edition: resolved.translation } } : {})
+        };
+      }
+      // The chapter is on its way; the repaint comes with it. An empty beat
+      // beats a wrong-language bake.
+      return { type: 'text', text: bakedText, uniform: true };
     }
-    return { type: 'text', text: selected.text || selected.name || id || '', uniform: true };
+    return { type: 'text', text: bakedText || selected.name || id || '', uniform: true };
   }
 
   return { type: 'text', text: selected.name || id || '' };
