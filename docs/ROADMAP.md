@@ -15,6 +15,29 @@
   - v3.10.x Phase B.2 gateway capability + interim pyramid guarantee — done
   - v3.11.0 Phase B close + Phase C sprint C.1–C.5 (catch-up release, 2026-07-20) — done
 
+## Standing intention: the Bible gets its own front door (Howell, 2026-07-28)
+
+The Gutenberg gateway — rotating past the end of the catalog's chain into
+the Bible — is a **development convenience**, not a product feature: it
+saved hosting a second URL. Howell owns **bibliacatholica.net** and
+**bibliacatholica.org**, and expects the Bible volume to be deployed there
+"before too long."
+
+What that will touch when it happens (nothing to build yet, but the seams
+are worth knowing):
+- **Deployment**: a new target in `sync-to-server.sh` with its own root;
+  the volume already boots standalone (`?volume=bible`), so the engine work
+  is small. The PD deploy filter (W-11) must cover the new root too — the
+  licensing guarantee is per-server, not per-repo.
+- **Identity**: the copyright strip, the desktop gate ("MMdM è progettato
+  per il telefono"), and the QR code all name MMdM and point at mmdm.it —
+  each becomes per-deployment rather than global.
+- **robots.txt / X-Robots-Tag** (W-9) are origin-root artifacts: the new
+  domain needs its own copies.
+- **The gateway itself**: keep it in dev, or retire it once the Bible has a
+  real address? Howell's call when the time comes. (It is also the only
+  place the wipe choreography is exercised.)
+
 ## Next Program: Strata Everywhere (surveyed 2026-07-27, Howell + Orville — sequenced, not yet started)
 
 The dimensions program resumes, generalized. The ruling insight (Howell):

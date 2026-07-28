@@ -1180,6 +1180,20 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // mark (the ?w6mark bench scaffold retired with the ruling, 2026-07-28).
   if (payload?.type === 'text' && payload.substituted) {
     payload.substituted.notice = dimensionBridge.substitutionNotice();
+    // The notice speaks the READER'S language, so it carries that language's
+    // script and direction — a Hebrew notice must run RTL even though the
+    // Latin verse above it runs LTR (W-1 + W-6 meeting).
+    const readerEdition = dimensionBridge.getSelection().translation;
+    payload.substituted.lang = dimensionBridge.editionLang(readerEdition);
+    payload.substituted.dir = dimensionBridge.editionDirection(readerEdition);
+  }
+  // W-1: the text is stamped with the script it is ACTUALLY in — the
+  // substituting edition's when the Vulgate stands in, not the one the
+  // reader asked for (Hebrew requested, Latin served ⇒ the page reads LTR).
+  if (payload?.type === 'text' && payload.uniform) {
+    const shown = payload.substituted?.edition || translation || null;
+    payload.dir = dimensionBridge.editionDirection(shown);
+    payload.lang = dimensionBridge.editionLang(shown);
   }
 
   const plugin = detailRegistry.getPlugin(payload);

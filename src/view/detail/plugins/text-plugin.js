@@ -25,8 +25,15 @@ export class TextDetailPlugin extends BaseDetailPlugin {
         const container = create('div');
         container.className = 'detail-sector-content detail-text detail-text--arc';
         if (container.style) container.style.fontSize = `${fontPx.toFixed(1)}px`;
+        // W-1: the script the text is actually in. `lang` drives the CSS's
+        // long-dormant RTL rules (and the browser's font/shaping choice);
+        // `dir` states the run direction outright, so the Hebrew reads
+        // right-to-left instead of pretending to be Latin.
+        if (item.lang && container.setAttribute) container.setAttribute('lang', item.lang);
+        if (item.dir && container.setAttribute) container.setAttribute('dir', item.dir);
+        const rtl = item.dir === 'rtl';
         lines.forEach(lineInfo => {
-          container.appendChild(makeLineSpan(create, lineInfo.text, '', lineInfo));
+          container.appendChild(makeLineSpan(create, lineInfo.text, '', lineInfo, { rtl }));
         });
         // W-6, FLAGGED LATIN — THE RULED MARK (Howell, bench 2026-07-27,
         // from three sketches): a verse whose text is a SUBSTITUTE (the
@@ -42,6 +49,10 @@ export class TextDetailPlugin extends BaseDetailPlugin {
           const s = create('span');
           s.className = 'detail-text-line detail-sub-footer';
           s.textContent = item.substituted.notice || 'latin text · translation not available';
+          // The notice is in the READER'S tongue, which may run the other
+          // way from the substituted verse above it.
+          if (item.substituted.lang && s.setAttribute) s.setAttribute('lang', item.substituted.lang);
+          if (item.substituted.dir && s.setAttribute) s.setAttribute('dir', item.substituted.dir);
           if (s.style) {
             s.style.position = 'absolute';
             s.style.top = `${(last.y + fontPx * 1.45)}px`;
