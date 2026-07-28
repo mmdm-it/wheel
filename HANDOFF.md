@@ -51,8 +51,21 @@ italics (6,806 verses) are the near-term piece. Howell rules on presentation
 when we get there.
 
 ### W-3 · Empty chapters need a reader fallback
-**Raised:** 2026-07-23 by Wilbur · **Status: ENGINE HALF DECLINED (Howell,
-2026-07-28) — this is a DATA task, yours**
+**Raised:** 2026-07-23 by Wilbur · **Status: CLOSED (Wilbur, 2026-07-28) —
+Esther is sourced; the hole the entry existed for is gone**
+*Wilbur 2026-07-28: your ruling was right and it's done. Esther's 15 empty
+chapters now hold 258 verses from six PD sources (Clementine, Douay,
+Crampon, Synodal 77-book, Septuagint, Leningrad). Chapters 11-16 are the
+Greek additions — they carry VUL numbering only, no Masoretic, because no
+Hebrew text of them exists. Corpus 31,345 → 31,603 verses; ESTH 17 → 275.
+**Your empty-branch check is built** (cargo `test/no-empty-branches.test.js`):
+no chapter without verses on disk OR with `verse_count: 0` in the manifest
+(the engine builds the verse chain from that count, so a zero would leave
+real text invisible), no country without makers, no maker without models —
+gateway portals exempt by design, models nested under `families` counted as
+leaves. It went green the moment Esther landed, exactly the life cycle you
+described. Note also: `add-verse-counts.mjs` had to run — 15 counts written.*
+*Original ruling below.*
 Howell's ruling, and it's the right one: *"we shouldn't spend too much time
 writing code for a problem that can be, must be, and will be fixed
 somewhere else."* Sourcing Esther's missing 15 chapters closes this; an
@@ -238,6 +251,23 @@ from deployed chapters, W-6's fallback engages for ALL former NAB readers —
 flagged-Latin becomes the whole English experience until DRA text lands
 (Wilbur's sourcing queue, top priority).
 
+### W-12 · Two findings from the Esther pass, both needing Howell (FYI to you)
+**Raised:** 2026-07-28 by Wilbur · **Status: OPEN (Howell's ruling; no engine
+work asked of you — recorded here because both touch things you can see)**
+1. **78 phantom verse slots.** Baruch (37) and Judith (29) declare verses that
+   exist in no edition — Baruch chapter 5 has 44 slots where the Vulgate has
+   9. Not missing text: wrong skeleton, from an early import. Removing slots
+   re-cuts the continuous verse chain and changes `verse_count`, so it waits
+   on a ruling. Pinned in cargo CI at the current count, so a NEW hole still
+   fails while the backlog stays visible. **Reader-visible today** as verses
+   that render the honest-empty state you built for W-6.
+2. **50 stale remote branches carry the copyrighted corpus.** 51 of 53
+   branches on the public repo still hold `data/` with NAB/CEI/VAT_ES text at
+   their tips; 50 of those are already merged into `main`, so deleting them
+   loses no work and removes 50 public copies. Not done unilaterally — that's
+   a lot of deletion on shared infrastructure, and some may be yours. Flagging
+   for Howell; say if any branch there is still live for you.
+
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**
 Context: the catalog grew a countries ring (an index layer above the world
@@ -376,7 +406,15 @@ door must see the WHOLE shelf speak that language — so the campaign is:
   could populate both.
 
 ### O-10 · comingSoonText for every language that can stand shelf-less
-**Raised:** 2026-07-27 by Orville · **Status: OPEN (small, data)**
+**Raised:** 2026-07-27 by Orville · **Status: DONE (Wilbur, 2026-07-28)**
+Added to all EIGHT edition-bearing languages, not just the two shelf-less
+ones — any of them could join italian and spanish if its editions are ever
+all held, and you asked for exactly that. Hebrew בקרוב · Greek Σύντομα ·
+Latin Mox · English "Coming soon" · Italian Prossimamente · French Bientôt ·
+Spanish Próximamente · Russian Скоро. (Portuguese already had "Em breve".)
+Ships with the 2026.07.28 data sync; the "…" placeholder should stop
+appearing for italian/spanish the moment it lands.
+*Original entry:*
 Howell's final W-11 ruling: the tertiary shows ONLY servable editions —
 no pendingLicense seats, no notices ("too inside baseball") — and a
 language with nothing servable shows its native "coming soon", exactly
@@ -413,6 +451,10 @@ readers already flow through one source each). Data ask is tiny: 12 month
 names + 7 weekday names per language, reusing O-7's language registry.
 No ruling yet on which languages; likely the same edition-bearing set
 first. Engine half rides the strata-everywhere program in the roadmap.
+
+---
+
+## CONTRACT
 
 - **Single-owner rule (Howell, 2026-07-26):** only ONE session open at a
   time; Howell closes a session before switching tabs. Adopted after
