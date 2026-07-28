@@ -401,7 +401,7 @@ export function wrapLines(text, lineTable, tierPercent) {
  * @param {{ y: number, leftX: number, availableWidth: number }} lineInfo
  * @returns {HTMLElement}
  */
-export function makeLineSpan(create, text, cssClass, lineInfo, { centerWidth = 0 } = {}) {
+export function makeLineSpan(create, text, cssClass, lineInfo, { centerWidth = 0, rtl = false } = {}) {
   const span = create('span');
   span.className = `detail-text-line ${cssClass}`;
   span.textContent = text;
@@ -415,6 +415,16 @@ export function makeLineSpan(create, text, cssClass, lineInfo, { centerWidth = 0
       span.style.left      = '0px';
       span.style.width     = `${centerWidth}px`;
       span.style.textAlign = 'center';
+    } else if (rtl) {
+      // RIGHT-TO-LEFT (W-1, Howell's Moto G catch 2026-07-28): a wrapped
+      // Hebrew line must be flush RIGHT like its neighbours. With the
+      // LTR treatment below the box SHRINKS to its content, so the
+      // stylesheet's text-align:right had nothing to push against and a
+      // short last line sat at the row's left edge. Given the row's full
+      // width, the alignment finally has room to act.
+      span.style.left      = `${lineInfo.leftX}px`;
+      span.style.width     = `${lineInfo.availableWidth}px`;
+      span.style.textAlign = 'right';
     } else {
       span.style.left      = `${lineInfo.leftX}px`;
       span.style.maxWidth  = `${lineInfo.availableWidth}px`;

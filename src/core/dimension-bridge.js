@@ -43,6 +43,22 @@ const LANGUAGE_AUTONYMS = {
 // registry supplied at boot). Selecting it does nothing — no text to load.
 const COMING_SOON_KEY = '__coming_soon__';
 
+// Script tags per language, for the rendered text's `lang` attribute (W-1).
+// The registry may override per edition (`lang`); this is the fallback map.
+// Only the tag matters — the CSS keys RTL on [lang="he"], and the browser
+// picks font/shaping from it.
+const LANGUAGE_TAGS = {
+  hebrew: 'he',
+  greek: 'el',
+  latin: 'la',
+  english: 'en',
+  russian: 'ru',
+  french: 'fr',
+  italian: 'it',
+  spanish: 'es',
+  portuguese: 'pt'
+};
+
 // W-6's substitution footer (Howell ruled 2026-07-27, mark #3): the notice
 // under a stood-in verse speaks THE LANGUAGE THE READER CHOSE — a Russian
 // reader must be told in Russian that the Latin is standing in. Provisional
@@ -55,7 +71,11 @@ const SUBSTITUTION_NOTICES = {
   portuguese: 'texto latino · tradução indisponível',
   french: 'texte latin · traduction non disponible',
   russian: 'латинский текст · перевод недоступен',
-  greek: 'λατινικό κείμενο · μετάφραση μη διαθέσιμη'
+  greek: 'λατινικό κείμενο · μετάφραση μη διαθέσιμη',
+  // Hebrew added 2026-07-28 (a Hebrew reader was getting the English
+  // notice). ⚠ Engine-authored — wants a native speaker's eye before it
+  // ships far; like the rest of this map it belongs in the registry (O-7).
+  hebrew: 'טקסט לטיני · התרגום אינו זמין'
 };
 
 export function createDimensionBridge({ store, translationsMeta = null, languagesMeta = null } = {}) {
@@ -233,6 +253,25 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // mark #3): the person who asked for Russian is told in Russian.
     substitutionNotice() {
       return SUBSTITUTION_NOTICES[currentLanguage()] || SUBSTITUTION_NOTICES.english;
+    },
+
+    // W-1: how an edition's script RUNS — the registry's own declaration
+    // (`direction: "rtl"` on WLC), never guessed from the language. The
+    // detail sector stamps the rendered text with this so the Hebrew reads
+    // right-to-left; the CSS has been ready since the D-era, it simply had
+    // nothing telling it which way the words go.
+    editionDirection(key) {
+      const k = key || store.getState().edition || null;
+      return meta?.translations?.[k]?.direction === 'rtl' ? 'rtl' : 'ltr';
+    },
+
+    // The BCP-47-ish tag for the rendered text: the CSS keys its RTL rules
+    // on [lang="he"], and a lang attribute is also what tells the browser
+    // which font and shaping to use for the script.
+    editionLang(key) {
+      const k = key || store.getState().edition || null;
+      const t = meta?.translations?.[k];
+      return t?.lang || LANGUAGE_TAGS[t?.language] || null;
     },
 
     // The render side registers what "regenerate" means. Re-registering

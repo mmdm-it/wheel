@@ -113,6 +113,25 @@ describe('dimension bridge — selection and defaults', () => {
     assert.equal(withoutNative.translationAbbrev('BYZ'), 'BYZ', 'falls back to the key, no regression');
   });
 
+  it('an edition declares how its script runs (W-1)', () => {
+    // The registry says WLC is rtl; the engine must READ that, never guess
+    // from the language. The CSS's RTL rules keyed on [lang="he"] existed
+    // since the D-era with nothing to trigger them — this is the hookup.
+    const bridge = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
+      translations: {
+        WLC: { language: 'hebrew', name: 'Leningrad Codex', direction: 'rtl' },
+        VUL: { language: 'latin', name: 'Vulgate' },
+        CUSTOM: { language: 'greek', name: 'Override', lang: 'grc' }
+      }
+    } });
+    assert.equal(bridge.editionDirection('WLC'), 'rtl', 'the registry\'s declaration wins');
+    assert.equal(bridge.editionLang('WLC'), 'he', 'and the script tag the CSS keys on');
+    assert.equal(bridge.editionDirection('VUL'), 'ltr');
+    assert.equal(bridge.editionLang('VUL'), 'la');
+    assert.equal(bridge.editionLang('CUSTOM'), 'grc', 'a per-edition lang overrides the language map');
+    assert.equal(bridge.editionDirection('NOSUCH'), 'ltr', 'an unknown edition reads left-to-right');
+  });
+
   it('setTranslation adopts the translation and implies its language', () => {
     // DRA is the fixture's public-domain english edition; setting it adopts
     // english as its implied language.

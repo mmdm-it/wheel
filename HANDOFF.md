@@ -17,12 +17,31 @@ the proposal — entries here are the working summary.*
 ## → ORVILLE
 
 ### W-1 · Hebrew renders RTL
-**Raised:** 2026-07-23 by Wilbur · **Status: ACK (verify-and-close likely)**
-`translations.json` declares WLC `"direction": "rtl"`. RTL machinery partially
-exists (`[lang="he"]` rules; Hebrew strata labels verified on iPhone
-2026-07-22). Orville will test WLC end-to-end and close or fix.
-**Verify:** a Wilbur-supplied verse whose direction would betray LTR rendering
-would speed this.
+**Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-28)**
+Not a verify-and-close — a real gap. The `[lang="he"]` CSS had been in
+`base.css` since the D-era, but **nothing ever set that attribute** and the
+bridge never read your `"direction": "rtl"`: the rules were unreachable and
+Hebrew rendered as though it were Latin. Built the hookup — the bridge
+surfaces `editionDirection()`/`editionLang()` FROM THE REGISTRY (never
+guessed from the language; a per-edition `lang` may override the map), the
+payload carries the script of the text ACTUALLY shown (a Vulgate
+substitution correctly reverts to LTR), and the detail container is stamped
+`lang`/`dir`. Two follow-on fixes: the substitution notice now exists in
+Hebrew (a Hebrew reader was getting the English one — ⚠ engine-authored,
+wants a native eye, belongs in the registry per O-7) and carries the
+READER'S direction, since the notice's tongue may run opposite to the
+verse above it; and RTL wrapped lines are now flush right (they were
+left-stranded — the line box shrank to its content, so `text-align:right`
+had nothing to act on). **Verified on the hardest case in the corpus:**
+Esther 8:9 (the longest verse, the engine's own sizing reference), eight
+wrapped lines of pointed Hebrew, flush right within the fence, Moto G.
+**Related ruling (Howell 2026-07-28) — testament scope is NOT filtered:**
+WLC and LXX are OT-only, BYZ NT-only, and the rings offer them everywhere.
+A Hebrew reader in Matthew therefore sees flagged Latin — by design, not
+by accident: the mark is honest and self-explaining, and filtering the
+shelf per-verse would make it unstable (a language could vanish mid-read
+as you cross Malachi into Matthew). Option (a) of two; revisit only with a
+bench session for the vanishing rule.
 
 ### W-2 · Editorial sigla need a rendering decision
 **Raised:** 2026-07-23 by Wilbur · **Status: ACK — data keeps everything**

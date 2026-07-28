@@ -1,5 +1,28 @@
 # Changelog
 
+## 3.25.1 — Hebrew reads right to left (W-1)
+- **The Hebrew finally runs the right way.** The `[lang="he"]` RTL rules
+  had been in the stylesheet since the D-era, but nothing ever set that
+  attribute and nothing read the registry's `"direction": "rtl"` — the
+  rules were unreachable and the Leningrad Codex rendered as though it
+  were Latin. The bridge now surfaces `editionDirection()`/`editionLang()`
+  straight from the registry (never guessed from the language; a
+  per-edition `lang` may override), and the detail sector stamps the text
+  with the script it is ACTUALLY in — so a Vulgate substitution correctly
+  reverts to left-to-right.
+- **RTL wrapped lines are flush right.** They had been left-stranded: the
+  line box shrank to its content, leaving `text-align: right` nothing to
+  act against. Verified on the corpus's hardest case — Esther 8:9, the
+  longest verse and the engine's own sizing reference: eight wrapped lines
+  of pointed Hebrew, right-aligned inside the arc's fence.
+- **The substitution notice speaks Hebrew** (a Hebrew reader was getting
+  the English one) and carries the READER's direction — the notice's tongue
+  may run opposite to the verse standing in above it.
+- Ruled and recorded (Howell): testament scope is NOT filtered from the
+  rings. WLC and LXX are Old Testament only, BYZ New — so a Hebrew reader
+  in Matthew sees flagged Latin by design. The mark explains itself;
+  filtering per-verse would make the shelf vanish mid-read.
+
 ## 3.25.0 — the honest shelf — the edition ring stops lying (W-4 · W-6 · W-11)
 - **The shelf shows only what opens** (Howell's final bench ruling,
   superseding the seated-but-unselectable draft): the tertiary ring seats
