@@ -268,6 +268,46 @@ work asked of you — recorded here because both touch things you can see)**
    a lot of deletion on shared infrastructure, and some may be yours. Flagging
    for Howell; say if any branch there is still live for you.
 
+### W-13 · The purchase mechanism, and its demonstration on the tertiary
+**Raised:** 2026-07-28 by Wilbur · **Status: OPEN (Howell's design; engine work
+is yours — flagged now because it partly REVERSES W-11)**
+Context: the licensing letters must show publishers not just that we intend to
+pay them, but the machinery that would pay them. Howell's ruling 2026-07-28:
+a demonstration belongs **in the tertiary stratum**, so a letter can say "open
+the app, find your own translation, and see where it would sit."
+
+**The reversal:** W-11's final shape unseats held editions entirely ("too
+inside baseball"). For the demonstration, a `pendingLicense` edition needs a
+seat again — but a narrow, honest one. Wilbur's recommendation (Howell to
+rule): selecting it does NOT offer a live purchase, because we cannot deliver
+text we have no rights to and a dead "Buy" button reads as presumption.
+Instead the lens says roughly *"This translation is under copyright by
+[holder]. We are seeking a licence; when it is agreed it unlocks here"* above
+a real payment sheet shown INERT. That demonstrates the whole flow, is true in
+every particular, and flatters the rights holder rather than presuming on them.
+
+**The happy architectural fact:** Apple Pay / Google Pay / PayPal One Touch are
+OS-level sheets confirmed by biometric. **A purchase needs no keyboard** — the
+premise survives intact ([[the-premise]]: a reader, never an editor). Worth
+knowing before you design the flow; it is also going in the letters.
+
+**Commercial constraints that shape what you build** (recorded so the engine
+doesn't get designed around the wrong model):
+- Native iOS/Android would FORCE store IAP at 15-30%; web via Stripe/PayPal is
+  ~3%. The website is therefore the intended storefront, not just the shop
+  window. Anything you build should not assume a native IAP surface.
+- **Per-edition unlock, not subscription** — a subscription would require
+  tracking which edition each reader actually used in order to split revenue,
+  i.e. usage surveillance inside a reading instrument. One-time unlock per
+  edition attributes revenue exactly and records nothing about the reader.
+  Please don't add per-edition usage telemetry; the business model is
+  deliberately built to not need it.
+- Royalty base is **75% of NET receipts** to the publisher (gross less
+  processing, store commission, refunds — a closed list). No cash up front;
+  Howell earns only after a rights holder does.
+Non-code long poles (Howell's, not ours): legal entity, merchant account, EU
+VAT via OSS, contracts, reporting. Dossier: LICENSING.local.md.
+
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**
 Context: the catalog grew a countries ring (an index layer above the world
