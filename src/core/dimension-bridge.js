@@ -43,6 +43,21 @@ const LANGUAGE_AUTONYMS = {
 // registry supplied at boot). Selecting it does nothing — no text to load.
 const COMING_SOON_KEY = '__coming_soon__';
 
+// W-6's substitution footer (Howell ruled 2026-07-27, mark #3): the notice
+// under a stood-in verse speaks THE LANGUAGE THE READER CHOSE — a Russian
+// reader must be told in Russian that the Latin is standing in. Provisional
+// engine map (same caveat as PENDING_NOTICES: belongs in the registry per
+// language eventually — rides O-7, Wilbur). English is the fallback.
+const SUBSTITUTION_NOTICES = {
+  english: 'latin text · translation not available',
+  italian: 'testo latino · traduzione non disponibile',
+  spanish: 'texto latino · traducción no disponible',
+  portuguese: 'texto latino · tradução indisponível',
+  french: 'texte latin · traduction non disponible',
+  russian: 'латинский текст · перевод недоступен',
+  greek: 'λατινικό κείμενο · μετάφραση μη διαθέσιμη'
+};
+
 export function createDimensionBridge({ store, translationsMeta = null, languagesMeta = null } = {}) {
   if (!store) throw new Error('createDimensionBridge: store is required');
 
@@ -91,7 +106,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // this is the fact. (So a promoted placeholder needs no flag flip to work.)
   const hasEditions = id => editionsOf(id).length > 0;
   const currentLanguage = () => displayLanguage ?? store.getState().language ?? null;
-  const comingSoonText = id => languageEntry(id)?.comingSoonText || '';
+  // A language the registry hasn't given a native "coming soon" yet shows
+  // an ellipsis — a promise without words beats an empty node. (Wilbur owes
+  // the native phrases for any language that can stand shelf-less — O-10.)
+  const comingSoonText = id => languageEntry(id)?.comingSoonText || '…';
 
   return {
     // A gateway reboot re-creates adapters but the store (and this bridge)
@@ -113,21 +131,28 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       if (!options.length) return true; // placeholder: display-only, reader untouched
       // Default to the first SERVABLE edition (skip pendingLicense/comingSoon),
       // not merely the first listed. English lists NAB (pending) before DRA —
-      // the reader must land on Douay. Falls back to options[0] only if a
-      // language has editions but none is servable yet (a W-11 pending state).
+      // the reader must land on Douay. A language with editions but NO
+      // servable one (all held for licensing — W-11) is DISPLAY-ONLY, like a
+      // placeholder: the shelf shows its held editions, the reader keeps
+      // reading what it had. Committing options[0] here used to point the
+      // reader at text the deploy filter has stripped — a blank page wearing
+      // a real edition's name.
       const servable = servableEditionsOf(languageId);
-      const defaultEdition = servable[0] ?? options[0];
-      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition });
+      if (!servable.length) return true; // W-11: pending language, reader untouched
+      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition: servable[0] });
       return true;
     },
 
     // The chooser pyramid settles on a specific translation: adopt it and the
     // language it belongs to. The synthetic "coming soon" node is not a real
-    // edition — settling on it commits nothing.
+    // edition — settling on it commits nothing. A pendingLicense/comingSoon
+    // edition is on the shelf but in the vault (W-11): settling on it also
+    // commits nothing — the lens shows its notice, the reader keeps reading.
     setTranslation(translationKey) {
       if (translationKey === COMING_SOON_KEY) return false;
       const languageId = languageOf(translationKey);
       if (!languageId) return false;
+      if (!isServable(meta?.translations?.[translationKey])) return false; // W-11: visible, never committed
       displayLanguage = languageId;
       store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition: translationKey });
       return true;
@@ -186,18 +211,28 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       return meta?.translations?.[key]?.nativeAbbrev || key;
     },
 
-    // The tertiary stratum's nodes: every edition KEY in a language, in registry
-    // order (VUL before NEO, NAB before DRA). A placeholder language yields a
-    // single synthetic "coming soon" node instead. Defaults to the current
-    // language, then the first language with editions — never empty.
+    // The tertiary stratum's nodes: the SERVABLE edition keys of a language,
+    // in registry order (W-4 + W-11, Howell's final ruling 2026-07-27): the
+    // shelf shows ONLY what actually opens. comingSoon (unsourced) and
+    // pendingLicense (held) editions alike have no seat — licensing is our
+    // trouble, not the reader's, and an edition that can't be read is inside
+    // baseball on a ring. A language with nothing servable yields the single
+    // synthetic "coming soon" node, in its own tongue. Defaults to the
+    // current language, then the first language with editions — never empty.
     translationsOf(languageId) {
       let lang = languageId || currentLanguage();
       if (!lang || (!hasEditions(lang) && !languageEntry(lang))) {
         for (const t of Object.values(meta?.translations || {})) { if (t?.language) { lang = t.language; break; } }
       }
       if (!lang) return [];
-      const editions = editionsOf(lang);
-      return editions.length ? editions : [COMING_SOON_KEY];
+      const seated = servableEditionsOf(lang);
+      return seated.length ? seated : [COMING_SOON_KEY];
+    },
+
+    // The substituted-verse footer, in the READER'S chosen tongue (W-6,
+    // mark #3): the person who asked for Russian is told in Russian.
+    substitutionNotice() {
+      return SUBSTITUTION_NOTICES[currentLanguage()] || SUBSTITUTION_NOTICES.english;
     },
 
     // The render side registers what "regenerate" means. Re-registering

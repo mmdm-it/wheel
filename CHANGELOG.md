@@ -1,5 +1,31 @@
 # Changelog
 
+## 3.25.0 — the honest shelf — the edition ring stops lying (W-4 · W-6 · W-11)
+- **The shelf shows only what opens** (Howell's final bench ruling,
+  superseding the seated-but-unselectable draft): the tertiary ring seats
+  ONLY servable editions — `comingSoon` and `pendingLicense` alike have no
+  seat, and no licensing notice appears anywhere ("it doesn't concern the
+  user"). A language whose every edition is held (Italiano, Español)
+  behaves like a placeholder tongue: browsable, native "coming soon" in
+  the lens ("…" until Wilbur's phrases land, O-10), display-only — the
+  reader keeps reading what it had. English seats the Douay-Rheims alone.
+- **Every silent translation fallback is dead — three were found**: the
+  any-language last resort, a `|| NAB` vestige in the chain builder's verse
+  baking, and the builder's own `NAB` default. The chain is now: the
+  reader's edition, else the Vulgate FLAGGED, else the honest empty.
+- **The ruled substitution mark** (from three bench sketches): a stood-in
+  verse speaks in italic, with a small upright right-aligned footer naming
+  the substitution IN THE READER'S CHOSEN LANGUAGE — «латинский текст ·
+  перевод недоступен» for a Russian reader. Italics now mean substitution;
+  W-2's supplied-words rendering will need another voice.
+- **The stale-Latin bug, root-caused and fixed**: the boot verse ring bakes
+  text at chain-build time and carried no cache coordinates, so a live
+  language switch repainted build-time Latin, unflagged — fixed at the
+  root (boot-ring verses carry `meta.externalFile`; baked text is honored
+  only in its own language) and pinned by a regression test.
+- The probe gained dimension-settle/render tracing (inert without
+  `?probe=1`) — the instrument that caught the baked-text lie.
+
 ## 3.24.0 — the globe at the front door
 - **The dimension globe now shows at the Bible's threshold** (Howell
   2026-07-27): gateway entry — MMdM CATALOGO in the parent, BIBLIA SACRA

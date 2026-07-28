@@ -632,6 +632,20 @@ svg :focus-visible {
 .font-tier-5 { font-size: calc( 3.5 / 100 * var(--detail-SSd, 650px)); line-height: 1.4;  }
 .font-tier-6 { font-size: calc( 3.0 / 100 * var(--detail-SSd, 650px)); line-height: 1.4;  }
 
+/* W-6, the ruled substitution mark (Howell, bench 2026-07-27): a stood-in
+   verse speaks in italic; a small upright right-aligned footer names the
+   substitution in the reader's chosen language. Sizes in em ride the
+   verse's uniform size. */
+.detail-substituted--italic .detail-text-line {
+  font-style: italic;
+}
+.detail-sub-footer {
+  font-size: 0.75em; /* 1.5× the first sketch — Howell 2026-07-27 */
+  letter-spacing: 0.12em;
+  opacity: 0.65;
+  font-style: normal; /* the notice speaks upright under the italic verse */
+}
+
 /* RTL language support */
 .detail-text--arc[lang="he"],
 .detail-text--arc[lang="ar"] {

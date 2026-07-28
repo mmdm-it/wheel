@@ -33,7 +33,7 @@ async function fetchChapterData(chapterMeta) {
   return res.json();
 }
 
-function buildVerseItems(chapterData, { bookId, translation, chapterId }) {
+function buildVerseItems(chapterData, { bookId, translation, chapterId, externalFile = '' }) {
   const verses = chapterData?.verses || {};
   const entries = Object.entries(verses).sort((a, b) => {
     const as = Number.isFinite(a[1]?.seq) ? a[1].seq : parseInt(a[0], 10);
@@ -45,7 +45,13 @@ function buildVerseItems(chapterData, { bookId, translation, chapterId }) {
   return entries.map(([verseId, verse]) => {
     const seq = Number.isFinite(verse?.seq) ? verse.seq : parseInt(verseId, 10) || 0;
     const name = String(verseId);
-    const text = verse?.text?.[translation] || verse?.text?.NAB || '';
+    // Baked text is a BOOT CONVENIENCE, not truth: it carries the language
+    // of chain-build time, and detailFor may only use it when that language
+    // is still the live one (the 2026-07-28 stale-Latin bug: a language
+    // switch repainted the same baked Latin, unflagged). Strictly the
+    // requested translation — the old `|| verse.text.NAB` vestige was W-6's
+    // silent-fallback sin in one more costume.
+    const text = verse?.text?.[translation] || '';
     return {
       id: `${bookKey}_${chapterLabel}_${verseId}`,
       name,
@@ -57,7 +63,16 @@ function buildVerseItems(chapterData, { bookId, translation, chapterId }) {
       chapter: chapterLabel,
       book: bookKey,
       text,
-      translation
+      translation,
+      // The live-cache coordinates, same shape as the continuous chain's —
+      // without these the boot ring's verses could NEVER reach the verse
+      // cache, and every render fell to the baked text above.
+      meta: {
+        bookId: bookKey,
+        chapterId: chapterId || `${bookKey}:${chapterLabel}`,
+        verseKey: name,
+        externalFile
+      }
     };
   });
 }
@@ -135,7 +150,7 @@ export function buildBibleVerseChain(manifest, { initialVerseId = null } = {}) {
   return { items, selectedIndex, preserveOrder: true };
 }
 
-export async function buildBibleVerseCousinChain(manifest, { bookId, startChapterId, translation = 'NAB' } = {}) {
+export async function buildBibleVerseCousinChain(manifest, { bookId, startChapterId, translation = 'VUL' } = {}) {
   const found = findBibleBook(manifest, bookId);
   if (!found) return { items: [], selectedIndex: 0, preserveOrder: true };
   const { book } = found;
@@ -147,7 +162,10 @@ export async function buildBibleVerseCousinChain(manifest, { bookId, startChapte
     const [chapterKey, chapterMeta] = chapters[i];
     const chapterId = chapterMeta?.id || `${bookId}:${chapterKey}`;
     const chapterData = await fetchChapterData(chapterMeta);
-    const verseItems = buildVerseItems(chapterData, { bookId, translation, chapterId });
+    const verseItems = buildVerseItems(chapterData, {
+      bookId, translation, chapterId,
+      externalFile: chapterMeta?._external_file || chapterMeta?.external_file || ''
+    });
     verseItems.forEach((item, idx) => {
       item.order = chain.length + idx; // preserve cumulative spacing including gaps
     });
