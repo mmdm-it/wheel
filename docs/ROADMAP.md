@@ -15,6 +15,52 @@
   - v3.10.x Phase B.2 gateway capability + interim pyramid guarantee — done
   - v3.11.0 Phase B close + Phase C sprint C.1–C.5 (catch-up release, 2026-07-20) — done
 
+## Next Program: Strata Everywhere (surveyed 2026-07-27, Howell + Orville — sequenced, not yet started)
+
+The dimensions program resumes, generalized. The ruling insight (Howell):
+the instrument should have FEWER environments, not more — three transition
+grammars, each with one meaning:
+
+- **The wipe** changes WORLDS (volumes) — the biggest identity shift keeps
+  the most dramatic gesture.
+- **The z-axis** (strata) changes MODES OF ADDRESS within a world — voice,
+  ordering, vantage, interrogation.
+- Search's color-slam environment eventually RETIRES into a stratum.
+
+The formal frame (the Lisp night, 2026-07-27): a volume's render is a
+function; each stratum binds ONE parameter of it; the primary is the fully
+applied expression. Something deserves to be a stratum iff it can be
+written as one bound parameter — the orthogonality doctrine restated.
+Search is `quote` (the corpus's namespace presented as symbols; arrival is
+eval) — it may live on a plane but keeps its own dress.
+
+Sequenced steps, chores first (the ledger's W-queue outranks all of this):
+
+1. **Globe returns to dimensions-duty** the moment the catalog gains its
+   first stratum — hard deadline, one icon must not mean two verbs in one
+   volume. A new HOME icon for the catalog is found by then (Howell:
+   unhurried).
+2. **Catalog sort stratum** (secondary): choose the ring's ordering —
+   horsepower / displacement / year… For ordered criteria, SORTING IS
+   SEARCHING (the Premise applied: the wheel is the range slider). Gated
+   on the O-8 data audit. Forces strata to become adapter-declared.
+3. **Strike wheel becomes the tertiary plane**: "jump-to-value in the
+   chosen ordering" — under name-sort it is today's search verbatim; under
+   displacement-sort, striking 3-5-0 jumps the ring. The color-slam
+   retires; z-travel carries the mode shift. (Strata graduate from shallow
+   choosers to planes that carry a full instrument — the real lift.)
+   Scope doctrine survives: the search plane reads the LENS.
+4. **Calendar voice axis** (months/weekdays per language, O-9) — the cheap
+   second consumer that proves volume-agnosticism.
+5. **Design sessions with Howell (not before the above):** calendar
+   RECKONING axis (Gregorian/Julian/liturgical — same days, different
+   truths); catalog ERA-VANTAGE ("the catalog as it stood in 1937");
+   full catalog RE-SHELVING (last — it re-litigates navigation
+   invariants).
+6. **Overture depth-beat** (back burner, Howell content): the boot
+   linework learns one recede/return so newcomers meet the third gesture;
+   gate on `dimensionAvailable()`, no volume literals.
+
 ## Current Plan: Single-Stratum Program (decided 2026-07-13; six-phase scope ratified 2026-07-14)
 
 Goal: a smooth-running single-stratum app before dimension development
