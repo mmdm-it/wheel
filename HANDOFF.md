@@ -47,11 +47,13 @@ correctly becomes an "Em breve" placeholder (Wilbur's languages.json demotion
 already landed).
 
 ### W-5 · Stale `.gz` hazard in the build script
-**Raised:** 2026-07-23 by Wilbur · **Status: ACK**
-Durable fix goes in `precompress-json.mjs` (Orville's file): remove any `.gz`
-whose source is gone or under threshold, every run. Wilbur's wipe in
+**Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-27)**
+Durable fix landed in `precompress-json.mjs`: every run removes any `.gz`
+whose source is gone or under the 2048-byte floor, then rewrites survivors
+from the current source; the build line reports `removed N stale .gz` when
+it fires. **Verified by your recipe, both cases:** shrunk a JSON below 2048
+→ orphan removed; deleted a source outright → orphan removed. Your wipe in
 `sync-data-to-server.sh` stays as belt-and-suspenders.
-**Verify:** shrink a JSON below 2048 bytes, build, confirm no orphan `.gz`.
 
 ### W-6 · Silent translation fallback disguises data gaps as Latin
 **Raised:** 2026-07-23 by Wilbur · **Status: ACK — RULED, engine to implement**
@@ -315,6 +317,32 @@ door must see the WHOLE shelf speak that language — so the campaign is:
   today). A new-shape proposal gets a CONTRACT entry and I adapt the
   engine's readers to it. Ties into O-6 (nativeAbbrev) — one campaign
   could populate both.
+
+### O-8 · Catalog sort-field audit — the data behind the coming sort stratum
+**Raised:** 2026-07-27 by Orville · **Status: OPEN (no rush — gates a future
+engine feature, not current work)**
+Howell's ruling 2026-07-27 (the strata-everywhere program, see
+docs/ROADMAP.md): the catalog will grow a SECONDARY STRATUM choosing the
+ring's ordering — horsepower, displacement, year of introduction… — and
+the strike wheel later becomes "jump-to-value in the chosen ordering."
+A sort ring can only offer a criterion the data actually carries. **Your
+half, before the engine work starts:** audit model-level field coverage in
+the catalog — which of `year_introduced` / horsepower / displacement /
+(any other orderable spec in `data`) exist, on what fraction of the 1,000+
+models, and under what key names/units. Report coverage per candidate
+field; Howell picks the launch criteria from what's real. Sparse fields
+raise a design question (where do unknown-value models sit in a sorted
+ring?) — flag the counts, Howell rules.
+
+### O-9 · Calendar voice — month and weekday names per language
+**Raised:** 2026-07-27 by Orville · **Status: OPEN (small; sequenced after
+O-6/O-7)**
+Same program: the calendar becomes the second dimensions consumer — a
+language stratum for its month/weekday names (the engine's weekday/month
+readers already flow through one source each). Data ask is tiny: 12 month
+names + 7 weekday names per language, reusing O-7's language registry.
+No ruling yet on which languages; likely the same edition-bearing set
+first. Engine half rides the strata-everywhere program in the roadmap.
 
 - **Single-owner rule (Howell, 2026-07-26):** only ONE session open at a
   time; Howell closes a session before switching tabs. Adopted after
