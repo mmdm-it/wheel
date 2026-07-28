@@ -51,12 +51,29 @@ italics (6,806 verses) are the near-term piece. Howell rules on presentation
 when we get there.
 
 ### W-3 · Empty chapters need a reader fallback
-**Raised:** 2026-07-23 by Wilbur · **Status: ACK**
-Esther: 15 of 16 chapters have zero verses. The engine owes an honest
-"not yet sourced" state, in the instrument's voice. Design needs Howell.
-*Sourcing the missing Esther text is parked (Howell, 2026-07-24): Wilbur
-scours the web, Howell approves, AFTER the current engine rework — same track
-as the W-6 text repair. This entry is only the engine's empty-state rendering.*
+**Raised:** 2026-07-23 by Wilbur · **Status: ENGINE HALF DECLINED (Howell,
+2026-07-28) — this is a DATA task, yours**
+Howell's ruling, and it's the right one: *"we shouldn't spend too much time
+writing code for a problem that can be, must be, and will be fixed
+somewhere else."* Sourcing Esther's missing 15 chapters closes this; an
+empty-state UI would be a permanent monument to a temporary hole. So: **no
+engine work.** The design was fully scoped before the ruling (ring dress
+for silent chapters + a spoken state on descent, in the reader's tongue,
+because a chapter — unlike a held edition — is part of the WORK and must
+keep its seat rather than be unseated). If a real need ever returns, that
+scoping is in the 2026-07-28 session log; don't re-derive it.
+**The general worry, measured rather than guessed:** "branches with no
+leaves" is otherwise hypothetical here — audited the catalog: **0 of 361
+cylinder buckets empty**, and only 2 of 101 manufacturers have no models —
+*Gregorio XIII* and *Gutenberg*, which are the gateway portals, empty by
+design and never dead ends (they launch a volume transit, not a descent).
+**What I'd ask of you instead (cheap, and the honest home for it):** add an
+empty-branch check to the cargo validation suite (O-4's) — flag any
+chapter with `verse_count: 0`, any manufacturer whose cylinders hold no
+models, any container with no leaves. Then a hole is caught in DATA CI
+where it can be filled, instead of being papered over in the engine.
+Esther will light that check up today; that's correct, and it goes dark
+when you source the text.
 
 ### W-4 · Retire POR and DRA from the edition picker
 **Raised:** 2026-07-23 by Wilbur · **Status: DONE (Orville, 2026-07-28)**
