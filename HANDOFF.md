@@ -307,6 +307,120 @@ doesn't get designed around the wrong model):
   Howell earns only after a rights holder does.
 Non-code long poles (Howell's, not ours): legal entity, merchant account, EU
 VAT via OSS, contracts, reporting. Dossier: LICENSING.local.md.
+**Addendum (Wilbur, 2026-07-28 evening) — the strategy moved; read before
+building.** Howell's ruling after surveying the field: the primary offer to
+bishops' conferences is now the ENGINE (their text + their domain + our
+instrument — no rights negotiation in that deal), with cargo licensing kept
+only for commercial publishers (DLT, Crossway). Consequences for you:
+(1) "sell the instrument" argues for an INSTALLABLE artifact — Howell wants
+Android sooner; the affordable form is a TWA wrapper of the existing engine
+(Play Store presence, one codebase, doesn't fork you), ground-up native stays
+Phase F gated on feel-ceiling evidence; (2) an installed instrument implies
+OFFLINE, and offline copies are legally distributions — the PD corpus can
+ship offline freely today, but design any offline caching so licensed
+editions can be excluded per-edition; (3) B2B deployments are invoiced, not
+IAP — no store-commission constraint on the engine-licensing track. W-13's
+inert-payment-sheet demo is unchanged; it now demonstrates the CONSUMER
+track only.
+
+### W-14 · bibliacatholica.com — the Bible gets its own front door, then a wrapper
+**Raised:** 2026-07-28 by Wilbur · **Status: OPEN (Howell's three-step plan;
+engine half is yours, sequenced before the letters)**
+Howell's plan of record: (1) launch **bibliacatholica.com** serving the Bible
+volume as a standalone site — every PD Catholic edition, no marine catalog
+dressing, no Gutenberg easter-egg entry: the reader lands IN the Bible.
+(2) Then wrap it as a **TWA for the Play Store**, app name **"Biblia Rota"**
+(checked free; package it.mmdm.wheel already reserved to Howell). (3) Then
+the letters, pointing at both.
+**Your half, step 1:** whatever the bible deployment needs to stand alone at
+a root domain with its own identity (front door, branding, entry chain —
+Howell rules the design with you at the bench). The .com/.org/.net DNS and
+hosting are Howell+Wilbur's.
+**Your half, step 2:** TWA packaging (manifest, icons, asset-links) and — the
+differentiator — a **service worker for full offline**: Oremus, the biggest
+Catholic app on Play, is clunky and single-translation; a fully-offline
+seven-edition reader beats it structurally. Offline is LEGAL today because
+the deployed corpus is 100% PD (offline copies are distributions — fine for
+PD, and cache design should be able to exclude licensed editions later,
+per W-13 addendum).
+Not yours: the corpus completeness (Wilbur: Wujek next, rights pending),
+colophon data (Wilbur), letters (Wilbur+Howell).
+
+
+### W-15 · Substitution notices move to the registry (closes O-7's notice half)
+**Raised:** 2026-07-28 by Wilbur · **Status: DONE (Orville, 2026-07-29)**
+`substitutionNotice()` reads `languageEntry(id)?.substitutionNotice` first
+and keeps the engine map only as a belt — a newly imported language now
+arrives already speaking. Verified German, Finnish, Dutch. **I applied the
+same cure a third time, pre-emptively:** the reading VOCABULARY (the words
+for "chapter" and "verse", the era marks) was another engine-hardcoded list
+of nine tongues, so German read "Chapter 3" under a German shelf. The engine
+now reads `vocabulary` from the registry first — see O-11 for the data.
+Howell found it in the field: reading GERMAN, a stood-in verse showed its
+footer in ENGLISH. Cause is structural, not a typo — `SUBSTITUTION_NOTICES`
+in `dimension-bridge.js` is an engine-hardcoded map of 8 languages, and I had
+just added a 9th. **Every language I import from now on silently regresses to
+the English notice until you patch your map** — and Hungarian, Romanian,
+Czech, Dutch, Armenian, Korean and Japanese are queued behind German.
+**DONE on my side:** `languages.json` now carries **`substitutionNotice`** per
+language — the 8 already in your map (copied verbatim, so no wording changes)
+plus german: `lateinischer Text · Übersetzung nicht verfügbar`. Registry
+`_description` documents the field.
+**Your half:** have `substitutionNotice()` read `languageEntry(id)?.substitutionNotice`
+first and fall back to the hardcoded map (belt), so a new language arrives
+already speaking. This is the notice half of O-7, now unblocked.
+**Note on quality:** those 8 strings are engine-authored and mine is too —
+German is sound, but the Hebrew and Greek still want a native eye before they
+travel far, exactly as you flagged.
+
+### W-16 · Book and testament names freeze at their boot language
+**Raised:** 2026-07-29 by Wilbur · **Status: DONE (Orville, 2026-07-29)**
+Your diagnosis was exact, and there was a second freeze beneath it: the label
+formatter had hoisted its own lookup table OUTSIDE its returned closure, so
+even a live table could not have reached it. **The cure is deliberately not a
+rebuild.** `namesMap` now keeps a stable IDENTITY and has its CONTENTS
+replaced on a language change, so every consumer that reads it at call time —
+the parent button, the testaments builder, the pyramid's chapters,
+getBibleChapters — follows for free. The chain is never rebuilt and the
+reader keeps their exact place; only the words change. The locale rides along
+with the names, so the vocabulary AND the numerals travel too (`Capitulum
+III` → `Κεφάλαιον γʹ` → `פֶּּרֶק ג`). Regression guards added — this bug class
+has now bitten three times, so the tests build the formatter BEFORE the
+switch, exactly as boot does.
+**One thing your ten languages exposed the moment names started moving:** the
+child pyramid's label law vetoes a star whose name would collide with its
+neighbours', and Finnish's 30-character titles ("Evankeliumi Johanneksen
+mukaan") emptied the book sky to a single node. Two interim fixes shipped —
+languages without their own short forms borrow the LATIN abbreviations, and a
+tier-1 favorite keeps its full name only when it fits (≤18 chars, since the
+favorites rule was crowding out the books it meant to introduce). Both retire
+when O-12's data lands.
+Reported by Howell: switching language on the secondary stratum repaints the
+verse TEXT but leaves the book and testament names in the boot language.
+
+**Not a data gap — the data is complete.** All ten servable languages carry
+full `names` blocks in `translations.json`: 2 testaments, 8 sections, 67 books
+each. German `Offenbarung des Johannes`, Finnish `Ensimmäinen Mooseksen
+kirja`, Hungarian `Mózes I. könyve. Genezis`, Dutch `Apokalyps`. Verified.
+
+**The engine builds `namesMap` once at boot and never rebuilds it** —
+`src/main.js` ~1761-1774 derives it from the boot-time language, then passes
+it by value into `config.buildChain`, `config.createHandlers` and
+`makeLabelFormatter`, each of which captures it. Your own comment there names
+the deferral: *"boot-time derivations (namesMap, labels) still use the boot
+value — swapping those live is D.6's work, not D.2's."* Verse text survives
+the switch because it is fetched per-render; names do not because they were
+baked at construction.
+
+**Needs:** namesMap rederived when `dimensionBridge` reports a language
+change, and the chain/handlers/labels refreshed from it. How deep that repaint
+goes is yours to judge — the parent button, the magnifier and the pyramid all
+read names.
+**Verify:** boot in Latin, switch to German at a book ring, confirm
+`Offenbarung des Johannes` replaces `Apocalypsis` without a reload.
+**Note:** this now blocks a visible payoff. Eight languages are on the shelf
+and three more are queued, so the names campaign (O-7) has real content behind
+it — but a reader cannot see any of it until the switch repaints.
 
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**
@@ -574,6 +688,92 @@ first. Engine half rides the strata-everywhere program in the roadmap.
   Consistent with the ownership split, this is **read-and-report**: audit
   findings in `src/` become `→ ORVILLE` ledger entries, never direct edits.
   (The name was picked for the methodical brother; the role follows the name.)
+
+### O-11 · The reading vocabulary belongs in the registry
+**Raised:** 2026-07-29 by Orville · **Status: OPEN**
+The third instance of W-15's disease, found while fixing W-16. The words a
+reader sees around a citation — "chapter", "verse", and the era marks — live
+in an engine table (`VOCAB` in volume-configs) covering nine languages. Every
+tongue you import beyond them falls to ENGLISH: German currently reads
+"Chapter 3" under a fully German shelf.
+**DONE on my side:** the formatter reads `vocabulary` from the language
+registry first and keeps the engine table only as a belt, exactly as
+`substitutionNotice` now works.
+**Your half:** add `vocabulary` per language in `languages.json` —
+`{ chapter, verse, bc, ad }`. German `{ "chapter": "Kapitel", "verse": "Vers",
+"bc": "v. Chr.", "ad": "n. Chr." }`. The nine already in my table are Latin,
+Greek, Hebrew, French, Spanish, English, Italian, Portuguese, Russian —
+copy them verbatim if you like, they are engine-authored and want the same
+native eye you gave the notices.
+**Related and worth a thought when you get there:** `numerals` per language
+would finish the job — the engine currently *decides* that Latin gets Roman,
+Greek gets Greek and Hebrew gets Hebrew numerals with an `if` in the
+formatter. The converters are algorithms and belong to me; the CHOICE is
+yours. Howell's ruling 2026-07-28 is the standard: the engine holds no human
+language at all.
+
+### O-12 · Book abbreviations per language — the sky needs them
+**Raised:** 2026-07-29 by Orville · **Status: OPEN — now blocking, not polish**
+Only Latin carries `book_abbreviations` (67); every other tongue has zero.
+This stopped being cosmetic the moment your names started moving: the child
+pyramid seats stars under a LABEL LAW that vetoes a candidate whose name
+would collide with its neighbour's, so Finnish's titles — "Evankeliumi
+Johanneksen mukaan", 30 characters — emptied the entire book sky to a single
+node. Howell saw it on the phone within a minute of the names working.
+**Interim shipped, so nothing is broken today:** a language without its own
+short forms borrows the LATIN abbreviations (wayfinding, not scripture — the
+ring and magnifier still show the reader's full localized name), and a tier-1
+favorite keeps its full name only when it fits (≤18 chars). A Finnish sky is
+therefore a mix of *Psalmit* and *GN, EX, MT* — honest, but visibly interim.
+**Your half:** `book_abbreviations` for each language, 67 keys, keyed by book
+id exactly as Latin's are. These are compilation, not invention — standard
+scholarly forms exist for every one of these tongues (Finnish `1. Moos.`,
+German `1. Mose`, Hungarian `1Móz`, Dutch `Gen.`). Twelve languages × 67 is
+real work; it need not arrive all at once, and each language lights up the
+moment it lands.
+**Verify:** add Finnish's 67, boot Finnish, magnify a testament — the sky
+fills with Finnish short forms instead of borrowed Latin.
+
+### O-13 · Versification — the numbering keeps faith with the edition
+**Raised:** 2026-07-29 by Orville · **Status: OPEN (Howell ruled 2026-07-29)**
+**The ruling, which is a genuinely new feature and not a fix:** when a reader
+switches edition, the address must change with it. A Hebrew reader standing
+at Vulgate Malachi 4:1 should see the receded primary rotate to **verse 19**
+and its parent button become **MALACHI III** — because that is where those
+words live in the Masoretic reckoning. Howell: *"we put the dimension mode
+feature to its fullest use yet, visualizing versification."*
+**Why it is not a fourth stratum, and why the wheel must genuinely turn:**
+versification is not a choice — it is a property of the edition already
+chosen, so it applies automatically. And it moves more than labels: Hebrew
+Malachi has no chapter 4, so those verses join chapter 3, which means chapter
+MEMBERSHIP changes and the chain's cousin GAPS move with it. Merely
+relabelling would leave a chapter-boundary gap between canonical 3:18 and 4:1
+that does not exist in Hebrew — a lie told in the instrument's own grammar.
+So the chapter re-forms (a 24-verse Hebrew Malachi 3) and the reader's verse
+necessarily lands at seat 19 of 24 instead of 1 of 6. The rotation is the
+truth moving, not decoration.
+**Storage does not change:** canonical Vulgate-normalized ids stay the single
+address space for text, search and navigation. Reckoning is a DISPLAY and
+GROUPING layer over it, driven entirely by data — the engine will hold no
+offsets, exactly as it now holds no language.
+**Your half, two pieces:**
+1. **Restore the Hebrew of Malachi 4.** Those six verses (MT 3:19–24) are
+   absent from the corpus entirely — not misfiled in chapter 3, not present
+   unlabelled in chapter 4; dropped at import, the same shape as W-12's
+   phantom slots. Seat them in the canonical Malachi 4:1–6 slots (and the
+   Greek too, which is likewise missing). Until then a Hebrew reader there
+   sees flagged Latin, which is exactly what the feature must not show.
+2. **The mapping tables** — canonical↔MT and canonical↔LXX, verse-granular,
+   keyed off the `versification` field each edition already declares. The
+   Psalter is the deep water (the ±1 offset from Ps 9 onward, superscriptions
+   counted as verse 1 in Hebrew, and four merge seams where Vulgate 9 = MT
+   9+10, 113 = 114+115, and 116 and 147 merge the other way).
+**Build order agreed with Howell: Malachi first, as the proof** — one book,
+a pure six-verse offset, no boundary ambiguity — before the Psalms.
+**Then mine:** reckoning-aware chapter membership, gaps and labels from your
+tables, plus the animated re-seat that lands the reader on the same canonical
+verse at its new address. A bench session with Howell will settle how a
+chapters ring labels the four Psalter seams.
 
 ---
 

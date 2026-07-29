@@ -251,8 +251,29 @@ export function createDimensionBridge({ store, translationsMeta = null, language
 
     // The substituted-verse footer, in the READER'S chosen tongue (W-6,
     // mark #3): the person who asked for Russian is told in Russian.
+    // THE REGISTRY LEADS (W-15, 2026-07-29): Howell found a German verse
+    // wearing an English footer — the hardcoded map below was an engine
+    // list of 8 languages and Wilbur had just imported a 9th, so EVERY new
+    // tongue silently regressed to English until someone patched the engine.
+    // `languages.json` now carries `substitutionNotice` per language, so a
+    // newly imported language arrives already speaking. The map stays as a
+    // belt for a registry that hasn't loaded or lacks the field.
     substitutionNotice() {
-      return SUBSTITUTION_NOTICES[currentLanguage()] || SUBSTITUTION_NOTICES.english;
+      const lang = currentLanguage();
+      return languageEntry(lang)?.substitutionNotice
+        || SUBSTITUTION_NOTICES[lang]
+        || SUBSTITUTION_NOTICES.english;
+    },
+
+    // The reader's reading vocabulary — the words for "chapter" and "verse"
+    // and the era marks — from the REGISTRY (2026-07-29, the W-15 lesson
+    // generalized: the engine's own VOCAB table is another hardcoded list of
+    // 9 languages that every newly imported tongue silently falls out of,
+    // landing on English). Returns null until the registry carries the
+    // field, so the engine map stays the belt.
+    languageVocabulary(id = null) {
+      const entry = languageEntry(id || currentLanguage());
+      return entry?.vocabulary || null;
     },
 
     // W-1: how an edition's script RUNS — the registry's own declaration
