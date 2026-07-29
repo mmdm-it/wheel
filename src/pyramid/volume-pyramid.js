@@ -1,3 +1,10 @@
+// How long a FAVORITE's name may be before the pyramid abbreviates it anyway
+// (2026-07-29). The sky's label law vetoes a star whose name would collide
+// with its neighbours', so one very long favorite can empty the field. Latin's
+// longest tier-1 title is 9 characters and German's is 18; Finnish's reach 30.
+// Tunable at the bench — it is a typographic threshold, not a doctrine.
+const FAVORITE_FULL_NAME_MAX = 18;
+
 // Pyramid config builders are provided by volume-specific handlers; the host simply
 // invokes the supplied builder without branching on volume ids.
 export function createVolumePyramidConfig(options = {}) {
@@ -340,7 +347,12 @@ export function buildBiblePyramid({
       // Pyramid-only abbreviations (PG ebook #825): full book names are too
       // long for pyramid nodes. The ring and magnifier keep the full names —
       // this rename never travels past the pyramid (onClick matches by id).
+      // The reader's own short forms when the registry has them, else the
+      // Latin ones (2026-07-29): a language without abbreviations sent full
+      // names into the sky, and the label law below vetoed all but one star.
       const abbrevs = namesMap?.bookAbbreviations || null;
+      const fallbackAbbrevs = namesMap?.fallbackAbbreviations || null;
+      const shortFor = id => abbrevs?.[id] || fallbackAbbrevs?.[id] || null;
       // FAVORITES (Howell 2026-07-19): tier-1 prominence stars wear their
       // FULL names in the sky — the editorial "start here" — while everyone
       // else keeps the pyramid abbreviation.
@@ -353,9 +365,22 @@ export function buildBiblePyramid({
       // full chain.
       return getBibleBooksForTestament(selected?.id).items
         .filter(item => Boolean(item) && (!selected?.id || item.testamentId === selected.id))
-        .map(item => (
-          abbrevs?.[item.id] && item.prominence !== 1 ? { ...item, name: abbrevs[item.id] } : item
-        ));
+        .map(item => {
+          const short = shortFor(item.id);
+          if (!short) return item;
+          // A FAVORITE KEEPS ITS FULL NAME ONLY IF THE NAME FITS (2026-07-29).
+          // Howell's 2026-07-19 rule — tier-1 stars wear full names as the
+          // editorial "start here" — assumed Latin's compact titles (Genesis,
+          // Ioannes). In Finnish the same books are "Evankeliumi Johanneksen
+          // mukaan" (30 chars), and ONE such label vetoes every other seat
+          // under the label law: the sky collapsed to the single favorite,
+          // so the rule crowded out the very books it meant to introduce.
+          // Past the cap the favorite takes the abbreviation like everyone
+          // else — it is still magnified, so it still reads as featured.
+          const keepsFullName = item.prominence === 1
+            && String(item.name || '').length <= FAVORITE_FULL_NAME_MAX;
+          return keepsFullName ? item : { ...item, name: short };
+        });
     }
     if (mode === 'book') {
       return getBibleChapters(manifest, selected, namesMap, 'book');

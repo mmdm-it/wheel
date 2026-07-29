@@ -1758,19 +1758,54 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
   if (!playSplash) updateSearchButton();
   // The sticky dimension choice (survives reboots/gateways) wins over the
-  // volume's pinned default; boot-time derivations (namesMap, labels) still
-  // use the boot value — swapping those live is D.6's work, not D.2's.
+  // volume's pinned default.
   const activeTranslation = () => dimensionStore.getState().edition || options.translation || null;
   const translationId = activeTranslation();
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
   const resolvedLocale = options.locale || translationLang || 'english';
-  const localeNames = translationsMeta?.names?.[translationLang] || {};
-  const namesMap = {
-    books: localeNames.books || localeNames,
-    sections: localeNames.sections || {},
-    testaments: localeNames.testaments || {},
-    bookAbbreviations: localeNames.book_abbreviations || {}
+
+  // THE LIVE NAMES TABLE (W-16, 2026-07-29). This object was once derived
+  // once at boot and passed BY VALUE into buildChain, createHandlers and the
+  // label formatter — so book and testament names froze in whatever language
+  // the app booted in, while the verse text (fetched per render) followed the
+  // reader. Same bug CLASS as the stale-Latin verse: baked at construction
+  // instead of resolved at render.
+  // The cure is deliberately NOT a rebuild: the object's IDENTITY is stable
+  // and its CONTENTS are replaced on a language change. Every consumer that
+  // reads it at call time — the parent button, the testaments builder, the
+  // pyramid's chapters, getBibleChapters — therefore follows the reader for
+  // free, with no chain rebuild and no lost place in the book.
+  const namesMap = { books: {}, sections: {}, testaments: {}, bookAbbreviations: {}, locale: resolvedLocale };
+  const refreshNamesMap = () => {
+    const lang = translationsMeta?.translations?.[activeTranslation()]?.language
+      || options.locale || 'english';
+    const ln = translationsMeta?.names?.[lang] || {};
+    // Replace CONTENTS, never the reference — the whole point.
+    namesMap.books = ln.books || ln || {};
+    namesMap.sections = ln.sections || {};
+    namesMap.testaments = ln.testaments || {};
+    namesMap.bookAbbreviations = ln.book_abbreviations || {};
+    // THE PYRAMID'S SHORT FORMS, with Latin as the fallback (2026-07-29).
+    // Only Latin carries abbreviations today; every other tongue has none,
+    // and the child pyramid's LABEL LAW vetoes a star whose name would
+    // collide with its neighbour's — so a 37-character Finnish book name
+    // ("Ensimmäinen kirje tessalonikalaisille") collapsed the whole sky to
+    // the single guaranteed star. The Latin short forms (GN, EX) are the
+    // near-universal scholarly citation in Catholic use and the volume's own
+    // tongue, so they stand in until the registry carries each language's
+    // own. This is WAYFINDING, not scripture — the ring and magnifier still
+    // show the reader's full localized name.
+    namesMap.fallbackAbbreviations = translationsMeta?.names?.latin?.book_abbreviations || {};
+    // The locale rides along so the label formatter's vocabulary
+    // (Capitulum/Chapter/Глава) and NUMERAL system (Roman, Greek, Hebrew)
+    // travel with the names rather than freezing at boot.
+    namesMap.locale = lang;
+    // The reading vocabulary (chapter/verse/era words) from the registry
+    // when it carries them; null leaves the engine's own table in charge.
+    namesMap.vocabulary = dimensionBridge.languageVocabulary(lang);
+    return namesMap;
   };
+  refreshNamesMap();
 
   const translationName = translationsMeta?.translations?.[translationId]?.name || translationId;
 
@@ -2068,6 +2103,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   });
   dimensionBridge.onSettle(translation => {
     window.__wheelTapTrace?.push({ ev: 'dim-settle', tr: translation || '' });
+    // THE SHELF FOLLOWS THE READER (W-16): refresh the live names table
+    // FIRST, then repaint. The chain is not rebuilt and nothing moves — the
+    // reader keeps their exact place; only the words change, on the ring, in
+    // the magnifier, in the parent button and across the pyramid. Apocalypsis
+    // becomes Offenbarung des Johannes where it stands.
+    refreshNamesMap();
+    if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
+    if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
     renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
   });
   // Re-wrap the open detail the moment EB Garamond truly lands (Howell

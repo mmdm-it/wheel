@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { createInteractionStore, interactionEvents } from '../src/core/interaction-store.js';
 import { createDimensionBridge } from '../src/core/dimension-bridge.js';
 import { detailFor, createHandlers } from '../src/adapters/bible-adapter.js';
+import { volumeConfigs } from '../src/volume-configs.js';
 import { prefetchBibleVerses } from '../src/adapters/volume-helpers.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -285,5 +286,52 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
     // And in its OWN language the bake is still honest.
     const latin = detailFor(bootVerse, manifest2, { translation: 'VUL' });
     assert.match(latin.text, /principio/i);
+  });
+});
+
+// W-16 (2026-07-29): book and testament names froze at the boot language.
+// The names table is now LIVE — one stable reference whose CONTENTS are
+// replaced on a language change — so a formatter built once at boot still
+// follows the reader. This has been the same bug three times (stale verse
+// text, English substitution footers, frozen names), so it gets a guard:
+// the formatter must be built BEFORE the switch, exactly as bootVolume
+// builds it, and must still repaint after.
+describe('the shelf follows the reader — a live names table', () => {
+  const namesMap = {
+    books: { APOC: 'Apocalypsis' }, sections: {}, testaments: {},
+    bookAbbreviations: {}, locale: 'latin'
+  };
+  const fmt = volumeConfigs.bible.formatLabel({ level: 'book', locale: 'latin', namesMap });
+  const apoc = () => fmt({ item: { id: 'APOC', level: 'book', name: 'Apocalypsis' }, context: 'magnifier' });
+  const chapter3 = () => fmt({ item: { id: 'GENE:3', level: 'chapter', name: '3' }, context: 'magnifier' });
+
+  it('repaints book names when the table changes under a boot-built formatter', () => {
+    assert.equal(apoc(), 'Apocalypsis');
+    namesMap.books = { APOC: 'Offenbarung des Johannes' };
+    namesMap.locale = 'german';
+    assert.equal(apoc(), 'Offenbarung des Johannes',
+      'a formatter captured at boot must not freeze the names it reads');
+  });
+
+  it('carries the locale with the names — vocabulary and numerals follow', () => {
+    namesMap.books = { APOC: 'Apocalypsis' };
+    namesMap.locale = 'latin';
+    namesMap.vocabulary = null;
+    assert.equal(chapter3(), 'Capitulum III', 'Latin: Roman numerals');
+    namesMap.locale = 'greek';
+    assert.equal(chapter3(), 'Κεφάλαιον γʹ', 'Greek: Greek numerals');
+    namesMap.locale = 'russian';
+    assert.equal(chapter3(), 'Глава 3', 'Russian: Arabic numerals');
+  });
+
+  it('lets the registry supply vocabulary the engine table lacks', () => {
+    // The engine's VOCAB knows 9 languages; every import beyond them fell
+    // to English. The registry now leads (W-15's lesson generalized).
+    namesMap.locale = 'german';
+    namesMap.vocabulary = null;
+    assert.equal(chapter3(), 'Chapter 3', 'unknown to the engine table → English belt');
+    namesMap.vocabulary = { chapter: 'Kapitel', verse: 'Vers' };
+    assert.equal(chapter3(), 'Kapitel 3', 'registry vocabulary wins');
+    namesMap.vocabulary = null;
   });
 });

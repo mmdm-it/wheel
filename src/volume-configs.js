@@ -231,7 +231,17 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     portuguese: { chapter: 'Cap\u00edtulo',  verse: 'Vers\u00edculo', bc: 'a.C.',       ad: 'd.C.'         },
     russian:    { chapter: '\u0413\u043b\u0430\u0432\u0430',      verse: '\u0421\u0442\u0438\u0445',      bc: '\u0434\u043e \u043d.\u044d.',    ad: '\u043d.\u044d.'          }
   };
-  const t = key => VOCAB[locale]?.[key] ?? VOCAB.english[key] ?? key;
+  // LIVE locale (W-16): the names table carries the reader's current
+  // language, so the vocabulary and the numeral system below follow a
+  // language switch instead of freezing at the boot value. `locale` remains
+  // the fallback for volumes/tests that pass no live table.
+  const loc = () => namesMap?.locale || locale;
+  // The REGISTRY leads, the table above is the belt (2026-07-29): VOCAB is
+  // an engine list of 9 languages, so every newly imported tongue — German,
+  // Finnish, Dutch, Hungarian — fell out of it onto English ("Chapter 3"
+  // under a German shelf). `namesMap.vocabulary` carries the registry's own
+  // words when the data provides them.
+  const t = key => namesMap?.vocabulary?.[key] ?? VOCAB[loc()]?.[key] ?? VOCAB.english[key] ?? key;
 
   // ── Numeral converters ───────────────────────────────────────────────────────
   const toRoman = n => toRomanNumeral(n);
@@ -258,9 +268,10 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
   };
   const toNumeral = n => {
     if (!Number.isFinite(n)) return '';
-    if (locale === 'latin')  return toRoman(n);
-    if (locale === 'greek')  return toGreek(n);
-    if (locale === 'hebrew') return toHebrew(n);
+    const l = loc();
+    if (l === 'latin')  return toRoman(n);
+    if (l === 'greek')  return toGreek(n);
+    if (l === 'hebrew') return toHebrew(n);
     return String(n);
   };
 
@@ -295,9 +306,11 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     if (context === 'node') return numStr;
     return `${t('verse')} ${numStr}`.trim();
   };
-  const bookNames = namesMap?.books || namesMap;
   return ({ item, context }) => {
     if (!item) return '';
+    // Read the table INSIDE the closure (W-16): hoisting this out captured
+    // the boot language's books and no live update could reach it.
+    const bookNames = namesMap?.books || namesMap;
     const yearNumber = getYearNumber(item);
     if (Number.isFinite(yearNumber)) {
       if (context === 'node') return String(Math.abs(yearNumber));

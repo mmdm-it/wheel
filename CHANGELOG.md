@@ -1,5 +1,41 @@
 # Changelog
 
+## 3.26.0 — the shelf follows the reader (W-15 · W-16)
+- **Book and testament names now change with the language.** They had been
+  frozen at whatever tongue the app booted in: `namesMap` was derived once
+  and passed BY VALUE into the chain, the handlers and the label formatter,
+  each of which captured it — while the verse text, fetched per render,
+  followed the reader. The same bug CLASS as the stale-Latin verse. The
+  table now keeps a stable IDENTITY and has its CONTENTS replaced on a
+  language change, so every consumer that reads it at call time — parent
+  button, magnifier, pyramid, chapters — follows for free. **Nothing
+  rebuilds and the reader keeps their place**; only the words change.
+  (A second freeze lived in the formatter itself, which had hoisted its
+  lookup table outside its own closure — no live update could have reached
+  it.)
+- **The locale rides with the names**, so a switch re-casts the vocabulary
+  AND the numerals: `Capitulum III` in Latin, `Κεφάλαιον γʹ` in Greek,
+  `פֶּּרֶק ג` in Hebrew.
+- **Substitution notices come from the registry** (W-15): a German verse
+  was showing an English footer because the engine held a hardcoded map of
+  eight tongues and the ninth had just arrived. `languages.json` now
+  carries `substitutionNotice` per language; the engine map survives only
+  as a belt. Every future import arrives already speaking.
+- **The same cure, pre-emptively, for the reading vocabulary**: the words
+  for "chapter" and "verse" were a third hardcoded list that every new
+  language fell out of onto English. The engine now reads
+  `vocabulary` from the registry first (data pending).
+- **The book sky no longer collapses in a long-named tongue.** The child
+  pyramid's label law vetoes a star whose name would collide with its
+  neighbours', so Finnish's 30-character titles emptied the field to a
+  single node. Two fixes: languages without their own short forms borrow
+  the LATIN abbreviations (wayfinding, not scripture — the ring and
+  magnifier keep the reader's full names), and a tier-1 FAVORITE keeps its
+  full name only if that name fits (≤18 chars). The favorites rule was
+  crowding out the very books it meant to introduce.
+
+## 3.26.0 — the shelf follows the reader
+
 ## 3.25.1 — Hebrew reads right to left (W-1)
 - **The Hebrew finally runs the right way.** The `[lang="he"]` RTL rules
   had been in the stylesheet since the D-era, but nothing ever set that
