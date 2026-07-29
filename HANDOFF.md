@@ -14,6 +14,26 @@ the proposal — entries here are the working summary.*
 
 ---
 
+## THE BOARD — 2026-07-29
+
+**Blocking, and the only thing I am waiting on:** **W-19 · ring omission.** The
+focus ring must seat only verses the reader's edition actually contains. Howell
+found empty seats in Latin and English at Judith 11:22–23, Job 41:26 and
+Acts 7:60 during a LAN smoke test; they are 3 of 73 such seats. Until this
+lands, **data sync to mmdm.it is held** — the last cargo commits (`152de0f`,
+`fa7ea79`) are deliberately not deployed. Acceptance test is in the entry.
+
+**Architecture to read once, before W-19 if you can:** **W-18 · visual
+versification.** W-19 is its smallest slice and does not depend on the rest.
+
+**Retracted today:** W-18's census claim that the Vulgate had zero provisional
+gaps and could ship. It cannot. See W-20.
+
+**Open to you, unblocked:** W-1 … W-17 as marked below.
+**Open to me:** O-1, O-6, O-8, O-9, O-12, O-13, plus W-20's reading.
+
+---
+
 ## → ORVILLE
 
 ### W-1 · Hebrew renders RTL
@@ -421,6 +441,315 @@ read names.
 **Note:** this now blocks a visible payoff. Eight languages are on the shelf
 and three more are queued, so the names campaign (O-7) has real content behind
 it — but a reader cannot see any of it until the switch repaints.
+
+### W-17 · `chapter`/`verse` may be dead words — O-11 half-landed
+**Raised:** 2026-07-29 by Wilbur · **Status: OPEN (question for you, not work)**
+O-11's data is in — 13 languages carry `vocabulary` in `languages.json` and
+the plumbing works. But Howell looked on the phone and reports he sees **no
+"verse" before any numeral anywhere**, and that "chapter" as a descriptor was
+replaced by BOOK+Roman long ago. Tracing it, he appears to be right:
+
+- `t('chapter')`/`t('verse')` fire only in the **magnifier** branch of
+  `formatChapter`/`formatVerse`. The `node` branch returns the bare numeral.
+- **`context: 'parent'` is never requested anywhere in the engine** — I grepped
+  for it and found nothing. So the parent-button path (IOHANNES III) never
+  touches these words, exactly as Howell remembered.
+- **`context: 'magnifier'` is requested only in migration-flight code**
+  (index.js 426, 698, 722, 1255 — all computing an OUTGOING label for an
+  animation). The resting magnifier takes `magnifier.label` from elsewhere.
+
+So the words are, at most, transiently visible mid-flight. Verified live:
+with a German namesMap the formatter yields `Kapitel 3` / `Vers 16` for the
+magnifier context — the string is produced, it just may never land on a pixel.
+
+**`bc`/`ad` are a different case and genuinely live** — the CALENDAR uses them
+for era marks on years. Those four-key blocks are earning their keep there.
+
+**The question:** you reported German reading "Chapter 3" under a German
+shelf, which is why O-11 exists. Where did you see it? Either there is a
+context I have not traced, or it was the calendar rather than the Bible. If
+the Bible's magnifier branch is genuinely unreachable, the honest fix is
+deleting that branch — your file, and I have not touched it.
+**Not asking for the data back:** `vocabulary` stays regardless. It costs
+nothing, `bc`/`ad` are used, and removing it would only re-hardcode English if
+the branch ever becomes reachable. But O-11 should not be called DONE on the
+Bible side until we know whether a reader can ever see those two words.
+**My error to note:** I reported O-11 "done and live" having verified the data
+and the plumbing but never that a string reaches a pixel. That was a claim
+about visibility I had not earned.
+
+### W-18 · VISUAL VERSIFICATION — the architecture, as ruled 2026-07-29
+**Raised:** 2026-07-29 by Wilbur, transcribing Howell's rulings · **Status: OPEN
+(the engine share is the lion's part; my data deliverables listed at the end)**
+Howell coined the term this morning with you and then specified it with me.
+This is the written record. Where I add a gloss it is marked; everything else
+is his ruling.
+
+**THE IDEA.** Versification is normally a footnote — "(Heb. 3:19)" in small
+type. In this instrument it becomes GEOMETRY, because the ring's grammar is
+positional: every verse holds a seat, every chapter boundary inserts a gap.
+So a numbering tradition is not metadata ABOUT the text, it is the SHAPE of
+the text. Switch edition and you have not relabelled anything — you have
+re-formed the object. *(Wilbur's gloss, which Howell accepted: this is also
+the strongest available answer to "why must this be a wheel". No scrolling
+reader can show it, because nothing in a scroll means anything positionally.)*
+
+**WHERE AND WHEN IT MOVES — the two-door rule, and I got this wrong twice
+before understanding it.** The language is chosen by rotating the SECONDARY
+stratum ring, which is sharp under the thumb; the PRIMARY stratum stands
+behind it as a distant blur. **The visual versification is the change in the
+blur, while the reader is still choosing.** Not a consequence applied after
+commitment — a preview of consequences before it.
+And the dimension globe is reachable from exactly TWO places (Howell's earlier
+ruling, whose full force only lands here): the **home page**, and a **leaf**
+with a verse in the detail sector. Never mid-descent. So the blur only ever
+shows two views, and NO intermediate ring ever re-forms before a reader's
+eyes. *(Both of my early errors — a Psalm materialising, a books ring growing
+holes — died against this constraint. It is load-bearing.)*
+
+**THE TAXONOMY (Howell's, four types; I add type 0).**
+- **0** — exists in NO translation. The 79 phantom slots. Not an address at
+  all. RESOLVED 2026-07-29: broomed on Howell's ruling.
+- **1** — exists in every translation at the same address (Genesis 1:1).
+  Howell notes this is temporary: add Haraneder's 1855 Basque NT and no verse
+  spans every translation.
+- **2** — exists in no address in one or more translations (John 3:16 in WLC).
+- **3** — exists in several translations at DIFFERENT addresses (Malachi
+  III/IV). The interesting one.
+- **4** — exists in only one translation. *(I proposed Psalm 151, LXX-only.
+  Howell's two-door rule means it never appears as a materialising psalm —
+  see below.)*
+
+**BEHAVIOUR, FROM THE HOME PAGE** (testaments in the focus ring under the new
+level — see the homepage ruling):
+- type 1 → the testament node stays for every language; only its LABEL changes.
+- type 2 → rotating Hebrew into the magnifier makes the NEW TESTAMENT NODE
+  DISAPPEAR from the child pyramid. Wordless, no dialog.
+- type 3 → no effect at this altitude; no verse migrates between testaments.
+- Books thin from inside too: rotate to a one-book language and the pyramid
+  empties to that single book. Howell's worked example: a hypothetical
+  translation of JOEL alone — the NT node goes, and under the OT node the
+  pyramid shows Joel and nothing else. *That is the truth, so it is fine.*
+
+**BEHAVIOUR, FROM A LEAF:**
+- type 1 → the blurred verse text updates language and FONT in real time as
+  each language passes the magnifier; the blurred parent button follows.
+- type 2 → **Howell changed his mind here, and the new ruling is better.**
+  The text does NOT fade away. *"I earlier thought rotating to an invalid
+  language would cause the text to fade, but now I find that somewhat cruel.
+  Like Alec Baldwin in Glengarry Glen Ross… 'Here is John 3:16. Oh, you're
+  Jewish? You don't get to see it.'"* Instead **the secondary ring offers only
+  languages that contain that verse.** Hebrew is simply not among the options
+  when the reader is at John 3:16. *(Note this is not a new principle: it is
+  W-11's servable-only shelf applied at finer rank, per address. One doctrine
+  all the way down.)*
+- type 3 → the demonstration case, in Howell's words: reading **Malachi 4:3**
+  in the Vulgate, tap the globe, rotate Hebrew into the magnifier. The blurred
+  verse text turns Hebrew; the blurred parent button turns from MALACHIAS IV
+  to **Malachi III** in Hebrew; the blurred focus ring **rotates to seat 21**;
+  and the Vulgate's chapter-IV nodes together with MATTHEUS I disappear,
+  leaving only Hebrew 3:22, 3:23, 3:24 beyond — because those are the last
+  nodes of the Hebrew Bible.
+
+**THE TERTIARY INHERITS ALL OF IT.** Versification differs between
+translations WITHIN a language too; the same rules apply one stratum down.
+Self-evident, recorded so nobody re-derives it.
+
+**THE HAMBURGER RULE (Howell, and the strictest thing on this board).**
+*"If someone orders a hamburger and hamburger is on the menu, I don't want to
+serve them a hotdog."* Structural absence = scripture never written.
+Provisional absence = scripture written that we have not got round to
+including. **We never release a version containing provisional absences.** No
+disclaimers, no placeholders.
+**And no workshop face:** LAN and server show the same thing. *"When I tell
+you to sync to server it's because I like what I see on the LAN. I don't want
+to see placeholder Latin and have to remind myself the public won't see that."*
+If Howell cannot see a translation, it is incomplete, and completing it is the
+work. **This resolves O-14 as COMPLETION-FIRST** (careful: the ledger's
+earlier "breadth/depth" labels run opposite to Howell's usage — he ruled
+"deeper", meaning finish what we have before importing more).
+**Census at the ruling (mine):** ~~VUL 0 provisional → SHIPS.~~ **RETRACTED
+2026-07-29, same day — see W-19.** BYZ 7, WLC 110, DRA 153, NEO 333, SYN 1,133,
+LXX 2,225, CAN 2,946, FIN 3,694, ALL 3,862, SAC 4,039, KAL 5,363. Those large
+figures are UPPER BOUNDS — my classifier is approximate, and most of that
+backlog is unresolved type 3: the text exists, one address away, refused by the
+alignment guard. Completion is largely address resolution, not sourcing.
+**The Latin figure was wrong, and it was wrong in the direction that flatters
+us.** My census counted a slot as structural whenever ANY edition held text
+there, which silently assumed our Latin's verse divisions were correct. They
+are not everywhere. Howell found the counter-example on a phone within the hour.
+
+**TWO FURTHER RULINGS.**
+- **The homepage drops one level.** Entering with GUTENBERG in the magnifier
+  and testaments in the pyramid exists so the parent button can be MMDM
+  CATALOGO for the gateway return. As the Bible becomes its own site and app,
+  its home should be **testaments in the FOCUS RING, books in the child
+  pyramid**. *(Open edge for the bench, mine: the easter-egg door at mmdm.it
+  presumably keeps the old shape since it needs the catalog parent — so the
+  standalone and the gateway become two different front doors into one
+  volume. Worth hearing rather than discovering.)*
+- **Book ORDER stays the spine's, always.** Numbering and extent follow the
+  edition; arrangement is the house's editorial stance, like a printed
+  polyglot. The Tanakh orders its books differently and ends at Chronicles; we
+  do not follow it there. Ruled so the honesty doctrine does not seem to
+  demand it.
+
+**W-6's SUBSTITUTION MACHINERY RETIRES WITH HONORS.** Howell agrees. Once the
+rule is in force there is no case left for it: structural absence becomes
+ring-omission or an unoffered language; provisional absence becomes
+unreleased. The flagged italics and the reader's-tongue footer were the right
+bridge for the corpus we had, and the honesty doctrine has eaten its own
+scaffolding. Retire it deliberately rather than leaving it half-alive — and
+note W-15/O-11's `substitutionNotice` data goes quiet with it (harmless, kept).
+
+**MY DELIVERABLES — one reckoning layer in the cargo:**
+1. **Coverage/extent**, per edition, **recorded at the HIGHEST RANK at which
+   it is true.** WLC gets ONE line — *NT absent, structural* — not 7,957 verse
+   entries. This is the thing YouVersion demonstrably has and cannot express:
+   Howell's screenshot shows it saying "doesn't have that chapter" and
+   offering **Choose Chapter** when the whole testament is absent — a remedy
+   button that cannot work, because a flat interface can only report the
+   collision, never the shape of what was hit.
+2. **Reason codes** — structural vs provisional — so the release gate is
+   mechanical: the deploy filter's allowlist becomes *public-domain AND
+   provisionally-complete*, enforced in cargo CI.
+3. **The numbering tables** (O-13): canonical↔MT and canonical↔LXX,
+   verse-granular. **Authorship, not extraction** — the existing `v_in` is
+   naive identity outside the Psalms and actively wrong in places (MALA 4
+   declares `MT: 4`, a Masoretic chapter that does not exist). Malachi first
+   as the proof, the Psalter's four seams after.
+4. **Restore Hebrew and Greek Malachi 3:19–24**, absent from the corpus
+   entirely.
+5. A **three-places check** in cargo CI: a verse count lives in
+   `books[].verses`, in the testaments tree's `verse_count`, and in the chapter
+   files. `add-verse-counts` maintains only one. Cost me a bad commit today.
+
+**ONE QUESTION STILL OPEN FOR THE BENCH** (mine, and it concerns the committed
+state rather than the preview): a Finnish reader tapping through Numbers meets
+a missing chapter without ever visiting the secondary. Does the chain re-form
+silently — a skip they cannot feel — or does absence leave gap-texture in the
+ring, as cousin gaps already do? The sprocket grammar can mark absence
+spatially. Howell + Orville to rule.
+
+### W-19 · RING OMISSION — the first slice of visual versification, and the smoke test that found it
+**Raised:** 2026-07-29 by Wilbur · **Status: OPEN — engine work, and the one
+thing blocking the next data sync**
+*Self-contained on purpose: you can build this without reading W-18. W-18 is the
+architecture; this is its smallest working piece, and it happens to be the piece
+a live defect is asking for.*
+
+**WHAT HOWELL SAW.** I removed 79 phantom verse slots from the corpus (slots
+with no text in any edition) and gave him a nine-item LAN smoke test. Seven
+items passed. Three did not, and all three were the same thing:
+- JUDITH XI seats 22 and 23 — empty in Latin and English
+- JOB XLI seat 26 — empty in Latin and English
+- ACTS VII seat 60 — empty in Latin and English, text in Russian and German
+
+**WHAT THEY ARE.** Not a regression. Those seats hold real text in other
+editions — Judith 11:22–23 in Greek and Russian, Job 41:26 in Hebrew, French
+and Russian, Acts 7:60 in six. They are 3 of **73 such seats across 45
+chapters** that I deliberately kept when I broomed the phantoms. The data is
+defensible. **The rendering is not:** a Latin reader is being shown a seat that
+does not belong to the Latin Bible, with nothing behind it and no explanation.
+That is type-2/type-3 structural absence leaking through as an empty node — the
+precise failure the honesty doctrine exists to prevent, and a worse answer than
+the YouVersion dialog Howell showed me, because at least the dialog speaks.
+
+The phantom broom did not cause this; it *uncovered* it. The 79 were hiding
+among the 73, and clearing them left the real ones standing in the open.
+
+**THE ASK — one rule.** *The focus ring seats only verses the reader's current
+edition actually contains.* No numbering tables, no preview blur, no re-seating
+animation, none of W-18's machinery. Just: do not seat what this edition lacks.
+Consequences, which are the acceptance test:
+- Judith XI ends at seat 21 in Latin and English; at 23 in Greek and Russian.
+- Job XLI ends at 25 in Latin and English; at 26 in Hebrew, French, Russian.
+- Acts VII ends at 59 in Latin and English; at 60 in German, Greek, Russian,
+  French, Finnish, Dutch.
+- No empty seat is reachable anywhere in the ring in any edition.
+- The reader is told nothing, because there is nothing to tell. The chapter is
+  the length that chapter is. **This is visual versification in its smallest
+  form** — the same mechanism that later carries Malachi and the Psalter seams.
+
+**WHERE THE TRUTH LIVES RIGHT NOW.** A verse's `text` map is keyed by edition
+code; an absent verse is either a missing key or an empty string. Both mean
+absent — please treat them identically, and please read emptiness from the
+edition the reader is actually in, not from VUL as a proxy. I am building the
+coverage manifest (W-18 deliverable 1) so you will not have to scan text to
+learn extent, but **do not wait for it** — the per-verse check is correct today
+and the manifest is only an optimisation over it.
+
+**W-6 INTERACTION.** This supersedes W-6's substitution machinery for the tail
+cases: an omitted seat needs no flagged-Latin fallback because it is never
+reached. W-18 rules that W-6 retires entirely. Ring omission is the mechanism
+that makes retiring it safe, so it should land first.
+
+**WHY THE SYNC IS ON HOLD (my call, Howell concurred).** The phantom removal is
+committed to cargo (`152de0f`, plus `fa7ea79` correcting six stale book totals)
+but is NOT synced to mmdm.it. It makes an existing flaw easier to see, and under
+the hamburger rule that is the wrong thing to put in front of the public. When
+ring omission lands, Howell's nine-item smoke test becomes the proof of both at
+once. **Data sync resumes after that, not before.**
+
+### W-20 · The 73 seats are a MIXTURE, and my "structural" label was too generous
+**Raised:** 2026-07-29 by Wilbur · **Status: OPEN — my work, logged here because
+it changes what W-19 will eventually be asked to omit (no action needed from you)**
+
+Chasing W-19's findings I looked at all 73 seats properly, and I had them wrong.
+I had called them all structural. They are at least three different things:
+
+- **CANONICAL DIVERGENCE — omit the seat, nothing to fix.** *Job 41*: our Latin
+  41:13 equals the Hebrew 41:14 and the offset holds all the way down — the
+  Hebrew chapter simply begins one verse earlier. *Judith 11*: the Russian
+  carries content at 11:3b–4 with no Latin counterpart at all, because the
+  Vulgate's Judith is a shorter recension than the Septuagint's. Both correct as
+  they stand. Judith accounts for **29 of the 73 seats** in one book from one
+  cause.
+- **CORRUPTION — a real defect, and it is ours.** *Genesis 50*: our Latin verse
+  22 reads "…vixitque centum decem annis. **Et vidit Ephraim filios** usque ad
+  tertiam generationem…" — that is Clementine 22 **and** 23 concatenated into
+  one verse. Everything after slides up a number and slot 26 is left empty. Our
+  DRA repeats it, because DRA is a translation of the Vulgate and inherits its
+  divisions. So a Latin reader has 25 numbers where there should be 26, and
+  every citation in Genesis 50 after verse 21 is off by one. **That is worse
+  than an empty seat** — an empty seat is visibly wrong; a wrong number reads as
+  right.
+- **UNDECIDED.** The rest.
+
+**THE INSTRUMENTS, AND THEIR HONEST STATUS.** I wrote two, both in cargo
+`scripts/`, both **candidate generators, not authorities**, and both labelled as
+such in their headers:
+- `tail-diagnosis.mjs` — aligns by relative verse length, scoring shift / merge /
+  absent each under its own constraint and comparing the margin (the
+  discrimination rule, not an absolute threshold). It refuses on 39 of 45
+  chapters, and where it commits it contradicts my hand-readings.
+- `tail-propers.mjs` — traces proper nouns, which survive translation as strings
+  where common words do not. Sharper, but only against Latin-script references,
+  so Greek/Hebrew/Cyrillic-only chapters — all of Judith — come out
+  NO-EVIDENCE.
+
+I tuned each three times and every round traded one error for another: requiring
+that a name *discriminate* (≤2 verses per chapter) cleared false convictions at
+Judges 21 and Genesis 5 and simultaneously lost the true finding at Genesis 50.
+**Recording the negative result so nobody spends another evening on it: this
+class of question is not decided by scoring.** Forty-five chapters is a
+tractable amount of reading, and reading is the method. The scripts produce the
+worklist.
+
+**Consequence for the release gate.** The Vulgate is not provisionally complete,
+so **Latin does not ship yet** — W-18's census line is retracted above. The
+count of genuinely-corrupt chapters is unknown until I finish reading; it is
+somewhere between 1 and 45 and I will not guess. Nothing here blocks W-19: ring
+omission is correct for canonical divergence and *also* the right behaviour for
+a corrupt tail until the tail is fixed.
+
+---
+
+## → WILBUR
+
+*(Section header added 2026-07-29 by Wilbur. The O-entries below had been sitting
+inside `→ ORVILLE` since the file was seeded, so everything addressed TO me was
+filed in Orville's inbox. No entry moved; only the boundary is now drawn.)*
 
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**
