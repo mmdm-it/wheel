@@ -775,6 +775,39 @@ tables, plus the animated re-seat that lands the reader on the same canonical
 verse at its new address. A bench session with Howell will settle how a
 chapters ring labels the four Psalter seams.
 
+### O-14 · Breadth or depth? — the sequencing question before the next import
+**Raised:** 2026-07-29 by Orville · **Status: OPEN — Howell's call, recorded
+here so it isn't decided by default**
+You ended your last session ready to import Romanian, or to hold. That
+decision changed this morning, so here is the tradeoff in one place.
+
+**A complete language now needs FOUR data pieces, and imports currently
+supply two:**
+
+| piece | status |
+|---|---|
+| `names` — testaments, sections, 67 books | ✅ you already author these |
+| `substitutionNotice` | ✅ you already author these |
+| `vocabulary` — chapter/verse/era words (O-11) | ❌ new |
+| `book_abbreviations` — 67 short forms (O-12) | ❌ new |
+
+**DEPTH (keep importing):** the shelf grows, which is the visible win, and
+nothing is broken — an incomplete language falls back gracefully now (English
+vocabulary, borrowed Latin abbreviations). But each import adds to a backlog
+that is already the largest item on your board, and every language then needs
+three separate visits instead of one.
+
+**BREADTH (backfill first):** bring the ten existing tongues to complete, then
+resume importing with a four-piece recipe so each new language lands finished
+in a single pass. Slower to show new flags on the shelf; cheaper per language
+forever after.
+
+*Orville's lean is BREADTH — mostly because O-12 is the one that visibly
+degrades (a Finnish sky of borrowed Latin abbreviations reads as unfinished
+in a way a missing vocabulary word does not). But the counter-argument is
+real: more tongues on the shelf is the better story, and the fallbacks hold.*
+**Howell rules; neither of us should decide it by momentum.**
+
 ---
 
 ## ARCHIVE
