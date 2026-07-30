@@ -1286,29 +1286,15 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   if (!payload) return;
   window.__wheelTapTrace?.push({
     ev: 'render-payload', tr: translation || '',
-    sub: payload.substituted?.edition || '',
     txt: String(payload.text || '').slice(0, 14)
   });
 
-  // A substituted verse's footer speaks the reader's CHOSEN language (the
-  // secondary stratum's selection), not the substitute's — W-6, the ruled
-  // mark (the ?w6mark bench scaffold retired with the ruling, 2026-07-28).
-  if (payload?.type === 'text' && payload.substituted) {
-    payload.substituted.notice = dimensionBridge.substitutionNotice();
-    // The notice speaks the READER'S language, so it carries that language's
-    // script and direction — a Hebrew notice must run RTL even though the
-    // Latin verse above it runs LTR (W-1 + W-6 meeting).
-    const readerEdition = dimensionBridge.getSelection().translation;
-    payload.substituted.lang = dimensionBridge.editionLang(readerEdition);
-    payload.substituted.dir = dimensionBridge.editionDirection(readerEdition);
-  }
-  // W-1: the text is stamped with the script it is ACTUALLY in — the
-  // substituting edition's when the Vulgate stands in, not the one the
-  // reader asked for (Hebrew requested, Latin served ⇒ the page reads LTR).
+  // W-1: the text is stamped with the script it is in. With substitution
+  // retired (NO ASTERISKS, 2026-07-30) the text is always the reader's own
+  // edition, so there is only one script it can be.
   if (payload?.type === 'text' && payload.uniform) {
-    const shown = payload.substituted?.edition || translation || null;
-    payload.dir = dimensionBridge.editionDirection(shown);
-    payload.lang = dimensionBridge.editionLang(shown);
+    payload.dir = dimensionBridge.editionDirection(translation);
+    payload.lang = dimensionBridge.editionLang(translation);
   }
 
   const plugin = detailRegistry.getPlugin(payload);
@@ -1854,7 +1840,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const cr = document.getElementById('copyright-notice');
     if (cr) cr.style.opacity = '0';
   }
-  const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
+  let { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
   dimensionBridge.setTranslationsMeta(translationsMeta);
@@ -1888,8 +1874,29 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
   if (!playSplash) updateSearchButton();
   // The sticky dimension choice (survives reboots/gateways) wins over the
-  // volume's pinned default.
-  const activeTranslation = () => dimensionStore.getState().edition || options.translation || null;
+  // volume's pinned default — but the pinned default is only honoured if the
+  // data DECLARES that edition complete (NO ASTERISKS, Howell 2026-07-30).
+  // Without this the volume kept reading its hardcoded Vulgate even with
+  // nothing certified: the shelf went dark while the reader carried on, which
+  // is precisely the asterisk the ruling forbids. With nothing complete there
+  // is no active edition, so the detail sector has no text to render — the
+  // volume offers nothing, which is the honest state until an edition is
+  // certified.
+  // THE VOLUME SHOWS ONLY WHAT ITS OFFERED EDITIONS CONTAIN (Howell
+  // 2026-07-30). A volume may declare a pruner; the host stays agnostic about
+  // what the structure means. With nothing offered, the pruner empties the
+  // volume, so the rings and pyramid have no testaments, books, chapters or
+  // verses to show — not a shell of names with no words behind them.
+  if (typeof config.pruneToOffered === 'function') {
+    manifest = config.pruneToOffered(manifest, dimensionBridge.offeredEditions());
+    root = config.extractRoot(manifest) || root;
+  }
+  const editionIsOffered = id => Boolean(id) && dimensionBridge.isServableEdition(id);
+  const activeTranslation = () => {
+    const chosen = dimensionStore.getState().edition;
+    if (chosen) return chosen;                       // already vetted on selection
+    return editionIsOffered(options.translation) ? options.translation : null;
+  };
   const translationId = activeTranslation();
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
   const resolvedLocale = options.locale || translationLang || 'english';

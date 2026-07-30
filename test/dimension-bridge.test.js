@@ -46,7 +46,7 @@ describe('dimension bridge — selection and defaults', () => {
     const meta = { translations: {
       NABX: { language: 'english', name: 'Pending', pendingLicense: true },
       SOONX: { language: 'english', name: 'Unsourced', comingSoon: true },
-      DRA: { language: 'english', name: 'Douay-Rheims' }
+      DRA: { language: 'english', name: 'Douay-Rheims', complete: true }
     } };
     const bridge = createDimensionBridge({ store, translationsMeta: meta });
     assert.equal(bridge.setLanguage('english'), true);
@@ -62,7 +62,7 @@ describe('dimension bridge — selection and defaults', () => {
     // edition's name. The shelf shows; the reader keeps reading.
     const store = createInteractionStore();
     const meta = { translations: {
-      VUL: { language: 'latin', name: 'Vulgate' },
+      VUL: { language: 'latin', name: 'Vulgate', complete: true },
       A: { language: 'italian', name: 'Held A', pendingLicense: true },
       B: { language: 'italian', name: 'Held B', pendingLicense: true }
     } };
@@ -80,7 +80,7 @@ describe('dimension bridge — selection and defaults', () => {
     // nothing servable shows its native "coming soon" placeholder.
     const store = createInteractionStore();
     const meta = { translations: {
-      VUL: { language: 'latin', name: 'Vulgate' },
+      VUL: { language: 'latin', name: 'Vulgate', complete: true },
       SOON: { language: 'latin', name: 'Unsourced', comingSoon: true },
       CEIX: { language: 'italian', name: 'Held', nativeName: 'La Sacra Bibbia CEI', pendingLicense: true }
     } };
@@ -109,7 +109,7 @@ describe('dimension bridge — selection and defaults', () => {
     } });
     assert.equal(withNative.translationAbbrev('LXX'), 'Οʹ', 'Greek abbreviation, not the Latin key');
     const withoutNative = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
-      translations: { BYZ: { language: 'greek', name: 'Byzantine' } }
+      translations: { BYZ: { language: 'greek', name: 'Byzantine', complete: true } }
     } });
     assert.equal(withoutNative.translationAbbrev('BYZ'), 'BYZ', 'falls back to the key, no regression');
   });
@@ -121,7 +121,7 @@ describe('dimension bridge — selection and defaults', () => {
     const bridge = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
       translations: {
         WLC: { language: 'hebrew', name: 'Leningrad Codex', direction: 'rtl' },
-        VUL: { language: 'latin', name: 'Vulgate' },
+        VUL: { language: 'latin', name: 'Vulgate', complete: true },
         CUSTOM: { language: 'greek', name: 'Override', lang: 'grc' }
       }
     } });
@@ -238,21 +238,28 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
     assert.notEqual(latin.text, english.text, 'the swap genuinely changes the content');
   });
 
-  it('a missing edition falls to the Vulgate — FLAGGED, never passed off (W-6)', async () => {
+  it('NO ASTERISKS: a missing edition yields NOTHING, never a substitute', async () => {
+    // Howell, RULED 2026-07-30, superseding W-6's flagged Latin entirely:
+    // "If a translation is available, it's complete... I do not want to
+    // associate myself with any product that makes future promises or
+    // excuses." So the reader's own edition or nothing — no Vulgate standing
+    // in, no italic voice, no footer. A verse an offered edition lacks was
+    // never written, and a gap needs no explanation.
     const externalFile = 'test/fixtures/data/gutenberg/chapters/GENE/001.json';
     const chapterItem = { id: 'GENE:1', level: 'chapter', meta: { externalFile, bookId: 'GENE' } };
     await new Promise(resolve => prefetchBibleVerses(chapterItem, { onLoaded: resolve }));
 
     const verse = { id: 'GENE_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
-    // The fixture chapter carries VUL and DRA only — SYN is absent, as NAB
-    // is from every deployed chapter since the PD filter.
-    const substituted = detailFor(verse, manifest, { translation: 'SYN' });
-    assert.match(substituted.text, /principio/i, 'the Latin stands in');
-    assert.deepEqual(substituted.substituted, { edition: 'VUL' },
-      'and the payload SAYS so — the render wears the mark');
-    // The honest match wears no flag.
+    // The fixture chapter carries VUL and DRA only — SYN is absent.
+    const absent = detailFor(verse, manifest, { translation: 'SYN' });
+    assert.equal(absent.text, '', 'no text — the Latin does NOT stand in');
+    assert.equal(absent.substituted, undefined, 'and nothing is marked, because nothing was substituted');
+    // The reader's own edition still reads.
     const honest = detailFor(verse, manifest, { translation: 'DRA' });
-    assert.equal(honest.substituted, undefined, 'a served edition is no substitute');
+    assert.match(honest.text, /beginning/i, "the reader's own edition renders");
+    // And with NO edition at all — nothing certified — there is nothing to show.
+    const dark = detailFor(verse, manifest, { translation: null });
+    assert.equal(dark.text, '', 'no active edition ⇒ an empty sector');
   });
 
   it('a live language switch outruns any baked text (the stale-Latin bug, 2026-07-28)', async () => {
@@ -353,7 +360,7 @@ describe('the shelf follows the reader — a live names table', () => {
 describe('the coming-soon node speaks the language it belongs to', () => {
   const meta = {
     translations: {
-      FIN: { language: 'finnish', name: 'Biblia' },
+      FIN: { language: 'finnish', name: 'Biblia', complete: true },
       CEI: { language: 'italian', name: 'CEI', pendingLicense: true }
     }
   };

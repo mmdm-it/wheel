@@ -35,33 +35,9 @@ export class TextDetailPlugin extends BaseDetailPlugin {
         lines.forEach(lineInfo => {
           container.appendChild(makeLineSpan(create, lineInfo.text, '', lineInfo, { rtl }));
         });
-        // W-6, FLAGGED LATIN — THE RULED MARK (Howell, bench 2026-07-27,
-        // from three sketches): a verse whose text is a SUBSTITUTE (the
-        // reader's edition lacks it; the Vulgate stands in) speaks in
-        // ITALIC, with a small upright footer notice in the READER'S chosen
-        // language, RIGHT-aligned so it reads as an annotation, never as
-        // the verse's last line. (Consequence noted in the ledger: italics
-        // now mean substitution — W-2's supplied-words rendering must find
-        // another voice.)
-        if (item?.substituted && lines.length) {
-          const last = lines[lines.length - 1];
-          container.className += ' detail-substituted--italic';
-          const s = create('span');
-          s.className = 'detail-text-line detail-sub-footer';
-          s.textContent = item.substituted.notice || 'latin text · translation not available';
-          // The notice is in the READER'S tongue, which may run the other
-          // way from the substituted verse above it.
-          if (item.substituted.lang && s.setAttribute) s.setAttribute('lang', item.substituted.lang);
-          if (item.substituted.dir && s.setAttribute) s.setAttribute('dir', item.substituted.dir);
-          if (s.style) {
-            s.style.position = 'absolute';
-            s.style.top = `${(last.y + fontPx * 1.45)}px`;
-            s.style.left = `${last.leftX}px`;
-            s.style.width = `${last.availableWidth}px`;
-            s.style.textAlign = 'right';
-          }
-          container.appendChild(s);
-        }
+        // (W-6's flagged-Latin mark — an italic voice and a footer naming the
+        // substitute — was removed 2026-07-30 with the substitution itself:
+        // NO ASTERISKS. A reader now sees their own edition or nothing.)
         return container;
       }
 

@@ -8,7 +8,8 @@
       "language_name": "Latin",
       "direction": "ltr",
       "testament": "both",
-      "nativeName": "Vulgata Clementina"
+      "nativeName": "Vulgata Clementina",
+      "complete": true
     },
     "DRA": {
       "name": "Douay-Rheims",
@@ -16,7 +17,8 @@
       "language_name": "English",
       "direction": "ltr",
       "testament": "both",
-      "nativeName": "Douay-Rheims"
+      "nativeName": "Douay-Rheims",
+      "complete": true
     }
   }
 }

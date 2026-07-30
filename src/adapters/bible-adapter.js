@@ -340,27 +340,26 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       // stale bookmark override the dimension store (found when the first
       // live swap demo stayed Latin, 2026-07-21).
       const activeTranslation = translation || null;
-      // THE DECLARED ORDER (W-6, Howell ruled 2026-07-24: flagged Latin).
-      // The reader's translation first; failing that, the Vulgate — VISIBLY
-      // MARKED as a substitute, never passed off as the requested edition.
-      // The old promiscuous chain (NAB/BYZ/SYN and then ANY language at all)
-      // is gone: with the deploy filter stripping unlicensed texts, that
-      // chain was poised to serve unmarked anything to everyone.
-      const preferred = activeTranslation && activeTranslation !== 'VUL'
-        ? [activeTranslation, 'VUL'] : ['VUL'];
-      const resolved = getVerseTextResolved(externalFile, verseKey, preferred);
+      // NO FALLBACK, NO SUBSTITUTE, NO MARK (Howell, RULED 2026-07-30 — see
+      // HANDOFF CONTRACT, "NO ASTERISKS"). The reader's own edition or
+      // NOTHING. W-6's flagged Latin is retired entirely: it showed a verse in
+      // a tongue the reader did not ask for and apologised for it in the
+      // middle of scripture, which is the excuse this ruling forbids. An
+      // offered edition is complete, so a verse it lacks was never written —
+      // and a gap needs no explanation.
+      //
+      // With NO edition certified there is no active translation at all, so
+      // nothing resolves and the sector stays empty. That is the honest face
+      // of a volume with nothing to read.
+      const resolved = activeTranslation
+        ? getVerseTextResolved(externalFile, verseKey, [activeTranslation])
+        : null;
       readAhead(selected, manifest);
       // uniform: every verse shares the longest verse's type size (Howell
       // 2026-07-21) — a constant reading page, not size-by-length.
-      if (resolved) {
-        const substituted = activeTranslation && resolved.translation !== activeTranslation;
-        return {
-          type: 'text', text: resolved.text, uniform: true,
-          ...(substituted ? { substituted: { edition: resolved.translation } } : {})
-        };
-      }
-      // The chapter is on its way; the repaint comes with it. An empty beat
-      // beats a wrong-language bake.
+      if (resolved) return { type: 'text', text: resolved.text, uniform: true };
+      // The chapter may still be in flight; the repaint comes with it. Baked
+      // text is honoured only in its own language (the stale-Latin lesson).
       return { type: 'text', text: bakedText, uniform: true };
     }
     return { type: 'text', text: bakedText || selected.name || id || '', uniform: true };

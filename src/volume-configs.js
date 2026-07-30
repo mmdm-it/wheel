@@ -91,6 +91,23 @@ const volumeConfigs = {
       };
     },
     formatLabel: ({ level, locale, namesMap }) => makeBibleLabelFormatter({ level, locale, namesMap }),
+    // NO ASTERISKS, all the way down (Howell 2026-07-30). The rings and the
+    // pyramid are built from the manifest, which is edition-agnostic — so the
+    // volume displayed its whole skeleton (testaments, 67 books, 1215
+    // chapters) even with nothing certified to read. The structure the reader
+    // sees must be what the OFFERED editions actually contain.
+    //
+    // Today only the ZERO case is answerable: the union of no editions is
+    // empty, so the volume shows nothing at any level. Partial pruning — the
+    // Esperanto case, where a Genesis-only edition should show one book and
+    // two chapters — needs the per-edition coverage index (HANDOFF O-16);
+    // this is the seam it will fill.
+    pruneToOffered: (manifest, offeredEditions) => {
+      if (offeredEditions.length) return manifest;
+      const root = manifest?.Gutenberg_Bible;
+      if (!root) return manifest;
+      return { ...manifest, Gutenberg_Bible: { ...root, testaments: {} } };
+    },
     buildChain: (manifest, options, namesMap) => buildBibleChain(manifest, options, namesMap),
     createHandlers: makeAdapterHandlers('bible')
   },

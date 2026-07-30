@@ -624,9 +624,71 @@ names + 7 weekday names per language, reusing O-7's language registry.
 No ruling yet on which languages; likely the same edition-bearing set
 first. Engine half rides the strata-everywhere program in the roadmap.
 
-### O-15 · The launch corpus — how complete, and which editions? (yours to answer)
-**Raised:** 2026-07-30 by Orville · **Status: OPEN — Howell reserved the answer
-for you; I am only bringing the measurement**
+### O-15 · The launch list — which complete translations must ship? (NEEDS YOUR ENDORSEMENT)
+**Raised:** 2026-07-30 by Orville · **Status: OPEN — awaiting Wilbur's
+endorsement; Howell has explicitly reserved this decision for you**
+
+**Two decisions, and only one of them is made.** Howell ruled the NO ASTERISKS
+doctrine outright (see CONTRACT — an available translation is complete, full
+stop, and it needed nobody's approval). But he was equally explicit that the
+second decision is yours to endorse: *"the list of complete translations that
+we need in order to go live on the web at bibliacatholica.com, that decision
+does need Wilbur's endorsement."* You do the work; you shape the target.
+
+**The immediate question, and it is small:** LATIN. The Vulgate sits at 99.8% —
+**seventy-three verses**. Nobody has yet asked whether those seventy-three were
+ever written. If they are structural, Latin is complete TODAY and can be
+certified as-is; if provisional, it is an afternoon of sourcing. Either way it
+is the shortest path from a dark volume to a readable one, and Howell has
+accepted the volume being dark until then. **Latin first is the recommendation;
+the endorsement is yours.**
+
+**HOWELL'S PROPOSAL — a chronological slate (2026-07-30), for your
+endorsement.** Rather than certifying by convenience, certify in the order the
+texts came to us, so the volume grows the way the canon did: *"We'd be waiting
+for the Greeks to bring us the New Testament, just like days of yore."* The
+registry's own `year` field already declares the order —
+
+| year | tongue | editions |
+|---|---|---|
+| −1000 | עברית | WLC (Old Testament only) |
+| −250 | Ελληνικά | LXX (OT) + **BYZ (New Testament)** |
+| 405 | Latina | VUL |
+| 1382 | English | DRA |
+| 1439–1876 | Magyar · Nederlands · Deutsch · Français · Suomi · Русский | KAL, CAN, ALL, SAC+NEO, FIN, SYN |
+
+It is more apt than it first appears: the Septuagint also brings the
+DEUTEROCANON, so Hebrew gives the Masoretic Old Testament, Greek adds both the
+New Testament and the books that reached us through Alexandria, and Latin
+unifies them. **The trade is speed against shape** — Latin is ~73 verses from
+certification and lights the whole Bible at once; Hebrew stages the reveal but
+needs more classification. Howell's proposal, your call.
+
+**HEBREW'S GAP, ANALYSED — most of it is not a gap at all.** Its 87.2% headline
+is misleading and I would not want it to steer you off. Of 3,026 OT verses
+without Hebrew:
+- **2,648 (87%) are five books with NO Hebrew whatsoever** — Tobit (244),
+  Judith (349), Wisdom (436), Sirach (1,407), Baruch (212). The deuterocanon,
+  never written in Hebrew. **Permanently structural.**
+- **~242 more are the shapes we have already named**: Daniel −107 and Esther
+  −108 (the Greek additions you identified in W-3) and Joel −21 and Malachi −6
+  (versification seams — Hebrew Malachi ends at chapter 3; see O-13).
+- **The genuine residue is ~136 verses**, and they read as versification
+  differences rather than missing text: Genesis −1, Jonah −1, Micah −1,
+  Nahum −1, Song of Songs −1, Jeremiah −1… single verses split differently
+  between traditions. Psalms −67 is the one cluster worth a real look.
+
+I am inferring from the shape of the data, not from scholarship — **the
+classification is yours** — but if it holds, Hebrew is far closer to
+certifiable than the percentage suggests, and the chronological slate is
+genuinely viable rather than merely charming.
+
+**Then the launch list itself:** which editions must be certified complete
+before bibliacatholica.com goes live. All twelve? A smaller set? Howell's only
+stated constraint is that Finland is where he would rather stand at launch and
+that Finnish is **not** first among equals — *"it takes a complete corpus to
+launch the app anywhere."*
+
 Howell's ruling 2026-07-30: **a rigid, fixed set of languages and editions must
 be 100% complete before bibliacatholica.com goes live**, and *"it takes a
 complete corpus to launch the app anywhere"* — Finland is simply where he would
@@ -743,6 +805,29 @@ confirm it appears.
 ---
 
 ## CONTRACT
+
+- **NO ASTERISKS (Howell, RULED 2026-07-30 — his decision, made; no approval
+  sought or needed).** *"If a translation is available, it's complete."* An
+  edition with provisional gaps — text that exists and we have not sourced —
+  **is not offered at all**. No fallback to another tongue, no disclaimer, no
+  substitution mark, no "coming soon" attached to a readable edition. The
+  reader never meets an apology inside scripture.
+  - **The LAN and the web are IDENTICAL.** Howell rejected separate filters:
+    *"I test the LAN before giving the order to sync to server, and in my mind
+    they should be the same. I don't want to see anything on the LAN and then
+    have to remind myself that there is some mechanism by which the public
+    won't see it."* One corpus, one behaviour, everywhere.
+  - **Completeness is DECLARED, never measured.** The engine must not decide by
+    counting verses — that would unseat an edition whose remaining gaps are
+    structural (never written) rather than provisional. Wilbur marks an edition
+    complete; the engine offers only what is marked. The structural/provisional
+    judgment lives where the knowledge is.
+  - **Consequence, accepted in advance:** until an edition is certified, the
+    volume has nothing to read — on the LAN, on the web, and through the
+    gateway. Howell: *"I feel that the engine runs well enough and does what
+    it's supposed to do. I don't need any more proof that it's going to work."*
+  - Engine half is Orville's (the lockout); certification is Wilbur's.
+
 
 - **Single-owner rule (Howell, 2026-07-26):** only ONE session open at a
   time; Howell closes a session before switching tabs. Adopted after
