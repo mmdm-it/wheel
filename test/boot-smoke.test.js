@@ -82,13 +82,27 @@ function installBrowserGlobals(search) {
   globalThis.getComputedStyle = win.getComputedStyle;
   globalThis.navigator = win.navigator;
   globalThis.screen = win.screen;
+  // Node 18 does not expose CustomEvent globally; the detail sector announces
+  // itself with one.
+  if (typeof globalThis.CustomEvent !== 'function') {
+    globalThis.CustomEvent = class CustomEvent {
+      constructor(type, init = {}) { this.type = type; this.detail = init.detail; }
+    };
+  }
+  win.CustomEvent = globalThis.CustomEvent;
+  win.dispatchEvent = () => true;
   globalThis.performance = globalThis.performance || { now: () => Date.now(), mark() {}, measure() {}, getEntriesByType: () => [] };
   if (!globalThis.performance.mark) globalThis.performance.mark = () => {};
   if (!globalThis.performance.getEntriesByType) globalThis.performance.getEntriesByType = () => [];
 
-  // Serve the real data off disk, so boot reads exactly what ships.
+  // Serve the FIXTURES, never the real corpus: `data/` lives in the private
+  // cargo repo (W-10), so it is absent in CI — a boot test that read it would
+  // pass on a developer's machine and 404 on the build. The volume configs ask
+  // for `./data/…` by name, so that prefix is rewritten to the fixture tree.
   globalThis.fetch = async url => {
-    const rel = String(url).replace(/^\.\//, '').replace(/^\//, '');
+    const rel = String(url)
+      .replace(/^\.\//, '').replace(/^\//, '')
+      .replace(/^data\//, 'test/fixtures/data/');
     try {
       const text = readFileSync(path.join(repoRoot, rel), 'utf-8');
       return { ok: true, status: 200, json: async () => JSON.parse(text), text: async () => text };
