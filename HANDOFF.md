@@ -646,8 +646,39 @@ the endorsement is yours.**
 **HOWELL'S PROPOSAL — a chronological slate (2026-07-30), for your
 endorsement.** Rather than certifying by convenience, certify in the order the
 texts came to us, so the volume grows the way the canon did: *"We'd be waiting
-for the Greeks to bring us the New Testament, just like days of yore."* The
-registry's own `year` field already declares the order —
+for the Greeks to bring us the New Testament, just like days of yore."*
+
+**IT MUST BE TRANSLATION-CHRONOLOGICAL, NOT LANGUAGE-CHRONOLOGICAL** (Howell's
+clarification): *"the historic Hebrew Bible enters the app first, and Greek
+comes before the WLC."* The language's antiquity is not the edition's date —
+Hebrew is three thousand years old, but the Westminster Leningrad Codex is a
+1008 manuscript.
+
+**AND THE REGISTRY CANNOT EXPRESS IT YET.** `publication_year` is the date of
+the PRINTING we use, which orders them almost backwards for this purpose:
+
+| publication_year | edition | |
+|---|---|---|
+| 1008 | WLC | the Leningrad manuscript |
+| 1592 | VUL | the Clementine printing |
+| **1894** | **LXX** | a modern critical edition of a ~250 BC translation |
+| **2005** | **BYZ** | Robinson–Pierpont — so the Greek NT would arrive LAST |
+
+**The ask:** a second date per edition — when the TRANSLATION WAS MADE, as
+distinct from the printing we happen to use. LXX ~250 BC though printed 1894;
+VUL ~405 though printed 1592; and so on.
+
+**A judgment only you can make:** two of the twelve are not translations at
+all. WLC is the Hebrew original and BYZ the Greek original of the New
+Testament, so "when was it translated" has no answer for them — you would be
+choosing between the composition of the text, the manuscript, and the critical
+edition. Howell's framing suggests the principle: what we HOLD is a medieval
+manuscript, whereas the Old Greek is genuinely a 3rd-century-BC translation,
+which is why Greek legitimately precedes Hebrew in the slate. Your call how to
+date them, and the whole ordering follows from it.
+
+(For reference, the LANGUAGE-chronological order the registry can express
+today — which is NOT what Howell wants, recorded only to show the difference —
 
 | year | tongue | editions |
 |---|---|---|
@@ -656,8 +687,9 @@ registry's own `year` field already declares the order —
 | 405 | Latina | VUL |
 | 1382 | English | DRA |
 | 1439–1876 | Magyar · Nederlands · Deutsch · Français · Suomi · Русский | KAL, CAN, ALL, SAC+NEO, FIN, SYN |
+)
 
-It is more apt than it first appears: the Septuagint also brings the
+The IDEA is more apt than it first appears: the Septuagint also brings the
 DEUTEROCANON, so Hebrew gives the Masoretic Old Testament, Greek adds both the
 New Testament and the books that reached us through Alexandria, and Latin
 unifies them. **The trade is speed against shape** — Latin is ~73 verses from
