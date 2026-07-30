@@ -635,13 +635,19 @@ second decision is yours to endorse: *"the list of complete translations that
 we need in order to go live on the web at bibliacatholica.com, that decision
 does need Wilbur's endorsement."* You do the work; you shape the target.
 
-**The immediate question, and it is small:** LATIN. The Vulgate sits at 99.8% —
-**seventy-three verses**. Nobody has yet asked whether those seventy-three were
-ever written. If they are structural, Latin is complete TODAY and can be
-certified as-is; if provisional, it is an afternoon of sourcing. Either way it
-is the shortest path from a dark volume to a readable one, and Howell has
-accepted the volume being dark until then. **Latin first is the recommendation;
-the endorsement is yours.**
+**START WITH HEBREW (Howell, 2026-07-30).** Not Latin — he corrected me
+explicitly. The volume stays dark until you certify **Hebrew**, and the web is
+not synced until then, so the first thing the public ever sees of this Bible is
+the Old Testament in Hebrew. Latin would have been the shorter path (73 verses)
+but it is not the one he wants: the slate is chronological and the Hebrew Bible
+opens it.
+
+See the gap analysis below — Hebrew is far closer than its 87.2% suggests,
+because 2,648 of its 3,026 missing verses are five books never written in
+Hebrew at all.
+
+(Latin, for reference, sits at 99.8% — seventy-three verses, unclassified. It
+is not first, but it is nearly free whenever you come to it.)
 
 **HOWELL'S PROPOSAL — a chronological slate (2026-07-30), for your
 endorsement.** Rather than certifying by convenience, certify in the order the
