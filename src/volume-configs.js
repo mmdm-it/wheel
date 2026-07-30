@@ -3,13 +3,24 @@
 // path, theme, option parsing, label formatting, and chain building — is
 // declared here; src/main.js stays volume-agnostic and is scanned by
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
-import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
+import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toRomanNumeral } from './adapters/volume-helpers.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
+import { recall } from './core/session-memory.js';
+
 import { catalogAdapter } from './adapters/catalog-adapter.js';
 import { bibleAdapter, buildBibleRootChain } from './adapters/bible-adapter.js';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 import { placesAdapter } from './adapters/places-adapter.js';
+
+// A remembered verse id (BOOK_CHAPTER_VERSE, e.g. GENE_1_1) split back into
+// the coordinates the bible chain boots from. Anything that does not match
+// the shape — a stale id from an older scheme, a corrupted value — returns
+// null and the caller falls through to the pinned default.
+function parseVerseId(id) {
+  const m = /^([A-Z][A-Z_]*)_(\d+)_(\d+)$/.exec(String(id || ''));
+  return m ? { bookId: m[1], chapterId: m[2], verseId: m[3] } : null;
+}
 
 const adapterRegistry = createAdapterRegistry();
 adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
@@ -56,14 +67,22 @@ const volumeConfigs = {
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
+      // THE READER RESUMES WHERE THEY STOPPED (Howell ruling 3, 2026-07-30):
+      // first visit opens at the pinned default (Matthew 16:18, Vulgate);
+      // thereafter at the verse they were last on. An EXPLICIT deep link wins
+      // wholesale — if any of book/chapter/verse is named in the URL, memory
+      // is ignored entirely rather than blended with it, since a half-honoured
+      // link ("their book, my chapter") would be worse than either.
+      const deepLinked = params.get('book') || params.get('chapter') || params.get('verse');
+      const resumed = deepLinked ? null : parseVerseId(recall('bible').itemId);
       return {
         level,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
-        bookId: params.get('book') || 'MATHE',
+        bookId: params.get('book') || resumed?.bookId || 'MATHE',
         testamentId: params.get('testament'),
-        chapterId: params.get('chapter') || '16',
-        verseId: params.get('verse') || '18',
+        chapterId: params.get('chapter') || resumed?.chapterId || '16',
+        verseId: params.get('verse') || resumed?.verseId || '18',
         // Single-stratum era: the Bible is pinned to the Latin Vulgate.
         // Dimension development is paused, not cancelled (see docs/ROADMAP.md).
         translation: 'VUL',
@@ -92,6 +111,10 @@ const volumeConfigs = {
       magnifierStroke: '#000000'
     },
     stampLetter: 'M', // the factory stamp's data line (W-7)
+    // The "instrument arrives" line-drawing reveal (C.4) plays HERE only —
+    // the Bible boots into its strata funnel instead and wants a reveal of
+    // its own before it opts back in (Howell 2026-07-30).
+    bootSplash: true,
     extractRoot: manifest => manifest?.MMdM,
     async loadSupplemental() { return { translationsMeta: null }; },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
@@ -382,17 +405,25 @@ function buildBibleChain(manifest, options, namesMap) {
       return { items: chapterItems, selectedIndex: chapterSelected, preserveOrder: true };
     }
     if (level === 'verse') {
-      return buildBibleVerseCousinChain(manifest, {
-        bookId: options.bookId || 'MATHE',
-        startChapterId: options.chapterId || undefined,
-        translation: options.translation || 'VUL'
-      }).then(chain => {
-        const verseId = options.verseId;
-        if (verseId && chain.items.length) {
-          const idx = chain.items.findIndex(item => item && item.verse === String(verseId));
-          if (idx >= 0) chain.selectedIndex = idx;
-        }
-        return chain;
+      // THE WHOLE VOLUME RIDES THE RING FROM THE FIRST FRAME (2026-07-30).
+      // Boot used to build its own verse ring with buildBibleVerseCousinChain,
+      // which walked ONE book from the entry chapter to that book's end — so a
+      // reader who booted at Matthew 16:18 could rotate no earlier than
+      // Matthew 16:1 and no later than Matthew 28:20. Everything before the
+      // current chapter and after the current book was unreachable until they
+      // backed out and descended again, which silently rebuilt the ring with
+      // the continuous chain. Now boot uses that same continuous chain, so the
+      // ring is Genesis to Apocalypse from the start.
+      // Two things fall out: it is SYNCHRONOUS (the old builder fetched every
+      // chapter from the entry point to the end of the book before the first
+      // paint — thirteen files to open at Matthew 16), and it bakes no verse
+      // text, retiring the last site of the stale-language bug class (W-6).
+      // Verse text arrives from the chapter cache and repaints on landing.
+      const bookId = options.bookId || 'MATHE';
+      const chapterId = options.chapterId || '16';
+      const verseId = options.verseId || '1';
+      return buildBibleVerseChain(manifest, {
+        initialVerseId: `${bookId}_${chapterId}_${verseId}`
       });
     }
     const chain = buildBibleBookCousinChain(manifest, {

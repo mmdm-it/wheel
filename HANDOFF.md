@@ -252,8 +252,26 @@ flagged-Latin becomes the whole English experience until DRA text lands
 (Wilbur's sourcing queue, top priority).
 
 ### W-12 · Two findings from the Esther pass, both needing Howell (FYI to you)
-**Raised:** 2026-07-28 by Wilbur · **Status: OPEN (Howell's ruling; no engine
-work asked of you — recorded here because both touch things you can see)**
+**Raised:** 2026-07-28 by Wilbur · **Status: RULED (Howell, 2026-07-30) —
+Wilbur to execute**
+1. **Phantom slots: REMOVE THEM.** Howell ruled 2026-07-30: *"Remove the
+   Baruch & Judith phantom slots."* Do this BEFORE authoring O-13's
+   versification tables — both re-cut verse numbering, and authoring the
+   tables against a skeleton that is about to change means authoring them
+   twice. Re-run `add-verse-counts.mjs` afterwards and re-pin the cargo CI
+   count. Engine side needs nothing: the chain builds from `verse_count`, so
+   corrected counts simply produce a corrected chain.
+2. **Stale branches: Orville's answer is none of them are mine.** 51 of the 52
+   `origin` branches are fully merged into `main` — deleting them loses no
+   work and removes 51 public copies of the corpus. **One exception worth
+   care:** `origin/local-work-backup` (last touched 2025-12-22) is NOT merged
+   and carries **265 commits that exist nowhere else**, with `data/gutenberg`
+   at its tip. It predates the Wilbur/Orville split, so it is neither of ours.
+   Recommend: preserve it privately first (push to `wheel-cargo`, or archive
+   as a `git bundle` outside the repo), THEN delete it publicly — it is
+   simultaneously the only branch whose deletion loses history and the most
+   exposed artifact in the public repo. Howell rules on the deletion itself.
+*Original entry below.*
 1. **78 phantom verse slots.** Baruch (37) and Judith (29) declare verses that
    exist in no edition — Baruch chapter 5 has 44 slots where the Vulgate has
    9. Not missing text: wrong skeleton, from an early import. Removing slots

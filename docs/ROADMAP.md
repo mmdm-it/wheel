@@ -15,6 +15,69 @@
   - v3.10.x Phase B.2 gateway capability + interim pyramid guarantee — done
   - v3.11.0 Phase B close + Phase C sprint C.1–C.5 (catch-up release, 2026-07-20) — done
 
+## RULED 2026-07-30: the strata invert, and the app boots inside them
+
+Howell's redesign of the Bible's dimension mode. Engine-only; no data, no
+Wilbur. Supersedes the current arrangement entirely.
+
+**The diagnosis.** The z-axis disagreed with itself. Logically the order was
+right — language first, then edition, since an edition's options depend on the
+language. But visually the dependent, narrower thing (edition) sat FURTHER from
+the reader than the broader thing containing it. Howell: *"translations are
+subsets of languages, but they are shown as supersets."* The app asked you to
+travel outward in order to narrow down.
+
+**The new arrangement** — nesting and depth finally agree:
+
+| plane | holds | why |
+|---|---|---|
+| tertiary (deepest) | **language** | the largest set |
+| secondary | **edition** | a subset of it |
+| primary (front) | **the text** | the element itself |
+
+Travelling inward is narrowing; travelling outward is broadening — the same
+logic the wheel already uses radially.
+
+**The globe travels INWARD, always** (ruling 1): boot at tertiary → globe →
+secondary → globe → primary → globe → back to tertiary. One rule, no
+context-dependence. A returning reader mostly presses it never, so the funnel's
+coherence is worth more than keeping the edition chooser one tap away.
+
+**Every launch, not just the first** (ruling 2). Howell: *"It confirms for the
+user their language and translation. It's enjoyable to watch and demonstrates
+the power of the program... I don't consider two quick taps to be an undue
+burden. It's not like we're asking for a username and password."* Explicitly
+revisitable once real users report.
+
+**What sits behind the glass** (ruling 3): first visit shows the Vulgate
+default; thereafter the verse the reader was last on when the app closed.
+
+**Consequence — session persistence, which does not exist yet.** Today only the
+splash's "seen" flag survives a launch; the dimension choice is sticky only
+within a page session. Rulings 2 and 3 require remembering three things across
+launches: **language, edition, reading position.** On-device `localStorage`
+only — nothing transmitted, no account, no identifier, consistent with the
+free/no-harvesting commitment, and it is exactly what the Android port will
+need anyway.
+
+**Why this may BE the new overture.** Howell has ruled the Bible needs one. This
+design makes the boot itself a guided traversal of the z-axis: the reader cannot
+reach the text without travelling it, so the instrument teaches its third
+gesture by requiring it — no tutorial, no hint, no ink to erase. The first
+question a stranger is asked is the one they can always answer: what language do
+you read? If this lands well, the separate overture item may be closed by it.
+
+**Open engineering notes (Orville):**
+- The plane keeps its own dress: the tertiary's centred magnifier and the
+  secondary's mirrored ring are properties of the PLANE, not of the content, so
+  language inherits the tertiary's look.
+- The globe's visibility rules (front door / leaf, v3.24.0) must also show it
+  while a stratum is forward — at boot the reader is inside a chooser and the
+  globe is the only way onward.
+- The primary must have a verse loaded and rendered before the funnel completes,
+  since it is visible (blurred) from the first frame.
+- Catalog is untouched — it has no strata.
+
 ## Standing intention: the Bible gets its own front door (Howell, 2026-07-28)
 
 The Gutenberg gateway — rotating past the end of the catalog's chain into

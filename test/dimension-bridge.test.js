@@ -335,3 +335,42 @@ describe('the shelf follows the reader — a live names table', () => {
     namesMap.vocabulary = null;
   });
 });
+
+// A placeholder language's "coming soon" node is a single sentinel carrying no
+// language of its own, so its WORDS come from context. While a language is
+// merely PREVIEWED — passing under the lens as the reader turns the ring, not
+// yet committed — that context is the previewed language, not the committed
+// one. Without the hint, Italian's held shelf wore Finnish's promise (Howell
+// caught it on the phone, 2026-07-30).
+describe('the coming-soon node speaks the language it belongs to', () => {
+  const meta = {
+    translations: {
+      FIN: { language: 'finnish', name: 'Biblia' },
+      CEI: { language: 'italian', name: 'CEI', pendingLicense: true }
+    }
+  };
+  const langMeta = {
+    languages: [
+      { id: 'finnish', autonym: 'Suomi', comingSoonText: 'Tulossa pian' },
+      { id: 'italian', autonym: 'Italiano', comingSoonText: 'Prossimamente' }
+    ]
+  };
+  const build = () => {
+    const store = createInteractionStore();
+    const bridge = createDimensionBridge({ store, translationsMeta: meta, languagesMeta: langMeta });
+    bridge.setLanguage('finnish'); // committed: a language that HAS an edition
+    return bridge;
+  };
+
+  it('labels a previewed placeholder in the PREVIEWED tongue', () => {
+    const bridge = build();
+    const key = bridge.comingSoonKey;
+    assert.equal(bridge.translationName(key, 'italian'), 'Prossimamente');
+    assert.equal(bridge.translationAbbrev(key, 'italian'), 'Prossimamente');
+  });
+
+  it('falls back to the committed language when no hint is given', () => {
+    const bridge = build();
+    assert.equal(bridge.translationName(bridge.comingSoonKey), 'Tulossa pian');
+  });
+});

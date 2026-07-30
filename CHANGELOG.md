@@ -1,5 +1,59 @@
 # Changelog
 
+## 3.27.0 — the funnel
+The Bible's dimension mode, inverted and made the way in.
+
+- **The strata invert.** The z-axis used to disagree with itself: the
+  sequence was right (language, then edition — an edition's options depend
+  on the language) but the DEPTH was backwards, seating the narrower,
+  dependent thing FURTHER from the reader than the set containing it.
+  Howell: *"translations are subsets of languages, but they are shown as
+  supersets."* Now language sits deepest, edition between, the text in
+  front — travelling inward narrows, travelling outward broadens, the same
+  logic the wheel already uses radially.
+- **The globe travels inward, always**: language → edition → the text →
+  and round again. One rule, no context-dependence.
+- **The app opens inside the strata**, on the language plane, with the
+  edition and the text receding behind it. The reader cannot reach the
+  text without travelling the z-axis, so the instrument teaches its third
+  gesture by requiring it rather than explaining it — and the first
+  question a stranger is asked is the one they can always answer. Every
+  launch, not just the first (Howell: *"It confirms for the user their
+  language and translation... two quick taps"*).
+- **The instrument remembers between launches** — language, edition, and
+  the verse you were last reading. `localStorage` only: nothing
+  transmitted, no account, no identifier. First visit opens at the
+  Vulgate default; every visit after, where you left off.
+- **The receded planes follow the lens live.** Turn the language ring and
+  the edition plane re-stocks and the verse behind the glass changes
+  tongue — before anything commits, the same courtesy the child pyramid
+  has always shown the focus ring. Repaints on node CHANGE, not per frame.
+- **The whole volume rides the ring from the first frame.** Boot had been
+  building its own verse chain that walked ONE book from the entry chapter
+  to that book's end — booting at Matthew 16:18 you could rotate no
+  earlier than Matthew 16:1 nor later than Matthew 28:20. It now uses the
+  same continuous chain as everything else (Genesis to Apocalypse), which
+  is also synchronous (the old one fetched thirteen chapter files before
+  the first paint) and bakes no verse text, retiring the last site of the
+  stale-language bug class.
+- **A transit is not a launch.** Crossing from another volume through the
+  gateway lands on the text as before — the funnel is the app's front
+  door, and a reader already inside has not asked to re-declare their
+  language. This also keeps the way back out one tap away, and stops three
+  planes painting themselves on top of a wipe still sweeping beneath them.
+- **The reveal is declared by the volume** (`bootSplash`), so the
+  line-drawing overture plays only where it belongs instead of for
+  whichever volume booted first.
+- **A previewed placeholder speaks its own tongue**: the "coming soon"
+  node is one sentinel shared by every held language, and it was resolving
+  its words from the COMMITTED language — so Italian's held shelf wore
+  Finnish's promise while Italian was merely passing under the lens.
+- Recede blur eased to `[0, 1, 2]`px: the deepest plane is now the app's
+  first screen, and what waits behind the glass has to be legible enough
+  to be worth travelling toward.
+
+## 3.27.0 — the funnel
+
 ## 3.26.0 — the shelf follows the reader (W-15 · W-16)
 - **Book and testament names now change with the language.** They had been
   frozen at whatever tongue the app booted in: `namesMap` was derived once

@@ -211,8 +211,8 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // לנינגרד, Vulgata Clementina. The synthetic node yields the current
     // language's native "coming soon". Falls back to the English `name`, then
     // the key. Unselected nodes keep the abbreviation (Howell 2026-07-22).
-    translationName(key) {
-      if (key === COMING_SOON_KEY) return comingSoonText(currentLanguage());
+    translationName(key, languageHint = null) {
+      if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
       const t = meta?.translations?.[key];
       return t?.nativeName || t?.name || key;
     },
@@ -221,8 +221,8 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // abbreviation/key, but the synthetic "coming soon" node must NEVER show its
     // sentinel key — it stays in the native phrase even scrubbed out of the lens
     // (there is no abbreviation for a promise — Howell 2026-07-22).
-    translationAbbrev(key) {
-      if (key === COMING_SOON_KEY) return comingSoonText(currentLanguage());
+    translationAbbrev(key, languageHint = null) {
+      if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
       // The unselected node's short label in its OWN script (Howell 2026-07-26):
       // Greek editions must show a Greek abbreviation, not the Latin key
       // (LXX/BYZ), just as the magnified node already shows the Greek nativeName.
@@ -239,6 +239,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // baseball on a ring. A language with nothing servable yields the single
     // synthetic "coming soon" node, in its own tongue. Defaults to the
     // current language, then the first language with editions — never empty.
+    // The placeholder key, so the host can tell a real edition from a
+    // display-only "coming soon" node without hardcoding the sentinel.
+    comingSoonKey: COMING_SOON_KEY,
+
     translationsOf(languageId) {
       let lang = languageId || currentLanguage();
       if (!lang || (!hasEditions(lang) && !languageEntry(lang))) {
