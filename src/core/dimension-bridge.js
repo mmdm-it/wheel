@@ -22,21 +22,9 @@
 
 import { interactionEvents } from './interaction-store.js';
 
-// Each language names itself in its own tongue (Howell 2026-07-21): the
-// secondary stratum reads as a native would read it, not as English glosses.
-// Keyed by the registry's `language` id. Non-Latin scripts fall back to the
-// system font where the ring font lacks the glyphs.
-const LANGUAGE_AUTONYMS = {
-  hebrew: 'עברית',
-  latin: 'Latina',
-  greek: 'Ελληνικά',
-  english: 'English',
-  russian: 'Русский',
-  french: 'Français',
-  italian: 'Italiano',
-  spanish: 'Español',
-  portuguese: 'Português'
-};
+// (The engine's nine-language autonym table was deleted 2026-07-30: every one
+// of the registry's 29 languages carries its own `autonym`, so the table was
+// pure dead weight and the last place the engine named a tongue itself.)
 
 // The tertiary's synthetic node for a placeholder language: one node whose
 // magnified label is that language's native "coming soon" (from the language
@@ -201,7 +189,6 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // then the id.
     languageLabel(id) {
       return languageEntry(id)?.autonym
-        || LANGUAGE_AUTONYMS[id]
         || Object.values(meta?.translations || {}).find(t => t?.language === id)?.language_name
         || id;
     },

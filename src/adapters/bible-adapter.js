@@ -98,11 +98,16 @@ export function normalize(raw) {
     const testamentOrder = Number.isFinite(testament?.sort_number) ? testament.sort_number : ti;
     addItem({ id: testamentId, name: testament?.name || testamentId, level: 'testament', parentId: rootId, order: testamentOrder });
 
+    // SECTIONS ARE NOT A LEVEL (Howell 2026-07-30). They were introduced only
+    // to subdivide a testament's books so they would fit the child pyramid;
+    // the star field solved that, and nothing has navigated them since — the
+    // volume enters testament, book, chapter and verse, never section. Books
+    // therefore hang directly off their testament, which is what the reader
+    // has always seen. The manifest keeps its sections (they are real
+    // scholarly divisions and Wilbur's to own) and `sectionId` still rides in
+    // item metadata as provenance; only the navigable LEVEL is retired.
     const sections = testament?.sections || {};
-    Object.entries(sections).forEach(([sectionId, section], si) => {
-      const sectionOrder = Number.isFinite(section?.sort_number) ? section.sort_number : si;
-      addItem({ id: sectionId, name: section?.name || sectionId, level: 'section', parentId: testamentId, order: sectionOrder, meta: { testamentId } });
-
+    Object.entries(sections).forEach(([sectionId, section]) => {
       const books = section?.books || {};
       Object.entries(books).forEach(([bookId, book], bi) => {
         const bookOrder = Number.isFinite(book?.sort_number) ? book.sort_number : (Number.isFinite(book?.book_number) ? book.book_number : bi);
@@ -110,7 +115,7 @@ export function normalize(raw) {
           id: bookId,
           name: book?.book_name || book?.name || bookId,
           level: 'book',
-          parentId: sectionId,
+          parentId: testamentId,
           order: bookOrder,
           meta: { testamentId, sectionId, bookNumber: book?.book_number ?? null }
         });
@@ -141,7 +146,7 @@ export function normalize(raw) {
     });
   });
 
-  const levelOrder = ['root', 'testament', 'section', 'book', 'chapter', 'verse'];
+  const levelOrder = ['root', 'testament', 'book', 'chapter', 'verse'];
   items.sort((a, b) => {
     const lo = levelOrder.indexOf(a.level);
     const ro = levelOrder.indexOf(b.level);
@@ -172,7 +177,6 @@ export function layoutSpec(normalized, viewport) {
   const pyramidCapacity = calculatePyramidCapacity(vp);
   const palette = normalized?.meta?.colors || {
     testament: '#8b6f47',
-    section: '#8b6f47',
     book: '#8b6f47',
     chapter: '#8b6f47'
   };
@@ -293,14 +297,6 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       type: 'card',
       title: selected.name || id,
       body: 'Testament overview'
-    };
-  }
-
-  if (level === 'section') {
-    return {
-      type: 'card',
-      title: selected.name || id,
-      body: 'Section overview'
     };
   }
 

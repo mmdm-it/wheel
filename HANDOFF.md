@@ -624,6 +624,122 @@ names + 7 weekday names per language, reusing O-7's language registry.
 No ruling yet on which languages; likely the same edition-bearing set
 first. Engine half rides the strata-everywhere program in the roadmap.
 
+### O-15 · The launch corpus — how complete, and which editions? (yours to answer)
+**Raised:** 2026-07-30 by Orville · **Status: OPEN — Howell reserved the answer
+for you; I am only bringing the measurement**
+Howell's ruling 2026-07-30: **a rigid, fixed set of languages and editions must
+be 100% complete before bibliacatholica.com goes live**, and *"it takes a
+complete corpus to launch the app anywhere"* — Finland is simply where he would
+rather be standing; Finnish is explicitly **not** first among equals. He also
+said the target should be shaped by you, since you do the work. So this entry
+carries data and a question, not a plan.
+
+**What I measured (verse TEXT, not metadata — my first pass counted labels and
+Howell rightly called it):** across the 12 servable editions, **26,493 verse
+texts are missing**. Coverage against each edition's own scope (testament-scoped
+editions judged only against the testament they cover):
+
+| edition | language | coverage | missing |
+|---|---|---|---|
+| BYZ | greek (NT) | 99.9% | 7 |
+| VUL | latin | 99.8% | 73 |
+| DRA | english | 99.8% | 74 |
+| NEO | french | 99.2% | 254 |
+| SYN | russian | 96.7% | 1,054 |
+| LXX | greek (OT) | 90.9% | 2,146 |
+| CAN | dutch | 90.4% | 3,042 |
+| ALL | german | 88.0% | 3,783 |
+| FIN | finnish | 88.0% | 3,790 |
+| SAC | french | 87.4% | 3,960 |
+| WLC | hebrew | 87.2% | 3,026 |
+| KAL | hungarian | 83.2% | 5,284 |
+
+**Why it matters to the reader, concretely:** W-6's flagged Latin fires on every
+missing verse. At 88%, roughly **one verse in eight** shows a Finnish reader a
+Latin substitute with its notice. That is the reading experience, not a rough
+edge.
+
+**The metadata side is nearly done, for contrast:** all 10 readable languages
+carry 67 book names, testaments, vocabulary and a substitution notice (Latin's
+is absent, correctly — a Latin reader can never be shown Latin standing in).
+Two gaps remain there: **`book_abbreviations` for 9 languages (603 entries)** —
+which the child pyramid genuinely needs, since without them the book sky wears
+borrowed Latin — and **O-6's `nativeAbbrev` for 12 editions**.
+
+**The questions, all yours:**
+1. Which editions belong in the launch set — all 12, or a smaller set that can
+   realistically reach 100%?
+2. Is 100% the right bar per edition, or is there an honest floor (say, every
+   verse present that the source edition actually contains — some of these
+   editions may legitimately lack deuterocanonical books rather than be
+   incomplete)? **I cannot tell a GAP from a canonical ABSENCE from outside the
+   data; you can.** That distinction may shrink these numbers considerably.
+3. Sequencing against the abbreviations work.
+
+**Offer:** my coverage measurement is a throwaway script. Say the word and I
+will contribute it to the cargo repo as a proper report, so you open each
+session to a live dashboard and CI can enforce whatever gate Howell sets.
+
+### O-16 · A per-edition coverage index — the one thing that blocks the new gap doctrine
+**Raised:** 2026-07-30 by Orville · **Status: OPEN — the gating data ask**
+
+**Howell's ruling 2026-07-30 supersedes W-6's flagged Latin entirely.** No
+fallback text, no disclaimer, no substitution mark. In his words: *"If we offer
+a translation, it's complete. If there are any gaps in that translation, that's
+because they were never written... I do not want to associate myself with any
+product that makes future promises or excuses."* Missing scripture is simply
+**absent** — no node, no apology.
+
+Two rules replace the whole apparatus:
+1. **An offered edition is complete.** An edition that still has provisional
+   gaps does not go on the shelf until they are closed.
+2. **The ring offers only what serves where you stand.** Reading Exodus in
+   Greek, a language that stops at Genesis 2:5 is not on the language ring at
+   all — it is FORECLOSED, exactly as the strike wheel never offers a character
+   no name continues with. The same law, one level up.
+
+The prompt for this was a YouVersion screenshot Howell sent: a modal reading
+*"The version you selected doesn't have that chapter. What would you like to
+do?"* — which had let the reader choose an impossible pairing, then asked them
+to repair it, and misreported the granularity besides (WLC lacks the whole
+testament, not a chapter — the check ran at chapter-FETCH time, so it could
+only describe a failed request). Howell: *"design malpractice."* Our answer is
+that the invalid state is never offered.
+
+**WHAT I NEED FROM YOU, AND WHY NOTHING CAN BE BUILT WITHOUT IT.** The engine
+cannot presently answer *"does this edition reach Exodus?"* The manifest
+declares chapters and `verse_count` **edition-agnostically**; what each edition
+actually holds lives inside the 1,215 chapter files as `verse.text[CODE]`.
+Answering the question at boot would mean opening every chapter file.
+
+So the design needs a **per-edition coverage index**, loadable at boot. Shape is
+yours; two candidates:
+- per-edition verse counts on each chapter's manifest entry — simple, but grows
+  the manifest by roughly 100–150 KB;
+- a separate `coverage.json` alongside — keeps the manifest lean, one more
+  request at boot.
+Either way the engine wants, per edition: which books, which chapters, and how
+many verses of each it actually contains — enough to prune a testament ring, a
+books pyramid, a chapters ring and a verse chain to what the reader's edition
+can actually show. (Howell's worked example: an Esperanto text reaching only
+Genesis 2:5 would show one testament, one book, two chapters, five verses.)
+
+**A simplification worth knowing:** the engine does **not** need your
+structural-vs-provisional distinction. It only needs *has* or *hasn't*. Under
+rule 1 every absence in a shipped edition is structural by definition, so the
+distinction stays where it belongs — your curation tool for deciding what is
+ready to ship, never an engine concept.
+
+**What this makes moot, before you spend more on it:** W-15's
+`substitutionNotice` for twelve languages, my engine-side notice map, the
+italic substitution voice, and the whole fallback chain. Do not add notices for
+newly imported languages. (O-15's coverage table is still exactly the right
+measurement — it is now the *shipping gate* rather than a gap report.)
+
+**Verify:** with the index in place, boot Greek at Exodus and confirm a
+Genesis-only edition is absent from the language ring; boot it at Genesis 1 and
+confirm it appears.
+
 ---
 
 ## CONTRACT
@@ -708,7 +824,14 @@ first. Engine half rides the strata-everywhere program in the roadmap.
   (The name was picked for the methodical brother; the role follows the name.)
 
 ### O-11 · The reading vocabulary belongs in the registry
-**Raised:** 2026-07-29 by Orville · **Status: OPEN**
+**Raised:** 2026-07-29 by Orville · **Status: DONE (Wilbur, 2026-07-30)**
+You delivered it before I noticed — `vocabulary` is in `languages.json` for 13
+languages, covering all 10 that can currently be read. Verified: German reads
+`Kapitel` / `Vers` / `v. Chr.` from the registry. The engine's own nine-language
+table is now dead weight and I am deleting it, which finishes most of Howell's
+"the engine holds no human language" ruling: after this a new language needs no
+engine patch to be spoken properly. Only the script tags (`he`, `el`, `la`…)
+still have no registry home — a small future ask, not urgent.
 The third instance of W-15's disease, found while fixing W-16. The words a
 reader sees around a citation — "chapter", "verse", and the era marks — live
 in an engine table (`VOCAB` in volume-configs) covering nine languages. Every

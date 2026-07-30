@@ -242,29 +242,24 @@ const volumeConfigs = {
 };
 
 function makeBibleLabelFormatter({ level, locale, namesMap }) {
-  // ── Vocabulary table (9 languages) ──────────────────────────────────────────
-  const VOCAB = {
-    latin:      { chapter: 'Capitulum',  verse: 'Versus',    bc: 'a.C.n.',      ad: 'p.C.n.'       },
-    greek:      { chapter: '\u039a\u03b5\u03c6\u03ac\u03bb\u03b1\u03b9\u03bf\u03bd', verse: '\u03a3\u03c4\u03af\u03c7\u03bf\u03c2',   bc: '\u03c0.\u03a7.',        ad: '\u03bc.\u03a7.'          },
-    hebrew:     { chapter: '\u05e4\u05bc\u05b6\u05bc\u05e8\u05b6\u05e7',     verse: '\u05e4\u05b8\u05bc\u05e1\u05d5\u05bc\u05e7',   bc: '\u05dc\u05e4\u05e0\u05d4"\u05e1', ad: '\u05dc\u05e1\u05e4\u05d4"\u05e0'  },
-    french:     { chapter: 'Chapitre',   verse: 'Verset',    bc: 'av. J.-C.',   ad: 'ap. J.-C.'    },
-    spanish:    { chapter: 'Cap\u00edtulo',  verse: 'Vers\u00edculo', bc: 'a.C.',       ad: 'd.C.'         },
-    english:    { chapter: 'Chapter',    verse: 'Verse',     bc: 'B.C.',        ad: 'A.D.'         },
-    italian:    { chapter: 'Capitolo',   verse: 'Versetto',  bc: 'a.C.',        ad: 'd.C.'         },
-    portuguese: { chapter: 'Cap\u00edtulo',  verse: 'Vers\u00edculo', bc: 'a.C.',       ad: 'd.C.'         },
-    russian:    { chapter: '\u0413\u043b\u0430\u0432\u0430',      verse: '\u0421\u0442\u0438\u0445',      bc: '\u0434\u043e \u043d.\u044d.',    ad: '\u043d.\u044d.'          }
-  };
-  // LIVE locale (W-16): the names table carries the reader's current
-  // language, so the vocabulary and the numeral system below follow a
-  // language switch instead of freezing at the boot value. `locale` remains
-  // the fallback for volumes/tests that pass no live table.
+  // THE ENGINE HOLDS NO HUMAN LANGUAGE (Howell ruled 2026-07-28; finished
+  // 2026-07-30). A nine-language VOCAB table lived here — the words for
+  // "chapter" and "verse" and the era marks — so every tongue imported beyond
+  // those nine silently fell out onto English ("Chapter 3" under a German
+  // shelf). Wilbur's registry now carries `vocabulary` per language, and it is
+  // the ONLY source: a new language is spoken correctly the moment its data
+  // lands, with no engine patch behind it.
+  //
+  // LIVE locale (W-16): the names table carries the reader's current language,
+  // so the vocabulary and the numeral system below follow a language switch
+  // instead of freezing at the boot value.
   const loc = () => namesMap?.locale || locale;
-  // The REGISTRY leads, the table above is the belt (2026-07-29): VOCAB is
-  // an engine list of 9 languages, so every newly imported tongue — German,
-  // Finnish, Dutch, Hungarian — fell out of it onto English ("Chapter 3"
-  // under a German shelf). `namesMap.vocabulary` carries the registry's own
-  // words when the data provides them.
-  const t = key => namesMap?.vocabulary?.[key] ?? VOCAB[loc()]?.[key] ?? VOCAB.english[key] ?? key;
+  // No word, no substitute — NEVER another language's. A tongue whose registry
+  // entry lacks a word simply shows the bare numeral, which is the form Howell
+  // already ruled sufficient (2026-07-20: chapters are Roman, verses Arabic,
+  // "the numeral system itself says which is which, so neither wears a word").
+  // Honest, language-neutral, and it cannot leak English into a German shelf.
+  const t = key => namesMap?.vocabulary?.[key] ?? '';
 
   // ── Numeral converters ───────────────────────────────────────────────────────
   const toRoman = n => toRomanNumeral(n);
@@ -312,7 +307,7 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     const n = Number(chapterVal);
     const numStr = Number.isFinite(n) ? toNumeral(n) : String(chapterVal ?? item?.id ?? '');
     if (context === 'node') return numStr;
-    return `${t('chapter')} ${numStr}`.trim();
+    return `${t('chapter')} ${numStr}`.trim();  // no word ⇒ the bare numeral
   };
   const formatVerse = ({ item, context }) => {
     const extract = () => {
@@ -327,7 +322,7 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     const n = Number(verseVal);
     const numStr = Number.isFinite(n) ? toNumeral(n) : String(verseVal ?? item?.id ?? '');
     if (context === 'node') return numStr;
-    return `${t('verse')} ${numStr}`.trim();
+    return `${t('verse')} ${numStr}`.trim();  // no word ⇒ the bare numeral
   };
   return ({ item, context }) => {
     if (!item) return '';

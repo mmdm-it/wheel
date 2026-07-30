@@ -710,54 +710,6 @@ export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
   return { items, selectedIndex: selectIndexIn(items, resolvedCenterId), preserveOrder: true };
 }
 
-export function buildBibleSections(manifest, { testamentId, sectionId, namesMap } = {}) {
-  const testaments = manifest?.Gutenberg_Bible?.testaments;
-  if (!testaments) return { items: [], selectedIndex: 0, preserveOrder: false };
-  const items = [];
-  let activeTestament = testaments[testamentId];
-  if (!activeTestament) {
-    const fallbackTestaments = Object.values(testaments);
-    activeTestament = fallbackTestaments[0];
-    testamentId = Object.keys(testaments)[0];
-  }
-  const sections = activeTestament?.sections || {};
-  const activeTestamentId = testamentId || Object.keys(testaments)[0];
-  Object.entries(sections).forEach(([sectionKey, sectionVal], idx) => {
-    items.push({
-      id: sectionKey,
-      name: namesMap?.sections?.[sectionKey] || sectionVal?.name || sectionKey,
-      sort: sectionVal?.sort_number || idx,
-      order: sectionVal?.sort_number || idx,
-      testamentId: activeTestamentId
-    });
-  });
-  items.sort((a, b) => {
-    if (a.sort === b.sort) return (a.name || '').localeCompare(b.name || '');
-    return a.sort - b.sort;
-  });
-  items.forEach((item, idx) => { item.order = idx; });
-
-  const selectedIndex = (() => {
-    if (sectionId) {
-      const idx = items.findIndex(item => item.id === sectionId);
-      if (idx >= 0) return idx;
-    }
-    return 0;
-  })();
-
-  const activeTestamentIdValue = activeTestamentId;
-
-  return {
-    items,
-    selectedIndex,
-    preserveOrder: true,
-    meta: {
-      testament: activeTestament,
-      testamentId: activeTestamentIdValue
-    }
-  };
-}
-
 export function buildBibleBooks(manifest, namesMap = {}) {
   const testaments = manifest?.Gutenberg_Bible?.testaments;
   if (!testaments) return [];

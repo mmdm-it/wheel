@@ -314,24 +314,32 @@ describe('the shelf follows the reader — a live names table', () => {
   });
 
   it('carries the locale with the names — vocabulary and numerals follow', () => {
+    // The WORD comes from the registry (the engine holds none); the NUMERAL
+    // SYSTEM still follows the locale, so both must travel with the table.
     namesMap.books = { APOC: 'Apocalypsis' };
     namesMap.locale = 'latin';
-    namesMap.vocabulary = null;
+    namesMap.vocabulary = { chapter: 'Capitulum' };
     assert.equal(chapter3(), 'Capitulum III', 'Latin: Roman numerals');
     namesMap.locale = 'greek';
+    namesMap.vocabulary = { chapter: 'Κεφάλαιον' };
     assert.equal(chapter3(), 'Κεφάλαιον γʹ', 'Greek: Greek numerals');
     namesMap.locale = 'russian';
+    namesMap.vocabulary = { chapter: 'Глава' };
     assert.equal(chapter3(), 'Глава 3', 'Russian: Arabic numerals');
   });
 
-  it('lets the registry supply vocabulary the engine table lacks', () => {
-    // The engine's VOCAB knows 9 languages; every import beyond them fell
-    // to English. The registry now leads (W-15's lesson generalized).
+  it('the registry is the ONLY source of the word — no English belt', () => {
+    // Howell 2026-07-28: "the hard coded list of languages in the engine is
+    // very troubling... Manifolds don't have languages." The engine's
+    // nine-language table is deleted, so a tongue whose registry entry has no
+    // word shows the BARE NUMERAL — never another language's word. That is the
+    // form already ruled sufficient (2026-07-20: "the numeral system itself
+    // says which is which, so neither wears a word").
     namesMap.locale = 'german';
     namesMap.vocabulary = null;
-    assert.equal(chapter3(), 'Chapter 3', 'unknown to the engine table → English belt');
+    assert.equal(chapter3(), '3', 'no word ⇒ the bare numeral, not English');
     namesMap.vocabulary = { chapter: 'Kapitel', verse: 'Vers' };
-    assert.equal(chapter3(), 'Kapitel 3', 'registry vocabulary wins');
+    assert.equal(chapter3(), 'Kapitel 3', 'the registry supplies the word');
     namesMap.vocabulary = null;
   });
 });
