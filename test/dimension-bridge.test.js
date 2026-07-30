@@ -255,36 +255,36 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
     assert.equal(honest.substituted, undefined, 'a served edition is no substitute');
   });
 
-  it('a live language switch outruns the chain\'s baked text (the stale-Latin bug, 2026-07-28)', async () => {
-    // The boot verse ring bakes each verse's text at CHAIN-BUILD time. The
-    // bug: a later language switch repainted that build-time Latin —
+  it('a live language switch outruns any baked text (the stale-Latin bug, 2026-07-28)', async () => {
+    // The boot verse ring used to BAKE each verse's text at chain-build time.
+    // The bug: a later language switch repainted that build-time Latin —
     // unflagged — because the baked items carried no cache coordinates and
-    // detailFor trusted selected.text regardless of language. Now the items
-    // carry meta and the bake is honored only in its own language.
-    const { buildBibleVerseCousinChain } = await import('../src/navigation/cousin-builder.js');
+    // detailFor trusted `selected.text` regardless of language.
+    // Boot no longer bakes anything (2026-07-30: it uses the continuous chain,
+    // and the baking builder is deleted), so this guards the PROPERTY rather
+    // than the old path: if an item ever arrives carrying text — from a cache,
+    // a snapshot, a future builder — that text is honored ONLY in its own
+    // language. The item is therefore constructed here by hand, exactly as a
+    // baking builder produced one.
     const manifest2 = JSON.parse(readFileSync(
       path.resolve(__dirname, '../test/fixtures/data/gutenberg/manifest.json'), 'utf-8'));
-    // The fixture ships only GENE/001; the builder walks the whole book, so
-    // serve chapter 001 for every GENE chapter — the regression needs only
-    // the first verse's bake.
-    const realFetch = globalThis.fetch;
-    globalThis.fetch = async url => realFetch(
-      /chapters\/GENE\//.test(String(url)) ? './test/fixtures/data/gutenberg/chapters/GENE/001.json' : url);
-    let items;
-    try {
-      ({ items } = await buildBibleVerseCousinChain(manifest2, { bookId: 'GENE', translation: 'VUL' }));
-    } finally {
-      globalThis.fetch = realFetch;
-    }
-    const bootVerse = items.find(v => v && v.id === 'GENE_1_1');
-    assert.match(bootVerse.text, /principio/i, 'the chain baked Latin at build time');
-    assert.ok(bootVerse.meta?.externalFile, 'boot-ring verses now carry cache coordinates');
+    const bakedVerse = {
+      id: 'GENE_1_1',
+      name: '1',
+      level: 'verse',
+      translation: 'VUL',                       // the tongue the bake is IN
+      text: 'In principio creavit Deus cælum et terram.',
+      meta: {
+        bookId: 'GENE', bookEntryId: 'GENE', chapterId: 'GENE:1',
+        verseKey: '1', externalFile: 'test/fixtures/data/gutenberg/chapters/GENE/001.json'
+      }
+    };
     // The chapter is cached (prefetched by the earlier tests). A live DRA
     // selection must render English through the cache — never the bake.
-    const english = detailFor(bootVerse, manifest2, { translation: 'DRA' });
+    const english = detailFor(bakedVerse, manifest2, { translation: 'DRA' });
     assert.match(english.text, /beginning/i, 'the live selection wins over the bake');
     // And in its OWN language the bake is still honest.
-    const latin = detailFor(bootVerse, manifest2, { translation: 'VUL' });
+    const latin = detailFor(bakedVerse, manifest2, { translation: 'VUL' });
     assert.match(latin.text, /principio/i);
   });
 });
