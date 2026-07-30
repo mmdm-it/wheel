@@ -50,11 +50,14 @@ describe('bible adapter', () => {
     assert.equal(normalized.meta.volumeId, 'Gutenberg_Bible');
     assert.equal(normalized.items[0].id, 'volume:Gutenberg_Bible');
     const testaments = normalized.items.filter(i => i.level === 'testament');
+    // Sections are no longer a LEVEL (Howell 2026-07-30): they existed only to
+    // subdivide a testament for the child pyramid, which the star field
+    // solved. Books hang directly off their testament now.
     const sections = normalized.items.filter(i => i.level === 'section');
     const books = normalized.items.filter(i => i.level === 'book');
     const chapters = normalized.items.filter(i => i.level === 'chapter');
     assert.equal(testaments.length, 1);
-    assert.equal(sections.length, 1);
+    assert.equal(sections.length, 0, 'the section level is retired');
     assert.equal(books.length, 1);
     assert.equal(chapters.length, 2);
     assert.equal(normalized.meta.colors.book, '#333');

@@ -98,11 +98,16 @@ export function normalize(raw) {
     const testamentOrder = Number.isFinite(testament?.sort_number) ? testament.sort_number : ti;
     addItem({ id: testamentId, name: testament?.name || testamentId, level: 'testament', parentId: rootId, order: testamentOrder });
 
+    // SECTIONS ARE NOT A LEVEL (Howell 2026-07-30). They were introduced only
+    // to subdivide a testament's books so they would fit the child pyramid;
+    // the star field solved that, and nothing has navigated them since — the
+    // volume enters testament, book, chapter and verse, never section. Books
+    // therefore hang directly off their testament, which is what the reader
+    // has always seen. The manifest keeps its sections (they are real
+    // scholarly divisions and Wilbur's to own) and `sectionId` still rides in
+    // item metadata as provenance; only the navigable LEVEL is retired.
     const sections = testament?.sections || {};
-    Object.entries(sections).forEach(([sectionId, section], si) => {
-      const sectionOrder = Number.isFinite(section?.sort_number) ? section.sort_number : si;
-      addItem({ id: sectionId, name: section?.name || sectionId, level: 'section', parentId: testamentId, order: sectionOrder, meta: { testamentId } });
-
+    Object.entries(sections).forEach(([sectionId, section]) => {
       const books = section?.books || {};
       Object.entries(books).forEach(([bookId, book], bi) => {
         const bookOrder = Number.isFinite(book?.sort_number) ? book.sort_number : (Number.isFinite(book?.book_number) ? book.book_number : bi);
@@ -110,7 +115,7 @@ export function normalize(raw) {
           id: bookId,
           name: book?.book_name || book?.name || bookId,
           level: 'book',
-          parentId: sectionId,
+          parentId: testamentId,
           order: bookOrder,
           meta: { testamentId, sectionId, bookNumber: book?.book_number ?? null }
         });
@@ -141,7 +146,7 @@ export function normalize(raw) {
     });
   });
 
-  const levelOrder = ['root', 'testament', 'section', 'book', 'chapter', 'verse'];
+  const levelOrder = ['root', 'testament', 'book', 'chapter', 'verse'];
   items.sort((a, b) => {
     const lo = levelOrder.indexOf(a.level);
     const ro = levelOrder.indexOf(b.level);
@@ -172,7 +177,6 @@ export function layoutSpec(normalized, viewport) {
   const pyramidCapacity = calculatePyramidCapacity(vp);
   const palette = normalized?.meta?.colors || {
     testament: '#8b6f47',
-    section: '#8b6f47',
     book: '#8b6f47',
     chapter: '#8b6f47'
   };
@@ -296,14 +300,6 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
     };
   }
 
-  if (level === 'section') {
-    return {
-      type: 'card',
-      title: selected.name || id,
-      body: 'Section overview'
-    };
-  }
-
   if (level === 'book') {
     const book = findBook(manifest, id) || {};
     const chapterCount = Object.keys(book.chapters || {}).length;
@@ -344,27 +340,26 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       // stale bookmark override the dimension store (found when the first
       // live swap demo stayed Latin, 2026-07-21).
       const activeTranslation = translation || null;
-      // THE DECLARED ORDER (W-6, Howell ruled 2026-07-24: flagged Latin).
-      // The reader's translation first; failing that, the Vulgate — VISIBLY
-      // MARKED as a substitute, never passed off as the requested edition.
-      // The old promiscuous chain (NAB/BYZ/SYN and then ANY language at all)
-      // is gone: with the deploy filter stripping unlicensed texts, that
-      // chain was poised to serve unmarked anything to everyone.
-      const preferred = activeTranslation && activeTranslation !== 'VUL'
-        ? [activeTranslation, 'VUL'] : ['VUL'];
-      const resolved = getVerseTextResolved(externalFile, verseKey, preferred);
+      // NO FALLBACK, NO SUBSTITUTE, NO MARK (Howell, RULED 2026-07-30 — see
+      // HANDOFF CONTRACT, "NO ASTERISKS"). The reader's own edition or
+      // NOTHING. W-6's flagged Latin is retired entirely: it showed a verse in
+      // a tongue the reader did not ask for and apologised for it in the
+      // middle of scripture, which is the excuse this ruling forbids. An
+      // offered edition is complete, so a verse it lacks was never written —
+      // and a gap needs no explanation.
+      //
+      // With NO edition certified there is no active translation at all, so
+      // nothing resolves and the sector stays empty. That is the honest face
+      // of a volume with nothing to read.
+      const resolved = activeTranslation
+        ? getVerseTextResolved(externalFile, verseKey, [activeTranslation])
+        : null;
       readAhead(selected, manifest);
       // uniform: every verse shares the longest verse's type size (Howell
       // 2026-07-21) — a constant reading page, not size-by-length.
-      if (resolved) {
-        const substituted = activeTranslation && resolved.translation !== activeTranslation;
-        return {
-          type: 'text', text: resolved.text, uniform: true,
-          ...(substituted ? { substituted: { edition: resolved.translation } } : {})
-        };
-      }
-      // The chapter is on its way; the repaint comes with it. An empty beat
-      // beats a wrong-language bake.
+      if (resolved) return { type: 'text', text: resolved.text, uniform: true };
+      // The chapter may still be in flight; the repaint comes with it. Baked
+      // text is honoured only in its own language (the stale-Latin lesson).
       return { type: 'text', text: bakedText, uniform: true };
     }
     return { type: 'text', text: bakedText || selected.name || id || '', uniform: true };

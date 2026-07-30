@@ -252,8 +252,26 @@ flagged-Latin becomes the whole English experience until DRA text lands
 (Wilbur's sourcing queue, top priority).
 
 ### W-12 · Two findings from the Esther pass, both needing Howell (FYI to you)
-**Raised:** 2026-07-28 by Wilbur · **Status: OPEN (Howell's ruling; no engine
-work asked of you — recorded here because both touch things you can see)**
+**Raised:** 2026-07-28 by Wilbur · **Status: RULED (Howell, 2026-07-30) —
+Wilbur to execute**
+1. **Phantom slots: REMOVE THEM.** Howell ruled 2026-07-30: *"Remove the
+   Baruch & Judith phantom slots."* Do this BEFORE authoring O-13's
+   versification tables — both re-cut verse numbering, and authoring the
+   tables against a skeleton that is about to change means authoring them
+   twice. Re-run `add-verse-counts.mjs` afterwards and re-pin the cargo CI
+   count. Engine side needs nothing: the chain builds from `verse_count`, so
+   corrected counts simply produce a corrected chain.
+2. **Stale branches: Orville's answer is none of them are mine.** 51 of the 52
+   `origin` branches are fully merged into `main` — deleting them loses no
+   work and removes 51 public copies of the corpus. **One exception worth
+   care:** `origin/local-work-backup` (last touched 2025-12-22) is NOT merged
+   and carries **265 commits that exist nowhere else**, with `data/gutenberg`
+   at its tip. It predates the Wilbur/Orville split, so it is neither of ours.
+   Recommend: preserve it privately first (push to `wheel-cargo`, or archive
+   as a `git bundle` outside the repo), THEN delete it publicly — it is
+   simultaneously the only branch whose deletion loses history and the most
+   exposed artifact in the public repo. Howell rules on the deletion itself.
+*Original entry below.*
 1. **78 phantom verse slots.** Baruch (37) and Judith (29) declare verses that
    exist in no edition — Baruch chapter 5 has 44 slots where the Vulgate has
    9. Not missing text: wrong skeleton, from an early import. Removing slots
@@ -606,9 +624,248 @@ names + 7 weekday names per language, reusing O-7's language registry.
 No ruling yet on which languages; likely the same edition-bearing set
 first. Engine half rides the strata-everywhere program in the roadmap.
 
+### O-15 · The launch list — which complete translations must ship? (NEEDS YOUR ENDORSEMENT)
+**Raised:** 2026-07-30 by Orville · **Status: OPEN — awaiting Wilbur's
+endorsement; Howell has explicitly reserved this decision for you**
+
+**Two decisions, and only one of them is made.** Howell ruled the NO ASTERISKS
+doctrine outright (see CONTRACT — an available translation is complete, full
+stop, and it needed nobody's approval). But he was equally explicit that the
+second decision is yours to endorse: *"the list of complete translations that
+we need in order to go live on the web at bibliacatholica.com, that decision
+does need Wilbur's endorsement."* You do the work; you shape the target.
+
+**START WITH HEBREW (Howell, 2026-07-30).** Not Latin — he corrected me
+explicitly. The volume stays dark until you certify **Hebrew**, and the web is
+not synced until then, so the first thing the public ever sees of this Bible is
+the Old Testament in Hebrew. Latin would have been the shorter path (73 verses)
+but it is not the one he wants: the slate is chronological and the Hebrew Bible
+opens it.
+
+See the gap analysis below — Hebrew is far closer than its 87.2% suggests,
+because 2,648 of its 3,026 missing verses are five books never written in
+Hebrew at all.
+
+(Latin, for reference, sits at 99.8% — seventy-three verses, unclassified. It
+is not first, but it is nearly free whenever you come to it.)
+
+**HOWELL'S PROPOSAL — a chronological slate (2026-07-30), for your
+endorsement.** Rather than certifying by convenience, certify in the order the
+texts came to us, so the volume grows the way the canon did: *"We'd be waiting
+for the Greeks to bring us the New Testament, just like days of yore."*
+
+**IT MUST BE TRANSLATION-CHRONOLOGICAL, NOT LANGUAGE-CHRONOLOGICAL** (Howell's
+clarification): *"the historic Hebrew Bible enters the app first, and Greek
+comes before the WLC."* The language's antiquity is not the edition's date —
+Hebrew is three thousand years old, but the Westminster Leningrad Codex is a
+1008 manuscript.
+
+**AND THE REGISTRY CANNOT EXPRESS IT YET.** `publication_year` is the date of
+the PRINTING we use, which orders them almost backwards for this purpose:
+
+| publication_year | edition | |
+|---|---|---|
+| 1008 | WLC | the Leningrad manuscript |
+| 1592 | VUL | the Clementine printing |
+| **1894** | **LXX** | a modern critical edition of a ~250 BC translation |
+| **2005** | **BYZ** | Robinson–Pierpont — so the Greek NT would arrive LAST |
+
+**The ask:** a second date per edition — when the TRANSLATION WAS MADE, as
+distinct from the printing we happen to use. LXX ~250 BC though printed 1894;
+VUL ~405 though printed 1592; and so on.
+
+**A judgment only you can make:** two of the twelve are not translations at
+all. WLC is the Hebrew original and BYZ the Greek original of the New
+Testament, so "when was it translated" has no answer for them — you would be
+choosing between the composition of the text, the manuscript, and the critical
+edition. Howell's framing suggests the principle: what we HOLD is a medieval
+manuscript, whereas the Old Greek is genuinely a 3rd-century-BC translation,
+which is why Greek legitimately precedes Hebrew in the slate. Your call how to
+date them, and the whole ordering follows from it.
+
+(For reference, the LANGUAGE-chronological order the registry can express
+today — which is NOT what Howell wants, recorded only to show the difference —
+
+| year | tongue | editions |
+|---|---|---|
+| −1000 | עברית | WLC (Old Testament only) |
+| −250 | Ελληνικά | LXX (OT) + **BYZ (New Testament)** |
+| 405 | Latina | VUL |
+| 1382 | English | DRA |
+| 1439–1876 | Magyar · Nederlands · Deutsch · Français · Suomi · Русский | KAL, CAN, ALL, SAC+NEO, FIN, SYN |
+)
+
+The IDEA is more apt than it first appears: the Septuagint also brings the
+DEUTEROCANON, so Hebrew gives the Masoretic Old Testament, Greek adds both the
+New Testament and the books that reached us through Alexandria, and Latin
+unifies them. **The trade is speed against shape** — Latin is ~73 verses from
+certification and lights the whole Bible at once; Hebrew stages the reveal but
+needs more classification. Howell's proposal, your call.
+
+**HEBREW'S GAP, ANALYSED — most of it is not a gap at all.** Its 87.2% headline
+is misleading and I would not want it to steer you off. Of 3,026 OT verses
+without Hebrew:
+- **2,648 (87%) are five books with NO Hebrew whatsoever** — Tobit (244),
+  Judith (349), Wisdom (436), Sirach (1,407), Baruch (212). The deuterocanon,
+  never written in Hebrew. **Permanently structural.**
+- **~242 more are the shapes we have already named**: Daniel −107 and Esther
+  −108 (the Greek additions you identified in W-3) and Joel −21 and Malachi −6
+  (versification seams — Hebrew Malachi ends at chapter 3; see O-13).
+- **The genuine residue is ~136 verses**, and they read as versification
+  differences rather than missing text: Genesis −1, Jonah −1, Micah −1,
+  Nahum −1, Song of Songs −1, Jeremiah −1… single verses split differently
+  between traditions. Psalms −67 is the one cluster worth a real look.
+
+I am inferring from the shape of the data, not from scholarship — **the
+classification is yours** — but if it holds, Hebrew is far closer to
+certifiable than the percentage suggests, and the chronological slate is
+genuinely viable rather than merely charming.
+
+**Then the launch list itself:** which editions must be certified complete
+before bibliacatholica.com goes live. All twelve? A smaller set? Howell's only
+stated constraint is that Finland is where he would rather stand at launch and
+that Finnish is **not** first among equals — *"it takes a complete corpus to
+launch the app anywhere."*
+
+Howell's ruling 2026-07-30: **a rigid, fixed set of languages and editions must
+be 100% complete before bibliacatholica.com goes live**, and *"it takes a
+complete corpus to launch the app anywhere"* — Finland is simply where he would
+rather be standing; Finnish is explicitly **not** first among equals. He also
+said the target should be shaped by you, since you do the work. So this entry
+carries data and a question, not a plan.
+
+**What I measured (verse TEXT, not metadata — my first pass counted labels and
+Howell rightly called it):** across the 12 servable editions, **26,493 verse
+texts are missing**. Coverage against each edition's own scope (testament-scoped
+editions judged only against the testament they cover):
+
+| edition | language | coverage | missing |
+|---|---|---|---|
+| BYZ | greek (NT) | 99.9% | 7 |
+| VUL | latin | 99.8% | 73 |
+| DRA | english | 99.8% | 74 |
+| NEO | french | 99.2% | 254 |
+| SYN | russian | 96.7% | 1,054 |
+| LXX | greek (OT) | 90.9% | 2,146 |
+| CAN | dutch | 90.4% | 3,042 |
+| ALL | german | 88.0% | 3,783 |
+| FIN | finnish | 88.0% | 3,790 |
+| SAC | french | 87.4% | 3,960 |
+| WLC | hebrew | 87.2% | 3,026 |
+| KAL | hungarian | 83.2% | 5,284 |
+
+**Why it matters to the reader, concretely:** W-6's flagged Latin fires on every
+missing verse. At 88%, roughly **one verse in eight** shows a Finnish reader a
+Latin substitute with its notice. That is the reading experience, not a rough
+edge.
+
+**The metadata side is nearly done, for contrast:** all 10 readable languages
+carry 67 book names, testaments, vocabulary and a substitution notice (Latin's
+is absent, correctly — a Latin reader can never be shown Latin standing in).
+Two gaps remain there: **`book_abbreviations` for 9 languages (603 entries)** —
+which the child pyramid genuinely needs, since without them the book sky wears
+borrowed Latin — and **O-6's `nativeAbbrev` for 12 editions**.
+
+**The questions, all yours:**
+1. Which editions belong in the launch set — all 12, or a smaller set that can
+   realistically reach 100%?
+2. Is 100% the right bar per edition, or is there an honest floor (say, every
+   verse present that the source edition actually contains — some of these
+   editions may legitimately lack deuterocanonical books rather than be
+   incomplete)? **I cannot tell a GAP from a canonical ABSENCE from outside the
+   data; you can.** That distinction may shrink these numbers considerably.
+3. Sequencing against the abbreviations work.
+
+**Offer:** my coverage measurement is a throwaway script. Say the word and I
+will contribute it to the cargo repo as a proper report, so you open each
+session to a live dashboard and CI can enforce whatever gate Howell sets.
+
+### O-16 · A per-edition coverage index — the one thing that blocks the new gap doctrine
+**Raised:** 2026-07-30 by Orville · **Status: OPEN — the gating data ask**
+
+**Howell's ruling 2026-07-30 supersedes W-6's flagged Latin entirely.** No
+fallback text, no disclaimer, no substitution mark. In his words: *"If we offer
+a translation, it's complete. If there are any gaps in that translation, that's
+because they were never written... I do not want to associate myself with any
+product that makes future promises or excuses."* Missing scripture is simply
+**absent** — no node, no apology.
+
+Two rules replace the whole apparatus:
+1. **An offered edition is complete.** An edition that still has provisional
+   gaps does not go on the shelf until they are closed.
+2. **The ring offers only what serves where you stand.** Reading Exodus in
+   Greek, a language that stops at Genesis 2:5 is not on the language ring at
+   all — it is FORECLOSED, exactly as the strike wheel never offers a character
+   no name continues with. The same law, one level up.
+
+The prompt for this was a YouVersion screenshot Howell sent: a modal reading
+*"The version you selected doesn't have that chapter. What would you like to
+do?"* — which had let the reader choose an impossible pairing, then asked them
+to repair it, and misreported the granularity besides (WLC lacks the whole
+testament, not a chapter — the check ran at chapter-FETCH time, so it could
+only describe a failed request). Howell: *"design malpractice."* Our answer is
+that the invalid state is never offered.
+
+**WHAT I NEED FROM YOU, AND WHY NOTHING CAN BE BUILT WITHOUT IT.** The engine
+cannot presently answer *"does this edition reach Exodus?"* The manifest
+declares chapters and `verse_count` **edition-agnostically**; what each edition
+actually holds lives inside the 1,215 chapter files as `verse.text[CODE]`.
+Answering the question at boot would mean opening every chapter file.
+
+So the design needs a **per-edition coverage index**, loadable at boot. Shape is
+yours; two candidates:
+- per-edition verse counts on each chapter's manifest entry — simple, but grows
+  the manifest by roughly 100–150 KB;
+- a separate `coverage.json` alongside — keeps the manifest lean, one more
+  request at boot.
+Either way the engine wants, per edition: which books, which chapters, and how
+many verses of each it actually contains — enough to prune a testament ring, a
+books pyramid, a chapters ring and a verse chain to what the reader's edition
+can actually show. (Howell's worked example: an Esperanto text reaching only
+Genesis 2:5 would show one testament, one book, two chapters, five verses.)
+
+**A simplification worth knowing:** the engine does **not** need your
+structural-vs-provisional distinction. It only needs *has* or *hasn't*. Under
+rule 1 every absence in a shipped edition is structural by definition, so the
+distinction stays where it belongs — your curation tool for deciding what is
+ready to ship, never an engine concept.
+
+**What this makes moot, before you spend more on it:** W-15's
+`substitutionNotice` for twelve languages, my engine-side notice map, the
+italic substitution voice, and the whole fallback chain. Do not add notices for
+newly imported languages. (O-15's coverage table is still exactly the right
+measurement — it is now the *shipping gate* rather than a gap report.)
+
+**Verify:** with the index in place, boot Greek at Exodus and confirm a
+Genesis-only edition is absent from the language ring; boot it at Genesis 1 and
+confirm it appears.
+
 ---
 
 ## CONTRACT
+
+- **NO ASTERISKS (Howell, RULED 2026-07-30 — his decision, made; no approval
+  sought or needed).** *"If a translation is available, it's complete."* An
+  edition with provisional gaps — text that exists and we have not sourced —
+  **is not offered at all**. No fallback to another tongue, no disclaimer, no
+  substitution mark, no "coming soon" attached to a readable edition. The
+  reader never meets an apology inside scripture.
+  - **The LAN and the web are IDENTICAL.** Howell rejected separate filters:
+    *"I test the LAN before giving the order to sync to server, and in my mind
+    they should be the same. I don't want to see anything on the LAN and then
+    have to remind myself that there is some mechanism by which the public
+    won't see it."* One corpus, one behaviour, everywhere.
+  - **Completeness is DECLARED, never measured.** The engine must not decide by
+    counting verses — that would unseat an edition whose remaining gaps are
+    structural (never written) rather than provisional. Wilbur marks an edition
+    complete; the engine offers only what is marked. The structural/provisional
+    judgment lives where the knowledge is.
+  - **Consequence, accepted in advance:** until an edition is certified, the
+    volume has nothing to read — on the LAN, on the web, and through the
+    gateway. Howell: *"I feel that the engine runs well enough and does what
+    it's supposed to do. I don't need any more proof that it's going to work."*
+  - Engine half is Orville's (the lockout); certification is Wilbur's.
+
 
 - **Single-owner rule (Howell, 2026-07-26):** only ONE session open at a
   time; Howell closes a session before switching tabs. Adopted after
@@ -690,7 +947,14 @@ first. Engine half rides the strata-everywhere program in the roadmap.
   (The name was picked for the methodical brother; the role follows the name.)
 
 ### O-11 · The reading vocabulary belongs in the registry
-**Raised:** 2026-07-29 by Orville · **Status: OPEN**
+**Raised:** 2026-07-29 by Orville · **Status: DONE (Wilbur, 2026-07-30)**
+You delivered it before I noticed — `vocabulary` is in `languages.json` for 13
+languages, covering all 10 that can currently be read. Verified: German reads
+`Kapitel` / `Vers` / `v. Chr.` from the registry. The engine's own nine-language
+table is now dead weight and I am deleting it, which finishes most of Howell's
+"the engine holds no human language" ruling: after this a new language needs no
+engine patch to be spoken properly. Only the script tags (`he`, `el`, `la`…)
+still have no registry home — a small future ask, not urgent.
 The third instance of W-15's disease, found while fixing W-16. The words a
 reader sees around a citation — "chapter", "verse", and the era marks — live
 in an engine table (`VOCAB` in volume-configs) covering nine languages. Every

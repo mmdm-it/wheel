@@ -1,6 +1,6 @@
 import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX } from './geometry/focus-ring-geometry.js';
 import { NavigationState } from './navigation/navigation-state.js';
-import { buildBibleVerseCousinChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
+import { buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
 import { FocusRingView } from './view/focus-ring-view.js';
 import { VolumeLogo } from './view/volume-logo.js';
@@ -23,7 +23,6 @@ export {
   FocusRingView,
   VolumeLogo,
   validateVolumeRoot,
-  buildBibleVerseCousinChain,
   buildBibleBookCousinChain
 };
 

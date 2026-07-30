@@ -1,4 +1,4 @@
-import { createApp, getViewportInfo, buildBibleVerseCousinChain, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
+import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
 import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
@@ -8,6 +8,7 @@ import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js'
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
+import { recall, remember } from './core/session-memory.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
@@ -92,16 +93,56 @@ const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 // ("behind the user's head"). Selection is still tap-for-now — rotation
 // (magnifier-as-selection) is the next build.
 const STRATA_DEPTHS = [1.0, 0.4, 0.2];  // scale, indexed by levels behind the front
-const STRATA_BLURS = [0, 1.5, 3];       // px local, same index — front sharp,
-// one back a soft rack-focus, two back (the primary under the tertiary) twice
-// that so it reads further away. Kept GENTLE on purpose: a receded plane's
-// nodes must stay legible, never dissolve into a smear (Howell 2026-07-27).
+const STRATA_BLURS = [0, 1, 2];         // px local, same index — front sharp,
+// one back a soft rack-focus, two back twice that so it reads further away.
+// Kept GENTLE on purpose: a receded plane's nodes must stay legible, never
+// dissolve into a smear (Howell 2026-07-27). Eased again 2026-07-30 (1.5/3 →
+// 1/2) now that the deepest plane is the app's FIRST screen: the boot funnel
+// is a stranger's introduction, so what waits behind the glass has to be
+// legible enough to be worth travelling toward.
 // Tangent fill span (radians past each viewport exit), sized to reach the
 // screen edge at each recede scale — the deeper the ring, the more of the
 // straight chain climbs into view (Howell 2026-07-21). Level 0 = arc-only.
 const STRATA_TANGENT_SPANS = [0, 1.1, 2.2];
 const CHOOSERS = [
+  // THE STRATA INVERTED (Howell 2026-07-30). The z-axis used to disagree with
+  // itself: the SEQUENCE was right (language, then edition — an edition's
+  // options depend on the language) but the DEPTH was backwards, seating the
+  // narrower, dependent thing FURTHER from the reader than the set containing
+  // it. Howell: "translations are subsets of languages, but they are shown as
+  // supersets." Now nesting and depth agree — language deepest (the largest
+  // set), edition between, the text in front (the element itself), so
+  // travelling inward is narrowing and travelling outward is broadening, the
+  // same logic the wheel already uses radially.
+  // NOTE the planes keep their own DRESS: `mirrored` and `centerMag` describe
+  // how a plane looks, not what it holds, so the edition inherits the
+  // mirrored ring and the language the centred magnifier.
   { id: 'secondary', mirrored: true,
+    // Reads the PREVIEW language while the language ring is being turned, so
+    // the receded edition plane keeps pace with the finger (Howell 2026-07-30)
+    // — the same live courtesy the child pyramid has always shown the ring.
+    items: () => dimensionBridge.translationsOf(strataPreview?.language),
+    previewSelected: () => strataPreview?.edition || null,
+    // Magnified node: the full, spelled-out translation title; the rest keep
+    // the abbreviation/key — Howell 2026-07-21.
+    // The PREVIEW language is passed as the hint: the "coming soon" node is a
+    // single sentinel carrying no language of its own, so while a language is
+    // merely passing under the lens its placeholder must be told whose promise
+    // it is — otherwise Italian's held shelf wore Finnish's words (Howell
+    // spotted it on the phone, 2026-07-30).
+    label: (key, isMagnified) => {
+      const hint = strataPreview?.language || null;
+      return isMagnified
+        ? dimensionBridge.translationName(key, hint)
+        : dimensionBridge.translationAbbrev(key, hint);
+    },
+    selected: () => dimensionBridge.getSelection().translation,
+    select: key => {
+      const ok = dimensionBridge.setTranslation(key);
+      window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
+      return ok;
+    } },
+  { id: 'tertiary', mirrored: false, centerMag: true,
     items: () => dimensionBridge.languagesAvailable(),
     label: id => dimensionBridge.languageLabel(id), // each tongue names itself
     selected: () => dimensionBridge.getSelection().language,
@@ -109,20 +150,18 @@ const CHOOSERS = [
       const ok = dimensionBridge.setLanguage(id);
       window.__wheelTapTrace?.push({ ev: 'select-lang', id, ok: ok ? 1 : 0 });
       return ok;
-    } },
-  { id: 'tertiary', mirrored: false, centerMag: true,
-    items: () => dimensionBridge.translationsOf(),
-    // Magnified node: the full, spelled-out translation title (centred in the
-    // magnifier); the rest keep the abbreviation/key — Howell 2026-07-21.
-    label: (key, isMagnified) => (isMagnified ? dimensionBridge.translationName(key) : dimensionBridge.translationAbbrev(key)),
-    selected: () => dimensionBridge.getSelection().translation,
-    select: key => {
-      const ok = dimensionBridge.setTranslation(key);
-      window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
-      return ok;
     } }
 ];
 let strataFront = 0;                       // 0 = primary at front
+// THE LIVE PREVIEW (Howell 2026-07-30): while a chooser ring is being turned,
+// everything AHEAD of it (nearer the reader) follows the node passing under
+// the lens, before anything commits — turn the language wheel and the receded
+// edition plane re-stocks itself and the verse behind the glass changes
+// tongue, exactly as the child pyramid has always tracked the focus ring.
+// Null while nothing is being turned; the choosers fall back to committed
+// state. Preview always ENDS in a commit (the springback settles the nearest
+// node), so what the reader watched is what they get.
+let strataPreview = null;                  // { language, edition } | null
 const isStrataOpen = () => strataFront !== 0;
 const isSecondaryOpen = isStrataOpen;      // the primary pointer guard reads this
 // The dimension feature lives IN the detail sector: strata recede only when
@@ -640,9 +679,12 @@ function renderStack() {
     const pos = ci + 1;
     if (pos > strataFront) { hideStratum(strataLayer, ch.id); return; }
     const items = ch.items();
+    // A receded plane shows its PREVIEW selection when one is running, so the
+    // edition under the lens tracks the language being turned behind it.
+    const shown = (pos !== strataFront && ch.previewSelected?.()) || ch.selected();
     const g = renderStratum(strataLayer, {
       id: ch.id, viewport, items,
-      selectedIndex: Math.max(0, items.indexOf(ch.selected())),
+      selectedIndex: Math.max(0, items.indexOf(shown)),
       mirrored: ch.mirrored,
       labelFor: ch.label,
       centerMagnified: ch.centerMag
@@ -711,6 +753,32 @@ function renderFrontStratumAt(centerIndex, rotating = true) {
     rotating
   });
   setStratumVisual(g, 1, 0, 1); // front plane: sharp, in place
+  if (rotating) previewFromLens(ch, items, centerIndex);
+}
+
+// What is under the lens RIGHT NOW, previewed into every plane ahead of this
+// one. Repainting on every pointermove would re-flow the verse dozens of times
+// a second (the layout measures real glyphs), so this fires only when the
+// nearest node actually CHANGES — a handful of times across a whole drag.
+let lastPreviewKey = null;
+function previewFromLens(ch, items, centerIndex) {
+  const idx = Math.max(0, Math.min(items.length - 1, Math.round(centerIndex)));
+  const item = items[idx];
+  if (item === undefined || item === null) return;
+  const key = `${ch.id}:${item}`;
+  if (key === lastPreviewKey) return;
+  lastPreviewKey = key;
+
+  if (ch.id === 'tertiary') {
+    // A language is passing: restock the edition plane and take its default,
+    // exactly the edition committing this language would choose.
+    const editions = dimensionBridge.translationsOf(item) || [];
+    strataPreview = { language: item, edition: editions[0] || null };
+  } else {
+    strataPreview = { ...(strataPreview || {}), edition: item };
+  }
+  renderStack();          // receded planes re-stock and re-seat
+  previewPrimary(strataPreview); // and the text behind the glass follows
 }
 
 // Ease the ring from wherever it settled (maybe out in the overrun) back to the
@@ -718,7 +786,15 @@ function renderFrontStratumAt(centerIndex, rotating = true) {
 // snap-glide into the lens. Commit on arrival (the settle → the live preview).
 function springbackStrata(fromCenter, toIndex, ch, items) {
   if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; }
-  const commit = () => { renderFrontStratumAt(toIndex, false); if (ch) ch.select(items[toIndex]); };
+  const commit = () => {
+    renderFrontStratumAt(toIndex, false);
+    if (ch) ch.select(items[toIndex]);
+    // The preview has become the truth: drop it so every plane reads the
+    // committed state again. The settle lands on the node the reader was
+    // already watching, so nothing on screen changes at this instant.
+    strataPreview = null;
+    lastPreviewKey = null;
+  };
   if (Math.abs(fromCenter - toIndex) < 0.001) { commit(); return; }
   let start = 0;
   const step = now => {
@@ -890,11 +966,17 @@ const dimensionAvailable = () => dimensionBridge.languagesAvailable().length > 0
 // the tertiary always has a node to show.
 const maxStrataFront = () => CHOOSERS.length; // primary(0) → secondary(1) → tertiary(2)
 
+// THE GLOBE TRAVELS INWARD, ALWAYS (Howell ruling 1, 2026-07-30):
+// language (2) → edition (1) → the text (0) → and round again to language.
+// One rule, no context-dependence. The old cycle travelled outward, which
+// asked the reader to move AWAY from the text in order to narrow their
+// choice. A returning reader mostly presses this never — they just read — so
+// the funnel's coherence is worth more than keeping any one chooser nearest.
 function cycleStrata() {
   if (!dimensionAvailable()) return;
   const max = maxStrataFront();
   const from = strataFront;
-  strataFront = strataFront >= max ? 0 : strataFront + 1;
+  strataFront = strataFront <= 0 ? max : strataFront - 1;
   if (from === strataFront) return;
   transitionStrata(from, strataFront);
   // The globe turns with the recede — same duration, settling together.
@@ -916,13 +998,20 @@ function resetStrata() {
 // (including a gateway transit) resets the stack. The door is declared by
 // the adapter (dimensionFrontDoorAt), so the host stays volume-agnostic.
 let dimensionFrontDoorAt = () => false;
+// Repaints the PRIMARY for a previewed language/edition while a chooser is
+// being turned — assigned by bootVolume, which owns the adapter and manifest.
+let previewPrimary = () => {};
 function updateDimensionButton() {
   if (!dimensionButton) return;
   if (cornerIconHold) return; // frozen mid-wipe: the icon is part of the image
   const atFrontDoor = (() => {
     try { return Boolean(dimensionFrontDoorAt(currentApp?.nav?.getCurrent?.())); } catch (_) { return false; }
   })();
-  const show = dimensionAvailable() && (detailSectorVisible || atFrontDoor);
+  // While a stratum is forward the globe is the ONLY way onward, so it must
+  // show regardless of what the primary is doing behind the glass — this is
+  // the boot state itself under the 2026-07-30 funnel (Howell ruling 2), and
+  // the reader would otherwise be stranded in the language chooser.
+  const show = dimensionAvailable() && (detailSectorVisible || atFrontDoor || isStrataOpen());
   const arriving = show && dimensionButton.hidden;
   dimensionButton.hidden = !show;
   // The entrance: the globe appears with a quick turn when the detail
@@ -936,6 +1025,21 @@ function refreshDimensionButton() {
   if (!dimensionButton) return;
   resetStrata();
   updateDimensionButton();
+}
+// THE BOOT FUNNEL (Howell ruling 2, 2026-07-30): every launch opens on the
+// LANGUAGE plane, with the edition and the text receding behind it. The
+// reader travels inward — language, edition, text — so the instrument teaches
+// its third gesture by requiring it rather than by explaining it, and the
+// first question a stranger is asked is the one they can always answer.
+// Every launch, not just the first: it confirms a returning reader's language
+// and edition, "and I don't consider two quick taps to be an undue burden."
+// Revisitable once real readers report.
+function openBootFunnel() {
+  if (!dimensionButton || !dimensionAvailable()) return false;
+  strataFront = maxStrataFront();
+  renderStack();
+  updateDimensionButton();
+  return true;
 }
 if (dimensionButton) {
   dimensionButton.addEventListener('click', cycleStrata);
@@ -1057,11 +1161,22 @@ function resolveVolumeFromPath(path) {
   return match?.id || null;
 }
 
-async function loadConfig(volumeOverride = null, searchOverride = null) {
+// Which volume this boot is for, decided from override/param/path WITHOUT
+// touching the network. Split out of loadConfig so the reveal decision — which
+// must happen BEFORE the manifest loads, to hide the wheel without a flash —
+// can consult the volume's own config rather than playing for whichever volume
+// booted first (2026-07-30).
+function resolveVolumeId(volumeOverride = null, searchOverride = null) {
   const params = new URLSearchParams(searchOverride ?? window.location.search);
   const path = (window.location.pathname || '').toLowerCase();
   const paramVolume = params.get('volume');
-  const resolvedVolume = volumeConfigs[volumeOverride]?.id || volumeConfigs[paramVolume]?.id || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
+  return volumeConfigs[volumeOverride]?.id || volumeConfigs[paramVolume]?.id
+    || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
+}
+
+async function loadConfig(volumeOverride = null, searchOverride = null) {
+  const params = new URLSearchParams(searchOverride ?? window.location.search);
+  const resolvedVolume = resolveVolumeId(volumeOverride, searchOverride);
   const config = volumeConfigs[resolvedVolume];
   const manifest = await fetchManifest(resolvedVolume);
   const root = config.extractRoot(manifest);
@@ -1171,29 +1286,15 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   if (!payload) return;
   window.__wheelTapTrace?.push({
     ev: 'render-payload', tr: translation || '',
-    sub: payload.substituted?.edition || '',
     txt: String(payload.text || '').slice(0, 14)
   });
 
-  // A substituted verse's footer speaks the reader's CHOSEN language (the
-  // secondary stratum's selection), not the substitute's — W-6, the ruled
-  // mark (the ?w6mark bench scaffold retired with the ruling, 2026-07-28).
-  if (payload?.type === 'text' && payload.substituted) {
-    payload.substituted.notice = dimensionBridge.substitutionNotice();
-    // The notice speaks the READER'S language, so it carries that language's
-    // script and direction — a Hebrew notice must run RTL even though the
-    // Latin verse above it runs LTR (W-1 + W-6 meeting).
-    const readerEdition = dimensionBridge.getSelection().translation;
-    payload.substituted.lang = dimensionBridge.editionLang(readerEdition);
-    payload.substituted.dir = dimensionBridge.editionDirection(readerEdition);
-  }
-  // W-1: the text is stamped with the script it is ACTUALLY in — the
-  // substituting edition's when the Vulgate stands in, not the one the
-  // reader asked for (Hebrew requested, Latin served ⇒ the page reads LTR).
+  // W-1: the text is stamped with the script it is in. With substitution
+  // retired (NO ASTERISKS, 2026-07-30) the text is always the reader's own
+  // edition, so there is only one script it can be.
   if (payload?.type === 'text' && payload.uniform) {
-    const shown = payload.substituted?.edition || translation || null;
-    payload.dir = dimensionBridge.editionDirection(shown);
-    payload.lang = dimensionBridge.editionLang(shown);
+    payload.dir = dimensionBridge.editionDirection(translation);
+    payload.lang = dimensionBridge.editionLang(translation);
   }
 
   const plugin = detailRegistry.getPlugin(payload);
@@ -1722,7 +1823,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   cornerIconHold = Boolean(transit?.snapshot);
   // The splash reveal is initial-load only, never a gateway transit. Decide
   // now and hide the live wheel so it can be dissolved into, not popped on.
-  const playSplash = !firstBootDone && bootSplashShouldPlay();
+  // THE REVEAL IS DECLARED BY THE VOLUME (Howell 2026-07-30). It was playing
+  // for whichever volume happened to boot first, so a volume that boots into
+  // its strata funnel had the line-drawing overture running behind it — an
+  // arrival animation for an instrument the reader was already being asked to
+  // steer. A volume now opts in (`bootSplash` in volume-configs), and opts
+  // back in when it has a reveal of its own.
+  const playSplash = !firstBootDone
+    && volumeConfigs[resolveVolumeId(volumeOverride, searchOverride)]?.bootSplash === true
+    && bootSplashShouldPlay();
   firstBootDone = true;
   if (playSplash) {
     if (svg) svg.style.opacity = '0';
@@ -1731,16 +1840,23 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const cr = document.getElementById('copyright-notice');
     if (cr) cr.style.opacity = '0';
   }
-  const { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
+  let { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
   dimensionBridge.setTranslationsMeta(translationsMeta);
   dimensionBridge.setLanguagesMeta(supplemental?.languagesMeta || null);
-  // Seed the dimension state with the volume's default translation, so the
-  // secondary/tertiary strata and the primary text all agree from boot —
-  // unless a sticky choice already survived a gateway/reboot.
-  if (!dimensionStore.getState().language && options.translation) {
-    dimensionBridge.setTranslation(options.translation);
+  // Seed the dimension state, in order of authority: a choice already sticky
+  // in THIS page session (a gateway round trip) wins; else the reader's
+  // REMEMBERED edition from a previous launch (Howell ruling 3, 2026-07-30 —
+  // the boot funnel confirms their language and edition rather than asking
+  // again); else the volume's pinned default. `setTranslation` refuses an
+  // edition that is no longer servable, so a remembered choice that has since
+  // been withdrawn falls through to the default rather than stranding.
+  if (!dimensionStore.getState().language) {
+    const remembered = recall(volume).edition;
+    if (!(remembered && dimensionBridge.setTranslation(remembered)) && options.translation) {
+      dimensionBridge.setTranslation(options.translation);
+    }
   }
   refreshDimensionButton(); // show the globe only where a dimension exists
   // The dividers only in volumes that declare search, only while browsing —
@@ -1758,8 +1874,29 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
   if (!playSplash) updateSearchButton();
   // The sticky dimension choice (survives reboots/gateways) wins over the
-  // volume's pinned default.
-  const activeTranslation = () => dimensionStore.getState().edition || options.translation || null;
+  // volume's pinned default — but the pinned default is only honoured if the
+  // data DECLARES that edition complete (NO ASTERISKS, Howell 2026-07-30).
+  // Without this the volume kept reading its hardcoded Vulgate even with
+  // nothing certified: the shelf went dark while the reader carried on, which
+  // is precisely the asterisk the ruling forbids. With nothing complete there
+  // is no active edition, so the detail sector has no text to render — the
+  // volume offers nothing, which is the honest state until an edition is
+  // certified.
+  // THE VOLUME SHOWS ONLY WHAT ITS OFFERED EDITIONS CONTAIN (Howell
+  // 2026-07-30). A volume may declare a pruner; the host stays agnostic about
+  // what the structure means. With nothing offered, the pruner empties the
+  // volume, so the rings and pyramid have no testaments, books, chapters or
+  // verses to show — not a shell of names with no words behind them.
+  if (typeof config.pruneToOffered === 'function') {
+    manifest = config.pruneToOffered(manifest, dimensionBridge.offeredEditions());
+    root = config.extractRoot(manifest) || root;
+  }
+  const editionIsOffered = id => Boolean(id) && dimensionBridge.isServableEdition(id);
+  const activeTranslation = () => {
+    const chosen = dimensionStore.getState().edition;
+    if (chosen) return chosen;                       // already vetted on selection
+    return editionIsOffered(options.translation) ? options.translation : null;
+  };
   const translationId = activeTranslation();
   const translationLang = translationsMeta?.translations?.[translationId]?.language || options.locale || 'english';
   const resolvedLocale = options.locale || translationLang || 'english';
@@ -1776,8 +1913,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // pyramid's chapters, getBibleChapters — therefore follows the reader for
   // free, with no chain rebuild and no lost place in the book.
   const namesMap = { books: {}, sections: {}, testaments: {}, bookAbbreviations: {}, locale: resolvedLocale };
-  const refreshNamesMap = () => {
-    const lang = translationsMeta?.translations?.[activeTranslation()]?.language
+  const refreshNamesMap = (previewLang = null) => {
+    const lang = previewLang
+      || translationsMeta?.translations?.[activeTranslation()]?.language
       || options.locale || 'english';
     const ln = translationsMeta?.names?.[lang] || {};
     // Replace CONTENTS, never the reference — the whole point.
@@ -2089,10 +2227,24 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       updateSearchButton();
     }
   }
+  // THE READER'S PLACE (Howell ruling 3, 2026-07-30): remember where they
+  // were reading so the next launch resumes there rather than at the pinned
+  // default. Only a LEAF is worth remembering — a verse is a place in the
+  // book; a testament or a chapter ring is a place in the machinery, and
+  // resuming there would be resuming mid-gesture. Written on every nav
+  // change (cheap: session-memory skips no-op writes), so a battery death
+  // loses nothing.
+  const rememberReadingPosition = () => {
+    const current = app?.nav?.getCurrent?.();
+    if (!current?.id || !isDetailLevel(current, adapterNormalized)) return;
+    remember(volume, { itemId: current.id });
+  };
+
   // Detail renders resolve the translation LIVE (the sticky choice can
   // change between renders); the settle hook below regenerates the open
   // panel the moment a new choice commits.
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
+  rememberReadingPosition(); // the boot position counts too
   // The globe follows the magnifier: at the volume's front door it appears,
   // one step of descent hides it (nav change), the leaf brings it back
   // (detail-sector-change). This call catches the boot/gateway arrival.
@@ -2100,6 +2252,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   app?.nav?.onChange?.(() => {
     renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
     updateDimensionButton();
+    rememberReadingPosition();
   });
   dimensionBridge.onSettle(translation => {
     window.__wheelTapTrace?.push({ ev: 'dim-settle', tr: translation || '' });
@@ -2112,6 +2265,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
     if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
     renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
+    // Remember the choice, so the next launch's funnel confirms it (ruling 2)
+    // rather than presenting the pinned default as though nothing was chosen.
+    const sel = dimensionBridge.getSelection();
+    remember(volume, { language: sel.language || null, edition: sel.translation || null });
   });
   // Re-wrap the open detail the moment EB Garamond truly lands (Howell
   // 2026-07-27): the first wrap may have measured in the Georgia fallback,
@@ -2136,6 +2293,45 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     wireInteractions(() => currentApp);
     interactionsWired = true;
   }
+  // THE PRIMARY FOLLOWS THE LENS (Howell 2026-07-30). While a chooser ring is
+  // being turned, the text behind the glass changes tongue with it — book
+  // names, chapter words and the verse itself — before anything commits.
+  // Nothing here is committed to the store: the paint is thrown away and
+  // redone by the settle, which lands on the same node the reader was
+  // watching. A previewed language with no servable edition (a placeholder
+  // tongue) leaves the text exactly as it was, matching what committing it
+  // would do.
+  previewPrimary = preview => {
+    if (!preview) return;
+    const edition = preview.edition;
+    if (!edition || edition === dimensionBridge.comingSoonKey) return;
+    refreshNamesMap(preview.language);
+    if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
+    if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: edition });
+  };
+
+  // Open the funnel LAST, once the primary has its chain, its verse and its
+  // detail sector — the text must already be there to recede behind the
+  // glass, since the reader sees it blurred from the first frame and it is
+  // the destination they are travelling toward. A volume without dimensions
+  // is untouched and boots straight to its primary.
+  //
+  // BUT NOT ON A TRANSIT (Howell 2026-07-30). The funnel is the APP'S FRONT
+  // DOOR, not a ritual for every arrival: a reader crossing laterally from
+  // another volume mid-session came through a different door and is already
+  // inside — they have not asked to re-declare their language. Two faults
+  // fell out of treating a transit as a launch: the three planes painted
+  // themselves ON TOP of the 1800ms wipe still sweeping beneath them
+  // (breaking the "corner icons are part of the image" doctrine, which holds
+  // for whole planes too), and the way back out — the parent button, the only
+  // thing that says where a transit returns to — sat two taps deep behind the
+  // choosers. Landing a transit on the primary fixes both at once, and it
+  // keeps the ruling exact where it counts: every LAUNCH still opens the
+  // funnel. (This is also why no parent button was built into the strata: the
+  // need exists solely for the gateway, which is dev scaffolding — a
+  // standalone deployment has no volume above it to return to.)
+  if (!transit) openBootFunnel();
   showVersion();
   performance.mark('wheel:render-done');
   recordBootPhases(volume);

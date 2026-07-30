@@ -22,21 +22,9 @@
 
 import { interactionEvents } from './interaction-store.js';
 
-// Each language names itself in its own tongue (Howell 2026-07-21): the
-// secondary stratum reads as a native would read it, not as English glosses.
-// Keyed by the registry's `language` id. Non-Latin scripts fall back to the
-// system font where the ring font lacks the glyphs.
-const LANGUAGE_AUTONYMS = {
-  hebrew: 'עברית',
-  latin: 'Latina',
-  greek: 'Ελληνικά',
-  english: 'English',
-  russian: 'Русский',
-  french: 'Français',
-  italian: 'Italiano',
-  spanish: 'Español',
-  portuguese: 'Português'
-};
+// (The engine's nine-language autonym table was deleted 2026-07-30: every one
+// of the registry's 29 languages carries its own `autonym`, so the table was
+// pure dead weight and the last place the engine named a tongue itself.)
 
 // The tertiary's synthetic node for a placeholder language: one node whose
 // magnified label is that language's native "coming soon" (from the language
@@ -109,7 +97,18 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // language's DEFAULT must be servable — landing a reader on NAB (pending)
   // when Douay is right there was the "default is a translation we don't have"
   // bug (Howell 2026-07-26).
-  const isServable = t => t && !t.pendingLicense && !t.comingSoon;
+  // NO ASTERISKS (Howell, RULED 2026-07-30 — see HANDOFF CONTRACT). An edition
+  // is offered only if the data DECLARES it complete. Completeness is never
+  // measured here: counting verses cannot tell a structural gap (never
+  // written) from a provisional one (not yet sourced), and guessing would
+  // unseat a finished edition or seat an unfinished one. Wilbur marks
+  // `complete: true` when he is satisfied; until then the edition does not
+  // exist for the reader — on the LAN and on the web alike, since Howell
+  // rejected separate filters for the two.
+  //
+  // An edition still held for licensing or still unsourced is excluded as
+  // before; `complete` is an additional gate, not a replacement.
+  const isServable = t => t && t.complete === true && !t.pendingLicense && !t.comingSoon;
   const servableEditionsOf = languageId => Object.entries(meta?.translations || {})
     .filter(([, t]) => t?.language === languageId && isServable(t))
     .map(([key]) => key);
@@ -186,14 +185,27 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // The secondary ring's nodes: the whole chronological registry when it is
     // loaded (a thumbnail history of the church's expansion), else just the
     // languages the translations carry.
+    // NO PROMISES EITHER (Howell, 2026-07-30, extending the NO ASTERISKS
+    // ruling): *"When I said no asterisks, that includes 'coming soon'... I
+    // don't even wanna see languages in the tertiary stratum focus ring. The
+    // app has nothing to offer, not even a promise."*
+    //
+    // So the ring holds ONLY languages with at least one edition declared
+    // complete. A language whose editions are unsourced, held for licensing,
+    // or merely certified-pending does not appear AT ALL — no placeholder, no
+    // native "coming soon", no seat. When nothing is complete the ring is
+    // empty, which is the honest picture of a volume with nothing to read.
+    // (This supersedes W-11's placeholder-language display.)
     languagesAvailable() {
-      const entries = languageEntries();
-      if (entries.length) return entries.map(e => e.id);
-      const seen = [];
+      const complete = new Set();
       for (const t of Object.values(meta?.translations || {})) {
-        if (t?.language && !seen.includes(t.language)) seen.push(t.language);
+        if (t?.language && isServable(t)) complete.add(t.language);
       }
-      return seen;
+      // Registry order when we have it — it is chronological and deliberate —
+      // else whatever order the editions give.
+      const entries = languageEntries();
+      if (entries.length) return entries.map(e => e.id).filter(id => complete.has(id));
+      return [...complete];
     },
 
     // The language's own name, for the secondary stratum's labels. Registry
@@ -201,7 +213,6 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // then the id.
     languageLabel(id) {
       return languageEntry(id)?.autonym
-        || LANGUAGE_AUTONYMS[id]
         || Object.values(meta?.translations || {}).find(t => t?.language === id)?.language_name
         || id;
     },
@@ -211,8 +222,8 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // לנינגרד, Vulgata Clementina. The synthetic node yields the current
     // language's native "coming soon". Falls back to the English `name`, then
     // the key. Unselected nodes keep the abbreviation (Howell 2026-07-22).
-    translationName(key) {
-      if (key === COMING_SOON_KEY) return comingSoonText(currentLanguage());
+    translationName(key, languageHint = null) {
+      if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
       const t = meta?.translations?.[key];
       return t?.nativeName || t?.name || key;
     },
@@ -221,8 +232,8 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // abbreviation/key, but the synthetic "coming soon" node must NEVER show its
     // sentinel key — it stays in the native phrase even scrubbed out of the lens
     // (there is no abbreviation for a promise — Howell 2026-07-22).
-    translationAbbrev(key) {
-      if (key === COMING_SOON_KEY) return comingSoonText(currentLanguage());
+    translationAbbrev(key, languageHint = null) {
+      if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
       // The unselected node's short label in its OWN script (Howell 2026-07-26):
       // Greek editions must show a Greek abbreviation, not the Latin key
       // (LXX/BYZ), just as the magnified node already shows the Greek nativeName.
@@ -239,6 +250,24 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // baseball on a ring. A language with nothing servable yields the single
     // synthetic "coming soon" node, in its own tongue. Defaults to the
     // current language, then the first language with editions — never empty.
+    // Every edition the reader may actually be shown. The host prunes the
+    // volume's structure to what these cover: with none, the volume has no
+    // testaments, no books, no chapters and no verses — it truly shows
+    // nothing, rather than an empty shell of names (Howell 2026-07-30).
+    offeredEditions() {
+      return Object.entries(meta?.translations || {})
+        .filter(([, t]) => isServable(t)).map(([k]) => k);
+    },
+
+    // Is this edition offered to the reader at all? (NO ASTERISKS.) The host
+    // asks before honouring a volume's pinned default, so an uncertified
+    // edition is never read merely because a config named it.
+    isServableEdition(key) { return isServable(meta?.translations?.[key]); },
+
+    // The placeholder key, so the host can tell a real edition from a
+    // display-only "coming soon" node without hardcoding the sentinel.
+    comingSoonKey: COMING_SOON_KEY,
+
     translationsOf(languageId) {
       let lang = languageId || currentLanguage();
       if (!lang || (!hasEditions(lang) && !languageEntry(lang))) {
