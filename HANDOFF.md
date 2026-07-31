@@ -1145,6 +1145,35 @@ once, when the playlist's survivors are all seated.
 One certified shelf — `complete: true` is the only public gate — behind two
 doors that open at different times. The deploy filter stays as it is.
 
+### W-25 · SUCCESSION — the Sirach pass is benched for any model to continue
+**Raised:** 2026-07-31 by Wilbur, on Howell's instruction · **Status: STANDING
+— read this before resuming ECCLU work in any future session**
+
+Howell's Fable allotment burned 20% in one morning; future sittings may run
+on Opus or another model. The pass was therefore benched mid-book so a
+successor can continue cold:
+
+- **Method + ledger + traps:** `wheel-cargo/docs/SIRACH-READING-PASS.md`.
+  The READ-vs-CLOSED distinction lives ONLY in that file's ledger — keep it
+  updated per chapter. Trap #1 (the transposition zone, chapters 30–36) is
+  the one that can silently destroy prior work.
+- **Machinery:** `wheel-cargo/scripts/sirach-pass.py` — status / print /
+  probe / apply, with arithmetic closure enforced before any write, and
+  idempotent re-apply (verified byte-identical on chapter 13). Maps are
+  JSON files; worked example in the docstring is chapter 12, the hardest so
+  far.
+- **Source pinned:** `wheel-cargo/sources/sirach-swete-greek.json` (+ README
+  with provenance and the empty-verse convention). The parsed Greek formerly
+  lived only in /tmp and the session scratchpad, both volatile — no longer.
+- **State at bench time:** chapters 1–13 READ and applied (commits 1548521,
+  bc21dc7, c88be73, 0e4f81f); 1,289 Greek verses seated in ECCLU; corpus
+  35,895 after four minted sub-slots (10:15b, 11:13b, 12:7b, 12:13b); suite
+  48/48; nothing synced.
+
+The standing rules travel with the pass: reading is the only authority;
+measure in one command, commit in the next; checkpoint commits are local;
+**no sync without Howell's explicit OK.**
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
