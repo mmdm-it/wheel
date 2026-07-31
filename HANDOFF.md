@@ -1187,9 +1187,19 @@ the vernacular audits.
 **Before LXX gets `complete: true` (the gateway condition with Hebrew):**
 1. Chapter 1's Prologue slot — waits on Howell's preface-node ruling
    (also listed under Vulgate certification).
-2. 2 Chronicles 35–36 insertions; Esther's Greek additions; Job 40 scraps;
-   the Jeremiah Gr 34:14 fragment.
-3. BYZ Romans 16:25–27 doxology (needs a better Robinson–Pierpont source)
+2. ~~2 Chronicles 35–36~~ DONE (d078a31): read 1:1, the twelve 4-Kingdoms
+   insertions seated as Greek-only sub-slots with editions.VUL.absent.
+3. ~~Jeremiah Gr 34:14 fragment~~ — verified already whole (no gap).
+4. ~~Job 40 scraps~~ MOSTLY DONE: 40:25–27 read-verified and seated.
+   40:28 exposed a real item: its Greek is the head of Swete 41:1, and
+   the whole Greek Job 41 sits CLAUSE-SHIFTED against the Latin — the
+   bulk import's identity seating there was never read. **NEW ITEM:
+   Job 41 reading pass** (one chapter, bench method; 40:28 closes with it).
+5. Esther's Greek additions — the one big remainder: ~128 verses (spine
+   ch8, 9–10 tails, and the Vulgate's 11–16 = additions A–F, which Swete
+   embeds at lettered positions inside his chapters 1–10). Sirach-shaped;
+   needs a fresh sitting with the bench method.
+6. BYZ Romans 16:25–27 doxology (needs a better Robinson–Pierpont source)
    — BYZ is part of the Greek LANGUAGE certification.
 
 **New standing fact for Orville and the audits (trap #7, proven at Sir 29):**
