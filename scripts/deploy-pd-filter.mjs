@@ -19,7 +19,7 @@ import { readdirSync, statSync, readFileSync, writeFileSync, mkdirSync } from 'n
 import { gzipSync } from 'node:zlib';
 import { join, relative, dirname } from 'node:path';
 
-const PD_ALLOWLIST = new Set(['WLC', 'LXX', 'BYZ', 'VUL', 'NEO', 'SYN', 'DRA', 'SAC', 'ALL', 'FIN', 'CAN', 'KAL']);
+const PD_ALLOWLIST = new Set(['WLC', 'LXX', 'THEOD', 'BYZ', 'VUL', 'NEO', 'SYN', 'DRA', 'SAC', 'ALL', 'FIN', 'CAN', 'KAL']);
 const GZ_FLOOR = 2048; // bytes — mirror precompress-json.mjs exactly
 
 const [src, dest] = process.argv.slice(2);
