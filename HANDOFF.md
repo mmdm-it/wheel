@@ -16,6 +16,34 @@ the proposal — entries here are the working summary.*
 
 ## THE BOARD — 2026-07-30
 
+**⚡ ORVILLE, 2026-07-31 — ONE TASK BLOCKS EVERYTHING, AND IT IS YOURS.**
+Howell is here to have you do exactly one thing, today, before anything
+else on this board:
+
+**Make the volume title read from the registry.** In
+`src/adapters/bible-adapter.js` the gateway title is hardcoded —
+`'BIBLIA SACRA LATINA'` at the root-ring item (~line 374) and the
+testament parent label (~line 566). Change both to read
+`names[currentLanguage].title`, falling back to the hardcoded string
+when the field is absent. The data is already seated:
+`names.latin.title` carries the identical string (so Latin is a no-op
+and nothing can regress) and `names.hebrew.title` carries כתבי הקודש.
+
+**Why now, and why only this:** Howell's new language-kit doctrine
+(W-27 below) added the volume title to what "100% complete" means.
+That dropped WLC's `complete` flag to FALSE — and under "one language
+at a time," a false Hebrew freezes ALL Greek work in the database
+session. The unfreeze path is: your hook → Howell sees the Hebrew
+title on the LAN → he okays → Wilbur flips the flag → Greek resumes.
+Nothing else on this board is asked of you yet; the full reunion
+comes at the two-language trigger (see W-27).
+
+**Verify:** boot the LAN, gateway entry, switch the language dimension
+to Hebrew — the door and the testament parent should read כתבי הקודש.
+Latin must look exactly as before.
+
+---
+
 **Read first, if you read nothing else:** **W-21 · the utterance model.** Howell
 ruled that an address is an annotation on scripture rather than a container for
 it, and that one address may span several utterances. O-16's has/hasn't index is
@@ -1223,11 +1251,14 @@ its sky borrowed Latin abbreviations and its door had no Hebrew title).
   title. Hebrew abbreviations landed (731d56c); `names.hebrew.title` =
   כתבי הקודש is now in the data; the flag returns to true only after
   Howell checks the title on the LAN and okays it.
-- **ORVILLE: one small hook needed at the reunion** — the volume title is
-  hardcoded (`bible-adapter.js`: 'BIBLIA SACRA LATINA' at lines ~374/566).
-  Read `names[lang].title` with the hardcode as fallback;
-  `names.latin.title` now carries the same string, so Latin is a no-op.
-  This is the last engine-held human language we know of.
+- **ORVILLE: the title hook is needed NOW, not at the reunion** — see the
+  ⚡ item at the top of the board. The volume title is hardcoded
+  (`bible-adapter.js`: 'BIBLIA SACRA LATINA' at lines ~374/566); read
+  `names[lang].title` with the hardcode as fallback. `names.latin.title`
+  carries the same string, so Latin is a no-op. This is the last
+  engine-held human language we know of — and under the doctrine, a
+  false Hebrew flag blocks every stroke of Greek work until Howell can
+  see כתבי הקודש on the LAN and okay it.
 - **O-6 (nativeAbbrev) is DEAD** — Howell: after the strata reorder, the
   secondary ring has room for full translation names in any language
   ("I may retract that statement when I see the Finnish"). The engine's
