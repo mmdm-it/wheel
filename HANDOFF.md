@@ -1132,12 +1132,18 @@ opens at Hebrew + the complete Greek language; BC.com opens with the playlist's
 certified survivors. The DRA 1899 American edition is NOT a separate entry —
 it is the witness of the Challoner act we already hold.
 
-**ENGINE CONSEQUENCES (yours, when ready):** two public properties with
-different shelves — the gateway shows two languages, BC.com the full slate —
-so the deploy machinery needs per-site edition lists; the single PD_ALLOWLIST
-no longer describes the world. And one open ruling flagged: does the gateway
-track BC.com's additions or freeze at Hebrew+Greek? Wilbur proposes track;
-Howell to rule.
+**THE GATEWAY TRACKS — RULED (Howell, 2026-07-31),** in his words: *"every
+preview trailer I've ever seen was eventually followed by the feature film.
+bibliacatholica.com is Leicester Square for the premiere. mmdm.it is the studio
+screening room where the director and editor first look at dailies and the
+work print. But it's also where friends and family get to see the finished
+film."* So: the LAN is the editing suite; mmdm.it opens with Hebrew+Greek and
+then receives EVERY translation as it certifies, continuously; BC.com opens
+once, when the playlist's survivors are all seated.
+
+**ENGINE CONSEQUENCE (simplified by the ruling):** no per-site shelf machinery.
+One certified shelf — `complete: true` is the only public gate — behind two
+doors that open at different times. The deploy filter stays as it is.
 
 ## → WILBUR
 
