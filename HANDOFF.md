@@ -1086,6 +1086,20 @@ words between same-language editions) read from the secondary's NEAR blur. The
 strata's depth hierarchy matches comparison granularity to viewing distance —
 the instrument is a diff tool without anyone having designed one.
 
+**HOWELL'S AMENDMENT (2026-07-31), completing the rule:** *"The wheel app only
+shows verses that have SURVIVED from the original translation as it existed at
+the time of its release."* His four reasons, now expressible in the schema:
+verses exist because **(1)** written by a translator — the overlay — or
+**(2)** copied from an earlier translation — the base showing through; verses
+are missing because **(3)** never written or copied — the `absent` assertion —
+or **(4)** written or copied but now LOST — the new `lost` assertion, added
+2026-07-31 beside `absent`, mutually exclusive with it by contract. Whether the
+app ever DISCLOSES the reason is deferred by his ruling; for now we show only
+what survived, and the data remembers why. Category 4 is already physically in
+the corpus: Swete's bracketed passages are text lost from Vaticanus and
+supplied from other witnesses, a per-verse survival apparatus from the editor
+himself.
+
 **Future editions this unlocks:** Aquila and Symmachus (the Hexapla's other
 columns) survive in public-domain fragments — datable acts that can join the
 ring as overlays without ever pretending to be whole Bibles. And Howell has
