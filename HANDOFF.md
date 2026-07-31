@@ -1031,6 +1031,68 @@ is on before you plan a release.
 
 ---
 
+### W-23 · THE ARTIFACT RULE — editions compose, and the toggle is a research instrument
+**Raised:** 2026-07-31 by Wilbur, transcribing Howell's rulings · **Status: OPEN
+— one registry field is DONE on my side; the composition and the toggle are
+engine work**
+
+**THE RULE (Howell's).** The unit on the ring is the **historically received
+artifact**, not the translation act. We store and date the ACT (what a
+translator actually produced); we show the ARTIFACT (the Bible a reader of that
+release actually held). His test: *"we should show everything that was included
+at the time of that translation's release."* And the guardrail: *"we don't want
+to be in YouVersion's business of editorializing — adding or removing books,
+chapters, and testaments where none have been historically."*
+
+**THE CASES, so nobody re-derives them:**
+- A **partial translation** (his hypothetical Esperanto, Genesis 1:1–2:5) shows
+  PARTIAL — that fragment is all that ever existed, and rounding it up would be
+  the fabrication.
+- A **partial revision** (Theodotion's Daniel, ~150 AD) shows the WHOLE Bible of
+  its release date — LXX everywhere, Theodotion in Daniel — because the revision
+  was released *into* a whole. No reader ever held a Daniel-only Bible.
+- A **new artifact of new content** (Delitzsch's Hebrew NT, 1877) shows exactly
+  its own extent — a standalone NT is what he published, so NT-only is honest.
+
+**THE MECHANISM (data side, DONE):** `translations.json` now carries
+`base: "LXX"` on THEOD. The stored column holds only what the act produced;
+provenance and dates never blur.
+
+**WHAT THE ENGINE NEEDS TO DO:**
+1. **Compose at serve time**: an edition with `base` presents base-plus-overlay.
+   `isServable`/`complete` then judge the COMPOSED artifact, not the stored
+   diff — a one-book overlay over a complete base is a complete Bible.
+2. **The quick toggle.** Howell's design, in his words: a researcher reading
+   Greek Daniel *"can tap the globe icon twice, toggle between the two Greek
+   translations, and actually see the blurry text change below. This same
+   researcher, reading Genesis in the Greek, can perform the same test, and see
+   quite obviously that there is no difference between the two translations for
+   that book."* This is COLLATION — the founding act of textual criticism — done
+   wordlessly by rotation. (Origen's Hexapla put these very Greek columns side
+   by side in the third century; the wheel makes the columns rotate.)
+3. **Position is carried by the utterance** during the toggle (W-21), so the
+   round trip is exact.
+
+**WHY COMPOSITION IS LOAD-BEARING FOR THE TOGGLE, not just an economy:** the
+researcher's *negative* result — the blur holding still over Genesis — is a
+factual claim: *Theodotion did not touch this book.* Because the overlay stores
+only the act, the stillness is bit-identical structural truth. A duplicated
+base would flicker with transcription noise exactly where history is silent,
+and the instrument would lie at its most authoritative-looking moments.
+
+**A NOTE ON DEPTH (Howell's observation, worth keeping):** coarse differences
+(script, alphabet) read from the tertiary's FAR blur; fine differences (a few
+words between same-language editions) read from the secondary's NEAR blur. The
+strata's depth hierarchy matches comparison granularity to viewing distance —
+the instrument is a diff tool without anyone having designed one.
+
+**Future editions this unlocks:** Aquila and Symmachus (the Hexapla's other
+columns) survive in public-domain fragments — datable acts that can join the
+ring as overlays without ever pretending to be whole Bibles. And Howell has
+flagged (not yet ruled) that the artifact rule gives Latin a bill: the printed
+Clementine includes its appendix — 3–4 Esdras and the Prayer of Manasseh, kept
+by Clement VIII "ne prorsus interirent" — so Latin's 100% may include them.
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
