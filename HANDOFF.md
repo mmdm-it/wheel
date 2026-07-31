@@ -1107,6 +1107,38 @@ flagged (not yet ruled) that the artifact rule gives Latin a bill: the printed
 Clementine includes its appendix — 3–4 Esdras and the Prayer of Manasseh, kept
 by Clement VIII "ne prorsus interirent" — so Latin's 100% may include them.
 
+### W-24 · THE PLATFORM RELEASE AND THE PLAYLIST — O-15 closes
+**Raised:** 2026-07-31 by Wilbur, transcribing Howell's rulings · **Status: RULED
+— the launch question is answered; docs/THE-PLAYLIST.md is the wall copy**
+
+**THE FOUR STAGES (Howell's):**
+1. Hebrew and Greek available through the gateway at **mmdm.it**
+2. Hebrew and Greek plus every viable PD translation at **bibliacatholica.com**
+   — the list is THE PLAYLIST (below), each entry at 100% of its own artifact
+3. The BC.com database and engine ported **native to Android**, Google Play
+4. **Letters** to copyright holders, inviting them aboard
+
+**THE PLAYLIST** — 22 entries, 13 languages, chronological by translation act,
+full table in `docs/THE-PLAYLIST.md`. Fourteen are in the corpus; Delitzsch
+(1877) awaits import; eight are research candidates, each ruled **one hour of
+attention before being struck**: Malermi 1471 (OCR trial), Martini 1769–81,
+Figueiredo 1778–90 (the known BFBS 66-book trap), Scío 1793, Torres Amat
+1823–25, Glaire-Vigouroux 1902, Pyhä Raamattu 1933/38 (source in hand),
+Confraternity NT 1941 (US copyright-renewal search — the one legal question in
+the batch).
+
+**THIS CLOSES O-15.** The launch list Howell reserved is ruled: the gateway
+opens at Hebrew + the complete Greek language; BC.com opens with the playlist's
+certified survivors. The DRA 1899 American edition is NOT a separate entry —
+it is the witness of the Challoner act we already hold.
+
+**ENGINE CONSEQUENCES (yours, when ready):** two public properties with
+different shelves — the gateway shows two languages, BC.com the full slate —
+so the deploy machinery needs per-site edition lists; the single PD_ALLOWLIST
+no longer describes the world. And one open ruling flagged: does the gateway
+track BC.com's additions or freeze at Hebrew+Greek? Wilbur proposes track;
+Howell to rule.
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
