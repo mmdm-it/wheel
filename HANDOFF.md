@@ -1207,6 +1207,56 @@ the vernacular columns (DRA/SYN/NEO/FIN/CAN) are seated by their own verse
 numbers, not by content — every Clementine/vernacular numbering divergence
 is a mis-seat. The per-edition audits inherit the bench's method.
 
+### W-27 · THE LANGUAGE-KIT DOCTRINE — Howell's rulings on the O-ledger review
+**Raised:** 2026-07-31 by Wilbur, transcribing Howell · **Status: RULED**
+
+**The doctrine, made operational.** "One language at a time until 100%"
+stands, and 100% now means the LANGUAGE KIT, not just text: (1) every
+edition of the language at its own artifact extent · (2) testament/section/
+book names · (3) book abbreviations · (4) the VOLUME TITLE · (5) reading
+vocabulary · (6) versification tables for that language's reckoning.
+Certification was text-only before; Hebrew proved the flaw (certified while
+its sky borrowed Latin abbreviations and its door had no Hebrew title).
+
+**Consequences executed:**
+- **WLC `complete` is FALSE again** (Howell's order): the kit lacked the
+  title. Hebrew abbreviations landed (731d56c); `names.hebrew.title` =
+  כתבי הקודש is now in the data; the flag returns to true only after
+  Howell checks the title on the LAN and okays it.
+- **ORVILLE: one small hook needed at the reunion** — the volume title is
+  hardcoded (`bible-adapter.js`: 'BIBLIA SACRA LATINA' at lines ~374/566).
+  Read `names[lang].title` with the hardcode as fallback;
+  `names.latin.title` now carries the same string, so Latin is a no-op.
+  This is the last engine-held human language we know of.
+- **O-6 (nativeAbbrev) is DEAD** — Howell: after the strata reorder, the
+  secondary ring has room for full translation names in any language
+  ("I may retract that statement when I see the Finnish"). The engine's
+  `|| key` fallback makes the retirement free.
+- **O-14 is ANSWERED** — neither breadth nor depth-by-import: one language
+  to kit-complete, then the next. O-7 and O-12 fold into the kit: each
+  language's names/abbreviations land at ITS turn, no cross-language
+  campaigns.
+- **O-16 is CONFIRMED and IN-SCOPE FOR GREEK** — the artifact-extent map
+  (Theodotion is Daniel-only and must be foreclosed outside it) is part of
+  Greek's 100%, not follow-up work.
+- **Calendar and catalog are FROZEN until Leicester Square** (O-1, O-8,
+  O-9 sleep; "neither of those volumes has any user base"). Standing duty:
+  if Bible-side data changes would bend those volumes' UIs, flag to Howell
+  first.
+
+**ORVILLE: O-13's DATA IS DONE AND WAITING FOR YOU.** Both pieces, delivered
+as by-products of the completion campaigns and never announced: Malachi 4
+is seated 6/6 in Hebrew AND Greek, and the mapping tables exist —
+`gutenberg/versification/MT.json` (34 books) and `versification/LXX.json`
+(IERE, DAN, ECCLU with 963 entries, AMO, I_MACC, II_PARA). Your
+reckoning-aware chapter membership and the animated re-seat are unblocked
+the day you return.
+
+**The reunion trigger (Howell):** Orville rests until the database holds
+**two kit-complete languages, one of which has two complete translations**
+— i.e. Hebrew (WLC) + Greek (LXX + THEOD, with BYZ for the language's NT).
+That is the minimum dataset for the engine work Howell wants to do next.
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
