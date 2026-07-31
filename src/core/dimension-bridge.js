@@ -108,7 +108,34 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   //
   // An edition still held for licensing or still unsourced is excluded as
   // before; `complete` is an additional gate, not a replacement.
-  const isServable = t => t && t.complete === true && !t.pendingLicense && !t.comingSoon;
+  // THE CERTIFICATION OVERRIDE (Howell 2026-07-31): `?complete=true` lifts the
+  // completeness gate so an edition can be INSPECTED before it is certified.
+  // Without it the doctrine deadlocks — a flag is false because the kit is
+  // missing something, but judging what is missing requires seeing the
+  // edition, and a false flag hides it.
+  //
+  // Two limits keep this an expression of the no-asterisks rule rather than a
+  // hole in it:
+  //   1. LAN ONLY. On a public host the parameter is inert, so it cannot be
+  //      appended to bibliacatholica.com to read half-finished scripture. The
+  //      escape hatch does not exist in production rather than being a hole we
+  //      trust nobody to find.
+  //   2. IT LIFTS `complete` AND NOTHING ELSE. `pendingLicense` is a LEGAL
+  //      wall, not an editorial one — the local corpus still holds the
+  //      copyrighted editions the deploy filter strips, and no debugging
+  //      convenience may show them. `comingSoon` stays enforced too: an
+  //      unsourced edition has nothing to inspect.
+  const overrideComplete = (() => {
+    try {
+      if (typeof window === 'undefined' || !window.location) return false;
+      const host = window.location.hostname || '';
+      const isLan = /^(localhost|127\.|10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(host);
+      if (!isLan) return false;
+      return new URLSearchParams(window.location.search).get('complete') === 'true';
+    } catch (_) { return false; }
+  })();
+  const isServable = t => t && (t.complete === true || overrideComplete)
+    && !t.pendingLicense && !t.comingSoon;
   const servableEditionsOf = languageId => Object.entries(meta?.translations || {})
     .filter(([, t]) => t?.language === languageId && isServable(t))
     .map(([key]) => key);
@@ -263,6 +290,12 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // asks before honouring a volume's pinned default, so an uncertified
     // edition is never read merely because a config named it.
     isServableEdition(key) { return isServable(meta?.translations?.[key]); },
+
+    // The RAW certification, ignoring the override — so the host can mark an
+    // edition it is only showing because `?complete=true` asked it to.
+    isCertifiedEdition(key) { return meta?.translations?.[key]?.complete === true; },
+    // Whether the completeness gate is currently lifted (LAN + ?complete=true).
+    completeOverrideActive() { return overrideComplete; },
 
     // The placeholder key, so the host can tell a real edition from a
     // display-only "coming soon" node without hardcoding the sentinel.

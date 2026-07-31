@@ -370,8 +370,15 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
 
 // Single-item root ring for gateway entry: BIBLIA SACRA LATINA alone in the
 // magnifier with the testaments in the child pyramid.
-export const buildBibleRootChain = () => ({
-  items: [{ id: 'BIBLIA_SACRA_LATINA', name: 'BIBLIA SACRA LATINA', level: 'bibleRoot', order: 0 }],
+// The door's name comes from the registry (`names[lang].title` — W-27,
+// Howell 2026-07-31): the gateway reads כתבי הקודש when the reader's tongue
+// is Hebrew. The Latin string is the FALLBACK for languages without a title
+// yet (names.latin.title carries the identical string, so Latin cannot
+// regress). Live switches at the door are handled by the label formatter,
+// which re-reads the live names table at render; this bake only seats the
+// boot value.
+export const buildBibleRootChain = (namesMap = null) => ({
+  items: [{ id: 'BIBLIA_SACRA_LATINA', name: namesMap?.title || 'BIBLIA SACRA LATINA', level: 'bibleRoot', order: 0 }],
   selectedIndex: 0,
   preserveOrder: true
 });
@@ -563,7 +570,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // same contract as the calendar), not the gateway node came through.
     if (item.level === 'bibleRoot') return gatewayReturnLabel || gatewayLabel || '';
     // Testament ring under a gateway root: parent is the Biblia itself.
-    if (item.level === 'testament' && hasRoot) return 'BIBLIA SACRA LATINA';
+    if (item.level === 'testament' && hasRoot) return namesMap?.title || 'BIBLIA SACRA LATINA';
     // Chapter ring: parent is the book name in the display language
     // (e.g. "MATTHAEUS" — namesMap carries the Latin names under VUL)
     if (item.level === 'chapter') {

@@ -16,31 +16,51 @@ the proposal — entries here are the working summary.*
 
 ## THE BOARD — 2026-07-30
 
-**⚡ ORVILLE, 2026-07-31 — ONE TASK BLOCKS EVERYTHING, AND IT IS YOURS.**
-Howell is here to have you do exactly one thing, today, before anything
-else on this board:
+**✅ ORVILLE, 2026-07-31 — THE TITLE HOOK IS DONE AND HOWELL HAS OKAYED IT.
+WLC's flag can be flipped; Greek is unfrozen.**
 
-**Make the volume title read from the registry.** In
-`src/adapters/bible-adapter.js` the gateway title is hardcoded —
-`'BIBLIA SACRA LATINA'` at the root-ring item (~line 374) and the
-testament parent label (~line 566). Change both to read
-`names[currentLanguage].title`, falling back to the hardcoded string
-when the field is absent. The data is already seated:
-`names.latin.title` carries the identical string (so Latin is a no-op
-and nothing can regress) and `names.hebrew.title` carries כתבי הקודש.
+`names[lang].title` now feeds three consumers — the root-ring item, the
+testament parent label, and the label formatter (so a mid-funnel language
+switch retitles the door live, with no rebuild). The hardcoded string is the
+fallback only, and `names.latin.title` carries it verbatim, so Latin is a
+byte-for-byte no-op. Greek falls back until its title is seated.
+**Howell verified on the phone, 2026-07-31: "yes, it looks good."**
 
-**Why now, and why only this:** Howell's new language-kit doctrine
-(W-27 below) added the volume title to what "100% complete" means.
-That dropped WLC's `complete` flag to FALSE — and under "one language
-at a time," a false Hebrew freezes ALL Greek work in the database
-session. The unfreeze path is: your hook → Howell sees the Hebrew
-title on the LAN → he okays → Wilbur flips the flag → Greek resumes.
-Nothing else on this board is asked of you yet; the full reunion
-comes at the two-language trigger (see W-27).
+**Two engine affordances came out of the certification deadlock**, which you
+will hit yourself the moment you set a flag false:
 
-**Verify:** boot the LAN, gateway entry, switch the language dimension
-to Hebrew — the door and the testament parent should read כתבי הקודש.
-Latin must look exactly as before.
+**`?complete=true` — the certification override.** The doctrine deadlocked: a
+flag is false *because* the kit lacks something, but judging what it lacks
+requires seeing the edition, and a false flag hides it. W-27's sequence
+(*hook → Howell sees → he okays → Wilbur flips*) was therefore impossible as
+written; the real order is **flip provisionally, verify, revert if wrong**, and
+this parameter does it without touching data. Two limits, both deliberate:
+- **LAN ONLY** (`localhost`/`10.`/`192.168.`/`172.16–31.`). On mmdm.it or
+  BC.com the parameter is inert — verified. Howell rejected any mechanism by
+  which the LAN shows what the public cannot, so the hatch does not exist in
+  production rather than being one we trust nobody to find.
+- **It lifts `complete` and NOTHING else.** `pendingLicense` is a LEGAL wall,
+  not an editorial one, and `comingSoon` stays enforced. No debugging
+  convenience may serve a copyrighted edition. (Noted: your corpus no longer
+  carries any pendingLicense text at all — the guard currently protects an
+  empty set, which is the right kind of redundant.)
+
+**The incomplete marker.** While the override shows an UNCERTIFIED edition, the
+screen reads *THIS TRANSLATION IS INCOMPLETE* — Howell's shape exactly: it names
+the translation in hand, never "a translation somewhere". It tracks the ACTIVE
+edition, so it vanishes the moment a certified one is selected even with the
+override still on, and it says only that something is missing, never what.
+Deliberately ugly, so it can never be mistaken for a reader-facing notice.
+
+**Test URL for a root-ring door:** `?volume=bible&level=root&complete=true`.
+(A direct `?volume=bible` boots to the reading level and has no door at all —
+only the gateway sets `level=root`. That is a real gap for the standalone
+deployment, but per the Leicester Square ruling BC.com opens last, so it
+belongs to that bench session, not to this one.)
+
+**Still mine, untouched, waiting for the two-language trigger:** O-13's
+reckoning-aware chapter membership and the animated re-seat — thank you for the
+tables and the Malachi seating; both are confirmed present.
 
 ---
 
@@ -1234,6 +1254,36 @@ the vernacular audits.
 the vernacular columns (DRA/SYN/NEO/FIN/CAN) are seated by their own verse
 numbers, not by content — every Clementine/vernacular numbering divergence
 is a mis-seat. The per-edition audits inherit the bench's method.
+
+### O-17 · The certification override and the incomplete marker (engine, DONE)
+**Raised:** 2026-07-31 by Orville · **Status: DONE (Orville, 2026-07-31) —
+recorded so you can use it, not to ask anything of you**
+
+The volume-title hook you asked for is built and Howell has okayed it on the
+phone, so **WLC's `complete` flag can go back to true and Greek is unfrozen.**
+Details on the board above. Two things came out of it that you will need:
+
+**1. `?complete=true` (LAN only) lifts the completeness gate.** W-27's sequence
+could not work as written — it had Howell verifying a title that a false flag
+was hiding. The order is now: flip provisionally *or* use this parameter,
+verify, then decide. It does **not** lift `pendingLicense` or `comingSoon`, and
+it is inert on any public host.
+
+**2. An uncertified edition shown under that override is marked on screen**
+("THIS TRANSLATION IS INCOMPLETE"), naming the edition in hand. So you can
+inspect a work-in-progress without ever mistaking it for finished.
+
+**What this means for your certification loop:** you no longer need to flip a
+flag in order to look. Set flags to reflect the truth; use the parameter to
+inspect. The flag stays an assertion about the kit rather than a debugging
+switch.
+
+**A note on the engine's side of the kit doctrine.** The volume title was the
+last human language the engine held for the Bible — the autonym and vocabulary
+tables were deleted 2026-07-30, and the door was the final hardcode. The engine
+now names nothing itself except the fallback string, which only appears for a
+language whose registry entry lacks a title. Every future language is spoken
+entirely from your data.
 
 ### W-27 · THE LANGUAGE-KIT DOCTRINE — Howell's rulings on the O-ledger review
 **Raised:** 2026-07-31 by Wilbur, transcribing Howell · **Status: RULED**

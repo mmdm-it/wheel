@@ -1001,6 +1001,43 @@ let dimensionFrontDoorAt = () => false;
 // Repaints the PRIMARY for a previewed language/edition while a chooser is
 // being turned — assigned by bootVolume, which owns the adapter and manifest.
 let previewPrimary = () => {};
+
+// THE INCOMPLETE-TRANSLATION MARKER (Howell 2026-07-31). Insurance for the
+// certification override: when `?complete=true` is showing an edition that is
+// NOT certified, the screen says so — otherwise a bookmarked override could
+// quietly become the normal view and an uncertified edition would look
+// finished.
+//
+// Howell's shape, precisely: the marker names THE TRANSLATION IN HAND. "This
+// translation is incomplete" is honest; "a translation is incomplete" is not,
+// because a vague global notice tells the reader nothing about what they are
+// actually looking at. So it tracks the ACTIVE edition and disappears the
+// moment a certified one is selected — even while the override stays on.
+// It says only that something is missing, never what: the point is the
+// caveat, not an inventory.
+let incompleteMarkEl = null;
+function updateIncompleteMark() {
+  if (typeof document === 'undefined') return;
+  let show = false;
+  try {
+    if (dimensionBridge.completeOverrideActive()) {
+      const active = dimensionStore.getState().edition || null;
+      show = Boolean(active) && !dimensionBridge.isCertifiedEdition(active);
+    }
+  } catch (_) { show = false; }
+  if (!show) {
+    if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
+    return;
+  }
+  if (!incompleteMarkEl) {
+    incompleteMarkEl = document.createElement('div');
+    incompleteMarkEl.id = 'incomplete-mark';
+    incompleteMarkEl.textContent = 'THIS TRANSLATION IS INCOMPLETE';
+    document.body.appendChild(incompleteMarkEl);
+  }
+  incompleteMarkEl.style.display = '';
+}
+
 function updateDimensionButton() {
   if (!dimensionButton) return;
   if (cornerIconHold) return; // frozen mid-wipe: the icon is part of the image
@@ -1923,6 +1960,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     namesMap.sections = ln.sections || {};
     namesMap.testaments = ln.testaments || {};
     namesMap.bookAbbreviations = ln.book_abbreviations || {};
+    // THE VOLUME TITLE (W-27, 2026-07-31): the door's name in the reader's
+    // tongue — the last engine-held human language. Registry-first; consumers
+    // fall back to their own default when a language has no title yet.
+    namesMap.title = ln.title || null;
     // THE PYRAMID'S SHORT FORMS, with Latin as the fallback (2026-07-29).
     // Only Latin carries abbreviations today; every other tongue has none,
     // and the child pyramid's LABEL LAW vetoes a star whose name would
@@ -2269,6 +2310,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // rather than presenting the pinned default as though nothing was chosen.
     const sel = dimensionBridge.getSelection();
     remember(volume, { language: sel.language || null, edition: sel.translation || null });
+    updateIncompleteMark();
   });
   // Re-wrap the open detail the moment EB Garamond truly lands (Howell
   // 2026-07-27): the first wrap may have measured in the Georgia fallback,
@@ -2331,6 +2373,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // funnel. (This is also why no parent button was built into the strata: the
   // need exists solely for the gateway, which is dev scaffolding — a
   // standalone deployment has no volume above it to return to.)
+  updateIncompleteMark();
   if (!transit) openBootFunnel();
   showVersion();
   performance.mark('wheel:render-done');
