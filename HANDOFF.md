@@ -1174,6 +1174,29 @@ The standing rules travel with the pass: reading is the only authority;
 measure in one command, commit in the next; checkpoint commits are local;
 **no sync without Howell's explicit OK.**
 
+### W-26 · THE SIRACH READING PASS IS COMPLETE — LXX certification is now a short list
+**Raised:** 2026-07-31 by Wilbur · **Status: DONE (the pass); the list below
+is what still stands between the Greek and `complete: true`**
+
+All 51 chapters of ECCLU are READ (cargo commits 1548521 → 81f3572, one
+session). Every one of Swete's 1,368 non-empty Sirach verses is seated;
+closure is proven from the files in all 51 chapters; suite 48/48. The
+succession bench (W-25) carried the whole pass and remains the method for
+the vernacular audits.
+
+**Before LXX gets `complete: true` (the gateway condition with Hebrew):**
+1. Chapter 1's Prologue slot — waits on Howell's preface-node ruling
+   (also listed under Vulgate certification).
+2. 2 Chronicles 35–36 insertions; Esther's Greek additions; Job 40 scraps;
+   the Jeremiah Gr 34:14 fragment.
+3. BYZ Romans 16:25–27 doxology (needs a better Robinson–Pierpont source)
+   — BYZ is part of the Greek LANGUAGE certification.
+
+**New standing fact for Orville and the audits (trap #7, proven at Sir 29):**
+the vernacular columns (DRA/SYN/NEO/FIN/CAN) are seated by their own verse
+numbers, not by content — every Clementine/vernacular numbering divergence
+is a mis-seat. The per-edition audits inherit the bench's method.
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
