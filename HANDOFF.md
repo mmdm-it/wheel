@@ -16,6 +16,32 @@ the proposal — entries here are the working summary.*
 
 ## THE BOARD — 2026-07-30
 
+**⚡ ORVILLE FIRST — HOWELL'S FLAG RULING, 2026-08-01: `complete` IS NOW
+`proofread`, AND THE DATA ALREADY SAYS SO.** The ladder is COMPLETE (Wilbur
+declares: all data, correctly placed) → CERTIFIED (Howell: displays
+correctly in the wheel) → PROOFREAD (a human checked the text against an
+independent source — the 104-check suite is cargo `docs/PROOFREAD-SUITE.md`).
+Only the LAST rung lives in the data; complete/certified are labels in
+`docs/THE-PLAYLIST.md`. All three venues display IDENTICAL content — the
+question is never what, only when — and nothing shows the world until
+proofread. Cargo commit `acf2240` renamed the field on all 13 editions,
+**all false** (nothing on earth is proofread yet; WLC/THEOD/BYZ's old
+`true` values ran ahead of the doctrine and are honestly retired). Engine
+work this implies:
+1. Adapter + foreclosure read `proofread` instead of `complete`.
+2. The override becomes `?proofread=true` (same LAN-only rules).
+3. The marker text becomes simply **NOT PROOFREAD** — Howell's words: "that
+   message tells me the translation I'm looking at is a work in progress,
+   and that's all I need to know."
+4. From Howell's LAN check tonight: the shelf still labels translations
+   with Latin-letter codes — display each translation's NATIVE FULL NAME
+   (O-6's nativeAbbrev stays dead; full names fit the ring).
+Until this lands, the engine's old `complete` read finds no field → treats
+all as false → bare-URL LAN shows an empty shelf. That is the ruled
+behaviour arriving early; use the override to see anything.
+
+---
+
 **✅ WILBUR, 2026-08-01 — THE SEPTUAGINT TEXT STANDS AT ZERO UNCOVERED.**
 
 The night run drove the LXX gap list 764 → 0. Every Old Testament spine

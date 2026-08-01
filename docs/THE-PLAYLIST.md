@@ -2,17 +2,26 @@
 ### Every translation enters at the date of its act. No leapfrogging. Nothing below 100%.
 ### Master tracking table, expanded 2026-07-31 (22 → 60), sorted chronologically by the act's first year.
 
-Legend: ✓ complete | ⏱ needs research/verification | ✝ lost/no surviving copy |
+Legend: ⏱ needs research/verification | ✝ lost/no surviving copy |
 audit owed = PD status likely but unconfirmed.
 Expectation on the ⏱ entries, ruled by Howell: half will not survive five
 minutes of research — and half of them landed would be impressive.
 
+**The ladder (ruled 2026-08-01): COMPLETE → CERTIFIED → PROOFREAD.**
+Wilbur declares COMPLETE (all the data, correctly placed, to the best of
+his knowledge); Howell CERTIFIES (looked at it in the wheel, displays
+correctly); a human PROOFREADS it against an independent source
+(docs/PROOFREAD-SUITE.md in cargo). Only PROOFREAD lives in the data —
+the single flag every venue obeys; COMPLETE and CERTIFIED are tracked
+HERE. Strict sequence, no leapfrogging; a translation that bogs down at
+any rung is dropped and the playlist moves on.
+
 | # | Year | Edition | Language | Status |
 |---|------|---------|----------|--------|
-| 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | ✓ COMPLETE — certified kit-complete 2026-07-31 |
-| 2 | c.250–100 BC | Septuagint | Greek | text 100% (2026-08-01, gap list emptied) — awaiting Greek abbreviations + title ruling for the kit |
-| 3 | c.50–100 AD | Greek New Testament | Greek | ✓ CERTIFIED complete 2026-07-31 (second Greek flag) |
-| 4 | c.150 | Theodotion's Daniel | Greek | ✓ CERTIFIED complete 2026-07-31 (first Greek flag) |
+| 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | COMPLETE 2026-07-31 · CERTIFIED 2026-07-31 · proofread pending (WLC suite: 15 checks) |
+| 2 | c.250–100 BC | Septuagint | Greek | COMPLETE 2026-08-01 (kit incl. title Ἡ Ἁγία Γραφή + 73 abbreviations) · certification awaits the engine rename · proofread pending (68 checks) |
+| 3 | c.50–100 AD | Greek New Testament | Greek | COMPLETE 2026-07-31 · certification pending (old flag ran ahead, retired) · proofread pending (12 checks) |
+| 4 | c.150 | Theodotion's Daniel | Greek | COMPLETE 2026-07-31 · certification pending (old flag ran ahead, retired) · proofread pending (9 checks) |
 | — | — | ***mmdm.it screening room opens · then tracks all below*** | — | — |
 | 5 | 382–405 | Vulgate (Jerome) | Latin | prologues owed |
 | 6 | 5th c. (c.405–434) | Original Armenian translation (Mesrob Mashtots) | Armenian | NOTE ONLY — predates any Catholic/Apostolic split; "Catholic" not a meaningful qualifier for this root text |
