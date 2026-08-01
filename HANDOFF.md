@@ -16,15 +16,42 @@ the proposal — entries here are the working summary.*
 
 ## THE BOARD — 2026-07-30
 
-**✅ ORVILLE, 2026-07-31 — THE TITLE HOOK IS DONE AND HOWELL HAS OKAYED IT.
-WLC's flag can be flipped; Greek is unfrozen.**
+**✅ ORVILLE, 2026-08-01 — THE PROOFREAD RENAME IS DONE. Howell okayed it on
+the phone: "NOT PROOFREAD looks great and does exactly what it's supposed to
+do."** All four items of your ⚡ list:
+1. The gate reads `proofread`; your cargo rename (`acf2240`) is live in the
+   engine, so with all 13 false the bare-URL shelf is empty — the ruled
+   behaviour, arriving as designed rather than by accident.
+2. The override is `?proofread=true` (same LAN-only, gate-only limits; the old
+   `?complete=true` is dead, so a stale bookmark cannot quietly work).
+3. The marker reads **NOT PROOFREAD**.
+4. The shelf speaks in full — Οἱ Ἑβδομήκοντα, Βυζαντινὸν Κείμενον, Δανιὴλ κατὰ
+   Θεοδοτίωνα, Τωβεὶθ (Σιναϊτικός), כתב יד לנינגרד. **O-6's `nativeAbbrev` is
+   formally retired before any data was written for it** — full names fit
+   because this plane holds an edition or three per language, far apart on the
+   arc. Don't author abbreviations for it.
 
-`names[lang].title` now feeds three consumers — the root-ring item, the
-testament parent label, and the label formatter (so a mid-funnel language
-switch retitles the door live, with no rebuild). The hardcoded string is the
-fallback only, and `names.latin.title` carries it verbatim, so Latin is a
-byte-for-byte no-op. Greek falls back until its title is seated.
-**Howell verified on the phone, 2026-07-31: "yes, it looks good."**
+**⚠ ONE CORRECTION THAT SAVES YOU WORK — your item 2 is a non-issue.** "The
+engine suite's canonical figures moved" has not been true since the cargo
+split: **no engine test reads `data/` at all.** They run entirely on synthetic
+PD fixtures, and every real-corpus assertion moved to cargo CI under O-4. The
+only trace was a stale comment. And the proof that this was the right
+architecture arrived on its own — **the numbers have already moved again since
+you wrote them**: my local corpus reads **79 books / 1,435 chapters / 38,177
+verses**, not 73 / 1,335 / 35,989 (the appendices landed after your board
+update). Any engine assertion on corpus figures would be permanently stale,
+which is exactly why they live with you. **Nothing for you to do here.**
+
+**⚠ THE TWO TRIGGERS HAVE COME APART — Howell is ruling on this.** The sync
+clause opens mmdm.it at *two kit-complete languages*, which HAS fired. But the
+display gate now reads `proofread`, and nothing is. **Syncing today would
+publish an empty Bible.** Meanwhile mmdm.it is still serving v3.27.0 —
+pre-lockout — so the public can currently read every incomplete edition WITH
+the old disclaimers, which is precisely what the no-asterisks ruling forbids.
+The freeze is preserving the one build that breaks the doctrine. Orville's
+recommendation: **the server opens at the first PROOFREAD edition**, which
+makes Howell's Hebrew pass the real gate. Do not act on the old wording until
+he rules.
 
 **Two engine affordances came out of the certification deadlock**, which you
 will hit yourself the moment you set a flag false:

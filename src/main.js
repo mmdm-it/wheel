@@ -130,12 +130,15 @@ const CHOOSERS = [
     // merely passing under the lens its placeholder must be told whose promise
     // it is — otherwise Italian's held shelf wore Finnish's words (Howell
     // spotted it on the phone, 2026-07-30).
-    label: (key, isMagnified) => {
-      const hint = strataPreview?.language || null;
-      return isMagnified
-        ? dimensionBridge.translationName(key, hint)
-        : dimensionBridge.translationAbbrev(key, hint);
-    },
+    // THE SHELF SPEAKS IN FULL (Howell, LAN check 2026-08-01): every edition
+    // node shows its NATIVE FULL NAME — Οἱ Ἑβδομήκοντα, כתב יד לנינגרד —
+    // magnified or not. The old split showed Latin-letter codes (LXX, WLC) on
+    // the unmagnified nodes, which read as filing labels in a volume whose
+    // whole point is that each tongue speaks for itself. This retires O-6's
+    // nativeAbbrev before any data was written for it. It fits because this
+    // plane holds only an edition or three per language, far apart on the
+    // arc — unlike the book sky, where long names collide.
+    label: key => dimensionBridge.translationName(key, strataPreview?.language || null),
     selected: () => dimensionBridge.getSelection().translation,
     select: key => {
       const ok = dimensionBridge.setTranslation(key);
@@ -1002,19 +1005,21 @@ let dimensionFrontDoorAt = () => false;
 // being turned — assigned by bootVolume, which owns the adapter and manifest.
 let previewPrimary = () => {};
 
-// THE INCOMPLETE-TRANSLATION MARKER (Howell 2026-07-31). Insurance for the
-// certification override: when `?complete=true` is showing an edition that is
-// NOT certified, the screen says so — otherwise a bookmarked override could
-// quietly become the normal view and an uncertified edition would look
-// finished.
+// THE NOT-PROOFREAD MARKER (Howell 2026-07-31, reworded 2026-08-01).
+// Insurance for the override: when `?proofread=true` is showing an edition no
+// human has read against another witness, the screen says so — otherwise a
+// bookmarked override could quietly become the normal view and unread text
+// would look finished.
 //
 // Howell's shape, precisely: the marker names THE TRANSLATION IN HAND. "This
-// translation is incomplete" is honest; "a translation is incomplete" is not,
-// because a vague global notice tells the reader nothing about what they are
-// actually looking at. So it tracks the ACTIVE edition and disappears the
-// moment a certified one is selected — even while the override stays on.
-// It says only that something is missing, never what: the point is the
-// caveat, not an inventory.
+// translation is a work in progress" is honest; "a translation somewhere is"
+// is not, because a vague global notice tells the reader nothing about what
+// they are actually looking at. So it tracks the ACTIVE edition and vanishes
+// the moment a proofread one is selected — even while the override stays on.
+// The wording is now simply NOT PROOFREAD; Howell: "that message tells me the
+// translation I'm looking at is a work in progress, and that's all I need to
+// know." It says only that, never what is missing: the point is the caveat,
+// not an inventory.
 let incompleteMarkEl = null;
 function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
@@ -1032,7 +1037,7 @@ function updateIncompleteMark() {
   if (!incompleteMarkEl) {
     incompleteMarkEl = document.createElement('div');
     incompleteMarkEl.id = 'incomplete-mark';
-    incompleteMarkEl.textContent = 'THIS TRANSLATION IS INCOMPLETE';
+    incompleteMarkEl.textContent = 'NOT PROOFREAD';
     document.body.appendChild(incompleteMarkEl);
   }
   incompleteMarkEl.style.display = '';
