@@ -355,6 +355,10 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     // Route by item.level first so the formatter works correctly when the focus
     // ring transitions between book → chapter → verse levels at runtime.
     const itemLevel = item?.level || level;
+    // THE DOOR'S NAME follows the reader live (W-27): the root item's baked
+    // name is only the boot value; the live table wins at render, so switching
+    // to Hebrew in the funnel retitles the door to כתבי הקודש with no rebuild.
+    if (itemLevel === 'bibleRoot') return namesMap?.title || item.name || item.id || '';
     if (itemLevel === 'chapter') return formatChapter({ item, context });
     if (itemLevel === 'verse') return formatVerse({ item, context });
     const localizedBook = bookNames?.[item.id];
@@ -403,7 +407,7 @@ function makeLabelFormatter({ config, volume, level, locale, namesMap, options, 
 
 function buildBibleChain(manifest, options, namesMap) {
   // Gateway entry: BIBLIA SACRA LATINA alone on the ring, testaments in the pyramid.
-  if (options.level === 'root') return buildBibleRootChain();
+  if (options.level === 'root') return buildBibleRootChain(namesMap);
   const arrangement = options.arrangement;
   const initialItemId = options.initialItemId;
   if (options.cousinMode && (arrangement || 'cousins-with-gaps') !== 'siblings-only') {
