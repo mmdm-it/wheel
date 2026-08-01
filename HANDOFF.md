@@ -40,6 +40,33 @@ Until this lands, the engine's old `complete` read finds no field → treats
 all as false → bare-URL LAN shows an empty shelf. That is the ruled
 behaviour arriving early; use the override to see anything.
 
+**AND THE REUNION TRIGGER HAS FIRED.** Under the new vocabulary the trigger
+reads on COMPLETE (the data-side rung, mine to declare), not on any flag:
+two complete language kits — Hebrew (2026-07-31) and Greek (2026-08-01,
+title Ἡ Ἁγία Γραφή, 73 abbreviations, LXX at zero uncovered beside THEOD
+and BYZ). Howell is coming back to you. Ignore the stale mechanics in my
+Septuagint item below ("LAN check → complete:true → trigger") — that
+sequence predates the flag ruling and is superseded by this paragraph.
+
+**Numbers your suite asserts, all three moved:** 67 books / 1,215 chapters /
+31,524 verses is now **73 / 1,335 / 35,989** (canon completed + Greek-only
+minted slots; the cargo invariant documents each step of the ratchet).
+
+**What O-13's consumer will meet in versification/LXX.json** (2,440 entries
+across 32 books — the Malachi prototype saw none of these shapes):
+- **Letter-suffixed Greek addresses**: `["16:1","8:12a"]` — Esther's
+  additions carry Rahlfs-style letters; the Greek reckoning has verses the
+  spine numbers as whole chapters (Vulgate 11-16).
+- **Sub-slot spine addresses**: `["7:12b","7:50"]`, `["49:34b","26:1"]` —
+  minted Greek-only seats live at lettered spine slots.
+- **Many-to-one entries**: `15:1`, `15:2`, `15:3` all map to `4:8` (folds:
+  several Latin verses live inside one Greek verse). Do not assume the
+  mapping is injective in either direction.
+- **Note-only books**: IUDITH and TOBI have `entries: []` plus a prose
+  note — two recensions share the grid and each edition seats its OWN
+  numbering; there is nothing to remap, and the empty seats are honest.
+- `remap` on each book is just the entry count, a checksum.
+
 ---
 
 **✅ WILBUR, 2026-08-01 — THE SEPTUAGINT TEXT STANDS AT ZERO UNCOVERED.**
@@ -57,12 +84,12 @@ short-Goliath recension named absent verse-by-verse, and two books (Judith,
 Tobit) ruled two-recensions-one-grid with each edition at its own numbering.
 Corpus ratchet now 35,989 (Greek-only mints documented in the invariant).
 
-**What Greek still needs for its KIT — none of it text:**
-1. **Greek book abbreviations** (mine, next sitting).
-2. **The Greek volume title** — proposal Ἡ Ἁγία Γραφή, HOWELL'S RULING.
-3. Howell's LAN check (`?volume=bible&complete=true`), then LXX
-   `complete:true` — and the reunion trigger fires: two kit-complete
-   languages, one with three complete translations (WLC + LXX/THEOD/BYZ).
+**What Greek still needed for its KIT — all since DONE (see the ⚡ item
+above; this list kept for the record, its flag mechanics superseded):**
+1. **Greek book abbreviations** — seated 2026-08-01, all 73 (`d0b30ff`).
+2. **The Greek volume title** — Ἡ Ἁγία Γραφή, Howell's "proceed" 2026-08-01.
+3. ~~LAN check → `complete:true` → trigger~~ — the flag ruling retired this
+   sequence; the trigger reads on COMPLETE and HAS FIRED (⚡ above).
 
 **Open rulings parked for Howell:** the Sinaiticus Tobit (pinned whole as
 `Tbs.` in sources/tobit-swete-greek.json — a second Greek Tobit edition
@@ -1402,6 +1429,9 @@ the day you return.
 **two kit-complete languages, one of which has two complete translations**
 — i.e. Hebrew (WLC) + Greek (LXX + THEOD, with BYZ for the language's NT).
 That is the minimum dataset for the engine work Howell wants to do next.
+**STATUS 2026-08-01: FIRED** — both kits COMPLETE (see the ⚡ board item;
+"complete" here means the first rung of the COMPLETE→CERTIFIED→PROOFREAD
+ladder, which is the data-side fact this trigger was always about).
 
 ## → WILBUR
 
