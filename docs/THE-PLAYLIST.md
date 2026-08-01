@@ -81,6 +81,43 @@ any rung is dropped and the playlist moves on.
 | 59 | 1941 | Confraternity New Testament | English | ⏱ renewal search |
 | 60 | 1957 | Khomenko Bible | Ukrainian | NOT PD — first genuinely Catholic Ukrainian translation, too recent. Note: Kulish Bible (1903) is NOT Catholic |
 
+## The ring says more than this table does — RECONCILIATION OWED (2026-08-01)
+
+`wheel-cargo/gutenberg/languages.json` holds **29 languages** the reader can
+already see on the secondary ring, each with a YEAR that sets its position on
+the arc. Seven of them have no row above: they arrived with the 42-language PD
+sweep of 2026-07-28 as quick `comingSoon` hooks, before this table was
+expanded on the 31st, and nobody reconciled the two. A ring year is a factual
+claim about when a translation act happened, so these are display facts, not
+just bookkeeping.
+
+| ring language | ring year | owed |
+|---|---|---|
+| Czech (Čeština) | 1417 | ⏱ no row — 1417 is very early; identify the act (Olomouc/Padeřov lineage?) |
+| Irish (Gaeilge) | 1685 | ⏱ no row — 1685 is Bedell's PROTESTANT OT; a Catholic candidate must be found or the year is wrong |
+| Romanian (Română) | 1688 | ⏱ no row — 1688 is the Bucharest Bible, ORTHODOX; same question as Russian/Synodal |
+| Slovak (Slovenčina) | 1759 | ⏱ no row — Camaldolese Bible? (would be genuinely Catholic) |
+| Turkish (Türkçe) | 1827 | ⏱ no row — Howell has sat at Mass with Turkey's Catholics; the shelf criterion says find what they use |
+| Tagalog | 1905 | ⏱ no row — identify the act |
+| Maltese (Malti) | 1959 | ⏱ no row — 1959 is almost certainly NOT PD |
+
+**Years the ring and this table disagree on** — one of the two is wrong, and
+the ring is what a reader sees:
+
+| language | ring year | this table | note |
+|---|---|---|---|
+| Arabic | 867 | 1671 (Propaganda Fide) | 867 predates the entry entirely — what act is the ring claiming? |
+| Korean | 1887 | 1784 (Seonggyeong Jikhae) | |
+| Japanese | 1880 | 1549 fragment / 1910 Raguet | |
+| Lithuanian | 1735 | 1911 (Skvireckas) | 1735 smells Protestant (Quandt); the shelf criterion cares |
+
+**In this table but NOT on the ring:** Chinese, Vietnamese, Malayalam — three
+languages with research rows and no door.
+
+**Proposed rule (Howell's to accept):** this table is the source of truth, and
+every `languages.json` entry must trace to a row here — the way chapter text
+traces to a pinned source. Nothing reaches the ring on a hunch.
+
 ## Languages with no candidate
 - **Swahili** — NO CATHOLIC-AUTHORED CANDIDATE EXISTS. Confirmed by scholarly
   source: Catholic missionaries (White Fathers) never completed a full Bible
