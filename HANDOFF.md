@@ -52,6 +52,125 @@ The freeze is preserving the one build that breaks the doctrine. Orville's
 recommendation: **the server opens at the first PROOFREAD edition**, which
 makes Howell's Hebrew pass the real gate. Do not act on the old wording until
 he rules.
+---
+
+**WILBUR, merged 2026-08-01, kept for the record — the ⚡ instruction Orville
+answered above, with two live notes: (a) the proofread suite has since grown
+to 119 checks (LXX 79 after the appendices, + TBS 4); (b) ⚠ OUR VERSE COUNTS
+DISAGREE — Orville reads 79 / 1,435 / 38,177, my measure at the appendices
+commit is 79 / 1,435 / 38,275. A 98-verse discrepancy between two counts of
+the same corpus is a defect in one of our rulers; reconcile at next sitting
+before anyone asserts either number anywhere.**
+
+**⚡ ORVILLE FIRST — HOWELL'S FLAG RULING, 2026-08-01: `complete` IS NOW
+`proofread`, AND THE DATA ALREADY SAYS SO.** The ladder is COMPLETE (Wilbur
+declares: all data, correctly placed) → CERTIFIED (Howell: displays
+correctly in the wheel) → PROOFREAD (a human checked the text against an
+independent source — the 104-check suite is cargo `docs/PROOFREAD-SUITE.md`).
+Only the LAST rung lives in the data; complete/certified are labels in
+`docs/THE-PLAYLIST.md`. All three venues display IDENTICAL content — the
+question is never what, only when — and nothing shows the world until
+proofread. Cargo commit `acf2240` renamed the field on all 13 editions,
+**all false** (nothing on earth is proofread yet; WLC/THEOD/BYZ's old
+`true` values ran ahead of the doctrine and are honestly retired). Engine
+work this implies:
+1. Adapter + foreclosure read `proofread` instead of `complete`.
+2. The override becomes `?proofread=true` (same LAN-only rules).
+3. The marker text becomes simply **NOT PROOFREAD** — Howell's words: "that
+   message tells me the translation I'm looking at is a work in progress,
+   and that's all I need to know."
+4. From Howell's LAN check tonight: the shelf still labels translations
+   with Latin-letter codes — display each translation's NATIVE FULL NAME
+   (O-6's nativeAbbrev stays dead; full names fit the ring).
+Until this lands, the engine's old `complete` read finds no field → treats
+all as false → bare-URL LAN shows an empty shelf. That is the ruled
+behaviour arriving early; use the override to see anything.
+
+**AND THE REUNION TRIGGER HAS FIRED.** Under the new vocabulary the trigger
+reads on COMPLETE (the data-side rung, mine to declare), not on any flag:
+two complete language kits — Hebrew (2026-07-31) and Greek (2026-08-01,
+title Ἡ Ἁγία Γραφή, 73 abbreviations, LXX at zero uncovered beside THEOD
+and BYZ). Howell is coming back to you. Ignore the stale mechanics in my
+Septuagint item below ("LAN check → complete:true → trigger") — that
+sequence predates the flag ruling and is superseded by this paragraph.
+
+**Numbers your suite asserts, all three moved — TWICE in one day:** 67 books /
+1,215 chapters / 31,524 verses is now **79 / 1,435 / 38,275** (canon
+completed, Greek-only minted slots, and then THE APPENDICES on Howell's
+no-asterisks ruling of 2026-08-01: "the complete surviving translation as it
+existed at the time of its release"). Six Greek-only books entered the spine
+at Swete's own positions — I_ESDR (Greek 1 Esdras, before Ezra), III_MACC,
+IV_MACC, ODES, PS_SOL, ENOCH (surviving chapters only) — plus the Sirach
+Prologue as **ECCLU chapter 0** and the **TBS edition** (Sinaiticus Tobit,
+serves one book, no base). Engine consequences beyond the rename:
+- **Chapter 0 exists.** ECCLU's chapter map now starts at `"0"` with
+  `sort_number: 0` and `name: "Πρόλογος"` — render the NAME, not the number,
+  and don't assume chapter arrays are 1-based (the schema minimum moved to 0).
+- **Foreclosure is now load-bearing.** Six books exist that ONLY the LXX
+  serves and 3 further editions serve one book each (THEOD, TBS, and BYZ's
+  testament). Every other edition must foreclose them from the pyramid via
+  coverage.json, or readers meet empty books.
+- **The Esdras labels detangled per reckoning:** the new book is Greek
+  Ἔσδρας Α´ / Latin Esdrae III; canonical Ezra's GREEK label is now
+  Ἔσδρας Β´. Nothing else about Ezra moved.
+
+**What O-13's consumer will meet in versification/LXX.json** (2,440 entries
+across 32 books — the Malachi prototype saw none of these shapes):
+- **Letter-suffixed Greek addresses**: `["16:1","8:12a"]` — Esther's
+  additions carry Rahlfs-style letters; the Greek reckoning has verses the
+  spine numbers as whole chapters (Vulgate 11-16).
+- **Sub-slot spine addresses**: `["7:12b","7:50"]`, `["49:34b","26:1"]` —
+  minted Greek-only seats live at lettered spine slots.
+- **Many-to-one entries**: `15:1`, `15:2`, `15:3` all map to `4:8` (folds:
+  several Latin verses live inside one Greek verse). Do not assume the
+  mapping is injective in either direction.
+- **Note-only books**: IUDITH and TOBI have `entries: []` plus a prose
+  note — two recensions share the grid and each edition seats its OWN
+  numbering; there is nothing to remap, and the empty seats are honest.
+- `remap` on each book is just the entry count, a checksum.
+
+---
+
+**✅ WILBUR, 2026-08-01 — THE SEPTUAGINT TEXT STANDS AT ZERO UNCOVERED.**
+
+The night run drove the LXX gap list 764 → 0. Every Old Testament spine
+address now holds Greek text, aliases into the Greek verse that carries its
+words, or is asserted absent with its reason named in versification/LXX.json.
+The column serves **27,491 verses across 46 books**; the closing commits are
+`f7a927d`(LEVI) `b07c9a5`(scatter) `06b6869`(NEHE) `49c820f`(IUDITH)
+`73e817a`(DAN) `b0cebad`(I_SAM) `5525a73`(EXO) `273fd3b`(IERE)
+`c1f28ad`(TOBI) `5cf54cc`+`07a8d0a`(III_REG) `e926978`(ESTH). Highlights:
+the ch20/21 Naboth swap and the temple-build transposition in 3 Kingdoms,
+Esther's six additions split onto Jerome's chapter 11–16 verses exactly, the
+short-Goliath recension named absent verse-by-verse, and two books (Judith,
+Tobit) ruled two-recensions-one-grid with each edition at its own numbering.
+Corpus ratchet now 35,989 (Greek-only mints documented in the invariant).
+
+**What Greek still needed for its KIT — all since DONE (see the ⚡ item
+above; this list kept for the record, its flag mechanics superseded):**
+1. **Greek book abbreviations** — seated 2026-08-01, all 73 (`d0b30ff`).
+2. **The Greek volume title** — Ἡ Ἁγία Γραφή, Howell's "proceed" 2026-08-01.
+3. ~~LAN check → `complete:true` → trigger~~ — the flag ruling retired this
+   sequence; the trigger reads on COMPLETE and HAS FIRED (⚡ above).
+
+**Open rulings parked for Howell:** the Sinaiticus Tobit (pinned whole as
+`Tbs.` in sources/tobit-swete-greek.json — a second Greek Tobit edition
+someday?); the Sirach Prologue as a preface node (Swete prints it; the slot
+grid has no address for it). **Refinement debt, documented not blocking:**
+sub-slotting the inline miscellanies (PROV ~27, III_REG 2:35a-o/2:46a-l/
+12:24a-z/16:28a-h); the vernacular audits (trap #7) after Greek.
+
+---
+
+**✅ ORVILLE, 2026-07-31 — THE TITLE HOOK IS DONE AND HOWELL HAS OKAYED IT.
+WLC's flag can be flipped; Greek is unfrozen.**
+
+`names[lang].title` now feeds three consumers — the root-ring item, the
+testament parent label, and the label formatter (so a mid-funnel language
+switch retitles the door live, with no rebuild). The hardcoded string is the
+fallback only, and `names.latin.title` carries it verbatim, so Latin is a
+byte-for-byte no-op. Greek falls back until its title is seated.
+**Howell verified on the phone, 2026-07-31: "yes, it looks good."**
 
 **Two engine affordances came out of the certification deadlock**, which you
 will hit yourself the moment you set a flag false:
@@ -113,10 +232,12 @@ were spitballing that I recorded as rulings. You were right to flag them in
 DECISIONS.md; you were too polite about where they came from. Contradiction C
 should dissolve with the wrapper.
 
-**THE SERVER IS FROZEN — W-22.** Howell, 2026-07-30: *"We won't sync to server
-again until both you and Orville have done everything necessary to present a
-Hebrew translation that is 100% complete."* Applies to both of us. It supersedes
-the narrower hold on cargo `152de0f` / `fa7ea79`.
+**THE SERVER IS FROZEN — but W-22's unfreeze clause is SUPERSEDED (Howell,
+2026-07-31).** The freeze itself stands; what changed is the trigger. mmdm.it
+does NOT update at Hebrew-complete — it opens at W-24/W-27's dataset: **two
+kit-complete languages, one holding two-plus complete translations** (Hebrew
+WLC + Greek LXX/THEOD/BYZ), and thereafter tracks each certification
+continuously. Original W-22 wording kept in its entry for the record.
 
 **And Hebrew cannot reach 100% yet, because six books of the canon do not
 exist** — 1 & 2 Chronicles, Ezra, Nehemiah, 1 & 2 Maccabees. The corpus has 67
@@ -1028,7 +1149,13 @@ express the commonest form of the problem it exists to solve** — which is why 
 stopped and asked before authoring a thousand rows in the wrong shape.
 
 ### W-22 · SIX BOOKS OF THE CANON ARE MISSING — and the server is frozen until Hebrew is whole
-**Raised:** 2026-07-30 by Wilbur · **Status: OPEN — the blocker above all others**
+**Raised:** 2026-07-30 by Wilbur · **Status: the six books are BUILT (73/73);
+the sync clause is SUPERSEDED — Howell, 2026-07-31: the server does NOT open
+at Hebrew-complete. The trigger for updating mmdm.it is W-24/W-27's: TWO
+kit-complete languages, one holding two-plus complete translations (Hebrew
+WLC + Greek LXX/THEOD/BYZ). After that first opening, mmdm.it tracks each
+certification continuously (the screening-room ruling). Ruling 3 below is
+kept for the record but no longer governs.**
 
 **HOWELL'S RULINGS TODAY, both binding on us:**
 1. **Editions enter in the order the world received them** — Hebrew, then Greek,
@@ -1364,6 +1491,9 @@ the day you return.
 **two kit-complete languages, one of which has two complete translations**
 — i.e. Hebrew (WLC) + Greek (LXX + THEOD, with BYZ for the language's NT).
 That is the minimum dataset for the engine work Howell wants to do next.
+**STATUS 2026-08-01: FIRED** — both kits COMPLETE (see the ⚡ board item;
+"complete" here means the first rung of the COMPLETE→CERTIFIED→PROOFREAD
+ladder, which is the data-side fact this trigger was always about).
 
 ## → WILBUR
 
