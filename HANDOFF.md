@@ -48,9 +48,25 @@ and BYZ). Howell is coming back to you. Ignore the stale mechanics in my
 Septuagint item below ("LAN check → complete:true → trigger") — that
 sequence predates the flag ruling and is superseded by this paragraph.
 
-**Numbers your suite asserts, all three moved:** 67 books / 1,215 chapters /
-31,524 verses is now **73 / 1,335 / 35,989** (canon completed + Greek-only
-minted slots; the cargo invariant documents each step of the ratchet).
+**Numbers your suite asserts, all three moved — TWICE in one day:** 67 books /
+1,215 chapters / 31,524 verses is now **79 / 1,435 / 38,275** (canon
+completed, Greek-only minted slots, and then THE APPENDICES on Howell's
+no-asterisks ruling of 2026-08-01: "the complete surviving translation as it
+existed at the time of its release"). Six Greek-only books entered the spine
+at Swete's own positions — I_ESDR (Greek 1 Esdras, before Ezra), III_MACC,
+IV_MACC, ODES, PS_SOL, ENOCH (surviving chapters only) — plus the Sirach
+Prologue as **ECCLU chapter 0** and the **TBS edition** (Sinaiticus Tobit,
+serves one book, no base). Engine consequences beyond the rename:
+- **Chapter 0 exists.** ECCLU's chapter map now starts at `"0"` with
+  `sort_number: 0` and `name: "Πρόλογος"` — render the NAME, not the number,
+  and don't assume chapter arrays are 1-based (the schema minimum moved to 0).
+- **Foreclosure is now load-bearing.** Six books exist that ONLY the LXX
+  serves and 3 further editions serve one book each (THEOD, TBS, and BYZ's
+  testament). Every other edition must foreclose them from the pyramid via
+  coverage.json, or readers meet empty books.
+- **The Esdras labels detangled per reckoning:** the new book is Greek
+  Ἔσδρας Α´ / Latin Esdrae III; canonical Ezra's GREEK label is now
+  Ἔσδρας Β´. Nothing else about Ezra moved.
 
 **What O-13's consumer will meet in versification/LXX.json** (2,440 entries
 across 32 books — the Malachi prototype saw none of these shapes):

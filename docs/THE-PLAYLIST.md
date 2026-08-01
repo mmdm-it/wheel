@@ -19,9 +19,10 @@ any rung is dropped and the playlist moves on.
 | # | Year | Edition | Language | Status |
 |---|------|---------|----------|--------|
 | 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | COMPLETE 2026-07-31 · CERTIFIED 2026-07-31 · proofread pending (WLC suite: 15 checks) |
-| 2 | c.250–100 BC | Septuagint | Greek | COMPLETE 2026-08-01 (kit incl. title Ἡ Ἁγία Γραφή + 73 abbreviations) · certification awaits the engine rename · proofread pending (68 checks) |
+| 2 | c.250–100 BC | Septuagint | Greek | COMPLETE 2026-08-01 incl. THE APPENDICES (1 Esdras, 3–4 Macc, Odes, Pss of Solomon, Enoch, Ps 151, Sirach Prologue at ch 0; kit: title Ἡ Ἁγία Γραφή + 79 abbreviations) · certification awaits the engine · proofread pending (79 checks) |
 | 3 | c.50–100 AD | Greek New Testament | Greek | COMPLETE 2026-07-31 · certification pending (old flag ran ahead, retired) · proofread pending (12 checks) |
 | 4 | c.150 | Theodotion's Daniel | Greek | COMPLETE 2026-07-31 · certification pending (old flag ran ahead, retired) · proofread pending (9 checks) |
+| 4b | 4th c. | Tobit (Codex Sinaiticus) | Greek | COMPLETE 2026-08-01 (TBS edition, one book, S's lacunae asserted) · certification & proofread pending (4 checks) |
 | — | — | ***mmdm.it screening room opens · then tracks all below*** | — | — |
 | 5 | 382–405 | Vulgate (Jerome) | Latin | prologues owed |
 | 6 | 5th c. (c.405–434) | Original Armenian translation (Mesrob Mashtots) | Armenian | NOTE ONLY — predates any Catholic/Apostolic split; "Catholic" not a meaningful qualifier for this root text |
