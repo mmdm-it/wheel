@@ -86,10 +86,12 @@ were spitballing that I recorded as rulings. You were right to flag them in
 DECISIONS.md; you were too polite about where they came from. Contradiction C
 should dissolve with the wrapper.
 
-**THE SERVER IS FROZEN — W-22.** Howell, 2026-07-30: *"We won't sync to server
-again until both you and Orville have done everything necessary to present a
-Hebrew translation that is 100% complete."* Applies to both of us. It supersedes
-the narrower hold on cargo `152de0f` / `fa7ea79`.
+**THE SERVER IS FROZEN — but W-22's unfreeze clause is SUPERSEDED (Howell,
+2026-07-31).** The freeze itself stands; what changed is the trigger. mmdm.it
+does NOT update at Hebrew-complete — it opens at W-24/W-27's dataset: **two
+kit-complete languages, one holding two-plus complete translations** (Hebrew
+WLC + Greek LXX/THEOD/BYZ), and thereafter tracks each certification
+continuously. Original W-22 wording kept in its entry for the record.
 
 **And Hebrew cannot reach 100% yet, because six books of the canon do not
 exist** — 1 & 2 Chronicles, Ezra, Nehemiah, 1 & 2 Maccabees. The corpus has 67
@@ -1001,7 +1003,13 @@ express the commonest form of the problem it exists to solve** — which is why 
 stopped and asked before authoring a thousand rows in the wrong shape.
 
 ### W-22 · SIX BOOKS OF THE CANON ARE MISSING — and the server is frozen until Hebrew is whole
-**Raised:** 2026-07-30 by Wilbur · **Status: OPEN — the blocker above all others**
+**Raised:** 2026-07-30 by Wilbur · **Status: the six books are BUILT (73/73);
+the sync clause is SUPERSEDED — Howell, 2026-07-31: the server does NOT open
+at Hebrew-complete. The trigger for updating mmdm.it is W-24/W-27's: TWO
+kit-complete languages, one holding two-plus complete translations (Hebrew
+WLC + Greek LXX/THEOD/BYZ). After that first opening, mmdm.it tracks each
+certification continuously (the screening-room ruling). Ruling 3 below is
+kept for the record but no longer governs.**
 
 **HOWELL'S RULINGS TODAY, both binding on us:**
 1. **Editions enter in the order the world received them** — Hebrew, then Greek,
