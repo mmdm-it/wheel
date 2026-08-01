@@ -46,7 +46,7 @@ describe('dimension bridge — selection and defaults', () => {
     const meta = { translations: {
       NABX: { language: 'english', name: 'Pending', pendingLicense: true },
       SOONX: { language: 'english', name: 'Unsourced', comingSoon: true },
-      DRA: { language: 'english', name: 'Douay-Rheims', complete: true }
+      DRA: { language: 'english', name: 'Douay-Rheims', proofread: true }
     } };
     const bridge = createDimensionBridge({ store, translationsMeta: meta });
     assert.equal(bridge.setLanguage('english'), true);
@@ -62,7 +62,7 @@ describe('dimension bridge — selection and defaults', () => {
     // edition's name. The shelf shows; the reader keeps reading.
     const store = createInteractionStore();
     const meta = { translations: {
-      VUL: { language: 'latin', name: 'Vulgate', complete: true },
+      VUL: { language: 'latin', name: 'Vulgate', proofread: true },
       A: { language: 'italian', name: 'Held A', pendingLicense: true },
       B: { language: 'italian', name: 'Held B', pendingLicense: true }
     } };
@@ -80,7 +80,7 @@ describe('dimension bridge — selection and defaults', () => {
     // nothing servable shows its native "coming soon" placeholder.
     const store = createInteractionStore();
     const meta = { translations: {
-      VUL: { language: 'latin', name: 'Vulgate', complete: true },
+      VUL: { language: 'latin', name: 'Vulgate', proofread: true },
       SOON: { language: 'latin', name: 'Unsourced', comingSoon: true },
       CEIX: { language: 'italian', name: 'Held', nativeName: 'La Sacra Bibbia CEI', pendingLicense: true }
     } };
@@ -109,7 +109,7 @@ describe('dimension bridge — selection and defaults', () => {
     } });
     assert.equal(withNative.translationAbbrev('LXX'), 'Οʹ', 'Greek abbreviation, not the Latin key');
     const withoutNative = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
-      translations: { BYZ: { language: 'greek', name: 'Byzantine', complete: true } }
+      translations: { BYZ: { language: 'greek', name: 'Byzantine', proofread: true } }
     } });
     assert.equal(withoutNative.translationAbbrev('BYZ'), 'BYZ', 'falls back to the key, no regression');
   });
@@ -121,7 +121,7 @@ describe('dimension bridge — selection and defaults', () => {
     const bridge = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
       translations: {
         WLC: { language: 'hebrew', name: 'Leningrad Codex', direction: 'rtl' },
-        VUL: { language: 'latin', name: 'Vulgate', complete: true },
+        VUL: { language: 'latin', name: 'Vulgate', proofread: true },
         CUSTOM: { language: 'greek', name: 'Override', lang: 'grc' }
       }
     } });
@@ -360,7 +360,7 @@ describe('the shelf follows the reader — a live names table', () => {
 describe('the coming-soon node speaks the language it belongs to', () => {
   const meta = {
     translations: {
-      FIN: { language: 'finnish', name: 'Biblia', complete: true },
+      FIN: { language: 'finnish', name: 'Biblia', proofread: true },
       CEI: { language: 'italian', name: 'CEI', pendingLicense: true }
     }
   };

@@ -98,18 +98,25 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // when Douay is right there was the "default is a translation we don't have"
   // bug (Howell 2026-07-26).
   // NO ASTERISKS (Howell, RULED 2026-07-30 — see HANDOFF CONTRACT). An edition
-  // is offered only if the data DECLARES it complete. Completeness is never
+  // is offered only if the data DECLARES it fit to show. That is never
   // measured here: counting verses cannot tell a structural gap (never
   // written) from a provisional one (not yet sourced), and guessing would
-  // unseat a finished edition or seat an unfinished one. Wilbur marks
-  // `complete: true` when he is satisfied; until then the edition does not
-  // exist for the reader — on the LAN and on the web alike, since Howell
-  // rejected separate filters for the two.
+  // unseat a finished edition or seat an unfinished one.
+  //
+  // THE LADDER (Howell, RULED 2026-08-01) — COMPLETE (Wilbur: all the data,
+  // correctly placed) → CERTIFIED (Howell: displays correctly in the wheel) →
+  // PROOFREAD (a human checked the text against an independent source). Only
+  // the LAST rung lives in the data, because only the last rung is a promise
+  // to the reader; the first two are labels in docs/THE-PLAYLIST.md. So the
+  // gate reads `proofread`, and nothing reaches ANY venue — the bench, or
+  // either public site — until a human has read it against another witness.
+  // Every venue shows IDENTICAL content; the question is never what, only
+  // when.
   //
   // An edition still held for licensing or still unsourced is excluded as
-  // before; `complete` is an additional gate, not a replacement.
-  // THE CERTIFICATION OVERRIDE (Howell 2026-07-31): `?complete=true` lifts the
-  // completeness gate so an edition can be INSPECTED before it is certified.
+  // before; `proofread` is an additional gate, not a replacement.
+  // THE CERTIFICATION OVERRIDE (Howell 2026-07-31): `?proofread=true` lifts
+  // that gate so an edition can be INSPECTED before it has been read.
   // Without it the doctrine deadlocks — a flag is false because the kit is
   // missing something, but judging what is missing requires seeing the
   // edition, and a false flag hides it.
@@ -120,21 +127,21 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   //      appended to bibliacatholica.com to read half-finished scripture. The
   //      escape hatch does not exist in production rather than being a hole we
   //      trust nobody to find.
-  //   2. IT LIFTS `complete` AND NOTHING ELSE. `pendingLicense` is a LEGAL
+  //   2. IT LIFTS `proofread` AND NOTHING ELSE. `pendingLicense` is a LEGAL
   //      wall, not an editorial one — the local corpus still holds the
   //      copyrighted editions the deploy filter strips, and no debugging
   //      convenience may show them. `comingSoon` stays enforced too: an
   //      unsourced edition has nothing to inspect.
-  const overrideComplete = (() => {
+  const overrideProofread = (() => {
     try {
       if (typeof window === 'undefined' || !window.location) return false;
       const host = window.location.hostname || '';
       const isLan = /^(localhost|127\.|10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(host);
       if (!isLan) return false;
-      return new URLSearchParams(window.location.search).get('complete') === 'true';
+      return new URLSearchParams(window.location.search).get('proofread') === 'true';
     } catch (_) { return false; }
   })();
-  const isServable = t => t && (t.complete === true || overrideComplete)
+  const isServable = t => t && (t.proofread === true || overrideProofread)
     && !t.pendingLicense && !t.comingSoon;
   const servableEditionsOf = languageId => Object.entries(meta?.translations || {})
     .filter(([, t]) => t?.language === languageId && isServable(t))
@@ -224,15 +231,15 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // empty, which is the honest picture of a volume with nothing to read.
     // (This supersedes W-11's placeholder-language display.)
     languagesAvailable() {
-      const complete = new Set();
+      const shown = new Set();
       for (const t of Object.values(meta?.translations || {})) {
-        if (t?.language && isServable(t)) complete.add(t.language);
+        if (t?.language && isServable(t)) shown.add(t.language);
       }
       // Registry order when we have it — it is chronological and deliberate —
       // else whatever order the editions give.
       const entries = languageEntries();
-      if (entries.length) return entries.map(e => e.id).filter(id => complete.has(id));
-      return [...complete];
+      if (entries.length) return entries.map(e => e.id).filter(id => shown.has(id));
+      return [...shown];
     },
 
     // The language's own name, for the secondary stratum's labels. Registry
@@ -292,10 +299,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     isServableEdition(key) { return isServable(meta?.translations?.[key]); },
 
     // The RAW certification, ignoring the override — so the host can mark an
-    // edition it is only showing because `?complete=true` asked it to.
-    isCertifiedEdition(key) { return meta?.translations?.[key]?.complete === true; },
-    // Whether the completeness gate is currently lifted (LAN + ?complete=true).
-    completeOverrideActive() { return overrideComplete; },
+    // edition it is only showing because `?proofread=true` asked it to.
+    isCertifiedEdition(key) { return meta?.translations?.[key]?.proofread === true; },
+    // Whether the gate is currently lifted (LAN + ?proofread=true).
+    completeOverrideActive() { return overrideProofread; },
 
     // The placeholder key, so the host can tell a real edition from a
     // display-only "coming soon" node without hardcoding the sentinel.
