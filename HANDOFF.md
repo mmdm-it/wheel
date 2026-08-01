@@ -16,6 +16,37 @@ the proposal — entries here are the working summary.*
 
 ## THE BOARD — 2026-07-30
 
+**✅ WILBUR, 2026-08-01 — THE SEPTUAGINT TEXT STANDS AT ZERO UNCOVERED.**
+
+The night run drove the LXX gap list 764 → 0. Every Old Testament spine
+address now holds Greek text, aliases into the Greek verse that carries its
+words, or is asserted absent with its reason named in versification/LXX.json.
+The column serves **27,491 verses across 46 books**; the closing commits are
+`f7a927d`(LEVI) `b07c9a5`(scatter) `06b6869`(NEHE) `49c820f`(IUDITH)
+`73e817a`(DAN) `b0cebad`(I_SAM) `5525a73`(EXO) `273fd3b`(IERE)
+`c1f28ad`(TOBI) `5cf54cc`+`07a8d0a`(III_REG) `e926978`(ESTH). Highlights:
+the ch20/21 Naboth swap and the temple-build transposition in 3 Kingdoms,
+Esther's six additions split onto Jerome's chapter 11–16 verses exactly, the
+short-Goliath recension named absent verse-by-verse, and two books (Judith,
+Tobit) ruled two-recensions-one-grid with each edition at its own numbering.
+Corpus ratchet now 35,989 (Greek-only mints documented in the invariant).
+
+**What Greek still needs for its KIT — none of it text:**
+1. **Greek book abbreviations** (mine, next sitting).
+2. **The Greek volume title** — proposal Ἡ Ἁγία Γραφή, HOWELL'S RULING.
+3. Howell's LAN check (`?volume=bible&complete=true`), then LXX
+   `complete:true` — and the reunion trigger fires: two kit-complete
+   languages, one with three complete translations (WLC + LXX/THEOD/BYZ).
+
+**Open rulings parked for Howell:** the Sinaiticus Tobit (pinned whole as
+`Tbs.` in sources/tobit-swete-greek.json — a second Greek Tobit edition
+someday?); the Sirach Prologue as a preface node (Swete prints it; the slot
+grid has no address for it). **Refinement debt, documented not blocking:**
+sub-slotting the inline miscellanies (PROV ~27, III_REG 2:35a-o/2:46a-l/
+12:24a-z/16:28a-h); the vernacular audits (trap #7) after Greek.
+
+---
+
 **✅ ORVILLE, 2026-07-31 — THE TITLE HOOK IS DONE AND HOWELL HAS OKAYED IT.
 WLC's flag can be flipped; Greek is unfrozen.**
 

@@ -10,7 +10,7 @@ minutes of research — and half of them landed would be impressive.
 | # | Year | Edition | Language | Status |
 |---|------|---------|----------|--------|
 | 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | ✓ COMPLETE — certified kit-complete 2026-07-31 |
-| 2 | c.250–100 BC | Septuagint | Greek | ~98% |
+| 2 | c.250–100 BC | Septuagint | Greek | text 100% (2026-08-01, gap list emptied) — awaiting Greek abbreviations + title ruling for the kit |
 | 3 | c.50–100 AD | Greek New Testament | Greek | ✓ CERTIFIED complete 2026-07-31 (second Greek flag) |
 | 4 | c.150 | Theodotion's Daniel | Greek | ✓ CERTIFIED complete 2026-07-31 (first Greek flag) |
 | — | — | ***mmdm.it screening room opens · then tracks all below*** | — | — |
