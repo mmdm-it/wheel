@@ -1,85 +1,108 @@
-# THE PLAYLIST — bibliacatholica.com
-### Every translation enters at the date of its act. No leapfrogging. Nothing below 100%.
-### Master tracking table, expanded 2026-07-31 (22 → 60), sorted chronologically by the act's first year.
+# THE PLAYLIST — the single source of major truth
 
-Legend: ⏱ needs research/verification | ✝ lost/no surviving copy |
-audit owed = PD status likely but unconfirmed.
-Expectation on the ⏱ entries, ruled by Howell: half will not survive five
-minutes of research — and half of them landed would be impressive.
+Every translation enters at the date of its act. No leapfrogging. Nothing
+below 100%. **This file is authoritative**: it is the one place that records
+which editions exist or are planned, when each was made, in what language,
+and how far along it is. Nothing here is derived from anywhere else, and
+where another file disagrees with this one, this one is right.
 
-**The ladder (ruled 2026-08-01): COMPLETE → CERTIFIED → PROOFREAD.**
-Wilbur declares COMPLETE (all the data, correctly placed, to the best of
-his knowledge); Howell CERTIFIES (looked at it in the wheel, displays
-correctly); a human PROOFREADS it against an independent source
-(docs/PROOFREAD-SUITE.md in cargo). Only PROOFREAD lives in the data —
-the single flag every venue obeys; COMPLETE and CERTIFIED are tracked
-HERE. Strict sequence, no leapfrogging; a translation that bogs down at
-any rung is dropped and the playlist moves on.
+**Two rungs, two booleans** (ruled 2026-08-01; the earlier three-rung ladder
+retired CERTIFIED as a category that never earned its own row):
 
-| # | Year | Edition | Language | Status |
-|---|------|---------|----------|--------|
-| 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | COMPLETE 2026-07-31 · CERTIFIED 2026-07-31 · proofread pending (WLC suite: 15 checks) |
-| 2 | c.250–100 BC | Septuagint | Greek | COMPLETE 2026-08-01 incl. THE APPENDICES (1 Esdras, 3–4 Macc, Odes, Pss of Solomon, Enoch, Ps 151, Sirach Prologue at ch 0; kit: title Ἡ Ἁγία Γραφή + 79 abbreviations) · certification awaits the engine · proofread pending (79 checks) |
-| 3 | c.50–100 AD | Greek New Testament | Greek | COMPLETE 2026-07-31 · certification pending (old flag ran ahead, retired) · proofread pending (12 checks) |
-| 4 | c.150 | Theodotion's Daniel | Greek | COMPLETE 2026-07-31 · certification pending (old flag ran ahead, retired) · proofread pending (9 checks) |
-| 4b | 4th c. | Tobit (Codex Sinaiticus) | Greek | COMPLETE 2026-08-01 (TBS edition, one book, S's lacunae asserted) · certification & proofread pending (4 checks) |
-| — | — | ***mmdm.it screening room opens · then tracks all below*** | — | — |
-| 5 | 382–405 | Vulgate (Jerome) | Latin | prologues owed |
-| 6 | 5th c. (c.405–434) | Original Armenian translation (Mesrob Mashtots) | Armenian | NOTE ONLY — predates any Catholic/Apostolic split; "Catholic" not a meaningful qualifier for this root text |
-| 7 | 1422–1430 | Alba Bible | Spanish | EXCLUDED: Jewish translation under Catholic patronage; not Catholic properly speaking |
-| 8 | 1466 | Mentelin Bible | German | ⏱ source hunt |
-| 9 | 1471 | Malermi | Italian | ⏱ OCR trial |
-| 10 | 1471 (ed. 1882–87) | Negroni/Jenson edition | Italian | ⏱ source hunt |
-| 11 | 1514–1517 | Complutensian Polyglot | Latin/Hebrew/Greek/Aramaic | note: scholarly polyglot, not vernacular |
-| 12 | 1527 | Emser New Testament | German | ⏱ source hunt |
-| 13 | 1528 | Vorsterman Bible | Dutch | ⏱ source hunt |
-| 14 | 1534 | Dietenberger Bible (Die Katholische Bibel) | German | ⏱ source hunt |
-| 15 | 1547 | Leuven Vulgate (Hentenian Bible) | Latin | ⏱ source hunt — standardized Vulgate text, pre-Sistine/Clementine |
-| 16 | 1547–1548 | Blanckart Bible (rival Cologne edition) | Dutch | ⏱ source hunt |
-| 17 | 1548 | Leuven Bible (Van Winghe) | Dutch | ⏱ source hunt — standard Dutch Catholic Bible for centuries; revised 1599 |
-| 18 | 1549 | Xavier's Matthew fragment | Japanese | historical trace only — no continuous text survives |
-| 19 | 1550 | Nicolas de Leuze Bible | French | ⏱ source hunt — predates de Sacy by over a century |
-| 20 | 1561 | Leopolita's Bible | Polish | ⏱ source hunt |
-| 21 | 1582–1610 | Douay-Rheims (original, pre-Challoner) | English | ⏱ source hunt — confirmed PD, digitized (Gutenberg #1581; Internet Archive) |
-| 22 | 1599 | Wujek Bible | Polish | ⏱ source in hand (digitized, Wielkopolska Digital Library) |
-| 23 | 1613 | Jesuit Kyoto NT | Japanese | ✝ LOST, no copy known |
-| 24 | 1622–1638 (pub. 1999) | Kašić Bible | Croatian | ⏱ source hunt + edition-copyright check |
-| 25 | 1626 | Káldi Bible (original) | Hungarian | ⏱ source hunt — first complete Catholic Hungarian Bible; d. 1634 |
-| 26 | 1630 | Ulenberg revision | German | ⏱ source hunt |
-| 27 | 1661 | Jesuit Mainz Bible | German | ⏱ source hunt |
-| 28 | 1667–1696 | de Sacy | French | audit owed |
-| 29 | 1671–1673 | Biblia Sacra Arabica (Propaganda Fide) | Arabic | ⏱ source hunt — first complete printed Arabic Bible; Vatican project |
-| 30 | 1735 | Mekhitarist translation | Armenian | ⏱ source hunt — first major Armenian Catholic (Mekhitarist) Bible project, Venice |
-| 31 | 1749–1752 | Douay-Rheims (Challoner revision) | English | audit owed |
-| 32 | 1769–1781 | Martini | Italian | ⏱ source hunt |
-| 33 | 1776 | Biblia 1776 | Finnish | audit owed |
-| 34 | 1778–1790 | Pereira de Figueiredo | Portuguese | ⏱ the BFBS trap |
-| 35 | 1780 | Szveti evangyeliomi (Küzmics) | Slovene (Prekmurje) | ⏱ source hunt — Gospels only |
-| 36 | 1784 | Seonggyeong Jikhae | Korean | ⏱ source hunt (commentary, not continuous text) |
-| 37 | c.1790 | Poirot translation | Chinese | ⏱ source hunt |
-| 38 | 1793 | Scío de San Miguel | Spanish | ⏱ source hunt |
-| 39 | 1805 | Zohrabian edition | Armenian | ⏱ source hunt — regarded as most valuable critical edition; Mekhitarist, Venice |
-| 40 | 1823–1825 | Torres Amat | Spanish | ⏱ provenance trap |
-| 41 | 1831 | Katančić Bible | Croatian | ⏱ source hunt |
-| 42 | 1860 | Bagratuni edition | Armenian | ⏱ source hunt — Mekhitarist critical edition; translator d. 1866, PD clear |
-| 43 | 1865 | Káldi–Tárkányi (revision) | Hungarian | audit owed |
-| 44 | 1876 | Synodal | Russian | audit owed — verify Catholic vs Orthodox provenance |
-| 45 | 1877 | Delitzsch New Testament | Hebrew | import owed |
-| 46 | 1887 (Gospels/Acts) | Manjummal translation | Malayalam | ⏱ date + source hunt (year uncertain) |
-| 47 | 1894–1923 | Crampon | French | audit owed |
-| 48 | 1902 | Glaire-Vigouroux | French | ⏱ source hunt |
-| 49 | 1910 | Raguet New Testament | Japanese | ⏱ death-year check (life+70) |
-| 50 | 1911–1937 | Skvireckas Bible | Lithuanian | NOT PD — translator d. 1959; copyrighted until 2029 |
-| 51 | 1913–1916 | Cố Chính Linh (Schlicklin) | Vietnamese | ⏱ death-year check (life+70) |
-| 52 | c.1913–1935 | Westminster Version (Lattey) | English | ⏱ source hunt — PD status mixed/uncertain by volume |
-| 53 | 1914 | Allioli–Arndt | German | audit owed |
-| 54 | 1924 | Pancha Granthy | Malayalam | ⏱ source hunt |
-| 55 | 1929 | Vienna Mekhitarist edition | Armenian | ⏱ source hunt — final edition in this lineage |
-| 56 | 1929–1939 | Petrus Canisius | Dutch | audit owed |
-| 57 | 1933/1938 | Pyhä Raamattu | Finnish | ⏱ source in hand |
-| 58 | 1940 | Catholic NT (complete) | Malayalam | audit owed |
-| 59 | 1941 | Confraternity New Testament | English | ⏱ renewal search |
-| 60 | 1957 | Khomenko Bible | Ukrainian | NOT PD — first genuinely Catholic Ukrainian translation, too recent. Note: Kulish Bible (1903) is NOT Catholic |
+- **complete** — Wilbur declares it: all the data the edition needs,
+  correctly placed, at the artifact's full extent, to the best of his
+  knowledge.
+- **proofread** — a human has read it in the wheel against an independent
+  copy of the source and fixed what was wrong. This is the ONLY gate the
+  program obeys; nothing reaches a reader without it. The suites are in
+  `wheel-cargo/docs/PROOFREAD-SUITE.md`.
+
+Both start `no`. An edition may be complete and not proofread; it may not be
+proofread without being complete first.
+
+**Code** is the join key — the edition's code in the corpus, blank where
+nothing is seated yet. Everything the program needs beyond this table (native
+names, versification tables, colophon text, book names and abbreviations)
+lives in `wheel-cargo/gutenberg/translations.json`; those are dictionaries,
+not decisions, and they are not major truths.
+
+Expectation on the unresearched entries, ruled by Howell: half will not
+survive five minutes of research — and half of them landed would be
+impressive. A translation that bogs down at any rung is dropped and the
+playlist moves on.
+
+| # | Year | Edition | Language | Code | complete | proofread | Notes |
+|---|------|---------|----------|------|----------|-----------|-------|
+| 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | WLC | yes | no | seated |
+| 2 | c.250–100 BC | Septuagint | Greek | LXX | yes | no | seated |
+| 3 | c.50–100 AD | Greek New Testament | Greek | BYZ | yes | no | seated |
+| 4 | c.150 | Theodotion's Daniel | Greek | THEOD | yes | no | seated |
+| 5 | 4th c. | Tobit (Codex Sinaiticus) | Greek | TBS | yes | no | seated |
+| 6 | 382–405 | Vulgate (Jerome) | Latin | VUL | no | no | prologues owed |
+| 7 | 1466 | Mentelin Bible | German |  | no | no | ⏱ source hunt |
+| 8 | 1471 | Malermi | Italian |  | no | no | ⏱ OCR trial |
+| 9 | 1471 (ed. 1882–87) | Negroni/Jenson edition | Italian |  | no | no | ⏱ source hunt |
+| 10 | 1527 | Emser New Testament | German |  | no | no | ⏱ source hunt |
+| 11 | 1528 | Vorsterman Bible | Dutch |  | no | no | ⏱ source hunt |
+| 12 | 1534 | Dietenberger Bible (Die Katholische Bibel) | German |  | no | no | ⏱ source hunt |
+| 13 | 1547 | Leuven Vulgate (Hentenian Bible) | Latin |  | no | no | ⏱ source hunt — standardized Vulgate text, pre-Sistine/Clementine |
+| 14 | 1547–1548 | Blanckart Bible (rival Cologne edition) | Dutch |  | no | no | ⏱ source hunt |
+| 15 | 1548 | Leuven Bible (Van Winghe) | Dutch |  | no | no | ⏱ source hunt — standard Dutch Catholic Bible for centuries; revised 1599 |
+| 16 | 1550 | Nicolas de Leuze Bible | French |  | no | no | ⏱ source hunt — predates de Sacy by over a century |
+| 17 | 1561 | Leopolita's Bible | Polish |  | no | no | ⏱ source hunt |
+| 18 | 1582–1610 | Douay-Rheims (original, pre-Challoner) | English |  | no | no | ⏱ source hunt — confirmed PD, digitized (Gutenberg #1581; Internet Archive) |
+| 19 | 1599 | Wujek Bible | Polish |  | no | no | ⏱ source in hand (digitized, Wielkopolska Digital Library) |
+| 20 | 1622–1638 (pub. 1999) | Kašić Bible | Croatian |  | no | no | ⏱ source hunt + edition-copyright check |
+| 21 | 1626 | Káldi Bible (original) | Hungarian |  | no | no | ⏱ source hunt — first complete Catholic Hungarian Bible; d. 1634 |
+| 22 | 1630 | Ulenberg revision | German |  | no | no | ⏱ source hunt |
+| 23 | 1661 | Jesuit Mainz Bible | German |  | no | no | ⏱ source hunt |
+| 24 | 1667–1696 | de Sacy | French | SAC | no | no | audit owed |
+| 25 | 1671–1673 | Biblia Sacra Arabica (Propaganda Fide) | Arabic |  | no | no | ⏱ source hunt — first complete printed Arabic Bible; Vatican project |
+| 26 | 1735 | Mekhitarist translation | Armenian |  | no | no | ⏱ source hunt — first major Armenian Catholic (Mekhitarist) Bible project, Venice |
+| 27 | 1749–1752 | Douay-Rheims (Challoner revision) | English | DRA | no | no | audit owed |
+| 28 | 1769–1781 | Martini | Italian |  | no | no | ⏱ source hunt |
+| 29 | 1776 | Biblia 1776 | Finnish | FIN | no | no | audit owed |
+| 30 | 1778–1790 | Pereira de Figueiredo | Portuguese |  | no | no | ⏱ the BFBS trap |
+| 31 | 1780 | Szveti evangyeliomi (Küzmics) | Slovene (Prekmurje) |  | no | no | ⏱ source hunt — Gospels only |
+| 32 | 1784 | Seonggyeong Jikhae | Korean |  | no | no | ⏱ source hunt (commentary, not continuous text) |
+| 33 | c.1790 | Poirot translation | Chinese |  | no | no | ⏱ source hunt |
+| 34 | 1793 | Scío de San Miguel | Spanish |  | no | no | ⏱ source hunt |
+| 35 | 1805 | Zohrabian edition | Armenian |  | no | no | ⏱ source hunt — regarded as most valuable critical edition; Mekhitarist, Venice |
+| 36 | 1823–1825 | Torres Amat | Spanish |  | no | no | ⏱ provenance trap |
+| 37 | 1831 | Katančić Bible | Croatian |  | no | no | ⏱ source hunt |
+| 38 | 1860 | Bagratuni edition | Armenian |  | no | no | ⏱ source hunt — Mekhitarist critical edition; translator d. 1866, PD clear |
+| 39 | 1865 | Káldi–Tárkányi (revision) | Hungarian | KAL | no | no | audit owed |
+| 40 | 1876 | Synodal | Russian | SYN | no | no | audit owed — verify Catholic vs Orthodox provenance |
+| 41 | 1877 | Delitzsch New Testament | Hebrew |  | no | no | import owed |
+| 42 | 1887 (Gospels/Acts) | Manjummal translation | Malayalam |  | no | no | ⏱ date + source hunt (year uncertain) |
+| 43 | 1894–1923 | Crampon | French | NEO | no | no | audit owed |
+| 44 | 1902 | Glaire-Vigouroux | French |  | no | no | ⏱ source hunt |
+| 45 | 1910 | Raguet New Testament | Japanese |  | no | no | ⏱ death-year check (life+70) |
+| 46 | 1911–1937 | Skvireckas Bible | Lithuanian |  | no | no | NOT PD — translator d. 1959; copyrighted until 2029 |
+| 47 | 1913–1916 | Cố Chính Linh (Schlicklin) | Vietnamese |  | no | no | ⏱ death-year check (life+70) |
+| 48 | c.1913–1935 | Westminster Version (Lattey) | English |  | no | no | ⏱ source hunt — PD status mixed/uncertain by volume |
+| 49 | 1914 | Allioli–Arndt | German | ALL | no | no | audit owed |
+| 50 | 1924 | Pancha Granthy | Malayalam |  | no | no | ⏱ source hunt |
+| 51 | 1929 | Vienna Mekhitarist edition | Armenian |  | no | no | ⏱ source hunt — final edition in this lineage |
+| 52 | 1929–1939 | Petrus Canisius | Dutch | CAN | no | no | audit owed |
+| 53 | 1933/1938 | Pyhä Raamattu | Finnish |  | no | no | ⏱ source in hand |
+| 54 | 1940 | Catholic NT (complete) | Malayalam |  | no | no | audit owed |
+| 55 | 1941 | Confraternity New Testament | English |  | no | no | ⏱ renewal search |
+| 56 | 1957 | Khomenko Bible | Ukrainian |  | no | no | NOT PD — first genuinely Catholic Ukrainian translation, too recent. Note: Kulish Bible (1903) is NOT Catholic |
+
+## Considered and excluded — not editions we plan to add
+
+These were researched and ruled out. They are kept so the reasoning is not
+re-litigated, and deliberately kept OUT of the numbered table above, which is
+a roster of editions we have or intend to have.
+
+| Year | Edition | Language | Why excluded |
+|------|---------|----------|--------------|
+| 5th c. (c.405–434) | Original Armenian translation (Mesrob Mashtots) | Armenian | NOTE ONLY — predates any Catholic/Apostolic split; "Catholic" not a meaningful qualifier for this root text |
+| 1422–1430 | Alba Bible | Spanish | EXCLUDED: Jewish translation under Catholic patronage; not Catholic properly speaking |
+| 1514–1517 | Complutensian Polyglot | Latin/Hebrew/Greek/Aramaic | note: scholarly polyglot, not vernacular |
+| 1549 | Xavier's Matthew fragment | Japanese | historical trace only — no continuous text survives |
+| 1613 | Jesuit Kyoto NT | Japanese | ✝ LOST, no copy known |
 
 ## The ring says more than this table does — RECONCILIATION OWED (2026-08-01)
 
