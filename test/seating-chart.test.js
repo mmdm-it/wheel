@@ -299,3 +299,70 @@ describe('the committed edition seats the reader (not the pinned default)', () =
     assert.ok(latinSeats.includes('12'), 'uncharted edition keeps the identity chain');
   });
 });
+
+// ——— E3: the chapters ring follows the edition ———
+import { chaptersFromSeats } from '../src/navigation/seating-chart.js';
+import { buildBibleChapterChain } from '../src/navigation/cousin-builder.js';
+
+describe('the chapters ring holds the edition\'s own chapters (E3)', () => {
+  it('a regrouped book offers its own chapters, not the spine\'s', () => {
+    const manifest = makeManifest();
+    // The edition folds the spine's two chapters into ONE of its own.
+    const chart = { edition: 'X', books: { ALPH: [
+      { c: '1', s: [
+        { l: '1', u: ['1', 1, 1] }, { l: '2', u: ['1', 2, 2] },
+        { l: '3', u: ['2', 1, 1] }, { l: '4', u: ['2', 2, 2] }
+      ] }
+    ] } };
+    const seats = expandChart(manifest.Gutenberg_Bible, chart);
+    const chapters = chaptersFromSeats(seats);
+    assert.equal(chapters.length, 1, 'one chapter, because the edition has one');
+    assert.equal(chapters[0].name, '1');
+  });
+
+  it('a chapter label that collides with a spine number does NOT merge two chapters', () => {
+    // The bug this test exists for: identity chapters key by the spine's
+    // number and explicit ones by the edition's label — two namespaces
+    // sharing a spelling. Greek Sirach's chapter 30 collided with the spine's
+    // chapter 30 and the verse ring silently served them as ONE 44-seat
+    // chapter. Silent merging is the display lie this whole model exists to
+    // make impossible.
+    const manifest = makeManifest();
+    const chart = { edition: 'X', books: { ALPH: [
+      5,                                              // identity → key ALPH:1
+      { c: '1', s: [{ l: '9', u: ['2', 1, 1] }] }     // label '1' → would collide
+    ] } };
+    const seats = expandChart(manifest.Gutenberg_Bible, chart);
+    const keys = [...new Set(seats.map(s => s.chapterKey))];
+    assert.equal(keys.length, 2, 'two chapters stay two chapters');
+    const chapters = chaptersFromSeats(seats);
+    assert.equal(chapters.length, 2);
+    assert.equal(new Set(chapters.map(c => c.id)).size, 2, 'and their ids are distinct');
+    assert.deepEqual(chapters.map(c => c.name), ['1', '1'],
+      'while both still DISPLAY the label their edition gives them');
+  });
+
+  it('the display label never wears the disambiguator', () => {
+    const manifest = makeManifest();
+    const chart = { edition: 'X', books: { ALPH: [5, { c: '1', s: [{ l: '9', u: ['2', 1, 1] }] }] } };
+    const chapters = chaptersFromSeats(expandChart(manifest.Gutenberg_Bible, chart));
+    assert.ok(chapters.every(c => !/#/.test(c.name)), 'a reader must never see a key');
+  });
+
+  it('with no chart the chapters ring walks the spine, exactly as before', () => {
+    const spine = buildBibleChapterChain(fixtureManifest, {}).items.filter(Boolean);
+    assert.ok(spine.length > 0);
+    assert.ok(spine.every(c => c.level === 'chapter'));
+  });
+
+  it('the two rings cannot disagree — one is derived from the other', () => {
+    const manifest = makeManifest();
+    const chart = { edition: 'X', books: { ALPH: [5, 3], BETH: [2, 3] } };
+    const seats = buildBibleVerseChain(manifest, { chart }).items;
+    const chapters = buildBibleChapterChain(manifest, { seats }).items.filter(Boolean);
+    const seatKeys = [...new Set(seats.filter(Boolean).map(s => s.chapterKey))];
+    assert.equal(chapters.length, seatKeys.length);
+    assert.deepEqual(chapters.map(c => c.id), seats.filter(Boolean)
+      .map(s => s.meta.chapterId).filter((v, i, a) => a.indexOf(v) === i));
+  });
+});

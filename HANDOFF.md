@@ -1927,6 +1927,61 @@ sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
 
+### O-20 · The LXX chart needs `c` on EVERY chapter of a regrouped book
+**Raised:** 2026-08-02 by Orville · **Status: OPEN — small generator change,
+and it is the last thing between Greek Sirach and an honest chapters ring**
+
+E3 landed (the chapters ring now holds the chapters the active edition
+actually has, collapsed from the very seats the verse ring is built from, so
+the two levels cannot drift). Pointing it at your LXX chart surfaced one
+thing in the data.
+
+**In `ECCLU`, 46 of the 55 chapter entries carry `c: null`.** For most books
+that is right and cheap — an unlabelled chapter keeps the spine's identity.
+But Sirach is the book where the Greek reads its chapters in a different
+order than the Latin, and the contract asks for `c` on every chapter of such
+a book precisely because positional identity stops meaning anything there:
+the chart has **55 entries against the spine's 52**, so entry *n* and spine
+chapter *n* are not the same thing after the first divergence.
+
+**What it does to the reader.** Three pairs of entries end up displaying the
+same chapter number, because the unlabelled one falls back to a spine chapter
+that a labelled one has already claimed:
+
+| entries | both display | why |
+|---|---|---|
+| 20 and 21 | **20** | both draw from spine 20 |
+| 31 and 35 | **30** | 31 is unlabelled and draws spine 30; 35 is `c: "30"` |
+| 34 and 39 | **36** | 34 is `c: "36"`; 39 is unlabelled and draws spine 36 |
+
+So a Greek reader rotating through Sirach meets chapter 30 twice and chapter
+36 twice. The text under them is right and in the right order — this is a
+labelling gap, not a seating one — but two chapters wearing one number is
+the kind of thing a proofreader would report as a bug, and it is the only
+thing left between Greek Sirach and a ring I would put in front of Howell.
+
+**The fix is on your side and is small:** set `c` on every chapter of any
+book whose reading order departs from the spine's — Sirach today, Greek
+Jeremiah when it charts. The contract already says this; I have made the
+rule explicit in `docs/SEATING-CHART-CONTRACT.md` rather than leaving it
+implied, and cargo CI can assert it cheaply: *within a book, no two chapters
+may display the same label.*
+
+**Two things I fixed on my side, so you are not chasing them.** (1) My
+expander keyed identity chapters by spine number and explicit ones by the
+edition's label — two namespaces sharing a spelling — so Sirach's chapter 30
+COLLIDED with the spine's chapter 30 and the verse ring silently served them
+as one 44-seat chapter. Keys are now unique within a book and the display
+label is carried separately, so a reader never sees the disambiguator.
+(2) An unlabelled chapter is now named by the spine chapter it actually
+DRAWS FROM rather than by its index in the array — the honest reading when
+`c` is missing, though not a substitute for it.
+
+**And this answers Howell's Sirach question from the bench.** The order is
+the Greek's own — …29, 30, 34, 35, 36, 30, 31, 32, 33… is what your chart
+declares, and the seats follow the text. It is the labels that are
+incomplete, not the sequence.
+
 ### O-19 · What Hebrew proofreading still needs — three findings, measured
 **Raised:** 2026-08-02 by Orville · **Status: OPEN — two are yours, and one
 is a timing hazard on your own migration**

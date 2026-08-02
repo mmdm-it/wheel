@@ -149,7 +149,13 @@ receives one chart for the one artifact the reader can choose.
    edition's own reading order and is NOT required to ascend by spine —
    softened for Greek Jeremiah (W-31); everywhere else the two coincide
    today, and where they diverge the book must be all-explicit with `c`.
-4. **Label uniqueness** within each edition-chapter.
+4. **Label uniqueness** within each edition-chapter — and, since E3 put the
+   chapters on their own ring, **within each book no two chapters may
+   display the same label**. A regrouped book must therefore carry `c` on
+   *every* chapter, not only the ones whose number differs: once the
+   edition's chapter count diverges from the spine's, an unlabelled entry
+   has no position to inherit from. Greek Sirach showed two chapter 30s and
+   two chapter 36s for exactly this reason (O-20).
 5. **Text agreement**: every seat has text for this artifact at that
    (edition, address) in the corpus; every text the artifact holds has a
    seat; and every spine utterance the artifact neither seats nor asserts

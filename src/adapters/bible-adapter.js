@@ -451,11 +451,22 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   }
   const lastBookByTestament = {};
 
-  // The chapter chain is the same on every entry; build it once.
+  // The chapter chain is the same on every entry FOR A GIVEN ARTIFACT —
+  // since E3 the ring holds the chapters the active edition actually has,
+  // collapsed from the very seats the verse ring is built from, so the two
+  // levels cannot disagree. Keyed by chart for the same reason the verse
+  // chain is: a switched edition rebuilds rather than serving another
+  // artifact's chapters.
   let chapterChainItems = null;
+  let chapterChainChart;
   const chapterChain = initialChapterId => {
-    if (!chapterChainItems) {
-      chapterChainItems = buildBibleChapterChain(manifest, { namesMap }).items;
+    const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
+    if (!chapterChainItems || chapterChainChart !== chart) {
+      chapterChainItems = buildBibleChapterChain(manifest, {
+        namesMap,
+        seats: chart ? buildBibleVerseChain(manifest, { chart }).items : null
+      }).items;
+      chapterChainChart = chart;
     }
     let selectedIndex = 0;
     if (initialChapterId) {

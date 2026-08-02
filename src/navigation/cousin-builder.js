@@ -1,5 +1,5 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
-import { expandChart, identityChartFromManifest } from './seating-chart.js';
+import { expandChart, identityChartFromManifest, chaptersFromSeats } from './seating-chart.js';
 
 const GAP = null;
 
@@ -152,9 +152,17 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
  * Item shape matches getBibleChapters(), so descent, ascent and the
  * chapter prefetch all keep working on ids they already understand.
  */
-export function buildBibleChapterChain(manifest, { initialChapterId = null, namesMap = null } = {}) {
+export function buildBibleChapterChain(manifest, { initialChapterId = null, namesMap = null, seats = null } = {}) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
+
+  // THE CHAPTERS RING FOLLOWS THE EDITION (E3 of W-21). Given the active
+  // artifact's expanded seats, the ring holds the chapters that artifact
+  // actually has — collapsed from those very seats, so the two rings cannot
+  // drift apart. Without seats (no chart generated yet) it walks the spine,
+  // which is what every edition did before the charts existed.
+  const fromSeats = seats ? chaptersFromSeats(seats) : null;
+  if (fromSeats) return weaveChapters(fromSeats, initialChapterId);
 
   const sorted = [];
   Object.entries(bible.testaments).sort(bySortNumber).forEach(([testamentKey, testament]) => {
@@ -192,6 +200,10 @@ export function buildBibleChapterChain(manifest, { initialChapterId = null, name
     });
   });
 
+  return weaveChapters(sorted, initialChapterId);
+}
+
+function weaveChapters(sorted, initialChapterId) {
   const items = weaveCousinChain(sorted, [
     item => item.bookKey,
     item => item.testamentKey

@@ -119,6 +119,21 @@ export function expandChart(root, chart) {
         // identity chapters and span chapterKeys both resolve against it.
         const spineSeq = Object.entries(book?.chapters || {}).sort(bySortNumber);
         const spineByKey = new Map(spineSeq.map(([key, meta]) => [String(key), { key, meta }]));
+        // GROUPING KEYS MUST BE UNIQUE WITHIN A BOOK. Identity chapters key
+        // by the spine's own number and explicit ones by the edition's label,
+        // which are two namespaces sharing a spelling: Greek Sirach's chapter
+        // 30 collided with the spine's chapter 30 and the two were SILENTLY
+        // MERGED into one 44-seat chapter — a display lie of exactly the kind
+        // this model exists to make impossible. On a collision the later
+        // chapter takes a positional suffix; the DISPLAY label is carried
+        // separately (meta.chapterLabel) and never wears it.
+        const usedKeys = new Set();
+        const uniqueKey = (key, position) => {
+          let k = key;
+          if (usedKeys.has(k)) k = `${key}#${position}`;
+          usedKeys.add(k);
+          return k;
+        };
 
         form.chapters.forEach((chapterEntry, position) => {
           const ch = chapterForm(chapterEntry);
@@ -131,7 +146,8 @@ export function expandChart(root, chart) {
             if (!spineAtPosition || ch.count <= 0) return;
             const [spineKey, chapterMeta] = spineAtPosition;
             const chapterLabel = chapterMeta?.name ?? spineKey;
-            const chapterId = chapterMeta?.id || `${bookId}:${spineKey}`;
+            const groupKey = uniqueKey(`${bookId}:${spineKey}`, position);
+            const chapterId = chapterMeta?.id || groupKey;
             const externalFile = chapterMeta?._external_file || chapterMeta?.external_file || '';
             for (let k = 1; k <= ch.count; k += 1) {
               items.push({
@@ -139,7 +155,7 @@ export function expandChart(root, chart) {
                 name: String(k),
                 level: 'verse',
                 parentId: chapterId,
-                chapterKey: `${bookId}:${spineKey}`,
+                chapterKey: groupKey,
                 bookKey: bookId,
                 testamentKey: testamentId,
                 meta: {
@@ -149,6 +165,7 @@ export function expandChart(root, chart) {
                   sectionId,
                   testamentId,
                   verseKey: String(k),
+                  chapterLabel,
                   externalFile,
                   span: [[String(spineKey), k, k]],
                   convention: form.convention
@@ -162,9 +179,22 @@ export function expandChart(root, chart) {
           // Explicit: the edition's own seats. Group under the edition's own
           // chapter label when it departs from the spine's grouping.
           const anchor = spineAtPosition ? { key: spineAtPosition[0], meta: spineAtPosition[1] } : null;
-          const chapterLabel = ch.label ?? anchor?.meta?.name ?? anchor?.key ?? String(position + 1);
-          const groupKey = `${bookId}:${ch.label ?? anchor?.key ?? position + 1}`;
-          const chapterId = (ch.label == null && anchor?.meta?.id) || `${groupKey}`;
+          // AN UNLABELLED CHAPTER IS NAMED BY THE SPINE IT DRAWS FROM, not by
+          // its position in the array. The two agree only while the edition's
+          // chapter sequence matches the spine's — and the moment a book
+          // regroups, the counts diverge and position means nothing. Greek
+          // Sirach has 55 chapters against the spine's 52, so its unlabelled
+          // entries were being named by whatever spine chapter happened to sit
+          // at the same index, far from the text they actually hold.
+          // (The contract asks for `c` on EVERY chapter of a regrouped book
+          // for this reason — see O-20; this is the honest reading when it is
+          // missing, not a substitute for it.)
+          const firstSpan = ch.seats.reduce((found, seat) => found || spanForm(seat?.u), null);
+          const home = firstSpan ? spineByKey.get(firstSpan[0][0]) : null;
+          const chapterLabel = ch.label ?? home?.meta?.name ?? home?.key
+            ?? anchor?.meta?.name ?? anchor?.key ?? String(position + 1);
+          const groupKey = uniqueKey(`${bookId}:${ch.label ?? home?.key ?? anchor?.key ?? position + 1}`, position);
+          const chapterId = (ch.label == null && anchor?.meta?.id) || groupKey;
           ch.seats.forEach(seat => {
             const label = seat?.l != null ? String(seat.l) : null;
             const span = spanForm(seat?.u);
@@ -188,6 +218,7 @@ export function expandChart(root, chart) {
                 sectionId,
                 testamentId,
                 verseKey: label,
+                chapterLabel,
                 externalFile,
                 span,
                 convention: form.convention || ch.convention
@@ -201,6 +232,53 @@ export function expandChart(root, chart) {
   });
 
   return usable ? items : null;
+}
+
+/**
+ * THE CHAPTERS THE READER ACTUALLY HAS (E3 of W-21) — collapsed from the
+ * expanded seats, so the chapters ring and the verse ring cannot disagree:
+ * one is literally derived from the other.
+ *
+ * This matters wherever an edition regroups. The Septuagint's Sirach reads
+ * its chapters in an order the Latin spine does not (…30, 31, 34, 35, 36,
+ * 32, 33, 39…) and runs to 55 where the spine stops at 51. Built from the
+ * spine, the ring offered a Greek reader chapters 37 and 38 — which that
+ * edition has never had — and hid 53 through 55, which it does. The same
+ * defect as the phantom verse seats, one level up.
+ *
+ * Chapter identity and order come from the seats' own grouping key, which
+ * the chart set: an identity chapter keeps the spine's id (so descent and
+ * ascent work exactly as before for the 1:1 majority), and a regrouped one
+ * wears the edition's own label.
+ */
+export function chaptersFromSeats(items) {
+  if (!Array.isArray(items) || !items.length) return null;
+  const out = [];
+  let seenKey = null;
+  for (const it of items) {
+    if (!it || it.level !== 'verse' || !it.chapterKey || it.chapterKey === seenKey) continue;
+    seenKey = it.chapterKey;
+    const label = it.meta?.chapterLabel ?? String(it.chapterKey).split(':').pop();
+    out.push({
+      id: it.meta?.chapterId || it.chapterKey,
+      name: label,
+      level: 'chapter',
+      parentId: it.bookKey,
+      bookKey: it.bookKey,
+      testamentKey: it.testamentKey,
+      meta: {
+        bookId: it.bookKey,
+        chapterKey: label,
+        sectionId: it.meta?.sectionId,
+        testamentId: it.testamentKey,
+        // The chapter's own file is where its FIRST utterance lives; each
+        // verse still carries its own, so a chapter drawn from two spine
+        // files still fetches every verse correctly.
+        externalFile: it.meta?.externalFile
+      }
+    });
+  }
+  return out.length ? out : null;
 }
 
 /**
