@@ -2095,10 +2095,26 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
 
   const configLabel = makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
   const adapterLabel = adapterLayoutSpec?.label;
-  // Prefer the config's formatter when it is context-aware (receives { item, context }),
-  // otherwise fall back to the adapter's plain label, then the config formatter.
-  const configIsContextAware = config?.formatLabel?.length === 0; // zero-arg factory returns (item, context) => ...
-  const labelFormatter = configIsContextAware
+  // THE VOLUME'S OWN FORMATTER WINS WHENEVER IT DECLARES ONE (2026-08-02).
+  //
+  // This used to decide by ARITY — "a zero-argument factory returns
+  // (item, context), so it is context-aware" — which was a guess, and it was
+  // wrong for every config whose factory takes its context as a parameter.
+  // Those volumes fell silently through to the adapter's plain
+  // `item => item.name`, so their labels were only ever right because they
+  // had been BAKED at build time: chapters pre-rendered as Roman, book names
+  // frozen in whichever language the app booted in. It looked correct for as
+  // long as the volume spoke one language.
+  //
+  // The symptom that exposed it (Howell, from the phone): the parent button
+  // counted in Greek — it builds its own label and reads the live names
+  // table — while the ring and the child pyramid beside it did not, because
+  // neither was ever reaching the formatter that knows the reader's tongue.
+  //
+  // A declared formatter is a statement that the volume knows how to name
+  // its own items. The adapter's label is the fallback for volumes that make
+  // no such statement, and it must not shadow one that does.
+  const labelFormatter = config?.formatLabel
     ? configLabel
     : adapterLabel
       ? ({ item }) => adapterLabel(item)
