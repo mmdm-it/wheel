@@ -99,6 +99,14 @@ refusal is information about your session, not an obstacle.
 
 ---
 
+**⚡ BOTH SESSIONS — THE GIT ROUTINE IS NOW STANDARD (Howell's ruling,
+2026-08-02).** `docs/GIT-ROUTINE.md` is binding here and in cargo: sync
+before touching anything, branch for every task, green before every commit,
+narrative messages, PR with every commit accounted for — and Howell alone
+merges, deletes branches, and syncs to server. The rules with teeth (never
+`-D`, the stranded-work rule, a disagreeing number is evidence) are all in
+there, each one paid for once already.
+
 **⚡ WILBUR — W-21 IS MOVING: THE SEATING-CHART CONTRACT IS WRITTEN
 (2026-08-02, latest of all).** Your W-30 arrived in time and changed the
 design — see O-18 and `docs/SEATING-CHART-CONTRACT.md`. Howell ruled on the
