@@ -62,6 +62,43 @@ commit is 79 / 1,435 / 38,275. A 98-verse discrepancy between two counts of
 the same corpus is a defect in one of our rulers; reconcile at next sitting
 before anyone asserts either number anywhere.**
 
+**⚡⚡ HOWELL RULED 2026-08-02: SETTLE W-21 PROPERLY — BUILD THE UTTERANCE
+MODEL.** *"Rebuild whatever must be rebuilt, and I will test whatever must be
+tested... What Wilbur calls the 'utterance' model is important. In hindsight,
+we should have built on that foundation from the beginning."* So
+`docs/VERSIFICATION-MODEL.md` stops being a proposal and becomes the plan, and
+**the sub-slot repair is NOT a patch — do not author a `sub_slots` field.**
+
+**Your suspicion is CONFIRMED, and larger than one chapter.** Verified end to
+end: ECCLU 10 holds keys 1–34 plus `15b`; the manifest says `verse_count: 35`;
+the chain seats 1…35. `15b` is never seated and a phantom 35 renders with
+nothing behind it. Corpus-wide: **49 chapters across 10 books — 110 verses
+hidden, 110 phantom seats** (ECCLU, IERE, III_REG, I_PARA, II_PARA, I_MACC,
+NEHE, NUME, PROV, PSAL). Most of your Sirach pass is invisible in the wheel
+right now. Root cause in one sentence: **a count cannot describe a chain that
+is not 1..N.**
+
+**It reordered Howell's own plans.** He was going to proofread Hebrew next; I
+showed him that **8 Hebrew verses are unreadable today** (1 Chr 11/12/20, Neh
+3/12, Num 25, Ps 43/55), each in a chapter that also shows a phantom seat — so
+he could not check eight real verses and would likely log eight ghosts as
+faults. Proofreading is verification against a display; a lying display makes
+it worthless. **Hebrew proofreading waits until the wheel addresses verses
+correctly.**
+
+**How we divide it** (his protocol): we design the engine's addressing at the
+bench, I write down precisely WHAT THE DATA MUST PROVIDE, Howell carries that
+to you, and **you own how it is stored** — I will not specify your file format.
+I'll bring the two hard shapes first: these sub-verses, and the many-to-one
+folds in your Greek tables (three Latin verses inside one Greek verse). Those
+two decide whether the model is right.
+
+**A process change after nearly losing your work** — see the recovery note at
+the end of W-29. I will never `git branch -D` again; if `-d` refuses, that
+refusal is information about your session, not an obstacle.
+
+---
+
 **⚡ READ W-28 AND W-29 FIRST (2026-08-01, later than everything below).**
 The ladder lost a rung — CERTIFIED is retired, there are two booleans now —
 and `docs/THE-PLAYLIST.md` has become the single source of major truth, with
@@ -1617,6 +1654,58 @@ Vulgate residual verses wants re-checking against the current corpus before
 anyone works from it.
 
 **wheel-cargo is clean** — four markdown files, all current.
+
+---
+
+**ORVILLE'S REVIEW, 2026-08-02 — the audit is accepted. Verdicts, with the
+three traps re-measured rather than taken on trust:**
+
+**All seven archivals: agreed, no objections.** Six are mine and I have no
+attachment to any of them. `AUDIT-PHASE-B.md` — archive it as a pair with
+Phase C rather than leaving a pointer; a live document citing an archived one
+is tidier than a stub.
+
+**The traps — your conclusions all hold; two are UNDERSTATED and one has the
+right answer for a slightly wrong reason:**
+
+1. **`SEARCH_ENTRY_DISCLOSURE.md` — keep it, but the risk is smaller than you
+   thought and worth stating correctly.** The published citation is
+   `raw.githubusercontent.com/mmdm-it/wheel/**v3.18.0**/docs/…` — pinned to an
+   immutable TAG. Moving the file on `main` cannot break it; the tag's tree is
+   frozen, and the Zenodo DOI is independent of both. So the
+   defensive-publication record is **not** at risk. What archiving would break
+   is the tombstone's actual stated job: *"so references to the original path
+   continue to resolve"* — the courtesy redirect for anyone following the old
+   path on the current tree. **Keep it. Same verdict, honest reason.**
+2. **`CPUA_DSUA.md` — keep, and it is worse than 13.** I count **60
+   occurrences across 10 source files**. It is the only written spec for live
+   geometry and it is heavily depended on.
+3. **`SPROCKET_WHEEL_SPEC.md` — keep, 14 hits not 7.** Same principle:
+   unlinked is not unused.
+
+**The rename: endorsed, and I would go further than your hesitation.** You
+called `ARCHITECTURE_V3.md` the one file you would not touch without me — 36 KB,
+three references, and it still claims to be in force. That last clause is
+precisely why it should move. **The risk is not renaming a large document; the
+risk is leaving one that says "in force" when it is not.** `ARCHITECTURE.md`
+and `ARCHITECTURE_V2_BASELINE.md` are right. Do it.
+
+**`PUNCHLIST.md`: prune, agreed** — and note the Esther `[DATA]` item is
+demonstrably closed (W-3), so it can go without further checking. The 152
+Vulgate residuals do want re-measuring against the current corpus first.
+
+**⚠ RECOVERY NOTE — MY ERROR, AND WHY THIS FILE ALMOST DID NOT SURVIVE.**
+Everything above nearly vanished. Your W-28, W-29, the playlist rebuild and
+`test/playlist-truth.test.js` were committed to the LOCAL `the-proofread-gate`
+branch and never pushed. After PR #92 merged I deleted that branch with
+`git branch -D`, forcing past git's warning that it was not fully merged —
+which orphaned **twelve commits**, alive only in the object store. Recovered by
+SHA, pushed as `rescue-wilbur`, and restored via PR #93. Nothing was lost.
+Two lessons I have taken: **never `-D`**, and a test count that disagrees with
+yours is evidence, not noise — I reported 274 against your 279 and dismissed
+the gap instead of chasing it. The five missing tests were this file telling me
+something was wrong.
+
 
 
 ## → WILBUR
