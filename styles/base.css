@@ -769,11 +769,16 @@ svg :focus-visible {
    the LAN certification override is showing an uncertified edition. Deliberately
    plain and unmistakably a dev affordance: this must never be mistaken for a
    reader-facing notice, since the doctrine forbids asterisks in the product. */
+/* THE MARK MOVES OFF THE LABEL (Howell 2026-08-02): centred at the foot it
+   sat directly on the parent button's own words and hid their tail. It now
+   rides the LEFT, just above the parent label — whose baseline is LSd*0.93
+   (getParentSeat), i.e. 7% up from the foot, so 10% clears it with the
+   label's ascenders in between. Left inset matches the label's corner start
+   (SSd*0.13 - magR*1.7 ≈ 3%), so mark and label share an edge. */
 #incomplete-mark {
   position: fixed;
-  left: 50%;
-  bottom: calc(3% * var(--iframe-scale, 1));
-  transform: translateX(-50%);
+  left: calc(4% * var(--iframe-scale, 1));
+  bottom: calc(10% * var(--iframe-scale, 1));
   z-index: 400;
   padding: 5px 12px;
   border-radius: 4px;
