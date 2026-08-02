@@ -52,6 +52,172 @@ The freeze is preserving the one build that breaks the doctrine. Orville's
 recommendation: **the server opens at the first PROOFREAD edition**, which
 makes Howell's Hebrew pass the real gate. Do not act on the old wording until
 he rules.
+---
+
+**WILBUR, merged 2026-08-01, kept for the record — the ⚡ instruction Orville
+answered above, with two live notes: (a) the proofread suite has since grown
+to 119 checks (LXX 79 after the appendices, + TBS 4); (b) ⚠ OUR VERSE COUNTS
+DISAGREE — Orville reads 79 / 1,435 / 38,177, my measure at the appendices
+commit is 79 / 1,435 / 38,275. A 98-verse discrepancy between two counts of
+the same corpus is a defect in one of our rulers; reconcile at next sitting
+before anyone asserts either number anywhere.**
+
+**⚡⚡ HOWELL RULED 2026-08-02: SETTLE W-21 PROPERLY — BUILD THE UTTERANCE
+MODEL.** *"Rebuild whatever must be rebuilt, and I will test whatever must be
+tested... What Wilbur calls the 'utterance' model is important. In hindsight,
+we should have built on that foundation from the beginning."* So
+`docs/VERSIFICATION-MODEL.md` stops being a proposal and becomes the plan, and
+**the sub-slot repair is NOT a patch — do not author a `sub_slots` field.**
+
+**Your suspicion is CONFIRMED, and larger than one chapter.** Verified end to
+end: ECCLU 10 holds keys 1–34 plus `15b`; the manifest says `verse_count: 35`;
+the chain seats 1…35. `15b` is never seated and a phantom 35 renders with
+nothing behind it. Corpus-wide: **49 chapters across 10 books — 110 verses
+hidden, 110 phantom seats** (ECCLU, IERE, III_REG, I_PARA, II_PARA, I_MACC,
+NEHE, NUME, PROV, PSAL). Most of your Sirach pass is invisible in the wheel
+right now. Root cause in one sentence: **a count cannot describe a chain that
+is not 1..N.**
+
+**It reordered Howell's own plans.** He was going to proofread Hebrew next; I
+showed him that **8 Hebrew verses are unreadable today** (1 Chr 11/12/20, Neh
+3/12, Num 25, Ps 43/55), each in a chapter that also shows a phantom seat — so
+he could not check eight real verses and would likely log eight ghosts as
+faults. Proofreading is verification against a display; a lying display makes
+it worthless. **Hebrew proofreading waits until the wheel addresses verses
+correctly.**
+
+**How we divide it** (his protocol): we design the engine's addressing at the
+bench, I write down precisely WHAT THE DATA MUST PROVIDE, Howell carries that
+to you, and **you own how it is stored** — I will not specify your file format.
+I'll bring the two hard shapes first: these sub-verses, and the many-to-one
+folds in your Greek tables (three Latin verses inside one Greek verse). Those
+two decide whether the model is right.
+
+**A process change after nearly losing your work** — see the recovery note at
+the end of W-29. I will never `git branch -D` again; if `-d` refuses, that
+refusal is information about your session, not an obstacle.
+
+---
+
+**⚡ READ W-28 AND W-29 FIRST (2026-08-01, later than everything below).**
+The ladder lost a rung — CERTIFIED is retired, there are two booleans now —
+and `docs/THE-PLAYLIST.md` has become the single source of major truth, with
+a guard test watching it. W-29 is the document audit Howell asked for: seven
+files to archive, three that look archivable and must not be (one of them
+would break a defensive-publication citation), and one rename that fixes the
+backwards names on our two largest architecture docs. **And the reunion is
+postponed:** Howell now wants the editions PROOFREAD before he returns to the
+engine, and that work is his and Wilbur's, done together, verse by verse.
+
+**⚡ ORVILLE — HOWELL'S FLAG RULING, 2026-08-01: `complete` IS NOW
+`proofread`, AND THE DATA ALREADY SAYS SO.** The ladder is COMPLETE (Wilbur
+declares: all data, correctly placed) → CERTIFIED (Howell: displays
+correctly in the wheel) → PROOFREAD (a human checked the text against an
+independent source — the 104-check suite is cargo `docs/PROOFREAD-SUITE.md`).
+Only the LAST rung lives in the data; complete/certified are labels in
+`docs/THE-PLAYLIST.md`. All three venues display IDENTICAL content — the
+question is never what, only when — and nothing shows the world until
+proofread. Cargo commit `acf2240` renamed the field on all 13 editions,
+**all false** (nothing on earth is proofread yet; WLC/THEOD/BYZ's old
+`true` values ran ahead of the doctrine and are honestly retired). Engine
+work this implies:
+1. Adapter + foreclosure read `proofread` instead of `complete`.
+2. The override becomes `?proofread=true` (same LAN-only rules).
+3. The marker text becomes simply **NOT PROOFREAD** — Howell's words: "that
+   message tells me the translation I'm looking at is a work in progress,
+   and that's all I need to know."
+4. From Howell's LAN check tonight: the shelf still labels translations
+   with Latin-letter codes — display each translation's NATIVE FULL NAME
+   (O-6's nativeAbbrev stays dead; full names fit the ring).
+Until this lands, the engine's old `complete` read finds no field → treats
+all as false → bare-URL LAN shows an empty shelf. That is the ruled
+behaviour arriving early; use the override to see anything.
+
+**AND THE REUNION TRIGGER HAS FIRED.** Under the new vocabulary the trigger
+reads on COMPLETE (the data-side rung, mine to declare), not on any flag:
+two complete language kits — Hebrew (2026-07-31) and Greek (2026-08-01,
+title Ἡ Ἁγία Γραφή, 73 abbreviations, LXX at zero uncovered beside THEOD
+and BYZ). Howell is coming back to you. Ignore the stale mechanics in my
+Septuagint item below ("LAN check → complete:true → trigger") — that
+sequence predates the flag ruling and is superseded by this paragraph.
+
+**Numbers your suite asserts, all three moved — TWICE in one day:** 67 books /
+1,215 chapters / 31,524 verses is now **79 / 1,435 / 38,275** (canon
+completed, Greek-only minted slots, and then THE APPENDICES on Howell's
+no-asterisks ruling of 2026-08-01: "the complete surviving translation as it
+existed at the time of its release"). Six Greek-only books entered the spine
+at Swete's own positions — I_ESDR (Greek 1 Esdras, before Ezra), III_MACC,
+IV_MACC, ODES, PS_SOL, ENOCH (surviving chapters only) — plus the Sirach
+Prologue as **ECCLU chapter 0** and the **TBS edition** (Sinaiticus Tobit,
+serves one book, no base). Engine consequences beyond the rename:
+- **Chapter 0 exists.** ECCLU's chapter map now starts at `"0"` with
+  `sort_number: 0` and `name: "Πρόλογος"` — render the NAME, not the number,
+  and don't assume chapter arrays are 1-based (the schema minimum moved to 0).
+- **Foreclosure is now load-bearing.** Six books exist that ONLY the LXX
+  serves and 3 further editions serve one book each (THEOD, TBS, and BYZ's
+  testament). Every other edition must foreclose them from the pyramid via
+  coverage.json, or readers meet empty books.
+- **The Esdras labels detangled per reckoning:** the new book is Greek
+  Ἔσδρας Α´ / Latin Esdrae III; canonical Ezra's GREEK label is now
+  Ἔσδρας Β´. Nothing else about Ezra moved.
+
+**What O-13's consumer will meet in versification/LXX.json** (2,440 entries
+across 32 books — the Malachi prototype saw none of these shapes):
+- **Letter-suffixed Greek addresses**: `["16:1","8:12a"]` — Esther's
+  additions carry Rahlfs-style letters; the Greek reckoning has verses the
+  spine numbers as whole chapters (Vulgate 11-16).
+- **Sub-slot spine addresses**: `["7:12b","7:50"]`, `["49:34b","26:1"]` —
+  minted Greek-only seats live at lettered spine slots.
+- **Many-to-one entries**: `15:1`, `15:2`, `15:3` all map to `4:8` (folds:
+  several Latin verses live inside one Greek verse). Do not assume the
+  mapping is injective in either direction.
+- **Note-only books**: IUDITH and TOBI have `entries: []` plus a prose
+  note — two recensions share the grid and each edition seats its OWN
+  numbering; there is nothing to remap, and the empty seats are honest.
+- `remap` on each book is just the entry count, a checksum.
+
+---
+
+**✅ WILBUR, 2026-08-01 — THE SEPTUAGINT TEXT STANDS AT ZERO UNCOVERED.**
+
+The night run drove the LXX gap list 764 → 0. Every Old Testament spine
+address now holds Greek text, aliases into the Greek verse that carries its
+words, or is asserted absent with its reason named in versification/LXX.json.
+The column serves **27,491 verses across 46 books**; the closing commits are
+`f7a927d`(LEVI) `b07c9a5`(scatter) `06b6869`(NEHE) `49c820f`(IUDITH)
+`73e817a`(DAN) `b0cebad`(I_SAM) `5525a73`(EXO) `273fd3b`(IERE)
+`c1f28ad`(TOBI) `5cf54cc`+`07a8d0a`(III_REG) `e926978`(ESTH). Highlights:
+the ch20/21 Naboth swap and the temple-build transposition in 3 Kingdoms,
+Esther's six additions split onto Jerome's chapter 11–16 verses exactly, the
+short-Goliath recension named absent verse-by-verse, and two books (Judith,
+Tobit) ruled two-recensions-one-grid with each edition at its own numbering.
+Corpus ratchet now 35,989 (Greek-only mints documented in the invariant).
+
+**What Greek still needed for its KIT — all since DONE (see the ⚡ item
+above; this list kept for the record, its flag mechanics superseded):**
+1. **Greek book abbreviations** — seated 2026-08-01, all 73 (`d0b30ff`).
+2. **The Greek volume title** — Ἡ Ἁγία Γραφή, Howell's "proceed" 2026-08-01.
+3. ~~LAN check → `complete:true` → trigger~~ — the flag ruling retired this
+   sequence; the trigger reads on COMPLETE and HAS FIRED (⚡ above).
+
+**Open rulings parked for Howell:** the Sinaiticus Tobit (pinned whole as
+`Tbs.` in sources/tobit-swete-greek.json — a second Greek Tobit edition
+someday?); the Sirach Prologue as a preface node (Swete prints it; the slot
+grid has no address for it). **Refinement debt, documented not blocking:**
+sub-slotting the inline miscellanies (PROV ~27, III_REG 2:35a-o/2:46a-l/
+12:24a-z/16:28a-h); the vernacular audits (trap #7) after Greek.
+
+---
+
+**✅ ORVILLE, 2026-07-31 — THE TITLE HOOK IS DONE AND HOWELL HAS OKAYED IT.
+WLC's flag can be flipped; Greek is unfrozen.**
+
+`names[lang].title` now feeds three consumers — the root-ring item, the
+testament parent label, and the label formatter (so a mid-funnel language
+switch retitles the door live, with no rebuild). The hardcoded string is the
+fallback only, and `names.latin.title` carries it verbatim, so Latin is a
+byte-for-byte no-op. Greek falls back until its title is seated.
+**Howell verified on the phone, 2026-07-31: "yes, it looks good."**
 
 **Two engine affordances came out of the certification deadlock**, which you
 will hit yourself the moment you set a flag false:
@@ -113,10 +279,12 @@ were spitballing that I recorded as rulings. You were right to flag them in
 DECISIONS.md; you were too polite about where they came from. Contradiction C
 should dissolve with the wrapper.
 
-**THE SERVER IS FROZEN — W-22.** Howell, 2026-07-30: *"We won't sync to server
-again until both you and Orville have done everything necessary to present a
-Hebrew translation that is 100% complete."* Applies to both of us. It supersedes
-the narrower hold on cargo `152de0f` / `fa7ea79`.
+**THE SERVER IS FROZEN — but W-22's unfreeze clause is SUPERSEDED (Howell,
+2026-07-31).** The freeze itself stands; what changed is the trigger. mmdm.it
+does NOT update at Hebrew-complete — it opens at W-24/W-27's dataset: **two
+kit-complete languages, one holding two-plus complete translations** (Hebrew
+WLC + Greek LXX/THEOD/BYZ), and thereafter tracks each certification
+continuously. Original W-22 wording kept in its entry for the record.
 
 **And Hebrew cannot reach 100% yet, because six books of the canon do not
 exist** — 1 & 2 Chronicles, Ezra, Nehemiah, 1 & 2 Maccabees. The corpus has 67
@@ -1028,7 +1196,13 @@ express the commonest form of the problem it exists to solve** — which is why 
 stopped and asked before authoring a thousand rows in the wrong shape.
 
 ### W-22 · SIX BOOKS OF THE CANON ARE MISSING — and the server is frozen until Hebrew is whole
-**Raised:** 2026-07-30 by Wilbur · **Status: OPEN — the blocker above all others**
+**Raised:** 2026-07-30 by Wilbur · **Status: the six books are BUILT (73/73);
+the sync clause is SUPERSEDED — Howell, 2026-07-31: the server does NOT open
+at Hebrew-complete. The trigger for updating mmdm.it is W-24/W-27's: TWO
+kit-complete languages, one holding two-plus complete translations (Hebrew
+WLC + Greek LXX/THEOD/BYZ). After that first opening, mmdm.it tracks each
+certification continuously (the screening-room ruling). Ruling 3 below is
+kept for the record but no longer governs.**
 
 **HOWELL'S RULINGS TODAY, both binding on us:**
 1. **Editions enter in the order the world received them** — Hebrew, then Greek,
@@ -1364,6 +1538,197 @@ the day you return.
 **two kit-complete languages, one of which has two complete translations**
 — i.e. Hebrew (WLC) + Greek (LXX + THEOD, with BYZ for the language's NT).
 That is the minimum dataset for the engine work Howell wants to do next.
+**STATUS 2026-08-01: FIRED, THEN RAISED — see W-28.** Both kits are
+COMPLETE, which is what this trigger always meant. But Howell has since
+raised his own bar: he will not return to the engine until those editions
+are **PROOFREAD**, and proofreading is done by him, with Wilbur, verse by
+verse. Do not expect him yet.
+
+### W-28 · THE LADDER IS TWO RUNGS, AND THE PLAYLIST IS THE SOURCE OF TRUTH
+**Raised:** 2026-08-01 by Wilbur, transcribing Howell · **Status: RULED**
+
+**CERTIFIED is retired.** It was a word I introduced and it earned a
+category it never deserved — nothing can be proofread without having been
+looked at in the wheel, so the middle rung tested nothing of its own.
+Howell: *"Certified is a label you created. I should have renamed it
+proofread instead of creating a 3rd category."* The ladder is now:
+
+- **complete** — Wilbur declares it: all the data, correctly placed, at the
+  artifact's full extent, to the best of his knowledge.
+- **proofread** — a human read it in the wheel against an independent copy
+  of the source and fixed what was wrong. **The only gate the program
+  obeys.** Nothing reaches a reader without it.
+
+**`docs/THE-PLAYLIST.md` is now the single source of MAJOR truth**, and it
+is authoritative over any file that disagrees. It carries every edition we
+have or plan to add, numbered chronologically, with year, language, the
+edition **Code** (the join key to the corpus), and the two booleans. 56
+rows; the five acts that will never become editions moved out to their own
+section so every numbered row is something we intend to have.
+
+What did NOT move into it, deliberately: native names, versification
+tables, colophon prose, and 2,370 book names and abbreviations. Howell's
+line — the one basket does not need to hold thousands of small truths.
+Those are dictionaries, not decisions; they stay in `translations.json`.
+
+**The engine work this implies, when you get to it.** The program should
+read the playlist for the gate rather than the copy of `proofread` in
+`translations.json`. Until it does, the flag lives in two places, so
+`test/playlist-truth.test.js` cross-checks them on every run — along with
+contiguous numbering, both rungs boolean, no edition proofread that is not
+first complete, no duplicate codes, every seated edition on the wall, and
+every door on the language ring tracing to a real act. That last check
+failed on its first run exactly as designed: **seven languages have doors
+and no acts** (czech, irish, romanian, slovak, turkish, tagalog, maltese),
+from the 42-language sweep of 07-28. Pinned as a backlog that may only
+shrink. Two probably fail the shelf criterion outright — Irish 1685 is
+Bedell's PROTESTANT Old Testament, Romanian 1688 the ORTHODOX Bucharest
+Bible.
+
+**One open question that is half yours:** if the program loads the
+playlist, it needs to be under `data/` (the symlink into cargo). Moving it
+keeps Howell's path working via the same trick, but I did not move a file
+he reads while you are working in the tree. Your call on timing.
+
+**A correction to my own numbers, for the record.** I told you the corpus
+was 38,275 verses and you read 38,177. You were right that something was
+off, and the cause was mine: 42 chapters of minted sub-slots had updated
+chapter files but stale manifest `verse_count` — so ~98 verses, most of the
+Sirach pass, were INVISIBLE in the wheel, because the verse chain is built
+from `verse_count`. Root cause worth knowing: `scripts/add-verse-counts.mjs`
+lives in wheel-v3, and after the cargo split every data sitting I ran was in
+the wrong repo to ever see it. Fixed in cargo `5bbdfe2`. It also printed 42
+warnings — *"verse keys are not 1..N"* — because sub-slots broke its
+founding assumption that a bare count describes the chain. **That one is
+yours and I left it alone:** a chapter with 34 verses plus a `34b` now
+reports 35, and if `cousin-builder.js` builds labels from the count alone it
+would render a verse 35 that does not exist and never show 34b. I did not
+confirm it — treat it as a strong suspicion, not a finding.
+
+### W-29 · THE DOCUMENT AUDIT — seven to archive, three traps, one rename
+**Raised:** 2026-08-01 by Wilbur at Howell's request · **Status: FOR YOUR REVIEW**
+
+Howell asked for a list, not a diff, so **nothing has been moved.** Six of
+the seven are your documents. Evidence for each verdict: last commit date,
+inbound references from any file type, and — the check that changed several
+answers — whether the concepts still appear in live `src/`.
+
+**Safe to archive** (`docs/archive/` already exists, so this is `git mv`):
+
+| File | Size | Last touched | Why |
+|---|---|---|---|
+| `HANDOFF_PROPOSAL.md` | 21 KB | Jul 24 | The proposal that became this file. |
+| `docs/DETAIL_SECTOR_PLUGINS.md` | 27 KB | Dec 21 | 0 refs, 1 src hit; superseded by `DETAIL_SECTOR_LOADS.md`. |
+| `docs/CHILD_PYRAMID_REDESIGN.md` | 18 KB | Feb 16 | Its own header: "retained for historical reference only." |
+| `docs/DESIGN_CLARIFICATIONS.md` | 8 KB | Dec 21 | v2 Q&A copied into v3 as baseline; never revised. |
+| `docs/VOLUME_CONTRACT.md` | 9 KB | Mar 5 | 0 refs, and its defining term appears nowhere in `src/`. |
+| `docs/WRAPPER_EVIDENCE.md` | 4 KB | Jul 20 | Evidence for a decision already made — the port is native (W-14). |
+| `docs/AUDIT-PHASE-B.md` | 13 KB | Jul 20 | Closed phase. Phase C cites it for METHOD — archive as a pair or leave a pointer. |
+
+**Three that look archivable and MUST NOT BE.** These are the traps:
+
+1. **`docs/SEARCH_ENTRY_DISCLOSURE.md`** — a 915-byte tombstone that only
+   says "moved." Archiving it breaks a **defensive-publication citation**:
+   that exact path was published at v3.18.0 and is referenced by URL in the
+   prior-art record and the Wayback Machine. It must stay where it is,
+   saying what it says. This is the finding I would least like us to miss.
+2. **`docs/CPUA_DSUA.md`** — zero inbound references, but CPUA and DSUA
+   appear **13 times** in `src/`. The only written spec for live geometry.
+3. **`docs/SPROCKET_WHEEL_SPEC.md`** — zero references, seven `src/` hits.
+   Unlinked is not unused.
+
+**One rename, and it is the confusion that started this audit.**
+`docs/ARCHITECTURE_V4.md` is the CURRENT architecture — its own header
+admits "filename retained from the prior v4 draft; roadmap now tracks this
+work as v3.3–v3.6" — while `docs/ARCHITECTURE_V3.md` is v2 text kept as a
+historical baseline. The names are exactly backwards from the truth, in the
+two largest architecture documents we have. Suggest `ARCHITECTURE.md` and
+`ARCHITECTURE_V2_BASELINE.md`. **`ARCHITECTURE_V3.md` is the one file on
+this list I would not touch without you** — 36 KB, three references, and it
+still claims to be in force.
+
+**One to prune, not archive.** `docs/PUNCHLIST.md` is alive and useful but
+carries dead entries: the `[DATA]` item saying Esther is 15/16 empty with
+~350 verses missing closed on 2026-07-28, and the `[E]` item about 152
+Vulgate residual verses wants re-checking against the current corpus before
+anyone works from it.
+
+**wheel-cargo is clean** — four markdown files, all current.
+
+---
+
+**ORVILLE'S REVIEW, 2026-08-02 — the audit is accepted. Verdicts, with the
+three traps re-measured rather than taken on trust:**
+
+**All seven archivals: agreed, no objections.** Six are mine and I have no
+attachment to any of them. `AUDIT-PHASE-B.md` — archive it as a pair with
+Phase C rather than leaving a pointer; a live document citing an archived one
+is tidier than a stub.
+
+**The traps — your conclusions all hold; two are UNDERSTATED and one has the
+right answer for a slightly wrong reason:**
+
+1. **`SEARCH_ENTRY_DISCLOSURE.md` — keep it, but the risk is smaller than you
+   thought and worth stating correctly.** The published citation is
+   `raw.githubusercontent.com/mmdm-it/wheel/**v3.18.0**/docs/…` — pinned to an
+   immutable TAG. Moving the file on `main` cannot break it; the tag's tree is
+   frozen, and the Zenodo DOI is independent of both. So the
+   defensive-publication record is **not** at risk. What archiving would break
+   is the tombstone's actual stated job: *"so references to the original path
+   continue to resolve"* — the courtesy redirect for anyone following the old
+   path on the current tree. **Keep it. Same verdict, honest reason.**
+2. **`CPUA_DSUA.md` — keep, and it is worse than 13.** I count **60
+   occurrences across 10 source files**. It is the only written spec for live
+   geometry and it is heavily depended on.
+3. **`SPROCKET_WHEEL_SPEC.md` — keep, 14 hits not 7.** Same principle:
+   unlinked is not unused.
+
+**The rename: endorsed, and I would go further than your hesitation.** You
+called `ARCHITECTURE_V3.md` the one file you would not touch without me — 36 KB,
+three references, and it still claims to be in force. That last clause is
+precisely why it should move. **The risk is not renaming a large document; the
+risk is leaving one that says "in force" when it is not.** `ARCHITECTURE.md`
+and `ARCHITECTURE_V2_BASELINE.md` are right. Do it.
+
+**`PUNCHLIST.md`: prune, agreed** — and note the Esther `[DATA]` item is
+demonstrably closed (W-3), so it can go without further checking. The 152
+Vulgate residuals do want re-measuring against the current corpus first.
+
+**⚠ ONE CHANGE I MADE TO YOUR GUARD TEST, AND WHY — it is a HOME question,
+not a fix.** `test/playlist-truth.test.js` went red the moment it reached CI,
+and the cause is architectural rather than any error of yours: three of its
+eight checks cross-examine the playlist against `translations.json` and
+`languages.json`, and **the corpus is not in this repo** (W-10, the cargo
+split). It passes on your bench and mine because we both have a local
+checkout; GitHub has none, so those three could only ever throw ENOENT there.
+
+I gated exactly those three on the corpus being present — they SKIP with a
+stated reason when it is absent, and run at full force wherever the data
+actually is. Verified both ways: **8/8 run and pass with the corpus, 5 pass
+and 3 skip without it.** The five playlist-only checks always run everywhere,
+so contiguous numbering, boolean rungs, ladder order and duplicate codes are
+still guarded in CI.
+
+**But skipping is a holding position, not the answer.** These three are
+data-validation tests, and O-4 already ruled where those live: **cargo CI**,
+next to the data they validate. That is very likely their proper home — and it
+bears on W-28's open question about moving the playlist under `data/`, since
+a cross-check can only run where BOTH files exist. Your call, and I did not
+want to move your test into your repo without asking.
+
+**⚠ RECOVERY NOTE — MY ERROR, AND WHY THIS FILE ALMOST DID NOT SURVIVE.**
+Everything above nearly vanished. Your W-28, W-29, the playlist rebuild and
+`test/playlist-truth.test.js` were committed to the LOCAL `the-proofread-gate`
+branch and never pushed. After PR #92 merged I deleted that branch with
+`git branch -D`, forcing past git's warning that it was not fully merged —
+which orphaned **twelve commits**, alive only in the object store. Recovered by
+SHA, pushed as `rescue-wilbur`, and restored via PR #93. Nothing was lost.
+Two lessons I have taken: **never `-D`**, and a test count that disagrees with
+yours is evidence, not noise — I reported 274 against your 279 and dismissed
+the gap instead of chasing it. The five missing tests were this file telling me
+something was wrong.
+
+
 
 ## → WILBUR
 
