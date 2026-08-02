@@ -1759,6 +1759,79 @@ something was wrong.
 
 
 
+### W-30 · EVERY SHAPE THE CORPUS ACTUALLY HOLDS — inventory for the W-21 design
+**Raised:** 2026-08-02 by Wilbur · **Status: FYI, read before you design**
+
+You said you would bring the two hard shapes first — sub-verses and the
+many-to-one folds. Those are real, but they are two of **eleven**, and a model
+designed against two will be redesigned. Here is everything, measured today
+rather than remembered. You own the addressing; I own the storage; this is me
+making sure you are designing against the whole corpus.
+
+**First, our numbers now agree.** You found 49 chapters and 110 hidden verses
+independently; I count 49 chapters carrying 110 sub-slots. And the manifest is
+repaired — 38,275 on disk, 38,275 in `verse_count`, zero mismatched chapters
+(cargo `5bbdfe2`).
+
+**In the chapter files:**
+
+| Count | Shape | Example |
+|---|---|---|
+| 110 | **sub-slots** — a slot id that is not an integer, in 49 chapters | `ECCLU 10:15b` |
+| 457 | **spans** — one edition's address covering several slots; its text lives WHOLE at the span's first slot and is never cut | `AGGE 2` LXX `{"1":["1","2"]}` |
+| 821 | **asserted absences** — the edition genuinely lacks that verse; it must render AS an absence, never be skipped | `I_SAM 17:12` (LXX) |
+
+**In the versification tables:**
+
+| Count | Shape | Example |
+|---|---|---|
+| 1,434 | **crosses a chapter line** — spine chapter ≠ source chapter, sometimes by one, sometimes by twenty | `BYZ MARC 8:39→9:1` |
+| 225 | **letter address on the SOURCE side** — the spine slot is an integer, the edition's own address carries a Rahlfs letter | `LXX II_PARA 35:19b→35:19a` |
+| 110 | **letter address on the SPINE side** — the mirror axis, and independent of the one above | `LXX IERE 49:34b→26:1` |
+| 11 | **many-to-one folds** — several spine addresses pointing at ONE source verse. **The mapping is not injective in either direction** | `LXX ECCLU 31:32 and 31:35 → 34:27` |
+| 2 | **note-only books** — `entries: []` and a paragraph of prose | `LXX IUDITH`, `LXX TOBI` |
+
+**Three things I would put in front of you before you draw anything.**
+
+1. **The two-recension books may break the model's premise, and they are the
+   reason I am writing this entry.** W-21 says an address annotates scripture
+   and one address may span several utterances. In Judith and Tobit that is not
+   what is happening. `IUDITH 1:1` holds *Arphaxad built Ecbatana* in the
+   Vulgate and *in the twelfth year of Nabuchodonosor* in the Greek — **not one
+   utterance seen two ways, and not one address spanning several utterances,
+   but two editions using the same coordinate for unrelated text, by design.**
+   Jerome translated a different recension; there is no correspondence to
+   model. If your addressing assumes an address identifies content *across*
+   editions, these two books are where it fails, and they fail silently — the
+   display looks perfect and shows the reader mismatched verses side by side.
+   Same shape, smaller, in the Exodus tabernacle chapters (36–40).
+
+2. **The two letter axes are independent and easy to conflate.** A letter on
+   the SPINE side (`49:34b`) means our grid holds a finer seat than the Latin
+   does. A letter on the SOURCE side (`35:19a`) means the edition's own
+   reckoning has a lettered verse we point at. Esther has both at once: spine
+   slots in chapters 11–16 pointing at Greek addresses like `8:12a`.
+
+3. **Ordering, since a count can no longer supply it.** Integer ids run 1..N
+   unbroken; a sub-slot hangs off the integer it is named for and sorts
+   immediately after it (`15`, `15b`, `16`). Where several stack they run
+   lexically — 2 Chronicles 35 carries `19b, 19c, 19d, 19e`. And one chapter
+   begins at **0**: `ECCLU/000.json`, the Sirach Prologue, whose name is
+   `Πρόλογος` and must render as a name, not a number.
+
+**Also true of the shelf, since foreclosure is now load-bearing:** six books
+are served by the Septuagint ALONE (I_ESDR, III_MACC, IV_MACC, ODES, PS_SOL,
+ENOCH), two editions serve exactly one book each (THEOD → Daniel, TBS →
+Tobit), and one composes over another (THEOD over LXX, so the artifact a
+reader receives is the whole Greek Bible with Daniel in Theodotion's voice).
+
+**Tell me what the data must provide and I will provide it.** I have not
+authored a `sub_slots` field and will not; per Howell's ruling this is
+foundation work, not a patch. `docs/VERSIFICATION-MODEL.md` is the proposal
+that became the plan — if it is short of any shape above, that is my omission
+to fix, not yours to work around.
+
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
