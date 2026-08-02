@@ -240,11 +240,15 @@ describe('the sweep works at every level, not just verses', () => {
     assert.equal(gapBefore(books, 'MATHE'), 2);
   });
 
-  it('chapters in the ring keep their Roman numerals', () => {
+  it('chapters in the ring carry the NUMBER; the numerals are worn at render', () => {
+    // Until 2026-08-02 the chain baked "I"/"XXII" into the name, which left
+    // the label formatter nothing to convert — a Greek reader got Latin
+    // numerals under a Greek book name. The number travels; the tradition's
+    // letters are put on where the reader's language is known.
     const { items } = buildBibleChapterChain(bibleManifest, {});
     const byId = id => items.find(x => x && x.id === id);
-    assert.equal(byId('GENE:1').name, 'I');
-    assert.equal(byId('APOC:22').name, 'XXII');
+    assert.equal(byId('GENE:1').name, '1');
+    assert.equal(byId('APOC:22').name, '22');
     assert.equal(byId('MATHE:1').meta.testamentId, 'Novum_Testamentum', 'and know where they sit');
   });
 });

@@ -1492,7 +1492,15 @@ export function createApp({
               const angle = Math.atan2(dy, dx);
               return {
                 id: child.id ?? `p-${j}`,
-                label: child.name ?? child.label ?? child.id ?? `p-${j}`,
+                // THE PYRAMID SPEAKS THE READER'S TONGUE TOO (2026-08-02).
+                // This read child.name raw, so the sky below the ring showed
+                // whatever language the item was BUILT in while the ring
+                // above it followed the reader — and it is the one surface
+                // where chapters and verses must be told apart at a glance,
+                // which is the whole job of the tradition's letters against
+                // Arabic digits. Same formatter, same context as a ring node.
+                label: formatLabel({ item: child, context: 'node' })
+                  || child.name || child.label || child.id || `p-${j}`,
                 item: child,
                 arc: 'intersection',
                 angle,

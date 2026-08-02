@@ -1,4 +1,4 @@
-import { weaveCousinChain, toRomanNumeral } from '../adapters/volume-helpers.js';
+import { weaveCousinChain } from '../adapters/volume-helpers.js';
 import { expandChart, identityChartFromManifest } from './seating-chart.js';
 
 const GAP = null;
@@ -162,10 +162,14 @@ export function buildBibleChapterChain(manifest, { initialChapterId = null, name
       Object.entries(section?.books || {}).sort(bySortNumber).forEach(([bookId, book]) => {
         Object.entries(book?.chapters || {}).sort(bySortNumber).forEach(([chapterKey, chapterVal]) => {
           const chapterNum = Number.parseInt(chapterKey, 10);
-          // Chapters are ROMAN (see getBibleChapters — same rule, one source
-          // of truth for the numeral form would be better still).
+          // The chapter carries its NUMBER; the numeral system is chosen at
+          // render from the reader's own tongue (toTraditionNumeral). The
+          // wish left in this comment — "one source of truth for the numeral
+          // form would be better still" — is now granted, and it had to be:
+          // three sites baked Roman independently, so a Greek reader met
+          // Latin numerals under a Greek book name.
           const label = Number.isFinite(chapterNum)
-            ? toRomanNumeral(chapterNum)
+            ? String(chapterNum)
             : (namesMap?.sections?.[chapterKey] || chapterKey);
           sorted.push({
             id: chapterVal?.id || `${bookId}:${chapterKey}`,

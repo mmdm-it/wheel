@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, toRomanNumeral } from './volume-helpers.js';
+import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, toTraditionNumeral, toDisplayCase } from './volume-helpers.js';
 import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
@@ -637,10 +637,19 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
       if (!chapterKey) return '';
       const n = Number.parseInt(chapterKey, 10);
-      const chapterLabel = Number.isFinite(n) ? toRomanNumeral(n) : String(chapterKey);
+      // The parent button names the reader's chapter, so it counts in the
+      // reader's own letters — namesMap carries the live locale (W-16), the
+      // same table this line's book name comes from. Hardcoded Roman here
+      // was why 'Αʹ ΣΑΜΟΥΗΛ XVII' wore two traditions at once.
+      const chapterLabel = Number.isFinite(n) ? toTraditionNumeral(n, namesMap?.locale) : String(chapterKey);
       const bookId = item.meta?.bookEntryId || item.meta?.bookId || '';
       const book = bookId ? findBook(manifest, bookId) : null;
-      const bookName = (namesMap?.books?.[bookId] || book?.book_name || bookId || '').toUpperCase();
+      // UPPERCASE ONLY WHAT UPPERCASES (Howell 2026-07-22, ruled for the
+      // strata ring and true here for the same reason): toUpperCase mangles
+      // polytonic Greek's breathings and accents, and means nothing at all
+      // for Hebrew. Latin-script names still shout; every other script is
+      // left in the form its own tradition writes it.
+      const bookName = toDisplayCase(namesMap?.books?.[bookId] || book?.book_name || bookId || '');
       return bookName ? `${bookName} ${chapterLabel}` : chapterLabel;
     }
     // Book ring: parent is the testament name (stored mixed-case on items as

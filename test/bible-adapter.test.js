@@ -92,8 +92,11 @@ describe('reading on through the volume', () => {
   const realManifest = JSON.parse(_readFileSyncBible(
     _pathBible.resolve(__d, 'fixtures/data/gutenberg/manifest.json'), 'utf-8'));
 
-  const inVerseMode = () => {
-    const h = bibleAdapter.createHandlers({ manifest: realManifest, namesMap: {}, options: {} });
+  // The names table carries the reader's tongue (W-16), and since 2026-08-02
+  // the chapter numeral is drawn from it too — so a harness with no locale
+  // gets digits, correctly. These tests read the volume in Latin.
+  const inVerseMode = (namesMap = { locale: 'latin' }) => {
+    const h = bibleAdapter.createHandlers({ manifest: realManifest, namesMap, options: {} });
     h.layoutBindings.setBibleMode('verse');
     return h;
   };
@@ -130,8 +133,9 @@ describe('reading on through the volume', () => {
   });
 
   it('names the book and chapter under the magnifier, live', () => {
-    // "BOOK ROMAN" — no word between: the Roman numeral is already the
-    // citation form for a chapter, so CAP would only re-state it.
+    // "BOOK NUMERAL" — no word between: the numeral is already the citation
+    // form for a chapter, so CAP would only re-state it. The numeral is the
+    // READER'S (2026-08-02): Roman here because this table says Latin.
     const h = inVerseMode();
     const chain = h.layoutBindings.getBibleVerseChain('GENE_1_1');
     const pick = id => chain.items.find(v => v && v.id === id);
@@ -141,6 +145,22 @@ describe('reading on through the volume', () => {
     assert.equal(h.getParentLabel(pick('EXO_1_1')), 'EXODUS I',
       'crossing into a new book is legible in the header');
     assert.equal(h.getParentLabel(pick('IOHA_3_16')), 'JOHN III');
+  });
+
+  it('the parent button counts in the reader\'s own letters', () => {
+    // From the phone, 2026-08-02: 'Αʹ ΣΑΜΟΥΗΛ XVII' — a Greek book name and
+    // a Latin numeral in one label, because this site baked Roman. The book
+    // followed the reader and the number did not.
+    const greek = inVerseMode({ locale: 'greek', books: { GENE: 'Γένεσις' } });
+    const gChain = greek.layoutBindings.getBibleVerseChain('GENE_1_1');
+    const gPick = id => gChain.items.find(v => v && v.id === id);
+    assert.equal(greek.getParentLabel(gPick('GENE_17_1')), 'Γένεσις ιζʹ',
+      'and Greek is left in its own case — uppercasing strips its accents');
+
+    const hebrew = inVerseMode({ locale: 'hebrew', books: { GENE: 'בראשית' } });
+    const hChain = hebrew.layoutBindings.getBibleVerseChain('GENE_1_1');
+    const hPick = id => hChain.items.find(v => v && v.id === id);
+    assert.equal(hebrew.getParentLabel(hPick('GENE_17_1')), 'בראשית י״ז');
   });
 
   it('binds the chapter chain and names the book under the magnifier, live', () => {
@@ -180,13 +200,13 @@ describe('reading on through the volume', () => {
     assert.equal(h.shouldCenterLabel({}), false);
   });
 
-  it('sets verses in Arabic and chapters in Roman, each bare', () => {
+  it('sets verses and chapters bare, as numbers — the tongue is added later', () => {
     const h = inVerseMode();
     const chain = h.layoutBindings.getBibleVerseChain('IOHA_3_16');
     const verse = chain.items.find(v => v && v.id === 'IOHA_3_16');
     assert.equal(verse.name, '16', 'no colon, no chapter — the header holds those');
     const chapters = getBibleChapters(realManifest, { id: 'IOHA' }, {}, 'book');
-    assert.deepEqual(chapters.slice(0, 4).map(c => c.name), ['I', 'II', 'III', 'IV'],
-      'chapters are bare Roman numerals in ring and pyramid alike');
+    assert.deepEqual(chapters.slice(0, 4).map(c => c.name), ['1', '2', '3', '4'],
+      'the chapter carries its number; the numeral system is chosen at render');
   });
 });
