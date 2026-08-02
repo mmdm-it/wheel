@@ -83,3 +83,48 @@ describe('the tradition supplies the chapter numerals', () => {
     assert.equal(f({ item: { level: 'verse', name: '18' }, context: 'node' }), '18');
   });
 });
+
+// NAMES AND WORDS SHOUT, ADDRESSES NEVER CHANGE (2026-08-02).
+//
+// The ring's casing used to be a blanket CSS `text-transform: uppercase`,
+// which cannot tell one script from another. The strata ring hit this first
+// (Русский → РУССКИЙ) and moved its casing into JS; the focus ring carried
+// the same rule and the same bug, and the Bible exposed it the moment it
+// spoke Greek — Κεφάλαιον rendered ΚΕΦΆΛΑΙΟΝ, keeping an accent that Greek
+// uppercase drops.
+describe('casing follows the script, not the habit', () => {
+  const fmt = (locale, vocabulary, books) => {
+    const namesMap = { books: books || {}, locale, vocabulary };
+    return makeLabelFormatter({
+      config: volumeConfigs.bible, volume: 'bible', level: 'verse',
+      locale, namesMap, options: {}, manifest: {}, meta: {}
+    });
+  };
+
+  it('Latin-script names and words shout', () => {
+    const f = fmt('latin', { chapter: 'Capitulum' }, { GENE: 'Genesis' });
+    assert.equal(f({ item: { id: 'GENE', level: 'book', name: 'Genesis' }, context: 'magnifier' }), 'GENESIS');
+    assert.equal(f({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'CAPITULUM XVII');
+  });
+
+  it('every other script keeps the form its own tradition writes', () => {
+    const g = fmt('greek', { chapter: 'Κεφάλαιον' }, { GENE: 'Γένεσις' });
+    assert.equal(g({ item: { id: 'GENE', level: 'book', name: 'x' }, context: 'magnifier' }), 'Γένεσις');
+    assert.equal(g({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'Κεφάλαιον ιζʹ',
+      'not ΚΕΦΆΛΑΙΟΝ — Greek uppercase drops the accent this would keep');
+
+    const h = fmt('hebrew', { chapter: 'פרק' }, { GENE: 'בראשית' });
+    assert.equal(h({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'פרק י״ז');
+
+    const r = fmt('russian', { chapter: 'Глава' }, { GENE: 'Бытие' });
+    assert.equal(r({ item: { id: 'GENE', level: 'book', name: 'x' }, context: 'magnifier' }), 'Бытие',
+      'the case that started this: Русский must not become РУССКИЙ');
+  });
+
+  it("an edition's own verse address is never re-cased, in any tongue", () => {
+    for (const locale of ['latin', 'greek', 'hebrew', 'russian']) {
+      assert.equal(fmt(locale, {}, {})({ item: { level: 'verse', name: '30b' }, context: 'node' }), '30b',
+        `${locale}: a sub-verse is data, not a name to shout`);
+    }
+  });
+});

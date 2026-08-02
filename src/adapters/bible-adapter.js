@@ -641,7 +641,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       if (!bookId) return '';
       const book = findBook(manifest, bookId);
       const localized = namesMap?.books?.[bookId];
-      return (localized || book?.book_name || bookId).toUpperCase();
+      return toDisplayCase(localized || book?.book_name || bookId);
     }
     // Verse ring: the book AND its chapter, live — "IOHANNES III". The
     // ring now runs the whole volume (2026-07-20), so a bare chapter is
@@ -670,9 +670,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       return bookName ? `${bookName} ${chapterLabel}` : chapterLabel;
     }
     // Book ring: parent is the testament name (stored mixed-case on items as
-    // parentName; uppercased here because the theme no longer transforms —
-    // parent labels arrive display-ready so MMdM's lowercase d survives).
-    return (item.parentName || '').toUpperCase();
+    // parentName; cased here because the theme no longer transforms — parent
+    // labels arrive display-ready so MMdM's lowercase d survives). Latin
+    // shouts; Παλαιὰ Διαθήκη and הברית הישנה are left as their own
+    // traditions write them.
+    return toDisplayCase(item.parentName || '');
   };
 
   // Startup-verse prefetch: when the Bible opens on a chapter with a

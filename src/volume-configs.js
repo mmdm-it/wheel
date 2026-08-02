@@ -4,7 +4,7 @@
 // declared here; src/main.js stays volume-agnostic and is scanned by
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
-import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral } from './adapters/volume-helpers.js';
+import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 import { recall } from './core/session-memory.js';
 
@@ -282,7 +282,18 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
   // already ruled sufficient (2026-07-20: chapters are Roman, verses Arabic,
   // "the numeral system itself says which is which, so neither wears a word").
   // Honest, language-neutral, and it cannot leak English into a German shelf.
-  const t = key => namesMap?.vocabulary?.[key] ?? '';
+  // CASING IS OWNED HERE, NOT BY CSS (2026-08-02). A blanket
+  // `text-transform: uppercase` on the ring re-uppercased every native script
+  // — the strata ring hit this first (Русский → РУССКИЙ) and moved its casing
+  // into JS; the focus ring carried the same rule and the same bug, visible
+  // the moment the volume spoke Greek: Κεφάλαιον came out ΚΕΦΆΛΑΙΟΝ, wearing
+  // an accent that Greek uppercase drops.
+  //
+  // The line is NAMES AND WORDS SHOUT, ADDRESSES NEVER CHANGE. A vocabulary
+  // word is cased (Latin CAPITULUM, Greek Κεφάλαιον left alone); a numeral or
+  // an edition's own verse address is passed through untouched, so a
+  // sub-verse stays "30b" and never becomes "30B".
+  const t = key => toDisplayCase(namesMap?.vocabulary?.[key] ?? '');
 
   // ── Numeral converters ───────────────────────────────────────────────────────
   // THE TRADITION'S OWN LETTERS — chapters only (Howell 2026-08-02).
@@ -354,11 +365,11 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     // THE DOOR'S NAME follows the reader live (W-27): the root item's baked
     // name is only the boot value; the live table wins at render, so switching
     // to Hebrew in the funnel retitles the door to כתבי הקודש with no rebuild.
-    if (itemLevel === 'bibleRoot') return namesMap?.title || item.name || item.id || '';
+    if (itemLevel === 'bibleRoot') return toDisplayCase(namesMap?.title || item.name || item.id || '');
     if (itemLevel === 'chapter') return formatChapter({ item, context });
     if (itemLevel === 'verse') return formatVerse({ item, context });
     const localizedBook = bookNames?.[item.id];
-    return localizedBook || item.name || item.id || '';
+    return toDisplayCase(localizedBook || item.name || item.id || '');
   };
 }
 
