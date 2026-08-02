@@ -95,10 +95,31 @@ receives one chart for the one artifact the reader can choose.
     the spine chapter's `utterances` list, so spine-side sub-slots (`15b`,
     W-30's other letter axis) are just ordinals here; the slot-id ↔ ordinal
     correspondence lives in the chapter file and never enters the chart.
-- **Seats appear in the edition's reading order**, which must equal spine
-  order of their first utterance. The chain, the gaps and the parent labels
-  are all built from this order; the cousin-gap grammar breaks at the
-  edition's OWN chapter boundaries (the entire point of W-18/O-13).
+  - **Ordinal order is SORTED order, never file order** (W-31's finding:
+    ECCLU 10's keys end `…33, 34, 15b` because earlier tooling appended
+    sub-slots). The spine chapter's utterance sequence is: integer ids
+    ascending, each sub-slot immediately after the integer it hangs off,
+    stacked sub-slots lexical (`19b, 19c, 19d, 19e`). Both sides — the
+    generator deriving ordinals and any future explicit `utterances` array
+    (step 2) — must use this order, or 110 seats mis-address silently.
+  - *A note from the first generation run (W-31): the many-to-one folds in
+    the legacy tables dissolved when charted from TEXT membership — the
+    Greek matter of ECCLU 34:27 lives whole at spine 31:32, so its seat is
+    the contiguous span 32–33 and the table's non-contiguous claim was an
+    artifact of number-to-number annotation. Multi-range spans remain in the
+    contract as capacity; no generated chart needs them today.*
+- **Seats appear in the edition's reading order.** WITHIN a chapter that
+  order must equal spine order of the seats' first utterances. ACROSS
+  chapters, the book's chapter array IS the edition's own reading order —
+  the generator's assertion, not a derivation from the spine (amended for
+  W-31's Greek Jeremiah: the LXX genuinely reads its oracles in a different
+  order than the Latin, and the reader gets the edition's order, because
+  the reader is reading the edition). Where a book's reading order departs
+  from the spine's, every chapter in that book must be explicit and carry
+  `c` — positional identity is only meaningful while the orders coincide.
+  The chain, the gaps and the parent labels are all built from this order;
+  the cousin-gap grammar breaks at the edition's OWN chapter boundaries
+  (the entire point of W-18/O-13).
 - **A span may draw from a foreign spine chapter** (Malachi 3's tail,
   Psalm 9/10, all 1,434 cross-chapter entries) but a single range may not
   cross spine chapter files in v1. If a real case ever needs it, flag it —
@@ -123,8 +144,11 @@ receives one chart for the one artifact the reader can choose.
 1. **The spine is a superset** — every `u` names utterances that exist.
 2. **No utterance is claimed twice by one artifact** (mirrors the schema's
    span rule; the chart inherits it).
-3. **Ordering**: seats ascend by first utterance in spine order; chapters
-   ascend likewise; fold ranges are listed in spine order.
+3. **Ordering**: within each chapter, seats ascend by first utterance in
+   spine order; fold ranges are listed in spine order. Chapter order is the
+   edition's own reading order and is NOT required to ascend by spine —
+   softened for Greek Jeremiah (W-31); everywhere else the two coincide
+   today, and where they diverge the book must be all-explicit with `c`.
 4. **Label uniqueness** within each edition-chapter.
 5. **Text agreement**: every seat has text for this artifact at that
    (edition, address) in the corpus; every text the artifact holds has a

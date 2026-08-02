@@ -9,7 +9,7 @@ import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.
 import { recall } from './core/session-memory.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
-import { bibleAdapter, buildBibleRootChain } from './adapters/bible-adapter.js';
+import { bibleAdapter, buildBibleRootChain, ensureSeatingChart } from './adapters/bible-adapter.js';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 import { placesAdapter } from './adapters/places-adapter.js';
 
@@ -438,9 +438,15 @@ function buildBibleChain(manifest, options, namesMap) {
       const bookId = options.bookId || 'MATHE';
       const chapterId = options.chapterId || '16';
       const verseId = options.verseId || '1';
-      return buildBibleVerseChain(manifest, {
-        initialVerseId: `${bookId}_${chapterId}_${verseId}`
-      });
+      // THE SEATING CHART (E1 of W-21): the chain's membership is the
+      // committed edition's own. buildChain is awaited at launch, so the
+      // chart fetch rides here — present or definitively absent before the
+      // first frame; absent means identity fallback (today's behaviour).
+      return ensureSeatingChart(options.translation || null).then(chart =>
+        buildBibleVerseChain(manifest, {
+          initialVerseId: `${bookId}_${chapterId}_${verseId}`,
+          chart
+        }));
     }
     const chain = buildBibleBookCousinChain(manifest, {
       testamentId: options.testamentId,
