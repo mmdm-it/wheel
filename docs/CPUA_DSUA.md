@@ -357,4 +357,4 @@ CPUA bottom (raised):
 
 **Version**: 3.7.12  
 **Last Updated**: January 1, 2026  
-**Related Documents**: ARCHITECTURE_V4.md, CHILD_PYRAMID_REDESIGN.md
+**Related Documents**: ARCHITECTURE.md, archive/CHILD_PYRAMID_REDESIGN.md

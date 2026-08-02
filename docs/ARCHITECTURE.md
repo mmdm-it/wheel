@@ -1,6 +1,8 @@
 # Architecture (Adapter Reset, v3.x numbering)
 
-> Goal: keep the proven geometry/rendering pieces but rebuild around adapters, schemas, and a single interaction store/state machine. Every volume ships a plugin adapter; renderers stay data-agnostic. Filename retained from the prior v4 draft; roadmap now tracks this work as v3.3–v3.6.
+> Goal: keep the proven geometry/rendering pieces but rebuild around adapters, schemas, and a single interaction store/state machine. Every volume ships a plugin adapter; renderers stay data-agnostic. Roadmap tracks this work as v3.3–v3.6.
+
+> **This is the current architecture.** Renamed from `ARCHITECTURE_V4.md` on 2026-08-02: the file called V4 was the live design and the file called V3 was the retired v2 baseline, which is precisely backwards from what the names implied. The baseline now lives at [`ARCHITECTURE_V2_BASELINE.md`](ARCHITECTURE_V2_BASELINE.md) and is historical.
 
 ## Layering
 

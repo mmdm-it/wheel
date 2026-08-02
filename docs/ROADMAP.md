@@ -171,7 +171,7 @@ last (F).
   (`VUL`); all four volumes behave identically.
 - **Phase B — Data completeness + single-site consolidation** — DONE
   (closed 2026-07-16 with the first end-of-phase audit,
-  `docs/AUDIT-PHASE-B.md`). B.1 Bible: Psalms rebuilt to native Vulgate
+  `docs/archive/AUDIT-PHASE-B.md`). B.1 Bible: Psalms rebuilt to native Vulgate
   numbering, Latin filled from the Clementine corpus (99.5%; 152
   divergent-recension residuals documented). B.2: the Gutenberg easter
   egg — generic cross-volume **gateway node** capability (shipped as
@@ -437,7 +437,7 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 ---
 
 ## References
-- Adapter contract: `docs/ARCHITECTURE_V4.md`
-- Prior spec (baseline geometry/contracts): `docs/ARCHITECTURE_V3.md`
+- Adapter contract: `docs/ARCHITECTURE.md`
+- Prior spec (baseline geometry/contracts): `docs/ARCHITECTURE_V2_BASELINE.md`
 - Dimension behavior details: `docs/DIMENSION_SYSTEM.md`
 - Legacy launch tracker (v0.8/v1, bibliacatholica.org): see `../wheel-v0/TODO.md` (archive; naming explained in `VERSIONING.md`)

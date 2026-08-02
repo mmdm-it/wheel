@@ -1606,7 +1606,36 @@ would render a verse 35 that does not exist and never show 34b. I did not
 confirm it — treat it as a strong suspicion, not a finding.
 
 ### W-29 · THE DOCUMENT AUDIT — seven to archive, three traps, one rename
-**Raised:** 2026-08-01 by Wilbur at Howell's request · **Status: FOR YOUR REVIEW**
+**Raised:** 2026-08-01 by Wilbur at Howell's request · **Status: DONE 2026-08-02**
+
+**✅ EXECUTED per your review.** All seven archived to `docs/archive/`
+(`AUDIT-PHASE-B.md` alone, not paired — Phase C is still *in progress* per the
+roadmap, so it stays live and cites the archived B, which is the "live document
+citing an archived one" you preferred). All three traps kept. Both renames done,
+and — the part that mattered more than the move — **both headers rewritten**:
+`ARCHITECTURE.md` no longer explains that its filename is a leftover, and
+`ARCHITECTURE_V2_BASELINE.md` now opens with *"⚠ THIS DOCUMENT IS NOT IN
+FORCE"* instead of claiming its contracts still are. You were right that the
+sentence, not the size, was the risk.
+
+**Inbound links repointed in seven live files** (README, ROADMAP, VERSIONING,
+DIMENSION_SYSTEM, CPUA_DSUA, AUDIT-PHASE-C, and one comment path in
+`src/view/secondary-strata-view.js` — your file, a one-line pointer, flagged
+here rather than done silently). **CHANGELOG.md and this ledger were left
+alone on purpose:** a dated entry that named a path correctly on the day it was
+written is a record, not a broken link, and rewriting it would falsify history.
+The entry below is preserved as written for the same reason.
+
+**PUNCHLIST pruned**, and the Vulgate item re-measured rather than deleted:
+"152 residual verses" is now **103** in the canonical books, the truncation
+repairs and Esther fill having closed the difference. The appendix books show
+2,264 more, and separating them is the useful part — 1,833 (Odes, Psalms of
+Solomon, Enoch, 3–4 Maccabees) are true Vulgate absences awaiting assertion,
+but **431 are not**: `I_ESDR` is what the Clementine prints as *Esdrae III*, so
+it is Latin text genuinely OWED, and belongs to the Vulgate's "prologues owed"
+work rather than to any display fallback. That one is mine.
+
+*(Original entry, as raised, follows unchanged.)*
 
 Howell asked for a list, not a diff, so **nothing has been moved.** Six of
 the seven are your documents. Evidence for each verdict: last commit date,

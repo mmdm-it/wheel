@@ -7,7 +7,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 - v3.27.0 (2026-07-30)
 
 ## Notable Changes in 3.11.0 (catch-up release — see CHANGELOG for the full sprint)
-- **Phase B closed**: MMdM population complete — 1,032 models across 99 manufacturers (plus two gateway patrons), full prose; Gregorio XIII gateway to the calendar volume; end-of-phase audit ritual (docs/AUDIT-PHASE-B.md).
+- **Phase B closed**: MMdM population complete — 1,032 models across 99 manufacturers (plus two gateway patrons), full prose; Gregorio XIII gateway to the calendar volume; end-of-phase audit ritual (docs/archive/AUDIT-PHASE-B.md).
 - **Phase C sprint (C.1–C.5)**: gesture ladder (tap / scrub / flick / double-flick, docs/FEEL.md); boot splash "the instrument arrives"; migration rebuild + gateway cinema wipe; golden-angle star field with editorial prominence; canonical usable areas; wedge calendar with historical Julian/Gregorian reckoning; day ring with the present-moment mark.
 - **The e-reader**: NEXT gesture in the detail sector; one continuous verse chain Genesis 1:1 → Apocalypse 22:21; the sweep at books/chapters/verses levels; Roman chapters, Arabic verses.
 - **Platform**: mmdm.it unmasked (direct DNS, real SEO); GPL-3.0 engine / reserved data IP split; pre-compressed JSON + perf probe cycle (cellular boot 1.3MB → 180KB).

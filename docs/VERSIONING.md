@@ -71,7 +71,7 @@ inside `wheel-v0/`, which its contemporaries called "v1".
   `v4.*` tags are first deliberately deleted from local and remote (a
   disruptive, opt-in cleanup — do not assume it has happened).
 - Until then, "v4" appears only in architecture documents
-  (`docs/ARCHITECTURE_V4.md`) as a design target for the architecture
+  (`docs/ARCHITECTURE.md`) as a design target for the architecture
   generation, detached from any future tag number.
 
 ---
