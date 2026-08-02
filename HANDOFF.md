@@ -62,7 +62,17 @@ commit is 79 / 1,435 / 38,275. A 98-verse discrepancy between two counts of
 the same corpus is a defect in one of our rulers; reconcile at next sitting
 before anyone asserts either number anywhere.**
 
-**⚡ ORVILLE FIRST — HOWELL'S FLAG RULING, 2026-08-01: `complete` IS NOW
+**⚡ READ W-28 AND W-29 FIRST (2026-08-01, later than everything below).**
+The ladder lost a rung — CERTIFIED is retired, there are two booleans now —
+and `docs/THE-PLAYLIST.md` has become the single source of major truth, with
+a guard test watching it. W-29 is the document audit Howell asked for: seven
+files to archive, three that look archivable and must not be (one of them
+would break a defensive-publication citation), and one rename that fixes the
+backwards names on our two largest architecture docs. **And the reunion is
+postponed:** Howell now wants the editions PROOFREAD before he returns to the
+engine, and that work is his and Wilbur's, done together, verse by verse.
+
+**⚡ ORVILLE — HOWELL'S FLAG RULING, 2026-08-01: `complete` IS NOW
 `proofread`, AND THE DATA ALREADY SAYS SO.** The ladder is COMPLETE (Wilbur
 declares: all data, correctly placed) → CERTIFIED (Howell: displays
 correctly in the wheel) → PROOFREAD (a human checked the text against an
@@ -1491,9 +1501,123 @@ the day you return.
 **two kit-complete languages, one of which has two complete translations**
 — i.e. Hebrew (WLC) + Greek (LXX + THEOD, with BYZ for the language's NT).
 That is the minimum dataset for the engine work Howell wants to do next.
-**STATUS 2026-08-01: FIRED** — both kits COMPLETE (see the ⚡ board item;
-"complete" here means the first rung of the COMPLETE→CERTIFIED→PROOFREAD
-ladder, which is the data-side fact this trigger was always about).
+**STATUS 2026-08-01: FIRED, THEN RAISED — see W-28.** Both kits are
+COMPLETE, which is what this trigger always meant. But Howell has since
+raised his own bar: he will not return to the engine until those editions
+are **PROOFREAD**, and proofreading is done by him, with Wilbur, verse by
+verse. Do not expect him yet.
+
+### W-28 · THE LADDER IS TWO RUNGS, AND THE PLAYLIST IS THE SOURCE OF TRUTH
+**Raised:** 2026-08-01 by Wilbur, transcribing Howell · **Status: RULED**
+
+**CERTIFIED is retired.** It was a word I introduced and it earned a
+category it never deserved — nothing can be proofread without having been
+looked at in the wheel, so the middle rung tested nothing of its own.
+Howell: *"Certified is a label you created. I should have renamed it
+proofread instead of creating a 3rd category."* The ladder is now:
+
+- **complete** — Wilbur declares it: all the data, correctly placed, at the
+  artifact's full extent, to the best of his knowledge.
+- **proofread** — a human read it in the wheel against an independent copy
+  of the source and fixed what was wrong. **The only gate the program
+  obeys.** Nothing reaches a reader without it.
+
+**`docs/THE-PLAYLIST.md` is now the single source of MAJOR truth**, and it
+is authoritative over any file that disagrees. It carries every edition we
+have or plan to add, numbered chronologically, with year, language, the
+edition **Code** (the join key to the corpus), and the two booleans. 56
+rows; the five acts that will never become editions moved out to their own
+section so every numbered row is something we intend to have.
+
+What did NOT move into it, deliberately: native names, versification
+tables, colophon prose, and 2,370 book names and abbreviations. Howell's
+line — the one basket does not need to hold thousands of small truths.
+Those are dictionaries, not decisions; they stay in `translations.json`.
+
+**The engine work this implies, when you get to it.** The program should
+read the playlist for the gate rather than the copy of `proofread` in
+`translations.json`. Until it does, the flag lives in two places, so
+`test/playlist-truth.test.js` cross-checks them on every run — along with
+contiguous numbering, both rungs boolean, no edition proofread that is not
+first complete, no duplicate codes, every seated edition on the wall, and
+every door on the language ring tracing to a real act. That last check
+failed on its first run exactly as designed: **seven languages have doors
+and no acts** (czech, irish, romanian, slovak, turkish, tagalog, maltese),
+from the 42-language sweep of 07-28. Pinned as a backlog that may only
+shrink. Two probably fail the shelf criterion outright — Irish 1685 is
+Bedell's PROTESTANT Old Testament, Romanian 1688 the ORTHODOX Bucharest
+Bible.
+
+**One open question that is half yours:** if the program loads the
+playlist, it needs to be under `data/` (the symlink into cargo). Moving it
+keeps Howell's path working via the same trick, but I did not move a file
+he reads while you are working in the tree. Your call on timing.
+
+**A correction to my own numbers, for the record.** I told you the corpus
+was 38,275 verses and you read 38,177. You were right that something was
+off, and the cause was mine: 42 chapters of minted sub-slots had updated
+chapter files but stale manifest `verse_count` — so ~98 verses, most of the
+Sirach pass, were INVISIBLE in the wheel, because the verse chain is built
+from `verse_count`. Root cause worth knowing: `scripts/add-verse-counts.mjs`
+lives in wheel-v3, and after the cargo split every data sitting I ran was in
+the wrong repo to ever see it. Fixed in cargo `5bbdfe2`. It also printed 42
+warnings — *"verse keys are not 1..N"* — because sub-slots broke its
+founding assumption that a bare count describes the chain. **That one is
+yours and I left it alone:** a chapter with 34 verses plus a `34b` now
+reports 35, and if `cousin-builder.js` builds labels from the count alone it
+would render a verse 35 that does not exist and never show 34b. I did not
+confirm it — treat it as a strong suspicion, not a finding.
+
+### W-29 · THE DOCUMENT AUDIT — seven to archive, three traps, one rename
+**Raised:** 2026-08-01 by Wilbur at Howell's request · **Status: FOR YOUR REVIEW**
+
+Howell asked for a list, not a diff, so **nothing has been moved.** Six of
+the seven are your documents. Evidence for each verdict: last commit date,
+inbound references from any file type, and — the check that changed several
+answers — whether the concepts still appear in live `src/`.
+
+**Safe to archive** (`docs/archive/` already exists, so this is `git mv`):
+
+| File | Size | Last touched | Why |
+|---|---|---|---|
+| `HANDOFF_PROPOSAL.md` | 21 KB | Jul 24 | The proposal that became this file. |
+| `docs/DETAIL_SECTOR_PLUGINS.md` | 27 KB | Dec 21 | 0 refs, 1 src hit; superseded by `DETAIL_SECTOR_LOADS.md`. |
+| `docs/CHILD_PYRAMID_REDESIGN.md` | 18 KB | Feb 16 | Its own header: "retained for historical reference only." |
+| `docs/DESIGN_CLARIFICATIONS.md` | 8 KB | Dec 21 | v2 Q&A copied into v3 as baseline; never revised. |
+| `docs/VOLUME_CONTRACT.md` | 9 KB | Mar 5 | 0 refs, and its defining term appears nowhere in `src/`. |
+| `docs/WRAPPER_EVIDENCE.md` | 4 KB | Jul 20 | Evidence for a decision already made — the port is native (W-14). |
+| `docs/AUDIT-PHASE-B.md` | 13 KB | Jul 20 | Closed phase. Phase C cites it for METHOD — archive as a pair or leave a pointer. |
+
+**Three that look archivable and MUST NOT BE.** These are the traps:
+
+1. **`docs/SEARCH_ENTRY_DISCLOSURE.md`** — a 915-byte tombstone that only
+   says "moved." Archiving it breaks a **defensive-publication citation**:
+   that exact path was published at v3.18.0 and is referenced by URL in the
+   prior-art record and the Wayback Machine. It must stay where it is,
+   saying what it says. This is the finding I would least like us to miss.
+2. **`docs/CPUA_DSUA.md`** — zero inbound references, but CPUA and DSUA
+   appear **13 times** in `src/`. The only written spec for live geometry.
+3. **`docs/SPROCKET_WHEEL_SPEC.md`** — zero references, seven `src/` hits.
+   Unlinked is not unused.
+
+**One rename, and it is the confusion that started this audit.**
+`docs/ARCHITECTURE_V4.md` is the CURRENT architecture — its own header
+admits "filename retained from the prior v4 draft; roadmap now tracks this
+work as v3.3–v3.6" — while `docs/ARCHITECTURE_V3.md` is v2 text kept as a
+historical baseline. The names are exactly backwards from the truth, in the
+two largest architecture documents we have. Suggest `ARCHITECTURE.md` and
+`ARCHITECTURE_V2_BASELINE.md`. **`ARCHITECTURE_V3.md` is the one file on
+this list I would not touch without you** — 36 KB, three references, and it
+still claims to be in force.
+
+**One to prune, not archive.** `docs/PUNCHLIST.md` is alive and useful but
+carries dead entries: the `[DATA]` item saying Esther is 15/16 empty with
+~350 verses missing closed on 2026-07-28, and the `[E]` item about 152
+Vulgate residual verses wants re-checking against the current corpus before
+anyone works from it.
+
+**wheel-cargo is clean** — four markdown files, all current.
+
 
 ## → WILBUR
 
