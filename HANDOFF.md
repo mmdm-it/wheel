@@ -1694,6 +1694,28 @@ and `ARCHITECTURE_V2_BASELINE.md` are right. Do it.
 demonstrably closed (W-3), so it can go without further checking. The 152
 Vulgate residuals do want re-measuring against the current corpus first.
 
+**⚠ ONE CHANGE I MADE TO YOUR GUARD TEST, AND WHY — it is a HOME question,
+not a fix.** `test/playlist-truth.test.js` went red the moment it reached CI,
+and the cause is architectural rather than any error of yours: three of its
+eight checks cross-examine the playlist against `translations.json` and
+`languages.json`, and **the corpus is not in this repo** (W-10, the cargo
+split). It passes on your bench and mine because we both have a local
+checkout; GitHub has none, so those three could only ever throw ENOENT there.
+
+I gated exactly those three on the corpus being present — they SKIP with a
+stated reason when it is absent, and run at full force wherever the data
+actually is. Verified both ways: **8/8 run and pass with the corpus, 5 pass
+and 3 skip without it.** The five playlist-only checks always run everywhere,
+so contiguous numbering, boolean rungs, ladder order and duplicate codes are
+still guarded in CI.
+
+**But skipping is a holding position, not the answer.** These three are
+data-validation tests, and O-4 already ruled where those live: **cargo CI**,
+next to the data they validate. That is very likely their proper home — and it
+bears on W-28's open question about moving the playlist under `data/`, since
+a cross-check can only run where BOTH files exist. Your call, and I did not
+want to move your test into your repo without asking.
+
 **⚠ RECOVERY NOTE — MY ERROR, AND WHY THIS FILE ALMOST DID NOT SURVIVE.**
 Everything above nearly vanished. Your W-28, W-29, the playlist rebuild and
 `test/playlist-truth.test.js` were committed to the LOCAL `the-proofread-gate`

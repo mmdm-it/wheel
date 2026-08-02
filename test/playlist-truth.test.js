@@ -22,6 +22,24 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 const loadJson = p => JSON.parse(readFileSync(p, 'utf-8'));
 
+// THE CORPUS IS NOT IN THIS REPO (W-10, the cargo split). Three of the checks
+// below cross-examine the playlist against the registry, and the registry
+// lives in wheel-cargo — present on our machines, absent in CI, which is why
+// this file went red the moment it reached GitHub. Those three SKIP rather
+// than fail when the corpus is missing, so they keep their full force wherever
+// the data actually is (every bench either of us works at, and cargo's own CI
+// if the playlist ever moves there per W-28) without asserting in a place that
+// cannot possibly know the answer. The five playlist-only checks always run.
+// Orville 2026-08-02 — flagged to Wilbur: this is a HOME question, not a fix.
+// The right long-term place for these three is probably cargo CI.
+const corpusPresent = (() => {
+  try { readFileSync(path.join(root, 'data/gutenberg/translations.json')); return true; }
+  catch (_) { return false; }
+})();
+const needsCorpus = corpusPresent
+  ? {}
+  : { skip: 'corpus lives in wheel-cargo (W-10); nothing to cross-check here' };
+
 const playlist = readFileSync(path.join(root, 'docs/THE-PLAYLIST.md'), 'utf-8');
 
 // Rows of the numbered roster: | # | Year | Edition | Language | Code | complete | proofread | Notes |
@@ -68,7 +86,7 @@ describe('THE PLAYLIST is the single source of major truth', () => {
       `duplicate code: ${codes.filter((c, i) => codes.indexOf(c) !== i).join(', ')}`);
   });
 
-  it('every seated edition has a row, and every coded row is seated', () => {
+  it('every seated edition has a row, and every coded row is seated', needsCorpus, () => {
     const seated = new Set(Object.keys(loadJson(path.join(root, 'data/gutenberg/translations.json')).translations));
     const onWall = new Set(acts.map(a => a.code).filter(Boolean));
     const missing = [...seated].filter(c => !onWall.has(c));
@@ -77,7 +95,7 @@ describe('THE PLAYLIST is the single source of major truth', () => {
     assert.deepEqual(phantom, [], `on the wall with a code but nothing seated: ${phantom.join(', ')}`);
   });
 
-  it('the proofread gate agrees with the wall', () => {
+  it('the proofread gate agrees with the wall', needsCorpus, () => {
     // Until the program reads the playlist directly, translations.json carries
     // a copy of this flag. A copy that can disagree is the bug this file exists
     // to prevent, so they are checked against each other on every run.
@@ -90,7 +108,7 @@ describe('THE PLAYLIST is the single source of major truth', () => {
     assert.deepEqual(bad, []);
   });
 
-  it('every door on the language ring traces to an act on the wall', () => {
+  it('every door on the language ring traces to an act on the wall', needsCorpus, () => {
     // A language earns a door BECAUSE a translation act exists in it. This is
     // the guard that would have caught Arabic sitting at 867 with nothing
     // behind it, and Irish at 1685 — which is Bedell's Protestant Old
