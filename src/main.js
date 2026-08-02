@@ -2003,6 +2003,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     && options.splashOvertureItem !== overtureHomeId ? options.splashOvertureItem : null;
   if (overtureItemId) options.initialItemId = overtureItemId;
 
+  // The committed choice, carried to the chain builder alongside the volume's
+  // pinned default — a builder that seats by artifact needs to know which
+  // artifact the reader actually holds, not which one the config prefers.
+  options.activeEdition = translationId;
   const chainResult = await config.buildChain(manifest, options, namesMap);
   performance.mark('wheel:chain-built');
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
@@ -2315,6 +2319,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // rather than presenting the pinned default as though nothing was chosen.
     const sel = dimensionBridge.getSelection();
     remember(volume, { language: sel.language || null, edition: sel.translation || null });
+    // The committed edition travels with the options, and the volume may warm
+    // whatever it needs to seat the reader by it next time a ring is built.
+    options.activeEdition = translation || options.activeEdition;
+    config.onEditionSettle?.(translation || null);
     updateIncompleteMark();
   });
   // Re-wrap the open detail the moment EB Garamond truly lands (Howell

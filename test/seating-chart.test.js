@@ -276,3 +276,26 @@ describe('seating-chart loader', () => {
     assert.ok(items.length > 20000, `LXX expanded to ${items.length} seats`);
   });
 });
+
+// The defect this test exists for: the verse branch read the volume's PINNED
+// DEFAULT (`options.translation`, VUL) instead of the reader's committed
+// edition, so a Greek reader was seated by a Latin chart — silently, since
+// the fallback is a working chain. Found on the bench, before the phone.
+describe('the committed edition seats the reader (not the pinned default)', () => {
+  const haveCorpus = existsSync(new URL('../data/gutenberg/seating/LXX.json', import.meta.url));
+  it('activeEdition drives the chart; the pinned default does not override it', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const realManifest = JSON.parse(readFileSync(new URL('../data/gutenberg/manifest.json', import.meta.url), 'utf-8'));
+    const base = { level: 'verse', cousinMode: true, bookId: 'I_SAM', chapterId: '17', verseId: '1' };
+
+    const greek = await volumeConfigs.bible.buildChain(realManifest, { ...base, translation: 'VUL', activeEdition: 'LXX' }, {});
+    const greekSeats = greek.items.filter(Boolean).filter(i => i.chapterKey === 'I_SAM:17').map(i => i.name);
+    // The Septuagint genuinely lacks 1 Samuel 17:12-31: the labels say so.
+    assert.ok(greekSeats.includes('11') && greekSeats.includes('32'));
+    assert.ok(!greekSeats.includes('12'), 'Greek chart must not seat an absence');
+
+    const latin = await volumeConfigs.bible.buildChain(realManifest, { ...base, translation: 'VUL' }, {});
+    const latinSeats = latin.items.filter(Boolean).filter(i => i.chapterKey === 'I_SAM:17').map(i => i.name);
+    assert.ok(latinSeats.includes('12'), 'uncharted edition keeps the identity chain');
+  });
+});

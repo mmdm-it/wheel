@@ -475,7 +475,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   let verseChainItems = null;
   let verseChainChart;
   const verseChain = initialVerseId => {
-    const chart = getSeatingChart(options?.translation || null);
+    const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
     if (!verseChainItems || verseChainChart !== chart) {
       verseChainItems = buildBibleVerseChain(manifest, { chart }).items;
       verseChainChart = chart;

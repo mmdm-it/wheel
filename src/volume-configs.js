@@ -109,6 +109,12 @@ const volumeConfigs = {
       return { ...manifest, Gutenberg_Bible: { ...root, testaments: {} } };
     },
     buildChain: (manifest, options, namesMap) => buildBibleChain(manifest, options, namesMap),
+    // A committed edition warms its seating chart, so the reader's NEXT
+    // descent to the leaf ring is seated by their own artifact rather than
+    // the one they arrived under. The chain in front of them is not rebuilt
+    // (that is E2's re-seat, which carries the reader's utterance across);
+    // this only makes sure the chart is in hand when the ring is next built.
+    onEditionSettle: edition => { ensureSeatingChart(edition || null); },
     createHandlers: makeAdapterHandlers('bible')
   },
   catalog: {
@@ -442,7 +448,12 @@ function buildBibleChain(manifest, options, namesMap) {
       // committed edition's own. buildChain is awaited at launch, so the
       // chart fetch rides here — present or definitively absent before the
       // first frame; absent means identity fallback (today's behaviour).
-      return ensureSeatingChart(options.translation || null).then(chart =>
+      // The COMMITTED edition, not the volume's pinned default: `translation`
+      // is the config's fallback (VUL), while `activeEdition` is what the
+      // reader actually chose at the funnel or carried in from a previous
+      // launch. Reading the default here meant a Greek reader was seated by
+      // a Latin chart — caught before it reached the bench.
+      return ensureSeatingChart(options.activeEdition || options.translation || null).then(chart =>
         buildBibleVerseChain(manifest, {
           initialVerseId: `${bookId}_${chapterId}_${verseId}`,
           chart
