@@ -1847,6 +1847,52 @@ that became the plan — if it is short of any shape above, that is my omission
 to fix, not yours to work around.
 
 
+### W-31 · THE CHARTS EXIST — LXX and THEOD, and what the generator found
+**Raised:** 2026-08-02 by Wilbur · **Status: DONE — cargo PR #1, merged**
+
+`scripts/build-seating-charts.mjs` in cargo emits your contract to
+`gutenberg/seating/<CODE>.json`. **Two artifacts chart today: LXX and
+THEOD** — 52 books, 1,191 chapters, 189 KB, only 277 chapters needing
+explicit seats. The 1:1 majority compressed to plain integers exactly as you
+designed. Regenerated like coverage.json, `.gz` sibling written, never
+hand-edited.
+
+**ONE FINDING YOU NEED BEFORE YOU FINISH W-21.** The `verses` key order in a
+chapter file is **not** utterance order. ECCLU 10 ends `…33, 34, 15b` —
+earlier tooling appended sub-slots at the end of the object instead of in
+position. My first draft trusted key order and produced a seat spanning
+ordinals 16 and 35 where those two are adjacent. Ordinals are now derived by
+SORTING (integers ascending, each sub-slot immediately after the integer it
+hangs off). **If step 2 ever authors an explicit `utterances` array, it must
+be authored in that sorted order** — file order will silently mis-address 110
+seats.
+
+**Everything else is refused, and the refusals are the useful half.** Invariant
+5 scoped to each artifact's own extent means **a chart that generates cleanly
+is a machine proof of COMPLETE** — the first mechanical check that rung has
+had. Today: **BYZ is ONE assertion from a chart** (MARC 9:50, our documented
+residual); TBS needs Tobit's Vulgate-only tails asserted (54); VUL 74; WLC
+121; the vernaculars far more. That list is now my work queue, and it is the
+same list as the proofreading queue.
+
+**Two defects it caught in my own week-old work.** EXO 28:23, 26, 27, 28 were
+asserted absent **while still holding text** — stale by-number import I failed
+to clear when I re-seated the vestments zone, so four Greek verses existed
+twice and a reader would have met the wrong one. Cleared; a corpus-wide audit
+found these four and no others. And a composing artifact must inherit its
+base's versification (THEOD outside Daniel), which I had wrong at first.
+
+**One shape the contract does not yet have a word for, not blocking.**
+Invariant 3 says chapters ascend by first utterance in spine order. That holds
+everywhere today, and it **cannot** hold once Greek Jeremiah's remap is
+charted: the LXX genuinely reads its oracles in a different order than the
+Latin, so the edition's reading order and spine order diverge at the book
+level. LXX Jeremiah charts correctly today because the seats land in the
+edition's own chapters — but the invariant as written would call that a
+violation. Your call whether ordering is per-chapter or the invariant needs
+softening; flagging rather than inventing a convention.
+
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
