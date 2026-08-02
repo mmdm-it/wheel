@@ -1210,8 +1210,21 @@ export function animateMagnifierToParent(opts) {
     : 0;
   // Width-aware seat (the label rejoined its vessel, Howell 2026-07-25):
   // the caller hands the placement rule as a function of measured width.
+  // A DECLARED SUFFIX IS SEATED BY ITS NAME (Howell 2026-08-02) — the same
+  // rule the static seat uses, applied here so the label does not pop into
+  // place when the flight lands. The endsWith guard makes a stale hint inert:
+  // if this label does not actually carry that suffix, nameWidth stays null
+  // and the historic width-only placement is used unchanged.
+  const labelSuffix = opts.labelSuffix || '';
+  let labelNameWidth = null;
+  const labelContent = text.textContent || '';
+  if (labelSuffix && labelContent.endsWith(labelSuffix)
+      && labelContent.length > labelSuffix.length
+      && typeof text.getSubStringLength === 'function') {
+    try { labelNameWidth = text.getSubStringLength(0, labelContent.length - labelSuffix.length); } catch { labelNameWidth = null; }
+  }
   const labelSeatX = typeof opts.labelLeftXForWidth === 'function'
-    ? opts.labelLeftXForWidth(labelWidth)
+    ? opts.labelLeftXForWidth(labelWidth, labelNameWidth)
     : (Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7);
   const endLocalDx = (labelSeatX - toX) + (labelWidth * 0.5);
 

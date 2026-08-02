@@ -67,10 +67,27 @@ export function getParentSeat(viewport, magnifierRadius = null) {
 // continuous — at each boundary the two rules agree to the pixel.
 // Returns the label's LEFT EDGE x (the labelToX dialect every flight
 // already speaks).
-export function getParentLabelLeftX(viewport, magnifierRadius, textWidth) {
+// A SUFFIXED LABEL CLEARS THE STROKE (Howell 2026-08-02). When the label
+// carries a numeric suffix — "Α' Σαμουηλ ιζʹ", the book plus the chapter it
+// is open at — the three rules above place the WHOLE string, so the vessel's
+// stroke line cut straight through the numeral. The fix is to place by the
+// NAME: its last letter lands just past the stroke, which puts the entire
+// suffix beyond the disc with nothing overlapping.
+//
+// For a suffixed label rules 1 and 2 COLLAPSE INTO ONE. Centering a short
+// name would leave its numeral straddling the stroke exactly as before, so
+// short and medium names take the same seat here; only rule 3, the corner
+// floor, still applies — and a corner-started label's suffix is already
+// clear of the vessel, which is why long names needed no change.
+const NAME_CLEARS_STROKE = 1.06; // radii: the stroke is at 1.0, just past it
+
+export function getParentLabelLeftX(viewport, magnifierRadius, textWidth, nameWidth = null) {
   const magR = Number.isFinite(magnifierRadius) ? magnifierRadius : viewport.SSd * 0.06;
   const seat = getParentSeat(viewport, magR);
   const w = Number.isFinite(textWidth) ? textWidth : 0;
+  if (Number.isFinite(nameWidth) && nameWidth > 0 && nameWidth < w) {
+    return Math.max(seat.labelX, seat.discX + magR * NAME_CLEARS_STROKE - nameWidth);
+  }
   return Math.max(
     seat.labelX,
     Math.min(seat.discX - w / 2, seat.discX + magR * 1.3 - w)

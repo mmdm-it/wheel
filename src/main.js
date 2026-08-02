@@ -2132,6 +2132,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const parentHandler = params => (handlerSet.parentHandler ? handlerSet.parentHandler({ ...params, app }) : false);
   const childrenHandler = params => (handlerSet.childrenHandler ? handlerSet.childrenHandler({ ...params, app }) : false);
   const adapterGetParentLabel = typeof handlerSet.getParentLabel === 'function' ? handlerSet.getParentLabel : null;
+  // The volume declares what it appended to a parent label (a chapter
+  // numeral), so the label can be seated by its NAME and the suffix hang
+  // clear of the vessel. Volumes that append nothing need not define it.
+  const adapterGetParentLabelSuffix = typeof handlerSet.getParentLabelSuffix === 'function' ? handlerSet.getParentLabelSuffix : null;
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   dimensionFrontDoorAt = typeof handlerSet.showsDimensionAt === 'function' ? handlerSet.showsDimensionAt : () => false;
@@ -2219,6 +2223,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,
     getParentLabel: adapterGetParentLabel,
+    getParentLabelSuffix: adapterGetParentLabelSuffix,
     getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
     pyramid: pyramidConfig,

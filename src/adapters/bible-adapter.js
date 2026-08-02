@@ -608,6 +608,23 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     return true;
   };
 
+  // THE NUMERIC SUFFIX, DECLARED (Howell 2026-08-02). The verse-level parent
+  // label is a compound — book name plus the chapter it is open at — and the
+  // placement rules were written for the NAME. Rather than have the view
+  // guess where a name ends (a trailing-token split would cut PALMER
+  // BROTHERS in half), the volume that builds the compound says what it
+  // appended. Every other level returns '' and keeps the original rules.
+  const getParentLabelSuffix = (item) => {
+    if (item?.level !== 'verse') return '';
+    const chapterId = item.meta?.chapterId || item.parentId || '';
+    const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
+    if (!chapterKey) return '';
+    const n = Number.parseInt(chapterKey, 10);
+    const numeral = Number.isFinite(n) ? toTraditionNumeral(n, namesMap?.locale) : String(chapterKey);
+    // Only a suffix if the label actually carries a name in front of it.
+    return getParentLabel(item) === numeral ? '' : numeral;
+  };
+
   const getParentLabel = (item) => {
     if (!item) return '';
     // Gateway root ring: parent button points back through the gateway.
@@ -695,6 +712,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     parentHandler,
     childrenHandler,
     getParentLabel,
+    getParentLabelSuffix,
     onBoot,
     // THE FRONT-DOOR GLOBE (Howell 2026-07-27): the dimension globe shows at
     // the volume's threshold — the root item magnified, testaments in the
