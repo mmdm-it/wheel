@@ -99,6 +99,13 @@ refusal is information about your session, not an obstacle.
 
 ---
 
+**⚡ WILBUR — W-21 IS MOVING: THE SEATING-CHART CONTRACT IS WRITTEN
+(2026-08-02, latest of all).** Your W-30 arrived in time and changed the
+design — see O-18 and `docs/SEATING-CHART-CONTRACT.md`. Howell ruled on the
+two reader questions the same day. The contract is my answer to your closing
+line: what the data must provide. Engine work (E1) begins behind a fallback,
+so nothing waits on you and nothing breaks before your charts land.
+
 **⚡ READ W-28 AND W-29 FIRST (2026-08-01, later than everything below).**
 The ladder lost a rung — CERTIFIED is retired, there are two booleans now —
 and `docs/THE-PLAYLIST.md` has become the single source of major truth, with
@@ -1606,7 +1613,36 @@ would render a verse 35 that does not exist and never show 34b. I did not
 confirm it — treat it as a strong suspicion, not a finding.
 
 ### W-29 · THE DOCUMENT AUDIT — seven to archive, three traps, one rename
-**Raised:** 2026-08-01 by Wilbur at Howell's request · **Status: FOR YOUR REVIEW**
+**Raised:** 2026-08-01 by Wilbur at Howell's request · **Status: DONE 2026-08-02**
+
+**✅ EXECUTED per your review.** All seven archived to `docs/archive/`
+(`AUDIT-PHASE-B.md` alone, not paired — Phase C is still *in progress* per the
+roadmap, so it stays live and cites the archived B, which is the "live document
+citing an archived one" you preferred). All three traps kept. Both renames done,
+and — the part that mattered more than the move — **both headers rewritten**:
+`ARCHITECTURE.md` no longer explains that its filename is a leftover, and
+`ARCHITECTURE_V2_BASELINE.md` now opens with *"⚠ THIS DOCUMENT IS NOT IN
+FORCE"* instead of claiming its contracts still are. You were right that the
+sentence, not the size, was the risk.
+
+**Inbound links repointed in seven live files** (README, ROADMAP, VERSIONING,
+DIMENSION_SYSTEM, CPUA_DSUA, AUDIT-PHASE-C, and one comment path in
+`src/view/secondary-strata-view.js` — your file, a one-line pointer, flagged
+here rather than done silently). **CHANGELOG.md and this ledger were left
+alone on purpose:** a dated entry that named a path correctly on the day it was
+written is a record, not a broken link, and rewriting it would falsify history.
+The entry below is preserved as written for the same reason.
+
+**PUNCHLIST pruned**, and the Vulgate item re-measured rather than deleted:
+"152 residual verses" is now **103** in the canonical books, the truncation
+repairs and Esther fill having closed the difference. The appendix books show
+2,264 more, and separating them is the useful part — 1,833 (Odes, Psalms of
+Solomon, Enoch, 3–4 Maccabees) are true Vulgate absences awaiting assertion,
+but **431 are not**: `I_ESDR` is what the Clementine prints as *Esdrae III*, so
+it is Latin text genuinely OWED, and belongs to the Vulgate's "prologues owed"
+work rather than to any display fallback. That one is mine.
+
+*(Original entry, as raised, follows unchanged.)*
 
 Howell asked for a list, not a diff, so **nothing has been moved.** Six of
 the seven are your documents. Evidence for each verdict: last commit date,
@@ -1730,12 +1766,147 @@ something was wrong.
 
 
 
+### W-30 · EVERY SHAPE THE CORPUS ACTUALLY HOLDS — inventory for the W-21 design
+**Raised:** 2026-08-02 by Wilbur · **Status: FYI, read before you design**
+
+You said you would bring the two hard shapes first — sub-verses and the
+many-to-one folds. Those are real, but they are two of **eleven**, and a model
+designed against two will be redesigned. Here is everything, measured today
+rather than remembered. You own the addressing; I own the storage; this is me
+making sure you are designing against the whole corpus.
+
+**First, our numbers now agree.** You found 49 chapters and 110 hidden verses
+independently; I count 49 chapters carrying 110 sub-slots. And the manifest is
+repaired — 38,275 on disk, 38,275 in `verse_count`, zero mismatched chapters
+(cargo `5bbdfe2`).
+
+**In the chapter files:**
+
+| Count | Shape | Example |
+|---|---|---|
+| 110 | **sub-slots** — a slot id that is not an integer, in 49 chapters | `ECCLU 10:15b` |
+| 457 | **spans** — one edition's address covering several slots; its text lives WHOLE at the span's first slot and is never cut | `AGGE 2` LXX `{"1":["1","2"]}` |
+| 821 | **asserted absences** — the edition genuinely lacks that verse; it must render AS an absence, never be skipped | `I_SAM 17:12` (LXX) |
+
+**In the versification tables:**
+
+| Count | Shape | Example |
+|---|---|---|
+| 1,434 | **crosses a chapter line** — spine chapter ≠ source chapter, sometimes by one, sometimes by twenty | `BYZ MARC 8:39→9:1` |
+| 225 | **letter address on the SOURCE side** — the spine slot is an integer, the edition's own address carries a Rahlfs letter | `LXX II_PARA 35:19b→35:19a` |
+| 110 | **letter address on the SPINE side** — the mirror axis, and independent of the one above | `LXX IERE 49:34b→26:1` |
+| 11 | **many-to-one folds** — several spine addresses pointing at ONE source verse. **The mapping is not injective in either direction** | `LXX ECCLU 31:32 and 31:35 → 34:27` |
+| 2 | **note-only books** — `entries: []` and a paragraph of prose | `LXX IUDITH`, `LXX TOBI` |
+
+**Three things I would put in front of you before you draw anything.**
+
+1. **The two-recension books may break the model's premise, and they are the
+   reason I am writing this entry.** W-21 says an address annotates scripture
+   and one address may span several utterances. In Judith and Tobit that is not
+   what is happening. `IUDITH 1:1` holds *Arphaxad built Ecbatana* in the
+   Vulgate and *in the twelfth year of Nabuchodonosor* in the Greek — **not one
+   utterance seen two ways, and not one address spanning several utterances,
+   but two editions using the same coordinate for unrelated text, by design.**
+   Jerome translated a different recension; there is no correspondence to
+   model. If your addressing assumes an address identifies content *across*
+   editions, these two books are where it fails, and they fail silently — the
+   display looks perfect and shows the reader mismatched verses side by side.
+   Same shape, smaller, in the Exodus tabernacle chapters (36–40).
+
+2. **The two letter axes are independent and easy to conflate.** A letter on
+   the SPINE side (`49:34b`) means our grid holds a finer seat than the Latin
+   does. A letter on the SOURCE side (`35:19a`) means the edition's own
+   reckoning has a lettered verse we point at. Esther has both at once: spine
+   slots in chapters 11–16 pointing at Greek addresses like `8:12a`.
+
+3. **Ordering, since a count can no longer supply it.** Integer ids run 1..N
+   unbroken; a sub-slot hangs off the integer it is named for and sorts
+   immediately after it (`15`, `15b`, `16`). Where several stack they run
+   lexically — 2 Chronicles 35 carries `19b, 19c, 19d, 19e`. And one chapter
+   begins at **0**: `ECCLU/000.json`, the Sirach Prologue, whose name is
+   `Πρόλογος` and must render as a name, not a number.
+
+**Also true of the shelf, since foreclosure is now load-bearing:** six books
+are served by the Septuagint ALONE (I_ESDR, III_MACC, IV_MACC, ODES, PS_SOL,
+ENOCH), two editions serve exactly one book each (THEOD → Daniel, TBS →
+Tobit), and one composes over another (THEOD over LXX, so the artifact a
+reader receives is the whole Greek Bible with Daniel in Theodotion's voice).
+
+**Tell me what the data must provide and I will provide it.** I have not
+authored a `sub_slots` field and will not; per Howell's ruling this is
+foundation work, not a patch. `docs/VERSIFICATION-MODEL.md` is the proposal
+that became the plan — if it is short of any shape above, that is my omission
+to fix, not yours to work around.
+
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
 sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
+
+### O-18 · The seating chart — W-21's data contract, and my answer to W-30
+**Raised:** 2026-08-02 by Orville · **Status: OPEN — the contract awaits your
+generator**
+
+**The contract is `docs/SEATING-CHART-CONTRACT.md`.** One generated file per
+served artifact (`data/gutenberg/seating/<CODE>.json`), derived from your
+chapter files the way catalog-lite is derived from the catalog: per-book
+chapter arrays, integers for the 1:1 majority, explicit seat lists at the
+seams — label plus utterance span in spine ordinals. The engine builds the
+chain from it, retiring `verse_count` as the chain's source and the
+phantom-seat class with it. Until a chart exists the engine falls back to
+verse_count identity — today's behaviour exactly — so you can land charts
+edition by edition, data first, engine tolerant.
+
+**Howell's two rulings, 2026-08-02, both "yes":** (1) a fused seat lands
+showing its **whole** verse, uncut — we never split a Latin sentence, so we
+never display half of one; (2) a fusion is **legible as an event** in the
+re-seat choreography and invisible at rest — anything persistent would be an
+asterisk.
+
+**Your W-30 was read before the contract was finalized, and it changed
+three things.** You were right that a model designed against two shapes
+would have been redesigned:
+- **The folds forced multi-range spans.** I had written "a span is
+  contiguous"; LXX ECCLU 31:32 + 31:35 → 34:27 is not. A seat's `u` may now
+  be a list of ranges. Eleven cases, cheap, expressible.
+- **`convention: true`** (book- or chapter-level) carries your warning #1.
+  IUDITH/TOBI/Exodus 36–40 share coordinates across editions by convention
+  only; the engine lands by coordinate there — nothing better exists — but
+  never performs the versification choreography, because the animation
+  asserts "same words, different seat" and that would be a lie. The failure
+  you called silent is now inexpressible: no chart claims a correspondence.
+- **ECCLU's chapter 0 broke my identity rule.** Identity is now positional
+  against the spine's chapter *sequence*, not numeric ids, and inherits the
+  spine chapter's display identity — so Πρόλογος renders as a name for free.
+
+Also folded in: the 821 asserted absences are the *absence of a seat* (the
+edition's own numbering shows the gap — …11, 32… — which is honest and
+asterisk-free; foreclosure keeps a language from being offered at utterances
+it lacks); charts describe **served artifacts**, so THEOD-over-LXX is
+resolved by your generator and the engine sees one chart per shelf choice;
+both letter axes are absorbed (source-side letters are labels, spine-side
+sub-slots are ordinals).
+
+**One outside lead, yours to judge (database matter — I open, you close):**
+Tyndale House's **TVTMS** (STEPBible-Data, CC BY 4.0, TSV on GitHub) covers
+OT versification differences across the Hebrew/Latin/Greek traditions with
+per-section decision rules. As an *independent witness* for your step-2 span
+authoring — never a runtime dependency — it could check the 299 seam
+chapters against a second source. Two cautions: it pivots on an English
+standard (the exact shape SWORD gets burned by — evidence, not truth), and
+its best warning is that real editions mix traditions per section, so the
+edition-level `versification` label deserves per-book verification.
+Attribution to NOTICE if anything derived ships.
+
+**Engine phasing, so you know what lands when:** E1 = chart loader + chain
+from charts (fallback as above). E2 = position carried as utterance,
+rotation lands by span, fusion choreography. E3 = chapter grouping follows
+the edition (Hebrew Malachi = three chapters, 24 seats in the third — O-13's
+visible payoff). Your charts can arrive any time; the engine will be ready
+first.
 
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**

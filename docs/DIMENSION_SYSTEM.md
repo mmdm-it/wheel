@@ -212,7 +212,7 @@ values. The multi-select selection gesture is **deferred to the calendar**
 - The z-recede + **blur** is the depth cue and the perf crux (D.5): the C.2
   SVG-Gaussian-blur villain (~150 ms/frame at dpr:3) returns at whole-ring
   scale, now with a *live* layer under it — the native-vs-wrapper decider
-  (`docs/WRAPPER_EVIDENCE.md`). Do not assume SVG blur is affordable.
+  (`docs/archive/WRAPPER_EVIDENCE.md`). Do not assume SVG blur is affordable.
 - **Color is undecided.** The sketches' gray/yellow secondary is borrowed
   from the catalog, not a choice; within a volume the primary and secondary
   may even share colors. An E-era decision.

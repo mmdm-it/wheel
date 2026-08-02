@@ -1,6 +1,17 @@
-# Architecture V2 Specification (v3 baseline)
+# Architecture — the wheel v2 baseline (HISTORICAL)
 
-> v3 note: This document is copied verbatim from wheel v2 and serves as the authoritative baseline for v3. Until a v3-specific revision is made, all constitutional constants, layer boundaries, and contracts here remain in force. Add any v3 deltas explicitly near the relevant sections rather than silently diverging.
+> **⚠ THIS DOCUMENT IS NOT IN FORCE.** It is wheel v2's specification, copied
+> verbatim, and it served as v3's starting baseline. The current architecture
+> is [`ARCHITECTURE.md`](ARCHITECTURE.md); where the two disagree, that one is
+> right and this one is a record of where we started.
+>
+> Renamed from `ARCHITECTURE_V3.md` on 2026-08-02 during the document audit.
+> Its previous header claimed that its constants, layer boundaries and
+> contracts "remain in force" — which had stopped being true and was the most
+> dangerous sentence in the documentation, because a stale document that
+> announces its own authority will be believed. Kept because the constitutional
+> constants and the geometry derivations behind them are recorded nowhere else,
+> and because §11 is still cited for the migration-animation detail.
 
 > **Current state (v3.7.28)**: Child Pyramid renders nodes in the CPUA L-shaped region using fan-line/spiral intersection placement via `computeChildPyramidGeometry`, with adaptive parameters from `CHILD_PARAM_TABLE` (keyed by child count) and sort-number-based rotation offsets. Magnifier-to-node connector lines are drawn; fan sweep and spiral are internal geometry only. The triangular arc-bound pyramid described below is historical. Keep this doc as baseline reference only and add explicit v3 deltas when needed.
 

@@ -123,7 +123,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     g.appendChild(label);
   });
 
-  // THE LODESTAR (docs/DESIGN_CLARIFICATIONS.md): the magnifier is a FIXED point
+  // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is a FIXED point
   // at magA — the reference everything rotates around. It never moves. WHILE
   // ROTATING it is an EMPTY hollow lens the nodes stream through (like the
   // primary's); SETTLED it fills with the item nearest the lens (magIndex),

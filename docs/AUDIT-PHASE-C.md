@@ -1,7 +1,7 @@
 # Phase C Audit — Feel, Performance & Elegance
 
 Second edition of the end-of-phase ritual (opened 2026-07-20; method
-established in `AUDIT-PHASE-B.md`): recorded performance baselines + two
+established in `archive/AUDIT-PHASE-B.md`): recorded performance baselines + two
 fresh-context adversarial reviews (code, docs) instructed to refute, not
 confirm. Findings triaged below; fixed items marked; unfixed items carry a
 phase tag for scheduling.
