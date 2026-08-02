@@ -209,3 +209,70 @@ describe('seating chart (E1 of W-21)', () => {
     assert.deepEqual(items.filter(i => i.chapterKey === 'ALPH:1').map(i => i.name), ['2']);
   });
 });
+
+// ——— E1 wiring: the chain builder itself now eats the chart ———
+import { buildBibleVerseChain as chainWithChart } from '../src/navigation/cousin-builder.js';
+import { ensureSeatingChart, getSeatingChart } from '../src/adapters/bible-adapter.js';
+import { existsSync } from 'node:fs';
+
+describe('verse chain from the chart (E1 wiring)', () => {
+  it('chart membership governs the chain: absences out, welds in, gaps intact', () => {
+    const manifest = makeManifest();
+    const chart = { edition: 'X', books: { ALPH: [
+      { s: [
+        { l: '1', u: ['1', 1, 1] },
+        { l: '2', u: ['1', 2, 3] },   // weld
+        { l: '5', u: ['1', 5, 5] }    // 4 asserted absent — no seat
+      ] },
+      3
+    ] } };
+    const { items } = chainWithChart(manifest, { chart });
+    const seats = items.filter(Boolean).filter(i => i.chapterKey === 'ALPH:1');
+    assert.deepEqual(seats.map(i => i.name), ['1', '2', '5']);
+    // The chapter crossing is still a cousin gap (2 empty links).
+    const lastCh1 = items.findIndex(i => i && i.chapterKey === 'ALPH:1' && i.name === '5');
+    assert.equal(items[lastCh1 + 1], null);
+    assert.equal(items[lastCh1 + 2], null);
+    assert.ok(items[lastCh1 + 3]?.chapterKey === 'ALPH:2');
+    // BETH is not in the chart — not in the chain.
+    assert.ok(items.filter(Boolean).every(i => i.bookKey !== 'BETH'));
+  });
+
+  it('no chart = identity fallback, byte-identical to the legacy chain', () => {
+    const { items } = chainWithChart(fixtureManifest, {});
+    const viaIdentity = expandChart(fixtureRoot, identityChartFromManifest(fixtureRoot));
+    assert.equal(items.filter(Boolean).length, viaIdentity.length);
+  });
+
+  it('a malformed chart falls back to identity instead of an empty ring', () => {
+    const { items } = chainWithChart(fixtureManifest, { chart: { books: {} } });
+    assert.ok(items.filter(Boolean).length > 0);
+  });
+
+  it('initialVerseId still locates the boot seat under a chart', () => {
+    const manifest = makeManifest();
+    const chart = { edition: 'X', books: { ALPH: [5, 3], BETH: [2, 3] } };
+    const { items, selectedIndex } = chainWithChart(manifest, { initialVerseId: 'ALPH_2_2', chart });
+    assert.equal(items[selectedIndex]?.id, 'ALPH_2_2');
+  });
+});
+
+describe('seating-chart loader', () => {
+  it('no edition, no chart; unknown edition caches the miss as null', async () => {
+    assert.equal(await ensureSeatingChart(null), null);
+    assert.equal(await ensureSeatingChart('NOT_AN_EDITION'), null);
+    assert.equal(getSeatingChart('NOT_AN_EDITION'), null);
+  });
+
+  // The real charts live with the corpus (cargo, W-10) — exercised on
+  // benches that hold a checkout, skipped where there is none (CI).
+  const chartOnDisk = existsSync(new URL('../data/gutenberg/seating/LXX.json', import.meta.url));
+  it('the real LXX chart loads, matches its edition, and expands', { skip: chartOnDisk ? false : 'corpus not present (W-10)' }, async () => {
+    const chart = await ensureSeatingChart('LXX');
+    assert.equal(chart?.edition, 'LXX');
+    assert.equal(getSeatingChart('LXX'), chart);
+    const realManifest = JSON.parse(readFileSync(new URL('../data/gutenberg/manifest.json', import.meta.url), 'utf-8'));
+    const items = expandChart(realManifest.Gutenberg_Bible, chart);
+    assert.ok(items.length > 20000, `LXX expanded to ${items.length} seats`);
+  });
+});

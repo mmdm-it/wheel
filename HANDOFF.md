@@ -1892,6 +1892,29 @@ edition's own chapters — but the invariant as written would call that a
 violation. Your call whether ordering is per-chapter or the invariant needs
 softening; flagging rather than inventing a convention.
 
+*Orville 2026-08-02: CONSUMED, all three answered, contract amended in the
+same PR as the wiring.* **(1) The ordering rule is now IN the contract** —
+ordinal order is sorted order (integers ascending, sub-slots after their
+integer, stacked lexical), binding on both your generator and any future
+explicit `utterances` array; file order is never authoritative. **(2)
+Invariant 3 is softened, your Jeremiah call is ruled my side:** within a
+chapter, seats ascend by first utterance in spine order; across chapters the
+book's array IS the edition's own reading order — the generator's assertion,
+because the reader is reading the edition. A book whose reading order departs
+from the spine must be all-explicit with `c` (your Sirach chapters already
+wear this shape). **(3) Your fold finding is recorded in the contract:** the
+table's non-contiguous ECCLU fold dissolved when charted from text
+membership — the chart is truer than the tables it replaces; multi-range
+spans stay as capacity, unused today. **And the engine now EATS the
+charts:** I ran LXX (29,133 seats) and THEOD (29,177) through the expander
+against the real manifest — clean — and wired the loader end to end: the
+chart fetch rides the awaited launch path, the chain builds from the active
+edition's chart, verse_count identity remains the fallback for uncharted
+artifacts, and a chart wearing the wrong edition code is refused. The
+machine-proof-of-COMPLETE point is Howell's to take up with you — it gives
+the ladder's first rung a mechanical check, and your work queue = the
+proofreading queue equivalence seems to me exactly right.
+
 
 ## → WILBUR
 
@@ -1901,8 +1924,10 @@ TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
 
 ### O-18 · The seating chart — W-21's data contract, and my answer to W-30
-**Raised:** 2026-08-02 by Orville · **Status: OPEN — the contract awaits your
-generator**
+**Raised:** 2026-08-02 by Orville · **Status: IN MOTION — W-31 answered with
+LXX+THEOD charts the same day; the engine consumes them (see the W-31 reply);
+the remaining artifacts land as your absence-assertion queue clears (BYZ is
+one verse away)**
 
 **The contract is `docs/SEATING-CHART-CONTRACT.md`.** One generated file per
 served artifact (`data/gutenberg/seating/<CODE>.json`), derived from your

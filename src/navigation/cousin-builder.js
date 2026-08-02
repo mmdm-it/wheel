@@ -1,4 +1,5 @@
 import { weaveCousinChain, toRomanNumeral } from '../adapters/volume-helpers.js';
+import { expandChart, identityChartFromManifest } from './seating-chart.js';
 
 const GAP = null;
 
@@ -37,52 +38,24 @@ function findBibleBook(manifest, bookId) {
  * 2 / 4 / 6 empty links, the same ranks the timeline uses for month,
  * year and century.
  *
- * Built from verse_count alone (scripts/add-verse-counts.mjs), so the
- * whole ~31k-link skeleton is synthesized without fetching a single
- * chapter. Verse TEXT is not here and is not wanted here: it arrives per
- * chapter, on demand, and the detail sector reads it from the cache.
+ * Built without fetching a single chapter. Verse TEXT is not here and is
+ * not wanted here: it arrives per chapter, on demand, and the detail
+ * sector reads it from the cache.
+ *
+ * SINCE W-21 the chain's source is the SEATING CHART
+ * (docs/SEATING-CHART-CONTRACT.md): membership and labels are the active
+ * artifact's own, not the spine's. Pass the artifact's chart and the chain
+ * holds exactly its seats — welds, regroupings, absences and all. With no
+ * chart (none generated yet, or fetch missed), the identity chart derived
+ * from verse_count reproduces the old behaviour EXACTLY (proven by test) —
+ * phantom seats included, by design: data first, engine tolerant.
  */
-export function buildBibleVerseChain(manifest, { initialVerseId = null } = {}) {
-  const bible = manifest?.Gutenberg_Bible;
-  if (!bible?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
+export function buildBibleVerseChain(manifest, { initialVerseId = null, chart = null } = {}) {
+  const root = manifest?.Gutenberg_Bible;
+  if (!root?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
 
-  const sorted = [];
-  Object.entries(bible.testaments).sort(bySortNumber).forEach(([testamentId, testament]) => {
-    Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionId, section]) => {
-      Object.entries(section?.books || {}).sort(bySortNumber).forEach(([bookId, book]) => {
-        const bookKey = book?.book_key || bookId;
-        Object.entries(book?.chapters || {}).sort(bySortNumber).forEach(([chapterKey, chapterMeta]) => {
-          const count = Number.isFinite(chapterMeta?.verse_count) ? chapterMeta.verse_count : 0;
-          if (count <= 0) return;
-          const chapterLabel = chapterMeta?.name ?? chapterKey;
-          const chapterId = chapterMeta?.id || `${bookId}:${chapterKey}`;
-          const externalFile = chapterMeta?._external_file || chapterMeta?.external_file || '';
-          for (let verseKey = 1; verseKey <= count; verseKey += 1) {
-            sorted.push({
-              // Ids and names match what a loaded chapter produces, so a
-              // verse tapped in the pyramid finds its seat in this chain.
-              id: `${bookKey}_${chapterLabel}_${verseKey}`,
-              name: String(verseKey), // Arabic, bare — the header holds the rest
-              level: 'verse',
-              parentId: chapterId,
-              chapterKey: `${bookId}:${chapterKey}`,
-              bookKey: bookId,
-              testamentKey: testamentId,
-              meta: {
-                bookId: bookKey,
-                bookEntryId: bookId,
-                chapterId,
-                sectionId,
-                testamentId,
-                verseKey: String(verseKey),
-                externalFile
-              }
-            });
-          }
-        });
-      });
-    });
-  });
+  let sorted = chart ? expandChart(root, chart) : null;
+  if (!sorted) sorted = expandChart(root, identityChartFromManifest(root)) || [];
 
   const items = weaveCousinChain(sorted, [
     item => item.chapterKey,

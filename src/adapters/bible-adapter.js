@@ -58,6 +58,44 @@ export async function loadManifest() {
   return JSON.parse(raw);
 }
 
+// THE SEATING CHART (E1 of W-21, docs/SEATING-CHART-CONTRACT.md): the
+// generated per-artifact truth about which seats exist. Fetched once per
+// edition and cached — including the MISS (an artifact whose chart has not
+// been generated yet caches null and the chain falls back to verse_count
+// identity; W-31: LXX and THEOD chart today, the rest land as Wilbur's
+// generator clears them). buildChain is awaited at launch, so the chart is
+// on hand — or definitively absent — before the first chain is built.
+const seatingChartCache = new Map();
+
+export async function ensureSeatingChart(code) {
+  if (!code) return null;
+  if (seatingChartCache.has(code)) return seatingChartCache.get(code);
+  let chart = null;
+  try {
+    if (isBrowser) {
+      chart = await fetchJson(`./data/gutenberg/seating/${code}.json`);
+    } else {
+      await _ensureNode();
+      const path = await import('path');
+      const { fileURLToPath } = await import('url');
+      const dir = path.dirname(fileURLToPath(import.meta.url));
+      chart = JSON.parse(await nodeReadFile(path.resolve(dir, `../../data/gutenberg/seating/${code}.json`), 'utf-8'));
+    }
+  } catch {
+    chart = null;
+  }
+  // A chart wearing the wrong edition is a deployment accident, not data —
+  // refuse it and fall back rather than seat a reader by another's chart.
+  if (chart && chart.edition !== code) chart = null;
+  seatingChartCache.set(code, chart);
+  return chart;
+}
+
+// Synchronous read of an already-fetched chart, for chain builds that happen
+// mid-session (descent to the verse ring). Boot's awaited ensureSeatingChart
+// has normally populated this; a miss just means identity fallback.
+export const getSeatingChart = code => (code && seatingChartCache.get(code)) || null;
+
 export function validate(raw) {
   const validator = getValidator();
   if (!validator) return { ok: true, errors: [] };
@@ -427,12 +465,20 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     return { items: chapterChainItems, selectedIndex };
   };
 
-  // The ~34k-link verse chain is the same on every entry; build it once
-  // and only re-locate the verse entered at.
+  // The verse chain is the same on every entry FOR A GIVEN ARTIFACT; build
+  // it once per chart and only re-locate the verse entered at. Since W-21
+  // the chain's membership is the active edition's own (its seating chart),
+  // so the cache is keyed by the chart it was built with — an edition
+  // switched mid-session rebuilds on the next descent instead of serving
+  // another artifact's seats. The chart read is synchronous: boot's awaited
+  // fetch populated the cache, and a miss means identity fallback.
   let verseChainItems = null;
+  let verseChainChart;
   const verseChain = initialVerseId => {
-    if (!verseChainItems) {
-      verseChainItems = buildBibleVerseChain(manifest, {}).items;
+    const chart = getSeatingChart(options?.translation || null);
+    if (!verseChainItems || verseChainChart !== chart) {
+      verseChainItems = buildBibleVerseChain(manifest, { chart }).items;
+      verseChainChart = chart;
     }
     let selectedIndex = 0;
     if (initialVerseId) {
