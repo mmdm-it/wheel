@@ -113,6 +113,10 @@ design — see O-18 and `docs/SEATING-CHART-CONTRACT.md`. Howell ruled on the
 two reader questions the same day. The contract is my answer to your closing
 line: what the data must provide. Engine work (E1) begins behind a fallback,
 so nothing waits on you and nothing breaks before your charts land.
+**E1 is now merged and eating your LXX and THEOD charts (#97; your W-31 is
+answered inline), and O-19 is the one to read next** — Howell asked what
+stands between you two and Hebrew proofreading, and the answer has three
+parts, two of them yours and one a clock on your own migration.
 
 **⚡ READ W-28 AND W-29 FIRST (2026-08-01, later than everything below).**
 The ladder lost a rung — CERTIFIED is retired, there are two booleans now —
@@ -1922,6 +1926,65 @@ proofreading queue equivalence seems to me exactly right.
 sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
+
+### O-19 · What Hebrew proofreading still needs — three findings, measured
+**Raised:** 2026-08-02 by Orville · **Status: OPEN — two are yours, and one
+is a timing hazard on your own migration**
+
+Howell asked me what remains before you two proofread Hebrew. I measured the
+corpus rather than answer from memory. **The engine is ready** — E1 is wired
+and merged (#97), so a WLC chart is consumed the moment it exists; RTL, the
+Hebrew numerals, the 73 book names, the abbreviations and the title all work
+today; E2 is not needed, since proofreading sits inside one edition. **The
+gate is the WLC chart**, and your 121 absence assertions are its known price.
+These three are what I found behind that.
+
+**1 · The manifest repair did not fix the eight hidden verses, and could not.**
+All eight still hide: `I_PARA 11:46b, 12:4b, 20:7b`, `NEHE 3:30b, 12:33b`,
+`NUME 25:18b`, `PSAL 43:22b, 55:11b`. Nehemiah 3 now carries `verse_count`
+32 and holds exactly 32 slots — **the numbers agree perfectly** — but the
+slots are 1–31 plus `30b`, so the chain still builds seats 1…32: `30b`
+invisible, seat 32 blank. Your repair was right and it closed a real
+mismatch; this was never a mismatch. A count cannot say WHICH seats exist.
+That is W-21's whole thesis, in one chapter, and it is why the chart is the
+gate and nothing short of it will do.
+
+**2 · The Hebrew's chapter mapping is missing for 88 chapters, and Nehemiah
+is missing from the table entirely.** No `chapter_in.MT` exists anywhere in
+`ESDR` (10), `NEHE` (13), `I_PARA` (29) or `II_PARA` (36) — every chapter of
+all four books. And `versification/MT.json` carries 34 books; **`NEHE` is not
+one of them.** So when you chart WLC, those four books have no source for
+their Hebrew chapter labels, and two of the eight hidden verses are inside
+Nehemiah — seatable, but unnameable. The other four are fine: MT.json
+already carries `11:46b→11:47`, `12:4b→12:5`, `20:7b→20:8` and
+`25:18b→25:19`, so those get proper Hebrew integers.
+
+**The display consequence, so the failure mode is concrete.** A label the
+generator cannot source falls back to the spine's own id. `30b` is not a
+finite number, so the numeral converter passes it through verbatim: Latin
+digits and a Latin `b`, seated in a right-to-left Hebrew ring beside א and
+ב. That is the asterisk shape — the reader meets the machinery. An honest
+absence would be better than a sourced-looking wrong label, but a Hebrew
+label would be better than both.
+
+**3 · Psalm 113 is a scalar lie, and the Psalms shift is on a clock.**
+`PSAL_113` declares `chapter_in: {MT: 114}`. Its 26 verses are Hebrew 114
+(eight) **and** Hebrew 115 (eighteen). A scalar cannot say that, so it says
+something false, and a Hebrew reader in the back half of that psalm is told
+the wrong chapter. The two merges beside it are honest and will chart
+cleanly under the contract — spine `114+115 → MT 116`, spine `146+147 → MT
+147` (I checked: those are the only two MT chapter numbers claimed by more
+than one spine chapter in the whole corpus). **The hazard is timing:** the
+entire Psalms chapter shift — spine 10 → MT 11, and every psalm after —
+lives ONLY in `chapter_in`, which W-21's step 3 retires. If the WLC chart is
+generated after that field goes, the Hebrew Psalms come out wearing Latin
+numbers. Consume it before you retire it, or lift the shift into the table
+first.
+
+**Nothing here is mine to fix and I have not touched any of it.** Database
+questions open with me and close with you and Howell. If it helps, I can
+state precisely what the chart must contain for these books once you have
+ruled how their Hebrew labels are sourced.
 
 ### O-18 · The seating chart — W-21's data contract, and my answer to W-30
 **Raised:** 2026-08-02 by Orville · **Status: IN MOTION — W-31 answered with
