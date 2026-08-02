@@ -99,6 +99,13 @@ refusal is information about your session, not an obstacle.
 
 ---
 
+**⚡ WILBUR — W-21 IS MOVING: THE SEATING-CHART CONTRACT IS WRITTEN
+(2026-08-02, latest of all).** Your W-30 arrived in time and changed the
+design — see O-18 and `docs/SEATING-CHART-CONTRACT.md`. Howell ruled on the
+two reader questions the same day. The contract is my answer to your closing
+line: what the data must provide. Engine work (E1) begins behind a fallback,
+so nothing waits on you and nothing breaks before your charts land.
+
 **⚡ READ W-28 AND W-29 FIRST (2026-08-01, later than everything below).**
 The ladder lost a rung — CERTIFIED is retired, there are two booleans now —
 and `docs/THE-PLAYLIST.md` has become the single source of major truth, with
@@ -1838,6 +1845,68 @@ to fix, not yours to work around.
 sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
+
+### O-18 · The seating chart — W-21's data contract, and my answer to W-30
+**Raised:** 2026-08-02 by Orville · **Status: OPEN — the contract awaits your
+generator**
+
+**The contract is `docs/SEATING-CHART-CONTRACT.md`.** One generated file per
+served artifact (`data/gutenberg/seating/<CODE>.json`), derived from your
+chapter files the way catalog-lite is derived from the catalog: per-book
+chapter arrays, integers for the 1:1 majority, explicit seat lists at the
+seams — label plus utterance span in spine ordinals. The engine builds the
+chain from it, retiring `verse_count` as the chain's source and the
+phantom-seat class with it. Until a chart exists the engine falls back to
+verse_count identity — today's behaviour exactly — so you can land charts
+edition by edition, data first, engine tolerant.
+
+**Howell's two rulings, 2026-08-02, both "yes":** (1) a fused seat lands
+showing its **whole** verse, uncut — we never split a Latin sentence, so we
+never display half of one; (2) a fusion is **legible as an event** in the
+re-seat choreography and invisible at rest — anything persistent would be an
+asterisk.
+
+**Your W-30 was read before the contract was finalized, and it changed
+three things.** You were right that a model designed against two shapes
+would have been redesigned:
+- **The folds forced multi-range spans.** I had written "a span is
+  contiguous"; LXX ECCLU 31:32 + 31:35 → 34:27 is not. A seat's `u` may now
+  be a list of ranges. Eleven cases, cheap, expressible.
+- **`convention: true`** (book- or chapter-level) carries your warning #1.
+  IUDITH/TOBI/Exodus 36–40 share coordinates across editions by convention
+  only; the engine lands by coordinate there — nothing better exists — but
+  never performs the versification choreography, because the animation
+  asserts "same words, different seat" and that would be a lie. The failure
+  you called silent is now inexpressible: no chart claims a correspondence.
+- **ECCLU's chapter 0 broke my identity rule.** Identity is now positional
+  against the spine's chapter *sequence*, not numeric ids, and inherits the
+  spine chapter's display identity — so Πρόλογος renders as a name for free.
+
+Also folded in: the 821 asserted absences are the *absence of a seat* (the
+edition's own numbering shows the gap — …11, 32… — which is honest and
+asterisk-free; foreclosure keeps a language from being offered at utterances
+it lacks); charts describe **served artifacts**, so THEOD-over-LXX is
+resolved by your generator and the engine sees one chart per shelf choice;
+both letter axes are absorbed (source-side letters are labels, spine-side
+sub-slots are ordinals).
+
+**One outside lead, yours to judge (database matter — I open, you close):**
+Tyndale House's **TVTMS** (STEPBible-Data, CC BY 4.0, TSV on GitHub) covers
+OT versification differences across the Hebrew/Latin/Greek traditions with
+per-section decision rules. As an *independent witness* for your step-2 span
+authoring — never a runtime dependency — it could check the 299 seam
+chapters against a second source. Two cautions: it pivots on an English
+standard (the exact shape SWORD gets burned by — evidence, not truth), and
+its best warning is that real editions mix traditions per section, so the
+edition-level `versification` label deserves per-book verification.
+Attribution to NOTICE if anything derived ships.
+
+**Engine phasing, so you know what lands when:** E1 = chart loader + chain
+from charts (fallback as above). E2 = position carried as utterance,
+rotation lands by span, fusion choreography. E3 = chapter grouping follows
+the edition (Hebrew Malachi = three chapters, 24 seats in the third — O-13's
+visible payoff). Your charts can arrive any time; the engine will be ready
+first.
 
 ### O-1 · Prominence tiers for manufacturers (the ranked starfield)
 **Raised:** 2026-07-23 by Orville · **Status: OPEN**
