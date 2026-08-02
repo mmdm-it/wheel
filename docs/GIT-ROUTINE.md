@@ -37,6 +37,12 @@ doctrine that happens to run through git.
    a branch. A PR is a message TO Howell; the merge is his reply. Server
    sync happens only on his explicit word, and it is his word per-instance —
    approval of one sync approves nothing later.
+8. **Assume the merge happened** (Howell, 2026-08-02: *"I usually merge and
+   close your PRs as soon as you give me the link. It's unusual if I don't,
+   so you can generally assume that I have."*). So do not stall waiting for
+   confirmation, and do not ask whether to continue — carry on with the next
+   piece of work. Still SYNC before building on it (step 1): assuming the
+   merge is not the same as knowing the tip, and a `git pull` costs nothing.
 
 ## The rules with teeth
 
