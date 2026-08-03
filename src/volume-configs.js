@@ -114,7 +114,7 @@ const volumeConfigs = {
     // the one they arrived under. The chain in front of them is not rebuilt
     // (that is E2's re-seat, which carries the reader's utterance across);
     // this only makes sure the chart is in hand when the ring is next built.
-    onEditionSettle: edition => { ensureSeatingChart(edition || null); },
+    onEditionSettle: edition => ensureSeatingChart(edition || null),
     createHandlers: makeAdapterHandlers('bible')
   },
   catalog: {

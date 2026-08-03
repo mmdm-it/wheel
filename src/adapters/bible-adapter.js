@@ -2,6 +2,7 @@ import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, toTraditionNumeral, toDisplayCase } from './volume-helpers.js';
 import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
+import { seatIndexForUtterance } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
 
@@ -499,6 +500,64 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     return { items: verseChainItems, selectedIndex };
   };
 
+  // THE READER IS CARRIED BY THEIR UTTERANCE, NOT BY A NUMBER (E2 of W-21).
+  //
+  // An edition change is not a jump: the reader is standing on a particular
+  // piece of scripture, and that piece exists in the new artifact too — it is
+  // only SEATED differently. So the position that travels is the spine
+  // utterance, and the landing seat is whichever seat of the new artifact
+  // spans it. Spine→seat is single-valued (the folds are many-to-one, never
+  // one-to-many), so the landing is deterministic.
+  //
+  // THE CHOREOGRAPHY (Howell's rulings, 2026-08-02). A fusion, or any
+  // re-seating, must be "legible as an event and invisible at rest" — and a
+  // persistent badge would be an asterisk. So the event IS the movement: the
+  // ring is laid down where the reader's own NUMBER falls in the new
+  // artifact, then glides to where their WORDS actually are. Where the two
+  // traditions agree the seats coincide and nothing moves, which is the
+  // invisible-at-rest half. Where they disagree — Malachi, Sirach, a Latin
+  // weld — the wheel turns, and the turn is the explanation.
+  //
+  // A landing seat lands WHOLE (his other ruling): we never split a verse, so
+  // we never show half of one. And under `convention: true` no choreography
+  // is played at all — those books share coordinates by convention only, and
+  // the animation asserts "same words, different seat", which would be a lie.
+  const reseatOnEditionChange = ({ selected, app }) => {
+    if (!selected || selected.level !== 'verse' || !app?.setPrimaryItems) return false;
+    const span = selected.meta?.span;
+    if (!Array.isArray(span) || !span.length) return false;
+    const [spineKey, firstOrdinal] = span[0];
+    const bookId = selected.bookKey;
+
+    const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
+    const rebuilt = buildBibleVerseChain(manifest, { chart }).items;
+    if (!rebuilt.length) return false;
+    const target = seatIndexForUtterance(rebuilt, bookId, spineKey, firstOrdinal);
+    if (target < 0) return false;          // the new artifact lacks it: stay put
+
+    // Adopt the rebuilt chain, and drop the chapters cache so the ring above
+    // is rebuilt from these same seats on the next ascent (E3).
+    verseChainItems = rebuilt;
+    verseChainChart = chart;
+    chapterChainItems = null;
+
+    // Where the reader's own NUMBER falls in the new artifact — the seat they
+    // would have been given if the two traditions counted alike.
+    const byNumber = rebuilt.findIndex(it => it && it.bookKey === bookId
+      && it.name === selected.name
+      && it.meta?.chapterLabel === selected.meta?.chapterLabel);
+    const staged = byNumber >= 0 && byNumber !== target;
+    const noPerformance = Boolean(selected.meta?.convention || rebuilt[target]?.meta?.convention);
+
+    if (staged && !noPerformance && typeof app.glideToItem === 'function') {
+      app.setPrimaryItems(rebuilt, byNumber, true);
+      app.glideToItem(rebuilt[target].id, 900);
+      return true;
+    }
+    app.setPrimaryItems(rebuilt, target, true);
+    return true;
+  };
+
   const parentHandler = ({ selected, app }) => {
     if (bibleMode === 'verse') {
       // The verse ring spans the whole volume, so the reader may be far
@@ -726,6 +785,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     childrenHandler,
     getParentLabel,
     getParentLabelSuffix,
+    reseatOnEditionChange,
     onBoot,
     // THE FRONT-DOOR GLOBE (Howell 2026-07-27): the dimension globe shows at
     // the volume's threshold — the root item magnified, testaments in the

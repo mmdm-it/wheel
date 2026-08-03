@@ -2343,7 +2343,18 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // The committed edition travels with the options, and the volume may warm
     // whatever it needs to seat the reader by it next time a ring is built.
     options.activeEdition = translation || options.activeEdition;
-    config.onEditionSettle?.(translation || null);
+    // THE READER IS CARRIED ACROSS, NOT LEFT BEHIND. Once whatever the volume
+    // needs has landed, give it the chance to RE-SEAT: the reader is standing
+    // on a particular thing, and a volume whose editions divide their contents
+    // differently must put them where that thing actually sits — which is not
+    // the same index, and sometimes not the same number. A volume that returns
+    // false (or declares no handler) keeps the reader exactly where they are,
+    // which is the right answer whenever the editions agree.
+    Promise.resolve(config.onEditionSettle?.(translation || null))
+      .then(() => handlerSet.reseatOnEditionChange?.({
+        selected: app?.nav?.getCurrent?.(), app
+      }))
+      .catch(() => {});
     updateIncompleteMark();
   });
   // Re-wrap the open detail the moment EB Garamond truly lands (Howell

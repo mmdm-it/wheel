@@ -366,3 +366,69 @@ describe('the chapters ring holds the edition\'s own chapters (E3)', () => {
       .map(s => s.meta.chapterId).filter((v, i, a) => a.indexOf(v) === i));
   });
 });
+
+// ——— E2: the reader is carried by their utterance ———
+describe('an edition change carries the reader by their utterance (E2)', () => {
+  // Two artifacts over one spine. X seats the spine 1:1. Y welds spine
+  // utterances 2+3 into a single verse of its own, so everything after
+  // slides by one — the Genesis 50 shape.
+  const CHART_X = { edition: 'X', books: { ALPH: [5, 3] } };
+  const CHART_Y = { edition: 'Y', books: { ALPH: [
+    { s: [
+      { l: '1', u: ['1', 1, 1] },
+      { l: '2', u: ['1', 2, 3] },
+      { l: '3', u: ['1', 4, 4] },
+      { l: '4', u: ['1', 5, 5] }
+    ] },
+    3
+  ] } };
+
+  const seatsOf = chart => expandChart(makeManifest().Gutenberg_Bible, chart);
+
+  it('the SAME WORDS are found under a different number', () => {
+    const x = seatsOf(CHART_X);
+    const y = seatsOf(CHART_Y);
+    // Reading X's verse 4 — spine utterance 4.
+    const reading = x.find(i => i.name === '4' && i.chapterKey === 'ALPH:1');
+    assert.deepEqual(reading.meta.span, [['1', 4, 4]]);
+    const [spineKey, ordinal] = reading.meta.span[0];
+    const landed = y[seatIndexForUtterance(y, 'ALPH', spineKey, ordinal)];
+    assert.equal(landed.name, '3', "Y calls those words its verse 3, and that is where the reader goes");
+    assert.notEqual(landed.name, reading.name, 'the number did NOT travel — the words did');
+  });
+
+  it('a fused seat receives BOTH utterances, whole', () => {
+    const y = seatsOf(CHART_Y);
+    const a = seatIndexForUtterance(y, 'ALPH', '1', 2);
+    const b = seatIndexForUtterance(y, 'ALPH', '1', 3);
+    assert.equal(a, b, 'two utterances, one seat');
+    assert.deepEqual(y[a].meta.span, [['1', 2, 3]]);
+    assert.equal(y[a].name, '2', 'and it is shown whole, never split');
+  });
+
+  it('where the editions agree the seat is identical — nothing to perform', () => {
+    const x = seatsOf(CHART_X);
+    const y = seatsOf(CHART_Y);
+    const reading = x.find(i => i.name === '1' && i.chapterKey === 'ALPH:1');
+    const landed = y[seatIndexForUtterance(y, 'ALPH', ...reading.meta.span[0].slice(0, 2))];
+    assert.equal(landed.name, reading.name, 'same number, same words: invisible at rest');
+  });
+
+  it('an utterance the new artifact lacks has no seat, and the reader stays put', () => {
+    // Y2 asserts spine utterance 3 absent: it simply has no seat for it.
+    const y2 = seatsOf({ edition: 'Y2', books: { ALPH: [
+      { s: [{ l: '1', u: ['1', 1, 1] }, { l: '2', u: ['1', 2, 2] }, { l: '4', u: ['1', 4, 4] }] }, 3
+    ] } });
+    assert.equal(seatIndexForUtterance(y2, 'ALPH', '1', 3), -1,
+      'no seat means no landing — the caller must leave the reader where they are');
+  });
+
+  it('the landing is deterministic: spine to seat is single-valued', () => {
+    const y = seatsOf(CHART_Y);
+    for (let ordinal = 1; ordinal <= 5; ordinal += 1) {
+      const hits = y.filter(i => i.bookKey === 'ALPH'
+        && i.meta.span.some(([c, f, l]) => c === '1' && ordinal >= f && ordinal <= l));
+      assert.ok(hits.length <= 1, `utterance ${ordinal} is claimed by at most one seat`);
+    }
+  });
+});
