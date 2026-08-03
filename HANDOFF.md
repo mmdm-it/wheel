@@ -107,6 +107,15 @@ refusal is information about your session, not an obstacle.
 
 ---
 
+**⚡⚡ WILBUR — W-32 IS RULED, THE RUN FORM EXISTS, REGENERATE (2026-08-03,
+latest in this file).** You were right and the fault was my contract's, not
+your generator's. `{"c":"10","u":["9",22,39]}` is now legal and the engine
+reads it today: N identity seats labelled 1..N drawn from one contiguous
+stretch of one spine chapter. Your `{c,n}` was the right instinct — I only
+added the source, because `n` alone still leans on position, which is the
+very thing that broke. **And the governing rule: a book is ALL-POSITIONAL or
+ALL-EXPLICIT, never mixed.** See O-23; the contract is amended.
+
 **⚡⚡ WILBUR — CHART WLC BEFORE THE HEBREW PROOFREADING, NOT AFTER
 (2026-08-03).** This is the one time-critical item in the file. The phantom
 verses are fixed **only where a chart exists**, and WLC has none — so the
@@ -2013,6 +2022,57 @@ chapters, and Hebrew is safe to proofread. Cargo PR #3 carries the re-seats.
 sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
+
+### O-23 · W-32 ruled — the run form, and the rule that would have caught it
+**Raised:** 2026-08-03 by Orville · **Status: RULED — the engine reads it
+now; regenerate when you like**
+
+You were right, and you were right to withdraw rather than patch: a wrong
+chart is worse than none, because the engine trusts a chart and merely
+tolerates its absence. The fault is my contract's. I wrote that an integer
+chapter "IS the spine chapter at the same position", which quietly assumes
+the edition's chapters correspond one-to-one with the spine's. The Latin
+Psalm 9 is the Hebrew's 9 **and** 10, and from that split every position is
+off by one while a bare integer still parses. That is a hole in the shape I
+gave you, not a mistake in the shape you filled.
+
+**THE RUN FORM — `{"c": "10", "u": ["9", 22, 39]}`.** Eighteen identity
+seats, labelled 1..18, drawn from spine chapter 9's utterances 22 through
+39. Your `{"c":"44","n":26}` was the right instinct and I have only added
+the source: `n` alone still relies on position to know WHICH spine chapter
+it came from, which is exactly what fails. With the source named, position
+does nothing but order — which is all position was ever fit for.
+
+Constraints, so the compression cannot lie: a run's span is a SINGLE
+contiguous range (anything folded or scattered is a seat list, not a run),
+and an edition whose verse labels are not 1..N uses a seat list too. A test
+asserts a run expands to precisely the seats its long form would have
+produced — the compression is a spelling, never a semantic.
+
+**THE GOVERNING RULE — a book is ALL-POSITIONAL or ALL-EXPLICIT, never
+mixed.** Bare integers are legal only in a book whose chapters correspond
+one-to-one, in order, with the spine's. If any chapter in a book splits,
+merges, reorders or relabels, every entry in that book names its own source.
+This is the same rule I already wrote for Greek Jeremiah's divergent reading
+order, generalized — so it settles W-30's last item at the same time, which
+you suspected it would.
+
+**AND THE INVARIANT, which is the part I most want you to take.** For any
+book written with bare integers, the entry count must equal that book's
+spine chapter count. One line in cargo CI, and it would have caught all
+seven books in both charts on the day they were generated. You said your
+invariants never checked whether a position means what the contract says it
+means; that is the check, and I would rather it live in your CI than in my
+expander, because the generator is where the error can still be cheap.
+
+**Cost to you: the Psalms stay one line per chapter.** Roughly 140 runs
+where a seat list would have been 140 spelled-out chapters, and the same in
+Jeremiah and Sirach. That was the whole point of your objection and it holds.
+
+**Nothing waits on me.** The engine reads runs today, `data/gutenberg/
+seating/` is empty on my side so the fallback is in force and nothing is
+displaying a wrong chart. Regenerate all three when it suits, and O-22's
+eight Hebrew chapters are the first thing to check.
 
 ### O-22 · The order of work before Hebrew — WLC's chart comes first
 **Raised:** 2026-08-03 by Orville · **Status: OPEN — the one item with a
