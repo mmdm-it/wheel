@@ -432,3 +432,72 @@ describe('an edition change carries the reader by their utterance (E2)', () => {
     }
   });
 });
+
+// ——— The sky under the ring is seated by the same chart ———
+describe('the child pyramid holds the same seats as the ring', () => {
+  const haveCorpus = existsSync(new URL('../data/gutenberg/seating/LXX.json', import.meta.url));
+  it('offers no verse the edition lacks, and every id it offers can be landed on', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    const { bibleAdapter } = await import('../src/adapters/bible-adapter.js');
+    await ensureSeatingChart('LXX');
+    const realManifest = JSON.parse(readFileSync(new URL('../data/gutenberg/manifest.json', import.meta.url), 'utf-8'));
+    const h = bibleAdapter.createHandlers({
+      manifest: realManifest, namesMap: { locale: 'greek' },
+      options: { activeEdition: 'LXX', level: 'verse' }
+    });
+    h.layoutBindings.setBibleMode('verse');
+    const { items: chapters } = h.layoutBindings.getBibleChapterChain(null);
+
+    // The Septuagint genuinely lacks 1 Samuel 17:12-31. The sky must not
+    // offer a star that the ring beside it refuses to seat.
+    const sam17 = chapters.find(c => c && c.bookKey === 'I_SAM' && c.name === '17');
+    const sky = h.layoutBindings.getBibleVerseItems(sam17);
+    const names = sky.map(v => v.name);
+    assert.ok(names.includes('11') && names.includes('32'));
+    assert.ok(!names.includes('13'), 'a verse this edition never had must not be in the sky');
+
+    // And every star lands: the bug was that a tap fell through to index 0,
+    // which is Genesis 1:1 — the reader thrown across the whole volume.
+    for (const star of sky) {
+      const { items, selectedIndex } = h.layoutBindings.getBibleVerseChain(star.id);
+      assert.equal(items[selectedIndex]?.id, star.id, `tapping ${star.id} must land on it`);
+    }
+  });
+
+  it('the Sirach Prologue lands too — its chapter is a NAME, not a number', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    const { bibleAdapter } = await import('../src/adapters/bible-adapter.js');
+    await ensureSeatingChart('LXX');
+    const realManifest = JSON.parse(readFileSync(new URL('../data/gutenberg/manifest.json', import.meta.url), 'utf-8'));
+    const h = bibleAdapter.createHandlers({
+      manifest: realManifest, namesMap: { locale: 'greek' },
+      options: { activeEdition: 'LXX', level: 'verse' }
+    });
+    h.layoutBindings.setBibleMode('verse');
+    const { items: chapters } = h.layoutBindings.getBibleChapterChain(null);
+    const prologue = chapters.find(c => c && c.bookKey === 'ECCLU' && !/^\d+$/.test(c.name));
+    assert.ok(prologue, 'Sirach opens on a named chapter');
+    const sky = h.layoutBindings.getBibleVerseItems(prologue);
+    assert.ok(sky.length > 0);
+    // The file keys these by sequence ("ECCLU_0_1"); the chart names the
+    // chapter, so ids built from the file could never be found in the chain.
+    for (const star of sky) {
+      const { items, selectedIndex } = h.layoutBindings.getBibleVerseChain(star.id);
+      assert.equal(items[selectedIndex]?.id, star.id);
+    }
+  });
+
+  it('a miss lands in the requested chapter, never at the start of the volume', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    const { bibleAdapter } = await import('../src/adapters/bible-adapter.js');
+    await ensureSeatingChart('LXX');
+    const realManifest = JSON.parse(readFileSync(new URL('../data/gutenberg/manifest.json', import.meta.url), 'utf-8'));
+    const h = bibleAdapter.createHandlers({
+      manifest: realManifest, namesMap: { locale: 'greek' }, options: { activeEdition: 'LXX', level: 'verse' }
+    });
+    h.layoutBindings.setBibleMode('verse');
+    // 17:13 does not exist in this edition. Landing must stay in 1 Samuel 17.
+    const { items, selectedIndex } = h.layoutBindings.getBibleVerseChain('I_SAM_17_13');
+    const landed = items[selectedIndex];
+    assert.ok(landed, 'something is selected');
+    assert.equal(landed.bookKey, 'I_SAM', 'not thrown to another book');
+    assert.equal(landed.meta.chapterLabel, '17', 'and not to another chapter');
+  });
+});

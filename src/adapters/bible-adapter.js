@@ -496,6 +496,17 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (initialVerseId) {
       const idx = verseChainItems.findIndex(item => item && item.id === initialVerseId);
       if (idx >= 0) selectedIndex = idx;
+      else {
+        // A MISS MUST NOT TELEPORT (Howell from the phone, 2026-08-02). An id
+        // this artifact does not seat used to fall through to index 0 — and
+        // index 0 is Genesis 1:1, so a tap in Sirach landed the reader at the
+        // start of the Bible with nothing to say it had gone wrong. Land in
+        // the requested CHAPTER instead: a near miss the reader can see and
+        // correct, rather than a silent journey across the whole volume.
+        const chapterPrefix = String(initialVerseId).replace(/_[^_]*$/, '_');
+        const near = verseChainItems.findIndex(item => item && item.id.startsWith(chapterPrefix));
+        if (near >= 0) selectedIndex = near;
+      }
     }
     return { items: verseChainItems, selectedIndex };
   };
@@ -556,6 +567,47 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     }
     app.setPrimaryItems(rebuilt, target, true);
     return true;
+  };
+
+  // THE PYRAMID IS SEATED BY THE CHART TOO (E3, second half — Howell from
+  // the phone, 2026-08-02). The sky under the ring was built straight from
+  // the chapter FILE: every slot the spine holds, for every edition at once,
+  // with ids keyed by the spine's chapter number. Two failures fell out of
+  // that, and they were the same failure.
+  //
+  // First, it offered verses the reader's edition does not have — Greek
+  // 1 Samuel 17:13 sat in the sky while the ring beside it honestly ran
+  // 11 → 32. Second, and worse, tapping ANY of those stars landed the reader
+  // in Genesis 1:1: the tapped id was not in the chart-built chain, the
+  // lookup returned -1, and -1 became index 0. The Sirach Prologue failed
+  // even for its REAL verses, because the file keys them by sequence
+  // ("ECCLU_0_1") while the chart names the chapter Πρόλογος.
+  //
+  // The cure is the same one E3 used a level up: the sky is drawn from the
+  // very seats the ring holds, so the two cannot disagree and a tap always
+  // finds its verse. Without a chart it falls back to the file, unchanged.
+  const verseItemsForChapter = chapterItem => {
+    const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
+    if (!chart || !chapterItem) return getBibleVerseItems(chapterItem);
+    const chain = verseChainItems || buildBibleVerseChain(manifest, { chart }).items;
+    const wanted = chapterItem.id;
+    const seats = [];
+    for (const it of chain) {
+      if (!it || it.level !== 'verse') continue;
+      if (it.meta?.chapterId !== wanted && it.chapterKey !== wanted) continue;
+      seats.push({
+        id: it.id,
+        name: it.name,
+        order: seats.length,
+        parentId: chapterItem.id,
+        level: 'verse',
+        meta: { ...it.meta, chapterId: chapterItem.id }
+      });
+    }
+    // A chapter the chart does not seat at all falls back rather than
+    // emptying the sky — the reader is never shown a blank where the data
+    // simply has not caught up.
+    return seats.length ? seats : getBibleVerseItems(chapterItem);
   };
 
   const parentHandler = ({ selected, app }) => {
@@ -806,7 +858,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
-      getBibleVerseItems,
+      getBibleVerseItems: verseItemsForChapter,
       getBibleVerseCacheStatus,
       getBibleVerseChain: verseId => verseChain(verseId),
       getBibleChapterChain: chapterId => chapterChain(chapterId),
