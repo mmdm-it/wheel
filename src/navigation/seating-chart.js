@@ -226,7 +226,8 @@ export function expandChart(root, chart) {
           const chapterLabel = ch.label ?? home?.meta?.name ?? home?.key
             ?? anchor?.meta?.name ?? anchor?.key ?? String(position + 1);
           const groupKey = uniqueKey(`${bookId}:${ch.label ?? home?.key ?? anchor?.key ?? position + 1}`, position);
-          const chapterId = (ch.label == null && anchor?.meta?.id) || groupKey;
+          // Identity too resolves through the SPAN, not the position (W-32).
+          const chapterId = (ch.label == null && (home?.meta?.id || anchor?.meta?.id)) || groupKey;
           ch.seats.forEach(seat => {
             const label = seat?.l != null ? String(seat.l) : null;
             const span = spanForm(seat?.u);
