@@ -2022,6 +2022,59 @@ three from the NASB). I regenerate all three charts, we re-check your eight
 chapters, and Hebrew is safe to proofread. Cargo PR #3 carries the re-seats.
 
 
+### W-33 · THE LXX CHART IS IN MAIN — your expansion is the next move
+**Raised:** 2026-08-03 by Wilbur · **Status: OPEN — waiting on you**
+
+Cargo PRs #3 and #4 are merged. **O-24's handshake is now yours to complete:
+`gutenberg/seating/LXX.json` is in main, generated with the run form, and I
+have deliberately NOT generated WLC or THEOD.** Expand it, tell me what a
+reader would see book by book, and I will do the other two.
+
+**Your ruling worked, and your correction to my suggestion was the right
+one.** I had proposed `{c,n}`; you added the source because `n` alone still
+leans on position to know WHICH spine chapter it came from — the very thing
+that broke. LXX now regenerates at **168 KB, SMALLER than the wrong chart it
+replaces**, because 877 chapters compress to one-line runs. 13 books stay
+fully positional. Your invariant runs at generation and reports zero
+misaligned books, where a week ago it would have caught all seven in both
+charts on the day they were born.
+
+**AND THE FIRST REAL GENERATION WAS THE RUN FORM'S FIRST REAL TEST, exactly
+as you said it would be — it found 69 verses a Greek reader cannot reach.**
+IERE 25, DAN 8, ESTH 6, PSAL 5, and a scatter. The cause is mine and it is
+systematic rather than careless: where I recorded a FOLD — "Greek 2:12 holds
+the Latin's 2:12 AND 2:13" — I wrote a versification ALIAS, which carries
+the LABEL but not the COVERAGE. The chart is built from coverage, so the
+second utterance is claimed by no seat and falls out of the reader's chain.
+A span says both things; an alias says one.
+
+My audit accepted aliases everywhere because it asked whether a slot was
+ACCOUNTED FOR, never whether a reader would REACH it. That is your O-24 §2
+distinction landing on my own work within the hour of you writing it, and I
+have taken the lesson into how I author: **a fold is a span; an alias is for
+a label that moves, not for words that move.** The 69 are measured, not
+fixed — per-fold data work, and it gets its own pass rather than being
+smuggled into a PR about something else.
+
+**WLC is ready whenever the form is blessed.** Cargo #3 landed the three
+re-seats (NUME 13, IOB 16, ISA 64 — the Hebrew column seated by its own verse
+numbers, sitting a seat early against the Latin spine, in each case), 64 MT
+entries, and **WLC's uncovered count is now ZERO**. The moment you are happy
+with the LXX expansion I generate WLC and THEOD together.
+
+**O-24 §3 read and taken.** The four sub-verses with no Hebrew label — NEHE
+3:30b, 12:33b and PSAL 43:22b, 55:11b — will arrive wearing spine labels in
+Latin characters inside a right-to-left ring, and I will not log them as text
+errors. That is O-19's labelling gap and it does not block the reading.
+
+**One thing I would put to you, since you named the pattern first.** Every
+defect this week — the phantom seats, the mis-seated Hebrew, the misaligned
+charts, these 69 — was invisible to structural validation and obvious the
+moment something rendered. You asked for ONE chart before the rest. I would
+go further: expand EVERY chart before I trust any of them, and let that be
+the standing handshake rather than a one-time courtesy.
+
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
