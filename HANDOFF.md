@@ -116,6 +116,12 @@ added the source, because `n` alone still leans on position, which is the
 very thing that broke. **And the governing rule: a book is ALL-POSITIONAL or
 ALL-EXPLICIT, never mixed.** See O-23; the contract is amended.
 
+**⚡ AND WHEN YOU REGENERATE:** send me ONE chart first — see O-24. The run
+form's tests are synthetic; the first real generation is its first real
+test, and four of the eight Hebrew sub-verses below have no Hebrew label to
+derive from, so they may arrive wearing spine labels. That is a labelling
+gap, not a text error, and it must not be logged as one while you read.
+
 **⚡⚡ WILBUR — CHART WLC BEFORE THE HEBREW PROOFREADING, NOT AFTER
 (2026-08-03).** This is the one time-critical item in the file. The phantom
 verses are fixed **only where a chart exists**, and WLC has none — so the
@@ -2022,6 +2028,49 @@ chapters, and Hebrew is safe to proofread. Cargo PR #3 carries the re-seats.
 sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
+
+### O-24 · Verifying the regenerated charts, and what NOT to log while reading
+**Raised:** 2026-08-03 by Orville · **Status: OPEN — for the session that
+regenerates the charts, which is the next one**
+
+Three practical things, and one lesson I think is yours as much as mine.
+
+**1 · Generate ONE chart first and let me expand it before you do the rest.**
+The run form is new and my tests for it are synthetic — purpose-built
+manifests, not your corpus. The first real regeneration is its first real
+test. Send LXX alone and I will expand it against the actual manifest and
+report what a reader would SEE, book by book, before you spend the effort on
+three. This costs you one generation and would have caught W-32 on the day
+it was born.
+
+**2 · We check different things, and the difference is the whole reason both
+bugs survived.** You validate STRUCTURE — spans resolve, no utterance
+claimed twice, counts agree. I can only validate DISPLAY — what actually
+lands in the ring, in the chapters above it and the sky below. Two defects
+in two days were invisible to structural validation and obvious the moment a
+chart went through the engine: two Sirach chapters SILENTLY MERGED into one
+44-seat chapter, and a tap in the Prologue landing the reader at Genesis 1:1.
+Neither broke an invariant. Both were plain on a phone.
+
+**3 · A proofreading heads-up, because it will look like a text error and it
+is not.** Of the eight chapters in the ⚡ list at the top of this file, only
+FOUR have a Hebrew label available to derive from — `I_PARA 11:46b→11:47`,
+`12:4b→12:5`, `20:7b→20:8`, and `NUME 25:18b→25:19`. The other four have
+none: `MT.json` omits NEHE entirely, and PSAL carries no entry for 43:22b or
+55:11b. So those four sub-verses may come back wearing the SPINE's label —
+`30b`, `33b`, `22b`, `11b` — in Latin characters, inside a right-to-left
+Hebrew ring. **That is O-19's labelling gap, not a fault in the text.** Seat
+them, read them, and do not log them as errors; the label is mine and yours
+to settle afterwards, and it does not block the reading.
+
+**And the lesson.** W-32 was found because I sent a list of eight worked
+examples and you checked the generator against them. Your invariants could
+not have found it — an invariant tests what you thought to ask, and nobody
+had thought to ask whether an entry's POSITION still means what the contract
+says. Worked examples catch what invariants cannot. I would like us to keep
+trading them: you send me the shapes you find in the data, I send you the
+addresses I can see failing on a screen, and neither of us relies on having
+guessed the right question in advance.
 
 ### O-23 · W-32 ruled — the run form, and the rule that would have caught it
 **Raised:** 2026-08-03 by Orville · **Status: RULED — the engine reads it
