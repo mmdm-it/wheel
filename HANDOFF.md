@@ -2075,6 +2075,80 @@ go further: expand EVERY chart before I trust any of them, and let that be
 the standing handshake rather than a one-time courtesy.
 
 
+### W-34 · SEGREGATING THE CORPUS BY LICENSING AGREEMENT — designed, not built
+**Raised:** 2026-08-03 by Wilbur, on Howell's ruling · **Status: DESIGNED —
+build after the chart handshake; recorded now so it is not invented under
+deadline**
+
+**Howell, 2026-08-03:** *"it does seem reasonable to expect that different
+editions will have different licensing requirements, and we should be
+prepared for that... we must be able to segregate data by licensing
+agreement."* Until Leicester Square the corpus is entirely public domain.
+The point of building this now is that **it is the only period in which we
+can get it wrong for free.**
+
+**THE UNIT IS THE AGREEMENT, NOT THE EDITION.** One agreement will often
+cover several editions — CCD licensing the NABRE and the CAB together — and
+the terms attach to the agreement. So: a `licences` block describing each
+agreement once, and each edition naming the licence it lives under. Three
+kinds of content, split by who acts on them:
+
+- **Machine-actionable**, because the build must honour them with no human in
+  the loop: permitted distribution CHANNELS (server, bundled app — whatever
+  the terms actually name), permitted TERRITORIES, and an EXPIRY. Those three
+  decide what a given deployment may contain.
+- **Reader-facing, and therefore shipped**: the mandated copyright notice,
+  verbatim. CCD will require one displayed; it belongs beside the colophon
+  already in `translations.json`.
+- **Prose, for us, never shipped**: the real terms, counterparty, contact,
+  renewal date. Recorded where the next session finds it.
+
+**TWO RULES BUILT IN FROM THE START.**
+
+1. **Public domain is a licence entry, not the absence of one.** Model it as
+   an agreement permitting every channel and territory, and the whole
+   pipeline runs the same path from today — so the first real licence is a
+   DATA change rather than a new code path written against a signature
+   deadline. Proven machinery beats written machinery.
+2. **Default deny.** An edition naming no licence ships nowhere. Today the
+   reverse holds — everything ships because everything is public domain — and
+   that is exactly the habit that would let a licensed text leak into an
+   Android bundle eighteen months from now. The safe failure must be silence.
+
+**WHAT CHANGES, AND WHAT DOES NOT.** The deploy filter stops asking "is this
+public domain" and starts asking "does this edition's agreement permit THIS
+channel, in THIS territory, TODAY" — the same shape as the existing PD
+filter, one level more general. **`pendingLicense` keeps its current job
+unchanged**: the PRE-agreement state, an edition we want and do not yet have,
+walled at display and surviving the LAN override. This is its complement, the
+POST-agreement state, and it gates DELIVERY rather than display.
+
+**ORVILLE — one thing is yours.** A deployment's identity should be
+DECLARED, not inferred (`--channel=android-bundle`), so a new target cannot
+silently inherit permissions meant for another. And the mandated notice is a
+render obligation: where a licence carries one, the reader must see it.
+
+**CONTEXT FROM HOWELL'S SEPARATE RESEARCH.** CCD publishes a fee schedule
+and a permissions contact, which makes the question terms rather than
+whether; USCCB is producing machine-readable CAB deliverables at
+cab.scribenet.com, which would make ingestion far cheaper than the
+reverse-engineering every import has been so far. The known hard case is the
+Android OFFLINE story: a GPL client with a local licensed corpus is the
+problem CrossWire could not solve, and the answer is licensed texts online
+and public-domain texts offline — which this design expresses directly, and
+which is a strength to state rather than a concession to make.
+
+**A correction I owe the ledger.** I earlier called our GPL exposure "real
+and ours." It is thinner than that. Every edition carries
+`rights_status: public-domain`, and each `rights_note` records the TEXT's own
+basis — the Septuagint's reads "Swete edition, Cambridge 1887-1930; editor
+died 1917." We do not stand on eliranwong's GPL; we stand on Swete being out
+of copyright, and their repository was the road we drove in on. What remains
+is narrower: their digitization is their work, and whether using their word
+index reaches us is a lawyer's question about idea and expression, not a data
+one.
+
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
