@@ -2003,6 +2003,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     && options.splashOvertureItem !== overtureHomeId ? options.splashOvertureItem : null;
   if (overtureItemId) options.initialItemId = overtureItemId;
 
+  // The committed choice, carried to the chain builder alongside the volume's
+  // pinned default — a builder that seats by artifact needs to know which
+  // artifact the reader actually holds, not which one the config prefers.
+  options.activeEdition = translationId;
   const chainResult = await config.buildChain(manifest, options, namesMap);
   performance.mark('wheel:chain-built');
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;
@@ -2091,10 +2095,26 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
 
   const configLabel = makeLabelFormatter({ config, volume, level: options.level, locale: resolvedLocale, namesMap, options, manifest, meta });
   const adapterLabel = adapterLayoutSpec?.label;
-  // Prefer the config's formatter when it is context-aware (receives { item, context }),
-  // otherwise fall back to the adapter's plain label, then the config formatter.
-  const configIsContextAware = config?.formatLabel?.length === 0; // zero-arg factory returns (item, context) => ...
-  const labelFormatter = configIsContextAware
+  // THE VOLUME'S OWN FORMATTER WINS WHENEVER IT DECLARES ONE (2026-08-02).
+  //
+  // This used to decide by ARITY — "a zero-argument factory returns
+  // (item, context), so it is context-aware" — which was a guess, and it was
+  // wrong for every config whose factory takes its context as a parameter.
+  // Those volumes fell silently through to the adapter's plain
+  // `item => item.name`, so their labels were only ever right because they
+  // had been BAKED at build time: chapters pre-rendered as Roman, book names
+  // frozen in whichever language the app booted in. It looked correct for as
+  // long as the volume spoke one language.
+  //
+  // The symptom that exposed it (Howell, from the phone): the parent button
+  // counted in Greek — it builds its own label and reads the live names
+  // table — while the ring and the child pyramid beside it did not, because
+  // neither was ever reaching the formatter that knows the reader's tongue.
+  //
+  // A declared formatter is a statement that the volume knows how to name
+  // its own items. The adapter's label is the fallback for volumes that make
+  // no such statement, and it must not shadow one that does.
+  const labelFormatter = config?.formatLabel
     ? configLabel
     : adapterLabel
       ? ({ item }) => adapterLabel(item)
@@ -2112,6 +2132,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const parentHandler = params => (handlerSet.parentHandler ? handlerSet.parentHandler({ ...params, app }) : false);
   const childrenHandler = params => (handlerSet.childrenHandler ? handlerSet.childrenHandler({ ...params, app }) : false);
   const adapterGetParentLabel = typeof handlerSet.getParentLabel === 'function' ? handlerSet.getParentLabel : null;
+  // The volume declares what it appended to a parent label (a chapter
+  // numeral), so the label can be seated by its NAME and the suffix hang
+  // clear of the vessel. Volumes that append nothing need not define it.
+  const adapterGetParentLabelSuffix = typeof handlerSet.getParentLabelSuffix === 'function' ? handlerSet.getParentLabelSuffix : null;
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   dimensionFrontDoorAt = typeof handlerSet.showsDimensionAt === 'function' ? handlerSet.showsDimensionAt : () => false;
@@ -2199,6 +2223,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,
     getParentLabel: adapterGetParentLabel,
+    getParentLabelSuffix: adapterGetParentLabelSuffix,
     getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
     pyramid: pyramidConfig,
@@ -2315,6 +2340,21 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // rather than presenting the pinned default as though nothing was chosen.
     const sel = dimensionBridge.getSelection();
     remember(volume, { language: sel.language || null, edition: sel.translation || null });
+    // The committed edition travels with the options, and the volume may warm
+    // whatever it needs to seat the reader by it next time a ring is built.
+    options.activeEdition = translation || options.activeEdition;
+    // THE READER IS CARRIED ACROSS, NOT LEFT BEHIND. Once whatever the volume
+    // needs has landed, give it the chance to RE-SEAT: the reader is standing
+    // on a particular thing, and a volume whose editions divide their contents
+    // differently must put them where that thing actually sits — which is not
+    // the same index, and sometimes not the same number. A volume that returns
+    // false (or declares no handler) keeps the reader exactly where they are,
+    // which is the right answer whenever the editions agree.
+    Promise.resolve(config.onEditionSettle?.(translation || null))
+      .then(() => handlerSet.reseatOnEditionChange?.({
+        selected: app?.nav?.getCurrent?.(), app
+      }))
+      .catch(() => {});
     updateIncompleteMark();
   });
   // Re-wrap the open detail the moment EB Garamond truly lands (Howell

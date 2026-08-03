@@ -476,6 +476,22 @@ svg :focus-visible {
   text-transform: none;
 }
 
+/* CASING BELONGS TO THE VOLUME, NOT TO CSS (2026-08-02). `text-transform:
+   uppercase` cannot tell one script from another: it re-uppercased every
+   native form on the ring — the strata ring hit this first (Русский →
+   РУССКИЙ) and moved its casing into JS. The focus ring carried the same
+   rule and the same bug, and the Bible exposed it the moment it spoke
+   Greek: Κεφάλαιον rendered ΚΕΦΆΛΑΙΟΝ, keeping an accent that Greek
+   uppercase drops, and ιζʹ rendered ΙΖʹ.
+   The Bible's own formatter now decides — Latin-script names and words
+   shout, every other script keeps its form, and a numeral or an edition's
+   own verse address is never touched. Other volumes keep the transform;
+   the catalog in particular relies on it for mixed-case maker data. */
+:root[data-theme="bible"] .focus-ring-label,
+:root[data-theme="bible"] .focus-ring-magnifier-label {
+  text-transform: none;
+}
+
 .focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
   fill: none;
   stroke: var(--color-magnifier-stroke, #000);
@@ -769,11 +785,16 @@ svg :focus-visible {
    the LAN certification override is showing an uncertified edition. Deliberately
    plain and unmistakably a dev affordance: this must never be mistaken for a
    reader-facing notice, since the doctrine forbids asterisks in the product. */
+/* THE MARK MOVES OFF THE LABEL (Howell 2026-08-02): centred at the foot it
+   sat directly on the parent button's own words and hid their tail. It now
+   rides the LEFT, just above the parent label — whose baseline is LSd*0.93
+   (getParentSeat), i.e. 7% up from the foot, so 10% clears it with the
+   label's ascenders in between. Left inset matches the label's corner start
+   (SSd*0.13 - magR*1.7 ≈ 3%), so mark and label share an edge. */
 #incomplete-mark {
   position: fixed;
-  left: 50%;
-  bottom: calc(3% * var(--iframe-scale, 1));
-  transform: translateX(-50%);
+  left: calc(4% * var(--iframe-scale, 1));
+  bottom: calc(10% * var(--iframe-scale, 1));
   z-index: 400;
   padding: 5px 12px;
   border-radius: 4px;

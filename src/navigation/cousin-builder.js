@@ -1,5 +1,5 @@
-import { weaveCousinChain, toRomanNumeral } from '../adapters/volume-helpers.js';
-import { expandChart, identityChartFromManifest } from './seating-chart.js';
+import { weaveCousinChain } from '../adapters/volume-helpers.js';
+import { expandChart, identityChartFromManifest, chaptersFromSeats } from './seating-chart.js';
 
 const GAP = null;
 
@@ -152,9 +152,17 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
  * Item shape matches getBibleChapters(), so descent, ascent and the
  * chapter prefetch all keep working on ids they already understand.
  */
-export function buildBibleChapterChain(manifest, { initialChapterId = null, namesMap = null } = {}) {
+export function buildBibleChapterChain(manifest, { initialChapterId = null, namesMap = null, seats = null } = {}) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
+
+  // THE CHAPTERS RING FOLLOWS THE EDITION (E3 of W-21). Given the active
+  // artifact's expanded seats, the ring holds the chapters that artifact
+  // actually has — collapsed from those very seats, so the two rings cannot
+  // drift apart. Without seats (no chart generated yet) it walks the spine,
+  // which is what every edition did before the charts existed.
+  const fromSeats = seats ? chaptersFromSeats(seats) : null;
+  if (fromSeats) return weaveChapters(fromSeats, initialChapterId);
 
   const sorted = [];
   Object.entries(bible.testaments).sort(bySortNumber).forEach(([testamentKey, testament]) => {
@@ -162,10 +170,14 @@ export function buildBibleChapterChain(manifest, { initialChapterId = null, name
       Object.entries(section?.books || {}).sort(bySortNumber).forEach(([bookId, book]) => {
         Object.entries(book?.chapters || {}).sort(bySortNumber).forEach(([chapterKey, chapterVal]) => {
           const chapterNum = Number.parseInt(chapterKey, 10);
-          // Chapters are ROMAN (see getBibleChapters — same rule, one source
-          // of truth for the numeral form would be better still).
+          // The chapter carries its NUMBER; the numeral system is chosen at
+          // render from the reader's own tongue (toTraditionNumeral). The
+          // wish left in this comment — "one source of truth for the numeral
+          // form would be better still" — is now granted, and it had to be:
+          // three sites baked Roman independently, so a Greek reader met
+          // Latin numerals under a Greek book name.
           const label = Number.isFinite(chapterNum)
-            ? toRomanNumeral(chapterNum)
+            ? String(chapterNum)
             : (namesMap?.sections?.[chapterKey] || chapterKey);
           sorted.push({
             id: chapterVal?.id || `${bookId}:${chapterKey}`,
@@ -188,6 +200,10 @@ export function buildBibleChapterChain(manifest, { initialChapterId = null, name
     });
   });
 
+  return weaveChapters(sorted, initialChapterId);
+}
+
+function weaveChapters(sorted, initialChapterId) {
   const items = weaveCousinChain(sorted, [
     item => item.bookKey,
     item => item.testamentKey

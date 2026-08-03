@@ -13,6 +13,63 @@ export function toRomanNumeral(n) {
   return out;
 }
 
+// Greek alphabetic numerals, closed by the keraia. ϛ (stigma), ϟ (koppa) and
+// ϡ (sampi) are the numeral-only letters.
+export function toGreekNumeral(n) {
+  if (!Number.isFinite(n) || n <= 0 || n > 999) return String(n);
+  const ones  = ['', 'α', 'β', 'γ', 'δ', 'ε', 'ϛ', 'ζ', 'η', 'θ'];
+  const tens  = ['', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ϟ'];
+  const hunds = ['', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω', 'ϡ'];
+  return hunds[Math.floor(n / 100)] + tens[Math.floor((n % 100) / 10)] + ones[n % 10] + 'ʹ';
+}
+
+// Hebrew alphabetic numerals. 15 and 16 are written טו/טז rather than יה/יו,
+// which would spell the Name. The closing marks — geresh (׳) on a lone
+// letter, gershayim (״) before the last of several — are what say "number,
+// not word": א is aleph, א׳ is 1.
+export function toHebrewNumeral(n) {
+  if (!Number.isFinite(n) || n <= 0 || n > 999) return String(n);
+  const ones  = ['', 'א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט'];
+  const tens  = ['', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ'];
+  const hunds = ['', 'ק', 'ר', 'ש', 'ת', 'תק', 'תר', 'תש', 'תת', 'תתק'];
+  let out = hunds[Math.floor(n / 100)];
+  const rem = n % 100;
+  if (rem === 15) out += 'טו';
+  else if (rem === 16) out += 'טז';
+  else out += tens[Math.floor(rem / 10)] + ones[rem % 10];
+  if (!out) return String(n);
+  return out.length === 1 ? out + '׳' : out.slice(0, -1) + '״' + out.slice(-1);
+}
+
+// THE TRADITION'S OWN LETTERS (Howell 2026-08-02). "Chapters are Roman,
+// verses are Arabic" (2026-07-20) was never about Rome — Roman numerals are
+// LATIN's letter-numerals, and Arabic digits are the tradition-neutral set.
+// Generalized: a chapter wears the letters of the tongue the text is in, a
+// verse wears the universal digits. The pyramid still tells them apart by
+// letters-against-digits, and a Greek Bible stops counting in a Latin hand.
+// A tongue with no letter-numerals shows digits — honest, not borrowed.
+export function toTraditionNumeral(n, locale) {
+  if (!Number.isFinite(n)) return '';
+  if (locale === 'latin') return toRomanNumeral(n);
+  if (locale === 'greek') return toGreekNumeral(n);
+  if (locale === 'hebrew') return toHebrewNumeral(n);
+  return String(n);
+}
+
+// Uppercase Latin-script labels (as the rings always have), but leave every
+// other script in its given form (Howell 2026-07-22): uppercasing strips
+// polytonic Greek's breathings and accents, is meaningless for Hebrew, and
+// can mangle scripts with their own casing. Invert the test — uppercase ONLY
+// when a label is pure Latin (Basic + Latin-1 + Extended-A/B + Additional +
+// combining marks, which covers Vietnamese, Turkish, Czech, Welsh …).
+// NOTE: src/view/secondary-strata-view.js carries the same rule locally,
+// where the view layer cannot reach across into the adapters.
+const LATIN_SCRIPT_ONLY = /^[ -ɏ̀-ͯḀ-ỿ]+$/;
+export const toDisplayCase = s => {
+  const str = String(s ?? '');
+  return LATIN_SCRIPT_ONLY.test(str) ? str.toUpperCase() : str;
+};
+
 // Resolve the manufacturer object from a parentId containing market__country
 function resolveManufacturer(manifest, manufacturerId, parentId) {
   // Walk up through parentId chain or search all markets
@@ -276,11 +333,15 @@ export function getBibleChapters(manifest, selected, namesMap, bibleMode) {
   if (!bookEntry?.chapters) return [];
   return Object.entries(bookEntry.chapters).map(([chapterKey, chapterVal], idx) => {
     const chapterNum = Number.parseInt(chapterKey, 10);
-    // CHAPTERS ARE ROMAN, VERSES ARE ARABIC (Howell 2026-07-20) — the
-    // convention Latin scripture has always cited by (Ioh. III, 16). The
-    // numeral system itself says which is which, so neither wears a word
-    // ("Capitulum") nor a colon to explain itself.
-    const label = Number.isFinite(chapterNum) ? toRomanNumeral(chapterNum) : (namesMap?.sections?.[chapterKey] || chapterKey);
+    // THE NUMBER TRAVELS, THE NUMERALS ARE WORN AT RENDER (Howell
+    // 2026-08-02). This once baked a Roman string into the item name, which
+    // meant the label formatter met "XVII" with no number left to convert —
+    // so a Greek reader got Latin numerals under a Greek book name. The
+    // convention still holds (chapters in the tradition's own letters,
+    // verses in Arabic), but it is applied where the reader's language is
+    // known, not where the chapter is built. Same bug class as the baked
+    // book names (W-16) and the stale-Latin verse.
+    const label = Number.isFinite(chapterNum) ? String(chapterNum) : (namesMap?.sections?.[chapterKey] || chapterKey);
     const externalFile = chapterVal?._external_file
       || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`;
     return {

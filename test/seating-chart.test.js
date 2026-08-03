@@ -276,3 +276,159 @@ describe('seating-chart loader', () => {
     assert.ok(items.length > 20000, `LXX expanded to ${items.length} seats`);
   });
 });
+
+// The defect this test exists for: the verse branch read the volume's PINNED
+// DEFAULT (`options.translation`, VUL) instead of the reader's committed
+// edition, so a Greek reader was seated by a Latin chart — silently, since
+// the fallback is a working chain. Found on the bench, before the phone.
+describe('the committed edition seats the reader (not the pinned default)', () => {
+  const haveCorpus = existsSync(new URL('../data/gutenberg/seating/LXX.json', import.meta.url));
+  it('activeEdition drives the chart; the pinned default does not override it', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const realManifest = JSON.parse(readFileSync(new URL('../data/gutenberg/manifest.json', import.meta.url), 'utf-8'));
+    const base = { level: 'verse', cousinMode: true, bookId: 'I_SAM', chapterId: '17', verseId: '1' };
+
+    const greek = await volumeConfigs.bible.buildChain(realManifest, { ...base, translation: 'VUL', activeEdition: 'LXX' }, {});
+    const greekSeats = greek.items.filter(Boolean).filter(i => i.chapterKey === 'I_SAM:17').map(i => i.name);
+    // The Septuagint genuinely lacks 1 Samuel 17:12-31: the labels say so.
+    assert.ok(greekSeats.includes('11') && greekSeats.includes('32'));
+    assert.ok(!greekSeats.includes('12'), 'Greek chart must not seat an absence');
+
+    const latin = await volumeConfigs.bible.buildChain(realManifest, { ...base, translation: 'VUL' }, {});
+    const latinSeats = latin.items.filter(Boolean).filter(i => i.chapterKey === 'I_SAM:17').map(i => i.name);
+    assert.ok(latinSeats.includes('12'), 'uncharted edition keeps the identity chain');
+  });
+});
+
+// ——— E3: the chapters ring follows the edition ———
+import { chaptersFromSeats } from '../src/navigation/seating-chart.js';
+import { buildBibleChapterChain } from '../src/navigation/cousin-builder.js';
+
+describe('the chapters ring holds the edition\'s own chapters (E3)', () => {
+  it('a regrouped book offers its own chapters, not the spine\'s', () => {
+    const manifest = makeManifest();
+    // The edition folds the spine's two chapters into ONE of its own.
+    const chart = { edition: 'X', books: { ALPH: [
+      { c: '1', s: [
+        { l: '1', u: ['1', 1, 1] }, { l: '2', u: ['1', 2, 2] },
+        { l: '3', u: ['2', 1, 1] }, { l: '4', u: ['2', 2, 2] }
+      ] }
+    ] } };
+    const seats = expandChart(manifest.Gutenberg_Bible, chart);
+    const chapters = chaptersFromSeats(seats);
+    assert.equal(chapters.length, 1, 'one chapter, because the edition has one');
+    assert.equal(chapters[0].name, '1');
+  });
+
+  it('a chapter label that collides with a spine number does NOT merge two chapters', () => {
+    // The bug this test exists for: identity chapters key by the spine's
+    // number and explicit ones by the edition's label — two namespaces
+    // sharing a spelling. Greek Sirach's chapter 30 collided with the spine's
+    // chapter 30 and the verse ring silently served them as ONE 44-seat
+    // chapter. Silent merging is the display lie this whole model exists to
+    // make impossible.
+    const manifest = makeManifest();
+    const chart = { edition: 'X', books: { ALPH: [
+      5,                                              // identity → key ALPH:1
+      { c: '1', s: [{ l: '9', u: ['2', 1, 1] }] }     // label '1' → would collide
+    ] } };
+    const seats = expandChart(manifest.Gutenberg_Bible, chart);
+    const keys = [...new Set(seats.map(s => s.chapterKey))];
+    assert.equal(keys.length, 2, 'two chapters stay two chapters');
+    const chapters = chaptersFromSeats(seats);
+    assert.equal(chapters.length, 2);
+    assert.equal(new Set(chapters.map(c => c.id)).size, 2, 'and their ids are distinct');
+    assert.deepEqual(chapters.map(c => c.name), ['1', '1'],
+      'while both still DISPLAY the label their edition gives them');
+  });
+
+  it('the display label never wears the disambiguator', () => {
+    const manifest = makeManifest();
+    const chart = { edition: 'X', books: { ALPH: [5, { c: '1', s: [{ l: '9', u: ['2', 1, 1] }] }] } };
+    const chapters = chaptersFromSeats(expandChart(manifest.Gutenberg_Bible, chart));
+    assert.ok(chapters.every(c => !/#/.test(c.name)), 'a reader must never see a key');
+  });
+
+  it('with no chart the chapters ring walks the spine, exactly as before', () => {
+    const spine = buildBibleChapterChain(fixtureManifest, {}).items.filter(Boolean);
+    assert.ok(spine.length > 0);
+    assert.ok(spine.every(c => c.level === 'chapter'));
+  });
+
+  it('the two rings cannot disagree — one is derived from the other', () => {
+    const manifest = makeManifest();
+    const chart = { edition: 'X', books: { ALPH: [5, 3], BETH: [2, 3] } };
+    const seats = buildBibleVerseChain(manifest, { chart }).items;
+    const chapters = buildBibleChapterChain(manifest, { seats }).items.filter(Boolean);
+    const seatKeys = [...new Set(seats.filter(Boolean).map(s => s.chapterKey))];
+    assert.equal(chapters.length, seatKeys.length);
+    assert.deepEqual(chapters.map(c => c.id), seats.filter(Boolean)
+      .map(s => s.meta.chapterId).filter((v, i, a) => a.indexOf(v) === i));
+  });
+});
+
+// ——— E2: the reader is carried by their utterance ———
+describe('an edition change carries the reader by their utterance (E2)', () => {
+  // Two artifacts over one spine. X seats the spine 1:1. Y welds spine
+  // utterances 2+3 into a single verse of its own, so everything after
+  // slides by one — the Genesis 50 shape.
+  const CHART_X = { edition: 'X', books: { ALPH: [5, 3] } };
+  const CHART_Y = { edition: 'Y', books: { ALPH: [
+    { s: [
+      { l: '1', u: ['1', 1, 1] },
+      { l: '2', u: ['1', 2, 3] },
+      { l: '3', u: ['1', 4, 4] },
+      { l: '4', u: ['1', 5, 5] }
+    ] },
+    3
+  ] } };
+
+  const seatsOf = chart => expandChart(makeManifest().Gutenberg_Bible, chart);
+
+  it('the SAME WORDS are found under a different number', () => {
+    const x = seatsOf(CHART_X);
+    const y = seatsOf(CHART_Y);
+    // Reading X's verse 4 — spine utterance 4.
+    const reading = x.find(i => i.name === '4' && i.chapterKey === 'ALPH:1');
+    assert.deepEqual(reading.meta.span, [['1', 4, 4]]);
+    const [spineKey, ordinal] = reading.meta.span[0];
+    const landed = y[seatIndexForUtterance(y, 'ALPH', spineKey, ordinal)];
+    assert.equal(landed.name, '3', "Y calls those words its verse 3, and that is where the reader goes");
+    assert.notEqual(landed.name, reading.name, 'the number did NOT travel — the words did');
+  });
+
+  it('a fused seat receives BOTH utterances, whole', () => {
+    const y = seatsOf(CHART_Y);
+    const a = seatIndexForUtterance(y, 'ALPH', '1', 2);
+    const b = seatIndexForUtterance(y, 'ALPH', '1', 3);
+    assert.equal(a, b, 'two utterances, one seat');
+    assert.deepEqual(y[a].meta.span, [['1', 2, 3]]);
+    assert.equal(y[a].name, '2', 'and it is shown whole, never split');
+  });
+
+  it('where the editions agree the seat is identical — nothing to perform', () => {
+    const x = seatsOf(CHART_X);
+    const y = seatsOf(CHART_Y);
+    const reading = x.find(i => i.name === '1' && i.chapterKey === 'ALPH:1');
+    const landed = y[seatIndexForUtterance(y, 'ALPH', ...reading.meta.span[0].slice(0, 2))];
+    assert.equal(landed.name, reading.name, 'same number, same words: invisible at rest');
+  });
+
+  it('an utterance the new artifact lacks has no seat, and the reader stays put', () => {
+    // Y2 asserts spine utterance 3 absent: it simply has no seat for it.
+    const y2 = seatsOf({ edition: 'Y2', books: { ALPH: [
+      { s: [{ l: '1', u: ['1', 1, 1] }, { l: '2', u: ['1', 2, 2] }, { l: '4', u: ['1', 4, 4] }] }, 3
+    ] } });
+    assert.equal(seatIndexForUtterance(y2, 'ALPH', '1', 3), -1,
+      'no seat means no landing — the caller must leave the reader where they are');
+  });
+
+  it('the landing is deterministic: spine to seat is single-valued', () => {
+    const y = seatsOf(CHART_Y);
+    for (let ordinal = 1; ordinal <= 5; ordinal += 1) {
+      const hits = y.filter(i => i.bookKey === 'ALPH'
+        && i.meta.span.some(([c, f, l]) => c === '1' && ordinal >= f && ordinal <= l));
+      assert.ok(hits.length <= 1, `utterance ${ordinal} is claimed by at most one seat`);
+    }
+  });
+});

@@ -396,7 +396,20 @@ export class FocusRingView {
           const w = typeof this.parentButtonOuterLabel.getComputedTextLength === 'function'
             ? this.parentButtonOuterLabel.getComputedTextLength()
             : 0;
-          const labelX = getParentLabelLeftX(viewport, magRadius, w);
+          // A DECLARED SUFFIX IS SEATED BY ITS NAME (Howell 2026-08-02): the
+          // vessel's stroke was cutting through the chapter numeral, so
+          // measure the name alone and let the geometry land its last letter
+          // just past the stroke. getSubStringLength measures the same glyphs
+          // already laid out, so no second element and no re-flow.
+          const suffix = parentButtons?.outerLabelSuffix || '';
+          let nameW = null;
+          if (suffix && text.endsWith(suffix) && typeof this.parentButtonOuterLabel.getSubStringLength === 'function') {
+            const nameChars = text.length - suffix.length;
+            if (nameChars > 0) {
+              try { nameW = this.parentButtonOuterLabel.getSubStringLength(0, nameChars); } catch { nameW = null; }
+            }
+          }
+          const labelX = getParentLabelLeftX(viewport, magRadius, w, nameW);
           this.parentButtonOuterLabel.setAttribute('x', labelX);
           this.parentButtonOuterLabel.setAttribute('y', seat.labelY);
           this.parentButtonOuterLabel.removeAttribute('transform');

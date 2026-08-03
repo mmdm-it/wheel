@@ -313,10 +313,13 @@ describe('the shelf follows the reader — a live names table', () => {
   const chapter3 = () => fmt({ item: { id: 'GENE:3', level: 'chapter', name: '3' }, context: 'magnifier' });
 
   it('repaints book names when the table changes under a boot-built formatter', () => {
-    assert.equal(apoc(), 'Apocalypsis');
+    // Casing moved from CSS into the formatter (2026-08-02): Latin-script
+    // names still shout, and the point of the test is unchanged — the name
+    // follows the live table rather than the boot value.
+    assert.equal(apoc(), 'APOCALYPSIS');
     namesMap.books = { APOC: 'Offenbarung des Johannes' };
     namesMap.locale = 'german';
-    assert.equal(apoc(), 'Offenbarung des Johannes',
+    assert.equal(apoc(), 'OFFENBARUNG DES JOHANNES',
       'a formatter captured at boot must not freeze the names it reads');
   });
 
@@ -326,7 +329,7 @@ describe('the shelf follows the reader — a live names table', () => {
     namesMap.books = { APOC: 'Apocalypsis' };
     namesMap.locale = 'latin';
     namesMap.vocabulary = { chapter: 'Capitulum' };
-    assert.equal(chapter3(), 'Capitulum III', 'Latin: Roman numerals');
+    assert.equal(chapter3(), 'CAPITULUM III', 'Latin: Roman numerals, and Latin shouts');
     namesMap.locale = 'greek';
     namesMap.vocabulary = { chapter: 'Κεφάλαιον' };
     assert.equal(chapter3(), 'Κεφάλαιον γʹ', 'Greek: Greek numerals');
@@ -346,7 +349,7 @@ describe('the shelf follows the reader — a live names table', () => {
     namesMap.vocabulary = null;
     assert.equal(chapter3(), '3', 'no word ⇒ the bare numeral, not English');
     namesMap.vocabulary = { chapter: 'Kapitel', verse: 'Vers' };
-    assert.equal(chapter3(), 'Kapitel 3', 'the registry supplies the word');
+    assert.equal(chapter3(), 'KAPITEL 3', 'the registry supplies the word');
     namesMap.vocabulary = null;
   });
 });

@@ -4,7 +4,7 @@
 // declared here; src/main.js stays volume-agnostic and is scanned by
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
-import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toRomanNumeral } from './adapters/volume-helpers.js';
+import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 import { recall } from './core/session-memory.js';
 
@@ -109,6 +109,12 @@ const volumeConfigs = {
       return { ...manifest, Gutenberg_Bible: { ...root, testaments: {} } };
     },
     buildChain: (manifest, options, namesMap) => buildBibleChain(manifest, options, namesMap),
+    // A committed edition warms its seating chart, so the reader's NEXT
+    // descent to the leaf ring is seated by their own artifact rather than
+    // the one they arrived under. The chain in front of them is not rebuilt
+    // (that is E2's re-seat, which carries the reader's utterance across);
+    // this only makes sure the chart is in hand when the ring is next built.
+    onEditionSettle: edition => ensureSeatingChart(edition || null),
     createHandlers: makeAdapterHandlers('bible')
   },
   catalog: {
@@ -276,39 +282,36 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
   // already ruled sufficient (2026-07-20: chapters are Roman, verses Arabic,
   // "the numeral system itself says which is which, so neither wears a word").
   // Honest, language-neutral, and it cannot leak English into a German shelf.
-  const t = key => namesMap?.vocabulary?.[key] ?? '';
+  // CASING IS OWNED HERE, NOT BY CSS (2026-08-02). A blanket
+  // `text-transform: uppercase` on the ring re-uppercased every native script
+  // — the strata ring hit this first (Русский → РУССКИЙ) and moved its casing
+  // into JS; the focus ring carried the same rule and the same bug, visible
+  // the moment the volume spoke Greek: Κεφάλαιον came out ΚΕΦΆΛΑΙΟΝ, wearing
+  // an accent that Greek uppercase drops.
+  //
+  // The line is NAMES AND WORDS SHOUT, ADDRESSES NEVER CHANGE. A vocabulary
+  // word is cased (Latin CAPITULUM, Greek Κεφάλαιον left alone); a numeral or
+  // an edition's own verse address is passed through untouched, so a
+  // sub-verse stays "30b" and never becomes "30B".
+  const t = key => toDisplayCase(namesMap?.vocabulary?.[key] ?? '');
 
   // ── Numeral converters ───────────────────────────────────────────────────────
-  const toRoman = n => toRomanNumeral(n);
-  const toHebrew = n => {
-    if (!Number.isFinite(n) || n <= 0 || n > 1200) return String(n);
-    const ones    = ['','\u05d0','\u05d1','\u05d2','\u05d3','\u05d4','\u05d5','\u05d6','\u05d7','\u05d8'];
-    const tens    = ['','\u05d9','\u05db','\u05dc','\u05de','\u05e0','\u05e1','\u05e2','\u05e4','\u05e6'];
-    const hundreds= ['','\u05e7','\u05e8','\u05e9','\u05ea','\u05ea\u05e7','\u05ea\u05e8','\u05ea\u05e9','\u05ea\u05ea','\u05ea\u05ea\u05e7'];
-    let r = '', rem = n;
-    if (rem >= 1000) { r += ones[Math.floor(rem / 1000)] + '\u05f3'; rem %= 1000; }
-    if (rem >= 100)  { r += hundreds[Math.floor(rem / 100)]; rem %= 100; }
-    if (rem === 15)  { r += '\u05d8\u05d5'; }
-    else if (rem === 16) { r += '\u05d8\u05d6'; }
-    else { if (rem >= 10) { r += tens[Math.floor(rem / 10)]; rem %= 10; } if (rem) r += ones[rem]; }
-    return r;
-  };
-  const toGreek = n => {
-    if (!Number.isFinite(n) || n <= 0 || n > 999) return String(n);
-    const ones  = ['','\u03b1','\u03b2','\u03b3','\u03b4','\u03b5','\u03db','\u03b6','\u03b7','\u03b8'];
-    const tns   = ['','\u03b9','\u03ba','\u03bb','\u03bc','\u03bd','\u03be','\u03bf','\u03c0','\u03df'];
-    const hunds = ['','\u03c1','\u03c3','\u03c4','\u03c5','\u03c6','\u03c7','\u03c8','\u03c9','\u03e1'];
-    const h = Math.floor(n / 100), ten = Math.floor((n % 100) / 10), o = n % 10;
-    return (hunds[h] + tns[ten] + ones[o]) + '\u02b9';
-  };
-  const toNumeral = n => {
-    if (!Number.isFinite(n)) return '';
-    const l = loc();
-    if (l === 'latin')  return toRoman(n);
-    if (l === 'greek')  return toGreek(n);
-    if (l === 'hebrew') return toHebrew(n);
-    return String(n);
-  };
+  // THE TRADITION'S OWN LETTERS — chapters only (Howell 2026-08-02).
+  //
+  // The rule was written on 2026-07-20 as "chapters are Roman, verses are
+  // Arabic", and read as a Latin habit because Latin was the only tradition
+  // on the shelf. It never was: Roman numerals ARE Latin's letter-numerals,
+  // and Arabic digits are the tradition-neutral set. So the rule generalizes
+  // without losing anything — CHAPTERS WEAR THE TRADITION'S OWN LETTERS,
+  // VERSES WEAR THE UNIVERSAL DIGITS. Latin XVII / 17, Greek ιζʹ / 17,
+  // Hebrew י״ז / 17.
+  //
+  // What that buys: the child pyramid still tells a chapter from a verse at
+  // a glance — letters against digits — while a Greek Bible stops numbering
+  // its chapters in a Latin hand. Neither wears a WORD, so the "no
+  // Capitulum" ruling stands. A tongue with no letter-numerals of its own
+  // simply shows digits, which is honest rather than borrowed.
+  const traditionNumeral = n => toTraditionNumeral(n, loc());
 
   const getYearNumber = item => {
     if (Number.isFinite(item?.yearNumber)) return item.yearNumber;
@@ -322,7 +325,7 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
       return item?.name;
     })();
     const n = Number(chapterVal);
-    const numStr = Number.isFinite(n) ? toNumeral(n) : String(chapterVal ?? item?.id ?? '');
+    const numStr = Number.isFinite(n) ? traditionNumeral(n) : String(chapterVal ?? item?.id ?? '');
     if (context === 'node') return numStr;
     return `${t('chapter')} ${numStr}`.trim();  // no word ⇒ the bare numeral
   };
@@ -336,8 +339,12 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
       return item?.name;
     };
     const verseVal = extract();
-    const n = Number(verseVal);
-    const numStr = Number.isFinite(n) ? toNumeral(n) : String(verseVal ?? item?.id ?? '');
+    // VERSES ARE ARABIC IN EVERY TONGUE — the universal digits, against the
+    // tradition's letters on the chapter. This is the discriminator the
+    // pyramid reads, and it must not vary by language or it stops
+    // discriminating. A non-numeric label (a sub-verse like "30b", an
+    // edition's own lettered address) passes through untouched.
+    const numStr = String(verseVal ?? item?.id ?? '');
     if (context === 'node') return numStr;
     return `${t('verse')} ${numStr}`.trim();  // no word ⇒ the bare numeral
   };
@@ -358,11 +365,11 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     // THE DOOR'S NAME follows the reader live (W-27): the root item's baked
     // name is only the boot value; the live table wins at render, so switching
     // to Hebrew in the funnel retitles the door to כתבי הקודש with no rebuild.
-    if (itemLevel === 'bibleRoot') return namesMap?.title || item.name || item.id || '';
+    if (itemLevel === 'bibleRoot') return toDisplayCase(namesMap?.title || item.name || item.id || '');
     if (itemLevel === 'chapter') return formatChapter({ item, context });
     if (itemLevel === 'verse') return formatVerse({ item, context });
     const localizedBook = bookNames?.[item.id];
-    return localizedBook || item.name || item.id || '';
+    return toDisplayCase(localizedBook || item.name || item.id || '');
   };
 }
 
@@ -442,7 +449,12 @@ function buildBibleChain(manifest, options, namesMap) {
       // committed edition's own. buildChain is awaited at launch, so the
       // chart fetch rides here — present or definitively absent before the
       // first frame; absent means identity fallback (today's behaviour).
-      return ensureSeatingChart(options.translation || null).then(chart =>
+      // The COMMITTED edition, not the volume's pinned default: `translation`
+      // is the config's fallback (VUL), while `activeEdition` is what the
+      // reader actually chose at the funnel or carried in from a previous
+      // launch. Reading the default here meant a Greek reader was seated by
+      // a Latin chart — caught before it reached the bench.
+      return ensureSeatingChart(options.activeEdition || options.translation || null).then(chart =>
         buildBibleVerseChain(manifest, {
           initialVerseId: `${bookId}_${chapterId}_${verseId}`,
           chart
