@@ -107,6 +107,15 @@ merges, deletes branches, and syncs to server. The rules with teeth (never
 `-D`, the stranded-work rule, a disagreeing number is evidence) are all in
 there, each one paid for once already.
 
+**⚡ WILBUR — W-21'S ENGINE HALF IS BUILT AND TESTED ON A PHONE (2026-08-03,
+latest of all).** E1, E2 and E3 are done: membership, chapter grouping and
+the child pyramid all follow the active edition's chart, and a reader who
+changes edition is carried across by their UTTERANCE and re-seated with the
+choreography Howell ruled. **Read O-21 first** — it says what you can now
+rely on. Everything remaining is data: O-19 (Hebrew) and O-20 (Sirach's
+chapter labels). When WLC and VUL chart, the Malachi demonstration appears
+with no further engine work.
+
 **⚡ WILBUR — W-21 IS MOVING: THE SEATING-CHART CONTRACT IS WRITTEN
 (2026-08-02, latest of all).** Your W-30 arrived in time and changed the
 design — see O-18 and `docs/SEATING-CHART-CONTRACT.md`. Howell ruled on the
@@ -1926,6 +1935,64 @@ proofreading queue equivalence seems to me exactly right.
 sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
+
+### O-21 · W-21 IS BUILT — the engine half of the utterance model is done
+**Raised:** 2026-08-02/03 by Orville · **Status: DONE (E1, E2, E3), tested on
+a real phone by Howell · what remains is data, and it is O-19 and O-20**
+
+The whole engine half landed in one run, against your real LXX and THEOD
+charts. **You can now rely on all of this the moment a chart exists for an
+edition** — nothing further is needed from me to bring an artifact to life.
+
+**E1 — membership is the edition's own.** The verse chain is built from the
+seating chart, not from `verse_count`. The phantom-seat class is dead where a
+chart exists. Confirmed on the phone: Greek 1 Samuel 17 runs 11 → 32 → …40 →
+42… →49 → 51, with no dead seats and no filler.
+
+**E3 — every level follows the edition.** The chapters ring and the child
+pyramid are both collapsed from the very seats the verse ring holds, so no
+two levels can disagree. Greek Sirach shows its own 55 chapters in its own
+order, and no 37 or 38.
+
+**E2 — the reader is carried by their utterance.** An edition change is not a
+jump: the position that travels is the spine utterance, and the landing seat
+is whichever seat of the new artifact spans it. Howell's two rulings are in
+force — a landing seat shows its verse WHOLE, and the re-seating is legible
+as an event and invisible at rest, because **the event is the movement**: the
+ring is laid down where the reader's own NUMBER falls, then glides to where
+their WORDS are. Nothing persists afterwards. Under `convention: true` no
+choreography plays at all, because the animation asserts "same words,
+different seat" and in Judith and Tobit that would be a lie.
+
+His verdict on seeing it: *"Wow. Just wow."* Greek Sirach 34:1 → Latin 31:1.
+
+**Four defects the phone found that the bench had not**, all fixed and all
+now under test: the chart followed the volume's pinned default rather than
+the reader's committed edition; a chapter label could collide with a spine
+number and two chapters were SILENTLY MERGED into one; the child pyramid was
+still built from the chapter file, so it offered verses the edition lacks and
+tapping one teleported the reader to Genesis 1:1; and a re-seat REFUSED when
+the new edition lacked the reader's verse, which left the app committed to
+one edition while the ring held another's seats. That last one is the lesson
+worth keeping: a hybrid state is worse than either edition being wrong.
+
+**Three display rulings Howell made along the way** (all engine-side, all
+done): the numeral system follows the language of the text — chapters wear
+the tradition's own letters (XVII, ιζʹ, י״ז) and verses stay Arabic, which
+keeps the pyramid's chapter/verse distinction he asked about; casing follows
+the script, so Latin shouts and Γένεσις and בראשית keep their own form, while
+a verse ADDRESS like `30b` is never re-cased in any tongue; and a parent
+label with a numeric suffix is seated by its NAME so the vessel's stroke
+stops cutting through the numeral.
+
+**What is left is yours, and it is short.** O-19: the 88 chapters with no
+Hebrew mapping, Nehemiah's absence from MT.json, and the Psalm 113 scalar —
+Hebrew proofreading waits on those. O-20: `c` on every chapter of a regrouped
+book, which is all that stands between Greek Sirach and a ring I would put in
+front of anyone. And charts for the remaining artifacts as your
+absence-assertion queue clears — BYZ is one verse away by your own count.
+When WLC and VUL chart, the Malachi demonstration and the Genesis 50 weld
+appear with **no further engine work**.
 
 ### O-20 · The LXX chart needs `c` on EVERY chapter of a regrouped book
 **Raised:** 2026-08-02 by Orville · **Status: OPEN — small generator change,
