@@ -501,3 +501,57 @@ describe('the child pyramid holds the same seats as the ring', () => {
     assert.equal(landed.meta.chapterLabel, '17', 'and not to another chapter');
   });
 });
+
+// ——— The backdoor: returning from an edition that HAS the verse ———
+describe('an edition that lacks the reader\'s verse still re-seats them', () => {
+  const haveCorpus = existsSync(new URL('../data/gutenberg/seating/LXX.json', import.meta.url));
+  const mk = async activeEdition => {
+    const { bibleAdapter } = await import('../src/adapters/bible-adapter.js');
+    await ensureSeatingChart('LXX');
+    const realManifest = JSON.parse(readFileSync(new URL('../data/gutenberg/manifest.json', import.meta.url), 'utf-8'));
+    const options = { activeEdition, level: 'verse' };
+    const h = bibleAdapter.createHandlers({ manifest: realManifest, namesMap: { locale: 'greek' }, options });
+    h.layoutBindings.setBibleMode('verse');
+    return { h, options };
+  };
+
+  it('Greek → Latin → 17:12 → Greek does not leave Latin seats in a Greek ring', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    // Howell's exact route from the phone, 2026-08-03.
+    const { h, options } = await mk('LXX');
+    // In Latin, 1 Samuel 17:12 exists and can be rotated to.
+    options.activeEdition = 'VUL';
+    const latin = h.layoutBindings.getBibleVerseChain('I_SAM_17_12');
+    const standing = latin.items[latin.selectedIndex];
+    assert.equal(standing.id, 'I_SAM_17_12', 'the Latin genuinely seats it');
+
+    // Back to Greek, which has never had 17:12-31.
+    options.activeEdition = 'LXX';
+    let handed = null;
+    const app = { setPrimaryItems: (items, idx) => { handed = { items, idx }; } };
+    assert.equal(h.reseatOnEditionChange({ selected: standing, app }), true,
+      'the switch must be honoured, not refused');
+
+    const seats = handed.items.filter(Boolean).filter(i => i.chapterKey === standing.chapterKey);
+    const names = seats.map(s => s.name);
+    assert.ok(!names.includes('12'), 'no ghost node for a verse this edition lacks');
+    assert.ok(!names.includes('31'), 'nor any of the others');
+    assert.ok(names.includes('11') && names.includes('32'), 'the honest jump is intact');
+    // And they land just BEFORE the gap, so reading forward meets it naturally.
+    assert.equal(handed.items[handed.idx].name, '11');
+  });
+
+  it('after the re-seat the sky agrees with the ring — no inherited ghosts', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    const { h, options } = await mk('LXX');
+    options.activeEdition = 'VUL';
+    const latin = h.layoutBindings.getBibleVerseChain('I_SAM_17_20');
+    const standing = latin.items[latin.selectedIndex];
+    options.activeEdition = 'LXX';
+    h.reseatOnEditionChange({ selected: standing, app: { setPrimaryItems: () => {} } });
+
+    const { items: chapters } = h.layoutBindings.getBibleChapterChain(null);
+    const sam17 = chapters.find(c => c && c.bookKey === 'I_SAM' && c.name === '17');
+    const sky = h.layoutBindings.getBibleVerseItems(sam17).map(v => v.name);
+    assert.ok(!sky.includes('20'), 'the pyramid must not inherit the Latin seat either');
+    assert.ok(sky.includes('11') && sky.includes('32'));
+  });
+});

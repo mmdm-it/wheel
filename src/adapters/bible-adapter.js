@@ -534,31 +534,79 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // is played at all — those books share coordinates by convention only, and
   // the animation asserts "same words, different seat", which would be a lie.
   const reseatOnEditionChange = ({ selected, app }) => {
-    if (!selected || selected.level !== 'verse' || !app?.setPrimaryItems) return false;
-    const span = selected.meta?.span;
-    if (!Array.isArray(span) || !span.length) return false;
-    const [spineKey, firstOrdinal] = span[0];
-    const bookId = selected.bookKey;
+    if (!selected || !app?.setPrimaryItems) return false;
+    const level = selected.level;
+    if (level !== 'verse' && level !== 'chapter') return false;
 
+    const previousSeats = Array.isArray(verseChainItems) ? verseChainItems : [];
     const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
     const rebuilt = buildBibleVerseChain(manifest, { chart }).items;
     if (!rebuilt.length) return false;
-    const target = seatIndexForUtterance(rebuilt, bookId, spineKey, firstOrdinal);
-    if (target < 0) return false;          // the new artifact lacks it: stay put
+
+    // The reader is standing on a verse, or on a chapter — in which case the
+    // thing that travels is its first verse, since a chapter is only a name
+    // for the utterances under it.
+    const anchor = level === 'verse'
+      ? selected
+      : previousSeats.find(it => it
+          && (it.meta?.chapterId === selected.id || it.chapterKey === selected.id));
+    if (!Array.isArray(anchor?.meta?.span)) return false;
+
+    const seatFor = it => {
+      if (!it || !Array.isArray(it.meta?.span) || !it.meta.span.length) return -1;
+      const [k, o] = it.meta.span[0];
+      return seatIndexForUtterance(rebuilt, it.bookKey, k, o);
+    };
+
+    // THE NEAREST SCRIPTURE THIS EDITION ACTUALLY HOLDS (Howell from the
+    // phone, 2026-08-03). This used to give up when the new artifact had no
+    // seat for the reader's verse — "stay put" — which was the wrong refusal
+    // and made a far worse state than a wrong landing: the app committed to
+    // the new edition while the ring kept the OLD one's seats. Rotating into
+    // Latin 1 Samuel 17:12 and returning to Greek left Greek holding nodes
+    // 12–31 that the Septuagint has never had, with no text under them, and
+    // the sky inherited the same ghosts on the way out. A hybrid is the one
+    // outcome worse than either edition.
+    //
+    // So the chain is ALWAYS adopted, and the landing is found by walking the
+    // reader's own reading order outward — backward first, so they land just
+    // BEFORE the gap and meet the jump again by reading forward, exactly as
+    // they would have on entering. Latin 17:12 lands on Greek 17:11. Only if
+    // the new artifact shares no scripture at all with where they stand does
+    // this refuse, and then nothing has been disturbed.
+    let target = seatFor(anchor);
+    if (target < 0 && previousSeats.length) {
+      const at = previousSeats.findIndex(it => it && it.id === anchor.id);
+      if (at >= 0) {
+        for (let i = at - 1; i >= 0 && target < 0; i -= 1) target = seatFor(previousSeats[i]);
+        for (let i = at + 1; i < previousSeats.length && target < 0; i += 1) target = seatFor(previousSeats[i]);
+      }
+    }
+    if (target < 0) return false;
 
     // Adopt the rebuilt chain, and drop the chapters cache so the ring above
-    // is rebuilt from these same seats on the next ascent (E3).
+    // — and the sky under it — are rebuilt from these same seats (E3).
     verseChainItems = rebuilt;
     verseChainChart = chart;
     chapterChainItems = null;
 
+    // A reader standing on the CHAPTER ring stays there: rebuild that ring
+    // from the new artifact and land on the chapter holding their utterance.
+    if (level === 'chapter') {
+      const landedId = rebuilt[target]?.meta?.chapterId;
+      const { items, selectedIndex } = chapterChain(landedId);
+      if (!items.length) return false;
+      app.setPrimaryItems(items, selectedIndex, true);
+      return true;
+    }
+
     // Where the reader's own NUMBER falls in the new artifact — the seat they
     // would have been given if the two traditions counted alike.
-    const byNumber = rebuilt.findIndex(it => it && it.bookKey === bookId
-      && it.name === selected.name
-      && it.meta?.chapterLabel === selected.meta?.chapterLabel);
+    const byNumber = rebuilt.findIndex(it => it && it.bookKey === anchor.bookKey
+      && it.name === anchor.name
+      && it.meta?.chapterLabel === anchor.meta?.chapterLabel);
     const staged = byNumber >= 0 && byNumber !== target;
-    const noPerformance = Boolean(selected.meta?.convention || rebuilt[target]?.meta?.convention);
+    const noPerformance = Boolean(anchor.meta?.convention || rebuilt[target]?.meta?.convention);
 
     if (staged && !noPerformance && typeof app.glideToItem === 'function') {
       app.setPrimaryItems(rebuilt, byNumber, true);
