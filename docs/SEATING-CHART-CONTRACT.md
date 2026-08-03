@@ -81,6 +81,37 @@ receives one chart for the one artifact the reader can choose.
   name is Πρόλογος and renders as a name, not a number) costs nothing: it is
   simply the sequence's first entry. The 1:1 majority of the corpus stays
   this cheap.
+- **POSITION CANNOT IDENTIFY, ONLY ORDER** (amended for W-32, 2026-08-03).
+  The integer form above leans on position to say *which* spine chapter it
+  is, and that silently stops being true the moment an edition's chapters
+  stop corresponding one-to-one with the spine's. The Latin Psalm 9 is the
+  Hebrew's 9 **and** 10; from the split onward every position is off by one,
+  and a bare integer still parses while resolving to the wrong chapter for
+  the rest of the book. Seven books each of LXX and THEOD were wrong this
+  way and the charts were withdrawn. So:
+
+  **A book is ALL-POSITIONAL or ALL-EXPLICIT — never mixed.** Bare integers
+  are legal only in a book whose chapters correspond one-to-one, in order,
+  with the spine's. If any chapter in a book splits, merges, reorders or
+  relabels, then EVERY entry in that book names its own source. (This is the
+  same rule already stated below for a book whose reading order diverges —
+  Greek Jeremiah — now generalized, which settles W-30's last item too.)
+
+  **The invariant that would have caught it, and belongs in cargo CI:** for
+  any book written with bare integers, the entry count must equal that
+  book's spine chapter count. One line, and it is the check whose absence
+  Wilbur rightly called a gap in testing rather than only in the generator.
+
+- **A compressed RUN is `{ "c": label, "u": [spineChapter, first, last] }`** —
+  N identity seats labelled `"1"`…`"N"`, drawn from that one contiguous
+  stretch of that one spine chapter. It exists so the fix above stays cheap:
+  spelling the Psalms out seat by seat would cost some 140 entries where a
+  run costs one line each, and the same in Jeremiah and Sirach. A run's
+  span must be a SINGLE range — anything folded or scattered is a seat list,
+  not a run — and an edition whose verse labels are not `1…N` uses a seat
+  list as well. The compression is only a spelling: a run must expand to
+  exactly the seats its long form would have produced.
+
 - **An explicit chapter is `{ "c"?, "convention"?, "s": [seats…] }`.**
   `c` is the edition's own chapter label, when its grouping departs from the
   spine's (Hebrew Malachi's `"3"`); omitted, the chapter keeps the

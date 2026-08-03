@@ -31,7 +31,22 @@ const bookForm = entry => {
   return null;
 };
 
-// A chapter entry is an integer (identity) or `{ c?, convention?, s }`.
+// A chapter entry is an integer (identity), a compressed RUN
+// `{ c, u }`, or an explicit seat list `{ c?, convention?, s }`.
+//
+// THE RUN EXISTS BECAUSE POSITION CANNOT IDENTIFY (W-32, Wilbur, 2026-08-03).
+// The integer form says "the spine chapter at the same POSITION", which
+// silently stops being true the moment an edition's chapters stop
+// corresponding one-to-one with the spine's — the Latin Psalm 9 is the
+// Hebrew's 9 AND 10, so from there every position is off by one and a bare
+// integer resolves to the wrong chapter for the rest of the book. Seven books
+// of LXX and THEOD were wrong this way, and the charts were withdrawn.
+//
+// A run names its own source instead of leaning on position: `{"c":"10",
+// "u":["9",22,39]}` is eighteen identity seats labelled 1..18, drawn from
+// spine chapter 9's utterances 22 through 39. Spelling those out seat by seat
+// would cost ~140 entries in the Psalms alone, which is why the compression
+// has to survive the fix.
 const chapterForm = entry => {
   if (Number.isInteger(entry) && entry >= 0) return { identity: true, count: entry };
   if (entry && Array.isArray(entry.s)) {
@@ -40,6 +55,23 @@ const chapterForm = entry => {
       label: entry.c != null ? String(entry.c) : null,
       convention: entry.convention === true,
       seats: entry.s
+    };
+  }
+  if (entry && entry.u && !entry.s) {
+    const span = spanForm(entry.u);
+    // A run is one contiguous stretch of one spine chapter; anything folded
+    // or scattered is a seat list, not a run.
+    if (!span || span.length !== 1) return null;
+    const [chapterKey, first, last] = span[0];
+    const seats = [];
+    for (let o = first; o <= last; o += 1) {
+      seats.push({ l: String(o - first + 1), u: [chapterKey, o, o] });
+    }
+    return {
+      identity: false,
+      label: entry.c != null ? String(entry.c) : null,
+      convention: entry.convention === true,
+      seats
     };
   }
   return null;

@@ -555,3 +555,59 @@ describe('an edition that lacks the reader\'s verse still re-seats them', () => 
     assert.ok(sky.includes('11') && sky.includes('32'));
   });
 });
+
+// ——— W-32: a spine chapter that feeds TWO of the edition's own ———
+describe('a compressed run names its own source (W-32)', () => {
+  // The Latin Psalm 9 is the Hebrew's 9 AND 10. Modelled here: the edition
+  // splits spine chapter 1 into its own chapters 1 and 2, so its chapter 3
+  // is the spine's chapter 2 — and from the split on, POSITION means
+  // nothing. This is the shape that made seven books of LXX and THEOD wrong.
+  const SPLIT = { edition: 'X', books: { ALPH: [
+    { c: '1', u: ['1', 1, 3] },
+    { c: '2', u: ['1', 4, 5] },
+    { c: '3', u: ['2', 1, 3] }
+  ] } };
+
+  it('one spine chapter deals seats to two of the edition\'s chapters', () => {
+    const items = expandChart(makeManifest().Gutenberg_Bible, SPLIT);
+    const chapters = [...new Set(items.map(i => i.meta.chapterLabel))];
+    assert.deepEqual(chapters, ['1', '2', '3'], 'the edition has THREE chapters over the spine\'s two');
+    const byLabel = l => items.filter(i => i.meta.chapterLabel === l);
+    assert.deepEqual(byLabel('1').map(i => i.name), ['1', '2', '3']);
+    assert.deepEqual(byLabel('2').map(i => i.name), ['1', '2'], 'labelled from 1 in its own chapter');
+    assert.deepEqual(byLabel('3').map(i => i.name), ['1', '2', '3']);
+  });
+
+  it('the run seats point at the right utterances — the off-by-one that broke it', () => {
+    const items = expandChart(makeManifest().Gutenberg_Bible, SPLIT);
+    // The edition's 2:1 is the spine's 1:4, NOT the spine's 2:1.
+    const seat = items.find(i => i.meta.chapterLabel === '2' && i.name === '1');
+    assert.deepEqual(seat.meta.span, [['1', 4, 4]]);
+    // And its chapter 3 really is the spine's chapter 2.
+    const third = items.find(i => i.meta.chapterLabel === '3' && i.name === '1');
+    assert.deepEqual(third.meta.span, [['2', 1, 1]]);
+    // Every utterance still lands somewhere, exactly once.
+    for (let o = 1; o <= 5; o += 1) {
+      assert.ok(seatIndexForUtterance(items, 'ALPH', '1', o) >= 0, `spine 1:${o} is seated`);
+    }
+  });
+
+  it('a run must be ONE contiguous stretch — a fold is a seat list, not a run', () => {
+    const items = expandChart(makeManifest().Gutenberg_Bible, { edition: 'X', books: { ALPH: [
+      { c: '1', u: [['1', 1, 1], ['1', 3, 3]] },   // scattered: refused as a run
+      3
+    ] } });
+    assert.ok(items === null || items.every(i => i.meta.chapterLabel !== '1'),
+      'a scattered run is refused rather than silently mis-seated');
+  });
+
+  it('runs and seat lists agree — the same chapter, written either way', () => {
+    const root = makeManifest().Gutenberg_Bible;
+    const asRun = expandChart(root, { edition: 'X', books: { ALPH: [{ c: '1', u: ['1', 2, 4] }] } });
+    const asSeats = expandChart(root, { edition: 'X', books: { ALPH: [{ c: '1', s: [
+      { l: '1', u: ['1', 2, 2] }, { l: '2', u: ['1', 3, 3] }, { l: '3', u: ['1', 4, 4] }
+    ] }] } });
+    assert.deepEqual(asRun.map(i => [i.name, i.meta.span]), asSeats.map(i => [i.name, i.meta.span]),
+      'the compression is only a spelling — it must expand to the identical seats');
+  });
+});
