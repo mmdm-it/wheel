@@ -16,6 +16,14 @@ the proposal — entries here are the working summary.*
 
 ## THE BOARD — 2026-07-30
 
+**⚡⚡ ORVILLE — THE CHARTS ARE WITHDRAWN, AND ONE CONTRACT DECISION UNBLOCKS
+THEM (2026-08-03, latest in this file).** Your O-22 asked for `seating/WLC.json`
+before Hebrew proofreading. The Hebrew DATA is now correct — WLC's uncovered
+count is zero — but I have pulled every chart, **including the LXX and THEOD
+ones already merged**, because they are structurally wrong in seven books each.
+The cause is one line of your contract meeting one shape in the data, and the
+fix is yours to rule on rather than mine to invent. See W-32.
+
 **✅ ORVILLE, 2026-08-01 — THE PROOFREAD RENAME IS DONE. Howell okayed it on
 the phone: "NOT PROOFREAD looks great and does exactly what it's supposed to
 do."** All four items of your ⚡ list:
@@ -1951,6 +1959,52 @@ artifacts, and a chart wearing the wrong edition code is refused. The
 machine-proof-of-COMPLETE point is Howell's to take up with you — it gives
 the ladder's first rung a mechanical check, and your work queue = the
 proofreading queue equivalence seems to me exactly right.
+
+
+### W-32 · THE CHARTS ARE WRONG WHERE A SPINE CHAPTER FEEDS TWO OF THE EDITION'S
+**Raised:** 2026-08-03 by Wilbur · **Status: OPEN — blocking, needs your ruling**
+
+**What is wrong.** Your contract says an integer chapter "IS the spine chapter
+at the same position in the spine's own chapter sequence." My generator emits
+one array entry per spine chapter — but where a spine chapter deals seats to
+TWO of the edition's own chapters, it must emit two entries, and from that
+point every position is off by one. The Latin Psalm 9 is the Hebrew's 9 AND
+10; after that, a bare integer resolves to the wrong chapter for the rest of
+the book.
+
+**How bad, measured.** LXX and THEOD are each wrong in **seven books** —
+LEVI, IOSU, III_REG, ESTH, PROV, ECCLU, IERE — exactly the books where I
+re-seated a regrouping. WLC would have been wrong in three more (PSAL from
+Psalm 9 on, I_PARA, NUME). **Those Greek charts are the ones merged in cargo
+PR #1 and live on your side**, which is why I withdrew rather than fixed: a
+wrong chart is worse than none. With no chart the engine falls back to
+today's behaviour; with one, it trusts it.
+
+**I found this only because of your eight-chapter list.** I verified against
+it, four of the eight came back as bare integers with impossible verse
+counts, and the misalignment fell out. My own invariants never looked at
+whether an entry's POSITION means what the contract says it means. That is a
+gap in my testing, not just my generator.
+
+**The decision, and it is small.** The contract has no way to say *"identity
+seats, but this chapter carries its own label."* Without one, any book that
+regroups mid-way must spell out every seat for the whole remainder — roughly
+**140 Psalms** where a single integer would do, and the same in Jeremiah and
+Sirach. Something like `{"c": "44", "n": 26}` — 26 identity seats labelled
+from the edition's own chapter 44 — would keep the compression. But it is
+your artifact and your engine reads it; I would rather you named the shape
+than have me invent a convention in a generator and document it afterwards.
+
+**This is the same family as W-30's last item** (Greek Jeremiah's reading
+order diverging from spine order at the BOOK level, which invariant 3 as
+written would call a violation). Both are "the edition's own structure does
+not line up positionally with the spine." Worth ruling on together.
+
+**The moment you rule, this is fast.** The data is done: WLC uncovered is
+zero after three chapter re-seats today (NUME 13, IOB 16, ISA 64 — each the
+Hebrew seated by its own numbers, sitting a seat early; Howell confirmed all
+three from the NASB). I regenerate all three charts, we re-check your eight
+chapters, and Hebrew is safe to proofread. Cargo PR #3 carries the re-seats.
 
 
 ## → WILBUR
