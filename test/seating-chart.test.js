@@ -473,8 +473,13 @@ describe('the child pyramid holds the same seats as the ring', () => {
     });
     h.layoutBindings.setBibleMode('verse');
     const { items: chapters } = h.layoutBindings.getBibleChapterChain(null);
-    const prologue = chapters.find(c => c && c.bookKey === 'ECCLU' && !/^\d+$/.test(c.name));
-    assert.ok(prologue, 'Sirach opens on a named chapter');
+    // Sirach's FIRST chapter, whatever the chart chose to call it. It was
+    // named Πρόλογος when the spine's display identity reached the ring; the
+    // regenerated chart labels it "0" (reported to Wilbur, O-25). That is a
+    // data question — what this test guards is the ENGINE contract: whatever
+    // the chapter is called, its stars must land.
+    const prologue = chapters.find(c => c && c.bookKey === 'ECCLU');
+    assert.ok(prologue, 'Sirach opens on a chapter');
     const sky = h.layoutBindings.getBibleVerseItems(prologue);
     assert.ok(sky.length > 0);
     // The file keys these by sequence ("ECCLU_0_1"); the chart names the
@@ -609,5 +614,34 @@ describe('a compressed run names its own source (W-32)', () => {
     ] }] } });
     assert.deepEqual(asRun.map(i => [i.name, i.meta.span]), asSeats.map(i => [i.name, i.meta.span]),
       'the compression is only a spelling — it must expand to the identical seats');
+  });
+});
+
+// ——— A chapter that declines to relabel keeps its SOURCE's name ———
+describe('an explicit chapter without `c` resolves through its span', () => {
+  it('inherits the display identity of the spine chapter it draws from', () => {
+    // The Sirach Prologue's spine chapter is named Πρόλογος, not "0". Under
+    // the all-explicit rule position identifies nothing, so a chapter that
+    // omits `c` must take its name from the source its seats name — which is
+    // how an edition keeps a NAMED chapter without restating the name.
+    const root = makeManifest().Gutenberg_Bible;
+    const items = expandChart(root, { edition: 'X', books: { BETH: [
+      { u: ['0', 1, 2] },   // no `c` — the spine's chapter 0, "Prologus"
+      { c: '1', u: ['1', 1, 3] }
+    ] } });
+    const named = items.filter(i => i.meta.chapterLabel === 'Prologus');
+    assert.equal(named.length, 2, 'the prologue keeps its name and its seats');
+    assert.equal(named[0].id, 'BETH_Prologus_1');
+    assert.deepEqual(named.map(i => i.meta.span), [[['0', 1, 1]], [['0', 2, 2]]]);
+  });
+
+  it('does not fall back to whatever sits at the same POSITION', () => {
+    // The trap the run form exists to close: an entry's position must not
+    // decide what it is. Here entry 0 draws from the spine's SECOND chapter.
+    const root = makeManifest().Gutenberg_Bible;
+    const items = expandChart(root, { edition: 'X', books: { ALPH: [{ u: ['2', 1, 3] }] } });
+    assert.equal(items.length, 3);
+    assert.equal(items[0].meta.chapterLabel, '2', 'named by its source, not by position 0');
+    assert.deepEqual(items[0].meta.span, [['2', 1, 1]]);
   });
 });
