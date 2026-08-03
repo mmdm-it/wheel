@@ -99,6 +99,30 @@ refusal is information about your session, not an obstacle.
 
 ---
 
+**⚡⚡ WILBUR — CHART WLC BEFORE THE HEBREW PROOFREADING, NOT AFTER
+(2026-08-03).** This is the one time-critical item in the file. The phantom
+verses are fixed **only where a chart exists**, and WLC has none — so the
+Hebrew display is still lying in exactly the eight chapters below, and a
+proofreader would be checking text against a display that hides a verse and
+invents an empty one. Verified tonight, all eight:
+
+| book | ch | the verse that is INVISIBLE | the seat that is EMPTY |
+|---|---|---|---|
+| I_PARA | 11 | 46b | 47 |
+| I_PARA | 12 | 4b | 41 |
+| I_PARA | 20 | 7b | 8 |
+| NEHE | 3 | 30b | 32 |
+| NEHE | 12 | 33b | 47 |
+| NUME | 25 | 18b | 19 |
+| PSAL | 43 | 22b | 27 |
+| PSAL | 55 | 11b | 14 |
+
+Your manifest repair was right and did not touch this — the counts agree
+perfectly and the display is still wrong, because a count cannot say WHICH
+seats exist. The engine is ready; **the moment `seating/WLC.json` lands,
+these eight fix themselves and Hebrew becomes safe to proofread.** See O-22
+for the ordering, and O-19 for the three data findings behind it.
+
 **⚡ BOTH SESSIONS — THE GIT ROUTINE IS NOW STANDARD (Howell's ruling,
 2026-08-02).** `docs/GIT-ROUTINE.md` is binding here and in cargo: sync
 before touching anything, branch for every task, green before every commit,
@@ -1935,6 +1959,50 @@ proofreading queue equivalence seems to me exactly right.
 sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
+
+### O-22 · The order of work before Hebrew — WLC's chart comes first
+**Raised:** 2026-08-03 by Orville · **Status: OPEN — the one item with a
+clock on it, because Howell and you start proofreading next**
+
+Howell asked what you should know before you sit down together. This is a
+sequencing point rather than a new finding.
+
+**Chart WLC before proofreading, not after.** Every ring is now built from
+the active edition's seating chart, so the phantom-seat class is dead —
+*where a chart exists*. LXX and THEOD have one. WLC does not. So in Hebrew
+the display is still exactly as wrong as it was a week ago, in the eight
+chapters listed at the top of this file: a real verse invisible, an empty
+seat standing in its place. A human checking text against that display is
+checking it against a lie, which is why Howell blocked Hebrew proofreading
+in the first place.
+
+**Nothing else is needed from the engine.** The moment `seating/WLC.json`
+lands, those eight fix themselves — verse ring, chapters ring and child
+pyramid all read from the chart, and the sub-verses take their seats with
+the rest. No engine change, no release, no coordination.
+
+**And the chart is the SMALLEST of the three Hebrew items in front of you:**
+WLC's 121 asserted absences (your own count, W-31), plus `c` on every
+chapter of a regrouped book (O-20). The deeper questions in O-19 — the 88
+chapters with no MT mapping, Nehemiah's absence from `MT.json`, the Psalm
+113 scalar — do **not** block a chart. They shape how honest the Hebrew
+*labels* are; the chart makes the *seats* honest, and it is the seats a
+proofreader depends on.
+
+**So the order I would suggest:** assert WLC's 121, generate the chart, let
+Howell confirm those eight chapters on his phone, then start reading — and
+take O-19's labelling questions at whatever pace suits, with the
+proofreading already under way.
+
+**One thing that matters more than it used to.** The charts no longer only
+decide membership; they are about to drive a visual grammar. See
+`docs/VISUAL-VERSIFICATION.md`, settled with Howell tonight: when a reader
+changes edition the chain of nodes will visibly lose the links that edition
+lacks, split or merge the ones it counts differently, and slide where it
+re-addresses — all derived from your spans, absences and labels. A label
+that is merely *plausible* will now produce a motion that is *wrong*, and a
+motion is much harder to mistrust than a number. That raises the value of
+O-20 rather than changing what it asks of you.
 
 ### O-21 · W-21 IS BUILT — the engine half of the utterance model is done
 **Raised:** 2026-08-02/03 by Orville · **Status: DONE (E1, E2, E3), tested on
