@@ -1,6 +1,6 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, toTraditionNumeral, toDisplayCase } from './volume-helpers.js';
+import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, getVerseTextForSeat, toTraditionNumeral, toDisplayCase } from './volume-helpers.js';
 import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
 import { seatIndexForUtterance } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
@@ -390,8 +390,11 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       // With NO edition certified there is no active translation at all, so
       // nothing resolves and the sector stays empty. That is the honest face
       // of a volume with nothing to read.
+      // By the seat's SPAN, not its label — see getVerseTextForSeat. The
+      // two agree everywhere the edition counts as the spine does, and
+      // differ exactly where this model exists to help.
       const resolved = activeTranslation
-        ? getVerseTextResolved(externalFile, verseKey, [activeTranslation])
+        ? getVerseTextForSeat(externalFile, selected?.meta, [activeTranslation])
         : null;
       readAhead(selected, manifest);
       // uniform: every verse shares the longest verse's type size (Howell

@@ -898,6 +898,50 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
 // unconditionally (Howell ruled 2026-07-24): it served unmarked Greek to
 // English readers — a silent lie. Only the declared preference order may
 // answer; past it, the honest empty.
+// THE SPINE'S OWN SLOT ORDER (the seating-chart contract): integer ids
+// ascending, each sub-slot immediately after the integer it hangs off,
+// stacked sub-slots lexical. An utterance ORDINAL indexes this sequence.
+export function slotKeyForOrdinal(rawVerses, ordinal) {
+  if (!rawVerses || !Number.isInteger(ordinal) || ordinal < 1) return null;
+  const keys = Object.keys(rawVerses).sort((a, b) => {
+    const ai = parseInt(a, 10), bi = parseInt(b, 10);
+    if (ai !== bi) return ai - bi;
+    const as = a.slice(String(ai).length), bs = b.slice(String(bi).length);
+    return as < bs ? -1 : as > bs ? 1 : 0;
+  });
+  return keys[ordinal - 1] ?? null;
+}
+
+// THE TEXT BELONGS TO THE UTTERANCE, NOT TO THE LABEL (Howell from the
+// phone, 2026-08-03: "1 Chronicles 11:47 has no text").
+//
+// A seat wears the EDITION's verse name; the chapter file is keyed by the
+// SPINE's slot ids, and after the utterance model those two stopped being
+// the same string. Hebrew 1 Chronicles 11:47 is the spine's slot "46b" —
+// there is no slot "47", so the lookup found nothing and the reader met a
+// blank. Worse, and this is why it had to be fixed before any proofreading:
+// Hebrew Psalm 44:24 is the spine's slot "23", so looking up "24" finds a
+// real verse that is THE WRONG ONE. A blank is visible; an off-by-one in
+// scripture is not.
+//
+// So the text is fetched by the seat's span — spine chapter and ordinal —
+// and a fused seat reads from its FIRST utterance, where the whole text
+// lives (W-30). The label is for the reader; the span is for the lookup.
+export function getVerseTextForSeat(externalFile, meta, preferredTranslations = ['VUL']) {
+  const cached = _verseCache.get(externalFile);
+  if (!cached?.rawVerses) return null;
+  // AN UNCHARTED EDITION KEEPS ITS LABEL (Howell, from the phone, minutes
+  // after the fix above: English Psalm 43 came back off by one). The identity
+  // fallback derives its spans from verse_count, which cannot know where a
+  // chapter's sub-slots fall — so seat 23 claims utterance 23 while the
+  // reader's verse 23 is slot "23", and following the span walked the whole
+  // rest of the chapter one place back. Where the chart is synthetic the
+  // label is the only truth there is; where it is REAL the span is.
+  const span = !meta?.synthetic && Array.isArray(meta?.span) ? meta.span[0] : null;
+  const key = span ? slotKeyForOrdinal(cached.rawVerses, span[1]) : null;
+  return getVerseTextResolved(externalFile, key ?? meta?.verseKey, preferredTranslations);
+}
+
 export function getVerseTextResolved(externalFile, verseKey, preferredTranslations = ['VUL']) {
   const cached = _verseCache.get(externalFile);
   if (!cached?.rawVerses) return null;

@@ -113,7 +113,12 @@ export function identityChartFromManifest(root) {
       });
     });
   });
-  return { edition: null, books };
+  // FLAGGED AS SYNTHETIC. verse_count knows HOW MANY slots a chapter has and
+  // nothing about WHERE its sub-slots fall, so this chart's spans are a
+  // fiction: seat k claims utterance k, which stops being true in any chapter
+  // holding a "15b". The flag tells the text lookup to trust the LABEL here,
+  // which is what an uncharted edition has always done.
+  return { edition: null, identity: true, books };
 }
 
 /**
@@ -133,6 +138,7 @@ export function expandChart(root, chart) {
   if (!root?.testaments || !chart || typeof chart.books !== 'object' || chart.books === null) return null;
 
   const items = [];
+  const synthetic = chart.identity === true;
   let usable = false;
 
   Object.entries(root.testaments).sort(bySortNumber).forEach(([testamentId, testament]) => {
@@ -198,6 +204,7 @@ export function expandChart(root, chart) {
                   testamentId,
                   verseKey: String(k),
                   chapterLabel,
+                  synthetic,
                   externalFile,
                   span: [[String(spineKey), k, k]],
                   convention: form.convention
@@ -252,6 +259,7 @@ export function expandChart(root, chart) {
                 testamentId,
                 verseKey: label,
                 chapterLabel,
+                synthetic,
                 externalFile,
                 span,
                 convention: form.convention || ch.convention
