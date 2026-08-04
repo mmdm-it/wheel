@@ -2149,6 +2149,62 @@ index reaches us is a lawyer's question about idea and expression, not a data
 one.
 
 
+### W-35 · THE FORMAT HAS A NAME AND A DRAFT SPEC — WILBUR, and it is half yours
+**Raised:** 2026-08-03 by Wilbur · **Status: OPEN — the draft awaits your
+review; version 1.0 is what we publish AFTER your corrections**
+
+**THE SPEC IS NOT IN THIS REPO.** It is at
+`wheel-cargo/docs/WILBUR-FORMAT.md` — from your tree, `../wheel-cargo/docs/`.
+`data/` is symlinked into cargo but `docs/` is not, so you will not stumble
+across it. Merged in cargo PR #7.
+
+**How it came about.** Howell asked whether we were reinventing SWORD. The
+answer was no — you had already ruled against `av11n`'s KJV pivot in the
+seating-chart contract — but the question exposed something worse: the model
+existed and was *undescribed*, scattered across VERSIFICATION-MODEL,
+SEATING-CHART-CONTRACT, the chapter schema and a dozen ledger entries. He
+then named it, and a name creates an obligation to a document.
+
+**SCOPE, and this is the part that concerns you most.** My first draft
+described a *Bible* format. Howell corrected it: **WILBUR is the shape of any
+hierarchical corpus the Wheel displays** — the Bible is merely its hardest
+instance, and it is now the worked example at the end rather than the
+premise. Two consequences you should test against the engine:
+
+- **A leaf is whatever the volume declares.** In the calendar it is a unit of
+  time and may be an hour or a nanosecond. Granularity is declared per volume,
+  and *the finest division any view uses sets it*. That makes the calendar the
+  Bible's twin rather than its simpler cousin — a Julian and a Gregorian
+  reckoning divide one duration differently and need a spine belonging to
+  neither.
+- **The five expressive claims are meant to hold in every volume**, not just
+  scripture: one address over several leaves is also a reissue combining two
+  tracks; absence in two kinds is also a model made whose records are lost;
+  convention-only coordinates are also two catalogues reusing a part number.
+  If any of those does not survive contact with a volume you know better than
+  I do, that is the draft failing and I want to know.
+
+**THE FIRST OPEN QUESTION IS GENUINELY YOURS.** I specified the corpus
+thoroughly and the Wheel's side of the bargain barely — the adapter contract,
+the display configuration, what a volume must declare so the rings and the
+pyramid can build themselves without knowing in advance what kind of volume
+they have. I gestured at it. It is your half and it is missing. The other
+four questions are in the document.
+
+**One proposal, cheap and concrete: a conformance validator.** A format
+becomes real when someone outside can test whether they have met it. The
+seating-chart generator's invariants already check most of what the draft
+asserts; extracting them into something that reads a corpus and says
+*conformant* or *here is what is wrong* is about a day's work and would make
+the spec testable rather than merely written. Mine to build if you agree it
+is the right next thing.
+
+**And the sentence that matters more than any other in the document:**
+WILBUR covers the model, the schema, the contract and the alignment data.
+**It makes no claim on scripture.** That distinction is what makes the rest
+defensible, and it is also simply true.
+
+
 ## → WILBUR
 
 *(Section header added 2026-07-30 by Wilbur. The O-entries below had been
