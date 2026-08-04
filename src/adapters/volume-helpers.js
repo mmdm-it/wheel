@@ -930,7 +930,14 @@ export function slotKeyForOrdinal(rawVerses, ordinal) {
 export function getVerseTextForSeat(externalFile, meta, preferredTranslations = ['VUL']) {
   const cached = _verseCache.get(externalFile);
   if (!cached?.rawVerses) return null;
-  const span = Array.isArray(meta?.span) ? meta.span[0] : null;
+  // AN UNCHARTED EDITION KEEPS ITS LABEL (Howell, from the phone, minutes
+  // after the fix above: English Psalm 43 came back off by one). The identity
+  // fallback derives its spans from verse_count, which cannot know where a
+  // chapter's sub-slots fall — so seat 23 claims utterance 23 while the
+  // reader's verse 23 is slot "23", and following the span walked the whole
+  // rest of the chapter one place back. Where the chart is synthetic the
+  // label is the only truth there is; where it is REAL the span is.
+  const span = !meta?.synthetic && Array.isArray(meta?.span) ? meta.span[0] : null;
   const key = span ? slotKeyForOrdinal(cached.rawVerses, span[1]) : null;
   return getVerseTextResolved(externalFile, key ?? meta?.verseKey, preferredTranslations);
 }

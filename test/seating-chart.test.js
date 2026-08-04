@@ -686,3 +686,34 @@ describe('verse text is fetched by the seat\'s span (Howell, from the phone)', (
     );
   });
 });
+
+// ——— An uncharted edition keeps its label ———
+describe('the identity fallback trusts the LABEL, not its synthetic span', () => {
+  const haveCorpus = existsSync(new URL('../data/gutenberg/chapters/PSAL/043.json', import.meta.url));
+
+  it('marks its seats synthetic, because verse_count cannot locate a sub-slot', () => {
+    const root = makeManifest().Gutenberg_Bible;
+    const identity = identityChartFromManifest(root);
+    assert.equal(identity.identity, true);
+    assert.ok(expandChart(root, identity).every(i => i.meta.synthetic === true));
+    // A real chart is not synthetic and its spans ARE the truth.
+    const real = expandChart(root, { edition: 'X', books: { ALPH: [{ c: '1', u: ['1', 1, 3] }] } });
+    assert.ok(real.every(i => i.meta.synthetic === false));
+  });
+
+  it('REGRESSION: an uncharted English psalm must not walk one verse back', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    // I introduced this fixing the blank at 1 Chronicles 11:47, and Howell
+    // caught it within the hour: English Psalm 43 has no chart, so its spans
+    // come from verse_count — which cannot know that "22b" sits between 22
+    // and 23. Following those spans showed verse 23 empty and verses 24-27
+    // each bearing the previous verse's words. The label is the only truth an
+    // uncharted edition has.
+    const { getVerseTextResolved, slotKeyForOrdinal } = await import('../src/adapters/volume-helpers.js');
+    const psalm = JSON.parse(readFileSync(new URL('../data/gutenberg/chapters/PSAL/043.json', import.meta.url), 'utf-8'));
+    assert.equal(slotKeyForOrdinal(psalm.verses, 23), '22b', 'the synthetic span points here');
+    assert.ok(!psalm.verses['22b'].text.DRA, 'which the English does not have — hence the blank');
+    assert.ok(psalm.verses['23'].text.DRA, 'while the label points at real English');
+    assert.notEqual(psalm.verses['23'].text.DRA, psalm.verses['24'].text.DRA,
+      'and 23 and 24 are different verses, which is what made the slip silent');
+  });
+});
