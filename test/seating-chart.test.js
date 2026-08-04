@@ -645,3 +645,44 @@ describe('an explicit chapter without `c` resolves through its span', () => {
     assert.deepEqual(items[0].meta.span, [['2', 1, 1]]);
   });
 });
+
+// ——— The text belongs to the utterance, not to the label ———
+describe('verse text is fetched by the seat\'s span (Howell, from the phone)', () => {
+  const haveCorpus = existsSync(new URL('../data/gutenberg/seating/WLC.json', import.meta.url));
+  it('a seat whose label has no matching spine slot still finds its words', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    const { slotKeyForOrdinal } = await import('../src/adapters/volume-helpers.js');
+    const chapter = JSON.parse(readFileSync(new URL('../data/gutenberg/chapters/I_PARA/011.json', import.meta.url), 'utf-8'));
+    // Hebrew 1 Chronicles 11:47 IS the spine's slot "46b" — there is no "47".
+    assert.equal(chapter.verses['47'], undefined, 'the label the reader sees does not exist as a slot');
+    assert.equal(slotKeyForOrdinal(chapter.verses, 47), '46b', 'the ordinal finds it');
+    assert.ok(chapter.verses['46b'].text.WLC, 'and there are words there');
+  });
+
+  it('THE SILENT ONE: a label that DOES match a slot must not win over the span', { skip: haveCorpus ? false : 'corpus not present (W-10)' }, async () => {
+    const { slotKeyForOrdinal } = await import('../src/adapters/volume-helpers.js');
+    const psalm = JSON.parse(readFileSync(new URL('../data/gutenberg/chapters/PSAL/043.json', import.meta.url), 'utf-8'));
+    // Hebrew Psalm 44:24 is the spine's slot "23". Looking up the LABEL "24"
+    // finds a real verse — the WRONG one. A blank is visible; this is not.
+    const byLabel = psalm.verses['24']?.text?.WLC;
+    const byOrdinal = psalm.verses[slotKeyForOrdinal(psalm.verses, 24)]?.text?.WLC;
+    assert.ok(byLabel && byOrdinal, 'both resolve to real Hebrew');
+    assert.notEqual(byLabel, byOrdinal, 'and they are DIFFERENT verses — this is the bug');
+    assert.equal(slotKeyForOrdinal(psalm.verses, 24), '23');
+  });
+
+  it('the two agree wherever an edition counts as the spine does', async () => {
+    const { slotKeyForOrdinal } = await import('../src/adapters/volume-helpers.js');
+    const plain = { 1: {}, 2: {}, 3: {} };
+    assert.equal(slotKeyForOrdinal(plain, 2), '2', 'no sub-slots, no divergence');
+  });
+
+  it('sorts sub-slots after the integer they hang off, stacked ones lexical', async () => {
+    const { slotKeyForOrdinal } = await import('../src/adapters/volume-helpers.js');
+    // The order the contract fixes — and the order the FILE does not carry.
+    const messy = { 19: {}, 20: {}, '19d': {}, '19b': {}, '19c': {} };
+    assert.deepEqual(
+      [1, 2, 3, 4, 5].map(o => slotKeyForOrdinal(messy, o)),
+      ['19', '19b', '19c', '19d', '20']
+    );
+  });
+});
