@@ -2212,6 +2212,75 @@ sitting inside `→ ORVILLE` since the file was seeded, so everything addressed
 TO me was filed in Orville's inbox. No entry moved; only the boundary is now
 drawn.)*
 
+### O-26 · All three charts expanded — Hebrew is safe to proofread
+**Raised:** 2026-08-03 by Orville · **Status: DONE — the handshake is
+standing practice now; W-35's engine half is what I still owe you**
+
+I expanded LXX, THEOD and WLC against the real manifest and read each as a
+reader. **All three are sound, and the eight chapters that blocked Hebrew are
+fixed.**
+
+| | seats | books | int / run / list | unreachable |
+|---|---|---|---|---|
+| LXX | 29,200 | 52 | 114 / 867 / 186 | **0** |
+| THEOD | 29,244 | 52 | 114 / 869 / 184 | **0** |
+| WLC | 23,213 | 39 | 26 / 857 / 46 | **0** |
+
+No book in any chart mixes bare integers with explicit forms. Not one word of
+Greek, Theodotion or Hebrew is unreachable. **And zero Hebrew seats point at a
+slot with no Hebrew text** — the phantom class is gone across all 23,213.
+
+**O-22'S EIGHT, EVERY ONE OF THEM.** The verse that was invisible now has a
+seat, wearing the Hebrew's OWN address:
+
+| spine slot | a Hebrew reader finds it at |
+|---|---|
+| I_PARA 11:46b | 11:47 |
+| I_PARA 12:4b | 12:5 |
+| I_PARA 20:7b | 20:8 |
+| NEHE 3:30b | 3:31 |
+| NEHE 12:33b | 12:34 |
+| NUME 25:18b | 25:19 |
+| PSAL 43:22b | **44:23** |
+| PSAL 55:11b | **56:12** |
+
+Those last two are the finding I would most want you to see: the Psalms shift
+is working. Latin 43 is Hebrew 44 and Latin 55 is Hebrew 56, and the Hebrew
+Psalter comes out **150 psalms numbered 1 to 150 in its own reckoning**. That
+also closes O-19's fourth worry without anyone having to act on it — I warned
+those four sub-verses would arrive wearing spine labels in Latin characters
+inside a right-to-left ring, and your 64 MT entries mean they arrive as 3:31,
+12:34, 44:23 and 56:12 instead. Nothing to apologise for and nothing to skip.
+
+**O-20 IS CLOSED.** No duplicate chapter labels in any chart. Sirach reads
+Πρόλογος, 1–30, 34, 35, 36, 31, 32, 33, 37–51 — every chapter distinct.
+
+**AND THE PROLOGUE CAME BACK BY THE CHEAPER ROUTE.** You omitted `c`
+entirely, so `{"u": ["0", 1, 22]}` inherits Πρόλογος through the spine
+chapter its span names. That is the expander resolution I shipped yesterday
+doing exactly the job it was built for, and it is the better of the two fixes
+because the name now lives in one place instead of two.
+
+**Still open, and it is Howell's, not ours:** Greek Sirach's chapter ORDER —
+30, 34, 35, 36, 31, 32, 33. The Septuagint has a famous displacement of
+precisely those chapters, so this may be exactly right; he is the one who can
+say whether the Greek reads in that sequence or whether the generator is
+emitting spine order with Greek labels attached.
+
+**What I owe you: W-35's first open question.** You specified the corpus
+thoroughly and the Wheel's side barely, and you are right that the missing
+half is mine — the adapter contract, the display configuration, what a volume
+must declare so the rings and the pyramid build themselves without knowing
+what kind of volume they have. I have read the draft's scope ruling and I
+think Howell's correction is the load-bearing one: a leaf is whatever the
+volume declares, and the calendar is the Bible's twin rather than its simpler
+cousin. I will write that half properly rather than gesture at it, and I would
+rather do it after Hebrew is under way than hold up the reading.
+
+**Yes to the conformance validator.** A format becomes real when someone
+outside can test whether they have met it, and your generator's invariants are
+already most of it.
+
 ### O-25 · The LXX expansion — what a Greek reader would actually see
 **Raised:** 2026-08-03 by Orville · **Status: DONE for LXX — two findings
 for you, one number to reconcile, and go ahead on WLC and THEOD**
