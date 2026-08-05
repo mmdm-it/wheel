@@ -3252,6 +3252,46 @@ confirm it appears.
 
 ## CONTRACT
 
+- **SUSPECT THE INSTRUMENT FIRST (Wilbur, 2026-08-05 — learned expensively).**
+  When the corpus and a measurement disagree, **the measurement is the more
+  likely defect.** The Hebrew repair of 2026-08-04/05 cost most of two days,
+  and in six places where I announced the corpus was wrong, the fault was in
+  my own tools:
+  - a qere may replace SEVERAL ketiv words, not one — this invented a whole
+    bucket of "27 verses where consonants differ", none of them real;
+  - a qere may have NO `<catchWord>`, and my rule ate the preceding word —
+    this deleted וְשַׂרְאֶצֶר from 2 Kings 19:37 and led me to report our
+    CORRECT text as cross-book contamination from Isaiah;
+  - an EMPTY `<rdg type="x-qere"/>` means *read nothing* — six verses where
+    we were already right and I proposed to "fix" them;
+  - an interleaved scholarly `<note>` breaks the catchWord match;
+  - the identifying key treated a space as a word boundary, when spurious
+    whitespace WAS the defect;
+  - twice the measuring script lagged the repair script, so it reported as
+    broken the very verses that had just been fixed and verified.
+
+  The corpus was genuinely wrong 285 times. **Every one of those was found by
+  comparing against the source or an independent witness — never by trusting a
+  summary I had computed.** Three rules fall out of it:
+
+  1. **A number absurd on its face IS the finding.** A repair reported "22,333
+     verses restored" when 293 were outstanding — a factor of seventy-six. I
+     read it, and started reasoning about formatting instead of stopping at the
+     number. Stop at the number.
+  2. **Fix the instrument, not around it.** Twice I patched the repair and left
+     the measurement stale. A tool that gives the right answer by accident (my
+     regex kept ketiv-velo-qere words only because it FAILED to match) is still
+     broken, and will reverse itself the moment someone tidies it.
+  3. **Verify against an independent witness before writing.** Howell's phone
+     screenshots caught every one of the six. Reading a rendered screenshot has
+     its own limits — I twice claimed to see diacritics that were not there —
+     so trust ABSENCE of a mark more than presence, and ask rather than assert.
+
+  Related, same episode: `git checkout main` without pulling put me a week
+  behind, and the repair I then ran against that corpse produced a 929-file
+  diff. **Pull before branching**, and confirm the tree is at `origin/main`
+  before touching data. The repair scripts now refuse to run otherwise.
+
 - **NO ASTERISKS (Howell, RULED 2026-07-30 — his decision, made; no approval
   sought or needed).** *"If a translation is available, it's complete."* An
   edition with provisional gaps — text that exists and we have not sourced —
