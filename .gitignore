@@ -22,3 +22,14 @@ data/
 # Session-local licensing working papers (Wilbur's dossiers). The repo is
 # public and these are negotiation drafts — they must NEVER be committed.
 *.local.md
+
+# SIDEBARS — temporary single-topic discussion threads between Howell, Wilbur
+# and Orville (first instance: WORKFLOW-DISCUSSION_20260806.md). Howell's
+# ruling 2026-08-06: a sidebar is never committed. Deliberation happens here;
+# only the CONCLUSION goes to a blueprint or the ledger, and the sidebar is
+# then deleted or archived outside the repo.
+#
+# Ignored rather than merely agreed, because a sidebar lives untracked in a
+# tree where `git add -A` is routine — one careless commit and a document that
+# is supposed to be deletable is in a public repository permanently.
+*-DISCUSSION_*.md
