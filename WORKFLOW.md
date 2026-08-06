@@ -131,13 +131,17 @@ is the category error, and every rule below is a guard against a version of it.
   is the single cheapest rule here and it prevents the worst failure.
   (Who may merge, and branch shape: `docs/GIT-ROUTINE.md`.)
 
-- **A ruling gets a number the hour it is made.** Every decision earns a W- or
-  O- number and a line in the handoff ledger at the moment it is ruled, before
-  any document is edited. Specifications then describe the end state; the
-  numbered item is what makes someone responsible for reaching it. Numbered
-  work survives here. Unnumbered decisions evaporate, and a specification
-  section describing something unimplemented with no numbered item behind it is
-  an orphan by definition.
+- **A ruling gets a number the hour it is made**, before any document is
+  edited. Numbered work survives here; unnumbered decisions evaporate, and a
+  specification section describing something unimplemented with no numbered
+  item behind it is an orphan by definition. Two homes, by kind:
+  - a ruling about **the app or the data** earns a W-/O- number and a line in
+    the handoff ledger;
+  - a ruling about **how we work** earns a numbered rule in this section.
+
+  The ledger is for the app and the data structure and nothing else, so a
+  procedural ruling filed there would be lost among things it does not
+  resemble.
 
 - **A deferral must name what it makes provisional.** "Not yet" is only half a
   ruling. The other half is what the ruling has *already invalidated* in the
@@ -153,6 +157,25 @@ is the category error, and every rule below is a guard against a version of it.
 - **A PR that supersedes another says so in its first line.** Supersession is
   invisible in a list of PR titles, which is exactly what lets them be merged in
   an order that makes no sense.
+
+- **A ruling that supersedes an earlier one names the number it retires, in the
+  same breath** — and the retired entry is marked `SUPERSEDED BY <number>`, not
+  left OPEN. This is the ledger twin of the rule above, and it closes the gap
+  every other rule leaves: they all move decisions *into* the queue and none
+  governs how anything leaves it. An entry marked OPEN with no date reads as
+  current advice forever, which is how a superseded recommendation goes on being
+  followed. **A green light is a decision too** — "X is safe to do" can be true
+  when written and false a day later, and it is retracted the same way. The
+  problem is never that an entry is wrong; it is that nothing makes a stale one
+  stop looking live. *(Raised by Orville on review, 2026-08-06.)*
+
+- **Anything asserting a state carries a date and a source.** Three surfaces go
+  stale and only two of them are covered above: PRs, ledger entries, and the
+  claims inside specifications. A specification sentence stating something
+  checkable about the corpus or the engine — counts, coverage, "no view is the
+  hub" — is dated and says how it was measured, so it can be re-run and shown
+  false. Stated as timeless fact, it cannot be, and it will quietly outlive its
+  truth.
 
 - **The read-back.** When a ruling is made, it is read back with its number and
   its provisional casualties named, and confirmed, before work continues. The
