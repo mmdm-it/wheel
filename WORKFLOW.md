@@ -10,15 +10,76 @@ procedure, layered by how fast they change:
 - The **gate sequence, smoke checklist, and rules** are near-permanent and
   volume-agnostic. If a line here names a specific dataset, device, or bug,
   that line is in the wrong place.
-- **Decisions, and how they become work** is likewise near-permanent. The gate
-  sequence governs a *change*; that section governs a *decision* — how a ruling
-  becomes work and how work stays visible until it is done.
+- **What our documents are** and **Decisions, and how they become work** are
+  likewise near-permanent. The first says which documents are authoritative and
+  which are not; the second governs a *decision* — how a ruling becomes work and
+  how work stays visible until it is done. The gate sequence governs a *change*.
 - **Environment specifics** (LAN server commands, IPs, URLs, the device
   roster) live in `TESTINGSETUP.local.md` — untracked, private, expected to
   change freely.
 - **Regression watchpoints** (below) are explicitly temporal. Each entry is
   pruned once it is covered by an automated test or has stayed clean for
   three consecutive releases. That section is *supposed* to shrink.
+
+---
+
+## What our documents are
+
+Howell's taxonomy, 2026-08-06. Two categories, five kinds. The question it
+answers, which a flat list did not, is **is this authoritative?**
+
+**1. RECORDS — read as reference or as backup.**
+
+- **a. Blueprints** — defining documents. What is *true*. `ARCHITECTURE.md`,
+  `DECISIONS.md`, `THE-PLAYLIST.md`, `WILBUR-FORMAT.md`.
+- **b. SOPs** — standard operating procedures. How we *work*. This document,
+  `docs/GIT-ROUTINE.md`.
+- **c. GitHub** — safety net and history. Backup against a dead laptop,
+  verification of the GPL claim, and a reliable undo. **A commit message is a
+  record too** — authoritative about its own diff and about nothing else. *"If
+  you ever wonder 'what was I thinking?', read the commit messages."*
+
+**2. COMMUNICATION — for exchanging ideas, never relied on as definitive.**
+*These are the Federalist Papers, not the Constitution.*
+
+- **a. The ledger, `HANDOFF.md`** — the channel between Orville and Wilbur. What
+  is *owed*. Lives in `team_communication/`, outside both repositories.
+- **b. Sidebars** — three-way conferences between Howell, Orville and Wilbur, one
+  topic each. Deleted once their conclusions are documented **and verified by all
+  parties** — verification, not documentation, is the trigger.
+
+**The corpus and the engine are neither.** They may be documents; they are not
+*documentation*. They are the thing itself — defined in a blueprint, tested by an
+SOP. Anyone reading only those files to build or improve the program is reverse
+engineering.
+
+**The consequence that makes this taxonomy load-bearing rather than tidy.**
+Because communication is explicitly not definitive, **a decision that never
+reaches a Blueprint or an SOP has no authoritative home at all.** It is not
+"recorded in the ledger" — the ledger only says someone owes it. That is the
+exact failure this taxonomy was written after: a ruling that lived in a
+specification and a branch, and in no queue.
+
+*(This document is an SOP, and therefore classifies itself. That is intended:
+where the categories live is itself a matter of how we work.)*
+
+### The ledger's lifecycle
+
+- **Archive when the closed and superseded entries outnumber the open ones.**
+  Not at a fixed length: three thousand lines of open items and three thousand
+  lines of closed ones are different situations. That threshold is the moment the
+  document stops being an agenda and becomes a history — which, by the taxonomy
+  above, is the moment it is in the wrong category. Archives go to
+  `team_communication/handoff_archives/`.
+- At the boundary, **OPEN migrates forward; CLOSED and SUPERSEDED stay behind.**
+- **Before an item is left behind, its conclusion exists in a Blueprint or an
+  SOP.** Mandatory, not hygiene: nothing in an archive is authoritative, so an
+  item closed without its conclusion written somewhere permanent is not archived,
+  it is forgotten.
+- **The numbering never restarts.** W- and O- numbers are append-only across
+  every archive, forever. The ledger is archived; the sequence is not. If
+  numbering reset, `W-12` would mean four different things by September and every
+  reference made in the meantime would silently rot.
 
 ---
 
