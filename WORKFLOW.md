@@ -213,7 +213,8 @@ is the category error, and every rule below is a guard against a version of it.
 - **WF-4. Every session opens with the board — as a GATE, not a report.** Before
   any work: open PRs oldest first, and branches carrying commits with no PR. One
   command, read aloud in the first response. **If anything is open, clearing it
-  IS the work** until it is done. Idle PRs are not merely slow — they go stale in
+  IS the work** until it is done. The board also names the next audit under
+  WF-13 — the stalest document and the question due against it. Idle PRs are not merely slow — they go stale in
   the wrong order and are superseded by later idle PRs.
 
 - **WF-5. A PR that supersedes another says so in its first line.** Supersession is
@@ -277,6 +278,40 @@ is the category error, and every rule below is a guard against a version of it.
   go to WORKFLOW.md and the ledger." Then it cannot be closed without somewhere to
   close it into, and the split between the argument and the conclusion has a
   destination rather than an intention.
+
+- **WF-13. An audit reads ONE document against ONE question, once a session.**
+  Not a sweep. The board names which document and which question is next, so
+  skipping is visible rather than silent.
+
+  **Why not a periodic sweep:** we ran one on 2026-08-02 — seven documents
+  archived, two renamed, links repointed — and four days later
+  `WILBUR-FORMAT.md` was found asserting *"no view is the hub"* on line 56 and
+  *"the spine follows the Clementine Vulgate"* on line 283. The sweep was not
+  done badly; *read everything and look for contradictions* is a task where
+  attention runs out before the document does, and the contradictions that
+  survive are exactly the ones that read naturally.
+
+  Both defects we did catch were found by a **targeted question with a
+  hypothesis**: line 56 fell out of asking *does this contradict itself?* while
+  writing an unrelated ruling, and `VISUAL-VERSIFICATION.md`'s abolished
+  vocabulary fell out of asking *what does the migration invalidate?*
+
+  **The standing questions**, one per audit:
+  1. Does this document contradict **itself**?
+  2. Does it contradict **another** document?
+  3. Does it assert a **state** that is now false? *(WF-7 makes these
+     re-runnable where the source is a command.)*
+  4. Does it use **vocabulary a later ruling abolished**?
+  5. Does it describe something **unimplemented with no numbered item** behind
+     it? *(WF-2: an orphan by definition.)*
+
+  **The rotation** covers every live document under `docs/` — archived ones are
+  excluded, and SOPs are included, since they go stale exactly as blueprints do.
+  Each carries `Last audited: <date> by <session> — Q<n>`, which is WF-7 applied
+  to the document itself and is what lets the board sort by staleness.
+
+  A finding is not fixed in place: it earns a number under WF-2 like any other
+  ruling, and the stale claim is marked under WF-6 rather than quietly deleted.
 
 *Origin, 2026-08-06.* A major revision to the corpus's identity model was ruled,
 written into a specification, pushed to a branch, and never given a PR or a
