@@ -186,13 +186,13 @@ procedural rather than technical.
 written only into a specification schedules nothing and is owed by nobody. That
 is the category error, and every rule below is a guard against a version of it.
 
-- **Push and PR are one action.** Never push a branch without opening its PR in
+- **WF-1. Push and PR are one action.** Never push a branch without opening its PR in
   the same breath. A branch with no PR is invisible: it cannot be reviewed,
   cannot be merged, and does not appear on any list either session reads. This
   is the single cheapest rule here and it prevents the worst failure.
   (Who may merge, and branch shape: `docs/GIT-ROUTINE.md`.)
 
-- **A ruling gets a number the hour it is made**, before any document is
+- **WF-2. A ruling gets a number the hour it is made**, before any document is
   edited. Numbered work survives here; unnumbered decisions evaporate, and a
   specification section describing something unimplemented with no numbered
   item behind it is an orphan by definition. Two homes, by kind:
@@ -204,22 +204,23 @@ is the category error, and every rule below is a guard against a version of it.
   procedural ruling filed there would be lost among things it does not
   resemble.
 
-- **A deferral must name what it makes provisional.** "Not yet" is only half a
+- **WF-3. A deferral must name what it makes provisional.** "Not yet" is only half a
   ruling. The other half is what the ruling has *already invalidated* in the
   meantime. A deferred decision that does not name its casualties silently
   authorises work it has superseded, and that work will look productive right
   up until the moment it is discarded.
 
-- **Every session opens with the board.** Before any work: open PRs oldest
-  first, and branches carrying commits with no PR. One command, read aloud in
-  the first response. Idle PRs are not merely slow — they go stale in the wrong
-  order and are superseded by later idle PRs.
+- **WF-4. Every session opens with the board — as a GATE, not a report.** Before
+  any work: open PRs oldest first, and branches carrying commits with no PR. One
+  command, read aloud in the first response. **If anything is open, clearing it
+  IS the work** until it is done. Idle PRs are not merely slow — they go stale in
+  the wrong order and are superseded by later idle PRs.
 
-- **A PR that supersedes another says so in its first line.** Supersession is
+- **WF-5. A PR that supersedes another says so in its first line.** Supersession is
   invisible in a list of PR titles, which is exactly what lets them be merged in
   an order that makes no sense.
 
-- **A ruling that supersedes an earlier one names the number it retires, in the
+- **WF-6. A ruling that supersedes an earlier one names the number it retires, in the
   same breath** — and the retired entry is marked `SUPERSEDED BY <number>`, not
   left OPEN. This is the ledger twin of the rule above, and it closes the gap
   every other rule leaves: they all move decisions *into* the queue and none
@@ -230,7 +231,7 @@ is the category error, and every rule below is a guard against a version of it.
   problem is never that an entry is wrong; it is that nothing makes a stale one
   stop looking live. *(Raised by Orville on review, 2026-08-06.)*
 
-- **Anything asserting a state carries a date and a source.** Three surfaces go
+- **WF-7. Anything asserting a state carries a date and a source.** Three surfaces go
   stale and only two of them are covered above: PRs, ledger entries, and the
   claims inside specifications. A specification sentence stating something
   checkable about the corpus or the engine — counts, coverage, "no view is the
@@ -238,10 +239,44 @@ is the category error, and every rule below is a guard against a version of it.
   false. Stated as timeless fact, it cannot be, and it will quietly outlive its
   truth.
 
-- **The read-back.** When a ruling is made, it is read back with its number and
+- **WF-8. The read-back.** When a ruling is made, it is read back with its number and
   its provisional casualties named, and confirmed, before work continues. The
   first two rules are mechanical and belong to whoever is at the keyboard; this
   one needs both parties, because it happens at the moment of the decision.
+
+- **WF-9. A commit message describes the change it is attached to.** GitHub is
+  never a line of communication between collaborators, so there is no audience to
+  weigh — a commit explains its own diff, for whoever runs `git blame` on that
+  line in a year. *"If you ever wonder 'what was I thinking?', read the commit
+  messages."* What does NOT belong there is a **state assertion** — "X is safe to
+  do", "the corpus holds Y" — because an explanation is anchored to a diff and a
+  later diff supersedes it, while an assertion is anchored to nothing and no
+  commit can retract it. Assertions go where WF-6 can reach them.
+
+- **WF-10. No PR is ever left pending, and no work resumes while one is open.**
+  Blocking across BOTH sessions, not merely within one — and only one session
+  runs at a time. A PR should be open for minutes.
+  *"GitHub is not a trailer that we pull behind us. It is a kill switch that I
+  must constantly reset, and that's ok."* — Howell, 2026-08-06.
+  The one exception is a blocker that is not ours: if an outage or an external
+  service holds a check open, the PR waits and work may continue on that PR's own
+  branch. Finishing the open PR is not resuming work; starting something else is.
+
+- **WF-11. These rules carry stable `WF-` ids**, assigned at creation, never
+  reordered, never reused. Position in this document is free to change; the id is
+  not. Exactly how W- and O- numbers already behave, applied to a place we forgot
+  to. This rule exists because two rules were once inserted ahead of WF-8 and
+  silently renumbered it, which falsified a written review without a word of it
+  changing.
+  **Stable is not opaque.** Opacity is forced only where more than one view must
+  name a thing differently — a corpus has many traditions, so any readable leaf id
+  privileges one. These rules have exactly one view, so they need permanence and
+  nothing more. `WF-7` is sufficient; `x7f3a` would be a cost with no benefit.
+
+- **WF-12. A sidebar names its landing addresses when it opens.** "Decisions here
+  go to WORKFLOW.md and the ledger." Then it cannot be closed without somewhere to
+  close it into, and the split between the argument and the conclusion has a
+  destination rather than an intention.
 
 *Origin, 2026-08-06.* A major revision to the corpus's identity model was ruled,
 written into a specification, pushed to a branch, and never given a PR or a
