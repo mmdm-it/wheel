@@ -1,3 +1,8 @@
+// R1 (Howell, 2026-08-07, O-30): THE ENGINE BUILD NO LONGER RUNS THIS.
+// Derivation over data belongs to the data side. `npm run build` stopped
+// invoking it the day the ruling landed; sync-data-to-server.sh still does,
+// DELIBERATELY, so deploys keep working until cargo's tooling owns the
+// derivation — at which point the sync lines come out and this file goes.
 // C.2 (Howell ruling: "split the catalog"): derive two files from the
 // canonical mmdm_catalog.json —
 //   catalog-lite.json   the structure the ring/pyramid needs at boot
