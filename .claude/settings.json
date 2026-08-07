@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(data/**)",
+      "Write(data/**)",
+      "NotebookEdit(data/**)",
+      "Edit(/media/howell/dev_workspace/wheel-cargo/**)",
+      "Write(/media/howell/dev_workspace/wheel-cargo/**)",
+      "NotebookEdit(/media/howell/dev_workspace/wheel-cargo/**)",
+      "Edit(../wheel-cargo/**)",
+      "Write(../wheel-cargo/**)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-brother-tree.mjs\""
+          }
+        ]
+      }
+    ]
+  }
+}

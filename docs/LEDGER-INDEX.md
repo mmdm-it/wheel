@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-07 from 73 entries.
+Generated 2026-08-07 from 75 entries.
 
 | id | status | title |
 |---|---|---|
@@ -41,6 +41,8 @@ Generated 2026-08-07 from 73 entries.
 | O-27 | OPEN | The Greek charts seat verses out of order — before you proofread Greek |
 | O-28 | SUPERSEDED BY W | The spine wears Latin clothes — Howell's taxonomy challenge |
 | O-29 | OPEN | The servable gate — `proofread && hasChart`, and eleven stale descriptions |
+| O-30 | DONE | R1 executed — the engine build no longer touches data/ |
+| O-31 | UNKNOWN | The wall, engine side — config written, matrix proven, PAT pending |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
