@@ -19,8 +19,13 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.env.CLAUDE_PROJECT_DIR || process.cwd();
-// The brother's tree, in every spelling this repo can reach it by.
+// The brother's tree, in every spelling this repo can reach it by. The
+// SIBLING form is computed from ROOT rather than hardcoded: on the bench it
+// equals the absolute form, but CI checks out at /home/runner/work/…, where
+// ../wheel-cargo resolves somewhere the bench path never matches — the matrix
+// caught exactly that cell going allow in CI while blocking at home.
 const BROTHER_ABS = '/media/howell/dev_workspace/wheel-cargo';
+const BROTHER_SIBLING = path.resolve(ROOT, '..', 'wheel-cargo');
 const DATA_LINK = path.join(ROOT, 'data');       // the symlink's own spelling
 
 let input;
@@ -31,8 +36,8 @@ const tool = input.tool_name || '';
 if (tool === 'Edit' || tool === 'Write' || tool === 'NotebookEdit') {
   const fp = input.tool_input?.file_path || input.tool_input?.notebook_path || '';
   const resolved = path.resolve(ROOT, fp);
-  if (resolved.startsWith(BROTHER_ABS + path.sep) || resolved === BROTHER_ABS
-      || resolved.startsWith(DATA_LINK + path.sep) || resolved === DATA_LINK) {
+  const inTree = base => resolved === base || resolved.startsWith(base + path.sep);
+  if (inTree(BROTHER_ABS) || inTree(BROTHER_SIBLING) || inTree(DATA_LINK)) {
     console.error(`WALL (WF-15): ${tool} into the data tree is refused — access across the wall is READ ONLY. Path resolves to: ${resolved}`);
     process.exit(2);
   }
