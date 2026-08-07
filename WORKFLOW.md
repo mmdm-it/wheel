@@ -210,12 +210,16 @@ is the category error, and every rule below is a guard against a version of it.
   authorises work it has superseded, and that work will look productive right
   up until the moment it is discarded.
 
-- **WF-4. Every session opens with the board — as a GATE, not a report.** Before
-  any work: open PRs oldest first, and branches carrying commits with no PR. One
-  command, read aloud in the first response. **If anything is open, clearing it
-  IS the work** until it is done. The board also names the next audit under
-  WF-13 — the stalest document and the question due against it. Idle PRs are not merely slow — they go stale in
-  the wrong order and are superseded by later idle PRs.
+- **WF-4 (amended under W-46). Every session opens with the board — as a
+  GATE, not a report.** Before any work: open PRs oldest first, branches
+  carrying commits with no PR, **and the canaries green** — one Write aimed
+  at `.claude/canary/probe.txt` (expect refusal naming the deny rule) and
+  one command carrying the wall's canary token (expect the hook's canary
+  refusal). A canary that does not refuse — or refuses from a layer we do
+  not configure — is a finding, and clearing the board IS the work until it
+  is done. The board also names the next audit under WF-13 — the stalest
+  document and the question due against it. Idle PRs are not merely slow —
+  they go stale in the wrong order and are superseded by later idle PRs.
 
 - **WF-5. A PR that supersedes another says so in its first line.** Supersession is
   invisible in a list of PR titles, which is exactly what lets them be merged in

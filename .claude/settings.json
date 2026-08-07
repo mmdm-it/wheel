@@ -8,7 +8,8 @@
       "Write(/media/howell/dev_workspace/wheel-cargo/**)",
       "NotebookEdit(/media/howell/dev_workspace/wheel-cargo/**)",
       "Edit(../wheel-cargo/**)",
-      "Write(../wheel-cargo/**)"
+      "Write(../wheel-cargo/**)",
+      "Write(.claude/canary/**)"
     ]
   },
   "hooks": {
@@ -18,7 +19,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-brother-tree.mjs\""
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-brother-tree.cjs\""
           }
         ]
       }

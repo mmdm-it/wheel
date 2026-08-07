@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-07 from 75 entries.
+Generated 2026-08-07 from 77 entries.
 
 | id | status | title |
 |---|---|---|
@@ -87,3 +87,5 @@ Generated 2026-08-07 from 75 entries.
 | W-42 | DONE | TWO RULES THAT EXIST ONLY IN THE SIDEBAR — drafted for WORKFLOW.md |
 | W-43 | DONE | THE COMMIT-BACKLOG SWEEP — run, and the result refines WF-9 |
 | W-44 | OPEN | B2 WAS RULED AND BUILT — but the RULE was never written |
+| W-45 | OPEN | THE CARGO WALL CONFIG, CLAUDE.md, AND A WORKSPACE FINDING |
+| W-46 | OPEN | THE WALL FAILS OPEN UNDER THE SYSTEM NODE — fail-closed guards + canaries |

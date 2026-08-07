@@ -25,4 +25,23 @@ describe('the wall (WF-15) — every matrix cell verdicts correctly', () => {
       assert.fail(`${err.stdout || ''}${err.stderr || ''}`.trim());
     }
   });
+
+  // W-46: the guard died under the system node (v10) with exit 1 — which the
+  // harness treats as NON-blocking, so the wall failed open on any
+  // desktop-launched session. This cell reruns every dynamic cell under
+  // /usr/bin/node explicitly, so the next ESM-ism (or anything newer than
+  // v10) turns the build red instead of the wall quiet.
+  const systemNode = '/usr/bin/node';
+  it('every cell still verdicts correctly under the SYSTEM node', {
+    skip: (hasConfig && existsSync(systemNode)) ? false : 'no system node or no config here'
+  }, () => {
+    const brother = ['', 'media', 'howell', 'dev_workspace', 'wheel-cargo'].join('/');
+    try {
+      execFileSync(process.execPath,
+        ['scripts/wall-matrix.mjs', '.claude', brother, 'data/', systemNode],
+        { cwd: root, encoding: 'utf-8', stdio: 'pipe' });
+    } catch (err) {
+      assert.fail(`${err.stdout || ''}${err.stderr || ''}`.trim());
+    }
+  });
 });
