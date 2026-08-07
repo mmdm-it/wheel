@@ -91,9 +91,9 @@ integral:
 - **It is a live preview.** As the user rotates the secondary ring to a new
   language, the change is **instantly visible in the distant primary** — the
   same verse, re-rendered in the new language, before anything is committed.
-  This is the content anchor (below) made literal: you watch *In principio*
-  become *Ἐν ἀρχῇ* out there in the soft focus, and *that* is what you will
-  be reading when you toggle back.
+  This is the content anchor (below) made literal: the verse you were reading
+  becomes the same verse in the new tongue, out there in the soft focus, and
+  *that* is what you will be reading when you toggle back.
 - **The blur is legibility-preserving** — rack-focus, not frost. "Not too
   blurry; still alive and in sight." You must be able to read the change
   happening.
