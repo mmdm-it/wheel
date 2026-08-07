@@ -33,3 +33,8 @@ data/
 # tree where `git add -A` is routine — one careless commit and a document that
 # is supposed to be deletable is in a public repository permanently.
 *-DISCUSSION_*.md
+
+# Session-local settings — holds the GH_TOKEN (R2). The repo is PUBLIC;
+# a token in a committed file is published. Never track this file.
+.claude/settings.local.json
+.claude/canary/
