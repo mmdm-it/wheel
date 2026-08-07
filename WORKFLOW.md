@@ -313,6 +313,36 @@ is the category error, and every rule below is a guard against a version of it.
   A finding is not fixed in place: it earns a number under WF-2 like any other
   ruling, and the stale claim is marked under WF-6 rather than quietly deleted.
 
+- **WF-14. Nothing published carries corpus content** — the text itself, or the
+  editorial work product that established it — unless it has been deliberately
+  granted. Structure is given away on purpose; content is not.
+
+  **The distinction cuts THROUGH documents rather than around them**, so it
+  cannot be enforced by which repository a file sits in: a public document
+  describing how a reading was established leaks the same work product as the
+  reading would. This is the standard the `docs/` audit measures against, and
+  the rights posture that follows from it is in `NOTICE` §0 and §1b.
+
+- **WF-15. Do not commit to your brother's repository.** Howell's ruling,
+  2026-08-06, in those words. The engine repository is Orville's and the data
+  repository is Wilbur's; access across the wall is READ ONLY, both ways,
+  symmetrically.
+
+  **A document that governs both sessions — an SOP — is committed by the
+  repository's owner from the other's draft.** Case by case as to who writes and
+  who lands it.
+
+  **NOT YET ENFORCED, and this line stays until it is.** Both sessions run as the
+  same Unix user, from the same clones, with the same GitHub token, so neither
+  the filesystem nor the server can tell them apart. What exists today is a
+  `pre-commit` hook in each repository that refuses any session but the owner's
+  and refuses when none is declared, plus a `commit-msg` hook stamping
+  `Session:` — identity that names the ROLE, not the model. That is a tripwire:
+  it makes the wrong move fail loudly and leaves a mark when it succeeds, and
+  `--no-verify` bypasses it by design. Real enforcement needs separate Unix
+  users, which also makes separate credentials possible. Until then this is a
+  convention with an alarm on it.
+
 *Origin, 2026-08-06.* A major revision to the corpus's identity model was ruled,
 written into a specification, pushed to a branch, and never given a PR or a
 number. Two days of work then proceeded on the superseded model — plausible,
