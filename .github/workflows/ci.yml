@@ -12,6 +12,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # The document gate walks origin/main..HEAD. A shallow clone has
+          # neither, and the gate crashed on its own first run in the data
+          # repository for exactly this reason (W-44). It degrades to
+          # HEAD-only rather than crashing, but a narrower check that says so
+          # is still narrower — give it the history it needs.
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
