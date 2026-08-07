@@ -31,14 +31,22 @@ const BROTHER = process.argv[3] || '/media/howell/dev_workspace/wheel-cargo';
 const REL = process.argv[4] || 'data/';   // the symlink spelling in THIS repo
 const TRAV = `../${path.basename(BROTHER)}`;   // relative-traversal spelling, derived
 
-const hookPath = path.join(configDir, 'hooks', 'guard-brother-tree.mjs');
+// Both extensions tried (Wilbur's field note 4): .cjs is the v10-portable
+// twin (W-46); .mjs was the original. A missing hook is a clean bail, not
+// silent WRONG cells.
+const hookPath = ['guard-brother-tree.cjs', 'guard-brother-tree.mjs']
+  .map(f => path.join(configDir, 'hooks', f)).find(existsSync);
+// W-46: the guard must hold under ANY node the machine can produce. Pass a
+// node binary as a 4th argument (the suite passes /usr/bin/node when it
+// exists) and every dynamic cell runs under it.
+const NODE_BIN = process.argv[5] || process.execPath;
 const settingsPath = path.join(configDir, 'settings.json');
 let failures = 0;
 const verdictName = v => (v ? 'BLOCK' : 'allow');
 
 // ── Dynamic cells: the hook, fed real stdin ─────────────────────────────────
 const hook = (tool, tool_input) => {
-  const r = spawnSync(process.execPath, [hookPath], {
+  const r = spawnSync(NODE_BIN, [hookPath], {
     input: JSON.stringify({ tool_name: tool, tool_input }),
     encoding: 'utf-8',
     env: { ...process.env, CLAUDE_PROJECT_DIR: process.cwd() }
@@ -69,11 +77,13 @@ const cells = [
   ['Edit, absolute spelling',      'Edit',  { file_path: `${BROTHER}/gutenberg/manifest.json` }, true],
   ['Edit, relative traversal',     'Edit',  { file_path: `${TRAV}/gutenberg/manifest.json` }, true],
   ['Write to our own src stays allowed', 'Write', { file_path: 'src/main.js', content: 'x' }, false],
-  ['Write to our fixtures stays allowed', 'Write', { file_path: 'test/fixtures/data/gutenberg/x.json', content: 'x' }, false]
+  ['Write to our fixtures stays allowed', 'Write', { file_path: 'test/fixtures/data/gutenberg/x.json', content: 'x' }, false],
+  // ── W-46: the liveness canary blocks before any guard logic ───────────
+  ['CANARY token is refused (hook is loaded and firing)', 'Bash', { command: 'echo WALL_CANARY' }, true]
 ];
 
-if (!existsSync(hookPath)) {
-  console.error(`no hook at ${hookPath}`);
+if (!hookPath) {
+  console.error(`no hook in ${configDir}/hooks (tried .cjs, .mjs)`);
   process.exit(1);
 }
 for (const [label, tool, tool_input, expectBlock] of cells) {
@@ -83,12 +93,22 @@ for (const [label, tool, tool_input, expectBlock] of cells) {
   console.log(`${ok ? '  ok  ' : 'WRONG '} ${verdictName(expectBlock).padEnd(5)} ${label}${ok ? '' : `  (got ${verdictName(got)})`}`);
 }
 
+// ── W-46: unparseable stdin FAILS CLOSED — exit 2, never a shrug ────────────
+{
+  const r = spawnSync(NODE_BIN, [hookPath], { input: 'not json', encoding: 'utf-8',
+    env: { ...process.env, CLAUDE_PROJECT_DIR: process.cwd() } });
+  const ok = r.status === 2 && /failing CLOSED/.test(r.stderr || '');
+  if (!ok) failures += 1;
+  console.log(`${ok ? '  ok  ' : 'WRONG '} BLOCK garbage stdin fails closed (exit 2 + marker)${ok ? '' : `  (got exit ${r.status})`}`);
+}
+
 // ── Static cells: the deny rules the harness enforces ───────────────────────
 const settings = existsSync(settingsPath) ? JSON.parse(readFileSync(settingsPath, 'utf-8')) : null;
 const deny = settings?.permissions?.deny || [];
 const wantDeny = [
   `Edit(${REL}**)`, `Write(${REL}**)`,
-  `Edit(${BROTHER}/**)`, `Write(${BROTHER}/**)`
+  `Edit(${BROTHER}/**)`, `Write(${BROTHER}/**)`,
+  'Write(.claude/canary/**)'   // W-46: the deny layer's own liveness probe
 ];
 for (const rule of wantDeny) {
   const present = deny.includes(rule);
