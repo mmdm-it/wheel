@@ -19,9 +19,17 @@ import { readFileSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 
+// The traversal spelling is DERIVED from the brother path, never hardcoded —
+// three cells hardcoded `../wheel-cargo`, which from cargo is its OWN tree,
+// and Wilbur's cross-check run correctly reported them WRONG (his prediction,
+// cell for cell). A matrix that only verdicts correctly for one repo is half
+// a matrix.
+
+
 const configDir = process.argv[2] || '.claude';
 const BROTHER = process.argv[3] || '/media/howell/dev_workspace/wheel-cargo';
 const REL = process.argv[4] || 'data/';   // the symlink spelling in THIS repo
+const TRAV = `../${path.basename(BROTHER)}`;   // relative-traversal spelling, derived
 
 const hookPath = path.join(configDir, 'hooks', 'guard-brother-tree.mjs');
 const settingsPath = path.join(configDir, 'settings.json');
@@ -42,24 +50,24 @@ const cells = [
   // ── Bash reads: every spelling must PASS ──────────────────────────────
   ['Bash read, symlink spelling',  'Bash', { command: `cat ${REL}gutenberg/manifest.json` }, false],
   ['Bash read, absolute spelling', 'Bash', { command: `head -1 ${BROTHER}/gutenberg/manifest.json` }, false],
-  ['Bash read, relative traversal','Bash', { command: `grep -c verses ../wheel-cargo/gutenberg/manifest.json` }, false],
+  ['Bash read, relative traversal','Bash', { command: `grep -c verses ${TRAV}/gutenberg/manifest.json` }, false],
   ['Bash read, node script over data', 'Bash', { command: `node scripts/check.mjs ${REL}gutenberg/seating/LXX.json` }, false],
   ['Bash read of OUR fixtures (data/ mid-path)', 'Bash', { command: 'cat test/fixtures/data/gutenberg/manifest.json' }, false],
   ['Bash write to OUR fixtures must stay allowed', 'Bash', { command: 'echo x > test/fixtures/data/gutenberg/tmp.json' }, false],
   // ── Bash writes: every spelling must BLOCK ────────────────────────────
   ['Bash redirect, symlink',       'Bash', { command: `echo x > ${REL}gutenberg/foo.json` }, true],
   ['Bash redirect, absolute',      'Bash', { command: `echo x >> ${BROTHER}/gutenberg/foo.json` }, true],
-  ['Bash rm, relative traversal',  'Bash', { command: 'rm ../wheel-cargo/gutenberg/foo.json' }, true],
+  ['Bash rm, relative traversal',  'Bash', { command: `rm ${TRAV}/gutenberg/foo.json` }, true],
   ['Bash cp INTO the tree',        'Bash', { command: `cp foo.json ${REL}gutenberg/` }, true],
   ['Bash mv, absolute',            'Bash', { command: `mv a.json ${BROTHER}/a.json` }, true],
   ['Bash sed -i, symlink',         'Bash', { command: `sed -i 's/a/b/' ${REL}gutenberg/manifest.json` }, true],
   ['Bash tee, absolute',           'Bash', { command: `echo x | tee ${BROTHER}/gutenberg/foo.json` }, true],
-  ['Bash git -C into the tree',    'Bash', { command: 'git -C ../wheel-cargo commit -am x' }, true],
+  ['Bash git -C into the tree',    'Bash', { command: `git -C ${TRAV} commit -am x` }, true],
   ['Bash rsync dest in tree',      'Bash', { command: `rsync -a out/ ${BROTHER}/gutenberg/` }, true],
   // ── File tools through the hook (belt under the harness's braces) ─────
   ['Write, symlink spelling',      'Write', { file_path: `${REL}gutenberg/foo.json`, content: 'x' }, true],
   ['Edit, absolute spelling',      'Edit',  { file_path: `${BROTHER}/gutenberg/manifest.json` }, true],
-  ['Edit, relative traversal',     'Edit',  { file_path: '../wheel-cargo/gutenberg/manifest.json' }, true],
+  ['Edit, relative traversal',     'Edit',  { file_path: `${TRAV}/gutenberg/manifest.json` }, true],
   ['Write to our own src stays allowed', 'Write', { file_path: 'src/main.js', content: 'x' }, false],
   ['Write to our fixtures stays allowed', 'Write', { file_path: 'test/fixtures/data/gutenberg/x.json', content: 'x' }, false]
 ];
