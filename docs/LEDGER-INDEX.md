@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-07 from 78 entries.
+Generated 2026-08-08 from 80 entries.
 
 | id | status | title |
 |---|---|---|
@@ -43,7 +43,9 @@ Generated 2026-08-07 from 78 entries.
 | O-29 | OPEN | The servable gate — `proofread && hasChart`, and eleven stale descriptions |
 | O-30 | DONE | R1 executed — the engine build no longer touches data/ |
 | O-31 | UNKNOWN | The wall, engine side — config written, matrix proven, PAT pending |
-| O-32 | OPEN | THE PATs ARE MINTED — the wall's third layer, and the door it does not yet close |
+| O-32 | DONE | THE PATs ARE MINTED — the wall's third layer, and the door it does not yet close |
+| O-33 | DONE | THE DENY LAYER DOES NOT WORK — the fresh-session probe came back red |
+| O-34 | OPEN | WF-13's ROTATION HAS NEVER STARTED — no document carries a stamp |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |

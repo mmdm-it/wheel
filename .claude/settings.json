@@ -1,15 +1,9 @@
 {
   "permissions": {
     "deny": [
-      "Edit(data/**)",
-      "Write(data/**)",
-      "NotebookEdit(data/**)",
-      "Edit(/media/howell/dev_workspace/wheel-cargo/**)",
-      "Write(/media/howell/dev_workspace/wheel-cargo/**)",
-      "NotebookEdit(/media/howell/dev_workspace/wheel-cargo/**)",
-      "Edit(../wheel-cargo/**)",
-      "Write(../wheel-cargo/**)",
-      "Write(.claude/canary/**)"
+      "Edit(//media/howell/dev_workspace/wheel-cargo/**)",
+      "Edit(/data/**)",
+      "Edit(/.claude/canary/**)"
     ]
   },
   "hooks": {
