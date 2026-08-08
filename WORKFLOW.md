@@ -337,15 +337,26 @@ is the category error, and every rule below is a guard against a version of it.
   who lands it.
 
   **NOT YET ENFORCED, and this line stays until it is.** Both sessions run as the
-  same Unix user, from the same clones, with the same GitHub token, so neither
-  the filesystem nor the server can tell them apart. What exists today is a
+  same Unix user, from the same clones, so the filesystem cannot tell them
+  apart. What exists today is a
   `pre-commit` hook in each repository that refuses any session but the owner's
   and refuses when none is declared, plus a `commit-msg` hook stamping
   `Session:` — identity that names the ROLE, not the model. That is a tripwire:
   it makes the wrong move fail loudly and leaves a mark when it succeeds, and
-  `--no-verify` bypasses it by design. Real enforcement needs separate Unix
-  users, which also makes separate credentials possible. Until then this is a
-  convention with an alarm on it.
+  `--no-verify` bypasses it by design.
+
+  **The GitHub half is now enforced; the filesystem half is not.** Since
+  2026-08-07 (O-32) each repository carries its own fine-grained token in a
+  gitignored `settings.local.json`, and that is real enforcement: GitHub
+  refuses the crossing server-side, where neither `--no-verify` nor a crashed
+  hook can reach — and with no token set there is no access at all. **Separate
+  credentials turned out not to require separate Unix users after all.** On
+  disk nothing has changed: both sessions still run as the same user from the
+  same clones, so the filesystem wall remains a convention with an alarm on it,
+  and the `permissions.deny` layer that would back that alarm is **unproven on
+  both sides** — each session's canary stayed silent, consistent with
+  permissions binding at session start and not rebinding as hooks do. **This
+  line stays until that probe comes back green from a fresh session.**
 
 - **WF-16. A commit that changes a document under `docs/` cites a number, and
   the number must exist.** `W-`, `O-` or `WF-`; `WF-` ids pass on sight, since
