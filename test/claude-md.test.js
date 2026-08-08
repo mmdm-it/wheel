@@ -33,4 +33,23 @@ describe('CLAUDE.md is a faithful projection of WORKFLOW.md', () => {
       assert.ok(committed.includes(`- **${id}`), `${id} missing from CLAUDE.md`);
     }
   });
+
+  // Wilbur's backstop, ported (cargo b781037b), for the one class the two
+  // checks above cannot see. Membership catches a rule vanishing in the
+  // PROJECTION; the count floor catches a plain deletion from the SOURCE.
+  // Neither catches a deletion and an addition in the same breath — drop
+  // WF-9, add WF-17, and the count is 16 again while the gap at 9 is
+  // invisible to both. WF-11 promises these ids are never reordered and never
+  // reused, so contiguous 1..n is exactly what that promise looks like when
+  // it is measured.
+  it('the WF- ids run contiguously from 1, as WF-11 promises', () => {
+    const workflow = readFileSync(path.join(root, 'WORKFLOW.md'), 'utf-8');
+    const nums = [...workflow.matchAll(/^- \*\*(WF-\d+)/gm)]
+      .map(m => Number(m[1].slice(3)))
+      .sort((a, b) => a - b);
+    const expected = Array.from({ length: nums.length }, (_, i) => i + 1);
+    assert.deepEqual(nums, expected,
+      `WF- ids are not contiguous 1..${nums.length} — a rule was retired without ` +
+      `its id being kept, or one was added out of sequence. Found: ${nums.join(', ')}`);
+  });
 });
