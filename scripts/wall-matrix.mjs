@@ -105,15 +105,44 @@ for (const [label, tool, tool_input, expectBlock] of cells) {
 // ── Static cells: the deny rules the harness enforces ───────────────────────
 const settings = existsSync(settingsPath) ? JSON.parse(readFileSync(settingsPath, 'utf-8')) : null;
 const deny = settings?.permissions?.deny || [];
+// O-33, 2026-08-07: these spellings are load-bearing and were ALL WRONG until
+// the fresh-session canary caught it. Two rules from the docs, both learned
+// expensively:
+//   1. Claude Code consults Edit(path) and Read(path) ONLY. A Write(...),
+//      NotebookEdit(...) or Glob(...) path rule is accepted, listed by
+//      /permissions, and NEVER CONSULTED. Edit() covers every file-editing
+//      tool, so it is the one to write.
+//   2. A single leading slash anchors at the SETTINGS SOURCE, not the
+//      filesystem root — `/media/...` meant `<project root>/media/...`, a
+//      path that cannot exist. Absolute paths need `//`.
+// Six of the nine original rules were inert by (1), including the canary
+// itself, so the layer was never under test; one more was unmatchable by (2).
 const wantDeny = [
-  `Edit(${REL}**)`, `Write(${REL}**)`,
-  `Edit(${BROTHER}/**)`, `Write(${BROTHER}/**)`,
-  'Write(.claude/canary/**)'   // W-46: the deny layer's own liveness probe
+  `Edit(/${REL}**)`,          // project-root-anchored, not cwd-relative
+  `Edit(//${BROTHER.replace(/^\//, '')}/**)`,  // `//` = genuinely absolute
+  'Edit(/.claude/canary/**)'  // W-46's liveness probe, now a rule type that fires
 ];
 for (const rule of wantDeny) {
   const present = deny.includes(rule);
   if (!present) failures += 1;
   console.log(`${present ? '  ok  ' : 'WRONG '} deny  ${rule}${present ? '' : '  (MISSING from settings.json)'}`);
+}
+// And the inverse, so the inert spelling can never come back: a path rule on a
+// tool the harness does not consult is a hole that LOOKS like a wall — it
+// lists in /permissions and refuses nothing, which is how this went unnoticed
+// from the day it was written until a canary was aimed at it.
+//
+// Deliberately NOT linted here: a single leading slash. `/path` is a correct
+// and useful form meaning "anchored at the project root" — `Edit(/data/**)`
+// wants exactly that — so a rule cannot be judged wrong by its slashes alone,
+// only by whether the anchor was the intended one. The wantDeny assertions
+// above pin the brother's rule to its `//` absolute spelling, which is where
+// that mistake would actually recur.
+for (const rule of deny) {
+  if (/^(Write|NotebookEdit|MultiEdit|Glob)\s*\(/.test(rule)) {
+    failures += 1;
+    console.log(`WRONG  deny  ${rule}  (INERT: only Edit()/Read() path rules are consulted — use Edit())`);
+  }
 }
 const hooked = JSON.stringify(settings?.hooks || {}).includes('guard-brother-tree');
 if (!hooked) failures += 1;
