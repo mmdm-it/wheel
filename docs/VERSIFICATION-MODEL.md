@@ -3,6 +3,30 @@
 **Drafted by Wilbur, 2026-07-30, at Howell's instruction.** For Howell and
 Orville to argue with. Nothing here is built; nothing here is ruled.
 
+> **STALE AS OF 2026-08-08 — that last sentence is no longer true, and it is
+> the sentence a reader trusts first.** H-2 (a label is a quotation), H-11
+> (the post-migration layout) and W-38 rule large parts of this model, and
+> H-12 phase 1b schedules its generator work. The document has not been
+> reworked to match; **Wilbur owes that under H-5 item 2**, which also swaps
+> its worked examples to the granted fixture. Flagged here rather than fixed,
+> because the rewrite is his and a projection corrected by the wrong hand is
+> how two versions of one truth begin. *(Orville, H-7 sweep.)*
+>
+> **Three rulings migrated here from `DECISIONS.md`** when the catch-all was
+> retired, because this is their subject and they had no blueprint home:
+>
+> - **Versification auto-corrects per edition.** *"She should also see the
+>   blurry primary stratum focus ring rotate to verse 19."* RULED, open —
+>   the engine half is H-12 phase 1, the data half Wilbur's tables (O-13).
+> - **Verse numbering keeps faith with each tradition.** *"I am considering
+>   keeping the numbering true"*, then ruled by the Malachi design. H-2 now
+>   states the general form: a label is a quotation, and tradition-script
+>   numerals are a liked default rather than law.
+> - **Versification is NOT a fourth stratum.** *"I'm not sure I see the need
+>   [for] a fourth stratum."* It is a property of the edition, not a
+>   dimension the reader navigates — which is why the seating chart lives
+>   under the edition and not beside the strata.
+
 Howell's principle, in his words:
 
 > The text was never meant to belong anywhere. It exists eternally in space. It

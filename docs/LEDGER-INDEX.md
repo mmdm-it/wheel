@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-09 from 96 entries.
+Generated 2026-08-09 from 97 entries.
 
 | id | status | title |
 |---|---|---|
@@ -59,6 +59,7 @@ Generated 2026-08-09 from 96 entries.
 | O-33 | DONE | THE DENY LAYER DOES NOT WORK — the fresh-session probe came back red |
 | O-34 | OPEN | WF-13's ROTATION HAS NEVER STARTED — no document carries a stamp |
 | O-35 | OPEN | H-8's CHECK IS BROADER THAN H-8's ITEM LIST — ten paths still fall to §0 |
+| O-36 | OPEN | THE BIBLE NEEDS A NEW OVERTURE — a requirement with no number until now |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |

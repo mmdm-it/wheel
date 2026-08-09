@@ -1,3 +1,48 @@
+# ARCHIVED 2026-08-09 under H-7 — historical record, not a live document
+
+**This file is superseded by the H- series and is kept as the dated record of
+one attempt, not as a source of truth. Do not cite it; do not add to it.**
+
+H-7 retired the catch-all: every ruling now gets its number, its attribution
+and its **landing address at birth**, so a general decisions table has no
+remaining function. It also had a live defect — headings here read `RULED`
+over propositions Howell has since denied in his own words, further down the
+same page.
+
+**Its contents were swept before it moved, per H-7's archive precondition.**
+Every item was sorted three ways — already true in a blueprint (struck), dead
+or denied (buried here), or still live and homeless (rehoused first). **The
+item-by-item sweep list is in the ledger under H-7, where Wilbur verifies it.**
+Where things went:
+
+- **`docs/PREMISE.md`** — the no-telemetry commitment, as a held value
+  (H-7 names this home); and *the engine holds no human language.*
+- **`docs/FEEL.md`** — the shipped interaction rulings: the front-door globe,
+  the mid-wipe icon swap, the desktop splash, substring search, *fewer
+  dramatic visuals*, the 18-character favorites rule, the borrowed Latin
+  abbreviations, the deferred catalog home icon, *no engine UI for empty
+  chapters*, and *no licensing notices in the interface.*
+- **`docs/VERSIFICATION-MODEL.md`** — versification auto-corrects per edition,
+  numbering keeps faith with each tradition, and versification is not a fourth
+  stratum.
+- **The ledger** — the overture requirement, which Howell upgraded from
+  spitballing to owed work and which had no number: now **O-36**.
+
+**What died here, deliberately.** The TWA/wrapper items — *"I never approved
+or asked for a wrapper. I prefer to do things right and do everything the hard
+way"* — buried citing H-1 phase 5, the port being native. And the
+monetization and licensing terms, all of them, on Howell's own note below:
+*"All monetization and licensing items are spitballing. None of us have any
+idea when, or how, or if this thing will ever make money."* The what-ifs died
+as what-ifs, which is what they always were.
+
+**Read the note at line 8 with that in mind:** the labels below were Orville's
+first pass, pending Howell's correction. Howell's corrections arrived inline,
+dated 2026-07-30, and several of them contradict the heading above them. That
+was the file's disease and the reason it is here.
+
+---
+
 # DECISIONS — what is ruled, what is speculation, what we assumed
 
 A register of every standing proposition, with its **provenance** and its
