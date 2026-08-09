@@ -9,7 +9,7 @@ import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.
 import { recall } from './core/session-memory.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
-import { bibleAdapter, buildBibleRootChain, ensureSeatingChart } from './adapters/bible-adapter.js';
+import { bibleAdapter, buildBibleRootChain, ensureSeatingChart, setChartedEditions } from './adapters/bible-adapter.js';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 import { placesAdapter } from './adapters/places-adapter.js';
 
@@ -60,6 +60,15 @@ const volumeConfigs = {
         fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null),
         fetch('./data/gutenberg/languages.json').then(r => r.json()).catch(() => null)
       ]);
+      // Q3 (0c): tell the adapter which editions are charted, so it stops
+      // spending a round trip on a 404 for the ones that are not. The field is
+      // OPTIONAL and does not exist yet (O-39, Wilbur's half) — until it does,
+      // nothing declares itself and the adapter keeps asking, which is the
+      // safe direction: an unknown list must never be read as "uncharted".
+      const declared = Object.entries(translationsMeta?.translations || {})
+        .filter(([, meta]) => meta?.hasChart === true)
+        .map(([code]) => code);
+      setChartedEditions(declared);
       return { translationsMeta, languagesMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {

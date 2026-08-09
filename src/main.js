@@ -1220,6 +1220,21 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
   const params = new URLSearchParams(searchOverride ?? window.location.search);
   const resolvedVolume = resolveVolumeId(volumeOverride, searchOverride);
   const config = volumeConfigs[resolvedVolume];
+  // Q4 (0c): the supplemental fetches used to wait for the manifest, costing
+  // one full round trip on every cold boot — for no reason. A config whose
+  // `loadSupplemental` DECLARES NO PARAMETERS cannot depend on the manifest or
+  // the root, so its fetches can start immediately and be awaited later.
+  //
+  // The arity test is the point: it is a promise the function itself makes, in
+  // its own signature, checked here rather than assumed. Today all four volume
+  // configs declare zero parameters and fetch fixed paths. If one ever starts
+  // taking `root`, this silently and correctly falls back to the serial path
+  // instead of handing it an undefined manifest — the failure mode of a flag
+  // or a comment, which is what we would otherwise have used.
+  const supplementalEarly = config.loadSupplemental.length === 0
+    ? config.loadSupplemental()
+    : null;
+
   const manifest = await fetchManifest(resolvedVolume);
   const root = config.extractRoot(manifest);
   const validation = validateVolumeRoot(root);
@@ -1229,7 +1244,9 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
   }
   const startup = root?.display_config?.focus_ring_startup || {};
   const arrangements = root?.display_config?.focus_ring_arrangements || {};
-  const supplemental = await config.loadSupplemental(root, manifest, params);
+  const supplemental = supplementalEarly
+    ? await supplementalEarly
+    : await config.loadSupplemental(root, manifest, params);
   const debugFlag = params.get('debug') === '1' || localStorage.getItem('wheel-debug') === '1';
   const options = {
     ...config.buildOptions({ params, startup, arrangements }),
