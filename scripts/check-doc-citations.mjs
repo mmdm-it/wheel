@@ -17,27 +17,34 @@ import { execSync } from 'node:child_process';
 const root = new URL('..', import.meta.url).pathname;
 const INDEX = `${root}docs/LEDGER-INDEX.md`;
 // case-insensitive: commit subjects are written `docs(w-38):`
-const CITE = /\b(?:WF|W|O)-\d+\b/gi;
+//
+// H- joins the family (H-1's carry-out). Before it did, the failure had two
+// halves and only one was visible: citing an H- ALONE was refused as citing
+// nothing — loud, and easy to notice — while an H- riding ALONGSIDE a valid
+// W-/O- was never looked at, so `docs(H-999, O-33)` passed reporting
+// "cites O-33". A wrong ruling number that reads as cited is worse than an
+// uncited commit, because it answers the question the gate exists to ask.
+const CITE = /\b(?:WF|W|O|H)-\d+\b/gi;
 
 export function knownIds() {
   if (!existsSync(INDEX)) return null;
   const ids = new Set();
   for (const line of readFileSync(INDEX, 'utf-8').split('\n')) {
-    const m = /^\|\s*([WO]-\d+)\s*\|/.exec(line);
+    const m = /^\|\s*([WOH]-\d+)\s*\|/.exec(line);
     if (m) ids.add(m[1]);
   }
   return ids;
 }
 
 // WF- ids are procedural rules in the SOP, not ledger items — they have no
-// entry to point at, so they are accepted on sight. W- and O- must exist.
+// entry to point at, so they are accepted on sight. W-, O- and H- must exist.
 export function verdict(message, changedDocs, ids) {
   if (!changedDocs.length) return { ok: true, why: 'no docs/ files changed' };
   const cited = [...new Set((message.match(CITE) || []).map(c => c.toUpperCase()))];
   if (!cited.length) {
     return { ok: false, why:
       `changes ${changedDocs.length} document(s) under docs/ but cites no number.\n` +
-      `  Cite the ruling this implements: W-38, O-27, WF-13 …\n` +
+      `  Cite the ruling this implements: H-11, W-38, O-27, WF-13 …\n` +
       `  If there is no ruling yet, make one first (WF-2).\n` +
       `  changed: ${changedDocs.slice(0, 5).join(', ')}` };
   }

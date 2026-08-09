@@ -221,9 +221,9 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   editing its own permission file.
 
 - **WF-16. A commit that changes a document under `docs/` cites a number, and
-  the number must exist.** `W-`, `O-` or `WF-`; `WF-` ids pass on sight, since
-  they are rules in this document rather than ledger entries. No number, no
-  commit.
+  the number must exist.** `H-`, `W-`, `O-` or `WF-`; `WF-` ids pass on sight,
+  since they are rules in this document rather than ledger entries. No number,
+  no commit.
 
   This is the direct fix for the failure that opened the 2026-08-06 sidebar: a
   ruling written into a blueprint, never entered in any queue, so nobody owed

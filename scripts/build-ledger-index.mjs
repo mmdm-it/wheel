@@ -29,7 +29,12 @@ const lines = text.split('\n');
 const entries = [];
 
 for (let i = 0; i < lines.length; i += 1) {
-  const head = /^### ([WO]-\d+)\s*·\s*(.+)$/.exec(lines[i]);
+  // H- joins W- and O- (H-1's carry-out): Howell's rulings enter the ledger
+  // directly in his own numbered voice. Same doctrine — assigned at creation,
+  // append-only, never renumbered, never reused. The BUILDER must learn H-
+  // before the gate does: teach the gate alone and every H- citation is
+  // refused as nonexistent, because the projection has no row to point at.
+  const head = /^### ([WOH]-\d+)\s*·\s*(.+)$/.exec(lines[i]);
   if (!head) continue;
   const [, id, title] = head;
   // Status lives in the next few lines, as **Status: X ...**
