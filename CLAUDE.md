@@ -170,6 +170,9 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   reading would. This is the standard the `docs/` audit measures against, and
   the rights posture that follows from it is in `NOTICE` §0 and §1b.
 
+  **The standard is the granted fixture set** *(H-5)*: a public document's
+  worked examples quote Genesis 1 (Douay-Rheims, Vulgate) and nothing else.
+
 - **WF-15. Do not commit to your brother's repository.** Howell's ruling,
   2026-08-06, in those words. The engine repository is Orville's and the data
   repository is Wilbur's; access across the wall is READ ONLY, both ways,
