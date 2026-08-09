@@ -38,6 +38,26 @@
   </FilesMatch>
 </IfModule>
 
+# Q5 (0c), applied to what is SAFE TODAY and no further.
+#
+# The elegance audit's Q5 asks for `max-age` on chapter files — every re-read
+# chapter going from RTT+304 to zero. That win is real and it is NOT TAKEN
+# HERE, deliberately: **the corpus is served from unversioned paths.** A data
+# push replaces `chapters/GEN/001.json` in place, so any max-age longer than
+# zero serves YESTERDAY'S VERSES for the rest of its lifetime — the C.2 lesson
+# in a worse place, since a stale bundle is visible and a stale verse is not.
+# It unlocks the moment H-11 item 4 lands the data version in the URL path,
+# which makes corpus files immutable and cacheable forever. Tracked as O-38.
+#
+# What IS immutable today: pictures. They are content-addressed by name in
+# practice — a changed image gets a changed filename — and nothing about a
+# deploy rewrites one in place.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(png|jpe?g|webp|svg|ico|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
 # Reserved cargo (W-9): the corpus JSON is the app's runtime data, but must
 # never be indexed by search engines. robots.txt forbids CRAWLING at the
 # origin root; this header is the per-directory belt — X-Robots-Tag is

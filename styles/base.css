@@ -88,11 +88,26 @@ svg {
   touch-action: none;
 }
 /* Tapping can also FOCUS the handler-bearing element in some browsers, which
-   paints a persistent outline box until the next tap. The instrument has no
-   keyboard navigation; nothing inside the canvas should ever show one. */
-svg :focus,
-svg :focus-visible {
+   paints a persistent outline box until the next tap. That box is what this
+   suppresses, and only that.
+
+   Q12 (0c): this rule used to name `:focus-visible` as well, which removed
+   ALL keyboard focus indication in the canvas. The two selectors are not the
+   same thing, and `:focus-visible` exists precisely to tell them apart — it
+   fires for keyboard and assistive-technology focus and NOT for a tap. So the
+   tap box stays suppressed and the keyboard ring comes back.
+
+   This does not contradict THE PREMISE. The premise forbids TYPING — "it will
+   never trigger a QWERTY keyboard, no typing, anywhere, ever" — which is about
+   text entry, not about whether someone driving the instrument by keyboard or
+   screen reader can see where they are. A focus ring nobody can see is not a
+   simpler instrument; it is the same instrument with the lights off. */
+svg :focus {
   outline: none;
+}
+svg :focus-visible {
+  outline: 2px solid var(--color-nodes, #f2b41c);
+  outline-offset: 3px;
 }
 
 /* Portrait gate: the wheel's geometry only works in portrait, so on a touch
@@ -207,7 +222,16 @@ svg :focus-visible {
   top: 0;
   left: 0;
   right: 0;
-  padding: calc(6px * var(--iframe-scale, 1)) calc(10px * var(--iframe-scale, 1));
+  /* Q13 (0c): the strip is pinned to top:0, so on a notched phone it renders
+     UNDER the notch or Dynamic Island. viewport-fit=cover (index.html) opts
+     into the full screen and hands us the insets; these add the top inset to
+     the existing padding and keep the text clear of the cutout. env() falls
+     back to 0px everywhere it is unsupported, so nothing changes on a phone
+     without a notch. */
+  padding: calc(6px * var(--iframe-scale, 1) + env(safe-area-inset-top, 0px))
+           calc(10px * var(--iframe-scale, 1) + env(safe-area-inset-right, 0px))
+           calc(6px * var(--iframe-scale, 1))
+           calc(10px * var(--iframe-scale, 1) + env(safe-area-inset-left, 0px));
   color: rgba(255, 255, 255, 0.85);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: calc(11px * var(--iframe-scale, 1));
