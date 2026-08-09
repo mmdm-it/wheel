@@ -2,7 +2,18 @@
 
 **Ruled by Howell, 2026-08-02:** *"I like the way you handle commits and
 merges... Let's make your routine standard across both sessions."* Written
-by Orville; binding on Orville and Wilbur alike, in this repo and in cargo.
+by Orville; binding on Orville and Wilbur alike, each in his own repository.
+
+> **CORRECTED 2026-08-09 (WF-15; night audit §8).** This line read *"in this
+> repo and in cargo"* — written before the wall existed, and it instructs a
+> session to do the one thing WF-15 forbids. **Neither of us commits to the
+> other's repository.** The engine is Orville's, the data repository is
+> Wilbur's, and access across the wall is READ ONLY in both directions —
+> enforced server-side since O-32 by per-repository tokens, and refused
+> locally by the deny layer and the guard hook. The routine below is the same
+> routine for both of us; it is simply run twice, once in each repository, by
+> its owner. Where a document governs BOTH sessions, its owner commits it from
+> the other's draft.
 
 The routine exists because we are three: two sessions that cannot see each
 other's benches, and Howell, who owns the tree. Every rule below is a

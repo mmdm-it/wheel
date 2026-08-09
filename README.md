@@ -9,7 +9,7 @@ Minimal scaffold, data-agnostic: interaction → navigation → view → geometr
 ## Notable Changes in 3.11.0 (catch-up release — see CHANGELOG for the full sprint)
 - **Phase B closed**: MMdM population complete — 1,032 models across 99 manufacturers (plus two gateway patrons), full prose; Gregorio XIII gateway to the calendar volume; end-of-phase audit ritual (docs/archive/AUDIT-PHASE-B.md).
 - **Phase C sprint (C.1–C.5)**: gesture ladder (tap / scrub / flick / double-flick, docs/FEEL.md); boot splash "the instrument arrives"; migration rebuild + gateway cinema wipe; golden-angle star field with editorial prominence; canonical usable areas; wedge calendar with historical Julian/Gregorian reckoning; day ring with the present-moment mark.
-- **The e-reader**: NEXT gesture in the detail sector; one continuous verse chain Genesis 1:1 → Apocalypse 22:21; the sweep at books/chapters/verses levels; Roman chapters, Arabic verses.
+- **The e-reader**: NEXT gesture in the detail sector; one continuous verse chain Genesis 1:1 → Apocalypse 22:21; the sweep at books/chapters/verses levels; chapters wear their own tradition's numerals, verses stay Arabic (H-2: a default, not a law — the edition's precedent governs).
 - **Platform**: mmdm.it unmasked (direct DNS, real SEO); GPL-3.0 engine / reserved data IP split; pre-compressed JSON + perf probe cycle (cellular boot 1.3MB → 180KB).
 
 ## Release Train
@@ -44,7 +44,8 @@ team testing runbook and are not part of the public repository docs.
 - `src/navigation` — navigation state and events
 - `src/interaction` — rotation choreographer (momentum + snapping)
 - `src/view` — rendering (SVG hooks), DOM bindings, and migration animation (`migration-animation.js`)
-- `data` — sample volume/schema/manifest
+- `schemas` — the machine-readable schemas expressing the WILBUR format
+  (the corpus itself left this repository on 2026-07-26; see NOTICE §2)
 - `styles` — CSS variables and base styles
 - `test` — node test files for geometry/state
 
@@ -55,7 +56,9 @@ Keep modules small (<200 lines), zero inline styles/`!important`, pure functions
 
 Copyright © 2025–2026 MMdM — Meccanismi Marittimi delle Marche.
 
-- **Engine** (src, scripts, tests, styles, build config): free software under
+- **Engine** (src, scripts, test, tests, styles, schemas, index.html,
+  telemetry.php, .htaccess, robots.txt, .github/workflows, .claude/hooks,
+  .gitignore, package.json — NOTICE §1 enumerates them): free software under
   the **GNU GPL v3** — see [LICENSE](LICENSE).
 - **Data & content** (catalog, curated volumes, artwork, brand assets):
   **all rights reserved** — see [NOTICE](NOTICE) for the exact boundary.

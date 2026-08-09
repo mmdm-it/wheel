@@ -30,11 +30,19 @@ answers, which a flat list did not, is **is this authoritative?**
 
 **1. RECORDS — read as reference or as backup.**
 
-- **a. Blueprints** — defining documents. What is *true*. `ARCHITECTURE.md`,
-  `PREMISE.md`, `THE-PLAYLIST.md`, `WILBUR-FORMAT.md`, `FEEL.md`.
-  *(`DECISIONS.md` was here and is archived under H-7: a general decisions
-  table has no function once every ruling carries its landing address at
-  birth, and a catch-all is where homeless decisions go to look housed.)*
+- **a. Blueprints** — defining documents. What is *true*. **Every live
+  document under `docs/` is a Blueprint unless it is named an SOP below or
+  sits in `docs/archive/`.** Named examples, not the whole list:
+  `ARCHITECTURE.md`, `PREMISE.md`, `THE-PLAYLIST.md`, `WILBUR-FORMAT.md`,
+  `FEEL.md`.
+  *(The rule is stated as a default because the old form named six documents
+  while thirteen live ones had no category at all — including `PREMISE.md`,
+  which is "above architecture and above every phase" — while WF-13 claimed
+  its rotation "covers every live document." A taxonomy with holes in it
+  cannot be the thing a rotation iterates over. `DECISIONS.md` was named here
+  and is archived under H-7: a general decisions table has no function once
+  every ruling carries its landing address at birth, and a catch-all is where
+  homeless decisions go to look housed.)*
 - **b. SOPs** — standard operating procedures. How we *work*. This document,
   `docs/GIT-ROUTINE.md`.
 - **c. GitHub** — safety net and history. Backup against a dead laptop,
