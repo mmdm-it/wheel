@@ -1,5 +1,11 @@
-# Sprocket Wheel & Cousin Navigation (v3 baseline)
+# Sprocket Wheel & Cousin Navigation — the v2 specification
 **Technical Specification for v2 Implementation**
+
+> **RETITLED 2026-08-09 (night audit §8).** The title read *"(v3 baseline)"*
+> over a document whose own subtitle says v2 — WF-13's first question, a
+> document contradicting itself in two adjacent lines. It describes the v2
+> implementation and is kept as the dated record of it; where v3 differs,
+> `docs/FEEL.md` and `docs/DIMENSION_SYSTEM.md` are current.
 
 > v3 delta tracking: This sprocket spec is imported from v2. Record any v3-specific changes (e.g., windowing strategy, gap handling, performance limits) as concise "v3 delta" notes near the relevant sections instead of modifying the original text silently.
 

@@ -27,6 +27,14 @@ the reader than the broader thing containing it. Howell: *"translations are
 subsets of languages, but they are shown as supersets."* The app asked you to
 travel outward in order to narrow down.
 
+> **RULED HERE, NOT YET BUILT — O-37, 2026-08-09 (night audit §8).** The
+> arrangement below inverts `docs/DIMENSION_SYSTEM.md`, which is named
+> elsewhere as the canon and which the **shipped code still follows**: it puts
+> language on the *secondary* plane and edition on the *tertiary*, the exact
+> reverse of this table. Neither document carried a marker, so a reader could
+> take either as current depending on which they opened. The ruling is real and
+> dated; the implementation is not done. **O-37 carries it.**
+
 **The new arrangement** — nesting and depth finally agree:
 
 | plane | holds | why |
@@ -51,6 +59,18 @@ revisitable once real users report.
 
 **What sits behind the glass** (ruling 3): first visit shows the Vulgate
 default; thereafter the verse the reader was last on when the app closed.
+
+> **CORRECTED 2026-08-09 (O-29; night audit §8).** *"First visit shows the
+> Vulgate default"* is **unservable as written.** Under O-29's gate an edition
+> is offered only when it is `proofread && hasChart`, and **no edition is
+> proofread today — the flag is false on all fourteen.** So a first visit
+> under the current data shows no edition at all, which is the ruled and
+> correct behaviour: *"It is better that incomplete volumes go offline rather
+> than me being misled by false data."* The rule this document should state,
+> and now does: **first visit shows the first SERVABLE edition, and the
+> Vulgate is merely the one expected to qualify first.** Rewriting it as a
+> named default was how a pin on `VUL` got into the engine and made a chart
+> follow the pinned edition instead of the committed one.
 
 **Consequence — session persistence, which does not exist yet.** Today only the
 splash's "seen" flag survives a launch; the dimension choice is sticky only
