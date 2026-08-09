@@ -20,14 +20,18 @@ default fails the other way.
 --------------------------
 The Wheel navigation engine — all source code in src/, scripts/, test/,
 tests/, styles/, schemas/, index.html, telemetry.php, .htaccess, robots.txt,
-and .github/workflows/ — is free software, licensed under the GNU General
-Public License, version 3 only (see LICENSE).
+.github/workflows/, .claude/hooks/, .gitignore, package.json, and
+package-lock.json — is free software, licensed under the GNU General Public
+License, version 3 only (see LICENSE).
 
 These are enumerated rather than gestured at, because "the build
 configuration" was a phrase the next audit would have had to interpret.
 schemas/ is here because validation machinery is engine code; telemetry.php
 because a fork hosts its own endpoint; .htaccess because the serving config IS
-build configuration; robots.txt and the workflows for the same reason.
+build configuration; robots.txt and the workflows for the same reason;
+package.json, package-lock.json and .gitignore because they are how the engine
+is built and what it excludes; and .claude/hooks/ because a guard script is
+code a fork can use, whatever it was written to guard.
 
 You may use, study, modify, and redistribute the engine under the terms of
 the GPL. If you distribute software built from it, you must publish your
@@ -38,6 +42,11 @@ source under the same license. That is the point.
 The documents in docs/ are published so the engine can be understood
 and the format cited. Publication is not a license: their text is
 © MMdM, all rights reserved, and §0 applies.
+
+The same terms cover the repository's own documentation and metadata:
+README.md, CHANGELOG.md, and the deposit metadata CITATION.cff and
+.zenodo.json. These describe the published work, so they are published
+with it and reserved with it.
 
 One deliberate exception. THE WILBUR FORMAT described in
 docs/WILBUR-FORMAT.md MAY BE FREELY IMPLEMENTED by anyone, in any
@@ -91,6 +100,18 @@ The reserved cargo includes, without limitation:
   - MMdM's operational scripts — sync-to-server.sh, sync-data-to-server.sh,
     bump-version.sh, bump-data-version.sh. These encode MMdM's own deployment
     habits and infrastructure, not the engine; a fork needs its own.
+  - MMdM's working procedure — WORKFLOW.md, its generated projection
+    CLAUDE.md, and .claude/settings.json. These describe how MMdM works
+    rather than how the engine works: they name our sessions, the wall
+    between our repositories, and the ledger that governs them. A fork needs
+    none of it and would be misled by it.
+
+Where a directory holds files of both kinds, RIGHTS ASSIGN BY FILE, not by
+directory. .claude/ is the worked example: its hooks/ are engine code under
+§1, its settings.json is operational and reserved here. Assigning a mixed
+directory wholesale would either give away what is held or hold back what was
+meant to be free, and which of those happened would depend on nothing more
+than where a file was put.
 
 These materials are copyright © MMdM, all rights reserved. Reproduction or
 redistribution requires written permission.

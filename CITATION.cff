@@ -4,15 +4,21 @@ title: "Wheel — a rotational sprocket-chain navigator for deep hierarchies"
 abstract: >-
   A mobile-first instrument for navigating large hierarchical and sequential
   datasets by rotating a bounded chain of nodes around an eccentric,
-  off-screen hub. The engine is GPL-3.0; the data and content it carries are
-  reserved — see NOTICE for the boundary.
+  off-screen hub. The engine is GPL-3.0; the documentation is published but
+  reserved, with a standing grant to implement the WILBUR format freely; and
+  the corpus is not in this repository. NOTICE states the boundary and is
+  authoritative — no single license label describes this work.
 type: software
 authors:
   - family-names: Gibbens
     given-names: Howell
     orcid: "https://orcid.org/0009-0000-9904-9864"
     affiliation: "Meccanismi Marittimi delle Marche (MMdM), Fano (PU), Italy"
-license: GPL-3.0-only
+# No `license:` field, deliberately (H-6). CFF takes a single SPDX identifier
+# per record and cannot express mixed rights, so any value here would be a
+# blanket claim over material it does not describe — which is the error this
+# ruling corrects. Rights live in NOTICE. Citation function (title, authors,
+# version, DOI) is unaffected.
 repository-code: "https://github.com/mmdm-it/wheel"
 url: "https://mmdm.it/"
 keywords:
