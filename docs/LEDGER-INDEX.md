@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-09 from 98 entries.
+Generated 2026-08-09 from 99 entries.
 
 | id | status | title |
 |---|---|---|
@@ -61,6 +61,7 @@ Generated 2026-08-09 from 98 entries.
 | O-35 | OPEN | H-8's CHECK IS BROADER THAN H-8's ITEM LIST — ten paths still fall to §0 |
 | O-36 | OPEN | THE BIBLE NEEDS A NEW OVERTURE — a requirement with no number until now |
 | O-37 | OPEN | THE STRATA WERE RULED TO INVERT AND NEVER DID — canon, roadmap and code disagree |
+| O-38 | OPEN | CHAPTER CACHING WAITS FOR VERSIONED PATHS — Q5, taken only as far as it is safe |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
