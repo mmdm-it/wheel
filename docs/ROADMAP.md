@@ -27,13 +27,17 @@ the reader than the broader thing containing it. Howell: *"translations are
 subsets of languages, but they are shown as supersets."* The app asked you to
 travel outward in order to narrow down.
 
-> **RULED HERE, NOT YET BUILT — O-37, 2026-08-09 (night audit §8).** The
-> arrangement below inverts `docs/DIMENSION_SYSTEM.md`, which is named
-> elsewhere as the canon and which the **shipped code still follows**: it puts
-> language on the *secondary* plane and edition on the *tertiary*, the exact
-> reverse of this table. Neither document carried a marker, so a reader could
-> take either as current depending on which they opened. The ruling is real and
-> dated; the implementation is not done. **O-37 carries it.**
+> **CONFIRMED AND SCHEDULED — O-37, ruled by Howell 2026-08-09.** The
+> arrangement below stands: primary the scripture chain, **secondary
+> translations, tertiary languages.** It inverts `docs/DIMENSION_SYSTEM.md`,
+> which is named elsewhere as the canon and which the **shipped code still
+> follows** — and the ruling settles that **the canon was the stale document,
+> not this one.** DIMENSION_SYSTEM.md is marked superseded at the assignment.
+>
+> **Implementation lands in H-12 phase 1**, riding the dimension-bridge
+> neighborhood together with the servable gate. Until then the built order is
+> the reverse of this table, and both documents say so rather than leaving a
+> reader to guess which of them is current.
 
 **The new arrangement** — nesting and depth finally agree:
 
