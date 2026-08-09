@@ -31,7 +31,10 @@ answers, which a flat list did not, is **is this authoritative?**
 **1. RECORDS — read as reference or as backup.**
 
 - **a. Blueprints** — defining documents. What is *true*. `ARCHITECTURE.md`,
-  `DECISIONS.md`, `THE-PLAYLIST.md`, `WILBUR-FORMAT.md`.
+  `PREMISE.md`, `THE-PLAYLIST.md`, `WILBUR-FORMAT.md`, `FEEL.md`.
+  *(`DECISIONS.md` was here and is archived under H-7: a general decisions
+  table has no function once every ruling carries its landing address at
+  birth, and a catch-all is where homeless decisions go to look housed.)*
 - **b. SOPs** — standard operating procedures. How we *work*. This document,
   `docs/GIT-ROUTINE.md`.
 - **c. GitHub** — safety net and history. Backup against a dead laptop,

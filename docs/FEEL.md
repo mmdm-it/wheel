@@ -5,6 +5,54 @@ name, a value, a home, and a rationale — so feel never becomes archaeology
 again. Constants marked **FROZEN** are under Howell's standing order
 (2026-07-17): no change without his express approval.
 
+## Rulings migrated from DECISIONS.md (H-7, 2026-08-09)
+
+*The catch-all register was retired; a decision that never reaches a Blueprint
+or an SOP has no authoritative home at all (WORKFLOW.md's taxonomy). These
+shipped behaviours were live and homeless — recorded in the changelog, which is
+history, and in the code, which is the thing itself. Each keeps its evidence so
+a wrong migration is visible rather than plausible.*
+
+- **The globe appears at a volume's front door.** *"I would like to have the
+  globe icon visible when we first enter the Bible gateway"* — shipped v3.24.0.
+- **Corner icons swap mid-wipe, as part of the image.** Ruled in principle
+  (*"shouldn't the wipe switch that icon the same way it switches the colors
+  and labels"*); the timed-swap-at-crossing is Orville's mechanism, and Howell
+  said of his own earlier instruction *"I actually think I'm wrong."* The
+  mechanism has never been separately ruled and is noted here as ours.
+- **A desktop-only splash with a QR code.** *"I want to put up a desktop only
+  splash page"* — shipped v3.21.1. The instrument is for the phone; the desktop
+  is a signpost to it.
+- **Search matches any part of a name, not only its start.** *"I'd like the
+  search logic to search for any string not just the first letters"* — v3.23.0.
+- **Fewer dramatic visual environments, not more.** *"My general point is I
+  want fewer, not more, dramatic visual changes."* A standing principle offered
+  before any specific build; it belongs with the doctrines above and now
+  outranks any single proposal to add one.
+- **Favorites keep their full names only at 18 characters or fewer.** Orville's
+  amendment to Howell's 2026-07-19 favorites rule, made when Finnish broke the
+  sky, approved after the fact (*"That all looks good"*). **The 18 is
+  arbitrary** and is recorded as arbitrary, so that a future change needs no
+  archaeology.
+- **A language without its own abbreviations borrows the Latin ones.**
+  Orville's interim choice, approved on sight. The alternatives were truncation
+  or full names. Provisional against O-12, which gives each language its own.
+- **The catalog's replacement home icon can wait.** *"A permanent catalog icon
+  for home will be found in due time, I'm not worried about that at the
+  moment"* — a ruling to defer, recorded so nobody re-opens it as a gap.
+- **No engine UI for empty chapters — the data gets fixed instead.** *"We
+  shouldn't spend too much time writing code for a problem that can be, must
+  be, and will be fixed somewhere else."* The general form of the rule the
+  servable gate now enforces.
+- **No licensing-pending notices in the interface.** *"It doesn't concern the
+  user, and it's too inside baseball."* The shelf shows what opens; it does not
+  explain what does not.
+- **Testament scope is not filtered out of the rings.** Orville framed the
+  choice as two options and recommended one; Howell: *"go with your suggestion
+  a."* Recorded with that provenance on purpose — **the option set was
+  Orville's and a third option was never offered**, so this is a ruling on a
+  menu one of us wrote.
+
 ## The doctrines
 
 - **The sprocket, not the carousel.** Nodes are links in a bounded chain
