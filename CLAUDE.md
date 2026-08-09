@@ -71,13 +71,18 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   problem is never that an entry is wrong; it is that nothing makes a stale one
   stop looking live. *(Raised by Orville on review, 2026-08-06.)*
 
-- **WF-7. Anything asserting a state carries a date and a source.** Three surfaces go
-  stale and only two of them are covered above: PRs, ledger entries, and the
-  claims inside specifications. A specification sentence stating something
-  checkable about the corpus or the engine — counts, coverage, "no view is the
-  hub" — is dated and says how it was measured, so it can be re-run and shown
-  false. Stated as timeless fact, it cannot be, and it will quietly outlive its
-  truth.
+- **WF-7 (narrowed under H-10). A status line or board entry asserting a state
+  carries a date and a source.** These are the shapes a script can check and a
+  reader can re-run: a PR's state, a ledger entry's status, a board line's
+  claim. Each says when it was true and how it was measured, so it can be
+  re-run and shown false.
+
+  **Prose is deliberately NOT covered here.** A specification sentence stating
+  something checkable — counts, coverage, "no view is the hub" — goes stale
+  exactly as a status does, but no gate can see it, and a rule claiming to bind
+  what it cannot reach teaches its readers that the rule is decorative. Undated
+  prose assertions are WF-13's business, under a standing question of their
+  own, one document per sitting.
 
 - **WF-8. The read-back.** When a ruling is made, it is read back with its number and
   its provisional casualties named, and confirmed, before work continues. The
@@ -143,6 +148,9 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   4. Does it use **vocabulary a later ruling abolished**?
   5. Does it describe something **unimplemented with no numbered item** behind
      it? *(WF-2: an orphan by definition.)*
+  6. Does its prose carry **undated state assertions**? Date them or strike
+     them. *(WF-7 binds status lines and board entries, which a script can see;
+     this is where the same disease is caught in prose, which nothing can.)*
 
   **The rotation** covers every live document under `docs/` — archived ones are
   excluded, and SOPs are included, since they go stale exactly as blueprints do.
@@ -187,11 +195,30 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   hook can reach — and with no token set there is no access at all. **Separate
   credentials turned out not to require separate Unix users after all.** On
   disk nothing has changed: both sessions still run as the same user from the
-  same clones, so the filesystem wall remains a convention with an alarm on it,
-  and the `permissions.deny` layer that would back that alarm is **unproven on
-  both sides** — each session's canary stayed silent, consistent with
-  permissions binding at session start and not rebinding as hooks do. **This
-  line stays until that probe comes back green from a fresh session.**
+  same clones, so the filesystem wall remains a convention — but the alarm on
+  it now has two independent layers behind it, and since 2026-08-07 (O-33)
+  both are proven rather than assumed.
+
+  **What O-33 found, because the shape recurs.** The `permissions.deny` layer
+  had never once fired. Both sessions' canaries were silent, and we explained
+  it as permissions binding at session start — a comfortable theory that fit
+  every fact and was wrong in every part. The real causes were two, both
+  documented and neither visible from reading our own config: **only
+  `Edit(path)` and `Read(path)` rules are consulted**, so our `Write(…)` and
+  `NotebookEdit(…)` rules were accepted, listed, and ignored — *including the
+  canary itself*, an instrument built from the same broken material as the
+  thing it measured; and **a single leading slash anchors at the settings
+  source, not the filesystem root**, so the rule guarding the brother's tree
+  resolved to a path that cannot exist. **Permissions DO rebind mid-session**;
+  the corrected rules refused live in the session that wrote them.
+
+  **The state today, each layer verified in its own words at the board gate
+  (WF-4):** the deny layer refuses naming itself, the hook refuses naming
+  itself, and the two are complementary rather than redundant — deny rules do
+  not reach arbitrary subprocesses, which is exactly the surface the hook
+  guards. A **fourth** layer exists that we do not configure and must not
+  count: the harness's own auto-mode classifier, which refuses an agent
+  editing its own permission file.
 
 - **WF-16. A commit that changes a document under `docs/` cites a number, and
   the number must exist.** `W-`, `O-` or `WF-`; `WF-` ids pass on sight, since
@@ -213,4 +240,52 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   `origin/main..HEAD`, and a shallow clone has neither ref — it degrades to
   checking the tip alone and says so, rather than crashing or passing quietly,
   but a narrower check is still narrower.
+
+- **WF-17. An item closes when a NON-AUTHOR has re-run its named check** —
+  never on the author's report. Every item names its verifier and its check AT
+  CREATION, because a check written afterwards describes what happened rather
+  than testing it. And a guard that cannot prove itself firing is not a guard:
+  wall layers scream or block, never shrug.
+
+  The workflow repair runs as a loop, not a discussion: Howell rules → fixes
+  land with named verifiers → Octave re-audits against the prior audit and
+  reports deltas → at zero HIGH findings the repair is OVER, and no workflow
+  discussion opens again until a failure forces one.
+
+  **THE STATED EXCEPTION — wall layers** *(Howell, 2026-08-09, on Orville's
+  flag)*. A session's permission layer only ever answers to that session: a
+  brother attempting a Write into the other's tree is refused by his OWN rules
+  first, so his refusal proves his own wall and says nothing about the one
+  under test, and the witness session writes to neither repository and cannot
+  attempt it at all. So **the verifier for a wall layer is not a session at
+  all — it is the platform, and the re-run is the WF-4 board gate**, fired at
+  every session open, reporting what refused and in which layer's own words.
+  Howell is the witness of record. This narrows nothing else: every check that
+  is a test, a script, a file state or a document reading still closes only on
+  a non-author's re-run. The exception covers precisely those checks that can
+  only be executed by the session whose own enforcement is under test.
+
+- **WF-18. The ledger is the SOLE channel between sessions.** Howell's working
+  conversation is with Octave; agenda and rulings are set there and arrive
+  here numbered. Every directive in the ledger carries Howell's number, and
+  **Octave never originates orders — he transmits and verifies.** Howell's
+  direct contact with Wilbur and Orville is opening and closing sessions; each
+  repository's CLAUDE.md names the ledger's path, so reading the board needs
+  no telling.
+
+  **Sidebars are retired as the default.** Deliberation lives in the
+  Howell–Octave conversation; the ledger receives conclusions, numbered.
+  Howell may convene a sidebar for a genuinely contested multi-party design
+  question; it names its landing addresses AND its closing date at the top,
+  and it closes on that date by his ruling.
+
+  **Commits to the ledger repository carry a `Session:` trailer**
+  (`Session: octave` / `wilbur` / `orville`), and each session commits under
+  its own name via `git -c user.name=<Name>`: the repo-level config reads
+  Octave and must not be relied on for attribution.
+
+  **Octave runs the ledger's archive cycle** under the existing lifecycle
+  rules — OPEN migrates; CLOSED and SUPERSEDED stay behind; nothing is left
+  behind until its conclusion exists in a blueprint or standing procedure —
+  and a brother verifies each archive, per WF-17.
 <!-- WF-RULES:END -->
