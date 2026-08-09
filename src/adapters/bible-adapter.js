@@ -68,9 +68,32 @@ export async function loadManifest() {
 // on hand — or definitively absent — before the first chain is built.
 const seatingChartCache = new Map();
 
+// Q3 (0c): boot AWAITS a chart fetch for the default edition, and the default
+// edition has no chart — so every cold boot spends a full round trip learning
+// a 404 whose answer never changes. Three artifacts are charted (LXX, THEOD,
+// WLC) out of fourteen editions.
+//
+// The fix has two halves and this is the engine's: if the data DECLARES which
+// editions are charted, we never ask about the others. `setChartedEditions`
+// takes that list from the supplemental fetch at boot. Until the data carries
+// it the set stays null and behaviour is exactly as before — an unknown list
+// means "ask", never "assume absent", because guessing an edition is
+// uncharted would silently unseat a reader whose chart does exist.
+//
+// The data half is O-39: one field in translations.json, Wilbur's.
+let chartedEditions = null;
+
+export function setChartedEditions(codes) {
+  chartedEditions = Array.isArray(codes) && codes.length ? new Set(codes) : null;
+}
+
 export async function ensureSeatingChart(code) {
   if (!code) return null;
   if (seatingChartCache.has(code)) return seatingChartCache.get(code);
+  if (chartedEditions && !chartedEditions.has(code)) {
+    seatingChartCache.set(code, null);   // declared uncharted: no request at all
+    return null;
+  }
   let chart = null;
   try {
     if (isBrowser) {
