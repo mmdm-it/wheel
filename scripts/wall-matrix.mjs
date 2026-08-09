@@ -72,6 +72,20 @@ const cells = [
   ['Bash tee, absolute',           'Bash', { command: `echo x | tee ${BROTHER}/gutenberg/foo.json` }, true],
   ['Bash git -C into the tree',    'Bash', { command: `git -C ${TRAV} commit -am x` }, true],
   ['Bash rsync dest in tree',      'Bash', { command: `rsync -a out/ ${BROTHER}/gutenberg/` }, true],
+  // ── H-9: cross-wall EXECUTION is default-deny, with a named allowlist ──
+  // Red before the hook change, green after. The gap: none of these carries a
+  // write shape, so every one of them PASSED as a read while being able to
+  // write anything the interpreter could reach.
+  ['H-9 node into the tree BLOCKS',        'Bash', { command: `node ${TRAV}/scripts/add-verse-counts.mjs` }, true],
+  ['H-9 node absolute spelling BLOCKS',    'Bash', { command: `node ${BROTHER}/scripts/anything.mjs` }, true],
+  ['H-9 node symlink spelling BLOCKS',     'Bash', { command: `node ${REL}scripts/anything.mjs` }, true],
+  ['H-9 python into the tree BLOCKS',      'Bash', { command: `python3 ${TRAV}/scripts/tool.py` }, true],
+  ['H-9 bash into the tree BLOCKS',        'Bash', { command: `bash ${BROTHER}/bin/night-audit` }, true],
+  ['H-9 allowlisted matrix PASSES',        'Bash', { command: `node ${TRAV}/scripts/wall-matrix.mjs` }, false],
+  ['H-9 allowlisted matrix, absolute',     'Bash', { command: `node ${BROTHER}/scripts/wall-matrix.mjs` }, false],
+  ['H-9 our own script stays allowed',     'Bash', { command: 'node scripts/wall-matrix.mjs' }, false],
+  ['H-9 a read of his script stays allowed','Bash', { command: `cat ${TRAV}/scripts/add-verse-counts.mjs` }, false],
+  ['H-9 node -e reading his data still passes', 'Bash', { command: `node -e 'JSON.parse(1)' ${TRAV}/gutenberg/manifest.json` }, false],
   // ── File tools through the hook (belt under the harness's braces) ─────
   ['Write, symlink spelling',      'Write', { file_path: `${REL}gutenberg/foo.json`, content: 'x' }, true],
   ['Edit, absolute spelling',      'Edit',  { file_path: `${BROTHER}/gutenberg/manifest.json` }, true],

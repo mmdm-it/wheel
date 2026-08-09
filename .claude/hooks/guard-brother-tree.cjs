@@ -11,6 +11,21 @@
 // Logic is the .mjs twin's, unchanged: reads pass, writes refuse, in every
 // spelling (WF-15 — the wall is read-only, not opaque). Coverage is proven
 // by scripts/wall-matrix.mjs, including under /usr/bin/node explicitly.
+//
+// H-9 (2026-08-08) adds cross-wall EXECUTION as a third refusal: an
+// interpreter aimed at a script inside the brother's tree is denied unless
+// that script is on a named allowlist of read-only instruments.
+//
+// THE RESIDUAL, RECORDED RATHER THAN DISCOVERED (H-9 item 3). This allowlist
+// is a TRIPWIRE, NOT A PROOF. It reads command text, so it can be walked
+// around by anyone who wants to — a copied script, an indirection through a
+// shell variable, an interpreter spelled a way this regex does not know. It
+// exists to make the wrong move fail loudly and leave a mark, not to make it
+// impossible. The actual guarantees are elsewhere and are the ones to trust:
+// the server-side per-repository PATs, which refuse the crossing where no
+// local process can reach; and both brothers' review of every commit to any
+// script that crosses. Adding an entry to the allowlist is a deliberate act
+// needing that review, because every entry is a door.
 'use strict';
 var fs = require('fs');
 var path = require('path');
@@ -37,21 +52,59 @@ function main() {
     return 2;
   }
 
+  var bases = [BROTHER_ABS, BROTHER_SIBLING, DATA_LINK];
+  function inBrotherTree(abs) {
+    for (var b = 0; b < bases.length; b += 1) {
+      if (abs === bases[b] || abs.indexOf(bases[b] + path.sep) === 0) return true;
+    }
+    return false;
+  }
+
   // ── File tools: resolve the path, refuse if it lands in the tree ────────
   if (tool === 'Edit' || tool === 'Write' || tool === 'NotebookEdit') {
     var fp = ti.file_path || ti.notebook_path || '';
     var resolved = path.resolve(ROOT, fp);
-    var bases = [BROTHER_ABS, BROTHER_SIBLING, DATA_LINK];
-    for (var i = 0; i < bases.length; i += 1) {
-      if (resolved === bases[i] || resolved.indexOf(bases[i] + path.sep) === 0) {
-        console.error('WALL (WF-15): ' + tool + ' into the data tree is refused — access across the wall is READ ONLY. Path resolves to: ' + resolved);
-        return 2;
-      }
+    if (inBrotherTree(resolved)) {
+      console.error('WALL (WF-15): ' + tool + ' into the data tree is refused — access across the wall is READ ONLY. Path resolves to: ' + resolved);
+      return 2;
     }
     return 0;
   }
 
   if (tool !== 'Bash') return 0;
+
+  // ── H-9: CROSS-WALL EXECUTION IS DEFAULT-DENY, WITH A NAMED ALLOWLIST ───
+  // The gap this closes: `node ../wheel-cargo/anything.mjs` references the
+  // brother's tree and carries NO write shape, so every check below passed it
+  // as a read — while the interpreter it starts can write anything it can
+  // reach. Reads across the wall are allowed by design; EXECUTION is not, and
+  // the two were indistinguishable to a regex reading command text.
+  //
+  // Default-deny applied to execution: an interpreter aimed at a script INSIDE
+  // the brother's tree is refused unless that script is a named read-only
+  // verification instrument. Today the list is one entry. Adding to it is a
+  // deliberate act requiring both brothers' review (H-9 item 3), because every
+  // entry is a door.
+  //
+  // Scope, stated so it is not mistaken for more than it is: this tests the
+  // interpreter's TARGET SCRIPT. `node -e '…'` reading cargo files is not an
+  // invocation *into* the tree and is governed by the write-shape rules below,
+  // as before.
+  var EXEC_ALLOWLIST = ['wall-matrix.mjs'];
+  var INTERPRETERS = '(node|nodejs|npx|python|python3|perl|ruby|sh|bash|zsh|deno|bun)';
+  var execRe = new RegExp('(^|[\\s;&|(])' + INTERPRETERS + '\\s+((?:-\\w+\\s+)*)([^\\s;&|<>]+)', 'g');
+  var hit;
+  while ((hit = execRe.exec(cmd)) !== null) {
+    var target = hit[4].replace(/^["']|["']$/g, '');
+    if (target.charAt(0) === '-') continue;          // a flag, not a script
+    var targetAbs = path.resolve(ROOT, target);
+    if (!inBrotherTree(targetAbs)) continue;
+    if (EXEC_ALLOWLIST.indexOf(path.basename(targetAbs)) !== -1) continue;
+    console.error('WALL (WF-15, H-9): executing a script inside the brother\'s tree is refused — cross-wall execution is default-deny. Target: ' + targetAbs
+      + '\n  Allowed instruments: ' + EXEC_ALLOWLIST.join(', ')
+      + '\n  Reads are permitted; running his code is not. If you need a measurement, write it on YOUR side and read his data.');
+    return 2;
+  }
 
   // References the brother's tree? `data/` counts only at a path-token start
   // — test/fixtures/data/… is OUR tree.

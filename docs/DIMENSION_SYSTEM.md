@@ -42,16 +42,27 @@ strata**, **tertiary strata** are the names (primary/secondary/tertiary for
 short); these words are used nowhere else in the app, so they are
 unambiguous. "Reader" is wrong — a volume may be a music library, not a text.
 
-> **CONTRADICTED BY A LATER RULING, UNIMPLEMENTED — O-37, 2026-08-09 (night
-> audit §8).** The assignment below puts **language** on the secondary plane
-> and **edition** on the tertiary. `docs/ROADMAP.md` carries Howell's ruling of
-> **2026-07-30, "the strata invert"**, which reverses them: language deepest,
-> edition in the middle, the text in front, so that travelling inward narrows
-> and travelling outward broadens. **The shipped code follows THIS document,
-> not the later ruling** — so the canon, the roadmap and the build currently
-> describe three positions between them, and this file is the one the engine
-> obeys. Neither document was marked. Resolving it is O-37; until it closes,
-> read the order below as *what is built*, not as *what is ruled*.
+> **SUPERSEDED — O-37, ruled by Howell 2026-08-09.** The assignment below puts
+> **language** on the secondary plane and **edition** on the tertiary. **That
+> is no longer the design.** The ruled order is:
+>
+> | plane | holds |
+> |---|---|
+> | primary | the scripture chain |
+> | **secondary** | **translations (editions)** |
+> | **tertiary** | **languages** |
+>
+> *"Nesting and depth agree, narrowing inward"* — language is the largest set,
+> so it sits deepest; a translation is a subset of a language; the text is the
+> element itself, in front. `docs/ROADMAP.md` carried this from **2026-07-30**
+> and was right; **this document was the stale one**, which is worth saying
+> plainly because it is the file named elsewhere as the canon and therefore the
+> one a reader trusts by name.
+>
+> **The shipped code still follows the OLD order below, and is provisional
+> until it does not.** Implementation lands in **H-12 phase 1**, riding the
+> dimension-bridge neighborhood with the servable gate. Read the assignment
+> below as *what is currently built*, never as *what is designed*.
 
 - The **primary strata** — the volume itself (testaments → books →
   chapters → verses; a music library's artists → albums → tracks). The
