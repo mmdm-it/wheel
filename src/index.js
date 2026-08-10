@@ -10,7 +10,6 @@ import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-py
 import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
-import { buildPyramidInstructions } from './view/detail/pyramid-view.js';
 import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
