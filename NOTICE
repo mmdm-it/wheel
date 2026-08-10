@@ -16,13 +16,18 @@ added, and the first time someone forgets, the failure runs toward
 accidental publication — which is the expensive direction. This
 default fails the other way.
 
+Two files describe the terms rather than falling under them: this NOTICE
+and LICENSE. Both are published as part of the repository and may be
+reproduced with it, entire and unaltered, by anyone exercising a grant
+above — a licence nobody may copy is not a licence.
+
 1. THE ENGINE — GNU GPL v3
 --------------------------
 The Wheel navigation engine — all source code in src/, scripts/, test/,
 tests/, styles/, schemas/, index.html, telemetry.php, .htaccess, robots.txt,
-.github/workflows/, .claude/hooks/, .gitignore, package.json, and
-package-lock.json — is free software, licensed under the GNU General Public
-License, version 3 only (see LICENSE).
+.github/workflows/, .github/CODEOWNERS, .claude/hooks/, .gitignore,
+package.json, and package-lock.json — is free software, licensed under the
+GNU General Public License, version 3 only (see LICENSE).
 
 These are enumerated rather than gestured at, because "the build
 configuration" was a phrase the next audit would have had to interpret.

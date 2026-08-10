@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-10 from 101 entries.
+Generated 2026-08-10 from 106 entries.
 
 | id | status | title |
 |---|---|---|
@@ -24,6 +24,7 @@ Generated 2026-08-10 from 101 entries.
 | H-10 | OPEN | ONE TRIGGER FOR MMDM.IT, AND WF-7's HONEST SCOPE |
 | H-11 | OPEN | THE POST-MIGRATION LAYOUT — per-edition, per-book, opaque, immutable |
 | H-12 | OPEN | THE ROADMAP, SECOND EDITION |
+| H-13 | OPEN | ACCESSIBILITY IS NOT A GOAL — landed items tolerated and frozen |
 | O-1 | OPEN | Prominence tiers for manufacturers (the ranked starfield) |
 | O-2 | DONE | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | OPEN | Travel-color theme keys (CONTRACT heads-up, not yet work) |
@@ -64,6 +65,7 @@ Generated 2026-08-10 from 101 entries.
 | O-38 | OPEN | CHAPTER CACHING WAITS FOR VERSIONED PATHS — Q5, taken only as far as it is safe |
 | O-39 | OPEN | WILBUR: ONE FIELD KILLS THE BOOT 404 — the data half of Q3 |
 | O-40 | OPEN | THE MANIFEST PERF BUDGET MEASURED CODE NOBODY RUNS |
+| O-41 | OPEN | THE LAST TWO 0c ITEMS NEED RULINGS, NOT KEYSTROKES — Q14's font and Q12's AT semantics |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
@@ -113,3 +115,6 @@ Generated 2026-08-10 from 101 entries.
 | W-47 | OPEN | WORKFLOW.md's WF-15 STILL CARRIES THE THEORY O-33 KILLED |
 | W-48 | DONE | THE 98 VERSES ARE RECONCILED — and `add-verse-counts.mjs` has come home |
 | W-49 | OPEN | THE DRAFTS YOU LAND — H-3, H-4, H-5, H-8, H-10, verbatim |
+| W-50 | OPEN | PHASE 0 VERIFICATION — six items closed, one still open, and my last two drafts |
+| W-51 | DONE | PHASE 0c, CARGO HALF — and `v_in` was not merely redundant, it was WRONG |
+| W-52 | OPEN | THE PHASE-0 EXIT DRAFTS — F2, F3, M1, and F4 landed |
