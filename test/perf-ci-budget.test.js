@@ -1,7 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { createApp, getViewportInfo } from '../src/index.js';
-import { createStoreNavigationBridge } from '../src/core/store-navigation-bridge.js';
 import { createMockElement as makeMockElement, createMockDocument as makeMockDocument } from './helpers/mock-dom.js';
 
 function makeAdapter(id = 'perf-ci') {
@@ -56,15 +55,22 @@ describe('perf CI budgets', () => {
     }
   });
 
-  it('keeps manifest phases within CI budget', async () => {
-    const events = [];
-    const manifestBudget = Number(process.env.CI_PERF_MANIFEST_BUDGET_MS || 50);
-    await createStoreNavigationBridge({ adapter: makeAdapter(), onEvent: evt => events.push(evt) });
-
-    const perfEvents = events.filter(e => e?.type === 'perf:manifest');
-    assert.ok(perfEvents.length >= 3, 'expected perf:manifest events');
-    perfEvents.forEach(evt => {
-      assert.ok(evt.durationMs <= manifestBudget, `manifest ${evt.phase} ${evt.durationMs}ms exceeded budget ${manifestBudget}ms`);
-    });
-  });
+  // THE MANIFEST-PHASE BUDGET WAS DELETED, NOT RE-POINTED (Q9, 0c).
+  //
+  // It measured `perf:manifest` events, and those were emitted from exactly
+  // one place: store-navigation-bridge, the abandoned portal-era loader. The
+  // SHIPPING boot path — loadConfig -> fetchManifest in main.js — has never
+  // emitted them at all. So this cell was not instrumentation we are losing;
+  // it was a budget guarding code nobody runs, reporting green on a path that
+  // does not exist. That is worse than no budget, because it answers the
+  // question "are manifest phases within budget?" with a number about
+  // something else.
+  //
+  // The render budget above SURVIVES and is untouched: it goes through
+  // createApp in src/index.js, which is live.
+  //
+  // Real manifest-phase instrumentation on the live path is worth having and
+  // is NOT smuggled in here — it is O-40, so that adding timing to the boot
+  // sequence is a decision with its own number rather than a side effect of a
+  // deletion.
 });

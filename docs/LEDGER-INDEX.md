@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-09 from 100 entries.
+Generated 2026-08-10 from 101 entries.
 
 | id | status | title |
 |---|---|---|
@@ -63,6 +63,7 @@ Generated 2026-08-09 from 100 entries.
 | O-37 | OPEN | THE STRATA WERE RULED TO INVERT AND NEVER DID — canon, roadmap and code disagree |
 | O-38 | OPEN | CHAPTER CACHING WAITS FOR VERSIONED PATHS — Q5, taken only as far as it is safe |
 | O-39 | OPEN | WILBUR: ONE FIELD KILLS THE BOOT 404 — the data half of Q3 |
+| O-40 | OPEN | THE MANIFEST PERF BUDGET MEASURED CODE NOBODY RUNS |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |

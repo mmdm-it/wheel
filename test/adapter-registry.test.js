@@ -1,13 +1,12 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { createAdapterRegistry, createAdapterLoader } from '../src/adapters/registry.js';
-import { createAdapterContract } from '../src/adapters/types.js';
 
 describe('adapter registry', () => {
   it('registers and resolves adapters by id', () => {
     const registry = createAdapterRegistry();
     const loader = createAdapterLoader(registry);
-    const factory = () => createAdapterContract({ capabilities: { search: true } });
+    const factory = () => ({ capabilities: { search: true } });
     registry.register('demo', factory);
 
     assert.deepEqual(registry.list(), ['demo']);
@@ -25,7 +24,7 @@ describe('adapter registry', () => {
 
   it('unregisters via disposer', () => {
     const registry = createAdapterRegistry();
-    const factory = () => createAdapterContract({});
+    const factory = () => ({});
     const dispose = registry.register('demo', factory);
     assert.equal(registry.list().length, 1);
     dispose();
