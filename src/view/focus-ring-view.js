@@ -25,6 +25,33 @@ export class FocusRingView {
     this.parentButtonOuterLabel = null;
   }
 
+  // Q12 (0c), ruled 2026-08-09: THE MAGNIFIER SPEAKS ON SETTLE, AND SAYS
+  // NOTHING NEW. It repeats the settled node's EXISTING accessible label —
+  // "an announcement is a label, and labels are quotations", which is H-2
+  // reaching speech. There is no wording to invent here and there must not be.
+  //
+  // On settle ONLY. `isRotating` is already the settle signal: the visible
+  // label is blanked while turning and painted when it stops, so speech simply
+  // follows the same rule the glass does. A live region fed every scrub frame
+  // would be unusable — a reader would hear a stream of half-passed nodes and
+  // learn to ignore it, which is worse than silence.
+  //
+  // And only on CHANGE. Re-setting identical text re-announces it in several
+  // screen readers, so a settle onto the node you were already on would speak
+  // twice.
+  #announceSettled(label) {
+    if (!label || label === this._lastAnnounced) return;
+    this._lastAnnounced = label;
+    // Guarded on the METHOD, not on the object: the test DOM provides a
+    // `document` that has no getElementById, so checking `typeof document` was
+    // never enough — it existed and threw. Speech is a courtesy; it must never
+    // be able to break a render.
+    const doc = this.doc || (typeof document !== 'undefined' ? document : null);
+    if (!doc || typeof doc.getElementById !== 'function') return;
+    const region = doc.getElementById('a11y-announcer');
+    if (region) region.textContent = label;
+  }
+
   #attachKeyActivation(target, handler) {
     if (!target) return;
     target.onkeydown = evt => {
@@ -319,6 +346,7 @@ export class FocusRingView {
         this.magnifierLabel.textContent = '';
       } else {
         this.magnifierLabel.textContent = (magnifier.label || '');
+        this.#announceSettled(magnifier.label || '');
       }
       this.magnifierGroup.removeAttribute('display');
     } else if (this.magnifierGroup) {
