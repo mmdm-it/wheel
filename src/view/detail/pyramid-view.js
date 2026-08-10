@@ -77,6 +77,15 @@ export class PyramidView {
 
   render(data) {
     if (!this.pyramidGroup || !this.doc) return;
+
+    // Q10 (0c): THE CALLBACK REFRESHES EVEN WHEN THE DOM DOES NOT.
+    // This assignment sits above the signature short-circuit on purpose. The
+    // handler is a closure over the caller's current state, so a render that
+    // changes nothing visible can still carry a NEW callback — and skipping it
+    // would leave taps acting on the state of some earlier frame. Cheap
+    // assignment, and the one thing the skip must never swallow.
+    this._onNodeClick = data?.onNodeClick ?? null;
+
     if (!data) {
       this.pyramidGroup.setAttribute('display', 'none');
       this.#clear(this.pyramidFanLinesGroup);
@@ -84,10 +93,27 @@ export class PyramidView {
       this.#clear(this.pyramidHaloGroup);
       this.#clear(this.pyramidNodesGroup);
       this.#clear(this.pyramidLabelsGroup);
+      this._signature = null;   // next real render must rebuild
       return;
     }
 
     const { fanLines = [], spiral, intersections = [], nodes = [] } = data;
+
+    // Q10: nothing visible changed → leave the subtree entirely alone.
+    // Every render used to clear five groups and recreate every node and
+    // label, which during a scrub is roughly 110 SVG create/destroy operations
+    // per frame — the dominant per-frame cost, paid most often while the ring
+    // is turning and the pyramid is showing the same children it showed a
+    // frame ago. The geometry was already memoized; the DOM was not.
+    //
+    // Same shape as renderStratum's skip in secondary-strata-view.js, and for
+    // a second reason beyond speed: iOS Safari does not reliably apply a CSS
+    // filter to freshly-inserted SVG content, and the pyramid IS blurred
+    // during rotation. A subtree that persists keeps its filter.
+    const signature = JSON.stringify([nodes, spiral, intersections, fanLines]);
+    if (this._signature === signature) return;
+    this._signature = signature;
+
     this.pyramidGroup.removeAttribute('display');
     this.#clear(this.pyramidFanLinesGroup);
     this.#clear(this.pyramidSpiralGroup);
@@ -109,8 +135,8 @@ export class PyramidView {
     this.#clear(this.pyramidNodesGroup);
     this.#clear(this.pyramidLabelsGroup);
 
-    // Store callback for this render pass
-    this._onNodeClick = data.onNodeClick ?? null;
+    // (the callback was already refreshed above the signature skip, so that a
+    // visually identical frame still gets the caller's current closure)
 
     if (Array.isArray(nodes) && nodes.length > 0) {
       this.pyramidNodesGroup.removeAttribute('display');
