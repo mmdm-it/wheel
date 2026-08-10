@@ -1,3 +1,24 @@
+/* EZRA SIL — the Hebrew face (Q14, ruled 2026-08-09). Chosen because the WLC's
+   POINTING AND CANTILLATION are exactly what a general-purpose face drops or
+   misplaces; a system fallback renders the consonants and mangles the marks.
+
+   unicode-range is why this is free until it is needed: the browser fetches
+   the file only when a character in these blocks is actually asked for, so a
+   Latin or Greek reader never pays for it. U+0590-05FF is Hebrew, U+FB1D-FB4F
+   the presentation forms (the pointed ligatures the WLC uses).
+
+   TTF rather than woff2 because that is what the SIL package ships; converting
+   it would mean redistributing a derived binary, which is a bigger decision
+   than a format. Licences: see NOTICE §1c — the FONT is OFL with Reserved Font
+   Names "SIL" and "Ezra", and the Hebrew layout intelligence inside it is
+   MIT/X11. Both travel with assets/fonts/Licenses.txt. */
+@font-face {
+  font-family: 'Ezra SIL';
+  src: url('../assets/fonts/EzraSIL.ttf') format('truetype');
+  font-display: swap;
+  unicode-range: U+0590-05FF, U+FB1D-FB4F;
+}
+
 :root {
   /* bridge theme tokens to legacy variables */
   --color-bg: var(--theme-color-bg, #f5f5f5);
@@ -21,8 +42,8 @@
   --color-magnifier-stroke: var(--theme-color-magnifier-stroke, #000000);
   --focus-node-radius: var(--theme-radius-node, 12px);
   --focus-node-stroke: var(--theme-stroke-node, 1px);
-  --focus-node-font: var(--theme-font-label, 'Montserrat'), sans-serif;
-  --magnifier-font: var(--theme-font-magnifier, 'Montserrat'), sans-serif;
+  --focus-node-font: var(--theme-font-label, 'Montserrat'), 'Ezra SIL', sans-serif;
+  --magnifier-font: var(--theme-font-magnifier, 'Montserrat'), 'Ezra SIL', sans-serif;
   --focus-label-transform: uppercase;
   --space-2xs: var(--theme-space-2xs, 4px);
   --space-xs: var(--theme-space-xs, 6px);
