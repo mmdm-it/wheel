@@ -698,7 +698,22 @@ function renderStack() {
   // The front stratum is drag-rotatable; the layer and its full-area hit target
   // catch pointer events ONLY while a stratum is front — at the primary they
   // stay out of the way so the ring below gets every tap and swipe.
-  if (strataLayer) strataLayer.style.pointerEvents = strataFront > 0 ? 'auto' : 'none';
+  if (strataLayer) {
+    const strataLive = strataFront > 0;
+    strataLayer.style.pointerEvents = strataLive ? 'auto' : 'none';
+    // Q12 (0c): hidden from assistive technology while inactive, exposed while
+    // live. index.html carries aria-hidden="true" as the BOOT state, which is
+    // correct — no stratum exists yet — but it was static, so the layer stayed
+    // invisible to a screen reader even once the reader had dollied into it.
+    //
+    // Deliberately NOT a one-line removal of that attribute: unhidden always,
+    // AT would announce an empty layer on every screen where strata are not
+    // in play, which trades one defect for a noisier one. The layer is
+    // already telling us whether it is live — this reuses that same signal
+    // rather than inventing a second source of truth.
+    if (strataLive) strataLayer.removeAttribute('aria-hidden');
+    else strataLayer.setAttribute('aria-hidden', 'true');
+  }
   if (strataHit) strataHit.style.pointerEvents = strataFront > 0 ? 'auto' : 'none';
 }
 
