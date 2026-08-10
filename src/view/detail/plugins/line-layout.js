@@ -202,7 +202,24 @@ function noteVerseFontLoaded() {
 if (typeof document !== 'undefined' && document.fonts) {
   try {
     if (typeof document.fonts.load === 'function') {
-      document.fonts.load('16px "EB Garamond"').then(noteVerseFontLoaded).catch(() => {});
+      // Q14 (0c): WAIT FOR THE FACE THAT WILL ACTUALLY PAINT.
+      // This used to gate on EB Garamond alone — and EB Garamond has no Hebrew
+      // glyphs. So a Hebrew verse waited on a face that would never render it,
+      // then re-measured when it arrived, measuring in a font the browser was
+      // not using and would not use. That is the re-wrap burn: the wrap was
+      // keyed to the wrong metrics from the start, and no number of retries
+      // fixes a measurement taken in the wrong face.
+      //
+      // Ezra SIL is the face Hebrew actually paints in (NOTICE §1c), and it is
+      // unicode-range gated, so a Latin reader never fetches it and this
+      // resolves immediately for them. Waiting for BOTH is the honest signal:
+      // whichever script the verse turns out to be, the metrics are real
+      // before anything is measured. allSettled, not all — a face that fails
+      // to load must not strand the reader in the fallback estimate forever.
+      Promise.allSettled([
+        document.fonts.load('16px "EB Garamond"'),
+        document.fonts.load('16px "Ezra SIL"')
+      ]).then(noteVerseFontLoaded).catch(() => {});
     }
     // Belt: whenever any font batch finishes, flip if the face is now real.
     if (typeof document.fonts.addEventListener === 'function') {

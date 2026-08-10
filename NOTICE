@@ -79,6 +79,25 @@ purpose. No other verse text appears in a published document. The
 fixture exists so that examples can be real; the corpus is not the
 fixture.
 
+1c. THIRD-PARTY COMPONENTS — LICENSED BY OTHERS, NOT BY MMdM
+------------------------------------------------------------
+assets/fonts/ carries EZRA SIL, from SIL International. It is neither
+granted by §1 nor reserved by §2: it is not MMdM's to license either
+way, and saying so is the point of naming it here.
+
+It ships under TWO licences, both in assets/fonts/Licenses.txt:
+
+  - THE FONT is under the SIL Open Font License, with RESERVED FONT
+    NAMES "SIL" and "Ezra". A derivative may not carry those names.
+  - THE HEBREW LAYOUT INTELLIGENCE inside it — the logic that places
+    the pointing and cantillation — is under MIT/X11.
+
+assets/fonts/FONTLOG.txt travels with them, as the OFL asks.
+
+Ezra SIL is here because the Westminster Leningrad Codex's pointing and
+cantillation are exactly what a general-purpose face drops or misplaces.
+The SR variant was deliberately not included.
+
 2. THE CARGO — ALL RIGHTS RESERVED, AND HELD SEPARATELY
 -------------------------------------------------------
 The content the engine carries is NOT licensed under the GPL and is NOT open
@@ -96,7 +115,8 @@ The reserved cargo includes, without limitation:
   - The curated scripture volumes: edition selection, versification mapping,
     structure, apparatus, and presentation data.
   - The calendar and other volume datasets: their curation and arrangement.
-  - All artwork, logos, and brand assets (art/, assets/).
+  - All artwork, logos, and brand assets (art/, assets/) — EXCEPT
+    assets/fonts/, which is third-party and licensed by others (§1c).
   - MMdM's operational scripts — sync-to-server.sh, sync-data-to-server.sh,
     bump-version.sh, bump-data-version.sh. These encode MMdM's own deployment
     habits and infrastructure, not the engine; a fork needs its own.
