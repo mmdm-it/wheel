@@ -1,5 +1,39 @@
 # Changelog
 
+## 3.28.0 — phase zero closes
+The audits' repairs, the wall's third layer proven, and a Hebrew face.
+
+- **The deny layer works for the first time.** Its rules had been the wrong
+  TYPE — only `Edit(path)` and `Read(path)` are ever consulted — so four
+  `Write(...)` rules and two `NotebookEdit(...)` rules were accepted, listed,
+  and ignored, the liveness canary among them. A single leading slash also
+  anchors at the settings source rather than the filesystem root, so the rule
+  guarding the brother's tree pointed at a path that cannot exist. Nine rules
+  became three, each verified refusing.
+- **Cross-wall execution is default-deny**, with one named read-only
+  instrument. An interpreter aimed at a script in the other repository carried
+  no write shape and had always passed as a read.
+- **Ezra SIL**, for the Hebrew Bible — the WLC's pointing and cantillation are
+  what a general-purpose face drops or misplaces. `unicode-range` gated, so no
+  Latin or Greek reader fetches it. And the wrap measurer stops waiting on a
+  face that cannot paint the text it is measuring, which was the actual cause
+  of the repeated re-wraps.
+- **The instrument speaks.** Pyramid nodes activate on Enter and Space rather
+  than merely announcing themselves as buttons; the magnifier announces the
+  settled node's own label, politely, on settle only; keyboard focus is
+  visible again; the strata layer is hidden from assistive technology only
+  while it is empty.
+- **Faster where it was slowest.** The bundle is minified (583→280 KB), the
+  pyramid stops rebuilding ~110 SVG nodes every scrub frame, the boot's
+  supplemental fetches run in parallel, and a chart request is no longer sent
+  for editions that declare no chart.
+- **494 lines of dead engine and 1,328 lines of tests pinning an abandoned
+  design are gone**, along with a perf budget that measured a code path
+  nothing runs.
+- **NOTICE names every tracked path**, including what is neither ours to grant
+  nor ours to reserve, and the deposit metadata no longer claims a blanket
+  licence over material it does not describe.
+
 ## 3.27.0 — the funnel
 The Bible's dimension mode, inverted and made the way in.
 
