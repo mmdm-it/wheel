@@ -154,6 +154,27 @@ export class PyramidView {
         if (this._onNodeClick) {
           circle.style.cursor = 'pointer';
         }
+        // Q12 (0c): the nodes already carried role="button" and tabindex="0" —
+        // focusable, announced as buttons, and NOT ACTIVATABLE, which is the
+        // worst of the three states: assistive technology promises an action
+        // the element cannot perform. Enter and Space now do exactly what a
+        // tap does.
+        //
+        // It dispatches a click rather than calling the stored callback: taps
+        // arrive through the host's pointer delegation, which reads
+        // data-index off whichever element the finger landed on. Re-entering
+        // by the same door means the keyboard cannot drift from the touch
+        // path as either changes. Guarded because the test DOM has no
+        // MouseEvent.
+        circle.onkeydown = evt => {
+          if (evt.key !== 'Enter' && evt.key !== ' ') return;
+          evt.preventDefault?.();
+          if (typeof MouseEvent === 'function' && typeof circle.dispatchEvent === 'function') {
+            circle.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+          } else if (this._onNodeClick) {
+            this._onNodeClick(idx, instr);
+          }
+        };
         this.pyramidNodesGroup.appendChild(circle);
 
         const label = this.doc.createElementNS('http://www.w3.org/2000/svg', 'text');
