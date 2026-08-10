@@ -830,3 +830,19 @@ svg :focus-visible {
   white-space: nowrap;
   pointer-events: none;
 }
+
+/* Off-screen but SPOKEN. display:none and visibility:hidden both remove an
+   element from the accessibility tree, which would mute the live region
+   entirely — the classic mistake. This keeps it rendered and unreadable. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

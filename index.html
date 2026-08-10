@@ -61,6 +61,11 @@
        primary and its detail panel, so a front stratum opaquely covers the
        receded primary beneath it (Phase D). -->
   <div id="strata-layer" aria-hidden="true"></div>
+  <!-- Q12 (0c): the magnifier speaks. Polite, atomic, and off-screen rather
+       than display:none, which would silence it. It carries the settled node's
+       EXISTING accessible label and never any new text — an announcement is a
+       label, and labels are quotations (H-2, ruled 2026-08-09). -->
+  <div id="a11y-announcer" aria-live="polite" aria-atomic="true" class="visually-hidden"></div>
   <div id="portrait-gate" aria-hidden="true">
     <svg class="portrait-gate-icon" viewBox="0 0 120 120" role="img" aria-label="Rotate to portrait"
          fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
