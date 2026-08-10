@@ -1,4 +1,4 @@
-# The utterance model — a proposal, instantiated against the hard cases
+# The utterance model
 
 **Drafted by Wilbur, 2026-07-30, at Howell's instruction.** For Howell and
 Orville to argue with. Nothing here is built; nothing here is ruled.
@@ -7,10 +7,12 @@ Orville to argue with. Nothing here is built; nothing here is ruled.
 > the sentence a reader trusts first.** H-2 (a label is a quotation), H-11
 > (the post-migration layout) and W-38 rule large parts of this model, and
 > H-12 phase 1b schedules its generator work. The document has not been
-> reworked to match; **Wilbur owes that under H-5 item 2**, which also swaps
-> its worked examples to the granted fixture. Flagged here rather than fixed,
-> because the rewrite is his and a projection corrected by the wrong hand is
-> how two versions of one truth begin. *(Orville, H-7 sweep.)*
+> reworked to match; **the MODEL rework is phase 1 work and still owed.**
+>
+> **The RIGHTS half is done (F2, 2026-08-10):** the title no longer says
+> "proposal", and the worked examples carry coordinates — which are structure,
+> and granted (NOTICE §1b) — without verse text from outside the fixture, which
+> is not (H-5). Wilbur drafted the redaction; Orville committed it, per WF-15.
 >
 > **Three rulings migrated here from `DECISIONS.md`** when the catch-all was
 > retired, because this is their subject and they had no blueprint home:
@@ -102,7 +104,8 @@ record the Latin verse whole and say what it spans.
 
   "editions": {
     "VUL": {
-      "text":  { "22": "Et habitavit in Ægypto … in genibus Joseph." },
+      "text":  { "22": "…" },     // elided: Genesis 50 is outside the
+                                  // granted fixture (H-5)
       "spans": { "22": ["u22", "u23"], "23": ["u24"], "24": ["u25"], "25": ["u26"] }
     }
   }
@@ -125,20 +128,49 @@ write spans only at the seams.
 
 ---
 
+## 2b. The easy case first — Genesis 1:1, and why most of the corpus is free
+
+Before the hard cases, the ordinary one. Genesis 1 is the granted fixture
+(H-1), and it is also the shape the whole corpus mostly has: **all three
+seating charts run it as an identity run 1..31, with no sub-slots and no
+divergence anywhere in the chapter.**
+
+```jsonc
+{
+  "chapter_id": "GENE_001",
+  "utterances": ["u1", "u2", "…", "u31"],
+  "editions": {
+    "VUL": { "text": { "1": "In principio creavit Deus cælum et terram." } },
+    "DRA": { "text": { "1": "In the beginning God created heaven and earth." } }
+  }
+}
+```
+
+**Note what is absent: there is no `spans` block.** Address 1 maps to `u1`
+because nothing says otherwise — that is the identity default, and it is why
+the model costs nothing across the overwhelming majority of the corpus. Spans
+are written only at the seams, and Genesis 1 has none.
+
+This is also the limit of what the fixture can teach. **Genesis 1 contains no
+versification divergence at all**, so a merge cannot be quoted from it — there
+is no merge in it to quote. The hard cases below therefore keep their
+coordinates, which are structure and granted (NOTICE §1b), and lose their verse
+text, which is not (H-5).
+
+---
+
 ## 3. The four hard cases
 
 ### A · Genesis 50 — a merge (and our own defect, made visible)
 
-Our Latin verse 22 reads *"…vixitque centum decem annis. **Et vidit Ephraim
-filios** usque ad tertiam generationem…"* — which the French cuts in two.
+Our Latin verse 22 runs two clauses together where the French cuts them
+in two: one address on the left, two utterances on the right.
 
 ```jsonc
 "utterances": ["u1", "…", "u21",
-  "u22",  // "he dwelt in Egypt … a hundred and ten years"
-  "u23",  // "he saw the children of Ephraim …"
-  "u24",  // "After which he told his brethren …"
-  "u25",  // "he made them swear …"
-  "u26"], // "he died being a hundred and ten years old …"
+  "u22",  // the first half of what the Vulgate numbers 22
+  "u23",  // the second half — the merge this example exists to show
+  "u24", "u25", "u26"],
 
 "editions": {
   "VUL": { "spans": { "22": ["u22","u23"], "23": ["u24"], "24": ["u25"], "25": ["u26"] } },
