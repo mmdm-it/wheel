@@ -108,8 +108,8 @@ describe('identity — resolvePath speaks the H-11 layout', () => {
     assert.notEqual(a, b, 'a data push must change the path, not the world');
   });
 
-  it('THROWS when asked for a chapter file — chapters are not a storage level', () => {
-    assert.throws(() => resolvePath(at({ kind: 'chapter', unitId: 'b7f3a' })),
+  it('THROWS when asked for a container file — containers are not a storage level', () => {
+    assert.throws(() => resolvePath(at({ kind: 'container', unitId: 'b7f3a' })),
       /render-time projection/);
   });
 

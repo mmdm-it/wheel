@@ -103,7 +103,7 @@ for (const code of GRANTED) {
     groups: [{ label: '1', from: 1, to: ordinals.length }],
     seats: ordinals.map((n, i) => ({ label: n, utterances: [utterances[i]] }))
   });
-  write(`charts/${code}/index.json`, { edition: code, books: [unitId] });
+  write(`charts/${code}/index.json`, { edition: code, units: [unitId] });
 }
 
 console.log(`fixture: ${OUT}/${VERSION}`);

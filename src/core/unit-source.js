@@ -48,8 +48,8 @@ export function createUnitSource({ levels, editions, exists, base = '', version 
   for (const edition of codes) {
     const indexPath = resolvePath({ base, version, kind: 'chartIndex', edition });
     const listed = exists(indexPath, { read: true });
-    if (!listed || !Array.isArray(listed.units || listed.books)) continue;
-    for (const id of (listed.units || listed.books)) migrated.add(id);
+    if (!listed || !Array.isArray(listed.units)) continue;
+    for (const id of listed.units) migrated.add(id);
   }
 
   function assertComplete(unitId) {
@@ -111,7 +111,7 @@ export function createUnitSource({ levels, editions, exists, base = '', version 
 //
 // Six sites spelled this out by hand, in two variants that differed only in
 // their fallback. Measured before merging them: `_external_file` occurs 1,435
-// times in the manifest — once per chapter — and `external_file` without the
+// times in the manifest — once per legacy container — and `external_file` without the
 // underscore occurs ZERO times. The second check was dead in both variants,
 // so honouring it everywhere is provably inert rather than a quiet widening.
 //
