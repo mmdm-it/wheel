@@ -121,8 +121,6 @@ describe('forbidden volume vocabulary (O-43)', () => {
   // It can only ever shrink.
   const BASELINE = new Set([
     'src/core/dimension-bridge.js',
-    'src/core/identity.js',
-    'src/core/unit-source.js',
     'src/geometry/child-pyramid-geometry.js',
     'src/geometry/focus-ring-geometry.js',
     'src/index.js',

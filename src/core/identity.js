@@ -148,14 +148,15 @@ export function compare(scheme, order, a, b) {
 //   names/{lang}.json
 //
 // The DATA VERSION rides the path (H-11 item 4), which is what makes these
-// files immutable and cacheable forever — and what unlocks O-38's chapter
+// files immutable and cacheable forever — and what unlocks O-38's leaf-file
 // caching, currently withheld because unversioned paths would serve
 // yesterday's verses. A push changes a path, not the world.
 //
-// Note what is absent: no chapter level. Chapters ceased to be a storage
+// Note what is absent: no CONTAINER level. Containers ceased to be a storage
 // level under H-11 — they are the render-time projection the spec already
-// declared them to be. Asking this for a chapter's file is a question with no
-// answer, and it throws rather than inventing one.
+// declared them to be, and O-44 rules they come from the chart. Asking this
+// for a container's file is a question with no answer, and it throws rather
+// than inventing one.
 export function resolvePath({ base = '', version = '', kind, edition, unitId, lang } = {}) {
   const root = [base, version].filter(Boolean).join('/');
   const join = (...parts) => [root, ...parts].filter(Boolean).join('/');
@@ -166,11 +167,11 @@ export function resolvePath({ base = '', version = '', kind, edition, unitId, la
     case 'chart':       return join('charts', req(edition, 'edition'), `${req(unitId, 'unitId')}.json`);
     case 'chartIndex':  return join('charts', req(edition, 'edition'), 'index.json');
     case 'names':       return join('names', `${req(lang, 'lang')}.json`);
-    case 'chapter':
+    case 'container':
       throw new Error(
-        'identity: there is no chapter file under H-11 — chapters are a '
-        + 'render-time projection, not a storage level. Ask for the spine or the '
-        + 'text of the book.');
+        'identity: there is no container file under H-11 — containers are a '
+        + 'render-time projection, not a storage level, and O-44 rules they are the '
+        + 'chart\'s. Ask for the spine or the text of the unit.');
     default:
       throw new Error(`identity: unknown path kind ${JSON.stringify(kind)}`);
   }
