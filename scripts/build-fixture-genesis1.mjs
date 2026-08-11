@@ -40,7 +40,7 @@ const ordinals = Object.keys(verses)
   .filter(k => /^\d+$/.test(k))
   .sort((a, b) => Number(a) - Number(b));
 
-const bookId = opaque('b', 'GENE');
+const unitId = opaque('b', 'GENE');
 const utterances = ordinals.map(n => opaque('u', n));
 
 const write = (rel, data) => {
@@ -55,19 +55,19 @@ const write = (rel, data) => {
 write('volume.json', {
   _schema_version: '4.0',
   _note: 'H-11 layout fixture. Genesis 1 only, Douay-Rheims and Vulgate only (H-1 grant).',
-  books: [{ id: bookId, leaves: utterances.length }],
+  books: [{ id: unitId, leaves: utterances.length }],
   editions: GRANTED.map(code => ({ code, hasChart: true, proofread: true }))
 });
 
-// spine/{bookId}.json — the ORDER, which is the only place order lives.
-write(`spine/${bookId}.json`, {
-  book: bookId,
+// spine/{unitId}.json — the ORDER, which is the only place order lives.
+write(`spine/${unitId}.json`, {
+  book: unitId,
   utterances,                      // ordered; their text does not sort this way
   absent: {},
   lost: {}
 });
 
-// text/{EDITION}/{bookId}.json — text belongs to an (edition, address) pair,
+// text/{EDITION}/{unitId}.json — text belongs to an (edition, address) pair,
 // never to the utterance: the string IS that tradition's own cutting.
 for (const code of GRANTED) {
   const text = {};
@@ -75,24 +75,39 @@ for (const code of GRANTED) {
     const t = verses[n]?.text?.[code];
     if (typeof t === 'string' && t.length) text[n] = t;
   }
-  write(`text/${code}/${bookId}.json`, { book: bookId, edition: code, text });
+  write(`text/${code}/${unitId}.json`, { book: unitId, edition: code, text });
 }
 
-// charts/{EDITION}/{bookId}.json — which seats exist, and what each spans.
+// charts/{EDITION}/{unitId}.json — which seats exist, and what each spans.
 // Genesis 1 is an identity run 1..31 in every edition: no merge, no sub-slot,
 // no divergence. That is exactly why the fixture cannot demonstrate a merge
 // (W-52) — there is none in it to show.
 for (const code of GRANTED) {
-  write(`charts/${code}/${bookId}.json`, {
-    book: bookId,
+  // CONTAINERS ARE THE CHART'S, PER EDITION (O-44, ruled 2026-08-11).
+  //
+  // `groups` is the chapter division, declared by THIS edition over the unit's
+  // own ordinals — not inherited from the spine, which stays flat. The real
+  // charts already work this way: an edition whose tradition gathers into one
+  // container what another divides into two declares a different number of
+  // groups, and both are correct.
+  //
+  // The range is a BOOK-ORDINAL range (H-11 item 3), not a spine chapter plus
+  // an offset — that was the last Vulgate residue, and it leaves here.
+  //
+  // The label is a QUOTATION (H-2): what this edition calls the container, and
+  // nothing the engine may parse for structure. The range says which utterances
+  // belong; the label says only what to print.
+  write(`charts/${code}/${unitId}.json`, {
+    unit: unitId,
     edition: code,
+    groups: [{ label: '1', from: 1, to: ordinals.length }],
     seats: ordinals.map((n, i) => ({ label: n, utterances: [utterances[i]] }))
   });
-  write(`charts/${code}/index.json`, { edition: code, books: [bookId] });
+  write(`charts/${code}/index.json`, { edition: code, books: [unitId] });
 }
 
 console.log(`fixture: ${OUT}/${VERSION}`);
-console.log(`  book ${bookId} · ${utterances.length} utterances · editions ${GRANTED.join(', ')}`);
+console.log(`  book ${unitId} · ${utterances.length} utterances · editions ${GRANTED.join(', ')}`);
 const alphabetical = [...utterances].sort();
 const same = alphabetical.every((id, i) => id === utterances[i]);
 console.log(`  alphabetical order matches spine order: ${same}`
