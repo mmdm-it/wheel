@@ -9,6 +9,8 @@ import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { resolvePath } from '../src/core/identity.js';
+import { normalizeUnitText } from '../src/core/unit-text.js';
+import { seedVerseCache, getVerseTextResolved } from '../src/adapters/volume-helpers.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = 'test/fixtures/h11/gutenberg';
@@ -138,5 +140,80 @@ describe('the H-11 fixture — containers come from the chart', () => {
       assert.equal(spine[forbidden], undefined,
         `the spine carries ${forbidden}; O-44 rules containers are the chart's alone`);
     }
+  });
+});
+
+// THE CROSSING (O-45). Every test above this line checks one contract against
+// itself, and every one of them passed while the two layouts could not meet.
+// The gap was BETWEEN contracts: the descriptor resolved correct paths and the
+// reader at the end of them could not read what was there, so the unit would
+// have enumerated perfectly and rendered nothing.
+//
+// So this describe block is deliberately different in kind. It runs the REAL
+// fixture through the REAL adapter into the REAL downstream reader, and asks
+// the only question that matters: does a verse come back.
+describe('the H-11 fixture — it reaches the reader (the crossing)', () => {
+  const DECLARED = ['DRA', 'VUL'];
+  const chart = read(`charts/VUL/${unitId}.json`);
+  const order = chart.seats.map(s => String(s.label));
+  const editions = Object.fromEntries(DECLARED.map(c => [c, read(`text/${c}/${unitId}.json`)]));
+
+  it('the per-edition files become one record per address', () => {
+    const records = normalizeUnitText({ editions, declared: DECLARED, order });
+    assert.equal(Object.keys(records).length, 31);
+    assert.deepEqual(Object.keys(records[order[0]].text).sort(), ['DRA', 'VUL'],
+      'both granted traditions meet at the same address');
+  });
+
+  it('THE DOWNSTREAM READER ANSWERS, UNMODIFIED — this is the cell O-45 was missing', () => {
+    const records = normalizeUnitText({ editions, declared: DECLARED, order });
+    const key = `${BASE}/${VERSION}/${unitId}`;
+    seedVerseCache(key, records);
+
+    // getVerseTextResolved has no idea the H-11 layout exists, and must not.
+    const latin = getVerseTextResolved(key, '1', ['VUL']);
+    assert.equal(latin.translation, 'VUL');
+    assert.match(latin.text, /^In principio/, 'the Vulgate opens Genesis 1 this way');
+
+    const english = getVerseTextResolved(key, '1', ['DRA']);
+    assert.equal(english.translation, 'DRA');
+    assert.match(english.text, /^In the beginning/);
+  });
+
+  it('every one of the 31 addresses resolves in both editions — no silent hole', () => {
+    const records = normalizeUnitText({ editions, declared: DECLARED, order });
+    const key = `${BASE}/${VERSION}/${unitId}-full`;
+    seedVerseCache(key, records);
+    for (const address of order) {
+      for (const code of DECLARED) {
+        const got = getVerseTextResolved(key, address, [code]);
+        assert.ok(got?.text?.length, `${code} ${address} came back empty through the crossing`);
+        assert.equal(got.translation, code, `${code} ${address} was answered by another tradition`);
+      }
+    }
+  });
+
+  it('WITHOUT the adapter the reader gets nothing — the defect O-45 recorded', () => {
+    // This cell is the load-bearing one. It seats the H-11 file RAW, exactly
+    // as the splice would have done had the fourth move not been noticed, and
+    // pins the failure: the descriptor resolves, the walk enumerates, the
+    // reader comes back empty. A blank page with every check upstream green.
+    //
+    // If someone later "simplifies" the adapter away, this goes red first.
+    const key = `${BASE}/${VERSION}/${unitId}-raw`;
+    seedVerseCache(key, read(`text/VUL/${unitId}.json`).text);
+    assert.equal(getVerseTextResolved(key, '1', ['VUL']), null,
+      'the raw H-11 file is a string per address; the reader wants a record per address');
+  });
+
+  it('the preference chain still returns the HONEST empty past its end (W-6)', () => {
+    // The three silent fallbacks died for this. An edition the unit does not
+    // carry must yield nothing, never another tradition's words wearing the
+    // reader's language.
+    const records = normalizeUnitText({ editions, declared: DECLARED, order });
+    const key = `${BASE}/${VERSION}/${unitId}-honest`;
+    seedVerseCache(key, records);
+    assert.equal(getVerseTextResolved(key, '1', ['WLC']), null,
+      'an ungranted edition must come back empty, not filled from a neighbour');
   });
 });
