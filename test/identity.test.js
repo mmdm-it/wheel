@@ -33,7 +33,7 @@ describe('identity — mint and parse are positional, never patterned', () => {
 
   it('reads NOTHING from the spelling — an opaque id parses like any other', () => {
     // The old regex demanded /^[A-Z][A-Z_]*_\d+_\d+$/. These ids satisfy no
-    // such shape and must parse identically, or `bookId` is not opaque.
+    // such shape and must parse identically, or `unitId` is not opaque.
     assert.equal(parse(bible, 'x7f3a/9q/zz').book, 'x7f3a');
     assert.equal(parse(bible, '000/111/222').verse, '222');
   });
@@ -92,29 +92,29 @@ describe('identity — resolvePath speaks the H-11 layout', () => {
 
   it('the five real kinds', () => {
     assert.equal(resolvePath(at({ kind: 'volume' })), './data/gutenberg/v42/volume.json');
-    assert.equal(resolvePath(at({ kind: 'spine', bookId: 'b7f3a' })),
+    assert.equal(resolvePath(at({ kind: 'spine', unitId: 'b7f3a' })),
       './data/gutenberg/v42/spine/b7f3a.json');
-    assert.equal(resolvePath(at({ kind: 'text', edition: 'DRA', bookId: 'b7f3a' })),
+    assert.equal(resolvePath(at({ kind: 'text', edition: 'DRA', unitId: 'b7f3a' })),
       './data/gutenberg/v42/text/DRA/b7f3a.json');
-    assert.equal(resolvePath(at({ kind: 'chart', edition: 'VUL', bookId: 'b7f3a' })),
+    assert.equal(resolvePath(at({ kind: 'chart', edition: 'VUL', unitId: 'b7f3a' })),
       './data/gutenberg/v42/charts/VUL/b7f3a.json');
     assert.equal(resolvePath(at({ kind: 'names', lang: 'fi' })),
       './data/gutenberg/v42/names/fi.json');
   });
 
   it('the version rides the path — that is what makes the files immutable (H-11 item 4)', () => {
-    const a = resolvePath(at({ kind: 'spine', bookId: 'b7f3a' }));
-    const b = resolvePath({ base: './data/gutenberg', version: 'v43', kind: 'spine', bookId: 'b7f3a' });
+    const a = resolvePath(at({ kind: 'spine', unitId: 'b7f3a' }));
+    const b = resolvePath({ base: './data/gutenberg', version: 'v43', kind: 'spine', unitId: 'b7f3a' });
     assert.notEqual(a, b, 'a data push must change the path, not the world');
   });
 
   it('THROWS when asked for a chapter file — chapters are not a storage level', () => {
-    assert.throws(() => resolvePath(at({ kind: 'chapter', bookId: 'b7f3a' })),
+    assert.throws(() => resolvePath(at({ kind: 'chapter', unitId: 'b7f3a' })),
       /render-time projection/);
   });
 
   it('THROWS on a missing required part rather than building a path with a hole in it', () => {
-    assert.throws(() => resolvePath(at({ kind: 'text', bookId: 'b7f3a' })), /needs edition/);
-    assert.throws(() => resolvePath(at({ kind: 'chart', edition: 'VUL' })), /needs bookId/);
+    assert.throws(() => resolvePath(at({ kind: 'text', unitId: 'b7f3a' })), /needs edition/);
+    assert.throws(() => resolvePath(at({ kind: 'chart', edition: 'VUL' })), /needs unitId/);
   });
 });

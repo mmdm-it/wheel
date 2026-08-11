@@ -36,9 +36,9 @@
 const SEP_DEFAULT = '/';
 
 // A scheme is a volume's declaration of its own id shape. The levels are
-// NAMES, not positions with meaning — `parse` hands back `{ book, chapter }`
+// NAMES, not positions with meaning — `parse` hands back the level names the volume gave
 // because the volume said those are its levels, not because the engine
-// recognises a book when it sees one.
+// recognises any one of them when it sees it.
 export function createScheme({ levels, separator = SEP_DEFAULT } = {}) {
   if (!Array.isArray(levels) || !levels.length) {
     throw new Error('identity: a scheme needs a non-empty levels array');
@@ -78,8 +78,9 @@ export function mint(scheme, parts) {
 }
 
 // PARSE — id to parts, by POSITION under the scheme, never by pattern.
-// A partial id is legitimate and common: a book id is a verse id's prefix,
-// and the reader stands at a book far more often than at a verse. Extra
+// A partial id is legitimate and common: a container's id is a prefix of the
+// ids it contains, and the reader stands at a container far more often than at
+// a leaf. Extra
 // segments are an error rather than a truncation, because silently dropping
 // a level is how a reader lands somewhere plausible and wrong.
 export function parse(scheme, id) {
@@ -141,9 +142,9 @@ export function compare(scheme, order, a, b) {
 // RESOLVE-TO-PATH — the H-11 layout, stated once.
 //
 //   volume.json                     the slim boot
-//   spine/{bookId}.json             ordered leaves + spans/absent/lost
-//   text/{EDITION}/{bookId}.json    text belongs to an (edition, address) pair
-//   charts/{EDITION}/{bookId}.json  + a per-edition index
+//   spine/{unitId}.json             ordered leaves + spans/absent/lost
+//   text/{EDITION}/{unitId}.json    text belongs to an (edition, address) pair
+//   charts/{EDITION}/{unitId}.json  + a per-edition index
 //   names/{lang}.json
 //
 // The DATA VERSION rides the path (H-11 item 4), which is what makes these
@@ -155,14 +156,14 @@ export function compare(scheme, order, a, b) {
 // level under H-11 — they are the render-time projection the spec already
 // declared them to be. Asking this for a chapter's file is a question with no
 // answer, and it throws rather than inventing one.
-export function resolvePath({ base = '', version = '', kind, edition, bookId, lang } = {}) {
+export function resolvePath({ base = '', version = '', kind, edition, unitId, lang } = {}) {
   const root = [base, version].filter(Boolean).join('/');
   const join = (...parts) => [root, ...parts].filter(Boolean).join('/');
   switch (kind) {
     case 'volume':      return join('volume.json');
-    case 'spine':       return join('spine', `${req(bookId, 'bookId')}.json`);
-    case 'text':        return join('text', req(edition, 'edition'), `${req(bookId, 'bookId')}.json`);
-    case 'chart':       return join('charts', req(edition, 'edition'), `${req(bookId, 'bookId')}.json`);
+    case 'spine':       return join('spine', `${req(unitId, 'unitId')}.json`);
+    case 'text':        return join('text', req(edition, 'edition'), `${req(unitId, 'unitId')}.json`);
+    case 'chart':       return join('charts', req(edition, 'edition'), `${req(unitId, 'unitId')}.json`);
     case 'chartIndex':  return join('charts', req(edition, 'edition'), 'index.json');
     case 'names':       return join('names', `${req(lang, 'lang')}.json`);
     case 'chapter':

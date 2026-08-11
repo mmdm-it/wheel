@@ -17,18 +17,18 @@ const at = rel => path.join(root, BASE, VERSION, rel);
 const read = rel => JSON.parse(readFileSync(at(rel), 'utf-8'));
 
 const volume = read('volume.json');
-const bookId = volume.books[0].id;
+const unitId = volume.books[0].id;
 
 describe('the H-11 fixture — shape', () => {
   it('carries one book, opaque, with its leaf count', () => {
     assert.equal(volume.books.length, 1);
     assert.equal(volume.books[0].leaves, 31, 'Genesis 1 has 31 verses');
-    assert.doesNotMatch(bookId, /GEN|genesis/i,
+    assert.doesNotMatch(unitId, /GEN|genesis/i,
       'the filesystem must stop spelling out what a thing IS (H-11)');
   });
 
   it('the spine holds the order, and NOTHING else does', () => {
-    const spine = read(`spine/${bookId}.json`);
+    const spine = read(`spine/${unitId}.json`);
     assert.equal(spine.utterances.length, 31);
     assert.equal(new Set(spine.utterances).size, 31, 'ids are unique');
   });
@@ -37,7 +37,7 @@ describe('the H-11 fixture — shape', () => {
     // If these sorted into spine order, an engine that still ordered by id
     // text would pass every test here and fail on the first real book. The
     // fixture is built adversarially on purpose.
-    const spine = read(`spine/${bookId}.json`).utterances;
+    const spine = read(`spine/${unitId}.json`).utterances;
     const alphabetical = [...spine].sort();
     assert.notDeepEqual(alphabetical, spine,
       'alphabetical order must DISAGREE with spine order, or the fixture proves nothing');
@@ -55,7 +55,7 @@ describe('the H-11 fixture — shape', () => {
   });
 
   it('none of the retired identifiers survives', () => {
-    const raw = JSON.stringify([volume, read(`spine/${bookId}.json`), read(`text/DRA/${bookId}.json`)]);
+    const raw = JSON.stringify([volume, read(`spine/${unitId}.json`), read(`text/DRA/${unitId}.json`)]);
     for (const dead of ['chapter_id', 'book_key', 'sequence', '_external_file', 'chapter_in']) {
       assert.doesNotMatch(raw, new RegExp(dead), `${dead} retires under H-11`);
     }
@@ -74,7 +74,7 @@ describe('the H-11 fixture — the grant boundary', () => {
 
   it('both granted editions carry all 31 verses', () => {
     for (const code of ['DRA', 'VUL']) {
-      const text = read(`text/${code}/${bookId}.json`).text;
+      const text = read(`text/${code}/${unitId}.json`).text;
       assert.equal(Object.keys(text).length, 31, `${code} is complete`);
     }
   });
@@ -83,7 +83,7 @@ describe('the H-11 fixture — the grant boundary', () => {
     // W-52's limit, pinned here so nobody later "improves" the fixture by
     // adding a merge example to it: there is no merge in Genesis 1 to show.
     for (const code of ['DRA', 'VUL']) {
-      const seats = read(`charts/${code}/${bookId}.json`).seats;
+      const seats = read(`charts/${code}/${unitId}.json`).seats;
       assert.equal(seats.length, 31);
       assert.ok(seats.every(s => s.utterances.length === 1),
         `${code}: every seat spans exactly one utterance`);
@@ -98,10 +98,10 @@ describe('the H-11 fixture — identity.js addresses it', () => {
     const opts = { base: path.join(root, BASE), version: VERSION };
     const paths = [
       resolvePath({ ...opts, kind: 'volume' }),
-      resolvePath({ ...opts, kind: 'spine', bookId }),
-      resolvePath({ ...opts, kind: 'text', edition: 'DRA', bookId }),
-      resolvePath({ ...opts, kind: 'text', edition: 'VUL', bookId }),
-      resolvePath({ ...opts, kind: 'chart', edition: 'DRA', bookId }),
+      resolvePath({ ...opts, kind: 'spine', unitId }),
+      resolvePath({ ...opts, kind: 'text', edition: 'DRA', unitId }),
+      resolvePath({ ...opts, kind: 'text', edition: 'VUL', unitId }),
+      resolvePath({ ...opts, kind: 'chart', edition: 'DRA', unitId }),
       resolvePath({ ...opts, kind: 'chartIndex', edition: 'VUL' })
     ];
     for (const p of paths) assert.ok(existsSync(p), `resolvePath built a path that does not exist: ${p}`);
