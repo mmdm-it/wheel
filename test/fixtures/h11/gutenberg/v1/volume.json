@@ -1,0 +1,22 @@
+{
+  "_schema_version": "4.0",
+  "_note": "H-11 layout fixture. Genesis 1 only, Douay-Rheims and Vulgate only (H-1 grant).",
+  "books": [
+    {
+      "id": "bc22df",
+      "leaves": 31
+    }
+  ],
+  "editions": [
+    {
+      "code": "VUL",
+      "hasChart": true,
+      "proofread": true
+    },
+    {
+      "code": "DRA",
+      "hasChart": true,
+      "proofread": true
+    }
+  ]
+}
