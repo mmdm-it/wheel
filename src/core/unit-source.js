@@ -142,3 +142,14 @@ export function legacyTextFile(meta, fallback = '') {
 export function legacyUnitId(meta, fallback = '') {
   return meta?.book_key || fallback;
 }
+
+// THE LEGACY ORDINAL, and the operator is the whole point (O-42, phase 1a).
+//
+// `sequence` retires under H-11. Its one remaining reader used `??`, not `||`,
+// and the difference is not stylistic: a sequence can legitimately be 0, and
+// `||` would discard it as falsy and substitute the fallback. Preserved
+// exactly here rather than normalised to the more common operator — under the
+// phase-1 freeze the tempting tidy is the defect.
+export function legacyOrdinal(meta, fallback = '') {
+  return meta?.sequence ?? fallback;
+}
