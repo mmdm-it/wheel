@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-10 from 106 entries.
+Generated 2026-08-11 from 108 entries.
 
 | id | status | title |
 |---|---|---|
@@ -66,6 +66,8 @@ Generated 2026-08-10 from 106 entries.
 | O-39 | OPEN | WILBUR: ONE FIELD KILLS THE BOOT 404 — the data half of Q3 |
 | O-40 | OPEN | THE MANIFEST PERF BUDGET MEASURED CODE NOBODY RUNS |
 | O-41 | OPEN | THE LAST TWO 0c ITEMS NEED RULINGS, NOT KEYSTROKES — Q14's font and Q12's AT semantics |
+| O-42 | OPEN | THE COEXISTENCE SEAM — how one engine reads two layouts at once |
+| O-43 | OPEN | VOLUME VOCABULARY IS LINTED, NOT REMEMBERED |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
