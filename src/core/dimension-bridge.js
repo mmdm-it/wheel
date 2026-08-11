@@ -21,6 +21,7 @@
 // first entry, is the default.
 
 import { interactionEvents } from './interaction-store.js';
+import { isOnLan } from './lan-gate.js';
 
 // (The engine's nine-language autonym table was deleted 2026-07-30: every one
 // of the registry's 29 languages carries its own `autonym`, so the table was
@@ -132,12 +133,22 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   //      copyrighted editions the deploy filter strips, and no debugging
   //      convenience may show them. `comingSoon` stays enforced too: an
   //      unsourced edition has nothing to inspect.
+  //
+  // THE LAN TEST LIVES IN ONE PLACE (2026-08-11). This was an inline regex,
+  // and it was a bare PREFIX test: `10.example.com` matched `^10\.`, and so did
+  // `127.evil.com` and `192.168.evil.tld` — all real, registrable public
+  // hostnames. Any of them lifted this override and showed unproofread
+  // scripture on a public host, which is the one thing limit 1 above exists to
+  // prevent. Measured, not theorised: the old expression returns true for all
+  // three; `isOnLan` returns false.
+  //
+  // It now calls the shared gate, which requires a genuine dotted quad before
+  // it will believe a private range. Two implementations of one question is
+  // how they drift apart, and this pair had already drifted.
   const overrideProofread = (() => {
     try {
       if (typeof window === 'undefined' || !window.location) return false;
-      const host = window.location.hostname || '';
-      const isLan = /^(localhost|127\.|10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(host);
-      if (!isLan) return false;
+      if (!isOnLan(window.location)) return false;
       return new URLSearchParams(window.location.search).get('proofread') === 'true';
     } catch (_) { return false; }
   })();
