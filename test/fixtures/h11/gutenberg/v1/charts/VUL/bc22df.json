@@ -1,6 +1,13 @@
 {
-  "book": "bc22df",
+  "unit": "bc22df",
   "edition": "VUL",
+  "groups": [
+    {
+      "label": "1",
+      "from": 1,
+      "to": 31
+    }
+  ],
   "seats": [
     {
       "label": "1",

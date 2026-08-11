@@ -107,3 +107,36 @@ describe('the H-11 fixture — identity.js addresses it', () => {
     for (const p of paths) assert.ok(existsSync(p), `resolvePath built a path that does not exist: ${p}`);
   });
 });
+
+// CONTAINERS ARE THE CHART'S, PER EDITION (O-44, ruled 2026-08-11).
+describe('the H-11 fixture — containers come from the chart', () => {
+  it('every edition declares its own groups over BOOK-ORDINAL ranges', () => {
+    for (const code of ['DRA', 'VUL']) {
+      const chart = read(`charts/${code}/${unitId}.json`);
+      assert.ok(Array.isArray(chart.groups) && chart.groups.length,
+        `${code} declares no groups — under O-44 it has no containers to render`);
+      for (const g of chart.groups) {
+        assert.equal(typeof g.label, 'string', 'a container label is a quotation (H-2)');
+        assert.ok(Number.isInteger(g.from) && Number.isInteger(g.to),
+          'the range is a BOOK-ORDINAL range (H-11 item 3), not a spine chapter plus an offset');
+      }
+    }
+  });
+
+  it('the groups cover every leaf exactly once', () => {
+    for (const code of ['DRA', 'VUL']) {
+      const { groups } = read(`charts/${code}/${unitId}.json`);
+      const covered = groups.flatMap(g => Array.from({ length: g.to - g.from + 1 }, (_, i) => g.from + i));
+      assert.deepEqual(covered, Array.from({ length: 31 }, (_, i) => i + 1),
+        `${code}: a gap or an overlap would leave a leaf unrenderable or rendered twice`);
+    }
+  });
+
+  it('THE SPINE DECLARES NO CONTAINERS — a default grouping would be the hub in its last costume', () => {
+    const spine = read(`spine/${unitId}.json`);
+    for (const forbidden of ['groups', 'chapters', 'containers']) {
+      assert.equal(spine[forbidden], undefined,
+        `the spine carries ${forbidden}; O-44 rules containers are the chart's alone`);
+    }
+  });
+});
