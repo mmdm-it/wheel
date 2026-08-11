@@ -5,6 +5,7 @@ import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cous
 import { seatIndexForUtterance } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
+import { legacyTextFile } from '../core/unit-source.js';
 
 const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
 const manifestUrl = './data/gutenberg/manifest.json';
@@ -199,8 +200,7 @@ export function normalize(raw) {
               bookId,
               chapterNumber: Number.isFinite(chapterNumber) ? chapterNumber : null,
               chapterKey,
-              externalFile: chapterVal?._external_file
-                || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`
+              externalFile: legacyTextFile(chapterVal, `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`)
             }
           });
         });
@@ -314,7 +314,7 @@ function chaptersInReadingOrder(manifest) {
           order.push({
             chapterId: chapter?.id || `${bookId}:${chapterKey}`,
             bookId: book?.book_key || bookId,
-            externalFile: chapter?._external_file || chapter?.external_file || '',
+            externalFile: legacyTextFile(chapter),
             verseCount: Number.isFinite(chapter?.verse_count) ? chapter.verse_count : 0
           });
         });

@@ -1,5 +1,6 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
 import { expandChart, identityChartFromManifest, chaptersFromSeats } from './seating-chart.js';
+import { legacyTextFile } from '../core/unit-source.js';
 
 const GAP = null;
 
@@ -191,8 +192,7 @@ export function buildBibleChapterChain(manifest, { initialChapterId = null, name
               chapterKey,
               sectionId: sectionKey,
               testamentId: testamentKey,
-              externalFile: chapterVal?._external_file
-                || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`
+              externalFile: legacyTextFile(chapterVal, `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`)
             }
           });
         });

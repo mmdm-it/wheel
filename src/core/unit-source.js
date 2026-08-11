@@ -106,3 +106,23 @@ export function createUnitSource({ levels, editions, exists, base = '', version 
     }
   };
 }
+
+// THE LEGACY TEXT FILE, read in ONE place instead of six (O-42, phase 1a).
+//
+// Six sites spelled this out by hand, in two variants that differed only in
+// their fallback. Measured before merging them: `_external_file` occurs 1,435
+// times in the manifest — once per chapter — and `external_file` without the
+// underscore occurs ZERO times. The second check was dead in both variants,
+// so honouring it everywhere is provably inert rather than a quiet widening.
+//
+// The fallback stays a CALLER'S argument, because the two variants genuinely
+// disagreed: three built a path, three yielded an empty string, and under the
+// phase-1 freeze a merged default would have changed behaviour at three sites
+// while looking like tidying.
+//
+// This exists to be deleted. `_external_file` retires under H-11, and when the
+// last unit migrates the descriptor answers instead — at which point one
+// function goes rather than six expressions.
+export function legacyTextFile(meta, fallback = '') {
+  return meta?._external_file || meta?.external_file || fallback;
+}

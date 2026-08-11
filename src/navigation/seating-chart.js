@@ -1,3 +1,4 @@
+import { legacyTextFile } from '../core/unit-source.js';
 // THE SEATING CHART (E1 of W-21, docs/SEATING-CHART-CONTRACT.md).
 //
 // The chart is the generated per-artifact truth about WHICH seats exist —
@@ -186,7 +187,7 @@ export function expandChart(root, chart) {
             const chapterLabel = chapterMeta?.name ?? spineKey;
             const groupKey = uniqueKey(`${bookId}:${spineKey}`, position);
             const chapterId = chapterMeta?.id || groupKey;
-            const externalFile = chapterMeta?._external_file || chapterMeta?.external_file || '';
+            const externalFile = legacyTextFile(chapterMeta);
             for (let k = 1; k <= ch.count; k += 1) {
               items.push({
                 id: `${bookKey}_${chapterLabel}_${k}`,
@@ -242,7 +243,7 @@ export function expandChart(root, chart) {
             // Text lives whole at the span's first slot (W-30) — the fetch
             // file is the FIRST range's spine chapter.
             const home = spineByKey.get(span[0][0]);
-            const externalFile = home?.meta?._external_file || home?.meta?.external_file || '';
+            const externalFile = legacyTextFile(home?.meta);
             items.push({
               id: `${bookKey}_${chapterLabel}_${label}`,
               name: label,
