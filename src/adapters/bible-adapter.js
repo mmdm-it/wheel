@@ -5,7 +5,7 @@ import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cous
 import { seatIndexForUtterance } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
-import { legacyTextFile } from '../core/unit-source.js';
+import { legacyTextFile, legacyUnitId } from '../core/unit-source.js';
 
 const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
 const manifestUrl = './data/gutenberg/manifest.json';
@@ -313,7 +313,7 @@ function chaptersInReadingOrder(manifest) {
         Object.entries(book?.chapters || {}).sort(byDeclaredOrder).forEach(([chapterKey, chapter]) => {
           order.push({
             chapterId: chapter?.id || `${bookId}:${chapterKey}`,
-            bookId: book?.book_key || bookId,
+            bookId: legacyUnitId(book, bookId),
             externalFile: legacyTextFile(chapter),
             verseCount: Number.isFinite(chapter?.verse_count) ? chapter.verse_count : 0
           });

@@ -1,5 +1,5 @@
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
-import { legacyTextFile } from '../core/unit-source.js';
+import { legacyTextFile, legacyUnitId } from '../core/unit-source.js';
 // Volume-specific chain/build helpers extracted from the host page.
 // These remain pure functions over manifests and options.
 
@@ -860,7 +860,7 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
   fetch(url)
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(data => {
-      const bookKey = data.book_key || chapterItem.meta?.bookId || '';
+      const bookKey = legacyUnitId(data, chapterItem.meta?.bookId || '');
       const chapterLabel = data.sequence ?? '';
       const verses = data.verses || {};
       const items = Object.entries(verses)

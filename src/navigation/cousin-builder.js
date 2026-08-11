@@ -1,6 +1,6 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
 import { expandChart, identityChartFromManifest, chaptersFromSeats } from './seating-chart.js';
-import { legacyTextFile } from '../core/unit-source.js';
+import { legacyTextFile, legacyUnitId } from '../core/unit-source.js';
 
 const GAP = null;
 
@@ -104,7 +104,7 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
     const testamentName = testamentNames[testamentKey] || testament?.name || testamentKey;
     Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionKey, section]) => {
       Object.entries(section?.books || {}).sort(bySortNumber).forEach(([, book]) => {
-        const id = book?.book_key || book?.id || book?.name;
+        const id = legacyUnitId(book, book?.id || book?.name);
         if (!id) return;
         sorted.push({
           id,

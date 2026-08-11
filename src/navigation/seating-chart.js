@@ -1,4 +1,4 @@
-import { legacyTextFile } from '../core/unit-source.js';
+import { legacyTextFile, legacyUnitId } from '../core/unit-source.js';
 // THE SEATING CHART (E1 of W-21, docs/SEATING-CHART-CONTRACT.md).
 //
 // The chart is the generated per-artifact truth about WHICH seats exist —
@@ -110,7 +110,7 @@ export function identityChartFromManifest(root) {
       Object.entries(section?.books || {}).sort(bySortNumber).forEach(([bookId, book]) => {
         const chapters = Object.entries(book?.chapters || {}).sort(bySortNumber)
           .map(([, chapterMeta]) => (Number.isFinite(chapterMeta?.verse_count) ? chapterMeta.verse_count : 0));
-        if (chapters.some(n => n > 0)) books[book?.book_key || bookId] = chapters;
+        if (chapters.some(n => n > 0)) books[legacyUnitId(book, bookId)] = chapters;
       });
     });
   });
@@ -145,7 +145,7 @@ export function expandChart(root, chart) {
   Object.entries(root.testaments).sort(bySortNumber).forEach(([testamentId, testament]) => {
     Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionId, section]) => {
       Object.entries(section?.books || {}).sort(bySortNumber).forEach(([bookId, book]) => {
-        const bookKey = book?.book_key || bookId;
+        const bookKey = legacyUnitId(book, bookId);
         const entry = chart.books[bookKey] ?? chart.books[bookId];
         // Absent from the chart = absent from the artifact. The chart's word
         // is law; there is no per-book fallback (contract: membership is the

@@ -126,3 +126,19 @@ export function createUnitSource({ levels, editions, exists, base = '', version 
 export function legacyTextFile(meta, fallback = '') {
   return meta?._external_file || meta?.external_file || fallback;
 }
+
+// THE LEGACY UNIT ID, read in one place instead of five (O-42, phase 1a).
+//
+// Five sites reached for `book_key` by hand, each with its own fallback chain
+// — and the chains genuinely differ, so the fallback stays the caller's to
+// supply. One site falls back to the map key, one to `id || name`, one to a
+// meta field, one to an empty string. A merged default would have changed
+// four of them while reading as tidying, which is the freeze's worst shape.
+//
+// The FIELD is what belongs here: `book_key` retires under H-11, and when the
+// last unit migrates the descriptor supplies the id instead. One function goes
+// then, not five expressions — and the field name stops appearing in
+// engine-general code, which O-43 now polices.
+export function legacyUnitId(meta, fallback = '') {
+  return meta?.book_key || fallback;
+}
