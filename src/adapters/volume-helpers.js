@@ -890,6 +890,34 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
     });
 }
 
+// SEATING A MIGRATED UNIT'S TEXT INTO THE SAME CACHE (O-45, phase 1a).
+//
+// The H-11 layout stores one file PER EDITION; everything below this line
+// reads one record per address holding every edition at once. `unit-text.js`
+// performs that conversion, and this is where the result lands — under a
+// cache key exactly as a legacy chapter file's path would be, so that
+// getBibleVerseItems, getVerseTextForSeat and getVerseTextResolved cannot
+// tell which layout answered and need no branch for it.
+//
+// This is the whole reason the splice is small. The alternative — teaching
+// each reader below to recognise the new shape — would put a layout branch at
+// every one of them, which is the drift the descriptor (O-42) exists to
+// prevent. When the last unit migrates, this function and the shape it
+// converts TO retire in the same commit.
+//
+// It never fetches: the caller has already resolved and normalised, and a
+// second fetch path here would be a second place for the two layouts to
+// disagree about what "loaded" means.
+export function seedVerseCache(cacheKey, rawVerses, items = []) {
+  if (!cacheKey || !rawVerses) return false;
+  // A waiter queued against a unit that was still loading must still fire —
+  // the same dropped-callback defect the Phase C audit found here (M1).
+  const waiters = _verseCache.get(cacheKey)?.waiters || [];
+  _verseCache.set(cacheKey, { status: 'loaded', items, rawVerses });
+  waiters.forEach(fn => { try { fn(); } catch { /* a waiter must not break the rest */ } });
+  return true;
+}
+
 // Returns the text for a specific verse from cache.  Tries each translation in
 // `preferredTranslations` in order, then falls back to the first available one.
 // Resolve a verse's text AND say which translation supplied it — the caller
