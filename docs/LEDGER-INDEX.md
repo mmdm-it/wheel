@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-11 from 108 entries.
+Generated 2026-08-11 from 112 entries.
 
 | id | status | title |
 |---|---|---|
@@ -68,6 +68,7 @@ Generated 2026-08-11 from 108 entries.
 | O-41 | OPEN | THE LAST TWO 0c ITEMS NEED RULINGS, NOT KEYSTROKES — Q14's font and Q12's AT semantics |
 | O-42 | OPEN | THE COEXISTENCE SEAM — how one engine reads two layouts at once |
 | O-43 | OPEN | VOLUME VOCABULARY IS LINTED, NOT REMEMBERED |
+| O-44 | OPEN | CHAPTERS ARE A PROJECTION — but nothing says what to project FROM |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
@@ -120,3 +121,6 @@ Generated 2026-08-11 from 108 entries.
 | W-50 | OPEN | PHASE 0 VERIFICATION — six items closed, one still open, and my last two drafts |
 | W-51 | DONE | PHASE 0c, CARGO HALF — and `v_in` was not merely redundant, it was WRONG |
 | W-52 | OPEN | THE PHASE-0 EXIT DRAFTS — F2, F3, M1, and F4 landed |
+| W-53 | OPEN | NON-AUTHOR RE-RUNS: O-42, O-43, O-37 — two pass clean, one passes with a hole |
+| W-54 | OPEN | O-44's NORMATIVE SECTION — landed in cargo, drafted for the public copy |
+| W-55 | OPEN | TWO OF MY OWN GUARDS WERE NARROWER THAN THEIR NAMES — both closed |

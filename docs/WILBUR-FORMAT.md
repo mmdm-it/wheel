@@ -131,6 +131,58 @@ identify.
 **Charts are generated and never hand-edited.** They are a projection, and a
 projection that can be edited independently of its source is a lie waiting.
 
+### Containers are the chart's, per edition — RULED 2026-08-11 (O-44, H-11)
+
+**The spine is flat.** It is an ordered list of the unit's leaves and nothing
+else: no chapters, no groupings, no boundaries, no default division. A unit's
+spine states *what the utterances are and in what order* — never how anyone
+gathers them.
+
+**Every container level below the declared unit is declared by the SEATING
+CHART, per edition.** What the Bible calls a chapter is not a level of
+storage and not a property of the text; it is one edition's grouping of the
+unit's leaves, and a different edition may group the same leaves differently.
+A chart declares **groups over book-ordinal ranges** — contiguous runs of the
+unit's leaves identified by their 1-based position in the spine — each group
+carrying its own label. Where a volume nests containers more deeply, the
+chart declares each level the same way; nothing about the rule is particular
+to chapters.
+
+**THE PROJECTION RULE.** To render the containers of unit *U* in edition *E*:
+
+1. Read `charts/{E}/{U}.json`. **If there is no chart for *E*, *E* has no
+   containers** — it is not servable and displays nothing. Containers are a
+   display fact, and display belongs only to charted editions.
+2. **The chart's groups, in order, ARE the containers, in order.** Their
+   count is the container count. Nothing is inferred from the spine's length,
+   from another edition's chart, or from a convention.
+3. **Each group's label is a quotation** (H-2): shown as the edition attests
+   it, never manufactured, never invented for a group the edition does not
+   number, and **never parsed for structure**. A label is text for a reader,
+   not an address for a program.
+4. **Each group's range names the leaves it holds**, by ordinal. Ranges are
+   contiguous, non-overlapping, and together cover the unit exactly.
+
+Nothing else participates. The spine is not consulted for grouping, labels
+are not read for meaning, and no default is synthesised at any point.
+
+**WHY THERE IS NO SPINE-SIDE DEFAULT.** A default grouping stored on the
+spine would be the hub in its last costume: one tradition's chapter division,
+sitting in the one file every edition shares, quietly becoming the answer for
+every edition that had not declared its own. It would be invisible precisely
+where it did the most damage — an edition with no chart would render *someone
+else's* chapters and look correct. The corollary is deliberate and is not a
+gap: **an edition without a chart has no containers**, which is the servable
+gate already ruled, arriving here in its own words.
+
+**This confirms existing practice rather than inventing it.** Charts
+already declare their groups this way, and already disagree with the
+spine's shape wherever the editions themselves disagree — an edition
+whose tradition gathers into one container what another divides into two
+declares three groups where the spine's shape suggests four, and both
+are correct. What is new here is only that the rule is written down
+before a second unit migrates and the projection silently becomes
+whatever an implementation happened to do.
 ### The naming kits
 Per language: the name of every level and every node, the short forms, the
 volume's own title, and the reading vocabulary. A volume is not multilingual
