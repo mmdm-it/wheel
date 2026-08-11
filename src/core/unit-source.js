@@ -208,3 +208,37 @@ export function projectContainers(chart, { leaves } = {}) {
   }
   return out;
 }
+
+// THE WALK'S ENTRIES FOR A MIGRATED UNIT (O-42/O-44, phase 1a).
+//
+// The reading-order walk enumerates CONTAINERS. For a legacy unit they come
+// from the manifest; for a migrated one they come from here, and the two
+// produce the same SHAPE so the walk cannot tell which answered — which is the
+// descriptor's whole purpose, applied one level down.
+//
+// `replaces` is the rig's declared substitution (Howell's ruling (a)): the
+// legacy address this unit stands in for, so the entries land where the reader
+// already navigates. It is scaffolding and it is passed in, never inferred —
+// when 1b makes the unit real, the caller stops supplying it and these entries
+// carry the unit's own identity instead.
+export function unitEntriesFromChart(descriptor, chart, { replaces = null, leaves = null } = {}) {
+  if (!descriptor || descriptor.layout !== 'current') {
+    throw new Error('unit-source: entries come from a CURRENT-layout descriptor — a legacy unit is enumerated from the manifest, as it always was');
+  }
+  const containers = projectContainers(chart, { leaves });
+  return containers.map((c, i) => ({
+    // The address the reader navigates. Under the rig it is the legacy one, so
+    // the diff can be empty; without the rig it is the unit's own.
+    unitId: replaces?.unit || descriptor.unitId,
+    containerKey: replaces && containers.length === 1 ? replaces.container : c.label,
+    // The LABEL is what prints, always the edition's own quotation (H-2) —
+    // never the substituted address, which is a routing detail and not
+    // something the reader should ever be shown.
+    label: c.label,
+    from: c.from,
+    to: c.to,
+    leafCount: c.count,
+    order: i,
+    layout: 'current'
+  }));
+}
