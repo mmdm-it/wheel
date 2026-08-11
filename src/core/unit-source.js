@@ -153,3 +153,58 @@ export function legacyUnitId(meta, fallback = '') {
 export function legacyOrdinal(meta, fallback = '') {
   return meta?.sequence ?? fallback;
 }
+
+// PROJECT CONTAINERS FROM A CHART (O-44, ruled 2026-08-11).
+//
+// Containers below the declared unit are the CHART's, per edition. This is the
+// projection H-11 promised when it abolished the container as a storage level,
+// and it is deliberately trivial: read the groups the edition declared, in the
+// order it declared them. There is no inference here and there must not be.
+//
+// WHAT IT DOES NOT DO, AND WHY THAT IS THE POINT:
+//
+//   - it never parses a LABEL. A label is a quotation (H-2) — what this
+//     edition calls the container. Splitting "3:16" to learn a structure is
+//     reading meaning out of text, which is the habit `identity.js` exists to
+//     end. The RANGE says what belongs; the label says only what to print.
+//   - it never consults the spine. The spine is flat by ruling; a default
+//     grouping there would be the hub in its last costume, and an edition that
+//     divides differently would silently inherit the Vulgate's shape.
+//   - it never repairs. A chart whose groups leave a gap or overlap is a
+//     botched increment, and it SCREAMS rather than rendering the part that
+//     happens to be coherent. Same doctrine as the all-or-nothing check above:
+//     79 increments pass through here, and a partial render looks like success.
+export function projectContainers(chart, { leaves } = {}) {
+  const groups = chart?.groups;
+  if (!Array.isArray(groups) || !groups.length) {
+    throw new Error(
+      'unit-source: this chart declares no containers (O-44). Containers come from the '
+      + 'chart alone — the spine is flat by ruling — so a unit whose chart omits them '
+      + 'has nothing to render, and inventing a default here would make every edition '
+      + 'silently agree with the spine\'s shape.');
+  }
+  const out = [];
+  let expected = 1;
+  for (const g of groups) {
+    if (typeof g?.label !== 'string' || !Number.isInteger(g.from) || !Number.isInteger(g.to)) {
+      throw new Error(`unit-source: malformed container ${JSON.stringify(g)} — needs a label and an integer range`);
+    }
+    if (g.to < g.from) {
+      throw new Error(`unit-source: container ${JSON.stringify(g.label)} runs backwards (${g.from}..${g.to})`);
+    }
+    if (g.from !== expected) {
+      throw new Error(
+        `unit-source: containers are not contiguous — ${JSON.stringify(g.label)} starts at ${g.from}, `
+        + `expected ${expected}. A ${g.from > expected ? 'gap leaves leaves unrenderable' : 'overlap renders leaves twice'}, `
+        + 'and a chart that does either is a botched increment (O-44).');
+    }
+    out.push({ label: g.label, from: g.from, to: g.to, count: g.to - g.from + 1 });
+    expected = g.to + 1;
+  }
+  if (Number.isInteger(leaves) && expected - 1 !== leaves) {
+    throw new Error(
+      `unit-source: containers cover ${expected - 1} leaves but the unit has ${leaves}. `
+      + 'Every leaf belongs to exactly one container or the increment is unfinished.');
+  }
+  return out;
+}
