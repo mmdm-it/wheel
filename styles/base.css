@@ -243,12 +243,21 @@ svg :focus-visible {
   top: 0;
   left: 0;
   right: 0;
-  /* Q13 (0c): the strip is pinned to top:0, so on a notched phone it renders
-     UNDER the notch or Dynamic Island. viewport-fit=cover (index.html) opts
-     into the full screen and hands us the insets; these add the top inset to
-     the existing padding and keep the text clear of the cutout. env() falls
-     back to 0px everywhere it is unsupported, so nothing changes on a phone
-     without a notch. */
+  /* Q13 (0c), then REVERSED 2026-08-10 on Howell's phone: the insets below are
+     deliberately INERT and deliberately kept.
+
+     They add safe-area insets to the padding, which only ever resolve to
+     anything once index.html opts into the full screen with
+     `viewport-fit=cover`. That opt-in was landed with Q13 and has since been
+     REMOVED — the phone was the check and the check said no. Without it every
+     env() here falls back to 0px, so this padding computes exactly as it did
+     before Q13 ever touched it.
+
+     Kept rather than reverted because the insets are correct FOR the
+     full-screen case, and if cover is ever reconsidered the arithmetic should
+     not have to be rediscovered. The comment is here so the next reader does
+     not spend ten minutes wondering why a safe-area rule appears to do
+     nothing: it does nothing on purpose, and this says why. */
   padding: calc(6px * var(--iframe-scale, 1) + env(safe-area-inset-top, 0px))
            calc(10px * var(--iframe-scale, 1) + env(safe-area-inset-right, 0px))
            calc(6px * var(--iframe-scale, 1))
