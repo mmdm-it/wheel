@@ -1,7 +1,7 @@
 // The coexistence seam (O-42). The cell that matters most is the SCREAM.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { createUnitSource, projectContainers } from '../src/core/unit-source.js';
+import { createUnitSource, projectContainers, unitEntriesFromChart } from '../src/core/unit-source.js';
 
 const LEVELS = ['unit', 'group', 'leaf'];
 const EDITIONS = ['AAA', 'BBB'];
@@ -153,5 +153,54 @@ describe('projectContainers — O-44', () => {
     // Inventing a default here would make every edition silently agree with
     // the spine's shape — the hub in its last costume.
     assert.throws(() => projectContainers({ groups: [] }), /declares no containers/);
+  });
+});
+
+describe('unitEntriesFromChart — the walk cannot tell which layout answered', () => {
+  const current = { unitId: 'bc22df', layout: 'current' };
+  const oneContainer = { groups: [{ label: '1', from: 1, to: 31 }] };
+  const many = { groups: [
+    { label: '1', from: 1, to: 14 }, { label: '2', from: 15, to: 31 }
+  ] };
+
+  it('produces one entry per container, in the chart\'s order', () => {
+    const e = unitEntriesFromChart(current, many, { leaves: 31 });
+    assert.equal(e.length, 2);
+    assert.deepEqual(e.map(x => x.label), ['1', '2']);
+    assert.deepEqual(e.map(x => x.leafCount), [14, 17]);
+    assert.deepEqual(e.map(x => x.order), [0, 1]);
+  });
+
+  it('under the rig, the entry lands at the DECLARED legacy address', () => {
+    // So the reader navigates where they always did and the diff can be empty.
+    const e = unitEntriesFromChart(current, oneContainer,
+      { replaces: { unit: 'GENE', container: '1' }, leaves: 31 });
+    assert.equal(e[0].unitId, 'GENE');
+    assert.equal(e[0].containerKey, '1');
+  });
+
+  it('the LABEL is the edition\'s own quotation, never the routing address', () => {
+    // The substitution is a routing detail. Showing it to the reader would be
+    // the rig leaking into the glass — and a label is a quotation (H-2).
+    const e = unitEntriesFromChart(current, { groups: [{ label: 'א', from: 1, to: 31 }] },
+      { replaces: { unit: 'GENE', container: '1' }, leaves: 31 });
+    assert.equal(e[0].label, 'א', 'the printed label comes from the chart, not from the rig');
+    assert.equal(e[0].unitId, 'GENE', 'only the ROUTING takes the substituted address');
+  });
+
+  it('without the rig it carries the unit\'s own identity — which is 1b', () => {
+    const e = unitEntriesFromChart(current, oneContainer, { leaves: 31 });
+    assert.equal(e[0].unitId, 'bc22df');
+  });
+
+  it('REFUSES a legacy descriptor — those are enumerated from the manifest, as always', () => {
+    assert.throws(() => unitEntriesFromChart({ unitId: 'x', layout: 'legacy' }, oneContainer),
+      /CURRENT-layout descriptor/);
+  });
+
+  it('inherits the projection\'s screams — a bad chart never half-renders', () => {
+    assert.throws(() => unitEntriesFromChart(current, { groups: [
+      { label: '1', from: 1, to: 10 }, { label: '2', from: 14, to: 31 }
+    ] }), /gap leaves leaves unrenderable/);
   });
 });
