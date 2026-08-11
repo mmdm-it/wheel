@@ -1,4 +1,5 @@
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
+import { legacyTextFile } from '../core/unit-source.js';
 // Volume-specific chain/build helpers extracted from the host page.
 // These remain pure functions over manifests and options.
 
@@ -342,8 +343,7 @@ export function getBibleChapters(manifest, selected, namesMap, bibleMode) {
     // known, not where the chapter is built. Same bug class as the baked
     // book names (W-16) and the stale-Latin verse.
     const label = Number.isFinite(chapterNum) ? String(chapterNum) : (namesMap?.sections?.[chapterKey] || chapterKey);
-    const externalFile = chapterVal?._external_file
-      || `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`;
+    const externalFile = legacyTextFile(chapterVal, `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`);
     return {
       id: chapterVal?.id || `${bookId}:${chapterKey}`,
       // The manifest's own "name" for a chapter is just its number as a
