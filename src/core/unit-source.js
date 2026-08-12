@@ -107,69 +107,24 @@ export function createUnitSource({ levels, editions, exists, base = '', version 
   };
 }
 
-// THE LEGACY TEXT FILE, read in ONE place instead of six (O-42, phase 1a).
+// THE THREE LEGACY FIELD HELPERS ARE DELETED (H-14, 2026-08-12).
 //
-// Six sites spelled this out by hand, in two variants that differed only in
-// their fallback. Measured before merging them: `_external_file` occurs 1,435
-// times in the manifest — once per legacy container — and `external_file` without the
-// underscore occurs ZERO times. The second check was dead in both variants,
-// so honouring it everywhere is provably inert rather than a quiet widening.
+// `legacyTextFile`, `legacyUnitId` and `legacyOrdinal` read `_external_file`,
+// `book_key` and `sequence` — the identifiers H-11 retires — and they are
+// gone with the last code that called them.
 //
-// The fallback stays a CALLER'S argument, because the two variants genuinely
-// disagreed: three built a path, three yielded an empty string, and under the
-// phase-1 freeze a merged default would have changed behaviour at three sites
-// while looking like tidying.
+// They were worth building. Funnelling six hand-written expressions into one
+// looked like tidying at the time; it turned out to be the splice point, and
+// then the deletion point, because a field read in one place retires in one
+// place. The same six expressions spread across six callers would have made
+// this an excavation instead of a diff.
 //
-// This exists to be deleted. `_external_file` retires under H-11, and when the
-// last unit migrates the descriptor answers instead — at which point one
-// function goes rather than six expressions.
-export function legacyTextFile(meta, fallback = '') {
-  return meta?._external_file || meta?.external_file || fallback;
-}
-
-// THE SUBSTITUTION IS GONE (H-14, 2026-08-12) — deleted, not retired.
-//
-// It stood here for one day. A migrated unit stood in for a legacy address so
-// the two layouts could coexist, and the mechanism was sound: one declared
-// pairing, compared as two strings, leaving forty-one id-shape sites blind.
-//
-// H-14 removed the problem rather than the solution. With the wall there is no
-// legacy address to stand in for, because there is no legacy unit the engine
-// can read — the fixture IS the volume, `volume.json` is the sole enumeration,
-// and a substitution has nothing on either side of it. Coexistence retired as
-// a technical requirement, so its seam retired with it.
-//
-// Recorded rather than silently removed, because the shape recurs: the
-// scaffolding was correct and still short-lived, and it was made cheap to
-// delete precisely because it lived in one place. That is the argument for
-// building scaffolding that way, not an argument against having built it.
-
-// THE LEGACY UNIT ID, read in one place instead of five (O-42, phase 1a).
-//
-// Five sites reached for `book_key` by hand, each with its own fallback chain
-// — and the chains genuinely differ, so the fallback stays the caller's to
-// supply. One site falls back to the map key, one to `id || name`, one to a
-// meta field, one to an empty string. A merged default would have changed
-// four of them while reading as tidying, which is the freeze's worst shape.
-//
-// The FIELD is what belongs here: `book_key` retires under H-11, and when the
-// last unit migrates the descriptor supplies the id instead. One function goes
-// then, not five expressions — and the field name stops appearing in
-// engine-general code, which O-43 now polices.
-export function legacyUnitId(meta, fallback = '') {
-  return meta?.book_key || fallback;
-}
-
-// THE LEGACY ORDINAL, and the operator is the whole point (O-42, phase 1a).
-//
-// `sequence` retires under H-11. Its one remaining reader used `??`, not `||`,
-// and the difference is not stylistic: a sequence can legitimately be 0, and
-// `||` would discard it as falsy and substitute the fallback. Preserved
-// exactly here rather than normalised to the more common operator — under the
-// phase-1 freeze the tempting tidy is the defect.
-export function legacyOrdinal(meta, fallback = '') {
-  return meta?.sequence ?? fallback;
-}
+// `legacyOrdinal` is the one to remember. Its whole point was the operator:
+// its single reader used `??` and not `||`, because a sequence can legitimately
+// be 0 and `||` would have discarded it as falsy. Normalising that to the more
+// common operator would have been a silent off-by-one in a migration nobody
+// was watching — the tempting tidy being the defect, which is what the freeze
+// was for.
 
 // PROJECT CONTAINERS FROM A CHART (O-44, ruled 2026-08-11).
 //

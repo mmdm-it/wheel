@@ -1,6 +1,6 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
-import { expandChart, identityChartFromManifest, chaptersFromSeats } from './seating-chart.js';
-import { legacyTextFile, legacyUnitId } from '../core/unit-source.js';
+import { chaptersFromSeats } from './seating-chart.js';
+import { expandVolumeSeats } from '../adapters/bible-volume.js';
 
 const GAP = null;
 
@@ -10,19 +10,14 @@ const bySortNumber = (a, b) => {
   return as - bs;
 };
 
+// Books hang from testaments with nothing between (H-14): the section was
+// never a level a reader could stand on, and it is gone from the enumeration.
 function findBibleBook(manifest, bookId) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible) return null;
-  const testaments = bible.testaments || {};
-  for (const [testamentId, testament] of Object.entries(testaments)) {
-    const sections = testament?.sections || {};
-    for (const [sectionId, section] of Object.entries(sections)) {
-      const books = section?.books || {};
-      const book = books[bookId];
-      if (book) {
-        return { book, testamentId, sectionId };
-      }
-    }
+  for (const [testamentId, testament] of Object.entries(bible.testaments || {})) {
+    const book = (testament?.books || {})[bookId];
+    if (book) return { book, testamentId };
   }
   return null;
 }
@@ -51,12 +46,20 @@ function findBibleBook(manifest, bookId) {
  * from verse_count reproduces the old behaviour EXACTLY (proven by test) —
  * phantom seats included, by design: data first, engine tolerant.
  */
-export function buildBibleVerseChain(manifest, { initialVerseId = null, chart = null } = {}) {
-  const root = manifest?.Gutenberg_Bible;
-  if (!root?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
-
-  let sorted = chart ? expandChart(root, chart) : null;
-  if (!sorted) sorted = expandChart(root, identityChartFromManifest(root)) || [];
+export function buildBibleVerseChain(manifest, { initialVerseId = null, edition = null } = {}) {
+  // THE SEATS COME FROM THE VOLUME (H-14). This took a legacy chart and
+  // expanded it against a manifest that stored chapters; both are gone, and
+  // with them the identity-chart fallback that stood behind them.
+  //
+  // THAT FALLBACK'S ABSENCE IS THE POINT, not an omission. It manufactured
+  // labels from a verse count — which H-2 rules is manufacture — and it was
+  // reached whenever a chart was missing, so an edition with no chart quietly
+  // got a plausible invented one. Under the wall an edition that does not
+  // chart a unit simply does not seat it, and the reader is shown nothing
+  // rather than a fiction.
+  const volume = manifest?.__wallVolume;
+  const sorted = volume ? expandVolumeSeats(volume, edition) : [];
+  if (!sorted.length) return { items: [], selectedIndex: 0, preserveOrder: true };
 
   const items = weaveCousinChain(sorted, [
     item => item.chapterKey,
@@ -101,23 +104,22 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   // back-navigation but is not a UI level and earns no gap.
   const sorted = [];
   Object.entries(bible.testaments || {}).sort(bySortNumber).forEach(([testamentKey, testament]) => {
-    const testamentName = testamentNames[testamentKey] || testament?.name || testamentKey;
-    Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionKey, section]) => {
-      Object.entries(section?.books || {}).sort(bySortNumber).forEach(([, book]) => {
-        const id = legacyUnitId(book, book?.id || book?.name);
-        if (!id) return;
-        sorted.push({
-          id,
-          name: bookNames?.[id] || book?.book_name || book?.name || id,
-          sort: Number.isFinite(book?.sort_number) ? book.sort_number : sorted.length,
-          level: 'book',
-          testamentId: testamentKey,
-          sectionId: sectionKey,
-          parentName: testamentName,
-          // Editorial prominence tier (1 featured, 2 notable, absent default):
-          // declared in the data, honored by the star field's seating and size.
-          prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
-        });
+    const testamentName = testamentNames[testamentKey] || null;
+    Object.entries(testament?.books || {}).sort(bySortNumber).forEach(([bookKey, book]) => {
+      sorted.push({
+        id: bookKey,
+        // A NAME IS A QUOTATION (H-2). The old chain fell back to the book's
+        // own `book_name`, then to its id — and under opaque ids that last
+        // step would print `bc22df` at the reader. Unnamed is honest; the
+        // filesystem's spelling is not a name.
+        name: bookNames?.[bookKey] || null,
+        sort: Number.isFinite(book?.sort_number) ? book.sort_number : sorted.length,
+        level: 'book',
+        testamentId: testamentKey,
+        parentName: testamentName,
+        // Editorial prominence tier (1 featured, 2 notable, absent default):
+        // declared in the data, honored by the star field's seating and size.
+        prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
       });
     });
   });
@@ -153,54 +155,24 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
  * Item shape matches getBibleChapters(), so descent, ascent and the
  * chapter prefetch all keep working on ids they already understand.
  */
-export function buildBibleChapterChain(manifest, { initialChapterId = null, namesMap = null, seats = null } = {}) {
-  const bible = manifest?.Gutenberg_Bible;
-  if (!bible?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
-
-  // THE CHAPTERS RING FOLLOWS THE EDITION (E3 of W-21). Given the active
-  // artifact's expanded seats, the ring holds the chapters that artifact
-  // actually has — collapsed from those very seats, so the two rings cannot
-  // drift apart. Without seats (no chart generated yet) it walks the spine,
-  // which is what every edition did before the charts existed.
-  const fromSeats = seats ? chaptersFromSeats(seats) : null;
-  if (fromSeats) return weaveChapters(fromSeats, initialChapterId);
-
-  const sorted = [];
-  Object.entries(bible.testaments).sort(bySortNumber).forEach(([testamentKey, testament]) => {
-    Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionKey, section]) => {
-      Object.entries(section?.books || {}).sort(bySortNumber).forEach(([bookId, book]) => {
-        Object.entries(book?.chapters || {}).sort(bySortNumber).forEach(([chapterKey, chapterVal]) => {
-          const chapterNum = Number.parseInt(chapterKey, 10);
-          // The chapter carries its NUMBER; the numeral system is chosen at
-          // render from the reader's own tongue (toTraditionNumeral). The
-          // wish left in this comment — "one source of truth for the numeral
-          // form would be better still" — is now granted, and it had to be:
-          // three sites baked Roman independently, so a Greek reader met
-          // Latin numerals under a Greek book name.
-          const label = Number.isFinite(chapterNum)
-            ? String(chapterNum)
-            : (namesMap?.sections?.[chapterKey] || chapterKey);
-          sorted.push({
-            id: chapterVal?.id || `${bookId}:${chapterKey}`,
-            name: label,
-            level: 'chapter',
-            parentId: bookId,
-            bookKey: bookId,
-            testamentKey: testamentKey,
-            meta: {
-              bookId,
-              chapterKey,
-              sectionId: sectionKey,
-              testamentId: testamentKey,
-              externalFile: legacyTextFile(chapterVal, `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`)
-            }
-          });
-        });
-      });
-    });
-  });
-
-  return weaveChapters(sorted, initialChapterId);
+export function buildBibleChapterChain(manifest, { initialChapterId = null, edition = null, seats = null } = {}) {
+  // THE CHAPTERS RING IS COLLAPSED FROM THE SEATS (E3 of W-21), and under the
+  // wall that is the ONLY way it is built.
+  //
+  // It used to have a second path: walk the manifest's stored chapters when
+  // no chart had been generated. That path was the whole reason the two rings
+  // could disagree — the chapters ring showing what the SPINE holds while the
+  // verse ring showed what the EDITION holds — and E3 exists because they
+  // did, offering a Greek reader chapters that edition has never had.
+  //
+  // H-11 removes the choice rather than the bug: chapters are not stored, so
+  // there is nothing else to walk. One ring is derived from the other by
+  // construction, which is what E3 was reaching for.
+  const source = seats
+    || (manifest?.__wallVolume ? expandVolumeSeats(manifest.__wallVolume, edition) : null);
+  const fromSeats = source ? chaptersFromSeats(source) : null;
+  if (!fromSeats) return { items: [], selectedIndex: 0, preserveOrder: true };
+  return weaveChapters(fromSeats, initialChapterId);
 }
 
 function weaveChapters(sorted, initialChapterId) {

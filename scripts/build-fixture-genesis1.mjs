@@ -110,9 +110,60 @@ const write = (rel, data) => {
 // The grouping is carried here rather than derived, so the reader keeps the
 // six levels it has always had. With one book every group has one child, which
 // is degenerate but correct — and it is the shape 79 books will hang from.
+// THE PRESENTATION CONFIG COMES WITH THE VOLUME (H-14).
+//
+// The engine reads `display_config` for colours, level styling, startup and
+// leaf level, and under the wall it cannot reach the legacy manifest to get
+// it. So the fixture carries its own, derived from the corpus's rather than
+// retyped — a hand-copy would drift the day either changed.
+//
+// THREE THINGS ARE NARROWED, and each is the wall showing through:
+//   - `editions.registry` is REMOVED. It points at translations.json, which
+//     is exactly the pre-doctrine file the engine may no longer read.
+//     Servability now lives in volume.json's own `editions` array.
+//   - languages and editions narrow to what is actually OFFERED. Listing ten
+//     languages the volume cannot serve would put nine dead seats on the
+//     reader's shelf.
+//   - `hierarchy_levels.section` is DROPPED. The corpus still declares it
+//     with a display name and focus-ring positioning as though a reader could
+//     stand there; the engine has no section ring and never had one.
+const sourceConfig = manifest.Gutenberg_Bible?.display_config || {};
+const offeredLanguages = [...new Set(OFFERED.map(c => registry.translations?.[c]?.language || 'english'))];
+const { section, ...levelsWithoutSection } = sourceConfig.hierarchy_levels || {};
+
+const displayConfig = {
+  ...sourceConfig,
+  volume_data_version: VERSION,
+  // `split_chapters` DESCRIBES THE STORAGE THE WALL REMOVED. It is the
+  // pre-doctrine layout — one file per chapter — and H-11 abolished the
+  // chapter as a storage level, so carrying it forward would be a stale
+  // assertion riding along inside the config. Found by a test that refuses
+  // any retired term in the internal root, which caught it in a value rather
+  // than in a key; only the validator reads it, and it warns rather than
+  // requires.
+  structure_type: 'per_unit',
+  hierarchy_levels: levelsWithoutSection,
+  languages: {
+    available: offeredLanguages,
+    default: offeredLanguages[0],
+    labels: Object.fromEntries(offeredLanguages
+      .map(l => [l, sourceConfig.languages?.labels?.[l] || l.toUpperCase()]))
+  },
+  editions: {
+    available: Object.fromEntries(offeredLanguages.map(lang => [
+      lang, OFFERED.filter(c => (registry.translations?.[c]?.language || 'english') === lang)
+    ])),
+    default: Object.fromEntries(offeredLanguages.map(lang => [
+      lang, OFFERED.find(c => (registry.translations?.[c]?.language || 'english') === lang)
+    ])),
+    labels: Object.fromEntries(OFFERED.map(c => [c, registry.translations?.[c]?.name || c]))
+  }
+};
+
 write('volume.json', {
   _schema_version: '4.0',
   _note: 'H-11 layout fixture under the H-14 wall. Genesis 1, Douay-Rheims offered.',
+  display_config: displayConfig,
   testaments: [{
     id: testamentId,
     books: [{ id: unitId, leaves: utterances.length }]

@@ -1,5 +1,5 @@
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
-import { legacyTextFile, legacyUnitId, legacyOrdinal } from '../core/unit-source.js';
+import { projectContainers } from '../core/unit-source.js';
 // Volume-specific chain/build helpers extracted from the host page.
 // These remain pure functions over manifests and options.
 
@@ -314,51 +314,48 @@ export function getCalendarMonths(manifest, selected, calendarMode) {
   }).map((item, idx) => ({ ...item, order: idx }));
 }
 
-export function getBibleChapters(manifest, selected, namesMap, bibleMode) {
+// THE CHAPTERS A BOOK ACTUALLY HAS, projected from the edition's chart
+// (O-44), never read from storage (H-14).
+//
+// This walked the manifest's stored `chapters` map. Under H-11 there is no
+// such map: a container is the render-time projection the spec always said it
+// was, declared by each edition over book-ordinal ranges. Two editions can
+// divide the same book differently and both are right, which a stored map
+// could not express at all.
+//
+// It also stops manufacturing a name. The old path fell back through the
+// manifest's own chapter name, then a section name, then the raw key — and
+// under opaque ids that last step prints filesystem spelling at the reader.
+// A label is a quotation (H-2): the chart's label is the whole answer.
+export function getBibleChapters(manifest, selected, namesMap, bibleMode, edition = null) {
   if (bibleMode !== 'book') return [];
-  const bookId = selected?.id;
-  if (!bookId) return [];
-  const testaments = manifest?.Gutenberg_Bible?.testaments || {};
-  let bookEntry = null;
-  Object.values(testaments).some(testament => {
-    const sections = testament?.sections || {};
-    return Object.values(sections).some(section => {
-      const books = section?.books || {};
-      if (books[bookId]) {
-        bookEntry = books[bookId];
-        return true;
-      }
-      return false;
-    });
-  });
-  if (!bookEntry?.chapters) return [];
-  return Object.entries(bookEntry.chapters).map(([chapterKey, chapterVal], idx) => {
-    const chapterNum = Number.parseInt(chapterKey, 10);
-    // THE NUMBER TRAVELS, THE NUMERALS ARE WORN AT RENDER (Howell
-    // 2026-08-02). This once baked a Roman string into the item name, which
-    // meant the label formatter met "XVII" with no number left to convert —
-    // so a Greek reader got Latin numerals under a Greek book name. The
-    // convention still holds (chapters in the tradition's own letters,
-    // verses in Arabic), but it is applied where the reader's language is
-    // known, not where the chapter is built. Same bug class as the baked
-    // book names (W-16) and the stale-Latin verse.
-    const label = Number.isFinite(chapterNum) ? String(chapterNum) : (namesMap?.sections?.[chapterKey] || chapterKey);
-    const externalFile = legacyTextFile(chapterVal, `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`);
-    return {
-      id: chapterVal?.id || `${bookId}:${chapterKey}`,
-      // The manifest's own "name" for a chapter is just its number as a
-      // string, so the numeral form we chose has to win it. A chapter
-      // keyed by something other than a number keeps whatever name it has.
-      name: Number.isFinite(chapterNum) ? label : (chapterVal?.name || label),
-      order: Number.isFinite(chapterVal?.sort_number) ? chapterVal.sort_number : idx,
-      parentId: bookId,
+  const unitId = selected?.id;
+  const volume = manifest?.__wallVolume;
+  if (!unitId || !volume) return [];
+  const chart = volume.chartFor(unitId, edition);
+  const spine = volume.spineFor(unitId);
+  if (!chart?.groups?.length || !spine?.utterances?.length) return [];
+
+  return projectContainers(chart, { leaves: spine.utterances.length })
+    .map((container, idx) => ({
+      id: `${unitId}/${container.label}`,
+      // THE NUMBER TRAVELS, THE NUMERALS ARE WORN AT RENDER (Howell
+      // 2026-08-02). Baking a Roman string here left the label formatter
+      // nothing to convert, so a Greek reader got Latin numerals under a
+      // Greek book name. The label is carried as the edition wrote it.
+      name: container.label,
+      order: idx,
+      parentId: unitId,
       level: 'chapter',
-      meta: { bookId, chapterKey, externalFile }
-    };
-  }).sort((a, b) => {
-    if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
-    return a.order - b.order;
-  }).map((item, idx) => ({ ...item, order: idx }));
+      meta: {
+        bookId: unitId,
+        chapterKey: container.label,
+        chapterLabel: container.label,
+        // Under H-11 the text address is the UNIT's, because a container has
+        // no file of its own any more.
+        externalFile: unitId
+      }
+    }));
 }
 
 export function getPlacesLevels(manifest) {
@@ -771,24 +768,31 @@ export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
   return { items, selectedIndex: selectIndexIn(items, resolvedCenterId), preserveOrder: true };
 }
 
+// BOOKS HANG FROM TESTAMENTS, WITH NOTHING BETWEEN (H-14, Howell 2026-08-12).
+//
+// This walked testaments → SECTIONS → books, and the section was never a
+// level the reader could stand on: the engine builds no ring for one and a
+// book has always ascended straight to its testament. The section survived
+// here only as the book's `parentName`, which is why removing it is visible
+// at all — the parent button now says the testament's name, which is the
+// level the reader actually returns to.
 export function buildBibleBooks(manifest, namesMap = {}) {
   const testaments = manifest?.Gutenberg_Bible?.testaments;
   if (!testaments) return [];
   const bookNames = namesMap.books || namesMap;
-  const sectionNames = namesMap.sections || {};
+  const testamentNames = namesMap.testaments || {};
   const items = [];
   Object.entries(testaments).forEach(([testamentId, testament]) => {
-    const sections = testament?.sections || {};
-    Object.entries(sections).forEach(([sectionId, section]) => {
-      const books = section?.books || {};
-      Object.entries(books).forEach(([bookId, book]) => {
-        items.push({
-          id: bookId,
-          name: bookNames?.[bookId] || book?.book_name || book?.name || bookId,
-          sort: book?.sort_number || items.length + 1,
-          sectionId,
-          parentName: sectionNames?.[sectionId] || section?.name || sectionId
-        });
+    Object.entries(testament?.books || {}).forEach(([bookId, book]) => {
+      items.push({
+        id: bookId,
+        // A NAME IS A QUOTATION (H-2). Where no tongue names this id the item
+        // goes unnamed rather than wearing its own opaque id, which would be
+        // the filesystem speaking to the reader.
+        name: bookNames?.[bookId] || null,
+        sort: Number.isFinite(book?.sort_number) ? book.sort_number : items.length,
+        testamentId,
+        parentName: testamentNames?.[testamentId] || null
       });
     });
   });
@@ -839,55 +843,46 @@ export function getBibleVerseCacheStatus(externalFile) {
   return _verseCache.get(externalFile)?.status || null;
 }
 
+// THE TEXT IS ALREADY HERE (H-14) — this no longer fetches anything.
+//
+// It used to fetch a container's file on demand and build the verse items from
+// what came back. Under the wall a unit's text arrives whole and is seated at
+// boot, so there is nothing left to go and get: the question is only whether
+// the unit is present.
+//
+// DELETED WITH THE FETCH: the last two readers of the retired identifiers.
+// `legacyUnitId` and `legacyOrdinal` were called here to rebuild verse ids
+// from `book_key` and `sequence` — fields H-11 retires — and that was the
+// final site in the engine reading either one.
+//
+// The name is kept because its CALLERS are unchanged: the read-ahead still
+// asks for the next unit to be warm, and it still gets a yes or an honest no.
+// What it cannot do any more is produce a half-loaded unit, because a unit
+// resolves all-or-nothing before the first frame.
 export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
-  const externalFile = chapterItem?.meta?.externalFile;
-  if (!externalFile) return;
-  const cached = _verseCache.get(externalFile);
+  const address = chapterItem?.meta?.externalFile;
+  if (!address) return;
+  const cached = _verseCache.get(address);
   if (cached?.status === 'loaded') {
     if (typeof onLoaded === 'function') onLoaded();
     return;
   }
-  if (cached?.status === 'loading') {
-    // Already in flight: QUEUE the callback, never drop it (Phase C audit
-    // M1 — the read-ahead's renderDetail and a later pyramid refresh can
-    // both be waiting on the same chapter; dropping the second left the
-    // verse sky empty until the user nudged the ring).
-    if (typeof onLoaded === 'function') cached.waiters = [...(cached.waiters || []), onLoaded];
-    return;
-  }
-  _verseCache.set(externalFile, { status: 'loading', items: [], rawVerses: null, waiters: [] });
-  const url = externalFile.startsWith('.') ? externalFile : `./${externalFile}`;
-  fetch(url)
-    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-    .then(data => {
-      const bookKey = legacyUnitId(data, chapterItem.meta?.bookId || '');
-      const chapterLabel = legacyOrdinal(data);
-      const verses = data.verses || {};
-      const items = Object.entries(verses)
-        .map(([verseKey, verse]) => {
-          const seq = Number.isFinite(verse?.seq) ? verse.seq : (parseInt(verseKey, 10) || 0);
-          return {
-            id: `${bookKey}_${chapterLabel}_${verseKey}`,
-            // The verse number alone: the parent button carries the book
-            // and chapter, live, so the ring need not repeat them.
-            name: String(verseKey),
-            order: seq,
-            parentId: chapterItem.id,
-            level: 'verse',
-            meta: { bookId: bookKey, chapterId: chapterItem.id, verseKey, externalFile }
-          };
-        })
-        .sort((a, b) => a.order - b.order)
-        .map((item, idx) => ({ ...item, order: idx }));
-      const waiters = _verseCache.get(externalFile)?.waiters || [];
-      _verseCache.set(externalFile, { status: 'loaded', items, rawVerses: verses });
-      if (typeof onLoaded === 'function') onLoaded();
-      waiters.forEach(fn => { try { fn(); } catch { /* a waiter must not break the rest */ } });
-    })
-    .catch(err => {
-      console.warn('[prefetchBibleVerses] failed to load', externalFile, err);
-      _verseCache.set(externalFile, { status: 'error', items: [], rawVerses: null });
-    });
+  // NOT SEEDED MEANS THE ENUMERATION DOES NOT CARRY IT — a fact about the
+  // volume, not a thing to go looking for. But it must SETTLE.
+  //
+  // My first cut simply returned here, and the suite caught it as nine
+  // CANCELLED tests rather than failures: a caller awaiting `onLoaded` waited
+  // for a callback that would never come. That is the same disease as a silent
+  // fallback wearing different clothes — "not yet" and "not there" made
+  // indistinguishable, except this time the reader waits forever instead of
+  // being told a plausible lie.
+  //
+  // So the answer is recorded and the caller is always released. `error` is
+  // the existing terminal status for "asked, and there is nothing", and it is
+  // what stops a re-request loop — the defect behind the Esther incident on
+  // the Moto G.
+  _verseCache.set(address, { status: 'error', items: [], rawVerses: null });
+  if (typeof onLoaded === 'function') onLoaded();
 }
 
 // SEATING A UNIT'S RESOLVED TEXT INTO THE CACHE (O-45, phase 1a).

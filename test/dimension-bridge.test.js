@@ -10,6 +10,30 @@ import { createDimensionBridge } from '../src/core/dimension-bridge.js';
 import { detailFor, createHandlers } from '../src/adapters/bible-adapter.js';
 import { volumeConfigs } from '../src/volume-configs.js';
 import { prefetchBibleVerses } from '../src/adapters/volume-helpers.js';
+import { seedVerseCache } from '../src/adapters/volume-helpers.js';
+import { normalizeUnitText } from '../src/core/unit-text.js';
+// SEEDING FROM THE H-11 FIXTURE (H-14). These cells used to warm the cache by
+// FETCHING a legacy chapter file; that file is cargo the engine can no longer
+// open, and there is no fetch left in the text path at all — a unit's text is
+// converted and seated once at boot.
+//
+// The fixture carries Genesis 1 in both the Vulgate and the Douay-Rheims,
+// which is exactly what these cells need: one address, two traditions, so
+// "the same verse in the translation in scope" has something to be scoped to.
+const seedGenesisFixture = () => {
+  const base = path.resolve(__dirname, 'fixtures/h11/gutenberg/v1');
+  const read = rel => JSON.parse(readFileSync(path.join(base, rel), 'utf-8'));
+  const declared = ['VUL', 'DRA'];
+  const chart = read('charts/VUL/bc22df.json');
+  const records = normalizeUnitText({
+    editions: Object.fromEntries(declared.map(c => [c, read(`text/${c}/bc22df.json`)])),
+    declared,
+    order: chart.seats.map(seat => String(seat.label))
+  });
+  seedVerseCache('bc22df', records);
+  return 'bc22df';
+};
+
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const readJson = async rel => JSON.parse(await readFile(path.resolve(__dirname, '..', rel), 'utf-8'));
@@ -210,13 +234,11 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
     // Phase A retired ?translation= reading; a vestige in detailFor let a
     // stale bookmark pin the text to Latin against the store's choice —
     // exactly what the first live swap demo hit. The URL must be inert.
-    const externalFile = 'test/fixtures/data/gutenberg/chapters/GENE/001.json';
-    const chapterItem = { id: 'GENE:1', level: 'chapter', meta: { externalFile, bookId: 'GENE' } };
-    await new Promise(resolve => prefetchBibleVerses(chapterItem, { onLoaded: resolve }));
+    const externalFile = seedGenesisFixture();
     const originalWindow = globalThis.window;
     globalThis.window = { location: { search: '?volume=bible&translation=VUL' } };
     try {
-      const verse = { id: 'GENE_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
+      const verse = { id: 'bc22df_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
       const english = detailFor(verse, manifest, { translation: 'DRA' });
       assert.match(english.text, /beginning/i, 'the store wins; the URL is inert');
     } finally {
@@ -225,11 +247,9 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
   });
 
   it('the same verse renders Latin or English by the translation in scope', async () => {
-    const externalFile = 'test/fixtures/data/gutenberg/chapters/GENE/001.json';
-    const chapterItem = { id: 'GENE:1', level: 'chapter', meta: { externalFile, bookId: 'GENE' } };
-    await new Promise(resolve => prefetchBibleVerses(chapterItem, { onLoaded: resolve }));
+    const externalFile = seedGenesisFixture();
 
-    const verse = { id: 'GENE_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
+    const verse = { id: 'bc22df_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
     const latin = detailFor(verse, manifest, { translation: 'VUL' });
     const english = detailFor(verse, manifest, { translation: 'DRA' });
 
@@ -245,11 +265,9 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
     // excuses." So the reader's own edition or nothing — no Vulgate standing
     // in, no italic voice, no footer. A verse an offered edition lacks was
     // never written, and a gap needs no explanation.
-    const externalFile = 'test/fixtures/data/gutenberg/chapters/GENE/001.json';
-    const chapterItem = { id: 'GENE:1', level: 'chapter', meta: { externalFile, bookId: 'GENE' } };
-    await new Promise(resolve => prefetchBibleVerses(chapterItem, { onLoaded: resolve }));
+    const externalFile = seedGenesisFixture();
 
-    const verse = { id: 'GENE_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
+    const verse = { id: 'bc22df_1_1', level: 'verse', meta: { externalFile, verseKey: '1' } };
     // The fixture chapter carries VUL and DRA only — SYN is absent.
     const absent = detailFor(verse, manifest, { translation: 'SYN' });
     assert.equal(absent.text, '', 'no text — the Latin does NOT stand in');
@@ -273,25 +291,24 @@ describe('the headless swap — Latin ↔ English at a verse', () => {
     // a snapshot, a future builder — that text is honored ONLY in its own
     // language. The item is therefore constructed here by hand, exactly as a
     // baking builder produced one.
-    const manifest2 = JSON.parse(readFileSync(
-      path.resolve(__dirname, '../test/fixtures/data/gutenberg/manifest.json'), 'utf-8'));
+    const address = seedGenesisFixture();
     const bakedVerse = {
-      id: 'GENE_1_1',
+      id: 'bc22df_1_1',
       name: '1',
       level: 'verse',
       translation: 'VUL',                       // the tongue the bake is IN
       text: 'In principio creavit Deus cælum et terram.',
       meta: {
-        bookId: 'GENE', bookEntryId: 'GENE', chapterId: 'GENE:1',
-        verseKey: '1', externalFile: 'test/fixtures/data/gutenberg/chapters/GENE/001.json'
+        bookId: 'bc22df', bookEntryId: 'bc22df', chapterId: 'bc22df/1',
+        verseKey: '1', externalFile: address
       }
     };
     // The chapter is cached (prefetched by the earlier tests). A live DRA
     // selection must render English through the cache — never the bake.
-    const english = detailFor(bakedVerse, manifest2, { translation: 'DRA' });
+    const english = detailFor(bakedVerse, manifest, { translation: 'DRA' });
     assert.match(english.text, /beginning/i, 'the live selection wins over the bake');
     // And in its OWN language the bake is still honest.
-    const latin = detailFor(bakedVerse, manifest2, { translation: 'VUL' });
+    const latin = detailFor(bakedVerse, manifest, { translation: 'VUL' });
     assert.match(latin.text, /principio/i);
   });
 });

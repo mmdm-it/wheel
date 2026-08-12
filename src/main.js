@@ -1182,10 +1182,18 @@ function fetchManifest(volumeId) {
   if (!manifestCache.has(volumeId)) {
     const cfg = volumeConfigs[volumeId];
     if (!cfg) return Promise.reject(new Error(`unknown volume "${volumeId}"`));
-    const p = fetch(cfg.manifestPath).then(r => {
-      if (!r.ok) throw new Error(`manifest missing for volume "${cfg.id}" (${cfg.manifestPath}: HTTP ${r.status})`);
-      return r.json();
-    }).catch(err => { manifestCache.delete(volumeId); throw err; });
+    // A VOLUME MAY LOAD ITSELF (H-14). A volume behind its own migration wall
+    // boots from several artifacts rather than one file — an enumeration, its
+    // names — and normalises them before anything reads it. Volumes still in
+    // front of their wall fetch one manifest exactly as they always have,
+    // which is what makes the wall per-volume rather than a flag day.
+    const p = (typeof cfg.loadManifest === 'function'
+      ? cfg.loadManifest()
+      : fetch(cfg.manifestPath).then(r => {
+        if (!r.ok) throw new Error(`manifest missing for volume "${cfg.id}" (${cfg.manifestPath}: HTTP ${r.status})`);
+        return r.json();
+      })
+    ).catch(err => { manifestCache.delete(volumeId); throw err; });
     manifestCache.set(volumeId, p);
   }
   return manifestCache.get(volumeId);
@@ -1264,13 +1272,18 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
     : await config.loadSupplemental(root, manifest, params);
   const debugFlag = params.get('debug') === '1' || localStorage.getItem('wheel-debug') === '1';
   const options = {
-    ...config.buildOptions({ params, startup, arrangements }),
+    // `root` rides along so a volume can take its defaults from its own data
+    // rather than from a literal in the engine. Under H-14 that stopped being
+    // a nicety: a volume behind its wall enumerates only what has migrated, so
+    // a hard-coded starting address names something unreachable, and a default
+    // that cannot resolve is a blank screen.
+    ...config.buildOptions({ params, startup, arrangements, root }),
     debug: debugFlag
   };
   return { volume: resolvedVolume, config, manifest, root, options, supplemental };
 }
 
-function applyTheme(manifest, volume) {
+function applyTheme(volume) {
   const theme = volumeConfigs[volume]?.theme || volume;
   const root = document.documentElement;
   const active = volumeConfigs[volume]?.palette || {
@@ -1826,8 +1839,22 @@ function gatewayLabelFromItemId(itemId) {
 function showBootError(message) {
   // Minimal visible error surface: the console-only failures of the past
   // left black screens (Phase B audit, H4/M1).
+  //
+  // AND IT WAS ITSELF INVISIBLE until 2026-08-12. `.detail-panel` is
+  // `opacity: 0` until something adds `detail-panel--visible`, and the only
+  // two call sites touching that class are the ordinary render toggle and a
+  // REMOVE during boot. This wrote its text into a panel nobody could see, so
+  // every boot failure in every volume has shown a blank screen — the exact
+  // outcome the function was added to end.
+  //
+  // Found from Howell's phone on a withheld volume: background, a copyright
+  // line and nothing else. Worth stating plainly because the instrument lied
+  // about itself — a guard that cannot prove it fires is not a guard, and this
+  // one read as working in every review of the file.
   const el = document.getElementById('detail-content');
   if (el) el.textContent = message;
+  const panel = document.getElementById('detail-panel');
+  if (panel) panel.classList.add('detail-panel--visible');
   console.error('[wheel]', message);
 }
 
@@ -1914,6 +1941,22 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const cr = document.getElementById('copyright-notice');
     if (cr) cr.style.opacity = '0';
   }
+  // THE THEME IS DRESSED BEFORE ANY DATA ARRIVES (Howell, 2026-08-12, from
+  // the phone: the dark volume "is a very light gray screen... give the dark
+  // page the same yellow parchment background that the working page loads").
+  //
+  // The palette comes from the volume's own config and never needed a
+  // manifest — `applyTheme` took one and ignored it. It used to run AFTER the
+  // chain was built, so any boot that ended early never reached it and the
+  // reader was left on the browser's default gray, with white copyright text
+  // on top of it and nothing legible at all.
+  //
+  // A volume going dark is a RULED state, not a failure (H-1, H-14), so it
+  // must arrive wearing the volume's own clothes. Dressing this early also
+  // removes a flash of gray from every ordinary boot, which is the same
+  // reasoning that already moved the wheel-hiding above the manifest load.
+  applyTheme(resolveVolumeId(volumeOverride, searchOverride));
+
   let { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
@@ -1961,9 +2004,25 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // what the structure means. With nothing offered, the pruner empties the
   // volume, so the rings and pyramid have no testaments, books, chapters or
   // verses to show — not a shell of names with no words behind them.
+  // WITHHELD IS NOT FAILED, and the difference has to be carried (Howell,
+  // 2026-08-12). A volume with nothing servable is in a RULED state — H-1's
+  // "going dark is correct behaviour", H-14's wall before the first increment
+  // — and the reader must not be shown a crash report for it. A volume that
+  // SHOULD have items and has none is a defect and must still shout. Only the
+  // pruner can tell the two apart, so it says so here rather than leaving the
+  // empty ring to be interpreted downstream.
+  let volumeWithheld = false;
   if (typeof config.pruneToOffered === 'function') {
+    volumeWithheld = dimensionBridge.offeredEditions().length === 0;
     manifest = config.pruneToOffered(manifest, dimensionBridge.offeredEditions());
     root = config.extractRoot(manifest) || root;
+  }
+  // The stylesheet strips the fills for this state. TOGGLE, never add: a
+  // gateway hop or an edition becoming servable must take the volume back out
+  // of the dark, and a class that only ever goes on would leave the next
+  // volume wearing the last one's emptiness.
+  if (document?.documentElement?.classList) {
+    document.documentElement.classList.toggle('volume-withheld', volumeWithheld);
   }
   const editionIsOffered = id => Boolean(id) && dimensionBridge.isServableEdition(id);
   const activeTranslation = () => {
@@ -1994,7 +2053,6 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const ln = translationsMeta?.names?.[lang] || {};
     // Replace CONTENTS, never the reference — the whole point.
     namesMap.books = ln.books || ln || {};
-    namesMap.sections = ln.sections || {};
     namesMap.testaments = ln.testaments || {};
     namesMap.bookAbbreviations = ln.book_abbreviations || {};
     // THE VOLUME TITLE (W-27, 2026-07-31): the door's name in the reader's
@@ -2058,7 +2116,18 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       ? (volumeConfigs[gatewayReturn.volume]?.gatewayReturnLabel || gatewayLabelFromItemId(gatewayReturn.itemId))
       : ''
   });
-  if (!items.length) throw new Error(`no items found for volume "${volume}"`);
+  // THE DARK STATE (Howell, 2026-08-12, specified from the phone): parchment,
+  // the crown of thorns in its purple circle at the corner, the focus ring
+  // band, and the black strokes around the magnifier and parent-button nodes.
+  // Nothing beyond that — no fill on any node, no labels.
+  //
+  // So a withheld volume takes the ORDINARY render path with an empty ring
+  // rather than a special screen. The instrument is present and holds
+  // nothing, which is the honest picture and needs no new drawing code: nodes
+  // come from items, and there are none, so no fill and no label can appear.
+  //
+  // An empty ring that was NOT withheld is still a defect and still throws.
+  if (!items.length && !volumeWithheld) throw new Error(`no items found for volume "${volume}"`);
 
   // Gateway transit (C.4): the outgoing screen was frozen at the tap
   // (colors inlined, input swallowed) and has covered its own pixels since.
@@ -2085,7 +2154,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   currentApp = null;
   currentVolumeId = volume;
   gatewayReturnContext = gatewayReturn;
-  applyTheme(manifest, volume);
+  applyTheme(volume);
 
   const adapter = adapterLoader.load(volume);
   let adapterNormalized = null;

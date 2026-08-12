@@ -8,11 +8,25 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '..');
 
+// `places` was here and is REMOVED (Howell, 2026-08-12: "places can be
+// removed as a volume name").
+//
+// It was the one entry that is also an ordinary English word of the trade, so
+// it policed prose rather than volume literals: it fired on a comment reading
+// "the only two places that touch that class", which is not a volume mention
+// by any reading. Every other term here — bible, catalog, calendar,
+// gutenberg, mmdm — names a thing and nothing else, which is what makes them
+// checkable without judgement.
+//
+// The lesson generalises past this list: a guard whose terms collide with
+// ordinary usage spends its credibility on false positives, and a guard
+// nobody believes gets exempted rather than obeyed. The vocabulary lint
+// beside this one already carries an EXEMPT map for exactly this reason, with
+// a written justification per entry.
 const forbiddenTerms = [
   'bible',
   'catalog',
   'calendar',
-  'places',
   'gutenberg',
   'mmdm'
 ];
