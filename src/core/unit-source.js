@@ -124,7 +124,44 @@ export function createUnitSource({ levels, editions, exists, base = '', version 
 // last unit migrates the descriptor answers instead — at which point one
 // function goes rather than six expressions.
 export function legacyTextFile(meta, fallback = '') {
-  return meta?._external_file || meta?.external_file || fallback;
+  const address = meta?._external_file || meta?.external_file || fallback;
+  return _substitution && address === _substitution.from ? _substitution.to : address;
+}
+
+// THE SPLICE, AND IT IS ONE PLACE BECAUSE OF THE WORK ABOVE (O-45, phase 1a).
+//
+// Six sites resolve a legacy unit's text address, and every one of them was
+// funnelled through `legacyTextFile` earlier in this phase — at the time that
+// looked like tidying six expressions into one. It was the splice point, and
+// this is what it bought: a migrated unit is substituted HERE, once, and all
+// six sites plus the read-ahead, the cache and the text resolver carry on
+// unchanged because none of them ever treats that string as anything but an
+// opaque key. Forty-one id-shape sites stay layout-blind, exactly as the
+// descriptor promised.
+//
+// THE SUBSTITUTION IS DECLARED, NEVER INFERRED (Howell's ruling (a)). Nothing
+// here derives the pairing from an id, a name or a count — the rig writes down
+// which legacy address the migrated unit stands in for, and this compares two
+// strings. That is the whole mechanism.
+//
+// IT IS SCAFFOLDING AND IT DIES WITH THE ROUTE. Phase 1b makes migrated units
+// real: they carry their own identity, the walk enumerates them from the chart,
+// and nothing stands in for anything. At that point this variable, both
+// functions below and `legacyTextFile` itself retire together — which is why
+// the rig lives in four lines here rather than spread across the callers.
+let _substitution = null;
+
+export function declareTextSubstitution(substitution) {
+  if (!substitution?.from || !substitution?.to) {
+    throw new Error('unit-source: a substitution needs both `from` (the legacy address) and `to` — an inferred join is exactly what ruling (a) forbids');
+  }
+  _substitution = { from: substitution.from, to: substitution.to };
+}
+
+// So a test can prove the un-rigged path is genuinely untouched, rather than
+// leaking state into whatever runs next.
+export function clearTextSubstitution() {
+  _substitution = null;
 }
 
 // THE LEGACY UNIT ID, read in one place instead of five (O-42, phase 1a).

@@ -856,9 +856,23 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
     return;
   }
   _verseCache.set(externalFile, { status: 'loading', items: [], rawVerses: null, waiters: [] });
-  const url = externalFile.startsWith('.') ? externalFile : `./${externalFile}`;
-  fetch(url)
-    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+
+  // A MIGRATED UNIT ARRIVES ALREADY RESOLVED (O-45, phase 1a).
+  //
+  // Its text was fetched per edition and converted before boot, so there is
+  // nothing to fetch here. What matters is that it rejoins the SAME path a
+  // line later: the items below are built by this code, from the real
+  // chapterItem, so their ids, their parentId and their meta come out
+  // identical to a legacy unit's. That identity is the acceptance test — an
+  // EMPTY reader-level diff — and it is bought by refusing to build items
+  // anywhere else, where they would drift.
+  const supplied = _suppliedPayloads.get(externalFile);
+  const arriving = supplied
+    ? Promise.resolve(supplied)
+    : fetch(externalFile.startsWith('.') ? externalFile : `./${externalFile}`)
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
+
+  arriving
     .then(data => {
       const bookKey = legacyUnitId(data, chapterItem.meta?.bookId || '');
       const chapterLabel = legacyOrdinal(data);
@@ -888,6 +902,26 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
       console.warn('[prefetchBibleVerses] failed to load', externalFile, err);
       _verseCache.set(externalFile, { status: 'error', items: [], rawVerses: null });
     });
+}
+
+// PRE-RESOLVED PAYLOADS, keyed exactly as a chapter file's path (O-45).
+//
+// The rig resolves a migrated unit's text before boot — N per-edition files,
+// converted to one record per address — and leaves the result here. The
+// loader above then takes it INSTEAD of fetching, and continues down the
+// identical path, so nothing downstream learns which layout answered.
+//
+// Supplying rather than pre-seeding the cache is the deliberate part. Seeding
+// would mean building the verse items here, away from the chapterItem, and
+// guessing at ids and parentId that the loader already knows how to produce.
+// That guess is precisely the class of gap O-45 was: two correct halves that
+// never met. This way there is one item-builder, not two.
+const _suppliedPayloads = new Map();
+
+export function supplyChapterPayload(cacheKey, payload) {
+  if (!cacheKey || !payload) return false;
+  _suppliedPayloads.set(cacheKey, payload);
+  return true;
 }
 
 // SEATING A MIGRATED UNIT'S TEXT INTO THE SAME CACHE (O-45, phase 1a).
