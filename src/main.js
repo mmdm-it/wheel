@@ -2004,7 +2004,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // what the structure means. With nothing offered, the pruner empties the
   // volume, so the rings and pyramid have no testaments, books, chapters or
   // verses to show — not a shell of names with no words behind them.
+  // WITHHELD IS NOT FAILED, and the difference has to be carried (Howell,
+  // 2026-08-12). A volume with nothing servable is in a RULED state — H-1's
+  // "going dark is correct behaviour", H-14's wall before the first increment
+  // — and the reader must not be shown a crash report for it. A volume that
+  // SHOULD have items and has none is a defect and must still shout. Only the
+  // pruner can tell the two apart, so it says so here rather than leaving the
+  // empty ring to be interpreted downstream.
+  let volumeWithheld = false;
   if (typeof config.pruneToOffered === 'function') {
+    volumeWithheld = dimensionBridge.offeredEditions().length === 0;
     manifest = config.pruneToOffered(manifest, dimensionBridge.offeredEditions());
     root = config.extractRoot(manifest) || root;
   }
@@ -2101,7 +2110,18 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       ? (volumeConfigs[gatewayReturn.volume]?.gatewayReturnLabel || gatewayLabelFromItemId(gatewayReturn.itemId))
       : ''
   });
-  if (!items.length) throw new Error(`no items found for volume "${volume}"`);
+  // THE DARK STATE (Howell, 2026-08-12, specified from the phone): parchment,
+  // the crown of thorns in its purple circle at the corner, the focus ring
+  // band, and the black strokes around the magnifier and parent-button nodes.
+  // Nothing beyond that — no fill on any node, no labels.
+  //
+  // So a withheld volume takes the ORDINARY render path with an empty ring
+  // rather than a special screen. The instrument is present and holds
+  // nothing, which is the honest picture and needs no new drawing code: nodes
+  // come from items, and there are none, so no fill and no label can appear.
+  //
+  // An empty ring that was NOT withheld is still a defect and still throws.
+  if (!items.length && !volumeWithheld) throw new Error(`no items found for volume "${volume}"`);
 
   // Gateway transit (C.4): the outgoing screen was frozen at the tap
   // (colors inlined, input swallowed) and has covered its own pixels since.
