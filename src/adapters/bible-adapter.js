@@ -349,7 +349,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   let bibleVerseContext = null;
   // Pre-populate verse context at startup so OUT navigation works immediately.
   if (initialLevel === 'verse' && options?.bookId && options?.chapterId) {
-    const chapterItems = getBibleChapters(manifest, { id: options.bookId }, namesMap, 'book');
+    const chapterItems = getBibleChapters(manifest, { id: options.bookId }, namesMap, 'book',
+      options?.activeEdition || options?.translation || null);
     const ch = chapterItems.find(c => c.meta?.chapterKey === String(options.chapterId));
     if (ch) {
       bibleVerseContext = {
@@ -556,8 +557,15 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // very seats the ring holds, so the two cannot disagree and a tap always
   // finds its verse. Without a chart it falls back to the file, unchanged.
   const verseItemsForChapter = chapterItem => {
+    if (!chapterItem) return [];
+    // THE SKY IS DRAWN FROM THE SEATS THE RING HOLDS (E3 of W-21), and under
+    // the wall there is no second source to fall back to.
+    //
+    // This used to ask whether a legacy chart had been fetched and, if not,
+    // read the container's file instead — the two-source arrangement that let
+    // the ring and the sky disagree, which is the defect E3 exists for. There
+    // is one source now: the same chain the ring is built from.
     const edition = options?.activeEdition || options?.translation || null;
-    if (!chart || !chapterItem) return getBibleVerseItems(chapterItem);
     const chain = verseChainItems || buildBibleVerseChain(manifest, { edition }).items;
     const wanted = chapterItem.id;
     const seats = [];
@@ -573,10 +581,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         meta: { ...it.meta, chapterId: chapterItem.id }
       });
     }
-    // A chapter the chart does not seat at all falls back rather than
-    // emptying the sky — the reader is never shown a blank where the data
-    // simply has not caught up.
-    return seats.length ? seats : getBibleVerseItems(chapterItem);
+    // A container the edition does not seat has no verses, and that is the
+    // honest answer rather than a blank to be filled from elsewhere.
+    return seats;
   };
 
   const parentHandler = ({ selected, app }) => {
@@ -837,6 +844,22 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
+      // THE CHAPTERS BINDING CARRIES THE EDITION (H-14). Containers are
+      // projected from the committed edition's chart (O-44), so a caller with
+      // no edition gets no chapters — which is exactly what the child pyramid
+      // showed on Howell's phone: Genesis in the magnifier and an empty sky
+      // beneath it.
+      //
+      // The host cannot supply the edition; it is volume-agnostic by design
+      // and this is a per-edition question. So the adapter binds it here,
+      // once, and every caller downstream — the pyramid's chapters, its
+      // book-level preview — asks the same bound function. Threading a fifth
+      // argument through each call site instead is how one of them stays
+      // wrong.
+      getBibleChapters: (m, selected, nm, mode) => getBibleChapters(
+        m || manifest, selected, nm || namesMap, mode,
+        options?.activeEdition || options?.translation || null
+      ),
       getBibleVerseItems: verseItemsForChapter,
       getBibleVerseCacheStatus,
       getBibleVerseChain: verseId => verseChain(verseId),

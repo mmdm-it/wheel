@@ -597,7 +597,8 @@ function buildBibleChain(manifest, options, namesMap) {
     const level = options.level || 'book';
     if (level === 'chapter') {
       const bookId = options.bookId;
-      const chapterItems = getBibleChapters(manifest, { id: bookId }, namesMap, 'book');
+      const chapterItems = getBibleChapters(manifest, { id: bookId }, namesMap, 'book',
+        options.activeEdition || options.translation || null);
       const targetKey = options.chapterId || '16';
       let chapterSelected = chapterItems.findIndex(ch => ch.meta?.chapterKey === targetKey);
       if (chapterSelected < 0) chapterSelected = 0;

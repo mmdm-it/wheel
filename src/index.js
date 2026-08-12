@@ -1346,7 +1346,26 @@ export function createApp({
     }
 
     // Suppress child pyramid when Detail Sector is shown or animating
-    const suppressPyramid = detailSectorShown || volumeLogo.animating;
+    // THE PYRAMID IS SUPPRESSED BY AN ARRIVING SECTOR, NOT A LEAVING ONE
+    // (Howell 2026-08-12: "the pyramid is empty").
+    //
+    // This read `volumeLogo.animating` in either direction, and the two
+    // directions mean opposite things. An EXPANDING sector is taking the
+    // screen, so the pyramid must go. A COLLAPSING one is giving it back, and
+    // the pyramid should already be arriving as it leaves — which is exactly
+    // the migration out of a leaf, and exactly where the sky stayed empty.
+    //
+    // MY FIRST REPAIR WAS WORSE THAN THE BUG and is recorded rather than
+    // quietly replaced: I had the collapse re-render on completion, matching
+    // the sibling call site. But that fires while the migration is still
+    // running — BEFORE setPrimaryItems commits — so `selected` was still the
+    // old leaf and the render re-opened the detail sector. Howell saw it
+    // enlarge on the second ascent, a thing that had never happened.
+    //
+    // The lesson is the one this file keeps teaching: a repaint scheduled on
+    // one animation's clock will read another animation's half-finished
+    // state. The fix is to make the GUARD correct, not to paint again later.
+    const suppressPyramid = detailSectorShown || (volumeLogo.animating && !volumeLogo.collapsing);
 
     // During rotation use the visible node currently closest to the magnifier so
     // the child pyramid refreshes live rather than waiting for a committed snap.
