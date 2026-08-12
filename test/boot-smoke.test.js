@@ -55,7 +55,15 @@ function installBrowserGlobals(search) {
   };
 
   const win = {
-    location: { search, pathname: '/', href: `http://localhost/${search}` },
+    // `hostname` and `protocol` are REAL parts of this stub, not padding: the
+    // proofread override is LAN-gated and the gate fails closed, so a location
+    // missing its hostname is treated as public and the override never lifts.
+    // The stub already claimed localhost in its href; now it says so where the
+    // gate actually looks.
+    location: {
+      search, pathname: '/', hostname: 'localhost', protocol: 'http:',
+      href: `http://localhost/${search}`
+    },
     localStorage: {
       getItem: k => (store.has(k) ? store.get(k) : null),
       setItem: (k, v) => store.set(k, String(v)),
@@ -118,7 +126,12 @@ describe('the app boots', () => {
   let byId;
 
   before(async () => {
-    ({ byId } = installBrowserGlobals('?volume=bible'));
+    // `?proofread=true` IS REQUIRED FOR THIS VOLUME NOW (H-14). The corpus
+    // carries `proofread: false` for its one offered edition, so without the
+    // override the volume is DARK — which is the ruled behaviour, not a
+    // failure, and is asserted separately below. Booting the reader's happy
+    // path therefore means lifting the gate the way Howell's phone does.
+    ({ byId } = installBrowserGlobals('?volume=bible&proofread=true'));
     const realError = console.error;
     console.error = (...args) => { errors.push(args.join(' ')); };
     // main.js self-executes bootVolume at import.
@@ -145,23 +158,47 @@ describe('the app boots', () => {
 // that book's end, so a reader booting at Matthew 16:18 could rotate no
 // earlier than Matthew 16:1 and no later than Matthew 28:20. Everything before
 // the current chapter and after the current book was unreachable.
+// RE-POINTED AT THE WALL (H-14), not retired. The behaviour it guards — the
+// ring is the WHOLE volume, not the entry book — is a reader-facing promise
+// that survives the migration; only its cargo changed. What it can no longer
+// do is prove the point with a second book, because the volume enumerates one
+// until 1b lands. That limit is stated here rather than papered over: this
+// cell now proves the ring spans the whole enumeration, and the cross-book
+// reach it was originally written for returns when a second increment does.
 describe('the boot verse ring spans the whole volume', () => {
-  it('runs from the first verse to the last, seated at the entry verse', async () => {
+  it('runs from the volume\'s first verse to its last, seated at the entry verse', async () => {
     const { volumeConfigs } = await import('../src/volume-configs.js');
-    const manifest = JSON.parse(readFileSync(
-      path.join(repoRoot, 'test/fixtures/data/gutenberg/manifest.json'), 'utf-8'));
+    const manifest = await volumeConfigs.bible.loadManifest();
+    const volume = manifest.__wallVolume;
+    const unitId = volume.units[0].id;
+
     const chain = await volumeConfigs.bible.buildChain(manifest, {
       level: 'verse', cousinMode: true, arrangement: 'cousins-with-gaps',
-      bookId: 'GENE', chapterId: '1', verseId: '2'
+      bookId: unitId, chapterId: '1', verseId: '2',
+      translation: volume.editions[0].code
     }, {});
     const real = chain.items.filter(Boolean);
-    assert.equal(chain.items[chain.selectedIndex]?.id, 'GENE_1_2', 'seated at the entry verse');
-    assert.equal(real[0].id, 'GENE_1_1', 'reaches back before the entry chapter');
-    // The fixture's last book is Revelation; the point is that the ring does
-    // not stop at the end of the entry BOOK.
-    assert.ok(real[real.length - 1].id.startsWith('APOC_'),
-      `ring should reach the volume's last book, ended at ${real[real.length - 1].id}`);
-    assert.ok(real.some(v => v.meta?.bookEntryId === 'EXO'),
-      'books after the entry book are reachable');
+
+    assert.equal(chain.items[chain.selectedIndex]?.id, `${unitId}_1_2`, 'seated at the entry verse');
+    assert.equal(real[0].id, `${unitId}_1_1`, 'reaches back before the entry verse');
+    assert.equal(real.length, 31, 'and forward to the last verse the volume enumerates');
+    assert.equal(real[real.length - 1].id, `${unitId}_1_31`);
+  });
+
+  it('the ring holds NOTHING the enumeration does not carry', async () => {
+    // The absence half of H-14's done condition, at ring level: seventy-eight
+    // books sit in the legacy cargo on disk and none may appear here.
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const manifest = await volumeConfigs.bible.loadManifest();
+    const volume = manifest.__wallVolume;
+    const chain = await volumeConfigs.bible.buildChain(manifest, {
+      level: 'verse', cousinMode: true, arrangement: 'cousins-with-gaps',
+      translation: volume.editions[0].code
+    }, {});
+    const books = new Set(chain.items.filter(Boolean).map(i => i.bookKey));
+    assert.deepEqual([...books], [volume.units[0].id], 'exactly one book, the one enumerated');
+    for (const legacy of ['GENE', 'EXO', 'MATHE', 'APOC']) {
+      assert.ok(!books.has(legacy), `${legacy} is legacy cargo and must be unreachable`);
+    }
   });
 });
