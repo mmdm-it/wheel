@@ -576,13 +576,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       ? selected
       : previousSeats.find(it => it
           && (it.meta?.chapterId === selected.id || it.chapterKey === selected.id));
-    if (!Array.isArray(anchor?.meta?.span)) return false;
+    // WHAT TRAVELS IS THE UTTERANCE (W-21). The reader's position is the
+    // stretch of scripture they are standing on, not a number naming it — so
+    // the crossing carries an opaque id rather than a book, a chapter key and
+    // an ordinal that could match in the wrong place.
+    if (!Array.isArray(anchor?.meta?.utterances) || !anchor.meta.utterances.length) return false;
 
-    const seatFor = it => {
-      if (!it || !Array.isArray(it.meta?.span) || !it.meta.span.length) return -1;
-      const [k, o] = it.meta.span[0];
-      return seatIndexForUtterance(rebuilt, it.bookKey, k, o);
-    };
+    const seatFor = it => seatIndexForUtterance(rebuilt, it?.meta?.utterances?.[0]);
 
     // THE NEAREST SCRIPTURE THIS EDITION ACTUALLY HOLDS (Howell from the
     // phone, 2026-08-03). This used to give up when the new artifact had no
