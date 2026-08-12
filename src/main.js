@@ -1283,7 +1283,7 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
   return { volume: resolvedVolume, config, manifest, root, options, supplemental };
 }
 
-function applyTheme(manifest, volume) {
+function applyTheme(volume) {
   const theme = volumeConfigs[volume]?.theme || volume;
   const root = document.documentElement;
   const active = volumeConfigs[volume]?.palette || {
@@ -1927,6 +1927,22 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const cr = document.getElementById('copyright-notice');
     if (cr) cr.style.opacity = '0';
   }
+  // THE THEME IS DRESSED BEFORE ANY DATA ARRIVES (Howell, 2026-08-12, from
+  // the phone: the dark volume "is a very light gray screen... give the dark
+  // page the same yellow parchment background that the working page loads").
+  //
+  // The palette comes from the volume's own config and never needed a
+  // manifest — `applyTheme` took one and ignored it. It used to run AFTER the
+  // chain was built, so any boot that ended early never reached it and the
+  // reader was left on the browser's default gray, with white copyright text
+  // on top of it and nothing legible at all.
+  //
+  // A volume going dark is a RULED state, not a failure (H-1, H-14), so it
+  // must arrive wearing the volume's own clothes. Dressing this early also
+  // removes a flash of gray from every ordinary boot, which is the same
+  // reasoning that already moved the wheel-hiding above the manifest load.
+  applyTheme(resolveVolumeId(volumeOverride, searchOverride));
+
   let { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   const translationsMeta = supplemental?.translationsMeta || null;
@@ -2098,7 +2114,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   currentApp = null;
   currentVolumeId = volume;
   gatewayReturnContext = gatewayReturn;
-  applyTheme(manifest, volume);
+  applyTheme(volume);
 
   const adapter = adapterLoader.load(volume);
   let adapterNormalized = null;
