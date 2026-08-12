@@ -156,54 +156,24 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
  * Item shape matches getBibleChapters(), so descent, ascent and the
  * chapter prefetch all keep working on ids they already understand.
  */
-export function buildBibleChapterChain(manifest, { initialChapterId = null, namesMap = null, seats = null } = {}) {
-  const bible = manifest?.Gutenberg_Bible;
-  if (!bible?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
-
-  // THE CHAPTERS RING FOLLOWS THE EDITION (E3 of W-21). Given the active
-  // artifact's expanded seats, the ring holds the chapters that artifact
-  // actually has — collapsed from those very seats, so the two rings cannot
-  // drift apart. Without seats (no chart generated yet) it walks the spine,
-  // which is what every edition did before the charts existed.
-  const fromSeats = seats ? chaptersFromSeats(seats) : null;
-  if (fromSeats) return weaveChapters(fromSeats, initialChapterId);
-
-  const sorted = [];
-  Object.entries(bible.testaments).sort(bySortNumber).forEach(([testamentKey, testament]) => {
-    Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionKey, section]) => {
-      Object.entries(section?.books || {}).sort(bySortNumber).forEach(([bookId, book]) => {
-        Object.entries(book?.chapters || {}).sort(bySortNumber).forEach(([chapterKey, chapterVal]) => {
-          const chapterNum = Number.parseInt(chapterKey, 10);
-          // The chapter carries its NUMBER; the numeral system is chosen at
-          // render from the reader's own tongue (toTraditionNumeral). The
-          // wish left in this comment — "one source of truth for the numeral
-          // form would be better still" — is now granted, and it had to be:
-          // three sites baked Roman independently, so a Greek reader met
-          // Latin numerals under a Greek book name.
-          const label = Number.isFinite(chapterNum)
-            ? String(chapterNum)
-            : (namesMap?.sections?.[chapterKey] || chapterKey);
-          sorted.push({
-            id: chapterVal?.id || `${bookId}:${chapterKey}`,
-            name: label,
-            level: 'chapter',
-            parentId: bookId,
-            bookKey: bookId,
-            testamentKey: testamentKey,
-            meta: {
-              bookId,
-              chapterKey,
-              sectionId: sectionKey,
-              testamentId: testamentKey,
-              externalFile: legacyTextFile(chapterVal, `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`)
-            }
-          });
-        });
-      });
-    });
-  });
-
-  return weaveChapters(sorted, initialChapterId);
+export function buildBibleChapterChain(manifest, { initialChapterId = null, edition = null, seats = null } = {}) {
+  // THE CHAPTERS RING IS COLLAPSED FROM THE SEATS (E3 of W-21), and under the
+  // wall that is the ONLY way it is built.
+  //
+  // It used to have a second path: walk the manifest's stored chapters when
+  // no chart had been generated. That path was the whole reason the two rings
+  // could disagree — the chapters ring showing what the SPINE holds while the
+  // verse ring showed what the EDITION holds — and E3 exists because they
+  // did, offering a Greek reader chapters that edition has never had.
+  //
+  // H-11 removes the choice rather than the bug: chapters are not stored, so
+  // there is nothing else to walk. One ring is derived from the other by
+  // construction, which is what E3 was reaching for.
+  const source = seats
+    || (manifest?.__wallVolume ? expandVolumeSeats(manifest.__wallVolume, edition) : null);
+  const fromSeats = source ? chaptersFromSeats(source) : null;
+  if (!fromSeats) return { items: [], selectedIndex: 0, preserveOrder: true };
+  return weaveChapters(fromSeats, initialChapterId);
 }
 
 function weaveChapters(sorted, initialChapterId) {

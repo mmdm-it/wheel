@@ -132,14 +132,80 @@ describe('day cousin chain (thumb doctrine)', () => {
   });
 });
 
+// ONE SYNTHETIC WALL VOLUME, shared by both blocks below: the grammar needs
+// boundaries the real cargo will not have until 1b lands.
+const wallManifest = (() => {
+  const seatsFor = (unit, label, n, base) => ({
+    groups: [{ label, from: base + 1, to: base + n }],
+    seats: Array.from({ length: n }, (_, i) => ({
+      label: String(i + 1), utterances: [`${unit}-u${base + i + 1}`]
+    }))
+  });
+  // ALPH has two containers (a chapter crossing), BETH follows it in the
+  // same testament (a book crossing), GAMM sits in the second (a testament
+  // crossing). Every rank of the ladder is present exactly once.
+  const units = {
+    ALPH: { leaves: 4, testament: 'T1' },
+    BETH: { leaves: 2, testament: 'T1' },
+    GAMM: { leaves: 2, testament: 'T2' }
+  };
+  const charts = {
+    'ALPH ED': {
+      groups: [{ label: '1', from: 1, to: 2 }, { label: '2', from: 3, to: 4 }],
+      seats: [
+        { label: '1', utterances: ['ALPH-u1'] }, { label: '2', utterances: ['ALPH-u2'] },
+        { label: '1', utterances: ['ALPH-u3'] }, { label: '2', utterances: ['ALPH-u4'] }
+      ]
+    },
+    'BETH ED': seatsFor('BETH', '1', 2, 0),
+    'GAMM ED': seatsFor('GAMM', '1', 2, 0)
+  };
+  const spines = Object.fromEntries(Object.entries(units).map(([id, u]) => [
+    id, { utterances: Array.from({ length: u.leaves }, (_, i) => `${id}-u${i + 1}`) }
+  ]));
+  const book = (id, order) => ({ id, leaves: units[id].leaves, order, testamentId: units[id].testament });
+  const volume = {
+    testaments: [
+      { id: 'T1', order: 0, books: [book('ALPH', 0), book('BETH', 1)] },
+      { id: 'T2', order: 1, books: [book('GAMM', 0)] }
+    ],
+    units: [book('ALPH', 0), book('BETH', 1), book('GAMM', 0)],
+    editions: [{ code: 'ED' }],
+    spineFor: id => spines[id] || null,
+    chartFor: (id, ed) => charts[`${id} ${ed}`] || null,
+    toRoot: () => ({
+      display_config: {},
+      testaments: {
+        T1: { sort_number: 0, books: { ALPH: { sort_number: 0 }, BETH: { sort_number: 1 } } },
+        T2: { sort_number: 1, books: { GAMM: { sort_number: 0 } } }
+      }
+    })
+  };
+  const m = { Gutenberg_Bible: volume.toRoot() };
+  Object.defineProperty(m, '__wallVolume', { value: volume, enumerable: false });
+  return m;
+})();
+
 describe('the continuous verse chain', () => {
   // Howell 2026-07-20: "the Bible should have cousin gaps and second
   // cousin gaps just like the calendar." Before this, the verse ring held
   // ONE chapter — reaching the end of Genesis 1 meant backing out to the
   // chapters ring to enter Genesis 2.
-  const bibleManifest = JSON.parse(readFileSync(
-    path.resolve(__dirname, '../test/fixtures/data/gutenberg/manifest.json'), 'utf-8'));
-  const { items } = buildBibleVerseChain(bibleManifest, {});
+  //
+  // RE-POINTED AT THE WALL (H-14) AND ONTO A SYNTHETIC VOLUME, which is the
+  // interesting part. These cells need a chapter crossing, a book crossing
+  // and a testament crossing to exercise the 2/4/6 ladder — and the wall's
+  // real cargo is ONE book with ONE chapter until 1b lands, so it cannot
+  // produce a single one of those boundaries.
+  //
+  // Two different questions, and they want two different fixtures: the
+  // Genesis-1 volume proves the real data PATH end to end, and this
+  // synthetic volume proves the GRAMMAR. Testing the grammar against the
+  // real fixture would have quietly reduced these cells to "one chapter
+  // still works", which is how a suite keeps its count while losing its
+  // meaning.
+
+  const { items } = buildBibleVerseChain(wallManifest, { edition: 'ED' });
   const at = id => items.findIndex(x => x && x.id === id);
   const gapBefore = id => {
     let run = 0;
@@ -149,46 +215,53 @@ describe('the continuous verse chain', () => {
 
   it('runs unbroken from the first verse to the last', () => {
     const verses = items.filter(Boolean);
-    assert.equal(verses[0].id, 'GENE_1_1', 'it begins at the beginning');
-    assert.equal(verses[verses.length - 1].id, 'APOC_22_21', 'and ends at the end');
-    assert.ok(verses.length > 100, `the whole volume rides the ring (${verses.length})`);
+    assert.equal(verses[0].id, 'ALPH_1_1', 'it begins at the beginning');
+    assert.equal(verses[verses.length - 1].id, 'GAMM_1_2', 'and ends at the end');
+    assert.equal(verses.length, 8, 'every seat in the volume rides the ring');
   });
 
   it('wears the cousin ladder at every kind of boundary', () => {
-    assert.equal(gapBefore('GENE_1_2'), 0, 'no gap inside a chapter');
-    assert.equal(gapBefore('GENE_2_1'), 2, 'a chapter crossing is a cousin gap');
-    assert.equal(gapBefore('EXO_1_1'), 4, 'a book crossing is a second cousin');
-    assert.equal(gapBefore('MATHE_1_1'), 6, 'a testament crossing is a third cousin');
+    assert.equal(gapBefore('ALPH_1_2'), 0, 'no gap inside a chapter');
+    assert.equal(gapBefore('ALPH_2_1'), 2, 'a chapter crossing is a cousin gap');
+    assert.equal(gapBefore('BETH_1_1'), 4, 'a book crossing is a second cousin');
+    assert.equal(gapBefore('GAMM_1_1'), 6, 'a testament crossing is a third cousin');
   });
 
   it('reads on past the end of a chapter — the whole point', () => {
-    // The reader finishing Genesis 1:31 must find Genesis 2:1 ahead of
-    // them in the chain, with only empty links between.
-    const from = at('GENE_1_31');
+    // The reader finishing a chapter's last verse must find the next
+    // chapter's first ahead of them, with only empty links between.
+    const from = at('ALPH_1_2');
     const next = items.slice(from + 1).find(Boolean);
-    assert.equal(next.id, 'GENE_2_1', 'the next verse is simply next');
-    assert.equal(at('GENE_2_1') - from, 3, 'two empty links, then the new chapter');
+    assert.equal(next.id, 'ALPH_2_1', 'the next verse is simply next');
+    assert.equal(at('ALPH_2_1') - from, 3, 'two empty links, then the new chapter');
   });
 
-  it('names verses exactly as a loaded chapter does', () => {
-    // The descent taps a verse rendered from its chapter file and must
-    // find that same id seated in this chain.
-    const v = items[at('IOHA_3_16')];
-    assert.ok(v, 'a famous verse is present');
-    // Chapters are Roman, verses Arabic and BARE (Howell 2026-07-20) —
-    // the parent button carries book and chapter, live, so the ring says
-    // only which verse.
-    assert.equal(v.name, '16');
+  it('names verses bare, and knows where its words live', () => {
+    const v = items[at('BETH_1_2')];
+    assert.ok(v, 'the seat is present');
+    // Chapters are Roman, verses Arabic and BARE (Howell 2026-07-20) — the
+    // parent button carries book and chapter, live, so the ring says only
+    // which verse.
+    assert.equal(v.name, '2');
     assert.equal(v.level, 'verse');
-    assert.equal(v.meta.verseKey, '16');
-    assert.ok(v.meta.externalFile.endsWith('IOHA/003.json'), 'and knows where its words live');
+    assert.equal(v.meta.verseKey, '2');
+    // Under H-11 the text address is the UNIT's id: containers ceased to be a
+    // storage level, so there is no per-chapter file left to name.
+    assert.equal(v.meta.externalFile, 'BETH');
   });
 
   it('carries enough context to ascend from wherever reading led', () => {
-    const v = items[at('EXO_3_4')];
-    assert.equal(v.meta.bookEntryId, 'EXO');
-    assert.equal(v.meta.chapterId, 'EXO:3');
-    assert.equal(v.meta.testamentId, 'Vetus_Testamentum');
+    const v = items[at('GAMM_1_1')];
+    assert.equal(v.meta.bookEntryId, 'GAMM');
+    assert.equal(v.meta.chapterId, 'GAMM/1');
+    assert.equal(v.meta.testamentId, 'T2');
+  });
+
+  it('THE READER STANDS ON AN UTTERANCE, not on a number (W-21)', () => {
+    // The wall's addition to this block. Every seat names the utterances it
+    // holds, which is what makes a rotation exact where seats fuse — and it
+    // is the identity a coordinate scheme could only approximate.
+    assert.deepEqual(items[at('ALPH_2_1')].meta.utterances, ['ALPH-u3']);
   });
 });
 
@@ -198,8 +271,8 @@ describe('the sweep works at every level, not just verses', () => {
   // to work with chapters and books". Before this, books stopped at the
   // end of their testament (and carried no gaps at all despite the
   // builder's name) and chapters covered a single book.
-  const bibleManifest = JSON.parse(readFileSync(
-    path.resolve(__dirname, '../test/fixtures/data/gutenberg/manifest.json'), 'utf-8'));
+  // The same synthetic wall volume as the verse block. The legacy fixture
+  // manifest it used to read is cargo the engine can no longer open (H-14).
   const gapBefore = (items, id) => {
     const i = items.findIndex(x => x && x.id === id);
     let run = 0;
@@ -208,36 +281,36 @@ describe('the sweep works at every level, not just verses', () => {
   };
 
   it('the BOOKS ring runs the whole volume, gapping at the testament', () => {
-    const { items } = buildBibleBookCousinChain(bibleManifest, {});
+    const { items } = buildBibleBookCousinChain(wallManifest, {});
     const books = items.filter(Boolean);
-    assert.equal(books.length, 5, 'every book rides the ring (real 67 validated in cargo)');
-    assert.equal(books[0].id, 'GENE');
-    assert.equal(books[books.length - 1].id, 'APOC', 'the sweep reaches the end');
-    assert.equal(gapBefore(items, 'EXO'), 0, 'no gap between books of one testament');
-    assert.equal(gapBefore(items, 'MATHE'), 2, 'the testament crossing is a cousin gap');
+    assert.equal(books.length, 3, 'every book rides the ring');
+    assert.equal(books[0].id, 'ALPH');
+    assert.equal(books[books.length - 1].id, 'GAMM', 'the sweep reaches the end');
+    assert.equal(gapBefore(items, 'BETH'), 0, 'no gap between books of one testament');
+    assert.equal(gapBefore(items, 'GAMM'), 2, 'the testament crossing is a cousin gap');
   });
 
   it('the CHAPTERS ring runs the whole volume, book then testament', () => {
-    const { items } = buildBibleChapterChain(bibleManifest, {});
+    const { items } = buildBibleChapterChain(wallManifest, { edition: 'ED' });
     const chapters = items.filter(Boolean);
-    assert.equal(chapters.length, 80, 'real 1215 validated in cargo');
-    assert.equal(chapters[0].id, 'GENE:1');
-    assert.equal(chapters[chapters.length - 1].id, 'APOC:22');
-    assert.equal(gapBefore(items, 'GENE:2'), 0, 'no gap inside a book');
-    assert.equal(gapBefore(items, 'EXO:1'), 2, 'a book crossing is a cousin gap');
-    assert.equal(gapBefore(items, 'MATHE:1'), 4, 'a testament crossing is a second cousin');
+    assert.equal(chapters.length, 4, 'every container the editions declare');
+    assert.equal(chapters[0].id, 'ALPH/1');
+    assert.equal(chapters[chapters.length - 1].id, 'GAMM/1');
+    assert.equal(gapBefore(items, 'ALPH/2'), 0, 'no gap inside a book');
+    assert.equal(gapBefore(items, 'BETH/1'), 2, 'a book crossing is a cousin gap');
+    assert.equal(gapBefore(items, 'GAMM/1'), 4, 'a testament crossing is a second cousin');
   });
 
   it('each level gaps one rank shallower than the level below it', () => {
     // The grammar the timeline established: the gap rank is how far above
     // the ring the boundary sits. Verses see chapter/book/testament as
     // 2/4/6; chapters see book/testament as 2/4; books see testament as 2.
-    const verses = buildBibleVerseChain(bibleManifest, {}).items;
-    const chapters = buildBibleChapterChain(bibleManifest, {}).items;
-    const books = buildBibleBookCousinChain(bibleManifest, {}).items;
-    assert.equal(gapBefore(verses, 'MATHE_1_1'), 6);
-    assert.equal(gapBefore(chapters, 'MATHE:1'), 4);
-    assert.equal(gapBefore(books, 'MATHE'), 2);
+    const verses = buildBibleVerseChain(wallManifest, { edition: 'ED' }).items;
+    const chapters = buildBibleChapterChain(wallManifest, { edition: 'ED' }).items;
+    const books = buildBibleBookCousinChain(wallManifest, {}).items;
+    assert.equal(gapBefore(verses, 'GAMM_1_1'), 6);
+    assert.equal(gapBefore(chapters, 'GAMM/1'), 4);
+    assert.equal(gapBefore(books, 'GAMM'), 2);
   });
 
   it('chapters in the ring carry the NUMBER; the numerals are worn at render', () => {
@@ -245,11 +318,11 @@ describe('the sweep works at every level, not just verses', () => {
     // the label formatter nothing to convert — a Greek reader got Latin
     // numerals under a Greek book name. The number travels; the tradition's
     // letters are put on where the reader's language is known.
-    const { items } = buildBibleChapterChain(bibleManifest, {});
+    const { items } = buildBibleChapterChain(wallManifest, { edition: 'ED' });
     const byId = id => items.find(x => x && x.id === id);
-    assert.equal(byId('GENE:1').name, '1');
-    assert.equal(byId('APOC:22').name, '22');
-    assert.equal(byId('MATHE:1').meta.testamentId, 'Novum_Testamentum', 'and know where they sit');
+    assert.equal(byId('ALPH/1').name, '1');
+    assert.equal(byId('ALPH/2').name, '2');
+    assert.equal(byId('GAMM/1').meta.testamentId, 'T2', 'and know where they sit');
   });
 });
 
