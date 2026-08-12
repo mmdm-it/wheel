@@ -19,14 +19,28 @@ const at = rel => path.join(root, BASE, VERSION, rel);
 const read = rel => JSON.parse(readFileSync(at(rel), 'utf-8'));
 
 const volume = read('volume.json');
-const unitId = volume.books[0].id;
+const testament = volume.testaments[0];
+const section = testament.sections[0];
+const unitId = section.books[0].id;
 
 describe('the H-11 fixture — shape', () => {
   it('carries one book, opaque, with its leaf count', () => {
-    assert.equal(volume.books.length, 1);
-    assert.equal(volume.books[0].leaves, 31, 'Genesis 1 has 31 verses');
+    assert.equal(section.books.length, 1);
+    assert.equal(section.books[0].leaves, 31, 'Genesis 1 has 31 verses');
     assert.doesNotMatch(unitId, /GEN|genesis/i,
       'the filesystem must stop spelling out what a thing IS (H-11)');
+  });
+
+  it('CARRIES THE GROUPING — the reader keeps its six levels (Howell, 2026-08-12)', () => {
+    // The wall must not quietly flatten the reader's world from six levels to
+    // four. With one book every group has one child, which is degenerate and
+    // correct, and it is the shape 79 books will hang from.
+    assert.equal(volume.testaments.length, 1);
+    assert.equal(testament.sections.length, 1);
+    for (const id of [testament.id, section.id]) {
+      assert.doesNotMatch(id, /Testamentum|Pentateuch/i,
+        'the grouping ids go opaque like every other id (H-11 item 2)');
+    }
   });
 
   it('the spine holds the order, and NOTHING else does', () => {
@@ -60,6 +74,45 @@ describe('the H-11 fixture — shape', () => {
     const raw = JSON.stringify([volume, read(`spine/${unitId}.json`), read(`text/DRA/${unitId}.json`)]);
     for (const dead of ['chapter_id', 'book_key', 'sequence', '_external_file', 'chapter_in']) {
       assert.doesNotMatch(raw, new RegExp(dead), `${dead} retires under H-11`);
+    }
+  });
+});
+
+// THE WALL (H-14). `volume.json` is the SOLE enumeration — not the first
+// source consulted, the only one. These cells are what make that word mean
+// something, and the Vulgate is the instrument: it is present on disk, fully
+// formed, and must be unreachable.
+describe('the H-11 fixture — volume.json is the sole enumeration', () => {
+  it('offers Douay-Rheims and NOTHING else (Howell, 2026-08-12)', () => {
+    assert.deepEqual(volume.editions.map(e => e.code), ['DRA']);
+  });
+
+  it('THE VULGATE IS ON DISK AND NOT ENUMERATED — present, and invisible', () => {
+    // If a reader can ever reach VUL, it consulted something other than
+    // volume.json, and "sole" was never true. An enumeration is only sole if
+    // something genuinely present is provably out of reach.
+    assert.ok(existsSync(at(`text/VUL/${unitId}.json`)), 'the file is really there');
+    assert.ok(!volume.editions.some(e => e.code === 'VUL'), 'and the volume does not offer it');
+  });
+
+  it('carries servability itself — the legacy registry is behind the wall', () => {
+    // Under H-14 the engine cannot read translations.json, so proofread state
+    // has to live here. `false` is the corpus's own value for DRA, and it is
+    // what makes the ruled behaviour true: dark without ?proofread=true.
+    const dra = volume.editions.find(e => e.code === 'DRA');
+    assert.equal(dra.proofread, false, 'DRA is not proofread in the corpus; the fixture must not claim it is');
+    assert.equal(dra.language, 'english');
+  });
+
+  it('names are QUOTATIONS, carried per language, never manufactured (H-2)', () => {
+    const names = read('names/english.json');
+    assert.equal(names.books[unitId], 'Genesis');
+    assert.equal(names.testaments[testament.id], 'Old Testament');
+    assert.equal(names.sections[section.id], 'Pentateuch');
+    // Every enumerated id has a name, or the reader meets a raw opaque id.
+    for (const id of [unitId, testament.id, section.id]) {
+      const found = names.books[id] || names.testaments[id] || names.sections[id];
+      assert.ok(found, `${id} is enumerated with no name in any category`);
     }
   });
 });

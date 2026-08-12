@@ -16,9 +16,25 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 
 const SOURCE = '/media/howell/dev_workspace/wheel-cargo/gutenberg/chapters/GENE/001.json';
+const MANIFEST = '/media/howell/dev_workspace/wheel-cargo/gutenberg/manifest.json';
+const REGISTRY = '/media/howell/dev_workspace/wheel-cargo/gutenberg/translations.json';
 const OUT = new URL('../test/fixtures/h11/gutenberg', import.meta.url).pathname;
-const GRANTED = ['VUL', 'DRA'];
 const VERSION = 'v1';
+
+// WHAT IS ON DISK AND WHAT IS OFFERED ARE NOW DIFFERENT QUESTIONS (H-14).
+//
+// Both editions are granted (H-1, H-5) and both are written, because the pair
+// is what exercises the per-edition machinery. But under the wall
+// `volume.json` is the SOLE enumeration, and Howell ruled 1a's done condition
+// as Douay-Rheims alone — so only DRA is enumerated, and the Vulgate sits on
+// disk unreachable.
+//
+// That gap is deliberate and it is a TEST, not an oversight: a reader that
+// can reach VUL is a reader consulting something other than volume.json, and
+// the suite asserts it cannot. An enumeration is only "sole" if something
+// present is provably invisible.
+const GRANTED = ['VUL', 'DRA'];
+const OFFERED = ['DRA'];
 
 // OPAQUE IDS, AND DELIBERATELY ADVERSARIAL TO THE OLD ASSUMPTION.
 //
@@ -43,6 +59,28 @@ const ordinals = Object.keys(verses)
 const unitId = opaque('b', 'GENE');
 const utterances = ordinals.map(n => opaque('u', n));
 
+// THE GROUPING IS REAL, READ FROM THE CORPUS, NEVER INVENTED (Howell ruled
+// 2026-08-12: volume.json carries it). Genesis sits in a testament and a
+// section today, and the wall must not quietly flatten the reader's world
+// from six levels to four — the feel is frozen for the whole of phase 1.
+//
+// Their ids go OPAQUE like every other id (H-11 item 2). The corpus spells
+// them `Vetus_Testamentum` and `Pentateuchus`, which is exactly the
+// filesystem writing down what a thing IS.
+const manifest = JSON.parse(readFileSync(MANIFEST, 'utf-8'));
+const registry = JSON.parse(readFileSync(REGISTRY, 'utf-8'));
+
+let placement = null;
+for (const [testamentKey, testament] of Object.entries(manifest.Gutenberg_Bible?.testaments || {})) {
+  for (const [sectionKey, section] of Object.entries(testament.sections || {})) {
+    if (section.books?.GENE) placement = { testamentKey, sectionKey };
+  }
+}
+if (!placement) throw new Error('the corpus does not place GENE — the fixture cannot invent a home for it');
+
+const testamentId = opaque('t', placement.testamentKey);
+const sectionId = opaque('s', placement.sectionKey);
+
 const write = (rel, data) => {
   const file = path.join(OUT, VERSION, rel);
   mkdirSync(path.dirname(file), { recursive: true });
@@ -52,12 +90,56 @@ const write = (rel, data) => {
 
 // volume.json — the slim boot. No chapter level anywhere: chapters are the
 // render-time projection H-11 says they are, so nothing here stores one.
+// volume.json — THE SOLE ENUMERATION (H-14), and it grows as increments land.
+// Nothing else says what the volume contains: not a manifest, not a directory
+// listing, not an index derived from either. Today it holds one book, which is
+// the whole of the Bible the engine can see.
+//
+// The grouping is carried here rather than derived, so the reader keeps the
+// six levels it has always had. With one book every group has one child, which
+// is degenerate but correct — and it is the shape 79 books will hang from.
 write('volume.json', {
   _schema_version: '4.0',
-  _note: 'H-11 layout fixture. Genesis 1 only, Douay-Rheims and Vulgate only (H-1 grant).',
-  books: [{ id: unitId, leaves: utterances.length }],
-  editions: GRANTED.map(code => ({ code, hasChart: true, proofread: true }))
+  _note: 'H-11 layout fixture under the H-14 wall. Genesis 1, Douay-Rheims offered.',
+  testaments: [{
+    id: testamentId,
+    sections: [{
+      id: sectionId,
+      books: [{ id: unitId, leaves: utterances.length }]
+    }]
+  }],
+  // SERVABILITY LIVES HERE NOW, because the wall forbids reading the legacy
+  // registry. `proofread: false` is the corpus's own value for DRA, verified
+  // rather than assumed — and it is what makes H-14's stated behaviour true:
+  // the volume is dark without `?proofread=true` and offers Genesis 1 with it.
+  editions: OFFERED.map(code => ({
+    code,
+    hasChart: true,
+    proofread: registry.translations?.[code]?.proofread === true,
+    language: registry.translations?.[code]?.language || 'english',
+    direction: registry.translations?.[code]?.direction || 'ltr',
+    name: registry.translations?.[code]?.name || code
+  }))
 });
+
+// names/{lang}.json — the display names, in the reader's tongue (H-11 item 1).
+// Under the wall these cannot come from the legacy registry, so the fixture
+// carries its own. Every name here is a QUOTATION from the corpus (H-2); none
+// is manufactured, and an id with no name would display unnamed rather than
+// wearing its own id.
+for (const code of OFFERED) {
+  const lang = registry.translations?.[code]?.language || 'english';
+  const names = registry.names?.[lang] || {};
+  write(`names/${lang}.json`, {
+    testaments: { [testamentId]: names.testaments?.[placement.testamentKey] || null },
+    sections: { [sectionId]: names.sections?.[placement.sectionKey] || null },
+    books: { [unitId]: names.books?.GENE || null },
+    // Latin short forms are the volume's own tongue and the near-universal
+    // citation; they stand in for wayfinding until each language carries its
+    // own, exactly as the engine already treats them.
+    book_abbreviations: { [unitId]: registry.names?.latin?.book_abbreviations?.GENE || null }
+  });
+}
 
 // spine/{unitId}.json — the ORDER, which is the only place order lives.
 write(`spine/${unitId}.json`, {
@@ -107,7 +189,10 @@ for (const code of GRANTED) {
 }
 
 console.log(`fixture: ${OUT}/${VERSION}`);
-console.log(`  book ${unitId} · ${utterances.length} utterances · editions ${GRANTED.join(', ')}`);
+console.log(`  book ${unitId} · ${utterances.length} utterances`);
+console.log(`  on disk:  ${GRANTED.join(', ')}`);
+console.log(`  OFFERED:  ${OFFERED.join(', ')}  (volume.json is the sole enumeration — H-14)`);
+console.log(`  grouping: ${testamentId} › ${sectionId} › ${unitId}`);
 const alphabetical = [...utterances].sort();
 const same = alphabetical.every((id, i) => id === utterances[i]);
 console.log(`  alphabetical order matches spine order: ${same}`
