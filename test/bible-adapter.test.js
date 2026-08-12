@@ -107,6 +107,36 @@ describe('bible adapter', () => {
     assert.deepEqual(chapters.map(c => c.name), ['1', '2']);
     assert.equal(chapters[0].parentId, 'ALPH');
   });
+
+  // AND ONE LEVEL DOWN, which is where the same defect was waiting.
+  //
+  // Howell found the empty pyramid twice: first under a book, then — after
+  // the first fix — under a chapter. Same shape, one level apart, because the
+  // suite tested the HELPERS directly and never the descent the host walks.
+  //
+  // So this walks it: book to containers to seats, entirely through the
+  // bindings, with no edition supplied by the caller at any step. Two cells
+  // would have caught one defect each; this catches the class.
+  it('the descent reaches the seats — book to containers to verses, through the bindings', () => {
+    const wall = makeWallManifest();
+    const h = bibleAdapter.createHandlers({
+      manifest: wall,
+      namesMap: { locale: 'latin', books: { ALPH: 'Alpha' } },
+      options: { activeEdition: 'ED', translation: 'ED' }
+    });
+
+    const containers = h.layoutBindings.getBibleChapters(wall, { id: 'ALPH' }, null, 'book');
+    assert.equal(containers.length, 2, 'the book offers its containers');
+
+    const seats = h.layoutBindings.getBibleVerseItems(containers[0]);
+    assert.equal(seats.length, 2, 'and a container offers its seats');
+    assert.deepEqual(seats.map(v => v.name), ['1', '2']);
+    assert.equal(seats[0].parentId, containers[0].id,
+      'the seats hang from the container the reader is standing on');
+    // The sky is drawn from the SAME chain as the ring (E3), so a seat here
+    // carries the utterance identity a rotation travels on (W-21).
+    assert.deepEqual(seats[0].meta.utterances, ['ALPH-u1']);
+  });
 });
 
 
