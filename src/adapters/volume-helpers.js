@@ -771,24 +771,31 @@ export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
   return { items, selectedIndex: selectIndexIn(items, resolvedCenterId), preserveOrder: true };
 }
 
+// BOOKS HANG FROM TESTAMENTS, WITH NOTHING BETWEEN (H-14, Howell 2026-08-12).
+//
+// This walked testaments → SECTIONS → books, and the section was never a
+// level the reader could stand on: the engine builds no ring for one and a
+// book has always ascended straight to its testament. The section survived
+// here only as the book's `parentName`, which is why removing it is visible
+// at all — the parent button now says the testament's name, which is the
+// level the reader actually returns to.
 export function buildBibleBooks(manifest, namesMap = {}) {
   const testaments = manifest?.Gutenberg_Bible?.testaments;
   if (!testaments) return [];
   const bookNames = namesMap.books || namesMap;
-  const sectionNames = namesMap.sections || {};
+  const testamentNames = namesMap.testaments || {};
   const items = [];
   Object.entries(testaments).forEach(([testamentId, testament]) => {
-    const sections = testament?.sections || {};
-    Object.entries(sections).forEach(([sectionId, section]) => {
-      const books = section?.books || {};
-      Object.entries(books).forEach(([bookId, book]) => {
-        items.push({
-          id: bookId,
-          name: bookNames?.[bookId] || book?.book_name || book?.name || bookId,
-          sort: book?.sort_number || items.length + 1,
-          sectionId,
-          parentName: sectionNames?.[sectionId] || section?.name || sectionId
-        });
+    Object.entries(testament?.books || {}).forEach(([bookId, book]) => {
+      items.push({
+        id: bookId,
+        // A NAME IS A QUOTATION (H-2). Where no tongue names this id the item
+        // goes unnamed rather than wearing its own opaque id, which would be
+        // the filesystem speaking to the reader.
+        name: bookNames?.[bookId] || null,
+        sort: Number.isFinite(book?.sort_number) ? book.sort_number : items.length,
+        testamentId,
+        parentName: testamentNames?.[testamentId] || null
       });
     });
   });

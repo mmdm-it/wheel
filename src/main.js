@@ -1182,10 +1182,18 @@ function fetchManifest(volumeId) {
   if (!manifestCache.has(volumeId)) {
     const cfg = volumeConfigs[volumeId];
     if (!cfg) return Promise.reject(new Error(`unknown volume "${volumeId}"`));
-    const p = fetch(cfg.manifestPath).then(r => {
-      if (!r.ok) throw new Error(`manifest missing for volume "${cfg.id}" (${cfg.manifestPath}: HTTP ${r.status})`);
-      return r.json();
-    }).catch(err => { manifestCache.delete(volumeId); throw err; });
+    // A VOLUME MAY LOAD ITSELF (H-14). A volume behind its own migration wall
+    // boots from several artifacts rather than one file — an enumeration, its
+    // names — and normalises them before anything reads it. Volumes still in
+    // front of their wall fetch one manifest exactly as they always have,
+    // which is what makes the wall per-volume rather than a flag day.
+    const p = (typeof cfg.loadManifest === 'function'
+      ? cfg.loadManifest()
+      : fetch(cfg.manifestPath).then(r => {
+        if (!r.ok) throw new Error(`manifest missing for volume "${cfg.id}" (${cfg.manifestPath}: HTTP ${r.status})`);
+        return r.json();
+      })
+    ).catch(err => { manifestCache.delete(volumeId); throw err; });
     manifestCache.set(volumeId, p);
   }
   return manifestCache.get(volumeId);
@@ -1264,7 +1272,12 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
     : await config.loadSupplemental(root, manifest, params);
   const debugFlag = params.get('debug') === '1' || localStorage.getItem('wheel-debug') === '1';
   const options = {
-    ...config.buildOptions({ params, startup, arrangements }),
+    // `root` rides along so a volume can take its defaults from its own data
+    // rather than from a literal in the engine. Under H-14 that stopped being
+    // a nicety: a volume behind its wall enumerates only what has migrated, so
+    // a hard-coded starting address names something unreachable, and a default
+    // that cannot resolve is a blank screen.
+    ...config.buildOptions({ params, startup, arrangements, root }),
     debug: debugFlag
   };
   return { volume: resolvedVolume, config, manifest, root, options, supplemental };

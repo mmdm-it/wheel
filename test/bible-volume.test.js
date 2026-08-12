@@ -172,3 +172,41 @@ describe('the wall reader — it refuses what it cannot do', () => {
       /enumerates no books/);
   });
 });
+
+// THE INTERNAL ROOT — the adapter contract's `normalize`, and the cells that
+// matter are what it REFUSES to bring back.
+describe('the wall reader — toRoot() normalises without rebuilding the legacy shape', () => {
+  it('carries the ruled hierarchy: testament to book', async () => {
+    const volume = await load();
+    const root = volume.toRoot();
+    const testamentId = volume.testaments[0].id;
+    assert.ok(root.testaments[testamentId]);
+    assert.ok(root.testaments[testamentId].books[volume.units[0].id]);
+    assert.equal(root.testaments[testamentId].books[volume.units[0].id].leaves, 31);
+  });
+
+  it('BRINGS BACK NOTHING H-14 RETIRED — this is the cell that keeps it honest', async () => {
+    const volume = await load();
+    const serialized = JSON.stringify(volume.toRoot());
+    for (const dead of ['sections', 'chapters', '_external_file', 'book_key', 'sequence', 'chapter_id']) {
+      assert.ok(!serialized.includes(dead),
+        `${dead} is back in the internal root — that is the legacy shape in its last costume`);
+    }
+  });
+
+  it('carries the presentation config the engine needs, narrowed to what is offered', async () => {
+    const volume = await load();
+    const dc = volume.toRoot().display_config;
+    assert.deepEqual(Object.keys(dc.hierarchy_levels), ['testament', 'book', 'chapter', 'verse']);
+    assert.equal(dc.editions.registry, undefined,
+      'the registry pointer is the legacy file itself — the wall removes it');
+    assert.deepEqual(dc.languages.available, ['english']);
+  });
+
+  it('order is DATA in the root, not the object key order', async () => {
+    const volume = await load();
+    const t = volume.toRoot().testaments[volume.testaments[0].id];
+    assert.equal(t.sort_number, 0);
+    assert.equal(t.books[volume.units[0].id].sort_number, 0);
+  });
+});

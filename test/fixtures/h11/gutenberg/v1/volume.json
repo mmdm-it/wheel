@@ -1,6 +1,139 @@
 {
   "_schema_version": "4.0",
   "_note": "H-11 layout fixture under the H-14 wall. Genesis 1, Douay-Rheims offered.",
+  "display_config": {
+    "volume_schema_version": "3.0.0",
+    "volume_data_version": "v1",
+    "structure_type": "per_unit",
+    "volume_type": "wheel_hierarchical",
+    "volume_name": "Gutenberg Bible",
+    "volume_description": "Complete Protestant Bible for testing hierarchical navigation",
+    "leaf_level": "verse",
+    "languages": {
+      "available": [
+        "english"
+      ],
+      "default": "english",
+      "labels": {
+        "english": "ENGLISH"
+      }
+    },
+    "editions": {
+      "available": {
+        "english": [
+          "DRA"
+        ]
+      },
+      "default": {
+        "english": "DRA"
+      },
+      "labels": {
+        "DRA": "Douay-Rheims"
+      }
+    },
+    "focus_ring_startup": {
+      "top_navigation_level": "verse",
+      "arrangement": "cousins-with-gaps",
+      "parent_button_style": "simple"
+    },
+    "focus_ring_arrangements": {
+      "book": "cousins-with-gaps",
+      "chapter": "cousins-with-gaps",
+      "verse": "cousins-with-gaps"
+    },
+    "ui_limits": {
+      "focus_ring_max_depth": 7,
+      "parent_button_min_depth": 1
+    },
+    "detail_sector": {
+      "mode": "product_browser",
+      "logo_base_path": "assets/",
+      "default_image": "gutenberg_logo"
+    },
+    "color_scheme": {
+      "background": "#d4a574",
+      "nodes": "#8b6f47",
+      "detail_sector": "#362e6a",
+      "detail_sector_opacity": "0.5",
+      "text_primary": "#000000",
+      "text_secondary": "#ffffff"
+    },
+    "hierarchy_levels": {
+      "testament": {
+        "text_format": "title_case",
+        "color": "#8b6f47",
+        "positioning": "center",
+        "display_name": "Testament",
+        "sort_type": "alphabetical",
+        "focus_text_position": "radial",
+        "focus_text_transform": "none",
+        "enable_rotation": false
+      },
+      "book": {
+        "text_format": "title_case",
+        "color": "#8b6f47",
+        "positioning": "arc",
+        "display_name": "Book",
+        "sort_type": "numeric_asc",
+        "sort_property": "book_number",
+        "focus_text_position": "radial",
+        "focus_text_transform": "none"
+      },
+      "chapter": {
+        "text_format": "append_suffix",
+        "color": "#8b6f47",
+        "positioning": "arc",
+        "display_name": "Chapter",
+        "display_name_hebrew": "פרק",
+        "display_name_greek": "Κεφάλαιο",
+        "display_name_latin": "Caput",
+        "display_name_english": "Chapter",
+        "display_name_french": "Chapitre",
+        "display_name_spanish": "Capítulo",
+        "display_name_italian": "Capitolo",
+        "display_name_portuguese": "Capítulo",
+        "display_name_russian": "Глава",
+        "sort_type": "numeric_asc",
+        "focus_text_position": "centered",
+        "focus_text_transform": "number_only",
+        "is_numeric": true,
+        "use_code_property": false
+      },
+      "verse": {
+        "text_format": "append_suffix",
+        "color": "#8b6f47",
+        "positioning": "arc",
+        "display_name": "Verse",
+        "display_name_hebrew": "פסוק",
+        "display_name_greek": "Στίχος",
+        "display_name_latin": "Versus",
+        "display_name_english": "Verse",
+        "display_name_french": "Verset",
+        "display_name_spanish": "Versículo",
+        "display_name_italian": "Verso",
+        "display_name_portuguese": "Versículo",
+        "display_name_russian": "Стих",
+        "sort_type": "numeric_asc",
+        "focus_text_position": "centered",
+        "focus_text_transform": "number_only",
+        "is_numeric": true,
+        "use_code_property": false,
+        "detail_sector": {
+          "mode": "text_display",
+          "skip_header": true,
+          "views": [
+            {
+              "id": "latin_text",
+              "type": "info",
+              "body": [
+                "{{text}}"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
   "testaments": [
     {
       "id": "t0dc09",

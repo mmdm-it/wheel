@@ -10,6 +10,14 @@ import { recall } from './core/session-memory.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
 import { bibleAdapter, buildBibleRootChain, ensureSeatingChart, setChartedEditions } from './adapters/bible-adapter.js';
+import { loadBibleVolume } from './adapters/bible-volume.js';
+
+// WHERE THE BIBLE'S CARGO LIVES UNDER THE WALL (H-14). Today that is the
+// Genesis 1 fixture, which IS the volume until 1b's first increment lands —
+// H-14 accepted that with eyes open. The data version rides the path (H-11
+// item 4), so a push changes a path rather than the world.
+const BIBLE_VOLUME_BASE = './test/fixtures/h11/gutenberg';
+const BIBLE_VOLUME_VERSION = 'v1';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 import { placesAdapter } from './adapters/places-adapter.js';
 
@@ -43,7 +51,32 @@ const volumeConfigs = {
   bible: {
     id: 'bible',
     paths: ['/bible'],
-    manifestPath: './data/gutenberg/manifest.json',
+    // THE BIBLE IS BEHIND THE WALL (H-14, 2026-08-12). It no longer reads
+    // `data/gutenberg/manifest.json` or `translations.json` — the engine has
+    // no path to either, which is the capability the ruling removes. It boots
+    // from the H-11 enumeration instead, and `loadManifest` is how a volume
+    // behind its own wall says so.
+    //
+    // The other three volumes keep their manifests and their reader until
+    // each raises its own wall at its own doctrine migration. That is what
+    // makes the scope per-volume rather than a flag day.
+    manifestPath: BIBLE_VOLUME_BASE,
+    loadManifest: async () => {
+      const volume = await loadBibleVolume({
+        base: BIBLE_VOLUME_BASE,
+        version: BIBLE_VOLUME_VERSION,
+        fetchJson: async path => {
+          const response = await fetch(path);
+          if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
+          return response.json();
+        }
+      });
+      // The wall volume rides along so the builders can reach charts, spines
+      // and text without a second load. It is not a manifest wearing a new
+      // name: `toRoot()` brings back nothing H-14 retired, and the suite
+      // asserts that rather than trusting the comment.
+      return { Gutenberg_Bible: volume.toRoot(), __wallVolume: volume };
+    },
     theme: 'bible',
     palette: {
       bg: '#d4a574',
@@ -55,23 +88,57 @@ const volumeConfigs = {
     },
     stampLetter: 'B', // the factory stamp's data line (W-7)
     extractRoot: manifest => manifest?.Gutenberg_Bible,
-    async loadSupplemental() {
-      const [translationsMeta, languagesMeta] = await Promise.all([
-        fetch('./data/gutenberg/translations.json').then(r => r.json()).catch(() => null),
-        fetch('./data/gutenberg/languages.json').then(r => r.json()).catch(() => null)
-      ]);
-      // Q3 (0c): tell the adapter which editions are charted, so it stops
-      // spending a round trip on a 404 for the ones that are not. The field is
-      // OPTIONAL and does not exist yet (O-39, Wilbur's half) — until it does,
-      // nothing declares itself and the adapter keeps asking, which is the
-      // safe direction: an unknown list must never be read as "uncharted".
-      const declared = Object.entries(translationsMeta?.translations || {})
-        .filter(([, meta]) => meta?.hasChart === true)
-        .map(([code]) => code);
-      setChartedEditions(declared);
-      return { translationsMeta, languagesMeta };
+    // THE REGISTRY IS BEHIND THE WALL (H-14). `translations.json` was the
+    // second pre-doctrine file the Bible read, and it carried two things the
+    // engine still needs: which editions exist and are servable, and the
+    // display names per language. Both now come from the volume itself —
+    // `volume.json`'s `editions` array and `names/{lang}.json`.
+    //
+    // WHY THIS TAKES PARAMETERS NOW, stated because it costs something. The
+    // early-start optimisation beside it depends on `loadSupplemental`
+    // declaring none, so its fetches can begin before the manifest lands.
+    // Under the wall this genuinely DEPENDS on the volume — the editions and
+    // the languages are in it — so it declares that dependency and pays one
+    // round trip for it. The arity test in `loadConfig` is exactly the promise
+    // it was built to check, and it does the safe thing without being told.
+    async loadSupplemental(root, manifest) {
+      const volume = manifest?.__wallVolume;
+      if (!volume) {
+        throw new Error(
+          '[wheel] the Bible booted without its wall volume. Under H-14 there is no legacy '
+          + 'registry to fall back to — that capability is gone — so this is a boot failure '
+          + 'rather than a degraded mode.');
+      }
+
+      // The registry shape the engine already speaks, populated from
+      // doctrine-conformant cargo. `names.sections` is deliberately absent:
+      // the section is a retired level and nothing may name one.
+      const translationsMeta = {
+        translations: Object.fromEntries(volume.editions.map(edition => [edition.code, {
+          name: edition.name || edition.code,
+          language: edition.language || null,
+          direction: edition.direction || 'ltr',
+          hasChart: edition.hasChart === true,
+          proofread: edition.proofread === true
+        }])),
+        names: Object.fromEntries(Object.entries(volume.namesByLanguage)
+          .filter(([, names]) => names)
+          .map(([lang, names]) => [lang, {
+            books: names.books || {},
+            testaments: names.testaments || {},
+            book_abbreviations: names.book_abbreviations || {},
+            title: names.title || null
+          }]))
+      };
+
+      // Q3 (0c): tell the adapter which editions are charted. Under the wall
+      // every enumerated edition declares this in `volume.json`, so the list
+      // is complete rather than optional — the round trip it saved is now
+      // saved by construction.
+      setChartedEditions(volume.editions.filter(e => e.hasChart === true).map(e => e.code));
+      return { translationsMeta, languagesMeta: null };
     },
-    buildOptions: ({ params, startup = {}, arrangements = {} }) => {
+    buildOptions: ({ params, startup = {}, arrangements = {}, root = null }) => {
       const level = params.get('level') || startup.top_navigation_level || 'verse';
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
@@ -88,13 +155,32 @@ const volumeConfigs = {
         level,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
-        bookId: params.get('book') || resumed?.bookId || 'MATHE',
+        // THE PINNED START IS GONE, AND IT HAD TO BE (H-14). Howell's ruling
+        // of 2026-07-30 opened a first visit at Matthew 16:18; under the wall
+        // Matthew is unreachable until its increment lands, so a literal here
+        // would resolve to nothing and paint a blank screen. `null` means
+        // "the volume's own first leaf", resolved in buildBibleChain where the
+        // enumeration is in hand.
+        //
+        // It moves as increments land, which is not a defect: H-14 rules that
+        // increment order is user-visible, and the volume opening at whatever
+        // it actually contains is that rule showing through. The pinned start
+        // returns as a ruling when the corpus can honour one.
+        bookId: params.get('book') || resumed?.bookId || null,
         testamentId: params.get('testament'),
-        chapterId: params.get('chapter') || resumed?.chapterId || '16',
-        verseId: params.get('verse') || resumed?.verseId || '18',
-        // Single-stratum era: the Bible is pinned to the Latin Vulgate.
-        // Dimension development is paused, not cancelled (see docs/ROADMAP.md).
-        translation: 'VUL',
+        chapterId: params.get('chapter') || resumed?.chapterId || null,
+        verseId: params.get('verse') || resumed?.verseId || null,
+        // The committed edition comes from the volume's own declaration, not
+        // from a literal: under the wall the Vulgate is not enumerated, and
+        // naming it here would pin the reader to an edition that does not
+        // exist. Language default first, then the single offered edition.
+        translation: (() => {
+          const editions = root?.display_config?.editions || {};
+          const language = root?.display_config?.languages?.default;
+          return editions.default?.[language]
+            || Object.values(editions.default || {})[0]
+            || null;
+        })(),
         cousinMode,
         locale: params.get('lang') || null
       };
@@ -421,15 +507,51 @@ function makeLabelFormatter({ config, volume, level, locale, namesMap, options, 
   return factory({ volume, level, locale, namesMap, options, manifest, meta });
 }
 
+// THE VOLUME'S OWN FIRST LEAF (H-14) — where a first visit opens now.
+//
+// Under the wall there is no literal that can name a starting place: the
+// corpus is whatever `volume.json` enumerates, and it grows one increment at
+// a time. So the start is DERIVED — the first enumerated book, its first
+// projected container, that container's first seat — and it resolves to
+// something real by construction however much or little has landed.
+//
+// It reads the enumeration, never the ids: an opaque id carries no order in
+// its characters, and `volume.json` states the order as data.
+function firstLeafOf(manifest, edition) {
+  const volume = manifest?.__wallVolume;
+  const unit = volume?.units?.[0];
+  if (!unit) return {};
+  const chart = volume.chartFor?.(unit.id, edition);
+  const container = chart?.groups?.[0];
+  const firstSeat = chart?.seats?.[0];
+  return {
+    bookId: unit.id,
+    testamentId: unit.testamentId,
+    chapterId: container ? String(container.label) : null,
+    verseId: firstSeat ? String(firstSeat.label) : null
+  };
+}
+
 function buildBibleChain(manifest, options, namesMap) {
   // Gateway entry: BIBLIA SACRA LATINA alone on the ring, testaments in the pyramid.
   if (options.level === 'root') return buildBibleRootChain(namesMap);
+  // Anything the URL or the reader's memory did not supply comes from the
+  // volume itself, resolved here because this is where the enumeration is in
+  // hand. A null that reached the builders below would paint a blank screen.
+  const fallback = firstLeafOf(manifest, options.activeEdition || options.translation || null);
+  options = {
+    ...options,
+    bookId: options.bookId || fallback.bookId,
+    testamentId: options.testamentId || fallback.testamentId,
+    chapterId: options.chapterId || fallback.chapterId,
+    verseId: options.verseId || fallback.verseId
+  };
   const arrangement = options.arrangement;
   const initialItemId = options.initialItemId;
   if (options.cousinMode && (arrangement || 'cousins-with-gaps') !== 'siblings-only') {
     const level = options.level || 'book';
     if (level === 'chapter') {
-      const bookId = options.bookId || 'MATHE';
+      const bookId = options.bookId;
       const chapterItems = getBibleChapters(manifest, { id: bookId }, namesMap, 'book');
       const targetKey = options.chapterId || '16';
       let chapterSelected = chapterItems.findIndex(ch => ch.meta?.chapterKey === targetKey);
@@ -451,7 +573,7 @@ function buildBibleChain(manifest, options, namesMap) {
       // paint — thirteen files to open at Matthew 16), and it bakes no verse
       // text, retiring the last site of the stale-language bug class (W-6).
       // Verse text arrives from the chapter cache and repaints on landing.
-      const bookId = options.bookId || 'MATHE';
+      const bookId = options.bookId;
       const chapterId = options.chapterId || '16';
       const verseId = options.verseId || '1';
       // THE SEATING CHART (E1 of W-21): the chain's membership is the
@@ -471,7 +593,7 @@ function buildBibleChain(manifest, options, namesMap) {
     }
     const chain = buildBibleBookCousinChain(manifest, {
       testamentId: options.testamentId,
-      bookId: options.bookId || 'GENE',
+      bookId: options.bookId,
       initialItemId,
       names: namesMap
     });
