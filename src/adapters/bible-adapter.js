@@ -485,15 +485,19 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // chain is: a switched edition rebuilds rather than serving another
   // artifact's chapters.
   let chapterChainItems = null;
-  let chapterChainChart;
+  let chapterChainEdition;
   const chapterChain = initialChapterId => {
-    const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
-    if (!chapterChainItems || chapterChainChart !== chart) {
+    const edition = options?.activeEdition || options?.translation || null;
+    // KEYED BY THE EDITION, which is what decides the seats. It was keyed by
+    // the fetched chart object, and under the wall there is no such object —
+    // the edition names the chart the volume already holds.
+    if (!chapterChainItems || chapterChainEdition !== edition) {
       chapterChainItems = buildBibleChapterChain(manifest, {
+        edition,
         namesMap,
-        seats: chart ? buildBibleVerseChain(manifest, { chart }).items : null
+        seats: buildBibleVerseChain(manifest, { edition }).items
       }).items;
-      chapterChainChart = chart;
+      chapterChainEdition = edition;
     }
     let selectedIndex = 0;
     if (initialChapterId) {
@@ -511,12 +515,12 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // another artifact's seats. The chart read is synchronous: boot's awaited
   // fetch populated the cache, and a miss means identity fallback.
   let verseChainItems = null;
-  let verseChainChart;
+  let verseChainEdition;
   const verseChain = initialVerseId => {
-    const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
-    if (!verseChainItems || verseChainChart !== chart) {
-      verseChainItems = buildBibleVerseChain(manifest, { chart }).items;
-      verseChainChart = chart;
+    const edition = options?.activeEdition || options?.translation || null;
+    if (!verseChainItems || verseChainEdition !== edition) {
+      verseChainItems = buildBibleVerseChain(manifest, { edition }).items;
+      verseChainEdition = edition;
     }
     let selectedIndex = 0;
     if (initialVerseId) {
@@ -565,8 +569,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (level !== 'verse' && level !== 'chapter') return false;
 
     const previousSeats = Array.isArray(verseChainItems) ? verseChainItems : [];
-    const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
-    const rebuilt = buildBibleVerseChain(manifest, { chart }).items;
+    const edition = options?.activeEdition || options?.translation || null;
+    const rebuilt = buildBibleVerseChain(manifest, { edition }).items;
     if (!rebuilt.length) return false;
 
     // The reader is standing on a verse, or on a chapter — in which case the
@@ -613,7 +617,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // Adopt the rebuilt chain, and drop the chapters cache so the ring above
     // — and the sky under it — are rebuilt from these same seats (E3).
     verseChainItems = rebuilt;
-    verseChainChart = chart;
+    verseChainEdition = edition;
     chapterChainItems = null;
 
     // A reader standing on the CHAPTER ring stays there: rebuild that ring
@@ -661,9 +665,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // very seats the ring holds, so the two cannot disagree and a tap always
   // finds its verse. Without a chart it falls back to the file, unchanged.
   const verseItemsForChapter = chapterItem => {
-    const chart = getSeatingChart(options?.activeEdition || options?.translation || null);
+    const edition = options?.activeEdition || options?.translation || null;
     if (!chart || !chapterItem) return getBibleVerseItems(chapterItem);
-    const chain = verseChainItems || buildBibleVerseChain(manifest, { chart }).items;
+    const chain = verseChainItems || buildBibleVerseChain(manifest, { edition }).items;
     const wanted = chapterItem.id;
     const seats = [];
     for (const it of chain) {

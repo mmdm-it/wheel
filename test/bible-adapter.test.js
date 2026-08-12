@@ -6,6 +6,7 @@ import _pathBible from 'node:path';
 
 import { describe, it } from 'node:test';
 import { bibleAdapter, normalize as normalizeBible } from '../src/adapters/bible-adapter.js';
+import { makeWallManifest } from './helpers/wall-volume.mjs';
 
 const sampleManifest = {
   Gutenberg_Bible: {
@@ -88,15 +89,19 @@ describe('bible adapter', () => {
 
 
 describe('reading on through the volume', () => {
-  const __d = _pathBible.dirname(_fileURLToPathBible(import.meta.url));
-  const realManifest = JSON.parse(_readFileSyncBible(
-    _pathBible.resolve(__d, 'fixtures/data/gutenberg/manifest.json'), 'utf-8'));
+  // RE-POINTED AT THE WALL (H-14). This read the legacy fixture manifest,
+  // which is cargo the engine can no longer open. The synthetic volume gives
+  // these cells the crossings they need — the real one is a single book with
+  // a single container until 1b lands.
+  const realManifest = makeWallManifest();
 
   // The names table carries the reader's tongue (W-16), and since 2026-08-02
   // the chapter numeral is drawn from it too — so a harness with no locale
   // gets digits, correctly. These tests read the volume in Latin.
-  const inVerseMode = (namesMap = { locale: 'latin' }) => {
-    const h = bibleAdapter.createHandlers({ manifest: realManifest, namesMap, options: {} });
+  const inVerseMode = (namesMap = { locale: 'latin', books: { ALPH: 'Alpha', BETH: 'Beta', GAMM: 'Gamma' }, testaments: { T1: 'First', T2: 'Second' } }) => {
+    const h = bibleAdapter.createHandlers({
+      manifest: realManifest, namesMap, options: { activeEdition: 'ED', translation: 'ED' }
+    });
     h.layoutBindings.setBibleMode('verse');
     return h;
   };
@@ -106,30 +111,29 @@ describe('reading on through the volume', () => {
     // would silently fall back to one chapter and dead-end at its end.
     const h = inVerseMode();
     assert.equal(typeof h.layoutBindings.getBibleVerseChain, 'function');
-    const chain = h.layoutBindings.getBibleVerseChain('GENE_1_31');
-    assert.equal(chain.items[chain.selectedIndex].id, 'GENE_1_31', 'entered at the verse tapped');
-    assert.ok(chain.items.length > 300, 'and the whole volume is in the ring');
+    const chain = h.layoutBindings.getBibleVerseChain('ALPH_2_2');
+    assert.equal(chain.items[chain.selectedIndex].id, 'ALPH_2_2', 'entered at the verse tapped');
+    assert.equal(chain.items.filter(Boolean).length, 8, 'and the whole volume is in the ring');
   });
 
   it('ascends to the chapter the READER reached, not the one they entered at', () => {
     // Enter at Genesis, read on into Exodus, then press the parent button.
     const h = inVerseMode();
-    const chain = h.layoutBindings.getBibleVerseChain('GENE_1_31');
-    const reached = chain.items.find(v => v && v.id === 'EXO_3_4');
+    const chain = h.layoutBindings.getBibleVerseChain('ALPH_1_1');
+    const reached = chain.items.find(v => v && v.id === 'BETH_1_2');
     const state = {};
     const app = {
       setPrimaryItems: (items, idx) => { state.items = items; state.idx = idx; },
       setParentButtons: () => {}
     };
     assert.equal(h.parentHandler({ selected: reached, app }), true);
-    assert.equal(state.items[state.idx].id, 'EXO:3', 'lands on Exodus 3');
+    assert.equal(state.items[state.idx].id, 'BETH/1', 'lands on the chapter the reader reached');
     // The chapters ring spans the WHOLE volume (cousin chain), the same as on
     // descent and the same as the chapter→book ascent — so rotating out of the
     // landed chapter crosses book boundaries. It used to strand on Exodus's 40
     // chapters alone; that was the cousin-ascent bug (Howell 2026-07-21).
-    assert.ok(state.items.length > 60, 'the whole volume is in the ring, not one book');
-    assert.ok(state.items.some(c => c && c.id === 'GENE:1'), 'Genesis reachable by rotating back');
-    assert.ok(state.items.some(c => c && c.id === 'APOC:22'), 'Revelation by rotating forward');
+    assert.ok(state.items.some(c => c && c.id === 'ALPH/1'), 'the first book reachable by rotating back');
+    assert.ok(state.items.some(c => c && c.id === 'GAMM/1'), 'the last by rotating forward');
   });
 
   it('names the book and chapter under the magnifier, live', () => {
@@ -137,57 +141,61 @@ describe('reading on through the volume', () => {
     // form for a chapter, so CAP would only re-state it. The numeral is the
     // READER'S (2026-08-02): Roman here because this table says Latin.
     const h = inVerseMode();
-    const chain = h.layoutBindings.getBibleVerseChain('GENE_1_1');
+    const chain = h.layoutBindings.getBibleVerseChain('ALPH_1_1');
     const pick = id => chain.items.find(v => v && v.id === id);
-    assert.equal(h.getParentLabel(pick('GENE_1_1')), 'GENESIS I');
-    assert.equal(h.getParentLabel(pick('GENE_2_1')), 'GENESIS II', 'updates as reading crosses over');
+    assert.equal(h.getParentLabel(pick('ALPH_1_1')), 'ALPHA I');
+    assert.equal(h.getParentLabel(pick('ALPH_2_1')), 'ALPHA II', 'updates as reading crosses over');
     // The ring runs the whole volume, so the BOOK has to move too.
-    assert.equal(h.getParentLabel(pick('EXO_1_1')), 'EXODUS I',
+    assert.equal(h.getParentLabel(pick('BETH_1_1')), 'BETA I',
       'crossing into a new book is legible in the header');
-    assert.equal(h.getParentLabel(pick('IOHA_3_16')), 'JOHN III');
+    assert.equal(h.getParentLabel(pick('GAMM_1_1')), 'GAMMA I');
   });
 
   it('the parent button counts in the reader\'s own letters', () => {
     // From the phone, 2026-08-02: 'Αʹ ΣΑΜΟΥΗΛ XVII' — a Greek book name and
     // a Latin numeral in one label, because this site baked Roman. The book
     // followed the reader and the number did not.
-    const greek = inVerseMode({ locale: 'greek', books: { GENE: 'Γένεσις' } });
-    const gChain = greek.layoutBindings.getBibleVerseChain('GENE_1_1');
+    const greek = inVerseMode({ locale: 'greek', books: { ALPH: 'Γένεσις' } });
+    const gChain = greek.layoutBindings.getBibleVerseChain('ALPH_1_1');
     const gPick = id => gChain.items.find(v => v && v.id === id);
-    assert.equal(greek.getParentLabel(gPick('GENE_17_1')), 'Γένεσις ιζʹ',
+    assert.equal(greek.getParentLabel(gPick('ALPH_2_1')), 'Γένεσις βʹ',
       'and Greek is left in its own case — uppercasing strips its accents');
 
-    const hebrew = inVerseMode({ locale: 'hebrew', books: { GENE: 'בראשית' } });
-    const hChain = hebrew.layoutBindings.getBibleVerseChain('GENE_1_1');
+    const hebrew = inVerseMode({ locale: 'hebrew', books: { ALPH: 'בראשית' } });
+    const hChain = hebrew.layoutBindings.getBibleVerseChain('ALPH_1_1');
     const hPick = id => hChain.items.find(v => v && v.id === id);
-    assert.equal(hebrew.getParentLabel(hPick('GENE_17_1')), 'בראשית י״ז');
+    assert.equal(hebrew.getParentLabel(hPick('ALPH_2_1')), 'בראשית ב׳');
   });
 
   it('binds the chapter chain and names the book under the magnifier, live', () => {
-    const h = bibleAdapter.createHandlers({ manifest: realManifest, namesMap: {}, options: {} });
+    const h = bibleAdapter.createHandlers({
+      manifest: realManifest, namesMap: { locale: 'latin', books: { ALPH: 'Alpha', BETH: 'Beta', GAMM: 'Gamma' }, testaments: { T1: 'First', T2: 'Second' } }, options: { activeEdition: 'ED', translation: 'ED' }
+    });
     h.layoutBindings.setBibleMode('chapter');
     assert.equal(typeof h.layoutBindings.getBibleChapterChain, 'function');
-    const chain = h.layoutBindings.getBibleChapterChain('GENE:1');
-    assert.equal(chain.items[chain.selectedIndex].id, 'GENE:1', 'entered at the chapter tapped');
+    const chain = h.layoutBindings.getBibleChapterChain('ALPH/1');
+    assert.equal(chain.items[chain.selectedIndex].id, 'ALPH/1', 'entered at the chapter tapped');
     const pick = id => chain.items.find(c => c && c.id === id);
-    assert.equal(h.getParentLabel(pick('GENE:50')), 'GENESIS');
-    assert.equal(h.getParentLabel(pick('EXO:1')), 'EXODUS', 'the header follows the sweep across books');
-    assert.equal(h.getParentLabel(pick('APOC:22')), 'REVELATION');
+    assert.equal(h.getParentLabel(pick('ALPH/2')), 'ALPHA');
+    assert.equal(h.getParentLabel(pick('BETH/1')), 'BETA', 'the header follows the sweep across books');
+    assert.equal(h.getParentLabel(pick('GAMM/1')), 'GAMMA');
   });
 
   it('ascends from a chapter to the book the READER reached', () => {
-    const h = bibleAdapter.createHandlers({ manifest: realManifest, namesMap: {}, options: {} });
+    const h = bibleAdapter.createHandlers({
+      manifest: realManifest, namesMap: { locale: 'latin', books: { ALPH: 'Alpha', BETH: 'Beta', GAMM: 'Gamma' }, testaments: { T1: 'First', T2: 'Second' } }, options: { activeEdition: 'ED', translation: 'ED' }
+    });
     h.layoutBindings.setBibleMode('chapter');
-    const chain = h.layoutBindings.getBibleChapterChain('GENE:1');
-    const reached = chain.items.find(c => c && c.id === 'MATHE:1');
+    const chain = h.layoutBindings.getBibleChapterChain('ALPH/1');
+    const reached = chain.items.find(c => c && c.id === 'GAMM/1');
     const state = {};
     const app = {
       setPrimaryItems: (items, idx) => { state.items = items; state.idx = idx; },
       setParentButtons: () => {}
     };
     assert.equal(h.parentHandler({ selected: reached, app }), true);
-    assert.equal(state.items[state.idx].id, 'MATHE', 'lands on Matthew, not Genesis');
-    assert.equal(state.items.filter(Boolean).length, 5, 'among every book in the volume');
+    assert.equal(state.items[state.idx].id, 'GAMM', 'lands on the book the reader reached, not the one they entered at');
+    assert.equal(state.items.filter(Boolean).length, 3, 'among every book in the volume');
   });
 
   it('centres numerals on their nodes but leaves names beside them', () => {
@@ -202,11 +210,11 @@ describe('reading on through the volume', () => {
 
   it('sets verses and chapters bare, as numbers — the tongue is added later', () => {
     const h = inVerseMode();
-    const chain = h.layoutBindings.getBibleVerseChain('IOHA_3_16');
-    const verse = chain.items.find(v => v && v.id === 'IOHA_3_16');
-    assert.equal(verse.name, '16', 'no colon, no chapter — the header holds those');
-    const chapters = getBibleChapters(realManifest, { id: 'IOHA' }, {}, 'book');
-    assert.deepEqual(chapters.slice(0, 4).map(c => c.name), ['1', '2', '3', '4'],
+    const chain = h.layoutBindings.getBibleVerseChain('ALPH_2_2');
+    const verse = chain.items.find(v => v && v.id === 'ALPH_2_2');
+    assert.equal(verse.name, '2', 'no colon, no chapter — the header holds those');
+    const chapters = getBibleChapters(realManifest, { id: 'ALPH' }, {}, 'book', 'ED');
+    assert.deepEqual(chapters.map(c => c.name), ['1', '2'],
       'the chapter carries its number; the numeral system is chosen at render');
   });
 });

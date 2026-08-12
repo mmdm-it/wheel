@@ -1,5 +1,5 @@
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
-import { legacyTextFile, legacyUnitId, legacyOrdinal } from '../core/unit-source.js';
+import { legacyTextFile, legacyUnitId, legacyOrdinal, projectContainers } from '../core/unit-source.js';
 // Volume-specific chain/build helpers extracted from the host page.
 // These remain pure functions over manifests and options.
 
@@ -314,51 +314,48 @@ export function getCalendarMonths(manifest, selected, calendarMode) {
   }).map((item, idx) => ({ ...item, order: idx }));
 }
 
-export function getBibleChapters(manifest, selected, namesMap, bibleMode) {
+// THE CHAPTERS A BOOK ACTUALLY HAS, projected from the edition's chart
+// (O-44), never read from storage (H-14).
+//
+// This walked the manifest's stored `chapters` map. Under H-11 there is no
+// such map: a container is the render-time projection the spec always said it
+// was, declared by each edition over book-ordinal ranges. Two editions can
+// divide the same book differently and both are right, which a stored map
+// could not express at all.
+//
+// It also stops manufacturing a name. The old path fell back through the
+// manifest's own chapter name, then a section name, then the raw key — and
+// under opaque ids that last step prints filesystem spelling at the reader.
+// A label is a quotation (H-2): the chart's label is the whole answer.
+export function getBibleChapters(manifest, selected, namesMap, bibleMode, edition = null) {
   if (bibleMode !== 'book') return [];
-  const bookId = selected?.id;
-  if (!bookId) return [];
-  const testaments = manifest?.Gutenberg_Bible?.testaments || {};
-  let bookEntry = null;
-  Object.values(testaments).some(testament => {
-    const sections = testament?.sections || {};
-    return Object.values(sections).some(section => {
-      const books = section?.books || {};
-      if (books[bookId]) {
-        bookEntry = books[bookId];
-        return true;
-      }
-      return false;
-    });
-  });
-  if (!bookEntry?.chapters) return [];
-  return Object.entries(bookEntry.chapters).map(([chapterKey, chapterVal], idx) => {
-    const chapterNum = Number.parseInt(chapterKey, 10);
-    // THE NUMBER TRAVELS, THE NUMERALS ARE WORN AT RENDER (Howell
-    // 2026-08-02). This once baked a Roman string into the item name, which
-    // meant the label formatter met "XVII" with no number left to convert —
-    // so a Greek reader got Latin numerals under a Greek book name. The
-    // convention still holds (chapters in the tradition's own letters,
-    // verses in Arabic), but it is applied where the reader's language is
-    // known, not where the chapter is built. Same bug class as the baked
-    // book names (W-16) and the stale-Latin verse.
-    const label = Number.isFinite(chapterNum) ? String(chapterNum) : (namesMap?.sections?.[chapterKey] || chapterKey);
-    const externalFile = legacyTextFile(chapterVal, `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`);
-    return {
-      id: chapterVal?.id || `${bookId}:${chapterKey}`,
-      // The manifest's own "name" for a chapter is just its number as a
-      // string, so the numeral form we chose has to win it. A chapter
-      // keyed by something other than a number keeps whatever name it has.
-      name: Number.isFinite(chapterNum) ? label : (chapterVal?.name || label),
-      order: Number.isFinite(chapterVal?.sort_number) ? chapterVal.sort_number : idx,
-      parentId: bookId,
+  const unitId = selected?.id;
+  const volume = manifest?.__wallVolume;
+  if (!unitId || !volume) return [];
+  const chart = volume.chartFor(unitId, edition);
+  const spine = volume.spineFor(unitId);
+  if (!chart?.groups?.length || !spine?.utterances?.length) return [];
+
+  return projectContainers(chart, { leaves: spine.utterances.length })
+    .map((container, idx) => ({
+      id: `${unitId}/${container.label}`,
+      // THE NUMBER TRAVELS, THE NUMERALS ARE WORN AT RENDER (Howell
+      // 2026-08-02). Baking a Roman string here left the label formatter
+      // nothing to convert, so a Greek reader got Latin numerals under a
+      // Greek book name. The label is carried as the edition wrote it.
+      name: container.label,
+      order: idx,
+      parentId: unitId,
       level: 'chapter',
-      meta: { bookId, chapterKey, externalFile }
-    };
-  }).sort((a, b) => {
-    if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
-    return a.order - b.order;
-  }).map((item, idx) => ({ ...item, order: idx }));
+      meta: {
+        bookId: unitId,
+        chapterKey: container.label,
+        chapterLabel: container.label,
+        // Under H-11 the text address is the UNIT's, because a container has
+        // no file of its own any more.
+        externalFile: unitId
+      }
+    }));
 }
 
 export function getPlacesLevels(manifest) {
