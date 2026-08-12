@@ -2053,7 +2053,6 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const ln = translationsMeta?.names?.[lang] || {};
     // Replace CONTENTS, never the reference — the whole point.
     namesMap.books = ln.books || ln || {};
-    namesMap.sections = ln.sections || {};
     namesMap.testaments = ln.testaments || {};
     namesMap.bookAbbreviations = ln.book_abbreviations || {};
     // THE VOLUME TITLE (W-27, 2026-07-31): the door's name in the reader's

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { makeWallManifest } from './helpers/wall-volume.mjs';
 import { createApp, getViewportInfo } from '../src/index.js';
 import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 import { CardDetailPlugin } from '../src/view/detail/plugins/card-plugin.js';
@@ -253,14 +254,16 @@ describe('the detail sector as a NEXT button', () => {
 });
 
 describe('the e-reader, end to end', () => {
-  const bibleManifest = JSON.parse(readFileSync(
-    path.resolve(__dirname, 'fixtures/data/gutenberg/manifest.json'), 'utf-8'));
+  // RE-POINTED AT THE WALL (H-14). Howell's report was about reading THROUGH
+  // a boundary, so this needs a volume that has one — the real cargo is a
+  // single book with a single container until 1b lands.
+  const bibleManifest = makeWallManifest();
 
   it('taps straight out of one chapter and into the next', () => {
     // Howell's report: "when I get to the end of Genesis chapter one, I
     // have to back out to go into chapter two." Now the thumb carries on.
-    const { items } = buildBibleVerseChain(bibleManifest, {});
-    const start = items.findIndex(v => v && v.id === 'GENE_1_29');
+    const { items } = buildBibleVerseChain(bibleManifest, { edition: 'ED' });
+    const start = items.findIndex(v => v && v.id === 'ALPH_1_1');
     withMockDom(harness => {
       const app = createApp({
         svgRoot: createMockElement('svg'),
@@ -272,19 +275,18 @@ describe('the e-reader, end to end', () => {
         detailTapAdvances: true
       });
       harness.settle();
-      assert.equal(app.nav.getCurrent().id, 'GENE_1_29');
+      assert.equal(app.nav.getCurrent().id, 'ALPH_1_1');
 
       const read = () => { app.advanceLeaf(); harness.settle(); return app.nav.getCurrent().id; };
-      assert.equal(read(), 'GENE_1_30');
-      assert.equal(read(), 'GENE_1_31', 'the last verse of the chapter');
-      assert.equal(read(), 'GENE_2_1', 'and one more tap simply keeps reading');
-      assert.equal(read(), 'GENE_2_2');
+      assert.equal(read(), 'ALPH_1_2', 'the last verse of the chapter');
+      assert.equal(read(), 'ALPH_2_1', 'and one more tap simply keeps reading');
+      assert.equal(read(), 'ALPH_2_2');
     });
   });
 
   it('carries the reader across a book boundary too', () => {
-    const { items } = buildBibleVerseChain(bibleManifest, {});
-    const lastOfGenesis = items.filter(Boolean).filter(v => v.meta.bookId === 'GENE').pop();
+    const { items } = buildBibleVerseChain(bibleManifest, { edition: 'ED' });
+    const lastOfGenesis = items.filter(Boolean).filter(v => v.meta.bookId === 'ALPH').pop();
     const start = items.findIndex(v => v && v.id === lastOfGenesis.id);
     withMockDom(harness => {
       const app = createApp({
@@ -299,7 +301,7 @@ describe('the e-reader, end to end', () => {
       harness.settle();
       app.advanceLeaf();
       harness.settle();
-      assert.equal(app.nav.getCurrent().id, 'EXO_1_1',
+      assert.equal(app.nav.getCurrent().id, 'BETH_1_1',
         'four empty links crossed in a single tap');
     });
   });

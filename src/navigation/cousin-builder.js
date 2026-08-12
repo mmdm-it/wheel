@@ -1,7 +1,6 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
 import { chaptersFromSeats } from './seating-chart.js';
 import { expandVolumeSeats } from '../adapters/bible-volume.js';
-import { legacyTextFile, legacyUnitId } from '../core/unit-source.js';
 
 const GAP = null;
 

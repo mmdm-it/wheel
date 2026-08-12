@@ -8,7 +8,7 @@ import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMon
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
-import { bibleAdapter, buildBibleRootChain, ensureSeatingChart, setChartedEditions } from './adapters/bible-adapter.js';
+import { bibleAdapter, buildBibleRootChain } from './adapters/bible-adapter.js';
 import { loadBibleVolume } from './adapters/bible-volume.js';
 import { seedVerseCache } from './adapters/volume-helpers.js';
 
@@ -156,11 +156,6 @@ const volumeConfigs = {
           }]))
       };
 
-      // Q3 (0c): tell the adapter which editions are charted. Under the wall
-      // every enumerated edition declares this in `volume.json`, so the list
-      // is complete rather than optional — the round trip it saved is now
-      // saved by construction.
-      setChartedEditions(volume.editions.filter(e => e.hasChart === true).map(e => e.code));
       return { translationsMeta, languagesMeta: null };
     },
     buildOptions: ({ params, startup = {}, arrangements = {}, root = null }) => {
@@ -260,12 +255,6 @@ const volumeConfigs = {
       return { Gutenberg_Bible: { ...root, testaments: {} } };
     },
     buildChain: (manifest, options, namesMap) => buildBibleChain(manifest, options, namesMap),
-    // A committed edition warms its seating chart, so the reader's NEXT
-    // descent to the leaf ring is seated by their own artifact rather than
-    // the one they arrived under. The chain in front of them is not rebuilt
-    // (that is E2's re-seat, which carries the reader's utterance across);
-    // this only makes sure the chart is in hand when the ring is next built.
-    onEditionSettle: edition => ensureSeatingChart(edition || null),
     createHandlers: makeAdapterHandlers('bible')
   },
   catalog: {

@@ -11,6 +11,7 @@ import { bibleAdapter } from '../src/adapters/bible-adapter.js';
 import { catalogAdapter } from '../src/adapters/catalog-adapter.js';
 import { calendarAdapter } from '../src/adapters/calendar-adapter.js';
 import { placesAdapter } from '../src/adapters/places-adapter.js';
+import { makeWallManifest } from './helpers/wall-volume.mjs';
 import {
   buildBibleBooks,
   buildCatalogManufacturers,
@@ -54,8 +55,11 @@ const registryWithDefaults = () => {
 };
 
 test('bible detail templates render card and text', async () => {
-  const manifest = await readJson('test/fixtures/data/gutenberg/manifest.json');
-  const bookEntry = buildBibleBooks(manifest)[0];
+  // RE-POINTED AT THE WALL (H-14): the legacy fixture manifest is cargo the
+  // engine can no longer open.
+  const manifest = makeWallManifest();
+  const namesMap = { books: { ALPH: 'Alpha', BETH: 'Beta', GAMM: 'Gamma' } };
+  const bookEntry = buildBibleBooks(manifest, namesMap)[0];
   assert.ok(bookEntry, 'expected at least one book');
 
   const bookDetail = bibleAdapter.detailFor({ id: bookEntry.id, level: 'book', name: bookEntry.name }, manifest);
@@ -73,7 +77,7 @@ test('bible detail templates render card and text', async () => {
   assert.ok(titleNode?.textContent?.length, 'card title should be set');
 
   // Chapter detail should render as text.
-  const chapterDetail = bibleAdapter.detailFor({ id: `${bookEntry.id}:1`, level: 'chapter', name: 'Chapter 1' }, manifest);
+  const chapterDetail = bibleAdapter.detailFor({ id: `${bookEntry.id}/1`, level: 'chapter', name: '1' }, manifest);
   assert.equal(chapterDetail?.type, 'text');
   const textPlugin = registry.getPlugin(chapterDetail);
   assert.ok(textPlugin, 'plugin should resolve for bible chapter');

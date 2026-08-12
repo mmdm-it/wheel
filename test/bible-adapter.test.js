@@ -8,13 +8,20 @@ import { describe, it } from 'node:test';
 import { bibleAdapter, normalize as normalizeBible } from '../src/adapters/bible-adapter.js';
 import { makeWallManifest } from './helpers/wall-volume.mjs';
 
+// THE WALL'S ROOT SHAPE (H-14): testaments hold books directly, and there is
+// no stored chapter level — a container is projected from the edition's chart
+// at render (O-44), so `normalize` has nothing to walk into below a book.
+//
+// Book names are deliberately ABSENT. They live in `names/{lang}.json` and
+// follow the reader's tongue; baking one into the normalized root is the
+// stale-language bug class W-16 and W-6 were written for, so an unnamed book
+// here is correct rather than incomplete.
 const sampleManifest = {
   Gutenberg_Bible: {
     display_config: {
       volume_name: 'Gutenberg Bible',
       hierarchy_levels: {
         testament: { color: '#111' },
-        section: { color: '#222' },
         book: { color: '#333' },
         chapter: { color: '#444' }
       }
@@ -23,23 +30,7 @@ const sampleManifest = {
       OT: {
         name: 'Old',
         sort_number: 1,
-        sections: {
-          torah: {
-            name: 'Torah',
-            sort_number: 1,
-            books: {
-              GEN: {
-                book_name: 'Genesis',
-                book_number: 1,
-                sort_number: 1,
-                chapters: {
-                  '1': { id: 'GEN:1', name: 'Chapter 1', sort_number: 1 },
-                  '2': { name: 'Chapter 2', chapter_number: 2 }
-                }
-              }
-            }
-          }
-        }
+        books: { GEN: { sort_number: 1, leaves: 31, testamentId: 'OT' } }
       }
     }
   }
@@ -60,10 +51,13 @@ describe('bible adapter', () => {
     assert.equal(testaments.length, 1);
     assert.equal(sections.length, 0, 'the section level is retired');
     assert.equal(books.length, 1);
-    assert.equal(chapters.length, 2);
+    // CHAPTERS ARE NOT NORMALIZED (H-14/O-44). They are not stored, so there
+    // is nothing to walk: the rings below a book are projected per edition
+    // from its chart, which one stored tree could not express for fourteen
+    // traditions at once.
+    assert.equal(chapters.length, 0, 'a container is a projection, not an item in the tree');
     assert.equal(normalized.meta.colors.book, '#333');
     assert.ok(normalized.links.find(l => l.to === 'GEN'));
-    assert.ok(normalized.links.find(l => l.to === 'GEN:1'));
   });
 
   it('builds layout spec with pyramid config', () => {
@@ -80,10 +74,10 @@ describe('bible adapter', () => {
   it('emits detail payloads for book and chapter', () => {
     const bookDetail = bibleAdapter.detailFor({ id: 'GEN', level: 'book', name: 'Genesis' }, sampleManifest);
     assert.equal(bookDetail.type, 'card');
-    assert.ok(bookDetail.body.includes('Book') || bookDetail.body.includes('chapters'));
-    const chapterDetail = bibleAdapter.detailFor({ id: 'GEN:1', level: 'chapter', name: 'Chapter 1' }, sampleManifest);
+    assert.ok(bookDetail.body.includes('31'), 'a book is sized by its leaves, not by one tradition\'s chapter count');
+    const chapterDetail = bibleAdapter.detailFor({ id: 'GEN/1', level: 'chapter', name: '1' }, sampleManifest);
     assert.equal(chapterDetail.type, 'text');
-    assert.ok(chapterDetail.text.includes('Genesis'));
+    assert.equal(typeof chapterDetail.text, 'string');
   });
 });
 

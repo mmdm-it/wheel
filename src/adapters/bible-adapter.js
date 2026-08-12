@@ -5,121 +5,23 @@ import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cous
 import { seatIndexForUtterance } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
-import { legacyTextFile, legacyUnitId } from '../core/unit-source.js';
 
-const isBrowser = typeof window !== 'undefined' && typeof fetch === 'function';
-const manifestUrl = './data/gutenberg/manifest.json';
-const schemaUrl = './schemas/gutenberg.schema.json';
-
-let manifestPath = null;
-let schemaPath = null;
-let nodeReadFile = null;
-let nodeReadFileSync = null;
-let AjvCtor = null;
-
-let _nodeReady = null;
-function _ensureNode() {
-  if (isBrowser) return Promise.resolve();
-  if (_nodeReady) return _nodeReady;
-  _nodeReady = (async () => {
-    const path = await import('path');
-    const { fileURLToPath } = await import('url');
-    const __dirname = path.dirname(fileURLToPath(import.meta.url));
-    manifestPath = path.resolve(__dirname, '../../data/gutenberg/manifest.json');
-    schemaPath = path.resolve(__dirname, '../../schemas/gutenberg.schema.json');
-    nodeReadFile = (await import('fs/promises')).readFile;
-    nodeReadFileSync = (await import('fs')).readFileSync;
-    AjvCtor = (await import('ajv')).default;
-  })();
-  return _nodeReady;
-}
-
-let validateFn = null;
-let ajvInstance = null;
-
-const fetchJson = async url => {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
-  return res.json();
-};
-
-const getValidator = () => {
-  if (isBrowser) return null;
-  if (validateFn) return validateFn;
-  if (!nodeReadFileSync || !schemaPath || !AjvCtor) return null;
-  if (!ajvInstance) ajvInstance = new AjvCtor({ allErrors: true, strict: false });
-  const schemaJson = JSON.parse(nodeReadFileSync(schemaPath, 'utf-8'));
-  validateFn = ajvInstance.compile(schemaJson);
-  return validateFn;
-};
-
-export async function loadManifest() {
-  if (isBrowser) return fetchJson(manifestUrl);
-  await _ensureNode();
-  const raw = await nodeReadFile(manifestPath, 'utf-8');
-  return JSON.parse(raw);
-}
-
-// THE SEATING CHART (E1 of W-21, docs/SEATING-CHART-CONTRACT.md): the
-// generated per-artifact truth about which seats exist. Fetched once per
-// edition and cached — including the MISS (an artifact whose chart has not
-// been generated yet caches null and the chain falls back to verse_count
-// identity; W-31: LXX and THEOD chart today, the rest land as Wilbur's
-// generator clears them). buildChain is awaited at launch, so the chart is
-// on hand — or definitively absent — before the first chain is built.
-const seatingChartCache = new Map();
-
-// Q3 (0c): boot AWAITS a chart fetch for the default edition, and the default
-// edition has no chart — so every cold boot spends a full round trip learning
-// a 404 whose answer never changes. Three artifacts are charted (LXX, THEOD,
-// WLC) out of fourteen editions.
+// THE ADAPTER NO LONGER LOADS CARGO (H-14, 2026-08-12).
 //
-// The fix has two halves and this is the engine's: if the data DECLARES which
-// editions are charted, we never ask about the others. `setChartedEditions`
-// takes that list from the supplemental fetch at boot. Until the data carries
-// it the set stays null and behaviour is exactly as before — an unknown list
-// means "ask", never "assume absent", because guessing an edition is
-// uncharted would silently unseat a reader whose chart does exist.
+// Deleted here: `loadManifest` and its manifest URL/path, the Node
+// file-reading and Ajv scaffolding that served it, and `ensureSeatingChart`
+// with its cache and its `setChartedEditions` companion.
 //
-// The data half is O-39: one field in translations.json, Wilbur's.
-let chartedEditions = null;
-
-export function setChartedEditions(codes) {
-  chartedEditions = Array.isArray(codes) && codes.length ? new Set(codes) : null;
-}
-
-export async function ensureSeatingChart(code) {
-  if (!code) return null;
-  if (seatingChartCache.has(code)) return seatingChartCache.get(code);
-  if (chartedEditions && !chartedEditions.has(code)) {
-    seatingChartCache.set(code, null);   // declared uncharted: no request at all
-    return null;
-  }
-  let chart = null;
-  try {
-    if (isBrowser) {
-      chart = await fetchJson(`./data/gutenberg/seating/${code}.json`);
-    } else {
-      await _ensureNode();
-      const path = await import('path');
-      const { fileURLToPath } = await import('url');
-      const dir = path.dirname(fileURLToPath(import.meta.url));
-      chart = JSON.parse(await nodeReadFile(path.resolve(dir, `../../data/gutenberg/seating/${code}.json`), 'utf-8'));
-    }
-  } catch {
-    chart = null;
-  }
-  // A chart wearing the wrong edition is a deployment accident, not data —
-  // refuse it and fall back rather than seat a reader by another's chart.
-  if (chart && chart.edition !== code) chart = null;
-  seatingChartCache.set(code, chart);
-  return chart;
-}
-
-// Synchronous read of an already-fetched chart, for chain builds that happen
-// mid-session (descent to the verse ring). Boot's awaited ensureSeatingChart
-// has normally populated this; a miss just means identity fallback.
-export const getSeatingChart = code => (code && seatingChartCache.get(code)) || null;
+// Every one addressed a pre-doctrine file — the legacy manifest, or a
+// per-edition chart under `seating/`. The volume behind the wall loads itself
+// and carries its charts, so these were not merely unused: they were the
+// capability H-14 removes, still sitting here with working code inside them.
+//
+// `setChartedEditions` earns its own line. It existed so boot would not spend
+// a round trip learning a 404 for editions with no chart (O-39's engine half).
+// Under H-11 every enumerated edition declares `hasChart` in `volume.json`, so
+// the question is answered by the enumeration and the round trip is saved by
+// construction rather than by a list that could go stale.
 
 export function validate(raw) {
   const validator = getValidator();
@@ -157,53 +59,32 @@ export function normalize(raw) {
     languages: displayConfig.languages || null,
     editions: displayConfig.editions || null
   };
+  // BOOKS HANG FROM TESTAMENTS, AND CHAPTERS ARE NOT HERE (H-14).
+  //
+  // This walked testament → section → book → chapter. Sections were retired as
+  // a navigable level in July and are now gone from the enumeration entirely;
+  // chapters ceased to be a storage level under H-11, so there is nothing to
+  // walk into — a container is projected from the edition's chart at render,
+  // which is what O-44 rules and what `getBibleChapters` now does.
+  //
+  // The normalized set is therefore volume → testament → book. That is not a
+  // reduction in what the reader can reach: the rings below a book are built
+  // per edition from its chart, which one stored tree could never have
+  // expressed for fourteen traditions at once.
   Object.entries(testaments).forEach(([testamentId, testament], ti) => {
     const testamentOrder = Number.isFinite(testament?.sort_number) ? testament.sort_number : ti;
     addItem({ id: testamentId, name: testament?.name || testamentId, level: 'testament', parentId: rootId, order: testamentOrder });
-
-    // SECTIONS ARE NOT A LEVEL (Howell 2026-07-30). They were introduced only
-    // to subdivide a testament's books so they would fit the child pyramid;
-    // the star field solved that, and nothing has navigated them since — the
-    // volume enters testament, book, chapter and verse, never section. Books
-    // therefore hang directly off their testament, which is what the reader
-    // has always seen. The manifest keeps its sections (they are real
-    // scholarly divisions and Wilbur's to own) and `sectionId` still rides in
-    // item metadata as provenance; only the navigable LEVEL is retired.
-    const sections = testament?.sections || {};
-    Object.entries(sections).forEach(([sectionId, section]) => {
-      const books = section?.books || {};
-      Object.entries(books).forEach(([bookId, book], bi) => {
-        const bookOrder = Number.isFinite(book?.sort_number) ? book.sort_number : (Number.isFinite(book?.book_number) ? book.book_number : bi);
-        addItem({
-          id: bookId,
-          name: book?.book_name || book?.name || bookId,
-          level: 'book',
-          parentId: testamentId,
-          order: bookOrder,
-          meta: { testamentId, sectionId, bookNumber: book?.book_number ?? null }
-        });
-
-        const chapters = book?.chapters || {};
-        Object.entries(chapters).forEach(([chapterKey, chapterVal], ci) => {
-          const chapterId = chapterVal?.id || `${bookId}:${chapterKey}`;
-          const chapterNumber = chapterVal?.chapter_number ?? Number.parseInt(chapterKey, 10);
-          const chapterOrder = Number.isFinite(chapterVal?.sort_number) ? chapterVal.sort_number : (Number.isFinite(chapterNumber) ? chapterNumber : ci);
-          addItem({
-            id: chapterId,
-            name: chapterVal?.name || chapterKey,
-            level: 'chapter',
-            parentId: bookId,
-            order: chapterOrder,
-            meta: {
-              testamentId,
-              sectionId,
-              bookId,
-              chapterNumber: Number.isFinite(chapterNumber) ? chapterNumber : null,
-              chapterKey,
-              externalFile: legacyTextFile(chapterVal, `data/gutenberg/chapters/${bookId}/${String(chapterKey).padStart(3, '0')}.json`)
-            }
-          });
-        });
+    Object.entries(testament?.books || {}).forEach(([bookId, book], bi) => {
+      addItem({
+        id: bookId,
+        // A name is a QUOTATION (H-2), and the names table is the only place
+        // one lives now — an unnamed id displays unnamed rather than wearing
+        // its own opaque spelling at the reader.
+        name: book?.name || null,
+        level: 'book',
+        parentId: testamentId,
+        order: Number.isFinite(book?.sort_number) ? book.sort_number : bi,
+        meta: { testamentId, leaves: book?.leaves ?? null }
       });
     });
   });
@@ -253,37 +134,28 @@ export function layoutSpec(normalized, viewport) {
   };
 }
 
+// Books hang from testaments with nothing between (H-14): the section was
+// never a level a reader could stand on, and it is gone from the enumeration.
 function findBook(manifest, bookId) {
   const testaments = manifest?.Gutenberg_Bible?.testaments || {};
   for (const testament of Object.values(testaments)) {
-    const sections = testament?.sections || {};
-    for (const section of Object.values(sections)) {
-      const books = section?.books || {};
-      if (books[bookId]) return books[bookId];
-    }
+    const book = (testament?.books || {})[bookId];
+    if (book) return book;
   }
   return null;
 }
 
-function findChapter(manifest, chapterId) {
-  const testaments = manifest?.Gutenberg_Bible?.testaments || {};
-  for (const testament of Object.values(testaments)) {
-    const sections = testament?.sections || {};
-    for (const section of Object.values(sections)) {
-      const books = section?.books || {};
-      for (const [bookKey, bookVal] of Object.entries(books)) {
-        const chapters = bookVal?.chapters || {};
-        for (const [chapterKey, chapterVal] of Object.entries(chapters)) {
-          const id = chapterVal?.id || `${bookKey}:${chapterKey}`;
-          if (id === chapterId) {
-            return { chapter: chapterVal, book: bookVal };
-          }
-        }
-      }
-    }
-  }
-  return null;
-}
+// `findChapter` LIVED HERE AND IS DELETED (H-14).
+//
+// It searched the manifest's stored chapter tree for an id, and there is no
+// such tree: a container is projected from the edition's chart at render
+// (O-44), so the same book yields different containers to different
+// traditions and no single stored answer could be right for all of them.
+//
+// Its one caller wanted a chapter's title for the detail sector, and the
+// selected ITEM already carries that — built by the ring, from the chart, in
+// the reader's own tongue. Reaching back into storage for it was how a stale
+// name outlived the language that chose it (W-16).
 
 // READING AHEAD. The verse ring spans the whole volume but verse TEXT
 // arrives one chapter-file at a time, so a reader crossing into a new
@@ -303,24 +175,32 @@ let _renderDetail = null;          // captured at boot; repaints when text lands
 const _requestedChapters = new Set(); // asked-for files, so a failure is not re-asked forever
 let _chapterOrder = null;          // flat reading order, memoized
 
+// THE READING ORDER, FROM THE ENUMERATION (H-14).
+//
+// This walked testament → section → book → chapter and read `_external_file`
+// off each stored chapter. None of those survive: sections are not a level,
+// containers are not stored, and a container has no file of its own.
+//
+// The read-ahead's job is unchanged — know what comes next so a reader
+// crossing a boundary never waits — but under the wall a UNIT is the fetch
+// granularity, because its text arrives whole. So the order is the order of
+// the units the volume enumerates, and the read-ahead warms the next unit
+// rather than the next chapter file.
 function chaptersInReadingOrder(manifest) {
   if (_chapterOrder) return _chapterOrder;
-  const bible = manifest?.Gutenberg_Bible;
+  const volume = manifest?.__wallVolume;
   const order = [];
-  Object.entries(bible?.testaments || {}).sort(byDeclaredOrder).forEach(([, testament]) => {
-    Object.entries(testament?.sections || {}).sort(byDeclaredOrder).forEach(([, section]) => {
-      Object.entries(section?.books || {}).sort(byDeclaredOrder).forEach(([bookId, book]) => {
-        Object.entries(book?.chapters || {}).sort(byDeclaredOrder).forEach(([chapterKey, chapter]) => {
-          order.push({
-            chapterId: chapter?.id || `${bookId}:${chapterKey}`,
-            bookId: legacyUnitId(book, bookId),
-            externalFile: legacyTextFile(chapter),
-            verseCount: Number.isFinite(chapter?.verse_count) ? chapter.verse_count : 0
-          });
-        });
+  for (const testament of volume?.testaments || []) {
+    for (const book of testament.books || []) {
+      order.push({
+        chapterId: book.id,
+        bookId: book.id,
+        // The text address IS the unit's id: there is no file to name.
+        externalFile: book.id,
+        verseCount: Number.isFinite(book.leaves) ? book.leaves : 0
       });
-    });
-  });
+    }
+  }
   _chapterOrder = order;
   return order;
 }
@@ -364,25 +244,36 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
 
   if (level === 'book') {
     const book = findBook(manifest, id) || {};
-    const chapterCount = Object.keys(book.chapters || {}).length;
-    const bookNumber = book.book_number;
-    const subtitle = [bookNumber ? `Book ${bookNumber}` : null, chapterCount ? `${chapterCount} chapters` : null]
-      .filter(Boolean)
-      .join(' · ');
+    // A BOOK'S SIZE IS ITS LEAVES (H-14). This counted the book's stored
+    // chapters, and there are none: containers are projected per edition from
+    // the chart, so a single count would have to pick one tradition's division
+    // and present it as the book's own. The utterance count is edition-neutral
+    // and is what `volume.json` actually enumerates.
+    const subtitle = Number.isFinite(book.leaves) ? `${book.leaves} verses` : '';
     return {
       type: 'card',
-      title: book.book_name || book.name || selected.name || id,
+      // The name comes from the ITEM, which the ring built from the names
+      // table in the reader's tongue. Reaching into the root for a baked name
+      // is what served a stale language (W-16).
+      title: selected.name || id,
       body: subtitle || 'Book overview'
     };
   }
 
   if (level === 'chapter') {
-    const lookup = findChapter(manifest, id);
-    const chapterName = lookup?.chapter?.name || selected.name || id;
-    const bookName = lookup?.book?.book_name || lookup?.book?.name || lookup?.book?.id || '';
+    // THE ITEM ALREADY KNOWS ITS OWN NAME (H-14). This searched the manifest's
+    // stored chapter tree, which no longer exists — and would not have been
+    // right if it did, since a container is projected per edition and the
+    // stored answer could only ever be one tradition's.
+    //
+    // The selected item was built by the ring, from the chart, in the reader's
+    // tongue. Reaching back into storage is how a stale name outlived the
+    // language that chose it (W-16).
+    const chapterName = selected.name || id;
+    const bookName = selected.meta?.bookName || '';
     return {
       type: 'text',
-      text: bookName ? `${bookName}: ${chapterName}` : chapterName
+      text: bookName ? `${bookName}: ${chapterName}` : String(chapterName)
     };
   }
 
@@ -959,7 +850,6 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
 }
 
 export const bibleAdapter = {
-  loadManifest,
   validate,
   normalize,
   layoutSpec,
