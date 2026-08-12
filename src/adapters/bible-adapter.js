@@ -812,8 +812,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // appended. Every other level returns '' and keeps the original rules.
   const getParentLabelSuffix = (item) => {
     if (item?.level !== 'verse') return '';
-    const chapterId = item.meta?.chapterId || item.parentId || '';
-    const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
+    const chapterKey = item.meta?.chapterLabel;
     if (!chapterKey) return '';
     const n = Number.parseInt(chapterKey, 10);
     const numeral = Number.isFinite(n) ? toTraditionNumeral(n, namesMap?.locale) : String(chapterKey);
@@ -846,8 +845,19 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // already the citation form for a chapter, so "CAP" would only
     // re-state what the numeral says (Howell: "it's redundant").
     if (item.level === 'verse') {
-      const chapterId = item.meta?.chapterId || item.parentId || '';
-      const chapterKey = chapterId.includes(':') ? chapterId.split(':').pop() : chapterId;
+      // THE LABEL IS CARRIED, NEVER RECOVERED FROM THE ID (H-2).
+      //
+      // This read `chapterId.split(':').pop()` — parsing an id to get back a
+      // label, which is reading meaning out of the text of an id and is the
+      // exact habit `core/identity.js` exists to end. It worked only because
+      // ids happened to spell `GENE:1`. Against an opaque id there is nothing
+      // to parse, and Howell's phone showed the result: the parent button read
+      // "GENESIS bc22df/1" — the filesystem talking to the reader.
+      //
+      // Changing the separator would have made it work again by luck and left
+      // the parser in place. The label travels on the item instead, put there
+      // by whoever knew it.
+      const chapterKey = item.meta?.chapterLabel;
       if (!chapterKey) return '';
       const n = Number.parseInt(chapterKey, 10);
       // The parent button names the reader's chapter, so it counts in the

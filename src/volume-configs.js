@@ -10,6 +10,7 @@ import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.
 import { catalogAdapter } from './adapters/catalog-adapter.js';
 import { bibleAdapter, buildBibleRootChain, ensureSeatingChart, setChartedEditions } from './adapters/bible-adapter.js';
 import { loadBibleVolume } from './adapters/bible-volume.js';
+import { seedVerseCache } from './adapters/volume-helpers.js';
 
 // WHERE THE BIBLE'S CARGO LIVES UNDER THE WALL (H-14). Today that is the
 // Genesis 1 fixture, which IS the volume until 1b's first increment lands —
@@ -73,6 +74,14 @@ const volumeConfigs = {
           return response.json();
         }
       });
+      // THE TEXT IS SEATED ONCE, UNDER THE UNIT'S ID (H-14). Every reader
+      // below — the detail sector, the verse sky, the read-ahead — asks the
+      // cache by an opaque key and has no idea a file ever existed. Seeding
+      // here means none of them changed.
+      for (const unit of volume.units) {
+        const records = volume.textFor(unit.id);
+        if (records) seedVerseCache(unit.id, records);
+      }
       // The wall volume rides along so the builders can reach charts, spines
       // and text without a second load. It is not a manifest wearing a new
       // name: `toRoot()` brings back nothing H-14 retired, and the suite

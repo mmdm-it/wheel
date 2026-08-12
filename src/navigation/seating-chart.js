@@ -300,7 +300,12 @@ export function chaptersFromSeats(items) {
   for (const it of items) {
     if (!it || it.level !== 'verse' || !it.chapterKey || it.chapterKey === seenKey) continue;
     seenKey = it.chapterKey;
-    const label = it.meta?.chapterLabel ?? String(it.chapterKey).split(':').pop();
+    // The label is CARRIED, never recovered from the key (H-2). The fallback
+    // here split the key on a colon — the same id-parsing habit that printed
+    // an opaque id at the reader from the parent button. A seat whose label
+    // nobody recorded has no label, and that is the honest answer.
+    const label = it.meta?.chapterLabel ?? null;
+    if (!label) continue;
     out.push({
       id: it.meta?.chapterId || it.chapterKey,
       name: label,
