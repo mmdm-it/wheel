@@ -695,28 +695,7 @@ export function createApp({
     if (detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = false;
       emitDetailSectorChange(false, 'immediate');
-      // THE COLLAPSE MUST REPAINT WHEN IT ENDS (pre-existing; surfaced by
-      // H-14 and reported by Howell 2026-08-12: "the pyramid is empty").
-      //
-      // `suppressPyramid` is `detailSectorShown || volumeLogo.animating`. At a
-      // LEAF the detail sector is open, so ascending from one starts this
-      // collapse — and the migration's own onComplete then calls render()
-      // while `animating` is still true. The pyramid is suppressed for that
-      // paint, and nothing repainted afterwards, so the sky stayed empty
-      // until some later render happened to fire.
-      //
-      // The sibling call site further down has always passed this callback;
-      // these two never did. Restoring it is repairing intended behaviour,
-      // not changing choreography.
-      //
-      // WHY IT WAS INVISIBLE FOR SO LONG, which is the part worth keeping:
-      // the old text path FETCHED a container's file on demand, and its
-      // onLoaded called app.refreshPyramid() — an unrelated asynchronous
-      // repaint that landed after the collapse and filled the hole. Under the
-      // wall a unit's text is seeded at boot, so that fetch never happens and
-      // nothing covers for this any more. The bug did not appear; its cover
-      // did.
-      volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
+      volumeLogo.collapse(arcParams, magnifier.angle);
     }
 
     // Snapshot magnifier and parent-button state BEFORE animations start.
@@ -952,28 +931,7 @@ export function createApp({
     if (detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = false;
       emitDetailSectorChange(false, 'immediate');
-      // THE COLLAPSE MUST REPAINT WHEN IT ENDS (pre-existing; surfaced by
-      // H-14 and reported by Howell 2026-08-12: "the pyramid is empty").
-      //
-      // `suppressPyramid` is `detailSectorShown || volumeLogo.animating`. At a
-      // LEAF the detail sector is open, so ascending from one starts this
-      // collapse — and the migration's own onComplete then calls render()
-      // while `animating` is still true. The pyramid is suppressed for that
-      // paint, and nothing repainted afterwards, so the sky stayed empty
-      // until some later render happened to fire.
-      //
-      // The sibling call site further down has always passed this callback;
-      // these two never did. Restoring it is repairing intended behaviour,
-      // not changing choreography.
-      //
-      // WHY IT WAS INVISIBLE FOR SO LONG, which is the part worth keeping:
-      // the old text path FETCHED a container's file on demand, and its
-      // onLoaded called app.refreshPyramid() — an unrelated asynchronous
-      // repaint that landed after the collapse and filled the hole. Under the
-      // wall a unit's text is seeded at boot, so that fetch never happens and
-      // nothing covers for this any more. The bug did not appear; its cover
-      // did.
-      volumeLogo.collapse(arcParams, magnifier.angle, () => render(rotation));
+      volumeLogo.collapse(arcParams, magnifier.angle);
     }
 
     // The lens and vessel empty; their fills travel as clones.
@@ -1388,7 +1346,26 @@ export function createApp({
     }
 
     // Suppress child pyramid when Detail Sector is shown or animating
-    const suppressPyramid = detailSectorShown || volumeLogo.animating;
+    // THE PYRAMID IS SUPPRESSED BY AN ARRIVING SECTOR, NOT A LEAVING ONE
+    // (Howell 2026-08-12: "the pyramid is empty").
+    //
+    // This read `volumeLogo.animating` in either direction, and the two
+    // directions mean opposite things. An EXPANDING sector is taking the
+    // screen, so the pyramid must go. A COLLAPSING one is giving it back, and
+    // the pyramid should already be arriving as it leaves — which is exactly
+    // the migration out of a leaf, and exactly where the sky stayed empty.
+    //
+    // MY FIRST REPAIR WAS WORSE THAN THE BUG and is recorded rather than
+    // quietly replaced: I had the collapse re-render on completion, matching
+    // the sibling call site. But that fires while the migration is still
+    // running — BEFORE setPrimaryItems commits — so `selected` was still the
+    // old leaf and the render re-opened the detail sector. Howell saw it
+    // enlarge on the second ascent, a thing that had never happened.
+    //
+    // The lesson is the one this file keeps teaching: a repaint scheduled on
+    // one animation's clock will read another animation's half-finished
+    // state. The fix is to make the GUARD correct, not to paint again later.
+    const suppressPyramid = detailSectorShown || (volumeLogo.animating && !volumeLogo.collapsing);
 
     // During rotation use the visible node currently closest to the magnifier so
     // the child pyramid refreshes live rather than waiting for a committed snap.

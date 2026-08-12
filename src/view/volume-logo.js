@@ -36,6 +36,7 @@ export class VolumeLogo {
     this._animationId = null;   // rAF handle for cancellation
     this._expanded = false;     // current state
     this._animating = false;    // animation in progress
+    this._collapsing = false;   // ...and which WAY it is going
     this._renderConfig = null;  // saved config from render() for start-state calcs
   }
 
@@ -256,6 +257,16 @@ export class VolumeLogo {
    */
   get animating() { return this._animating; }
 
+  // WHICH WAY THE SECTOR IS MOVING (Howell 2026-08-12, the empty sky).
+  //
+  // Callers suppressed the child pyramid whenever this was animating, in
+  // either direction. But the two directions mean opposite things: an
+  // EXPANDING sector is taking the screen, so the pyramid must go; a
+  // COLLAPSING one is giving it back, and the pyramid should already be
+  // arriving as it leaves. Suppressing during a collapse is what left the sky
+  // empty on the first ascent out of a leaf.
+  get collapsing() { return this._animating && this._collapsing; }
+
   /**
    * Expand the Detail Sector circle + logo from upper-right corner to focus ring center
    * @param {Object} arcParams - { hubX, hubY, radius }
@@ -272,6 +283,7 @@ export class VolumeLogo {
       this._animationId = null;
     }
     this._animating = true;
+    this._collapsing = false;
     if (this.clickTarget) this.clickTarget.parentNode.setAttribute('display', 'none');
     const start = this._getStartState();
     const end = this._getEndState(arcParams, magnifierAngle);
@@ -293,6 +305,7 @@ export class VolumeLogo {
         this._applyFrame(start, end, 1);
         this._animationId = null;
         this._animating = false;
+        this._collapsing = false;
         this._expanded = true;
         if (onComplete) onComplete();
       }
@@ -316,6 +329,7 @@ export class VolumeLogo {
       this._animationId = null;
     }
     this._animating = true;
+    this._collapsing = true;
     const start = this._getEndState(arcParams, magnifierAngle); // current = expanded
     const end = this._getStartState();                           // target = collapsed
     // v0 parity: collapse uses 1.0 start opacity for BOTH circle and logo
@@ -337,6 +351,7 @@ export class VolumeLogo {
         if (this.logo) this.logo.removeAttribute('transform');
         this._animationId = null;
         this._animating = false;
+        this._collapsing = false;
         this._expanded = false;
         if (this.clickTarget) this.clickTarget.parentNode.removeAttribute('display');
         if (onComplete) onComplete();
