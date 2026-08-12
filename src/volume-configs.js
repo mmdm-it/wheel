@@ -86,7 +86,21 @@ const volumeConfigs = {
       // and text without a second load. It is not a manifest wearing a new
       // name: `toRoot()` brings back nothing H-14 retired, and the suite
       // asserts that rather than trusting the comment.
-      return { Gutenberg_Bible: volume.toRoot(), __wallVolume: volume };
+      //
+      // IT RIDES NON-ENUMERABLY, and that is not fastidiousness — it is a
+      // defect Howell's phone found. `index.js` decides whether a manifest
+      // needs unwrapping by COUNTING ITS KEYS: exactly one means "this is a
+      // wrapper, take what is inside". Adding a plain sibling key made the
+      // count two, so it stopped unwrapping, `display_config` came back
+      // undefined, and the volume logo and the colour scheme disappeared
+      // together — they are read from adjacent lines.
+      //
+      // Non-enumerable says what is true: this is a handle for the builders,
+      // not part of the manifest's content. Nothing that walks, counts or
+      // serialises the manifest can see it.
+      const manifest = { Gutenberg_Bible: volume.toRoot() };
+      Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+      return manifest;
     },
     theme: 'bible',
     palette: {
@@ -224,11 +238,26 @@ const volumeConfigs = {
     // Esperanto case, where a Genesis-only edition should show one book and
     // two chapters — needs the per-edition coverage index (HANDOFF O-16);
     // this is the seam it will fill.
+    // PRUNING MUST REACH THE VOLUME, NOT ONLY THE ROOT (H-14).
+    //
+    // This emptied `testaments` and trusted every builder to read the root.
+    // Under the wall the verse chain reads the wall volume directly, so it
+    // walked straight past the prune: with NO servable edition the reader
+    // would still have been shown the text. The honesty gate was inert and
+    // nothing said so — the same defect the servable ruling exists to prevent,
+    // wearing the wall's clothes.
+    //
+    // Found because a non-enumerable handle stopped surviving the spread
+    // below, which turned an invisible bypass into a visible empty. Fixing it
+    // by relying on that spread would have left the gate depending on an
+    // accident of property descriptors, so the withdrawal is now explicit:
+    // nothing offered means the volume itself is withheld, and every builder
+    // gets the same answer because there is only one answer to get.
     pruneToOffered: (manifest, offeredEditions) => {
       if (offeredEditions.length) return manifest;
       const root = manifest?.Gutenberg_Bible;
       if (!root) return manifest;
-      return { ...manifest, Gutenberg_Bible: { ...root, testaments: {} } };
+      return { Gutenberg_Bible: { ...root, testaments: {} } };
     },
     buildChain: (manifest, options, namesMap) => buildBibleChain(manifest, options, namesMap),
     // A committed edition warms its seating chart, so the reader's NEXT
