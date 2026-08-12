@@ -72,6 +72,46 @@ Adapters and geometry helpers expose this layout as part of the `layoutSpec` con
 **Current implementation note (v3.7.12)**: The UI renders fan-lines, spiral, and intersections via `computeChildPyramidGeometry` and hides child nodes; Spiral layout remains the contract, but nodes are intentionally suppressed in PyramidView until re-enabled.
 - Theming: base tokens + per-volume tokens injected at render time; no inline styles/`!important`.
 
+## The Migration Wall (H-14, 2026-08-12)
+
+**The engine reads only doctrine-conformant cargo, per volume.** This is a
+capability statement, not a display policy: where a volume's doctrine
+migration has landed, the engine has **no code path** that can read that
+volume's pre-doctrine data. The legacy reading path is deleted rather than
+conditioned — no flag, no override, no branch reaches it — so unmigrated
+content is not hidden, it is *unreadable*.
+
+Howell's framing, kept because it decided the ruling: **this is 16-bit to
+24-bit. The new player does not play the old files.**
+
+**Per volume, and the wall lands one volume at a time.** It stands on the
+Bible today. Catalog, calendar and places keep their own manifests and their
+own readers until each raises its own wall at its own doctrine migration.
+A volume behind the wall and a volume in front of it do not share a reading
+path, which is the whole reason the scope can be per-volume at all.
+
+**What follows from it, and these are consequences rather than separate
+decisions:**
+
+- **`volume.json` is the sole enumeration**, and it grows as increments land.
+  Nothing else says what the volume contains — not a manifest, not a
+  directory listing, not an index derived from either.
+- **Coexistence is retired** as display policy *and* as technical
+  requirement. There is no seam, no descriptor spanning two layouts, and no
+  substitution of one address for another.
+- **Increment order is user-visible.** Each increment makes a unit appear, so
+  the order data lands in is the order a reader sees it appear in.
+- **The engine going dark is correct behaviour**, not degradation. Between
+  the wall and the first migrated increment a volume shows only what conforms.
+
+**Why a wall and not a gate.** A gate is a branch, and a branch is a second
+code path that must stay correct while nothing exercises it. The migration is
+79 increments long; a legacy path kept alive across all of them would be
+read by no one and trusted by everyone, and the first increment to disagree
+with it would produce a plausible wrong reading rather than a failure. The
+same reasoning retires each fallback the engine has removed: a path that
+cannot be reached cannot be silently wrong.
+
 ## Validation & Data Contracts
 
 - JSON Schemas per manifest; enforced in CI/test via `node --test`.

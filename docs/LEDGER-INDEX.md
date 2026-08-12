@@ -8,23 +8,24 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-11 from 112 entries.
+Generated 2026-08-12 from 116 entries.
 
 | id | status | title |
 |---|---|---|
 | H-1 | OPEN | THE ROADMAP — engine first, proven on a fixture; then the corpus |
 | H-2 | OPEN | A LABEL IS A QUOTATION |
-| H-3 | OPEN | THE CLOSING RULE, AND THE REPAIR LOOP |
-| H-4 | OPEN | THE COMMUNICATION ARCHITECTURE |
-| H-5 | OPEN | THE CONTENT ALREADY PUBLIC — one rule, one grant, three redactions |
-| H-6 | OPEN | THE DEPOSIT METADATA TELLS THE TRUTH |
-| H-7 | OPEN | THE CATCH-ALL IS RETIRED — DECISIONS.md is archived |
-| H-8 | OPEN | NOTICE NAMES EVERY PATH — the schema grant closed, the root files sorted |
+| H-3 | CLOSED | THE CLOSING RULE, AND THE REPAIR LOOP |
+| H-4 | CLOSED | THE COMMUNICATION ARCHITECTURE |
+| H-5 | CLOSED | THE CONTENT ALREADY PUBLIC — one rule, one grant, three redactions |
+| H-6 | CLOSED | THE DEPOSIT METADATA TELLS THE TRUTH |
+| H-7 | CLOSED | THE CATCH-ALL IS RETIRED — DECISIONS.md is archived |
+| H-8 | CLOSED | NOTICE NAMES EVERY PATH — the schema grant closed, the root files sorted |
 | H-9 | OPEN | SCRIPTS ACROSS THE WALL — a named door, not an open one |
-| H-10 | OPEN | ONE TRIGGER FOR MMDM.IT, AND WF-7's HONEST SCOPE |
+| H-10 | CLOSED | ONE TRIGGER FOR MMDM.IT, AND WF-7's HONEST SCOPE |
 | H-11 | OPEN | THE POST-MIGRATION LAYOUT — per-edition, per-book, opaque, immutable |
 | H-12 | OPEN | THE ROADMAP, SECOND EDITION |
 | H-13 | OPEN | ACCESSIBILITY IS NOT A GOAL — landed items tolerated and frozen |
+| H-14 | OPEN | THE MIGRATION WALL — the engine cannot read pre-doctrine cargo |
 | O-1 | OPEN | Prominence tiers for manufacturers (the ranked starfield) |
 | O-2 | DONE | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | OPEN | Travel-color theme keys (CONTRACT heads-up, not yet work) |
@@ -65,10 +66,11 @@ Generated 2026-08-11 from 112 entries.
 | O-38 | OPEN | CHAPTER CACHING WAITS FOR VERSIONED PATHS — Q5, taken only as far as it is safe |
 | O-39 | OPEN | WILBUR: ONE FIELD KILLS THE BOOT 404 — the data half of Q3 |
 | O-40 | OPEN | THE MANIFEST PERF BUDGET MEASURED CODE NOBODY RUNS |
-| O-41 | OPEN | THE LAST TWO 0c ITEMS NEED RULINGS, NOT KEYSTROKES — Q14's font and Q12's AT semantics |
+| O-41 | CLOSED | THE LAST TWO 0c ITEMS NEED RULINGS, NOT KEYSTROKES — Q14's font and Q12's AT semantics |
 | O-42 | OPEN | THE COEXISTENCE SEAM — how one engine reads two layouts at once |
 | O-43 | OPEN | VOLUME VOCABULARY IS LINTED, NOT REMEMBERED |
 | O-44 | OPEN | CHAPTERS ARE A PROJECTION — but nothing says what to project FROM |
+| O-45 | OPEN | THE SPLICE IS FOUR MOVES, NOT THREE — the text shapes do not meet |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
@@ -124,3 +126,5 @@ Generated 2026-08-11 from 112 entries.
 | W-53 | OPEN | NON-AUTHOR RE-RUNS: O-42, O-43, O-37 — two pass clean, one passes with a hole |
 | W-54 | OPEN | O-44's NORMATIVE SECTION — landed in cargo, drafted for the public copy |
 | W-55 | OPEN | TWO OF MY OWN GUARDS WERE NARROWER THAN THEIR NAMES — both closed |
+| W-56 | OPEN | HOWELL'S THREE ANSWERS, CARRIED — O-41 closed, O-37's line drafted, the door ruled |
+| W-57 | OPEN | WF-13's ROTATION IS STARTED — and its first sitting found a sixth dead trigger |
