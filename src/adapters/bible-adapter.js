@@ -349,7 +349,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   let bibleVerseContext = null;
   // Pre-populate verse context at startup so OUT navigation works immediately.
   if (initialLevel === 'verse' && options?.bookId && options?.chapterId) {
-    const chapterItems = getBibleChapters(manifest, { id: options.bookId }, namesMap, 'book');
+    const chapterItems = getBibleChapters(manifest, { id: options.bookId }, namesMap, 'book',
+      options?.activeEdition || options?.translation || null);
     const ch = chapterItems.find(c => c.meta?.chapterKey === String(options.chapterId));
     if (ch) {
       bibleVerseContext = {
@@ -837,6 +838,22 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },
+      // THE CHAPTERS BINDING CARRIES THE EDITION (H-14). Containers are
+      // projected from the committed edition's chart (O-44), so a caller with
+      // no edition gets no chapters — which is exactly what the child pyramid
+      // showed on Howell's phone: Genesis in the magnifier and an empty sky
+      // beneath it.
+      //
+      // The host cannot supply the edition; it is volume-agnostic by design
+      // and this is a per-edition question. So the adapter binds it here,
+      // once, and every caller downstream — the pyramid's chapters, its
+      // book-level preview — asks the same bound function. Threading a fifth
+      // argument through each call site instead is how one of them stays
+      // wrong.
+      getBibleChapters: (m, selected, nm, mode) => getBibleChapters(
+        m || manifest, selected, nm || namesMap, mode,
+        options?.activeEdition || options?.translation || null
+      ),
       getBibleVerseItems: verseItemsForChapter,
       getBibleVerseCacheStatus,
       getBibleVerseChain: verseId => verseChain(verseId),
