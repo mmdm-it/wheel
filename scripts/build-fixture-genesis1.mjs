@@ -60,26 +60,38 @@ const unitId = opaque('b', 'GENE');
 const utterances = ordinals.map(n => opaque('u', n));
 
 // THE GROUPING IS REAL, READ FROM THE CORPUS, NEVER INVENTED (Howell ruled
-// 2026-08-12: volume.json carries it). Genesis sits in a testament and a
-// section today, and the wall must not quietly flatten the reader's world
-// from six levels to four — the feel is frozen for the whole of phase 1.
+// 2026-08-12: volume.json carries it). The wall must not quietly flatten the
+// reader's world — the feel is frozen for the whole of phase 1.
 //
-// Their ids go OPAQUE like every other id (H-11 item 2). The corpus spells
-// them `Vetus_Testamentum` and `Pentateuchus`, which is exactly the
-// filesystem writing down what a thing IS.
+// THE READER'S LEVELS ARE TESTAMENT, BOOK, CHAPTER, VERSE (Howell, 2026-08-12,
+// correcting me). **There is no section level**, and this fixture briefly
+// carried one because I read the level list off the corpus's
+// `hierarchy_levels`, which still declares `section` with a display name and
+// focus-ring properties as though it were navigable. The ENGINE is the truth
+// here and it is unambiguous: it builds items at root, testament, book,
+// chapter and verse, ascends from a book straight to its testament, and has
+// no section ring anywhere. `sectionId` survives only as data the seating
+// chart walks, never as a place the reader can stand.
+//
+// So the section is deliberately NOT carried. Emitting it would have put a
+// dead level into the sole enumeration on the strength of a stale
+// declaration — a derived-view failure with a straight face.
+//
+// The testament id goes OPAQUE like every other id (H-11 item 2). The corpus
+// spells it `Vetus_Testamentum`, which is the filesystem writing down what a
+// thing IS.
 const manifest = JSON.parse(readFileSync(MANIFEST, 'utf-8'));
 const registry = JSON.parse(readFileSync(REGISTRY, 'utf-8'));
 
 let placement = null;
 for (const [testamentKey, testament] of Object.entries(manifest.Gutenberg_Bible?.testaments || {})) {
-  for (const [sectionKey, section] of Object.entries(testament.sections || {})) {
-    if (section.books?.GENE) placement = { testamentKey, sectionKey };
+  for (const section of Object.values(testament.sections || {})) {
+    if (section.books?.GENE) placement = { testamentKey };
   }
 }
 if (!placement) throw new Error('the corpus does not place GENE — the fixture cannot invent a home for it');
 
 const testamentId = opaque('t', placement.testamentKey);
-const sectionId = opaque('s', placement.sectionKey);
 
 const write = (rel, data) => {
   const file = path.join(OUT, VERSION, rel);
@@ -103,10 +115,7 @@ write('volume.json', {
   _note: 'H-11 layout fixture under the H-14 wall. Genesis 1, Douay-Rheims offered.',
   testaments: [{
     id: testamentId,
-    sections: [{
-      id: sectionId,
-      books: [{ id: unitId, leaves: utterances.length }]
-    }]
+    books: [{ id: unitId, leaves: utterances.length }]
   }],
   // SERVABILITY LIVES HERE NOW, because the wall forbids reading the legacy
   // registry. `proofread: false` is the corpus's own value for DRA, verified
@@ -132,7 +141,6 @@ for (const code of OFFERED) {
   const names = registry.names?.[lang] || {};
   write(`names/${lang}.json`, {
     testaments: { [testamentId]: names.testaments?.[placement.testamentKey] || null },
-    sections: { [sectionId]: names.sections?.[placement.sectionKey] || null },
     books: { [unitId]: names.books?.GENE || null },
     // Latin short forms are the volume's own tongue and the near-universal
     // citation; they stand in for wayfinding until each language carries its
@@ -192,7 +200,7 @@ console.log(`fixture: ${OUT}/${VERSION}`);
 console.log(`  book ${unitId} · ${utterances.length} utterances`);
 console.log(`  on disk:  ${GRANTED.join(', ')}`);
 console.log(`  OFFERED:  ${OFFERED.join(', ')}  (volume.json is the sole enumeration — H-14)`);
-console.log(`  grouping: ${testamentId} › ${sectionId} › ${unitId}`);
+console.log(`  levels:   testament ${testamentId} › book ${unitId} › chapter › verse`);
 const alphabetical = [...utterances].sort();
 const same = alphabetical.every((id, i) => id === utterances[i]);
 console.log(`  alphabetical order matches spine order: ${same}`

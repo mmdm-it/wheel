@@ -4,15 +4,10 @@
   "testaments": [
     {
       "id": "t0dc09",
-      "sections": [
+      "books": [
         {
-          "id": "s5c7a0",
-          "books": [
-            {
-              "id": "bc22df",
-              "leaves": 31
-            }
-          ]
+          "id": "bc22df",
+          "leaves": 31
         }
       ]
     }

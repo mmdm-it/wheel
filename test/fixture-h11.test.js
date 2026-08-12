@@ -20,27 +20,44 @@ const read = rel => JSON.parse(readFileSync(at(rel), 'utf-8'));
 
 const volume = read('volume.json');
 const testament = volume.testaments[0];
-const section = testament.sections[0];
-const unitId = section.books[0].id;
+const unitId = testament.books[0].id;
 
 describe('the H-11 fixture — shape', () => {
   it('carries one book, opaque, with its leaf count', () => {
-    assert.equal(section.books.length, 1);
-    assert.equal(section.books[0].leaves, 31, 'Genesis 1 has 31 verses');
+    assert.equal(testament.books.length, 1);
+    assert.equal(testament.books[0].leaves, 31, 'Genesis 1 has 31 verses');
     assert.doesNotMatch(unitId, /GEN|genesis/i,
       'the filesystem must stop spelling out what a thing IS (H-11)');
   });
 
-  it('CARRIES THE GROUPING — the reader keeps its six levels (Howell, 2026-08-12)', () => {
-    // The wall must not quietly flatten the reader's world from six levels to
-    // four. With one book every group has one child, which is degenerate and
-    // correct, and it is the shape 79 books will hang from.
+  it('CARRIES THE TESTAMENT — the reader keeps its levels (Howell, 2026-08-12)', () => {
+    // The wall must not quietly flatten the reader's world. With one book the
+    // testament has one child, which is degenerate and correct, and it is the
+    // shape 79 books will hang from.
     assert.equal(volume.testaments.length, 1);
-    assert.equal(testament.sections.length, 1);
-    for (const id of [testament.id, section.id]) {
-      assert.doesNotMatch(id, /Testamentum|Pentateuch/i,
-        'the grouping ids go opaque like every other id (H-11 item 2)');
-    }
+    assert.equal(testament.books.length, 1);
+    assert.doesNotMatch(testament.id, /Testamentum/i,
+      'the testament id goes opaque like every other id (H-11 item 2)');
+  });
+
+  it('CARRIES NO SECTION LEVEL — the reader cannot stand there', () => {
+    // Howell, 2026-08-12, correcting me: the reader's levels are testament,
+    // book, chapter, verse. This fixture briefly carried a section because I
+    // read the level list off the corpus's `hierarchy_levels`, which STILL
+    // declares `section` with a display name and focus-ring properties as
+    // though it were navigable. It is not, and the engine is the truth:
+    // ascending from a book goes straight to its testament, and no ring is
+    // ever built at section level.
+    //
+    // Emitting one would have put a dead level into the sole enumeration on
+    // the strength of a stale declaration — a derived-view failure with a
+    // straight face, and precisely the kind this month keeps producing.
+    assert.equal(testament.sections, undefined,
+      'a section here is a level the reader can never reach');
+    assert.ok(!JSON.stringify(volume).includes('section'),
+      'nothing in the sole enumeration may mention a retired level');
+    assert.equal(read('names/english.json').sections, undefined,
+      'and nothing names one');
   });
 
   it('the spine holds the order, and NOTHING else does', () => {
@@ -108,10 +125,9 @@ describe('the H-11 fixture — volume.json is the sole enumeration', () => {
     const names = read('names/english.json');
     assert.equal(names.books[unitId], 'Genesis');
     assert.equal(names.testaments[testament.id], 'Old Testament');
-    assert.equal(names.sections[section.id], 'Pentateuch');
     // Every enumerated id has a name, or the reader meets a raw opaque id.
-    for (const id of [unitId, testament.id, section.id]) {
-      const found = names.books[id] || names.testaments[id] || names.sections[id];
+    for (const id of [unitId, testament.id]) {
+      const found = names.books[id] || names.testaments[id];
       assert.ok(found, `${id} is enumerated with no name in any category`);
     }
   });
