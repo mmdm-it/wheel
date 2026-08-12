@@ -1,5 +1,6 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
-import { expandChart, identityChartFromManifest, chaptersFromSeats } from './seating-chart.js';
+import { chaptersFromSeats } from './seating-chart.js';
+import { expandVolumeSeats } from '../adapters/bible-volume.js';
 import { legacyTextFile, legacyUnitId } from '../core/unit-source.js';
 
 const GAP = null;
@@ -10,19 +11,14 @@ const bySortNumber = (a, b) => {
   return as - bs;
 };
 
+// Books hang from testaments with nothing between (H-14): the section was
+// never a level a reader could stand on, and it is gone from the enumeration.
 function findBibleBook(manifest, bookId) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible) return null;
-  const testaments = bible.testaments || {};
-  for (const [testamentId, testament] of Object.entries(testaments)) {
-    const sections = testament?.sections || {};
-    for (const [sectionId, section] of Object.entries(sections)) {
-      const books = section?.books || {};
-      const book = books[bookId];
-      if (book) {
-        return { book, testamentId, sectionId };
-      }
-    }
+  for (const [testamentId, testament] of Object.entries(bible.testaments || {})) {
+    const book = (testament?.books || {})[bookId];
+    if (book) return { book, testamentId };
   }
   return null;
 }
@@ -51,12 +47,20 @@ function findBibleBook(manifest, bookId) {
  * from verse_count reproduces the old behaviour EXACTLY (proven by test) —
  * phantom seats included, by design: data first, engine tolerant.
  */
-export function buildBibleVerseChain(manifest, { initialVerseId = null, chart = null } = {}) {
-  const root = manifest?.Gutenberg_Bible;
-  if (!root?.testaments) return { items: [], selectedIndex: 0, preserveOrder: true };
-
-  let sorted = chart ? expandChart(root, chart) : null;
-  if (!sorted) sorted = expandChart(root, identityChartFromManifest(root)) || [];
+export function buildBibleVerseChain(manifest, { initialVerseId = null, edition = null } = {}) {
+  // THE SEATS COME FROM THE VOLUME (H-14). This took a legacy chart and
+  // expanded it against a manifest that stored chapters; both are gone, and
+  // with them the identity-chart fallback that stood behind them.
+  //
+  // THAT FALLBACK'S ABSENCE IS THE POINT, not an omission. It manufactured
+  // labels from a verse count — which H-2 rules is manufacture — and it was
+  // reached whenever a chart was missing, so an edition with no chart quietly
+  // got a plausible invented one. Under the wall an edition that does not
+  // chart a unit simply does not seat it, and the reader is shown nothing
+  // rather than a fiction.
+  const volume = manifest?.__wallVolume;
+  const sorted = volume ? expandVolumeSeats(volume, edition) : [];
+  if (!sorted.length) return { items: [], selectedIndex: 0, preserveOrder: true };
 
   const items = weaveCousinChain(sorted, [
     item => item.chapterKey,
@@ -101,23 +105,22 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   // back-navigation but is not a UI level and earns no gap.
   const sorted = [];
   Object.entries(bible.testaments || {}).sort(bySortNumber).forEach(([testamentKey, testament]) => {
-    const testamentName = testamentNames[testamentKey] || testament?.name || testamentKey;
-    Object.entries(testament?.sections || {}).sort(bySortNumber).forEach(([sectionKey, section]) => {
-      Object.entries(section?.books || {}).sort(bySortNumber).forEach(([, book]) => {
-        const id = legacyUnitId(book, book?.id || book?.name);
-        if (!id) return;
-        sorted.push({
-          id,
-          name: bookNames?.[id] || book?.book_name || book?.name || id,
-          sort: Number.isFinite(book?.sort_number) ? book.sort_number : sorted.length,
-          level: 'book',
-          testamentId: testamentKey,
-          sectionId: sectionKey,
-          parentName: testamentName,
-          // Editorial prominence tier (1 featured, 2 notable, absent default):
-          // declared in the data, honored by the star field's seating and size.
-          prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
-        });
+    const testamentName = testamentNames[testamentKey] || null;
+    Object.entries(testament?.books || {}).sort(bySortNumber).forEach(([bookKey, book]) => {
+      sorted.push({
+        id: bookKey,
+        // A NAME IS A QUOTATION (H-2). The old chain fell back to the book's
+        // own `book_name`, then to its id — and under opaque ids that last
+        // step would print `bc22df` at the reader. Unnamed is honest; the
+        // filesystem's spelling is not a name.
+        name: bookNames?.[bookKey] || null,
+        sort: Number.isFinite(book?.sort_number) ? book.sort_number : sorted.length,
+        level: 'book',
+        testamentId: testamentKey,
+        parentName: testamentName,
+        // Editorial prominence tier (1 featured, 2 notable, absent default):
+        // declared in the data, honored by the star field's seating and size.
+        prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
       });
     });
   });

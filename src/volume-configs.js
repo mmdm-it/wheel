@@ -6,7 +6,6 @@
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
-import { recall } from './core/session-memory.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
 import { bibleAdapter, buildBibleRootChain, ensureSeatingChart, setChartedEditions } from './adapters/bible-adapter.js';
@@ -21,15 +20,18 @@ const BIBLE_VOLUME_VERSION = 'v1';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 import { placesAdapter } from './adapters/places-adapter.js';
 
-// A remembered verse id (BOOK_CHAPTER_VERSE, e.g. GENE_1_1) split back into
-// the coordinates the bible chain boots from. Anything that does not match
-// the shape — a stale id from an older scheme, a corrupted value — returns
-// null and the caller falls through to the pinned default.
-function parseVerseId(id) {
-  const m = /^([A-Z][A-Z_]*)_(\d+)_(\d+)$/.exec(String(id || ''));
-  return m ? { bookId: m[1], chapterId: m[2], verseId: m[3] } : null;
-}
-
+// `parseVerseId` lived here and is DELETED under O-47, not left for later.
+//
+// It split a remembered id (`GENE_1_1`) back into boot coordinates, and its
+// pattern demanded an uppercase legacy book key — so under opaque ids it
+// matched nothing and resume had been silently falling through since the wall
+// went up. With resume suspended it has no caller at all.
+//
+// Keeping it "for when resume returns" would keep a parser that is wrong for
+// the ids it would then meet: the coordinates it produces are the retired
+// shape. When resume comes back at phase 4 it needs a reader of opaque ids,
+// which is a different function wearing the same name — and the worst version
+// of this is the old one still sitting here looking usable.
 const adapterRegistry = createAdapterRegistry();
 adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
 adapterRegistry.register('bible', () => ({ ...bibleAdapter, volumeId: 'bible' }));
@@ -143,29 +145,45 @@ const volumeConfigs = {
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
-      // THE READER RESUMES WHERE THEY STOPPED (Howell ruling 3, 2026-07-30):
-      // first visit opens at the pinned default (Matthew 16:18, Vulgate);
-      // thereafter at the verse they were last on. An EXPLICIT deep link wins
-      // wholesale — if any of book/chapter/verse is named in the URL, memory
-      // is ignored entirely rather than blended with it, since a half-honoured
-      // link ("their book, my chapter") would be worse than either.
+      // RESUME IS SUSPENDED FOR THIS VOLUME UNTIL PHASE 4 COMPLETES
+      // (O-47, Howell 2026-08-12): "There is no need for the Bible to boot to
+      // a verse, other than the first verse... during development, it should
+      // boot to Genesis 1:1."
+      //
+      // This SUPERSEDES the resume half of ruling 3 of 2026-07-30 — first
+      // visit at Matthew 16:18, thereafter at the verse last read — for the
+      // development period. It returns as a ruling when the corpus can honour
+      // one, which is why the memory is left untouched rather than cleared:
+      // nothing is lost, it is simply not consulted.
+      //
+      // IT WAS ALREADY INERT AND NOBODY HAD NOTICED. `parseVerseId` requires
+      // an uppercase legacy book key, so a remembered opaque id
+      // (`bc22df_1_1`) never matched and resume had been silently falling
+      // through to the default since the wall went up. The ruling turns an
+      // accident into a decision, which is the difference between code that
+      // happens to work and code that says what it means.
+      //
+      // An EXPLICIT deep link still wins wholesale — if any of
+      // book/chapter/verse is named in the URL it is honoured, because that is
+      // the reader asking rather than the engine remembering, and it is how
+      // the volume is tested from a phone.
       const deepLinked = params.get('book') || params.get('chapter') || params.get('verse');
-      const resumed = deepLinked ? null : parseVerseId(recall('bible').itemId);
+      const resumed = null;
       return {
         level,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
-        // THE PINNED START IS GONE, AND IT HAD TO BE (H-14). Howell's ruling
-        // of 2026-07-30 opened a first visit at Matthew 16:18; under the wall
-        // Matthew is unreachable until its increment lands, so a literal here
-        // would resolve to nothing and paint a blank screen. `null` means
-        // "the volume's own first leaf", resolved in buildBibleChain where the
-        // enumeration is in hand.
+        // THE VOLUME OPENS AT ITS FIRST VERSE (O-47, Howell 2026-08-12).
+        // `null` means "the volume's own first leaf", resolved in
+        // buildBibleChain where the enumeration is in hand.
         //
-        // It moves as increments land, which is not a defect: H-14 rules that
-        // increment order is user-visible, and the volume opening at whatever
-        // it actually contains is that rule showing through. The pinned start
-        // returns as a ruling when the corpus can honour one.
+        // DERIVED RATHER THAN NAMED, and the distinction is the whole ruling.
+        // Writing `GENE`, `1`, `1` here would be a literal naming cargo that
+        // may not have landed — exactly the failure H-14 removes — whereas
+        // the first enumerated leaf resolves to something real however much
+        // has migrated. Today that IS Genesis 1:1, because Genesis is the
+        // only book; under H-14's canonical increment order it stays Genesis
+        // 1:1 as the rest arrive.
         bookId: params.get('book') || resumed?.bookId || null,
         testamentId: params.get('testament'),
         chapterId: params.get('chapter') || resumed?.chapterId || null,
@@ -585,10 +603,10 @@ function buildBibleChain(manifest, options, namesMap) {
       // reader actually chose at the funnel or carried in from a previous
       // launch. Reading the default here meant a Greek reader was seated by
       // a Latin chart — caught before it reached the bench.
-      return ensureSeatingChart(options.activeEdition || options.translation || null).then(chart =>
+      return Promise.resolve().then(() =>
         buildBibleVerseChain(manifest, {
           initialVerseId: `${bookId}_${chapterId}_${verseId}`,
-          chart
+          edition: options.activeEdition || options.translation || null
         }));
     }
     const chain = buildBibleBookCousinChain(manifest, {
