@@ -2017,6 +2017,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     manifest = config.pruneToOffered(manifest, dimensionBridge.offeredEditions());
     root = config.extractRoot(manifest) || root;
   }
+  // The stylesheet strips the fills for this state. TOGGLE, never add: a
+  // gateway hop or an edition becoming servable must take the volume back out
+  // of the dark, and a class that only ever goes on would leave the next
+  // volume wearing the last one's emptiness.
+  if (document?.documentElement?.classList) {
+    document.documentElement.classList.toggle('volume-withheld', volumeWithheld);
+  }
   const editionIsOffered = id => Boolean(id) && dimensionBridge.isServableEdition(id);
   const activeTranslation = () => {
     const chosen = dimensionStore.getState().edition;
