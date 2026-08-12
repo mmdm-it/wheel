@@ -1839,8 +1839,22 @@ function gatewayLabelFromItemId(itemId) {
 function showBootError(message) {
   // Minimal visible error surface: the console-only failures of the past
   // left black screens (Phase B audit, H4/M1).
+  //
+  // AND IT WAS ITSELF INVISIBLE until 2026-08-12. `.detail-panel` is
+  // `opacity: 0` until something adds `detail-panel--visible`, and the only
+  // two call sites touching that class are the ordinary render toggle and a
+  // REMOVE during boot. This wrote its text into a panel nobody could see, so
+  // every boot failure in every volume has shown a blank screen — the exact
+  // outcome the function was added to end.
+  //
+  // Found from Howell's phone on a withheld volume: background, a copyright
+  // line and nothing else. Worth stating plainly because the instrument lied
+  // about itself — a guard that cannot prove it fires is not a guard, and this
+  // one read as working in every review of the file.
   const el = document.getElementById('detail-content');
   if (el) el.textContent = message;
+  const panel = document.getElementById('detail-panel');
+  if (panel) panel.classList.add('detail-panel--visible');
   console.error('[wheel]', message);
 }
 
