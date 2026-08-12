@@ -10,7 +10,6 @@ import { recall } from './core/session-memory.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
 import { bibleAdapter, buildBibleRootChain, ensureSeatingChart, setChartedEditions } from './adapters/bible-adapter.js';
-import { installBibleFixtureRig } from './adapters/bible-fixture-rig.js';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 import { placesAdapter } from './adapters/places-adapter.js';
 
@@ -70,29 +69,7 @@ const volumeConfigs = {
         .filter(([, meta]) => meta?.hasChart === true)
         .map(([code]) => code);
       setChartedEditions(declared);
-
-      // THE RIG IS READ AT BOOT (O-45, move 3), and it is awaited HERE because
-      // this is the last point before the chain is built — the walk that
-      // resolves text addresses is synchronous, so the substitution must
-      // already be declared when it runs. Installing it lazily would let the
-      // walk resolve the legacy address first and the fixture arrive after,
-      // which renders the old unit and looks like success.
-      //
-      // It stays zero-arity: the early-start optimisation above depends on
-      // `loadSupplemental` declaring no parameters, and the rig reads the URL
-      // from the window rather than being handed anything.
-      //
-      // A FAILING RIG FAILS LOUDLY. It only ever activates on the house
-      // network with `?fixture=h11` explicitly asked for, so there is no
-      // reader to protect from the noise — and a rig that silently falls back
-      // to the legacy unit would show a green board for a migration that did
-      // not happen, which is the one outcome phase 1a cannot afford.
-      const fixtureRig = await installBibleFixtureRig();
-      if (fixtureRig) {
-        console.info('[wheel] H-11 fixture rig active (O-45) — scaffolding, not a feature', fixtureRig);
-      }
-
-      return { translationsMeta, languagesMeta, fixtureRig };
+      return { translationsMeta, languagesMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {} }) => {
       const level = params.get('level') || startup.top_navigation_level || 'verse';
