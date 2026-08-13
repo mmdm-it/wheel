@@ -13,50 +13,10 @@ export function createVolumePyramidConfig(options = {}) {
   return pyramidBuilder(options);
 }
 
-export function buildPlacesPyramid({
-  manifest,
-  placesState,
-  buildPlacesLevel,
-  getApp,
-  placesChildrenHandler
-} = {}) {
-  if (!placesState || !buildPlacesLevel || !manifest) return null;
-  const getChildren = ({ selected }) => {
-    if (!selected?.id) return [];
-    if (!placesState?.levels?.length) return [];
-    if (placesState.levelIndex >= placesState.levels.length - 1) return [];
-    const nextLevelIndex = placesState.levelIndex + 1;
-    const nextLevelName = placesState.levels[nextLevelIndex];
-    const { items: childItems } = buildPlacesLevel(
-      manifest,
-      placesState.levels,
-      nextLevelIndex,
-      {
-        parentItem: selected,
-        contextParentId: selected.id,
-        selectedId: placesState.selections?.[nextLevelName] || null
-      }
-    );
-    return childItems || [];
-  };
+// `buildPlacesPyramid` lived here and is DELETED (H-16, Howell 2026-08-13).
+// The places volume is retired: a stress test with no demand beyond stress
+// testing, and the three surviving volumes carry plenty.
 
-  const onClick = instr => {
-    if (!instr?.item) return;
-    const app = typeof getApp === 'function' ? getApp() : null;
-    if (!placesState?.levels?.length) return;
-    const nextLevelIndex = placesState.levelIndex + 1;
-    if (nextLevelIndex >= (placesState.levels?.length || 0)) return;
-    const nextLevelName = placesState.levels[nextLevelIndex];
-    if (placesState.selections) {
-      placesState.selections[nextLevelName] = instr.item.id || instr.id || null;
-    }
-    if (typeof placesChildrenHandler === 'function') {
-      placesChildrenHandler({ selected: instr.item, setItems: app?.setPrimaryItems });
-    }
-  };
-
-  return { getChildren, onClick };
-}
 
 export function buildCatalogPyramid({
   manifest,

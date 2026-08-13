@@ -4,7 +4,8 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const themesDir = resolve(process.cwd(), 'styles/themes');
-const volumes = ['bible', 'calendar', 'catalog', 'places'];
+// Three volumes since H-16 retired places (Howell 2026-08-13).
+const volumes = ['bible', 'calendar', 'catalog'];
 
 describe('theme swap smoke', () => {
   volumes.forEach(volume => {

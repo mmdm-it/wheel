@@ -8,8 +8,6 @@ import {
 
 const commonArgs = {
   manifest: {},
-  buildPlacesLevel: () => ({}),
-  placesChildrenHandler: () => {},
   getCatalogChildren: () => [],
   getCalendarMonths: () => [],
   getBibleChapters: () => [],
