@@ -93,11 +93,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     .filter(([, t]) => t?.language === languageId)
     .map(([key]) => key);
 
-  // A servable edition is one we can actually show the reader: NOT held back
-  // for licensing (pendingLicense) and NOT still unsourced (comingSoon). The
-  // language's DEFAULT must be servable — landing a reader on NAB (pending)
-  // when Douay is right there was the "default is a translation we don't have"
-  // bug (Howell 2026-07-26).
+  // A servable edition is one we can actually show the reader. The language's
+  // DEFAULT must be servable — landing a reader on NAB (pending) when Douay is
+  // right there was the "default is a translation we don't have" bug (Howell
+  // 2026-07-26).
   // NO ASTERISKS (Howell, RULED 2026-07-30 — see HANDOFF CONTRACT). An edition
   // is offered only if the data DECLARES it fit to show. That is never
   // measured here: counting verses cannot tell a structural gap (never
@@ -114,8 +113,6 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // Every venue shows IDENTICAL content; the question is never what, only
   // when.
   //
-  // An edition still held for licensing or still unsourced is excluded as
-  // before; `proofread` is an additional gate, not a replacement.
   // THE CERTIFICATION OVERRIDE (Howell 2026-07-31): `?proofread=true` lifts
   // that gate so an edition can be INSPECTED before it has been read.
   // Without it the doctrine deadlocks — a flag is false because the kit is
@@ -128,11 +125,11 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   //      appended to bibliacatholica.com to read half-finished scripture. The
   //      escape hatch does not exist in production rather than being a hole we
   //      trust nobody to find.
-  //   2. IT LIFTS `proofread` AND NOTHING ELSE. `pendingLicense` is a LEGAL
-  //      wall, not an editorial one — the local corpus still holds the
-  //      copyrighted editions the deploy filter strips, and no debugging
-  //      convenience may show them. `comingSoon` stays enforced too: an
-  //      unsourced edition has nothing to inspect.
+  //   2. IT LIFTS `proofread` AND NOTHING ELSE — and under O-29 that is now
+  //      the only human-facing condition, so the override is TOTAL on the LAN.
+  //      Stated and accepted in the ruling: it is what the flag is for. The
+  //      CHART half is not lifted, and cannot be, because it is not a judgement
+  //      about readiness — an edition with no chart has no seats to inspect.
   //
   // THE LAN TEST LIVES IN ONE PLACE (2026-08-11). This was an inline regex,
   // and it was a bare PREFIX test: `10.example.com` matched `^10\.`, and so did
@@ -152,8 +149,31 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       return new URLSearchParams(window.location.search).get('proofread') === 'true';
     } catch (_) { return false; }
   })();
-  const isServable = t => t && (t.proofread === true || overrideProofread)
-    && !t.pendingLicense && !t.comingSoon;
+  // SERVABLE = PROOFREAD && HASCHART (O-29, ruled 2026-08-06, landed
+  // 2026-08-12 at the 1a exit gate, which refused without it).
+  //
+  // It read `proofread && !pendingLicense && !comingSoon`. Neither of those two
+  // was ever set on any of the fourteen editions — dead code wearing the
+  // costume of a safeguard, which is the worst kind, because the system looks
+  // like it is protecting you while nothing is. Under the wall they are dead by
+  // construction: the registry is synthesised from `volume.json`, which has no
+  // such fields to carry.
+  //
+  // The architectural half is W-34's: a licence governs DISTRIBUTION, not
+  // display. The deploy filter decides what ships; if an unlicensed text is on
+  // the device the filter has already failed, and a display check then does not
+  // prevent the leak, it hides the evidence of one.
+  //
+  // AND `hasChart` IS NOT MOOT UNDER THE WALL, which was the tempting reading.
+  // Measured: an edition declaring `hasChart: false` still produces all 31
+  // seats, because the seat expander reads the chart FILE and this reads the
+  // DECLARATION. They can disagree in both directions — a present file under a
+  // false flag, or a true flag over a missing one — and nothing reconciles
+  // them. So the declaration governs the SHELF: an edition that does not claim
+  // a chart is not offered, whatever happens to sit on disk.
+  const isServable = t => t
+    && (t.proofread === true || overrideProofread)
+    && t.hasChart === true;
   const servableEditionsOf = languageId => Object.entries(meta?.translations || {})
     .filter(([, t]) => t?.language === languageId && isServable(t))
     .map(([key]) => key);
@@ -166,8 +186,8 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   const languageEntries = () => (Array.isArray(langMeta?.languages) ? langMeta.languages : []);
   const languageEntry = id => languageEntries().find(l => l.id === id) || null;
   // Ground truth for "does selecting this change the reader": a language is real
-  // iff it actually has editions. The comingSoon flag is the registry's promise;
-  // this is the fact. (So a promoted placeholder needs no flag flip to work.)
+  // iff it actually has editions — a FACT about the registry rather than a
+  // promise in it. (So a promoted placeholder needs no flag flip to work.)
   const hasEditions = id => editionsOf(id).length > 0;
   const currentLanguage = () => displayLanguage ?? store.getState().language ?? null;
   // A language the registry hasn't given a native "coming soon" yet shows
@@ -193,10 +213,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       if (!options.length && !languageEntry(languageId)) return false;
       displayLanguage = languageId;
       if (!options.length) return true; // placeholder: display-only, reader untouched
-      // Default to the first SERVABLE edition (skip pendingLicense/comingSoon),
-      // not merely the first listed. English lists NAB (pending) before DRA —
-      // the reader must land on Douay. A language with editions but NO
-      // servable one (all held for licensing — W-11) is DISPLAY-ONLY, like a
+      // Default to the first SERVABLE edition, not merely the first listed:
+      // english once listed an unshowable edition before DRA and the reader
+      // landed on it. A language with editions but NO servable one (W-11) is
+      // DISPLAY-ONLY, like a
       // placeholder: the shelf shows its held editions, the reader keeps
       // reading what it had. Committing options[0] here used to point the
       // reader at text the deploy filter has stripped — a blank page wearing
@@ -209,9 +229,9 @@ export function createDimensionBridge({ store, translationsMeta = null, language
 
     // The chooser pyramid settles on a specific translation: adopt it and the
     // language it belongs to. The synthetic "coming soon" node is not a real
-    // edition — settling on it commits nothing. A pendingLicense/comingSoon
-    // edition is on the shelf but in the vault (W-11): settling on it also
-    // commits nothing — the lens shows its notice, the reader keeps reading.
+    // edition — settling on it commits nothing. An unservable edition (W-11)
+    // commits nothing either: the lens shows its notice, the reader keeps
+    // reading.
     setTranslation(translationKey) {
       if (translationKey === COMING_SOON_KEY) return false;
       const languageId = languageOf(translationKey);
@@ -289,10 +309,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
 
     // The tertiary stratum's nodes: the SERVABLE edition keys of a language,
     // in registry order (W-4 + W-11, Howell's final ruling 2026-07-27): the
-    // shelf shows ONLY what actually opens. comingSoon (unsourced) and
-    // pendingLicense (held) editions alike have no seat — licensing is our
-    // trouble, not the reader's, and an edition that can't be read is inside
-    // baseball on a ring. A language with nothing servable yields the single
+    // shelf shows ONLY what actually opens. An edition that is not servable
+    // has no seat — our trouble is not the reader's, and an edition that
+    // cannot be read is inside baseball on a ring. A language with nothing
+    // servable yields the single
     // synthetic "coming soon" node, in its own tongue. Defaults to the
     // current language, then the first language with editions — never empty.
     // Every edition the reader may actually be shown. The host prunes the
