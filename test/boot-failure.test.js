@@ -46,7 +46,13 @@ describe('a boot that fails says so, visibly, in the volume\'s own colours', () 
     const panel = byId.get('detail-panel');
     assert.ok(panel?.classList?.contains('detail-panel--visible'),
       'the panel is opacity:0 until this class is added; without it the message is written where nobody can read it');
-    assert.match(String(byId.get('detail-content')?.textContent || ''), /Failed to initialize/);
+    // The message sits in its OWN element now, seated clear of the copyright
+    // band — the two used to overlap illegibly, since the panel is
+    // full-screen and the notice is fixed at top:0.
+    const box = (byId.get('detail-content')?.children || [])
+      .find(c => String(c.className || '').includes('boot-error'));
+    assert.ok(box, 'the message must have its own seat, not inherit a container sized for something else');
+    assert.match(String(box.textContent || ''), /Failed to initialize/);
   });
 
   it('does NOT mark itself withheld — a broken volume is not an empty one', () => {
