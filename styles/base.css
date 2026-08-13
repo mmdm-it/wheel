@@ -891,3 +891,24 @@ svg :focus-visible {
   white-space: nowrap;
   border: 0;
 }
+
+/* THE BOOT ERROR'S OWN SEAT (2026-08-12).
+   The panel it lives in is full-screen and the copyright is a fixed band at
+   top:0, so an unseated message lands under the notice and the two overlap —
+   which is what Howell read on the phone. This clears the band and centres
+   the message in the space below it.
+
+   Deliberately plain: a boot error is not a designed screen and should not
+   pretend to be one. It has to be READABLE, which is the whole complaint. */
+.boot-error {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+  text-align: center;
+  color: var(--theme-color-text, #111);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}

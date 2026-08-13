@@ -1852,7 +1852,18 @@ function showBootError(message) {
   // about itself — a guard that cannot prove it fires is not a guard, and this
   // one read as working in every review of the file.
   const el = document.getElementById('detail-content');
-  if (el) el.textContent = message;
+  if (el) {
+    // SEATED CLEAR OF THE COPYRIGHT, which is a fixed band at top:0 while this
+    // panel is full-screen — so writing straight into it put the message
+    // underneath the notice and the two overlapped on Howell's phone,
+    // illegibly. The message gets its own element and its own seat rather
+    // than inheriting a container sized for something else.
+    el.textContent = '';
+    const box = document.createElement('div');
+    box.className = 'boot-error';
+    box.textContent = message;
+    el.appendChild(box);
+  }
   const panel = document.getElementById('detail-panel');
   if (panel) panel.classList.add('detail-panel--visible');
   console.error('[wheel]', message);

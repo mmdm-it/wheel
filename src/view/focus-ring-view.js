@@ -425,7 +425,7 @@ export class FocusRingView {
             ? this.parentButtonOuterLabel.getComputedTextLength()
             : 0;
           // A DECLARED SUFFIX IS SEATED BY ITS NAME (Howell 2026-08-02): the
-          // vessel's stroke was cutting through the chapter numeral, so
+          // vessel's stroke was cutting through the numeral, so
           // measure the name alone and let the geometry land its last letter
           // just past the stroke. getSubStringLength measures the same glyphs
           // already laid out, so no second element and no re-flow.

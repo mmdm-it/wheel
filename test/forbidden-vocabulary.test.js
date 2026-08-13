@@ -119,15 +119,26 @@ describe('forbidden volume vocabulary (O-43)', () => {
   // fails immediately, and any file on it that goes clean must be REMOVED from
   // the list, which is what stops the baseline from quietly becoming permanent.
   // It can only ever shrink.
+  // 8 → 5. The three FEEL-BEARING files came off on 2026-08-12, once Howell's
+  // thumb had spoken on the fixture and the dark state and the window was
+  // cleared: focus-ring-view, migration-animation, child-pyramid-geometry.
+  //
+  // Every hit in them was a COMMENT — an incidental example ("26 chapters",
+  // "January, Chapter 1", "the one-testament sky"), a label description, and
+  // one metaphor about an expanding galaxy that was never the level at all.
+  // No functional line changed, and the proof is stronger than a reading:
+  // minification strips comments, so the bundle came out BYTE-IDENTICAL.
+  //
+  // That is why they were parked rather than rushed. Nobody could have known
+  // they were comment-only without looking, and the files render the ring,
+  // the migration and the sky — so the cost of being wrong was the one thing
+  // the freeze exists to prevent.
   const BASELINE = new Set([
     'src/core/dimension-bridge.js',
-    'src/geometry/child-pyramid-geometry.js',
     'src/geometry/focus-ring-geometry.js',
     'src/index.js',
     'src/main.js',
-    'src/navigation/seating-chart.js',
-    'src/view/focus-ring-view.js',
-    'src/view/migration-animation.js'
+    'src/navigation/seating-chart.js'
   ]);
 
   it('no NEW file speaks a volume level name', async () => {
