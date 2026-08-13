@@ -67,17 +67,51 @@ describe('THE PLAYLIST is the single source of major truth', () => {
     }
   });
 
-  it('the two rungs are booleans, and the ladder cannot be climbed out of order', () => {
+  it('the two rungs are booleans', () => {
     for (const a of acts) {
       assert.match(a.complete, /^(yes|no)$/, `#${a.n} ${a.edition}: complete="${a.complete}"`);
       assert.match(a.proofread, /^(yes|no)$/, `#${a.n} ${a.edition}: proofread="${a.proofread}"`);
-      // Nothing is proofread that is not first complete: a human cannot verify
-      // against a source an edition that does not yet hold all its data.
-      if (a.proofread === 'yes') {
-        assert.equal(a.complete, 'yes',
-          `#${a.n} ${a.edition} is proofread but not complete — the ladder skipped a rung`);
-      }
     }
+  });
+
+  // THE LADDER RULE, PROVED DIRECTLY — because scanning the roster for it
+  // proves nothing today (Howell, 2026-08-12).
+  //
+  // Nothing is proofread that is not first complete: a human cannot verify
+  // against a source an edition that does not yet hold all its data.
+  //
+  // That rule lived inside the roster scan above as `if (proofread === 'yes')
+  // assert complete === 'yes'`, and **it has executed zero times, ever** —
+  // measured: 56 rows, 5 complete, 0 proofread. The precondition has never once
+  // been met, so the assertion passed by never running. A guard that cannot
+  // fire is not a guard, and this is the third of the same species this week:
+  // O-29's `pendingLicense`/`comingSoon`, never set on any edition; the deny
+  // layer that had never refused anything; and now this.
+  //
+  // So the RULE is exercised against constructed rows, where both directions
+  // can be shown, and the roster keeps its own scan below — live, and honest
+  // about being vacuous until the day something is marked proofread.
+  const climbsOutOfOrder = row => row.proofread === 'yes' && row.complete !== 'yes';
+
+  it('THE LADDER CANNOT BE CLIMBED OUT OF ORDER — proved, not merely scanned', () => {
+    assert.equal(climbsOutOfOrder({ complete: 'no', proofread: 'yes' }), true,
+      'proofread without complete is the violation the rule exists for');
+    assert.equal(climbsOutOfOrder({ complete: 'yes', proofread: 'yes' }), false);
+    assert.equal(climbsOutOfOrder({ complete: 'yes', proofread: 'no' }), false,
+      'complete without proofread is the normal state of every edition today');
+    assert.equal(climbsOutOfOrder({ complete: 'no', proofread: 'no' }), false);
+  });
+
+  it('and no row on the wall climbs out of order — vacuous today, and it says so', () => {
+    // This scan is the RULE APPLIED. It currently examines 56 rows and finds
+    // no candidate, which is a true statement about the corpus and a weak one
+    // about the code — which is why the cell above exists. It starts biting
+    // the moment a human marks the first edition proofread.
+    const climbed = acts.filter(climbsOutOfOrder);
+    assert.deepEqual(climbed.map(a => `#${a.n} ${a.edition}`), [],
+      'an edition is proofread but not complete — the ladder skipped a rung');
+    const candidates = acts.filter(a => a.proofread === 'yes').length;
+    assert.equal(typeof candidates, 'number');
   });
 
   it('no edition code appears twice', () => {
