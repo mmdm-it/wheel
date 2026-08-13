@@ -208,7 +208,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
 
   const phase = parentSortNumber * GOLDEN_ANGLE_RAD; // the dance
 
-  // Adaptive fan-line floor: 8° reads as a fan, but 26 chapters cannot each
+  // Adaptive fan-line floor: 8° reads as a fan, but 26 siblings cannot each
   // claim 8° of the ~90° the magnifier actually sees — so the floor is the
   // smaller of FAN_SEP_DEG and a fair share of the region's angular span.
   const cornerAngles = [
@@ -244,14 +244,15 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const maxK = Math.max(childCount * 120, 600);
   // k starts at 1, never 0: the k=0 star sits at radius zero — the exact
   // field center, where phase cannot move it — so the FIRST sibling
-  // (January, Chapter 1) hung motionless while everything else danced
+  // (a year's first month, a unit's first container) hung motionless
+  // while everything else danced
   // (Howell 2026-07-19). From k=1 every star has a radius for the phase
   // to swing around.
   //
   // If a pass cannot seat everyone, DENSIFY and re-scatter with a smaller
   // radial step. Small families with long labels are the trap: a field
   // sized to spread 2 stars wide has only ~(R/c)^2 in-region candidates,
-  // and the label law can veto all but one (the one-testament sky,
+  // and the label law can veto all but one (the single-sibling sky,
   // 2026-07-19). Densifying multiplies candidates; first pass keeps the
   // roomy layout wherever it suffices.
   for (let cCur = c; ; cCur *= 0.65) {

@@ -645,7 +645,7 @@ export function animatePyramidToHub(opts) {
 /**
  * Animate existing Focus Ring nodes radially outward from the hub until
  * they leave the viewport.  Each node travels along its own hub→node ray
- * like an expanding galaxy.  The magnifier node is excluded (it will get
+ * like an expanding starburst.  The magnifier node is excluded (it will get
  * its own unique animation later).
  *
  * Runs simultaneously with animateIn and animatePyramidFromHub during IN
