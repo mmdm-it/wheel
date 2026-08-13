@@ -62,23 +62,28 @@ describe('dimension bridge — selection and defaults', () => {
     assert.deepEqual(bridge.getSelection(), { language: 'latin', translation: 'VUL' });
   });
 
-  it('setLanguage defaults to the first SERVABLE edition, skipping pending/coming-soon (Howell 2026-07-26)', () => {
-    // The bug: english lists NAB (pendingLicense) before DRA, so the default
-    // landed on a translation we cannot show. The default must skip
-    // pendingLicense (held for licensing) and comingSoon (unsourced) editions.
+  it('setLanguage defaults to the first SERVABLE edition, skipping the rest (Howell 2026-07-26)', () => {
+    // The bug: english listed an unshowable edition before DRA, so the default
+    // landed on a translation we cannot display.
+    //
+    // RE-POINTED AT O-29's GATE. The doctrine is untouched — the default must
+    // skip what cannot be shown — but `pendingLicense` and `comingSoon` are
+    // retired, and unservable now means failing one of the TWO conditions.
+    // The cell is stronger for it: one edition fails each half, so a gate that
+    // dropped either would still be caught here.
     const store = createInteractionStore();
     const meta = { translations: {
-      NABX: { language: 'english', name: 'Pending', pendingLicense: true },
-      SOONX: { language: 'english', name: 'Unsourced', comingSoon: true },
-      DRA: { language: 'english', name: 'Douay-Rheims', proofread: true }
+      UNREAD: { language: 'english', name: 'Not proofread', proofread: false, hasChart: true },
+      UNCHARTED: { language: 'english', name: 'No chart', proofread: true, hasChart: false },
+      DRA: { language: 'english', name: 'Douay-Rheims', proofread: true, hasChart: true }
     } };
     const bridge = createDimensionBridge({ store, translationsMeta: meta });
     assert.equal(bridge.setLanguage('english'), true);
     assert.equal(bridge.getSelection().translation, 'DRA',
-      'lands on the servable edition, not the pending or coming-soon ones');
+      'lands on the servable edition — not the unproofread one, and not the uncharted one');
   });
 
-  it('an all-pending language is DISPLAY-ONLY: the reader keeps its edition (W-11)', () => {
+  it('a language with NOTHING servable is DISPLAY-ONLY: the reader keeps its edition (W-11)', () => {
     // Howell ruled 2026-07-27 (superseding the earlier first-listed
     // fallback): a language whose every edition is held for licensing must
     // not commit anything — the deploy filter has stripped those texts, so
@@ -86,13 +91,13 @@ describe('dimension bridge — selection and defaults', () => {
     // edition's name. The shelf shows; the reader keeps reading.
     const store = createInteractionStore();
     const meta = { translations: {
-      VUL: { language: 'latin', name: 'Vulgate', proofread: true },
-      A: { language: 'italian', name: 'Held A', pendingLicense: true },
-      B: { language: 'italian', name: 'Held B', pendingLicense: true }
+      VUL: { language: 'latin', name: 'Vulgate', proofread: true, hasChart: true },
+      A: { language: 'italian', name: 'Not proofread', proofread: false, hasChart: true },
+      B: { language: 'italian', name: 'No chart', proofread: true, hasChart: false }
     } };
     const bridge = createDimensionBridge({ store, translationsMeta: meta });
     assert.equal(bridge.setTranslation('VUL'), true, 'the reader starts on Latin');
-    assert.equal(bridge.setLanguage('italian'), true, 'the pending language is browsable');
+    assert.equal(bridge.setLanguage('italian'), true, 'the unservable language is still browsable');
     assert.deepEqual(bridge.getSelection(), { language: 'italian', translation: 'VUL' },
       'display follows the shelf; the reader keeps the Vulgate');
   });
@@ -104,9 +109,9 @@ describe('dimension bridge — selection and defaults', () => {
     // nothing servable shows its native "coming soon" placeholder.
     const store = createInteractionStore();
     const meta = { translations: {
-      VUL: { language: 'latin', name: 'Vulgate', proofread: true },
-      SOON: { language: 'latin', name: 'Unsourced', comingSoon: true },
-      CEIX: { language: 'italian', name: 'Held', nativeName: 'La Sacra Bibbia CEI', pendingLicense: true }
+      VUL: { language: 'latin', name: 'Vulgate', proofread: true, hasChart: true },
+      SOON: { language: 'latin', name: 'No chart', proofread: true, hasChart: false },
+      CEIX: { language: 'italian', name: 'Not proofread', nativeName: 'La Sacra Bibbia CEI', proofread: false, hasChart: true }
     } };
     const langMeta = { languages: [
       { id: 'latin', autonym: 'Latina' },
@@ -114,9 +119,9 @@ describe('dimension bridge — selection and defaults', () => {
     ] };
     const bridge = createDimensionBridge({ store, translationsMeta: meta, languagesMeta: langMeta });
     bridge.setTranslation('VUL');
-    assert.deepEqual(bridge.translationsOf('latin'), ['VUL'], 'the unsourced edition is not seated');
+    assert.deepEqual(bridge.translationsOf('latin'), ['VUL'], 'the uncharted edition is not seated');
     assert.deepEqual(bridge.translationsOf('italian'), ['__coming_soon__'],
-      'an all-held language shows the placeholder, not the held edition');
+      'a language with nothing servable shows the placeholder, not the edition');
     bridge.setLanguage('italian');
     assert.equal(bridge.translationName('__coming_soon__'), 'in arrivo',
       'the placeholder speaks the language\'s own tongue');
@@ -407,5 +412,72 @@ describe('the coming-soon node speaks the language it belongs to', () => {
   it('falls back to the committed language when no hint is given', () => {
     const bridge = build();
     assert.equal(bridge.translationName(bridge.comingSoonKey), 'Tulossa pian');
+  });
+});
+
+// O-29's RULING ITSELF — servable = proofread && hasChart.
+//
+// Ruled 2026-08-06, landed 2026-08-12 when the 1a exit gate refused without
+// it. These cells pin both halves and, just as importantly, the RETIREMENT:
+// the two conditions the ruling removed must have no effect at all.
+describe('the servable gate (O-29)', () => {
+  const bridgeOver = translations => createDimensionBridge({
+    store: createInteractionStore(), translationsMeta: { translations }
+  });
+
+  it('an UNCHARTED edition is not servable, however proofread', () => {
+    // W-38's half: after the migration there is no spine numbering to fall
+    // back on, so an edition without a chart cannot be displayed. Going dark
+    // is correct behaviour, not a cost to avoid.
+    const b = bridgeOver({
+      GOOD: { language: 'latin', proofread: true, hasChart: true },
+      NOCHART: { language: 'latin', proofread: true, hasChart: false }
+    });
+    assert.deepEqual(b.translationsOf('latin'), ['GOOD']);
+  });
+
+  it('an UNPROOFREAD edition is not servable, however charted', () => {
+    const b = bridgeOver({
+      GOOD: { language: 'latin', proofread: true, hasChart: true },
+      UNREAD: { language: 'latin', proofread: false, hasChart: true }
+    });
+    assert.deepEqual(b.translationsOf('latin'), ['GOOD']);
+  });
+
+  it('THE RETIRED CONDITIONS HAVE NO EFFECT — this is the cell that proves the deletion', () => {
+    // `pendingLicense` and `comingSoon` gated this for months and were never
+    // once set on any of the fourteen editions: dead code wearing the costume
+    // of a safeguard. A licence governs DISTRIBUTION, not display (W-34) — if
+    // an unlicensed text is on the device the deploy filter has already
+    // failed, and a display check then hides the evidence rather than
+    // preventing the leak.
+    //
+    // So an edition carrying BOTH flags, and satisfying both real conditions,
+    // must be offered. If either check crept back this goes red.
+    const b = bridgeOver({
+      X: { language: 'latin', proofread: true, hasChart: true, pendingLicense: true, comingSoon: true }
+    });
+    assert.deepEqual(b.translationsOf('latin'), ['X'],
+      'a retired condition that still excludes is a gate nobody ruled');
+  });
+
+  it('the LAN override lifts proofread and NOT hasChart', () => {
+    // Stated and accepted in the ruling: the override becomes TOTAL on the
+    // LAN, because proofread is the only human-facing condition left. The
+    // chart half is not a judgement about readiness — an edition with no
+    // chart has no seats to inspect, so there is nothing for the flag to
+    // reveal.
+    const priorWindow = globalThis.window;
+    globalThis.window = { location: { hostname: '192.168.1.10', protocol: 'http:', search: '?proofread=true' } };
+    try {
+      const b = bridgeOver({
+        UNREAD: { language: 'latin', proofread: false, hasChart: true },
+        NOCHART: { language: 'latin', proofread: false, hasChart: false }
+      });
+      assert.deepEqual(b.translationsOf('latin'), ['UNREAD'],
+        'the unproofread edition becomes inspectable; the uncharted one stays unreachable');
+    } finally {
+      if (priorWindow === undefined) delete globalThis.window; else globalThis.window = priorWindow;
+    }
   });
 });
