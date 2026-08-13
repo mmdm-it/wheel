@@ -85,8 +85,8 @@ Howell's framing, kept because it decided the ruling: **this is 16-bit to
 24-bit. The new player does not play the old files.**
 
 **Per volume, and the wall lands one volume at a time.** It stands on the
-Bible today. Catalog, calendar and places keep their own manifests and their
-own readers until each raises its own wall at its own doctrine migration.
+Bible today. Catalog and calendar keep their own manifests and their own
+readers until each raises its own wall at its own doctrine migration.
 A volume behind the wall and a volume in front of it do not share a reading
 path, which is the whole reason the scope can be per-volume at all.
 
@@ -148,7 +148,7 @@ cannot be reached cannot be silently wrong.
 ## Migration Checklist (from v3 → v4)
 
 - **Data & validation**: Turn `data/*/manifest.json` into JSON Schemas + adapter `validate/normalize`; move runtime validator logic into tests.
-- **Adapters**: Create one adapter per volume (gutenberg/bible, catalog/mmdm, calendar, places); each owns `loadManifest`, `validate`, `normalize`, `layoutSpec`, `capabilities`.
+- **Adapters**: Create one adapter per volume (gutenberg/bible, catalog/mmdm, calendar); each owns `loadManifest`, `validate`, `normalize`, `layoutSpec`, `capabilities`.
 - **Interaction state**: Replace scattered navigation/rotation/volume globals with a single store/state machine (actions: rotate, focus, set-volume, deep-link, animation start/end).
 - **Rendering**: Point focus-ring/geometry and views to consume `normalized + layoutSpec`; delete data-specific conditionals in shared render/navigation code.
 - **Child pyramid & detail**: Rebuild on normalized data; sampling/templates driven by adapter layout/meta (no raw manifest assumptions).

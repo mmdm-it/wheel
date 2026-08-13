@@ -358,92 +358,15 @@ export function getBibleChapters(manifest, selected, namesMap, bibleMode, editio
     }));
 }
 
-export function getPlacesLevels(manifest) {
-  const levels = manifest?.Places?.display_config?.hierarchy_levels;
-  if (!levels) return [];
-  return Object.keys(levels);
-}
+// `getPlacesLevels` and `buildPlacesLevel` lived here and are DELETED (H-16,
+// Howell 2026-08-13). The places volume was a stress test with no demand
+// beyond stress testing, and the Bible, Calendar and Catalog carry plenty.
 
-function pluralizeLevel(level) {
-  if (!level) return '';
-  if (level.endsWith('y')) return `${level.slice(0, -1)}ies`;
-  if (level.endsWith('s')) return `${level}es`;
-  return `${level}s`;
-}
-
-// Builds ordered items for a Places hierarchy level using optional parent context.
-export function buildPlacesLevel(manifest, levels, levelIndex, { selectedId, parentItem, contextParentId } = {}) {
-  const places = manifest?.Places;
-  if (!places || !levels?.length || levelIndex < 0 || levelIndex >= levels.length) {
-    return { items: [], selectedIndex: 0, preserveOrder: true };
-  }
-  const levelName = levels[levelIndex];
-  const levelKey = pluralizeLevel(levelName);
-  const parentLevelName = levelIndex > 0 ? levels[levelIndex - 1] : null;
-  const parentLevelKey = parentLevelName ? pluralizeLevel(parentLevelName) : null;
-  const collection = places[levelKey] || {};
-  const parentCollection = parentLevelKey ? places[parentLevelKey] || {} : {};
-  const parent = parentItem || (parentLevelName && contextParentId ? parentCollection[contextParentId] : null);
-  const filterParentId = parent?.id || contextParentId || null;
-  const rootChildren = places.root?.children || [];
-  const ids = (() => {
-    if (parent && Array.isArray(parent[levelKey])) {
-      return parent[levelKey];
-    }
-    if (filterParentId && parentLevelName) {
-      const parentProp = `${parentLevelName}_id`;
-      return Object.values(collection)
-        .filter(entry => (entry?.[parentProp] ?? entry?.parent_id) === filterParentId)
-        .sort((a, b) => {
-          const as = Number.isFinite(a?.sort_number) ? a.sort_number : 0;
-          const bs = Number.isFinite(b?.sort_number) ? b.sort_number : 0;
-          if (as === bs) return (a?.name || '').localeCompare(b?.name || '');
-          return as - bs;
-        })
-        .map(entry => entry.id);
-    }
-    if (levelIndex === 0 && rootChildren.length) {
-      return rootChildren;
-    }
-    return Object.keys(collection);
-  })();
-  const items = ids
-    .map((id, idx) => {
-      const raw = collection[id] || { id, name: id };
-      const sort = Number.isFinite(raw.sort_number) ? raw.sort_number : idx;
-      return {
-        id: raw.id || id,
-        name: raw.name || raw.id || id,
-        sort,
-        order: sort,
-        parentId: parent?.id ?? filterParentId ?? raw[`${parentLevelName}_id`] ?? raw.parent_id ?? null,
-        parentName: parent?.name || null,
-        level: levelName
-      };
-    })
-    .sort((a, b) => {
-      if (a.sort === b.sort) return (a.name || '').localeCompare(b.name || '');
-      return a.sort - b.sort;
-    })
-    .map((item, idx) => ({ ...item, order: idx }));
-  const selectedIndex = (() => {
-    if (selectedId) {
-      const idx = items.findIndex(item => item?.id === selectedId);
-      if (idx >= 0) return idx;
-    }
-    return 0;
-  })();
-  return { items, selectedIndex, preserveOrder: true };
-}
-
-// THE VERSION FOOTNOTE (Howell 2026-07-20): a factory stamp at the end of
-// the manufacturers chain — four empty links past the last manufacturer,
-// then one placebo node carrying the build's version, bare (e.g. "3.12.0").
-// Placebo means the engine ignores it everywhere: bounds anchor on the
-// last REAL link (so at full stretch the stamp stays two spacings short
-// of the magnifier), snap never lands on it, taps pass through it. The
-// version is stamped into the bundle at build time; unbundled runs
-// (tests, raw source) read 'dev'.
+// These two sat BETWEEN the deleted functions and the next one, and a
+// range-based deletion took them with it — caught immediately by the suite
+// (`VERSION_FOOTNOTE_GAPS is not defined`, five files red) rather than by
+// reading the diff. Restored here, and worth the note: deleting by span is
+// fast and blind, and what it swallows is whatever happened to be adjacent.
 const WHEEL_VERSION = typeof __WHEEL_VERSION__ !== 'undefined' ? __WHEEL_VERSION__ : 'dev';
 const VERSION_FOOTNOTE_GAPS = 4;
 

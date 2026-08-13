@@ -85,7 +85,11 @@ describe('interaction-store', () => {
   });
 
   it('returns state unchanged for unknown actions', () => {
-    const store = createInteractionStore({ initialState: { volume: 'places' } });
+    // The volume id here is arbitrary — the store is volume-agnostic and this
+    // cell only cares that an unknown action changes nothing. It named the
+    // retired `places` volume until H-16; a fictional id says outright that
+    // the store never looks.
+    const store = createInteractionStore({ initialState: { volume: 'no-such-volume' } });
     const before = store.getState();
     store.dispatch({ type: 'UNKNOWN_ACTION' });
     const after = store.getState();

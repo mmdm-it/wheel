@@ -10,15 +10,12 @@ import { CardDetailPlugin } from '../src/view/detail/plugins/card-plugin.js';
 import { bibleAdapter } from '../src/adapters/bible-adapter.js';
 import { catalogAdapter } from '../src/adapters/catalog-adapter.js';
 import { calendarAdapter } from '../src/adapters/calendar-adapter.js';
-import { placesAdapter } from '../src/adapters/places-adapter.js';
 import { makeWallManifest } from './helpers/wall-volume.mjs';
 import {
   buildBibleBooks,
   buildCatalogManufacturers,
   buildCalendarYears,
-  getCalendarMonths,
-  getPlacesLevels,
-  buildPlacesLevel
+  getCalendarMonths
 } from '../src/adapters/volume-helpers.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -169,23 +166,5 @@ test('calendar detail templates render year and month cards', async () => {
   }
 });
 
-test('places detail templates render hierarchical cards', async () => {
-  const manifest = await readJson('test/fixtures/data/places/manifest.json');
-  const levels = getPlacesLevels(manifest);
-  assert.ok(levels.length >= 1, 'expected at least one places level');
-  const levelIndex = 0;
-  const { items } = buildPlacesLevel(manifest, levels, levelIndex, {});
-  const place = items[0];
-  assert.ok(place, 'expected at least one place item');
-
-  const detail = placesAdapter.detailFor({ id: place.id, level: levels[levelIndex], name: place.name, parentName: place.parentName }, manifest);
-  assert.equal(detail?.type, 'card');
-
-  const registry = registryWithDefaults();
-  const plugin = registry.getPlugin(detail);
-  assert.ok(plugin, 'plugin should resolve for places item');
-  const createElement = createMockElementFactory();
-  const rendered = plugin.render(detail, { width: 320, height: 200 }, { createElement });
-  assert.equal(rendered.tag, 'div');
-  assert.ok(rendered.children.length >= 2, 'places card should have title/body');
-});
+// The places detail cell lived here and is DELETED with its volume (H-16,
+// Howell 2026-08-13).

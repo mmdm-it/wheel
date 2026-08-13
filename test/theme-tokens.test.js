@@ -10,7 +10,8 @@ const repoRoot = path.resolve(__dirname, '..');
 
 const themeTokensPath = path.join(repoRoot, 'styles', 'theme-tokens.css');
 const overlaysDir = path.join(repoRoot, 'styles', 'themes');
-const volumes = ['bible', 'catalog', 'calendar', 'places'];
+// Three volumes since H-16 retired places (Howell 2026-08-13).
+const volumes = ['bible', 'catalog', 'calendar'];
 
 const requiredTokens = [
   'theme-color-bg',

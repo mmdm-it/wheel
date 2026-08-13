@@ -4,8 +4,7 @@ import {
   createVolumePyramidConfig,
   buildCatalogPyramid,
   buildCalendarPyramid,
-  buildBiblePyramid,
-  buildPlacesPyramid
+  buildBiblePyramid
 } from '../src/pyramid/volume-pyramid.js';
 import { createVolumeLayoutSpec } from '../src/adapters/volume-layout.js';
 
@@ -280,34 +279,6 @@ describe('createVolumePyramidConfig', () => {
     assert.deepEqual(calls, [null, 'loading'], 'unrequested and in-flight states do request');
   });
 
-  it('builds places pyramid config and defers to handlers', () => {
-    const manifest = { Places: { regions: {}, root: { children: [] } } };
-    const levels = ['country', 'city'];
-    const parent = { id: 'us' };
-    const child = { id: 'nyc' };
-    const placesState = { manifest, levels, levelIndex: 0, selections: {} };
-    const buildPlacesLevel = (m, lvls, idx, opts) => {
-      assert.equal(m, manifest);
-      assert.equal(lvls, levels);
-      assert.equal(idx, 1);
-      assert.equal(opts.parentItem, parent);
-      return { items: [child] };
-    };
-    let handlerCalls = 0;
-    const app = { setPrimaryItems: () => {} };
-    const config = createVolumePyramidConfig({
-      volume: 'places',
-      pyramidBuilder: buildPlacesPyramid,
-      manifest,
-      placesState,
-      buildPlacesLevel,
-      placesChildrenHandler: () => { handlerCalls += 1; },
-      getApp: () => app
-    });
-    assert.ok(config);
-    const children = config.getChildren({ selected: parent });
-    assert.deepEqual(children, [child]);
-    config.onClick({ item: child });
-    assert.equal(handlerCalls, 1);
-  });
+  // The places pyramid cell lived here and is DELETED with its volume (H-16,
+  // Howell 2026-08-13).
 });

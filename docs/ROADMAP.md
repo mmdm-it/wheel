@@ -397,6 +397,12 @@ A pluggable wheel UI where each volume ships an adapter that provides data, layo
 
 **Status:** Complete (shipped as 3.5.0). All volumes ship adapters (bible, catalog, calendar, places) with normalized layout/detail and pyramid configs; handler delegation is adapter-driven; detail plugin registry has text/card samples; adapter-specific detail templates are covered for Bible, Catalog, Calendar, and Places via mock DOM render tests. Data-agnostic guard (forbidden volume literals) runs via `npm run lint:forbidden`. Next: roll into v3.6 theming/accessibility hardening.
 
+> **Places retired 2026-08-13 (H-16).** The line above is left as written: it
+> records what 3.5.0 actually shipped, and editing a completed status to match
+> the present would falsify the record rather than update it. Four volumes
+> shipped; three remain.
+
+
 **Exit criteria:**
 - Pyramid/detail work for at least two volumes; migrations stable; theming respected.
 - Shared navigation/render code is data-agnostic (no hardcoded volume branches); adapters provide volume selection, children resolvers, label formats, and layout.

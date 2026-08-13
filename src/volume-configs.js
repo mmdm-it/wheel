@@ -4,7 +4,7 @@
 // declared here; src/main.js stays volume-agnostic and is scanned by
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
-import { getPlacesLevels, buildPlacesLevel, buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
+import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
@@ -19,7 +19,6 @@ import { seedVerseCache } from './adapters/volume-helpers.js';
 const BIBLE_VOLUME_BASE = './test/fixtures/h11/gutenberg';
 const BIBLE_VOLUME_VERSION = 'v1';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
-import { placesAdapter } from './adapters/places-adapter.js';
 
 // `parseVerseId` lived here and is DELETED under O-47, not left for later.
 //
@@ -37,7 +36,6 @@ const adapterRegistry = createAdapterRegistry();
 adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
 adapterRegistry.register('bible', () => ({ ...bibleAdapter, volumeId: 'bible' }));
 adapterRegistry.register('calendar', () => ({ ...calendarAdapter, volumeId: 'calendar' }));
-adapterRegistry.register('places', () => ({ ...placesAdapter, volumeId: 'places' }));
 const adapterLoader = createAdapterLoader(adapterRegistry);
 
 // Shared handler factory — the four volume blocks used to carry identical
@@ -372,36 +370,6 @@ const volumeConfigs = {
     },
     createHandlers: makeAdapterHandlers('calendar')
   },
-  places: {
-    id: 'places',
-    paths: ['/places'],
-    manifestPath: './data/places/manifest.json',
-    theme: 'places',
-    palette: {
-      bg: '#132a29',
-      node: '#e2b46c',
-      text: '#f4f1e9',
-      band: '#1f413f',
-      accent: '#e2b46c',
-      magnifierStroke: '#f4f1e9'
-    },
-    extractRoot: manifest => manifest?.Places,
-    async loadSupplemental() { return { translationsMeta: null }; },
-    buildOptions: ({ params, startup = {}, arrangements = {} }) => {
-      const level = params.get('level') || startup.top_navigation_level || null;
-      const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-flat';
-      return {
-        level,
-        arrangement,
-        initialItemId: params.get('item') || startup.initial_magnified_item || null,
-        locale: params.get('lang') || null,
-        cousinMode: arrangement !== 'siblings-only'
-      };
-    },
-    formatLabel: () => ({ item }) => item?.name || item?.id || '',
-    buildChain: (manifest, options) => buildPlacesChain(manifest, options),
-    createHandlers: makeAdapterHandlers('places')
-  }
 };
 
 function makeBibleLabelFormatter({ level, locale, namesMap }) {
@@ -667,17 +635,6 @@ function buildBibleChain(manifest, options, namesMap) {
   return { items, selectedIndex, preserveOrder: false };
 }
 
-function buildPlacesChain(manifest, options) {
-  const levels = getPlacesLevels(manifest);
-  if (!levels.length) return { items: [], selectedIndex: 0, preserveOrder: true, meta: null };
-  const startLevel = levels.includes(options.level) ? options.level : levels[0];
-  const levelIndex = Math.max(0, levels.indexOf(startLevel));
-  const { items, selectedIndex, preserveOrder } = buildPlacesLevel(manifest, levels, levelIndex, {
-    selectedId: options.initialItemId || null
-  });
-  const selections = { [startLevel]: items[selectedIndex]?.id || options.initialItemId || null };
-  return { items, selectedIndex, preserveOrder, meta: { levels, levelIndex, selections } };
-}
 
 // The probe's drop box (telemetry.php on the production host). Deployment
 // layout is a literal like any other — it lives here, not in diagnostics.
