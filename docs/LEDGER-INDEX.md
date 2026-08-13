@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-12 from 116 entries.
+Generated 2026-08-13 from 124 entries.
 
 | id | status | title |
 |---|---|---|
@@ -26,6 +26,8 @@ Generated 2026-08-12 from 116 entries.
 | H-12 | OPEN | THE ROADMAP, SECOND EDITION |
 | H-13 | OPEN | ACCESSIBILITY IS NOT A GOAL — landed items tolerated and frozen |
 | H-14 | OPEN | THE MIGRATION WALL — the engine cannot read pre-doctrine cargo |
+| H-15 | OPEN | THE FEEDBACK CHANNEL, AND THE COPYRIGHT NOTICE RETIRES |
+| H-16 | OPEN | PLACES IS RETIRED |
 | O-1 | OPEN | Prominence tiers for manufacturers (the ranked starfield) |
 | O-2 | DONE | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | OPEN | Travel-color theme keys (CONTRACT heads-up, not yet work) |
@@ -54,7 +56,7 @@ Generated 2026-08-12 from 116 entries.
 | O-26 | DONE | All three charts expanded — Hebrew is safe to proofread |
 | O-27 | SPLIT | The Greek charts seat verses out of order — before you proofread Greek |
 | O-28 | SUPERSEDED BY W | The spine wears Latin clothes — Howell's taxonomy challenge |
-| O-29 | OPEN | The servable gate — `proofread && hasChart`, and eleven stale descriptions |
+| O-29 | LANDED | The servable gate — `proofread && hasChart`, and eleven stale descriptions |
 | O-30 | DONE | R1 executed — the engine build no longer touches data/ |
 | O-31 | DONE | The wall, engine side — config written, matrix proven, PAT pending |
 | O-32 | DONE | THE PATs ARE MINTED — the wall's third layer, and the door it does not yet close |
@@ -70,7 +72,11 @@ Generated 2026-08-12 from 116 entries.
 | O-42 | OPEN | THE COEXISTENCE SEAM — how one engine reads two layouts at once |
 | O-43 | OPEN | VOLUME VOCABULARY IS LINTED, NOT REMEMBERED |
 | O-44 | OPEN | CHAPTERS ARE A PROJECTION — but nothing says what to project FROM |
-| O-45 | OPEN | THE SPLICE IS FOUR MOVES, NOT THREE — the text shapes do not meet |
+| O-45 | SUPERSEDED BY H | THE SPLICE IS FOUR MOVES, NOT THREE — the text shapes do not meet |
+| O-46 | RULED | THE WALL'S TWO OPEN SHAPES, RULED — grouping kept, Douay-Rheims alone |
+| O-48 | RULED | THE DARK STATE — the instrument present, holding nothing |
+| O-49 | OPEN | THE WALL IS BUILT — what the data side now has to produce |
+| O-50 | OPEN | THE READER FETCHES ITS TYPEFACES FROM GOOGLE AT RUNTIME |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
@@ -128,3 +134,5 @@ Generated 2026-08-12 from 116 entries.
 | W-55 | OPEN | TWO OF MY OWN GUARDS WERE NARROWER THAN THEIR NAMES — both closed |
 | W-56 | OPEN | HOWELL'S THREE ANSWERS, CARRIED — O-41 closed, O-37's line drafted, the door ruled |
 | W-57 | OPEN | WF-13's ROTATION IS STARTED — and its first sitting found a sixth dead trigger |
+| W-58 | OPEN | READ-BACK: H-14, O-46, O-48, O-49 — and one correction to O-49's first item |
+| W-59 | OPEN | THE THREE STALE ASSERTIONS, AND THE NORMATIVE LAYOUT SECTION |
