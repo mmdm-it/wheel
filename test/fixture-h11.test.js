@@ -1,8 +1,19 @@
 // THE H-11 FIXTURE — its shape, and the two boundaries it must not cross.
 //
-// This is phase 1a's target: opaque Genesis 1 in the post-migration layout,
-// beside a corpus that is still Vulgate-shaped. The cells below pin what the
-// fixture IS, so that wiring the engine to it later cannot quietly redefine it.
+// IT STOPPED BEING THE VOLUME ON 2026-08-14 (O-52). From the day the wall went
+// up until the repoint, this fixture WAS the Bible the reader read. It is now
+// the suite's own deterministic corpus, and that is a role it must keep rather
+// than lose: the real cargo lives in wheel-cargo (W-10) and is absent from CI,
+// so a test reading it would pass on a developer's machine and 404 on the
+// build.
+//
+// The RIG that served it — `dev-fixture-route.js`, `bible-fixture-rig.js`, the
+// declared substitution — was deleted under H-14 and is gone from `src`
+// entirely. What survives is nine files of data with no code behind them,
+// which is what a fixture should be.
+//
+// The cells below pin what that fixture IS, so a change to it cannot quietly
+// redefine what the suite is testing against.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { readFileSync, existsSync, readdirSync } from 'node:fs';

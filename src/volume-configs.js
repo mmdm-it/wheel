@@ -10,14 +10,20 @@ import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.
 import { catalogAdapter } from './adapters/catalog-adapter.js';
 import { bibleAdapter, buildBibleRootChain } from './adapters/bible-adapter.js';
 import { loadBibleVolume } from './adapters/bible-volume.js';
-import { seedVerseCache } from './adapters/volume-helpers.js';
+import { setUnitTextLoader } from './adapters/volume-helpers.js';
 
-// WHERE THE BIBLE'S CARGO LIVES UNDER THE WALL (H-14). Today that is the
-// Genesis 1 fixture, which IS the volume until 1b's first increment lands —
-// H-14 accepted that with eyes open. The data version rides the path (H-11
-// item 4), so a push changes a path rather than the world.
-const BIBLE_VOLUME_BASE = './test/fixtures/h11/gutenberg';
-const BIBLE_VOLUME_VERSION = 'v1';
+// WHERE THE BIBLE'S CARGO LIVES UNDER THE WALL (H-14), and since 2026-08-14
+// that is the REAL corpus: the Hebrew, 39 books, verified 23,213 of 23,213
+// against UXLC 2.5.
+//
+// The fixture served here from the day the wall went up until today. It was
+// built to be deleted and this is the day — the reader now reads the thing
+// itself, which is what H-22 needs before proofreading can start on Genesis.
+//
+// The data version rides the path (H-11 item 4), so a push changes a path
+// rather than the world.
+const BIBLE_VOLUME_BASE = './data/gutenberg';
+const BIBLE_VOLUME_VERSION = '2026.07.29';
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 
 // `parseVerseId` lived here and is DELETED under O-47, not left for later.
@@ -72,14 +78,15 @@ const volumeConfigs = {
           return response.json();
         }
       });
-      // THE TEXT IS SEATED ONCE, UNDER THE UNIT'S ID (H-14). Every reader
-      // below — the detail sector, the verse sky, the read-ahead — asks the
-      // cache by an opaque key and has no idea a file ever existed. Seeding
-      // here means none of them changed.
-      for (const unit of volume.units) {
-        const records = volume.textFor(unit.id);
-        if (records) seedVerseCache(unit.id, records);
-      }
+      // THE TEXT ARRIVES ONE UNIT AT A TIME (O-52). This seeded every unit
+      // here, which was right for a one-book fixture and wrong the moment the
+      // volume became 39 books: 1,413 KB gzipped before the first frame, all
+      // but one book of it unread.
+      //
+      // Registering the loader keeps the dependency pointing the way the
+      // layering does — the host's cache machinery is volume-agnostic and asks
+      // the volume, rather than importing its way across.
+      setUnitTextLoader(unitId => volume.loadTextFor(unitId));
       // The wall volume rides along so the builders can reach charts, spines
       // and text without a second load. It is not a manifest wearing a new
       // name: `toRoot()` brings back nothing H-14 retired, and the suite

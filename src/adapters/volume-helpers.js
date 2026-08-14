@@ -804,8 +804,47 @@ export function prefetchBibleVerses(chapterItem, { onLoaded } = {}) {
   // the existing terminal status for "asked, and there is nothing", and it is
   // what stops a re-request loop — the defect behind the Esther incident on
   // the Moto G.
+  // A UNIT WHOSE TEXT IS NOT HERE YET IS FETCHED NOW (O-52). Text went lazy
+  // per unit when the volume stopped being one book: 39 files and 1,413 KB
+  // gzipped is not a thing to load before the first frame when 38 of them are
+  // books the reader is not in.
+  //
+  // This is the read-ahead's whole purpose restored. Seeding every unit at boot
+  // had made it inert — every call found the cache warm and returned — so the
+  // machinery that keeps a crossing from being a wait had nothing to do.
+  if (_unitTextLoader) {
+    _verseCache.set(address, { status: 'loading', items: [], rawVerses: null, waiters: [] });
+    _unitTextLoader(address)
+      .then(records => {
+        if (records) {
+          seedVerseCache(address, records);
+          if (typeof onLoaded === 'function') onLoaded();
+          return;
+        }
+        // Fetched and genuinely empty. Terminal, so the sky stops re-asking —
+        // the Esther loop on the Moto G.
+        _verseCache.set(address, { status: 'error', items: [], rawVerses: null });
+        if (typeof onLoaded === 'function') onLoaded();
+      })
+      .catch(() => {
+        _verseCache.set(address, { status: 'error', items: [], rawVerses: null });
+        if (typeof onLoaded === 'function') onLoaded();
+      });
+    return;
+  }
+
   _verseCache.set(address, { status: 'error', items: [], rawVerses: null });
   if (typeof onLoaded === 'function') onLoaded();
+}
+
+// THE LOADER IS REGISTERED, NOT IMPORTED (O-52). This file is volume-agnostic
+// host machinery; the thing that knows how to fetch a unit's text is the
+// volume behind the wall. Registering it keeps the dependency pointing the way
+// the layering does, and a volume that registers nothing simply has no lazy
+// path — which is what every volume but the Bible wants.
+let _unitTextLoader = null;
+export function setUnitTextLoader(fn) {
+  _unitTextLoader = typeof fn === 'function' ? fn : null;
 }
 
 // SEATING A UNIT'S RESOLVED TEXT INTO THE CACHE (O-45, phase 1a).
