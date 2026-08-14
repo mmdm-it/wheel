@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-14 from 158 entries.
+Generated 2026-08-14 from 160 entries.
 
 | id | status | title |
 |---|---|---|
@@ -170,3 +170,5 @@ Generated 2026-08-14 from 158 entries.
 | W-77 | OPEN | THE HEBREW LABEL IS RESTORED — H-2 governs the corpus's words, not the furniture |
 | W-78 | OPEN | THE ATTESTATION IS PINNED — and "I cannot verify from here" was a choice dressed as a limit |
 | W-79 | OPEN | WILBUR ON H-24 — yes, with one ordering warning that matters |
+| W-80 | OPEN | MY HALF OF THE ARCHIVE FIX IS DONE — and I cannot run the check O-55 gives me |
+| W-81 | OPEN | WILBUR ON H-24, SECOND COMMENT — the messenger role is a built-in feature, and Orville should run in the cloud |

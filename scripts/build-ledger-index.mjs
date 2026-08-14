@@ -10,12 +10,38 @@
 // generated and never hand-edited. A projection that can be edited
 // independently of its source is a lie waiting.
 //
-//   node scripts/build-ledger-index.mjs
+//   node scripts/build-ledger-index.mjs             regenerate the index
+//   node scripts/build-ledger-index.mjs --validate  same parse, same tripwires,
+//                                                   same exit codes and
+//                                                   complaints; writes NOTHING
 //
 // Regenerate whenever the ledger gains an entry or an entry changes status.
+//
+// THE VALIDATE MODE EXISTS FOR THE BROTHER (W-80). A check one session writes
+// for the other must be runnable by that other across a wall that stops
+// writes — read-only by construction, or it is not a check, it is a request
+// to take the author's word for it. --validate is this builder's read-only
+// face: Wilbur fires the tripwires from his side and nothing is touched.
+//
+// In --validate mode ONLY, the inputs may be overridden so the tripwires can
+// be fired against fixtures (a duplicated entry, a gapped series) without
+// staging defects in the real ledger:
+//
+//   WHEEL_LEDGER=<file> WHEEL_LEDGER_ARCHIVES=<dir>
+//
+// Overrides outside --validate are REFUSED, not ignored: the committed
+// projection is built from the canonical ledger or not at all.
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 
-const LEDGER = '/media/howell/dev_workspace/team_communication/HANDOFF.md';
+const VALIDATE_ONLY = process.argv.includes('--validate');
+if (!VALIDATE_ONLY && (process.env.WHEEL_LEDGER || process.env.WHEEL_LEDGER_ARCHIVES)) {
+  console.error('REFUSING: WHEEL_LEDGER/WHEEL_LEDGER_ARCHIVES are honored only with --validate.');
+  console.error('The committed projection is built from the canonical ledger or not at all.');
+  process.exit(1);
+}
+
+const LEDGER = (VALIDATE_ONLY && process.env.WHEEL_LEDGER)
+  || '/media/howell/dev_workspace/team_communication/HANDOFF.md';
 // THE ARCHIVES ARE PART OF THE LEDGER (W-79a / H-24 point 5). Once pruning
 // starts, settled entries move to handoff_archives/HANDOFF-ARCHIVE*.md — and a
 // number that leaves this projection stops existing as far as the commit gate
@@ -27,7 +53,8 @@ const LEDGER = '/media/howell/dev_workspace/team_communication/HANDOFF.md';
 // HANDOFF-ARCHIVE*.md and nothing else matches. Other files in that directory
 // (the 2026-08-06 sidebar transcript) may QUOTE entry headings and must not be
 // scanned as entries.
-const ARCHIVE_DIR = '/media/howell/dev_workspace/team_communication/handoff_archives';
+const ARCHIVE_DIR = (VALIDATE_ONLY && process.env.WHEEL_LEDGER_ARCHIVES)
+  || '/media/howell/dev_workspace/team_communication/handoff_archives';
 const OUT = new URL('../docs/LEDGER-INDEX.md', import.meta.url).pathname;
 
 if (!existsSync(LEDGER)) {
@@ -117,9 +144,13 @@ const body = [
   '',
 ].join('\n');
 
-writeFileSync(OUT, body);
+if (VALIDATE_ONLY) {
+  console.log(`validate: ${entries.length} entries parsed, tripwires clean — nothing written`);
+} else {
+  writeFileSync(OUT, body);
+}
 const settled = entries.filter(e => /^(CLOSED|DONE|SUPERSEDED|DECLINED|LANDED|RULED)/.test(e.status) && !e.status.includes('archived'));
-console.log(`ledger index: ${entries.length} entries -> ${OUT}`);
+if (!VALIDATE_ONLY) console.log(`ledger index: ${entries.length} entries -> ${OUT}`);
 console.log(`archive debt: ${settled.length} settled entries still in the live file (H-24 point 2)`);
 const byStatus = entries.reduce((m, e) => ({ ...m, [e.status]: (m[e.status] || 0) + 1 }), {});
 console.log('  ' + Object.entries(byStatus).map(([k, v]) => `${k}=${v}`).join('  '));
