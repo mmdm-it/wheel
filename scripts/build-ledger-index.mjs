@@ -13,9 +13,21 @@
 //   node scripts/build-ledger-index.mjs
 //
 // Regenerate whenever the ledger gains an entry or an entry changes status.
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 
 const LEDGER = '/media/howell/dev_workspace/team_communication/HANDOFF.md';
+// THE ARCHIVES ARE PART OF THE LEDGER (W-79a / H-24 point 5). Once pruning
+// starts, settled entries move to handoff_archives/HANDOFF-ARCHIVE*.md — and a
+// number that leaves this projection stops existing as far as the commit gate
+// is concerned, so the next citation of H-2 would be refused by our own hook.
+// The builder therefore reads live + archives, and an archived number stays
+// citable forever.
+//
+// THE FILENAME PATTERN IS A CONTRACT: the prune script must write
+// HANDOFF-ARCHIVE*.md and nothing else matches. Other files in that directory
+// (the 2026-08-06 sidebar transcript) may QUOTE entry headings and must not be
+// scanned as entries.
+const ARCHIVE_DIR = '/media/howell/dev_workspace/team_communication/handoff_archives';
 const OUT = new URL('../docs/LEDGER-INDEX.md', import.meta.url).pathname;
 
 if (!existsSync(LEDGER)) {
@@ -24,10 +36,18 @@ if (!existsSync(LEDGER)) {
   process.exit(1);
 }
 
-const text = readFileSync(LEDGER, 'utf-8');
-const lines = text.split('\n');
-const entries = [];
+const sources = [{ name: 'live', text: readFileSync(LEDGER, 'utf-8') }];
+if (existsSync(ARCHIVE_DIR)) {
+  for (const f of readdirSync(ARCHIVE_DIR).sort()) {
+    if (/^HANDOFF-ARCHIVE.*\.md$/.test(f)) {
+      sources.push({ name: f, text: readFileSync(`${ARCHIVE_DIR}/${f}`, 'utf-8') });
+    }
+  }
+}
 
+const entries = [];
+for (const source of sources) {
+const lines = source.text.split('\n');
 for (let i = 0; i < lines.length; i += 1) {
   // H- joins W- and O- (H-1's carry-out): Howell's rulings enter the ledger
   // directly in his own numbered voice. Same doctrine — assigned at creation,
@@ -44,16 +64,35 @@ for (let i = 0; i < lines.length; i += 1) {
     id,
     n: Number(id.slice(2)),
     kind: id[0],
-    status: (st ? st[1] : 'UNKNOWN').trim(),
+    status: (st ? st[1] : 'UNKNOWN').trim()
+      + (source.name === 'live' ? '' : ' (archived)'),
     title: title.replace(/\s+/g, ' ').trim(),
   });
 }
+}
 
+// A duplicate across live+archives is Wilbur's check 4 (W-79): an entry that
+// exists in both places was copied, not moved, and the projection would lie
+// about which is authoritative. Refusal, not warning.
 const dupes = entries.map(e => e.id).filter((v, i, a) => a.indexOf(v) !== i);
 if (dupes.length) {
-  console.error(`REFUSING: duplicate ids in the ledger — ${[...new Set(dupes)].join(', ')}`);
+  console.error(`REFUSING: duplicate ids across live+archives — ${[...new Set(dupes)].join(', ')}`);
   console.error('W-/O- numbers are append-only and never reused (WF-11).');
   process.exit(1);
+}
+
+// A GAP in a series is Wilbur's check 5, and it is H-4's own injury made
+// visible: an entry whose heading is destroyed keeps its body and vanishes
+// from every count. Also the shape of an unfiled citation (O-47 was a gap for
+// two days and nothing said so). Warn loudly; do not refuse, because the gap
+// might be the finding.
+for (const kind of ['W', 'O', 'H']) {
+  const ns = entries.filter(e => e.kind === kind).map(e => e.n).sort((a, b) => a - b);
+  for (let i = 1; i < ns.length; i += 1) {
+    for (let missing = ns[i - 1] + 1; missing < ns[i]; missing += 1) {
+      console.error(`WARNING: ${kind}-${missing} is missing — heading destroyed, or cited but never filed?`);
+    }
+  }
 }
 
 entries.sort((a, b) => (a.kind === b.kind ? a.n - b.n : a.kind < b.kind ? -1 : 1));
@@ -79,6 +118,8 @@ const body = [
 ].join('\n');
 
 writeFileSync(OUT, body);
+const settled = entries.filter(e => /^(CLOSED|DONE|SUPERSEDED|DECLINED|LANDED|RULED)/.test(e.status) && !e.status.includes('archived'));
 console.log(`ledger index: ${entries.length} entries -> ${OUT}`);
+console.log(`archive debt: ${settled.length} settled entries still in the live file (H-24 point 2)`);
 const byStatus = entries.reduce((m, e) => ({ ...m, [e.status]: (m[e.status] || 0) + 1 }), {});
 console.log('  ' + Object.entries(byStatus).map(([k, v]) => `${k}=${v}`).join('  '));
