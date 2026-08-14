@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-13 from 124 entries.
+Generated 2026-08-14 from 155 entries.
 
 | id | status | title |
 |---|---|---|
@@ -28,6 +28,13 @@ Generated 2026-08-13 from 124 entries.
 | H-14 | OPEN | THE MIGRATION WALL — the engine cannot read pre-doctrine cargo |
 | H-15 | OPEN | THE FEEDBACK CHANNEL, AND THE COPYRIGHT NOTICE RETIRES |
 | H-16 | OPEN | PLACES IS RETIRED |
+| H-17 | OPEN | KNOWN and UNKNOWN, defined |
+| H-18 | OPEN | THE NIGHT AUDIT IS REWRITTEN FOR THE WALL — with increment zero |
+| H-19 | OPEN | THE HEBREW IS RE-IMPORTED FROM A NAMED SOURCE — UXLC 2.5 |
+| H-20 | OPEN | THE SPINE IS CUT TO THE MASORETIC VERSE DIVISIONS |
+| H-21 | OPEN | THE PRE-DOCTRINE CORPUS IS DELETED |
+| H-22 | OPEN | PROOFREADING GOES IN CANONICAL ORDER |
+| H-23 | OPEN | MAM IS DROPPED — WLC GETS NO INDEPENDENT-EDITION SEAT AUDIT |
 | O-1 | OPEN | Prominence tiers for manufacturers (the ranked starfield) |
 | O-2 | DONE | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | OPEN | Travel-color theme keys (CONTRACT heads-up, not yet work) |
@@ -74,9 +81,14 @@ Generated 2026-08-13 from 124 entries.
 | O-44 | OPEN | CHAPTERS ARE A PROJECTION — but nothing says what to project FROM |
 | O-45 | SUPERSEDED BY H | THE SPLICE IS FOUR MOVES, NOT THREE — the text shapes do not meet |
 | O-46 | RULED | THE WALL'S TWO OPEN SHAPES, RULED — grouping kept, Douay-Rheims alone |
+| O-47 | LANDED | THE VOLUME OPENS AT ITS FIRST VERSE UNTIL PHASE 4 — resume suspended |
 | O-48 | RULED | THE DARK STATE — the instrument present, holding nothing |
 | O-49 | OPEN | THE WALL IS BUILT — what the data side now has to produce |
 | O-50 | OPEN | THE READER FETCHES ITS TYPEFACES FROM GOOGLE AT RUNTIME |
+| O-51 | OPEN | A MISS STILL TELEPORTS IF THE ID STOPS BEING PARSEABLE |
+| O-52 | LANDED | TEXT GOES LAZY PER UNIT — the boot cost, paid down but not paid off |
+| O-53 | OPEN | THE ADDRESS IS COMPOSED, AND THE COMPOSITION IS NOWHERE DECLARED |
+| O-54 | ENGINE HALF LANDED | EVERY STRATUM SPEAKS ITS OWN TONGUE — two halves, two repositories |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
@@ -136,3 +148,22 @@ Generated 2026-08-13 from 124 entries.
 | W-57 | OPEN | WF-13's ROTATION IS STARTED — and its first sitting found a sixth dead trigger |
 | W-58 | OPEN | READ-BACK: H-14, O-46, O-48, O-49 — and one correction to O-49's first item |
 | W-59 | OPEN | THE THREE STALE ASSERTIONS, AND THE NORMATIVE LAYOUT SECTION |
+| W-60 | OPEN | H-16's CARGO HALF — places retired, and W-53's lint gap narrows to one word |
+| W-61 | DONE | WF-13 SITTING TWO — `WLC-RESTORATION-RESIDUE.md` against Q3: CLEAN |
+| W-62 | OPEN | READ-BACK: H-17, H-18 — and my answer on derived `complete` |
+| W-63 | OPEN | THE GENERATOR REPAIRS — and "sort by span" would have been wrong |
+| W-64 | OPEN | INCREMENT ZERO, THE NIGHT AUDIT, AND THE SENTENCE THAT GOES IN THE SPEC |
+| W-65 | OPEN | THE INCREMENT MACHINERY IS COMPLETE — three shape questions the fixture could not answer |
+| W-66 | OPEN | THE COMPLETENESS INSTRUMENT — and it picks the book rather than me |
+| W-67 | DONE | THE HEBREW IS IMPORTED FROM UXLC 2.5 — and the diff needed decomposing before it meant anything |
+| W-68 | OPEN | H-20 READ BACK, AND ITS QUESTION ANSWERED: yes — but the table is not invertible |
+| W-69 | CLOSED | H-21 READ BACK, AND ITS THREE QUESTIONS ANSWERED — one of them changes the plan |
+| W-70 | OPEN | H-21 EXECUTED — the pre-doctrine corpus is deleted, and every instrument it fed is now honest |
+| W-71 | OPEN | THE OPAQUE ID SPACE WAS TOO SMALL — 254 verses shared an id with another verse |
+| W-72 | OPEN | WF-13 SITTING THREE — `PROOFREAD-SUITE.md` against Q3, and one finding is a licence hazard |
+| W-73 | OPEN | CHECK 1 PASSES 23,213/23,213 — and the seat audit cannot be re-run at all |
+| W-74 | OPEN | READ-BACK: H-22 and H-23 — and the reader is still serving a 9-file fixture |
+| W-75 | OPEN | FOR ORVILLE, BEFORE HE REPOINTS THE READER — the boot cost he predicted is now real |
+| W-76 | OPEN | THE HEBREW LABEL WAS ALREADY THERE, AND MANUFACTURED — and the edition was named after a source we may not use |
+| W-77 | OPEN | THE HEBREW LABEL IS RESTORED — H-2 governs the corpus's words, not the furniture |
+| W-78 | OPEN | THE ATTESTATION IS PINNED — and "I cannot verify from here" was a choice dressed as a limit |
