@@ -481,3 +481,103 @@ describe('the servable gate (O-29)', () => {
     }
   });
 });
+
+// EVERY STRATUM SPEAKS ITS OWN TONGUE (O-54, Howell's phone 2026-08-14:
+// "HEBREW ... should be in Hebrew").
+describe('the strata name things in their own script', () => {
+  const bridgeOver = (translations, languages) => createDimensionBridge({
+    store: createInteractionStore(),
+    translationsMeta: { translations },
+    languagesMeta: { languages }
+  });
+
+  it('THE LANGUAGE RING SHOWS THE AUTONYM, not the English name', () => {
+    // I returned `languagesMeta: null` at the repoint, so the ring had no
+    // autonym to show and fell through to the id — the reader met the English
+    // word HEBREW where עברית belongs. The volume declared it the whole time.
+    const b = bridgeOver(
+      { WLC: { language: 'hebrew', name: 'Westminster Leningrad Codex', proofread: true, hasChart: true } },
+      [{ id: 'hebrew', autonym: 'עברית' }]
+    );
+    assert.equal(b.languageLabel('hebrew'), 'עברית');
+  });
+
+  it('a language the volume does not name gets NO invented one (H-2)', () => {
+    // A label is a quotation. Falling back to a manufactured autonym would be
+    // the engine speaking for a tradition it has not been told about.
+    const b = bridgeOver(
+      { X: { language: 'coptic', name: 'Something', proofread: true, hasChart: true } },
+      [{ id: 'hebrew', autonym: 'עברית' }]
+    );
+    assert.equal(b.languageLabel('coptic'), 'coptic', 'the id stands in, and nothing is invented');
+  });
+
+  it('THE EDITION RING SHOWS nativeName WHEN THE DATA CARRIES ONE', () => {
+    // Currently it does not for WLC, which is why Howell still reads
+    // "WESTMINSTER LENINGRAD CODEX" in Latin script. That half is the data's:
+    // the engine cannot manufacture כתב יד לנינגרד out of an English string.
+    // This cell proves the engine is ready for it the day it lands.
+    const withNative = bridgeOver(
+      { WLC: { language: 'hebrew', name: 'Westminster Leningrad Codex',
+               nativeName: 'כתב יד לנינגרד', proofread: true, hasChart: true } },
+      [{ id: 'hebrew', autonym: 'עברית' }]
+    );
+    assert.equal(withNative.translationName('WLC'), 'כתב יד לנינגרד');
+
+    const without = bridgeOver(
+      { WLC: { language: 'hebrew', name: 'Westminster Leningrad Codex', proofread: true, hasChart: true } },
+      [{ id: 'hebrew', autonym: 'עברית' }]
+    );
+    assert.equal(without.translationName('WLC'), 'Westminster Leningrad Codex',
+      'without a native name the English one stands — honest, and visibly wrong to a Hebrew reader');
+  });
+});
+
+// AND THE VOLUME MUST ACTUALLY SUPPLY THEM (O-54).
+//
+// The cells above construct the bridge by hand and so prove only that it READS
+// an autonym. Breaking the volume config — putting `languagesMeta: null` back,
+// which is the exact defect Howell saw — left every one of them GREEN.
+//
+// Third time this shape has caught me: the helper is tested, the WIRING is not,
+// and the wiring is where the defect lives. So this asks the volume config the
+// way boot asks it.
+describe('the volume supplies its own autonyms (O-54)', () => {
+  it('loadSupplemental returns languages shaped for the ring', async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const root = {
+      display_config: {
+        languages: { available: ['hebrew'], default: 'hebrew', labels: { hebrew: 'עברית' } }
+      }
+    };
+    const volume = {
+      editions: [{ code: 'WLC', language: 'hebrew', hasChart: true, proofread: false, name: 'Westminster Leningrad Codex' }],
+      namesByLanguage: { hebrew: { books: {}, testaments: {} } }
+    };
+    const manifest = {};
+    Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+
+    const supp = await volumeConfigs.bible.loadSupplemental(root, manifest);
+    assert.ok(supp.languagesMeta, 'null here is what showed the reader the English word HEBREW');
+    assert.deepEqual(supp.languagesMeta.languages, [{ id: 'hebrew', autonym: 'עברית' }]);
+  });
+
+  it('a language the volume lists but does not NAME is left out, never invented', async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const root = {
+      display_config: {
+        languages: { available: ['hebrew', 'coptic'], default: 'hebrew', labels: { hebrew: 'עברית' } }
+      }
+    };
+    const volume = {
+      editions: [{ code: 'WLC', language: 'hebrew', hasChart: true, proofread: false }],
+      namesByLanguage: {}
+    };
+    const manifest = {};
+    Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+
+    const supp = await volumeConfigs.bible.loadSupplemental(root, manifest);
+    assert.deepEqual(supp.languagesMeta.languages.map(l => l.id), ['hebrew'],
+      'an unnamed language carries no manufactured autonym into the ring (H-2)');
+  });
+});

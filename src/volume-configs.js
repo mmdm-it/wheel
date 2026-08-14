@@ -161,7 +161,25 @@ const volumeConfigs = {
           }]))
       };
 
-      return { translationsMeta, languagesMeta: null };
+      // THE SECONDARY STRATUM SPEAKS ITS OWN TONGUE (O-54, Howell's phone
+      // 2026-08-14: "HEBREW ... should be in Hebrew").
+      //
+      // I returned `languagesMeta: null` at the repoint, which left the
+      // language ring with no autonym to show and falling through to the id —
+      // so the reader met the English word HEBREW where עברית belongs. The
+      // volume declares it: `display_config.languages.labels`.
+      //
+      // Shaped into the `{ languages: [{ id, autonym }] }` the bridge already
+      // reads, rather than teaching the bridge a second shape. A label is a
+      // QUOTATION (H-2): every autonym here is the volume's own word, and a
+      // language the volume does not name gets no invented one.
+      const langCfg = root?.display_config?.languages || {};
+      const languagesMeta = {
+        languages: (langCfg.available || [])
+          .filter(id => langCfg.labels?.[id])
+          .map(id => ({ id, autonym: langCfg.labels[id] }))
+      };
+      return { translationsMeta, languagesMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {}, root = null }) => {
       const level = params.get('level') || startup.top_navigation_level || 'verse';
