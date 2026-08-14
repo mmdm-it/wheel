@@ -20,7 +20,6 @@ import path from 'node:path';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
-const loadJson = p => JSON.parse(readFileSync(p, 'utf-8'));
 
 // THE CORPUS IS NOT IN THIS REPO (W-10, the cargo split). Three of the checks
 // below cross-examine the playlist against the registry, and the registry
@@ -30,15 +29,30 @@ const loadJson = p => JSON.parse(readFileSync(p, 'utf-8'));
 // the data actually is (every bench either of us works at, and cargo's own CI
 // if the playlist ever moves there per W-28) without asserting in a place that
 // cannot possibly know the answer. The five playlist-only checks always run.
-// Orville 2026-08-02 — flagged to Wilbur: this is a HOME question, not a fix.
-// The right long-term place for these three is probably cargo CI.
-const corpusPresent = (() => {
-  try { readFileSync(path.join(root, 'data/gutenberg/translations.json')); return true; }
-  catch (_) { return false; }
-})();
-const needsCorpus = corpusPresent
-  ? {}
-  : { skip: 'corpus lives in wheel-cargo (W-10); nothing to cross-check here' };
+// THE THREE CROSS-WALL CELLS ARE DELETED (Howell, 2026-08-13).
+//
+// They read cargo — `data/gutenberg/translations.json` and `languages.json` —
+// and correlated it against this document. Howell's reason is sharper than
+// staleness: that is THE SUITE crossing the wall, where the CODE no longer
+// does. No single-repo suite can honestly own a correlation spanning both
+// sides, and the registry has had no engine reader since H-14 removed them.
+//
+// Two of the three were red — cargo's registry now carries one edition where
+// it carried fourteen, and a file that changes under you is precisely what a
+// cross-repo assertion cannot survive. THE THIRD WAS GREEN, and I deleted it
+// too: it reads `languages.json` by the same route and is sound only until
+// Wilbur next touches that file. Howell named two; the principle he gave
+// covers three, and leaving a known instance of the thing just ruled against
+// would be worse than the tidy.
+//
+// This file flagged it itself on 2026-08-02 — "the right long-term place for
+// these three is probably cargo CI" — and then kept them for six weeks. A
+// flag is not a fix.
+//
+// WHAT SURVIVES IS WHAT THIS REPOSITORY CAN HONESTLY ASSERT: the roster's own
+// internal truth — that it parses, is numbered contiguously, carries a year
+// and a language per row, spells its rungs as booleans, climbs the ladder in
+// order, and repeats no code.
 
 const playlist = readFileSync(path.join(root, 'docs/THE-PLAYLIST.md'), 'utf-8');
 
@@ -120,49 +134,6 @@ describe('THE PLAYLIST is the single source of major truth', () => {
       `duplicate code: ${codes.filter((c, i) => codes.indexOf(c) !== i).join(', ')}`);
   });
 
-  it('every seated edition has a row, and every coded row is seated', needsCorpus, () => {
-    const seated = new Set(Object.keys(loadJson(path.join(root, 'data/gutenberg/translations.json')).translations));
-    const onWall = new Set(acts.map(a => a.code).filter(Boolean));
-    const missing = [...seated].filter(c => !onWall.has(c));
-    const phantom = [...onWall].filter(c => !seated.has(c));
-    assert.deepEqual(missing, [], `seated in the corpus but not on the wall: ${missing.join(', ')}`);
-    assert.deepEqual(phantom, [], `on the wall with a code but nothing seated: ${phantom.join(', ')}`);
-  });
 
-  it('the proofread gate agrees with the wall', needsCorpus, () => {
-    // Until the program reads the playlist directly, translations.json carries
-    // a copy of this flag. A copy that can disagree is the bug this file exists
-    // to prevent, so they are checked against each other on every run.
-    const eds = loadJson(path.join(root, 'data/gutenberg/translations.json')).translations;
-    const bad = [];
-    for (const a of acts.filter(x => x.code)) {
-      const flag = eds[a.code]?.proofread;
-      if (flag !== (a.proofread === 'yes')) bad.push(`${a.code}: wall=${a.proofread} data=${flag}`);
-    }
-    assert.deepEqual(bad, []);
-  });
 
-  it('every door on the language ring traces to an act on the wall', needsCorpus, () => {
-    // A language earns a door BECAUSE a translation act exists in it. This is
-    // the guard that would have caught Arabic sitting at 867 with nothing
-    // behind it, and Irish at 1685 — which is Bedell's Protestant Old
-    // Testament, and would never have survived the shelf criterion.
-    const langs = loadJson(path.join(root, 'data/gutenberg/languages.json'));
-    const ring = (Array.isArray(langs) ? langs : Object.values(langs).find(Array.isArray)) || [];
-    //
-    // Seven doors arrived in the 42-language sweep of 2026-07-28 as quick
-    // comingSoon hooks, three days before this table was expanded, and none has
-    // an act behind it. Pinned here as a backlog that may only SHRINK: each is
-    // resolved either by researching a real act onto the wall or by closing the
-    // door, and that is Howell's call per language, not a test's. A door NOT on
-    // this list and not on the wall is a new defect.
-    const KNOWN_ORPHAN_DOORS = ['czech', 'irish', 'romanian', 'slovak', 'turkish', 'tagalog', 'maltese'];
-    const spoken = new Set(acts.map(a => a.language.toLowerCase().split(/[ (]/)[0]));
-    const orphans = ring.map(l => l.id).filter(id => !spoken.has(id.toLowerCase()));
-    const fresh = orphans.filter(id => !KNOWN_ORPHAN_DOORS.includes(id));
-    assert.deepEqual(fresh, [],
-      `languages with a door and no act: ${fresh.join(', ')} — research them or close the door`);
-    assert.ok(orphans.length <= KNOWN_ORPHAN_DOORS.length,
-      `the orphan-door backlog grew from ${KNOWN_ORPHAN_DOORS.length} to ${orphans.length}`);
-  });
 });
