@@ -581,3 +581,34 @@ describe('the volume supplies its own autonyms (O-54)', () => {
       'an unnamed language carries no manufactured autonym into the ring (H-2)');
   });
 });
+
+// THE VOLUME'S WORD REACHES THE RING INTACT (O-54).
+//
+// The registry synthesis listed five fields by hand and dropped the two the
+// bridge also reads — `nativeName` and `vocabulary`. Neither is in the cargo
+// today, which is precisely what made it dangerous: the drop is invisible
+// until the data grows the field, and then nothing changes on screen and the
+// hunt starts in the wrong repository.
+describe('the synthesised registry carries the edition whole (O-54)', () => {
+  it('passes through a field the engine did not think to list', async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const volume = {
+      editions: [{
+        code: 'WLC', language: 'hebrew', hasChart: true, proofread: false,
+        name: 'Westminster Leningrad Codex',
+        nativeName: 'כתב יד לנינגרד',
+        somethingAddedLater: 'must survive'
+      }],
+      namesByLanguage: {}
+    };
+    const manifest = {};
+    Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+    const supp = await volumeConfigs.bible.loadSupplemental(
+      { display_config: { languages: { available: [], labels: {} } } }, manifest);
+    const wlc = supp.translationsMeta.translations.WLC;
+    assert.equal(wlc.nativeName, 'כתב יד לנינגרד', 'the Hebrew title must reach the ring');
+    assert.equal(wlc.somethingAddedLater, 'must survive',
+      'a field added to the data tomorrow arrives without anyone remembering to list it');
+    assert.equal(wlc.proofread, false, 'and the normalised fields keep their defaults');
+  });
+});

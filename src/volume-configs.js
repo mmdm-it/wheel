@@ -143,8 +143,24 @@ const volumeConfigs = {
       // The registry shape the engine already speaks, populated from
       // doctrine-conformant cargo. `names.sections` is deliberately absent:
       // the section is a retired level and nothing may name one.
+      // THE EDITION IS PASSED THROUGH WHOLE, NOT CHERRY-PICKED (O-54).
+      //
+      // This listed five fields by hand and so DROPPED the two the bridge also
+      // reads: `nativeName`, which is why WLC still shows in Latin script, and
+      // `vocabulary`. Neither is in the cargo today — which is exactly what
+      // makes hand-listing dangerous, because the drop is invisible until the
+      // data grows the field and nothing changes on screen.
+      //
+      // Howell would have had Wilbur add `nativeName` and seen no difference,
+      // and we would both have gone looking in the wrong repository.
+      //
+      // Spreading first and normalising after means a field the data adds
+      // tomorrow arrives without anyone remembering to notice. The
+      // normalisations below are the ones with a DEFAULT the engine depends on;
+      // everything else is the volume's word, carried intact.
       const translationsMeta = {
         translations: Object.fromEntries(volume.editions.map(edition => [edition.code, {
+          ...edition,
           name: edition.name || edition.code,
           language: edition.language || null,
           direction: edition.direction || 'ltr',
