@@ -242,9 +242,17 @@ describe('the continuous verse chain', () => {
     // Chapters are Roman, verses Arabic and BARE (Howell 2026-07-20) — the
     // parent button carries book and chapter, live, so the ring says only
     // which verse.
-    assert.equal(v.name, '2');
+    // THE RING SHOWS THE BARE NUMBER; THE ADDRESS IS THE KEY (O-53).
+    //
+    // Two different things that were one thing while the volume was a single
+    // container. `name` is what the reader sees — the verse alone, because the
+    // parent button carries book and chapter live. `verseKey` is what indexes
+    // the text, and in a multi-container unit that is the edition's full
+    // address, container and seat both.
+    assert.equal(v.name, '2', 'the ring says only which verse');
     assert.equal(v.level, 'verse');
-    assert.equal(v.meta.verseKey, '2');
+    assert.equal(v.meta.seatLabel, '2', 'the seat keeps its own label');
+    assert.equal(v.meta.verseKey, '1:2', 'and the address is what the text is keyed by');
     // Under H-11 the text address is the UNIT's id: containers ceased to be a
     // storage level, so there is no per-chapter file left to name.
     assert.equal(v.meta.externalFile, 'BETH');

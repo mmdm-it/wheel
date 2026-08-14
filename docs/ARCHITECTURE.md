@@ -47,7 +47,19 @@ Single source of truth for UI state.
 - Dimension Button is the sole portal control. It cycles strata in order: Primary (hierarchy) → Secondary (first portal) → Tertiary (second portal, if present) → back to Primary.
 - Volumes may expose zero, one, or two portals; never more than two. No portals: Dimension Button hidden/inactive. One portal: Primary ↔ Secondary. Two portals: Primary ↔ Secondary ↔ Tertiary.
 - Portals are selection layers for dimension values (e.g., language, then translation); they are not additional dimensions themselves.
-- Terminology: use “languages” for the Secondary portal options (manifest field), and “translations/editions” for the Tertiary portal options (translation registry keyed by language).
+- Terminology: use “translations/editions” for the **Secondary** portal options, and “languages” for the **Tertiary** (the registry's languages, each holding its editions).
+
+> **Corrected 2026-08-14 under O-37 (ruled by Howell 2026-08-09).** This line
+> asserted the inverse — languages on the secondary, editions on the tertiary —
+> for five days after the ruling that reversed it. `DIMENSION_SYSTEM.md` records
+> the ruling correctly and this file was never brought into line, so the two
+> documents disagreed and this was the one a reader happened to open. The
+> assignment follows *"nesting and depth agree, narrowing inward"*: language is
+> the largest set and sits deepest; an edition is a subset of a language.
+>
+> The cost was not theoretical. On 2026-08-14 it went into a handoff written
+> for the other session, naming the wrong stratum for a label defect; Howell
+> caught it from the instrument itself.
 
 ## Rendering Pipeline
 

@@ -107,6 +107,18 @@ export function installBrowserGlobals(search) {
   globalThis.fetch = async url => {
     const rel = String(url)
       .replace(/^\.\//, '').replace(/^\//, '')
+      // THE BIBLE'S CARGO PATH MAPS TO THE H-11 FIXTURE (O-52, 2026-08-14).
+      //
+      // Since the repoint the volume asks for the real corpus at its dated
+      // version. That corpus lives in wheel-cargo (W-10) and is absent from
+      // CI, so a boot test reading it would pass on a developer's machine and
+      // 404 on the build — the exact failure this stub was written to prevent.
+      //
+      // The h11 fixture stops being THE VOLUME today and becomes what it
+      // should always have been: the suite's own deterministic corpus. One
+      // testament, one book, thirty-one leaves, ids that disagree with the
+      // alphabet on purpose.
+      .replace(/^data\/gutenberg\/[^/]+\//, 'test/fixtures/h11/gutenberg/v1/')
       .replace(/^data\//, 'test/fixtures/data/');
     try {
       const text = readFileSync(path.join(repoRoot, rel), 'utf-8');
