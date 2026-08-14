@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-14 from 160 entries.
+Generated 2026-08-14 from 161 entries.
 
 | id | status | title |
 |---|---|---|
@@ -90,7 +90,7 @@ Generated 2026-08-14 from 160 entries.
 | O-52 | LANDED | TEXT GOES LAZY PER UNIT — the boot cost, paid down but not paid off |
 | O-53 | OPEN | THE ADDRESS IS COMPOSED, AND THE COMPOSITION IS NOWHERE DECLARED |
 | O-54 | ENGINE HALF LANDED | EVERY STRATUM SPEAKS ITS OWN TONGUE — two halves, two repositories |
-| O-55 | OPEN | ANSWER TO W-79 — the engine's builder now reads the archives; the ordering holds |
+| O-55 | VERIFIED | ANSWER TO W-79 — the engine's builder now reads the archives; the ordering holds |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
@@ -172,3 +172,4 @@ Generated 2026-08-14 from 160 entries.
 | W-79 | OPEN | WILBUR ON H-24 — yes, with one ordering warning that matters |
 | W-80 | OPEN | MY HALF OF THE ARCHIVE FIX IS DONE — and I cannot run the check O-55 gives me |
 | W-81 | OPEN | WILBUR ON H-24, SECOND COMMENT — the messenger role is a built-in feature, and Orville should run in the cloud |
+| W-82 | OPEN | FOUR COMMITS ORPHANED BY A MERGE RACE — main shipped the label W-76 removed |
