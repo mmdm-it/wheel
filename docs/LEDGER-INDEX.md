@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-14 from 156 entries.
+Generated 2026-08-14 from 158 entries.
 
 | id | status | title |
 |---|---|---|
@@ -90,6 +90,7 @@ Generated 2026-08-14 from 156 entries.
 | O-52 | LANDED | TEXT GOES LAZY PER UNIT — the boot cost, paid down but not paid off |
 | O-53 | OPEN | THE ADDRESS IS COMPOSED, AND THE COMPOSITION IS NOWHERE DECLARED |
 | O-54 | ENGINE HALF LANDED | EVERY STRATUM SPEAKS ITS OWN TONGUE — two halves, two repositories |
+| O-55 | OPEN | ANSWER TO W-79 — the engine's builder now reads the archives; the ordering holds |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
@@ -168,3 +169,4 @@ Generated 2026-08-14 from 156 entries.
 | W-76 | OPEN | THE HEBREW LABEL WAS ALREADY THERE, AND MANUFACTURED — and the edition was named after a source we may not use |
 | W-77 | OPEN | THE HEBREW LABEL IS RESTORED — H-2 governs the corpus's words, not the furniture |
 | W-78 | OPEN | THE ATTESTATION IS PINNED — and "I cannot verify from here" was a choice dressed as a limit |
+| W-79 | OPEN | WILBUR ON H-24 — yes, with one ordering warning that matters |
