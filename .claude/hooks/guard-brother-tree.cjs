@@ -107,7 +107,34 @@ function main() {
   // attack, which is what made it dangerous. Found by the brother on
   // review, reproduced here under both node versions before it was
   // believed, and held red in the matrix until this line changed.
-  var CONDITIONAL_EXEC = { 'build-ledger-index.mjs': /(^|\s)--validate(\s|$)/ };
+  //
+  // AND THE FLAG MUST BE AN ARGUMENT, NOT MERELY TEXT (O-59). The first two
+  // cuts asked "does --validate appear in this span", which is the wrong
+  // question: a trailing shell comment (`# remember --validate`) or a quoted
+  // argument that merely mentions the flag both satisfied it, and the builder
+  // then ran in WRITE mode because argv carried no such flag. The separator
+  // fix of O-57 and this are one bug in two costumes — both came of matching
+  // text where the question was about arguments. So the segment is SCRUBBED
+  // of quoted spans and of a trailing comment, then TOKENISED, and the flag
+  // must be present as an exact token.
+  //
+  // Deliberately conservative: `node b.mjs "--validate"` is refused though
+  // the shell would pass it. Over-refusing an odd spelling beats
+  // under-refusing a habit, and the honest spelling is one character shorter.
+  var CONDITIONAL_EXEC = { 'build-ledger-index.mjs': '--validate' };
+  function carriesFlag(segment, flag) {
+    var scrubbed = segment
+      .replace(/'[^']*'/g, ' ')      // quoted spans are text, not arguments
+      .replace(/"[^"]*"/g, ' ')
+      .replace(/#[^\n]*/g, ' ')      // a trailing comment is not an argument
+      .replace(/[()`]/g, ' ');       // `$(… --validate)` — punctuation is not
+                                     // part of the token, and stripping it
+                                     // cannot admit inert text: quotes and
+                                     // comments are already gone.
+    var toks = scrubbed.split(/\s+/);
+    for (var t = 0; t < toks.length; t += 1) if (toks[t] === flag) return true;
+    return false;
+  }
   var INTERPRETERS = '(node|nodejs|npx|python|python3|perl|ruby|sh|bash|zsh|deno|bun)';
   var execRe = new RegExp('(^|[\\s;&|(])' + INTERPRETERS + '\\s+((?:-\\w+\\s+)*)([^\\s;&|<>]+)', 'g');
   var hit;
@@ -122,7 +149,7 @@ function main() {
       var rest = cmd.slice(execRe.lastIndex);
       var segEnd = rest.search(/[;&|\n]/);
       var segment = segEnd === -1 ? rest : rest.slice(0, segEnd);
-      if (cond.test(segment)) continue;
+      if (carriesFlag(segment, cond)) continue;
       console.error('WALL (WF-15, H-9, W-80): the brother\'s builder crosses only in its read-only face — this command segment must carry --validate. The bare call is write mode and stays refused. Target: ' + targetAbs);
       return 2;
     }
