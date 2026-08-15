@@ -698,7 +698,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     const { items: bookItems, selectedIndex: bookSelected, preserveOrder: bookPreserve } = buildBibleBookCousinChain(manifest, {
       testamentId,
       initialItemId: initialBookId,
-      names: namesMap
+      names: namesMap,
+      edition: options?.activeEdition || options?.translation || null
     });
     if (!bookItems.length) return false;
     bibleMode = 'book';
@@ -866,8 +867,19 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       getBibleVerseChain: verseId => verseChain(verseId),
       getBibleChapterChain: chapterId => chapterChain(chapterId),
       prefetchBibleVerses,
+      // THE PYRAMID IS A RING TOO, and it must obey the same filter (H-25
+      // point 4). This called the chain WITHOUT an edition, so `visible` was
+      // null and all 39 books came back — the ring showed the three confirmed
+      // books while the pyramid behind it scattered the other 36 as nodes.
+      // Caught on Howell's phone, not by any cell: every test asked the
+      // builder directly and passed it an edition, because that is what the
+      // author writing the test remembers to do.
       getBibleBooksForTestament: (testamentId) =>
-        buildBibleBookCousinChain(manifest, { testamentId, names: namesMap }),
+        buildBibleBookCousinChain(manifest, {
+          testamentId,
+          names: namesMap,
+          edition: options?.activeEdition || options?.translation || null
+        }),
       pyramidBuilder: buildBiblePyramid
     }
   };
