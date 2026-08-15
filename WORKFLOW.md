@@ -145,8 +145,20 @@ where the categories live is itself a matter of how we work.)*
 - Pull locally to sync: `git checkout main && git pull --ff-only origin main`.
 
 ### 7. Sync to Server
-- Deploy after pulling: `./sync-to-server.sh`
+- **Deploying is Howell's, at a keyboard, and it names its target** (O-60):
+  `./sync-to-server.sh <catalog|bible|calendar|places|staging|all>`, then type
+  the target back when asked. There is no default, and the script refuses
+  outright without a terminal — so no session, script, cron or CI run can
+  publish, by accident or by being told to.
+- The corpus goes separately, through the public-domain filter:
+  `./sync-data-to-server.sh <volume>`. **`--dry-run` needs no terminal and no
+  confirmation** — inspecting what would ship is free, on purpose.
 - Spot-check the production URL on at least one phone.
+
+  *This step used to read "Deploy after pulling: `./sync-to-server.sh`". Bare,
+  that meant `all` — four deployments to production with `rsync --delete`, no
+  confirmation, no dry run. The procedure named the most destructive command
+  in the repository, which is how a routine becomes an accident.*
 
 ---
 
