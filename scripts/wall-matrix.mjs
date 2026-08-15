@@ -106,6 +106,26 @@ const cells = [
     'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs\nnode ${TRAV}/scripts/build-ledger-index.mjs --validate` }, true],
   ['O-57 newline: validate first, then bare, still BLOCKS',
     'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs --validate\nnode ${TRAV}/scripts/build-ledger-index.mjs` }, true],
+  // ── O-59: THE FLAG MUST BE AN ARGUMENT, NOT TEXT. O-57 patched the
+  // separator set; this is the same bug one level down — the door matched
+  // the flag's TEXT, so a trailing `#` comment or a quoted argument that
+  // merely mentions --validate satisfied it while argv carried no flag.
+  // Verified red against the pre-fix hook before the fix landed.
+  ['O-59 trailing comment holding the flag BLOCKS',
+    'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs # remember to use --validate` }, true],
+  ['O-59 flag inside a quoted argument BLOCKS',
+    'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs '--validate is not what I mean'` }, true],
+  ['O-59 flag in a double-quoted span BLOCKS',
+    'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs "see --validate docs"` }, true],
+  // The over-block direction: a fix that refuses everything passes every
+  // cell above and silently severs the verification path the door exists
+  // to serve. The $(…) case caught a real over-block in the first cut.
+  ['O-59 validate inside a $() capture still ALLOWS',
+    'Bash', { command: `OUT=$(node ${TRAV}/scripts/build-ledger-index.mjs --validate)` }, false],
+  ['O-59 validate then an innocent comment still ALLOWS',
+    'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs --validate # this one is fine` }, false],
+  ['O-59 validate piped into a reader still ALLOWS',
+    'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs --validate | head -1` }, false],
   ['H-9 node -e reading his data still passes', 'Bash', { command: `node -e 'JSON.parse(1)' ${TRAV}/gutenberg/manifest.json` }, false],
   // ── File tools through the hook (belt under the harness's braces) ─────
   ['Write, symlink spelling',      'Write', { file_path: `${REL}gutenberg/foo.json`, content: 'x' }, true],
