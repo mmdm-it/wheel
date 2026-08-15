@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { createInteractionStore, interactionEvents } from '../src/core/interaction-store.js';
 import { createDimensionBridge } from '../src/core/dimension-bridge.js';
 import { detailFor, createHandlers } from '../src/adapters/bible-adapter.js';
+import { buildBibleBookCousinChain } from '../src/navigation/cousin-builder.js';
 import { volumeConfigs } from '../src/volume-configs.js';
 import { prefetchBibleVerses } from '../src/adapters/volume-helpers.js';
 import { seedVerseCache } from '../src/adapters/volume-helpers.js';
@@ -717,5 +718,47 @@ describe('per-book certification (H-25) — and the shelf that must not follow',
       'a FINISHED edition with per-book marks must not read as uncertified off-book');
     assert.equal(b.isCertifiedUnit('FINISHED', 'bf9cb53f9'), false,
       'but asked about a book it has not marked, it still answers per book');
+  });
+});
+
+// H-25 point 4, THE LEAK HOWELL'S PHONE FOUND. The ring showed the three
+// confirmed books while the pyramid behind it scattered the other 36 as
+// nodes: `getBibleBooksForTestament` called the chain WITHOUT an edition, so
+// the filter had nothing to filter by and returned everything.
+//
+// EVERY EXISTING CELL PASSED, and that is the point. They all called
+// `buildBibleBookCousinChain` directly and passed it an edition, because
+// passing the edition is what the author writing the test remembers to do —
+// the same author who forgot it at one call site out of four. So this cell
+// tests THE SEAM rather than the builder: it asks the handler the app
+// actually calls, the way the app calls it.
+describe('the pyramid obeys the corpus filter too (H-25)', () => {
+  const VOLUME = {
+    editions: [{ code: 'WLC', proofreadUnits: ['bGEN'] }],
+    testaments: [{ id: 'T1', books: [{ id: 'bGEN' }, { id: 'bEXO' }, { id: 'bLEV' }] }]
+  };
+  const manifest = {
+    Gutenberg_Bible: {
+      testaments: { T1: { sort_number: 0, books: {
+        bGEN: { sort_number: 0 }, bEXO: { sort_number: 1 }, bLEV: { sort_number: 2 }
+      } } }
+    }
+  };
+  Object.defineProperty(manifest, '__wallVolume', { value: VOLUME, enumerable: false });
+
+  it('WITH an edition, the chain carries only confirmed books', () => {
+    const chain = buildBibleBookCousinChain(manifest, { names: {}, edition: 'WLC' });
+    assert.deepEqual(chain.items.filter(Boolean).map(i => i.id), ['bGEN']);
+  });
+
+  it('the handler the app calls passes one — the defect was here, not in the builder', () => {
+    const handlers = createHandlers({
+      manifest, namesMap: {}, options: { activeEdition: 'WLC', level: 'book' }, translationsMeta: null
+    });
+    const supplier = handlers?.layoutBindings?.getBibleBooksForTestament;
+    assert.equal(typeof supplier, 'function', 'the pyramid asks this for its nodes');
+    const chain = supplier('T1');
+    assert.deepEqual(chain.items.filter(Boolean).map(i => i.id), ['bGEN'],
+      'the pyramid must not scatter the books the ring refuses to seat');
   });
 });
