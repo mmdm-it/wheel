@@ -941,3 +941,26 @@ export function getVerseTextResolved(externalFile, verseKey, preferredTranslatio
 export function getVerseTextFromCache(externalFile, verseKey, preferredTranslations = ['VUL', 'NAB', 'BYZ', 'SYN']) {
   return getVerseTextResolved(externalFile, verseKey, preferredTranslations)?.text || '';
 }
+
+// WHICH BOOK IS THIS ITEM IN? (H-25.) The NOT PROOFREAD badge asks per book,
+// so it needs the book behind whatever the reader is standing on — and the
+// reader stands on a VERSE for all 41 seats, which is the only case that
+// really matters.
+//
+// Pure and exported because the resolution is a data question, not a DOM one,
+// and because the badge failing silently inside Genesis is exactly the shape
+// no cell would have caught while it lived inside the host.
+// THE TOP-LEVEL `bookKey` IS THE ONE THAT MATTERS, and it was missing from
+// the first cut. `expandVolumeSeats` carries the book on the seat itself;
+// `meta.bookId` is attached later and only to CHAPTER items derived from
+// those seats (seating-chart.js), and to the synthetic deep-link verse. So a
+// chain verse — every seat Howell reads — has `bookKey` and no `meta.bookId`,
+// and reading only the meta forms returned null exactly where the badge is
+// used. Caught by Wilbur on review, from outside this tree, by reading the
+// two builders against each other.
+export function bookIdOf(item) {
+  if (!item) return null;
+  if (item.level === 'book') return item.id || null;
+  return item.bookKey || item.meta?.bookEntryId || item.meta?.bookId
+    || (item.level === 'chapter' ? item.parentId : null) || null;
+}

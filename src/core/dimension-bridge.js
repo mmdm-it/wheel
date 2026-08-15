@@ -332,6 +332,42 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // The RAW certification, ignoring the override — so the host can mark an
     // edition it is only showing because `?proofread=true` asked it to.
     isCertifiedEdition(key) { return meta?.translations?.[key]?.proofread === true; },
+
+    // PER BOOK, FOR THE BADGE ONLY (H-25, Howell 2026-08-15). He confirms one
+    // seat per book as he goes, and the badge is where he already looks to see
+    // where he left off — so its question became "is THIS book confirmed in
+    // this edition", not "is this edition finished".
+    //
+    // THE PAIR IS THE UNIT: a book proofread in Hebrew is not proofread in
+    // Greek, which is why `proofreadUnits` hangs off the edition rather than
+    // off the book.
+    //
+    // AND IT IS DELIBERATELY NOT WIRED TO `isServable` ABOVE. The shelf asks a
+    // different question — is this edition fit to be offered at all (O-29) —
+    // and answering it per book would have made an edition appear on the
+    // public shelf for its confirmed books and vanish for the rest, flickering
+    // as the reader moved. That change was never asked for and is invisible
+    // from the one place it would be tested, since `?proofread=true` satisfies
+    // the shelf gate regardless. Two questions, two tests.
+    //
+    // The fallback keeps every edition that never grows per-book marks exactly
+    // where it was: no `proofreadUnits`, no change.
+    // WITH NO BOOK IN HAND the edition's own flag answers, in BOTH cases —
+    // marked or unmarked. The first cut returned false for a marked edition
+    // asked about no book, while its only caller fell through to
+    // isCertifiedEdition, so the function and its caller answered the same
+    // question differently. Nothing exercised it, because the caller never
+    // passed null; the second caller would have inherited the disagreement,
+    // and a genuinely finished edition would have worn NOT PROOFREAD on the
+    // root ring. Wilbur's flag on review: make the contract match the
+    // behaviour already chosen.
+    isCertifiedUnit(key, unitId) {
+      const t = meta?.translations?.[key];
+      if (!t) return false;
+      const units = t.proofreadUnits;
+      if (!unitId || !Array.isArray(units)) return t.proofread === true;
+      return units.includes(unitId);
+    },
     // Whether the gate is currently lifted (LAN + ?proofread=true).
     completeOverrideActive() { return overrideProofread; },
 
