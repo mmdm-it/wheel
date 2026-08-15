@@ -43,3 +43,27 @@ export function isOnLan(loc = (typeof window !== 'undefined' ? window.location :
   if (!loc || typeof loc.hostname !== 'string') return false;   // no location: assume public
   return isPrivateHost(loc.hostname);
 }
+
+// IS THE PROOFREAD FLAG LIFTED? ONE implementation, here beside the LAN test
+// it depends on (H-25 point 4's carry-out, 2026-08-15).
+//
+// This lived inline in dimension-bridge, whose own comment warns that "two
+// implementations of one question is how they drift apart" — about the LAN
+// test, which had already drifted once and shipped a prefix match that
+// `127.evil.com` satisfied. The flag now has a second consumer, because it
+// decides which UNITS exist and not merely whether a banner shows, so it gets
+// the same treatment before there are two of it rather than after.
+//
+// WHAT THE FLAG IS (Howell, 2026-08-15): a development instrument, used on the
+// LAN while an edition is being proofread. Without it the reader sees only
+// what has been confirmed. With it, everything KNOWN appears, and the NOT
+// PROOFREAD mark says which parts are not confirmed. It is not expected to do
+// anything on the web at all — only complete, fully-proofread editions are
+// uploaded, so on a public host there is nothing for it to lift.
+export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? window.location : null)) {
+  try {
+    if (!loc || typeof loc.search !== 'string') return false;
+    if (!isOnLan(loc)) return false;
+    return new URLSearchParams(loc.search).get('proofread') === 'true';
+  } catch (_) { return false; }
+}

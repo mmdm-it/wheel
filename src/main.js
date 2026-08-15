@@ -1067,6 +1067,15 @@ function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
   let show = false;
   try {
+    // GATED ON THE FLAG AGAIN (Howell, 2026-08-15) — and briefly un-gating it
+    // was my error, made from a design he had not ruled. Under H-25 point 4
+    // unconfirmed books are UNREACHABLE without the flag, not merely marked.
+    // So off the flag there is nothing on screen to caveat, and the un-gated
+    // version would have shown a red NOT PROOFREAD banner to a reader looking
+    // at confirmed text only — including, one day, the public. The mark
+    // belongs to the development view because that is the only view with
+    // unconfirmed work in it.
+    if (dimensionBridge.completeOverrideActive()) {
     const active = dimensionStore.getState().edition || null;
     const unit = currentBookId();
     // No book in hand — a testament ring, the root, the gateway — so there
@@ -1076,6 +1085,7 @@ function updateIncompleteMark() {
     show = Boolean(active) && (unit
       ? !dimensionBridge.isCertifiedUnit(active, unit)
       : !dimensionBridge.isCertifiedEdition(active));
+    }
   } catch (_) { show = false; }
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';

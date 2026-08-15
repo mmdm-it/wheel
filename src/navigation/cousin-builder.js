@@ -1,6 +1,7 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
 import { chaptersFromSeats } from './seating-chart.js';
-import { expandVolumeSeats } from '../adapters/bible-volume.js';
+import { expandVolumeSeats, confirmedUnitsOf } from '../adapters/bible-volume.js';
+import { proofreadOverrideActive } from '../core/lan-gate.js';
 
 const GAP = null;
 
@@ -58,7 +59,7 @@ export function buildBibleVerseChain(manifest, { initialVerseId = null, edition 
   // chart a unit simply does not seat it, and the reader is shown nothing
   // rather than a fiction.
   const volume = manifest?.__wallVolume;
-  const sorted = volume ? expandVolumeSeats(volume, edition) : [];
+  const sorted = volume ? expandVolumeSeats(volume, edition, { includeUnconfirmed: proofreadOverrideActive() }) : [];
   if (!sorted.length) return { items: [], selectedIndex: 0, preserveOrder: true };
 
   const items = weaveCousinChain(sorted, [
@@ -75,9 +76,19 @@ export function buildBibleVerseChain(manifest, { initialVerseId = null, edition 
   return { items, selectedIndex, preserveOrder: true };
 }
 
-export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initialItemId, names = {} } = {}) {
+export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initialItemId, names = {}, edition = null } = {}) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible) return { items: [], selectedIndex: 0, preserveOrder: true };
+  // UNCONFIRMED BOOKS ARE NOT ON THE RING (H-25 point 4, Howell 2026-08-15).
+  // Without the flag the reader reaches the confirmed books and nothing else,
+  // so this ring must not offer a book whose verses the seat expander will
+  // refuse to produce — that would be a container kept alive for no one, the
+  // shape Wilbur named when he ruled charts out of an uncleared deploy.
+  // With the flag, or for an edition declaring no per-book marks, nothing is
+  // filtered and the ring is exactly what it always was.
+  const visible = edition && !proofreadOverrideActive()
+    ? confirmedUnitsOf(manifest?.__wallVolume, edition)
+    : null;
   const testaments = Object.entries(bible.testaments || {});
   const resolveTestamentId = () => {
     if (bookId) {
@@ -106,6 +117,7 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   Object.entries(bible.testaments || {}).sort(bySortNumber).forEach(([testamentKey, testament]) => {
     const testamentName = testamentNames[testamentKey] || null;
     Object.entries(testament?.books || {}).sort(bySortNumber).forEach(([bookKey, book]) => {
+      if (visible && !visible.has(bookKey)) return;
       sorted.push({
         id: bookKey,
         // A NAME IS A QUOTATION (H-2). The old chain fell back to the book's
@@ -169,7 +181,7 @@ export function buildBibleChapterChain(manifest, { initialChapterId = null, edit
   // there is nothing else to walk. One ring is derived from the other by
   // construction, which is what E3 was reaching for.
   const source = seats
-    || (manifest?.__wallVolume ? expandVolumeSeats(manifest.__wallVolume, edition) : null);
+    || (manifest?.__wallVolume ? expandVolumeSeats(manifest.__wallVolume, edition, { includeUnconfirmed: proofreadOverrideActive() }) : null);
   const fromSeats = source ? chaptersFromSeats(source) : null;
   if (!fromSeats) return { items: [], selectedIndex: 0, preserveOrder: true };
   return weaveChapters(fromSeats, initialChapterId);

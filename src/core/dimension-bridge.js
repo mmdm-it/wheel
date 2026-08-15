@@ -21,7 +21,7 @@
 // first entry, is the default.
 
 import { interactionEvents } from './interaction-store.js';
-import { isOnLan } from './lan-gate.js';
+import { proofreadOverrideActive } from './lan-gate.js';
 
 // (The engine's nine-language autonym table was deleted 2026-07-30: every one
 // of the registry's 29 languages carries its own `autonym`, so the table was
@@ -142,13 +142,11 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // It now calls the shared gate, which requires a genuine dotted quad before
   // it will believe a private range. Two implementations of one question is
   // how they drift apart, and this pair had already drifted.
-  const overrideProofread = (() => {
-    try {
-      if (typeof window === 'undefined' || !window.location) return false;
-      if (!isOnLan(window.location)) return false;
-      return new URLSearchParams(window.location.search).get('proofread') === 'true';
-    } catch (_) { return false; }
-  })();
+  // Now ONE implementation, in lan-gate beside the LAN test (2026-08-15): the
+  // flag gained a second consumer when it began deciding which books exist,
+  // and this file's own comment says what two implementations of one question
+  // do to each other.
+  const overrideProofread = proofreadOverrideActive();
   // SERVABLE = PROOFREAD && HASCHART (O-29, ruled 2026-08-06, landed
   // 2026-08-12 at the 1a exit gate, which refused without it).
   //
