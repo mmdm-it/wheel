@@ -97,9 +97,16 @@ function main() {
   // in its read-only face: the same command SEGMENT must carry --validate.
   // The bare name never joins the allowlist above — a basename cannot see
   // flags, and the bare call is write mode. Each interpreter invocation is
-  // judged on its own segment (text up to the next ;&|), so a chained
-  // validate-&&-bare refuses whole: the bare segment fails and exit 2 kills
-  // the entire command.
+  // judged on its own segment, so a chained validate-then-bare refuses
+  // whole: the bare segment fails and exit 2 kills the entire command.
+  //
+  // A NEWLINE ENDS A SEGMENT (O-57). The first cut knew only `;&|`, so a
+  // bare call ran to end-of-string and passed whenever --validate appeared
+  // anywhere later — including a plain two-line block with the bare call
+  // first and a legitimate validate call second. That is a habit, not an
+  // attack, which is what made it dangerous. Found by the brother on
+  // review, reproduced here under both node versions before it was
+  // believed, and held red in the matrix until this line changed.
   var CONDITIONAL_EXEC = { 'build-ledger-index.mjs': /(^|\s)--validate(\s|$)/ };
   var INTERPRETERS = '(node|nodejs|npx|python|python3|perl|ruby|sh|bash|zsh|deno|bun)';
   var execRe = new RegExp('(^|[\\s;&|(])' + INTERPRETERS + '\\s+((?:-\\w+\\s+)*)([^\\s;&|<>]+)', 'g');
@@ -113,7 +120,7 @@ function main() {
     var cond = CONDITIONAL_EXEC[path.basename(targetAbs)];
     if (cond) {
       var rest = cmd.slice(execRe.lastIndex);
-      var segEnd = rest.search(/[;&|]/);
+      var segEnd = rest.search(/[;&|\n]/);
       var segment = segEnd === -1 ? rest : rest.slice(0, segEnd);
       if (cond.test(segment)) continue;
       console.error('WALL (WF-15, H-9, W-80): the brother\'s builder crosses only in its read-only face — this command segment must carry --validate. The bare call is write mode and stays refused. Target: ' + targetAbs);
