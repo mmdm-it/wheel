@@ -94,7 +94,7 @@ Generated 2026-08-15 from 165 entries.
 | O-56 | OPEN | THE PUBLIC-DOMAIN FILTER IS STRUCTURALLY INERT — a WF-14 gate reporting success over a vacuum |
 | O-57 | ENGINE HALF FIXED | A NEWLINE IS A COMMAND SEPARATOR AND NEITHER WALL KNEW IT — the door shipped with a hole in both repositories |
 | O-58 | OPEN | THE RULES TODAY EARNED, WRITTEN DOWN — because the draft we kept co-signing was filed nowhere |
-| O-59 | OPEN | THE DOOR COUNTS THE FLAG AS PRESENT WHEN IT IS INERT TEXT — both walls, and the engine's is live on main |
+| O-59 | ENGINE HALF FIXED AND MERGED | THE DOOR COUNTS THE FLAG AS PRESENT WHEN IT IS INERT TEXT — both walls, and the engine's is live on main |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
