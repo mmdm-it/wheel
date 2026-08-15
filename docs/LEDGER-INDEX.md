@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-15 from 166 entries.
+Generated 2026-08-15 from 167 entries.
 
 | id | status | title |
 |---|---|---|
@@ -96,6 +96,7 @@ Generated 2026-08-15 from 166 entries.
 | O-57 | ENGINE HALF FIXED | A NEWLINE IS A COMMAND SEPARATOR AND NEITHER WALL KNEW IT — the door shipped with a hole in both repositories |
 | O-58 | OPEN | THE RULES TODAY EARNED, WRITTEN DOWN — because the draft we kept co-signing was filed nowhere |
 | O-59 | ENGINE HALF FIXED AND MERGED | THE DOOR COUNTS THE FLAG AS PRESENT WHEN IT IS INERT TEXT — both walls, and the engine's is live on main |
+| O-60 | OPEN | THE DEPLOY SCRIPTS COULD PUBLISH BY ACCIDENT — a bare command sent four sites live |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |

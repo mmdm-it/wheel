@@ -80,6 +80,36 @@ for arg in "$@"; do
   esac
 done
 
+# ─── PUBLISHING THE CORPUS IS HOWELL'S ACT (O-60, 2026-08-15) ───────────────
+#
+# This is the script that puts scripture on a public server, through the
+# rights filter (O-56). It already required a named volume and offered
+# --dry-run, which is why it is less exposed than its engine counterpart —
+# but it had no confirmation and nothing stopping a non-human from running it.
+#
+# A REAL RUN NEEDS A TERMINAL AND A TYPED VOLUME. A --dry-run needs neither:
+# inspecting what WOULD ship is exactly the thing a session should be able to
+# do freely, and making the safe path frictionless is how the unsafe one stays
+# deliberate.
+if [[ -z "$DRY_RUN" ]]; then
+  if [ ! -t 0 ] || [ ! -t 1 ]; then
+    echo "REFUSING: no terminal." >&2
+    echo "  Publishing the corpus is a human act performed at a keyboard (O-60)." >&2
+    echo "  This will not run from an agent session, a script, cron or CI." >&2
+    echo "  Re-run with --dry-run to inspect what would ship — that needs no terminal." >&2
+    exit 1
+  fi
+  echo ""
+  echo "About to publish the '${VOLUME}' corpus to the PUBLIC server."
+  echo "It passes the public-domain filter first; anything the filter refuses stops the push."
+  printf "Type the volume name to confirm: "
+  read -r CONFIRM
+  if [[ "$CONFIRM" != "$VOLUME" ]]; then
+    echo "Not confirmed ('${CONFIRM}' ≠ '${VOLUME}'). Nothing was sent." >&2
+    exit 1
+  fi
+fi
+
 if [[ "$VOLUME" == "all" ]]; then
   TARGETS=("${ALL_VOLUMES[@]}")
 elif [[ -n "${VOLUME_DEPLOYMENTS[$VOLUME]+x}" ]]; then
