@@ -60,6 +60,19 @@ export function isOnLan(loc = (typeof window !== 'undefined' ? window.location :
 // PROOFREAD mark says which parts are not confirmed. It is not expected to do
 // anything on the web at all — only complete, fully-proofread editions are
 // uploaded, so on a public host there is nothing for it to lift.
+// THE PARAMETER IS MISNAMED, AND KNOWINGLY SO (Howell, 2026-08-15: "something
+// of a misnomer... but I can live with it"). `?proofread=true` READS as "show
+// me only what is proofread" and MEANS the opposite — "show me the material
+// that is not proofread yet". The honest spelling would be
+// `not_proofread_visible=true`.
+//
+// It is not renamed because one person types it, on a LAN, and it appears in
+// no link anyone else follows: the cost of changing it exceeds the cost of
+// knowing. But it is recorded HERE, at the one place the parameter is read,
+// because a name that asserts the opposite of its effect is exactly how a
+// later reader reasons confidently to the wrong conclusion — which is the
+// failure this codebase spent two days cataloguing. Everything downstream is
+// named for what it does: `proofreadOverrideActive`, `includeUnconfirmed`.
 export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? window.location : null)) {
   try {
     if (!loc || typeof loc.search !== 'string') return false;
