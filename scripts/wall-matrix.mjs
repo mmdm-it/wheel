@@ -85,6 +85,27 @@ const cells = [
   ['H-9 allowlisted matrix, absolute',     'Bash', { command: `node ${BROTHER}/scripts/wall-matrix.mjs` }, false],
   ['H-9 our own script stays allowed',     'Bash', { command: 'node scripts/wall-matrix.mjs' }, false],
   ['H-9 a read of his script stays allowed','Bash', { command: `cat ${TRAV}/scripts/add-verse-counts.mjs` }, false],
+  // ── W-80: the conditional door — the brother's builder crosses ONLY in
+  // its read-only face. Red before the door exists, green after; the bare
+  // cells must stay red FOREVER, because the bare call is write mode.
+  ['W-80 builder --validate PASSES, traversal', 'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs --validate` }, false],
+  ['W-80 builder --validate PASSES, absolute',  'Bash', { command: `node ${BROTHER}/scripts/build-ledger-index.mjs --validate` }, false],
+  ['W-80 builder --validate with fixture env PASSES', 'Bash', { command: `WHEEL_LEDGER=/tmp/f.md node ${TRAV}/scripts/build-ledger-index.mjs --validate` }, false],
+  ['W-80 builder BARE stays BLOCKED',           'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs` }, true],
+  ['W-80 builder bare, absolute, BLOCKED',      'Bash', { command: `node ${BROTHER}/scripts/build-ledger-index.mjs` }, true],
+  ['W-80 chained validate-then-bare refuses WHOLE', 'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs --validate && node ${TRAV}/scripts/build-ledger-index.mjs` }, true],
+  ['W-80 OUR OWN builder stays allowed bare',   'Bash', { command: 'node scripts/build-ledger-index.mjs' }, false],
+  // ── O-57: A NEWLINE IS A COMMAND SEPARATOR. The door shipped knowing only
+  // `;&|`, so a bare call running to end-of-string passed whenever the flag
+  // appeared anywhere later — including the innocent two-line block below,
+  // which is a habit rather than an attack. Wilbur found it reviewing #177;
+  // reproduced here under both node versions before it was believed.
+  ['O-57 newline: bare, then a line merely MENTIONING the flag, BLOCKS',
+    'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs\necho --validate` }, true],
+  ['O-57 newline: bare FIRST, then a legitimate validate call, BLOCKS',
+    'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs\nnode ${TRAV}/scripts/build-ledger-index.mjs --validate` }, true],
+  ['O-57 newline: validate first, then bare, still BLOCKS',
+    'Bash', { command: `node ${TRAV}/scripts/build-ledger-index.mjs --validate\nnode ${TRAV}/scripts/build-ledger-index.mjs` }, true],
   ['H-9 node -e reading his data still passes', 'Bash', { command: `node -e 'JSON.parse(1)' ${TRAV}/gutenberg/manifest.json` }, false],
   // ── File tools through the hook (belt under the harness's braces) ─────
   ['Write, symlink spelling',      'Write', { file_path: `${REL}gutenberg/foo.json`, content: 'x' }, true],

@@ -91,6 +91,23 @@ function main() {
   // invocation *into* the tree and is governed by the write-shape rules below,
   // as before.
   var EXEC_ALLOWLIST = ['wall-matrix.mjs'];
+  // THE CONDITIONAL DOOR (W-80; Howell's word in-session 2026-08-14, applied
+  // by his own hand after the harness's classifier refused the session
+  // editing its own wall). The brother's ledger-index builder crosses ONLY
+  // in its read-only face: the same command SEGMENT must carry --validate.
+  // The bare name never joins the allowlist above — a basename cannot see
+  // flags, and the bare call is write mode. Each interpreter invocation is
+  // judged on its own segment, so a chained validate-then-bare refuses
+  // whole: the bare segment fails and exit 2 kills the entire command.
+  //
+  // A NEWLINE ENDS A SEGMENT (O-57). The first cut knew only `;&|`, so a
+  // bare call ran to end-of-string and passed whenever --validate appeared
+  // anywhere later — including a plain two-line block with the bare call
+  // first and a legitimate validate call second. That is a habit, not an
+  // attack, which is what made it dangerous. Found by the brother on
+  // review, reproduced here under both node versions before it was
+  // believed, and held red in the matrix until this line changed.
+  var CONDITIONAL_EXEC = { 'build-ledger-index.mjs': /(^|\s)--validate(\s|$)/ };
   var INTERPRETERS = '(node|nodejs|npx|python|python3|perl|ruby|sh|bash|zsh|deno|bun)';
   var execRe = new RegExp('(^|[\\s;&|(])' + INTERPRETERS + '\\s+((?:-\\w+\\s+)*)([^\\s;&|<>]+)', 'g');
   var hit;
@@ -100,6 +117,15 @@ function main() {
     var targetAbs = path.resolve(ROOT, target);
     if (!inBrotherTree(targetAbs)) continue;
     if (EXEC_ALLOWLIST.indexOf(path.basename(targetAbs)) !== -1) continue;
+    var cond = CONDITIONAL_EXEC[path.basename(targetAbs)];
+    if (cond) {
+      var rest = cmd.slice(execRe.lastIndex);
+      var segEnd = rest.search(/[;&|\n]/);
+      var segment = segEnd === -1 ? rest : rest.slice(0, segEnd);
+      if (cond.test(segment)) continue;
+      console.error('WALL (WF-15, H-9, W-80): the brother\'s builder crosses only in its read-only face — this command segment must carry --validate. The bare call is write mode and stays refused. Target: ' + targetAbs);
+      return 2;
+    }
     console.error('WALL (WF-15, H-9): executing a script inside the brother\'s tree is refused — cross-wall execution is default-deny. Target: ' + targetAbs
       + '\n  Allowed instruments: ' + EXEC_ALLOWLIST.join(', ')
       + '\n  Reads are permitted; running his code is not. If you need a measurement, write it on YOUR side and read his data.');
