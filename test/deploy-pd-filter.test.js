@@ -1,0 +1,134 @@
+// THE RIGHTS GATE, FIRED (O-56). This filter decides what reaches a public
+// server, so its cells are about REFUSALS: the shapes it must stop, and the
+// one thing it must never do, which is report success without having looked.
+//
+// The defect this suite exists for: both of the old version's passes tested
+// `rel.startsWith('chapters/')`, a directory H-21 deleted. It copied
+// everything, stripped nothing, verified a path that did not exist, and
+// exited 0 printing "verified zero non-PD texts in output". Nothing could
+// have caught that from inside — which is why the assert-it-ran cell below
+// matters more than any of the strip cells.
+import { describe, it, before, after } from 'node:test';
+import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync, existsSync, readFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const SCRIPT = 'scripts/deploy-pd-filter.mjs';
+const V = '2026.01.01';
+
+let dir;
+const src = () => path.join(dir, 'src');
+const dest = () => path.join(dir, 'dest');
+
+// Builds a fixture corpus. `editions` are the codes volume.json DECLARES;
+// `texts` are the edition directories that actually carry files — kept
+// separate on purpose, because declaration and presence disagreeing is one
+// of the cases under test.
+function build({ editions = ['WLC'], texts = { WLC: 3 }, declaresEdition = null } = {}) {
+  rmSync(src(), { recursive: true, force: true });
+  rmSync(dest(), { recursive: true, force: true });
+  mkdirSync(path.join(src(), V), { recursive: true });
+  writeFileSync(path.join(src(), 'manifest.json'), JSON.stringify({
+    Gutenberg_Bible: { display_config: { volume_data_version: V } }
+  }));
+  writeFileSync(path.join(src(), V, 'volume.json'), JSON.stringify({
+    editions: editions.map(code => ({ code, hasChart: true }))
+  }));
+  for (const [code, n] of Object.entries(texts)) {
+    const d = path.join(src(), V, 'text', code);
+    mkdirSync(d, { recursive: true });
+    for (let i = 0; i < n; i += 1) {
+      writeFileSync(path.join(d, `b${i}.json`), JSON.stringify({
+        book: `b${i}`, edition: declaresEdition || code, text: { '1:1': 'in principio', '1:2': 'terra autem' }
+      }));
+    }
+  }
+}
+
+const run = () => {
+  const r = spawnSync(process.execPath, [SCRIPT, src(), dest()], {
+    cwd: root, encoding: 'utf-8'
+  });
+  return { code: r.status, out: r.stdout || '', err: r.stderr || '' };
+};
+
+describe('deploy-pd-filter — the rights gate (O-56)', () => {
+  before(() => { dir = mkdtempSync(path.join(tmpdir(), 'pdfilter-')); });
+  after(() => rmSync(dir, { recursive: true, force: true }));
+
+  it('a cleared corpus passes, and SAYS HOW MUCH IT READ', () => {
+    build({ editions: ['WLC'], texts: { WLC: 3 } });
+    const r = run();
+    assert.equal(r.code, 0, r.err);
+    assert.match(r.out, /records inspected AND re-verified in the output: 6/,
+      'three files of two verses each — the count is the proof it looked');
+    assert.ok(existsSync(path.join(dest(), V, 'text', 'WLC', 'b0.json')));
+  });
+
+  it('ZERO RECORDS INSPECTED IS A REFUSAL — the O-56 defect itself', () => {
+    // The exact shape of the original bug: a corpus whose text is not where
+    // the filter looks. The old version copied everything and reported
+    // success. Nothing else in this suite would have caught it.
+    build({ editions: ['WLC'], texts: {} });
+    const r = run();
+    assert.equal(r.code, 1);
+    assert.match(r.err, /ZERO text records were inspected/);
+    assert.match(r.err, /cannot verify what it never read/);
+  });
+
+  it('an edition the volume declares but does not clear STOPS THE DEPLOY BY NAME', () => {
+    build({ editions: ['WLC', 'NAB'], texts: { WLC: 2, NAB: 2 } });
+    const r = run();
+    assert.equal(r.code, 1);
+    assert.match(r.err, /REFUSING/);
+    assert.match(r.err, /NAB/, 'it names the edition rather than dropping it quietly');
+    assert.match(r.err, /LICENSING decision/);
+    assert.ok(!existsSync(dest()), 'and nothing at all was written');
+  });
+
+  it('the refusal comes BEFORE any writing, so a wrong allowlist cannot half-publish', () => {
+    build({ editions: ['WLC', 'CEI'], texts: { WLC: 5, CEI: 1 } });
+    const r = run();
+    assert.equal(r.code, 1);
+    assert.ok(!existsSync(path.join(dest(), V, 'text', 'WLC', 'b0.json')),
+      'not even the cleared edition is written when the volume is in question');
+  });
+
+  it('a text file whose own edition disagrees with its directory is refused', () => {
+    // Layout and content drifting apart is not something a rights gate should
+    // reconcile silently — it is a question for a person.
+    build({ editions: ['WLC'], texts: { WLC: 1 }, declaresEdition: 'NAB' });
+    const r = run();
+    assert.equal(r.code, 1);
+    assert.match(r.err, /REFUSING/);
+    assert.match(r.err, /NAB/);
+  });
+
+  it('the volume must declare something — an empty declaration is refused, not treated as clean', () => {
+    build({ editions: [], texts: { WLC: 1 } });
+    const r = run();
+    assert.equal(r.code, 1);
+    assert.match(r.err, /declares no editions/);
+  });
+
+  it('a missing manifest or volume refuses rather than guessing the layout', () => {
+    build({ editions: ['WLC'], texts: { WLC: 1 } });
+    rmSync(path.join(src(), 'manifest.json'));
+    const r = run();
+    assert.equal(r.code, 1);
+    assert.match(r.err, /no manifest\.json/);
+  });
+
+  it('the deployable copy carries the structure, and the text it carries is cleared', () => {
+    build({ editions: ['WLC'], texts: { WLC: 2 } });
+    const r = run();
+    assert.equal(r.code, 0, r.err);
+    const unit = JSON.parse(readFileSync(path.join(dest(), V, 'text', 'WLC', 'b1.json'), 'utf8'));
+    assert.equal(unit.edition, 'WLC');
+    assert.equal(Object.keys(unit.text).length, 2, 'a cleared edition ships whole — this filter removes nothing from it');
+  });
+});
