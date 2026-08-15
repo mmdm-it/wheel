@@ -141,9 +141,19 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
     // but shipping one whose text was withheld leaves a container no reader can
     // reach, kept off the shelf only by a gate somewhere else. Both go, one rule.
     //
-    // Staged with the uncleared edition present in the tree but NOT declared by
-    // volume.json — otherwise clause 3 refuses the whole deploy first and this
-    // cell would pass without ever testing the exclusion.
+    // DO NOT "TIDY" THIS INTO THE NATURAL FORM. The uncleared edition is
+    // staged present in the tree but NOT declared by volume.json, on purpose.
+    // Declare it — which reads more naturally and is what anyone would write
+    // first — and clause 3 refuses the whole deploy BEFORE exclusion is ever
+    // reached. The cell then passes, named for the exclusion, having proved
+    // only the refusal that was already covered two cells up: green, and
+    // compatible with the thing it names being completely broken.
+    //
+    // A cell must be written adversarially against the OTHER clauses in order
+    // to test its own. This one was one line from being written the wrong way,
+    // in the suite whose whole subject is instruments that pass over a vacuum —
+    // and writing it correctly is what exposed that exclusion consulted the
+    // declaration at all.
     build({ editions: ['WLC'], texts: { WLC: 1, NAB: 1 }, charts: ['WLC', 'NAB'] });
     const r = run();
     assert.equal(r.code, 0, r.err);
