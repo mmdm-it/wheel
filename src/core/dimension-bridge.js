@@ -21,7 +21,7 @@
 // first entry, is the default.
 
 import { interactionEvents } from './interaction-store.js';
-import { isOnLan } from './lan-gate.js';
+import { proofreadOverrideActive } from './lan-gate.js';
 
 // (The engine's nine-language autonym table was deleted 2026-07-30: every one
 // of the registry's 29 languages carries its own `autonym`, so the table was
@@ -142,13 +142,11 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // It now calls the shared gate, which requires a genuine dotted quad before
   // it will believe a private range. Two implementations of one question is
   // how they drift apart, and this pair had already drifted.
-  const overrideProofread = (() => {
-    try {
-      if (typeof window === 'undefined' || !window.location) return false;
-      if (!isOnLan(window.location)) return false;
-      return new URLSearchParams(window.location.search).get('proofread') === 'true';
-    } catch (_) { return false; }
-  })();
+  // Now ONE implementation, in lan-gate beside the LAN test (2026-08-15): the
+  // flag gained a second consumer when it began deciding which books exist,
+  // and this file's own comment says what two implementations of one question
+  // do to each other.
+  const overrideProofread = proofreadOverrideActive();
   // SERVABLE = PROOFREAD && HASCHART (O-29, ruled 2026-08-06, landed
   // 2026-08-12 at the 1a exit gate, which refused without it).
   //
@@ -171,8 +169,30 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // false flag, or a true flag over a missing one — and nothing reconciles
   // them. So the declaration governs the SHELF: an edition that does not claim
   // a chart is not offered, whatever happens to sit on disk.
+  // AMENDED 2026-08-15 (H-25 point 4's carry-out): AN EDITION EARNS THE SHELF
+  // WITH ITS FIRST CONFIRMED BOOK, not with its last.
+  //
+  // The gap Howell found by opening the volume on the LAN with no
+  // `?proofread=true` and getting nothing: the edition carried
+  // `proofread: false` alongside three confirmed units, so this gate refused
+  // it outright and the language fell through to the coming-soon placeholder.
+  // Three units he had personally OK'd were unreachable without a debug flag.
+  //
+  // Per-book was deliberately NOT wired into this gate when the badge was
+  // built, and that part stands: asking "is the CURRENT book confirmed" here
+  // would make an edition appear and vanish as the reader moved through the
+  // corpus. The fix is not to ask a per-book question — it is to ask a
+  // cheaper edition-level one. Does this edition hold ANY confirmed book?
+  // Then it is fit to be offered, whole, and the NOT PROOFREAD mark carries
+  // the per-book truth (H-25 point 4) book by book, which is what the mark
+  // was built for. Nothing flickers, because servability still does not
+  // depend on where the reader is standing.
+  //
+  // `proofread: true` still admits an edition with no per-book marks at all,
+  // so every other edition behaves exactly as before.
+  const hasConfirmedUnit = t => Array.isArray(t?.proofreadUnits) && t.proofreadUnits.length > 0;
   const isServable = t => t
-    && (t.proofread === true || overrideProofread)
+    && (t.proofread === true || hasConfirmedUnit(t) || overrideProofread)
     && t.hasChart === true;
   const servableEditionsOf = languageId => Object.entries(meta?.translations || {})
     .filter(([, t]) => t?.language === languageId && isServable(t))

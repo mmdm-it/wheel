@@ -650,7 +650,8 @@ function buildBibleChain(manifest, options, namesMap) {
       testamentId: options.testamentId,
       bookId: options.bookId,
       initialItemId,
-      names: namesMap
+      names: namesMap,
+      edition: options.activeEdition || options.translation || null
     });
     if (namesMap && typeof namesMap === 'object') {
       const bookNames = namesMap.books || namesMap;

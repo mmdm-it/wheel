@@ -1026,6 +1026,16 @@ let previewPrimary = () => {};
 // bookmarked override could quietly become the normal view and unread text
 // would look finished.
 //
+// NO LONGER INSURANCE FOR THE OVERRIDE ALONE (2026-08-15). The mark used to
+// render only while `?proofread=true` was active, because that flag was the
+// only way unread text could reach the screen. It is not any more: an edition
+// now earns the shelf with its first confirmed book, so a reader with no flag
+// at all reaches the 36 books nobody has confirmed. Gating the mark on the
+// override would have shipped exactly the thing the mark exists to prevent —
+// unread text looking finished — and it would have done it on the DEFAULT
+// path rather than the debug one. The condition is now the honest one: is the
+// book in hand confirmed in the edition in hand.
+//
 // Howell's shape, precisely: the marker names THE TRANSLATION IN HAND. "This
 // translation is a work in progress" is honest; "a translation somewhere is"
 // is not, because a vague global notice tells the reader nothing about what
@@ -1057,16 +1067,24 @@ function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
   let show = false;
   try {
+    // GATED ON THE FLAG AGAIN (Howell, 2026-08-15) — and briefly un-gating it
+    // was my error, made from a design he had not ruled. Under H-25 point 4
+    // unconfirmed books are UNREACHABLE without the flag, not merely marked.
+    // So off the flag there is nothing on screen to caveat, and the un-gated
+    // version would have shown a red NOT PROOFREAD banner to a reader looking
+    // at confirmed text only — including, one day, the public. The mark
+    // belongs to the development view because that is the only view with
+    // unconfirmed work in it.
     if (dimensionBridge.completeOverrideActive()) {
-      const active = dimensionStore.getState().edition || null;
-      const unit = currentBookId();
-      // No book in hand — a testament ring, the root, the gateway — so there
-      // is nothing to assert about. Fall back to the edition's own state,
-      // which is what this said before H-25 and is still the honest answer
-      // when the question has no book in it.
-      show = Boolean(active) && (unit
-        ? !dimensionBridge.isCertifiedUnit(active, unit)
-        : !dimensionBridge.isCertifiedEdition(active));
+    const active = dimensionStore.getState().edition || null;
+    const unit = currentBookId();
+    // No book in hand — a testament ring, the root, the gateway — so there
+    // is nothing to assert about. Fall back to the edition's own state,
+    // which is what this said before H-25 and is still the honest answer
+    // when the question has no book in it.
+    show = Boolean(active) && (unit
+      ? !dimensionBridge.isCertifiedUnit(active, unit)
+      : !dimensionBridge.isCertifiedEdition(active));
     }
   } catch (_) { show = false; }
   if (!show) {

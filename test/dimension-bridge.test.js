@@ -634,18 +634,46 @@ describe('per-book certification (H-25) — and the shelf that must not follow',
     assert.equal(b.isCertifiedUnit('WLC', 'bf9cb53f9'), false, 'Leviticus was not');
   });
 
-  it('THE SHELF DOES NOT MOVE — per-book marks never make an edition servable', () => {
-    // The whole reason this is a separate query. `proofread: false` keeps WLC
-    // off the public shelf (O-29) even though two of its books are confirmed.
-    // Wiring the badge's question into isServable would have published those
-    // two books as a side effect of a badge feature, and made the shelf appear
-    // and vanish as the reader moved between books.
+  it('AN EDITION EARNS THE SHELF WITH ITS FIRST CONFIRMED BOOK', () => {
+    // Howell opened the LAN Bible with no ?proofread=true and got nothing:
+    // WLC is proofread:false with three books he had personally OK'd, and the
+    // shelf gate refused it outright. Three confirmed books unreachable
+    // without a debug flag.
     const b = bridgeOver({ WLC });
-    assert.equal(b.isServableEdition('WLC'), false,
-      'a confirmed book does not put an unfinished edition on the shelf');
-    assert.ok(!b.translationsOf('hebrew').includes('WLC'),
-      'and the shelf does not offer it — the language falls through to the '
-      + 'coming-soon placeholder exactly as it did before H-25');
+    assert.equal(b.isServableEdition('WLC'), true, 'one confirmed book is enough to be offered');
+    assert.deepEqual(b.translationsOf('hebrew'), ['WLC']);
+  });
+
+  it('an edition with NO confirmed book stays off the shelf', () => {
+    const b = bridgeOver({
+      NONE: { language: 'greek', hasChart: true, proofread: false, proofreadUnits: [] },
+      NEVER: { language: 'greek', hasChart: true, proofread: false }
+    });
+    assert.equal(b.isServableEdition('NONE'), false, 'an empty list is not a confirmation');
+    assert.equal(b.isServableEdition('NEVER'), false, 'and neither is no list at all');
+  });
+
+  it('an uncharted edition is still refused, however many books are confirmed', () => {
+    // O-29's other half is untouched: without a chart there is no seating, so
+    // there is nothing to display whatever the proofreading says.
+    const b = bridgeOver({
+      NOCHART: { language: 'hebrew', hasChart: false, proofread: false, proofreadUnits: ['b372f374a'] }
+    });
+    assert.equal(b.isServableEdition('NOCHART'), false);
+  });
+
+  it('THE SHELF STILL DOES NOT MOVE PER BOOK — servability is edition-level', () => {
+    // The distinction that survived the 2026-08-15 amendment, and the reason
+    // the badge query stayed separate. The shelf asks whether the EDITION is
+    // fit to offer — answered once, the same wherever the reader stands. It
+    // never asks about the book in hand, so an edition cannot appear in
+    // Genesis and vanish in Numbers.
+    const b = bridgeOver({ WLC });
+    const servable = b.isServableEdition('WLC');
+    assert.equal(b.isServableEdition('WLC'), servable, 'the answer does not depend on position');
+    assert.equal(b.isCertifiedUnit('WLC', 'b372f374a'), true, 'while the BADGE does vary by book:');
+    assert.equal(b.isCertifiedUnit('WLC', 'bf9cb53f9'), false, '  confirmed here, not there');
+    assert.equal(servable, true, 'and the edition is offered whole either way');
   });
 
   it('the edition-level question is untouched by per-book marks', () => {

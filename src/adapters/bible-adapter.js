@@ -631,7 +631,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         bookId: ctx?.bookId,
         testamentId: ctx?.testamentId,
         initialItemId: ctx?.bookId,
-        names: namesMap
+        names: namesMap,
+        edition: options?.activeEdition || options?.translation || null
       });
       if (!bookItems.length) return false;
       bibleMode = 'book';
