@@ -171,8 +171,30 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // false flag, or a true flag over a missing one — and nothing reconciles
   // them. So the declaration governs the SHELF: an edition that does not claim
   // a chart is not offered, whatever happens to sit on disk.
+  // AMENDED 2026-08-15 (H-25 point 4's carry-out): AN EDITION EARNS THE SHELF
+  // WITH ITS FIRST CONFIRMED BOOK, not with its last.
+  //
+  // The gap Howell found by opening the volume on the LAN with no
+  // `?proofread=true` and getting nothing: the edition carried
+  // `proofread: false` alongside three confirmed units, so this gate refused
+  // it outright and the language fell through to the coming-soon placeholder.
+  // Three units he had personally OK'd were unreachable without a debug flag.
+  //
+  // Per-book was deliberately NOT wired into this gate when the badge was
+  // built, and that part stands: asking "is the CURRENT book confirmed" here
+  // would make an edition appear and vanish as the reader moved through the
+  // corpus. The fix is not to ask a per-book question — it is to ask a
+  // cheaper edition-level one. Does this edition hold ANY confirmed book?
+  // Then it is fit to be offered, whole, and the NOT PROOFREAD mark carries
+  // the per-book truth (H-25 point 4) book by book, which is what the mark
+  // was built for. Nothing flickers, because servability still does not
+  // depend on where the reader is standing.
+  //
+  // `proofread: true` still admits an edition with no per-book marks at all,
+  // so every other edition behaves exactly as before.
+  const hasConfirmedUnit = t => Array.isArray(t?.proofreadUnits) && t.proofreadUnits.length > 0;
   const isServable = t => t
-    && (t.proofread === true || overrideProofread)
+    && (t.proofread === true || hasConfirmedUnit(t) || overrideProofread)
     && t.hasChart === true;
   const servableEditionsOf = languageId => Object.entries(meta?.translations || {})
     .filter(([, t]) => t?.language === languageId && isServable(t))
