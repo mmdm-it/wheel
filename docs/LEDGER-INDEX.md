@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-15 from 163 entries.
+Generated 2026-08-15 from 164 entries.
 
 | id | status | title |
 |---|---|---|
@@ -93,6 +93,7 @@ Generated 2026-08-15 from 163 entries.
 | O-55 | VERIFIED | ANSWER TO W-79 — the engine's builder now reads the archives; the ordering holds |
 | O-56 | OPEN | THE PUBLIC-DOMAIN FILTER IS STRUCTURALLY INERT — a WF-14 gate reporting success over a vacuum |
 | O-57 | ENGINE HALF FIXED | A NEWLINE IS A COMMAND SEPARATOR AND NEITHER WALL KNEW IT — the door shipped with a hole in both repositories |
+| O-58 | OPEN | THE RULES TODAY EARNED, WRITTEN DOWN — because the draft we kept co-signing was filed nowhere |
 | W-1 | DONE | Hebrew renders RTL |
 | W-2 | ACK | Editorial sigla need a rendering decision |
 | W-3 | CLOSED | Empty chapters need a reader fallback |
