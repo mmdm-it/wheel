@@ -28,7 +28,7 @@ const dest = () => path.join(dir, 'dest');
 // `texts` are the edition directories that actually carry files — kept
 // separate on purpose, because declaration and presence disagreeing is one
 // of the cases under test.
-function build({ editions = ['WLC'], texts = { WLC: 3 }, declaresEdition = null } = {}) {
+function build({ editions = ['WLC'], texts = { WLC: 3 }, declaresEdition = null, charts = [] } = {}) {
   rmSync(src(), { recursive: true, force: true });
   rmSync(dest(), { recursive: true, force: true });
   mkdirSync(path.join(src(), V), { recursive: true });
@@ -38,6 +38,11 @@ function build({ editions = ['WLC'], texts = { WLC: 3 }, declaresEdition = null 
   writeFileSync(path.join(src(), V, 'volume.json'), JSON.stringify({
     editions: editions.map(code => ({ code, hasChart: true }))
   }));
+  for (const code of charts) {
+    const d = path.join(src(), V, 'charts', code);
+    mkdirSync(d, { recursive: true });
+    writeFileSync(path.join(d, 'index.json'), JSON.stringify({ edition: code, seats: ['1:1'] }));
+  }
   for (const [code, n] of Object.entries(texts)) {
     const d = path.join(src(), V, 'text', code);
     mkdirSync(d, { recursive: true });
@@ -121,6 +126,31 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
     const r = run();
     assert.equal(r.code, 1);
     assert.match(r.err, /no manifest\.json/);
+  });
+
+  it('a cleared edition keeps its chart — structure is granted on purpose (WF-14)', () => {
+    build({ editions: ['WLC'], texts: { WLC: 1 }, charts: ['WLC'] });
+    const r = run();
+    assert.equal(r.code, 0, r.err);
+    assert.ok(existsSync(path.join(dest(), V, 'charts', 'WLC', 'index.json')),
+      'a chart is groups and seats, not content — and its edition ships');
+  });
+
+  it('an uncleared edition loses its CHART as well as its text', () => {
+    // Wilbur's rights ruling on review: a chart leaks nothing and is grantable,
+    // but shipping one whose text was withheld leaves a container no reader can
+    // reach, kept off the shelf only by a gate somewhere else. Both go, one rule.
+    //
+    // Staged with the uncleared edition present in the tree but NOT declared by
+    // volume.json — otherwise clause 3 refuses the whole deploy first and this
+    // cell would pass without ever testing the exclusion.
+    build({ editions: ['WLC'], texts: { WLC: 1, NAB: 1 }, charts: ['WLC', 'NAB'] });
+    const r = run();
+    assert.equal(r.code, 0, r.err);
+    assert.ok(existsSync(path.join(dest(), V, 'text', 'WLC', 'b0.json')), 'the cleared edition ships');
+    assert.ok(existsSync(path.join(dest(), V, 'charts', 'WLC', 'index.json')), 'with its chart');
+    assert.ok(!existsSync(path.join(dest(), V, 'text', 'NAB')), 'the uncleared text never reaches the output');
+    assert.ok(!existsSync(path.join(dest(), V, 'charts', 'NAB')), 'and neither does its chart');
   });
 
   it('the deployable copy carries the structure, and the text it carries is cleared', () => {

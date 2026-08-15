@@ -102,12 +102,47 @@ if (uncleared.length) {
   );
 }
 
-// The text of an edition lives under text/{EDITION}/, so an uncleared edition
-// is excluded by PATH rather than by editing files. Kept as a general test
-// anyway: this must hold for every edition the volume does not clear, not
-// only for the ones that happen to exist today.
+// An uncleared edition is excluded by PATH rather than by editing files, and
+// the distinction is the point: excluded text is never OPENED, where a
+// per-record strip would carry it through the process and remove it, so one
+// bug ships it. That is the difference between a gate and a filter.
+//
+// Deliberately NOT belt-and-braces. A per-record strip would never fire while
+// path exclusion works, leaving an untested guard sitting in a rights path —
+// which is the disease this entire entry is about. The independent second
+// layer is the output re-walk below: it reads the DESTINATION and would catch
+// a leak however it arrived, sharing no reasoning with the exclusion. Two
+// layers that disagree by construction beat two that agree by duplication.
+// *(Wilbur's ruling on review of PR #184.)*
+//
+// CHARTS GO WITH THE TEXT, and the reason is not rights. A chart is groups,
+// seats and utterance ids with no text in it; WF-14 gives structure away on
+// purpose, and an edition's verse divisions are observable from any copy, so
+// publishing one leaks nothing. But shipping a chart whose text was withheld
+// leaves a container no reader can reach, kept alive for no one — and the
+// only thing preventing harm would be `proofread && hasChart` keeping it off
+// the shelf, which is a gate somewhere else standing in for the absence of
+// the thing. So both go, under one rule and one code path. *(Wilbur's rights
+// ruling, 2026-08-15, his half of the wall.)*
+// DEFAULT-DENY BY DIRECTORY, not deny-what-was-declared. The first cut asked
+// "is this one of the DECLARED editions the allowlist does not clear", which
+// let an edition sitting on disk but absent from volume.json walk straight
+// through — the declaration cannot exclude what it never mentions, and a
+// stray directory of licensed text is exactly the thing that would arrive
+// unannounced. Found by this rule's own chart cell, which staged an
+// undeclared edition so clause 3 would not refuse first and mask it.
+//
+// So the question is asked of the PATH: any edition directory under text/ or
+// charts/ whose code is not on the allowlist is excluded, declared or not.
 const textDirOf = code => join(version, 'text', code) + sep;
-const isUnclearedText = rel => declared.some(c => !PD_ALLOWLIST.has(c) && rel.startsWith(textDirOf(c)));
+const editionDirRe = new RegExp(
+  `^${version.replace(/\./g, '\\.')}\\${sep}(?:text|charts)\\${sep}([^\\${sep}]+)\\${sep}`
+);
+const unclearedEditionOf = rel => {
+  const m = editionDirRe.exec(rel);
+  return m && !PD_ALLOWLIST.has(m[1]) ? m[1] : null;
+};
+const isUnclearedText = rel => unclearedEditionOf(rel) !== null;
 
 // ── copy, omitting the text of uncleared editions ──────────────────────────
 let files = 0, omitted = 0, records = 0, bytesIn = 0, bytesOut = 0;
