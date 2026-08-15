@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-15 from 165 entries.
+Generated 2026-08-15 from 166 entries.
 
 | id | status | title |
 |---|---|---|
@@ -35,7 +35,8 @@ Generated 2026-08-15 from 165 entries.
 | H-21 | OPEN | THE PRE-DOCTRINE CORPUS IS DELETED |
 | H-22 | OPEN | PROOFREADING GOES IN CANONICAL ORDER |
 | H-23 | OPEN | MAM IS DROPPED — WLC GETS NO INDEPENDENT-EDITION SEAT AUDIT |
-| H-24 | PROPOSED | RETIRE THE OCTAVE SESSION — Howell writes the H- entries, the ledger gets pruned |
+| H-24 | RULED | RETIRE THE OCTAVE SESSION — Howell writes the H- entries, the ledger gets pruned |
+| H-25 | OPEN | WHAT ENDS PHASE 1, WHAT PHASE 2 ACTUALLY ASKS, AND THE ENGLISH EDITION STAYS DEAD |
 | O-1 | OPEN | Prominence tiers for manufacturers (the ranked starfield) |
 | O-2 | DONE (archived) | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | OPEN | Travel-color theme keys (CONTRACT heads-up, not yet work) |
