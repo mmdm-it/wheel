@@ -666,10 +666,28 @@ describe('per-book certification (H-25) — and the shelf that must not follow',
     assert.equal(b.isCertifiedUnit('DONE', null), true, 'with no book in hand the edition answers');
   });
 
-  it('an unknown edition, or a book asked of a marked edition with no id, is not certified', () => {
+  it('an unknown edition is never certified', () => {
     const b = bridgeOver({ WLC });
     assert.equal(b.isCertifiedUnit('NOPE', 'b372f374a'), false);
-    assert.equal(b.isCertifiedUnit('WLC', null), false,
-      'a per-book edition with no book in hand cannot claim the book is done');
+  });
+
+  it('WITH NO BOOK IN HAND the edition flag answers, marked or not', () => {
+    // The contract matches the call site, which falls back to the edition
+    // when the ring holds no book. They disagreed in the first cut: the
+    // function said false for a marked edition asked about no book while the
+    // caller said "ask the edition". Nothing exercised it because the caller
+    // never passed null — and a second caller would have inherited the
+    // disagreement, putting NOT PROOFREAD on the root ring of an edition that
+    // is genuinely finished. Wilbur's flag on review of #181.
+    const b = bridgeOver({
+      WLC,                                                  // proofread: false + units
+      FINISHED: { language: 'greek', hasChart: true,
+                  proofread: true, proofreadUnits: ['b372f374a'] }
+    });
+    assert.equal(b.isCertifiedUnit('WLC', null), false, 'an unfinished edition, no book: false');
+    assert.equal(b.isCertifiedUnit('FINISHED', null), true,
+      'a FINISHED edition with per-book marks must not read as uncertified off-book');
+    assert.equal(b.isCertifiedUnit('FINISHED', 'bf9cb53f9'), false,
+      'but asked about a book it has not marked, it still answers per book');
   });
 });

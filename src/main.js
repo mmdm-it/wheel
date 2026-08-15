@@ -1,5 +1,5 @@
 import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
-import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral } from './adapters/volume-helpers.js';
+import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
@@ -1045,16 +1045,12 @@ let previewPrimary = () => {};
 // made knowing what he looked at.
 let incompleteMarkEl = null;
 
-// Which book is the reader in? The adapter's own idiom, reused rather than
-// reinvented: an item names its book in meta, and a chapter's parent IS its
-// book. A ring that answers none of these (the root, a testament, the
-// gateway) leaves the mark alone rather than guessing at one.
+// Which book is the reader in? `bookIdOf` is pure and lives with the other
+// volume helpers, so the resolution can be fired at the item shapes the two
+// chain builders actually produce — the shape mismatch that broke the first
+// cut was invisible from here and would have stayed invisible.
 function currentBookId() {
-  const item = currentApp?.nav?.getCurrent?.();
-  if (!item) return null;
-  if (item.level === 'book') return item.id || null;
-  return item.meta?.bookEntryId || item.meta?.bookId
-    || (item.level === 'chapter' ? item.parentId : null) || null;
+  return bookIdOf(currentApp?.nav?.getCurrent?.());
 }
 
 function updateIncompleteMark() {

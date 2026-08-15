@@ -352,12 +352,21 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     //
     // The fallback keeps every edition that never grows per-book marks exactly
     // where it was: no `proofreadUnits`, no change.
+    // WITH NO BOOK IN HAND the edition's own flag answers, in BOTH cases —
+    // marked or unmarked. The first cut returned false for a marked edition
+    // asked about no book, while its only caller fell through to
+    // isCertifiedEdition, so the function and its caller answered the same
+    // question differently. Nothing exercised it, because the caller never
+    // passed null; the second caller would have inherited the disagreement,
+    // and a genuinely finished edition would have worn NOT PROOFREAD on the
+    // root ring. Wilbur's flag on review: make the contract match the
+    // behaviour already chosen.
     isCertifiedUnit(key, unitId) {
       const t = meta?.translations?.[key];
       if (!t) return false;
       const units = t.proofreadUnits;
-      if (!Array.isArray(units)) return t.proofread === true;
-      return unitId ? units.includes(unitId) : false;
+      if (!unitId || !Array.isArray(units)) return t.proofread === true;
+      return units.includes(unitId);
     },
     // Whether the gate is currently lifted (LAN + ?proofread=true).
     completeOverrideActive() { return overrideProofread; },
