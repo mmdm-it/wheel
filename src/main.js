@@ -1035,14 +1035,42 @@ let previewPrimary = () => {};
 // translation I'm looking at is a work in progress, and that's all I need to
 // know." It says only that, never what is missing: the point is the caveat,
 // not an inventory.
+//
+// PER BOOK SINCE H-25 (Howell, 2026-08-15). With 39 books he needs to see
+// where he left off, and this is the place he already looks. So the mark now
+// asks about the BOOK IN HAND rather than the edition, and its absence claims
+// that this book's seat was confirmed on the running app — one seat per book,
+// chosen so the 41 of them carry every character in the corpus. It does NOT
+// claim every verse was read, and that distinction is Howell's own ruling,
+// made knowing what he looked at.
 let incompleteMarkEl = null;
+
+// Which book is the reader in? The adapter's own idiom, reused rather than
+// reinvented: an item names its book in meta, and a chapter's parent IS its
+// book. A ring that answers none of these (the root, a testament, the
+// gateway) leaves the mark alone rather than guessing at one.
+function currentBookId() {
+  const item = currentApp?.nav?.getCurrent?.();
+  if (!item) return null;
+  if (item.level === 'book') return item.id || null;
+  return item.meta?.bookEntryId || item.meta?.bookId
+    || (item.level === 'chapter' ? item.parentId : null) || null;
+}
+
 function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
   let show = false;
   try {
     if (dimensionBridge.completeOverrideActive()) {
       const active = dimensionStore.getState().edition || null;
-      show = Boolean(active) && !dimensionBridge.isCertifiedEdition(active);
+      const unit = currentBookId();
+      // No book in hand — a testament ring, the root, the gateway — so there
+      // is nothing to assert about. Fall back to the edition's own state,
+      // which is what this said before H-25 and is still the honest answer
+      // when the question has no book in it.
+      show = Boolean(active) && (unit
+        ? !dimensionBridge.isCertifiedUnit(active, unit)
+        : !dimensionBridge.isCertifiedEdition(active));
     }
   } catch (_) { show = false; }
   if (!show) {
@@ -2345,6 +2373,24 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     onDetailPreview: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
   });
   currentApp = app;
+  // THE MARK FOLLOWS THE READER (H-25). Before this it was re-evaluated on an
+  // edition change and at boot only, which was sufficient while it asked about
+  // the edition and is not once it asks about the BOOK: the reader would carry
+  // whatever was true where they entered the corpus through every book after
+  // it. Per book is a per-navigation question.
+  //
+  // Only a CHANGE OF BOOK can change the answer, so the id is compared before
+  // touching the DOM — verse-by-verse travel through a book costs one string
+  // comparison per settle and no repaint.
+  if (app?.nav?.onChange) {
+    let lastMarkedBook = currentBookId();
+    app.nav.onChange(() => {
+      const book = currentBookId();
+      if (book === lastMarkedBook) return;
+      lastMarkedBook = book;
+      updateIncompleteMark();
+    });
+  }
   // THE STRIKE: in search mode — and only there — the magnifier receives
   // its first-ever click (Howell 2026-07-22): tap the lens, commit the
   // settled character to the carriage. Inert in browse mode.

@@ -612,3 +612,64 @@ describe('the synthesised registry carries the edition whole (O-54)', () => {
     assert.equal(wlc.proofread, false, 'and the normalised fields keep their defaults');
   });
 });
+
+// H-25, Howell 2026-08-15: the NOT PROOFREAD badge flips per BOOK now, as he
+// confirms one seat per book and needs to see where he left off. The cells
+// that matter most are the ones proving the SHELF did not come along for the
+// ride — the proposal was a single line that would have changed both.
+describe('per-book certification (H-25) — and the shelf that must not follow', () => {
+  const bridgeOver = translations => createDimensionBridge({
+    store: createInteractionStore(), translationsMeta: { translations }
+  });
+
+  const WLC = {
+    language: 'hebrew', name: 'Unicode/XML Leningrad Codex', hasChart: true,
+    proofread: false,                       // the EDITION is not finished
+    proofreadUnits: ['b372f374a', 'bb4e6180a']   // Genesis, Exodus confirmed
+  };
+
+  it('a confirmed book is certified; an unconfirmed one is not', () => {
+    const b = bridgeOver({ WLC });
+    assert.equal(b.isCertifiedUnit('WLC', 'b372f374a'), true, 'Genesis was confirmed');
+    assert.equal(b.isCertifiedUnit('WLC', 'bf9cb53f9'), false, 'Leviticus was not');
+  });
+
+  it('THE SHELF DOES NOT MOVE — per-book marks never make an edition servable', () => {
+    // The whole reason this is a separate query. `proofread: false` keeps WLC
+    // off the public shelf (O-29) even though two of its books are confirmed.
+    // Wiring the badge's question into isServable would have published those
+    // two books as a side effect of a badge feature, and made the shelf appear
+    // and vanish as the reader moved between books.
+    const b = bridgeOver({ WLC });
+    assert.equal(b.isServableEdition('WLC'), false,
+      'a confirmed book does not put an unfinished edition on the shelf');
+    assert.ok(!b.translationsOf('hebrew').includes('WLC'),
+      'and the shelf does not offer it — the language falls through to the '
+      + 'coming-soon placeholder exactly as it did before H-25');
+  });
+
+  it('the edition-level question is untouched by per-book marks', () => {
+    const b = bridgeOver({ WLC });
+    assert.equal(b.isCertifiedEdition('WLC'), false,
+      'isCertifiedEdition still reads the edition flag and only that');
+  });
+
+  it('an edition with NO per-book marks behaves exactly as it did', () => {
+    // The fallback. Nothing regresses for the editions that never grow the
+    // field — which is every edition but one on the day this lands.
+    const b = bridgeOver({
+      DONE: { language: 'latin', proofread: true, hasChart: true },
+      NOTDONE: { language: 'latin', proofread: false, hasChart: true }
+    });
+    assert.equal(b.isCertifiedUnit('DONE', 'anything'), true);
+    assert.equal(b.isCertifiedUnit('NOTDONE', 'anything'), false);
+    assert.equal(b.isCertifiedUnit('DONE', null), true, 'with no book in hand the edition answers');
+  });
+
+  it('an unknown edition, or a book asked of a marked edition with no id, is not certified', () => {
+    const b = bridgeOver({ WLC });
+    assert.equal(b.isCertifiedUnit('NOPE', 'b372f374a'), false);
+    assert.equal(b.isCertifiedUnit('WLC', null), false,
+      'a per-book edition with no book in hand cannot claim the book is done');
+  });
+});
