@@ -762,3 +762,95 @@ describe('the pyramid obeys the corpus filter too (H-25)', () => {
       'the pyramid must not scatter the books the ring refuses to seat');
   });
 });
+
+// H-26/W-83 — the shelf chart: the edition's own book order, and its sections
+// as labelled ranges over that order.
+//
+// THE REQUIRED CELL is the filtered-ring one, recorded in W-83 at Orville's
+// request. Group lookup by RING POSITION passes every unfiltered-ring test,
+// because in an unfiltered ring the ring index and the shelf ordinal agree.
+// They stop agreeing the moment H-25's filter hides an unconfirmed book — and
+// then Ruth, who sits at shelf ordinal 32 among the Writings, is ring item 8
+// and reads as Prophets.
+describe('the shelf chart — order and sections (H-26)', () => {
+  // A miniature Tanakh: five Torah, two Prophets, one Writing, shelved in the
+  // codex's order, with Ruth late as she is there.
+  const SHELF = {
+    edition: 'WLC',
+    units: ['GEN', 'EXO', 'LEV', 'NUM', 'DEU', 'JOS', 'JDG', 'CHR', 'RUT'],
+    groups: [
+      { label: 'תורה', from: 1, to: 5 },
+      { label: 'נביאים', from: 6, to: 7 },
+      { label: 'כתובים', from: 8, to: 9 }
+    ]
+  };
+  // volume.json enumerates in the OTHER order — Ruth right after Judges, as
+  // the Vulgate has her. The shelf must win.
+  const volumeOrder = ['GEN', 'EXO', 'LEV', 'NUM', 'DEU', 'JOS', 'JDG', 'RUT', 'CHR'];
+  const volume = {
+    units: volumeOrder.map(id => ({ id })),
+    // Only three confirmed, and Ruth one of them — so the ring is short and
+    // her position in it falls in a DIFFERENT group from her shelf ordinal.
+    // The first draft of this cell confirmed eight of nine, which left ring
+    // ordinal 8 and shelf ordinal 9 both inside the Writings: the assertion
+    // passed while testing nothing, exactly the shape it exists to forbid.
+    editions: [{ code: 'WLC', proofreadUnits: ['GEN', 'EXO', 'RUT'] }],
+    testaments: [{ id: 'T1', books: volumeOrder.map(id => ({ id, testamentId: 'T1' })) }],
+    shelfFor: () => SHELF,
+    bookOrderFor() {
+      const known = new Set(volumeOrder);
+      const ordered = SHELF.units.filter(id => known.has(id));
+      const seen = new Set(ordered);
+      return ordered.concat(volumeOrder.filter(id => !seen.has(id)));
+    },
+    sectionOf(edition, unitId) {
+      const ordinal = SHELF.units.indexOf(unitId) + 1;
+      if (!ordinal) return null;
+      const g = SHELF.groups.find(x => ordinal >= x.from && ordinal <= x.to);
+      return (g && g.label) || null;
+    }
+  };
+
+  it('the edition shelves its own order — Ruth moves to the Writings', () => {
+    assert.deepEqual(volume.bookOrderFor('WLC'), SHELF.units,
+      'the shelf wins over volume order');
+    assert.notEqual(volumeOrder.indexOf('RUT'), SHELF.units.indexOf('RUT'),
+      'and the two orders genuinely differ, or this cell proves nothing');
+  });
+
+  it('sections are labelled ranges: each book resolves to its own division', () => {
+    assert.equal(volume.sectionOf('WLC', 'GEN'), 'תורה');
+    assert.equal(volume.sectionOf('WLC', 'JOS'), 'נביאים', 'the break is AT Joshua');
+    assert.equal(volume.sectionOf('WLC', 'RUT'), 'כתובים');
+    assert.equal(volume.sectionOf('WLC', 'NOSUCH'), null, 'a book off the shelf has no section');
+  });
+
+  it('REQUIRED (W-83): the section survives a FILTERED ring — Ruth is not a Prophet', () => {
+    // The ring as the reader sees it: Chronicles unconfirmed and therefore
+    // absent (H-25 point 4), so Ruth is the EIGHTH item on screen while her
+    // shelf ordinal is NINE.
+    const confirmed = new Set(volume.editions[0].proofreadUnits);
+    const ring = volume.bookOrderFor('WLC').filter(id => confirmed.has(id));
+    assert.equal(ring.indexOf('RUT'), 2, 'third on screen (0-based 2)');
+    assert.equal(SHELF.units.indexOf('RUT'), 8, 'ninth on the shelf (0-based 8)');
+
+    // Keyed on the shelf, she is where the tradition puts her.
+    assert.equal(volume.sectionOf('WLC', 'RUT'), 'כתובים');
+
+    // Keyed on the ring — the bug this cell exists to forbid — she is not.
+    const byRingIndex = ord => (SHELF.groups.find(g => ord >= g.from && ord <= g.to) || {}).label || null;
+    assert.equal(byRingIndex(ring.indexOf('RUT') + 1), 'תורה',
+      'the wrong lookup really does mislabel her, which is why the right one is asserted above');
+  });
+
+  it('an edition with no shelf chart keeps volume order and shows no label', () => {
+    const plain = {
+      units: volumeOrder.map(id => ({ id })),
+      shelfFor: () => null,
+      bookOrderFor: () => volumeOrder,
+      sectionOf: () => null
+    };
+    assert.deepEqual(plain.bookOrderFor('X'), volumeOrder);
+    assert.equal(plain.sectionOf('X', 'GEN'), null, 'absence, not an empty string');
+  });
+});

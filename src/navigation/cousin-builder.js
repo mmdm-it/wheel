@@ -62,6 +62,25 @@ export function buildBibleVerseChain(manifest, { initialVerseId = null, edition 
   const sorted = volume ? expandVolumeSeats(volume, edition, { includeUnconfirmed: proofreadOverrideActive() }) : [];
   if (!sorted.length) return { items: [], selectedIndex: 0, preserveOrder: true };
 
+  // THE EDITION'S OWN ORDER (H-26/W-83). The list above comes out in
+  // volume order — sort_number per testament — and the edition may shelve its
+  // books differently: the Leningrad Codex opens the Writings with Chronicles
+  // and seats Ruth among them, where the Vulgate's order puts her after
+  // Judges. Reordering the finished list keeps one ordering rule in the
+  // system, since `bookOrderFor` is what the seat expander walks too.
+  //
+  // Books the shelf does not name keep their volume position, appended, so a
+  // partial shelf loses nobody. Without a shelf nothing moves at all.
+  const shelfOrder = edition && manifest?.__wallVolume?.bookOrderFor
+    ? manifest.__wallVolume.bookOrderFor(edition)
+    : null;
+  if (shelfOrder) {
+    const rank = new Map(shelfOrder.map((id, i) => [id, i]));
+    const tail = shelfOrder.length;
+    sorted.sort((a, b) => (rank.has(a.id) ? rank.get(a.id) : tail + a.sort)
+      - (rank.has(b.id) ? rank.get(b.id) : tail + b.sort));
+  }
+
   const items = weaveCousinChain(sorted, [
     item => item.chapterKey,
     item => item.bookKey,

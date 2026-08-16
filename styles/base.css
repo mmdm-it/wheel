@@ -876,6 +876,35 @@ svg :focus-visible {
   pointer-events: none;
 }
 
+/* THE SECTION LABEL (H-26) — the tradition's own name for the division the
+   magnified book belongs to. A NAME, never a colour: a colour asserts nothing
+   and so can be quietly wrong, which is exactly what the field does and what
+   this ruling refuses.
+
+   IT IS NOT A DEV AFFORDANCE, so it must not look like one. The NOT PROOFREAD
+   mark above is deliberately plain and alarming because it is scaffolding;
+   this is reader-facing and permanent, so it takes the volume's own ink on
+   its own ground rather than a warning badge's red plate.
+
+   It sits at the RIGHT, opposite the mark, and above the parent label's
+   baseline for the same reason the mark clears it — the label's ascenders run
+   through 7%. Right and left cannot collide, so the two can show together:
+   under the flag an unconfirmed book carries both its section and its
+   caveat. */
+#section-label {
+  position: fixed;
+  right: calc(4% * var(--iframe-scale, 1));
+  bottom: calc(10% * var(--iframe-scale, 1));
+  z-index: 400;
+  color: var(--volume-text, #2a1a0f);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: calc(13px * var(--iframe-scale, 1));
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
 /* Off-screen but SPOKEN. display:none and visibility:hidden both remove an
    element from the accessibility tree, which would mute the live region
    entirely — the classic mistake. This keeps it rendered and unreadable. */
