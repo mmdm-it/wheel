@@ -141,8 +141,13 @@ const volumeConfigs = {
       }
 
       // The registry shape the engine already speaks, populated from
-      // doctrine-conformant cargo. `names.sections` is deliberately absent:
-      // the section is a retired level and nothing may name one.
+      // doctrine-conformant cargo. `names.sections` is deliberately absent —
+      // and under H-26 that sentence needs its correction rather than its
+      // deletion. A section is still not a LEVEL and still has no node, so
+      // nothing here names one. But sections are no longer nameless: H-26
+      // gives them the tradition's own word, carried in the EDITION's shelf
+      // chart as `groups[].label`, because the name belongs to the edition's
+      // arrangement and not to a language's book table.
       // THE EDITION IS PASSED THROUGH WHOLE, NOT CHERRY-PICKED (O-54).
       //
       // This listed five fields by hand and so DROPPED the two the bridge also

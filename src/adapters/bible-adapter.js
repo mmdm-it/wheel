@@ -62,7 +62,11 @@ export function normalize(raw) {
   // BOOKS HANG FROM TESTAMENTS, AND CHAPTERS ARE NOT HERE (H-14).
   //
   // This walked testament → section → book → chapter. Sections were retired as
-  // a navigable level in July and are now gone from the enumeration entirely;
+  // a navigable level in July and are still not one — H-26 brought back the
+  // NAME and not the level: a section is now a labelled range over the
+  // edition's book order, the chart-chapter shape one level up (O-44), drawn
+  // beside the ring and never entered. The enumeration below is unchanged;
+
   // chapters ceased to be a storage level under H-11, so there is nothing to
   // walk into — a container is projected from the edition's chart at render,
   // which is what O-44 rules and what `getBibleChapters` now does.

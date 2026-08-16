@@ -1100,6 +1100,63 @@ function updateIncompleteMark() {
   incompleteMarkEl.style.display = '';
 }
 
+// THE SECTION LABEL (H-26, Howell's own sketch; specified in W-83).
+//
+// *"Sections should be a label, not a hierarchy... merely a label displayed
+// next to a group of books that indicates these books are all in the same
+// section. I don't want to use colors to distinguish sections. I want to show
+// their name."*
+//
+// So it shows exactly ONE name — the section of the book in the MAGNIFIER —
+// and updates as books rotate through, which makes the division an EVENT:
+// the label reads תּוֹרָה five times and flips to נְבִיאִים as Joshua
+// arrives. That shows where the breaks fall without adding a level to
+// navigate, which is the whole of the ruling.
+//
+// A NAME IS A QUOTATION (H-2), and that is why this shows the tradition's own
+// word rather than a colour. A colour asserts nothing, so it can be quietly
+// wrong — AndBible paints Ruth as a history while seating her in the Writings
+// and nothing contradicts it. A name is attested or it is absent: no shelf
+// chart, or a book in no declared group, means NO LABEL rather than an empty
+// frame.
+//
+// IT HAS ITS OWN ELEMENT, and that was a reviewed decision rather than a
+// default. The old build did put a section in the parent-button slot — the
+// red section name still live on the public deployment — and it could,
+// because a section was the book's parent LEVEL then. Under H-26 it is
+  // not: the testament is, and that
+// slot currently carries הברית הישנה. Reusing it would displace the testament
+// name, which is a silent loss wearing the shape of a feature.
+let sectionLabelEl = null;
+function updateSectionLabel() {
+  if (typeof document === 'undefined') return;
+  let label = null;
+  try {
+    // ONLY WHILE BOOKS ARE IN THE RING (H-26). Deeper than that the ring is
+    // inside a single book, where a section name answers a question the
+    // reader has stopped asking.
+    const item = currentApp?.nav?.getCurrent?.();
+    if (item?.level === 'book') {
+      const edition = dimensionStore.getState().edition || null;
+      const volume = currentManifest?.__wallVolume;
+      if (edition && typeof volume?.sectionOf === 'function') {
+        label = volume.sectionOf(edition, bookIdOf(item));
+      }
+    }
+  } catch (_) { label = null; }
+  if (!label) {
+    if (sectionLabelEl) sectionLabelEl.style.display = 'none';
+    return;
+  }
+  if (!sectionLabelEl) {
+    sectionLabelEl = document.createElement('div');
+    sectionLabelEl.id = 'section-label';
+    document.body.appendChild(sectionLabelEl);
+  }
+  sectionLabelEl.textContent = label;
+  sectionLabelEl.style.display = '';
+}
+
 function updateDimensionButton() {
   if (!dimensionButton) return;
   if (cornerIconHold) return; // frozen mid-wipe: the icon is part of the image
@@ -1851,6 +1908,11 @@ async function showVersion() {
 }
 
 let currentApp = null;
+// The booted volume's manifest, kept module-wide for the same reason
+// `currentApp` is: the section label (H-26) is updated from a nav callback
+// that has no path back into bootVolume's scope, and it needs the wall
+// volume's own answer for which section holds a book.
+let currentManifest = null;
 let currentVolumeId = null;
 let gatewayReturnContext = null;
 let interactionsWired = false;
@@ -2387,6 +2449,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     onDetailPreview: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
   });
   currentApp = app;
+  currentManifest = manifest;
   // THE MARK FOLLOWS THE READER (H-25). Before this it was re-evaluated on an
   // edition change and at boot only, which was sufficient while it asked about
   // the edition and is not once it asks about the BOOK: the reader would carry
@@ -2403,8 +2466,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       if (book === lastMarkedBook) return;
       lastMarkedBook = book;
       updateIncompleteMark();
+      // The section label rides the same signal, and for the same reason:
+      // only a change of BOOK can change either answer (H-26). It is the
+      // division being seen as an EVENT that Howell asked for, so it must
+      // fire on the settle that carries Joshua into the magnifier.
+      updateSectionLabel();
     });
   }
+  updateSectionLabel();
   // THE STRIKE: in search mode — and only there — the magnifier receives
   // its first-ever click (Howell 2026-07-22): tap the lens, commit the
   // settled character to the carriage. Inert in browse mode.
