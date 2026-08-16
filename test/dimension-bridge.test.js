@@ -854,3 +854,56 @@ describe('the shelf chart — order and sections (H-26)', () => {
     assert.equal(plain.sectionOf('X', 'GEN'), null, 'absence, not an empty string');
   });
 });
+
+// The stale-shelf tripwire (Wilbur's ruling on his contract, 2026-08-16).
+// Fired rather than read: a guard that cannot be shown firing is not a guard.
+describe('a shelf drifting from the volume is LOUD (H-26)', () => {
+  const loadWith = async (shelfUnits, volumeUnits) => {
+    const { loadBibleVolume } = await import('../src/adapters/bible-volume.js');
+    const errs = [];
+    const realError = console.error;
+    console.error = (...a) => errs.push(a.join(' '));
+    try {
+      await loadBibleVolume({
+        base: '/x', version: 'v1',
+        fetchJson: async p => {
+          if (p.endsWith('volume.json')) {
+            return {
+              editions: [{ code: 'ED', language: 'l', hasChart: true }],
+              testaments: [{ id: 'T', books: volumeUnits.map(id => ({ id })) }]
+            };
+          }
+          if (p.endsWith('index.json')) return { edition: 'ED', units: shelfUnits, groups: [] };
+          if (p.includes('/spine/')) return { utterances: ['1:1'] };
+          if (p.includes('/charts/')) return { seats: [{ label: '1', utterances: ['1:1'] }], groups: [{ label: '1', from: 1, to: 1 }] };
+          if (p.includes('/names/')) return { books: {} };
+          throw new Error('no such file ' + p);
+        }
+      });
+    } finally { console.error = realError; }
+    return errs;
+  };
+
+  it('a shelf naming unknown units says so, and names them', async () => {
+    const errs = await loadWith(['A', 'GHOST', 'B'], ['A', 'B']);
+    const hit = errs.find(e => e.includes('does not enumerate'));
+    assert.ok(hit, 'the drift is reported: ' + JSON.stringify(errs));
+    assert.match(hit, /GHOST/, 'and the unknown id is named, not merely counted');
+  });
+
+  it('THE STALE-SHELF SIGNATURE — zero matches — says THAT, specifically', async () => {
+    // Every id changed under the shelf (W-71 did exactly this to the corpus
+    // once). Filtering quietly would leave nothing to order, append everything
+    // in volume order, and revert the edition's arrangement with every cell
+    // green. The feature vanishing IS the failure and it reads as nothing.
+    const errs = await loadWith(['OLD1', 'OLD2'], ['NEW1', 'NEW2']);
+    const hit = errs.find(e => e.includes('matches NO enumerated unit'));
+    assert.ok(hit, 'the stale shelf is called by its name: ' + JSON.stringify(errs));
+    assert.match(hit, /silently NOT being shown/, 'and it says what the reader loses');
+  });
+
+  it('a shelf that merely OMITS units is silent — a partial shelf is legitimate', async () => {
+    const errs = await loadWith(['A'], ['A', 'B']);
+    assert.deepEqual(errs, [], 'no complaint: the volume enumerates, the shelf orders');
+  });
+});
