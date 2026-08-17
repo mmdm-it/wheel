@@ -243,25 +243,35 @@ svg :focus-visible {
   top: 0;
   left: 0;
   right: 0;
-  /* Q13 (0c), then REVERSED 2026-08-10 on Howell's phone: the insets below are
-     deliberately INERT and deliberately kept.
+  /* Q13 (0c), landed; REVERSED 2026-08-10; and the REMNANT REMOVED
+     2026-08-17, because the reason it was kept turned out not to be true.
 
-     They add safe-area insets to the padding, which only ever resolve to
-     anything once index.html opts into the full screen with
-     `viewport-fit=cover`. That opt-in was landed with Q13 and has since been
-     REMOVED — the phone was the check and the check said no. Without it every
-     env() here falls back to 0px, so this padding computes exactly as it did
-     before Q13 ever touched it.
+     Q13 added safe-area insets to this padding. `viewport-fit=cover` was
+     landed with it and later removed — the phone was the check and the check
+     said no — which left the insets here on the argument that they were
+     INERT: without cover, every env() falls back to 0px, so the padding was
+     said to compute exactly as it had before.
 
-     Kept rather than reverted because the insets are correct FOR the
-     full-screen case, and if cover is ever reconsidered the arithmetic should
-     not have to be rediscovered. The comment is here so the next reader does
-     not spend ten minutes wondering why a safe-area rule appears to do
-     nothing: it does nothing on purpose, and this says why. */
-  padding: calc(6px * var(--iframe-scale, 1) + env(safe-area-inset-top, 0px))
-           calc(10px * var(--iframe-scale, 1) + env(safe-area-inset-right, 0px))
+     THAT WAS MEASURED IN ONE BROWSER AND ASSUMED OF ALL OF THEM. Howell found
+     the notice sitting some ninety pixels lower in DuckDuckGo than in Chrome,
+     overlapping the leaf text, on the same device and the same page. This
+     rule was the only one in the stylesheet using env() — and it was the only
+     element that moved, which is what makes the diagnosis more than a story.
+     A browser that reports a real inset without being asked to turns an
+     "inert" term into a live one, and the notice drops by the status bar.
+
+     So the insets are gone rather than kept. Removing them cannot change the
+     browser where it already looks right — there the terms resolve to 0px and
+     contribute nothing — and it removes the divergence everywhere else.
+
+     If `viewport-fit=cover` is ever reconsidered, the insets come back WITH
+     it, in the same commit, verified on more than one browser. Keeping dead
+     arithmetic against a future that may not arrive is how a comment ends up
+     asserting something no one has checked lately. */
+  padding: calc(6px * var(--iframe-scale, 1))
+           calc(10px * var(--iframe-scale, 1))
            calc(6px * var(--iframe-scale, 1))
-           calc(10px * var(--iframe-scale, 1) + env(safe-area-inset-left, 0px));
+           calc(10px * var(--iframe-scale, 1));
   color: rgba(255, 255, 255, 0.85);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: calc(11px * var(--iframe-scale, 1));
