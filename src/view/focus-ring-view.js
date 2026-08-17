@@ -396,7 +396,28 @@ export class FocusRingView {
         // the ring. Ninety degrees converts the one into the other: the text
         // now lies along the arc, in the direction the ring advances.
         this.sectionLabel.setAttribute('transform', `rotate(${magRotation + 90}, ${sx}, ${sy})`);
-        this.sectionLabel.textContent = this.sectionLabelText || '';
+
+        // IT FOLLOWS THE RING LIVE, as the child pyramid does (Howell,
+        // 2026-08-16). It used to be pushed in on settle, so the division
+        // changed only after a node had landed — and the whole point of the
+        // ruling is that the break is seen as an EVENT while you turn.
+        //
+        // So it reads the section off whichever node is NEAREST the magnifier
+        // on every frame, and each item carries its own. That also keeps this
+        // view free of the volume's vocabulary: an item with a section shows
+        // one, an item without shows nothing, so descending to containers or
+        // leaves turns the label off without this code knowing what those are.
+        let nearest = null;
+        let nearestDist = Infinity;
+        if (magnifierAngle != null) {
+          for (const n of nodes) {
+            if (!n || n.isPlacebo) continue;
+            const d = Math.abs(n.angle - magnifierAngle);
+            if (d < nearestDist) { nearestDist = d; nearest = n; }
+          }
+        }
+        const live = nearest?.item?.section;
+        this.sectionLabel.textContent = live || (nearest ? '' : (this.sectionLabelText || ''));
       }
       if (isRotating) {
         this.magnifierLabel.textContent = '';

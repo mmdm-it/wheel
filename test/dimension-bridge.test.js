@@ -907,3 +907,58 @@ describe('a shelf drifting from the volume is LOUD (H-26)', () => {
     assert.deepEqual(errs, [], 'no complaint: the volume enumerates, the shelf orders');
   });
 });
+
+// H-26: the label follows the ring LIVE, as the child pyramid does — it does
+// not wait for a settle. That is only possible if the answer travels WITH the
+// item, so the view can read it off whichever node is nearest the magnifier on
+// any frame. This cell pins the carrying; the seat itself is view geometry.
+describe('each ring item carries its own section (H-26)', () => {
+  const SHELF = {
+    units: ['GEN', 'EXO', 'JOS'],
+    groups: [{ label: 'תורה', from: 1, to: 2 }, { label: 'נביאים', from: 3, to: 3 }]
+  };
+  const manifest = {
+    Gutenberg_Bible: {
+      testaments: { T: { sort_number: 0, books: {
+        GEN: { sort_number: 0 }, EXO: { sort_number: 1 }, JOS: { sort_number: 2 }
+      } } }
+    }
+  };
+  const volume = {
+    bookOrderFor: () => SHELF.units,
+    sectionOf: (ed, id) => {
+      const o = SHELF.units.indexOf(id) + 1;
+      const g = SHELF.groups.find(x => o >= x.from && o <= x.to);
+      return (g && g.label) || null;
+    }
+  };
+  Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+
+  it('every item arrives with its section attached', () => {
+    const items = buildBibleBookCousinChain(manifest, { names: {}, edition: 'WLC' })
+      .items.filter(Boolean);
+    assert.deepEqual(items.map(i => [i.id, i.section]),
+      [['GEN', 'תורה'], ['EXO', 'תורה'], ['JOS', 'נביאים']]);
+  });
+
+  it('THE BREAK IS AN EVENT: consecutive items differ exactly at the boundary', () => {
+    // What the reader is meant to see while turning — the label holding
+    // through the Torah and flipping as Joshua arrives.
+    const items = buildBibleBookCousinChain(manifest, { names: {}, edition: 'WLC' })
+      .items.filter(Boolean);
+    const flips = items.slice(1)
+      .map((it, i) => (it.section !== items[i].section ? it.id : null))
+      .filter(Boolean);
+    assert.deepEqual(flips, ['JOS'], 'exactly one change, and it lands on Joshua');
+  });
+
+  it('with no shelf chart the items carry no section at all', () => {
+    const bare = { Gutenberg_Bible: manifest.Gutenberg_Bible };
+    Object.defineProperty(bare, '__wallVolume', {
+      value: { bookOrderFor: () => SHELF.units }, enumerable: false
+    });
+    const items = buildBibleBookCousinChain(bare, { names: {}, edition: 'WLC' })
+      .items.filter(Boolean);
+    assert.ok(items.every(i => !i.section), 'absence, so the view shows nothing');
+  });
+});

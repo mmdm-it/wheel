@@ -132,6 +132,18 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   //
   // Books stay FLAT across sections: the section is carried as metadata for
   // back-navigation but is not a UI level and earns no gap.
+  // EACH ITEM CARRIES ITS OWN SECTION (H-26). The label must follow the ring
+  // LIVE as it turns, the way the child pyramid does — not wait for a settle —
+  // so the view reads the section off whichever node is nearest the magnifier
+  // on every frame. It can only do that if the answer travels WITH the item.
+  //
+  // It also means the view needs no vocabulary of its own: an item that has a
+  // section shows one, an item that has none shows nothing, so chapters and
+  // verses turn the label off without the view knowing what a chapter is.
+  const sectionOf = edition && manifest?.__wallVolume?.sectionOf
+    ? id => manifest.__wallVolume.sectionOf(edition, id)
+    : () => null;
+
   const sorted = [];
   Object.entries(bible.testaments || {}).sort(bySortNumber).forEach(([testamentKey, testament]) => {
     const testamentName = testamentNames[testamentKey] || null;
@@ -139,6 +151,7 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
       if (visible && !visible.has(bookKey)) return;
       sorted.push({
         id: bookKey,
+        section: sectionOf(bookKey),
         // A NAME IS A QUOTATION (H-2). The old chain fell back to the book's
         // own `book_name`, then to its id — and under opaque ids that last
         // step would print `bc22df` at the reader. Unnamed is honest; the

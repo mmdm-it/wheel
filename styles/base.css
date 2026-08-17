@@ -894,11 +894,12 @@ svg :focus-visible {
 .focus-ring-section-label {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  /* THE RING LABELS’ OWN SIZE (Howell, 2026-08-16). Copied from
-     .focus-ring-label rather than approximated: the section name sits among
-     the node labels and reads as one of them, so it takes their measure and
-     their clamp, not a number chosen to look close. */
-  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  /* THE MAGNIFIER LABEL’S SIZE, which is not the ring labels’ size — the
+     two differ, and that is why matching the ring exactly still read as
+     small. Ring labels are 1.6vmin; the magnified name beside this one is
+     2.4vmin, and THAT is the neighbour. Copied whole rather than
+     approximated, so it stays matched if that one is retuned. */
+  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
   letter-spacing: 0.08em;
   opacity: 0.8;
   pointer-events: none;
