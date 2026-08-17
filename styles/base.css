@@ -893,7 +893,12 @@ svg :focus-visible {
    about where the ring is. */
 .focus-ring-section-label {
   fill: var(--color-text);
-  font-size: 0.62em;
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  /* THE RING LABELS’ OWN SIZE (Howell, 2026-08-16). Copied from
+     .focus-ring-label rather than approximated: the section name sits among
+     the node labels and reads as one of them, so it takes their measure and
+     their clamp, not a number chosen to look close. */
+  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
   letter-spacing: 0.08em;
   opacity: 0.8;
   pointer-events: none;
