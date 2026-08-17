@@ -9,6 +9,7 @@ import { createInteractionStore, interactionEvents } from '../src/core/interacti
 import { createDimensionBridge } from '../src/core/dimension-bridge.js';
 import { detailFor, createHandlers } from '../src/adapters/bible-adapter.js';
 import { buildBibleBookCousinChain } from '../src/navigation/cousin-builder.js';
+import { isEditionFullyConfirmed } from '../src/adapters/bible-volume.js';
 import { volumeConfigs } from '../src/volume-configs.js';
 import { prefetchBibleVerses } from '../src/adapters/volume-helpers.js';
 import { seedVerseCache } from '../src/adapters/volume-helpers.js';
@@ -1004,5 +1005,45 @@ describe('the book ring IS the shelf order (H-26)', () => {
     const ring = buildBibleBookCousinChain(manifest, { names: {} })
       .items.filter(Boolean).map(i => i.id);
     assert.deepEqual(ring, VOLUME);
+  });
+});
+
+// H-25/FN-4: an edition is FINISHED when its per-unit marks cover everything
+// the volume enumerates — derived, never declared twice.
+//
+// Howell found this at the testament ring: the Hebrew had reached 39 of 39
+// confirmed while its edition-level `proofread` flag was still false, so the
+// data asserted both "nothing is unconfirmed" and "not proofread", and the
+// mark believed the wrong one. Flipping the flag in the data fixes the symptom
+// and keeps the same fact in two places — where the second one is updated by a
+// separate act nobody is reminded to perform. This bug IS that omission,
+// arriving the first time it was possible.
+describe('an edition is finished when its marks cover the volume (FN-4)', () => {
+  const volumeWith = (units, ed) => ({
+    units: units.map(id => ({ id })),
+    editions: [ed]
+  });
+
+  it('every unit confirmed means finished, even with proofread:false', () => {
+    const v = volumeWith(['A', 'B'], { code: 'E', proofread: false, proofreadUnits: ['A', 'B'] });
+    assert.equal(isEditionFullyConfirmed(v, 'E'), true,
+      'the marks cover the volume — the stale flag does not get to say otherwise');
+  });
+
+  it('one unit short is NOT finished', () => {
+    const v = volumeWith(['A', 'B'], { code: 'E', proofread: false, proofreadUnits: ['A'] });
+    assert.equal(isEditionFullyConfirmed(v, 'E'), false);
+  });
+
+  it('an edition with NO marks falls back to its declared flag', () => {
+    const yes = volumeWith(['A'], { code: 'E', proofread: true });
+    const no = volumeWith(['A'], { code: 'E', proofread: false });
+    assert.equal(isEditionFullyConfirmed(yes, 'E'), true, 'unmarked editions still rely on the flag');
+    assert.equal(isEditionFullyConfirmed(no, 'E'), false);
+  });
+
+  it('an empty marks list is not a finished edition', () => {
+    const v = volumeWith(['A'], { code: 'E', proofread: false, proofreadUnits: [] });
+    assert.equal(isEditionFullyConfirmed(v, 'E'), false, 'nothing confirmed is not everything confirmed');
   });
 });
