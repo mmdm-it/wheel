@@ -31,12 +31,15 @@
 //
 // EXPANDED is a fraction of the FOCUS RING radius, drawn at 10% opacity as a
 // watermark behind the leaf text. It was 1.0, which brought the emblem's edge
-// too near the ring band.
+// too near the ring band; 0.8 cleared it and read a little small. 0.9 is the
+// midpoint Howell asked for, and it is a true midpoint in drawn pixels too —
+// the scale is linear, so on a 720x1600 phone the watermark goes 1860 -> 1488
+// -> 1674, which is exactly halfway back.
 //
 // THE BOX ASPECT IS INHERITED AND WRONG, and is left alone deliberately —
 // see the note where it is used.
 const LOGO_COLLAPSED_SCALE = 1.1;
-const LOGO_EXPANDED_SCALE = 0.8;
+const LOGO_EXPANDED_SCALE = 0.9;
 
 // Inherited from the v0 artwork, and no image we ship has this aspect —
 // measured, they run from 1.000 (square) through 1.029 to 2.500. It does not
