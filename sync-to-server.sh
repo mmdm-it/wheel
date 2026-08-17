@@ -124,6 +124,15 @@ sync_deployment() {
         --exclude='*.swp' \
         --exclude='*.log' \
         --exclude='docs/' \
+        # art/ is WORKING MATERIAL and never reached the app (2026-08-17).
+        # It was rsync'd to the web root by omission: 4.6MB of sketches and
+        # source files publicly fetchable, including a watermarked stock
+        # image that had no business being served. The app needed exactly
+        # one file from here — the QR — which now lives in assets/ with the
+        # other runtime art. Same reasoning as the data sync's drafts
+        # exclusion: reserved working material has no business on a public
+        # server, and the way to guarantee that is to not send it.
+        --exclude='art/' \
         --exclude='data/calendar/sources/' \
         --exclude='data/' \
         --filter='P data/' \
