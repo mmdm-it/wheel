@@ -5,9 +5,17 @@ import { appendGlobeGlyph } from './dimension-globe.js';
 
 // How far outside the arc the section label sits, in MAGNIFIER RADII — so it
 // holds its distance across viewports rather than being pinned to one screen.
-// A knob: Howell placed it by drawing on a screenshot, and this is the number
-// that drawing came to.
-const SECTION_LABEL_RADII = 3.2;
+//
+// A KNOB, and the only arbitrary number in the seat: everything else is
+// derived from the instrument (hub, arc radius, magnifier angle and radius),
+// so turning this cannot put the label out of step with the ring. The full
+// distance from the hub is  R_arc + SECTION_LABEL_RADII * r_magnifier.
+//
+// 3.2 was what Howell's first screenshot arrow measured out to; he then asked
+// for further out without a number, so this is a try rather than a finding.
+// The ceiling is about 7 on a 720x1600 phone, where the label drops below the
+// visible area — the parent label is far to the left and never in the way.
+const SECTION_LABEL_RADII = 5;
 
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
 const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
