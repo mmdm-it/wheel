@@ -1127,7 +1127,6 @@ function updateIncompleteMark() {
   // not: the testament is, and that
 // slot currently carries הברית הישנה. Reusing it would displace the testament
 // name, which is a silent loss wearing the shape of a feature.
-let sectionLabelEl = null;
 function updateSectionLabel() {
   if (typeof document === 'undefined') return;
   let label = null;
@@ -1144,17 +1143,17 @@ function updateSectionLabel() {
       }
     }
   } catch (_) { label = null; }
-  if (!label) {
-    if (sectionLabelEl) sectionLabelEl.style.display = 'none';
-    return;
-  }
-  if (!sectionLabelEl) {
-    sectionLabelEl = document.createElement('div');
-    sectionLabelEl.id = 'section-label';
-    document.body.appendChild(sectionLabelEl);
-  }
-  sectionLabelEl.textContent = label;
-  sectionLabelEl.style.display = '';
+  // IT IS DRAWN IN THE RING, not over it (Howell, 2026-08-16, by drawing on a
+  // screenshot): outside the arc, radially in line with the magnifier, and
+  // rotated parallel to the ring so it reads along the arc as the node labels
+  // do. The seat therefore belongs to the view, which owns the arc's hub,
+  // radius and magnifier angle — deriving those a second time in a DOM
+  // overlay is how the label ends up somewhere the ring is not.
+  //
+  // The first cut was a fixed-position div in the corner. It was legible and
+  // it was not what he asked for: a caption ABOUT the ring rather than a part
+  // of it.
+  try { currentApp?.view?.setSectionLabel?.(label || ''); } catch (_) { /* a label may never break a render */ }
 }
 
 function updateDimensionButton() {

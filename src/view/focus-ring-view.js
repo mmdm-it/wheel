@@ -3,6 +3,12 @@ import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
 import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
 
+// How far outside the arc the section label sits, in MAGNIFIER RADII — so it
+// holds its distance across viewports rather than being pinned to one screen.
+// A knob: Howell placed it by drawing on a screenshot, and this is the number
+// that drawing came to.
+const SECTION_LABEL_RADII = 3.2;
+
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
 const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
 
@@ -64,6 +70,16 @@ export class FocusRingView {
     };
   }
 
+  // The section label for whatever is in the magnifier (H-26). Text only — the seat is
+  // computed from the magnifier's own geometry on every render, so the caller
+  // never has to know where the ring is. Falsy hides it, which is how "no
+  // shelf chart, no label" reaches the glass as ABSENCE rather than an empty
+  // frame.
+  setSectionLabel(text) {
+    this.sectionLabelText = text || '';
+    if (this.sectionLabel) this.sectionLabel.textContent = this.sectionLabelText;
+  }
+
   init() {
     if (!this.svgRoot) return;
 
@@ -117,6 +133,25 @@ export class FocusRingView {
     this.magnifierGroup.appendChild(this.magnifierCircle);
     this.magnifierGroup.appendChild(this.magnifierLabel);
     this.contentGroup.appendChild(this.magnifierGroup);
+
+    // THE SECTION LABEL (H-26), seated where Howell drew it: OUTSIDE the ring,
+    // radially in line with the magnifier, and rotated parallel to the arc so
+    // it reads along the ring like the node labels do.
+    //
+    // It lives here rather than in the DOM overlay because this is where the
+    // geometry is. Placed as an overlay it would need the arc's hub, radius
+    // and magnifier angle re-derived in a second place — which is how two
+    // implementations of one question drift apart, and the label would be the
+    // one that ends up somewhere the ring is not.
+    //
+    // Outside the magnifier group on purpose: that group toggles a `rotating`
+    // class and blanks its label mid-flight, and the section is a property of
+    // the ITEM that SETTLES, not of the motion.
+    this.sectionLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.sectionLabel.setAttribute('class', 'focus-ring-section-label');
+    this.sectionLabel.setAttribute('text-anchor', 'middle');
+    this.sectionLabel.setAttribute('dominant-baseline', 'middle');
+    this.contentGroup.appendChild(this.sectionLabel);
 
     this.nodesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.nodesGroup.setAttribute('class', 'focus-ring-nodes');
@@ -342,6 +377,22 @@ export class FocusRingView {
       this.magnifierLabel.setAttribute('y', magnifier.y);
       const magRotation = ((magnifier.angle || 0) * 180) / Math.PI + 180;
       this.magnifierLabel.setAttribute('transform', `rotate(${magRotation}, ${magnifier.x}, ${magnifier.y})`);
+
+      // Seat the section label OUTSIDE the arc on the magnifier's own radius.
+      // Stepping along (cos, sin) from the magnifier moves AWAY from the hub,
+      // which is up and to the right of everything — so this lands below-left
+      // of the magnified node, clear of the ring, which is where Howell put
+      // it. The distance is in magnifier radii so it holds across viewports;
+      // the rotation is the node labels' own, so it runs parallel to the arc.
+      if (this.sectionLabel) {
+        const out = radius * SECTION_LABEL_RADII;
+        const sx = magnifier.x + Math.cos(magnifier.angle || 0) * out;
+        const sy = magnifier.y + Math.sin(magnifier.angle || 0) * out;
+        this.sectionLabel.setAttribute('x', sx);
+        this.sectionLabel.setAttribute('y', sy);
+        this.sectionLabel.setAttribute('transform', `rotate(${magRotation}, ${sx}, ${sy})`);
+        this.sectionLabel.textContent = this.sectionLabelText || '';
+      }
       if (isRotating) {
         this.magnifierLabel.textContent = '';
       } else {
