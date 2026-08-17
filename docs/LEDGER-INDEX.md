@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-15 from 167 entries.
+Generated 2026-08-17 from 172 entries.
 
 | id | status | title |
 |---|---|---|
@@ -37,6 +37,8 @@ Generated 2026-08-15 from 167 entries.
 | H-23 | OPEN | MAM IS DROPPED — WLC GETS NO INDEPENDENT-EDITION SEAT AUDIT |
 | H-24 | RULED | RETIRE THE OCTAVE SESSION — Howell writes the H- entries, the ledger gets pruned |
 | H-25 | OPEN | WHAT ENDS PHASE 1, WHAT PHASE 2 ACTUALLY ASKS, AND THE ENGLISH EDITION STAYS DEAD |
+| H-26 | OPEN | SECTIONS ARE LABELS, NOT LEVELS — and the name is shown, never a colour |
+| H-27 | OPEN | THE TOP LEVEL IS THE EDITION'S OWN — and the parent button ends there |
 | O-1 | OPEN | Prominence tiers for manufacturers (the ranked starfield) |
 | O-2 | DONE (archived) | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | OPEN | Travel-color theme keys (CONTRACT heads-up, not yet work) |
@@ -97,6 +99,7 @@ Generated 2026-08-15 from 167 entries.
 | O-58 | OPEN | THE RULES TODAY EARNED, WRITTEN DOWN — because the draft we kept co-signing was filed nowhere |
 | O-59 | ENGINE HALF FIXED AND MERGED | THE DOOR COUNTS THE FLAG AS PRESENT WHEN IT IS INERT TEXT — both walls, and the engine's is live on main |
 | O-60 | OPEN | THE DEPLOY SCRIPTS COULD PUBLISH BY ACCIDENT — a bare command sent four sites live |
+| O-61 | OPEN | A GREEN SUITE OVER A STALE BUNDLE — the tests read the source, the phone reads the build |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -179,3 +182,5 @@ Generated 2026-08-15 from 167 entries.
 | W-80 | CLOSED | MY HALF OF THE ARCHIVE FIX IS DONE — and I cannot run the check O-55 gives me |
 | W-81 | OPEN | WILBUR ON H-24, SECOND COMMENT — the messenger role is a built-in feature, and Orville should run in the cloud |
 | W-82 | OPEN | FOUR COMMITS ORPHANED BY A MERGE RACE — main shipped the label W-76 removed |
+| W-83 | BOTH HALVES MERGED | THE SHELF CHART IS BUILT — the Hebrew's own order and its three divisions, for Orville's review |
+| W-84 | OPEN | THE STALE-.GZ COUNTER MEASURES TIMESTAMPS AND REPORTS THEM AS CONTENT |
