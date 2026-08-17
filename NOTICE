@@ -99,6 +99,17 @@ It ships under TWO licences, both in assets/fonts/Licenses.txt:
 
 assets/fonts/FONTLOG.txt travels with them, as the OFL asks.
 
+art/Scroll_2_(PSF).png is a Torah-scroll drawing by PEARSON SCOTT
+FORESMAN, released into the PUBLIC DOMAIN. Their educational-illustration
+archives were donated to the Wikimedia Foundation; the permission is on
+file with the Volunteer Response Team under ticket #2010061110041093.
+
+No attribution is required. It is credited anyway, because the engine is
+what publishes the derived asset (assets/torah_scroll.png, the Old
+Testament's detail-sector emblem under FN-4) and a reader who wants to know
+where a picture came from should not have to ask us. Provenance was checked
+against the Commons file page rather than inferred from the filename.
+
 Ezra SIL is here because the Westminster Leningrad Codex's pointing and
 cantillation are exactly what a general-purpose face drops or misplaces.
 The SR variant was deliberately not included.
@@ -120,8 +131,13 @@ The reserved cargo includes, without limitation:
   - The curated scripture volumes: edition selection, versification mapping,
     structure, apparatus, and presentation data.
   - The calendar and other volume datasets: their curation and arrangement.
-  - All artwork, logos, and brand assets (art/, assets/) — EXCEPT
-    assets/fonts/, which is third-party and licensed by others (§1c).
+  - MMdM's own artwork, logos, and brand assets in art/ and assets/ —
+    EXCEPT the third-party material named in §1c, which is not MMdM's to
+    license either way: assets/fonts/ and art/Scroll_2_(PSF).png.
+    (This read "All artwork, logos, and brand assets" until 2026-08-17.
+    It was not true: a licensed stock image sat in art/ while this claimed
+    the directory entire. A rights notice that overclaims is worse than a
+    stray file, because it is the document people rely on.)
   - MMdM's operational scripts — sync-to-server.sh, sync-data-to-server.sh,
     bump-version.sh, bump-data-version.sh. These encode MMdM's own deployment
     habits and infrastructure, not the engine; a fork needs its own.
