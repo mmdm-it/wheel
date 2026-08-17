@@ -962,3 +962,47 @@ describe('each ring item carries its own section (H-26)', () => {
     assert.ok(items.every(i => !i.section), 'absence, so the view shows nothing');
   });
 });
+
+// THE OUTPUT CELL (Wilbur's ask, 2026-08-16, after Howell's first rotation).
+//
+// The shelf sort was written into the VERSE chain by mistake and sat there
+// through three merges. Verses read correctly — expandVolumeSeats already
+// walks bookOrderFor — so nothing went red, while the BOOK RING kept volume
+// order and the section label faithfully painted the disagreement: rotating
+// Ezra→Nehemiah→Esther→Job in Vulgate order made the label flap between
+// Prophets and Writings, because in that order the shelf's sections really do
+// alternate.
+//
+// Every per-builder cell passed. So this one asserts the OUTPUT: whatever the
+// ring is built from, its id sequence must equal bookOrderFor. One cell on the
+// answer catches a sort that went missing, went to the wrong function, or was
+// undone downstream — none of which a cell aimed at one builder can see.
+describe('the book ring IS the shelf order (H-26)', () => {
+  const SHELF = ['GEN', 'JOS', 'CHR', 'RUT', 'EZR'];
+  // volume.json enumerates the Vulgate way — Ruth after Joshua, Chronicles
+  // late — so the two orders genuinely disagree.
+  const VOLUME = ['GEN', 'JOS', 'RUT', 'EZR', 'CHR'];
+  const manifest = {
+    Gutenberg_Bible: {
+      testaments: { T: { sort_number: 0, books: Object.fromEntries(
+        VOLUME.map((id, i) => [id, { sort_number: i }])) } }
+    }
+  };
+  Object.defineProperty(manifest, '__wallVolume', {
+    value: { bookOrderFor: () => SHELF, sectionOf: () => null },
+    enumerable: false
+  });
+
+  it('the ring comes out in shelf order, not volume order', () => {
+    const ring = buildBibleBookCousinChain(manifest, { names: {}, edition: 'WLC' })
+      .items.filter(Boolean).map(i => i.id);
+    assert.deepEqual(ring, SHELF, 'the ring must equal bookOrderFor exactly');
+    assert.notDeepEqual(ring, VOLUME, 'and the two orders differ, or this proves nothing');
+  });
+
+  it('with no edition named, the ring keeps volume order rather than guessing', () => {
+    const ring = buildBibleBookCousinChain(manifest, { names: {} })
+      .items.filter(Boolean).map(i => i.id);
+    assert.deepEqual(ring, VOLUME);
+  });
+});
