@@ -24,8 +24,10 @@
 // starts from is no longer the frame that was drawn.
 //
 // COLLAPSED is a multiple of the badge circle's DIAMETER — above 1 the art
-// deliberately overhangs the circle. It was 1.8, which for a wide emblem put
-// its ends far outside the badge: Howell's note, with the screenshot.
+// deliberately overhangs the circle; below 1.149 (the box aspect) the art
+// sits INSIDE it. 1.8 put a wide emblem's ends far outside the badge, and
+// 1.35 was still too far — Howell, twice, from the LAN. At 1.1 a square
+// emblem draws just within the blue rather than spilling over it.
 //
 // EXPANDED is a fraction of the FOCUS RING radius, drawn at 10% opacity as a
 // watermark behind the leaf text. It was 1.0, which brought the emblem's edge
@@ -33,7 +35,7 @@
 //
 // THE BOX ASPECT IS INHERITED AND WRONG, and is left alone deliberately —
 // see the note where it is used.
-const LOGO_COLLAPSED_SCALE = 1.35;
+const LOGO_COLLAPSED_SCALE = 1.1;
 const LOGO_EXPANDED_SCALE = 0.8;
 
 // Inherited from the v0 artwork, and no image we ship has this aspect —
@@ -151,8 +153,10 @@ export class VolumeLogo {
     this.circle.setAttribute('r', radius);
     this.circle.setAttribute('fill', config.color_scheme?.detail_sector || '#362e6a');
     this.circle.setAttribute('opacity', config.color_scheme?.detail_sector_opacity || '0.5');
-    this.circle.setAttribute('stroke', 'black');
-    this.circle.setAttribute('stroke-width', '1');
+    // NO OUTLINE (Howell, 2026-08-17: "I'd like to try removing the dark
+    // stroke"). The badge was a 1px black ring over a 50%-opacity fill, which
+    // drew a hard edge around a deliberately soft shape. Removed rather than
+    // set to 'none' so nothing has to be undone if it stays.
     this.group.appendChild(this.circle);
     
     // Create logo image or placeholder
