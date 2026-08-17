@@ -16,6 +16,40 @@
  * Collapse: reverse of expand
  */
 
+// THE LOGO'S SIZE, in the two states, as named knobs (FN-4, 2026-08-17).
+//
+// Both numbers were literals repeated inside the render and the animation's
+// start state. That is a jump waiting to happen: tune one and the badge
+// changes size the instant the expand begins, because the frame the animation
+// starts from is no longer the frame that was drawn.
+//
+// COLLAPSED is a multiple of the badge circle's DIAMETER — above 1 the art
+// deliberately overhangs the circle; below 1.149 (the box aspect) the art
+// sits INSIDE it. 1.8 put a wide emblem's ends far outside the badge, and
+// 1.35 was still too far — Howell, twice, from the LAN. At 1.1 a square
+// emblem draws just within the blue rather than spilling over it.
+//
+// EXPANDED is a fraction of the FOCUS RING radius, drawn at 10% opacity as a
+// watermark behind the leaf text. It was 1.0, which brought the emblem's edge
+// too near the ring band.
+//
+// THE BOX ASPECT IS INHERITED AND WRONG, and is left alone deliberately —
+// see the note where it is used.
+const LOGO_COLLAPSED_SCALE = 1.1;
+const LOGO_EXPANDED_SCALE = 0.8;
+
+// Inherited from the v0 artwork, and no image we ship has this aspect —
+// measured, they run from 1.000 (square) through 1.029 to 2.500. It does not
+// DISTORT anything — the <image>
+// keeps its own aspect and fits inside this box — but it does decide which
+// edge binds, so the rendered size is smaller than the box in one dimension
+// and by a different amount for each volume.
+//
+// NOT changed here. Making the box square would be the honest fix and would
+// alter every other volume's emblem too, none of which anyone is looking at
+// today. It wants its own change and its own look on the LAN.
+const LOGO_BOX_ASPECT = 154 / 134;
+
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const XLINK_NS = 'http://www.w3.org/1999/xlink';
 const ANIMATION_DURATION = 600; // ms
@@ -54,8 +88,7 @@ export class VolumeLogo {
     const margin = shorterSide * 0.03;
     
     // Square box size (80% of full logo size)
-    const logoScaleFactor = 1.8;
-    const fullSize = radius * 2 * logoScaleFactor;
+    const fullSize = radius * 2 * LOGO_COLLAPSED_SCALE;
     const boxSize = fullSize * 0.80;
     const boxHalfSize = boxSize / 2;
     
@@ -95,10 +128,8 @@ export class VolumeLogo {
     const margin = shorterSide * 0.03;
     
     // Logo dimensions
-    const logoAspectRatio = 154 / 134;
-    const logoScaleFactor = 1.8;
-    const logoWidth = radius * 2 * logoScaleFactor;
-    const logoHeight = logoWidth / logoAspectRatio;
+    const logoWidth = radius * 2 * LOGO_COLLAPSED_SCALE;
+    const logoHeight = logoWidth / LOGO_BOX_ASPECT;
     const logoHalfWidth = logoWidth / 2;
     const logoHalfHeight = logoHeight / 2;
     
@@ -122,8 +153,10 @@ export class VolumeLogo {
     this.circle.setAttribute('r', radius);
     this.circle.setAttribute('fill', config.color_scheme?.detail_sector || '#362e6a');
     this.circle.setAttribute('opacity', config.color_scheme?.detail_sector_opacity || '0.5');
-    this.circle.setAttribute('stroke', 'black');
-    this.circle.setAttribute('stroke-width', '1');
+    // NO OUTLINE (Howell, 2026-08-17: "I'd like to try removing the dark
+    // stroke"). The badge was a 1px black ring over a 50%-opacity fill, which
+    // drew a hard edge around a deliberately soft shape. Removed rather than
+    // set to 'none' so nothing has to be undone if it stays.
     this.group.appendChild(this.circle);
     
     // Create logo image or placeholder
@@ -182,10 +215,8 @@ export class VolumeLogo {
     const SSd = Math.min(vw, vh);
     const radius = SSd * 0.12;
     const margin = SSd * 0.03;
-    const logoAspectRatio = 154 / 134;
-    const logoScaleFactor = 1.8;
-    const logoWidth = radius * 2 * logoScaleFactor;
-    const logoHeight = logoWidth / logoAspectRatio;
+    const logoWidth = radius * 2 * LOGO_COLLAPSED_SCALE;
+    const logoHeight = logoWidth / LOGO_BOX_ASPECT;
     const logoHalfWidth = logoWidth / 2;
     const logoHalfHeight = logoHeight / 2;
     // Same positioning as render()
@@ -219,9 +250,8 @@ export class VolumeLogo {
     // v0 positions logo relative to screen center (0,0 in center-origin SVG),
     // NOT relative to the hub (which is far off-screen right).
     // In v3's top-left origin, screen center is (width/2, height/2).
-    const logoAspectRatio = 154 / 134;
-    const logoWidth = frRadius * 1.0;
-    const logoHeight = logoWidth / logoAspectRatio;
+    const logoWidth = frRadius * LOGO_EXPANDED_SCALE;
+    const logoHeight = logoWidth / LOGO_BOX_ASPECT;
     const logoCenterRadius = frRadius * -0.35;
     const screenCenterX = this.viewport.width / 2;
     const screenCenterY = this.viewport.height / 2;
