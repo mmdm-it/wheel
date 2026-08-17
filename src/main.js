@@ -1078,13 +1078,27 @@ function updateIncompleteMark() {
     if (dimensionBridge.completeOverrideActive()) {
     const active = dimensionStore.getState().edition || null;
     const unit = currentBookId();
-    // No book in hand — a testament ring, the root, the gateway — so there
-    // is nothing to assert about. Fall back to the edition's own state,
-    // which is what this said before H-25 and is still the honest answer
-    // when the question has no book in it.
+    // NO BOOK IN HAND — a testament ring, the root, the gateway. The question
+    // becomes whether the EDITION is finished, and that must be DERIVED from
+    // the per-unit marks rather than read off the edition's own flag.
+    //
+    // Howell found this at the testament ring: the Hebrew had reached 39 of 39
+    // confirmed while its `proofread` flag was still false, so the data said
+    // both "nothing is unconfirmed" and "not proofread", and the mark believed
+    // the wrong one. Flipping the flag in the data would have fixed the symptom
+    // and left the same fact living in two places, with the last book's
+    // confirmation needing a second act nobody is reminded to perform — which
+    // is precisely the omission that produced this.
+    //
+    // An edition with no per-unit marks still falls back to its flag, inside
+    // isFullyConfirmed, so nothing else changes.
+    const volume = currentManifest?.__wallVolume;
+    const editionFinished = typeof volume?.isFullyConfirmed === 'function'
+      ? volume.isFullyConfirmed(active)
+      : dimensionBridge.isCertifiedEdition(active);
     show = Boolean(active) && (unit
       ? !dimensionBridge.isCertifiedUnit(active, unit)
-      : !dimensionBridge.isCertifiedEdition(active));
+      : !editionFinished);
     }
   } catch (_) { show = false; }
   if (!show) {
