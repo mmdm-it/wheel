@@ -390,7 +390,12 @@ export class FocusRingView {
         const sy = magnifier.y + Math.sin(magnifier.angle || 0) * out;
         this.sectionLabel.setAttribute('x', sx);
         this.sectionLabel.setAttribute('y', sy);
-        this.sectionLabel.setAttribute('transform', `rotate(${magRotation}, ${sx}, ${sy})`);
+        // A QUARTER TURN OFF THE NODE LABELS (Howell, 2026-08-16). Theirs run
+        // RADIALLY — outward from the hub — so borrowing their rotation put
+        // this one radial too, when what the ruling asked for is parallel to
+        // the ring. Ninety degrees converts the one into the other: the text
+        // now lies along the arc, in the direction the ring advances.
+        this.sectionLabel.setAttribute('transform', `rotate(${magRotation + 90}, ${sx}, ${sy})`);
         this.sectionLabel.textContent = this.sectionLabelText || '';
       }
       if (isRotating) {
