@@ -106,7 +106,7 @@ Generated 2026-08-18 from 186 entries.
 | O-64 | RULED | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
 | O-65 | CLOSED | THE FIRST PARTIAL EDITION TOOK THE HEBREW DOWN WITH IT — all-or-nothing across the wrong axis |
 | O-66 | VERIFIED | THE RIGHTS GATE COULD NOT RUN AT ALL — inert again, one week after O-56 un-inerted it |
-| O-67 | OPEN | THE READ-AHEAD NEVER FIRED, NOT ONCE — two defects, either one fatal |
+| O-67 | CLOSED | THE READ-AHEAD NEVER FIRED, NOT ONCE — two defects, either one fatal |
 | O-68 | OPEN | THE HEBREW IS CLEARED UNDER ITS NEW NAME — a licence re-asserted, not re-decided |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
