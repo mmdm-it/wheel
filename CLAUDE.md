@@ -352,4 +352,38 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   and the judgement arrives as a hold list from an audit. Whether producing
   that hold list is a STANDING DUTY before every prune is **deferred to the
   end of Phase 2** (Howell, 2026-08-15).
+
+- **WF-19 (ruled 2026-08-17). Obsolete means dead.** Howell's motivation, in
+  his words, is tokens rather than architecture: for too long both sessions
+  spent *"hours and days trying to make old code and old data work"* after he
+  had considered it obsolete — the lingering attachment to the Vulgate, then
+  to the pre-doctrine editions. Three clauses:
+
+  - **No session spends effort making obsolete code or data work.** Once
+    Howell has ruled a thing obsolete, verifying it, measuring it, reconciling
+    against it, and preserving its provenance are all the same expenditure in
+    different clothes. The class of task is closed, not the day's instance.
+    The day this was ruled, both sessions had spent hours measuring deleted
+    editions to argue about a boolean H-21 had already settled.
+  - **A document never overrules Howell.** A README, blueprint, or SOP that
+    contradicts his current word is WRONG, and gets fixed — not obeyed, not
+    cited back at him. The last straw was literal: a request of his was
+    refused because it contradicted `sources/README.md`, a file presenting a
+    retracted 2026-07-30 acceptance as current advice. Documents are the
+    record of his rulings, never the authority over them.
+  - **Breakage from deleting the obsolete is acceptable.** His words: *"if
+    deleting the old Greek breaks the Hebrew, so be it. We will fix it."* A
+    deletion does not owe a proof of safety before it may proceed; asking for
+    one is the attachment wearing a seatbelt.
+
+  **Old commits are a LAST RESORT, and the history stays** (O-64, ruled the
+  same day). No rewrite: Howell values the archive and the undo button. But
+  reaching into superseded history — for content, for evidence, for
+  provenance — comes only after the live corpus, the open web, and both
+  sessions' own reasoning are exhausted. *"What ends today is the idea that
+  the future progress of this project is hidden somewhere in my laptop."*
+
+  This rule takes WF-19 because it is RULED; the four rules PROPOSED in O-58
+  remain proposals and take later numbers if and when they are ruled (WF-11:
+  ids are assigned at creation, and a proposal is not yet a rule).
 <!-- WF-RULES:END -->
