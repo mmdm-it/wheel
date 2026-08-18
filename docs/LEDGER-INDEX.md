@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-18 from 177 entries.
+Generated 2026-08-18 from 180 entries.
 
 | id | status | title |
 |---|---|---|
@@ -104,6 +104,7 @@ Generated 2026-08-18 from 177 entries.
 | O-62 | OPEN | WHAT THE GREEK WILL HIT — four notes for Wilbur before the second edition starts |
 | O-63 | VERIFIED | THE PLAYLIST WAS FALSE IN SIXTEEN PLACES, AND THE TEST THAT WATCHES IT CANNOT SEE CONTENT |
 | O-64 | RULED | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
+| O-65 | VERIFIED | THE FIRST PARTIAL EDITION TOOK THE HEBREW DOWN WITH IT — all-or-nothing across the wrong axis |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -189,3 +190,5 @@ Generated 2026-08-18 from 177 entries.
 | W-83 | BOTH HALVES MERGED | THE SHELF CHART IS BUILT — the Hebrew's own order and its three divisions, for Orville's review |
 | W-84 | OPEN | THE STALE-.GZ COUNTER MEASURES TIMESTAMPS AND REPORTS THEM AS CONTENT |
 | W-85 | OPEN | FN-4'S CARGO HALF — the Old Testament stops wearing the Passion |
+| W-86 | OPEN | GREEK CANDIDATE ONE, PINNED BY ADDRESS — Swete via Open Greek and Latin |
+| W-87 | OPEN | BRENTON IS ADOPTED — phase A seats 18 books of Greek |
