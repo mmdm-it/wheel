@@ -56,13 +56,24 @@ const PD_ALLOWLIST = new Set(['WLC']);
 
 const GZ_FLOOR = 2048; // bytes — mirror precompress-json.mjs exactly
 
-const [src, dest] = process.argv.slice(2);
+const [src, dest, versionArg] = process.argv.slice(2);
 if (!src || !dest) {
-  console.error('usage: node deploy-pd-filter.mjs <srcDir> <destDir>');
+  console.error('usage: node deploy-pd-filter.mjs <srcDir> <destDir> [version]');
   process.exit(1);
 }
 
 const die = (...lines) => { for (const l of lines) console.error(l); process.exit(1); };
+
+// The engine's own declaration of which directory is the volume. Read as text
+// rather than imported: this script must run without a bundler, and importing
+// volume-configs.js would drag the whole engine in behind it.
+function readEngineVolumeVersion() {
+  const configPath = new URL('../src/volume-configs.js', import.meta.url);
+  let text;
+  try { text = readFileSync(configPath, 'utf8'); } catch { return null; }
+  const m = /BIBLE_VOLUME_VERSION\s*=\s*['"]([^'"]+)['"]/.exec(text);
+  return m ? m[1] : null;
+}
 
 function* walk(dir) {
   for (const entry of readdirSync(dir)) {
@@ -73,16 +84,32 @@ function* walk(dir) {
 }
 
 // ── 1. DERIVE: what does the volume say it contains? ───────────────────────
-// The version directory is named by the manifest rather than guessed, and the
+// The version directory is named by a DECLARATION rather than guessed, and the
 // editions come from volume.json rather than from whatever folders exist.
 // Reading the declaration is the point: a folder can appear without anyone
 // declaring it, and that is the case this gate must not wave through.
-const manifestPath = join(src, 'manifest.json');
-if (!existsSync(manifestPath)) die(`deploy-pd-filter: no manifest.json in ${src} — cannot derive the layout.`);
-const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
-const root = manifest[Object.keys(manifest)[0]] || {};
-const version = root?.display_config?.volume_data_version;
-if (!version) die('deploy-pd-filter: the manifest declares no volume_data_version — cannot locate the volume.');
+//
+// IT ASKED `manifest.json` UNTIL 2026-08-18, AND THAT FILE NO LONGER EXISTS
+// (O-66). The clean slate of 2026-08-17 deleted it with the rest of the
+// pre-doctrine scaffolding, so this gate died on its first line — before
+// reaching the licensing check it exists to perform. It failed CLOSED, which
+// is the one mercy: exit 1, nothing written, the sync aborted. But O-56 had
+// rebuilt this very gate because it was inert, and it was inert again inside
+// a week. The lesson is not "restore the manifest": it is that a rights gate
+// must not depend on a file nobody is maintaining for its sake.
+//
+// So the version comes from the ENGINE's own constant, passed in — the same
+// string `volume-configs.js` fetches with. If the engine and the gate ever
+// disagree about which directory is the volume, the gate is inspecting
+// something the reader does not read, and that is worth failing over.
+const version = versionArg || readEngineVolumeVersion();
+if (!version) {
+  die(
+    'deploy-pd-filter: cannot determine the volume version.',
+    'Pass it as the third argument, or leave src/volume-configs.js declaring',
+    'BIBLE_VOLUME_VERSION so this gate can read the engine\'s own answer.'
+  );
+}
 
 const volumePath = join(src, version, 'volume.json');
 if (!existsSync(volumePath)) die(`deploy-pd-filter: no volume.json at ${relative(src, volumePath)}.`);
