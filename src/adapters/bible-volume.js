@@ -557,6 +557,17 @@ export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false 
               // same reason the funnel was worth building.
               externalFile: book.id,
               unitId: book.id,
+              // THE SEAT'S POSITION WITHIN ITS UNIT (O-67), which is the one
+              // number the read-ahead needs and the only one it could not get.
+              //
+              // `verseKey` is a composed ADDRESS — "50:26" — so parsing it for
+              // a position yields 50, the chapter. The read-ahead compared
+              // that against the unit's total seat count (1,533 for Genesis)
+              // and so never fired: every book crossing was a cold fetch of
+              // the next unit's whole text, with the detail sector blank until
+              // it landed. This ordinal is unit-scoped and already computed
+              // above for the container filter; it was simply never carried.
+              unitOrdinal: ordinal,
               utterances: seat.utterances || []
             }
           });

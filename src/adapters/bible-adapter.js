@@ -223,10 +223,31 @@ function readAhead(selected, manifest) {
   if (!meta?.externalFile) return;
   requestChapter(meta.chapterId, meta.bookId, meta.externalFile);
   const order = chaptersInReadingOrder(manifest);
-  const here = order.findIndex(c => c.chapterId === meta.chapterId);
+  // BY THE UNIT, NOT THE CONTAINER (O-67, the second of two defects here and
+  // the more absolute of them). This matched `meta.chapterId` — which is a
+  // container address like "GENE/50" — against a list keyed by UNIT id
+  // ("GENE"). It never matched, so `here` was always -1 and this returned
+  // before reaching the next-unit branch AT ALL. Either defect alone disabled
+  // the read-ahead; both had to be fixed for the crossing to warm.
+  const here = order.findIndex(c => c.chapterId === (meta.unitId || meta.externalFile));
   if (here < 0 || here + 1 >= order.length) return;
-  const verseKey = Number.parseInt(meta.verseKey, 10);
-  const remaining = order[here].verseCount - verseKey;
+  // THE POSITION MUST BE UNIT-SCOPED, AND `verseKey` NEVER WAS (O-67).
+  //
+  // This read `Number.parseInt(meta.verseKey, 10)`, and `verseKey` is a
+  // COMPOSED ADDRESS — "50:26" — so the parse returned 50, the chapter
+  // number. Compared against the unit's total seat count (1,533 for Genesis)
+  // the remainder was never within five, so THE READ-AHEAD NEVER FIRED AT A
+  // BOOK BOUNDARY, which is the only boundary it exists for. Every crossing
+  // was a cold fetch of the next unit's entire text, and the detail sector
+  // sat blank until it landed. Howell found it between Genesis and Exodus.
+  //
+  // `unitOrdinal` is the seat's position among its unit's seats, carried from
+  // the chart walk that already computes it. A synthetic item (the ?verseId
+  // deep link) has none: it warms the unit it is in and does not guess at the
+  // next, which is the honest degradation rather than a wrong number.
+  const unitOrdinal = Number(meta.unitOrdinal);
+  if (!Number.isFinite(unitOrdinal)) return;
+  const remaining = order[here].verseCount - unitOrdinal;
   if (Number.isFinite(remaining) && remaining <= VERSES_BEFORE_READING_AHEAD) {
     const next = order[here + 1];
     requestChapter(next.chapterId, next.bookId, next.externalFile);
