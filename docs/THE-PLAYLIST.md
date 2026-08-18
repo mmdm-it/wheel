@@ -1,10 +1,39 @@
 # THE PLAYLIST — the single source of major truth
 
+*Last audited: 2026-08-17 by Orville — Q3 (does it assert a state that is now
+false?). Findings in O-63. **No other document under `docs/` carries this
+stamp and nothing enforces it**, so WF-13's rotation cannot yet be sorted by
+staleness the way the rule describes; that gap is noted in O-63 and is not
+fixed here.*
+
 Every translation enters at the date of its act. No leapfrogging. Nothing
 below 100%. **This file is authoritative**: it is the one place that records
 which editions exist or are planned, when each was made, in what language,
 and how far along it is. Nothing here is derived from anywhere else, and
 where another file disagrees with this one, this one is right.
+
+**AUTHORITATIVE OVER DECISIONS, NOT SELF-VERIFYING ABOUT STATE — and the
+difference cost us four days** (O-63, 2026-08-17). Which editions we intend and
+in what order is a decision, and this file is where it is made. But the
+`complete` and `proofread` columns assert a state of the CORPUS, which lives in
+the other repository and can change without a word appearing here.
+
+**On 2026-08-17 this file was false in sixteen places**: thirteen stale edition
+codes, one wrong `proofread` cell, and two references to files that no longer
+exist. None of it was caught by a test. It was caught by a human reading the
+sheet before starting work and being told the Septuagint was finished — and
+then only five of the sixteen were visible from that reading. The other eleven
+turned up while the first five were being fixed.
+
+`test/playlist-truth.test.js` cannot catch that, and is not pretending to. It
+checks this table's SHAPE — that it parses, numbers contiguously, carries a
+year and a language, spells the rungs as booleans, climbs the ladder in order,
+repeats no code. **It cannot tell a true `yes` from a false one.** The three
+cells that once correlated this file against the corpus were deleted on
+2026-08-13, correctly — that was the suite crossing the wall where the code no
+longer does — and no replacement was named. Only cargo's CI can honestly hold
+that check. Until it does, **these two columns are worth exactly as much as the
+last human who looked.**
 
 **Two rungs, two booleans** (ruled 2026-08-01; the earlier three-rung ladder
 retired CERTIFIED as a category that never earned its own row):
@@ -21,10 +50,24 @@ Both start `no`. An edition may be complete and not proofread; it may not be
 proofread without being complete first.
 
 **Code** is the join key — the edition's code in the corpus, blank where
-nothing is seated yet. Everything the program needs beyond this table (native
-names, versification tables, colophon text, book names and abbreviations)
-lives in `wheel-cargo/gutenberg/translations.json`; those are dictionaries,
-not decisions, and they are not major truths.
+nothing is seated: not yet seated, or **no longer seated**. The second case was
+not anticipated when this rule was written, and on 2026-08-17 **thirteen of the
+fourteen codes in this table were false** (O-63) — every one but `WLC`. The old
+corpus answered to WLC, VUL, SYN, NEO, DRA, SAC, KAL, ALL, CAN, LXX, BYZ, FIN,
+THEOD and TBS; today it answers to `WLC` alone, and the other thirteen went on
+naming editions that H-21 had deleted. **A code here is a claim that the corpus
+will answer to it today**, and it is the cheapest claim in this file to check:
+compare this column against the corpus's declared editions.
+
+Nine of those thirteen were found only because the rule above was being
+rewritten. The report that opened this audit named four; the same defect sat in
+nine further rows nobody had looked at. Everything the program needs beyond this table (native
+names, colophon text, book names and abbreviations) lives in
+`wheel-cargo/gutenberg/declaration.json` and `wheel-cargo/gutenberg/naming/`;
+those are dictionaries, not decisions, and they are not major truths.
+*(This named `translations.json` until 2026-08-17, when that file was deleted
+along with `manifest.json`, `canon.json`, `coverage.json` and `languages.json`
+— the builder now takes one source and one declaration. O-63.)*
 
 Expectation on the unresearched entries, ruled by Howell: half will not
 survive five minutes of research — and half of them landed would be
@@ -33,12 +76,12 @@ playlist moves on.
 
 | # | Year | Edition | Language | Code | complete | proofread | Notes |
 |---|------|---------|----------|------|----------|-----------|-------|
-| 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | WLC | yes | no | seated |
-| 2 | c.250–100 BC | Septuagint | Greek | LXX | yes | no | seated |
-| 3 | c.50–100 AD | Greek New Testament | Greek | BYZ | yes | no | seated |
-| 4 | c.150 | Theodotion's Daniel | Greek | THEOD | yes | no | seated |
-| 5 | 4th c. | Tobit (Codex Sinaiticus) | Greek | TBS | yes | no | seated |
-| 6 | 382–405 | Vulgate (Jerome) | Latin | VUL | no | no | prologues owed |
+| 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | WLC | yes | yes | seated; proofread 2026-08-17, 39 of 39 books |
+| 2 | c.250–100 BC | Septuagint | Greek |  | no | no | ⏱ NO USABLE SOURCE — see "The Greek is blocked on a source" below. Prior assembly deleted under H-21 |
+| 3 | c.50–100 AD | Greek New Testament | Greek |  | no | no | ⏱ source hunt. Prior assembly (Byzantine, Robinson-Pierpont) deleted under H-21 |
+| 4 | c.150 | Theodotion's Daniel | Greek |  | no | no | ⏱ rides on the Septuagint's source problem. Prior assembly deleted under H-21 |
+| 5 | 4th c. | Tobit (Codex Sinaiticus) | Greek |  | no | no | ⏱ rides on the Septuagint's source problem. Prior assembly deleted under H-21 |
+| 6 | 382–405 | Vulgate (Jerome) | Latin |  | no | no | prologues owed; prior assembly deleted under H-21 (code was VUL) |
 | 7 | 1466 | Mentelin Bible | German |  | no | no | ⏱ source hunt |
 | 8 | 1471 | Malermi | Italian |  | no | no | ⏱ OCR trial |
 | 9 | 1471 (ed. 1882–87) | Negroni/Jenson edition | Italian |  | no | no | ⏱ source hunt |
@@ -56,12 +99,12 @@ playlist moves on.
 | 21 | 1626 | Káldi Bible (original) | Hungarian |  | no | no | ⏱ source hunt — first complete Catholic Hungarian Bible; d. 1634 |
 | 22 | 1630 | Ulenberg revision | German |  | no | no | ⏱ source hunt |
 | 23 | 1661 | Jesuit Mainz Bible | German |  | no | no | ⏱ source hunt |
-| 24 | 1667–1696 | de Sacy | French | SAC | no | no | audit owed |
+| 24 | 1667–1696 | de Sacy | French |  | no | no | audit owed; prior assembly deleted under H-21 (code was SAC) |
 | 25 | 1671–1673 | Biblia Sacra Arabica (Propaganda Fide) | Arabic |  | no | no | ⏱ source hunt — first complete printed Arabic Bible; Vatican project |
 | 26 | 1735 | Mekhitarist translation | Armenian |  | no | no | ⏱ source hunt — first major Armenian Catholic (Mekhitarist) Bible project, Venice |
-| 27 | 1749–1752 | Douay-Rheims (Challoner revision) | English | DRA | no | no | audit owed |
+| 27 | 1749–1752 | Douay-Rheims (Challoner revision) | English |  | no | no | audit owed; prior assembly deleted under H-21 (code was DRA) |
 | 28 | 1769–1781 | Martini | Italian |  | no | no | ⏱ source hunt |
-| 29 | 1776 | Biblia 1776 | Finnish | FIN | no | no | audit owed |
+| 29 | 1776 | Biblia 1776 | Finnish |  | no | no | audit owed; prior assembly deleted under H-21 (code was FIN) |
 | 30 | 1778–1790 | Pereira de Figueiredo | Portuguese |  | no | no | ⏱ the BFBS trap |
 | 31 | 1780 | Szveti evangyeliomi (Küzmics) | Slovene (Prekmurje) |  | no | no | ⏱ source hunt — Gospels only |
 | 32 | 1784 | Seonggyeong Jikhae | Korean |  | no | no | ⏱ source hunt (commentary, not continuous text) |
@@ -71,24 +114,76 @@ playlist moves on.
 | 36 | 1823–1825 | Torres Amat | Spanish |  | no | no | ⏱ provenance trap |
 | 37 | 1831 | Katančić Bible | Croatian |  | no | no | ⏱ source hunt |
 | 38 | 1860 | Bagratuni edition | Armenian |  | no | no | ⏱ source hunt — Mekhitarist critical edition; translator d. 1866, PD clear |
-| 39 | 1865 | Káldi–Tárkányi (revision) | Hungarian | KAL | no | no | audit owed |
-| 40 | 1876 | Synodal | Russian | SYN | no | no | audit owed — verify Catholic vs Orthodox provenance |
+| 39 | 1865 | Káldi–Tárkányi (revision) | Hungarian |  | no | no | audit owed; prior assembly deleted under H-21 (code was KAL) |
+| 40 | 1876 | Synodal | Russian |  | no | no | audit owed — verify Catholic vs Orthodox provenance; prior assembly deleted under H-21 (code was SYN) |
 | 41 | 1877 | Delitzsch New Testament | Hebrew |  | no | no | import owed |
 | 42 | 1887 (Gospels/Acts) | Manjummal translation | Malayalam |  | no | no | ⏱ date + source hunt (year uncertain) |
-| 43 | 1894–1923 | Crampon | French | NEO | no | no | audit owed |
+| 43 | 1894–1923 | Crampon | French |  | no | no | audit owed; prior assembly deleted under H-21 (code was NEO) |
 | 44 | 1902 | Glaire-Vigouroux | French |  | no | no | ⏱ source hunt |
 | 45 | 1910 | Raguet New Testament | Japanese |  | no | no | ⏱ death-year check (life+70) |
 | 46 | 1911–1937 | Skvireckas Bible | Lithuanian |  | no | no | NOT PD — translator d. 1959; copyrighted until 2029 |
 | 47 | 1913–1916 | Cố Chính Linh (Schlicklin) | Vietnamese |  | no | no | ⏱ death-year check (life+70) |
 | 48 | c.1913–1935 | Westminster Version (Lattey) | English |  | no | no | ⏱ source hunt — PD status mixed/uncertain by volume |
-| 49 | 1914 | Allioli–Arndt | German | ALL | no | no | audit owed |
+| 49 | 1914 | Allioli–Arndt | German |  | no | no | audit owed; prior assembly deleted under H-21 (code was ALL) |
 | 50 | 1924 | Pancha Granthy | Malayalam |  | no | no | ⏱ source hunt |
 | 51 | 1929 | Vienna Mekhitarist edition | Armenian |  | no | no | ⏱ source hunt — final edition in this lineage |
-| 52 | 1929–1939 | Petrus Canisius | Dutch | CAN | no | no | audit owed |
+| 52 | 1929–1939 | Petrus Canisius | Dutch |  | no | no | audit owed; prior assembly deleted under H-21 (code was CAN) |
 | 53 | 1933/1938 | Pyhä Raamattu | Finnish |  | no | no | ⏱ source in hand |
 | 54 | 1940 | Catholic NT (complete) | Malayalam |  | no | no | audit owed |
 | 55 | 1941 | Confraternity New Testament | English |  | no | no | ⏱ renewal search |
 | 56 | 1957 | Khomenko Bible | Ukrainian |  | no | no | NOT PD — first genuinely Catholic Ukrainian translation, too recent. Note: Kulish Bible (1903) is NOT Catholic |
+
+## The Greek is blocked on a source, not on effort (O-63, 2026-08-17)
+
+**What the corpus holds today:** one edition. `volume.json` declares one
+language and one edition, `WLC`, over 39 units, all 39 confirmed. Measured
+2026-08-17 by reading the file; re-run by reading it again.
+
+**Do not go looking for our earlier Greek work.** It was real — the pre-doctrine
+corpus held a Septuagint over 52 books, a complete Byzantine New Testament over
+27, Theodotion's Daniel and the Sinaiticus Tobit — and **all of it is
+unusable**, for two independent reasons. H-21 (2026-08-13) ruled that every
+edition assembled before the utterance doctrine is deleted because none can
+pass H-17; and on 2026-08-17 the pinned Greek working sources were deleted too.
+Neither the artifacts nor the inputs survive as anything we may build on. The
+next Greek edition starts from a source we do not yet have.
+
+**THE BLOCKER IS LICENSING, AND IT IS NOT SMALL.** Researched by Wilbur,
+2026-08-17:
+
+- **Rahlfs** — closed in every digital form. The CCAT text requires a signed
+  declaration and forbids commercial use, and every derivative inherits that.
+  Dead for us: bibliacatholica.com is a product.
+- **Swete** — the text is public domain, but it exists only as community
+  transcriptions with no self-describing index. Recoverable, at transcription
+  cost, with provenance we would have to establish ourselves.
+- **STEPBible TAGOT** (Tyndale House, CC BY 4.0) — the right licence and the
+  right shape, and **not released**. Worth watching.
+
+**WHAT A CANDIDATE MUST SATISFY** — so a find can be judged in an afternoon
+instead of after a week of extraction:
+
+1. **A licence permitting COMMERCIAL redistribution.** Not "free to read", not
+   "non-commercial", not "academic use". This is the criterion that kills most
+   digital Septuagints, and it is checked first because it is the only one that
+   cannot be worked around.
+2. **A self-describing verse index** — text addressable as book/chapter/verse
+   in the file itself, not a word stream needing a join against a separate
+   concordance. The join is doable and it is where errors hide.
+3. **Attested division names, or none.** Under H-2 a label is a QUOTATION. If
+   the edition's own divisions carry no attested name, the honest result is no
+   label at all, not an invented one. A source that names its divisions is
+   worth materially more than one that does not.
+4. **A stated relationship to the Hebrew's 39 units** — see the open question
+   below, which this choice partly settles.
+
+**OPEN, AND HOWELL'S TO RULE (O-63):** is a Greek edition a second edition of
+this volume, or a second volume? The engine assumes one volume, one unit list,
+editions as columns over it. A Greek New Testament shares NO unit with the
+Tanakh's 39. A Septuagint overlaps them but brings roughly thirteen books the
+Hebrew does not have, and under H-11 those have no unit to hang on. The answer
+changes what counts as a usable source, so it is worth settling before the
+hunt rather than after.
 
 ## Considered and excluded — not editions we plan to add
 
@@ -104,14 +199,30 @@ a roster of editions we have or intend to have.
 | 1549 | Xavier's Matthew fragment | Japanese | historical trace only — no continuous text survives |
 | 1613 | Jesuit Kyoto NT | Japanese | ✝ LOST, no copy known |
 
-## The ring says more than this table does — RECONCILIATION OWED (2026-08-01)
+## The ring said more than this table did — THE FILE IS GONE, THE RESEARCH IS NOT (2026-08-01; superseded 2026-08-17, O-63)
 
-`wheel-cargo/gutenberg/languages.json` holds **29 languages** the reader can
-already see on the secondary ring, each with a YEAR that sets its position on
-the arc. Seven of them have no row above: they arrived with the 42-language PD
+**THE RECONCILIATION IS MOOT AS STATED.** `wheel-cargo/gutenberg/languages.json`
+was deleted on 2026-08-17 with the rest of the pre-doctrine scaffolding, so
+there are no longer 29 ring languages, no ring years, and no drift between that
+file and this one. **Nothing below is owed against a live file.** Verified by
+listing `wheel-cargo/gutenberg/` on 2026-08-17: it holds `declaration.json`,
+`naming/`, `proofread.json`, `versification/` and the dated volume directory.
+
+What is kept, and why: the RESEARCH below cost real hours and is still true
+about the world — whether 1417 Czech names an identifiable act, whether 1685
+Irish is Bedell's Protestant Old Testament, whether 1688 Romanian is the
+Orthodox Bucharest Bible. Those questions outlive the file that raised them and
+will be asked again the moment a second ring is populated. **What is dead is
+the mechanism** — the drift, the years, and the reconciliation owed.
+
+The original text follows, unedited, as the record of what was found.
+
+`wheel-cargo/gutenberg/languages.json` held **29 languages** the reader could
+already see on the secondary ring, each with a YEAR that set its position on
+the arc. Seven of them had no row above: they arrived with the 42-language PD
 sweep of 2026-07-28 as quick `comingSoon` hooks, before this table was
 expanded on the 31st, and nobody reconciled the two. A ring year is a factual
-claim about when a translation act happened, so these are display facts, not
+claim about when a translation act happened, so these were display facts, not
 just bookkeeping.
 
 | ring language | ring year | owed |
