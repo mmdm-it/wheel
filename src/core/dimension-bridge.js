@@ -107,7 +107,9 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // correctly placed) → CERTIFIED (Howell: displays correctly in the wheel) →
   // PROOFREAD (a human checked the text against an independent source). Only
   // the LAST rung lives in the data, because only the last rung is a promise
-  // to the reader; the first two are labels in docs/THE-PLAYLIST.md. So the
+  // to the reader; the others are labels in the playlist, which crossed the
+  // wall into cargo on 2026-08-18 (W-89) — the engine no longer holds it and
+  // must not describe its contents as though it could check them. So the
   // gate reads `proofread`, and nothing reaches ANY venue — the bench, or
   // either public site — until a human has read it against another witness.
   // Every venue shows IDENTICAL content; the question is never what, only

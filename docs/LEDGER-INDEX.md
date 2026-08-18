@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-18 from 180 entries.
+Generated 2026-08-18 from 182 entries.
 
 | id | status | title |
 |---|---|---|
@@ -192,3 +192,5 @@ Generated 2026-08-18 from 180 entries.
 | W-85 | OPEN | FN-4'S CARGO HALF — the Old Testament stops wearing the Passion |
 | W-86 | OPEN | GREEK CANDIDATE ONE, PINNED BY ADDRESS — Swete via Open Greek and Latin |
 | W-87 | OPEN | BRENTON IS ADOPTED — phase A seats 18 books of Greek |
+| W-88 | OPEN | THE GREEK IS WITHDRAWN — a partial edition is of no use to anyone |
+| W-89 | OPEN | THE PLAYLIST CROSSES THE WALL — a file that could not be checked where it lived |
