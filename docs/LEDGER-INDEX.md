@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-17 from 173 entries.
+Generated 2026-08-18 from 176 entries.
 
 | id | status | title |
 |---|---|---|
@@ -99,8 +99,10 @@ Generated 2026-08-17 from 173 entries.
 | O-58 | OPEN | THE RULES TODAY EARNED, WRITTEN DOWN — because the draft we kept co-signing was filed nowhere |
 | O-59 | ENGINE HALF FIXED AND MERGED | THE DOOR COUNTS THE FLAG AS PRESENT WHEN IT IS INERT TEXT — both walls, and the engine's is live on main |
 | O-60 | OPEN | THE DEPLOY SCRIPTS COULD PUBLISH BY ACCIDENT — a bare command sent four sites live |
-| O-61 | OPEN | A GREEN SUITE OVER A STALE BUNDLE — the tests read the source, the phone reads the build |
+| O-61 | CLOSED | A GREEN SUITE OVER A STALE BUNDLE — the tests read the source, the phone reads the build |
 | O-62 | OPEN | WHAT THE GREEK WILL HIT — four notes for Wilbur before the second edition starts |
+| O-63 | OPEN | THE PLAYLIST WAS FALSE IN SIXTEEN PLACES, AND THE TEST THAT WATCHES IT CANNOT SEE CONTENT |
+| O-64 | OPEN | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -185,3 +187,4 @@ Generated 2026-08-17 from 173 entries.
 | W-82 | OPEN | FOUR COMMITS ORPHANED BY A MERGE RACE — main shipped the label W-76 removed |
 | W-83 | BOTH HALVES MERGED | THE SHELF CHART IS BUILT — the Hebrew's own order and its three divisions, for Orville's review |
 | W-84 | OPEN | THE STALE-.GZ COUNTER MEASURES TIMESTAMPS AND REPORTS THEM AS CONTENT |
+| W-85 | OPEN | FN-4'S CARGO HALF — the Old Testament stops wearing the Passion |
