@@ -5,7 +5,9 @@ import { fileURLToPath as _fileURLToPathBible } from 'node:url';
 import _pathBible from 'node:path';
 
 import { describe, it } from 'node:test';
-import { bibleAdapter, normalize as normalizeBible } from '../src/adapters/bible-adapter.js';
+import { bibleAdapter, normalize as normalizeBible, detailFor } from '../src/adapters/bible-adapter.js';
+import { setUnitTextLoader } from '../src/adapters/volume-helpers.js';
+import { buildBibleVerseChain } from '../src/navigation/cousin-builder.js';
 import { makeWallManifest } from './helpers/wall-volume.mjs';
 
 // THE WALL'S ROOT SHAPE (H-14): testaments hold books directly, and there is
@@ -268,5 +270,102 @@ describe('reading on through the volume', () => {
     const chapters = getBibleChapters(realManifest, { id: 'ALPH' }, {}, 'book', 'ED');
     assert.deepEqual(chapters.map(c => c.name), ['1', '2'],
       'the chapter carries its number; the numeral system is chosen at render');
+  });
+});
+
+// THE READ-AHEAD NEVER FIRED AT A BOOK BOUNDARY (O-67).
+//
+// Howell, reading on the phone: "the verses in the detail sector disappear
+// between Genesis and Exodus." The data was whole — 39 units, 39 charts, 39
+// text files. The read-ahead exists precisely so a crossing is never a wait,
+// and it had never once fired.
+//
+// It read `Number.parseInt(meta.verseKey, 10)`, and `verseKey` is a COMPOSED
+// ADDRESS: "50:26". The parse returned 50 — the chapter — and compared it
+// against the unit's total seat count, 1,533. The remainder was never within
+// five, so the next unit was never warmed and every book crossing began a
+// cold fetch of a whole book's text.
+//
+// WHY THE SHARED FIXTURE COULD NOT CATCH IT: its books hold 4 leaves, fewer
+// than the 5-verse threshold, so EVERY position is "within five of the end"
+// and any number at all satisfies the test. The fixture below is the smallest
+// one where the chapter number and the unit ordinal genuinely disagree — a
+// book of 12 seats in 4 containers of 3 — which is the only shape that can
+// tell a right number from a wrong one.
+describe('the read-ahead warms the next unit (O-67)', () => {
+  const LONG = {
+    groups: [
+      { label: '1', from: 1, to: 3 }, { label: '2', from: 4, to: 6 },
+      { label: '3', from: 7, to: 9 }, { label: '4', from: 10, to: 12 }
+    ],
+    seats: Array.from({ length: 12 }, (_, i) => ({
+      label: String((i % 3) + 1), utterances: [`LONG-u${i + 1}`]
+    }))
+  };
+  const NEXT = {
+    groups: [{ label: '1', from: 1, to: 2 }],
+    seats: [{ label: '1', utterances: ['NEXT-u1'] }, { label: '2', utterances: ['NEXT-u2'] }]
+  };
+  const book = (id, leaves, order) => ({ id, leaves, order, testamentId: 'T1' });
+  const volume = {
+    testaments: [{ id: 'T1', order: 0, books: [book('LONG', 12, 0), book('NEXT', 2, 1)] }],
+    units: [book('LONG', 12, 0), book('NEXT', 2, 1)],
+    editions: [{ code: 'ED', language: 'english', hasChart: true, proofread: true }],
+    namesByLanguage: { english: { testaments: { T1: 'First' }, books: { LONG: 'Long', NEXT: 'Next' } } },
+    displayConfig: {},
+    spineFor: id => ({ utterances: (id === 'LONG' ? LONG : NEXT).seats.flatMap(s => s.utterances) }),
+    chartFor: (id, ed) => (ed === 'ED' ? (id === 'LONG' ? LONG : NEXT) : null),
+    textFor: () => null,
+    has: id => id === 'LONG' || id === 'NEXT',
+    isFullyConfirmed: () => true,
+    bookOrderFor: () => ['LONG', 'NEXT'],
+    sectionOf: () => null,
+    toRoot: () => ({
+      display_config: {},
+      testaments: { T1: { sort_number: 0, books: { LONG: { sort_number: 0 }, NEXT: { sort_number: 1 } } } }
+    })
+  };
+  const manifest = { Gutenberg_Bible: volume.toRoot() };
+  Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+
+  // The seam: the read-ahead's only observable effect is which unit's text it
+  // asks the registered loader for. Registering a spy is how the app itself
+  // wires this (setUnitTextLoader in volume-configs.js), so the cell watches
+  // production's own path rather than a stand-in.
+  const askedFor = () => {
+    const asked = [];
+    setUnitTextLoader(id => { asked.push(id); return Promise.resolve(null); });
+    return asked;
+  };
+
+  const seatAt = ordinal => {
+    const chain = buildBibleVerseChain(manifest, { edition: 'ED' });
+    const items = (chain?.items || chain || []).filter(Boolean);
+    return items.find(it => it?.meta?.unitOrdinal === ordinal);
+  };
+
+  it('every seat carries its UNIT-scoped ordinal, which verseKey never was', () => {
+    const last = seatAt(12);
+    assert.ok(last, 'the twelfth seat must exist and carry unitOrdinal 12');
+    assert.equal(last.meta.verseKey, '4:3',
+      'verseKey is a composed ADDRESS — parsing it for a position yields 4, the chapter');
+    assert.equal(Number.parseInt(last.meta.verseKey, 10), 4,
+      'which is the number the read-ahead used to read, against a seat count of 12');
+  });
+
+  it('WARMS THE NEXT UNIT at the end of a book — the crossing that was always cold', () => {
+    const asked = askedFor();
+    const last = seatAt(12);
+    detailFor(last, manifest, { translation: 'ED' });
+    assert.ok(asked.includes('NEXT'),
+      `the next unit must be warmed before the reader arrives; asked for ${JSON.stringify(asked)}`);
+  });
+
+  it('does NOT warm it from the middle — a read-ahead that always fires is not one', () => {
+    const asked = askedFor();
+    const middle = seatAt(4); // chapter 2, verse 1: eight seats still to read
+    detailFor(middle, manifest, { translation: 'ED' });
+    assert.ok(!asked.includes('NEXT'),
+      `mid-book must not prefetch the next unit; asked for ${JSON.stringify(asked)}`);
   });
 });

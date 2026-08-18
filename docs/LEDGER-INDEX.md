@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-18 from 183 entries.
+Generated 2026-08-18 from 185 entries.
 
 | id | status | title |
 |---|---|---|
@@ -106,6 +106,7 @@ Generated 2026-08-18 from 183 entries.
 | O-64 | RULED | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
 | O-65 | CLOSED | THE FIRST PARTIAL EDITION TOOK THE HEBREW DOWN WITH IT — all-or-nothing across the wrong axis |
 | O-66 | VERIFIED | THE RIGHTS GATE COULD NOT RUN AT ALL — inert again, one week after O-56 un-inerted it |
+| O-67 | OPEN | THE READ-AHEAD NEVER FIRED, NOT ONCE — two defects, either one fatal |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -195,3 +196,4 @@ Generated 2026-08-18 from 183 entries.
 | W-87 | OPEN | BRENTON IS ADOPTED — phase A seats 18 books of Greek |
 | W-88 | OPEN | THE GREEK IS WITHDRAWN — a partial edition is of no use to anyone |
 | W-89 | OPEN | THE PLAYLIST CROSSES THE WALL — a file that could not be checked where it lived |
+| W-90 | OPEN | EDITION CODES ARE MINTED — and the rename found two dead importers |
