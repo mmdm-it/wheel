@@ -221,13 +221,28 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   const loadText = async unitId => {
     if (texts.has(unitId)) return texts.get(unitId);
     let records = null;
+    // ABSENT FROM THE CHART IS ABSENT FROM THE EDITION (O-65, the same clause
+    // `expandVolumeSeats` already holds). O-42's all-or-nothing conflated two
+    // absences the first morning a PARTIAL edition existed: "this edition's
+    // file did not ARRIVE" (a fault — all-or-nothing is right) and "this
+    // edition does not CONTAIN this book" (a fact, declared by the chart).
+    // Fetching every declared edition meant a book the partial edition lacks
+    // 404'd, the Promise.all rejected, and the catch nulled the WHOLE unit —
+    // the Hebrew went down with the Greek it never had. So membership is
+    // asked of the chart first, and O-42 applies among the members.
+    const present = codes.filter(code => charts.get(`${unitId}|${code}`));
     try {
-      const files = await Promise.all(codes.map(code =>
+      if (!present.length) throw new Error(`no edition charts ${unitId}`);
+      const files = await Promise.all(present.map(code =>
         fetchJson(at({ kind: 'text', unitId, edition: code }))));
       records = normalizeUnitText({
-        editions: Object.fromEntries(codes.map((code, i) => [code, files[i]])),
-        declared: codes,
-        order: (charts.get(`${unitId} ${codes[0]}`)?.seats || []).map(seat => String(seat.label))
+        editions: Object.fromEntries(present.map((code, i) => [code, files[i]])),
+        declared: present,
+        // The order key matches how the cache is KEYED — it read
+        // `${unitId} ${code}` (a space) against keys built with '|', so it
+        // missed on every book of every edition and the order silently never
+        // arrived (O-65's second defect).
+        order: (charts.get(`${unitId}|${present[0]}`)?.seats || []).map(seat => String(seat.label))
       });
     } catch {
       // A unit whose text did not arrive carries none. It is NOT filled from
