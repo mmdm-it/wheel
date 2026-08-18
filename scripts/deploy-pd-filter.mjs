@@ -52,7 +52,20 @@ import { join, relative, dirname, sep } from 'node:path';
 // distribution. It is deliberately short, and under clause 3 an edition that
 // is missing from it stops the deploy by name rather than being silently
 // dropped — so forgetting to add one is loud, and so is adding one by habit.
-const PD_ALLOWLIST = new Set(['WLC']);
+// `1200BCheb` — the Westminster Leningrad Codex, cleared by Howell on
+// 2026-08-18 (O-68). The assertion is his and it is unchanged in substance:
+// the Hebrew text is public domain. What changed is its NAME — W-90 minted
+// the year+language codes, and this list had to be told, because a rights
+// gate that survives a rename silently was never checking the identity of
+// what it cleared (Wilbur's rule, O-66).
+//
+// `WLC` is REMOVED rather than kept beside it. Nothing in the corpus answers
+// to that code any more, so leaving it would be this list asserting a licence
+// for a thing that does not exist — and a stale entry on a rights list is
+// exactly the kind of clutter a real mistake could hide behind. If the rename
+// were ever reverted the deploy would refuse by name, loudly, which is the
+// outcome to want.
+const PD_ALLOWLIST = new Set(['1200BCheb']);
 
 const GZ_FLOOR = 2048; // bytes — mirror precompress-json.mjs exactly
 
