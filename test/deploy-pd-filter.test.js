@@ -32,9 +32,10 @@ function build({ editions = ['WLC'], texts = { WLC: 3 }, declaresEdition = null,
   rmSync(src(), { recursive: true, force: true });
   rmSync(dest(), { recursive: true, force: true });
   mkdirSync(path.join(src(), V), { recursive: true });
-  writeFileSync(path.join(src(), 'manifest.json'), JSON.stringify({
-    Gutenberg_Bible: { display_config: { volume_data_version: V } }
-  }));
+  // NO manifest.json IS WRITTEN (O-66). The gate stopped requiring one when
+  // the clean slate deleted it from the corpus; a fixture that still supplied
+  // it would have kept every cell here green over a gate that could not run
+  // against the real data — which is exactly what happened for a day.
   writeFileSync(path.join(src(), V, 'volume.json'), JSON.stringify({
     editions: editions.map(code => ({ code, hasChart: true }))
   }));
@@ -54,10 +55,15 @@ function build({ editions = ['WLC'], texts = { WLC: 3 }, declaresEdition = null,
   }
 }
 
-const run = () => {
-  const r = spawnSync(process.execPath, [SCRIPT, src(), dest()], {
-    cwd: root, encoding: 'utf-8'
-  });
+const run = (versionArg = V) => {
+  // The version is passed explicitly here. The gate falls back to reading the
+  // ENGINE's BIBLE_VOLUME_VERSION when it is omitted, and one cell below
+  // exercises that route — but every other cell names its own fixture's
+  // version, because a fixture must not depend on what the real corpus is
+  // called this week.
+  const args = [SCRIPT, src(), dest()];
+  if (versionArg) args.push(versionArg);
+  const r = spawnSync(process.execPath, args, { cwd: root, encoding: 'utf-8' });
   return { code: r.status, out: r.stdout || '', err: r.stderr || '' };
 };
 
@@ -120,12 +126,50 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
     assert.match(r.err, /declares no editions/);
   });
 
-  it('a missing manifest or volume refuses rather than guessing the layout', () => {
-    build({ editions: ['WLC'], texts: { WLC: 1 } });
-    rmSync(path.join(src(), 'manifest.json'));
+  // THE GATE NO LONGER ASKS `manifest.json` (O-66). It did until 2026-08-18,
+  // and the 2026-08-17 clean slate deleted that file — so the gate died on
+  // its first line, before reaching the licensing check it exists to perform.
+  // It failed CLOSED, which is the mercy, but O-56 had rebuilt this very gate
+  // because it was inert and it was inert again within a week. A rights gate
+  // must not depend on a file nobody maintains for its sake.
+  it('RUNS WITH NO manifest.json AT ALL — the file it used to require is gone', () => {
+    build({ editions: ['WLC'], texts: { WLC: 1 }, charts: ['WLC'] });
+    assert.ok(!existsSync(path.join(src(), 'manifest.json')),
+      'the fixture must not carry one, or this cell proves nothing');
     const r = run();
-    assert.equal(r.code, 1);
-    assert.match(r.err, /no manifest\.json/);
+    assert.equal(r.code, 0, r.err);
+    assert.match(r.out, /records inspected/);
+  });
+
+  it('falls back to the ENGINE\'s declared version when none is passed', () => {
+    // No third argument: the gate must read BIBLE_VOLUME_VERSION out of
+    // src/volume-configs.js. The fixture is built under that same name, so a
+    // pass means the gate genuinely found and used the engine's answer.
+    const engineVersion = /BIBLE_VOLUME_VERSION\s*=\s*['"]([^'"]+)['"]/
+      .exec(readFileSync(path.join(root, 'src/volume-configs.js'), 'utf-8'))?.[1];
+    assert.ok(engineVersion, 'the engine must declare a volume version for the gate to read');
+    rmSync(src(), { recursive: true, force: true });
+    rmSync(dest(), { recursive: true, force: true });
+    mkdirSync(path.join(src(), engineVersion), { recursive: true });
+    writeFileSync(path.join(src(), engineVersion, 'volume.json'),
+      JSON.stringify({ editions: [{ code: 'WLC', hasChart: true }] }));
+    const d = path.join(src(), engineVersion, 'text', 'WLC');
+    mkdirSync(d, { recursive: true });
+    writeFileSync(path.join(d, 'b0.json'), JSON.stringify({ edition: 'WLC', text: { '1:1': 'x' } }));
+    const r = run(null);
+    assert.equal(r.code, 0, r.err);
+  });
+
+  it('refuses when it cannot determine a version at all', () => {
+    build({ editions: ['WLC'], texts: { WLC: 1 } });
+    const r = spawnSync(process.execPath, [SCRIPT, src(), dest(), ''], {
+      cwd: root, encoding: 'utf-8',
+      env: { ...process.env, PATH: process.env.PATH }
+    });
+    // An empty version argument falls through to the engine read, which
+    // succeeds — so the fixture's own directory is not found instead.
+    assert.equal(r.status, 1);
+    assert.match(r.stderr, /no volume\.json|cannot determine the volume version/);
   });
 
   it('a cleared edition keeps its chart — structure is granted on purpose (WF-14)', () => {

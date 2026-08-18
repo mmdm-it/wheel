@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-18 from 182 entries.
+Generated 2026-08-18 from 183 entries.
 
 | id | status | title |
 |---|---|---|
@@ -105,6 +105,7 @@ Generated 2026-08-18 from 182 entries.
 | O-63 | VERIFIED | THE PLAYLIST WAS FALSE IN SIXTEEN PLACES, AND THE TEST THAT WATCHES IT CANNOT SEE CONTENT |
 | O-64 | RULED | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
 | O-65 | CLOSED | THE FIRST PARTIAL EDITION TOOK THE HEBREW DOWN WITH IT — all-or-nothing across the wrong axis |
+| O-66 | OPEN | THE RIGHTS GATE COULD NOT RUN AT ALL — inert again, one week after O-56 un-inerted it |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
