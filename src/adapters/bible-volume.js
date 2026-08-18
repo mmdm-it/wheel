@@ -27,11 +27,11 @@ import { resolvePath } from '../core/identity.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
-// EVERY ARTIFACT A UNIT NEEDS, CHECKED AS A SET (O-42's principle, which
-// survives H-14 even though its seam did not). A unit resolves all-or-nothing
-// and loudly: half a unit renders as success, and across 79 increments the one
-// thing that must not happen is a botched increment looking finished.
-const REQUIRED_PER_UNIT = ['spine', 'chart', 'text'];
+// O-42'S PRINCIPLE SURVIVES IN `loadText` BELOW: a unit resolves
+// all-or-nothing among the editions whose charts include it, and loudly —
+// half a unit renders as success, and across 79 increments the one thing
+// that must not happen is a botched increment looking finished. (The
+// REQUIRED_PER_UNIT set that stated this died with `loadUnit`, O-65.)
 
 export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   if (typeof fetchJson !== 'function') {
@@ -567,63 +567,12 @@ export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false 
   return items;
 }
 
-// ONE UNIT, FULLY RESOLVED, OR A SCREAM (H-14 + O-42's surviving principle).
+// `loadUnit` LIVED HERE AND IS DELETED (O-65, verified finding; WF-19).
 //
-// Spine, chart and text land together. The tempting kindness — render what
-// arrived — would show a unit the increment did not finish, and every layer
-// above would report success.
-export async function loadUnit(volume, unitId, edition, { fetchJson } = {}) {
-  if (typeof fetchJson !== 'function') throw new Error('bible-volume: loadUnit needs a `fetchJson(path)`');
-  const codes = volume.editions.map(e => e.code);
-  if (!codes.includes(edition)) {
-    throw new Error(
-      `bible-volume: ${JSON.stringify(edition)} is not an enumerated edition (have: ${codes.join(', ') || 'none'}). `
-      + 'volume.json is the sole enumeration — an edition absent from it is absent, whatever is on disk.');
-  }
-
-  const missing = [];
-  const settle = async (kind, path) => {
-    try {
-      const got = await fetchJson(path);
-      if (!got) missing.push(kind);
-      return got;
-    } catch {
-      missing.push(kind);
-      return null;
-    }
-  };
-
-  const [spine, chart, ...texts] = await Promise.all([
-    settle('spine', volume.pathFor('spine', unitId)),
-    settle('chart', volume.pathFor('chart', unitId, edition)),
-    ...codes.map(code => settle(`text/${code}`, volume.pathFor('text', unitId, code)))
-  ]);
-
-  if (missing.length) {
-    throw new Error(
-      `bible-volume: ${JSON.stringify(unitId)} is enumerated but INCOMPLETE — missing ${missing.join(', ')}.\n`
-      + `  A unit resolves all-or-nothing. Rendering the parts that arrived would show a unit this `
-      + `increment did not finish, and it would look like success.\n`
-      + `  Required per unit: ${REQUIRED_PER_UNIT.join(', ')} (text for every enumerated edition).`);
-  }
-
-  const seats = (chart.seats || []).map(seat => String(seat.label));
-  const records = normalizeUnitText({
-    editions: Object.fromEntries(codes.map((code, i) => [code, texts[i]])),
-    declared: codes,
-    order: seats
-  });
-
-  return {
-    unitId,
-    edition,
-    spine,
-    chart,
-    seats,
-    text: records,
-    // CHAPTERS ARE PROJECTED, NOT STORED (O-44). The chart declares them per
-    // edition over book-ordinal ranges, and nothing reconciles two editions
-    // that divide differently — both are right.
-    containers: projectContainers(chart, { leaves: (spine.utterances || []).length })
-  };
-}
+// It bundled spine + chart + text per unit and fetched text for EVERY
+// declared edition, throwing INCOMPLETE on any miss — the O-65 defect,
+// preserved verbatim behind an export with ZERO callers in src/. The app
+// was safe only because nothing reached for it; the next person who did
+// would reintroduce the bug without touching existing code. Its doctrine
+// cells moved to the live path (`loadTextFor`), where the all-or-nothing
+// applies among the editions whose charts include the unit.

@@ -104,7 +104,7 @@ Generated 2026-08-18 from 180 entries.
 | O-62 | OPEN | WHAT THE GREEK WILL HIT — four notes for Wilbur before the second edition starts |
 | O-63 | VERIFIED | THE PLAYLIST WAS FALSE IN SIXTEEN PLACES, AND THE TEST THAT WATCHES IT CANNOT SEE CONTENT |
 | O-64 | RULED | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
-| O-65 | OPEN | THE FIRST PARTIAL EDITION TOOK THE HEBREW DOWN WITH IT — all-or-nothing across the wrong axis |
+| O-65 | VERIFIED | THE FIRST PARTIAL EDITION TOOK THE HEBREW DOWN WITH IT — all-or-nothing across the wrong axis |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |

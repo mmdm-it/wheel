@@ -8,7 +8,10 @@ import { describe, it } from 'node:test';
 import { readFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadBibleVolume, loadUnit } from '../src/adapters/bible-volume.js';
+import * as bibleVolumeModule from '../src/adapters/bible-volume.js';
+import { projectContainers } from '../src/core/unit-source.js';
+
+const { loadBibleVolume } = bibleVolumeModule;
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = path.join(repoRoot, 'test/fixtures/h11/gutenberg');
@@ -37,14 +40,22 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
   });
 
   it('THE VULGATE IS ON DISK AND UNREACHABLE — the enumeration is sole, not first', async () => {
-    const volume = await load();
-    // Present, complete, granted — and invisible.
+    // Present, complete, granted — and invisible. `loadUnit`, which once took
+    // an edition by name and could be asked for VUL, is DELETED (O-65): the
+    // per-edition door does not exist, so the only text path is the volume's
+    // own loader — and it must never touch an unenumerated edition's files.
     assert.ok(existsSync(path.join(BASE, VERSION, 'text/VUL/bc22df.json')),
       'the fixture really does carry VUL on disk');
-    await assert.rejects(
-      () => loadUnit(volume, 'bc22df', 'VUL', { fetchJson }),
-      /not an enumerated edition/,
-      'reaching a file that exists but is unenumerated must be impossible, not merely discouraged');
+    assert.equal(bibleVolumeModule.loadUnit, undefined,
+      'loadUnit is deleted — it preserved the O-65 defect behind an export with no callers');
+    const touched = [];
+    const volume = await loadBibleVolume({
+      base: BASE, version: VERSION,
+      fetchJson: async p => { touched.push(p); return fetchJson(p); }
+    });
+    await volume.loadTextFor('bc22df');
+    assert.deepEqual(touched.filter(p => p.includes('/VUL/')), [],
+      'no fetch may name VUL: unenumerated means unreachable, whatever is on disk');
   });
 
   it('a unit absent from the enumeration does not exist, whatever is on disk', async () => {
@@ -93,54 +104,49 @@ describe('the wall reader — names are quotations (H-2)', () => {
 });
 
 describe('the wall reader — a unit resolves all-or-nothing, loudly', () => {
-  it('loads Genesis 1 whole: spine, chart, text, projected containers', async () => {
+  // These cells ran through `loadUnit` until O-65 deleted it: it fetched text
+  // for EVERY declared edition and threw INCOMPLETE on any miss — the O-65
+  // defect preserved verbatim behind an export nothing in src/ called. The
+  // doctrine it guarded survives; the door does not. The live path is the
+  // volume's own pieces — `spineFor`/`chartFor` (eager, absence is a data
+  // state) and `loadTextFor` (all-or-nothing among charted editions, where a
+  // failure is the HONEST NULL rather than a throw: the unit renders blank,
+  // never partially).
+  it('loads Genesis 1 whole through the live path: spine, chart, text agree', async () => {
     const volume = await load();
-    const unit = await loadUnit(volume, 'bc22df', 'DRA', { fetchJson });
-    assert.equal(unit.seats.length, 31);
-    assert.equal(unit.spine.utterances.length, 31);
-    assert.equal(Object.keys(unit.text).length, 31);
-    assert.match(unit.text['1'].text.DRA, /^In the beginning/);
+    const spine = volume.spineFor('bc22df');
+    const chart = volume.chartFor('bc22df', 'DRA');
+    const records = await volume.loadTextFor('bc22df');
+    assert.equal(spine.utterances.length, 31);
+    assert.equal(chart.seats.length, 31);
+    assert.equal(Object.keys(records).length, 31);
+    assert.match(records['1'].text.DRA, /^In the beginning/);
   });
 
   it('CHAPTERS ARE PROJECTED FROM THE CHART, not stored (O-44)', async () => {
     const volume = await load();
-    const unit = await loadUnit(volume, 'bc22df', 'DRA', { fetchJson });
-    assert.equal(unit.containers.length, 1, 'Genesis 1 is one container');
-    assert.equal(unit.containers[0].label, '1');
-    assert.equal(unit.containers[0].count, 31);
+    const containers = projectContainers(volume.chartFor('bc22df', 'DRA'),
+      { leaves: volume.spineFor('bc22df').utterances.length });
+    assert.equal(containers.length, 1, 'Genesis 1 is one container');
+    assert.equal(containers[0].label, '1');
+    assert.equal(containers[0].count, 31);
   });
 
-  for (const [what, hides] of [
-    ['the spine', '/spine/'],
-    ['the chart', '/charts/'],
-    ['the text', '/text/']
+  // A SECOND WAY TO BE ABSENT rides with the first in each pair below: a
+  // fetch that REJECTS lands in a catch, while one that RESOLVES to nothing
+  // takes a different branch entirely — an empty file, a 200 with no body, a
+  // JSON `null`. Both must produce the honest null, never a partial unit.
+  for (const [how, breakFetch] of [
+    ['FAILS', p => Promise.reject(new Error(`404 ${p}`))],
+    ['arrives EMPTY — resolved, not rejected', () => Promise.resolve(null)]
   ]) {
-    it(`SCREAMS when ${what} FAILS rather than rendering the rest`, async () => {
-      const volume = await load();
-      await assert.rejects(
-        () => loadUnit(volume, 'bc22df', 'DRA', {
-          fetchJson: async p => (p.includes(hides) ? Promise.reject(new Error('404')) : fetchJson(p))
-        }),
-        /INCOMPLETE/,
+    it(`the unit is the HONEST NULL when a charted edition's text ${how}`, async () => {
+      const volume = await loadBibleVolume({
+        base: BASE, version: VERSION,
+        fetchJson: async p => (p.includes('/text/') ? breakFetch(p) : fetchJson(p))
+      });
+      assert.equal(await volume.loadTextFor('bc22df'), null,
         'half a unit renders as success, which is the one outcome 79 increments cannot afford');
-    });
-
-    // A SECOND WAY TO BE ABSENT, and the tests above do not reach it.
-    //
-    // Found by deliberately breaking the check and watching NOTHING go red:
-    // the cells above reject the promise, which lands in the catch, while a
-    // fetch that RESOLVES to nothing takes a different branch entirely. That
-    // is not hypothetical — an empty file, a server answering 200 with no
-    // body, or a JSON `null` all arrive this way, and every one of them would
-    // have produced a unit rendering from whatever else turned up.
-    it(`SCREAMS when ${what} arrives EMPTY — resolved, not rejected`, async () => {
-      const volume = await load();
-      await assert.rejects(
-        () => loadUnit(volume, 'bc22df', 'DRA', {
-          fetchJson: async p => (p.includes(hides) ? null : fetchJson(p))
-        }),
-        /INCOMPLETE/,
-        'a fetch that succeeds and returns nothing is still a missing artifact');
     });
   }
 });
