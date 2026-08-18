@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-18 from 176 entries.
+Generated 2026-08-18 from 177 entries.
 
 | id | status | title |
 |---|---|---|
@@ -39,6 +39,7 @@ Generated 2026-08-18 from 176 entries.
 | H-25 | OPEN | WHAT ENDS PHASE 1, WHAT PHASE 2 ACTUALLY ASKS, AND THE ENGLISH EDITION STAYS DEAD |
 | H-26 | OPEN | SECTIONS ARE LABELS, NOT LEVELS — and the name is shown, never a colour |
 | H-27 | OPEN | THE TOP LEVEL IS THE EDITION'S OWN — and the parent button ends there |
+| H-28 | OPEN | THE GREEK IS A SECOND EDITION OF THE BIBLE VOLUME — volumes are few, editions are many |
 | O-1 | OPEN | Prominence tiers for manufacturers (the ranked starfield) |
 | O-2 | DONE (archived) | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | OPEN | Travel-color theme keys (CONTRACT heads-up, not yet work) |
@@ -102,7 +103,7 @@ Generated 2026-08-18 from 176 entries.
 | O-61 | CLOSED | A GREEN SUITE OVER A STALE BUNDLE — the tests read the source, the phone reads the build |
 | O-62 | OPEN | WHAT THE GREEK WILL HIT — four notes for Wilbur before the second edition starts |
 | O-63 | OPEN | THE PLAYLIST WAS FALSE IN SIXTEEN PLACES, AND THE TEST THAT WATCHES IT CANNOT SEE CONTENT |
-| O-64 | OPEN | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
+| O-64 | RULED | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
