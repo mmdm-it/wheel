@@ -1,10 +1,12 @@
 # THE PLAYLIST — the single source of major truth
 
-*Last audited: 2026-08-17 by Orville — Q3 (does it assert a state that is now
-false?). Findings in O-63. **No other document under `docs/` carries this
-stamp and nothing enforces it**, so WF-13's rotation cannot yet be sorted by
-staleness the way the rule describes; that gap is noted in O-63 and is not
-fixed here.*
+*Last audited: 2026-08-18 by Orville — Q3 (does it assert a state that is now
+false?). This sitting: row 2 gains `BRENT` (W-87 adopted it into the corpus,
+so the code claim is true again), the criterion-1 rationale is re-grounded
+per Howell's W-86 retraction, and the H-28 ruling replaces the open volume
+question. **No other document under `docs/` carries this stamp and nothing
+enforces it**, so WF-13's rotation cannot yet be sorted by staleness the way
+the rule describes; that gap is noted in O-63 and is not fixed here.*
 
 Every translation enters at the date of its act. No leapfrogging. Nothing
 below 100%. **This file is authoritative**: it is the one place that records
@@ -77,10 +79,10 @@ playlist moves on.
 | # | Year | Edition | Language | Code | complete | proofread | Notes |
 |---|------|---------|----------|------|----------|-----------|-------|
 | 1 | c.1200–165 BC | Hebrew Bible (Tanakh) | Hebrew | WLC | yes | yes | seated; proofread 2026-08-17, 39 of 39 books |
-| 2 | c.250–100 BC | Septuagint | Greek |  | no | no | ⏱ NO USABLE SOURCE — see "The Greek is blocked on a source" below. Prior assembly deleted under H-21 |
+| 2 | c.250–100 BC | Septuagint | Greek | BRENT | no | no | Brenton adopted (W-87): phase A seats 18 of 39 books, identity-mapped; 21 await a versification source. Prior assembly deleted under H-21 |
 | 3 | c.50–100 AD | Greek New Testament | Greek |  | no | no | ⏱ source hunt. Prior assembly (Byzantine, Robinson-Pierpont) deleted under H-21 |
-| 4 | c.150 | Theodotion's Daniel | Greek |  | no | no | ⏱ rides on the Septuagint's source problem. Prior assembly deleted under H-21 |
-| 5 | 4th c. | Tobit (Codex Sinaiticus) | Greek |  | no | no | ⏱ rides on the Septuagint's source problem. Prior assembly deleted under H-21 |
+| 4 | c.150 | Theodotion's Daniel | Greek |  | no | no | ⏱ the pinned Swete candidate carries Daniel twice, OG and Theodotion (W-86) — row 4 may arrive inside row 2's successor source. Prior assembly deleted under H-21 |
+| 5 | 4th c. | Tobit (Codex Sinaiticus) | Greek |  | no | no | ⏱ rides on the Septuagint's source question. Prior assembly deleted under H-21 |
 | 6 | 382–405 | Vulgate (Jerome) | Latin |  | no | no | prologues owed; prior assembly deleted under H-21 (code was VUL) |
 | 7 | 1466 | Mentelin Bible | German |  | no | no | ⏱ source hunt |
 | 8 | 1471 | Malermi | Italian |  | no | no | ⏱ OCR trial |
@@ -133,11 +135,16 @@ playlist moves on.
 | 55 | 1941 | Confraternity New Testament | English |  | no | no | ⏱ renewal search |
 | 56 | 1957 | Khomenko Bible | Ukrainian |  | no | no | NOT PD — first genuinely Catholic Ukrainian translation, too recent. Note: Kulish Bible (1903) is NOT Catholic |
 
-## The Greek is blocked on a source, not on effort (O-63, 2026-08-17)
+## The Greek source question (raised as O-63, 2026-08-17; hunt landed its first edition 2026-08-18)
 
-**What the corpus holds today:** one edition. `volume.json` declares one
-language and one edition, `WLC`, over 39 units, all 39 confirmed. Measured
-2026-08-17 by reading the file; re-run by reading it again.
+**What the corpus holds today** (measured 2026-08-18 by reading `volume.json`;
+re-run by reading it again): **two editions.** `WLC` over 39 units, all 39
+confirmed — and `BRENT`, Brenton's Septuagint, phase A: 18 books seated where
+the Greek and Masoretic versifications are a perfect key bijection, the other
+21 waiting on a real versification mapping rather than an invented alignment
+(W-87). The section below was written when the count was one and the hunt had
+not started; it is kept because its warnings and its criteria governed the
+hunt that landed BRENT, and still govern the rest of it.
 
 **Do not go looking for our earlier Greek work.** It was real — the pre-doctrine
 corpus held a Septuagint over 52 books, a complete Byzantine New Testament over
@@ -145,18 +152,22 @@ corpus held a Septuagint over 52 books, a complete Byzantine New Testament over
 unusable**, for two independent reasons. H-21 (2026-08-13) ruled that every
 edition assembled before the utterance doctrine is deleted because none can
 pass H-17; and on 2026-08-17 the pinned Greek working sources were deleted too.
-Neither the artifacts nor the inputs survive as anything we may build on. The
-next Greek edition starts from a source we do not yet have.
+Neither the artifacts nor the inputs survive as anything we may build on.
+*(WF-19 has since made this a standing rule rather than a local warning.)*
 
-**THE BLOCKER IS LICENSING, AND IT IS NOT SMALL.** Researched by Wilbur,
-2026-08-17:
+**THE LICENSING LANDSCAPE.** Researched by Wilbur, 2026-08-17–18:
 
-- **Rahlfs** — closed in every digital form. The CCAT text requires a signed
-  declaration and forbids commercial use, and every derivative inherits that.
-  Dead for us: bibliacatholica.com is a product.
-- **Swete** — the text is public domain, but it exists only as community
-  transcriptions with no self-describing index. Recoverable, at transcription
-  cost, with provenance we would have to establish ourselves.
+- **Rahlfs** — a correspondence away, not dead *(reworded 2026-08-18 under
+  W-86; this read "Dead for us: bibliacatholica.com is a product" until
+  Howell struck that premise — see the criterion note below)*. CCAT/DBG
+  permission is obtainable for free apps; what it buys is revocable goodwill
+  rather than a licence, a dependency PD sources simply do not have.
+- **Brenton** — ADOPTED as `BRENT` (W-87). The package's own copyright page
+  says Public Domain in so many words, pinned beside the source files.
+- **Swete via Open Greek and Latin** — pinned by address as candidate one
+  (W-86): CC-BY-SA-4.0, commercial redistribution permitted, verse index in
+  the bytes, the artifact's own Greek titles. One hole (Ecclesiastes has no
+  text file) and a share-alike rider that binds the text column downstream.
 - **STEPBible TAGOT** (Tyndale House, CC BY 4.0) — the right licence and the
   right shape, and **not released**. Worth watching.
 
@@ -167,6 +178,20 @@ instead of after a week of extraction:
    "non-commercial", not "academic use". This is the criterion that kills most
    digital Septuagints, and it is checked first because it is the only one that
    cannot be worked around.
+
+   **Why — re-grounded by Howell, 2026-08-18 (W-86), retracting the old
+   rationale.** This criterion was justified with "bibliacatholica.com is a
+   product," and that premise is struck: *"nobody knows"* when, how, or if
+   this makes money; we are in the *"just make a cool product"* phase; and
+   the Bible will never carry the calendar — the volumes stay financially
+   separate, no cross-subsidy framing for either. The criterion survives on
+   **optionality, deliberately purchased**: Howell registered bibliacatholica
+   .com, .org AND .net on purpose — *"We can be whatever we want."* A
+   public-domain text column is the same purchase in data. It keeps every
+   posture open at no extra cost, where a non-commercial source would quietly
+   burn the .com before anyone chose to. Prefer unencumbered sources not
+   because we are a product, but because the posture decision is Howell's to
+   make later, and a text licence must not make it for him.
 2. **A self-describing verse index** — text addressable as book/chapter/verse
    in the file itself, not a word stream needing a join against a separate
    concordance. The join is doable and it is where errors hide.
@@ -177,13 +202,15 @@ instead of after a week of extraction:
 4. **A stated relationship to the Hebrew's 39 units** — see the open question
    below, which this choice partly settles.
 
-**OPEN, AND HOWELL'S TO RULE (O-63):** is a Greek edition a second edition of
-this volume, or a second volume? The engine assumes one volume, one unit list,
-editions as columns over it. A Greek New Testament shares NO unit with the
-Tanakh's 39. A Septuagint overlaps them but brings roughly thirteen books the
-Hebrew does not have, and under H-11 those have no unit to hang on. The answer
-changes what counts as a usable source, so it is worth settling before the
-hunt rather than after.
+**RULED — H-28 (2026-08-17), the day it was raised:** a Greek edition is a
+**second edition of the Bible volume**, never a volume of its own. Volumes are
+few (Catalog, Calendar, Bible); editions are many, inside the Bible. Criterion
+4 above is accordingly a hard criterion, not a question — and BRENT's phase A
+answered it the strict way: books seat only where the versifications key
+perfectly onto the Hebrew's units, and the rest wait for a mapping rather
+than an invention. How the unit list eventually grows beyond the Tanakh's 39
+(a Greek NT shares none; a Septuagint adds roughly thirteen) is deliberately
+undesigned until the source that needs it is in hand (WF-19).
 
 ## Considered and excluded — not editions we plan to add
 
