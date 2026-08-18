@@ -24,11 +24,30 @@ let dir;
 const src = () => path.join(dir, 'src');
 const dest = () => path.join(dir, 'dest');
 
+// THE CLEARED CODE IS READ FROM THE GATE, NEVER SPELLED HERE (O-68).
+//
+// These fixtures named `WLC` as the cleared edition. When Howell cleared the
+// renamed Hebrew — `1200BCheb` under W-90 — eight of twelve cells went red,
+// having asserted the identity of a code rather than the BEHAVIOUR of the
+// gate. The behaviour is what is under test: a cleared edition deploys, an
+// uncleared one stops everything by name. Which string happens to be cleared
+// this month is the allowlist's business, and the allowlist is the subject,
+// not the fixture.
+const CLEARED = (() => {
+  const src = readFileSync(path.join(root, 'scripts/deploy-pd-filter.mjs'), 'utf-8');
+  const m = /PD_ALLOWLIST\s*=\s*new Set\(\[([^\]]*)\]\)/.exec(src);
+  const first = m && /['"]([^'"]+)['"]/.exec(m[1]);
+  if (!first) throw new Error('cannot read PD_ALLOWLIST from the gate — the fixture has nothing to clear');
+  return first[1];
+})();
+// A code the allowlist certainly does not carry, for the refusal cells.
+const UNCLEARED = 'NOT-A-CLEARED-EDITION';
+
 // Builds a fixture corpus. `editions` are the codes volume.json DECLARES;
 // `texts` are the edition directories that actually carry files — kept
 // separate on purpose, because declaration and presence disagreeing is one
 // of the cases under test.
-function build({ editions = ['WLC'], texts = { WLC: 3 }, declaresEdition = null, charts = [] } = {}) {
+function build({ editions = [CLEARED], texts = { [CLEARED]: 3 }, declaresEdition = null, charts = [] } = {}) {
   rmSync(src(), { recursive: true, force: true });
   rmSync(dest(), { recursive: true, force: true });
   mkdirSync(path.join(src(), V), { recursive: true });
@@ -72,19 +91,19 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
   after(() => rmSync(dir, { recursive: true, force: true }));
 
   it('a cleared corpus passes, and SAYS HOW MUCH IT READ', () => {
-    build({ editions: ['WLC'], texts: { WLC: 3 } });
+    build({ editions: [CLEARED], texts: { [CLEARED]: 3 } });
     const r = run();
     assert.equal(r.code, 0, r.err);
     assert.match(r.out, /records inspected AND re-verified in the output: 6/,
       'three files of two verses each — the count is the proof it looked');
-    assert.ok(existsSync(path.join(dest(), V, 'text', 'WLC', 'b0.json')));
+    assert.ok(existsSync(path.join(dest(), V, 'text', CLEARED, 'b0.json')));
   });
 
   it('ZERO RECORDS INSPECTED IS A REFUSAL — the O-56 defect itself', () => {
     // The exact shape of the original bug: a corpus whose text is not where
     // the filter looks. The old version copied everything and reported
     // success. Nothing else in this suite would have caught it.
-    build({ editions: ['WLC'], texts: {} });
+    build({ editions: [CLEARED], texts: {} });
     const r = run();
     assert.equal(r.code, 1);
     assert.match(r.err, /ZERO text records were inspected/);
@@ -92,35 +111,35 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
   });
 
   it('an edition the volume declares but does not clear STOPS THE DEPLOY BY NAME', () => {
-    build({ editions: ['WLC', 'NAB'], texts: { WLC: 2, NAB: 2 } });
+    build({ editions: [CLEARED, UNCLEARED], texts: { [CLEARED]: 2, [UNCLEARED]: 2 } });
     const r = run();
     assert.equal(r.code, 1);
     assert.match(r.err, /REFUSING/);
-    assert.match(r.err, /NAB/, 'it names the edition rather than dropping it quietly');
+    assert.match(r.err, /NOT-A-CLEARED-EDITION/, 'it names the edition rather than dropping it quietly');
     assert.match(r.err, /LICENSING decision/);
     assert.ok(!existsSync(dest()), 'and nothing at all was written');
   });
 
   it('the refusal comes BEFORE any writing, so a wrong allowlist cannot half-publish', () => {
-    build({ editions: ['WLC', 'CEI'], texts: { WLC: 5, CEI: 1 } });
+    build({ editions: [CLEARED, UNCLEARED], texts: { [CLEARED]: 5, [UNCLEARED]: 1 } });
     const r = run();
     assert.equal(r.code, 1);
-    assert.ok(!existsSync(path.join(dest(), V, 'text', 'WLC', 'b0.json')),
+    assert.ok(!existsSync(path.join(dest(), V, 'text', CLEARED, 'b0.json')),
       'not even the cleared edition is written when the volume is in question');
   });
 
   it('a text file whose own edition disagrees with its directory is refused', () => {
     // Layout and content drifting apart is not something a rights gate should
     // reconcile silently — it is a question for a person.
-    build({ editions: ['WLC'], texts: { WLC: 1 }, declaresEdition: 'NAB' });
+    build({ editions: [CLEARED], texts: { [CLEARED]: 1 }, declaresEdition: UNCLEARED });
     const r = run();
     assert.equal(r.code, 1);
     assert.match(r.err, /REFUSING/);
-    assert.match(r.err, /NAB/);
+    assert.match(r.err, /NOT-A-CLEARED-EDITION/);
   });
 
   it('the volume must declare something — an empty declaration is refused, not treated as clean', () => {
-    build({ editions: [], texts: { WLC: 1 } });
+    build({ editions: [], texts: { [CLEARED]: 1 } });
     const r = run();
     assert.equal(r.code, 1);
     assert.match(r.err, /declares no editions/);
@@ -133,7 +152,7 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
   // because it was inert and it was inert again within a week. A rights gate
   // must not depend on a file nobody maintains for its sake.
   it('RUNS WITH NO manifest.json AT ALL — the file it used to require is gone', () => {
-    build({ editions: ['WLC'], texts: { WLC: 1 }, charts: ['WLC'] });
+    build({ editions: [CLEARED], texts: { [CLEARED]: 1 }, charts: [CLEARED] });
     assert.ok(!existsSync(path.join(src(), 'manifest.json')),
       'the fixture must not carry one, or this cell proves nothing');
     const r = run();
@@ -152,16 +171,16 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
     rmSync(dest(), { recursive: true, force: true });
     mkdirSync(path.join(src(), engineVersion), { recursive: true });
     writeFileSync(path.join(src(), engineVersion, 'volume.json'),
-      JSON.stringify({ editions: [{ code: 'WLC', hasChart: true }] }));
-    const d = path.join(src(), engineVersion, 'text', 'WLC');
+      JSON.stringify({ editions: [{ code: CLEARED, hasChart: true }] }));
+    const d = path.join(src(), engineVersion, 'text', CLEARED);
     mkdirSync(d, { recursive: true });
-    writeFileSync(path.join(d, 'b0.json'), JSON.stringify({ edition: 'WLC', text: { '1:1': 'x' } }));
+    writeFileSync(path.join(d, 'b0.json'), JSON.stringify({ edition: CLEARED, text: { '1:1': 'x' } }));
     const r = run(null);
     assert.equal(r.code, 0, r.err);
   });
 
   it('refuses when it cannot determine a version at all', () => {
-    build({ editions: ['WLC'], texts: { WLC: 1 } });
+    build({ editions: [CLEARED], texts: { [CLEARED]: 1 } });
     const r = spawnSync(process.execPath, [SCRIPT, src(), dest(), ''], {
       cwd: root, encoding: 'utf-8',
       env: { ...process.env, PATH: process.env.PATH }
@@ -173,10 +192,10 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
   });
 
   it('a cleared edition keeps its chart — structure is granted on purpose (WF-14)', () => {
-    build({ editions: ['WLC'], texts: { WLC: 1 }, charts: ['WLC'] });
+    build({ editions: [CLEARED], texts: { [CLEARED]: 1 }, charts: [CLEARED] });
     const r = run();
     assert.equal(r.code, 0, r.err);
-    assert.ok(existsSync(path.join(dest(), V, 'charts', 'WLC', 'index.json')),
+    assert.ok(existsSync(path.join(dest(), V, 'charts', CLEARED, 'index.json')),
       'a chart is groups and seats, not content — and its edition ships');
   });
 
@@ -198,21 +217,21 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
     // in the suite whose whole subject is instruments that pass over a vacuum —
     // and writing it correctly is what exposed that exclusion consulted the
     // declaration at all.
-    build({ editions: ['WLC'], texts: { WLC: 1, NAB: 1 }, charts: ['WLC', 'NAB'] });
+    build({ editions: [CLEARED], texts: { [CLEARED]: 1, [UNCLEARED]: 1 }, charts: [CLEARED, UNCLEARED] });
     const r = run();
     assert.equal(r.code, 0, r.err);
-    assert.ok(existsSync(path.join(dest(), V, 'text', 'WLC', 'b0.json')), 'the cleared edition ships');
-    assert.ok(existsSync(path.join(dest(), V, 'charts', 'WLC', 'index.json')), 'with its chart');
-    assert.ok(!existsSync(path.join(dest(), V, 'text', 'NAB')), 'the uncleared text never reaches the output');
-    assert.ok(!existsSync(path.join(dest(), V, 'charts', 'NAB')), 'and neither does its chart');
+    assert.ok(existsSync(path.join(dest(), V, 'text', CLEARED, 'b0.json')), 'the cleared edition ships');
+    assert.ok(existsSync(path.join(dest(), V, 'charts', CLEARED, 'index.json')), 'with its chart');
+    assert.ok(!existsSync(path.join(dest(), V, 'text', UNCLEARED)), 'the uncleared text never reaches the output');
+    assert.ok(!existsSync(path.join(dest(), V, 'charts', UNCLEARED)), 'and neither does its chart');
   });
 
   it('the deployable copy carries the structure, and the text it carries is cleared', () => {
-    build({ editions: ['WLC'], texts: { WLC: 2 } });
+    build({ editions: [CLEARED], texts: { [CLEARED]: 2 } });
     const r = run();
     assert.equal(r.code, 0, r.err);
-    const unit = JSON.parse(readFileSync(path.join(dest(), V, 'text', 'WLC', 'b1.json'), 'utf8'));
-    assert.equal(unit.edition, 'WLC');
+    const unit = JSON.parse(readFileSync(path.join(dest(), V, 'text', CLEARED, 'b1.json'), 'utf8'));
+    assert.equal(unit.edition, CLEARED);
     assert.equal(Object.keys(unit.text).length, 2, 'a cleared edition ships whole — this filter removes nothing from it');
   });
 });
