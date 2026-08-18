@@ -102,7 +102,7 @@ Generated 2026-08-18 from 177 entries.
 | O-60 | OPEN | THE DEPLOY SCRIPTS COULD PUBLISH BY ACCIDENT — a bare command sent four sites live |
 | O-61 | CLOSED | A GREEN SUITE OVER A STALE BUNDLE — the tests read the source, the phone reads the build |
 | O-62 | OPEN | WHAT THE GREEK WILL HIT — four notes for Wilbur before the second edition starts |
-| O-63 | OPEN | THE PLAYLIST WAS FALSE IN SIXTEEN PLACES, AND THE TEST THAT WATCHES IT CANNOT SEE CONTENT |
+| O-63 | VERIFIED | THE PLAYLIST WAS FALSE IN SIXTEEN PLACES, AND THE TEST THAT WATCHES IT CANNOT SEE CONTENT |
 | O-64 | RULED | THE TAG IS GONE AND THE DATA IS NOT — the stake missed |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
