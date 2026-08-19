@@ -33,10 +33,13 @@ answers, which a flat list did not, is **is this authoritative?**
 - **a. Blueprints** — defining documents. What is *true*. **Every live
   document under `docs/` is a Blueprint unless it is named an SOP below or
   sits in `docs/archive/`.** Named examples, not the whole list:
-  `ARCHITECTURE.md`, `PREMISE.md`, `WILBUR-FORMAT.md`, `FEEL.md`.
+  `ARCHITECTURE.md`, `PREMISE.md`, `FEEL.md`.
   *(`THE-PLAYLIST.md` was named here until 2026-08-18, when Howell moved it
   to cargo under W-89 — it is a Blueprint still, but not one this repository
   holds or audits.)*
+  *(`WILBUR-FORMAT.md` was named here until 2026-08-19, when W-100 withdrew
+  the format as a separate intellectual property and this repository's copy
+  was deleted. Cargo's copy is the working spec and audits there.)*
   *(The rule is stated as a default because the old form named six documents
   while thirteen live ones had no category at all — including `PREMISE.md`,
   which is "above architecture and above every phase" — while WF-13 claimed

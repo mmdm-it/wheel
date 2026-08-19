@@ -42,40 +42,35 @@ You may use, study, modify, and redistribute the engine under the terms of
 the GPL. If you distribute software built from it, you must publish your
 source under the same license. That is the point.
 
-1b. THE DOCUMENTATION — PUBLISHED, RESERVED, WITH ONE GRANT
------------------------------------------------------------
-The documents in docs/ are published so the engine can be understood
-and the format cited. Publication is not a license: their text is
-© MMdM, all rights reserved, and §0 applies.
+1b. THE DOCUMENTATION — PUBLISHED AND RESERVED
+----------------------------------------------
+The documents in docs/ are published so the engine can be understood.
+Publication is not a license: their text is © MMdM, all rights
+reserved, and §0 applies.
 
 The same terms cover the repository's own documentation and metadata:
 README.md, CHANGELOG.md, and the deposit metadata CITATION.cff and
 .zenodo.json. These describe the published work, so they are published
 with it and reserved with it.
 
-One deliberate exception. THE WILBUR FORMAT described in
-docs/WILBUR-FORMAT.md MAY BE FREELY IMPLEMENTED by anyone, in any
-language, for any purpose, without permission or fee. What is granted
-is the FORMAT — the model, the schema, the contract. What is reserved
-is the TEXT of the document describing it.
+THE WILBUR FORMAT IS NO LONGER A SEPARATE INTELLECTUAL PROPERTY, and
+this section no longer carries a grant of one. Howell's ruling,
+2026-08-19 (W-100): "I no longer consider the format worth protecting.
+I withdraw the WILBUR format as a separate intellectual property."
+docs/WILBUR-FORMAT.md is gone from this repository with the same
+ruling; the working spec lives with the data, privately, and is an
+ordinary engineering note rather than a publication.
 
-The grant includes the MACHINE-READABLE SCHEMAS that express the
-format. A format one may implement but not validate against is a
-format one may only implement wrongly.
-
-A format nobody may implement is not a format; it is a document about
-one. This grant is also §4's logic applied to structure: the defensive
-publications exist so that nobody, MMdM included, may patent the
-methods, and a specification that cannot be implemented does not serve
-that purpose.
-
-A second deliberate publication. THE EDITORIAL-POLICY SECTIONS of
-docs/WILBUR-FORMAT.md — the qere/ketiv policy, its divergence counts,
-the quoted renderings that illustrate it, and the seat audit's named
-divergences — are published on purpose. A declared policy is meant to
-be read, and a specification teaching its own honesty requirement on
-real cases is the reason to publish it at all. As with the format, what
-is granted is the POLICY; the TEXT of the document remains reserved.
+WHAT WAS GRANTED STAYS GRANTED. Version 1.0 of that document was
+published on 2026-08-06 under the terms above — the format freely
+implementable by anyone, in any language, for any purpose, without
+permission or fee, schemas included. Anyone holding that text holds
+that grant, and nothing here retracts it. A grant already made is not
+un-made by removing the paragraph that made it, and pretending
+otherwise would be worse than useless: it would be a false statement
+about what was published. What has ended is the FORWARD posture — the
+format is not maintained, versioned, or defended as an asset, and no
+new grant is offered because there is no longer an asset to grant.
 
 And one standing limit on every public document, this one included:
 WORKED EXAMPLES QUOTE SCRIPTURE ONLY FROM THE GRANTED FIXTURE SET —
