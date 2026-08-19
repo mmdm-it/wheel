@@ -432,6 +432,62 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
 // An edition that declares NO `proofreadUnits` is unfiltered: it is either
 // fully proofread or not yet marked per book, and in neither case may this
 // invent a restriction the data did not state.
+// DOES THIS EDITION HOLD THIS UNIT? (O-71, ruled 2026-08-19.)
+//
+// `expandVolumeSeats` has always enforced "ABSENT FROM THE CHART IS ABSENT
+// FROM THE EDITION" at the verse level, inline. Nothing above it enforced
+// anything: the book ring filtered by PROOFREAD-ness and the testament ring
+// filtered by nothing at all, so with two disjoint editions in the volume the
+// Greek showed all 39 Tanakh books — named in Greek, sized by prominence,
+// entering nothing — and the Hebrew showed all 27 of the New Testament.
+//
+// Membership is one question and it now has one answer, hoisted out of the
+// seat expander so every ring asks the same thing the expander will. A ring
+// that offers a book whose verses the expander then refuses is a container
+// kept alive for no one, which is the shape the book ring's own comment
+// already named while guarding the wrong predicate.
+//
+// The SPINE is part of the test because the expander requires it: a unit with
+// a chart and no spine is an unfinished increment, and it must be absent from
+// the ring for the same reason it is absent from the chain.
+export function volumeHoldsUnit(volume, edition, unitId) {
+  if (!volume || !edition || !unitId) return false;
+  const chart = typeof volume.chartFor === 'function' ? volume.chartFor(unitId, edition) : null;
+  if (!chart || !Array.isArray(chart.seats) || !chart.seats.length) return false;
+  const spine = typeof volume.spineFor === 'function' ? volume.spineFor(unitId) : null;
+  return Boolean(spine && Array.isArray(spine.utterances) && spine.utterances.length);
+}
+
+// The units this edition holds, as a set — the ring-shaped form of the answer
+// above, for the callers that filter a list rather than test one id.
+//
+// THREE ANSWERS, AND THE THIRD IS THE ONE THAT MATTERS:
+//   a populated Set — these units and no others;
+//   an EMPTY Set    — this edition holds nothing, a real answer with real
+//                     consequences (an empty ring), not a failure;
+//   `null`          — THIS VOLUME CANNOT ANSWER. It carries no enumeration to
+//                     walk or no `chartFor` to ask, so it has not been built
+//                     to model membership at all. Callers do not filter.
+//
+// The third case is deliberate and it is `confirmedUnitsOf`'s exact shape, for
+// the same reason: a missing instrument must never be read as a measurement of
+// zero. Collapsing it into the empty Set would make every fixture that models
+// order or sections — and never charts — silently produce an empty ring, and
+// a filter that removes everything looks identical to a corpus that holds
+// nothing. That is the failure this whole ruling is about, and it would have
+// arrived inside the fix for it.
+export function chartedUnitsOf(volume, edition) {
+  if (!volume || !edition) return null;
+  if (typeof volume.chartFor !== 'function') return null;
+  const units = volume.units;
+  if (!Array.isArray(units) || !units.length) return null;
+  const held = new Set();
+  for (const unit of units) {
+    if (volumeHoldsUnit(volume, edition, unit.id)) held.add(unit.id);
+  }
+  return held;
+}
+
 export function confirmedUnitsOf(volume, edition) {
   const declared = (volume?.editions || []).find(e => e?.code === edition);
   const units = declared?.proofreadUnits;
@@ -453,16 +509,33 @@ export function confirmedUnitsOf(volume, edition) {
 // bug IS that omission, arriving the first time it was possible.
 //
 // So: an edition carrying per-unit marks is finished when those marks cover
-// every unit the volume enumerates. An edition carrying NO marks falls back to
-// its declared flag, which is what every other edition still relies on.
+// every unit THE EDITION HOLDS. An edition carrying NO marks falls back to its
+// declared flag, which is what every other edition still relies on.
+//
+// THE DENOMINATOR IS THE EDITION'S, NOT THE VOLUME'S (O-71, 2026-08-19). It
+// was the volume's enumeration, and that was indistinguishable from correct
+// for as long as the volume held one edition. The second edition arrived and
+// widened the enumeration from 39 units to 66 without touching the Hebrew, so
+// a finished edition began reading 39-of-66 and Howell met NOT PROOFREAD at
+// the testament ring of an edition where every book he holds is confirmed.
+//
+// This is the 2026-08-17 bug returning through a door the fix did not cover:
+// then the fault was asking the FLAG instead of deriving; now it is deriving
+// against the wrong set. Both are the same mistake about whose question it is.
+// An edition is finished when ITS work is finished, and books it has never
+// held are not its work.
 export function isEditionFullyConfirmed(volume, edition) {
   const confirmed = confirmedUnitsOf(volume, edition);
   if (confirmed === null) {
     const declared = (volume?.editions || []).find(e => e?.code === edition);
     return declared?.proofread === true;
   }
-  const units = volume?.units || [];
-  return units.length > 0 && units.every(u => confirmed.has(u.id));
+  // A volume that cannot say what the edition holds falls back to its own
+  // enumeration — the pre-O-71 denominator, which is right whenever there is
+  // no better answer to be had.
+  const held = chartedUnitsOf(volume, edition);
+  const denominator = held ? [...held] : (volume?.units || []).map(u => u.id);
+  return denominator.length > 0 && denominator.every(id => confirmed.has(id));
 }
 
 export function isUnitVisible(volume, edition, unitId, { includeUnconfirmed = false } = {}) {
@@ -501,20 +574,19 @@ export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false 
       const { book, testament } = entry;
       // Unconfirmed is UNREACHABLE, not merely marked (H-25 point 4).
       if (confirmed && !confirmed.has(book.id)) continue;
-      const chart = volume.chartFor(book.id, edition);
-      const spine = volume.spineFor(book.id);
       // ABSENT FROM THE CHART IS ABSENT FROM THE EDITION. The chart's word is
       // law and there is no per-unit fallback — membership is the edition's
       // own, and manufacturing seats for it would be the identity chart
       // returning under another name (H-2).
       //
-      // THE SPINE IS REQUIRED HERE AND NO LONGER CONSULTED (W-96 / O-69). It
-      // is checked because a unit without one is an unfinished increment, not
-      // because anything below reads it: order comes from `seats[]` now, and
-      // the spine holds no order any edition is entitled to inherit. Stated
-      // rather than left to inference — a variable read only by its own guard
-      // looks load-bearing to the next person, and this one is not.
-      if (!chart?.seats?.length || !spine?.utterances?.length) continue;
+      // THE TEST MOVED OUT, AND THAT IS THE POINT (O-71). It used to live
+      // here, inline, and so answered for the chain alone while the rings
+      // above answered differently or not at all. It is now the one predicate
+      // every level asks. Its spine clause is unchanged from W-96 / O-69: a
+      // unit without one is an unfinished increment, and nothing below reads
+      // it — order comes from `seats[]`.
+      if (!volumeHoldsUnit(volume, edition, book.id)) continue;
+      const chart = volume.chartFor(book.id, edition);
 
       // CONTAINER RANGES INDEX THE CHART'S OWN SEATS, NOT THE SPINE (W-96,
       // ruled 2026-08-18; O-69 lands the engine half).

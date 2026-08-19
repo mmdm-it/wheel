@@ -1,5 +1,6 @@
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
 import { projectContainers } from '../core/unit-source.js';
+import { chartedUnitsOf } from './bible-volume.js';
 // Volume-specific chain/build helpers extracted from the host page.
 // These remain pure functions over manifests and options.
 
@@ -736,11 +737,31 @@ export function buildBibleBooks(manifest, namesMap = {}) {
   return items;
 }
 
-export function buildBibleTestaments(manifest, namesMap = {}, { testamentId, translationName = '' } = {}) {
+export function buildBibleTestaments(manifest, namesMap = {}, { testamentId, translationName = '', edition = null } = {}) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible) return { items: [], selectedIndex: 0, preserveOrder: true };
   const testamentNames = namesMap?.testaments || {};
+  // A TESTAMENT THE EDITION DOES NOT REACH IS NOT ON THE RING (O-71).
+  //
+  // This took no edition at all — every testament the volume enumerates, in
+  // every edition, forever. That was invisible while the volume held one
+  // edition covering both. It stopped being invisible the moment a New
+  // Testament arrived beside an Old Testament-only Hebrew: the reader in
+  // Greek was offered a Παλαιὰ Διαθήκη holding thirty-nine books the Greek
+  // has never had, and the reader in Hebrew a הברית החדשה holding twenty-seven.
+  //
+  // A testament earns its node by holding at least one book the edition
+  // holds. With no edition in hand — the tests, and any caller that has not
+  // committed one — nothing is filtered, which is the old behaviour exactly.
+  const volume = manifest?.__wallVolume;
+  const held = edition && volume ? chartedUnitsOf(volume, edition) : null;
+  const reached = tid => {
+    if (!held) return true;
+    const books = Object.keys(bible.testaments?.[tid]?.books || {});
+    return books.some(id => held.has(id));
+  };
   const items = Object.entries(bible.testaments || {})
+    .filter(([tid]) => reached(tid))
     .sort(([, a], [, b]) => (a?.sort_number ?? 0) - (b?.sort_number ?? 0))
     .map(([tid, testament], idx) => ({
       id: tid,

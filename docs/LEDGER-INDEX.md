@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-19 from 197 entries.
+Generated 2026-08-19 from 209 entries.
 
 | id | status | title |
 |---|---|---|
@@ -110,6 +110,7 @@ Generated 2026-08-19 from 197 entries.
 | O-68 | OPEN | THE HEBREW IS CLEARED UNDER ITS NEW NAME — a licence re-asserted, not re-decided |
 | O-69 | VERIFIED | W-96'S ENGINE HALF — and it moves a guarantee across the wall, which nobody noticed |
 | O-70 | VERIFIED | WE ARE PUBLISHING A FORMAT SPEC OUR OWN ENGINE VIOLATES — and there are two copies of it |
+| O-71 | FIXED | EACH EDITION WAS DISPLAYING THE HALF IT DOES NOT HAVE |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -196,7 +197,7 @@ Generated 2026-08-19 from 197 entries.
 | W-84 | OPEN | THE STALE-.GZ COUNTER MEASURES TIMESTAMPS AND REPORTS THEM AS CONTENT |
 | W-85 | OPEN | FN-4'S CARGO HALF — the Old Testament stops wearing the Passion |
 | W-86 | OPEN | GREEK CANDIDATE ONE, PINNED BY ADDRESS — Swete via Open Greek and Latin |
-| W-87 | OPEN | BRENTON IS ADOPTED — phase A seats 18 books of Greek |
+| W-87 | SUPERSEDED BY W | BRENTON IS ADOPTED — phase A seats 18 books of Greek |
 | W-88 | OPEN | THE GREEK IS WITHDRAWN — a partial edition is of no use to anyone |
 | W-89 | OPEN | THE PLAYLIST CROSSES THE WALL — a file that could not be checked where it lived |
 | W-90 | OPEN | EDITION CODES ARE MINTED — and the rename found two dead importers |
@@ -204,8 +205,19 @@ Generated 2026-08-19 from 197 entries.
 | W-92 | OPEN | THE PLAYLIST SHEDS ITS WORKING — 406 lines to 258, nothing lost |
 | W-93 | OPEN | THE CORRELATION CELL EXISTS — and proving it red found two holes in itself |
 | W-94 | OPEN | THE GREEK'S ALIGNMENT SOURCE IS FOUND — TVTMS, and the blocker moves to our side |
-| W-95 | OPEN | THE SEATING IS BUILT — and it reaches 21 books of 39, for a reason that is not a bug |
+| W-95 | SUPERSEDED BY W | THE SEATING IS BUILT — and it reaches 21 books of 39, for a reason that is not a bug |
 | W-96 | OPEN | THE SPINE BECOMES A SUPERSET, AND ORDER BELONGS TO THE EDITION |
 | W-97 | OPEN | ROW 2'S MAP IS LXX — the playlist is chronological, and a witness is not the work |
 | W-98 | OPEN | A FOLDED SEAT'S CONTAINER IS THE CHART-WRITER'S DECISION NOW — W-96's cost lands on the generator |
-| W-99 | OPEN | THE GREEK'S CODE IS RULED — 250BCgrc, and the Map stays LXX |
+| W-99 | SUPERSEDED BY W | THE GREEK'S CODE IS RULED — 250BCgrc, and the Map stays LXX |
+| W-100 | RULED | THE WILBUR FORMAT IS WITHDRAWN AS A SEPARATE INTELLECTUAL PROPERTY — Howell's ruling, and the whole deliberation below is retired by it |
+| W-101 | RULED | TWO READMEs, VERY SHORT — Howell, 2026-08-19 |
+| W-102 | RULED | THE CARGO DOCUMENTATION WRAP-UP — rewrite, archive, and a machine that refuses |
+| W-103 | SUPERSEDED BY W | THE LXX IS KNOWN — and enters the volume whole as 250BCgrc |
+| W-104 | SUPERSEDED BY W | THE GREEK PROOFREAD PLAN — 63 ranked seats, and the comparator is the same witness |
+| W-105 | RULED | KNOWN FLIPS TO NO THE MOMENT AN ISSUE IS SEEN — before investigating, not after |
+| W-106 | SUPERSEDED BY W | THE COMPARATOR IS NOT THE SAME WITNESS — my error, and it cost a false alarm |
+| W-107 | RULED AND DONE | BRENTON IS UNPINNED, AND THE SEPTUAGINT LEAVES THE VOLUME |
+| W-108 | RULED AND DONE | THE GREEK NEW TESTAMENT IS KNOWN — the 1904 Patriarchal Text, seated as 50grc |
+| W-109 | RULED AND DONE | LEAVES ARE COUNTED FROM THE SPINE, NOT FROM THE FIRST EDITION |
+| W-110 | RULED | THE GREEK NEW TESTAMENT STAYS KNOWN AND UNPROOFREAD — an engine bug is not a corpus issue |
