@@ -273,9 +273,11 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     // IT NO LONGER CARRIES THE ORDER (W-96, 2026-08-18). This comment said
     // "it carries the order, and nothing else does" until Wilbur caught it
     // during the verification of the very PR that retired the doctrine — the
-    // same leftover shape as WILBUR-FORMAT's line 135, which outlived O-27 by
-    // five days in both our sightlines. A retired rule surviving in the
-    // comment of its own repeal is how it comes back.
+    // same leftover shape as the format spec's line 135, which outlived O-27
+    // by five days in both our sightlines. A retired rule surviving in the
+    // comment of its own repeal is how it comes back. (That spec left this
+    // repository under W-100 and lives with the data now; the lesson is why
+    // this comment says so rather than pointing at a path.)
     //
     // What the spine is NOW: the record of every utterance a unit holds,
     // across every edition — under W-96 a SUPERSET, in no edition's sequence.
