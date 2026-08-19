@@ -109,7 +109,7 @@ Generated 2026-08-19 from 197 entries.
 | O-67 | CLOSED | THE READ-AHEAD NEVER FIRED, NOT ONCE — two defects, either one fatal |
 | O-68 | OPEN | THE HEBREW IS CLEARED UNDER ITS NEW NAME — a licence re-asserted, not re-decided |
 | O-69 | VERIFIED | W-96'S ENGINE HALF — and it moves a guarantee across the wall, which nobody noticed |
-| O-70 | OPEN | WE ARE PUBLISHING A FORMAT SPEC OUR OWN ENGINE VIOLATES — and there are two copies of it |
+| O-70 | VERIFIED | WE ARE PUBLISHING A FORMAT SPEC OUR OWN ENGINE VIOLATES — and there are two copies of it |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
