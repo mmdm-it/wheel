@@ -10,6 +10,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as bibleVolumeModule from '../src/adapters/bible-volume.js';
 import { projectContainers } from '../src/core/unit-source.js';
+import { buildBibleVerseChain } from '../src/navigation/cousin-builder.js';
+import { getBibleChapters } from '../src/adapters/volume-helpers.js';
 
 const { loadBibleVolume } = bibleVolumeModule;
 
@@ -307,5 +309,84 @@ describe('the wall reader — A PARTIAL EDITION MUST NOT POISON THE FULL ONE (O-
     assert.ok(records['1:1'] && records['1:2'], 'both addresses present');
     assert.ok(records['1:2'].seq < records['1:1'].seq,
       'the chart seats 1:2 first, so its seq must be lower — the order never arriving is the silent miss');
+  });
+});
+
+// THE SPINE IS A SUPERSET AND THE ORDER IS THE EDITION'S (W-96, ruled by
+// Howell 2026-08-18; engine half O-69).
+//
+// The spine holds every leaf ANY edition attests, in no edition's order. Three
+// places in the engine read a seat's position out of the spine, and every one
+// of them was right only while the spine was a single tradition's order:
+//
+//   1. containers were filled by SPINE ordinal, so a reordering edition's own
+//      chapters fell outside every container it declared and vanished;
+//   2. the coverage check counted the SPINE's leaves, so any edition holding
+//      fewer than the superset threw and failed the boot;
+//   3. `unitOrdinal` carried the SPINE ordinal, so the read-ahead measured the
+//      reader's distance from the end of a tradition they are not reading.
+//
+// This fixture is the smallest one that can tell the two coordinate systems
+// apart: a spine of six leaves, an edition seating four of them IN A DIFFERENT
+// ORDER — its seats sit at spine positions 5, 6, 1, 2. Under the old rule the
+// chain lost half the edition; under the new one it reads 1,2,3,4.
+describe('a SUPERSET spine, and an edition that reorders it (W-96 / O-69)', () => {
+  const SUPERSET = ['u-a', 'u-b', 'u-c', 'u-d', 'u-e', 'u-f'];
+  const SEATS = [
+    { label: '1', utterances: ['u-e'] },   // spine position 5
+    { label: '2', utterances: ['u-f'] },   // 6
+    { label: '3', utterances: ['u-a'] },   // 1
+    { label: '4', utterances: ['u-b'] }    // 2
+  ];
+  const CHART = { groups: [{ label: 'I', from: 1, to: 2 }, { label: 'II', from: 3, to: 4 }], seats: SEATS };
+  const book = { id: 'U1', leaves: 6, order: 0, testamentId: 'T1' };
+  const volume = {
+    testaments: [{ id: 'T1', order: 0, books: [book] }],
+    units: [book],
+    editions: [{ code: 'ED', language: 'english', hasChart: true, proofread: true }],
+    namesByLanguage: { english: { testaments: { T1: 'First' }, books: { U1: 'Unit' } } },
+    displayConfig: {},
+    spineFor: () => ({ utterances: SUPERSET }),
+    chartFor: (id, ed) => (ed === 'ED' ? CHART : null),
+    textFor: () => null,
+    has: id => id === 'U1',
+    isFullyConfirmed: () => true,
+    bookOrderFor: () => ['U1'],
+    sectionOf: () => null,
+    toRoot: () => ({ display_config: {}, testaments: { T1: { sort_number: 0, books: { U1: { sort_number: 0 } } } } })
+  };
+  const manifest = { Gutenberg_Bible: volume.toRoot() };
+  Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+
+  const seats = () => (buildBibleVerseChain(manifest, { edition: 'ED' }).items || []).filter(Boolean);
+
+  it('EVERY SEAT SURVIVES — the old rule dropped the ones the spine ordered late', () => {
+    const got = seats().map(s => s.name);
+    assert.deepEqual(got, ['1', '2', '3', '4'],
+      'all four of the edition\'s seats must appear, in the edition\'s own order');
+  });
+
+  it('containers hold what the EDITION says, not what the spine implies', () => {
+    const byContainer = {};
+    for (const s of seats()) {
+      const key = s.meta.chapterLabel;
+      (byContainer[key] ||= []).push(s.name);
+    }
+    assert.deepEqual(byContainer, { I: ['1', '2'], II: ['3', '4'] },
+      'container I holds the edition\'s first two seats — by spine position it took its last two');
+  });
+
+  it('unitOrdinal counts the EDITION\'s seats, so the read-ahead measures the right distance', () => {
+    const got = seats().map(s => s.meta.unitOrdinal);
+    assert.deepEqual(got, [1, 2, 3, 4],
+      'spine positions here are 5,6,1,2 — carrying those would misfire the read-ahead');
+  });
+
+  it('THE COVERAGE CHECK COUNTS THIS EDITION, not the superset it sits in', () => {
+    // Four seats, four leaves covered, six in the spine. Counting the spine
+    // threw "containers cover 4 leaves but the unit has 6" and failed the boot.
+    assert.equal(seats().length, 4);
+    assert.equal(getBibleChapters(manifest, { id: 'U1' }, null, 'book', 'ED').length, 2,
+      'both containers project; counting the spine would have thrown instead');
   });
 });

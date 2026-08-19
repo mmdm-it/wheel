@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-18 from 186 entries.
+Generated 2026-08-19 from 194 entries.
 
 | id | status | title |
 |---|---|---|
@@ -108,6 +108,7 @@ Generated 2026-08-18 from 186 entries.
 | O-66 | VERIFIED | THE RIGHTS GATE COULD NOT RUN AT ALL — inert again, one week after O-56 un-inerted it |
 | O-67 | CLOSED | THE READ-AHEAD NEVER FIRED, NOT ONCE — two defects, either one fatal |
 | O-68 | OPEN | THE HEBREW IS CLEARED UNDER ITS NEW NAME — a licence re-asserted, not re-decided |
+| O-69 | OPEN | W-96'S ENGINE HALF — and it moves a guarantee across the wall, which nobody noticed |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -198,3 +199,10 @@ Generated 2026-08-18 from 186 entries.
 | W-88 | OPEN | THE GREEK IS WITHDRAWN — a partial edition is of no use to anyone |
 | W-89 | OPEN | THE PLAYLIST CROSSES THE WALL — a file that could not be checked where it lived |
 | W-90 | OPEN | EDITION CODES ARE MINTED — and the rename found two dead importers |
+| W-91 | OPEN | THE PLAYLIST'S FIELDS ARE SETTLED — nine columns, and Map means what we SHOW |
+| W-92 | OPEN | THE PLAYLIST SHEDS ITS WORKING — 406 lines to 258, nothing lost |
+| W-93 | OPEN | THE CORRELATION CELL EXISTS — and proving it red found two holes in itself |
+| W-94 | OPEN | THE GREEK'S ALIGNMENT SOURCE IS FOUND — TVTMS, and the blocker moves to our side |
+| W-95 | OPEN | THE SEATING IS BUILT — and it reaches 21 books of 39, for a reason that is not a bug |
+| W-96 | OPEN | THE SPINE BECOMES A SUPERSET, AND ORDER BELONGS TO THE EDITION |
+| W-97 | OPEN | ROW 2'S MAP IS LXX — the playlist is chronological, and a witness is not the work |
