@@ -1,6 +1,6 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
 import { chaptersFromSeats } from './seating-chart.js';
-import { expandVolumeSeats, confirmedUnitsOf } from '../adapters/bible-volume.js';
+import { expandVolumeSeats, confirmedUnitsOf, chartedUnitsOf } from '../adapters/bible-volume.js';
 import { proofreadOverrideActive } from '../core/lan-gate.js';
 
 const GAP = null;
@@ -83,16 +83,35 @@ export function buildBibleVerseChain(manifest, { initialVerseId = null, edition 
 export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initialItemId, names = {}, edition = null } = {}) {
   const bible = manifest?.Gutenberg_Bible;
   if (!bible) return { items: [], selectedIndex: 0, preserveOrder: true };
+  // WHAT THIS RING MAY OFFER IS TWO QUESTIONS, AND IT ONLY ASKED ONE.
+  //
   // UNCONFIRMED BOOKS ARE NOT ON THE RING (H-25 point 4, Howell 2026-08-15).
-  // Without the flag the reader reaches the confirmed books and nothing else,
-  // so this ring must not offer a book whose verses the seat expander will
-  // refuse to produce — that would be a container kept alive for no one, the
-  // shape Wilbur named when he ruled charts out of an uncleared deploy.
-  // With the flag, or for an edition declaring no per-book marks, nothing is
-  // filtered and the ring is exactly what it always was.
-  const visible = edition && !proofreadOverrideActive()
+  // Without the flag the reader reaches the confirmed books and nothing else.
+  // With the flag, or for an edition declaring no per-book marks, that filter
+  // lifts — and until O-71 the lifting left NOTHING behind it.
+  //
+  // BOOKS THE EDITION DOES NOT HOLD ARE NOT ON THE RING EITHER (O-71,
+  // 2026-08-19). This comment already stated the standard — "must not offer a
+  // book whose verses the seat expander will refuse to produce" — and then
+  // guarded proofread-ness, which is a different fact that happened to
+  // coincide while the volume held one edition. With the Hebrew and the Greek
+  // in the volume, and the proofread flag on (the Greek is not servable
+  // without it), the filter was null and the ring offered all sixty-six: the
+  // Greek showed the whole Tanakh named in Greek, the Hebrew the whole New
+  // Testament named in Hebrew, every node dressed and sized and entering
+  // nothing. Precisely the container kept alive for no one.
+  //
+  // The membership filter is UNCONDITIONAL — it is not a development view's
+  // concern, and no flag may lift it, because a book the edition has never
+  // held has nothing to show anyone. The proofread filter narrows it further
+  // when the flag is off.
+  const held = edition ? chartedUnitsOf(manifest?.__wallVolume, edition) : null;
+  const confirmedOnly = edition && !proofreadOverrideActive()
     ? confirmedUnitsOf(manifest?.__wallVolume, edition)
     : null;
+  const visible = held && confirmedOnly
+    ? new Set([...held].filter(id => confirmedOnly.has(id)))
+    : (held || confirmedOnly);
   const testaments = Object.entries(bible.testaments || {});
   const resolveTestamentId = () => {
     if (bookId) {

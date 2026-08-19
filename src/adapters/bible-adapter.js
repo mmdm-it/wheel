@@ -678,7 +678,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       }
       const { items: testamentItems, selectedIndex: testamentSelected } = buildBibleTestaments(manifest, namesMap, {
         testamentId,
-        translationName
+        translationName,
+        // O-71: the ring holds the testaments this edition reaches.
+        edition: options?.activeEdition || options?.translation || null
       });
       if (!testamentItems.length) return false;
       bibleMode = 'testament';
@@ -866,7 +868,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // same instinct the catalog's cylinder counts already follow.
     shouldCenterLabel: ({ item } = {}) => item?.level === 'chapter' || item?.level === 'verse',
     layoutBindings: {
-      getBibleTestaments: () => buildBibleTestaments(manifest, namesMap, { translationName }),
+      getBibleTestaments: () => buildBibleTestaments(manifest, namesMap, {
+        translationName,
+        // O-71: same question, same answer, wherever it is asked.
+        edition: options?.activeEdition || options?.translation || null
+      }),
       bibleModeRef: () => bibleMode,
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
