@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-19 from 213 entries.
+Generated 2026-08-19 from 214 entries.
 
 | id | status | title |
 |---|---|---|
@@ -115,6 +115,7 @@ Generated 2026-08-19 from 213 entries.
 | O-70 | VERIFIED | WE ARE PUBLISHING A FORMAT SPEC OUR OWN ENGINE VIOLATES — and there are two copies of it |
 | O-71 | FIXED | EACH EDITION WAS DISPLAYING THE HALF IT DOES NOT HAVE |
 | O-72 | FIXED | THE CHOOSER NOW OFFERS ONLY THE EDITIONS THAT HOLD WHERE YOU STAND |
+| O-73 | FIXED | THE THIRD GRANT NEARLY LEFT NOTICE WITHOUT A SENTENCE — and W-100 never covered it |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
