@@ -1,5 +1,23 @@
 # The WILBUR format — 1.0
 
+*Last audited: 2026-08-19 by Orville — Q4 (does it use vocabulary a later
+ruling abolished?). Findings in O-70: two, both found and both marked below.*
+
+> **THIS IS A PUBLIC EXCERPT, AND IT IS NOT THE AUTHORITATIVE COPY (O-70).**
+> The maintained document lives in the data repository, where the format it
+> describes can be checked against the corpus that implements it. This copy
+> exists because the FORMAT is granted to anyone (see the licence note below)
+> and the engine repository is the public one — structure is given away on
+> purpose, content is not (WF-14).
+>
+> **It was last synced from the authoritative copy on 2026-08-11**, and by
+> 2026-08-18 it had drifted: two claims below were retired by W-96 and are
+> marked where they sit. **Where the two copies disagree, the data
+> repository's is right.** Whether this excerpt should be regenerated,
+> replaced by a pointer, or dropped is Howell's to rule — a hand-kept second
+> copy of a governing document is the shape of defect this project keeps
+> finding, and naming it here is not the same as fixing it.
+
 **A format for hierarchical corpora that hold several parallel views of the
 same material, and the contract by which the Wheel displays them.**
 
@@ -133,15 +151,38 @@ projection that can be edited independently of its source is a lie waiting.
 
 ### Containers are the chart's, per edition — RULED 2026-08-11 (O-44, H-11)
 
-**The spine is flat.** It is an ordered list of the unit's leaves and nothing
-else: no chapters, no groupings, no boundaries, no default division. A unit's
-spine states *what the utterances are and in what order* — never how anyone
-gathers them.
+**The spine is flat.** It is a list of the unit's leaves and nothing else: no
+chapters, no groupings, no boundaries, no default division. A unit's spine
+states *what the utterances are* — never how anyone gathers them.
+
+> **AMENDED 2026-08-18 (W-96).** This read "what the utterances are *and in
+> what order*". The spine is now a **SUPERSET** — every leaf any edition
+> attests — and its sequence is **no edition's reading order**. The order a
+> reader moves through belongs to the edition, declared by its chart's
+> `seats[]`. Howell's words: *"There is no 'our'. There are only utterances,
+> which are ethereal, and belong to no tradition."*
 
 **Every container level below the declared unit is declared by the SEATING
 CHART, per edition.** What the Bible calls a chapter is not a level of
 storage and not a property of the text; it is one edition's grouping of the
 unit's leaves, and a different edition may group the same leaves differently.
+> **SUPERSEDED 2026-08-18 — the coordinate below changed (W-96 / O-69).**
+> A chart's group ranges no longer index the SPINE. They index the chart's own
+> `seats[]`, 1-based, in the edition's reading order.
+>
+> The reason is that the spine became a **superset**: it holds every leaf any
+> edition attests, in no edition's order, so a range counted in spine
+> positions asks one tradition to place another tradition's chapters. Measured
+> against a reordering edition, the old rule put an edition's own chapters
+> outside every container it declared and dropped them from the reader's
+> chain entirely.
+>
+> **An implementer following the paragraph below will produce charts this
+> engine misreads** wherever an edition's seat order differs from the spine's,
+> which is the case the format exists for. Both statements are kept — the
+> retired one because 1.0 was published and someone may have built on it.
+> Version and wording are the format owner's to settle, not this copy's.
+
 A chart declares **groups over book-ordinal ranges** — contiguous runs of the
 unit's leaves identified by their 1-based position in the spine — each group
 carrying its own label. Where a volume nests containers more deeply, the
