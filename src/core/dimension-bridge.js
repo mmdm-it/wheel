@@ -78,6 +78,13 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // touch the store (that would blank the reader). We remember it here instead;
   // the reader keeps its current edition, only the strata display follows along.
   let displayLanguage = null;
+  // THE EDITIONS THAT HOLD WHERE THE READER IS STANDING (H-29's carry-out,
+  // Howell 2026-08-19). `null` means NO RESTRICTION — the root, or a volume
+  // whose adapter does not answer this — and is emphatically not the same as
+  // the empty array, which means the reader is somewhere no other edition
+  // reaches. The host pushes it; the adapter computes it; nothing here knows
+  // what a chart is.
+  let here = null;
 
   // Regenerate ON SETTLE only (Howell ruling 2026-07-20): one notification
   // per committed change, never a stream. The store is synchronous, so
@@ -196,8 +203,32 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   const isServable = t => t
     && (t.proofread === true || hasConfirmedUnit(t) || overrideProofread)
     && t.hasChart === true;
+
+  // IS THIS EDITION HERE? (H-29's carry-out.)
+  //
+  // Servability asks whether an edition may be shown to anyone; this asks
+  // whether it has anything to show AT THIS SPOT. They are different questions
+  // and they are kept apart deliberately — an edition that fails the first is
+  // not fit to read, an edition that fails the second is perfectly good and
+  // simply does not contain the verse under the reader's finger.
+  //
+  // A COMMENT ABOVE THIS ONE USED TO SAY servability "does not depend on where
+  // the reader is standing", and while a volume held one edition covering all
+  // of it that was true of everything here. It is no longer true of the
+  // CHOOSER, and Howell ruled the difference in both directions: at the root
+  // every language and edition is offered; at a leaf that one edition alone
+  // attests, the others are not — offering them would commit the reader to
+  // something that cannot show them where they stand.
+  //
+  // NOTHING HERE KNOWS WHICH VOLUME THAT IS, and the suite enforces it: this
+  // file may not name one. The adapter computes the list, the host pushes it,
+  // and this compares strings.
+  const isHere = key => !here || here.includes(key);
+
+  // Servable AND here. The default-edition pick reads this, so a language
+  // chosen at a leaf lands on an edition that actually holds that leaf.
   const servableEditionsOf = languageId => Object.entries(meta?.translations || {})
-    .filter(([, t]) => t?.language === languageId && isServable(t))
+    .filter(([key, t]) => t?.language === languageId && isServable(t) && isHere(key))
     .map(([key]) => key);
 
   const languageOf = translationKey => meta?.translations?.[translationKey]?.language || null;
@@ -222,6 +253,14 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // survive at the host level; only the registry is refreshed.
     setTranslationsMeta(next) { meta = next || null; },
     setLanguagesMeta(next) { langMeta = next || null; },
+
+    // The host reports where the reader is standing, as the list of edition
+    // codes that hold it — or null for "no restriction", which is the root and
+    // is also what every volume without an adapter answer gets. An ARRAY, even
+    // an empty one, is a measurement; null is the absence of one, and the two
+    // must not be confused (the same distinction `chartedUnitsOf` draws under
+    // O-71, for the same reason).
+    setEditionsHere(codes) { here = Array.isArray(codes) ? codes.slice() : null; },
 
     // The chooser ring settles on a language. A REAL language adopts it with its
     // default edition (the reader repaints). A placeholder (no editions) is
@@ -259,6 +298,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       const languageId = languageOf(translationKey);
       if (!languageId) return false;
       if (!isServable(meta?.translations?.[translationKey])) return false; // W-11: visible, never committed
+      // Never offered here, so never committed here — belt as well as braces,
+      // because a stale preview or a deep link can name an edition the ring
+      // has already stopped showing.
+      if (!isHere(translationKey)) return false;
       displayLanguage = languageId;
       store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition: translationKey });
       return true;
@@ -285,8 +328,11 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // (This supersedes W-11's placeholder-language display.)
     languagesAvailable() {
       const shown = new Set();
-      for (const t of Object.values(meta?.translations || {})) {
-        if (t?.language && isServable(t)) shown.add(t.language);
+      // Filtered by WHERE THE READER STANDS as well as by servability (H-29's
+      // carry-out): a language whose every edition is elsewhere earns no seat,
+      // which is what removes Hebrew from the ring at Matthew 5:16.
+      for (const [key, t] of Object.entries(meta?.translations || {})) {
+        if (t?.language && isServable(t) && isHere(key)) shown.add(t.language);
       }
       // Registry order when we have it — it is chronological and deliberate —
       // else whatever order the editions give.
