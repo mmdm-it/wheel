@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-19 from 194 entries.
+Generated 2026-08-19 from 195 entries.
 
 | id | status | title |
 |---|---|---|
@@ -108,7 +108,7 @@ Generated 2026-08-19 from 194 entries.
 | O-66 | VERIFIED | THE RIGHTS GATE COULD NOT RUN AT ALL — inert again, one week after O-56 un-inerted it |
 | O-67 | CLOSED | THE READ-AHEAD NEVER FIRED, NOT ONCE — two defects, either one fatal |
 | O-68 | OPEN | THE HEBREW IS CLEARED UNDER ITS NEW NAME — a licence re-asserted, not re-decided |
-| O-69 | OPEN | W-96'S ENGINE HALF — and it moves a guarantee across the wall, which nobody noticed |
+| O-69 | VERIFIED | W-96'S ENGINE HALF — and it moves a guarantee across the wall, which nobody noticed |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -206,3 +206,4 @@ Generated 2026-08-19 from 194 entries.
 | W-95 | OPEN | THE SEATING IS BUILT — and it reaches 21 books of 39, for a reason that is not a bug |
 | W-96 | OPEN | THE SPINE BECOMES A SUPERSET, AND ORDER BELONGS TO THE EDITION |
 | W-97 | OPEN | ROW 2'S MAP IS LXX — the playlist is chronological, and a witness is not the work |
+| W-98 | OPEN | A FOLDED SEAT'S CONTAINER IS THE CHART-WRITER'S DECISION NOW — W-96's cost lands on the generator |

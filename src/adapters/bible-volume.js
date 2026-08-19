@@ -110,8 +110,11 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     }
   })));
 
-  // The spine rides with the chart because a seat is placed by its first
-  // utterance's ORDINAL, and only the spine knows that. Order is data.
+  // The spine rides with the chart because a unit's artifacts are fetched
+  // together, NOT because it places anything: a seat's position is its index
+  // in the edition's own `seats[]` (W-96). This said "a seat is placed by its
+  // first utterance's ORDINAL, and only the spine knows that" — the exact rule
+  // this release retires.
   // THE SHELF CHART (H-26/W-83) — the edition's own BOOK ORDER and its
   // section labels, one small file per edition.
   //
@@ -265,8 +268,21 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     displayConfig: volume?.display_config || {},
     unitIds: new Set(units.map(u => u.id)),
 
-    // The spine for a unit, or null. It carries the order, and nothing else
-    // does — an opaque id has none in its characters.
+    // The spine for a unit, or null.
+    //
+    // IT NO LONGER CARRIES THE ORDER (W-96, 2026-08-18). This comment said
+    // "it carries the order, and nothing else does" until Wilbur caught it
+    // during the verification of the very PR that retired the doctrine — the
+    // same leftover shape as WILBUR-FORMAT's line 135, which outlived O-27 by
+    // five days in both our sightlines. A retired rule surviving in the
+    // comment of its own repeal is how it comes back.
+    //
+    // What the spine is NOW: the record of every utterance a unit holds,
+    // across every edition — under W-96 a SUPERSET, in no edition's sequence.
+    // The order a reader moves through is the edition's, declared by its
+    // chart's `seats[]`. What survives from the old sentence is only its
+    // second half: an opaque id carries no order in its characters, so order
+    // is always read from data and never from a name.
     spineFor(unitId) {
       return spines.get(unitId) || null;
     },
