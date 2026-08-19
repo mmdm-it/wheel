@@ -333,10 +333,24 @@ export function getBibleChapters(manifest, selected, namesMap, bibleMode, editio
   const volume = manifest?.__wallVolume;
   if (!unitId || !volume) return [];
   const chart = volume.chartFor(unitId, edition);
-  const spine = volume.spineFor(unitId);
-  if (!chart?.groups?.length || !spine?.utterances?.length) return [];
+  if (!chart?.groups?.length || !chart?.seats?.length) return [];
 
-  return projectContainers(chart, { leaves: spine.utterances.length })
+  // THE COVERAGE CHECK IS THE EDITION'S, NOT THE SPINE'S (W-96 / O-69).
+  //
+  // This handed `projectContainers` the SPINE's length. Under a superset
+  // spine — every leaf any edition attests — an edition covers fewer leaves
+  // than the spine holds, so the check throws by construction:
+  // "containers cover 4 leaves but the unit has 6". Uncaught on the chain
+  // path, that fails the boot on the first unit of the first rebuild, and
+  // looks like total breakage rather than an assumption that moved.
+  //
+  // The check itself is right and stays: every leaf belongs to exactly one
+  // container or the increment is unfinished. What changed is WHICH leaves it
+  // is counting — this edition's seats, which is what its containers claim to
+  // cover. `volume.json` is untouched: Howell ruled `leaves` stays as is
+  // (2026-08-18), and the subtitle that reads `book.leaves` is a separate
+  // path that never reaches here.
+  return projectContainers(chart, { leaves: chart.seats.length })
     .map((container, idx) => ({
       id: `${unitId}/${container.label}`,
       // THE NUMBER TRAVELS, THE NUMERALS ARE WORN AT RENDER (Howell

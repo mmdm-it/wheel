@@ -71,7 +71,12 @@ describe('the H-11 fixture — shape', () => {
       'and nothing names one');
   });
 
-  it('the spine holds the order, and NOTHING else does', () => {
+  // TITLE CORRECTED UNDER W-96 (O-69). It read "the spine holds the order,
+  // and NOTHING else does" — the doctrine Howell retired on 2026-08-18. What
+  // this cell actually checks is unchanged and still true: the spine
+  // enumerates the unit's leaves, uniquely. The order a reader moves through
+  // is the edition's, declared by its chart's seats.
+  it('the spine enumerates the unit\'s leaves, uniquely', () => {
     const spine = read(`spine/${unitId}.json`);
     assert.equal(spine.utterances.length, 31);
     assert.equal(new Set(spine.utterances).size, 31, 'ids are unique');

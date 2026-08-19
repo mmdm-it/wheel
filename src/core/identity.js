@@ -30,7 +30,10 @@
 // ordered by its own text. W-32 says position may order but may not identify;
 // this is its converse, and it bites harder. `u12` does not sort after `u9`,
 // and `GENE` does not sort before `EXOD` in any alphabet that matters. ORDER
-// COMES FROM THE SPINE, which is declared data, and never from the id.
+// IS DECLARED DATA, never read from the id — and WHOSE data is the caller's
+// business, not this module's. (This said "order comes from the spine" until
+// W-96 made the spine a superset in no edition's order; the order a reader
+// moves through is the edition's, declared by its chart.)
 // `compare` therefore REFUSES to guess: give it the order or it throws.
 
 const SEP_DEFAULT = '/';
@@ -134,7 +137,8 @@ export function compare(scheme, order, a, b) {
   if (missing(ia) || missing(ib)) {
     throw new Error(
       `identity: no declared order for ${JSON.stringify(missing(ia) ? a : b)} `
-      + '— the spine is the source of order, so an id absent from it cannot be placed');
+      + '— order is declared by the caller, so an id absent from that declaration '
+      + 'cannot be placed');
   }
   return ia - ib;
 }
@@ -142,7 +146,8 @@ export function compare(scheme, order, a, b) {
 // RESOLVE-TO-PATH — the H-11 layout, stated once.
 //
 //   volume.json                     the slim boot
-//   spine/{unitId}.json             ordered leaves + spans/absent/lost
+//   spine/{unitId}.json             every leaf the unit holds + spans/absent/lost
+//                                   (a SUPERSET under W-96, in no edition's order)
 //   text/{EDITION}/{unitId}.json    text belongs to an (edition, address) pair
 //   charts/{EDITION}/{unitId}.json  + a per-edition index
 //   names/{lang}.json

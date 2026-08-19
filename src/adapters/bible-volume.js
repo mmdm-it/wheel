@@ -110,8 +110,11 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     }
   })));
 
-  // The spine rides with the chart because a seat is placed by its first
-  // utterance's ORDINAL, and only the spine knows that. Order is data.
+  // The spine rides with the chart because a unit's artifacts are fetched
+  // together, NOT because it places anything: a seat's position is its index
+  // in the edition's own `seats[]` (W-96). This said "a seat is placed by its
+  // first utterance's ORDINAL, and only the spine knows that" — the exact rule
+  // this release retires.
   // THE SHELF CHART (H-26/W-83) — the edition's own BOOK ORDER and its
   // section labels, one small file per edition.
   //
@@ -265,8 +268,21 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     displayConfig: volume?.display_config || {},
     unitIds: new Set(units.map(u => u.id)),
 
-    // The spine for a unit, or null. It carries the order, and nothing else
-    // does — an opaque id has none in its characters.
+    // The spine for a unit, or null.
+    //
+    // IT NO LONGER CARRIES THE ORDER (W-96, 2026-08-18). This comment said
+    // "it carries the order, and nothing else does" until Wilbur caught it
+    // during the verification of the very PR that retired the doctrine — the
+    // same leftover shape as WILBUR-FORMAT's line 135, which outlived O-27 by
+    // five days in both our sightlines. A retired rule surviving in the
+    // comment of its own repeal is how it comes back.
+    //
+    // What the spine is NOW: the record of every utterance a unit holds,
+    // across every edition — under W-96 a SUPERSET, in no edition's sequence.
+    // The order a reader moves through is the edition's, declared by its
+    // chart's `seats[]`. What survives from the old sentence is only its
+    // second half: an opaque id carries no order in its characters, so order
+    // is always read from data and never from a name.
     spineFor(unitId) {
       return spines.get(unitId) || null;
     },
@@ -491,18 +507,42 @@ export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false 
       // law and there is no per-unit fallback — membership is the edition's
       // own, and manufacturing seats for it would be the identity chart
       // returning under another name (H-2).
+      //
+      // THE SPINE IS REQUIRED HERE AND NO LONGER CONSULTED (W-96 / O-69). It
+      // is checked because a unit without one is an unfinished increment, not
+      // because anything below reads it: order comes from `seats[]` now, and
+      // the spine holds no order any edition is entitled to inherit. Stated
+      // rather than left to inference — a variable read only by its own guard
+      // looks load-bearing to the next person, and this one is not.
       if (!chart?.seats?.length || !spine?.utterances?.length) continue;
 
-      const ordinalOf = new Map(spine.utterances.map((u, i) => [u, i + 1]));
-      const containers = projectContainers(chart, { leaves: spine.utterances.length });
+      // CONTAINER RANGES INDEX THE CHART'S OWN SEATS, NOT THE SPINE (W-96,
+      // ruled 2026-08-18; O-69 lands the engine half).
+      //
+      // This filled containers by SPINE ordinal: a seat belonged to the
+      // container whose range held its first utterance's position in the
+      // spine. That was sound while the spine was one tradition's order and
+      // every edition agreed with it. Under a SUPERSET spine — every leaf any
+      // edition attests, in no edition's order — it is wrong in a way that
+      // does not announce itself. Measured on a four-seat edition whose seats
+      // sit at spine ordinals 5, 6, 1, 2: container I took seats 3 and 4,
+      // container II took none, and the edition's own first two seats fell
+      // outside every container it declared and VANISHED from the chain. Not
+      // a wrong order — a silent disappearance.
+      //
+      // Howell's ruling is the fix: the order a reader moves through belongs
+      // to the edition. `seats[]` already ascends in that order (O-27), so
+      // indexing it makes contiguity free — and the spine stops being asked a
+      // question it was never entitled to answer.
+      const containers = projectContainers(chart, { leaves: chart.seats.length });
 
       for (const container of containers) {
         const chapterId = `${book.id}/${container.label}`;
-        for (const seat of chart.seats) {
+        for (let seatIndex = 0; seatIndex < chart.seats.length; seatIndex += 1) {
+          const seat = chart.seats[seatIndex];
           const label = seat?.label != null ? String(seat.label) : null;
-          const first = Array.isArray(seat?.utterances) ? seat.utterances[0] : null;
-          const ordinal = first ? ordinalOf.get(first) : null;
-          if (!label || !ordinal) continue;
+          const ordinal = seatIndex + 1;
+          if (!label) continue;
           if (ordinal < container.from || ordinal > container.to) continue;
 
           items.push({
@@ -557,16 +597,24 @@ export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false 
               // same reason the funnel was worth building.
               externalFile: book.id,
               unitId: book.id,
-              // THE SEAT'S POSITION WITHIN ITS UNIT (O-67), which is the one
-              // number the read-ahead needs and the only one it could not get.
+              // THE SEAT'S POSITION IN THE EDITION'S OWN READING ORDER (O-67,
+              // re-based under W-96 by O-69).
               //
-              // `verseKey` is a composed ADDRESS — "50:26" — so parsing it for
-              // a position yields 50, the chapter. The read-ahead compared
-              // that against the unit's total seat count (1,533 for Genesis)
-              // and so never fired: every book crossing was a cold fetch of
-              // the next unit's whole text, with the detail sector blank until
-              // it landed. This ordinal is unit-scoped and already computed
-              // above for the container filter; it was simply never carried.
+              // O-67 fixed a read-ahead that had never fired: it parsed
+              // `verseKey` — a composed ADDRESS, "50:26" — and got 50, the
+              // chapter, then compared it against the unit's seat count. So
+              // every book crossing was a cold fetch and the detail sector sat
+              // blank until it landed.
+              //
+              // That fix carried the SPINE ordinal, which was the same number
+              // while the spine was one tradition's order. Under a superset
+              // spine it stops being: the read-ahead would measure the
+              // reader's distance from the end of a tradition they are not
+              // reading. At 100 leaves, an edition whose last-read seat sits
+              // at spine ordinal 60 computes 40 remaining and never fires —
+              // O-67 returning silently, for exactly the editions that reorder
+              // most. It is now the seat's index in `seats[]`, which is the
+              // edition's own order and the only order the reader moves in.
               unitOrdinal: ordinal,
               utterances: seat.utterances || []
             }

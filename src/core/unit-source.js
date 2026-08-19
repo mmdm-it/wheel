@@ -88,7 +88,10 @@ export function createUnitSource({ levels, editions, exists, base = '', version 
         return {
           unitId,
           layout: 'current',
-          leaves: null,   // the spine holds the order; nothing else may claim it
+          // No leaf count here: coverage is the CHART's, declared per edition
+          // (W-96 — the spine holds every leaf any edition attests, in no
+          // edition's order, so it cannot answer "how many does THIS one have").
+          leaves: null,
           textAt: edition => resolvePath({ base, version, kind: 'text', unitId, edition }),
           chartAt: edition => resolvePath({ base, version, kind: 'chart', unitId, edition }),
           spineAt: () => resolvePath({ base, version, kind: 'spine', unitId })
