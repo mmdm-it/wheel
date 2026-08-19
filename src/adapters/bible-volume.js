@@ -458,6 +458,33 @@ export function volumeHoldsUnit(volume, edition, unitId) {
   return Boolean(spine && Array.isArray(spine.utterances) && spine.utterances.length);
 }
 
+// DOES THIS EDITION SEAT THIS UTTERANCE? (H-29's carry-out, 2026-08-19.)
+//
+// Howell's rule for the dimension chooser: it offers the editions that hold
+// WHERE THE READER IS STANDING. At the root that is the whole volume, so
+// everything is offered; at a leaf it is one utterance, and the Vulgate reader
+// in Genesis must be offered the Hebrew and not the Greek, then the Greek and
+// not the Hebrew four chapters into Matthew.
+//
+// A leaf asks a FINER question than a book, and the difference is not
+// theoretical: two editions can share a book and disagree about a verse inside
+// it. `volumeHoldsUnit` cannot answer that, and answering it by building the
+// other edition's whole chain — which is what `reseatOnEditionChange` does,
+// and then discards — costs a chain per edition per settle.
+//
+// The chart already knows. Its seats carry their utterances, so the question
+// is a lookup: does any seat in this edition's chart for this unit claim this
+// utterance? An utterance belongs to exactly ONE unit by construction — the
+// spine is per-unit and holds every utterance any edition attests there — so
+// there is no second place to look and no ambiguity about where to look first.
+export function editionSeatsUtterance(volume, edition, unitId, utteranceId) {
+  if (!utteranceId) return false;
+  const chart = typeof volume?.chartFor === 'function' ? volume.chartFor(unitId, edition) : null;
+  if (!chart || !Array.isArray(chart.seats)) return false;
+  return chart.seats.some(seat => Array.isArray(seat?.utterances)
+    && seat.utterances.includes(utteranceId));
+}
+
 // The units this edition holds, as a set — the ring-shaped form of the answer
 // above, for the callers that filter a list rather than test one id.
 //

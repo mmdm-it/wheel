@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-19 from 209 entries.
+Generated 2026-08-19 from 213 entries.
 
 | id | status | title |
 |---|---|---|
@@ -40,6 +40,9 @@ Generated 2026-08-19 from 209 entries.
 | H-26 | OPEN | SECTIONS ARE LABELS, NOT LEVELS — and the name is shown, never a colour |
 | H-27 | OPEN | THE TOP LEVEL IS THE EDITION'S OWN — and the parent button ends there |
 | H-28 | OPEN | THE GREEK IS A SECOND EDITION OF THE BIBLE VOLUME — volumes are few, editions are many |
+| H-29 | RULED | ROOT IS THE EDITION'S OWN DIVISION OF ITSELF |
+| H-30 | RULED | WE SHARE AN EDITION'S SECTION NAMES; WE NEVER INVENT OR EXTEND THEM |
+| H-31 | RULED | THE CORNER IMAGE BELONGS TO THE DIVISION |
 | O-1 | OPEN | Prominence tiers for manufacturers (the ranked starfield) |
 | O-2 | DONE (archived) | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | OPEN | Travel-color theme keys (CONTRACT heads-up, not yet work) |
@@ -111,6 +114,7 @@ Generated 2026-08-19 from 209 entries.
 | O-69 | VERIFIED | W-96'S ENGINE HALF — and it moves a guarantee across the wall, which nobody noticed |
 | O-70 | VERIFIED | WE ARE PUBLISHING A FORMAT SPEC OUR OWN ENGINE VIOLATES — and there are two copies of it |
 | O-71 | FIXED | EACH EDITION WAS DISPLAYING THE HALF IT DOES NOT HAVE |
+| O-72 | FIXED | THE CHOOSER NOW OFFERS ONLY THE EDITIONS THAT HOLD WHERE YOU STAND |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |

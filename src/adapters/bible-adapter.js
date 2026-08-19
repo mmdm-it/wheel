@@ -1,10 +1,11 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
-import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, getVerseTextForSeat, toTraditionNumeral, toDisplayCase } from './volume-helpers.js';
+import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, getVerseTextForSeat, toTraditionNumeral, toDisplayCase, bookIdOf } from './volume-helpers.js';
 import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
 import { seatIndexForUtterance } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
+import { volumeHoldsUnit, editionSeatsUtterance } from './bible-volume.js';
 
 // THE ADAPTER NO LONGER LOADS CARGO (H-14, 2026-08-12).
 //
@@ -861,6 +862,47 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // did the original say?" at the verse. Between them it is clutter; the
     // host hides it while drilling. The adapter names the door (its own
     // dialect); the host stays volume-agnostic.
+    // WHICH EDITIONS HOLD WHERE THE READER IS STANDING (H-29's carry-out,
+    // Howell 2026-08-19).
+    //
+    // His rule in one sentence: the chooser offers the editions that hold
+    // where you are standing. *"If I'm reading Genesis 1:1 in the Vulgate and
+    // tap the dimension button, I should see Hebrew as an option but not
+    // Greek… if I'm reading Matthew 1:1, I should see Greek but not Hebrew."*
+    // And from the other side: *"if I'm at root and tap the dimension button,
+    // I should see Hebrew Greek and Latin as options."*
+    //
+    // So there are exactly two answers and the level chooses between them:
+    //   - at the root the reader stands on the whole volume, and NOTHING is
+    //     filtered — `null`, meaning no restriction, not "no editions";
+    //   - at a leaf the reader stands on ONE UTTERANCE, and the answer is the
+    //     editions whose chart seats it.
+    //
+    // The levels between are neither, and they are also the levels where the
+    // globe does not appear (Howell's first statement the same day). They
+    // answer by BOOK anyway rather than returning null, because a filter that
+    // silently vanishes at an unreached level is how it comes back wrong.
+    //
+    // THE HOST CANNOT COMPUTE THIS and must not learn to. Which editions hold
+    // a verse is a question about charts, utterances and units — everything
+    // the wall put behind the volume — and `dimension-bridge` is deliberately
+    // volume-agnostic. The adapter answers; the host carries the answer.
+    editionsHoldingItem: item => {
+      const volume = manifest?.__wallVolume;
+      if (!volume || !item) return null;
+      if (item.level === 'bibleRoot' || item.level === 'testament') return null;
+      const codes = (volume.editions || []).map(e => e?.code).filter(Boolean);
+      if (!codes.length) return null;
+      const unitId = bookIdOf(item);
+      if (!unitId) return null;
+      const utterance = item.level === 'verse' ? item.meta?.utterances?.[0] : null;
+      // A verse with no utterance recorded is not a reason to offer
+      // everything: it is a seat we cannot place, so it falls back to its
+      // book, which is the coarser TRUE answer rather than no answer.
+      return utterance
+        ? codes.filter(code => editionSeatsUtterance(volume, code, unitId, utterance))
+        : codes.filter(code => volumeHoldsUnit(volume, code, unitId));
+    },
     showsDimensionAt: item => item?.level === 'bibleRoot',
     // NUMERALS SIT ON THEIR NODES, NAMES SIT BESIDE THEM (Howell
     // 2026-07-20): chapters and verses centre over the node; book and

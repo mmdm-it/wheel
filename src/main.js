@@ -1016,6 +1016,12 @@ function resetStrata() {
 // (including a gateway transit) resets the stack. The door is declared by
 // the adapter (dimensionFrontDoorAt), so the host stays volume-agnostic.
 let dimensionFrontDoorAt = () => false;
+// WHICH EDITIONS HOLD WHERE THE READER IS STANDING — the adapter's answer,
+// bound per volume (H-29's carry-out, Howell 2026-08-19). A volume whose
+// adapter does not answer returns null, and null means "no restriction"
+// rather than "nothing" — the host never learns which volumes those are, and
+// the suite forbids it naming one.
+let editionsHoldingItem = () => null;
 // Repaints the PRIMARY for a previewed language/edition while a chooser is
 // being turned — assigned by bootVolume, which owns the adapter and manifest.
 let previewPrimary = () => {};
@@ -1170,8 +1176,25 @@ function updateSectionLabel() {
   try { currentApp?.view?.setSectionLabel?.(label || ''); } catch (_) { /* a label may never break a render */ }
 }
 
+// THE READER'S POSITION, PUSHED TO THE CHOOSER (H-29's carry-out).
+//
+// It rides `updateDimensionButton` because that is the ONE function already
+// called on every change of position — the nav change, the detail-sector
+// change, the boot, the gateway arrival — and a second subscription to the
+// same events is a second thing to keep in step. It runs before the FROZEN
+// guard, because the answer must be current even on the frames where the
+// button is held mid-wipe or hidden — the strata read it when they open, not
+// when it was last computed. It runs after the no-button guard, because a
+// page with no globe has no chooser to filter.
+function refreshEditionsHere() {
+  let codes = null;
+  try { codes = editionsHoldingItem(currentApp?.nav?.getCurrent?.()); } catch (_) { codes = null; }
+  dimensionBridge.setEditionsHere(codes);
+}
+
 function updateDimensionButton() {
   if (!dimensionButton) return;
+  refreshEditionsHere();
   if (cornerIconHold) return; // frozen mid-wipe: the icon is part of the image
   const atFrontDoor = (() => {
     try { return Boolean(dimensionFrontDoorAt(currentApp?.nav?.getCurrent?.())); } catch (_) { return false; }
@@ -2368,6 +2391,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   dimensionFrontDoorAt = typeof handlerSet.showsDimensionAt === 'function' ? handlerSet.showsDimensionAt : () => false;
+  // The chooser offers the editions that hold where the reader stands (H-29).
+  editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;
 
   const layoutBindings = handlerSet.layoutBindings || {};
   const layoutSpec = createVolumeLayoutSpec({
