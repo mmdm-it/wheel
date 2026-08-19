@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-19 from 195 entries.
+Generated 2026-08-19 from 197 entries.
 
 | id | status | title |
 |---|---|---|
@@ -109,6 +109,7 @@ Generated 2026-08-19 from 195 entries.
 | O-67 | CLOSED | THE READ-AHEAD NEVER FIRED, NOT ONCE — two defects, either one fatal |
 | O-68 | OPEN | THE HEBREW IS CLEARED UNDER ITS NEW NAME — a licence re-asserted, not re-decided |
 | O-69 | VERIFIED | W-96'S ENGINE HALF — and it moves a guarantee across the wall, which nobody noticed |
+| O-70 | VERIFIED | WE ARE PUBLISHING A FORMAT SPEC OUR OWN ENGINE VIOLATES — and there are two copies of it |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -207,3 +208,4 @@ Generated 2026-08-19 from 195 entries.
 | W-96 | OPEN | THE SPINE BECOMES A SUPERSET, AND ORDER BELONGS TO THE EDITION |
 | W-97 | OPEN | ROW 2'S MAP IS LXX — the playlist is chronological, and a witness is not the work |
 | W-98 | OPEN | A FOLDED SEAT'S CONTAINER IS THE CHART-WRITER'S DECISION NOW — W-96's cost lands on the generator |
+| W-99 | OPEN | THE GREEK'S CODE IS RULED — 250BCgrc, and the Map stays LXX |
