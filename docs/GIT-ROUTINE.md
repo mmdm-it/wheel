@@ -1,5 +1,15 @@
 # The git routine — standard for both sessions
 
+*Last audited: 2026-08-20 by Orville — Q3 (does it assert a state that is now
+false?). One finding, struck below: the wall paragraph claimed the crossing was
+"refused locally", which is what W-117 rules it is not. Also observed and NOT
+changed, because it is not a Q3 finding and not this sitting's to rule: step 8
+tells a session to assume a merge happened, while WF-7 forbids asserting a
+state without a source. Both are right and they govern different acts —
+proceeding, and reporting. Orville conflated them on 2026-08-20, wrote "the
+amendment is landed" about an open PR, and was corrected by Wilbur. If that
+recurs it wants a ruling, not an audit.*
+
 **Ruled by Howell, 2026-08-02:** *"I like the way you handle commits and
 merges... Let's make your routine standard across both sessions."* Written
 by Orville; binding on Orville and Wilbur alike, each in his own repository.
@@ -8,9 +18,30 @@ by Orville; binding on Orville and Wilbur alike, each in his own repository.
 > repo and in cargo"* — written before the wall existed, and it instructs a
 > session to do the one thing WF-15 forbids. **Neither of us commits to the
 > other's repository.** The engine is Orville's, the data repository is
-> Wilbur's, and access across the wall is READ ONLY in both directions —
-> enforced server-side since O-32 by per-repository tokens, and refused
-> locally by the deny layer and the guard hook. The routine below is the same
+> Wilbur's, and access across the wall is READ ONLY in both directions.
+>
+> **AMENDED 2026-08-20 (W-117; the Q3 audit above).** This read *"enforced
+> server-side since O-32 by per-repository tokens, and refused locally by the
+> deny layer and the guard hook"* — and the second half of that is struck,
+> because it claims something the local layers cannot do. They refuse
+> SPELLINGS, not actions, so the same crossing is refused written one way and
+> allowed written another. The sentence named two mechanisms and was true of
+> one of them.
+>
+> **What is actually true, in four rungs rather than one clause:**
+> **Server-side** the crossing is genuinely PREVENTED — GitHub refuses it,
+> where neither `--no-verify` nor a crashed hook can reach (O-32). **The file
+> tools** refuse by resolving the path, so a Write into the other tree is
+> stopped every time, within the scope of those tools. **A shell command** is
+> judged on its spelling, so it stops a habit and not a determination.
+> **A subprocess** is not constrained at all once it is running, which is
+> H-9's whole reason for existing.
+>
+> So the local wall ANNOUNCES; it does not prevent. WF-15 has said as much
+> since 2026-08-07 — *"the filesystem wall remains a convention"* — and both
+> sessions spent 2026-08-20 acting as though it were solid, which is what this
+> correction is for. Howell ruled the same day: keep the alarm, fix the words.
+> The routine below is the same
 > routine for both of us; it is simply run twice, once in each repository, by
 > its owner. Where a document governs BOTH sessions, its owner commits it from
 > the other's draft.

@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-20 from 226 entries.
+Generated 2026-08-20 from 228 entries.
 
 | id | status | title |
 |---|---|---|
@@ -237,4 +237,6 @@ Generated 2026-08-20 from 226 entries.
 | W-113 | RULED AND DONE | EVERY LABEL SAYS WHETHER IT IS QUOTED OR DERIVED — and the Greek's artifact name is corrected |
 | W-114 | RULED | THE IMAGES ARE CARGO'S — the engine is agnostic, a crown of thorns is not |
 | W-115 | RULED | THE BOARD READS main's CI, BOTH SIDES OF THE WALL |
-| W-116 | OPEN | THE WALL HOOK REFUSES READS — three defects, found from both sides |
+| W-116 | OPEN | THE WALL HOOK REFUSES READS — four shapes, found from both sides |
+| W-117 | OPEN | THE FILESYSTEM WALL IS A TRIPWIRE — and we both spent a day treating it as a fence |
+| W-118 | OPEN | WF-13'S STAMP HAS NEVER BEEN WRITTEN — the board line that could not be answered |
