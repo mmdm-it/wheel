@@ -66,15 +66,34 @@ describe('the engine ships no volume-specific image (W-114)', () => {
     }
   });
 
-  it('THE CATALOGUE IS CARGO\'S TOO — gone from here AND served from there', () => {
+  it('THE CATALOGUE\'S LOGO IS CARGO\'S TOO', () => {
     assert.equal(existsSync(path.join(repoRoot, 'assets/catalog_logo.png')), false,
       'the catalogue\'s logo is the catalogue\'s content');
-    // The other half of the same fact. A cell asserting only the deletion
-    // passes just as happily on a blank corner, which is the failure this
-    // whole ruling would otherwise trade for the one it fixes.
-    assert.equal(existsSync(path.join(repoRoot, 'data/mmdm/assets/catalog_logo.png')), true,
-      'cargo must serve what the engine stopped serving');
   });
+
+  // THE OTHER HALF OF THIS FACT IS NOT OURS TO CHECK, and the first draft of
+  // this file tried anyway.
+  //
+  // A cell asserting only the deletion passes just as happily on a blank
+  // corner — so I asserted that cargo SERVES what the engine stopped serving,
+  // by reading `data/mmdm/assets/`. That passed here and failed in CI within
+  // the minute, because `data/` is a symlink into the other repository and CI
+  // checks out this one. A test that can only pass on one machine is not a
+  // test; it is a local observation wearing a green tick, which is the exact
+  // failure mode this whole day has been about, arriving in the cell written
+  // to guard against it.
+  //
+  // The guarantee is real and it is CARGO'S: `test/art-placement.test.js`
+  // there asserts that every volume authoring art has a served directory that
+  // exists, that each served image is byte-identical to its source by sha256,
+  // that nothing extra is served, and that the `default_image` each manifest
+  // names is one that volume actually serves. That last cell is the join that
+  // broke here — config said one thing, `art/` another, and the served
+  // directory said nothing at all.
+  //
+  // So the wall cuts the check in two and each side owns its half. Named
+  // rather than left as a gap, because a missing assertion reads as an
+  // oversight and this one is a boundary.
 
   it('nothing still HELD has quietly become permanent', () => {
     assert.deepEqual([...HELD.keys()], [],
