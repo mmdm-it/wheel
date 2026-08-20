@@ -2248,6 +2248,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // pinned default — a builder that seats by artifact needs to know which
   // artifact the reader actually holds, not which one the config prefers.
   options.activeEdition = translationId;
+  // WHERE THIS VOLUME'S OWN IMAGES LIVE (W-114). The host stays agnostic: it
+  // carries the string and never learns what is in the picture.
+  options.assetBase = config.assetBase || '';
   const chainResult = await config.buildChain(manifest, options, namesMap);
   performance.mark('wheel:chain-built');
   const { items, selectedIndex = 0, preserveOrder = false, meta } = chainResult;

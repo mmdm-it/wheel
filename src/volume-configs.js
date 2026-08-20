@@ -68,6 +68,17 @@ const volumeConfigs = {
     // each raises its own wall at its own doctrine migration. That is what
     // makes the scope per-volume rather than a flag day.
     manifestPath: BIBLE_VOLUME_BASE,
+    // THE IMAGES ARE CARGO'S (W-114, Howell 2026-08-19): *"It should be on the
+    // Cargo side. It is cargo. The engine is agnostic. A crown of thorns is
+    // not agnostic in the least."*
+    //
+    // `display_config.detail_sector.logo_base_path` still reads `assets/` and
+    // the STRING does not change. What changes is what it resolves AGAINST:
+    // the volume's own data root rather than the app root. So the emblem is
+    // version-pinned like every other artifact beside it — immutable and
+    // cacheable forever at its data-version URL — and the engine ships no
+    // picture that asserts anything about a corpus.
+    assetBase: `${BIBLE_VOLUME_BASE}/${BIBLE_VOLUME_VERSION}/`,
     loadManifest: async () => {
       const volume = await loadBibleVolume({
         base: BIBLE_VOLUME_BASE,
@@ -305,6 +316,9 @@ const volumeConfigs = {
     id: 'catalog',
     paths: ['/catalog'],
     manifestPath: './data/mmdm/catalog-lite.json',
+    // W-114 again, and the catalogue has no data VERSION to pin to — its
+    // artifacts sit at the volume root. Same rule, one fewer segment.
+    assetBase: './data/mmdm/',
     // Shown by other volumes' top-ring OUT button as the place a gateway
     // return lands (Howell ruling 2026-07-17).
     gatewayReturnLabel: 'MMdM CATALOGO',
