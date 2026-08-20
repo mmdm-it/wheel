@@ -861,6 +861,33 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // did the original say?" at the verse. Between them it is clutter; the
     // host hides it while drilling. The adapter names the door (its own
     // dialect); the host stays volume-agnostic.
+    // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31).
+    //
+    // Howell's report was that the Torah scroll never became a crown of thorns
+    // for the New Testament. Two causes: the image was declared once for the
+    // whole VOLUME, and it was painted once at boot. The declaration moved to
+    // the division under H-31; this is the reading half.
+    //
+    // The answer is the division holding the reader's BOOK, so in an edition
+    // spanning both halves the corner changes as they cross into Matthew — and
+    // in an edition holding one, it is simply that edition's own emblem. Null
+    // when nothing is declared, which leaves whatever the volume config
+    // painted rather than blanking the corner.
+    cornerImageFor: item => {
+      const volume = manifest?.__wallVolume;
+      const edition = options?.activeEdition || options?.translation || null;
+      if (!volume || !edition || typeof volume.divisionsFor !== 'function') return null;
+      const divisions = volume.divisionsFor(edition);
+      if (!divisions.length) return null;
+      const unitId = bookIdOf(item);
+      const holding = unitId
+        ? divisions.find(d => Array.isArray(d.books) && d.books.includes(unitId))
+        : null;
+      // No book in hand — the root, a division ring — so the emblem is the
+      // one the reader is about to enter, which is the first this edition has.
+      return (holding || divisions[0]).image || null;
+    },
+
     // WHICH EDITIONS HOLD WHERE THE READER IS STANDING (H-29's carry-out,
     // Howell 2026-08-19).
     //

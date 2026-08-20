@@ -127,6 +127,31 @@ export class VolumeLogo {
    * Render logo from volume configuration
    * @param {Object} config - Volume display_config.detail_sector
    */
+  // SWAP THE EMBLEM WITHOUT REBUILDING (H-31).
+  //
+  // The image belongs to the DIVISION, so it must change while the reader is
+  // standing still — crossing from Malachi into Matthew in an edition that
+  // holds both — and that crossing can happen with the detail sector open and
+  // the badge expanded.
+  //
+  // `render()` cannot do it: it clears the group and resets `_expanded` and
+  // `_animating` to false, so calling it at a leaf would drop an expanded
+  // badge to collapsed geometry with no animation while the host went on
+  // believing it was open. This changes the one attribute that actually
+  // differs and touches nothing else.
+  //
+  // Returns whether anything changed, so a caller on a per-frame signal can
+  // tell a real swap from the ninety-nine calls that are not.
+  setImage(imageName) {
+    if (!this.logo || !imageName) return false;
+    const base = this._renderConfig?.logo_base_path;
+    if (!base) return false;
+    if (this._renderConfig.default_image === imageName) return false;
+    this._renderConfig.default_image = imageName;
+    this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${imageName}.png`);
+    return true;
+  }
+
   render(config) {
     this.clear();
     this._renderConfig = config || null;
