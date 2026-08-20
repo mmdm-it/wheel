@@ -3,13 +3,24 @@
  * Domain-specific logo rendering in upper-right corner
  * Handles expand/collapse animation for Detail Sector
  * 
- * Configured per volume in manifest.json:
+ * Configured per volume in its own data:
  * {
  *   "detail_sector": {
  *     "logo_base_path": "assets/",
- *     "default_image": "gutenberg_logo"
+ *     "default_image": "torah_scroll"
  *   }
  * }
+ *
+ * THE PATH IS RELATIVE TO THE VOLUME'S DATA ROOT, not to the app (W-114).
+ * This renderer ships no volume's emblem, because a picture can assert
+ * something about a corpus and this module must serve every volume alike.
+ * `logo_base_path` is joined to whatever root the volume's own config
+ * declares, so a volume that pins a data version gets an image pinned with
+ * it — immutable and cacheable forever, like every artifact beside it.
+ *
+ * The example above named a VOLUME rather than a picture, and the file it
+ * named had already been replaced in the data. Images live with their volume
+ * now, and that one is called after what is in it.
  * 
  * Animation: 600ms quadratic ease-in-out
  * Expand: circle 12% SSd → 99% FR radius at hub, logo → watermark at -35% FR offset

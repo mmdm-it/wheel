@@ -70,6 +70,16 @@ function normalizeItems(items, { preserveOrder = false } = {}) {
   return sorted;
 }
 
+// Join a volume's data root to the base path its own config declares (W-114).
+// Both halves come from data and either may or may not carry a slash, so this
+// normalises exactly one — and an empty root leaves the string as the data
+// wrote it, which is what every volume declaring no `assetBase` still gets.
+export function joinAssetPath(root, declared) {
+  const tail = declared || '';
+  if (!root) return tail;
+  return `${String(root).replace(/\/+$/, '')}/${String(tail).replace(/^\/+/, '')}`;
+}
+
 export function createApp({
   svgRoot,
   items,
@@ -180,6 +190,15 @@ export function createApp({
   if (logoConfig && (logoConfig.logo_base_path || logoConfig.default_image)) {
     volumeLogo.render({
       ...logoConfig,
+      // THE EMBLEM RESOLVES AGAINST THE VOLUME'S DATA ROOT (W-114). The
+      // engine used to serve these from its own `assets/`, which put a crown
+      // of thorns in a repository that must render a marine-engine catalogue
+      // as readily as scripture. The picture is a claim about a corpus, so it
+      // belongs with the corpus; only the resolution is ours.
+      //
+      // ONE RESOLUTION, ONE PLACE — the data's string is untouched and every
+      // volume's images are found the same way.
+      logo_base_path: joinAssetPath(contextOptions.assetBase, logoConfig.logo_base_path),
       color_scheme: manifestRoot?.display_config?.color_scheme
     });
   }
