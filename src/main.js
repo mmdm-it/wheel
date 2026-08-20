@@ -997,6 +997,14 @@ function cycleStrata() {
   strataFront = strataFront <= 0 ? max : strataFront - 1;
   if (from === strataFront) return;
   transitionStrata(from, strataFront);
+  // ARRIVAL AT THE TEXT ENDS THE LAUNCH FUNNEL (O-77), and this is the only
+  // other way in: `resetStrata` catches the reader who is carried out, this
+  // catches the reader who WALKS in, which is the path the funnel was built
+  // to teach. Set AFTER the transition is kicked off, never before: the
+  // departing planes render their nodes one last time inside
+  // `transitionStrata`, and a ring that loses a node while it is gliding away
+  // is the very flicker this ruling exists to stop.
+  if (strataFront === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
   // The globe turns with the recede — same duration, settling together.
   if (dimensionGlobe) dimensionGlobe.spin(STRATA_TWEEN_MS);
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
@@ -1285,6 +1293,13 @@ if (typeof window !== 'undefined') {
     languages: () => dimensionBridge.languagesAvailable(),
     // Null while the launch funnel is up (O-75), the reader's position after.
     here: () => dimensionBridge.editionsHere(),
+    // IS THE LAUNCH FUNNEL STILL UP? (O-77.) Read-only, for the guard that
+    // could otherwise only watch its shadow: `here` goes from null to a list
+    // when the funnel closes, but null is also what a volume with no answer
+    // gives, so the two are worth being able to tell apart from outside.
+    funnel: () => bootFunnelOpen,
+    // How far the strata have travelled: 0 = the reader is at the text.
+    front: () => strataFront,
     cycle: cycleStrata
   };
 }
@@ -2655,9 +2670,19 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     rememberReadingPosition();
   });
   dimensionBridge.onSettle(translation => {
-    // A committed choice ends the launch question, whether or not the strata
-    // have receded yet.
-    bootFunnelOpen = false;
+    // THE FUNNEL IS NOT CLOSED BY A COMMIT (O-77). It used to be — "a
+    // committed choice ends the launch question, whether or not the strata
+    // have receded yet" — and that sentence reads perfectly right up until
+    // you remember that TURNING THE LANGUAGE RING IS A COMMIT. The springback
+    // settles on the node under the lens and calls `select` on it, so the
+    // reader's very first rotation, the one gesture the funnel exists to
+    // invite, switched O-72's position filter on underneath the ring they
+    // were still turning. Howell, from the LAN: rotate onto the Greek and
+    // back, and the Hebrew is gone — struck off by a filter reading the seat
+    // the Greek had just reseated him to.
+    //
+    // A commit is a STEP THROUGH the funnel, not the end of it. The funnel
+    // ends where it always said it did: when the reader arrives at the text.
     window.__wheelTapTrace?.push({ ev: 'dim-settle', tr: translation || '' });
     // THE SHELF FOLLOWS THE READER (W-16): refresh the live names table
     // FIRST, then repaint. The chain is not rebuilt and nothing moves — the
