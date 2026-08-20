@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-20 from 224 entries.
+Generated 2026-08-20 from 225 entries.
 
 | id | status | title |
 |---|---|---|
@@ -236,3 +236,4 @@ Generated 2026-08-20 from 224 entries.
 | W-112 | RULED AND DONE | THE HEBREW'S SWEEP DELETED THE GREEK'S SPINE — shared storage, one edition's book list |
 | W-113 | RULED AND DONE | EVERY LABEL SAYS WHETHER IT IS QUOTED OR DERIVED — and the Greek's artifact name is corrected |
 | W-114 | RULED | THE IMAGES ARE CARGO'S — the engine is agnostic, a crown of thorns is not |
+| W-115 | RULED | THE BOARD READS main's CI, BOTH SIDES OF THE WALL |

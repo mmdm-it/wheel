@@ -45,9 +45,10 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   authorises work it has superseded, and that work will look productive right
   up until the moment it is discarded.
 
-- **WF-4 (amended under W-46). Every session opens with the board — as a
-  GATE, not a report.** Before any work: open PRs oldest first, branches
-  carrying commits with no PR, **and the canaries green** — one Write aimed
+- **WF-4 (amended under W-46 and W-115). Every session opens with the board —
+  as a GATE, not a report.** Before any work: open PRs oldest first, branches
+  carrying commits with no PR, **main green in BOTH repositories**, **and the
+  canaries green** — one Write aimed
   at `.claude/canary/probe.txt` (expect refusal naming the deny rule) and
   one command carrying the wall's canary token (expect the hook's canary
   refusal). A canary that does not refuse — or refuses from a layer we do
@@ -55,6 +56,26 @@ with `node scripts/build-ledger-index.mjs` after any ledger change).
   is done. The board also names the next audit under WF-13 — the stalest
   document and the question due against it. Idle PRs are not merely slow —
   they go stale in the wrong order and are superseded by later idle PRs.
+
+  **main's own CI is part of the gate** (W-115). Open PRs and unclaimed
+  branches are both work IN FLIGHT; neither sees the branch that work lands
+  on, and cargo's main sat red for eleven hours behind a clean board. Run
+  `node scripts/check-main-ci.mjs` from the cargo checkout: it reports both
+  repositories, refuses when either is not green, and refuses just as loudly
+  when it cannot tell.
+
+  **FROM THE ENGINE SESSION IT NEEDS THE READ TOKEN:**
+  `GH_TOKEN="$GH_TOKEN_READ" node scripts/check-main-ci.mjs`. This is not a
+  workaround — it is O-32's wall doing its job. Each session carries its own
+  fine-grained token, and the engine's cannot see the private cargo
+  repository, so without the override the check reports cargo UNREADABLE and
+  refuses **every time, forever**. It refuses honestly, which is the design;
+  but a gate that can never go green is a gate that gets skimmed past, and
+  that is the disease this whole rule exists to treat. Cargo's own token sees
+  the engine, because the engine is public, so Wilbur's side needs no
+  override. *(Measured 2026-08-20 by Orville as W-115's verifier: with the
+  default token, cargo answers HTTP 404; with `GH_TOKEN_READ`, both sides
+  report green.)*
 
 - **WF-5. A PR that supersedes another says so in its first line.** Supersession is
   invisible in a list of PR titles, which is exactly what lets them be merged in
