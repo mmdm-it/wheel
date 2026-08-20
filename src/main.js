@@ -1036,6 +1036,10 @@ let editionsHoldingItem = () => null;
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
 let cornerImageAt = () => null;
+// AND WHICH COLOUR IS UNDER IT (O-79). Same signal, same shape: null from a
+// volume declaring none, and null leaves the volume's own detail-sector
+// colour in place rather than blanking the badge.
+let cornerColorAt = () => null;
 // THE LAUNCH QUESTION IS NOT A SIDEWAYS MOVE (O-75).
 //
 // The boot funnel asks "what do you read?" before the reader is anywhere —
@@ -1224,8 +1228,15 @@ function updateSectionLabel() {
 // itself is a no-op when the name is unchanged, so calling it freely is cheap.
 function updateCornerImage() {
   try {
-    const name = cornerImageAt(currentApp?.nav?.getCurrent?.());
+    const at = currentApp?.nav?.getCurrent?.();
+    const name = cornerImageAt(at);
     if (name) currentApp?.setCornerImage?.(name);
+    // THE CIRCLE TRAVELS WITH THE EMBLEM (O-79), in the same call rather than
+    // on a signal of its own: they are one badge, and two subscriptions to
+    // the same event are two things to keep in step. Set second, so a volume
+    // that answers the image and throws on the colour still repaints the art.
+    const color = cornerColorAt(at);
+    if (color) currentApp?.setCornerColor?.(color);
   } catch (_) { /* a volume that cannot answer keeps whatever it painted */ }
 }
 
@@ -2459,6 +2470,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // volume that declares none answers null and its corner never changes,
   // which is every volume but one.
   cornerImageAt = typeof handlerSet.cornerImageFor === 'function' ? handlerSet.cornerImageFor : () => null;
+  cornerColorAt = typeof handlerSet.detailSectorColorFor === 'function' ? handlerSet.detailSectorColorFor : () => null;
 
   const layoutBindings = handlerSet.layoutBindings || {};
   const layoutSpec = createVolumeLayoutSpec({

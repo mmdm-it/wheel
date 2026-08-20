@@ -354,6 +354,9 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
         return [{
           label: self.nativeName || self.name || null,
           image: null,
+          // O-79: an edition standing for itself declares no colour of its
+          // own, so the volume's one detail-sector colour still governs.
+          color: null,
           from: 1,
           to: order.length,
           books: [...order]
@@ -373,6 +376,14 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
         out.push({
           label: d.label != null ? String(d.label) : null,
           image: d.image || null,
+          // THE COLOUR TRAVELS WITH THE EMBLEM (O-79). It is declared beside
+          // the image, for the reason this file's own `_divisions` note gives
+          // about the image: it is OURS TO CHOOSE and the source cannot tell
+          // us. An indigo that means New Testament asserts something about
+          // this corpus exactly as a crown of thorns does (W-114), so it
+          // belongs to the cargo and not to a renderer that serves every
+          // volume alike. Null where none is declared.
+          color: d.color || null,
           from: d.from,
           to: d.to,
           books: order.slice(d.from - 1, d.to)

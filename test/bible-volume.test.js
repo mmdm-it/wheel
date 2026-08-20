@@ -403,3 +403,47 @@ describe('a SUPERSET spine, and an edition that reorders it (W-96 / O-69)', () =
       'both containers project; counting the spine would have thrown instead');
   });
 });
+
+// THE DIVISION'S COLOUR TRAVELS WITH ITS EMBLEM (O-79).
+//
+// Howell asked for the circle under the corner art — the one that becomes the
+// detail sector's background — to change as the reader crosses between a
+// volume's divisions. The colour is declared in the cargo beside the image,
+// for the reason that file already gives about the image: it is ours to
+// choose and the source cannot tell us, and a colour that means New Testament
+// asserts something about THIS corpus exactly as a crown of thorns does
+// (W-114).
+//
+// THIS IS THE SEAM, and it is the one the adapter's cells cannot see: they
+// hand in their own `divisionsFor`, so they would go on passing while this
+// function silently dropped the field. `divisionsFor` builds an explicit
+// shape and discards everything it does not name — which is the right
+// behaviour and exactly why a new field has to be added here on purpose.
+describe('the division carries its colour (O-79)', () => {
+  // The fixture's chart index declares no colour, so one is injected on the
+  // way past — the same JSON the browser would receive, with the field the
+  // cargo will carry.
+  const loadWithColour = colour => loadBibleVolume({
+    base: BASE,
+    version: VERSION,
+    fetchJson: async p => {
+      const body = JSON.parse(readFileSync(p, 'utf-8'));
+      if (String(p).includes('/charts/DRA/index.json') && Array.isArray(body.divisions)) {
+        body.divisions = body.divisions.map(d => ({ ...d, color: colour }));
+      }
+      return body;
+    }
+  });
+
+  it('carries a declared colour through to the reader', async () => {
+    const volume = await loadWithColour('#362e6a');
+    assert.equal(volume.divisionsFor('DRA')[0].color, '#362e6a',
+      'dropped between the cargo and the badge — the field must be named here');
+  });
+
+  it('and answers null where none is declared, which is the fixture as it stands', async () => {
+    const volume = await load();
+    assert.equal(volume.divisionsFor('DRA')[0].color, null,
+      'null, not undefined: the absence is answered rather than left blank');
+  });
+});

@@ -1933,6 +1933,8 @@ export function createApp({
     // Returns whether anything actually changed, so a caller on a frequent
     // signal can stay quiet.
     setCornerImage: name => volumeLogo.setImage(name),
+    // O-79: the badge's circle follows the reader the same way its art does.
+    setCornerColor: color => volumeLogo.setColor(color),
     nav,
     view,
     choreographer,
