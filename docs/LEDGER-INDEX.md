@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-20 from 225 entries.
+Generated 2026-08-20 from 226 entries.
 
 | id | status | title |
 |---|---|---|
@@ -121,7 +121,7 @@ Generated 2026-08-20 from 225 entries.
 | O-76 | FIXED | AN EDITION SHARING NOTHING LANDS THE READER AT ITS BEGINNING |
 | O-77 | FIXED | TURNING THE LANGUAGE RING IS A COMMIT, and the commit was closing the funnel |
 | O-78 | THE HANG FIXED | THE CROSSING SCANNED 185 MILLION TIMES TO LEARN NOTHING — and a filter I mistook for a trap |
-| O-79 | ENGINE HALF FIXED | THE GROUND UNDER THE EMBLEM FOLLOWS THE READER TOO — engine half landed, one line of cargo owed |
+| O-79 | BOTH HALVES LANDED | THE GROUND UNDER THE EMBLEM FOLLOWS THE READER TOO — engine half landed, one line of cargo owed |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -237,3 +237,4 @@ Generated 2026-08-20 from 225 entries.
 | W-113 | RULED AND DONE | EVERY LABEL SAYS WHETHER IT IS QUOTED OR DERIVED — and the Greek's artifact name is corrected |
 | W-114 | RULED | THE IMAGES ARE CARGO'S — the engine is agnostic, a crown of thorns is not |
 | W-115 | RULED | THE BOARD READS main's CI, BOTH SIDES OF THE WALL |
+| W-116 | OPEN | THE WALL HOOK REFUSES READS — three defects, found from both sides |
