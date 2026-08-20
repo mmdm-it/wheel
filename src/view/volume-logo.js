@@ -152,6 +152,39 @@ export class VolumeLogo {
     return true;
   }
 
+  // THE COLOUR UNDER THE EMBLEM, SWAPPED THE SAME WAY (O-79, Howell
+  // 2026-08-20). He asked for the circle under the art — the one that becomes
+  // the detail sector's background — to change as the reader crosses between
+  // the divisions of a volume. WHICH divisions those are, and what they are
+  // called, is the adapter's business and never this file's (O-43): here it
+  // is one colour arriving, from a caller that knows why.
+  //
+  // It rides `_renderConfig.color_scheme.detail_sector` rather than a field
+  // of its own, because THREE places already read that one value — the first
+  // paint, the expand, and the collapse's reset — and a second source would
+  // be a fourth answer that only some of them heard. Writing it here means
+  // the badge, the expanding circle and the leaf's background are the same
+  // colour by construction rather than by three edits kept in step.
+  //
+  // Returns whether anything changed, like `setImage`, so a caller on a
+  // per-position signal can tell a real crossing from the calls that are not.
+  setColor(color) {
+    if (!color || !this._renderConfig) return false;
+    const scheme = this._renderConfig.color_scheme || (this._renderConfig.color_scheme = {});
+    if (scheme.detail_sector === color) return false;
+    scheme.detail_sector = color;
+    // REPAINTED WHATEVER STATE THE BADGE IS IN, which is the point rather
+    // than a risk. The crossing this answers happens with the detail sector
+    // OPEN — the reader is at a leaf when the edition changes under them — so
+    // a version that waited for the next collapse would leave the NEW
+    // division's emblem sitting on the OLD one's colour, which is the
+    // mismatch H-31 was written to end. `setImage` does not wait either, for
+    // the same reason. `_applyFrame` animates geometry and opacity and never
+    // touches fill, so a swap mid-animation is safe.
+    if (this.circle) this.circle.setAttribute('fill', color);
+    return true;
+  }
+
   render(config) {
     this.clear();
     this._renderConfig = config || null;

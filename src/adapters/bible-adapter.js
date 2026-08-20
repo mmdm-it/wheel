@@ -923,6 +923,32 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       return (holding || divisions[0]).image || null;
     },
 
+    // AND THE CIRCLE UNDER IT (O-79, Howell 2026-08-20): *"the color of the
+    // circle under the image file (which becomes the Detail Sector
+    // background) should change between testaments."*
+    //
+    // Same question, same signal, same answer shape as the emblem above —
+    // which division holds the reader's book — because it is the same badge:
+    // the emblem sits ON this circle and expands with it into the leaf's
+    // background. Splitting them across two signals would let the crown of
+    // thorns arrive over the Old Testament's blue for a frame.
+    //
+    // Null where the division declares no colour, and null means the volume's
+    // own `color_scheme.detail_sector` still governs — so every other volume,
+    // and this one before its cargo declares anything, is untouched.
+    detailSectorColorFor: item => {
+      const volume = manifest?.__wallVolume;
+      const edition = options?.activeEdition || options?.translation || null;
+      if (!volume || !edition || typeof volume.divisionsFor !== 'function') return null;
+      const divisions = volume.divisionsFor(edition);
+      if (!divisions.length) return null;
+      const unitId = bookIdOf(item);
+      const holding = unitId
+        ? divisions.find(d => Array.isArray(d.books) && d.books.includes(unitId))
+        : null;
+      return (holding || divisions[0]).color || null;
+    },
+
     // WHICH EDITIONS HOLD WHERE THE READER IS STANDING (H-29's carry-out,
     // Howell 2026-08-19).
     //

@@ -136,3 +136,107 @@ describe('the emblem swaps without disturbing what is in flight', () => {
     assert.equal(bare.setImage('crown_of_thorns'), false, 'no image element yet');
   });
 });
+
+// AND THE CIRCLE UNDER IT (O-79).
+//
+// Howell, 2026-08-20: *"the color of the circle under the image file (which
+// becomes the Detail Sector background) should change between testaments. The
+// current OT blue is fine, but we need to restore the previous NT purple."*
+//
+// These cells live beside H-31's rather than in a file of their own, because
+// it is ONE BADGE: the emblem sits on this circle and expands with it into the
+// leaf's background. The failure mode worth guarding is precisely that they
+// come apart — the crown of thorns arriving over the Old Testament's blue —
+// so testing them apart would test past the defect.
+//
+// The COLOUR ITSELF is not here and must not be. It is declared beside the
+// image in the cargo, for the reason that file gives about the image: it is
+// ours to choose, the source cannot tell us, and an indigo meaning New
+// Testament asserts something about THIS corpus exactly as a crown of thorns
+// does (W-114). The engine carries it; it does not know it.
+describe('which colour is under the emblem (O-79)', () => {
+  const COLOURED = [
+    { label: 'Vetus Testamentum', image: 'torah_scroll', color: '#16337a', from: 1, to: 2, books: ['A', 'B'] },
+    { label: 'Novum Testamentum', image: 'crown_of_thorns', color: '#362e6a', from: 3, to: 4, books: ['C', 'D'] }
+  ];
+
+  it('CHANGES ON THE SAME CROSSING THE EMBLEM DOES, from the same answer', () => {
+    const h = handlers(makeManifest(() => COLOURED.map(d => ({ ...d }))));
+    const at = id => ({ level: 'book', id });
+    assert.equal(h.cornerImageFor(at('B')), 'torah_scroll');
+    assert.equal(h.detailSectorColorFor(at('B')), '#16337a');
+    assert.equal(h.cornerImageFor(at('C')), 'crown_of_thorns');
+    assert.equal(h.detailSectorColorFor(at('C')), '#362e6a',
+      'the emblem and the ground under it must never disagree');
+  });
+
+  it('AT ROOT IT IS THE FIRST DIVISION\'S, exactly as the emblem is', () => {
+    const h = handlers(makeManifest(() => COLOURED.map(d => ({ ...d }))));
+    assert.equal(h.detailSectorColorFor({ level: 'bibleRoot', id: 'root' }), '#16337a');
+  });
+
+  it('NULL RATHER THAN A GUESS when the cargo declares none', () => {
+    // Which is the state on the day this shipped: the engine half lands
+    // first, and every volume — including this one until its cargo carries a
+    // colour — keeps the one `color_scheme.detail_sector` it always had.
+    const h = handlers(makeManifest(() => [
+      { label: 'Whole', image: 'torah_scroll', color: null, from: 1, to: 4, books: ['A', 'B', 'C', 'D'] }
+    ]));
+    assert.equal(h.detailSectorColorFor({ level: 'book', id: 'A' }), null,
+      'null leaves the volume\'s own colour in place rather than blanking the badge');
+  });
+
+  it('a volume that cannot answer at all is not asked twice', () => {
+    const m = { Gutenberg_Bible: { testaments: {} } };
+    Object.defineProperty(m, '__wallVolume', {
+      value: { units: [{ id: 'A' }], editions: [{ code: 'LAT' }] }, enumerable: false
+    });
+    const h = handlers(m);
+    assert.equal(h.detailSectorColorFor({ level: 'book', id: 'A' }), null,
+      'no divisionsFor, no colour, no throw');
+  });
+});
+
+describe('the circle repaints without disturbing what is in flight (O-79)', () => {
+  const makeLogo = async (fill = '#16337a') => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 400, height: 800 });
+    const attrs = { fill };
+    logo.circle = { setAttribute: (name, value) => { attrs[name] = value; }, getAttr: n => attrs[n] };
+    logo._renderConfig = { color_scheme: { detail_sector: fill, detail_sector_opacity: '0.5' } };
+    return { logo, attrs };
+  };
+
+  it('repaints the badge AND the value the expand reads', async () => {
+    const { logo, attrs } = await makeLogo();
+    assert.equal(logo.setColor('#362e6a'), true);
+    assert.equal(attrs.fill, '#362e6a', 'the collapsed badge');
+    assert.equal(logo._renderConfig.color_scheme.detail_sector, '#362e6a',
+      'and the one value the expand and the collapse-reset both read — three '
+      + 'places, one source, or the leaf background disagrees with the badge');
+  });
+
+  it('REPAINTS WHILE EXPANDED, which is where the crossing actually happens', async () => {
+    const { logo, attrs } = await makeLogo();
+    logo._expanded = true;
+    logo._animating = true;
+    assert.equal(logo.setColor('#362e6a'), true);
+    assert.equal(attrs.fill, '#362e6a',
+      'waiting for the next collapse leaves the new emblem on the old ground');
+    assert.equal(logo._expanded, true, 'an expanded badge stays expanded');
+    assert.equal(logo._animating, true, 'and an animation in flight is not cancelled');
+  });
+
+  it('reports false for the same colour, so a frequent caller stays quiet', async () => {
+    const { logo } = await makeLogo('#16337a');
+    assert.equal(logo.setColor('#16337a'), false, 'already showing it');
+    assert.equal(logo.setColor(null), false, 'nothing to show');
+    assert.equal(logo.setColor(''), false);
+  });
+
+  it('refuses rather than throwing before there is anything to paint', async () => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const bare = new VolumeLogo(null, { width: 400, height: 800 });
+    assert.equal(bare.setColor('#362e6a'), false, 'no config yet');
+  });
+});
