@@ -4,8 +4,21 @@
 // changes — a regex loosened, a spelling forgotten, the hook unwired from
 // settings.json — the suite goes red rather than the wall going quiet.
 //
-// Skips only where no config exists (a fresh public checkout has no wall to
-// test); in this repository the config is committed, so it always runs.
+// TWO SKIPS, AND THE SECOND IS INVISIBLE IN A GREEN RUN (noted O-74).
+//
+// The first skips where no wall config exists — a fresh public checkout has
+// no wall to test. That one never fires here: the config is committed.
+//
+// The second skips where there is no `/usr/bin/node`, and it fires on EVERY
+// CI run, because the risk it guards is a property of Howell's machine (a
+// desktop-launched session reaching an ancient system node) and not of a
+// GitHub runner. So the 55-cell system-node matrix W-46 added is a LOCAL
+// check only, and a green CI tick has never included it.
+//
+// Both are DECLARED skips, so they report as skipped rather than passed, and
+// that is the honest form — but "reported" and "read" are different things
+// when the summary line says green. Stated here so the next reader knows the
+// matrix's real coverage without counting cells in a log.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { existsSync } from 'node:fs';

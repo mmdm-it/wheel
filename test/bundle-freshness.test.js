@@ -42,9 +42,30 @@ function sourceFiles(dir) {
   return out;
 }
 
+// A SILENT SKIP IS A PASS, AND THIS ONE HAS BEEN PASSING OVER NOTHING (O-74).
+//
+// The cell opened `if (!existsSync(BUNDLE)) return;` — a bare early exit,
+// which node's runner reports as a PASSING test. `dist/` is gitignored and CI
+// never builds, so on every CI run since this guard was written it has
+// reported "the built bundle is not older than its source" about a bundle
+// that was not there.
+//
+// The absence is legitimate — CI serves nothing, so nothing can be stale —
+// and that is exactly why this must SKIP rather than fail. What it must not
+// do is report a measurement it did not take. A declared skip carries its
+// reason into the output; a bare return is indistinguishable from a check
+// that ran and found nothing wrong.
+//
+// FOUND BY WILBUR'S WARNING, not by my own reading. He audited his suite for
+// checks that read through the wall after CI caught me writing one, found the
+// same disease in a cell of his own, and told me to look. I had grepped this
+// file's neighbourhood twice today without seeing it.
+const BUNDLE_EXISTS = existsSync(BUNDLE);
+
 describe('the built bundle is not older than its source (O-61)', () => {
-  it('dist/app.js is newer than every file it is built from', () => {
-    if (!existsSync(BUNDLE)) return; // nothing built, nothing served, nothing to be stale
+  it('dist/app.js is newer than every file it is built from', {
+    skip: BUNDLE_EXISTS ? false : 'no dist/app.js in this checkout — nothing built, nothing served, nothing to be stale'
+  }, () => {
 
     const bundleTime = statSync(BUNDLE).mtimeMs;
     const inputs = [...sourceFiles(path.join(root, 'src')), path.join(root, 'package.json')];
