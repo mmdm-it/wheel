@@ -529,7 +529,31 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         for (let i = at + 1; i < previousSeats.length && target < 0; i += 1) target = seatFor(previousSeats[i]);
       }
     }
-    if (target < 0) return false;
+    // AND IF IT SHARES NOTHING AT ALL, THE READER LANDS AT ITS BEGINNING
+    // (O-76). This returned false — "stay put" — and the comment above said
+    // "then nothing has been disturbed". That was true only while such a
+    // commit was impossible.
+    //
+    // O-72 made it impossible at a LEAF by never offering an edition that
+    // cannot seat the reader's verse, and I recorded the clause as dissolved.
+    // O-75 then reopened it deliberately: the LAUNCH funnel must offer every
+    // edition, because the reader has not chosen where to stand yet — so a
+    // reader booting into Genesis can now commit the Greek New Testament,
+    // which shares not one utterance with it.
+    //
+    // What "stay put" actually produced, measured on Howell's phone and then
+    // in a probe: the store, the active edition, the names table and the
+    // corner emblem all committed to the Greek while the ring kept the
+    // Hebrew's seats — the hybrid this function's own comment calls the one
+    // outcome worse than either edition. And the position filter then read
+    // the reader's UNCHANGED Hebrew verse and struck the Greek off the
+    // chooser, so the edition they had just chosen disappeared. "After
+    // switching between the two languages a few times, the Greek disappears."
+    //
+    // Landing at seat 0 is the only non-broken answer and it is also the
+    // right one: the reader asked for this edition from the launch plane, and
+    // an edition's beginning is where a launch belongs.
+    if (target < 0) target = 0;
 
     // Adopt the rebuilt chain, and drop the chapters cache so the ring above
     // — and the sky under it — are rebuilt from these same seats (E3).
@@ -861,6 +885,33 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // did the original say?" at the verse. Between them it is clutter; the
     // host hides it while drilling. The adapter names the door (its own
     // dialect); the host stays volume-agnostic.
+    // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31).
+    //
+    // Howell's report was that the Torah scroll never became a crown of thorns
+    // for the New Testament. Two causes: the image was declared once for the
+    // whole VOLUME, and it was painted once at boot. The declaration moved to
+    // the division under H-31; this is the reading half.
+    //
+    // The answer is the division holding the reader's BOOK, so in an edition
+    // spanning both halves the corner changes as they cross into Matthew — and
+    // in an edition holding one, it is simply that edition's own emblem. Null
+    // when nothing is declared, which leaves whatever the volume config
+    // painted rather than blanking the corner.
+    cornerImageFor: item => {
+      const volume = manifest?.__wallVolume;
+      const edition = options?.activeEdition || options?.translation || null;
+      if (!volume || !edition || typeof volume.divisionsFor !== 'function') return null;
+      const divisions = volume.divisionsFor(edition);
+      if (!divisions.length) return null;
+      const unitId = bookIdOf(item);
+      const holding = unitId
+        ? divisions.find(d => Array.isArray(d.books) && d.books.includes(unitId))
+        : null;
+      // No book in hand — the root, a division ring — so the emblem is the
+      // one the reader is about to enter, which is the first this edition has.
+      return (holding || divisions[0]).image || null;
+    },
+
     // WHICH EDITIONS HOLD WHERE THE READER IS STANDING (H-29's carry-out,
     // Howell 2026-08-19).
     //

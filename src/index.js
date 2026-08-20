@@ -1928,6 +1928,11 @@ export function createApp({
   return {
     advanceLeaf,
     detailAreaAdvances,
+    // THE CORNER EMBLEM FOLLOWS THE READER (H-31). The host owns WHEN — it is
+    // the only thing that knows a book changed — and the volume owns WHICH.
+    // Returns whether anything actually changed, so a caller on a frequent
+    // signal can stay quiet.
+    setCornerImage: name => volumeLogo.setImage(name),
     nav,
     view,
     choreographer,

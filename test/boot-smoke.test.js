@@ -54,6 +54,33 @@ describe('the app boots', () => {
     const text = String(content?.textContent || '');
     assert.ok(!/Failed to initialize/.test(text), `detail sector shows: ${text}`);
   });
+
+  // THE LAUNCH FUNNEL OFFERS EVERY SERVABLE LANGUAGE (O-75), and this cell
+  // exists because nothing else in the suite could see the defect.
+  //
+  // Howell's ruling 2 of 2026-07-30: every launch opens on the LANGUAGE plane
+  // and the reader travels inward. O-72 then taught the chooser to offer only
+  // the editions holding where the reader stands — right for a sideways move
+  // at a leaf, wrong for the launch question, because the app boots INTO the
+  // text. So the funnel opened already filtered by a position the reader had
+  // not chosen, and the Greek New Testament — which holds no verse of Genesis
+  // — was unreachable from launch. One screenshot found it.
+  //
+  // Every cell O-72 shipped still passed: they test the adapter, the bridge,
+  // and the seam between them. The defect was in the HOST's decision about
+  // WHEN to push a position, which only a real boot can observe. That is why
+  // this assertion lives here, in the file that boots main.js for real,
+  // rather than beside the ones it belongs to by subject.
+  it('THE LAUNCH FUNNEL CARRIES NO POSITION FILTER, so nothing is narrowed away', () => {
+    // Asserted as the INVARIANT rather than as a list of languages, because
+    // this suite boots the one-book fixture and a language list would pass
+    // there whatever the filter did. `here === null` is the fact: no position
+    // has been pushed, so every servable edition is on offer.
+    const here = globalThis.window?.__wheelDimension?.here?.();
+    assert.equal(here, null,
+      'the funnel was filtered by the verse the app happened to boot into — '
+      + `an edition not holding it is unreachable from launch (got ${JSON.stringify(here)})`);
+  });
 });
 
 // The SECOND bug of the day, guarded precisely rather than by smoke: boot used

@@ -1003,6 +1003,9 @@ function cycleStrata() {
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
+  // The funnel is over the moment the reader arrives at the text. From here
+  // the globe answers the sideways question and O-72's filter is right again.
+  bootFunnelOpen = false;
   strataFront = 0;
   CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
   renderStack();
@@ -1022,6 +1025,22 @@ let dimensionFrontDoorAt = () => false;
 // rather than "nothing" — the host never learns which volumes those are, and
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
+// WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
+// answer, bound per volume. Null from a volume that declares none.
+let cornerImageAt = () => null;
+// THE LAUNCH QUESTION IS NOT A SIDEWAYS MOVE (O-75).
+//
+// The boot funnel asks "what do you read?" before the reader is anywhere —
+// Howell's ruling 2 of 2026-07-30: every launch opens on the LANGUAGE plane
+// and the reader travels inward, language then edition then text. O-72's
+// position filter answers a different question — "may I swap edition while
+// standing HERE?" — and applying it to the funnel silently removed every
+// edition that does not hold the verse the app happened to boot into.
+//
+// On the LAN that meant the Greek New Testament was unreachable from launch:
+// the app boots at Genesis 1:1, the Hebrew is the only edition holding it, and
+// the language plane opened with one node. Howell found it in one screenshot.
+let bootFunnelOpen = false;
 // Repaints the PRIMARY for a previewed language/edition while a chooser is
 // being turned — assigned by bootVolume, which owns the adapter and manifest.
 let previewPrimary = () => {};
@@ -1186,7 +1205,26 @@ function updateSectionLabel() {
 // button is held mid-wipe or hidden — the strata read it when they open, not
 // when it was last computed. It runs after the no-button guard, because a
 // page with no globe has no chooser to filter.
+// THE CORNER FOLLOWS THE READER (H-31). Howell's report was that the Torah
+// scroll never became a crown of thorns for the New Testament, and half of
+// that was here: `index.js` painted the emblem ONCE at boot and no code path
+// repainted it, so even correct data could not have shown.
+//
+// It rides the same signals as the NOT PROOFREAD badge and the section label,
+// for the same reason H-26 gives: only a change of BOOK can change the answer
+// within an edition, and an edition change can change it outright. The swap
+// itself is a no-op when the name is unchanged, so calling it freely is cheap.
+function updateCornerImage() {
+  try {
+    const name = cornerImageAt(currentApp?.nav?.getCurrent?.());
+    if (name) currentApp?.setCornerImage?.(name);
+  } catch (_) { /* a volume that cannot answer keeps whatever it painted */ }
+}
+
 function refreshEditionsHere() {
+  // While the launch funnel is up there is no "here" yet — the reader has not
+  // chosen where to stand, so nothing may be filtered out of the choice.
+  if (bootFunnelOpen) { dimensionBridge.setEditionsHere(null); return; }
   let codes = null;
   try { codes = editionsHoldingItem(currentApp?.nav?.getCurrent?.()); } catch (_) { codes = null; }
   dimensionBridge.setEditionsHere(codes);
@@ -1228,6 +1266,10 @@ function refreshDimensionButton() {
 // Revisitable once real readers report.
 function openBootFunnel() {
   if (!dimensionButton || !dimensionAvailable()) return false;
+  // Raised BEFORE `dimensionAvailable()` matters below and before the strata
+  // render, so the language plane is stocked from the unfiltered answer.
+  bootFunnelOpen = true;
+  refreshEditionsHere();
   strataFront = maxStrataFront();
   renderStack();
   updateDimensionButton();
@@ -1241,6 +1283,8 @@ if (typeof window !== 'undefined') {
     get: () => dimensionBridge.getSelection(),
     set: id => dimensionBridge.setTranslation(id) || dimensionBridge.setLanguage(id),
     languages: () => dimensionBridge.languagesAvailable(),
+    // Null while the launch funnel is up (O-75), the reader's position after.
+    here: () => dimensionBridge.editionsHere(),
     cycle: cycleStrata
   };
 }
@@ -2396,6 +2440,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   dimensionFrontDoorAt = typeof handlerSet.showsDimensionAt === 'function' ? handlerSet.showsDimensionAt : () => false;
   // The chooser offers the editions that hold where the reader stands (H-29).
   editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;
+  // The corner emblem belongs to the division the reader is in (H-31). A
+  // volume that declares none answers null and its corner never changes,
+  // which is every volume but one.
+  cornerImageAt = typeof handlerSet.cornerImageFor === 'function' ? handlerSet.cornerImageFor : () => null;
 
   const layoutBindings = handlerSet.layoutBindings || {};
   const layoutSpec = createVolumeLayoutSpec({
@@ -2507,6 +2555,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       if (book === lastMarkedBook) return;
       lastMarkedBook = book;
       updateIncompleteMark();
+      updateCornerImage();
       // The section label rides the same signal, and for the same reason:
       // only a change of BOOK can change either answer (H-26). It is the
       // division being seen as an EVENT that Howell asked for, so it must
@@ -2599,12 +2648,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // one step of descent hides it (nav change), the leaf brings it back
   // (detail-sector-change). This call catches the boot/gateway arrival.
   updateDimensionButton();
+  updateCornerImage();
   app?.nav?.onChange?.(() => {
     renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
     updateDimensionButton();
     rememberReadingPosition();
   });
   dimensionBridge.onSettle(translation => {
+    // A committed choice ends the launch question, whether or not the strata
+    // have receded yet.
+    bootFunnelOpen = false;
     window.__wheelTapTrace?.push({ ev: 'dim-settle', tr: translation || '' });
     // THE SHELF FOLLOWS THE READER (W-16): refresh the live names table
     // FIRST, then repaint. The chain is not rebuilt and nothing moves — the
@@ -2633,8 +2686,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       .then(() => handlerSet.reseatOnEditionChange?.({
         selected: app?.nav?.getCurrent?.(), app
       }))
+      // AFTER the reseat, not before it (O-76). The reader may have been
+      // carried to a different book — to another division entirely, when the
+      // new edition shares nothing with where they stood — and both the
+      // emblem and the chooser's position answer are read off where they now
+      // ARE. Computing either from the old seat paints the last edition's
+      // corner and offers the last edition's neighbours.
+      .then(() => { updateCornerImage(); refreshEditionsHere(); })
       .catch(() => {});
     updateIncompleteMark();
+    updateCornerImage();
   });
   // Re-wrap the open detail the moment EB Garamond truly lands (Howell
   // 2026-07-27): the first wrap may have measured in the Georgia fallback,

@@ -262,6 +262,11 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // O-71, for the same reason).
     setEditionsHere(codes) { here = Array.isArray(codes) ? codes.slice() : null; },
 
+    // The current position filter, for diagnostics and for the one cell that
+    // can observe O-75: null means no restriction. Read-only — a copy, so a
+    // caller cannot reach in and change what the chooser offers.
+    editionsHere() { return here ? [...here] : null; },
+
     // The chooser ring settles on a language. A REAL language adopts it with its
     // default edition (the reader repaints). A placeholder (no editions) is
     // remembered for the display only — nothing is dispatched, so the reader
