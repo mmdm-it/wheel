@@ -1,6 +1,6 @@
 {
-  "_schema_version": "4.0",
-  "_note": "H-11 layout fixture under the H-14 wall. Genesis 1, Douay-Rheims offered.",
+  "_schema_version": "5.0",
+  "_note": "H-11 layout fixture under the H-14 wall, flattened under H-29: the volume enumerates books and says nothing about which division they are in. That is the edition’s, declared in its chart index.",
   "display_config": {
     "volume_schema_version": "3.0.0",
     "volume_data_version": "v1",
@@ -134,15 +134,10 @@
       }
     }
   },
-  "testaments": [
+  "books": [
     {
-      "id": "t0dc09",
-      "books": [
-        {
-          "id": "bc22df",
-          "leaves": 31
-        }
-      ]
+      "id": "bc22df",
+      "leaves": 31
     }
   ],
   "editions": [

@@ -29,26 +29,32 @@ const VERSION = 'v1';
 const at = rel => path.join(root, BASE, VERSION, rel);
 const read = rel => JSON.parse(readFileSync(at(rel), 'utf-8'));
 
+// The RAW files, not the loaded volume — this suite is about the fixture's
+// shape on disk. Under H-29 the enumeration is a flat `books[]` and the level
+// above them is the EDITION'S, declared in its chart index.
 const volume = read('volume.json');
-const testament = volume.testaments[0];
-const unitId = testament.books[0].id;
+const division = read('charts/DRA/index.json').divisions[0];
+const unitId = volume.books[0].id;
 
 describe('the H-11 fixture — shape', () => {
   it('carries one book, opaque, with its leaf count', () => {
-    assert.equal(testament.books.length, 1);
-    assert.equal(testament.books[0].leaves, 31, 'Genesis 1 has 31 verses');
+    assert.equal(volume.books.length, 1);
+    assert.equal(volume.books[0].leaves, 31, 'Genesis 1 has 31 verses');
     assert.doesNotMatch(unitId, /GEN|genesis/i,
       'the filesystem must stop spelling out what a thing IS (H-11)');
   });
 
-  it('CARRIES THE TESTAMENT — the reader keeps its levels (Howell, 2026-08-12)', () => {
+  it('CARRIES THE DIVISION — the reader keeps its levels (Howell, 2026-08-12)', () => {
     // The wall must not quietly flatten the reader's world. With one book the
-    // testament has one child, which is degenerate and correct, and it is the
-    // shape 79 books will hang from.
-    assert.equal(volume.testaments.length, 1);
-    assert.equal(testament.books.length, 1);
-    assert.doesNotMatch(testament.id, /Testamentum/i,
-      'the testament id goes opaque like every other id (H-11 item 2)');
+    // division has one child, which is degenerate and correct.
+    //
+    // WHERE IT LIVES CHANGED UNDER H-29 and the level did not. It was stored
+    // on the volume, which asserted one division of itself for every edition;
+    // it is now the edition's own, declared in its chart index and quoted.
+    assert.equal(read('charts/DRA/index.json').divisions.length, 1);
+    assert.deepEqual(division.books ?? [division.from, division.to], [1, 1],
+      'the division covers the one book this fixture enumerates');
+    assert.ok(division.label, 'and it is named — never a node without a name (H-29)');
   });
 
   it('CARRIES NO SECTION LEVEL — the reader cannot stand there', () => {
@@ -63,7 +69,7 @@ describe('the H-11 fixture — shape', () => {
     // Emitting one would have put a dead level into the sole enumeration on
     // the strength of a stale declaration — a derived-view failure with a
     // straight face, and precisely the kind this month keeps producing.
-    assert.equal(testament.sections, undefined,
+    assert.equal(division.sections, undefined,
       'a section here is a level the reader can never reach');
     assert.ok(!JSON.stringify(volume).includes('section'),
       'nothing in the sole enumeration may mention a retired level');
@@ -140,10 +146,12 @@ describe('the H-11 fixture — volume.json is the sole enumeration', () => {
   it('names are QUOTATIONS, carried per language, never manufactured (H-2)', () => {
     const names = read('names/english.json');
     assert.equal(names.books[unitId], 'Genesis');
-    assert.equal(names.testaments[testament.id], 'Old Testament');
+    // H-29: the division's name is the EDITION'S, quoted from its chart, and
+    // no longer a per-language entry in the names table.
+    assert.equal(division.label, 'Holy Bible');
     // Every enumerated id has a name, or the reader meets a raw opaque id.
-    for (const id of [unitId, testament.id]) {
-      const found = names.books[id] || names.testaments[id];
+    for (const id of [unitId]) {
+      const found = names.books[id];
       assert.ok(found, `${id} is enumerated with no name in any category`);
     }
   });

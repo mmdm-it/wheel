@@ -871,7 +871,9 @@ describe('a shelf drifting from the volume is LOUD (H-26)', () => {
           if (p.endsWith('volume.json')) {
             return {
               editions: [{ code: 'ED', language: 'l', hasChart: true }],
-              testaments: [{ id: 'T', books: volumeUnits.map(id => ({ id })) }]
+              // H-29: the enumeration is flat; the level above books is the
+              // edition's, declared in its chart index.
+              books: volumeUnits.map(id => ({ id }))
             };
           }
           if (p.endsWith('index.json')) return { edition: 'ED', units: shelfUnits, groups: [] };
