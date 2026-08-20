@@ -80,3 +80,28 @@ export function seatIndexForUtterance(items, utteranceId) {
   }
   return -1;
 }
+
+// THE SAME QUESTION, ASKED MANY TIMES (O-78). One lookup above is a scan, and
+// a scan is fine for one. The re-seating asks it once per seat the reader
+// passes on the way out of a crossing, and when the two editions share
+// NOTHING it asks it for every seat in the chain and never finds an answer:
+// 23,213 Hebrew seats against 7,958 Greek ones is 185 million scans, measured
+// at twelve to seventeen seconds on a laptop. Howell's phone hung for ten.
+//
+// So the caller building an outward walk indexes the destination ONCE — one
+// pass over the seats — and every probe after that is a map lookup. The scan
+// above is kept for the single-shot case, where an index would cost more than
+// it saves.
+export function buildUtteranceSeatIndex(items) {
+  const index = new Map();
+  if (!Array.isArray(items)) return index;
+  for (let i = 0; i < items.length; i += 1) {
+    const utterances = items[i]?.meta?.utterances;
+    if (!Array.isArray(utterances)) continue;
+    // FIRST SEAT WINS, which is what the scan did: a fused seat names several
+    // utterances and an utterance could in principle be named twice, and the
+    // reader must land on the earlier of them either way.
+    for (const u of utterances) if (u != null && !index.has(u)) index.set(u, i);
+  }
+  return index;
+}
