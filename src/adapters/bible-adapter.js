@@ -2,7 +2,7 @@ import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildBibleTestaments, getBibleChapters, getBibleVerseItems, getBibleVerseCacheStatus, prefetchBibleVerses, getVerseTextResolved, getVerseTextForSeat, toTraditionNumeral, toDisplayCase, bookIdOf } from './volume-helpers.js';
 import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cousin-builder.js';
-import { seatIndexForUtterance } from '../navigation/seating-chart.js';
+import { buildUtteranceSeatIndex } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
 import { volumeHoldsUnit, editionSeatsUtterance } from './bible-volume.js';
@@ -503,7 +503,18 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // an ordinal that could match in the wrong place.
     if (!Array.isArray(anchor?.meta?.utterances) || !anchor.meta.utterances.length) return false;
 
-    const seatFor = it => seatIndexForUtterance(rebuilt, it?.meta?.utterances?.[0]);
+    // INDEXED ONCE, NOT SCANNED PER PROBE (O-78). The outward walk below asks
+    // "where does this utterance sit in the new edition?" once per seat the
+    // reader passes, and where the two editions share nothing it asks for
+    // every seat in the chain. As a scan that was 185 million comparisons and
+    // twelve to seventeen seconds; as a map it is one pass and a lookup each.
+    const seatOf = buildUtteranceSeatIndex(rebuilt);
+    const seatFor = it => {
+      const utterance = it?.meta?.utterances?.[0];
+      if (utterance == null) return -1;
+      const at = seatOf.get(utterance);
+      return at === undefined ? -1 : at;
+    };
 
     // THE NEAREST SCRIPTURE THIS EDITION ACTUALLY HOLDS (Howell from the
     // phone, 2026-08-03). This used to give up when the new artifact had no
