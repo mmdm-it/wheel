@@ -1003,6 +1003,9 @@ function cycleStrata() {
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
+  // The funnel is over the moment the reader arrives at the text. From here
+  // the globe answers the sideways question and O-72's filter is right again.
+  bootFunnelOpen = false;
   strataFront = 0;
   CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
   renderStack();
@@ -1025,6 +1028,19 @@ let editionsHoldingItem = () => null;
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
 let cornerImageAt = () => null;
+// THE LAUNCH QUESTION IS NOT A SIDEWAYS MOVE (O-75).
+//
+// The boot funnel asks "what do you read?" before the reader is anywhere —
+// Howell's ruling 2 of 2026-07-30: every launch opens on the LANGUAGE plane
+// and the reader travels inward, language then edition then text. O-72's
+// position filter answers a different question — "may I swap edition while
+// standing HERE?" — and applying it to the funnel silently removed every
+// edition that does not hold the verse the app happened to boot into.
+//
+// On the LAN that meant the Greek New Testament was unreachable from launch:
+// the app boots at Genesis 1:1, the Hebrew is the only edition holding it, and
+// the language plane opened with one node. Howell found it in one screenshot.
+let bootFunnelOpen = false;
 // Repaints the PRIMARY for a previewed language/edition while a chooser is
 // being turned — assigned by bootVolume, which owns the adapter and manifest.
 let previewPrimary = () => {};
@@ -1206,6 +1222,9 @@ function updateCornerImage() {
 }
 
 function refreshEditionsHere() {
+  // While the launch funnel is up there is no "here" yet — the reader has not
+  // chosen where to stand, so nothing may be filtered out of the choice.
+  if (bootFunnelOpen) { dimensionBridge.setEditionsHere(null); return; }
   let codes = null;
   try { codes = editionsHoldingItem(currentApp?.nav?.getCurrent?.()); } catch (_) { codes = null; }
   dimensionBridge.setEditionsHere(codes);
@@ -1247,6 +1266,10 @@ function refreshDimensionButton() {
 // Revisitable once real readers report.
 function openBootFunnel() {
   if (!dimensionButton || !dimensionAvailable()) return false;
+  // Raised BEFORE `dimensionAvailable()` matters below and before the strata
+  // render, so the language plane is stocked from the unfiltered answer.
+  bootFunnelOpen = true;
+  refreshEditionsHere();
   strataFront = maxStrataFront();
   renderStack();
   updateDimensionButton();
@@ -1260,6 +1283,8 @@ if (typeof window !== 'undefined') {
     get: () => dimensionBridge.getSelection(),
     set: id => dimensionBridge.setTranslation(id) || dimensionBridge.setLanguage(id),
     languages: () => dimensionBridge.languagesAvailable(),
+    // Null while the launch funnel is up (O-75), the reader's position after.
+    here: () => dimensionBridge.editionsHere(),
     cycle: cycleStrata
   };
 }
@@ -2630,6 +2655,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     rememberReadingPosition();
   });
   dimensionBridge.onSettle(translation => {
+    // A committed choice ends the launch question, whether or not the strata
+    // have receded yet.
+    bootFunnelOpen = false;
     window.__wheelTapTrace?.push({ ev: 'dim-settle', tr: translation || '' });
     // THE SHELF FOLLOWS THE READER (W-16): refresh the live names table
     // FIRST, then repaint. The chain is not rebuilt and nothing moves — the
