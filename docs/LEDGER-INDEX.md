@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-19 from 214 entries.
+Generated 2026-08-20 from 221 entries.
 
 | id | status | title |
 |---|---|---|
@@ -116,6 +116,9 @@ Generated 2026-08-19 from 214 entries.
 | O-71 | FIXED | EACH EDITION WAS DISPLAYING THE HALF IT DOES NOT HAVE |
 | O-72 | FIXED | THE CHOOSER NOW OFFERS ONLY THE EDITIONS THAT HOLD WHERE YOU STAND |
 | O-73 | FIXED | THE THIRD GRANT NEARLY LEFT NOTICE WITHOUT A SENTENCE — and W-100 never covered it |
+| O-74 | FIXED AND MERGED | A SILENT SKIP IS A PASS, and this guard had been passing over nothing |
+| O-75 | FIXED | THE LAUNCH FUNNEL IS NOT A SIDEWAYS MOVE — the Greek was unreachable from boot |
+| O-76 | FIXED | AN EDITION SHARING NOTHING LANDS THE READER AT ITS BEGINNING |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -226,3 +229,7 @@ Generated 2026-08-19 from 214 entries.
 | W-108 | RULED AND DONE | THE GREEK NEW TESTAMENT IS KNOWN — the 1904 Patriarchal Text, seated as 50grc |
 | W-109 | RULED AND DONE | LEAVES ARE COUNTED FROM THE SPINE, NOT FROM THE FIRST EDITION |
 | W-110 | RULED | THE GREEK NEW TESTAMENT STAYS KNOWN AND UNPROOFREAD — an engine bug is not a corpus issue |
+| W-111 | RULED AND DONE | THE H-29 CARGO HALF — divisions emitted, the testament tree gone |
+| W-112 | RULED AND DONE | THE HEBREW'S SWEEP DELETED THE GREEK'S SPINE — shared storage, one edition's book list |
+| W-113 | RULED AND DONE | EVERY LABEL SAYS WHETHER IT IS QUOTED OR DERIVED — and the Greek's artifact name is corrected |
+| W-114 | RULED | THE IMAGES ARE CARGO'S — the engine is agnostic, a crown of thorns is not |
