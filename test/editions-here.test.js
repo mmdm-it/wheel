@@ -117,9 +117,7 @@ describe('the chooser offers the editions that hold where you stand', () => {
 
   it('the EDITION plane is filtered by the same answer, not just the language ring', () => {
     const bridge = makeBridge();
-    // TWO LANGUAGES SURVIVE HERE, so the filter is in force and reaches both
-    // planes. (Its behaviour where only ONE survives is O-78's, below.)
-    bridge.setEditionsHere(['LAT', 'GRC']);
+    bridge.setEditionsHere(['LAT']);
     assert.deepEqual(bridge.translationsOf('hebrew'), [bridge.comingSoonKey],
       'a language with no edition here has nothing on its shelf');
     assert.deepEqual(bridge.translationsOf('latin'), ['LAT']);
@@ -127,72 +125,21 @@ describe('the chooser offers the editions that hold where you stand', () => {
 
   it('AN EDITION THAT IS NOT HERE CANNOT BE COMMITTED, even if asked directly', () => {
     const bridge = makeBridge();
-    bridge.setEditionsHere(['LAT', 'GRC']);
+    bridge.setEditionsHere(['LAT']);
     assert.equal(bridge.setTranslation('HEB'), false,
       'a stale preview or a deep link must not land the reader off the map');
     assert.equal(bridge.getSelection().translation, 'LAT', 'and nothing moved');
   });
-});
 
-// THE FILTER NARROWS A CHOICE; IT MAY NEVER REMOVE ONE (O-78).
-//
-// Howell, from the LAN: *"upon return to the Tertiary Stratum the unselected
-// language disappears, leaving only the selected language in the Magnifier,
-// with no option to change to another language."*
-//
-// H-29 is not wrong — its corpus has not arrived. It was ruled against a shelf
-// with a Latin spanning everything, where Genesis offers Hebrew+Latin and
-// Matthew offers Greek+Latin: two nodes and a way onward either way. The shelf
-// today holds two editions sharing not one utterance, so the filter always
-// leaves exactly ONE language and the ring stops being a chooser at the first
-// leaf the reader reaches.
-//
-// The harm it guarded is answered elsewhere now: it existed because there was
-// no good landing for an edition that cannot seat you, and O-76 supplied one.
-describe('the position filter never leaves the reader with one door', () => {
-  it('WIDENS BACK TO EVERYTHING when only the reader\'s own language survives', () => {
+  it('AN EMPTY LIST IS A MEASUREMENT; NULL IS THE ABSENCE OF ONE', () => {
     const bridge = makeBridge();
-    bridge.setEditionsHere(['LAT']);
-    assert.deepEqual(bridge.languagesAvailable().sort(), ['greek', 'hebrew', 'latin'],
-      'a language ring holding one node is not a chooser, it is a dead end');
-  });
-
-  it('and what the ring offers is COMMITTABLE — an offer that refuses is worse', () => {
-    const bridge = makeBridge();
-    bridge.setEditionsHere(['LAT']);
-    assert.deepEqual(bridge.translationsOf('hebrew'), ['HEB'],
-      'the edition plane must stock what the language plane just offered');
-    assert.equal(bridge.setTranslation('HEB'), true,
-      'and the commit must land — a node that swallows the tap is the same trap');
-    assert.equal(bridge.getSelection().translation, 'HEB');
-  });
-
-  it('THE CLAUSE RETIRES ITSELF the day a spanning edition lands', () => {
-    const bridge = makeBridge();
-    // Exactly H-29's own example: the Latin spans, so two languages survive
-    // and the filter governs unchanged. Nothing here needs revisiting when
-    // that edition arrives.
-    bridge.setEditionsHere(['LAT', 'GRC']);
-    assert.deepEqual(bridge.languagesAvailable().sort(), ['greek', 'latin'],
-      'the Hebrew is gone, which is the ruling working');
-  });
-
-  it('an empty measurement is not a locked door either', () => {
-    const bridge = makeBridge();
-    // `[]` still means something different from `null` INSIDE the bridge — a
-    // measurement that found nothing, against no measurement at all. What
-    // changed under O-78 is the consequence: an empty ring strands the reader
-    // exactly as a one-node ring does, so the filter does not apply.
     bridge.setEditionsHere([]);
-    assert.deepEqual(bridge.languagesAvailable().sort(), ['greek', 'hebrew', 'latin'],
-      'nowhere reaches here, so the reader may go anywhere — O-76 lands them');
+    assert.deepEqual(bridge.languagesAvailable(), [],
+      'nowhere reaches here — honest, and different from the root');
     bridge.setEditionsHere(null);
     assert.equal(bridge.languagesAvailable().length, 3,
       'and null restores everything rather than sticking at empty');
   });
-});
-
-describe('the chooser offers the editions that hold where you stand (cont.)', () => {
 
   it('a volume whose adapter never answers is never filtered', () => {
     const bridge = makeBridge();

@@ -223,41 +223,7 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // NOTHING HERE KNOWS WHICH VOLUME THAT IS, and the suite enforces it: this
   // file may not name one. The adapter computes the list, the host pushes it,
   // and this compares strings.
-  //
-  // BUT IT NARROWS A CHOICE AND MAY NEVER REMOVE ONE (O-78). Howell, from the
-  // LAN: *"upon return to the Tertiary Stratum the unselected language
-  // disappears, leaving only the selected language in the Magnifier, with no
-  // option to change to another language."*
-  //
-  // H-29 is not wrong; its corpus has not arrived. Howell ruled it against a
-  // shelf holding a Latin that spans everything — Genesis offers Hebrew and
-  // Latin, Matthew offers Greek and Latin, and either way there are two nodes
-  // and a way onward. Today the shelf holds exactly two editions and they
-  // share not one utterance, so the filter always leaves exactly ONE language
-  // and the ring stops being a chooser. The dimension button's whole purpose
-  // dies at the first leaf the reader reaches.
-  //
-  // And the harm the filter was written to prevent is already answered
-  // elsewhere: it existed because there was no good landing for an edition
-  // that cannot seat you, and O-76 supplied one — the reader lands at that
-  // edition's beginning, deliberately and legibly.
-  //
-  // So: when the filter would leave the reader nothing but the language they
-  // are already reading, it does not apply. It is not softened, not partially
-  // applied — a half-filtered ring would be a third behaviour to explain. And
-  // the clause RETIRES ITSELF the day a spanning edition lands: two languages
-  // survive the filter, the clause never fires, and H-29 governs unchanged.
-  let hereInForce = null;
-  const recomputeHereInForce = () => {
-    hereInForce = null;
-    if (!here) return;
-    const languages = new Set();
-    for (const [key, t] of Object.entries(meta?.translations || {})) {
-      if (t?.language && isServable(t) && here.includes(key)) languages.add(t.language);
-    }
-    if (languages.size >= 2) hereInForce = here;
-  };
-  const isHere = key => !hereInForce || hereInForce.includes(key);
+  const isHere = key => !here || here.includes(key);
 
   // Servable AND here. The default-edition pick reads this, so a language
   // chosen at a leaf lands on an edition that actually holds that leaf.
@@ -285,9 +251,7 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   return {
     // A gateway reboot re-creates adapters but the store (and this bridge)
     // survive at the host level; only the registry is refreshed.
-    // Recomputed on both, because the clause reads BOTH: which editions are
-    // here, and which languages those editions belong to.
-    setTranslationsMeta(next) { meta = next || null; recomputeHereInForce(); },
+    setTranslationsMeta(next) { meta = next || null; },
     setLanguagesMeta(next) { langMeta = next || null; },
 
     // The host reports where the reader is standing, as the list of edition
@@ -296,10 +260,7 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // an empty one, is a measurement; null is the absence of one, and the two
     // must not be confused (the same distinction `chartedUnitsOf` draws under
     // O-71, for the same reason).
-    setEditionsHere(codes) {
-      here = Array.isArray(codes) ? codes.slice() : null;
-      recomputeHereInForce();
-    },
+    setEditionsHere(codes) { here = Array.isArray(codes) ? codes.slice() : null; },
 
     // The current position filter, for diagnostics and for the one cell that
     // can observe O-75: null means no restriction. Read-only — a copy, so a

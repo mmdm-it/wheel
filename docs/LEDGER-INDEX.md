@@ -120,7 +120,7 @@ Generated 2026-08-20 from 223 entries.
 | O-75 | FIXED | THE LAUNCH FUNNEL IS NOT A SIDEWAYS MOVE — the Greek was unreachable from boot |
 | O-76 | FIXED | AN EDITION SHARING NOTHING LANDS THE READER AT ITS BEGINNING |
 | O-77 | FIXED | TURNING THE LANGUAGE RING IS A COMMIT, and the commit was closing the funnel |
-| O-78 | FIXED | THE CROSSING SCANNED 185 MILLION TIMES TO LEARN NOTHING, and the filter left one door |
+| O-78 | THE HANG FIXED | THE CROSSING SCANNED 185 MILLION TIMES TO LEARN NOTHING — and a filter I mistook for a trap |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
