@@ -2686,6 +2686,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       .then(() => handlerSet.reseatOnEditionChange?.({
         selected: app?.nav?.getCurrent?.(), app
       }))
+      // AFTER the reseat, not before it (O-76). The reader may have been
+      // carried to a different book — to another division entirely, when the
+      // new edition shares nothing with where they stood — and both the
+      // emblem and the chooser's position answer are read off where they now
+      // ARE. Computing either from the old seat paints the last edition's
+      // corner and offers the last edition's neighbours.
+      .then(() => { updateCornerImage(); refreshEditionsHere(); })
       .catch(() => {});
     updateIncompleteMark();
     updateCornerImage();

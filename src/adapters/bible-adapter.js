@@ -529,7 +529,31 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         for (let i = at + 1; i < previousSeats.length && target < 0; i += 1) target = seatFor(previousSeats[i]);
       }
     }
-    if (target < 0) return false;
+    // AND IF IT SHARES NOTHING AT ALL, THE READER LANDS AT ITS BEGINNING
+    // (O-76). This returned false — "stay put" — and the comment above said
+    // "then nothing has been disturbed". That was true only while such a
+    // commit was impossible.
+    //
+    // O-72 made it impossible at a LEAF by never offering an edition that
+    // cannot seat the reader's verse, and I recorded the clause as dissolved.
+    // O-75 then reopened it deliberately: the LAUNCH funnel must offer every
+    // edition, because the reader has not chosen where to stand yet — so a
+    // reader booting into Genesis can now commit the Greek New Testament,
+    // which shares not one utterance with it.
+    //
+    // What "stay put" actually produced, measured on Howell's phone and then
+    // in a probe: the store, the active edition, the names table and the
+    // corner emblem all committed to the Greek while the ring kept the
+    // Hebrew's seats — the hybrid this function's own comment calls the one
+    // outcome worse than either edition. And the position filter then read
+    // the reader's UNCHANGED Hebrew verse and struck the Greek off the
+    // chooser, so the edition they had just chosen disappeared. "After
+    // switching between the two languages a few times, the Greek disappears."
+    //
+    // Landing at seat 0 is the only non-broken answer and it is also the
+    // right one: the reader asked for this edition from the launch plane, and
+    // an edition's beginning is where a launch belongs.
+    if (target < 0) target = 0;
 
     // Adopt the rebuilt chain, and drop the chapters cache so the ring above
     // — and the sky under it — are rebuilt from these same seats (E3).
