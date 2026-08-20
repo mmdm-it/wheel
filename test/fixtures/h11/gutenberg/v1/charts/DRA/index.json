@@ -2,5 +2,14 @@
   "edition": "DRA",
   "units": [
     "bc22df"
+  ],
+  "_divisions": "H-29: the edition’s own top-level division of itself — the body of books this node holds, named in its own tradition’s words, with its image beside it (H-31).",
+  "divisions": [
+    {
+      "label": "Holy Bible",
+      "image": "torah_scroll",
+      "from": 1,
+      "to": 1
+    }
   ]
 }

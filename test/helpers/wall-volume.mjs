@@ -11,9 +11,13 @@
 // Two questions, two fixtures. This is the second one, and it is shared so
 // that the shape is defined once rather than drifting between suites.
 //
-//   T1 ── ALPH  containers "1" (u1,u2) and "2" (u3,u4)   → a chapter crossing
+//   D1 ── ALPH  containers "1" (u1,u2) and "2" (u3,u4)   → a chapter crossing
 //      └─ BETH  container  "1" (u1,u2)                    → a book crossing
-//   T2 ── GAMM  container  "1" (u1,u2)                    → a testament crossing
+//   D2 ── GAMM  container  "1" (u1,u2)                    → a division crossing
+//
+// The top level is the EDITION'S division of itself (H-29), declared in its
+// chart index rather than stored on the volume — so this helper answers
+// `divisionsFor(edition)` and its `units` are flat, exactly as volume.json is.
 //
 // Every rank of the ladder appears exactly once, which is what makes a wrong
 // rank visible rather than averaged away.
@@ -50,30 +54,37 @@ export function makeWallVolume({ edition = 'ED' } = {}) {
   const spines = Object.fromEntries(Object.entries(UNITS).map(([id, u]) => [
     id, { utterances: Array.from({ length: u.leaves }, (_, i) => `${id}-u${i + 1}`) }
   ]));
+  // TWO DIVISIONS, DECLARED BY THE EDITION (H-29) — the fixture keeps its
+  // crossing, which is the whole reason it exists, but the crossing is now the
+  // EDITION'S statement rather than the volume's. `units` is flat, as
+  // `volume.json` is.
+  const DIVISIONS = [
+    { label: 'First', image: 'first_emblem', from: 1, to: 2, books: ['ALPH', 'BETH'] },
+    { label: 'Second', image: 'second_emblem', from: 3, to: 3, books: ['GAMM'] }
+  ];
+  const units = [book('ALPH'), book('BETH'), book('GAMM')];
   return {
-    testaments: [
-      { id: 'T1', order: 0, books: [book('ALPH'), book('BETH')] },
-      { id: 'T2', order: 1, books: [book('GAMM')] }
-    ],
-    units: [book('ALPH'), book('BETH'), book('GAMM')],
+    units,
     editions: [{ code: edition, language: 'english', hasChart: true, proofread: true }],
     namesByLanguage: {
-      english: {
-        testaments: { T1: 'First', T2: 'Second' },
-        books: { ALPH: 'Alpha', BETH: 'Beta', GAMM: 'Gamma' }
-      }
+      english: { books: { ALPH: 'Alpha', BETH: 'Beta', GAMM: 'Gamma' } }
     },
     displayConfig: {},
     spineFor: id => spines[id] || null,
     chartFor: (id, ed) => (ed === edition ? CHARTS[id] || null : null),
     textFor: () => null,
     has: id => Boolean(UNITS[id]),
-    toRoot: () => ({
+    bookOrderFor: () => units.map(u => u.id),
+    divisionsFor: ed => (ed === edition ? DIVISIONS.map(d => ({ ...d })) : []),
+    toRoot: ed => ({
       display_config: {},
-      testaments: {
-        T1: { sort_number: 0, books: { ALPH: { sort_number: 0 }, BETH: { sort_number: 1 } } },
-        T2: { sort_number: 1, books: { GAMM: { sort_number: 0 } } }
-      }
+      testaments: Object.fromEntries((ed === edition || ed === undefined ? DIVISIONS : [])
+        .map((d, order) => [`division-${order}`, {
+          sort_number: order,
+          name: d.label,
+          image: d.image,
+          books: Object.fromEntries(d.books.map((id, i) => [id, { sort_number: i }]))
+        }]))
     })
   };
 }

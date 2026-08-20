@@ -31,8 +31,11 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
   it('boots from volume.json and enumerates one book', async () => {
     const volume = await load();
     assert.equal(volume.units.length, 1);
-    assert.equal(volume.testaments.length, 1);
-    assert.equal(volume.testaments[0].books.length, 1);
+    // THE ENUMERATION IS FLAT (H-29). It was testaments-with-books; the volume
+    // no longer says which division a book is in, because that is the
+    // edition's and differs between them.
+    assert.equal(volume.divisionsFor('DRA').length, 1, 'the edition declares one division');
+    assert.deepEqual(volume.divisionsFor('DRA')[0].books, ['bc22df']);
     assert.equal(volume.units[0].leaves, 31);
   });
 
@@ -69,8 +72,8 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
 
   it('carries NO section level — the reader cannot stand there', async () => {
     const volume = await load();
-    assert.equal(volume.testaments[0].sections, undefined);
-    assert.ok(!JSON.stringify(volume.testaments).includes('section'));
+    assert.ok(!JSON.stringify(volume.units).includes('section'));
+    assert.ok(!JSON.stringify(volume.divisionsFor('DRA')).includes('section'));
   });
 
   it('takes its order from the DATA, never from the ids', async () => {
@@ -78,9 +81,12 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     // The fixture's ids are hashed so alphabetical order disagrees with spine
     // order. If anything here sorted by id text it would pass on one book and
     // fail on the first real testament.
-    assert.equal(volume.testaments[0].order, 0);
     assert.equal(volume.units[0].order, 0);
-    assert.equal(volume.units[0].testamentId, volume.testaments[0].id);
+    assert.equal(volume.units[0].order, 0);
+    // A BOOK CARRIES NO DIVISION (H-29): "which testament is Genesis in" is not
+    // a question about Genesis. The parent is projected from the edition.
+    assert.equal(volume.units[0].testamentId, undefined,
+      'a stored parent is exactly what the ruling retired');
   });
 });
 
@@ -89,7 +95,10 @@ describe('the wall reader — names are quotations (H-2)', () => {
     const volume = await load();
     const english = volume.namesByLanguage.english;
     assert.equal(english.books[volume.units[0].id], 'Genesis');
-    assert.equal(english.testaments[volume.testaments[0].id], 'Old Testament');
+    // The names table no longer carries a division name — the label is the
+    // edition's own, quoted from its chart (H-29/H-2), not translated per
+    // language out of our vocabulary.
+    assert.equal(volume.divisionsFor('DRA')[0].label, 'Holy Bible');
   });
 
   it('a language with no names file is unnamed, not fatal', async () => {
@@ -163,7 +172,7 @@ describe('the wall reader — it refuses what it cannot do', () => {
       () => loadBibleVolume({
         base: BASE,
         version: VERSION,
-        fetchJson: async p => (p.endsWith('volume.json') ? { testaments: [], editions: [] } : fetchJson(p))
+        fetchJson: async p => (p.endsWith('volume.json') ? { books: [], editions: [] } : fetchJson(p))
       }),
       /sole enumeration/);
   });
@@ -174,7 +183,7 @@ describe('the wall reader — it refuses what it cannot do', () => {
         base: BASE,
         version: VERSION,
         fetchJson: async p => (p.endsWith('volume.json')
-          ? { testaments: [], editions: [{ code: 'DRA', language: 'english' }] }
+          ? { books: [], editions: [{ code: 'DRA', language: 'english' }] }
           : fetchJson(p))
       }),
       /enumerates no books/);
@@ -187,10 +196,12 @@ describe('the wall reader — toRoot() normalises without rebuilding the legacy 
   it('carries the ruled hierarchy: testament to book', async () => {
     const volume = await load();
     const root = volume.toRoot();
-    const testamentId = volume.testaments[0].id;
-    assert.ok(root.testaments[testamentId]);
+    const [testamentId] = Object.keys(root.testaments);
+    assert.equal(testamentId, 'division-0', 'the key is positional and edition-local');
     assert.ok(root.testaments[testamentId].books[volume.units[0].id]);
     assert.equal(root.testaments[testamentId].books[volume.units[0].id].leaves, 31);
+    assert.equal(root.testaments[testamentId].name, 'Holy Bible', 'the edition names it');
+    assert.equal(root.testaments[testamentId].image, 'torah_scroll', 'and declares its emblem (H-31)');
   });
 
   it('BRINGS BACK NOTHING H-14 RETIRED — this is the cell that keeps it honest', async () => {
@@ -213,7 +224,7 @@ describe('the wall reader — toRoot() normalises without rebuilding the legacy 
 
   it('order is DATA in the root, not the object key order', async () => {
     const volume = await load();
-    const t = volume.toRoot().testaments[volume.testaments[0].id];
+    const t = volume.toRoot().testaments['division-0'];
     assert.equal(t.sort_number, 0);
     assert.equal(t.books[volume.units[0].id].sort_number, 0);
   });
@@ -229,7 +240,7 @@ describe('the wall reader — A PARTIAL EDITION MUST NOT POISON THE FULL ONE (O-
   // PART charts only u1.
   const VOLUME = {
     display_config: {},
-    testaments: [{ id: 't1', books: [{ id: 'u1', leaves: 2 }, { id: 'u2', leaves: 2 }] }],
+    books: [{ id: 'u1', leaves: 2 }, { id: 'u2', leaves: 2 }],
     editions: [
       { code: 'FULL', language: 'hebrew', hasChart: true, proofread: true },
       { code: 'PART', language: 'greek', hasChart: true, proofread: false }
@@ -341,10 +352,12 @@ describe('a SUPERSET spine, and an edition that reorders it (W-96 / O-69)', () =
   const CHART = { groups: [{ label: 'I', from: 1, to: 2 }, { label: 'II', from: 3, to: 4 }], seats: SEATS };
   const book = { id: 'U1', leaves: 6, order: 0, testamentId: 'T1' };
   const volume = {
-    testaments: [{ id: 'T1', order: 0, books: [book] }],
+    units: [book],
+    bookOrderFor: () => ['U1'],
+    divisionsFor: () => [{ label: 'First', image: null, from: 1, to: 1, books: ['U1'] }],
     units: [book],
     editions: [{ code: 'ED', language: 'english', hasChart: true, proofread: true }],
-    namesByLanguage: { english: { testaments: { T1: 'First' }, books: { U1: 'Unit' } } },
+    namesByLanguage: { english: { books: { U1: 'Unit' } } },
     displayConfig: {},
     spineFor: () => ({ utterances: SUPERSET }),
     chartFor: (id, ed) => (ed === 'ED' ? CHART : null),
@@ -353,7 +366,7 @@ describe('a SUPERSET spine, and an edition that reorders it (W-96 / O-69)', () =
     isFullyConfirmed: () => true,
     bookOrderFor: () => ['U1'],
     sectionOf: () => null,
-    toRoot: () => ({ display_config: {}, testaments: { T1: { sort_number: 0, books: { U1: { sort_number: 0 } } } } })
+    toRoot: () => ({ display_config: {}, testaments: { 'division-0': { sort_number: 0, name: 'First', books: { U1: { sort_number: 0 } } } } })
   };
   const manifest = { Gutenberg_Bible: volume.toRoot() };
   Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });

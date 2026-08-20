@@ -145,9 +145,9 @@ const wallManifest = (() => {
   // same testament (a book crossing), GAMM sits in the second (a testament
   // crossing). Every rank of the ladder is present exactly once.
   const units = {
-    ALPH: { leaves: 4, testament: 'T1' },
-    BETH: { leaves: 2, testament: 'T1' },
-    GAMM: { leaves: 2, testament: 'T2' }
+    ALPH: { leaves: 4, testament: 'division-0' },
+    BETH: { leaves: 2, testament: 'division-0' },
+    GAMM: { leaves: 2, testament: 'division-1' }
   };
   const charts = {
     'ALPH ED': {
@@ -164,21 +164,29 @@ const wallManifest = (() => {
     id, { utterances: Array.from({ length: u.leaves }, (_, i) => `${id}-u${i + 1}`) }
   ]));
   const book = (id, order) => ({ id, leaves: units[id].leaves, order, testamentId: units[id].testament });
+  // THE CROSSING IS THE EDITION'S NOW (H-29). The ladder is unchanged — this
+  // fixture still needs a chapter, a book and a division boundary to exercise
+  // 2/4/6 — but the top level is declared by the edition rather than stored on
+  // the volume, so the keys are the edition-local `division-<n>`.
+  const DIVISIONS = [
+    { label: 'First', image: 'first_emblem', from: 1, to: 2, books: ['ALPH', 'BETH'] },
+    { label: 'Second', image: 'second_emblem', from: 3, to: 3, books: ['GAMM'] }
+  ];
   const volume = {
-    testaments: [
-      { id: 'T1', order: 0, books: [book('ALPH', 0), book('BETH', 1)] },
-      { id: 'T2', order: 1, books: [book('GAMM', 0)] }
-    ],
     units: [book('ALPH', 0), book('BETH', 1), book('GAMM', 0)],
     editions: [{ code: 'ED' }],
     spineFor: id => spines[id] || null,
     chartFor: (id, ed) => charts[`${id} ${ed}`] || null,
+    bookOrderFor: () => ['ALPH', 'BETH', 'GAMM'],
+    divisionsFor: ed => (ed === 'ED' ? DIVISIONS.map(d => ({ ...d })) : []),
     toRoot: () => ({
       display_config: {},
-      testaments: {
-        T1: { sort_number: 0, books: { ALPH: { sort_number: 0 }, BETH: { sort_number: 1 } } },
-        T2: { sort_number: 1, books: { GAMM: { sort_number: 0 } } }
-      }
+      testaments: Object.fromEntries(DIVISIONS.map((d, order) => [`division-${order}`, {
+        sort_number: order,
+        name: d.label,
+        image: d.image,
+        books: Object.fromEntries(d.books.map((id, i) => [id, { sort_number: i }]))
+      }]))
     })
   };
   const m = { Gutenberg_Bible: volume.toRoot() };
@@ -262,7 +270,7 @@ describe('the continuous verse chain', () => {
     const v = items[at('GAMM_1_1')];
     assert.equal(v.meta.bookEntryId, 'GAMM');
     assert.equal(v.meta.chapterId, 'GAMM/1');
-    assert.equal(v.meta.testamentId, 'T2');
+    assert.equal(v.meta.testamentId, 'division-1');
   });
 
   it('THE READER STANDS ON AN UTTERANCE, not on a number (W-21)', () => {
@@ -330,7 +338,7 @@ describe('the sweep works at every level, not just verses', () => {
     const byId = id => items.find(x => x && x.id === id);
     assert.equal(byId('ALPH/1').name, '1');
     assert.equal(byId('ALPH/2').name, '2');
-    assert.equal(byId('GAMM/1').meta.testamentId, 'T2', 'and know where they sit');
+    assert.equal(byId('GAMM/1').meta.testamentId, 'division-1', 'and know where they sit');
   });
 });
 

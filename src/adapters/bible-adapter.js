@@ -194,18 +194,17 @@ let _chapterOrder = null;          // flat reading order, memoized
 function chaptersInReadingOrder(manifest) {
   if (_chapterOrder) return _chapterOrder;
   const volume = manifest?.__wallVolume;
-  const order = [];
-  for (const testament of volume?.testaments || []) {
-    for (const book of testament.books || []) {
-      order.push({
-        chapterId: book.id,
-        bookId: book.id,
-        // The text address IS the unit's id: there is no file to name.
-        externalFile: book.id,
-        verseCount: Number.isFinite(book.leaves) ? book.leaves : 0
-      });
-    }
-  }
+  // FLAT, because the enumeration is flat now (H-29). This walked
+  // `testaments[].books[]`; the volume no longer says which division a book is
+  // in, and the read-ahead never needed to know — it warms the NEXT unit, and
+  // units have an order without having a parent.
+  const order = (volume?.units || []).map(book => ({
+    chapterId: book.id,
+    bookId: book.id,
+    // The text address IS the unit's id: there is no file to name.
+    externalFile: book.id,
+    verseCount: Number.isFinite(book.leaves) ? book.leaves : 0
+  }));
   _chapterOrder = order;
   return order;
 }

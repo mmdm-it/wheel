@@ -754,23 +754,37 @@ export function buildBibleTestaments(manifest, namesMap = {}, { testamentId, tra
   // holds. With no edition in hand — the tests, and any caller that has not
   // committed one — nothing is filtered, which is the old behaviour exactly.
   const volume = manifest?.__wallVolume;
-  const held = edition && volume ? chartedUnitsOf(volume, edition) : null;
-  const reached = tid => {
-    if (!held) return true;
-    const books = Object.keys(bible.testaments?.[tid]?.books || {});
-    return books.some(id => held.has(id));
-  };
-  const items = Object.entries(bible.testaments || {})
-    .filter(([tid]) => reached(tid))
-    .sort(([, a], [, b]) => (a?.sort_number ?? 0) - (b?.sort_number ?? 0))
-    .map(([tid, testament], idx) => ({
-      id: tid,
-      name: testamentNames[tid] || testament?.name || tid,
-      sort: testament?.sort_number ?? idx,
+  // THE RING READS THE EDITION, LIVE (H-29). It used to walk the manifest's
+  // stored tree, which was built once at boot and said the same thing for
+  // every edition — the assertion the ruling retired. The label and the image
+  // are the edition's own declaration, quoted (H-2/H-31), and the reader
+  // watches both change when the edition does.
+  const live = edition && typeof volume?.divisionsFor === 'function'
+    ? volume.divisionsFor(edition)
+    : null;
+  const items = live
+    ? live.map((d, idx) => ({
+      id: `division-${idx}`,
+      name: d.label,
+      image: d.image || null,
+      sort: idx,
       order: idx,
       level: 'testament',
       parentName: translationName
-    }));
+    }))
+    // No volume, or no edition committed: the scaffold, unfiltered. This is
+    // the shape every fixture that models a tree and not a chart still gets.
+    : Object.entries(bible.testaments || {})
+      .sort(([, a], [, b]) => (a?.sort_number ?? 0) - (b?.sort_number ?? 0))
+      .map(([tid, testament], idx) => ({
+        id: tid,
+        name: testamentNames[tid] || testament?.name || tid,
+        image: testament?.image || null,
+        sort: testament?.sort_number ?? idx,
+        order: idx,
+        level: 'testament',
+        parentName: translationName
+      }));
   const selectedIndex = testamentId
     ? Math.max(0, items.findIndex(i => i.id === testamentId))
     : 0;

@@ -46,10 +46,17 @@ const seatsFor = () => ({
 
 const makeVolume = (over = {}) => ({
   units: [...OLD, ...NEW].map(id => ({ id, leaves: 2 })),
-  testaments: [
-    { id: 'T_OLD', order: 0, books: OLD.map((id, i) => ({ id, order: i, leaves: 2 })) },
-    { id: 'T_NEW', order: 1, books: NEW.map((id, i) => ({ id, order: i, leaves: 2 })) }
-  ],
+  // H-29: the level above books is the EDITION'S, and each here divides only
+  // what it holds — which is what makes the root ring differ between them.
+  divisionsFor: edition => (CHARTS[edition] || []).length
+    ? [{
+      label: edition === 'HEB' ? 'תנ״ך' : 'Ἡ Καινὴ Διαθήκη',
+      image: edition === 'HEB' ? 'torah_scroll' : 'crown_of_thorns',
+      from: 1,
+      to: (CHARTS[edition] || []).length,
+      books: [...(CHARTS[edition] || [])]
+    }]
+    : [],
   editions: [
     { code: 'HEB', proofread: false, proofreadUnits: [...OLD] },
     { code: 'GRC', proofread: false, proofreadUnits: [] }
@@ -123,17 +130,38 @@ describe('an edition shows only what it charts (O-71)', () => {
     assert.equal(chartedUnitsOf(makeVolume({ chartFor: () => null }), 'HEB').size, 0);
   });
 
-  it('THE TESTAMENT RING HOLDS ONLY THE TESTAMENTS THE EDITION REACHES', () => {
+  it('THE ROOT RING IS THE EDITION\'S OWN DIVISION OF ITSELF (H-29)', () => {
     const manifest = makeManifest(makeVolume());
+    // Each edition holds one body and names it in its own tradition's words.
+    // The Hebrew never shows a New Testament and the Greek never an Old,
+    // because neither declares one — which is the two screenshots, fixed.
     assert.deepEqual(
-      buildBibleTestaments(manifest, {}, { edition: 'HEB' }).items.map(i => i.id),
-      ['T_OLD'], 'the Hebrew reaches no New Testament');
+      buildBibleTestaments(manifest, {}, { edition: 'HEB' }).items.map(i => i.name),
+      ['תנ״ך']);
     assert.deepEqual(
-      buildBibleTestaments(manifest, {}, { edition: 'GRC' }).items.map(i => i.id),
-      ['T_NEW'], 'and the Greek no Old — this is the second screenshot');
+      buildBibleTestaments(manifest, {}, { edition: 'GRC' }).items.map(i => i.name),
+      ['Ἡ Καινὴ Διαθήκη']);
+    // AND THE EMBLEM RIDES WITH THE NAME (H-31) — one declaration, both.
     assert.deepEqual(
-      buildBibleTestaments(manifest, {}, {}).items.map(i => i.id),
-      ['T_OLD', 'T_NEW'], 'with no edition committed nothing is filtered');
+      buildBibleTestaments(manifest, {}, { edition: 'HEB' }).items.map(i => i.image),
+      ['torah_scroll']);
+    assert.deepEqual(
+      buildBibleTestaments(manifest, {}, { edition: 'GRC' }).items.map(i => i.image),
+      ['crown_of_thorns']);
+  });
+
+  it('NEVER NOTHING, AND NEVER A NODE WITHOUT A NAME (H-29)', () => {
+    // The degenerate case Howell settled: an edition declaring no internal
+    // division still gets a door, because a book behind none is unreachable —
+    // and the door wears the edition's own title rather than no label at all.
+    // The real volume centralises this in `divisionsFor`, which never returns
+    // an empty list — so the fixture models an edition standing for itself.
+    const bare = makeManifest(makeVolume({
+      divisionsFor: () => [{ label: 'Leningrad Codex', image: null, from: 1, to: 2, books: [...OLD] }]
+    }));
+    const ring = buildBibleTestaments(bare, {}, { edition: 'HEB' }).items;
+    assert.equal(ring.length, 1, 'one door, always');
+    assert.equal(ring[0].name, 'Leningrad Codex', 'wearing the edition\'s own title');
   });
 
   it('THE BOOK RING HOLDS ONLY THE BOOKS THE EDITION CHARTS — flag or no flag', () => {

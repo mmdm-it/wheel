@@ -48,20 +48,22 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       + 'and falling back to the legacy registry is the capability the wall removes.');
   }
 
-  // The testaments, in declared order. Order is DATA, never read off an id:
-  // ids are opaque under H-11 and carry no order in their characters.
-  const testaments = (volume?.testaments || []).map((testament, order) => ({
-    id: testament.id,
-    order,
-    books: (testament.books || []).map((book, bookOrder) => ({
-      id: book.id,
-      leaves: Number.isFinite(book.leaves) ? book.leaves : null,
-      order: bookOrder,
-      testamentId: testament.id
-    }))
+  // THE ENUMERATION IS A FLAT BOOK ROSTER (H-29, ruled 2026-08-19).
+  //
+  // It was `testaments[]` with books hanging off them, and that shape asserted
+  // something the volume is not entitled to say: which testament a book is in.
+  // Genesis sits in Vetus Testamentum under a Vulgate and in תנ״ך under the
+  // Leningrad Codex, so it is not a fact ABOUT Genesis and cannot be stored
+  // once for every edition. The level above books is the EDITION'S, read from
+  // its chart index, exactly as the chapter became a projection under H-11.
+  //
+  // What the volume still owns is WHICH BOOKS EXIST. That is the sole
+  // enumeration H-14 rules and it is unchanged.
+  const units = (volume?.books || []).map((book, order) => ({
+    id: book.id,
+    leaves: Number.isFinite(book.leaves) ? book.leaves : null,
+    order
   }));
-
-  const units = testaments.flatMap(t => t.books);
   if (!units.length) {
     throw new Error('bible-volume: volume.json enumerates no books — the volume is empty, which is a data state and not a render');
   }
@@ -261,7 +263,6 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   return {
     version,
     base,
-    testaments,
     units,
     editions,
     namesByLanguage,
@@ -316,6 +317,70 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       return shelves.get(edition) || null;
     },
 
+    // THE EDITION'S OWN TOP-LEVEL DIVISION OF ITSELF (H-29).
+    //
+    // "What is in the focus ring at root?" has one answer — whatever is one
+    // level up from books — and there are exactly two possibilities, because
+    // sections are not a level: the testaments, for an edition that declares
+    // them, or the EDITION'S OWN TITLE, for one that does not. Never nothing,
+    // and never a node without a name.
+    //
+    // Both arrive here in the same shape, a labelled range over the edition's
+    // book order, which is why the engine needs no branch for the two cases:
+    // the Leningrad Codex declares one division reading תנ״ך over all 39, a
+    // Vulgate declares two. Each carries its IMAGE beside its name (H-31), so
+    // the corner emblem and the label are one declaration.
+    //
+    // DIVISIONS TILE, and a gap is a data fault rather than a preference: a
+    // division is a DOOR, so a book behind none is unreachable. Section groups
+    // need not tile — a label is a label, and the Greek labels four books and
+    // no others — which is why only this one screams.
+    divisionsFor(edition) {
+      const shelf = shelves.get(edition);
+      const declared = Array.isArray(shelf?.divisions) ? shelf.divisions : [];
+      const order = this.bookOrderFor(edition);
+      // NEVER NOTHING, AND NEVER A NODE WITHOUT A NAME (H-29, Howell's
+      // clarification the same day). An edition that declares no internal
+      // division still gets a DOOR, because a book behind none is unreachable
+      // — and the door wears THE EDITION'S OWN TITLE, which is not an
+      // invention: what "no division is invented" forbids is manufacturing a
+      // TESTAMENT for an edition that has none. The edition always has a name.
+      //
+      // Centralised here rather than repeated at each ring, so the two cases
+      // — declared divisions, and the edition standing for itself — leave
+      // this function in one shape and nothing downstream branches on which.
+      if (!declared.length) {
+        const self = (editions.find(e => e?.code === edition) || {});
+        return [{
+          label: self.nativeName || self.name || null,
+          image: null,
+          from: 1,
+          to: order.length,
+          books: [...order]
+        }];
+      }
+      const out = [];
+      let expected = 1;
+      for (const d of declared) {
+        if (!Number.isInteger(d?.from) || !Number.isInteger(d?.to) || d.to < d.from) continue;
+        if (d.from !== expected) {
+          console.error(
+            `bible-volume: ${edition}'s divisions are not contiguous — ${JSON.stringify(d.label)} `
+            + `starts at ${d.from}, expected ${expected}. A division is a DOOR (H-29), so a `
+            + 'book behind none cannot be reached at all.');
+        }
+        expected = d.to + 1;
+        out.push({
+          label: d.label != null ? String(d.label) : null,
+          image: d.image || null,
+          from: d.from,
+          to: d.to,
+          books: order.slice(d.from - 1, d.to)
+        });
+      }
+      return out;
+    },
+
     // The edition's BOOK ORDER: its own if it declares one, the volume's
     // otherwise. One place answers this, so nothing can order a ring by one
     // rule and seat it by another.
@@ -366,16 +431,41 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     //
     // Keyed by id with the order carried as data, because ids are opaque and
     // an object's key order is not a place to keep meaning.
-    toRoot() {
+    // THE ROOT IS PER EDITION NOW (H-29). It took no argument while the volume
+    // asserted one division of itself for everyone; that assertion is what the
+    // ruling retired. An edition with no chart yet gets ONE division holding
+    // every book and no label, which is the honest degenerate case — the door
+    // must exist or nothing is reachable, and a name is not invented for it.
+    //
+    // The KEY is `division-<n>`, positional and edition-local. It is not an
+    // identity: the same body of books is a different key in another edition,
+    // and that is correct, because switching edition rebuilds the chain
+    // outright. Nothing persists a division key.
+    toRoot(edition) {
+      // The manifest tree is built ONCE at boot and the reader may change
+      // edition later, so this is a SCAFFOLD rather than the answer: every
+      // ring that shows divisions asks `divisionsFor` live, with the edition
+      // in hand. Defaulting to the first declared edition keeps the scaffold
+      // well-formed for the consumers that only need books to exist.
+      const divisions = this.divisionsFor(edition || editions[0]?.code || null);
+      const byId = new Map(this.units.map(u => [u.id, u]));
+      // `divisionsFor` always returns at least one, so there is nothing to
+      // fall back to here any more.
+      const shape = divisions;
       return {
         display_config: this.displayConfig,
-        testaments: Object.fromEntries(this.testaments.map(t => [t.id, {
-          sort_number: t.order,
-          books: Object.fromEntries(t.books.map(b => [b.id, {
-            leaves: b.leaves,
-            sort_number: b.order,
-            testamentId: t.id
-          }]))
+        testaments: Object.fromEntries(shape.map((d, order) => [`division-${order}`, {
+          sort_number: order,
+          name: d.label,
+          image: d.image,
+          books: Object.fromEntries(d.books
+            .map((id, i) => [id, byId.get(id), i])
+            .filter(([, u]) => u)
+            .map(([id, u, i]) => [id, {
+              leaves: u.leaves,
+              sort_number: i,
+              testamentId: `division-${order}`
+            }]))
         }]))
       };
     },
@@ -588,10 +678,23 @@ export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false 
   // and ring cannot disagree about what comes after what. The testament each
   // book belongs to is still carried, because it is the book's parent and the
   // section is not (H-26: sections are labels, never levels).
+  // THE PARENT COMES FROM THE EDITION (H-29), not from a stored field. It was
+  // read off `volume.testaments`, which no longer exists because a book's
+  // division is not a fact about the book.
   const byId = new Map();
-  for (const testament of volume.testaments) {
-    for (const book of testament.books) byId.set(book.id, { book, testament });
-  }
+  const divisions = typeof volume.divisionsFor === 'function' ? volume.divisionsFor(edition) : [];
+  // A volume that answers `divisionsFor` always gives at least one division
+  // (H-29). The fallback below is for FIXTURES that model no divisions at all.
+  const shape = divisions.length
+    ? divisions
+    : [{ label: null, books: (volume.units || []).map(u => u.id) }];
+  const unitById = new Map((volume.units || []).map(u => [u.id, u]));
+  shape.forEach((division, order) => {
+    for (const id of division.books || []) {
+      const book = unitById.get(id);
+      if (book) byId.set(id, { book, testament: { id: `division-${order}` } });
+    }
+  });
   const order = typeof volume.bookOrderFor === 'function'
     ? volume.bookOrderFor(edition)
     : [...byId.keys()];

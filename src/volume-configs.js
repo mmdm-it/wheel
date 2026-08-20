@@ -114,6 +114,11 @@ const volumeConfigs = {
       // Non-enumerable says what is true: this is a handle for the builders,
       // not part of the manifest's content. Nothing that walks, counts or
       // serialises the manifest can see it.
+      // THE ROOT IS PER EDITION (H-29), and this call cannot know which one:
+      // the manifest loads before the reader's choice is committed. So it
+      // builds the SCAFFOLD from the first declared edition, and every ring
+      // that shows divisions asks the volume live with the edition in hand.
+      // Nothing downstream reads a division off this tree.
       const manifest = { Gutenberg_Bible: volume.toRoot() };
       Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
       return manifest;

@@ -42,7 +42,7 @@ describe('the single-seat primary stratum, on the real fixture', () => {
   });
 
   it('one testament, one book, one container — and thirty-one seats', () => {
-    assert.equal(volume.testaments.length, 1);
+    assert.equal(volume.divisionsFor('DRA').length, 1);
     assert.equal(volume.units.length, 1);
     assert.equal(expandVolumeSeats(volume, 'DRA').length, 31);
   });
