@@ -1,5 +1,35 @@
 # Detail Sector Plugins Specification
 
+> # ARCHIVED — NOT THE CURRENT DESIGN
+>
+> This file sits under `docs/archive/`, and until 2026-08-21 that directory was
+> the ONLY thing saying so. A directory is invisible to anyone arriving by
+> search, by link, or by grep, which is how a reader actually meets a document
+> — so it now says what it is on its own first screen (O-83).
+>
+> **STRUCK 2026-08-21 (O-83), specifically: the claim that Bible verse text
+> picks a font size from its length.** This document describes a
+> `BibleTextPlugin` selecting one of several `font-tier` classes by character
+> count, and the Overview below says the plugin *"adjusts font size based on
+> content length"*. **Verses have not worked that way since 2026-07-21.**
+>
+> A verse is laid out by `layoutVerse`, at ONE continuous size shared by the
+> whole corpus on a given device: the largest at which the LONGEST verse still
+> fills the sector, found by measurement between 2.5% and 11% of the short
+> side. Howell's reason, in the code that replaced this: the page should read
+> *"calm and constant"*. Nothing is chosen per verse.
+>
+> The tier percentages here are wrong on their own terms besides — this file
+> lists tier 1 at 4.5% of SSd where the live CSS has 10.5%.
+>
+> **The tiers themselves are NOT retired**, which is why this is a strike and
+> not a deletion. They still size catalog card titles and bodies, calendar
+> labels, and the Bible's own book and chapter NAMES. None of those is a verse.
+>
+> Left in place rather than rewritten: an archive is the record of what we
+> believed, and editing it to look correct destroys the only thing it is for.
+
+
 ## Overview
 
 The **Detail Sector** is the expanding circular region that displays leaf-level content (Bible verses, catalog products, song lyrics, social media posts). Because different volumes have fundamentally different content types, the Detail Sector uses a **plugin system** to render content appropriately.
