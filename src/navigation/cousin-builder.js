@@ -148,29 +148,69 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
     ? id => manifest.__wallVolume.sectionOf(edition, id)
     : () => null;
 
+  // THE BOOKS COME FROM THE EDITION, LIVE — never from the boot scaffold
+  // (O-87, found by Howell on the LAN 2026-08-22). `toRoot()` is called once,
+  // with no argument, and defaults its `testaments` tree to the FIRST
+  // declared edition — its own comment calls it a scaffold and says every
+  // ring that shows divisions must ask `divisionsFor` live. This builder was
+  // the one still walking the scaffold to enumerate BOOKS, so every book of
+  // any later edition was invisible to it: the Greek chain came back empty,
+  // the parent handler returned false, and migrating out of the chapters
+  // ring did nothing at all. The Hebrew never showed it, being first.
+  //
+  // The scaffold walk below survives as the FALLBACK, because fixtures and
+  // any manifest without a wall volume build their testaments by hand.
+  const wall = manifest?.__wallVolume;
+  const liveDivisions = wall && edition && typeof wall.divisionsFor === 'function'
+    ? wall.divisionsFor(edition)
+    : null;
+
   const sorted = [];
-  Object.entries(bible.testaments || {}).sort(bySortNumber).forEach(([testamentKey, testament]) => {
-    const testamentName = testamentNames[testamentKey] || null;
-    Object.entries(testament?.books || {}).sort(bySortNumber).forEach(([bookKey, book]) => {
-      if (visible && !visible.has(bookKey)) return;
-      sorted.push({
-        id: bookKey,
-        section: sectionOf(bookKey),
-        // A NAME IS A QUOTATION (H-2). The old chain fell back to the book's
-        // own `book_name`, then to its id — and under opaque ids that last
-        // step would print `bc22df` at the reader. Unnamed is honest; the
-        // filesystem's spelling is not a name.
-        name: bookNames?.[bookKey] || null,
-        sort: Number.isFinite(book?.sort_number) ? book.sort_number : sorted.length,
-        level: 'book',
-        testamentId: testamentKey,
-        parentName: testamentName,
-        // Editorial prominence tier (1 featured, 2 notable, absent default):
-        // declared in the data, honored by the star field's seating and size.
-        prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
+  if (Array.isArray(liveDivisions) && liveDivisions.length) {
+    const unitById = new Map((wall.units || []).map(u => [u.id, u]));
+    liveDivisions.forEach((d, order) => {
+      (d.books || []).forEach((id, i) => {
+        if (visible && !visible.has(id)) return;
+        const unit = unitById.get(id);
+        sorted.push({
+          id,
+          section: sectionOf(id),
+          // A NAME IS A QUOTATION (H-2): unnamed is honest, an id is not.
+          name: bookNames?.[id] || null,
+          sort: i,
+          level: 'book',
+          // The division key is positional and edition-local, exactly as
+          // toRoot() names it — nothing persists it (H-29).
+          testamentId: `division-${order}`,
+          parentName: d.label || null,
+          prominence: Number.isFinite(unit?.prominence) ? unit.prominence : undefined
+        });
       });
     });
-  });
+  } else {
+    Object.entries(bible.testaments || {}).sort(bySortNumber).forEach(([testamentKey, testament]) => {
+      const testamentName = testamentNames[testamentKey] || null;
+      Object.entries(testament?.books || {}).sort(bySortNumber).forEach(([bookKey, book]) => {
+        if (visible && !visible.has(bookKey)) return;
+        sorted.push({
+          id: bookKey,
+          section: sectionOf(bookKey),
+          // A NAME IS A QUOTATION (H-2). The old chain fell back to the book's
+          // own `book_name`, then to its id — and under opaque ids that last
+          // step would print `bc22df` at the reader. Unnamed is honest; the
+          // filesystem's spelling is not a name.
+          name: bookNames?.[bookKey] || null,
+          sort: Number.isFinite(book?.sort_number) ? book.sort_number : sorted.length,
+          level: 'book',
+          testamentId: testamentKey,
+          parentName: testamentName,
+          // Editorial prominence tier (1 featured, 2 notable, absent default):
+          // declared in the data, honored by the star field's seating and size.
+          prominence: Number.isFinite(book?.prominence) ? book.prominence : undefined
+        });
+      });
+    });
+  }
 
   // THE EDITION'S OWN ORDER (H-26/W-83) — and this is where it belongs.
   //

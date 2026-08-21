@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-21 from 245 entries.
+Generated 2026-08-21 from 246 entries.
 
 | id | status | title |
 |---|---|---|
@@ -129,6 +129,7 @@ Generated 2026-08-21 from 245 entries.
 | O-84 | RULED | THE PARTIAL ECLIPSE — a long verse shows in two parts, and the ring says which |
 | O-85 | RULED | VERSE TYPE IS SIZED PER EDITION, BY EYE — the doubling was accepted, not ruled |
 | O-86 | RULED | THE ECLIPSE TRIGGER WIDENS — a note that outgrows the margin splits across half-settles |
+| O-87 | FIXED | THE BOOK RING DID NOT EXIST FOR THE SECOND EDITION — migrating out of the Greek chapters did nothing |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
