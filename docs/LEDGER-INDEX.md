@@ -262,4 +262,4 @@ Generated 2026-08-21 from 251 entries.
 | W-126 | MEASURED AND DECLARED | THE SEPTUAGINT ADDS TEN UNITS, AND ONLY ONE BOOK IS NOT ONE-TO-ONE |
 | W-127 | RULED | THE MARGIN GOES BEYOND THE RING — Swete's apparatus is ruled IN |
 | W-128 | OPEN | THE MARGIN OWES A VERIFICATION PASS — its OCR is the roughest in the pin |
-| W-129 | DRAFTED | THE CARGO HALF OF LEAF-AND-SHARD — Wilbur's design, folded under his name |
+| W-129 | RULED | THE CARGO HALF OF LEAF-AND-SHARD — Wilbur's design, folded under his name |
