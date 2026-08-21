@@ -124,7 +124,7 @@ Generated 2026-08-21 from 239 entries.
 | O-79 | BOTH HALVES LANDED | THE GROUND UNDER THE EMBLEM FOLLOWS THE READER TOO — engine half landed, one line of cargo owed |
 | O-80 | OPEN | THE UNIT LIST GROWS PAST 39 — the engine survives the nine, and Esdras B has only one shape |
 | O-81 | OPEN | THE DEPLOY GATE REFUSES BY LICENCE, AND THE GREEK IS NOT ON ITS LIST |
-| O-82 | OPEN | THE DIMENSION BUTTON GOES THE OTHER WAY — and O-37's correction was never swept |
+| O-82 | VERIFIED AND CLOSED | THE DIMENSION BUTTON GOES THE OTHER WAY — and O-37's correction was never swept |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
