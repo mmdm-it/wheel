@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-21 from 237 entries.
+Generated 2026-08-21 from 238 entries.
 
 | id | status | title |
 |---|---|---|
@@ -249,3 +249,4 @@ Generated 2026-08-21 from 237 entries.
 | W-123 | RULED | SWETE IS ROW 2'S SOURCE, AND ECCLESIASTES WE TRANSCRIBE OURSELVES |
 | W-124 | RULED | SWETE'S DIGITISATION IS NOT SWETE'S PAGE — and KNOWN has to say which one it means |
 | W-125 | OPEN | THE SWETE DIGITISATION DROPS TEXT AT PAGE TURNS — and one directory holds an English Isaiah |
+| W-126 | MEASURED AND DECLARED | THE SEPTUAGINT ADDS TEN UNITS, AND ONLY ONE BOOK IS NOT ONE-TO-ONE |
