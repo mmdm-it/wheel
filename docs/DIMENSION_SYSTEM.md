@@ -1,5 +1,14 @@
 # Dimension System — the strata canon
 
+*Last audited: 2026-08-22 by Orville — Q3 (does it assert a state that is now
+false?). Six findings, all struck in place and filed as O-88 — the worst
+being that the dimension button's direction is stated BACKWARDS three times
+in this one document, the same false sentence O-82 struck in two other files
+two days ago. This is a 2026-07-20 "paper" document that was then built, and
+the paper was never brought up to the instrument; the strikes below correct
+the states that are now false and leave the design reasoning, which is the
+record of why things are as they are.*
+
 *Rewritten 2026-07-20 to open Phase D.1, superseding the v3.7 portal
 specification (dimension-button-cycles-portals, focus-ring-repurposing,
 mirrored-at-same-radius — all retired). This is paper: the ruled model
@@ -77,13 +86,16 @@ unambiguous. "Reader" is wrong — a volume may be a music library, not a text.
   even a single-translation one — the reader wants to know *which* edition
   they're reading, choice or not (Howell 2026-07-21, D.3 below).
 
-**The dimension button toggles the two.** It is the wireframe globe parked
-in a corner — a **neutral icon** that does not display the current value
-(ruled 2026-07-20). Tap it in the primary strata → z-travel to the
-secondary. Tap the *same* button again → z-travel back to the primary.
-On/off. The button does not cycle values and does not itself pick anything;
-it only switches strata. A volume that declares no dimension shows no
-globe.
+**The dimension button toggles the two.**
+
+> **STRUCK 2026-08-22 (O-88; the Q3 audit above).** The button has not been
+> an on/off toggle between two strata since D.3 built the third plane. It
+> CYCLES, one way, INWARD — tertiary (languages) → secondary (editions) →
+> primary (the text) → back out to tertiary — and **every launch opens on
+> the language plane**, not the primary (O-75; `test/boot-smoke.test.js`
+> drives the real button 2 → 1 → 0 → 2). What survives of this paragraph is
+> everything else: the globe is a neutral icon that displays no value, picks
+> nothing itself, and is absent where no dimension is declared.
 
 ## Z-travel — the motion between strata
 
@@ -136,16 +148,22 @@ mid-rotation, consistent with the hold-stale detail-sector doctrine.
 Language then translation is a two-step choice. D.1 drafted it as one
 stratum — orbit the secondary ring for the language, dive its child pyramid
 for the translation. **D.3 replaced the pyramid with a third stratum**
-(Howell, 2026-07-21): the dimension button cycles **primary → secondary →
-tertiary → primary**, each press pushing the stack one plane deeper. The
+(Howell, 2026-07-21): the dimension button cycles the strata, each press
+pushing the stack one plane deeper *(the order written here — primary →
+secondary → tertiary — was BACKWARDS and is struck; the cycle runs inward,
+tertiary → secondary → primary. O-88, and O-82 struck the same sentence in
+two other files.)* The
 reason is the z-axis itself — a translation is a *parallel* to its language,
 a stratum of the same rank behind it, not a child hanging off it. Three
 mirrored planes receding read as the instrument's defining cinematic pull;
 a pyramid would have read as ordinary drill-down.
 
-- **Orbit the secondary ring → pick a LANGUAGE** (Latin, Greek, Hebrew,
-  English…), named in its own tongue (ESPAÑOL, ΕΛΛΗΝΙΚΆ, עברית).
-- **Orbit the tertiary ring → pick a TRANSLATION within that language**
+- *(Assignment struck 2026-08-22, O-88: these two bullets restate the
+  pre-O-37 assignment a hundred lines below the banner that retired it —
+  see the SUPERSEDED block near the top. The ruled assignment is language on
+  the TERTIARY, edition on the SECONDARY.)* Orbit the **tertiary** ring →
+  pick a LANGUAGE, named in its own tongue (ESPAÑOL, ΕΛΛΗΝΙΚΆ, עברית).
+- Orbit the **secondary** ring → pick a TRANSLATION within that language
   (NAB vs Douay-Rheims English; LXX vs BYZ Greek).
 
 A translation belongs to exactly one language (no Greek KJV; the data
@@ -157,8 +175,12 @@ there's a choice (Howell 2026-07-21, reversing an earlier skip). The
 magnified tertiary node carries the edition's full title; the rest keep
 their abbreviations.
 
-**Prominence is the default.** The secondary strata's pyramid uses the C.5 star
-field: the most-used translation in the magnified language is the largest
+**Prominence is the default.** *(Struck 2026-08-22, O-88: the pyramid this
+paragraph describes was replaced by the tertiary stratum — by D.3, in this
+very document, above. No secondary-strata pyramid exists to use any star
+field; what survives is the intent, unbuilt: the most-used translation as
+the default landing.)* ~~The secondary strata's pyramid uses the C.5 star
+field:~~ the most-used translation in the magnified language is the largest
 node, so orbiting to "Greek" and toggling straight back — without touching
 the pyramid — lands on Greek's primary translation. The pyramid is there for
 the user who wants a *specific* edition. (This asks one thing of the data:
@@ -243,9 +265,12 @@ values. The multi-select selection gesture is **deferred to the calendar**
 
 The visual stack shipped. What landed, and the decisions the sketches left open:
 
-- **Three-deep stack.** The dimension button cycles primary → secondary →
-  tertiary → primary; each press pushes the front plane one deeper. Depths
-  `[1.0, 0.4, 0.2]`, static blurs `[0, 5, 10]` px, indexed by planes behind
+- **Three-deep stack.** The dimension button cycles the strata — *(struck
+  2026-08-22, O-88: "primary → secondary → tertiary" was backwards; it runs
+  inward, tertiary first)* — each press pushing the front plane one deeper.
+  Depths `[1.0, 0.4, 0.2]`, static blurs *(struck: `[0, 5, 10]` px — eased
+  to `[0, 1, 2]` on 2026-07-30, when the deepest plane became the app's
+  first screen; `STRATA_BLURS`, src/main.js)*, indexed by planes behind
   the front. The recede is a **straight camera pull-back** — a 2D scale about
   the *viewport centre* (Disney multiplane), which drops the off-screen hub
   down-and-left for free, no 3D. Locked with Howell.
@@ -266,8 +291,12 @@ The visual stack shipped. What landed, and the decisions the sketches left open:
   links (verses climbing overhead). Sized per depth (`STRATA_TANGENT_SPANS`).
   A **static re-render**, off the rotation hot path — the front ring stays
   arc-only, so rotation perf is untouched.
-- **The button lives in the detail sector.** The globe appears only where a
-  dimension exists *and* the purple sill is on screen (a leaf). Over a child
+- **The button lives in the detail sector.** *(Narrowed 2026-08-22, O-88:
+  since the front-door globe — Howell, 2026-07-27 — it ALSO shows at the
+  volume's threshold, root magnified, where language is the other live
+  question. "Leaf only" is no longer the rule; leaf-or-door is.)* The globe
+  appears where a dimension exists *and* the purple sill is on screen (a
+  leaf), or at the front door. Over a child
   pyramid it hides and any open stack recedes — the analogy only holds where
   the round wheel (the purple) is visible for the straight chain to wrap.
 - **Native tongues, magnified-label span.** The secondary names each language
