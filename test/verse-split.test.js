@@ -95,4 +95,21 @@ describe('a long verse shows in two parts (O-84)', () => {
     assert.equal(laid.part, 0, 'an unknown part is read as the first');
     assert.ok(laid.lines.length > 0);
   });
+
+  it("THE MAGNIFIER'S STROKE IS PERMANENT — the eclipse needs an edge to read against (O-84 amendment)", async () => {
+    // Howell, 2026-08-22: the stroke used to appear only while rotating,
+    // which was fine while every settled node sat dead-centre. A split verse
+    // settles off-centre now, and a node peeking past a lens with no drawn
+    // edge is invisible as an eclipse. The parent button's stroke is already
+    // permanent; this holds the lens to the same rule. A source-shape cell,
+    // because no unit can see a stylesheet: the BASE rule (not the .rotating
+    // one) must carry the stroke.
+    const { readFileSync } = await import('node:fs');
+    const css = readFileSync(new URL('../styles/base.css', import.meta.url), 'utf-8');
+    const base = css.match(/\n\.focus-ring-magnifier-circle\s*\{[^}]*\}/);
+    assert.ok(base, 'the base magnifier rule exists');
+    assert.match(base[0], /stroke:\s*var\(--color-magnifier-stroke/,
+      'the settled lens draws its stroke, not only the rotating one');
+    assert.match(base[0], /stroke-width/, 'with a width, so it actually paints');
+  });
 });

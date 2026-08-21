@@ -494,6 +494,14 @@ svg :focus-visible {
 
 .focus-ring-magnifier-circle {
   fill: var(--color-orbital); /* the lens is the orbital fixed point */
+  /* THE STROKE IS PERMANENT (O-84 amendment, Howell 2026-08-22): it used to
+     appear only while rotating, which was fine while every settled node sat
+     dead-centre — the lens edge had nothing to say. A split verse settles
+     OFF-centre now, and the partial eclipse only reads against a lens whose
+     edge is always drawn. The parent button's stroke is already permanent,
+     so this is the same logic applied to the other fixed circle. */
+  stroke: var(--color-magnifier-stroke, #000);
+  stroke-width: 1px;
 }
 
 /* Labels seated ON orbital surfaces wear the orbital ink: centered node
