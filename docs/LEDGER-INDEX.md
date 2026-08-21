@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-21 from 250 entries.
+Generated 2026-08-21 from 251 entries.
 
 | id | status | title |
 |---|---|---|
@@ -133,6 +133,7 @@ Generated 2026-08-21 from 250 entries.
 | O-88 | OPEN | THE STRATA CANON DESCRIBED THE INSTRUMENT BACKWARDS — six false states in one document, three of them the same sentence O-82 already struck twice |
 | O-89 | RULED IN PRINCIPLE | LEAVES AND THE ROOT — every hierarchy is edition vocabulary; the shared layer is the text alone |
 | O-90 | RULED | THE LEAF-AND-SHARD DESIGN — ruled, with the migration checklist |
+| O-91 | RULED PROVISIONALLY | THE MARGIN NOTE TYPE IS 5% — provisional until his eye meets a note |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
