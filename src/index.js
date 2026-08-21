@@ -1639,6 +1639,13 @@ export function createApp({
       { ...magnifier, radius: magnifierRadius, label: magnifierLabel },
       {
         isRotating,
+        // O-84 (Howell's correction, 2026-08-22): a split verse settles as a
+        // TRUE partial eclipse — the node and its label stay in their normal
+        // ring seats at normal size, and the lens is a hollow stroke circle
+        // overlapping the node. The settled-lens treatment (opaque fill, the
+        // lens wearing the item's label, the node's own label masked) is for
+        // whole verses only.
+        eclipsed: !isRotating && partsOf(selected) === 2,
         viewport: vp,
         debug,
         magnifierAngle: magnifier.angle,

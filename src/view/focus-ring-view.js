@@ -180,6 +180,11 @@ export class FocusRingView {
   render(nodes, arcParams, viewportWindow, magnifier, options = {}) {
     if (!this.nodesGroup) return;
     const isRotating = Boolean(options.isRotating);
+    // O-84: an eclipsed settle — a split verse at rest. The node keeps its
+    // ordinary seat, size and label, and the lens goes hollow so the node
+    // reads as partially covering it. The settled-lens absorption below
+    // (opaque fill, lens label, node label masked) is for whole verses.
+    const eclipsed = Boolean(options.eclipsed);
     const debug = Boolean(options.debug);
     const viewport = options.viewport ?? {};
     const viewportWidth = viewport.width ?? 0;
@@ -355,7 +360,9 @@ export class FocusRingView {
       label.style.fill = node.item?.now ? NOW_LABEL_FILL : '';
       const masked = this.#isNearMagnifier(node.angle, magnifierAngle, labelMaskEpsilon);
       const isSelected = selectedId && (node.item.id === selectedId);
-      const showNodeLabel = isRotating || (!masked && !isSelected);
+      // An eclipsed settle keeps every label in its ring seat (O-84): the
+      // half-settled node wears its own numeral, exactly as during rotation.
+      const showNodeLabel = isRotating || eclipsed || (!masked && !isSelected);
       label.textContent = showNodeLabel ? (node.label ?? node.item.name ?? '') : '';
     });
 
@@ -381,6 +388,7 @@ export class FocusRingView {
         this.magnifierCircle.setAttribute('aria-label', magnifier.label);
       }
       this.magnifierGroup.classList.toggle('rotating', isRotating);
+      this.magnifierGroup.classList.toggle('eclipsed', eclipsed);
       this.magnifierLabel.setAttribute('x', magnifier.x);
       this.magnifierLabel.setAttribute('y', magnifier.y);
       const magRotation = ((magnifier.angle || 0) * 180) / Math.PI + 180;
@@ -430,7 +438,10 @@ export class FocusRingView {
       if (isRotating) {
         this.magnifierLabel.textContent = '';
       } else {
-        this.magnifierLabel.textContent = (magnifier.label || '');
+        // Eclipsed: the lens stays visually empty — the node's own label is
+        // the only name on the glass (O-84) — but the settle is still
+        // ANNOUNCED, because a screen reader cannot see an eclipse.
+        this.magnifierLabel.textContent = eclipsed ? '' : (magnifier.label || '');
         this.#announceSettled(magnifier.label || '');
       }
       this.magnifierGroup.removeAttribute('display');

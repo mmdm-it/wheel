@@ -12,11 +12,13 @@
 // The ring's half of the ruling — the eclipse itself — is geometry on the
 // glass; its verifier is Howell on the LAN, as with every rendering ruling.
 import assert from 'node:assert/strict';
-import { describe, it } from 'node:test';
+import { describe, it, beforeEach, afterEach } from 'node:test';
 import {
   splitVerse, layoutVerse, versePartCount, uniformVerseFontPx,
   LONGEST_VERSE_REFERENCE
 } from '../src/view/detail/plugins/line-layout.js';
+import { FocusRingView } from '../src/view/focus-ring-view.js';
+import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 
 // A phone-shaped sector: SSd 390, a straight-sided line table (the taper is
 // sectorMetricAt's business and interpolates the same either way).
@@ -111,5 +113,55 @@ describe('a long verse shows in two parts (O-84)', () => {
     assert.match(base[0], /stroke:\s*var\(--color-magnifier-stroke/,
       'the settled lens draws its stroke, not only the rotating one');
     assert.match(base[0], /stroke-width/, 'with a width, so it actually paints');
+  });
+});
+
+// THE ECLIPSED SETTLE (O-84, corrected from Howell's screenshot 2026-08-22).
+// The first build let the settled-lens absorption run for split verses too:
+// the opaque lens covered the off-centre node and wore its label, so the
+// glass showed a fully-settled verse 9 — "centered in the magnifier ring,
+// filling it. This is wrong." The node must keep its ordinary seat, size and
+// numeral, and the lens goes hollow so the node partially covers the empty
+// stroke circle. These cells drive the REAL view against the mock DOM.
+describe('a split verse settles as a true eclipse, not an absorbed node', () => {
+  const originalDocument = globalThis.document;
+  let view;
+  beforeEach(() => {
+    globalThis.document = createMockDocument();
+    view = new FocusRingView(createMockElement('svg'));
+    view.init();
+  });
+  afterEach(() => { globalThis.document = originalDocument; });
+
+  const NODE = { item: { id: 'v9', name: '9' }, x: 10, y: 10, radius: 12, angle: 0, label: '9' };
+  const settle = eclipsed => view.render(
+    [NODE],
+    { hubX: 0, hubY: 0, radius: 100 },
+    { startAngle: 0, endAngle: Math.PI },
+    { x: 0, y: 0, radius: 24, angle: 0, label: '9' },
+    { isRotating: false, eclipsed, magnifierAngle: 0, labelMaskEpsilon: 0.5, selectedId: 'v9' }
+  );
+
+  it('a WHOLE verse still settles absorbed: the lens wears the label, the node label yields', () => {
+    settle(false);
+    assert.equal(view.magnifierLabel.textContent, '9', 'the lens speaks on settle');
+    assert.equal(view.labelsGroup.children[0].textContent, '', 'the node label is masked under it');
+    assert.ok(!view.magnifierGroup.classList.contains('eclipsed'));
+  });
+
+  it('an ECLIPSED settle leaves the node its own seat and numeral, and empties the lens', () => {
+    settle(true);
+    assert.equal(view.magnifierLabel.textContent, '', 'the lens shows nothing of its own');
+    assert.equal(view.labelsGroup.children[0].textContent, '9', 'the node keeps its numeral');
+    assert.ok(view.magnifierGroup.classList.contains('eclipsed'),
+      'and the class that hollows the lens fill is on');
+  });
+
+  it('the settle is still ANNOUNCED when eclipsed — a screen reader cannot see an eclipse', () => {
+    const region = { textContent: '' };
+    globalThis.document.getElementById = id => (id === 'a11y-announcer' ? region : null);
+    settle(true);
+    assert.equal(region.textContent, '9',
+      'the live region speaks the settled label even though the lens shows nothing');
   });
 });
