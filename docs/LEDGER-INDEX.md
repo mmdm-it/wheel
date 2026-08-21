@@ -122,7 +122,7 @@ Generated 2026-08-21 from 237 entries.
 | O-77 | FIXED | TURNING THE LANGUAGE RING IS A COMMIT, and the commit was closing the funnel |
 | O-78 | THE HANG FIXED | THE CROSSING SCANNED 185 MILLION TIMES TO LEARN NOTHING — and a filter I mistook for a trap |
 | O-79 | BOTH HALVES LANDED | THE GROUND UNDER THE EMBLEM FOLLOWS THE READER TOO — engine half landed, one line of cargo owed |
-| O-80 | OPEN | THE UNIT LIST GROWS PAST 39 — the engine survives the nine, and Ἔσδρας Β has only one shape |
+| O-80 | OPEN | THE UNIT LIST GROWS PAST 39 — the engine survives the nine, and Esdras B has only one shape |
 | O-81 | OPEN | THE DEPLOY GATE REFUSES BY LICENCE, AND THE GREEK IS NOT ON ITS LIST |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
