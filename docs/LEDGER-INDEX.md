@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-20 from 228 entries.
+Generated 2026-08-21 from 238 entries.
 
 | id | status | title |
 |---|---|---|
@@ -122,6 +122,8 @@ Generated 2026-08-20 from 228 entries.
 | O-77 | FIXED | TURNING THE LANGUAGE RING IS A COMMIT, and the commit was closing the funnel |
 | O-78 | THE HANG FIXED | THE CROSSING SCANNED 185 MILLION TIMES TO LEARN NOTHING — and a filter I mistook for a trap |
 | O-79 | BOTH HALVES LANDED | THE GROUND UNDER THE EMBLEM FOLLOWS THE READER TOO — engine half landed, one line of cargo owed |
+| O-80 | OPEN | THE UNIT LIST GROWS PAST 39 — the engine survives the nine, and Esdras B has only one shape |
+| O-81 | OPEN | THE DEPLOY GATE REFUSES BY LICENCE, AND THE GREEK IS NOT ON ITS LIST |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -240,3 +242,11 @@ Generated 2026-08-20 from 228 entries.
 | W-116 | OPEN | THE WALL HOOK REFUSES READS — four shapes, found from both sides |
 | W-117 | OPEN | THE FILESYSTEM WALL IS A TRIPWIRE — and we both spent a day treating it as a fence |
 | W-118 | OPEN | WF-13'S STAMP HAS NEVER BEEN WRITTEN — the board line that could not be answered |
+| W-119 | RULED | ROW 4 SKIPPED — Theodotion's Daniel has no source we can use yet |
+| W-120 | SUPERSEDED BY W | ROW 5 SKIPPED — Sinaiticus Tobit is licensed NonCommercial |
+| W-121 | RULED | THE CLEMENTINE GETS ITS OWN ROW — and row 6 stays an intention nobody can fulfil |
+| W-122 | RULED | THE BIBLE APP IS FREE FOREVER — and criterion 1 goes with it |
+| W-123 | RULED | SWETE IS ROW 2'S SOURCE, AND ECCLESIASTES WE TRANSCRIBE OURSELVES |
+| W-124 | RULED | SWETE'S DIGITISATION IS NOT SWETE'S PAGE — and KNOWN has to say which one it means |
+| W-125 | OPEN | THE SWETE DIGITISATION DROPS TEXT AT PAGE TURNS — and one directory holds an English Isaiah |
+| W-126 | MEASURED AND DECLARED | THE SEPTUAGINT ADDS TEN UNITS, AND ONLY ONE BOOK IS NOT ONE-TO-ONE |
