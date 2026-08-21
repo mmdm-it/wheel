@@ -15,7 +15,7 @@ import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
-import { onVerseFontReady, invalidateVerseMeasurement } from './view/detail/plugins/line-layout.js';
+import { onVerseFontReady, invalidateVerseMeasurement, versePartCount } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
@@ -72,6 +72,12 @@ function pinCanvas(vp) {
 }
 let viewport = measureViewport();
 pinCanvas(viewport);
+
+// O-84: memoised answers to "how many Detail Sector screens does this verse
+// need" — keyed by item, edition and viewport, cleared whenever the verse
+// measurement itself is invalidated (font arrival, re-wrap), since the count
+// derives from the measured size.
+const versePartsCache = new Map();
 
 // D.2 — the dimension state lives at the HOST level, above bootVolume, so a
 // choice survives volume reboots and gateway round trips (Howell ruling
@@ -1573,7 +1579,7 @@ window.addEventListener('detail-sector-change', (e) => {
 });
 
 let detailRenderSeq = 0; // stale-verify guard: each render invalidates pending checks
-function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation, wrapAttempt = 0 } = {}) {
+function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation, wrapAttempt = 0, part } = {}) {
   if (!detailPanel || !detailContent) return;
   // Only the leaf is described here. Note this returns WITHOUT clearing:
   // on the way up out of a leaf the panel is already fading, and it should
@@ -1602,6 +1608,10 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   if (payload?.type === 'text' && payload.uniform) {
     payload.dir = dimensionBridge.editionDirection(translation);
     payload.lang = dimensionBridge.editionLang(translation);
+    // O-84: which half of a split verse to show. An explicit part rides a
+    // preview (the reading tap paints ahead of the ring); otherwise the
+    // settled half is the ring's own state, so text and eclipse agree.
+    payload.part = Number.isFinite(part) ? part : (currentApp?.getVersePart?.() ?? 0);
   }
 
   const plugin = detailRegistry.getPlugin(payload);
@@ -1643,6 +1653,7 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       });
       if (!overflows) return;
       invalidateVerseMeasurement();
+      versePartsCache.clear(); // part counts derive from the measurement (O-84)
       renderDetail(selected, adapterInstance, manifest, adapterNormalized,
         { translation, wrapAttempt: wrapAttempt + 1 });
     }));
@@ -2577,7 +2588,29 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances),
     // Leaf-advance paints the text ahead of the ring's arrival — same
     // renderer the settle hook uses, resolving the translation live.
-    onDetailPreview: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
+    onDetailPreview: (item, o) => renderDetail(item, adapter, manifest, adapterNormalized,
+      { translation: activeTranslation(), part: o?.part }),
+    // O-84: the ring asks how many Detail Sector screens an item needs so a
+    // split verse settles as a partial eclipse. Answered HERE because the
+    // host owns the detail bounds, and answered by the same flow machinery
+    // that will render the text, so ring and sector cannot disagree.
+    versePartsFor: item => {
+      try {
+        const translation = activeTranslation();
+        const vpm = measureViewport();
+        const key = `${item?.id}|${translation}|${vpm.width}x${vpm.height}`;
+        const hit = versePartsCache.get(key);
+        if (hit !== undefined) return hit;
+        const payload = adapter?.detailFor
+          ? adapter.detailFor(item, manifest, { normalized: adapterNormalized, translation })
+          : null;
+        const parts = (payload?.uniform && typeof payload.text === 'string')
+          ? versePartCount(payload.text, computeDetailSectorBounds(vpm.width, vpm.height))
+          : 1;
+        versePartsCache.set(key, parts);
+        return parts;
+      } catch (_) { return 1; }
+    }
   });
   currentApp = app;
   currentManifest = manifest;
@@ -2754,9 +2787,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // which on iOS is NARROWER than the serif that then paints — the line ran
   // past the fence to the glass edge. One-shot per font arrival; fires
   // immediately (harmless re-render) if the face was already loaded.
-  onVerseFontReady(() => renderDetail(
-    app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
-    { translation: activeTranslation() }));
+  onVerseFontReady(() => {
+    versePartsCache.clear(); // the real serif re-measures everything (O-84)
+    renderDetail(
+      app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      { translation: activeTranslation() });
+  });
   // Generic post-boot hook: adapters may schedule volume-specific startup
   // work (e.g. a featured-item prefetch) without the host
   // carrying volume literals (Phase B audit, H1).

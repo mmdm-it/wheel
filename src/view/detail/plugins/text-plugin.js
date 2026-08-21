@@ -21,7 +21,10 @@ export class TextDetailPlugin extends BaseDetailPlugin {
       // page reads calm and constant, filling the sector (Howell 2026-07-21).
       // Everything else keeps the discrete tiers, fit to its own text.
       if (item?.uniform) {
-        const { fontPx, lines } = layoutVerse(text, bounds);
+        // O-84: a verse that doesn't fit whole shows in two parts, and the
+        // host says which part the reader is on (the ring's partial eclipse
+        // is the visible half of the same state).
+        const { fontPx, lines } = layoutVerse(text, bounds, item.part === 1 ? 1 : 0);
         const container = create('div');
         container.className = 'detail-sector-content detail-text detail-text--arc';
         if (container.style) container.style.fontSize = `${fontPx.toFixed(1)}px`;

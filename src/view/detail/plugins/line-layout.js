@@ -105,11 +105,20 @@ export function stridedRows(lineTable, stride) {
 }
 
 // The longest verse in the volume — Esther 8:9, Vulgate (425 chars, 62 words).
-// Verse text sizes to THIS reference, not to itself, so every verse shares one
-// calm type size instead of short verses ballooning to fill the sector (Howell
-// 2026-07-21, retiring an old auto-fit idea). Device-adaptive: fit against the
-// LIVE line table, so the shared size is as large as the longest verse allows
-// on the screen at hand. If the longest verse fits, every verse fits.
+// Verse text sizes to a fixed reference, not to itself, so every verse shares
+// one calm type size instead of short verses ballooning to fill the sector
+// (Howell 2026-07-21, retiring an old auto-fit idea). Device-adaptive: fit
+// against the LIVE line table, so the shared size is as large as the
+// reference allows on the screen at hand.
+//
+// THE REFERENCE IS NOW THE LONGEST *HALF*, NOT THE LONGEST VERSE (O-84,
+// Howell 2026-08-22: the whole volume should not be hostage to its single
+// longest entry — his words are quoted in the ledger entry). This verse stays as the split reference, but the shared size is
+// fitted to the longer of its two balanced halves (~213 chars), so the type
+// roughly doubles — and any verse that no longer fits whole displays in two
+// parts (two is a HARD CAP, which is what keeps this reference the sizing
+// floor). The old rule "if the longest verse fits, every verse fits" is
+// retired; the new one is "if the longest half fits, every part fits".
 export const LONGEST_VERSE_REFERENCE =
   'Accitisque scribis et librariis regis (erat autem tempus tertii mensis, qui '
   + 'appellatur Siban) vigesima et tertia die illius scriptæ sunt epistolæ, ut '
@@ -241,6 +250,7 @@ function verseFontReady() { return verseFontLoaded; }
 // than its box), whatever produced them is stale.
 export function invalidateVerseMeasurement() {
   verseSizeCache.clear();
+  partCountCache.clear(); // part counts derive from the size (O-84): stale together
 }
 // Register a one-shot "the real serif just arrived" callback (fires
 // immediately if it already has).
@@ -304,10 +314,35 @@ function flowVerseAt(text, bounds, fontPx) {
   }
 }
 
+// Split a verse into two balanced parts at a word boundary — the boundary
+// nearest the character midpoint. Presentation only, the same jurisdiction as
+// line-wrapping: nothing is renumbered, nothing is cut, and joining the parts
+// with one space reproduces the verse exactly (O-84).
+export function splitVerse(text) {
+  const words = String(text || '').split(/\s+/).filter(Boolean);
+  if (words.length < 2) return [words.join(' '), ''];
+  const total = words.join(' ').length;
+  let best = 1;
+  let bestDiff = Infinity;
+  let lenA = 0;
+  for (let i = 1; i < words.length; i += 1) {
+    lenA += words[i - 1].length + (i > 1 ? 1 : 0);
+    const diff = Math.abs(lenA - (total - lenA - 1));
+    if (diff < bestDiff) { bestDiff = diff; best = i; }
+  }
+  return [words.slice(0, best).join(' '), words.slice(best).join(' ')];
+}
+
+// The sizing reference is the LONGER HALF of the longest verse (O-84) — the
+// worst text any single Detail Sector screen must ever hold, now that a verse
+// may show in two parts and never more than two.
+const halves = splitVerse(LONGEST_VERSE_REFERENCE);
+const SIZING_REFERENCE = halves[0].length >= halves[1].length ? halves[0] : halves[1];
+
 // The uniform verse font size (px) for this sector: the largest at which the
-// LONGEST verse just fits. Device-adaptive; memoised per sector geometry AND
-// font-load state (so the fallback-measured size is replaced once the real
-// serif arrives).
+// longest HALF just fits (O-84 — it was the longest whole verse). Device-
+// adaptive; memoised per sector geometry AND font-load state (so the
+// fallback-measured size is replaced once the real serif arrives).
 const verseSizeCache = new Map();
 export function uniformVerseFontPx(bounds) {
   const key = `${bounds.SSd}:${bounds.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}`;
@@ -316,22 +351,61 @@ export function uniformVerseFontPx(bounds) {
   let lo = bounds.SSd * 0.025, hi = bounds.SSd * 0.11;
   for (let i = 0; i < 16; i += 1) {
     const mid = (lo + hi) / 2;
-    if (!flowVerseAt(LONGEST_VERSE_REFERENCE, bounds, mid).overflow) lo = mid; else hi = mid;
+    if (!flowVerseAt(SIZING_REFERENCE, bounds, mid).overflow) lo = mid; else hi = mid;
   }
   verseSizeCache.set(key, lo);
   return lo;
 }
 
+// How many Detail Sector screens does this verse need at the shared size —
+// 1 or 2, never more (O-84's hard cap)? The ring asks this to know whether a
+// node settles centred or as a partial eclipse, and it MUST agree with what
+// layoutVerse will actually render, so it asks the same flow the renderer
+// does rather than estimating. Memoised beside the size cache and
+// invalidated with it.
+const partCountCache = new Map();
+export function versePartCount(text, bounds) {
+  const t = String(text || '');
+  const key = `${bounds.SSd}:${bounds.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}:${t.length}:${t.slice(0, 32)}`;
+  const hit = partCountCache.get(key);
+  if (hit !== undefined) return hit;
+  const parts = flowVerseAt(t, bounds, uniformVerseFontPx(bounds)).overflow ? 2 : 1;
+  partCountCache.set(key, parts);
+  return parts;
+}
+
 // Lay out ONE verse at the shared uniform size. Returns the size to apply and
 // the seated lines; a verse longer than the reference (shouldn't happen) has
 // its last line ellipsized rather than overrunning the sector.
-export function layoutVerse(text, bounds) {
+export function layoutVerse(text, bounds, part = 0) {
   const fontPx = uniformVerseFontPx(bounds);
-  // The size is the one the LONGEST verse fills the sector at, so every verse
-  // fits; lines are wrapped to their measured width, so no line runs long.
+  // The size is the one the longest HALF fills the sector at (O-84), so a
+  // verse that fits whole flows exactly as before; lines are wrapped to their
+  // measured width, so no line runs long.
   // NEVER ellipsise scripture, even on a defensive overflow (Howell 2026-07-22).
-  const { lines } = flowVerseAt(text, bounds, fontPx);
-  return { fontPx, lines };
+  const whole = flowVerseAt(text, bounds, fontPx);
+  if (!whole.overflow) return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+
+  // Two parts, never more (O-84's hard cap). The split is balanced by
+  // characters at a word boundary; if the measured flow disagrees with the
+  // character balance — a run of wide words on one side — words are nudged
+  // across until BOTH parts fit, so no part is ever cut. The loop is bounded
+  // by the word count and in the worst pathological case (a part that cannot
+  // fit however the words fall) the overflowing flow is rendered anyway,
+  // because scripture is never ellipsised.
+  let [a, b] = splitVerse(text);
+  for (let guard = 0; guard < 200; guard += 1) {
+    const aOver = flowVerseAt(a, bounds, fontPx).overflow;
+    const bOver = flowVerseAt(b, bounds, fontPx).overflow;
+    if (!aOver && !bOver) break;
+    if (aOver && bOver) break; // both overfull: nothing to trade
+    const from = aOver ? a.split(/\s+/) : b.split(/\s+/);
+    if (from.length < 2) break; // one word left: nothing to move
+    if (aOver) { b = `${from[from.length - 1]} ${b}`; a = from.slice(0, -1).join(' '); }
+    else { a = `${a} ${from[0]}`; b = from.slice(1).join(' '); }
+  }
+  const chosen = part === 1 ? b : a;
+  return { fontPx, lines: flowVerseAt(chosen, bounds, fontPx).lines, parts: 2, part: part === 1 ? 1 : 0 };
 }
 
 export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {
