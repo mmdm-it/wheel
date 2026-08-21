@@ -258,17 +258,25 @@ export function createApp({
     if (typeof versePartsFor !== 'function' || !item) return 1;
     try { return versePartsFor(item) === 2 ? 2 : 1; } catch (_) { return 1; }
   };
-  const ECLIPSE_FRACTION = 0.35; // of one node spacing — off-centre, clearly unsettled
+  // MOSTLY INSIDE THE LENS (Howell, 2026-08-22, from his mock screenshots).
+  // The offset is measured in LENS RADII, not node spacings: the first cut
+  // used 0.35 of a spacing, which on a phone is nearly a whole lens radius —
+  // the node sat half outside the circle in both directions. The centres are
+  // now 0.45 lens-radii apart, so the (equal-sized) node sits mostly inside
+  // the hollow circle with a clear crescent of lens showing on one side —
+  // the side that names the half.
+  const ECLIPSE_OFFSET_LENS_RADII = 0.45;
   // The signed rotation offset that seats `item` for `part`. Derived from the
   // travel direction rather than assumed: while the ring still sits on the
   // PREVIOUS item, the coming node waits at +step from the lens — so "short
   // of centre, on the side it entered from" is +step's side, and the second
-  // part sits opposite.
+  // part sits opposite. Converted to an angle on the arc the nodes ride.
   const settleOffsetFor = (item, part) => {
     if (partsOf(item) < 2) return 0;
     const step = getBaseAngleForOrder(item.order + 1, vp, nodeSpacing)
       - getBaseAngleForOrder(item.order, vp, nodeSpacing);
-    return (part === 1 ? -1 : 1) * ECLIPSE_FRACTION * step;
+    const angle = (ECLIPSE_OFFSET_LENS_RADII * magnifierRadius) / (arcParams.radius || 1);
+    return (part === 1 ? -1 : 1) * angle * Math.sign(step || 1);
   };
 
   // Notify the host page when the detail sector visibility changes.
