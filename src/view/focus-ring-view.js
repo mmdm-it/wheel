@@ -304,6 +304,15 @@ export class FocusRingView {
         const dist = Math.abs(node.angle - magnifierAngle);
         const sigma = labelMaskEpsilon * 0.5; // ≈ 0.3 × nodeSpacing
         magScale = 1 + (MAGNIFIER_NODE_SCALE_PEAK - 1) * Math.exp(-(dist * dist) / (2 * sigma * sigma));
+      } else if (eclipsed && selectedId && node.item.id === selectedId) {
+        // O-84 (Howell, 2026-08-22): a HALF-settled node is a settled node —
+        // it and its numeral grow to the same size a fully settled verse
+        // shows, which is the lens's own size. Only its seat differs: it
+        // rests off-centre, overlapping the hollow circle. Scaled to the
+        // lens's actual radius rather than the rotation peak, so the two
+        // circles of the eclipse are the same size by construction.
+        const lensR = magnifier && Number.isFinite(magnifier.radius) ? magnifier.radius : 0;
+        magScale = lensR > 0 ? lensR / nodeRadius : MAGNIFIER_NODE_SCALE_PEAK;
       }
       const effectiveRadius = nodeRadius * magScale;
 

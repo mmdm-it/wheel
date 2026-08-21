@@ -157,6 +157,25 @@ describe('a split verse settles as a true eclipse, not an absorbed node', () => 
       'and the class that hollows the lens fill is on');
   });
 
+  it('the half-settled node wears the SETTLED size — the lens\'s own (Howell, 2026-08-22)', () => {
+    // "Verse 9 at rest, either half, should be the same size as a settled
+    // verse 10 at rest." The settled size IS the lens: the whole-verse settle
+    // absorbs the node under an opaque lens of magnifier radius, so equality
+    // means the eclipsed node's circle grows to that same radius — two
+    // equal circles, partially overlapping, which is what an eclipse is.
+    settle(true);
+    const circle = view.nodesGroup.children[0];
+    assert.equal(Number(circle.getAttribute('r')), 24,
+      'the node circle at the lens radius (fixture: node 12, lens 24)');
+    const label = view.labelsGroup.children[0];
+    assert.match(String(label.getAttribute('transform') || ''), /scale\(2\.000\)/,
+      'and the numeral scales with it');
+    // The neighbours do not grow — only the half-settled node is settled.
+    settle(false);
+    assert.equal(Number(view.nodesGroup.children[0].getAttribute('r')), 12,
+      'a whole-verse settle leaves the ring node at ring size (it hides under the lens)');
+  });
+
   it('the settle is still ANNOUNCED when eclipsed — a screen reader cannot see an eclipse', () => {
     const region = { textContent: '' };
     globalThis.document.getElementById = id => (id === 'a11y-announcer' ? region : null);
