@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-21 from 246 entries.
+Generated 2026-08-21 from 247 entries.
 
 | id | status | title |
 |---|---|---|
@@ -130,6 +130,7 @@ Generated 2026-08-21 from 246 entries.
 | O-85 | RULED | VERSE TYPE IS SIZED PER EDITION, BY EYE — the doubling was accepted, not ruled |
 | O-86 | RULED | THE ECLIPSE TRIGGER WIDENS — a note that outgrows the margin splits across half-settles |
 | O-87 | FIXED | THE BOOK RING DID NOT EXIST FOR THE SECOND EDITION — migrating out of the Greek chapters did nothing |
+| O-88 | OPEN | THE STRATA CANON DESCRIBED THE INSTRUMENT BACKWARDS — six false states in one document, three of them the same sentence O-82 already struck twice |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
