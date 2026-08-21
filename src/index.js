@@ -110,8 +110,12 @@ export function createApp({
   // Paint the detail sector for a specific item NOW, ahead of the ring's
   // arrival — the reader is looking at the text, not the ring (Howell
   // 2026-07-21). Used by the leaf-advance tap so the words don't wait out
-  // the catch-up rotation.
-  onDetailPreview = null
+  // the catch-up rotation. Receives (item, { part }) since O-84: a split
+  // verse previews the half the ring is about to seat.
+  onDetailPreview = null,
+  // O-84: how many Detail Sector screens does this item need — 1 or 2?
+  // Answered by the host, which owns the detail bounds; no answer means 1.
+  versePartsFor = null
 }) {
   if (!svgRoot) throw new Error('createApp: svgRoot is required');
   const debug = Boolean(contextOptions.debug);
@@ -240,6 +244,33 @@ export function createApp({
   let pendingSelectionIndex = null;
   let detailOpenCallback = null;  // called after forced-expansion animation completes
 
+  // ── THE PARTIAL ECLIPSE (O-84, Howell 2026-08-22) ──────────────────────
+  // A verse too long for one Detail Sector screen shows in two parts, and
+  // the RING says which part the reader is on: for the first, the node rests
+  // short of the Magnifier's centre, on the side it entered from; for the
+  // second, past it. The offset is impressionistic — visibly unsettled, not
+  // literally half in — per Howell's screenshots. `versePart` is the settled
+  // half (0 or 1); `versePartsFor` is the host's answer to "how many screens
+  // does this item need", and no answer means one — which is every volume
+  // that renders no long uniform text, and every level above the leaf.
+  let versePart = 0;
+  const partsOf = item => {
+    if (typeof versePartsFor !== 'function' || !item) return 1;
+    try { return versePartsFor(item) === 2 ? 2 : 1; } catch (_) { return 1; }
+  };
+  const ECLIPSE_FRACTION = 0.35; // of one node spacing — off-centre, clearly unsettled
+  // The signed rotation offset that seats `item` for `part`. Derived from the
+  // travel direction rather than assumed: while the ring still sits on the
+  // PREVIOUS item, the coming node waits at +step from the lens — so "short
+  // of centre, on the side it entered from" is +step's side, and the second
+  // part sits opposite.
+  const settleOffsetFor = (item, part) => {
+    if (partsOf(item) < 2) return 0;
+    const step = getBaseAngleForOrder(item.order + 1, vp, nodeSpacing)
+      - getBaseAngleForOrder(item.order, vp, nodeSpacing);
+    return (part === 1 ? -1 : 1) * ECLIPSE_FRACTION * step;
+  };
+
   // Notify the host page when the detail sector visibility changes.
   // `when` indicates the timing: 'immediate' (show/hide now) or 'after-animation'
   // (show after the expand animation has completed).
@@ -352,12 +383,16 @@ export function createApp({
     const selected = nav.getCurrent();
     if (!selected) return;
     const baseAngle = getBaseAngleForOrder(selected.order, vp, nodeSpacing);
-    const desiredRotation = magnifier.angle - baseAngle;
+    // O-84: a split verse never sits centred — even a fresh alignment seats
+    // the eclipse for whichever half is current, or the ring would claim a
+    // settled read the Detail Sector isn't showing.
+    const desiredRotation = magnifier.angle + settleOffsetFor(selected, versePart) - baseAngle;
     const bounds = computeBounds(buildVisibleItems());
     rotation = clampRotation(desiredRotation, bounds);
   };
 
   const setPrimaryItems = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
+    versePart = 0; // a new chain is a new reading position (O-84)
     preserveOrderFlag = nextPreserveOrder;
     normalizedItems = normalizeItems(newItems, { preserveOrder: preserveOrderFlag });
     const safePrimaryIndex = (() => {
@@ -1734,7 +1769,10 @@ export function createApp({
   const rotateToIndex = (index, opts = {}) => {
     const item = nav.items?.[index];
     if (!item) return false; // an empty link is never a destination
-    const targetAngle = magnifier.angle;
+    // O-84: which half of a split verse this journey seats. A distant click
+    // always lands on the first part; only the reading tap asks for the second.
+    const part = opts.part === 1 ? 1 : 0;
+    const targetAngle = magnifier.angle + settleOffsetFor(item, part);
     const baseAngle = getBaseAngleForOrder(item.order, vp, nodeSpacing);
     const desiredRotation = targetAngle - baseAngle;
     const bounds = computeBounds(nav.items);
@@ -1764,6 +1802,7 @@ export function createApp({
     isRotating = true;
     animateSnapTo(clampedRotation, duration, () => {
       pendingSelectionIndex = null;
+      versePart = part; // before selectIndex, so the settle render reads the right half (O-84)
       nav.selectIndex(index);
       if (typeof opts.onArrive === 'function') opts.onArrive();
     });
@@ -1784,6 +1823,15 @@ export function createApp({
   const advanceLeaf = () => {
     const items = nav.items || [];
     const from = pendingSelectionIndex ?? nav.getCurrentIndex();
+    // O-84: a split verse reads in two taps. Settled on its first part, the
+    // reading tap does not leave the verse — it paints the second part and
+    // rotates the ring only slightly, carrying the node from one side of the
+    // Magnifier's centre to the other (the partial eclipse changes sides).
+    // Only a SETTLED state half-steps; mid-journey taps keep their meaning.
+    if (pendingSelectionIndex === null && versePart === 0 && partsOf(items[from]) === 2) {
+      if (typeof onDetailPreview === 'function') onDetailPreview(items[from], { part: 1 });
+      return rotateToIndex(from, { part: 1, durationMs: 250 });
+    }
     let next = from + 1;
     // Empty links are stepped over; placebo links (the version stamp) can
     // never be a reading stop either (Phase C audit L2 — latent until a
@@ -1795,7 +1843,7 @@ export function createApp({
     // arrival (rotateToIndex is untouched), which re-paints the same text.
     // Scoped to this single-step reading advance; a distant click still waits
     // for the lens, per the arrival-commit rule above (Howell 2026-07-21).
-    if (typeof onDetailPreview === 'function') onDetailPreview(items[next]);
+    if (typeof onDetailPreview === 'function') onDetailPreview(items[next], { part: 0 });
     return rotateToIndex(next);
   };
 
@@ -1892,29 +1940,38 @@ export function createApp({
   const selectNearest = () => {
     cancelSnap();
     if (!nav.items.length) return;
-    const targetAngle = magnifier.angle;
     let closestIdx = nav.getCurrentIndex();
     let closestDiff = Infinity;
-    let closestAngle = null;
+    let closestDelta = null;
+    let closestPart = 0;
     // The node nearest the magnifier is always on-screen, so only the visible
     // window (~21 nodes) can win — never scan the whole chain (that walk was
     // 84k trig ops per finger-lift on the months timeline, iPhone probe
     // 2026-07-17). calculateNodePositions is windowed and gap-aware.
+    // O-84: a split verse offers TWO detents — one either side of the
+    // Magnifier's centre — so a scrubbing thumb feels the halves exactly as
+    // the reading tap steps them, and releasing near a long verse settles on
+    // whichever half the finger left the ring closer to.
     const visibleNodes = calculateNodePositions(nav.items, vp, rotation, nodeRadius, nodeSpacing);
     visibleNodes.forEach(node => {
       if (node.item?.placebo) return; // the version footnote is never a seat
-      const diff = Math.abs(node.angle - targetAngle);
-      if (diff < closestDiff) {
-        closestDiff = diff;
-        closestIdx = node.index;
-        closestAngle = node.angle;
+      const parts = partsOf(node.item);
+      for (let p = 0; p < parts; p += 1) {
+        const detentAngle = magnifier.angle + settleOffsetFor(node.item, p);
+        const diff = Math.abs(node.angle - detentAngle);
+        if (diff < closestDiff) {
+          closestDiff = diff;
+          closestIdx = node.index;
+          closestDelta = detentAngle - node.angle;
+          closestPart = p;
+        }
       }
     });
     pendingSelectionIndex = null; // a thumb overrides any journey in flight
+    versePart = closestPart; // before selectIndex, so the settle render reads it (O-84)
     nav.selectIndex(closestIdx);
-    if (closestAngle !== null) {
-      const delta = targetAngle - closestAngle;
-      const targetRotation = rotation + delta;
+    if (closestDelta !== null) {
+      const targetRotation = rotation + closestDelta;
       isRotating = true;
       animateSnapTo(targetRotation, 100);
       return;
@@ -1928,6 +1985,9 @@ export function createApp({
   return {
     advanceLeaf,
     detailAreaAdvances,
+    // O-84: which half of a split verse is settled — the host's detail render
+    // reads this so the text and the eclipse always agree.
+    getVersePart: () => versePart,
     // THE CORNER EMBLEM FOLLOWS THE READER (H-31). The host owns WHEN — it is
     // the only thing that knows a book changed — and the volume owns WHICH.
     // Returns whether anything actually changed, so a caller on a frequent
