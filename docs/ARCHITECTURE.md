@@ -1,5 +1,13 @@
 # Architecture (Adapter Reset, v3.x numbering)
 
+*Last audited: 2026-08-20 by Orville — Q3 (does it assert a state that is now
+false?). Three findings, all struck below and filed as O-82: the strata cycle
+ran the wrong way, the interaction store's events and state were stale, and a
+paragraph still called itself current at v3.7.12. Observed and NOT changed,
+because it is another document and this is one sitting: `DIMENSION_SYSTEM.md`
+describes the dimension button as a two-stratum on/off toggle, which it is not.
+That is the next audit.*
+
 > Goal: keep the proven geometry/rendering pieces but rebuild around adapters, schemas, and a single interaction store/state machine. Every volume ships a plugin adapter; renderers stay data-agnostic. Roadmap tracks this work as v3.3–v3.6.
 
 > **This is the current architecture.** Renamed from `ARCHITECTURE_V4.md` on 2026-08-02: the file called V4 was the live design and the file called V3 was the retired v2 baseline, which is precisely backwards from what the names implied. The baseline now lives at [`ARCHITECTURE_V2_BASELINE.md`](ARCHITECTURE_V2_BASELINE.md) and is historical.
@@ -38,13 +46,22 @@ Each volume implements:
 ## Interaction Store / State Machine
 
 Single source of truth for UI state.
-- State: `{ volume, rotation, focusId, hoverId, animation: 'idle'|'spinning'|'transitioning', modal: null|{type,payload}, error: null|ErrorLike }`.
-- Events: `SET_VOLUME`, `ROTATE_TO`, `FOCUS`, `HOVER`, `ANIMATION_START/END`, `DEEP_LINK`, `LOAD_RESULT`.
+- State: `{ volume, language, edition, dimensions, rotation, focusId, hoverId, animation: 'idle'|'spinning'|'transitioning', modal: null|{type,payload}, error: null|ErrorLike }`.
+- Events: `SET_VOLUME`, `SET_DIMENSIONS`, `SET_LANGUAGE`, `SET_EDITION`, `SET_ROTATION`, `FOCUS`, `HOVER`, `ANIMATION_START/END`, `SET_MODAL`, `SET_ERROR`.
+
+> **CORRECTED 2026-08-20 (O-82; the Q3 audit above).** The state omitted
+> `language`, `edition` and `dimensions` — the three fields the whole dimension
+> system runs on — and the event list named **`ROTATE_TO`, `DEEP_LINK` and
+> `LOAD_RESULT`, none of which has ever existed.** The first is really
+> `SET_ROTATION`; the other two were never built. Read against
+> `src/core/interaction-store.js`, which is the only place these names are real.
 - Guards: block/queue volume switch during transitions; clear hover on volume change; reject stale loads; debounce rotation commands while applying layout.
 - Side effects: confined to effect handlers (load adapter, fetch manifest, log telemetry); reducers remain pure.
 
 **Dimension portals**
-- Dimension Button is the sole portal control. It cycles strata in order: Primary (hierarchy) → Secondary (first portal) → Tertiary (second portal, if present) → back to Primary.
+- Dimension Button is the sole portal control. It cycles strata **inward**,
+  narrowing at every press: Tertiary (languages) → Secondary (editions) →
+  Primary (the text) → back out to Tertiary.
 - Volumes may expose zero, one, or two portals; never more than two. No portals: Dimension Button hidden/inactive. One portal: Primary ↔ Secondary. Two portals: Primary ↔ Secondary ↔ Tertiary.
 - Portals are selection layers for dimension values (e.g., language, then translation); they are not additional dimensions themselves.
 - Terminology: use “translations/editions” for the **Secondary** portal options, and “languages” for the **Tertiary** (the registry's languages, each holding its editions).
@@ -81,7 +98,7 @@ The Child Pyramid supports a spiral node layout mode, in which child nodes are p
 - **Benefits:** This method guarantees true equidistant spacing along the spiral curve, improving visual consistency and layout quality for large or irregular child sets.
 
 Adapters and geometry helpers expose this layout as part of the `layoutSpec` contract, and it is selected automatically for appropriate volumes or node counts.
-**Current implementation note (v3.7.12)**: The UI renders fan-lines, spiral, and intersections via `computeChildPyramidGeometry` and hides child nodes; Spiral layout remains the contract, but nodes are intentionally suppressed in PyramidView until re-enabled.
+**Implementation note, last checked at v3.7.12 and NOT re-checked since (flagged 2026-08-20, O-82 — the engine is at 3.28.0)**: The UI renders fan-lines, spiral, and intersections via `computeChildPyramidGeometry` and hides child nodes; Spiral layout remains the contract, but nodes are intentionally suppressed in PyramidView until re-enabled.
 - Theming: base tokens + per-volume tokens injected at render time; no inline styles/`!important`.
 
 ## The Migration Wall (H-14, 2026-08-12)
