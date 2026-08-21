@@ -570,6 +570,16 @@ svg :focus-visible {
   stroke-width: 1px;
 }
 
+/* THE ECLIPSED SETTLE (O-84, corrected 2026-08-22 from Howell's screenshot):
+   a split verse at rest. The lens goes hollow — the node, in its ordinary
+   ring seat at ordinary size, partially covers the empty stroke circle, and
+   THAT overlap is the partial eclipse. An opaque lens absorbing the node
+   (the whole-verse settle) would hide the very thing this state exists to
+   show. */
+.focus-ring-magnifier.eclipsed .focus-ring-magnifier-circle {
+  fill: none;
+}
+
 /* THE WITHHELD VOLUME (H-14; Howell 2026-08-12, specified from the phone).
    The instrument is present and holds nothing: band, chrome and the volume's
    logo, with no fill on any node and no labels anywhere.
