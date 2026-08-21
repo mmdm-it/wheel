@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-21 from 242 entries.
+Generated 2026-08-21 from 243 entries.
 
 | id | status | title |
 |---|---|---|
@@ -126,6 +126,7 @@ Generated 2026-08-21 from 242 entries.
 | O-81 | OPEN | THE DEPLOY GATE REFUSES BY LICENCE, AND THE GREEK IS NOT ON ITS LIST |
 | O-82 | VERIFIED AND CLOSED | THE DIMENSION BUTTON GOES THE OTHER WAY — and O-37's correction was never swept |
 | O-83 | RULED | A VERSE HAS ONE SIZE, NOT SIX — and the tiers that remain are not verses |
+| O-84 | RULED | THE PARTIAL ECLIPSE — a long verse shows in two parts, and the ring says which |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
