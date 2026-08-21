@@ -81,12 +81,27 @@ const dimensionStore = createInteractionStore();
 const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 
 // D — the strata STACK (docs/DIMENSION_SYSTEM.md). Up to three deep for a
-// dimensioned volume: primary (the volume) → secondary (languages, mirrored)
-// → tertiary (translations, standard). The dimension button cycles which
-// stratum is at
-// the FRONT: primary → secondary → tertiary → primary. Each press pushes the
-// stack one layer deeper — the front is full size, one layer back recedes to
-// 0.4, two layers back to 0.2 — each receding one straight-pull-back
+// dimensioned volume: primary (the text) → secondary (translations, mirrored)
+// → tertiary (languages, standard).
+//
+// CORRECTED 2026-08-20 (O-82). These five lines were wrong in two separate
+// ways for eleven days, while the code beneath them was right. They said
+// secondary held LANGUAGES and tertiary TRANSLATIONS, which is the assignment
+// O-37 retired on 2026-08-09 — read CHOOSERS below, where `secondary` asks
+// for `translationsOf` and `tertiary` for `languagesAvailable`. And they said
+// the button runs primary → secondary → tertiary, which is backwards.
+//
+// The button cycles INWARD, narrowing at every press: tertiary (the largest
+// set, deepest) → secondary → primary (the element itself, in front) → and
+// the wrap carries the reader from the text back out to the languages. That
+// IS O-37 — "nesting and depth agree, narrowing inward" — so a comment
+// describing the outward order contradicted the ruling it was implementing.
+// `cycleStrata` decrements for exactly this reason, and
+// test/boot-smoke.test.js walks the real button 2 → 1 → 0 → 2.
+//
+// Each press pushes the stack one layer deeper — the front is full size,
+// one layer back recedes to 0.4, two layers back to 0.2 — each receding one
+// straight-pull-back
 // (Disney multiplane: a 2D scale about the viewport centre, which drops the
 // off-screen hub) and softening under a static rack-focus blur. The front
 // opaquely covers the layers behind; strata not yet entered are hidden
