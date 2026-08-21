@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-21 from 249 entries.
+Generated 2026-08-21 from 250 entries.
 
 | id | status | title |
 |---|---|---|
@@ -129,7 +129,7 @@ Generated 2026-08-21 from 249 entries.
 | O-84 | RULED | THE PARTIAL ECLIPSE — a long verse shows in two parts, and the ring says which |
 | O-85 | RULED | VERSE TYPE IS SIZED PER EDITION, BY EYE — the doubling was accepted, not ruled |
 | O-86 | RULED | THE ECLIPSE TRIGGER WIDENS — a note that outgrows the margin splits across half-settles |
-| O-87 | FIXED | THE BOOK RING DID NOT EXIST FOR THE SECOND EDITION — migrating out of the Greek chapters did nothing |
+| O-87 | VERIFIED AND CLOSED | THE BOOK RING DID NOT EXIST FOR THE SECOND EDITION — migrating out of the Greek chapters did nothing |
 | O-88 | OPEN | THE STRATA CANON DESCRIBED THE INSTRUMENT BACKWARDS — six false states in one document, three of them the same sentence O-82 already struck twice |
 | O-89 | RULED IN PRINCIPLE | LEAVES AND THE ROOT — every hierarchy is edition vocabulary; the shared layer is the text alone |
 | O-90 | RULED | THE LEAF-AND-SHARD DESIGN — ruled, with the migration checklist |
@@ -261,3 +261,4 @@ Generated 2026-08-21 from 249 entries.
 | W-126 | MEASURED AND DECLARED | THE SEPTUAGINT ADDS TEN UNITS, AND ONLY ONE BOOK IS NOT ONE-TO-ONE |
 | W-127 | RULED | THE MARGIN GOES BEYOND THE RING — Swete's apparatus is ruled IN |
 | W-128 | OPEN | THE MARGIN OWES A VERIFICATION PASS — its OCR is the roughest in the pin |
+| W-129 | DRAFTED | THE CARGO HALF OF LEAF-AND-SHARD — Wilbur's design, folded under his name |
