@@ -30,13 +30,14 @@ const load = () => loadBibleVolume({ base: BASE, version: VERSION, fetchJson });
 describe('the wall reader — volume.json is the sole enumeration', () => {
   it('boots from volume.json and enumerates one book', async () => {
     const volume = await load();
-    assert.equal(volume.units.length, 1);
-    // THE ENUMERATION IS FLAT (H-29). It was testaments-with-books; the volume
-    // no longer says which division a book is in, because that is the
-    // edition's and differs between them.
+    // THE ENUMERATION IS SHARDS AND EDITIONS (O-92). The volume no longer
+    // says which books exist — a book is the edition's own word, declared in
+    // its chart index, exactly as its divisions already were (H-29).
+    assert.equal(volume.shards.length, 1, 'one shard');
+    assert.equal(volume.booksFor('DRA').length, 1, 'one DRA book');
     assert.equal(volume.divisionsFor('DRA').length, 1, 'the edition declares one division');
-    assert.deepEqual(volume.divisionsFor('DRA')[0].books, ['bc22df']);
-    assert.equal(volume.units[0].leaves, 31);
+    assert.deepEqual(volume.divisionsFor('DRA')[0].books, ['bdra9e1']);
+    assert.equal(volume.shards[0].utterances, 31);
   });
 
   it('offers Douay-Rheims and nothing else (O-46b)', async () => {
@@ -58,21 +59,22 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
       base: BASE, version: VERSION,
       fetchJson: async p => { touched.push(p); return fetchJson(p); }
     });
-    await volume.loadTextFor('bc22df');
+    await volume.loadTextFor('bdra9e1');
     assert.deepEqual(touched.filter(p => p.includes('/VUL/')), [],
       'no fetch may name VUL: unenumerated means unreachable, whatever is on disk');
   });
 
   it('a unit absent from the enumeration does not exist, whatever is on disk', async () => {
     const volume = await load();
-    assert.equal(volume.has('bc22df'), true);
+    assert.equal(volume.has('bc22df'), true, 'the shard id exists');
+    assert.equal(volume.has('bdra9e1'), true, 'the edition book id exists');
     assert.equal(volume.has('GENE'), false, 'the legacy id is not an address here');
     assert.throws(() => volume.pathFor('spine', 'GENE'), /does not exist \(H-14\)/);
   });
 
   it('carries NO section level — the reader cannot stand there', async () => {
     const volume = await load();
-    assert.ok(!JSON.stringify(volume.units).includes('section'));
+    assert.ok(!JSON.stringify(volume.booksFor('DRA')).includes('section'));
     assert.ok(!JSON.stringify(volume.divisionsFor('DRA')).includes('section'));
   });
 
@@ -81,11 +83,11 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     // The fixture's ids are hashed so alphabetical order disagrees with spine
     // order. If anything here sorted by id text it would pass on one book and
     // fail on the first real testament.
-    assert.equal(volume.units[0].order, 0);
-    assert.equal(volume.units[0].order, 0);
+    assert.equal(volume.shards[0].order, 0);
+    assert.equal(volume.booksFor('DRA')[0].order, 0);
     // A BOOK CARRIES NO DIVISION (H-29): "which testament is Genesis in" is not
     // a question about Genesis. The parent is projected from the edition.
-    assert.equal(volume.units[0].testamentId, undefined,
+    assert.equal(volume.booksFor('DRA')[0].testamentId, undefined,
       'a stored parent is exactly what the ruling retired');
   });
 });
@@ -94,7 +96,8 @@ describe('the wall reader — names are quotations (H-2)', () => {
   it('loads names per language, from the volume rather than the legacy registry', async () => {
     const volume = await load();
     const english = volume.namesByLanguage.english;
-    assert.equal(english.books[volume.units[0].id], 'Genesis');
+    assert.equal(english.books.DRA[volume.booksFor('DRA')[0].id], 'Genesis',
+      'names carry the edition axis (W-129)');
     // The names table no longer carries a division name — the label is the
     // edition's own, quoted from its chart (H-29/H-2), not translated per
     // language out of our vocabulary.
@@ -110,7 +113,7 @@ describe('the wall reader — names are quotations (H-2)', () => {
       fetchJson: async p => (p.includes('/names/') ? Promise.reject(new Error('404')) : fetchJson(p))
     });
     assert.equal(volume.namesByLanguage.english, null);
-    assert.equal(volume.units.length, 1, 'the volume still loads');
+    assert.equal(volume.shards.length, 1, 'the volume still loads');
   });
 });
 
@@ -126,8 +129,8 @@ describe('the wall reader — a unit resolves all-or-nothing, loudly', () => {
   it('loads Genesis 1 whole through the live path: spine, chart, text agree', async () => {
     const volume = await load();
     const spine = volume.spineFor('bc22df');
-    const chart = volume.chartFor('bc22df', 'DRA');
-    const records = await volume.loadTextFor('bc22df');
+    const chart = volume.chartFor('bdra9e1', 'DRA');
+    const records = await volume.loadTextFor('bdra9e1');
     assert.equal(spine.utterances.length, 31);
     assert.equal(chart.seats.length, 31);
     assert.equal(Object.keys(records).length, 31);
@@ -136,8 +139,8 @@ describe('the wall reader — a unit resolves all-or-nothing, loudly', () => {
 
   it('CHAPTERS ARE PROJECTED FROM THE CHART, not stored (O-44)', async () => {
     const volume = await load();
-    const containers = projectContainers(volume.chartFor('bc22df', 'DRA'),
-      { leaves: volume.spineFor('bc22df').utterances.length });
+    const containers = projectContainers(volume.chartFor('bdra9e1', 'DRA'),
+      { leaves: volume.chartFor('bdra9e1', 'DRA').seats.length });
     assert.equal(containers.length, 1, 'Genesis 1 is one container');
     assert.equal(containers[0].label, '1');
     assert.equal(containers[0].count, 31);
@@ -156,7 +159,7 @@ describe('the wall reader — a unit resolves all-or-nothing, loudly', () => {
         base: BASE, version: VERSION,
         fetchJson: async p => (p.includes('/text/') ? breakFetch(p) : fetchJson(p))
       });
-      assert.equal(await volume.loadTextFor('bc22df'), null,
+      assert.equal(await volume.loadTextFor('bdra9e1'), null,
         'half a unit renders as success, which is the one outcome 79 increments cannot afford');
     });
   }
@@ -186,7 +189,7 @@ describe('the wall reader — it refuses what it cannot do', () => {
           ? { books: [], editions: [{ code: 'DRA', language: 'english' }] }
           : fetchJson(p))
       }),
-      /enumerates no books/);
+      /enumerates no shards/);
   });
 });
 
@@ -198,8 +201,9 @@ describe('the wall reader — toRoot() normalises without rebuilding the legacy 
     const root = volume.toRoot();
     const [testamentId] = Object.keys(root.testaments);
     assert.equal(testamentId, 'division-0', 'the key is positional and edition-local');
-    assert.ok(root.testaments[testamentId].books[volume.units[0].id]);
-    assert.equal(root.testaments[testamentId].books[volume.units[0].id].leaves, 31);
+    const draBook = volume.booksFor('DRA')[0].id;
+    assert.ok(root.testaments[testamentId].books[draBook]);
+    assert.equal(root.testaments[testamentId].books[draBook].leaves, 31);
     assert.equal(root.testaments[testamentId].name, 'Holy Bible', 'the edition names it');
     assert.equal(root.testaments[testamentId].image, 'torah_scroll', 'and declares its emblem (H-31)');
   });
@@ -226,97 +230,84 @@ describe('the wall reader — toRoot() normalises without rebuilding the legacy 
     const volume = await load();
     const t = volume.toRoot().testaments['division-0'];
     assert.equal(t.sort_number, 0);
-    assert.equal(t.books[volume.units[0].id].sort_number, 0);
+    assert.equal(t.books[volume.booksFor('DRA')[0].id].sort_number, 0);
   });
 });
 
-describe('the wall reader — A PARTIAL EDITION MUST NOT POISON THE FULL ONE (O-65)', () => {
-  // The morning after the first partial edition entered the corpus, the
-  // reader showed Genesis's chapter ring and no text. The loader fetched a
-  // unit's text for EVERY declared edition in one Promise.all, so a book the
-  // partial edition lacks 404'd, the catch nulled the whole unit, and the
-  // Hebrew went down with the Greek it never had. These cells are the
-  // synthetic twin of that morning: edition FULL charts both units, edition
-  // PART charts only u1.
+describe('the wall reader — ONE BOOK, ONE EDITION, and O-42 survives per book (O-65 rewritten under O-92)', () => {
+  // The O-65 morning — a partial edition's 404 nulling a book the full
+  // edition held — CANNOT RECUR under leaf-and-shard, and these cells are
+  // its rewritten twin (W-102): a book belongs to exactly one edition, so
+  // the loader never fetches across editions for one book and there is no
+  // Promise.all left to poison. What survives of O-42 is per book: a
+  // declared book whose text fails still nulls, loudly and honestly.
   const VOLUME = {
     display_config: {},
-    books: [{ id: 'u1', leaves: 2 }, { id: 'u2', leaves: 2 }],
+    shards: [{ id: 's1', utterances: 2 }, { id: 's2', utterances: 2 }],
     editions: [
       { code: 'FULL', language: 'hebrew', hasChart: true, proofread: true },
       { code: 'PART', language: 'greek', hasChart: true, proofread: false }
     ]
   };
-  const chart = unitId => ({ edition: 'x', unit: unitId, seats: [{ label: '1' }, { label: '2' }] });
-  const text = (edition, unitId) => ({
-    edition, unit: unitId,
-    text: { '1:1': `${edition} ${unitId} one`, '1:2': `${edition} ${unitId} two` }
+  const chart = (bookId, shards, seats) => ({
+    book: bookId, shards, edition: 'x',
+    groups: [{ label: '1', from: 1, to: seats.length }],
+    seats: seats.map(l => ({ label: l, utterances: [`u-${bookId}-${l}`] }))
   });
-  // PART has no chart and no text for u2 — absence declared by the data, the
-  // BRENT shape. Every other path answers.
-  const partialFetch = async p => {
+  const text = (edition, bookId) => ({
+    edition, book: bookId,
+    text: { '1:1': `${edition} ${bookId} one`, '1:2': `${edition} ${bookId} two` }
+  });
+  // FULL declares two books; PART declares one, over the same first shard —
+  // the partial-edition shape, restated in the edition's own words.
+  const makeFetch = (over = {}) => async p => {
+    if (over.intercept) { const hit = over.intercept(p); if (hit !== undefined) return hit; }
     if (p.endsWith('volume.json')) return VOLUME;
     if (p.includes('/names/')) throw new Error(`404 ${p}`);
-    if (p.includes('/spine/')) throw new Error(`404 ${p}`);
-    if (p.includes('charts/FULL/index.json')) throw new Error(`404 ${p}`);
-    if (p.includes('charts/PART/index.json')) throw new Error(`404 ${p}`);
-    if (p.includes('charts/FULL/u1.json')) return chart('u1');
-    if (p.includes('charts/FULL/u2.json')) return chart('u2');
-    if (p.includes('charts/PART/u1.json')) return chart('u1');
-    if (p.includes('text/FULL/u1.json')) return text('FULL', 'u1');
-    if (p.includes('text/FULL/u2.json')) return text('FULL', 'u2');
-    if (p.includes('text/PART/u1.json')) return text('PART', 'u1');
+    if (p.includes('/spine/s1')) return { shard: 's1', utterances: ['u-f1-1', 'u-f1-2'] };
+    if (p.includes('/spine/s2')) return { shard: 's2', utterances: ['u-f2-1', 'u-f2-2'] };
+    if (p.includes('charts/FULL/index.json')) return { edition: 'FULL', books: [{ file: 'f1', shards: ['s1'] }, { file: 'f2', shards: ['s2'] }], groups: [], divisions: [] };
+    if (p.includes('charts/PART/index.json')) return { edition: 'PART', books: [{ file: 'p1', shards: ['s1'] }], groups: [], divisions: [] };
+    if (p.includes('charts/FULL/f1.json')) return chart('f1', ['s1'], ['1', '2']);
+    if (p.includes('charts/FULL/f2.json')) return chart('f2', ['s2'], ['1:2', '1:1']);
+    if (p.includes('charts/PART/p1.json')) return chart('p1', ['s1'], ['1', '2']);
+    if (p.includes('text/FULL/f1.json')) return text('FULL', 'f1');
+    if (p.includes('text/FULL/f2.json')) return text('FULL', 'f2');
+    if (p.includes('text/PART/p1.json')) return text('PART', 'p1');
     throw new Error(`404 ${p}`);
   };
-  const loadPartial = () => loadBibleVolume({ base: 'b', version: 'v', fetchJson: partialFetch });
+  const loadPartial = (over = {}) => loadBibleVolume({ base: 'b', version: 'v', fetchJson: makeFetch(over) });
 
-  it('a book the partial edition lacks still carries the full edition\'s text', async () => {
+  it('a book only the full edition declares loads whole — nothing else is asked', async () => {
     const volume = await loadPartial();
-    const records = await volume.loadTextFor('u2');
-    assert.ok(records, 'u2 came back null — the partial edition nulled a book it never contained');
+    const records = await volume.loadTextFor('f2');
+    assert.ok(records, 'the full edition\'s own book must load');
     const flat = JSON.stringify(records);
-    assert.ok(flat.includes('FULL u2 one'), 'the full edition\'s words must be there');
-    assert.ok(!flat.includes('PART u2'), 'and no text was invented for the edition that lacks it');
+    assert.ok(flat.includes('FULL f2'), 'its own edition\'s words');
+    assert.ok(!flat.includes('PART'), 'and no other edition is consulted at all (O-92)');
   });
 
-  it('a book both editions contain carries both', async () => {
+  it('two editions over one shard are two books, each carrying only its own text', async () => {
     const volume = await loadPartial();
-    const records = await volume.loadTextFor('u1');
-    assert.ok(records, 'the shared book must load');
-    const flat = JSON.stringify(records);
-    assert.ok(flat.includes('FULL u1 one') && flat.includes('PART u1 one'),
-      'both editions chart u1, so both must arrive together (O-42, on the right axis)');
+    const full = await volume.loadTextFor('f1');
+    const part = await volume.loadTextFor('p1');
+    assert.ok(JSON.stringify(full).includes('FULL f1') && !JSON.stringify(full).includes('PART'));
+    assert.ok(JSON.stringify(part).includes('PART p1') && !JSON.stringify(part).includes('FULL'));
   });
 
-  it('O-42 SURVIVES ON ITS OWN AXIS: a charted edition whose text fails still nulls the unit', async () => {
-    // PART charts u1 but its text does not arrive — that is a FAULT, not a
-    // membership fact, and rendering FULL alone would silently drop a
-    // tradition the reader was never told was absent.
-    const faultyFetch = async p => {
-      if (p.includes('text/PART/u1.json')) throw new Error('503 mid-deploy');
-      return partialFetch(p);
-    };
-    const volume = await loadBibleVolume({ base: 'b', version: 'v', fetchJson: faultyFetch });
-    const records = await volume.loadTextFor('u1');
-    assert.equal(records, null,
-      'a charted edition failing to arrive must null the unit — arrival faults stay loud');
+  it('O-42 SURVIVES PER BOOK: a declared book whose text fails nulls honestly', async () => {
+    const volume = await loadPartial({
+      intercept: p => (p.includes('text/PART/p1.json') ? (() => { throw new Error('boom'); })() : undefined)
+    });
+    assert.equal(await volume.loadTextFor('p1'), null,
+      'a fault is an honest empty (W-6), never another edition\'s words');
+    assert.ok(await volume.loadTextFor('f1'), 'and the other edition\'s book is untouched by it');
   });
 
-  it('the verse order actually reaches the records — the chart key must HIT (O-65 second defect)', async () => {
-    // The order lookup built its key with a space while the cache keys on a
-    // pipe, so it missed every time and nobody noticed: order fell back
-    // silently for every book in every edition. The chart below seats the
-    // addresses in REVERSE, so if the chart's order reaches the records,
-    // 1:2 seats BEFORE 1:1 — and if the lookup misses, insertion order wins
-    // and this fails.
-    const reversedFetch = async p => {
-      if (p.includes('charts/FULL/u2.json')) {
-        return { edition: 'x', unit: 'u2', seats: [{ label: '1:2' }, { label: '1:1' }] };
-      }
-      return partialFetch(p);
-    };
-    const volume = await loadBibleVolume({ base: 'b', version: 'v', fetchJson: reversedFetch });
-    const records = await volume.loadTextFor('u2');
-    assert.ok(records, 'u2 must load at all before its order can be judged');
+  it('the verse order actually reaches the records — the chart key must HIT (O-65 second defect, kept fixed)', async () => {
+    const volume = await loadPartial();
+    const records = await volume.loadTextFor('f2');
+    assert.ok(records, 'f2 must load at all before its order can be judged');
     assert.ok(records['1:1'] && records['1:2'], 'both addresses present');
     assert.ok(records['1:2'].seq < records['1:1'].seq,
       'the chart seats 1:2 first, so its seq must be lower — the order never arriving is the silent miss');

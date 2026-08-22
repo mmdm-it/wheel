@@ -27,32 +27,34 @@ const GRC_BOOKS = Array.from({ length: 3 }, (_, i) => `g${i + 1}`);
 
 function corpus() {
   const files = new Map();
+  const ALL = [...HEB_BOOKS, ...GRC_BOOKS];
   files.set('v1/volume.json', {
-    display_config: { volume_name: 'Bible' },
-    books: [...HEB_BOOKS, ...GRC_BOOKS].map(id => ({ id, leaves: 2 })),
+    display_config: { volume_name: 'Bible', structure_type: 'leaf_and_shard' },
+    // O-92: shards and editions, nothing else. One shard per fixture book,
+    // sharing the book's string for brevity — the classes are distinct in
+    // real data and nothing here depends on the coincidence.
+    shards: ALL.map(id => ({ id: `s-${id}`, utterances: 2 })),
     editions: [
-      // ORDER MATTERS AND IS THE POINT: the Hebrew is declared first, exactly
-      // as the real corpus declares it, so toRoot()'s default scaffold is
-      // the Hebrew's and the Greek's books exist only behind divisionsFor.
       { code: 'HEB', hasChart: true, proofread: false, language: 'hebrew', direction: 'rtl', name: 'Leningrad Codex', proofreadUnits: [...HEB_BOOKS] },
       { code: 'GRC', hasChart: true, proofread: false, language: 'greek', direction: 'ltr', name: 'Patriarchal Text', proofreadUnits: [] }
     ]
   });
-  for (const id of [...HEB_BOOKS, ...GRC_BOOKS]) {
-    files.set(`v1/spine/${id}.json`, { utterances: [`${id}:1`, `${id}:2`] });
+  for (const id of ALL) {
+    files.set(`v1/spine/s-${id}.json`, { shard: `s-${id}`, utterances: [`${id}:1`, `${id}:2`] });
   }
   const chart = id => ({
+    book: id, shards: [`s-${id}`],
     seats: [{ label: '1', utterances: [`${id}:1`] }, { label: '2', utterances: [`${id}:2`] }],
     groups: [{ label: '1', from: 1, to: 2 }]
   });
   for (const id of HEB_BOOKS) files.set(`v1/charts/HEB/${id}.json`, chart(id));
   for (const id of GRC_BOOKS) files.set(`v1/charts/GRC/${id}.json`, chart(id));
   files.set('v1/charts/HEB/index.json', {
-    units: [...HEB_BOOKS], groups: [],
+    edition: 'HEB', books: HEB_BOOKS.map(id => ({ file: id, shards: [`s-${id}`] })), groups: [],
     divisions: [{ label: 'תנ״ך', image: null, from: 1, to: HEB_BOOKS.length }]
   });
   files.set('v1/charts/GRC/index.json', {
-    units: [...GRC_BOOKS], groups: [],
+    edition: 'GRC', books: GRC_BOOKS.map(id => ({ file: id, shards: [`s-${id}`] })), groups: [],
     divisions: [{ label: 'Ἡ Καινὴ Διαθήκη', image: null, from: 1, to: GRC_BOOKS.length }]
   });
   return async p => {

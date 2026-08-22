@@ -28,7 +28,9 @@ const seedGenesisFixture = () => {
   const declared = ['VUL', 'DRA'];
   const chart = read('charts/VUL/bc22df.json');
   const records = normalizeUnitText({
-    editions: Object.fromEntries(declared.map(c => [c, read(`text/${c}/bc22df.json`)])),
+    // O-92: the DRA's text file wears the edition's own book id; the VUL
+    // files on disk keep the pre-doctrine id, unreachable as ever.
+    editions: Object.fromEntries(declared.map(c => [c, read(`text/${c}/${c === 'DRA' ? 'bdra9e1' : 'bc22df'}.json`)])),
     declared,
     order: chart.seats.map(seat => String(seat.label))
   });
@@ -858,56 +860,63 @@ describe('the shelf chart — order and sections (H-26)', () => {
 
 // The stale-shelf tripwire (Wilbur's ruling on his contract, 2026-08-16).
 // Fired rather than read: a guard that cannot be shown firing is not a guard.
-describe('a shelf drifting from the volume is LOUD (H-26)', () => {
-  const loadWith = async (shelfUnits, volumeUnits) => {
+describe('a declared book that cannot load is LOUD (O-92 — the heir of the stale-shelf tripwire)', () => {
+  // The H-26 drift suite guarded a shelf disagreeing with the volume's book
+  // list. Under leaf-and-shard there is no second enumeration left to
+  // disagree with — the edition's index IS its book list — so that whole
+  // failure class died structurally (rewritten, not amended: W-102). What
+  // can still break is an increment: an index declaring a book whose chart
+  // does not load, which would silently vanish from every ring. That is the
+  // loud line these cells pin.
+  const loadWith = async (indexBooks, chartsThatLoad) => {
     const { loadBibleVolume } = await import('../src/adapters/bible-volume.js');
     const errs = [];
     const realError = console.error;
     console.error = (...a) => errs.push(a.join(' '));
+    let volume;
     try {
-      await loadBibleVolume({
+      volume = await loadBibleVolume({
         base: '/x', version: 'v1',
         fetchJson: async p => {
           if (p.endsWith('volume.json')) {
             return {
               editions: [{ code: 'ED', language: 'l', hasChart: true }],
-              // H-29: the enumeration is flat; the level above books is the
-              // edition's, declared in its chart index.
-              books: volumeUnits.map(id => ({ id }))
+              shards: [{ id: 'S1', utterances: 2 }]
             };
           }
-          if (p.endsWith('index.json')) return { edition: 'ED', units: shelfUnits, groups: [] };
-          if (p.includes('/spine/')) return { utterances: ['1:1'] };
-          if (p.includes('/charts/')) return { seats: [{ label: '1', utterances: ['1:1'] }], groups: [{ label: '1', from: 1, to: 1 }] };
+          if (p.endsWith('index.json')) {
+            return { edition: 'ED', books: indexBooks.map(id => ({ file: id, shards: ['S1'] })), groups: [], divisions: [] };
+          }
+          if (p.includes('/spine/')) return { shard: 'S1', utterances: ['u1'] };
+          if (p.includes('/charts/')) {
+            const id = p.split('/').pop().replace('.json', '');
+            if (!chartsThatLoad.includes(id)) throw new Error('no such chart ' + p);
+            return { book: id, shards: ['S1'], seats: [{ label: '1', utterances: ['u1'] }], groups: [{ label: '1', from: 1, to: 1 }] };
+          }
           if (p.includes('/names/')) return { books: {} };
           throw new Error('no such file ' + p);
         }
       });
     } finally { console.error = realError; }
-    return errs;
+    return { errs, volume };
   };
 
-  it('a shelf naming unknown units says so, and names them', async () => {
-    const errs = await loadWith(['A', 'GHOST', 'B'], ['A', 'B']);
-    const hit = errs.find(e => e.includes('does not enumerate'));
-    assert.ok(hit, 'the drift is reported: ' + JSON.stringify(errs));
-    assert.match(hit, /GHOST/, 'and the unknown id is named, not merely counted');
+  it('a declared book whose chart fails to load is reported, by name', async () => {
+    const { errs, volume } = await loadWith(['A', 'B'], ['A']);
+    const hit = errs.find(e => e.includes('chart failed to load'));
+    assert.ok(hit, 'the broken increment is reported: ' + JSON.stringify(errs));
+    assert.match(hit, /\bB\b/, 'and the book is named, not merely counted');
+    // The book stays DECLARED — the index is the enumeration — but held
+    // nowhere: absent from every ring, present in the report.
+    assert.deepEqual(volume.booksFor('ED').map(b => b.id), ['A', 'B']);
+    assert.equal(volume.chartFor('B', 'ED'), null);
   });
 
-  it('THE STALE-SHELF SIGNATURE — zero matches — says THAT, specifically', async () => {
-    // Every id changed under the shelf (W-71 did exactly this to the corpus
-    // once). Filtering quietly would leave nothing to order, append everything
-    // in volume order, and revert the edition's arrangement with every cell
-    // green. The feature vanishing IS the failure and it reads as nothing.
-    const errs = await loadWith(['OLD1', 'OLD2'], ['NEW1', 'NEW2']);
-    const hit = errs.find(e => e.includes('matches NO enumerated unit'));
-    assert.ok(hit, 'the stale shelf is called by its name: ' + JSON.stringify(errs));
-    assert.match(hit, /silently NOT being shown/, 'and it says what the reader loses');
-  });
-
-  it('a shelf that merely OMITS units is silent — a partial shelf is legitimate', async () => {
-    const errs = await loadWith(['A'], ['A', 'B']);
-    assert.deepEqual(errs, [], 'no complaint: the volume enumerates, the shelf orders');
+  it('a clean index is silent, and its books are exactly what it declares', async () => {
+    const { errs, volume } = await loadWith(['A', 'B'], ['A', 'B']);
+    assert.deepEqual(errs, [], 'nothing to report');
+    assert.deepEqual(volume.booksFor('ED').map(b => b.id), ['A', 'B'],
+      'no second list filters the edition\'s own declaration (O-92)');
   });
 });
 

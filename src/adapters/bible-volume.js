@@ -48,24 +48,24 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       + 'and falling back to the legacy registry is the capability the wall removes.');
   }
 
-  // THE ENUMERATION IS A FLAT BOOK ROSTER (H-29, ruled 2026-08-19).
+  // THE ENUMERATION IS SHARDS AND EDITIONS, AND NOTHING ELSE (O-90/O-92,
+  // leaf-and-shard, ruled 2026-08-22 — the completion of H-29's trajectory).
   //
-  // It was `testaments[]` with books hanging off them, and that shape asserted
-  // something the volume is not entitled to say: which testament a book is in.
-  // Genesis sits in Vetus Testamentum under a Vulgate and in תנ״ך under the
-  // Leningrad Codex, so it is not a fact ABOUT Genesis and cannot be stored
-  // once for every edition. The level above books is the EDITION'S, read from
-  // its chart index, exactly as the chapter became a projection under H-11.
-  //
-  // What the volume still owns is WHICH BOOKS EXIST. That is the sole
-  // enumeration H-14 rules and it is unchanged.
-  const units = (volume?.books || []).map((book, order) => ({
-    id: book.id,
-    leaves: Number.isFinite(book.leaves) ? book.leaves : null,
+  // The volume used to enumerate BOOKS, and that shape asserted something the
+  // volume is not entitled to say: which books exist. A book is a WORD in an
+  // edition's vocabulary — the Hebrew has two words (Ezra, Nehemiah) where
+  // Swete's Greek has one (Esdras B) — exactly as verse numbers, chapters,
+  // sections and divisions were already the edition's. What the volume owns
+  // is the LEAVES and the boxes they are stored in: SHARDS, frozen storage
+  // partitions named by nobody's tradition and shown to no reader. Every
+  // book of every edition is declared in that edition's own chart index.
+  const shards = (volume?.shards || []).map((shard, order) => ({
+    id: shard.id,
+    utterances: Number.isFinite(shard.utterances) ? shard.utterances : null,
     order
   }));
-  if (!units.length) {
-    throw new Error('bible-volume: volume.json enumerates no books — the volume is empty, which is a data state and not a render');
+  if (!shards.length) {
+    throw new Error('bible-volume: volume.json enumerates no shards — the volume is empty, which is a data state and not a render');
   }
 
   // NAMES ARE QUOTATIONS (H-2), loaded per language and never manufactured.
@@ -88,51 +88,17 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   // SYNCHRONOUS. A chart arriving after the walk leaves the unit enumerated by
   // the wrong shape, which is the O-45 failure in another hat.
   //
-  // THE COST, STATED RATHER THAN DISCOVERED LATER: this is one fetch per
-  // (unit × edition). Today that is one, because the volume is one book and
-  // one edition. At 79 books it is 79 per edition at boot, which is NOT
-  // acceptable and is not what this will be — the honest fix is a per-edition
-  // chart index, which H-11 item 1 already declares and which nothing reads
-  // yet. Filed as 1b's, deliberately not invented here: a rig that guesses at
-  // the answer would be a second policy to unpick.
-  // The key separator is '|' and NOT a NUL, which is what it used to be.
-  // A NUL is a perfectly good separator — unit ids are hex and edition codes
-  // are alphanumeric, so neither can contain one — and it made this file
-  // BINARY as far as grep is concerned. Searches across src/ returned nothing
-  // from a 500-line core file, with no warning and exit 1, so "not found"
-  // read as "not present" instead of "not searched". Wilbur lost a real
-  // finding to it; the guard in test/no-binary-sources.test.js keeps it out.
-  const charts = new Map();
-  await Promise.all(units.flatMap(unit => editions.map(async edition => {
-    try {
-      charts.set(`${unit.id}|${edition.code}`,
-        await fetchJson(at({ kind: 'chart', unitId: unit.id, edition: edition.code })));
-    } catch {
-      charts.set(`${unit.id}|${edition.code}`, null);
-    }
-  })));
-
-  // The spine rides with the chart because a unit's artifacts are fetched
-  // together, NOT because it places anything: a seat's position is its index
-  // in the edition's own `seats[]` (W-96). This said "a seat is placed by its
-  // first utterance's ORDINAL, and only the spine knows that" — the exact rule
-  // this release retires.
-  // THE SHELF CHART (H-26/W-83) — the edition's own BOOK ORDER and its
-  // section labels, one small file per edition.
-  //
-  // It is the chart-chapter shape one level up (O-44): `units[]` is the order
-  // and `groups[]` are {label, from, to} over it, a labelled range and never a
-  // node. The Hebrew ships the Leningrad Codex's own arrangement, which even
-  // BHS declined — Writings opening with Chronicles, Ruth deep among them
-  // rather than after Judges.
-  //
-  // IT RIDES THE HANDLE rather than being fetched wherever it is wanted, and
-  // that was the reviewed decision: ORDER and MEMBERSHIP must come from the
-  // same place or they can disagree. The seat expander and the confirmed-unit
-  // filter already read this volume; the ring's order now does too.
-  //
-  // An edition without one is not an error. It shelves in volume order, which
-  // is every edition's behaviour before this existed.
+  // THE COST, STATED: one chart fetch per edition book at boot. The honest
+  // fix this comment used to defer — the per-edition chart index — is now
+  // the enumeration itself (O-92), so the index tells us exactly what to
+  // fetch and nothing 404s by design.
+  // THE EDITION'S INDEX IS ITS BOOK ENUMERATION (O-92). It used to order a
+  // shared book list; under leaf-and-shard it DECLARES the edition's own
+  // books — `books: [{file, shards}]`, where `file` is the edition's book id
+  // and `shards` is the build-derived fetch hint naming the storage its
+  // seats draw from. Divisions and groups ride it unchanged (H-26/H-29).
+  // The stale-shelf tripwire this block used to carry died with the shared
+  // list: there is no second enumeration left for an index to disagree with.
   const shelves = new Map();
   await Promise.all(editions.map(async edition => {
     try {
@@ -142,62 +108,57 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     }
   }));
 
-  // A STALE SHELF MUST NOT BE QUIET (Wilbur's ruling on his own contract,
-  // 2026-08-16). The asymmetry is his and it is right.
-  //
-  // A shelf that OMITS units is fine and silent: an edition may shelve what
-  // it has charted so far, and `bookOrderFor` appends the rest, so a partial
-  // shelf loses nobody. That is H-14 read correctly — the volume enumerates,
-  // the shelf orders.
-  //
-  // A shelf naming units the volume does NOT enumerate is the opposite case,
-  // and the reason it cannot be a silent skip is specific: the realistic
-  // cause is a STALE SHELF after an id change, and W-71 changed every id in
-  // the corpus once already. Filter the unknowns quietly and you find nothing
-  // left to order, append everything in volume order, and the Hebrew reverts
-  // to the Vulgate's arrangement with every cell green on both sides of the
-  // wall. THE FEATURE VANISHING IS THE FAILURE, and it reads as nothing —
-  // which is the shape this whole week has been about, arriving inside the
-  // feature built because of it.
-  //
-  // So it is loud and then falls back: the reader keeps working on volume
-  // order rather than losing the volume to a boot error. Checked once here,
-  // at load, rather than in `bookOrderFor`, which answers on every ring build.
-  //
-  // Cargo's permutation cell refuses set-inequality at commit time, so this
-  // should never fire. That is what a tripwire is.
-  {
-    const enumerated = new Set(units.map(u => u.id));
-    for (const [code, shelf] of shelves) {
-      const declared = shelf && Array.isArray(shelf.units) ? shelf.units : null;
-      if (!declared || !declared.length) continue;
-      const matched = declared.filter(id => enumerated.has(id));
-      const unknown = declared.filter(id => !enumerated.has(id));
-      if (!matched.length) {
-        console.error(
-          `bible-volume: the shelf chart for ${code} matches NO enumerated unit `
-          + `(${declared.length} declared). This is the stale-shelf signature — ids `
-          + 'changed under it. Book order falls back to volume order, which means the '
-          + "edition's own arrangement is silently NOT being shown.");
-      } else if (unknown.length) {
-        console.error(
-          `bible-volume: the shelf chart for ${code} names ${unknown.length} unit(s) the `
-          + `volume does not enumerate: ${unknown.join(', ')}. They are ignored — a shelf `
-          + 'orders the enumeration and never extends it (H-14) — but a shelf drifting from '
-          + 'the volume is a data fault, not a preference.');
-      }
-    }
+  // The books, per edition, in the edition's own order — and the book→edition
+  // map that lets a caller name a book without saying whose it is (book ids
+  // are minted per edition and globally unique; the suite on the cargo side
+  // asserts the three id classes never collide).
+  const bookMetaByEdition = new Map();
+  const editionOfBook = new Map();
+  for (const edition of editions) {
+    const idx = shelves.get(edition.code);
+    const list = Array.isArray(idx?.books) ? idx.books : [];
+    const meta = list.map((b, order) => ({
+      id: b.file,
+      shards: Array.isArray(b.shards) ? [...b.shards] : [],
+      order
+    })).filter(b => b.id);
+    bookMetaByEdition.set(edition.code, meta);
+    for (const b of meta) editionOfBook.set(b.id, edition.code);
   }
 
+  // CHARTS ARE FETCHED FROM THE INDEX, one per edition book. The key
+  // separator is '|' and NOT a NUL — a NUL made this file BINARY to grep,
+  // and Wilbur lost a real finding to it (test/no-binary-sources.test.js
+  // guards the class).
+  const charts = new Map();
+  await Promise.all(editions.flatMap(edition =>
+    (bookMetaByEdition.get(edition.code) || []).map(async book => {
+      try {
+        charts.set(`${book.id}|${edition.code}`,
+          await fetchJson(at({ kind: 'chart', unitId: book.id, edition: edition.code })));
+      } catch {
+        // LOUD, because the index is the enumeration now (O-92): a book the
+        // edition declares whose chart cannot load is a broken increment,
+        // not a preference — the heir of the old stale-shelf tripwire.
+        console.error(
+          `bible-volume: ${edition.code} declares book ${book.id} and its chart failed to load — `
+          + 'the book will be absent from every ring, which is a data fault, not a choice.');
+        charts.set(`${book.id}|${edition.code}`, null);
+      }
+    })));
+
+  // SPINES ARE PER SHARD (O-90 point 4) — same files, same ids, same order
+  // as when the shard was called a book; only the claim changed. The spine
+  // remains W-96's superset: every utterance any edition attests in that
+  // shard, in no edition's sequence.
   const spines = new Map();
-  await Promise.all(units.map(async unit => {
+  await Promise.all(shards.map(async shard => {
     try {
-      spines.set(unit.id, await fetchJson(at({ kind: 'spine', unitId: unit.id })));
+      spines.set(shard.id, await fetchJson(at({ kind: 'spine', unitId: shard.id })));
     } catch {
-      spines.set(unit.id, null);
+      spines.set(shard.id, null);
     }
   }));
-
   // THE TEXT IS LAZY, ONE UNIT AT A TIME (O-52, 2026-08-14).
   //
   // It used to be fetched and converted for EVERY unit here, before the first
@@ -221,33 +182,26 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   // The read-ahead becomes real again as a consequence: it warms the next unit
   // so a crossing is never a wait, which is what it was written for and what
   // seeding everything had quietly made inert.
-  const codes = editions.map(e => e.code);
   const texts = new Map();
-  const loadText = async unitId => {
-    if (texts.has(unitId)) return texts.get(unitId);
+  const loadText = async bookId => {
+    if (texts.has(bookId)) return texts.get(bookId);
     let records = null;
-    // ABSENT FROM THE CHART IS ABSENT FROM THE EDITION (O-65, the same clause
-    // `expandVolumeSeats` already holds). O-42's all-or-nothing conflated two
-    // absences the first morning a PARTIAL edition existed: "this edition's
-    // file did not ARRIVE" (a fault — all-or-nothing is right) and "this
-    // edition does not CONTAIN this book" (a fact, declared by the chart).
-    // Fetching every declared edition meant a book the partial edition lacks
-    // 404'd, the Promise.all rejected, and the catch nulled the WHOLE unit —
-    // the Hebrew went down with the Greek it never had. So membership is
-    // asked of the chart first, and O-42 applies among the members.
-    const present = codes.filter(code => charts.get(`${unitId}|${code}`));
+    // A BOOK BELONGS TO EXACTLY ONE EDITION under leaf-and-shard (O-92), so
+    // the cross-edition merge this function used to perform has nothing left
+    // to merge: the axis O-52 separated ("across editions, eager") dissolved
+    // when book ids became the edition's own words. What survives is O-42's
+    // all-or-nothing per book, and W-6's honest empty on failure.
+    const code = editionOfBook.get(bookId) || null;
+    const chart = code ? charts.get(`${bookId}|${code}`) : null;
     try {
-      if (!present.length) throw new Error(`no edition charts ${unitId}`);
-      const files = await Promise.all(present.map(code =>
-        fetchJson(at({ kind: 'text', unitId, edition: code }))));
+      if (!chart) throw new Error(`no chart for ${bookId}`);
+      const file = await fetchJson(at({ kind: 'text', unitId: bookId, edition: code }));
       records = normalizeUnitText({
-        editions: Object.fromEntries(present.map((code, i) => [code, files[i]])),
-        declared: present,
-        // The order key matches how the cache is KEYED — it read
-        // `${unitId} ${code}` (a space) against keys built with '|', so it
-        // missed on every book of every edition and the order silently never
-        // arrived (O-65's second defect).
-        order: (charts.get(`${unitId}|${present[0]}`)?.seats || []).map(seat => String(seat.label))
+        editions: { [code]: file },
+        declared: [code],
+        // The order key matches how the cache is KEYED (O-65's second
+        // defect, kept fixed): the edition's own seat labels.
+        order: (chart.seats || []).map(seat => String(seat.label))
       });
     } catch {
       // A unit whose text did not arrive carries none. It is NOT filled from
@@ -256,18 +210,34 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       // words wearing their language.
       records = null;
     }
-    texts.set(unitId, records);
+    texts.set(bookId, records);
     return records;
   };
 
+  const allBookIds = new Set([...editionOfBook.keys()]);
   return {
     version,
     base,
-    units,
+    // The storage layer, named for what it is (O-92). No reader ever meets a
+    // shard; every ring is built from an edition's own books.
+    shards,
     editions,
     namesByLanguage,
     displayConfig: volume?.display_config || {},
-    unitIds: new Set(units.map(u => u.id)),
+    // Every edition's book ids, plus the shard ids — the two id spaces the
+    // H-14 existence check must recognise.
+    unitIds: new Set([...allBookIds, ...shards.map(sh => sh.id)]),
+
+    // THE EDITION'S OWN BOOKS, in its own order (O-92): [{id, shards, order}].
+    // This is the roster every membership and denominator question walks —
+    // there is no volume-level book list left to walk instead.
+    booksFor(edition) {
+      return bookMetaByEdition.get(edition) || [];
+    },
+    // Which edition minted this book id, or null — ids are globally unique.
+    editionOf(bookId) {
+      return editionOfBook.get(bookId) || null;
+    },
 
     // The spine for a unit, or null.
     //
@@ -401,13 +371,9 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     // orders it — it never extends it. A volume unit the shelf omits keeps
     // its place, appended, so a partial shelf loses nobody.
     bookOrderFor(edition) {
-      const declared = units.map(u => u.id);
-      const shelf = shelves.get(edition) && shelves.get(edition).units;
-      if (!Array.isArray(shelf) || !shelf.length) return declared;
-      const known = new Set(declared);
-      const ordered = shelf.filter(id => known.has(id));
-      const seen = new Set(ordered);
-      return ordered.concat(declared.filter(id => !seen.has(id)));
+      // The index's books array IS the edition's order (O-92); there is no
+      // volume order to fall back to, because the volume no longer has books.
+      return (bookMetaByEdition.get(edition) || []).map(b => b.id);
     },
 
     // Which section holds this unit in this edition, or null (H-26).
@@ -424,10 +390,10 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       return isEditionFullyConfirmed(this, edition);
     },
 
-    sectionOf(edition, unitId) {
+    sectionOf(edition, bookId) {
       const shelf = shelves.get(edition);
-      if (!shelf || !Array.isArray(shelf.units) || !Array.isArray(shelf.groups)) return null;
-      const ordinal = shelf.units.indexOf(unitId) + 1;
+      if (!shelf || !Array.isArray(shelf.groups)) return null;
+      const ordinal = this.bookOrderFor(edition).indexOf(bookId) + 1;
       if (!ordinal) return null;
       const group = shelf.groups.find(g => ordinal >= g.from && ordinal <= g.to);
       return (group && group.label) || null;
@@ -458,10 +424,13 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       // ring that shows divisions asks `divisionsFor` live, with the edition
       // in hand. Defaulting to the first declared edition keeps the scaffold
       // well-formed for the consumers that only need books to exist.
-      const divisions = this.divisionsFor(edition || editions[0]?.code || null);
-      const byId = new Map(this.units.map(u => [u.id, u]));
+      const code = edition || editions[0]?.code || null;
+      const divisions = this.divisionsFor(code);
+      const known = new Set(this.bookOrderFor(code));
       // `divisionsFor` always returns at least one, so there is nothing to
-      // fall back to here any more.
+      // fall back to here any more. Leaves per book come from the edition's
+      // own chart (O-92): a book's size is the count of its seats, since the
+      // seat list IS its content declaration.
       const shape = divisions;
       return {
         display_config: this.displayConfig,
@@ -470,10 +439,9 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
           name: d.label,
           image: d.image,
           books: Object.fromEntries(d.books
-            .map((id, i) => [id, byId.get(id), i])
-            .filter(([, u]) => u)
-            .map(([id, u, i]) => [id, {
-              leaves: u.leaves,
+            .filter(id => known.has(id))
+            .map((id, i) => [id, {
+              leaves: (this.chartFor(id, code)?.seats || []).length || null,
               sort_number: i,
               testamentId: `division-${order}`
             }]))
@@ -553,12 +521,14 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
 // The SPINE is part of the test because the expander requires it: a unit with
 // a chart and no spine is an unfinished increment, and it must be absent from
 // the ring for the same reason it is absent from the chain.
-export function volumeHoldsUnit(volume, edition, unitId) {
-  if (!volume || !edition || !unitId) return false;
-  const chart = typeof volume.chartFor === 'function' ? volume.chartFor(unitId, edition) : null;
-  if (!chart || !Array.isArray(chart.seats) || !chart.seats.length) return false;
-  const spine = typeof volume.spineFor === 'function' ? volume.spineFor(unitId) : null;
-  return Boolean(spine && Array.isArray(spine.utterances) && spine.utterances.length);
+export function volumeHoldsUnit(volume, edition, bookId) {
+  if (!volume || !edition || !bookId) return false;
+  // Under leaf-and-shard the seat list IS the book's content declaration
+  // (O-90 point 3), so the old per-unit spine clause has nothing further to
+  // add: a chart with seats is a book with content, and a chart without one
+  // is an unfinished increment exactly as before.
+  const chart = typeof volume.chartFor === 'function' ? volume.chartFor(bookId, edition) : null;
+  return Boolean(chart && Array.isArray(chart.seats) && chart.seats.length);
 }
 
 // DOES THIS EDITION SEAT THIS UTTERANCE? (H-29's carry-out, 2026-08-19.)
@@ -580,12 +550,30 @@ export function volumeHoldsUnit(volume, edition, unitId) {
 // utterance? An utterance belongs to exactly ONE unit by construction — the
 // spine is per-unit and holds every utterance any edition attests there — so
 // there is no second place to look and no ambiguity about where to look first.
-export function editionSeatsUtterance(volume, edition, unitId, utteranceId) {
+export function editionSeatsUtterance(volume, edition, bookId, utteranceId) {
   if (!utteranceId) return false;
-  const chart = typeof volume?.chartFor === 'function' ? volume.chartFor(unitId, edition) : null;
-  if (!chart || !Array.isArray(chart.seats)) return false;
-  return chart.seats.some(seat => Array.isArray(seat?.utterances)
-    && seat.utterances.includes(utteranceId));
+  // The caller's bookId is usually ANOTHER edition's word for where the
+  // reader stands (O-92): the Hebrew's Nehemiah while asking whether the
+  // Greek holds the verse. Book ids are per-edition now, so the asked
+  // edition's own chart for that id exists only when the editions share the
+  // id — try it first as the cheap case, then search the edition's own
+  // books. The leaves are the bridge, exactly as W-21 ruled: what travels
+  // is the utterance.
+  const direct = typeof volume?.chartFor === 'function' ? volume.chartFor(bookId, edition) : null;
+  if (direct && Array.isArray(direct.seats)
+    && direct.seats.some(seat => Array.isArray(seat?.utterances) && seat.utterances.includes(utteranceId))) {
+    return true;
+  }
+  const books = typeof volume?.booksFor === 'function' ? volume.booksFor(edition) : [];
+  for (const book of books) {
+    if (book.id === bookId) continue; // the direct probe above already asked
+    const chart = volume.chartFor(book.id, edition);
+    if (chart && Array.isArray(chart.seats)
+      && chart.seats.some(seat => Array.isArray(seat?.utterances) && seat.utterances.includes(utteranceId))) {
+      return true;
+    }
+  }
+  return false;
 }
 
 // The units this edition holds, as a set — the ring-shaped form of the answer
@@ -609,11 +597,15 @@ export function editionSeatsUtterance(volume, edition, unitId, utteranceId) {
 export function chartedUnitsOf(volume, edition) {
   if (!volume || !edition) return null;
   if (typeof volume.chartFor !== 'function') return null;
-  const units = volume.units;
-  if (!Array.isArray(units) || !units.length) return null;
+  // The roster is the EDITION'S own books (O-92); `units` survives only as
+  // the fallback for fixtures that still model a shared list.
+  const roster = typeof volume.booksFor === 'function'
+    ? volume.booksFor(edition)
+    : volume.units;
+  if (!Array.isArray(roster) || !roster.length) return null;
   const held = new Set();
-  for (const unit of units) {
-    if (volumeHoldsUnit(volume, edition, unit.id)) held.add(unit.id);
+  for (const book of roster) {
+    if (volumeHoldsUnit(volume, edition, book.id)) held.add(book.id);
   }
   return held;
 }
@@ -664,7 +656,10 @@ export function isEditionFullyConfirmed(volume, edition) {
   // enumeration — the pre-O-71 denominator, which is right whenever there is
   // no better answer to be had.
   const held = chartedUnitsOf(volume, edition);
-  const denominator = held ? [...held] : (volume?.units || []).map(u => u.id);
+  const roster = typeof volume?.booksFor === 'function'
+    ? volume.booksFor(edition)
+    : (volume?.units || []);
+  const denominator = held ? [...held] : roster.map(u => u.id);
   return denominator.length > 0 && denominator.every(id => confirmed.has(id));
 }
 
@@ -696,10 +691,13 @@ export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false 
   const divisions = typeof volume.divisionsFor === 'function' ? volume.divisionsFor(edition) : [];
   // A volume that answers `divisionsFor` always gives at least one division
   // (H-29). The fallback below is for FIXTURES that model no divisions at all.
+  const roster = typeof volume.booksFor === 'function'
+    ? volume.booksFor(edition)
+    : (volume.units || []);
   const shape = divisions.length
     ? divisions
-    : [{ label: null, books: (volume.units || []).map(u => u.id) }];
-  const unitById = new Map((volume.units || []).map(u => [u.id, u]));
+    : [{ label: null, books: roster.map(u => u.id) }];
+  const unitById = new Map(roster.map(u => [u.id, u]));
   shape.forEach((division, order) => {
     for (const id of division.books || []) {
       const book = unitById.get(id);

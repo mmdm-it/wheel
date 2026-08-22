@@ -195,12 +195,15 @@ describe('the boot verse ring spans the whole volume', () => {
     const { volumeConfigs } = await import('../src/volume-configs.js');
     const manifest = await volumeConfigs.bible.loadManifest();
     const volume = manifest.__wallVolume;
-    const unitId = volume.units[0].id;
+    // O-92: the volume has no book list — the first book is the first
+    // EDITION'S first, which is what the reader boots into.
+    const edition = volume.editions[0].code;
+    const unitId = volume.booksFor(edition)[0].id;
 
     const chain = await volumeConfigs.bible.buildChain(manifest, {
       level: 'verse', cousinMode: true, arrangement: 'cousins-with-gaps',
       bookId: unitId, chapterId: '1', verseId: '2',
-      translation: volume.editions[0].code
+      translation: edition
     }, {});
     const real = chain.items.filter(Boolean);
 
@@ -221,7 +224,9 @@ describe('the boot verse ring spans the whole volume', () => {
       translation: volume.editions[0].code
     }, {});
     const books = new Set(chain.items.filter(Boolean).map(i => i.bookKey));
-    assert.deepEqual([...books], [volume.units[0].id], 'exactly one book, the one enumerated');
+    const edition = volume.editions[0].code;
+    assert.deepEqual([...books], [volume.booksFor(edition)[0].id],
+      'exactly one book, the one the edition declares (O-92)');
     for (const legacy of ['GENE', 'EXO', 'MATHE', 'APOC']) {
       assert.ok(!books.has(legacy), `${legacy} is legacy cargo and must be unreachable`);
     }

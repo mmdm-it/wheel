@@ -198,13 +198,25 @@ function chaptersInReadingOrder(manifest) {
   // `testaments[].books[]`; the volume no longer says which division a book is
   // in, and the read-ahead never needed to know — it warms the NEXT unit, and
   // units have an order without having a parent.
-  const order = (volume?.units || []).map(book => ({
-    chapterId: book.id,
-    bookId: book.id,
-    // The text address IS the unit's id: there is no file to name.
-    externalFile: book.id,
-    verseCount: Number.isFinite(book.leaves) ? book.leaves : 0
-  }));
+  // Every edition's books, in each edition's own order (O-92): book ids are
+  // globally unique, and the read-ahead only needs a stable sequence to warm
+  // the next fetch — a book of another edition is simply never requested.
+  const order = typeof volume?.booksFor === 'function'
+    ? (volume.editions || []).flatMap(e =>
+      volume.booksFor(e.code).map(book => ({
+        chapterId: book.id,
+        bookId: book.id,
+        // The text address IS the book's id: there is no file to name.
+        externalFile: book.id,
+        verseCount: (volume.chartFor?.(book.id, e.code)?.seats || []).length
+      })))
+    // Fixtures that still model a shared roster walk it unchanged.
+    : (volume?.units || []).map(book => ({
+      chapterId: book.id,
+      bookId: book.id,
+      externalFile: book.id,
+      verseCount: Number.isFinite(book.leaves) ? book.leaves : 0
+    }));
   _chapterOrder = order;
   return order;
 }
@@ -985,9 +997,16 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const utterance = item.level === 'verse' ? item.meta?.utterances?.[0] : null;
       // A verse with no utterance recorded is not a reason to offer
       // everything: it is a seat we cannot place, so it falls back to its
-      // book, which is the coarser TRUE answer rather than no answer.
-      return utterance
-        ? codes.filter(code => editionSeatsUtterance(volume, code, unitId, utterance))
+      // book — and under leaf-and-shard (O-92) a book id is one edition's
+      // word, so the book-level question also crosses on the LEAVES: another
+      // edition holds the reader's book if it seats that book's first
+      // utterance, whatever it calls the book it seats it in.
+      const probe = utterance
+        || (volume.chartFor?.(unitId, volume.editionOf?.(unitId) || null)
+          ?.seats?.[0]?.utterances?.[0])
+        || null;
+      return probe
+        ? codes.filter(code => editionSeatsUtterance(volume, code, unitId, probe))
         : codes.filter(code => volumeHoldsUnit(volume, code, unitId));
     },
     showsDimensionAt: item => item?.level === 'bibleRoot',

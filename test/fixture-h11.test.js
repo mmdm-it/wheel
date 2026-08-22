@@ -34,12 +34,18 @@ const read = rel => JSON.parse(readFileSync(at(rel), 'utf-8'));
 // above them is the EDITION'S, declared in its chart index.
 const volume = read('volume.json');
 const division = read('charts/DRA/index.json').divisions[0];
-const unitId = volume.books[0].id;
+// O-92: the volume enumerates SHARDS; the DRA's book is its own word,
+// declared in its index. The VUL files on disk still wear the shard id —
+// they are pre-doctrine cargo, present and unreachable, exactly the point.
+const shardId = volume.shards[0].id;
+const draBook = read('charts/DRA/index.json').books[0].file;
+const idOf = code => (code === 'DRA' ? draBook : shardId);
+const unitId = shardId;
 
 describe('the H-11 fixture — shape', () => {
   it('carries one book, opaque, with its leaf count', () => {
-    assert.equal(volume.books.length, 1);
-    assert.equal(volume.books[0].leaves, 31, 'Genesis 1 has 31 verses');
+    assert.equal(volume.shards.length, 1);
+    assert.equal(volume.shards[0].utterances, 31, 'Genesis 1 has 31 verses');
     assert.doesNotMatch(unitId, /GEN|genesis/i,
       'the filesystem must stop spelling out what a thing IS (H-11)');
   });
@@ -110,7 +116,7 @@ describe('the H-11 fixture — shape', () => {
   });
 
   it('none of the retired identifiers survives', () => {
-    const raw = JSON.stringify([volume, read(`spine/${unitId}.json`), read(`text/DRA/${unitId}.json`)]);
+    const raw = JSON.stringify([volume, read(`spine/${unitId}.json`), read(`text/DRA/${draBook}.json`)]);
     for (const dead of ['chapter_id', 'book_key', 'sequence', '_external_file', 'chapter_in']) {
       assert.doesNotMatch(raw, new RegExp(dead), `${dead} retires under H-11`);
     }
@@ -145,14 +151,15 @@ describe('the H-11 fixture — volume.json is the sole enumeration', () => {
 
   it('names are QUOTATIONS, carried per language, never manufactured (H-2)', () => {
     const names = read('names/english.json');
-    assert.equal(names.books[unitId], 'Genesis');
+    assert.equal(names.books.DRA[draBook], 'Genesis', 'the edition axis (W-129)');
     // H-29: the division's name is the EDITION'S, quoted from its chart, and
     // no longer a per-language entry in the names table.
     assert.equal(division.label, 'Holy Bible');
-    // Every enumerated id has a name, or the reader meets a raw opaque id.
-    for (const id of [unitId]) {
-      const found = names.books[id];
-      assert.ok(found, `${id} is enumerated with no name in any category`);
+    // Every declared BOOK has a name, or the reader meets a raw opaque id.
+    // Shards have none and need none (O-92): no reader ever meets a shard.
+    for (const id of [draBook]) {
+      const found = names.books.DRA[id];
+      assert.ok(found, `${id} is declared with no name in any category`);
     }
   });
 });
@@ -169,7 +176,7 @@ describe('the H-11 fixture — the grant boundary', () => {
 
   it('both granted editions carry all 31 verses', () => {
     for (const code of ['DRA', 'VUL']) {
-      const text = read(`text/${code}/${unitId}.json`).text;
+      const text = read(`text/${code}/${idOf(code)}.json`).text;
       assert.equal(Object.keys(text).length, 31, `${code} is complete`);
     }
   });
@@ -178,7 +185,7 @@ describe('the H-11 fixture — the grant boundary', () => {
     // W-52's limit, pinned here so nobody later "improves" the fixture by
     // adding a merge example to it: there is no merge in Genesis 1 to show.
     for (const code of ['DRA', 'VUL']) {
-      const seats = read(`charts/${code}/${unitId}.json`).seats;
+      const seats = read(`charts/${code}/${idOf(code)}.json`).seats;
       assert.equal(seats.length, 31);
       assert.ok(seats.every(s => s.utterances.length === 1),
         `${code}: every seat spans exactly one utterance`);
@@ -194,9 +201,9 @@ describe('the H-11 fixture — identity.js addresses it', () => {
     const paths = [
       resolvePath({ ...opts, kind: 'volume' }),
       resolvePath({ ...opts, kind: 'spine', unitId }),
-      resolvePath({ ...opts, kind: 'text', edition: 'DRA', unitId }),
+      resolvePath({ ...opts, kind: 'text', edition: 'DRA', unitId: draBook }),
       resolvePath({ ...opts, kind: 'text', edition: 'VUL', unitId }),
-      resolvePath({ ...opts, kind: 'chart', edition: 'DRA', unitId }),
+      resolvePath({ ...opts, kind: 'chart', edition: 'DRA', unitId: draBook }),
       resolvePath({ ...opts, kind: 'chartIndex', edition: 'VUL' })
     ];
     for (const p of paths) assert.ok(existsSync(p), `resolvePath built a path that does not exist: ${p}`);
@@ -207,7 +214,7 @@ describe('the H-11 fixture — identity.js addresses it', () => {
 describe('the H-11 fixture — containers come from the chart', () => {
   it('every edition declares its own groups over BOOK-ORDINAL ranges', () => {
     for (const code of ['DRA', 'VUL']) {
-      const chart = read(`charts/${code}/${unitId}.json`);
+      const chart = read(`charts/${code}/${idOf(code)}.json`);
       assert.ok(Array.isArray(chart.groups) && chart.groups.length,
         `${code} declares no groups — under O-44 it has no containers to render`);
       for (const g of chart.groups) {
@@ -220,7 +227,7 @@ describe('the H-11 fixture — containers come from the chart', () => {
 
   it('the groups cover every leaf exactly once', () => {
     for (const code of ['DRA', 'VUL']) {
-      const { groups } = read(`charts/${code}/${unitId}.json`);
+      const { groups } = read(`charts/${code}/${idOf(code)}.json`);
       const covered = groups.flatMap(g => Array.from({ length: g.to - g.from + 1 }, (_, i) => g.from + i));
       assert.deepEqual(covered, Array.from({ length: 31 }, (_, i) => i + 1),
         `${code}: a gap or an overlap would leave a leaf unrenderable or rendered twice`);
@@ -249,7 +256,7 @@ describe('the H-11 fixture — it reaches the reader (the crossing)', () => {
   const DECLARED = ['DRA', 'VUL'];
   const chart = read(`charts/VUL/${unitId}.json`);
   const order = chart.seats.map(s => String(s.label));
-  const editions = Object.fromEntries(DECLARED.map(c => [c, read(`text/${c}/${unitId}.json`)]));
+  const editions = Object.fromEntries(DECLARED.map(c => [c, read(`text/${c}/${idOf(c)}.json`)]));
 
   it('the per-edition files become one record per address', () => {
     const records = normalizeUnitText({ editions, declared: DECLARED, order });

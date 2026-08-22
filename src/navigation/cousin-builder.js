@@ -167,7 +167,8 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
 
   const sorted = [];
   if (Array.isArray(liveDivisions) && liveDivisions.length) {
-    const unitById = new Map((wall.units || []).map(u => [u.id, u]));
+    const roster = typeof wall.booksFor === 'function' ? wall.booksFor(edition) : (wall.units || []);
+    const unitById = new Map(roster.map(u => [u.id, u]));
     liveDivisions.forEach((d, order) => {
       (d.books || []).forEach((id, i) => {
         if (visible && !visible.has(id)) return;
