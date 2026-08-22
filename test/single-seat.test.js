@@ -43,7 +43,7 @@ describe('the single-seat primary stratum, on the real fixture', () => {
 
   it('one testament, one book, one container — and thirty-one seats', () => {
     assert.equal(volume.divisionsFor('DRA').length, 1);
-    assert.equal(volume.units.length, 1);
+    assert.equal(volume.booksFor('DRA').length, 1);
     assert.equal(expandVolumeSeats(volume, 'DRA').length, 31);
   });
 
@@ -54,8 +54,8 @@ describe('the single-seat primary stratum, on the real fixture', () => {
     const { items, selectedIndex } = buildBibleBookCousinChain(manifest, { names: {} });
     const real = items.filter(Boolean);
     assert.equal(real.length, 1);
-    assert.equal(real[0].id, volume.units[0].id);
-    assert.equal(items[selectedIndex]?.id, volume.units[0].id, 'the one seat is the selected one');
+    assert.equal(real[0].id, volume.booksFor('DRA')[0].id);
+    assert.equal(items[selectedIndex]?.id, volume.booksFor('DRA')[0].id, 'the one seat is the selected one');
     assert.ok(!items.some(i => i === null), 'no gap can precede or follow a lone member');
   });
 
@@ -77,7 +77,7 @@ describe('the single-seat primary stratum, on the real fixture', () => {
   });
 
   it('the ring seats the FIRST leaf when asked for it, and the last', () => {
-    const unitId = volume.units[0].id;
+    const unitId = volume.booksFor('DRA')[0].id;
     const first = buildBibleVerseChain(manifest, { edition: 'DRA', initialVerseId: `${unitId}_1_1` });
     const last = buildBibleVerseChain(manifest, { edition: 'DRA', initialVerseId: `${unitId}_1_31` });
     assert.equal(first.items[first.selectedIndex].id, `${unitId}_1_1`);
@@ -93,7 +93,7 @@ describe('the single-seat primary stratum, on the real fixture', () => {
       vp,
       { x: 206, y: 700, r: 40, angle: -1.2 },
       { hubX: -100, hubY: 900, radius: 700 },
-      { parentId: volume.units[0].id, parentSortNumber: 0, childCount: 1,
+      { parentId: volume.booksFor('DRA')[0].id, parentSortNumber: 0, childCount: 1,
         labelLengths: [2], sizeScales: [1], labelBaseFontPx: 14 }
     );
     assert.ok(geo, 'a sky of one must still be computable');

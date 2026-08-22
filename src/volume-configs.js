@@ -23,7 +23,7 @@ import { setUnitTextLoader } from './adapters/volume-helpers.js';
 // The data version rides the path (H-11 item 4), so a push changes a path
 // rather than the world.
 const BIBLE_VOLUME_BASE = './data/gutenberg';
-const BIBLE_VOLUME_VERSION = '2026.07.29';
+const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
 import { calendarAdapter } from './adapters/calendar-adapter.js';
 
 // `parseVerseId` lived here and is DELETED under O-47, not left for later.
@@ -191,9 +191,14 @@ const volumeConfigs = {
         names: Object.fromEntries(Object.entries(volume.namesByLanguage)
           .filter(([, names]) => names)
           .map(([lang, names]) => [lang, {
-            books: names.books || {},
+            // THE NAMES CARRY AN EDITION AXIS under leaf-and-shard (W-129):
+            // books[editionCode][editionBookId]. Flattened here — and only
+            // here — into one id→name map, which loses nothing because book
+            // ids are minted per edition and globally unique, so every
+            // downstream lookup (`namesMap.books[bookId]`) keeps its shape.
+            books: flattenEditionAxis(names.books),
             testaments: names.testaments || {},
-            book_abbreviations: names.book_abbreviations || {},
+            book_abbreviations: flattenEditionAxis(names.book_abbreviations),
             title: names.title || null
           }]))
       };
@@ -595,9 +600,22 @@ function makeLabelFormatter({ config, volume, level, locale, namesMap, options, 
 //
 // It reads the enumeration, never the ids: an opaque id carries no order in
 // its characters, and `volume.json` states the order as data.
+// Collapse {editionCode: {bookId: name}} to {bookId: name}; a legacy flat
+// map passes through untouched (fixtures, other volumes).
+function flattenEditionAxis(obj) {
+  if (!obj || typeof obj !== 'object') return {};
+  const values = Object.values(obj);
+  if (!values.length || values.some(v => typeof v !== 'object' || v === null)) return obj;
+  return Object.assign({}, ...values);
+}
+
 function firstLeafOf(manifest, edition) {
   const volume = manifest?.__wallVolume;
-  const unit = volume?.units?.[0];
+  // The first book is the EDITION'S first (O-92) — there is no volume book
+  // list, and the boot position belongs to what the reader will actually see.
+  const unit = typeof volume?.booksFor === 'function'
+    ? volume.booksFor(edition)[0]
+    : volume?.units?.[0];
   if (!unit) return {};
   const chart = volume.chartFor?.(unit.id, edition);
   const container = chart?.groups?.[0];

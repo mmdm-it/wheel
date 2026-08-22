@@ -109,8 +109,16 @@ describe('an edition shows only what it charts (O-71)', () => {
     assert.equal(volumeHoldsUnit(v, 'HEB', 'C'), false, 'nor the Hebrew Matthew');
   });
 
-  it('A UNIT WITH NO SPINE IS NOT HELD — an unfinished increment is not a book', () => {
-    const v = makeVolume({ spineFor: id => (id === 'B' ? null : { utterances: ['x'] }) });
+  it('A BOOK WITH NO SEATS IS NOT HELD — an unfinished increment is not a book', () => {
+    // O-92 moved the content declaration into the seat list (the spine is
+    // per-shard storage now), so the unfinished-increment guard reads the
+    // chart alone: seats or nothing.
+    const v = makeVolume({
+      chartFor: (unitId, edition) =>
+        ((CHARTS[edition] || []).includes(unitId)
+          ? (unitId === 'B' ? { seats: [], groups: [] } : seatsFor(unitId))
+          : null)
+    });
     assert.deepEqual([...chartedUnitsOf(v, 'HEB')], ['A']);
   });
 

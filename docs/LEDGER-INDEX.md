@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-21 from 251 entries.
+Generated 2026-08-22 from 253 entries.
 
 | id | status | title |
 |---|---|---|
@@ -134,6 +134,7 @@ Generated 2026-08-21 from 251 entries.
 | O-89 | RULED IN PRINCIPLE | LEAVES AND THE ROOT — every hierarchy is edition vocabulary; the shared layer is the text alone |
 | O-90 | RULED | THE LEAF-AND-SHARD DESIGN — ruled, with the migration checklist |
 | O-91 | RULED PROVISIONALLY | THE MARGIN NOTE TYPE IS 5% — provisional until his eye meets a note |
+| O-92 | IN MOTION | THE ENGINE READS LEAF-AND-SHARD — O-90's engine half |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -263,3 +264,4 @@ Generated 2026-08-21 from 251 entries.
 | W-127 | RULED | THE MARGIN GOES BEYOND THE RING — Swete's apparatus is ruled IN |
 | W-128 | OPEN | THE MARGIN OWES A VERIFICATION PASS — its OCR is the roughest in the pin |
 | W-129 | RULED | THE CARGO HALF OF LEAF-AND-SHARD — Wilbur's design, folded under his name |
+| W-130 | OPEN | ROW 2'S DISTANCE TO KNOWN, MEASURED — 16 books stage clean, 32 need a mapping |
