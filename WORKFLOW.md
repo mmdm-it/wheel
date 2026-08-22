@@ -601,6 +601,67 @@ is the category error, and every rule below is a guard against a version of it.
   remain proposals and take later numbers if and when they are ruled (WF-11:
   ids are assigned at creation, and a proposal is not yet a rule).
 
+- **WF-20 (ruled 2026-08-22, Howell: "Both, as two"). A check is RUNNABLE by
+  its named verifier — read-only, from where that verifier sits.** WF-17
+  requires a check be NAMED at creation; it never said the named verifier
+  must be ABLE TO RUN IT, and in one week three checks satisfied the letter
+  while defeating the purpose. W-122's demanded a document forget its own
+  history — the grep it specified can never return clean, because the
+  surviving occurrence IS the explanation of the change. W-125's measured a
+  pin that never changes — the guard numbers were SUPPOSED to hold still
+  after the repairs, and the verifier who re-ran it concluded the work had
+  not landed. O-80's asked its reader to WRITE — a mutation across a wall
+  that is read-only by WF-15. Three shapes, one disease: each check failed
+  its RUNNER rather than its subject, and each was discovered only when a
+  non-author actually ran it — which is WF-17's whole point, arriving late.
+
+  So, at creation, the author states the check as commands and readings the
+  named verifier can execute WITHOUT write access, WITHOUT crossing the
+  wall, and WITHOUT the author's session. Three tests the week taught:
+  assert what a document should SAY, never what it must not contain;
+  measure instruments that can move, never pins — and where a number is
+  expected to hold still, say so IN THE CHECK; and where the only decisive
+  act is a mutation, the check is the RED-FIRST COMMIT HISTORY, not the
+  mutation — history is readable across the wall when trees are not (O-87's
+  closure, the pattern that satisfied this rule before it existed).
+
+  A check found unrunnable as written is a finding against the CHECK, filed
+  without shame and reworded by its author: the check is an instrument, and
+  instruments get calibrated. *(Drafted by Wilbur; committed by the
+  repository's owner from his draft, per WF-15.)*
+
+- **WF-21 (ruled 2026-08-22, the same word). A correction is not done until
+  it has swept everywhere the claim lives.** A false claim is not a place in
+  a file; it is a sentence that may have been copied anywhere — both
+  repositories, documents AND source comments — and fixing it where it was
+  NOTICED leaves every other copy teaching the retired thing with fresh
+  authority, because a reader who finds one copy corrected assumes the rest
+  were too.
+
+  **The correction therefore names the claim it retires** — as a searchable
+  phrase or a described assertion, not merely a diff — **sweeps both
+  repositories for it, and STATES WHAT THE SWEEP COVERED** in the commit or
+  the entry, so a partial sweep is visible instead of silent. "Swept docs/
+  and src/ in the engine; cargo not swept" is a legitimate report; an
+  unstated scope is not, because it reads as "everywhere."
+
+  **What paid for it, in one week:** the O-37 correction was applied where
+  the defect was caught and carried its own confession — *"this file was
+  never brought into line"* — for eleven days while `src/main.js` held a
+  third copy. O-82 then found and fixed two homes, swept the OTHER
+  repository, and concluded *"the claim had three homes and no fourth."* It
+  had six: O-88's audit found three more in a single further document. Two
+  corrections, each complete in form, each leaving live copies behind — and
+  the second one's sweep looked rigorous precisely because it crossed the
+  wall while skipping its own yard.
+
+  **The sweep is textual, not clairvoyant.** A grep is the floor, not the
+  proof: O-88's own check showed the same words carrying a DIFFERENT, true
+  claim in a dated shipping record — so hits are READ before they are
+  struck, and a copy in version-stamped history is left standing, because
+  WF-7 is already satisfied there. What the rule forbids is closing a
+  correction whose sweep never ran or never said where it looked.
+
 *Origin, 2026-08-06.* A major revision to the corpus's identity model was ruled,
 written into a specification, pushed to a branch, and never given a PR or a
 number. Two days of work then proceeded on the superseded model — plausible,
