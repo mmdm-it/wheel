@@ -8,9 +8,14 @@
   --theme-color-magnifier-stroke: #000000;
 
   /* Type */
-  --theme-font-body: 'Montserrat', sans-serif;
-  --theme-font-label: 'Montserrat', sans-serif;
-  --theme-font-magnifier: 'Montserrat', sans-serif;
+  /* O-93: Montserrat has no Greek and no Hebrew, so the label stacks name
+     their companions explicitly — Latin stays Montserrat, Greek falls to
+     Noto Sans, Hebrew to Noto Sans Hebrew, and only then to the system.
+     Before this, `sans-serif` sat second and swallowed every non-Latin
+     label into whatever the phone had. */
+  --theme-font-body: 'Montserrat', 'Noto Sans', 'Noto Sans Hebrew', sans-serif;
+  --theme-font-label: 'Montserrat', 'Noto Sans', 'Noto Sans Hebrew', sans-serif;
+  --theme-font-magnifier: 'Montserrat', 'Noto Sans', 'Noto Sans Hebrew', sans-serif;
   /* Detail sector content font — override per theme for volumes that use a
      different typeface inside the expanded Detail Sector (e.g. Bible → serif). */
   --theme-font-detail: var(--theme-font-body);
