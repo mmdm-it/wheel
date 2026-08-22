@@ -30,7 +30,12 @@
        (magnified ring labels, card/ephemeris titles). Without the 700 face the
        browser SYNTHESISES bold from 500, and iOS Safari's faux-bold is ugly
        (Howell 2026-07-21). -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <!-- O-93: Montserrat carries NO Greek and NO Hebrew (Google ships it in
+       latin/latin-ext/cyrillic/vietnamese only — measured 2026-08-23), so
+       every non-Latin label has always fallen to the system font. The Noto
+       faces are the CHOSEN companions for the scripts Montserrat cannot
+       speak; the browser fetches only the subsets a page actually uses. -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@500;700&family=Noto+Sans+Hebrew:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/theme-tokens.css" />
   <link rel="stylesheet" href="./styles/base.css" />
   <link id="volume-style" rel="stylesheet" href="" />
