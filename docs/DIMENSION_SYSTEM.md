@@ -9,6 +9,14 @@ the paper was never brought up to the instrument; the strikes below correct
 the states that are now false and leave the design reasoning, which is the
 record of why things are as they are.*
 
+*Amended 2026-08-23 by Orville — O-96. A SEVENTH false state, in the same
+document, one day after that audit: the live preview was said to regenerate
+only on a settle, "never mid-rotation", which the code has never done and
+which Howell contradicted directly. The Q3 pass found six and stopped; a
+targeted question has to keep being asked after its first hit. Howell's
+full spec of Dimension Mode is now carried here rather than in a ledger
+entry alone.*
+
 *Rewritten 2026-07-20 to open Phase D.1, superseding the v3.7 portal
 specification (dimension-button-cycles-portals, focus-ring-repurposing,
 mirrored-at-same-radius — all retired). This is paper: the ruled model
@@ -114,6 +122,44 @@ Orbital and radial happen *within* a stratum (the frozen C physics,
 untouched). Z happens *between* strata. One rule covers the whole
 instrument.
 
+## Dimension Mode — the spec, in Howell's words (O-96, 2026-08-23)
+
+**Dimension Mode** is the name of the state, and it is *defined by the
+appearance of the Secondary or Tertiary Stratum*. While the app is in it,
+the Primary Stratum is still standing where it was: **at root, or at a
+leaf**. Nothing about entering Dimension Mode moves the reader.
+
+Four rules, as he stated them:
+
+1. **The Dimension Button is visible and functional at root, or at a leaf.**
+   Two cases, not three. An earlier description of mine added "or while a
+   chooser is open" and he struck it as redundant — Dimension Mode does not
+   move the Primary, so it cannot be a third place to stand. *(The code
+   tests `detailSectorVisible` as its stand-in for "at a leaf", and that
+   stand-in reads false once the Detail Sector recedes; `isStrataOpen()` in
+   `updateDimensionButton` patches the stand-in. It is not a third state.)*
+2. **Migration between strata occurs ONLY by tapping the globe.** Settling a
+   language does not bring the Secondary forward — it restocks the Secondary
+   *behind* the Tertiary. The cycle runs inward, Tertiary → Secondary →
+   Primary, one tap each.
+3. **The visual changes are live with each rotation** through either the
+   Tertiary or the Secondary. The Primary behind the glass follows the lens
+   as it turns — the verse in the Detail Sector, the ring's labels and seats,
+   the parent button, the corner emblem, the badge. The final globe tap
+   brings forward what is *already painted*; nothing new appears at the
+   commit.
+4. **At a leaf** the Secondary offers only editions that hold the verse under
+   the Magnifier (H-29's carry-out); a tongue with none of them rotates past
+   and changes nothing. **At root** every tongue and edition is offered, and
+   the ring and the pyramid empty and refill with the new edition's own
+   division and books (O-95).
+
+**On the word "chooser."** Howell dislikes it: *"the Focus Ring is a chooser,
+the Child Pyramid is a chooser, and the Parent Button is a chooser."* It
+names nothing. Prose here says Dimension Mode and names the strata. The
+source still carries `activeChooser()` and "chooser ring" in comments; that
+rename is not ruled and has not been done.
+
 ## The living primary — reassurance, and the live preview
 
 The receded primary is **not a frozen backdrop, and not a gimmick.** It is
@@ -122,8 +168,10 @@ integral:
 - **It stays in the field of view**, still showing the exact nodes and text
   the user last saw. The reassurance is explicit: your reading is not gone,
   it is *on hold* in the distance while you make a change.
-- **It is a live preview.** As the user rotates the secondary ring to a new
-  language, the change is **instantly visible in the distant primary** — the
+- **It is a live preview.** As the user rotates the **tertiary** ring to a new
+  language *(struck 2026-08-23, O-96: this read "secondary ring", the
+  arrangement D.3 replaced — language is on the TERTIARY, edition on the
+  SECONDARY)*, the change is **instantly visible in the distant primary** — the
   same verse, re-rendered in the new language, before anything is committed.
   This is the content anchor (below) made literal: the verse you were reading
   becomes the same verse in the new tongue, out there in the soft focus, and
@@ -138,10 +186,20 @@ blur the still image once. The primary must remain a *rendering* view so it
 can turn Greek on command. The relief that keeps it affordable: "live" means
 *re-render when the selection changes* — a handful of discrete moments, not
 every frame. So the D.5 rule: the receded primary is a **cheap static
-blurred layer between choices, regenerated only when a new value settles in
-the secondary magnifier.** Live, but bounded. It regenerates only when a new
-value **settles** in the secondary magnifier (ruled 2026-07-20) — never
-mid-rotation, consistent with the hold-stale detail-sector doctrine.
+blurred layer between choices, regenerated only when the value under the
+lens CHANGES.** Live, but bounded.
+
+> **STRUCK 2026-08-23 (O-96).** This read: *"It regenerates only when a new
+> value **settles** in the secondary magnifier (ruled 2026-07-20) — never
+> mid-rotation, consistent with the hold-stale detail-sector doctrine."*
+> Howell's spec of 2026-08-23: *"The visual changes are live with each
+> rotation through either a language or an edition."* The code has always
+> agreed with him — `previewFromLens` fires while a stratum is ROTATING,
+> throttled to the moments the NEAREST NODE changes, which is a handful of
+> times across a drag rather than dozens per second. That throttle is what
+> "bounded" was reaching for; "settles" was the wrong word for it, and it
+> stood for a month. *(This document was audited under WF-13 Q3 on
+> 2026-08-22 and this false state was not caught — see O-96.)*
 
 ## The Bible's secondary strata, concretely
 
