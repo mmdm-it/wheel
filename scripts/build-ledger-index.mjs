@@ -87,6 +87,14 @@ for (const [i, line] of source.split('\n').entries()) {
   if (!m) { faults.push(`line ${i + 1}: not a ledger row — ${line.slice(0, 60)}`); continue; }
   const [, id, status, , title] = m;
   if (!STATUS.test(status.trim())) faults.push(`${id}: status "${status.trim()}" is not one of the five`);
+  // THE OPEN-NAMES-WHY RULE IS A FLOOR, NOT A PROOF, and saying so is the
+  // point. It tests for an em-dash and nothing more, so a title reading
+  // "A TITLE — that says nothing at all" passes — Orville fed it exactly
+  // that at the conversion's verification, and it did. A machine cannot
+  // judge whether a reason is a reason; what it can do is refuse a row that
+  // did not even try. WF-21's own words about grep, turned on this check:
+  // the grep is the floor, not the proof. A green run here is NOT evidence
+  // that every OPEN row explains itself. Read them.
   if (status.trim() === 'OPEN' && !/—/.test(title)) faults.push(`${id}: OPEN without saying why (the title must name it)`);
   rows.push(id);
 }
