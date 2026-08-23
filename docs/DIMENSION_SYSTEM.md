@@ -443,7 +443,12 @@ through a list, not everything.
 1. Dimension choices **survive** a gateway exit/re-entry.
 2. Content anchor uses **full cross-numbering**; the first build is Latin +
    English, one translation each — already crossing VUL↔MT numbering.
-3. The live preview regenerates **on settle**, never mid-rotation.
+3. ~~The live preview regenerates **on settle**, never mid-rotation.~~
+   **STRUCK 2026-08-23 (O-96)** — superseded by Howell's spec of that date:
+   the preview repaints live on every rotation, throttled to changes of the
+   node under the lens. The second home of the same false claim, found by
+   O-96's own sweep after the first was struck (WF-21: a correction is not
+   done until it has swept everywhere the claim lives).
 4. The dimension button is a **neutral icon** (no current-value label).
 5. Multi-select filter gesture **deferred to the calendar**.
 6. Secondary-stratum colors **carried to E**.
