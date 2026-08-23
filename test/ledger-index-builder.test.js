@@ -167,6 +167,36 @@ describe('the ledger converter copies, and verifies (W-139)', () => {
     assert.match(faithful.stdout, /copy is faithful/);
   });
 
+  it('EVERY NEAR MISS OF A VERIFY FLAG IS REFUSED — a typo must not become a mutation', () => {
+    // Raised by Wilbur, reproduced here on a fixture before it was believed,
+    // and the reproduction found more shapes than the report named.
+    //
+    // The alias cell above passes while this hole is open, because it tests
+    // the EXACT spelling and nothing around it. That is the blind spot worth
+    // remembering: a cell that asserts the right word works says nothing
+    // about the words that are nearly it.
+    //
+    // Each of these used to exit 0 having WRITTEN, and print "numbers copied"
+    // — a verification reporting success while mutating what it was asked to
+    // check. `--validate=1` additionally crossed the wall, because the hook's
+    // test is /--validate\b/ and \b matches at the `=`.
+    for (const flag of ['--validate=1', '--validated', '--valid', '-c', '--Check', '--check=1']) {
+      const r = run(GOOD, [flag]);
+      assert.equal(r.code, 1, `${flag}: refused, never downgraded to write mode`);
+      assert.match(r.stderr, /unrecognised flag/, `${flag}: and it says so`);
+    }
+    // The two real spellings still select the read-only face...
+    for (const flag of ['--check', '--validate']) {
+      assert.match(run(GOOD, [flag]).stderr, /DRIFTED/, `${flag}: still verifies`);
+    }
+    // ...and a BARE call is still write mode, which is the script's job. The
+    // fix must not turn "no flag" into a refusal — only "a flag I do not know".
+    const bare = spawnSync(process.execPath, [SCRIPT, '--check'], {
+      cwd: root, encoding: 'utf-8', env: { ...process.env, LEDGER: INDEX }
+    });
+    assert.equal(bare.status, 0, 'the ordinary path is untouched');
+  });
+
   it('and where the ledger IS beside us, the copy is in step with it', () => {
     // True on a session's machine, absent on the runner. Skipping when the
     // sibling is missing is honest; asserting a pass would be a check that

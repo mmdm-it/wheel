@@ -3,8 +3,6 @@
 //
 //   node scripts/build-ledger-index.mjs           # copy + verify
 //   node scripts/build-ledger-index.mjs --check   # verify only; exit 1 on drift (CI)
-//   node scripts/build-ledger-index.mjs --validate  # the same, under the name
-//                                                   # the wall knows (see below)
 //
 // ── WHY THIS EXISTS AT ALL ───────────────────────────────────────────────────
 // The ledger lives OUTSIDE both repositories, in team_communication, so that
@@ -42,25 +40,44 @@ const LEDGER = process.env.LEDGER
   ?? path.resolve(root, '..', 'team_communication', 'LEDGER.md');
 const COPY = path.join(root, 'docs', 'LEDGER-INDEX.md');
 // `--validate` IS THE WALL'S NAME FOR THIS FACE, AND IT MUST KEEP WORKING.
+// (Orville's wording, taken verbatim over mine — one text has to win, and
+// byte-identity between the two copies is the property each brother's
+// verification of the other rests on.)
 //
-// Both repositories' `guard-brother-tree.cjs` open a door for this script BY
-// NAME, and only when `--validate` rides in the same command segment as an
-// exact token (H-9's conditional allowlist; W-80's cells pin it). The hook's
-// own refusal says why: "the brother's builder crosses only in its read-only
-// face … the bare call is write mode and stays refused."
-//
-// W-139 renamed that face to `--check` and did not tell the wall. The result
-// is a door that opens onto a WRITE: a verifier crossing the wall exactly as
-// documented runs `… build-ledger-index.mjs --validate`, this script sees no
-// `--check`, and copies — overwriting the brother's index from across the
-// wall, with the hook's blessing. A wall that fails OPEN is worse than no
+// The guard hooks open a cross-wall door for this script BY NAME, and only
+// when `--validate` rides in the same command segment as an invocation of it
+// (H-9's allowlist; W-80's cells pin the conditional pass). W-139 renamed
+// that face to `--check` and DID NOT TELL THE WALL. My first note here said
+// that would make a verification door go dark — fail closed, a nuisance.
+// That was wrong, and the truth is worse: the hook still ADMITS the command
+// on the word `--validate`, and the script behind it, seeing no `--check`,
+// would run in WRITE mode and overwrite the brother's index from across the
+// wall with the hook's blessing. A wall that fails OPEN is worse than no
 // wall, because it is trusted.
 //
-// So the two spellings are one flag. `--check` is the honest name of what it
-// does; `--validate` is the name the wall already knows, kept as a synonym
-// rather than editing two hooks and their cells to chase a rename. The rule
-// this teaches: a flag a guard names is part of that guard's contract, and
-// renaming it is a change to the guard.
+// AN UNRECOGNISED FLAG IS REFUSED, NEVER TREATED AS "no flag" — and this is
+// the hole the alias did NOT close, found by Orville's own standard: he asked
+// me to try to make his cell WRITE rather than watch it pass, and it wrote.
+//
+// `--validate=1` is admitted by the guard hook, whose test is /--validate\b/
+// and whose `\b` matches at the `=`. The script's test was
+// argv.includes('--validate'), which is EXACT and therefore false. Flag
+// admitted by the wall, unrecognised by the script, script falls through to
+// WRITE mode — the same cross-wall write we thought the alias had closed,
+// through a shape neither of us tested. `--validated` does the same locally:
+// a typo silently turns a VERIFICATION into a MUTATION that then reports
+// success, which is the worst possible direction for a check to fail.
+//
+// So the two tests are made to agree by refusing anything else. The hook
+// stays coarse (a tripwire); the script is exact and says so out loud.
+const FLAGS = ['--check', '--validate'];
+const unknown = process.argv.slice(2).filter(a => a.startsWith('-') && !FLAGS.includes(a));
+if (unknown.length) {
+  console.error(`build-ledger-index: unrecognised flag(s): ${unknown.join(' ')}`);
+  console.error(`  This script takes ${FLAGS.join(' or ')} (verify only), or nothing (copy).`);
+  console.error('  Refusing rather than guessing: a near-miss flag must never fall through to WRITE.');
+  process.exit(1);
+}
 const check = process.argv.includes('--check') || process.argv.includes('--validate');
 
 if (!existsSync(LEDGER)) {
@@ -104,6 +121,55 @@ if (dupes.length) faults.push(`duplicate row(s): ${[...new Set(dupes)].join(', '
 if (faults.length) {
   console.error(`build-ledger-index: ${faults.length} fault(s) in ${LEDGER}`);
   for (const f of faults.slice(0, 20)) console.error(`  ${f}`);
+  process.exit(1);
+}
+
+// ── THE SCRIPT REFUSES TO WRITE A REPOSITORY IT WAS NOT RUN FROM ────────────
+// Defence in depth, and it exists because the wall FAILED OPEN for the length
+// of one PR — not closed, OPEN, which is the worse direction and the one that
+// gets trusted.
+//
+// Cargo's guard hook opens a cross-wall door for this script BY FLAG: an
+// invocation of the brother's copy is admitted when `--validate` rides in the
+// same command, on the model that `--validate` IS the read-only face. W-139
+// renamed that face to `--check` and did not tell the wall. For one PR the
+// hook therefore ADMITTED `node ../<brother>/scripts/build-ledger-index.mjs
+// --validate`, the script saw no `--check`, ran in WRITE mode — and `root` is
+// resolved from the SCRIPT's own location, so the file it would have
+// overwritten was THE BROTHER'S index, from the other session, with the
+// hook's blessing. Nobody ran it. That is luck, not design.
+//
+// The alias closed that instance. This closes the ACCIDENTAL crossing — the
+// one that actually happened: the hook is a tripwire reasoning about a flag
+// whose meaning lives in a file the hook does not control, and either
+// brother can rename it again. So the script now defends itself. A write is
+// refused unless the caller is standing in the repository being written;
+// reading and `--check` cross freely, which is the whole point of the door.
+//
+// WHAT IT DOES NOT DO, stated because a guard read as more than it is
+// becomes the next comfortable theory (O-33, one layer down). THIS TESTS
+// WHERE THE CALLER STANDS, NOT WHO THE CALLER IS. Orville probed it at the
+// verification: a process that simply `cd`s into the target repository and
+// runs its own script is trusted, and writes. That is not a defect to fix —
+// `cwd` is the only signal a script has, and a script cannot authenticate a
+// session — but it means this stops the ACCIDENT and cannot stop a DELIBERATE
+// crossing. The hook is the first layer, this is the second, neither is a
+// proof, and the pair is stronger than either alone.
+//
+// THE OTHER HALF OF THIS REASONING LIVES IN THE HOOK, where the dependency
+// actually is — `.claude/hooks/guard-brother-tree.cjs`, at the conditional
+// pass. Orville's read at the verification, kept because he is right about
+// where things belong: this paragraph's subject is the HOOK's contract, not
+// the copier's, and it lodges here only because this file is where the wound
+// happened. That is how a script becomes a diary. One such paragraph is a
+// scar; a THIRD is the signal to move the wall reasoning to the hook wholly
+// and leave only a pointer here.
+const calledFromInside = (process.cwd() + path.sep).startsWith(root + path.sep);
+if (!check && !calledFromInside) {
+  console.error(`build-ledger-index: REFUSING to write ${COPY}`);
+  console.error(`  This script writes the repository it lives in (${root}),`);
+  console.error(`  and it was run from ${process.cwd()}.`);
+  console.error('  Across the wall, access is READ ONLY (WF-15): use --check, or run it from inside its own repository.');
   process.exit(1);
 }
 
