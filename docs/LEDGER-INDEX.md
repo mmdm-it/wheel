@@ -136,8 +136,8 @@ Generated 2026-08-23 from 263 entries.
 | O-91 | RULED PROVISIONALLY | THE MARGIN NOTE TYPE IS 5% — provisional until his eye meets a note |
 | O-92 | LANDED | THE ENGINE READS LEAF-AND-SHARD — O-90's engine half |
 | O-93 | ACCEPTED | MONTSERRAT NEVER SPOKE GREEK — the labels get chosen companions |
-| O-94 | RULED | THE PREVIEW ASKS THE WRONG EDITION FOR A NAME — a tongue names only its own editions' books |
-| O-95 | RULED | AN EDITION CHANGE AT ROOT LEFT THE OLD EDITION'S RING STANDING |
+| O-94 | MERGED | THE PREVIEW ASKS THE WRONG EDITION FOR A NAME — a tongue names only its own editions' books |
+| O-95 | MERGED | AN EDITION CHANGE AT ROOT LEFT THE OLD EDITION'S RING STANDING |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
