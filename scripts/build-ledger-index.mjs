@@ -3,6 +3,8 @@
 //
 //   node scripts/build-ledger-index.mjs           # copy + verify
 //   node scripts/build-ledger-index.mjs --check   # verify only; exit 1 on drift (CI)
+//   node scripts/build-ledger-index.mjs --validate  # the same, under the name
+//                                                   # the wall knows (see below)
 //
 // ── WHY THIS EXISTS AT ALL ───────────────────────────────────────────────────
 // The ledger lives OUTSIDE both repositories, in team_communication, so that
@@ -39,7 +41,27 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LEDGER = process.env.LEDGER
   ?? path.resolve(root, '..', 'team_communication', 'LEDGER.md');
 const COPY = path.join(root, 'docs', 'LEDGER-INDEX.md');
-const check = process.argv.includes('--check');
+// `--validate` IS THE WALL'S NAME FOR THIS FACE, AND IT MUST KEEP WORKING.
+//
+// Both repositories' `guard-brother-tree.cjs` open a door for this script BY
+// NAME, and only when `--validate` rides in the same command segment as an
+// exact token (H-9's conditional allowlist; W-80's cells pin it). The hook's
+// own refusal says why: "the brother's builder crosses only in its read-only
+// face … the bare call is write mode and stays refused."
+//
+// W-139 renamed that face to `--check` and did not tell the wall. The result
+// is a door that opens onto a WRITE: a verifier crossing the wall exactly as
+// documented runs `… build-ledger-index.mjs --validate`, this script sees no
+// `--check`, and copies — overwriting the brother's index from across the
+// wall, with the hook's blessing. A wall that fails OPEN is worse than no
+// wall, because it is trusted.
+//
+// So the two spellings are one flag. `--check` is the honest name of what it
+// does; `--validate` is the name the wall already knows, kept as a synonym
+// rather than editing two hooks and their cells to chase a rename. The rule
+// this teaches: a flag a guard names is part of that guard's contract, and
+// renaming it is a change to the guard.
+const check = process.argv.includes('--check') || process.argv.includes('--validate');
 
 if (!existsSync(LEDGER)) {
   // A missing ledger is not a silent pass. In CI the sibling checkout may

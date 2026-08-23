@@ -142,6 +142,31 @@ describe('the ledger converter copies, and verifies (W-139)', () => {
     assert.match(r.stdout, /\d+ numbers/);
   });
 
+  it('--validate IS --check, BECAUSE THE WALL OPENS ITS DOOR ON THAT WORD', () => {
+    // Both repositories' guard-brother-tree.cjs permit this script to be run
+    // across the wall ONLY when `--validate` appears as an exact token — the
+    // hook's own refusal reads "the brother's builder crosses only in its
+    // read-only face … the bare call is write mode and stays refused."
+    //
+    // W-139 renamed that face to `--check` and told the wall nothing, so the
+    // door briefly opened onto a WRITE: a verifier crossing exactly as
+    // documented would have overwritten the brother's index with the hook's
+    // blessing. A wall that fails OPEN is worse than none, because it is
+    // trusted. This cell is what stops the synonym being tidied away later.
+    const r = run(GOOD, ['--validate']);
+    assert.equal(r.code, 1, 'a differing ledger must be REPORTED, never copied');
+    assert.match(r.stderr, /DRIFTED/, 'it verified rather than wrote');
+
+    // And the decisive half: under --validate it must not write, ever. The
+    // suite's `after` hook proves the real index survived every cell, this one
+    // included — which is the assertion that matters here.
+    const faithful = spawnSync(process.execPath, [SCRIPT, '--validate'], {
+      cwd: root, encoding: 'utf-8', env: { ...process.env, LEDGER: INDEX }
+    });
+    assert.equal(faithful.status, 0, faithful.stderr);
+    assert.match(faithful.stdout, /copy is faithful/);
+  });
+
   it('and where the ledger IS beside us, the copy is in step with it', () => {
     // True on a session's machine, absent on the runner. Skipping when the
     // sibling is missing is honest; asserting a pass would be a check that
