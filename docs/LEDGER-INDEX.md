@@ -8,7 +8,7 @@ one.
 Regenerate with `node scripts/build-ledger-index.mjs`. Never hand-edit: a
 projection editable independently of its source is a lie waiting.
 
-Generated 2026-08-22 from 254 entries.
+Generated 2026-08-23 from 263 entries.
 
 | id | status | title |
 |---|---|---|
@@ -135,7 +135,9 @@ Generated 2026-08-22 from 254 entries.
 | O-90 | RULED | THE LEAF-AND-SHARD DESIGN — ruled, with the migration checklist |
 | O-91 | RULED PROVISIONALLY | THE MARGIN NOTE TYPE IS 5% — provisional until his eye meets a note |
 | O-92 | LANDED | THE ENGINE READS LEAF-AND-SHARD — O-90's engine half |
-| O-93 | BUILT | MONTSERRAT NEVER SPOKE GREEK — the labels get chosen companions |
+| O-93 | ACCEPTED | MONTSERRAT NEVER SPOKE GREEK — the labels get chosen companions |
+| O-94 | RULED | THE PREVIEW ASKS THE WRONG EDITION FOR A NAME — a tongue names only its own editions' books |
+| O-95 | RULED | AN EDITION CHANGE AT ROOT LEFT THE OLD EDITION'S RING STANDING |
 | W-1 | DONE (archived) | Hebrew renders RTL |
 | W-2 | ACK (archived) | Editorial sigla need a rendering decision |
 | W-3 | CLOSED (archived) | Empty chapters need a reader fallback |
@@ -265,4 +267,11 @@ Generated 2026-08-22 from 254 entries.
 | W-127 | RULED | THE MARGIN GOES BEYOND THE RING — Swete's apparatus is ruled IN |
 | W-128 | OPEN | THE MARGIN OWES A VERIFICATION PASS — its OCR is the roughest in the pin |
 | W-129 | RULED | THE CARGO HALF OF LEAF-AND-SHARD — Wilbur's design, folded under his name |
-| W-130 | OPEN | ROW 2'S DISTANCE TO KNOWN, MEASURED — 16 books stage clean, 32 need a mapping |
+| W-130 | MAPPING COMPLETE | ROW 2'S DISTANCE TO KNOWN, MEASURED — 16 books stage clean, 32 need a mapping |
+| W-131 | RULED | KNOWN NARROWED TO COMPLETENESS AND ADDRESS; NOTES BECOME A THIRD, NON-BLOCKING FLAG |
+| W-132 | RULED | ESTHER SEATS WHOLE — Swete's 16 chapters, one book |
+| W-133 | RULED | THE MARGIN GETS ITS OWN KNOWN AND PROOFREAD — per book, non-compositional |
+| W-134 | FOUND AND FIXED | THE TVTMS PARSER READ ITS OWN CROSS-REFERENCES AS ADDRESSES — 17 invented renames, 11 of them in Jeremiah |
+| W-135 | FIXED | THE TRADITION CHOICE IS BLIND TO THE THING IT IS JUDGED BY — three books broken by one cause |
+| W-136 | FIXED | NO SINGLE TVTMS COLUMN DESCRIBES SWETE — the choice has to be per stretch, not per book |
+| W-137 | OPEN | ROW 2'S SEATING IS BLOCKED ON NAMES — and the number is unknown, because three files each decide it |
