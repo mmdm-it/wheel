@@ -14,9 +14,12 @@ right and this file needs regenerating:
 **Open every session with the board (WF-4):** open PRs oldest first, branches
 carrying commits with no PR, in BOTH repositories, and the canaries green —
 and if anything is open, clearing it IS the work. The ledger lives at
-`/media/howell/dev_workspace/team_communication/HANDOFF.md`, outside both
-repositories; its index projection is `docs/LEDGER-INDEX.md` (regenerate
-with `node scripts/build-ledger-index.mjs` after any ledger change).
+`/media/howell/dev_workspace/team_communication/LEDGER.md` — one line per
+number — outside both repositories; each repository carries a verified copy
+at `docs/LEDGER-INDEX.md` (refresh it with
+`node scripts/build-ledger-index.mjs` after any ledger change; `--check`
+proves the copy has not drifted). *(It was `HANDOFF.md` until W-139 retired
+the prose on 2026-08-23; that file is now a tombstone.)*
 
 ## The rules
 

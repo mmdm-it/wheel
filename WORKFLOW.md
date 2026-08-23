@@ -58,8 +58,17 @@ answers, which a flat list did not, is **is this authoritative?**
 **2. COMMUNICATION — for exchanging ideas, never relied on as definitive.**
 *These are the Federalist Papers, not the Constitution.*
 
-- **a. The ledger, `HANDOFF.md`** — the channel between Orville and Wilbur. What
-  is *owed*. Lives in `team_communication/`, outside both repositories.
+- **a. The ledger, `LEDGER.md`** — one line per number: id, status, date,
+  title. What is *owed*, and where each ruling's substance actually lives.
+  In `team_communication/`, outside both repositories, so either session
+  files its own numbers without crossing the wall; each repository carries a
+  verified copy at `docs/LEDGER-INDEX.md`, written and checked by
+  `scripts/build-ledger-index.mjs`.
+  *(Was `HANDOFF.md`, 13,322 lines of prose, until W-139 ruled it retired on
+  2026-08-23. That file is now a tombstone pointing here and its history
+  stays in `team_communication`'s git. This entry is the FACTUAL pointer
+  only — WF-18's ledger clauses below are untouched and await Howell's word
+  on what survives.)*
 - **b. Sidebars** — three-way conferences between Howell, Orville and Wilbur, one
   topic each. Deleted once their conclusions are documented **and verified by all
   parties** — verification, not documentation, is the trigger.
