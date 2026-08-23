@@ -24,6 +24,31 @@
   <meta property="og:url" content="https://mmdm.it/" />
   <meta property="og:locale" content="it_IT" />
   <meta property="og:locale:alternate" content="en_US" />
+  <!-- THESE FACES COME FROM GOOGLE AT RUNTIME, AND THAT IS A DEBT, NOT A
+       CHOICE (O-50; comment landed 2026-08-23 under W-139's sweep, where the
+       entry was found to have no home outside the ledger).
+
+       Found because Howell's phone fell back to a substitute typeface after a
+       cache clear — the mildest form this failure takes. Three consequences,
+       worsening in order:
+         1. A LAN-served reader depends on the public internet for its
+            typeface. The instrument is meant to work on a phone at a kitchen
+            table, and EB Garamond is what scripture is SET IN, not chrome.
+         2. Phase 5 is an Android port. A packaged app fetching fonts from a
+            CDN fails offline by construction, which is where the reader
+            lives.
+         3. Every visit sends the reader's IP and user-agent to Google. For
+            someone opening scripture that is a disclosure nobody asked for,
+            and it falls under the same care as NOTICE §0.
+
+       NOT FIXED HERE ON PURPOSE. Self-hosting is small but it is font
+       surgery: a wrong weight or subset changes how every glyph in the volume
+       renders, which is what the phase-1 freeze exists to prevent. It belongs
+       to H-12 phase 3's pre-public checklist, beside the immutable versioned
+       URLs and the real cache headers (see .htaccess, O-38), verified by the
+       same eye. Whoever self-hosts these: the weights actually used are
+       below, and the check is Howell's phone with its cache cleared and the
+       network off. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <!-- Load the REAL bold (700) faces: four CSS rules use font-weight:700
