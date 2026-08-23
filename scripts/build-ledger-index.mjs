@@ -61,7 +61,40 @@ const COPY = path.join(root, 'docs', 'LEDGER-INDEX.md');
 // rather than editing two hooks and their cells to chase a rename. The rule
 // this teaches: a flag a guard names is part of that guard's contract, and
 // renaming it is a change to the guard.
-const check = process.argv.includes('--check') || process.argv.includes('--validate');
+// AN UNRECOGNISED FLAG IS REFUSED, NEVER READ AS "NO FLAG".
+//
+// Raised by Wilbur, reproduced here on a fixture before believing it, and the
+// reproduction found more shapes than the report did. The alias above closed
+// `--validate`. It did not close the space AROUND it, and that space is where
+// the danger lives, because every shape in it turns a VERIFICATION into a
+// MUTATION THAT REPORTS SUCCESS:
+//
+//   --validate=1   admitted by the wall hook (its test is /--validate\b/, and
+//                  \b matches at the `=`), unrecognised here — so it crossed
+//                  the wall and wrote the brother's index, exit 0.
+//   --validated    a typo. No wall involved: a session or a CI job asking to
+//                  CHECK rewrites the thing it was asked to check, and goes
+//                  green.
+//   --valid, -c, --Check, --check=1   the same, measured 2026-08-23.
+//
+// A guard that silently downgrades an unknown request to the most destructive
+// mode is not a guard. `includes()` asks "was the exact word present" and
+// treats every near miss as absence, which is the wrong default for a script
+// whose default mode WRITES.
+//
+// So: parse, do not sniff. Exactly `--check` or `--validate` selects the
+// read-only face; no flag means write; anything else stops.
+const ARGS = process.argv.slice(2);
+const READ_ONLY_FLAGS = new Set(['--check', '--validate']);
+const unknown = ARGS.filter(a => !READ_ONLY_FLAGS.has(a));
+if (unknown.length) {
+  console.error(`build-ledger-index: unrecognised flag ${unknown.map(a => JSON.stringify(a)).join(', ')}`);
+  console.error('  The read-only face is exactly --check (or --validate, the name the wall knows).');
+  console.error('  Refusing rather than falling through to WRITE mode: a near miss of a verify flag');
+  console.error('  must never become a mutation that reports success.');
+  process.exit(1);
+}
+const check = ARGS.some(a => READ_ONLY_FLAGS.has(a));
 
 if (!existsSync(LEDGER)) {
   // A missing ledger is not a silent pass. In CI the sibling checkout may
