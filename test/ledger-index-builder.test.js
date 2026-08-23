@@ -23,7 +23,7 @@
 import { describe, it, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { mkdtempSync, writeFileSync, readFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, writeFileSync, readFileSync, rmSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -123,7 +123,34 @@ describe('the ledger converter copies, and verifies (W-139)', () => {
     assert.match(r.stderr, /DRIFTED/);
   });
 
-  it('and the REAL ledger passes --check, so this repository is in step right now', () => {
+  it('THIS REPOSITORY\'S OWN COMMITTED COPY OBEYS EVERY RULE — and this runs in CI, where the ledger cannot', () => {
+    // The ledger lives OUTSIDE both repositories, so CI's checkout cannot see
+    // it — which is the whole reason each repository carries a copy. A cell
+    // that asked CI to read the ledger would be a check its runner cannot
+    // run (WF-20), and the first draft of this cell was exactly that: green
+    // here, red on the runner.
+    //
+    // So point the script at the COMMITTED COPY as its own source. Source and
+    // destination are then identical, fidelity is trivially satisfied, and
+    // what is actually exercised is every shape rule against the rows this
+    // repository will really hand to WF-16's gate.
+    const r = spawnSync(process.execPath, [SCRIPT, '--check'], {
+      cwd: root, encoding: 'utf-8', env: { ...process.env, LEDGER: INDEX }
+    });
+    assert.equal(r.status, 0, r.stderr);
+    assert.match(r.stdout, /copy is faithful/);
+    assert.match(r.stdout, /\d+ numbers/);
+  });
+
+  it('and where the ledger IS beside us, the copy is in step with it', () => {
+    // True on a session's machine, absent on the runner. Skipping when the
+    // sibling is missing is honest; asserting a pass would be a check that
+    // measures whether it was run.
+    const sibling = path.resolve(root, '..', 'team_communication', 'LEDGER.md');
+    if (!existsSync(sibling)) {
+      assert.ok(true, 'no team_communication beside this checkout — nothing to compare');
+      return;
+    }
     const r = spawnSync(process.execPath, [SCRIPT, '--check'], { cwd: root, encoding: 'utf-8' });
     assert.equal(r.status, 0, r.stderr);
     assert.match(r.stdout, /copy is faithful/);
