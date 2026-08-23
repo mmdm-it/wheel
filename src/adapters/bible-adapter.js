@@ -1096,7 +1096,29 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         ? codes.filter(code => editionSeatsUtterance(volume, code, unitId, probe))
         : codes.filter(code => volumeHoldsUnit(volume, code, unitId));
     },
-    showsDimensionAt: item => item?.level === 'bibleRoot',
+    // WHERE THE GLOBE IS A LIVE QUESTION (O-96's spec, H-29's definition of
+    // root; fixed 2026-08-23 on Howell's report from the LAN, "I don't see
+    // the Dimension Button Globe when I migrate OUT to root").
+    //
+    // His spec has two cases and no third: the Dimension Button is visible
+    // and functional AT ROOT, or AT A LEAF. The leaf half is the host's — it
+    // shows the globe while the Detail Sector is up — so this predicate owns
+    // the root half alone.
+    //
+    // THE BUG WAS ONE WORD OF VOCABULARY. This answered `bibleRoot` only, and
+    // `bibleRoot` is the single-node gateway ring (BIBLIA SACRA LATINA) that
+    // H-29 left behind when it ruled root to be the level whose child pyramid
+    // holds books — the edition's own division of itself, built at level
+    // `testament`. `bibleRoot` is reachable only when the host boots the
+    // volume at `level: 'root'`; this volume's data declares no `startup`, so
+    // the level falls through to `verse`, `hasRoot` is false, and the
+    // division ring IS the top. The globe therefore had no home on the one
+    // ring the reader reaches by migrating all the way out.
+    //
+    // Both are accepted rather than swapped: a host that does boot at root
+    // still has its gateway door, and under H-29 the division ring is root in
+    // either arrangement, since it is the level whose pyramid holds books.
+    showsDimensionAt: item => item?.level === 'bibleRoot' || item?.level === 'testament',
     // NUMERALS SIT ON THEIR NODES, NAMES SIT BESIDE THEM (Howell
     // 2026-07-20): chapters and verses centre over the node; book and
     // testament NAMES keep the offset that reads well for words — the
