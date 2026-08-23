@@ -762,6 +762,28 @@ export function buildBibleTestaments(manifest, namesMap = {}, { testamentId, tra
   const live = edition && typeof volume?.divisionsFor === 'function'
     ? volume.divisionsFor(edition)
     : null;
+  // THE DIVISION CARRIES THE LEAVES IT SEATS (O-95, 2026-08-23).
+  //
+  // A division's id is POSITIONAL — `division-0` is the first of whatever
+  // edition built the ring, and means something different in the next one.
+  // So an edition change at root cannot land by matching ids, any more than a
+  // verse could land by matching numbers: what travels is the utterance
+  // (W-21), and it travels ON the item, put there by whoever knew it — the
+  // same doctrine H-2 wrote for labels, after a parent button read
+  // "GENESIS bc22df/1" because an id was parsed instead of carried.
+  //
+  // One utterance per book, in the division's own order, so the reseat can
+  // walk them and land on the first the new edition actually holds. Reading
+  // the whole seat list would be the same answer at forty times the size.
+  const anchorsOf = (books) => {
+    const out = [];
+    for (const id of books || []) {
+      const chart = typeof volume?.chartFor === 'function' ? volume.chartFor(id, edition) : null;
+      const first = chart?.seats?.find(seat => Array.isArray(seat?.utterances) && seat.utterances.length);
+      if (first) out.push(first.utterances[0]);
+    }
+    return out;
+  };
   const items = live
     ? live.map((d, idx) => ({
       id: `division-${idx}`,
@@ -770,7 +792,8 @@ export function buildBibleTestaments(manifest, namesMap = {}, { testamentId, tra
       sort: idx,
       order: idx,
       level: 'testament',
-      parentName: translationName
+      parentName: translationName,
+      meta: { utterances: anchorsOf(d.books), books: [...(d.books || [])] }
     }))
     // No volume, or no edition committed: the scaffold, unfiltered. This is
     // the shape every fixture that models a tree and not a chart still gets.

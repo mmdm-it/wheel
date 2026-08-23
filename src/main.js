@@ -2760,6 +2760,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // The committed edition travels with the options, and the volume may warm
     // whatever it needs to seat the reader by it next time a ring is built.
     options.activeEdition = translation || options.activeEdition;
+    // The preview is over: what was hovered is now committed, and a stale
+    // preview edition would send every later name through a crossing that is
+    // no longer happening (O-94).
+    options.previewEdition = null;
     // THE READER IS CARRIED ACROSS, NOT LEFT BEHIND. Once whatever the volume
     // needs has landed, give it the chance to RE-SEAT: the reader is standing
     // on a particular thing, and a volume whose editions divide their contents
@@ -2777,7 +2781,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       // emblem and the chooser's position answer are read off where they now
       // ARE. Computing either from the old seat paints the last edition's
       // corner and offers the last edition's neighbours.
-      .then(() => { updateCornerImage(); refreshEditionsHere(); })
+      // The sky follows the ring (O-95). At root the child pyramid holds the
+      // books of the settled division, and the reseat may have landed on a
+      // different one — the pyramid refreshed above, BEFORE the crossing, so
+      // it would otherwise keep the old edition's books under the new
+      // edition's division.
+      .then(() => { updateCornerImage(); refreshEditionsHere(); app?.refreshPyramid?.(); })
       .catch(() => {});
     updateIncompleteMark();
     updateCornerImage();
@@ -2821,6 +2830,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const edition = preview.edition;
     if (!edition || edition === dimensionBridge.comingSoonKey) return;
     refreshNamesMap(preview.language);
+    // WHICH EDITION IS UNDER THE LENS (O-94). The chain still holds the
+    // committed edition's book ids, so whoever names a book during a preview
+    // must reach the hovered edition's own word for it through the leaf. The
+    // adapter reads this; the settle clears it.
+    options.previewEdition = edition;
     if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
     if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
     renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: edition });
