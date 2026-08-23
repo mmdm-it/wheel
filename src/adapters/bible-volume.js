@@ -551,7 +551,30 @@ export function volumeHoldsUnit(volume, edition, bookId) {
 // spine is per-unit and holds every utterance any edition attests there — so
 // there is no second place to look and no ambiguity about where to look first.
 export function editionSeatsUtterance(volume, edition, bookId, utteranceId) {
-  if (!utteranceId) return false;
+  return Boolean(bookSeatingUtterance(volume, edition, bookId, utteranceId));
+}
+
+// WHERE does this edition seat this utterance? (O-94, 2026-08-23.)
+//
+// The same lookup as above, answering with the BOOK rather than with yes or
+// no — because two callers need the two answers and one instrument should
+// serve both. The chooser asks "is this edition here?" and wants a boolean;
+// the preview asks "what does the hovered edition call the place I am
+// standing?" and wants the book, so it can be named in that edition's own
+// tongue.
+//
+// This is what dissolves the false demand O-94 numbers. Without it the
+// preview kept the COMMITTED edition's book id and looked it up in the
+// HOVERED tongue's names — asking Hebrew for the name of a Greek book — and
+// the only way to make that answer was for every tongue to carry every other
+// edition's vocabulary. Through the leaf, a tongue needs the books of its own
+// editions and nothing else.
+//
+// Returns null rather than throwing when the edition does not hold the leaf:
+// that is a real answer (the reader is somewhere this edition never went),
+// and the caller keeps whatever name it already had.
+export function bookSeatingUtterance(volume, edition, bookId, utteranceId) {
+  if (!utteranceId) return null;
   // The caller's bookId is usually ANOTHER edition's word for where the
   // reader stands (O-92): the Hebrew's Nehemiah while asking whether the
   // Greek holds the verse. Book ids are per-edition now, so the asked
@@ -562,7 +585,7 @@ export function editionSeatsUtterance(volume, edition, bookId, utteranceId) {
   const direct = typeof volume?.chartFor === 'function' ? volume.chartFor(bookId, edition) : null;
   if (direct && Array.isArray(direct.seats)
     && direct.seats.some(seat => Array.isArray(seat?.utterances) && seat.utterances.includes(utteranceId))) {
-    return true;
+    return bookId;
   }
   const books = typeof volume?.booksFor === 'function' ? volume.booksFor(edition) : [];
   for (const book of books) {
@@ -570,10 +593,10 @@ export function editionSeatsUtterance(volume, edition, bookId, utteranceId) {
     const chart = volume.chartFor(book.id, edition);
     if (chart && Array.isArray(chart.seats)
       && chart.seats.some(seat => Array.isArray(seat?.utterances) && seat.utterances.includes(utteranceId))) {
-      return true;
+      return book.id;
     }
   }
-  return false;
+  return null;
 }
 
 // The units this edition holds, as a set — the ring-shaped form of the answer

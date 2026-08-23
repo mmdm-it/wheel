@@ -5,7 +5,7 @@ import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cous
 import { buildUtteranceSeatIndex } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
-import { volumeHoldsUnit, editionSeatsUtterance } from './bible-volume.js';
+import { volumeHoldsUnit, editionSeatsUtterance, bookSeatingUtterance } from './bible-volume.js';
 
 // THE ADAPTER NO LONGER LOADS CARGO (H-14, 2026-08-12).
 //
@@ -495,6 +495,50 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   const reseatOnEditionChange = ({ selected, app }) => {
     if (!selected || !app?.setPrimaryItems) return false;
     const level = selected.level;
+
+    // AT ROOT THE VESSELS EMPTY AND REFILL (O-95, Howell 2026-08-23).
+    //
+    // This function answered only at a verse or a chapter and returned "stay
+    // put" at root — while the store, the active edition, the names table and
+    // the corner emblem had all committed. That is the hybrid the comments
+    // below call the one outcome worse than either edition, arriving at the
+    // top after O-76 fixed it at the leaf.
+    //
+    // H-29 already ruled the shape: the ring holds the edition's own division
+    // of itself and books are never on it, precisely so that changing edition
+    // here never animates a rearrangement of books. So the ring is rebuilt
+    // from the new edition's declaration and the reader lands on the division
+    // that seats the leaves theirs seated — O-76's landing rule, one level up,
+    // walking the anchors the division carries (O-95, in volume-helpers).
+    if (level === 'testament') {
+      const edition = options?.activeEdition || options?.translation || null;
+      const { items } = buildBibleTestaments(manifest, namesMap, {
+        translationName, edition
+      });
+      if (!items.length) return false;
+      const volume = manifest?.__wallVolume;
+      let target = -1;
+      const anchors = Array.isArray(selected.meta?.utterances) ? selected.meta.utterances : [];
+      for (const utterance of anchors) {
+        target = items.findIndex(item => (item.meta?.utterances || []).includes(utterance));
+        if (target >= 0) break;
+        // The new edition may seat the same leaf under a book of its own,
+        // whose FIRST verse is not this one — so ask the charts, not the
+        // anchors, before giving up on this leaf.
+        const book = volume ? bookSeatingUtterance(volume, edition, null, utterance) : null;
+        if (book) {
+          target = items.findIndex(item => (item.meta?.books || []).includes(book));
+          if (target >= 0) break;
+        }
+      }
+      // AND IF IT SHARES NOTHING AT ALL, THE READER LANDS AT ITS BEGINNING —
+      // O-76's rule, for the same reason: they asked for this edition, and an
+      // edition's beginning is where an arrival belongs.
+      if (target < 0) target = 0;
+      app.setPrimaryItems(items, target, true);
+      return true;
+    }
+
     if (level !== 'verse' && level !== 'chapter') return false;
 
     const previousSeats = Array.isArray(verseChainItems) ? verseChainItems : [];
@@ -798,6 +842,31 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     return getParentLabel(item) === numeral ? '' : numeral;
   };
 
+  // WHOSE BOOK IS BEING NAMED? (O-94, Howell 2026-08-23.)
+  //
+  // While the reader turns a stratum, the Primary behind the glass follows
+  // the lens — so the parent button must say what the HOVERED edition calls
+  // the place they are standing, in the hovered tongue. The ring itself is
+  // not rebuilt (the paint is thrown away and redone by the settle), so its
+  // items still carry the COMMITTED edition's book ids, and naming one of
+  // those out of another tongue's names file is asking Hebrew for the name of
+  // a Greek book. It only ever answered because every tongue had been made to
+  // carry every other edition's vocabulary — the false demand O-94 retires.
+  //
+  // The leaf is the bridge (W-21): the hovered edition seats this utterance
+  // under a book of its own, and that is the book to name. Where it holds no
+  // such leaf there is nothing to say, so the committed id stands and the
+  // caller's own fallbacks apply.
+  const displayBookIdFor = (item, bookId) => {
+    const preview = options?.previewEdition || null;
+    if (!preview || preview === (options?.activeEdition || options?.translation)) return bookId;
+    const utterance = item?.meta?.utterances?.[0];
+    if (!utterance) return bookId;
+    const volume = manifest?.__wallVolume;
+    if (!volume) return bookId;
+    return bookSeatingUtterance(volume, preview, bookId, utterance) || bookId;
+  };
+
   const getParentLabel = (item) => {
     if (!item) return '';
     // Gateway root ring: parent button points back through the gateway.
@@ -843,7 +912,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // same table this line's book name comes from. Hardcoded Roman here
       // was why 'Αʹ ΣΑΜΟΥΗΛ XVII' wore two traditions at once.
       const chapterLabel = Number.isFinite(n) ? toTraditionNumeral(n, namesMap?.locale) : String(chapterKey);
-      const bookId = item.meta?.bookEntryId || item.meta?.bookId || '';
+      // O-94: named in the tongue under the lens, through the leaf.
+      const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || '');
       const book = bookId ? findBook(manifest, bookId) : null;
       // UPPERCASE ONLY WHAT UPPERCASES (Howell 2026-07-22, ruled for the
       // strata ring and true here for the same reason): toUpperCase mangles
