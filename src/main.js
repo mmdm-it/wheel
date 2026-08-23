@@ -1541,6 +1541,21 @@ function applyTheme(volume) {
     const ch = v => Math.max(0, Math.round(v * f)).toString(16).padStart(2, '0');
     return `#${ch((n >> 16) & 255)}${ch((n >> 8) & 255)}${ch(n & 255)}`;
   };
+  // THE OVERRIDE THAT IS NOT YET READ, and the constraint that will bind it
+  // when it is (O-3, recorded 2026-08-23 under W-139's sweep — the entry had
+  // no home outside the ledger). When per-volume travel colours are chosen,
+  // the engine reads two OPTIONAL data-declared keys that replace the
+  // derivation above: `--theme-color-orbital` and
+  // `--theme-color-orbital-label`. Nothing declares them today, so the
+  // derivation is the whole story and this comment is the contract.
+  //
+  // THE HARD CONSTRAINT, learned by measurement rather than taste: an orbital
+  // value must read on BOTH grounds — the theme background AND the logo disc
+  // that search mode dims to. The demo red measured 1.0:1 against the search
+  // blue, which is invisible, and that is why the derived band-gray replaced
+  // it. A declared override skips the derivation and therefore skips the
+  // safety the derivation happens to give: whoever declares one owes the
+  // second measurement.
   root.style.setProperty('--theme-color-orbital', darkenHex(active.band, 0.78));
   root.style.setProperty('--theme-color-accent', active.accent);
   root.style.setProperty('--theme-color-magnifier-stroke', active.magnifierStroke);

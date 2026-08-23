@@ -462,6 +462,23 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         // start of the Bible with nothing to say it had gone wrong. Land in
         // the requested CHAPTER instead: a near miss the reader can see and
         // correct, rather than a silent journey across the whole volume.
+        // AND IT WORKS ONLY BY ACCIDENT — recorded, deliberately not fixed
+        // (O-51; Howell: "Record it, don't fix it now"). This recovers the
+        // container by PARSING THE ID, stripping the last `_`-delimited
+        // segment — reading meaning out of the text of an id, which H-2
+        // forbids and which `core/identity.js` exists to end. It still finds
+        // what it looks for only because `expandVolumeSeats` happened to keep
+        // the legacy `unit_container_seat` SHAPE when it was written under
+        // the wall. Nothing requires that shape. The day a unit id contains
+        // an underscore, or the composition changes, the prefix matches the
+        // wrong seats or none — and the failure is the original one
+        // returning: the reader moved somewhere they did not ask to go, with
+        // nothing on the glass to say so.
+        //
+        // The fix is to CARRY the container on the item rather than recover
+        // it, exactly as H-2 made the chapter label travel. *(Comment landed
+        // 2026-08-23 under W-139's sweep; the hazard had lived only in a
+        // ledger body.)*
         const chapterPrefix = String(initialVerseId).replace(/_[^_]*$/, '_');
         const near = verseChainItems.findIndex(item => item && item.id.startsWith(chapterPrefix));
         if (near >= 0) selectedIndex = near;

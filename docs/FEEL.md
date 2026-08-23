@@ -37,6 +37,16 @@ a wrong migration is visible rather than plausible.*
 - **A language without its own abbreviations borrows the Latin ones.**
   Orville's interim choice, approved on sight. The alternatives were truncation
   or full names. Provisional against O-12, which gives each language its own.
+- **But a NAVIGATION NAME never falls back to Latin** (Howell, 2026-07-27,
+  O-7). Testament names, book names and the volume's own title must be fully
+  covered per language — a reader who changes tongue at the door sees the
+  WHOLE shelf speak it, or the tongue is not offered. This is deliberately
+  NOT W-6's doctrine for verse TEXT, where flagged Latin may stand in; and it
+  is not the abbreviation rule directly above, which is wayfinding and may
+  borrow. Three surfaces, two answers, and the difference is that a borrowed
+  name is a wrong word in the reader's face while a borrowed abbreviation is
+  a citation form. *(Landed here 2026-08-23 under W-139's sweep; the ruling
+  had lived only in a ledger body since it was made.)*
 - **The catalog's replacement home icon can wait.** *"A permanent catalog icon
   for home will be found in due time, I'm not worried about that at the
   moment"* — a ruling to defer, recorded so nobody re-opens it as a gap.
@@ -180,6 +190,26 @@ object:
 | `T.dissolveMs` | 1000 | hand off to the live wheel |
 | `T.inputUnlockMs` | 500 | touch stays blocked this long PAST the final fade-in |
 | `ARC_COLOR` | #000000 | structural line, drawn in the wheel's ink colour |
+
+### The Bible's overture — RULED, unscheduled, and it supersedes this block
+
+**Howell, 2026-07-30, in writing:** *"This one is more than spitballing. The
+bible needs a new overture. It can happen later, or last, but it must be
+done."* The splash above is the instrument's arrival, one per browser, shared
+by every volume. The Bible is to get its own boot/entry sequence replacing
+it — a felt thing, not a mechanism.
+
+**Sequencing is his and is honoured:** *"it can happen later, or last."* It
+sits AFTER H-12 phase 1, and phase 0 completes in order before phase 1
+begins, so it is not phase-0 work and must not be smuggled in as such.
+**Owner:** the engine session. **Verifier:** Howell's eye on the phone —
+there is no other check for this kind of thing. Tracked as **O-36**.
+
+*(Landed here 2026-08-23 under W-139's sweep. It had been ruled for
+three weeks and filed under a `WHAT-IF` heading in a register since
+archived — the shape H-7 was written to abolish — and O-36's own named
+landing address was this document. Writing it down is the whole of the
+work owed today; the design is not started.)*
 
 ## C.4 — gateway transit wipe (src/view/gateway-wipe.js)
 
