@@ -191,7 +191,7 @@ cannot be followed, WF-6) · **DECLINED**.*
 | W-137 | SUPERSEDED BY W-138 | 2026-08-23 | ROW 2'S SEATING IS BLOCKED ON NAMES — and the number is unknown, because three files each decide it |
 | W-138 | RULED | 2026-08-23 | A TONGUE NAMES ONLY THE BOOKS OF EDITIONS WRITTEN IN THAT TONGUE — and a name enters with its source or not at all |
 | W-139 | RULED | 2026-08-23 | THE LEDGER'S PROSE RETIRES — the index becomes the record |
-| W-140 | OPEN | 2026-08-23 | THE STRATA RING'S EDITION NODES — Howell ruled a short NATIVE form, not Map (O-97); οʹ attested for the Seventy and the NT's imprint stripped from its title; still owed: whether the Hebrew and the NT need short forms at all |
+| W-140 | DONE | 2026-08-23 | THE STRATA RING SHOWS THE EDITION'S NAME — Howell ruled the name over the siglum (O-97); οʹ researched and attested in label-attestations.md, not in the data; the NT's imprint stripped from its title; `map` carried into the volume and playlist-guarded |
 | O-1 | OPEN | 2026-07-23 | Prominence tiers for manufacturers (the ranked starfield) — ruling housed in mmdm/README.md; campaign open |
 | O-2 | DONE | 2026-07-23 | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | RULED | 2026-07-23 | TRAVEL-COLOUR THEME KEYS — the contract binding whoever declares one; src/main.js at the derivation |
@@ -205,7 +205,7 @@ cannot be followed, WF-6) · **DECLINED**.*
 | O-11 | DONE | 2026-07-29 | The reading vocabulary belongs in the registry |
 | O-12 | RULED | 2026-07-29 | Book abbreviations per language — the sky needs them — abbreviation coverage cells |
 | O-13 | DONE | 2026-07-29 | VERSIFICATION — the numbering keeps faith with the edition — docs/VERSIFICATION-MODEL.md |
-| O-14 | OPEN | 2026-07-29 | BREADTH OR DEPTH? — an unruled question for Howell — question awaiting Howell |
+| O-14 | SUPERSEDED BY W-138 | 2026-07-29 | BREADTH OR DEPTH? — retired by Howell 2026-08-23: the premise died with the editions model; two tongues carry editions and there is no import queue |
 | O-15 | DONE | 2026-07-30 | The launch list — which complete translations must ship? (NEEDS YOUR ENDORSEMENT) |
 | O-16 | DONE | 2026-07-30 | A per-edition coverage index — the one thing that blocks the new gap doctrine |
 | O-17 | DONE | 2026-07-31 | The certification override and the incomplete marker (engine, DONE) |
@@ -272,7 +272,7 @@ cannot be followed, WF-6) · **DECLINED**.*
 | O-78 | DONE | 2026-08-20 | THE CROSSING SCANNED 185 MILLION TIMES TO LEARN NOTHING — and a filter I mistook for a trap |
 | O-79 | DONE | 2026-08-20 | THE GROUND UNDER THE EMBLEM FOLLOWS THE READER TOO — engine half landed, one line of cargo owed |
 | O-80 | DONE | 2026-08-20 | THE UNIT LIST GROWS PAST 39 — the engine survives the nine, and Esdras B has only one shape |
-| O-81 | OPEN | 2026-08-20 | THE DEPLOY GATE REFUSES BY LICENCE, AND NO GREEK IS ON ITS LIST — awaiting Howell's per-edition ruling — question awaiting Howell |
+| O-81 | RULED | 2026-08-20 | THE PUBLISH GATE REFUSES BY PROOFREAD STATUS — Howell 2026-08-23: "only proofread editions should be available for publishing"; the Greek is NOT allowlisted; engine work owed |
 | O-82 | DONE | 2026-08-20 | THE DIMENSION BUTTON GOES THE OTHER WAY — and O-37's correction was never swept |
 | O-83 | RULED | 2026-08-21 | A VERSE HAS ONE SIZE, NOT SIX — and the tiers that remain are not verses |
 | O-84 | RULED | 2026-08-22 | THE PARTIAL ECLIPSE — a long verse shows in two parts, and the ring says which |
@@ -288,4 +288,5 @@ cannot be followed, WF-6) · **DECLINED**.*
 | O-94 | DONE | 2026-08-23 | THE PREVIEW ASKS THE WRONG EDITION FOR A NAME — a tongue names only its own editions' books |
 | O-95 | DONE | 2026-08-23 | AN EDITION CHANGE AT ROOT LEFT THE OLD EDITION'S RING STANDING |
 | O-96 | RULED | 2026-08-23 | DIMENSION MODE, IN HOWELL'S OWN WORDS — the spec lands in the canon, and a Q3 miss is confessed — engine DIMENSION_SYSTEM.md |
-| O-97 | OPEN | 2026-08-23 | THE STRATA RING SPEAKS SHORT, IN ITS OWN SCRIPT — engine ready, native short forms owed by cargo; retires Map for this ring and the 08-01 full-name rule |
+| O-97 | RULED | 2026-08-23 | THE STRATA RING SPEAKS SHORT, IN ITS OWN SCRIPT — Howell 2026-08-23 took the name over the siglum while nothing shares an arc; engine landed, the rivalry rule is recorded at the code |
+| O-98 | RULED | 2026-08-23 | THE ARCHIVE RULE SURVIVES AS A STATUS RULE — an entry owing a write-up stays OPEN, not DONE; DONE is now where you stop looking, and no tool can check it |
