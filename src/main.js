@@ -151,15 +151,34 @@ const CHOOSERS = [
     // merely passing under the lens its placeholder must be told whose promise
     // it is — otherwise Italian's held shelf wore Finnish's words (Howell
     // spotted it on the phone, 2026-07-30).
-    // THE SHELF SPEAKS IN FULL (Howell, LAN check 2026-08-01): every edition
-    // node shows its NATIVE FULL NAME — Οἱ Ἑβδομήκοντα, כתב יד לנינגרד —
-    // magnified or not. The old split showed Latin-letter codes (LXX, WLC) on
-    // the unmagnified nodes, which read as filing labels in a volume whose
-    // whole point is that each tongue speaks for itself. This retires O-6's
-    // nativeAbbrev before any data was written for it. It fits because this
-    // plane holds only an edition or three per language, far apart on the
-    // arc — unlike the book sky, where long names collide.
-    label: key => dimensionBridge.translationName(key, strataPreview?.language || null),
+    // THE SHELF SPEAKS SHORT, IN ITS OWN SCRIPT (O-97, Howell 2026-08-23).
+    //
+    // STRUCK, and quoted so the correction is readable — this said: "THE SHELF
+    // SPEAKS IN FULL (Howell, LAN check 2026-08-01): every edition node shows
+    // its NATIVE FULL NAME … magnified or not … It fits because this plane
+    // holds only an edition or three per language, FAR APART ON THE ARC —
+    // unlike the book sky, where long names collide."
+    //
+    // The last sentence was true when written and Wilbur's seating of the
+    // Greek Old Testament falsified it from the other side of the wall: the
+    // Greek arc now carries TWO editions, and 50grc's native name is
+    // fifty-eight characters — Ἡ Καινὴ Διαθήκη ἐγκρίσει τῆς Μεγάλης τοῦ
+    // Χριστοῦ Ἐκκλησίας. They collide and run off the ring, which is what
+    // Howell photographed.
+    //
+    // What survives of 2026-08-01 is its REASON, and he ruled on it again
+    // today: a Latin-letter code reads as a filing label in a volume whose
+    // whole point is that each tongue speaks for itself. So the node wears a
+    // SHORT NATIVE form — not Map (MT / LXX / NT Graece), which is Latin, and
+    // not the key, which is worse.
+    //
+    // EVERY NODE, MAGNIFIED OR NOT. The view offers a split — it passes
+    // `magnified` as the second argument — and the ruling did not take it: the
+    // shape Howell chose shows the short native form in the lens as well,
+    // תנ״ך where the full name would read כתב יד לנינגרד. The alternative (the
+    // lens keeps the full name, its neighbours go short) was put beside it and
+    // was not the one chosen; it remains one line away if he wants it.
+    label: key => dimensionBridge.translationAbbrev(key, strataPreview?.language || null),
     selected: () => dimensionBridge.getSelection().translation,
     select: key => {
       const ok = dimensionBridge.setTranslation(key);

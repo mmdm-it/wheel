@@ -372,12 +372,65 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // (there is no abbreviation for a promise — Howell 2026-07-22).
     translationAbbrev(key, languageHint = null) {
       if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
-      // The unselected node's short label in its OWN script (Howell 2026-07-26):
-      // Greek editions must show a Greek abbreviation, not the Latin key
-      // (LXX/BYZ), just as the magnified node already shows the Greek nativeName.
-      // Reads the registry's nativeAbbrev; falls back to the key until the data
-      // carries one, so no regression before Wilbur populates it (O-6).
-      return meta?.translations?.[key]?.nativeAbbrev || key;
+      // THE RING SPEAKS SHORT, IN ITS OWN SCRIPT (O-97, Howell 2026-08-23),
+      // choosing between three of his own rulings that had collided on this
+      // one surface:
+      //   2026-07-26  a Greek edition shows a GREEK abbreviation, not a Latin
+      //               key — this function, reading `nativeAbbrev` (O-6).
+      //   2026-08-01  the shelf speaks IN FULL: the native full name on every
+      //               node, magnified or not. It retired nativeAbbrev before a
+      //               single value had been written, and left this function
+      //               with no caller at all.
+      //   2026-08-23  Map (MT / LXX / NT Graece) should label these nodes.
+      //
+      // He ruled for the SHORT NATIVE FORM: not Map, because Map is Latin
+      // script, and his own 2026-08-01 reason is the one that survives — a
+      // Latin-letter code "reads as a filing label in a volume whose whole
+      // point is that each tongue speaks for itself".
+      //
+      // THE FALLBACK IS THE FULL NAME, NOT THE KEY. It used to be the key,
+      // which is `50grc` — a filing label of the worst sort, and precisely
+      // what he has now rejected twice. Until the data carries a short form,
+      // a node wears its full native name: too long, and honest about it. A
+      // long true name beats a short false one, and the collision it causes
+      // is the visible reminder that the data is owed.
+      //
+      // ── FOR WHOEVER MAKES THIS CONDITIONAL, and it is not owed yet ───────
+      // Wilbur's rule, worked out with him on 2026-08-23 and recorded here
+      // rather than left in a message: an edition shows the SHORTEST ATTESTED
+      // THING THAT DISTINGUISHES IT FROM ITS RIVALS — a siglum where a
+      // scripture has rivals, the scripture's own name where it does not.
+      //
+      // THE TEST IS THE LEAVES, NOT ANY LABEL. Two editions are rivals when
+      // they seat the same utterances, and `bookSeatingUtterance` already
+      // answers that, so nothing new need be invented. Division labels are
+      // the near-miss that looks right and is not: a Sinaiticus Tobit would
+      // divide as Τωβίτ rather than Ἡ Παλαιὰ Διαθήκη, so it fails a label
+      // test while being exactly the rival the rule exists for.
+      //
+      // AND IT MUST BE RUN PER ARC. This stratum's items are
+      // `translationsOf(language)` — an edition only ever shares a ring with
+      // editions of its own tongue. Run globally the test gives the WRONG
+      // answer and forces sigla onto a ring they never share. Measured on the
+      // seated corpus, 2026-08-23:
+      //     1200BCheb vs 250BCgrc   different arcs   22,804 shared leaves
+      //     250BCgrc  vs 50grc      SAME arc              0 shared leaves
+      //     1200BCheb vs 50grc      different arcs        0 shared leaves
+      // The Hebrew and the Greek Old Testament are rivals in substance and
+      // are never asked to sit together; the two that DO sit together share
+      // not one leaf. So today every node takes its name — the rule agreeing
+      // with the eye rather than a coincidence.
+      //
+      // NOT BUILT, DELIBERATELY, on Howell's rule of that morning: find the
+      // line that reads it, and if there is none there is nothing to build.
+      // No arc holds two editions of one scripture today. The rows that would
+      // create one are row 4, SKIPPED by Howell (W-119), and row 5, unseated
+      // behind a licence letter not yet sent. When a real rival lands, look
+      // at the two editions before writing the test — arguing from what the
+      // data WILL need rather than from what reads it now is the error both
+      // sessions made once in the hour this rule was worked out.
+      const t = meta?.translations?.[key];
+      return t?.nativeAbbrev || t?.nativeName || t?.name || key;
     },
 
     // The tertiary stratum's nodes: the SERVABLE edition keys of a language,

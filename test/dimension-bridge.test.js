@@ -133,18 +133,33 @@ describe('dimension bridge — selection and defaults', () => {
     assert.equal(bridge.getSelection().translation, 'VUL', 'the reader is untouched');
   });
 
-  it('translationAbbrev shows the native-script abbreviation when present (Howell 2026-07-26)', () => {
-    // The unselected Greek option must read as Greek (Οʹ), not the Latin key
-    // (LXX) — mirroring the magnified node's Greek nativeName. Falls back to
-    // the key until the registry carries nativeAbbrev (O-6).
+  it('THE RING SPEAKS SHORT, IN ITS OWN SCRIPT — and never falls back to the key (O-97)', () => {
+    // Rewritten, not amended (W-102): the doctrine under this cell moved
+    // twice. It was written for Howell's 2026-07-26 ruling, then 2026-08-01
+    // retired the whole mechanism in favour of full native names, then
+    // 2026-08-23 chose the short native form over BOTH that and Map.
     const withNative = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
       translations: { LXX: { language: 'greek', name: 'Septuagint', nativeName: 'Οἱ Ἑβδομήκοντα', nativeAbbrev: 'Οʹ' } }
     } });
-    assert.equal(withNative.translationAbbrev('LXX'), 'Οʹ', 'Greek abbreviation, not the Latin key');
-    const withoutNative = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
+    assert.equal(withNative.translationAbbrev('LXX'), 'Οʹ',
+      'the short form in the edition\'s own script — not Map, which is Latin');
+
+    // THE FALLBACK CHANGED, and this is the cell that says so. It used to be
+    // the KEY, so an edition with no short form read "50grc" on the ring —
+    // a filing label of the worst kind, and exactly what Howell has now
+    // rejected twice. A long TRUE name beats a short false one, and the
+    // collision it causes is the visible reminder that the data is owed.
+    const noAbbrev = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
+      translations: { '50grc': { language: 'greek', name: 'Patriarchal Text', nativeName: 'Ἡ Καινὴ Διαθήκη', proofread: true } }
+    } });
+    assert.equal(noAbbrev.translationAbbrev('50grc'), 'Ἡ Καινὴ Διαθήκη',
+      'the full native name stands in — never the key');
+
+    // And with neither, the English name before the key, for the same reason.
+    const bare = createDimensionBridge({ store: createInteractionStore(), translationsMeta: {
       translations: { BYZ: { language: 'greek', name: 'Byzantine', proofread: true } }
     } });
-    assert.equal(withoutNative.translationAbbrev('BYZ'), 'BYZ', 'falls back to the key, no regression');
+    assert.equal(bare.translationAbbrev('BYZ'), 'Byzantine');
   });
 
   it('an edition declares how its script runs (W-1)', () => {
