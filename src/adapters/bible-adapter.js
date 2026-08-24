@@ -1019,7 +1019,23 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         : null;
       // No book in hand — the root, a division ring — so the emblem is the
       // one the reader is about to enter, which is the first this edition has.
-      return (holding || divisions[0]).image || null;
+      //
+      // THREE ANSWERS, AND THE THIRD IS WHY THIS IS NOT `|| null` (2026-08-24).
+      // `null` above means THIS VOLUME CANNOT ANSWER — it declares no emblems
+      // at all — and the host leaves the corner alone, which is right for the
+      // catalog and the calendar. An EDITION that declares no emblem is a
+      // different answer entirely: it is a measurement, and returning null for
+      // it made the host keep whatever was already there. So a reader in the
+      // Hebrew who committed the Greek Old Testament went on reading Swete
+      // under a TORAH SCROLL, because Swete's division declares no image and
+      // the badge was never told to clear.
+      //
+      // The empty string is that third answer: "asked, and there is none".
+      // Same shape as `chartedUnitsOf`'s populated / empty / null, for the
+      // same reason — a missing instrument must never read as a measurement,
+      // and a measurement of nothing must never read as a missing instrument.
+      const image = (holding || divisions[0]).image;
+      return image || '';
     },
 
     // AND THE CIRCLE UNDER IT (O-79, Howell 2026-08-20): *"the color of the

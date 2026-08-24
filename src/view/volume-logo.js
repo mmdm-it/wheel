@@ -143,7 +143,24 @@ export class VolumeLogo {
   // Returns whether anything changed, so a caller on a per-frame signal can
   // tell a real swap from the ninety-nine calls that are not.
   setImage(imageName) {
-    if (!this.logo || !imageName) return false;
+    if (!this.logo) return false;
+    // CLEARING IS A REAL REQUEST, NOT A NO-OP (2026-08-24). An empty name
+    // means the volume was asked and this edition declares no emblem, so the
+    // badge must go blank rather than keep the LAST edition's mark. It
+    // returned false here and changed nothing, which is why a reader who
+    // committed an edition declaring no emblem went on seeing the PREVIOUS
+    // edition's. The element is hidden rather than pointed at an empty href,
+    // which would ask the browser for a file named nothing.
+    if (imageName === '') {
+      // Idempotent, like every other name: a host on a per-frame signal must
+      // be able to ask repeatedly and hear "nothing changed".
+      if (this._renderConfig?.default_image === '') return false;
+      if (this.logo.style) this.logo.style.display = 'none';
+      if (this._renderConfig) this._renderConfig.default_image = '';
+      return true;
+    }
+    if (this.logo.style) this.logo.style.display = '';
+    if (!imageName) return false;
     const base = this._renderConfig?.logo_base_path;
     if (!base) return false;
     if (this._renderConfig.default_image === imageName) return false;

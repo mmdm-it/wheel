@@ -1270,7 +1270,12 @@ function updateCornerImage() {
   try {
     const at = currentApp?.nav?.getCurrent?.();
     const name = cornerImageAt(at);
+    // null = this volume declares no emblems, so leave its own corner alone.
+    // '' = the volume was ASKED and this edition has none, so CLEAR it —
+    // otherwise the badge keeps another edition's mark, which is what put a
+    // Torah scroll over Swete's Greek (2026-08-24).
     if (name) currentApp?.setCornerImage?.(name);
+    else if (name === '') currentApp?.setCornerImage?.('');
     // THE CIRCLE TRAVELS WITH THE EMBLEM (O-79), in the same call rather than
     // on a signal of its own: they are one badge, and two subscriptions to
     // the same event are two things to keep in step. Set second, so a volume

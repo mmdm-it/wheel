@@ -192,6 +192,9 @@ cannot be followed, WF-6) · **DECLINED**.*
 | W-138 | RULED | 2026-08-23 | A TONGUE NAMES ONLY THE BOOKS OF EDITIONS WRITTEN IN THAT TONGUE — and a name enters with its source or not at all |
 | W-139 | RULED | 2026-08-23 | THE LEDGER'S PROSE RETIRES — the index becomes the record |
 | W-140 | DONE | 2026-08-23 | THE STRATA RING SHOWS THE EDITION'S NAME — Howell ruled the name over the siglum (O-97); οʹ researched and attested in label-attestations.md, not in the data; the NT's imprint stripped from its title; `map` carried into the volume and playlist-guarded |
+| W-141 | OPEN | 2026-08-23 | THE SEPTUAGINT'S TEXT CARRIES OCR DEBRIS — 113 tokens re-encoded by rule (glyph-identical Latin to Greek, each attested by the corpus itself); 234 verses still need the printed page, work list in sources/swete-ocr-repairs-2026.08.23 |
+| W-142 | SUPERSEDED BY W-143 | 2026-08-24 | THE SWETE PIN'S DIACRITICS ARE DAMAGED, AND NO MACHINE CAN REPAIR THEM — the measurement stands; Howell ruled the disposition in W-143 |
+| W-143 | RULED | 2026-08-24 | THE SEPTUAGINT'S DIACRITICS ARE AN ACCEPTED LIMIT — proven sub-visual when Howell read the worst verse as correct; disclosed in PROOFREAD-SUITE.md; conditional on a corrections email link, which is engine work and OWED |
 | O-1 | OPEN | 2026-07-23 | Prominence tiers for manufacturers (the ranked starfield) — ruling housed in mmdm/README.md; campaign open |
 | O-2 | DONE | 2026-07-23 | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | RULED | 2026-07-23 | TRAVEL-COLOUR THEME KEYS — the contract binding whoever declares one; src/main.js at the derivation |
