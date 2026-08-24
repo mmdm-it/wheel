@@ -117,7 +117,23 @@ describe('the emblem swaps without disturbing what is in flight', () => {
     const { logo } = await makeLogo();
     assert.equal(logo.setImage('torah_scroll'), false, 'already showing it');
     assert.equal(logo.setImage(null), false, 'nothing to show');
-    assert.equal(logo.setImage(''), false);
+  });
+
+  it('AN EMPTY NAME CLEARS THE BADGE — it is a measurement, not an absence (2026-08-24)', () => {
+    // Rewritten, not patched (W-102): this cell used to assert that '' did
+    // NOTHING, which was true while every edition of every volume declared an
+    // emblem. It stopped being true when an edition declared none: the host
+    // asked, heard "no emblem", and the badge kept the PREVIOUS edition's mark
+    // — a reader committing that edition went on seeing the one before it.
+    //
+    // So the three answers are distinguished here as they are at the adapter:
+    // a NAME shows it, NULL means nothing was asked, and '' means asked and
+    // there is none. Only the last clears.
+    return makeLogo().then(({ logo }) => {
+      assert.equal(logo.setImage(''), true, 'clearing is a real change');
+      assert.equal(logo.setImage(''), false, 'and idempotent, for a per-frame caller');
+      assert.equal(logo.setImage('crown_of_thorns'), true, 'and it comes back');
+    });
   });
 
   it('DOES NOT RESET THE ANIMATION STATE — the crossing happens at a leaf', async () => {
