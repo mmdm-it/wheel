@@ -372,12 +372,30 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // (there is no abbreviation for a promise — Howell 2026-07-22).
     translationAbbrev(key, languageHint = null) {
       if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
-      // The unselected node's short label in its OWN script (Howell 2026-07-26):
-      // Greek editions must show a Greek abbreviation, not the Latin key
-      // (LXX/BYZ), just as the magnified node already shows the Greek nativeName.
-      // Reads the registry's nativeAbbrev; falls back to the key until the data
-      // carries one, so no regression before Wilbur populates it (O-6).
-      return meta?.translations?.[key]?.nativeAbbrev || key;
+      // THE RING SPEAKS SHORT, IN ITS OWN SCRIPT (O-97, Howell 2026-08-23),
+      // choosing between three of his own rulings that had collided on this
+      // one surface:
+      //   2026-07-26  a Greek edition shows a GREEK abbreviation, not a Latin
+      //               key — this function, reading `nativeAbbrev` (O-6).
+      //   2026-08-01  the shelf speaks IN FULL: the native full name on every
+      //               node, magnified or not. It retired nativeAbbrev before a
+      //               single value had been written, and left this function
+      //               with no caller at all.
+      //   2026-08-23  Map (MT / LXX / NT Graece) should label these nodes.
+      //
+      // He ruled for the SHORT NATIVE FORM: not Map, because Map is Latin
+      // script, and his own 2026-08-01 reason is the one that survives — a
+      // Latin-letter code "reads as a filing label in a volume whose whole
+      // point is that each tongue speaks for itself".
+      //
+      // THE FALLBACK IS THE FULL NAME, NOT THE KEY. It used to be the key,
+      // which is `50grc` — a filing label of the worst sort, and precisely
+      // what he has now rejected twice. Until the data carries a short form,
+      // a node wears its full native name: too long, and honest about it. A
+      // long true name beats a short false one, and the collision it causes
+      // is the visible reminder that the data is owed.
+      const t = meta?.translations?.[key];
+      return t?.nativeAbbrev || t?.nativeName || t?.name || key;
     },
 
     // The tertiary stratum's nodes: the SERVABLE edition keys of a language,

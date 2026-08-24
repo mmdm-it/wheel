@@ -191,6 +191,7 @@ cannot be followed, WF-6) · **DECLINED**.*
 | W-137 | SUPERSEDED BY W-138 | 2026-08-23 | ROW 2'S SEATING IS BLOCKED ON NAMES — and the number is unknown, because three files each decide it |
 | W-138 | RULED | 2026-08-23 | A TONGUE NAMES ONLY THE BOOKS OF EDITIONS WRITTEN IN THAT TONGUE — and a name enters with its source or not at all |
 | W-139 | RULED | 2026-08-23 | THE LEDGER'S PROSE RETIRES — the index becomes the record |
+| W-140 | OPEN | 2026-08-23 | MAP LABELS THE STRATA RING'S EDITION NODES — cargo half landed (map is in the data, playlist-guarded); the RENDER is engine-side and unbuilt, and one earlier ruling may conflict |
 | O-1 | OPEN | 2026-07-23 | Prominence tiers for manufacturers (the ranked starfield) — ruling housed in mmdm/README.md; campaign open |
 | O-2 | DONE | 2026-07-23 | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | RULED | 2026-07-23 | TRAVEL-COLOUR THEME KEYS — the contract binding whoever declares one; src/main.js at the derivation |
@@ -287,3 +288,4 @@ cannot be followed, WF-6) · **DECLINED**.*
 | O-94 | DONE | 2026-08-23 | THE PREVIEW ASKS THE WRONG EDITION FOR A NAME — a tongue names only its own editions' books |
 | O-95 | DONE | 2026-08-23 | AN EDITION CHANGE AT ROOT LEFT THE OLD EDITION'S RING STANDING |
 | O-96 | RULED | 2026-08-23 | DIMENSION MODE, IN HOWELL'S OWN WORDS — the spec lands in the canon, and a Q3 miss is confessed — engine DIMENSION_SYSTEM.md |
+| O-97 | OPEN | 2026-08-23 | THE STRATA RING SPEAKS SHORT, IN ITS OWN SCRIPT — engine ready, native short forms owed by cargo; retires Map for this ring and the 08-01 full-name rule |
