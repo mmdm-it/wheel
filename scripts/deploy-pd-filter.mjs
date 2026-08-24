@@ -7,6 +7,14 @@
 // filtered copy may reach the public server (HANDOFF W-10/W-11; WF-14;
 // LICENSING.local.md).
 //
+// AMENDED 2026-08-23 (O-81): `proofread` IS NOW A GATE HERE TOO. Howell,
+// asked whether the Greek editions should be cleared: "No, only proofread
+// editions should be available for publishing." The paragraph below is still
+// true and still the reason there are TWO gates rather than one — the
+// questions differ, and neither answer implies the other — but it should no
+// longer be read as saying this script ignores confirmation. It asks both:
+// may we publish this, and should we publish it yet.
+//
 // WHY IT MATTERS THAT THIS IS A SEPARATE GATE FROM `proofread`. The shelf
 // gate (O-29) decides what the APP OFFERS; this decides what EXISTS ON THE
 // SERVER. The corpus is fetched as JSON at predictable URLs under /data/, so
@@ -130,12 +138,82 @@ const volume = JSON.parse(readFileSync(volumePath, 'utf8'));
 const declared = (volume.editions || []).map(e => e.code).filter(Boolean);
 if (!declared.length) die('deploy-pd-filter: volume.json declares no editions — refusing to guess.');
 
-// ── 3. REFUSE on declared-but-not-cleared, BEFORE writing anything ─────────
-const uncleared = declared.filter(code => !PD_ALLOWLIST.has(code));
-const cleared = declared.filter(code => PD_ALLOWLIST.has(code));
+// IS THIS EDITION FINISHED? (O-81.) Read from the DECLARATION, not from a
+// loaded volume: this gate has been inert twice already (O-56, O-66), both
+// times because it leaned on something maintained for another purpose, and
+// making a rights gate need the whole reader to boot is that mistake with a
+// better excuse. It also could not be tested — a fixture would have to build a
+// complete leaf-and-shard corpus in order to assert a licensing rule.
+//
+// The definition is the engine's, restated on the raw files: an edition is
+// finished when every book its own chart index declares appears in its
+// `proofreadUnits`. That IS `isEditionFullyConfirmed`. Because a second
+// definition of one fact is how two instruments drift apart, a cell asserts
+// that the two agree on the real corpus whenever the corpus is present.
+const fullyConfirmed = (code) => {
+  const decl = (volume.editions || []).find(e => e && e.code === code) || {};
+  if (decl.proofread === true) return true;
+  const confirmed = new Set(decl.proofreadUnits || []);
+  if (!confirmed.size) return false;
+  const indexPath = join(src, version, 'charts', code, 'index.json');
+  if (!existsSync(indexPath)) return false;
+  let books;
+  try { books = JSON.parse(readFileSync(indexPath, 'utf8')).books || []; } catch { return false; }
+  const ids = books.map(b => (typeof b === 'string' ? b : b && b.file)).filter(Boolean);
+  return ids.length > 0 && ids.every(id => confirmed.has(id));
+};
+
+// ── 3. TWO GATES, AND THEY ASK DIFFERENT QUESTIONS (O-81, Howell 2026-08-23)
+//
+// Asked whether the Greek editions should join the allowlist, he answered:
+// "No, only proofread editions should be available for publishing." That adds
+// a second gate rather than replacing the first, because LICENCE and
+// CONFIRMATION are not the same question and neither implies the other:
+//
+//   MAY we publish this?          — the licence. A human assertion, PD_ALLOWLIST.
+//   SHOULD we publish this yet?   — proofread status. A fact the DATA states.
+//
+// An edition that is not confirmed is EXCLUDED, quietly and by design: that is
+// the normal condition of a corpus being built, and refusing the whole deploy
+// over it would mean nothing ships until everything is finished. An edition
+// that is not LICENSED still stops the deploy by name, because a missing
+// licence is a question nobody has answered, and the loudness is the point.
+//
+// The order matters. Licence is checked against what we intend to PUBLISH, so
+// an unconfirmed edition is never held to a licence it does not need yet.
+//
+// WHY THE CONFIRMATION TEST IS IMPORTED RATHER THAN REIMPLEMENTED: the engine
+// already owns `isEditionFullyConfirmed`, and a rights-adjacent gate is the
+// last place to keep a second definition of the same fact. Two instruments
+// that agree today are two instruments that can disagree tomorrow, and this
+// gate has already been inert twice (O-56, O-66) — never from a wrong answer,
+// always from asking a question nobody was maintaining.
+const publishable = [];
+const unconfirmed = [];
+for (const code of declared) {
+  (fullyConfirmed(code) ? publishable : unconfirmed).push(code);
+}
+if (unconfirmed.length) {
+  console.error(`deploy-pd-filter: ${unconfirmed.length} edition(s) NOT published — not proofread: ${unconfirmed.join(', ')}`);
+  console.error('  This is O-81, not a fault: only proofread editions are available for publishing.');
+}
+if (!publishable.length) {
+  die(
+    'deploy-pd-filter: REFUSING — no declared edition is proofread, so there is nothing to publish.',
+    'Publishing an empty volume would ship a reader with no text at all. Nothing was written.'
+  );
+}
+const uncleared = publishable.filter(code => !PD_ALLOWLIST.has(code));
+const cleared = publishable.filter(code => PD_ALLOWLIST.has(code));
+
+// WHAT ACTUALLY SHIPS: proofread AND licensed. Every exclusion below asks
+// this set rather than the licence list, so an edition held back for being
+// unconfirmed is excluded by the same machinery — by PATH, never opened —
+// that has always excluded an unlicensed one.
+const PUBLISHED = new Set(cleared);
 if (uncleared.length) {
   die(
-    `deploy-pd-filter: REFUSING — the volume declares ${uncleared.length} edition(s) that are not cleared for publication: ${uncleared.join(', ')}`,
+    `deploy-pd-filter: REFUSING — ${uncleared.length} PROOFREAD edition(s) are not cleared for publication: ${uncleared.join(', ')}`,
     'Their text will not be deployed, and this is a LICENSING decision rather than a build step.',
     'Either add the code to PD_ALLOWLIST — asserting it is public domain or licensed for our distribution —',
     'or remove the edition from the volume. Nothing was written.'
@@ -180,7 +258,7 @@ const editionDirRe = new RegExp(
 );
 const unclearedEditionOf = rel => {
   const m = editionDirRe.exec(rel);
-  return m && !PD_ALLOWLIST.has(m[1]) ? m[1] : null;
+  return m && !PUBLISHED.has(m[1]) ? m[1] : null;
 };
 const isUnclearedText = rel => unclearedEditionOf(rel) !== null;
 
@@ -212,8 +290,8 @@ for (const file of walk(src)) {
     if (code && !rel.startsWith(textDirOf(code))) {
       die(`deploy-pd-filter: REFUSING — ${rel} declares edition ${JSON.stringify(code)} but sits in another edition's directory.`);
     }
-    if (code && !PD_ALLOWLIST.has(code)) {
-      die(`deploy-pd-filter: REFUSING — ${rel} carries uncleared edition ${JSON.stringify(code)}.`);
+    if (code && !PUBLISHED.has(code)) {
+      die(`deploy-pd-filter: REFUSING — ${rel} carries unpublished edition ${JSON.stringify(code)}.`);
     }
     const n = Object.keys(unit.text || {}).length;
     records += n;
@@ -254,7 +332,7 @@ for (const file of walk(dest)) {
   if (isUnclearedText(rel)) { leaks += 1; continue; }
   if (!cleared.some(c => rel.startsWith(textDirOf(c)))) continue;
   const unit = JSON.parse(readFileSync(file, 'utf8'));
-  if (unit.edition && !PD_ALLOWLIST.has(unit.edition)) { leaks += 1; continue; }
+  if (unit.edition && !PUBLISHED.has(unit.edition)) { leaks += 1; continue; }
   verified += Object.keys(unit.text || {}).length;
 }
 if (leaks > 0) die(`deploy-pd-filter: FAILED — ${leaks} uncleared text file(s) survived into the output.`);

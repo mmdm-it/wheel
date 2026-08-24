@@ -47,7 +47,13 @@ const UNCLEARED = 'NOT-A-CLEARED-EDITION';
 // `texts` are the edition directories that actually carry files — kept
 // separate on purpose, because declaration and presence disagreeing is one
 // of the cases under test.
-function build({ editions = [CLEARED], texts = { [CLEARED]: 3 }, declaresEdition = null, charts = [] } = {}) {
+// `unconfirmed` names editions that are NOT proofread (O-81). Every other
+// edition declares `proofread: true`, which is what the gate now requires
+// before an edition may be published at all — a fixture written before that
+// ruling declared nothing, so the gate correctly refused to publish an
+// unfinished corpus and every cell here went red. W-102: the cells are
+// rewritten to the doctrine, not patched around it.
+function build({ editions = [CLEARED], texts = { [CLEARED]: 3 }, declaresEdition = null, charts = [], unconfirmed = [] } = {}) {
   rmSync(src(), { recursive: true, force: true });
   rmSync(dest(), { recursive: true, force: true });
   mkdirSync(path.join(src(), V), { recursive: true });
@@ -56,7 +62,7 @@ function build({ editions = [CLEARED], texts = { [CLEARED]: 3 }, declaresEdition
   // it would have kept every cell here green over a gate that could not run
   // against the real data — which is exactly what happened for a day.
   writeFileSync(path.join(src(), V, 'volume.json'), JSON.stringify({
-    editions: editions.map(code => ({ code, hasChart: true }))
+    editions: editions.map(code => ({ code, hasChart: true, proofread: !unconfirmed.includes(code) }))
   }));
   for (const code of charts) {
     const d = path.join(src(), V, 'charts', code);
@@ -160,6 +166,55 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
     assert.match(r.out, /records inspected/);
   });
 
+  it('AN UNPROOFREAD EDITION IS EXCLUDED, NAMED, AND DOES NOT STOP THE DEPLOY (O-81)', () => {
+    // Howell, asked whether the Greek should join the allowlist: "No, only
+    // proofread editions should be available for publishing." An unfinished
+    // edition is the NORMAL condition of a corpus being built, so it is held
+    // back rather than treated as a forgotten licence — refusing the whole
+    // deploy over it would mean nothing ships until everything is finished.
+    build({ editions: [CLEARED, UNCLEARED], texts: { [CLEARED]: 2, [UNCLEARED]: 2 },
+            unconfirmed: [UNCLEARED] });
+    const r = run();
+    assert.equal(r.code, 0, r.err);
+    assert.match(r.err, /NOT published — not proofread/, 'held back OUT LOUD, never silently');
+    assert.match(r.err, new RegExp(UNCLEARED), 'and by name');
+    assert.ok(!existsSync(path.join(dest(), V, 'text', UNCLEARED)),
+      'and its text never reaches the deployable copy');
+    assert.ok(existsSync(path.join(dest(), V, 'text', CLEARED)),
+      'while the finished edition ships');
+  });
+
+  it('AN UNPROOFREAD EDITION IS NEVER HELD TO A LICENCE IT DOES NOT NEED YET', () => {
+    // The order of the two gates matters. UNCLEARED is absent from the
+    // allowlist AND unproofread; it must be excluded for the second reason
+    // and never raise the first, because a licence question nobody has been
+    // asked yet is not a fault to report.
+    build({ editions: [CLEARED, UNCLEARED], texts: { [CLEARED]: 1, [UNCLEARED]: 1 },
+            unconfirmed: [UNCLEARED] });
+    const r = run();
+    assert.equal(r.code, 0, r.err);
+    assert.ok(!/not cleared for publication/.test(r.err),
+      'no licensing complaint about an edition we are not publishing');
+  });
+
+  it('A PROOFREAD EDITION WITH NO LICENCE STILL STOPS THE DEPLOY BY NAME', () => {
+    // The licence gate is unchanged for anything we actually intend to ship.
+    // This is the case O-56 rebuilt the gate for, and O-81 must not soften it.
+    build({ editions: [CLEARED, UNCLEARED], texts: { [CLEARED]: 1, [UNCLEARED]: 1 } });
+    const r = run();
+    assert.equal(r.code, 1);
+    assert.match(r.err, /REFUSING/);
+    assert.match(r.err, /PROOFREAD edition\(s\) are not cleared/);
+    assert.match(r.err, new RegExp(UNCLEARED));
+  });
+
+  it('A CORPUS WITH NOTHING PROOFREAD REFUSES, rather than publishing an empty reader', () => {
+    build({ editions: [CLEARED], texts: { [CLEARED]: 2 }, unconfirmed: [CLEARED] });
+    const r = run();
+    assert.equal(r.code, 1);
+    assert.match(r.err, /nothing to publish/);
+  });
+
   it('falls back to the ENGINE\'s declared version when none is passed', () => {
     // No third argument: the gate must read BIBLE_VOLUME_VERSION out of
     // src/volume-configs.js. The fixture is built under that same name, so a
@@ -171,7 +226,7 @@ describe('deploy-pd-filter — the rights gate (O-56)', () => {
     rmSync(dest(), { recursive: true, force: true });
     mkdirSync(path.join(src(), engineVersion), { recursive: true });
     writeFileSync(path.join(src(), engineVersion, 'volume.json'),
-      JSON.stringify({ editions: [{ code: CLEARED, hasChart: true }] }));
+      JSON.stringify({ editions: [{ code: CLEARED, hasChart: true, proofread: true }] }));
     const d = path.join(src(), engineVersion, 'text', CLEARED);
     mkdirSync(d, { recursive: true });
     writeFileSync(path.join(d, 'b0.json'), JSON.stringify({ edition: CLEARED, text: { '1:1': 'x' } }));
