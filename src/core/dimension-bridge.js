@@ -394,6 +394,41 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       // a node wears its full native name: too long, and honest about it. A
       // long true name beats a short false one, and the collision it causes
       // is the visible reminder that the data is owed.
+      //
+      // ── FOR WHOEVER MAKES THIS CONDITIONAL, and it is not owed yet ───────
+      // Wilbur's rule, worked out with him on 2026-08-23 and recorded here
+      // rather than left in a message: an edition shows the SHORTEST ATTESTED
+      // THING THAT DISTINGUISHES IT FROM ITS RIVALS — a siglum where a
+      // scripture has rivals, the scripture's own name where it does not.
+      //
+      // THE TEST IS THE LEAVES, NOT ANY LABEL. Two editions are rivals when
+      // they seat the same utterances, and `bookSeatingUtterance` already
+      // answers that, so nothing new need be invented. Division labels are
+      // the near-miss that looks right and is not: a Sinaiticus Tobit would
+      // divide as Τωβίτ rather than Ἡ Παλαιὰ Διαθήκη, so it fails a label
+      // test while being exactly the rival the rule exists for.
+      //
+      // AND IT MUST BE RUN PER ARC. This stratum's items are
+      // `translationsOf(language)` — an edition only ever shares a ring with
+      // editions of its own tongue. Run globally the test gives the WRONG
+      // answer and forces sigla onto a ring they never share. Measured on the
+      // seated corpus, 2026-08-23:
+      //     1200BCheb vs 250BCgrc   different arcs   22,804 shared leaves
+      //     250BCgrc  vs 50grc      SAME arc              0 shared leaves
+      //     1200BCheb vs 50grc      different arcs        0 shared leaves
+      // The Hebrew and the Greek Old Testament are rivals in substance and
+      // are never asked to sit together; the two that DO sit together share
+      // not one leaf. So today every node takes its name — the rule agreeing
+      // with the eye rather than a coincidence.
+      //
+      // NOT BUILT, DELIBERATELY, on Howell's rule of that morning: find the
+      // line that reads it, and if there is none there is nothing to build.
+      // No arc holds two editions of one scripture today. The rows that would
+      // create one are row 4, SKIPPED by Howell (W-119), and row 5, unseated
+      // behind a licence letter not yet sent. When a real rival lands, look
+      // at the two editions before writing the test — arguing from what the
+      // data WILL need rather than from what reads it now is the error both
+      // sessions made once in the hour this rule was worked out.
       const t = meta?.translations?.[key];
       return t?.nativeAbbrev || t?.nativeName || t?.name || key;
     },

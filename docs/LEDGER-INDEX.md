@@ -191,7 +191,7 @@ cannot be followed, WF-6) · **DECLINED**.*
 | W-137 | SUPERSEDED BY W-138 | 2026-08-23 | ROW 2'S SEATING IS BLOCKED ON NAMES — and the number is unknown, because three files each decide it |
 | W-138 | RULED | 2026-08-23 | A TONGUE NAMES ONLY THE BOOKS OF EDITIONS WRITTEN IN THAT TONGUE — and a name enters with its source or not at all |
 | W-139 | RULED | 2026-08-23 | THE LEDGER'S PROSE RETIRES — the index becomes the record |
-| W-140 | OPEN | 2026-08-23 | MAP LABELS THE STRATA RING'S EDITION NODES — cargo half landed (map is in the data, playlist-guarded); the RENDER is engine-side and unbuilt, and one earlier ruling may conflict |
+| W-140 | OPEN | 2026-08-23 | THE STRATA RING'S EDITION NODES — Howell ruled a short NATIVE form, not Map (O-97); οʹ attested for the Seventy and the NT's imprint stripped from its title; still owed: whether the Hebrew and the NT need short forms at all |
 | O-1 | OPEN | 2026-07-23 | Prominence tiers for manufacturers (the ranked starfield) — ruling housed in mmdm/README.md; campaign open |
 | O-2 | DONE | 2026-07-23 | `search_all_label` ("TUTTI") may be obsolete |
 | O-3 | RULED | 2026-07-23 | TRAVEL-COLOUR THEME KEYS — the contract binding whoever declares one; src/main.js at the derivation |
