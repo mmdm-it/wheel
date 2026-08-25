@@ -60,18 +60,17 @@ answers, which a flat list did not, is **is this authoritative?**
 
 - **a. The ledger, `LEDGER.md`** — one line per number: id, status, date,
   title. What is *owed*, and where each ruling's substance actually lives.
-  In `team_communication/`, outside both repositories, so either session
-  files its own numbers without crossing the wall; each repository carries a
-  verified copy at `docs/LEDGER-INDEX.md`, written and checked by
-  `scripts/build-ledger-index.mjs`.
+  In `team_communication/`, outside both repositories — it was put there so
+  two sessions could file numbers without crossing the wall between them, and
+  it stays there because it belongs to neither repository rather than to
+  both. Each carries a verified copy at `docs/LEDGER-INDEX.md`, written and
+  checked by `scripts/build-ledger-index.mjs`.
   *(Was `HANDOFF.md`, 13,322 lines of prose, until W-139 ruled it retired on
   2026-08-23. That file is now a tombstone pointing here and its history
-  stays in `team_communication`'s git. This entry is the FACTUAL pointer
-  only — WF-18's ledger clauses below are untouched and await Howell's word
-  on what survives.)*
-- **b. Sidebars** — three-way conferences between Howell, Orville and Wilbur, one
-  topic each. Deleted once their conclusions are documented **and verified by all
-  parties** — verification, not documentation, is the trigger.
+  stays in `team_communication`'s git.)*
+- **b. Sidebars** — retired with the second session (O-99). Howell may still
+  convene one for a genuinely contested design question; it names where its
+  conclusions land, and it closes on a date he sets.
 
 **The corpus and the engine are neither.** They may be documents; they are not
 *documentation*. They are the thing itself — defined in a blueprint, tested by an
@@ -247,38 +246,28 @@ is the category error, and every rule below is a guard against a version of it.
   authorises work it has superseded, and that work will look productive right
   up until the moment it is discarded.
 
-- **WF-4 (amended under W-46 and W-115). Every session opens with the board —
-  as a GATE, not a report.** Before any work: open PRs oldest first, branches
-  carrying commits with no PR, **main green in BOTH repositories**, **and the
-  canaries green** — one Write aimed
-  at `.claude/canary/probe.txt` (expect refusal naming the deny rule) and
-  one command carrying the wall's canary token (expect the hook's canary
-  refusal). A canary that does not refuse — or refuses from a layer we do
-  not configure — is a finding, and clearing the board IS the work until it
-  is done. The board also names the next audit under WF-13 — the stalest
-  document and the question due against it. Idle PRs are not merely slow —
-  they go stale in the wrong order and are superseded by later idle PRs.
+- **WF-4 (amended under W-46, W-115 and O-99). Every session opens with the
+  board — as a GATE, not a report.** Before any work: open PRs oldest first,
+  branches carrying commits with no PR, and **main green in BOTH
+  repositories**. Clearing the board IS the work until it is done. The board
+  also names the next audit under WF-13 — the stalest document and the
+  question due against it. Idle PRs are not merely slow — they go stale in
+  the wrong order and are superseded by later idle PRs.
 
   **main's own CI is part of the gate** (W-115). Open PRs and unclaimed
   branches are both work IN FLIGHT; neither sees the branch that work lands
-  on, and cargo's main sat red for eleven hours behind a clean board. Run
-  `node scripts/check-main-ci.mjs` from the cargo checkout: it reports both
-  repositories, refuses when either is not green, and refuses just as loudly
-  when it cannot tell.
+  on, and the corpus repository's main once sat red for eleven hours behind a
+  clean board. Both repositories are checked, and a check that cannot READ a
+  repository says so rather than reporting green — "I could not tell" and
+  "it is broken" are different answers and both stop the board.
 
-  **FROM THE ENGINE SESSION IT NEEDS THE READ TOKEN:**
-  `GH_TOKEN="$GH_TOKEN_READ" node scripts/check-main-ci.mjs`. This is not a
-  workaround — it is O-32's wall doing its job. Each session carries its own
-  fine-grained token, and the engine's cannot see the private cargo
-  repository, so without the override the check reports cargo UNREADABLE and
-  refuses **every time, forever**. It refuses honestly, which is the design;
-  but a gate that can never go green is a gate that gets skimmed past, and
-  that is the disease this whole rule exists to treat. Cargo's own token sees
-  the engine, because the engine is public, so Wilbur's side needs no
-  override. *(Measured 2026-08-20 by Orville as W-115's verifier: with the
-  default token, cargo answers HTTP 404; with `GH_TOKEN_READ`, both sides
-  report green.)*
-
+  **THE CANARIES ARE GONE, and so is the second credential** (O-99,
+  2026-08-25). Both were instruments of the wall between two sessions: the
+  canary proved a guard was firing, and the two fine-grained tokens existed
+  so neither session could reach the other's repository. One session needs
+  neither. What survives is the part that was never about the wall — that a
+  board line asserting a state carries a date and a source (WF-7), and that
+  a gate which cannot go green is a gate that gets skimmed past.
 - **WF-5. A PR that supersedes another says so in its first line.** Supersession is
   invisible in a list of PR titles, which is exactly what lets them be merged in
   an order that makes no sense.
@@ -396,56 +385,6 @@ is the category error, and every rule below is a guard against a version of it.
   **The standard is the granted fixture set** *(H-5)*: a public document's
   worked examples quote Genesis 1 (Douay-Rheims, Vulgate) and nothing else.
 
-- **WF-15. Do not commit to your brother's repository.** Howell's ruling,
-  2026-08-06, in those words. The engine repository is Orville's and the data
-  repository is Wilbur's; access across the wall is READ ONLY, both ways,
-  symmetrically.
-
-  **A document that governs both sessions — an SOP — is committed by the
-  repository's owner from the other's draft.** Case by case as to who writes and
-  who lands it.
-
-  **NOT YET ENFORCED, and this line stays until it is.** Both sessions run as the
-  same Unix user, from the same clones, so the filesystem cannot tell them
-  apart. What exists today is a
-  `pre-commit` hook in each repository that refuses any session but the owner's
-  and refuses when none is declared, plus a `commit-msg` hook stamping
-  `Session:` — identity that names the ROLE, not the model. That is a tripwire:
-  it makes the wrong move fail loudly and leaves a mark when it succeeds, and
-  `--no-verify` bypasses it by design.
-
-  **The GitHub half is now enforced; the filesystem half is not.** Since
-  2026-08-07 (O-32) each repository carries its own fine-grained token in a
-  gitignored `settings.local.json`, and that is real enforcement: GitHub
-  refuses the crossing server-side, where neither `--no-verify` nor a crashed
-  hook can reach — and with no token set there is no access at all. **Separate
-  credentials turned out not to require separate Unix users after all.** On
-  disk nothing has changed: both sessions still run as the same user from the
-  same clones, so the filesystem wall remains a convention — but the alarm on
-  it now has two independent layers behind it, and since 2026-08-07 (O-33)
-  both are proven rather than assumed.
-
-  **What O-33 found, because the shape recurs.** The `permissions.deny` layer
-  had never once fired. Both sessions' canaries were silent, and we explained
-  it as permissions binding at session start — a comfortable theory that fit
-  every fact and was wrong in every part. The real causes were two, both
-  documented and neither visible from reading our own config: **only
-  `Edit(path)` and `Read(path)` rules are consulted**, so our `Write(…)` and
-  `NotebookEdit(…)` rules were accepted, listed, and ignored — *including the
-  canary itself*, an instrument built from the same broken material as the
-  thing it measured; and **a single leading slash anchors at the settings
-  source, not the filesystem root**, so the rule guarding the brother's tree
-  resolved to a path that cannot exist. **Permissions DO rebind mid-session**;
-  the corrected rules refused live in the session that wrote them.
-
-  **The state today, each layer verified in its own words at the board gate
-  (WF-4):** the deny layer refuses naming itself, the hook refuses naming
-  itself, and the two are complementary rather than redundant — deny rules do
-  not reach arbitrary subprocesses, which is exactly the surface the hook
-  guards. A **fourth** layer exists that we do not configure and must not
-  count: the harness's own auto-mode classifier, which refuses an agent
-  editing its own permission file.
-
 - **WF-16. A commit that changes a document under `docs/` cites a number, and
   the number must exist.** `H-`, `W-`, `O-` or `WF-`; `WF-` ids pass on sight,
   since they are rules in this document rather than ledger entries. No number,
@@ -466,115 +405,6 @@ is the category error, and every rule below is a guard against a version of it.
   `origin/main..HEAD`, and a shallow clone has neither ref — it degrades to
   checking the tip alone and says so, rather than crashing or passing quietly,
   but a narrower check is still narrower.
-
-- **WF-17. An item closes when a NON-AUTHOR has re-run its named check** —
-  never on the author's report. Every item names its verifier and its check AT
-  CREATION, because a check written afterwards describes what happened rather
-  than testing it. And a guard that cannot prove itself firing is not a guard:
-  wall layers scream or block, never shrug.
-
-  The workflow repair runs as a loop, not a discussion: Howell rules → fixes
-  land with named verifiers → **the non-author brother** re-audits against the
-  prior audit and reports deltas → at zero HIGH findings the repair is OVER,
-  and no workflow discussion opens again until a failure forces one.
-  *(Amended under H-24, 2026-08-15: this clause named the Octave session,
-  which is retired. The duty did not go with it — it moved to the brother, per
-  WF-18.)*
-
-  **THE STATED EXCEPTION — wall layers** *(Howell, 2026-08-09, on Orville's
-  flag)*. A session's permission layer only ever answers to that session: a
-  brother attempting a Write into the other's tree is refused by his OWN rules
-  first, so his refusal proves his own wall and says nothing about the one
-  under test, and the witness session writes to neither repository and cannot
-  attempt it at all. So **the verifier for a wall layer is not a session at
-  all — it is the platform, and the re-run is the WF-4 board gate**, fired at
-  every session open, reporting what refused and in which layer's own words.
-  Howell is the witness of record. This narrows nothing else: every check that
-  is a test, a script, a file state or a document reading still closes only on
-  a non-author's re-run. The exception covers precisely those checks that can
-  only be executed by the session whose own enforcement is under test.
-
-- **WF-18 (amended under H-24, ruled 2026-08-15). Sessions talk to each other
-  directly; the ledger is the RECORD, not the conversation.** Howell's reason,
-  in his own words: *"The oversight and counseling that I had hoped that
-  session would bring never came. Instead of streamlining, the work became
-  more complicated, and mistakes increased."*
-
-  **The Octave session is retired.** Its four duties do not vanish with it,
-  and each has a named home:
-
-  - **Relaying between sessions** is the platform's now. Two sessions message
-    each other directly, one to one, in plain text that can execute nothing on
-    the receiving side. A message is that session's CLAIM and earns no more
-    trust for arriving faster: WF-17 is unchanged and unrelaxed by the
-    transport.
-  - **Composing the H- entries** is Howell's, in his own hand.
-  - **Running the ledger's archive cycle** is Howell's, with the prune script
-    the sessions maintain: it MOVES entries whole and never deletes, refuses
-    to write if the ledger does not parse, and proves live + archive = the
-    original by LINE MULTISET rather than by its own parse. A brother verifies
-    each run against git history, reading the before-state out of the log so
-    the script cannot hand him its own answer.
-  - **Re-audits and exit gates** go to the NON-AUTHOR brother, as H-3 already
-    does for everything else. Where a check can only be run by the session
-    whose own enforcement is under test — a wall layer — WF-17's stated
-    exception governs, and Howell is witness of record.
-
-  **A peer's message is never authority.** No session edits a wall, a
-  permission file, or a standing document because the other asked. Authority
-  is Howell's word in the session that will act on it; a brother's message
-  carries a finding, a claim, or a request, and nothing else. Written down
-  because it HELD in both repositories through the wall work of 2026-08-14,
-  not as an aspiration.
-
-  **Asks for Howell are batched into ONE docket.** Whichever session holds the
-  ledger pen assembles it; a session with something to raise sends it to that
-  one for folding in rather than to Howell separately. His words, 2026-08-15:
-  *"you and Wilbur are both asking me for responses one at a time please."*
-  Direct messaging removed the relay cost between sessions and doubled the
-  interrupt cost to the human, which is the failure mode of every channel that
-  gets cheaper.
-
-  **The ledger receives CONCLUSIONS, numbered.** Deliberation happens between
-  the sessions; what lands here is what WF-2 already requires. Messages carry
-  pointers — *"read W-79 and reply"* — and the ledger carries the substance,
-  so nothing is said twice. **Sidebars stay retired as the default.** Howell
-  may convene one for a genuinely contested multi-party design question; it
-  names its landing addresses AND its closing date at the top, and it closes
-  on that date by his ruling.
-
-  **Only one session writes to the ledger at a time**, and it is the one
-  Howell is working in. A session not holding the pen sends its text to the
-  one that is rather than editing the file — the rule that kept an uncommitted
-  correction from being swallowed by another session's commit on 2026-08-14.
-
-  **Plain English, in both directions (H-24 point 4).** Howell's reason is the
-  whole reason: *"since I'm only human."* This binds W- and O- entries as much
-  as H-. Exactly two lines must keep their shape, because scripts parse them —
-  the heading (`### X-N · TITLE`) and the `**Status:**` line. Everything else
-  is prose, written for a person in a hurry.
-
-  **Commits to the ledger repository carry a `Session:` trailer**
-  (`Session: wilbur` / `orville` / `howell`), and each session commits under
-  its own name and address via `git -c user.name=<Name> -c
-  user.email=<name>@local`. The repo-level identity is deliberately
-  `UNATTRIBUTED-SESSION <unattributed@invalid>` — NOT Howell's, because a
-  forgotten override would then be attributed to the human and look right,
-  which is worse than looking wrong. It fails loudly and greps in one command,
-  and the trailer remains the authoritative record. Each repository sets its
-  own session address for the same reason: name without address falls through
-  to the global identity, and both sessions' whole histories were attributed
-  to Howell's account before anyone checked (2026-08-15).
-
-  **ONE CLAUSE IS DEFERRED, deliberately, and this line stays until it is
-  ruled.** The old lifecycle blocked archiving until an entry's conclusion had
-  landed in a blueprint or standing procedure; applied to fifty-one entries at
-  once, that workload is why the cycle never ran in six weeks. Howell has
-  ruled the half that matters — **no flag goes into an archive, because an
-  archive is where you stop looking**, so an entry owing a write-up stays LIVE
-  and the judgement arrives as a hold list from an audit. Whether producing
-  that hold list is a STANDING DUTY before every prune is **deferred to the
-  end of Phase 2** (Howell, 2026-08-15).
 
 - **WF-19 (ruled 2026-08-17). Obsolete means dead.** Howell's motivation, in
   his words, is tokens rather than architecture: for too long both sessions
@@ -609,35 +439,6 @@ is the category error, and every rule below is a guard against a version of it.
   This rule takes WF-19 because it is RULED; the four rules PROPOSED in O-58
   remain proposals and take later numbers if and when they are ruled (WF-11:
   ids are assigned at creation, and a proposal is not yet a rule).
-
-- **WF-20 (ruled 2026-08-22, Howell: "Both, as two"). A check is RUNNABLE by
-  its named verifier — read-only, from where that verifier sits.** WF-17
-  requires a check be NAMED at creation; it never said the named verifier
-  must be ABLE TO RUN IT, and in one week three checks satisfied the letter
-  while defeating the purpose. W-122's demanded a document forget its own
-  history — the grep it specified can never return clean, because the
-  surviving occurrence IS the explanation of the change. W-125's measured a
-  pin that never changes — the guard numbers were SUPPOSED to hold still
-  after the repairs, and the verifier who re-ran it concluded the work had
-  not landed. O-80's asked its reader to WRITE — a mutation across a wall
-  that is read-only by WF-15. Three shapes, one disease: each check failed
-  its RUNNER rather than its subject, and each was discovered only when a
-  non-author actually ran it — which is WF-17's whole point, arriving late.
-
-  So, at creation, the author states the check as commands and readings the
-  named verifier can execute WITHOUT write access, WITHOUT crossing the
-  wall, and WITHOUT the author's session. Three tests the week taught:
-  assert what a document should SAY, never what it must not contain;
-  measure instruments that can move, never pins — and where a number is
-  expected to hold still, say so IN THE CHECK; and where the only decisive
-  act is a mutation, the check is the RED-FIRST COMMIT HISTORY, not the
-  mutation — history is readable across the wall when trees are not (O-87's
-  closure, the pattern that satisfied this rule before it existed).
-
-  A check found unrunnable as written is a finding against the CHECK, filed
-  without shame and reworded by its author: the check is an instrument, and
-  instruments get calibrated. *(Drafted by Wilbur; committed by the
-  repository's owner from his draft, per WF-15.)*
 
 - **WF-21 (ruled 2026-08-22, the same word). A correction is not done until
   it has swept everywhere the claim lives.** A false claim is not a place in

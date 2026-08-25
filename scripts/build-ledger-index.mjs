@@ -6,7 +6,8 @@
 //
 // ── WHY THIS EXISTS AT ALL ───────────────────────────────────────────────────
 // The ledger lives OUTSIDE both repositories, in team_communication, so that
-// either session can file its own numbers without crossing the wall (WF-15).
+// it belongs to neither repository rather than to both (O-99 retired the wall
+// between the two sessions; the file stayed where it was).
 // Git cannot see it from in here, and WF-16's commit gate must check that a
 // CITED NUMBER EXISTS rather than merely looks like one. So each repository
 // carries a copy, and the gate reads the copy.
@@ -169,7 +170,7 @@ if (!check && !calledFromInside) {
   console.error(`build-ledger-index: REFUSING to write ${COPY}`);
   console.error(`  This script writes the repository it lives in (${root}),`);
   console.error(`  and it was run from ${process.cwd()}.`);
-  console.error('  Across the wall, access is READ ONLY (WF-15): use --check, or run it from inside its own repository.');
+  console.error('  Use --check, or run it from inside the repository it writes.');
   process.exit(1);
 }
 

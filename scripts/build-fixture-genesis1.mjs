@@ -10,7 +10,7 @@
 // Run:  node scripts/build-fixture-genesis1.mjs
 //
 // It reads the corpus READ-ONLY across the wall and writes only into this
-// repository's own test/fixtures tree (WF-15).
+// repository's own test/fixtures tree.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
