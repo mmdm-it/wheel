@@ -127,7 +127,7 @@ describe('the ledger converter copies, and verifies (W-139)', () => {
     // The ledger lives OUTSIDE both repositories, so CI's checkout cannot see
     // it — which is the whole reason each repository carries a copy. A cell
     // that asked CI to read the ledger would be a check its runner cannot
-    // run (WF-20), and the first draft of this cell was exactly that: green
+    // run, and the first draft of this cell was exactly that: green
     // here, red on the runner.
     //
     // So point the script at the COMMITTED COPY as its own source. Source and

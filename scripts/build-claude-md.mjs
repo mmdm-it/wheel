@@ -45,10 +45,19 @@ export const END = '<!-- WF-RULES:END -->';
 export function render(rules) {
   return `# CLAUDE.md — wheel (the engine)
 
-**This is the ENGINE repository. It belongs to the Orville session** (WF-15:
-do not commit to your brother's repository; commits here require
-\`WHEEL_SESSION=orville\`). The data repository is Wilbur's, \`data/\` is a
-read-only window into it, and access across the wall is READ ONLY, both ways.
+**This is the ENGINE repository — the app.** The corpus lives in the data
+repository beside it, and \`data/\` is a window into that tree. The two are kept
+apart because one is public and the other is not: the engine ships under an
+open licence, the corpus does not. THAT boundary is enforced by what gets
+committed where, and it is the only wall left.
+
+**There used to be a second wall, between two SESSIONS** — Orville held the
+engine, Wilbur held the corpus, and neither could write to the other's tree.
+Howell ended that on 2026-08-25 (O-99), after the project had spent months at
+roughly 95% housekeeping: one session now works in both repositories. The
+guard hook, the acceptance matrix, the canaries and the second credential are
+gone. If you find an instruction anywhere telling you not to commit to "your
+brother's repository", it is a leftover and it is wrong.
 
 **Authority: \`WORKFLOW.md\` in this repository is the standing operating
 procedure. This file is a generated projection of its rules** — the copy that
@@ -57,14 +66,19 @@ right and this file needs regenerating:
 \`node scripts/build-claude-md.mjs\`. The suite fails on drift.
 
 **Open every session with the board (WF-4):** open PRs oldest first, branches
-carrying commits with no PR, in BOTH repositories, and the canaries green —
-and if anything is open, clearing it IS the work. The ledger lives at
+carrying commits with no PR, and main green — in BOTH repositories. If
+anything is open, clearing it IS the work. The ledger lives at
 \`/media/howell/dev_workspace/team_communication/LEDGER.md\` — one line per
-number — outside both repositories; each repository carries a verified copy
-at \`docs/LEDGER-INDEX.md\` (refresh it with
+number — outside both repositories; each carries a verified copy at
+\`docs/LEDGER-INDEX.md\` (refresh it with
 \`node scripts/build-ledger-index.mjs\` after any ledger change; \`--check\`
-proves the copy has not drifted). *(It was \`HANDOFF.md\` until W-139 retired
-the prose on 2026-08-23; that file is now a tombstone.)*
+proves the copy has not drifted).
+
+**Say the thing, not the number.** Howell asked for this on 2026-08-24: the
+\`W-\`, \`O-\` and \`WF-\` ids mean nothing to him, and citing one at him makes him
+open a file to follow his own project. They belong in commits and code
+comments, where they are for whoever runs \`git blame\` in a year. In
+conversation with him, write the sentence out.
 
 ## The rules
 

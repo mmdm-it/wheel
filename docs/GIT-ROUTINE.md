@@ -1,61 +1,44 @@
-# The git routine — standard for both sessions
+# The git routine
 
-*Last audited: 2026-08-20 by Orville — Q3 (does it assert a state that is now
-false?). One finding, struck below: the wall paragraph claimed the crossing was
-"refused locally", which is what W-117 rules it is not. Also observed and NOT
-changed, because it is not a Q3 finding and not this sitting's to rule: step 8
-tells a session to assume a merge happened, while WF-7 forbids asserting a
-state without a source. Both are right and they govern different acts —
-proceeding, and reporting. Orville conflated them on 2026-08-20, wrote "the
-amendment is landed" about an open PR, and was corrected by Wilbur. If that
-recurs it wants a ruling, not an audit.*
+*Last audited: 2026-08-25 by Orville — Q4 (does it use vocabulary a later
+ruling abolished?). One finding, applied: this document was written for two
+sessions and half its front matter was corrections about the wall between
+them. Howell retired the second session on 2026-08-25 (O-99), so the wall
+paragraphs are struck rather than re-corrected — they described a mechanism
+that no longer exists. The history stays in this file's git log, which is
+where a retired mechanism belongs. The routine itself is unchanged: it was
+always good git practice that happened to be written in coordination
+language.*
 
 **Ruled by Howell, 2026-08-02:** *"I like the way you handle commits and
-merges... Let's make your routine standard across both sessions."* Written
-by Orville; binding on Orville and Wilbur alike, each in his own repository.
+merges... Let's make your routine standard across both sessions."* It now
+runs in one session across both repositories, which changes nothing about
+the steps.
 
-> **CORRECTED 2026-08-09 (WF-15; night audit §8).** This line read *"in this
-> repo and in cargo"* — written before the wall existed, and it instructs a
-> session to do the one thing WF-15 forbids. **Neither of us commits to the
-> other's repository.** The engine is Orville's, the data repository is
-> Wilbur's, and access across the wall is READ ONLY in both directions.
+> **THE WALL BETWEEN THE SESSIONS IS GONE (O-99, 2026-08-25).** This section
+> carried three layers of correction about who could commit where, when the
+> engine was Orville's and the data repository was Wilbur's and access
+> between them was read-only. None of that binds any more. **One session
+> commits to both repositories.**
 >
-> **AMENDED 2026-08-20 (W-117; the Q3 audit above).** This read *"enforced
-> server-side since O-32 by per-repository tokens, and refused locally by the
-> deny layer and the guard hook"* — and the second half of that is struck,
-> because it claims something the local layers cannot do. They refuse
-> SPELLINGS, not actions, so the same crossing is refused written one way and
-> allowed written another. The sentence named two mechanisms and was true of
-> one of them.
->
-> **What is actually true, in four rungs rather than one clause:**
-> **Server-side** the crossing is genuinely PREVENTED — GitHub refuses it,
-> where neither `--no-verify` nor a crashed hook can reach (O-32). **The file
-> tools** refuse by resolving the path, so a Write into the other tree is
-> stopped every time, within the scope of those tools. **A shell command** is
-> judged on its spelling, so it stops a habit and not a determination.
-> **A subprocess** is not constrained at all once it is running, which is
-> H-9's whole reason for existing.
->
-> So the local wall ANNOUNCES; it does not prevent. WF-15 has said as much
-> since 2026-08-07 — *"the filesystem wall remains a convention"* — and both
-> sessions spent 2026-08-20 acting as though it were solid, which is what this
-> correction is for. Howell ruled the same day: keep the alarm, fix the words.
-> The routine below is the same
-> routine for both of us; it is simply run twice, once in each repository, by
-> its owner. Where a document governs BOTH sessions, its owner commits it from
-> the other's draft.
+> What survives, because it was never about the sessions: the two
+> repositories are still separate, one public and one not, and that boundary
+> is enforced by what gets committed where. And the sharpest thing the old
+> correction taught, kept because it generalises — a local guard judges the
+> SPELLING of a command, not the act, so it stops a habit and never a
+> determination. Anything that must actually be prevented is prevented
+> server-side or not at all.
 
-The routine exists because we are three: two sessions that cannot see each
-other's benches, and Howell, who owns the tree. Every rule below is a
-consequence of that shape. None of it is git advice; it is coordination
+The routine exists because two repositories move together and Howell owns the
+tree. None of it is git advice; it is coordination doctrine that happens to
+run through git.
 doctrine that happens to run through git.
 
 ## The shape of the routine
 
 1. **Sync before touching anything.** `git fetch --all --prune`, read what
    moved, and read the ledger before designing. Work begun on a stale tip is
-   work that collides with the other session.
+   work that collides with what has already landed.
 2. **Never work on main.** Branch for every task, named for the work
    (`w21-seating-chart`, `the-proofread-gate`), cut from the tip the work
    actually builds on — see the stranded-work rule below.
@@ -88,30 +71,38 @@ doctrine that happens to run through git.
 
 ## The rules with teeth
 
-- **Never `git branch -D`. Only `-d`.** When `-d` refuses, that refusal is
-  information about the other session's unmerged work — read it, never
-  override it. This rule was paid for: twelve of Wilbur's commits survived
-  a `-D` only because the object store had not been pruned (see the W-29
-  recovery note).
-- **The stranded-work rule.** If another session's commits sit unmerged on
-  a local branch and your work builds on them, branch FROM their tip so one
-  PR carries both to main. Their commits ride your PR unaltered and are
-  named in its body. Never leave a sibling's work stranded; never rebase,
-  squash, amend, or otherwise rewrite a commit you did not author.
+- **Never `git branch -D`. Only `-d`.** When `-d` refuses, the refusal is
+  telling you something is unmerged that you have forgotten — read it, never
+  override it. This rule was paid for: twelve commits survived a `-D` only
+  because the object store had not been pruned yet (see the W-29 recovery
+  note). One session makes this MORE dangerous, not less: there is no longer
+  a second party who would notice their work missing.
+- **The stranded-work rule.** If commits sit unmerged on a local branch and
+  your work builds on them, branch FROM that tip so one PR carries both to
+  main. They ride your PR unaltered and are named in its body. Never leave
+  earlier work stranded; never rebase, squash, amend, or otherwise rewrite a
+  commit you did not author — which now includes every commit the retired
+  session left behind.
 - **A disagreeing number is evidence.** A test count, a verse total, a file
-  count that does not match the other session's report means one of you
-  knows something — stop and find out which, before committing anything on
-  top of the discrepancy.
+  count that does not match what a document or an earlier report says means
+  one of them knows something you do not — stop and find out which, before
+  committing anything on top of the discrepancy.
 - **No commits outside the task's mandate.** A standing "proceed" on a task
   covers branch commits for that task and nothing else. When the tree holds
-  changes you did not make, that is the other session's bench — hands off,
-  and say so in the ledger if it blocks you.
+  changes you did not make, they are Howell's — hands off, and say so if
+  they block you. The untracked file in the working tree is not yours to
+  commit, move, or tidy.
 
 ## Why this routine and not another
 
-The PR is where the two-session model becomes safe. Each session's work
-arrives as a reviewable, revertible unit with its reasoning attached;
-Howell rules on the merge with the whole story in front of him, the same
-way he rules at the bench; and main only ever moves by his hand. The
-alternative — sessions committing to main, or merging each other — has a
-failure mode we have already met once, and once was enough.
+The PR is where an agent working unattended becomes safe. Work arrives as a
+reviewable, revertible unit with its reasoning attached; Howell rules on the
+merge with the whole story in front of him, the same way he rules at the
+bench; and main only ever moves by his hand.
+
+**This matters MORE now, not less.** The old argument for it was that two
+sessions might collide. That reason is gone and the better one remains: the
+PR is the only place a human sees what an agent decided before it becomes
+the project's history. One session working across both repositories with no
+peer looking over its shoulder is exactly the arrangement in which nothing
+should reach main unread.

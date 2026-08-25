@@ -167,7 +167,7 @@ describe('WF-14 — published documents carry no corpus content', () => {
     assert.ok(!check('the magnifier reads Vulgata Clementina, כתב יד\nלנינגרד, and more'));
   });
 
-  // WF-17: a guard that cannot prove itself firing is not a guard. This is the
+  // A guard that cannot prove itself firing is not a guard. This is the
   // cell that would have caught the flat walk — it failed silently for weeks by
   // scanning nothing in the two subdirectories that matter most.
   it('the walk actually reaches the subdirectories, prior-art/ included', () => {
