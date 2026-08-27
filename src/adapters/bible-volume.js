@@ -24,7 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
-import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, addressOrder, manuscriptsIn } from '../core/margin-source.js';
+import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, marksAt, addressOrder, manuscriptsIn } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
@@ -298,8 +298,12 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       // the first build it was not — see addressOrder's own note for what that
       // cost and why it was invisible.
       const order = addressOrder(chart);
+      // THE MARKS COME FIRST, BECAUSE THEY DO NOT NEED A BLOCK. A verse may
+      // carry a mark in the margin and no apparatus at all; returning null on
+      // a missing block would have hidden every one of those.
+      const marks = marksAt(margin, address);
       const block = blockAt(margin, address, order);
-      if (!block) return null;
+      if (!block) return marks.length ? { marks, entries: [], manuscripts: [], source: margin.source } : null;
       // The verse's OWN notes, not the whole page's. A block is a page of
       // apparatus and W-166 addressed each of its entries; a reader at one
       // verse wants that verse's, the way a reader looking down at the foot of
@@ -308,7 +312,7 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       const legend = await loadMarginLegend({ base, version, edition, fetchJson });
       const cited = entries.map(e => e.text).join(' ');
       return {
-        block, entries, source: margin.source,
+        block, entries, marks, source: margin.source,
         manuscripts: manuscriptsIn(cited, legend, unitId),
       };
     },
@@ -323,8 +327,12 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       const margin = marginCached(edition, unitId);
       if (!chart || !margin) return null;
       const order = addressOrder(chart);
+      // THE MARKS COME FIRST, BECAUSE THEY DO NOT NEED A BLOCK. A verse may
+      // carry a mark in the margin and no apparatus at all; returning null on
+      // a missing block would have hidden every one of those.
+      const marks = marksAt(margin, address);
       const block = blockAt(margin, address, order);
-      if (!block) return null;
+      if (!block) return marks.length ? { marks, entries: [], manuscripts: [], source: margin.source } : null;
       const entries = entriesAt(block, address, order);
       return { entries, manuscripts: manuscriptsIn(entries.map(e => e.text).join(' '), legendCached(), unitId) };
     },

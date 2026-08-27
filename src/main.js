@@ -1609,6 +1609,7 @@ detailRegistry.register(new EphemerisDetailPlugin());
 const detailPanel = document.getElementById('detail-panel');
 const detailContent = document.getElementById('detail-content');
 const marginPanel = document.getElementById('margin-panel');
+const marginMarks = document.getElementById('margin-marks');
 
 // Toggle detail panel visibility in sync with the Detail Sector animation.
 // The panel fades in after the blue circle has finished expanding,
@@ -1623,6 +1624,9 @@ window.addEventListener('detail-sector-change', (e) => {
   // own life — a note belongs to a verse, and there is no verse above a leaf.
   if (marginPanel) {
     marginPanel.classList.toggle('margin-panel--visible', Boolean(visible));
+  }
+  if (marginMarks) {
+    marginMarks.classList.toggle('margin-marks--visible', Boolean(visible));
   }
   // The dimension button follows the sill: present at a leaf, gone over a
   // child pyramid (which also recedes any open stack back to the primary).
@@ -1740,6 +1744,7 @@ async function renderMargin(selected, translation, seq, part = 0) {
   const clear = () => {
     if (seq !== marginRenderSeq) return;
     while (marginPanel.firstChild) marginPanel.removeChild(marginPanel.firstChild);
+    if (marginMarks) marginMarks.textContent = '';
   };
   const bookId = selected?.meta?.externalFile;
   const address = selected?.meta?.verseKey;
@@ -1761,6 +1766,10 @@ async function renderMargin(selected, translation, seq, part = 0) {
   if (!hadIt && found?.entries?.length) versePartsCache.clear();
   if (seq !== marginRenderSeq) return;   // a newer verse superseded this one
   clear();
+  // THE MARKS DO NOT DEPEND ON THERE BEING A NOTE. A verse may carry a
+  // siglum in the margin and no apparatus at all — Isaiah 3:9 is one — so
+  // these are painted before the early return, not after it.
+  if (marginMarks && found?.marks?.length) marginMarks.textContent = found.marks.join('  ');
   if (!found?.entries?.length) return;
   const vpm = measureViewport();
   const node = renderMarginNote(found.entries, {

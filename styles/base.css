@@ -1034,3 +1034,35 @@ svg :focus-visible {
   white-space: nowrap;
   overflow: hidden;
 }
+
+/* THE MARKS BESIDE THE VERSE (W-176, Howell 2026-08-27: "put them in the
+   extreme upper right, near the right end of the NOT PROOFREAD banner").
+   They ride the top band because that is where the reader's POSITION is
+   stated, and what these say is which manuscripts stand at the position.
+
+   The band has two occupants today and will have one: the proofread mark
+   while an uncertified edition is showing, and the copyright notice, which
+   Howell has said is going away. So the ink adapts rather than assuming
+   either — white over the mark's red, dark over the bare ground — and the
+   marks sit above both. */
+.margin-marks {
+  position: fixed;
+  top: 0;
+  right: calc(10px * var(--iframe-scale, 1));
+  z-index: 401;
+  padding: calc(6px * var(--iframe-scale, 1)) calc(4px * var(--iframe-scale, 1));
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: calc(13px * var(--iframe-scale, 1));
+  line-height: calc(17px * var(--iframe-scale, 1));
+  letter-spacing: 0.06em;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.82));
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+}
+
+.margin-marks.margin-marks--visible { opacity: 1; }
+
+/* Over the proofread mark's red band, the same ink would vanish. */
+:root.incomplete-mark-showing .margin-marks { color: rgba(255, 255, 255, 0.92); }

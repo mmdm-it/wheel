@@ -54,7 +54,7 @@ export async function loadMargin({ base, version, edition, unitId, fetchJson, id
     // vocabulary moves to the adapter that owns it.
     const declared = typeof identityOf === 'function' ? identityOf(file) : undefined;
     if (file && declared === unitId && Array.isArray(file.margin)) {
-      value = { blocks: file.margin, source: file.source || '' };
+      value = { blocks: file.margin, source: file.source || '', marks: file.marks || {} };
     }
   } catch {
     value = null;   // no margin is a state, not a failure
@@ -202,4 +202,18 @@ export function manuscriptsIn(text, legend, unitId) {
     out.push({ siglum: c, name: named[c] });
   }
   return out;
+}
+
+/** The marks Swete set in the margin BESIDE this address, or an empty list.
+ *
+ *  These are not apparatus. They are the editor pointing at the verse in front
+ *  of him — which manuscripts carry it, or that one of them begins a section
+ *  here — and they were held back from the margin for a year's worth of good
+ *  reason that turned out to answer the wrong question: the scan lost which
+ *  WORD a mark stood against, and a reader needs the VERSE, which it kept.
+ */
+export function marksAt(margin, address) {
+  if (!margin?.marks || !address) return [];
+  const at = margin.marks[String(address)];
+  return Array.isArray(at) ? at : [];
 }
