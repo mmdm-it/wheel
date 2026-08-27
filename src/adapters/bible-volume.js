@@ -24,7 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
-import { loadMargin, blockAt } from '../core/margin-source.js';
+import { loadMargin, blockAt, addressOrder } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
@@ -294,7 +294,10 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
         identityOf: file => file?.book,
       });
       if (!margin) return null;
-      const order = (chart.seats || []).map(seat => String(seat.label));
+      // THE ORDER MUST BE IN THE SAME ADDRESS SPACE THE MARGIN USES, and on
+      // the first build it was not — see addressOrder's own note for what that
+      // cost and why it was invisible.
+      const order = addressOrder(chart);
       const block = blockAt(margin, address, order);
       return block ? { block, source: margin.source } : null;
     },

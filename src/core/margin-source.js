@@ -89,3 +89,29 @@ export function blockAt(margin, address, order) {
 }
 
 export function clearMarginCache() { cache.clear(); }
+
+/**
+ * The addresses a chart seats, in its own order, spelled the way a reader's
+ * position is spelled: the container's label, a colon, the seat's.
+ *
+ * THIS EXISTS BECAUSE ITS ABSENCE FAILED SILENTLY. The first build handed
+ * `blockAt` the chart's raw seat labels, which are FLAT ordinals within the
+ * unit — "1", "2", "3" … 1172 — while a margin block is addressed
+ * "container:seat". Every lookup missed, every lookup correctly returned null,
+ * and null is the ordinary answer for a unit with no apparatus. Nothing was
+ * wrong on any screen and nothing was in the log: the defect wore the exact
+ * face of the normal case, which is the only kind that survives a demo.
+ *
+ * `groups` are the runs of consecutive seats sharing one container label.
+ */
+export function addressOrder(chart) {
+  const seats = chart?.seats || [];
+  const order = [];
+  for (const group of chart?.groups || []) {
+    for (let i = group.from; i <= group.to; i += 1) {
+      const seat = seats[i - 1];
+      if (seat) order.push(`${group.label}:${seat.label}`);
+    }
+  }
+  return order;
+}
