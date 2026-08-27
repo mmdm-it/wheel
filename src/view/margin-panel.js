@@ -156,11 +156,17 @@ export function renderMarginNote(entries, {
     line.style.lineHeight = `${fpitch.toFixed(1)}px`;
     // THE NAME, NOT THE CONCORDANCE. Swete prints "Codex Alexandrinus (= III,
     // Holmes)" — the Holmes-Parsons number is a scholar's cross-reference to
-    // another edition's numbering, and it is clutter to a reader who wants to
-    // know whose reading they are looking at. The parenthesis is dropped HERE,
-    // at the glass, and never from the data: the legend keeps Swete's line
-    // whole because that is what his page says.
-    line.textContent = `${m.siglum} · ${String(m.name).replace(/\s*\(=.*$/, '')}`;
+    // another edition's numbering, and clutter to a reader who wants to know
+    // whose reading they are looking at. Dropped HERE, at the glass, and never
+    // from the data: the legend keeps Swete's line whole because that is what
+    // his page says.
+    //
+    // ANY TRAILING PARENTHESIS, not only one opening with "=". The first cut
+    // matched "(= III, Holmes)" and Howell's screenshot caught what it missed:
+    // the Cotton Genesis's line reads "(I, Holmes)" with no equals sign at
+    // all, so that one manuscript went on wearing its concordance number while
+    // every other name was clean.
+    line.textContent = `${m.siglum} · ${String(m.name).replace(/\s*\([^)]*\)\s*$/, '')}`;
     container.appendChild(line);
   });
   return container;

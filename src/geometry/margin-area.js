@@ -33,8 +33,24 @@ export const MARGIN_SPEC = {
    *  longer is (2026-08-27), which gives the margin a row back. */
   LABEL_BASELINE: 0.93,
   LABEL_ASCENDER: 0.06,
-  /** A row narrower than this is not worth setting type on. */
-  MIN_WIDTH_RATIO: 0.28,
+  /** How narrow a row may be before it is not worth setting type on — and so,
+   *  in effect, HOW HIGH THE MARGIN STARTS, because the lens closes as it
+   *  rises and this is what decides where to stop climbing.
+   *
+   *  LOWERED FROM 0.28 ON 2026-08-27 (Howell, marking three empty rows above
+   *  the first on a screenshot: "let's see if we can add two or three rows of
+   *  text above the current first row"). It buys three, at 147, 176 and 208
+   *  pixels against the old top row's 242 — nine, eleven and thirteen
+   *  characters at the ruled type size. Short lines, but the apparatus is made
+   *  of short tokens and they break tolerably.
+   *
+   *  MEASURED, because the point of it is a number: verses whose notes eclipse
+   *  fall from 29% to 19%. That is the same gain as dropping the type from 5%
+   *  to 4% and it costs no legibility — Howell had already said he was happy
+   *  with the size. A fourth row is available and buys two more points at 120
+   *  pixels, about seven characters, which is where the lines start to break
+   *  badly. Three is where he drew it and three is where this stops. */
+  MIN_WIDTH_RATIO: 0.16,
   /** Note type size, as a fraction of the short side (O-91's 5%). */
   FONT_RATIO: 0.05,
   /** Line height, as a multiple of the font size. */
