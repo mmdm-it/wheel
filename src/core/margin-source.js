@@ -88,6 +88,33 @@ export function blockAt(margin, address, order) {
   return null;
 }
 
+/**
+ * The notes standing against one address, in the order the page sets them.
+ *
+ * A block is one printed page's apparatus; W-166 broke it into entries, each
+ * addressed to the verse it concerns, and some to a RUN of verses ("4—5 …" is
+ * one note about two). So this collects every entry whose address covers the
+ * one asked for.
+ *
+ * THE BLOCK'S `lead` IS NOT AN ENTRY and is deliberately not returned here. It
+ * is the fragment standing before the page's first address — usually a note on
+ * the unit's title, sometimes a sentence carrying over from the page before —
+ * and it belongs to no verse. Attaching it to one would be filing it, which is
+ * the thing this whole design refuses to do on a guess.
+ */
+export function entriesAt(block, address, order) {
+  if (!block?.entries?.length || !address || !order?.length) return [];
+  const at = order.indexOf(String(address));
+  if (at < 0) return [];
+  return block.entries.filter(e => {
+    const from = order.indexOf(e.at);
+    if (from < 0) return false;
+    if (e.to === undefined) return from === at;
+    const to = order.indexOf(e.to);
+    return to >= 0 && at >= from && at <= to;
+  });
+}
+
 export function clearMarginCache() { cache.clear(); }
 
 /**

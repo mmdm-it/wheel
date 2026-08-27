@@ -15,9 +15,23 @@
 //     not do.
 import { computeMarginArea } from '../geometry/margin-area.js';
 
-export function renderMarginNote(block, { width, height, create, area = null } = {}) {
+/**
+ * Render the notes standing against ONE verse.
+ *
+ * W-166 broke each page of apparatus into entries addressed to the verses they
+ * concern, so what arrives here is that verse's own notes — a median of 53
+ * characters where the whole page ran to 514. That is why the 5% tier survives
+ * after all: 82% of noted verses now fit whole, and 99% would at 3%.
+ *
+ * Where a verse carries more than one note they are joined with Swete's own
+ * separator, the upright bar he uses between readings on a single verse.
+ */
+export function renderMarginNote(entries, { width, height, create, area = null } = {}) {
   const make = create || (typeof document !== 'undefined' ? document.createElement.bind(document) : null);
-  if (!make || !block?.text) return null;
+  const list = Array.isArray(entries) ? entries : (entries ? [entries] : []);
+  const body = list.map(e => (typeof e === 'string' ? e : e?.text) || '').filter(Boolean).join(' | ');
+  const block = { text: body };
+  if (!make || !body) return null;
   const a = area || computeMarginArea(width, height);
   if (!a.lineTable.length) return null;
 

@@ -1745,9 +1745,9 @@ async function renderMargin(selected, translation, seq) {
   }
   if (seq !== marginRenderSeq) return;   // a newer verse superseded this one
   clear();
-  if (!found?.block) return;
+  if (!found?.entries?.length) return;
   const vpm = measureViewport();
-  const node = renderMarginNote(found.block, {
+  const node = renderMarginNote(found.entries, {
     width: vpm.width,
     height: vpm.height,
     create: tag => document.createElement(tag),

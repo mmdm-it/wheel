@@ -16,7 +16,7 @@
 // (WF-14), and none is needed — the shapes are what is under test.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { addressOrder, blockAt } from '../src/core/margin-source.js';
+import { addressOrder, blockAt, entriesAt } from '../src/core/margin-source.js';
 
 const chart = {
   seats: [
@@ -76,5 +76,47 @@ describe('margin range lookup', () => {
     assert.equal(blockAt(margin, '9:9', order), null);
     assert.equal(blockAt(margin, '1:1', []), null);
     assert.equal(blockAt(null, '1:1', order), null);
+  });
+});
+
+describe('the notes standing against one address (W-166)', () => {
+  const order = addressOrder(chart);
+  const block = {
+    from: '1:1', to: '2:2',
+    lead: 'a fragment belonging to no verse',
+    entries: [
+      { at: '1:1', text: 'first' },
+      { at: '1:2', to: '1:3', text: 'a note about two verses' },
+      { at: '1:3', text: 'and one about the second alone' },
+      { at: '2:2', text: 'last' },
+    ],
+  };
+
+  it('returns a verse its own notes', () => {
+    assert.deepEqual(entriesAt(block, '1:1', order).map(e => e.text), ['first']);
+    assert.deepEqual(entriesAt(block, '2:2', order).map(e => e.text), ['last']);
+  });
+
+  it('returns a RANGE note at every verse it covers', () => {
+    // "4—5 …" is one note about two verses, and a reader on either of them
+    // should meet it. 54 entries corpus-wide are addressed this way.
+    assert.deepEqual(entriesAt(block, '1:2', order).map(e => e.text), ['a note about two verses']);
+    assert.deepEqual(entriesAt(block, '1:3', order).map(e => e.text),
+      ['a note about two verses', 'and one about the second alone']);
+  });
+
+  it('gives a verse with no note an empty list, not the whole page', () => {
+    assert.deepEqual(entriesAt(block, '2:1', order), []);
+    assert.deepEqual(entriesAt(block, '10:1', order), []);
+  });
+
+  it('never hands back the lead — it belongs to no verse', () => {
+    // The fragment before a page's first address is usually a note on the
+    // unit's title, sometimes a sentence carried over from the page before.
+    // Attaching it to a verse would be filing it on a guess, which is the one
+    // thing this design refuses.
+    for (const a of order) {
+      for (const e of entriesAt(block, a, order)) assert.notEqual(e.text, block.lead);
+    }
   });
 });

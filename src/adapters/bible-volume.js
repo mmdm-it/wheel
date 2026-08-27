@@ -24,7 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
-import { loadMargin, blockAt, addressOrder } from '../core/margin-source.js';
+import { loadMargin, blockAt, entriesAt, addressOrder } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
@@ -299,7 +299,12 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       // cost and why it was invisible.
       const order = addressOrder(chart);
       const block = blockAt(margin, address, order);
-      return block ? { block, source: margin.source } : null;
+      if (!block) return null;
+      // The verse's OWN notes, not the whole page's. A block is a page of
+      // apparatus and W-166 addressed each of its entries; a reader at one
+      // verse wants that verse's, the way a reader looking down at the foot of
+      // the page finds the line beginning with the number they are on.
+      return { block, entries: entriesAt(block, address, order), source: margin.source };
     },
 
     // The chart for a (unit, edition), or null. Null is a real answer here —
