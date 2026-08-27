@@ -904,7 +904,7 @@ svg :focus-visible {
            calc(10px * var(--iframe-scale, 1))
            calc(6px * var(--iframe-scale, 1))
            calc(10px * var(--iframe-scale, 1));
-  background: rgba(120, 20, 20, 0.94);
+  background: rgb(120, 20, 20);   /* SOLID: at 0.94 the notice read through it */
   color: #fff;
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: calc(11px * var(--iframe-scale, 1));
@@ -913,6 +913,14 @@ svg :focus-visible {
   white-space: nowrap;
   pointer-events: none;
 }
+
+/* AND THE NOTICE BENEATH IT STANDS DOWN WHILE IT SHOWS. Making the mark opaque
+   covers the notice's FIRST line and nothing else: the copyright wraps to two
+   lines on a phone, so "riservati." sat below the band in plain sight. A band
+   sized to guess how many lines the notice happens to wrap to would be wrong
+   the first time a viewport changed. Hiding the element it replaces cannot
+   half-cover, and the notice returns the instant the mark goes. */
+:root.incomplete-mark-showing .copyright-notice { visibility: hidden; }
 
 /* THE SECTION LABEL (H-26) — the tradition's own name for the division the
    magnified book belongs to. A NAME, never a colour: a colour asserts nothing

@@ -1824,6 +1824,38 @@ export function createApp({
     return true;
   };
 
+  // ── THE LENS TOGGLES THE HALF (Howell, 2026-08-27) ────────────────────────
+  // "tapping the magnifier ring itself should toggle back and forth between
+  // first half and second half of the divided node. On a regular undivided
+  // node tapping the magnifier ring should do nothing."
+  //
+  // WHY IT IS NEEDED, in his own diagnosis: it was possible to reach the
+  // second half, then thumb the ring back to the first, and have the two
+  // disagree — the lens showing one half while the margin still held the
+  // other. The half had become a state you could arrive at by two different
+  // routes and leave by a third. A gesture that names the half outright, on
+  // the one control that means "here", settles it.
+  //
+  // IT IS DELIBERATELY BLIND TO WHAT CAUSED THE ECLIPSE. A verse too long for
+  // the sector and a verse whose NOTES are too long for the margin (O-86,
+  // O-101) both split, and a reader has no way of telling which — nor should
+  // they need one. The test is `partsOf`, which is the same question the ring
+  // asks to decide whether to seat the node off-centre at all.
+  //
+  // Returns false when there is nothing to toggle, so the caller can leave the
+  // tap inert rather than inventing a response to it.
+  const toggleVersePart = () => {
+    const idx = nav.getCurrentIndex();
+    const item = (nav.items || [])[idx];
+    if (!item || partsOf(item) < 2) return false;
+    const next = versePart === 1 ? 0 : 1;
+    // Paint first, then travel — the text leads and the ring follows, which is
+    // the same order the reading tap uses. The arrival cannot be relied on to
+    // paint here: it commits through selectIndex, and the index is not moving.
+    if (typeof onDetailPreview === 'function') onDetailPreview(item, { part: next });
+    return rotateToIndex(idx, { part: next, durationMs: 250 });
+  };
+
   const rotateNodeIntoMagnifier = node => {
     if (!node?.item) return;
     rotateToIndex(node.index);
@@ -2014,6 +2046,7 @@ export function createApp({
 
   return {
     advanceLeaf,
+    toggleVersePart,
     detailAreaAdvances,
     // O-84: which half of a split verse is settled — the host's detail render
     // reads this so the text and the eclipse always agree.

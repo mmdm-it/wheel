@@ -98,6 +98,9 @@ export function renderMarginNote(entries, {
   // rather than discovering the collision after painting. It is the note that
   // then splits across the eclipse — which is the right way round, because the
   // footer is the same on both halves and the note is not.
+  // Reserved from the WHOLE note's manuscripts, deliberately: the two halves
+  // must reserve the same rows or the note would reflow between them, and a
+  // line of apparatus that moves when you toggle is worse than a spare row.
   const reserved = footerRows(manuscripts, a);
   const noteRows = Math.max(1, a.lineTable.length - reserved);
   const noteArea = { ...a, lineTable: a.lineTable.slice(0, noteRows) };
@@ -109,6 +112,14 @@ export function renderMarginNote(entries, {
     body = part === 1 ? y : x;
   }
   const laid = flow(body, noteArea, 0);
+
+  // THE FOOTER NAMES WHAT IS ON THIS SCREEN, NOT WHAT IS IN THE WHOLE NOTE.
+  // The rule was stated before it was implemented and the implementation broke
+  // it: a reader is never told what a letter means unless that letter is in
+  // front of them, and on the first half of a split note two of the three
+  // manuscripts named were in the other half. Howell caught it in a pair of
+  // screenshots where the footer did not change while the note did.
+  const shown = manuscripts.filter(m => new RegExp(`(^|[\\s|\\](),.*])${m.siglum}`).test(body));
 
   const container = make('div');
   container.className = 'margin-note';
@@ -134,8 +145,8 @@ export function renderMarginNote(entries, {
   // because the lookup goes through the volume the unit belongs to.
   const fpx = a.viewport.SSd * FOOTER_RATIO;
   const fpitch = fpx * FOOTER_LINE;
-  const base = a.bottomY - manuscripts.length * fpitch;
-  manuscripts.forEach((m, i) => {
+  const base = a.bottomY - shown.length * fpitch;
+  shown.forEach((m, i) => {
     const line = make('div');
     line.className = 'margin-note-source';
     line.style.position = 'absolute';

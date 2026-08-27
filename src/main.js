@@ -1182,6 +1182,7 @@ function updateIncompleteMark() {
   } catch (_) { show = false; }
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
+    document.documentElement.classList.remove('incomplete-mark-showing');
     return;
   }
   if (!incompleteMarkEl) {
@@ -1191,6 +1192,10 @@ function updateIncompleteMark() {
     document.body.appendChild(incompleteMarkEl);
   }
   incompleteMarkEl.style.display = '';
+  // The mark took the copyright's band (O-103); the notice stands down while
+  // it is there, because an opaque band covers the notice's first line only
+  // and the notice wraps to two on a phone.
+  document.documentElement.classList.add('incomplete-mark-showing');
 }
 
 // THE SECTION LABEL (H-26, Howell's own sketch; specified in W-83).
@@ -2763,9 +2768,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // THE STRIKE: in search mode — and only there — the magnifier receives
   // its first-ever click (Howell 2026-07-22): tap the lens, commit the
   // settled character to the carriage. Inert in browse mode.
+  // AND IN BROWSE MODE IT NAMES THE HALF (Howell 2026-08-27). The lens had
+  // exactly one job and only in search; it now has a second, and only where
+  // there is a second half to name. On an undivided node the tap is inert,
+  // which is the state it has always been in and must stay in — the lens is
+  // not a general-purpose button and must never grow into one.
   if (app?.view?.magnifierCircle) {
     app.view.magnifierCircle.addEventListener('click', () => {
-      if (searchRestore) strikeSettledChar();
+      if (searchRestore) { strikeSettledChar(); return; }
+      app.toggleVersePart?.();
     });
   }
   // Expose app to window for console API
