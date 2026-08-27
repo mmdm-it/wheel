@@ -1006,3 +1006,13 @@ svg :focus-visible {
   font-style: italic;
   white-space: nowrap;
 }
+
+/* The manuscripts a note cites, named. Quieter than the note, which is itself
+   quieter than the verse: three voices, in the order they matter. */
+.margin-note-source {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.72));
+  opacity: 0.72;
+  white-space: nowrap;
+  overflow: hidden;
+}

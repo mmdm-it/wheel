@@ -25,6 +25,7 @@
 import { resolvePath } from './identity.js';
 
 const cache = new Map();   // `${edition}|${unitId}` → { blocks, index } | null
+let legendCache;           // one per edition; undefined = not asked, null = none
 
 /**
  * Load one unit's margin. Resolves to null when the unit has none — which is
@@ -115,7 +116,18 @@ export function entriesAt(block, address, order) {
   });
 }
 
-export function clearMarginCache() { cache.clear(); }
+/** Cache-only: what loadMargin has already fetched for this unit, or null.
+ *  The ring asks "how many screens does this need" SYNCHRONOUSLY, and an
+ *  apparatus that has not arrived yet must answer "one" rather than block —
+ *  the same shape the seated text already uses. When it does arrive the host
+ *  drops its part-count cache so the question is asked again. */
+export function marginCached(edition, unitId) {
+  return cache.get(`${edition}|${unitId}`) ?? null;
+}
+
+export function legendCached() { return legendCache ?? null; }
+
+export function clearMarginCache() { cache.clear(); legendCache = undefined; }
 
 /**
  * The addresses a chart seats, in its own order, spelled the way a reader's
@@ -141,4 +153,53 @@ export function addressOrder(chart) {
     }
   }
   return order;
+}
+
+/**
+ * The edition's manuscript legend, or null.
+ *
+ * THE LEGEND IS PER VOLUME and that is the whole reason it is a structure
+ * rather than a lookup table. Swete's edition is three volumes, each preface
+ * naming only the manuscripts collated for that volume, and a letter is reused
+ * between them: C is one manuscript in volume II and unused in volume I; V is
+ * one in volume III and a different one inside that volume's own appendix.
+ * Reading a siglum against the wrong volume's list returns the name of a REAL
+ * manuscript every time, which is what makes the mistake invisible.
+ */
+export async function loadMarginLegend({ base, version, edition, fetchJson }) {
+  if (legendCache !== undefined) return legendCache;
+  legendCache = null;
+  try {
+    const file = await fetchJson(resolvePath({ base, version, kind: 'marginLegend', edition }));
+    if (file && Array.isArray(file.volumes)) legendCache = file;
+  } catch { legendCache = null; }
+  return legendCache;
+}
+
+// Swete's Roman numerals marking a container turn inside a page of
+// apparatus. They are Latin capitals because that is what the page prints,
+// but they are NOT manuscripts: one stands 1,822 times in volume I alone,
+// which would make it commoner than two of the actual codices combined.
+const NOT_SIGLA = new Set(['I', 'X']);
+
+/**
+ * The manuscripts named in a stretch of apparatus, in the order they appear:
+ * [{ siglum, name }]. Only letters the unit's OWN volume names are returned,
+ * and only letters actually standing in the text — a reader is never told what
+ * a letter means unless that letter is in front of them.
+ */
+export function manuscriptsIn(text, legend, unitId) {
+  if (!legend || !text || !unitId) return [];
+  const volume = legend.volumes.find(v => v.units?.includes(unitId));
+  if (!volume) return [];
+  const named = volume.sigla || {};
+  const out = [];
+  const seen = new Set();
+  for (const token of String(text).split(/[\s|\]()*,.]+/)) {
+    const c = token.slice(0, 1);
+    if (!c || seen.has(c) || NOT_SIGLA.has(c) || !(c in named)) continue;
+    seen.add(c);
+    out.push({ siglum: c, name: named[c] });
+  }
+  return out;
 }

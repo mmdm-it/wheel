@@ -24,7 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
-import { loadMargin, blockAt, entriesAt, addressOrder } from '../core/margin-source.js';
+import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, addressOrder, manuscriptsIn } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
@@ -304,7 +304,29 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       // apparatus and W-166 addressed each of its entries; a reader at one
       // verse wants that verse's, the way a reader looking down at the foot of
       // the page finds the line beginning with the number they are on.
-      return { block, entries: entriesAt(block, address, order), source: margin.source };
+      const entries = entriesAt(block, address, order);
+      const legend = await loadMarginLegend({ base, version, edition, fetchJson });
+      const cited = entries.map(e => e.text).join(' ');
+      return {
+        block, entries, source: margin.source,
+        manuscripts: manuscriptsIn(cited, legend, unitId),
+      };
+    },
+
+    // THE SAME QUESTION, ANSWERED FROM CACHE AND WITHOUT WAITING. The ring must
+    // know how many screens an item needs before it settles, and it cannot
+    // await. An apparatus not yet fetched answers "none", which settles the
+    // node centred; the host drops its part-count cache when one arrives, so
+    // the question is asked again with the real answer.
+    marginAtSync(unitId, edition, address) {
+      const chart = charts.get(`${unitId}|${edition}`);
+      const margin = marginCached(edition, unitId);
+      if (!chart || !margin) return null;
+      const order = addressOrder(chart);
+      const block = blockAt(margin, address, order);
+      if (!block) return null;
+      const entries = entriesAt(block, address, order);
+      return { entries, manuscripts: manuscriptsIn(entries.map(e => e.text).join(' '), legendCached(), unitId) };
     },
 
     // The chart for a (unit, edition), or null. Null is a real answer here —

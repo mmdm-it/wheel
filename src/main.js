@@ -15,7 +15,7 @@ import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
-import { renderMarginNote } from './view/margin-panel.js';
+import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { computeMarginArea } from './geometry/margin-area.js';
 import { onVerseFontReady, invalidateVerseMeasurement, versePartCount } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
@@ -1737,19 +1737,32 @@ async function renderMargin(selected, translation, seq) {
   const address = selected?.meta?.verseKey;
   const volume = currentManifest?.__wallVolume;
   if (!bookId || !address || !translation || typeof volume?.marginAt !== 'function') { clear(); return; }
+  const hadIt = typeof volume.marginAtSync === 'function'
+    && volume.marginAtSync(bookId, translation, address) !== null;
   let found = null;
   try {
     found = await volume.marginAt(bookId, translation, address);
   } catch {
     found = null;
   }
+  // AN APPARATUS THAT JUST ARRIVED CHANGES AN ANSWER ALREADY GIVEN. The ring
+  // asked how many screens this item needed before the fetch returned and was
+  // told one. Dropping the cache lets it ask again now that there is something
+  // to answer with — the same reflex the verse measurement already has when a
+  // font reaches layout after the wrap was computed.
+  if (!hadIt && found?.entries?.length) versePartsCache.clear();
   if (seq !== marginRenderSeq) return;   // a newer verse superseded this one
   clear();
   if (!found?.entries?.length) return;
   const vpm = measureViewport();
+  // The half the ring has settled on. The verse and its notes show the SAME
+  // half, so the eclipse means one thing on screen however it was triggered.
+  const part = currentApp?.getVersePart?.() ?? 0;
   const node = renderMarginNote(found.entries, {
     width: vpm.width,
     height: vpm.height,
+    part,
+    manuscripts: found.manuscripts || [],
     create: tag => document.createElement(tag),
   });
   if (node && seq === marginRenderSeq) marginPanel.appendChild(node);
@@ -2699,9 +2712,22 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         const payload = adapter?.detailFor
           ? adapter.detailFor(item, manifest, { normalized: adapterNormalized, translation })
           : null;
-        const parts = (payload?.uniform && typeof payload.text === 'string')
+        let parts = (payload?.uniform && typeof payload.text === 'string')
           ? versePartCount(payload.text, computeDetailSectorBounds(vpm.width, vpm.height))
           : 1;
+        // O-86: THE ECLIPSE TRIGGER WIDENS. A verse short enough to read whole
+        // may still carry notes too extensive for the margin, and Howell ruled
+        // those split the same way — "we simply display those notes in halves".
+        // So two parts when EITHER overflows. Asked from cache and without
+        // waiting: an apparatus still in flight answers one, and the cache is
+        // dropped when it lands so the ring asks again.
+        if (parts < 2) {
+          const volume = currentManifest?.__wallVolume;
+          const found = volume?.marginAtSync?.(item?.meta?.externalFile, translation, item?.meta?.verseKey);
+          if (found?.entries?.length) {
+            parts = marginPartCount(found.entries, found.manuscripts, { width: vpm.width, height: vpm.height });
+          }
+        }
         versePartsCache.set(key, parts);
         return parts;
       } catch (_) { return 1; }
