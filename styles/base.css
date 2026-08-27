@@ -1066,3 +1066,14 @@ svg :focus-visible {
 
 /* Over the proofread mark's red band, the same ink would vanish. */
 :root.incomplete-mark-showing .margin-marks { color: rgba(255, 255, 255, 0.92); }
+
+/* The marks read as a line of sigla with their names under them, right-aligned
+   to the screen's edge so the letters stack over the names they belong to. */
+.margin-marks { text-align: right; }
+.margin-marks-sigla { letter-spacing: 0.08em; }
+.margin-marks-name {
+  font-size: calc(9px * var(--iframe-scale, 1));
+  line-height: calc(12px * var(--iframe-scale, 1));
+  letter-spacing: 0;
+  opacity: 0.78;
+}

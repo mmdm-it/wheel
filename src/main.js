@@ -1769,7 +1769,25 @@ async function renderMargin(selected, translation, seq, part = 0) {
   // THE MARKS DO NOT DEPEND ON THERE BEING A NOTE. A verse may carry a
   // siglum in the margin and no apparatus at all — Isaiah 3:9 is one — so
   // these are painted before the early return, not after it.
-  if (marginMarks && found?.marks?.length) marginMarks.textContent = found.marks.join('  ');
+  if (marginMarks && found?.marks?.length) {
+    marginMarks.textContent = '';
+    const line = document.createElement('div');
+    line.className = 'margin-marks-sigla';
+    line.textContent = found.marks.join('  ');
+    marginMarks.appendChild(line);
+    // AND THE LEGEND BENEATH THEM. Howell: "I expected to see an 'A' above
+    // Genesis 1:1, with the Legend for 'A' below." A bare capital at the head
+    // of the screen is exactly the thing the footer under a note exists to
+    // explain, and it would have been strange to explain one and not the
+    // other — the reader does not know which of the two letters they are
+    // looking at is entitled to a name.
+    for (const m of found.marksNamed || []) {
+      const named = document.createElement('div');
+      named.className = 'margin-marks-name';
+      named.textContent = `${m.siglum} · ${String(m.name).replace(/\s*\([^)]*\)\s*$/, '')}`;
+      marginMarks.appendChild(named);
+    }
+  }
   if (!found?.entries?.length) return;
   const vpm = measureViewport();
   const node = renderMarginNote(found.entries, {

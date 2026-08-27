@@ -304,6 +304,13 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       const marks = marksAt(margin, address);
       const block = blockAt(margin, address, order);
       if (!block) return marks.length ? { marks, entries: [], manuscripts: [], source: margin.source } : null;
+      // WHICH MANUSCRIPT THE TEXT IS, at the head of the marks. Swete prints it
+      // in the outer margin at the top of each page and it is the first thing
+      // his reader knows: Genesis is Alexandrinus because Vaticanus is
+      // defective through chapter 46, and the page says so. It rides the block
+      // as `base` and was being kept there — true of the page, invisible to
+      // the reader, which is the wrong half of the bargain.
+      const standing = block.base ? [block.base, ...marks] : marks;
       // The verse's OWN notes, not the whole page's. A block is a page of
       // apparatus and W-166 addressed each of its entries; a reader at one
       // verse wants that verse's, the way a reader looking down at the foot of
@@ -312,8 +319,12 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       const legend = await loadMarginLegend({ base, version, edition, fetchJson });
       const cited = entries.map(e => e.text).join(' ');
       return {
-        block, entries, marks, source: margin.source,
+        block, entries, marks: standing, source: margin.source,
         manuscripts: manuscriptsIn(cited, legend, unitId),
+        // The marks name manuscripts too, and a reader meeting a bare letter at
+        // the head of the screen is owed the same courtesy as one meeting it in
+        // a note: the legend, for the letters in front of them and no others.
+        marksNamed: manuscriptsIn(standing.join(' '), legend, unitId),
       };
     },
 
@@ -333,6 +344,13 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       const marks = marksAt(margin, address);
       const block = blockAt(margin, address, order);
       if (!block) return marks.length ? { marks, entries: [], manuscripts: [], source: margin.source } : null;
+      // WHICH MANUSCRIPT THE TEXT IS, at the head of the marks. Swete prints it
+      // in the outer margin at the top of each page and it is the first thing
+      // his reader knows: Genesis is Alexandrinus because Vaticanus is
+      // defective through chapter 46, and the page says so. It rides the block
+      // as `base` and was being kept there — true of the page, invisible to
+      // the reader, which is the wrong half of the bargain.
+      const standing = block.base ? [block.base, ...marks] : marks;
       const entries = entriesAt(block, address, order);
       return { entries, manuscripts: manuscriptsIn(entries.map(e => e.text).join(' '), legendCached(), unitId) };
     },
