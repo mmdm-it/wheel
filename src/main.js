@@ -1775,26 +1775,24 @@ async function renderMargin(selected, translation, seq, part = 0) {
     line.className = 'margin-marks-sigla';
     line.textContent = found.marks.join('  ');
     marginMarks.appendChild(line);
-    // AND THE LEGEND BENEATH THEM. Howell: "I expected to see an 'A' above
-    // Genesis 1:1, with the Legend for 'A' below." A bare capital at the head
-    // of the screen is exactly the thing the footer under a note exists to
-    // explain, and it would have been strange to explain one and not the
-    // other — the reader does not know which of the two letters they are
-    // looking at is entitled to a name.
-    for (const m of found.marksNamed || []) {
-      const named = document.createElement('div');
-      named.className = 'margin-marks-name';
-      named.textContent = `${m.siglum} · ${String(m.name).replace(/\s*\([^)]*\)\s*$/, '')}`;
-      marginMarks.appendChild(named);
-    }
   }
-  if (!found?.entries?.length) return;
+  // THE LEGEND HAS ONE HOME AND IT IS THE MARGIN'S FOOT. It was briefly given a
+  // second, under the sigla at the head of the screen, and Howell's answer was
+  // that he still could not see it "in its usual position" — which is the right
+  // objection: two places to look for the same kind of statement is one more
+  // than a reader should have to learn. The marks' manuscripts join the note's
+  // there, deduplicated, in the order they are met.
+  if (!found?.entries?.length && !found?.marksNamed?.length) return;
   const vpm = measureViewport();
+  const named = [...(found.manuscripts || [])];
+  for (const m of found.marksNamed || []) {
+    if (!named.some(x => x.siglum === m.siglum)) named.push({ ...m, fromMark: true });
+  }
   const node = renderMarginNote(found.entries, {
     width: vpm.width,
     height: vpm.height,
     part,
-    manuscripts: found.manuscripts || [],
+    manuscripts: named,
     create: tag => document.createElement(tag),
   });
   if (node && seq === marginRenderSeq) marginPanel.appendChild(node);

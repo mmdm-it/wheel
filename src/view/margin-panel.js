@@ -90,7 +90,12 @@ export function renderMarginNote(entries, {
 } = {}) {
   const make = create || (typeof document !== 'undefined' ? document.createElement.bind(document) : null);
   const whole = bodyOf(entries);
-  if (!make || !whole) return null;
+  // A MANUSCRIPT MAY NEED NAMING WHERE THERE IS NO NOTE. Genesis 1:1 carries no
+  // apparatus entry of its own and still stands in Alexandrinus, and the reader
+  // is owed that name in the place names are given. Returning early on an empty
+  // note took the legend with it, which is why the very first verse of the
+  // corpus showed a siglum at the head of the screen and nothing to explain it.
+  if (!make || (!whole && !manuscripts.length)) return null;
   const a = area || computeMarginArea(width, height);
   if (!a.lineTable.length) return null;
 
@@ -105,13 +110,13 @@ export function renderMarginNote(entries, {
   const noteRows = Math.max(1, a.lineTable.length - reserved);
   const noteArea = { ...a, lineTable: a.lineTable.slice(0, noteRows) };
 
-  const first = flow(whole, noteArea, 0);
+  const first = whole ? flow(whole, noteArea, 0) : { lines: [], remaining: '' };
   let body = whole;
   if (first.remaining) {
     const [x, y] = splitVerse(whole);
     body = part === 1 ? y : x;
   }
-  const laid = flow(body, noteArea, 0);
+  const laid = whole ? flow(body, noteArea, 0) : { lines: [], remaining: '' };
 
   // THE FOOTER NAMES WHAT IS ON THIS SCREEN, NOT WHAT IS IN THE WHOLE NOTE.
   // The rule was stated before it was implemented and the implementation broke
@@ -119,7 +124,11 @@ export function renderMarginNote(entries, {
   // front of them, and on the first half of a split note two of the three
   // manuscripts named were in the other half. Howell caught it in a pair of
   // screenshots where the footer did not change while the note did.
-  const shown = manuscripts.filter(m => new RegExp(`(^|[\\s|\\](),.*])${m.siglum}`).test(body));
+  // With no note, every manuscript handed in is one the MARKS named, and all
+  // of them are on screen; with a note, only those the shown half cites.
+  const shown = whole
+    ? manuscripts.filter(m => m.fromMark || new RegExp(`(^|[\\s|\\](),.*])${m.siglum}`).test(body))
+    : manuscripts;
 
   const container = make('div');
   container.className = 'margin-note';
