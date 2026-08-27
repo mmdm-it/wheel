@@ -969,3 +969,40 @@ svg :focus-visible {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+/* ── THE MARGIN, BEYOND THE RING (W-127, W-165) ─────────────────────────────
+   Swete prints his critical apparatus at the foot of the page, outside the
+   block of scripture. Here it sits outside the arc, on the ground the Detail
+   Sector's circle does not cover. It is quieter than the text on purpose: it
+   is the record of what the manuscripts disagree about, and it must never
+   compete with the verse for the eye.
+
+   FIRST LIGHT 2026-08-26 and every value here is provisional. The type size
+   is O-91's 5%, ruled before anyone had seen a note. */
+.margin-panel {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+  z-index: 190;   /* under the detail panel: the verse is never covered */
+}
+
+.margin-panel.margin-panel--visible { opacity: 1; }
+
+.margin-note-line {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.72));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.margin-note-more {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.72));
+  opacity: 0.6;
+  font-style: italic;
+  white-space: nowrap;
+}

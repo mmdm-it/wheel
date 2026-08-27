@@ -24,6 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
+import { loadMargin, blockAt } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
@@ -271,6 +272,31 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     // second caller gets the same promise's result from the map.
     loadTextFor(unitId) {
       return loadText(unitId);
+    },
+
+    // THE MARGIN COVERING AN ADDRESS, or null (W-165).
+    //
+    // Null is the ORDINARY answer and carries no complaint: only one edition
+    // has an apparatus at all, only 47 of its books are captured, and 226 of
+    // its blocks are held for a reading the page has to settle. W-131 and
+    // W-133 put the margin on its own ladder precisely so its absence gates
+    // nothing — an edition ships fully proofread with an empty margin, for as
+    // long as that takes.
+    //
+    // The lookup needs the edition's OWN seat order, because a block covers a
+    // RUN of verses and "10:2" sorts before "9:1" as a string. The chart is
+    // the only thing that knows where an address sits.
+    async marginAt(unitId, edition, address) {
+      const chart = charts.get(`${unitId}|${edition}`);
+      if (!chart) return null;
+      const margin = await loadMargin({
+        base, version, edition, unitId, fetchJson,
+        identityOf: file => file?.book,
+      });
+      if (!margin) return null;
+      const order = (chart.seats || []).map(seat => String(seat.label));
+      const block = blockAt(margin, address, order);
+      return block ? { block, source: margin.source } : null;
     },
 
     // The chart for a (unit, edition), or null. Null is a real answer here —

@@ -170,6 +170,11 @@ export function resolvePath({ base = '', version = '', kind, edition, unitId, la
     case 'spine':       return join('spine', `${req(unitId, 'unitId')}.json`);
     case 'text':        return join('text', req(edition, 'edition'), `${req(unitId, 'unitId')}.json`);
     case 'chart':       return join('charts', req(edition, 'edition'), `${req(unitId, 'unitId')}.json`);
+    // The margin is a SEPARATE TREE from the text on purpose (W-165). An
+    // edition's apparatus is captured and verified on its own ladder, per
+    // unit, and gates nothing in either direction (W-131/W-133) — so a unit
+    // with no margin file is an ordinary, silent state and never an error.
+    case 'margin':      return join('margin', req(edition, 'edition'), `${req(unitId, 'unitId')}.json`);
     case 'chartIndex':  return join('charts', req(edition, 'edition'), 'index.json');
     case 'names':       return join('names', `${req(lang, 'lang')}.json`);
     case 'container':

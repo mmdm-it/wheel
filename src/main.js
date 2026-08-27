@@ -15,6 +15,8 @@ import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
+import { renderMarginNote } from './view/margin-panel.js';
+import { computeMarginArea } from './geometry/margin-area.js';
 import { onVerseFontReady, invalidateVerseMeasurement, versePartCount } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
@@ -1601,6 +1603,7 @@ detailRegistry.register(new CardDetailPlugin());
 detailRegistry.register(new EphemerisDetailPlugin());
 const detailPanel = document.getElementById('detail-panel');
 const detailContent = document.getElementById('detail-content');
+const marginPanel = document.getElementById('margin-panel');
 
 // Toggle detail panel visibility in sync with the Detail Sector animation.
 // The panel fades in after the blue circle has finished expanding,
@@ -1609,6 +1612,12 @@ window.addEventListener('detail-sector-change', (e) => {
   const { visible } = e.detail || {};
   if (detailPanel) {
     detailPanel.classList.toggle('detail-panel--visible', Boolean(visible));
+  }
+  // The margin follows the sector it sits beside: it appears when the reader
+  // is at a leaf and goes when they leave. It is NOT a second panel with its
+  // own life — a note belongs to a verse, and there is no verse above a leaf.
+  if (marginPanel) {
+    marginPanel.classList.toggle('margin-panel--visible', Boolean(visible));
   }
   // The dimension button follows the sill: present at a leaf, gone over a
   // child pyramid (which also recedes any open stack back to the primary).
@@ -1672,6 +1681,18 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   const node = plugin.render(payload, renderBounds, { createElement: tag => document.createElement(tag) });
   if (node) detailContent.appendChild(node);
 
+  // ── THE MARGIN, BEYOND THE RING (W-127, W-165) ────────────────────────────
+  // Swete's apparatus, on the ground outside the arc. It is fetched per book
+  // and cached, so this is a synchronous paint after the first verse of a book
+  // and the reader never waits on it.
+  //
+  // IT IS DELIBERATELY NOT PART OF THE PAYLOAD. The Detail Sector renders one
+  // item through one plugin; a margin is a SECOND thing about the same verse,
+  // on its own ladder, absent for every edition but one and for most books of
+  // that one. Folding it into the payload would make its ordinary absence
+  // look like a missing verse (W-131, W-133).
+  renderMargin(selected, translation, seqOfMargin());
+
   // POST-PAINT WRAP VERIFY (Howell 2026-07-27, the iOS overflow endgame).
   // The wrap is computed from hidden-span measurements, and on iOS those can
   // lie: the font-load promise resolves BEFORE the face reaches layout, so
@@ -1697,6 +1718,41 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
         { translation, wrapAttempt: wrapAttempt + 1 });
     }));
   }
+}
+
+let marginRenderSeq = 0;
+const seqOfMargin = () => ++marginRenderSeq;
+
+// Paint the margin note covering this verse, or clear it. Every early return
+// here is an ORDINARY state, not a failure: no volume, no apparatus for the
+// edition, no capture for the book, or a block held for a reading the printed
+// page has to settle. The reader meets a bare margin and nothing says sorry.
+async function renderMargin(selected, translation, seq) {
+  if (!marginPanel) return;
+  const clear = () => {
+    if (seq !== marginRenderSeq) return;
+    while (marginPanel.firstChild) marginPanel.removeChild(marginPanel.firstChild);
+  };
+  const bookId = selected?.meta?.externalFile;
+  const address = selected?.meta?.verseKey;
+  const volume = currentManifest?.__wallVolume;
+  if (!bookId || !address || !translation || typeof volume?.marginAt !== 'function') { clear(); return; }
+  let found = null;
+  try {
+    found = await volume.marginAt(bookId, translation, address);
+  } catch {
+    found = null;
+  }
+  if (seq !== marginRenderSeq) return;   // a newer verse superseded this one
+  clear();
+  if (!found?.block) return;
+  const vpm = measureViewport();
+  const node = renderMarginNote(found.block, {
+    width: vpm.width,
+    height: vpm.height,
+    create: tag => document.createElement(tag),
+  });
+  if (node && seq === marginRenderSeq) marginPanel.appendChild(node);
 }
 
 function wireInteractions(getApp) {
