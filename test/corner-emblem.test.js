@@ -178,7 +178,7 @@ describe('the emblem swaps without disturbing what is in flight', () => {
 // does (W-114). The engine carries it; it does not know it.
 describe('which colour is under the emblem (O-79)', () => {
   const COLOURED = [
-    { label: 'Vetus Testamentum', image: 'torah_scroll', color: '#1034a6', from: 1, to: 2, books: ['A', 'B'] },
+    { label: 'Vetus Testamentum', image: 'torah_scroll', color: '#133490', from: 1, to: 2, books: ['A', 'B'] },
     { label: 'Novum Testamentum', image: 'crown_of_thorns', color: '#362e6a', from: 3, to: 4, books: ['C', 'D'] }
   ];
 
@@ -186,7 +186,7 @@ describe('which colour is under the emblem (O-79)', () => {
     const h = handlers(makeManifest(() => COLOURED.map(d => ({ ...d }))));
     const at = id => ({ level: 'book', id });
     assert.equal(h.cornerImageFor(at('B')), 'torah_scroll');
-    assert.equal(h.detailSectorColorFor(at('B')), '#1034a6');
+    assert.equal(h.detailSectorColorFor(at('B')), '#133490');
     assert.equal(h.cornerImageFor(at('C')), 'crown_of_thorns');
     assert.equal(h.detailSectorColorFor(at('C')), '#362e6a',
       'the emblem and the ground under it must never disagree');
@@ -194,7 +194,7 @@ describe('which colour is under the emblem (O-79)', () => {
 
   it('AT ROOT IT IS THE FIRST DIVISION\'S, exactly as the emblem is', () => {
     const h = handlers(makeManifest(() => COLOURED.map(d => ({ ...d }))));
-    assert.equal(h.detailSectorColorFor({ level: 'bibleRoot', id: 'root' }), '#1034a6');
+    assert.equal(h.detailSectorColorFor({ level: 'bibleRoot', id: 'root' }), '#133490');
   });
 
   it('NULL RATHER THAN A GUESS when the cargo declares none', () => {
@@ -220,7 +220,7 @@ describe('which colour is under the emblem (O-79)', () => {
 });
 
 describe('the circle repaints without disturbing what is in flight (O-79)', () => {
-  const makeLogo = async (fill = '#1034a6') => {
+  const makeLogo = async (fill = '#133490') => {
     const { VolumeLogo } = await import('../src/view/volume-logo.js');
     const logo = new VolumeLogo(null, { width: 400, height: 800 });
     const attrs = { fill };
@@ -250,8 +250,8 @@ describe('the circle repaints without disturbing what is in flight (O-79)', () =
   });
 
   it('reports false for the same colour, so a frequent caller stays quiet', async () => {
-    const { logo } = await makeLogo('#1034a6');
-    assert.equal(logo.setColor('#1034a6'), false, 'already showing it');
+    const { logo } = await makeLogo('#133490');
+    assert.equal(logo.setColor('#133490'), false, 'already showing it');
     assert.equal(logo.setColor(null), false, 'nothing to show');
     assert.equal(logo.setColor(''), false);
   });
