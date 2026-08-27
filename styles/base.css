@@ -882,23 +882,33 @@ svg :focus-visible {
    the LAN certification override is showing an uncertified edition. Deliberately
    plain and unmistakably a dev affordance: this must never be mistaken for a
    reader-facing notice, since the doctrine forbids asterisks in the product. */
-/* THE MARK MOVES OFF THE LABEL (Howell 2026-08-02): centred at the foot it
-   sat directly on the parent button's own words and hid their tail. It now
-   rides the LEFT, just above the parent label — whose baseline is LSd*0.93
-   (getParentSeat), i.e. 7% up from the foot, so 10% clears it with the
-   label's ascenders in between. Left inset matches the label's corner start
-   (SSd*0.13 - magR*1.7 ≈ 3%), so mark and label share an edge. */
+/* THE MARK MOVES TO THE TOP AND COVERS THE COPYRIGHT (Howell, 2026-08-27:
+   "move the NOT PROOFREAD banner to the top of the screen, overlaying the
+   copyright disclaimer"). It rode the lower left from 2026-08-02, which was
+   right until the ground beyond the ring started carrying Swete's apparatus:
+   the mark then stood in the margin's own territory and was drawn over the
+   manuscript names (O-102). The copyright strip is the one piece of furniture
+   already occupying a full-width band the reader does not read, so the mark
+   takes that band while it is showing — same box, same padding, same centring,
+   opaque, so the notice beneath it is covered rather than peeking out at the
+   sides. It is still a LAN-only dev affordance and still must never be
+   mistaken for a reader-facing notice; the doctrine forbids asterisks in the
+   product. */
 #incomplete-mark {
   position: fixed;
-  left: calc(4% * var(--iframe-scale, 1));
-  bottom: calc(10% * var(--iframe-scale, 1));
-  z-index: 400;
-  padding: 5px 12px;
-  border-radius: 4px;
-  background: rgba(120, 20, 20, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;   /* above the copyright strip's 300 */
+  padding: calc(6px * var(--iframe-scale, 1))
+           calc(10px * var(--iframe-scale, 1))
+           calc(6px * var(--iframe-scale, 1))
+           calc(10px * var(--iframe-scale, 1));
+  background: rgba(120, 20, 20, 0.94);
   color: #fff;
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: calc(10px * var(--iframe-scale, 1));
+  font-size: calc(11px * var(--iframe-scale, 1));
+  text-align: center;
   letter-spacing: 0.12em;
   white-space: nowrap;
   pointer-events: none;
