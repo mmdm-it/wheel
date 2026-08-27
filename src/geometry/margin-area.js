@@ -25,8 +25,12 @@ export const MARGIN_SPEC = {
   LEFT_RATIO: 0.04,
   /** Clearance between the arc's OUTER band edge and the longest line. */
   ARC_GAP_RATIO: 0.035,
-  /** Floor: clear of the volume label and the proofread badge. */
-  BOTTOM_RATIO: 0.20,
+  /** Floor: the proofread badge sits at 10% of the VIEWPORT height, so the
+   *  floor is measured from the height and not from the short side — on a tall
+   *  phone those are different numbers, and the footer was being drawn under
+   *  the badge. BADGE_BOX clears the badge's own box and leaves a gap. */
+  FLOOR_RATIO: 0.10,
+  BADGE_BOX: 0.05,
   /** A row narrower than this is not worth setting type on. */
   MIN_WIDTH_RATIO: 0.28,
   /** Note type size, as a fraction of the short side (O-91's 5%). */
@@ -48,7 +52,7 @@ export function computeMarginArea(width, height, spec = MARGIN_SPEC) {
   const magnifier = getMagnifierPosition(viewport);
 
   const leftX = SSd * spec.LEFT_RATIO;
-  const bottomY = height - SSd * spec.BOTTOM_RATIO;
+  const bottomY = height * (1 - spec.FLOOR_RATIO) - SSd * spec.BADGE_BOX;
   const fontPx = SSd * spec.FONT_RATIO;
   const pitch = fontPx * spec.LINE_HEIGHT;
   const gap = SSd * spec.ARC_GAP_RATIO;

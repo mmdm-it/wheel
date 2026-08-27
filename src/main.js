@@ -1691,7 +1691,10 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // on its own ladder, absent for every edition but one and for most books of
   // that one. Folding it into the payload would make its ordinary absence
   // look like a missing verse (W-131, W-133).
-  renderMargin(selected, translation, seqOfMargin());
+  // The half the sector was told to draw — NOT re-read from the app. Reading
+  // it twice from two places is how the verse and its notes come to disagree,
+  // and on a preview the app's own value is still the old one.
+  renderMargin(selected, translation, seqOfMargin(), payload?.part ?? 0);
 
   // POST-PAINT WRAP VERIFY (Howell 2026-07-27, the iOS overflow endgame).
   // The wrap is computed from hidden-span measurements, and on iOS those can
@@ -1727,7 +1730,7 @@ const seqOfMargin = () => ++marginRenderSeq;
 // here is an ORDINARY state, not a failure: no volume, no apparatus for the
 // edition, no capture for the book, or a block held for a reading the printed
 // page has to settle. The reader meets a bare margin and nothing says sorry.
-async function renderMargin(selected, translation, seq) {
+async function renderMargin(selected, translation, seq, part = 0) {
   if (!marginPanel) return;
   const clear = () => {
     if (seq !== marginRenderSeq) return;
@@ -1755,9 +1758,6 @@ async function renderMargin(selected, translation, seq) {
   clear();
   if (!found?.entries?.length) return;
   const vpm = measureViewport();
-  // The half the ring has settled on. The verse and its notes show the SAME
-  // half, so the eclipse means one thing on screen however it was triggered.
-  const part = currentApp?.getVersePart?.() ?? 0;
   const node = renderMarginNote(found.entries, {
     width: vpm.width,
     height: vpm.height,

@@ -1983,8 +1983,23 @@ export function createApp({
       }
     });
     pendingSelectionIndex = null; // a thumb overrides any journey in flight
+    // A HALF-STEP IS NOT A SELECTION CHANGE, AND THAT WAS THE WHOLE BUG.
+    // `selectIndex` returns early when the index is unchanged, so carrying an
+    // eclipsed node from one side of the Magnifier to the other — the same
+    // node, the other half — notified nobody and the Detail Sector never
+    // repainted. The ring moved and the words did not. The reading TAP path
+    // has always painted its half explicitly (advanceLeaf, just below); the
+    // thumb path never did, so the second half of a split verse has been
+    // unreachable by scrubbing since O-84 shipped. Found 2026-08-27 when the
+    // widened trigger (O-86) made it visible on a short verse with long notes.
+    const wasIdx = nav.getCurrentIndex();
+    const wasPart = versePart;
     versePart = closestPart; // before selectIndex, so the settle render reads it (O-84)
     nav.selectIndex(closestIdx);
+    if (closestIdx === wasIdx && closestPart !== wasPart
+        && typeof onDetailPreview === 'function') {
+      onDetailPreview(nav.items?.[closestIdx], { part: closestPart });
+    }
     if (closestDelta !== null) {
       const targetRotation = rotation + closestDelta;
       isRotating = true;
