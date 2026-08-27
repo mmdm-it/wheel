@@ -26,6 +26,12 @@ import { bibleAdapter } from '../src/adapters/bible-adapter.js';
 // One edition spanning two divisions — the Vulgate case, which is the only
 // one where the emblem changes WITHOUT the edition changing, and therefore
 // the only one that tests the reader moving rather than the reader choosing.
+// The values are the corpus's real ones as of 2026-08-27, when Howell tied the
+// colour to the emblem rather than to the edition: "The Torah and all Old
+// Testament books in any language are displayed with tekhelet... The purple is
+// tied to the Crown of Thorns for all New Testament editions." A fixture
+// carrying different values would still exercise the code and would stop
+// documenting the rule.
 const SPANNING = [
   { label: 'Vetus Testamentum', image: 'torah_scroll', from: 1, to: 2, books: ['A', 'B'] },
   { label: 'Novum Testamentum', image: 'crown_of_thorns', from: 3, to: 4, books: ['C', 'D'] }
@@ -172,7 +178,7 @@ describe('the emblem swaps without disturbing what is in flight', () => {
 // does (W-114). The engine carries it; it does not know it.
 describe('which colour is under the emblem (O-79)', () => {
   const COLOURED = [
-    { label: 'Vetus Testamentum', image: 'torah_scroll', color: '#16337a', from: 1, to: 2, books: ['A', 'B'] },
+    { label: 'Vetus Testamentum', image: 'torah_scroll', color: '#1034a6', from: 1, to: 2, books: ['A', 'B'] },
     { label: 'Novum Testamentum', image: 'crown_of_thorns', color: '#362e6a', from: 3, to: 4, books: ['C', 'D'] }
   ];
 
@@ -180,7 +186,7 @@ describe('which colour is under the emblem (O-79)', () => {
     const h = handlers(makeManifest(() => COLOURED.map(d => ({ ...d }))));
     const at = id => ({ level: 'book', id });
     assert.equal(h.cornerImageFor(at('B')), 'torah_scroll');
-    assert.equal(h.detailSectorColorFor(at('B')), '#16337a');
+    assert.equal(h.detailSectorColorFor(at('B')), '#1034a6');
     assert.equal(h.cornerImageFor(at('C')), 'crown_of_thorns');
     assert.equal(h.detailSectorColorFor(at('C')), '#362e6a',
       'the emblem and the ground under it must never disagree');
@@ -188,7 +194,7 @@ describe('which colour is under the emblem (O-79)', () => {
 
   it('AT ROOT IT IS THE FIRST DIVISION\'S, exactly as the emblem is', () => {
     const h = handlers(makeManifest(() => COLOURED.map(d => ({ ...d }))));
-    assert.equal(h.detailSectorColorFor({ level: 'bibleRoot', id: 'root' }), '#16337a');
+    assert.equal(h.detailSectorColorFor({ level: 'bibleRoot', id: 'root' }), '#1034a6');
   });
 
   it('NULL RATHER THAN A GUESS when the cargo declares none', () => {
@@ -214,7 +220,7 @@ describe('which colour is under the emblem (O-79)', () => {
 });
 
 describe('the circle repaints without disturbing what is in flight (O-79)', () => {
-  const makeLogo = async (fill = '#16337a') => {
+  const makeLogo = async (fill = '#1034a6') => {
     const { VolumeLogo } = await import('../src/view/volume-logo.js');
     const logo = new VolumeLogo(null, { width: 400, height: 800 });
     const attrs = { fill };
@@ -244,8 +250,8 @@ describe('the circle repaints without disturbing what is in flight (O-79)', () =
   });
 
   it('reports false for the same colour, so a frequent caller stays quiet', async () => {
-    const { logo } = await makeLogo('#16337a');
-    assert.equal(logo.setColor('#16337a'), false, 'already showing it');
+    const { logo } = await makeLogo('#1034a6');
+    assert.equal(logo.setColor('#1034a6'), false, 'already showing it');
     assert.equal(logo.setColor(null), false, 'nothing to show');
     assert.equal(logo.setColor(''), false);
   });
