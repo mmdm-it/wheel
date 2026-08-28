@@ -25,6 +25,7 @@
 // exactly. Presentation only: nothing renumbered, nothing cut.
 import { computeMarginArea } from '../geometry/margin-area.js';
 import { splitVerse } from './detail/plugins/line-layout.js';
+import { siglumRun, SIGLUM_SPLIT, GREEK_LOWER } from '../core/margin-source.js';
 
 /** The footer is set smaller than the note, and this is the largest size that
  *  still leaves room for the worst case. Measured on a phone: at this size one
@@ -132,15 +133,16 @@ export function renderMarginNote(entries, {
   // after the LOOKUP had already been fixed for the same reason — the third
   // time this week that a group of sigla was treated as a letter.
   //
-  // So the body is read the way the lookup reads it: the leading run of
-  // characters that are manuscripts, taken from each token. Every letter in
-  // that run is cited; a Greek word beginning with a capital stops at its
-  // first lowercase letter and cites nothing.
+  // SO IT READS THE BODY WITH THE LOOKUP'S OWN READER, not a second copy of
+  // the same idea. Three copies of this logic existed and all three were wrong
+  // in different weeks; the fix that mattered was not correcting the third but
+  // deleting it. There is one reader now and both layers call it.
   const known = new Set(manuscripts.map(m => m.siglum));
   const cited = new Set();
-  for (const token of String(body).split(/[\s|\]()*,.]+/)) {
-    let i = 0;
-    while (i < token.length && known.has(token[i])) { cited.add(token[i]); i += 1; }
+  for (const token of String(body).split(SIGLUM_SPLIT)) {
+    const { run, stoppedAt } = siglumRun(token, c => known.has(c));
+    if (!run || (stoppedAt !== null && GREEK_LOWER.test(stoppedAt))) continue;
+    for (const c of run) cited.add(c);
   }
   const shown = whole ? manuscripts.filter(m => m.fromMark || cited.has(m.siglum)) : manuscripts;
 

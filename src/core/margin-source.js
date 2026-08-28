@@ -176,6 +176,44 @@ export async function loadMarginLegend({ base, version, edition, fetchJson }) {
   return legendCache;
 }
 
+/**
+ * THE ONE READER OF A SIGLUM RUN. Swete writes agreement by running sigla
+ * together — "AR" is two manuscripts, "ℵAQΓ" is four — and this returns the
+ * letters at the START of a token that are manuscripts, stopping at the first
+ * character that is not.
+ *
+ * IT EXISTS BECAUSE THE SAME MISTAKE WAS MADE THREE TIMES IN ONE WEEK, in
+ * three layers, each assuming a group of sigla was a letter: the latinisation
+ * converted a lone capital and left the letters inside a group alone; the
+ * lookup read a token's first character and discarded the rest; and the
+ * display demanded a word boundary the page does not put there. Each was
+ * found separately, by a reader, after the previous one had been declared
+ * fixed — because each fix corrected a COPY of the logic and left the others
+ * standing.
+ *
+ * Three correct copies is not the same as one correct implementation. A fourth
+ * layer will be written one day and it will get this wrong too unless there is
+ * nothing left to get wrong.
+ *
+ * The stopping rule is what keeps a Greek word out: a proper noun beginning
+ * with a capital that happens to be a siglum stops at its first lowercase
+ * letter, and the caller may reject the run on that ground. A siglum carrying
+ * a modifier — an asterisk, a hand number — stops at the modifier and keeps
+ * the manuscript.
+ */
+export function siglumRun(token, isSiglum) {
+  let n = 0;
+  while (n < token.length && isSiglum(token[n])) n += 1;
+  return { run: token.slice(0, n), stoppedAt: n < token.length ? token[n] : null };
+}
+
+/** How a stretch of apparatus is broken into tokens. Shared, so that the
+ *  layer deciding WHICH manuscripts a note names and the layer deciding which
+ *  of them to PRINT cannot disagree about where a token ends. */
+export const SIGLUM_SPLIT = /[\s|\]()*,.]+/;
+/** A lowercase Greek letter — the signal that a capital began a WORD. */
+export const GREEK_LOWER = /[\u03B1-\u03C9\u1F00-\u1FFF]/;
+
 // Swete's Roman numerals marking a container turn inside a page of
 // apparatus. They are Latin capitals because that is what the page prints,
 // but they are NOT manuscripts: one stands 1,822 times in volume I alone,
@@ -207,15 +245,13 @@ export function manuscriptsIn(text, legend, unitId) {
   // proper noun beginning with a capital that happens to be a siglum stops at
   // its first lowercase letter and is rejected, while "A*vid" stops at the
   // asterisk and correctly yields A.
-  const GREEK_LOWER = /[\u03B1-\u03C9\u1F00-\u1FFF]/;
-  for (const token of String(text).split(/[\s|\]()*,.]+/)) {
-    let run = 0;
-    while (run < token.length && token[run] in named) run += 1;
+  for (const token of String(text).split(SIGLUM_SPLIT)) {
+    const { run, stoppedAt } = siglumRun(token, c => c in named);
     if (!run) continue;
     // Stopped because the next character is Greek text — this was a word, not
     // a group of sigla.
-    if (run < token.length && GREEK_LOWER.test(token[run])) continue;
-    for (const c of token.slice(0, run)) {
+    if (stoppedAt !== null && GREEK_LOWER.test(stoppedAt)) continue;
+    for (const c of run) {
       if (seen.has(c) || NOT_SIGLA.has(c)) continue;
       seen.add(c);
       out.push({ siglum: c, name: named[c], order: order.indexOf(c) });
