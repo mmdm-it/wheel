@@ -193,6 +193,7 @@ export function manuscriptsIn(text, legend, unitId) {
   const volume = legend.volumes.find(v => v.units?.includes(unitId));
   if (!volume) return [];
   const named = volume.sigla || {};
+  const order = Object.keys(named);
   const out = [];
   const seen = new Set();
   // A TOKEN MAY NAME SEVERAL MANUSCRIPTS AT ONCE, and reading only its first
@@ -217,9 +218,16 @@ export function manuscriptsIn(text, legend, unitId) {
     for (const c of token.slice(0, run)) {
       if (seen.has(c) || NOT_SIGLA.has(c)) continue;
       seen.add(c);
-      out.push({ siglum: c, name: named[c] });
+      out.push({ siglum: c, name: named[c], order: order.indexOf(c) });
     }
   }
+  // IN SWETE'S OWN ORDER, NOT THE ORDER WE HAPPENED TO MEET THEM (Howell,
+  // 2026-08-27: "sort the legend alphabetically by code"). His front matter
+  // lists the manuscripts alphabetically with the aleph at their head and the
+  // Greek-lettered ones after the Latin, so the volume's list IS the order —
+  // and quoting it costs nothing while inventing a sort would put the aleph
+  // and the gamma wherever a codepoint happens to fall.
+  out.sort((a, b) => a.order - b.order);
   return out;
 }
 

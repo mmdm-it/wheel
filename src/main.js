@@ -1801,6 +1801,10 @@ async function renderMargin(selected, translation, seq, part = 0) {
   for (const m of found.marksNamed || []) {
     if (!named.some(x => x.siglum === m.siglum)) named.push({ ...m, fromMark: true });
   }
+  // The two lists arrive each in Swete's order; merged they are not, because a
+  // mark's manuscript is appended after the note's. Sorted once, here, on the
+  // same key both carry.
+  named.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
   const node = renderMarginNote(found.entries, {
     width: vpm.width,
     height: vpm.height,
