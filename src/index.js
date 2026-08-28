@@ -1815,10 +1815,21 @@ export function createApp({
     // (parent-button header, pyramid) follows the geometry, not this.
     pendingSelectionIndex = index;
     isRotating = true;
+    const fromPart = versePart;
+    const startedAt = nav.getCurrentIndex();
     animateSnapTo(clampedRotation, duration, () => {
       pendingSelectionIndex = null;
       versePart = part; // before selectIndex, so the settle render reads the right half (O-84)
       nav.selectIndex(index);
+      // A JOURNEY THAT ENDS WHERE IT STARTED STILL CHANGES THE HALF, and
+      // selectIndex is silent when the index does not move — so a tap on the
+      // NODE of an eclipsed verse rotated the ring back to the first half and
+      // left the sector showing the second. The same silence O-102 found on
+      // the thumb path, on a third route into it.
+      if (index === startedAt && part !== fromPart
+          && typeof onDetailPreview === 'function') {
+        onDetailPreview(nav.items?.[index], { part });
+      }
       if (typeof opts.onArrive === 'function') opts.onArrive();
     });
     return true;

@@ -578,6 +578,17 @@ svg :focus-visible {
    show. */
 .focus-ring-magnifier.eclipsed .focus-ring-magnifier-circle {
   fill: none;
+  /* AND IT MUST STILL TAKE A TAP. `fill: none` in SVG does not merely paint
+     nothing — it makes the INTERIOR transparent to pointer events, leaving
+     only the one-pixel stroke hittable. So the lens became almost impossible
+     to touch at the exact moment it acquired a job: an eclipsed verse is the
+     only state where tapping it does anything, and that is the state that
+     turned it off. Howell's taps were landing on the NODE behind it instead,
+     which rotates the ring without changing the half — the ring moving to the
+     first half while the text stayed on the second, exactly as he reported.
+
+     `pointer-events: all` gives a fill-less shape its interior back. */
+  pointer-events: all;
 }
 
 /* THE WITHHELD VOLUME (H-14; Howell 2026-08-12, specified from the phone).
