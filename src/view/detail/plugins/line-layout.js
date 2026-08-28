@@ -374,6 +374,102 @@ export function versePartCount(text, bounds) {
   return parts;
 }
 
+/**
+ * A POEM FLOWS LINE BY LINE ON A STRAIGHT LEFT EDGE (O-112; Howell's ruling
+ * 2026-08-28: same size as prose, the straight edge itself the quiet signal
+ * that this is verse). Each metrical line begins a display line; a long line
+ * wraps with a hanging indent; the left origin is the widest arc intrusion
+ * over the rows the poem actually occupies, found by iteration — the arc
+ * keeps the right edge, the poem keeps its skeleton.
+ */
+function flowPoemAt(poemLines, bounds, fontPx, { unbounded = false } = {}) {
+  const lineH = fontPx * VERSE_LINE_HEIGHT;
+  const lt = bounds.lineTable || [];
+  const top = bounds.topY;
+  const bottom = unbounded ? Infinity : top + (bounds.bottomY - top) * VERSE_FILL;
+  const meas = makeMeasurer(fontPx);
+  const widthOf = meas ? t => meas.width(t) : t => t.length * fontPx * VERSE_CHAR_EM;
+  const hang = fontPx * 1.1;
+  try {
+    let x0 = sectorMetricAt(lt, top).leftX;
+    for (let pass = 0; pass < 3; pass += 1) {
+      const lines = [];
+      let overflow = false;
+      let y = top;
+      let maxLeft = x0;
+      for (const poemLine of poemLines) {
+        if (overflow) break;
+        const words = String(poemLine).split(/\s+/).filter(Boolean);
+        let cur = '';
+        let firstRow = true;
+        for (const w of words) {
+          if (y + lineH > bottom) { overflow = true; break; }
+          const m = sectorMetricAt(lt, y);
+          maxLeft = Math.max(maxLeft, m.leftX);
+          const left = firstRow ? x0 : x0 + hang;
+          const avail = m.leftX + m.width - left;
+          const test = cur ? `${cur} ${w}` : w;
+          if (widthOf(test) <= avail || !cur) { cur = test; continue; }
+          lines.push({ text: cur, y, leftX: left, availableWidth: avail, head: firstRow });
+          y += lineH; firstRow = false; cur = w;
+        }
+        if (!overflow && cur) {
+          const m = sectorMetricAt(lt, y);
+          maxLeft = Math.max(maxLeft, m.leftX);
+          const left = firstRow ? x0 : x0 + hang;
+          lines.push({ text: cur, y, leftX: left, availableWidth: m.leftX + m.width - left, head: firstRow });
+          y += lineH;
+          if (y + lineH > bottom && poemLine !== poemLines[poemLines.length - 1]) overflow = true;
+        }
+      }
+      // The straight edge must clear the arc everywhere it stands; if a row
+      // deeper in the poem intrudes further, move the whole edge and reflow.
+      if (maxLeft > x0 + 0.5 && pass < 2) { x0 = maxLeft; continue; }
+      return { lines, overflow };
+    }
+  } finally {
+    if (meas) meas.done();
+  }
+}
+
+/** How many screens a poem needs — 1 or 2, the eclipse's own cap. */
+export function poemPartCount(poemLines, bounds) {
+  return flowPoemAt(poemLines, bounds, uniformVerseFontPx(bounds)).overflow ? 2 : 1;
+}
+
+/** Lay out a poem; a long one splits at a METRICAL LINE boundary — never
+ *  mid-line — balanced by characters, one half per eclipse part. */
+export function layoutPoem(poemLines, bounds, part = 0) {
+  const fontPx = uniformVerseFontPx(bounds);
+  const whole = flowPoemAt(poemLines, bounds, fontPx);
+  if (!whole.overflow) return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+  const total = poemLines.join(' ').length;
+  let acc = 0, cut = 1, best = Infinity;
+  for (let i = 1; i < poemLines.length; i += 1) {
+    acc += poemLines[i - 1].length + 1;
+    const d = Math.abs(acc - (total - acc));
+    if (d < best) { best = d; cut = i; }
+  }
+  const chosen = part === 1 ? poemLines.slice(cut) : poemLines.slice(0, cut);
+  // NEVER LOSE SCRIPTURE: the uniform size was budgeted for prose, and a
+  // poem's line-per-line flow spends more vertical room — an extreme half
+  // (Tobit's sixteen-line prayer) may overflow even its own screen. The
+  // half steps its size down until it fits, floored at three quarters;
+  // shrinking one psalm's screen beats truncating it, and prose verses are
+  // untouched.
+  let px = fontPx;
+  let flow = flowPoemAt(chosen, bounds, px);
+  while (flow.overflow && px > fontPx * 0.75) {
+    px *= 0.95;
+    flow = flowPoemAt(chosen, bounds, px);
+  }
+  // The floor reached and still overfull — a case no real verse reaches at
+  // real bounds, but the guarantee is absolute: seat every word anyway,
+  // running past the fill line, because scripture is never truncated.
+  if (flow.overflow) flow = flowPoemAt(chosen, bounds, px, { unbounded: true });
+  return { fontPx: px, lines: flow.lines, parts: 2, part: part === 1 ? 1 : 0 };
+}
+
 // Lay out ONE verse at the shared uniform size. Returns the size to apply and
 // the seated lines; a verse longer than the reference (shouldn't happen) has
 // its last line ellipsized rather than overrunning the sector.

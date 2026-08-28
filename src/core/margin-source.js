@@ -127,7 +127,34 @@ export function marginCached(edition, unitId) {
 
 export function legendCached() { return legendCache ?? null; }
 
-export function clearMarginCache() { cache.clear(); legendCache = undefined; }
+/**
+ * THE POEM'S LINES, fetched per unit like the apparatus (W-210/O-112). Swete
+ * sets a fifth of the corpus as verse; the side-file maps each poem verse to
+ * the character offsets in the SEATED text where its metrical lines begin —
+ * built read-only against the repaired text, with alignment fallbacks, so a
+ * verse with no entry here simply reads as prose.
+ */
+const poetryCache = new Map();
+export async function loadPoetry({ base, version, edition, unitId, fetchJson, identityOf }) {
+  if (!edition || !unitId) return null;
+  const key = `${edition}|${unitId}`;
+  if (poetryCache.has(key)) return poetryCache.get(key);
+  let value = null;
+  try {
+    const file = await fetchJson(resolvePath({ base, version, kind: 'poetry', edition, unitId }));
+    const declared = typeof identityOf === 'function' ? identityOf(file) : undefined;
+    if (file && declared === unitId && file.poetry && typeof file.poetry === 'object') {
+      value = file.poetry;
+    }
+  } catch {
+    value = null;   // prose is a state, not a failure
+  }
+  poetryCache.set(key, value);
+  return value;
+}
+export function poetryCached(edition, unitId) { return poetryCache.get(`${edition}|${unitId}`) ?? null; }
+
+export function clearMarginCache() { cache.clear(); poetryCache.clear(); legendCache = undefined; }
 
 /**
  * The addresses a chart seats, in its own order, spelled the way a reader's

@@ -18,7 +18,7 @@ import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js'
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { apparatusRuns } from './core/margin-source.js';
 import { computeMarginArea } from './geometry/margin-area.js';
-import { onVerseFontReady, invalidateVerseMeasurement, versePartCount } from './view/detail/plugins/line-layout.js';
+import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
@@ -81,6 +81,8 @@ pinCanvas(viewport);
 // measurement itself is invalidated (font arrival, re-wrap), since the count
 // derives from the measured size.
 const versePartsCache = new Map();
+const volumeForParts = () => currentManifest?.__wallVolume;
+let currentDetailRerender = null;   // set at boot; repaints the seated verse (O-112)
 
 // D.2 — the dimension state lives at the HOST level, above bootVolume, so a
 // choice survives volume reboots and gateway round trips (Howell ruling
@@ -1704,6 +1706,15 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   if (payload?.type === 'text' && payload.uniform) {
     payload.dir = dimensionBridge.editionDirection(translation);
     payload.lang = dimensionBridge.editionLang(translation);
+    // O-112: a poem verse carries its metrical lines, sliced from the seated
+    // text at the side-file's offsets. Cache-only here - an unfetched poem
+    // reads as prose until the arrival reflex repaints, the margin's pattern.
+    const pv = currentManifest?.__wallVolume;
+    const offs = pv?.poemAtSync?.(selected?.meta?.externalFile, translation, selected?.meta?.verseKey);
+    if (Array.isArray(offs) && offs.length > 1 && typeof payload.text === 'string') {
+      const txt = payload.text;
+      payload.poemLines = offs.map((o, i) => txt.slice(o, i + 1 < offs.length ? offs[i + 1] : txt.length).trim()).filter(Boolean);
+    }
     // O-84: which half of a split verse to show. An explicit part rides a
     // preview (the reading tap paints ahead of the ring); otherwise the
     // settled half is the ring's own state, so text and eclipse agree.
@@ -1822,6 +1833,21 @@ async function renderMargin(selected, translation, seq, part = 0) {
   // a re-settle (Howell, Leviticus 1:8, 2026-08-28). The eclipse flag is
   // computed fresh on every ring render, so one redraw at the current
   // rotation is the whole cure.
+  // O-112: the poem rides the same wire. Fetched beside the apparatus so a
+  // poem verse reached cold learns its lines the same way it learns its
+  // notes - and the same reflex re-asks the ring and repaints the text.
+  const hadPoem = typeof volume.poemAtSync === 'function'
+    && volume.poemAtSync(bookId, translation, address) !== null;
+  let poemArrived = false;
+  if (typeof volume.poemAt === 'function') {
+    try { poemArrived = !hadPoem && (await volume.poemAt(bookId, translation, address)) !== null; }
+    catch { poemArrived = false; }
+  }
+  if (poemArrived && seq === marginRenderSeq) {
+    versePartsCache.clear();
+    currentApp?.resettle?.();
+    currentDetailRerender?.(currentApp?.getVersePart?.() ?? 0);
+  }
   if (!hadIt && found?.entries?.length) {
     versePartsCache.clear();
     // Re-PARK, not just re-paint (O-111): the eclipse offset is settled
@@ -2824,9 +2850,20 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         const payload = adapter?.detailFor
           ? adapter.detailFor(item, manifest, { normalized: adapterNormalized, translation })
           : null;
-        let parts = (payload?.uniform && typeof payload.text === 'string')
-          ? versePartCount(payload.text, computeDetailSectorBounds(vpm.width, vpm.height))
-          : 1;
+        let parts = 1;
+        if (payload?.uniform && typeof payload.text === 'string') {
+          const bounds = computeDetailSectorBounds(vpm.width, vpm.height);
+          // O-112: a poem verse is measured by its own line-per-line flow -
+          // the prose count would under- or over-state its screens.
+          const offs = volumeForParts()?.poemAtSync?.(item?.meta?.externalFile, translation, item?.meta?.verseKey);
+          if (Array.isArray(offs) && offs.length > 1) {
+            const txt = payload.text;
+            const pls = offs.map((o, i) => txt.slice(o, i + 1 < offs.length ? offs[i + 1] : txt.length).trim()).filter(Boolean);
+            parts = poemPartCount(pls, bounds);
+          } else {
+            parts = versePartCount(payload.text, bounds);
+          }
+        }
         // O-86: THE ECLIPSE TRIGGER WIDENS. A verse short enough to read whole
         // may still carry notes too extensive for the margin, and Howell ruled
         // those split the same way — "we simply display those notes in halves".
@@ -2847,6 +2884,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   });
   currentApp = app;
   currentManifest = manifest;
+  currentDetailRerender = part => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+    { translation: activeTranslation(), part });
   // THE MARK FOLLOWS THE READER (H-25). Before this it was re-evaluated on an
   // edition change and at boot only, which was sufficient while it asked about
   // the edition and is not once it asks about the BOOK: the reader would carry

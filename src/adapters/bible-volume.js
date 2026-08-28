@@ -24,7 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
-import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, marksAt, addressOrder, manuscriptsIn } from '../core/margin-source.js';
+import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, marksAt, addressOrder, manuscriptsIn, loadPoetry, poetryCached } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
@@ -333,6 +333,18 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     // await. An apparatus not yet fetched answers "none", which settles the
     // node centred; the host drops its part-count cache when one arrives, so
     // the question is asked again with the real answer.
+    // THE POEM'S OFFSETS for one verse — async fetch and cache-only twin,
+    // the margin's own pattern (O-112). Null means prose, a state not a
+    // failure; the HOST slices the seated text, because the host holds it.
+    async poemAt(unitId, edition, address) {
+      const p = await loadPoetry({ base, version, edition, unitId, fetchJson, identityOf: f => f?.book });
+      return p?.[address] ?? null;
+    },
+    poemAtSync(unitId, edition, address) {
+      const p = poetryCached(edition, unitId);
+      return p?.[address] ?? null;
+    },
+
     marginAtSync(unitId, edition, address) {
       const chart = charts.get(`${unitId}|${edition}`);
       const margin = marginCached(edition, unitId);
