@@ -1623,6 +1623,31 @@ const detailPanel = document.getElementById('detail-panel');
 const detailContent = document.getElementById('detail-content');
 const marginPanel = document.getElementById('margin-panel');
 const marginMarks = document.getElementById('margin-marks');
+// ── THE MARGIN'S OWN STATE, ON THE GLASS (?margin=debug) ────────────────────
+// Inert unless asked for. It exists because of how this evening went: three
+// separate times a fix was declared done and was not, and each time the only
+// way to find out was Howell reloading on a phone and reporting what he saw.
+// I could not see the glass and was inferring the machinery's state from a
+// photograph of its output, which is how a lens that could not be TAPPED
+// looked exactly like a toggle that did not WORK.
+//
+// So this prints what the machinery BELIEVES, beside what it drew: how many
+// screens it thinks this verse needs, which half it is showing, how many notes
+// and marks it found. A screenshot of that is a fact rather than an inference.
+const MARGIN_DEBUG = (() => {
+  try { return new URLSearchParams(location.search).get('margin') === 'debug'; }
+  catch { return false; }
+})();
+let marginDebugEl = null;
+function marginDebug(line) {
+  if (!MARGIN_DEBUG) return;
+  if (!marginDebugEl) {
+    marginDebugEl = document.createElement('div');
+    marginDebugEl.id = 'margin-debug';
+    document.body.appendChild(marginDebugEl);
+  }
+  marginDebugEl.textContent = line;
+}
 
 // Toggle detail panel visibility in sync with the Detail Sector animation.
 // The panel fades in after the blue circle has finished expanding,
@@ -1717,6 +1742,13 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // it twice from two places is how the verse and its notes come to disagree,
   // and on a preview the app's own value is still the old one.
   renderMargin(selected, translation, seqOfMargin(), payload?.part ?? 0);
+  if (MARGIN_DEBUG) {
+    // Both halves of the fact that was two facts until tonight: the half the
+    // SECTOR was told to draw, and the half the APP believes it is on. They
+    // must agree; when they did not, the ring and the words disagreed.
+    marginDebug(`${selected?.meta?.verseKey ?? '?'}  drawn ${payload?.part ?? 0}`
+      + `  app ${currentApp?.getVersePart?.() ?? '?'}`);
+  }
 
   // POST-PAINT WRAP VERIFY (Howell 2026-07-27, the iOS overflow endgame).
   // The wrap is computed from hidden-span measurements, and on iOS those can
@@ -1817,6 +1849,12 @@ async function renderMargin(selected, translation, seq, part = 0) {
     create: tag => document.createElement(tag),
   });
   if (node && seq === marginRenderSeq) marginPanel.appendChild(node);
+  if (MARGIN_DEBUG) {
+    marginDebug(`${address}  drawn ${part}`
+      + `  notes ${found.entries?.length ?? 0}`
+      + `  marks ${(found.marks || []).join('') || '-'}`
+      + `  named ${(found.marksNamed || []).map(m => m.siglum).join('') || '-'}`);
+  }
 }
 
 function wireInteractions(getApp) {

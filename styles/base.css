@@ -1091,3 +1091,20 @@ svg :focus-visible {
    learn. The names went back there and these are letters again. */
 .margin-marks { text-align: right; }
 .margin-marks-sigla { letter-spacing: 0.08em; }
+
+/* The margin's own state, drawn only under ?margin=debug. Deliberately ugly:
+   it is an instrument, not part of the reader's page, and must never be
+   mistaken for one. */
+#margin-debug {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 3px 6px;
+  background: rgba(0, 0, 0, 0.82);
+  color: #6f6;
+  font-family: monospace;
+  font-size: 10px;
+  white-space: nowrap;
+  pointer-events: none;
+}
