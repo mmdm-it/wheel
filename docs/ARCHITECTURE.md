@@ -1,12 +1,18 @@
 # Architecture (Adapter Reset, v3.x numbering)
 
-*Last audited: 2026-08-20 by Orville — Q3 (does it assert a state that is now
-false?). Three findings, all struck below and filed as O-82: the strata cycle
-ran the wrong way, the interaction store's events and state were stale, and a
-paragraph still called itself current at v3.7.12. Observed and NOT changed,
-because it is another document and this is one sitting: `DIMENSION_SYSTEM.md`
-describes the dimension button as a two-stratum on/off toggle, which it is not.
-That is the next audit.*
+*Last audited: 2026-08-28 — Q4 (does it use vocabulary a later ruling
+abolished?). It did, and as in `PROOFREAD-SUITE.md` the day before, the
+abolished word was a SELF-CONTRADICTION rather than merely a stale one: this
+document states at "Consequences" that `volume.json` is the sole enumeration
+and that nothing else says what a volume contains — "not a manifest" — while
+its own migration checklist below still called for turning `data/*/manifest.json`
+into schemas, and the section above it for caching manifests per volume. That
+file does not exist: W-139 deleted it as a 278KB husk describing a
+two-testament Bible with no books in it. Corrected in place; see W-193.*
+
+*(Previously: 2026-08-20 by Orville — Q3, three findings filed as O-82 — the
+strata cycle running the wrong way, a stale interaction store, and a paragraph
+calling itself current at v3.7.12.)*
 
 > Goal: keep the proven geometry/rendering pieces but rebuild around adapters, schemas, and a single interaction store/state machine. Every volume ships a plugin adapter; renderers stay data-agnostic. Roadmap tracks this work as v3.3–v3.6.
 
@@ -170,13 +176,21 @@ cannot be reached cannot be silently wrong.
 
 - Provide ARIA labels from normalized metadata; ensure focus order respects interaction state.
 - Respect reduced motion; allow theme tokens to adjust motion duration/curves.
-- Use lazy data hydration per adapter when supported; cache manifests per volume.
+- Use lazy data hydration per adapter when supported; cache each volume's own
+  enumeration — `volume.json` under its version directory (H-11), never a
+  manifest, which no volume has had since W-139.
 
 **Roadmap alignment:** Build/test checkpoints live in `docs/ROADMAP.md` (v3.3–v3.6) and reference this contract for adapter/store expectations.
 
 ## Migration Checklist (from v3 → v4)
 
-- **Data & validation**: Turn `data/*/manifest.json` into JSON Schemas + adapter `validate/normalize`; move runtime validator logic into tests.
+- **Data & validation**: JSON Schemas for a volume's own enumeration —
+  `data/<volume>/<version>/volume.json` — plus adapter `validate/normalize`,
+  with runtime validator logic in tests. *(This line said `data/*/manifest.json`
+  until 2026-08-28, which contradicted the Consequences section fifty lines
+  above: a manifest is exactly what a volume does NOT have. Corrected under
+  W-193 rather than deleted, because the checklist item itself still stands —
+  what changed is the name of the thing being validated.)*
 - **Adapters**: Create one adapter per volume (gutenberg/bible, catalog/mmdm, calendar); each owns `loadManifest`, `validate`, `normalize`, `layoutSpec`, `capabilities`.
 - **Interaction state**: Replace scattered navigation/rotation/volume globals with a single store/state machine (actions: rotate, focus, set-volume, deep-link, animation start/end).
 - **Rendering**: Point focus-ring/geometry and views to consume `normalized + layoutSpec`; delete data-specific conditionals in shared render/navigation code.
