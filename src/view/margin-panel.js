@@ -57,6 +57,25 @@ function flow(text, area, fromRow) {
 }
 
 /**
+ * WHERE A NOTE SETTLES: AGAINST THE BOTTOM, NOT UNDER THE CEILING (Howell,
+ * 2026-08-28: "justify the margin notes vertically... those two uppermost
+ * lines that we recently made available only be used as a last resort").
+ * The lens's top rows are its narrowest — they exist so a LONG note can fit
+ * at all — and a short note that starts there hangs high and cramped when
+ * the wide rows below stand empty. So the note is flowed from the lowest
+ * starting row that still holds all of it, which packs its last line against
+ * the footer; the narrow ceiling rows fill only when the text genuinely
+ * needs their length. Exported for the suite: the choice is geometry and
+ * must be testable without a DOM.
+ */
+export function settleRow(text, area) {
+  for (let k = area.lineTable.length - 1; k > 0; k--) {
+    if (!flow(text, area, k).remaining) return k;
+  }
+  return 0;
+}
+
+/**
  * How many screens this verse's notes need — 1 or 2, never more, matching the
  * Detail Sector's own hard cap. The ring asks this to decide whether to settle
  * the node centred or as a partial eclipse, so it MUST agree with what the
@@ -117,7 +136,7 @@ export function renderMarginNote(entries, {
     const [x, y] = splitVerse(whole);
     body = part === 1 ? y : x;
   }
-  const laid = whole ? flow(body, noteArea, 0) : { lines: [], remaining: '' };
+  const laid = whole ? flow(body, noteArea, settleRow(body, noteArea)) : { lines: [], remaining: '' };
 
   // THE FOOTER NAMES WHAT IS ON THIS SCREEN, NOT WHAT IS IN THE WHOLE NOTE.
   // The rule was stated before it was implemented and the implementation broke

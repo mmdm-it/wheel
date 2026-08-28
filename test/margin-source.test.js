@@ -17,6 +17,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { addressOrder, blockAt, entriesAt, apparatusRuns } from '../src/core/margin-source.js';
+import { settleRow } from '../src/view/margin-panel.js';
 
 const chart = {
   seats: [
@@ -157,5 +158,36 @@ describe('the hands are raised by the app, not by font luck (O-108)', () => {
   it('passes plain text through as one run', () => {
     assert.deepEqual(apparatusRuns('ειδεν AD] ωστε φαινειν επι E'),
       [{ text: 'ειδεν AD] ωστε φαινειν επι E', sup: false }]);
+  });
+});
+
+describe('a note settles against the bottom of the lens (O-109)', () => {
+  // Howell, 2026-08-28: the top rows of the lens are its narrowest and exist
+  // for long notes; a short note must not begin there while the wide rows
+  // below stand empty. The note flows from the lowest starting row that
+  // still holds all of it. Geometry only — a synthetic lens, no DOM.
+  const lens = {
+    fontPx: 10,   // maxChars per row = availableWidth / 4.6
+    lineTable: [
+      { availableWidth: 28 },   // ~6 chars — the narrow ceiling
+      { availableWidth: 37 },   // ~8
+      { availableWidth: 92 },   // ~20
+      { availableWidth: 92 },   // ~20
+    ],
+  };
+
+  it('drops a short note past the narrow ceiling rows', () => {
+    // 17 characters fit in the bottom row alone.
+    assert.equal(settleRow('υδατος εποιησεν', lens), 3);
+  });
+
+  it('uses exactly as many low rows as the note needs', () => {
+    // ~36 characters need the two wide rows, not the ceiling.
+    assert.equal(settleRow('υδατος εποιησεν sup ras και εγενετο', lens), 2);
+  });
+
+  it('surrenders the ceiling only to a note that cannot fit without it', () => {
+    const long = 'ενας δυο τρια τεσσερα πεντε εξι επτα οκτω εννεα δεκα εντεκα δωδεκα';
+    assert.equal(settleRow(long, lens), 0);
   });
 });
