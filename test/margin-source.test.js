@@ -17,7 +17,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { addressOrder, blockAt, entriesAt, apparatusRuns } from '../src/core/margin-source.js';
-import { settleRow, flow } from '../src/view/margin-panel.js';
+import { settleRow, flow, renderMarginNote } from '../src/view/margin-panel.js';
 
 const chart = {
   seats: [
@@ -223,5 +223,29 @@ describe('nothing is eaten at the row edge (O-110)', () => {
       const max = Math.max(4, Math.floor(l.row.availableWidth / (lens.fontPx * 0.46)));
       assert.ok(l.text.length <= max, `"${l.text}" exceeds its row`);
     }
+  });
+});
+
+describe('a note half that overflows the lens shrinks, never loses its tail (O-113)', () => {
+  // Genesis 25:3: the Raguel clause stood in the data and appeared on
+  // NEITHER screen — the half exceeded the lens's rows and the tail dropped
+  // in silence. The lens now recomputes at a smaller register until the
+  // half fits, floored at six tenths.
+  it('seats every word of a page-length half', () => {
+    const mk = () => { const el = { style: {}, kids: [], className: '', _t: '' };
+      el.appendChild = c => el.kids.push(c); el.setAttribute = () => {};
+      Object.defineProperty(el, 'textContent', { get() { return el._t; }, set(v) { el._t = v; } });
+      return el; };
+    const words = Array.from({ length: 70 }, (_, i) => `σημειον${i + 1}`);
+    const entry = { at: '1:1', text: words.join(' ') };
+    let shown = '';
+    for (const part of [0, 1]) {
+      const out = renderMarginNote([entry], { width: 360, height: 800, create: mk, part,
+        manuscripts: [{ siglum: 'A', name: 'x' }] });
+      for (const k of out.kids) if (k.className === 'margin-note-line')
+        shown += k.kids.map(x => x._t).join('') + ' ';
+    }
+    const got = shown.replace(/-\s/g, '').replace(/\s+/g, '');
+    for (const w of words) assert.ok(got.includes(w), `${w} never reached the glass`);
   });
 });

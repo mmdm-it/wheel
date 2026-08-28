@@ -23,7 +23,7 @@
 // itself is splitVerse's, the same balanced word-boundary cut the Detail
 // Sector uses, so joining the halves with one space reproduces the notes
 // exactly. Presentation only: nothing renumbered, nothing cut.
-import { computeMarginArea } from '../geometry/margin-area.js';
+import { computeMarginArea, MARGIN_SPEC } from '../geometry/margin-area.js';
 import { splitVerse } from './detail/plugins/line-layout.js';
 import { siglumRun, SIGLUM_SPLIT, GREEK_LOWER, apparatusRuns } from '../core/margin-source.js';
 
@@ -34,6 +34,9 @@ import { siglumRun, SIGLUM_SPLIT, GREEK_LOWER, apparatusRuns } from '../core/mar
  *  buys nothing until six. */
 const FOOTER_RATIO = 0.026;
 const FOOTER_LINE = 1.25;
+
+/** The lens at a smaller register: font (and so pitch) scaled, geometry kept. */
+const scaledMarginSpec = scale => ({ ...MARGIN_SPEC, FONT_RATIO: MARGIN_SPEC.FONT_RATIO * scale });
 
 /** The note's face, stated once — the measurer and the stylesheet must agree. */
 const NOTE_FACE = "'EB Garamond', Georgia, serif";
@@ -176,7 +179,23 @@ export function renderMarginNote(entries, {
     const [x, y] = splitVerse(whole);
     body = part === 1 ? y : x;
   }
-  const laid = whole ? flow(body, noteArea, settleRow(body, noteArea, fits), fits) : { lines: [], remaining: '' };
+  let laid = whole ? flow(body, noteArea, settleRow(body, noteArea, fits), fits) : { lines: [], remaining: '' };
+  // A HALF THAT STILL OVERFLOWS THE LENS SHRINKS RATHER THAN LOSES ITS TAIL
+  // (O-113). The two-screen cap is real, and a page-length note's half can
+  // exceed the lens's rows — Genesis 25:3's Raguel clause was silently
+  // absent from BOTH screens, standing in the data the whole time. The
+  // lens is recomputed at a smaller register until the half fits, floored
+  // at six tenths; the apparatus is already the page's small voice, and a
+  // smaller register beats a silent hole in it.
+  let effArea = a, effNoteArea = noteArea, effFits = fits;
+  for (let scale = 0.9; laid.remaining && scale >= 0.6; scale -= 0.1) {
+    effArea = computeMarginArea(width, height, scaledMarginSpec(scale));
+    const effReserved = footerRows(manuscripts, effArea);
+    effNoteArea = { ...effArea, lineTable: effArea.lineTable.slice(0, Math.max(1, effArea.lineTable.length - effReserved)) };
+    effFits = makeFits(effArea);
+    laid = flow(body, effNoteArea, settleRow(body, effNoteArea, effFits), effFits);
+  }
+  const aOut = effArea;
 
   // THE FOOTER NAMES WHAT IS ON THIS SCREEN, NOT WHAT IS IN THE WHOLE NOTE.
   // The rule was stated before it was implemented and the implementation broke
@@ -216,8 +235,8 @@ export function renderMarginNote(entries, {
     span.style.left = `${row.leftX.toFixed(1)}px`;
     span.style.top = `${row.y.toFixed(1)}px`;
     span.style.width = `${Math.max(0, row.availableWidth).toFixed(1)}px`;
-    span.style.fontSize = `${a.fontPx.toFixed(1)}px`;
-    span.style.lineHeight = `${a.pitch.toFixed(1)}px`;
+    span.style.fontSize = `${aOut.fontPx.toFixed(1)}px`;
+    span.style.lineHeight = `${aOut.pitch.toFixed(1)}px`;
     // The hands raised by the panel itself, in the note's own face — never by
     // a fallback font, which raised a question mark on Howell's phone.
     for (const run of apparatusRuns(text)) {
