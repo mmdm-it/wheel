@@ -195,11 +195,30 @@ export function manuscriptsIn(text, legend, unitId) {
   const named = volume.sigla || {};
   const out = [];
   const seen = new Set();
+  // A TOKEN MAY NAME SEVERAL MANUSCRIPTS AT ONCE, and reading only its first
+  // letter dropped the rest. Swete writes agreement by running the sigla
+  // together — "AR" is the Alexandrinus AND the Verona Psalter, "ℵAQΓ" is four
+  // — and Howell caught it on a Psalm whose note read AR while the legend
+  // named A alone.
+  //
+  // The run is taken from the START and only while every character is a
+  // manuscript this volume knows, which is what keeps a Greek word out: a
+  // proper noun beginning with a capital that happens to be a siglum stops at
+  // its first lowercase letter and is rejected, while "A*vid" stops at the
+  // asterisk and correctly yields A.
+  const GREEK_LOWER = /[\u03B1-\u03C9\u1F00-\u1FFF]/;
   for (const token of String(text).split(/[\s|\]()*,.]+/)) {
-    const c = token.slice(0, 1);
-    if (!c || seen.has(c) || NOT_SIGLA.has(c) || !(c in named)) continue;
-    seen.add(c);
-    out.push({ siglum: c, name: named[c] });
+    let run = 0;
+    while (run < token.length && token[run] in named) run += 1;
+    if (!run) continue;
+    // Stopped because the next character is Greek text — this was a word, not
+    // a group of sigla.
+    if (run < token.length && GREEK_LOWER.test(token[run])) continue;
+    for (const c of token.slice(0, run)) {
+      if (seen.has(c) || NOT_SIGLA.has(c)) continue;
+      seen.add(c);
+      out.push({ siglum: c, name: named[c] });
+    }
   }
   return out;
 }
