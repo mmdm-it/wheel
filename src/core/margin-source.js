@@ -239,8 +239,9 @@ export const GREEK_LOWER = /[\u03B1-\u03C9\u1F00-\u1FFF]/;
  * the map on purpose: Garamond has it.
  */
 const SUP_PLAIN = { '¹':'1','²':'2','³':'3','⁴':'4','⁰':'0',
-  'ᵃ':'a','ᵇ':'b','ᶜ':'c','ᵈ':'d','ᵉ':'e','ᶠ':'f','ᵍ':'g','ⁱ':'i',
-  'ᵐ':'m','ᵒ':'o','ʳ':'r','ˢ':'s','ᵗ':'t','ᵘ':'u','ᵛ':'v','ˣ':'x' };
+  'ᵃ':'a','ᵇ':'b','ᶜ':'c','ᵈ':'d','ᵉ':'e','ᶠ':'f','ᵍ':'g','ʰ':'h','ⁱ':'i',
+  'ᵏ':'k','ˡ':'l','ᵐ':'m','ⁿ':'n','ᵒ':'o','ᵖ':'p','ʳ':'r','ˢ':'s','ᵗ':'t',
+  'ᵘ':'u','ᵛ':'v','ʷ':'w','ˣ':'x','ʸ':'y','ᶻ':'z' };
 export function apparatusRuns(text) {
   const runs = [];
   for (const c of String(text)) {
