@@ -1813,7 +1813,19 @@ async function renderMargin(selected, translation, seq, part = 0) {
   // told one. Dropping the cache lets it ask again now that there is something
   // to answer with — the same reflex the verse measurement already has when a
   // font reaches layout after the wrap was computed.
-  if (!hadIt && found?.entries?.length) versePartsCache.clear();
+  //
+  // AND THE RING MUST BE MADE TO ASK. Clearing the cache fixes the NEXT
+  // question, but the node already seated asked its question before the fetch
+  // returned, and nothing was re-asking on its behalf: reached cold — boot,
+  // then straight down the child pyramid, no rotation — a split verse sat
+  // CENTERED in the lens as if whole, and healed only when a rotation forced
+  // a re-settle (Howell, Leviticus 1:8, 2026-08-28). The eclipse flag is
+  // computed fresh on every ring render, so one redraw at the current
+  // rotation is the whole cure.
+  if (!hadIt && found?.entries?.length) {
+    versePartsCache.clear();
+    currentApp?.refreshPyramid?.();
+  }
   if (seq !== marginRenderSeq) return;   // a newer verse superseded this one
   clear();
   // THE MARKS DO NOT DEPEND ON THERE BEING A NOTE. A verse may carry a
