@@ -16,7 +16,7 @@
 // (WF-14), and none is needed — the shapes are what is under test.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { addressOrder, blockAt, entriesAt, apparatusRuns } from '../src/core/margin-source.js';
+import { addressOrder, blockAt, entriesAt, apparatusRuns, manuscriptsIn } from '../src/core/margin-source.js';
 import { settleRow, flow, renderMarginNote } from '../src/view/margin-panel.js';
 
 const chart = {
@@ -247,5 +247,23 @@ describe('a note half that overflows the lens shrinks, never loses its tail (O-1
     }
     const got = shown.replace(/-\s/g, '').replace(/\s+/g, '');
     for (const w of words) assert.ok(got.includes(w), `${w} never reached the glass`);
+  });
+});
+
+describe('the italic witness reaches the glass (W-212/O-114)', () => {
+  it('renders the italic capital as an italic run in the note face', () => {
+    assert.deepEqual(apparatusRuns('Ζομβραν 𝐷ˢⁱˡ | Μαδαν D'), [
+      { text: 'Ζομβραν ', sup: false },
+      { text: 'D', italic: true },
+      { text: 'sil', sup: true },
+      { text: ' | Μαδαν D', sup: false },
+    ]);
+  });
+
+  it('still names the Cotton Genesis for an italic citation', () => {
+    const legend = { volumes: [{ volume: 1, units: ['u1'], books: ['GENE'],
+      sigla: { D: 'Codex Cottonianus Geneseos' } }] };
+    const out = manuscriptsIn('Μαδαν 𝐷E', legend, 'u1');
+    assert.ok(out.some(m => m.siglum === 'D'), 'the italic D went unnamed');
   });
 });

@@ -242,6 +242,7 @@ export function renderMarginNote(entries, {
     for (const run of apparatusRuns(text)) {
       const piece = make('span');
       if (run.sup) piece.className = 'margin-sup';
+      else if (run.italic) piece.className = 'margin-italic';
       piece.textContent = run.text;
       span.appendChild(piece);
     }

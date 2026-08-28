@@ -269,16 +269,27 @@ const SUP_PLAIN = { '¹':'1','²':'2','³':'3','⁴':'4','⁰':'0',
   'ᵃ':'a','ᵇ':'b','ᶜ':'c','ᵈ':'d','ᵉ':'e','ᶠ':'f','ᵍ':'g','ʰ':'h','ⁱ':'i',
   'ᵏ':'k','ˡ':'l','ᵐ':'m','ⁿ':'n','ᵒ':'o','ᵖ':'p','ʳ':'r','ˢ':'s','ᵗ':'t',
   'ᵘ':'u','ᵛ':'v','ʷ':'w','ˣ':'x','ʸ':'y','ᶻ':'z' };
+/** THE ITALIC WITNESS (W-212): the burned Cotton Genesis is cited two ways
+ *  on the page — italic D for Grabe's pre-fire collation, roman D for a
+ *  surviving fragment — and the data marks the italic one with the italic
+ *  capital U+1D437. The display renders it as a styled roman D in the note's
+ *  own face: depending on the math-alphabet glyph would be font luck, the
+ *  exact lesson the raised hands taught. */
+const ITALIC_PLAIN = { '\u{1D437}': 'D' };
 export function apparatusRuns(text) {
   const runs = [];
   for (const c of String(text)) {
     const plain = SUP_PLAIN[c];
+    const italic = ITALIC_PLAIN[c];
     const last = runs[runs.length - 1];
     if (plain !== undefined) {
       if (last?.sup) last.text += plain;
       else runs.push({ text: plain, sup: true });
+    } else if (italic !== undefined) {
+      if (last?.italic) last.text += italic;
+      else runs.push({ text: italic, italic: true });
     } else if (c === '?' && last?.sup) last.text += c;
-    else if (last && !last.sup) last.text += c;
+    else if (last && !last.sup && !last.italic) last.text += c;
     else runs.push({ text: c, sup: false });
   }
   return runs;
@@ -315,7 +326,7 @@ export function manuscriptsIn(text, legend, unitId) {
   // proper noun beginning with a capital that happens to be a siglum stops at
   // its first lowercase letter and is rejected, while "A*vid" stops at the
   // asterisk and correctly yields A.
-  for (const token of String(text).split(SIGLUM_SPLIT)) {
+  for (const token of String(text).replace(/\u{1D437}/gu, 'D').split(SIGLUM_SPLIT)) {
     const { run, stoppedAt } = siglumRun(token, c => c in named);
     if (!run) continue;
     // Stopped because the next character is Greek text — this was a word, not

@@ -1041,6 +1041,11 @@ svg :focus-visible {
   top: -0.44em;
 }
 
+/* The italic witness: Grabe's pre-fire collation of the Cotton Genesis,
+   distinct from a surviving fragment by the slope of the type alone (W-212).
+   Styled here, in the note's own face — never the math-alphabet glyph. */
+.margin-italic { font-style: italic; }
+
 .margin-note-more {
   font-family: 'EB Garamond', Georgia, serif;
   color: var(--color-margin-note, rgba(30, 22, 16, 0.72));

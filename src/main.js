@@ -1869,6 +1869,7 @@ async function renderMargin(selected, translation, seq, part = 0) {
     for (const run of apparatusRuns(found.marks.join('  '))) {
       const piece = document.createElement('span');
       if (run.sup) piece.className = 'margin-sup';
+      else if (run.italic) piece.className = 'margin-italic';
       piece.textContent = run.text;
       line.appendChild(piece);
     }
