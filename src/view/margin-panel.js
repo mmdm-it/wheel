@@ -124,11 +124,25 @@ export function renderMarginNote(entries, {
   // front of them, and on the first half of a split note two of the three
   // manuscripts named were in the other half. Howell caught it in a pair of
   // screenshots where the footer did not change while the note did.
-  // With no note, every manuscript handed in is one the MARKS named, and all
-  // of them are on screen; with a note, only those the shown half cites.
-  const shown = whole
-    ? manuscripts.filter(m => m.fromMark || new RegExp(`(^|[\\s|\\](),.*])${m.siglum}`).test(body))
-    : manuscripts;
+  // WHICH MANUSCRIPTS THIS HALF ACTUALLY CITES — and "cites" cannot be tested
+  // with a word boundary, which is how this got it wrong. Swete runs sigla
+  // together to write agreement: in "τη φωνη AR" the R is preceded by the A,
+  // so a rule demanding a separator in front of it dropped the Verona Psalter
+  // from the legend of a Psalm that names it. Howell caught it on the glass
+  // after the LOOKUP had already been fixed for the same reason — the third
+  // time this week that a group of sigla was treated as a letter.
+  //
+  // So the body is read the way the lookup reads it: the leading run of
+  // characters that are manuscripts, taken from each token. Every letter in
+  // that run is cited; a Greek word beginning with a capital stops at its
+  // first lowercase letter and cites nothing.
+  const known = new Set(manuscripts.map(m => m.siglum));
+  const cited = new Set();
+  for (const token of String(body).split(/[\s|\]()*,.]+/)) {
+    let i = 0;
+    while (i < token.length && known.has(token[i])) { cited.add(token[i]); i += 1; }
+  }
+  const shown = whole ? manuscripts.filter(m => m.fromMark || cited.has(m.siglum)) : manuscripts;
 
   const container = make('div');
   container.className = 'margin-note';
