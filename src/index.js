@@ -1830,6 +1830,21 @@ export function createApp({
           && typeof onDetailPreview === 'function') {
         onDetailPreview(nav.items?.[index], { part });
       }
+      // A JOURNEY RE-CHECKS ITS OWN PREMISE ON ARRIVAL (O-111). The parking
+      // target was computed at DEPARTURE, and for a cold verse the apparatus
+      // is usually still in flight then: the ring glides to the centered seat
+      // of a whole verse, the margin lands mid-glide, and the split verse it
+      // reveals deserved a partial eclipse — Howell drilled straight to
+      // Leviticus 1:8 from boot and the node sat centered in the lens. A
+      // repaint cannot cure this: the offset is parked, not painted. So the
+      // arrival recomputes its own offset with everything now known, and if
+      // the answer moved, one short corrective glide re-parks. The second
+      // journey recomputes the same fresh answer and terminates.
+      const freshTarget = magnifier.angle + settleOffsetFor(item, part);
+      if (Math.abs(freshTarget - targetAngle) > 1e-6) {
+        rotateToIndex(index, { part, durationMs: 180 });
+        return;
+      }
       if (typeof opts.onArrive === 'function') opts.onArrive();
     });
     return true;
@@ -2064,6 +2079,15 @@ export function createApp({
   render(rotation);
 
   return {
+    // O-111: re-park the seated node with fresh knowledge — the margin's
+    // arrival can change how many screens a verse needs after the ring has
+    // already settled it centered. No-op mid-journey: the journey's own
+    // arrival re-check covers that path.
+    resettle: () => {
+      if (isRotating || pendingSelectionIndex !== null) return;
+      const idx = nav.getCurrentIndex();
+      if (idx >= 0 && nav.items?.[idx]) rotateToIndex(idx, { part: versePart, durationMs: 180 });
+    },
     advanceLeaf,
     toggleVersePart,
     detailAreaAdvances,

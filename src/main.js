@@ -1824,7 +1824,11 @@ async function renderMargin(selected, translation, seq, part = 0) {
   // rotation is the whole cure.
   if (!hadIt && found?.entries?.length) {
     versePartsCache.clear();
-    currentApp?.refreshPyramid?.();
+    // Re-PARK, not just re-paint (O-111): the eclipse offset is settled
+    // geometry, so the seated node is sent on a short corrective glide. If
+    // the ring is mid-journey, this is a no-op and the journey's own
+    // arrival re-check re-parks instead.
+    currentApp?.resettle?.();
   }
   if (seq !== marginRenderSeq) return;   // a newer verse superseded this one
   clear();
