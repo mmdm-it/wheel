@@ -17,7 +17,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { addressOrder, blockAt, entriesAt, apparatusRuns } from '../src/core/margin-source.js';
-import { settleRow } from '../src/view/margin-panel.js';
+import { settleRow, flow } from '../src/view/margin-panel.js';
 
 const chart = {
   seats: [
@@ -189,5 +189,39 @@ describe('a note settles against the bottom of the lens (O-109)', () => {
   it('surrenders the ceiling only to a note that cannot fit without it', () => {
     const long = 'ενας δυο τρια τεσσερα πεντε εξι επτα οκτω εννεα δεκα εντεκα δωδεκα';
     assert.equal(settleRow(long, lens), 0);
+  });
+});
+
+describe('nothing is eaten at the row edge (O-110)', () => {
+  // Howell circled three losses on one Leviticus screen — a lemma's bracket
+  // among them — and every one stood in the data: the wrap's width estimate
+  // flattered Garamond's Greek, the overfull lines painted into the clip,
+  // and the tail vanished in silence. In the browser the wrap now MEASURES
+  // with the note's own face; here, with no glass, the estimate stands in —
+  // and a word longer than its row breaks with a hyphen instead of painting
+  // past the edge.
+  const lens = { fontPx: 10, lineTable: [
+    { availableWidth: 46 },    // 10 chars by the estimate
+    { availableWidth: 46 },
+    { availableWidth: 92 },    // 20
+  ] };
+
+  it('breaks an overlong word with a hyphen and loses nothing', () => {
+    const { lines, remaining } = flow('επιστοιβασουσιν] στοι', lens, 0);
+    assert.equal(remaining, '');
+    assert.ok(lines[0].text.endsWith('-'), 'the break carries no hyphen');
+    const glued = lines.map(l => l.text).join('').replace(/-/g, '') +
+      (lines.length > 1 ? '' : '');
+    assert.equal(lines.map(l => l.text.replace(/-$/, '')).join(''),
+      'επιστοιβασουσιν] στοι'.replace(/ /g, ''),
+      'characters were lost at the row edge');
+  });
+
+  it('never emits a line its row cannot hold', () => {
+    const { lines } = flow('διχοτομηματα] pr επι A', lens, 0);
+    for (const l of lines) {
+      const max = Math.max(4, Math.floor(l.row.availableWidth / (lens.fontPx * 0.46)));
+      assert.ok(l.text.length <= max, `"${l.text}" exceeds its row`);
+    }
   });
 });

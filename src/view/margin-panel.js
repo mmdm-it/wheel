@@ -35,18 +35,57 @@ import { siglumRun, SIGLUM_SPLIT, GREEK_LOWER, apparatusRuns } from '../core/mar
 const FOOTER_RATIO = 0.026;
 const FOOTER_LINE = 1.25;
 
-/** Greedy wrap into the lens's rows, from a given first row. */
-function flow(text, area, fromRow) {
+/** The note's face, stated once — the measurer and the stylesheet must agree. */
+const NOTE_FACE = "'EB Garamond', Georgia, serif";
+
+/**
+ * DOES THIS TEXT FIT THIS WIDTH — measured, not estimated, wherever a canvas
+ * exists. The wrap used to allow characters-times-a-coefficient per row, and
+ * the coefficient flattered Garamond's Greek just enough that a nearly full
+ * line painted wider than its row and the stylesheet's overflow:hidden ATE
+ * THE TAIL IN SILENCE — Howell circled three losses on one Leviticus screen,
+ * a lemma's bracket among them, and every one was standing in the data. The
+ * verse text learned this same lesson in the wrap saga: measure with the
+ * actual font, estimate only where there is no glass to measure against
+ * (the test runner), and keep the clip as a backstop, never as an editor.
+ */
+function makeFits(area) {
+  if (typeof document !== 'undefined' && document.createElement) {
+    try {
+      const ctx = document.createElement('canvas').getContext('2d');
+      if (ctx) {
+        ctx.font = `${area.fontPx}px ${NOTE_FACE}`;
+        return (text, width) => ctx.measureText(text).width <= width;
+      }
+    } catch { /* fall through to the estimate */ }
+  }
+  return (text, width) => text.length <= Math.max(4, Math.floor(width / (area.fontPx * 0.46)));
+}
+
+/** Greedy wrap into the lens's rows, from a given first row.
+ *  A WORD LONGER THAN ITS ROW BREAKS WITH A HYPHEN, as Swete's own compositor
+ *  breaks it — the page prints διχοτομη-/ματα — instead of painting past the
+ *  row's edge into the clip. Display only: the data never carries the hyphen. */
+export function flow(text, area, fromRow, fits = makeFits(area)) {
   const words = String(text).split(/\s+/).filter(Boolean);
   const lines = [];
   let i = 0;
   for (let r = fromRow; r < area.lineTable.length; r++) {
     const row = area.lineTable[r];
-    const maxChars = Math.max(4, Math.floor(row.availableWidth / (area.fontPx * 0.46)));
     let line = '';
     while (i < words.length) {
       const next = line ? `${line} ${words[i]}` : words[i];
-      if (next.length > maxChars && line) break;
+      if (!fits(next, row.availableWidth)) {
+        if (line) break;
+        // A lone word too long for the row: the longest prefix that fits
+        // with its hyphen, never fewer than one character, and the rest of
+        // the word rejoins the stream for the next row.
+        let k = words[i].length - 1;
+        while (k > 1 && !fits(words[i].slice(0, k) + '-', row.availableWidth)) k -= 1;
+        line = words[i].slice(0, k) + '-';
+        words[i] = words[i].slice(k);
+        break;
+      }
       line = next;
       i += 1;
     }
@@ -68,9 +107,9 @@ function flow(text, area, fromRow) {
  * needs their length. Exported for the suite: the choice is geometry and
  * must be testable without a DOM.
  */
-export function settleRow(text, area) {
+export function settleRow(text, area, fits = makeFits(area)) {
   for (let k = area.lineTable.length - 1; k > 0; k--) {
-    if (!flow(text, area, k).remaining) return k;
+    if (!flow(text, area, k, fits).remaining) return k;
   }
   return 0;
 }
@@ -88,7 +127,7 @@ export function marginPartCount(entries, manuscripts, { width, height, area = nu
   if (!body) return 1;
   const rows = a.lineTable.length - footerRows(manuscripts, a);
   if (rows <= 0) return 2;
-  return flow(body, { ...a, lineTable: a.lineTable.slice(0, rows) }, 0).remaining ? 2 : 1;
+  return flow(body, { ...a, lineTable: a.lineTable.slice(0, rows) }, 0, makeFits(a)).remaining ? 2 : 1;
 }
 
 function bodyOf(entries) {
@@ -130,13 +169,14 @@ export function renderMarginNote(entries, {
   const noteRows = Math.max(1, a.lineTable.length - reserved);
   const noteArea = { ...a, lineTable: a.lineTable.slice(0, noteRows) };
 
-  const first = whole ? flow(whole, noteArea, 0) : { lines: [], remaining: '' };
+  const fits = makeFits(a);
+  const first = whole ? flow(whole, noteArea, 0, fits) : { lines: [], remaining: '' };
   let body = whole;
   if (first.remaining) {
     const [x, y] = splitVerse(whole);
     body = part === 1 ? y : x;
   }
-  const laid = whole ? flow(body, noteArea, settleRow(body, noteArea)) : { lines: [], remaining: '' };
+  const laid = whole ? flow(body, noteArea, settleRow(body, noteArea, fits), fits) : { lines: [], remaining: '' };
 
   // THE FOOTER NAMES WHAT IS ON THIS SCREEN, NOT WHAT IS IN THE WHOLE NOTE.
   // The rule was stated before it was implemented and the implementation broke
