@@ -122,20 +122,24 @@ describe('the notes standing against one address (W-166)', () => {
 });
 
 describe('the hands are raised by the app, not by font luck (O-108)', () => {
-  // Howell's phone, Genesis 1:6: the first query in A¹?ᵃ? rendered small and
-  // raised, its twin two characters later full-size on the floor — both the
-  // same plain character in the data. EB Garamond has no superscript glyphs,
-  // and a baseline character between two fallback-font neighbours can be
-  // swept into their run. So the display splits apparatus text into runs and
-  // raises the hands itself; the page raises hand letters and NEVER queries.
-  it('keeps the queries on the floor and lifts only the hands', () => {
+  // Howell's phone, Genesis 1:6, twice over. First the fonts: EB Garamond has
+  // no superscript glyphs, so the hand marks were drawn by whatever fallback
+  // font the device found — the app raises them itself now, in the note's own
+  // face. Then the queries: the first fix left them on the floor, from a
+  // misreading of Howell's report — and his photograph shows Swete printing
+  // the WHOLE compound raised, each query qualifying the hand before it. No
+  // computer alphabet has a raised question mark, which is the deepest reason
+  // this raising can only ever be the app's: the data cannot carry it.
+  it('raises the whole hand compound, queries riding with their hands', () => {
     assert.deepEqual(apparatusRuns('ras A¹?ᵃ?'), [
       { text: 'ras A', sup: false },
-      { text: '1', sup: true },
-      { text: '?', sup: false },
-      { text: 'a', sup: true },
-      { text: '?', sup: false },
+      { text: '1?a?', sup: true },
     ]);
+  });
+
+  it('leaves a query standing on its own down on the line', () => {
+    assert.deepEqual(apparatusRuns('sub ?? Q? | (? απο)'),
+      [{ text: 'sub ?? Q? | (? απο)', sup: false }]);
   });
 
   it('folds an adjacent pair into one raised run', () => {

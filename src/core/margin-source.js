@@ -226,9 +226,17 @@ export const GREEK_LOWER = /[\u03B1-\u03C9\u1F00-\u1FFF]/;
  *
  * So display code splits apparatus text into runs: superscript characters
  * become their PLAIN equivalents marked sup:true, for the renderer to raise
- * itself — same face as the body text, smaller and lifted by CSS — and
- * everything else, question marks included, stays exactly where it is. The
- * degree sign of 1° and 2° is not in the map on purpose: Garamond has it.
+ * itself — same face as the body text, smaller and lifted by CSS.
+ *
+ * AND THE QUERIES RIDE WITH THE HANDS. Swete prints the whole compound
+ * raised — A followed by a small high 1?a?, each query qualifying the hand
+ * before it — and no computer alphabet HAS a raised question mark, which is
+ * the deepest reason this raising belongs to the app: the data physically
+ * cannot carry it. A query immediately after a raised mark joins that run; a
+ * query standing on its own — Q?, (? — stays on the line. (First shipped the
+ * other way round, from a misreading of Howell's report; his photograph of
+ * the page settled it, 2026-08-28.) The degree sign of 1° and 2° is not in
+ * the map on purpose: Garamond has it.
  */
 const SUP_PLAIN = { '¹':'1','²':'2','³':'3','⁴':'4','⁰':'0',
   'ᵃ':'a','ᵇ':'b','ᶜ':'c','ᵈ':'d','ᵉ':'e','ᶠ':'f','ᵍ':'g','ⁱ':'i',
@@ -241,7 +249,8 @@ export function apparatusRuns(text) {
     if (plain !== undefined) {
       if (last?.sup) last.text += plain;
       else runs.push({ text: plain, sup: true });
-    } else if (last && !last.sup) last.text += c;
+    } else if (c === '?' && last?.sup) last.text += c;
+    else if (last && !last.sup) last.text += c;
     else runs.push({ text: c, sup: false });
   }
   return runs;
