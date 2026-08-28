@@ -672,7 +672,19 @@ function setPrimaryVisual(scale, blurPx) {
   });
   const app = document.getElementById('app');
   if (app) app.style.filter = filter;
-  const panel = document.getElementById('detail-panel');
+  // EVERY HTML OVERLAY THAT BELONGS TO THE PRIMARY PLANE RECEDES WITH IT.
+  // The verse panel was the only one when this was written; the margin and the
+  // marks beside the verse arrived later and stayed sharp and full-size while
+  // the ring behind them travelled away — Howell, 2026-08-27: "the sigla,
+  // margin notes, and legend do not recede and blur as the other primary
+  // stratum elements do... all of these margin elements should appear to move
+  // away from the user, becoming distant and blurry, while maintaining their
+  // positions relative to the focus ring and magnifier."
+  //
+  // They are listed rather than discovered, so a NEW overlay is a deliberate
+  // addition to this line and not a thing that silently fails to travel.
+  for (const id of ['detail-panel', 'margin-panel', 'margin-marks']) {
+  const panel = document.getElementById(id);
   if (panel) {
     const cx = viewport.width / 2, cy = viewport.height / 2;
     // Scale about the viewport CENTRE — the point the SVG ring/logo scale
@@ -684,6 +696,7 @@ function setPrimaryVisual(scale, blurPx) {
     panel.style.transformOrigin = `${cx}px ${cy}px`;
     panel.style.transform = scaled ? `scale(${scale})` : '';
     panel.style.filter = filter;
+  }
   }
 }
 function setStratumVisual(el, scale, blurPx, opacity = 1, offsetX = 0, offsetY = 0) {

@@ -1045,12 +1045,17 @@ svg :focus-visible {
    Howell has said is going away. So the ink adapts rather than assuming
    either — white over the mark's red, dark over the bare ground — and the
    marks sit above both. */
+/* A FULL-VIEWPORT LAYER, not a chip anchored to the corner. It has to recede
+   with everything else when a dimension stratum comes forward, and the recede
+   is a scale about the VIEWPORT CENTRE — the point the ring and the verse
+   panel scale about, so that everything keeps its place relative to the focus
+   ring and the magnifier as it travels away. A small box in the corner would
+   scale about its own middle and slide out of formation. */
 .margin-marks {
   position: fixed;
-  top: 0;
-  right: calc(10px * var(--iframe-scale, 1));
+  inset: 0;
   z-index: 401;
-  padding: calc(6px * var(--iframe-scale, 1)) calc(4px * var(--iframe-scale, 1));
+  padding: calc(6px * var(--iframe-scale, 1)) calc(14px * var(--iframe-scale, 1));
   font-family: 'EB Garamond', Georgia, serif;
   font-size: calc(13px * var(--iframe-scale, 1));
   line-height: calc(17px * var(--iframe-scale, 1));
