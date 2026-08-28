@@ -1848,12 +1848,20 @@ export function createApp({
     const idx = nav.getCurrentIndex();
     const item = (nav.items || [])[idx];
     if (!item || partsOf(item) < 2) return false;
-    const next = versePart === 1 ? 0 : 1;
-    // Paint first, then travel — the text leads and the ring follows, which is
-    // the same order the reading tap uses. The arrival cannot be relied on to
-    // paint here: it commits through selectIndex, and the index is not moving.
-    if (typeof onDetailPreview === 'function') onDetailPreview(item, { part: next });
-    return rotateToIndex(idx, { part: next, durationMs: 250 });
+    // THE HALF CHANGES HERE, NOT ON ARRIVAL. It used to be set in
+    // rotateToIndex's arrival callback, 250ms later, which made two things
+    // wrong at once: a second tap inside that window read the OLD half and
+    // toggled back to where it already was, and anything repainting in
+    // between — a settle, a font arriving — asked for the half and got the
+    // one being left. The lens is the reader saying which half they want, so
+    // the answer is true from the moment they touch it.
+    versePart = versePart === 1 ? 0 : 1;
+    // Paint first, then travel: the text leads and the ring follows, the same
+    // order the reading tap uses. The arrival cannot be relied on to paint —
+    // it commits through selectIndex, and the index is not moving.
+    if (typeof onDetailPreview === 'function') onDetailPreview(item, { part: versePart });
+    rotateToIndex(idx, { part: versePart, durationMs: 250 });
+    return true;
   };
 
   const rotateNodeIntoMagnifier = node => {

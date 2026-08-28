@@ -1739,8 +1739,12 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       if (!overflows) return;
       invalidateVerseMeasurement();
       versePartsCache.clear(); // part counts derive from the measurement (O-84)
+      // KEEPING THE HALF IT WAS DRAWING. The retry re-wraps the same text
+      // after a font reaches layout, so dropping the part here would have
+      // silently snapped a reader on the second half back to the first, in a
+      // repaint they never asked for and could not have attributed.
       renderDetail(selected, adapterInstance, manifest, adapterNormalized,
-        { translation, wrapAttempt: wrapAttempt + 1 });
+        { translation, wrapAttempt: wrapAttempt + 1, part });
     }));
   }
 }
@@ -2891,7 +2895,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // Detail renders resolve the translation LIVE (the sticky choice can
   // change between renders); the settle hook below regenerates the open
   // panel the moment a new choice commits.
-  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
+  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+    { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
   rememberReadingPosition(); // the boot position counts too
   // The globe follows the magnifier: at the volume's front door it appears,
   // one step of descent hides it (nav change), the leaf brings it back
@@ -2899,7 +2904,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   updateDimensionButton();
   updateCornerImage();
   app?.nav?.onChange?.(() => {
-    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
+    // THE HALF IS PASSED, NEVER LEFT TO A FALLBACK. This called renderDetail
+    // with no `part`, so the text took whatever the app's `versePart` happened
+    // to hold at that instant — a value set by a different code path at a
+    // different moment. That is how the ring came to show the second half of a
+    // verse while the sector showed the first: not one wrong assignment, but
+    // two sources for one fact. There is one source now and every caller reads
+    // it out loud.
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
     updateDimensionButton();
     rememberReadingPosition();
   });
@@ -2926,7 +2939,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     refreshNamesMap();
     if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
     if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
-    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
+    // A NEW EDITION IS A NEW READING and starts at the first half: the verse
+    // is different text of a different length and its old half means nothing.
+    // Stated rather than left to a default, because "0" here is a decision.
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      { translation, part: 0 });
     // Remember the choice, so the next launch's funnel confirms it (ruling 2)
     // rather than presenting the pinned default as though nothing was chosen.
     const sel = dimensionBridge.getSelection();
@@ -2974,7 +2991,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     versePartsCache.clear(); // the real serif re-measures everything (O-84)
     renderDetail(
       app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
-      { translation: activeTranslation() });
+      { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
   });
   // Generic post-boot hook: adapters may schedule volume-specific startup
   // work (e.g. a featured-item prefetch) without the host
@@ -2984,7 +3001,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       app,
       items,
       selectedIndex,
-      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
+      // The adapter repaints through this when a chapter's text lands, which
+      // can happen while a reader is on the second half of a verse. It carries
+      // the half for the same reason the wrap retry does.
+      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized,
+        { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 })
     });
   }
   if (!interactionsWired) {
@@ -3011,7 +3032,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     options.previewEdition = edition;
     if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
     if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
-    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: edition });
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      { translation: edition, part: 0 });   // a new edition starts at the first half
   };
 
   // Open the funnel LAST, once the primary has its chain, its verse and its

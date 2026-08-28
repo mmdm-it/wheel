@@ -87,3 +87,33 @@ describe('the primary plane recedes as one (W-179)', () => {
     assert.match(main, /const cx = viewport\.width \/ 2, cy = viewport\.height \/ 2/);
   });
 });
+
+describe('the half a verse is showing has ONE source (W-184)', () => {
+  // Howell: "making sure that the text in the details sector always aligns
+  // with the partial eclipse effect of the magnifier."
+  //
+  // It did not, and the cause was not a wrong assignment — it was TWO SOURCES
+  // for one fact. `renderDetail` took an optional `part` and fell back to
+  // reading the app's own `versePart` when a caller omitted it, so the text
+  // showed whatever that variable happened to hold at that instant, set by a
+  // different code path at a different moment. The ring could be seating the
+  // second half of a verse while the sector drew the first.
+  //
+  // Every caller now says which half out loud. This is the cell that makes a
+  // new one say it too, because the failure is silent and intermittent: it
+  // needs a split verse, and most verses are not.
+  it('every renderDetail call names the half it wants', () => {
+    const calls = [...main.matchAll(/renderDetail\(/g)].map(m => m.index);
+    const missing = [];
+    for (const at of calls) {
+      const window = main.slice(at, at + 340);
+      if (/^renderDetail\(selected, adapterInstance, manifest, adapterNormalized, \{ translation, wrapAttempt/.test(main.slice(at, at + 110))) continue;
+      if (/function renderDetail/.test(main.slice(Math.max(0, at - 20), at + 14))) continue;
+      const close = window.indexOf('});');
+      const args = close > 0 ? window.slice(0, close) : window;
+      if (!/\bpart\b/.test(args)) missing.push(main.slice(0, at).split('\n').length);
+    }
+    assert.deepEqual(missing, [],
+      `renderDetail called without naming the half, at line(s): ${missing.join(', ')}`);
+  });
+});
