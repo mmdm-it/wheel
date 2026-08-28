@@ -16,7 +16,7 @@
 // (WF-14), and none is needed — the shapes are what is under test.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { addressOrder, blockAt, entriesAt } from '../src/core/margin-source.js';
+import { addressOrder, blockAt, entriesAt, apparatusRuns } from '../src/core/margin-source.js';
 
 const chart = {
   seats: [
@@ -118,5 +118,40 @@ describe('the notes standing against one address (W-166)', () => {
     for (const a of order) {
       for (const e of entriesAt(block, a, order)) assert.notEqual(e.text, block.lead);
     }
+  });
+});
+
+describe('the hands are raised by the app, not by font luck (O-108)', () => {
+  // Howell's phone, Genesis 1:6: the first query in A¹?ᵃ? rendered small and
+  // raised, its twin two characters later full-size on the floor — both the
+  // same plain character in the data. EB Garamond has no superscript glyphs,
+  // and a baseline character between two fallback-font neighbours can be
+  // swept into their run. So the display splits apparatus text into runs and
+  // raises the hands itself; the page raises hand letters and NEVER queries.
+  it('keeps the queries on the floor and lifts only the hands', () => {
+    assert.deepEqual(apparatusRuns('ras A¹?ᵃ?'), [
+      { text: 'ras A', sup: false },
+      { text: '1', sup: true },
+      { text: '?', sup: false },
+      { text: 'a', sup: true },
+      { text: '?', sup: false },
+    ]);
+  });
+
+  it('folds an adjacent pair into one raised run', () => {
+    assert.deepEqual(apparatusRuns('Qᵐᵍ'), [
+      { text: 'Q', sup: false },
+      { text: 'mg', sup: true },
+    ]);
+  });
+
+  it('leaves the occurrence marker alone — Garamond owns the degree sign', () => {
+    assert.deepEqual(apparatusRuns('υδατος 2°...εποιησεν'),
+      [{ text: 'υδατος 2°...εποιησεν', sup: false }]);
+  });
+
+  it('passes plain text through as one run', () => {
+    assert.deepEqual(apparatusRuns('ειδεν AD] ωστε φαινειν επι E'),
+      [{ text: 'ειδεν AD] ωστε φαινειν επι E', sup: false }]);
   });
 });

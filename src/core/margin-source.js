@@ -214,6 +214,39 @@ export const SIGLUM_SPLIT = /[\s|\]()*,.]+/;
 /** A lowercase Greek letter — the signal that a capital began a WORD. */
 export const GREEK_LOWER = /[\u03B1-\u03C9\u1F00-\u1FFF]/;
 
+/**
+ * THE HANDS ARE RAISED BY THE APP, NOT BY FONT LUCK. The apparatus encodes a
+ * corrector's mark with Unicode superscript characters — A¹, Qᵐᵍ, Bᵃᵇ — and
+ * EB Garamond has no glyphs for them, so every one was rendered by whatever
+ * fallback font the device found. Worse: a plain character BETWEEN two
+ * fallback characters can be swept into their run, which is how a baseline
+ * question mark in A¹?ᵃ? came out small and raised on Howell's phone while
+ * its twin two characters later sat on the floor (2026-08-28 — the page
+ * raises the hand letters and never the queries).
+ *
+ * So display code splits apparatus text into runs: superscript characters
+ * become their PLAIN equivalents marked sup:true, for the renderer to raise
+ * itself — same face as the body text, smaller and lifted by CSS — and
+ * everything else, question marks included, stays exactly where it is. The
+ * degree sign of 1° and 2° is not in the map on purpose: Garamond has it.
+ */
+const SUP_PLAIN = { '¹':'1','²':'2','³':'3','⁴':'4','⁰':'0',
+  'ᵃ':'a','ᵇ':'b','ᶜ':'c','ᵈ':'d','ᵉ':'e','ᶠ':'f','ᵍ':'g','ⁱ':'i',
+  'ᵐ':'m','ᵒ':'o','ʳ':'r','ˢ':'s','ᵗ':'t','ᵘ':'u','ᵛ':'v','ˣ':'x' };
+export function apparatusRuns(text) {
+  const runs = [];
+  for (const c of String(text)) {
+    const plain = SUP_PLAIN[c];
+    const last = runs[runs.length - 1];
+    if (plain !== undefined) {
+      if (last?.sup) last.text += plain;
+      else runs.push({ text: plain, sup: true });
+    } else if (last && !last.sup) last.text += c;
+    else runs.push({ text: c, sup: false });
+  }
+  return runs;
+}
+
 // Swete's Roman numerals marking a container turn inside a page of
 // apparatus. They are Latin capitals because that is what the page prints,
 // but they are NOT manuscripts: one stands 1,822 times in volume I alone,

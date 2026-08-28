@@ -16,6 +16,7 @@ import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
+import { apparatusRuns } from './core/margin-source.js';
 import { computeMarginArea } from './geometry/margin-area.js';
 import { onVerseFontReady, invalidateVerseMeasurement, versePartCount } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
@@ -1822,7 +1823,13 @@ async function renderMargin(selected, translation, seq, part = 0) {
     marginMarks.textContent = '';
     const line = document.createElement('div');
     line.className = 'margin-marks-sigla';
-    line.textContent = found.marks.join('  ');
+    // Same raising rule as the note: the app lifts the hands, the font never.
+    for (const run of apparatusRuns(found.marks.join('  '))) {
+      const piece = document.createElement('span');
+      if (run.sup) piece.className = 'margin-sup';
+      piece.textContent = run.text;
+      line.appendChild(piece);
+    }
     marginMarks.appendChild(line);
   }
   // THE LEGEND HAS ONE HOME AND IT IS THE MARGIN'S FOOT. It was briefly given a

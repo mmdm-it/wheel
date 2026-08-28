@@ -25,7 +25,7 @@
 // exactly. Presentation only: nothing renumbered, nothing cut.
 import { computeMarginArea } from '../geometry/margin-area.js';
 import { splitVerse } from './detail/plugins/line-layout.js';
-import { siglumRun, SIGLUM_SPLIT, GREEK_LOWER } from '../core/margin-source.js';
+import { siglumRun, SIGLUM_SPLIT, GREEK_LOWER, apparatusRuns } from '../core/margin-source.js';
 
 /** The footer is set smaller than the note, and this is the largest size that
  *  still leaves room for the worst case. Measured on a phone: at this size one
@@ -159,7 +159,14 @@ export function renderMarginNote(entries, {
     span.style.width = `${Math.max(0, row.availableWidth).toFixed(1)}px`;
     span.style.fontSize = `${a.fontPx.toFixed(1)}px`;
     span.style.lineHeight = `${a.pitch.toFixed(1)}px`;
-    span.textContent = text;
+    // The hands raised by the panel itself, in the note's own face — never by
+    // a fallback font, which raised a question mark on Howell's phone.
+    for (const run of apparatusRuns(text)) {
+      const piece = make('span');
+      if (run.sup) piece.className = 'margin-sup';
+      piece.textContent = run.text;
+      span.appendChild(piece);
+    }
     container.appendChild(span);
   }
 

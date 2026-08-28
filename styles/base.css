@@ -1028,6 +1028,19 @@ svg :focus-visible {
   text-overflow: clip;
 }
 
+/* A corrector's hand, raised by the app in the note's own face. The data
+   carries Unicode superscript characters; EB Garamond has no glyphs for them,
+   and a device's fallback font once swept a baseline question mark up into
+   the raised run (Howell's phone, 2026-08-28). Rendered as plain letters in
+   a lifted span, nothing is left to font luck: the hands rise, the queries
+   stand on the floor, and both wear Garamond. position:relative rather than
+   vertical-align so the fixed line pitch is untouched. */
+.margin-sup {
+  font-size: 0.62em;
+  position: relative;
+  top: -0.44em;
+}
+
 .margin-note-more {
   font-family: 'EB Garamond', Georgia, serif;
   color: var(--color-margin-note, rgba(30, 22, 16, 0.72));
