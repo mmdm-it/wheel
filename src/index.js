@@ -1815,12 +1815,78 @@ export function createApp({
     // (parent-button header, pyramid) follows the geometry, not this.
     pendingSelectionIndex = index;
     isRotating = true;
+    const fromPart = versePart;
+    const startedAt = nav.getCurrentIndex();
     animateSnapTo(clampedRotation, duration, () => {
       pendingSelectionIndex = null;
       versePart = part; // before selectIndex, so the settle render reads the right half (O-84)
       nav.selectIndex(index);
+      // A JOURNEY THAT ENDS WHERE IT STARTED STILL CHANGES THE HALF, and
+      // selectIndex is silent when the index does not move — so a tap on the
+      // NODE of an eclipsed verse rotated the ring back to the first half and
+      // left the sector showing the second. The same silence O-102 found on
+      // the thumb path, on a third route into it.
+      if (index === startedAt && part !== fromPart
+          && typeof onDetailPreview === 'function') {
+        onDetailPreview(nav.items?.[index], { part });
+      }
+      // A JOURNEY RE-CHECKS ITS OWN PREMISE ON ARRIVAL (O-111). The parking
+      // target was computed at DEPARTURE, and for a cold verse the apparatus
+      // is usually still in flight then: the ring glides to the centered seat
+      // of a whole verse, the margin lands mid-glide, and the split verse it
+      // reveals deserved a partial eclipse — Howell drilled straight to
+      // Leviticus 1:8 from boot and the node sat centered in the lens. A
+      // repaint cannot cure this: the offset is parked, not painted. So the
+      // arrival recomputes its own offset with everything now known, and if
+      // the answer moved, one short corrective glide re-parks. The second
+      // journey recomputes the same fresh answer and terminates.
+      const freshTarget = magnifier.angle + settleOffsetFor(item, part);
+      if (Math.abs(freshTarget - targetAngle) > 1e-6) {
+        rotateToIndex(index, { part, durationMs: 180 });
+        return;
+      }
       if (typeof opts.onArrive === 'function') opts.onArrive();
     });
+    return true;
+  };
+
+  // ── THE LENS TOGGLES THE HALF (Howell, 2026-08-27) ────────────────────────
+  // "tapping the magnifier ring itself should toggle back and forth between
+  // first half and second half of the divided node. On a regular undivided
+  // node tapping the magnifier ring should do nothing."
+  //
+  // WHY IT IS NEEDED, in his own diagnosis: it was possible to reach the
+  // second half, then thumb the ring back to the first, and have the two
+  // disagree — the lens showing one half while the margin still held the
+  // other. The half had become a state you could arrive at by two different
+  // routes and leave by a third. A gesture that names the half outright, on
+  // the one control that means "here", settles it.
+  //
+  // IT IS DELIBERATELY BLIND TO WHAT CAUSED THE ECLIPSE. A verse too long for
+  // the sector and a verse whose NOTES are too long for the margin (O-86,
+  // O-101) both split, and a reader has no way of telling which — nor should
+  // they need one. The test is `partsOf`, which is the same question the ring
+  // asks to decide whether to seat the node off-centre at all.
+  //
+  // Returns false when there is nothing to toggle, so the caller can leave the
+  // tap inert rather than inventing a response to it.
+  const toggleVersePart = () => {
+    const idx = nav.getCurrentIndex();
+    const item = (nav.items || [])[idx];
+    if (!item || partsOf(item) < 2) return false;
+    // THE HALF CHANGES HERE, NOT ON ARRIVAL. It used to be set in
+    // rotateToIndex's arrival callback, 250ms later, which made two things
+    // wrong at once: a second tap inside that window read the OLD half and
+    // toggled back to where it already was, and anything repainting in
+    // between — a settle, a font arriving — asked for the half and got the
+    // one being left. The lens is the reader saying which half they want, so
+    // the answer is true from the moment they touch it.
+    versePart = versePart === 1 ? 0 : 1;
+    // Paint first, then travel: the text leads and the ring follows, the same
+    // order the reading tap uses. The arrival cannot be relied on to paint —
+    // it commits through selectIndex, and the index is not moving.
+    if (typeof onDetailPreview === 'function') onDetailPreview(item, { part: versePart });
+    rotateToIndex(idx, { part: versePart, durationMs: 250 });
     return true;
   };
 
@@ -1983,8 +2049,23 @@ export function createApp({
       }
     });
     pendingSelectionIndex = null; // a thumb overrides any journey in flight
+    // A HALF-STEP IS NOT A SELECTION CHANGE, AND THAT WAS THE WHOLE BUG.
+    // `selectIndex` returns early when the index is unchanged, so carrying an
+    // eclipsed node from one side of the Magnifier to the other — the same
+    // node, the other half — notified nobody and the Detail Sector never
+    // repainted. The ring moved and the words did not. The reading TAP path
+    // has always painted its half explicitly (advanceLeaf, just below); the
+    // thumb path never did, so the second half of a split verse has been
+    // unreachable by scrubbing since O-84 shipped. Found 2026-08-27 when the
+    // widened trigger (O-86) made it visible on a short verse with long notes.
+    const wasIdx = nav.getCurrentIndex();
+    const wasPart = versePart;
     versePart = closestPart; // before selectIndex, so the settle render reads it (O-84)
     nav.selectIndex(closestIdx);
+    if (closestIdx === wasIdx && closestPart !== wasPart
+        && typeof onDetailPreview === 'function') {
+      onDetailPreview(nav.items?.[closestIdx], { part: closestPart });
+    }
     if (closestDelta !== null) {
       const targetRotation = rotation + closestDelta;
       isRotating = true;
@@ -1998,7 +2079,17 @@ export function createApp({
   render(rotation);
 
   return {
+    // O-111: re-park the seated node with fresh knowledge — the margin's
+    // arrival can change how many screens a verse needs after the ring has
+    // already settled it centered. No-op mid-journey: the journey's own
+    // arrival re-check covers that path.
+    resettle: () => {
+      if (isRotating || pendingSelectionIndex !== null) return;
+      const idx = nav.getCurrentIndex();
+      if (idx >= 0 && nav.items?.[idx]) rotateToIndex(idx, { part: versePart, durationMs: 180 });
+    },
     advanceLeaf,
+    toggleVersePart,
     detailAreaAdvances,
     // O-84: which half of a split verse is settled — the host's detail render
     // reads this so the text and the eclipse always agree.

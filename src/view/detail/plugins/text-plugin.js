@@ -1,5 +1,5 @@
 import { BaseDetailPlugin } from '../plugin-registry.js';
-import { selectFontTier, layoutVerse, wrapLines, makeLineSpan, stridedRows } from './line-layout.js';
+import { selectFontTier, layoutVerse, layoutPoem, wrapLines, makeLineSpan, stridedRows } from './line-layout.js';
 
 export class TextDetailPlugin extends BaseDetailPlugin {
   canHandle(item) {
@@ -24,7 +24,13 @@ export class TextDetailPlugin extends BaseDetailPlugin {
         // O-84: a verse that doesn't fit whole shows in two parts, and the
         // host says which part the reader is on (the ring's partial eclipse
         // is the visible half of the same state).
-        const { fontPx, lines } = layoutVerse(text, bounds, item.part === 1 ? 1 : 0);
+        // O-112: a verse Swete sets as poetry flows line by line on a straight
+        // left edge — the metrical lines arrive with the item, already cut
+        // from the seated text by the side-file's offsets.
+        const poem = Array.isArray(item.poemLines) && item.poemLines.length > 1;
+        const { fontPx, lines } = poem
+          ? layoutPoem(item.poemLines, bounds, item.part === 1 ? 1 : 0)
+          : layoutVerse(text, bounds, item.part === 1 ? 1 : 0);
         const container = create('div');
         container.className = 'detail-sector-content detail-text detail-text--arc';
         if (container.style) container.style.fontSize = `${fontPx.toFixed(1)}px`;

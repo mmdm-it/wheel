@@ -24,6 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
+import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, marksAt, addressOrder, manuscriptsIn, loadPoetry, poetryCached } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
@@ -271,6 +272,99 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     // second caller gets the same promise's result from the map.
     loadTextFor(unitId) {
       return loadText(unitId);
+    },
+
+    // THE MARGIN COVERING AN ADDRESS, or null (W-165).
+    //
+    // Null is the ORDINARY answer and carries no complaint: only one edition
+    // has an apparatus at all, only 47 of its books are captured, and 226 of
+    // its blocks are held for a reading the page has to settle. W-131 and
+    // W-133 put the margin on its own ladder precisely so its absence gates
+    // nothing — an edition ships fully proofread with an empty margin, for as
+    // long as that takes.
+    //
+    // The lookup needs the edition's OWN seat order, because a block covers a
+    // RUN of verses and "10:2" sorts before "9:1" as a string. The chart is
+    // the only thing that knows where an address sits.
+    async marginAt(unitId, edition, address) {
+      const chart = charts.get(`${unitId}|${edition}`);
+      if (!chart) return null;
+      const margin = await loadMargin({
+        base, version, edition, unitId, fetchJson,
+        identityOf: file => file?.book,
+      });
+      if (!margin) return null;
+      // THE ORDER MUST BE IN THE SAME ADDRESS SPACE THE MARGIN USES, and on
+      // the first build it was not — see addressOrder's own note for what that
+      // cost and why it was invisible.
+      const order = addressOrder(chart);
+      // THE MARKS COME FIRST, BECAUSE THEY DO NOT NEED A BLOCK. A verse may
+      // carry a mark in the margin and no apparatus at all; returning null on
+      // a missing block would have hidden every one of those.
+      const marks = marksAt(margin, address);
+      const block = blockAt(margin, address, order);
+      if (!block) return marks.length ? { marks, entries: [], manuscripts: [], source: margin.source } : null;
+      // WHICH MANUSCRIPT THE TEXT IS, at the head of the marks. Swete prints it
+      // in the outer margin at the top of each page and it is the first thing
+      // his reader knows: Genesis is Alexandrinus because Vaticanus is
+      // defective through chapter 46, and the page says so. It rides the block
+      // as `base` and was being kept there — true of the page, invisible to
+      // the reader, which is the wrong half of the bargain.
+      const standing = block.base ? [block.base, ...marks] : marks;
+      // The verse's OWN notes, not the whole page's. A block is a page of
+      // apparatus and W-166 addressed each of its entries; a reader at one
+      // verse wants that verse's, the way a reader looking down at the foot of
+      // the page finds the line beginning with the number they are on.
+      const entries = entriesAt(block, address, order);
+      const legend = await loadMarginLegend({ base, version, edition, fetchJson });
+      const cited = entries.map(e => e.text).join(' ');
+      return {
+        block, entries, marks: standing, source: margin.source,
+        manuscripts: manuscriptsIn(cited, legend, unitId),
+        // The marks name manuscripts too, and a reader meeting a bare letter at
+        // the head of the screen is owed the same courtesy as one meeting it in
+        // a note: the legend, for the letters in front of them and no others.
+        marksNamed: manuscriptsIn(standing.join(' '), legend, unitId),
+      };
+    },
+
+    // THE SAME QUESTION, ANSWERED FROM CACHE AND WITHOUT WAITING. The ring must
+    // know how many screens an item needs before it settles, and it cannot
+    // await. An apparatus not yet fetched answers "none", which settles the
+    // node centred; the host drops its part-count cache when one arrives, so
+    // the question is asked again with the real answer.
+    // THE POEM'S OFFSETS for one verse — async fetch and cache-only twin,
+    // the margin's own pattern (O-112). Null means prose, a state not a
+    // failure; the HOST slices the seated text, because the host holds it.
+    async poemAt(unitId, edition, address) {
+      const p = await loadPoetry({ base, version, edition, unitId, fetchJson, identityOf: f => f?.book });
+      return p?.[address] ?? null;
+    },
+    poemAtSync(unitId, edition, address) {
+      const p = poetryCached(edition, unitId);
+      return p?.[address] ?? null;
+    },
+
+    marginAtSync(unitId, edition, address) {
+      const chart = charts.get(`${unitId}|${edition}`);
+      const margin = marginCached(edition, unitId);
+      if (!chart || !margin) return null;
+      const order = addressOrder(chart);
+      // THE MARKS COME FIRST, BECAUSE THEY DO NOT NEED A BLOCK. A verse may
+      // carry a mark in the margin and no apparatus at all; returning null on
+      // a missing block would have hidden every one of those.
+      const marks = marksAt(margin, address);
+      const block = blockAt(margin, address, order);
+      if (!block) return marks.length ? { marks, entries: [], manuscripts: [], source: margin.source } : null;
+      // WHICH MANUSCRIPT THE TEXT IS, at the head of the marks. Swete prints it
+      // in the outer margin at the top of each page and it is the first thing
+      // his reader knows: Genesis is Alexandrinus because Vaticanus is
+      // defective through chapter 46, and the page says so. It rides the block
+      // as `base` and was being kept there — true of the page, invisible to
+      // the reader, which is the wrong half of the bargain.
+      const standing = block.base ? [block.base, ...marks] : marks;
+      const entries = entriesAt(block, address, order);
+      return { entries, manuscripts: manuscriptsIn(entries.map(e => e.text).join(' '), legendCached(), unitId) };
     },
 
     // The chart for a (unit, edition), or null. Null is a real answer here —

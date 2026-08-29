@@ -578,6 +578,17 @@ svg :focus-visible {
    show. */
 .focus-ring-magnifier.eclipsed .focus-ring-magnifier-circle {
   fill: none;
+  /* AND IT MUST STILL TAKE A TAP. `fill: none` in SVG does not merely paint
+     nothing — it makes the INTERIOR transparent to pointer events, leaving
+     only the one-pixel stroke hittable. So the lens became almost impossible
+     to touch at the exact moment it acquired a job: an eclipsed verse is the
+     only state where tapping it does anything, and that is the state that
+     turned it off. Howell's taps were landing on the NODE behind it instead,
+     which rotates the ring without changing the half — the ring moving to the
+     first half while the text stayed on the second, exactly as he reported.
+
+     `pointer-events: all` gives a fill-less shape its interior back. */
+  pointer-events: all;
 }
 
 /* THE WITHHELD VOLUME (H-14; Howell 2026-08-12, specified from the phone).
@@ -882,27 +893,45 @@ svg :focus-visible {
    the LAN certification override is showing an uncertified edition. Deliberately
    plain and unmistakably a dev affordance: this must never be mistaken for a
    reader-facing notice, since the doctrine forbids asterisks in the product. */
-/* THE MARK MOVES OFF THE LABEL (Howell 2026-08-02): centred at the foot it
-   sat directly on the parent button's own words and hid their tail. It now
-   rides the LEFT, just above the parent label — whose baseline is LSd*0.93
-   (getParentSeat), i.e. 7% up from the foot, so 10% clears it with the
-   label's ascenders in between. Left inset matches the label's corner start
-   (SSd*0.13 - magR*1.7 ≈ 3%), so mark and label share an edge. */
+/* THE MARK MOVES TO THE TOP AND COVERS THE COPYRIGHT (Howell, 2026-08-27:
+   "move the NOT PROOFREAD banner to the top of the screen, overlaying the
+   copyright disclaimer"). It rode the lower left from 2026-08-02, which was
+   right until the ground beyond the ring started carrying Swete's apparatus:
+   the mark then stood in the margin's own territory and was drawn over the
+   manuscript names (O-102). The copyright strip is the one piece of furniture
+   already occupying a full-width band the reader does not read, so the mark
+   takes that band while it is showing — same box, same padding, same centring,
+   opaque, so the notice beneath it is covered rather than peeking out at the
+   sides. It is still a LAN-only dev affordance and still must never be
+   mistaken for a reader-facing notice; the doctrine forbids asterisks in the
+   product. */
 #incomplete-mark {
   position: fixed;
-  left: calc(4% * var(--iframe-scale, 1));
-  bottom: calc(10% * var(--iframe-scale, 1));
-  z-index: 400;
-  padding: 5px 12px;
-  border-radius: 4px;
-  background: rgba(120, 20, 20, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;   /* above the copyright strip's 300 */
+  padding: calc(6px * var(--iframe-scale, 1))
+           calc(10px * var(--iframe-scale, 1))
+           calc(6px * var(--iframe-scale, 1))
+           calc(10px * var(--iframe-scale, 1));
+  background: rgb(120, 20, 20);   /* SOLID: at 0.94 the notice read through it */
   color: #fff;
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: calc(10px * var(--iframe-scale, 1));
+  font-size: calc(11px * var(--iframe-scale, 1));
+  text-align: center;
   letter-spacing: 0.12em;
   white-space: nowrap;
   pointer-events: none;
 }
+
+/* AND THE NOTICE BENEATH IT STANDS DOWN WHILE IT SHOWS. Making the mark opaque
+   covers the notice's FIRST line and nothing else: the copyright wraps to two
+   lines on a phone, so "riservati." sat below the band in plain sight. A band
+   sized to guess how many lines the notice happens to wrap to would be wrong
+   the first time a viewport changed. Hiding the element it replaces cannot
+   half-cover, and the notice returns the instant the mark goes. */
+:root.incomplete-mark-showing .copyright-notice { visibility: hidden; }
 
 /* THE SECTION LABEL (H-26) — the tradition's own name for the division the
    magnified book belongs to. A NAME, never a colour: a colour asserts nothing
@@ -968,4 +997,132 @@ svg :focus-visible {
   font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* ── THE MARGIN, BEYOND THE RING (W-127, W-165) ─────────────────────────────
+   Swete prints his critical apparatus at the foot of the page, outside the
+   block of scripture. Here it sits outside the arc, on the ground the Detail
+   Sector's circle does not cover. It is quieter than the text on purpose: it
+   is the record of what the manuscripts disagree about, and it must never
+   compete with the verse for the eye.
+
+   FIRST LIGHT 2026-08-26 and every value here is provisional. The type size
+   is O-91's 5%, ruled before anyone had seen a note. */
+.margin-panel {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+  z-index: 190;   /* under the detail panel: the verse is never covered */
+}
+
+.margin-panel.margin-panel--visible { opacity: 1; }
+
+.margin-note-line {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.72));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+/* A corrector's hand, raised by the app in the note's own face. The data
+   carries Unicode superscript characters; EB Garamond has no glyphs for them,
+   and a device's fallback font once swept a baseline question mark up into
+   the raised run (Howell's phone, 2026-08-28). Rendered as plain letters in
+   a lifted span, nothing is left to font luck: the hands rise, the queries
+   stand on the floor, and both wear Garamond. position:relative rather than
+   vertical-align so the fixed line pitch is untouched. */
+.margin-sup {
+  font-size: 0.62em;
+  position: relative;
+  top: -0.44em;
+}
+
+/* The italic witness: Grabe's pre-fire collation of the Cotton Genesis,
+   distinct from a surviving fragment by the slope of the type alone (W-212).
+   Styled here, in the note's own face — never the math-alphabet glyph. */
+.margin-italic { font-style: italic; }
+
+.margin-note-more {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.72));
+  opacity: 0.6;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* The manuscripts a note cites, named. Quieter than the note, which is itself
+   quieter than the verse: three voices, in the order they matter. */
+.margin-note-source {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.72));
+  opacity: 0.72;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* THE MARKS BESIDE THE VERSE (W-176, Howell 2026-08-27: "put them in the
+   extreme upper right, near the right end of the NOT PROOFREAD banner").
+   They ride the top band because that is where the reader's POSITION is
+   stated, and what these say is which manuscripts stand at the position.
+
+   The band has two occupants today and will have one: the proofread mark
+   while an uncertified edition is showing, and the copyright notice, which
+   Howell has said is going away. So the ink adapts rather than assuming
+   either — white over the mark's red, dark over the bare ground — and the
+   marks sit above both. */
+/* A FULL-VIEWPORT LAYER, not a chip anchored to the corner. It has to recede
+   with everything else when a dimension stratum comes forward, and the recede
+   is a scale about the VIEWPORT CENTRE — the point the ring and the verse
+   panel scale about, so that everything keeps its place relative to the focus
+   ring and the magnifier as it travels away. A small box in the corner would
+   scale about its own middle and slide out of formation. */
+.margin-marks {
+  position: fixed;
+  inset: 0;
+  z-index: 401;
+  padding: calc(6px * var(--iframe-scale, 1)) calc(14px * var(--iframe-scale, 1));
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: calc(13px * var(--iframe-scale, 1));
+  line-height: calc(17px * var(--iframe-scale, 1));
+  letter-spacing: 0.06em;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.82));
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+}
+
+.margin-marks.margin-marks--visible { opacity: 1; }
+
+/* Over the proofread mark's red band, the same ink would vanish. */
+:root.incomplete-mark-showing .margin-marks { color: rgba(255, 255, 255, 0.92); }
+
+/* The marks are sigla and nothing else. They were briefly given their names
+   underneath, and Howell's answer was that he still could not see the legend
+   "in its usual position" — which is the right objection: the legend belongs at
+   the margin's foot, where every other manuscript is named, and two places to
+   look for one kind of statement is one more than a reader should have to
+   learn. The names went back there and these are letters again. */
+.margin-marks { text-align: right; }
+.margin-marks-sigla { letter-spacing: 0.08em; }
+
+/* The margin's own state, drawn only under ?margin=debug. Deliberately ugly:
+   it is an instrument, not part of the reader's page, and must never be
+   mistaken for one. */
+#margin-debug {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 3px 6px;
+  background: rgba(0, 0, 0, 0.82);
+  color: #6f6;
+  font-family: monospace;
+  font-size: 10px;
+  white-space: nowrap;
+  pointer-events: none;
 }

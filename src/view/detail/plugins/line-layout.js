@@ -374,6 +374,108 @@ export function versePartCount(text, bounds) {
   return parts;
 }
 
+/**
+ * A POEM CASCADES ALONG THE ARC (O-112; Howell's ruling 2026-08-28, second
+ * sitting). The first design put every line on one straight left edge, and
+ * the real geometry executed it: the ring's arc sweeps rightward all the way
+ * down, so a deep poem's straight edge collapsed into the right-hand sliver,
+ * word-per-line — Howell photographed the wreck on Tobit's prayer. The arc
+ * never comes back, so the poem stops fighting it: EACH METRICAL LINE'S HEAD
+ * SEATS AT ITS OWN ROW'S ARC EDGE, a continuation hangs one indent in from
+ * its head (clamped clear of the arc where the curve overtakes it), and the
+ * poem steps down the circle the way everything on this instrument does.
+ * Line structure and the hanging indents carry the poetry; the register is
+ * allowed to sit a step smaller when a long poem needs the room.
+ */
+function flowPoemAt(poemLines, bounds, fontPx, { unbounded = false } = {}) {
+  const lineH = fontPx * VERSE_LINE_HEIGHT;
+  const lt = bounds.lineTable || [];
+  const top = bounds.topY;
+  // A POEM REFUSES THE SLIVER. The sector's deepest rows narrow toward the
+  // ring until nothing poetic fits — a dozen characters set word-per-word is
+  // confetti, not a colon — so the poem's floor is the last row that holds a
+  // dozen characters, or the prose fill line, whichever comes first.
+  let fence = top + (bounds.bottomY - top) * VERSE_FILL;
+  const widthFloor = fontPx * VERSE_CHAR_EM * 12;
+  for (let y = top; y <= fence; y += lineH) {
+    if (sectorMetricAt(lt, y).width < widthFloor) { fence = y; break; }
+  }
+  const bottom = unbounded ? Infinity : fence;
+  const meas = makeMeasurer(fontPx);
+  const widthOf = meas ? t => meas.width(t) : t => t.length * fontPx * VERSE_CHAR_EM;
+  const hang = fontPx * 1.1;
+  try {
+    const lines = [];
+    let overflow = false;
+    let y = top;
+    for (const poemLine of poemLines) {
+      if (overflow) break;
+      const words = String(poemLine).split(/\s+/).filter(Boolean);
+      let cur = '';
+      let firstRow = true;
+      let headX = 0;
+      for (const w of words) {
+        if (y + lineH > bottom) { overflow = true; break; }
+        const m = sectorMetricAt(lt, y);
+        if (firstRow) headX = m.leftX;
+        // The hang must clear the arc: deeper rows intrude past a shallow
+        // head, and text never enters the ring's band.
+        const left = firstRow ? headX : Math.max(headX + hang, m.leftX);
+        const avail = m.leftX + m.width - left;
+        const test = cur ? `${cur} ${w}` : w;
+        if (widthOf(test) <= avail || !cur) { cur = test; continue; }
+        lines.push({ text: cur, y, leftX: left, availableWidth: avail, head: firstRow });
+        y += lineH; firstRow = false; cur = w;
+      }
+      if (!overflow && cur) {
+        // The trailing seat honours the same fence as every other row — it
+        // once slipped past and a poem claimed to fit while leaking below.
+        if (y + lineH > bottom) { overflow = true; break; }
+        const m = sectorMetricAt(lt, y);
+        const left = firstRow ? m.leftX : Math.max(headX + hang, m.leftX);
+        lines.push({ text: cur, y, leftX: left, availableWidth: m.leftX + m.width - left, head: firstRow });
+        y += lineH;
+      }
+    }
+    return { lines, overflow };
+  } finally {
+    if (meas) meas.done();
+  }
+}
+
+/** How many screens a poem needs — 1 or 2, the eclipse's own cap. Counted at
+ *  the uniform size; the fitting inside layoutPoem never changes the count. */
+export function poemPartCount(poemLines, bounds) {
+  return flowPoemAt(poemLines, bounds, uniformVerseFontPx(bounds)).overflow ? 2 : 1;
+}
+
+/** Lay out a poem; a long one splits at a METRICAL LINE boundary — never
+ *  mid-line — and a half that still overflows steps its size down to a floor
+ *  of 0.7×, Howell's own smaller-register instinct applied only where a poem
+ *  needs the room. Past the floor every word seats anyway: scripture is
+ *  never truncated. */
+export function layoutPoem(poemLines, bounds, part = 0) {
+  const fontPx = uniformVerseFontPx(bounds);
+  const whole = flowPoemAt(poemLines, bounds, fontPx);
+  if (!whole.overflow) return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+  const total = poemLines.join(' ').length;
+  let acc = 0, cut = 1, best = Infinity;
+  for (let i = 1; i < poemLines.length; i += 1) {
+    acc += poemLines[i - 1].length + 1;
+    const d = Math.abs(acc - (total - acc));
+    if (d < best) { best = d; cut = i; }
+  }
+  const chosen = part === 1 ? poemLines.slice(cut) : poemLines.slice(0, cut);
+  let px = fontPx;
+  let flow = flowPoemAt(chosen, bounds, px);
+  while (flow.overflow && px > fontPx * 0.7 + 0.01) {
+    px = Math.max(px * 0.95, fontPx * 0.7);   // the floor is a floor, not a fence to step over
+    flow = flowPoemAt(chosen, bounds, px);
+  }
+  if (flow.overflow) flow = flowPoemAt(chosen, bounds, px, { unbounded: true });
+  return { fontPx: px, lines: flow.lines, parts: 2, part: part === 1 ? 1 : 0 };
+}
+
 // Lay out ONE verse at the shared uniform size. Returns the size to apply and
 // the seated lines; a verse longer than the reference (shouldn't happen) has
 // its last line ellipsized rather than overrunning the sector.

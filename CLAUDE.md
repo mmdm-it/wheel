@@ -287,4 +287,33 @@ conversation with him, write the sentence out.
   struck, and a copy in version-stamped history is left standing, because
   WF-7 is already satisfied there. What the rule forbids is closing a
   correction whose sweep never ran or never said where it looked.
+
+- **WF-22 (ruled 2026-08-28). The board NAMES the document, and a stamp older
+  than the edit is a claim nobody has checked.**
+
+  WF-13 already says an audit reads one document against one question once a
+  session, and that the board names which is next so skipping is visible rather
+  than silent. **The board never had anything to name it with.** The choice was
+  made by eye and by eye it drifted: the document read on 2026-08-27 had been
+  waiting fourteen days. `node scripts/audit-board.mjs [repo]` now lists every
+  document under `docs/` with the date it was read, the question it was read
+  against, and the date it was last committed.
+
+  **A DOCUMENT EDITED SINCE IT WAS READ IS FLAGGED** — not because the edit was
+  wrong, but because the stamp has become a claim about a document nobody has
+  read in that state. This is the mechanism behind both contradictions found
+  that week: the corpus's proofread suite was stamped the 13th and rewritten on
+  the 26th, and this repository's `ARCHITECTURE.md` was stamped the 20th while
+  its far end still asked for a file deleted months before. Both read perfectly
+  well alone. Both contradicted their own other halves, because **an edit
+  corrects where the writer is looking and leaves the far end teaching the
+  retired thing with fresh authority.**
+
+  **And it counted a backlog nobody could see: 21 of 25 documents across the
+  two repositories have never been audited against any standing question.**
+  That is not a backlog anyone decided to accept.
+
+  Generated projections are excluded — the ledger index is regenerated and
+  verified by its builder, and reading it against a standing question would be
+  reading the ledger, which is not a document under `docs/`.
 <!-- WF-RULES:END -->

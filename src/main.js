@@ -15,7 +15,10 @@ import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
 import { CardDetailPlugin } from './view/detail/plugins/card-plugin.js';
 import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js';
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
-import { onVerseFontReady, invalidateVerseMeasurement, versePartCount } from './view/detail/plugins/line-layout.js';
+import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
+import { apparatusRuns } from './core/margin-source.js';
+import { computeMarginArea } from './geometry/margin-area.js';
+import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
@@ -78,6 +81,8 @@ pinCanvas(viewport);
 // measurement itself is invalidated (font arrival, re-wrap), since the count
 // derives from the measured size.
 const versePartsCache = new Map();
+const volumeForParts = () => currentManifest?.__wallVolume;
+let currentDetailRerender = null;   // set at boot; repaints the seated verse (O-112)
 
 // D.2 — the dimension state lives at the HOST level, above bootVolume, so a
 // choice survives volume reboots and gateway round trips (Howell ruling
@@ -670,7 +675,19 @@ function setPrimaryVisual(scale, blurPx) {
   });
   const app = document.getElementById('app');
   if (app) app.style.filter = filter;
-  const panel = document.getElementById('detail-panel');
+  // EVERY HTML OVERLAY THAT BELONGS TO THE PRIMARY PLANE RECEDES WITH IT.
+  // The verse panel was the only one when this was written; the margin and the
+  // marks beside the verse arrived later and stayed sharp and full-size while
+  // the ring behind them travelled away — Howell, 2026-08-27: "the sigla,
+  // margin notes, and legend do not recede and blur as the other primary
+  // stratum elements do... all of these margin elements should appear to move
+  // away from the user, becoming distant and blurry, while maintaining their
+  // positions relative to the focus ring and magnifier."
+  //
+  // They are listed rather than discovered, so a NEW overlay is a deliberate
+  // addition to this line and not a thing that silently fails to travel.
+  for (const id of ['detail-panel', 'margin-panel', 'margin-marks']) {
+  const panel = document.getElementById(id);
   if (panel) {
     const cx = viewport.width / 2, cy = viewport.height / 2;
     // Scale about the viewport CENTRE — the point the SVG ring/logo scale
@@ -682,6 +699,7 @@ function setPrimaryVisual(scale, blurPx) {
     panel.style.transformOrigin = `${cx}px ${cy}px`;
     panel.style.transform = scaled ? `scale(${scale})` : '';
     panel.style.filter = filter;
+  }
   }
 }
 function setStratumVisual(el, scale, blurPx, opacity = 1, offsetX = 0, offsetY = 0) {
@@ -1180,6 +1198,7 @@ function updateIncompleteMark() {
   } catch (_) { show = false; }
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
+    document.documentElement.classList.remove('incomplete-mark-showing');
     return;
   }
   if (!incompleteMarkEl) {
@@ -1189,6 +1208,10 @@ function updateIncompleteMark() {
     document.body.appendChild(incompleteMarkEl);
   }
   incompleteMarkEl.style.display = '';
+  // The mark took the copyright's band (O-103); the notice stands down while
+  // it is there, because an opaque band covers the notice's first line only
+  // and the notice wraps to two on a phone.
+  document.documentElement.classList.add('incomplete-mark-showing');
 }
 
 // THE SECTION LABEL (H-26, Howell's own sketch; specified in W-83).
@@ -1601,6 +1624,33 @@ detailRegistry.register(new CardDetailPlugin());
 detailRegistry.register(new EphemerisDetailPlugin());
 const detailPanel = document.getElementById('detail-panel');
 const detailContent = document.getElementById('detail-content');
+const marginPanel = document.getElementById('margin-panel');
+const marginMarks = document.getElementById('margin-marks');
+// ── THE MARGIN'S OWN STATE, ON THE GLASS (?margin=debug) ────────────────────
+// Inert unless asked for. It exists because of how this evening went: three
+// separate times a fix was declared done and was not, and each time the only
+// way to find out was Howell reloading on a phone and reporting what he saw.
+// I could not see the glass and was inferring the machinery's state from a
+// photograph of its output, which is how a lens that could not be TAPPED
+// looked exactly like a toggle that did not WORK.
+//
+// So this prints what the machinery BELIEVES, beside what it drew: how many
+// screens it thinks this verse needs, which half it is showing, how many notes
+// and marks it found. A screenshot of that is a fact rather than an inference.
+const MARGIN_DEBUG = (() => {
+  try { return new URLSearchParams(location.search).get('margin') === 'debug'; }
+  catch { return false; }
+})();
+let marginDebugEl = null;
+function marginDebug(line) {
+  if (!MARGIN_DEBUG) return;
+  if (!marginDebugEl) {
+    marginDebugEl = document.createElement('div');
+    marginDebugEl.id = 'margin-debug';
+    document.body.appendChild(marginDebugEl);
+  }
+  marginDebugEl.textContent = line;
+}
 
 // Toggle detail panel visibility in sync with the Detail Sector animation.
 // The panel fades in after the blue circle has finished expanding,
@@ -1609,6 +1659,15 @@ window.addEventListener('detail-sector-change', (e) => {
   const { visible } = e.detail || {};
   if (detailPanel) {
     detailPanel.classList.toggle('detail-panel--visible', Boolean(visible));
+  }
+  // The margin follows the sector it sits beside: it appears when the reader
+  // is at a leaf and goes when they leave. It is NOT a second panel with its
+  // own life — a note belongs to a verse, and there is no verse above a leaf.
+  if (marginPanel) {
+    marginPanel.classList.toggle('margin-panel--visible', Boolean(visible));
+  }
+  if (marginMarks) {
+    marginMarks.classList.toggle('margin-marks--visible', Boolean(visible));
   }
   // The dimension button follows the sill: present at a leaf, gone over a
   // child pyramid (which also recedes any open stack back to the primary).
@@ -1647,6 +1706,15 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   if (payload?.type === 'text' && payload.uniform) {
     payload.dir = dimensionBridge.editionDirection(translation);
     payload.lang = dimensionBridge.editionLang(translation);
+    // O-112: a poem verse carries its metrical lines, sliced from the seated
+    // text at the side-file's offsets. Cache-only here - an unfetched poem
+    // reads as prose until the arrival reflex repaints, the margin's pattern.
+    const pv = currentManifest?.__wallVolume;
+    const offs = pv?.poemAtSync?.(selected?.meta?.externalFile, translation, selected?.meta?.verseKey);
+    if (Array.isArray(offs) && offs.length > 1 && typeof payload.text === 'string') {
+      const txt = payload.text;
+      payload.poemLines = offs.map((o, i) => txt.slice(o, i + 1 < offs.length ? offs[i + 1] : txt.length).trim()).filter(Boolean);
+    }
     // O-84: which half of a split verse to show. An explicit part rides a
     // preview (the reading tap paints ahead of the ring); otherwise the
     // settled half is the ring's own state, so text and eclipse agree.
@@ -1672,6 +1740,28 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   const node = plugin.render(payload, renderBounds, { createElement: tag => document.createElement(tag) });
   if (node) detailContent.appendChild(node);
 
+  // ── THE MARGIN, BEYOND THE RING (W-127, W-165) ────────────────────────────
+  // Swete's apparatus, on the ground outside the arc. It is fetched per book
+  // and cached, so this is a synchronous paint after the first verse of a book
+  // and the reader never waits on it.
+  //
+  // IT IS DELIBERATELY NOT PART OF THE PAYLOAD. The Detail Sector renders one
+  // item through one plugin; a margin is a SECOND thing about the same verse,
+  // on its own ladder, absent for every edition but one and for most books of
+  // that one. Folding it into the payload would make its ordinary absence
+  // look like a missing verse (W-131, W-133).
+  // The half the sector was told to draw — NOT re-read from the app. Reading
+  // it twice from two places is how the verse and its notes come to disagree,
+  // and on a preview the app's own value is still the old one.
+  renderMargin(selected, translation, seqOfMargin(), payload?.part ?? 0);
+  if (MARGIN_DEBUG) {
+    // Both halves of the fact that was two facts until tonight: the half the
+    // SECTOR was told to draw, and the half the APP believes it is on. They
+    // must agree; when they did not, the ring and the words disagreed.
+    marginDebug(`${selected?.meta?.verseKey ?? '?'}  drawn ${payload?.part ?? 0}`
+      + `  app ${currentApp?.getVersePart?.() ?? '?'}`);
+  }
+
   // POST-PAINT WRAP VERIFY (Howell 2026-07-27, the iOS overflow endgame).
   // The wrap is computed from hidden-span measurements, and on iOS those can
   // lie: the font-load promise resolves BEFORE the face reaches layout, so
@@ -1693,9 +1783,127 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       if (!overflows) return;
       invalidateVerseMeasurement();
       versePartsCache.clear(); // part counts derive from the measurement (O-84)
+      // KEEPING THE HALF IT WAS DRAWING. The retry re-wraps the same text
+      // after a font reaches layout, so dropping the part here would have
+      // silently snapped a reader on the second half back to the first, in a
+      // repaint they never asked for and could not have attributed.
       renderDetail(selected, adapterInstance, manifest, adapterNormalized,
-        { translation, wrapAttempt: wrapAttempt + 1 });
+        { translation, wrapAttempt: wrapAttempt + 1, part });
     }));
+  }
+}
+
+let marginRenderSeq = 0;
+const seqOfMargin = () => ++marginRenderSeq;
+
+// Paint the margin note covering this verse, or clear it. Every early return
+// here is an ORDINARY state, not a failure: no volume, no apparatus for the
+// edition, no capture for the book, or a block held for a reading the printed
+// page has to settle. The reader meets a bare margin and nothing says sorry.
+async function renderMargin(selected, translation, seq, part = 0) {
+  if (!marginPanel) return;
+  const clear = () => {
+    if (seq !== marginRenderSeq) return;
+    while (marginPanel.firstChild) marginPanel.removeChild(marginPanel.firstChild);
+    if (marginMarks) marginMarks.textContent = '';
+  };
+  const bookId = selected?.meta?.externalFile;
+  const address = selected?.meta?.verseKey;
+  const volume = currentManifest?.__wallVolume;
+  if (!bookId || !address || !translation || typeof volume?.marginAt !== 'function') { clear(); return; }
+  const hadIt = typeof volume.marginAtSync === 'function'
+    && volume.marginAtSync(bookId, translation, address) !== null;
+  let found = null;
+  try {
+    found = await volume.marginAt(bookId, translation, address);
+  } catch {
+    found = null;
+  }
+  // AN APPARATUS THAT JUST ARRIVED CHANGES AN ANSWER ALREADY GIVEN. The ring
+  // asked how many screens this item needed before the fetch returned and was
+  // told one. Dropping the cache lets it ask again now that there is something
+  // to answer with — the same reflex the verse measurement already has when a
+  // font reaches layout after the wrap was computed.
+  //
+  // AND THE RING MUST BE MADE TO ASK. Clearing the cache fixes the NEXT
+  // question, but the node already seated asked its question before the fetch
+  // returned, and nothing was re-asking on its behalf: reached cold — boot,
+  // then straight down the child pyramid, no rotation — a split verse sat
+  // CENTERED in the lens as if whole, and healed only when a rotation forced
+  // a re-settle (Howell, Leviticus 1:8, 2026-08-28). The eclipse flag is
+  // computed fresh on every ring render, so one redraw at the current
+  // rotation is the whole cure.
+  // O-112: the poem rides the same wire. Fetched beside the apparatus so a
+  // poem verse reached cold learns its lines the same way it learns its
+  // notes - and the same reflex re-asks the ring and repaints the text.
+  const hadPoem = typeof volume.poemAtSync === 'function'
+    && volume.poemAtSync(bookId, translation, address) !== null;
+  let poemArrived = false;
+  if (typeof volume.poemAt === 'function') {
+    try { poemArrived = !hadPoem && (await volume.poemAt(bookId, translation, address)) !== null; }
+    catch { poemArrived = false; }
+  }
+  if (poemArrived && seq === marginRenderSeq) {
+    versePartsCache.clear();
+    currentApp?.resettle?.();
+    currentDetailRerender?.(currentApp?.getVersePart?.() ?? 0);
+  }
+  if (!hadIt && found?.entries?.length) {
+    versePartsCache.clear();
+    // Re-PARK, not just re-paint (O-111): the eclipse offset is settled
+    // geometry, so the seated node is sent on a short corrective glide. If
+    // the ring is mid-journey, this is a no-op and the journey's own
+    // arrival re-check re-parks instead.
+    currentApp?.resettle?.();
+  }
+  if (seq !== marginRenderSeq) return;   // a newer verse superseded this one
+  clear();
+  // THE MARKS DO NOT DEPEND ON THERE BEING A NOTE. A verse may carry a
+  // siglum in the margin and no apparatus at all — Isaiah 3:9 is one — so
+  // these are painted before the early return, not after it.
+  if (marginMarks && found?.marks?.length) {
+    marginMarks.textContent = '';
+    const line = document.createElement('div');
+    line.className = 'margin-marks-sigla';
+    // Same raising rule as the note: the app lifts the hands, the font never.
+    for (const run of apparatusRuns(found.marks.join('  '))) {
+      const piece = document.createElement('span');
+      if (run.sup) piece.className = 'margin-sup';
+      else if (run.italic) piece.className = 'margin-italic';
+      piece.textContent = run.text;
+      line.appendChild(piece);
+    }
+    marginMarks.appendChild(line);
+  }
+  // THE LEGEND HAS ONE HOME AND IT IS THE MARGIN'S FOOT. It was briefly given a
+  // second, under the sigla at the head of the screen, and Howell's answer was
+  // that he still could not see it "in its usual position" — which is the right
+  // objection: two places to look for the same kind of statement is one more
+  // than a reader should have to learn. The marks' manuscripts join the note's
+  // there, deduplicated, in the order they are met.
+  if (!found?.entries?.length && !found?.marksNamed?.length) return;
+  const vpm = measureViewport();
+  const named = [...(found.manuscripts || [])];
+  for (const m of found.marksNamed || []) {
+    if (!named.some(x => x.siglum === m.siglum)) named.push({ ...m, fromMark: true });
+  }
+  // The two lists arrive each in Swete's order; merged they are not, because a
+  // mark's manuscript is appended after the note's. Sorted once, here, on the
+  // same key both carry.
+  named.sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const node = renderMarginNote(found.entries, {
+    width: vpm.width,
+    height: vpm.height,
+    part,
+    manuscripts: named,
+    create: tag => document.createElement(tag),
+  });
+  if (node && seq === marginRenderSeq) marginPanel.appendChild(node);
+  if (MARGIN_DEBUG) {
+    marginDebug(`${address}  drawn ${part}`
+      + `  notes ${found.entries?.length ?? 0}`
+      + `  marks ${(found.marks || []).join('') || '-'}`
+      + `  named ${(found.marksNamed || []).map(m => m.siglum).join('') || '-'}`);
   }
 }
 
@@ -2643,9 +2851,33 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         const payload = adapter?.detailFor
           ? adapter.detailFor(item, manifest, { normalized: adapterNormalized, translation })
           : null;
-        const parts = (payload?.uniform && typeof payload.text === 'string')
-          ? versePartCount(payload.text, computeDetailSectorBounds(vpm.width, vpm.height))
-          : 1;
+        let parts = 1;
+        if (payload?.uniform && typeof payload.text === 'string') {
+          const bounds = computeDetailSectorBounds(vpm.width, vpm.height);
+          // O-112: a poem verse is measured by its own line-per-line flow -
+          // the prose count would under- or over-state its screens.
+          const offs = volumeForParts()?.poemAtSync?.(item?.meta?.externalFile, translation, item?.meta?.verseKey);
+          if (Array.isArray(offs) && offs.length > 1) {
+            const txt = payload.text;
+            const pls = offs.map((o, i) => txt.slice(o, i + 1 < offs.length ? offs[i + 1] : txt.length).trim()).filter(Boolean);
+            parts = poemPartCount(pls, bounds);
+          } else {
+            parts = versePartCount(payload.text, bounds);
+          }
+        }
+        // O-86: THE ECLIPSE TRIGGER WIDENS. A verse short enough to read whole
+        // may still carry notes too extensive for the margin, and Howell ruled
+        // those split the same way — "we simply display those notes in halves".
+        // So two parts when EITHER overflows. Asked from cache and without
+        // waiting: an apparatus still in flight answers one, and the cache is
+        // dropped when it lands so the ring asks again.
+        if (parts < 2) {
+          const volume = currentManifest?.__wallVolume;
+          const found = volume?.marginAtSync?.(item?.meta?.externalFile, translation, item?.meta?.verseKey);
+          if (found?.entries?.length) {
+            parts = marginPartCount(found.entries, found.manuscripts, { width: vpm.width, height: vpm.height });
+          }
+        }
         versePartsCache.set(key, parts);
         return parts;
       } catch (_) { return 1; }
@@ -2653,6 +2885,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   });
   currentApp = app;
   currentManifest = manifest;
+  currentDetailRerender = part => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+    { translation: activeTranslation(), part });
   // THE MARK FOLLOWS THE READER (H-25). Before this it was re-evaluated on an
   // edition change and at boot only, which was sufficient while it asked about
   // the edition and is not once it asks about the BOOK: the reader would carry
@@ -2681,9 +2915,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // THE STRIKE: in search mode — and only there — the magnifier receives
   // its first-ever click (Howell 2026-07-22): tap the lens, commit the
   // settled character to the carriage. Inert in browse mode.
+  // AND IN BROWSE MODE IT NAMES THE HALF (Howell 2026-08-27). The lens had
+  // exactly one job and only in search; it now has a second, and only where
+  // there is a second half to name. On an undivided node the tap is inert,
+  // which is the state it has always been in and must stay in — the lens is
+  // not a general-purpose button and must never grow into one.
   if (app?.view?.magnifierCircle) {
     app.view.magnifierCircle.addEventListener('click', () => {
-      if (searchRestore) strikeSettledChar();
+      if (searchRestore) { strikeSettledChar(); return; }
+      app.toggleVersePart?.();
     });
   }
   // Expose app to window for console API
@@ -2756,7 +2996,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // Detail renders resolve the translation LIVE (the sticky choice can
   // change between renders); the settle hook below regenerates the open
   // panel the moment a new choice commits.
-  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
+  renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+    { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
   rememberReadingPosition(); // the boot position counts too
   // The globe follows the magnifier: at the volume's front door it appears,
   // one step of descent hides it (nav change), the leaf brings it back
@@ -2764,7 +3005,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   updateDimensionButton();
   updateCornerImage();
   app?.nav?.onChange?.(() => {
-    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: activeTranslation() });
+    // THE HALF IS PASSED, NEVER LEFT TO A FALLBACK. This called renderDetail
+    // with no `part`, so the text took whatever the app's `versePart` happened
+    // to hold at that instant — a value set by a different code path at a
+    // different moment. That is how the ring came to show the second half of a
+    // verse while the sector showed the first: not one wrong assignment, but
+    // two sources for one fact. There is one source now and every caller reads
+    // it out loud.
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
     updateDimensionButton();
     rememberReadingPosition();
   });
@@ -2791,7 +3040,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     refreshNamesMap();
     if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
     if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
-    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation });
+    // A NEW EDITION IS A NEW READING and starts at the first half: the verse
+    // is different text of a different length and its old half means nothing.
+    // Stated rather than left to a default, because "0" here is a decision.
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      { translation, part: 0 });
     // Remember the choice, so the next launch's funnel confirms it (ruling 2)
     // rather than presenting the pinned default as though nothing was chosen.
     const sel = dimensionBridge.getSelection();
@@ -2839,7 +3092,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     versePartsCache.clear(); // the real serif re-measures everything (O-84)
     renderDetail(
       app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
-      { translation: activeTranslation() });
+      { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
   });
   // Generic post-boot hook: adapters may schedule volume-specific startup
   // work (e.g. a featured-item prefetch) without the host
@@ -2849,7 +3102,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       app,
       items,
       selectedIndex,
-      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized, { translation: activeTranslation() })
+      // The adapter repaints through this when a chapter's text lands, which
+      // can happen while a reader is on the second half of a verse. It carries
+      // the half for the same reason the wrap retry does.
+      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized,
+        { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 })
     });
   }
   if (!interactionsWired) {
@@ -2876,7 +3133,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     options.previewEdition = edition;
     if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
     if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
-    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized, { translation: edition });
+    renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      { translation: edition, part: 0 });   // a new edition starts at the first half
   };
 
   // Open the funnel LAST, once the primary has its chain, its verse and its
