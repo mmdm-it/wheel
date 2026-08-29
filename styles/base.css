@@ -915,7 +915,16 @@ svg :focus-visible {
            calc(10px * var(--iframe-scale, 1))
            calc(6px * var(--iframe-scale, 1))
            calc(10px * var(--iframe-scale, 1));
-  background: rgb(120, 20, 20);   /* SOLID: at 0.94 the notice read through it */
+  /* SEMI-TRANSPARENT, ON PURPOSE, AND THIS REVERSES AN EARLIER FIX (Howell,
+     2026-08-29: "make the NOT PROOFREAD banner semi-transparent so we can
+     discuss this further"). It was made solid because at 0.94 the copyright
+     notice read faintly through it and looked like a defect. It is now the
+     opposite of a defect: the sector raises its text to the notice's measured
+     edge (O-115), and the notice is invisible on the LAN build precisely
+     where the geometry needs judging — the mark is SHORTER than the furniture
+     it covers, so the air above the text is the dev tool's, not the reader's.
+     Seeing both at once is the only way to discuss where the text may sit. */
+  background: rgba(120, 20, 20, 0.55);
   color: #fff;
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: calc(11px * var(--iframe-scale, 1));
@@ -925,13 +934,15 @@ svg :focus-visible {
   pointer-events: none;
 }
 
-/* AND THE NOTICE BENEATH IT STANDS DOWN WHILE IT SHOWS. Making the mark opaque
-   covers the notice's FIRST line and nothing else: the copyright wraps to two
-   lines on a phone, so "riservati." sat below the band in plain sight. A band
-   sized to guess how many lines the notice happens to wrap to would be wrong
-   the first time a viewport changed. Hiding the element it replaces cannot
-   half-cover, and the notice returns the instant the mark goes. */
-:root.incomplete-mark-showing .copyright-notice { visibility: hidden; }
+/* THE NOTICE NO LONGER STANDS DOWN BENEATH IT (Howell, 2026-08-29). It used
+   to: an opaque mark covered the notice's FIRST line and nothing else — the
+   copyright wraps to two lines on a phone, so "riservati." sat below the band
+   in plain sight — and hiding the element it replaced could not half-cover.
+   With the mark semi-transparent that reasoning inverts: the notice showing
+   THROUGH the mark is the point, because the sector now raises its text to
+   the notice's own bottom edge and the mark is shorter than the notice. A
+   reader never sees either state — the mark is LAN-only — so what this rule
+   costs is nothing and what it shows is the geometry under discussion. */
 
 /* THE SECTION LABEL (H-26) — the tradition's own name for the division the
    magnified book belongs to. A NAME, never a colour: a colour asserts nothing
