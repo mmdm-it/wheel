@@ -156,8 +156,18 @@ const VERSE_FILL = 1.0;         // fraction of sector height the longest verse m
 const VERSE_RAISE_ROWS = 1;
 function seatTopFor(bounds, fontPx) {
   const raised = bounds.topY - fontPx * VERSE_LINE_HEIGHT * VERSE_RAISE_ROWS;
-  const ceiling = Number.isFinite(bounds.ceilingY) ? bounds.ceilingY : -Infinity;
-  return Math.max(raised, ceiling);
+  if (!Number.isFinite(bounds.ceilingY)) return raised;
+  // AND THE LINE BOX'S OWN EMPTY TOP COUNTS AS HEADROOM. A line box of height
+  // 1.3em carries half its extra leading ABOVE the glyphs — 0.15em of
+  // guaranteed white by CSS's own definition, not a guess about this font —
+  // so the box may cross the notice's ink line by exactly that much and the
+  // ink still cannot meet. Together with the notice's own bottom padding
+  // (subtracted where it is measured) this is the whole of what Howell saw
+  // as headroom, and every pixel of it is PROVABLY empty. What remains below
+  // is the gap between the font's ascent and its actual glyph tops, which
+  // would need real ink metrics to claim and is deliberately left alone.
+  const halfLeading = fontPx * (VERSE_LINE_HEIGHT - 1) / 2;
+  return Math.max(raised, bounds.ceilingY - halfLeading);
 }
 
 // Measure with the ACTUAL DOM — a hidden span in the real font — NOT canvas.

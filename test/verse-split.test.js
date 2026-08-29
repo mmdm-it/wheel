@@ -209,10 +209,25 @@ describe('the block sits one row higher than it measures itself (O-115)', () => 
     const tall = computeDetailSectorBounds(360, 740, null, 200); // an absurd notice
     invalidateVerseMeasurement();
     const px = uniformVerseFontPx(tall);
-    // Nothing may seat above the notice's bottom edge; with a notice that
-    // deep the sector cannot raise at all.
-    const seatTop = Math.max(tall.topY - px * 1.3, tall.ceilingY);
-    assert.equal(seatTop, 200, 'text climbed over the notice');
+    // The line box may cross the notice's INK line by its own half-leading —
+    // 0.15em of guaranteed white above the glyphs — and no further.
+    const seatTop = Math.max(tall.topY - px * 1.3, tall.ceilingY - px * 0.15);
+    assert.ok(seatTop < 200 && seatTop > 200 - px * 0.16, 'the clamp is not ink-aware');
+    // The ink itself never reaches the notice.
+    assert.ok(seatTop + px * 0.15 >= 200 - 0.001, 'glyph ink crossed the notice');
+  });
+
+  it('takes the notice\'s own bottom padding as headroom (Howell\'s Moto G)', () => {
+    // Howell, reading through the translucent mark: "there appears to be
+    // plenty of headroom before we hit the copyright warning." There was —
+    // the clamp was measuring the notice's BOX, six pixels of padding below
+    // its last line, and the line box's own empty top on the other side.
+    const box = computeDetailSectorBounds(360, 740, null, 38);   // box bottom
+    const ink = computeDetailSectorBounds(360, 740, null, 32);   // ink bottom
+    invalidateVerseMeasurement();
+    const px = uniformVerseFontPx(ink);
+    const seatOf = b => Math.max(b.topY - px * 1.3, b.ceilingY - px * 0.15);
+    assert.ok(seatOf(ink) < seatOf(box) - 5, 'the padding was not recovered');
   });
 
   it('keeps the shared size the raise would otherwise inflate', () => {

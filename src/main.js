@@ -49,7 +49,18 @@ function copyrightBottomPx() {
     const el = typeof document !== 'undefined' && document.getElementById('copyright-notice');
     if (!el || typeof el.getBoundingClientRect !== 'function') return null;
     const r = el.getBoundingClientRect();
-    return Number.isFinite(r?.bottom) ? r.bottom : null;
+    if (!Number.isFinite(r?.bottom)) return null;
+    // THE NOTICE'S INK, NOT ITS BOX (Howell, 2026-08-29, reading his Moto G
+    // through the now-translucent mark: "there appears to be plenty of
+    // headroom before we hit the copyright warning"). There was, and the
+    // clamp could not see it: the element's bottom edge carries six pixels
+    // of padding below its last line, so clamping to the BOX stopped the
+    // text a padding's width above where anything is actually drawn. The eye
+    // measures ink to ink; so does this now.
+    const pad = typeof window !== 'undefined' && window.getComputedStyle
+      ? parseFloat(window.getComputedStyle(el).paddingBottom) || 0
+      : 0;
+    return r.bottom - pad;
   } catch (_) { return null; }
 }
 

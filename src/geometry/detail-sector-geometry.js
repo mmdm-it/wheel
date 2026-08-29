@@ -16,11 +16,12 @@ import {
 import { computeDSUA, CPUA_SPEC } from './usable-areas.js';
 
 /**
- * The copyright notice's height when nobody has measured it (node, tests):
- * 11px type, two lines on a phone, 6px padding top and bottom. Only ever a
- * fallback — the live app passes the element's real bottom edge.
+ * Where the copyright notice's INK ends when nobody has measured it (node,
+ * tests): 11px type, two lines on a phone, 6px padding above them. Only ever
+ * a fallback — the live app passes the element's measured ink edge, its box
+ * bottom less its own bottom padding.
  */
-const NOTICE_FALLBACK_PX  = 38;
+const NOTICE_FALLBACK_PX  = 32;
 
 /** Skip lines whose available width is narrower than this fraction of SSd */
 const MIN_WIDTH_RATIO     = 0.10;
