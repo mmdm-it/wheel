@@ -15,8 +15,9 @@ import assert from 'node:assert/strict';
 import { describe, it, beforeEach, afterEach } from 'node:test';
 import {
   splitVerse, layoutVerse, versePartCount, uniformVerseFontPx,
-  LONGEST_VERSE_REFERENCE
+  invalidateVerseMeasurement, LONGEST_VERSE_REFERENCE
 } from '../src/view/detail/plugins/line-layout.js';
+import { computeDetailSectorBounds } from '../src/geometry/detail-sector-geometry.js';
 import { FocusRingView } from '../src/view/focus-ring-view.js';
 import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 
@@ -182,5 +183,52 @@ describe('a split verse settles as a true eclipse, not an absorbed node', () => 
     settle(true);
     assert.equal(region.textContent, '9',
       'the live region speaks the settled label even though the lens shows nothing');
+  });
+});
+
+describe('the block sits one row higher than it measures itself (O-115)', () => {
+  // Howell, 2026-08-29: "move the entire text block up by one row... one row
+  // closer to the copyright disclaimer", and then, told what the auto-fit
+  // would do with the gained height: "pin the shared size to what it is now."
+  // Two numbers, deliberately different — where text SEATS and what the size
+  // is FITTED against — because fitting to the taller box spends the row on
+  // bigger glyphs and saves no splits at all.
+  it('seats one line pitch above the fence it sizes against', () => {
+    const b = computeDetailSectorBounds(360, 740);
+    const pitch = b.SSd * 0.03 * 1.4;
+    assert.ok(b.sizingTopY !== undefined, 'the sizing box is not exposed');
+    assert.ok(Math.abs((b.sizingTopY - b.topY) - pitch) < 0.001,
+      `the block is not raised by exactly one pitch (${b.sizingTopY - b.topY} vs ${pitch})`);
+  });
+
+  it('keeps the shared size the raise would otherwise inflate', () => {
+    const b = computeDetailSectorBounds(360, 740);
+    const unraised = { ...b, topY: b.sizingTopY, sizingTopY: undefined };
+    invalidateVerseMeasurement();
+    const pinned = uniformVerseFontPx(b);
+    invalidateVerseMeasurement();
+    const before = uniformVerseFontPx(unraised);
+    assert.ok(Math.abs(pinned - before) < 0.001,
+      `the size moved with the block (${before} -> ${pinned})`);
+  });
+
+  it('spends the gained row on text: a verse that split now fits whole', () => {
+    // A verse sized to just overflow the unraised box must fit the raised one
+    // at the same pinned size — that is the whole point of the move.
+    const b = computeDetailSectorBounds(360, 740);
+    const unraised = { ...b, topY: b.sizingTopY, sizingTopY: undefined };
+    invalidateVerseMeasurement();
+    const px = uniformVerseFontPx(b);
+    let words = [];
+    let text = '';
+    for (let i = 0; i < 400; i += 1) {
+      words.push('λογος');
+      const t = words.join(' ');
+      if (versePartCount(t, unraised) > 1) { text = t; break; }
+    }
+    assert.ok(text, 'no verse long enough to overflow the unraised sector');
+    assert.equal(versePartCount(text, unraised), 2, 'the fixture does not split before the move');
+    assert.equal(versePartCount(text, b), 1, 'the gained row did not seat the verse whole');
+    assert.ok(px > 0);
   });
 });

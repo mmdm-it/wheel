@@ -78,6 +78,23 @@ export function computeDetailSectorBounds(width, height, logoBounds = null) {
   const linePitch    = SSd * LINE_PITCH_RATIO;
   const avgCharWidth = SSd * CHAR_WIDTH_RATIO;
 
+  // THE BLOCK SITS ONE ROW HIGHER THAN IT MEASURES ITSELF (O-115, Howell
+  // 2026-08-29: "move the entire text block up by one row... one row closer
+  // to the copyright disclaimer"). Two numbers, deliberately different:
+  //
+  //   topY       — where text SEATS. One pitch above the canonical fence.
+  //   sizingTopY — the box the shared type size is FITTED against. The fence
+  //                itself, unmoved.
+  //
+  // They differ because the sizing rule is auto-fit (O-84: the longest half
+  // just fills the sector), so a taller box silently buys BIGGER TYPE rather
+  // than more room — measured across all 27,305 verses, the move with the
+  // refit eliminated no splits at all and added them on two viewports. Pinned
+  // to today's size, the same move retires about a fifth of the split verses
+  // (2,235 → 1,800 at 360×740). Howell chose the pin knowing the trade: the
+  // type stays where his eye has it, and the row buys reading instead.
+  const raise = linePitch;
+
   const lineTable = [];
   let y = dsua.top + linePitch; // first baseline one pitch inside the fence
 
@@ -106,7 +123,8 @@ export function computeDetailSectorBounds(width, height, logoBounds = null) {
   }
 
   return {
-    topY: dsua.top,
+    topY: dsua.top - raise,
+    sizingTopY: dsua.top,
     bottomY: dsua.bottom,
     leftBound: dsua.left,
     rightBound: dsua.right,

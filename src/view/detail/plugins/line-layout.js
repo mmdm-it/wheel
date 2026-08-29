@@ -345,13 +345,20 @@ const SIZING_REFERENCE = halves[0].length >= halves[1].length ? halves[0] : halv
 // fallback-measured size is replaced once the real serif arrives).
 const verseSizeCache = new Map();
 export function uniformVerseFontPx(bounds) {
-  const key = `${bounds.SSd}:${bounds.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}`;
+  // THE SIZE IS FITTED AGAINST THE FENCE, NOT AGAINST THE RAISED BLOCK
+  // (O-115). The sector now seats text one row above the canonical fence, and
+  // fitting to that taller box would spend the whole row on bigger glyphs —
+  // which measured as zero splits saved. Fitting to `sizingTopY` pins the
+  // shared size to what it was before the move, so the row buys text instead.
+  // Bounds without the field (older callers, test fixtures) are unchanged.
+  const fitBox = bounds.sizingTopY === undefined ? bounds : { ...bounds, topY: bounds.sizingTopY };
+  const key = `${bounds.SSd}:${fitBox.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}`;
   const hit = verseSizeCache.get(key);
   if (hit !== undefined) return hit;
   let lo = bounds.SSd * 0.025, hi = bounds.SSd * 0.11;
   for (let i = 0; i < 16; i += 1) {
     const mid = (lo + hi) / 2;
-    if (!flowVerseAt(SIZING_REFERENCE, bounds, mid).overflow) lo = mid; else hi = mid;
+    if (!flowVerseAt(SIZING_REFERENCE, fitBox, mid).overflow) lo = mid; else hi = mid;
   }
   verseSizeCache.set(key, lo);
   return lo;
