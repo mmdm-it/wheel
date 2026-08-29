@@ -188,22 +188,36 @@ describe('a split verse settles as a true eclipse, not an absorbed node', () => 
 
 describe('the block sits one row higher than it measures itself (O-115)', () => {
   // Howell, 2026-08-29: "move the entire text block up by one row... one row
-  // closer to the copyright disclaimer", and then, told what the auto-fit
-  // would do with the gained height: "pin the shared size to what it is now."
-  // Two numbers, deliberately different — where text SEATS and what the size
-  // is FITTED against — because fitting to the taller box spends the row on
-  // bigger glyphs and saves no splits at all.
-  it('seats one line pitch above the fence it sizes against', () => {
-    const b = computeDetailSectorBounds(360, 740);
-    const pitch = b.SSd * 0.03 * 1.4;
-    assert.ok(b.sizingTopY !== undefined, 'the sizing box is not exposed');
-    assert.ok(Math.abs((b.sizingTopY - b.topY) - pitch) < 0.001,
-      `the block is not raised by exactly one pitch (${b.sizingTopY - b.topY} vs ${pitch})`);
+  // closer to the copyright disclaimer", then, seeing it: "that looks like a
+  // vertical change of less than a full row." It was: the first pass raised
+  // by one LINE-TABLE pitch — the tier-6 grid, 0.042·SSd — which is under
+  // half a row of the type he actually reads. The raise is now counted in
+  // the reader's own rows, and the copyright notice is the ceiling.
+  it('raises by a row of the reader\'s type, not of the line-table grid', () => {
+    const b = computeDetailSectorBounds(360, 740, null, 0); // no notice in the way
+    invalidateVerseMeasurement();
+    const px = uniformVerseFontPx(b);
+    const verseRow = px * 1.3;
+    const tablePitch = b.SSd * 0.03 * 1.4;
+    assert.ok(verseRow > tablePitch * 2, 'the fixture no longer distinguishes the two units');
+    const seatTop = Math.max(b.topY - verseRow, b.ceilingY);
+    assert.ok(Math.abs((b.topY - seatTop) - verseRow) < 0.001,
+      'the raise is not one row of the reader\'s type');
+  });
+
+  it('stops at the copyright notice rather than climbing over it', () => {
+    const tall = computeDetailSectorBounds(360, 740, null, 200); // an absurd notice
+    invalidateVerseMeasurement();
+    const px = uniformVerseFontPx(tall);
+    // Nothing may seat above the notice's bottom edge; with a notice that
+    // deep the sector cannot raise at all.
+    const seatTop = Math.max(tall.topY - px * 1.3, tall.ceilingY);
+    assert.equal(seatTop, 200, 'text climbed over the notice');
   });
 
   it('keeps the shared size the raise would otherwise inflate', () => {
-    const b = computeDetailSectorBounds(360, 740);
-    const unraised = { ...b, topY: b.sizingTopY, sizingTopY: undefined };
+    const b = computeDetailSectorBounds(360, 740, null, 0);
+    const unraised = { ...b, ceilingY: b.topY };   // ceiling at the fence: no raise possible
     invalidateVerseMeasurement();
     const pinned = uniformVerseFontPx(b);
     invalidateVerseMeasurement();
@@ -213,14 +227,11 @@ describe('the block sits one row higher than it measures itself (O-115)', () => 
   });
 
   it('spends the gained row on text: a verse that split now fits whole', () => {
-    // A verse sized to just overflow the unraised box must fit the raised one
-    // at the same pinned size — that is the whole point of the move.
-    const b = computeDetailSectorBounds(360, 740);
-    const unraised = { ...b, topY: b.sizingTopY, sizingTopY: undefined };
+    const raised = computeDetailSectorBounds(360, 740, null, 0);
+    const unraised = { ...raised, ceilingY: raised.topY };
     invalidateVerseMeasurement();
-    const px = uniformVerseFontPx(b);
-    let words = [];
     let text = '';
+    const words = [];
     for (let i = 0; i < 400; i += 1) {
       words.push('λογος');
       const t = words.join(' ');
@@ -228,7 +239,6 @@ describe('the block sits one row higher than it measures itself (O-115)', () => 
     }
     assert.ok(text, 'no verse long enough to overflow the unraised sector');
     assert.equal(versePartCount(text, unraised), 2, 'the fixture does not split before the move');
-    assert.equal(versePartCount(text, b), 1, 'the gained row did not seat the verse whole');
-    assert.ok(px > 0);
+    assert.equal(versePartCount(text, raised), 1, 'the gained row did not seat the verse whole');
   });
 });

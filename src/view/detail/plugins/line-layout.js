@@ -147,6 +147,18 @@ const VERSE_FONT_STACK = "'EB Garamond', Georgia, serif";
 const VERSE_CHAR_EM = 0.50;     // fallback estimate only (no canvas, e.g. tests)
 const VERSE_LINE_HEIGHT = 1.30; // vertical pitch between verse lines
 const VERSE_FILL = 1.0;         // fraction of sector height the longest verse may use
+// THE BLOCK SEATS A ROW OF ITS OWN TEXT ABOVE THE FENCE (O-115). Expressed in
+// the reader's rows, not in the line table's tier-6 grid — the first pass used
+// the grid and moved the block less than half a row, which Howell saw at once.
+// The ceiling is the copyright notice's measured bottom: text rises until it
+// reaches the notice and no further, so a device whose notice sets one line
+// gains the whole row and a phone's two-line notice gives what it has.
+const VERSE_RAISE_ROWS = 1;
+function seatTopFor(bounds, fontPx) {
+  const raised = bounds.topY - fontPx * VERSE_LINE_HEIGHT * VERSE_RAISE_ROWS;
+  const ceiling = Number.isFinite(bounds.ceilingY) ? bounds.ceilingY : -Infinity;
+  return Math.max(raised, ceiling);
+}
 
 // Measure with the ACTUAL DOM — a hidden span in the real font — NOT canvas.
 // Safari's canvas measureText under-measures a web font even after it loads
@@ -283,10 +295,12 @@ function sectorMetricAt(lineTable, y) {
 
 // Flow `text` at fontPx; lines seated at their true height, arc-aware, wrapped
 // by MEASURED width. Returns { lines:[{text,y,leftX,availableWidth}], overflow }.
-function flowVerseAt(text, bounds, fontPx) {
+function flowVerseAt(text, bounds, fontPx, { seated = true } = {}) {
   const lineH = fontPx * VERSE_LINE_HEIGHT;
   const lt = bounds.lineTable || [];
-  const top = bounds.topY;
+  // The FIT measures against the fence (seated:false) so the shared size never
+  // follows the raise; everything that RENDERS measures against the seat.
+  const top = seated ? seatTopFor(bounds, fontPx) : bounds.topY;
   const bottom = top + (bounds.bottomY - top) * VERSE_FILL;
   const words = text.split(/\s+/).filter(Boolean);
   const lines = [];
@@ -345,20 +359,18 @@ const SIZING_REFERENCE = halves[0].length >= halves[1].length ? halves[0] : halv
 // fallback-measured size is replaced once the real serif arrives).
 const verseSizeCache = new Map();
 export function uniformVerseFontPx(bounds) {
-  // THE SIZE IS FITTED AGAINST THE FENCE, NOT AGAINST THE RAISED BLOCK
-  // (O-115). The sector now seats text one row above the canonical fence, and
-  // fitting to that taller box would spend the whole row on bigger glyphs —
-  // which measured as zero splits saved. Fitting to `sizingTopY` pins the
-  // shared size to what it was before the move, so the row buys text instead.
-  // Bounds without the field (older callers, test fixtures) are unchanged.
-  const fitBox = bounds.sizingTopY === undefined ? bounds : { ...bounds, topY: bounds.sizingTopY };
-  const key = `${bounds.SSd}:${fitBox.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}`;
+  // THE SIZE IS FITTED AGAINST THE FENCE, NEVER AGAINST THE RAISED BLOCK
+  // (O-115). Fitting to the taller box would spend the whole gained row on
+  // bigger glyphs — measured across all 27,305 verses, that saved no splits
+  // at all and added them on two viewports. Howell chose the pin knowing the
+  // trade: the type stays where his eye has it and the row buys reading.
+  const key = `${bounds.SSd}:${bounds.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}`;
   const hit = verseSizeCache.get(key);
   if (hit !== undefined) return hit;
   let lo = bounds.SSd * 0.025, hi = bounds.SSd * 0.11;
   for (let i = 0; i < 16; i += 1) {
     const mid = (lo + hi) / 2;
-    if (!flowVerseAt(SIZING_REFERENCE, fitBox, mid).overflow) lo = mid; else hi = mid;
+    if (!flowVerseAt(SIZING_REFERENCE, bounds, mid, { seated: false }).overflow) lo = mid; else hi = mid;
   }
   verseSizeCache.set(key, lo);
   return lo;
@@ -373,7 +385,7 @@ export function uniformVerseFontPx(bounds) {
 const partCountCache = new Map();
 export function versePartCount(text, bounds) {
   const t = String(text || '');
-  const key = `${bounds.SSd}:${bounds.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}:${t.length}:${t.slice(0, 32)}`;
+  const key = `${bounds.SSd}:${bounds.topY}:${bounds.ceilingY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}:${t.length}:${t.slice(0, 32)}`;
   const hit = partCountCache.get(key);
   if (hit !== undefined) return hit;
   const parts = flowVerseAt(t, bounds, uniformVerseFontPx(bounds)).overflow ? 2 : 1;
@@ -397,7 +409,7 @@ export function versePartCount(text, bounds) {
 function flowPoemAt(poemLines, bounds, fontPx, { unbounded = false } = {}) {
   const lineH = fontPx * VERSE_LINE_HEIGHT;
   const lt = bounds.lineTable || [];
-  const top = bounds.topY;
+  const top = seatTopFor(bounds, fontPx);
   // A POEM REFUSES THE SLIVER. The sector's deepest rows narrow toward the
   // ring until nothing poetic fits — a dozen characters set word-per-word is
   // confetti, not a colon — so the poem's floor is the last row that holds a

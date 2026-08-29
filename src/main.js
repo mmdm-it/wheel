@@ -36,6 +36,23 @@ const svg = document.getElementById('app');
 // top address bar). Measuring inner* — and measuring it at module load, before
 // the bar drops in — computed for a full screen and the bar then cropped the
 // bottom. One source of truth, measured fresh at boot.
+// THE COPYRIGHT NOTICE'S REAL BOTTOM EDGE (O-115). The detail sector raises
+// its text a row toward the top of the glass and must stop at this piece of
+// furniture — MEASURED, never assumed: the notice's own stylesheet records it
+// sitting some ninety pixels lower in DuckDuckGo than in Chrome on the same
+// device, overlapping the leaf text. It stays in layout while the NOT
+// PROOFREAD mark covers it (visibility, not display), so the rect is honest
+// in both states. Null when there is no DOM or no notice; the geometry then
+// falls back to a phone's two-line box.
+function copyrightBottomPx() {
+  try {
+    const el = typeof document !== 'undefined' && document.getElementById('copyright-notice');
+    if (!el || typeof el.getBoundingClientRect !== 'function') return null;
+    const r = el.getBoundingClientRect();
+    return Number.isFinite(r?.bottom) ? r.bottom : null;
+  } catch (_) { return null; }
+}
+
 function measureViewport() {
   const vv = window.visualViewport;
   const w = vv && vv.width ? Math.round(vv.width) : window.innerWidth;
@@ -1731,7 +1748,7 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // pinned canvas use the visual viewport, and a browser chrome bar makes
   // innerHeight lie (Phase C audit M4; the DDG bottom-crop class of bug).
   const vpm = measureViewport();
-  const arcBounds = computeDetailSectorBounds(vpm.width, vpm.height);
+  const arcBounds = computeDetailSectorBounds(vpm.width, vpm.height, null, copyrightBottomPx());
   const panelRect = detailPanel.getBoundingClientRect();
   const renderBounds = { ...arcBounds, width: panelRect.width, height: panelRect.height };
 
@@ -2853,7 +2870,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
           : null;
         let parts = 1;
         if (payload?.uniform && typeof payload.text === 'string') {
-          const bounds = computeDetailSectorBounds(vpm.width, vpm.height);
+          const bounds = computeDetailSectorBounds(vpm.width, vpm.height, null, copyrightBottomPx());
           // O-112: a poem verse is measured by its own line-per-line flow -
           // the prose count would under- or over-state its screens.
           const offs = volumeForParts()?.poemAtSync?.(item?.meta?.externalFile, translation, item?.meta?.verseKey);
