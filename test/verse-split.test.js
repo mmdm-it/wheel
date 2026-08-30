@@ -283,3 +283,25 @@ describe('a layout measured without the real face is provisional (O-118)', () =>
     assert.equal(fired, false, 'the callback fired though no face has loaded');
   });
 });
+
+describe('the paint is asked about under-fill, not only overflow (O-119)', () => {
+  // Howell, after the first attempt: "Cold boot failed." The first fix
+  // trusted document.fonts, and the comment beside the paint-witness already
+  // said that promise resolves BEFORE the face reaches layout — which is why
+  // the witness exists at all. The witness was asking one question, "did a
+  // line run PAST its box", and this failure sits comfortably INSIDE the box.
+  it('recognises a line that could still have taken the next word', () => {
+    // The predicate itself, in miniature: a row 326px wide holding a line
+    // that measures 227px, with a word of 40px waiting below it. Nothing
+    // overflows; everything is wrong.
+    const box = 326, painted = 227, nextWord = 40;
+    assert.ok(painted + nextWord <= box - 1,
+      'the fixture does not represent an under-filled row');
+  });
+
+  it('leaves a genuinely full row alone', () => {
+    const box = 326, painted = 318, nextWord = 40;
+    assert.ok(!(painted + nextWord <= box - 1),
+      'a full row would be reported as under-filled');
+  });
+});

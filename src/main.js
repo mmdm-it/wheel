@@ -1837,7 +1837,54 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       detailContent.querySelectorAll('.detail-text-line').forEach(el => {
         if ((el.scrollWidth || 0) - (el.clientWidth || 0) > 2) overflows = true;
       });
-      if (!overflows) return;
+      // AND UNDER-FILL IS A FAILURE TOO (O-119). Howell, 2026-08-30, after
+      // the first attempt at this: "Cold boot failed." It did, because the
+      // guard added then trusted `document.fonts` — and the comment directly
+      // above this block already says that promise resolves BEFORE the face
+      // reaches layout, which is the whole reason this paint-witness exists.
+      // The instrument was asking the paint one question, "did a line run
+      // PAST its box", and Howell's Genesis 1:1 fails the opposite way: the
+      // wrap measured in the wide-Greek fallback broke at eighteen characters
+      // in a row that holds twenty-seven, so every line sits comfortably
+      // INSIDE its box and the old question answers no.
+      //
+      // Now the paint is asked both. Post-paint the real face IS in layout,
+      // so a measurement taken here is honest: if any line could still have
+      // taken the first word of the line below it, the wrap was measured in
+      // some other face and the whole layout is stale. Prose only — a poem's
+      // lines are metrical and must NOT be joined, which is why this asks the
+      // payload rather than the pixels.
+      const underfilled = () => {
+        // ONLY THE MEASURED PATH IS ASKED. Cards and labels wrap by a
+        // character-count budget that is deliberately conservative, so they
+        // look under-filled by construction and would re-render to the cap
+        // every time, changing nothing.
+        if (!payload?.uniform) return false;
+        if (Array.isArray(payload?.poemLines) && payload.poemLines.length > 1) return false;
+        const els = Array.from(detailContent.querySelectorAll('.detail-text-line'));
+        if (els.length < 2) return false;
+        let probe = null;
+        try {
+          const cs = window.getComputedStyle?.(els[0]);
+          if (!cs) return false;
+          probe = document.createElement('span');
+          probe.style.cssText = 'position:absolute;left:0;top:-9999px;opacity:0;white-space:nowrap;'
+            + 'pointer-events:none;margin:0;padding:0;';
+          probe.style.fontFamily = cs.fontFamily;
+          probe.style.fontSize = cs.fontSize;
+          document.body.appendChild(probe);   // never inside the panel: it wears a scale
+          for (let i = 0; i < els.length - 1; i += 1) {
+            const box = parseFloat(els[i].style?.maxWidth || els[i].style?.width || '0');
+            const here = (els[i].textContent || '').trim();
+            const next = (els[i + 1].textContent || '').trim().split(/\s+/)[0];
+            if (!box || !here || !next) continue;
+            probe.textContent = `${here} ${next}`;
+            if (probe.getBoundingClientRect().width <= box - 1) return true;
+          }
+        } catch (_) { return false; } finally { try { probe?.remove(); } catch (_) { /* detached */ } }
+        return false;
+      };
+      if (!overflows && !underfilled()) return;
       invalidateVerseMeasurement();
       versePartsCache.clear(); // part counts derive from the measurement (O-84)
       // KEEPING THE HALF IT WAS DRAWING. The retry re-wraps the same text
