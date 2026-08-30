@@ -38,6 +38,28 @@ const FOOTER_LINE = 1.25;
 /** The lens at a smaller register: font (and so pitch) scaled, geometry kept. */
 const scaledMarginSpec = scale => ({ ...MARGIN_SPEC, FONT_RATIO: MARGIN_SPEC.FONT_RATIO * scale });
 
+/** THE SMALLEST TYPE THIS APPARATUS IS EVER SET IN, as a fraction of the short
+ *  side — 14.4px on Howell's phone. Ruled 2026-08-29, reading the floor cases
+ *  on the glass: "10.8 px is too small. I'd like to make 14.4 the floor. We'll
+ *  have to come up with another solution for the clipped tails."
+ *
+ *  IT IS AN ABSOLUTE SIZE, NOT A MULTIPLE OF THE BASE, and that is the whole
+ *  point of the constant. The floor used to be six tenths of whatever the base
+ *  happened to be, so any future change to the base moved the smallest type
+ *  the reader ever sees WITHOUT anyone deciding to. Stated as its own ratio,
+ *  the base can be lowered to cut the split count — which is the dial that
+ *  actually governs splitting — and the legibility floor stays where Howell
+ *  put it.
+ *
+ *  MEASURED, and the two dials are very nearly independent: across all 15,580
+ *  entries at 360x740, the BASE governs how many notes split (2,230 at 18px,
+ *  844 at 14.4px) while the FLOOR governs how many lose a tail (62 at 10.8px,
+ *  182 at 14.4px) — the clipped count barely moves when the base does. Raising
+ *  the floor therefore buys legibility at a price paid in tails, and the price
+ *  is the same whatever the base. Howell has accepted that trade and named the
+ *  tails as their own problem. */
+const NOTE_FLOOR_RATIO = 0.04;
+
 /** The note's face, stated once — the measurer and the stylesheet must agree. */
 const NOTE_FACE = "'EB Garamond', Georgia, serif";
 
@@ -184,11 +206,15 @@ export function renderMarginNote(entries, {
   // (O-113). The two-screen cap is real, and a page-length note's half can
   // exceed the lens's rows — Genesis 25:3's Raguel clause was silently
   // absent from BOTH screens, standing in the data the whole time. The
-  // lens is recomputed at a smaller register until the half fits, floored
-  // at six tenths; the apparatus is already the page's small voice, and a
-  // smaller register beats a silent hole in it.
+  // lens is recomputed at a smaller register until the half fits, floored at
+  // the legibility floor; the apparatus is already the page's small voice, and
+  // a smaller register beats a silent hole in it — down to the point where the
+  // smaller register is itself the injury, which is where Howell set the floor
+  // (NOTE_FLOOR_RATIO). Below it the tail is a separate problem with a
+  // separate answer, not something to be solved by shrinking further.
+  const minScale = NOTE_FLOOR_RATIO / MARGIN_SPEC.FONT_RATIO;
   let effArea = a, effNoteArea = noteArea, effFits = fits;
-  for (let scale = 0.9; laid.remaining && scale >= 0.6; scale -= 0.1) {
+  for (let scale = 0.9; laid.remaining && scale >= minScale - 1e-9; scale -= 0.1) {
     effArea = computeMarginArea(width, height, scaledMarginSpec(scale));
     const effReserved = footerRows(manuscripts, effArea);
     effNoteArea = { ...effArea, lineTable: effArea.lineTable.slice(0, Math.max(1, effArea.lineTable.length - effReserved)) };

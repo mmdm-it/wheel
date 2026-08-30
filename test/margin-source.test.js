@@ -230,13 +230,21 @@ describe('a note half that overflows the lens shrinks, never loses its tail (O-1
   // Genesis 25:3: the Raguel clause stood in the data and appeared on
   // NEITHER screen — the half exceeded the lens's rows and the tail dropped
   // in silence. The lens now recomputes at a smaller register until the
-  // half fits, floored at six tenths.
-  it('seats every word of a page-length half', () => {
+  // half fits, floored at the legibility floor Howell set on the glass
+  // (2026-08-29): 14.4px on his phone, four hundredths of the short side,
+  // stated absolutely so a future change to the base cannot move it.
+  it('seats every word of a half that the floor can still hold', () => {
     const mk = () => { const el = { style: {}, kids: [], className: '', _t: '' };
       el.appendChild = c => el.kids.push(c); el.setAttribute = () => {};
       Object.defineProperty(el, 'textContent', { get() { return el._t; }, set(v) { el._t = v; } });
       return el; };
-    const words = Array.from({ length: 70 }, (_, i) => `σημειον${i + 1}`);
+    // Forty words: past what the lens holds at the base size, still inside
+    // what it holds at the legibility floor. The fixture was seventy while
+    // the floor was six tenths; raising the floor to Howell's 14.4px shrank
+    // what shrinking can rescue, which is the trade he took knowingly, and
+    // the cell now measures the guarantee that survives rather than one that
+    // does not. What lies past the floor is O-116's open problem.
+    const words = Array.from({ length: 40 }, (_, i) => `σημειον${i + 1}`);
     const entry = { at: '1:1', text: words.join(' ') };
     let shown = '';
     for (const part of [0, 1]) {
@@ -247,6 +255,32 @@ describe('a note half that overflows the lens shrinks, never loses its tail (O-1
     }
     const got = shown.replace(/-\s/g, '').replace(/\s+/g, '');
     for (const w of words) assert.ok(got.includes(w), `${w} never reached the glass`);
+  });
+});
+
+describe('the apparatus is never set below the legibility floor (O-116)', () => {
+  // Howell, reading the floor cases: "10.8 px is too small. I'd like to make
+  // 14.4 the floor." The floor is now its own ratio of the short side rather
+  // than six tenths of whatever the base happens to be — so lowering the base
+  // to cut the split count cannot silently lower the smallest type as well.
+  it('sets no line smaller than four hundredths of the short side', () => {
+    const mk = () => { const el = { style: {}, kids: [], className: '', _t: '' };
+      el.appendChild = c => el.kids.push(c); el.setAttribute = () => {};
+      Object.defineProperty(el, 'textContent', { get() { return el._t; }, set(v) { el._t = v; } });
+      return el; };
+    // A note far past anything the lens can hold, so the shrink loop runs to
+    // its floor and stops there.
+    const entry = { at: '1:1', text: Array.from({ length: 600 }, (_, i) => `λογος${i}`).join(' ') };
+    const out = renderMarginNote([entry], { width: 360, height: 800, create: mk, part: 0,
+      manuscripts: [{ siglum: 'A', name: 'x' }] });
+    const sizes = [];
+    for (const k of out.kids) {
+      const px = parseFloat(String(k.style?.fontSize || ''));
+      if (Number.isFinite(px)) sizes.push(px);
+    }
+    assert.ok(sizes.length, 'no sized line was rendered');
+    assert.ok(Math.min(...sizes) >= 360 * 0.04 - 0.001,
+      `the apparatus was set at ${Math.min(...sizes)}px, below the floor`);
   });
 });
 
