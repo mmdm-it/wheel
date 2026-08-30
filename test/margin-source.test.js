@@ -17,7 +17,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { addressOrder, blockAt, entriesAt, apparatusRuns, manuscriptsIn } from '../src/core/margin-source.js';
-import { settleRow, flow, renderMarginNote } from '../src/view/margin-panel.js';
+import { settleRow, flow, renderMarginNote, marginPartCount } from '../src/view/margin-panel.js';
 
 const chart = {
   seats: [
@@ -281,6 +281,52 @@ describe('the apparatus is never set below the legibility floor (O-116)', () => 
     assert.ok(sizes.length, 'no sized line was rendered');
     assert.ok(Math.min(...sizes) >= 360 * 0.04 - 0.001,
       `the apparatus was set at ${Math.min(...sizes)}px, below the floor`);
+  });
+});
+
+describe('a note shrinks before it splits (O-117)', () => {
+  // Howell, 2026-08-29: "I always assumed that the program would try
+  // shrinking a note's font before splitting the note." It did not — the
+  // note was measured at the base size, split if it overflowed, and only a
+  // still-overflowing HALF was ever shrunk. So a note that would have stood
+  // whole one step down was cut in two without being offered the smaller
+  // register. Over the corpus that was 1,386 notes and 1,210 verses.
+  const mk = () => { const el = { style: {}, kids: [], className: '', _t: '' };
+    el.appendChild = c => el.kids.push(c); el.setAttribute = () => {};
+    Object.defineProperty(el, 'textContent', { get() { return el._t; }, set(v) { el._t = v; } });
+    return el; };
+  // Sized between the two registers: one screen holds fifteen of these words
+  // at the base size and twenty-two at the floor, so twenty is exactly the
+  // population the old order cut in half and the new order keeps whole.
+  const words = Array.from({ length: 20 }, (_, i) => `σημειον${i + 1}`);
+  const entry = { at: '1:1', text: words.join(' ') };
+  const mss = [{ siglum: 'A', name: 'x' }];
+
+  it('keeps such a note on ONE screen', () => {
+    assert.equal(marginPartCount([entry], mss, { width: 360, height: 800 }), 1,
+      'the note still splits rather than shrinking');
+  });
+
+  it('seats every one of its words there', () => {
+    const out = renderMarginNote([entry], { width: 360, height: 800, create: mk, part: 0, manuscripts: mss });
+    let shown = '';
+    for (const k of out.kids) if (k.className === 'margin-note-line') shown += k.kids.map(x => x._t).join('') + ' ';
+    const got = shown.replace(/-\s/g, '').replace(/\s+/g, '');
+    for (const w of words) assert.ok(got.includes(w), `${w} never reached the glass`);
+  });
+
+  it('sets it no smaller than the floor', () => {
+    const out = renderMarginNote([entry], { width: 360, height: 800, create: mk, part: 0, manuscripts: mss });
+    const sizes = out.kids.map(k => parseFloat(String(k.style?.fontSize || ''))).filter(Number.isFinite);
+    assert.ok(Math.min(...sizes) >= 360 * 0.04 - 0.001, 'the note was set below the floor');
+  });
+
+  it('leaves a note that already fits at exactly the size it had', () => {
+    // 97% of the corpus. The reorder must be invisible to them.
+    const short = { at: '1:1', text: 'εκαστος A' };
+    const out = renderMarginNote([short], { width: 360, height: 800, create: mk, part: 0, manuscripts: mss });
+    const sizes = out.kids.map(k => parseFloat(String(k.style?.fontSize || ''))).filter(Number.isFinite);
+    assert.ok(Math.max(...sizes) >= 360 * 0.05 - 0.001, 'a note that fits was shrunk anyway');
   });
 });
 
