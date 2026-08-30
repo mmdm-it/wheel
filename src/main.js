@@ -18,7 +18,7 @@ import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js'
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { apparatusRuns } from './core/margin-source.js';
 import { computeMarginArea } from './geometry/margin-area.js';
-import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount } from './view/detail/plugins/line-layout.js';
+import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
@@ -1801,6 +1801,35 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // wrong whatever the reason — dump every measurement cache and re-wrap.
   // Capped at 3 attempts; a newer render (seq guard) cancels the check.
   const seq = ++detailRenderSeq;
+  // A LAYOUT MEASURED BEFORE THE FACE ARRIVED IS PROVISIONAL (O-118). Howell,
+  // 2026-08-30: "Genesis 1:1 renders differently at boot than it does after
+  // turning the focus ring away and back." It did. The boot layout wrapped at
+  // eighteen characters where twenty-seven fit and set its type six per cent
+  // large — the signature of a wrap measured in the Georgia fallback and then
+  // PAINTED in EB Garamond, whose Greek is much the narrower of the two. The
+  // verifier below could not see it: it asks whether a line overflows its box,
+  // and this failure UNDER-fills the box, which is invisible to that question
+  // and to every question the instrument was asking.
+  //
+  // The cure that existed was one global one-shot re-render when the face
+  // lands, registered during boot — and the boot splash renders the first
+  // verse AFTER that, so on a warm font cache the shot was already spent on
+  // nothing and the provisional layout stood until a rotation happened to
+  // redraw it. So the latch moves from the boot to THE RENDER: a detail that
+  // was laid out without the real face remembers as much and re-lays itself
+  // the moment the face arrives, whatever the ordering was. The face loads
+  // once, so this costs at most one extra render, and the seq guard drops it
+  // if the reader has moved on.
+  if (!verseFaceReady()) {
+    onVerseFontReady(() => {
+      if (seq !== detailRenderSeq) return;
+      invalidateVerseMeasurement();
+      versePartsCache.clear();
+      currentApp?.resettle?.();
+      renderDetail(selected, adapterInstance, manifest, adapterNormalized,
+        { translation, wrapAttempt, part });
+    });
+  }
   if (wrapAttempt < 3 && typeof requestAnimationFrame === 'function') {
     requestAnimationFrame(() => requestAnimationFrame(() => {
       if (seq !== detailRenderSeq) return; // superseded by a newer render

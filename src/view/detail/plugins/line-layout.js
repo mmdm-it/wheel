@@ -266,6 +266,9 @@ if (typeof document !== 'undefined' && document.fonts) {
   } catch (_) { /* no Font Loading API: stay on the fallback metrics */ }
 }
 function verseFontReady() { return verseFontLoaded; }
+/** Has the real serif reached layout? A wrap measured while this is false was
+ *  measured in the FALLBACK face and is provisional (O-118). */
+export function verseFaceReady() { return verseFontLoaded; }
 // Nuke the memoised uniform size so the next layout re-measures from
 // scratch (spans are already per-pass). Called by the post-paint overflow
 // verifier: if the PAINT proves the measures wrong (a line's content wider

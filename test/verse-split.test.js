@@ -18,6 +18,7 @@ import {
   invalidateVerseMeasurement, LONGEST_VERSE_REFERENCE
 } from '../src/view/detail/plugins/line-layout.js';
 import { computeDetailSectorBounds } from '../src/geometry/detail-sector-geometry.js';
+import { verseFaceReady, onVerseFontReady } from '../src/view/detail/plugins/line-layout.js';
 import { FocusRingView } from '../src/view/focus-ring-view.js';
 import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 
@@ -255,5 +256,30 @@ describe('the block sits one row higher than it measures itself (O-115)', () => 
     assert.ok(text, 'no verse long enough to overflow the unraised sector');
     assert.equal(versePartCount(text, unraised), 2, 'the fixture does not split before the move');
     assert.equal(versePartCount(text, raised), 1, 'the gained row did not seat the verse whole');
+  });
+});
+
+describe('a layout measured without the real face is provisional (O-118)', () => {
+  // Howell: "Genesis 1:1 renders differently at boot than it does after
+  // turning the focus ring away and back." The boot layout wrapped at 18
+  // characters where 27 fit — measured in the Georgia fallback, painted in
+  // EB Garamond. The post-paint verifier could not catch it: it asks whether
+  // a line OVERFLOWS its box, and this failure under-fills it.
+  it('states plainly whether the real face has reached layout', () => {
+    // Outside a browser there is no font pipeline, so the answer is no — and
+    // the point of the predicate is that a caller can ASK, which is what the
+    // render now does before trusting its own measurements.
+    assert.equal(typeof verseFaceReady, 'function');
+    assert.equal(verseFaceReady(), false, 'claimed the serif was loaded with no font pipeline');
+  });
+
+  it('holds a callback until the face lands rather than dropping it', () => {
+    // The old cure was one global one-shot registered during boot, and the
+    // boot splash renders the first verse after it — so on a warm cache the
+    // shot was spent before there was anything to correct. A callback
+    // registered while the face is absent must still be waiting, not lost.
+    let fired = false;
+    onVerseFontReady(() => { fired = true; });
+    assert.equal(fired, false, 'the callback fired though no face has loaded');
   });
 });
