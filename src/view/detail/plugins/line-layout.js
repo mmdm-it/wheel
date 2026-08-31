@@ -508,6 +508,32 @@ export function layoutPoem(poemLines, bounds, part = 0) {
   return { fontPx: px, lines: flow.lines, parts: 2, part: part === 1 ? 1 : 0 };
 }
 
+// THE WRAP'S OWN TESTIMONY, when the probe is watching (?probe=1). Two fixes
+// for Howell's boot-wrap bug were built on reasoning and both failed, so this
+// stops arguing and records what each render actually measured: the size it
+// chose, the width of the row it wrapped against, and — the discriminator —
+// the measured width of ONE FIXED GREEK STRING at that size. If a good render
+// and a bad one disagree about that number at the same size, the FACE differed;
+// if the number is -1 the DOM measurer was absent and the estimate ran; if the
+// row width differs, the geometry did. Costs nothing when the probe is off.
+function noteWrap(fontPx, lines, bounds) {
+  try {
+    const log = typeof window !== 'undefined' && window.__wheelWrapLog;
+    if (!Array.isArray(log)) return;
+    const meas = makeMeasurer(fontPx);
+    const width = meas ? Math.round(meas.width('ΕΝ ΑΡΧΗ ἐποίησεν ὁ θεὸς')) : -1;
+    meas?.done?.();
+    log.push({
+      px: Number(fontPx.toFixed(1)),
+      n: lines.length,
+      avail: Math.round(bounds?.lineTable?.[0]?.availableWidth ?? 0),
+      sentinel: width,
+      first: String(lines[0]?.text || '').slice(0, 20),
+    });
+    if (log.length > 6) log.shift();
+  } catch (_) { /* diagnostics never break the instrument */ }
+}
+
 // Lay out ONE verse at the shared uniform size. Returns the size to apply and
 // the seated lines; a verse longer than the reference (shouldn't happen) has
 // its last line ellipsized rather than overrunning the sector.
@@ -518,7 +544,7 @@ export function layoutVerse(text, bounds, part = 0) {
   // measured width, so no line runs long.
   // NEVER ellipsise scripture, even on a defensive overflow (Howell 2026-07-22).
   const whole = flowVerseAt(text, bounds, fontPx);
-  if (!whole.overflow) return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+  if (!whole.overflow) { noteWrap(fontPx, whole.lines, bounds); return { fontPx, lines: whole.lines, parts: 1, part: 0 }; }
 
   // Two parts, never more (O-84's hard cap). The split is balanced by
   // characters at a word boundary; if the measured flow disagrees with the
@@ -539,7 +565,9 @@ export function layoutVerse(text, bounds, part = 0) {
     else { a = `${a} ${from[0]}`; b = from.slice(1).join(' '); }
   }
   const chosen = part === 1 ? b : a;
-  return { fontPx, lines: flowVerseAt(chosen, bounds, fontPx).lines, parts: 2, part: part === 1 ? 1 : 0 };
+  const out = flowVerseAt(chosen, bounds, fontPx).lines;
+  noteWrap(fontPx, out, bounds);
+  return { fontPx, lines: out, parts: 2, part: part === 1 ? 1 : 0 };
 }
 
 export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {
