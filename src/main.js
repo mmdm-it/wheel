@@ -18,7 +18,7 @@ import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js'
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { apparatusRuns } from './core/margin-source.js';
 import { computeMarginArea } from './geometry/margin-area.js';
-import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady } from './view/detail/plugins/line-layout.js';
+import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
@@ -1831,8 +1831,15 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
     });
   }
   if (wrapAttempt < 3 && typeof requestAnimationFrame === 'function') {
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      if (seq !== detailRenderSeq) return; // superseded by a newer render
+    // AND THE WATCH OUTLASTS THE FRAME (O-121). Two frames is ~32ms and the
+    // real face can reach layout hundreds of milliseconds later — which is
+    // exactly the boot case, and exactly why rotating the ring "fixed" it:
+    // the rotation was simply a redraw that happened after the face landed.
+    // So the check is re-asked on a short schedule until it either finds
+    // drift (and re-renders, which starts a fresh watch) or the face has
+    // plainly settled. Five span measurements, then silence.
+    const verify = () => {
+      if (seq !== detailRenderSeq) return true; // superseded: someone else is watching
       let overflows = false;
       detailContent.querySelectorAll('.detail-text-line').forEach(el => {
         if ((el.scrollWidth || 0) - (el.clientWidth || 0) > 2) overflows = true;
@@ -1884,7 +1891,20 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
         } catch (_) { return false; } finally { try { probe?.remove(); } catch (_) { /* detached */ } }
         return false;
       };
-      if (!overflows && !underfilled()) return;
+      // AND THE PLAINEST QUESTION OF ALL, WHICH TOOK THREE TRIES TO ASK
+      // (O-121): does the layout's own first line still measure what it
+      // measured when the layout was made? Howell settled it — "the bug
+      // disappears with the probe=1 tag, but without it I still see the 3
+      // line incorrect version" — which means the probe's extra measurement
+      // per layout was the cure, and the real face was arriving late. The
+      // under-fill witness above could not see that, because it re-measures
+      // in whatever face is active NOW and the stale layout was measured in
+      // the same one: self-consistent, and wrong.
+      //
+      // This asks nothing about fonts. It compares a number to itself across
+      // two frames. If it moved, the face moved under the layout and every
+      // break in it is stale.
+      if (!overflows && !faceMarkDrifted() && !underfilled()) return false;
       invalidateVerseMeasurement();
       versePartsCache.clear(); // part counts derive from the measurement (O-84)
       // KEEPING THE HALF IT WAS DRAWING. The retry re-wraps the same text
@@ -1893,6 +1913,13 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       // repaint they never asked for and could not have attributed.
       renderDetail(selected, adapterInstance, manifest, adapterNormalized,
         { translation, wrapAttempt: wrapAttempt + 1, part });
+      return true;
+    };
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (verify()) return;
+      for (const ms of [250, 750, 1500, 3000]) {
+        setTimeout(() => { if (seq === detailRenderSeq) verify(); }, ms);
+      }
     }));
   }
 }

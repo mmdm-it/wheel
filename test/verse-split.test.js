@@ -18,7 +18,7 @@ import {
   invalidateVerseMeasurement, LONGEST_VERSE_REFERENCE
 } from '../src/view/detail/plugins/line-layout.js';
 import { computeDetailSectorBounds } from '../src/geometry/detail-sector-geometry.js';
-import { verseFaceReady, onVerseFontReady } from '../src/view/detail/plugins/line-layout.js';
+import { verseFaceReady, onVerseFontReady, faceMarkDrifted } from '../src/view/detail/plugins/line-layout.js';
 import { FocusRingView } from '../src/view/focus-ring-view.js';
 import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 
@@ -303,5 +303,33 @@ describe('the paint is asked about under-fill, not only overflow (O-119)', () =>
     const box = 326, painted = 318, nextWord = 40;
     assert.ok(!(painted + nextWord <= box - 1),
       'a full row would be reported as under-filled');
+  });
+});
+
+describe('the layout marks the face it was measured in (O-121)', () => {
+  // Howell settled three rounds of guessing with one sentence: "the bug
+  // disappears with the probe=1 tag, but without it I still see the 3 line
+  // incorrect version." The probe measures one extra span per layout, and
+  // that extra measurement was dragging the real face into layout in time —
+  // so the instrument was curing the bug by observing it.
+  //
+  // The check that failed asked whether the painted lines look wrong in the
+  // face that is active NOW; the stale layout was measured in that same face,
+  // so it agreed with itself. This one compares a number to itself across two
+  // frames instead, and asks nothing about fonts at all.
+  it('reports no drift when there is nothing to compare', () => {
+    // No layout has been marked in this process and there is no DOM to
+    // measure with, so the honest answer is "no drift" — never a re-render
+    // storm on a page that cannot measure.
+    assert.equal(faceMarkDrifted(), false);
+  });
+
+  it('is the arithmetic Howell photographed', () => {
+    // The wrap log on his Moto G: one size, one row, the first layout
+    // measuring the sentinel at 321px and every later one at 268px. That gap
+    // is what this check exists to see; anything under half a pixel is not.
+    const atLayout = 321, atPaint = 268;
+    assert.ok(Math.abs(atPaint - atLayout) > 0.5, 'the drift test would have missed it');
+    assert.ok(!(Math.abs(268 - 268.2) > 0.5), 'ordinary rounding would trigger a re-render');
   });
 });

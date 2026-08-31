@@ -489,7 +489,7 @@ export function poemPartCount(poemLines, bounds) {
 export function layoutPoem(poemLines, bounds, part = 0) {
   const fontPx = uniformVerseFontPx(bounds);
   const whole = flowPoemAt(poemLines, bounds, fontPx);
-  if (!whole.overflow) return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+  if (!whole.overflow) { markFace(fontPx, whole.lines); return { fontPx, lines: whole.lines, parts: 1, part: 0 }; }
   const total = poemLines.join(' ').length;
   let acc = 0, cut = 1, best = Infinity;
   for (let i = 1; i < poemLines.length; i += 1) {
@@ -505,6 +505,7 @@ export function layoutPoem(poemLines, bounds, part = 0) {
     flow = flowPoemAt(chosen, bounds, px);
   }
   if (flow.overflow) flow = flowPoemAt(chosen, bounds, px, { unbounded: true });
+  markFace(px, flow.lines);
   return { fontPx: px, lines: flow.lines, parts: 2, part: part === 1 ? 1 : 0 };
 }
 
@@ -534,6 +535,51 @@ function noteWrap(fontPx, lines, bounds) {
   } catch (_) { /* diagnostics never break the instrument */ }
 }
 
+// THE FACE THE LAYOUT WAS MEASURED IN, RECORDED SO THE PAINT CAN DISAGREE
+// (O-121). Howell, 2026-08-30: "the bug disappears with the probe=1 tag, but
+// without it I still see the 3 line incorrect version." The probe was the
+// cure, which makes it evidence: its recorder measures one extra span per
+// layout, and that extra measurement is what dragged the real face into
+// layout in time. Turn it off and the first wrap measures the fallback and
+// stands.
+//
+// The under-fill witness could not catch this because it re-measured in
+// WHATEVER FACE WAS ACTIVE at check time — the same stale one — so it agreed
+// with the stale layout and reported nothing wrong. Self-consistent and
+// wrong, which is the hardest kind.
+//
+// So the layout now leaves a MARK: the first line's own text, the size, and
+// the width that text measured AT LAYOUT TIME. Two frames later the paint
+// measures the same text at the same size again. If the number moved, the
+// face moved underneath the layout and every line break in it is stale —
+// whatever any font promise says, and without needing to know which face is
+// which. When they agree, nothing happens.
+let faceMark = null;
+function markFace(fontPx, lines) {
+  faceMark = null;
+  try {
+    const text = String(lines?.[0]?.text || '');
+    if (!text) return;
+    const meas = makeMeasurer(fontPx);
+    if (!meas) return;
+    faceMark = { text, px: fontPx, w: meas.width(text) };
+    meas.done();
+  } catch (_) { faceMark = null; }
+}
+
+/** Re-measure the last layout's own first line, now. Null when there is
+ *  nothing to compare or no way to measure. */
+export function faceMarkDrifted() {
+  try {
+    if (!faceMark) return false;
+    const meas = makeMeasurer(faceMark.px);
+    if (!meas) return false;
+    const now = meas.width(faceMark.text);
+    meas.done();
+    return Math.abs(now - faceMark.w) > 0.5;
+  } catch (_) { return false; }
+}
+
 // Lay out ONE verse at the shared uniform size. Returns the size to apply and
 // the seated lines; a verse longer than the reference (shouldn't happen) has
 // its last line ellipsized rather than overrunning the sector.
@@ -544,7 +590,11 @@ export function layoutVerse(text, bounds, part = 0) {
   // measured width, so no line runs long.
   // NEVER ellipsise scripture, even on a defensive overflow (Howell 2026-07-22).
   const whole = flowVerseAt(text, bounds, fontPx);
-  if (!whole.overflow) { noteWrap(fontPx, whole.lines, bounds); return { fontPx, lines: whole.lines, parts: 1, part: 0 }; }
+  if (!whole.overflow) {
+    markFace(fontPx, whole.lines);
+    noteWrap(fontPx, whole.lines, bounds);
+    return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+  }
 
   // Two parts, never more (O-84's hard cap). The split is balanced by
   // characters at a word boundary; if the measured flow disagrees with the
@@ -566,6 +616,7 @@ export function layoutVerse(text, bounds, part = 0) {
   }
   const chosen = part === 1 ? b : a;
   const out = flowVerseAt(chosen, bounds, fontPx).lines;
+  markFace(fontPx, out);
   noteWrap(fontPx, out, bounds);
   return { fontPx, lines: out, parts: 2, part: part === 1 ? 1 : 0 };
 }
