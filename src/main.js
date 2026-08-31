@@ -4,6 +4,7 @@ import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
+import { proofreadOverrideActive } from './core/lan-gate.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -1393,6 +1394,51 @@ function openBootFunnel() {
 if (dimensionButton) {
   dimensionButton.addEventListener('click', cycleStrata);
 }
+// THE PROOFREADER'S SHORTCUT (O-123, Howell 2026-08-31: "I want you to cheat,
+// just for the sake of proofreading... count nodes between the origin verse
+// and the destination verse and then rotate the Focus Ring by that number of
+// nodes. Like I said, it's cheating, no human could do that").
+//
+// It is cheating, and that is the point: a driven proofreading pass needs to
+// stand at one verse and be at another a second later, where a reader needs
+// the journey. What it does NOT do is fake the arrival — it makes the ring's
+// own journey, the same call a tap makes, so everything a reader would meet
+// on landing happens: the settle, the eclipse decision, the margin fetch, the
+// corner emblem, the repaint. That matters more than the speed: several of
+// this month's bugs lived in the ARRIVAL, and a shortcut that skipped it
+// would proofread a screen no reader ever sees.
+//
+// Gated on the LAN proofread override, so it does not exist for a reader.
+if (typeof window !== 'undefined' && proofreadOverrideActive()) {
+  window.__wheelProofread = {
+    /** How many seats the ring holds. */
+    count: () => currentApp?.nav?.items?.length ?? 0,
+    /** Where the ring stands: index, seat id, and how far to a named seat. */
+    where: () => {
+      const nav = currentApp?.nav;
+      const i = nav?.getCurrentIndex?.() ?? -1;
+      return { index: i, id: nav?.items?.[i]?.id ?? null, total: nav?.items?.length ?? 0 };
+    },
+    /** The index of a seat named the way the chain names it. */
+    indexOf: id => currentApp?.nav?.items?.findIndex(it => it?.id === id) ?? -1,
+    /**
+     * Travel to a seat and report what happened. Returns the distance in
+     * NODES — which is the thing Howell asked for — or an error string, never
+     * a silent no-op: a shortcut that quietly fails would proofread the verse
+     * it was already on and call it the next one.
+     */
+    seek: id => {
+      const nav = currentApp?.nav;
+      if (!nav?.items?.length) return { ok: false, why: 'no ring' };
+      const to = nav.items.findIndex(it => it?.id === id);
+      if (to < 0) return { ok: false, why: 'no such seat on this ring', id };
+      const from = nav.getCurrentIndex();
+      const moved = currentApp.rotateToIndex(to, { durationMs: 220 });
+      return { ok: moved !== false, from, to, nodes: to - from, id };
+    }
+  };
+}
+
 if (typeof window !== 'undefined') {
   window.__wheelDimension = {
     get: () => dimensionBridge.getSelection(),

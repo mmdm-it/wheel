@@ -2102,6 +2102,10 @@ export function createApp({
     // O-79: the badge's circle follows the reader the same way its art does.
     setCornerColor: color => volumeLogo.setColor(color),
     nav,
+    // The journey a click makes, reachable by name. It is the same call the
+    // ring already makes for every tap; naming it lets the proofreading
+    // scaffolding (O-123) travel the ring without synthesising a gesture.
+    rotateToIndex,
     view,
     choreographer,
     viewport: vp,
