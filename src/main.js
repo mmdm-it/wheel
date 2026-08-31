@@ -3289,7 +3289,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // need exists solely for the gateway, which is dev scaffolding — a
   // standalone deployment has no volume above it to return to.)
   updateIncompleteMark();
-  if (!transit) openBootFunnel();
+  // A PROOFREAD DEEP LINK LANDS ON THE TEXT (O-122). The funnel is every
+  // launch's introduction and stays so; but a driven verse-by-verse pass over
+  // a book paid it forty times an hour — load, commit the edition, walk two
+  // planes in — for a reader who is a script and has already said what it
+  // wants. Gated on the LAN override plus a fully named address, so nothing
+  // a reader can reach behaves differently.
+  if (!transit && !options.deepLinked) openBootFunnel();
   showVersion();
   performance.mark('wheel:render-done');
   recordBootPhases(volume);

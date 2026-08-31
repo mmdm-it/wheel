@@ -80,3 +80,35 @@ export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? w
     return new URLSearchParams(loc.search).get('proofread') === 'true';
   } catch (_) { return false; }
 }
+
+/**
+ * IS THIS A PROOFREADER ASKING FOR ONE EXACT POSITION? (O-122, Howell
+ * 2026-08-31: "38 seconds is far too much time to waste loading a page. We
+ * must find a way to bypass the Tertiary and Secondary Strata while
+ * proofreading, and instead go directly to a verse in the Primary Stratum.")
+ *
+ * True only when the LAN override is on AND the address carries every
+ * parameter the CALLER names — a shape no reader's URL ever has and only the
+ * proofreading driver produces. The boot funnel is skipped for it, and the
+ * edition may be named outright, so a driven pass lands on the text instead
+ * of walking three planes to reach it.
+ *
+ * THE KEYS COME FROM THE CALLER, and that is not fastidiousness: this file is
+ * engine core, and O-43 forbids core from speaking any volume's level names.
+ * A gate that knew what a volume calls its divisions would be a gate with an
+ * opinion about one volume, which is the thing the wall exists to prevent.
+ *
+ * It rides the same gate as the override, deliberately: off the LAN, or
+ * without the flag, this is false however the address is shaped. The funnel
+ * is a stranger's introduction (Howell's ruling of 2026-07-30, "two quick
+ * taps") and that ruling is untouched — this is scaffolding for the bench,
+ * and a reader never meets it.
+ */
+export function proofreadDeepLink(loc = (typeof window !== 'undefined' ? window.location : null), keys = null) {
+  try {
+    if (!proofreadOverrideActive(loc)) return false;
+    if (!Array.isArray(keys) || !keys.length) return false;
+    const p = new URLSearchParams(loc.search);
+    return keys.every(k => Boolean(p.get(k)));
+  } catch (_) { return false; }
+}
