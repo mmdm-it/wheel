@@ -289,7 +289,7 @@ const volumeConfigs = {
           // Gated by `proofreadDeepLink`, so a public URL naming an edition
           // is ignored exactly as before.
           const named = params.get('edition');
-          if (named && proofreadDeepLink(null, POSITION_KEYS)) return named;
+          if (named && proofreadDeepLink(POSITION_KEYS)) return named;
           const editions = root?.display_config?.editions || {};
           const language = root?.display_config?.languages?.default;
           return editions.default?.[language]
@@ -300,7 +300,7 @@ const volumeConfigs = {
         locale: params.get('lang') || null,
         // The host skips the boot funnel on this, and asks no volume
         // vocabulary to learn that it should (O-122).
-        deepLinked: proofreadDeepLink(null, POSITION_KEYS)
+        deepLinked: proofreadDeepLink(POSITION_KEYS)
       };
     },
     formatLabel: ({ level, locale, namesMap }) => makeBibleLabelFormatter({ level, locale, namesMap }),

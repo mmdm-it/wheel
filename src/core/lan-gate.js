@@ -98,13 +98,23 @@ export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? w
  * A gate that knew what a volume calls its divisions would be a gate with an
  * opinion about one volume, which is the thing the wall exists to prevent.
  *
+ * THE KEYS COME FIRST IN THE SIGNATURE, and that is a scar. They were second,
+ * after an optional location, and the caller passed `null` for the location to
+ * mean "use the default" — which JavaScript does NOT do: a default parameter
+ * applies to `undefined` alone. So the gate read a null location, answered
+ * false, and the bypass this function exists for never once fired. It went
+ * unnoticed because the drive still worked: the caller walked the funnel by
+ * hand as a fallback and the timing improved for other reasons, so the fix
+ * looked successful and was measured as such. Putting the required argument
+ * first makes the mistake unavailable rather than merely documented.
+ *
  * It rides the same gate as the override, deliberately: off the LAN, or
  * without the flag, this is false however the address is shaped. The funnel
  * is a stranger's introduction (Howell's ruling of 2026-07-30, "two quick
  * taps") and that ruling is untouched — this is scaffolding for the bench,
  * and a reader never meets it.
  */
-export function proofreadDeepLink(loc = (typeof window !== 'undefined' ? window.location : null), keys = null) {
+export function proofreadDeepLink(keys, loc = (typeof window !== 'undefined' ? window.location : null)) {
   try {
     if (!proofreadOverrideActive(loc)) return false;
     if (!Array.isArray(keys) || !keys.length) return false;
