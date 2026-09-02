@@ -1,5 +1,5 @@
 import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
-import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf } from './adapters/volume-helpers.js';
+import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
@@ -1187,20 +1187,36 @@ function currentBookId() {
   return bookIdOf(currentApp?.nav?.getCurrent?.());
 }
 
+// Which chapter? The mark asks at chapter grain since W-231, and the answer
+// is null whenever the reader is above a chapter — a book ring, a testament
+// ring, the root — so the question falls back to the book, then the edition.
+function currentChapterId() {
+  return chapterIdOf(currentApp?.nav?.getCurrent?.());
+}
+
 function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
   let show = false;
   try {
-    // GATED ON THE FLAG AGAIN (Howell, 2026-08-15) — and briefly un-gating it
-    // was my error, made from a design he had not ruled. Under H-25 point 4
-    // unconfirmed books are UNREACHABLE without the flag, not merely marked.
-    // So off the flag there is nothing on screen to caveat, and the un-gated
-    // version would have shown a red NOT PROOFREAD banner to a reader looking
-    // at confirmed text only — including, one day, the public. The mark
-    // belongs to the development view because that is the only view with
-    // unconfirmed work in it.
-    if (dimensionBridge.completeOverrideActive()) {
     const active = dimensionStore.getState().edition || null;
+    const volume = currentManifest?.__wallVolume;
+
+    // UN-GATED FROM THE FLAG, BY RULING THIS TIME (O-124, Howell 2026-09-01).
+    // It was un-gated once before, on 2026-08-15, and that was an error made
+    // from a design he had not ruled: unconfirmed books were UNREACHABLE off
+    // the flag, so there was nothing on screen to caveat and the banner would
+    // have shamed a reader looking at confirmed text only. Both halves of
+    // that are now reversed by his word — unconfirmed material is reachable,
+    // marked, and the mark tells the truth at chapter grain (W-231). So the
+    // mark shows wherever what is in hand is not confirmed, on any network.
+    //
+    // ONLY FOR A VOLUME THAT CAN ANSWER AT THE FINER GRAIN. A volume without
+    // `isNodeConfirmed` keeps the old flag-gated path below, unchanged: this
+    // ruling was made about one volume and must not surprise the others.
+    if (typeof volume?.isNodeConfirmed === 'function') {
+      show = Boolean(active)
+        && !volume.isNodeConfirmed(active, { bookId: currentBookId(), chapterId: currentChapterId() });
+    } else if (dimensionBridge.completeOverrideActive()) {
     const unit = currentBookId();
     // NO BOOK IN HAND — a testament ring, the root, the gateway. The question
     // becomes whether the EDITION is finished, and that must be DERIVED from
@@ -1216,7 +1232,6 @@ function updateIncompleteMark() {
     //
     // An edition with no per-unit marks still falls back to its flag, inside
     // isFullyConfirmed, so nothing else changes.
-    const volume = currentManifest?.__wallVolume;
     const editionFinished = typeof volume?.isFullyConfirmed === 'function'
       ? volume.isFullyConfirmed(active)
       : dimensionBridge.isCertifiedEdition(active);

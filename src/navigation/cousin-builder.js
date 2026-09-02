@@ -1,6 +1,6 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
 import { chaptersFromSeats } from './seating-chart.js';
-import { expandVolumeSeats, confirmedUnitsOf, chartedUnitsOf } from '../adapters/bible-volume.js';
+import { expandVolumeSeats, chartedUnitsOf } from '../adapters/bible-volume.js';
 import { proofreadOverrideActive } from '../core/lan-gate.js';
 
 const GAP = null;
@@ -103,15 +103,15 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   //
   // The membership filter is UNCONDITIONAL — it is not a development view's
   // concern, and no flag may lift it, because a book the edition has never
-  // held has nothing to show anyone. The proofread filter narrows it further
-  // when the flag is off.
+  // held has nothing to show anyone.
+  //
+  // THE PROOFREAD FILTER THAT NARROWED IT IS GONE (O-124, Howell 2026-09-01).
+  // Off the house network the ring used to seat confirmed books only; now it
+  // seats every book the edition holds, and the NOT PROOFREAD mark says which
+  // of them — and which chapters of them (W-231) — are not yet read against
+  // the page. Reachable and marked, in place of unreachable.
   const held = edition ? chartedUnitsOf(manifest?.__wallVolume, edition) : null;
-  const confirmedOnly = edition && !proofreadOverrideActive()
-    ? confirmedUnitsOf(manifest?.__wallVolume, edition)
-    : null;
-  const visible = held && confirmedOnly
-    ? new Set([...held].filter(id => confirmedOnly.has(id)))
-    : (held || confirmedOnly);
+  const visible = held;
   const testaments = Object.entries(bible.testaments || {});
   const resolveTestamentId = () => {
     if (bookId) {

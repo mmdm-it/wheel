@@ -750,7 +750,7 @@ describe('per-book certification (H-25) — and the shelf that must not follow',
 // the same author who forgot it at one call site out of four. So this cell
 // tests THE SEAM rather than the builder: it asks the handler the app
 // actually calls, the way the app calls it.
-describe('the pyramid obeys the corpus filter too (H-25)', () => {
+describe('the pyramid seats every held book, marked not hidden (O-124 retires H-25 point 4)', () => {
   const VOLUME = {
     editions: [{ code: 'WLC', proofreadUnits: ['bGEN'] }],
     testaments: [{ id: 'T1', books: [{ id: 'bGEN' }, { id: 'bEXO' }, { id: 'bLEV' }] }]
@@ -764,9 +764,14 @@ describe('the pyramid obeys the corpus filter too (H-25)', () => {
   };
   Object.defineProperty(manifest, '__wallVolume', { value: VOLUME, enumerable: false });
 
-  it('WITH an edition, the chain carries only confirmed books', () => {
+  // Until 2026-09-01 this asserted ['bGEN'] — unconfirmed books were
+  // UNREACHABLE off the flag. Howell retired that: the Greek goes public
+  // unproofread, wearing the NOT PROOFREAD mark, so the chain now seats every
+  // book the edition HOLDS and the mark says which are unread. Membership
+  // still filters (O-71); the proofread record no longer does.
+  it('WITH an edition, the chain carries every held book — confirmed or not', () => {
     const chain = buildBibleBookCousinChain(manifest, { names: {}, edition: 'WLC' });
-    assert.deepEqual(chain.items.filter(Boolean).map(i => i.id), ['bGEN']);
+    assert.deepEqual(chain.items.filter(Boolean).map(i => i.id), ['bGEN', 'bEXO', 'bLEV']);
   });
 
   it('the handler the app calls passes one — the defect was here, not in the builder', () => {
@@ -776,8 +781,8 @@ describe('the pyramid obeys the corpus filter too (H-25)', () => {
     const supplier = handlers?.layoutBindings?.getBibleBooksForTestament;
     assert.equal(typeof supplier, 'function', 'the pyramid asks this for its nodes');
     const chain = supplier('T1');
-    assert.deepEqual(chain.items.filter(Boolean).map(i => i.id), ['bGEN'],
-      'the pyramid must not scatter the books the ring refuses to seat');
+    assert.deepEqual(chain.items.filter(Boolean).map(i => i.id), ['bGEN', 'bEXO', 'bLEV'],
+      'the pyramid seats what the ring seats — all held books, since O-124');
   });
 });
 

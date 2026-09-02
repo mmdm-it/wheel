@@ -176,9 +176,11 @@ describe('an edition shows only what it charts (O-71)', () => {
     const manifest = makeManifest(makeVolume());
     const ring = () => buildBibleBookCousinChain(manifest, { names: {}, edition: 'GRC' })
       .items.filter(Boolean).map(i => i.id);
-    // Without the flag the proofread filter also applies, and the Greek has
-    // confirmed nothing — so the honest ring is empty.
-    assert.deepEqual(ring(), [], 'nothing confirmed and nothing offered');
+    // Without the flag the ring used to be EMPTY here — the Greek had
+    // confirmed nothing, and unconfirmed was unreachable. O-124 (Howell,
+    // 2026-09-01) retired that: the held books seat, marked, flag or no flag.
+    // The title of this cell was always the doctrine; now both branches obey it.
+    assert.deepEqual(ring(), NEW, 'held books seat, marked, flag or no flag (O-124)');
     // WITH the flag — Howell's state — the proofread filter lifts and the
     // MEMBERSHIP filter must not. This is the assertion that fails on the
     // pre-O-71 engine: it returned all four books.

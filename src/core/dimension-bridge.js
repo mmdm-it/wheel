@@ -487,6 +487,12 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // and a genuinely finished edition would have worn NOT PROOFREAD on the
     // root ring. Wilbur's flag on review: make the contract match the
     // behaviour already chosen.
+    // SINCE W-231 THE LIST MAY HOLD CHAPTER ADDRESSES AS WELL AS UNIT IDS, and
+    // this stays a bare membership test on purpose: the roll-up (is a book
+    // done when every chapter is) needs to know what a book's chapters ARE,
+    // which is the volume's knowledge and not this file's (O-43). The volume
+    // adapter answers that in `isNodeConfirmed`; this remains the fallback
+    // for volumes that never grew finer marks.
     isCertifiedUnit(key, unitId) {
       const t = meta?.translations?.[key];
       if (!t) return false;

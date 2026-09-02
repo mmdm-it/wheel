@@ -1036,3 +1036,20 @@ export function bookIdOf(item) {
   return item.bookKey || item.meta?.bookEntryId || item.meta?.bookId
     || (item.level === 'chapter' ? item.parentId : null) || null;
 }
+
+// WHICH CHAPTER IS THIS ITEM IN? (W-231, Howell 2026-09-01.) The NOT PROOFREAD
+// mark now asks per chapter, so it needs the chapter behind whatever the
+// reader is standing on — a verse, for every seat that matters — and nothing
+// for a book, a testament, or the root, which have no chapter to be in.
+//
+// The address is the one the seat expander composed and CARRIED onto the item
+// (`chapterKey`, `meta.chapterId`); it is read back, never rebuilt from the
+// verse id, for the same reason `bookIdOf` reads `bookKey` — the key is not a
+// record to be parsed (H-2). The chapter item itself carries the address as
+// its `id` (seating-chart.js).
+export function chapterIdOf(item) {
+  if (!item) return null;
+  if (item.level === 'chapter') return item.id || null;
+  if (item.level === 'verse') return item.chapterKey || item.meta?.chapterId || null;
+  return null;
+}
