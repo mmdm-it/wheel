@@ -200,8 +200,27 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // `proofread: true` still admits an edition with no per-book marks at all,
   // so every other edition behaves exactly as before.
   const hasConfirmedUnit = t => Array.isArray(t?.proofreadUnits) && t.proofreadUnits.length > 0;
+
+  // CHECKED IS THE GATE (W-239, Howell 2026-09-02: "KNOWN, CHECKED, and
+  // PROOFREAD it is"). Three rungs: KNOWN is what the machine measures;
+  // CHECKED is first, last and a middle verse of EVERY BOOK compared by his
+  // own eye, and it is what qualifies an edition to go online; PROOFREAD is
+  // the verse-by-verse pass, per chapter, and takes the under-review mark off
+  // a chapter — it does not open the shelf. `checked` is baked by the corpus
+  // build as "every book this edition holds is in the checked record", so
+  // this file needs no denominator and names no volume (O-43).
+  //
+  // UNTIL THE CORPUS BAKES IT, THE FIELD IS ABSENT AND THE OLD RULE STANDS —
+  // one confirmed unit — because the record splits on the corpus's next slot,
+  // a day after this ships. Once `checked` is present it decides, and a
+  // proofread list that is merely non-empty no longer admits anyone: after
+  // the split that list holds chapters the pass has read, and a pass over
+  // some chapters is not a check of every book. The fallback dies with the
+  // corpus change; its presence here is the seam between two days.
+  const isChecked = t => t?.checked === true;
+  const gateOpen = t => t?.checked !== undefined ? isChecked(t) : hasConfirmedUnit(t);
   const isServable = t => t
-    && (t.proofread === true || hasConfirmedUnit(t) || overrideProofread)
+    && (t.proofread === true || gateOpen(t) || overrideProofread)
     && t.hasChart === true;
 
   // IS THIS EDITION HERE? (H-29's carry-out.)

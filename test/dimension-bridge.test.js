@@ -1078,3 +1078,39 @@ describe('an edition is finished when its marks cover the volume (FN-4)', () => 
     assert.equal(isEditionFullyConfirmed(v, 'E'), false, 'nothing confirmed is not everything confirmed');
   });
 });
+
+// W-239 (Howell, 2026-09-02): "KNOWN, CHECKED, and PROOFREAD it is." CHECKED —
+// first, last and a middle verse of every book, by his eye — is what opens the
+// shelf. The proofread list, once the record splits, holds chapters the pass
+// has read, and a pass over some chapters puts nothing online.
+describe('CHECKED opens the shelf; the pass does not (W-239)', () => {
+  const bridgeOver = translations => createDimensionBridge({
+    store: createInteractionStore(), translationsMeta: { translations }
+  });
+
+  it('an edition checked in every book is offered, with nothing yet proofread', () => {
+    const b = bridgeOver({ E: { language: 'greek', hasChart: true, proofread: false, checked: true, proofreadUnits: [] } });
+    assert.equal(b.isServableEdition('E'), true, 'checked is the gate');
+  });
+
+  it('a pass over some chapters does NOT open the shelf while a book is unchecked', () => {
+    const b = bridgeOver({ E: { language: 'greek', hasChart: true, proofread: false, checked: false,
+      proofreadUnits: ['bGEN/1', 'bGEN/2', 'bGEN/3'] } });
+    assert.equal(b.isServableEdition('E'), false, 'three proofread chapters are not a checked edition');
+  });
+
+  it('the seam: with `checked` ABSENT the old one-unit rule still decides', () => {
+    const b = bridgeOver({ E: { language: 'greek', hasChart: true, proofread: false, proofreadUnits: ['bGEN'] } });
+    assert.equal(b.isServableEdition('E'), true, 'the corpus has not baked the field yet — yesterday\'s rule holds');
+  });
+
+  it('proofread:true and the override are still doors of their own', () => {
+    const b = bridgeOver({ DONE: { language: 'greek', hasChart: true, proofread: true, checked: false, proofreadUnits: [] } });
+    assert.equal(b.isServableEdition('DONE'), true);
+  });
+
+  it('checked without a chart is still refused', () => {
+    const b = bridgeOver({ E: { language: 'greek', hasChart: false, proofread: false, checked: true } });
+    assert.equal(b.isServableEdition('E'), false);
+  });
+});
