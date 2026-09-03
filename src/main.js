@@ -1,9 +1,10 @@
 import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
-import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf } from './adapters/volume-helpers.js';
+import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
+import { proofreadOverrideActive } from './core/lan-gate.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -18,7 +19,7 @@ import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js'
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { apparatusRuns } from './core/margin-source.js';
 import { computeMarginArea } from './geometry/margin-area.js';
-import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount } from './view/detail/plugins/line-layout.js';
+import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
@@ -36,6 +37,34 @@ const svg = document.getElementById('app');
 // top address bar). Measuring inner* — and measuring it at module load, before
 // the bar drops in — computed for a full screen and the bar then cropped the
 // bottom. One source of truth, measured fresh at boot.
+// THE COPYRIGHT NOTICE'S REAL BOTTOM EDGE (O-115). The detail sector raises
+// its text a row toward the top of the glass and must stop at this piece of
+// furniture — MEASURED, never assumed: the notice's own stylesheet records it
+// sitting some ninety pixels lower in DuckDuckGo than in Chrome on the same
+// device, overlapping the leaf text. It stays in layout while the NOT
+// PROOFREAD mark covers it (visibility, not display), so the rect is honest
+// in both states. Null when there is no DOM or no notice; the geometry then
+// falls back to a phone's two-line box.
+function copyrightBottomPx() {
+  try {
+    const el = typeof document !== 'undefined' && document.getElementById('copyright-notice');
+    if (!el || typeof el.getBoundingClientRect !== 'function') return null;
+    const r = el.getBoundingClientRect();
+    if (!Number.isFinite(r?.bottom)) return null;
+    // THE NOTICE'S INK, NOT ITS BOX (Howell, 2026-08-29, reading his Moto G
+    // through the now-translucent mark: "there appears to be plenty of
+    // headroom before we hit the copyright warning"). There was, and the
+    // clamp could not see it: the element's bottom edge carries six pixels
+    // of padding below its last line, so clamping to the BOX stopped the
+    // text a padding's width above where anything is actually drawn. The eye
+    // measures ink to ink; so does this now.
+    const pad = typeof window !== 'undefined' && window.getComputedStyle
+      ? parseFloat(window.getComputedStyle(el).paddingBottom) || 0
+      : 0;
+    return r.bottom - pad;
+  } catch (_) { return null; }
+}
+
 function measureViewport() {
   const vv = window.visualViewport;
   const w = vv && vv.width ? Math.round(vv.width) : window.innerWidth;
@@ -1158,20 +1187,36 @@ function currentBookId() {
   return bookIdOf(currentApp?.nav?.getCurrent?.());
 }
 
+// Which chapter? The mark asks at chapter grain since W-231, and the answer
+// is null whenever the reader is above a chapter — a book ring, a testament
+// ring, the root — so the question falls back to the book, then the edition.
+function currentChapterId() {
+  return chapterIdOf(currentApp?.nav?.getCurrent?.());
+}
+
 function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
   let show = false;
   try {
-    // GATED ON THE FLAG AGAIN (Howell, 2026-08-15) — and briefly un-gating it
-    // was my error, made from a design he had not ruled. Under H-25 point 4
-    // unconfirmed books are UNREACHABLE without the flag, not merely marked.
-    // So off the flag there is nothing on screen to caveat, and the un-gated
-    // version would have shown a red NOT PROOFREAD banner to a reader looking
-    // at confirmed text only — including, one day, the public. The mark
-    // belongs to the development view because that is the only view with
-    // unconfirmed work in it.
-    if (dimensionBridge.completeOverrideActive()) {
     const active = dimensionStore.getState().edition || null;
+    const volume = currentManifest?.__wallVolume;
+
+    // UN-GATED FROM THE FLAG, BY RULING THIS TIME (O-124, Howell 2026-09-01).
+    // It was un-gated once before, on 2026-08-15, and that was an error made
+    // from a design he had not ruled: unconfirmed books were UNREACHABLE off
+    // the flag, so there was nothing on screen to caveat and the banner would
+    // have shamed a reader looking at confirmed text only. Both halves of
+    // that are now reversed by his word — unconfirmed material is reachable,
+    // marked, and the mark tells the truth at chapter grain (W-231). So the
+    // mark shows wherever what is in hand is not confirmed, on any network.
+    //
+    // ONLY FOR A VOLUME THAT CAN ANSWER AT THE FINER GRAIN. A volume without
+    // `isNodeConfirmed` keeps the old flag-gated path below, unchanged: this
+    // ruling was made about one volume and must not surprise the others.
+    if (typeof volume?.isNodeConfirmed === 'function') {
+      show = Boolean(active)
+        && !volume.isNodeConfirmed(active, { bookId: currentBookId(), chapterId: currentChapterId() });
+    } else if (dimensionBridge.completeOverrideActive()) {
     const unit = currentBookId();
     // NO BOOK IN HAND — a testament ring, the root, the gateway. The question
     // becomes whether the EDITION is finished, and that must be DERIVED from
@@ -1187,7 +1232,6 @@ function updateIncompleteMark() {
     //
     // An edition with no per-unit marks still falls back to its flag, inside
     // isFullyConfirmed, so nothing else changes.
-    const volume = currentManifest?.__wallVolume;
     const editionFinished = typeof volume?.isFullyConfirmed === 'function'
       ? volume.isFullyConfirmed(active)
       : dimensionBridge.isCertifiedEdition(active);
@@ -1365,6 +1409,51 @@ function openBootFunnel() {
 if (dimensionButton) {
   dimensionButton.addEventListener('click', cycleStrata);
 }
+// THE PROOFREADER'S SHORTCUT (O-123, Howell 2026-08-31: "I want you to cheat,
+// just for the sake of proofreading... count nodes between the origin verse
+// and the destination verse and then rotate the Focus Ring by that number of
+// nodes. Like I said, it's cheating, no human could do that").
+//
+// It is cheating, and that is the point: a driven proofreading pass needs to
+// stand at one verse and be at another a second later, where a reader needs
+// the journey. What it does NOT do is fake the arrival — it makes the ring's
+// own journey, the same call a tap makes, so everything a reader would meet
+// on landing happens: the settle, the eclipse decision, the margin fetch, the
+// corner emblem, the repaint. That matters more than the speed: several of
+// this month's bugs lived in the ARRIVAL, and a shortcut that skipped it
+// would proofread a screen no reader ever sees.
+//
+// Gated on the LAN proofread override, so it does not exist for a reader.
+if (typeof window !== 'undefined' && proofreadOverrideActive()) {
+  window.__wheelProofread = {
+    /** How many seats the ring holds. */
+    count: () => currentApp?.nav?.items?.length ?? 0,
+    /** Where the ring stands: index, seat id, and how far to a named seat. */
+    where: () => {
+      const nav = currentApp?.nav;
+      const i = nav?.getCurrentIndex?.() ?? -1;
+      return { index: i, id: nav?.items?.[i]?.id ?? null, total: nav?.items?.length ?? 0 };
+    },
+    /** The index of a seat named the way the chain names it. */
+    indexOf: id => currentApp?.nav?.items?.findIndex(it => it?.id === id) ?? -1,
+    /**
+     * Travel to a seat and report what happened. Returns the distance in
+     * NODES — which is the thing Howell asked for — or an error string, never
+     * a silent no-op: a shortcut that quietly fails would proofread the verse
+     * it was already on and call it the next one.
+     */
+    seek: id => {
+      const nav = currentApp?.nav;
+      if (!nav?.items?.length) return { ok: false, why: 'no ring' };
+      const to = nav.items.findIndex(it => it?.id === id);
+      if (to < 0) return { ok: false, why: 'no such seat on this ring', id };
+      const from = nav.getCurrentIndex();
+      const moved = currentApp.rotateToIndex(to, { durationMs: 220 });
+      return { ok: moved !== false, from, to, nodes: to - from, id };
+    }
+  };
+}
+
 if (typeof window !== 'undefined') {
   window.__wheelDimension = {
     get: () => dimensionBridge.getSelection(),
@@ -1731,7 +1820,7 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // pinned canvas use the visual viewport, and a browser chrome bar makes
   // innerHeight lie (Phase C audit M4; the DDG bottom-crop class of bug).
   const vpm = measureViewport();
-  const arcBounds = computeDetailSectorBounds(vpm.width, vpm.height);
+  const arcBounds = computeDetailSectorBounds(vpm.width, vpm.height, null, copyrightBottomPx());
   const panelRect = detailPanel.getBoundingClientRect();
   const renderBounds = { ...arcBounds, width: panelRect.width, height: panelRect.height };
 
@@ -1773,14 +1862,110 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // wrong whatever the reason — dump every measurement cache and re-wrap.
   // Capped at 3 attempts; a newer render (seq guard) cancels the check.
   const seq = ++detailRenderSeq;
+  // A LAYOUT MEASURED BEFORE THE FACE ARRIVED IS PROVISIONAL (O-118). Howell,
+  // 2026-08-30: "Genesis 1:1 renders differently at boot than it does after
+  // turning the focus ring away and back." It did. The boot layout wrapped at
+  // eighteen characters where twenty-seven fit and set its type six per cent
+  // large — the signature of a wrap measured in the Georgia fallback and then
+  // PAINTED in EB Garamond, whose Greek is much the narrower of the two. The
+  // verifier below could not see it: it asks whether a line overflows its box,
+  // and this failure UNDER-fills the box, which is invisible to that question
+  // and to every question the instrument was asking.
+  //
+  // The cure that existed was one global one-shot re-render when the face
+  // lands, registered during boot — and the boot splash renders the first
+  // verse AFTER that, so on a warm font cache the shot was already spent on
+  // nothing and the provisional layout stood until a rotation happened to
+  // redraw it. So the latch moves from the boot to THE RENDER: a detail that
+  // was laid out without the real face remembers as much and re-lays itself
+  // the moment the face arrives, whatever the ordering was. The face loads
+  // once, so this costs at most one extra render, and the seq guard drops it
+  // if the reader has moved on.
+  if (!verseFaceReady()) {
+    onVerseFontReady(() => {
+      if (seq !== detailRenderSeq) return;
+      invalidateVerseMeasurement();
+      versePartsCache.clear();
+      currentApp?.resettle?.();
+      renderDetail(selected, adapterInstance, manifest, adapterNormalized,
+        { translation, wrapAttempt, part });
+    });
+  }
   if (wrapAttempt < 3 && typeof requestAnimationFrame === 'function') {
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      if (seq !== detailRenderSeq) return; // superseded by a newer render
+    // AND THE WATCH OUTLASTS THE FRAME (O-121). Two frames is ~32ms and the
+    // real face can reach layout hundreds of milliseconds later — which is
+    // exactly the boot case, and exactly why rotating the ring "fixed" it:
+    // the rotation was simply a redraw that happened after the face landed.
+    // So the check is re-asked on a short schedule until it either finds
+    // drift (and re-renders, which starts a fresh watch) or the face has
+    // plainly settled. Five span measurements, then silence.
+    const verify = () => {
+      if (seq !== detailRenderSeq) return true; // superseded: someone else is watching
       let overflows = false;
       detailContent.querySelectorAll('.detail-text-line').forEach(el => {
         if ((el.scrollWidth || 0) - (el.clientWidth || 0) > 2) overflows = true;
       });
-      if (!overflows) return;
+      // AND UNDER-FILL IS A FAILURE TOO (O-119). Howell, 2026-08-30, after
+      // the first attempt at this: "Cold boot failed." It did, because the
+      // guard added then trusted `document.fonts` — and the comment directly
+      // above this block already says that promise resolves BEFORE the face
+      // reaches layout, which is the whole reason this paint-witness exists.
+      // The instrument was asking the paint one question, "did a line run
+      // PAST its box", and Howell's Genesis 1:1 fails the opposite way: the
+      // wrap measured in the wide-Greek fallback broke at eighteen characters
+      // in a row that holds twenty-seven, so every line sits comfortably
+      // INSIDE its box and the old question answers no.
+      //
+      // Now the paint is asked both. Post-paint the real face IS in layout,
+      // so a measurement taken here is honest: if any line could still have
+      // taken the first word of the line below it, the wrap was measured in
+      // some other face and the whole layout is stale. Prose only — a poem's
+      // lines are metrical and must NOT be joined, which is why this asks the
+      // payload rather than the pixels.
+      const underfilled = () => {
+        // ONLY THE MEASURED PATH IS ASKED. Cards and labels wrap by a
+        // character-count budget that is deliberately conservative, so they
+        // look under-filled by construction and would re-render to the cap
+        // every time, changing nothing.
+        if (!payload?.uniform) return false;
+        if (Array.isArray(payload?.poemLines) && payload.poemLines.length > 1) return false;
+        const els = Array.from(detailContent.querySelectorAll('.detail-text-line'));
+        if (els.length < 2) return false;
+        let probe = null;
+        try {
+          const cs = window.getComputedStyle?.(els[0]);
+          if (!cs) return false;
+          probe = document.createElement('span');
+          probe.style.cssText = 'position:absolute;left:0;top:-9999px;opacity:0;white-space:nowrap;'
+            + 'pointer-events:none;margin:0;padding:0;';
+          probe.style.fontFamily = cs.fontFamily;
+          probe.style.fontSize = cs.fontSize;
+          document.body.appendChild(probe);   // never inside the panel: it wears a scale
+          for (let i = 0; i < els.length - 1; i += 1) {
+            const box = parseFloat(els[i].style?.maxWidth || els[i].style?.width || '0');
+            const here = (els[i].textContent || '').trim();
+            const next = (els[i + 1].textContent || '').trim().split(/\s+/)[0];
+            if (!box || !here || !next) continue;
+            probe.textContent = `${here} ${next}`;
+            if (probe.getBoundingClientRect().width <= box - 1) return true;
+          }
+        } catch (_) { return false; } finally { try { probe?.remove(); } catch (_) { /* detached */ } }
+        return false;
+      };
+      // AND THE PLAINEST QUESTION OF ALL, WHICH TOOK THREE TRIES TO ASK
+      // (O-121): does the layout's own first line still measure what it
+      // measured when the layout was made? Howell settled it — "the bug
+      // disappears with the probe=1 tag, but without it I still see the 3
+      // line incorrect version" — which means the probe's extra measurement
+      // per layout was the cure, and the real face was arriving late. The
+      // under-fill witness above could not see that, because it re-measures
+      // in whatever face is active NOW and the stale layout was measured in
+      // the same one: self-consistent, and wrong.
+      //
+      // This asks nothing about fonts. It compares a number to itself across
+      // two frames. If it moved, the face moved under the layout and every
+      // break in it is stale.
+      if (!overflows && !faceMarkDrifted() && !underfilled()) return false;
       invalidateVerseMeasurement();
       versePartsCache.clear(); // part counts derive from the measurement (O-84)
       // KEEPING THE HALF IT WAS DRAWING. The retry re-wraps the same text
@@ -1789,6 +1974,13 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       // repaint they never asked for and could not have attributed.
       renderDetail(selected, adapterInstance, manifest, adapterNormalized,
         { translation, wrapAttempt: wrapAttempt + 1, part });
+      return true;
+    };
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (verify()) return;
+      for (const ms of [250, 750, 1500, 3000]) {
+        setTimeout(() => { if (seq === detailRenderSeq) verify(); }, ms);
+      }
     }));
   }
 }
@@ -2853,7 +3045,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
           : null;
         let parts = 1;
         if (payload?.uniform && typeof payload.text === 'string') {
-          const bounds = computeDetailSectorBounds(vpm.width, vpm.height);
+          const bounds = computeDetailSectorBounds(vpm.width, vpm.height, null, copyrightBottomPx());
           // O-112: a poem verse is measured by its own line-per-line flow -
           // the prose count would under- or over-state its screens.
           const offs = volumeForParts()?.poemAtSync?.(item?.meta?.externalFile, translation, item?.meta?.verseKey);
@@ -3158,7 +3350,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // need exists solely for the gateway, which is dev scaffolding — a
   // standalone deployment has no volume above it to return to.)
   updateIncompleteMark();
-  if (!transit) openBootFunnel();
+  // A PROOFREAD DEEP LINK LANDS ON THE TEXT (O-122). The funnel is every
+  // launch's introduction and stays so; but a driven verse-by-verse pass over
+  // a book paid it forty times an hour — load, commit the edition, walk two
+  // planes in — for a reader who is a script and has already said what it
+  // wants. Gated on the LAN override plus a fully named address, so nothing
+  // a reader can reach behaves differently.
+  if (!transit && !options.deepLinked) openBootFunnel();
   showVersion();
   performance.mark('wheel:render-done');
   recordBootPhases(volume);

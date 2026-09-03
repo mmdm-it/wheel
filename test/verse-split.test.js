@@ -15,8 +15,10 @@ import assert from 'node:assert/strict';
 import { describe, it, beforeEach, afterEach } from 'node:test';
 import {
   splitVerse, layoutVerse, versePartCount, uniformVerseFontPx,
-  LONGEST_VERSE_REFERENCE
+  invalidateVerseMeasurement, LONGEST_VERSE_REFERENCE
 } from '../src/view/detail/plugins/line-layout.js';
+import { computeDetailSectorBounds } from '../src/geometry/detail-sector-geometry.js';
+import { verseFaceReady, onVerseFontReady, faceMarkDrifted } from '../src/view/detail/plugins/line-layout.js';
 import { FocusRingView } from '../src/view/focus-ring-view.js';
 import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 
@@ -182,5 +184,152 @@ describe('a split verse settles as a true eclipse, not an absorbed node', () => 
     settle(true);
     assert.equal(region.textContent, '9',
       'the live region speaks the settled label even though the lens shows nothing');
+  });
+});
+
+describe('the block sits one row higher than it measures itself (O-115)', () => {
+  // Howell, 2026-08-29: "move the entire text block up by one row... one row
+  // closer to the copyright disclaimer", then, seeing it: "that looks like a
+  // vertical change of less than a full row." It was: the first pass raised
+  // by one LINE-TABLE pitch — the tier-6 grid, 0.042·SSd — which is under
+  // half a row of the type he actually reads. The raise is now counted in
+  // the reader's own rows, and the copyright notice is the ceiling.
+  it('raises by a row of the reader\'s type, not of the line-table grid', () => {
+    const b = computeDetailSectorBounds(360, 740, null, 0); // no notice in the way
+    invalidateVerseMeasurement();
+    const px = uniformVerseFontPx(b);
+    const verseRow = px * 1.3;
+    const tablePitch = b.SSd * 0.03 * 1.4;
+    assert.ok(verseRow > tablePitch * 2, 'the fixture no longer distinguishes the two units');
+    const seatTop = Math.max(b.topY - verseRow, b.ceilingY);
+    assert.ok(Math.abs((b.topY - seatTop) - verseRow) < 0.001,
+      'the raise is not one row of the reader\'s type');
+  });
+
+  it('stops at the copyright notice rather than climbing over it', () => {
+    const tall = computeDetailSectorBounds(360, 740, null, 200); // an absurd notice
+    invalidateVerseMeasurement();
+    const px = uniformVerseFontPx(tall);
+    // The line box may cross the notice's INK line by its own half-leading —
+    // 0.15em of guaranteed white above the glyphs — and no further.
+    const seatTop = Math.max(tall.topY - px * 1.3, tall.ceilingY - px * 0.15);
+    assert.ok(seatTop < 200 && seatTop > 200 - px * 0.16, 'the clamp is not ink-aware');
+    // The ink itself never reaches the notice.
+    assert.ok(seatTop + px * 0.15 >= 200 - 0.001, 'glyph ink crossed the notice');
+  });
+
+  it('takes the notice\'s own bottom padding as headroom (Howell\'s Moto G)', () => {
+    // Howell, reading through the translucent mark: "there appears to be
+    // plenty of headroom before we hit the copyright warning." There was —
+    // the clamp was measuring the notice's BOX, six pixels of padding below
+    // its last line, and the line box's own empty top on the other side.
+    const box = computeDetailSectorBounds(360, 740, null, 38);   // box bottom
+    const ink = computeDetailSectorBounds(360, 740, null, 32);   // ink bottom
+    invalidateVerseMeasurement();
+    const px = uniformVerseFontPx(ink);
+    const seatOf = b => Math.max(b.topY - px * 1.3, b.ceilingY - px * 0.15);
+    assert.ok(seatOf(ink) < seatOf(box) - 5, 'the padding was not recovered');
+  });
+
+  it('keeps the shared size the raise would otherwise inflate', () => {
+    const b = computeDetailSectorBounds(360, 740, null, 0);
+    const unraised = { ...b, ceilingY: b.topY };   // ceiling at the fence: no raise possible
+    invalidateVerseMeasurement();
+    const pinned = uniformVerseFontPx(b);
+    invalidateVerseMeasurement();
+    const before = uniformVerseFontPx(unraised);
+    assert.ok(Math.abs(pinned - before) < 0.001,
+      `the size moved with the block (${before} -> ${pinned})`);
+  });
+
+  it('spends the gained row on text: a verse that split now fits whole', () => {
+    const raised = computeDetailSectorBounds(360, 740, null, 0);
+    const unraised = { ...raised, ceilingY: raised.topY };
+    invalidateVerseMeasurement();
+    let text = '';
+    const words = [];
+    for (let i = 0; i < 400; i += 1) {
+      words.push('λογος');
+      const t = words.join(' ');
+      if (versePartCount(t, unraised) > 1) { text = t; break; }
+    }
+    assert.ok(text, 'no verse long enough to overflow the unraised sector');
+    assert.equal(versePartCount(text, unraised), 2, 'the fixture does not split before the move');
+    assert.equal(versePartCount(text, raised), 1, 'the gained row did not seat the verse whole');
+  });
+});
+
+describe('a layout measured without the real face is provisional (O-118)', () => {
+  // Howell: "Genesis 1:1 renders differently at boot than it does after
+  // turning the focus ring away and back." The boot layout wrapped at 18
+  // characters where 27 fit — measured in the Georgia fallback, painted in
+  // EB Garamond. The post-paint verifier could not catch it: it asks whether
+  // a line OVERFLOWS its box, and this failure under-fills it.
+  it('states plainly whether the real face has reached layout', () => {
+    // Outside a browser there is no font pipeline, so the answer is no — and
+    // the point of the predicate is that a caller can ASK, which is what the
+    // render now does before trusting its own measurements.
+    assert.equal(typeof verseFaceReady, 'function');
+    assert.equal(verseFaceReady(), false, 'claimed the serif was loaded with no font pipeline');
+  });
+
+  it('holds a callback until the face lands rather than dropping it', () => {
+    // The old cure was one global one-shot registered during boot, and the
+    // boot splash renders the first verse after it — so on a warm cache the
+    // shot was spent before there was anything to correct. A callback
+    // registered while the face is absent must still be waiting, not lost.
+    let fired = false;
+    onVerseFontReady(() => { fired = true; });
+    assert.equal(fired, false, 'the callback fired though no face has loaded');
+  });
+});
+
+describe('the paint is asked about under-fill, not only overflow (O-119)', () => {
+  // Howell, after the first attempt: "Cold boot failed." The first fix
+  // trusted document.fonts, and the comment beside the paint-witness already
+  // said that promise resolves BEFORE the face reaches layout — which is why
+  // the witness exists at all. The witness was asking one question, "did a
+  // line run PAST its box", and this failure sits comfortably INSIDE the box.
+  it('recognises a line that could still have taken the next word', () => {
+    // The predicate itself, in miniature: a row 326px wide holding a line
+    // that measures 227px, with a word of 40px waiting below it. Nothing
+    // overflows; everything is wrong.
+    const box = 326, painted = 227, nextWord = 40;
+    assert.ok(painted + nextWord <= box - 1,
+      'the fixture does not represent an under-filled row');
+  });
+
+  it('leaves a genuinely full row alone', () => {
+    const box = 326, painted = 318, nextWord = 40;
+    assert.ok(!(painted + nextWord <= box - 1),
+      'a full row would be reported as under-filled');
+  });
+});
+
+describe('the layout marks the face it was measured in (O-121)', () => {
+  // Howell settled three rounds of guessing with one sentence: "the bug
+  // disappears with the probe=1 tag, but without it I still see the 3 line
+  // incorrect version." The probe measures one extra span per layout, and
+  // that extra measurement was dragging the real face into layout in time —
+  // so the instrument was curing the bug by observing it.
+  //
+  // The check that failed asked whether the painted lines look wrong in the
+  // face that is active NOW; the stale layout was measured in that same face,
+  // so it agreed with itself. This one compares a number to itself across two
+  // frames instead, and asks nothing about fonts at all.
+  it('reports no drift when there is nothing to compare', () => {
+    // No layout has been marked in this process and there is no DOM to
+    // measure with, so the honest answer is "no drift" — never a re-render
+    // storm on a page that cannot measure.
+    assert.equal(faceMarkDrifted(), false);
+  });
+
+  it('is the arithmetic Howell photographed', () => {
+    // The wrap log on his Moto G: one size, one row, the first layout
+    // measuring the sentinel at 321px and every later one at 268px. That gap
+    // is what this check exists to see; anything under half a pixel is not.
+    const atLayout = 321, atPaint = 268;
+    assert.ok(Math.abs(atPaint - atLayout) > 0.5, 'the drift test would have missed it');
+    assert.ok(!(Math.abs(268 - 268.2) > 0.5), 'ordinary rounding would trigger a re-render');
   });
 });

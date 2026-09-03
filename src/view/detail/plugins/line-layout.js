@@ -147,6 +147,28 @@ const VERSE_FONT_STACK = "'EB Garamond', Georgia, serif";
 const VERSE_CHAR_EM = 0.50;     // fallback estimate only (no canvas, e.g. tests)
 const VERSE_LINE_HEIGHT = 1.30; // vertical pitch between verse lines
 const VERSE_FILL = 1.0;         // fraction of sector height the longest verse may use
+// THE BLOCK SEATS A ROW OF ITS OWN TEXT ABOVE THE FENCE (O-115). Expressed in
+// the reader's rows, not in the line table's tier-6 grid — the first pass used
+// the grid and moved the block less than half a row, which Howell saw at once.
+// The ceiling is the copyright notice's measured bottom: text rises until it
+// reaches the notice and no further, so a device whose notice sets one line
+// gains the whole row and a phone's two-line notice gives what it has.
+const VERSE_RAISE_ROWS = 1;
+function seatTopFor(bounds, fontPx) {
+  const raised = bounds.topY - fontPx * VERSE_LINE_HEIGHT * VERSE_RAISE_ROWS;
+  if (!Number.isFinite(bounds.ceilingY)) return raised;
+  // AND THE LINE BOX'S OWN EMPTY TOP COUNTS AS HEADROOM. A line box of height
+  // 1.3em carries half its extra leading ABOVE the glyphs — 0.15em of
+  // guaranteed white by CSS's own definition, not a guess about this font —
+  // so the box may cross the notice's ink line by exactly that much and the
+  // ink still cannot meet. Together with the notice's own bottom padding
+  // (subtracted where it is measured) this is the whole of what Howell saw
+  // as headroom, and every pixel of it is PROVABLY empty. What remains below
+  // is the gap between the font's ascent and its actual glyph tops, which
+  // would need real ink metrics to claim and is deliberately left alone.
+  const halfLeading = fontPx * (VERSE_LINE_HEIGHT - 1) / 2;
+  return Math.max(raised, bounds.ceilingY - halfLeading);
+}
 
 // Measure with the ACTUAL DOM — a hidden span in the real font — NOT canvas.
 // Safari's canvas measureText under-measures a web font even after it loads
@@ -244,6 +266,9 @@ if (typeof document !== 'undefined' && document.fonts) {
   } catch (_) { /* no Font Loading API: stay on the fallback metrics */ }
 }
 function verseFontReady() { return verseFontLoaded; }
+/** Has the real serif reached layout? A wrap measured while this is false was
+ *  measured in the FALLBACK face and is provisional (O-118). */
+export function verseFaceReady() { return verseFontLoaded; }
 // Nuke the memoised uniform size so the next layout re-measures from
 // scratch (spans are already per-pass). Called by the post-paint overflow
 // verifier: if the PAINT proves the measures wrong (a line's content wider
@@ -283,10 +308,12 @@ function sectorMetricAt(lineTable, y) {
 
 // Flow `text` at fontPx; lines seated at their true height, arc-aware, wrapped
 // by MEASURED width. Returns { lines:[{text,y,leftX,availableWidth}], overflow }.
-function flowVerseAt(text, bounds, fontPx) {
+function flowVerseAt(text, bounds, fontPx, { seated = true } = {}) {
   const lineH = fontPx * VERSE_LINE_HEIGHT;
   const lt = bounds.lineTable || [];
-  const top = bounds.topY;
+  // The FIT measures against the fence (seated:false) so the shared size never
+  // follows the raise; everything that RENDERS measures against the seat.
+  const top = seated ? seatTopFor(bounds, fontPx) : bounds.topY;
   const bottom = top + (bounds.bottomY - top) * VERSE_FILL;
   const words = text.split(/\s+/).filter(Boolean);
   const lines = [];
@@ -345,13 +372,18 @@ const SIZING_REFERENCE = halves[0].length >= halves[1].length ? halves[0] : halv
 // fallback-measured size is replaced once the real serif arrives).
 const verseSizeCache = new Map();
 export function uniformVerseFontPx(bounds) {
+  // THE SIZE IS FITTED AGAINST THE FENCE, NEVER AGAINST THE RAISED BLOCK
+  // (O-115). Fitting to the taller box would spend the whole gained row on
+  // bigger glyphs — measured across all 27,305 verses, that saved no splits
+  // at all and added them on two viewports. Howell chose the pin knowing the
+  // trade: the type stays where his eye has it and the row buys reading.
   const key = `${bounds.SSd}:${bounds.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}`;
   const hit = verseSizeCache.get(key);
   if (hit !== undefined) return hit;
   let lo = bounds.SSd * 0.025, hi = bounds.SSd * 0.11;
   for (let i = 0; i < 16; i += 1) {
     const mid = (lo + hi) / 2;
-    if (!flowVerseAt(SIZING_REFERENCE, bounds, mid).overflow) lo = mid; else hi = mid;
+    if (!flowVerseAt(SIZING_REFERENCE, bounds, mid, { seated: false }).overflow) lo = mid; else hi = mid;
   }
   verseSizeCache.set(key, lo);
   return lo;
@@ -366,7 +398,7 @@ export function uniformVerseFontPx(bounds) {
 const partCountCache = new Map();
 export function versePartCount(text, bounds) {
   const t = String(text || '');
-  const key = `${bounds.SSd}:${bounds.topY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}:${t.length}:${t.slice(0, 32)}`;
+  const key = `${bounds.SSd}:${bounds.topY}:${bounds.ceilingY}:${bounds.bottomY}:${bounds.leftBound}:${bounds.rightBound}:${verseFontReady()}:${t.length}:${t.slice(0, 32)}`;
   const hit = partCountCache.get(key);
   if (hit !== undefined) return hit;
   const parts = flowVerseAt(t, bounds, uniformVerseFontPx(bounds)).overflow ? 2 : 1;
@@ -390,7 +422,7 @@ export function versePartCount(text, bounds) {
 function flowPoemAt(poemLines, bounds, fontPx, { unbounded = false } = {}) {
   const lineH = fontPx * VERSE_LINE_HEIGHT;
   const lt = bounds.lineTable || [];
-  const top = bounds.topY;
+  const top = seatTopFor(bounds, fontPx);
   // A POEM REFUSES THE SLIVER. The sector's deepest rows narrow toward the
   // ring until nothing poetic fits — a dozen characters set word-per-word is
   // confetti, not a colon — so the poem's floor is the last row that holds a
@@ -457,7 +489,7 @@ export function poemPartCount(poemLines, bounds) {
 export function layoutPoem(poemLines, bounds, part = 0) {
   const fontPx = uniformVerseFontPx(bounds);
   const whole = flowPoemAt(poemLines, bounds, fontPx);
-  if (!whole.overflow) return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+  if (!whole.overflow) { markFace(fontPx, whole.lines); return { fontPx, lines: whole.lines, parts: 1, part: 0 }; }
   const total = poemLines.join(' ').length;
   let acc = 0, cut = 1, best = Infinity;
   for (let i = 1; i < poemLines.length; i += 1) {
@@ -473,7 +505,79 @@ export function layoutPoem(poemLines, bounds, part = 0) {
     flow = flowPoemAt(chosen, bounds, px);
   }
   if (flow.overflow) flow = flowPoemAt(chosen, bounds, px, { unbounded: true });
+  markFace(px, flow.lines);
   return { fontPx: px, lines: flow.lines, parts: 2, part: part === 1 ? 1 : 0 };
+}
+
+// THE WRAP'S OWN TESTIMONY, when the probe is watching (?probe=1). Two fixes
+// for Howell's boot-wrap bug were built on reasoning and both failed, so this
+// stops arguing and records what each render actually measured: the size it
+// chose, the width of the row it wrapped against, and — the discriminator —
+// the measured width of ONE FIXED GREEK STRING at that size. If a good render
+// and a bad one disagree about that number at the same size, the FACE differed;
+// if the number is -1 the DOM measurer was absent and the estimate ran; if the
+// row width differs, the geometry did. Costs nothing when the probe is off.
+function noteWrap(fontPx, lines, bounds) {
+  try {
+    const log = typeof window !== 'undefined' && window.__wheelWrapLog;
+    if (!Array.isArray(log)) return;
+    const meas = makeMeasurer(fontPx);
+    const width = meas ? Math.round(meas.width('ΕΝ ΑΡΧΗ ἐποίησεν ὁ θεὸς')) : -1;
+    meas?.done?.();
+    log.push({
+      px: Number(fontPx.toFixed(1)),
+      n: lines.length,
+      avail: Math.round(bounds?.lineTable?.[0]?.availableWidth ?? 0),
+      sentinel: width,
+      first: String(lines[0]?.text || '').slice(0, 20),
+    });
+    if (log.length > 6) log.shift();
+  } catch (_) { /* diagnostics never break the instrument */ }
+}
+
+// THE FACE THE LAYOUT WAS MEASURED IN, RECORDED SO THE PAINT CAN DISAGREE
+// (O-121). Howell, 2026-08-30: "the bug disappears with the probe=1 tag, but
+// without it I still see the 3 line incorrect version." The probe was the
+// cure, which makes it evidence: its recorder measures one extra span per
+// layout, and that extra measurement is what dragged the real face into
+// layout in time. Turn it off and the first wrap measures the fallback and
+// stands.
+//
+// The under-fill witness could not catch this because it re-measured in
+// WHATEVER FACE WAS ACTIVE at check time — the same stale one — so it agreed
+// with the stale layout and reported nothing wrong. Self-consistent and
+// wrong, which is the hardest kind.
+//
+// So the layout now leaves a MARK: the first line's own text, the size, and
+// the width that text measured AT LAYOUT TIME. Two frames later the paint
+// measures the same text at the same size again. If the number moved, the
+// face moved underneath the layout and every line break in it is stale —
+// whatever any font promise says, and without needing to know which face is
+// which. When they agree, nothing happens.
+let faceMark = null;
+function markFace(fontPx, lines) {
+  faceMark = null;
+  try {
+    const text = String(lines?.[0]?.text || '');
+    if (!text) return;
+    const meas = makeMeasurer(fontPx);
+    if (!meas) return;
+    faceMark = { text, px: fontPx, w: meas.width(text) };
+    meas.done();
+  } catch (_) { faceMark = null; }
+}
+
+/** Re-measure the last layout's own first line, now. Null when there is
+ *  nothing to compare or no way to measure. */
+export function faceMarkDrifted() {
+  try {
+    if (!faceMark) return false;
+    const meas = makeMeasurer(faceMark.px);
+    if (!meas) return false;
+    const now = meas.width(faceMark.text);
+    meas.done();
+    return Math.abs(now - faceMark.w) > 0.5;
+  } catch (_) { return false; }
 }
 
 // Lay out ONE verse at the shared uniform size. Returns the size to apply and
@@ -486,7 +590,11 @@ export function layoutVerse(text, bounds, part = 0) {
   // measured width, so no line runs long.
   // NEVER ellipsise scripture, even on a defensive overflow (Howell 2026-07-22).
   const whole = flowVerseAt(text, bounds, fontPx);
-  if (!whole.overflow) return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+  if (!whole.overflow) {
+    markFace(fontPx, whole.lines);
+    noteWrap(fontPx, whole.lines, bounds);
+    return { fontPx, lines: whole.lines, parts: 1, part: 0 };
+  }
 
   // Two parts, never more (O-84's hard cap). The split is balanced by
   // characters at a word boundary; if the measured flow disagrees with the
@@ -507,7 +615,10 @@ export function layoutVerse(text, bounds, part = 0) {
     else { a = `${a} ${from[0]}`; b = from.slice(1).join(' '); }
   }
   const chosen = part === 1 ? b : a;
-  return { fontPx, lines: flowVerseAt(chosen, bounds, fontPx).lines, parts: 2, part: part === 1 ? 1 : 0 };
+  const out = flowVerseAt(chosen, bounds, fontPx).lines;
+  markFace(fontPx, out);
+  noteWrap(fontPx, out, bounds);
+  return { fontPx, lines: out, parts: 2, part: part === 1 ? 1 : 0 };
 }
 
 export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {

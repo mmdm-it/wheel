@@ -484,6 +484,12 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
       return isEditionFullyConfirmed(this, edition);
     },
 
+    // Is what the reader stands on confirmed — at chapter, book, or edition
+    // grain, whichever is finest in hand (W-231). The mark asks this.
+    isNodeConfirmed(edition, node) {
+      return isNodeConfirmed(this, edition, node);
+    },
+
     sectionOf(edition, bookId) {
       const shelf = shelves.get(edition);
       if (!shelf || !Array.isArray(shelf.groups)) return null;
@@ -733,6 +739,73 @@ export function confirmedUnitsOf(volume, edition) {
   return Array.isArray(units) ? new Set(units) : null;
 }
 
+// THE CHAPTERS OF A BOOK, AS ADDRESSES (W-231). The address is the one the
+// seat expander composes — the book's id and the container's label — so a
+// mark written against it in the record and the chapter the reader stands
+// on are the same string. Read off the chart's own containers; a book with
+// no chart, or no containers, has no chapters to speak of, and the callers
+// below treat that as "nothing to roll up" rather than "everything done":
+// `[].every` is true, and that is exactly the vacuous truth a proofread
+// claim must never rest on.
+export function chaptersOf(volume, edition, bookId) {
+  const chart = typeof volume?.chartFor === 'function' ? volume.chartFor(bookId, edition) : null;
+  if (!chart || !Array.isArray(chart.seats)) return [];
+  // `projectContainers` SCREAMS at a botched chart (O-44), and rightly, at
+  // render time. Here the question is only "may the banner come down", and a
+  // book whose chapters cannot be enumerated must answer NO — an empty list
+  // rolls up to unconfirmed, which is the banner showing. Swallowing the
+  // throw into "confirmed" would be the one direction this must never fail.
+  let containers;
+  try { containers = projectContainers(chart, { leaves: chart.seats.length }) || []; }
+  catch (_) { return []; }
+  return containers.map(c => `${bookId}/${c.label}`);
+}
+
+// THE PROOFREAD MARK AT CHAPTER RESOLUTION (W-231, Howell 2026-09-01), and
+// how it rolls up.
+//
+// The record may hold marks at EITHER grain. A book-grain mark — the Hebrew's
+// thirty-nine, resting on H-25's one-seat-per-book ruling — covers every
+// chapter of its book. A chapter-grain mark — a chapter read whole against
+// its page under W-223 — covers that chapter alone. A book is confirmed when
+// it carries its own mark OR every one of its chapters does; an edition when
+// every book it holds is confirmed. Both grains stand side by side in one
+// record because they are different claims (W-233), and the record's own
+// `basis` field says which is which; the engine only has to read both.
+//
+// An edition with NO marks at all falls back to its declared flag, exactly as
+// `isEditionFullyConfirmed` always has, so nothing that never grew marks
+// moves.
+export function isChapterConfirmed(volume, edition, bookId, chapterId) {
+  const confirmed = confirmedUnitsOf(volume, edition);
+  if (confirmed === null) {
+    const declared = (volume?.editions || []).find(e => e?.code === edition);
+    return declared?.proofread === true;
+  }
+  return confirmed.has(chapterId) || (bookId ? confirmed.has(bookId) : false);
+}
+
+export function isBookConfirmed(volume, edition, bookId) {
+  const confirmed = confirmedUnitsOf(volume, edition);
+  if (confirmed === null) {
+    const declared = (volume?.editions || []).find(e => e?.code === edition);
+    return declared?.proofread === true;
+  }
+  if (confirmed.has(bookId)) return true;
+  const chapters = chaptersOf(volume, edition, bookId);
+  return chapters.length > 0 && chapters.every(c => confirmed.has(c));
+}
+
+// THE ONE QUESTION THE MARK ASKS, at whatever grain the reader is standing on.
+// A chapter in hand asks about the chapter; a book with no chapter in hand
+// asks about the book; nothing in hand asks about the edition. The host
+// supplies what it has and this picks the finest.
+export function isNodeConfirmed(volume, edition, { bookId = null, chapterId = null } = {}) {
+  if (chapterId) return isChapterConfirmed(volume, edition, bookId, chapterId);
+  if (bookId) return isBookConfirmed(volume, edition, bookId);
+  return isEditionFullyConfirmed(volume, edition);
+}
+
 // IS THIS EDITION FINISHED? Derived from the per-unit marks, never declared
 // twice (Howell, 2026-08-17, from the LAN).
 //
@@ -777,19 +850,32 @@ export function isEditionFullyConfirmed(volume, edition) {
     ? volume.booksFor(edition)
     : (volume?.units || []);
   const denominator = held ? [...held] : roster.map(u => u.id);
-  return denominator.length > 0 && denominator.every(id => confirmed.has(id));
+  // A book counts as done at either grain (W-231): its own mark, or all of
+  // its chapters' marks. `confirmed.has(id)` alone would have kept the
+  // edition unfinished forever once its marks moved to chapter resolution.
+  return denominator.length > 0 && denominator.every(id => isBookConfirmed(volume, edition, id));
 }
 
-export function isUnitVisible(volume, edition, unitId, { includeUnconfirmed = false } = {}) {
-  if (includeUnconfirmed) return true;
-  const confirmed = confirmedUnitsOf(volume, edition);
-  return confirmed === null ? true : confirmed.has(unitId);
+// RETIRED, AND KEPT ONLY SO A CALLER CANNOT MISS THE FACT (O-124, Howell
+// 2026-09-01: "the Greek goes public unproofread, wearing the banner").
+//
+// This answered "may the reader see this unit at all" with the proofread
+// record, and off the house network the answer was no: absent from the
+// record was absent from the reader. That was the "only fully proofread
+// editions upload" rule, enforced here. Howell retired it — unproofread
+// material shows, marked, and the mark tells the truth — so this is now
+// always yes. Membership (does the edition HOLD the unit) is a different
+// question and is untouched; it lives in `volumeHoldsUnit`.
+export function isUnitVisible() {
+  return true;
 }
 
 export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false } = {}) {
   if (!volume || !edition) return [];
   const items = [];
-  const confirmed = includeUnconfirmed ? null : confirmedUnitsOf(volume, edition);
+  // `includeUnconfirmed` is accepted and inert since O-124: the proofread
+  // filter it lifted no longer exists. Kept so callers need not change.
+  void includeUnconfirmed;
 
   // THE EDITION'S OWN ORDER (H-26/W-83). The seats come out in the order the
   // EDITION shelves its books, not the order volume.json enumerates them —
@@ -830,8 +916,12 @@ export function expandVolumeSeats(volume, edition, { includeUnconfirmed = false 
     if (!entry) continue;
     {
       const { book, testament } = entry;
-      // Unconfirmed is UNREACHABLE, not merely marked (H-25 point 4).
-      if (confirmed && !confirmed.has(book.id)) continue;
+      // UNCONFIRMED IS REACHABLE, AND MARKED (O-124, 2026-09-01). The line that
+      // stood here — `if (confirmed && !confirmed.has(book.id)) continue;` —
+      // was H-25 point 4, "unreachable, not merely marked", and it is retired
+      // by Howell's word: the Greek goes public unproofread, wearing the NOT
+      // PROOFREAD mark, and the mark says which chapters (W-231). What
+      // survives is membership, immediately below, which no flag ever lifted.
       // ABSENT FROM THE CHART IS ABSENT FROM THE EDITION. The chart's word is
       // law and there is no per-unit fallback — membership is the edition's
       // own, and manufacturing seats for it would be the identity chart

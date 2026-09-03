@@ -5,6 +5,7 @@
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
+import { proofreadDeepLink } from './core/lan-gate.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
@@ -224,6 +225,10 @@ const volumeConfigs = {
       return { translationsMeta, languagesMeta };
     },
     buildOptions: ({ params, startup = {}, arrangements = {}, root = null }) => {
+      // The parameters that together name one exact seat in THIS volume — the
+      // proofreading bypass's key list (O-122). Named here because the engine
+      // core may not speak a volume's level names (O-43).
+      const POSITION_KEYS = ['book', 'chapter', 'verse'];
       const level = params.get('level') || startup.top_navigation_level || 'verse';
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
@@ -276,6 +281,15 @@ const volumeConfigs = {
         // naming it here would pin the reader to an edition that does not
         // exist. Language default first, then the single offered edition.
         translation: (() => {
+          // NAMED OUTRIGHT ON A PROOFREAD DEEP LINK (O-122). The driver used
+          // to boot into the volume's default tongue and then commit the
+          // edition through the dimension bridge, waiting on the shelf to
+          // stock — seconds per verse, forty times an hour. Under the LAN
+          // override the address may simply say which edition it wants.
+          // Gated by `proofreadDeepLink`, so a public URL naming an edition
+          // is ignored exactly as before.
+          const named = params.get('edition');
+          if (named && proofreadDeepLink(POSITION_KEYS)) return named;
           const editions = root?.display_config?.editions || {};
           const language = root?.display_config?.languages?.default;
           return editions.default?.[language]
@@ -283,7 +297,10 @@ const volumeConfigs = {
             || null;
         })(),
         cousinMode,
-        locale: params.get('lang') || null
+        locale: params.get('lang') || null,
+        // The host skips the boot funnel on this, and asks no volume
+        // vocabulary to learn that it should (O-122).
+        deepLinked: proofreadDeepLink(POSITION_KEYS)
       };
     },
     formatLabel: ({ level, locale, namesMap }) => makeBibleLabelFormatter({ level, locale, namesMap }),

@@ -218,6 +218,33 @@ function flush(reason) {
   if (window.__wheelRenderStats) window.__wheelRenderStats = { worst: 0, over: 0, n: 0 };
 }
 
+// THE WRAP LOG, ON THE GLASS (2026-08-30). The SEND button posts to
+// /probe-drop, which the LAN dev server does not implement — that comment is
+// a leftover and the reports go nowhere. Howell reads this instrument by
+// PHOTOGRAPHING it, so the diagnosis is put where the camera already points.
+// One line per verse layout: the size chosen, how many lines it produced, the
+// row width it wrapped against, and the measured width of one fixed Greek
+// string at that size. Two renders that disagree about the last number at the
+// same size disagree about the FACE; -1 there means no DOM measurer at all.
+function mountWrapLog() {
+  window.__wheelWrapLog = [];
+  const el = document.createElement('div');
+  el.id = 'probe-wrap-log';
+  el.style.cssText = [
+    'position:fixed', 'left:2px', 'bottom:2px', 'z-index:9999',
+    'font:11px/1.3 monospace', 'color:#0f0', 'background:rgba(0,0,0,0.78)',
+    'padding:4px 6px', 'border-radius:6px', 'max-width:99vw',
+    'white-space:pre', 'pointer-events:none'
+  ].join(';');
+  document.body.appendChild(el);
+  setInterval(() => {
+    const rows = window.__wheelWrapLog || [];
+    el.textContent = rows.length
+      ? rows.map((r, i) => `${i} ${r.px}px n${r.n} row${r.avail} w${r.sentinel} ${r.first}`).join('\n')
+      : 'no verse layout yet';
+  }, 400);
+}
+
 function mountSendButton() {
   const el = document.createElement('div');
   el.id = 'probe-send';
@@ -297,6 +324,7 @@ export function mountProbe() {
   });
   window.addEventListener('pagehide', () => flush('pagehide'));
 
-  if (document.body) mountSendButton();
-  else window.addEventListener('DOMContentLoaded', mountSendButton);
+  const mountUi = () => { mountSendButton(); mountWrapLog(); };
+  if (document.body) mountUi();
+  else window.addEventListener('DOMContentLoaded', mountUi);
 }

@@ -38,6 +38,28 @@ const FOOTER_LINE = 1.25;
 /** The lens at a smaller register: font (and so pitch) scaled, geometry kept. */
 const scaledMarginSpec = scale => ({ ...MARGIN_SPEC, FONT_RATIO: MARGIN_SPEC.FONT_RATIO * scale });
 
+/** THE SMALLEST TYPE THIS APPARATUS IS EVER SET IN, as a fraction of the short
+ *  side — 14.4px on Howell's phone. Ruled 2026-08-29, reading the floor cases
+ *  on the glass: "10.8 px is too small. I'd like to make 14.4 the floor. We'll
+ *  have to come up with another solution for the clipped tails."
+ *
+ *  IT IS AN ABSOLUTE SIZE, NOT A MULTIPLE OF THE BASE, and that is the whole
+ *  point of the constant. The floor used to be six tenths of whatever the base
+ *  happened to be, so any future change to the base moved the smallest type
+ *  the reader ever sees WITHOUT anyone deciding to. Stated as its own ratio,
+ *  the base can be lowered to cut the split count — which is the dial that
+ *  actually governs splitting — and the legibility floor stays where Howell
+ *  put it.
+ *
+ *  MEASURED, and the two dials are very nearly independent: across all 15,580
+ *  entries at 360x740, the BASE governs how many notes split (2,230 at 18px,
+ *  844 at 14.4px) while the FLOOR governs how many lose a tail (62 at 10.8px,
+ *  182 at 14.4px) — the clipped count barely moves when the base does. Raising
+ *  the floor therefore buys legibility at a price paid in tails, and the price
+ *  is the same whatever the base. Howell has accepted that trade and named the
+ *  tails as their own problem. */
+const NOTE_FLOOR_RATIO = 0.04;
+
 /** The note's face, stated once — the measurer and the stylesheet must agree. */
 const NOTE_FACE = "'EB Garamond', Georgia, serif";
 
@@ -123,14 +145,61 @@ export function settleRow(text, area, fits = makeFits(area)) {
  * the node centred or as a partial eclipse, so it MUST agree with what the
  * renderer will do: it asks the same flow rather than estimating.
  */
+/** The registers a note may be set at, largest first, down to the floor. */
+function noteLadder() {
+  const min = NOTE_FLOOR_RATIO / MARGIN_SPEC.FONT_RATIO;
+  const out = [];
+  for (let s = 1; s >= min - 1e-9; s -= 0.1) out.push(Math.max(s, min));
+  return out;
+}
+
+/** The lens with the footer's rows already taken out of it. */
+function noteAreaOf(area, manuscripts) {
+  const reserved = footerRows(manuscripts, area);
+  return { ...area, lineTable: area.lineTable.slice(0, Math.max(1, area.lineTable.length - reserved)) };
+}
+
+/**
+ * THE LARGEST REGISTER AT WHICH THE WHOLE NOTE STANDS ON ONE SCREEN, or null
+ * if even the floor cannot hold it (O-117).
+ *
+ * SHRINKING NOW COMES BEFORE SPLITTING, WHICH IS THE ORDER EVERYONE ASSUMED IT
+ * ALREADY HAD. Howell, 2026-08-29: "I always assumed that the program would
+ * try shrinking a note's font before splitting the note." It did not — the
+ * note was measured at the base size, split if it overflowed, and only THEN
+ * was a still-overflowing half shrunk, as damage control on the tail (O-113).
+ * So a note that would have stood whole one step down was cut in two without
+ * ever being offered the smaller register.
+ *
+ * Measured over all 15,580 entries at 360x740: trying the ladder first seats
+ * 1,386 notes that split today, taking the volume's eclipsing verses from
+ * 3,558 to 2,348. Only those 1,386 notes change size at all — 8.9% — and
+ * none is set below the floor. Every note that fits at the base still looks
+ * exactly as it did.
+ *
+ * The ring and the panel MUST agree about this, so both ask this one function
+ * rather than each carrying its own idea of what fits.
+ */
+function seatWhole(body, manuscripts, width, height, base) {
+  const sizable = Number.isFinite(width) && Number.isFinite(height);
+  for (const scale of (sizable ? noteLadder() : [1])) {
+    const area = scale === 1 ? base : computeMarginArea(width, height, scaledMarginSpec(scale));
+    const noteArea = noteAreaOf(area, manuscripts);
+    const fits = makeFits(area);
+    if (!flow(body, noteArea, 0, fits).remaining) return { area, noteArea, fits };
+  }
+  return null;
+}
+
 export function marginPartCount(entries, manuscripts, { width, height, area = null } = {}) {
   const a = area || computeMarginArea(width, height);
   if (!a.lineTable.length) return 1;
   const body = bodyOf(entries);
   if (!body) return 1;
-  const rows = a.lineTable.length - footerRows(manuscripts, a);
-  if (rows <= 0) return 2;
-  return flow(body, { ...a, lineTable: a.lineTable.slice(0, rows) }, 0, makeFits(a)).remaining ? 2 : 1;
+  if (a.lineTable.length - footerRows(manuscripts, a) <= 0) return 2;
+  // One screen if ANY register on the ladder holds the whole note (O-117),
+  // not merely if the base size does.
+  return seatWhole(body, manuscripts, width, height, a) ? 1 : 2;
 }
 
 function bodyOf(entries) {
@@ -168,30 +237,37 @@ export function renderMarginNote(entries, {
   // Reserved from the WHOLE note's manuscripts, deliberately: the two halves
   // must reserve the same rows or the note would reflow between them, and a
   // line of apparatus that moves when you toggle is worse than a spare row.
-  const reserved = footerRows(manuscripts, a);
-  const noteRows = Math.max(1, a.lineTable.length - reserved);
-  const noteArea = { ...a, lineTable: a.lineTable.slice(0, noteRows) };
+  const noteArea = noteAreaOf(a, manuscripts);
 
   const fits = makeFits(a);
-  const first = whole ? flow(whole, noteArea, 0, fits) : { lines: [], remaining: '' };
+  // THE LADDER IS TRIED WHOLE BEFORE THE NOTE IS EVER CUT (O-117). Only when
+  // no register down to the floor can hold it does the eclipse get involved.
+  const seated = whole ? seatWhole(whole, manuscripts, width, height, a) : null;
+  let effArea = seated ? seated.area : a;
+  let effNoteArea = seated ? seated.noteArea : noteArea;
+  let effFits = seated ? seated.fits : fits;
   let body = whole;
-  if (first.remaining) {
+  if (whole && !seated) {
     const [x, y] = splitVerse(whole);
     body = part === 1 ? y : x;
   }
-  let laid = whole ? flow(body, noteArea, settleRow(body, noteArea, fits), fits) : { lines: [], remaining: '' };
+  let laid = whole
+    ? flow(body, effNoteArea, settleRow(body, effNoteArea, effFits), effFits)
+    : { lines: [], remaining: '' };
   // A HALF THAT STILL OVERFLOWS THE LENS SHRINKS RATHER THAN LOSES ITS TAIL
   // (O-113). The two-screen cap is real, and a page-length note's half can
   // exceed the lens's rows — Genesis 25:3's Raguel clause was silently
   // absent from BOTH screens, standing in the data the whole time. The
-  // lens is recomputed at a smaller register until the half fits, floored
-  // at six tenths; the apparatus is already the page's small voice, and a
-  // smaller register beats a silent hole in it.
-  let effArea = a, effNoteArea = noteArea, effFits = fits;
-  for (let scale = 0.9; laid.remaining && scale >= 0.6; scale -= 0.1) {
+  // lens is recomputed at a smaller register until the half fits, floored at
+  // the legibility floor; the apparatus is already the page's small voice, and
+  // a smaller register beats a silent hole in it — down to the point where the
+  // smaller register is itself the injury, which is where Howell set the floor
+  // (NOTE_FLOOR_RATIO). Below it the tail is a separate problem with a
+  // separate answer, not something to be solved by shrinking further.
+  const minScale = NOTE_FLOOR_RATIO / MARGIN_SPEC.FONT_RATIO;
+  for (let scale = 0.9; laid.remaining && scale >= minScale - 1e-9; scale -= 0.1) {
     effArea = computeMarginArea(width, height, scaledMarginSpec(scale));
-    const effReserved = footerRows(manuscripts, effArea);
-    effNoteArea = { ...effArea, lineTable: effArea.lineTable.slice(0, Math.max(1, effArea.lineTable.length - effReserved)) };
+    effNoteArea = noteAreaOf(effArea, manuscripts);
     effFits = makeFits(effArea);
     laid = flow(body, effNoteArea, settleRow(body, effNoteArea, effFits), effFits);
   }

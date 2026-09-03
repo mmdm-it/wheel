@@ -15,6 +15,14 @@ import {
 } from './focus-ring-geometry.js';
 import { computeDSUA, CPUA_SPEC } from './usable-areas.js';
 
+/**
+ * Where the copyright notice's INK ends when nobody has measured it (node,
+ * tests): 11px type, two lines on a phone, 6px padding above them. Only ever
+ * a fallback — the live app passes the element's measured ink edge, its box
+ * bottom less its own bottom padding.
+ */
+const NOTICE_FALLBACK_PX  = 32;
+
 /** Skip lines whose available width is narrower than this fraction of SSd */
 const MIN_WIDTH_RATIO     = 0.10;
 
@@ -60,7 +68,7 @@ const CHAR_WIDTH_RATIO    = 0.03 * 0.60;  // 0.018 × SSd
  *                       availableWidth: number, maxChars: number }>
  * }}
  */
-export function computeDetailSectorBounds(width, height, logoBounds = null) {
+export function computeDetailSectorBounds(width, height, logoBounds = null, copyrightBottom = null) {
   const viewport     = getViewportInfo(width, height);
   const arcParams    = getArcParameters(viewport);
   const magnifierPos = getMagnifierPosition(viewport);
@@ -77,6 +85,32 @@ export function computeDetailSectorBounds(width, height, logoBounds = null) {
 
   const linePitch    = SSd * LINE_PITCH_RATIO;
   const avgCharWidth = SSd * CHAR_WIDTH_RATIO;
+
+  // THE BLOCK SITS A ROW HIGHER THAN IT MEASURES ITSELF, AND THE CEILING IS
+  // MEASURED (O-115, Howell 2026-08-29: "move the entire text block up by one
+  // row... one row closer to the copyright disclaimer", then "a little higher
+  // still"). Three numbers where there was one:
+  //
+  //   topY      — the canonical fence. The box the shared type size is FITTED
+  //               against, so a raise never silently buys bigger glyphs: with
+  //               the auto-fit following the move, the row saved NO splits at
+  //               all across all 27,305 verses and added them on two
+  //               viewports. Pinned, the same move retires about a fifth.
+  //   ceilingY  — the highest y text may occupy: the copyright notice's own
+  //               measured bottom edge. The first pass raised by one LINE-
+  //               TABLE pitch, which is the tier-6 grid (0.042·SSd) and less
+  //               than half a row of the reader's actual type — Howell saw it
+  //               immediately ("less than a full row").
+  //   the raise — one row OF THE READER'S OWN TEXT, applied in line-layout
+  //               where the verse size is known, clamped by the ceiling.
+  //
+  // The notice is MEASURED rather than estimated because this stylesheet has
+  // already been bitten once: its box moved some ninety pixels in DuckDuckGo
+  // against Chrome on the same device, and overlapped the leaf text. A guess
+  // at furniture that moves is a bug waiting for another browser.
+  const noticeBottom = Number.isFinite(copyrightBottom)
+    ? copyrightBottom
+    : NOTICE_FALLBACK_PX;   // no DOM (tests, node): the phone's two-line box
 
   const lineTable = [];
   let y = dsua.top + linePitch; // first baseline one pitch inside the fence
@@ -107,6 +141,7 @@ export function computeDetailSectorBounds(width, height, logoBounds = null) {
 
   return {
     topY: dsua.top,
+    ceilingY: noticeBottom,
     bottomY: dsua.bottom,
     leftBound: dsua.left,
     rightBound: dsua.right,
