@@ -339,7 +339,11 @@ export function buildBiblePyramid({
           // else — it is still magnified, so it still reads as featured.
           const keepsFullName = item.prominence === 1
             && String(item.name || '').length <= FAVORITE_FULL_NAME_MAX;
-          return keepsFullName ? item : { ...item, name: short };
+          // `abbreviated` tells the label formatter to leave this name be: it
+          // re-localizes every book by id and had been putting the FULL name
+          // back over the short one (Howell, from the phone, 2026-09-05:
+          // "in the Child Pyramid they still need to be abbreviated").
+          return keepsFullName ? item : { ...item, name: short, abbreviated: true };
         });
     }
     if (mode === 'book') {

@@ -563,6 +563,13 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     if (itemLevel === 'bibleRoot') return toDisplayCase(namesMap?.title || item.name || item.id || '');
     if (itemLevel === 'chapter') return formatChapter({ item, context });
     if (itemLevel === 'verse') return formatVerse({ item, context });
+    // THE PYRAMID'S SHORT FORMS ARE WORN AS THE KIT WRITES THEM (W-256,
+    // Howell 2026-09-05). The child pyramid renames a book to its
+    // abbreviation and flags it; re-localizing it by id here put the full
+    // name straight back, so the sky read ΣΟΦΙΑ ΣΑΛΩΜΩΝΟΣ where it should
+    // read Σοφ Σαλ. The abbreviation is not passed through toDisplayCase:
+    // Γέν, not ΓΕΝ — the kit's own form, on the same ruling that caps the ring.
+    if (item?.abbreviated && item.name) return item.name;
     const localizedBook = bookNames?.[item.id];
     return toDisplayCase(localizedBook || item.name || item.id || '');
   };
