@@ -107,11 +107,16 @@ describe('casing follows the script, not the habit', () => {
     assert.equal(f({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'CAPITULUM XVII');
   });
 
-  it('every other script keeps the form its own tradition writes', () => {
+  it('Greek shouts as Swete sets his heads; Hebrew and Cyrillic keep their own form', () => {
+    // GREEK SHOUTS SINCE 2026-09-05 (Howell, with the scan open: Swete's page
+    // heads are all caps; the ring and the parent button follow). This
+    // supersedes the 2026-07-22 carve-out below, which left Greek mixed
+    // because a bare toUpperCase kept the accent (ΚΕΦΆΛΑΙΟΝ); the marks are
+    // stripped first, so the capitals are the ones Greek printers set.
     const g = fmt('greek', { chapter: 'Κεφάλαιον' }, { GENE: 'Γένεσις' });
-    assert.equal(g({ item: { id: 'GENE', level: 'book', name: 'x' }, context: 'magnifier' }), 'Γένεσις');
-    assert.equal(g({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'Κεφάλαιον ιζʹ',
-      'not ΚΕΦΆΛΑΙΟΝ — Greek uppercase drops the accent this would keep');
+    assert.equal(g({ item: { id: 'GENE', level: 'book', name: 'x' }, context: 'magnifier' }), 'ΓΕΝΕΣΙΣ');
+    assert.equal(g({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'ΚΕΦΑΛΑΙΟΝ ιζʹ',
+      'ΚΕΦΑΛΑΙΟΝ, never ΚΕΦΆΛΑΙΟΝ — the accent comes off before the letters go up');
 
     const h = fmt('hebrew', { chapter: 'פרק' }, { GENE: 'בראשית' });
     assert.equal(h({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'פרק י״ז');

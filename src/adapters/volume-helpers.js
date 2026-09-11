@@ -58,18 +58,32 @@ export function toTraditionNumeral(n, locale) {
   return String(n);
 }
 
-// Uppercase Latin-script labels (as the rings always have), but leave every
-// other script in its given form (Howell 2026-07-22): uppercasing strips
-// polytonic Greek's breathings and accents, is meaningless for Hebrew, and
-// can mangle scripts with their own casing. Invert the test — uppercase ONLY
-// when a label is pure Latin (Basic + Latin-1 + Extended-A/B + Additional +
-// combining marks, which covers Vietnamese, Turkish, Czech, Welsh …).
-// NOTE: src/view/secondary-strata-view.js carries the same rule locally,
-// where the view layer cannot reach across into the adapters.
+// THE RING AND THE PARENT BUTTON SHOUT, IN LATIN AND NOW IN GREEK.
+//
+// Latin-script labels are uppercased as the rings always have been. Greek
+// labels are uppercased THE WAY SWETE'S RUNNING HEADS PRINT THEM (Howell,
+// 2026-09-05, with the scan open: "Look at Swete's page headers of the book
+// names. They are all caps. We should do the same in the Focus Ring and
+// Parent Button"): ΓΕΝΕΣΙΣ, ΙΗΣΟΥΣ ΝΑΥΗ — capitals without breathings or
+// accents, which is how Greek capitals have been set since the codices. That
+// SUPERSEDES the 2026-07-22 carve-out that left Greek in mixed case because
+// a bare toUpperCase() mangles polytonic marks; the marks are stripped
+// first (NFD, combining marks removed, NFC), so nothing is mangled. The
+// numeral sign in "Αʹ Σαμουήλ" is not a combining mark and survives.
+// Hebrew has no case and is left as written; so is every other script.
+// The CHILD PYRAMID does not pass through here — it wears the naming kit's
+// abbreviations (Γέν, Ἔξ) as the kit writes them, on the same ruling.
+// NOTE: src/view/secondary-strata-view.js carries the Latin rule locally,
+// where the view layer cannot reach across into the adapters; the strata
+// ring's edition names are O-97's business and are not changed here.
 const LATIN_SCRIPT_ONLY = /^[ -ɏ̀-ͯḀ-ỿ]+$/;
+const HAS_GREEK = /[\u0370-\u03FF\u1F00-\u1FFF]/;
+const greekCaps = str => str.normalize('NFD').replace(/\p{M}/gu, '').normalize('NFC').toUpperCase();
 export const toDisplayCase = s => {
   const str = String(s ?? '');
-  return LATIN_SCRIPT_ONLY.test(str) ? str.toUpperCase() : str;
+  if (LATIN_SCRIPT_ONLY.test(str)) return str.toUpperCase();
+  if (HAS_GREEK.test(str)) return greekCaps(str);
+  return str;
 };
 
 // Resolve the manufacturer object from a parentId containing market__country

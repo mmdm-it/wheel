@@ -373,7 +373,7 @@ describe('the shelf follows the reader — a live names table', () => {
     assert.equal(chapter3(), 'CAPITULUM III', 'Latin: Roman numerals, and Latin shouts');
     namesMap.locale = 'greek';
     namesMap.vocabulary = { chapter: 'Κεφάλαιον' };
-    assert.equal(chapter3(), 'Κεφάλαιον γʹ', 'Greek: Greek numerals');
+    assert.equal(chapter3(), 'ΚΕΦΑΛΑΙΟΝ γʹ', 'Greek: Greek numerals, and Greek shouts like Swete\'s heads (2026-09-05)');
     namesMap.locale = 'russian';
     namesMap.vocabulary = { chapter: 'Глава' };
     assert.equal(chapter3(), 'Глава 3', 'Russian: Arabic numerals');

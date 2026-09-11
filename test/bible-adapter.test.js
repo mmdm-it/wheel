@@ -212,7 +212,8 @@ describe('reading on through the volume', () => {
     const greek = inVerseMode({ locale: 'greek', books: { ALPH: 'Γένεσις' } });
     const gChain = greek.layoutBindings.getBibleVerseChain('ALPH_1_1');
     const gPick = id => gChain.items.find(v => v && v.id === id);
-    assert.equal(greek.getParentLabel(gPick('ALPH_2_1')), 'Γένεσις βʹ',
+    // ΓΕΝΕΣΙΣ, not Γένεσις: Greek book names shout like Swete's running heads (Howell 2026-09-05)
+    assert.equal(greek.getParentLabel(gPick('ALPH_2_1')), 'ΓΕΝΕΣΙΣ βʹ',
       'and Greek is left in its own case — uppercasing strips its accents');
 
     const hebrew = inVerseMode({ locale: 'hebrew', books: { ALPH: 'בראשית' } });
