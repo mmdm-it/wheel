@@ -19,12 +19,15 @@ const MAG_LABEL_SPAN_PULL = 0.7;
 // THE PRIMARY'S LABEL MANNERS, for a ring that asks for them (O-128, Howell
 // 2026-09-14: the basement's bookmarks "should react to passing through the
 // Magnifier in the same way that the name nodes do in the Primary
-// Stratum Focus Ring"): a name sits BESIDE its node, end-anchored, a little
-// inward; passing the lens it swells on a bell — the primary's own curve,
+// Stratum Focus Ring"): a name sits BESIDE its node — left-aligned, starting
+// just past the node on its outward side (Howell, the same day: "switch the
+// alignment of the unselected node labels in the basement Focus Ring from
+// Right to Left. The Magnifier label should stay centered"); passing the
+// lens it swells on a bell — the primary's own curve,
 // peak 2.0, sigma 0.3 of a node spacing (focus-ring-view.js) — centred on
 // the node and scaled with it; settled in the lens it wears the magnified
 // label, centred, at the lens's own size.
-const BESIDE_OFFSET = -1.3;          // node radii, along the node's angle (inward)
+const BESIDE_OFFSET = 1.3;           // node radii, along the node's angle (outward): the name starts here and runs on
 const LENS_SCALE_PEAK = 2.0;
 const LENS_SCALE_SIGMA = 0.3;        // × node spacing
 
@@ -142,11 +145,11 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     const raw = typeof labelFor === 'function' ? labelFor(items[node.index], false) : items[node.index];
     let label;
     if (labelsBeside && magScale <= 1.01) {
-      // Beside the node, end-anchored, a little inward — the primary's names.
+      // Beside the node, left-aligned: the name starts just past the node and runs on.
       const lx = node.x + Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
       const ly = node.y + Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
       label = svgEl('text', {
-        x: lx.toFixed(1), y: ly.toFixed(1), 'text-anchor': 'end', 'dominant-baseline': 'middle',
+        x: lx.toFixed(1), y: ly.toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle',
         class: 'secondary-strata-label is-beside',
         transform: `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`
       });
