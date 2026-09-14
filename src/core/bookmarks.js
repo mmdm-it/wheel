@@ -56,13 +56,20 @@ export function isBookmarked(volume, id, edition = null) {
   return bookmarksOf(volume).some(b => same(b, id, edition));
 }
 
-/** Keep a leaf in an edition. Idempotent within the edition: keeping a kept one writes nothing. */
-export function keep(volume, { id, label = '', edition = null } = {}) {
+/**
+ * Keep a leaf in an edition. Idempotent within the edition: keeping a kept
+ * one writes nothing. `at` is the seat's PLACE for ordering (O-128, Howell
+ * 2026-09-14: sorted by the volume's levels from the widest down, then by
+ * edition) — { rank: [...numbers, widest level first], tail, edition } as
+ * the volume's adapter ranks them, recorded at the moment of keeping; a
+ * bookmark without one sorts last.
+ */
+export function keep(volume, { id, label = '', edition = null, at = null } = {}) {
   if (!volume || !id) return false;
   const all = readAll();
   const list = clean(all[volume]);
   if (list.some(b => same(b, id, edition))) return true;
-  list.push({ id, label: String(label ?? ''), edition: edition ?? null, kept: new Date().toISOString() });
+  list.push({ id, label: String(label ?? ''), edition: edition ?? null, at: at && typeof at === 'object' ? at : null, kept: new Date().toISOString() });
   all[volume] = list;
   writeAll(all);
   return true;
@@ -78,6 +85,35 @@ export function drop(volume, id, edition = null) {
   if (next.length) all[volume] = next; else delete all[volume];
   writeAll(all);
   return true;
+}
+
+/**
+ * The ring's order: the volume's levels from the widest down, then the
+ * edition — so every bookmark of one leaf stands together, one seat per
+ * tongue. The widest rank is the shard the leaf lives in (leaf-and-shard,
+ * W-129), which every edition shares, so an edition's own placing of a unit
+ * cannot scatter its bookmarks from another's: one order for the whole
+ * basement, the volume's declared order of shards. The narrower ranks are
+ * the numbers the seat was kept under; a lettered leaf (62a) follows its
+ * number by its tail. Bookmarks kept before places were recorded come last,
+ * in the order kept.
+ */
+export function inOrder(list) {
+  const num = v => (Number.isFinite(v) ? v : Number.POSITIVE_INFINITY);
+  const ranks = at => (Array.isArray(at?.rank) ? at.rank : []);
+  return [...list].sort((a, b) => {
+    if (!a.at && !b.at) return String(a.kept || '').localeCompare(String(b.kept || ''));
+    if (!a.at) return 1;
+    if (!b.at) return -1;
+    const ra = ranks(a.at), rb = ranks(b.at);
+    for (let i = 0; i < Math.max(ra.length, rb.length); i += 1) {
+      const d = num(ra[i]) - num(rb[i]);
+      if (d) return d;
+    }
+    return String(a.at.tail || '').localeCompare(String(b.at.tail || ''))
+      || (num(a.at.edition) - num(b.at.edition))
+      || String(a.edition || '').localeCompare(String(b.edition || ''));
+  });
 }
 
 /** Forget one volume's bookmarks, or every volume's. Diagnostics and a future "start over". */

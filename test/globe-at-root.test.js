@@ -71,4 +71,15 @@ describe('the globe is at every level (O-129) — the front door of O-96 is reti
     assert.equal(adopted, null);
     assert.equal(h.seatAtLeaf('a1', null), false, 'no app, no seating');
   });
+
+  it('RANKS A SEAT for the basement\'s order: the leaf\'s shard, the chapter, the verse, the edition (O-128)', () => {
+    const h = handlers('verse');
+    let landed = null;
+    h.seatAtLeaf('b1', { setPrimaryItems: (items, index) => { landed = items[index]; }, setParentButtons() {} });
+    const at = h.seatOrder(landed);
+    assert.deepEqual(at.rank, [1, 1, 1], 'h-2 is the volume\'s second shard; its first chapter, first verse');
+    assert.equal(at.tail, '');
+    assert.equal(at.edition, 0, 'HEB is the first edition');
+    assert.equal(h.seatOrder(null), null);
+  });
 });

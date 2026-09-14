@@ -10,7 +10,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
-import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked } from './core/bookmarks.js';
+import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
@@ -252,6 +252,7 @@ let basementArrival = null;   // { key, id, edition, label } — the verse the r
 let basementLens = null;      // the seat KEY last settled under the lens this visit, or null
 let basementLoose = [];       // seat keys shown hollow this visit: the arrival, and any dropped
 const basementLabels = {};    // labels remembered for loose seats, so re-keeping keeps the name
+const basementPlaces = {};    // and their places (seatOrder), so re-keeping keeps the order
 // A SEAT ON THE BASEMENT'S RING IS A LEAF IN AN EDITION (Howell, 2026-09-14:
 // three bookmarks for Genesis 1:1, one per tongue, and never two in one).
 // Its key joins the two; the ring's items are keys.
@@ -262,7 +263,9 @@ const currentEdition = () => dimensionBridge.getSelection()?.translation ?? null
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true,
   items: () => {
-    const keys = bookmarksOf(currentVolumeId).map(b => seatKey(b.id, b.edition));
+    // Kept seats in the volume's order — book, chapter, verse, edition — and
+    // the loose ones (the arrival, anything dropped this visit) after them.
+    const keys = inOrder(bookmarksOf(currentVolumeId)).map(b => seatKey(b.id, b.edition));
     for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
     return keys;
   },
@@ -296,8 +299,11 @@ function enterBasement() {
   basementLens = null; basementLoose = [];
   if (cur?.id && detailSectorVisible) {
     const id = leafOf(cur), edition = currentEdition();
-    basementArrival = { key: seatKey(id, edition), id, edition, label: arrivalLabel(cur) };
+    let at = null;
+    try { at = seatOrder(cur); } catch (_) { at = null; }
+    basementArrival = { key: seatKey(id, edition), id, edition, label: arrivalLabel(cur), at };
     basementLabels[basementArrival.key] = basementArrival.label;
+    basementPlaces[basementArrival.key] = at;
     basementLoose.push(basementArrival.key);
   } else basementArrival = null;
 }
@@ -352,10 +358,11 @@ function toggleKeep(keyOrId) {
   const { id, edition } = seatParts(key);
   if (isBookmarked(vol, id, edition)) {
     basementLabels[key] = BASEMENT.label(key);
+    basementPlaces[key] = keptSeat(key)?.at ?? basementPlaces[key] ?? null;
     dropBookmark(vol, id, edition);
     if (!basementLoose.includes(key)) basementLoose.push(key);
   } else {
-    keepBookmark(vol, { id, label: BASEMENT.label(key), edition });
+    keepBookmark(vol, { id, label: BASEMENT.label(key), edition, at: basementPlaces[key] ?? null });
   }
   return true;
 }
@@ -1429,6 +1436,7 @@ function resetStrata() {
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
+let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
 let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
@@ -1900,7 +1908,7 @@ function holdKeep() {
   cancelAnimationFrame(hold.raf);
   hold = null;
   hideHint();
-  keepBookmark(currentVolumeId, { id, label: BASEMENT.label(key), edition });
+  keepBookmark(currentVolumeId, { id, label: BASEMENT.label(key), edition, at: basementPlaces[key] ?? basementArrival?.at ?? null });
   basementLens = key;
   renderStack();   // the seat is drawn kept: filled, for good
 }
@@ -3488,6 +3496,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
+  seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
   // The chooser offers the editions that hold where the reader stands (H-29).
   editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;
   // The corner emblem belongs to the division the reader is in (H-31). A

@@ -1,7 +1,7 @@
 // BOOKMARKS (O-126): the basement's stock, on the device and nowhere else.
 import assert from 'node:assert/strict';
 import { describe, it, beforeEach } from 'node:test';
-import { bookmarksOf, keep, drop, isBookmarked, forgetBookmarks } from '../src/core/bookmarks.js';
+import { bookmarksOf, keep, drop, isBookmarked, forgetBookmarks, inOrder } from '../src/core/bookmarks.js';
 
 // A localStorage that behaves, and one that refuses — private browsing, a
 // full quota — because the basement must degrade to "no bookmarks", never to
@@ -52,6 +52,21 @@ describe('bookmarks (O-126)', () => {
     assert.equal(drop('bible', 'u1', '1471ita'), true, 'the Italian one goes');
     assert.deepEqual(bookmarksOf('bible').map(b => b.edition), ['250BCgrc', '1899eng'], 'the others stay');
     assert.equal(drop('bible', 'u1'), false, 'no edition names no bookmark here');
+  });
+
+  it('THE RING\'S ORDER: book, chapter, verse, then edition — every Genesis 1:1 together (Howell, 2026-09-14)', () => {
+    const at = (book, chapter, verse, edition, tail = '') => ({ rank: [book, chapter, verse], tail, edition });
+    keep('bible', { id: 'ruth', label: 'RUTH I:1', edition: 'lat', at: at(7, 1, 1, 3) });
+    keep('bible', { id: 'gen11', label: 'ΓΕΝΕΣΙΣ α′:1', edition: 'grc', at: at(0, 1, 1, 1) });
+    keep('bible', { id: 'old', label: 'kept before places were recorded', edition: 'lat' });
+    keep('bible', { id: 'gen11', label: 'GENESIS 1:1', edition: 'eng', at: at(0, 1, 1, 5) });
+    keep('bible', { id: 'gen13', label: 'GENESIS I:3', edition: 'lat', at: at(0, 1, 3, 3) });
+    keep('bible', { id: 'gen11', label: 'GENESI I:1', edition: 'ita', at: at(0, 1, 1, 4) });
+    keep('bible', { id: 'gen2a', label: 'GENESIS 1:2a', edition: 'eng', at: at(0, 1, 2, 5, 'a') });
+    keep('bible', { id: 'gen2', label: 'GENESIS 1:2', edition: 'eng', at: at(0, 1, 2, 5) });
+    assert.deepEqual(inOrder(bookmarksOf('bible')).map(b => b.label),
+      ['ΓΕΝΕΣΙΣ α′:1', 'GENESI I:1', 'GENESIS 1:1', 'GENESIS 1:2', 'GENESIS 1:2a', 'GENESIS I:3', 'RUTH I:1', 'kept before places were recorded'],
+      'book, chapter, verse, letter, edition; a placeless bookmark last');
   });
 
   it('keeps each volume\'s bookmarks apart, and forgets them apart', () => {

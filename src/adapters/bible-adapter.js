@@ -1161,6 +1161,35 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // globe two homes, root and the leaf, and this predicate owned the root
     // half; the globe is at every level now, so the host asks nothing here.
     //
+    // WHERE A SEAT STANDS, for the basement's order (O-128): the book ranked
+    // by the shard its leaf lives in — shared by every edition, in the
+    // volume's declared order — then the chapter and verse numbers the seat
+    // was kept under, then the edition's place among the volume's editions.
+    // A lettered verse (62a) carries its letter as the tail; a heading
+    // (head) counts as 0.
+    seatOrder: item => {
+      const volume = manifest?.__wallVolume;
+      if (!volume || !item) return null;
+      const bookId = item.meta?.bookId ?? item.bookKey ?? null;
+      const edition = volume.editionOf?.(bookId) || options?.activeEdition || options?.translation || null;
+      const shelf = volume.booksFor?.(edition) || [];
+      const book = shelf.find(b => b.id === bookId);
+      const shardIds = (volume.shards || volume.units || []).map(sh => sh?.id ?? sh);
+      // The shard's place in the volume; failing that (a volume that declares
+      // no shards), the book's place on its own edition's shelf.
+      let bookRank = book?.shards?.[0] ? shardIds.indexOf(book.shards[0]) : -1;
+      if (bookRank < 0 && book) bookRank = Number.isFinite(book.order) ? book.order : shelf.indexOf(book);
+      const label = String(item.name ?? '');
+      const m = /^(\d+)([a-z]*)$/.exec(label);
+      const editionRank = (volume.editions || []).findIndex(e => (e?.code ?? e) === edition);
+      // The host's store speaks no volume vocabulary (O-43): the place is a
+      // rank per level, widest first — [book, chapter, verse] here.
+      return {
+        rank: [bookRank >= 0 ? bookRank : Number.POSITIVE_INFINITY, Number(item.meta?.chapterLabel) || 0, m ? Number(m[1]) : 0],
+        tail: m ? m[2] : (label === 'head' ? '' : label),
+        edition: editionRank >= 0 ? editionRank : Number.POSITIVE_INFINITY
+      };
+    },
     // SEAT THE PRIMARY AT A LEAF, from anywhere (O-129): the basement's jump
     // to a bookmark when the ring up does not hold it — at root, on a book or
     // a chapter ring. The whole-volume verse chain is built for the committed
