@@ -277,10 +277,17 @@ function arrivalLabel(cur) {
   const verse = text('.focus-ring-magnifier-label:not(.focus-ring-parent-label)') || cur?.name || cur?.label || '';
   return parent && verse ? `${parent}:${verse}` : (verse || parent || cur?.name || cur?.label || cur?.id || '');
 }
+// A BOOKMARK IS THE LEAF. A ring item's id is one edition's word for a seat
+// (`<bookId>_<chapter>_<verse>`, and a book id is per edition — O-92); the
+// utterance the item carries (W-21: it travels ON the item) is the leaf
+// every edition shares. The seat is kept by that, and found again on
+// whatever ring is up by asking each item for its utterance.
+const leafOf = item => item?.meta?.utterances?.[0] ?? item?.id ?? null;
+const itemForLeaf = leaf => (currentApp?.nav?.items || []).find(it => it && (it.meta?.utterances?.includes?.(leaf) || it.id === leaf)) || null;
 function enterBasement() {
   const cur = currentApp?.nav?.getCurrent?.();
   basementLens = null; basementLoose = [];
-  basementArrival = cur?.id && detailSectorVisible ? { id: cur.id, label: arrivalLabel(cur) } : null;
+  basementArrival = cur?.id && detailSectorVisible ? { id: leafOf(cur), label: arrivalLabel(cur) } : null;
   if (basementArrival) { basementLabels[basementArrival.id] = basementArrival.label; basementLoose.push(basementArrival.id); }
 }
 // THE JUMP IS UNSEEN (Howell, 2026-09-14: "trucking out of the basement
@@ -293,7 +300,9 @@ function enterBasement() {
 // journey nobody is meant to see is not that case.)
 function jumpToChosen() {
   const chosen = basementLens, arrived = basementArrival?.id ?? null;
-  if (chosen && chosen !== arrived && typeof currentApp?.glideToItem === 'function') currentApp.glideToItem(chosen, 0);
+  if (!chosen || chosen === arrived || typeof currentApp?.glideToItem !== 'function') return;
+  const item = itemForLeaf(chosen);   // this edition's seat on the shared leaf, if the ring up holds it
+  if (item) currentApp.glideToItem(item.id, 0);
 }
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
