@@ -17,7 +17,24 @@ From that one assumption everything follows:
   elegantly and quickly.** Testaments → books → chapters → verses; markets →
   countries → manufacturers → cylinders → models; the six-millennia
   calendar. Two motions cover all of it — **orbital** (rotate the ring to
-  browse siblings) and **radial** (in and out between levels).
+  browse siblings) and **radial** (in and out between levels). *(Since
+  O-126 a third, along the z-axis, between the strata.)*
+
+**The three verbs (O-127, Howell 2026-09-14).** Each motion has one word,
+and the word is the control's response, not the reader's intent:
+
+- The Focus Ring **rotates** — the orbital motion.
+- The Parent Button and the Child Pyramid's nodes **drill** in and out — the
+  radial motion, depth in the *content*.
+- The Dimension Button's slider **trucks** — the motion along the z-axis
+  between strata, depth in *space*: truck out to the upper floors, truck in
+  through the main floor to the basement. The word is the animation stand's:
+  on Disney's multiplane camera the lens was fixed and the painted planes
+  were cranked toward or away from it, and that move was a truck — not a
+  zoom, which is a lens change, and not a dolly, which is live action's word
+  for the same thing. Our reader is the fixed camera; the strata are the
+  planes. *Ascend* and *descend* are what a truck does between floors;
+  *migration* stays the general word for any move between strata.
 
 ## The instrument is a reader, not an editor
 

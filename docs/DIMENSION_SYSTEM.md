@@ -165,6 +165,10 @@ rename is not ruled and has not been done.
 
 ## The slider and the basement — the Zero Stratum (O-126, Howell 2026-09-14)
 
+**The verb is TRUCK** (O-127): the slider's response is a truck along the
+z-axis — the multiplane camera's word — as the Focus Ring rotates and the
+Parent Button and Child Pyramid drill (docs/PREMISE.md).
+
 **The globe slides.** Howell: *"The dimension button has always been a
 little awkward, tapping to traverse the different strata. I'd rather make it
 a slider."* Its vertical position IS the stratum — home is the text; one
