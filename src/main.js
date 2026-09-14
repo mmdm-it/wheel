@@ -1200,8 +1200,17 @@ function beginGlide(fromFront, toFront) {
     // is leaving, and nothing waits to see it sharp again.
     frameAt(e) {
       glide.e = e;
+      // THE FLOOR IS THIN (Howell, phone check 2026-09-14): the Detail Sector's
+      // colour and text fill the screen, so the primary must dissolve on the
+      // way down — but SHORT, in the last stretch of its flight, "so the user
+      // will feel that she has passed through the floor into the basement";
+      // and back up through it just as quickly at the start of the ascent.
+      const FLOOR = 0.15;
+      const primaryOpacity = toFront < 0 ? 1 - Math.max(0, (e - (1 - FLOOR)) / FLOOR)
+        : fromFront < 0 ? Math.min(1, e / FLOOR)
+        : lerp(from.__primary.opacity, to.__primary.opacity, e);
       setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
-        opacity: fadeAt(from.__primary.opacity, to.__primary.opacity, e)
+        opacity: primaryOpacity
       });
       [...CHOOSERS, BASEMENT].forEach(ch => {
         const g = groups[ch.id]; if (!g) return;
