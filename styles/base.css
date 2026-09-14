@@ -421,6 +421,12 @@ svg :focus-visible {
 /* The strata layer sits above the primary and its detail panel, below the
    dimension button. It is click-through except on its nodes, so taps on
    empty space still fall to the (inert) primary. */
+/* O-126: while a glide touches the basement, and while the basement is
+   front, the layer goes UNDER the primary and its panels — the body is
+   position: fixed and so a stacking context, so -1 sits above its ground
+   and below everything in it. The basement is under the floor, and is seen
+   only as the floor dissolves. */
+#strata-layer.is-below { z-index: -1; }
 #strata-layer {
   position: fixed;
   inset: 0;

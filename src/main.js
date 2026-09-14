@@ -771,7 +771,10 @@ function setPrimaryVisual(scale, blurPx, away = null) {
     g.style.filter = ''; // never on the child group — WebKit drops it
   });
   const app = document.getElementById('app');
-  if (app) { app.style.filter = filter; app.style.opacity = opacity < 0.999 ? String(opacity) : ''; }
+  // Gone means gone to the finger too: a plane at opacity 0 above the basement
+  // must not swallow the taps and drags meant for the basement's ring.
+  const gone = opacity < 0.001;
+  if (app) { app.style.filter = filter; app.style.opacity = opacity < 0.999 ? String(opacity) : ''; app.style.pointerEvents = gone ? 'none' : ''; }
   // EVERY HTML OVERLAY THAT BELONGS TO THE PRIMARY PLANE RECEDES WITH IT.
   // The verse panel was the only one when this was written; the margin and the
   // marks beside the verse arrived later and stayed sharp and full-size while
@@ -797,6 +800,7 @@ function setPrimaryVisual(scale, blurPx, away = null) {
     panel.style.transform = `${slid ? `translate(${offsetX.toFixed(1)}px, ${offsetY.toFixed(1)}px) ` : ''}${scaled ? `scale(${scale})` : ''}`.trim();
     panel.style.filter = filter;
     panel.style.opacity = opacity < 0.999 ? String(opacity) : '';
+    panel.style.pointerEvents = gone ? 'none' : '';
   }
   }
 }
@@ -840,6 +844,15 @@ function applyStratumDepth(g, level) {
 // FORWARD, through the floor; the third slid it off on a diagonal — the
 // broken course.)
 const PRIMARY_GONE = () => ({ scale: EXIT_SCALE, blur: 0, opacity: 0, offsetX: 0, offsetY: 0 });
+// THE BASEMENT IS UNDER THE FLOOR (Howell, phone check 2026-09-14: "the
+// incoming Zero Stratum Focus Ring is visible long before the Detail Sector
+// has begun to fade away (the Zero Stratum Focus Ring can be seen through
+// the 'floor')"). The strata layer sits ABOVE the primary — right for the
+// upper floors, which are lenses over it — so for any glide that touches the
+// basement, and while the basement is front, the layer drops BELOW the
+// primary and its panels (styles: #strata-layer.is-below), and the ring is
+// revealed only as the floor dissolves.
+const strataBelow = below => { if (strataLayer?.classList) strataLayer.classList.toggle('is-below', Boolean(below)); };
 // One render call shape for every plane, the basement included.
 const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
@@ -857,12 +870,14 @@ function renderStack() {
     // settle" — Howell, 2026-09-14); nothing must change at the settle.
     const gone = PRIMARY_GONE();
     setPrimaryVisual(gone.scale, gone.blur, gone);
+    strataBelow(true);
     CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
     const items = BASEMENT.items();
     const g = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
     if (g) setStratumVisual(g, 1, 0, 1);
   } else {
   hideStratum(strataLayer, BASEMENT.id);
+  strataBelow(false);
   applyPrimaryDepth(strataFront); // primary is stack position 0; its level == front
   // Choosers are positions 1..N. Render (front to back so the SVG z-order —
   // last child on top — puts the front stratum highest) any at or ahead of
@@ -1176,6 +1191,7 @@ function beginGlide(fromFront, toFront) {
   // to reach it, so it comes up from the distance the way a chooser does and
   // goes back down the same way; rendered only when one end is the basement.
   if (fromFront < 0 || toFront < 0) {
+    strataBelow(true);   // under the floor for the whole flight, either way
     const items = BASEMENT.items();
     groups[BASEMENT.id] = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
     const far = { scale: STRATA_DEPTHS[STRATA_DEPTHS.length - 1], blur: STRATA_BLURS[STRATA_BLURS.length - 1], opacity: 0, offsetX: 0, offsetY: 0 };
