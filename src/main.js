@@ -828,8 +828,13 @@ function applyStratumDepth(g, level) {
   setStratumVisual(g, STRATA_DEPTHS[level], STRATA_BLURS[level], 1);
 }
 
-// Where the primary goes when the basement is front: up and out of view.
-const PRIMARY_GONE = () => ({ offsetY: -viewport.height * 0.6, opacity: 0 });
+// Where the primary goes when the basement is front (Howell, phone check
+// 2026-09-14: "along the imaginary z-axis, the same as the migration to and
+// from the upper floors"): it recedes as it does for a chooser — to the
+// deepest depth and its blur — and, because from the basement no floor above
+// is visible, on past that to nothing. No slide; the z-axis only.
+const FAR = STRATA_DEPTHS.length - 1;
+const PRIMARY_GONE = () => ({ scale: STRATA_DEPTHS[FAR], blur: STRATA_BLURS[FAR], opacity: 0, offsetX: 0, offsetY: 0 });
 // One render call shape for every plane, the basement included.
 const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
@@ -841,7 +846,7 @@ function renderStack() {
   if (strataFront < 0) {
     // THE BASEMENT IS FRONT (O-126): the primary has left, the choosers are
     // not in play, and the basement's ring stands alone with nothing behind.
-    setPrimaryVisual(1, 0, PRIMARY_GONE());
+    setPrimaryVisual(STRATA_DEPTHS[FAR], STRATA_BLURS[FAR], { offsetY: 0, opacity: 0 });
     CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
     const items = BASEMENT.items();
     const g = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
@@ -1090,11 +1095,11 @@ let strataAnim = null;
 function layerStates(front) {
   const below = front < 0;   // the basement is front: the primary is GONE, not receded (O-126)
   const states = { __primary: below
-    ? { scale: 1, blur: 0, ...PRIMARY_GONE(), offsetX: 0 }
+    ? PRIMARY_GONE()
     : { scale: STRATA_DEPTHS[front], blur: STRATA_BLURS[front], opacity: 1, offsetX: 0, offsetY: 0 } };
-  states[BASEMENT.id] = below
-    ? { scale: 1, blur: 0, opacity: 1, offsetX: 0, offsetY: 0 }
-    : { scale: 1, blur: 0, opacity: 0, offsetX: 0, offsetY: viewport.height * 0.9 };   // waits below the floor
+  // The basement's ring arrives and leaves exactly as a chooser's does — the
+  // diagonal travel transitionStrata gives an entering or leaving plane.
+  states[BASEMENT.id] = { scale: 1, blur: 0, opacity: below ? 1 : 0, offsetX: 0, offsetY: 0 };
   CHOOSERS.forEach((ch, ci) => {
     const level = front - (ci + 1);
     states[ch.id] = level >= 0
@@ -1135,11 +1140,16 @@ function transitionStrata(fromFront, toFront) {
     if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], offsetX: dx, offsetY: dy };
   });
 
-  // THE BASEMENT'S RING (O-126) rises from below the floor on the descent and
-  // sinks back on the way up; it is rendered only when one end is the basement.
+  // THE BASEMENT'S RING (O-126) travels in and out on the same diagonal as a
+  // chooser's — a mirrored ring, so from above-left — while the primary goes
+  // along the z-axis; rendered only when one end of the glide is the basement.
   if (fromFront < 0 || toFront < 0) {
     const items = BASEMENT.items();
     groups[BASEMENT.id] = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
+    const dx = -viewport.width * STRATA_SLIDE_X;
+    const dy = -viewport.height * STRATA_SLIDE_Y;   // mirrored ⇒ from above
+    if (fromFront >= 0 && toFront < 0) from[BASEMENT.id] = { ...to[BASEMENT.id], offsetX: dx, offsetY: dy };
+    if (fromFront < 0 && toFront >= 0) to[BASEMENT.id] = { ...from[BASEMENT.id], offsetX: dx, offsetY: dy };
   } else hideStratum(strataLayer, BASEMENT.id);
 
   // Populate the primary's tangent chain for the DESTINATION now, so the links
@@ -1157,7 +1167,7 @@ function transitionStrata(fromFront, toFront) {
     // never sharpen (Howell 2026-07-21); a front plane holds 0 and recedes
     // sharp as before. Constant radius = the blurred layer renders once, only
     // the scale moves. Blur snaps to its destination on settle (renderStack).
-    setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), from.__primary.blur, {
+    setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
       offsetY: lerp(from.__primary.offsetY || 0, to.__primary.offsetY || 0, e),
       opacity: lerp(from.__primary.opacity, to.__primary.opacity, e)
     });
@@ -1541,39 +1551,16 @@ function openBootFunnel() {
 // the languages; one notch DOWN the basement. Dragging it crosses the notches
 // live — each crossing is the same transition a tap made — and the release
 // snaps to the nearest. A tap (no travel) still cycles inward, so the launch
-// funnel's "two quick taps" stay true. The ghost notches — Howell's three
-// circles — show only while the thumb is held.
+// funnel's "two quick taps" stay true. (Ghost notches at the resting places
+// were drawn in the first cut and struck on his phone check the same day:
+// "We don't need the ghost rings.")
 const NOTCH_RATIO = 1.25;   // notch spacing, in button heights
 let slide = null;           // { startY, startFront, lastY, moved }
 let suppressClick = false;  // a drag's release must not also count as a tap
 const notchPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64) * NOTCH_RATIO;
-const dimensionTrack = (() => {
-  if (!dimensionButton || typeof document === 'undefined') return null;
-  try {
-    const t = document.createElement('div');
-    t.id = 'dimension-track';
-    t.setAttribute('aria-hidden', 'true');
-    dimensionButton.parentNode?.insertBefore?.(t, dimensionButton);
-    return t;
-  } catch (_) { return null; }   // a DOM stub without the trimmings: no track, no harm
-})();
 function placeThumb() {
   if (!dimensionButton || slide) return;   // a held thumb follows the finger, not the state
   try { dimensionButton.style.setProperty('--thumb-y', `${(-strataFront * notchPx()).toFixed(1)}px`); } catch (_) { /* stub DOM */ }
-}
-function showTrack(show) {
-  if (!dimensionTrack?.classList) return;
-  if (show) {
-    while (dimensionTrack.firstChild) dimensionTrack.removeChild(dimensionTrack.firstChild);
-    const step = notchPx();
-    for (let n = minStrataFront(); n <= maxStrataFront(); n += 1) {
-      const c = document.createElement('div');
-      c.className = 'dimension-notch';
-      c.style.setProperty('--notch-y', `${(-n * step).toFixed(1)}px`);
-      dimensionTrack.appendChild(c);
-    }
-  }
-  dimensionTrack.classList.toggle('is-showing', Boolean(show));
 }
 if (dimensionButton) {
   dimensionButton.addEventListener('pointerdown', event => {
@@ -1589,7 +1576,6 @@ if (dimensionButton) {
       if (Math.abs(dy) <= STRATA_TAP_SLOP) return;
       slide.moved = true;
       dimensionButton.classList.add('is-sliding');
-      showTrack(true);
     }
     const step = notchPx();
     const y = Math.max(minStrataFront() * step, Math.min(maxStrataFront() * step, slide.startFront * step + dy));
@@ -1602,7 +1588,6 @@ if (dimensionButton) {
     const { moved, startY, lastY, startFront } = slide;
     slide = null;
     dimensionButton.classList.remove('is-sliding');
-    showTrack(false);
     if (moved) {
       suppressClick = true;
       const step = notchPx();

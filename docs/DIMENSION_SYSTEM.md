@@ -171,9 +171,10 @@ a slider."* Its vertical position IS the stratum — home is the text; one
 notch up the editions (Secondary); two the languages (Tertiary); one notch
 DOWN a new stratum, the **Zero Stratum**. Dragging the globe crosses the
 notches live, each crossing the same transition a tap made; release snaps
-to the nearest notch. Three ghost circles — the ones he drew on the
-screenshot — appear only while the thumb is held. A tap with no travel
-still cycles inward.
+to the nearest notch. A tap with no travel still cycles inward. *(The first
+cut drew three ghost circles at the resting places while the thumb was held
+— the ones on his screenshot; struck on his phone check the same day: "We
+don't need the ghost rings.")*
 
 **The building.** In his words: *"If you think of the app as a building,
 the Zero Stratum is the basement, the Primary Stratum is the Main Floor,
@@ -182,9 +183,14 @@ down from the upper floors and see below as far as the Main Floor, but
 cannot see the basement from any floor above."* So the basement is NOT a
 receded layer: the upper floors are lenses over the reading and keep the
 Primary painted behind the glass, live; the basement has no glass and
-nothing behind it. Going down, the Primary LEAVES — up and out of view —
-and the basement's ring rises from below; coming up reverses it. From the
-main floor and above the basement is not rendered at all.
+nothing behind it. Going down, the Primary LEAVES along the z-axis — it
+recedes exactly as it does for a chooser, and on past the deepest depth to
+nothing — while the basement's ring travels in on the same diagonal a
+chooser's does; coming up reverses it. *(His phone check, 2026-09-14: "The
+migration to and from the basement should be along the imaginary z-axis, the
+same as the migration to and from the upper floors" — the first cut slid the
+Primary up and the ring in from below.)* From the main floor and above the
+basement is not rendered at all.
 
 **What it holds.** *"The basement's Focus Ring will store and hold
 bookmarks, along with any other features we choose to add."* Its ring
