@@ -1109,7 +1109,17 @@ function layerStates(front) {
   return states;
 }
 
-function transitionStrata(fromFront, toFront) {
+// A GLIDE BETWEEN TWO FLOORS, driven by whoever holds it (O-126, Howell's
+// phone check 2026-09-14: "ideally the slider would be interactive. The
+// animation would be tied to the slider's position, and only settle upon
+// release. The user should be able to hold the slider between strata and see
+// the animation pause"). `beginGlide` renders every plane present at either
+// end and returns `frameAt(e)` — e in [0, 1] from the departing floor to the
+// arriving one — and `settle()`. A TAP drives it on a clock (transitionStrata
+// below); the SLIDER drives it from the thumb's position and settles on
+// release. Nothing about the state (strataFront, the funnel, the basement
+// visit) changes inside a glide; that is the caller's, at the settle.
+function beginGlide(fromFront, toFront) {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
   if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
   if (strataHit) strataHit.style.pointerEvents = 'none';
@@ -1139,7 +1149,6 @@ function transitionStrata(fromFront, toFront) {
     if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], offsetX: dx, offsetY: dy };
     if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], offsetX: dx, offsetY: dy };
   });
-
   // THE BASEMENT'S RING (O-126) travels in and out on the same diagonal as a
   // chooser's — a mirrored ring, so from above-left — while the primary goes
   // along the z-axis; rendered only when one end of the glide is the basement.
@@ -1158,27 +1167,44 @@ function transitionStrata(fromFront, toFront) {
     currentApp.setTangentFill(STRATA_TANGENT_SPANS[toFront] || 0);
   }
 
+  const glide = {
+    e: 0,
+    // Hold each plane's STARTING blur through the motion — a receded plane must
+    // never sharpen (Howell 2026-07-21); a front plane holds 0 and recedes
+    // sharp as before. Constant radius = the blurred layer renders once, only
+    // the scale moves. Blur snaps to its destination on settle (renderStack).
+    // A primary going DOWN to the basement wears the far blur as it goes: it
+    // is leaving, and nothing waits to see it sharp again.
+    frameAt(e) {
+      glide.e = e;
+      setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
+        offsetY: lerp(from.__primary.offsetY || 0, to.__primary.offsetY || 0, e),
+        opacity: lerp(from.__primary.opacity, to.__primary.opacity, e)
+      });
+      [...CHOOSERS, BASEMENT].forEach(ch => {
+        const g = groups[ch.id]; if (!g) return;
+        const f = from[ch.id], t = to[ch.id];
+        setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, lerp(f.opacity, t.opacity, e),
+          lerp(f.offsetX || 0, t.offsetX || 0, e), lerp(f.offsetY || 0, t.offsetY || 0, e));
+      });
+    },
+    // Final depths + blur for whatever strataFront now says, prune the hidden.
+    settle() { strataAnim = null; renderStack(); }
+  };
+  return glide;
+}
+
+// The TAP's driver: the glide on a clock, eased both ways.
+function transitionStrata(fromFront, toFront) {
+  const glide = beginGlide(fromFront, toFront);
   let raf = 0, start = 0, cancelled = false;
   const frame = now => {
     if (cancelled) return;
     if (!start) start = now;
     const e = easeInOut(Math.min(1, (now - start) / STRATA_TWEEN_MS));
-    // Hold each plane's STARTING blur through the motion — a receded plane must
-    // never sharpen (Howell 2026-07-21); a front plane holds 0 and recedes
-    // sharp as before. Constant radius = the blurred layer renders once, only
-    // the scale moves. Blur snaps to its destination on settle (renderStack).
-    setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
-      offsetY: lerp(from.__primary.offsetY || 0, to.__primary.offsetY || 0, e),
-      opacity: lerp(from.__primary.opacity, to.__primary.opacity, e)
-    });
-    [...CHOOSERS, BASEMENT].forEach(ch => {
-      const g = groups[ch.id]; if (!g) return;
-      const f = from[ch.id], t = to[ch.id];
-      setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, lerp(f.opacity, t.opacity, e),
-        lerp(f.offsetX || 0, t.offsetX || 0, e), lerp(f.offsetY || 0, t.offsetY || 0, e));
-    });
+    glide.frameAt(e);
     if (e < 1) { raf = requestAnimationFrame(frame); }
-    else { strataAnim = null; renderStack(); } // settle: final depths + blur, prune hidden
+    else glide.settle();
   };
   raf = requestAnimationFrame(frame);
   strataAnim = { cancel: () => { cancelled = true; cancelAnimationFrame(raf); } };
@@ -1212,13 +1238,19 @@ function goToStratum(to) {
   if (to < 0) enterBasement();          // the descent carries the verse
   strataFront = to;
   transitionStrata(from, to);
+  arriveAt(from, to);
+  return true;
+}
+// WHAT ARRIVING AT A FLOOR CHANGES, beyond the picture — shared by the tap's
+// timed glide and the slider's settle.
+function arriveAt(from, to) {
   // ARRIVAL AT THE TEXT ENDS THE LAUNCH FUNNEL (O-77), and this is the only
   // other way in: `resetStrata` catches the reader who is carried out, this
   // catches the reader who WALKS in, which is the path the funnel was built
   // to teach. Set AFTER the transition is kicked off, never before: the
-  // departing planes render their nodes one last time inside
-  // `transitionStrata`, and a ring that loses a node while it is gliding away
-  // is the very flicker this ruling exists to stop.
+  // departing planes render their nodes one last time inside the glide, and
+  // a ring that loses a node while it is gliding away is the very flicker
+  // this ruling exists to stop.
   if (to === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
   if (from < 0) leaveBasement();        // back up — to the bookmark under the lens, if one
   // THE GLOBE NO LONGER TURNS WITH THE MIGRATION (Howell, phone check
@@ -1228,7 +1260,6 @@ function goToStratum(to) {
   // leaf (updateDimensionButton) — is untouched.
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
   placeThumb();
-  return true;
 }
 function cycleStrata() {
   goToStratum(strataFront <= 0 ? maxStrataFront() : strataFront - 1);
@@ -1565,10 +1596,81 @@ function placeThumb() {
   if (!dimensionButton || slide) return;   // a held thumb follows the finger, not the state
   try { dimensionButton.style.setProperty('--thumb-y', `${(-strataFront * notchPx()).toFixed(1)}px`); } catch (_) { /* stub DOM */ }
 }
+// THE SCRUB (Howell, phone check 2026-09-14). While the thumb is held, the
+// glide between the two floors it sits between is driven by its position:
+// e = how far along the segment the thumb is. Held still between floors, the
+// picture holds still. Nothing commits until release, which settles to the
+// nearer floor over the time that part of the tween would have taken. Drag
+// across a whole floor without stopping and the segment behind is committed
+// as the next one begins.
+let scrub = null;   // { from, to, glide } — the segment the thumb is inside
+const SCRUB_MAX_SEGMENTS = 6;   // a bound on one move event's crossings
+function beginSegment(from, to) {
+  if (to < 0) enterBasement();          // the ring must know what the reader brings down
+  scrub = { from, to, glide: beginGlide(from, to) };
+  strataAnim = { cancel: () => { scrub = null; } };
+}
+// End the segment the thumb is inside: at its far floor (commit) or back at
+// its near one (revert — nothing changed, and a basement visit begun for the
+// picture is unbegun).
+function endSegment(commit) {
+  if (!scrub) return;
+  const { from, to, glide } = scrub;
+  scrub = null;
+  if (commit) {
+    glide.frameAt(1);
+    strataFront = to;
+    glide.settle();
+    arriveAt(from, to);
+  } else {
+    glide.frameAt(0);
+    if (to < 0) { basementArrival = null; basementLens = null; basementLoose = []; }
+    glide.settle();
+  }
+}
+function scrubTo(p) {
+  p = Math.max(minStrataFront(), Math.min(maxStrataFront(), p));
+  for (let n = 0; n < SCRUB_MAX_SEGMENTS; n += 1) {
+    if (!scrub) {
+      const target = p > strataFront + 0.001 ? strataFront + 1 : p < strataFront - 0.001 ? strataFront - 1 : null;
+      if (target === null || target < minStrataFront() || target > maxStrataFront()) return;
+      beginSegment(strataFront, target);
+    }
+    const { from, to, glide } = scrub;
+    const e = (p - from) / (to - from);
+    if (e >= 1) { endSegment(true); continue; }
+    if (e <= 0) { endSegment(false); continue; }
+    glide.frameAt(e);
+    return;
+  }
+}
+let scrubSettle = null;   // rAF of a settle in flight
+function releaseScrub() {
+  if (!scrub) return;
+  const { glide } = scrub;
+  const commit = glide.e >= 0.5;
+  const target = commit ? 1 : 0;
+  const startE = glide.e, span = Math.abs(target - startE);
+  if (span < 0.001) { endSegment(commit); return; }
+  let start = 0;
+  const step = now => {
+    if (!start) start = now;
+    const t = Math.min(1, (now - start) / (STRATA_TWEEN_MS * span));
+    const k = 1 - Math.pow(1 - t, 3);   // easeOutCubic — the settle of a released thing
+    glide.frameAt(startE + (target - startE) * k);
+    if (t < 1) { scrubSettle = requestAnimationFrame(step); }
+    else { scrubSettle = null; endSegment(commit); }
+  };
+  scrubSettle = requestAnimationFrame(step);
+}
 if (dimensionButton) {
   dimensionButton.addEventListener('pointerdown', event => {
     if (!dimensionAvailable()) return;
-    slide = { startY: event.clientY, lastY: event.clientY, startFront: strataFront, moved: false };
+    if (strataAnim && !scrub) return;   // a tap's own glide is running: let it land
+    if (scrubSettle) { cancelAnimationFrame(scrubSettle); scrubSettle = null; }   // caught mid-settle: the thumb takes over
+    // Where the thumb stands now, as a floor position — mid-segment if caught.
+    const here = scrub ? scrub.from + scrub.glide.e * (scrub.to - scrub.from) : strataFront;
+    slide = { startY: event.clientY, lastY: event.clientY, startFront: here, moved: false };
     try { dimensionButton.setPointerCapture(event.pointerId); } catch (_) { /* unsupported */ }
   });
   dimensionButton.addEventListener('pointermove', event => {
@@ -1583,21 +1685,15 @@ if (dimensionButton) {
     const step = notchPx();
     const y = Math.max(minStrataFront() * step, Math.min(maxStrataFront() * step, slide.startFront * step + dy));
     dimensionButton.style.setProperty('--thumb-y', `${(-y).toFixed(1)}px`);
-    const notch = Math.round(y / step);
-    if (notch !== strataFront) goToStratum(notch);
+    scrubTo(y / step);
   });
   const release = () => {
     if (!slide) return;
-    const { moved, startY, lastY, startFront } = slide;
+    const { moved } = slide;
     slide = null;
     dimensionButton.classList.remove('is-sliding');
-    if (moved) {
-      suppressClick = true;
-      const step = notchPx();
-      const y = Math.max(minStrataFront() * step, Math.min(maxStrataFront() * step, startFront * step + (startY - lastY)));
-      const notch = Math.round(y / step);
-      if (notch !== strataFront) goToStratum(notch);
-    }
+    if (moved) suppressClick = true;
+    releaseScrub();
     placeThumb();
   };
   ['pointerup', 'pointercancel'].forEach(type => dimensionButton.addEventListener(type, release));
@@ -1606,6 +1702,7 @@ if (dimensionButton) {
     cycleStrata();
   });
 }
+
 // THE PROOFREADER'S SHORTCUT (O-123, Howell 2026-08-31: "I want you to cheat,
 // just for the sake of proofreading... count nodes between the origin verse
 // and the destination verse and then rotate the Focus Ring by that number of
@@ -1668,6 +1765,8 @@ if (typeof window !== 'undefined') {
     cycle: cycleStrata,
     // O-126: the slider's address, and the basement's state.
     slide: goToStratum,
+    scrub: scrubTo,
+    release: releaseScrub,
     min: minStrataFront,
     basement: () => ({ arrival: basementArrival, lens: basementLens, items: BASEMENT.items(), kept: bookmarksOf(currentVolumeId).map(b => b.id) }),
     keep: toggleKeep

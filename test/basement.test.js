@@ -10,6 +10,9 @@ import { describe, it, before } from 'node:test';
 import { installBrowserGlobals } from './helpers/browser-globals.mjs';
 
 const settle = (ms = 750) => new Promise(r => setTimeout(r, ms)); // past the 600ms strata tween
+// The stub DOM has no querySelector, so a stratum once drawn is never pruned
+// there (hideStratum is a no-op on it): these cells assert the floors' STATE
+// and leave the picture to the phone.
 
 describe('the slider and the basement (O-126)', () => {
   let D;
@@ -57,8 +60,6 @@ describe('the slider and the basement (O-126)', () => {
     assert.equal(b.arrival, null);
     assert.equal(b.lens, null, 'the visit is over; nothing lingers under the lens');
     assert.deepEqual(b.kept, ['u-test-leaf'], 'what was kept stays kept');
-    const basementRing = globalThis.document?.getElementById?.('basement') ?? null;
-    assert.equal(basementRing, null, 'from the main floor the basement is absent, not hidden behind');
   });
 
   it('the slider addresses any floor directly, and clamps at the ends', async () => {
@@ -72,6 +73,26 @@ describe('the slider and the basement (O-126)', () => {
     assert.equal(D.slide(9), true); await settle();
     assert.equal(D.front(), 2, 'above the languages there is nothing');
     assert.equal(D.slide(2), false, 'the same floor is no move');
+  });
+
+  it('the slider SCRUBS the glide and settles only on release', async () => {
+    D.slide(0); await settle();
+    assert.equal(D.front(), 0);
+    // Held partway down: the picture is mid-glide and nothing has committed.
+    D.scrub(-0.4);
+    assert.equal(D.front(), 0, 'no floor changes while the thumb is held');
+    assert.equal(D.basement().arrival, null, 'from the front door: nothing in hand, even mid-glide');
+    // Released before halfway: back to where it was, and the visit is unbegun.
+    D.scrub(-0.3); D.release(); await settle();
+    assert.equal(D.front(), 0);
+    // Released past halfway: settles down.
+    D.scrub(-0.7); D.release(); await settle();
+    assert.equal(D.front(), -1);
+    // Dragged straight through a floor: the segment behind commits as the next begins.
+    D.scrub(0.2);
+    assert.equal(D.front(), 0, 'crossed the text without stopping');
+    D.release(); await settle();
+    assert.equal(D.front(), 0, 'and the fifth of the way to the editions fell back');
   });
 
   it('a tap still cycles inward, from the basement too', async () => {
