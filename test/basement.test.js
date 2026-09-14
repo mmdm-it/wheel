@@ -95,6 +95,15 @@ describe('the slider and the basement (O-126)', () => {
     assert.equal(D.front(), 0, 'and the fifth of the way to the editions fell back');
   });
 
+  it('the hold in the overrun keeps nothing from the front door — no verse in hand', async () => {
+    D.slide(-1); await settle();
+    assert.equal(D.front(), -1);
+    D.holdBegin();
+    assert.equal(D.hold(), null, 'nothing came down with the reader, so there is nothing to keep');
+    D.holdCancel();
+    assert.equal(D.hold(), null);
+  });
+
   it('a tap still cycles inward, from the basement too', async () => {
     D.slide(-1); await settle();
     D.cycle(); await settle();

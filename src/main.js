@@ -379,6 +379,7 @@ let searchScopedCorpus = [];    // the active subset: leaves under the ring the 
 let searchOpeningAllowed = null;// characters the opening ring is pruned to when scoped (any position)
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
+let bookmarkPrompt = null;   // O-128: the volume's own words for "bookmark this", per tongue
 let searchAllLabel = 'TUTTI';   // what the scope label says when nothing is filtered
 
 // IN SEARCH, the dividers take the parent disc's seat — directly under the
@@ -1648,13 +1649,19 @@ function openBootFunnel() {
 // globe's CSS rest position, so every stop above it — the text included —
 // sits higher than before. The thumb's offset is measured from that rest.
 const NOTCH_RATIO = 1.5625;  // stop spacing, in button heights
-const BASEMENT_DROP = 1.25;  // the basement stop, in button heights below the CSS rest
+const BASEMENT_DROP = 1.25;  // the LOWEST point of travel, in button heights below the CSS rest
+// THE OVERRUN (O-128, Howell 2026-09-14): below the basement stop the thumb
+// can be pulled half a stop further against a spring — the Focus Ring's own
+// springback feel — and HELD there to bookmark (below). The travel shifted
+// up by the overrun so its lowest point stays where it was.
+const SLIDER_OVERRUN = 0.5;  // stops, below the basement stop
+const OVERRUN_GIVE = 0.5;    // the spring: the thumb moves this fraction of the finger's travel past the stop
 let slide = null;           // { startY, startFront, lastY, moved }
 let suppressClick = false;  // a drag's release must not also count as a tap
 const buttonPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64);
 const notchPx = () => buttonPx() * NOTCH_RATIO;
 // How far ABOVE the CSS rest the thumb sits at floor position p (fractional while held).
-const thumbRise = p => (p - minStrataFront()) * notchPx() - BASEMENT_DROP * buttonPx();
+const thumbRise = p => (p - minStrataFront() + SLIDER_OVERRUN) * notchPx() - BASEMENT_DROP * buttonPx();
 function placeThumb() {
   if (!dimensionButton || slide) return;   // a held thumb follows the finger, not the state
   try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(strataFront)).toFixed(1)}px`); } catch (_) { /* stub DOM */ }
@@ -1726,6 +1733,90 @@ function releaseScrub() {
   };
   scrubSettle = requestAnimationFrame(step);
 }
+// ── HOLD TO BOOKMARK (O-128, Howell 2026-09-14) ─────────────────────────────
+// "The user must hold the button in the extreme position longer to bookmark
+// the verse. A quick pull down of the button to the bottom only takes the
+// user to the basement without bookmarking." While the thumb is held in the
+// overrun with the basement front and a verse in hand (the provisional seat
+// under the lens), the volume's phrase shows beside the globe and the seat
+// FILLS as the hold runs — the filling is the progress — and at HOLD_MS it
+// is kept. Let go sooner and nothing happened: the seat empties, the phrase
+// goes, the thumb springs back. The phrase is the VOLUME's, in the reader's
+// tongue (display_config.bookmark_prompt): the engine has no word for what a
+// leaf is called. From the front door there is no verse in hand, so the
+// overrun is only a spring.
+const HOLD_MS = 1100;
+const HOLD_DEPTH = 0.15;   // stops into the overrun before the hold is a hold
+let hold = null;           // { id, start, timer, raf } while the thumb is held in the overrun
+const bookmarkHint = (() => {
+  if (!dimensionButton || typeof document === 'undefined') return null;
+  try {
+    const h = document.createElement('div');
+    h.id = 'bookmark-hint';
+    h.setAttribute('aria-live', 'polite');
+    dimensionButton.parentNode?.insertBefore?.(h, dimensionButton);
+    return h;
+  } catch (_) { return null; }
+})();
+const bookmarkPhrase = () => {
+  const lang = dimensionBridge.getSelection()?.language || null;
+  const p = bookmarkPrompt;
+  if (!p) return '';
+  if (typeof p === 'string') return p;
+  return p[lang] || p.default || '';
+};
+function showHint(text) {
+  if (!bookmarkHint?.classList) return;
+  bookmarkHint.textContent = text;
+  if (typeof dimensionButton.getBoundingClientRect === 'function') {
+    const r = dimensionButton.getBoundingClientRect();
+    bookmarkHint.style.top = `${(r.top + r.height / 2).toFixed(0)}px`;
+    bookmarkHint.style.right = `${(window.innerWidth - r.left + 12).toFixed(0)}px`;
+  }
+  bookmarkHint.classList.toggle('is-showing', Boolean(text));
+}
+function hideHint() { if (bookmarkHint?.classList) bookmarkHint.classList.remove('is-showing'); }
+// The provisional seat under the lens fills with the hold.
+function fillProvisional(f) {
+  const lens = strataLayer?.querySelector?.('#basement .secondary-strata-node.is-magnified.is-provisional');
+  if (!lens) return;
+  lens.style.fill = f > 0 ? 'var(--color-orbital)' : '';
+  lens.style.fillOpacity = f > 0 ? String(f) : '';
+}
+function holdBegin() {
+  if (hold || strataFront !== -1 || scrub || !basementArrival) return;
+  const id = basementArrival.id;
+  if (isBookmarked(currentVolumeId, id)) return;
+  if (BASEMENT.selected() !== id) return;   // the hold keeps the seat UNDER THE LENS, and that is the arrival
+  hold = { id, start: (typeof performance !== 'undefined' ? performance.now() : Date.now()), timer: setTimeout(() => holdKeep(), HOLD_MS), raf: 0 };
+  showHint(bookmarkPhrase());
+  const tick = () => {
+    if (!hold) return;
+    const now = typeof performance !== 'undefined' ? performance.now() : Date.now();
+    fillProvisional(Math.min(1, (now - hold.start) / HOLD_MS));
+    hold.raf = requestAnimationFrame(tick);
+  };
+  hold.raf = requestAnimationFrame(tick);
+}
+function holdCancel() {
+  if (!hold) return;
+  clearTimeout(hold.timer);
+  cancelAnimationFrame(hold.raf);
+  hold = null;
+  hideHint();
+  fillProvisional(0);
+}
+function holdKeep() {
+  if (!hold) return;
+  const { id } = hold;
+  cancelAnimationFrame(hold.raf);
+  hold = null;
+  hideHint();
+  keepBookmark(currentVolumeId, { id, label: BASEMENT.label(id), edition: dimensionBridge.getSelection()?.translation ?? null });
+  basementLens = id;
+  renderStack();   // the seat is drawn kept: filled, for good
+}
+
 if (dimensionButton) {
   dimensionButton.addEventListener('pointerdown', event => {
     if (!dimensionAvailable()) return;
@@ -1745,7 +1836,19 @@ if (dimensionButton) {
       slide.moved = true;
       dimensionButton.classList.add('is-sliding');
     }
-    const p = Math.max(minStrataFront(), Math.min(maxStrataFront(), slide.startFront + dy / notchPx()));
+    const raw = slide.startFront + dy / notchPx();
+    const min = minStrataFront();
+    if (raw < min) {
+      // Into the overrun: the thumb follows against the spring, the floors do
+      // not go below the basement, and a deep enough hold is a hold.
+      const over = Math.min(SLIDER_OVERRUN, (min - raw) * OVERRUN_GIVE);
+      dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(min - over)).toFixed(1)}px`);
+      scrubTo(min);
+      if (over >= HOLD_DEPTH) holdBegin(); else holdCancel();
+      return;
+    }
+    holdCancel();
+    const p = Math.min(maxStrataFront(), raw);
     dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`);
     scrubTo(p);
   });
@@ -1755,8 +1858,9 @@ if (dimensionButton) {
     slide = null;
     dimensionButton.classList.remove('is-sliding');
     if (moved) suppressClick = true;
+    holdCancel();     // a hold that has not reached HOLD_MS is nothing
     releaseScrub();
-    placeThumb();
+    placeThumb();     // the springback from the overrun rides the thumb's transition
   };
   ['pointerup', 'pointercancel'].forEach(type => dimensionButton.addEventListener(type, release));
   dimensionButton.addEventListener('click', () => {
@@ -1829,6 +1933,9 @@ if (typeof window !== 'undefined') {
     slide: goToStratum,
     scrub: scrubTo,
     release: releaseScrub,
+    // O-128: the hold in the overrun, and its state.
+    holdBegin, holdCancel,
+    hold: () => (hold ? { id: hold.id } : null),
     min: minStrataFront,
     basement: () => ({ arrival: basementArrival, lens: basementLens, items: BASEMENT.items(), kept: bookmarksOf(currentVolumeId).map(b => b.id) }),
     keep: toggleKeep
@@ -3230,6 +3337,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchCorpusEntries = [];
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
+  bookmarkPrompt = root?.display_config?.bookmark_prompt || null;
   if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
     const leafLevel = root?.display_config?.leaf_level || null;
     searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));

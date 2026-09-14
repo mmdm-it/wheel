@@ -412,6 +412,27 @@ svg :focus-visible {
 #dimension-button { transform: translateY(var(--thumb-y, 0px)); touch-action: none; /* the slider owns the vertical drag */ }
 #dimension-button[aria-pressed="true"] { opacity: 1; transform: translateY(var(--thumb-y, 0px)) scale(1.08); }
 #dimension-button.is-sliding { transition: opacity 0.15s ease; }
+/* THE PHRASE beside the globe while the thumb is held in the overrun
+   (O-128): the volume's own words, in the reader's tongue. */
+#bookmark-hint {
+  position: fixed;
+  transform: translateY(-50%);
+  max-width: 60vw;
+  text-align: right;
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2.2vmin, 22px);
+  letter-spacing: 0.06em;
+  color: var(--color-text, #000);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 261;
+}
+#bookmark-hint.is-showing { opacity: 1; }
+/* The thumb's springback out of the overrun: eased, a touch longer than the
+   snap between stops — the Focus Ring's own feel. */
+#dimension-button { transition: opacity 0.15s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1); }
 /* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
    with, not yet kept: hollow, so keeping it visibly fills it. */
 .secondary-strata-node.is-provisional { fill: none; stroke: var(--color-orbital); stroke-width: 2; }
