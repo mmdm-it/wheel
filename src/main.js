@@ -1152,9 +1152,13 @@ function beginGlide(fromFront, toFront) {
       centerMagnified: ch.centerMag
     });
     // Past the film plane the plane keeps scaling about the same centre — the
-    // course the magnifier was already on — and is gone only off the frame.
-    if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], scale: EXIT_SCALE, opacity: 0 };
-    if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], scale: EXIT_SCALE, opacity: 0 };
+    // course the magnifier was already on — until it is off the frame. NO
+    // DISSOLVE (Howell, phone check 2026-09-14: "There should be no change in
+    // the opacity of these two strata. The visual elements of these strata
+    // should migrate off screen with no transparency"): it leaves whole, and
+    // the settle prunes it once it is gone.
+    if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], scale: EXIT_SCALE, opacity: 1 };
+    if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], scale: EXIT_SCALE, opacity: 1 };
   });
   // THE BASEMENT'S RING (O-126): the reader trucks IN through the main floor
   // to reach it, so it comes up from the distance the way a chooser does and
