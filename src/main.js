@@ -884,7 +884,13 @@ function renderStack() {
     // settle" — Howell, 2026-09-14); nothing must change at the settle.
     const gone = PRIMARY_GONE();
     setPrimaryVisual(gone.scale, gone.blur, gone);
-    strataBelow(true);
+    // SETTLED, the layer comes back ABOVE the (now invisible) primary. Under
+    // it, the primary's own nodes — which set pointer-events of their own —
+    // took every touch meant for the basement's ring, and it would not turn
+    // (Howell, 2026-09-14: "we need to put in the hooks so we can rotate that
+    // basement focus ring"). Below the floor only while the floor is there
+    // to be seen through: during the flight.
+    strataBelow(false);
     CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
     const items = BASEMENT.items();
     const g = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
