@@ -851,7 +851,12 @@ function renderStack() {
   if (strataFront < 0) {
     // THE BASEMENT IS FRONT (O-126): the primary has left, the choosers are
     // not in play, and the basement's ring stands alone with nothing behind.
-    setPrimaryVisual(1, 0, PRIMARY_GONE());
+    // Settle where the flight ended — still at EXIT_SCALE, still gone. Settling
+    // to scale 1 un-zoomed the verse text for a frame before the opacity took
+    // hold ("an unzoomed artifact of text that pops on briefly during the
+    // settle" — Howell, 2026-09-14); nothing must change at the settle.
+    const gone = PRIMARY_GONE();
+    setPrimaryVisual(gone.scale, gone.blur, gone);
     CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
     const items = BASEMENT.items();
     const g = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
