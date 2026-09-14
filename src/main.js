@@ -1612,11 +1612,12 @@ function openBootFunnel() {
 // "We don't need the ghost rings.")
 // THE TRAVEL (Howell, phone check 2026-09-14: "50% longer. Since it can't go
 // any lower... it will have to go higher. The four stops should remain
-// equidistant."). The stops are 1.875 button heights apart (was 1.25); the
-// LOWEST stop, the basement, keeps its old place 1.25 heights below the
+// equidistant" — then, tried: "Split the difference. Make it 25% longer than
+// it was before."). The stops are 1.5625 button heights apart (was 1.25);
+// the LOWEST stop, the basement, keeps its old place 1.25 heights below the
 // globe's CSS rest position, so every stop above it — the text included —
 // sits higher than before. The thumb's offset is measured from that rest.
-const NOTCH_RATIO = 1.875;   // stop spacing, in button heights
+const NOTCH_RATIO = 1.5625;  // stop spacing, in button heights
 const BASEMENT_DROP = 1.25;  // the basement stop, in button heights below the CSS rest
 let slide = null;           // { startY, startFront, lastY, moved }
 let suppressClick = false;  // a drag's release must not also count as a tap
