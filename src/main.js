@@ -1221,8 +1221,11 @@ function goToStratum(to) {
   // is the very flicker this ruling exists to stop.
   if (to === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
   if (from < 0) leaveBasement();        // back up — to the bookmark under the lens, if one
-  // The globe turns with the recede — same duration, settling together.
-  if (dimensionGlobe) dimensionGlobe.spin(STRATA_TWEEN_MS);
+  // THE GLOBE NO LONGER TURNS WITH THE MIGRATION (Howell, phone check
+  // 2026-09-14): "That was useful when the input was a tap, but the slider
+  // is its own visual feedback." The turn used to ride here, synced to the
+  // strata tween. Its other occasion — the hello when the globe ARRIVES at a
+  // leaf (updateDimensionButton) — is untouched.
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
   placeThumb();
   return true;
