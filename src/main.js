@@ -1610,13 +1610,23 @@ function openBootFunnel() {
 // funnel's "two quick taps" stay true. (Ghost notches at the resting places
 // were drawn in the first cut and struck on his phone check the same day:
 // "We don't need the ghost rings.")
-const NOTCH_RATIO = 1.25;   // notch spacing, in button heights
+// THE TRAVEL (Howell, phone check 2026-09-14: "50% longer. Since it can't go
+// any lower... it will have to go higher. The four stops should remain
+// equidistant."). The stops are 1.875 button heights apart (was 1.25); the
+// LOWEST stop, the basement, keeps its old place 1.25 heights below the
+// globe's CSS rest position, so every stop above it — the text included —
+// sits higher than before. The thumb's offset is measured from that rest.
+const NOTCH_RATIO = 1.875;   // stop spacing, in button heights
+const BASEMENT_DROP = 1.25;  // the basement stop, in button heights below the CSS rest
 let slide = null;           // { startY, startFront, lastY, moved }
 let suppressClick = false;  // a drag's release must not also count as a tap
-const notchPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64) * NOTCH_RATIO;
+const buttonPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64);
+const notchPx = () => buttonPx() * NOTCH_RATIO;
+// How far ABOVE the CSS rest the thumb sits at floor position p (fractional while held).
+const thumbRise = p => (p - minStrataFront()) * notchPx() - BASEMENT_DROP * buttonPx();
 function placeThumb() {
   if (!dimensionButton || slide) return;   // a held thumb follows the finger, not the state
-  try { dimensionButton.style.setProperty('--thumb-y', `${(-strataFront * notchPx()).toFixed(1)}px`); } catch (_) { /* stub DOM */ }
+  try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(strataFront)).toFixed(1)}px`); } catch (_) { /* stub DOM */ }
 }
 // THE SCRUB (Howell, phone check 2026-09-14). While the thumb is held, the
 // glide between the two floors it sits between is driven by its position:
@@ -1704,10 +1714,9 @@ if (dimensionButton) {
       slide.moved = true;
       dimensionButton.classList.add('is-sliding');
     }
-    const step = notchPx();
-    const y = Math.max(minStrataFront() * step, Math.min(maxStrataFront() * step, slide.startFront * step + dy));
-    dimensionButton.style.setProperty('--thumb-y', `${(-y).toFixed(1)}px`);
-    scrubTo(y / step);
+    const p = Math.max(minStrataFront(), Math.min(maxStrataFront(), slide.startFront + dy / notchPx()));
+    dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`);
+    scrubTo(p);
   });
   const release = () => {
     if (!slide) return;
