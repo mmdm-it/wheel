@@ -51,38 +51,24 @@ const handlers = (level = 'verse') => bibleAdapter.createHandlers({
   manifest, namesMap: {}, options: { level, activeEdition: 'HEB', translation: 'HEB' }
 });
 
-describe('the globe is live at root (O-96, H-29)', () => {
-  it('THE DIVISION RING IS ROOT, AND THE GLOBE SHOWS THERE', () => {
+describe('the globe is at every level (O-129) — the front door of O-96 is retired', () => {
+  it('the adapter declares no front door: the host shows the globe wherever the volume has a dimension', () => {
     const h = handlers();
-    const [item] = buildBibleTestaments(manifest, {}, { edition: 'HEB' }).items;
-    assert.equal(item.level, 'testament', 'the ring root lands on is built at this level');
-    assert.equal(Boolean(h.showsDimensionAt(item)), true,
-      'no globe here is no way into Dimension Mode from root — Howell, from the LAN');
+    assert.equal(h.showsDimensionAt, undefined,
+      'O-96 gave the globe two homes, root and the leaf; under O-129 it is at every level, and the predicate that owned the root half is gone');
   });
 
-  it('and it shows for EVERY division, not merely the first', () => {
-    const h = handlers();
-    for (const item of [{ level: 'testament', id: 'division-0' }, { level: 'testament', id: 'division-1' }]) {
-      assert.equal(Boolean(h.showsDimensionAt(item)), true, `${item.id} is root too`);
-    }
-  });
-
-  it('THE GATEWAY ROOT KEEPS ITS GLOBE — the older door is narrowed, not closed', () => {
-    const h = handlers('root');
-    assert.equal(Boolean(h.showsDimensionAt({ level: 'bibleRoot' })), true,
-      'a host that boots the volume at root still reaches BIBLIA SACRA LATINA');
-  });
-
-  it('AND NOWHERE ELSE: the globe stays hidden on the rings between root and the leaf', () => {
-    const h = handlers();
-    for (const level of ['book', 'chapter']) {
-      assert.equal(Boolean(h.showsDimensionAt({ level })), false,
-        `${level}: the globe hides while drilling — it is a question only at root and at a leaf`);
-    }
-    // The leaf's own case is not this predicate's business: the host shows the
-    // globe at a settled verse because the Detail Sector is up, which is the
-    // OTHER half of O-96's two cases.
-    assert.equal(Boolean(h.showsDimensionAt({ level: 'verse' })), false,
-      'the verse case is the host\'s (detailSectorVisible), not the front door\'s');
+  it('SEATS THE PRIMARY AT A LEAF FROM ANYWHERE — the basement\'s jump when the ring up does not hold the bookmark', () => {
+    const h = handlers('verse');
+    let adopted = null, parents = null;
+    const app = { setPrimaryItems: (items, index) => { adopted = { items, index, landed: items[index] }; }, setParentButtons: p => { parents = p; } };
+    assert.equal(h.seatAtLeaf('b1', app), true, 'HEB seats leaf b1');
+    assert.ok(adopted.landed?.meta?.utterances?.includes('b1'), 'the ring is set at the item carrying the leaf');
+    assert.equal(adopted.landed.level, 'verse');
+    assert.deepEqual(parents, { showOuter: true });
+    adopted = null;
+    assert.equal(h.seatAtLeaf('nope', app), false, 'a leaf this edition does not seat: false, and the ring is left alone');
+    assert.equal(adopted, null);
+    assert.equal(h.seatAtLeaf('a1', null), false, 'no app, no seating');
   });
 });

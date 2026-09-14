@@ -567,6 +567,38 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       return true;
     }
 
+    // ON THE BOOK RING (O-129, 2026-09-14 — the globe is at every level now):
+    // the ring refills with the new edition's books of the division that
+    // seats the reader's book, landing on that book — O-76's landing rule at
+    // the book's grain, the leaf being the book's first utterance. An
+    // edition that seats none of it lands on its own first book.
+    if (level === 'book') {
+      const edition = options?.activeEdition || options?.translation || null;
+      const volume = manifest?.__wallVolume;
+      if (!volume) return false;
+      // The book's own first leaf, read from the chart of the edition that
+      // named it — asked of the volume, else found among the editions.
+      const ownEdition = volume.editionOf?.(selected.id)
+        || (volume.editions || []).map(e => e?.code).find(code => code && volume.chartFor?.(selected.id, code))
+        || null;
+      const probe = selected.meta?.utterances?.[0]
+        || volume.chartFor?.(selected.id, ownEdition)?.seats?.[0]?.utterances?.[0] || null;
+      const divisions = buildBibleTestaments(manifest, namesMap, { translationName, edition }).items.filter(Boolean);
+      if (!divisions.length) return false;
+      const landedBook = probe ? bookSeatingUtterance(volume, edition, null, probe) : null;
+      const division = (landedBook && divisions.find(d => (d.meta?.books || []).includes(landedBook))) || divisions[0];
+      const bookId = landedBook && (division.meta?.books || []).includes(landedBook) ? landedBook : (division.meta?.books || [])[0];
+      const { items, selectedIndex, preserveOrder } = buildBibleBookCousinChain(manifest, {
+        bookId, testamentId: division.id, initialItemId: bookId, names: namesMap, edition
+      });
+      if (!items.length) return false;
+      verseChainItems = null;
+      verseChainEdition = null;
+      chapterChainItems = null;
+      app.setPrimaryItems(items, selectedIndex, preserveOrder);
+      return true;
+    }
+
     if (level !== 'verse' && level !== 'chapter') return false;
 
     const previousSeats = Array.isArray(verseChainItems) ? verseChainItems : [];
@@ -1125,29 +1157,37 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         ? codes.filter(code => editionSeatsUtterance(volume, code, unitId, probe))
         : codes.filter(code => volumeHoldsUnit(volume, code, unitId));
     },
-    // WHERE THE GLOBE IS A LIVE QUESTION (O-96's spec, H-29's definition of
-    // root; fixed 2026-08-23 on Howell's report from the LAN, "I don't see
-    // the Dimension Button Globe when I migrate OUT to root").
+    // THE FRONT DOOR IS RETIRED (O-129, Howell 2026-09-14). O-96 gave the
+    // globe two homes, root and the leaf, and this predicate owned the root
+    // half; the globe is at every level now, so the host asks nothing here.
     //
-    // His spec has two cases and no third: the Dimension Button is visible
-    // and functional AT ROOT, or AT A LEAF. The leaf half is the host's — it
-    // shows the globe while the Detail Sector is up — so this predicate owns
-    // the root half alone.
-    //
-    // THE BUG WAS ONE WORD OF VOCABULARY. This answered `bibleRoot` only, and
-    // `bibleRoot` is the single-node gateway ring (BIBLIA SACRA LATINA) that
-    // H-29 left behind when it ruled root to be the level whose child pyramid
-    // holds books — the edition's own division of itself, built at level
-    // `testament`. `bibleRoot` is reachable only when the host boots the
-    // volume at `level: 'root'`; this volume's data declares no `startup`, so
-    // the level falls through to `verse`, `hasRoot` is false, and the
-    // division ring IS the top. The globe therefore had no home on the one
-    // ring the reader reaches by migrating all the way out.
-    //
-    // Both are accepted rather than swapped: a host that does boot at root
-    // still has its gateway door, and under H-29 the division ring is root in
-    // either arrangement, since it is the level whose pyramid holds books.
-    showsDimensionAt: item => item?.level === 'bibleRoot' || item?.level === 'testament',
+    // SEAT THE PRIMARY AT A LEAF, from anywhere (O-129): the basement's jump
+    // to a bookmark when the ring up does not hold it — at root, on a book or
+    // a chapter ring. The whole-volume verse chain is built for the committed
+    // edition, the item carrying the leaf is found, and the ring is SET there
+    // with no migration — the caller wants it unseen. The contexts the OUT
+    // gesture needs are taken from the item itself. False when this edition
+    // does not seat the leaf, and the ring stays as it was.
+    seatAtLeaf: (leaf, app) => {
+      if (!leaf || !app?.setPrimaryItems) return false;
+      const edition = options?.activeEdition || options?.translation || null;
+      const { items } = verseChain(null);
+      const idx = (items || []).findIndex(it => it && Array.isArray(it.meta?.utterances) && it.meta.utterances.includes(leaf));
+      if (idx < 0) return false;
+      const item = items[idx];
+      bibleMode = 'verse';
+      bibleVerseContext = {
+        chapterId: item.meta?.chapterId ?? item.chapterKey ?? null,
+        bookId: item.meta?.bookId ?? item.bookKey ?? null,
+        testamentId: item.meta?.testamentId ?? item.testamentKey ?? null,
+        sectionId: item.meta?.sectionId ?? null,
+        externalFile: item.meta?.externalFile ?? null
+      };
+      bibleChapterContext = null;
+      app.setPrimaryItems(items, idx, true);
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      return true;
+    },
     // NUMERALS SIT ON THEIR NODES, NAMES SIT BESIDE THEM (Howell
     // 2026-07-20): chapters and verses centre over the node; book and
     // testament NAMES keep the offset that reads well for words — the

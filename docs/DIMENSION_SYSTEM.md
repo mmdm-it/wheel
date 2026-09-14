@@ -132,7 +132,18 @@ leaf**. Nothing about entering Dimension Mode moves the reader.
 Four rules, as he stated them:
 
 1. **The Dimension Button is visible and functional at root, or at a leaf.**
-   Two cases, not three. An earlier description of mine added "or while a
+   Two cases, not three. *(SUPERSEDED under O-129, 2026-09-14 — "Proceed to
+   make the Dimension Button visible and functioning at every level": the
+   globe is at every level of a dimensioned volume. Four reasons, argued and
+   taken: the edition question has an answer at every level (only editions
+   holding where the reader stands, answered by book off a verse); the
+   basement is the reader's own tool and wanted most when NOT at a verse; a
+   slider is a readout, and a readout does not vanish on some floors; and
+   the seams of "sometimes" are where the day's bug lived. Two pieces make
+   it true rather than merely visible: the book ring refills on an edition
+   change and lands on the book seating the reader's leaves, and the
+   basement's jump can DRILL — the adapter seats the primary at a leaf the
+   ring up does not hold. The front-door predicate is retired.)* An earlier description of mine added "or while a
    chooser is open" and he struck it as redundant — Dimension Mode does not
    move the Primary, so it cannot be a third place to stand. *(The code
    tests `detailSectorVisible` as its stand-in for "at a leaf", and that

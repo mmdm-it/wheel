@@ -300,9 +300,12 @@ function enterBasement() {
 // journey nobody is meant to see is not that case.)
 function jumpToChosen() {
   const chosen = basementLens, arrived = basementArrival?.id ?? null;
-  if (!chosen || chosen === arrived || typeof currentApp?.glideToItem !== 'function') return;
+  if (!chosen || chosen === arrived || !currentApp) return;
   const item = itemForLeaf(chosen);   // this edition's seat on the shared leaf, if the ring up holds it
-  if (item) currentApp.glideToItem(item.id, 0);
+  if (item && typeof currentApp.glideToItem === 'function') { currentApp.glideToItem(item.id, 0); return; }
+  // Not on the ring up — at root, on a book or a chapter ring: the adapter
+  // seats the primary at the leaf, drilling for the reader (O-129).
+  try { seatAtLeaf(chosen, currentApp); } catch (_) { /* the ring stays as it was */ }
 }
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
@@ -1380,14 +1383,15 @@ function resetStrata() {
 // tongue"). Between the two — drilling down or backing out — it is clutter
 // and hides; any open stack recedes back to the primary. A volume boot
 // (including a gateway transit) resets the stack. The door is declared by
-// the adapter (dimensionFrontDoorAt), so the host stays volume-agnostic.
-let dimensionFrontDoorAt = () => false;
+// the adapter, so the host stays volume-agnostic. (The front-door predicate
+// of O-96 is retired under O-129: the globe is at every level.)
 // WHICH EDITIONS HOLD WHERE THE READER IS STANDING — the adapter's answer,
 // bound per volume (H-29's carry-out, Howell 2026-08-19). A volume whose
 // adapter does not answer returns null, and null means "no restriction"
 // rather than "nothing" — the host never learns which volumes those are, and
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
+let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
 let cornerImageAt = () => null;
@@ -1633,14 +1637,15 @@ function updateDimensionButton() {
   if (!dimensionButton) return;
   refreshEditionsHere();
   if (cornerIconHold) return; // frozen mid-wipe: the icon is part of the image
-  const atFrontDoor = (() => {
-    try { return Boolean(dimensionFrontDoorAt(currentApp?.nav?.getCurrent?.())); } catch (_) { return false; }
-  })();
-  // While a stratum is forward the globe is the ONLY way onward, so it must
-  // show regardless of what the primary is doing behind the glass — this is
-  // the boot state itself under the 2026-07-30 funnel (Howell ruling 2), and
-  // the reader would otherwise be stranded in the language chooser.
-  const show = dimensionAvailable() && (detailSectorVisible || atFrontDoor || isStrataOpen());
+  // AT EVERY LEVEL (O-129, Howell 2026-09-14: "Proceed to make the Dimension
+  // Button visible and functioning at every level"). O-96's two homes — root
+  // and the leaf, the rings between them "clutter" — were ruled for a tap
+  // that opened a chooser. The slider is a readout whose position is the
+  // stratum, the basement is the reader's own tool and wanted most when
+  // NOT at a verse, and the edition question has an answer at every level
+  // (editionsHoldingItem answers by book off a verse). So: wherever the
+  // volume has a dimension, the globe is there.
+  const show = dimensionAvailable();
   const arriving = show && dimensionButton.hidden;
   dimensionButton.hidden = !show;
   if (show) placeThumb();   // measured while visible (O-126)
@@ -3444,7 +3449,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const adapterGetParentLabelSuffix = typeof handlerSet.getParentLabelSuffix === 'function' ? handlerSet.getParentLabelSuffix : null;
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
-  dimensionFrontDoorAt = typeof handlerSet.showsDimensionAt === 'function' ? handlerSet.showsDimensionAt : () => false;
+  seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
   // The chooser offers the editions that hold where the reader stands (H-29).
   editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;
   // The corner emblem belongs to the division the reader is in (H-31). A
