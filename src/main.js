@@ -248,21 +248,28 @@ let strataFront = 0;                       // 0 = primary at front; -1 = the bas
 // with a kept bookmark under the lens returns the main floor and the ring
 // travels to that verse; with the provisional (the verse they came from)
 // under the lens, or with an empty ring, the main floor returns as it was.
-let basementArrival = null;   // { id, label } — the verse the reader came down with, or null
-let basementLens = null;      // the seat last settled under the lens this visit, or null
-let basementLoose = [];       // seats shown hollow this visit: the arrival, and any dropped
+let basementArrival = null;   // { key, id, edition, label } — the verse the reader came down with, or null
+let basementLens = null;      // the seat KEY last settled under the lens this visit, or null
+let basementLoose = [];       // seat keys shown hollow this visit: the arrival, and any dropped
 const basementLabels = {};    // labels remembered for loose seats, so re-keeping keeps the name
+// A SEAT ON THE BASEMENT'S RING IS A LEAF IN AN EDITION (Howell, 2026-09-14:
+// three bookmarks for Genesis 1:1, one per tongue, and never two in one).
+// Its key joins the two; the ring's items are keys.
+const seatKey = (id, edition) => `${id}@${edition ?? ''}`;
+const seatParts = key => { const at = key.lastIndexOf('@'); return at < 0 ? { id: key, edition: null } : { id: key.slice(0, at), edition: key.slice(at + 1) || null }; };
+const keptSeat = key => { const { id, edition } = seatParts(key); return bookmarksOf(currentVolumeId).find(b => b.id === id && (b.edition ?? null) === edition) || null; };
+const currentEdition = () => dimensionBridge.getSelection()?.translation ?? null;
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true,
   items: () => {
-    const ids = bookmarksOf(currentVolumeId).map(b => b.id);
-    for (const id of basementLoose) if (!ids.includes(id)) ids.push(id);
-    return ids;
+    const keys = bookmarksOf(currentVolumeId).map(b => seatKey(b.id, b.edition));
+    for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
+    return keys;
   },
-  label: id => bookmarksOf(currentVolumeId).find(b => b.id === id)?.label || basementLabels[id] || id,
-  classFor: id => (isBookmarked(currentVolumeId, id) ? '' : 'is-provisional'),
-  selected: () => basementLens ?? basementArrival?.id ?? BASEMENT.items()[0] ?? null,
-  select: id => { basementLens = id; return true; }
+  label: key => keptSeat(key)?.label || basementLabels[key] || seatParts(key).id,
+  classFor: key => (keptSeat(key) ? '' : 'is-provisional'),
+  selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
+  select: key => { basementLens = key; return true; }
 };
 // The seat's label is the verse's full address as the instrument was showing
 // it at that moment — the Parent Button's words (book and chapter, in the
@@ -287,8 +294,12 @@ const itemForLeaf = leaf => (currentApp?.nav?.items || []).find(it => it && (it.
 function enterBasement() {
   const cur = currentApp?.nav?.getCurrent?.();
   basementLens = null; basementLoose = [];
-  basementArrival = cur?.id && detailSectorVisible ? { id: leafOf(cur), label: arrivalLabel(cur) } : null;
-  if (basementArrival) { basementLabels[basementArrival.id] = basementArrival.label; basementLoose.push(basementArrival.id); }
+  if (cur?.id && detailSectorVisible) {
+    const id = leafOf(cur), edition = currentEdition();
+    basementArrival = { key: seatKey(id, edition), id, edition, label: arrivalLabel(cur) };
+    basementLabels[basementArrival.key] = basementArrival.label;
+    basementLoose.push(basementArrival.key);
+  } else basementArrival = null;
 }
 // THE JUMP IS UNSEEN (Howell, 2026-09-14: "trucking out of the basement
 // should go directly to the bookmarked verse. The jump should take place
@@ -299,8 +310,9 @@ function enterBasement() {
 // on O-123's reason that an arrival should be the ring's own journey; a
 // journey nobody is meant to see is not that case.)
 function jumpToChosen() {
-  const chosen = basementLens, arrived = basementArrival?.id ?? null;
-  if (!chosen || chosen === arrived || !currentApp) return;
+  const chosenKey = basementLens, arrivedKey = basementArrival?.key ?? null;
+  if (!chosenKey || chosenKey === arrivedKey || !currentApp) return;
+  const { id: chosen, edition: want } = seatParts(chosenKey);
   const seatHere = () => {
     const item = itemForLeaf(chosen);   // this edition's seat on the shared leaf, if the ring up holds it
     if (item && typeof currentApp.glideToItem === 'function') { currentApp.glideToItem(item.id, 0); return true; }
@@ -317,9 +329,7 @@ function jumpToChosen() {
   // edition, and the ordinary reseat carries the reader across to the same
   // leaf in that tongue. When the edition up does not seat the leaf at all,
   // the edition changes first and the seating follows its reseat.
-  const kept = bookmarksOf(currentVolumeId).find(b => b.id === chosen);
-  const want = kept?.edition || null;
-  const here = dimensionBridge.getSelection()?.translation || null;
+  const here = currentEdition();
   if (!want || want === here) { seatHere(); return; }
   const seated = seatHere();
   // O-72's position filter would refuse an edition that does not hold the
@@ -334,15 +344,18 @@ function jumpToChosen() {
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
 }
-function toggleKeep(id) {
+// Keep or drop the seat under a key; a bare leaf id means this edition.
+function toggleKeep(keyOrId) {
   const vol = currentVolumeId;
-  if (!vol || !id) return false;
-  if (isBookmarked(vol, id)) {
-    basementLabels[id] = BASEMENT.label(id);
-    dropBookmark(vol, id);
-    if (!basementLoose.includes(id)) basementLoose.push(id);
+  if (!vol || !keyOrId) return false;
+  const key = keyOrId.includes('@') ? keyOrId : seatKey(keyOrId, currentEdition());
+  const { id, edition } = seatParts(key);
+  if (isBookmarked(vol, id, edition)) {
+    basementLabels[key] = BASEMENT.label(key);
+    dropBookmark(vol, id, edition);
+    if (!basementLoose.includes(key)) basementLoose.push(key);
   } else {
-    keepBookmark(vol, { id, label: BASEMENT.label(id), edition: dimensionBridge.getSelection()?.translation ?? null });
+    keepBookmark(vol, { id, label: BASEMENT.label(key), edition });
   }
   return true;
 }
@@ -1860,10 +1873,10 @@ function fillProvisional(f) {
 }
 function holdBegin() {
   if (hold || strataFront !== -1 || scrub || !basementArrival) return;
-  const id = basementArrival.id;
-  if (isBookmarked(currentVolumeId, id)) return;
-  if (BASEMENT.selected() !== id) return;   // the hold keeps the seat UNDER THE LENS, and that is the arrival
-  hold = { id, start: (typeof performance !== 'undefined' ? performance.now() : Date.now()), timer: setTimeout(() => holdKeep(), HOLD_MS), raf: 0 };
+  const { key, id, edition } = basementArrival;
+  if (isBookmarked(currentVolumeId, id, edition)) return;
+  if (BASEMENT.selected() !== key) return;   // the hold keeps the seat UNDER THE LENS, and that is the arrival
+  hold = { key, id, edition, start: (typeof performance !== 'undefined' ? performance.now() : Date.now()), timer: setTimeout(() => holdKeep(), HOLD_MS), raf: 0 };
   showHint(bookmarkPhrase());
   const tick = () => {
     if (!hold) return;
@@ -1883,12 +1896,12 @@ function holdCancel() {
 }
 function holdKeep() {
   if (!hold) return;
-  const { id } = hold;
+  const { key, id, edition } = hold;
   cancelAnimationFrame(hold.raf);
   hold = null;
   hideHint();
-  keepBookmark(currentVolumeId, { id, label: BASEMENT.label(id), edition: dimensionBridge.getSelection()?.translation ?? null });
-  basementLens = id;
+  keepBookmark(currentVolumeId, { id, label: BASEMENT.label(key), edition });
+  basementLens = key;
   renderStack();   // the seat is drawn kept: filled, for good
 }
 
@@ -2010,9 +2023,9 @@ if (typeof window !== 'undefined') {
     release: releaseScrub,
     // O-128: the hold in the overrun, and its state.
     holdBegin, holdCancel,
-    hold: () => (hold ? { id: hold.id } : null),
+    hold: () => (hold ? { id: hold.id, key: hold.key } : null),
     min: minStrataFront,
-    basement: () => ({ arrival: basementArrival, lens: basementLens, items: BASEMENT.items(), kept: bookmarksOf(currentVolumeId).map(b => b.id) }),
+    basement: () => ({ arrival: basementArrival, lens: basementLens, items: BASEMENT.items(), kept: bookmarksOf(currentVolumeId).map(b => seatKey(b.id, b.edition)) }),
     keep: toggleKeep
   };
 }

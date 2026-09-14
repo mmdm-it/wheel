@@ -41,15 +41,20 @@ describe('the slider and the basement (O-126)', () => {
   });
 
   it('the lens keeps, and dropping leaves the seat hollow until the reader leaves', async () => {
+    // A seat is a leaf IN AN EDITION; a bare leaf means the edition up (the boot's).
+    const key = `u-test-leaf@${D.get().translation}`;
     assert.equal(D.keep('u-test-leaf'), true);
     let b = D.basement();
-    assert.deepEqual(b.kept, ['u-test-leaf']);
-    assert.deepEqual(b.items, ['u-test-leaf']);
+    assert.deepEqual(b.kept, [key]);
+    assert.deepEqual(b.items, [key]);
     assert.equal(D.keep('u-test-leaf'), true, 'the same gesture drops');
     b = D.basement();
     assert.deepEqual(b.kept, [], 'dropped from storage');
-    assert.deepEqual(b.items, ['u-test-leaf'], 'but still on the ring, hollow, for this visit');
+    assert.deepEqual(b.items, [key], 'but still on the ring, hollow, for this visit');
     D.keep('u-test-leaf'); // keep it again for the next cell
+    assert.equal(D.keep('u-test-leaf@1471ita'), true, 'the same leaf in another edition is another seat');
+    assert.deepEqual(D.basement().kept, [key, 'u-test-leaf@1471ita']);
+    D.keep('u-test-leaf@1471ita'); // and drop it again
   });
 
   it('sliding up returns the text, and the basement is not rendered from above', async () => {
@@ -59,7 +64,7 @@ describe('the slider and the basement (O-126)', () => {
     const b = D.basement();
     assert.equal(b.arrival, null);
     assert.equal(b.lens, null, 'the visit is over; nothing lingers under the lens');
-    assert.deepEqual(b.kept, ['u-test-leaf'], 'what was kept stays kept');
+    assert.deepEqual(b.kept, [`u-test-leaf@${D.get().translation}`], 'what was kept stays kept');
   });
 
   it('the slider addresses any floor directly, and clamps at the ends', async () => {

@@ -23,7 +23,7 @@ describe('bookmarks (O-126)', () => {
     assert.deepEqual(bookmarksOf('bible'), []);
     assert.equal(keep('bible', { id: 'u1', label: 'Genesis 1:1', edition: '1592lat' }), true);
     assert.equal(keep('bible', { id: 'u2', label: 'Ruth 1:16' }), true);
-    assert.equal(keep('bible', { id: 'u1', label: 'renamed' }), true);   // idempotent: no second seat, label untouched
+    assert.equal(keep('bible', { id: 'u1', label: 'renamed', edition: '1592lat' }), true);   // idempotent within the edition: no second seat, label untouched
     const kept = bookmarksOf('bible');
     assert.deepEqual(kept.map(b => b.id), ['u1', 'u2']);
     assert.equal(kept[0].label, 'Genesis 1:1');
@@ -39,6 +39,19 @@ describe('bookmarks (O-126)', () => {
     assert.equal(drop('bible', 'u1'), true);
     assert.equal(drop('bible', 'u1'), false);
     assert.deepEqual(bookmarksOf('bible'), []);
+  });
+
+  it('THE SAME LEAF IN THREE EDITIONS IS THREE BOOKMARKS, and twice in one is one (Howell, 2026-09-14)', () => {
+    assert.equal(keep('bible', { id: 'u1', label: 'ΓΕΝΕΣΙΣ α′:1', edition: '250BCgrc' }), true);
+    assert.equal(keep('bible', { id: 'u1', label: 'GENESI I:1', edition: '1471ita' }), true);
+    assert.equal(keep('bible', { id: 'u1', label: 'GENESIS 1:1', edition: '1899eng' }), true);
+    assert.equal(keep('bible', { id: 'u1', label: 'again', edition: '1471ita' }), true, 'idempotent within the edition');
+    assert.deepEqual(bookmarksOf('bible').map(b => `${b.edition}:${b.label}`), ['250BCgrc:ΓΕΝΕΣΙΣ α′:1', '1471ita:GENESI I:1', '1899eng:GENESIS 1:1']);
+    assert.equal(isBookmarked('bible', 'u1', '1471ita'), true);
+    assert.equal(isBookmarked('bible', 'u1', '1592lat'), false, 'not kept in the Latin');
+    assert.equal(drop('bible', 'u1', '1471ita'), true, 'the Italian one goes');
+    assert.deepEqual(bookmarksOf('bible').map(b => b.edition), ['250BCgrc', '1899eng'], 'the others stay');
+    assert.equal(drop('bible', 'u1'), false, 'no edition names no bookmark here');
   });
 
   it('keeps each volume\'s bookmarks apart, and forgets them apart', () => {

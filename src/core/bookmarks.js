@@ -7,13 +7,14 @@
 // about which text: from the main floor and the upper floors it is never
 // visible, and from the basement nothing is visible above.
 //
-// A BOOKMARK IS A LEAF, NOT A VERSE-IN-AN-EDITION. Leaf ids are shared across
-// editions (leaf-and-shard, W-129), so a verse kept while reading the Latin
-// is still there when the reader switches to the Greek or the Italian. The
-// label is QUOTED at the moment of keeping — the name the ring showed then,
-// in the edition the reader held — because at root the verse chain is not on
-// the ring and the name could not be re-derived; it is a label for finding
-// the seat, not a claim about the text.
+// A BOOKMARK IS A LEAF IN AN EDITION. The leaf (leaf-and-shard, W-129) is
+// what every edition shares, so the seat can be found in any of them; the
+// edition is which tongue the reader was in, and the return goes there.
+// Both together are the bookmark's identity (Howell, 2026-09-14: "I should
+// be able to have 3 separate bookmarks for GENESIS 1:1 — one in Greek, one
+// in Italian, and one in English. It is good that duplicate bookmarks are
+// not permitted WITHIN an edition"). The label is QUOTED at the moment of
+// keeping — the name the ring showed then, in that edition.
 //
 // ON-DEVICE ONLY, like session memory: localStorage, nothing transmitted, no
 // account, no identifier. Private browsing, disabled storage or corrupt JSON
@@ -49,28 +50,30 @@ export function bookmarksOf(volume) {
   return clean(readAll()[volume]);
 }
 
-export function isBookmarked(volume, id) {
-  return bookmarksOf(volume).some(b => b.id === id);
+const same = (b, id, edition) => b.id === id && (b.edition ?? null) === (edition ?? null);
+
+export function isBookmarked(volume, id, edition = null) {
+  return bookmarksOf(volume).some(b => same(b, id, edition));
 }
 
-/** Keep a leaf. Idempotent: keeping a kept leaf refreshes nothing and writes nothing. */
+/** Keep a leaf in an edition. Idempotent within the edition: keeping a kept one writes nothing. */
 export function keep(volume, { id, label = '', edition = null } = {}) {
   if (!volume || !id) return false;
   const all = readAll();
   const list = clean(all[volume]);
-  if (list.some(b => b.id === id)) return true;
+  if (list.some(b => same(b, id, edition))) return true;
   list.push({ id, label: String(label ?? ''), edition: edition ?? null, kept: new Date().toISOString() });
   all[volume] = list;
   writeAll(all);
   return true;
 }
 
-/** Drop a kept leaf. Returns whether anything was dropped. */
-export function drop(volume, id) {
+/** Drop a kept leaf from an edition. Returns whether anything was dropped. */
+export function drop(volume, id, edition = null) {
   if (!volume || !id) return false;
   const all = readAll();
   const list = clean(all[volume]);
-  const next = list.filter(b => b.id !== id);
+  const next = list.filter(b => !same(b, id, edition));
   if (next.length === list.length) return false;
   if (next.length) all[volume] = next; else delete all[volume];
   writeAll(all);
