@@ -283,14 +283,20 @@ function enterBasement() {
   basementArrival = cur?.id && detailSectorVisible ? { id: cur.id, label: arrivalLabel(cur) } : null;
   if (basementArrival) { basementLabels[basementArrival.id] = basementArrival.label; basementLoose.push(basementArrival.id); }
 }
-function leaveBasement() {
+// THE JUMP IS UNSEEN (Howell, 2026-09-14: "trucking out of the basement
+// should go directly to the bookmarked verse. The jump should take place
+// instantly and unseen"). It happens at the START of the ascent, while the
+// main floor is still invisible — the ring is set to the chosen seat with no
+// glide at all, and by the time the floor has faded in it was always there.
+// (The first cut let the floor return and then glided the ring to the seat,
+// on O-123's reason that an arrival should be the ring's own journey; a
+// journey nobody is meant to see is not that case.)
+function jumpToChosen() {
   const chosen = basementLens, arrived = basementArrival?.id ?? null;
+  if (chosen && chosen !== arrived && typeof currentApp?.glideToItem === 'function') currentApp.glideToItem(chosen, 0);
+}
+function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
-  if (chosen && chosen !== arrived && typeof currentApp?.glideToItem === 'function') {
-    // The floor comes back first; then the ring makes its own journey to the
-    // seat — never a faked arrival (O-123's reason).
-    setTimeout(() => { currentApp?.glideToItem?.(chosen, 600); }, STRATA_TWEEN_MS);
-  }
 }
 function toggleKeep(id) {
   const vol = currentVolumeId;
@@ -1308,6 +1314,7 @@ function goToStratum(to) {
   const from = strataFront;
   if (from === to) return false;
   if (to < 0) enterBasement();          // the descent carries the verse
+  if (from < 0) jumpToChosen();         // the ascent finds the floor already at the seat
   strataFront = to;
   transitionStrata(from, to);
   arriveAt(from, to);
@@ -1696,6 +1703,7 @@ let scrub = null;   // { from, to, glide } — the segment the thumb is inside
 const SCRUB_MAX_SEGMENTS = 6;   // a bound on one move event's crossings
 function beginSegment(from, to) {
   if (to < 0) enterBasement();          // the ring must know what the reader brings down
+  if (from < 0) jumpToChosen();         // unseen: the floor is invisible at e = 0
   scrub = { from, to, glide: beginGlide(from, to) };
   strataAnim = { cancel: () => { scrub = null; } };
 }
