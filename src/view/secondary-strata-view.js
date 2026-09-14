@@ -5,7 +5,7 @@
 // applied to the group by the stack (main.js). Rotation comes next.
 
 import { computeStrataLayout } from '../geometry/secondary-strata-geometry.js';
-import { standardBandCenterline, pointsToPath } from '../geometry/focus-ring-geometry.js';
+import { standardBandCenterline, pointsToPath, getNodeSpacing } from '../geometry/focus-ring-geometry.js';
 
 const NS = 'http://www.w3.org/2000/svg';
 const NODE_RADIUS_RATIO = 0.035;      // matches the primary (index.js)
@@ -16,6 +16,17 @@ const BAND_THICKNESS_RATIO = 0.02;    // the primary band spans 0.99r–1.01r
 // side — the primary ring's unselected-node look — instead of sitting hard
 // against the left edge. Higher = reaches further back (Howell 2026-07-21).
 const MAG_LABEL_SPAN_PULL = 0.7;
+// THE PRIMARY'S LABEL MANNERS, for a ring that asks for them (O-128, Howell
+// 2026-09-14: the basement's bookmarks "should react to passing through the
+// Magnifier in the same way that the name nodes do in the Primary
+// Stratum Focus Ring"): a name sits BESIDE its node, end-anchored, a little
+// inward; passing the lens it swells on a bell — the primary's own curve,
+// peak 2.0, sigma 0.3 of a node spacing (focus-ring-view.js) — centred on
+// the node and scaled with it; settled in the lens it wears the magnified
+// label, centred, at the lens's own size.
+const BESIDE_OFFSET = -1.3;          // node radii, along the node's angle (inward)
+const LENS_SCALE_PEAK = 2.0;
+const LENS_SCALE_SIGMA = 0.3;        // × node spacing
 
 const svgEl = (tag, attrs) => {
   const n = document.createElementNS(NS, tag);
@@ -38,7 +49,7 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false } = {}) {
   if (!svg || !Array.isArray(items)) return null;
   // An EMPTY ring is a real state for the basement (O-126): a reader with no
   // bookmarks yet sees the band and the hollow lens and nothing on them —
@@ -55,7 +66,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // subtree persists across the filter change; with the signature skip, a
   // settled stratum's subtree persists the same way.
   const classes = typeof classFor === 'function' ? items.map(it => classFor(it) || '') : null;
-  const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height, classes]);
+  const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height, classes, Boolean(labelsBeside)]);
   // A nested <svg> per stratum, NOT a bare <g> (Howell 2026-07-27): iOS/WebKit
   // honors a CSS `filter` on an <svg> element (as on the #app root and the HTML
   // verse panel) but SILENTLY DROPS it on a <g>. So the recede BLUR rides this
@@ -111,21 +122,42 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // EVERY node is drawn (they stream through the empty lens, as on the primary);
   // once settled, the node in the lens (magIndex) is omitted and the filled
   // lodestar shows it instead, so nothing floats where the lens is anchored.
+  const sigma = getNodeSpacing(viewport) * LENS_SCALE_SIGMA;
+  const magAngle = layout.magnifier?.angle ?? null;
   layout.nodes.forEach(node => {
     if (!rotating && node.index === layout.magIndex) return;
+    // Passing the lens (labelsBeside only): the primary's bell, on the angle.
+    let magScale = 1;
+    if (labelsBeside && rotating && magAngle != null) {
+      const dist = Math.abs(node.angle - magAngle);
+      magScale = 1 + (LENS_SCALE_PEAK - 1) * Math.exp(-(dist * dist) / (2 * sigma * sigma));
+    }
     const circle = svgEl('circle', {
-      cx: node.x.toFixed(1), cy: node.y.toFixed(1), r: nodeR.toFixed(1),
+      cx: node.x.toFixed(1), cy: node.y.toFixed(1), r: (nodeR * magScale).toFixed(1),
       class: `secondary-strata-node${classes?.[node.index] ? ` ${classes[node.index]}` : ''}`
     });
     circle.dataset.index = String(node.index);
     g.appendChild(circle);
     const rotDeg = (node.angle * 180) / Math.PI + 180;
-    const label = svgEl('text', {
-      x: '0', y: '0', 'text-anchor': 'middle', 'dominant-baseline': 'middle',
-      class: 'secondary-strata-label',
-      transform: `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})`
-    });
     const raw = typeof labelFor === 'function' ? labelFor(items[node.index], false) : items[node.index];
+    let label;
+    if (labelsBeside && magScale <= 1.01) {
+      // Beside the node, end-anchored, a little inward — the primary's names.
+      const lx = node.x + Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
+      const ly = node.y + Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
+      label = svgEl('text', {
+        x: lx.toFixed(1), y: ly.toFixed(1), 'text-anchor': 'end', 'dominant-baseline': 'middle',
+        class: 'secondary-strata-label is-beside',
+        transform: `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`
+      });
+    } else {
+      // On the node — the numeral's seat, and the swelling name passing the lens.
+      label = svgEl('text', {
+        x: '0', y: '0', 'text-anchor': 'middle', 'dominant-baseline': 'middle',
+        class: `secondary-strata-label${magScale > 1.01 ? ' is-passing' : ''}`,
+        transform: `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`
+      });
+    }
     label.textContent = displayCase(String(raw ?? ''));
     g.appendChild(label);
   });
@@ -143,9 +175,10 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     class: 'secondary-strata-node is-magnified' + (rotating || !items.length ? ' lens-empty' : '') + magClass
   }));
   if (!rotating && items.length) {
-    // Centred for a central magnifier (the tertiary's), else start-anchored and
-    // pulled inward off the left edge (the secondary's, hard against it).
-    const pulled = !centerMagnified;
+    // Centred for a central magnifier (the tertiary's) and for a ring with the
+    // primary's manners (the basement's), else start-anchored and pulled
+    // inward off the left edge (the secondary's, hard against it).
+    const pulled = !centerMagnified && !labelsBeside;
     const magLabel = svgEl('text', {
       x: (pulled ? -magR * MAG_LABEL_SPAN_PULL : 0).toFixed(1), y: '0',
       'text-anchor': pulled ? 'start' : 'middle', 'dominant-baseline': 'middle',

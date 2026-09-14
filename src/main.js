@@ -261,7 +261,7 @@ const seatParts = key => { const at = key.lastIndexOf('@'); return at < 0 ? { id
 const keptSeat = key => { const { id, edition } = seatParts(key); return bookmarksOf(currentVolumeId).find(b => b.id === id && (b.edition ?? null) === edition) || null; };
 const currentEdition = () => dimensionBridge.getSelection()?.translation ?? null;
 const BASEMENT = {
-  id: 'basement', mirrored: true, allowEmpty: true,
+  id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   items: () => {
     // Kept seats in the volume's order — book, chapter, verse, edition — and
     // the loose ones (the arrival, anything dropped this visit) after them.
@@ -933,7 +933,7 @@ const strataBelow = below => { if (strataLayer?.classList) strataLayer.classList
 const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
   mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
-  classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty)
+  classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside)
 });
 
 function renderStack() {
