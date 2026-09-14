@@ -264,10 +264,23 @@ const BASEMENT = {
   selected: () => basementLens ?? basementArrival?.id ?? BASEMENT.items()[0] ?? null,
   select: id => { basementLens = id; return true; }
 };
+// The seat's label is the verse's full address as the instrument was showing
+// it at that moment — the Parent Button's words (book and chapter, in the
+// edition's own tongue and numerals) and the Magnifier's (the verse) — joined
+// as chapter and verse are everywhere: GENESIS I:12, ΓΕΝΕΣΙΣ α':12 (Howell,
+// 2026-09-14: "bookmarked nodes should display book, chapter and verse").
+// Read off the primary's own labels rather than rebuilt, so the seat says
+// exactly what the reader saw, in whatever form that edition writes it.
+function arrivalLabel(cur) {
+  const text = sel => (document.querySelector(`#app ${sel}`)?.textContent || '').trim();
+  const parent = text('.focus-ring-parent-label');
+  const verse = text('.focus-ring-magnifier-label:not(.focus-ring-parent-label)') || cur?.name || cur?.label || '';
+  return parent && verse ? `${parent}:${verse}` : (verse || parent || cur?.name || cur?.label || cur?.id || '');
+}
 function enterBasement() {
   const cur = currentApp?.nav?.getCurrent?.();
   basementLens = null; basementLoose = [];
-  basementArrival = cur?.id && detailSectorVisible ? { id: cur.id, label: cur.name || cur.label || cur.id } : null;
+  basementArrival = cur?.id && detailSectorVisible ? { id: cur.id, label: arrivalLabel(cur) } : null;
   if (basementArrival) { basementLabels[basementArrival.id] = basementArrival.label; basementLoose.push(basementArrival.id); }
 }
 function leaveBasement() {
