@@ -751,7 +751,7 @@ function setPrimaryVisual(scale, blurPx, away = null) {
   const offsetX = away?.offsetX || 0;
   const offsetY = away?.offsetY || 0;
   const opacity = away ? away.opacity : 1;
-  const scaled = scale < 0.999;
+  const scaled = Math.abs(scale - 1) > 0.001;   // receded (< 1) or past the head (> 1)
   const slid = Math.abs(offsetX) >= 0.5 || Math.abs(offsetY) >= 0.5 ? `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) ` : '';
   const tf = scaled || slid ? `${slid}${scaled ? scaleAboutCentre(scale) : ''}`.trim() : null;
   const filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
@@ -807,7 +807,7 @@ function setStratumVisual(el, scale, blurPx, opacity = 1, offsetX = 0, offsetY =
   // 2026-07-27, the strata half of the iOS blur fix).
   const inner = el.querySelector?.('.stratum-inner') || el;
   const still = Math.abs(offsetX) < 0.5 && Math.abs(offsetY) < 0.5;
-  if (scale > 0.999 && blurPx < 0.01 && opacity > 0.999 && still) {
+  if (Math.abs(scale - 1) < 0.001 && blurPx < 0.01 && opacity > 0.999 && still) {   // at rest — and 2.6× is not rest
     inner.removeAttribute('transform'); el.style.filter = ''; el.style.opacity = ''; return;
   }
   const slide = still ? '' : `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) `;
@@ -829,17 +829,17 @@ function applyStratumDepth(g, level) {
   setStratumVisual(g, STRATA_DEPTHS[level], STRATA_BLURS[level], 1);
 }
 
-// Where the primary goes when the basement is front. Howell's third phone
-// check, 2026-09-14: "The Detail Sector and Primary Stratum Focus Ring should
-// not recede into the distance as they do now. The user should pass through
-// them and they should fly behind the user's head, just as the Tertiary
-// Stratum does when migrating down to the Secondary Stratum." So the primary
-// LEAVES the way a departing chooser leaves — off along the diagonal, a
-// standard ring's home half being below — sharp and full-size, and is gone
-// (opacity 0) once off, since from the basement no floor above is visible.
-// (The second cut receded it along z to nothing, which read as the wrong
-// direction: going down is going FORWARD, through the floor.)
-const PRIMARY_GONE = () => ({ scale: 1, blur: 0, opacity: 0, offsetX: -viewport.width * STRATA_SLIDE_X, offsetY: viewport.height * STRATA_SLIDE_Y });
+// Where the primary goes when the basement is front. Howell's phone checks,
+// 2026-09-14: "The user should pass through them and they should fly behind
+// the user's head, just as the Tertiary Stratum does when migrating down to
+// the Secondary Stratum" — and then, on the geometry, one course the whole
+// way. So the primary LEAVES as a departing chooser leaves: it keeps scaling
+// about the centre past the film plane, sharp, out past the frame, gone only
+// at the end, since from the basement no floor above is visible. (The second
+// cut receded it into the distance — the wrong direction: going down is going
+// FORWARD, through the floor; the third slid it off on a diagonal — the
+// broken course.)
+const PRIMARY_GONE = () => ({ scale: EXIT_SCALE, blur: 0, opacity: 0, offsetX: 0, offsetY: 0 });
 // One render call shape for every plane, the basement included.
 const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
@@ -1084,14 +1084,20 @@ if (strataLayer) {
 // motion (the C.2 per-frame villain) and snapped back on settle, where the
 // receded planes are static again. Tunable feel knobs below.
 const STRATA_TWEEN_MS = 600;
-// Incoming/leaving strata TRAVEL in from / out to the left, DIAGONALLY: mostly
-// horizontal, with a vertical bias toward each ring's own home half — the
-// mirrored secondary from ABOVE-left, the standard tertiary from BELOW-left —
-// so the slide runs on the same diagonal the recede backs away on, not a flat
-// horizontal shift (Howell 2026-07-21). A translate (the whole ring travels),
-// NOT a scale about centre (which only inflates the edges and reads as a pop).
-const STRATA_SLIDE_X = 0.9;  // × viewport width
-const STRATA_SLIDE_Y = 0.4;  // × viewport height — the diagonal's vertical bias
+// ONE GEOMETRY THE WHOLE WAY (O-126, Howell's phone check 2026-09-14). A
+// plane behind the film plane recedes by a scale about the viewport centre —
+// every point on it moves on a radial course from the centre. A plane
+// arriving from, or leaving to, "behind the user's head" used to TRAVEL
+// instead: a translate along a fixed diagonal (Howell 2026-07-21 — the
+// entering plane then started a hair past 100% and a scale read "as a pop").
+// Two transforms, so at 100% the course broke; he tracked the Secondary's
+// magnifier: "approximately 265 degrees (almost due West)... As soon as the
+// Secondary Stratum passes through its 100% scale... its course suddenly
+// shifts to approximately 215 degrees." A truck keeps ONE geometry: past the
+// film plane the plane goes on scaling about the same centre, out past the
+// frame, and fades only at the end of its flight; entering, the reverse. The
+// diagonal slide is retired, and its two constants with it.
+const EXIT_SCALE = 2.6;   // where a plane is "behind the head": off the frame on every side
 const lerp = (a, b, t) => a + (b - a) * t;
 const easeInOut = t => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);
 let strataAnim = null;
@@ -1145,25 +1151,20 @@ function beginGlide(fromFront, toFront) {
       mirrored: ch.mirrored, labelFor: ch.label,
       centerMagnified: ch.centerMag
     });
-    // Slide diagonally in from / out to the left: the vertical bias follows
-    // each ring's home half (mirrored ⇒ from above, standard ⇒ from below), so
-    // the whole ring travels on the recede's diagonal. Full opacity — the
-    // travel carries it in, no fade.
-    const dx = -viewport.width * STRATA_SLIDE_X;
-    const dy = (ch.mirrored ? -1 : 1) * viewport.height * STRATA_SLIDE_Y;
-    if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], offsetX: dx, offsetY: dy };
-    if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], offsetX: dx, offsetY: dy };
+    // Past the film plane the plane keeps scaling about the same centre — the
+    // course the magnifier was already on — and is gone only off the frame.
+    if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], scale: EXIT_SCALE, opacity: 0 };
+    if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], scale: EXIT_SCALE, opacity: 0 };
   });
-  // THE BASEMENT'S RING (O-126) travels in and out on the same diagonal as a
-  // chooser's — a mirrored ring, so from above-left — while the primary goes
-  // along the z-axis; rendered only when one end of the glide is the basement.
+  // THE BASEMENT'S RING (O-126): the reader trucks IN through the main floor
+  // to reach it, so it comes up from the distance the way a chooser does and
+  // goes back down the same way; rendered only when one end is the basement.
   if (fromFront < 0 || toFront < 0) {
     const items = BASEMENT.items();
     groups[BASEMENT.id] = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
-    const dx = -viewport.width * STRATA_SLIDE_X;
-    const dy = -viewport.height * STRATA_SLIDE_Y;   // mirrored ⇒ from above
-    if (fromFront >= 0 && toFront < 0) from[BASEMENT.id] = { ...to[BASEMENT.id], offsetX: dx, offsetY: dy };
-    if (fromFront < 0 && toFront >= 0) to[BASEMENT.id] = { ...from[BASEMENT.id], offsetX: dx, offsetY: dy };
+    const far = { scale: STRATA_DEPTHS[STRATA_DEPTHS.length - 1], blur: STRATA_BLURS[STRATA_BLURS.length - 1], opacity: 0, offsetX: 0, offsetY: 0 };
+    if (fromFront >= 0 && toFront < 0) from[BASEMENT.id] = far;
+    if (fromFront < 0 && toFront >= 0) to[BASEMENT.id] = far;
   } else hideStratum(strataLayer, BASEMENT.id);
 
   // Populate the primary's tangent chain for the DESTINATION now, so the links
@@ -1172,6 +1173,12 @@ function beginGlide(fromFront, toFront) {
     currentApp.setTangentFill(STRATA_TANGENT_SPANS[toFront] || 0);
   }
 
+  // A plane's opacity across its flight: whole for most of the way, gone only
+  // at the end; and arriving, present once it is well inside the frame. A
+  // plane that is visible at both ends simply stays whole.
+  const fadeAt = (f, t, e) => (f > 0.5 && t < 0.5 ? 1 - Math.max(0, (e - 0.6) / 0.4)
+    : f < 0.5 && t > 0.5 ? Math.min(1, e / 0.4)
+    : lerp(f, t, e));
   const glide = {
     e: 0,
     // Hold each plane's STARTING blur through the motion — a receded plane must
@@ -1183,18 +1190,12 @@ function beginGlide(fromFront, toFront) {
     frameAt(e) {
       glide.e = e;
       setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
-        offsetX: lerp(from.__primary.offsetX || 0, to.__primary.offsetX || 0, e),
-        offsetY: lerp(from.__primary.offsetY || 0, to.__primary.offsetY || 0, e),
-        // Whole for most of the flight past the head, gone only at its end;
-        // and back the same way — appearing once it is well inside the frame.
-        opacity: toFront < 0 ? 1 - Math.max(0, (e - 0.6) / 0.4)
-          : fromFront < 0 ? Math.max(0, (e - 0.4) / 0.6)
-          : lerp(from.__primary.opacity, to.__primary.opacity, e)
+        opacity: fadeAt(from.__primary.opacity, to.__primary.opacity, e)
       });
       [...CHOOSERS, BASEMENT].forEach(ch => {
         const g = groups[ch.id]; if (!g) return;
         const f = from[ch.id], t = to[ch.id];
-        setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, lerp(f.opacity, t.opacity, e),
+        setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, fadeAt(f.opacity, t.opacity, e),
           lerp(f.offsetX || 0, t.offsetX || 0, e), lerp(f.offsetY || 0, t.offsetY || 0, e));
       });
     },

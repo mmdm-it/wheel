@@ -189,10 +189,20 @@ receded layer: the upper floors are lenses over the reading and keep the
 Primary painted behind the glass, live; the basement has no glass and
 nothing behind it. Going down is going FORWARD: the reader passes through
 the main floor, and the Primary — ring, Detail Sector, margin — flies behind
-the head exactly as a departing Tertiary does when the reader migrates down
-to the Secondary: off along the diagonal, sharp and whole, gone once off;
-the basement's ring travels in on the same diagonal a chooser's does. Coming
-up reverses it. *(Three phone checks on 2026-09-14 shaped this: the first
+the head exactly as a departing Tertiary does when the reader trucks in to
+the Secondary; the basement's ring comes up from the distance as a chooser
+does. Coming up reverses it.
+
+**One geometry the whole way** (his fourth check, 2026-09-14). A plane
+behind the film plane recedes by a scale about the viewport centre, so
+every point on it — the magnifier is the one to watch — moves on a radial
+course from the centre. Past 100% the plane used to *slide* off along a
+fixed diagonal (ruled 2026-07-21, when an entering plane that started a
+hair past 100% by scale read as a pop), and at 100% the course broke: "265
+degrees... suddenly shifts to approximately 215 degrees." A truck keeps the
+one transform: past the film plane a plane goes on scaling about the same
+centre, out past the frame (2.6×), and fades only at the end of its flight;
+entering, the reverse. The diagonal slide is retired. *(Three phone checks on 2026-09-14 shaped this: the first
 cut slid the Primary up and the ring in from below — "along the imaginary
 z-axis, the same as the migration to and from the upper floors"; the second
 receded it into the distance — "backwards... they should fly behind the
