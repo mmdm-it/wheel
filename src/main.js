@@ -1185,6 +1185,15 @@ function layerStates(front) {
 // visit) changes inside a glide; that is the caller's, at the settle.
 function beginGlide(fromFront, toFront) {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
+  // A truck begun while a chooser ring is mid-turn (a second finger, or a
+  // springback still gliding) must not leave that turn dangling: its drag,
+  // its snap and its uncommitted PREVIEW are dropped here, so the floors
+  // render from committed state and no preview edition outlives the ring it
+  // was previewed on.
+  if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; }
+  strataDrag = null;
+  strataPreview = null;
+  lastPreviewKey = null;
   if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
   if (strataHit) strataHit.style.pointerEvents = 'none';
   const from = layerStates(fromFront);
