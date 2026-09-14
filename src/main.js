@@ -301,11 +301,35 @@ function enterBasement() {
 function jumpToChosen() {
   const chosen = basementLens, arrived = basementArrival?.id ?? null;
   if (!chosen || chosen === arrived || !currentApp) return;
-  const item = itemForLeaf(chosen);   // this edition's seat on the shared leaf, if the ring up holds it
-  if (item && typeof currentApp.glideToItem === 'function') { currentApp.glideToItem(item.id, 0); return; }
-  // Not on the ring up — at root, on a book or a chapter ring: the adapter
-  // seats the primary at the leaf, drilling for the reader (O-129).
-  try { seatAtLeaf(chosen, currentApp); } catch (_) { /* the ring stays as it was */ }
+  const seatHere = () => {
+    const item = itemForLeaf(chosen);   // this edition's seat on the shared leaf, if the ring up holds it
+    if (item && typeof currentApp.glideToItem === 'function') { currentApp.glideToItem(item.id, 0); return true; }
+    // Not on the ring up — at root, on a book or a chapter ring: the adapter
+    // seats the primary at the leaf, drilling for the reader (O-129).
+    try { return Boolean(seatAtLeaf(chosen, currentApp)); } catch (_) { return false; }
+  };
+  // A BOOKMARK CARRIES ITS EDITION (Howell, 2026-09-14: a bookmark for the
+  // Italian ESODO 25:37 chosen from the Hebrew "takes the user to Hebrew
+  // Exodus 25:37, instead of Italian ESODO 25:37 as it should"). The seat is
+  // the leaf, so it can be found in any edition; the bookmark says which
+  // edition the reader was in, and the return goes there. Seat first in the
+  // edition up — unseen, the floor is still dark — then commit the bookmark's
+  // edition, and the ordinary reseat carries the reader across to the same
+  // leaf in that tongue. When the edition up does not seat the leaf at all,
+  // the edition changes first and the seating follows its reseat.
+  const kept = bookmarksOf(currentVolumeId).find(b => b.id === chosen);
+  const want = kept?.edition || null;
+  const here = dimensionBridge.getSelection()?.translation || null;
+  if (!want || want === here) { seatHere(); return; }
+  const seated = seatHere();
+  // O-72's position filter would refuse an edition that does not hold the
+  // seat the reader is leaving; the bookmark's edition holds the seat they
+  // are going to, so the filter is lifted for the commit and re-read after.
+  dimensionBridge.setEditionsHere(null);
+  const committed = dimensionBridge.setTranslation(want);
+  if (!committed) { refreshEditionsHere(); return; }
+  if (!seated) editionSettlePromise.then(() => { seatHere(); refreshEditionsHere(); }).catch(() => {});
+  else editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
 }
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
@@ -1392,6 +1416,7 @@ function resetStrata() {
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
+let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
 let cornerImageAt = () => null;
@@ -3776,7 +3801,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // the same index, and sometimes not the same number. A volume that returns
     // false (or declares no handler) keeps the reader exactly where they are,
     // which is the right answer whenever the editions agree.
-    Promise.resolve(config.onEditionSettle?.(translation || null))
+    editionSettlePromise = Promise.resolve(config.onEditionSettle?.(translation || null))
       .then(() => handlerSet.reseatOnEditionChange?.({
         selected: app?.nav?.getCurrent?.(), app
       }))
