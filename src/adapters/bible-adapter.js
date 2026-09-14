@@ -552,6 +552,17 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // O-76's rule, for the same reason: they asked for this edition, and an
       // edition's beginning is where an arrival belongs.
       if (target < 0) target = 0;
+      // THE CACHED CHAINS ARE THE OLD EDITION'S (Howell, 2026-09-14, from the
+      // phone: Latin to Apocalypsis 22:21, out to root, the Greek chosen
+      // there, drilled to Genesis 1 — "No verses are visible"). The verse
+      // chain and the chapters cache were built for the edition the reader
+      // was READING and survived the change made at root; a chapter of the
+      // new edition then looked for its verses in the old edition's chain,
+      // under the old edition's book ids, and found none. Dropped here, as
+      // the leaf and chapter branches below have always dropped them.
+      verseChainItems = null;
+      verseChainEdition = null;
+      chapterChainItems = null;
       app.setPrimaryItems(items, target, true);
       return true;
     }
@@ -699,7 +710,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // the ring and the sky disagree, which is the defect E3 exists for. There
     // is one source now: the same chain the ring is built from.
     const edition = options?.activeEdition || options?.translation || null;
-    const chain = verseChainItems || buildBibleVerseChain(manifest, { edition }).items;
+    // Only a chain built for THIS edition may answer for a chapter's verses
+    // (the same guard the chain accessor keeps; the cache is edition-keyed).
+    const chain = (verseChainItems && verseChainEdition === edition) ? verseChainItems : buildBibleVerseChain(manifest, { edition }).items;
     const wanted = chapterItem.id;
     const seats = [];
     for (const it of chain) {
