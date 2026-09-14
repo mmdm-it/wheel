@@ -10,6 +10,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
+import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
@@ -229,7 +230,67 @@ const CHOOSERS = [
       return ok;
     } }
 ];
-let strataFront = 0;                       // 0 = primary at front
+let strataFront = 0;                       // 0 = primary at front; -1 = the basement (O-126)
+// ── THE BASEMENT — the Zero Stratum (O-126, Howell 2026-09-14) ─────────────
+// "If you think of the app as a building, the Zero Stratum is the basement,
+// the Primary Stratum is the Main Floor, the Secondary and Tertiary Strata
+// are the upper floors. The user can look down from the upper floors and see
+// below as far as the Main Floor, but cannot see the basement from any floor
+// above." Reached by sliding the globe DOWN. Its ring looks like the
+// Secondary's (the mirrored arc, lower-left to upper-right) and holds the
+// reader's BOOKMARKS (src/core/bookmarks.js); nothing stands behind it —
+// the primary is not receded and blurred, it LEAVES.
+//
+// THE DESCENT CARRIES THE VERSE: sliding down from a leaf brings the verse
+// the reader was on down with them as a PROVISIONAL seat — hollow — beside
+// the kept ones. A tap on the lens keeps the seat under it (or drops a kept
+// one, which stays on the ring hollow until the reader leaves). Sliding up
+// with a kept bookmark under the lens returns the main floor and the ring
+// travels to that verse; with the provisional (the verse they came from)
+// under the lens, or with an empty ring, the main floor returns as it was.
+let basementArrival = null;   // { id, label } — the verse the reader came down with, or null
+let basementLens = null;      // the seat last settled under the lens this visit, or null
+let basementLoose = [];       // seats shown hollow this visit: the arrival, and any dropped
+const basementLabels = {};    // labels remembered for loose seats, so re-keeping keeps the name
+const BASEMENT = {
+  id: 'basement', mirrored: true, allowEmpty: true,
+  items: () => {
+    const ids = bookmarksOf(currentVolumeId).map(b => b.id);
+    for (const id of basementLoose) if (!ids.includes(id)) ids.push(id);
+    return ids;
+  },
+  label: id => bookmarksOf(currentVolumeId).find(b => b.id === id)?.label || basementLabels[id] || id,
+  classFor: id => (isBookmarked(currentVolumeId, id) ? '' : 'is-provisional'),
+  selected: () => basementLens ?? basementArrival?.id ?? BASEMENT.items()[0] ?? null,
+  select: id => { basementLens = id; return true; }
+};
+function enterBasement() {
+  const cur = currentApp?.nav?.getCurrent?.();
+  basementLens = null; basementLoose = [];
+  basementArrival = cur?.id && detailSectorVisible ? { id: cur.id, label: cur.name || cur.label || cur.id } : null;
+  if (basementArrival) { basementLabels[basementArrival.id] = basementArrival.label; basementLoose.push(basementArrival.id); }
+}
+function leaveBasement() {
+  const chosen = basementLens, arrived = basementArrival?.id ?? null;
+  basementArrival = null; basementLens = null; basementLoose = [];
+  if (chosen && chosen !== arrived && typeof currentApp?.glideToItem === 'function') {
+    // The floor comes back first; then the ring makes its own journey to the
+    // seat — never a faked arrival (O-123's reason).
+    setTimeout(() => { currentApp?.glideToItem?.(chosen, 600); }, STRATA_TWEEN_MS);
+  }
+}
+function toggleKeep(id) {
+  const vol = currentVolumeId;
+  if (!vol || !id) return false;
+  if (isBookmarked(vol, id)) {
+    basementLabels[id] = BASEMENT.label(id);
+    dropBookmark(vol, id);
+    if (!basementLoose.includes(id)) basementLoose.push(id);
+  } else {
+    keepBookmark(vol, { id, label: BASEMENT.label(id), edition: dimensionBridge.getSelection()?.translation ?? null });
+  }
+  return true;
+}
 // THE LIVE PREVIEW (Howell 2026-07-30): while a chooser ring is being turned,
 // everything AHEAD of it (nearer the reader) follows the node passing under
 // the lens, before anything commits — turn the language wheel and the receded
@@ -683,9 +744,15 @@ function scaleAboutCentre(scale) {
 // the off-screen hub — Disney multiplane) plus a rack-focus blur. These
 // setters apply an ARBITRARY scale/blur/opacity, so the settled snap and the
 // animated tween drive the same pixels through one path.
-function setPrimaryVisual(scale, blurPx) {
+function setPrimaryVisual(scale, blurPx, away = null) {
+  // `away` (O-126): the DESCENT to the basement. The primary is not receded
+  // and blurred — it LEAVES, sliding up out of view and fading, because from
+  // the basement no floor above is visible. { offsetY, opacity }, or null.
+  const offsetY = away?.offsetY || 0;
+  const opacity = away ? away.opacity : 1;
   const scaled = scale < 0.999;
-  const tf = scaled ? scaleAboutCentre(scale) : null;
+  const slid = Math.abs(offsetY) >= 0.5 ? `translate(0 ${offsetY.toFixed(1)}) ` : '';
+  const tf = scaled || slid ? `${slid}${scaled ? scaleAboutCentre(scale) : ''}`.trim() : null;
   const filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
   // The scale (recede) rides the child groups; the BLUR rides the #app <svg>
   // ROOT (Howell 2026-07-27, WebKit fix, phase 1). WebKit silently ignores
@@ -703,7 +770,7 @@ function setPrimaryVisual(scale, blurPx) {
     g.style.filter = ''; // never on the child group — WebKit drops it
   });
   const app = document.getElementById('app');
-  if (app) app.style.filter = filter;
+  if (app) { app.style.filter = filter; app.style.opacity = opacity < 0.999 ? String(opacity) : ''; }
   // EVERY HTML OVERLAY THAT BELONGS TO THE PRIMARY PLANE RECEDES WITH IT.
   // The verse panel was the only one when this was written; the margin and the
   // marks beside the verse arrived later and stayed sharp and full-size while
@@ -726,8 +793,9 @@ function setPrimaryVisual(scale, blurPx) {
     // getBoundingClientRect here slid the origin on a second recede, Howell
     // 2026-07-21.)
     panel.style.transformOrigin = `${cx}px ${cy}px`;
-    panel.style.transform = scaled ? `scale(${scale})` : '';
+    panel.style.transform = `${slid ? `translateY(${offsetY.toFixed(1)}px) ` : ''}${scaled ? `scale(${scale})` : ''}`.trim();
     panel.style.filter = filter;
+    panel.style.opacity = opacity < 0.999 ? String(opacity) : '';
   }
   }
 }
@@ -760,7 +828,26 @@ function applyStratumDepth(g, level) {
   setStratumVisual(g, STRATA_DEPTHS[level], STRATA_BLURS[level], 1);
 }
 
+// Where the primary goes when the basement is front: up and out of view.
+const PRIMARY_GONE = () => ({ offsetY: -viewport.height * 0.6, opacity: 0 });
+// One render call shape for every plane, the basement included.
+const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
+  id: ch.id, viewport, items, selectedIndex,
+  mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
+  classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty)
+});
+
 function renderStack() {
+  if (strataFront < 0) {
+    // THE BASEMENT IS FRONT (O-126): the primary has left, the choosers are
+    // not in play, and the basement's ring stands alone with nothing behind.
+    setPrimaryVisual(1, 0, PRIMARY_GONE());
+    CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
+    const items = BASEMENT.items();
+    const g = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
+    if (g) setStratumVisual(g, 1, 0, 1);
+  } else {
+  hideStratum(strataLayer, BASEMENT.id);
   applyPrimaryDepth(strataFront); // primary is stack position 0; its level == front
   // Choosers are positions 1..N. Render (front to back so the SVG z-order —
   // last child on top — puts the front stratum highest) any at or ahead of
@@ -781,12 +868,13 @@ function renderStack() {
     });
     applyStratumDepth(g, strataFront - pos);
   });
+  }
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
   // The front stratum is drag-rotatable; the layer and its full-area hit target
   // catch pointer events ONLY while a stratum is front — at the primary they
   // stay out of the way so the ring below gets every tap and swipe.
   if (strataLayer) {
-    const strataLive = strataFront > 0;
+    const strataLive = strataFront !== 0;   // a chooser above, or the basement below
     strataLayer.style.pointerEvents = strataLive ? 'auto' : 'none';
     // Q12 (0c): hidden from assistive technology while inactive, exposed while
     // live. index.html carries aria-hidden="true" as the BOOT state, which is
@@ -801,7 +889,7 @@ function renderStack() {
     if (strataLive) strataLayer.removeAttribute('aria-hidden');
     else strataLayer.setAttribute('aria-hidden', 'true');
   }
-  if (strataHit) strataHit.style.pointerEvents = strataFront > 0 ? 'auto' : 'none';
+  if (strataHit) strataHit.style.pointerEvents = strataFront !== 0 ? 'auto' : 'none';
 }
 
 // ── Magnifier-as-selection: rotate the front stratum (D.4a) ────────────────
@@ -822,7 +910,7 @@ let strataDrag = null;            // { items, center, spacing, lastX/Y, startX/Y
 let strataSnap = null;            // rAF id of an in-flight springback / snap glide
 const clampCenter = (c, n) => Math.max(0, Math.min(n - 1, c));
 const clampDrag = (c, n) => Math.max(-STRATA_OVERRUN, Math.min(n - 1 + STRATA_OVERRUN, c));
-const activeChooser = () => (strataFront > 0 ? CHOOSERS[strataFront - 1] : null);
+const activeChooser = () => (strataFront > 0 ? CHOOSERS[strataFront - 1] : strataFront < 0 ? BASEMENT : null);
 
 // The real node nearest a tap point (for tap-to-magnifier), or null if the tap
 // is nearest the lodestar (already selected — no move) or out in empty space.
@@ -844,6 +932,15 @@ function nodeIndexNearPoint(event, ch) {
   return best != null && bd <= viewport.SSd * 0.14 ? best : null;
 }
 
+// Is the press on the lodestar itself?
+function lensHit(event, ch) {
+  const lens = strataLayer?.querySelector(`#${ch.id} .secondary-strata-node.is-magnified`);
+  if (!lens) return false;
+  const rect = strataLayer.getBoundingClientRect();
+  const x = event.clientX - rect.left, y = event.clientY - rect.top;
+  return Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= viewport.SSd * 0.09;
+}
+
 // Re-render ONLY the front stratum at a (fractional) center index, front depth.
 // rotating (default) = the empty hollow lens with every node streaming through;
 // false = the settled, filled lodestar (used at the end of the springback).
@@ -851,14 +948,9 @@ function renderFrontStratumAt(centerIndex, rotating = true) {
   const ch = activeChooser();
   if (!ch) return;
   const items = ch.items();
-  const g = renderStratum(strataLayer, {
-    id: ch.id, viewport, items,
-    selectedIndex: centerIndex,
-    mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag,
-    rotating
-  });
-  setStratumVisual(g, 1, 0, 1); // front plane: sharp, in place
-  if (rotating) previewFromLens(ch, items, centerIndex);
+  const g = renderStratum(strataLayer, stratumOpts(ch, items, centerIndex, rotating));
+  if (g) setStratumVisual(g, 1, 0, 1); // front plane: sharp, in place
+  if (rotating && ch !== BASEMENT) previewFromLens(ch, items, centerIndex);
 }
 
 // What is under the lens RIGHT NOW, previewed into every plane ahead of this
@@ -963,7 +1055,12 @@ if (strataLayer) {
       if (!moved && type === 'pointerup') {
         const tapped = nodeIndexNearPoint(event, ch);
         if (tapped != null) target = tapped;
+        // THE LENS KEEPS (O-126): in the basement, a tap on the lens itself
+        // keeps the seat under it, or drops a kept one — the one gesture the
+        // basement adds, on the one control that means "here".
+        else if (ch === BASEMENT && items.length && lensHit(event, ch)) toggleKeep(items[target]);
       }
+      if (!items.length) return;   // an empty basement: nothing to settle
       springbackStrata(center, target, ch, items);
     })
   );
@@ -991,7 +1088,13 @@ let strataAnim = null;
 
 // Each plane's settled visual for a given front (level < 0 ⇒ off-stack, hidden).
 function layerStates(front) {
-  const states = { __primary: { scale: STRATA_DEPTHS[front], blur: STRATA_BLURS[front], opacity: 1, offsetX: 0, offsetY: 0 } };
+  const below = front < 0;   // the basement is front: the primary is GONE, not receded (O-126)
+  const states = { __primary: below
+    ? { scale: 1, blur: 0, ...PRIMARY_GONE(), offsetX: 0 }
+    : { scale: STRATA_DEPTHS[front], blur: STRATA_BLURS[front], opacity: 1, offsetX: 0, offsetY: 0 } };
+  states[BASEMENT.id] = below
+    ? { scale: 1, blur: 0, opacity: 1, offsetX: 0, offsetY: 0 }
+    : { scale: 1, blur: 0, opacity: 0, offsetX: 0, offsetY: viewport.height * 0.9 };   // waits below the floor
   CHOOSERS.forEach((ch, ci) => {
     const level = front - (ci + 1);
     states[ch.id] = level >= 0
@@ -1032,6 +1135,13 @@ function transitionStrata(fromFront, toFront) {
     if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], offsetX: dx, offsetY: dy };
   });
 
+  // THE BASEMENT'S RING (O-126) rises from below the floor on the descent and
+  // sinks back on the way up; it is rendered only when one end is the basement.
+  if (fromFront < 0 || toFront < 0) {
+    const items = BASEMENT.items();
+    groups[BASEMENT.id] = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
+  } else hideStratum(strataLayer, BASEMENT.id);
+
   // Populate the primary's tangent chain for the DESTINATION now, so the links
   // are already there as it recedes (static re-render, off the per-frame path).
   if (currentApp && typeof currentApp.setTangentFill === 'function') {
@@ -1047,8 +1157,11 @@ function transitionStrata(fromFront, toFront) {
     // never sharpen (Howell 2026-07-21); a front plane holds 0 and recedes
     // sharp as before. Constant radius = the blurred layer renders once, only
     // the scale moves. Blur snaps to its destination on settle (renderStack).
-    setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), from.__primary.blur);
-    CHOOSERS.forEach(ch => {
+    setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), from.__primary.blur, {
+      offsetY: lerp(from.__primary.offsetY || 0, to.__primary.offsetY || 0, e),
+      opacity: lerp(from.__primary.opacity, to.__primary.opacity, e)
+    });
+    [...CHOOSERS, BASEMENT].forEach(ch => {
       const g = groups[ch.id]; if (!g) return;
       const f = from[ch.id], t = to[ch.id];
       setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, lerp(f.opacity, t.opacity, e),
@@ -1077,13 +1190,18 @@ const maxStrataFront = () => CHOOSERS.length; // primary(0) → secondary(1) →
 // asked the reader to move AWAY from the text in order to narrow their
 // choice. A returning reader mostly presses this never — they just read — so
 // the funnel's coherence is worth more than keeping any one chooser nearest.
-function cycleStrata() {
-  if (!dimensionAvailable()) return;
-  const max = maxStrataFront();
+const minStrataFront = () => -1;   // the basement (O-126) — one floor below the text
+// GO TO A FLOOR (O-126). The slider addresses a stratum directly, in either
+// direction; the tap still cycles inward through this. Returns whether
+// anything moved.
+function goToStratum(to) {
+  if (!dimensionAvailable()) return false;
+  to = Math.max(minStrataFront(), Math.min(maxStrataFront(), Math.round(to)));
   const from = strataFront;
-  strataFront = strataFront <= 0 ? max : strataFront - 1;
-  if (from === strataFront) return;
-  transitionStrata(from, strataFront);
+  if (from === to) return false;
+  if (to < 0) enterBasement();          // the descent carries the verse
+  strataFront = to;
+  transitionStrata(from, to);
   // ARRIVAL AT THE TEXT ENDS THE LAUNCH FUNNEL (O-77), and this is the only
   // other way in: `resetStrata` catches the reader who is carried out, this
   // catches the reader who WALKS in, which is the path the funnel was built
@@ -1091,10 +1209,16 @@ function cycleStrata() {
   // departing planes render their nodes one last time inside
   // `transitionStrata`, and a ring that loses a node while it is gliding away
   // is the very flicker this ruling exists to stop.
-  if (strataFront === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
+  if (to === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
+  if (from < 0) leaveBasement();        // back up — to the bookmark under the lens, if one
   // The globe turns with the recede — same duration, settling together.
   if (dimensionGlobe) dimensionGlobe.spin(STRATA_TWEEN_MS);
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
+  placeThumb();
+  return true;
+}
+function cycleStrata() {
+  goToStratum(strataFront <= 0 ? maxStrataFront() : strataFront - 1);
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
@@ -1102,8 +1226,11 @@ function resetStrata() {
   // the globe answers the sideways question and O-72's filter is right again.
   bootFunnelOpen = false;
   strataFront = 0;
+  basementArrival = null; basementLens = null; basementLoose = [];
   CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
+  hideStratum(strataLayer, BASEMENT.id);
   renderStack();
+  placeThumb();
 }
 // The globe shows only where a dimension EXISTS and the reader stands at one
 // of the two language-question moments (Howell 2026-07-27): a LEAF (detail
@@ -1375,6 +1502,7 @@ function updateDimensionButton() {
   const show = dimensionAvailable() && (detailSectorVisible || atFrontDoor || isStrataOpen());
   const arriving = show && dimensionButton.hidden;
   dimensionButton.hidden = !show;
+  if (show) placeThumb();   // measured while visible (O-126)
   // The entrance: the globe appears with a quick turn when the detail
   // sector brings it in (Howell 2026-07-22) — EXCEPT when a wipe reveals
   // it: then it arrives static, part of the image, and says hello only
@@ -1406,8 +1534,89 @@ function openBootFunnel() {
   updateDimensionButton();
   return true;
 }
+// ── THE GLOBE IS A SLIDER (O-126, Howell 2026-09-14) ───────────────────────
+// "The dimension button has always been a little awkward, tapping to
+// traverse the different strata. I'd rather make it a slider." Its vertical
+// position IS the stratum: home is the text; one notch up the editions, two
+// the languages; one notch DOWN the basement. Dragging it crosses the notches
+// live — each crossing is the same transition a tap made — and the release
+// snaps to the nearest. A tap (no travel) still cycles inward, so the launch
+// funnel's "two quick taps" stay true. The ghost notches — Howell's three
+// circles — show only while the thumb is held.
+const NOTCH_RATIO = 1.25;   // notch spacing, in button heights
+let slide = null;           // { startY, startFront, lastY, moved }
+let suppressClick = false;  // a drag's release must not also count as a tap
+const notchPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64) * NOTCH_RATIO;
+const dimensionTrack = (() => {
+  if (!dimensionButton || typeof document === 'undefined') return null;
+  try {
+    const t = document.createElement('div');
+    t.id = 'dimension-track';
+    t.setAttribute('aria-hidden', 'true');
+    dimensionButton.parentNode?.insertBefore?.(t, dimensionButton);
+    return t;
+  } catch (_) { return null; }   // a DOM stub without the trimmings: no track, no harm
+})();
+function placeThumb() {
+  if (!dimensionButton || slide) return;   // a held thumb follows the finger, not the state
+  try { dimensionButton.style.setProperty('--thumb-y', `${(-strataFront * notchPx()).toFixed(1)}px`); } catch (_) { /* stub DOM */ }
+}
+function showTrack(show) {
+  if (!dimensionTrack?.classList) return;
+  if (show) {
+    while (dimensionTrack.firstChild) dimensionTrack.removeChild(dimensionTrack.firstChild);
+    const step = notchPx();
+    for (let n = minStrataFront(); n <= maxStrataFront(); n += 1) {
+      const c = document.createElement('div');
+      c.className = 'dimension-notch';
+      c.style.setProperty('--notch-y', `${(-n * step).toFixed(1)}px`);
+      dimensionTrack.appendChild(c);
+    }
+  }
+  dimensionTrack.classList.toggle('is-showing', Boolean(show));
+}
 if (dimensionButton) {
-  dimensionButton.addEventListener('click', cycleStrata);
+  dimensionButton.addEventListener('pointerdown', event => {
+    if (!dimensionAvailable()) return;
+    slide = { startY: event.clientY, lastY: event.clientY, startFront: strataFront, moved: false };
+    try { dimensionButton.setPointerCapture(event.pointerId); } catch (_) { /* unsupported */ }
+  });
+  dimensionButton.addEventListener('pointermove', event => {
+    if (!slide) return;
+    slide.lastY = event.clientY;
+    const dy = slide.startY - event.clientY;   // up is positive: toward the languages
+    if (!slide.moved) {
+      if (Math.abs(dy) <= STRATA_TAP_SLOP) return;
+      slide.moved = true;
+      dimensionButton.classList.add('is-sliding');
+      showTrack(true);
+    }
+    const step = notchPx();
+    const y = Math.max(minStrataFront() * step, Math.min(maxStrataFront() * step, slide.startFront * step + dy));
+    dimensionButton.style.setProperty('--thumb-y', `${(-y).toFixed(1)}px`);
+    const notch = Math.round(y / step);
+    if (notch !== strataFront) goToStratum(notch);
+  });
+  const release = () => {
+    if (!slide) return;
+    const { moved, startY, lastY, startFront } = slide;
+    slide = null;
+    dimensionButton.classList.remove('is-sliding');
+    showTrack(false);
+    if (moved) {
+      suppressClick = true;
+      const step = notchPx();
+      const y = Math.max(minStrataFront() * step, Math.min(maxStrataFront() * step, startFront * step + (startY - lastY)));
+      const notch = Math.round(y / step);
+      if (notch !== strataFront) goToStratum(notch);
+    }
+    placeThumb();
+  };
+  ['pointerup', 'pointercancel'].forEach(type => dimensionButton.addEventListener(type, release));
+  dimensionButton.addEventListener('click', () => {
+    if (suppressClick) { suppressClick = false; return; }
+    cycleStrata();
+  });
 }
 // THE PROOFREADER'S SHORTCUT (O-123, Howell 2026-08-31: "I want you to cheat,
 // just for the sake of proofreading... count nodes between the origin verse
@@ -1468,7 +1677,12 @@ if (typeof window !== 'undefined') {
     funnel: () => bootFunnelOpen,
     // How far the strata have travelled: 0 = the reader is at the text.
     front: () => strataFront,
-    cycle: cycleStrata
+    cycle: cycleStrata,
+    // O-126: the slider's address, and the basement's state.
+    slide: goToStratum,
+    min: minStrataFront,
+    basement: () => ({ arrival: basementArrival, lens: basementLens, items: BASEMENT.items(), kept: bookmarksOf(currentVolumeId).map(b => b.id) }),
+    keep: toggleKeep
   };
 }
 const tapDebugEnabled = new URLSearchParams(window.location.search).get('tapdebug') === '1';

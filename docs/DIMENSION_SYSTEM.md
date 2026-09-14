@@ -138,10 +138,13 @@ Four rules, as he stated them:
    tests `detailSectorVisible` as its stand-in for "at a leaf", and that
    stand-in reads false once the Detail Sector recedes; `isStrataOpen()` in
    `updateDimensionButton` patches the stand-in. It is not a third state.)*
-2. **Migration between strata occurs ONLY by tapping the globe.** Settling a
+2. **Migration between strata occurs ONLY by the globe.** Settling a
    language does not bring the Secondary forward — it restocks the Secondary
-   *behind* the Tertiary. The cycle runs inward, Tertiary → Secondary →
-   Primary, one tap each.
+   *behind* the Tertiary. *(Amended under O-126, 2026-09-14: the globe is a
+   SLIDER now — see "The slider and the basement" below. Its position is the
+   stratum: two notches up the Tertiary, one the Secondary, home the Primary,
+   one down the basement. A tap still cycles inward, Tertiary → Secondary →
+   Primary, one tap each, so the launch funnel's two quick taps hold.)*
 3. **The visual changes are live with each rotation** through either the
    Tertiary or the Secondary. The Primary behind the glass follows the lens
    as it turns — the verse in the Detail Sector, the ring's labels and seats,
@@ -159,6 +162,61 @@ the Child Pyramid is a chooser, and the Parent Button is a chooser."* It
 names nothing. Prose here says Dimension Mode and names the strata. The
 source still carries `activeChooser()` and "chooser ring" in comments; that
 rename is not ruled and has not been done.
+
+## The slider and the basement — the Zero Stratum (O-126, Howell 2026-09-14)
+
+**The globe slides.** Howell: *"The dimension button has always been a
+little awkward, tapping to traverse the different strata. I'd rather make it
+a slider."* Its vertical position IS the stratum — home is the text; one
+notch up the editions (Secondary); two the languages (Tertiary); one notch
+DOWN a new stratum, the **Zero Stratum**. Dragging the globe crosses the
+notches live, each crossing the same transition a tap made; release snaps
+to the nearest notch. Three ghost circles — the ones he drew on the
+screenshot — appear only while the thumb is held. A tap with no travel
+still cycles inward.
+
+**The building.** In his words: *"If you think of the app as a building,
+the Zero Stratum is the basement, the Primary Stratum is the Main Floor,
+the Secondary and Tertiary Strata are the upper floors. The user can look
+down from the upper floors and see below as far as the Main Floor, but
+cannot see the basement from any floor above."* So the basement is NOT a
+receded layer: the upper floors are lenses over the reading and keep the
+Primary painted behind the glass, live; the basement has no glass and
+nothing behind it. Going down, the Primary LEAVES — up and out of view —
+and the basement's ring rises from below; coming up reverses it. From the
+main floor and above the basement is not rendered at all.
+
+**What it holds.** *"The basement's Focus Ring will store and hold
+bookmarks, along with any other features we choose to add."* Its ring
+looks like the Secondary's — the mirrored arc from lower left to upper
+right — and this is the split the floors make: everything above the main
+floor is about WHICH text; the basement is about the reader's own use of
+it. Bookmarks first; font size, the apparatus on or off, and the
+instrument's own matters (the addresses, the under-review notice) are its
+natural later tenants.
+
+**Bookmarks, as built:**
+- A bookmark is a **leaf**, not a verse-in-an-edition: leaf ids are shared
+  across editions, so a verse kept in one tongue is there in every other.
+  The label is quoted at the moment of keeping. On the device only —
+  localStorage, nothing sent, no account (`src/core/bookmarks.js`).
+- **The descent carries the verse.** Slide down from a leaf and the verse
+  you were reading comes down with you as a *provisional* seat — hollow —
+  beside the kept ones. Slide down from root and you arrive with nothing in
+  hand.
+- **The lens keeps.** A tap on the lodestar keeps the seat under it (it
+  fills), or drops a kept one (it goes hollow and stays on the ring until
+  you leave). The one gesture the basement adds, on the one control that
+  means "here".
+- **Coming up.** Rotate a kept bookmark under the lens and slide up: the
+  main floor returns and the ring makes its own journey to that verse —
+  the same journey a tap makes, never a faked arrival. With the provisional
+  seat under the lens, or an empty ring, the main floor returns as it was.
+  *(At root the verse ring is not on the primary, so a bookmark cannot be
+  reached from the front door yet — the reader enters a book first. Named
+  here as the limit it is.)*
+- **Removing** has no gesture of its own beyond the lens toggle; if a
+  reader's hand wants another, it will say so.
 
 ## The living primary — reassurance, and the live preview
 

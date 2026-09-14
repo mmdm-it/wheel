@@ -38,8 +38,13 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false } = {}) {
-  if (!svg || !Array.isArray(items) || !items.length) return null;
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false } = {}) {
+  if (!svg || !Array.isArray(items)) return null;
+  // An EMPTY ring is a real state for the basement (O-126): a reader with no
+  // bookmarks yet sees the band and the hollow lens and nothing on them —
+  // the floor exists before anything is put on it. The choosers above never
+  // ask for this: an empty language plane is an error, not a state.
+  if (!items.length && !allowEmpty) return null;
 
   // Reuse a STABLE group per id — and if NOTHING about this render differs
   // from what the group already shows, leave its children entirely alone.
@@ -49,7 +54,8 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // Howell 2026-07-22, second sighting). The primary blurs fine because its
   // subtree persists across the filter change; with the signature skip, a
   // settled stratum's subtree persists the same way.
-  const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height]);
+  const classes = typeof classFor === 'function' ? items.map(it => classFor(it) || '') : null;
+  const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height, classes]);
   // A nested <svg> per stratum, NOT a bare <g> (Howell 2026-07-27): iOS/WebKit
   // honors a CSS `filter` on an <svg> element (as on the #app root and the HTML
   // verse panel) but SILENTLY DROPS it on a <g>. So the recede BLUR rides this
@@ -83,7 +89,8 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   outer.setAttribute('height', String(viewport.height));
   outer.dataset.signature = signature;
 
-  const layout = computeStrataLayout(viewport, items.length, selectedIndex, mirrored);
+  const layout = computeStrataLayout(viewport, Math.max(1, items.length), selectedIndex, mirrored);
+  if (!items.length) layout.nodes = [];   // the band and the lens, no seats
   const nodeR = viewport.SSd * NODE_RADIUS_RATIO;
   const magR = viewport.SSd * MAGNIFIER_RADIUS_RATIO;
 
@@ -108,7 +115,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     if (!rotating && node.index === layout.magIndex) return;
     const circle = svgEl('circle', {
       cx: node.x.toFixed(1), cy: node.y.toFixed(1), r: nodeR.toFixed(1),
-      class: 'secondary-strata-node'
+      class: `secondary-strata-node${classes?.[node.index] ? ` ${classes[node.index]}` : ''}`
     });
     circle.dataset.index = String(node.index);
     g.appendChild(circle);
@@ -130,11 +137,12 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // magnified. Drawn last, so a node sliding through passes behind it.
   const mag = layout.magnifier;
   const magRotDeg = (mag.angle * 180) / Math.PI + 180;
+  const magClass = !rotating && classes?.[layout.magIndex] ? ` ${classes[layout.magIndex]}` : '';
   g.appendChild(svgEl('circle', {
     cx: mag.x.toFixed(1), cy: mag.y.toFixed(1), r: magR.toFixed(1),
-    class: 'secondary-strata-node is-magnified' + (rotating ? ' lens-empty' : '')
+    class: 'secondary-strata-node is-magnified' + (rotating || !items.length ? ' lens-empty' : '') + magClass
   }));
-  if (!rotating) {
+  if (!rotating && items.length) {
     // Centred for a central magnifier (the tertiary's), else start-anchored and
     // pulled inward off the left edge (the secondary's, hard against it).
     const pulled = !centerMagnified;
