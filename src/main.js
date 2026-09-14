@@ -1097,7 +1097,14 @@ const STRATA_TWEEN_MS = 600;
 // film plane the plane goes on scaling about the same centre, out past the
 // frame, and fades only at the end of its flight; entering, the reverse. The
 // diagonal slide is retired, and its two constants with it.
-const EXIT_SCALE = 2.6;   // where a plane is "behind the head": off the frame on every side
+// Where a plane is "behind the head". 2.6x cleared the ring and its nodes but
+// not the magnified LABEL, which runs from the lens back toward the centre —
+// a scale about the centre moves a point in proportion to its distance from
+// it, so the label's inner end, a hand's breadth from the centre, was still
+// in the frame at 2.6x (Howell's screenshots, 2026-09-14: "text that does not
+// have enough time to get out of the way"). At 6x anything more than a sixth
+// of a half-viewport from the centre is off it; the scrub sets the pace.
+const EXIT_SCALE = 6;
 const lerp = (a, b, t) => a + (b - a) * t;
 const easeInOut = t => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);
 let strataAnim = null;
