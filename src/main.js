@@ -748,10 +748,11 @@ function setPrimaryVisual(scale, blurPx, away = null) {
   // `away` (O-126): the DESCENT to the basement. The primary is not receded
   // and blurred — it LEAVES, sliding up out of view and fading, because from
   // the basement no floor above is visible. { offsetY, opacity }, or null.
+  const offsetX = away?.offsetX || 0;
   const offsetY = away?.offsetY || 0;
   const opacity = away ? away.opacity : 1;
   const scaled = scale < 0.999;
-  const slid = Math.abs(offsetY) >= 0.5 ? `translate(0 ${offsetY.toFixed(1)}) ` : '';
+  const slid = Math.abs(offsetX) >= 0.5 || Math.abs(offsetY) >= 0.5 ? `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) ` : '';
   const tf = scaled || slid ? `${slid}${scaled ? scaleAboutCentre(scale) : ''}`.trim() : null;
   const filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
   // The scale (recede) rides the child groups; the BLUR rides the #app <svg>
@@ -793,7 +794,7 @@ function setPrimaryVisual(scale, blurPx, away = null) {
     // getBoundingClientRect here slid the origin on a second recede, Howell
     // 2026-07-21.)
     panel.style.transformOrigin = `${cx}px ${cy}px`;
-    panel.style.transform = `${slid ? `translateY(${offsetY.toFixed(1)}px) ` : ''}${scaled ? `scale(${scale})` : ''}`.trim();
+    panel.style.transform = `${slid ? `translate(${offsetX.toFixed(1)}px, ${offsetY.toFixed(1)}px) ` : ''}${scaled ? `scale(${scale})` : ''}`.trim();
     panel.style.filter = filter;
     panel.style.opacity = opacity < 0.999 ? String(opacity) : '';
   }
@@ -828,13 +829,17 @@ function applyStratumDepth(g, level) {
   setStratumVisual(g, STRATA_DEPTHS[level], STRATA_BLURS[level], 1);
 }
 
-// Where the primary goes when the basement is front (Howell, phone check
-// 2026-09-14: "along the imaginary z-axis, the same as the migration to and
-// from the upper floors"): it recedes as it does for a chooser — to the
-// deepest depth and its blur — and, because from the basement no floor above
-// is visible, on past that to nothing. No slide; the z-axis only.
-const FAR = STRATA_DEPTHS.length - 1;
-const PRIMARY_GONE = () => ({ scale: STRATA_DEPTHS[FAR], blur: STRATA_BLURS[FAR], opacity: 0, offsetX: 0, offsetY: 0 });
+// Where the primary goes when the basement is front. Howell's third phone
+// check, 2026-09-14: "The Detail Sector and Primary Stratum Focus Ring should
+// not recede into the distance as they do now. The user should pass through
+// them and they should fly behind the user's head, just as the Tertiary
+// Stratum does when migrating down to the Secondary Stratum." So the primary
+// LEAVES the way a departing chooser leaves — off along the diagonal, a
+// standard ring's home half being below — sharp and full-size, and is gone
+// (opacity 0) once off, since from the basement no floor above is visible.
+// (The second cut receded it along z to nothing, which read as the wrong
+// direction: going down is going FORWARD, through the floor.)
+const PRIMARY_GONE = () => ({ scale: 1, blur: 0, opacity: 0, offsetX: -viewport.width * STRATA_SLIDE_X, offsetY: viewport.height * STRATA_SLIDE_Y });
 // One render call shape for every plane, the basement included.
 const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
@@ -846,7 +851,7 @@ function renderStack() {
   if (strataFront < 0) {
     // THE BASEMENT IS FRONT (O-126): the primary has left, the choosers are
     // not in play, and the basement's ring stands alone with nothing behind.
-    setPrimaryVisual(STRATA_DEPTHS[FAR], STRATA_BLURS[FAR], { offsetY: 0, opacity: 0 });
+    setPrimaryVisual(1, 0, PRIMARY_GONE());
     CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
     const items = BASEMENT.items();
     const g = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
@@ -1178,8 +1183,13 @@ function beginGlide(fromFront, toFront) {
     frameAt(e) {
       glide.e = e;
       setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
+        offsetX: lerp(from.__primary.offsetX || 0, to.__primary.offsetX || 0, e),
         offsetY: lerp(from.__primary.offsetY || 0, to.__primary.offsetY || 0, e),
-        opacity: lerp(from.__primary.opacity, to.__primary.opacity, e)
+        // Whole for most of the flight past the head, gone only at its end;
+        // and back the same way — appearing once it is well inside the frame.
+        opacity: toFront < 0 ? 1 - Math.max(0, (e - 0.6) / 0.4)
+          : fromFront < 0 ? Math.max(0, (e - 0.4) / 0.6)
+          : lerp(from.__primary.opacity, to.__primary.opacity, e)
       });
       [...CHOOSERS, BASEMENT].forEach(ch => {
         const g = groups[ch.id]; if (!g) return;

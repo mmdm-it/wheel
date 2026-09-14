@@ -183,14 +183,17 @@ down from the upper floors and see below as far as the Main Floor, but
 cannot see the basement from any floor above."* So the basement is NOT a
 receded layer: the upper floors are lenses over the reading and keep the
 Primary painted behind the glass, live; the basement has no glass and
-nothing behind it. Going down, the Primary LEAVES along the z-axis — it
-recedes exactly as it does for a chooser, and on past the deepest depth to
-nothing — while the basement's ring travels in on the same diagonal a
-chooser's does; coming up reverses it. *(His phone check, 2026-09-14: "The
-migration to and from the basement should be along the imaginary z-axis, the
-same as the migration to and from the upper floors" — the first cut slid the
-Primary up and the ring in from below.)* From the main floor and above the
-basement is not rendered at all.
+nothing behind it. Going down is going FORWARD: the reader passes through
+the main floor, and the Primary — ring, Detail Sector, margin — flies behind
+the head exactly as a departing Tertiary does when the reader migrates down
+to the Secondary: off along the diagonal, sharp and whole, gone once off;
+the basement's ring travels in on the same diagonal a chooser's does. Coming
+up reverses it. *(Three phone checks on 2026-09-14 shaped this: the first
+cut slid the Primary up and the ring in from below — "along the imaginary
+z-axis, the same as the migration to and from the upper floors"; the second
+receded it into the distance — "backwards... they should fly behind the
+user's head".)* From the main floor and above the basement is not rendered
+at all.
 
 **What it holds.** *"The basement's Focus Ring will store and hold
 bookmarks, along with any other features we choose to add."* Its ring
