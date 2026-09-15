@@ -41,11 +41,25 @@ const RING_RADIAL_DURATION = 900; // ms
  */
 function afterPaint(fn) {
   const t0 = performance.now();
+  const scrub = _scrub;
+  if (scrub) scrub.launching += 1;
   requestAnimationFrame(() => {
     const elapsed = performance.now() - t0;
     const pad = elapsed < 12 ? Math.ceil(34 - elapsed) : 0;
-    setTimeout(fn, pad);
+    setTimeout(() => {
+      fn();
+      // THE DRILL IS SCRUBBED (O-138): the transitions this launch just set
+      // are caught the same instant and held at their first frame, before
+      // anything moves. getAnimations() flushes style, so they exist.
+      if (scrub && scrub === _scrub) { scrub.launching -= 1; _scrubCapture(scrub); }
+    }, pad);
   });
+}
+// Every flight's completion timer passes through here. Under a scrub there
+// is no clock but the finger's: the completion waits for the release.
+function later(ms, fn) {
+  if (_scrub) { _scrub.completions.push({ at: ms, fn }); return; }
+  setTimeout(fn, ms);
 }
 
 // COLOR = DIRECTION OF TRAVEL (Howell 2026-07-23): orbital (ring, magnifier)
@@ -107,7 +121,8 @@ export function beginMigrationTransaction({ restore, watchdogMs = null } = {}) {
   // Watchdog: if an animation dies without settling, force the barrier so
   // the real elements can never stay hidden. Callers running longer-than-
   // default animations (the gateway transit) pass their own horizon.
-  txn.watchdog = setTimeout(() => _finishTransaction(txn), watchdogMs || (RING_RADIAL_DURATION * 2 + 500));
+  // Under a scrub (O-138) the finger owns the clock: a held drill is not a stuck one.
+  txn.watchdog = setTimeout(() => _finishTransaction(txn), _scrub ? 60000 : (watchdogMs || (RING_RADIAL_DURATION * 2 + 500)));
   _txn = txn;
   return txn;
 }
@@ -148,6 +163,129 @@ function txnSettle(txn, finisher) {
   txn.pending -= 1;
   if (txn.pending === 0) _finishTransaction(txn);
 }
+
+/* ------------------------------------------------------------------ */
+/*  THE DRILL IS SCRUBBED (O-138, Howell 2026-09-15)                  */
+/*                                                                    */
+/*  "I don't like to have swipes that act like taps. Although the     */
+/*  user is dragging from the parent button to the magnifier, they    */
+/*  have no control over the timing or animation." So a drill begun   */
+/*  by a swipe is driven by the finger, as the truck is: the flights  */
+/*  launch exactly as for a tap, are caught at their first frame and  */
+/*  held, and the finger sets their time — every clone, every fade,   */
+/*  on one master clock, so the choreography keeps its own pacing.    */
+/*  On release past halfway they settle forward and the completions   */
+/*  fire as they always did; short of halfway they are struck, the    */
+/*  data commit the flight already made is reversed by an instant     */
+/*  navigation the host supplies, and the reals return in the same    */
+/*  frame — nothing happened.                                          */
+/* ------------------------------------------------------------------ */
+let _scrub = null;
+const SETTLE_MS = 500;   // the settle of a released drill, over the distance left
+function _scrubCapture(scrub) {
+  if (!scrub.root || typeof scrub.root.getAnimations !== 'function') return;
+  let found = [];
+  try { found = scrub.root.getAnimations({ subtree: true }) || []; } catch (e) { found = []; }
+  for (const a of found) {
+    if (scrub.anims.includes(a)) continue;
+    let end = 0;
+    try { const t = a.effect?.getComputedTiming?.(); end = Number(t?.endTime) || 0; } catch (e) { end = 0; }
+    if (!end) continue;
+    try { a.pause(); } catch (e) { continue; }
+    scrub.anims.push(a);
+    scrub.ends.set(a, end);
+    scrub.master = Math.max(scrub.master, end);
+  }
+  _scrubApply(scrub);
+}
+function _scrubApply(scrub) {
+  const t = scrub.e * scrub.master;
+  for (const a of scrub.anims) {
+    const end = scrub.ends.get(a) || 0;
+    try { a.currentTime = Math.max(0, Math.min(end, t)); } catch (e) { /* a finished transition is gone */ }
+  }
+}
+function _scrubFinishForward(scrub) {
+  _scrub = null;
+  // finish(), not play(): play() on an animation standing at its end rewinds it.
+  for (const a of scrub.anims) { try { a.finish(); } catch (e) { /* gone */ } }
+  // The completions, in the order the clock would have reached them.
+  scrub.completions.sort((x, y) => x.at - y.at).forEach(c => { try { c.fn(); } catch (e) { /* a completion must not wedge the rest */ } });
+}
+function _scrubAbort(scrub, onAbort) {
+  _scrub = null;
+  // Struck: the clones go first, in this same task, so no frame ever shows
+  // them at the end state a cancelled transition reverts to.
+  for (const a of scrub.anims) { try { a.cancel(); } catch (e) { /* gone */ } }
+  const overlays = scrub.root?.querySelectorAll ? [...scrub.root.querySelectorAll('.migration-animation-overlay')] : [];
+  // A layer the IN pushed is popped (its clones are gone); a layer the OUT
+  // popped is put back wearing the landed dress it had before the flight.
+  if (animatedNodesStack.length > scrub.depth) animatedNodesStack.pop();
+  else if (scrub.popped) {
+    const entry = scrub.popped;
+    entry.nodes.forEach(a => {
+      setTransition(a.g, 'none'); a.circle.style.transition = 'none'; a.label.style.transition = 'none';
+      setTransform(a.g, `translate(${a.translateX}px, ${a.translateY}px) rotate(${a.rotDelta}deg)`);
+      a.circle.setAttribute('r', a.endRadius); a.circle.style.fill = a.ringFill; a.circle.style.stroke = a.ringStroke;
+      if (a.ringFontSize) a.label.style.fontSize = a.ringFontSize;
+      a.g.style.opacity = '0';
+    });
+    animatedNodesStack.push(entry);
+    overlays.splice(overlays.indexOf(entry.overlay), 1);
+  }
+  overlays.forEach(o => { try { o.remove(); } catch (e) { /* gone */ } });
+  // The completions commit the flight's data as they always would; the host's
+  // instant navigation then takes it straight back; the barrier restores the
+  // reals — all before the next paint.
+  scrub.completions.sort((x, y) => x.at - y.at).forEach(c => { try { c.fn(); } catch (e) { /* see above */ } });
+  if (typeof onAbort === 'function') { try { onAbort(); } catch (e) { /* the host's own guards spoke */ } }
+  if (_txn) _finishTransaction(_txn);
+}
+/**
+ * Open a scrubbed migration. Call BEFORE launching the drill (the tap's own
+ * path — handlePyramidNodeClick or the parent vessel's click); every flight
+ * launched while it is open is caught and held. Returns the controller:
+ *   launched()        — did any flight arm? (false: nothing to scrub; release is a no-op)
+ *   scrubTo(e)        — e in [0, 1], the finger's progress
+ *   release(commit, { onAbort }) — settle forward (commit) or spring back and
+ *                       call onAbort to undo the navigation instantly
+ *   cancel()          — forget the scrub without touching anything (nothing launched)
+ */
+export function beginScrubbedMigration(root) {
+  if (_scrub) _scrubAbort(_scrub, null);
+  const scrub = { root: root || null, anims: [], ends: new Map(), completions: [], e: 0, master: 0, launching: 0, depth: animatedNodesStack.length, popped: null, settling: null };
+  _scrub = scrub;
+  return {
+    launched: () => scrub.completions.length > 0 || scrub.launching > 0 || scrub.anims.length > 0,
+    scrubTo(e) {
+      if (_scrub !== scrub || scrub.settling) return;
+      scrub.e = Math.max(0, Math.min(1, Number(e) || 0));
+      _scrubApply(scrub);
+    },
+    release(commit, { onAbort = null } = {}) {
+      if (_scrub !== scrub || scrub.settling) return;
+      const target = commit ? 1 : 0;
+      const startE = scrub.e, span = Math.abs(target - startE);
+      const finish = () => { if (commit) _scrubFinishForward(scrub); else _scrubAbort(scrub, onAbort); };
+      if (span < 0.001 || typeof requestAnimationFrame !== 'function') { finish(); return; }
+      let start = 0;
+      const step = now => {
+        if (_scrub !== scrub) return;
+        if (!start) start = now;
+        const t = Math.min(1, (now - start) / (SETTLE_MS * span));
+        const k = 1 - Math.pow(1 - t, 3);   // easeOutCubic — the settle of a released thing
+        scrub.e = startE + (target - startE) * k;
+        _scrubApply(scrub);
+        if (t < 1) scrub.settling = requestAnimationFrame(step);
+        else { scrub.settling = null; finish(); }
+      };
+      scrub.settling = requestAnimationFrame(step);
+    },
+    cancel() { if (_scrub === scrub && !scrub.launching && !scrub.anims.length && !scrub.completions.length) _scrub = null; }
+  };
+}
+/** True while a drill is under a finger (O-138). */
+export function isScrubbing() { return Boolean(_scrub); }
 
 /* ------------------------------------------------------------------ */
 /*  Public API                                                        */
@@ -351,7 +489,7 @@ export function animateIn(opts) {
     // After animation ends: signal complete; clone retirement is the
     // transaction barrier's job (all animations settle, reals restore,
     // THEN clones hide — no per-timer races).
-    setTimeout(() => {
+    later(durIn, () => {
       _animating = false;
       if (onComplete) onComplete();
       if (txn) {
@@ -373,7 +511,7 @@ export function animateIn(opts) {
           animEntries.forEach(a => { a.g.style.opacity = '0'; });
         }
       }
-    }, durIn);
+    });
   });
 }
 
@@ -399,6 +537,7 @@ export function animateOut(opts) {
   _animating = true;
 
   const entry = animatedNodesStack.pop();
+  if (_scrub) _scrub.popped = entry;   // a struck OUT puts it back (O-138)
   const { nodes: animEntries, overlay } = entry;
 
   // Hide real focus ring nodes + labels during animation
@@ -433,14 +572,14 @@ export function animateOut(opts) {
       }
     });
 
-    setTimeout(() => {
+    later(ANIM_DURATION, () => {
       // onComplete commits the data swap (setPrimaryItems) at animation end;
       // the overlay retires at the transaction barrier. nodesGroup/labelsGroup
       // are restored by animateRingInward's finisher.
       _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    });
   });
 }
 
@@ -537,13 +676,13 @@ export function animatePyramidFromHub(opts) {
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => {
         overlay.remove();
         if (pyramidGroup) pyramidGroup.style.opacity = '';
       });
-    }, dur);
+    });
   });
 }
 
@@ -633,12 +772,12 @@ export function animatePyramidToHub(opts) {
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       // Do NOT restore pyramidGroup opacity — the OUT migration's
       // onComplete → setPrimaryItems will repaint the parent's pyramid.
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -766,7 +905,7 @@ export function animateRingOutward(opts) {
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       if (onComplete) onComplete();
       // Sole authority for restoring ring visibility during IN — deferred
       // to the barrier so the reveal is one synchronized frame.
@@ -775,7 +914,7 @@ export function animateRingOutward(opts) {
         if (nodesGroup)  nodesGroup.style.opacity = '';
         if (labelsGroup) labelsGroup.style.opacity = '';
       });
-    }, dur);
+    });
   });
 }
 
@@ -930,11 +1069,11 @@ export function animateRingPartition(opts) {
       }
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1109,7 +1248,7 @@ export function animateRingInward(opts) {
       e.g.style.transform = 'translate(0px, 0px)';
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       if (onComplete) onComplete();
       // Clones sit at their final ring positions until the barrier: the
       // real nodes appear in the same frame the clones leave.
@@ -1118,7 +1257,7 @@ export function animateRingInward(opts) {
         if (nodesGroup)  nodesGroup.style.opacity = '';
         if (labelsGroup) labelsGroup.style.opacity = '';
       });
-    }, dur);
+    });
   });
 }
 
@@ -1253,10 +1392,10 @@ export function animateMagnifierToParent(opts) {
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
 
-    setTimeout(() => {
+    later(ANIM_DURATION, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    });
   });
 }
 
@@ -1355,10 +1494,10 @@ export function animateParentToMagnifier(opts) {
     text.style.transition = `fill ${durP2M}ms ease-in-out`;
     text.style.fill = dressP2M.orbitalInk; // ground ink → lens ink
 
-    setTimeout(() => {
+    later(durP2M, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, durP2M);
+    });
   });
 }
 
@@ -1477,10 +1616,10 @@ export function animateVolumeParentMerge(opts) {
     setTransition(staticBase, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(staticBase, `translate3d(${mergedBaseX - soloBaseX}px, 0px, 0px)`);
 
-    setTimeout(() => {
+    later(ANIM_DURATION, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    });
   });
 }
 
@@ -1596,10 +1735,10 @@ export function animateVolumeParentUnmerge(opts) {
     setTransition(staticBase, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(staticBase, `translate3d(${soloBaseX - mergedBaseX}px, 0px, 0px)`);
 
-    setTimeout(() => {
+    later(ANIM_DURATION, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    });
   });
 }
 
@@ -1703,11 +1842,11 @@ export function animateParentButtonOutward(opts) {
     g.style.transition = `transform ${dur}ms ease-in-out`;
     g.style.transform = `translate(${translateX}px, ${translateY}px)`;
 
-    setTimeout(() => {
+    later(dur, () => {
       // Real parent button will be restored by the render after setPrimaryItems
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1799,11 +1938,11 @@ export function animateParentButtonInward(opts) {
     g.style.transition = `transform ${dur}ms ease-in-out`;
     g.style.transform = 'translate(0px, 0px)';
 
-    setTimeout(() => {
+    later(dur, () => {
       // Real parent button fill + label will be restored by the caller.
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1872,11 +2011,11 @@ export function animateStarsAway(opts) {
       f.circle.setAttribute('r', Math.max(1, (f.star.r || 6) * 0.5));
       f.g.style.opacity = '0';
     });
-    setTimeout(() => {
+    later(dur, () => {
       _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1957,11 +2096,11 @@ export function animateNodesEmerge(opts) {
       f.circle.style.transition = `r ${dur}ms ease-in-out`;
       f.circle.setAttribute('r', f.node.radius);
     });
-    setTimeout(() => {
+    later(dur, () => {
       _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 

@@ -5,6 +5,7 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUE
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues } from './core/lan-gate.js';
+import { beginScrubbedMigration } from './view/migration-animation.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -2798,6 +2799,30 @@ function wireInteractions(getApp) {
   // The pair is bi-directional: up out of a book, down into its most-read
   // chapter, down again into its most-read verse.
   let lensSwipe = null;            // { startX, startY, fired } while a press on the lens is held
+  // THE DRILL IS SCRUBBED (O-138, Howell 2026-09-15): "I don't like to have
+  // swipes that act like taps." Past the threshold the swipe LAUNCHES the
+  // drill exactly as the tap would — the same door — but under a scrub: the
+  // flights are caught at their first frame, and from there to the far
+  // vessel the finger owns their clock. Let go past halfway and they settle;
+  // short of it they spring back and the navigation is undone, unseen. The
+  // distance from lens to parent disc, on the glass, is the whole travel.
+  const drillTravelPx = app => {
+    const a = app?.view?.magnifierCircle?.getBoundingClientRect?.();
+    const b = app?.view?.parentButtonOuter?.getBoundingClientRect?.();
+    if (!a || !b || !a.width || !b.width) return 160;
+    const d = Math.hypot((a.left + a.width / 2) - (b.left + b.width / 2), (a.top + a.height / 2) - (b.top + b.height / 2));
+    return Math.max(80, d);
+  };
+  const drillProgress = (sw, travelled) => Math.max(0, Math.min(1, (travelled - PARENT_SWIPE_PX) / Math.max(40, sw.travel - PARENT_SWIPE_PX)));
+  // Begin a scrubbed drill through `launch` (the tap's own path). If nothing
+  // took off — the guards spoke, no sky — the scrub is forgotten and the
+  // gesture is over.
+  const beginDrill = (sw, app, launch) => {
+    const ctl = beginScrubbedMigration(app?.flightRoot?.() || null);
+    try { launch(); } catch (_) { /* the drill's own guards spoke */ }
+    if (!ctl.launched()) { ctl.cancel(); return; }
+    sw.ctl = ctl; sw.travel = drillTravelPx(app); sw.e = 0;
+  };
   const onPointerMove = event => {
     if (lensSwipe) {
       const down = event.clientY - lensSwipe.startY;
@@ -2808,8 +2833,12 @@ function wireInteractions(getApp) {
         const app = getApp();
         const idx = app?.largestPyramidIndex?.() ?? -1;
         logTap('lens-swipe', { down: Math.round(down), idx });
-        if (idx >= 0) { try { app.handlePyramidNodeClick(idx); } catch (_) { /* the drill's own guards spoke */ } }
+        if (idx >= 0 && app) {
+          lensSwipe.undo = () => { const p = app.view?.parentButtonOuter; if (typeof p?.onclick === 'function') p.onclick(event); };
+          beginDrill(lensSwipe, app, () => app.handlePyramidNodeClick(idx));
+        }
       }
+      if (lensSwipe.ctl) { lensSwipe.e = drillProgress(lensSwipe, down); lensSwipe.ctl.scrubTo(lensSwipe.e); }
       return;
     }
     if (parentSwipe) {
@@ -2819,8 +2848,12 @@ function wireInteractions(getApp) {
         parentSwipe.fired = true;
         parentSwipeFiredAt = Date.now();
         logTap('parent-swipe', { up: Math.round(up), across: Math.round(across) });
-        try { if (typeof parentSwipe.el.onclick === 'function') parentSwipe.el.onclick(event); } catch (_) { /* the migration's own guards spoke */ }
+        const app = getApp();
+        const wasAt = app?.nav?.getCurrent?.() || null;
+        parentSwipe.undo = () => { if (wasAt) app?.drillIntoItem?.(wasAt); };
+        beginDrill(parentSwipe, app, () => { if (typeof parentSwipe.el.onclick === 'function') parentSwipe.el.onclick(event); });
       }
+      if (parentSwipe.ctl) { parentSwipe.e = drillProgress(parentSwipe, up); parentSwipe.ctl.scrubTo(parentSwipe.e); }
       return;
     }
     if (!isDragging) return;
@@ -3025,8 +3058,17 @@ function wireInteractions(getApp) {
 
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
-      if (parentSwipe) { if (type !== 'pointerleave') parentSwipe = null; }
-      if (lensSwipe) { if (type !== 'pointerleave') lensSwipe = null; }
+      // A scrubbed drill settles on release (O-138): past halfway it goes
+      // through; short of it, it springs back and the host's undo takes the
+      // navigation back in the same task.
+      const releaseDrill = sw => {
+        if (!sw?.ctl) return;
+        const app = getApp();
+        const commit = type !== 'pointercancel' && sw.e >= 0.5;
+        sw.ctl.release(commit, { onAbort: () => { if (app && typeof sw.undo === 'function') app.withInstantMigration(sw.undo); } });
+      };
+      if (parentSwipe) { if (type !== 'pointerleave') { releaseDrill(parentSwipe); parentSwipe = null; } }
+      if (lensSwipe) { if (type !== 'pointerleave') { releaseDrill(lensSwipe); lensSwipe = null; } }
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
       const app = getApp();

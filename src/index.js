@@ -218,6 +218,10 @@ export function createApp({
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
   let lastPyramidData = null; // stashed for SVG-level click delegation
+  // THE SPRING-BACK'S INSTANT NAVIGATION (O-138): while this is set, a
+  // migration in either direction is a bare data swap — no flight — so a
+  // struck drill can be taken straight back inside one task.
+  let instantMigration = false;
   let labelessParentFlight = false; // one-shot: next migrateIn flies the magnifier
                                     // fill to the parent seat UNLABELED, and skips
                                     // the (hidden) old parent's outgoing flight
@@ -431,7 +435,7 @@ export function createApp({
   // animation, then calls setPrimaryItems to finish the swap.
   const migrateIn = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
     // If animating or no pyramid data, fall back to instant swap
-    if (isAnimating() || !lastPyramidData?.nodes?.length) {
+    if (instantMigration || isAnimating() || !lastPyramidData?.nodes?.length) {
       setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
       return;
     }
@@ -716,7 +720,7 @@ export function createApp({
   // reverses the transform animation back to the child pyramid
   // positions, then calls setPrimaryItems to restore parent items.
   const migrateOut = (items, selectedIndex = 0, preserveOrder = false) => {
-    if (isAnimating()) {
+    if (instantMigration || isAnimating()) {
       setPrimaryItems(items, selectedIndex, preserveOrder);
       return;
     }
@@ -1323,7 +1327,7 @@ export function createApp({
   };
 
   const shiftLayersOut = () => {
-    if (isAnimating()) return; // block during migration animation
+    if (isAnimating() && !instantMigration) return; // block during migration animation
     const prevSelected = nav.getCurrent();
     const prevParentLabel = getParentLabel(prevSelected) || '';
     const prevSelectedLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
@@ -2133,13 +2137,30 @@ export function createApp({
     // The sky's largest node, for the lens's down-swipe (O-132); -1 with no sky.
     largestPyramidIndex: () => largestChildIndex(lastPyramidData?.nodes || []),
     handlePyramidNodeClick: idx => {
-      if (isAnimating()) return; // block clicks during migration animation
+      if (isAnimating() && !instantMigration) return; // block clicks during migration animation
       if (!lastPyramidData) return;
       const { nodes, onNodeClick } = lastPyramidData;
       if (!onNodeClick || !nodes || idx < 0 || idx >= nodes.length) return;
       onNodeClick(nodes[idx]);
     },
     refreshPyramid: () => render(rotation),
+    // THE DRILL IS SCRUBBED (O-138): the host runs the undo of a struck drill
+    // inside this, and every migration within is a bare swap.
+    withInstantMigration(fn) {
+      instantMigration = true;
+      try { return typeof fn === 'function' ? fn() : undefined; } finally { instantMigration = false; }
+    },
+    // Drill into a child BY ITEM, not by seat: the sky seats at most a few
+    // dozen of a level's children, and the one a struck OUT must return to
+    // may not be among them.
+    drillIntoItem(item) {
+      const onNodeClick = lastPyramidData?.onNodeClick;
+      if (!item || typeof onNodeClick !== 'function') return false;
+      onNodeClick({ item, id: item.id });
+      return true;
+    },
+    // The root the flights draw under — for the host to catch their animations (O-138).
+    flightRoot: () => view.contentGroup || view.svgRoot || null,
     // The next migrateIn flies the magnifier fill to the parent seat with
     // NO label, and skips the hidden old parent's outgoing flight — the
     // search arrival's radial-in cue (Howell 2026-07-22).
