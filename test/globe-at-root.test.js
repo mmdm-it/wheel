@@ -72,6 +72,15 @@ describe('the globe is at every level (O-129) — the front door of O-96 is reti
     assert.equal(h.seatAtLeaf('a1', null), false, 'no app, no seating');
   });
 
+  it('RANKS A CHILD BY USE, and a volume with no ranks answers nothing — without throwing (O-132)', () => {
+    const h = handlers('verse');
+    let landed = null;
+    h.seatAtLeaf('a1', { setPrimaryItems: (items, index) => { landed = items[index]; }, setParentButtons() {} });
+    assert.equal(h.prominenceOf(landed), undefined, 'this fixture volume declares no ranks');
+    assert.equal(h.layoutBindings.prominenceOf(landed), undefined, 'the pyramid asks through the binding');
+    assert.equal(h.prominenceOf(null), undefined);
+  });
+
   it('RANKS A SEAT for the basement\'s order: the leaf\'s shard, the chapter, the verse, the edition (O-128)', () => {
     const h = handlers('verse');
     let landed = null;
