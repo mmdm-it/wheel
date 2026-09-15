@@ -226,6 +226,14 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     const r = await fetchJson(at({ kind: 'ranks' }));
     if (r && typeof r.leaves === 'object') leafRanks = r.leaves;
   } catch { leafRanks = {}; }
+  // THE GREATEST HITS (O-135, Howell 2026-09-15): leaves the basement's ring
+  // shows permanently beside the reader's bookmarks. Optional, like the ranks;
+  // which verses they are is the corpus's business.
+  let leafHits = [];
+  try {
+    const h = await fetchJson(at({ kind: 'hits' }));
+    if (Array.isArray(h?.leaves)) leafHits = h.leaves.filter(x => typeof x === 'string');
+  } catch { leafHits = []; }
 
   return {
     version,
@@ -238,6 +246,8 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     // A leaf's rank (1 is the most used), or null (O-132).
     rankOf(leaf) { const r = leafRanks[leaf]; return Number.isFinite(r) ? r : null; },
     hasRanks() { return Object.keys(leafRanks).length > 0; },
+    // The Greatest Hits, as leaves, in the corpus's order (O-135).
+    hits() { return leafHits.slice(); },
     displayConfig: volume?.display_config || {},
     // Every edition's book ids, plus the shard ids — the two id spaces the
     // H-14 existence check must recognise.

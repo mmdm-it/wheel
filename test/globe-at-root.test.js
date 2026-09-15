@@ -81,6 +81,11 @@ describe('the globe is at every level (O-129) — the front door of O-96 is reti
     assert.equal(h.prominenceOf(null), undefined);
   });
 
+  it('THE GREATEST HITS are seated in the edition up, and a volume without them answers an empty ring (O-135)', () => {
+    const h = handlers('verse');
+    assert.deepEqual(h.hitSeats(), [], 'this fixture volume declares no hits');
+  });
+
   it('RANKS A SEAT for the basement\'s order: the leaf\'s shard, the chapter, the verse, the edition (O-128)', () => {
     const h = handlers('verse');
     let landed = null;

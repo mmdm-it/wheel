@@ -436,6 +436,10 @@ svg :focus-visible {
 /* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
    with, not yet kept: hollow, so keeping it visibly fills it. */
 .secondary-strata-node.is-provisional { fill: none; stroke: var(--color-orbital); stroke-width: 2; }
+/* A GREATEST HIT on the basement's ring (O-135): permanent, in its own fill
+   — the Parent Button's — so it is never mistaken for a seat the reader kept.
+   Under the lens it wears the lens's look like any other seat. */
+.secondary-strata-node.is-hit { fill: var(--color-orbital); }
 .secondary-strata-node.is-magnified.is-provisional { fill: none; stroke: #000; stroke-width: 1; stroke-dasharray: 4 3; }
 #dimension-button:focus-visible { outline: 2px solid var(--color-nodes, #f2b41c); outline-offset: 3px; border-radius: 50%; }
 

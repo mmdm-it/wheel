@@ -261,18 +261,28 @@ const seatKey = (id, edition) => `${id}@${edition ?? ''}`;
 const seatParts = key => { const at = key.lastIndexOf('@'); return at < 0 ? { id: key, edition: null } : { id: key.slice(0, at), edition: key.slice(at + 1) || null }; };
 const keptSeat = key => { const { id, edition } = seatParts(key); return bookmarksOf(currentVolumeId).find(b => b.id === id && (b.edition ?? null) === edition) || null; };
 const currentEdition = () => dimensionBridge.getSelection()?.translation ?? null;
+const isHit = key => { const { id, edition } = seatParts(key); return hitSeats().some(h => h.id === id && (h.edition ?? null) === edition); };
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
   items: () => {
-    // Kept seats in the volume's order — book, chapter, verse, edition — and
-    // the loose ones (the arrival, anything dropped this visit) after them.
-    const keys = inOrder(bookmarksOf(currentVolumeId)).map(b => seatKey(b.id, b.edition));
+    // Kept seats and THE GREATEST HITS (O-135, Howell 2026-09-15: "add
+    // Greatest Hits permanently to the bookmarks ring") together in the
+    // volume's order — book, chapter, verse, edition — and the loose ones
+    // (the arrival, anything dropped this visit) after them. A hit is seated
+    // in the edition up, with the label the primary would show; a hit the
+    // reader has also kept is one seat, drawn kept.
+    const kept = bookmarksOf(currentVolumeId);
+    const hits = hitSeats().filter(h => !kept.some(b => b.id === h.id && (b.edition ?? null) === (h.edition ?? null)));
+    for (const h of hits) { const k = seatKey(h.id, h.edition); basementLabels[k] = h.label; basementPlaces[k] = h.at; }
+    const keys = inOrder([...kept, ...hits]).map(b => seatKey(b.id, b.edition));
     for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
     return keys;
   },
   label: key => keptSeat(key)?.label || basementLabels[key] || seatParts(key).id,
-  classFor: key => (keptSeat(key) ? '' : 'is-provisional'),
+  // Kept: filled. A hit: its own fill, never mistaken for something kept.
+  // Loose (arrived with, or dropped this visit): hollow, provisional.
+  classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; }
 };
@@ -1442,6 +1452,7 @@ function resetStrata() {
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
 let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
+let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
 let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
@@ -3582,6 +3593,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
   seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
+  hitSeats = typeof handlerSet.hitSeats === 'function' ? handlerSet.hitSeats : () => [];
   // The chooser offers the editions that hold where the reader stands (H-29).
   editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;
   // The corner emblem belongs to the division the reader is in (H-31). A
