@@ -52,7 +52,7 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0 } = {}) {
   if (!svg || !Array.isArray(items)) return null;
   // An EMPTY ring is a real state for the basement (O-126): a reader with no
   // bookmarks yet sees the band and the hollow lens and nothing on them —
@@ -69,7 +69,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // subtree persists across the filter change; with the signature skip, a
   // settled stratum's subtree persists the same way.
   const classes = typeof classFor === 'function' ? items.map(it => classFor(it) || '') : null;
-  const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height, classes, Boolean(labelsBeside)]);
+  const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift]);
   // A nested <svg> per stratum, NOT a bare <g> (Howell 2026-07-27): iOS/WebKit
   // honors a CSS `filter` on an <svg> element (as on the #app root and the HTML
   // verse panel) but SILENTLY DROPS it on a <g>. So the recede BLUR rides this
@@ -103,7 +103,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   outer.setAttribute('height', String(viewport.height));
   outer.dataset.signature = signature;
 
-  const layout = computeStrataLayout(viewport, Math.max(1, items.length), selectedIndex, mirrored);
+  const layout = computeStrataLayout(viewport, Math.max(1, items.length), selectedIndex, mirrored, { lensShift });
   if (!items.length) layout.nodes = [];   // the band and the lens, no seats
   const nodeR = viewport.SSd * NODE_RADIUS_RATIO;
   const magR = viewport.SSd * MAGNIFIER_RADIUS_RATIO;
