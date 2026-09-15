@@ -27,7 +27,9 @@ and the word is the control's response, not the reader's intent:
 - The Parent Button and the Child Pyramid's nodes **drill** in and out — the
   radial motion, depth in the *content*. *(O-131, 2026-09-14: the Parent
   Button drills out by a tap or by a swipe up toward the Magnifier — the
-  same migration by two gestures, as the globe trucks by a tap or a slide.)*
+  same migration by two gestures, as the globe trucks by a tap or a slide;
+  and O-132: the Magnifier drills IN by a swipe down, into the sky's largest
+  node — the most-read child, ranked by the leaves' use.)*
 - The Dimension Button's slider **trucks** — the motion along the z-axis
   between strata, depth in *space*: truck out to the upper floors, truck in
   through the main floor to the basement. The word is the animation stand's:

@@ -111,6 +111,7 @@ pinCanvas(viewport);
 // measurement itself is invalidated (font arrival, re-wrap), since the count
 // derives from the measured size.
 const versePartsCache = new Map();
+let lensSwipeFiredAt = 0;   // O-132: a down-swipe on the lens just drilled; its click is not a tap
 const volumeForParts = () => currentManifest?.__wallVolume;
 let currentDetailRerender = null;   // set at boot; repaints the seated verse (O-112)
 
@@ -2776,7 +2777,26 @@ function wireInteractions(getApp) {
   const PARENT_SWIPE_PX = 28;
   let parentSwipe = null;          // { el, startX, startY, fired } while a press on the parent is held
   let parentSwipeFiredAt = 0;
+  // AND THE LENS SWIPES DOWN (O-132, Howell 2026-09-14): a press on the
+  // magnifier that travels DOWN toward the parent button drills IN — into the
+  // sky's LARGEST node, the most-read child, "the big node is the door".
+  // The pair is bi-directional: up out of a book, down into its most-read
+  // chapter, down again into its most-read verse.
+  let lensSwipe = null;            // { startX, startY, fired } while a press on the lens is held
   const onPointerMove = event => {
+    if (lensSwipe) {
+      const down = event.clientY - lensSwipe.startY;
+      const across = Math.abs(event.clientX - lensSwipe.startX);
+      if (!lensSwipe.fired && down >= PARENT_SWIPE_PX && down > across) {
+        lensSwipe.fired = true;
+        lensSwipeFiredAt = Date.now();
+        const app = getApp();
+        const idx = app?.largestPyramidIndex?.() ?? -1;
+        logTap('lens-swipe', { down: Math.round(down), idx });
+        if (idx >= 0) { try { app.handlePyramidNodeClick(idx); } catch (_) { /* the drill's own guards spoke */ } }
+      }
+      return;
+    }
     if (parentSwipe) {
       const up = parentSwipe.startY - event.clientY;
       const across = Math.abs(event.clientX - parentSwipe.startX);
@@ -2904,6 +2924,10 @@ function wireInteractions(getApp) {
       if (parentEl && typeof parentEl.onclick === 'function') {
         parentSwipe = { el: parentEl, startX: event.clientX, startY: event.clientY, fired: false };
         try { parentEl.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
+      } else if (!searchRestore && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label')) {
+        // The lens itself (not the parent's vessel, not in search): watch for the down-swipe (O-132).
+        lensSwipe = { startX: event.clientX, startY: event.clientY, fired: false };
+        try { app.view?.magnifierCircle?.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
       }
       return;
     }
@@ -2987,6 +3011,7 @@ function wireInteractions(getApp) {
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
       if (parentSwipe) { if (type !== 'pointerleave') parentSwipe = null; }
+      if (lensSwipe) { if (type !== 'pointerleave') lensSwipe = null; }
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
       const app = getApp();
@@ -3589,6 +3614,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     setCalendarMode: layoutBindings.setCalendarMode,
     setCalendarMonthContext: layoutBindings.setCalendarMonthContext,
     bibleModeRef: layoutBindings.bibleModeRef,
+    prominenceOf: layoutBindings.prominenceOf,
     setBibleMode: layoutBindings.setBibleMode,
     setBibleChapterContext: layoutBindings.setBibleChapterContext,
     setBibleVerseContext: layoutBindings.setBibleVerseContext,
@@ -3742,6 +3768,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // not a general-purpose button and must never grow into one.
   if (app?.view?.magnifierCircle) {
     app.view.magnifierCircle.addEventListener('click', () => {
+      if (lensSwipeFiredAt && Date.now() - lensSwipeFiredAt < 700) { lensSwipeFiredAt = 0; return; }   // the swipe already drilled (O-132)
       if (searchRestore) { strikeSettledChar(); return; }
       app.toggleVersePart?.();
     });

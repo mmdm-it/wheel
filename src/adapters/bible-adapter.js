@@ -1161,6 +1161,50 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // globe two homes, root and the leaf, and this predicate owned the root
     // half; the globe is at every level now, so the host asks nothing here.
     //
+    // PROMINENCE FROM USE (O-132, Howell 2026-09-14): a pyramid node draws
+    // larger the more its leaves are used — rank 1 among the leaves it holds
+    // makes it a tier-1 star, a rank in the first ten a tier-2, and the rest
+    // wear no prominence. A verse asks for its own leaf; a chapter for the
+    // best leaf in its seats; a book for the best in its chart. So the most
+    // read verse lifts its chapter and its book with it, in every edition,
+    // because the ranks are on the leaves (leaf-and-shard, W-129). The book
+    // scan is cached per edition and book.
+    prominenceOf: (() => {
+      const bookBest = new Map();
+      const tier = r => (r === 1 ? 1 : (r != null && r <= 10) ? 2 : undefined);
+      const best = (volume, utterances) => {
+        let b = null;
+        for (const u of utterances || []) { const r = volume.rankOf(u); if (r != null && (b == null || r < b)) b = r; }
+        return b;
+      };
+      return item => {
+        const volume = manifest?.__wallVolume;
+        if (!volume?.rankOf || !volume.hasRanks?.() || !item) return undefined;
+        const edition = options?.activeEdition || options?.translation || null;
+        if (item.level === 'verse') return tier(best(volume, item.meta?.utterances));
+        if (item.level === 'chapter') {
+          const bookId = item.meta?.bookId ?? item.parentId;
+          const chart = volume.chartFor?.(bookId, edition);
+          const label = item.meta?.chapterLabel ?? item.name;
+          const g = chart?.groups?.find(x => x.label === label);
+          if (!g) return undefined;
+          let b = null;
+          for (let i = g.from; i <= g.to; i += 1) { const r = best(volume, chart.seats[i - 1]?.utterances); if (r != null && (b == null || r < b)) b = r; }
+          return tier(b);
+        }
+        if (item.level === 'book') {
+          const key = `${edition}|${item.id}`;
+          if (!bookBest.has(key)) {
+            const chart = volume.chartFor?.(item.id, edition);
+            let b = null;
+            for (const seat of chart?.seats || []) { const r = best(volume, seat?.utterances); if (r != null && (b == null || r < b)) b = r; }
+            bookBest.set(key, b);
+          }
+          return tier(bookBest.get(key));
+        }
+        return undefined;
+      };
+    })(),
     // WHERE A SEAT STANDS, for the basement's order (O-128): the book ranked
     // by the shard its leaf lives in — shared by every edition, in the
     // volume's declared order — then the chapter and verse numbers the seat
@@ -1229,6 +1273,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         edition: options?.activeEdition || options?.translation || null
       }),
       bibleModeRef: () => bibleMode,
+      prominenceOf: item => handlerSet.prominenceOf?.(item),
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },

@@ -277,6 +277,23 @@ export function buildCalendarPyramid({
   return { getChildren, onClick, gridFor };
 }
 
+// THE LARGEST CHILD (O-132, Howell 2026-09-14): the node the down-swipe
+// drills into — the best prominence tier among the sky's nodes, ties to the
+// first sibling, so a sky with no ranks drills into its beginning.
+export function largestChildIndex(nodes) {
+  if (!Array.isArray(nodes) || !nodes.length) return -1;
+  const tierOf = n => { const it = n?.item ?? n; const t = it?.prominence ?? it?.meta?.prominence; return t === 1 || t === 2 ? t : 3; };
+  const orderOf = n => { const it = n?.item ?? n; return Number.isFinite(it?.order) ? it.order : Number.POSITIVE_INFINITY; };
+  let best = -1;
+  nodes.forEach((n, i) => {
+    if (!n) return;
+    if (best < 0) { best = i; return; }
+    const t = tierOf(n), tb = tierOf(nodes[best]);
+    if (t < tb || (t === tb && orderOf(n) < orderOf(nodes[best]))) best = i;
+  });
+  return best;
+}
+
 export function buildBiblePyramid({
   manifest,
   getBibleVerseChain,
@@ -290,12 +307,19 @@ export function buildBiblePyramid({
   prefetchBibleVerses,
   getApp,
   bibleModeRef,
+  prominenceOf,
   setBibleMode,
   setBibleChapterContext,
   setBibleVerseContext
 } = {}) {
   if (!manifest || typeof getBibleChapters !== 'function') return null;
-  const getChildren = ({ selected }) => {
+  // THE SKY IS RANKED BY USE (O-132): every child the pyramid shows asks the
+  // volume how prominent it is, and the most-read verse lifts its chapter and
+  // its book. A volume without ranks answers undefined and the sky is uniform.
+  const ranked = items => (typeof prominenceOf !== 'function' ? items
+    : items.map(it => (it && it.prominence == null) ? (() => { const p = prominenceOf(it); return p == null ? it : { ...it, prominence: p }; })() : it));
+  const getChildren = args => ranked(getChildrenRaw(args));
+  const getChildrenRaw = ({ selected }) => {
     const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
     if (mode === 'root') {
       // Gateway root: BIBLIA SACRA LATINA in the magnifier, testaments below.

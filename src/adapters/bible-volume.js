@@ -216,6 +216,17 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   };
 
   const allBookIds = new Set([...editionOfBook.keys()]);
+  // THE RANKS (O-132, Howell 2026-09-14): how much each LEAF is used, one
+  // number per leaf for the whole volume — edition-agnostic by construction,
+  // since every edition seats the same leaves. Optional: a volume without the
+  // file has a uniform sky. What the ranks measure (the lectionary, for the
+  // Bible) is the corpus's business; this only reads them.
+  let leafRanks = {};
+  try {
+    const r = await fetchJson(at({ kind: 'ranks' }));
+    if (r && typeof r.leaves === 'object') leafRanks = r.leaves;
+  } catch { leafRanks = {}; }
+
   return {
     version,
     base,
@@ -224,6 +235,9 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
     shards,
     editions,
     namesByLanguage,
+    // A leaf's rank (1 is the most used), or null (O-132).
+    rankOf(leaf) { const r = leafRanks[leaf]; return Number.isFinite(r) ? r : null; },
+    hasRanks() { return Object.keys(leafRanks).length > 0; },
     displayConfig: volume?.display_config || {},
     // Every edition's book ids, plus the shard ids — the two id spaces the
     // H-14 existence check must recognise.
