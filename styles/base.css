@@ -565,10 +565,14 @@ svg :focus-visible {
    instruments' grey, tap-sized by its hit disc. */
 .world-glyph { color: #363636; }
 
-/* The parent vessel moves data RADIALLY: it keeps the radial color (the
-   historic node yellow), splitting from the magnifier class it shares. */
+/* THE PARENT BUTTON WEARS THE MAGNIFIER'S FILL (O-130, Howell 2026-09-14:
+   "The Parent Button fill color is wrong. The Parent Button fill should be
+   the same color as the Magnifier fill."). It used to keep the radial node
+   colour — "the parent vessel moves data RADIALLY... splitting from the
+   magnifier class it shares" — and that split is retired: the two fixed
+   vessels are one colour, the orbital's. The stroke stays. */
 .focus-ring-parent-circle {
-  fill: var(--color-nodes);
+  fill: var(--color-orbital);
   stroke: var(--color-magnifier-stroke, #000);
   stroke-width: 1px;
 }
