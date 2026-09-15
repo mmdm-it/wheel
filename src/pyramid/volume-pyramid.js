@@ -277,6 +277,31 @@ export function buildCalendarPyramid({
   return { getChildren, onClick, gridFor };
 }
 
+// TIERS AMONG SIBLINGS (O-133, 2026-09-15): the ranks are global to the
+// volume — the lectionary reads the Psalter far more than any other book —
+// so a fixed rule (rank 1 a large star, the first ten medium) lit the Psalms
+// and left every other sky uniform. Instead each sky is read on its own: the
+// best rank among the siblings is the tier-1 star, the next three ranked
+// siblings (ties at the cut included) are tier 2, the rest wear nothing. A
+// sky whose ranked siblings all share one rank has no largest star, and one
+// with no ranks at all is untouched. Items already carrying a prominence
+// (an editorial tier declared in the data) keep it.
+export function relativeTiers(items, rankOf) {
+  if (!Array.isArray(items) || typeof rankOf !== 'function') return items;
+  const ranks = items.map(it => ((it && it.prominence == null) ? rankOf(it) : null)).map(r => (Number.isFinite(r) ? r : null));
+  const distinct = [...new Set(ranks.filter(r => r != null))].sort((a, b) => a - b);
+  if (distinct.length < 2) return items;
+  const [top] = distinct;
+  const rest = ranks.filter(r => r != null && r !== top).sort((a, b) => a - b);
+  const cut = rest[Math.min(2, rest.length - 1)];
+  return items.map((it, i) => {
+    const r = ranks[i];
+    if (r == null) return it;
+    const tier = r === top ? 1 : (r <= cut ? 2 : undefined);
+    return tier ? { ...it, prominence: tier } : it;
+  });
+}
+
 // THE LARGEST CHILD (O-132, Howell 2026-09-14): the node the down-swipe
 // drills into — the best prominence tier among the sky's nodes, ties to the
 // first sibling, so a sky with no ranks drills into its beginning.
@@ -314,10 +339,9 @@ export function buildBiblePyramid({
 } = {}) {
   if (!manifest || typeof getBibleChapters !== 'function') return null;
   // THE SKY IS RANKED BY USE (O-132): every child the pyramid shows asks the
-  // volume how prominent it is, and the most-read verse lifts its chapter and
+  // volume how well-read it is, and the most-read verse lifts its chapter and
   // its book. A volume without ranks answers undefined and the sky is uniform.
-  const ranked = items => (typeof prominenceOf !== 'function' ? items
-    : items.map(it => (it && it.prominence == null) ? (() => { const p = prominenceOf(it); return p == null ? it : { ...it, prominence: p }; })() : it));
+  const ranked = items => (typeof prominenceOf !== 'function' ? items : relativeTiers(items, prominenceOf));
   const getChildren = args => ranked(getChildrenRaw(args));
   const getChildrenRaw = ({ selected }) => {
     const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';

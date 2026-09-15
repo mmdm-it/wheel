@@ -1027,16 +1027,17 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   };
 
   // PROMINENCE FROM USE (O-132, Howell 2026-09-14): a pyramid node draws
-  // larger the more its leaves are used — rank 1 among the leaves it holds
-  // makes it a tier-1 star, a rank in the first ten a tier-2, and the rest
-  // wear no prominence. A verse asks for its own leaf; a chapter for the
-  // best leaf in its seats; a book for the best in its chart. So the most
-  // read verse lifts its chapter and its book with it, in every edition,
-  // because the ranks are on the leaves (leaf-and-shard, W-129). The book
-  // scan is cached per edition and book.
+  // larger the more its leaves are used. This answers the node's BEST RANK
+  // among the leaves it holds — a verse its own leaf's, a chapter the best in
+  // its seats, a book the best in its chart — so the most read verse lifts
+  // its chapter and its book with it, in every edition, because the ranks
+  // are on the leaves (leaf-and-shard, W-129). Which rank makes a large star
+  // is decided AMONG SIBLINGS by the pyramid (O-133): the ranks are the
+  // lectionary's, global to the volume, and only the Psalter reaches the top
+  // of them. The book scan is cached per edition and book.
   const prominenceOf = (() => {
     const bookBest = new Map();
-    const tier = r => (r === 1 ? 1 : (r != null && r <= 10) ? 2 : undefined);
+    const tier = r => (r == null ? undefined : r);
     const best = (volume, utterances) => {
       let b = null;
       for (const u of utterances || []) { const r = volume.rankOf(u); if (r != null && (b == null || r < b)) b = r; }
