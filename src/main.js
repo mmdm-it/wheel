@@ -3730,6 +3730,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     onParentClick: parentHandler,
     getParentLabel: adapterGetParentLabel,
     getParentLabelSuffix: adapterGetParentLabelSuffix,
+    getTextDirection: typeof handlerSet.textDirection === 'function' ? handlerSet.textDirection : null,
     getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
     pyramid: pyramidConfig,

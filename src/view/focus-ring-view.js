@@ -542,7 +542,7 @@ export class FocusRingView {
               try { nameW = this.parentButtonOuterLabel.getSubStringLength(0, nameChars); } catch { nameW = null; }
             }
           }
-          const labelX = getParentLabelLeftX(viewport, magRadius, w, nameW);
+          const labelX = getParentLabelLeftX(viewport, magRadius, w, nameW, parentButtons?.outerLabelDirection || 'ltr');
           this.parentButtonOuterLabel.setAttribute('x', labelX);
           this.parentButtonOuterLabel.setAttribute('y', seat.labelY);
           this.parentButtonOuterLabel.removeAttribute('transform');

@@ -79,13 +79,22 @@ export function getParentSeat(viewport, magnifierRadius = null) {
 // short and medium names take the same seat here; only rule 3, the corner
 // floor, still applies — and a corner-started label's suffix is already
 // clear of the vessel, which is why long names needed no change.
+//
+// RIGHT-TO-LEFT (O-139, Howell 2026-09-15: "in the case of Hebrew, prefixes").
+// A Hebrew label is one run drawn right to left, so its numeral — last in the
+// string — stands FIRST to the eye, at the run's left end. The name still
+// sits over the vessel; the numeral must clear the stroke on the LEFT: the
+// name's first letter lands just past the left stroke, and the numeral hangs
+// beyond it, with nothing overlapping. The mirror of the rule above, sharing
+// its one constant. The corner floor still applies.
 const NAME_CLEARS_STROKE = 1.06; // radii: the stroke is at 1.0, just past it
 
-export function getParentLabelLeftX(viewport, magnifierRadius, textWidth, nameWidth = null) {
+export function getParentLabelLeftX(viewport, magnifierRadius, textWidth, nameWidth = null, direction = 'ltr') {
   const magR = Number.isFinite(magnifierRadius) ? magnifierRadius : viewport.SSd * 0.06;
   const seat = getParentSeat(viewport, magR);
   const w = Number.isFinite(textWidth) ? textWidth : 0;
   if (Number.isFinite(nameWidth) && nameWidth > 0 && nameWidth < w) {
+    if (direction === 'rtl') return Math.max(seat.labelX, seat.discX - magR * NAME_CLEARS_STROKE - (w - nameWidth));
     return Math.max(seat.labelX, seat.discX + magR * NAME_CLEARS_STROKE - nameWidth);
   }
   return Math.max(

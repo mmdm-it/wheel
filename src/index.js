@@ -93,6 +93,9 @@ export function createApp({
   onParentClick,
   getParentLabel: externalGetParentLabel,
   getParentLabelSuffix: externalGetParentLabelSuffix,
+  // Which way the volume's text runs — 'ltr' or 'rtl' (O-139); the suffixed
+  // parent label and its flights seat by it.
+  getTextDirection: externalGetTextDirection = null,
   // Whether tapping the parent button would actually migrate data RIGHT NOW.
   // The vessel (disc) draws only when this is true — a context-only label
   // (the top ring's passing country) gets words, no disc (Howell 2026-07-23:
@@ -321,6 +324,7 @@ export function createApp({
   // it as a HINT — the animator ignores it unless the label it is flying
   // actually ends with it, so a level change cannot mis-seat anything.
   let parentLabelSuffixHint = '';
+  const textDirection = () => ((typeof externalGetTextDirection === 'function' && externalGetTextDirection()) === 'rtl' ? 'rtl' : 'ltr');
   const getParentLabel = typeof externalGetParentLabel === 'function'
     ? externalGetParentLabel
     : builtinGetParentLabel;
@@ -517,7 +521,7 @@ export function createApp({
     const parentLabelSeatX = parentSeat.labelX;
     // Width-aware label seat (Howell 2026-07-25): flights measure their own
     // clone text and ask this for the settled left edge.
-    const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW);
+    const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW, textDirection());
 
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
@@ -683,6 +687,7 @@ export function createApp({
           radius: magnifierRadius,
           baseLabel: prevParentLabel,
           suffixLabel: prevMagnifierLabel,
+          direction: textDirection(),
           fromAngle: magnifier.angle
         });
       } else {
@@ -784,7 +789,7 @@ export function createApp({
     const parentLabelSeatX = parentSeat.labelX;
     // Width-aware label seat (Howell 2026-07-25): flights measure their own
     // clone text and ask this for the settled left edge.
-    const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW);
+    const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW, textDirection());
     // The new parent label (after OUT) is the parent of tempSelected
     const newParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
     // Ascending back TO a suffix-merge ring: the suffix splits off the parent
@@ -916,6 +921,7 @@ export function createApp({
         radius: magnifierRadius,
         baseLabel: newParentLabel,
         suffixLabel: nextMagnifierLabel,
+        direction: textDirection(),
         fromAngle: magnifier.angle
       });
     } else {
@@ -1158,7 +1164,7 @@ export function createApp({
       toX: parentSeat.discX,
       toY: parentSeat.discY,
       labelFromX: parentSeat.labelX,
-      labelLeftXForWidth: (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW),
+      labelLeftXForWidth: (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW, textDirection()),
       labelSuffix: parentLabelSuffixHint,
       radius: magnifierRadius,
       label: travelingLabel,
@@ -1674,6 +1680,7 @@ export function createApp({
         parentButtons: {
           outerLabel: parentOuterLabel,
           outerLabelSuffix: parentOuterSuffix,
+          outerLabelDirection: textDirection(),
           onOuterClick: shiftLayersOut,
           isLayerOut,
           showOuter: parentButtonsVisibility.showOuter,

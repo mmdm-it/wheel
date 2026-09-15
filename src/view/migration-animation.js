@@ -1585,10 +1585,16 @@ export function animateVolumeParentMerge(opts) {
   const seatFn = typeof opts.labelLeftXForWidth === 'function' ? opts.labelLeftXForWidth : null;
   const fallbackX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7;
   const soloBaseX = seatFn ? seatFn(baseAdvance) : fallbackX;
-  const mergedBaseX = seatFn ? seatFn(baseAdvance + mergeGap + suffixWidth) : fallbackX;
+  // The merged run is seated BY THE NAME, as the view seats it (its last
+  // letter just past the stroke), so the flight lands on the view's pixels.
+  // Right to left (O-139) the run reads [numeral][gap][name]: the numeral
+  // takes the run's left end and the name follows.
+  const rtl = opts.direction === 'rtl';
+  const mergedRunX = seatFn ? seatFn(baseAdvance + mergeGap + suffixWidth, baseAdvance) : fallbackX;
+  const mergedBaseX = rtl ? mergedRunX + suffixWidth + mergeGap : mergedRunX;
   staticBase.setAttribute('x', soloBaseX);
   setTransform(staticBase, 'translate3d(0px, 0px, 0px)');
-  const suffixTargetX = mergedBaseX + baseAdvance + mergeGap;
+  const suffixTargetX = rtl ? mergedRunX : mergedBaseX + baseAdvance + mergeGap;
   const endLocalDx = (suffixTargetX + (suffixWidth * 0.5)) - toX;
 
   moving.style.transformOrigin = `${fromX}px ${fromY}px`;
@@ -1702,11 +1708,14 @@ export function animateVolumeParentUnmerge(opts) {
   const unmergeGap = baseLabel ? radius * 0.25 : 0;
   const seatFn = typeof opts.labelLeftXForWidth === 'function' ? opts.labelLeftXForWidth : null;
   const fallbackX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7;
-  const mergedBaseX = seatFn ? seatFn(baseAdvance + unmergeGap + suffixWidth) : fallbackX;
+  // Seated by the name, and by direction, as the merge is (O-139).
+  const rtl = opts.direction === 'rtl';
+  const mergedRunX = seatFn ? seatFn(baseAdvance + unmergeGap + suffixWidth, baseAdvance) : fallbackX;
+  const mergedBaseX = rtl ? mergedRunX + suffixWidth + unmergeGap : mergedRunX;
   const soloBaseX = seatFn ? seatFn(baseAdvance) : fallbackX;
   staticBase.setAttribute('x', mergedBaseX);
   setTransform(staticBase, 'translate3d(0px, 0px, 0px)');
-  const suffixStartX = mergedBaseX + baseAdvance + unmergeGap;
+  const suffixStartX = rtl ? mergedRunX : mergedBaseX + baseAdvance + unmergeGap;
   const startLocalDx = (suffixStartX + (suffixWidth * 0.5)) - toX;
 
   moving.style.transformOrigin = `${toX}px ${toY}px`;

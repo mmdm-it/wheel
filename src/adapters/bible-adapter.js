@@ -112,6 +112,16 @@ export function normalize(raw) {
     meta: {
       volumeId: volumeKey,
       leafLevel: 'verse',
+      // THE NUMERAL TRAVELS ALONE (O-139, Howell 2026-09-15): on the verse
+      // ring the parent reads the book AND its chapter — GENESIS I — and the
+      // chapter numeral is a suffix of the book's name (a prefix, to the eye,
+      // in Hebrew). Drilling out to the chapter ring, only the numeral flies
+      // to the lens and the name stays put; drilling in, the numeral flies
+      // from the lens to join the name. "It seems redundant to have the word
+      // Genesis move from parent button to magnifier only to appear again in
+      // the parent button." The catalog declared this for its cylinder level
+      // on 2026-07-18; the Bible had never declared it.
+      suffixMerge: ['chapter'],
       levels: ['testament', 'book', 'chapter', 'verse'],
       colors: levelPalette,
       dimensions
@@ -1261,6 +1271,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // (head) counts as 0.
     seatOrder: item => seatOrderOf(item),
     hitSeats,
+    // Which way the edition up writes (O-139): the view and the flights seat a
+    // suffixed parent label by it — the numeral leads a Hebrew name to the eye.
+    textDirection: () => {
+      const edition = options?.activeEdition || options?.translation || null;
+      const e = (manifest?.__wallVolume?.editions || []).find(x => (x?.code ?? x) === edition);
+      return e?.direction === 'rtl' ? 'rtl' : 'ltr';
+    },
     // SEAT THE PRIMARY AT A LEAF, from anywhere (O-129): the basement's jump
     // to a bookmark when the ring up does not hold it — at root, on a book or
     // a chapter ring. The whole-volume verse chain is built for the committed
