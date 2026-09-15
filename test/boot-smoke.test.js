@@ -142,9 +142,14 @@ describe('the launch funnel closes when the reader arrives at the text', () => {
   });
 
   it('does not re-open when the globe is tapped again — that is a sideways move', async () => {
+    // Since O-126 the tap's round includes the basement (Howell, 2026-09-14):
+    // from the text one tap goes DOWN, and the next rounds to the languages.
     await cycle();
-    assert.equal(D.front(), 2, 'the globe rounds back to the language plane');
+    assert.equal(D.front(), -1, 'from the text a tap goes down to the basement');
     assert.equal(D.funnel(), false, 'a launch happens once; this is O-72\'s question');
+    await cycle();
+    assert.equal(D.front(), 2, 'and the next rounds back to the language plane');
+    assert.equal(D.funnel(), false, 'still once');
     assert.notEqual(D.here(), null, 'and it is answered with the reader\'s position');
   });
 });

@@ -1406,8 +1406,11 @@ function arriveAt(from, to) {
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
   placeThumb();
 }
+// THE TAP'S ROUND (Howell, 2026-09-14): languages, editions, the text, the
+// basement, and round to the languages — one floor down per tap, the
+// basement included, the wrap from the bottom back to the top.
 function cycleStrata() {
-  goToStratum(strataFront <= 0 ? maxStrataFront() : strataFront - 1);
+  goToStratum(strataFront <= minStrataFront() ? maxStrataFront() : strataFront - 1);
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
