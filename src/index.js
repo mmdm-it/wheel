@@ -11,7 +11,7 @@ import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
-import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction , scrubDriver } from './view/migration-animation.js';
+import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
 
@@ -784,6 +784,16 @@ export function createApp({
       if (!scrubbed) journey.play();
     }
 
+    // THE RING RISES INTO THE SKY (O-141): when no IN flight left a layer to
+    // reverse — the reader landed here by the boot, a bookmark or a link —
+    // the departing ring's seats are snapshot now, every sibling on the arc
+    // or implied beyond it, so they can fly to the new sky's seats below.
+    const noLayerToReverse = getStackDepth() === 0;
+    const departingRing = noLayerToReverse
+      ? calculateAllNodePositions(normalizedItems, vp, rotation, nodeRadius, nodeSpacing)
+        .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }) }))
+      : [];
+
     // Snapshot magnifier and parent-button state BEFORE animations start.
     // As in migrateIn: the OUTGOING parent label is what's on screen — the
     // adapter has already popped its nav stack by the time migrateOut runs,
@@ -895,6 +905,20 @@ export function createApp({
         // Everything else restores at the transaction barrier.
       }
     });
+    // No layer to reverse: animateOut completed at once and the commit above
+    // has painted the new sky — hide it again and fly the departing ring's
+    // seats into it (O-141).
+    if (noLayerToReverse && lastPyramidData?.nodes?.length) {
+      animateRingToSky({
+        svgRoot: view.contentGroup || view.svgRoot,
+        ringNodes: departingRing,
+        pyramidNodes: lastPyramidData.nodes,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        nodeRadius,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
 
     // (Launched before the unmerge overlay: the arriving disc must dock
     // UNDER the anchored base label — paint order is document order.)

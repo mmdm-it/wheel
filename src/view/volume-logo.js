@@ -438,9 +438,10 @@ export class VolumeLogo {
     this._collapsing = true;
     const start = this._getEndState(arcParams, magnifierAngle); // current = expanded
     const end = this._getStartState();                           // target = collapsed
-    // v0 parity: collapse uses 1.0 start opacity for the logo
-    // (not 0.10 which is the expand-end logo watermark opacity)
-    start.logoOpacity = 1.0;
+    // The emblem shrinks from the watermark it IS (0.10) up to the badge's
+    // opacity. A v0-parity line here set the start to 1.0 — the scroll went
+    // solid the instant a collapse began — unseen at 600 ms, glaring once
+    // the finger could hold it (Howell 2026-09-15, O-141).
     return this._journey(start, end, {
       finish: () => {
         this._applyFrame(start, end, 1);

@@ -1,6 +1,6 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
-import { beginMigrationTransaction, animateIn, animateOut, clearStack, beginScrubbedMigration, isScrubbing, scrubDriver } from '../src/view/migration-animation.js';
+import { beginMigrationTransaction, animateIn, animateOut, clearStack, beginScrubbedMigration, isScrubbing, scrubDriver, animateRingToSky } from '../src/view/migration-animation.js';
 
 // The transaction core is DOM-free until an animation actually draws, so the
 // arm/settle/barrier semantics are testable headless via the animations'
@@ -110,5 +110,17 @@ describe('a frame driver on the scrub clock (O-140)', () => {
     ctl.scrubTo(0.4);
     ctl.release(false, { onAbort: () => order.push('undo') });
     assert.deepEqual(order.slice(-3), ['frame0', 'undo', 'driver-abort'], 'picture first, navigation undone, then the sector\'s state follows');
+  });
+});
+
+// THE RING RISES INTO THE SKY (O-141): the flight for a ring no IN ever flew up.
+describe('the ring rises into the sky (O-141)', () => {
+  it('arms and settles the transaction on its guard path, like every flight', () => {
+    let restored = 0, done = 0;
+    beginMigrationTransaction({ restore: () => { restored += 1; } });
+    animateRingToSky({ svgRoot: null, pyramidNodes: [], onComplete: () => { done += 1; } });
+    assert.equal(done, 1);
+    assert.equal(restored, 1);
+    clearStack();
   });
 });

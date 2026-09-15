@@ -607,6 +607,113 @@ export function animateOut(opts) {
 }
 
 /**
+ * THE RING RISES INTO THE SKY (O-141, Howell 2026-09-15: "the child pyramid
+ * nodes pop on rather than migrate from the focus ring"). animateOut reverses
+ * the IN flight that brought a ring up — but a ring the reader reached by the
+ * boot's own landing, a bookmark's jump or a deep link was never flown up,
+ * so there is no layer to reverse and its nodes simply vanished while the
+ * new sky popped on. This is that flight made from scratch: every seat of
+ * the departing ring — on the arc or implied beyond it — flies to the seat
+ * the new sky gives the same item, shrinking and changing into the sky's
+ * dress; a sky node no ring seat accounts for rises from the hub.
+ *
+ * @param {Object}      opts
+ * @param {SVGElement}  opts.svgRoot       — container for the clone overlay
+ * @param {Object[]}    opts.ringNodes     — the departing ring's seats ({ item, x, y, angle, label })
+ * @param {Object[]}    opts.pyramidNodes  — the NEW sky's nodes (pyramidData.nodes after the commit)
+ * @param {number}      opts.hubX, opts.hubY
+ * @param {number}      opts.nodeRadius    — the ring's node radius
+ * @param {SVGElement}  [opts.pyramidGroup] — the real sky, hidden until the barrier
+ */
+export function animateRingToSky(opts) {
+  const { svgRoot, ringNodes = [], pyramidNodes = [], hubX, hubY, nodeRadius = 10, pyramidGroup, onComplete, durationMs = null } = opts;
+  const dur = durationMs || ANIM_DURATION;
+  const txn = txnArm();
+  if (!svgRoot || pyramidNodes.length === 0) {
+    if (onComplete) onComplete();
+    txnSettle(txn, null);
+    return;
+  }
+  _animating = true;
+  if (pyramidGroup) pyramidGroup.style.opacity = '0';
+  const rootStyle = typeof getComputedStyle === 'function' ? getComputedStyle(svgRoot) : null;
+  const ringFill = (rootStyle?.getPropertyValue('--color-orbital') || '').trim()
+    || (rootStyle?.getPropertyValue('--color-nodes') || '').trim() || '#555';
+  const ringLabelEl = svgRoot.querySelector?.('.focus-ring-label');
+  const ringLabelSize = ringLabelEl && typeof getComputedStyle === 'function' ? getComputedStyle(ringLabelEl).fontSize : '';
+  const originById = new Map();
+  ringNodes.forEach(rn => { const id = rn.item?.id ?? rn.id; if (id != null) originById.set(id, rn); });
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay ring-to-sky');
+  svgRoot.appendChild(overlay);
+  const entries = [];
+  pyramidNodes.forEach(pn => {
+    const id = pn.item?.id ?? pn.id;
+    const origin = originById.get(id) || null;
+    const fromX = origin ? origin.x : hubX, fromY = origin ? origin.y : hubY;
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', fromX);
+    circle.setAttribute('cy', fromY);
+    circle.setAttribute('r', origin ? nodeRadius : pn.r);
+    circle.setAttribute('class', 'child-pyramid-node');
+    g.appendChild(circle);
+    const label = document.createElementNS(SVG_NS, 'text');
+    label.setAttribute('x', fromX);
+    label.setAttribute('y', fromY);
+    label.setAttribute('text-anchor', 'middle');
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'child-pyramid-label');
+    const srcRot = labelRotationDeg(origin ? origin.angle : pn.angle);
+    label.setAttribute('transform', `rotate(${srcRot}, ${fromX}, ${fromY})`);
+    // Dressed for the DESTINATION first, so the sky's face is what the
+    // computed style answers; then the take-off dress is laid over it.
+    applyPyramidNodeAppearance({ circle, label, instr: pn });
+    label.textContent = pn.label ?? pn.item?.name ?? '';
+    g.appendChild(label);
+    overlay.appendChild(g);
+    const skyStyle = typeof getComputedStyle === 'function' ? getComputedStyle(circle) : null;
+    const skyLabelStyle = typeof getComputedStyle === 'function' ? getComputedStyle(label) : null;
+    const skyFill = skyStyle ? skyStyle.fill : '';
+    const skyFontSize = skyLabelStyle ? skyLabelStyle.fontSize : '';
+    if (origin) {
+      circle.style.fill = ringFill;
+      circle.style.stroke = 'transparent';
+      if (ringLabelSize) label.style.fontSize = ringLabelSize;
+    }
+    const dstRot = labelRotationDeg(pn.angle);
+    let rotDelta = dstRot - srcRot;
+    while (rotDelta > 180) rotDelta -= 360;
+    while (rotDelta < -180) rotDelta += 360;
+    g.style.transformOrigin = `${fromX}px ${fromY}px`;
+    g.style.transform = 'translate(0px, 0px) rotate(0deg)';
+    entries.push({ g, circle, label, translateX: pn.x - fromX, translateY: pn.y - fromY, rotDelta, endRadius: pn.r, skyFill, skyFontSize, fromRing: Boolean(origin) });
+  });
+  overlay.getBoundingClientRect();
+  afterPaint(() => {
+    entries.forEach(e => {
+      e.g.style.transition = `transform ${dur}ms ease-in-out`;
+      e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px) rotate(${e.rotDelta}deg)`;
+      if (e.fromRing) {
+        e.circle.style.transition = `r ${dur}ms ease-in-out, fill ${dur}ms ease-in-out`;
+        e.circle.setAttribute('r', e.endRadius);
+        if (e.skyFill) e.circle.style.fill = e.skyFill;
+        if (e.skyFontSize) { e.label.style.transition = `font-size ${dur}ms ease-in-out`; e.label.style.fontSize = e.skyFontSize; }
+      }
+    });
+    later(dur, () => {
+      _animating = false;
+      if (onComplete) onComplete();
+      txnSettle(txn, () => {
+        overlay.remove();
+        if (pyramidGroup) pyramidGroup.style.opacity = '';
+      });
+    });
+  });
+}
+
+/**
  * Animate child-pyramid nodes FROM the hub (off-screen focus-ring center)
  * to their pyramid positions.  Used after an IN migration completes and
  * setPrimaryItems paints a new child pyramid.
