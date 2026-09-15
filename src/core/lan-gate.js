@@ -73,6 +73,40 @@ export function isOnLan(loc = (typeof window !== 'undefined' ? window.location :
 // later reader reasons confidently to the wrong conclusion — which is the
 // failure this codebase spent two days cataloguing. Everything downstream is
 // named for what it does: `proofreadOverrideActive`, `includeUnconfirmed`.
+// THE THREE VENUES (O-136, Howell 2026-09-15). Online there are, or soon will
+// be, three sites: the ARCHIVAL BACKUP (the old site at the root of its
+// server, reached through an easter-egg gateway, never touched again); THE
+// SCREENING ROOM, a directory on that same server, for friends and family,
+// which opens on the volume directly ("no need to hide behind the whole
+// disguise") and shows every edition, each unit wearing its mark; and
+// LEICESTER SQUARE, the launch site, for strangers, where only CHECKED
+// editions show.
+//
+// The screening room is named by hostname AND path, because it shares a
+// server with the backup: the root of that server is not the room. A
+// hostname that merely ends like the room's is not the room either — the
+// same false-yes the private-range test above refuses.
+//
+// THE NAMES COME FROM THE CALLER (src/volume-configs.js, the one declared home
+// for such literals): this file is engine core and names no site, exactly as
+// proofreadDeepLink below names no level. `venues.screeningRoom` is
+// { hosts: [...lowercase hostnames], pathPrefix: '/…/' }.
+export function isScreeningRoom(venues, loc = (typeof window !== 'undefined' ? window.location : null)) {
+  const room = venues?.screeningRoom;
+  if (!room || !Array.isArray(room.hosts) || typeof room.pathPrefix !== 'string') return false;
+  if (!loc || typeof loc.hostname !== 'string' || typeof loc.pathname !== 'string') return false;
+  const host = loc.hostname.trim().toLowerCase();
+  if (!room.hosts.includes(host)) return false;
+  return loc.pathname.toLowerCase().startsWith(room.pathPrefix.toLowerCase());
+}
+// WHERE EVERY EDITION SHOWS, whatever the CHECKED gate says: the bench under
+// its flag, and the screening room always. The marks stay on in both. The
+// proofreading driver's own shortcuts ride proofreadOverrideActive alone —
+// LAN only — so a friend in the screening room meets a reader's instrument,
+// not the bench's cheats.
+export function everyEditionShows(venues, loc = (typeof window !== 'undefined' ? window.location : null)) {
+  return proofreadOverrideActive(loc) || isScreeningRoom(venues, loc);
+}
 export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? window.location : null)) {
   try {
     if (!loc || typeof loc.search !== 'string') return false;

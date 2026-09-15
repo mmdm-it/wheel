@@ -1,10 +1,10 @@
 import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
 import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
-import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
+import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
-import { proofreadOverrideActive } from './core/lan-gate.js';
+import { proofreadOverrideActive, everyEditionShows } from './core/lan-gate.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -120,7 +120,9 @@ let currentDetailRerender = null;   // set at boot; repaints the seated verse (O
 // 2026-07-20, docs/DIMENSION_SYSTEM.md). The store and bridge are created
 // once; each boot refreshes the bridge's registry and its render hook.
 const dimensionStore = createInteractionStore();
-const dimensionBridge = createDimensionBridge({ store: dimensionStore });
+// THE SCREENING ROOM shows every edition (O-136): the venue table is the
+// config's, the rule is the gate's, and the bridge only learns the answer.
+const dimensionBridge = createDimensionBridge({ store: dimensionStore, showEveryEdition: everyEditionShows(VENUES) });
 
 // D — the strata STACK (docs/DIMENSION_SYSTEM.md). Up to three deep for a
 // dimensioned volume: primary (the text) → secondary (translations, mirrored)

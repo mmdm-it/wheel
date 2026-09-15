@@ -81,3 +81,34 @@ describe('the proofread deep link, and the null that defeated it (O-122)', () =>
     assert.equal(typeof proofreadDeepLink(KEYS), 'boolean');
   });
 });
+
+// THE THREE VENUES (O-136): the screening room under wheel-v3 on mmdm.it shows
+// every edition; the root of the same server (the archival backup) and
+// Leicester Square do not. Every cell that matters is again a FALSE YES.
+import { isScreeningRoom, everyEditionShows } from '../src/core/lan-gate.js';
+import { VENUES } from '../src/volume-configs.js';
+const at = (hostname, pathname, search = '') => ({ hostname, pathname, search });
+describe('lan-gate — the screening room (O-136)', () => {
+  it('is the wheel-v3 directory on mmdm.it, and nothing else on that server', () => {
+    assert.equal(isScreeningRoom(VENUES, at('mmdm.it', '/wheel-v3/bible/')), true);
+    assert.equal(isScreeningRoom(VENUES, at('www.mmdm.it', '/wheel-v3/calendar/')), true);
+    assert.equal(isScreeningRoom(VENUES, at('MMDM.IT', '/Wheel-V3/bible/')), true, 'case is not a distinction');
+    assert.equal(isScreeningRoom(VENUES, at('mmdm.it', '/')), false, 'the root is the archival backup');
+    assert.equal(isScreeningRoom(VENUES, at('mmdm.it', '/wheel-v3')), false, 'the directory, not a name that starts like it');
+  });
+  it('Leicester Square and look-alikes are not the room', () => {
+    assert.equal(isScreeningRoom(VENUES, at('bibliacatholica.com', '/wheel-v3/bible/')), false);
+    assert.equal(isScreeningRoom(VENUES, at('mmdm.it.evil.com', '/wheel-v3/bible/')), false);
+    assert.equal(isScreeningRoom(VENUES, at('notmmdm.it', '/wheel-v3/bible/')), false);
+    assert.equal(isScreeningRoom(VENUES, null), false);
+    assert.equal(isScreeningRoom(null, at('mmdm.it', '/wheel-v3/bible/')), false, 'no venue table, no room');
+    assert.equal(isScreeningRoom(VENUES, { hostname: 'mmdm.it' }), false, 'no path, no room');
+  });
+  it('every edition shows in the room without any flag, on the bench only with it, and nowhere else', () => {
+    assert.equal(everyEditionShows(VENUES, at('mmdm.it', '/wheel-v3/bible/')), true);
+    assert.equal(everyEditionShows(VENUES, at('192.168.88.167', '/', '?proofread=true')), true);
+    assert.equal(everyEditionShows(VENUES, at('192.168.88.167', '/')), false, 'the bench without the flag is a reader');
+    assert.equal(everyEditionShows(VENUES, at('bibliacatholica.com', '/', '?proofread=true')), false, 'the flag is inert in Leicester Square');
+    assert.equal(everyEditionShows(VENUES, at('mmdm.it', '/', '?proofread=true')), false, 'and at the backup');
+  });
+});
