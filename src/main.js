@@ -2395,6 +2395,24 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   window.__wheelVerseBounds = renderBounds; // probe's verse-wrap autopsy reads this (?probe=1)
   const node = plugin.render(payload, renderBounds, { createElement: tag => document.createElement(tag) });
   if (node) detailContent.appendChild(node);
+  // THE PAINT IS THE TRUTH FOR THE PART COUNT TOO (Howell, 2026-09-14, the
+  // English Esther 8:9 "appears to be truncated... It's not a split verse").
+  // It was: the layout drew the first of two halves, but the ring's cached
+  // count for the seat said one, so the node settled centred, no crescent
+  // named a second half, and the lens toggle — which asks the ring — had
+  // nothing to toggle. A count and a layout that disagree are a stale count:
+  // the layout just measured in whatever face is really in layout, the
+  // count was taken earlier under whatever was true then. So when the sector
+  // draws two parts for a seat the ring believes is one, the count is
+  // corrected and the ring re-seats — the same resettle the font's arrival
+  // uses — and the reader gets their crescent and their second half.
+  if (payload?.uniform && Number(node?.dataset?.parts || 0) === 2 && selected?.id) {
+    const key = `${selected.id}|${translation}|${vpm.width}x${vpm.height}`;
+    if (versePartsCache.get(key) === 1) {
+      versePartsCache.set(key, 2);
+      currentApp?.resettle?.();
+    }
+  }
 
   // ── THE MARGIN, BEYOND THE RING (W-127, W-165) ────────────────────────────
   // Swete's apparatus, on the ground outside the arc. It is fetched per book

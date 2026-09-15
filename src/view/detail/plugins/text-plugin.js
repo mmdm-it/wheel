@@ -28,12 +28,15 @@ export class TextDetailPlugin extends BaseDetailPlugin {
         // left edge — the metrical lines arrive with the item, already cut
         // from the seated text by the side-file's offsets.
         const poem = Array.isArray(item.poemLines) && item.poemLines.length > 1;
-        const { fontPx, lines } = poem
+        const { fontPx, lines, parts } = poem
           ? layoutPoem(item.poemLines, bounds, item.part === 1 ? 1 : 0)
           : layoutVerse(text, bounds, item.part === 1 ? 1 : 0);
         const container = create('div');
         container.className = 'detail-sector-content detail-text detail-text--arc';
         if (container.style) container.style.fontSize = `${fontPx.toFixed(1)}px`;
+        // How many screens the layout actually needed — the host reads it
+        // back and holds the ring to it (main.js, renderDetail).
+        if (container.dataset) container.dataset.parts = String(parts === 2 ? 2 : 1);
         // W-1: the script the text is actually in. `lang` drives the CSS's
         // long-dormant RTL rules (and the browser's font/shaping choice);
         // `dir` states the run direction outright, so the Hebrew reads
