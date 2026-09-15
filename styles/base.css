@@ -404,12 +404,50 @@ svg :focus-visible {
   color: var(--color-nodes);
   pointer-events: none;
 }
-#dimension-button[aria-pressed="true"] { opacity: 1; transform: scale(1.08); }
+/* THE GLOBE IS A SLIDER (O-126, Howell 2026-09-14): its vertical position IS
+   the stratum — two notches up the languages, one the editions, home the
+   text, one down the basement. --thumb-y is written by main.js; the snap to
+   a notch rides the transition, a drag sets it per frame with the
+   transition off. */
+#dimension-button { transform: translateY(var(--thumb-y, 0px)); touch-action: none; /* the slider owns the vertical drag */ }
+#dimension-button[aria-pressed="true"] { opacity: 1; transform: translateY(var(--thumb-y, 0px)) scale(1.08); }
+#dimension-button.is-sliding { transition: opacity 0.15s ease; }
+/* THE PHRASE beside the globe while the thumb is held in the overrun
+   (O-128): the volume's own words, in the reader's tongue. */
+#bookmark-hint {
+  position: fixed;
+  transform: translateY(-50%);
+  max-width: 60vw;
+  text-align: right;
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2.2vmin, 22px);
+  letter-spacing: 0.06em;
+  color: var(--color-text, #000);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 261;
+}
+#bookmark-hint.is-showing { opacity: 1; }
+/* The thumb's springback out of the overrun: eased, a touch longer than the
+   snap between stops — the Focus Ring's own feel. */
+#dimension-button { transition: opacity 0.15s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1); }
+/* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
+   with, not yet kept: hollow, so keeping it visibly fills it. */
+.secondary-strata-node.is-provisional { fill: none; stroke: var(--color-orbital); stroke-width: 2; }
+.secondary-strata-node.is-magnified.is-provisional { fill: none; stroke: #000; stroke-width: 1; stroke-dasharray: 4 3; }
 #dimension-button:focus-visible { outline: 2px solid var(--color-nodes, #f2b41c); outline-offset: 3px; border-radius: 50%; }
 
 /* The strata layer sits above the primary and its detail panel, below the
    dimension button. It is click-through except on its nodes, so taps on
    empty space still fall to the (inert) primary. */
+/* O-126: while a glide touches the basement, and while the basement is
+   front, the layer goes UNDER the primary and its panels — the body is
+   position: fixed and so a stacking context, so -1 sits above its ground
+   and below everything in it. The basement is under the floor, and is seen
+   only as the floor dissolves. */
+#strata-layer.is-below { z-index: -1; }
 #strata-layer {
   position: fixed;
   inset: 0;
@@ -460,6 +498,10 @@ svg :focus-visible {
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
   font-weight: 700;
 }
+/* The basement's lens label (O-128): the primary's manners — larger, not
+   bold. "Look again at the primary stratum magnifier. You'll see the font
+   is larger, but it is not bold." (Howell, 2026-09-14) */
+.secondary-strata.labels-beside .secondary-strata-label.is-magnified { font-weight: 400; }
 
 .focus-ring-band {
   /* A stroked centreline now (sprocket chain: arc + straight tangents), not a
@@ -523,10 +565,14 @@ svg :focus-visible {
    instruments' grey, tap-sized by its hit disc. */
 .world-glyph { color: #363636; }
 
-/* The parent vessel moves data RADIALLY: it keeps the radial color (the
-   historic node yellow), splitting from the magnifier class it shares. */
+/* THE PARENT BUTTON WEARS THE MAGNIFIER'S FILL (O-130, Howell 2026-09-14:
+   "The Parent Button fill color is wrong. The Parent Button fill should be
+   the same color as the Magnifier fill."). It used to keep the radial node
+   colour — "the parent vessel moves data RADIALLY... splitting from the
+   magnifier class it shares" — and that split is retired: the two fixed
+   vessels are one colour, the orbital's. The stroke stays. */
 .focus-ring-parent-circle {
-  fill: var(--color-nodes);
+  fill: var(--color-orbital);
   stroke: var(--color-magnifier-stroke, #000);
   stroke-width: 1px;
 }

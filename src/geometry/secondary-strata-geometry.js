@@ -24,7 +24,12 @@ export function getStrataArcParameters(viewport, mirrored) {
 // settled frame (a node in the lens), a fraction is mid-rotation (the ring
 // between nodes). Magnifier-as-selection: the obeyed node is the one nearest
 // the lens, round(centerIndex) (Howell 2026-07-21).
-export function computeStrataLayout(viewport, itemCount, centerIndex = 0, mirrored = false) {
+// `lensShift` (O-128): a ring may move its lens along the arc by so many
+// nodes from the stratum's default seat — negative raises it (toward the top
+// of a mirrored arc). The basement asks for -4: its seats carry names, and
+// at the mirrored default the lens sits so near the left edge that a name
+// centred in it is cut off (Howell, 2026-09-14, from the phone).
+export function computeStrataLayout(viewport, itemCount, centerIndex = 0, mirrored = false, { lensShift = 0 } = {}) {
   const arc = getStrataArcParameters(viewport, mirrored);
   const spacing = getNodeSpacing(viewport);
   // The band this stratum draws is the sprocket chain — arc within the viewport
@@ -38,7 +43,7 @@ export function computeStrataLayout(viewport, itemCount, centerIndex = 0, mirror
   const startAngle = mirrored ? -Math.PI : w.startAngle;
   const endAngle = mirrored ? -w.startAngle : Math.PI;
   const baseAngle = (mirrored ? MIRRORED_MAG_ANGLE_DEG : STANDARD_MAG_ANGLE_DEG) * Math.PI / 180;
-  const offset = mirrored ? MIRRORED_MAG_NODE_OFFSET : 0;
+  const offset = (mirrored ? MIRRORED_MAG_NODE_OFFSET : 0) + (Number.isFinite(lensShift) ? lensShift : 0);
   const magA = baseAngle - offset * spacing; // decreasing angle lowers the magnifier down the arc
   const magIndex = Math.max(0, Math.min(itemCount - 1, Math.round(centerIndex)));
   const nodes = [];

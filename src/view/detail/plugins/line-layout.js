@@ -308,7 +308,7 @@ function sectorMetricAt(lineTable, y) {
 
 // Flow `text` at fontPx; lines seated at their true height, arc-aware, wrapped
 // by MEASURED width. Returns { lines:[{text,y,leftX,availableWidth}], overflow }.
-function flowVerseAt(text, bounds, fontPx, { seated = true } = {}) {
+function flowVerseAt(text, bounds, fontPx, { seated = true, unbounded = false } = {}) {
   const lineH = fontPx * VERSE_LINE_HEIGHT;
   const lt = bounds.lineTable || [];
   // The FIT measures against the fence (seated:false) so the shared size never
@@ -318,7 +318,7 @@ function flowVerseAt(text, bounds, fontPx, { seated = true } = {}) {
   const words = text.split(/\s+/).filter(Boolean);
   const lines = [];
   let y = top, cur = '';
-  if (y + lineH > bottom) return { lines, overflow: true }; // sector too short for one line
+  if (y + lineH > bottom && !unbounded) return { lines, overflow: true }; // sector too short for one line
   // One measurer for this whole pass — created at THIS fontPx, styled before
   // it enters the DOM (see makeMeasurer). Estimate fallback for node/tests.
   const meas = makeMeasurer(fontPx);
@@ -332,7 +332,7 @@ function flowVerseAt(text, bounds, fontPx, { seated = true } = {}) {
       if (!cur) { cur = w; continue; } // a lone word wider than its column: keep it (never loop)
       seat();
       y += lineH; cur = w;
-      if (y + lineH > bottom) return { lines, overflow: true }; // next line has no room, words remain
+      if (y + lineH > bottom && !unbounded) return { lines, overflow: true }; // next line has no room, words remain
     }
     if (cur) seat();
     return { lines, overflow: false };
@@ -614,11 +614,25 @@ export function layoutVerse(text, bounds, part = 0) {
     if (aOver) { b = `${from[from.length - 1]} ${b}`; a = from.slice(0, -1).join(' '); }
     else { a = `${a} ${from[0]}`; b = from.slice(1).join(' '); }
   }
+  // A VERSE TOO LONG FOR TWO SCREENS AT THE SHARED SIZE steps its size down,
+  // both halves together so they match, to the same floor a long poem is
+  // allowed (0.7×) — and if even that is not room enough, the words are set
+  // anyway, past the fence, because scripture is never cut (Howell,
+  // 2026-09-14: the English Esther 8:9, 525 characters, lost its last clause
+  // "they could read and hear" — the second half was drawn to the fence and
+  // the rest simply not drawn).
+  let px = fontPx;
+  let aFlow = flowVerseAt(a, bounds, px), bFlow = flowVerseAt(b, bounds, px);
+  while ((aFlow.overflow || bFlow.overflow) && px > fontPx * 0.7 + 0.01) {
+    px = Math.max(px * 0.95, fontPx * 0.7);
+    aFlow = flowVerseAt(a, bounds, px); bFlow = flowVerseAt(b, bounds, px);
+  }
   const chosen = part === 1 ? b : a;
-  const out = flowVerseAt(chosen, bounds, fontPx).lines;
-  markFace(fontPx, out);
-  noteWrap(fontPx, out, bounds);
-  return { fontPx, lines: out, parts: 2, part: part === 1 ? 1 : 0 };
+  let flow = part === 1 ? bFlow : aFlow;
+  if (flow.overflow) flow = flowVerseAt(chosen, bounds, px, { unbounded: true });
+  markFace(px, flow.lines);
+  noteWrap(px, flow.lines, bounds);
+  return { fontPx: px, lines: flow.lines, parts: 2, part: part === 1 ? 1 : 0 };
 }
 
 export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {

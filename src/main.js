@@ -10,6 +10,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
+import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
 import { TextDetailPlugin } from './view/detail/plugins/text-plugin.js';
@@ -110,6 +111,7 @@ pinCanvas(viewport);
 // measurement itself is invalidated (font arrival, re-wrap), since the count
 // derives from the measured size.
 const versePartsCache = new Map();
+let lensSwipeFiredAt = 0;   // O-132: a down-swipe on the lens just drilled; its click is not a tap
 const volumeForParts = () => currentManifest?.__wallVolume;
 let currentDetailRerender = null;   // set at boot; repaints the seated verse (O-112)
 
@@ -229,7 +231,143 @@ const CHOOSERS = [
       return ok;
     } }
 ];
-let strataFront = 0;                       // 0 = primary at front
+let strataFront = 0;                       // 0 = primary at front; -1 = the basement (O-126)
+// ── THE BASEMENT — the Zero Stratum (O-126, Howell 2026-09-14) ─────────────
+// "If you think of the app as a building, the Zero Stratum is the basement,
+// the Primary Stratum is the Main Floor, the Secondary and Tertiary Strata
+// are the upper floors. The user can look down from the upper floors and see
+// below as far as the Main Floor, but cannot see the basement from any floor
+// above." Reached by sliding the globe DOWN. Its ring looks like the
+// Secondary's (the mirrored arc, lower-left to upper-right) and holds the
+// reader's BOOKMARKS (src/core/bookmarks.js); nothing stands behind it —
+// the primary is not receded and blurred, it LEAVES.
+//
+// THE DESCENT CARRIES THE VERSE: sliding down from a leaf brings the verse
+// the reader was on down with them as a PROVISIONAL seat — hollow — beside
+// the kept ones. A tap on the lens keeps the seat under it (or drops a kept
+// one, which stays on the ring hollow until the reader leaves). Sliding up
+// with a kept bookmark under the lens returns the main floor and the ring
+// travels to that verse; with the provisional (the verse they came from)
+// under the lens, or with an empty ring, the main floor returns as it was.
+let basementArrival = null;   // { key, id, edition, label } — the verse the reader came down with, or null
+let basementLens = null;      // the seat KEY last settled under the lens this visit, or null
+let basementLoose = [];       // seat keys shown hollow this visit: the arrival, and any dropped
+const basementLabels = {};    // labels remembered for loose seats, so re-keeping keeps the name
+const basementPlaces = {};    // and their places (seatOrder), so re-keeping keeps the order
+// A SEAT ON THE BASEMENT'S RING IS A LEAF IN AN EDITION (Howell, 2026-09-14:
+// three bookmarks for Genesis 1:1, one per tongue, and never two in one).
+// Its key joins the two; the ring's items are keys.
+const seatKey = (id, edition) => `${id}@${edition ?? ''}`;
+const seatParts = key => { const at = key.lastIndexOf('@'); return at < 0 ? { id: key, edition: null } : { id: key.slice(0, at), edition: key.slice(at + 1) || null }; };
+const keptSeat = key => { const { id, edition } = seatParts(key); return bookmarksOf(currentVolumeId).find(b => b.id === id && (b.edition ?? null) === edition) || null; };
+const currentEdition = () => dimensionBridge.getSelection()?.translation ?? null;
+const BASEMENT = {
+  id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
+  lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
+  items: () => {
+    // Kept seats in the volume's order — book, chapter, verse, edition — and
+    // the loose ones (the arrival, anything dropped this visit) after them.
+    const keys = inOrder(bookmarksOf(currentVolumeId)).map(b => seatKey(b.id, b.edition));
+    for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
+    return keys;
+  },
+  label: key => keptSeat(key)?.label || basementLabels[key] || seatParts(key).id,
+  classFor: key => (keptSeat(key) ? '' : 'is-provisional'),
+  selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
+  select: key => { basementLens = key; return true; }
+};
+// The seat's label is the verse's full address as the instrument was showing
+// it at that moment — the Parent Button's words (book and chapter, in the
+// edition's own tongue and numerals) and the Magnifier's (the verse) — joined
+// as chapter and verse are everywhere: GENESIS I:12, ΓΕΝΕΣΙΣ α':12 (Howell,
+// 2026-09-14: "bookmarked nodes should display book, chapter and verse").
+// Read off the primary's own labels rather than rebuilt, so the seat says
+// exactly what the reader saw, in whatever form that edition writes it.
+function arrivalLabel(cur) {
+  const text = sel => (document.querySelector(`#app ${sel}`)?.textContent || '').trim();
+  const parent = text('.focus-ring-parent-label');
+  const verse = text('.focus-ring-magnifier-label:not(.focus-ring-parent-label)') || cur?.name || cur?.label || '';
+  return parent && verse ? `${parent}:${verse}` : (verse || parent || cur?.name || cur?.label || cur?.id || '');
+}
+// A BOOKMARK IS THE LEAF. A ring item's id is one edition's word for a seat
+// (`<bookId>_<chapter>_<verse>`, and a book id is per edition — O-92); the
+// utterance the item carries (W-21: it travels ON the item) is the leaf
+// every edition shares. The seat is kept by that, and found again on
+// whatever ring is up by asking each item for its utterance.
+const leafOf = item => item?.meta?.utterances?.[0] ?? item?.id ?? null;
+const itemForLeaf = leaf => (currentApp?.nav?.items || []).find(it => it && (it.meta?.utterances?.includes?.(leaf) || it.id === leaf)) || null;
+function enterBasement() {
+  const cur = currentApp?.nav?.getCurrent?.();
+  basementLens = null; basementLoose = [];
+  if (cur?.id && detailSectorVisible) {
+    const id = leafOf(cur), edition = currentEdition();
+    let at = null;
+    try { at = seatOrder(cur); } catch (_) { at = null; }
+    basementArrival = { key: seatKey(id, edition), id, edition, label: arrivalLabel(cur), at };
+    basementLabels[basementArrival.key] = basementArrival.label;
+    basementPlaces[basementArrival.key] = at;
+    basementLoose.push(basementArrival.key);
+  } else basementArrival = null;
+}
+// THE JUMP IS UNSEEN (Howell, 2026-09-14: "trucking out of the basement
+// should go directly to the bookmarked verse. The jump should take place
+// instantly and unseen"). It happens at the START of the ascent, while the
+// main floor is still invisible — the ring is set to the chosen seat with no
+// glide at all, and by the time the floor has faded in it was always there.
+// (The first cut let the floor return and then glided the ring to the seat,
+// on O-123's reason that an arrival should be the ring's own journey; a
+// journey nobody is meant to see is not that case.)
+function jumpToChosen() {
+  const chosenKey = basementLens, arrivedKey = basementArrival?.key ?? null;
+  if (!chosenKey || chosenKey === arrivedKey || !currentApp) return;
+  const { id: chosen, edition: want } = seatParts(chosenKey);
+  const seatHere = () => {
+    const item = itemForLeaf(chosen);   // this edition's seat on the shared leaf, if the ring up holds it
+    if (item && typeof currentApp.glideToItem === 'function') { currentApp.glideToItem(item.id, 0); return true; }
+    // Not on the ring up — at root, on a book or a chapter ring: the adapter
+    // seats the primary at the leaf, drilling for the reader (O-129).
+    try { return Boolean(seatAtLeaf(chosen, currentApp)); } catch (_) { return false; }
+  };
+  // A BOOKMARK CARRIES ITS EDITION (Howell, 2026-09-14: a bookmark for the
+  // Italian ESODO 25:37 chosen from the Hebrew "takes the user to Hebrew
+  // Exodus 25:37, instead of Italian ESODO 25:37 as it should"). The seat is
+  // the leaf, so it can be found in any edition; the bookmark says which
+  // edition the reader was in, and the return goes there. Seat first in the
+  // edition up — unseen, the floor is still dark — then commit the bookmark's
+  // edition, and the ordinary reseat carries the reader across to the same
+  // leaf in that tongue. When the edition up does not seat the leaf at all,
+  // the edition changes first and the seating follows its reseat.
+  const here = currentEdition();
+  if (!want || want === here) { seatHere(); return; }
+  const seated = seatHere();
+  // O-72's position filter would refuse an edition that does not hold the
+  // seat the reader is leaving; the bookmark's edition holds the seat they
+  // are going to, so the filter is lifted for the commit and re-read after.
+  dimensionBridge.setEditionsHere(null);
+  const committed = dimensionBridge.setTranslation(want);
+  if (!committed) { refreshEditionsHere(); return; }
+  if (!seated) editionSettlePromise.then(() => { seatHere(); refreshEditionsHere(); }).catch(() => {});
+  else editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
+}
+function leaveBasement() {
+  basementArrival = null; basementLens = null; basementLoose = [];
+}
+// Keep or drop the seat under a key; a bare leaf id means this edition.
+function toggleKeep(keyOrId) {
+  const vol = currentVolumeId;
+  if (!vol || !keyOrId) return false;
+  const key = keyOrId.includes('@') ? keyOrId : seatKey(keyOrId, currentEdition());
+  const { id, edition } = seatParts(key);
+  if (isBookmarked(vol, id, edition)) {
+    basementLabels[key] = BASEMENT.label(key);
+    basementPlaces[key] = keptSeat(key)?.at ?? basementPlaces[key] ?? null;
+    dropBookmark(vol, id, edition);
+    if (!basementLoose.includes(key)) basementLoose.push(key);
+  } else {
+    keepBookmark(vol, { id, label: BASEMENT.label(key), edition, at: basementPlaces[key] ?? null });
+  }
+  return true;
+}
 // THE LIVE PREVIEW (Howell 2026-07-30): while a chooser ring is being turned,
 // everything AHEAD of it (nearer the reader) follows the node passing under
 // the lens, before anything commits — turn the language wheel and the receded
@@ -318,6 +456,7 @@ let searchScopedCorpus = [];    // the active subset: leaves under the ring the 
 let searchOpeningAllowed = null;// characters the opening ring is pruned to when scoped (any position)
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
+let bookmarkPrompt = null;   // O-128: the volume's own words for "bookmark this", per tongue
 let searchAllLabel = 'TUTTI';   // what the scope label says when nothing is filtered
 
 // IN SEARCH, the dividers take the parent disc's seat — directly under the
@@ -683,9 +822,16 @@ function scaleAboutCentre(scale) {
 // the off-screen hub — Disney multiplane) plus a rack-focus blur. These
 // setters apply an ARBITRARY scale/blur/opacity, so the settled snap and the
 // animated tween drive the same pixels through one path.
-function setPrimaryVisual(scale, blurPx) {
-  const scaled = scale < 0.999;
-  const tf = scaled ? scaleAboutCentre(scale) : null;
+function setPrimaryVisual(scale, blurPx, away = null) {
+  // `away` (O-126): the DESCENT to the basement. The primary is not receded
+  // and blurred — it LEAVES, sliding up out of view and fading, because from
+  // the basement no floor above is visible. { offsetY, opacity }, or null.
+  const offsetX = away?.offsetX || 0;
+  const offsetY = away?.offsetY || 0;
+  const opacity = away ? away.opacity : 1;
+  const scaled = Math.abs(scale - 1) > 0.001;   // receded (< 1) or past the head (> 1)
+  const slid = Math.abs(offsetX) >= 0.5 || Math.abs(offsetY) >= 0.5 ? `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) ` : '';
+  const tf = scaled || slid ? `${slid}${scaled ? scaleAboutCentre(scale) : ''}`.trim() : null;
   const filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
   // The scale (recede) rides the child groups; the BLUR rides the #app <svg>
   // ROOT (Howell 2026-07-27, WebKit fix, phase 1). WebKit silently ignores
@@ -703,7 +849,10 @@ function setPrimaryVisual(scale, blurPx) {
     g.style.filter = ''; // never on the child group — WebKit drops it
   });
   const app = document.getElementById('app');
-  if (app) app.style.filter = filter;
+  // Gone means gone to the finger too: a plane at opacity 0 above the basement
+  // must not swallow the taps and drags meant for the basement's ring.
+  const gone = opacity < 0.001;
+  if (app) { app.style.filter = filter; app.style.opacity = opacity < 0.999 ? String(opacity) : ''; app.style.pointerEvents = gone ? 'none' : ''; }
   // EVERY HTML OVERLAY THAT BELONGS TO THE PRIMARY PLANE RECEDES WITH IT.
   // The verse panel was the only one when this was written; the margin and the
   // marks beside the verse arrived later and stayed sharp and full-size while
@@ -726,8 +875,10 @@ function setPrimaryVisual(scale, blurPx) {
     // getBoundingClientRect here slid the origin on a second recede, Howell
     // 2026-07-21.)
     panel.style.transformOrigin = `${cx}px ${cy}px`;
-    panel.style.transform = scaled ? `scale(${scale})` : '';
+    panel.style.transform = `${slid ? `translate(${offsetX.toFixed(1)}px, ${offsetY.toFixed(1)}px) ` : ''}${scaled ? `scale(${scale})` : ''}`.trim();
     panel.style.filter = filter;
+    panel.style.opacity = opacity < 0.999 ? String(opacity) : '';
+    panel.style.pointerEvents = gone ? 'none' : '';
   }
   }
 }
@@ -738,7 +889,7 @@ function setStratumVisual(el, scale, blurPx, opacity = 1, offsetX = 0, offsetY =
   // 2026-07-27, the strata half of the iOS blur fix).
   const inner = el.querySelector?.('.stratum-inner') || el;
   const still = Math.abs(offsetX) < 0.5 && Math.abs(offsetY) < 0.5;
-  if (scale > 0.999 && blurPx < 0.01 && opacity > 0.999 && still) {
+  if (Math.abs(scale - 1) < 0.001 && blurPx < 0.01 && opacity > 0.999 && still) {   // at rest — and 2.6× is not rest
     inner.removeAttribute('transform'); el.style.filter = ''; el.style.opacity = ''; return;
   }
   const slide = still ? '' : `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) `;
@@ -760,7 +911,57 @@ function applyStratumDepth(g, level) {
   setStratumVisual(g, STRATA_DEPTHS[level], STRATA_BLURS[level], 1);
 }
 
+// Where the primary goes when the basement is front. Howell's phone checks,
+// 2026-09-14: "The user should pass through them and they should fly behind
+// the user's head, just as the Tertiary Stratum does when migrating down to
+// the Secondary Stratum" — and then, on the geometry, one course the whole
+// way. So the primary LEAVES as a departing chooser leaves: it keeps scaling
+// about the centre past the film plane, sharp, out past the frame, gone only
+// at the end, since from the basement no floor above is visible. (The second
+// cut receded it into the distance — the wrong direction: going down is going
+// FORWARD, through the floor; the third slid it off on a diagonal — the
+// broken course.)
+const PRIMARY_GONE = () => ({ scale: EXIT_SCALE, blur: 0, opacity: 0, offsetX: 0, offsetY: 0 });
+// THE BASEMENT IS UNDER THE FLOOR (Howell, phone check 2026-09-14: "the
+// incoming Zero Stratum Focus Ring is visible long before the Detail Sector
+// has begun to fade away (the Zero Stratum Focus Ring can be seen through
+// the 'floor')"). The strata layer sits ABOVE the primary — right for the
+// upper floors, which are lenses over it — so for any glide that touches the
+// basement, and while the basement is front, the layer drops BELOW the
+// primary and its panels (styles: #strata-layer.is-below), and the ring is
+// revealed only as the floor dissolves.
+const strataBelow = below => { if (strataLayer?.classList) strataLayer.classList.toggle('is-below', Boolean(below)); };
+// One render call shape for every plane, the basement included.
+const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
+  id: ch.id, viewport, items, selectedIndex,
+  mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
+  classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0
+});
+
 function renderStack() {
+  if (strataFront < 0) {
+    // THE BASEMENT IS FRONT (O-126): the primary has left, the choosers are
+    // not in play, and the basement's ring stands alone with nothing behind.
+    // Settle where the flight ended — still at EXIT_SCALE, still gone. Settling
+    // to scale 1 un-zoomed the verse text for a frame before the opacity took
+    // hold ("an unzoomed artifact of text that pops on briefly during the
+    // settle" — Howell, 2026-09-14); nothing must change at the settle.
+    const gone = PRIMARY_GONE();
+    setPrimaryVisual(gone.scale, gone.blur, gone);
+    // SETTLED, the layer comes back ABOVE the (now invisible) primary. Under
+    // it, the primary's own nodes — which set pointer-events of their own —
+    // took every touch meant for the basement's ring, and it would not turn
+    // (Howell, 2026-09-14: "we need to put in the hooks so we can rotate that
+    // basement focus ring"). Below the floor only while the floor is there
+    // to be seen through: during the flight.
+    strataBelow(false);
+    CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
+    const items = BASEMENT.items();
+    const g = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
+    if (g) setStratumVisual(g, 1, 0, 1);
+  } else {
+  hideStratum(strataLayer, BASEMENT.id);
+  strataBelow(false);
   applyPrimaryDepth(strataFront); // primary is stack position 0; its level == front
   // Choosers are positions 1..N. Render (front to back so the SVG z-order —
   // last child on top — puts the front stratum highest) any at or ahead of
@@ -781,12 +982,13 @@ function renderStack() {
     });
     applyStratumDepth(g, strataFront - pos);
   });
+  }
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
   // The front stratum is drag-rotatable; the layer and its full-area hit target
   // catch pointer events ONLY while a stratum is front — at the primary they
   // stay out of the way so the ring below gets every tap and swipe.
   if (strataLayer) {
-    const strataLive = strataFront > 0;
+    const strataLive = strataFront !== 0;   // a chooser above, or the basement below
     strataLayer.style.pointerEvents = strataLive ? 'auto' : 'none';
     // Q12 (0c): hidden from assistive technology while inactive, exposed while
     // live. index.html carries aria-hidden="true" as the BOOT state, which is
@@ -801,7 +1003,7 @@ function renderStack() {
     if (strataLive) strataLayer.removeAttribute('aria-hidden');
     else strataLayer.setAttribute('aria-hidden', 'true');
   }
-  if (strataHit) strataHit.style.pointerEvents = strataFront > 0 ? 'auto' : 'none';
+  if (strataHit) strataHit.style.pointerEvents = strataFront !== 0 ? 'auto' : 'none';
 }
 
 // ── Magnifier-as-selection: rotate the front stratum (D.4a) ────────────────
@@ -822,7 +1024,7 @@ let strataDrag = null;            // { items, center, spacing, lastX/Y, startX/Y
 let strataSnap = null;            // rAF id of an in-flight springback / snap glide
 const clampCenter = (c, n) => Math.max(0, Math.min(n - 1, c));
 const clampDrag = (c, n) => Math.max(-STRATA_OVERRUN, Math.min(n - 1 + STRATA_OVERRUN, c));
-const activeChooser = () => (strataFront > 0 ? CHOOSERS[strataFront - 1] : null);
+const activeChooser = () => (strataFront > 0 ? CHOOSERS[strataFront - 1] : strataFront < 0 ? BASEMENT : null);
 
 // The real node nearest a tap point (for tap-to-magnifier), or null if the tap
 // is nearest the lodestar (already selected — no move) or out in empty space.
@@ -844,6 +1046,15 @@ function nodeIndexNearPoint(event, ch) {
   return best != null && bd <= viewport.SSd * 0.14 ? best : null;
 }
 
+// Is the press on the lodestar itself?
+function lensHit(event, ch) {
+  const lens = strataLayer?.querySelector(`#${ch.id} .secondary-strata-node.is-magnified`);
+  if (!lens) return false;
+  const rect = strataLayer.getBoundingClientRect();
+  const x = event.clientX - rect.left, y = event.clientY - rect.top;
+  return Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= viewport.SSd * 0.09;
+}
+
 // Re-render ONLY the front stratum at a (fractional) center index, front depth.
 // rotating (default) = the empty hollow lens with every node streaming through;
 // false = the settled, filled lodestar (used at the end of the springback).
@@ -851,14 +1062,9 @@ function renderFrontStratumAt(centerIndex, rotating = true) {
   const ch = activeChooser();
   if (!ch) return;
   const items = ch.items();
-  const g = renderStratum(strataLayer, {
-    id: ch.id, viewport, items,
-    selectedIndex: centerIndex,
-    mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag,
-    rotating
-  });
-  setStratumVisual(g, 1, 0, 1); // front plane: sharp, in place
-  if (rotating) previewFromLens(ch, items, centerIndex);
+  const g = renderStratum(strataLayer, stratumOpts(ch, items, centerIndex, rotating));
+  if (g) setStratumVisual(g, 1, 0, 1); // front plane: sharp, in place
+  if (rotating && ch !== BASEMENT) previewFromLens(ch, items, centerIndex);
 }
 
 // What is under the lens RIGHT NOW, previewed into every plane ahead of this
@@ -963,7 +1169,12 @@ if (strataLayer) {
       if (!moved && type === 'pointerup') {
         const tapped = nodeIndexNearPoint(event, ch);
         if (tapped != null) target = tapped;
+        // THE LENS KEEPS (O-126): in the basement, a tap on the lens itself
+        // keeps the seat under it, or drops a kept one — the one gesture the
+        // basement adds, on the one control that means "here".
+        else if (ch === BASEMENT && items.length && lensHit(event, ch)) toggleKeep(items[target]);
       }
+      if (!items.length) return;   // an empty basement: nothing to settle
       springbackStrata(center, target, ch, items);
     })
   );
@@ -977,21 +1188,40 @@ if (strataLayer) {
 // motion (the C.2 per-frame villain) and snapped back on settle, where the
 // receded planes are static again. Tunable feel knobs below.
 const STRATA_TWEEN_MS = 600;
-// Incoming/leaving strata TRAVEL in from / out to the left, DIAGONALLY: mostly
-// horizontal, with a vertical bias toward each ring's own home half — the
-// mirrored secondary from ABOVE-left, the standard tertiary from BELOW-left —
-// so the slide runs on the same diagonal the recede backs away on, not a flat
-// horizontal shift (Howell 2026-07-21). A translate (the whole ring travels),
-// NOT a scale about centre (which only inflates the edges and reads as a pop).
-const STRATA_SLIDE_X = 0.9;  // × viewport width
-const STRATA_SLIDE_Y = 0.4;  // × viewport height — the diagonal's vertical bias
+// ONE GEOMETRY THE WHOLE WAY (O-126, Howell's phone check 2026-09-14). A
+// plane behind the film plane recedes by a scale about the viewport centre —
+// every point on it moves on a radial course from the centre. A plane
+// arriving from, or leaving to, "behind the user's head" used to TRAVEL
+// instead: a translate along a fixed diagonal (Howell 2026-07-21 — the
+// entering plane then started a hair past 100% and a scale read "as a pop").
+// Two transforms, so at 100% the course broke; he tracked the Secondary's
+// magnifier: "approximately 265 degrees (almost due West)... As soon as the
+// Secondary Stratum passes through its 100% scale... its course suddenly
+// shifts to approximately 215 degrees." A truck keeps ONE geometry: past the
+// film plane the plane goes on scaling about the same centre, out past the
+// frame, and fades only at the end of its flight; entering, the reverse. The
+// diagonal slide is retired, and its two constants with it.
+// Where a plane is "behind the head". 2.6x cleared the ring and its nodes but
+// not the magnified LABEL, which runs from the lens back toward the centre —
+// a scale about the centre moves a point in proportion to its distance from
+// it, so the label's inner end, a hand's breadth from the centre, was still
+// in the frame at 2.6x (Howell's screenshots, 2026-09-14: "text that does not
+// have enough time to get out of the way"). At 6x anything more than a sixth
+// of a half-viewport from the centre is off it; the scrub sets the pace.
+const EXIT_SCALE = 6;
 const lerp = (a, b, t) => a + (b - a) * t;
 const easeInOut = t => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);
 let strataAnim = null;
 
 // Each plane's settled visual for a given front (level < 0 ⇒ off-stack, hidden).
 function layerStates(front) {
-  const states = { __primary: { scale: STRATA_DEPTHS[front], blur: STRATA_BLURS[front], opacity: 1, offsetX: 0, offsetY: 0 } };
+  const below = front < 0;   // the basement is front: the primary is GONE, not receded (O-126)
+  const states = { __primary: below
+    ? PRIMARY_GONE()
+    : { scale: STRATA_DEPTHS[front], blur: STRATA_BLURS[front], opacity: 1, offsetX: 0, offsetY: 0 } };
+  // The basement's ring arrives and leaves exactly as a chooser's does — the
+  // diagonal travel transitionStrata gives an entering or leaving plane.
+  states[BASEMENT.id] = { scale: 1, blur: 0, opacity: below ? 1 : 0, offsetX: 0, offsetY: 0 };
   CHOOSERS.forEach((ch, ci) => {
     const level = front - (ci + 1);
     states[ch.id] = level >= 0
@@ -1001,8 +1231,27 @@ function layerStates(front) {
   return states;
 }
 
-function transitionStrata(fromFront, toFront) {
+// A GLIDE BETWEEN TWO FLOORS, driven by whoever holds it (O-126, Howell's
+// phone check 2026-09-14: "ideally the slider would be interactive. The
+// animation would be tied to the slider's position, and only settle upon
+// release. The user should be able to hold the slider between strata and see
+// the animation pause"). `beginGlide` renders every plane present at either
+// end and returns `frameAt(e)` — e in [0, 1] from the departing floor to the
+// arriving one — and `settle()`. A TAP drives it on a clock (transitionStrata
+// below); the SLIDER drives it from the thumb's position and settles on
+// release. Nothing about the state (strataFront, the funnel, the basement
+// visit) changes inside a glide; that is the caller's, at the settle.
+function beginGlide(fromFront, toFront) {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
+  // A truck begun while a chooser ring is mid-turn (a second finger, or a
+  // springback still gliding) must not leave that turn dangling: its drag,
+  // its snap and its uncommitted PREVIEW are dropped here, so the floors
+  // render from committed state and no preview edition outlives the ring it
+  // was previewed on.
+  if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; }
+  strataDrag = null;
+  strataPreview = null;
+  lastPreviewKey = null;
   if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
   if (strataHit) strataHit.style.pointerEvents = 'none';
   const from = layerStates(fromFront);
@@ -1022,15 +1271,26 @@ function transitionStrata(fromFront, toFront) {
       mirrored: ch.mirrored, labelFor: ch.label,
       centerMagnified: ch.centerMag
     });
-    // Slide diagonally in from / out to the left: the vertical bias follows
-    // each ring's home half (mirrored ⇒ from above, standard ⇒ from below), so
-    // the whole ring travels on the recede's diagonal. Full opacity — the
-    // travel carries it in, no fade.
-    const dx = -viewport.width * STRATA_SLIDE_X;
-    const dy = (ch.mirrored ? -1 : 1) * viewport.height * STRATA_SLIDE_Y;
-    if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], offsetX: dx, offsetY: dy };
-    if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], offsetX: dx, offsetY: dy };
+    // Past the film plane the plane keeps scaling about the same centre — the
+    // course the magnifier was already on — until it is off the frame. NO
+    // DISSOLVE (Howell, phone check 2026-09-14: "There should be no change in
+    // the opacity of these two strata. The visual elements of these strata
+    // should migrate off screen with no transparency"): it leaves whole, and
+    // the settle prunes it once it is gone.
+    if (!inFrom && inTo) from[ch.id] = { ...to[ch.id], scale: EXIT_SCALE, opacity: 1 };
+    if (inFrom && !inTo) to[ch.id] = { ...from[ch.id], scale: EXIT_SCALE, opacity: 1 };
   });
+  // THE BASEMENT'S RING (O-126): the reader trucks IN through the main floor
+  // to reach it, so it comes up from the distance the way a chooser does and
+  // goes back down the same way; rendered only when one end is the basement.
+  if (fromFront < 0 || toFront < 0) {
+    strataBelow(true);   // under the floor for the whole flight, either way
+    const items = BASEMENT.items();
+    groups[BASEMENT.id] = renderStratum(strataLayer, stratumOpts(BASEMENT, items, Math.max(0, items.indexOf(BASEMENT.selected()))));
+    const far = { scale: STRATA_DEPTHS[STRATA_DEPTHS.length - 1], blur: STRATA_BLURS[STRATA_BLURS.length - 1], opacity: 0, offsetX: 0, offsetY: 0 };
+    if (fromFront >= 0 && toFront < 0) from[BASEMENT.id] = far;
+    if (fromFront < 0 && toFront >= 0) to[BASEMENT.id] = far;
+  } else hideStratum(strataLayer, BASEMENT.id);
 
   // Populate the primary's tangent chain for the DESTINATION now, so the links
   // are already there as it recedes (static re-render, off the per-frame path).
@@ -1038,24 +1298,58 @@ function transitionStrata(fromFront, toFront) {
     currentApp.setTangentFill(STRATA_TANGENT_SPANS[toFront] || 0);
   }
 
+  // A plane's opacity across its flight: whole for most of the way, gone only
+  // at the end; and arriving, present once it is well inside the frame. A
+  // plane that is visible at both ends simply stays whole.
+  const fadeAt = (f, t, e) => (f > 0.5 && t < 0.5 ? 1 - Math.max(0, (e - 0.6) / 0.4)
+    : f < 0.5 && t > 0.5 ? Math.min(1, e / 0.4)
+    : lerp(f, t, e));
+  const glide = {
+    e: 0,
+    // Hold each plane's STARTING blur through the motion — a receded plane must
+    // never sharpen (Howell 2026-07-21); a front plane holds 0 and recedes
+    // sharp as before. Constant radius = the blurred layer renders once, only
+    // the scale moves. Blur snaps to its destination on settle (renderStack).
+    // A primary going DOWN to the basement wears the far blur as it goes: it
+    // is leaving, and nothing waits to see it sharp again.
+    frameAt(e) {
+      glide.e = e;
+      // THE FLOOR IS THIN (Howell, phone check 2026-09-14): the Detail Sector's
+      // colour and text fill the screen, so the primary must dissolve on the
+      // way down — but SHORT, in the last stretch of its flight, "so the user
+      // will feel that she has passed through the floor into the basement";
+      // and back up through it just as quickly at the start of the ascent.
+      const FLOOR = 0.15;
+      const primaryOpacity = toFront < 0 ? 1 - Math.max(0, (e - (1 - FLOOR)) / FLOOR)
+        : fromFront < 0 ? Math.min(1, e / FLOOR)
+        : lerp(from.__primary.opacity, to.__primary.opacity, e);
+      setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
+        opacity: primaryOpacity
+      });
+      [...CHOOSERS, BASEMENT].forEach(ch => {
+        const g = groups[ch.id]; if (!g) return;
+        const f = from[ch.id], t = to[ch.id];
+        setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, fadeAt(f.opacity, t.opacity, e),
+          lerp(f.offsetX || 0, t.offsetX || 0, e), lerp(f.offsetY || 0, t.offsetY || 0, e));
+      });
+    },
+    // Final depths + blur for whatever strataFront now says, prune the hidden.
+    settle() { strataAnim = null; renderStack(); }
+  };
+  return glide;
+}
+
+// The TAP's driver: the glide on a clock, eased both ways.
+function transitionStrata(fromFront, toFront) {
+  const glide = beginGlide(fromFront, toFront);
   let raf = 0, start = 0, cancelled = false;
   const frame = now => {
     if (cancelled) return;
     if (!start) start = now;
     const e = easeInOut(Math.min(1, (now - start) / STRATA_TWEEN_MS));
-    // Hold each plane's STARTING blur through the motion — a receded plane must
-    // never sharpen (Howell 2026-07-21); a front plane holds 0 and recedes
-    // sharp as before. Constant radius = the blurred layer renders once, only
-    // the scale moves. Blur snaps to its destination on settle (renderStack).
-    setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), from.__primary.blur);
-    CHOOSERS.forEach(ch => {
-      const g = groups[ch.id]; if (!g) return;
-      const f = from[ch.id], t = to[ch.id];
-      setStratumVisual(g, lerp(f.scale, t.scale, e), f.blur, lerp(f.opacity, t.opacity, e),
-        lerp(f.offsetX || 0, t.offsetX || 0, e), lerp(f.offsetY || 0, t.offsetY || 0, e));
-    });
+    glide.frameAt(e);
     if (e < 1) { raf = requestAnimationFrame(frame); }
-    else { strataAnim = null; renderStack(); } // settle: final depths + blur, prune hidden
+    else glide.settle();
   };
   raf = requestAnimationFrame(frame);
   strataAnim = { cancel: () => { cancelled = true; cancelAnimationFrame(raf); } };
@@ -1077,24 +1371,47 @@ const maxStrataFront = () => CHOOSERS.length; // primary(0) → secondary(1) →
 // asked the reader to move AWAY from the text in order to narrow their
 // choice. A returning reader mostly presses this never — they just read — so
 // the funnel's coherence is worth more than keeping any one chooser nearest.
-function cycleStrata() {
-  if (!dimensionAvailable()) return;
-  const max = maxStrataFront();
+const minStrataFront = () => -1;   // the basement (O-126) — one floor below the text
+// GO TO A FLOOR (O-126). The slider addresses a stratum directly, in either
+// direction; the tap still cycles inward through this. Returns whether
+// anything moved.
+function goToStratum(to) {
+  if (!dimensionAvailable()) return false;
+  to = Math.max(minStrataFront(), Math.min(maxStrataFront(), Math.round(to)));
   const from = strataFront;
-  strataFront = strataFront <= 0 ? max : strataFront - 1;
-  if (from === strataFront) return;
-  transitionStrata(from, strataFront);
+  if (from === to) return false;
+  if (to < 0) enterBasement();          // the descent carries the verse
+  if (from < 0) jumpToChosen();         // the ascent finds the floor already at the seat
+  strataFront = to;
+  transitionStrata(from, to);
+  arriveAt(from, to);
+  return true;
+}
+// WHAT ARRIVING AT A FLOOR CHANGES, beyond the picture — shared by the tap's
+// timed glide and the slider's settle.
+function arriveAt(from, to) {
   // ARRIVAL AT THE TEXT ENDS THE LAUNCH FUNNEL (O-77), and this is the only
   // other way in: `resetStrata` catches the reader who is carried out, this
   // catches the reader who WALKS in, which is the path the funnel was built
   // to teach. Set AFTER the transition is kicked off, never before: the
-  // departing planes render their nodes one last time inside
-  // `transitionStrata`, and a ring that loses a node while it is gliding away
-  // is the very flicker this ruling exists to stop.
-  if (strataFront === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
-  // The globe turns with the recede — same duration, settling together.
-  if (dimensionGlobe) dimensionGlobe.spin(STRATA_TWEEN_MS);
+  // departing planes render their nodes one last time inside the glide, and
+  // a ring that loses a node while it is gliding away is the very flicker
+  // this ruling exists to stop.
+  if (to === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
+  if (from < 0) leaveBasement();        // back up — to the bookmark under the lens, if one
+  // THE GLOBE NO LONGER TURNS WITH THE MIGRATION (Howell, phone check
+  // 2026-09-14): "That was useful when the input was a tap, but the slider
+  // is its own visual feedback." The turn used to ride here, synced to the
+  // strata tween. Its other occasion — the hello when the globe ARRIVES at a
+  // leaf (updateDimensionButton) — is untouched.
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
+  placeThumb();
+}
+// THE TAP'S ROUND (Howell, 2026-09-14): languages, editions, the text, the
+// basement, and round to the languages — one floor down per tap, the
+// basement included, the wrap from the bottom back to the top.
+function cycleStrata() {
+  goToStratum(strataFront <= minStrataFront() ? maxStrataFront() : strataFront - 1);
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
@@ -1102,8 +1419,11 @@ function resetStrata() {
   // the globe answers the sideways question and O-72's filter is right again.
   bootFunnelOpen = false;
   strataFront = 0;
+  basementArrival = null; basementLens = null; basementLoose = [];
   CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
+  hideStratum(strataLayer, BASEMENT.id);
   renderStack();
+  placeThumb();
 }
 // The globe shows only where a dimension EXISTS and the reader stands at one
 // of the two language-question moments (Howell 2026-07-27): a LEAF (detail
@@ -1112,14 +1432,17 @@ function resetStrata() {
 // tongue"). Between the two — drilling down or backing out — it is clutter
 // and hides; any open stack recedes back to the primary. A volume boot
 // (including a gateway transit) resets the stack. The door is declared by
-// the adapter (dimensionFrontDoorAt), so the host stays volume-agnostic.
-let dimensionFrontDoorAt = () => false;
+// the adapter, so the host stays volume-agnostic. (The front-door predicate
+// of O-96 is retired under O-129: the globe is at every level.)
 // WHICH EDITIONS HOLD WHERE THE READER IS STANDING — the adapter's answer,
 // bound per volume (H-29's carry-out, Howell 2026-08-19). A volume whose
 // adapter does not answer returns null, and null means "no restriction"
 // rather than "nothing" — the host never learns which volumes those are, and
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
+let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
+let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
+let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
 let cornerImageAt = () => null;
@@ -1365,16 +1688,18 @@ function updateDimensionButton() {
   if (!dimensionButton) return;
   refreshEditionsHere();
   if (cornerIconHold) return; // frozen mid-wipe: the icon is part of the image
-  const atFrontDoor = (() => {
-    try { return Boolean(dimensionFrontDoorAt(currentApp?.nav?.getCurrent?.())); } catch (_) { return false; }
-  })();
-  // While a stratum is forward the globe is the ONLY way onward, so it must
-  // show regardless of what the primary is doing behind the glass — this is
-  // the boot state itself under the 2026-07-30 funnel (Howell ruling 2), and
-  // the reader would otherwise be stranded in the language chooser.
-  const show = dimensionAvailable() && (detailSectorVisible || atFrontDoor || isStrataOpen());
+  // AT EVERY LEVEL (O-129, Howell 2026-09-14: "Proceed to make the Dimension
+  // Button visible and functioning at every level"). O-96's two homes — root
+  // and the leaf, the rings between them "clutter" — were ruled for a tap
+  // that opened a chooser. The slider is a readout whose position is the
+  // stratum, the basement is the reader's own tool and wanted most when
+  // NOT at a verse, and the edition question has an answer at every level
+  // (editionsHoldingItem answers by book off a verse). So: wherever the
+  // volume has a dimension, the globe is there.
+  const show = dimensionAvailable();
   const arriving = show && dimensionButton.hidden;
   dimensionButton.hidden = !show;
+  if (show) placeThumb();   // measured while visible (O-126)
   // The entrance: the globe appears with a quick turn when the detail
   // sector brings it in (Howell 2026-07-22) — EXCEPT when a wipe reveals
   // it: then it arrives static, part of the image, and says hello only
@@ -1406,9 +1731,245 @@ function openBootFunnel() {
   updateDimensionButton();
   return true;
 }
-if (dimensionButton) {
-  dimensionButton.addEventListener('click', cycleStrata);
+// ── THE GLOBE IS A SLIDER (O-126, Howell 2026-09-14) ───────────────────────
+// "The dimension button has always been a little awkward, tapping to
+// traverse the different strata. I'd rather make it a slider." Its vertical
+// position IS the stratum: home is the text; one notch up the editions, two
+// the languages; one notch DOWN the basement. Dragging it crosses the notches
+// live — each crossing is the same transition a tap made — and the release
+// snaps to the nearest. A tap (no travel) still cycles inward, so the launch
+// funnel's "two quick taps" stay true. (Ghost notches at the resting places
+// were drawn in the first cut and struck on his phone check the same day:
+// "We don't need the ghost rings.")
+// THE TRAVEL (Howell, phone check 2026-09-14: "50% longer. Since it can't go
+// any lower... it will have to go higher. The four stops should remain
+// equidistant" — then, tried: "Split the difference. Make it 25% longer than
+// it was before."). The stops are 1.5625 button heights apart (was 1.25);
+// the LOWEST stop, the basement, keeps its old place 1.25 heights below the
+// globe's CSS rest position, so every stop above it — the text included —
+// sits higher than before. The thumb's offset is measured from that rest.
+const NOTCH_RATIO = 1.5625;  // stop spacing, in button heights
+const BASEMENT_DROP = 1.25;  // the LOWEST point of travel, in button heights below the CSS rest
+// THE OVERRUN (O-128, Howell 2026-09-14): below the basement stop the thumb
+// can be pulled half a stop further against a spring — the Focus Ring's own
+// springback feel — and HELD there to bookmark (below). The travel shifted
+// up by the overrun so its lowest point stays where it was.
+const SLIDER_OVERRUN = 0.5;  // stops, below the basement stop
+const OVERRUN_GIVE = 0.5;    // the spring: the thumb moves this fraction of the finger's travel past the stop
+let slide = null;           // { startY, startFront, lastY, moved }
+let suppressClick = false;  // a drag's release must not also count as a tap
+const buttonPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64);
+const notchPx = () => buttonPx() * NOTCH_RATIO;
+// How far ABOVE the CSS rest the thumb sits at floor position p (fractional while held).
+const thumbRise = p => (p - minStrataFront() + SLIDER_OVERRUN) * notchPx() - BASEMENT_DROP * buttonPx();
+function placeThumb() {
+  if (!dimensionButton || slide) return;   // a held thumb follows the finger, not the state
+  try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(strataFront)).toFixed(1)}px`); } catch (_) { /* stub DOM */ }
 }
+// THE SCRUB (Howell, phone check 2026-09-14). While the thumb is held, the
+// glide between the two floors it sits between is driven by its position:
+// e = how far along the segment the thumb is. Held still between floors, the
+// picture holds still. Nothing commits until release, which settles to the
+// nearer floor over the time that part of the tween would have taken. Drag
+// across a whole floor without stopping and the segment behind is committed
+// as the next one begins.
+let scrub = null;   // { from, to, glide } — the segment the thumb is inside
+const SCRUB_MAX_SEGMENTS = 6;   // a bound on one move event's crossings
+function beginSegment(from, to) {
+  if (to < 0) enterBasement();          // the ring must know what the reader brings down
+  if (from < 0) jumpToChosen();         // unseen: the floor is invisible at e = 0
+  scrub = { from, to, glide: beginGlide(from, to) };
+  strataAnim = { cancel: () => { scrub = null; } };
+}
+// End the segment the thumb is inside: at its far floor (commit) or back at
+// its near one (revert — nothing changed, and a basement visit begun for the
+// picture is unbegun).
+function endSegment(commit) {
+  if (!scrub) return;
+  const { from, to, glide } = scrub;
+  scrub = null;
+  if (commit) {
+    glide.frameAt(1);
+    strataFront = to;
+    glide.settle();
+    arriveAt(from, to);
+  } else {
+    glide.frameAt(0);
+    if (to < 0) { basementArrival = null; basementLens = null; basementLoose = []; }
+    glide.settle();
+  }
+}
+function scrubTo(p) {
+  p = Math.max(minStrataFront(), Math.min(maxStrataFront(), p));
+  for (let n = 0; n < SCRUB_MAX_SEGMENTS; n += 1) {
+    if (!scrub) {
+      const target = p > strataFront + 0.001 ? strataFront + 1 : p < strataFront - 0.001 ? strataFront - 1 : null;
+      if (target === null || target < minStrataFront() || target > maxStrataFront()) return;
+      beginSegment(strataFront, target);
+    }
+    const { from, to, glide } = scrub;
+    const e = (p - from) / (to - from);
+    if (e >= 1) { endSegment(true); continue; }
+    if (e <= 0) { endSegment(false); continue; }
+    glide.frameAt(e);
+    return;
+  }
+}
+let scrubSettle = null;   // rAF of a settle in flight
+function releaseScrub() {
+  if (!scrub) return;
+  const { glide } = scrub;
+  const commit = glide.e >= 0.5;
+  const target = commit ? 1 : 0;
+  const startE = glide.e, span = Math.abs(target - startE);
+  if (span < 0.001) { endSegment(commit); return; }
+  let start = 0;
+  const step = now => {
+    if (!start) start = now;
+    const t = Math.min(1, (now - start) / (STRATA_TWEEN_MS * span));
+    const k = 1 - Math.pow(1 - t, 3);   // easeOutCubic — the settle of a released thing
+    glide.frameAt(startE + (target - startE) * k);
+    if (t < 1) { scrubSettle = requestAnimationFrame(step); }
+    else { scrubSettle = null; endSegment(commit); }
+  };
+  scrubSettle = requestAnimationFrame(step);
+}
+// ── HOLD TO BOOKMARK (O-128, Howell 2026-09-14) ─────────────────────────────
+// "The user must hold the button in the extreme position longer to bookmark
+// the verse. A quick pull down of the button to the bottom only takes the
+// user to the basement without bookmarking." While the thumb is held in the
+// overrun with the basement front and a verse in hand (the provisional seat
+// under the lens), the volume's phrase shows beside the globe and the seat
+// FILLS as the hold runs — the filling is the progress — and at HOLD_MS it
+// is kept. Let go sooner and nothing happened: the seat empties, the phrase
+// goes, the thumb springs back. The phrase is the VOLUME's, in the reader's
+// tongue (display_config.bookmark_prompt): the engine has no word for what a
+// leaf is called. From the front door there is no verse in hand, so the
+// overrun is only a spring.
+const HOLD_MS = 1100;
+const HOLD_DEPTH = 0.15;   // stops into the overrun before the hold is a hold
+let hold = null;           // { id, start, timer, raf } while the thumb is held in the overrun
+const bookmarkHint = (() => {
+  if (!dimensionButton || typeof document === 'undefined') return null;
+  try {
+    const h = document.createElement('div');
+    h.id = 'bookmark-hint';
+    h.setAttribute('aria-live', 'polite');
+    dimensionButton.parentNode?.insertBefore?.(h, dimensionButton);
+    return h;
+  } catch (_) { return null; }
+})();
+const bookmarkPhrase = () => {
+  const lang = dimensionBridge.getSelection()?.language || null;
+  const p = bookmarkPrompt;
+  if (!p) return '';
+  if (typeof p === 'string') return p;
+  return p[lang] || p.default || '';
+};
+function showHint(text) {
+  if (!bookmarkHint?.classList) return;
+  bookmarkHint.textContent = text;
+  if (typeof dimensionButton.getBoundingClientRect === 'function') {
+    const r = dimensionButton.getBoundingClientRect();
+    bookmarkHint.style.top = `${(r.top + r.height / 2).toFixed(0)}px`;
+    bookmarkHint.style.right = `${(window.innerWidth - r.left + 12).toFixed(0)}px`;
+  }
+  bookmarkHint.classList.toggle('is-showing', Boolean(text));
+}
+function hideHint() { if (bookmarkHint?.classList) bookmarkHint.classList.remove('is-showing'); }
+// The provisional seat under the lens fills with the hold.
+function fillProvisional(f) {
+  const lens = strataLayer?.querySelector?.('#basement .secondary-strata-node.is-magnified.is-provisional');
+  if (!lens) return;
+  lens.style.fill = f > 0 ? 'var(--color-orbital)' : '';
+  lens.style.fillOpacity = f > 0 ? String(f) : '';
+}
+function holdBegin() {
+  if (hold || strataFront !== -1 || scrub || !basementArrival) return;
+  const { key, id, edition } = basementArrival;
+  if (isBookmarked(currentVolumeId, id, edition)) return;
+  if (BASEMENT.selected() !== key) return;   // the hold keeps the seat UNDER THE LENS, and that is the arrival
+  hold = { key, id, edition, start: (typeof performance !== 'undefined' ? performance.now() : Date.now()), timer: setTimeout(() => holdKeep(), HOLD_MS), raf: 0 };
+  showHint(bookmarkPhrase());
+  const tick = () => {
+    if (!hold) return;
+    const now = typeof performance !== 'undefined' ? performance.now() : Date.now();
+    fillProvisional(Math.min(1, (now - hold.start) / HOLD_MS));
+    hold.raf = requestAnimationFrame(tick);
+  };
+  hold.raf = requestAnimationFrame(tick);
+}
+function holdCancel() {
+  if (!hold) return;
+  clearTimeout(hold.timer);
+  cancelAnimationFrame(hold.raf);
+  hold = null;
+  hideHint();
+  fillProvisional(0);
+}
+function holdKeep() {
+  if (!hold) return;
+  const { key, id, edition } = hold;
+  cancelAnimationFrame(hold.raf);
+  hold = null;
+  hideHint();
+  keepBookmark(currentVolumeId, { id, label: BASEMENT.label(key), edition, at: basementPlaces[key] ?? basementArrival?.at ?? null });
+  basementLens = key;
+  renderStack();   // the seat is drawn kept: filled, for good
+}
+
+if (dimensionButton) {
+  dimensionButton.addEventListener('pointerdown', event => {
+    if (!dimensionAvailable()) return;
+    if (strataAnim && !scrub) return;   // a tap's own glide is running: let it land
+    if (scrubSettle) { cancelAnimationFrame(scrubSettle); scrubSettle = null; }   // caught mid-settle: the thumb takes over
+    // Where the thumb stands now, as a floor position — mid-segment if caught.
+    const here = scrub ? scrub.from + scrub.glide.e * (scrub.to - scrub.from) : strataFront;
+    slide = { startY: event.clientY, lastY: event.clientY, startFront: here, moved: false };
+    try { dimensionButton.setPointerCapture(event.pointerId); } catch (_) { /* unsupported */ }
+  });
+  dimensionButton.addEventListener('pointermove', event => {
+    if (!slide) return;
+    slide.lastY = event.clientY;
+    const dy = slide.startY - event.clientY;   // up is positive: toward the languages
+    if (!slide.moved) {
+      if (Math.abs(dy) <= STRATA_TAP_SLOP) return;
+      slide.moved = true;
+      dimensionButton.classList.add('is-sliding');
+    }
+    const raw = slide.startFront + dy / notchPx();
+    const min = minStrataFront();
+    if (raw < min) {
+      // Into the overrun: the thumb follows against the spring, the floors do
+      // not go below the basement, and a deep enough hold is a hold.
+      const over = Math.min(SLIDER_OVERRUN, (min - raw) * OVERRUN_GIVE);
+      dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(min - over)).toFixed(1)}px`);
+      scrubTo(min);
+      if (over >= HOLD_DEPTH) holdBegin(); else holdCancel();
+      return;
+    }
+    holdCancel();
+    const p = Math.min(maxStrataFront(), raw);
+    dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`);
+    scrubTo(p);
+  });
+  const release = () => {
+    if (!slide) return;
+    const { moved } = slide;
+    slide = null;
+    dimensionButton.classList.remove('is-sliding');
+    if (moved) suppressClick = true;
+    holdCancel();     // a hold that has not reached HOLD_MS is nothing
+    releaseScrub();
+    placeThumb();     // the springback from the overrun rides the thumb's transition
+  };
+  ['pointerup', 'pointercancel'].forEach(type => dimensionButton.addEventListener(type, release));
+  dimensionButton.addEventListener('click', () => {
+    if (suppressClick) { suppressClick = false; return; }
+    cycleStrata();
+  });
+}
+
 // THE PROOFREADER'S SHORTCUT (O-123, Howell 2026-08-31: "I want you to cheat,
 // just for the sake of proofreading... count nodes between the origin verse
 // and the destination verse and then rotate the Focus Ring by that number of
@@ -1468,7 +2029,17 @@ if (typeof window !== 'undefined') {
     funnel: () => bootFunnelOpen,
     // How far the strata have travelled: 0 = the reader is at the text.
     front: () => strataFront,
-    cycle: cycleStrata
+    cycle: cycleStrata,
+    // O-126: the slider's address, and the basement's state.
+    slide: goToStratum,
+    scrub: scrubTo,
+    release: releaseScrub,
+    // O-128: the hold in the overrun, and its state.
+    holdBegin, holdCancel,
+    hold: () => (hold ? { id: hold.id, key: hold.key } : null),
+    min: minStrataFront,
+    basement: () => ({ arrival: basementArrival, lens: basementLens, items: BASEMENT.items(), kept: bookmarksOf(currentVolumeId).map(b => seatKey(b.id, b.edition)) }),
+    keep: toggleKeep
   };
 }
 const tapDebugEnabled = new URLSearchParams(window.location.search).get('tapdebug') === '1';
@@ -1828,6 +2399,24 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   window.__wheelVerseBounds = renderBounds; // probe's verse-wrap autopsy reads this (?probe=1)
   const node = plugin.render(payload, renderBounds, { createElement: tag => document.createElement(tag) });
   if (node) detailContent.appendChild(node);
+  // THE PAINT IS THE TRUTH FOR THE PART COUNT TOO (Howell, 2026-09-14, the
+  // English Esther 8:9 "appears to be truncated... It's not a split verse").
+  // It was: the layout drew the first of two halves, but the ring's cached
+  // count for the seat said one, so the node settled centred, no crescent
+  // named a second half, and the lens toggle — which asks the ring — had
+  // nothing to toggle. A count and a layout that disagree are a stale count:
+  // the layout just measured in whatever face is really in layout, the
+  // count was taken earlier under whatever was true then. So when the sector
+  // draws two parts for a seat the ring believes is one, the count is
+  // corrected and the ring re-seats — the same resettle the font's arrival
+  // uses — and the reader gets their crescent and their second half.
+  if (payload?.uniform && Number(node?.dataset?.parts || 0) === 2 && selected?.id) {
+    const key = `${selected.id}|${translation}|${vpm.width}x${vpm.height}`;
+    if (versePartsCache.get(key) === 1) {
+      versePartsCache.set(key, 2);
+      currentApp?.resettle?.();
+    }
+  }
 
   // ── THE MARGIN, BEYOND THE RING (W-127, W-165) ────────────────────────────
   // Swete's apparatus, on the ground outside the arc. It is fetched per book
@@ -2176,7 +2765,49 @@ function wireInteractions(getApp) {
     return nearest;
   };
 
+  // THE PARENT BUTTON SWIPES TOO (O-131, Howell 2026-09-14): "Keep the
+  // existing tap to migrate the Parent Button Node into the Magnifier, but add
+  // a swipe feature that causes the same migration by swiping vertically
+  // between the Parent Button and Magnifier." A press on the parent vessel
+  // (or its words) is watched: travel UP past the threshold, more up than
+  // across, fires the vessel's own click handler once — the same migration
+  // as the tap, by the same door — and the native click that follows the
+  // release is swallowed so it cannot fire twice. A press that never travels
+  // is the tap it always was.
+  const PARENT_SWIPE_PX = 28;
+  let parentSwipe = null;          // { el, startX, startY, fired } while a press on the parent is held
+  let parentSwipeFiredAt = 0;
+  // AND THE LENS SWIPES DOWN (O-132, Howell 2026-09-14): a press on the
+  // magnifier that travels DOWN toward the parent button drills IN — into the
+  // sky's LARGEST node, the most-read child, "the big node is the door".
+  // The pair is bi-directional: up out of a book, down into its most-read
+  // chapter, down again into its most-read verse.
+  let lensSwipe = null;            // { startX, startY, fired } while a press on the lens is held
   const onPointerMove = event => {
+    if (lensSwipe) {
+      const down = event.clientY - lensSwipe.startY;
+      const across = Math.abs(event.clientX - lensSwipe.startX);
+      if (!lensSwipe.fired && down >= PARENT_SWIPE_PX && down > across) {
+        lensSwipe.fired = true;
+        lensSwipeFiredAt = Date.now();
+        const app = getApp();
+        const idx = app?.largestPyramidIndex?.() ?? -1;
+        logTap('lens-swipe', { down: Math.round(down), idx });
+        if (idx >= 0) { try { app.handlePyramidNodeClick(idx); } catch (_) { /* the drill's own guards spoke */ } }
+      }
+      return;
+    }
+    if (parentSwipe) {
+      const up = parentSwipe.startY - event.clientY;
+      const across = Math.abs(event.clientX - parentSwipe.startX);
+      if (!parentSwipe.fired && up >= PARENT_SWIPE_PX && up > across) {
+        parentSwipe.fired = true;
+        parentSwipeFiredAt = Date.now();
+        logTap('parent-swipe', { up: Math.round(up), across: Math.round(across) });
+        try { if (typeof parentSwipe.el.onclick === 'function') parentSwipe.el.onclick(event); } catch (_) { /* the migration's own guards spoke */ }
+      }
+      return;
+    }
     if (!isDragging) return;
     const app = getApp();
     if (!app) return;
@@ -2218,6 +2849,13 @@ function wireInteractions(getApp) {
   // browser's delayed native click so the same node doesn't rotate twice.
   svg.addEventListener('click', event => {
     const now = Date.now();
+    // A swipe that already migrated (O-131) must not be followed by the tap's click.
+    if (parentSwipeFiredAt && now - parentSwipeFiredAt < 700 && event.target?.closest?.('.focus-ring-parent-circle, .focus-ring-parent-label')) {
+      parentSwipeFiredAt = 0;
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
     if (now < suppressNativeClickUntil) {
       // Control taps (magnifier, parent button) rely on their NATIVE click
       // and their pointerdown path never arms a manual fire — suppressing
@@ -2280,6 +2918,17 @@ function wireInteractions(getApp) {
         targetClass: event.target?.getAttribute?.('class') || null,
         targetId: event.target?.getAttribute?.('id') || null
       });
+      // The parent vessel (or its words): watch for the swipe (O-131). The
+      // capture goes on the CIRCLE, so a plain tap's click still lands on it.
+      const parentEl = event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label') ? app.view?.parentButtonOuter : null;
+      if (parentEl && typeof parentEl.onclick === 'function') {
+        parentSwipe = { el: parentEl, startX: event.clientX, startY: event.clientY, fired: false };
+        try { parentEl.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
+      } else if (!searchRestore && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label')) {
+        // The lens itself (not the parent's vessel, not in search): watch for the down-swipe (O-132).
+        lensSwipe = { startX: event.clientX, startY: event.clientY, fired: false };
+        try { app.view?.magnifierCircle?.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
+      }
       return;
     }
     suppressNativeClickUntil = Date.now() + 450;
@@ -2361,6 +3010,8 @@ function wireInteractions(getApp) {
 
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
+      if (parentSwipe) { if (type !== 'pointerleave') parentSwipe = null; }
+      if (lensSwipe) { if (type !== 'pointerleave') lensSwipe = null; }
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
       const app = getApp();
@@ -2867,6 +3518,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchCorpusEntries = [];
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
+  bookmarkPrompt = root?.display_config?.bookmark_prompt || null;
   if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
     const leafLevel = root?.display_config?.leaf_level || null;
     searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));
@@ -2928,7 +3580,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const adapterGetParentLabelSuffix = typeof handlerSet.getParentLabelSuffix === 'function' ? handlerSet.getParentLabelSuffix : null;
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
-  dimensionFrontDoorAt = typeof handlerSet.showsDimensionAt === 'function' ? handlerSet.showsDimensionAt : () => false;
+  seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
+  seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
   // The chooser offers the editions that hold where the reader stands (H-29).
   editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;
   // The corner emblem belongs to the division the reader is in (H-31). A
@@ -2961,6 +3614,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     setCalendarMode: layoutBindings.setCalendarMode,
     setCalendarMonthContext: layoutBindings.setCalendarMonthContext,
     bibleModeRef: layoutBindings.bibleModeRef,
+    prominenceOf: layoutBindings.prominenceOf,
     setBibleMode: layoutBindings.setBibleMode,
     setBibleChapterContext: layoutBindings.setBibleChapterContext,
     setBibleVerseContext: layoutBindings.setBibleVerseContext,
@@ -3114,6 +3768,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // not a general-purpose button and must never grow into one.
   if (app?.view?.magnifierCircle) {
     app.view.magnifierCircle.addEventListener('click', () => {
+      if (lensSwipeFiredAt && Date.now() - lensSwipeFiredAt < 700) { lensSwipeFiredAt = 0; return; }   // the swipe already drilled (O-132)
       if (searchRestore) { strikeSettledChar(); return; }
       app.toggleVersePart?.();
     });
@@ -3255,7 +3910,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // the same index, and sometimes not the same number. A volume that returns
     // false (or declares no handler) keeps the reader exactly where they are,
     // which is the right answer whenever the editions agree.
-    Promise.resolve(config.onEditionSettle?.(translation || null))
+    editionSettlePromise = Promise.resolve(config.onEditionSettle?.(translation || null))
       .then(() => handlerSet.reseatOnEditionChange?.({
         selected: app?.nav?.getCurrent?.(), app
       }))

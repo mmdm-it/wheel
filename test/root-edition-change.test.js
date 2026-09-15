@@ -20,6 +20,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { bibleAdapter } from '../src/adapters/bible-adapter.js';
 import { buildBibleTestaments } from '../src/adapters/volume-helpers.js';
+import { buildBibleBookCousinChain } from '../src/navigation/cousin-builder.js';
 
 // Books, per edition, with per-edition ids over shared shards (O-92).
 // OLD leaves live in shards a/b; NEW leaves in shard c.
@@ -56,7 +57,13 @@ const volume = {
 };
 
 const manifest = (() => {
-  const m = { Gutenberg_Bible: { testaments: {} } };
+  // The book ring walks the legacy scaffold for its roster (cousin-builder)
+  // and the wall volume for membership: every edition's books are listed,
+  // each edition sees only its own (O-71).
+  const m = { Gutenberg_Bible: { testaments: {
+    'division-0': { sort_number: 0, books: { 'h-1': { sort_number: 0 }, 'h-2': { sort_number: 1 }, 'v-1': { sort_number: 2 }, 'v-2': { sort_number: 3 } } },
+    'division-1': { sort_number: 1, books: { 'g-1': { sort_number: 0 }, 'v-3': { sort_number: 1 } } }
+  } } };
   Object.defineProperty(m, '__wallVolume', { value: volume, enumerable: false });
   return m;
 })();
@@ -76,6 +83,28 @@ const reseatTo = (edition, selected) => {
   };
   return { returned: h.reseatOnEditionChange({ selected, app }), adopted };
 };
+
+describe('the book ring refills on an edition change (O-129)', () => {
+  // Standing on A's book h-1 (leaves a1, a2). C seats the same leaves in
+  // v-1, under its Vetus Testamentum; B seats none of them.
+  const bookOf = (edition, bookId) => {
+    const ring = buildBibleBookCousinChain(manifest, { bookId, testamentId: 'division-0', initialItemId: bookId, names: {}, edition }).items.filter(Boolean);
+    return ring.find(b => b.id === bookId) || ring[0];
+  };
+  it('lands on the book of the new edition that seats the reader\'s book\'s leaves', () => {
+    const { returned, adopted } = reseatTo('C', bookOf('A', 'h-1'));
+    assert.equal(returned, true, 'adopt — A\'s books must not stand under C');
+    // A cousin chain carries null gaps between families; the seats are what count.
+    assert.deepEqual(adopted.items.filter(Boolean).map(i => i.id), ['v-1', 'v-2', 'v-3'], 'C\'s books — the ring is the cousin chain of the whole volume');
+    assert.equal(adopted.landed?.id, 'v-1', 'the book seating a1');
+  });
+  it('an edition that seats nothing of it lands on its own first book', () => {
+    const { returned, adopted } = reseatTo('B', bookOf('A', 'h-1'));
+    assert.equal(returned, true);
+    assert.deepEqual(adopted.items.filter(Boolean).map(i => i.id), ['g-1']);
+    assert.equal(adopted.landed?.id, 'g-1');
+  });
+});
 
 describe('the root ring refills on an edition change (O-95)', () => {
   it('THE RING REFILLS WITH THE NEW EDITION\'S OWN DIVISION', () => {

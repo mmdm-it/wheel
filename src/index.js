@@ -10,6 +10,7 @@ import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-py
 import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
+import { largestChildIndex } from './pyramid/volume-pyramid.js';
 import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
@@ -2123,6 +2124,8 @@ export function createApp({
     migrateOut,
     migrateOutFiltered,
     migrateInGathered,
+    // The sky's largest node, for the lens's down-swipe (O-132); -1 with no sky.
+    largestPyramidIndex: () => largestChildIndex(lastPyramidData?.nodes || []),
     handlePyramidNodeClick: idx => {
       if (isAnimating()) return; // block clicks during migration animation
       if (!lastPyramidData) return;
