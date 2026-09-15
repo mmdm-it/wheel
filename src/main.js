@@ -2764,7 +2764,30 @@ function wireInteractions(getApp) {
     return nearest;
   };
 
+  // THE PARENT BUTTON SWIPES TOO (O-131, Howell 2026-09-14): "Keep the
+  // existing tap to migrate the Parent Button Node into the Magnifier, but add
+  // a swipe feature that causes the same migration by swiping vertically
+  // between the Parent Button and Magnifier." A press on the parent vessel
+  // (or its words) is watched: travel UP past the threshold, more up than
+  // across, fires the vessel's own click handler once — the same migration
+  // as the tap, by the same door — and the native click that follows the
+  // release is swallowed so it cannot fire twice. A press that never travels
+  // is the tap it always was.
+  const PARENT_SWIPE_PX = 28;
+  let parentSwipe = null;          // { el, startX, startY, fired } while a press on the parent is held
+  let parentSwipeFiredAt = 0;
   const onPointerMove = event => {
+    if (parentSwipe) {
+      const up = parentSwipe.startY - event.clientY;
+      const across = Math.abs(event.clientX - parentSwipe.startX);
+      if (!parentSwipe.fired && up >= PARENT_SWIPE_PX && up > across) {
+        parentSwipe.fired = true;
+        parentSwipeFiredAt = Date.now();
+        logTap('parent-swipe', { up: Math.round(up), across: Math.round(across) });
+        try { if (typeof parentSwipe.el.onclick === 'function') parentSwipe.el.onclick(event); } catch (_) { /* the migration's own guards spoke */ }
+      }
+      return;
+    }
     if (!isDragging) return;
     const app = getApp();
     if (!app) return;
@@ -2806,6 +2829,13 @@ function wireInteractions(getApp) {
   // browser's delayed native click so the same node doesn't rotate twice.
   svg.addEventListener('click', event => {
     const now = Date.now();
+    // A swipe that already migrated (O-131) must not be followed by the tap's click.
+    if (parentSwipeFiredAt && now - parentSwipeFiredAt < 700 && event.target?.closest?.('.focus-ring-parent-circle, .focus-ring-parent-label')) {
+      parentSwipeFiredAt = 0;
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
     if (now < suppressNativeClickUntil) {
       // Control taps (magnifier, parent button) rely on their NATIVE click
       // and their pointerdown path never arms a manual fire — suppressing
@@ -2868,6 +2898,13 @@ function wireInteractions(getApp) {
         targetClass: event.target?.getAttribute?.('class') || null,
         targetId: event.target?.getAttribute?.('id') || null
       });
+      // The parent vessel (or its words): watch for the swipe (O-131). The
+      // capture goes on the CIRCLE, so a plain tap's click still lands on it.
+      const parentEl = event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label') ? app.view?.parentButtonOuter : null;
+      if (parentEl && typeof parentEl.onclick === 'function') {
+        parentSwipe = { el: parentEl, startX: event.clientX, startY: event.clientY, fired: false };
+        try { parentEl.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
+      }
       return;
     }
     suppressNativeClickUntil = Date.now() + 450;
@@ -2949,6 +2986,7 @@ function wireInteractions(getApp) {
 
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
+      if (parentSwipe) { if (type !== 'pointerleave') parentSwipe = null; }
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
       const app = getApp();
