@@ -277,37 +277,50 @@ export function buildCalendarPyramid({
   return { getChildren, onClick, gridFor };
 }
 
-// TIERS AMONG SIBLINGS (O-133, 2026-09-15): the ranks are global to the
-// volume — the lectionary reads the Psalter far more than any other book —
-// so a fixed rule (rank 1 a large star, the first ten medium) lit the Psalms
-// and left every other sky uniform. Instead each sky is read on its own: the
-// best rank among the siblings is the tier-1 star, the next three ranked
-// siblings (ties at the cut included) are tier 2, the rest wear nothing. A
-// sky whose ranked siblings all share one rank has no largest star, and one
-// with no ranks at all is untouched. Items already carrying a prominence
-// (an editorial tier declared in the data) keep it.
-export function relativeTiers(items, rankOf) {
+// TIERS AMONG SIBLINGS (O-133, 2026-09-15; FOUR TIERS AND ONE STANDOUT,
+// O-134, Howell the same day): the ranks are global to the volume — the
+// lectionary reads the Psalter far more than any other book — so a fixed
+// rule lit the Psalms and left every other sky uniform. Each sky is read on
+// its own, and it LEADS: "we don't want to cause distress in the user by
+// having several large nodes to choose from. We are leading them." So:
+//   tier 1 — ONE standout, the sky's best-ranked node; where several tie
+//            for the best rank (a psalm or a pericope is read as a block, so
+//            its verses share a score) the day picks one of them, the same
+//            all day and another tomorrow;
+//   tier 2 — the standout's equals, the rest of that reading;
+//   tier 3 — every other ranked node, read at Mass but less;
+//   tier 4 — never read.
+// A sky with no ranked node at all is untouched (uniform), and an item
+// already wearing an editorial tier declared in the data keeps it. The path
+// is one path: the standout chapter holds a verse of the book's best rank,
+// and inside it the standout verse is one of those, so book, chapter and
+// verse lead to the same destination.
+const fnv = str => { let h = 0x811c9dc5; for (let i = 0; i < str.length; i += 1) { h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h; };
+export const dayKey = (d = new Date()) => `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+export function relativeTiers(items, rankOf, { day = dayKey() } = {}) {
   if (!Array.isArray(items) || typeof rankOf !== 'function') return items;
   const ranks = items.map(it => ((it && it.prominence == null) ? rankOf(it) : null)).map(r => (Number.isFinite(r) ? r : null));
-  const distinct = [...new Set(ranks.filter(r => r != null))].sort((a, b) => a - b);
-  if (distinct.length < 2) return items;
-  const [top] = distinct;
-  const rest = ranks.filter(r => r != null && r !== top).sort((a, b) => a - b);
-  const cut = rest[Math.min(2, rest.length - 1)];
+  const ranked = ranks.filter(r => r != null);
+  if (!ranked.length) return items;
+  const top = Math.min(...ranked);
+  const candidates = items.map((it, i) => (ranks[i] === top ? i : -1)).filter(i => i >= 0);
+  const key = `${day}|${candidates.map(i => items[i]?.id ?? i).join(',')}`;
+  const lead = candidates[fnv(key) % candidates.length];
   return items.map((it, i) => {
     const r = ranks[i];
-    if (r == null) return it;
-    const tier = r === top ? 1 : (r <= cut ? 2 : undefined);
-    return tier ? { ...it, prominence: tier } : it;
+    if (it && it.prominence != null) return it;
+    const tier = i === lead ? 1 : r === top ? 2 : r != null ? 3 : 4;
+    return { ...it, prominence: tier };
   });
 }
 
 // THE LARGEST CHILD (O-132, Howell 2026-09-14): the node the down-swipe
-// drills into — the best prominence tier among the sky's nodes, ties to the
-// first sibling, so a sky with no ranks drills into its beginning.
+// drills into — the best prominence tier among the sky's nodes (the day's
+// standout, under O-134), ties to the first sibling, so a sky with no ranks
+// drills into its beginning.
 export function largestChildIndex(nodes) {
   if (!Array.isArray(nodes) || !nodes.length) return -1;
-  const tierOf = n => { const it = n?.item ?? n; const t = it?.prominence ?? it?.meta?.prominence; return t === 1 || t === 2 ? t : 3; };
+  const tierOf = n => { const it = n?.item ?? n; const t = it?.prominence ?? it?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 5; };
   const orderOf = n => { const it = n?.item ?? n; return Number.isFinite(it?.order) ? it.order : Number.POSITIVE_INFINITY; };
   let best = -1;
   nodes.forEach((n, i) => {

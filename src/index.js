@@ -1497,18 +1497,21 @@ export function createApp({
         if (typeof pyramidConfig.getChildren === 'function' && pyramidSelected) {
           children = pyramidConfig.getChildren({ selected: pyramidSelected });
         }
-        // Editorial prominence (declared in data, tier 1 featured / 2 notable /
-        // absent default): prominent children claim the NEAR seats — the
-        // scatter hands out seats center-first — and draw larger, while the
-        // rest recede slightly. A set with no prominence declared is a
-        // uniform sky (every volume today except where the data says so).
-        // The focus ring is untouched: prominence permutes pyramid seating
-        // only, never sibling order.
+        // Prominence: FOUR TIERS AND ONE STANDOUT (O-134, Howell 2026-09-15:
+        // "four, with one standout. Something like 100:60:45:30"). Tier 1 is
+        // the sky's one standout; 2 its equals; 3 the rest of the ranked; 4
+        // the never-read (the volume's own tiering, volume-pyramid.js). An
+        // editorial tier declared in the data (1 featured / 2 notable /
+        // absent) reads on the same scale, absent as 3. Prominent children
+        // claim the NEAR seats — the scatter hands out seats center-first —
+        // and draw larger. A set with no prominence declared is a uniform
+        // sky. The focus ring is untouched: prominence permutes pyramid
+        // seating only, never sibling order.
         const tierOf = ch => {
           const t = ch?.prominence ?? ch?.meta?.prominence;
-          return t === 1 || t === 2 ? t : 3;
+          return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 3;
         };
-        const anyProminence = children.some(ch => tierOf(ch) < 3);
+        const anyProminence = children.some(ch => { const t = ch?.prominence ?? ch?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4; });
         // A volume may supply a per-sky policy: a number (the cap) or
         // { cap, spread } — spread SAMPLES the undeclared seats uniformly
         // across the whole sibling range instead of taking the alphabet's
@@ -1525,7 +1528,7 @@ export function createApp({
         let seatPool = children.map((_, i) => i);
         if (policySpread && children.length > seatCount) {
           const prominent = seatPool.filter(i => tierOf(children[i]) < 3);
-          const rest = seatPool.filter(i => tierOf(children[i]) === 3);
+          const rest = seatPool.filter(i => tierOf(children[i]) >= 3);
           const room = Math.max(0, seatCount - prominent.length);
           const sampled = [];
           for (let k = 0; k < room && rest.length; k += 1) {
@@ -1536,7 +1539,10 @@ export function createApp({
         const seatOrder = seatPool.slice();
         if (anyProminence) seatOrder.sort((a, b) => (tierOf(children[a]) - tierOf(children[b])) || (a - b));
         else seatOrder.sort((a, b) => a - b);
-        const scaleForTier = t => (!anyProminence ? 1 : (t === 1 ? 1.45 : t === 2 ? 1.15 : 0.8));
+        // 100:60:45:30 on the standout (O-134); the standout itself 1.6 of
+        // a uniform star, so tier 2 sits just under uniform and tier 4 at
+        // half. Howell's eye converges these.
+        const scaleForTier = t => (!anyProminence ? 1 : (t === 1 ? 1.6 : t === 2 ? 0.96 : t === 3 ? 0.72 : 0.48));
         // Depth taper (Howell 2026-07-19): an overloaded sky implies its own
         // "etcetera" — past the first seats, stars shrink toward a smudge
         // floor where labels stop being legible, and the tiny tail packs
