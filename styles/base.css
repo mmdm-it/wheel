@@ -498,6 +498,10 @@ svg :focus-visible {
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
   font-weight: 700;
 }
+/* The basement's lens label (O-128): the primary's manners — larger, not
+   bold. "Look again at the primary stratum magnifier. You'll see the font
+   is larger, but it is not bold." (Howell, 2026-09-14) */
+.secondary-strata.labels-beside .secondary-strata-label.is-magnified { font-weight: 400; }
 
 .focus-ring-band {
   /* A stroked centreline now (sprocket chain: arc + straight tangents), not a

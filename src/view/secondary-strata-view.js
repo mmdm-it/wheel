@@ -97,6 +97,9 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     outer.appendChild(g);
     svg.appendChild(outer);
   }
+  // A ring with the primary's manners says so on its root, for the styles:
+  // its lens label is larger, not bolder (Howell, 2026-09-14).
+  outer.classList?.toggle?.('labels-beside', Boolean(labelsBeside));
   outer.setAttribute('x', '0');
   outer.setAttribute('y', '0');
   outer.setAttribute('width', String(viewport.width));
