@@ -200,6 +200,7 @@ function _scrubCapture(scrub) {
 }
 function _scrubApply(scrub) {
   const t = scrub.e * scrub.master;
+  for (const d of scrub.drivers) { try { d.frameAt(Math.min(1, d.duration ? t / d.duration : 1)); } catch (e) { /* a driver must not wedge the clock */ } }
   for (const a of scrub.anims) {
     const end = scrub.ends.get(a) || 0;
     try { a.currentTime = Math.max(0, Math.min(end, t)); } catch (e) { /* a finished transition is gone */ }
@@ -209,6 +210,7 @@ function _scrubFinishForward(scrub) {
   _scrub = null;
   // finish(), not play(): play() on an animation standing at its end rewinds it.
   for (const a of scrub.anims) { try { a.finish(); } catch (e) { /* gone */ } }
+  for (const d of scrub.drivers) { try { d.frameAt(1); if (d.onCommit) d.onCommit(); } catch (e) { /* see above */ } }
   // The completions, in the order the clock would have reached them.
   scrub.completions.sort((x, y) => x.at - y.at).forEach(c => { try { c.fn(); } catch (e) { /* a completion must not wedge the rest */ } });
 }
@@ -234,11 +236,16 @@ function _scrubAbort(scrub, onAbort) {
     overlays.splice(overlays.indexOf(entry.overlay), 1);
   }
   overlays.forEach(o => { try { o.remove(); } catch (e) { /* gone */ } });
+  // Frame drivers (the detail sector) go back to their first frame — the
+  // picture only; their state follows AFTER the navigation is undone, so the
+  // renders that undo runs never see a sector half-committed (O-140).
+  for (const d of scrub.drivers) { try { d.frameAt(0); } catch (e) { /* see above */ } }
   // The completions commit the flight's data as they always would; the host's
   // instant navigation then takes it straight back; the barrier restores the
   // reals — all before the next paint.
   scrub.completions.sort((x, y) => x.at - y.at).forEach(c => { try { c.fn(); } catch (e) { /* see above */ } });
   if (typeof onAbort === 'function') { try { onAbort(); } catch (e) { /* the host's own guards spoke */ } }
+  for (const d of scrub.drivers) { try { if (d.onAbort) d.onAbort(); } catch (e) { /* see above */ } }
   if (_txn) _finishTransaction(_txn);
 }
 /**
@@ -253,10 +260,10 @@ function _scrubAbort(scrub, onAbort) {
  */
 export function beginScrubbedMigration(root) {
   if (_scrub) _scrubAbort(_scrub, null);
-  const scrub = { root: root || null, anims: [], ends: new Map(), completions: [], e: 0, master: 0, launching: 0, depth: animatedNodesStack.length, popped: null, settling: null };
+  const scrub = { root: root || null, anims: [], ends: new Map(), completions: [], drivers: [], e: 0, master: 0, launching: 0, depth: animatedNodesStack.length, popped: null, settling: null };
   _scrub = scrub;
   return {
-    launched: () => scrub.completions.length > 0 || scrub.launching > 0 || scrub.anims.length > 0,
+    launched: () => scrub.completions.length > 0 || scrub.launching > 0 || scrub.anims.length > 0 || scrub.drivers.length > 0,
     scrubTo(e) {
       if (_scrub !== scrub || scrub.settling) return;
       scrub.e = Math.max(0, Math.min(1, Number(e) || 0));
@@ -286,6 +293,22 @@ export function beginScrubbedMigration(root) {
 }
 /** True while a drill is under a finger (O-138). */
 export function isScrubbing() { return Boolean(_scrub); }
+/**
+ * A FRAME DRIVER ON THE SCRUB CLOCK (O-140): an animation that is not a CSS
+ * transition — the detail sector's circle — joins the drill by handing over
+ * frameAt(progress). Under a scrub it is driven by the finger over
+ * `durationMs` of master time and told onCommit or onAbort at the release;
+ * returns true. With no scrub open it returns false, and the caller runs its
+ * own clock as it always did.
+ */
+export function scrubDriver(durationMs, frameAt, { onCommit = null, onAbort = null } = {}) {
+  if (!_scrub || typeof frameAt !== 'function') return false;
+  const duration = Number(durationMs) > 0 ? Number(durationMs) : ANIM_DURATION;
+  _scrub.drivers.push({ duration, frameAt, onCommit, onAbort });
+  _scrub.master = Math.max(_scrub.master, duration);
+  try { frameAt(0); } catch (e) { /* first frame */ }
+  return true;
+}
 
 /* ------------------------------------------------------------------ */
 /*  Public API                                                        */

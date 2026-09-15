@@ -1,6 +1,6 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
-import { beginMigrationTransaction, animateIn, animateOut, clearStack, beginScrubbedMigration, isScrubbing } from '../src/view/migration-animation.js';
+import { beginMigrationTransaction, animateIn, animateOut, clearStack, beginScrubbedMigration, isScrubbing, scrubDriver } from '../src/view/migration-animation.js';
 
 // The transaction core is DOM-free until an animation actually draws, so the
 // arm/settle/barrier semantics are testable headless via the animations'
@@ -83,5 +83,32 @@ describe('the scrubbed drill (O-138)', () => {
     ctl.release(true);   // no rAF here: settles at once
     assert.equal(isScrubbing(), false);
     clearStack();
+  });
+});
+
+// THE SECTOR RIDES THE FINGER (O-140): a frame driver joins the scrub clock.
+describe('a frame driver on the scrub clock (O-140)', () => {
+  it('with no scrub open the caller keeps its own clock', () => {
+    assert.equal(scrubDriver(600, () => {}), false);
+  });
+  it('under a scrub the finger drives it, commit lands it at 1, and onCommit fires once', () => {
+    const frames = []; let committed = 0, aborted = 0;
+    const ctl = beginScrubbedMigration(null);
+    assert.equal(scrubDriver(600, t => frames.push(t), { onCommit: () => { committed += 1; }, onAbort: () => { aborted += 1; } }), true);
+    assert.equal(ctl.launched(), true, 'a driver is a launch');
+    ctl.scrubTo(0.5);
+    assert.ok(Math.abs(frames[frames.length - 1] - 0.5) < 1e-9, 'half the master clock is half the journey');
+    ctl.release(true);
+    assert.equal(frames[frames.length - 1], 1);
+    assert.equal(committed, 1); assert.equal(aborted, 0);
+    assert.equal(isScrubbing(), false);
+  });
+  it('struck, it goes back to its first frame before the undo and hears onAbort after it', () => {
+    const order = [];
+    const ctl = beginScrubbedMigration(null);
+    scrubDriver(600, t => { if (t === 0) order.push('frame0'); }, { onAbort: () => order.push('driver-abort') });
+    ctl.scrubTo(0.4);
+    ctl.release(false, { onAbort: () => order.push('undo') });
+    assert.deepEqual(order.slice(-3), ['frame0', 'undo', 'driver-abort'], 'picture first, navigation undone, then the sector\'s state follows');
   });
 });

@@ -392,15 +392,20 @@ export class VolumeLogo {
    * @param {number} magnifierAngle - radians
    * @param {Function} [onComplete] - called when animation finishes
    */
-  expand(arcParams, magnifierAngle, onComplete) {
-    if (!this.circle || !arcParams) {
-      if (onComplete) onComplete();
-      return;
-    }
-    if (this._animationId) {
-      cancelAnimationFrame(this._animationId);
-      this._animationId = null;
-    }
+  // THE SECTOR RIDES THE FINGER (O-140, Howell 2026-09-15: "the contraction
+  // and enlargement of that circle needs to follow the slide from parent
+  // button to magnifier and back"). Expand and collapse are one geometry
+  // driven by a clock; whose clock is the caller's choice. beginExpand and
+  // beginCollapse prepare the journey and hand back frameAt(progress) — 0 to
+  // 1, eased here so a linear clock draws the same curve the tap always
+  // drew — with finish() to land it, revert() to put it back where it
+  // started, and play(onComplete) to run it on the sector's own clock. The
+  // tap's expand() and collapse() are play() and nothing more.
+  get duration() { return ANIMATION_DURATION; }
+
+  beginExpand(arcParams, magnifierAngle) {
+    if (!this.circle || !arcParams) return this._nullJourney();
+    if (this._animationId) { cancelAnimationFrame(this._animationId); this._animationId = null; }
     this._animating = true;
     this._collapsing = false;
     if (this.clickTarget) this.clickTarget.parentNode.setAttribute('display', 'none');
@@ -408,75 +413,102 @@ export class VolumeLogo {
     const end = this._getEndState(arcParams, magnifierAngle);
     // Apply detail_sector color if configured
     const detailColor = this._renderConfig?.color_scheme?.detail_sector;
-    if (detailColor && this.circle) {
-      this.circle.setAttribute('fill', detailColor);
-    }
-    const t0 = performance.now();
-    const step = now => {
-      const elapsed = now - t0;
-      const progress = Math.min(elapsed / ANIMATION_DURATION, 1);
-      const t = easeInOut(progress);
-      this._applyFrame(start, end, t);
-      if (progress < 1) {
-        this._animationId = requestAnimationFrame(step);
-      } else {
-        // Snap to exact end state
+    if (detailColor && this.circle) this.circle.setAttribute('fill', detailColor);
+    return this._journey(start, end, {
+      finish: () => {
         this._applyFrame(start, end, 1);
-        this._animationId = null;
         this._animating = false;
         this._collapsing = false;
         this._expanded = true;
-        if (onComplete) onComplete();
+      },
+      revert: () => {
+        this._applyFrame(start, end, 0);
+        this._animating = false;
+        this._collapsing = false;
+        this._expanded = false;
+        if (this.clickTarget) this.clickTarget.parentNode.removeAttribute('display');
       }
-    };
-    this._animationId = requestAnimationFrame(step);
+    });
   }
 
-  /**
-   * Collapse the Detail Sector back to upper-right corner
-   * @param {Object} arcParams - { hubX, hubY, radius }
-   * @param {number} magnifierAngle - radians
-   * @param {Function} [onComplete] - called when animation finishes
-   */
-  collapse(arcParams, magnifierAngle, onComplete) {
-    if (!this.circle) {
-      if (onComplete) onComplete();
-      return;
-    }
-    if (this._animationId) {
-      cancelAnimationFrame(this._animationId);
-      this._animationId = null;
-    }
+  beginCollapse(arcParams, magnifierAngle) {
+    if (!this.circle) return this._nullJourney();
+    if (this._animationId) { cancelAnimationFrame(this._animationId); this._animationId = null; }
     this._animating = true;
     this._collapsing = true;
     const start = this._getEndState(arcParams, magnifierAngle); // current = expanded
     const end = this._getStartState();                           // target = collapsed
-    // v0 parity: collapse uses 1.0 start opacity for BOTH circle and logo
+    // v0 parity: collapse uses 1.0 start opacity for the logo
     // (not 0.10 which is the expand-end logo watermark opacity)
     start.logoOpacity = 1.0;
-    const t0 = performance.now();
-    const step = now => {
-      const elapsed = now - t0;
-      const progress = Math.min(elapsed / ANIMATION_DURATION, 1);
-      const t = easeInOut(progress);
-      this._applyFrame(start, end, t);
-      if (progress < 1) {
-        this._animationId = requestAnimationFrame(step);
-      } else {
+    return this._journey(start, end, {
+      finish: () => {
         this._applyFrame(start, end, 1);
         // Reset fill to default after collapse
         const defaultFill = this._renderConfig?.color_scheme?.detail_sector || '#362e6a';
         if (this.circle) this.circle.setAttribute('fill', defaultFill);
         if (this.logo) this.logo.removeAttribute('transform');
-        this._animationId = null;
         this._animating = false;
         this._collapsing = false;
         this._expanded = false;
         if (this.clickTarget) this.clickTarget.parentNode.removeAttribute('display');
-        if (onComplete) onComplete();
+      },
+      revert: () => {
+        this._applyFrame(start, end, 0);
+        this._animating = false;
+        this._collapsing = false;
+        this._expanded = true;
+      }
+    });
+  }
+
+  _journey(start, end, { finish, revert }) {
+    const self = this;
+    let done = false;
+    return {
+      frameAt(progress) {
+        if (done) return;
+        const p = Math.max(0, Math.min(1, Number(progress) || 0));
+        self._applyFrame(start, end, easeInOut(p));
+      },
+      finish() { if (done) return; done = true; self._animationId = null; finish(); },
+      revert() { if (done) return; done = true; self._animationId = null; revert(); },
+      play(onComplete) {
+        const t0 = performance.now();
+        const step = now => {
+          if (done) return;
+          const progress = Math.min((now - t0) / ANIMATION_DURATION, 1);
+          this.frameAt(progress);
+          if (progress < 1) self._animationId = requestAnimationFrame(step);
+          else { this.finish(); if (onComplete) onComplete(); }
+        };
+        self._animationId = requestAnimationFrame(step);
       }
     };
-    this._animationId = requestAnimationFrame(step);
+  }
+
+  _nullJourney() {
+    return { frameAt() {}, finish() {}, revert() {}, play(onComplete) { if (onComplete) onComplete(); } };
+  }
+
+  /**
+   * Expand the Detail Sector from the corner badge, on its own clock.
+   * @param {Object} arcParams - { hubX, hubY, radius }
+   * @param {number} magnifierAngle - radians
+   * @param {Function} [onComplete] - called when animation finishes
+   */
+  expand(arcParams, magnifierAngle, onComplete) {
+    this.beginExpand(arcParams, magnifierAngle).play(onComplete);
+  }
+
+  /**
+   * Collapse the Detail Sector back to the upper-right corner, on its own clock.
+   * @param {Object} arcParams - { hubX, hubY, radius }
+   * @param {number} magnifierAngle - radians
+   * @param {Function} [onComplete] - called when animation finishes
+   */
+  collapse(arcParams, magnifierAngle, onComplete) {
+    this.beginCollapse(arcParams, magnifierAngle).play(onComplete);
   }
 
   /**

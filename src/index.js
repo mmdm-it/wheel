@@ -11,7 +11,7 @@ import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
-import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
+import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction , scrubDriver } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
 
@@ -714,9 +714,16 @@ export function createApp({
     const incomingIsLeaf = leafLevel && tempSelected?.level === leafLevel;
     if (incomingIsLeaf && !detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = true;
-      volumeLogo.expand(arcParams, magnifier.angle, () => {
-        emitDetailSectorChange(true, 'after-animation');
+      // THE SECTOR RIDES THE FINGER (O-140): under a scrub the circle's
+      // journey is driven by the same clock as the flights; on a tap it
+      // plays on its own, as before.
+      const journey = volumeLogo.beginExpand(arcParams, magnifier.angle);
+      const opened = () => emitDetailSectorChange(true, 'after-animation');
+      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t), {
+        onCommit: () => { journey.finish(); opened(); },
+        onAbort: () => { journey.revert(); detailSectorShown = false; }
       });
+      if (!scrubbed) journey.play(opened);
     }
   };
 
@@ -767,7 +774,14 @@ export function createApp({
     if (detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = false;
       emitDetailSectorChange(false, 'immediate');
-      volumeLogo.collapse(arcParams, magnifier.angle);
+      // Under a scrub the collapse rides the finger (O-140); struck, it
+      // reopens where it was and says so.
+      const journey = volumeLogo.beginCollapse(arcParams, magnifier.angle);
+      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t), {
+        onCommit: () => journey.finish(),
+        onAbort: () => { journey.revert(); detailSectorShown = true; emitDetailSectorChange(true, 'immediate'); }
+      });
+      if (!scrubbed) journey.play();
     }
 
     // Snapshot magnifier and parent-button state BEFORE animations start.
