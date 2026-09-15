@@ -4,7 +4,7 @@ import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
-import { proofreadOverrideActive, everyEditionShows } from './core/lan-gate.js';
+import { proofreadOverrideActive, declareVenues } from './core/lan-gate.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -120,9 +120,11 @@ let currentDetailRerender = null;   // set at boot; repaints the seated verse (O
 // 2026-07-20, docs/DIMENSION_SYSTEM.md). The store and bridge are created
 // once; each boot refreshes the bridge's registry and its render hook.
 const dimensionStore = createInteractionStore();
-// THE SCREENING ROOM shows every edition (O-136): the venue table is the
-// config's, the rule is the gate's, and the bridge only learns the answer.
-const dimensionBridge = createDimensionBridge({ store: dimensionStore, showEveryEdition: everyEditionShows(VENUES) });
+// THE SCREENING ROOM IS THE LAN (O-137): the gate learns which address is the
+// room from the config — the one file that may name a site — before anything
+// asks it whether the bench's flag applies.
+declareVenues(VENUES);
+const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 
 // D — the strata STACK (docs/DIMENSION_SYSTEM.md). Up to three deep for a
 // dimensioned volume: primary (the text) → secondary (translations, mirrored)

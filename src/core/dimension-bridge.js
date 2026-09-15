@@ -67,7 +67,7 @@ const SUBSTITUTION_NOTICES = {
   hebrew: 'טקסט לטיני · התרגום אינו זמין'
 };
 
-export function createDimensionBridge({ store, translationsMeta = null, languagesMeta = null, showEveryEdition = false } = {}) {
+export function createDimensionBridge({ store, translationsMeta = null, languagesMeta = null } = {}) {
   if (!store) throw new Error('createDimensionBridge: store is required');
 
   let meta = translationsMeta;
@@ -155,12 +155,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // flag gained a second consumer when it began deciding which books exist,
   // and this file's own comment says what two implementations of one question
   // do to each other.
-  // THE SCREENING ROOM LIFTS IT TOO (O-136, 2026-09-15): the venue for
-  // friends and family shows every edition, marked; Leicester Square keeps
-  // the CHECKED gate. Which host is which is the host's knowledge, not this
-  // file's — main.js asks lan-gate with the venue table and passes the answer
-  // in as `showEveryEdition`.
-  const overrideProofread = proofreadOverrideActive() || showEveryEdition === true;
+  // THE SCREENING ROOM IS THE LAN (O-137, 2026-09-15): the override works
+  // there under the same flag, because lan-gate counts the room as the
+  // house. Leicester Square keeps the CHECKED gate.
+  const overrideProofread = proofreadOverrideActive();
   // SERVABLE = PROOFREAD && HASCHART (O-29, ruled 2026-08-06, landed
   // 2026-08-12 at the 1a exit gate, which refused without it).
   //

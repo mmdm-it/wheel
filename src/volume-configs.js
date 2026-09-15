@@ -754,12 +754,13 @@ const PROBE_SINK = {
 
 export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE_SINK };
 
-// THE THREE VENUES (O-136, Howell 2026-09-15): the catalog at the root of
-// mmdm.it, with its Gutenberg gateway, is the ARCHIVAL BACKUP and is not
+// THE THREE VENUES (O-136, O-137, Howell 2026-09-15): the catalog at the root
+// of mmdm.it, with its Gutenberg gateway, is the ARCHIVAL BACKUP and is not
 // synced again; the wheel-v3 directory on the same server is THE SCREENING
-// ROOM, for friends and family — every edition shows there, marked; and
-// bibliacatholica.com is LEICESTER SQUARE, for strangers, under the CHECKED
-// gate. This is the one file that may name a site (H1); lan-gate reads it.
+// ROOM, for friends and family — the LAN bench reached over the internet,
+// serving the same tree; and bibliacatholica.com is LEICESTER SQUARE, for
+// strangers, under the CHECKED gate. This is the one file that may name a
+// site (H1); main.js declares it to lan-gate.
 export const VENUES = {
   screeningRoom: { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/' }
 };
