@@ -420,7 +420,7 @@ export class FocusRingView {
         // this one radial too, when what the ruling asked for is parallel to
         // the ring. Ninety degrees converts the one into the other: the text
         // now lies along the arc, in the direction the ring advances.
-        this.sectionLabel.setAttribute('transform', `rotate(${magRotation + 90}, ${sx}, ${sy})`);
+        // (Set below, once the seat knows whether it carries a section or a caption.)
 
         // IT FOLLOWS THE RING LIVE, as the child pyramid does (Howell,
         // 2026-08-16). It used to be pushed in on settle, so the division
@@ -447,7 +447,13 @@ export class FocusRingView {
         // the caption the formatter answers for the magnified item — the
         // level's word in the reader's tongue — or nothing.
         const live = nearest?.item?.section;
-        this.sectionLabel.textContent = live || this.sectionLabelText || magnifier.caption || '';
+        const sectionText = live || this.sectionLabelText || '';
+        this.sectionLabel.textContent = sectionText || magnifier.caption || '';
+        // A SECTION runs along the arc (a quarter turn off the node labels);
+        // A CAPTION runs IN LINE WITH THE LENS'S OWN LABEL (Howell 2026-09-16:
+        // rotate the level captions "90 degrees so they are in line with the
+        // label inside the magnifier").
+        this.sectionLabel.setAttribute('transform', `rotate(${sectionText ? magRotation + 90 : magRotation}, ${sx}, ${sy})`);
       }
       if (isRotating) {
         this.magnifierLabel.textContent = '';
