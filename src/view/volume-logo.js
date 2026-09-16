@@ -166,6 +166,15 @@ export class VolumeLogo {
     if (this._renderConfig.default_image === imageName) return false;
     this._renderConfig.default_image = imageName;
     this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${imageName}.png`);
+    // Each emblem at its own size (O-148): a collapsed badge is re-boxed now;
+    // an expanded or moving one takes it from its next journey's first frame.
+    if (!this._expanded && !this._animating && typeof this.logo.setAttribute === 'function') {
+      const s = this._getStartState();
+      this.logo.setAttribute('x', s.logoX);
+      this.logo.setAttribute('y', s.logoY);
+      this.logo.setAttribute('width', s.logoWidth);
+      this.logo.setAttribute('height', s.logoHeight);
+    }
     return true;
   }
 
@@ -216,19 +225,7 @@ export class VolumeLogo {
     const radius = shorterSide * 0.12;
     const margin = shorterSide * 0.03;
     
-    // Logo dimensions
-    const logoWidth = radius * 2 * LOGO_COLLAPSED_SCALE;
-    const logoHeight = logoWidth / LOGO_BOX_ASPECT;
-    const logoHalfWidth = logoWidth / 2;
-    const logoHalfHeight = logoHeight / 2;
-    
-    // Position so right edge of image touches the right margin boundary
-    // Right edge of CPUA: width - margin
-    // Image right edge should be at: centerX + logoHalfWidth = width - margin
-    // Shift 12% right to account for padding in image file
-    const paddingAdjustment = logoWidth * 0.12;
-    const centerX = this.viewport.width - margin - logoHalfWidth + paddingAdjustment;
-    const centerY = margin + logoHalfHeight;
+    const { centerX, centerY, logoWidth, logoHeight } = this._collapsedGeometry();
     
     // Create group
     this.group = document.createElementNS(SVG_NS, 'g');
@@ -298,27 +295,49 @@ export class VolumeLogo {
   /**
    * Compute the collapsed (upper-right) state for circle + logo
    */
-  _getStartState() {
+  // THE BADGE'S PLACE AND THE EMBLEM'S SIZE ARE TWO THINGS (O-148, Howell
+  // 2026-09-16, with the old gateway build beside the LAN: "the Crown of
+  // Thorns is larger than the blue circle... I want to leave the Torah scroll
+  // as it is, but put the crown of thorns back to the larger size"). One
+  // constant sized both: when the scroll was judged to spill (1.8 -> 1.35 ->
+  // 1.1, 2026-08-17) the crown shrank with it, and the crown is DRAWN to ring
+  // the circle. So the circle is placed from the base scale, as the scroll
+  // is today, and the image is sized by its OWN scale around that same
+  // centre — declared per emblem by the volume (display_config.detail_sector
+  // .emblem_scale, a multiple of the circle's diameter), else the base.
+  _emblemScale() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.emblem_scale?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : LOGO_COLLAPSED_SCALE;
+  }
+
+  _collapsedGeometry() {
     const vw = this.viewport.width;
     const vh = this.viewport.height;
     const SSd = Math.min(vw, vh);
     const radius = SSd * 0.12;
     const margin = SSd * 0.03;
-    const logoWidth = radius * 2 * LOGO_COLLAPSED_SCALE;
+    // The circle's place, from the base box — unchanged for every emblem.
+    const baseWidth = radius * 2 * LOGO_COLLAPSED_SCALE;
+    const baseHeight = baseWidth / LOGO_BOX_ASPECT;
+    // Shift 12% right to account for padding in the image file.
+    const centerX = vw - margin - baseWidth / 2 + baseWidth * 0.12;
+    const centerY = margin + baseHeight / 2;
+    // The emblem's own box, centred on it.
+    const logoWidth = radius * 2 * this._emblemScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
-    const logoHalfWidth = logoWidth / 2;
-    const logoHalfHeight = logoHeight / 2;
-    // Same positioning as render()
-    const paddingAdjustment = logoWidth * 0.12;
-    const cx = vw - margin - logoHalfWidth + paddingAdjustment;
-    const cy = margin + logoHalfHeight;
+    return { radius, margin, centerX, centerY, logoWidth, logoHeight };
+  }
+
+  _getStartState() {
+    const { radius, centerX: cx, centerY: cy, logoWidth, logoHeight } = this._collapsedGeometry();
     return {
       circleCx: cx,
       circleCy: cy,
       circleR: radius,
       circleOpacity: 0.5,
-      logoX: cx - logoHalfWidth,
-      logoY: cy - logoHalfHeight,
+      logoX: cx - logoWidth / 2,
+      logoY: cy - logoHeight / 2,
       logoWidth,
       logoHeight,
       logoOpacity: 0.5,

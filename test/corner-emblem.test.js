@@ -262,3 +262,31 @@ describe('the circle repaints without disturbing what is in flight (O-79)', () =
     assert.equal(bare.setColor('#362e6a'), false, 'no config yet');
   });
 });
+
+// EACH EMBLEM AT ITS OWN SIZE (O-148, Howell 2026-09-16): the crown of thorns
+// is drawn to ring the badge circle and had been shrunk with the Torah scroll.
+// The circle's place is one thing, the emblem's size another.
+describe('each emblem at its own size, around the same circle (O-148)', () => {
+  const badge = async config => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 720, height: 1600 });
+    logo._renderConfig = config;
+    return logo;
+  };
+  it('an undeclared emblem keeps the base size; a declared one takes its own', async () => {
+    const scroll = (await badge({ default_image: 'torah_scroll', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
+    const crown = (await badge({ default_image: 'crown_of_thorns', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
+    assert.ok(Math.abs(scroll.logoWidth - scroll.circleR * 2 * 1.1) < 1e-9, 'the scroll is left exactly as it was');
+    assert.ok(Math.abs(crown.logoWidth - crown.circleR * 2 * 1.8) < 1e-9, 'the crown rings the circle again');
+  });
+  it('the circle does not move when the emblem changes, and each emblem is centred on it', async () => {
+    const scroll = (await badge({ default_image: 'torah_scroll', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
+    const crown = (await badge({ default_image: 'crown_of_thorns', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
+    assert.equal(crown.circleCx, scroll.circleCx);
+    assert.equal(crown.circleCy, scroll.circleCy);
+    for (const s of [scroll, crown]) {
+      assert.ok(Math.abs(s.logoX + s.logoWidth / 2 - s.circleCx) < 1e-9, 'centred across');
+      assert.ok(Math.abs(s.logoY + s.logoHeight / 2 - s.circleCy) < 1e-9, 'centred down');
+    }
+  });
+});
