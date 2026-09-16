@@ -521,8 +521,12 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     })();
     const n = Number(chapterVal);
     const numStr = Number.isFinite(n) ? traditionNumeral(n) : String(chapterVal ?? item?.id ?? '');
-    if (context === 'node') return numStr;
-    return `${t('chapter')} ${numStr}`.trim();  // no word ⇒ the bare numeral
+    // THE WORD IS A CAPTION BESIDE THE LENS, NEVER PART OF ITS LABEL (O-144):
+    // the merge flights and the bookmark labels read the lens's text as the
+    // bare numeral and must keep doing so. 'caption' answers the level's word
+    // in the reader's tongue, or nothing when the kit has none.
+    if (context === 'caption') return t('chapter');
+    return numStr;
   };
   const formatVerse = ({ item, context }) => {
     const extract = () => {
@@ -540,8 +544,8 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     // discriminating. A non-numeric label (a sub-verse like "30b", an
     // edition's own lettered address) passes through untouched.
     const numStr = String(verseVal ?? item?.id ?? '');
-    if (context === 'node') return numStr;
-    return `${t('verse')} ${numStr}`.trim();  // no word ⇒ the bare numeral
+    if (context === 'caption') return t('verse');
+    return numStr;
   };
   return ({ item, context }) => {
     if (!item) return '';

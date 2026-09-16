@@ -441,8 +441,13 @@ export class FocusRingView {
             if (d < nearestDist) { nearestDist = d; nearest = n; }
           }
         }
+        // THE LEVEL'S WORD TAKES THE SEAT WHEN NO SECTION DOES (O-144, Howell
+        // 2026-09-15: the level's word "displayed next to the Magnifier"). The
+        // host's section text stands where the ring shows sections; deeper,
+        // the caption the formatter answers for the magnified item — the
+        // level's word in the reader's tongue — or nothing.
         const live = nearest?.item?.section;
-        this.sectionLabel.textContent = live || (nearest ? '' : (this.sectionLabelText || ''));
+        this.sectionLabel.textContent = live || this.sectionLabelText || magnifier.caption || '';
       }
       if (isRotating) {
         this.magnifierLabel.textContent = '';

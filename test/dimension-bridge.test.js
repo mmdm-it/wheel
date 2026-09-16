@@ -369,14 +369,20 @@ describe('the shelf follows the reader — a live names table', () => {
     // SYSTEM still follows the locale, so both must travel with the table.
     namesMap.books = { APOC: 'Apocalypsis' };
     namesMap.locale = 'latin';
+    // Since O-144 the lens wears the numeral alone and the WORD is the
+    // caption beside it — both still follow the live table.
+    const caption3 = () => fmt({ item: { id: 'GENE:3', level: 'chapter', name: '3' }, context: 'caption' });
     namesMap.vocabulary = { chapter: 'Capitulum' };
-    assert.equal(chapter3(), 'CAPITULUM III', 'Latin: Roman numerals, and Latin shouts');
+    assert.equal(chapter3(), 'III', 'Latin: Roman numerals');
+    assert.equal(caption3(), 'CAPITULUM', 'and Latin shouts');
     namesMap.locale = 'greek';
     namesMap.vocabulary = { chapter: 'Κεφάλαιον' };
-    assert.equal(chapter3(), 'ΚΕΦΑΛΑΙΟΝ γʹ', 'Greek: Greek numerals, and Greek shouts like Swete\'s heads (2026-09-05)');
+    assert.equal(chapter3(), 'γʹ', 'Greek: Greek numerals');
+    assert.equal(caption3(), 'ΚΕΦΑΛΑΙΟΝ', 'Greek shouts like Swete\'s heads (2026-09-05)');
     namesMap.locale = 'russian';
     namesMap.vocabulary = { chapter: 'Глава' };
-    assert.equal(chapter3(), 'Глава 3', 'Russian: Arabic numerals');
+    assert.equal(chapter3(), '3', 'Russian: Arabic numerals');
+    assert.equal(caption3(), 'Глава', 'Cyrillic keeps its own case');
   });
 
   it('the registry is the ONLY source of the word — no English belt', () => {
@@ -390,7 +396,8 @@ describe('the shelf follows the reader — a live names table', () => {
     namesMap.vocabulary = null;
     assert.equal(chapter3(), '3', 'no word ⇒ the bare numeral, not English');
     namesMap.vocabulary = { chapter: 'Kapitel', verse: 'Vers' };
-    assert.equal(chapter3(), 'KAPITEL 3', 'the registry supplies the word');
+    assert.equal(chapter3(), '3', 'the lens is the numeral alone (O-144)');
+    assert.equal(fmt({ item: { id: 'GENE:3', level: 'chapter', name: '3' }, context: 'caption' }), 'KAPITEL', 'the kit supplies the word, as the caption');
     namesMap.vocabulary = null;
   });
 });

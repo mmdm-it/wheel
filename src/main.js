@@ -3511,9 +3511,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // (Capitulum/Chapter/Глава) and NUMERAL system (Roman, Greek, Hebrew)
     // travel with the names rather than freezing at boot.
     namesMap.locale = lang;
-    // The reading vocabulary (chapter/verse/era words) from the registry
-    // when it carries them; null leaves the engine's own table in charge.
-    namesMap.vocabulary = dimensionBridge.languageVocabulary(lang);
+    // THE LEVEL'S WORDS COME WITH THE NAMES (O-144, 2026-09-15). They came
+    // from the language registry until the wall retired it (H-14), and the
+    // lookup answered null for a month while nobody noticed the caption gone.
+    // The naming kit is where a tongue's words for its levels live now; the
+    // registry lookup stays as the belt for a volume that still has one.
+    namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
     return namesMap;
   };
   refreshNamesMap();

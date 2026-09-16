@@ -104,7 +104,8 @@ describe('casing follows the script, not the habit', () => {
   it('Latin-script names and words shout', () => {
     const f = fmt('latin', { chapter: 'Capitulum' }, { GENE: 'Genesis' });
     assert.equal(f({ item: { id: 'GENE', level: 'book', name: 'Genesis' }, context: 'magnifier' }), 'GENESIS');
-    assert.equal(f({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'CAPITULUM XVII');
+    assert.equal(f({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'XVII', 'the lens wears the numeral alone (O-144)');
+    assert.equal(f({ item: { level: 'chapter', name: '17' }, context: 'caption' }), 'CAPITULUM', 'the word is the caption beside it');
   });
 
   it('Greek shouts as Swete sets his heads; Hebrew and Cyrillic keep their own form', () => {
@@ -115,11 +116,13 @@ describe('casing follows the script, not the habit', () => {
     // stripped first, so the capitals are the ones Greek printers set.
     const g = fmt('greek', { chapter: 'Κεφάλαιον' }, { GENE: 'Γένεσις' });
     assert.equal(g({ item: { id: 'GENE', level: 'book', name: 'x' }, context: 'magnifier' }), 'ΓΕΝΕΣΙΣ');
-    assert.equal(g({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'ΚΕΦΑΛΑΙΟΝ ιζʹ',
+    assert.equal(g({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'ιζʹ');
+    assert.equal(g({ item: { level: 'chapter', name: '17' }, context: 'caption' }), 'ΚΕΦΑΛΑΙΟΝ',
       'ΚΕΦΑΛΑΙΟΝ, never ΚΕΦΆΛΑΙΟΝ — the accent comes off before the letters go up');
 
     const h = fmt('hebrew', { chapter: 'פרק' }, { GENE: 'בראשית' });
-    assert.equal(h({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'פרק י״ז');
+    assert.equal(h({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'י״ז');
+    assert.equal(h({ item: { level: 'chapter', name: '17' }, context: 'caption' }), 'פרק');
 
     const r = fmt('russian', { chapter: 'Глава' }, { GENE: 'Бытие' });
     assert.equal(r({ item: { id: 'GENE', level: 'book', name: 'x' }, context: 'magnifier' }), 'Бытие',
