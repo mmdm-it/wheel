@@ -6,6 +6,7 @@ import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues } from './core/lan-gate.js';
 import { beginScrubbedMigration } from './view/migration-animation.js';
+import { strokeKind, radialAt } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -2799,6 +2800,55 @@ function wireInteractions(getApp) {
   // The pair is bi-directional: up out of a book, down into its most-read
   // chapter, down again into its most-read verse.
   let lensSwipe = null;            // { startX, startY, fired } while a press on the lens is held
+  // THE ANGLE OF THE STROKE DECIDES (O-142, Howell 2026-09-15): "Angle of
+  // swipe determines DRILL or ROTATE, anywhere in the viewport." A drag that
+  // begins anywhere off the controls is undecided for its first DECIDE_PX:
+  // the ring holds still while the stroke declares itself. Along the ring's
+  // curve it turns, and the held-back turn is paid at once; across the ring
+  // it drills — outward (away from the hub) IN, into the sky's largest node,
+  // inward OUT — scrubbed by the finger from there, over the same travel as
+  // the lens and parent swipes. Where nothing can be drilled (no sky, no
+  // parent) the stroke turns.
+  const DECIDE_PX = 14;            // the stroke declares itself here; the ring waits that long
+  const DRILL_DEG = 50;            // lean off the tangent that makes a drill (short of it turns)
+  let stroke = null;               // { x0, y0, rx, ry, decided, pendingDelta } for the drag under way
+  let freeDrill = null;            // { kind, x0, y0, rx, ry, ctl, travel, e, undo } — a drill the stroke began
+  const hubOnGlass = () => {
+    try {
+      const rect = svg.getBoundingClientRect();
+      const arc = getArcParameters(viewport);
+      return { x: rect.left + arc.hubX, y: rect.top + arc.hubY };
+    } catch (_) { return null; }
+  };
+  const freeDrillProgress = (fd, event) => {
+    const vx = event.clientX - fd.x0, vy = event.clientY - fd.y0;
+    const radial = vx * fd.rx + vy * fd.ry;
+    const travelled = fd.kind === 'outward' ? radial : -radial;
+    return Math.max(0, Math.min(1, (travelled - DECIDE_PX) / Math.max(40, fd.travel - DECIDE_PX)));
+  };
+  // Begin a drill from a free stroke; false when there is nothing to drill.
+  const beginFreeDrill = (kind, event) => {
+    const app = getApp();
+    if (!app || !stroke) return false;
+    const fd = { kind, x0: stroke.x0, y0: stroke.y0, rx: stroke.rx, ry: stroke.ry, e: 0 };
+    if (kind === 'outward') {
+      const idx = app.largestPyramidIndex?.() ?? -1;
+      if (idx < 0) return false;
+      fd.undo = () => { const p = app.view?.parentButtonOuter; if (typeof p?.onclick === 'function') p.onclick(event); };
+      logTap('stroke-drill-in', { idx });
+      beginDrill(fd, app, () => app.handlePyramidNodeClick(idx));
+    } else {
+      const p = app.view?.parentButtonOuter;
+      if (typeof p?.onclick !== 'function') return false;
+      const wasAt = app.nav?.getCurrent?.() || null;
+      fd.undo = () => { if (wasAt) app.drillIntoItem?.(wasAt); };
+      logTap('stroke-drill-out', {});
+      beginDrill(fd, app, () => p.onclick(event));
+    }
+    if (!fd.ctl) return false;
+    freeDrill = fd;
+    return true;
+  };
   // THE DRILL IS SCRUBBED (O-138, Howell 2026-09-15): "I don't like to have
   // swipes that act like taps." Past the threshold the swipe LAUNCHES the
   // drill exactly as the tap would — the same door — but under a scrub: the
@@ -2824,6 +2874,11 @@ function wireInteractions(getApp) {
     sw.ctl = ctl; sw.travel = drillTravelPx(app); sw.e = 0;
   };
   const onPointerMove = event => {
+    if (freeDrill) {
+      freeDrill.e = freeDrillProgress(freeDrill, event);
+      freeDrill.ctl.scrubTo(freeDrill.e);
+      return;
+    }
     if (lensSwipe) {
       const down = event.clientY - lensSwipe.startY;
       const across = Math.abs(event.clientX - lensSwipe.startX);
@@ -2890,6 +2945,20 @@ function wireInteractions(getApp) {
       dt,
       dragging: isDragging
     });
+    // The stroke declares itself (O-142): until DECIDE_PX the turn is held
+    // back; then along the ring it is paid at once and the drag goes on as
+    // ever, across the ring the drag becomes a drill and the ring is left.
+    if (stroke && !stroke.decided) {
+      stroke.pendingDelta += delta;
+      const vx = event.clientX - stroke.x0, vy = event.clientY - stroke.y0;
+      if (Math.hypot(vx, vy) < DECIDE_PX) return;
+      stroke.decided = true;
+      const kind = Number.isFinite(stroke.rx) ? strokeKind({ vx, vy, rx: stroke.rx, ry: stroke.ry, drillDeg: DRILL_DEG }) : 'rotate';
+      logTap('stroke-decided', { kind });
+      if (kind !== 'rotate' && beginFreeDrill(kind, event)) { isDragging = false; return; }
+      app.choreographer.rotate(stroke.pendingDelta);
+      return;
+    }
     app.choreographer.rotate(delta);
   };
 
@@ -3042,6 +3111,11 @@ function wireInteractions(getApp) {
     recentMoves = [];
     gestureTravelPx = 0;
     pointerCaptured = false;
+    {
+      const hub = hubOnGlass();
+      const rad = hub ? radialAt(event.clientX, event.clientY, hub.x, hub.y) : null;
+      stroke = { x0: event.clientX, y0: event.clientY, rx: rad ? rad.rx : NaN, ry: rad ? rad.ry : NaN, decided: false, pendingDelta: 0 };
+    }
     trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
     trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
     publishTrace();
@@ -3069,6 +3143,8 @@ function wireInteractions(getApp) {
       };
       if (parentSwipe) { if (type !== 'pointerleave') { releaseDrill(parentSwipe); parentSwipe = null; } }
       if (lensSwipe) { if (type !== 'pointerleave') { releaseDrill(lensSwipe); lensSwipe = null; } }
+      if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill); freeDrill = null; } }
+      if (type !== 'pointerleave') stroke = null;
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
       const app = getApp();
