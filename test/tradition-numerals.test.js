@@ -106,6 +106,8 @@ describe('casing follows the script, not the habit', () => {
     assert.equal(f({ item: { id: 'GENE', level: 'book', name: 'Genesis' }, context: 'magnifier' }), 'GENESIS');
     assert.equal(f({ item: { level: 'chapter', name: '17' }, context: 'magnifier' }), 'XVII', 'the lens wears the numeral alone (O-144)');
     assert.equal(f({ item: { level: 'chapter', name: '17' }, context: 'caption' }), 'CAPITULUM', 'the word is the caption beside it');
+    assert.equal(f({ item: { id: 'GENE', level: 'book', name: 'Genesis' }, context: 'caption' }), '', 'a book has no level word — the caption is empty, never the name (Howell 2026-09-15, from the phone)');
+    assert.equal(f({ item: { id: 'OT', level: 'testament', name: 'The Old Testament' }, context: 'caption' }), '');
   });
 
   it('Greek shouts as Swete sets his heads; Hebrew and Cyrillic keep their own form', () => {

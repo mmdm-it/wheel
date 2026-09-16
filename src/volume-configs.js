@@ -561,6 +561,14 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     // Route by item.level first so the formatter works correctly when the focus
     // ring transitions between book → chapter → verse levels at runtime.
     const itemLevel = item?.level || level;
+    // THE CAPTION IS A LEVEL'S WORD OR NOTHING (O-144). Only the two levels
+    // that have one answer it; a book, a testament or the door answers an
+    // empty caption — never its own name, which the lens already wears.
+    if (context === 'caption') {
+      if (itemLevel === 'chapter') return t('chapter');
+      if (itemLevel === 'verse') return t('verse');
+      return '';
+    }
     // THE DOOR'S NAME follows the reader live (W-27): the root item's baked
     // name is only the boot value; the live table wins at render, so switching
     // to Hebrew in the funnel retitles the door to כתבי הקודש with no rebuild.
