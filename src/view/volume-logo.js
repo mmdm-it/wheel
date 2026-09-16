@@ -166,14 +166,23 @@ export class VolumeLogo {
     if (this._renderConfig.default_image === imageName) return false;
     this._renderConfig.default_image = imageName;
     this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${imageName}.png`);
-    // Each emblem at its own size (O-148): a collapsed badge is re-boxed now;
-    // an expanded or moving one takes it from its next journey's first frame.
+    // Each emblem at its own size and place (O-148): a collapsed badge is
+    // re-boxed now, circle with it; an expanded or moving one takes it from
+    // its next journey's first frame.
     if (!this._expanded && !this._animating && typeof this.logo.setAttribute === 'function') {
       const s = this._getStartState();
       this.logo.setAttribute('x', s.logoX);
       this.logo.setAttribute('y', s.logoY);
       this.logo.setAttribute('width', s.logoWidth);
       this.logo.setAttribute('height', s.logoHeight);
+      if (this.circle && typeof this.circle.setAttribute === 'function') {
+        this.circle.setAttribute('cx', s.circleCx);
+        this.circle.setAttribute('cy', s.circleCy);
+      }
+      if (this.clickTarget && typeof this.clickTarget.setAttribute === 'function') {
+        this.clickTarget.setAttribute('cx', s.circleCx);
+        this.clickTarget.setAttribute('cy', s.circleCy);
+      }
     }
     return true;
   }
@@ -317,15 +326,19 @@ export class VolumeLogo {
     const SSd = Math.min(vw, vh);
     const radius = SSd * 0.12;
     const margin = SSd * 0.03;
-    // The circle's place, from the base box — unchanged for every emblem.
-    const baseWidth = radius * 2 * LOGO_COLLAPSED_SCALE;
-    const baseHeight = baseWidth / LOGO_BOX_ASPECT;
-    // Shift 12% right to account for padding in the image file.
-    const centerX = vw - margin - baseWidth / 2 + baseWidth * 0.12;
-    const centerY = margin + baseHeight / 2;
-    // The emblem's own box, centred on it.
+    // The badge is placed by the emblem's OWN box, as it was before the
+    // shrink (O-148, amended the same morning: Howell compared the crown with
+    // the backup build — "the whole thing is too big" — and the size was in
+    // fact the backup's to the pixel; what differed was the PLACE. Placed
+    // from the base box, the crown sat crushed into the corner, clipped by
+    // the screen's edge and the banner, which reads as too big. Placed by its
+    // own box it stands where the backup stands it.) An undeclared emblem's
+    // box is the base box, so the scroll is exactly where it is today.
     const logoWidth = radius * 2 * this._emblemScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
+    // Shift 12% right to account for padding in the image file.
+    const centerX = vw - margin - logoWidth / 2 + logoWidth * 0.12;
+    const centerY = margin + logoHeight / 2;
     return { radius, margin, centerX, centerY, logoWidth, logoHeight };
   }
 
