@@ -589,11 +589,14 @@ svg :focus-visible {
   pointer-events: none;
 }
 /* THE LEVEL'S CAPTION (O-144): the word before the lens's numeral, in the
-   lens label's own type, on the ground's ink — it stands outside the glass. */
+   lens label's own face, on the ground's ink — it stands outside the glass.
+   THREE QUARTERS OF THE PARENT LABEL'S SIZE (Howell 2026-09-16: "perhaps 75%
+   of the parent button label font size. They should be smaller than they
+   are now") — every term of the parent label's clamp, times 0.75. */
 .focus-ring-magnifier-caption {
   fill: var(--color-text);
   font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
-  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
+  font-size: clamp(calc(15.75px * var(--iframe-scale, 1)), 1.8vmin, calc(29.25px * var(--iframe-scale, 1)));
   letter-spacing: 0.04em;
   pointer-events: none;
 }
