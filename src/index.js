@@ -437,6 +437,58 @@ export function createApp({
     render(rotation);
   };
 
+  // ── THE LENS CAPTION CROSS-FADES (O-151 step four) ─────────────────
+  // The level's word beside the lens used to switch at the render that
+  // commits the new ring — at the first frame of a drill in, the last of a
+  // drill out — a pop either way. The word leaving and the word arriving are
+  // two copies of the caption in its own seat: the old fades over the first
+  // half of the migration, the new over the second, driven by the finger
+  // when a drill is held and on the flights' own 600 ms when tapped. The real
+  // caption stays hidden until the copies are done, whatever the renders in
+  // between wrote into it.
+  const crossfadeCaption = nextItem => {
+    const real = view.magnifierCaption;
+    if (!real || !levelCaptions || typeof real.cloneNode !== 'function') return;
+    const before = String(real.textContent || '');
+    const after = nextItem ? String(formatLabel({ item: nextItem, context: 'caption' }) || '') : '';
+    if (before === after) return;
+    const parent = real.parentNode;
+    if (!parent) return;
+    const leaving = real.cloneNode(true);
+    const arriving = real.cloneNode(true);
+    leaving.textContent = before;
+    arriving.textContent = after;
+    leaving.style.opacity = '1';
+    arriving.style.opacity = '0';
+    parent.appendChild(leaving);
+    parent.appendChild(arriving);
+    real.style.visibility = 'hidden';
+    const frame = t => {
+      leaving.style.opacity = String(Math.max(0, 1 - 2 * t));
+      arriving.style.opacity = String(Math.max(0, 2 * t - 1));
+    };
+    let finished = false;
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      real.style.visibility = '';
+      leaving.remove();
+      arriving.remove();
+    };
+    const scrubbed = scrubDriver(600, frame, { onCommit: finish, onAbort: finish });
+    if (scrubbed) return;
+    if (typeof requestAnimationFrame !== 'function') { finish(); return; }
+    let start = 0;
+    const step = now => {
+      if (finished) return;
+      if (!start) start = now;
+      const t = Math.min(1, (now - start) / 600);
+      frame(t);
+      if (t < 1) requestAnimationFrame(step); else finish();
+    };
+    requestAnimationFrame(step);
+  };
+
   // ── Migration Animation: IN (Child Pyramid → Focus Ring) ──────────
   // Snapshots current pyramid node positions, calculates where the new
   // items will land on the focus ring, runs the 600 ms CSS transform
@@ -529,6 +581,8 @@ export function createApp({
 
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
+    //    The caption beside the lens is handed its cross-fade first (O-151).
+    crossfadeCaption(tempSelected);
     setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
 
     // 5b. setPrimaryItems → render() has now repainted the magnifier and parent
@@ -798,6 +852,9 @@ export function createApp({
       ? calculateAllNodePositions(normalizedItems, vp, rotation, nodeRadius, nodeSpacing)
         .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }) }))
       : [];
+
+    // The caption beside the lens cross-fades to the parent level's word (O-151).
+    crossfadeCaption(tempSelected);
 
     // Snapshot magnifier and parent-button state BEFORE animations start.
     // As in migrateIn: the OUTGOING parent label is what's on screen — the
