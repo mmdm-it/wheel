@@ -2780,19 +2780,6 @@ function wireInteractions(getApp) {
   const DRILL_DEG = 50;            // lean off the tangent that makes a drill (short of it turns)
   let stroke = null;               // { x0, y0, rx, ry, decided, pendingDelta } for the drag under way
   let freeDrill = null;            // { kind, x0, y0, rx, ry, ctl, travel, e, undo } — a drill the stroke began
-  // A STAR IS DRAGGED INTO THE LENS (O-145, 2026-09-15): a press on a pyramid
-  // star no longer drills at once. Held still and lifted, it is the tap it
-  // always was, fired at lift as ring-node taps are. Moved outward — toward
-  // the ring — it becomes a scrubbed drill into THAT star, not the largest,
-  // and the travel is the star's own distance to the lens: the reader drops
-  // the star into the glass. Moved along the ring it turns the ring, as any
-  // stroke does.
-  let starPress = null;            // { idx, x0, y0, rx, ry, lens, fired, drill } while a press on a star is held
-  const lensDistance = (app, x0, y0) => {
-    const c = app?.view?.magnifierCircle?.getBoundingClientRect?.();
-    if (!c || !c.width) return 160;
-    return Math.max(80, Math.hypot((c.left + c.width / 2) - x0, (c.top + c.height / 2) - y0));
-  };
   const hubOnGlass = () => {
     try {
       const rect = svg.getBoundingClientRect();
@@ -2854,29 +2841,6 @@ function wireInteractions(getApp) {
     sw.ctl = ctl; sw.travel = drillTravelPx(app); sw.e = 0;
   };
   const onPointerMove = event => {
-    if (starPress) {
-      if (starPress.drill) { starPress.drill.e = freeDrillProgress(starPress.drill, event); starPress.drill.ctl.scrubTo(starPress.drill.e); return; }
-      if (starPress.fired) return;
-      const vx = event.clientX - starPress.x0, vy = event.clientY - starPress.y0;
-      if (Math.hypot(vx, vy) < DECIDE_PX) return;
-      starPress.fired = true;
-      const app = getApp();
-      const kind = Number.isFinite(starPress.rx) ? strokeKind({ vx, vy, rx: starPress.rx, ry: starPress.ry, drillDeg: DRILL_DEG }) : 'rotate';
-      logTap('star-stroke', { idx: starPress.idx, kind });
-      if (kind === 'outward' && app) {
-        const fd = { kind: 'outward', x0: starPress.x0, y0: starPress.y0, rx: starPress.rx, ry: starPress.ry, e: 0 };
-        fd.undo = () => { const p = app.view?.parentButtonOuter; if (typeof p?.onclick === 'function') p.onclick(event); };
-        const idx = starPress.idx;
-        beginDrill(fd, app, () => app.handlePyramidNodeClick(idx));
-        if (fd.ctl) { fd.travel = lensDistance(app, starPress.x0, starPress.y0); starPress.drill = fd; return; }
-      }
-      // Not a drill: the press becomes an ordinary ring drag from here.
-      starPress = null;
-      isDragging = true; recentMoves = []; gestureTravelPx = 0;
-      lastX = event.clientX; lastY = event.clientY; lastTime = event.timeStamp;
-      stroke = { x0: event.clientX, y0: event.clientY, rx: NaN, ry: NaN, decided: true, pendingDelta: 0 };
-      return;
-    }
     if (freeDrill) {
       freeDrill.e = freeDrillProgress(freeDrill, event);
       freeDrill.ctl.scrubTo(freeDrill.e);
@@ -3065,11 +3029,9 @@ function wireInteractions(getApp) {
       const idx = Number.parseInt(rawIndex, 10);
       logTap('pyramid-hit', { pointerType: event.pointerType, nodeIndex: Number.isFinite(idx) ? idx : null, rawIndex: rawIndex ?? null });
       if (Number.isFinite(idx)) {
-        // Armed, not fired (O-145): lift decides tap, drill or turn.
-        const hub = hubOnGlass();
-        const rad = hub ? radialAt(event.clientX, event.clientY, hub.x, hub.y) : null;
-        starPress = { idx, x0: event.clientX, y0: event.clientY, rx: rad ? rad.rx : NaN, ry: rad ? rad.ry : NaN, fired: false, drill: null };
-        try { svg.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
+        if (app.handlePyramidNodeClick) {
+          app.handlePyramidNodeClick(idx);
+        }
         return; // don't start drag
       }
       // No valid index on this pyramid-shaped target (e.g. transient clone).
@@ -3149,16 +3111,6 @@ function wireInteractions(getApp) {
       if (parentSwipe) { if (type !== 'pointerleave') { releaseDrill(parentSwipe); parentSwipe = null; } }
       if (lensSwipe) { if (type !== 'pointerleave') { releaseDrill(lensSwipe); lensSwipe = null; } }
       if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill); freeDrill = null; } }
-      if (starPress && type !== 'pointerleave') {
-        const sp = starPress; starPress = null;
-        if (sp.drill) releaseDrill(sp.drill);
-        else if (!sp.fired && type === 'pointerup') {
-          // The tap, fired at lift: the same drill the press used to fire at once.
-          const app = getApp();
-          logTap('star-tap-on-lift', { idx: sp.idx });
-          try { app?.handlePyramidNodeClick?.(sp.idx); } catch (_) { /* the drill's own guards spoke */ }
-        }
-      }
       if (type !== 'pointerleave') stroke = null;
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
