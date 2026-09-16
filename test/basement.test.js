@@ -2,7 +2,7 @@
 // in either direction, and the floor below the text holds bookmarks.
 //
 // Boots main.js for real, as boot-smoke does (it self-executes at import, in
-// this file's own process), walks the launch funnel to the text, and then
+// this file's own process), lands on the text (O-143), and then
 // slides: down to the basement, up again, straight from the languages to the
 // basement. Shallow on purpose — the floors' STATE, not their look.
 import assert from 'node:assert/strict';
@@ -25,9 +25,7 @@ describe('the slider and the basement (O-126)', () => {
     console.error = realError;
     D = globalThis.window?.__wheelDimension;
     assert.ok(D, 'the booted app exposed no dimension handle');
-    // Walk the funnel home: language → edition → the text.
-    D.cycle(); await settle(); D.cycle(); await settle();
-    assert.equal(D.front(), 0, 'the reader is at the text');
+    assert.equal(D.front(), 0, 'the app boots to the text (O-143)');
   });
 
   it('one notch down is the basement, and it is a floor of its own', async () => {

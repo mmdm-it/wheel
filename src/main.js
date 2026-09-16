@@ -1406,14 +1406,11 @@ function goToStratum(to) {
 // WHAT ARRIVING AT A FLOOR CHANGES, beyond the picture — shared by the tap's
 // timed glide and the slider's settle.
 function arriveAt(from, to) {
-  // ARRIVAL AT THE TEXT ENDS THE LAUNCH FUNNEL (O-77), and this is the only
-  // other way in: `resetStrata` catches the reader who is carried out, this
-  // catches the reader who WALKS in, which is the path the funnel was built
-  // to teach. Set AFTER the transition is kicked off, never before: the
+  // Arriving at the text re-reads the position filter (O-72) for the planes
+  // above it. Done AFTER the transition is kicked off, never before: the
   // departing planes render their nodes one last time inside the glide, and
-  // a ring that loses a node while it is gliding away is the very flicker
-  // this ruling exists to stop.
-  if (to === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
+  // a ring that loses a node while it is gliding away flickers (O-77).
+  if (to === 0) refreshEditionsHere();
   if (from < 0) leaveBasement();        // back up — to the bookmark under the lens, if one
   // THE GLOBE NO LONGER TURNS WITH THE MIGRATION (Howell, phone check
   // 2026-09-14): "That was useful when the input was a tap, but the slider
@@ -1431,9 +1428,6 @@ function cycleStrata() {
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
-  // The funnel is over the moment the reader arrives at the text. From here
-  // the globe answers the sideways question and O-72's filter is right again.
-  bootFunnelOpen = false;
   strataFront = 0;
   basementArrival = null; basementLens = null; basementLoose = [];
   CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
@@ -1467,19 +1461,7 @@ let cornerImageAt = () => null;
 // volume declaring none, and null leaves the volume's own detail-sector
 // colour in place rather than blanking the badge.
 let cornerColorAt = () => null;
-// THE LAUNCH QUESTION IS NOT A SIDEWAYS MOVE (O-75).
-//
-// The boot funnel asks "what do you read?" before the reader is anywhere —
-// Howell's ruling 2 of 2026-07-30: every launch opens on the LANGUAGE plane
-// and the reader travels inward, language then edition then text. O-72's
-// position filter answers a different question — "may I swap edition while
-// standing HERE?" — and applying it to the funnel silently removed every
-// edition that does not hold the verse the app happened to boot into.
-//
-// On the LAN that meant the Greek New Testament was unreachable from launch:
-// the app boots at Genesis 1:1, the Hebrew is the only edition holding it, and
-// the language plane opened with one node. Howell found it in one screenshot.
-let bootFunnelOpen = false;
+// (The launch funnel and its O-75/O-77 flag lived here until O-143 retired them.)
 // Repaints the PRIMARY for a previewed language/edition while a chooser is
 // being turned — assigned by bootVolume, which owns the adapter and manifest.
 let previewPrimary = () => {};
@@ -1693,9 +1675,6 @@ function updateCornerImage() {
 }
 
 function refreshEditionsHere() {
-  // While the launch funnel is up there is no "here" yet — the reader has not
-  // chosen where to stand, so nothing may be filtered out of the choice.
-  if (bootFunnelOpen) { dimensionBridge.setEditionsHere(null); return; }
   let codes = null;
   try { codes = editionsHoldingItem(currentApp?.nav?.getCurrent?.()); } catch (_) { codes = null; }
   dimensionBridge.setEditionsHere(codes);
@@ -1729,33 +1708,22 @@ function refreshDimensionButton() {
   resetStrata();
   updateDimensionButton();
 }
-// THE BOOT FUNNEL (Howell ruling 2, 2026-07-30): every launch opens on the
-// LANGUAGE plane, with the edition and the text receding behind it. The
-// reader travels inward — language, edition, text — so the instrument teaches
-// its third gesture by requiring it rather than by explaining it, and the
-// first question a stranger is asked is the one they can always answer.
-// Every launch, not just the first: it confirms a returning reader's language
-// and edition, "and I don't consider two quick taps to be an undue burden."
-// Revisitable once real readers report.
-function openBootFunnel() {
-  if (!dimensionButton || !dimensionAvailable()) return false;
-  // Raised BEFORE `dimensionAvailable()` matters below and before the strata
-  // render, so the language plane is stocked from the unfiltered answer.
-  bootFunnelOpen = true;
-  refreshEditionsHere();
-  strataFront = maxStrataFront();
-  renderStack();
-  updateDimensionButton();
-  return true;
-}
+// THE LAUNCH FUNNEL IS RETIRED (O-143, Howell 2026-09-15: "The app should
+// always boot to the primary stratum."). Every launch used to open on the
+// language plane and walk the reader in — ruling 2 of 2026-07-30, "two quick
+// taps" — before the globe stood at every level (O-129) and became a slider
+// (O-126). Now the reader lands on the text, in the remembered edition or the
+// volume's default, and the tongue is a truck away at any moment. The
+// funnel's two workarounds went with it: the unfiltered launch plane (O-75)
+// and the arrival that closed it (O-77) — the position filter (O-72) is
+// simply on from the first frame, as it is everywhere else.
 // ── THE GLOBE IS A SLIDER (O-126, Howell 2026-09-14) ───────────────────────
 // "The dimension button has always been a little awkward, tapping to
 // traverse the different strata. I'd rather make it a slider." Its vertical
 // position IS the stratum: home is the text; one notch up the editions, two
 // the languages; one notch DOWN the basement. Dragging it crosses the notches
 // live — each crossing is the same transition a tap made — and the release
-// snaps to the nearest. A tap (no travel) still cycles inward, so the launch
-// funnel's "two quick taps" stay true. (Ghost notches at the resting places
+// snaps to the nearest. A tap (no travel) still cycles inward. (Ghost notches at the resting places
 // were drawn in the first cut and struck on his phone check the same day:
 // "We don't need the ghost rings.")
 // THE TRAVEL (Howell, phone check 2026-09-14: "50% longer. Since it can't go
@@ -2043,7 +2011,6 @@ if (typeof window !== 'undefined') {
     // could otherwise only watch its shadow: `here` goes from null to a list
     // when the funnel closes, but null is also what a volume with no answer
     // gives, so the two are worth being able to tell apart from outside.
-    funnel: () => bootFunnelOpen,
     // How far the strata have travelled: 0 = the reader is at the text.
     front: () => strataFront,
     cycle: cycleStrata,
@@ -4140,13 +4107,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // need exists solely for the gateway, which is dev scaffolding — a
   // standalone deployment has no volume above it to return to.)
   updateIncompleteMark();
-  // A PROOFREAD DEEP LINK LANDS ON THE TEXT (O-122). The funnel is every
-  // launch's introduction and stays so; but a driven verse-by-verse pass over
-  // a book paid it forty times an hour — load, commit the edition, walk two
-  // planes in — for a reader who is a script and has already said what it
-  // wants. Gated on the LAN override plus a fully named address, so nothing
-  // a reader can reach behaves differently.
-  if (!transit && !options.deepLinked) openBootFunnel();
+  // Every launch lands on the text (O-143). The proofread deep link (O-122)
+  // used to be the one exception to a launch funnel that no longer exists.
   showVersion();
   performance.mark('wheel:render-done');
   recordBootPhases(volume);

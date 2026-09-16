@@ -155,7 +155,11 @@ Four rules, as he stated them:
    SLIDER now — see "The slider and the basement" below. Its position is the
    stratum: two notches up the Tertiary, one the Secondary, home the Primary,
    one down the basement. A tap still cycles inward, Tertiary → Secondary →
-   Primary, one tap each, so the launch funnel's two quick taps hold.)*
+   Primary, one tap each.)* *(Amended under O-143, 2026-09-15: THE APP BOOTS
+   TO THE PRIMARY. The launch funnel of 2026-07-30 — every launch opening on
+   the Tertiary and the reader walking in, "two quick taps" — is retired; the
+   reader lands on the text in the remembered edition or the volume's default,
+   and the tongue is a truck away at any moment.)*
 3. **The visual changes are live with each rotation** through either the
    Tertiary or the Secondary. The Primary behind the glass follows the lens
    as it turns — the verse in the Detail Sector, the ring's labels and seats,
