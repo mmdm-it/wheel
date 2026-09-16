@@ -633,7 +633,7 @@ export function animateOut(opts) {
  * @param {SVGElement}  [opts.pyramidGroup] — the real sky, hidden until the barrier
  */
 export function animateRingToSky(opts) {
-  const { svgRoot, ringNodes = [], pyramidNodes = [], hubX, hubY, nodeRadius = 10, pyramidGroup, onComplete, durationMs = null } = opts;
+  const { svgRoot, ringNodes = [], pyramidNodes = [], hubX, hubY, nodeRadius = 10, pyramidGroup, onComplete, durationMs = null, lensId = null, magnifierRadius = null } = opts;
   const dur = durationMs || ANIM_DURATION;
   const txn = txnArm();
   if (!svgRoot || pyramidNodes.length === 0) {
@@ -648,6 +648,15 @@ export function animateRingToSky(opts) {
     || (rootStyle?.getPropertyValue('--color-nodes') || '').trim() || '#555';
   const ringLabelEl = svgRoot.querySelector?.('.focus-ring-label');
   const ringLabelSize = ringLabelEl && typeof getComputedStyle === 'function' ? getComputedStyle(ringLabelEl).fontSize : '';
+  // THE LENS HANDS ITS VERSE OVER, IT DOES NOT DROP IT (O-151 step three).
+  // The lens's own fill is switched off at the first frame; the node that
+  // was magnified must leave wearing it — at the lens's size, with the lens's
+  // stroke and its large numeral — and shrink into its seat in the sky, so
+  // the glass is never seen empty while the parent's disc is still on its
+  // way. The same take-off the IN flight's reversal already has.
+  const magLabelEl = svgRoot.querySelector?.('.focus-ring-magnifier-label:not(.focus-ring-parent-label)');
+  const magLabelSize = (magLabelEl && typeof getComputedStyle === 'function' ? getComputedStyle(magLabelEl).fontSize : '') || ringLabelSize;
+  const magnifierStroke = (rootStyle?.getPropertyValue('--color-magnifier-stroke') || '').trim() || '#000';
   const originById = new Map();
   ringNodes.forEach(rn => { const id = rn.item?.id ?? rn.id; if (id != null) originById.set(id, rn); });
   const overlay = document.createElementNS(SVG_NS, 'g');
@@ -663,7 +672,8 @@ export function animateRingToSky(opts) {
     const circle = document.createElementNS(SVG_NS, 'circle');
     circle.setAttribute('cx', fromX);
     circle.setAttribute('cy', fromY);
-    circle.setAttribute('r', origin ? nodeRadius : pn.r);
+    const fromLens = Boolean(origin && lensId != null && id === lensId && magnifierRadius);
+    circle.setAttribute('r', fromLens ? magnifierRadius : (origin ? nodeRadius : pn.r));
     circle.setAttribute('class', 'child-pyramid-node');
     g.appendChild(circle);
     const label = document.createElementNS(SVG_NS, 'text');
@@ -683,11 +693,13 @@ export function animateRingToSky(opts) {
     const skyStyle = typeof getComputedStyle === 'function' ? getComputedStyle(circle) : null;
     const skyLabelStyle = typeof getComputedStyle === 'function' ? getComputedStyle(label) : null;
     const skyFill = skyStyle ? skyStyle.fill : '';
+    const skyStroke = skyStyle ? skyStyle.stroke : '';
     const skyFontSize = skyLabelStyle ? skyLabelStyle.fontSize : '';
     if (origin) {
       circle.style.fill = ringFill;
-      circle.style.stroke = 'transparent';
-      if (ringLabelSize) label.style.fontSize = ringLabelSize;
+      circle.style.stroke = fromLens ? magnifierStroke : 'transparent';
+      const takeoffSize = fromLens ? magLabelSize : ringLabelSize;
+      if (takeoffSize) label.style.fontSize = takeoffSize;
     }
     const dstRot = labelRotationDeg(pn.angle);
     let rotDelta = dstRot - srcRot;
@@ -695,7 +707,7 @@ export function animateRingToSky(opts) {
     while (rotDelta < -180) rotDelta += 360;
     g.style.transformOrigin = `${fromX}px ${fromY}px`;
     g.style.transform = 'translate(0px, 0px) rotate(0deg)';
-    entries.push({ g, circle, label, translateX: pn.x - fromX, translateY: pn.y - fromY, rotDelta, endRadius: pn.r, skyFill, skyFontSize, fromRing: Boolean(origin) });
+    entries.push({ g, circle, label, translateX: pn.x - fromX, translateY: pn.y - fromY, rotDelta, endRadius: pn.r, skyFill, skyStroke, skyFontSize, fromRing: Boolean(origin), fromLens });
   });
   overlay.getBoundingClientRect();
   afterPaint(() => {
@@ -703,9 +715,10 @@ export function animateRingToSky(opts) {
       e.g.style.transition = `transform ${dur}ms ease-in-out`;
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px) rotate(${e.rotDelta}deg)`;
       if (e.fromRing) {
-        e.circle.style.transition = `r ${dur}ms ease-in-out, fill ${dur}ms ease-in-out`;
+        e.circle.style.transition = `r ${dur}ms ease-in-out, fill ${dur}ms ease-in-out, stroke ${dur}ms ease-in-out`;
         e.circle.setAttribute('r', e.endRadius);
         if (e.skyFill) e.circle.style.fill = e.skyFill;
+        if (e.fromLens) e.circle.style.stroke = e.skyStroke || 'transparent';
         if (e.skyFontSize) { e.label.style.transition = `font-size ${dur}ms ease-in-out`; e.label.style.fontSize = e.skyFontSize; }
       }
     });

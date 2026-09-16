@@ -793,6 +793,7 @@ export function createApp({
     // the departing ring's seats are snapshot now, every sibling on the arc
     // or implied beyond it, so they can fly to the new sky's seats below.
     const noLayerToReverse = getStackDepth() === 0;
+    const departingLensId = nav.getCurrent()?.id ?? null;
     const departingRing = noLayerToReverse
       ? calculateAllNodePositions(normalizedItems, vp, rotation, nodeRadius, nodeSpacing)
         .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }) }))
@@ -920,6 +921,8 @@ export function createApp({
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         nodeRadius,
+        lensId: departingLensId,
+        magnifierRadius,
         pyramidGroup: view.pyramidView?.pyramidGroup
       });
     }
