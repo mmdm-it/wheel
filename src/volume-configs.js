@@ -192,6 +192,11 @@ const volumeConfigs = {
         names: Object.fromEntries(Object.entries(volume.namesByLanguage)
           .filter(([, names]) => names)
           .map(([lang, names]) => [lang, {
+            // SPREAD FIRST, as the edition above is (O-54) — this listed four
+            // fields by hand and DROPPED `vocabulary` the day the kits grew it
+            // (O-144, 2026-09-16): the words were served and the caption
+            // stayed empty, the invisible drop the note above warned of.
+            ...names,
             // THE NAMES CARRY AN EDITION AXIS under leaf-and-shard (W-129):
             // books[editionCode][editionBookId]. Flattened here — and only
             // here — into one id→name map, which loses nothing because book

@@ -568,6 +568,26 @@ describe('the strata name things in their own script', () => {
 // Third time this shape has caught me: the helper is tested, the WIRING is not,
 // and the wiring is where the defect lives. So this asks the volume config the
 // way boot asks it.
+// AND THE KITS' WORDS SURVIVE THE PROJECTION (O-144, 2026-09-16). The names
+// table was hand-listed — books, testaments, abbreviations, title — and the
+// day the kits grew `vocabulary` it was dropped on the way in: the words were
+// served and the caption stayed empty. Asked of the config the way boot asks.
+describe('the naming kit is passed through whole (O-144)', () => {
+  it('a field the kit carries reaches the host — vocabulary included', async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const root = { display_config: { languages: { available: ['greek'], default: 'greek', labels: {} } } };
+    const volume = {
+      editions: [{ code: 'LXX', language: 'greek', hasChart: true, proofread: false, name: 'Septuagint' }],
+      namesByLanguage: { greek: { books: {}, testaments: {}, vocabulary: { chapter: 'Κεφάλαιον', verse: 'Στίχος' } } }
+    };
+    const manifest = {};
+    Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+    const supp = await volumeConfigs.bible.loadSupplemental(root, manifest);
+    assert.deepEqual(supp.translationsMeta.names.greek.vocabulary, { chapter: 'Κεφάλαιον', verse: 'Στίχος' },
+      'the kit\'s words were dropped by a hand-listed projection — the caption beside the lens stays empty');
+  });
+});
+
 describe('the volume supplies its own autonyms (O-54)', () => {
   it('loadSupplemental returns languages shaped for the ring', async () => {
     const { volumeConfigs } = await import('../src/volume-configs.js');
