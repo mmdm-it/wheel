@@ -160,3 +160,20 @@ describe('the root ring refills on an edition change (O-95)', () => {
     }
   });
 });
+
+// A CHAPTER RING RESEATS WITHOUT A VERSE CHAIN BEHIND IT (O-146). The reader
+// reached the chapter ring in A without entering a verse; the edition changes
+// to C. The old code anchored on the previous verse chain, found none, and
+// refused — leaving A's chapters under C's names, and the parent button
+// reading a raw id.
+describe('the chapter ring refills on an edition change with no verse chain (O-146)', () => {
+  it('anchors on the chapter\'s own chart and lands on the new edition\'s chapter holding its leaves', () => {
+    const selected = { id: 'h-1/1', name: '1', level: 'chapter', parentId: 'h-1', meta: { bookId: 'h-1', chapterKey: '1', chapterLabel: '1' } };
+    const { returned, adopted } = reseatTo('C', selected);
+    assert.equal(returned, true, 'no verse chain is no reason to leave the old edition\'s chapters standing');
+    assert.ok(adopted, 'the ring was refilled');
+    const landed = adopted.landed;
+    assert.equal(landed?.level, 'chapter');
+    assert.equal(landed?.meta?.bookId ?? landed?.parentId, 'v-1', 'C\'s book seating a1');
+  });
+});
