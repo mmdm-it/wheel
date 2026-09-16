@@ -5,7 +5,7 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUE
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues } from './core/lan-gate.js';
-import { beginScrubbedMigration } from './view/migration-animation.js';
+import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
 import { strokeKind, radialAt } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
@@ -2337,6 +2337,39 @@ function marginDebug(line) {
 // and hides immediately when the circle begins collapsing.
 window.addEventListener('detail-sector-change', (e) => {
   const { visible } = e.detail || {};
+  // THE TEXT LEAVES UNDER THE FINGER (O-151 step two, Howell 2026-09-16: "All
+  // of the text pops off suddenly soon after the animation begins"). The
+  // verse, its notes and the manuscript key are page elements outside the
+  // drawing, so the scrub never caught their 0.35 s fade: they left on their
+  // own clock at the first frame. When a drill is under a finger they now
+  // fade over the first third of the swipe, driven by it, and their classes
+  // change only when the drill lands; struck, they are back at full at once.
+  const panels = [detailPanel, marginPanel, marginMarks].filter(Boolean);
+  if (!visible && panels.length) {
+    const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; });
+    const scrubbed = scrubDriver(600, t => {
+      const o = Math.max(0, 1 - t * 3);
+      panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
+    }, {
+      onCommit: () => {
+        if (detailPanel) detailPanel.classList.remove('detail-panel--visible');
+        if (marginPanel) marginPanel.classList.remove('margin-panel--visible');
+        if (marginMarks) marginMarks.classList.remove('margin-marks--visible');
+        panels.forEach(el => { el.style.opacity = '0'; });
+        requestAnimationFrame(() => requestAnimationFrame(clear));
+      },
+      onAbort: () => {
+        panels.forEach(el => { el.style.opacity = '1'; });
+        requestAnimationFrame(() => requestAnimationFrame(clear));
+      }
+    });
+    if (scrubbed) {
+      detailSectorVisible = false;
+      updateDimensionButton();
+      updateSearchButton();
+      return;
+    }
+  }
   if (detailPanel) {
     detailPanel.classList.toggle('detail-panel--visible', Boolean(visible));
   }
