@@ -1760,6 +1760,29 @@ function placeThumb() {
 // as the next one begins.
 let scrub = null;   // { from, to, glide } — the segment the thumb is inside
 const SCRUB_MAX_SEGMENTS = 6;   // a bound on one move event's crossings
+// ONE STROKE, ONE SIDE OF THE TEXT (O-147, Howell 2026-09-16): "it is not
+// possible or should not be possible to slide in one stroke from the
+// basement to the secondary stratum." The reader slides up to change a
+// language or an edition, or down to keep or recall a bookmark, "and in each
+// case, after having made their change, the user only wants to return to
+// the primary stratum and read a verse." So a stroke is bound to the side of
+// the text it starts on: begun above, it travels between the text and the
+// languages; begun in the basement, between the basement and the text;
+// begun AT the text, its first movement chooses the side. The text is the
+// stop in both directions. Cleared at release.
+let strokeSide = 0;   // +1 above the text, -1 below it, 0 not yet chosen
+function strokeBounds(p) {
+  if (!strokeSide) {
+    const origin = scrub ? scrub.from + scrub.glide.e * (scrub.to - scrub.from) : strataFront;
+    if (origin > 0.001) strokeSide = 1;
+    else if (origin < -0.001) strokeSide = -1;
+    else if (p > 0.001) strokeSide = 1;
+    else if (p < -0.001) strokeSide = -1;
+  }
+  if (strokeSide > 0) return { lo: 0, hi: maxStrataFront() };
+  if (strokeSide < 0) return { lo: minStrataFront(), hi: 0 };
+  return { lo: 0, hi: 0 };
+}
 function beginSegment(from, to) {
   if (to < 0) enterBasement();          // the ring must know what the reader brings down
   if (from < 0) jumpToChosen();         // unseen: the floor is invisible at e = 0
@@ -1785,7 +1808,8 @@ function endSegment(commit) {
   }
 }
 function scrubTo(p) {
-  p = Math.max(minStrataFront(), Math.min(maxStrataFront(), p));
+  const { lo, hi } = strokeBounds(p);
+  p = Math.max(lo, Math.min(hi, p));
   for (let n = 0; n < SCRUB_MAX_SEGMENTS; n += 1) {
     if (!scrub) {
       const target = p > strataFront + 0.001 ? strataFront + 1 : p < strataFront - 0.001 ? strataFront - 1 : null;
@@ -1802,6 +1826,7 @@ function scrubTo(p) {
 }
 let scrubSettle = null;   // rAF of a settle in flight
 function releaseScrub() {
+  strokeSide = 0;   // the stroke is over; the next one chooses its own side
   if (!scrub) return;
   const { glide } = scrub;
   const commit = glide.e >= 0.5;
@@ -1924,7 +1949,17 @@ if (dimensionButton) {
     }
     const raw = slide.startFront + dy / notchPx();
     const min = minStrataFront();
-    if (raw < min) {
+    // The stroke's side (O-147): the thumb stops at the text coming back
+    // from either side, and only a stroke on the basement's side reaches the
+    // overrun below it.
+    const { lo, hi } = strokeBounds(raw);
+    if (lo > min && raw < lo) {
+      dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(lo)).toFixed(1)}px`);
+      holdCancel();
+      scrubTo(lo);
+      return;
+    }
+    if (raw < min && lo === min) {
       // Into the overrun: the thumb follows against the spring, the floors do
       // not go below the basement, and a deep enough hold is a hold.
       const over = Math.min(SLIDER_OVERRUN, (min - raw) * OVERRUN_GIVE);
@@ -1934,7 +1969,7 @@ if (dimensionButton) {
       return;
     }
     holdCancel();
-    const p = Math.min(maxStrataFront(), raw);
+    const p = Math.max(lo, Math.min(hi, raw));
     dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`);
     scrubTo(p);
   });
@@ -1945,7 +1980,8 @@ if (dimensionButton) {
     dimensionButton.classList.remove('is-sliding');
     if (moved) suppressClick = true;
     holdCancel();     // a hold that has not reached HOLD_MS is nothing
-    releaseScrub();
+    releaseScrub();   // clears the stroke's side too (O-147)
+    strokeSide = 0;
     placeThumb();     // the springback from the overrun rides the thumb's transition
   };
   ['pointerup', 'pointercancel'].forEach(type => dimensionButton.addEventListener(type, release));
