@@ -21,7 +21,7 @@ import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { apparatusRuns } from './core/margin-source.js';
-import { computeMarginArea } from './geometry/margin-area.js';
+import { computeMarginArea, setMarginKeepOut } from './geometry/margin-area.js';
 import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
@@ -3700,6 +3700,17 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     : adapterLabel
       ? ({ item }) => adapterLabel(item)
       : configLabel;
+  // THE MARGIN MAKES ROOM FOR THE LENS CAPTION (O-150). Notes are drawn only
+  // at a leaf, so the caption to keep clear of is the leaf level's word, read
+  // live from the formatter (it follows the reader's tongue); a volume that
+  // declares no captions declares no keep-out.
+  {
+    const leafLevelForCaption = root?.display_config?.leaf_level || null;
+    setMarginKeepOut(config?.levelCaptions === true && leafLevelForCaption ? {
+      text: () => labelFormatter({ item: { level: leafLevelForCaption }, context: 'caption' }) || '',
+      direction: () => (typeof handlerSet.textDirection === 'function' ? handlerSet.textDirection() : 'ltr')
+    } : null);
+  }
   const shouldCenterLabel = handlerSet.shouldCenterLabel || (({ item } = {}) => {
     if (Boolean(config?.centerLabel)) return true;
     // Cylinder items (short numeric labels) should always be centered

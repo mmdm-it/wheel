@@ -1,6 +1,6 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
-import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX } from '../geometry/focus-ring-geometry.js';
+import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
 
 // How far outside the arc the section label sits, in MAGNIFIER RADII — so it
@@ -16,8 +16,6 @@ import { appendGlobeGlyph } from './dimension-globe.js';
 // The ceiling is about 7 on a 720x1600 phone, where the label drops below the
 // visible area — the parent label is far to the left and never in the way.
 const SECTION_LABEL_RADII = 5;
-// The level's caption stands this many lens radii outside the glass (O-144).
-const CAPTION_GAP_RADII = 0.35;
 
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
 const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
