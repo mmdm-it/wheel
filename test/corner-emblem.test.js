@@ -68,6 +68,15 @@ describe('which emblem belongs where the reader is standing (H-31)', () => {
     assert.equal(h.cornerImageFor({ level: 'bibleRoot', id: 'X' }), 'torah_scroll');
   });
 
+  it('A DIVISION ON THE RING WEARS ITS OWN EMBLEM AND COLOUR (O-149): turning to the New Testament swaps them', () => {
+    const h = handlers(makeManifest(() => SPANNING.map(d => ({ ...d }))));
+    const [ot, nt] = SPANNING;
+    const item = d => ({ level: 'testament', id: 'division-x', meta: { books: [...d.books] } });
+    assert.equal(h.cornerImageFor(item(ot)), ot.image);
+    assert.equal(h.cornerImageFor(item(nt)), nt.image, 'the New Testament node wears its own emblem, not the first division\'s');
+    assert.equal(h.detailSectorColorFor(item(nt)), nt.color ?? null);
+  });
+
   it('a one-division edition wears its own emblem everywhere', () => {
     const greek = [{ label: 'Ἡ Καινὴ Διαθήκη', image: 'crown_of_thorns', from: 1, to: 2, books: ['C', 'D'] }];
     const h = handlers(makeManifest(() => greek.map(d => ({ ...d }))), 'GRC');

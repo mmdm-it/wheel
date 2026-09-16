@@ -3885,9 +3885,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // touching the DOM — verse-by-verse travel through a book costs one string
   // comparison per settle and no repaint.
   if (app?.nav?.onChange) {
-    let lastMarkedBook = currentBookId();
+    // THE KEY IS THE BOOK, OR THE DIVISION ITEM WHEN NO BOOK IS IN HAND
+    // (O-149): at root both divisions have no book, so a turn from the Old
+    // Testament to the New changed nothing this signal could see, and the
+    // emblem never swapped.
+    const markKey = () => currentBookId() ?? `item:${currentApp?.nav?.getCurrent?.()?.id ?? ''}`;
+    let lastMarkedBook = markKey();
     app.nav.onChange(() => {
-      const book = currentBookId();
+      const book = markKey();
       if (book === lastMarkedBook) return;
       lastMarkedBook = book;
       updateIncompleteMark();

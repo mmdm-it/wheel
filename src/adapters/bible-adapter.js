@@ -1206,9 +1206,16 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const divisions = volume.divisionsFor(edition);
       if (!divisions.length) return null;
       const unitId = bookIdOf(item);
+      // A DIVISION ITEM IS ITS OWN ANSWER (O-149, Howell 2026-09-16: at root,
+      // turning to the New Testament left the Torah scroll up). With no book
+      // in hand this fell straight to the first division; a division on the
+      // ring carries its books, so the division holding them is the one.
+      const ownBooks = !unitId && Array.isArray(item?.meta?.books) ? item.meta.books : null;
       const holding = unitId
         ? divisions.find(d => Array.isArray(d.books) && d.books.includes(unitId))
-        : null;
+        : ownBooks && ownBooks.length
+          ? divisions.find(d => Array.isArray(d.books) && ownBooks.some(b => d.books.includes(b)))
+          : null;
       // No book in hand — the root, a division ring — so the emblem is the
       // one the reader is about to enter, which is the first this edition has.
       //
@@ -1250,9 +1257,16 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const divisions = volume.divisionsFor(edition);
       if (!divisions.length) return null;
       const unitId = bookIdOf(item);
+      // A DIVISION ITEM IS ITS OWN ANSWER (O-149, Howell 2026-09-16: at root,
+      // turning to the New Testament left the Torah scroll up). With no book
+      // in hand this fell straight to the first division; a division on the
+      // ring carries its books, so the division holding them is the one.
+      const ownBooks = !unitId && Array.isArray(item?.meta?.books) ? item.meta.books : null;
       const holding = unitId
         ? divisions.find(d => Array.isArray(d.books) && d.books.includes(unitId))
-        : null;
+        : ownBooks && ownBooks.length
+          ? divisions.find(d => Array.isArray(d.books) && ownBooks.some(b => d.books.includes(b)))
+          : null;
       return (holding || divisions[0]).color || null;
     },
 
