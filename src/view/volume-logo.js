@@ -503,10 +503,12 @@ export class VolumeLogo {
     const self = this;
     let done = false;
     return {
-      frameAt(progress) {
+      // `linear` for a journey held by a finger (O-151): the finger is the
+      // easing, so the circle follows it straight; played, it eases.
+      frameAt(progress, { linear = false } = {}) {
         if (done) return;
         const p = Math.max(0, Math.min(1, Number(progress) || 0));
-        self._applyFrame(start, end, easeInOut(p));
+        self._applyFrame(start, end, linear ? p : easeInOut(p));
       },
       finish() { if (done) return; done = true; self._animationId = null; finish(); },
       revert() { if (done) return; done = true; self._animationId = null; revert(); },

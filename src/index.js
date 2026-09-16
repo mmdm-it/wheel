@@ -723,7 +723,7 @@ export function createApp({
       // plays on its own, as before.
       const journey = volumeLogo.beginExpand(arcParams, magnifier.angle);
       const opened = () => emitDetailSectorChange(true, 'after-animation');
-      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t), {
+      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t, { linear: true }), {
         onCommit: () => { journey.finish(); opened(); },
         onAbort: () => { journey.revert(); detailSectorShown = false; }
       });
@@ -781,7 +781,7 @@ export function createApp({
       // Under a scrub the collapse rides the finger (O-140); struck, it
       // reopens where it was and says so.
       const journey = volumeLogo.beginCollapse(arcParams, magnifier.angle);
-      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t), {
+      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t, { linear: true }), {
         onCommit: () => journey.finish(),
         onAbort: () => { journey.revert(); detailSectorShown = true; emitDetailSectorChange(true, 'immediate'); }
       });

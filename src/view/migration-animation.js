@@ -192,6 +192,13 @@ function _scrubCapture(scrub) {
     try { const t = a.effect?.getComputedTiming?.(); end = Number(t?.endTime) || 0; } catch (e) { end = 0; }
     if (!end) continue;
     try { a.pause(); } catch (e) { continue; }
+    // STRAIGHT UNDER THE FINGER (O-151, Howell 2026-09-16: "remove all pops,
+    // jitters and bumps"). Every flight is eased in and out for the tap, and
+    // the finger is an easing of its own: the two stacked made the first and
+    // last centimetres of a swipe move almost nothing and the middle rush.
+    // Held by a finger, a flight runs linear — the finger IS the easing — and
+    // only the settle after release eases. A tap's flight is untouched.
+    try { a.effect?.updateTiming?.({ easing: 'linear' }); } catch (e) { /* keeps its own */ }
     scrub.anims.push(a);
     scrub.ends.set(a, end);
     scrub.master = Math.max(scrub.master, end);
