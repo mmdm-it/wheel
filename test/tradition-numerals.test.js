@@ -138,3 +138,16 @@ describe('casing follows the script, not the habit', () => {
     }
   });
 });
+
+// ONLY A VOLUME THAT DECLARES CAPTIONS IS ASKED FOR ONE (O-144, Howell
+// 2026-09-16: "Your chapter and verse labels for the magnifier broke the
+// calendar and catalog volumes"). Their formatters answer an unknown context
+// with the item's own name, which drew LOCKWOOD-ASH and "September" beside
+// the lens. The Bible declares it; nothing else does.
+describe('the level caption is opt-in per volume (O-144)', () => {
+  it('only the Bible declares levelCaptions', () => {
+    for (const [id, cfg] of Object.entries(volumeConfigs)) {
+      assert.equal(cfg.levelCaptions === true, id === 'bible', `${id}: levelCaptions`);
+    }
+  });
+});

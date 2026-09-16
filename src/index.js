@@ -88,6 +88,10 @@ export function createApp({
   selectedIndex = 0,
   preserveOrder = false,
   labelFormatter,
+  // Does this volume's formatter answer a 'caption' context (O-144)? Only a
+  // volume that says so is asked; any other formatter answers an unknown
+  // context with the item's name, which put LOCKWOOD-ASH beside the lens.
+  levelCaptions = false,
   shouldCenterLabel,
   contextOptions = {},
   onParentClick,
@@ -1699,7 +1703,7 @@ export function createApp({
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: isLayerOut ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection() },
+      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection() },
       {
         isRotating,
         // O-84 (Howell's correction, 2026-08-22): a split verse settles as a

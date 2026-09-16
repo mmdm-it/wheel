@@ -57,6 +57,10 @@ function makeAdapterHandlers(volumeId) {
 const DEFAULT_VOLUME = 'catalog';
 const volumeConfigs = {
   bible: {
+    // The formatter answers a 'caption' context — the level's word beside the
+    // lens (O-144). A volume whose formatter does not declare this is never
+    // asked, since an unknown context answers the item's own name.
+    levelCaptions: true,
     id: 'bible',
     paths: ['/bible'],
     // THE BIBLE IS BEHIND THE WALL (H-14, 2026-08-12). It no longer reads
