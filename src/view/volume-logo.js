@@ -326,19 +326,23 @@ export class VolumeLogo {
     const SSd = Math.min(vw, vh);
     const radius = SSd * 0.12;
     const margin = SSd * 0.03;
-    // The badge is placed by the emblem's OWN box, as it was before the
-    // shrink (O-148, amended the same morning: Howell compared the crown with
-    // the backup build — "the whole thing is too big" — and the size was in
-    // fact the backup's to the pixel; what differed was the PLACE. Placed
-    // from the base box, the crown sat crushed into the corner, clipped by
-    // the screen's edge and the banner, which reads as too big. Placed by its
-    // own box it stands where the backup stands it.) An undeclared emblem's
-    // box is the base box, so the scroll is exactly where it is today.
+    // ONE CIRCLE, ONE PLACE, FOR EVERY EMBLEM (O-148, amended twice the same
+    // morning). Howell compared the crown with the backup build — "the whole
+    // thing is too big" — and its size was the backup's to the pixel; what
+    // differed was the PLACE, crushed into the corner. Placing each badge by
+    // its own box fixed the crown and made the circle jump between the two
+    // divisions; then Howell asked that both circles align absolutely, each
+    // artwork keeping its centred position in the one circle. So it is placed by
+    // the LARGEST box the volume declares — where the backup stood it — for
+    // every emblem, and each emblem is centred in it at its own size.
+    const declared = Object.values(this._renderConfig?.emblem_scale || {}).map(Number).filter(n => Number.isFinite(n) && n > 0);
+    const placeWidth = radius * 2 * Math.max(LOGO_COLLAPSED_SCALE, ...declared);
+    const placeHeight = placeWidth / LOGO_BOX_ASPECT;
+    // Shift 12% right to account for padding in the image file.
+    const centerX = vw - margin - placeWidth / 2 + placeWidth * 0.12;
+    const centerY = margin + placeHeight / 2;
     const logoWidth = radius * 2 * this._emblemScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
-    // Shift 12% right to account for padding in the image file.
-    const centerX = vw - margin - logoWidth / 2 + logoWidth * 0.12;
-    const centerY = margin + logoHeight / 2;
     return { radius, margin, centerX, centerY, logoWidth, logoHeight };
   }
 

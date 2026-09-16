@@ -279,15 +279,13 @@ describe('each emblem at its own size, around the same circle (O-148)', () => {
     assert.ok(Math.abs(scroll.logoWidth - scroll.circleR * 2 * 1.1) < 1e-9, 'the scroll is left exactly as it was');
     assert.ok(Math.abs(crown.logoWidth - crown.circleR * 2 * 1.8) < 1e-9, 'the crown rings the circle again');
   });
-  it('each badge is placed by its own box, as the backup placed it, and each emblem is centred on its circle', async () => {
+  it('ONE CIRCLE FOR EVERY EMBLEM, where the backup stood it, and each emblem centred in it', async () => {
     const scroll = (await badge({ default_image: 'torah_scroll', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
     const crown = (await badge({ default_image: 'crown_of_thorns', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
-    // 720x1600: SSd 720, radius 86.4, margin 21.6. The scroll's box 190.08
-    // places its circle at 720-21.6-95.04+22.81; the crown's 311.04 at
-    // 720-21.6-155.52+37.32 — further in and further down, off the edge.
-    assert.ok(Math.abs(scroll.circleCx - (720 - 21.6 - 95.04 + 22.8096)) < 1e-6, 'the scroll where it is today');
-    assert.ok(Math.abs(crown.circleCx - (720 - 21.6 - 155.52 + 37.3248)) < 1e-6, 'the crown where the backup stood it');
-    assert.ok(crown.circleCy > scroll.circleCy, 'lower, clear of the banner');
+    // 720x1600: radius 86.4, margin 21.6; placed by the largest box, 311.04.
+    assert.equal(scroll.circleCx, crown.circleCx, 'the Old Testament circle aligns with the New');
+    assert.equal(scroll.circleCy, crown.circleCy);
+    assert.ok(Math.abs(crown.circleCx - (720 - 21.6 - 155.52 + 37.3248)) < 1e-6, 'where the backup stood it');
     for (const s of [scroll, crown]) {
       assert.ok(Math.abs(s.logoX + s.logoWidth / 2 - s.circleCx) < 1e-9, 'centred across');
       assert.ok(Math.abs(s.logoY + s.logoHeight / 2 - s.circleCy) < 1e-9, 'centred down');
