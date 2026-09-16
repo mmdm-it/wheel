@@ -588,6 +588,15 @@ svg :focus-visible {
   text-transform: var(--focus-label-transform, uppercase);
   pointer-events: none;
 }
+/* THE LEVEL'S CAPTION (O-144): the word before the lens's numeral, in the
+   lens label's own type, on the ground's ink — it stands outside the glass. */
+.focus-ring-magnifier-caption {
+  fill: var(--color-text);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
 
 /* Calendar and bible parent-button labels arrive display-ready ("MMdM
    CATALOGO", "753 BC", "CAPITULUM XVI") — render them verbatim; the

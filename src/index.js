@@ -1699,7 +1699,7 @@ export function createApp({
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: isLayerOut ? '' : (formatLabel({ item: selected, context: 'caption' }) || '') },
+      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: isLayerOut ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection() },
       {
         isRotating,
         // O-84 (Howell's correction, 2026-08-22): a split verse settles as a

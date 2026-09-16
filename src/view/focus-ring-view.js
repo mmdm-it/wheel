@@ -16,6 +16,8 @@ import { appendGlobeGlyph } from './dimension-globe.js';
 // The ceiling is about 7 on a 720x1600 phone, where the label drops below the
 // visible area — the parent label is far to the left and never in the way.
 const SECTION_LABEL_RADII = 5;
+// The level's caption stands this many lens radii outside the glass (O-144).
+const CAPTION_GAP_RADII = 0.35;
 
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
 const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
@@ -138,8 +140,16 @@ export class FocusRingView {
     this.magnifierLabel.setAttribute('class', 'focus-ring-magnifier-label');
     this.magnifierLabel.setAttribute('text-anchor', 'middle');
     this.magnifierLabel.setAttribute('dominant-baseline', 'middle');
+    // THE LEVEL'S CAPTION (O-144, Howell 2026-09-16): the word stands beside
+    // the lens "as if the magnifier label was a suffix to the word" — on the
+    // lens label's own line, just outside the glass, before the numeral in
+    // the reading direction, so the two read as one phrase.
+    this.magnifierCaption = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.magnifierCaption.setAttribute('class', 'focus-ring-magnifier-caption');
+    this.magnifierCaption.setAttribute('dominant-baseline', 'middle');
     this.magnifierGroup.appendChild(this.magnifierCircle);
     this.magnifierGroup.appendChild(this.magnifierLabel);
+    this.magnifierGroup.appendChild(this.magnifierCaption);
     this.contentGroup.appendChild(this.magnifierGroup);
 
     // THE SECTION LABEL (H-26), seated where Howell drew it: OUTSIDE the ring,
@@ -447,13 +457,27 @@ export class FocusRingView {
         // the caption the formatter answers for the magnified item — the
         // level's word in the reader's tongue — or nothing.
         const live = nearest?.item?.section;
-        const sectionText = live || this.sectionLabelText || '';
-        this.sectionLabel.textContent = sectionText || magnifier.caption || '';
-        // A SECTION runs along the arc (a quarter turn off the node labels);
-        // A CAPTION runs IN LINE WITH THE LENS'S OWN LABEL (Howell 2026-09-16:
-        // rotate the level captions "90 degrees so they are in line with the
-        // label inside the magnifier").
-        this.sectionLabel.setAttribute('transform', `rotate(${sectionText ? magRotation + 90 : magRotation}, ${sx}, ${sy})`);
+        this.sectionLabel.textContent = live || (nearest ? '' : (this.sectionLabelText || ''));
+        this.sectionLabel.setAttribute('transform', `rotate(${magRotation + 90}, ${sx}, ${sy})`);
+      }
+      // THE CAPTION BEFORE THE NUMERAL (O-144). The lens label reads along
+      // the direction its rotation gives; the word sits on that line just
+      // outside the glass, anchored so its end meets the lens — left of it for
+      // a left-to-right tongue, right of it for a right-to-left one, which is
+      // where the word comes before the numeral to that reader's eye.
+      if (this.magnifierCaption) {
+        const caption = isRotating || eclipsed ? '' : (magnifier.caption || '');
+        const theta = (magRotation * Math.PI) / 180;
+        const gap = radius * CAPTION_GAP_RADII;
+        const rtl = magnifier.captionDirection === 'rtl';
+        const sign = rtl ? 1 : -1;
+        const cx = magnifier.x + sign * Math.cos(theta) * (radius + gap);
+        const cy = magnifier.y + sign * Math.sin(theta) * (radius + gap);
+        this.magnifierCaption.setAttribute('x', cx);
+        this.magnifierCaption.setAttribute('y', cy);
+        this.magnifierCaption.setAttribute('text-anchor', rtl ? 'start' : 'end');
+        this.magnifierCaption.setAttribute('transform', `rotate(${magRotation}, ${cx}, ${cy})`);
+        this.magnifierCaption.textContent = caption;
       }
       if (isRotating) {
         this.magnifierLabel.textContent = '';
