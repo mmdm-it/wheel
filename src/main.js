@@ -2935,6 +2935,7 @@ function wireInteractions(getApp) {
   // gesture is over.
   const beginDrill = (sw, app, launch) => {
     const tLaunch = performance.now();
+    logTap('phase', { name: 'drill-start', p: 0 });
     const ctl = beginScrubbedMigration(app?.flightRoot?.() || null);
     try { launch(); } catch (_) { /* the drill's own guards spoke */ }
     logTap('drill-launch', { ms: Math.round(performance.now() - tLaunch), launched: ctl.launched() });

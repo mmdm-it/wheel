@@ -437,6 +437,13 @@ export function createApp({
     render(rotation);
   };
 
+  // PHASE TIMINGS FOR THE BENCH GESTURE LOG (O-156): inert unless the log is on.
+  const phase = (name, extra = {}) => {
+    if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
+      window.__tapDebugLog('phase', { name, p: Math.round(performance.now()), ...extra });
+    }
+  };
+
   // ── THE LENS CAPTION CROSS-FADES (O-151 step four) ─────────────────
   // The level's word beside the lens used to switch at the render that
   // commits the new ring — at the first frame of a drill in, the last of a
@@ -494,6 +501,7 @@ export function createApp({
   // items will land on the focus ring, runs the 600 ms CSS transform
   // animation, then calls setPrimaryItems to finish the swap.
   const migrateIn = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
+    phase('in:enter', { items: Array.isArray(newItems) ? newItems.length : 0 });
     // If animating or no pyramid data, fall back to instant swap
     if (instantMigration || isAnimating() || !lastPyramidData?.nodes?.length) {
       setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
@@ -534,6 +542,7 @@ export function createApp({
     // sibling gets a target — nodes beyond the visible arc animate to their
     // implied off-screen positions on the focus ring.
     const ringTargets = calculateAllNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+    phase('in:ring-targets', { n: ringTargets.length });
 
     // 3. Snapshot current focus-ring node positions before they vanish.
     //    These will animate radially outward while new nodes animate in.
@@ -583,7 +592,9 @@ export function createApp({
     //    This lets us read lastPyramidData for the new child pyramid immediately.
     //    The caption beside the lens is handed its cross-fade first (O-151).
     crossfadeCaption(tempSelected);
+    phase('in:before-commit');
     setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+    phase('in:after-commit', { sky: lastPyramidData?.nodes?.length || 0 });
 
     // 5b. setPrimaryItems → render() has now repainted the magnifier and parent
     //     button with the NEW data.  Hide their labels and circle fills so only
@@ -766,6 +777,7 @@ export function createApp({
     }
 
     // 5. Detail Sector: expand simultaneously if the incoming selected item is a leaf.
+    phase('in:flights-launched');
     //    By triggering here (not waiting for onComplete), both animations run in parallel.
     //    No onComplete render — setPrimaryItems (in the migration onComplete) will
     //    trigger the authoritative render once nav state has been committed.
@@ -790,6 +802,7 @@ export function createApp({
   // reverses the transform animation back to the child pyramid
   // positions, then calls setPrimaryItems to restore parent items.
   const migrateOut = (items, selectedIndex = 0, preserveOrder = false) => {
+    phase('out:enter', { items: Array.isArray(items) ? items.length : 0 });
     if (instantMigration || isAnimating()) {
       setPrimaryItems(items, selectedIndex, preserveOrder);
       return;
@@ -853,6 +866,7 @@ export function createApp({
     const onScreenRing = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
       .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: node.item })) }));
     const layerIds = noLayerToReverse ? null : new Set(topLayerIds());
+    phase('out:on-screen-ring', { n: onScreenRing.length, layer: !noLayerToReverse });
     // ONLY THE SEATS THE SKY WILL USE (O-154, from the gesture log: a drill
     // out took 211–423 ms to set up against a drill in's 38–82). This placed
     // and labelled EVERY item of the departing chain — the whole volume's
@@ -978,13 +992,16 @@ export function createApp({
       });
     }
 
+    phase('out:before-reverse');
     animateOut({
       nodesGroup: view.nodesGroup,
       labelsGroup: view.labelsGroup,
       onComplete: () => {
         // Data commit happens at animation end (not at the barrier): the
         // repaint lands while the reals are still hidden behind clones.
+        phase('out:before-commit');
         setPrimaryItems(items, selectedIndex, preserveOrder);
+        phase('out:after-commit', { sky: lastPyramidData?.nodes?.length || 0 });
         // Restore pyramid group visibility — animatePyramidToHub hid it and
         // intentionally did not restore it.  setPrimaryItems → render() has
         // now repainted the children inside the group.
@@ -997,6 +1014,7 @@ export function createApp({
     // No layer to reverse: animateOut completed at once and the commit above
     // has painted the new sky — hide it again and fly the departing ring's
     // seats into it (O-141).
+    phase('out:reversed');
     // Ring nodes neither flight carries fade into the sky instead of
     // vanishing (O-151 step five).
     {
@@ -1087,6 +1105,7 @@ export function createApp({
         fromAngle: magnifier.angle
       });
     }
+    phase('out:flights-launched');
 
   };
 
