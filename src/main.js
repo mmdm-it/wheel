@@ -11,6 +11,24 @@ import { proofreadOverrideActive, declareVenues, isOnLan } from './core/lan-gate
 // ?gesturelog=1 — every logTap event is timestamped and sent in batches to
 // scripts/gesture-log-sink.py on port 8089 of the same host. Inert anywhere
 // else, and nothing is sent without the flag.
+// THE FRAME READOUT (O-160): with the same flag, on any host, a line in the
+// corner reports each drill's frames — so smoothness is read off the phone
+// wherever it is, not assumed. Frames, display rate, median and worst gap,
+// frames dropped (a gap over 1.6 periods), the longest and median seek.
+if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('gesturelog') === '1') {
+  const box = document.createElement('div');
+  box.id = 'frame-readout';
+  box.style.cssText = 'position:fixed;left:6px;bottom:6px;z-index:2147483647;font:12px/1.3 monospace;color:#fff;background:rgba(0,0,0,.72);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;';
+  box.textContent = 'frames: waiting for a drill';
+  const mount = () => document.body?.appendChild(box);
+  if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
+  const history = [];
+  window.__wheelFrameReport = r => {
+    history.unshift(r); if (history.length > 3) history.pop();
+    box.textContent = history.map((h, i) => `${i === 0 ? 'last' : '    '} ${h.frames}f @${h.hz}Hz  med ${h.median}  worst ${h.worst}  dropped ${h.dropped}  seek ${h.seekMedian}/${h.seekMax}ms`).join('\n');
+    if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('frames', r);
+  };
+}
 if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.location.search).get('gesturelog') === '1') {
   const sink = `http://${window.location.hostname}:8089/log`;
   let buf = [];

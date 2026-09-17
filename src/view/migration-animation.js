@@ -266,8 +266,58 @@ function _scrubAbort(scrub, onAbort) {
  *                       call onAbort to undo the navigation instantly
  *   cancel()          — forget the scrub without touching anything (nothing launched)
  */
+/**
+ * THE FRAME MONITOR (O-160, Howell 2026-09-17: "It should be as smooth as any
+ * app made by Apple or Google"). Smooth is a measurable claim: from a drill's
+ * launch until its flights have settled, every animation frame's interval is
+ * recorded, along with how long each seek of the paused animations held the
+ * main thread. The report goes to window.__wheelFrameReport when the host
+ * installs one (the gesture log's readout); nothing runs otherwise.
+ */
+let _frames = null;
+function _frameMonitorStart() {
+  if (typeof window === 'undefined' || typeof window.__wheelFrameReport !== 'function' || typeof requestAnimationFrame !== 'function') return;
+  if (_frames) _frameMonitorStop();
+  const m = { gaps: [], seeks: [], last: 0, raf: 0, t0: performance.now() };
+  _frames = m;
+  const tick = now => {
+    if (_frames !== m) return;
+    if (m.last) m.gaps.push(now - m.last);
+    m.last = now;
+    // Stop one quiet second after the last flight is gone, or at five seconds.
+    const idle = !_animating && !_scrub;
+    if ((idle && now - m.t0 > 400 && m.gaps.length > 6 && m.idleSince && now - m.idleSince > 250) || now - m.t0 > 5000) { _frameMonitorStop(); return; }
+    if (idle && !m.idleSince) m.idleSince = now; else if (!idle) m.idleSince = 0;
+    m.raf = requestAnimationFrame(tick);
+  };
+  m.raf = requestAnimationFrame(tick);
+}
+function _frameMonitorStop() {
+  const m = _frames; _frames = null;
+  if (!m) return;
+  try { cancelAnimationFrame(m.raf); } catch (e) { /* gone */ }
+  const gaps = m.gaps.slice().sort((a, b) => a - b);
+  if (!gaps.length) return;
+  const median = gaps[Math.floor(gaps.length / 2)];
+  const period = median < 12 ? 8.33 : 16.67;         // 120 Hz or 60 Hz display
+  const dropped = gaps.filter(g => g > period * 1.6).length;
+  const seeks = m.seeks.slice().sort((a, b) => a - b);
+  const report = {
+    frames: gaps.length,
+    hz: Math.round(1000 / period),
+    median: Math.round(median * 10) / 10,
+    worst: Math.round(gaps[gaps.length - 1] * 10) / 10,
+    dropped,
+    seekMax: seeks.length ? Math.round(seeks[seeks.length - 1] * 10) / 10 : 0,
+    seekMedian: seeks.length ? Math.round(seeks[Math.floor(seeks.length / 2)] * 10) / 10 : 0,
+    ms: Math.round(m.last - m.t0)
+  };
+  try { window.__wheelFrameReport(report); } catch (e) { /* the readout's own */ }
+}
+
 export function beginScrubbedMigration(root) {
   if (_scrub) _scrubAbort(_scrub, null);
+  _frameMonitorStart();
   const scrub = { root: root || null, anims: [], ends: new Map(), completions: [], drivers: [], e: 0, master: 0, launching: 0, depth: animatedNodesStack.length, popped: null, settling: null };
   _scrub = scrub;
   return {
@@ -277,7 +327,9 @@ export function beginScrubbedMigration(root) {
     scrubTo(e) {
       if (_scrub !== scrub || scrub.settling) return;
       scrub.e = Math.max(0, Math.min(1, Number(e) || 0));
+      const t = _frames ? performance.now() : 0;
       _scrubApply(scrub);
+      if (_frames) { scrub.root?.getBoundingClientRect?.(); _frames.seeks.push(performance.now() - t); }
     },
     release(commit, { onAbort = null } = {}) {
       if (_scrub !== scrub || scrub.settling) return;
