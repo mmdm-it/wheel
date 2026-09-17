@@ -412,10 +412,18 @@ export function createApp({
     rotation = clampRotation(desiredRotation, bounds);
   };
 
+  // PHASE TIMINGS FOR THE BENCH GESTURE LOG (O-153): inert unless the log is on.
+  function phase(name, extra = {}) {
+    if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
+      window.__tapDebugLog('phase', { name, p: Math.round(performance.now() * 10) / 10, ...extra });
+    }
+  }
   const setPrimaryItems = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
+    phase('set:enter', { n: Array.isArray(newItems) ? newItems.length : 0 });
     versePart = 0; // a new chain is a new reading position (O-84)
     preserveOrderFlag = nextPreserveOrder;
     normalizedItems = normalizeItems(newItems, { preserveOrder: preserveOrderFlag });
+    phase('set:normalized');
     const safePrimaryIndex = (() => {
       if (!normalizedItems.length) return 0;
       if (normalizedItems[nextSelectedIndex] !== null) return nextSelectedIndex;
@@ -426,8 +434,10 @@ export function createApp({
     lastParentLabelOut = '';
     lastSelectedLabelOut = '';
     nav.setItems(normalizedItems, safePrimaryIndex);
+    phase('set:nav');
     alignToSelected();
     render(rotation);
+    phase('set:rendered');
   };
 
   const setParentButtons = config => {
@@ -437,12 +447,6 @@ export function createApp({
     render(rotation);
   };
 
-  // PHASE TIMINGS FOR THE BENCH GESTURE LOG (O-156): inert unless the log is on.
-  const phase = (name, extra = {}) => {
-    if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
-      window.__tapDebugLog('phase', { name, p: Math.round(performance.now()), ...extra });
-    }
-  };
 
   // ── THE LENS CAPTION CROSS-FADES (O-151 step four) ─────────────────
   // The level's word beside the lens used to switch at the render that
@@ -1537,8 +1541,10 @@ export function createApp({
       if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
     }
     const selected = nav.getCurrent() || nav.items.find(item => item !== null) || nav.items[0];
+    phase('r:enter');
     const visible = buildVisibleItems();
     const bounds = computeBounds(visible);
+    phase('r:visible', { n: visible.length });
     const labelMaskEpsilon = nodeSpacing * 0.6;
     if (choreographer) {
       choreographer.setBounds(bounds.minRotation, bounds.maxRotation);
@@ -1636,6 +1642,7 @@ export function createApp({
       return closest ?? selected;
     })();
 
+    phase('r:ring-and-sector');
     const pyramidData = (() => {
       if (suppressPyramid) return null;
       if (!pyramidConfig) return null;
@@ -1672,7 +1679,9 @@ export function createApp({
         // Pre-fetch children to pass count for dynamic spacing
         let children = [];
         if (typeof pyramidConfig.getChildren === 'function' && pyramidSelected) {
+          phase('r:children-start');
           children = pyramidConfig.getChildren({ selected: pyramidSelected });
+          phase('r:children', { n: children.length });
         }
         // Prominence: FOUR TIERS AND ONE STANDOUT (O-134, Howell 2026-09-15:
         // "four, with one standout. Something like 100:60:45:30"). Tier 1 is
@@ -1741,6 +1750,7 @@ export function createApp({
         // 60 → 35 → 28, Howell's eye converging (2026-07-19); country skies
         // ride the policy above.
 
+        phase('r:seats');
         const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
           logoBounds: volumeLogo.getBounds(),
           magnifierAngle: magnifier.angle,
@@ -1808,6 +1818,7 @@ export function createApp({
       }
     })();
     lastPyramidData = pyramidData; // stash for SVG-level click delegation
+    phase('r:pyramid', { sky: pyramidData?.nodes?.length || 0 });
     // Use the live nearest-to-magnifier node during rotation so the parent
     // button label updates as different items pass through the magnifier.
     // pyramidSelected already falls back to `selected` when not rotating.
@@ -1859,6 +1870,7 @@ export function createApp({
       }
     );
 
+    phase('r:view');
     if (renderStart !== null && typeof performance !== 'undefined') {
       const elapsed = performance.now() - renderStart;
       const durationMs = Number(elapsed.toFixed(2));
