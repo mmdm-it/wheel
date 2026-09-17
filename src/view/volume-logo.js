@@ -243,6 +243,7 @@ export class VolumeLogo {
     // Create blue circle background
     this.circle = document.createElementNS(SVG_NS, 'circle');
     this.circle.setAttribute('id', 'volume-logo-circle');
+    this.circle.style.willChange = 'transform, opacity'; // composited in flight (O-160)
     this.circle.setAttribute('cx', centerX);
     this.circle.setAttribute('cy', centerY);
     this.circle.setAttribute('r', radius);
@@ -264,6 +265,7 @@ export class VolumeLogo {
       const logoY = centerY - (logoHeight / 2);
       
       this.logo = document.createElementNS(SVG_NS, 'image');
+      this.logo.style.willChange = 'transform, opacity'; // composited in flight (O-160)
       this.logo.setAttribute('id', 'volume-logo-image');
       this.logo.setAttributeNS(XLINK_NS, 'href', logoPath);
       this.logo.setAttribute('x', logoX);
@@ -564,7 +566,8 @@ export class VolumeLogo {
     // reads them sees a settled sector.
     if (t > 0 && t < 1) { this._applyTransformFrame(from, to, t); return; }
     this._frameBase = null;
-    if (this.circle) this.circle.removeAttribute('transform');
+    if (this.circle) { this.circle.style.transform = ''; this.circle.style.opacity = ''; }
+    if (this.logo) { this.logo.style.transform = ''; this.logo.style.opacity = ''; }
     if (this.circle) {
       this.circle.setAttribute('cx', lerp(from.circleCx, to.circleCx));
       this.circle.setAttribute('cy', lerp(from.circleCy, to.circleCy));
@@ -599,8 +602,8 @@ export class VolumeLogo {
       }
       const k = from.circleR ? lerp(from.circleR, to.circleR) / from.circleR : 1;
       const cx = lerp(from.circleCx, to.circleCx), cy = lerp(from.circleCy, to.circleCy);
-      this.circle.setAttribute('transform', `translate(${cx - k * from.circleCx}, ${cy - k * from.circleCy}) scale(${k})`);
-      this.circle.setAttribute('opacity', lerp(from.circleOpacity, to.circleOpacity));
+      this.circle.style.transform = `translate(${cx - k * from.circleCx}px, ${cy - k * from.circleCy}px) scale(${k})`;
+      this.circle.style.opacity = String(lerp(from.circleOpacity, to.circleOpacity));
     }
     if (this.logo) {
       if (this._frameBase !== from) {
@@ -614,8 +617,8 @@ export class VolumeLogo {
       const kx = from.logoWidth ? w / from.logoWidth : 1, ky = from.logoHeight ? h / from.logoHeight : 1;
       const rot = lerp(from.logoRotation, to.logoRotation);
       const cx = x + w / 2, cy = y + h / 2;
-      this.logo.setAttribute('transform', `rotate(${rot}, ${cx}, ${cy}) translate(${x - kx * from.logoX}, ${y - ky * from.logoY}) scale(${kx}, ${ky})`);
-      this.logo.setAttribute('opacity', lerp(from.logoOpacity, to.logoOpacity));
+      this.logo.style.transform = `translate(${cx}px, ${cy}px) rotate(${rot}deg) translate(${-cx}px, ${-cy}px) translate(${x - kx * from.logoX}px, ${y - ky * from.logoY}px) scale(${kx}, ${ky})`;
+      this.logo.style.opacity = String(lerp(from.logoOpacity, to.logoOpacity));
     }
     this._frameBase = from;
   }

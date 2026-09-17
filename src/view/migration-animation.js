@@ -92,6 +92,103 @@ function setTransition(el, value) {
 }
 
 /**
+ * A DRESS CHANGE AS SCALE AND OPACITY ALONE (O-160, Howell 2026-09-17: "as
+ * smooth as any app made by Apple or Google"). A clone's radius, colour,
+ * stroke, type size and ink used to animate as themselves — every frame a
+ * style resolution, a text layout and a repaint on the main thread, and the
+ * phone's frame readout showed a drill dropping a third of its frames. Chrome
+ * (M89 on) hands transform and opacity on SVG elements to the compositor and
+ * nothing else, so a clone is dressed for flight like this:
+ *   <g origin (cx,cy)>  base circle — take-off fill, no stroke
+ *                       stroke ring — take-off stroke, no fill
+ *                       twin circle — landing fill and stroke, opacity 0
+ *   <g origin (x,y)>    base text — take-off ink
+ *                       twin text — landing ink, opacity 0
+ * A radius change is the circle wrapper's scale, a type-size change the
+ * label wrapper's; a fill, stroke or ink change is the twin's opacity rising
+ * and the stroke ring's falling. `to(dress, ms)` animates, `snap(dress)` sets
+ * at once; a null dress (or null fields) means the take-off dress — the way
+ * back.
+ */
+const _isNoStroke = v => !v || v === 'none' || v === 'transparent' || /^rgba\([^)]*,\s*0\)$/.test(v);
+function dressForFlight({ circle, label }) {
+  const canStyle = typeof getComputedStyle === 'function';
+  const cx = Number(circle.getAttribute('cx')) || 0, cy = Number(circle.getAttribute('cy')) || 0;
+  const r0 = Number(circle.getAttribute('r')) || 1;
+  const cs = canStyle ? getComputedStyle(circle) : null;
+  const fill0 = cs ? cs.fill : '', stroke0 = cs ? cs.stroke : '';
+  const wrapC = document.createElementNS(SVG_NS, 'g');
+  wrapC.setAttribute('class', 'dress-circle');
+  circle.parentNode.insertBefore(wrapC, circle);
+  wrapC.appendChild(circle);
+  const ring = circle.cloneNode(false);
+  ring.style.fill = 'none'; ring.style.stroke = _isNoStroke(stroke0) ? 'none' : stroke0;
+  const twin = circle.cloneNode(false);
+  twin.style.opacity = '0';
+  circle.style.stroke = 'none';
+  wrapC.appendChild(ring); wrapC.appendChild(twin);
+  wrapC.style.transformOrigin = `${cx}px ${cy}px`;
+  wrapC.style.willChange = 'transform';
+  ring.style.willChange = 'opacity'; twin.style.willChange = 'opacity';
+  let wrapL = null, twinL = null, fontPx0 = 0, ink0 = '';
+  if (label) {
+    const lx = Number(label.getAttribute('x')) || 0, ly = Number(label.getAttribute('y')) || 0;
+    const ls = canStyle ? getComputedStyle(label) : null;
+    fontPx0 = ls ? parseFloat(ls.fontSize) || 0 : 0; ink0 = ls ? ls.fill : '';
+    wrapL = document.createElementNS(SVG_NS, 'g');
+    wrapL.setAttribute('class', 'dress-label');
+    label.parentNode.insertBefore(wrapL, label);
+    wrapL.appendChild(label);
+    twinL = label.cloneNode(true);
+    twinL.style.opacity = '0';
+    wrapL.appendChild(twinL);
+    wrapL.style.transformOrigin = `${lx}px ${ly}px`;
+    wrapL.style.willChange = 'transform'; twinL.style.willChange = 'opacity';
+  }
+  const px = v => (typeof v === 'number' ? v : parseFloat(v)) || 0;
+  const apply = (dress, durMs) => {
+    const d = dress || {};
+    const tr = durMs > 0 ? `${durMs}ms ease-in-out` : null;
+    const k = px(d.radius) > 0 ? px(d.radius) / r0 : 1;
+    setTransition(wrapC, tr ? `transform ${tr}` : 'none');
+    setTransform(wrapC, `scale(${k})`);
+    const fillTo = d.fill || fill0;
+    const strokeTo = d.stroke == null ? stroke0 : d.stroke;
+    const fillChanges = Boolean(d.fill) && d.fill !== fill0;
+    const strokeChanges = _isNoStroke(strokeTo) !== _isNoStroke(stroke0) || (!_isNoStroke(strokeTo) && strokeTo !== stroke0);
+    twin.style.fill = fillTo; twin.style.stroke = _isNoStroke(strokeTo) ? 'none' : strokeTo;
+    twin.style.transition = tr ? `opacity ${tr}` : 'none';
+    twin.style.opacity = fillChanges || strokeChanges ? '1' : '0';
+    ring.style.transition = tr ? `opacity ${tr}` : 'none';
+    ring.style.opacity = strokeChanges && _isNoStroke(strokeTo) ? '0' : '1';
+    if (wrapL) {
+      const kl = px(d.fontPx) > 0 && fontPx0 > 0 ? px(d.fontPx) / fontPx0 : 1;
+      setTransition(wrapL, tr ? `transform ${tr}` : 'none');
+      setTransform(wrapL, `scale(${kl})`);
+      twinL.style.fill = d.labelFill || ink0;
+      twinL.style.transition = tr ? `opacity ${tr}` : 'none';
+      twinL.style.opacity = d.labelFill && d.labelFill !== ink0 ? '1' : '0';
+    }
+  };
+  return { to: (dress, durMs) => apply(dress, durMs), snap: dress => apply(dress, 0) };
+}
+
+/** A colour change on a single element as an opacity: a twin in the landing colour rises over it. */
+function crossfadeFill(el, toFill, durMs) {
+  if (!el || !el.parentNode) return null;
+  const twin = el.cloneNode(true);
+  twin.style.fill = toFill;
+  twin.style.opacity = '0';
+  twin.style.transition = 'none';
+  twin.style.willChange = 'opacity';
+  el.parentNode.insertBefore(twin, el.nextSibling);
+  if (typeof getComputedStyle === 'function') void getComputedStyle(twin).opacity;
+  twin.style.transition = `opacity ${durMs}ms ease-in-out`;
+  twin.style.opacity = '1';
+  return twin;
+}
+
+/**
  * LIFO stack of animation layers.
  * Each entry: { nodes: [ { clone, translateX, translateY, rotDelta } ], level }
  */
@@ -234,10 +331,9 @@ function _scrubAbort(scrub, onAbort) {
   else if (scrub.popped) {
     const entry = scrub.popped;
     entry.nodes.forEach(a => {
-      setTransition(a.g, 'none'); a.circle.style.transition = 'none'; a.label.style.transition = 'none';
+      setTransition(a.g, 'none');
       setTransform(a.g, `translate(${a.translateX}px, ${a.translateY}px) rotate(${a.rotDelta}deg)`);
-      a.circle.setAttribute('r', a.endRadius); a.circle.style.fill = a.ringFill; a.circle.style.stroke = a.ringStroke;
-      if (a.ringFontSize) a.label.style.fontSize = a.ringFontSize;
+      a.dress.snap(a.landing);
       a.g.style.opacity = '0';
     });
     animatedNodesStack.push(entry);
@@ -510,19 +606,31 @@ export function animateIn(opts) {
     // OUT reversal can fade it back into exactly what it left with.
     const takeoffStyle = typeof getComputedStyle === 'function' ? getComputedStyle(circle) : null;
     const takeoffLabelStyle = typeof getComputedStyle === 'function' ? getComputedStyle(label) : null;
+    const pyramidFillNow = takeoffStyle ? takeoffStyle.fill : '';
+    const pyramidStrokeNow = takeoffStyle ? takeoffStyle.stroke : '';
+    const pyramidFontNow = takeoffLabelStyle ? takeoffLabelStyle.fontSize : '';
+    const dress = dressForFlight({ circle, label });
+    const landing = {
+      radius: endRadius,
+      fill: ringFill,
+      stroke: (isClickedNode && magnifierRadius) ? magnifierStroke : 'transparent',
+      fontPx: parseFloat((isClickedNode && magnifierRadius) ? magLabelSize : ringLabelSize) || 0
+    };
 
     animEntries.push({
       g,
       circle,
       label,
+      dress,
+      landing,
       translateX,
       translateY,
       rotDelta,
       startRadius: pn.r,
       endRadius,
-      pyramidFill: takeoffStyle ? takeoffStyle.fill : '',
-      pyramidStroke: takeoffStyle ? takeoffStyle.stroke : '',
-      pyramidFontSize: takeoffLabelStyle ? takeoffLabelStyle.fontSize : '',
+      pyramidFill: pyramidFillNow,
+      pyramidStroke: pyramidStrokeNow,
+      pyramidFontSize: pyramidFontNow,
       ringFill,
       ringStroke: (isClickedNode && magnifierRadius) ? magnifierStroke : 'transparent',
       // The clicked node's label grows to the magnifier's size; the rest to
@@ -565,14 +673,7 @@ export function animateIn(opts) {
       // brown fading into the ring brown, and the label growing into the
       // ring's type size — so the barrier's clone-for-real swap lands on
       // identical pixels, no pop.
-      a.circle.style.transition = `r ${durIn}ms ease-in-out, fill ${durIn}ms ease-in-out, stroke ${durIn}ms ease-in-out`;
-      if (a.startRadius !== a.endRadius) a.circle.setAttribute('r', a.endRadius);
-      a.circle.style.fill = a.ringFill;
-      a.circle.style.stroke = a.ringStroke;
-      if (a.ringFontSize && a.ringFontSize !== a.pyramidFontSize) {
-        a.label.style.transition = `font-size ${durIn}ms ease-in-out`;
-        a.label.style.fontSize = a.ringFontSize;
-      }
+      a.dress.to(a.landing, durIn);
     });
 
     // After animation ends: signal complete; clone retirement is the
@@ -651,14 +752,7 @@ export function animateOut(opts) {
       // Reverse radius AND the dress — the ring brown fades back into the
       // pyramid brown it took off in, the label back to its pyramid size,
       // mirroring the IN flight.
-      a.circle.style.transition = `r ${ANIM_DURATION}ms ease-in-out, fill ${ANIM_DURATION}ms ease-in-out, stroke ${ANIM_DURATION}ms ease-in-out`;
-      if (a.startRadius !== a.endRadius) a.circle.setAttribute('r', a.startRadius);
-      if (a.pyramidFill) a.circle.style.fill = a.pyramidFill;
-      if (a.pyramidStroke) a.circle.style.stroke = a.pyramidStroke;
-      if (a.pyramidFontSize && a.pyramidFontSize !== a.ringFontSize) {
-        a.label.style.transition = `font-size ${ANIM_DURATION}ms ease-in-out`;
-        a.label.style.fontSize = a.pyramidFontSize;
-      }
+      a.dress.to(null, ANIM_DURATION);
     });
 
     later(ANIM_DURATION, () => {
@@ -754,11 +848,14 @@ export function animateRingToSky(opts) {
     const skyFill = skyStyle ? skyStyle.fill : '';
     const skyStroke = skyStyle ? skyStyle.stroke : '';
     const skyFontSize = skyLabelStyle ? skyLabelStyle.fontSize : '';
+    let dress = null, landing = null;
     if (origin) {
       circle.style.fill = ringFill;
       circle.style.stroke = fromLens ? magnifierStroke : 'transparent';
       const takeoffSize = fromLens ? magLabelSize : ringLabelSize;
       if (takeoffSize) label.style.fontSize = takeoffSize;
+      dress = dressForFlight({ circle, label });
+      landing = { radius: pn.r, fill: skyFill, stroke: fromLens ? skyStroke : null, fontPx: parseFloat(skyFontSize) || 0 };
     }
     const dstRot = labelRotationDeg(pn.angle);
     let rotDelta = dstRot - srcRot;
@@ -766,20 +863,14 @@ export function animateRingToSky(opts) {
     while (rotDelta < -180) rotDelta += 360;
     g.style.transformOrigin = `${fromX}px ${fromY}px`;
     g.style.transform = 'translate(0px, 0px) rotate(0deg)';
-    entries.push({ g, circle, label, translateX: pn.x - fromX, translateY: pn.y - fromY, rotDelta, endRadius: pn.r, skyFill, skyStroke, skyFontSize, fromRing: Boolean(origin), fromLens });
+    entries.push({ g, circle, label, dress, landing, translateX: pn.x - fromX, translateY: pn.y - fromY, rotDelta, endRadius: pn.r, skyFill, skyStroke, skyFontSize, fromRing: Boolean(origin), fromLens });
   });
   overlay.getBoundingClientRect();
   afterPaint(() => {
     entries.forEach(e => {
       e.g.style.transition = `transform ${dur}ms ease-in-out`;
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px) rotate(${e.rotDelta}deg)`;
-      if (e.fromRing) {
-        e.circle.style.transition = `r ${dur}ms ease-in-out, fill ${dur}ms ease-in-out, stroke ${dur}ms ease-in-out`;
-        e.circle.setAttribute('r', e.endRadius);
-        if (e.skyFill) e.circle.style.fill = e.skyFill;
-        if (e.fromLens) e.circle.style.stroke = e.skyStroke || 'transparent';
-        if (e.skyFontSize) { e.label.style.transition = `font-size ${dur}ms ease-in-out`; e.label.style.fontSize = e.skyFontSize; }
-      }
+      if (e.fromRing && e.dress) e.dress.to(e.landing, dur);
     });
     later(dur, () => {
       _animating = false;
@@ -1590,10 +1681,8 @@ export function animateMagnifierToParent(opts) {
   afterPaint(() => {
     setTransition(g, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(g, `translate3d(${translateX}px, ${translateY}px, 0px)`);
-    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    circle.style.fill = dressM2P.radial; // orbital → radial: the vessel's dress
-    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    text.style.fill = dressM2P.groundInk; // landing on the ground, in its ink
+    crossfadeFill(circle, dressM2P.radial, ANIM_DURATION); // orbital → radial: the vessel's dress
+    crossfadeFill(text, dressM2P.groundInk, ANIM_DURATION); // landing on the ground, in its ink
 
     // Rotate to horizontal while translating to parent-label left offset.
     // 360° (instead of 0°) preserves the short interpolation path from
@@ -1698,10 +1787,8 @@ export function animateParentToMagnifier(opts) {
     const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
     setTransition(labelWrap, `transform ${durP2M}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${dstRotDeg}deg)`);
-    circle.style.transition = `fill ${durP2M}ms ease-in-out`;
-    circle.style.fill = dressP2M.orbital; // radial → orbital: entering the lens
-    text.style.transition = `fill ${durP2M}ms ease-in-out`;
-    text.style.fill = dressP2M.orbitalInk; // ground ink → lens ink
+    crossfadeFill(circle, dressP2M.orbital, durP2M); // radial → orbital: entering the lens
+    crossfadeFill(text, dressP2M.orbitalInk, durP2M); // ground ink → lens ink
 
     later(durP2M, () => {
       if (onComplete) onComplete();
@@ -1819,10 +1906,8 @@ export function animateVolumeParentMerge(opts) {
   afterPaint(() => {
     setTransition(moving, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(moving, `translate3d(${tx}px, ${ty}px, 0px)`);
-    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    circle.style.fill = dressMerge.radial; // the suffix's disc becomes the vessel
-    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    text.style.fill = dressMerge.groundInk; // the suffix lands on the ground
+    crossfadeFill(circle, dressMerge.radial, ANIM_DURATION); // the suffix's disc becomes the vessel
+    crossfadeFill(text, dressMerge.groundInk, ANIM_DURATION); // the suffix lands on the ground
 
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
@@ -1940,10 +2025,8 @@ export function animateVolumeParentUnmerge(opts) {
   afterPaint(() => {
     setTransition(moving, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(moving, `translate3d(${tx}px, ${ty}px, 0px)`);
-    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    circle.style.fill = dressUnmerge.orbital; // radial → orbital: back into the lens
-    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    text.style.fill = dressUnmerge.orbitalInk; // ground ink → lens ink
+    crossfadeFill(circle, dressUnmerge.orbital, ANIM_DURATION); // radial → orbital: back into the lens
+    crossfadeFill(text, dressUnmerge.orbitalInk, ANIM_DURATION); // ground ink → lens ink
 
     const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
@@ -2224,9 +2307,7 @@ export function animateStarsAway(opts) {
   afterPaint(() => {
     flights.forEach(f => {
       f.g.style.transition = `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`;
-      f.g.style.transform = `translate(${(f.star.to.x - f.star.x).toFixed(1)}px, ${(f.star.to.y - f.star.y).toFixed(1)}px)`;
-      f.circle.style.transition = `r ${dur}ms ease-in-out`;
-      f.circle.setAttribute('r', Math.max(1, (f.star.r || 6) * 0.5));
+      f.g.style.transform = `translate(${(f.star.to.x - f.star.x).toFixed(1)}px, ${(f.star.to.y - f.star.y).toFixed(1)}px) scale(0.5)`;
       f.g.style.opacity = '0';
     });
     later(dur, () => {
@@ -2273,7 +2354,7 @@ export function animateNodesEmerge(opts) {
     const circle = document.createElementNS(SVG_NS, 'circle');
     circle.setAttribute('cx', node.x);
     circle.setAttribute('cy', node.y);
-    circle.setAttribute('r', Math.max(1, node.radius * 0.4));
+    circle.setAttribute('r', node.radius);
     circle.setAttribute('class', 'focus-ring-node');
     g.appendChild(circle);
     const label = document.createElementNS(SVG_NS, 'text');
@@ -2299,7 +2380,7 @@ export function animateNodesEmerge(opts) {
     overlay.appendChild(g);
     // Start AT the sky: translated to the centroid, invisible.
     g.style.transformOrigin = `${node.x}px ${node.y}px`;
-    setTransform(g, `translate3d(${(node.from.x - node.x).toFixed(1)}px, ${(node.from.y - node.y).toFixed(1)}px, 0px)`);
+    setTransform(g, `translate3d(${(node.from.x - node.x).toFixed(1)}px, ${(node.from.y - node.y).toFixed(1)}px, 0px) scale(0.4)`);
     g.style.opacity = '0';
     flights.push({ g, circle, node });
   });
@@ -2309,10 +2390,8 @@ export function animateNodesEmerge(opts) {
   afterPaint(() => {
     flights.forEach(f => {
       setTransition(f.g, `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`);
-      setTransform(f.g, 'translate3d(0px, 0px, 0px)');
+      setTransform(f.g, 'translate3d(0px, 0px, 0px) scale(1)');
       f.g.style.opacity = '1';
-      f.circle.style.transition = `r ${dur}ms ease-in-out`;
-      f.circle.setAttribute('r', f.node.radius);
     });
     later(dur, () => {
       _animating = false;
