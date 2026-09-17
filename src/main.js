@@ -18,7 +18,7 @@ import { proofreadOverrideActive, declareVenues, isOnLan } from './core/lan-gate
 if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('gesturelog') === '1') {
   const box = document.createElement('div');
   box.id = 'frame-readout';
-  box.style.cssText = 'position:fixed;left:6px;bottom:6px;z-index:2147483647;font:12px/1.3 monospace;color:#fff;background:rgba(0,0,0,.72);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;';
+  box.style.cssText = 'position:fixed;left:6px;bottom:6px;z-index:2147483647;font:11px/1.25 monospace;color:#fff;background:rgba(0,0,0,.72);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;';
   box.textContent = 'frames: waiting for a drill';
   // A/B FLAGS FOR THE BENCH (O-160): &nowatermark=1 hides the watermark
   // image, &nosector=1 the whole sector — to read what each costs in frames.
@@ -34,7 +34,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   const history = [];
   window.__wheelFrameReport = r => {
     r.kind = window.__wheelFrameKind || '?';
-    history.unshift(r); if (history.length > 3) history.pop();
+    history.unshift(r); if (history.length > 6) history.pop(); // six drills: three each way in one screenshot
     box.textContent = history.map(h => `${h.kind.toUpperCase().padEnd(4)}${h.frames}f @${h.hz}Hz drop ${h.dropped} worst ${h.worst}\n    render ${h.renderMedian}/${h.renderMax} seek ${h.seekMedian}/${h.seekMax}`).join('\n');
     if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('frames', r);
   };
