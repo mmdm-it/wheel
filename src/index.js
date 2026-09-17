@@ -698,6 +698,24 @@ export function createApp({
     const selectedId = tempSelected?.id ?? null;
     const outgoingMagnifierId = prevSelected?.id ?? null;
 
+    // Ring nodes on the new ring that no star carries rise into their seats
+    // instead of appearing at landing (O-159 step four).
+    {
+      const carriedIn = new Set(pyramidNodes.map(pn => pn.item?.id ?? pn.id).filter(id => id != null));
+      const risers = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing)
+        .filter(n => n.item?.id != null && !carriedIn.has(n.item.id) && n.item.id !== tempSelected?.id)
+        .map(n => ({ ...n, label: formatLabel({ item: n.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: n.item })) }));
+      if (risers.length) {
+        animateStragglers({
+          svgRoot: view.contentGroup || view.svgRoot,
+          ringNodes: risers,
+          hubX: arcParams.hubX,
+          hubY: arcParams.hubY,
+          arrive: true
+        });
+      }
+    }
+
     animateIn({
       svgRoot: view.contentGroup || view.svgRoot,
       pyramidNodes,

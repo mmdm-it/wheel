@@ -2302,8 +2302,12 @@ export function topLayerIds() {
  *
  * @param {Object} opts — { svgRoot, ringNodes: [{ item, x, y, angle, radius, label, labelCentered }], hubX, hubY }
  */
+// AND THE MIRROR, arrive: true (O-159 step four): a ring node the drill in's
+// flights do not carry — no star for it in the sky it came from — rises into
+// its seat from a third of the way toward the hub, growing from half size and
+// fading in, instead of appearing at landing.
 export function animateStragglers(opts) {
-  const { svgRoot, ringNodes = [], hubX, hubY, onComplete, durationMs = null } = opts;
+  const { svgRoot, ringNodes = [], hubX, hubY, onComplete, durationMs = null, arrive = false } = opts;
   const dur = durationMs || ANIM_DURATION;
   const txn = txnArm();
   if (!svgRoot || ringNodes.length === 0) {
@@ -2346,16 +2350,17 @@ export function animateStragglers(opts) {
     g.appendChild(label);
     overlay.appendChild(g);
     g.style.transformOrigin = `${node.x}px ${node.y}px`;
-    setTransform(g, 'translate(0px, 0px) scale(1)');
-    g.style.opacity = '1';
-    entries.push({ g, tx: (hubX - node.x) / 3, ty: (hubY - node.y) / 3 });
+    const tx = (hubX - node.x) / 3, ty = (hubY - node.y) / 3;
+    setTransform(g, arrive ? `translate(${tx}px, ${ty}px) scale(0.5)` : 'translate(0px, 0px) scale(1)');
+    g.style.opacity = arrive ? '0' : '1';
+    entries.push({ g, tx, ty });
   });
   overlay.getBoundingClientRect();
   afterPaint(() => {
     entries.forEach(e => {
       setTransition(e.g, `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`);
-      setTransform(e.g, `translate(${e.tx}px, ${e.ty}px) scale(0.5)`);
-      e.g.style.opacity = '0';
+      setTransform(e.g, arrive ? 'translate(0px, 0px) scale(1)' : `translate(${e.tx}px, ${e.ty}px) scale(0.5)`);
+      e.g.style.opacity = arrive ? '1' : '0';
     });
     later(dur, () => {
       if (onComplete) onComplete();
