@@ -1,29 +1,37 @@
-// THE ANGLE OF THE STROKE DECIDES (O-142): along the ring turns, across it drills.
+// THE COMPASS DECIDES (O-152): Howell's bands for rotate and drill, with dead
+// zones between them, on the Moto G 2025's page area (Northwest = 331°).
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { strokeKind, radialAt } from '../src/core/stroke.js';
+import { bearingOf, diagonalLean, compassBands, classifyBearing, axisFor } from '../src/core/stroke.js';
 
-// A hub far to the right; the finger comes down straight left of it, so the
-// radial points left (-1, 0) and the tangent is vertical.
-const r = radialAt(100, 500, 1000, 500);
-
-describe('the angle of the stroke (O-142)', () => {
-  it('the radial unit points from the hub through the finger', () => {
-    assert.deepEqual(r, { rx: -1, ry: 0 });
-    assert.equal(radialAt(5, 5, 5, 5), null, 'at the hub there is no direction');
+describe('the compass decides (O-152)', () => {
+  it('bearings are a compass on the glass: north up, clockwise', () => {
+    assert.equal(bearingOf(0, -10), 0);
+    assert.equal(bearingOf(10, 0), 90);
+    assert.equal(bearingOf(0, 10), 180);
+    assert.equal(bearingOf(-10, 0), 270);
   });
-  it('along the ring turns; across it drills, outward in, inward out', () => {
-    assert.equal(strokeKind({ vx: 0, vy: 40, ...r }), 'rotate', 'straight along the tangent');
-    assert.equal(strokeKind({ vx: -40, vy: 0, ...r }), 'outward', 'away from the hub');
-    assert.equal(strokeKind({ vx: 40, vy: 0, ...r }), 'inward', 'toward the hub');
+  it('the Moto G page area leans 29° and gives Howell\'s bands', () => {
+    const d = diagonalLean(720, 1314);
+    assert.ok(Math.abs(d - 28.7) < 0.1);
+    const b = compassBands(29);
+    assert.deepEqual(b.cw, [321, 341]);
+    assert.deepEqual(b.out, [351, 131]);
+    assert.deepEqual(b.ccw, [141, 161]);
+    assert.deepEqual(b.in, [171, 311]);
   });
-  it('the ambiguous diagonal turns, and the lean is the dial', () => {
-    assert.equal(strokeKind({ vx: -30, vy: 30, ...r }), 'rotate', '45° is short of the 50° lean');
-    assert.equal(strokeKind({ vx: -30, vy: 30, ...r, drillDeg: 40 }), 'outward', 'a lower lean lets the diagonal drill');
-    assert.equal(strokeKind({ vx: -40, vy: 20, ...r }), 'outward', '63° off the tangent drills');
+  it('each band decides its action, and the dead zones decide nothing', () => {
+    const at = x => classifyBearing(x, 29);
+    for (const x of [321, 331, 341]) assert.equal(at(x), 'cw', `${x}`);
+    for (const x of [141, 151, 161]) assert.equal(at(x), 'ccw', `${x}`);
+    for (const x of [351, 0, 61, 90, 131]) assert.equal(at(x), 'out', `${x}`);
+    for (const x of [171, 180, 241, 270, 311]) assert.equal(at(x), 'in', `${x}`);
+    for (const x of [345, 135, 165, 315]) assert.equal(at(x), null, `${x} is dead`);
   });
-  it('a stroke of no length decides nothing', () => {
-    assert.equal(strokeKind({ vx: 0, vy: 0, ...r }), null);
-    assert.equal(strokeKind({ vx: 1, vy: 1, rx: NaN, ry: 0 }), null);
+  it('a stroke measures along its own axis, the two axes at right angles', () => {
+    const cw = axisFor('cw', 29), out = axisFor('out', 29);
+    assert.ok(Math.abs(cw.ux * out.ux + cw.uy * out.uy) < 1e-9, 'perpendicular');
+    assert.ok(cw.ux < 0 && cw.uy < 0, 'clockwise points up and to the left');
+    assert.ok(out.ux > 0 && out.uy < 0, 'drill out points up and to the right');
   });
 });

@@ -6,7 +6,7 @@ import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues } from './core/lan-gate.js';
 import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
-import { strokeKind, radialAt } from './core/stroke.js';
+import { bearingOf, diagonalLean, classifyBearing, axisFor } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -2818,64 +2818,50 @@ function wireInteractions(getApp) {
     return nearest;
   };
 
-  // THE PARENT BUTTON SWIPES TOO (O-131, Howell 2026-09-14): "Keep the
-  // existing tap to migrate the Parent Button Node into the Magnifier, but add
-  // a swipe feature that causes the same migration by swiping vertically
-  // between the Parent Button and Magnifier." A press on the parent vessel
-  // (or its words) is watched: travel UP past the threshold, more up than
-  // across, fires the vessel's own click handler once — the same migration
-  // as the tap, by the same door — and the native click that follows the
-  // release is swallowed so it cannot fire twice. A press that never travels
-  // is the tap it always was.
-  const PARENT_SWIPE_PX = 28;
-  let parentSwipe = null;          // { el, startX, startY, fired } while a press on the parent is held
+  // THE PARENT BUTTON AND THE LENS SWIPE (O-131, O-132) — their own
+  // screen-vertical swipes are superseded by the compass below (O-152); a
+  // press on either is still its control's tap if it never travels, and the
+  // click that follows a stroke is swallowed by these timestamps.
   let parentSwipeFiredAt = 0;
-  // AND THE LENS SWIPES DOWN (O-132, Howell 2026-09-14): a press on the
-  // magnifier that travels DOWN toward the parent button drills IN — into the
-  // sky's LARGEST node, the most-read child, "the big node is the door".
-  // The pair is bi-directional: up out of a book, down into its most-read
-  // chapter, down again into its most-read verse.
-  let lensSwipe = null;            // { startX, startY, fired } while a press on the lens is held
-  // THE ANGLE OF THE STROKE DECIDES (O-142, Howell 2026-09-15): "Angle of
-  // swipe determines DRILL or ROTATE, anywhere in the viewport." A drag that
-  // begins anywhere off the controls is undecided for its first DECIDE_PX:
-  // the ring holds still while the stroke declares itself. Along the ring's
-  // curve it turns, and the held-back turn is paid at once; across the ring
-  // it drills — outward (away from the hub) IN, into the sky's largest node,
-  // inward OUT — scrubbed by the finger from there, over the same travel as
-  // the lens and parent swipes. Where nothing can be drilled (no sky, no
-  // parent) the stroke turns.
+  // THE COMPASS DECIDES (O-152, Howell 2026-09-16), superseding O-142's angle
+  // to the hub and the lens's and parent's own screen-vertical swipes (O-131,
+  // O-132). Every drag on the glass — open ground, a ring node, the verse
+  // panel, the lens, the parent button — is undecided for its first
+  // DECIDE_PX, the ring holding still; then its compass bearing decides, by
+  // the bands in src/core/stroke.js: Northwest ± 10° turns the ring
+  // clockwise, Southeast ± 10° counter-clockwise, the 140° through north and
+  // east drills OUT, the 140° through south and west drills IN, and the four
+  // 10° gaps between them do nothing until the finger lifts. At a leaf a
+  // drill in does nothing; at the top a drill out does nothing. Once decided,
+  // a stroke is measured only along its own axis. A press that never travels
+  // DECIDE_PX is the tap it always was. The pyramid's stars still drill on
+  // touch.
   const DECIDE_PX = 14;            // the stroke declares itself here; the ring waits that long
-  const DRILL_DEG = 50;            // lean off the tangent that makes a drill (short of it turns)
-  let stroke = null;               // { x0, y0, rx, ry, decided, pendingDelta } for the drag under way
-  let freeDrill = null;            // { kind, x0, y0, rx, ry, ctl, travel, e, undo } — a drill the stroke began
-  const hubOnGlass = () => {
-    try {
-      const rect = svg.getBoundingClientRect();
-      const arc = getArcParameters(viewport);
-      return { x: rect.left + arc.hubX, y: rect.top + arc.hubY };
-    } catch (_) { return null; }
-  };
+  let stroke = null;               // { x0, y0, decided, pendingDelta, dead } for the drag under way
+  let freeDrill = null;            // { kind, x0, y0, ux, uy, ctl, travel, e, undo } — a drill a stroke began
+  let controlPress = null;         // { x0, y0, isParent, dead } — a press on the lens or the parent button
+  const lean = () => diagonalLean(viewport?.width, viewport?.height);
+  const ROTATE_GAIN = Math.SQRT2;  // a stroke along the Northwest axis turns the ring as the old diagonal drag did
   const freeDrillProgress = (fd, event) => {
-    const vx = event.clientX - fd.x0, vy = event.clientY - fd.y0;
-    const radial = vx * fd.rx + vy * fd.ry;
-    const travelled = fd.kind === 'outward' ? radial : -radial;
+    const travelled = (event.clientX - fd.x0) * fd.ux + (event.clientY - fd.y0) * fd.uy;
     return Math.max(0, Math.min(1, (travelled - DECIDE_PX) / Math.max(40, fd.travel - DECIDE_PX)));
   };
-  // Begin a drill from a free stroke; false when there is nothing to drill.
-  const beginFreeDrill = (kind, event) => {
+  // Begin a drill from a stroke that started at (x0, y0); false when there is
+  // nothing to drill that way — which the compass rule reads as nothing at all.
+  const beginFreeDrill = (kind, event, x0, y0) => {
     const app = getApp();
-    if (!app || !stroke) return false;
-    const fd = { kind, x0: stroke.x0, y0: stroke.y0, rx: stroke.rx, ry: stroke.ry, e: 0 };
-    if (kind === 'outward') {
+    if (!app) return false;
+    const axis = axisFor(kind, lean());
+    const fd = { kind, x0, y0, ux: axis.ux, uy: axis.uy, e: 0 };
+    if (kind === 'in') {
       const idx = app.largestPyramidIndex?.() ?? -1;
-      if (idx < 0) return false;
+      if (idx < 0) return false;   // a leaf: nothing below
       fd.undo = () => { const p = app.view?.parentButtonOuter; if (typeof p?.onclick === 'function') p.onclick(event); };
       logTap('stroke-drill-in', { idx });
       beginDrill(fd, app, () => app.handlePyramidNodeClick(idx));
     } else {
       const p = app.view?.parentButtonOuter;
-      if (typeof p?.onclick !== 'function') return false;
+      if (typeof p?.onclick !== 'function') return false;   // the top: nothing above
       const wasAt = app.nav?.getCurrent?.() || null;
       fd.undo = () => { if (wasAt) app.drillIntoItem?.(wasAt); };
       logTap('stroke-drill-out', {});
@@ -2899,7 +2885,6 @@ function wireInteractions(getApp) {
     const d = Math.hypot((a.left + a.width / 2) - (b.left + b.width / 2), (a.top + a.height / 2) - (b.top + b.height / 2));
     return Math.max(80, d);
   };
-  const drillProgress = (sw, travelled) => Math.max(0, Math.min(1, (travelled - PARENT_SWIPE_PX) / Math.max(40, sw.travel - PARENT_SWIPE_PX)));
   // Begin a scrubbed drill through `launch` (the tap's own path). If nothing
   // took off — the guards spoke, no sky — the scrub is forgotten and the
   // gesture is over.
@@ -2915,36 +2900,31 @@ function wireInteractions(getApp) {
       freeDrill.ctl.scrubTo(freeDrill.e);
       return;
     }
-    if (lensSwipe) {
-      const down = event.clientY - lensSwipe.startY;
-      const across = Math.abs(event.clientX - lensSwipe.startX);
-      if (!lensSwipe.fired && down >= PARENT_SWIPE_PX && down > across) {
-        lensSwipe.fired = true;
-        lensSwipeFiredAt = Date.now();
-        const app = getApp();
-        const idx = app?.largestPyramidIndex?.() ?? -1;
-        logTap('lens-swipe', { down: Math.round(down), idx });
-        if (idx >= 0 && app) {
-          lensSwipe.undo = () => { const p = app.view?.parentButtonOuter; if (typeof p?.onclick === 'function') p.onclick(event); };
-          beginDrill(lensSwipe, app, () => app.handlePyramidNodeClick(idx));
-        }
+    if (controlPress) {
+      if (controlPress.dead) return;
+      const vx = event.clientX - controlPress.x0, vy = event.clientY - controlPress.y0;
+      if (Math.hypot(vx, vy) < DECIDE_PX) return;
+      const press = controlPress;
+      const kind = classifyBearing(bearingOf(vx, vy), lean());
+      logTap('control-stroke', { kind, parent: press.isParent });
+      // Whatever it decides, the press is no longer a tap on its control.
+      if (press.isParent) parentSwipeFiredAt = Date.now(); else lensSwipeFiredAt = Date.now();
+      if (kind === 'cw' || kind === 'ccw') {
+        controlPress = null;
+        isDragging = true; recentMoves = []; gestureTravelPx = Math.hypot(vx, vy);
+        lastX = event.clientX; lastY = event.clientY; lastTime = event.timeStamp;
+        stroke = { x0: press.x0, y0: press.y0, decided: true, pendingDelta: 0 };
+        const axis = axisFor('cw', lean());
+        getApp()?.choreographer?.rotate((vx * axis.ux + vy * axis.uy) * sensitivity * ROTATE_GAIN);
+        return;
       }
-      if (lensSwipe.ctl) { lensSwipe.e = drillProgress(lensSwipe, down); lensSwipe.ctl.scrubTo(lensSwipe.e); }
-      return;
-    }
-    if (parentSwipe) {
-      const up = parentSwipe.startY - event.clientY;
-      const across = Math.abs(event.clientX - parentSwipe.startX);
-      if (!parentSwipe.fired && up >= PARENT_SWIPE_PX && up > across) {
-        parentSwipe.fired = true;
-        parentSwipeFiredAt = Date.now();
-        logTap('parent-swipe', { up: Math.round(up), across: Math.round(across) });
-        const app = getApp();
-        const wasAt = app?.nav?.getCurrent?.() || null;
-        parentSwipe.undo = () => { if (wasAt) app?.drillIntoItem?.(wasAt); };
-        beginDrill(parentSwipe, app, () => { if (typeof parentSwipe.el.onclick === 'function') parentSwipe.el.onclick(event); });
+      if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, press.x0, press.y0)) {
+        controlPress = null;
+        freeDrill.e = freeDrillProgress(freeDrill, event);
+        freeDrill.ctl.scrubTo(freeDrill.e);
+        return;
       }
-      if (parentSwipe.ctl) { parentSwipe.e = drillProgress(parentSwipe, up); parentSwipe.ctl.scrubTo(parentSwipe.e); }
+      press.dead = true;   // a dead zone, or nothing to drill that way: nothing until lift
       return;
     }
     if (!isDragging) return;
@@ -2958,7 +2938,9 @@ function wireInteractions(getApp) {
     lastTime = event.timeStamp;
 
     const distance = Math.abs(dx) + Math.abs(dy);
-    const delta = -(dx + dy) * sensitivity;
+    // Only movement along the rotation axis turns the ring (O-152).
+    const rotAxis = axisFor('cw', lean());
+    const delta = (dx * rotAxis.ux + dy * rotAxis.uy) * sensitivity * ROTATE_GAIN;
     const t = event.timeStamp;
     recentMoves.push({ t, dist: distance, delta });
     while (recentMoves.length && t - recentMoves[0].t > VELOCITY_WINDOW_MS) recentMoves.shift();
@@ -2981,18 +2963,21 @@ function wireInteractions(getApp) {
       dt,
       dragging: isDragging
     });
-    // The stroke declares itself (O-142): until DECIDE_PX the turn is held
-    // back; then along the ring it is paid at once and the drag goes on as
-    // ever, across the ring the drag becomes a drill and the ring is left.
+    // The stroke declares itself (O-152): until DECIDE_PX the turn is held
+    // back; then the compass decides — a turn pays the held-back turn at
+    // once, a drill leaves the ring, a dead zone does nothing until lift.
+    if (stroke && stroke.dead) return;
     if (stroke && !stroke.decided) {
       stroke.pendingDelta += delta;
       const vx = event.clientX - stroke.x0, vy = event.clientY - stroke.y0;
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
-      const kind = Number.isFinite(stroke.rx) ? strokeKind({ vx, vy, rx: stroke.rx, ry: stroke.ry, drillDeg: DRILL_DEG }) : 'rotate';
+      const kind = classifyBearing(bearingOf(vx, vy), lean());
       logTap('stroke-decided', { kind });
-      if (kind !== 'rotate' && beginFreeDrill(kind, event)) { isDragging = false; return; }
-      app.choreographer.rotate(stroke.pendingDelta);
+      if (kind === 'cw' || kind === 'ccw') { app.choreographer.rotate(stroke.pendingDelta); return; }
+      pendingTapNode = null; pendingAdvanceTap = false;
+      if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, stroke.x0, stroke.y0)) { isDragging = false; return; }
+      stroke.dead = true;
       return;
     }
     app.choreographer.rotate(delta);
@@ -3075,11 +3060,12 @@ function wireInteractions(getApp) {
       // capture goes on the CIRCLE, so a plain tap's click still lands on it.
       const parentEl = event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label') ? app.view?.parentButtonOuter : null;
       if (parentEl && typeof parentEl.onclick === 'function') {
-        parentSwipe = { el: parentEl, startX: event.clientX, startY: event.clientY, fired: false };
+        // The parent's vessel: its stroke is decided by the compass (O-152).
+        controlPress = { x0: event.clientX, y0: event.clientY, isParent: true, dead: false };
         try { parentEl.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
       } else if (!searchRestore && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label')) {
-        // The lens itself (not the parent's vessel, not in search): watch for the down-swipe (O-132).
-        lensSwipe = { startX: event.clientX, startY: event.clientY, fired: false };
+        // The lens (not in search): its stroke is decided by the compass (O-152).
+        controlPress = { x0: event.clientX, y0: event.clientY, isParent: false, dead: false };
         try { app.view?.magnifierCircle?.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
       }
       return;
@@ -3147,11 +3133,7 @@ function wireInteractions(getApp) {
     recentMoves = [];
     gestureTravelPx = 0;
     pointerCaptured = false;
-    {
-      const hub = hubOnGlass();
-      const rad = hub ? radialAt(event.clientX, event.clientY, hub.x, hub.y) : null;
-      stroke = { x0: event.clientX, y0: event.clientY, rx: rad ? rad.rx : NaN, ry: rad ? rad.ry : NaN, decided: false, pendingDelta: 0 };
-    }
+    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false };
     trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
     trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
     publishTrace();
@@ -3177,8 +3159,7 @@ function wireInteractions(getApp) {
         const commit = type !== 'pointercancel' && sw.e >= 0.5;
         sw.ctl.release(commit, { onAbort: () => { if (app && typeof sw.undo === 'function') app.withInstantMigration(sw.undo); } });
       };
-      if (parentSwipe) { if (type !== 'pointerleave') { releaseDrill(parentSwipe); parentSwipe = null; } }
-      if (lensSwipe) { if (type !== 'pointerleave') { releaseDrill(lensSwipe); lensSwipe = null; } }
+      if (controlPress && type !== 'pointerleave') controlPress = null;
       if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill); freeDrill = null; } }
       if (type !== 'pointerleave') stroke = null;
       // v0 parity: only snap after real drags. For taps/clicks, let the
