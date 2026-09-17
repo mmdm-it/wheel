@@ -769,36 +769,52 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // The cure is the same one E3 used a level up: the sky is drawn from the
   // very seats the ring holds, so the two cannot disagree and a tap always
   // finds its verse. Without a chart it falls back to the file, unchanged.
-  const verseItemsForChapter = chapterItem => {
-    if (!chapterItem) return [];
-    // THE SKY IS DRAWN FROM THE SEATS THE RING HOLDS (E3 of W-21), and under
-    // the wall there is no second source to fall back to.
-    //
-    // This used to ask whether a legacy chart had been fetched and, if not,
-    // read the container's file instead — the two-source arrangement that let
-    // the ring and the sky disagree, which is the defect E3 exists for. There
-    // is one source now: the same chain the ring is built from.
-    const edition = options?.activeEdition || options?.translation || null;
-    // Only a chain built for THIS edition may answer for a chapter's verses
-    // (the same guard the chain accessor keeps; the cache is edition-keyed).
-    const chain = (verseChainItems && verseChainEdition === edition) ? verseChainItems : buildBibleVerseChain(manifest, { edition }).items;
-    const wanted = chapterItem.id;
-    const seats = [];
+  // THE SKY IS DRAWN FROM THE SEATS THE RING HOLDS (E3 of W-21), and under
+  // the wall there is no second source to fall back to: the same chain the
+  // ring is built from, built for THIS edition only.
+  //
+  // AND IT COMES FROM AN INDEX, NOT A WALK OF THE VOLUME (O-156, from the
+  // bench gesture log: collecting a chapter's verses for the sky took
+  // 70–228 ms and ran twice per drill). This walked the whole volume's verse
+  // chain — tens of thousands of seats — for every chapter asked, and when
+  // the kept chain belonged to another edition or none it REBUILT the chain
+  // and threw it away. The chain is now kept per edition (the cache the verse
+  // ring reads) and indexed by chapter in one pass; a chapter's verses are a
+  // lookup. The items returned are fresh objects each call, as before.
+  let verseIndex = null;          // { edition, chain, byChapter: Map<chapterId, seat[]> }
+  // The ring's own cache is NOT written here: an edition's reseat reads the
+  // previous edition's chain from it as its starting position, and a sky
+  // drawn in between must not replace that under it. The index keeps its own
+  // chain when the ring's belongs to another edition.
+  const verseIndexFor = edition => {
+    const ringChain = (verseChainItems && verseChainEdition === edition) ? verseChainItems : null;
+    if (verseIndex && verseIndex.edition === edition && (ringChain === null || verseIndex.chain === ringChain)) return verseIndex;
+    const chain = ringChain || buildBibleVerseChain(manifest, { edition }).items;
+    const byChapter = new Map();
     for (const it of chain) {
       if (!it || it.level !== 'verse') continue;
-      if (it.meta?.chapterId !== wanted && it.chapterKey !== wanted) continue;
-      seats.push({
-        id: it.id,
-        name: it.name,
-        order: seats.length,
-        parentId: chapterItem.id,
-        level: 'verse',
-        meta: { ...it.meta, chapterId: chapterItem.id }
-      });
+      const keys = [it.meta?.chapterId, it.chapterKey].filter((k, i, a) => k != null && a.indexOf(k) === i);
+      for (const key of keys) {
+        let list = byChapter.get(key);
+        if (!list) { list = []; byChapter.set(key, list); }
+        list.push(it);
+      }
     }
-    // A container the edition does not seat has no verses, and that is the
-    // honest answer rather than a blank to be filled from elsewhere.
-    return seats;
+    verseIndex = { edition, chain, byChapter };
+    return verseIndex;
+  };
+  const verseItemsForChapter = chapterItem => {
+    if (!chapterItem) return [];
+    const edition = options?.activeEdition || options?.translation || null;
+    const list = verseIndexFor(edition).byChapter.get(chapterItem.id) || [];
+    return list.map((it, order) => ({
+      id: it.id,
+      name: it.name,
+      order,
+      parentId: chapterItem.id,
+      level: 'verse',
+      meta: { ...it.meta, chapterId: chapterItem.id }
+    }));
   };
 
   const parentHandler = ({ selected, app }) => {
