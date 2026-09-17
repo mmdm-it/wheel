@@ -301,6 +301,69 @@ export function beginScrubbedMigration(root) {
     cancel() { if (_scrub === scrub && !scrub.launching && !scrub.anims.length && !scrub.completions.length) _scrub = null; }
   };
 }
+/**
+ * WARM THE FLIGHTS BEFORE THE READER NEEDS THEM (O-155, Howell 2026-09-16,
+ * "go"). The gesture log showed the first four drills after a load taking
+ * 199–335 ms to set up and every later one 21–56 ms: first-time work in the
+ * browser — styles resolved, transitions started, animations caught, and the
+ * code that does it compiled. This does the same work once, invisibly, on a
+ * batch of throwaway clones dressed as ring and sky nodes, in an overlay at
+ * zero opacity that takes no touches, and removes it. Skipped while anything
+ * is flying or held. Resolves when done.
+ */
+export function warmUpFlights(svgRoot, { count = 120 } = {}) {
+  return new Promise(resolve => {
+    if (!svgRoot || typeof document === 'undefined' || _animating || _scrub || _txn) { resolve(false); return; }
+    const overlay = document.createElementNS(SVG_NS, 'g');
+    overlay.setAttribute('class', 'migration-animation-overlay warm-up');
+    overlay.style.opacity = '0';
+    overlay.style.pointerEvents = 'none';
+    svgRoot.appendChild(overlay);
+    const rootStyle = typeof getComputedStyle === 'function' ? getComputedStyle(svgRoot) : null;
+    void (rootStyle && rootStyle.getPropertyValue('--color-orbital'));
+    const entries = [];
+    for (let i = 0; i < count; i += 1) {
+      const g = document.createElementNS(SVG_NS, 'g');
+      g.setAttribute('class', 'migration-node');
+      const circle = document.createElementNS(SVG_NS, 'circle');
+      circle.setAttribute('cx', 10 + (i % 12) * 20);
+      circle.setAttribute('cy', 10 + Math.floor(i / 12) * 20);
+      circle.setAttribute('r', 8);
+      circle.setAttribute('class', i % 2 ? 'child-pyramid-node' : 'focus-ring-node');
+      const label = document.createElementNS(SVG_NS, 'text');
+      label.setAttribute('class', i % 2 ? 'child-pyramid-label' : 'focus-ring-label');
+      label.setAttribute('transform', `rotate(${i * 3}, 0, 0)`);
+      label.textContent = String(i + 1);
+      g.appendChild(circle);
+      g.appendChild(label);
+      overlay.appendChild(g);
+      if (typeof getComputedStyle === 'function') { const cs = getComputedStyle(circle); void cs.fill; void getComputedStyle(label).fontSize; }
+      setTransform(g, 'translate(0px, 0px) rotate(0deg)');
+      entries.push({ g, circle, label });
+    }
+    overlay.getBoundingClientRect();
+    const cleanUp = () => { try { overlay.remove(); } catch (e) { /* gone */ } resolve(true); };
+    requestAnimationFrame(() => {
+      if (_animating || _scrub) { cleanUp(); return; }
+      entries.forEach((e, i) => {
+        setTransition(e.g, `transform ${ANIM_DURATION}ms ease-in-out`);
+        setTransform(e.g, `translate(${(i % 7) * 5}px, ${(i % 5) * 5}px) rotate(${i}deg)`);
+        e.circle.style.transition = `r ${ANIM_DURATION}ms ease-in-out, fill ${ANIM_DURATION}ms ease-in-out`;
+        e.circle.setAttribute('r', 5);
+        e.circle.style.fill = '#000';
+        e.label.style.transition = `font-size ${ANIM_DURATION}ms ease-in-out`;
+        e.label.style.fontSize = '9px';
+      });
+      let anims = [];
+      try { anims = typeof overlay.getAnimations === 'function' ? overlay.getAnimations({ subtree: true }) : []; } catch (e) { anims = []; }
+      anims.forEach(a => {
+        try { a.pause(); a.effect?.updateTiming?.({ easing: 'linear' }); a.currentTime = 300; a.currentTime = 600; a.cancel(); } catch (e) { /* warm-up only */ }
+      });
+      requestAnimationFrame(cleanUp);
+    });
+  });
+}
+
 /** True while a drill is under a finger (O-138). */
 export function isScrubbing() { return Boolean(_scrub); }
 /**

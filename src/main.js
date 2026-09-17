@@ -28,7 +28,7 @@ if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.loc
   window.addEventListener('pagehide', flush);
   window.__tapDebugLog('gesturelog-on', { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio, ua: navigator.userAgent.slice(0, 60) });
 }
-import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
+import { beginScrubbedMigration, scrubDriver, warmUpFlights } from './view/migration-animation.js';
 import { bearingOf, diagonalLean, classifyBearing, axisFor } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
@@ -4230,6 +4230,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // used to be the one exception to a launch funnel that no longer exists.
   showVersion();
   performance.mark('wheel:render-done');
+  // Warm the drill's flights once the first screen has settled (O-155), so a
+  // new reader's first drill starts as quickly as their tenth.
+  if (!transit && typeof window !== 'undefined') {
+    const warm = () => { const t = performance.now(); warmUpFlights(app?.flightRoot?.() || null).then(done => { if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('warm-up', { done, ms: Math.round(performance.now() - t) }); }); };
+    if (typeof window.requestIdleCallback === 'function') window.requestIdleCallback(warm, { timeout: 2500 }); else setTimeout(warm, 1200);
+  }
   recordBootPhases(volume);
   if (options.debug) mountFeelHud();
   mountProbe(); // inert unless ?probe=1 — field diagnostics to the drop box
