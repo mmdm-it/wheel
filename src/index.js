@@ -622,6 +622,10 @@ export function createApp({
         onAbort: () => { journey.revert(); detailSectorShown = false; }
       });
       if (!scrubbed) journey.play(opened);
+      // THE TEXT ARRIVES UNDER THE FINGER TOO (O-159 step three): the host is
+      // told a held drill is bringing a leaf in, while the scrub is still
+      // open, so it can hand its reading panels to the same clock.
+      else if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('detail-sector-arriving'));
     }
 
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.

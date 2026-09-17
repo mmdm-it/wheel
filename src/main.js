@@ -2358,6 +2358,32 @@ function marginDebug(line) {
 // Toggle detail panel visibility in sync with the Detail Sector animation.
 // The panel fades in after the blue circle has finished expanding,
 // and hides immediately when the circle begins collapsing.
+// THE TEXT ARRIVES LAST, UNDER THE FINGER (O-159 step three, Howell
+// 2026-09-17). On a held drill into a leaf, the verse, its notes and the
+// manuscript key used to fade in over 0.35 s only after the drill landed —
+// a separate event after the ballet. Their content is drawn at the commit,
+// so they now fade in over the last third of the swipe on the scrub's clock,
+// as the circle finishes opening; the landing's own "visible" class then
+// takes over at full opacity, and a spring-back leaves them hidden.
+window.addEventListener('detail-sector-arriving', () => {
+  const panels = [detailPanel, marginPanel, marginMarks].filter(Boolean);
+  if (!panels.length) return;
+  const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; });
+  scrubDriver(600, t => {
+    const o = Math.max(0, Math.min(1, (t - 2 / 3) * 3));
+    panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
+  }, {
+    onCommit: () => {
+      panels.forEach(el => { el.style.opacity = '1'; });
+      requestAnimationFrame(() => requestAnimationFrame(clear));
+    },
+    onAbort: () => {
+      panels.forEach(el => { el.style.opacity = '0'; });
+      requestAnimationFrame(() => requestAnimationFrame(clear));
+    }
+  });
+});
+
 window.addEventListener('detail-sector-change', (e) => {
   const { visible } = e.detail || {};
   // THE TEXT LEAVES UNDER THE FINGER (O-151 step two, Howell 2026-09-16: "All
