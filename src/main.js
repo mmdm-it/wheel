@@ -2427,20 +2427,29 @@ window.addEventListener('detail-sector-change', (e) => {
   //
   // AND IT LEAVES BY MOVING, NOT FADING (O-161, Howell 2026-09-17: fades are
   // "a cheat" against the grammar — everything but the two vessel rings
-  // MOVES with the thumb along the drill axis). The verse, its notes and the
-  // key are the sector's contents, and the sector is folding back into its
-  // badge in the corner; so the text folds with it — one block, shrinking
-  // toward the badge's centre over the whole swipe, at full ink until the
-  // landing takes it. A fade remains only where no badge is known.
+  // MOVES with the thumb along the drill axis, and all of it in the SAME
+  // direction: the ring's nodes flow to the sky, the sky's off screen toward
+  // the hub, and the text LEADS them). So the verse, its notes and the key
+  // leave as one block toward the hub — off the screen's corner — shrinking
+  // as they go, at full ink, and are gone by two-thirds of the swipe, ahead
+  // of the nodes. A fade remains only where no hub is known.
   const panels = [detailPanel, marginPanel, marginMarks].filter(Boolean);
-  const badge = e.detail?.badge || null;
+  const hub = e.detail?.hub || null;
   if (!visible && panels.length) {
-    const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; el.style.transform = ''; el.style.transformOrigin = ''; el.style.willChange = ''; });
-    if (badge) panels.forEach(el => { el.style.transformOrigin = `${badge.x}px ${badge.y}px`; el.style.willChange = 'transform'; });
+    const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; el.style.transform = ''; el.style.willChange = ''; });
+    let leave = null;
+    if (hub && Number.isFinite(hub.x) && Number.isFinite(hub.y)) {
+      const vw = window.innerWidth, vh = window.innerHeight;
+      const dx = hub.x - vw / 2, dy = hub.y - vh / 2, len = Math.hypot(dx, dy) || 1;
+      const travel = Math.hypot(vw, vh) * 1.1;   // clear of the screen along the hub's line
+      leave = { ux: dx / len, uy: dy / len, travel };
+      panels.forEach(el => { el.style.willChange = 'transform'; });
+    }
     const scrubbed = scrubDriver(600, t => {
-      if (badge) {
-        const k = 1 - 0.88 * t;                     // to 12% — the badge's size against the sector's
-        panels.forEach(el => { el.style.transition = 'none'; el.style.transform = `scale(${k})`; });
+      if (leave) {
+        const p = Math.min(1, t / 0.66);          // leads: gone by two-thirds of the swipe
+        const k = 1 - 0.6 * p;
+        panels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
       } else {
         const o = Math.max(0, 1 - t * 3);
         panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
