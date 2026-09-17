@@ -716,6 +716,10 @@ export function createApp({
         // Keep a visual gap under the magnifier: the node currently inside
         // the magnifier should not animate outward as part of ring clones.
         skipId: outgoingMagnifierId,
+        // THE SAME LENGTH AS EVERY OTHER FLIGHT (O-159 step two): at its own
+        // 900 ms, a held drill saw every other element finish at two-thirds
+        // of the swipe while the departing ring travelled on alone.
+        durationMs: 600,
         nodesGroup: view.nodesGroup,
         labelsGroup: view.labelsGroup
       });
