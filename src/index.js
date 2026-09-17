@@ -11,7 +11,7 @@ import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
-import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth } from './view/migration-animation.js';
+import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth, topLayerIds, animateStragglers } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
 
@@ -848,6 +848,11 @@ export function createApp({
     // or implied beyond it, so they can fly to the new sky's seats below.
     const noLayerToReverse = getStackDepth() === 0;
     const departingLensId = nav.getCurrent()?.id ?? null;
+    // The ring nodes on screen, and which of them the reversal will carry
+    // (O-151 step five): the rest fade as they go.
+    const onScreenRing = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
+      .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: node.item })) }));
+    const layerIds = noLayerToReverse ? null : new Set(topLayerIds());
     const departingRing = noLayerToReverse
       ? calculateAllNodePositions(normalizedItems, vp, rotation, nodeRadius, nodeSpacing)
         .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }) }))
@@ -970,6 +975,25 @@ export function createApp({
     // No layer to reverse: animateOut completed at once and the commit above
     // has painted the new sky — hide it again and fly the departing ring's
     // seats into it (O-141).
+    // Ring nodes neither flight carries fade into the sky instead of
+    // vanishing (O-151 step five).
+    {
+      const carried = noLayerToReverse
+        ? new Set((lastPyramidData?.nodes || []).map(n => n.item?.id ?? n.id))
+        : layerIds;
+      const stragglers = onScreenRing.filter(n => {
+        const id = n.item?.id;
+        return id != null && id !== departingLensId && !(carried && carried.has(id));
+      });
+      if (stragglers.length) {
+        animateStragglers({
+          svgRoot: view.contentGroup || view.svgRoot,
+          ringNodes: stragglers,
+          hubX: arcParams.hubX,
+          hubY: arcParams.hubY
+        });
+      }
+    }
     if (noLayerToReverse && lastPyramidData?.nodes?.length) {
       animateRingToSky({
         svgRoot: view.contentGroup || view.svgRoot,

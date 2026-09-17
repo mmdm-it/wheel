@@ -2283,3 +2283,80 @@ export function clearStack() {
 export function getStackDepth() {
   return animatedNodesStack.length;
 }
+/** The item ids the top layer will carry back (O-151 step five); empty when none. */
+export function topLayerIds() {
+  const top = animatedNodesStack[animatedNodesStack.length - 1];
+  return top ? top.nodes.map(a => a.itemId).filter(id => id != null) : [];
+}
+
+/**
+ * THE NODES NO SEAT ACCOUNTS FOR FADE AS THEY GO (O-151 step five). A ring
+ * node the flight carries nowhere — no seat for it in the sky it is rising
+ * into, or no clone in the layer being reversed — used to vanish at the first
+ * frame with the rest of the ring. It now travels a third of the way toward
+ * the hub, into the sky with its siblings, shrinking and fading to nothing
+ * by the end of the flight, on the scrub clock like everything else.
+ *
+ * @param {Object} opts — { svgRoot, ringNodes: [{ item, x, y, angle, radius, label, labelCentered }], hubX, hubY }
+ */
+export function animateStragglers(opts) {
+  const { svgRoot, ringNodes = [], hubX, hubY, onComplete, durationMs = null } = opts;
+  const dur = durationMs || ANIM_DURATION;
+  const txn = txnArm();
+  if (!svgRoot || ringNodes.length === 0) {
+    if (onComplete) onComplete();
+    txnSettle(txn, null);
+    return;
+  }
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay stragglers');
+  svgRoot.appendChild(overlay);
+  const entries = [];
+  ringNodes.forEach(node => {
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', node.x);
+    circle.setAttribute('cy', node.y);
+    circle.setAttribute('r', node.radius);
+    circle.setAttribute('class', 'focus-ring-node');
+    g.appendChild(circle);
+    const label = document.createElementNS(SVG_NS, 'text');
+    const rot = (node.angle * 180) / Math.PI + 180;
+    if (node.labelCentered) {
+      label.setAttribute('x', node.x);
+      label.setAttribute('y', node.y);
+      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('transform', `rotate(${rot}, ${node.x}, ${node.y})`);
+    } else {
+      const offset = node.radius * -1.3;
+      const lx = node.x + Math.cos(node.angle) * offset;
+      const ly = node.y + Math.sin(node.angle) * offset;
+      label.setAttribute('x', lx);
+      label.setAttribute('y', ly);
+      label.setAttribute('text-anchor', 'end');
+      label.setAttribute('transform', `rotate(${rot}, ${lx}, ${ly})`);
+    }
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'focus-ring-label');
+    label.textContent = node.label ?? node.item?.name ?? '';
+    g.appendChild(label);
+    overlay.appendChild(g);
+    g.style.transformOrigin = `${node.x}px ${node.y}px`;
+    setTransform(g, 'translate(0px, 0px) scale(1)');
+    g.style.opacity = '1';
+    entries.push({ g, tx: (hubX - node.x) / 3, ty: (hubY - node.y) / 3 });
+  });
+  overlay.getBoundingClientRect();
+  afterPaint(() => {
+    entries.forEach(e => {
+      setTransition(e.g, `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`);
+      setTransform(e.g, `translate(${e.tx}px, ${e.ty}px) scale(0.5)`);
+      e.g.style.opacity = '0';
+    });
+    later(dur, () => {
+      if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
+    });
+  });
+}
