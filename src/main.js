@@ -2841,6 +2841,15 @@ function wireInteractions(getApp) {
   let freeDrill = null;            // { kind, x0, y0, ux, uy, ctl, travel, e, undo } — a drill a stroke began
   let controlPress = null;         // { x0, y0, isParent, dead } — a press on the lens or the parent button
   const lean = () => diagonalLean(viewport?.width, viewport?.height);
+  // The two reference bearings that widen rotation (O-152 amended): from the
+  // magnifier to the upper-left and to the lower-right corner of the page.
+  const bandOpts = () => {
+    try {
+      const vp = getViewportInfo(viewport.width, viewport.height);
+      const m = getMagnifierPosition(vp);
+      return { ul: bearingOf(0 - m.x, 0 - m.y), lr: bearingOf(vp.width - m.x, vp.height - m.y) };
+    } catch (_) { return {}; }
+  };
   const ROTATE_GAIN = Math.SQRT2;  // a stroke along the Northwest axis turns the ring as the old diagonal drag did
   const freeDrillProgress = (fd, event) => {
     const travelled = (event.clientX - fd.x0) * fd.ux + (event.clientY - fd.y0) * fd.uy;
@@ -2905,7 +2914,7 @@ function wireInteractions(getApp) {
       const vx = event.clientX - controlPress.x0, vy = event.clientY - controlPress.y0;
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       const press = controlPress;
-      const kind = classifyBearing(bearingOf(vx, vy), lean());
+      const kind = classifyBearing(bearingOf(vx, vy), lean(), bandOpts());
       logTap('control-stroke', { kind, parent: press.isParent });
       // Whatever it decides, the press is no longer a tap on its control.
       if (press.isParent) parentSwipeFiredAt = Date.now(); else lensSwipeFiredAt = Date.now();
@@ -2972,7 +2981,7 @@ function wireInteractions(getApp) {
       const vx = event.clientX - stroke.x0, vy = event.clientY - stroke.y0;
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
-      const kind = classifyBearing(bearingOf(vx, vy), lean());
+      const kind = classifyBearing(bearingOf(vx, vy), lean(), bandOpts());
       logTap('stroke-decided', { kind });
       if (kind === 'cw' || kind === 'ccw') { app.choreographer.rotate(stroke.pendingDelta); return; }
       pendingTapNode = null; pendingAdvanceTap = false;

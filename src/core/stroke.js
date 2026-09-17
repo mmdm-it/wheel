@@ -32,13 +32,29 @@ export function diagonalLean(width, height) {
   return Math.atan(width / height) / RAD;
 }
 
-/** The bands, for a lean d: each [from, to] clockwise, in degrees. */
-export function compassBands(d = 29, { rotateHalf = 10, dead = 10 } = {}) {
+/**
+ * The bands, for a lean d: each [from, to] clockwise, in degrees.
+ *
+ * THE ROTATION BANDS WIDEN OUTWARD BY TWO REFERENCE ANGLES (O-152 amended,
+ * Howell 2026-09-16, drawing on a screenshot: "measure from the magnifier to
+ * the upper left corner, and again from the magnifier to the lower right
+ * corner, and then add 10 degrees to the first angle, which is headed
+ * northwest, and subtract 10 degrees from the second angle, which is towards
+ * southeast"). When `ul` (the bearing from the magnifier to the upper-left
+ * corner) and `lr` (to the lower-right corner) are given, the clockwise band
+ * runs from the diagonal's inner edge up to ul + 10°, and the counter-
+ * clockwise band from lr − 10° up to its inner edge; the 10° dead zones keep
+ * their width, and drill out narrows between them. Without them, the
+ * symmetric ± 10° bands of the first ruling.
+ */
+export function compassBands(d = 29, { rotateHalf = 10, dead = 10, ul = null, lr = null } = {}) {
   const nw = norm(360 - d), se = norm(180 - d);
+  const cwOuter = Number.isFinite(ul) ? norm(ul + rotateHalf) : norm(nw + rotateHalf);
+  const ccwOuter = Number.isFinite(lr) ? norm(lr - rotateHalf) : norm(se - rotateHalf);
   return {
-    cw: [norm(nw - rotateHalf), norm(nw + rotateHalf)],
-    out: [norm(nw + rotateHalf + dead), norm(se - rotateHalf - dead)],
-    ccw: [norm(se - rotateHalf), norm(se + rotateHalf)],
+    cw: [norm(nw - rotateHalf), cwOuter],
+    out: [norm(cwOuter + dead), norm(ccwOuter - dead)],
+    ccw: [ccwOuter, norm(se + rotateHalf)],
     in: [norm(se + rotateHalf + dead), norm(nw - rotateHalf - dead)],
   };
 }

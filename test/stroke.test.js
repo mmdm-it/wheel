@@ -35,3 +35,27 @@ describe('the compass decides (O-152)', () => {
     assert.ok(out.ux > 0 && out.uy < 0, 'drill out points up and to the right');
   });
 });
+
+// THE ROTATION BANDS WIDEN BY THE MAGNIFIER'S CORNERS (O-152 amended): on the
+// Moto G page area the magnifier sees the upper-left corner at 341° and the
+// lower-right at 132.3°, so clockwise reaches 351° and counter-clockwise
+// starts at 122.3°; the dead zones keep 10°, drill out narrows.
+describe('the rotation bands widen by the magnifier\'s corners (O-152 amended)', () => {
+  const opts = { ul: 341, lr: 132.3 };
+  it('clockwise 321–351, counter-clockwise 122.3–161, drill out 1–112.3, drill in unchanged', () => {
+    const b = compassBands(29, opts);
+    assert.deepEqual(b.cw, [321, 351]);
+    assert.deepEqual(b.ccw.map(x => Math.round(x * 10) / 10), [122.3, 161]);
+    assert.deepEqual(b.out.map(x => Math.round(x * 10) / 10), [1, 112.3]);
+    assert.deepEqual(b.in, [171, 311]);
+  });
+  it('the wider rotation and the gaps beside it decide as drawn', () => {
+    const at = x => classifyBearing(x, 29, opts);
+    assert.equal(at(348), 'cw', 'nearly straight up now turns');
+    assert.equal(at(125), 'ccw');
+    assert.equal(at(355), null, 'the gap past clockwise');
+    assert.equal(at(117), null, 'the gap before counter-clockwise');
+    assert.equal(at(45), 'out');
+    assert.equal(at(241), 'in');
+  });
+});
