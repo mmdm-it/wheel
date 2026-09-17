@@ -348,6 +348,13 @@ export class VolumeLogo {
     return { radius, margin, centerX, centerY, logoWidth, logoHeight };
   }
 
+  /** The badge's centre when collapsed, in viewport px — where the sector's contents fold back to (O-161). */
+  collapsedCentre() {
+    if (!this._renderConfig) return null;
+    const { centerX, centerY, radius } = this._collapsedGeometry();
+    return { x: centerX, y: centerY, radius };
+  }
+
   _getStartState() {
     const { radius, centerX: cx, centerY: cy, logoWidth, logoHeight } = this._collapsedGeometry();
     return {

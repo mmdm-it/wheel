@@ -2424,12 +2424,27 @@ window.addEventListener('detail-sector-change', (e) => {
   // own clock at the first frame. When a drill is under a finger they now
   // fade over the first third of the swipe, driven by it, and their classes
   // change only when the drill lands; struck, they are back at full at once.
+  //
+  // AND IT LEAVES BY MOVING, NOT FADING (O-161, Howell 2026-09-17: fades are
+  // "a cheat" against the grammar — everything but the two vessel rings
+  // MOVES with the thumb along the drill axis). The verse, its notes and the
+  // key are the sector's contents, and the sector is folding back into its
+  // badge in the corner; so the text folds with it — one block, shrinking
+  // toward the badge's centre over the whole swipe, at full ink until the
+  // landing takes it. A fade remains only where no badge is known.
   const panels = [detailPanel, marginPanel, marginMarks].filter(Boolean);
+  const badge = e.detail?.badge || null;
   if (!visible && panels.length) {
-    const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; });
+    const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; el.style.transform = ''; el.style.transformOrigin = ''; el.style.willChange = ''; });
+    if (badge) panels.forEach(el => { el.style.transformOrigin = `${badge.x}px ${badge.y}px`; el.style.willChange = 'transform'; });
     const scrubbed = scrubDriver(600, t => {
-      const o = Math.max(0, 1 - t * 3);
-      panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
+      if (badge) {
+        const k = 1 - 0.88 * t;                     // to 12% — the badge's size against the sector's
+        panels.forEach(el => { el.style.transition = 'none'; el.style.transform = `scale(${k})`; });
+      } else {
+        const o = Math.max(0, 1 - t * 3);
+        panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
+      }
     }, {
       onCommit: () => {
         if (detailPanel) detailPanel.classList.remove('detail-panel--visible');
@@ -2439,7 +2454,7 @@ window.addEventListener('detail-sector-change', (e) => {
         requestAnimationFrame(() => requestAnimationFrame(clear));
       },
       onAbort: () => {
-        panels.forEach(el => { el.style.opacity = '1'; });
+        panels.forEach(el => { el.style.opacity = '1'; el.style.transform = ''; });
         requestAnimationFrame(() => requestAnimationFrame(clear));
       }
     });
