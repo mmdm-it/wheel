@@ -853,10 +853,32 @@ export function createApp({
     const onScreenRing = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
       .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: node.item })) }));
     const layerIds = noLayerToReverse ? null : new Set(topLayerIds());
-    const departingRing = noLayerToReverse
-      ? calculateAllNodePositions(normalizedItems, vp, rotation, nodeRadius, nodeSpacing)
-        .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }) }))
-      : [];
+    // ONLY THE SEATS THE SKY WILL USE (O-154, from the gesture log: a drill
+    // out took 211–423 ms to set up against a drill in's 38–82). This placed
+    // and labelled EVERY item of the departing chain — the whole volume's
+    // verses, tens of thousands — to find the few dozen the new sky seats.
+    // The chain and the rotation are kept now; the seats are computed after
+    // the commit, for the sky's own ids alone.
+    const departingChain = noLayerToReverse ? normalizedItems : null;
+    const departingRotation = rotation;
+    const departingSeatsFor = ids => {
+      if (!departingChain || !ids.size) return [];
+      const arc = arcParams;
+      const out = [];
+      for (let index = 0; index < departingChain.length && out.length < ids.size; index += 1) {
+        const item = departingChain[index];
+        if (!item || !ids.has(item.id)) continue;
+        const order = Number.isFinite(item.order) ? item.order : index;
+        const angle = getBaseAngleForOrder(order, vp, nodeSpacing) + departingRotation;
+        out.push({
+          item, index, angle, radius: nodeRadius,
+          x: arc.hubX + arc.radius * Math.cos(angle),
+          y: arc.hubY + arc.radius * Math.sin(angle),
+          label: formatLabel({ item, context: 'node' })
+        });
+      }
+      return out;
+    };
 
     // The caption beside the lens cross-fades to the parent level's word (O-151).
     crossfadeCaption(tempSelected);
@@ -997,7 +1019,7 @@ export function createApp({
     if (noLayerToReverse && lastPyramidData?.nodes?.length) {
       animateRingToSky({
         svgRoot: view.contentGroup || view.svgRoot,
-        ringNodes: departingRing,
+        ringNodes: departingSeatsFor(new Set(lastPyramidData.nodes.map(n => n.item?.id ?? n.id).filter(id => id != null))),
         pyramidNodes: lastPyramidData.nodes,
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
