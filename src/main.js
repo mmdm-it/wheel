@@ -20,13 +20,22 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   box.id = 'frame-readout';
   box.style.cssText = 'position:fixed;left:6px;bottom:6px;z-index:2147483647;font:12px/1.3 monospace;color:#fff;background:rgba(0,0,0,.72);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;';
   box.textContent = 'frames: waiting for a drill';
+  // A/B FLAGS FOR THE BENCH (O-160): &nowatermark=1 hides the watermark
+  // image, &nosector=1 the whole sector — to read what each costs in frames.
+  const q = new URLSearchParams(window.location.search);
+  const hideSel = q.get('nosector') === '1' ? '#volume-logo-group' : (q.get('nowatermark') === '1' ? '#volume-logo-image' : null);
+  if (hideSel) {
+    const hide = () => { const el = document.querySelector(hideSel); if (el) el.style.display = 'none'; else setTimeout(hide, 250); };
+    hide();
+    box.textContent += `  [${hideSel === '#volume-logo-group' ? 'no sector' : 'no watermark'}]`;
+  }
   const mount = () => document.body?.appendChild(box);
   if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
   const history = [];
   window.__wheelFrameReport = r => {
     r.kind = window.__wheelFrameKind || '?';
     history.unshift(r); if (history.length > 3) history.pop();
-    box.textContent = history.map(h => `${h.kind.toUpperCase().padEnd(4)}${h.frames}f @${h.hz}Hz drop ${h.dropped}\n    med ${h.median} worst ${h.worst} seek ${h.seekMedian}/${h.seekMax}`).join('\n');
+    box.textContent = history.map(h => `${h.kind.toUpperCase().padEnd(4)}${h.frames}f @${h.hz}Hz drop ${h.dropped} worst ${h.worst}\n    render ${h.renderMedian}/${h.renderMax} seek ${h.seekMedian}/${h.seekMax}`).join('\n');
     if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('frames', r);
   };
 }

@@ -349,12 +349,21 @@ let _frames = null;
 function _frameMonitorStart() {
   if (typeof window === 'undefined' || typeof window.__wheelFrameReport !== 'function' || typeof requestAnimationFrame !== 'function') return;
   if (_frames) _frameMonitorStop();
-  const m = { gaps: [], seeks: [], last: 0, raf: 0, t0: performance.now() };
+  const m = { gaps: [], seeks: [], renders: [], last: 0, raf: 0, t0: performance.now() };
   _frames = m;
+  // MAIN-THREAD RENDER TIME PER FRAME: a message posted from inside the frame
+  // callback runs only after that frame's style, layout and paint recording
+  // are done on the main thread. Long gaps with short renders point at the
+  // raster and the GPU; long renders at style, layout and paint.
+  let channel = null;
+  try { channel = typeof MessageChannel === 'function' ? new MessageChannel() : null; } catch (e) { channel = null; }
+  let renderT0 = 0;
+  if (channel) channel.port1.onmessage = () => { if (renderT0) m.renders.push(performance.now() - renderT0); renderT0 = 0; };
   const tick = now => {
     if (_frames !== m) return;
     if (m.last) m.gaps.push(now - m.last);
     m.last = now;
+    if (channel && !renderT0) { renderT0 = performance.now(); channel.port2.postMessage(0); }
     // Stop one quiet second after the last flight is gone, or at five seconds.
     const idle = !_animating && !_scrub;
     if ((idle && now - m.t0 > 400 && m.gaps.length > 6 && m.idleSince && now - m.idleSince > 250) || now - m.t0 > 5000) { _frameMonitorStop(); return; }
@@ -377,7 +386,10 @@ function _frameMonitorStop() {
   const period = [8.33, 11.11, 16.67].reduce((a, b) => (Math.abs(b - quick) < Math.abs(a - quick) ? b : a));
   const dropped = gaps.filter(g => g > period * 1.6).length;
   const seeks = m.seeks.slice().sort((a, b) => a - b);
+  const renders = m.renders.slice().sort((a, b) => a - b);
   const report = {
+    renderMedian: renders.length ? Math.round(renders[Math.floor(renders.length / 2)] * 10) / 10 : 0,
+    renderMax: renders.length ? Math.round(renders[renders.length - 1] * 10) / 10 : 0,
     frames: gaps.length,
     hz: Math.round(1000 / period),
     median: Math.round(median * 10) / 10,
