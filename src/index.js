@@ -599,6 +599,31 @@ export function createApp({
     // clone text and ask this for the settled left edge.
     const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW, textDirection());
 
+    // 4c. Detail Sector: expand simultaneously if the incoming selected item is
+    //     a leaf — and BEFORE the commit (O-159, drill-in audit step one). The
+    //     commit's render, seeing a leaf with the sector closed and idle,
+    //     started the sector's own 600 ms expansion, so under a held drill the
+    //     circle grew on its own clock while everything else followed the
+    //     finger. Begun here, the journey is already open and animating when
+    //     that render runs, and the render leaves it to the finger.
+    //    By triggering here (not waiting for onComplete), both animations run in parallel.
+    //    No onComplete render — setPrimaryItems (in the migration onComplete) will
+    //    trigger the authoritative render once nav state has been committed.
+    const incomingIsLeaf = leafLevel && tempSelected?.level === leafLevel;
+    if (incomingIsLeaf && !detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = true;
+      // THE SECTOR RIDES THE FINGER (O-140): under a scrub the circle's
+      // journey is driven by the same clock as the flights; on a tap it
+      // plays on its own, as before.
+      const journey = volumeLogo.beginExpand(arcParams, magnifier.angle);
+      const opened = () => emitDetailSectorChange(true, 'after-animation');
+      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t, { linear: true }), {
+        onCommit: () => { journey.finish(); opened(); },
+        onAbort: () => { journey.revert(); detailSectorShown = false; }
+      });
+      if (!scrubbed) journey.play(opened);
+    }
+
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
     //    The caption beside the lens is handed its cross-fade first (O-151).
@@ -787,25 +812,7 @@ export function createApp({
       }
     }
 
-    // 5. Detail Sector: expand simultaneously if the incoming selected item is a leaf.
     phase('in:flights-launched');
-    //    By triggering here (not waiting for onComplete), both animations run in parallel.
-    //    No onComplete render — setPrimaryItems (in the migration onComplete) will
-    //    trigger the authoritative render once nav state has been committed.
-    const incomingIsLeaf = leafLevel && tempSelected?.level === leafLevel;
-    if (incomingIsLeaf && !detailSectorShown && !volumeLogo.animating) {
-      detailSectorShown = true;
-      // THE SECTOR RIDES THE FINGER (O-140): under a scrub the circle's
-      // journey is driven by the same clock as the flights; on a tap it
-      // plays on its own, as before.
-      const journey = volumeLogo.beginExpand(arcParams, magnifier.angle);
-      const opened = () => emitDetailSectorChange(true, 'after-animation');
-      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t, { linear: true }), {
-        onCommit: () => { journey.finish(); opened(); },
-        onAbort: () => { journey.revert(); detailSectorShown = false; }
-      });
-      if (!scrubbed) journey.play(opened);
-    }
   };
 
   // ── Migration Animation: OUT (Focus Ring → Child Pyramid) ─────────
