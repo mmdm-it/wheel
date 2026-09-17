@@ -555,6 +555,16 @@ export class VolumeLogo {
    */
   _applyFrame(from, to, t) {
     const lerp = (a, b) => a + (b - a) * t;
+    // FRAMES IN FLIGHT ARE TRANSFORMS (O-160): the phone's frame readout put a
+    // drill into a verse at half the display's rate. Every frame rewrote the
+    // circle's geometry and the watermark's x, y, width and height — a raster
+    // image rescaled from its source on every frame. Between the ends the
+    // geometry now stays at the FROM state and a transform carries it; only
+    // the ends (t = 0, t = 1) write the real attributes, so everything that
+    // reads them sees a settled sector.
+    if (t > 0 && t < 1) { this._applyTransformFrame(from, to, t); return; }
+    this._frameBase = null;
+    if (this.circle) this.circle.removeAttribute('transform');
     if (this.circle) {
       this.circle.setAttribute('cx', lerp(from.circleCx, to.circleCx));
       this.circle.setAttribute('cy', lerp(from.circleCy, to.circleCy));
@@ -577,6 +587,37 @@ export class VolumeLogo {
       const cy = y + h / 2;
       this.logo.setAttribute('transform', `rotate(${rot}, ${cx}, ${cy})`);
     }
+  }
+
+  _applyTransformFrame(from, to, t) {
+    const lerp = (a, b) => a + (b - a) * t;
+    if (this.circle) {
+      if (this._frameBase !== from) {
+        this.circle.setAttribute('cx', from.circleCx);
+        this.circle.setAttribute('cy', from.circleCy);
+        this.circle.setAttribute('r', from.circleR);
+      }
+      const k = from.circleR ? lerp(from.circleR, to.circleR) / from.circleR : 1;
+      const cx = lerp(from.circleCx, to.circleCx), cy = lerp(from.circleCy, to.circleCy);
+      this.circle.setAttribute('transform', `translate(${cx - k * from.circleCx}, ${cy - k * from.circleCy}) scale(${k})`);
+      this.circle.setAttribute('opacity', lerp(from.circleOpacity, to.circleOpacity));
+    }
+    if (this.logo) {
+      if (this._frameBase !== from) {
+        this.logo.setAttribute('x', from.logoX);
+        this.logo.setAttribute('y', from.logoY);
+        this.logo.setAttribute('width', from.logoWidth);
+        this.logo.setAttribute('height', from.logoHeight);
+      }
+      const x = lerp(from.logoX, to.logoX), y = lerp(from.logoY, to.logoY);
+      const w = lerp(from.logoWidth, to.logoWidth), h = lerp(from.logoHeight, to.logoHeight);
+      const kx = from.logoWidth ? w / from.logoWidth : 1, ky = from.logoHeight ? h / from.logoHeight : 1;
+      const rot = lerp(from.logoRotation, to.logoRotation);
+      const cx = x + w / 2, cy = y + h / 2;
+      this.logo.setAttribute('transform', `rotate(${rot}, ${cx}, ${cy}) translate(${x - kx * from.logoX}, ${y - ky * from.logoY}) scale(${kx}, ${ky})`);
+      this.logo.setAttribute('opacity', lerp(from.logoOpacity, to.logoOpacity));
+    }
+    this._frameBase = from;
   }
 
   /**

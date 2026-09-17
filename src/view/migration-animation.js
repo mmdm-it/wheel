@@ -299,7 +299,11 @@ function _frameMonitorStop() {
   const gaps = m.gaps.slice().sort((a, b) => a - b);
   if (!gaps.length) return;
   const median = gaps[Math.floor(gaps.length / 2)];
-  const period = median < 12 ? 8.33 : 16.67;         // 120 Hz or 60 Hz display
+  // The display's period is the quick frames, not the typical one: a drill
+  // running at half rate has a median of two periods. Snap the tenth
+  // percentile to 60, 90 or 120 Hz.
+  const quick = gaps[Math.floor(gaps.length * 0.1)];
+  const period = [8.33, 11.11, 16.67].reduce((a, b) => (Math.abs(b - quick) < Math.abs(a - quick) ? b : a));
   const dropped = gaps.filter(g => g > period * 1.6).length;
   const seeks = m.seeks.slice().sort((a, b) => a - b);
   const report = {

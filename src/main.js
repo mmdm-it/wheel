@@ -24,8 +24,9 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
   const history = [];
   window.__wheelFrameReport = r => {
+    r.kind = window.__wheelFrameKind || '?';
     history.unshift(r); if (history.length > 3) history.pop();
-    box.textContent = history.map((h, i) => `${i === 0 ? 'last' : '    '} ${h.frames}f @${h.hz}Hz  med ${h.median}  worst ${h.worst}  dropped ${h.dropped}  seek ${h.seekMedian}/${h.seekMax}ms`).join('\n');
+    box.textContent = history.map(h => `${h.kind.toUpperCase().padEnd(4)}${h.frames}f @${h.hz}Hz drop ${h.dropped}\n    med ${h.median} worst ${h.worst} seek ${h.seekMedian}/${h.seekMax}`).join('\n');
     if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('frames', r);
   };
 }
@@ -2386,7 +2387,10 @@ function marginDebug(line) {
 window.addEventListener('detail-sector-arriving', () => {
   const panels = [detailPanel, marginPanel, marginMarks].filter(Boolean);
   if (!panels.length) return;
-  const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; });
+  const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; el.style.willChange = ''; });
+  // On their own layer for the flight, so each frame's opacity is composited
+  // rather than the whole page of text repainted (O-160).
+  panels.forEach(el => { el.style.willChange = 'opacity'; });
   scrubDriver(600, t => {
     const o = Math.max(0, Math.min(1, (t - 2 / 3) * 3));
     panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
@@ -2980,6 +2984,7 @@ function wireInteractions(getApp) {
   const beginDrill = (sw, app, launch) => {
     const tLaunch = performance.now();
     logTap('phase', { name: 'drill-start', p: 0 });
+    window.__wheelFrameKind = sw?.kind || '?';
     const ctl = beginScrubbedMigration(app?.flightRoot?.() || null);
     try { launch(); } catch (_) { /* the drill's own guards spoke */ }
     logTap('drill-launch', { ms: Math.round(performance.now() - tLaunch), launched: ctl.launched() });
