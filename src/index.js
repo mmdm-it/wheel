@@ -545,7 +545,14 @@ export function createApp({
     // Use calculateAllNodePositions (no visible-window filter) so every
     // sibling gets a target — nodes beyond the visible arc animate to their
     // implied off-screen positions on the focus ring.
-    const ringTargets = calculateAllNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+    // ONLY THE SKY'S OWN NODES NEED A TARGET (O-158): animateIn flies the
+    // pyramid's nodes and nothing else, and placing every item of the new
+    // chain — the whole volume's verses on a drill into one — cost 13–31 ms
+    // on the phone for a few dozen flights.
+    const skyIds = new Set(pyramidNodes.map(pn => pn.item?.id ?? pn.id).filter(id => id != null));
+    const ringTargets = calculateAllNodePositions(
+      tempNormalized.map(item => (item && skyIds.has(item.id) ? item : null)).map((item, index) => (item && !Number.isFinite(item.order) ? { ...item, order: index } : item)),
+      vp, tempRotation, nodeRadius, nodeSpacing);
     phase('in:ring-targets', { n: ringTargets.length });
 
     // 3. Snapshot current focus-ring node positions before they vanish.
