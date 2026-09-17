@@ -1813,6 +1813,16 @@ export function animateVolumeParentMerge(opts) {
 
   const dressMerge = travelColors(svgRoot); // orbital → radial on arrival
 
+  // THE PARENT'S OWN DISC STAYS (O-162): the button's node keeps its disc
+  // through the flight; the numeral's disc tucks in behind it.
+  const staticDisc = document.createElementNS(SVG_NS, 'circle');
+  staticDisc.setAttribute('cx', toX);
+  staticDisc.setAttribute('cy', toY);
+  staticDisc.setAttribute('r', radius);
+  staticDisc.setAttribute('class', 'focus-ring-magnifier-circle');
+  staticDisc.style.fill = dressMerge.radial;
+  overlay.appendChild(staticDisc);
+
   const staticBase = document.createElementNS(SVG_NS, 'text');
   staticBase.setAttribute('y', toY);
   staticBase.setAttribute('text-anchor', 'start');
@@ -1936,6 +1946,16 @@ export function animateVolumeParentUnmerge(opts) {
   svgRoot.appendChild(overlay);
 
   const dressUnmerge = travelColors(svgRoot);
+
+  // THE PARENT'S OWN DISC STAYS (O-162): the button's node keeps its disc
+  // through the flight; the numeral's disc emerges from behind it.
+  const staticDisc = document.createElementNS(SVG_NS, 'circle');
+  staticDisc.setAttribute('cx', toX);
+  staticDisc.setAttribute('cy', toY);
+  staticDisc.setAttribute('r', radius);
+  staticDisc.setAttribute('class', 'focus-ring-magnifier-circle');
+  staticDisc.style.fill = dressUnmerge.radial;
+  overlay.appendChild(staticDisc);
 
   const staticBase = document.createElementNS(SVG_NS, 'text');
   staticBase.setAttribute('y', toY);

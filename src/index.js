@@ -787,7 +787,12 @@ export function createApp({
         fromAngle: magnifier.angle
       });
     } else {
-      animateParentButtonOutward({
+      // A NODE IS ITS DISC AND ITS LABEL (O-162, Howell 2026-09-17): when the
+      // numeral merges into the parent's label the parent's own node stays
+      // put, disc and all — nothing leaves the button and no loose disc
+      // flies off. Only when the button changes hands does its node depart
+      // whole, disc and label together.
+      if (!isSuffixMergeIn) animateParentButtonOutward({
         svgRoot: view.contentGroup || view.svgRoot,
         buttonX: parentButtonX,
         buttonY: parentButtonY,
@@ -796,7 +801,7 @@ export function createApp({
         labelSuffix: parentLabelSuffixHint,
         discless: departingParentDiscless,
         radius: magnifierRadius,
-        label: isSuffixMergeIn ? '' : prevParentLabel,
+        label: prevParentLabel,
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         arcRadius: arcParams.radius,
@@ -1097,7 +1102,10 @@ export function createApp({
     // New parent button fill: fly in from off-screen radially. On a
     // suffix-merge ascent the LABEL is anchored (the unmerge overlay owns
     // it), but the vessel's new fill still arrives — as a label-less disc.
-    if (newParentLabel) {
+    // A NODE IS ITS DISC AND ITS LABEL (O-162): when the numeral leaves the
+    // parent's label for the lens, the parent's node stays, disc and all, and
+    // nothing arrives; only a button changing hands takes its new node whole.
+    if (newParentLabel && !isSuffixMergeOut) {
       animateParentButtonInward({
         svgRoot: view.contentGroup || view.svgRoot,
         buttonX: parentButtonX,
@@ -1109,7 +1117,7 @@ export function createApp({
         // adapter has already advanced, so it answers for the destination.
         discless: typeof getParentActionable === 'function' ? !getParentActionable() : false,
         radius: magnifierRadius,
-        label: isSuffixMergeOut ? '' : newParentLabel,
+        label: newParentLabel,
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         arcRadius: arcParams.radius,
