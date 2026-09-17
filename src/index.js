@@ -472,31 +472,54 @@ export function createApp({
     const before = String(real.textContent || '');
     const after = nextItem ? String(formatLabel({ item: nextItem, context: 'caption' }) || '') : '';
     if (before === after) return;
-    const parent = real.parentNode;
-    if (!parent) return;
+    const host = view.contentGroup || real.parentNode;
+    const magnifierGroup = view.magnifierGroup || null;
+    if (!host) return;
     const cx = Number(real.getAttribute('x')) || 0, cy = Number(real.getAttribute('y')) || 0;
     const mx = magnifier.x, my = magnifier.y;
     const hx = cx - arcParams.hubX, hy = cy - arcParams.hubY, hl = Math.hypot(hx, hy) || 1;
     const ux = hx / hl, uy = hy / hl, travel = arcParams.radius * 1.2;
+    // AT FULL SIZE, AND COVERED RATHER THAN SHRUNK (O-163 amended, Howell:
+    // "It shouldn't shrink though, and it should not be visible through the
+    // incoming node"). The word keeps its size and slides along its own seat
+    // line into the lens, where the arriving node's disc covers it; the half
+    // that would show past the far side of the disc is clipped away at the
+    // lens's centre line. The clones ride BELOW the lens and below every
+    // flight overlay: each render lifts the lens group to the top, so a
+    // caption inside it drew over the node arriving in the glass.
+    const SVG = 'http://www.w3.org/2000/svg';
+    const defs = document.createElementNS(SVG, 'defs');
+    const clipId = `caption-clip-${Date.now().toString(36)}-${Math.floor(Math.random() * 1e6)}`;
+    const clip = document.createElementNS(SVG, 'clipPath');
+    clip.setAttribute('id', clipId);
+    clip.setAttribute('clipPathUnits', 'userSpaceOnUse');
+    const span = Math.max(arcParams.radius * 4, 4000);
+    const rect = document.createElementNS(SVG, 'rect');
+    rect.setAttribute('x', '0');
+    rect.setAttribute('y', String(-span));
+    rect.setAttribute('width', String(span));
+    rect.setAttribute('height', String(span * 2));
+    rect.setAttribute('transform', `translate(${mx}, ${my}) rotate(${(Math.atan2(cy - my, cx - mx) * 180) / Math.PI})`);
+    clip.appendChild(rect);
+    defs.appendChild(clip);
+    host.appendChild(defs);
     const wrap = text => {
-      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      const g = document.createElementNS(SVG, 'g');
       const t = real.cloneNode(true);
       t.textContent = text;
       t.style.opacity = '1';
       g.appendChild(t);
-      g.style.transformOrigin = `${mx}px ${my}px`;
-      parent.insertBefore(g, real);
+      g.setAttribute('clip-path', `url(#${clipId})`);
+      if (magnifierGroup && magnifierGroup.parentNode === host) host.insertBefore(g, magnifierGroup);
+      else host.appendChild(g);
       return g;
     };
     const leaving = wrap(before);
     const arriving = wrap(after);
     real.style.visibility = 'hidden';
-    const K_UNDER = 0.35;
-    // Under the lens: the anchor travels to the lens centre while the word
-    // shrinks toward that centre, so its far end ends inside the disc.
+    // Under the lens: the word's seat travels to the lens centre, at size.
     const under = (g, p) => {
-      const k = 1 - (1 - K_UNDER) * p;
-      g.style.transform = `translate(${((cx - mx) * (1 - p - k)).toFixed(1)}px, ${((cy - my) * (1 - p - k)).toFixed(1)}px) scale(${k.toFixed(3)})`;
+      g.style.transform = `translate(${((mx - cx) * p).toFixed(1)}px, ${((my - cy) * p).toFixed(1)}px)`;
     };
     const away = (g, p) => { g.style.transform = `translate(${(ux * travel * p).toFixed(1)}px, ${(uy * travel * p).toFixed(1)}px)`; };
     const frame = t => {
@@ -511,6 +534,7 @@ export function createApp({
       real.style.visibility = '';
       leaving.remove();
       arriving.remove();
+      defs.remove();
     };
     const scrubbed = scrubDriver(600, frame, { onCommit: finish, onAbort: finish });
     if (scrubbed) return;

@@ -677,18 +677,19 @@ svg :focus-visible {
   pointer-events: none;
 }
 
+/* EVERY NODE WEARS THE SETTLED NODE'S COLOUR (O-164, Howell 2026-09-17:
+   "All nodes should be the same color, which is the color of the settled
+   nodes"). The sky's stars used to be a wash of black over the ground, a
+   different colour from the ring's nodes, so a node changed colour by
+   crossing between them — which O-162 forbids. One colour now, the ring's. */
 .child-pyramid-node {
-  fill: rgba(0, 0, 0, 0.14);
-  stroke: rgba(0, 0, 0, 0.32);
-  stroke-width: 1px;
+  fill: var(--color-orbital);
+  stroke: none;
   pointer-events: auto;
-  transition: fill var(--motion-fast, 120ms) var(--motion-ease, ease),
-    stroke var(--motion-fast, 120ms) var(--motion-ease, ease);
 }
 
 .child-pyramid-node:hover {
-  fill: rgba(0, 0, 0, 0.22);
-  stroke: rgba(0, 0, 0, 0.46);
+  fill: var(--color-orbital);
 }
 
 .child-pyramid-label {
