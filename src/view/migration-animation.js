@@ -203,6 +203,7 @@ function _scrubCapture(scrub) {
     scrub.ends.set(a, end);
     scrub.master = Math.max(scrub.master, end);
   }
+  try { if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') window.__tapDebugLog('scrub-capture', { anims: scrub.anims.length, master: scrub.master, e: Math.round(scrub.e * 100) / 100 }); } catch (e) { /* logging only */ }
   _scrubApply(scrub);
 }
 function _scrubApply(scrub) {
@@ -271,6 +272,8 @@ export function beginScrubbedMigration(root) {
   _scrub = scrub;
   return {
     launched: () => scrub.completions.length > 0 || scrub.launching > 0 || scrub.anims.length > 0 || scrub.drivers.length > 0,
+    // Every flight launched has been caught and is held (O-152): the finger may take over now.
+    captured: () => scrub.launching === 0,
     scrubTo(e) {
       if (_scrub !== scrub || scrub.settling) return;
       scrub.e = Math.max(0, Math.min(1, Number(e) || 0));

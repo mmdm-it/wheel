@@ -47,15 +47,23 @@ export function diagonalLean(width, height) {
  * their width, and drill out narrows between them. Without them, the
  * symmetric ± 10° bands of the first ruling.
  */
-export function compassBands(d = 29, { rotateHalf = 10, dead = 10, ul = null, lr = null } = {}) {
+//
+// AND INWARD TO WHERE THE THUMB ACTUALLY GOES (O-152 amended again, Howell
+// 2026-09-16: "go", after the gesture log showed his clockwise strokes along
+// the ring at 300–322° and his counter-clockwise at 143–166°, most of them
+// landing in the dead zones). The inner edges move: clockwise reaches down to
+// Northwest − 35° (296° there), counter-clockwise up to Southeast + 20° (171°);
+// the dead zones keep 10°, so drill in narrows to 181–286°.
+export function compassBands(d = 29, { rotateHalf = 10, cwInner = 35, ccwInner = 20, dead = 10, ul = null, lr = null } = {}) {
   const nw = norm(360 - d), se = norm(180 - d);
   const cwOuter = Number.isFinite(ul) ? norm(ul + rotateHalf) : norm(nw + rotateHalf);
   const ccwOuter = Number.isFinite(lr) ? norm(lr - rotateHalf) : norm(se - rotateHalf);
+  const cwStart = norm(nw - cwInner), ccwEnd = norm(se + ccwInner);
   return {
-    cw: [norm(nw - rotateHalf), cwOuter],
+    cw: [cwStart, cwOuter],
     out: [norm(cwOuter + dead), norm(ccwOuter - dead)],
-    ccw: [ccwOuter, norm(se + rotateHalf)],
-    in: [norm(se + rotateHalf + dead), norm(nw - rotateHalf - dead)],
+    ccw: [ccwOuter, ccwEnd],
+    in: [norm(ccwEnd + dead), norm(cwStart - dead)],
   };
 }
 

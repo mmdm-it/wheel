@@ -4,7 +4,30 @@ import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
-import { proofreadOverrideActive, declareVenues } from './core/lan-gate.js';
+import { proofreadOverrideActive, declareVenues, isOnLan } from './core/lan-gate.js';
+
+// THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
+// you see what's going on"). On the bench only — a private address and
+// ?gesturelog=1 — every logTap event is timestamped and sent in batches to
+// scripts/gesture-log-sink.py on port 8089 of the same host. Inert anywhere
+// else, and nothing is sent without the flag.
+if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.location.search).get('gesturelog') === '1') {
+  const sink = `http://${window.location.hostname}:8089/log`;
+  let buf = [];
+  const t0 = performance.now();
+  window.__tapDebugLog = (ev, payload = {}) => {
+    buf.push({ t: Math.round(performance.now() - t0), ev, ...payload });
+    if (buf.length > 400) flush();
+  };
+  const flush = () => {
+    if (!buf.length) return;
+    const body = JSON.stringify(buf); buf = [];
+    try { if (!navigator.sendBeacon?.(sink, new Blob([body], { type: 'text/plain' }))) fetch(sink, { method: 'POST', body, mode: 'no-cors', keepalive: true }); } catch (_) { /* the bench has no sink running */ }
+  };
+  setInterval(flush, 1000);
+  window.addEventListener('pagehide', flush);
+  window.__tapDebugLog('gesturelog-on', { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio, ua: navigator.userAgent.slice(0, 60) });
+}
 import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
 import { bearingOf, diagonalLean, classifyBearing, axisFor } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
@@ -2836,7 +2859,9 @@ function wireInteractions(getApp) {
   // a stroke is measured only along its own axis. A press that never travels
   // DECIDE_PX is the tap it always was. The pyramid's stars still drill on
   // touch.
-  const DECIDE_PX = 14;            // the stroke declares itself here; the ring waits that long
+  // 8 px, the tap slop (O-152 amended: the log showed slow strokes taking
+  // 350–800 ms to travel 14 px with nothing moving).
+  const DECIDE_PX = 8;             // the stroke declares itself here; the ring waits that long
   let stroke = null;               // { x0, y0, decided, pendingDelta, dead } for the drag under way
   let freeDrill = null;            // { kind, x0, y0, ux, uy, ctl, travel, e, undo } — a drill a stroke began
   let controlPress = null;         // { x0, y0, isParent, dead } — a press on the lens or the parent button
@@ -2851,9 +2876,20 @@ function wireInteractions(getApp) {
     } catch (_) { return {}; }
   };
   const ROTATE_GAIN = Math.SQRT2;  // a stroke along the Northwest axis turns the ring as the old diagonal drag did
+  // PROGRESS STARTS WHERE THE FINGER IS WHEN THE FLIGHTS ARE READY (O-152
+  // amended: the log showed a first drill taking 447 ms to build its flights,
+  // by which time the finger was 30% along and everything jumped there).
+  // Until every flight is caught the drill holds at its start; then the
+  // origin is re-based under the finger, so the drill always begins at zero.
   const freeDrillProgress = (fd, event) => {
+    if (!fd.based) {
+      if (!fd.ctl?.captured?.()) return 0;
+      fd.x0 = event.clientX; fd.y0 = event.clientY; fd.based = true;
+      logTap('drill-based', {});
+      return 0;
+    }
     const travelled = (event.clientX - fd.x0) * fd.ux + (event.clientY - fd.y0) * fd.uy;
-    return Math.max(0, Math.min(1, (travelled - DECIDE_PX) / Math.max(40, fd.travel - DECIDE_PX)));
+    return Math.max(0, Math.min(1, travelled / Math.max(40, fd.travel)));
   };
   // Begin a drill from a stroke that started at (x0, y0); false when there is
   // nothing to drill that way — which the compass rule reads as nothing at all.
@@ -2898,8 +2934,10 @@ function wireInteractions(getApp) {
   // took off — the guards spoke, no sky — the scrub is forgotten and the
   // gesture is over.
   const beginDrill = (sw, app, launch) => {
+    const tLaunch = performance.now();
     const ctl = beginScrubbedMigration(app?.flightRoot?.() || null);
     try { launch(); } catch (_) { /* the drill's own guards spoke */ }
+    logTap('drill-launch', { ms: Math.round(performance.now() - tLaunch), launched: ctl.launched() });
     if (!ctl.launched()) { ctl.cancel(); return; }
     sw.ctl = ctl; sw.travel = drillTravelPx(app); sw.e = 0;
   };
@@ -2914,8 +2952,9 @@ function wireInteractions(getApp) {
       const vx = event.clientX - controlPress.x0, vy = event.clientY - controlPress.y0;
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       const press = controlPress;
-      const kind = classifyBearing(bearingOf(vx, vy), lean(), bandOpts());
-      logTap('control-stroke', { kind, parent: press.isParent });
+      const bearing = bearingOf(vx, vy);
+      const kind = classifyBearing(bearing, lean(), bandOpts());
+      logTap('control-stroke', { kind, parent: press.isParent, bearing: Math.round(bearing) });
       // Whatever it decides, the press is no longer a tap on its control.
       if (press.isParent) parentSwipeFiredAt = Date.now(); else lensSwipeFiredAt = Date.now();
       if (kind === 'cw' || kind === 'ccw') {
@@ -2981,8 +3020,9 @@ function wireInteractions(getApp) {
       const vx = event.clientX - stroke.x0, vy = event.clientY - stroke.y0;
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
-      const kind = classifyBearing(bearingOf(vx, vy), lean(), bandOpts());
-      logTap('stroke-decided', { kind });
+      const bearing = bearingOf(vx, vy);
+      const kind = classifyBearing(bearing, lean(), bandOpts());
+      logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), bands: bandOpts() });
       if (kind === 'cw' || kind === 'ccw') { app.choreographer.rotate(stroke.pendingDelta); return; }
       pendingTapNode = null; pendingAdvanceTap = false;
       if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, stroke.x0, stroke.y0)) { isDragging = false; return; }
