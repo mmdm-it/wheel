@@ -2441,13 +2441,17 @@ window.addEventListener('detail-sector-change', (e) => {
     if (hub && Number.isFinite(hub.x) && Number.isFinite(hub.y)) {
       const vw = window.innerWidth, vh = window.innerHeight;
       const dx = hub.x - vw / 2, dy = hub.y - vh / 2, len = Math.hypot(dx, dy) || 1;
-      const travel = Math.hypot(vw, vh) * 1.1;   // clear of the screen along the hub's line
+      const travel = Math.hypot(vw, vh) * 0.9;   // clear of the screen along the hub's line
       leave = { ux: dx / len, uy: dy / len, travel };
       panels.forEach(el => { el.style.willChange = 'transform'; });
     }
     const scrubbed = scrubDriver(600, t => {
       if (leave) {
-        const p = Math.min(1, t / 0.66);          // leads: gone by two-thirds of the swipe
+        // PACED WITH THE CIRCLE (Howell: at two-thirds it was "way too fast" —
+        // gone while the circle had shrunk a fifth). It gathers speed as it
+        // goes, so it stays with the circle through the first half and leads
+        // the nodes off only at the end.
+        const p = Math.pow(t, 1.5);
         const k = 1 - 0.6 * p;
         panels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
       } else {
