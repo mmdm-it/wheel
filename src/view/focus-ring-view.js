@@ -145,9 +145,11 @@ export class FocusRingView {
     this.magnifierCaption = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     this.magnifierCaption.setAttribute('class', 'focus-ring-magnifier-caption');
     this.magnifierCaption.setAttribute('dominant-baseline', 'middle');
+    // The caption draws UNDER the lens (O-163): it slides out from behind
+    // the disc when its ring arrives and back under it when its ring leaves.
+    this.magnifierGroup.appendChild(this.magnifierCaption);
     this.magnifierGroup.appendChild(this.magnifierCircle);
     this.magnifierGroup.appendChild(this.magnifierLabel);
-    this.magnifierGroup.appendChild(this.magnifierCaption);
     this.contentGroup.appendChild(this.magnifierGroup);
 
     // THE SECTION LABEL (H-26), seated where Howell drew it: OUTSIDE the ring,

@@ -457,7 +457,16 @@ export function createApp({
   // when a drill is held and on the flights' own 600 ms when tapped. The real
   // caption stays hidden until the copies are done, whatever the renders in
   // between wrote into it.
-  const crossfadeCaption = nextItem => {
+  // THE CAPTION TRAVELS WITH ITS RING (O-163, Howell 2026-09-17: the chapter
+  // and verse words "should slide in and out from under the Magnifier when
+  // their associated Focus Ring Nodes migrate in and out of the Child
+  // Pyramid", and when the chapter nodes leave the screen "the Chapter label
+  // should migrate off screen with them"). No cross-fade. On a drill IN the
+  // departing word leaves along the ring's own outward line, with the ring,
+  // and the arriving word slides out from under the lens. On a drill OUT the
+  // departing word slides back under the lens as its ring rises to the sky,
+  // and the arriving word comes in from off screen with the returning ring.
+  const slideCaption = (nextItem, direction) => {
     const real = view.magnifierCaption;
     if (!real || !levelCaptions || typeof real.cloneNode !== 'function') return;
     const before = String(real.textContent || '');
@@ -465,19 +474,36 @@ export function createApp({
     if (before === after) return;
     const parent = real.parentNode;
     if (!parent) return;
-    const leaving = real.cloneNode(true);
-    const arriving = real.cloneNode(true);
-    leaving.textContent = before;
-    arriving.textContent = after;
-    leaving.style.opacity = '1';
-    arriving.style.opacity = '0';
-    parent.appendChild(leaving);
-    parent.appendChild(arriving);
-    real.style.visibility = 'hidden';
-    const frame = t => {
-      leaving.style.opacity = String(Math.max(0, 1 - 2 * t));
-      arriving.style.opacity = String(Math.max(0, 2 * t - 1));
+    const cx = Number(real.getAttribute('x')) || 0, cy = Number(real.getAttribute('y')) || 0;
+    const mx = magnifier.x, my = magnifier.y;
+    const hx = cx - arcParams.hubX, hy = cy - arcParams.hubY, hl = Math.hypot(hx, hy) || 1;
+    const ux = hx / hl, uy = hy / hl, travel = arcParams.radius * 1.2;
+    const wrap = text => {
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      const t = real.cloneNode(true);
+      t.textContent = text;
+      t.style.opacity = '1';
+      g.appendChild(t);
+      g.style.transformOrigin = `${mx}px ${my}px`;
+      parent.insertBefore(g, real);
+      return g;
     };
+    const leaving = wrap(before);
+    const arriving = wrap(after);
+    real.style.visibility = 'hidden';
+    const K_UNDER = 0.35;
+    // Under the lens: the anchor travels to the lens centre while the word
+    // shrinks toward that centre, so its far end ends inside the disc.
+    const under = (g, p) => {
+      const k = 1 - (1 - K_UNDER) * p;
+      g.style.transform = `translate(${((cx - mx) * (1 - p - k)).toFixed(1)}px, ${((cy - my) * (1 - p - k)).toFixed(1)}px) scale(${k.toFixed(3)})`;
+    };
+    const away = (g, p) => { g.style.transform = `translate(${(ux * travel * p).toFixed(1)}px, ${(uy * travel * p).toFixed(1)}px)`; };
+    const frame = t => {
+      if (direction === 'out') { under(leaving, t); away(arriving, 1 - t); }
+      else { away(leaving, t); under(arriving, 1 - t); }
+    };
+    frame(0);
     let finished = false;
     const finish = () => {
       if (finished) return;
@@ -631,7 +657,7 @@ export function createApp({
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
     //    The caption beside the lens is handed its cross-fade first (O-151).
-    crossfadeCaption(tempSelected);
+    slideCaption(tempSelected, 'in');
     phase('in:before-commit');
     setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
     phase('in:after-commit', { sky: lastPyramidData?.nodes?.length || 0 });
@@ -944,7 +970,7 @@ export function createApp({
     };
 
     // The caption beside the lens cross-fades to the parent level's word (O-151).
-    crossfadeCaption(tempSelected);
+    slideCaption(tempSelected, 'out');
 
     // Snapshot magnifier and parent-button state BEFORE animations start.
     // As in migrateIn: the OUTGOING parent label is what's on screen — the
