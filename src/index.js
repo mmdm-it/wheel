@@ -517,14 +517,30 @@ export function createApp({
     const leaving = wrap(before);
     const arriving = wrap(after);
     real.style.visibility = 'hidden';
-    // Under the lens: the word's seat travels to the lens centre, at size.
-    const under = (g, p) => {
-      g.style.transform = `translate(${((mx - cx) * p).toFixed(1)}px, ${((my - cy) * p).toFixed(1)}px)`;
+    // GONE BEFORE THE NODES SETTLE (Howell 2026-09-17: the word "moved
+    // partially under the magnifier and then faded out" — it travelled only
+    // as far as the lens's centre, so its tail was still outside the glass
+    // when the flight ended and the clone was taken away). The word travels
+    // its own length PAST the centre line, where the clip takes it, and it is
+    // clear by three quarters of the swipe — under the glass before the nodes
+    // take their seats, so there is nothing left to fade.
+    const seatDist = Math.hypot(mx - cx, my - cy) || 1;
+    const sx = (mx - cx) / seatDist, sy = (my - cy) / seatDist;
+    const widthOf = g => {
+      const t = g.firstChild;
+      try { return typeof t?.getComputedTextLength === 'function' ? t.getComputedTextLength() : 0; } catch (e) { return 0; }
+    };
+    const CLEAR_BY = 0.75;
+    const under = (g, p, span) => {
+      const d = Math.min(1, p / CLEAR_BY) * span;
+      g.style.transform = `translate(${(sx * d).toFixed(1)}px, ${(sy * d).toFixed(1)}px)`;
     };
     const away = (g, p) => { g.style.transform = `translate(${(ux * travel * p).toFixed(1)}px, ${(uy * travel * p).toFixed(1)}px)`; };
+    const leavingSpan = seatDist + widthOf(leaving) * 1.1;
+    const arrivingSpan = seatDist + widthOf(arriving) * 1.1;
     const frame = t => {
-      if (direction === 'out') { under(leaving, t); away(arriving, 1 - t); }
-      else { away(leaving, t); under(arriving, 1 - t); }
+      if (direction === 'out') { under(leaving, t, leavingSpan); away(arriving, 1 - t); }
+      else { away(leaving, t); under(arriving, 1 - t, arrivingSpan); }
     };
     frame(0);
     let finished = false;
