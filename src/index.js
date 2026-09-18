@@ -543,7 +543,16 @@ export function createApp({
       const d = Math.min(1, p / CLEAR_BY) * span;
       g.style.transform = `translate(${(sx * d).toFixed(1)}px, ${(sy * d).toFixed(1)}px)`;
     };
-    const away = (g, p) => { g.style.transform = `translate(${(ux * travel * p).toFixed(1)}px, ${(uy * travel * p).toFixed(1)}px)`; };
+    // FIRST IN, LAST OUT (Howell 2026-09-17: the word "should enter frame
+    // before the Focus Ring Nodes, and leave after"). Travelling at the
+    // nodes' own even pace, it spent most of the swipe out beyond the screen
+    // and only appeared at the end. The far ground is covered fast and the
+    // near ground slowly — so an arriving word is in frame within the first
+    // third, and a leaving one is still in frame when the nodes have gone.
+    const away = (g, p) => {
+      const d = travel * p * p;
+      g.style.transform = `translate(${(ux * d).toFixed(1)}px, ${(uy * d).toFixed(1)}px)`;
+    };
     const leavingSpan = seatDist + widthOf(leaving) * 1.1;
     const arrivingSpan = seatDist + widthOf(arriving) * 1.1;
     const frame = t => {
