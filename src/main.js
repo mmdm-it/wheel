@@ -62,6 +62,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
     history.unshift(r); if (history.length > 3) history.pop();
     framesText = history.map(h => `${h.kind.toUpperCase().padEnd(4)}${h.frames}f @${h.hz}Hz drop ${h.dropped} worst ${h.worst}\n    render ${h.renderMedian}/${h.renderMax} seek ${h.seekMedian}/${h.seekMax}`).join('\n');
     paint();
+    setTimeout(() => window.__probeRing?.('rest after ' + r.kind), 1500);   // the landed level, sky and all
     if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('frames', r);
   };
 }
