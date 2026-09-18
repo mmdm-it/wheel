@@ -2361,7 +2361,15 @@ function applyTheme(volume) {
   // it. A declared override skips the derivation and therefore skips the
   // safety the derivation happens to give: whoever declares one owes the
   // second measurement.
-  root.style.setProperty('--theme-color-orbital', darkenHex(active.band, 0.78));
+  // THE BAND IS THE DARKER, THE NODES THE LIGHTER (O-166, Howell 2026-09-18:
+  // "make the focus ring band the darker color. And all of the nodes, parent
+  // button, magnifier, focus ring, child pyramid, make all of these nodes the
+  // lighter color, which is the current focus ring band color"). The same
+  // pair of shades as before, swapped: the volume's declared band colour is
+  // the one colour every node wears, and the band is that colour one step
+  // darker — which overrides the band set above, once darkenHex exists.
+  root.style.setProperty('--theme-color-orbital', active.band);
+  root.style.setProperty('--theme-color-band', darkenHex(active.band, 0.78));
   root.style.setProperty('--theme-color-accent', active.accent);
   root.style.setProperty('--theme-color-magnifier-stroke', active.magnifierStroke);
   if (document.body) {
