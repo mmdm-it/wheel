@@ -3914,6 +3914,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // numeral), so the label can be seated by its NAME and the suffix hang
   // clear of the vessel. Volumes that append nothing need not define it.
   const adapterGetParentLabelSuffix = typeof handlerSet.getParentLabelSuffix === 'function' ? handlerSet.getParentLabelSuffix : null;
+  const adapterGetGapLabel = typeof handlerSet.getGapLabel === 'function' ? handlerSet.getGapLabel : null;
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
@@ -4010,6 +4011,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     onParentClick: parentHandler,
     getParentLabel: adapterGetParentLabel,
     getParentLabelSuffix: adapterGetParentLabelSuffix,
+    getGapLabel: adapterGetGapLabel,
     getTextDirection: typeof handlerSet.textDirection === 'function' ? handlerSet.textDirection : null,
     getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,

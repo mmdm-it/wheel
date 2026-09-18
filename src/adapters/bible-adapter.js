@@ -947,6 +947,15 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // guess where a name ends (a trailing-token split would cut PALMER
   // BROTHERS in half), the volume that builds the compound says what it
   // appended. Every other level returns '' and keeps the original rules.
+  // THE GAP BETWEEN TWO VERSES OF ONE BOOK STILL NAMES THE BOOK (O-168):
+  // the chapter's numeral is what the gap does not know, so only it goes;
+  // the gap between two books names nothing.
+  const getGapLabel = (a, b) => {
+    if (!a || !b || a.level !== 'verse' || b.level !== 'verse') return '';
+    const ba = a.meta?.bookId || a.bookKey || null, bb = b.meta?.bookId || b.bookKey || null;
+    if (!ba || ba !== bb) return '';
+    return toDisplayCase(bookNameFor(ba));
+  };
   const getParentLabelSuffix = (item) => {
     if (item?.level !== 'verse') return '';
     const chapterKey = item.meta?.chapterLabel;
@@ -1194,6 +1203,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     childrenHandler,
     getParentLabel,
     getParentLabelSuffix,
+    getGapLabel,
     reseatOnEditionChange,
     onBoot,
     // THE FRONT-DOOR GLOBE (Howell 2026-07-27): the dimension globe shows at

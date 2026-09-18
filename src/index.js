@@ -97,6 +97,7 @@ export function createApp({
   onParentClick,
   getParentLabel: externalGetParentLabel,
   getParentLabelSuffix: externalGetParentLabelSuffix,
+  getGapLabel: externalGetGapLabel = null,
   // Which way the volume's text runs — 'ltr' or 'rtl' (O-139); the suffixed
   // parent label and its flights seat by it.
   getTextDirection: externalGetTextDirection = null,
@@ -1993,7 +1994,25 @@ export function createApp({
     // Use the live nearest-to-magnifier node during rotation so the parent
     // button label updates as different items pass through the magnifier.
     // pyramidSelected already falls back to `selected` when not rotating.
-    const parentLabel = getParentLabel(pyramidSelected);
+    // THE GAP KEEPS WHAT IT KNOWS (O-168, Howell 2026-09-18): turned into the
+    // gap between two neighbours, the lens holds nothing — but the two
+    // neighbours may share a parent, and then the parent's seat still names
+    // it, without the suffix that belonged to the seat left behind. The
+    // adapter answers, from the items either side of the glass; a gap whose
+    // neighbours share nothing names nothing.
+    const gapNeighbours = (() => {
+      if (pyramidSelected !== null || !isRotating) return null;
+      let below = null, above = null;
+      for (const node of nodes) {
+        if (!node.item || node.item.placebo) continue;
+        if (node.angle <= magnifier.angle) { if (!below || node.angle > below.angle) below = node; }
+        else if (!above || node.angle < above.angle) above = node;
+      }
+      return below && above ? [below.item, above.item] : null;
+    })();
+    const parentLabel = (gapNeighbours && typeof externalGetGapLabel === 'function')
+      ? (externalGetGapLabel(gapNeighbours[0], gapNeighbours[1]) || '')
+      : getParentLabel(pyramidSelected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
       ? (lastParentLabelOut || parentLabel || selectedMagnifierLabel)
