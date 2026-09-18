@@ -145,9 +145,12 @@ export class FocusRingView {
     this.magnifierCaption = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     this.magnifierCaption.setAttribute('class', 'focus-ring-magnifier-caption');
     this.magnifierCaption.setAttribute('dominant-baseline', 'middle');
-    // The caption draws UNDER the lens (O-163): it slides out from behind
-    // the disc when its ring arrives and back under it when its ring leaves.
-    this.magnifierGroup.appendChild(this.magnifierCaption);
+    // THE CAPTION DRAWS UNDER THE BAND (O-163, Howell 2026-09-17): the level's
+    // word slides in and out along the lens's label line and must vanish as
+    // it goes under the ring's own band, which the node arriving in the glass
+    // cannot cover in time. It is the first thing in the drawing, below the
+    // band, the nodes and the lens; at its seat it stands clear of all three.
+    this.contentGroup.insertBefore(this.magnifierCaption, this.band);
     this.magnifierGroup.appendChild(this.magnifierCircle);
     this.magnifierGroup.appendChild(this.magnifierLabel);
     this.contentGroup.appendChild(this.magnifierGroup);

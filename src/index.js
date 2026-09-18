@@ -473,8 +473,8 @@ export function createApp({
     const after = nextItem ? String(formatLabel({ item: nextItem, context: 'caption' }) || '') : '';
     if (before === after) return;
     const host = view.contentGroup || real.parentNode;
-    const magnifierGroup = view.magnifierGroup || null;
     if (!host) return;
+    const underThis = view.band && view.band.parentNode === host ? view.band : host.firstChild;
     const cx = Number(real.getAttribute('x')) || 0, cy = Number(real.getAttribute('y')) || 0;
     const mx = magnifier.x, my = magnifier.y;
     const hx = cx - arcParams.hubX, hy = cy - arcParams.hubY, hl = Math.hypot(hx, hy) || 1;
@@ -482,11 +482,12 @@ export function createApp({
     // AT FULL SIZE, AND COVERED RATHER THAN SHRUNK (O-163 amended, Howell:
     // "It shouldn't shrink though, and it should not be visible through the
     // incoming node"). The word keeps its size and slides along its own seat
-    // line into the lens, where the arriving node's disc covers it; the half
-    // that would show past the far side of the disc is clipped away at the
-    // lens's centre line. The clones ride BELOW the lens and below every
-    // flight overlay: each render lifts the lens group to the top, so a
-    // caption inside it drew over the node arriving in the glass.
+    // line into the lens. IT GOES UNDER THE RING'S BAND (Howell, with the
+    // part to hide marked on a photograph): the node arriving in the glass
+    // cannot reach the lens in time to cover the word, but the band can and
+    // does — so the word and its clones draw beneath the band, the nodes and
+    // the lens, and the half that would show past the far side is clipped at
+    // the lens's centre line.
     const SVG = 'http://www.w3.org/2000/svg';
     const defs = document.createElementNS(SVG, 'defs');
     const clipId = `caption-clip-${Date.now().toString(36)}-${Math.floor(Math.random() * 1e6)}`;
@@ -510,8 +511,7 @@ export function createApp({
       t.style.opacity = '1';
       g.appendChild(t);
       g.setAttribute('clip-path', `url(#${clipId})`);
-      if (magnifierGroup && magnifierGroup.parentNode === host) host.insertBefore(g, magnifierGroup);
-      else host.appendChild(g);
+      if (underThis) host.insertBefore(g, underThis); else host.appendChild(g);
       return g;
     };
     const leaving = wrap(before);
