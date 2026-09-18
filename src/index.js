@@ -478,7 +478,21 @@ export function createApp({
     const cx = Number(real.getAttribute('x')) || 0, cy = Number(real.getAttribute('y')) || 0;
     const mx = magnifier.x, my = magnifier.y;
     const hx = cx - arcParams.hubX, hy = cy - arcParams.hubY, hl = Math.hypot(hx, hy) || 1;
-    const ux = hx / hl, uy = hy / hl, travel = arcParams.radius * 1.2;
+    const ux = hx / hl, uy = hy / hl;
+    // JUST BEYOND THE EDGE, NOT FAR BEYOND IT (Howell 2026-09-17: "the
+    // incoming chapter label lags well behind the incoming focus ring
+    // nodes"). The word used to set out from a fifth again as far as the
+    // ring's own radius, most of it a march through blank space off screen,
+    // so it crossed the edge only halfway through the swipe. Now the distance
+    // is measured: seat to the screen's edge along its own line, plus the
+    // word's length — so it is in frame almost as soon as it moves.
+    const vw = vp?.width || (typeof window !== 'undefined' ? window.innerWidth : 0) || 1;
+    const vh = vp?.height || (typeof window !== 'undefined' ? window.innerHeight : 0) || 1;
+    const toEdge = Math.min(
+      ux > 0 ? (vw - cx) / ux : (ux < 0 ? -cx / ux : Infinity),
+      uy > 0 ? (vh - cy) / uy : (uy < 0 ? -cy / uy : Infinity)
+    );
+    const edgeDist = Number.isFinite(toEdge) && toEdge > 0 ? toEdge : arcParams.radius;
     // AT FULL SIZE, AND COVERED RATHER THAN SHRUNK (O-163 amended, Howell:
     // "It shouldn't shrink though, and it should not be visible through the
     // incoming node"). The word keeps its size and slides along its own seat
@@ -543,6 +557,7 @@ export function createApp({
       const d = Math.min(1, p / CLEAR_BY) * span;
       g.style.transform = `translate(${(sx * d).toFixed(1)}px, ${(sy * d).toFixed(1)}px)`;
     };
+    let travel = arcParams.radius;
     // FIRST IN, LAST OUT (Howell 2026-09-17: the word "should enter frame
     // before the Focus Ring Nodes, and leave after"). Travelling at the
     // nodes' own even pace, it spent most of the swipe out beyond the screen
@@ -550,11 +565,12 @@ export function createApp({
     // near ground slowly — so an arriving word is in frame within the first
     // third, and a leaving one is still in frame when the nodes have gone.
     const away = (g, p) => {
-      const d = travel * p * p;
+      const d = travel * p * p;   // far ground fast, near ground slow
       g.style.transform = `translate(${(ux * d).toFixed(1)}px, ${(uy * d).toFixed(1)}px)`;
     };
     const leavingSpan = seatDist + widthOf(leaving) * 1.1;
     const arrivingSpan = seatDist + widthOf(arriving) * 1.1;
+    travel = edgeDist + Math.max(widthOf(leaving), widthOf(arriving)) * 1.2 + magnifierRadius * 0.5;
     const frame = t => {
       if (direction === 'out') { under(leaving, t, leavingSpan); away(arriving, 1 - t); }
       else { away(leaving, t); under(arriving, 1 - t, arrivingSpan); }
