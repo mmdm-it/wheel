@@ -1994,32 +1994,36 @@ export function createApp({
     // Use the live nearest-to-magnifier node during rotation so the parent
     // button label updates as different items pass through the magnifier.
     // pyramidSelected already falls back to `selected` when not rotating.
-    // THE GAP KEEPS WHAT IT KNOWS (O-168, Howell 2026-09-18): turned into the
-    // gap between two neighbours, the lens holds nothing — but the two
-    // neighbours may share a parent, and then the parent's seat still names
-    // it, without the suffix that belonged to the seat left behind. The
-    // adapter answers, from the items either side of the glass; a gap whose
-    // neighbours share nothing names nothing.
-    const gapNeighbours = (() => {
-      if (pyramidSelected !== null || !isRotating) return null;
+    // THE GAP KEEPS THE NEARER SEAT'S NAME (O-168, Howell 2026-09-18; first
+    // built to name the parent alone in a gap, which he found "noisy and
+    // busy, three quick changes in such a short time"): turned into the gap
+    // between two neighbours that share a parent, the seat keeps naming the
+    // nearer neighbour's full label — GENESIS 4 until the middle of the gap,
+    // GENESIS 5 from there — so the name flips once, in the middle, and never
+    // passes through a bare parent. The adapter answers from the nearer and
+    // farther items either side of the glass; a gap whose neighbours share
+    // nothing names nothing.
+    const gapSeat = (() => {
+      if (pyramidSelected !== null || !isRotating || typeof externalGetGapLabel !== 'function') return null;
       let below = null, above = null;
       for (const node of nodes) {
         if (!node.item || node.item.placebo) continue;
         if (node.angle <= magnifier.angle) { if (!below || node.angle > below.angle) below = node; }
         else if (!above || node.angle < above.angle) above = node;
       }
-      return below && above ? [below.item, above.item] : null;
+      if (!below || !above) return null;
+      const nearer = (magnifier.angle - below.angle) <= (above.angle - magnifier.angle) ? below : above;
+      const farther = nearer === below ? above : below;
+      const label = externalGetGapLabel(nearer.item, farther.item) || '';
+      return { label, item: label ? nearer.item : null };
     })();
-    const parentLabel = (gapNeighbours && typeof externalGetGapLabel === 'function')
-      ? (externalGetGapLabel(gapNeighbours[0], gapNeighbours[1]) || '')
-      : getParentLabel(pyramidSelected);
+    const parentLabel = gapSeat ? gapSeat.label : getParentLabel(pyramidSelected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
       ? (lastParentLabelOut || parentLabel || selectedMagnifierLabel)
       : selectedMagnifierLabel;
-    // What the volume appended, so the view can seat by the name alone.
     const parentOuterSuffix = typeof externalGetParentLabelSuffix === 'function'
-      ? (externalGetParentLabelSuffix(pyramidSelected) || '') : '';
+      ? (externalGetParentLabelSuffix(gapSeat ? gapSeat.item : pyramidSelected) || '') : '';
     parentLabelSuffixHint = parentOuterSuffix;
     const parentOuterLabel = isLayerOut
       ? (parentLabel || lastSelectedLabelOut || selectedMagnifierLabel)

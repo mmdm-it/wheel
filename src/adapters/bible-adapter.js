@@ -947,14 +947,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // guess where a name ends (a trailing-token split would cut PALMER
   // BROTHERS in half), the volume that builds the compound says what it
   // appended. Every other level returns '' and keeps the original rules.
-  // THE GAP BETWEEN TWO VERSES OF ONE BOOK STILL NAMES THE BOOK (O-168):
-  // the chapter's numeral is what the gap does not know, so only it goes;
-  // the gap between two books names nothing.
-  const getGapLabel = (a, b) => {
-    if (!a || !b || a.level !== 'verse' || b.level !== 'verse') return '';
-    const ba = a.meta?.bookId || a.bookKey || null, bb = b.meta?.bookId || b.bookKey || null;
+  // THE GAP BETWEEN TWO VERSES OF ONE BOOK NAMES THE NEARER CHAPTER (O-168):
+  // GENESIS 4 to the middle of the gap, GENESIS 5 from there; the gap
+  // between two books names nothing.
+  const getGapLabel = (nearer, farther) => {
+    if (!nearer || !farther || nearer.level !== 'verse' || farther.level !== 'verse') return '';
+    const ba = nearer.meta?.bookId || nearer.bookKey || null, bb = farther.meta?.bookId || farther.bookKey || null;
     if (!ba || ba !== bb) return '';
-    return toDisplayCase(bookNameFor(ba));
+    return getParentLabel(nearer);
   };
   const getParentLabelSuffix = (item) => {
     if (item?.level !== 'verse') return '';
