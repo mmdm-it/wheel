@@ -1726,7 +1726,7 @@ export function animateParentToMagnifier(opts) {
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
   const dressP2M = travelColors(svgRoot);
-  circle.style.fill = dressP2M.radial;
+  circle.style.fill = dressP2M.orbital;   // a node's one colour (O-164)
   g.appendChild(circle);
 
   // Label starting offset-left of the parent button (text-anchor: start).
@@ -1820,7 +1820,7 @@ export function animateVolumeParentMerge(opts) {
   staticDisc.setAttribute('cy', toY);
   staticDisc.setAttribute('r', radius);
   staticDisc.setAttribute('class', 'focus-ring-magnifier-circle');
-  staticDisc.style.fill = dressMerge.radial;
+  staticDisc.style.fill = dressMerge.orbital;
   overlay.appendChild(staticDisc);
 
   const staticBase = document.createElementNS(SVG_NS, 'text');
@@ -1954,7 +1954,7 @@ export function animateVolumeParentUnmerge(opts) {
   staticDisc.setAttribute('cy', toY);
   staticDisc.setAttribute('r', radius);
   staticDisc.setAttribute('class', 'focus-ring-magnifier-circle');
-  staticDisc.style.fill = dressUnmerge.radial;
+  staticDisc.style.fill = dressUnmerge.orbital;
   overlay.appendChild(staticDisc);
 
   const staticBase = document.createElementNS(SVG_NS, 'text');
@@ -1977,7 +1977,7 @@ export function animateVolumeParentUnmerge(opts) {
   circle.setAttribute('cy', toY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
-  circle.style.fill = dressUnmerge.radial; // departs in the vessel's dress
+  circle.style.fill = dressUnmerge.orbital; // a node's one colour (O-164)
   moving.appendChild(circle);
 
   const labelWrap = document.createElementNS(SVG_NS, 'g');
@@ -2104,7 +2104,7 @@ export function animateParentButtonOutward(opts) {
     circle.setAttribute('cy', buttonY);
     circle.setAttribute('r', radius);
     circle.setAttribute('class', 'focus-ring-magnifier-circle');
-    circle.style.fill = travelColors(svgRoot).radial; // the vessel travels radially
+    circle.style.fill = travelColors(svgRoot).orbital; // a node's one colour (O-164)
     g.appendChild(circle);
   }
 
@@ -2200,7 +2200,7 @@ export function animateParentButtonInward(opts) {
     circle.setAttribute('cy', buttonY);
     circle.setAttribute('r', radius);
     circle.setAttribute('class', 'focus-ring-magnifier-circle');
-    circle.style.fill = travelColors(svgRoot).radial; // the vessel travels radially
+    circle.style.fill = travelColors(svgRoot).orbital; // a node's one colour (O-164)
     g.appendChild(circle);
   }
 
