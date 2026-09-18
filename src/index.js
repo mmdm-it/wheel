@@ -504,14 +504,22 @@ export function createApp({
     clip.appendChild(rect);
     defs.appendChild(clip);
     host.appendChild(defs);
+    // THE CLIP MUST NOT TRAVEL WITH THE WORD (Howell: "The label must not
+    // reappear on the other side of the Focus Ring Band"). A clip on the same
+    // element that carries the transform is resolved in that element's own
+    // moved space, so it slid along with the text and never cut anything: the
+    // clipped shell stands still and an inner group does the travelling.
     const wrap = text => {
+      const shell = document.createElementNS(SVG, 'g');
+      shell.setAttribute('clip-path', `url(#${clipId})`);
       const g = document.createElementNS(SVG, 'g');
       const t = real.cloneNode(true);
       t.textContent = text;
       t.style.opacity = '1';
       g.appendChild(t);
-      g.setAttribute('clip-path', `url(#${clipId})`);
-      if (underThis) host.insertBefore(g, underThis); else host.appendChild(g);
+      shell.appendChild(g);
+      g.shell = shell;
+      if (underThis) host.insertBefore(shell, underThis); else host.appendChild(shell);
       return g;
     };
     const leaving = wrap(before);
@@ -548,8 +556,8 @@ export function createApp({
       if (finished) return;
       finished = true;
       real.style.visibility = '';
-      leaving.remove();
-      arriving.remove();
+      (leaving.shell || leaving).remove();
+      (arriving.shell || arriving).remove();
       defs.remove();
     };
     const scrubbed = scrubDriver(600, frame, { onCommit: finish, onAbort: finish });
