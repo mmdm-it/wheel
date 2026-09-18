@@ -469,7 +469,11 @@ export class FocusRingView {
       // a left-to-right tongue, right of it for a right-to-left one, which is
       // where the word comes before the numeral to that reader's eye.
       if (this.magnifierCaption) {
-        const caption = isRotating || eclipsed ? '' : (magnifier.caption || '');
+        // PERSISTENT (O-167, Howell 2026-09-18): the word names the RING's
+        // level, not the lens's occupant, so it stays through rotation and
+        // through an eclipse — it goes only when the ring itself goes, sliding
+        // under the band with a drill (O-163), or at root, where there is none.
+        const caption = magnifier.caption || '';
         const theta = (magRotation * Math.PI) / 180;
         const gap = radius * CAPTION_GAP_RADII;
         const rtl = magnifier.captionDirection === 'rtl';
