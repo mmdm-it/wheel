@@ -648,11 +648,24 @@ export function createApp({
     // pyramid's nodes and nothing else, and placing every item of the new
     // chain — the whole volume's verses on a drill into one — cost 13–31 ms
     // on the phone for a few dozen flights.
-    const skyIds = new Set(pyramidNodes.map(pn => pn.item?.id ?? pn.id).filter(id => id != null));
-    const ringTargets = calculateAllNodePositions(
-      tempNormalized.map(item => (item && skyIds.has(item.id) ? item : null)).map((item, index) => (item && !Number.isFinite(item.order) ? { ...item, order: index } : item)),
-      vp, tempRotation, nodeRadius, nodeSpacing);
+    // ONLY THE SEATS ON SCREEN ARE FLOWN TO (O-165, Howell 2026-09-17, on
+    // three photographs of a drill into the Psalms' chapters). A book's sky
+    // holds a spread of the whole book — 28 stars out of 151 chapters — while
+    // its ring shows about a dozen seats at a time. Every star was flown to
+    // its true seat, so the ones seated far up or down the chain streaked
+    // clear across the face on their way off the edge, crossing the dozen
+    // that were settling. A star whose seat is off screen now departs the way
+    // stars have always departed on a filter change: to the flock point on
+    // its own side of the chain, up-chain or down-chain, and out of frame.
+    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
     phase('in:ring-targets', { n: ringTargets.length });
+    const seatedIds = new Set(ringTargets.map(t => String(t.item?.id ?? '')));
+    const orderById = new Map(tempNormalized.filter(Boolean)
+      .map((it, i) => [String(it.id), Number.isFinite(it.order) ? it.order : i]));
+    const seatedOrders = ringTargets.map(t => orderById.get(String(t.item?.id ?? ''))).filter(Number.isFinite);
+    const minSeatedOrder = seatedOrders.length ? Math.min(...seatedOrders) : 0;
+    const arrivingStars = pyramidNodes.filter(pn => seatedIds.has(String(pn.item?.id ?? pn.id ?? '')));
+    const distantStars = pyramidNodes.filter(pn => !seatedIds.has(String(pn.item?.id ?? pn.id ?? '')));
 
     // 3. Snapshot current focus-ring node positions before they vanish.
     //    These will animate radially outward while new nodes animate in.
@@ -815,9 +828,20 @@ export function createApp({
       }
     }
 
+    if (distantStars.length) {
+      const { upper: flockUpper, lower: flockLower } = flockOrigins();
+      animateStarsAway({
+        svgRoot: view.contentGroup || view.svgRoot,
+        stars: distantStars.map(s => ({
+          ...s,
+          to: (orderById.get(String(s.item?.id ?? s.id ?? '')) ?? Infinity) < minSeatedOrder ? flockUpper : flockLower
+        }))
+      });
+    }
+
     animateIn({
       svgRoot: view.contentGroup || view.svgRoot,
-      pyramidNodes,
+      pyramidNodes: arrivingStars,
       ringTargets,
       magnifierAngle: magnifier.angle,
       clickedId: selectedId,
