@@ -34,23 +34,34 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   // and its effective opacity — so a node that looks lighter in flight can
   // say which element paints it and at what opacity.
   const effOp = el => { let o = 1; for (let e = el; e && e.nodeType === 1; e = e.parentNode) { const v = parseFloat(getComputedStyle(e).opacity); if (!Number.isNaN(v)) o *= v; } return o.toFixed(2); };
-  window.__probeRing = () => {
-    const nodes = [...document.querySelectorAll('#app .focus-ring-node')].slice(1, 3);
-    const lines = [];
-    nodes.forEach(n => {
-      const r = n.getBoundingClientRect(); const x = r.left + r.width / 2, y = r.top + r.height / 2;
-      lines.push(`@${Math.round(x)},${Math.round(y)} real ${getComputedStyle(n).fill} op ${effOp(n)}`);
-      document.elementsFromPoint(x, y).slice(0, 5).forEach(el => lines.push(`  ${el.tagName}.${(el.getAttribute('class') || '').split(' ')[0]} ${getComputedStyle(el).fill} op ${effOp(el)}`));
-    });
-    box.textContent = lines.join('\n');
+  let probeText = '';
+  const paint = () => { box.textContent = [probeText, framesText].filter(Boolean).join('\n'); };
+  const describe = (tag, n) => {
+    if (!n) return [`${tag}: none`];
+    const cs = getComputedStyle(n);
+    const r = n.getBoundingClientRect(); const x = r.left + r.width / 2, y = r.top + r.height / 2;
+    const out = [`${tag} @${Math.round(x)},${Math.round(y)} fill ${cs.fill} fo ${cs.fillOpacity} op ${effOp(n)} cls ${n.getAttribute('class')}`];
+    document.elementsFromPoint(x, y).slice(0, 4).forEach(el => out.push(`  ${el.tagName}.${(el.getAttribute('class') || '').split(' ')[0]} ${getComputedStyle(el).fill} fo ${getComputedStyle(el).fillOpacity} op ${effOp(el)}`));
+    return out;
   };
+  window.__probeRing = label => {
+    const ring = document.querySelectorAll('#app .focus-ring-node')[1] || null;
+    const sky = document.querySelector('#app .child-pyramid-node');
+    const app = document.getElementById('app');
+    probeText = [`${label || 'probe'}: app cls "${app?.getAttribute('class') || ''}" paint ${app ? getComputedStyle(app).getPropertyValue('--boot-paint') : ''}`,
+      ...describe('ring', ring), ...describe('sky', sky)].join('\n');
+    paint();
+  };
+  setTimeout(() => window.__probeRing('rest'), 3500);
   const mount = () => document.body?.appendChild(box);
   if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
   const history = [];
+  let framesText = '';
   window.__wheelFrameReport = r => {
     r.kind = window.__wheelFrameKind || '?';
-    history.unshift(r); if (history.length > 6) history.pop(); // six drills: three each way in one screenshot
-    box.textContent = history.map(h => `${h.kind.toUpperCase().padEnd(4)}${h.frames}f @${h.hz}Hz drop ${h.dropped} worst ${h.worst}\n    render ${h.renderMedian}/${h.renderMax} seek ${h.seekMedian}/${h.seekMax}`).join('\n');
+    history.unshift(r); if (history.length > 3) history.pop();
+    framesText = history.map(h => `${h.kind.toUpperCase().padEnd(4)}${h.frames}f @${h.hz}Hz drop ${h.dropped} worst ${h.worst}\n    render ${h.renderMedian}/${h.renderMax} seek ${h.seekMedian}/${h.seekMax}`).join('\n');
+    paint();
     if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('frames', r);
   };
 }
@@ -3047,7 +3058,7 @@ function wireInteractions(getApp) {
     if (freeDrill) {
       freeDrill.e = freeDrillProgress(freeDrill, event);
       freeDrill.ctl.scrubTo(freeDrill.e);
-      if (!freeDrill.probed && freeDrill.e > 0.3 && typeof window.__probeRing === 'function') { freeDrill.probed = true; setTimeout(window.__probeRing, 50); }
+      if (!freeDrill.probed && freeDrill.e > 0.3 && typeof window.__probeRing === 'function') { freeDrill.probed = true; setTimeout(() => window.__probeRing('drill ' + freeDrill.kind), 50); }
       return;
     }
     if (controlPress) {
