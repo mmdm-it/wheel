@@ -1606,6 +1606,7 @@ export function animateMagnifierToParent(opts) {
   circle.setAttribute('cy', fromY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
   if (bare) circle.style.stroke = 'none';
   g.appendChild(circle);
   // Bound for the parent vessel: orbital fades to radial in flight, the
@@ -1725,6 +1726,7 @@ export function animateParentToMagnifier(opts) {
   circle.setAttribute('cy', toY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
   const dressP2M = travelColors(svgRoot);
   circle.style.fill = dressP2M.orbital;   // a node's one colour (O-164)
   g.appendChild(circle);
@@ -1844,6 +1846,7 @@ export function animateVolumeParentMerge(opts) {
   circle.setAttribute('cy', fromY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
   moving.appendChild(circle);
 
   const labelWrap = document.createElementNS(SVG_NS, 'g');
@@ -1977,6 +1980,7 @@ export function animateVolumeParentUnmerge(opts) {
   circle.setAttribute('cy', toY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
   circle.style.fill = dressUnmerge.orbital; // a node's one colour (O-164)
   moving.appendChild(circle);
 
@@ -2104,6 +2108,7 @@ export function animateParentButtonOutward(opts) {
     circle.setAttribute('cy', buttonY);
     circle.setAttribute('r', radius);
     circle.setAttribute('class', 'focus-ring-magnifier-circle');
+    circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
     circle.style.fill = travelColors(svgRoot).orbital; // a node's one colour (O-164)
     g.appendChild(circle);
   }
@@ -2200,6 +2205,7 @@ export function animateParentButtonInward(opts) {
     circle.setAttribute('cy', buttonY);
     circle.setAttribute('r', radius);
     circle.setAttribute('class', 'focus-ring-magnifier-circle');
+    circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
     circle.style.fill = travelColors(svgRoot).orbital; // a node's one colour (O-164)
     g.appendChild(circle);
   }
