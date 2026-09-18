@@ -29,6 +29,21 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
     hide();
     box.textContent += `  [${hideSel === '#volume-logo-group' ? 'no sector' : 'no watermark'}]`;
   }
+  // THE RING PROBE (bench only): a third of the way into a drill, list what
+  // is drawn at two ring seats — every element under the point, its fill
+  // and its effective opacity — so a node that looks lighter in flight can
+  // say which element paints it and at what opacity.
+  const effOp = el => { let o = 1; for (let e = el; e && e.nodeType === 1; e = e.parentNode) { const v = parseFloat(getComputedStyle(e).opacity); if (!Number.isNaN(v)) o *= v; } return o.toFixed(2); };
+  window.__probeRing = () => {
+    const nodes = [...document.querySelectorAll('#app .focus-ring-node')].slice(1, 3);
+    const lines = [];
+    nodes.forEach(n => {
+      const r = n.getBoundingClientRect(); const x = r.left + r.width / 2, y = r.top + r.height / 2;
+      lines.push(`@${Math.round(x)},${Math.round(y)} real ${getComputedStyle(n).fill} op ${effOp(n)}`);
+      document.elementsFromPoint(x, y).slice(0, 5).forEach(el => lines.push(`  ${el.tagName}.${(el.getAttribute('class') || '').split(' ')[0]} ${getComputedStyle(el).fill} op ${effOp(el)}`));
+    });
+    box.textContent = lines.join('\n');
+  };
   const mount = () => document.body?.appendChild(box);
   if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
   const history = [];
@@ -3032,6 +3047,7 @@ function wireInteractions(getApp) {
     if (freeDrill) {
       freeDrill.e = freeDrillProgress(freeDrill, event);
       freeDrill.ctl.scrubTo(freeDrill.e);
+      if (!freeDrill.probed && freeDrill.e > 0.3 && typeof window.__probeRing === 'function') { freeDrill.probed = true; setTimeout(window.__probeRing, 50); }
       return;
     }
     if (controlPress) {
