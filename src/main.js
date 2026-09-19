@@ -2530,7 +2530,12 @@ window.addEventListener('detail-sector-change', (e) => {
           dive = { ux: rx / rl, uy: ry / rl, travel: Math.max(0, far - inner) + 4 };
         }
         if (dive) {
-          const mask = `radial-gradient(circle at ${hub.x}px ${hub.y}px, transparent ${outer}px, #000 ${outer + 0.5}px)`;
+          // THE MASK MUST NOT TRAVEL WITH THE NOTES (the caption's clip had
+          // the same fault): a mask on the element that carries the transform
+          // moves with it, so the band's edge went along for the ride and cut
+          // nothing. Its centre is re-seated each frame by the displacement.
+          dive.maskAt = (tx, ty) => `radial-gradient(circle at ${(hub.x - tx).toFixed(1)}px ${(hub.y - ty).toFixed(1)}px, transparent ${outer}px, #000 ${outer + 0.5}px)`;
+          const mask = dive.maskAt(0, 0);
           notePanels.forEach(el => { el.style.maskImage = mask; el.style.webkitMaskImage = mask; });
         }
         if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('notes-dive', { n, misses, far: Math.round(far), outer: Math.round(outer), travel: dive ? Math.round(dive.travel) : null, ux: dive ? Math.round(dive.ux * 100) / 100 : null, uy: dive ? Math.round(dive.uy * 100) / 100 : null, hub: { x: Math.round(hub.x), y: Math.round(hub.y) }, w: window.innerWidth, h: window.innerHeight });
@@ -2547,7 +2552,9 @@ window.addEventListener('detail-sector-change', (e) => {
         textPanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
         if (dive) {
           const q = Math.min(1, t / 0.75);
-          notePanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(dive.ux * dive.travel * q).toFixed(1)}px, ${(dive.uy * dive.travel * q).toFixed(1)}px)`; });
+          const tx = dive.ux * dive.travel * q, ty = dive.uy * dive.travel * q;
+          const mask = dive.maskAt ? dive.maskAt(tx, ty) : null;
+          notePanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${tx.toFixed(1)}px, ${ty.toFixed(1)}px)`; if (mask) { el.style.maskImage = mask; el.style.webkitMaskImage = mask; } });
         } else {
           notePanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
         }
