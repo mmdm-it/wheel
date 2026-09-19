@@ -2488,7 +2488,7 @@ window.addEventListener('detail-sector-change', (e) => {
       const travel = Math.hypot(vw, vh) * 0.9;   // clear of the screen along the hub's line
       leave = { ux: dx / len, uy: dy / len, travel };
       panels.forEach(el => { el.style.willChange = 'transform'; });
-      if (band && Number.isFinite(band.radius) && notePanels.length) {
+      try { if (band && Number.isFinite(band.radius) && notePanels.length) {
         // AS ONE BLOCK WITH THE VERSE WORD (Howell 2026-09-19: "the verse
         // label and the notes ... all move as a block and disappear under the
         // focus ring band"). The notes take the caption's own seat line, at
@@ -2533,8 +2533,8 @@ window.addEventListener('detail-sector-change', (e) => {
           const mask = `radial-gradient(circle at ${hub.x}px ${hub.y}px, transparent ${outer}px, #000 ${outer + 0.5}px)`;
           notePanels.forEach(el => { el.style.maskImage = mask; el.style.webkitMaskImage = mask; });
         }
-        logTap('notes-dive', { n, misses, far: Math.round(far), outer: Math.round(outer), travel: dive ? Math.round(dive.travel) : null, ux: dive ? Math.round(dive.ux * 100) / 100 : null, uy: dive ? Math.round(dive.uy * 100) / 100 : null, hub: { x: Math.round(hub.x), y: Math.round(hub.y) }, w: window.innerWidth, h: window.innerHeight });
-      }
+        if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('notes-dive', { n, misses, far: Math.round(far), outer: Math.round(outer), travel: dive ? Math.round(dive.travel) : null, ux: dive ? Math.round(dive.ux * 100) / 100 : null, uy: dive ? Math.round(dive.uy * 100) / 100 : null, hub: { x: Math.round(hub.x), y: Math.round(hub.y) }, w: window.innerWidth, h: window.innerHeight });
+      } } catch (err) { dive = null; if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('notes-dive-error', { message: String(err && err.message || err) }); }
     }
     const scrubbed = scrubDriver(600, t => {
       if (leave) {
