@@ -2468,17 +2468,45 @@ window.addEventListener('detail-sector-change', (e) => {
   // leave as one block toward the hub — off the screen's corner — shrinking
   // as they go, at full ink, and are gone by two-thirds of the swipe, ahead
   // of the nodes. A fade remains only where no hub is known.
+  //
+  // THE NOTES GO UNDER THE BAND (O-171, Howell 2026-09-19): the verse leaves
+  // toward the hub, but the notes and the manuscript key sit on the ground
+  // beside the band, like the level's word — so they slide toward the band
+  // as a block and vanish under its outer edge, masked away there, clear by
+  // three quarters of the swipe. Only the verse text leaves the screen.
   const panels = [detailPanel, marginPanel, marginMarks].filter(Boolean);
+  const textPanels = [detailPanel].filter(Boolean);
+  const notePanels = [marginPanel, marginMarks].filter(Boolean);
   const hub = e.detail?.hub || null;
+  const band = e.detail?.band || null;
   if (!visible && panels.length) {
-    const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; el.style.transform = ''; el.style.willChange = ''; });
-    let leave = null;
+    const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; el.style.transform = ''; el.style.willChange = ''; el.style.maskImage = ''; el.style.webkitMaskImage = ''; });
+    let leave = null, dive = null;
     if (hub && Number.isFinite(hub.x) && Number.isFinite(hub.y)) {
       const vw = window.innerWidth, vh = window.innerHeight;
       const dx = hub.x - vw / 2, dy = hub.y - vh / 2, len = Math.hypot(dx, dy) || 1;
       const travel = Math.hypot(vw, vh) * 0.9;   // clear of the screen along the hub's line
       leave = { ux: dx / len, uy: dy / len, travel };
       panels.forEach(el => { el.style.willChange = 'transform'; });
+      if (band && Number.isFinite(band.radius) && notePanels.length) {
+        // The notes' own centre and farthest corner, from the children that
+        // hold ink; the outer edge of the band is the line they vanish at.
+        const outer = band.radius + (band.width || 0) / 2;
+        let cx = 0, cy = 0, n = 0, far = 0;
+        notePanels.forEach(el => [...el.children].forEach(ch => {
+          const r = ch.getBoundingClientRect();
+          if (!r.width || !r.height) return;
+          cx += r.left + r.width / 2; cy += r.top + r.height / 2; n += 1;
+          [[r.left, r.top], [r.right, r.top], [r.left, r.bottom], [r.right, r.bottom]].forEach(([x, y]) => { far = Math.max(far, Math.hypot(x - hub.x, y - hub.y)); });
+        }));
+        if (n) {
+          cx /= n; cy /= n;
+          const ddx = hub.x - cx, ddy = hub.y - cy, dl = Math.hypot(ddx, ddy) || 1;
+          dive = { ux: ddx / dl, uy: ddy / dl, travel: Math.max(0, far - outer) + (band.width || 0) + 8 };
+          const mask = `radial-gradient(circle at ${hub.x}px ${hub.y}px, transparent ${outer}px, #000 ${outer + 0.5}px)`;
+          notePanels.forEach(el => { el.style.maskImage = mask; el.style.webkitMaskImage = mask; });
+        }
+      }
     }
     const scrubbed = scrubDriver(600, t => {
       if (leave) {
@@ -2488,7 +2516,13 @@ window.addEventListener('detail-sector-change', (e) => {
         // the nodes off only at the end.
         const p = Math.pow(t, 1.5);
         const k = 1 - 0.6 * p;
-        panels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
+        textPanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
+        if (dive) {
+          const q = Math.min(1, t / 0.75);
+          notePanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(dive.ux * dive.travel * q).toFixed(1)}px, ${(dive.uy * dive.travel * q).toFixed(1)}px)`; });
+        } else {
+          notePanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
+        }
       } else {
         const o = Math.max(0, 1 - t * 3);
         panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
@@ -2502,7 +2536,7 @@ window.addEventListener('detail-sector-change', (e) => {
         requestAnimationFrame(() => requestAnimationFrame(clear));
       },
       onAbort: () => {
-        panels.forEach(el => { el.style.opacity = '1'; el.style.transform = ''; });
+        panels.forEach(el => { el.style.opacity = '1'; el.style.transform = ''; el.style.maskImage = ''; el.style.webkitMaskImage = ''; });
         requestAnimationFrame(() => requestAnimationFrame(clear));
       }
     });
