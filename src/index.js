@@ -1166,37 +1166,50 @@ export function createApp({
     }
 
     phase('out:before-reverse');
+    // THE COMMIT LANDS BEFORE THE FLIGHTS, LAYER OR NO LAYER (O-170, Howell
+    // 2026-09-18: the ring's nodes "migrate to the child pyramid in a row and
+    // do not form the star field ... then the star field just appears").
+    // With a layer to reverse, only the stars that had flown IN flew back —
+    // and since O-165 those are the seats that were on screen at the drill
+    // in. After a turn of the ring the nodes on screen had no layer entry,
+    // so they faded as stragglers while their stars popped on at the end.
+    // The new sky must be known to say which departing node has a seat in
+    // it, so the data commit lands now in both cases, the real sky held
+    // hidden until the barrier; then every departing node the layer does
+    // not carry flies to its own sky seat — from its ring seat if it is on
+    // screen, from the hub if it is not — and only a node with no seat at
+    // all fades away.
+    let committed = false;
+    const commitOut = () => {
+      if (committed) return;
+      committed = true;
+      phase('out:before-commit');
+      setPrimaryItems(items, selectedIndex, preserveOrder);
+      phase('out:after-commit', { sky: lastPyramidData?.nodes?.length || 0 });
+    };
     animateOut({
       nodesGroup: view.nodesGroup,
       labelsGroup: view.labelsGroup,
       onComplete: () => {
-        // Data commit happens at animation end (not at the barrier): the
-        // repaint lands while the reals are still hidden behind clones.
-        phase('out:before-commit');
-        setPrimaryItems(items, selectedIndex, preserveOrder);
-        phase('out:after-commit', { sky: lastPyramidData?.nodes?.length || 0 });
-        // Restore pyramid group visibility — animatePyramidToHub hid it and
-        // intentionally did not restore it.  setPrimaryItems → render() has
-        // now repainted the children inside the group.
+        commitOut();
         if (view.pyramidView?.pyramidGroup) {
           view.pyramidView.pyramidGroup.style.opacity = '';
         }
-        // Everything else restores at the transaction barrier.
       }
     });
-    // No layer to reverse: animateOut completed at once and the commit above
-    // has painted the new sky — hide it again and fly the departing ring's
-    // seats into it (O-141).
+    if (!committed) {
+      if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
+      commitOut();
+    }
     phase('out:reversed');
-    // Ring nodes neither flight carries fade into the sky instead of
-    // vanishing (O-151 step five).
+    const skyNodes = lastPyramidData?.nodes || [];
+    const skyIds = new Set(skyNodes.map(n => n.item?.id ?? n.id).filter(id => id != null));
+    const unflown = skyNodes.filter(n => { const id = n.item?.id ?? n.id; return id != null && !(layerIds && layerIds.has(id)); });
+    const unflownIds = new Set(unflown.map(n => n.item?.id ?? n.id));
     {
-      const carried = noLayerToReverse
-        ? new Set((lastPyramidData?.nodes || []).map(n => n.item?.id ?? n.id))
-        : layerIds;
       const stragglers = onScreenRing.filter(n => {
         const id = n.item?.id;
-        return id != null && id !== departingLensId && !(carried && carried.has(id));
+        return id != null && id !== departingLensId && !(layerIds && layerIds.has(id)) && !skyIds.has(id);
       });
       if (stragglers.length) {
         animateStragglers({
@@ -1207,11 +1220,11 @@ export function createApp({
         });
       }
     }
-    if (noLayerToReverse && lastPyramidData?.nodes?.length) {
+    if (unflown.length) {
       animateRingToSky({
         svgRoot: view.contentGroup || view.svgRoot,
-        ringNodes: departingSeatsFor(new Set(lastPyramidData.nodes.map(n => n.item?.id ?? n.id).filter(id => id != null))),
-        pyramidNodes: lastPyramidData.nodes,
+        ringNodes: noLayerToReverse ? departingSeatsFor(unflownIds) : onScreenRing.filter(n => unflownIds.has(n.item?.id)),
+        pyramidNodes: unflown,
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         nodeRadius,

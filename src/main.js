@@ -3017,7 +3017,7 @@ function wireInteractions(getApp) {
     const app = getApp();
     if (!app) return false;
     const axis = axisFor(kind, lean());
-    const fd = { kind, x0, y0, ux: axis.ux, uy: axis.uy, e: 0 };
+    const fd = { kind, x0, y0, ux: axis.ux, uy: axis.uy, e: 0, pointerId: event?.pointerId ?? null };
     if (kind === 'in') {
       const idx = app.largestPyramidIndex?.() ?? -1;
       if (idx < 0) return false;   // a leaf: nothing below
@@ -3064,6 +3064,7 @@ function wireInteractions(getApp) {
     sw.ctl = ctl; sw.travel = drillTravelPx(app); sw.e = 0;
   };
   const onPointerMove = event => {
+    if (event.isPrimary === false) return;   // a second finger has no say (O-169)
     if (freeDrill) {
       freeDrill.e = freeDrillProgress(freeDrill, event);
       freeDrill.ctl.scrubTo(freeDrill.e);
@@ -3189,6 +3190,8 @@ function wireInteractions(getApp) {
     // its ring must not take taps (D.3). The secondary nodes handle their
     // own pointerdown and stop it here anyway; this is the belt.
     if (isSecondaryOpen()) return;
+    if (event.isPrimary === false) { logTap('second-pointer-ignored', {}); return; }   // one finger drives (O-169)
+    if (freeDrill) settleOrphanDrill('next-touch');
     logTap('pointerdown', {
       pointerType: event.pointerType,
       targetClass: event.target?.getAttribute?.('class') || null,
@@ -3320,19 +3323,42 @@ function wireInteractions(getApp) {
 
   svg.addEventListener('pointermove', onPointerMove);
 
+  // A scrubbed drill settles on release (O-138): past halfway it goes
+  // through; short of it, it springs back and the host's undo takes the
+  // navigation back in the same task.
+  const releaseDrill = (sw, type) => {
+    if (!sw?.ctl) return;
+    const app = getApp();
+    const commit = type !== 'pointercancel' && sw.e >= 0.5;
+    sw.ctl.release(commit, { onAbort: () => { if (app && typeof sw.undo === 'function') app.withInstantMigration(sw.undo); } });
+  };
+  // A DRILL WHOSE FINGER IS LOST IS SETTLED, NEVER LEFT HALF-FLOWN (O-169,
+  // Howell 2026-09-18, three photographs of vanished nodes: clones frozen
+  // mid-flight, the reals hidden). A held drill ended only on the drawing's
+  // own pointerup — so a finger lifted where that event never reached the
+  // drawing, a capture lost to the browser, a second finger, or the page
+  // going to the background left the scrub open with everything it held.
+  // Every such end now settles the drill by where the finger was.
+  const settleOrphanDrill = why => {
+    if (!freeDrill) return;
+    logTap('drill-orphan-settled', { why, e: Math.round((freeDrill.e || 0) * 100) / 100 });
+    releaseDrill(freeDrill, why === 'pointercancel' ? 'pointercancel' : 'pointerup');
+    freeDrill = null; controlPress = null; stroke = null;
+  };
+  if (typeof window !== 'undefined') {
+    ['pointerup', 'pointercancel'].forEach(type => window.addEventListener(type, event => {
+      if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill(type);
+    }, true));
+    document.addEventListener('visibilitychange', () => { if (document.hidden) settleOrphanDrill('hidden'); });
+    svg.addEventListener('lostpointercapture', event => {
+      if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill('lostpointercapture');
+    });
+  }
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
-      // A scrubbed drill settles on release (O-138): past halfway it goes
-      // through; short of it, it springs back and the host's undo takes the
-      // navigation back in the same task.
-      const releaseDrill = sw => {
-        if (!sw?.ctl) return;
-        const app = getApp();
-        const commit = type !== 'pointercancel' && sw.e >= 0.5;
-        sw.ctl.release(commit, { onAbort: () => { if (app && typeof sw.undo === 'function') app.withInstantMigration(sw.undo); } });
-      };
+      if (event.isPrimary === false) return;   // a second finger has no say (O-169)
       if (controlPress && type !== 'pointerleave') controlPress = null;
-      if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill); freeDrill = null; } }
+      if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type); freeDrill = null; } }
       if (type !== 'pointerleave') stroke = null;
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
