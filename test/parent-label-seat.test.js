@@ -67,3 +67,29 @@ describe('the parent label seat', () => {
     assert.equal(place(w, 0), place(w), 'and neither is an empty one');
   });
 });
+
+// RIGHT TO LEFT (O-139): the numeral leads a Hebrew name to the eye, so it
+// must clear the stroke on the LEFT while the name still sits over the vessel.
+describe('the suffixed parent label, right to left (O-139)', () => {
+  const seat = getParentSeat(vp, magR);
+  it('the name\'s first letter lands just past the left stroke, the numeral beyond it', () => {
+    const nameW = magR * 3, suffixW = magR * 0.6, gap = magR * 0.25;
+    const w = nameW + gap + suffixW;
+    const x = getParentLabelLeftX(vp, magR, w, nameW, 'rtl');
+    const nameLeft = x + suffixW + gap;
+    assert.ok(Math.abs(nameLeft - (seat.discX - magR * 1.06)) < 1e-6, 'the name starts just past the left stroke');
+    assert.ok(x + suffixW < seat.discX - magR, 'the numeral ends before the stroke');
+  });
+  it('left to right is unchanged by the direction argument', () => {
+    const nameW = magR * 3, w = nameW + magR * 0.85;
+    assert.equal(getParentLabelLeftX(vp, magR, w, nameW, 'ltr'), getParentLabelLeftX(vp, magR, w, nameW));
+  });
+  it('a long name runs on past the vessel to the right, as long left-to-right names run past it to the left', () => {
+    const nameW = magR * 30, w = nameW + magR;
+    assert.ok(Math.abs(getParentLabelLeftX(vp, magR, w, nameW, 'rtl') - (seat.discX - magR * 1.06 - magR)) < 1e-6);
+  });
+  it('the corner is still the floor when the numeral itself is too wide', () => {
+    const nameW = magR, w = nameW + vp.SSd * 2;
+    assert.equal(getParentLabelLeftX(vp, magR, w, nameW, 'rtl'), seat.labelX);
+  });
+});

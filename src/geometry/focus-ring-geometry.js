@@ -28,6 +28,41 @@ export function getMagnifierAngle(viewport) {
   return (142 * Math.PI) / 180;
 }
 
+// THE LENS CAPTION'S SEAT (O-144, O-150) — stated once, so the view that
+// draws it and the margin that makes room for it agree to the pixel. The
+// caption stands on the lens label's own line (the magnifier angle turned a
+// half circle), just outside the glass, its end meeting the lens for a
+// left-to-right tongue and its start for a right-to-left one.
+export const CAPTION_GAP_RADII = 0.35;
+export const CAPTION_LENS_RATIO = 0.06;   // the magnifier's radius, as a fraction of the short side
+/** The caption's font size in px: three quarters of the lens label's clamp (O-144). */
+export function captionFontPx(viewport) {
+  return Math.max(15.75, Math.min(29.25, viewport.SSd * 0.018));
+}
+/**
+ * The caption's box as a quadrilateral on the glass: four [x, y] corners, for
+ * a caption `textWidth` px long. Empty when there is no text.
+ */
+export function captionQuad(viewport, textWidth, direction = 'ltr') {
+  if (!(textWidth > 0)) return [];
+  const m = getMagnifierPosition(viewport);
+  const radius = viewport.SSd * CAPTION_LENS_RATIO;
+  const theta = m.angle + Math.PI;
+  const ux = Math.cos(theta), uy = Math.sin(theta);
+  const vx = -uy, vy = ux;
+  const rtl = direction === 'rtl';
+  const sign = rtl ? 1 : -1;
+  const ax = m.x + sign * ux * (radius * (1 + CAPTION_GAP_RADII));
+  const ay = m.y + sign * uy * (radius * (1 + CAPTION_GAP_RADII));
+  // Left to right the text ENDS at the anchor, so it lies back along -u;
+  // right to left it STARTS at the anchor on the lens's far side and lies
+  // along +u, away from the glass.
+  const bx = rtl ? ax + ux * textWidth : ax - ux * textWidth;
+  const by = rtl ? ay + uy * textWidth : ay - uy * textWidth;
+  const h = captionFontPx(viewport) * 0.6;
+  return [[ax + vx * h, ay + vy * h], [ax - vx * h, ay - vy * h], [bx - vx * h, by - vy * h], [bx + vx * h, by + vy * h]];
+}
+
 export function getMagnifierPosition(viewport) {
   const arc = getArcParameters(viewport);
   const angle = getMagnifierAngle(viewport);
@@ -79,13 +114,22 @@ export function getParentSeat(viewport, magnifierRadius = null) {
 // short and medium names take the same seat here; only rule 3, the corner
 // floor, still applies — and a corner-started label's suffix is already
 // clear of the vessel, which is why long names needed no change.
+//
+// RIGHT-TO-LEFT (O-139, Howell 2026-09-15: "in the case of Hebrew, prefixes").
+// A Hebrew label is one run drawn right to left, so its numeral — last in the
+// string — stands FIRST to the eye, at the run's left end. The name still
+// sits over the vessel; the numeral must clear the stroke on the LEFT: the
+// name's first letter lands just past the left stroke, and the numeral hangs
+// beyond it, with nothing overlapping. The mirror of the rule above, sharing
+// its one constant. The corner floor still applies.
 const NAME_CLEARS_STROKE = 1.06; // radii: the stroke is at 1.0, just past it
 
-export function getParentLabelLeftX(viewport, magnifierRadius, textWidth, nameWidth = null) {
+export function getParentLabelLeftX(viewport, magnifierRadius, textWidth, nameWidth = null, direction = 'ltr') {
   const magR = Number.isFinite(magnifierRadius) ? magnifierRadius : viewport.SSd * 0.06;
   const seat = getParentSeat(viewport, magR);
   const w = Number.isFinite(textWidth) ? textWidth : 0;
   if (Number.isFinite(nameWidth) && nameWidth > 0 && nameWidth < w) {
+    if (direction === 'rtl') return Math.max(seat.labelX, seat.discX - magR * NAME_CLEARS_STROKE - (w - nameWidth));
     return Math.max(seat.labelX, seat.discX + magR * NAME_CLEARS_STROKE - nameWidth);
   }
   return Math.max(

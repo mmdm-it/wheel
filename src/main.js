@@ -1,10 +1,90 @@
 import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
 import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
-import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter } from './volume-configs.js';
+import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
-import { proofreadOverrideActive } from './core/lan-gate.js';
+import { proofreadOverrideActive, declareVenues, isOnLan } from './core/lan-gate.js';
+
+// THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
+// you see what's going on"). On the bench only — a private address and
+// ?gesturelog=1 — every logTap event is timestamped and sent in batches to
+// scripts/gesture-log-sink.py on port 8089 of the same host. Inert anywhere
+// else, and nothing is sent without the flag.
+// THE FRAME READOUT (O-160): with the same flag, on any host, a line in the
+// corner reports each drill's frames — so smoothness is read off the phone
+// wherever it is, not assumed. Frames, display rate, median and worst gap,
+// frames dropped (a gap over 1.6 periods), the longest and median seek.
+if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('gesturelog') === '1') {
+  const box = document.createElement('div');
+  box.id = 'frame-readout';
+  box.style.cssText = 'position:fixed;left:6px;bottom:6px;z-index:2147483647;font:11px/1.25 monospace;color:#fff;background:rgba(0,0,0,.72);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;';
+  box.textContent = 'frames: waiting for a drill';
+  // A/B FLAGS FOR THE BENCH (O-160): &nowatermark=1 hides the watermark
+  // image, &nosector=1 the whole sector — to read what each costs in frames.
+  const q = new URLSearchParams(window.location.search);
+  const hideSel = q.get('nosector') === '1' ? '#volume-logo-group' : (q.get('nowatermark') === '1' ? '#volume-logo-image' : null);
+  if (hideSel) {
+    const hide = () => { const el = document.querySelector(hideSel); if (el) el.style.display = 'none'; else setTimeout(hide, 250); };
+    hide();
+    box.textContent += `  [${hideSel === '#volume-logo-group' ? 'no sector' : 'no watermark'}]`;
+  }
+  // THE RING PROBE (bench only): a third of the way into a drill, list what
+  // is drawn at two ring seats — every element under the point, its fill
+  // and its effective opacity — so a node that looks lighter in flight can
+  // say which element paints it and at what opacity.
+  const effOp = el => { let o = 1; for (let e = el; e && e.nodeType === 1; e = e.parentNode) { const v = parseFloat(getComputedStyle(e).opacity); if (!Number.isNaN(v)) o *= v; } return o.toFixed(2); };
+  let probeText = '';
+  const paint = () => { box.textContent = [probeText, framesText].filter(Boolean).join('\n'); };
+  const describe = (tag, n) => {
+    if (!n) return [`${tag}: none`];
+    const cs = getComputedStyle(n);
+    const r = n.getBoundingClientRect(); const x = r.left + r.width / 2, y = r.top + r.height / 2;
+    const out = [`${tag} @${Math.round(x)},${Math.round(y)} fill ${cs.fill} fo ${cs.fillOpacity} op ${effOp(n)} cls ${n.getAttribute('class')}`];
+    document.elementsFromPoint(x, y).slice(0, 4).forEach(el => out.push(`  ${el.tagName}.${(el.getAttribute('class') || '').split(' ')[0]} ${getComputedStyle(el).fill} fo ${getComputedStyle(el).fillOpacity} op ${effOp(el)}`));
+    return out;
+  };
+  window.__probeRing = label => {
+    const ring = document.querySelectorAll('#app .focus-ring-node')[1] || null;
+    const sky = document.querySelector('#app .child-pyramid-node');
+    const app = document.getElementById('app');
+    probeText = [`${label || 'probe'}: app cls "${app?.getAttribute('class') || ''}" paint ${app ? getComputedStyle(app).getPropertyValue('--boot-paint') : ''}`,
+      ...describe('ring', ring), ...describe('sky', sky)].join('\n');
+    paint();
+  };
+  setTimeout(() => window.__probeRing('rest'), 3500);
+  const mount = () => document.body?.appendChild(box);
+  if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
+  const history = [];
+  let framesText = '';
+  window.__wheelFrameReport = r => {
+    r.kind = window.__wheelFrameKind || '?';
+    history.unshift(r); if (history.length > 3) history.pop();
+    framesText = history.map(h => `${h.kind.toUpperCase().padEnd(4)}${h.frames}f @${h.hz}Hz drop ${h.dropped} worst ${h.worst}\n    render ${h.renderMedian}/${h.renderMax} seek ${h.seekMedian}/${h.seekMax}`).join('\n');
+    paint();
+    setTimeout(() => window.__probeRing?.('rest after ' + r.kind), 1500);   // the landed level, sky and all
+    if (typeof window.__tapDebugLog === 'function') window.__tapDebugLog('frames', r);
+  };
+}
+if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.location.search).get('gesturelog') === '1') {
+  const sink = `http://${window.location.hostname}:8089/log`;
+  let buf = [];
+  const t0 = performance.now();
+  window.__tapDebugLog = (ev, payload = {}) => {
+    buf.push({ t: Math.round(performance.now() - t0), ev, ...payload });
+    if (buf.length > 400) flush();
+  };
+  const flush = () => {
+    if (!buf.length) return;
+    const body = JSON.stringify(buf); buf = [];
+    try { if (!navigator.sendBeacon?.(sink, new Blob([body], { type: 'text/plain' }))) fetch(sink, { method: 'POST', body, mode: 'no-cors', keepalive: true }); } catch (_) { /* the bench has no sink running */ }
+  };
+  setInterval(flush, 1000);
+  window.addEventListener('pagehide', flush);
+  window.__tapDebugLog('gesturelog-on', { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio, ua: navigator.userAgent.slice(0, 60) });
+}
+import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
+import { bearingOf, diagonalLean, classifyBearing, axisFor } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -19,7 +99,7 @@ import { EphemerisDetailPlugin } from './view/detail/plugins/ephemeris-plugin.js
 import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js';
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { apparatusRuns } from './core/margin-source.js';
-import { computeMarginArea } from './geometry/margin-area.js';
+import { computeMarginArea, setMarginKeepOut } from './geometry/margin-area.js';
 import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
@@ -120,6 +200,10 @@ let currentDetailRerender = null;   // set at boot; repaints the seated verse (O
 // 2026-07-20, docs/DIMENSION_SYSTEM.md). The store and bridge are created
 // once; each boot refreshes the bridge's registry and its render hook.
 const dimensionStore = createInteractionStore();
+// THE SCREENING ROOM IS THE LAN (O-137): the gate learns which address is the
+// room from the config — the one file that may name a site — before anything
+// asks it whether the bench's flag applies.
+declareVenues(VENUES);
 const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 
 // D — the strata STACK (docs/DIMENSION_SYSTEM.md). Up to three deep for a
@@ -261,18 +345,28 @@ const seatKey = (id, edition) => `${id}@${edition ?? ''}`;
 const seatParts = key => { const at = key.lastIndexOf('@'); return at < 0 ? { id: key, edition: null } : { id: key.slice(0, at), edition: key.slice(at + 1) || null }; };
 const keptSeat = key => { const { id, edition } = seatParts(key); return bookmarksOf(currentVolumeId).find(b => b.id === id && (b.edition ?? null) === edition) || null; };
 const currentEdition = () => dimensionBridge.getSelection()?.translation ?? null;
+const isHit = key => { const { id, edition } = seatParts(key); return hitSeats().some(h => h.id === id && (h.edition ?? null) === edition); };
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
   items: () => {
-    // Kept seats in the volume's order — book, chapter, verse, edition — and
-    // the loose ones (the arrival, anything dropped this visit) after them.
-    const keys = inOrder(bookmarksOf(currentVolumeId)).map(b => seatKey(b.id, b.edition));
+    // Kept seats and THE GREATEST HITS (O-135, Howell 2026-09-15: "add
+    // Greatest Hits permanently to the bookmarks ring") together in the
+    // volume's order — book, chapter, verse, edition — and the loose ones
+    // (the arrival, anything dropped this visit) after them. A hit is seated
+    // in the edition up, with the label the primary would show; a hit the
+    // reader has also kept is one seat, drawn kept.
+    const kept = bookmarksOf(currentVolumeId);
+    const hits = hitSeats().filter(h => !kept.some(b => b.id === h.id && (b.edition ?? null) === (h.edition ?? null)));
+    for (const h of hits) { const k = seatKey(h.id, h.edition); basementLabels[k] = h.label; basementPlaces[k] = h.at; }
+    const keys = inOrder([...kept, ...hits]).map(b => seatKey(b.id, b.edition));
     for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
     return keys;
   },
   label: key => keptSeat(key)?.label || basementLabels[key] || seatParts(key).id,
-  classFor: key => (keptSeat(key) ? '' : 'is-provisional'),
+  // Kept: filled. A hit: its own fill, never mistaken for something kept.
+  // Loose (arrived with, or dropped this visit): hollow, provisional.
+  classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; }
 };
@@ -1390,14 +1484,11 @@ function goToStratum(to) {
 // WHAT ARRIVING AT A FLOOR CHANGES, beyond the picture — shared by the tap's
 // timed glide and the slider's settle.
 function arriveAt(from, to) {
-  // ARRIVAL AT THE TEXT ENDS THE LAUNCH FUNNEL (O-77), and this is the only
-  // other way in: `resetStrata` catches the reader who is carried out, this
-  // catches the reader who WALKS in, which is the path the funnel was built
-  // to teach. Set AFTER the transition is kicked off, never before: the
+  // Arriving at the text re-reads the position filter (O-72) for the planes
+  // above it. Done AFTER the transition is kicked off, never before: the
   // departing planes render their nodes one last time inside the glide, and
-  // a ring that loses a node while it is gliding away is the very flicker
-  // this ruling exists to stop.
-  if (to === 0) { bootFunnelOpen = false; refreshEditionsHere(); }
+  // a ring that loses a node while it is gliding away flickers (O-77).
+  if (to === 0) refreshEditionsHere();
   if (from < 0) leaveBasement();        // back up — to the bookmark under the lens, if one
   // THE GLOBE NO LONGER TURNS WITH THE MIGRATION (Howell, phone check
   // 2026-09-14): "That was useful when the input was a tap, but the slider
@@ -1415,9 +1506,6 @@ function cycleStrata() {
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
-  // The funnel is over the moment the reader arrives at the text. From here
-  // the globe answers the sideways question and O-72's filter is right again.
-  bootFunnelOpen = false;
   strataFront = 0;
   basementArrival = null; basementLens = null; basementLoose = [];
   CHOOSERS.forEach(ch => hideStratum(strataLayer, ch.id));
@@ -1442,6 +1530,7 @@ function resetStrata() {
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
 let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
+let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
 let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
@@ -1450,19 +1539,7 @@ let cornerImageAt = () => null;
 // volume declaring none, and null leaves the volume's own detail-sector
 // colour in place rather than blanking the badge.
 let cornerColorAt = () => null;
-// THE LAUNCH QUESTION IS NOT A SIDEWAYS MOVE (O-75).
-//
-// The boot funnel asks "what do you read?" before the reader is anywhere —
-// Howell's ruling 2 of 2026-07-30: every launch opens on the LANGUAGE plane
-// and the reader travels inward, language then edition then text. O-72's
-// position filter answers a different question — "may I swap edition while
-// standing HERE?" — and applying it to the funnel silently removed every
-// edition that does not hold the verse the app happened to boot into.
-//
-// On the LAN that meant the Greek New Testament was unreachable from launch:
-// the app boots at Genesis 1:1, the Hebrew is the only edition holding it, and
-// the language plane opened with one node. Howell found it in one screenshot.
-let bootFunnelOpen = false;
+// (The launch funnel and its O-75/O-77 flag lived here until O-143 retired them.)
 // Repaints the PRIMARY for a previewed language/edition while a chooser is
 // being turned — assigned by bootVolume, which owns the adapter and manifest.
 let previewPrimary = () => {};
@@ -1676,9 +1753,6 @@ function updateCornerImage() {
 }
 
 function refreshEditionsHere() {
-  // While the launch funnel is up there is no "here" yet — the reader has not
-  // chosen where to stand, so nothing may be filtered out of the choice.
-  if (bootFunnelOpen) { dimensionBridge.setEditionsHere(null); return; }
   let codes = null;
   try { codes = editionsHoldingItem(currentApp?.nav?.getCurrent?.()); } catch (_) { codes = null; }
   dimensionBridge.setEditionsHere(codes);
@@ -1712,33 +1786,22 @@ function refreshDimensionButton() {
   resetStrata();
   updateDimensionButton();
 }
-// THE BOOT FUNNEL (Howell ruling 2, 2026-07-30): every launch opens on the
-// LANGUAGE plane, with the edition and the text receding behind it. The
-// reader travels inward — language, edition, text — so the instrument teaches
-// its third gesture by requiring it rather than by explaining it, and the
-// first question a stranger is asked is the one they can always answer.
-// Every launch, not just the first: it confirms a returning reader's language
-// and edition, "and I don't consider two quick taps to be an undue burden."
-// Revisitable once real readers report.
-function openBootFunnel() {
-  if (!dimensionButton || !dimensionAvailable()) return false;
-  // Raised BEFORE `dimensionAvailable()` matters below and before the strata
-  // render, so the language plane is stocked from the unfiltered answer.
-  bootFunnelOpen = true;
-  refreshEditionsHere();
-  strataFront = maxStrataFront();
-  renderStack();
-  updateDimensionButton();
-  return true;
-}
+// THE LAUNCH FUNNEL IS RETIRED (O-143, Howell 2026-09-15: "The app should
+// always boot to the primary stratum."). Every launch used to open on the
+// language plane and walk the reader in — ruling 2 of 2026-07-30, "two quick
+// taps" — before the globe stood at every level (O-129) and became a slider
+// (O-126). Now the reader lands on the text, in the remembered edition or the
+// volume's default, and the tongue is a truck away at any moment. The
+// funnel's two workarounds went with it: the unfiltered launch plane (O-75)
+// and the arrival that closed it (O-77) — the position filter (O-72) is
+// simply on from the first frame, as it is everywhere else.
 // ── THE GLOBE IS A SLIDER (O-126, Howell 2026-09-14) ───────────────────────
 // "The dimension button has always been a little awkward, tapping to
 // traverse the different strata. I'd rather make it a slider." Its vertical
 // position IS the stratum: home is the text; one notch up the editions, two
 // the languages; one notch DOWN the basement. Dragging it crosses the notches
 // live — each crossing is the same transition a tap made — and the release
-// snaps to the nearest. A tap (no travel) still cycles inward, so the launch
-// funnel's "two quick taps" stay true. (Ghost notches at the resting places
+// snaps to the nearest. A tap (no travel) still cycles inward. (Ghost notches at the resting places
 // were drawn in the first cut and struck on his phone check the same day:
 // "We don't need the ghost rings.")
 // THE TRAVEL (Howell, phone check 2026-09-14: "50% longer. Since it can't go
@@ -1775,6 +1838,29 @@ function placeThumb() {
 // as the next one begins.
 let scrub = null;   // { from, to, glide } — the segment the thumb is inside
 const SCRUB_MAX_SEGMENTS = 6;   // a bound on one move event's crossings
+// ONE STROKE, ONE SIDE OF THE TEXT (O-147, Howell 2026-09-16): "it is not
+// possible or should not be possible to slide in one stroke from the
+// basement to the secondary stratum." The reader slides up to change a
+// language or an edition, or down to keep or recall a bookmark, "and in each
+// case, after having made their change, the user only wants to return to
+// the primary stratum and read a verse." So a stroke is bound to the side of
+// the text it starts on: begun above, it travels between the text and the
+// languages; begun in the basement, between the basement and the text;
+// begun AT the text, its first movement chooses the side. The text is the
+// stop in both directions. Cleared at release.
+let strokeSide = 0;   // +1 above the text, -1 below it, 0 not yet chosen
+function strokeBounds(p) {
+  if (!strokeSide) {
+    const origin = scrub ? scrub.from + scrub.glide.e * (scrub.to - scrub.from) : strataFront;
+    if (origin > 0.001) strokeSide = 1;
+    else if (origin < -0.001) strokeSide = -1;
+    else if (p > 0.001) strokeSide = 1;
+    else if (p < -0.001) strokeSide = -1;
+  }
+  if (strokeSide > 0) return { lo: 0, hi: maxStrataFront() };
+  if (strokeSide < 0) return { lo: minStrataFront(), hi: 0 };
+  return { lo: 0, hi: 0 };
+}
 function beginSegment(from, to) {
   if (to < 0) enterBasement();          // the ring must know what the reader brings down
   if (from < 0) jumpToChosen();         // unseen: the floor is invisible at e = 0
@@ -1800,7 +1886,8 @@ function endSegment(commit) {
   }
 }
 function scrubTo(p) {
-  p = Math.max(minStrataFront(), Math.min(maxStrataFront(), p));
+  const { lo, hi } = strokeBounds(p);
+  p = Math.max(lo, Math.min(hi, p));
   for (let n = 0; n < SCRUB_MAX_SEGMENTS; n += 1) {
     if (!scrub) {
       const target = p > strataFront + 0.001 ? strataFront + 1 : p < strataFront - 0.001 ? strataFront - 1 : null;
@@ -1817,6 +1904,7 @@ function scrubTo(p) {
 }
 let scrubSettle = null;   // rAF of a settle in flight
 function releaseScrub() {
+  strokeSide = 0;   // the stroke is over; the next one chooses its own side
   if (!scrub) return;
   const { glide } = scrub;
   const commit = glide.e >= 0.5;
@@ -1939,7 +2027,17 @@ if (dimensionButton) {
     }
     const raw = slide.startFront + dy / notchPx();
     const min = minStrataFront();
-    if (raw < min) {
+    // The stroke's side (O-147): the thumb stops at the text coming back
+    // from either side, and only a stroke on the basement's side reaches the
+    // overrun below it.
+    const { lo, hi } = strokeBounds(raw);
+    if (lo > min && raw < lo) {
+      dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(lo)).toFixed(1)}px`);
+      holdCancel();
+      scrubTo(lo);
+      return;
+    }
+    if (raw < min && lo === min) {
       // Into the overrun: the thumb follows against the spring, the floors do
       // not go below the basement, and a deep enough hold is a hold.
       const over = Math.min(SLIDER_OVERRUN, (min - raw) * OVERRUN_GIVE);
@@ -1949,7 +2047,7 @@ if (dimensionButton) {
       return;
     }
     holdCancel();
-    const p = Math.min(maxStrataFront(), raw);
+    const p = Math.max(lo, Math.min(hi, raw));
     dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`);
     scrubTo(p);
   });
@@ -1960,7 +2058,8 @@ if (dimensionButton) {
     dimensionButton.classList.remove('is-sliding');
     if (moved) suppressClick = true;
     holdCancel();     // a hold that has not reached HOLD_MS is nothing
-    releaseScrub();
+    releaseScrub();   // clears the stroke's side too (O-147)
+    strokeSide = 0;
     placeThumb();     // the springback from the overrun rides the thumb's transition
   };
   ['pointerup', 'pointercancel'].forEach(type => dimensionButton.addEventListener(type, release));
@@ -2026,7 +2125,6 @@ if (typeof window !== 'undefined') {
     // could otherwise only watch its shadow: `here` goes from null to a list
     // when the funnel closes, but null is also what a volume with no answer
     // gives, so the two are worth being able to tell apart from outside.
-    funnel: () => bootFunnelOpen,
     // How far the strata have travelled: 0 = the reader is at the text.
     front: () => strataFront,
     cycle: cycleStrata,
@@ -2263,7 +2361,15 @@ function applyTheme(volume) {
   // it. A declared override skips the derivation and therefore skips the
   // safety the derivation happens to give: whoever declares one owes the
   // second measurement.
-  root.style.setProperty('--theme-color-orbital', darkenHex(active.band, 0.78));
+  // THE BAND IS THE DARKER, THE NODES THE LIGHTER (O-166, Howell 2026-09-18:
+  // "make the focus ring band the darker color. And all of the nodes, parent
+  // button, magnifier, focus ring, child pyramid, make all of these nodes the
+  // lighter color, which is the current focus ring band color"). The same
+  // pair of shades as before, swapped: the volume's declared band colour is
+  // the one colour every node wears, and the band is that colour one step
+  // darker — which overrides the band set above, once darkenHex exists.
+  root.style.setProperty('--theme-color-orbital', active.band);
+  root.style.setProperty('--theme-color-band', darkenHex(active.band, 0.78));
   root.style.setProperty('--theme-color-accent', active.accent);
   root.style.setProperty('--theme-color-magnifier-stroke', active.magnifierStroke);
   if (document.body) {
@@ -2315,8 +2421,132 @@ function marginDebug(line) {
 // Toggle detail panel visibility in sync with the Detail Sector animation.
 // The panel fades in after the blue circle has finished expanding,
 // and hides immediately when the circle begins collapsing.
+// THE TEXT ARRIVES LAST, UNDER THE FINGER (O-159 step three, Howell
+// 2026-09-17). On a held drill into a leaf, the verse, its notes and the
+// manuscript key used to fade in over 0.35 s only after the drill landed —
+// a separate event after the ballet. Their content is drawn at the commit,
+// so they now fade in over the last third of the swipe on the scrub's clock,
+// as the circle finishes opening; the landing's own "visible" class then
+// takes over at full opacity, and a spring-back leaves them hidden.
+window.addEventListener('detail-sector-arriving', () => {
+  const panels = [detailPanel, marginPanel, marginMarks].filter(Boolean);
+  if (!panels.length) return;
+  const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; el.style.willChange = ''; });
+  // On their own layer for the flight, so each frame's opacity is composited
+  // rather than the whole page of text repainted (O-160).
+  panels.forEach(el => { el.style.willChange = 'opacity'; });
+  scrubDriver(600, t => {
+    const o = Math.max(0, Math.min(1, (t - 2 / 3) * 3));
+    panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
+  }, {
+    onCommit: () => {
+      panels.forEach(el => { el.style.opacity = '1'; });
+      requestAnimationFrame(() => requestAnimationFrame(clear));
+    },
+    onAbort: () => {
+      panels.forEach(el => { el.style.opacity = '0'; });
+      requestAnimationFrame(() => requestAnimationFrame(clear));
+    }
+  });
+});
+
 window.addEventListener('detail-sector-change', (e) => {
   const { visible } = e.detail || {};
+  // THE TEXT LEAVES UNDER THE FINGER (O-151 step two, Howell 2026-09-16: "All
+  // of the text pops off suddenly soon after the animation begins"). The
+  // verse, its notes and the manuscript key are page elements outside the
+  // drawing, so the scrub never caught their 0.35 s fade: they left on their
+  // own clock at the first frame. When a drill is under a finger they now
+  // fade over the first third of the swipe, driven by it, and their classes
+  // change only when the drill lands; struck, they are back at full at once.
+  //
+  // AND IT LEAVES BY MOVING, NOT FADING (O-161, Howell 2026-09-17: fades are
+  // "a cheat" against the grammar — everything but the two vessel rings
+  // MOVES with the thumb along the drill axis, and all of it in the SAME
+  // direction: the ring's nodes flow to the sky, the sky's off screen toward
+  // the hub, and the text LEADS them). So the verse, its notes and the key
+  // leave as one block toward the hub — off the screen's corner — shrinking
+  // as they go, at full ink, and are gone by two-thirds of the swipe, ahead
+  // of the nodes. A fade remains only where no hub is known.
+  //
+  // THE NOTES GO UNDER THE BAND (O-171, Howell 2026-09-19): the verse leaves
+  // toward the hub, but the notes and the manuscript key sit on the ground
+  // beside the band, like the level's word — so they slide toward the band
+  // as a block and vanish under its outer edge, masked away there, clear by
+  // three quarters of the swipe. Only the verse text leaves the screen.
+  const panels = [detailPanel, marginPanel, marginMarks].filter(Boolean);
+  const textPanels = [detailPanel].filter(Boolean);
+  const notePanels = [marginPanel, marginMarks].filter(Boolean);
+  const hub = e.detail?.hub || null;
+  const band = e.detail?.band || null;
+  if (!visible && panels.length) {
+    const clear = () => panels.forEach(el => { el.style.transition = ''; el.style.opacity = ''; el.style.transform = ''; el.style.willChange = ''; el.style.maskImage = ''; el.style.webkitMaskImage = ''; });
+    let leave = null, dive = null;
+    if (hub && Number.isFinite(hub.x) && Number.isFinite(hub.y)) {
+      const vw = window.innerWidth, vh = window.innerHeight;
+      const dx = hub.x - vw / 2, dy = hub.y - vh / 2, len = Math.hypot(dx, dy) || 1;
+      const travel = Math.hypot(vw, vh) * 0.9;   // clear of the screen along the hub's line
+      leave = { ux: dx / len, uy: dy / len, travel };
+      panels.forEach(el => { el.style.willChange = 'transform'; });
+      if (band && Number.isFinite(band.radius) && notePanels.length) {
+        // The notes' own centre and farthest corner, from the children that
+        // hold ink; the outer edge of the band is the line they vanish at.
+        const outer = band.radius + (band.width || 0) / 2;
+        let cx = 0, cy = 0, n = 0, far = 0;
+        notePanels.forEach(el => [...el.children].forEach(ch => {
+          const r = ch.getBoundingClientRect();
+          if (!r.width || !r.height) return;
+          cx += r.left + r.width / 2; cy += r.top + r.height / 2; n += 1;
+          [[r.left, r.top], [r.right, r.top], [r.left, r.bottom], [r.right, r.bottom]].forEach(([x, y]) => { far = Math.max(far, Math.hypot(x - hub.x, y - hub.y)); });
+        }));
+        if (n) {
+          cx /= n; cy /= n;
+          const ddx = hub.x - cx, ddy = hub.y - cy, dl = Math.hypot(ddx, ddy) || 1;
+          dive = { ux: ddx / dl, uy: ddy / dl, travel: Math.max(0, far - outer) + (band.width || 0) + 8 };
+          const mask = `radial-gradient(circle at ${hub.x}px ${hub.y}px, transparent ${outer}px, #000 ${outer + 0.5}px)`;
+          notePanels.forEach(el => { el.style.maskImage = mask; el.style.webkitMaskImage = mask; });
+        }
+      }
+    }
+    const scrubbed = scrubDriver(600, t => {
+      if (leave) {
+        // PACED WITH THE CIRCLE (Howell: at two-thirds it was "way too fast" —
+        // gone while the circle had shrunk a fifth). It gathers speed as it
+        // goes, so it stays with the circle through the first half and leads
+        // the nodes off only at the end.
+        const p = Math.pow(t, 1.5);
+        const k = 1 - 0.6 * p;
+        textPanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
+        if (dive) {
+          const q = Math.min(1, t / 0.75);
+          notePanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(dive.ux * dive.travel * q).toFixed(1)}px, ${(dive.uy * dive.travel * q).toFixed(1)}px)`; });
+        } else {
+          notePanels.forEach(el => { el.style.transition = 'none'; el.style.transform = `translate(${(leave.ux * leave.travel * p).toFixed(1)}px, ${(leave.uy * leave.travel * p).toFixed(1)}px) scale(${k.toFixed(3)})`; });
+        }
+      } else {
+        const o = Math.max(0, 1 - t * 3);
+        panels.forEach(el => { el.style.transition = 'none'; el.style.opacity = String(o); });
+      }
+    }, {
+      onCommit: () => {
+        if (detailPanel) detailPanel.classList.remove('detail-panel--visible');
+        if (marginPanel) marginPanel.classList.remove('margin-panel--visible');
+        if (marginMarks) marginMarks.classList.remove('margin-marks--visible');
+        panels.forEach(el => { el.style.opacity = '0'; });
+        requestAnimationFrame(() => requestAnimationFrame(clear));
+      },
+      onAbort: () => {
+        panels.forEach(el => { el.style.opacity = '1'; el.style.transform = ''; el.style.maskImage = ''; el.style.webkitMaskImage = ''; });
+        requestAnimationFrame(() => requestAnimationFrame(clear));
+      }
+    });
+    if (scrubbed) {
+      detailSectorVisible = false;
+      updateDimensionButton();
+      updateSearchButton();
+      return;
+    }
+  }
   if (detailPanel) {
     detailPanel.classList.toggle('detail-panel--visible', Boolean(visible));
   }
@@ -2765,47 +2995,142 @@ function wireInteractions(getApp) {
     return nearest;
   };
 
-  // THE PARENT BUTTON SWIPES TOO (O-131, Howell 2026-09-14): "Keep the
-  // existing tap to migrate the Parent Button Node into the Magnifier, but add
-  // a swipe feature that causes the same migration by swiping vertically
-  // between the Parent Button and Magnifier." A press on the parent vessel
-  // (or its words) is watched: travel UP past the threshold, more up than
-  // across, fires the vessel's own click handler once — the same migration
-  // as the tap, by the same door — and the native click that follows the
-  // release is swallowed so it cannot fire twice. A press that never travels
-  // is the tap it always was.
-  const PARENT_SWIPE_PX = 28;
-  let parentSwipe = null;          // { el, startX, startY, fired } while a press on the parent is held
+  // THE PARENT BUTTON AND THE LENS SWIPE (O-131, O-132) — their own
+  // screen-vertical swipes are superseded by the compass below (O-152); a
+  // press on either is still its control's tap if it never travels, and the
+  // click that follows a stroke is swallowed by these timestamps.
   let parentSwipeFiredAt = 0;
-  // AND THE LENS SWIPES DOWN (O-132, Howell 2026-09-14): a press on the
-  // magnifier that travels DOWN toward the parent button drills IN — into the
-  // sky's LARGEST node, the most-read child, "the big node is the door".
-  // The pair is bi-directional: up out of a book, down into its most-read
-  // chapter, down again into its most-read verse.
-  let lensSwipe = null;            // { startX, startY, fired } while a press on the lens is held
+  // THE COMPASS DECIDES (O-152, Howell 2026-09-16), superseding O-142's angle
+  // to the hub and the lens's and parent's own screen-vertical swipes (O-131,
+  // O-132). Every drag on the glass — open ground, a ring node, the verse
+  // panel, the lens, the parent button — is undecided for its first
+  // DECIDE_PX, the ring holding still; then its compass bearing decides, by
+  // the bands in src/core/stroke.js: Northwest ± 10° turns the ring
+  // clockwise, Southeast ± 10° counter-clockwise, the 140° through north and
+  // east drills OUT, the 140° through south and west drills IN, and the four
+  // 10° gaps between them do nothing until the finger lifts. At a leaf a
+  // drill in does nothing; at the top a drill out does nothing. Once decided,
+  // a stroke is measured only along its own axis. A press that never travels
+  // DECIDE_PX is the tap it always was. The pyramid's stars still drill on
+  // touch.
+  // 8 px, the tap slop (O-152 amended: the log showed slow strokes taking
+  // 350–800 ms to travel 14 px with nothing moving).
+  const DECIDE_PX = 8;             // the stroke declares itself here; the ring waits that long
+  let stroke = null;               // { x0, y0, decided, pendingDelta, dead } for the drag under way
+  let freeDrill = null;            // { kind, x0, y0, ux, uy, ctl, travel, e, undo } — a drill a stroke began
+  let controlPress = null;         // { x0, y0, isParent, dead } — a press on the lens or the parent button
+  const lean = () => diagonalLean(viewport?.width, viewport?.height);
+  // The two reference bearings that widen rotation (O-152 amended): from the
+  // magnifier to the upper-left and to the lower-right corner of the page.
+  const bandOpts = () => {
+    try {
+      const vp = getViewportInfo(viewport.width, viewport.height);
+      const m = getMagnifierPosition(vp);
+      return { ul: bearingOf(0 - m.x, 0 - m.y), lr: bearingOf(vp.width - m.x, vp.height - m.y) };
+    } catch (_) { return {}; }
+  };
+  const ROTATE_GAIN = Math.SQRT2;  // a stroke along the Northwest axis turns the ring as the old diagonal drag did
+  // PROGRESS STARTS WHERE THE FINGER IS WHEN THE FLIGHTS ARE READY (O-152
+  // amended: the log showed a first drill taking 447 ms to build its flights,
+  // by which time the finger was 30% along and everything jumped there).
+  // Until every flight is caught the drill holds at its start; then the
+  // origin is re-based under the finger, so the drill always begins at zero.
+  const freeDrillProgress = (fd, event) => {
+    if (!fd.based) {
+      if (!fd.ctl?.captured?.()) return 0;
+      fd.x0 = event.clientX; fd.y0 = event.clientY; fd.based = true;
+      logTap('drill-based', {});
+      return 0;
+    }
+    const travelled = (event.clientX - fd.x0) * fd.ux + (event.clientY - fd.y0) * fd.uy;
+    return Math.max(0, Math.min(1, travelled / Math.max(40, fd.travel)));
+  };
+  // Begin a drill from a stroke that started at (x0, y0); false when there is
+  // nothing to drill that way — which the compass rule reads as nothing at all.
+  const beginFreeDrill = (kind, event, x0, y0) => {
+    const app = getApp();
+    if (!app) return false;
+    const axis = axisFor(kind, lean());
+    const fd = { kind, x0, y0, ux: axis.ux, uy: axis.uy, e: 0, pointerId: event?.pointerId ?? null };
+    if (kind === 'in') {
+      const idx = app.largestPyramidIndex?.() ?? -1;
+      if (idx < 0) return false;   // a leaf: nothing below
+      fd.undo = () => { const p = app.view?.parentButtonOuter; if (typeof p?.onclick === 'function') p.onclick(event); };
+      logTap('stroke-drill-in', { idx });
+      beginDrill(fd, app, () => app.handlePyramidNodeClick(idx));
+    } else {
+      const p = app.view?.parentButtonOuter;
+      if (typeof p?.onclick !== 'function') return false;   // the top: nothing above
+      const wasAt = app.nav?.getCurrent?.() || null;
+      fd.undo = () => { if (wasAt) app.drillIntoItem?.(wasAt); };
+      logTap('stroke-drill-out', {});
+      beginDrill(fd, app, () => p.onclick(event));
+    }
+    if (!fd.ctl) return false;
+    freeDrill = fd;
+    return true;
+  };
+  // THE DRILL IS SCRUBBED (O-138, Howell 2026-09-15): "I don't like to have
+  // swipes that act like taps." Past the threshold the swipe LAUNCHES the
+  // drill exactly as the tap would — the same door — but under a scrub: the
+  // flights are caught at their first frame, and from there to the far
+  // vessel the finger owns their clock. Let go past halfway and they settle;
+  // short of it they spring back and the navigation is undone, unseen. The
+  // distance from lens to parent disc, on the glass, is the whole travel.
+  const drillTravelPx = app => {
+    const a = app?.view?.magnifierCircle?.getBoundingClientRect?.();
+    const b = app?.view?.parentButtonOuter?.getBoundingClientRect?.();
+    if (!a || !b || !a.width || !b.width) return 160;
+    const d = Math.hypot((a.left + a.width / 2) - (b.left + b.width / 2), (a.top + a.height / 2) - (b.top + b.height / 2));
+    return Math.max(80, d);
+  };
+  // Begin a scrubbed drill through `launch` (the tap's own path). If nothing
+  // took off — the guards spoke, no sky — the scrub is forgotten and the
+  // gesture is over.
+  const beginDrill = (sw, app, launch) => {
+    const tLaunch = performance.now();
+    logTap('phase', { name: 'drill-start', p: 0 });
+    window.__wheelFrameKind = sw?.kind || '?';
+    const ctl = beginScrubbedMigration(app?.flightRoot?.() || null);
+    try { launch(); } catch (_) { /* the drill's own guards spoke */ }
+    logTap('drill-launch', { ms: Math.round(performance.now() - tLaunch), launched: ctl.launched() });
+    if (!ctl.launched()) { ctl.cancel(); return; }
+    sw.ctl = ctl; sw.travel = drillTravelPx(app); sw.e = 0;
+  };
   const onPointerMove = event => {
-    if (lensSwipe) {
-      const down = event.clientY - lensSwipe.startY;
-      const across = Math.abs(event.clientX - lensSwipe.startX);
-      if (!lensSwipe.fired && down >= PARENT_SWIPE_PX && down > across) {
-        lensSwipe.fired = true;
-        lensSwipeFiredAt = Date.now();
-        const app = getApp();
-        const idx = app?.largestPyramidIndex?.() ?? -1;
-        logTap('lens-swipe', { down: Math.round(down), idx });
-        if (idx >= 0) { try { app.handlePyramidNodeClick(idx); } catch (_) { /* the drill's own guards spoke */ } }
-      }
+    if (event.isPrimary === false) return;   // a second finger has no say (O-169)
+    if (freeDrill) {
+      freeDrill.e = freeDrillProgress(freeDrill, event);
+      freeDrill.ctl.scrubTo(freeDrill.e);
+      if (!freeDrill.probed && freeDrill.e > 0.3 && typeof window.__probeRing === 'function') { freeDrill.probed = true; setTimeout(() => window.__probeRing('drill ' + freeDrill.kind), 50); }
       return;
     }
-    if (parentSwipe) {
-      const up = parentSwipe.startY - event.clientY;
-      const across = Math.abs(event.clientX - parentSwipe.startX);
-      if (!parentSwipe.fired && up >= PARENT_SWIPE_PX && up > across) {
-        parentSwipe.fired = true;
-        parentSwipeFiredAt = Date.now();
-        logTap('parent-swipe', { up: Math.round(up), across: Math.round(across) });
-        try { if (typeof parentSwipe.el.onclick === 'function') parentSwipe.el.onclick(event); } catch (_) { /* the migration's own guards spoke */ }
+    if (controlPress) {
+      if (controlPress.dead) return;
+      const vx = event.clientX - controlPress.x0, vy = event.clientY - controlPress.y0;
+      if (Math.hypot(vx, vy) < DECIDE_PX) return;
+      const press = controlPress;
+      const bearing = bearingOf(vx, vy);
+      const kind = classifyBearing(bearing, lean(), bandOpts());
+      logTap('control-stroke', { kind, parent: press.isParent, bearing: Math.round(bearing) });
+      // Whatever it decides, the press is no longer a tap on its control.
+      if (press.isParent) parentSwipeFiredAt = Date.now(); else lensSwipeFiredAt = Date.now();
+      if (kind === 'cw' || kind === 'ccw') {
+        controlPress = null;
+        isDragging = true; recentMoves = []; gestureTravelPx = Math.hypot(vx, vy);
+        lastX = event.clientX; lastY = event.clientY; lastTime = event.timeStamp;
+        stroke = { x0: press.x0, y0: press.y0, decided: true, pendingDelta: 0 };
+        const axis = axisFor('cw', lean());
+        getApp()?.choreographer?.rotate((vx * axis.ux + vy * axis.uy) * sensitivity * ROTATE_GAIN);
+        return;
       }
+      if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, press.x0, press.y0)) {
+        controlPress = null;
+        freeDrill.e = freeDrillProgress(freeDrill, event);
+        freeDrill.ctl.scrubTo(freeDrill.e);
+        return;
+      }
+      press.dead = true;   // a dead zone, or nothing to drill that way: nothing until lift
       return;
     }
     if (!isDragging) return;
@@ -2819,7 +3144,9 @@ function wireInteractions(getApp) {
     lastTime = event.timeStamp;
 
     const distance = Math.abs(dx) + Math.abs(dy);
-    const delta = -(dx + dy) * sensitivity;
+    // Only movement along the rotation axis turns the ring (O-152).
+    const rotAxis = axisFor('cw', lean());
+    const delta = (dx * rotAxis.ux + dy * rotAxis.uy) * sensitivity * ROTATE_GAIN;
     const t = event.timeStamp;
     recentMoves.push({ t, dist: distance, delta });
     while (recentMoves.length && t - recentMoves[0].t > VELOCITY_WINDOW_MS) recentMoves.shift();
@@ -2842,6 +3169,24 @@ function wireInteractions(getApp) {
       dt,
       dragging: isDragging
     });
+    // The stroke declares itself (O-152): until DECIDE_PX the turn is held
+    // back; then the compass decides — a turn pays the held-back turn at
+    // once, a drill leaves the ring, a dead zone does nothing until lift.
+    if (stroke && stroke.dead) return;
+    if (stroke && !stroke.decided) {
+      stroke.pendingDelta += delta;
+      const vx = event.clientX - stroke.x0, vy = event.clientY - stroke.y0;
+      if (Math.hypot(vx, vy) < DECIDE_PX) return;
+      stroke.decided = true;
+      const bearing = bearingOf(vx, vy);
+      const kind = classifyBearing(bearing, lean(), bandOpts());
+      logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), bands: bandOpts() });
+      if (kind === 'cw' || kind === 'ccw') { app.choreographer.rotate(stroke.pendingDelta); return; }
+      pendingTapNode = null; pendingAdvanceTap = false;
+      if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, stroke.x0, stroke.y0)) { isDragging = false; return; }
+      stroke.dead = true;
+      return;
+    }
     app.choreographer.rotate(delta);
   };
 
@@ -2879,6 +3224,8 @@ function wireInteractions(getApp) {
     // its ring must not take taps (D.3). The secondary nodes handle their
     // own pointerdown and stop it here anyway; this is the belt.
     if (isSecondaryOpen()) return;
+    if (event.isPrimary === false) { logTap('second-pointer-ignored', {}); return; }   // one finger drives (O-169)
+    if (freeDrill) settleOrphanDrill('next-touch');
     logTap('pointerdown', {
       pointerType: event.pointerType,
       targetClass: event.target?.getAttribute?.('class') || null,
@@ -2922,11 +3269,12 @@ function wireInteractions(getApp) {
       // capture goes on the CIRCLE, so a plain tap's click still lands on it.
       const parentEl = event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label') ? app.view?.parentButtonOuter : null;
       if (parentEl && typeof parentEl.onclick === 'function') {
-        parentSwipe = { el: parentEl, startX: event.clientX, startY: event.clientY, fired: false };
+        // The parent's vessel: its stroke is decided by the compass (O-152).
+        controlPress = { x0: event.clientX, y0: event.clientY, isParent: true, dead: false };
         try { parentEl.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
       } else if (!searchRestore && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label')) {
-        // The lens itself (not the parent's vessel, not in search): watch for the down-swipe (O-132).
-        lensSwipe = { startX: event.clientX, startY: event.clientY, fired: false };
+        // The lens (not in search): its stroke is decided by the compass (O-152).
+        controlPress = { x0: event.clientX, y0: event.clientY, isParent: false, dead: false };
         try { app.view?.magnifierCircle?.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
       }
       return;
@@ -2994,6 +3342,7 @@ function wireInteractions(getApp) {
     recentMoves = [];
     gestureTravelPx = 0;
     pointerCaptured = false;
+    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false };
     trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
     trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
     publishTrace();
@@ -3008,10 +3357,43 @@ function wireInteractions(getApp) {
 
   svg.addEventListener('pointermove', onPointerMove);
 
+  // A scrubbed drill settles on release (O-138): past halfway it goes
+  // through; short of it, it springs back and the host's undo takes the
+  // navigation back in the same task.
+  const releaseDrill = (sw, type) => {
+    if (!sw?.ctl) return;
+    const app = getApp();
+    const commit = type !== 'pointercancel' && sw.e >= 0.5;
+    sw.ctl.release(commit, { onAbort: () => { if (app && typeof sw.undo === 'function') app.withInstantMigration(sw.undo); } });
+  };
+  // A DRILL WHOSE FINGER IS LOST IS SETTLED, NEVER LEFT HALF-FLOWN (O-169,
+  // Howell 2026-09-18, three photographs of vanished nodes: clones frozen
+  // mid-flight, the reals hidden). A held drill ended only on the drawing's
+  // own pointerup — so a finger lifted where that event never reached the
+  // drawing, a capture lost to the browser, a second finger, or the page
+  // going to the background left the scrub open with everything it held.
+  // Every such end now settles the drill by where the finger was.
+  const settleOrphanDrill = why => {
+    if (!freeDrill) return;
+    logTap('drill-orphan-settled', { why, e: Math.round((freeDrill.e || 0) * 100) / 100 });
+    releaseDrill(freeDrill, why === 'pointercancel' ? 'pointercancel' : 'pointerup');
+    freeDrill = null; controlPress = null; stroke = null;
+  };
+  if (typeof window !== 'undefined') {
+    ['pointerup', 'pointercancel'].forEach(type => window.addEventListener(type, event => {
+      if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill(type);
+    }, true));
+    document.addEventListener('visibilitychange', () => { if (document.hidden) settleOrphanDrill('hidden'); });
+    svg.addEventListener('lostpointercapture', event => {
+      if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill('lostpointercapture');
+    });
+  }
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
-      if (parentSwipe) { if (type !== 'pointerleave') parentSwipe = null; }
-      if (lensSwipe) { if (type !== 'pointerleave') lensSwipe = null; }
+      if (event.isPrimary === false) return;   // a second finger has no say (O-169)
+      if (controlPress && type !== 'pointerleave') controlPress = null;
+      if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type); freeDrill = null; } }
+      if (type !== 'pointerleave') stroke = null;
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
       const app = getApp();
@@ -3411,9 +3793,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // (Capitulum/Chapter/Глава) and NUMERAL system (Roman, Greek, Hebrew)
     // travel with the names rather than freezing at boot.
     namesMap.locale = lang;
-    // The reading vocabulary (chapter/verse/era words) from the registry
-    // when it carries them; null leaves the engine's own table in charge.
-    namesMap.vocabulary = dimensionBridge.languageVocabulary(lang);
+    // THE LEVEL'S WORDS COME WITH THE NAMES (O-144, 2026-09-15). They came
+    // from the language registry until the wall retired it (H-14), and the
+    // lookup answered null for a month while nobody noticed the caption gone.
+    // The naming kit is where a tongue's words for its levels live now; the
+    // registry lookup stays as the belt for a volume that still has one.
+    namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
     return namesMap;
   };
   refreshNamesMap();
@@ -3561,6 +3946,17 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     : adapterLabel
       ? ({ item }) => adapterLabel(item)
       : configLabel;
+  // THE MARGIN MAKES ROOM FOR THE LENS CAPTION (O-150). Notes are drawn only
+  // at a leaf, so the caption to keep clear of is the leaf level's word, read
+  // live from the formatter (it follows the reader's tongue); a volume that
+  // declares no captions declares no keep-out.
+  {
+    const leafLevelForCaption = root?.display_config?.leaf_level || null;
+    setMarginKeepOut(config?.levelCaptions === true && leafLevelForCaption ? {
+      text: () => labelFormatter({ item: { level: leafLevelForCaption }, context: 'caption' }) || '',
+      direction: () => (typeof handlerSet.textDirection === 'function' ? handlerSet.textDirection() : 'ltr')
+    } : null);
+  }
   const shouldCenterLabel = handlerSet.shouldCenterLabel || (({ item } = {}) => {
     if (Boolean(config?.centerLabel)) return true;
     // Cylinder items (short numeric labels) should always be centered
@@ -3578,10 +3974,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // numeral), so the label can be seated by its NAME and the suffix hang
   // clear of the vessel. Volumes that append nothing need not define it.
   const adapterGetParentLabelSuffix = typeof handlerSet.getParentLabelSuffix === 'function' ? handlerSet.getParentLabelSuffix : null;
+  const adapterGetGapLabel = typeof handlerSet.getGapLabel === 'function' ? handlerSet.getGapLabel : null;
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
   seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
+  hitSeats = typeof handlerSet.hitSeats === 'function' ? handlerSet.hitSeats : () => [];
   // The chooser offers the editions that hold where the reader stands (H-29).
   editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;
   // The corner emblem belongs to the division the reader is in (H-31). A
@@ -3667,11 +4065,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     selectedIndex,
     preserveOrder,
     labelFormatter,
+    levelCaptions: config?.levelCaptions === true,
     shouldCenterLabel,
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,
     getParentLabel: adapterGetParentLabel,
     getParentLabelSuffix: adapterGetParentLabelSuffix,
+    getGapLabel: adapterGetGapLabel,
+    getTextDirection: typeof handlerSet.textDirection === 'function' ? handlerSet.textDirection : null,
     getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
     pyramid: pyramidConfig,
@@ -3743,9 +4144,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // touching the DOM — verse-by-verse travel through a book costs one string
   // comparison per settle and no repaint.
   if (app?.nav?.onChange) {
-    let lastMarkedBook = currentBookId();
+    // THE KEY IS THE BOOK, OR THE DIVISION ITEM WHEN NO BOOK IS IN HAND
+    // (O-149): at root both divisions have no book, so a turn from the Old
+    // Testament to the New changed nothing this signal could see, and the
+    // emblem never swapped.
+    const markKey = () => currentBookId() ?? `item:${currentApp?.nav?.getCurrent?.()?.id ?? ''}`;
+    let lastMarkedBook = markKey();
     app.nav.onChange(() => {
-      const book = currentBookId();
+      const book = markKey();
       if (book === lastMarkedBook) return;
       lastMarkedBook = book;
       updateIncompleteMark();
@@ -4005,13 +4411,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // need exists solely for the gateway, which is dev scaffolding — a
   // standalone deployment has no volume above it to return to.)
   updateIncompleteMark();
-  // A PROOFREAD DEEP LINK LANDS ON THE TEXT (O-122). The funnel is every
-  // launch's introduction and stays so; but a driven verse-by-verse pass over
-  // a book paid it forty times an hour — load, commit the edition, walk two
-  // planes in — for a reader who is a script and has already said what it
-  // wants. Gated on the LAN override plus a fully named address, so nothing
-  // a reader can reach behaves differently.
-  if (!transit && !options.deepLinked) openBootFunnel();
+  // Every launch lands on the text (O-143). The proofread deep link (O-122)
+  // used to be the one exception to a launch funnel that no longer exists.
   showVersion();
   performance.mark('wheel:render-done');
   recordBootPhases(volume);

@@ -166,6 +166,24 @@ export class VolumeLogo {
     if (this._renderConfig.default_image === imageName) return false;
     this._renderConfig.default_image = imageName;
     this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${imageName}.png`);
+    // Each emblem at its own size and place (O-148): a collapsed badge is
+    // re-boxed now, circle with it; an expanded or moving one takes it from
+    // its next journey's first frame.
+    if (!this._expanded && !this._animating && typeof this.logo.setAttribute === 'function') {
+      const s = this._getStartState();
+      this.logo.setAttribute('x', s.logoX);
+      this.logo.setAttribute('y', s.logoY);
+      this.logo.setAttribute('width', s.logoWidth);
+      this.logo.setAttribute('height', s.logoHeight);
+      if (this.circle && typeof this.circle.setAttribute === 'function') {
+        this.circle.setAttribute('cx', s.circleCx);
+        this.circle.setAttribute('cy', s.circleCy);
+      }
+      if (this.clickTarget && typeof this.clickTarget.setAttribute === 'function') {
+        this.clickTarget.setAttribute('cx', s.circleCx);
+        this.clickTarget.setAttribute('cy', s.circleCy);
+      }
+    }
     return true;
   }
 
@@ -216,19 +234,7 @@ export class VolumeLogo {
     const radius = shorterSide * 0.12;
     const margin = shorterSide * 0.03;
     
-    // Logo dimensions
-    const logoWidth = radius * 2 * LOGO_COLLAPSED_SCALE;
-    const logoHeight = logoWidth / LOGO_BOX_ASPECT;
-    const logoHalfWidth = logoWidth / 2;
-    const logoHalfHeight = logoHeight / 2;
-    
-    // Position so right edge of image touches the right margin boundary
-    // Right edge of CPUA: width - margin
-    // Image right edge should be at: centerX + logoHalfWidth = width - margin
-    // Shift 12% right to account for padding in image file
-    const paddingAdjustment = logoWidth * 0.12;
-    const centerX = this.viewport.width - margin - logoHalfWidth + paddingAdjustment;
-    const centerY = margin + logoHalfHeight;
+    const { centerX, centerY, logoWidth, logoHeight } = this._collapsedGeometry();
     
     // Create group
     this.group = document.createElementNS(SVG_NS, 'g');
@@ -237,6 +243,7 @@ export class VolumeLogo {
     // Create blue circle background
     this.circle = document.createElementNS(SVG_NS, 'circle');
     this.circle.setAttribute('id', 'volume-logo-circle');
+    this.circle.style.willChange = 'transform, opacity'; // composited in flight (O-160)
     this.circle.setAttribute('cx', centerX);
     this.circle.setAttribute('cy', centerY);
     this.circle.setAttribute('r', radius);
@@ -258,6 +265,7 @@ export class VolumeLogo {
       const logoY = centerY - (logoHeight / 2);
       
       this.logo = document.createElementNS(SVG_NS, 'image');
+      this.logo.style.willChange = 'transform, opacity'; // composited in flight (O-160)
       this.logo.setAttribute('id', 'volume-logo-image');
       this.logo.setAttributeNS(XLINK_NS, 'href', logoPath);
       this.logo.setAttribute('x', logoX);
@@ -298,27 +306,64 @@ export class VolumeLogo {
   /**
    * Compute the collapsed (upper-right) state for circle + logo
    */
-  _getStartState() {
+  // THE BADGE'S PLACE AND THE EMBLEM'S SIZE ARE TWO THINGS (O-148, Howell
+  // 2026-09-16, with the old gateway build beside the LAN: "the Crown of
+  // Thorns is larger than the blue circle... I want to leave the Torah scroll
+  // as it is, but put the crown of thorns back to the larger size"). One
+  // constant sized both: when the scroll was judged to spill (1.8 -> 1.35 ->
+  // 1.1, 2026-08-17) the crown shrank with it, and the crown is DRAWN to ring
+  // the circle. So the circle is placed from the base scale, as the scroll
+  // is today, and the image is sized by its OWN scale around that same
+  // centre — declared per emblem by the volume (display_config.detail_sector
+  // .emblem_scale, a multiple of the circle's diameter), else the base.
+  _emblemScale() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.emblem_scale?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : LOGO_COLLAPSED_SCALE;
+  }
+
+  _collapsedGeometry() {
     const vw = this.viewport.width;
     const vh = this.viewport.height;
     const SSd = Math.min(vw, vh);
     const radius = SSd * 0.12;
     const margin = SSd * 0.03;
-    const logoWidth = radius * 2 * LOGO_COLLAPSED_SCALE;
+    // ONE CIRCLE, ONE PLACE, FOR EVERY EMBLEM (O-148, amended twice the same
+    // morning). Howell compared the crown with the backup build — "the whole
+    // thing is too big" — and its size was the backup's to the pixel; what
+    // differed was the PLACE, crushed into the corner. Placing each badge by
+    // its own box fixed the crown and made the circle jump between the two
+    // divisions; then Howell asked that both circles align absolutely, each
+    // artwork keeping its centred position in the one circle. So it is placed by
+    // the LARGEST box the volume declares — where the backup stood it — for
+    // every emblem, and each emblem is centred in it at its own size.
+    const declared = Object.values(this._renderConfig?.emblem_scale || {}).map(Number).filter(n => Number.isFinite(n) && n > 0);
+    const placeWidth = radius * 2 * Math.max(LOGO_COLLAPSED_SCALE, ...declared);
+    const placeHeight = placeWidth / LOGO_BOX_ASPECT;
+    // Shift 12% right to account for padding in the image file.
+    const centerX = vw - margin - placeWidth / 2 + placeWidth * 0.12;
+    const centerY = margin + placeHeight / 2;
+    const logoWidth = radius * 2 * this._emblemScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
-    const logoHalfWidth = logoWidth / 2;
-    const logoHalfHeight = logoHeight / 2;
-    // Same positioning as render()
-    const paddingAdjustment = logoWidth * 0.12;
-    const cx = vw - margin - logoHalfWidth + paddingAdjustment;
-    const cy = margin + logoHalfHeight;
+    return { radius, margin, centerX, centerY, logoWidth, logoHeight };
+  }
+
+  /** The badge's centre when collapsed, in viewport px — where the sector's contents fold back to (O-161). */
+  collapsedCentre() {
+    if (!this._renderConfig) return null;
+    const { centerX, centerY, radius } = this._collapsedGeometry();
+    return { x: centerX, y: centerY, radius };
+  }
+
+  _getStartState() {
+    const { radius, centerX: cx, centerY: cy, logoWidth, logoHeight } = this._collapsedGeometry();
     return {
       circleCx: cx,
       circleCy: cy,
       circleR: radius,
       circleOpacity: 0.5,
-      logoX: cx - logoHalfWidth,
-      logoY: cy - logoHalfHeight,
+      logoX: cx - logoWidth / 2,
+      logoY: cy - logoHeight / 2,
       logoWidth,
       logoHeight,
       logoOpacity: 0.5,
@@ -392,15 +437,20 @@ export class VolumeLogo {
    * @param {number} magnifierAngle - radians
    * @param {Function} [onComplete] - called when animation finishes
    */
-  expand(arcParams, magnifierAngle, onComplete) {
-    if (!this.circle || !arcParams) {
-      if (onComplete) onComplete();
-      return;
-    }
-    if (this._animationId) {
-      cancelAnimationFrame(this._animationId);
-      this._animationId = null;
-    }
+  // THE SECTOR RIDES THE FINGER (O-140, Howell 2026-09-15: "the contraction
+  // and enlargement of that circle needs to follow the slide from parent
+  // button to magnifier and back"). Expand and collapse are one geometry
+  // driven by a clock; whose clock is the caller's choice. beginExpand and
+  // beginCollapse prepare the journey and hand back frameAt(progress) — 0 to
+  // 1, eased here so a linear clock draws the same curve the tap always
+  // drew — with finish() to land it, revert() to put it back where it
+  // started, and play(onComplete) to run it on the sector's own clock. The
+  // tap's expand() and collapse() are play() and nothing more.
+  get duration() { return ANIMATION_DURATION; }
+
+  beginExpand(arcParams, magnifierAngle) {
+    if (!this.circle || !arcParams) return this._nullJourney();
+    if (this._animationId) { cancelAnimationFrame(this._animationId); this._animationId = null; }
     this._animating = true;
     this._collapsing = false;
     if (this.clickTarget) this.clickTarget.parentNode.setAttribute('display', 'none');
@@ -408,75 +458,105 @@ export class VolumeLogo {
     const end = this._getEndState(arcParams, magnifierAngle);
     // Apply detail_sector color if configured
     const detailColor = this._renderConfig?.color_scheme?.detail_sector;
-    if (detailColor && this.circle) {
-      this.circle.setAttribute('fill', detailColor);
-    }
-    const t0 = performance.now();
-    const step = now => {
-      const elapsed = now - t0;
-      const progress = Math.min(elapsed / ANIMATION_DURATION, 1);
-      const t = easeInOut(progress);
-      this._applyFrame(start, end, t);
-      if (progress < 1) {
-        this._animationId = requestAnimationFrame(step);
-      } else {
-        // Snap to exact end state
+    if (detailColor && this.circle) this.circle.setAttribute('fill', detailColor);
+    return this._journey(start, end, {
+      finish: () => {
         this._applyFrame(start, end, 1);
-        this._animationId = null;
         this._animating = false;
         this._collapsing = false;
         this._expanded = true;
-        if (onComplete) onComplete();
+      },
+      revert: () => {
+        this._applyFrame(start, end, 0);
+        this._animating = false;
+        this._collapsing = false;
+        this._expanded = false;
+        if (this.clickTarget) this.clickTarget.parentNode.removeAttribute('display');
       }
-    };
-    this._animationId = requestAnimationFrame(step);
+    });
   }
 
-  /**
-   * Collapse the Detail Sector back to upper-right corner
-   * @param {Object} arcParams - { hubX, hubY, radius }
-   * @param {number} magnifierAngle - radians
-   * @param {Function} [onComplete] - called when animation finishes
-   */
-  collapse(arcParams, magnifierAngle, onComplete) {
-    if (!this.circle) {
-      if (onComplete) onComplete();
-      return;
-    }
-    if (this._animationId) {
-      cancelAnimationFrame(this._animationId);
-      this._animationId = null;
-    }
+  beginCollapse(arcParams, magnifierAngle) {
+    if (!this.circle) return this._nullJourney();
+    if (this._animationId) { cancelAnimationFrame(this._animationId); this._animationId = null; }
     this._animating = true;
     this._collapsing = true;
     const start = this._getEndState(arcParams, magnifierAngle); // current = expanded
     const end = this._getStartState();                           // target = collapsed
-    // v0 parity: collapse uses 1.0 start opacity for BOTH circle and logo
-    // (not 0.10 which is the expand-end logo watermark opacity)
-    start.logoOpacity = 1.0;
-    const t0 = performance.now();
-    const step = now => {
-      const elapsed = now - t0;
-      const progress = Math.min(elapsed / ANIMATION_DURATION, 1);
-      const t = easeInOut(progress);
-      this._applyFrame(start, end, t);
-      if (progress < 1) {
-        this._animationId = requestAnimationFrame(step);
-      } else {
+    // The emblem shrinks from the watermark it IS (0.10) up to the badge's
+    // opacity. A v0-parity line here set the start to 1.0 — the scroll went
+    // solid the instant a collapse began — unseen at 600 ms, glaring once
+    // the finger could hold it (Howell 2026-09-15, O-141).
+    return this._journey(start, end, {
+      finish: () => {
         this._applyFrame(start, end, 1);
         // Reset fill to default after collapse
         const defaultFill = this._renderConfig?.color_scheme?.detail_sector || '#362e6a';
         if (this.circle) this.circle.setAttribute('fill', defaultFill);
         if (this.logo) this.logo.removeAttribute('transform');
-        this._animationId = null;
         this._animating = false;
         this._collapsing = false;
         this._expanded = false;
         if (this.clickTarget) this.clickTarget.parentNode.removeAttribute('display');
-        if (onComplete) onComplete();
+      },
+      revert: () => {
+        this._applyFrame(start, end, 0);
+        this._animating = false;
+        this._collapsing = false;
+        this._expanded = true;
+      }
+    });
+  }
+
+  _journey(start, end, { finish, revert }) {
+    const self = this;
+    let done = false;
+    return {
+      // `linear` for a journey held by a finger (O-151): the finger is the
+      // easing, so the circle follows it straight; played, it eases.
+      frameAt(progress, { linear = false } = {}) {
+        if (done) return;
+        const p = Math.max(0, Math.min(1, Number(progress) || 0));
+        self._applyFrame(start, end, linear ? p : easeInOut(p));
+      },
+      finish() { if (done) return; done = true; self._animationId = null; finish(); },
+      revert() { if (done) return; done = true; self._animationId = null; revert(); },
+      play(onComplete) {
+        const t0 = performance.now();
+        const step = now => {
+          if (done) return;
+          const progress = Math.min((now - t0) / ANIMATION_DURATION, 1);
+          this.frameAt(progress);
+          if (progress < 1) self._animationId = requestAnimationFrame(step);
+          else { this.finish(); if (onComplete) onComplete(); }
+        };
+        self._animationId = requestAnimationFrame(step);
       }
     };
-    this._animationId = requestAnimationFrame(step);
+  }
+
+  _nullJourney() {
+    return { frameAt() {}, finish() {}, revert() {}, play(onComplete) { if (onComplete) onComplete(); } };
+  }
+
+  /**
+   * Expand the Detail Sector from the corner badge, on its own clock.
+   * @param {Object} arcParams - { hubX, hubY, radius }
+   * @param {number} magnifierAngle - radians
+   * @param {Function} [onComplete] - called when animation finishes
+   */
+  expand(arcParams, magnifierAngle, onComplete) {
+    this.beginExpand(arcParams, magnifierAngle).play(onComplete);
+  }
+
+  /**
+   * Collapse the Detail Sector back to the upper-right corner, on its own clock.
+   * @param {Object} arcParams - { hubX, hubY, radius }
+   * @param {number} magnifierAngle - radians
+   * @param {Function} [onComplete] - called when animation finishes
+   */
+  collapse(arcParams, magnifierAngle, onComplete) {
+    this.beginCollapse(arcParams, magnifierAngle).play(onComplete);
   }
 
   /**
@@ -484,6 +564,17 @@ export class VolumeLogo {
    */
   _applyFrame(from, to, t) {
     const lerp = (a, b) => a + (b - a) * t;
+    // FRAMES IN FLIGHT ARE TRANSFORMS (O-160): the phone's frame readout put a
+    // drill into a verse at half the display's rate. Every frame rewrote the
+    // circle's geometry and the watermark's x, y, width and height — a raster
+    // image rescaled from its source on every frame. Between the ends the
+    // geometry now stays at the FROM state and a transform carries it; only
+    // the ends (t = 0, t = 1) write the real attributes, so everything that
+    // reads them sees a settled sector.
+    if (t > 0 && t < 1) { this._applyTransformFrame(from, to, t); return; }
+    this._frameBase = null;
+    if (this.circle) { this.circle.style.transform = ''; this.circle.style.opacity = ''; }
+    if (this.logo) { this.logo.style.transform = ''; this.logo.style.opacity = ''; }
     if (this.circle) {
       this.circle.setAttribute('cx', lerp(from.circleCx, to.circleCx));
       this.circle.setAttribute('cy', lerp(from.circleCy, to.circleCy));
@@ -506,6 +597,37 @@ export class VolumeLogo {
       const cy = y + h / 2;
       this.logo.setAttribute('transform', `rotate(${rot}, ${cx}, ${cy})`);
     }
+  }
+
+  _applyTransformFrame(from, to, t) {
+    const lerp = (a, b) => a + (b - a) * t;
+    if (this.circle) {
+      if (this._frameBase !== from) {
+        this.circle.setAttribute('cx', from.circleCx);
+        this.circle.setAttribute('cy', from.circleCy);
+        this.circle.setAttribute('r', from.circleR);
+      }
+      const k = from.circleR ? lerp(from.circleR, to.circleR) / from.circleR : 1;
+      const cx = lerp(from.circleCx, to.circleCx), cy = lerp(from.circleCy, to.circleCy);
+      this.circle.style.transform = `translate(${cx - k * from.circleCx}px, ${cy - k * from.circleCy}px) scale(${k})`;
+      this.circle.style.opacity = String(lerp(from.circleOpacity, to.circleOpacity));
+    }
+    if (this.logo) {
+      if (this._frameBase !== from) {
+        this.logo.setAttribute('x', from.logoX);
+        this.logo.setAttribute('y', from.logoY);
+        this.logo.setAttribute('width', from.logoWidth);
+        this.logo.setAttribute('height', from.logoHeight);
+      }
+      const x = lerp(from.logoX, to.logoX), y = lerp(from.logoY, to.logoY);
+      const w = lerp(from.logoWidth, to.logoWidth), h = lerp(from.logoHeight, to.logoHeight);
+      const kx = from.logoWidth ? w / from.logoWidth : 1, ky = from.logoHeight ? h / from.logoHeight : 1;
+      const rot = lerp(from.logoRotation, to.logoRotation);
+      const cx = x + w / 2, cy = y + h / 2;
+      this.logo.style.transform = `translate(${cx}px, ${cy}px) rotate(${rot}deg) translate(${-cx}px, ${-cy}px) translate(${x - kx * from.logoX}px, ${y - ky * from.logoY}px) scale(${kx}, ${ky})`;
+      this.logo.style.opacity = String(lerp(from.logoOpacity, to.logoOpacity));
+    }
+    this._frameBase = from;
   }
 
   /**

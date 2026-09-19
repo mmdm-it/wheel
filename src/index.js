@@ -11,7 +11,7 @@ import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
-import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction } from './view/migration-animation.js';
+import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth, topLayerIds, animateStragglers } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
 
@@ -88,11 +88,19 @@ export function createApp({
   selectedIndex = 0,
   preserveOrder = false,
   labelFormatter,
+  // Does this volume's formatter answer a 'caption' context (O-144)? Only a
+  // volume that says so is asked; any other formatter answers an unknown
+  // context with the item's name, which put LOCKWOOD-ASH beside the lens.
+  levelCaptions = false,
   shouldCenterLabel,
   contextOptions = {},
   onParentClick,
   getParentLabel: externalGetParentLabel,
   getParentLabelSuffix: externalGetParentLabelSuffix,
+  getGapLabel: externalGetGapLabel = null,
+  // Which way the volume's text runs — 'ltr' or 'rtl' (O-139); the suffixed
+  // parent label and its flights seat by it.
+  getTextDirection: externalGetTextDirection = null,
   // Whether tapping the parent button would actually migrate data RIGHT NOW.
   // The vessel (disc) draws only when this is true — a context-only label
   // (the top ring's passing country) gets words, no disc (Howell 2026-07-23:
@@ -218,6 +226,10 @@ export function createApp({
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
   let lastPyramidData = null; // stashed for SVG-level click delegation
+  // THE SPRING-BACK'S INSTANT NAVIGATION (O-138): while this is set, a
+  // migration in either direction is a bare data swap — no flight — so a
+  // struck drill can be taken straight back inside one task.
+  let instantMigration = false;
   let labelessParentFlight = false; // one-shot: next migrateIn flies the magnifier
                                     // fill to the parent seat UNLABELED, and skips
                                     // the (hidden) old parent's outgoing flight
@@ -287,7 +299,7 @@ export function createApp({
     console.log('[emitDetailSectorChange] visible:', visible, 'when:', when, 'leafLevel:', leafLevel, 'detailSectorShown:', detailSectorShown);
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new CustomEvent('detail-sector-change', {
-        detail: { visible, when }
+        detail: { visible, when, badge: volumeLogo?.collapsedCentre?.() || null, hub: { x: arcParams.hubX, y: arcParams.hubY }, band: { radius: arcParams.radius, width: Number(view?.band?.getAttribute?.('stroke-width')) || arcParams.radius * 0.02 } }
       }));
     }
   };
@@ -317,6 +329,7 @@ export function createApp({
   // it as a HINT — the animator ignores it unless the label it is flying
   // actually ends with it, so a level change cannot mis-seat anything.
   let parentLabelSuffixHint = '';
+  const textDirection = () => ((typeof externalGetTextDirection === 'function' && externalGetTextDirection()) === 'rtl' ? 'rtl' : 'ltr');
   const getParentLabel = typeof externalGetParentLabel === 'function'
     ? externalGetParentLabel
     : builtinGetParentLabel;
@@ -400,10 +413,18 @@ export function createApp({
     rotation = clampRotation(desiredRotation, bounds);
   };
 
+  // PHASE TIMINGS FOR THE BENCH GESTURE LOG (O-153): inert unless the log is on.
+  function phase(name, extra = {}) {
+    if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') {
+      window.__tapDebugLog('phase', { name, p: Math.round(performance.now() * 10) / 10, ...extra });
+    }
+  }
   const setPrimaryItems = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
+    phase('set:enter', { n: Array.isArray(newItems) ? newItems.length : 0 });
     versePart = 0; // a new chain is a new reading position (O-84)
     preserveOrderFlag = nextPreserveOrder;
     normalizedItems = normalizeItems(newItems, { preserveOrder: preserveOrderFlag });
+    phase('set:normalized');
     const safePrimaryIndex = (() => {
       if (!normalizedItems.length) return 0;
       if (normalizedItems[nextSelectedIndex] !== null) return nextSelectedIndex;
@@ -414,8 +435,10 @@ export function createApp({
     lastParentLabelOut = '';
     lastSelectedLabelOut = '';
     nav.setItems(normalizedItems, safePrimaryIndex);
+    phase('set:nav');
     alignToSelected();
     render(rotation);
+    phase('set:rendered');
   };
 
   const setParentButtons = config => {
@@ -425,13 +448,166 @@ export function createApp({
     render(rotation);
   };
 
+
+  // ── THE LENS CAPTION CROSS-FADES (O-151 step four) ─────────────────
+  // The level's word beside the lens used to switch at the render that
+  // commits the new ring — at the first frame of a drill in, the last of a
+  // drill out — a pop either way. The word leaving and the word arriving are
+  // two copies of the caption in its own seat: the old fades over the first
+  // half of the migration, the new over the second, driven by the finger
+  // when a drill is held and on the flights' own 600 ms when tapped. The real
+  // caption stays hidden until the copies are done, whatever the renders in
+  // between wrote into it.
+  // THE CAPTION TRAVELS WITH ITS RING (O-163, Howell 2026-09-17: the chapter
+  // and verse words "should slide in and out from under the Magnifier when
+  // their associated Focus Ring Nodes migrate in and out of the Child
+  // Pyramid", and when the chapter nodes leave the screen "the Chapter label
+  // should migrate off screen with them"). No cross-fade. On a drill IN the
+  // departing word leaves along the ring's own outward line, with the ring,
+  // and the arriving word slides out from under the lens. On a drill OUT the
+  // departing word slides back under the lens as its ring rises to the sky,
+  // and the arriving word comes in from off screen with the returning ring.
+  const slideCaption = (nextItem, direction) => {
+    const real = view.magnifierCaption;
+    if (!real || !levelCaptions || typeof real.cloneNode !== 'function') return;
+    const before = String(real.textContent || '');
+    const after = nextItem ? String(formatLabel({ item: nextItem, context: 'caption' }) || '') : '';
+    if (before === after) return;
+    const host = view.contentGroup || real.parentNode;
+    if (!host) return;
+    const underThis = view.band && view.band.parentNode === host ? view.band : host.firstChild;
+    const cx = Number(real.getAttribute('x')) || 0, cy = Number(real.getAttribute('y')) || 0;
+    const mx = magnifier.x, my = magnifier.y;
+    const hx = cx - arcParams.hubX, hy = cy - arcParams.hubY, hl = Math.hypot(hx, hy) || 1;
+    const ux = hx / hl, uy = hy / hl;
+    // JUST BEYOND THE EDGE, NOT FAR BEYOND IT (Howell 2026-09-17: "the
+    // incoming chapter label lags well behind the incoming focus ring
+    // nodes"). The word used to set out from a fifth again as far as the
+    // ring's own radius, most of it a march through blank space off screen,
+    // so it crossed the edge only halfway through the swipe. Now the distance
+    // is measured: seat to the screen's edge along its own line, plus the
+    // word's length — so it is in frame almost as soon as it moves.
+    const vw = vp?.width || (typeof window !== 'undefined' ? window.innerWidth : 0) || 1;
+    const vh = vp?.height || (typeof window !== 'undefined' ? window.innerHeight : 0) || 1;
+    const toEdge = Math.min(
+      ux > 0 ? (vw - cx) / ux : (ux < 0 ? -cx / ux : Infinity),
+      uy > 0 ? (vh - cy) / uy : (uy < 0 ? -cy / uy : Infinity)
+    );
+    const edgeDist = Number.isFinite(toEdge) && toEdge > 0 ? toEdge : arcParams.radius;
+    // AT FULL SIZE, AND COVERED RATHER THAN SHRUNK (O-163 amended, Howell:
+    // "It shouldn't shrink though, and it should not be visible through the
+    // incoming node"). The word keeps its size and slides along its own seat
+    // line into the lens. IT GOES UNDER THE RING'S BAND (Howell, with the
+    // part to hide marked on a photograph): the node arriving in the glass
+    // cannot reach the lens in time to cover the word, but the band can and
+    // does — so the word and its clones draw beneath the band, the nodes and
+    // the lens, and the half that would show past the far side is clipped at
+    // the lens's centre line.
+    const SVG = 'http://www.w3.org/2000/svg';
+    const defs = document.createElementNS(SVG, 'defs');
+    const clipId = `caption-clip-${Date.now().toString(36)}-${Math.floor(Math.random() * 1e6)}`;
+    const clip = document.createElementNS(SVG, 'clipPath');
+    clip.setAttribute('id', clipId);
+    clip.setAttribute('clipPathUnits', 'userSpaceOnUse');
+    const span = Math.max(arcParams.radius * 4, 4000);
+    const rect = document.createElementNS(SVG, 'rect');
+    rect.setAttribute('x', '0');
+    rect.setAttribute('y', String(-span));
+    rect.setAttribute('width', String(span));
+    rect.setAttribute('height', String(span * 2));
+    rect.setAttribute('transform', `translate(${mx}, ${my}) rotate(${(Math.atan2(cy - my, cx - mx) * 180) / Math.PI})`);
+    clip.appendChild(rect);
+    defs.appendChild(clip);
+    host.appendChild(defs);
+    // THE CLIP MUST NOT TRAVEL WITH THE WORD (Howell: "The label must not
+    // reappear on the other side of the Focus Ring Band"). A clip on the same
+    // element that carries the transform is resolved in that element's own
+    // moved space, so it slid along with the text and never cut anything: the
+    // clipped shell stands still and an inner group does the travelling.
+    const wrap = text => {
+      const shell = document.createElementNS(SVG, 'g');
+      shell.setAttribute('clip-path', `url(#${clipId})`);
+      const g = document.createElementNS(SVG, 'g');
+      const t = real.cloneNode(true);
+      t.textContent = text;
+      t.style.opacity = '1';
+      g.appendChild(t);
+      shell.appendChild(g);
+      g.shell = shell;
+      if (underThis) host.insertBefore(shell, underThis); else host.appendChild(shell);
+      return g;
+    };
+    const leaving = wrap(before);
+    const arriving = wrap(after);
+    real.style.visibility = 'hidden';
+    // GONE BEFORE THE NODES SETTLE (Howell 2026-09-17: the word "moved
+    // partially under the magnifier and then faded out" — it travelled only
+    // as far as the lens's centre, so its tail was still outside the glass
+    // when the flight ended and the clone was taken away). The word travels
+    // its own length PAST the centre line, where the clip takes it, and it is
+    // clear by three quarters of the swipe — under the glass before the nodes
+    // take their seats, so there is nothing left to fade.
+    const seatDist = Math.hypot(mx - cx, my - cy) || 1;
+    const sx = (mx - cx) / seatDist, sy = (my - cy) / seatDist;
+    const widthOf = g => {
+      const t = g.firstChild;
+      try { return typeof t?.getComputedTextLength === 'function' ? t.getComputedTextLength() : 0; } catch (e) { return 0; }
+    };
+    const CLEAR_BY = 0.75;
+    const under = (g, p, span) => {
+      const d = Math.min(1, p / CLEAR_BY) * span;
+      g.style.transform = `translate(${(sx * d).toFixed(1)}px, ${(sy * d).toFixed(1)}px)`;
+    };
+    let travel = arcParams.radius;
+    // FIRST IN, LAST OUT (Howell 2026-09-17: the word "should enter frame
+    // before the Focus Ring Nodes, and leave after"). Travelling at the
+    // nodes' own even pace, it spent most of the swipe out beyond the screen
+    // and only appeared at the end. The far ground is covered fast and the
+    // near ground slowly — so an arriving word is in frame within the first
+    // third, and a leaving one is still in frame when the nodes have gone.
+    const away = (g, p) => {
+      const d = travel * p * p;   // far ground fast, near ground slow
+      g.style.transform = `translate(${(ux * d).toFixed(1)}px, ${(uy * d).toFixed(1)}px)`;
+    };
+    const leavingSpan = seatDist + widthOf(leaving) * 1.1;
+    const arrivingSpan = seatDist + widthOf(arriving) * 1.1;
+    travel = edgeDist + Math.max(widthOf(leaving), widthOf(arriving)) * 1.2 + magnifierRadius * 0.5;
+    const frame = t => {
+      if (direction === 'out') { under(leaving, t, leavingSpan); away(arriving, 1 - t); }
+      else { away(leaving, t); under(arriving, 1 - t, arrivingSpan); }
+    };
+    frame(0);
+    let finished = false;
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      real.style.visibility = '';
+      (leaving.shell || leaving).remove();
+      (arriving.shell || arriving).remove();
+      defs.remove();
+    };
+    const scrubbed = scrubDriver(600, frame, { onCommit: finish, onAbort: finish });
+    if (scrubbed) return;
+    if (typeof requestAnimationFrame !== 'function') { finish(); return; }
+    let start = 0;
+    const step = now => {
+      if (finished) return;
+      if (!start) start = now;
+      const t = Math.min(1, (now - start) / 600);
+      frame(t);
+      if (t < 1) requestAnimationFrame(step); else finish();
+    };
+    requestAnimationFrame(step);
+  };
+
   // ── Migration Animation: IN (Child Pyramid → Focus Ring) ──────────
   // Snapshots current pyramid node positions, calculates where the new
   // items will land on the focus ring, runs the 600 ms CSS transform
   // animation, then calls setPrimaryItems to finish the swap.
   const migrateIn = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
+    phase('in:enter', { items: Array.isArray(newItems) ? newItems.length : 0 });
     // If animating or no pyramid data, fall back to instant swap
-    if (isAnimating() || !lastPyramidData?.nodes?.length) {
+    if (instantMigration || isAnimating() || !lastPyramidData?.nodes?.length) {
       setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
       return;
     }
@@ -469,7 +645,28 @@ export function createApp({
     // Use calculateAllNodePositions (no visible-window filter) so every
     // sibling gets a target — nodes beyond the visible arc animate to their
     // implied off-screen positions on the focus ring.
-    const ringTargets = calculateAllNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+    // ONLY THE SKY'S OWN NODES NEED A TARGET (O-158): animateIn flies the
+    // pyramid's nodes and nothing else, and placing every item of the new
+    // chain — the whole volume's verses on a drill into one — cost 13–31 ms
+    // on the phone for a few dozen flights.
+    // ONLY THE SEATS ON SCREEN ARE FLOWN TO (O-165, Howell 2026-09-17, on
+    // three photographs of a drill into the Psalms' chapters). A book's sky
+    // holds a spread of the whole book — 28 stars out of 151 chapters — while
+    // its ring shows about a dozen seats at a time. Every star was flown to
+    // its true seat, so the ones seated far up or down the chain streaked
+    // clear across the face on their way off the edge, crossing the dozen
+    // that were settling. A star whose seat is off screen now departs the way
+    // stars have always departed on a filter change: to the flock point on
+    // its own side of the chain, up-chain or down-chain, and out of frame.
+    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+    phase('in:ring-targets', { n: ringTargets.length });
+    const seatedIds = new Set(ringTargets.map(t => String(t.item?.id ?? '')));
+    const orderById = new Map(tempNormalized.filter(Boolean)
+      .map((it, i) => [String(it.id), Number.isFinite(it.order) ? it.order : i]));
+    const seatedOrders = ringTargets.map(t => orderById.get(String(t.item?.id ?? ''))).filter(Number.isFinite);
+    const minSeatedOrder = seatedOrders.length ? Math.min(...seatedOrders) : 0;
+    const arrivingStars = pyramidNodes.filter(pn => seatedIds.has(String(pn.item?.id ?? pn.id ?? '')));
+    const distantStars = pyramidNodes.filter(pn => !seatedIds.has(String(pn.item?.id ?? pn.id ?? '')));
 
     // 3. Snapshot current focus-ring node positions before they vanish.
     //    These will animate radially outward while new nodes animate in.
@@ -513,11 +710,44 @@ export function createApp({
     const parentLabelSeatX = parentSeat.labelX;
     // Width-aware label seat (Howell 2026-07-25): flights measure their own
     // clone text and ask this for the settled left edge.
-    const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW);
+    const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW, textDirection());
+
+    // 4c. Detail Sector: expand simultaneously if the incoming selected item is
+    //     a leaf — and BEFORE the commit (O-159, drill-in audit step one). The
+    //     commit's render, seeing a leaf with the sector closed and idle,
+    //     started the sector's own 600 ms expansion, so under a held drill the
+    //     circle grew on its own clock while everything else followed the
+    //     finger. Begun here, the journey is already open and animating when
+    //     that render runs, and the render leaves it to the finger.
+    //    By triggering here (not waiting for onComplete), both animations run in parallel.
+    //    No onComplete render — setPrimaryItems (in the migration onComplete) will
+    //    trigger the authoritative render once nav state has been committed.
+    const incomingIsLeaf = leafLevel && tempSelected?.level === leafLevel;
+    if (incomingIsLeaf && !detailSectorShown && !volumeLogo.animating) {
+      detailSectorShown = true;
+      // THE SECTOR RIDES THE FINGER (O-140): under a scrub the circle's
+      // journey is driven by the same clock as the flights; on a tap it
+      // plays on its own, as before.
+      const journey = volumeLogo.beginExpand(arcParams, magnifier.angle);
+      const opened = () => emitDetailSectorChange(true, 'after-animation');
+      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t, { linear: true }), {
+        onCommit: () => { journey.finish(); opened(); },
+        onAbort: () => { journey.revert(); detailSectorShown = false; }
+      });
+      if (!scrubbed) journey.play(opened);
+      // THE TEXT ARRIVES UNDER THE FINGER TOO (O-159 step three): the host is
+      // told a held drill is bringing a leaf in, while the scrub is still
+      // open, so it can hand its reading panels to the same clock.
+      else if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('detail-sector-arriving'));
+    }
 
     // 5. Commit the data swap NOW while real nodes are hidden behind clones.
     //    This lets us read lastPyramidData for the new child pyramid immediately.
+    //    The caption beside the lens is handed its cross-fade first (O-151).
+    slideCaption(tempSelected, 'in');
+    phase('in:before-commit');
     setPrimaryItems(newItems, nextSelectedIndex, nextPreserveOrder);
+    phase('in:after-commit', { sky: lastPyramidData?.nodes?.length || 0 });
 
     // 5b. setPrimaryItems → render() has now repainted the magnifier and parent
     //     button with the NEW data.  Hide their labels and circle fills so only
@@ -581,9 +811,38 @@ export function createApp({
     const selectedId = tempSelected?.id ?? null;
     const outgoingMagnifierId = prevSelected?.id ?? null;
 
+    // Ring nodes on the new ring that no star carries rise into their seats
+    // instead of appearing at landing (O-159 step four).
+    {
+      const carriedIn = new Set(pyramidNodes.map(pn => pn.item?.id ?? pn.id).filter(id => id != null));
+      const risers = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing)
+        .filter(n => n.item?.id != null && !carriedIn.has(n.item.id) && n.item.id !== tempSelected?.id)
+        .map(n => ({ ...n, label: formatLabel({ item: n.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: n.item })) }));
+      if (risers.length) {
+        animateStragglers({
+          svgRoot: view.contentGroup || view.svgRoot,
+          ringNodes: risers,
+          hubX: arcParams.hubX,
+          hubY: arcParams.hubY,
+          arrive: true
+        });
+      }
+    }
+
+    if (distantStars.length) {
+      const { upper: flockUpper, lower: flockLower } = flockOrigins();
+      animateStarsAway({
+        svgRoot: view.contentGroup || view.svgRoot,
+        stars: distantStars.map(s => ({
+          ...s,
+          to: (orderById.get(String(s.item?.id ?? s.id ?? '')) ?? Infinity) < minSeatedOrder ? flockUpper : flockLower
+        }))
+      });
+    }
+
     animateIn({
       svgRoot: view.contentGroup || view.svgRoot,
-      pyramidNodes,
+      pyramidNodes: arrivingStars,
       ringTargets,
       magnifierAngle: magnifier.angle,
       clickedId: selectedId,
@@ -603,6 +862,10 @@ export function createApp({
         // Keep a visual gap under the magnifier: the node currently inside
         // the magnifier should not animate outward as part of ring clones.
         skipId: outgoingMagnifierId,
+        // THE SAME LENGTH AS EVERY OTHER FLIGHT (O-159 step two): at its own
+        // 900 ms, a held drill saw every other element finish at two-thirds
+        // of the swipe while the departing ring travelled on alone.
+        durationMs: 600,
         nodesGroup: view.nodesGroup,
         labelsGroup: view.labelsGroup
       });
@@ -648,7 +911,12 @@ export function createApp({
         fromAngle: magnifier.angle
       });
     } else {
-      animateParentButtonOutward({
+      // A NODE IS ITS DISC AND ITS LABEL (O-162, Howell 2026-09-17): when the
+      // numeral merges into the parent's label the parent's own node stays
+      // put, disc and all — nothing leaves the button and no loose disc
+      // flies off. Only when the button changes hands does its node depart
+      // whole, disc and label together.
+      if (!isSuffixMergeIn) animateParentButtonOutward({
         svgRoot: view.contentGroup || view.svgRoot,
         buttonX: parentButtonX,
         buttonY: parentButtonY,
@@ -657,7 +925,7 @@ export function createApp({
         labelSuffix: parentLabelSuffixHint,
         discless: departingParentDiscless,
         radius: magnifierRadius,
-        label: isSuffixMergeIn ? '' : prevParentLabel,
+        label: prevParentLabel,
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         arcRadius: arcParams.radius,
@@ -679,6 +947,7 @@ export function createApp({
           radius: magnifierRadius,
           baseLabel: prevParentLabel,
           suffixLabel: prevMagnifierLabel,
+          direction: textDirection(),
           fromAngle: magnifier.angle
         });
       } else {
@@ -698,17 +967,7 @@ export function createApp({
       }
     }
 
-    // 5. Detail Sector: expand simultaneously if the incoming selected item is a leaf.
-    //    By triggering here (not waiting for onComplete), both animations run in parallel.
-    //    No onComplete render — setPrimaryItems (in the migration onComplete) will
-    //    trigger the authoritative render once nav state has been committed.
-    const incomingIsLeaf = leafLevel && tempSelected?.level === leafLevel;
-    if (incomingIsLeaf && !detailSectorShown && !volumeLogo.animating) {
-      detailSectorShown = true;
-      volumeLogo.expand(arcParams, magnifier.angle, () => {
-        emitDetailSectorChange(true, 'after-animation');
-      });
-    }
+    phase('in:flights-launched');
   };
 
   // ── Migration Animation: OUT (Focus Ring → Child Pyramid) ─────────
@@ -716,7 +975,8 @@ export function createApp({
   // reverses the transform animation back to the child pyramid
   // positions, then calls setPrimaryItems to restore parent items.
   const migrateOut = (items, selectedIndex = 0, preserveOrder = false) => {
-    if (isAnimating()) {
+    phase('out:enter', { items: Array.isArray(items) ? items.length : 0 });
+    if (instantMigration || isAnimating()) {
       setPrimaryItems(items, selectedIndex, preserveOrder);
       return;
     }
@@ -758,8 +1018,57 @@ export function createApp({
     if (detailSectorShown && !volumeLogo.animating) {
       detailSectorShown = false;
       emitDetailSectorChange(false, 'immediate');
-      volumeLogo.collapse(arcParams, magnifier.angle);
+      // Under a scrub the collapse rides the finger (O-140); struck, it
+      // reopens where it was and says so.
+      const journey = volumeLogo.beginCollapse(arcParams, magnifier.angle);
+      const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t, { linear: true }), {
+        onCommit: () => journey.finish(),
+        onAbort: () => { journey.revert(); detailSectorShown = true; emitDetailSectorChange(true, 'immediate'); }
+      });
+      if (!scrubbed) journey.play();
     }
+
+    // THE RING RISES INTO THE SKY (O-141): when no IN flight left a layer to
+    // reverse — the reader landed here by the boot, a bookmark or a link —
+    // the departing ring's seats are snapshot now, every sibling on the arc
+    // or implied beyond it, so they can fly to the new sky's seats below.
+    const noLayerToReverse = getStackDepth() === 0;
+    const departingLensId = nav.getCurrent()?.id ?? null;
+    // The ring nodes on screen, and which of them the reversal will carry
+    // (O-151 step five): the rest fade as they go.
+    const onScreenRing = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
+      .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: node.item })) }));
+    const layerIds = noLayerToReverse ? null : new Set(topLayerIds());
+    phase('out:on-screen-ring', { n: onScreenRing.length, layer: !noLayerToReverse });
+    // ONLY THE SEATS THE SKY WILL USE (O-154, from the gesture log: a drill
+    // out took 211–423 ms to set up against a drill in's 38–82). This placed
+    // and labelled EVERY item of the departing chain — the whole volume's
+    // verses, tens of thousands — to find the few dozen the new sky seats.
+    // The chain and the rotation are kept now; the seats are computed after
+    // the commit, for the sky's own ids alone.
+    const departingChain = noLayerToReverse ? normalizedItems : null;
+    const departingRotation = rotation;
+    const departingSeatsFor = ids => {
+      if (!departingChain || !ids.size) return [];
+      const arc = arcParams;
+      const out = [];
+      for (let index = 0; index < departingChain.length && out.length < ids.size; index += 1) {
+        const item = departingChain[index];
+        if (!item || !ids.has(item.id)) continue;
+        const order = Number.isFinite(item.order) ? item.order : index;
+        const angle = getBaseAngleForOrder(order, vp, nodeSpacing) + departingRotation;
+        out.push({
+          item, index, angle, radius: nodeRadius,
+          x: arc.hubX + arc.radius * Math.cos(angle),
+          y: arc.hubY + arc.radius * Math.sin(angle),
+          label: formatLabel({ item, context: 'node' })
+        });
+      }
+      return out;
+    };
+
+    // The caption beside the lens cross-fades to the parent level's word (O-151).
+    slideCaption(tempSelected, 'out');
 
     // Snapshot magnifier and parent-button state BEFORE animations start.
     // As in migrateIn: the OUTGOING parent label is what's on screen — the
@@ -780,7 +1089,7 @@ export function createApp({
     const parentLabelSeatX = parentSeat.labelX;
     // Width-aware label seat (Howell 2026-07-25): flights measure their own
     // clone text and ask this for the settled left edge.
-    const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW);
+    const parentLabelLeftX = (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW, textDirection());
     // The new parent label (after OUT) is the parent of tempSelected
     const newParentLabel = tempSelected ? (getParentLabel(tempSelected) || '') : '';
     // Ascending back TO a suffix-merge ring: the suffix splits off the parent
@@ -856,29 +1165,84 @@ export function createApp({
       });
     }
 
+    phase('out:before-reverse');
+    // THE COMMIT LANDS BEFORE THE FLIGHTS, LAYER OR NO LAYER (O-170, Howell
+    // 2026-09-18: the ring's nodes "migrate to the child pyramid in a row and
+    // do not form the star field ... then the star field just appears").
+    // With a layer to reverse, only the stars that had flown IN flew back —
+    // and since O-165 those are the seats that were on screen at the drill
+    // in. After a turn of the ring the nodes on screen had no layer entry,
+    // so they faded as stragglers while their stars popped on at the end.
+    // The new sky must be known to say which departing node has a seat in
+    // it, so the data commit lands now in both cases, the real sky held
+    // hidden until the barrier; then every departing node the layer does
+    // not carry flies to its own sky seat — from its ring seat if it is on
+    // screen, from the hub if it is not — and only a node with no seat at
+    // all fades away.
+    let committed = false;
+    const commitOut = () => {
+      if (committed) return;
+      committed = true;
+      phase('out:before-commit');
+      setPrimaryItems(items, selectedIndex, preserveOrder);
+      phase('out:after-commit', { sky: lastPyramidData?.nodes?.length || 0 });
+    };
     animateOut({
       nodesGroup: view.nodesGroup,
       labelsGroup: view.labelsGroup,
       onComplete: () => {
-        // Data commit happens at animation end (not at the barrier): the
-        // repaint lands while the reals are still hidden behind clones.
-        setPrimaryItems(items, selectedIndex, preserveOrder);
-        // Restore pyramid group visibility — animatePyramidToHub hid it and
-        // intentionally did not restore it.  setPrimaryItems → render() has
-        // now repainted the children inside the group.
+        commitOut();
         if (view.pyramidView?.pyramidGroup) {
           view.pyramidView.pyramidGroup.style.opacity = '';
         }
-        // Everything else restores at the transaction barrier.
       }
     });
+    if (!committed) {
+      if (view.pyramidView?.pyramidGroup) view.pyramidView.pyramidGroup.style.opacity = '0';
+      commitOut();
+    }
+    phase('out:reversed');
+    const skyNodes = lastPyramidData?.nodes || [];
+    const skyIds = new Set(skyNodes.map(n => n.item?.id ?? n.id).filter(id => id != null));
+    const unflown = skyNodes.filter(n => { const id = n.item?.id ?? n.id; return id != null && !(layerIds && layerIds.has(id)); });
+    const unflownIds = new Set(unflown.map(n => n.item?.id ?? n.id));
+    {
+      const stragglers = onScreenRing.filter(n => {
+        const id = n.item?.id;
+        return id != null && id !== departingLensId && !(layerIds && layerIds.has(id)) && !skyIds.has(id);
+      });
+      if (stragglers.length) {
+        animateStragglers({
+          svgRoot: view.contentGroup || view.svgRoot,
+          ringNodes: stragglers,
+          hubX: arcParams.hubX,
+          hubY: arcParams.hubY
+        });
+      }
+    }
+    if (unflown.length) {
+      animateRingToSky({
+        svgRoot: view.contentGroup || view.svgRoot,
+        ringNodes: noLayerToReverse ? departingSeatsFor(unflownIds) : onScreenRing.filter(n => unflownIds.has(n.item?.id)),
+        pyramidNodes: unflown,
+        hubX: arcParams.hubX,
+        hubY: arcParams.hubY,
+        nodeRadius,
+        lensId: departingLensId,
+        magnifierRadius,
+        pyramidGroup: view.pyramidView?.pyramidGroup
+      });
+    }
 
     // (Launched before the unmerge overlay: the arriving disc must dock
     // UNDER the anchored base label — paint order is document order.)
     // New parent button fill: fly in from off-screen radially. On a
     // suffix-merge ascent the LABEL is anchored (the unmerge overlay owns
     // it), but the vessel's new fill still arrives — as a label-less disc.
-    if (newParentLabel) {
+    // A NODE IS ITS DISC AND ITS LABEL (O-162): when the numeral leaves the
+    // parent's label for the lens, the parent's node stays, disc and all, and
+    // nothing arrives; only a button changing hands takes its new node whole.
+    if (newParentLabel && !isSuffixMergeOut) {
       animateParentButtonInward({
         svgRoot: view.contentGroup || view.svgRoot,
         buttonX: parentButtonX,
@@ -890,7 +1254,7 @@ export function createApp({
         // adapter has already advanced, so it answers for the destination.
         discless: typeof getParentActionable === 'function' ? !getParentActionable() : false,
         radius: magnifierRadius,
-        label: isSuffixMergeOut ? '' : newParentLabel,
+        label: newParentLabel,
         hubX: arcParams.hubX,
         hubY: arcParams.hubY,
         arcRadius: arcParams.radius,
@@ -912,6 +1276,7 @@ export function createApp({
         radius: magnifierRadius,
         baseLabel: newParentLabel,
         suffixLabel: nextMagnifierLabel,
+        direction: textDirection(),
         fromAngle: magnifier.angle
       });
     } else {
@@ -929,6 +1294,7 @@ export function createApp({
         fromAngle: magnifier.angle
       });
     }
+    phase('out:flights-launched');
 
   };
 
@@ -1154,7 +1520,7 @@ export function createApp({
       toX: parentSeat.discX,
       toY: parentSeat.discY,
       labelFromX: parentSeat.labelX,
-      labelLeftXForWidth: (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW),
+      labelLeftXForWidth: (w, nameW) => getParentLabelLeftX(vp, magnifierRadius, w, nameW, textDirection()),
       labelSuffix: parentLabelSuffixHint,
       radius: magnifierRadius,
       label: travelingLabel,
@@ -1323,7 +1689,7 @@ export function createApp({
   };
 
   const shiftLayersOut = () => {
-    if (isAnimating()) return; // block during migration animation
+    if (isAnimating() && !instantMigration) return; // block during migration animation
     const prevSelected = nav.getCurrent();
     const prevParentLabel = getParentLabel(prevSelected) || '';
     const prevSelectedLabel = formatLabel({ item: prevSelected, context: 'magnifier' }) || '';
@@ -1360,8 +1726,10 @@ export function createApp({
       if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
     }
     const selected = nav.getCurrent() || nav.items.find(item => item !== null) || nav.items[0];
+    phase('r:enter');
     const visible = buildVisibleItems();
     const bounds = computeBounds(visible);
+    phase('r:visible', { n: visible.length });
     const labelMaskEpsilon = nodeSpacing * 0.6;
     if (choreographer) {
       choreographer.setBounds(bounds.minRotation, bounds.maxRotation);
@@ -1459,6 +1827,7 @@ export function createApp({
       return closest ?? selected;
     })();
 
+    phase('r:ring-and-sector');
     const pyramidData = (() => {
       if (suppressPyramid) return null;
       if (!pyramidConfig) return null;
@@ -1495,20 +1864,25 @@ export function createApp({
         // Pre-fetch children to pass count for dynamic spacing
         let children = [];
         if (typeof pyramidConfig.getChildren === 'function' && pyramidSelected) {
+          phase('r:children-start');
           children = pyramidConfig.getChildren({ selected: pyramidSelected });
+          phase('r:children', { n: children.length });
         }
-        // Editorial prominence (declared in data, tier 1 featured / 2 notable /
-        // absent default): prominent children claim the NEAR seats — the
-        // scatter hands out seats center-first — and draw larger, while the
-        // rest recede slightly. A set with no prominence declared is a
-        // uniform sky (every volume today except where the data says so).
-        // The focus ring is untouched: prominence permutes pyramid seating
-        // only, never sibling order.
+        // Prominence: FOUR TIERS AND ONE STANDOUT (O-134, Howell 2026-09-15:
+        // "four, with one standout. Something like 100:60:45:30"). Tier 1 is
+        // the sky's one standout; 2 its equals; 3 the rest of the ranked; 4
+        // the never-read (the volume's own tiering, volume-pyramid.js). An
+        // editorial tier declared in the data (1 featured / 2 notable /
+        // absent) reads on the same scale, absent as 3. Prominent children
+        // claim the NEAR seats — the scatter hands out seats center-first —
+        // and draw larger. A set with no prominence declared is a uniform
+        // sky. The focus ring is untouched: prominence permutes pyramid
+        // seating only, never sibling order.
         const tierOf = ch => {
           const t = ch?.prominence ?? ch?.meta?.prominence;
-          return t === 1 || t === 2 ? t : 3;
+          return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 3;
         };
-        const anyProminence = children.some(ch => tierOf(ch) < 3);
+        const anyProminence = children.some(ch => { const t = ch?.prominence ?? ch?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4; });
         // A volume may supply a per-sky policy: a number (the cap) or
         // { cap, spread } — spread SAMPLES the undeclared seats uniformly
         // across the whole sibling range instead of taking the alphabet's
@@ -1525,7 +1899,7 @@ export function createApp({
         let seatPool = children.map((_, i) => i);
         if (policySpread && children.length > seatCount) {
           const prominent = seatPool.filter(i => tierOf(children[i]) < 3);
-          const rest = seatPool.filter(i => tierOf(children[i]) === 3);
+          const rest = seatPool.filter(i => tierOf(children[i]) >= 3);
           const room = Math.max(0, seatCount - prominent.length);
           const sampled = [];
           for (let k = 0; k < room && rest.length; k += 1) {
@@ -1536,7 +1910,10 @@ export function createApp({
         const seatOrder = seatPool.slice();
         if (anyProminence) seatOrder.sort((a, b) => (tierOf(children[a]) - tierOf(children[b])) || (a - b));
         else seatOrder.sort((a, b) => a - b);
-        const scaleForTier = t => (!anyProminence ? 1 : (t === 1 ? 1.45 : t === 2 ? 1.15 : 0.8));
+        // 100:60:45:30 on the standout (O-134); the standout itself 1.6 of
+        // a uniform star, so tier 2 sits just under uniform and tier 4 at
+        // half. Howell's eye converges these.
+        const scaleForTier = t => (!anyProminence ? 1 : (t === 1 ? 1.6 : t === 2 ? 0.96 : t === 3 ? 0.72 : 0.48));
         // Depth taper (Howell 2026-07-19): an overloaded sky implies its own
         // "etcetera" — past the first seats, stars shrink toward a smudge
         // floor where labels stop being legible, and the tiny tail packs
@@ -1558,6 +1935,7 @@ export function createApp({
         // 60 → 35 → 28, Howell's eye converging (2026-07-19); country skies
         // ride the policy above.
 
+        phase('r:seats');
         const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
           logoBounds: volumeLogo.getBounds(),
           magnifierAngle: magnifier.angle,
@@ -1625,17 +2003,40 @@ export function createApp({
       }
     })();
     lastPyramidData = pyramidData; // stash for SVG-level click delegation
+    phase('r:pyramid', { sky: pyramidData?.nodes?.length || 0 });
     // Use the live nearest-to-magnifier node during rotation so the parent
     // button label updates as different items pass through the magnifier.
     // pyramidSelected already falls back to `selected` when not rotating.
-    const parentLabel = getParentLabel(pyramidSelected);
+    // THE GAP KEEPS THE NEARER SEAT'S NAME (O-168, Howell 2026-09-18; first
+    // built to name the parent alone in a gap, which he found "noisy and
+    // busy, three quick changes in such a short time"): turned into the gap
+    // between two neighbours that share a parent, the seat keeps naming the
+    // nearer neighbour's full label — GENESIS 4 until the middle of the gap,
+    // GENESIS 5 from there — so the name flips once, in the middle, and never
+    // passes through a bare parent. The adapter answers from the nearer and
+    // farther items either side of the glass; a gap whose neighbours share
+    // nothing names nothing.
+    const gapSeat = (() => {
+      if (pyramidSelected !== null || !isRotating || typeof externalGetGapLabel !== 'function') return null;
+      let below = null, above = null;
+      for (const node of nodes) {
+        if (!node.item || node.item.placebo) continue;
+        if (node.angle <= magnifier.angle) { if (!below || node.angle > below.angle) below = node; }
+        else if (!above || node.angle < above.angle) above = node;
+      }
+      if (!below || !above) return null;
+      const nearer = (magnifier.angle - below.angle) <= (above.angle - magnifier.angle) ? below : above;
+      const farther = nearer === below ? above : below;
+      const label = externalGetGapLabel(nearer.item, farther.item) || '';
+      return { label, item: label ? nearer.item : null };
+    })();
+    const parentLabel = gapSeat ? gapSeat.label : getParentLabel(pyramidSelected);
     const selectedMagnifierLabel = formatLabel({ item: selected, context: 'magnifier' });
     const magnifierLabel = isLayerOut
       ? (lastParentLabelOut || parentLabel || selectedMagnifierLabel)
       : selectedMagnifierLabel;
-    // What the volume appended, so the view can seat by the name alone.
     const parentOuterSuffix = typeof externalGetParentLabelSuffix === 'function'
-      ? (externalGetParentLabelSuffix(pyramidSelected) || '') : '';
+      ? (externalGetParentLabelSuffix(gapSeat ? gapSeat.item : pyramidSelected) || '') : '';
     parentLabelSuffixHint = parentOuterSuffix;
     const parentOuterLabel = isLayerOut
       ? (parentLabel || lastSelectedLabelOut || selectedMagnifierLabel)
@@ -1645,7 +2046,7 @@ export function createApp({
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: magnifierLabel },
+      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection() },
       {
         isRotating,
         // O-84 (Howell's correction, 2026-08-22): a split verse settles as a
@@ -1664,6 +2065,7 @@ export function createApp({
         parentButtons: {
           outerLabel: parentOuterLabel,
           outerLabelSuffix: parentOuterSuffix,
+          outerLabelDirection: textDirection(),
           onOuterClick: shiftLayersOut,
           isLayerOut,
           showOuter: parentButtonsVisibility.showOuter,
@@ -1675,6 +2077,7 @@ export function createApp({
       }
     );
 
+    phase('r:view');
     if (renderStart !== null && typeof performance !== 'undefined') {
       const elapsed = performance.now() - renderStart;
       const durationMs = Number(elapsed.toFixed(2));
@@ -2127,13 +2530,30 @@ export function createApp({
     // The sky's largest node, for the lens's down-swipe (O-132); -1 with no sky.
     largestPyramidIndex: () => largestChildIndex(lastPyramidData?.nodes || []),
     handlePyramidNodeClick: idx => {
-      if (isAnimating()) return; // block clicks during migration animation
+      if (isAnimating() && !instantMigration) return; // block clicks during migration animation
       if (!lastPyramidData) return;
       const { nodes, onNodeClick } = lastPyramidData;
       if (!onNodeClick || !nodes || idx < 0 || idx >= nodes.length) return;
       onNodeClick(nodes[idx]);
     },
     refreshPyramid: () => render(rotation),
+    // THE DRILL IS SCRUBBED (O-138): the host runs the undo of a struck drill
+    // inside this, and every migration within is a bare swap.
+    withInstantMigration(fn) {
+      instantMigration = true;
+      try { return typeof fn === 'function' ? fn() : undefined; } finally { instantMigration = false; }
+    },
+    // Drill into a child BY ITEM, not by seat: the sky seats at most a few
+    // dozen of a level's children, and the one a struck OUT must return to
+    // may not be among them.
+    drillIntoItem(item) {
+      const onNodeClick = lastPyramidData?.onNodeClick;
+      if (!item || typeof onNodeClick !== 'function') return false;
+      onNodeClick({ item, id: item.id });
+      return true;
+    },
+    // The root the flights draw under — for the host to catch their animations (O-138).
+    flightRoot: () => view.contentGroup || view.svgRoot || null,
     // The next migrateIn flies the magnifier fill to the parent seat with
     // NO label, and skips the hidden old parent's outgoing flight — the
     // search arrival's radial-in cue (Howell 2026-07-22).

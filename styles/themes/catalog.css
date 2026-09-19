@@ -10,18 +10,6 @@
   --focus-label-transform: uppercase;
 }
 
-/* Catalog child pyramid nodes: solid gold with black stroke (matches magnifier) */
-:root[data-theme="catalog"] .child-pyramid-node {
-  fill: #f1b800;
-  stroke: #000000;
-  stroke-width: 1px;
-}
-
-:root[data-theme="catalog"] .child-pyramid-node:hover {
-  fill: #f1b800;
-  stroke: #000000;
-}
-
 :root[data-theme="catalog"] .child-pyramid-label {
   fill: #000000;
   font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
@@ -33,3 +21,8 @@
   stroke: #000;
   stroke-width: 1px;
 }
+
+/* EVERY NODE WEARS THE ONE NODE COLOUR (O-164, Howell 2026-09-17): this
+   sheet used to paint the sky's stars its own solid fill and stroke, over the
+   base rule that gives every node the ring's colour — which is why a node
+   lightened by crossing between the ring and the sky. The base rule stands. */

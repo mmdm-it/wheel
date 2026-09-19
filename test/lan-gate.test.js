@@ -3,7 +3,7 @@
 // nothing and he says so within a minute.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { isPrivateHost, isOnLan, proofreadDeepLink } from '../src/core/lan-gate.js';
+import { isPrivateHost, isOnLan, proofreadDeepLink, proofreadOverrideActive } from '../src/core/lan-gate.js';
 
 describe('lan-gate — the house', () => {
   it('recognises the private ranges and loopback', () => {
@@ -79,5 +79,43 @@ describe('the proofread deep link, and the null that defeated it (O-122)', () =>
     // caller walked the funnel as a fallback and the drive still worked.
     // Calling with one argument must therefore work, and mean the keys.
     assert.equal(typeof proofreadDeepLink(KEYS), 'boolean');
+  });
+});
+
+// THE SCREENING ROOM IS THE LAN (O-137): under wheel-v3 on mmdm.it the gate
+// answers as it does in the house; the root of the same server (the archival
+// backup) and Leicester Square stay public. Every cell that matters is again
+// a FALSE YES.
+import { declareVenues, isScreeningRoom } from '../src/core/lan-gate.js';
+import { VENUES } from '../src/volume-configs.js';
+const at = (hostname, pathname, search = '') => ({ hostname, pathname, search });
+describe('lan-gate — the screening room (O-137)', () => {
+  it('is the wheel-v3 directory on mmdm.it, and nothing else on that server', () => {
+    declareVenues(VENUES);
+    assert.equal(isScreeningRoom(at('mmdm.it', '/wheel-v3/bible/')), true);
+    assert.equal(isScreeningRoom(at('www.mmdm.it', '/wheel-v3/calendar/')), true);
+    assert.equal(isScreeningRoom(at('MMDM.IT', '/Wheel-V3/bible/')), true, 'case is not a distinction');
+    assert.equal(isScreeningRoom(at('mmdm.it', '/')), false, 'the root is the archival backup');
+    assert.equal(isScreeningRoom(at('mmdm.it', '/wheel-v3')), false, 'the directory, not a name that starts like it');
+  });
+  it('Leicester Square and look-alikes are not the room', () => {
+    declareVenues(VENUES);
+    assert.equal(isScreeningRoom(at('bibliacatholica.com', '/wheel-v3/bible/')), false);
+    assert.equal(isScreeningRoom(at('mmdm.it.evil.com', '/wheel-v3/bible/')), false);
+    assert.equal(isScreeningRoom(at('notmmdm.it', '/wheel-v3/bible/')), false);
+    assert.equal(isScreeningRoom(null), false);
+    assert.equal(isScreeningRoom({ hostname: 'mmdm.it' }), false, 'no path, no room');
+    assert.equal(isScreeningRoom(at('mmdm.it', '/wheel-v3/bible/'), null), false, 'no venue table, no room');
+  });
+  it('the room IS the LAN: the flag works there, and nowhere else public', () => {
+    declareVenues(VENUES);
+    assert.equal(isOnLan(at('mmdm.it', '/wheel-v3/bible/')), true);
+    assert.equal(proofreadOverrideActive(at('mmdm.it', '/wheel-v3/bible/', '?proofread=true')), true);
+    assert.equal(proofreadOverrideActive(at('mmdm.it', '/wheel-v3/bible/')), false, 'without the flag the room shows what a reader sees, as the bench does');
+    assert.equal(proofreadOverrideActive(at('mmdm.it', '/', '?proofread=true')), false, 'the flag is inert at the backup');
+    assert.equal(proofreadOverrideActive(at('bibliacatholica.com', '/wheel-v3/bible/', '?proofread=true')), false, 'and in Leicester Square');
+    declareVenues(null);
+    assert.equal(isOnLan(at('mmdm.it', '/wheel-v3/bible/')), false, 'with no venue declared the room is public — it fails closed');
+    declareVenues(VENUES);
   });
 });

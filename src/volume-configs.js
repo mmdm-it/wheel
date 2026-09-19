@@ -57,6 +57,10 @@ function makeAdapterHandlers(volumeId) {
 const DEFAULT_VOLUME = 'catalog';
 const volumeConfigs = {
   bible: {
+    // The formatter answers a 'caption' context — the level's word beside the
+    // lens (O-144). A volume whose formatter does not declare this is never
+    // asked, since an unknown context answers the item's own name.
+    levelCaptions: true,
     id: 'bible',
     paths: ['/bible'],
     // THE BIBLE IS BEHIND THE WALL (H-14, 2026-08-12). It no longer reads
@@ -192,6 +196,11 @@ const volumeConfigs = {
         names: Object.fromEntries(Object.entries(volume.namesByLanguage)
           .filter(([, names]) => names)
           .map(([lang, names]) => [lang, {
+            // SPREAD FIRST, as the edition above is (O-54) — this listed four
+            // fields by hand and DROPPED `vocabulary` the day the kits grew it
+            // (O-144, 2026-09-16): the words were served and the caption
+            // stayed empty, the invisible drop the note above warned of.
+            ...names,
             // THE NAMES CARRY AN EDITION AXIS under leaf-and-shard (W-129):
             // books[editionCode][editionBookId]. Flattened here — and only
             // here — into one id→name map, which loses nothing because book
@@ -521,8 +530,12 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     })();
     const n = Number(chapterVal);
     const numStr = Number.isFinite(n) ? traditionNumeral(n) : String(chapterVal ?? item?.id ?? '');
-    if (context === 'node') return numStr;
-    return `${t('chapter')} ${numStr}`.trim();  // no word ⇒ the bare numeral
+    // THE WORD IS A CAPTION BESIDE THE LENS, NEVER PART OF ITS LABEL (O-144):
+    // the merge flights and the bookmark labels read the lens's text as the
+    // bare numeral and must keep doing so. 'caption' answers the level's word
+    // in the reader's tongue, or nothing when the kit has none.
+    if (context === 'caption') return t('chapter');
+    return numStr;
   };
   const formatVerse = ({ item, context }) => {
     const extract = () => {
@@ -540,8 +553,8 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     // discriminating. A non-numeric label (a sub-verse like "30b", an
     // edition's own lettered address) passes through untouched.
     const numStr = String(verseVal ?? item?.id ?? '');
-    if (context === 'node') return numStr;
-    return `${t('verse')} ${numStr}`.trim();  // no word ⇒ the bare numeral
+    if (context === 'caption') return t('verse');
+    return numStr;
   };
   return ({ item, context }) => {
     if (!item) return '';
@@ -557,6 +570,14 @@ function makeBibleLabelFormatter({ level, locale, namesMap }) {
     // Route by item.level first so the formatter works correctly when the focus
     // ring transitions between book → chapter → verse levels at runtime.
     const itemLevel = item?.level || level;
+    // THE CAPTION IS A LEVEL'S WORD OR NOTHING (O-144). Only the two levels
+    // that have one answer it; a book, a testament or the door answers an
+    // empty caption — never its own name, which the lens already wears.
+    if (context === 'caption') {
+      if (itemLevel === 'chapter') return t('chapter');
+      if (itemLevel === 'verse') return t('verse');
+      return '';
+    }
     // THE DOOR'S NAME follows the reader live (W-27): the root item's baked
     // name is only the boot value; the live table wins at render, so switching
     // to Hebrew in the funnel retitles the door to כתבי הקודש with no rebuild.
@@ -753,3 +774,14 @@ const PROBE_SINK = {
 };
 
 export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE_SINK };
+
+// THE THREE VENUES (O-136, O-137, Howell 2026-09-15): the catalog at the root
+// of mmdm.it, with its Gutenberg gateway, is the ARCHIVAL BACKUP and is not
+// synced again; the wheel-v3 directory on the same server is THE SCREENING
+// ROOM, for friends and family — the LAN bench reached over the internet,
+// serving the same tree; and bibliacatholica.com is LEICESTER SQUARE, for
+// strangers, under the CHECKED gate. This is the one file that may name a
+// site (H1); main.js declares it to lan-gate.
+export const VENUES = {
+  screeningRoom: { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/' }
+};

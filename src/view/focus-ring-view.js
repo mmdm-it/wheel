@@ -1,6 +1,6 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
-import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX } from '../geometry/focus-ring-geometry.js';
+import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
 
 // How far outside the arc the section label sits, in MAGNIFIER RADII — so it
@@ -138,6 +138,19 @@ export class FocusRingView {
     this.magnifierLabel.setAttribute('class', 'focus-ring-magnifier-label');
     this.magnifierLabel.setAttribute('text-anchor', 'middle');
     this.magnifierLabel.setAttribute('dominant-baseline', 'middle');
+    // THE LEVEL'S CAPTION (O-144, Howell 2026-09-16): the word stands beside
+    // the lens "as if the magnifier label was a suffix to the word" — on the
+    // lens label's own line, just outside the glass, before the numeral in
+    // the reading direction, so the two read as one phrase.
+    this.magnifierCaption = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.magnifierCaption.setAttribute('class', 'focus-ring-magnifier-caption');
+    this.magnifierCaption.setAttribute('dominant-baseline', 'middle');
+    // THE CAPTION DRAWS UNDER THE BAND (O-163, Howell 2026-09-17): the level's
+    // word slides in and out along the lens's label line and must vanish as
+    // it goes under the ring's own band, which the node arriving in the glass
+    // cannot cover in time. It is the first thing in the drawing, below the
+    // band, the nodes and the lens; at its seat it stands clear of all three.
+    this.contentGroup.insertBefore(this.magnifierCaption, this.band);
     this.magnifierGroup.appendChild(this.magnifierCircle);
     this.magnifierGroup.appendChild(this.magnifierLabel);
     this.contentGroup.appendChild(this.magnifierGroup);
@@ -420,7 +433,7 @@ export class FocusRingView {
         // this one radial too, when what the ruling asked for is parallel to
         // the ring. Ninety degrees converts the one into the other: the text
         // now lies along the arc, in the direction the ring advances.
-        this.sectionLabel.setAttribute('transform', `rotate(${magRotation + 90}, ${sx}, ${sy})`);
+        // (Set below, once the seat knows whether it carries a section or a caption.)
 
         // IT FOLLOWS THE RING LIVE, as the child pyramid does (Howell,
         // 2026-08-16). It used to be pushed in on settle, so the division
@@ -441,8 +454,37 @@ export class FocusRingView {
             if (d < nearestDist) { nearestDist = d; nearest = n; }
           }
         }
+        // THE LEVEL'S WORD TAKES THE SEAT WHEN NO SECTION DOES (O-144, Howell
+        // 2026-09-15: the level's word "displayed next to the Magnifier"). The
+        // host's section text stands where the ring shows sections; deeper,
+        // the caption the formatter answers for the magnified item — the
+        // level's word in the reader's tongue — or nothing.
         const live = nearest?.item?.section;
         this.sectionLabel.textContent = live || (nearest ? '' : (this.sectionLabelText || ''));
+        this.sectionLabel.setAttribute('transform', `rotate(${magRotation + 90}, ${sx}, ${sy})`);
+      }
+      // THE CAPTION BEFORE THE NUMERAL (O-144). The lens label reads along
+      // the direction its rotation gives; the word sits on that line just
+      // outside the glass, anchored so its end meets the lens — left of it for
+      // a left-to-right tongue, right of it for a right-to-left one, which is
+      // where the word comes before the numeral to that reader's eye.
+      if (this.magnifierCaption) {
+        // PERSISTENT (O-167, Howell 2026-09-18): the word names the RING's
+        // level, not the lens's occupant, so it stays through rotation and
+        // through an eclipse — it goes only when the ring itself goes, sliding
+        // under the band with a drill (O-163), or at root, where there is none.
+        const caption = magnifier.caption || '';
+        const theta = (magRotation * Math.PI) / 180;
+        const gap = radius * CAPTION_GAP_RADII;
+        const rtl = magnifier.captionDirection === 'rtl';
+        const sign = rtl ? 1 : -1;
+        const cx = magnifier.x + sign * Math.cos(theta) * (radius + gap);
+        const cy = magnifier.y + sign * Math.sin(theta) * (radius + gap);
+        this.magnifierCaption.setAttribute('x', cx);
+        this.magnifierCaption.setAttribute('y', cy);
+        this.magnifierCaption.setAttribute('text-anchor', rtl ? 'start' : 'end');
+        this.magnifierCaption.setAttribute('transform', `rotate(${magRotation}, ${cx}, ${cy})`);
+        this.magnifierCaption.textContent = caption;
       }
       if (isRotating) {
         this.magnifierLabel.textContent = '';
@@ -542,7 +584,7 @@ export class FocusRingView {
               try { nameW = this.parentButtonOuterLabel.getSubStringLength(0, nameChars); } catch { nameW = null; }
             }
           }
-          const labelX = getParentLabelLeftX(viewport, magRadius, w, nameW);
+          const labelX = getParentLabelLeftX(viewport, magRadius, w, nameW, parentButtons?.outerLabelDirection || 'ltr');
           this.parentButtonOuterLabel.setAttribute('x', labelX);
           this.parentButtonOuterLabel.setAttribute('y', seat.labelY);
           this.parentButtonOuterLabel.removeAttribute('transform');

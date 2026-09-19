@@ -68,6 +68,15 @@ describe('which emblem belongs where the reader is standing (H-31)', () => {
     assert.equal(h.cornerImageFor({ level: 'bibleRoot', id: 'X' }), 'torah_scroll');
   });
 
+  it('A DIVISION ON THE RING WEARS ITS OWN EMBLEM AND COLOUR (O-149): turning to the New Testament swaps them', () => {
+    const h = handlers(makeManifest(() => SPANNING.map(d => ({ ...d }))));
+    const [ot, nt] = SPANNING;
+    const item = d => ({ level: 'testament', id: 'division-x', meta: { books: [...d.books] } });
+    assert.equal(h.cornerImageFor(item(ot)), ot.image);
+    assert.equal(h.cornerImageFor(item(nt)), nt.image, 'the New Testament node wears its own emblem, not the first division\'s');
+    assert.equal(h.detailSectorColorFor(item(nt)), nt.color ?? null);
+  });
+
   it('a one-division edition wears its own emblem everywhere', () => {
     const greek = [{ label: 'Ἡ Καινὴ Διαθήκη', image: 'crown_of_thorns', from: 1, to: 2, books: ['C', 'D'] }];
     const h = handlers(makeManifest(() => greek.map(d => ({ ...d }))), 'GRC');
@@ -260,5 +269,35 @@ describe('the circle repaints without disturbing what is in flight (O-79)', () =
     const { VolumeLogo } = await import('../src/view/volume-logo.js');
     const bare = new VolumeLogo(null, { width: 400, height: 800 });
     assert.equal(bare.setColor('#362e6a'), false, 'no config yet');
+  });
+});
+
+// EACH EMBLEM AT ITS OWN SIZE (O-148, Howell 2026-09-16): the crown of thorns
+// is drawn to ring the badge circle and had been shrunk with the Torah scroll.
+// The circle's place is one thing, the emblem's size another.
+describe('each emblem at its own size, around the same circle (O-148)', () => {
+  const badge = async config => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 720, height: 1600 });
+    logo._renderConfig = config;
+    return logo;
+  };
+  it('an undeclared emblem keeps the base size; a declared one takes its own', async () => {
+    const scroll = (await badge({ default_image: 'torah_scroll', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
+    const crown = (await badge({ default_image: 'crown_of_thorns', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
+    assert.ok(Math.abs(scroll.logoWidth - scroll.circleR * 2 * 1.1) < 1e-9, 'the scroll is left exactly as it was');
+    assert.ok(Math.abs(crown.logoWidth - crown.circleR * 2 * 1.8) < 1e-9, 'the crown rings the circle again');
+  });
+  it('ONE CIRCLE FOR EVERY EMBLEM, where the backup stood it, and each emblem centred in it', async () => {
+    const scroll = (await badge({ default_image: 'torah_scroll', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
+    const crown = (await badge({ default_image: 'crown_of_thorns', emblem_scale: { crown_of_thorns: 1.8 } }))._getStartState();
+    // 720x1600: radius 86.4, margin 21.6; placed by the largest box, 311.04.
+    assert.equal(scroll.circleCx, crown.circleCx, 'the Old Testament circle aligns with the New');
+    assert.equal(scroll.circleCy, crown.circleCy);
+    assert.ok(Math.abs(crown.circleCx - (720 - 21.6 - 155.52 + 37.3248)) < 1e-6, 'where the backup stood it');
+    for (const s of [scroll, crown]) {
+      assert.ok(Math.abs(s.logoX + s.logoWidth / 2 - s.circleCx) < 1e-9, 'centred across');
+      assert.ok(Math.abs(s.logoY + s.logoHeight / 2 - s.circleCy) < 1e-9, 'centred down');
+    }
   });
 });

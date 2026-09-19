@@ -18,7 +18,44 @@
 // outgrows the margin was ruled to split across half-settles (O-86) — both
 // decided before anyone had seen one. They have now been seen: median 514
 // characters, 13% over a thousand, longest 3,006.
-import { getViewportInfo, getArcParameters, getMagnifierPosition } from './focus-ring-geometry.js';
+import { getViewportInfo, getArcParameters, getMagnifierPosition, captionQuad, captionFontPx } from './focus-ring-geometry.js';
+
+// THE NOTES MAKE ROOM FOR THE LENS CAPTION (O-150, Howell 2026-09-16: of the
+// ways to stop the level's caption overlapping a long apparatus, "proceed
+// with the third option" — the notes flow around the caption's box). The host
+// declares what the caption says, as a function read at every computation, so
+// a change of tongue is heard without anyone remembering to tell the margin;
+// every margin computation then ends the rows beside the caption short of it.
+// No declaration, no keep-out: a volume without captions is untouched.
+let keepOut = null;   // { text: () => string, direction: () => 'ltr'|'rtl' }
+export function setMarginKeepOut(k) { keepOut = k && typeof k.text === 'function' ? k : null; }
+function measureCaption(text, fontPx) {
+  if (!text) return 0;
+  if (typeof document !== 'undefined' && document.createElement) {
+    try {
+      const ctx = document.createElement('canvas').getContext('2d');
+      if (ctx) {
+        ctx.font = `${fontPx}px Montserrat, sans-serif`;
+        return ctx.measureText(text).width + text.length * fontPx * 0.04;
+      }
+    } catch { /* fall through */ }
+  }
+  return text.length * fontPx * 0.72;
+}
+// The leftmost x of a quadrilateral within the band [y0, y1], or null.
+function quadMinXInBand(quad, y0, y1) {
+  let min = Infinity;
+  const n = quad.length;
+  for (let i = 0; i < n; i += 1) {
+    const [x1, ya] = quad[i];
+    const [x2, yb] = quad[(i + 1) % n];
+    if (ya >= y0 && ya <= y1) min = Math.min(min, x1);
+    for (const yc of [y0, y1]) {
+      if ((ya - yc) * (yb - yc) < 0) min = Math.min(min, x1 + (x2 - x1) * ((yc - ya) / (yb - ya)));
+    }
+  }
+  return Number.isFinite(min) ? min : null;
+}
 
 export const MARGIN_SPEC = {
   /** Left edge, as a fraction of the short side. */
@@ -85,6 +122,15 @@ export function computeMarginArea(width, height, spec = MARGIN_SPEC) {
   };
 
   const minWidth = SSd * spec.MIN_WIDTH_RATIO;
+  let quad = [];
+  if (keepOut && spec.KEEP_OUT !== false) {
+    let text = '';
+    try { text = String(keepOut.text() || '').toUpperCase(); } catch { text = ''; }
+    const dir = (() => { try { return keepOut.direction?.() === 'rtl' ? 'rtl' : 'ltr'; } catch { return 'ltr'; } })();
+    const fpx = captionFontPx(viewport);
+    quad = captionQuad(viewport, measureCaption(text, fpx), dir);
+  }
+  const keepPad = fontPx * 0.4;
   // The ceiling is where the lens first opens wide enough to set a line in.
   // Derived rather than declared: it moves correctly when the arc does.
   let topY = bottomY;
@@ -105,11 +151,17 @@ export function computeMarginArea(width, height, spec = MARGIN_SPEC) {
     const magR = SSd * 0.06;
     const dy = Math.abs((y + pitch / 2) - magnifier.y);
     const bite = dy < magR ? Math.sqrt(magR * magR - dy * dy) : 0;
+    let rowRight = rightX - bite;
+    if (quad.length) {
+      const edge = quadMinXInBand(quad, y, y + pitch);
+      if (edge !== null && edge - keepPad < rowRight) rowRight = edge - keepPad;
+    }
+    if (rowRight - leftX < minWidth) continue;
     lineTable.push({
       y,
       leftX,
-      rightX: rightX - bite,
-      availableWidth: availableWidth - bite,
+      rightX: rowRight,
+      availableWidth: rowRight - leftX,
     });
   }
 

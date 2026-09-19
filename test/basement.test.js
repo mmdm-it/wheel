@@ -2,7 +2,7 @@
 // in either direction, and the floor below the text holds bookmarks.
 //
 // Boots main.js for real, as boot-smoke does (it self-executes at import, in
-// this file's own process), walks the launch funnel to the text, and then
+// this file's own process), lands on the text (O-143), and then
 // slides: down to the basement, up again, straight from the languages to the
 // basement. Shallow on purpose — the floors' STATE, not their look.
 import assert from 'node:assert/strict';
@@ -25,9 +25,7 @@ describe('the slider and the basement (O-126)', () => {
     console.error = realError;
     D = globalThis.window?.__wheelDimension;
     assert.ok(D, 'the booted app exposed no dimension handle');
-    // Walk the funnel home: language → edition → the text.
-    D.cycle(); await settle(); D.cycle(); await settle();
-    assert.equal(D.front(), 0, 'the reader is at the text');
+    assert.equal(D.front(), 0, 'the app boots to the text (O-143)');
   });
 
   it('one notch down is the basement, and it is a floor of its own', async () => {
@@ -93,11 +91,31 @@ describe('the slider and the basement (O-126)', () => {
     // Released past halfway: settles down.
     D.scrub(-0.7); D.release(); await settle();
     assert.equal(D.front(), -1);
-    // Dragged straight through a floor: the segment behind commits as the next begins.
+    // ONE STROKE, ONE SIDE (O-147): dragged up out of the basement, the thumb
+    // stops at the text — the editions are a second stroke.
     D.scrub(0.2);
-    assert.equal(D.front(), 0, 'crossed the text without stopping');
+    assert.equal(D.front(), 0, 'the stroke from the basement reaches the text');
+    D.scrub(1.5);
+    assert.equal(D.front(), 0, 'and stops there: no editions in the same stroke');
     D.release(); await settle();
-    assert.equal(D.front(), 0, 'and the fifth of the way to the editions fell back');
+    assert.equal(D.front(), 0);
+  });
+
+  it('ONE STROKE, ONE SIDE (O-147): from the editions, down stops at the text; a new stroke goes on to the basement', async () => {
+    D.slide(1); await settle();
+    assert.equal(D.front(), 1);
+    D.scrub(-0.9);
+    assert.equal(D.front(), 0, 'the stroke above reaches the text');
+    assert.ok(!D.basement().arrival && D.front() === 0, 'and never begins the basement');
+    D.release(); await settle();
+    assert.equal(D.front(), 0, 'released at the text');
+    D.scrub(-0.8); D.release(); await settle();
+    assert.equal(D.front(), -1, 'a second stroke, begun at the text, goes down');
+    D.scrub(0.6); D.release(); await settle();
+    assert.equal(D.front(), 0, 'and back up stops at the text');
+    D.scrub(0.6); D.release(); await settle();
+    assert.equal(D.front(), 1, 'begun at the text, up is the editions');
+    D.slide(0); await settle();
   });
 
   it('the hold in the overrun keeps nothing from the front door — no verse in hand', async () => {

@@ -168,6 +168,7 @@ export function resolvePath({ base = '', version = '', kind, edition, unitId, la
   switch (kind) {
     case 'volume':      return join('volume.json');
     case 'ranks':       return join('ranks.json');   // O-132: the leaves' ranks, one file for the whole volume
+    case 'hits':        return join('hits.json');    // O-135: the Greatest Hits, leaves the basement shows permanently
     case 'spine':       return join('spine', `${req(unitId, 'unitId')}.json`);
     case 'text':        return join('text', req(edition, 'edition'), `${req(unitId, 'unitId')}.json`);
     case 'chart':       return join('charts', req(edition, 'edition'), `${req(unitId, 'unitId')}.json`);
