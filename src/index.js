@@ -299,7 +299,7 @@ export function createApp({
     console.log('[emitDetailSectorChange] visible:', visible, 'when:', when, 'leafLevel:', leafLevel, 'detailSectorShown:', detailSectorShown);
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new CustomEvent('detail-sector-change', {
-        detail: { visible, when, badge: volumeLogo?.collapsedCentre?.() || null, hub: { x: arcParams.hubX, y: arcParams.hubY }, band: { radius: arcParams.radius, width: Number(view?.band?.getAttribute?.('stroke-width')) || arcParams.radius * 0.02 } }
+        detail: { visible, when, badge: volumeLogo?.collapsedCentre?.() || null, hub: { x: arcParams.hubX, y: arcParams.hubY }, band: { radius: arcParams.radius, width: Number(view?.band?.getAttribute?.('stroke-width')) || arcParams.radius * 0.02 }, lens: { x: magnifier.x, y: magnifier.y }, caption: view?.magnifierCaption ? { x: Number(view.magnifierCaption.getAttribute('x')) || 0, y: Number(view.magnifierCaption.getAttribute('y')) || 0 } : null }
       }));
     }
   };

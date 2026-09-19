@@ -2489,23 +2489,51 @@ window.addEventListener('detail-sector-change', (e) => {
       leave = { ux: dx / len, uy: dy / len, travel };
       panels.forEach(el => { el.style.willChange = 'transform'; });
       if (band && Number.isFinite(band.radius) && notePanels.length) {
-        // The notes' own centre and farthest corner, from the children that
-        // hold ink; the outer edge of the band is the line they vanish at.
+        // AS ONE BLOCK WITH THE VERSE WORD (Howell 2026-09-19: "the verse
+        // label and the notes ... all move as a block and disappear under the
+        // focus ring band"). The notes take the caption's own seat line, at
+        // its pace, and travel far enough that every line of ink ends inside
+        // the band's outer edge, where the radial mask takes it. Measured
+        // from the lines that hold ink — the first cut read the panel's
+        // direct children, a container with no height, and found nothing.
         const outer = band.radius + (band.width || 0) / 2;
-        let cx = 0, cy = 0, n = 0, far = 0;
-        notePanels.forEach(el => [...el.children].forEach(ch => {
+        const lens = e.detail?.lens, cap = e.detail?.caption;
+        let dx2 = 0, dy2 = 0;
+        if (lens && cap) { dx2 = lens.x - cap.x; dy2 = lens.y - cap.y; }
+        let dl = Math.hypot(dx2, dy2);
+        if (!dl) { dx2 = hub.x - window.innerWidth / 2; dy2 = hub.y - window.innerHeight / 2; dl = Math.hypot(dx2, dy2) || 1; }
+        const ux2 = dx2 / dl, uy2 = dy2 / dl;
+        const inner = outer - (band.width || 0) - 6;   // safely under, not on the edge
+        let n = 0, need = 0, far = 0, misses = 0;
+        notePanels.forEach(el => el.querySelectorAll('.margin-note-line, .margin-note-source, .margin-note-more, .margin-marks-line, span, div').forEach(ch => {
+          if (ch.children.length && !ch.classList.contains('margin-note-line')) return;   // leaves only
           const r = ch.getBoundingClientRect();
           if (!r.width || !r.height) return;
-          cx += r.left + r.width / 2; cy += r.top + r.height / 2; n += 1;
-          [[r.left, r.top], [r.right, r.top], [r.left, r.bottom], [r.right, r.bottom]].forEach(([x, y]) => { far = Math.max(far, Math.hypot(x - hub.x, y - hub.y)); });
+          n += 1;
+          [[r.left, r.top], [r.right, r.top], [r.left, r.bottom], [r.right, r.bottom]].forEach(([x, y]) => {
+            const wx = x - hub.x, wy = y - hub.y;
+            far = Math.max(far, Math.hypot(wx, wy));
+            const bq = 2 * (wx * ux2 + wy * uy2), cq = wx * wx + wy * wy - inner * inner;
+            const disc = bq * bq - 4 * cq;
+            if (cq <= 0) return;                       // already under
+            if (disc < 0) { misses += 1; return; }     // this line never enters along that way
+            const t1 = (-bq - Math.sqrt(disc)) / 2;
+            if (t1 > need) need = t1;
+          });
         }));
-        if (n) {
-          cx /= n; cy /= n;
-          const ddx = hub.x - cx, ddy = hub.y - cy, dl = Math.hypot(ddx, ddy) || 1;
-          dive = { ux: ddx / dl, uy: ddy / dl, travel: Math.max(0, far - outer) + (band.width || 0) + 8 };
+        if (n && !misses) {
+          dive = { ux: ux2, uy: uy2, travel: need + 4 };
+        } else if (n) {
+          // Along the caption's line some ink would never go under: dive
+          // straight toward the hub instead, the sure way under.
+          const rx = hub.x - (lens?.x ?? window.innerWidth / 2), ry = hub.y - (lens?.y ?? window.innerHeight / 2), rl = Math.hypot(rx, ry) || 1;
+          dive = { ux: rx / rl, uy: ry / rl, travel: Math.max(0, far - inner) + 4 };
+        }
+        if (dive) {
           const mask = `radial-gradient(circle at ${hub.x}px ${hub.y}px, transparent ${outer}px, #000 ${outer + 0.5}px)`;
           notePanels.forEach(el => { el.style.maskImage = mask; el.style.webkitMaskImage = mask; });
         }
+        logTap('notes-dive', { n, misses, far: Math.round(far), outer: Math.round(outer), travel: dive ? Math.round(dive.travel) : null, ux: dive ? Math.round(dive.ux * 100) / 100 : null, uy: dive ? Math.round(dive.uy * 100) / 100 : null, hub: { x: Math.round(hub.x), y: Math.round(hub.y) }, w: window.innerWidth, h: window.innerHeight });
       }
     }
     const scrubbed = scrubDriver(600, t => {
