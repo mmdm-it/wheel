@@ -112,6 +112,16 @@ export function normalize(raw) {
     meta: {
       volumeId: volumeKey,
       leafLevel: 'verse',
+      // THE NUMERAL TRAVELS ALONE (O-139, Howell 2026-09-15): on the verse
+      // ring the parent reads the book AND its chapter — GENESIS I — and the
+      // chapter numeral is a suffix of the book's name (a prefix, to the eye,
+      // in Hebrew). Drilling out to the chapter ring, only the numeral flies
+      // to the lens and the name stays put; drilling in, the numeral flies
+      // from the lens to join the name. "It seems redundant to have the word
+      // Genesis move from parent button to magnifier only to appear again in
+      // the parent button." The catalog declared this for its cylinder level
+      // on 2026-07-18; the Bible had never declared it.
+      suffixMerge: ['chapter'],
       levels: ['testament', 'book', 'chapter', 'verse'],
       colors: levelPalette,
       dimensions
@@ -609,10 +619,32 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // The reader is standing on a verse, or on a chapter — in which case the
     // thing that travels is its first verse, since a chapter is only a name
     // for the utterances under it.
-    const anchor = level === 'verse'
+    let anchor = level === 'verse'
       ? selected
       : previousSeats.find(it => it
           && (it.meta?.chapterId === selected.id || it.chapterKey === selected.id));
+    // A CHAPTER ANCHORS ON ITS OWN CHART, NOT ON A CHAIN THAT MAY NOT EXIST
+    // (O-146, Howell 2026-09-16, from the phone: the parent button read a
+    // raw book id). The chapter's first verse was looked up in the PREVIOUS
+    // verse chain — which is null whenever the reader reached this ring
+    // without entering a verse in this edition (the book and root reseats
+    // drop it on purpose). No anchor, no reseat: the old edition's chapters
+    // stood under the new edition's names, and the name lookup fell through
+    // to the id. The chapter's leaves are on its chart; ask there.
+    if (level === 'chapter' && !anchor) {
+      const volume = manifest?.__wallVolume;
+      const bookId = selected.meta?.bookId || selected.parentId || null;
+      const ownEdition = volume?.editionOf?.(bookId)
+        || (volume?.editions || []).map(e => e?.code).find(code => code && volume.chartFor?.(bookId, code)) || null;
+      const chart = bookId && volume?.chartFor ? volume.chartFor(bookId, ownEdition) : null;
+      const label = String(selected.meta?.chapterLabel ?? selected.meta?.chapterKey ?? selected.name ?? '');
+      const g = chart?.groups?.find(x => String(x.label) === label);
+      if (g && Array.isArray(chart.seats)) {
+        const leaves = [];
+        for (let i = g.from - 1; i < g.to; i += 1) for (const u of chart.seats[i]?.utterances || []) leaves.push(u);
+        if (leaves.length) anchor = { id: selected.id, meta: { utterances: leaves } };
+      }
+    }
     // WHAT TRAVELS IS THE UTTERANCE (W-21). The reader's position is the
     // stretch of scripture they are standing on, not a number naming it — so
     // the crossing carries an opaque id rather than a book, a chapter key and
@@ -649,6 +681,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // the new artifact shares no scripture at all with where they stand does
     // this refuse, and then nothing has been disturbed.
     let target = seatFor(anchor);
+    // A chapter anchored on its chart carries ALL its leaves: the first the
+    // new edition seats is the landing (O-146).
+    if (target < 0 && level === 'chapter') {
+      for (const u of anchor.meta.utterances) { const at = seatOf.get(u); if (at !== undefined) { target = at; break; } }
+    }
     if (target < 0 && previousSeats.length) {
       const at = previousSeats.findIndex(it => it && it.id === anchor.id);
       if (at >= 0) {
@@ -732,36 +769,52 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // The cure is the same one E3 used a level up: the sky is drawn from the
   // very seats the ring holds, so the two cannot disagree and a tap always
   // finds its verse. Without a chart it falls back to the file, unchanged.
-  const verseItemsForChapter = chapterItem => {
-    if (!chapterItem) return [];
-    // THE SKY IS DRAWN FROM THE SEATS THE RING HOLDS (E3 of W-21), and under
-    // the wall there is no second source to fall back to.
-    //
-    // This used to ask whether a legacy chart had been fetched and, if not,
-    // read the container's file instead — the two-source arrangement that let
-    // the ring and the sky disagree, which is the defect E3 exists for. There
-    // is one source now: the same chain the ring is built from.
-    const edition = options?.activeEdition || options?.translation || null;
-    // Only a chain built for THIS edition may answer for a chapter's verses
-    // (the same guard the chain accessor keeps; the cache is edition-keyed).
-    const chain = (verseChainItems && verseChainEdition === edition) ? verseChainItems : buildBibleVerseChain(manifest, { edition }).items;
-    const wanted = chapterItem.id;
-    const seats = [];
+  // THE SKY IS DRAWN FROM THE SEATS THE RING HOLDS (E3 of W-21), and under
+  // the wall there is no second source to fall back to: the same chain the
+  // ring is built from, built for THIS edition only.
+  //
+  // AND IT COMES FROM AN INDEX, NOT A WALK OF THE VOLUME (O-156, from the
+  // bench gesture log: collecting a chapter's verses for the sky took
+  // 70–228 ms and ran twice per drill). This walked the whole volume's verse
+  // chain — tens of thousands of seats — for every chapter asked, and when
+  // the kept chain belonged to another edition or none it REBUILT the chain
+  // and threw it away. The chain is now kept per edition (the cache the verse
+  // ring reads) and indexed by chapter in one pass; a chapter's verses are a
+  // lookup. The items returned are fresh objects each call, as before.
+  let verseIndex = null;          // { edition, chain, byChapter: Map<chapterId, seat[]> }
+  // The ring's own cache is NOT written here: an edition's reseat reads the
+  // previous edition's chain from it as its starting position, and a sky
+  // drawn in between must not replace that under it. The index keeps its own
+  // chain when the ring's belongs to another edition.
+  const verseIndexFor = edition => {
+    const ringChain = (verseChainItems && verseChainEdition === edition) ? verseChainItems : null;
+    if (verseIndex && verseIndex.edition === edition && (ringChain === null || verseIndex.chain === ringChain)) return verseIndex;
+    const chain = ringChain || buildBibleVerseChain(manifest, { edition }).items;
+    const byChapter = new Map();
     for (const it of chain) {
       if (!it || it.level !== 'verse') continue;
-      if (it.meta?.chapterId !== wanted && it.chapterKey !== wanted) continue;
-      seats.push({
-        id: it.id,
-        name: it.name,
-        order: seats.length,
-        parentId: chapterItem.id,
-        level: 'verse',
-        meta: { ...it.meta, chapterId: chapterItem.id }
-      });
+      const keys = [it.meta?.chapterId, it.chapterKey].filter((k, i, a) => k != null && a.indexOf(k) === i);
+      for (const key of keys) {
+        let list = byChapter.get(key);
+        if (!list) { list = []; byChapter.set(key, list); }
+        list.push(it);
+      }
     }
-    // A container the edition does not seat has no verses, and that is the
-    // honest answer rather than a blank to be filled from elsewhere.
-    return seats;
+    verseIndex = { edition, chain, byChapter };
+    return verseIndex;
+  };
+  const verseItemsForChapter = chapterItem => {
+    if (!chapterItem) return [];
+    const edition = options?.activeEdition || options?.translation || null;
+    const list = verseIndexFor(edition).byChapter.get(chapterItem.id) || [];
+    return list.map((it, order) => ({
+      id: it.id,
+      name: it.name,
+      order,
+      parentId: chapterItem.id,
+      level: 'verse',
+      meta: { ...it.meta, chapterId: chapterItem.id }
+    }));
   };
 
   const parentHandler = ({ selected, app }) => {
@@ -894,6 +947,15 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // guess where a name ends (a trailing-token split would cut PALMER
   // BROTHERS in half), the volume that builds the compound says what it
   // appended. Every other level returns '' and keeps the original rules.
+  // THE GAP BETWEEN TWO VERSES OF ONE BOOK NAMES THE NEARER CHAPTER (O-168):
+  // GENESIS 4 to the middle of the gap, GENESIS 5 from there; the gap
+  // between two books names nothing.
+  const getGapLabel = (nearer, farther) => {
+    if (!nearer || !farther || nearer.level !== 'verse' || farther.level !== 'verse') return '';
+    const ba = nearer.meta?.bookId || nearer.bookKey || null, bb = farther.meta?.bookId || farther.bookKey || null;
+    if (!ba || ba !== bb) return '';
+    return getParentLabel(nearer);
+  };
   const getParentLabelSuffix = (item) => {
     if (item?.level !== 'verse') return '';
     const chapterKey = item.meta?.chapterLabel;
@@ -929,6 +991,27 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     return bookSeatingUtterance(volume, preview, bookId, utterance) || bookId;
   };
 
+  // A BOOK IS NAMED OR IT IS NOT — NEVER THE ID (H-2; O-146). When the names
+  // table has no entry for a book id — a ring an edition change has not yet
+  // reseated carries the OLD edition's ids under the NEW edition's names —
+  // the book is found again through its first leaf in the edition up and
+  // named from there; failing that, the manifest's own name; failing that,
+  // nothing. "BC59DFEFB" on the parent button was the filesystem talking to
+  // the reader (Howell, 2026-09-16).
+  const bookNameFor = bookId => {
+    if (!bookId) return '';
+    const localized = namesMap?.books?.[bookId];
+    if (localized) return localized;
+    const volume = manifest?.__wallVolume;
+    const edition = options?.activeEdition || options?.translation || null;
+    if (volume && edition) {
+      const own = volume.editionOf?.(bookId) || null;
+      const leaf = volume.chartFor?.(bookId, own)?.seats?.[0]?.utterances?.[0] || null;
+      const other = leaf ? bookSeatingUtterance(volume, edition, bookId, leaf) : null;
+      if (other && namesMap?.books?.[other]) return namesMap.books[other];
+    }
+    return findBook(manifest, bookId)?.book_name || '';
+  };
   const getParentLabel = (item) => {
     if (!item) return '';
     // Gateway root ring: parent button points back through the gateway.
@@ -943,9 +1026,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (item.level === 'chapter') {
       const bookId = item.meta?.bookId || item.parentId;
       if (!bookId) return '';
-      const book = findBook(manifest, bookId);
-      const localized = namesMap?.books?.[bookId];
-      return toDisplayCase(localized || book?.book_name || bookId);
+      return toDisplayCase(bookNameFor(bookId));
     }
     // Verse ring: the book AND its chapter, live — "IOHANNES III". The
     // ring now runs the whole volume (2026-07-20), so a bare chapter is
@@ -982,7 +1063,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // polytonic Greek's breathings and accents, and means nothing at all
       // for Hebrew. Latin-script names still shout; every other script is
       // left in the form its own tradition writes it.
-      const bookName = toDisplayCase(namesMap?.books?.[bookId] || book?.book_name || bookId || '');
+      const bookName = toDisplayCase(bookNameFor(bookId));
       return bookName ? `${bookName} ${chapterLabel}` : chapterLabel;
     }
     // Book ring: parent is the testament name (stored mixed-case on items as
@@ -1027,16 +1108,17 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   };
 
   // PROMINENCE FROM USE (O-132, Howell 2026-09-14): a pyramid node draws
-  // larger the more its leaves are used — rank 1 among the leaves it holds
-  // makes it a tier-1 star, a rank in the first ten a tier-2, and the rest
-  // wear no prominence. A verse asks for its own leaf; a chapter for the
-  // best leaf in its seats; a book for the best in its chart. So the most
-  // read verse lifts its chapter and its book with it, in every edition,
-  // because the ranks are on the leaves (leaf-and-shard, W-129). The book
-  // scan is cached per edition and book.
+  // larger the more its leaves are used. This answers the node's BEST RANK
+  // among the leaves it holds — a verse its own leaf's, a chapter the best in
+  // its seats, a book the best in its chart — so the most read verse lifts
+  // its chapter and its book with it, in every edition, because the ranks
+  // are on the leaves (leaf-and-shard, W-129). Which rank makes a large star
+  // is decided AMONG SIBLINGS by the pyramid (O-133): the ranks are the
+  // lectionary's, global to the volume, and only the Psalter reaches the top
+  // of them. The book scan is cached per edition and book.
   const prominenceOf = (() => {
     const bookBest = new Map();
-    const tier = r => (r === 1 ? 1 : (r != null && r <= 10) ? 2 : undefined);
+    const tier = r => (r == null ? undefined : r);
     const best = (volume, utterances) => {
       let b = null;
       for (const u of utterances || []) { const r = volume.rankOf(u); if (r != null && (b == null || r < b)) b = r; }
@@ -1070,11 +1152,58 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       return undefined;
     };
   })();
+  const seatOrderOf = item => {
+    const volume = manifest?.__wallVolume;
+    if (!volume || !item) return null;
+    const bookId = item.meta?.bookId ?? item.bookKey ?? null;
+    const edition = volume.editionOf?.(bookId) || options?.activeEdition || options?.translation || null;
+    const shelf = volume.booksFor?.(edition) || [];
+    const book = shelf.find(b => b.id === bookId);
+    const shardIds = (volume.shards || volume.units || []).map(sh => sh?.id ?? sh);
+    // The shard's place in the volume; failing that (a volume that declares
+    // no shards), the book's place on its own edition's shelf.
+    let bookRank = book?.shards?.[0] ? shardIds.indexOf(book.shards[0]) : -1;
+    if (bookRank < 0 && book) bookRank = Number.isFinite(book.order) ? book.order : shelf.indexOf(book);
+    const label = String(item.name ?? '');
+    const m = /^(\d+)([a-z]*)$/.exec(label);
+    const editionRank = (volume.editions || []).findIndex(e => (e?.code ?? e) === edition);
+    // The host's store speaks no volume vocabulary (O-43): the place is a
+    // rank per level, widest first — [book, chapter, verse] here.
+    return {
+      rank: [bookRank >= 0 ? bookRank : Number.POSITIVE_INFINITY, Number(item.meta?.chapterLabel) || 0, m ? Number(m[1]) : 0],
+      tail: m ? m[2] : (label === 'head' ? '' : label),
+      edition: editionRank >= 0 ? editionRank : Number.POSITIVE_INFINITY
+    };
+  };
+  // THE GREATEST HITS, SEATED IN THE EDITION UP (O-135, Howell 2026-09-15):
+  // each hit leaf found on this edition's whole-volume chain and given the
+  // label the primary would show for it — the parent button's words (book
+  // and chapter, in the edition's own tongue and numerals) and the verse —
+  // plus its place for the basement's order. A leaf this edition does not
+  // seat is left out. Cached per edition; the chain is already cached.
+  let hitSeatsCache = null;
+  const hitSeats = () => {
+    const volume = manifest?.__wallVolume;
+    const hits = typeof volume?.hits === 'function' ? volume.hits() : [];
+    if (!hits.length) return [];
+    const edition = options?.activeEdition || options?.translation || null;
+    if (hitSeatsCache && hitSeatsCache.edition === edition) return hitSeatsCache.seats;
+    const { items } = verseChain(null);
+    const seats = [];
+    for (const leaf of hits) {
+      const item = (items || []).find(it => it && Array.isArray(it.meta?.utterances) && it.meta.utterances.includes(leaf));
+      if (!item) continue;
+      seats.push({ id: leaf, edition, label: `${getParentLabel(item)}:${item.name ?? ''}`, at: seatOrderOf(item), hit: true });
+    }
+    hitSeatsCache = { edition, seats };
+    return seats;
+  };
   return {
     parentHandler,
     childrenHandler,
     getParentLabel,
     getParentLabelSuffix,
+    getGapLabel,
     reseatOnEditionChange,
     onBoot,
     // THE FRONT-DOOR GLOBE (Howell 2026-07-27): the dimension globe shows at
@@ -1103,9 +1232,16 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const divisions = volume.divisionsFor(edition);
       if (!divisions.length) return null;
       const unitId = bookIdOf(item);
+      // A DIVISION ITEM IS ITS OWN ANSWER (O-149, Howell 2026-09-16: at root,
+      // turning to the New Testament left the Torah scroll up). With no book
+      // in hand this fell straight to the first division; a division on the
+      // ring carries its books, so the division holding them is the one.
+      const ownBooks = !unitId && Array.isArray(item?.meta?.books) ? item.meta.books : null;
       const holding = unitId
         ? divisions.find(d => Array.isArray(d.books) && d.books.includes(unitId))
-        : null;
+        : ownBooks && ownBooks.length
+          ? divisions.find(d => Array.isArray(d.books) && ownBooks.some(b => d.books.includes(b)))
+          : null;
       // No book in hand — the root, a division ring — so the emblem is the
       // one the reader is about to enter, which is the first this edition has.
       //
@@ -1147,9 +1283,16 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const divisions = volume.divisionsFor(edition);
       if (!divisions.length) return null;
       const unitId = bookIdOf(item);
+      // A DIVISION ITEM IS ITS OWN ANSWER (O-149, Howell 2026-09-16: at root,
+      // turning to the New Testament left the Torah scroll up). With no book
+      // in hand this fell straight to the first division; a division on the
+      // ring carries its books, so the division holding them is the one.
+      const ownBooks = !unitId && Array.isArray(item?.meta?.books) ? item.meta.books : null;
       const holding = unitId
         ? divisions.find(d => Array.isArray(d.books) && d.books.includes(unitId))
-        : null;
+        : ownBooks && ownBooks.length
+          ? divisions.find(d => Array.isArray(d.books) && ownBooks.some(b => d.books.includes(b)))
+          : null;
       return (holding || divisions[0]).color || null;
     },
 
@@ -1212,28 +1355,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // was kept under, then the edition's place among the volume's editions.
     // A lettered verse (62a) carries its letter as the tail; a heading
     // (head) counts as 0.
-    seatOrder: item => {
-      const volume = manifest?.__wallVolume;
-      if (!volume || !item) return null;
-      const bookId = item.meta?.bookId ?? item.bookKey ?? null;
-      const edition = volume.editionOf?.(bookId) || options?.activeEdition || options?.translation || null;
-      const shelf = volume.booksFor?.(edition) || [];
-      const book = shelf.find(b => b.id === bookId);
-      const shardIds = (volume.shards || volume.units || []).map(sh => sh?.id ?? sh);
-      // The shard's place in the volume; failing that (a volume that declares
-      // no shards), the book's place on its own edition's shelf.
-      let bookRank = book?.shards?.[0] ? shardIds.indexOf(book.shards[0]) : -1;
-      if (bookRank < 0 && book) bookRank = Number.isFinite(book.order) ? book.order : shelf.indexOf(book);
-      const label = String(item.name ?? '');
-      const m = /^(\d+)([a-z]*)$/.exec(label);
-      const editionRank = (volume.editions || []).findIndex(e => (e?.code ?? e) === edition);
-      // The host's store speaks no volume vocabulary (O-43): the place is a
-      // rank per level, widest first — [book, chapter, verse] here.
-      return {
-        rank: [bookRank >= 0 ? bookRank : Number.POSITIVE_INFINITY, Number(item.meta?.chapterLabel) || 0, m ? Number(m[1]) : 0],
-        tail: m ? m[2] : (label === 'head' ? '' : label),
-        edition: editionRank >= 0 ? editionRank : Number.POSITIVE_INFINITY
-      };
+    seatOrder: item => seatOrderOf(item),
+    hitSeats,
+    // Which way the edition up writes (O-139): the view and the flights seat a
+    // suffixed parent label by it — the numeral leads a Hebrew name to the eye.
+    textDirection: () => {
+      const edition = options?.activeEdition || options?.translation || null;
+      const e = (manifest?.__wallVolume?.editions || []).find(x => (x?.code ?? x) === edition);
+      return e?.direction === 'rtl' ? 'rtl' : 'ltr';
     },
     // SEAT THE PRIMARY AT A LEAF, from anywhere (O-129): the basement's jump
     // to a bookmark when the ring up does not hold it — at root, on a book or
@@ -1315,20 +1444,20 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       pyramidBuilder: buildBiblePyramid
     }
   };
-}
-
-export const bibleAdapter = {
-  validate,
-  normalize,
-  layoutSpec,
-  detailFor,
-  createHandlers,
-  capabilities: {
-    search: false,
-    deepLink: false,
-    theming: true,
-    // At the leaf the detail sector doubles as a NEXT button
-    // (the e-reader gesture: tap the verse, read the next).
-    detailTapAdvances: true
   }
-};
+
+  export const bibleAdapter = {
+    validate,
+    normalize,
+    layoutSpec,
+    detailFor,
+    createHandlers,
+    capabilities: {
+      search: false,
+      deepLink: false,
+      theming: true,
+      // At the leaf the detail sector doubles as a NEXT button
+      // (the e-reader gesture: tap the verse, read the next).
+      detailTapAdvances: true
+    }
+  };

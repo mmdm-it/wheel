@@ -118,7 +118,7 @@ describe('pyramid node appearance', () => {
       'no clone label may start flat and acquire its tilt at settle');
     // Both hub builders rotate by the node's own angle.
     const hubRotations = src.split('labelRotationDeg(pn.angle)').length - 1;
-    assert.equal(hubRotations, 3, 'animateIn, from-hub and to-hub all tilt by the node angle');
+    assert.equal(hubRotations, 4, 'animateIn, from-hub, to-hub and ring-to-sky (O-141) all tilt by the node angle');
   });
 
   it('carries the mark from the item all the way to the drawn node', () => {
@@ -200,9 +200,9 @@ describe('pyramid node appearance', () => {
     const live = read('src/view/detail/pyramid-view.js');
     const clones = read('src/view/migration-animation.js');
     assert.ok(live.includes('applyPyramidNodeAppearance'), 'the live pyramid dresses its nodes');
-    // Every clone builder — animateIn, from-hub, to-hub, stars-away — must
-    // dress too, or a node changes face mid-flight.
+    // Every clone builder — animateIn, from-hub, to-hub, stars-away, and
+    // ring-to-sky (O-141) — must dress too, or a node changes face mid-flight.
     const dressed = clones.split('applyPyramidNodeAppearance(').length - 1;
-    assert.equal(dressed, 4, 'all four migration clone builders dress their nodes');
+    assert.equal(dressed, 5, 'all five migration clone builders dress their nodes');
   });
 });

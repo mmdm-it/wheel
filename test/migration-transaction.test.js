@@ -1,6 +1,6 @@
 import assert from 'assert/strict';
 import { describe, it } from 'node:test';
-import { beginMigrationTransaction, animateIn, animateOut, clearStack } from '../src/view/migration-animation.js';
+import { beginMigrationTransaction, animateIn, animateOut, clearStack, beginScrubbedMigration, isScrubbing, scrubDriver, animateRingToSky } from '../src/view/migration-animation.js';
 
 // The transaction core is DOM-free until an animation actually draws, so the
 // arm/settle/barrier semantics are testable headless via the animations'
@@ -45,5 +45,82 @@ describe('migration transaction', () => {
     assert.equal(restored, 1);
     // A later animation with no open transaction behaves standalone (no throw).
     animateIn({ svgRoot: null });
+  });
+});
+
+// THE DRILL IS SCRUBBED (O-138): headless, the controller's contract — what a
+// finger owns, what a release does, what a strike undoes.
+describe('the scrubbed drill (O-138)', () => {
+  it('a scrub that launched nothing is forgotten, and release is a no-op', () => {
+    const ctl = beginScrubbedMigration(null);
+    assert.equal(isScrubbing(), true);
+    assert.equal(ctl.launched(), false, 'nothing armed');
+    ctl.cancel();
+    assert.equal(isScrubbing(), false);
+    ctl.release(true);   // nothing to do, nothing thrown
+  });
+  it('a struck drill calls the host\'s undo exactly once and closes the transaction', () => {
+    let restored = 0, undone = 0;
+    const ctl = beginScrubbedMigration(null);
+    beginMigrationTransaction({ restore: () => { restored += 1; } });
+    // The guard paths arm and settle synchronously — no flight, so no
+    // completion waits on the finger — but the transaction is open.
+    animateIn({ svgRoot: null });
+    ctl.scrubTo(0.3);
+    ctl.release(false, { onAbort: () => { undone += 1; } });
+    assert.equal(undone, 1, 'the navigation is taken back once');
+    assert.equal(isScrubbing(), false);
+    assert.equal(restored, 1, 'the reals come back exactly once');
+    clearStack();
+  });
+  it('a committed release fires the deferred completions in clock order', () => {
+    // A second scrub while one is open strikes the first — the controller is
+    // never left dangling.
+    beginScrubbedMigration(null);
+    const ctl = beginScrubbedMigration(null);
+    assert.equal(isScrubbing(), true);
+    ctl.scrubTo(2);      // clamped
+    ctl.release(true);   // no rAF here: settles at once
+    assert.equal(isScrubbing(), false);
+    clearStack();
+  });
+});
+
+// THE SECTOR RIDES THE FINGER (O-140): a frame driver joins the scrub clock.
+describe('a frame driver on the scrub clock (O-140)', () => {
+  it('with no scrub open the caller keeps its own clock', () => {
+    assert.equal(scrubDriver(600, () => {}), false);
+  });
+  it('under a scrub the finger drives it, commit lands it at 1, and onCommit fires once', () => {
+    const frames = []; let committed = 0, aborted = 0;
+    const ctl = beginScrubbedMigration(null);
+    assert.equal(scrubDriver(600, t => frames.push(t), { onCommit: () => { committed += 1; }, onAbort: () => { aborted += 1; } }), true);
+    assert.equal(ctl.launched(), true, 'a driver is a launch');
+    ctl.scrubTo(0.5);
+    assert.ok(Math.abs(frames[frames.length - 1] - 0.5) < 1e-9, 'half the master clock is half the journey');
+    ctl.release(true);
+    assert.equal(frames[frames.length - 1], 1);
+    assert.equal(committed, 1); assert.equal(aborted, 0);
+    assert.equal(isScrubbing(), false);
+  });
+  it('struck, it goes back to its first frame before the undo and hears onAbort after it', () => {
+    const order = [];
+    const ctl = beginScrubbedMigration(null);
+    scrubDriver(600, t => { if (t === 0) order.push('frame0'); }, { onAbort: () => order.push('driver-abort') });
+    ctl.scrubTo(0.4);
+    ctl.release(false, { onAbort: () => order.push('undo') });
+    assert.deepEqual(order.slice(-3), ['frame0', 'undo', 'driver-abort'], 'picture first, navigation undone, then the sector\'s state follows');
+  });
+});
+
+// THE RING RISES INTO THE SKY (O-141): the flight for a ring no IN ever flew up.
+describe('the ring rises into the sky (O-141)', () => {
+  it('arms and settles the transaction on its guard path, like every flight', () => {
+    let restored = 0, done = 0;
+    beginMigrationTransaction({ restore: () => { restored += 1; } });
+    animateRingToSky({ svgRoot: null, pyramidNodes: [], onComplete: () => { done += 1; } });
+    assert.equal(done, 1);
+    assert.equal(restored, 1);
+    clearStack();
   });
 });

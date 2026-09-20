@@ -41,11 +41,25 @@ const RING_RADIAL_DURATION = 900; // ms
  */
 function afterPaint(fn) {
   const t0 = performance.now();
+  const scrub = _scrub;
+  if (scrub) scrub.launching += 1;
   requestAnimationFrame(() => {
     const elapsed = performance.now() - t0;
     const pad = elapsed < 12 ? Math.ceil(34 - elapsed) : 0;
-    setTimeout(fn, pad);
+    setTimeout(() => {
+      fn();
+      // THE DRILL IS SCRUBBED (O-138): the transitions this launch just set
+      // are caught the same instant and held at their first frame, before
+      // anything moves. getAnimations() flushes style, so they exist.
+      if (scrub && scrub === _scrub) { scrub.launching -= 1; _scrubCapture(scrub); }
+    }, pad);
   });
+}
+// Every flight's completion timer passes through here. Under a scrub there
+// is no clock but the finger's: the completion waits for the release.
+function later(ms, fn) {
+  if (_scrub) { _scrub.completions.push({ at: ms, fn }); return; }
+  setTimeout(fn, ms);
 }
 
 // COLOR = DIRECTION OF TRAVEL (Howell 2026-07-23): orbital (ring, magnifier)
@@ -78,6 +92,77 @@ function setTransition(el, value) {
 }
 
 /**
+ * A DRESS CHANGE AS SCALE AND OPACITY ALONE (O-160, Howell 2026-09-17: "as
+ * smooth as any app made by Apple or Google"), AND NO NODE CHANGES COLOUR
+ * (Howell, the same day: "no nodes should change color. The fact that they
+ * do is accidental and unintentional" — which retires the dress doctrine of
+ * 2026-07-23 that faded a clone between the ring's and the sky's browns).
+ * A clone's radius, colour, stroke, type size and ink used to animate as
+ * themselves — every frame a style resolution, a text layout and a repaint on
+ * the main thread. Now a clone is dressed for flight like this:
+ *   <g origin (cx,cy)>  base circle — its own fill, no stroke
+ *                       stroke ring — the take-off stroke, no fill
+ *                       landing ring — the landing stroke, no fill, opacity 0
+ *   <g origin (x,y)>    the label
+ * A radius change is the circle wrapper's scale, a type-size change the
+ * label wrapper's; a stroke that comes or goes (the lens's) is a ring's
+ * opacity. `to(dress, ms)` animates, `snap(dress)` sets at once; a null dress
+ * (or null fields) means the take-off dress — the way back.
+ */
+const _isNoStroke = v => !v || v === 'none' || v === 'transparent' || /^rgba\([^)]*,\s*0\)$/.test(v);
+function dressForFlight({ circle, label }) {
+  const canStyle = typeof getComputedStyle === 'function';
+  const cx = Number(circle.getAttribute('cx')) || 0, cy = Number(circle.getAttribute('cy')) || 0;
+  const r0 = Number(circle.getAttribute('r')) || 1;
+  const cs = canStyle ? getComputedStyle(circle) : null;
+  const stroke0 = cs ? cs.stroke : '';
+  const wrapC = document.createElementNS(SVG_NS, 'g');
+  wrapC.setAttribute('class', 'dress-circle');
+  circle.parentNode.insertBefore(wrapC, circle);
+  wrapC.appendChild(circle);
+  const ring = circle.cloneNode(false);
+  ring.style.fill = 'none'; ring.style.stroke = _isNoStroke(stroke0) ? 'none' : stroke0;
+  const landingRing = circle.cloneNode(false);
+  landingRing.style.fill = 'none'; landingRing.style.stroke = 'none'; landingRing.style.opacity = '0';
+  circle.style.stroke = 'none';
+  wrapC.appendChild(ring); wrapC.appendChild(landingRing);
+  wrapC.style.transformOrigin = `${cx}px ${cy}px`;
+  let wrapL = null, fontPx0 = 0;
+  if (label) {
+    const lx = Number(label.getAttribute('x')) || 0, ly = Number(label.getAttribute('y')) || 0;
+    const ls = canStyle ? getComputedStyle(label) : null;
+    fontPx0 = ls ? parseFloat(ls.fontSize) || 0 : 0;
+    wrapL = document.createElementNS(SVG_NS, 'g');
+    wrapL.setAttribute('class', 'dress-label');
+    label.parentNode.insertBefore(wrapL, label);
+    wrapL.appendChild(label);
+    wrapL.style.transformOrigin = `${lx}px ${ly}px`;
+  }
+  const px = v => (typeof v === 'number' ? v : parseFloat(v)) || 0;
+  const apply = (dress, durMs) => {
+    const d = dress || {};
+    const tr = durMs > 0 ? `${durMs}ms ease-in-out` : null;
+    const k = px(d.radius) > 0 ? px(d.radius) / r0 : 1;
+    setTransition(wrapC, tr ? `transform ${tr}` : 'none');
+    setTransform(wrapC, `scale(${k})`);
+    const strokeTo = d.stroke == null ? stroke0 : d.stroke;
+    const comes = !_isNoStroke(strokeTo) && (strokeTo !== stroke0);
+    const goes = _isNoStroke(strokeTo) && !_isNoStroke(stroke0);
+    if (comes) landingRing.style.stroke = strokeTo;
+    landingRing.style.transition = tr ? `opacity ${tr}` : 'none';
+    landingRing.style.opacity = comes ? '1' : '0';
+    ring.style.transition = tr ? `opacity ${tr}` : 'none';
+    ring.style.opacity = goes || comes ? '0' : '1';
+    if (wrapL) {
+      const kl = px(d.fontPx) > 0 && fontPx0 > 0 ? px(d.fontPx) / fontPx0 : 1;
+      setTransition(wrapL, tr ? `transform ${tr}` : 'none');
+      setTransform(wrapL, `scale(${kl})`);
+    }
+  };
+  return { to: (dress, durMs) => apply(dress, durMs), snap: dress => apply(dress, 0) };
+}
+
+/**
  * LIFO stack of animation layers.
  * Each entry: { nodes: [ { clone, translateX, translateY, rotDelta } ], level }
  */
@@ -107,7 +192,8 @@ export function beginMigrationTransaction({ restore, watchdogMs = null } = {}) {
   // Watchdog: if an animation dies without settling, force the barrier so
   // the real elements can never stay hidden. Callers running longer-than-
   // default animations (the gateway transit) pass their own horizon.
-  txn.watchdog = setTimeout(() => _finishTransaction(txn), watchdogMs || (RING_RADIAL_DURATION * 2 + 500));
+  // Under a scrub (O-138) the finger owns the clock: a held drill is not a stuck one.
+  txn.watchdog = setTimeout(() => _finishTransaction(txn), _scrub ? 60000 : (watchdogMs || (RING_RADIAL_DURATION * 2 + 500)));
   _txn = txn;
   return txn;
 }
@@ -147,6 +233,239 @@ function txnSettle(txn, finisher) {
   if (finisher) txn.finishers.push(finisher);
   txn.pending -= 1;
   if (txn.pending === 0) _finishTransaction(txn);
+}
+
+/* ------------------------------------------------------------------ */
+/*  THE DRILL IS SCRUBBED (O-138, Howell 2026-09-15)                  */
+/*                                                                    */
+/*  "I don't like to have swipes that act like taps. Although the     */
+/*  user is dragging from the parent button to the magnifier, they    */
+/*  have no control over the timing or animation." So a drill begun   */
+/*  by a swipe is driven by the finger, as the truck is: the flights  */
+/*  launch exactly as for a tap, are caught at their first frame and  */
+/*  held, and the finger sets their time — every clone, every fade,   */
+/*  on one master clock, so the choreography keeps its own pacing.    */
+/*  On release past halfway they settle forward and the completions   */
+/*  fire as they always did; short of halfway they are struck, the    */
+/*  data commit the flight already made is reversed by an instant     */
+/*  navigation the host supplies, and the reals return in the same    */
+/*  frame — nothing happened.                                          */
+/* ------------------------------------------------------------------ */
+let _scrub = null;
+const SETTLE_MS = 500;   // the settle of a released drill, over the distance left
+function _scrubCapture(scrub) {
+  if (!scrub.root || typeof scrub.root.getAnimations !== 'function') return;
+  let found = [];
+  try { found = scrub.root.getAnimations({ subtree: true }) || []; } catch (e) { found = []; }
+  for (const a of found) {
+    if (scrub.anims.includes(a)) continue;
+    let end = 0;
+    try { const t = a.effect?.getComputedTiming?.(); end = Number(t?.endTime) || 0; } catch (e) { end = 0; }
+    if (!end) continue;
+    try { a.pause(); } catch (e) { continue; }
+    // STRAIGHT UNDER THE FINGER (O-151, Howell 2026-09-16: "remove all pops,
+    // jitters and bumps"). Every flight is eased in and out for the tap, and
+    // the finger is an easing of its own: the two stacked made the first and
+    // last centimetres of a swipe move almost nothing and the middle rush.
+    // Held by a finger, a flight runs linear — the finger IS the easing — and
+    // only the settle after release eases. A tap's flight is untouched.
+    try { a.effect?.updateTiming?.({ easing: 'linear' }); } catch (e) { /* keeps its own */ }
+    scrub.anims.push(a);
+    scrub.ends.set(a, end);
+    scrub.master = Math.max(scrub.master, end);
+  }
+  try { if (typeof window !== 'undefined' && typeof window.__tapDebugLog === 'function') window.__tapDebugLog('scrub-capture', { anims: scrub.anims.length, master: scrub.master, e: Math.round(scrub.e * 100) / 100 }); } catch (e) { /* logging only */ }
+  _scrubApply(scrub);
+}
+function _scrubApply(scrub) {
+  const t = scrub.e * scrub.master;
+  for (const d of scrub.drivers) { try { d.frameAt(Math.min(1, d.duration ? t / d.duration : 1)); } catch (e) { /* a driver must not wedge the clock */ } }
+  for (const a of scrub.anims) {
+    const end = scrub.ends.get(a) || 0;
+    try { a.currentTime = Math.max(0, Math.min(end, t)); } catch (e) { /* a finished transition is gone */ }
+  }
+}
+function _scrubFinishForward(scrub) {
+  _scrub = null;
+  // finish(), not play(): play() on an animation standing at its end rewinds it.
+  for (const a of scrub.anims) { try { a.finish(); } catch (e) { /* gone */ } }
+  for (const d of scrub.drivers) { try { d.frameAt(1); if (d.onCommit) d.onCommit(); } catch (e) { /* see above */ } }
+  // The completions, in the order the clock would have reached them.
+  scrub.completions.sort((x, y) => x.at - y.at).forEach(c => { try { c.fn(); } catch (e) { /* a completion must not wedge the rest */ } });
+}
+function _scrubAbort(scrub, onAbort) {
+  _scrub = null;
+  if (scrub.pending) { try { cancelAnimationFrame(scrub.pending); } catch (e) { /* gone */ } scrub.pending = 0; }
+  // Struck: the clones go first, in this same task, so no frame ever shows
+  // them at the end state a cancelled transition reverts to.
+  for (const a of scrub.anims) { try { a.cancel(); } catch (e) { /* gone */ } }
+  const overlays = scrub.root?.querySelectorAll ? [...scrub.root.querySelectorAll('.migration-animation-overlay')] : [];
+  // A layer the IN pushed is popped (its clones are gone); a layer the OUT
+  // popped is put back wearing the landed dress it had before the flight.
+  if (animatedNodesStack.length > scrub.depth) animatedNodesStack.pop();
+  else if (scrub.popped) {
+    const entry = scrub.popped;
+    entry.nodes.forEach(a => {
+      setTransition(a.g, 'none');
+      setTransform(a.g, `translate(${a.translateX}px, ${a.translateY}px) rotate(${a.rotDelta}deg)`);
+      a.dress.snap(a.landing);
+      a.g.style.opacity = '0';
+    });
+    animatedNodesStack.push(entry);
+    overlays.splice(overlays.indexOf(entry.overlay), 1);
+  }
+  overlays.forEach(o => { try { o.remove(); } catch (e) { /* gone */ } });
+  // Frame drivers (the detail sector) go back to their first frame — the
+  // picture only; their state follows AFTER the navigation is undone, so the
+  // renders that undo runs never see a sector half-committed (O-140).
+  for (const d of scrub.drivers) { try { d.frameAt(0); } catch (e) { /* see above */ } }
+  // The completions commit the flight's data as they always would; the host's
+  // instant navigation then takes it straight back; the barrier restores the
+  // reals — all before the next paint.
+  scrub.completions.sort((x, y) => x.at - y.at).forEach(c => { try { c.fn(); } catch (e) { /* see above */ } });
+  if (typeof onAbort === 'function') { try { onAbort(); } catch (e) { /* the host's own guards spoke */ } }
+  for (const d of scrub.drivers) { try { if (d.onAbort) d.onAbort(); } catch (e) { /* see above */ } }
+  if (_txn) _finishTransaction(_txn);
+}
+/**
+ * Open a scrubbed migration. Call BEFORE launching the drill (the tap's own
+ * path — handlePyramidNodeClick or the parent vessel's click); every flight
+ * launched while it is open is caught and held. Returns the controller:
+ *   launched()        — did any flight arm? (false: nothing to scrub; release is a no-op)
+ *   scrubTo(e)        — e in [0, 1], the finger's progress
+ *   release(commit, { onAbort }) — settle forward (commit) or spring back and
+ *                       call onAbort to undo the navigation instantly
+ *   cancel()          — forget the scrub without touching anything (nothing launched)
+ */
+/**
+ * THE FRAME MONITOR (O-160, Howell 2026-09-17: "It should be as smooth as any
+ * app made by Apple or Google"). Smooth is a measurable claim: from a drill's
+ * launch until its flights have settled, every animation frame's interval is
+ * recorded, along with how long each seek of the paused animations held the
+ * main thread. The report goes to window.__wheelFrameReport when the host
+ * installs one (the gesture log's readout); nothing runs otherwise.
+ */
+let _frames = null;
+function _frameMonitorStart() {
+  if (typeof window === 'undefined' || typeof window.__wheelFrameReport !== 'function' || typeof requestAnimationFrame !== 'function') return;
+  if (_frames) _frameMonitorStop();
+  const m = { gaps: [], seeks: [], renders: [], last: 0, raf: 0, t0: performance.now() };
+  _frames = m;
+  // MAIN-THREAD RENDER TIME PER FRAME: a message posted from inside the frame
+  // callback runs only after that frame's style, layout and paint recording
+  // are done on the main thread. Long gaps with short renders point at the
+  // raster and the GPU; long renders at style, layout and paint.
+  let channel = null;
+  try { channel = typeof MessageChannel === 'function' ? new MessageChannel() : null; } catch (e) { channel = null; }
+  let renderT0 = 0;
+  if (channel) channel.port1.onmessage = () => { if (renderT0) m.renders.push(performance.now() - renderT0); renderT0 = 0; };
+  const tick = now => {
+    if (_frames !== m) return;
+    if (m.last) m.gaps.push(now - m.last);
+    m.last = now;
+    if (channel && !renderT0) { renderT0 = performance.now(); channel.port2.postMessage(0); }
+    // Stop one quiet second after the last flight is gone, or at five seconds.
+    const idle = !_animating && !_scrub;
+    if ((idle && now - m.t0 > 400 && m.gaps.length > 6 && m.idleSince && now - m.idleSince > 250) || now - m.t0 > 5000) { _frameMonitorStop(); return; }
+    if (idle && !m.idleSince) m.idleSince = now; else if (!idle) m.idleSince = 0;
+    m.raf = requestAnimationFrame(tick);
+  };
+  m.raf = requestAnimationFrame(tick);
+}
+function _frameMonitorStop() {
+  const m = _frames; _frames = null;
+  if (!m) return;
+  try { cancelAnimationFrame(m.raf); } catch (e) { /* gone */ }
+  const gaps = m.gaps.slice().sort((a, b) => a - b);
+  if (!gaps.length) return;
+  const median = gaps[Math.floor(gaps.length / 2)];
+  // The display's period is the quick frames, not the typical one: a drill
+  // running at half rate has a median of two periods. Snap the tenth
+  // percentile to 60, 90 or 120 Hz.
+  const quick = gaps[Math.floor(gaps.length * 0.1)];
+  const period = [8.33, 11.11, 16.67].reduce((a, b) => (Math.abs(b - quick) < Math.abs(a - quick) ? b : a));
+  const dropped = gaps.filter(g => g > period * 1.6).length;
+  const seeks = m.seeks.slice().sort((a, b) => a - b);
+  const renders = m.renders.slice().sort((a, b) => a - b);
+  const report = {
+    renderMedian: renders.length ? Math.round(renders[Math.floor(renders.length / 2)] * 10) / 10 : 0,
+    renderMax: renders.length ? Math.round(renders[renders.length - 1] * 10) / 10 : 0,
+    frames: gaps.length,
+    hz: Math.round(1000 / period),
+    median: Math.round(median * 10) / 10,
+    worst: Math.round(gaps[gaps.length - 1] * 10) / 10,
+    dropped,
+    seekMax: seeks.length ? Math.round(seeks[seeks.length - 1] * 10) / 10 : 0,
+    seekMedian: seeks.length ? Math.round(seeks[Math.floor(seeks.length / 2)] * 10) / 10 : 0,
+    ms: Math.round(m.last - m.t0)
+  };
+  try { window.__wheelFrameReport(report); } catch (e) { /* the readout's own */ }
+}
+
+export function beginScrubbedMigration(root) {
+  if (_scrub) _scrubAbort(_scrub, null);
+  _frameMonitorStart();
+  const scrub = { root: root || null, anims: [], ends: new Map(), completions: [], drivers: [], e: 0, master: 0, launching: 0, depth: animatedNodesStack.length, popped: null, settling: null };
+  _scrub = scrub;
+  return {
+    launched: () => scrub.completions.length > 0 || scrub.launching > 0 || scrub.anims.length > 0 || scrub.drivers.length > 0,
+    // Every flight launched has been caught and is held (O-152): the finger may take over now.
+    captured: () => scrub.launching === 0,
+    // ONE SEEK PER FRAME (O-160): the finger reports more often than the
+    // display draws, and each report used to seek every animation at once.
+    // The latest position is kept and applied on the next animation frame.
+    scrubTo(e) {
+      if (_scrub !== scrub || scrub.settling) return;
+      scrub.e = Math.max(0, Math.min(1, Number(e) || 0));
+      if (scrub.pending || typeof requestAnimationFrame !== 'function') { if (!scrub.pending) _scrubApply(scrub); return; }
+      scrub.pending = requestAnimationFrame(() => {
+        scrub.pending = 0;
+        if (_scrub !== scrub || scrub.settling) return;
+        const t = _frames ? performance.now() : 0;
+        _scrubApply(scrub);
+        if (_frames) _frames.seeks.push(performance.now() - t);
+      });
+    },
+    release(commit, { onAbort = null } = {}) {
+      if (_scrub !== scrub || scrub.settling) return;
+      const target = commit ? 1 : 0;
+      if (scrub.pending) { try { cancelAnimationFrame(scrub.pending); } catch (e) { /* gone */ } scrub.pending = 0; _scrubApply(scrub); }
+      const startE = scrub.e, span = Math.abs(target - startE);
+      const finish = () => { if (commit) _scrubFinishForward(scrub); else _scrubAbort(scrub, onAbort); };
+      if (span < 0.001 || typeof requestAnimationFrame !== 'function') { finish(); return; }
+      let start = 0;
+      const step = now => {
+        if (_scrub !== scrub) return;
+        if (!start) start = now;
+        const t = Math.min(1, (now - start) / (SETTLE_MS * span));
+        const k = 1 - Math.pow(1 - t, 3);   // easeOutCubic — the settle of a released thing
+        scrub.e = startE + (target - startE) * k;
+        _scrubApply(scrub);
+        if (t < 1) scrub.settling = requestAnimationFrame(step);
+        else { scrub.settling = null; finish(); }
+      };
+      scrub.settling = requestAnimationFrame(step);
+    },
+    cancel() { if (_scrub === scrub && !scrub.launching && !scrub.anims.length && !scrub.completions.length) _scrub = null; }
+  };
+}
+/** True while a drill is under a finger (O-138). */
+export function isScrubbing() { return Boolean(_scrub); }
+/**
+ * A FRAME DRIVER ON THE SCRUB CLOCK (O-140): an animation that is not a CSS
+ * transition — the detail sector's circle — joins the drill by handing over
+ * frameAt(progress). Under a scrub it is driven by the finger over
+ * `durationMs` of master time and told onCommit or onAbort at the release;
+ * returns true. With no scrub open it returns false, and the caller runs its
+ * own clock as it always did.
+ */
+export function scrubDriver(durationMs, frameAt, { onCommit = null, onAbort = null } = {}) {
+  if (!_scrub || typeof frameAt !== 'function') return false;
+  const duration = Number(durationMs) > 0 ? Number(durationMs) : ANIM_DURATION;
+  _scrub.drivers.push({ duration, frameAt, onCommit, onAbort });
+  _scrub.master = Math.max(_scrub.master, duration);
+  try { frameAt(0); } catch (e) { /* first frame */ }
+  return true;
 }
 
 /* ------------------------------------------------------------------ */
@@ -283,19 +602,30 @@ export function animateIn(opts) {
     // OUT reversal can fade it back into exactly what it left with.
     const takeoffStyle = typeof getComputedStyle === 'function' ? getComputedStyle(circle) : null;
     const takeoffLabelStyle = typeof getComputedStyle === 'function' ? getComputedStyle(label) : null;
+    const pyramidFillNow = takeoffStyle ? takeoffStyle.fill : '';
+    const pyramidStrokeNow = takeoffStyle ? takeoffStyle.stroke : '';
+    const pyramidFontNow = takeoffLabelStyle ? takeoffLabelStyle.fontSize : '';
+    const dress = dressForFlight({ circle, label });
+    const landing = {
+      radius: endRadius,
+      stroke: (isClickedNode && magnifierRadius) ? magnifierStroke : 'transparent',
+      fontPx: parseFloat((isClickedNode && magnifierRadius) ? magLabelSize : ringLabelSize) || 0
+    };
 
     animEntries.push({
       g,
       circle,
       label,
+      dress,
+      landing,
       translateX,
       translateY,
       rotDelta,
       startRadius: pn.r,
       endRadius,
-      pyramidFill: takeoffStyle ? takeoffStyle.fill : '',
-      pyramidStroke: takeoffStyle ? takeoffStyle.stroke : '',
-      pyramidFontSize: takeoffLabelStyle ? takeoffLabelStyle.fontSize : '',
+      pyramidFill: pyramidFillNow,
+      pyramidStroke: pyramidStrokeNow,
+      pyramidFontSize: pyramidFontNow,
       ringFill,
       ringStroke: (isClickedNode && magnifierRadius) ? magnifierStroke : 'transparent',
       // The clicked node's label grows to the magnifier's size; the rest to
@@ -338,20 +668,13 @@ export function animateIn(opts) {
       // brown fading into the ring brown, and the label growing into the
       // ring's type size — so the barrier's clone-for-real swap lands on
       // identical pixels, no pop.
-      a.circle.style.transition = `r ${durIn}ms ease-in-out, fill ${durIn}ms ease-in-out, stroke ${durIn}ms ease-in-out`;
-      if (a.startRadius !== a.endRadius) a.circle.setAttribute('r', a.endRadius);
-      a.circle.style.fill = a.ringFill;
-      a.circle.style.stroke = a.ringStroke;
-      if (a.ringFontSize && a.ringFontSize !== a.pyramidFontSize) {
-        a.label.style.transition = `font-size ${durIn}ms ease-in-out`;
-        a.label.style.fontSize = a.ringFontSize;
-      }
+      a.dress.to(a.landing, durIn);
     });
 
     // After animation ends: signal complete; clone retirement is the
     // transaction barrier's job (all animations settle, reals restore,
     // THEN clones hide — no per-timer races).
-    setTimeout(() => {
+    later(durIn, () => {
       _animating = false;
       if (onComplete) onComplete();
       if (txn) {
@@ -373,7 +696,7 @@ export function animateIn(opts) {
           animEntries.forEach(a => { a.g.style.opacity = '0'; });
         }
       }
-    }, durIn);
+    });
   });
 }
 
@@ -399,6 +722,7 @@ export function animateOut(opts) {
   _animating = true;
 
   const entry = animatedNodesStack.pop();
+  if (_scrub) _scrub.popped = entry;   // a struck OUT puts it back (O-138)
   const { nodes: animEntries, overlay } = entry;
 
   // Hide real focus ring nodes + labels during animation
@@ -423,24 +747,133 @@ export function animateOut(opts) {
       // Reverse radius AND the dress — the ring brown fades back into the
       // pyramid brown it took off in, the label back to its pyramid size,
       // mirroring the IN flight.
-      a.circle.style.transition = `r ${ANIM_DURATION}ms ease-in-out, fill ${ANIM_DURATION}ms ease-in-out, stroke ${ANIM_DURATION}ms ease-in-out`;
-      if (a.startRadius !== a.endRadius) a.circle.setAttribute('r', a.startRadius);
-      if (a.pyramidFill) a.circle.style.fill = a.pyramidFill;
-      if (a.pyramidStroke) a.circle.style.stroke = a.pyramidStroke;
-      if (a.pyramidFontSize && a.pyramidFontSize !== a.ringFontSize) {
-        a.label.style.transition = `font-size ${ANIM_DURATION}ms ease-in-out`;
-        a.label.style.fontSize = a.pyramidFontSize;
-      }
+      a.dress.to(null, ANIM_DURATION);
     });
 
-    setTimeout(() => {
+    later(ANIM_DURATION, () => {
       // onComplete commits the data swap (setPrimaryItems) at animation end;
       // the overlay retires at the transaction barrier. nodesGroup/labelsGroup
       // are restored by animateRingInward's finisher.
       _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    });
+  });
+}
+
+/**
+ * THE RING RISES INTO THE SKY (O-141, Howell 2026-09-15: "the child pyramid
+ * nodes pop on rather than migrate from the focus ring"). animateOut reverses
+ * the IN flight that brought a ring up — but a ring the reader reached by the
+ * boot's own landing, a bookmark's jump or a deep link was never flown up,
+ * so there is no layer to reverse and its nodes simply vanished while the
+ * new sky popped on. This is that flight made from scratch: every seat of
+ * the departing ring — on the arc or implied beyond it — flies to the seat
+ * the new sky gives the same item, shrinking and changing into the sky's
+ * dress; a sky node no ring seat accounts for rises from the hub.
+ *
+ * @param {Object}      opts
+ * @param {SVGElement}  opts.svgRoot       — container for the clone overlay
+ * @param {Object[]}    opts.ringNodes     — the departing ring's seats ({ item, x, y, angle, label })
+ * @param {Object[]}    opts.pyramidNodes  — the NEW sky's nodes (pyramidData.nodes after the commit)
+ * @param {number}      opts.hubX, opts.hubY
+ * @param {number}      opts.nodeRadius    — the ring's node radius
+ * @param {SVGElement}  [opts.pyramidGroup] — the real sky, hidden until the barrier
+ */
+export function animateRingToSky(opts) {
+  const { svgRoot, ringNodes = [], pyramidNodes = [], hubX, hubY, nodeRadius = 10, pyramidGroup, onComplete, durationMs = null, lensId = null, magnifierRadius = null } = opts;
+  const dur = durationMs || ANIM_DURATION;
+  const txn = txnArm();
+  if (!svgRoot || pyramidNodes.length === 0) {
+    if (onComplete) onComplete();
+    txnSettle(txn, null);
+    return;
+  }
+  _animating = true;
+  if (pyramidGroup) pyramidGroup.style.opacity = '0';
+  const rootStyle = typeof getComputedStyle === 'function' ? getComputedStyle(svgRoot) : null;
+  const ringFill = (rootStyle?.getPropertyValue('--color-orbital') || '').trim()
+    || (rootStyle?.getPropertyValue('--color-nodes') || '').trim() || '#555';
+  const ringLabelEl = svgRoot.querySelector?.('.focus-ring-label');
+  const ringLabelSize = ringLabelEl && typeof getComputedStyle === 'function' ? getComputedStyle(ringLabelEl).fontSize : '';
+  // THE LENS HANDS ITS VERSE OVER, IT DOES NOT DROP IT (O-151 step three).
+  // The lens's own fill is switched off at the first frame; the node that
+  // was magnified must leave wearing it — at the lens's size, with the lens's
+  // stroke and its large numeral — and shrink into its seat in the sky, so
+  // the glass is never seen empty while the parent's disc is still on its
+  // way. The same take-off the IN flight's reversal already has.
+  const magLabelEl = svgRoot.querySelector?.('.focus-ring-magnifier-label:not(.focus-ring-parent-label)');
+  const magLabelSize = (magLabelEl && typeof getComputedStyle === 'function' ? getComputedStyle(magLabelEl).fontSize : '') || ringLabelSize;
+  const magnifierStroke = (rootStyle?.getPropertyValue('--color-magnifier-stroke') || '').trim() || '#000';
+  const originById = new Map();
+  ringNodes.forEach(rn => { const id = rn.item?.id ?? rn.id; if (id != null) originById.set(id, rn); });
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay ring-to-sky');
+  svgRoot.appendChild(overlay);
+  const entries = [];
+  pyramidNodes.forEach(pn => {
+    const id = pn.item?.id ?? pn.id;
+    const origin = originById.get(id) || null;
+    const fromX = origin ? origin.x : hubX, fromY = origin ? origin.y : hubY;
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', fromX);
+    circle.setAttribute('cy', fromY);
+    const fromLens = Boolean(origin && lensId != null && id === lensId && magnifierRadius);
+    circle.setAttribute('r', fromLens ? magnifierRadius : (origin ? nodeRadius : pn.r));
+    circle.setAttribute('class', 'child-pyramid-node');
+    g.appendChild(circle);
+    const label = document.createElementNS(SVG_NS, 'text');
+    label.setAttribute('x', fromX);
+    label.setAttribute('y', fromY);
+    label.setAttribute('text-anchor', 'middle');
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'child-pyramid-label');
+    const srcRot = labelRotationDeg(origin ? origin.angle : pn.angle);
+    label.setAttribute('transform', `rotate(${srcRot}, ${fromX}, ${fromY})`);
+    // Dressed for the DESTINATION first, so the sky's face is what the
+    // computed style answers; then the take-off dress is laid over it.
+    applyPyramidNodeAppearance({ circle, label, instr: pn });
+    label.textContent = pn.label ?? pn.item?.name ?? '';
+    g.appendChild(label);
+    overlay.appendChild(g);
+    const skyStyle = typeof getComputedStyle === 'function' ? getComputedStyle(circle) : null;
+    const skyLabelStyle = typeof getComputedStyle === 'function' ? getComputedStyle(label) : null;
+    const skyFill = skyStyle ? skyStyle.fill : '';
+    const skyStroke = skyStyle ? skyStyle.stroke : '';
+    const skyFontSize = skyLabelStyle ? skyLabelStyle.fontSize : '';
+    let dress = null, landing = null;
+    if (origin) {
+      circle.style.stroke = fromLens ? magnifierStroke : 'transparent';
+      const takeoffSize = fromLens ? magLabelSize : ringLabelSize;
+      if (takeoffSize) label.style.fontSize = takeoffSize;
+      dress = dressForFlight({ circle, label });
+      landing = { radius: pn.r, stroke: fromLens ? skyStroke : null, fontPx: parseFloat(skyFontSize) || 0 };
+    }
+    const dstRot = labelRotationDeg(pn.angle);
+    let rotDelta = dstRot - srcRot;
+    while (rotDelta > 180) rotDelta -= 360;
+    while (rotDelta < -180) rotDelta += 360;
+    g.style.transformOrigin = `${fromX}px ${fromY}px`;
+    g.style.transform = 'translate(0px, 0px) rotate(0deg)';
+    entries.push({ g, circle, label, dress, landing, translateX: pn.x - fromX, translateY: pn.y - fromY, rotDelta, endRadius: pn.r, skyFill, skyStroke, skyFontSize, fromRing: Boolean(origin), fromLens });
+  });
+  overlay.getBoundingClientRect();
+  afterPaint(() => {
+    entries.forEach(e => {
+      e.g.style.transition = `transform ${dur}ms ease-in-out`;
+      e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px) rotate(${e.rotDelta}deg)`;
+      if (e.fromRing && e.dress) e.dress.to(e.landing, dur);
+    });
+    later(dur, () => {
+      _animating = false;
+      if (onComplete) onComplete();
+      txnSettle(txn, () => {
+        overlay.remove();
+        if (pyramidGroup) pyramidGroup.style.opacity = '';
+      });
+    });
   });
 }
 
@@ -537,13 +970,13 @@ export function animatePyramidFromHub(opts) {
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => {
         overlay.remove();
         if (pyramidGroup) pyramidGroup.style.opacity = '';
       });
-    }, dur);
+    });
   });
 }
 
@@ -633,12 +1066,12 @@ export function animatePyramidToHub(opts) {
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       // Do NOT restore pyramidGroup opacity — the OUT migration's
       // onComplete → setPrimaryItems will repaint the parent's pyramid.
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -766,7 +1199,7 @@ export function animateRingOutward(opts) {
       e.g.style.transform = `translate(${e.translateX}px, ${e.translateY}px)`;
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       if (onComplete) onComplete();
       // Sole authority for restoring ring visibility during IN — deferred
       // to the barrier so the reveal is one synchronized frame.
@@ -775,7 +1208,7 @@ export function animateRingOutward(opts) {
         if (nodesGroup)  nodesGroup.style.opacity = '';
         if (labelsGroup) labelsGroup.style.opacity = '';
       });
-    }, dur);
+    });
   });
 }
 
@@ -930,11 +1363,11 @@ export function animateRingPartition(opts) {
       }
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1109,7 +1542,7 @@ export function animateRingInward(opts) {
       e.g.style.transform = 'translate(0px, 0px)';
     });
 
-    setTimeout(() => {
+    later(dur, () => {
       if (onComplete) onComplete();
       // Clones sit at their final ring positions until the barrier: the
       // real nodes appear in the same frame the clones leave.
@@ -1118,7 +1551,7 @@ export function animateRingInward(opts) {
         if (nodesGroup)  nodesGroup.style.opacity = '';
         if (labelsGroup) labelsGroup.style.opacity = '';
       });
-    }, dur);
+    });
   });
 }
 
@@ -1173,6 +1606,7 @@ export function animateMagnifierToParent(opts) {
   circle.setAttribute('cy', fromY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
   if (bare) circle.style.stroke = 'none';
   g.appendChild(circle);
   // Bound for the parent vessel: orbital fades to radial in flight, the
@@ -1242,10 +1676,6 @@ export function animateMagnifierToParent(opts) {
   afterPaint(() => {
     setTransition(g, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(g, `translate3d(${translateX}px, ${translateY}px, 0px)`);
-    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    circle.style.fill = dressM2P.radial; // orbital → radial: the vessel's dress
-    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    text.style.fill = dressM2P.groundInk; // landing on the ground, in its ink
 
     // Rotate to horizontal while translating to parent-label left offset.
     // 360° (instead of 0°) preserves the short interpolation path from
@@ -1253,10 +1683,10 @@ export function animateMagnifierToParent(opts) {
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
 
-    setTimeout(() => {
+    later(ANIM_DURATION, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    });
   });
 }
 
@@ -1296,8 +1726,9 @@ export function animateParentToMagnifier(opts) {
   circle.setAttribute('cy', toY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
   const dressP2M = travelColors(svgRoot);
-  circle.style.fill = dressP2M.radial;
+  circle.style.fill = dressP2M.orbital;   // a node's one colour (O-164)
   g.appendChild(circle);
 
   // Label starting offset-left of the parent button (text-anchor: start).
@@ -1350,15 +1781,11 @@ export function animateParentToMagnifier(opts) {
     const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
     setTransition(labelWrap, `transform ${durP2M}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(0px, 0px, 0px) rotate(${dstRotDeg}deg)`);
-    circle.style.transition = `fill ${durP2M}ms ease-in-out`;
-    circle.style.fill = dressP2M.orbital; // radial → orbital: entering the lens
-    text.style.transition = `fill ${durP2M}ms ease-in-out`;
-    text.style.fill = dressP2M.orbitalInk; // ground ink → lens ink
 
-    setTimeout(() => {
+    later(durP2M, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, durP2M);
+    });
   });
 }
 
@@ -1388,6 +1815,16 @@ export function animateVolumeParentMerge(opts) {
 
   const dressMerge = travelColors(svgRoot); // orbital → radial on arrival
 
+  // THE PARENT'S OWN DISC STAYS (O-162): the button's node keeps its disc
+  // through the flight; the numeral's disc tucks in behind it.
+  const staticDisc = document.createElementNS(SVG_NS, 'circle');
+  staticDisc.setAttribute('cx', toX);
+  staticDisc.setAttribute('cy', toY);
+  staticDisc.setAttribute('r', radius);
+  staticDisc.setAttribute('class', 'focus-ring-magnifier-circle');
+  staticDisc.style.fill = dressMerge.orbital;
+  overlay.appendChild(staticDisc);
+
   const staticBase = document.createElementNS(SVG_NS, 'text');
   staticBase.setAttribute('y', toY);
   staticBase.setAttribute('text-anchor', 'start');
@@ -1409,6 +1846,7 @@ export function animateVolumeParentMerge(opts) {
   circle.setAttribute('cy', fromY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
+  circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
   moving.appendChild(circle);
 
   const labelWrap = document.createElementNS(SVG_NS, 'g');
@@ -1446,10 +1884,16 @@ export function animateVolumeParentMerge(opts) {
   const seatFn = typeof opts.labelLeftXForWidth === 'function' ? opts.labelLeftXForWidth : null;
   const fallbackX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7;
   const soloBaseX = seatFn ? seatFn(baseAdvance) : fallbackX;
-  const mergedBaseX = seatFn ? seatFn(baseAdvance + mergeGap + suffixWidth) : fallbackX;
+  // The merged run is seated BY THE NAME, as the view seats it (its last
+  // letter just past the stroke), so the flight lands on the view's pixels.
+  // Right to left (O-139) the run reads [numeral][gap][name]: the numeral
+  // takes the run's left end and the name follows.
+  const rtl = opts.direction === 'rtl';
+  const mergedRunX = seatFn ? seatFn(baseAdvance + mergeGap + suffixWidth, baseAdvance) : fallbackX;
+  const mergedBaseX = rtl ? mergedRunX + suffixWidth + mergeGap : mergedRunX;
   staticBase.setAttribute('x', soloBaseX);
   setTransform(staticBase, 'translate3d(0px, 0px, 0px)');
-  const suffixTargetX = mergedBaseX + baseAdvance + mergeGap;
+  const suffixTargetX = rtl ? mergedRunX : mergedBaseX + baseAdvance + mergeGap;
   const endLocalDx = (suffixTargetX + (suffixWidth * 0.5)) - toX;
 
   moving.style.transformOrigin = `${fromX}px ${fromY}px`;
@@ -1465,10 +1909,6 @@ export function animateVolumeParentMerge(opts) {
   afterPaint(() => {
     setTransition(moving, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(moving, `translate3d(${tx}px, ${ty}px, 0px)`);
-    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    circle.style.fill = dressMerge.radial; // the suffix's disc becomes the vessel
-    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    text.style.fill = dressMerge.groundInk; // the suffix lands on the ground
 
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(labelWrap, `translate3d(${endLocalDx}px, 0px, 0px) rotate(360deg)`);
@@ -1477,10 +1917,10 @@ export function animateVolumeParentMerge(opts) {
     setTransition(staticBase, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(staticBase, `translate3d(${mergedBaseX - soloBaseX}px, 0px, 0px)`);
 
-    setTimeout(() => {
+    later(ANIM_DURATION, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    });
   });
 }
 
@@ -1510,6 +1950,16 @@ export function animateVolumeParentUnmerge(opts) {
 
   const dressUnmerge = travelColors(svgRoot);
 
+  // THE PARENT'S OWN DISC STAYS (O-162): the button's node keeps its disc
+  // through the flight; the numeral's disc emerges from behind it.
+  const staticDisc = document.createElementNS(SVG_NS, 'circle');
+  staticDisc.setAttribute('cx', toX);
+  staticDisc.setAttribute('cy', toY);
+  staticDisc.setAttribute('r', radius);
+  staticDisc.setAttribute('class', 'focus-ring-magnifier-circle');
+  staticDisc.style.fill = dressUnmerge.orbital;
+  overlay.appendChild(staticDisc);
+
   const staticBase = document.createElementNS(SVG_NS, 'text');
   staticBase.setAttribute('y', toY);
   staticBase.setAttribute('text-anchor', 'start');
@@ -1530,7 +1980,8 @@ export function animateVolumeParentUnmerge(opts) {
   circle.setAttribute('cy', toY);
   circle.setAttribute('r', radius);
   circle.setAttribute('class', 'focus-ring-magnifier-circle');
-  circle.style.fill = dressUnmerge.radial; // departs in the vessel's dress
+  circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
+  circle.style.fill = dressUnmerge.orbital; // a node's one colour (O-164)
   moving.appendChild(circle);
 
   const labelWrap = document.createElementNS(SVG_NS, 'g');
@@ -1563,11 +2014,14 @@ export function animateVolumeParentUnmerge(opts) {
   const unmergeGap = baseLabel ? radius * 0.25 : 0;
   const seatFn = typeof opts.labelLeftXForWidth === 'function' ? opts.labelLeftXForWidth : null;
   const fallbackX = Number.isFinite(opts.labelToX) ? opts.labelToX : toX + radius * -1.7;
-  const mergedBaseX = seatFn ? seatFn(baseAdvance + unmergeGap + suffixWidth) : fallbackX;
+  // Seated by the name, and by direction, as the merge is (O-139).
+  const rtl = opts.direction === 'rtl';
+  const mergedRunX = seatFn ? seatFn(baseAdvance + unmergeGap + suffixWidth, baseAdvance) : fallbackX;
+  const mergedBaseX = rtl ? mergedRunX + suffixWidth + unmergeGap : mergedRunX;
   const soloBaseX = seatFn ? seatFn(baseAdvance) : fallbackX;
   staticBase.setAttribute('x', mergedBaseX);
   setTransform(staticBase, 'translate3d(0px, 0px, 0px)');
-  const suffixStartX = mergedBaseX + baseAdvance + unmergeGap;
+  const suffixStartX = rtl ? mergedRunX : mergedBaseX + baseAdvance + unmergeGap;
   const startLocalDx = (suffixStartX + (suffixWidth * 0.5)) - toX;
 
   moving.style.transformOrigin = `${toX}px ${toY}px`;
@@ -1583,10 +2037,6 @@ export function animateVolumeParentUnmerge(opts) {
   afterPaint(() => {
     setTransition(moving, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(moving, `translate3d(${tx}px, ${ty}px, 0px)`);
-    circle.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    circle.style.fill = dressUnmerge.orbital; // radial → orbital: back into the lens
-    text.style.transition = `fill ${ANIM_DURATION}ms ease-in-out`;
-    text.style.fill = dressUnmerge.orbitalInk; // ground ink → lens ink
 
     const dstRotDeg = (fromAngle * 180) / Math.PI + 180;
     setTransition(labelWrap, `transform ${ANIM_DURATION}ms ease-in-out`);
@@ -1596,10 +2046,10 @@ export function animateVolumeParentUnmerge(opts) {
     setTransition(staticBase, `transform ${ANIM_DURATION}ms ease-in-out`);
     setTransform(staticBase, `translate3d(${soloBaseX - mergedBaseX}px, 0px, 0px)`);
 
-    setTimeout(() => {
+    later(ANIM_DURATION, () => {
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, ANIM_DURATION);
+    });
   });
 }
 
@@ -1658,7 +2108,8 @@ export function animateParentButtonOutward(opts) {
     circle.setAttribute('cy', buttonY);
     circle.setAttribute('r', radius);
     circle.setAttribute('class', 'focus-ring-magnifier-circle');
-    circle.style.fill = travelColors(svgRoot).radial; // the vessel travels radially
+    circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
+    circle.style.fill = travelColors(svgRoot).orbital; // a node's one colour (O-164)
     g.appendChild(circle);
   }
 
@@ -1703,11 +2154,11 @@ export function animateParentButtonOutward(opts) {
     g.style.transition = `transform ${dur}ms ease-in-out`;
     g.style.transform = `translate(${translateX}px, ${translateY}px)`;
 
-    setTimeout(() => {
+    later(dur, () => {
       // Real parent button will be restored by the render after setPrimaryItems
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1754,7 +2205,8 @@ export function animateParentButtonInward(opts) {
     circle.setAttribute('cy', buttonY);
     circle.setAttribute('r', radius);
     circle.setAttribute('class', 'focus-ring-magnifier-circle');
-    circle.style.fill = travelColors(svgRoot).radial; // the vessel travels radially
+    circle.style.stroke = 'none'; // a travelling node wears no stroke (O-162): only the two vessels are outlined
+    circle.style.fill = travelColors(svgRoot).orbital; // a node's one colour (O-164)
     g.appendChild(circle);
   }
 
@@ -1799,11 +2251,11 @@ export function animateParentButtonInward(opts) {
     g.style.transition = `transform ${dur}ms ease-in-out`;
     g.style.transform = 'translate(0px, 0px)';
 
-    setTimeout(() => {
+    later(dur, () => {
       // Real parent button fill + label will be restored by the caller.
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1867,16 +2319,14 @@ export function animateStarsAway(opts) {
   afterPaint(() => {
     flights.forEach(f => {
       f.g.style.transition = `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`;
-      f.g.style.transform = `translate(${(f.star.to.x - f.star.x).toFixed(1)}px, ${(f.star.to.y - f.star.y).toFixed(1)}px)`;
-      f.circle.style.transition = `r ${dur}ms ease-in-out`;
-      f.circle.setAttribute('r', Math.max(1, (f.star.r || 6) * 0.5));
+      f.g.style.transform = `translate(${(f.star.to.x - f.star.x).toFixed(1)}px, ${(f.star.to.y - f.star.y).toFixed(1)}px) scale(0.5)`;
       f.g.style.opacity = '0';
     });
-    setTimeout(() => {
+    later(dur, () => {
       _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1916,7 +2366,7 @@ export function animateNodesEmerge(opts) {
     const circle = document.createElementNS(SVG_NS, 'circle');
     circle.setAttribute('cx', node.x);
     circle.setAttribute('cy', node.y);
-    circle.setAttribute('r', Math.max(1, node.radius * 0.4));
+    circle.setAttribute('r', node.radius);
     circle.setAttribute('class', 'focus-ring-node');
     g.appendChild(circle);
     const label = document.createElementNS(SVG_NS, 'text');
@@ -1942,7 +2392,7 @@ export function animateNodesEmerge(opts) {
     overlay.appendChild(g);
     // Start AT the sky: translated to the centroid, invisible.
     g.style.transformOrigin = `${node.x}px ${node.y}px`;
-    setTransform(g, `translate3d(${(node.from.x - node.x).toFixed(1)}px, ${(node.from.y - node.y).toFixed(1)}px, 0px)`);
+    setTransform(g, `translate3d(${(node.from.x - node.x).toFixed(1)}px, ${(node.from.y - node.y).toFixed(1)}px, 0px) scale(0.4)`);
     g.style.opacity = '0';
     flights.push({ g, circle, node });
   });
@@ -1952,16 +2402,14 @@ export function animateNodesEmerge(opts) {
   afterPaint(() => {
     flights.forEach(f => {
       setTransition(f.g, `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`);
-      setTransform(f.g, 'translate3d(0px, 0px, 0px)');
+      setTransform(f.g, 'translate3d(0px, 0px, 0px) scale(1)');
       f.g.style.opacity = '1';
-      f.circle.style.transition = `r ${dur}ms ease-in-out`;
-      f.circle.setAttribute('r', f.node.radius);
     });
-    setTimeout(() => {
+    later(dur, () => {
       _animating = false;
       if (onComplete) onComplete();
       txnSettle(txn, () => overlay.remove());
-    }, dur);
+    });
   });
 }
 
@@ -1984,4 +2432,86 @@ export function clearStack() {
  */
 export function getStackDepth() {
   return animatedNodesStack.length;
+}
+/** The item ids the top layer will carry back (O-151 step five); empty when none. */
+export function topLayerIds() {
+  const top = animatedNodesStack[animatedNodesStack.length - 1];
+  return top ? top.nodes.map(a => a.itemId).filter(id => id != null) : [];
+}
+
+/**
+ * THE NODES NO SEAT ACCOUNTS FOR FADE AS THEY GO (O-151 step five). A ring
+ * node the flight carries nowhere — no seat for it in the sky it is rising
+ * into, or no clone in the layer being reversed — used to vanish at the first
+ * frame with the rest of the ring. It now travels a third of the way toward
+ * the hub, into the sky with its siblings, shrinking and fading to nothing
+ * by the end of the flight, on the scrub clock like everything else.
+ *
+ * @param {Object} opts — { svgRoot, ringNodes: [{ item, x, y, angle, radius, label, labelCentered }], hubX, hubY }
+ */
+// AND THE MIRROR, arrive: true (O-159 step four): a ring node the drill in's
+// flights do not carry — no star for it in the sky it came from — rises into
+// its seat from a third of the way toward the hub, growing from half size and
+// fading in, instead of appearing at landing.
+export function animateStragglers(opts) {
+  const { svgRoot, ringNodes = [], hubX, hubY, onComplete, durationMs = null, arrive = false } = opts;
+  const dur = durationMs || ANIM_DURATION;
+  const txn = txnArm();
+  if (!svgRoot || ringNodes.length === 0) {
+    if (onComplete) onComplete();
+    txnSettle(txn, null);
+    return;
+  }
+  const overlay = document.createElementNS(SVG_NS, 'g');
+  overlay.setAttribute('class', 'migration-animation-overlay stragglers');
+  svgRoot.appendChild(overlay);
+  const entries = [];
+  ringNodes.forEach(node => {
+    const g = document.createElementNS(SVG_NS, 'g');
+    g.setAttribute('class', 'migration-node');
+    const circle = document.createElementNS(SVG_NS, 'circle');
+    circle.setAttribute('cx', node.x);
+    circle.setAttribute('cy', node.y);
+    circle.setAttribute('r', node.radius);
+    circle.setAttribute('class', 'focus-ring-node');
+    g.appendChild(circle);
+    const label = document.createElementNS(SVG_NS, 'text');
+    const rot = (node.angle * 180) / Math.PI + 180;
+    if (node.labelCentered) {
+      label.setAttribute('x', node.x);
+      label.setAttribute('y', node.y);
+      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('transform', `rotate(${rot}, ${node.x}, ${node.y})`);
+    } else {
+      const offset = node.radius * -1.3;
+      const lx = node.x + Math.cos(node.angle) * offset;
+      const ly = node.y + Math.sin(node.angle) * offset;
+      label.setAttribute('x', lx);
+      label.setAttribute('y', ly);
+      label.setAttribute('text-anchor', 'end');
+      label.setAttribute('transform', `rotate(${rot}, ${lx}, ${ly})`);
+    }
+    label.setAttribute('dominant-baseline', 'middle');
+    label.setAttribute('class', 'focus-ring-label');
+    label.textContent = node.label ?? node.item?.name ?? '';
+    g.appendChild(label);
+    overlay.appendChild(g);
+    g.style.transformOrigin = `${node.x}px ${node.y}px`;
+    const tx = (hubX - node.x) / 3, ty = (hubY - node.y) / 3;
+    setTransform(g, arrive ? `translate(${tx}px, ${ty}px) scale(0.5)` : 'translate(0px, 0px) scale(1)');
+    g.style.opacity = arrive ? '0' : '1';
+    entries.push({ g, tx, ty });
+  });
+  overlay.getBoundingClientRect();
+  afterPaint(() => {
+    entries.forEach(e => {
+      setTransition(e.g, `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`);
+      setTransform(e.g, arrive ? 'translate(0px, 0px) scale(1)' : `translate(${e.tx}px, ${e.ty}px) scale(0.5)`);
+      e.g.style.opacity = arrive ? '1' : '0';
+    });
+    later(dur, () => {
+      if (onComplete) onComplete();
+      txnSettle(txn, () => overlay.remove());
+    });
+  });
 }

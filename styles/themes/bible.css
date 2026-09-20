@@ -11,18 +11,11 @@
   --theme-font-detail: 'EB Garamond', Georgia, serif;
 }
 
-/* Bible child pyramid nodes: solid fill to cover fan lines beneath them */
-:root[data-theme="bible"] .child-pyramid-node {
-  fill: #8b6f47;
-  stroke: #5a3e20;
-  stroke-width: 1px;
-}
-
-:root[data-theme="bible"] .child-pyramid-node:hover {
-  fill: #a07d52;
-  stroke: #5a3e20;
-}
-
 :root[data-theme="bible"] .child-pyramid-label {
   fill: #000000;
 }
+
+/* EVERY NODE WEARS THE ONE NODE COLOUR (O-164, Howell 2026-09-17): this
+   sheet used to paint the sky's stars its own solid fill and stroke, over the
+   base rule that gives every node the ring's colour — which is why a node
+   lightened by crossing between the ring and the sky. The base rule stands. */

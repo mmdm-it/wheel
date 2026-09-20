@@ -369,14 +369,20 @@ describe('the shelf follows the reader — a live names table', () => {
     // SYSTEM still follows the locale, so both must travel with the table.
     namesMap.books = { APOC: 'Apocalypsis' };
     namesMap.locale = 'latin';
+    // Since O-144 the lens wears the numeral alone and the WORD is the
+    // caption beside it — both still follow the live table.
+    const caption3 = () => fmt({ item: { id: 'GENE:3', level: 'chapter', name: '3' }, context: 'caption' });
     namesMap.vocabulary = { chapter: 'Capitulum' };
-    assert.equal(chapter3(), 'CAPITULUM III', 'Latin: Roman numerals, and Latin shouts');
+    assert.equal(chapter3(), 'III', 'Latin: Roman numerals');
+    assert.equal(caption3(), 'CAPITULUM', 'and Latin shouts');
     namesMap.locale = 'greek';
     namesMap.vocabulary = { chapter: 'Κεφάλαιον' };
-    assert.equal(chapter3(), 'ΚΕΦΑΛΑΙΟΝ γʹ', 'Greek: Greek numerals, and Greek shouts like Swete\'s heads (2026-09-05)');
+    assert.equal(chapter3(), 'γʹ', 'Greek: Greek numerals');
+    assert.equal(caption3(), 'ΚΕΦΑΛΑΙΟΝ', 'Greek shouts like Swete\'s heads (2026-09-05)');
     namesMap.locale = 'russian';
     namesMap.vocabulary = { chapter: 'Глава' };
-    assert.equal(chapter3(), 'Глава 3', 'Russian: Arabic numerals');
+    assert.equal(chapter3(), '3', 'Russian: Arabic numerals');
+    assert.equal(caption3(), 'Глава', 'Cyrillic keeps its own case');
   });
 
   it('the registry is the ONLY source of the word — no English belt', () => {
@@ -390,7 +396,8 @@ describe('the shelf follows the reader — a live names table', () => {
     namesMap.vocabulary = null;
     assert.equal(chapter3(), '3', 'no word ⇒ the bare numeral, not English');
     namesMap.vocabulary = { chapter: 'Kapitel', verse: 'Vers' };
-    assert.equal(chapter3(), 'KAPITEL 3', 'the registry supplies the word');
+    assert.equal(chapter3(), '3', 'the lens is the numeral alone (O-144)');
+    assert.equal(fmt({ item: { id: 'GENE:3', level: 'chapter', name: '3' }, context: 'caption' }), 'KAPITEL', 'the kit supplies the word, as the caption');
     namesMap.vocabulary = null;
   });
 });
@@ -561,6 +568,26 @@ describe('the strata name things in their own script', () => {
 // Third time this shape has caught me: the helper is tested, the WIRING is not,
 // and the wiring is where the defect lives. So this asks the volume config the
 // way boot asks it.
+// AND THE KITS' WORDS SURVIVE THE PROJECTION (O-144, 2026-09-16). The names
+// table was hand-listed — books, testaments, abbreviations, title — and the
+// day the kits grew `vocabulary` it was dropped on the way in: the words were
+// served and the caption stayed empty. Asked of the config the way boot asks.
+describe('the naming kit is passed through whole (O-144)', () => {
+  it('a field the kit carries reaches the host — vocabulary included', async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    const root = { display_config: { languages: { available: ['greek'], default: 'greek', labels: {} } } };
+    const volume = {
+      editions: [{ code: 'LXX', language: 'greek', hasChart: true, proofread: false, name: 'Septuagint' }],
+      namesByLanguage: { greek: { books: {}, testaments: {}, vocabulary: { chapter: 'Κεφάλαιον', verse: 'Στίχος' } } }
+    };
+    const manifest = {};
+    Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+    const supp = await volumeConfigs.bible.loadSupplemental(root, manifest);
+    assert.deepEqual(supp.translationsMeta.names.greek.vocabulary, { chapter: 'Κεφάλαιον', verse: 'Στίχος' },
+      'the kit\'s words were dropped by a hand-listed projection — the caption beside the lens stays empty');
+  });
+});
+
 describe('the volume supplies its own autonyms (O-54)', () => {
   it('loadSupplemental returns languages shaped for the ring', async () => {
     const { volumeConfigs } = await import('../src/volume-configs.js');

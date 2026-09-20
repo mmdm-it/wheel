@@ -41,7 +41,7 @@ export function isPrivateHost(hostname) {
 
 export function isOnLan(loc = (typeof window !== 'undefined' ? window.location : null)) {
   if (!loc || typeof loc.hostname !== 'string') return false;   // no location: assume public
-  return isPrivateHost(loc.hostname);
+  return isPrivateHost(loc.hostname) || isScreeningRoom(loc);   // the room is the LAN (O-137)
 }
 
 // IS THE PROOFREAD FLAG LIFTED? ONE implementation, here beside the LAN test
@@ -73,6 +73,34 @@ export function isOnLan(loc = (typeof window !== 'undefined' ? window.location :
 // later reader reasons confidently to the wrong conclusion — which is the
 // failure this codebase spent two days cataloguing. Everything downstream is
 // named for what it does: `proofreadOverrideActive`, `includeUnconfirmed`.
+// THE SCREENING ROOM IS THE LAN (O-137, Howell 2026-09-15: "everything we
+// see on the local network, we should be able to see on the screening room
+// server"). Three sites are online: the ARCHIVAL BACKUP at the root of its
+// server, never touched again; THE SCREENING ROOM, a directory on that same
+// server, for friends and family; and LEICESTER SQUARE, the launch site, for
+// strangers. The room is the bench reached over the internet: the flag, the
+// deep links and the driver's shortcuts work there exactly as on the LAN,
+// and without the flag it shows what a reader sees. It serves the same tree
+// the LAN serves — what may not be on a public server is not on the bench
+// either (the corpus withholds it, W-266) — so nothing here is a hole.
+//
+// The room is named by hostname AND path, because it shares a server with
+// the backup: the root of that server is not the room. A hostname that
+// merely ends like the room's is not the room either — the same false-yes
+// the private-range test above refuses. THE NAMES COME FROM THE HOST: this
+// file is engine core and names no site (as proofreadDeepLink names no
+// level); main.js declares the venue table from src/volume-configs.js, the
+// one home for such literals, before anything asks.
+let venues = null;
+export function declareVenues(table) { venues = table && typeof table === 'object' ? table : null; }
+export function isScreeningRoom(loc = (typeof window !== 'undefined' ? window.location : null), table = venues) {
+  const room = table?.screeningRoom;
+  if (!room || !Array.isArray(room.hosts) || typeof room.pathPrefix !== 'string') return false;
+  if (!loc || typeof loc.hostname !== 'string' || typeof loc.pathname !== 'string') return false;
+  const host = loc.hostname.trim().toLowerCase();
+  if (!room.hosts.includes(host)) return false;
+  return loc.pathname.toLowerCase().startsWith(room.pathPrefix.toLowerCase());
+}
 export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? window.location : null)) {
   try {
     if (!loc || typeof loc.search !== 'string') return false;
