@@ -1927,18 +1927,17 @@ export function createApp({
         const taperFor = j => (children.length <= 16 || j < TAPER_AFTER)
           ? 1
           : Math.max(0.3, Math.pow(taperRate, j - TAPER_AFTER));
-        // NOTHING SMALLER THAN THE SECOND SMALLEST (O-172, Howell 2026-09-20:
-        // "the smallest nodes in the star field are too small ... don't allow
-        // any of the nodes to get smaller than the current second smallest").
-        // The sizes are worked out as before — tier, then the taper's descent
-        // toward the smudge floor — and then the smallest size in this sky is
-        // lifted to the next size up, so the tail reads as one size of star
-        // rather than a scatter of specks. Every larger star keeps its own
-        // size, and a sky of one or two sizes is left alone.
-        const rawScales = seatOrder.map((i, j) => scaleForTier(tierOf(children[i])) * taperFor(j));
-        const sizes = [...new Set(rawScales.map(v => Math.round(v * 1000) / 1000))].sort((a, b) => a - b);
-        const floor = sizes.length > 1 ? sizes[1] : 0;
-        const seatScales = rawScales.map(v => Math.max(v, floor));
+        // THE SMALLEST STAR IS VERSE 18'S (O-172, Howell 2026-09-20). First
+        // the floor was the sky's own second smallest size, which lifted the
+        // tail only a hair; measured on his photograph of Genesis 1 — the
+        // standout at 40 px, a full star at 24, the taper stepping down by
+        // ninths — verse 18 stood at 11.5 px, and he set that as the floor:
+        // "Verse 18 should be the smallest at its current size." It is an
+        // ABSOLUTE floor on the drawn size, under every tier and every taper
+        // step, so no star anywhere is smaller than 0.46 of the ring's own
+        // node. The taper still descends; it simply stops there.
+        const MIN_SCALE = 0.46;
+        const seatScales = seatOrder.map((i, j) => Math.max(MIN_SCALE, scaleForTier(tierOf(children[i])) * taperFor(j)));
         // Seat cap (Howell 2026-07-19): etcetera means etcetera — a 150-
         // chapter sky seats ~60, the smudge tail implying the rest (and the
         // processor thanks us at migration time). Tapping any star still
