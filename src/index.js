@@ -1927,7 +1927,18 @@ export function createApp({
         const taperFor = j => (children.length <= 16 || j < TAPER_AFTER)
           ? 1
           : Math.max(0.3, Math.pow(taperRate, j - TAPER_AFTER));
-        const seatScales = seatOrder.map((i, j) => scaleForTier(tierOf(children[i])) * taperFor(j));
+        // NOTHING SMALLER THAN THE SECOND SMALLEST (O-172, Howell 2026-09-20:
+        // "the smallest nodes in the star field are too small ... don't allow
+        // any of the nodes to get smaller than the current second smallest").
+        // The sizes are worked out as before — tier, then the taper's descent
+        // toward the smudge floor — and then the smallest size in this sky is
+        // lifted to the next size up, so the tail reads as one size of star
+        // rather than a scatter of specks. Every larger star keeps its own
+        // size, and a sky of one or two sizes is left alone.
+        const rawScales = seatOrder.map((i, j) => scaleForTier(tierOf(children[i])) * taperFor(j));
+        const sizes = [...new Set(rawScales.map(v => Math.round(v * 1000) / 1000))].sort((a, b) => a - b);
+        const floor = sizes.length > 1 ? sizes[1] : 0;
+        const seatScales = rawScales.map(v => Math.max(v, floor));
         // Seat cap (Howell 2026-07-19): etcetera means etcetera — a 150-
         // chapter sky seats ~60, the smudge tail implying the rest (and the
         // processor thanks us at migration time). Tapping any star still
