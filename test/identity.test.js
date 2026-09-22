@@ -102,6 +102,11 @@ describe('identity — resolvePath speaks the H-11 layout', () => {
       './data/gutenberg/v42/names/fi.json');
   });
 
+  it('the two bundles (O-173): every chart of an edition, every spine, one file each', () => {
+    assert.equal(resolvePath(at({ kind: 'chartBundle', edition: 'VUL' })), './data/gutenberg/v42/charts/VUL/all.json');
+    assert.equal(resolvePath(at({ kind: 'spineBundle' })), './data/gutenberg/v42/spine/all.json');
+  });
+
   it('the version rides the path — that is what makes the files immutable (H-11 item 4)', () => {
     const a = resolvePath(at({ kind: 'spine', unitId: 'b7f3a' }));
     const b = resolvePath({ base: './data/gutenberg', version: 'v43', kind: 'spine', unitId: 'b7f3a' });

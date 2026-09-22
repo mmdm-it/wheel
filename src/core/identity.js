@@ -182,6 +182,13 @@ export function resolvePath({ base = '', version = '', kind, edition, unitId, la
     // EDITION and not per unit: it is the edition's own front matter.
     case 'marginLegend': return join('margin', `${req(edition, 'edition')}-legend.json`);
     case 'chartIndex':  return join('charts', req(edition, 'edition'), 'index.json');
+    // THE BUNDLES (O-173): every chart of an edition in one file, every spine
+    // in one file. A boot used to make one request per chart per edition and
+    // one per spine — 337 of its 366 — and the phone's radio paid for each.
+    // The per-file kinds above stay the truth on disk and the fallback when a
+    // corpus predates the bundles; a bundle is the same data, fetched once.
+    case 'chartBundle': return join('charts', req(edition, 'edition'), 'all.json');
+    case 'spineBundle': return join('spine', 'all.json');
     case 'names':       return join('names', `${req(lang, 'lang')}.json`);
     case 'container':
       throw new Error(

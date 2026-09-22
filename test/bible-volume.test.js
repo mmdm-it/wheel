@@ -64,6 +64,30 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
       'no fetch may name VUL: unenumerated means unreachable, whatever is on disk');
   });
 
+  it('reads the charts and the spines from their bundles when the corpus has them, and never per file (O-173)', async () => {
+    const touched = [];
+    const volume = await loadBibleVolume({
+      base: BASE, version: VERSION,
+      fetchJson: async p => { touched.push(p); return fetchJson(p); }
+    });
+    assert.ok(touched.some(p => p.endsWith('/charts/DRA/all.json')), 'the edition chart bundle is asked for');
+    assert.ok(touched.some(p => p.endsWith('/spine/all.json')), 'the spine bundle is asked for');
+    assert.deepEqual(touched.filter(p => /\/charts\/DRA\/b[0-9a-f]+\.json$/.test(p)), [], 'no chart is fetched on its own when the bundle holds it');
+    assert.deepEqual(touched.filter(p => /\/spine\/b[0-9a-f]+\.json$/.test(p)), [], 'no spine is fetched on its own when the bundle holds it');
+    assert.equal(volume.chartFor('bdra9e1', 'DRA')?.book, 'bdra9e1', 'the bundled chart is the book itself');
+  });
+
+  it('falls back to the files, one by one, where a corpus has no bundles', async () => {
+    const touched = [];
+    const volume = await loadBibleVolume({
+      base: BASE, version: VERSION,
+      fetchJson: async p => { touched.push(p); if (p.endsWith('/all.json')) throw new Error('404'); return fetchJson(p); }
+    });
+    assert.ok(touched.some(p => p.endsWith('/charts/DRA/bdra9e1.json')), 'the chart is fetched on its own');
+    assert.ok(touched.some(p => p.endsWith('/spine/bc22df.json')), 'the spine is fetched on its own');
+    assert.equal(volume.chartFor('bdra9e1', 'DRA')?.book, 'bdra9e1');
+  });
+
   it('a unit absent from the enumeration does not exist, whatever is on disk', async () => {
     const volume = await load();
     assert.equal(volume.has('bc22df'), true, 'the shard id exists');

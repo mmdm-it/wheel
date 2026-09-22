@@ -132,8 +132,21 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   // and Wilbur lost a real finding to it (test/no-binary-sources.test.js
   // guards the class).
   const charts = new Map();
+  // THE BUNDLE FIRST (O-173): one request per edition brings every chart the
+  // edition has; only a book the bundle lacks — or every book, where the
+  // corpus predates bundles — is fetched on its own. A bundled chart is
+  // checked to be the book it claims before it is believed.
+  const chartBundles = new Map();
+  await Promise.all(editions.map(async edition => {
+    try {
+      const b = await fetchJson(at({ kind: 'chartBundle', edition: edition.code }));
+      chartBundles.set(edition.code, (b && b.edition === edition.code && b.charts && typeof b.charts === 'object') ? b.charts : null);
+    } catch { chartBundles.set(edition.code, null); }
+  }));
   await Promise.all(editions.flatMap(edition =>
     (bookMetaByEdition.get(edition.code) || []).map(async book => {
+      const bundled = chartBundles.get(edition.code)?.[book.id];
+      if (bundled && bundled.book === book.id) { charts.set(`${book.id}|${edition.code}`, bundled); return; }
       try {
         charts.set(`${book.id}|${edition.code}`,
           await fetchJson(at({ kind: 'chart', unitId: book.id, edition: edition.code })));
@@ -153,7 +166,14 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   // remains W-96's superset: every utterance any edition attests in that
   // shard, in no edition's sequence.
   const spines = new Map();
+  let spineBundle = null;
+  try {
+    const b = await fetchJson(at({ kind: 'spineBundle' }));
+    spineBundle = (b && b.spines && typeof b.spines === 'object') ? b.spines : null;
+  } catch { spineBundle = null; }
   await Promise.all(shards.map(async shard => {
+    const bundled = spineBundle?.[shard.id];
+    if (bundled) { spines.set(shard.id, bundled); return; }
     try {
       spines.set(shard.id, await fetchJson(at({ kind: 'spine', unitId: shard.id })));
     } catch {
