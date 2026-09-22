@@ -6,6 +6,33 @@
 <html lang="it" translate="no" style="background:#868686">
 <head>
   <script>performance.mark('wheel:html-start');</script>
+  <!-- THE GROUND IS PAINTED BEFORE ANYTHING ELSE ARRIVES (O-174, Howell
+       2026-09-22: "an annoying flash of a white screen before the tan
+       background appears"). The body's ground is the theme's colour, and the
+       theme is applied by the app once it has loaded the volume — so until
+       then the body fell back to near-white. This runs before the first
+       stylesheet is even requested: it reads the volume from the query or the
+       path, or the one last seen on this phone, and sets that volume's ground
+       on the root. The three grounds are the theme sheets' own numbers,
+       copied here because nothing can be fetched yet; the app's theme takes
+       over the moment it runs, and a volume this does not know keeps the
+       brand's grey. -->
+  <script id="wheel:ground">(function () {
+    var grounds = { bible: '#d4a574', catalog: '#868686', calendar: '#0c2c44' };
+    var v = null;
+    try {
+      v = new URLSearchParams(location.search).get('volume');
+      if (!v) { var p = location.pathname.toLowerCase(); for (var k in grounds) { if (p.indexOf('/' + k) >= 0) { v = k; break; } } }
+      if (!v) v = localStorage.getItem('wheel:last-volume');
+    } catch (e) { /* storage or URL refused: the default ground stands */ }
+    var g = grounds[v] || null;
+    if (g) {
+      var r = document.documentElement;
+      r.style.background = g;
+      r.style.setProperty('--theme-color-bg', g);
+      try { localStorage.setItem('wheel:last-volume', v); } catch (e) { /* per-phone convenience only */ }
+    }
+  })();</script>
   <meta charset="UTF-8" />
   <meta name="google" content="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
