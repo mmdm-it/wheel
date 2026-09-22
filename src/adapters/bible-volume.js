@@ -34,7 +34,7 @@ import { projectContainers } from '../core/unit-source.js';
 // that must not happen is a botched increment looking finished. (The
 // REQUIRED_PER_UNIT set that stated this died with `loadUnit`, O-65.)
 
-export async function loadBibleVolume({ base, version, fetchJson } = {}) {
+export async function loadBibleVolume({ base, version, fetchJson, firstEdition = null } = {}) {
   if (typeof fetchJson !== 'function') {
     throw new Error('bible-volume: needs a `fetchJson(path)` — the transport is the caller\'s');
   }
@@ -136,16 +136,24 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   // edition has; only a book the bundle lacks — or every book, where the
   // corpus predates bundles — is fetched on its own. A bundled chart is
   // checked to be the book it claims before it is believed.
-  const chartBundles = new Map();
-  await Promise.all(editions.map(async edition => {
+  //
+  // AND ONLY THE FIRST EDITION IS WAITED FOR (O-175, Howell 2026-09-22: "Am I
+  // correct in thinking that the boot time will only increase as we add
+  // editions?" — he was). The boot needs the charts of the edition it will
+  // show; the others are started at once and arrive in the background, so a
+  // sixth edition costs the boot nothing. Whoever needs another edition —
+  // the slider settling on it, a preview, a bookmark to its leaf — asks
+  // `ready(code)` and gets a promise; `allReady()` says when every shelf is
+  // stocked. With no first edition named, every edition is awaited, which
+  // is what the suites and the fixtures expect.
+  const loadEdition = async edition => {
+    let bundle = null;
     try {
       const b = await fetchJson(at({ kind: 'chartBundle', edition: edition.code }));
-      chartBundles.set(edition.code, (b && b.edition === edition.code && b.charts && typeof b.charts === 'object') ? b.charts : null);
-    } catch { chartBundles.set(edition.code, null); }
-  }));
-  await Promise.all(editions.flatMap(edition =>
-    (bookMetaByEdition.get(edition.code) || []).map(async book => {
-      const bundled = chartBundles.get(edition.code)?.[book.id];
+      bundle = (b && b.edition === edition.code && b.charts && typeof b.charts === 'object') ? b.charts : null;
+    } catch { bundle = null; }
+    await Promise.all((bookMetaByEdition.get(edition.code) || []).map(async book => {
+      const bundled = bundle?.[book.id];
       if (bundled && bundled.book === book.id) { charts.set(`${book.id}|${edition.code}`, bundled); return; }
       try {
         charts.set(`${book.id}|${edition.code}`,
@@ -159,7 +167,19 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
           + 'the book will be absent from every ring, which is a data fault, not a choice.');
         charts.set(`${book.id}|${edition.code}`, null);
       }
-    })));
+    }));
+    loaded.add(edition.code);
+  };
+  const loaded = new Set();
+  const editionLoads = new Map(editions.map(e => [e.code, loadEdition(e)]));
+  const firstCode = typeof firstEdition === 'function' ? firstEdition(volume) : firstEdition;
+  const first = editions.find(e => e.code === firstCode) || null;
+  if (first) {
+    await editionLoads.get(first.code);
+    for (const [code, p] of editionLoads) if (code !== first.code) p.catch(() => { /* reported inside */ });
+  } else {
+    await Promise.all(editionLoads.values());
+  }
 
   // SPINES ARE PER SHARD (O-90 point 4) — same files, same ids, same order
   // as when the shard was called a book; only the claim changed. The spine
@@ -259,6 +279,11 @@ export async function loadBibleVolume({ base, version, fetchJson } = {}) {
   return {
     version,
     base,
+    // THE SHELVES STILL STOCKING (O-175): the first edition is in hand when
+    // this returns; the rest arrive behind it.
+    ready(code) { return editionLoads.get(code) || Promise.resolve(); },
+    allReady() { return Promise.all(editionLoads.values()).then(() => undefined); },
+    isReady(code) { return loaded.has(code); },
     // The storage layer, named for what it is (O-92). No reader ever meets a
     // shard; every ring is built from an edition's own books.
     shards,

@@ -90,6 +90,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
+import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
@@ -3725,7 +3726,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // been withdrawn falls through to the default rather than stranding.
   if (!dimensionStore.getState().language) {
     const remembered = recall(volume).edition;
-    if (!(remembered && dimensionBridge.setTranslation(remembered)) && options.translation) {
+    // THE PHONE'S OWN TONGUE ON A FIRST VISIT (O-176): nothing remembered and
+    // no edition named on the address, so the languages the reader set on
+    // their phone choose — the first one the volume offers. After this the
+    // reader's own choice is remembered and wins.
+    const named = new URLSearchParams(window.location.search).get('edition');
+    const offered = (supplemental?.languagesMeta?.languages || []).map(l => l?.id).filter(Boolean);
+    const byTongue = (!remembered && !named) ? firstOfferedLanguage(phoneLanguages(), offered) : null;
+    if (!(remembered && dimensionBridge.setTranslation(remembered))
+        && !(byTongue && dimensionBridge.setLanguage(byTongue))
+        && options.translation) {
       dimensionBridge.setTranslation(options.translation);
     }
   }
@@ -4280,6 +4290,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (!current?.id || !isDetailLevel(current, adapterNormalized)) return;
     remember(volume, { itemId: current.id });
   };
+  // WHEN EVERY SHELF IS STOCKED (O-175), one quiet redraw seats whatever
+  // waited on another edition — a bookmark to its leaf, a hit on its ring.
+  manifest?.__wallVolume?.allReady?.().then(() => { if (currentApp === app) app?.refreshPyramid?.(); });
 
   // Detail renders resolve the translation LIVE (the sticky choice can
   // change between renders); the settle hook below regenerates the open
@@ -4351,7 +4364,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // the same index, and sometimes not the same number. A volume that returns
     // false (or declares no handler) keeps the reader exactly where they are,
     // which is the right answer whenever the editions agree.
-    editionSettlePromise = Promise.resolve(config.onEditionSettle?.(translation || null))
+    // THE SHELF MUST BE STOCKED BEFORE THE RESEAT (O-175): an edition's charts
+    // may still be arriving behind the boot; the reseat waits for them.
+    editionSettlePromise = Promise.resolve(currentManifest?.__wallVolume?.ready?.(translation))
+      .then(() => config.onEditionSettle?.(translation || null))
       .then(() => handlerSet.reseatOnEditionChange?.({
         selected: app?.nav?.getCurrent?.(), app
       }))
@@ -4413,6 +4429,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (!preview) return;
     const edition = preview.edition;
     if (!edition || edition === dimensionBridge.comingSoonKey) return;
+    // A preview of an edition still arriving (O-175) waits for it, then
+    // shows it — unless the finger has moved on to another by then.
+    const vol = currentManifest?.__wallVolume;
+    if (vol?.isReady && !vol.isReady(edition) && typeof vol.ready === 'function') {
+      vol.ready(edition).then(() => { if (options.previewEdition === edition) previewPrimary(preview); });
+    }
     refreshNamesMap(preview.language);
     // WHICH EDITION IS UNDER THE LENS (O-94). The chain still holds the
     // committed edition's book ids, so whoever names a book during a preview

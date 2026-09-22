@@ -6,6 +6,8 @@
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
 import { proofreadDeepLink } from './core/lan-gate.js';
+import { recall } from './core/session-memory.js';
+import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
@@ -85,9 +87,30 @@ const volumeConfigs = {
     // picture that asserts anything about a corpus.
     assetBase: `${BIBLE_VOLUME_BASE}/${BIBLE_VOLUME_VERSION}/`,
     loadManifest: async () => {
+      // WHICH EDITION THE BOOT WAITS FOR (O-175): the one the reader chose
+      // last time; failing that, on a proofread deep link, the one the address
+      // names; failing that, the one the phone's own languages point to
+      // (O-176); failing that, the volume's default. The same order the boot
+      // itself settles on below, so the edition shown is the edition waited
+      // for. Everything else is fetched behind it.
+      const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
+      const named = proofreadDeepLink(['book', 'chapter', 'verse']) ? params.get('edition') : null;
+      const chooseFirst = volumeJson => {
+        const cfg = volumeJson?.display_config || {};
+        const offered = new Set((volumeJson?.editions || []).map(e => e.code));
+        const remembered = recall('bible').edition;
+        if (remembered && offered.has(remembered)) return remembered;
+        if (named && offered.has(named)) return named;
+        const lang = firstOfferedLanguage(phoneLanguages(), Object.keys(cfg.editions?.available || {}));
+        const byTongue = lang ? cfg.editions?.default?.[lang] : null;
+        if (byTongue && offered.has(byTongue)) return byTongue;
+        const dflt = cfg.editions?.default?.[cfg.languages?.default];
+        return dflt && offered.has(dflt) ? dflt : null;
+      };
       const volume = await loadBibleVolume({
         base: BIBLE_VOLUME_BASE,
         version: BIBLE_VOLUME_VERSION,
+        firstEdition: chooseFirst,
         fetchJson: async path => {
           const response = await fetch(path);
           if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);

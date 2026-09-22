@@ -77,6 +77,29 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     assert.equal(volume.chartFor('bdra9e1', 'DRA')?.book, 'bdra9e1', 'the bundled chart is the book itself');
   });
 
+  it('with a first edition named, returns once that edition is in hand and stocks the rest behind (O-175)', async () => {
+    const touched = [];
+    const volume = await loadBibleVolume({
+      base: BASE, version: VERSION, firstEdition: 'DRA',
+      fetchJson: async p => { touched.push(p); return fetchJson(p); }
+    });
+    assert.equal(volume.isReady('DRA'), true, 'the first edition is in hand');
+    assert.equal(volume.chartFor('bdra9e1', 'DRA')?.book, 'bdra9e1');
+    await volume.allReady();
+    assert.equal(typeof volume.ready('DRA').then, 'function', 'ready() answers a promise');
+    assert.equal(typeof volume.ready('nobody').then, 'function', 'even for an edition it never heard of');
+  });
+
+  it('with a chooser, asks it against the volume declaration (O-175)', async () => {
+    let seen = null;
+    const volume = await loadBibleVolume({
+      base: BASE, version: VERSION, fetchJson,
+      firstEdition: volumeJson => { seen = volumeJson; return 'DRA'; }
+    });
+    assert.ok(Array.isArray(seen?.editions), 'the chooser saw volume.json');
+    assert.equal(volume.isReady('DRA'), true);
+  });
+
   it('falls back to the files, one by one, where a corpus has no bundles', async () => {
     const touched = [];
     const volume = await loadBibleVolume({
