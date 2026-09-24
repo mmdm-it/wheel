@@ -90,6 +90,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
+import { beginBootOverture, overtureShouldPlay } from './view/boot-overture.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
@@ -3557,6 +3558,7 @@ let currentVolumeId = null;
 let gatewayReturnContext = null;
 let interactionsWired = false;
 let firstBootDone = false; // the boot splash plays only on the initial load
+let bootOvertureShown = false; // the overture covers the first load only (O-177)
 
 // Sample points along the visible focus-ring arc — the first stroke the boot
 // splash inks. Ordered endAngle→startAngle so the self-draw sweeps from the
@@ -3689,6 +3691,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     && volumeConfigs[resolveVolumeId(volumeOverride, searchOverride)]?.bootSplash === true
     && bootSplashShouldPlay();
   firstBootDone = true;
+  // THE BOOT OVERTURE (O-177): the wheel's line-work draws itself while the
+  // volume loads and hands off the moment the instrument is ready. Not under
+  // the first-visit reveal, not on a gateway transit, not on a re-boot.
+  const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
+    ? beginBootOverture({ svg, viewport: measureViewport() }) : null;
+  bootOvertureShown = true;
   if (playSplash) {
     if (svg) svg.style.opacity = '0';
     // Hide the copyright as early as possible — it is an index.html div,
@@ -4472,6 +4480,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // used to be the one exception to a launch funnel that no longer exists.
   showVersion();
   performance.mark('wheel:render-done');
+  overture?.finish();
   recordBootPhases(volume);
   if (options.debug) mountFeelHud();
   mountProbe(); // inert unless ?probe=1 — field diagnostics to the drop box

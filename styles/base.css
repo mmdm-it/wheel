@@ -724,6 +724,10 @@ svg :focus-visible {
   transition: opacity 80ms linear;
 }
 
+/* THE BOOT OVERTURE (O-177): while the app boots, only the overture's
+   line-work shows; the wheel arrives within it at the handoff. */
+#app.booting > :not(#boot-overture) { visibility: hidden; }
+
 /* Migration animation overlay — cloned nodes that travel from pyramid to ring */
 .migration-animation-overlay {
   pointer-events: none;
