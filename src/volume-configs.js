@@ -154,9 +154,11 @@ const volumeConfigs = {
     theme: 'bible',
     palette: {
       bg: '#d4a574',
-      node: '#8b5a2b',
+      // O-166's shades, declared (O-178): every node the lighter brown, the
+      // band that brown one step darker.
+      node: '#8a6a49',
       text: '#2a1a0f',
-      band: '#8a6a49',
+      band: '#6c5339',
       accent: '#8b5a2b',
       magnifierStroke: '#2a1a0f'
     },

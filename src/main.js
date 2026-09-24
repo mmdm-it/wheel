@@ -2341,13 +2341,6 @@ function applyTheme(volume) {
   // the band's material — chain and links, one metal — while RADIAL travel
   // (parent vessel, pyramid) keeps the volume's node color. Derived from
   // whatever band the volume wears, so every volume follows automatically.
-  const darkenHex = (hex, f) => {
-    const m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim());
-    if (!m) return hex;
-    const n = parseInt(m[1], 16);
-    const ch = v => Math.max(0, Math.round(v * f)).toString(16).padStart(2, '0');
-    return `#${ch((n >> 16) & 255)}${ch((n >> 8) & 255)}${ch(n & 255)}`;
-  };
   // THE OVERRIDE THAT IS NOT YET READ, and the constraint that will bind it
   // when it is (O-3, recorded 2026-08-23 under W-139's sweep — the entry had
   // no home outside the ledger). When per-volume travel colours are chosen,
@@ -2363,15 +2356,17 @@ function applyTheme(volume) {
   // it. A declared override skips the derivation and therefore skips the
   // safety the derivation happens to give: whoever declares one owes the
   // second measurement.
-  // THE BAND IS THE DARKER, THE NODES THE LIGHTER (O-166, Howell 2026-09-18:
-  // "make the focus ring band the darker color. And all of the nodes, parent
-  // button, magnifier, focus ring, child pyramid, make all of these nodes the
-  // lighter color, which is the current focus ring band color"). The same
-  // pair of shades as before, swapped: the volume's declared band colour is
-  // the one colour every node wears, and the band is that colour one step
-  // darker — which overrides the band set above, once darkenHex exists.
-  root.style.setProperty('--theme-color-orbital', active.band);
-  root.style.setProperty('--theme-color-band', darkenHex(active.band, 0.78));
+  // EVERY NODE WEARS THE VOLUME'S OWN NODE COLOUR, AND THE BAND ITS OWN
+  // BAND COLOUR (O-178, Howell 2026-09-24: another volume's reveal "remains
+  // monochrome ... the yellow colors never come in at the end"). O-164 and
+  // O-166 were ruled looking at one volume — every node one colour, the band
+  // a step darker — and were written as a DERIVATION from the band, which
+  // put a second volume's gold on nothing and left it grey. The rule stands
+  // and the derivation goes: each volume DECLARES its node colour and its
+  // band colour in its palette; the first volume's palette now names the
+  // very shades Howell approved, and the second's gold is back on every node.
+  root.style.setProperty('--theme-color-orbital', active.node);
+  root.style.setProperty('--theme-color-band', active.band);
   root.style.setProperty('--theme-color-accent', active.accent);
   root.style.setProperty('--theme-color-magnifier-stroke', active.magnifierStroke);
   if (document.body) {
