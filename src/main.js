@@ -90,7 +90,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
-import { beginBootOverture, overtureShouldPlay } from './view/boot-overture.js';
+import { beginBootOverture, overtureShouldPlay, overtureScrubWanted } from './view/boot-overture.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
@@ -1338,6 +1338,7 @@ function layerStates(front) {
 // release. Nothing about the state (strataFront, the funnel, the basement
 // visit) changes inside a glide; that is the caller's, at the settle.
 function beginGlide(fromFront, toFront) {
+  if (bootOvertureLive && !bootOvertureGliding) { const o = bootOvertureLive; bootOvertureLive = null; o.abort(); }
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
   // A truck begun while a chooser ring is mid-turn (a second finger, or a
   // springback still gliding) must not leave that turn dangling: its drag,
@@ -3554,6 +3555,11 @@ let gatewayReturnContext = null;
 let interactionsWired = false;
 let firstBootDone = false; // the boot splash plays only on the initial load
 let bootOvertureShown = false; // the overture covers the first load only (O-177)
+// The overture in progress, and whether the glide being begun is its own.
+// Any OTHER glide — the reader's slider, a tap, a test driving the floors —
+// ends the overture on the spot, and it leaves the floors to whoever moved
+// them: the sheet lifts, nothing is settled on the reader's behalf.
+let bootOvertureLive = null, bootOvertureGliding = false;
 
 // Sample points along the visible focus-ring arc — the first stroke the boot
 // splash inks. Ordered endAngle→startAngle so the self-draw sweeps from the
@@ -3690,7 +3696,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // volume loads and hands off the moment the instrument is ready. Not under
   // the first-visit reveal, not on a gateway transit, not on a re-boot.
   const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
-    ? beginBootOverture({ svg, viewport: measureViewport() }) : null;
+    ? beginBootOverture({ viewport: measureViewport() }) : null;
   bootOvertureShown = true;
   if (playSplash) {
     if (svg) svg.style.opacity = '0';
@@ -4475,7 +4481,25 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // used to be the one exception to a launch funnel that no longer exists.
   showVersion();
   performance.mark('wheel:render-done');
-  overture?.finish();
+  // THE OVERTURE'S DRILL IS THE APP'S OWN (O-177): the wireframe is dressed
+  // from the instrument now standing, and the live floors then glide under
+  // it exactly as they do when the globe is pressed.
+  if (overture) {
+    bootOvertureLive = overture;
+    overture.ready({
+      cast: root?.display_config?.overture || null,
+      fetchText: url => fetch(url).then(r => (r.ok ? r.text() : null)),
+      scrub: overtureScrubWanted(),
+      // The drill is the slider's own glide (O-126), driven by the overture's
+      // clock instead of the thumb; a volume with no floors gets no drill.
+      drive: (dimensionAvailable() && maxStrataFront() >= 2) ? {
+        setFront: f => { strataFront = f; },
+        render: () => renderStack(),
+        glide: (a, b) => { bootOvertureGliding = true; try { return beginGlide(a, b); } finally { bootOvertureGliding = false; } },
+        arrive: () => { bootOvertureLive = null; arriveAt(1, 0); }
+      } : null
+    });
+  }
   recordBootPhases(volume);
   if (options.debug) mountFeelHud();
   mountProbe(); // inert unless ?probe=1 — field diagnostics to the drop box
