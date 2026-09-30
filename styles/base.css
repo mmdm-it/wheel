@@ -439,6 +439,11 @@ svg :focus-visible {
 /* The thumb's springback out of the overrun: eased, a touch longer than the
    snap between stops — the Focus Ring's own feel. */
 #dimension-button { transition: opacity 0.15s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1); }
+/* A PLACEHOLDER SEAT on the edition ring (O-184): an edition the shelf is
+   being built toward, not yet in the corpus — hollow, its name a shade
+   lighter, never chosen. */
+.secondary-strata-node.is-coming { fill: none; stroke: var(--color-orbital); stroke-width: 1.5; }
+.secondary-strata-node.is-coming + .secondary-strata-label { opacity: 0.62; }
 /* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
    with, not yet kept: hollow, so keeping it visibly fills it. */
 .secondary-strata-node.is-provisional { fill: none; stroke: var(--color-orbital); stroke-width: 2; }

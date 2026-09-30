@@ -303,6 +303,10 @@ const CHOOSERS = [
     // was not the one chosen; it remains one line away if he wants it.
     label: key => dimensionBridge.translationAbbrev(key, strataPreview?.language || null),
     selected: () => dimensionBridge.getSelection().translation,
+    // A placeholder seat (O-184) is drawn hollow, and the ring never settles
+    // on one: the snap passes it for the nearest real seat.
+    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : ''),
+    inert: key => Boolean(dimensionBridge.isComing?.(key)),
     select: key => {
       const ok = dimensionBridge.setTranslation(key);
       window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
@@ -1181,7 +1185,7 @@ function previewFromLens(ch, items, centerIndex) {
     // A language is passing: restock the edition plane and take its default,
     // exactly the edition committing this language would choose.
     const editions = dimensionBridge.translationsOf(item) || [];
-    strataPreview = { language: item, edition: editions[0] || null };
+    strataPreview = { language: item, edition: editions.find(k => !dimensionBridge.isComing?.(k)) || null };
   } else {
     strataPreview = { ...(strataPreview || {}), edition: item };
   }
@@ -1272,6 +1276,14 @@ if (strataLayer) {
         else if (ch === BASEMENT && items.length && lensHit(event, ch)) toggleKeep(items[target]);
       }
       if (!items.length) return;   // an empty basement: nothing to settle
+      // A placeholder seat cannot be chosen (O-184): the ring settles on the
+      // nearest real seat instead, whichever side it lies.
+      if (typeof ch.inert === 'function' && ch.inert(items[target])) {
+        for (let d = 1; d < items.length; d += 1) {
+          if (target + d < items.length && !ch.inert(items[target + d])) { target += d; break; }
+          if (target - d >= 0 && !ch.inert(items[target - d])) { target -= d; break; }
+        }
+      }
       springbackStrata(center, target, ch, items);
     })
   );
@@ -4473,7 +4485,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   previewPrimary = preview => {
     if (!preview) return;
     const edition = preview.edition;
-    if (!edition || edition === dimensionBridge.comingSoonKey) return;
+    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition)) return;
     // A preview of an edition still arriving (O-175) waits for it, then
     // shows it — unless the finger has moved on to another by then.
     const vol = currentManifest?.__wallVolume;

@@ -213,6 +213,10 @@ const volumeConfigs = {
       // normalisations below are the ones with a DEFAULT the engine depends on;
       // everything else is the volume's word, carried intact.
       const translationsMeta = {
+        // THE DECLARED SHELVES (O-184): per language, the edition ring's order
+        // with placeholder names between the seated editions. The volume's
+        // word; the `_` keys are its notes to itself.
+        coming: Object.fromEntries(Object.entries(volume.display_config?.editions?.coming || {}).filter(([k, v]) => !k.startsWith('_') && Array.isArray(v))),
         translations: Object.fromEntries(volume.editions.map(edition => [edition.code, {
           ...edition,
           name: edition.name || edition.code,
