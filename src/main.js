@@ -90,7 +90,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
-import { beginBootOverture, overtureShouldPlay, overtureScrubWanted } from './view/boot-overture.js';
+import { beginBootOverture, overtureShouldPlay, overtureScrubWanted, splashRecord } from './view/boot-overture.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
@@ -3697,8 +3697,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // THE BOOT OVERTURE (O-177): the wheel's line-work draws itself while the
   // volume loads and hands off the moment the instrument is ready. Not under
   // the first-visit reveal, not on a gateway transit, not on a re-boot.
+  // THE CARD (O-180): the volume's emblem and name from the first frame. On a
+  // return visit the card is remembered on the phone and is up before the
+  // manifest is; on the first it goes up the moment the declaration arrives.
+  const bootVolumeId = resolveVolumeId(volumeOverride, searchOverride);
+  const splashKey = `wheel:splash:${bootVolumeId}`;
+  const rememberedSplash = (() => { try { return JSON.parse(localStorage.getItem(splashKey) || 'null'); } catch { return null; } })();
   const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
-    ? beginBootOverture({ viewport: measureViewport() }) : null;
+    ? beginBootOverture({ viewport: measureViewport(), splash: rememberedSplash }) : null;
   bootOvertureShown = true;
   if (playSplash) {
     if (svg) svg.style.opacity = '0';
@@ -3725,6 +3731,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
 
   let { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
+  {
+    const declared = splashRecord(root, config.assetBase);
+    if (overture && declared) overture.splash(declared);
+    try {
+      if (declared) localStorage.setItem(splashKey, JSON.stringify(declared));
+      else localStorage.removeItem(splashKey);
+    } catch { /* per-phone convenience only */ }
+  }
   const translationsMeta = supplemental?.translationsMeta || null;
   dimensionBridge.setTranslationsMeta(translationsMeta);
   dimensionBridge.setLanguagesMeta(supplemental?.languagesMeta || null);

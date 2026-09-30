@@ -10,6 +10,19 @@
 // the code for the app to see how that page is drawn and then just replicate
 // that math").
 //
+// THE CARD BEFORE THE FILM (O-180, Howell 2026-09-29, with eight phone
+// splash screens for comparison — NASA, Netflix, eBay, Amazon: "All of the
+// others just appear instantly as a logo in the center of the screen. So I'd
+// like to begin the same way with the original Crown of Thorns artwork ...
+// with the words 'Biblia Catholica' underneath. That image can linger for
+// perhaps three seconds. And then we go to the overture."): the volume's
+// emblem — the artwork itself, not its line-work — and the volume's name on
+// the ground from the first frame, held three seconds at least and until the
+// wireframe can be drawn, then fading out as the line-work fades in. The
+// volume declares the picture and the words (display_config.splash); the
+// engine shows what it is handed and remembers it on the phone so the next
+// visit's card is up before the manifest is.
+//
 // THE TIMELINE, ms from the film's first frame — which is the frame the
 // WHOLE wireframe can be drawn, the instrument standing and the verse set;
 // until then the reader sees the ground alone (Howell 2026-09-29: the rings
@@ -43,6 +56,7 @@ const SVG_NS = 'http://www.w3.org/2000/svg';
 const XLINK_NS = 'http://www.w3.org/1999/xlink';
 const XHTML_NS = 'http://www.w3.org/1999/xhtml';
 const T = {
+  splashMs: 3000,                          // the card's linger, at least
   fadeMs: 800, holdUntil: 2200, stepMs: 1400,
   dissolveAfter: 1500, flipAfter: 2000,   // measured from the drill's start
   quickOutMs: 400                         // a volume with no floors to drill: the sheet simply lifts
@@ -57,6 +71,16 @@ export function overtureShouldPlay() {
   try { if (new URLSearchParams(window.location.search).get('overture') === '0') return false; } catch { /* no address */ }
   return true;
 }
+// The card's record from a volume's declaration: the emblem's own image at
+// the volume's asset base, and the name. Null when the volume declares none.
+export function splashRecord(root, assetBase) {
+  const sp = root?.display_config?.splash;
+  const image = typeof sp?.image === 'string' && sp.image ? sp.image : null;
+  const title = typeof sp?.title === 'string' ? sp.title : '';
+  if (!image && !title) return null;
+  const base = root?.display_config?.detail_sector?.logo_base_path || 'assets/';
+  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title };
+}
 export function overtureScrubWanted() {
   try { return new URLSearchParams(window.location.search).get('overturescrub') === '1'; } catch { return false; }
 }
@@ -70,7 +94,7 @@ const el = (tag, attrs = {}, parent = null) => {
 const path = pts => pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
 const offset = (pts, d) => pts.map((p, i) => { const a = pts[Math.max(0, i - 1)], b = pts[Math.min(pts.length - 1, i + 1)]; const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1; return [p[0] - dy / L * d, p[1] + dx / L * d]; });
 
-export function beginBootOverture({ viewport = null } = {}) {
+export function beginBootOverture({ viewport = null, splash = null } = {}) {
   if (typeof document === 'undefined') return { ready() {}, abort() {} };
   const vp = viewport || getViewportInfo(window.innerWidth, window.innerHeight);
   const cs = getComputedStyle(document.documentElement);
@@ -108,6 +132,26 @@ export function beginBootOverture({ viewport = null } = {}) {
   el('rect', { width: vp.width, height: vp.height, fill: ground }, svg);
   const wire = el('g', { id: 'boot-overture-wire' }, svg);
   wire.style.opacity = '0';
+  let raf = 0, done = false;
+  // ── THE CARD: the emblem and the name, centred, as a phone's own apps open ──
+  let card = null, cardAt = 0;
+  const showCard = record => {
+    if (card || done || !record || (!record.imageUrl && !record.title)) return;
+    card = el('g', { id: 'boot-overture-card' }, svg);
+    const w = vp.width * 0.42, h = w, x = (vp.width - w) / 2, y = vp.height * 0.44 - h / 2;
+    if (record.imageUrl) {
+      const img = el('image', { x: x.toFixed(1), y: y.toFixed(1), width: w.toFixed(1), height: h.toFixed(1), preserveAspectRatio: 'xMidYMid meet' }, card);
+      img.setAttribute('href', record.imageUrl);
+      img.setAttributeNS(XLINK_NS, 'xlink:href', record.imageUrl);
+    }
+    if (record.title) {
+      const t = el('text', { x: (vp.width / 2).toFixed(1), y: (y + h + vp.height * 0.075).toFixed(1), 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, card);
+      t.style.cssText = `font-family:var(--theme-font-detail,'EB Garamond'),Georgia,serif;font-size:${(vp.width * 0.062).toFixed(1)}px;letter-spacing:.04em;fill:${ink}`;
+      t.textContent = record.title;
+    }
+    cardAt = performance.now();
+  };
+  showCard(splash);
   const planes = ['plane-back', 'plane-mid', 'plane-front'].map((cls, i) => { const g = el('g', { class: `plane ${cls}` }, wire); g.setAttribute('transform', scaleAbout(DEPTHS[i])); return g; });
   const band = (g, pts, cls) => { el('path', { class: 'body', d: path(pts), 'stroke-width': bandW.toFixed(2) }, g); el('path', { class: cls, d: path(offset(pts, bandW / 2)) }, g); el('path', { class: cls, d: path(offset(pts, -bandW / 2)) }, g); };
 
@@ -122,7 +166,6 @@ export function beginBootOverture({ viewport = null } = {}) {
   ring(planes[2], 'boot-overture-languages', [], 0, { centerMagnified: true });
   document.body.appendChild(svg);
 
-  let raf = 0, done = false;
   const remove = () => { done = true; cancelAnimationFrame(raf); try { svg.remove(); } catch { /* gone */ } };
 
   // ── STAGE B, at ready: the cast on the chooser rings ───────────────────
@@ -230,14 +273,18 @@ export function beginBootOverture({ viewport = null } = {}) {
       finish() { if (glide) { glide.frameAt(1); drive.setFront(0); glide.settle(); } else { drive.setFront(0); drive.render(); } drive.arrive?.(); }
     };
   };
-  const liftQuickly = () => {   // no floors to drill through: the sheet lifts off the standing app
-    const from = performance.now();
-    const tick = now => { if (done) return; const e = Math.min(1, (now - from) / T.quickOutMs); svg.style.opacity = String(1 - e); if (e < 1) raf = requestAnimationFrame(tick); else remove(); };
+  const liftQuickly = () => {   // no floors to drill through: the sheet lifts off the standing app, once the card has had its linger
+    const from = Math.max(performance.now(), card ? cardAt + T.splashMs : 0);
+    const tick = now => { if (done) return; if (now < from) { raf = requestAnimationFrame(tick); return; } const e = Math.min(1, (now - from) / T.quickOutMs); svg.style.opacity = String(1 - e); if (e < 1) raf = requestAnimationFrame(tick); else remove(); };
     raf = requestAnimationFrame(tick);
   };
+  const cardOpacity = t => { if (card) card.style.opacity = String(Math.max(0, 1 - t / T.fadeMs)); };
 
   return {
     // The instrument stands: dress the wireframe from it, then drill.
+    // The declaration arrived (the first visit, before the card was known):
+    // the card goes up now and lingers from now.
+    splash(record) { showCard(record); },
     ready({ cast = null, drive = null, fetchText = null, scrub = false } = {}) {
       if (done) return;
       fetcher = fetchText;
@@ -266,11 +313,13 @@ export function beginBootOverture({ viewport = null } = {}) {
           if (sig !== ringSig) { ringSig = sig; ringStillSince = now; }
           const still = now - ringStillSince >= 250;
           if (still) tryText();
-          if ((still && textDressed) || now >= readyAt + 3000) { if (!textDressed) tryText(); filmAt = now; }
+          const lingered = !card || now >= cardAt + T.splashMs;
+          if (lingered && ((still && textDressed) || now >= readyAt + 3000)) { if (!textDressed) tryText(); filmAt = now; }
           else { raf = requestAnimationFrame(tick); return; }
         }
         const t = now - filmAt;
         wire.style.opacity = String(Math.min(1, t / T.fadeMs));
+        cardOpacity(t);
         if (t < T.holdUntil) { raf = requestAnimationFrame(tick); return; }
         const ms = t - T.holdUntil;
         render(ms);
@@ -286,7 +335,8 @@ export function beginBootOverture({ viewport = null } = {}) {
 
   // ── THE BENCH SCRUBBER (?overturescrub=1): the film held under a slider ──
   function mountScrub() {
-    const total = T.holdUntil + 2 * T.stepMs;   // the film's clock: 0 at the first frame
+    const lead = card ? T.splashMs : 0;          // the card's linger, before the film's clock starts
+    const total = lead + T.holdUntil + 2 * T.stepMs;
     const bar = document.createElement('div');
     bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:rgba(0,0,0,.6);color:#fff;padding:8px 12px 14px;font:14px Montserrat,sans-serif;pointer-events:auto;';
     bar.innerHTML = `<div style="font:700 20px/1.2 monospace"><span id="ov-ms">0</span> ms <small style="font:12px Montserrat,sans-serif;opacity:.8"> frame <span id="ov-fr">0</span> at 30/s</small></div>
@@ -299,9 +349,11 @@ export function beginBootOverture({ viewport = null } = {}) {
       ms = Math.max(0, Math.min(total, ms)); slider.value = ms;
       bar.querySelector('#ov-ms').textContent = Math.round(ms); bar.querySelector('#ov-fr').textContent = Math.round(ms / (1000 / 30));
       if (!textDressed) { try { dressText(); } catch { /* not yet */ } }   // seats read from layout: safe at any depth
-      wire.style.opacity = String(Math.min(1, ms / T.fadeMs));
-      if (ms < T.holdUntil) { planes.forEach((g, i) => { g.style.visibility = ''; g.setAttribute('transform', scaleAbout(DEPTHS[i])); }); svg.style.opacity = '1'; verses().forEach(t => t.classList.remove('white')); driller.at(0, 0, 0); }
-      else render(ms - T.holdUntil);
+      const t = ms - lead;   // the film's clock; negative while the card lingers
+      wire.style.opacity = String(Math.max(0, Math.min(1, t / T.fadeMs)));
+      cardOpacity(Math.max(0, t));
+      if (t < T.holdUntil) { planes.forEach((g, i) => { g.style.visibility = ''; g.setAttribute('transform', scaleAbout(DEPTHS[i])); }); svg.style.opacity = '1'; verses().forEach(x => x.classList.remove('white')); driller.at(0, 0, 0); }
+      else render(t - T.holdUntil);
     };
     let playing = 0;
     slider.addEventListener('input', () => { cancelAnimationFrame(playing); seek(Number(slider.value)); });
