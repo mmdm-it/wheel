@@ -60,6 +60,17 @@ describe('the stratum renderer keeps its elements (O-185)', () => {
     assert.notDeepEqual(circlesOf(outer), dressed, 'a new dress is a new membership');
     assert.ok(circlesOf(outer)[3].getAttribute('class').includes('is-coming'));
   });
+  it('turning, the seat under the lens swells to the primary\'s peak and its label rides the same scale (O-186)', () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(['a', 'b', 'c', 'd', 'e'], 2, { centerMagnified: true }));
+    const restR = Number(outer.__seats[0].circle.getAttribute('r'));
+    renderStratum(svg, opts(['a', 'b', 'c', 'd', 'e'], 2, { centerMagnified: true, rotating: true }));
+    const inLens = outer.__seats[2];
+    assert.ok(Math.abs(Number(inLens.circle.getAttribute('r')) / restR - 2) < 0.02, 'twice its resting radius, the primary\'s peak');
+    assert.match(inLens.label.getAttribute('transform'), /scale\(2\.000\)/, 'the name grows with it');
+    assert.ok(inLens.label.getAttribute('class').includes('is-passing'));
+    assert.ok(Math.abs(Number(outer.__seats[0].circle.getAttribute('r')) - restR) < 0.5, 'a seat two away rests');
+  });
   it('an identical render is a no-op', () => {
     const svg = container();
     const outer = renderStratum(svg, opts(['a', 'b'], 0));

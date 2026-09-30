@@ -179,9 +179,13 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     show(seat.circle, !inLens);
     show(seat.label, !inLens);
     if (inLens) return;
-    // Passing the lens (labelsBeside only): the primary's bell, on the angle.
+    // Passing the lens: the primary's bell, on the angle — every ring's, not
+    // the basement's alone (O-186, Howell 2026-09-30: the languages "need to
+    // enlarge, have the same action feedback that it does in the primary
+    // stratum"). Same peak (2.0) and width (0.3 of a node spacing) as the
+    // primary's; the label rides the same scale as its circle.
     let magScale = 1;
-    if (labelsBeside && rotating && magAngle != null) {
+    if (rotating && magAngle != null) {
       const dist = Math.abs(node.angle - magAngle);
       magScale = 1 + (LENS_SCALE_PEAK - 1) * Math.exp(-(dist * dist) / (2 * sigma * sigma));
     }
