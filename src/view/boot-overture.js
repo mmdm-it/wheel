@@ -89,25 +89,52 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   let raf = 0, done = false;
   const remove = () => { done = true; cancelAnimationFrame(raf); try { svg.remove(); } catch { /* gone */ } };
 
-  let card = null, cardAt = 0;
+  // THE CARD ARRIVES WHOLE (Howell 2026-09-30: the title "pops on for a few
+  // milliseconds in a different font before it settles on the correct
+  // font"). The face comes from the network and the picture from the cache,
+  // each on its own clock, and a card drawn the frame it is asked for shows
+  // whichever has not arrived in its stand-in. So the card is built at once
+  // but shown only when both are in hand — a frame or two on a return visit
+  // — and no later than a second: past that the title is pinned to the
+  // stand-in face for this visit, so it never swaps under the reader.
+  let card = null, cardAt = 0, cardPending = false;
+  const FACE = "'EB Garamond'", STAND_IN = 'Georgia, serif';
   const showCard = record => {
-    if (card || done || !record || (!record.imageUrl && !record.title)) return;
-    card = el('g', { id: 'boot-overture-card' }, svg);
+    if (card || cardPending || done || !record || (!record.imageUrl && !record.title)) return;
+    cardPending = true;
+    const g = el('g', { id: 'boot-overture-card' });
     const w = vp.width * 0.42, h = w, x = (vp.width - w) / 2, y = vp.height * 0.44 - h / 2;
+    const px = (vp.width * 0.062).toFixed(1);
+    const waits = [];
     if (record.imageUrl) {
-      const img = el('image', { x: x.toFixed(1), y: y.toFixed(1), width: w.toFixed(1), height: h.toFixed(1), preserveAspectRatio: 'xMidYMid meet' }, card);
+      const img = el('image', { x: x.toFixed(1), y: y.toFixed(1), width: w.toFixed(1), height: h.toFixed(1), preserveAspectRatio: 'xMidYMid meet' }, g);
       img.setAttribute('href', record.imageUrl);
       img.setAttributeNS(XLINK_NS, 'xlink:href', record.imageUrl);
+      try { const probe = new Image(); probe.src = record.imageUrl; waits.push(probe.decode().catch(() => {})); } catch { /* no decode: show on the cap */ }
     }
+    let title = null;
     if (record.title) {
-      const t = el('text', { x: (vp.width / 2).toFixed(1), y: (y + h + vp.height * 0.075).toFixed(1), 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, card);
-      t.style.cssText = `font-family:var(--theme-font-detail,'EB Garamond'),Georgia,serif;font-size:${(vp.width * 0.062).toFixed(1)}px;letter-spacing:.04em;fill:${ink}`;
-      t.textContent = record.title;
+      title = el('text', { x: (vp.width / 2).toFixed(1), y: (y + h + vp.height * 0.075).toFixed(1), 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, g);
+      title.style.cssText = `font-family:${FACE},${STAND_IN};font-size:${px}px;letter-spacing:.04em;fill:${ink}`;
+      title.textContent = record.title;
+      try { if (document.fonts?.load) waits.push(document.fonts.load(`${px}px ${FACE}`).catch(() => [])); } catch { /* no font API: show on the cap */ }
     }
-    cardAt = performance.now();
+    let shown = false;
+    const show = () => {
+      if (shown || done) return;
+      shown = true; cardPending = false;
+      let haveFace = true;
+      try { haveFace = !title || document.fonts?.check?.(`${px}px ${FACE}`) !== false; } catch { /* assume it */ }
+      if (title && !haveFace) title.style.fontFamily = STAND_IN;
+      svg.appendChild(g);
+      card = g;
+      cardAt = performance.now();
+    };
+    const cap = setTimeout(show, 1000);
+    Promise.all(waits).then(() => { clearTimeout(cap); show(); }, () => { clearTimeout(cap); show(); });
   };
   showCard(splash);
-  const lingered = now => !card || now >= cardAt + T.splashMs;
+  const lingered = now => !cardPending && (!card || now >= cardAt + T.splashMs);
 
   // ── THE MIGRATION: the app walks its own floors on this clock ──────────
   let driller = null;
