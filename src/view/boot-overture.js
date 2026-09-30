@@ -7,10 +7,11 @@
 //
 //   THE CARD (O-180). The volume's emblem — the artwork itself — and the
 //   volume's name on the ground, at once, as a phone's own apps open. It
-//   holds two seconds at least, and until the instrument stands behind it
-//   (three at first; two on 2026-09-30, after a look at what the phone's
-//   own apps allow themselves: Android caps its icon at a second, and the
-//   one deliberate exception in Howell's set, Netflix, takes about two).
+//   holds a second and a half at least, and until the instrument stands
+//   behind it (three at first; two, then one and a half, on 2026-09-30,
+//   after a look at what the phone's own apps allow themselves: Android
+//   caps its icon at a second, and the one deliberate exception in
+//   Howell's set, Netflix, takes about two).
 //
 //   THE REVEAL. The card fades out and the app is there beneath it, standing
 //   at its language ring — the tertiary stratum, in colour, exactly as the
@@ -22,11 +23,11 @@
 //   and settled at the text. Nothing here is drawn by hand; the app draws
 //   itself.
 //
-//     0 – 2000   the card                       (longer if the instrument is not ready)
-//  2000 – 2200   the card fades; the app stands at the language ring
-//  2200 – 2600   it holds there
-//  2600 – 5400   the migration in, two floors, one motion
-//  5400          the text
+//     0 – 1500   the card                       (longer if the instrument is not ready)
+//  1500 – 1700   the card fades; the app stands at the language ring
+//  1700 – 2100   it holds there
+//  2100 – 4900   the migration in, two floors, one motion
+//  4900          the text
 //
 // The volume declares the card's picture and words (display_config.splash);
 // the engine remembers them on the phone so a return visit's card is up
@@ -39,7 +40,7 @@ import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const XLINK_NS = 'http://www.w3.org/1999/xlink';
 const T = {
-  splashMs: 2000,     // the card's linger, at least (Howell 2026-09-30: two seconds — "Da, da, da, da")
+  splashMs: 1500,     // the card's linger, at least (Howell 2026-09-30: two seconds, then "shorten ... to 1.5 seconds")
   revealMs: 200,      // the card fading off the standing app
   holdMs: 400,        // the app at its language ring
   stepMs: 1400,       // each floor of the migration
