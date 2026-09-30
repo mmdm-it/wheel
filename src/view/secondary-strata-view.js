@@ -52,7 +52,7 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0 } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, legend = null } = {}) {
   if (!svg || !Array.isArray(items)) return null;
   // An EMPTY ring is a real state for the basement (O-126): a reader with no
   // bookmarks yet sees the band and the hollow lens and nothing on them —
@@ -77,7 +77,14 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // Howell 2026-07-22), and a subtree that persists across the filter change
   // blurs as the primary's does.
   const classes = typeof classFor === 'function' ? items.map(it => classFor(it) || '') : null;
-  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift]);
+  // THE MARKS (O-188, Howell 2026-09-30): a seat may wear a glyph before its
+  // name — on the basement's ring, one for a bookmark and one for a landmark,
+  // since every node wears one colour now and the two were telling apart by
+  // colour alone. The legend, in the volume's own words, sits in the open
+  // ground beside the ring. Both are the host's to name; this only draws.
+  const marks = typeof markFor === 'function' ? items.map(it => markFor(it) || '') : null;
+  const legendRows = Array.isArray(legend) ? legend.filter(r => Array.isArray(r) && r[1]) : null;
+  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, legendRows]);
   const pose = JSON.stringify([selectedIndex, Boolean(rotating)]);
   let outer = svg.querySelector(`#${id}`);
   if (outer && outer.dataset.signature === membership && outer.dataset.pose === pose) return outer;
@@ -145,7 +152,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       circle.dataset.index = String(index);
       const label = svgEl('text', { class: 'secondary-strata-label', 'dominant-baseline': 'middle' });
       const raw = typeof labelFor === 'function' ? labelFor(item, false) : item;
-      label.textContent = displayCase(String(raw ?? ''));
+      label.textContent = (marks?.[index] ? `${marks[index]} ` : '') + displayCase(String(raw ?? ''));
       g.appendChild(circle);
       g.appendChild(label);
       return { circle, label, baseClass: `secondary-strata-node${classes?.[index] ? ` ${classes[index]}` : ''}` };
@@ -157,6 +164,16 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     const lensLabel = svgEl('text', { y: '0', 'dominant-baseline': 'middle', class: 'secondary-strata-label is-magnified' });
     g.appendChild(lens);
     g.appendChild(lensLabel);
+    if (legendRows && legendRows.length) {
+      // Two lines in the open ground right of the ring, upright, in the
+      // label's own face; black as the app's other text.
+      const lx = viewport.width * 0.42, ly = viewport.height * 0.66, lh = Math.min(26, Math.max(14, 0.016 * viewport.SSd)) * 1.5;
+      legendRows.forEach(([glyph, word], row) => {
+        const t = svgEl('text', { class: 'secondary-strata-legend', x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
+        t.textContent = `${glyph ? `${glyph} ` : ''}${displayCase(String(word))}`;
+        g.appendChild(t);
+      });
+    }
     outer.__seats = seats;
     outer.__lens = lens;
     outer.__lensLabel = lensLabel;
@@ -231,7 +248,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     lensLabel.setAttribute('text-anchor', pulled ? 'start' : 'middle');
     lensLabel.setAttribute('transform', `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`);
     const magRaw = typeof labelFor === 'function' ? labelFor(items[layout.magIndex], true) : items[layout.magIndex];
-    lensLabel.textContent = displayCase(String(magRaw ?? ''));
+    lensLabel.textContent = (marks?.[layout.magIndex] ? `${marks[layout.magIndex]} ` : '') + displayCase(String(magRaw ?? ''));
     show(lensLabel, true);
   } else {
     show(lensLabel, false);

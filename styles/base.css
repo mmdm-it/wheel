@@ -481,6 +481,14 @@ svg :focus-visible {
    each frame into a viewport-sized layer, as the primary's is. */
 /* Names on a receding ring do not re-hint at every fractional scale. */
 .secondary-strata-label { text-rendering: geometricPrecision; }
+/* The basement's legend (O-188): the label's face and size, the app's text
+   colour, upright in the open ground beside the ring. */
+.secondary-strata-legend {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  pointer-events: none;
+}
 .secondary-strata-band {
   fill: none;
   stroke: var(--color-band);

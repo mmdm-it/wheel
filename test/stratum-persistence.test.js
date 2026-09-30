@@ -71,6 +71,16 @@ describe('the stratum renderer keeps its elements (O-185)', () => {
     assert.ok(inLens.label.getAttribute('class').includes('is-passing'));
     assert.ok(Math.abs(Number(outer.__seats[0].circle.getAttribute('r')) - restR) < 0.5, 'a seat two away rests');
   });
+  it('a seat wears its mark before its name, the lens too, and the legend stands in the volume\'s words (O-188)', () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(['kept', 'hit', 'loose'], 0, { labelsBeside: true, markFor: k => (k === 'kept' ? 'B' : k === 'hit' ? 'L' : null), legend: [['B', 'Bookmarks'], ['L', 'Landmarks'], ['X', '']] }));
+    assert.equal(outer.__seats[0].label.textContent, 'B KEPT');
+    assert.equal(outer.__seats[1].label.textContent, 'L HIT');
+    assert.equal(outer.__seats[2].label.textContent, 'LOOSE', 'no mark, no glyph');
+    assert.equal(outer.__lensLabel.textContent, 'B KEPT', 'the lens carries the mark too');
+    const legend = [...outer.__inner.children].filter(n => (n.getAttribute('class') || '').includes('secondary-strata-legend')).map(n => n.textContent);
+    assert.deepEqual(legend, ['B BOOKMARKS', 'L LANDMARKS'], 'a row without a word is left out');
+  });
   it('an identical render is a no-op', () => {
     const svg = container();
     const outer = renderStratum(svg, opts(['a', 'b'], 0));

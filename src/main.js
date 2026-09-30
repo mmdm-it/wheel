@@ -353,6 +353,17 @@ const seatParts = key => { const at = key.lastIndexOf('@'); return at < 0 ? { id
 const keptSeat = key => { const { id, edition } = seatParts(key); return bookmarksOf(currentVolumeId).find(b => b.id === id && (b.edition ?? null) === edition) || null; };
 const currentEdition = () => dimensionBridge.getSelection()?.translation ?? null;
 const isHit = key => { const { id, edition } = seatParts(key); return hitSeats().some(h => h.id === id && (h.edition ?? null) === edition); };
+// THE MARKS AND THE LEGEND (O-188, Howell 2026-09-30, with a sketch: "a
+// simple legend with a symbol for both bookmarks and well-known verses ...
+// each verse in the focus ring would have this symbol next to it"). Every
+// node wears one colour now (O-164/O-178), so a kept seat and a landmark
+// were telling apart by colour alone. The glyphs are a first cut and will
+// be drawn properly; the words are the tongue's own, from its naming kit
+// (vocabulary.bookmarks, vocabulary.landmarks), and a tongue without them
+// shows no legend rather than an English one.
+const MARK_BOOKMARK = '\u25AE';   // ▮ a ribbon, for now
+const MARK_LANDMARK = '\u25C6';   // ◆ a lozenge, for now
+let basementWords = null;          // { bookmarks, landmarks } in the reader's tongue, or null
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
@@ -374,6 +385,9 @@ const BASEMENT = {
   // Kept: filled. A hit: its own fill, never mistaken for something kept.
   // Loose (arrived with, or dropped this visit): hollow, provisional.
   classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
+  markFor: key => (keptSeat(key) ? MARK_BOOKMARK : isHit(key) ? MARK_LANDMARK : null),
+  legend: () => (basementWords && (basementWords.bookmarks || basementWords.landmarks)
+    ? [[MARK_BOOKMARK, basementWords.bookmarks], [MARK_LANDMARK, basementWords.landmarks]] : null),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; }
 };
@@ -1046,7 +1060,8 @@ const strataBelow = below => { if (strataLayer?.classList) strataLayer.classList
 const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
   mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
-  classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0
+  classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0,
+  markFor: ch.markFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
 });
 
 function renderStack({ keepFront = false } = {}) {
@@ -3922,6 +3937,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // The naming kit is where a tongue's words for its levels live now; the
     // registry lookup stays as the belt for a volume that still has one.
     namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
+    // The basement's legend words ride the same vocabulary (O-188).
+    basementWords = namesMap.vocabulary ? { bookmarks: namesMap.vocabulary.bookmarks || null, landmarks: namesMap.vocabulary.landmarks || null } : null;
     return namesMap;
   };
   refreshNamesMap();
