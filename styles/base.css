@@ -481,14 +481,18 @@ svg :focus-visible {
    each frame into a viewport-sized layer, as the primary's is. */
 /* Names on a receding ring do not re-hint at every fractional scale. */
 .secondary-strata-label { text-rendering: geometricPrecision; }
-/* The basement's legend (O-188): the label's face and size, the app's text
-   colour, upright in the open ground beside the ring. */
+/* The basement's legend (O-188): the label's face and size, upright in the
+   open ground beside the ring; and THE COLOURS that tell a bookmark from a
+   landmark, on the legend's words and on the seats' names alike (Howell
+   2026-09-30: "a dark red and a dark blue"). Nodes keep their one colour. */
 .secondary-strata-legend {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
   pointer-events: none;
 }
+.secondary-strata-label.is-landmark, .secondary-strata-legend.is-landmark { fill: #7f1d1d; }
+.secondary-strata-label.is-bookmark, .secondary-strata-legend.is-bookmark { fill: #16337a; }
 .secondary-strata-band {
   fill: none;
   stroke: var(--color-band);

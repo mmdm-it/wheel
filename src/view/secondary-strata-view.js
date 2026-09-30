@@ -77,11 +77,12 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // Howell 2026-07-22), and a subtree that persists across the filter change
   // blurs as the primary's does.
   const classes = typeof classFor === 'function' ? items.map(it => classFor(it) || '') : null;
-  // THE MARKS (O-188, Howell 2026-09-30): a seat may wear a glyph before its
-  // name — on the basement's ring, one for a bookmark and one for a landmark,
-  // since every node wears one colour now and the two were telling apart by
-  // colour alone. The legend, in the volume's own words, sits in the open
-  // ground beside the ring. Both are the host's to name; this only draws.
+  // THE MARKS (O-188, Howell 2026-09-30): a seat's NAME may wear a class of
+  // its own — on the basement's ring, one for a bookmark and one for a
+  // landmark, each a colour ("any symbol is too busy and we're just going to
+  // have to do it with colors"). The legend, in the volume's own words and
+  // the same colours, sits in the open ground beside the ring. Both are the
+  // host's to name; this only draws.
   const marks = typeof markFor === 'function' ? items.map(it => markFor(it) || '') : null;
   const legendRows = Array.isArray(legend) ? legend.filter(r => Array.isArray(r) && r[1]) : null;
   const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, legendRows]);
@@ -152,10 +153,10 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       circle.dataset.index = String(index);
       const label = svgEl('text', { class: 'secondary-strata-label', 'dominant-baseline': 'middle' });
       const raw = typeof labelFor === 'function' ? labelFor(item, false) : item;
-      label.textContent = (marks?.[index] ? `${marks[index]} ` : '') + displayCase(String(raw ?? ''));
+      label.textContent = displayCase(String(raw ?? ''));
       g.appendChild(circle);
       g.appendChild(label);
-      return { circle, label, baseClass: `secondary-strata-node${classes?.[index] ? ` ${classes[index]}` : ''}` };
+      return { circle, label, mark: marks?.[index] || '' };
     });
     // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is
     // a FIXED point at magA — the reference everything rotates around. Drawn
@@ -168,9 +169,9 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       // Two lines in the open ground right of the ring, upright, in the
       // label's own face; black as the app's other text.
       const lx = viewport.width * 0.42, ly = viewport.height * 0.66, lh = Math.min(26, Math.max(14, 0.016 * viewport.SSd)) * 1.5;
-      legendRows.forEach(([glyph, word], row) => {
-        const t = svgEl('text', { class: 'secondary-strata-legend', x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
-        t.textContent = `${glyph ? `${glyph} ` : ''}${displayCase(String(word))}`;
+      legendRows.forEach(([mark, word], row) => {
+        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
+        t.textContent = displayCase(String(word));
         g.appendChild(t);
       });
     }
@@ -218,14 +219,14 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.setAttribute('x', lx.toFixed(1));
       label.setAttribute('y', ly.toFixed(1));
       label.setAttribute('text-anchor', 'start');
-      label.setAttribute('class', 'secondary-strata-label is-beside');
+      label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
     } else {
       // On the node — the numeral's seat, and the swelling name passing the lens.
       label.setAttribute('x', '0');
       label.setAttribute('y', '0');
       label.setAttribute('text-anchor', 'middle');
-      label.setAttribute('class', `secondary-strata-label${magScale > 1.01 ? ' is-passing' : ''}`);
+      label.setAttribute('class', `secondary-strata-label${magScale > 1.01 ? ' is-passing' : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`);
     }
   });
@@ -248,7 +249,8 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     lensLabel.setAttribute('text-anchor', pulled ? 'start' : 'middle');
     lensLabel.setAttribute('transform', `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`);
     const magRaw = typeof labelFor === 'function' ? labelFor(items[layout.magIndex], true) : items[layout.magIndex];
-    lensLabel.textContent = (marks?.[layout.magIndex] ? `${marks[layout.magIndex]} ` : '') + displayCase(String(magRaw ?? ''));
+    lensLabel.textContent = displayCase(String(magRaw ?? ''));
+    lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}` : ''}`);
     show(lensLabel, true);
   } else {
     show(lensLabel, false);
