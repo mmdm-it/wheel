@@ -11,7 +11,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { parseSeatId, seatOfUtterance, firstVisitSeat } from '../src/volume-configs.js';
-import { buildBibleVerseChain } from '../src/navigation/cousin-builder.js';
 
 // A chart in the volume's own shape: groups are label + 1-based seat ranges.
 const chart = (chapters) => {
