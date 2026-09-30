@@ -47,7 +47,7 @@ function findBibleBook(manifest, bookId) {
  * from verse_count reproduces the old behaviour EXACTLY (proven by test) —
  * phantom seats included, by design: data first, engine tolerant.
  */
-export function buildBibleVerseChain(manifest, { initialVerseId = null, edition = null } = {}) {
+export function buildBibleVerseChain(manifest, { initialVerseId = null, fallbackVerseId = null, edition = null } = {}) {
   // THE SEATS COME FROM THE VOLUME (H-14). This took a legacy chart and
   // expanded it against a manifest that stored chapters; both are gone, and
   // with them the identity-chart fallback that stood behind them.
@@ -72,10 +72,13 @@ export function buildBibleVerseChain(manifest, { initialVerseId = null, edition 
     item => item.testamentKey
   ]);
 
+  // The entry seat; failing that the fallback (the first visit's verse,
+  // O-179); failing both, the first seat.
   let selectedIndex = 0;
-  if (initialVerseId) {
-    const idx = items.findIndex(item => item && item.id === initialVerseId);
-    if (idx >= 0) selectedIndex = idx;
+  for (const wanted of [initialVerseId, fallbackVerseId]) {
+    if (!wanted) continue;
+    const idx = items.findIndex(item => item && item.id === wanted);
+    if (idx >= 0) { selectedIndex = idx; break; }
   }
   return { items, selectedIndex, preserveOrder: true };
 }

@@ -2311,7 +2311,9 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
     // a nicety: a volume behind its wall enumerates only what has migrated, so
     // a hard-coded starting address names something unreachable, and a default
     // that cannot resolve is a blank screen.
-    ...config.buildOptions({ params, startup, arrangements, root }),
+    // The reader's memory rides in so the volume may resume the verse last
+    // read (O-179); volumes that keep no place ignore it.
+    ...config.buildOptions({ params, startup, arrangements, root, memory: recall(resolvedVolume) }),
     debug: debugFlag
   };
   return { volume: resolvedVolume, config, manifest, root, options, supplemental };
