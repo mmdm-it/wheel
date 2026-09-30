@@ -355,8 +355,12 @@ svg :focus-visible {
      when sought, quiet when not (Howell 2026-07-22, tuned by eye). */
   color: #363636;
 }
-#dimension-button:hover,
 #search-button:hover { opacity: 1; }
+/* THE GLOBE HAS ONE BRIGHTNESS, AND A FAINT ONE (Howell 2026-09-30: "I really
+   don't want the globe to call attention to itself, so it should remain at
+   the more faint level and stay there... it can even be slightly dimmer than
+   it has been"). No hover, no pressed state, no swell — one size, one light. */
+#dimension-button, #dimension-button:hover, #dimension-button[aria-pressed="true"] { opacity: 0.7; }
 
 /* ── Search mode: the same room under a different light ───────────────────
    The ground dims for close work (computed from the ACTIVE theme in
@@ -410,10 +414,9 @@ svg :focus-visible {
    a notch rides the transition, a drag sets it per frame with the
    transition off. */
 #dimension-button { transform: translateY(var(--thumb-y, 0px)); touch-action: none; /* the slider owns the vertical drag */ }
-/* ONE SIZE (Howell 2026-09-30: "is the globe still two different sizes? I
-   see no reason for it to be."). It used to swell to 1.08 while a stratum
-   was open; only its opacity marks the state now. */
-#dimension-button[aria-pressed="true"] { opacity: 1; }
+/* ONE SIZE, ONE LIGHT (Howell 2026-09-30): the globe used to swell to 1.08
+   and brighten to full while a stratum was open. Neither now — see the
+   brightness rule beside its base rule above. */
 #dimension-button.is-sliding { transition: opacity 0.15s ease; }
 /* THE PHRASE beside the globe while the thumb is held in the overrun
    (O-128): the volume's own words, in the reader's tongue. */
