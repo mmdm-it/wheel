@@ -252,13 +252,21 @@ export function beginBootOverture({ viewport = null } = {}) {
       // wait for it so everything appears together; but not forever: a text
       // floor with no verse starts three seconds on. Then the fade, the hold,
       // and the drill, on the storyboard's clock.
+      // And the ring itself may still be seating nodes (the cousin chain
+      // arrives with the neighbouring chart): the trace is taken only once
+      // the ring has held still for a quarter second, so the wireframe shows
+      // the ring the reader is about to see and not a moment of its building.
       const readyAt = performance.now();
-      let filmAt = 0;
+      let filmAt = 0, ringSig = '', ringStillSince = 0;
+      const ringSignature = () => { const r = document.getElementById('app'); return r ? `${r.querySelectorAll('.focus-ring-node').length}/${r.querySelectorAll('.focus-ring-label').length}/${document.querySelectorAll('#detail-panel .detail-text-line').length}` : ''; };
       const tick = now => {
         if (done) return;
         if (!filmAt) {
-          tryText();
-          if (textDressed || now >= readyAt + 3000) filmAt = now;
+          const sig = ringSignature();
+          if (sig !== ringSig) { ringSig = sig; ringStillSince = now; }
+          const still = now - ringStillSince >= 250;
+          if (still) tryText();
+          if ((still && textDressed) || now >= readyAt + 3000) { if (!textDressed) tryText(); filmAt = now; }
           else { raf = requestAnimationFrame(tick); return; }
         }
         const t = now - filmAt;
