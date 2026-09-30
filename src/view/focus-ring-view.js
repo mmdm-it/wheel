@@ -1,6 +1,6 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
-import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from '../geometry/focus-ring-geometry.js';
+import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII, bandBounds, PRIMARY_REACH } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
 
 // How far outside the arc the section label sits, in MAGNIFIER RADII — so it
@@ -615,7 +615,10 @@ export class FocusRingView {
   // straight runs are honest lines, not a coil, when the ring recedes (Howell
   // 2026-07-21). Off-screen and clipped at full size.
   #ringPath(arcParams, viewportWindow) {
-    return pointsToPath(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle));
+    // Bounded to what the text floor can show at its deepest recede (O-187):
+    // a window that carries no size (a test's) gets the unbounded path.
+    const bounds = viewportWindow.width && viewportWindow.height ? bandBounds(viewportWindow.width, viewportWindow.height, PRIMARY_REACH) : null;
+    return pointsToPath(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, bounds));
   }
 
   #isNearMagnifier(angle, magnifierAngle, epsilon) {
