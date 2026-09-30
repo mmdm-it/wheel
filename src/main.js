@@ -90,7 +90,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
-import { beginBootOverture, overtureShouldPlay, overtureScrubWanted, splashRecord } from './view/boot-overture.js';
+import { beginBootOverture, overtureShouldPlay, overtureScrubWanted, splashRecord, mark as overtureMark } from './view/boot-overture.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
@@ -3711,6 +3711,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const bootVolumeId = resolveVolumeId(volumeOverride, searchOverride);
   const splashKey = `wheel:splash:${bootVolumeId}`;
   const rememberedSplash = (() => { try { return JSON.parse(localStorage.getItem(splashKey) || 'null'); } catch { return null; } })();
+  if (rememberedSplash) overtureMark('splash-remembered');
   const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
     ? beginBootOverture({ viewport: measureViewport(), splash: rememberedSplash }) : null;
   bootOvertureShown = true;
@@ -3741,6 +3742,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   performance.mark('wheel:manifest-ready');
   {
     const declared = splashRecord(root, config.assetBase);
+    if (declared) overtureMark('splash-declared');
     if (overture && declared) overture.splash(declared);
     try {
       if (declared) localStorage.setItem(splashKey, JSON.stringify(declared));

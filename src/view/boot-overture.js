@@ -53,6 +53,15 @@ export function overtureShouldPlay() {
   try { if (new URLSearchParams(window.location.search).get('overture') === '0') return false; } catch { /* no address */ }
   return true;
 }
+// THE BOOT LOG (?bootlog=1, Howell 2026-09-30, on a cleared cache in the
+// screening room: "there seems to be a bit of a delay before the crown of
+// thorns appears"). Every beat of the boot is marked, and when the overture
+// ends a panel lists them in ms from the first byte of the page, with the
+// fetches the card waited on beside them — so a phone can show what it saw.
+export function bootLogWanted() {
+  try { return new URLSearchParams(window.location.search).get('bootlog') === '1'; } catch { return false; }
+}
+export function mark(name) { try { performance.mark(`wheel:ov:${name}`); } catch { /* no timing API */ } }
 export function overtureScrubWanted() {
   try { return new URLSearchParams(window.location.search).get('overturescrub') === '1'; } catch { return false; }
 }
@@ -86,8 +95,9 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   svg.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:340;pointer-events:auto;';
   el('rect', { width: vp.width, height: vp.height, fill: ground }, svg);
   document.body.appendChild(svg);
+  mark('sheet-up');
   let raf = 0, done = false;
-  const remove = () => { done = true; cancelAnimationFrame(raf); try { svg.remove(); } catch { /* gone */ } };
+  const remove = () => { done = true; cancelAnimationFrame(raf); mark('end'); try { svg.remove(); } catch { /* gone */ } if (bootLogWanted()) { try { mountBootLog(); } catch (err) { console.warn('[wheel] boot log', err); } } };
 
   // THE CARD ARRIVES WHOLE (Howell 2026-09-30: the title "pops on for a few
   // milliseconds in a different font before it settles on the correct
@@ -102,6 +112,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   const showCard = record => {
     if (card || cardPending || done || !record || (!record.imageUrl && !record.title)) return;
     cardPending = true;
+    mark('card-asked');
     const g = el('g', { id: 'boot-overture-card' });
     const w = vp.width * 0.42, h = w, x = (vp.width - w) / 2, y = vp.height * 0.44 - h / 2;
     const px = (vp.width * 0.062).toFixed(1);
@@ -118,7 +129,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
         const loaded = new Promise(res => { probe.onload = () => res(); probe.onerror = () => res(); });
         probe.src = record.imageUrl;
         if (probe.complete) loaded.then(() => {});
-        waits.push(Promise.race([loaded, probe.decode ? probe.decode().catch(() => {}) : loaded]));
+        waits.push(Promise.race([loaded, probe.decode ? probe.decode().catch(() => {}) : loaded]).then(() => mark('image-loaded')));
       } catch { /* no picture probe: show on the cap */ }
     }
     let title = null;
@@ -126,7 +137,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       title = el('text', { x: (vp.width / 2).toFixed(1), y: (y + h + vp.height * 0.075).toFixed(1), 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, g);
       title.style.cssText = `font-family:${FACE},${STAND_IN};font-size:${px}px;letter-spacing:.04em;fill:${ink}`;
       title.textContent = record.title;
-      try { if (document.fonts?.load) waits.push(document.fonts.load(`${px}px ${FACE}`).catch(() => [])); } catch { /* no font API: show on the cap */ }
+      try { if (document.fonts?.load) waits.push(document.fonts.load(`${px}px ${FACE}`).catch(() => []).then(() => mark('face-ready'))); } catch { /* no font API: show on the cap */ }
     }
     let shown = false;
     const show = () => {
@@ -138,8 +149,9 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       svg.appendChild(g);
       card = g;
       cardAt = performance.now();
+      mark(haveFace ? 'card-shown' : 'card-shown-stand-in-face');
     };
-    const cap = setTimeout(show, 1000);
+    const cap = setTimeout(() => { mark('card-cap-hit'); show(); }, 1000);
     Promise.all(waits).then(() => { clearTimeout(cap); show(); }, () => { clearTimeout(cap); show(); });
   };
   showCard(splash);
@@ -175,8 +187,9 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   const render = t => {
     svg.style.opacity = String(Math.max(0, 1 - t / T.revealMs));
     const ms = t - T.revealMs - T.holdMs;
-    if (ms < 0) driller.stand(); else driller.at(ms);
+    if (ms < 0) driller.stand(); else { if (!migrating) { migrating = true; mark('migration-start'); } driller.at(ms); }
   };
+  let migrating = false;
   const filmMs = T.revealMs + T.holdMs + 2 * T.stepMs;
   const liftQuickly = () => {   // no floors: the card lifts off the standing app after its linger
     const tick = now => {
@@ -198,6 +211,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       if (done) return;
       if (!drive) { liftQuickly(); return; }
       driller = makeDriller(drive);
+      mark('ready');
       if (scrub) { driller.stand(); mountScrub(); return; }
       // The floors are left at the text until the card is about to lift —
       // the app boots to the text (O-143) and anything reading it in the
@@ -208,7 +222,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       const tick = now => {
         if (done) return;
         if (!filmAt) {
-          if (lingered(now) && now >= readyAt + 300) filmAt = now;
+          if (lingered(now) && now >= readyAt + 300) { filmAt = now; mark('film-start'); }
           else { raf = requestAnimationFrame(tick); return; }
         }
         const t = now - filmAt;
@@ -222,6 +236,48 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     // are left exactly as they were moved — nothing is settled here.
     abort() { if (!done) remove(); }
   };
+
+  // ── THE BOOT LOG PANEL (?bootlog=1): what the phone saw, in ms from the page's first byte ──
+  function mountBootLog() {
+    const t0 = performance.getEntriesByName('wheel:html-start')[0]?.startTime ?? 0;
+    const rel = t => Math.round(t - t0);
+    const lines = [];
+    const marks = performance.getEntriesByType('mark').filter(m => m.name.startsWith('wheel:')).map(m => ({ name: m.name.replace(/^wheel:(ov:)?/, ''), t: rel(m.startTime) }));
+    const phases = window.__wheelBootPhases;
+    if (phases) {
+      const boot = phases.htmlToBoot ?? 0;
+      marks.push({ name: 'boot-start', t: boot }, { name: 'manifest-ready', t: boot + (phases.manifest ?? 0) },
+        { name: 'chain-built', t: boot + (phases.manifest ?? 0) + (phases.chainBuild ?? 0) }, { name: 'render-done', t: phases.total ?? 0 });
+    }
+    marks.sort((a, b) => a.t - b.t);
+    lines.push('BOOT LOG  (ms from first byte)', '');
+    for (const m of marks) lines.push(`${String(m.t).padStart(6)}  ${m.name}`);
+    lines.push('', 'FETCHES  start→end  size');
+    const want = [['page', /\/(\?|$|index\.html)/], ['app.js', /dist\/app\.js/], ['declaration', /declaration\.json/], ['volume', /volume\.json/], ['charts bundle', /charts\/[^/]+\/all\.json/], ['spine bundle', /spine\/all\.json/], ['fonts css', /fonts\.googleapis/], ['garamond', /gstatic.*(garamond|ebgaramond)/i], ['crown png', /crown_of_thorns\.png|torah_scroll\.png/], ['text', /\/text\//]];
+    const nav = performance.getEntriesByType('navigation')[0];
+    if (nav) lines.push(`${String(rel(nav.startTime)).padStart(6)}→${String(rel(nav.responseEnd)).padEnd(6)} page  ${Math.round((nav.transferSize || 0) / 1024)}k`);
+    const res = performance.getEntriesByType('resource');
+    for (const [label, re] of want.slice(1)) {
+      const hits = res.filter(r => re.test(r.name));
+      if (!hits.length) { lines.push(`     —          ${label}  (not fetched)`); continue; }
+      const first = hits.reduce((a, b) => (a.startTime < b.startTime ? a : b));
+      const last = hits.reduce((a, b) => (a.responseEnd > b.responseEnd ? a : b));
+      const kb = Math.round(hits.reduce((n, r) => n + (r.transferSize || 0), 0) / 1024);
+      const cached = hits.every(r => r.transferSize === 0 && r.decodedBodySize > 0);
+      lines.push(`${String(rel(first.startTime)).padStart(6)}→${String(rel(last.responseEnd)).padEnd(6)} ${label}${hits.length > 1 ? ` ×${hits.length}` : ''}  ${cached ? 'cache' : kb + 'k'}`);
+    }
+    const conn = navigator.connection;
+    lines.push('', `${navigator.userAgent.replace(/^.*\((.*?)\).*$/, '$1').slice(0, 40)}${conn ? `  ${conn.effectiveType || ''} ${conn.rtt ? conn.rtt + 'ms' : ''}` : ''}`);
+    const box = document.createElement('pre');
+    box.id = 'boot-log';
+    box.textContent = lines.join('\n');
+    box.style.cssText = 'position:fixed;left:8px;top:8px;right:8px;max-height:72vh;overflow:auto;z-index:2147483000;margin:0;padding:10px 12px;background:rgba(0,0,0,.82);color:#fff;font:11px/1.45 ui-monospace,Menlo,monospace;white-space:pre;border-radius:8px;pointer-events:auto;';
+    const close = document.createElement('button');
+    close.textContent = '✕'; close.style.cssText = 'position:absolute;top:4px;right:6px;background:none;border:0;color:#fff;font:16px sans-serif;padding:4px 8px';
+    close.addEventListener('click', () => box.remove());
+    box.appendChild(close);
+    document.body.appendChild(box);
+  }
 
   // ── THE BENCH SCRUBBER (?overturescrub=1): the film held under a slider ──
   function mountScrub() {
