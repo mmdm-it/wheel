@@ -985,16 +985,23 @@ function setPrimaryVisual(scale, blurPx, away = null) {
 }
 function setStratumVisual(el, scale, blurPx, opacity = 1, offsetX = 0, offsetY = 0) {
   if (!el) return;
-  // The recede TRANSFORM rides the inner <g>; the BLUR + opacity ride the
-  // outer <svg> — WebKit honors a filter on an <svg>, not on a <g> (Howell
-  // 2026-07-27, the strata half of the iOS blur fix).
-  const inner = el.querySelector?.('.stratum-inner') || el;
+  // THE RECEDE RIDES THE OUTER SVG AS A CSS TRANSFORM (O-185), beside the
+  // blur and the opacity that already did — WebKit honors a filter on an
+  // <svg>, not on a <g> (Howell 2026-07-27, the strata half of the iOS blur
+  // fix). The transform used to be an SVG attribute on the inner group,
+  // which re-rasterises the whole ring — long names and all — at every
+  // fractional scale, under a blur recomputed on the fresh raster: the
+  // shimmer Howell saw on the edition ring during the overture's migration.
+  // A CSS transform on the element the browser already composites scales a
+  // finished bitmap on the GPU, as the HTML verse panel is scaled — which is
+  // why the verse never shimmered.
   const still = Math.abs(offsetX) < 0.5 && Math.abs(offsetY) < 0.5;
   if (Math.abs(scale - 1) < 0.001 && blurPx < 0.01 && opacity > 0.999 && still) {   // at rest — and 2.6× is not rest
-    inner.removeAttribute('transform'); el.style.filter = ''; el.style.opacity = ''; return;
+    el.style.transform = ''; el.style.transformOrigin = ''; el.style.filter = ''; el.style.opacity = ''; return;
   }
-  const slide = still ? '' : `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) `;
-  inner.setAttribute('transform', `${slide}${scaleAboutCentre(scale)}`);
+  const slide = still ? '' : `translate(${offsetX.toFixed(1)}px, ${offsetY.toFixed(1)}px) `;
+  el.style.transformOrigin = `${viewport.width / 2}px ${viewport.height / 2}px`;
+  el.style.transform = `${slide}scale(${scale})`;
   el.style.filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
   el.style.opacity = String(opacity);
 }
@@ -1039,7 +1046,7 @@ const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0
 });
 
-function renderStack() {
+function renderStack({ keepFront = false } = {}) {
   if (strataFront < 0) {
     // THE BASEMENT IS FRONT (O-126): the primary has left, the choosers are
     // not in play, and the basement's ring stands alone with nothing behind.
@@ -1070,6 +1077,10 @@ function renderStack() {
   CHOOSERS.forEach((ch, ci) => {
     const pos = ci + 1;
     if (pos > strataFront) { hideStratum(strataLayer, ch.id); return; }
+    // A ring under a finger is the finger's (O-185): repainting it at its
+    // committed seat mid-drag snapped it home for a frame at every node
+    // crossing, which read as a flicker.
+    if (keepFront && pos === strataFront) return;
     const items = ch.items();
     // A receded plane shows its PREVIEW selection when one is running, so the
     // edition under the lens tracks the language being turned behind it.
@@ -1186,9 +1197,17 @@ function previewFromLens(ch, items, centerIndex) {
   } else {
     strataPreview = { ...(strataPreview || {}), edition: item };
   }
-  renderStack();          // receded planes re-stock and re-seat
-  previewPrimary(strataPreview); // and the text behind the glass follows
+  // The ring under the finger paints in THIS frame; the receded planes and
+  // the verse behind the glass follow in the next (O-185), so a node
+  // crossing costs the turning ring nothing.
+  if (previewFollow) cancelAnimationFrame(previewFollow);
+  previewFollow = requestAnimationFrame(() => {
+    previewFollow = 0;
+    renderStack({ keepFront: true });   // receded planes re-stock and re-seat
+    previewPrimary(strataPreview);      // and the text behind the glass follows
+  });
 }
+let previewFollow = 0;
 
 // Ease the ring from wherever it settled (maybe out in the overrun) back to the
 // nearest real node — the SPRINGBACK that makes the last link go taut, and the
@@ -1253,12 +1272,19 @@ if (strataLayer) {
       strataDrag.center - (dx + dy) * STRATA_DRAG_SENSITIVITY / strataDrag.spacing,
       strataDrag.items.length
     );
-    renderFrontStratumAt(strataDrag.center);
+    // One paint per frame, at the latest centre (O-185): a fast finger sends
+    // several moves a frame, and each used to paint the ring.
+    if (!strataDrag.raf) strataDrag.raf = requestAnimationFrame(() => {
+      const d = strataDrag; if (!d) return;
+      d.raf = 0;
+      renderFrontStratumAt(d.center);
+    });
   });
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>
     strataLayer.addEventListener(type, event => {
       if (!strataDrag) return;
       const { items, center, moved } = strataDrag;
+      if (strataDrag.raf) cancelAnimationFrame(strataDrag.raf);
       strataDrag = null;
       const ch = activeChooser();
       // Tap (no drag) on a node → glide THAT node into the lens; a drag → snap

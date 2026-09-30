@@ -1,0 +1,74 @@
+// THE RING KEEPS ITS ELEMENTS (O-185, Howell 2026-09-30: the chooser rings
+// "not nearly as smooth as the primary stratum focus ring"). The stratum
+// renderer used to rebuild every circle and label whenever the centre moved,
+// which is every pointer move of a drag. It now keeps them for as long as
+// the seats are the same and only re-poses them; a change of seats rebuilds.
+// These cells hold that with a container that remembers what was appended.
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import { installBrowserGlobals } from './helpers/browser-globals.mjs';
+import { renderStratum } from '../src/view/secondary-strata-view.js';
+import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
+
+installBrowserGlobals('?volume=bible');
+const viewport = getViewportInfo(420, 800);
+
+// A container that answers querySelector('#id') with the element it holds —
+// the one thing the mock DOM's container does not do.
+function container() {
+  const held = new Map();
+  return {
+    held,
+    appendChild(n) { held.set(n.getAttribute('id'), n); },
+    querySelector(sel) { return sel.startsWith('#') ? held.get(sel.slice(1)) || null : null; }
+  };
+}
+const circlesOf = outer => outer.__seats.map(s => s.circle);
+const opts = (items, selectedIndex, extra = {}) => ({ id: 'ring', viewport, items, selectedIndex, labelFor: x => x, ...extra });
+
+describe('the stratum renderer keeps its elements (O-185)', () => {
+  it('turning the ring re-poses the same circles rather than making new ones', () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(['a', 'b', 'c', 'd'], 0));
+    const before = circlesOf(outer);
+    const cx0 = before[2].getAttribute('cx');
+    const again = renderStratum(svg, opts(['a', 'b', 'c', 'd'], 1.4, { rotating: true }));
+    assert.equal(again, outer, 'the same stratum');
+    assert.deepEqual(circlesOf(again), before, 'the same four circles');
+    assert.notEqual(before[2].getAttribute('cx'), cx0, 'moved to the new centre');
+  });
+  it('settled, the seat under the lens hides and the lens wears its name; turning, every seat shows and the lens is empty', () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(['a', 'b', 'c'], 1));
+    const seats = outer.__seats;
+    assert.equal(seats[1].circle.getAttribute('display'), 'none', 'the seat in the lens is hidden');
+    assert.equal(outer.__lensLabel.textContent, 'B');
+    assert.ok(!outer.__lens.getAttribute('class').includes('lens-empty'));
+    renderStratum(svg, opts(['a', 'b', 'c'], 1.3, { rotating: true }));
+    assert.equal(seats[1].circle.getAttribute('display'), null, 'every seat shows while turning');
+    assert.ok(outer.__lens.getAttribute('class').includes('lens-empty'));
+    assert.equal(outer.__lensLabel.getAttribute('display'), 'none');
+  });
+  it('a change of seats, or of their dress, rebuilds', () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(['a', 'b', 'c'], 0));
+    const before = circlesOf(outer);
+    renderStratum(svg, opts(['a', 'b', 'c', 'd'], 0));
+    assert.notDeepEqual(circlesOf(outer).slice(0, 3), before, 'new seats, new circles');
+    const dressed = circlesOf(outer);
+    renderStratum(svg, opts(['a', 'b', 'c', 'd'], 0, { classFor: k => (k === 'd' ? 'is-coming' : '') }));
+    assert.notDeepEqual(circlesOf(outer), dressed, 'a new dress is a new membership');
+    assert.ok(circlesOf(outer)[3].getAttribute('class').includes('is-coming'));
+  });
+  it('an identical render is a no-op', () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(['a', 'b'], 0));
+    const pose = outer.dataset.pose, sig = outer.dataset.signature;
+    const cx = outer.__seats[0].circle.getAttribute('cx');
+    outer.__seats[0].circle.setAttribute('cx', '999');   // a mark the renderer would erase if it re-posed
+    renderStratum(svg, opts(['a', 'b'], 0));
+    assert.equal(outer.__seats[0].circle.getAttribute('cx'), '999', 'untouched');
+    assert.equal(outer.dataset.pose, pose); assert.equal(outer.dataset.signature, sig);
+    void cx;
+  });
+});

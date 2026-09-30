@@ -60,145 +60,183 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // ask for this: an empty language plane is an error, not a state.
   if (!items.length && !allowEmpty) return null;
 
-  // Reuse a STABLE group per id — and if NOTHING about this render differs
-  // from what the group already shows, leave its children entirely alone.
-  // iOS Safari does not reliably apply a CSS `filter` to freshly-inserted
-  // SVG content: a receded stratum whose children were rebuilt in the same
-  // beat its blur was set stayed SHARP on iPhone (the settle's re-render —
-  // Howell 2026-07-22, second sighting). The primary blurs fine because its
-  // subtree persists across the filter change; with the signature skip, a
-  // settled stratum's subtree persists the same way.
+  // THE RING KEEPS ITS ELEMENTS (O-185, Howell 2026-09-30: the chooser rings
+  // "not nearly as smooth as the primary stratum focus ring"). This used to
+  // throw away every circle and every label whenever anything about the
+  // render differed — and while a finger turns the ring, the centre differs
+  // on every pointer move, so the whole ring was rebuilt, text shaping and
+  // all, several times a frame. The primary never did that: it keeps its
+  // node elements and moves them. So does this now. Two signatures: the
+  // MEMBERSHIP (which seats, in which dress, on which viewport) rebuilds the
+  // subtree; the POSE (where the centre is, whether the ring is turning)
+  // only re-seats what is there.
+  //
+  // The membership skip is also what keeps iOS honest: Safari does not
+  // reliably apply a CSS `filter` to freshly-inserted SVG content (a receded
+  // stratum rebuilt in the beat its blur was set stayed SHARP on iPhone —
+  // Howell 2026-07-22), and a subtree that persists across the filter change
+  // blurs as the primary's does.
   const classes = typeof classFor === 'function' ? items.map(it => classFor(it) || '') : null;
-  const signature = JSON.stringify([items, selectedIndex, mirrored, Boolean(centerMagnified), Boolean(rotating), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift]);
-  // A nested <svg> per stratum, NOT a bare <g> (Howell 2026-07-27): iOS/WebKit
-  // honors a CSS `filter` on an <svg> element (as on the #app root and the HTML
-  // verse panel) but SILENTLY DROPS it on a <g>. So the recede BLUR rides this
-  // outer <svg>; the recede TRANSFORM rides the inner <g>. The element persists
-  // across renders (the signature skip) so the filter sticks — WebKit won't
-  // re-apply a filter to freshly-inserted SVG content.
+  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift]);
+  const pose = JSON.stringify([selectedIndex, Boolean(rotating)]);
   let outer = svg.querySelector(`#${id}`);
-  if (outer && outer.dataset.signature === signature) return outer;
-  let g;
-  if (outer) {
-    g = outer.querySelector('.stratum-inner');
-    while (g.firstChild) g.removeChild(g.firstChild);
-  } else {
-    outer = svgEl('svg', { id, class: 'secondary-strata' });
-    // A TOP-LEVEL svg overlaying the strata-layer div (all strata stacked at
-    // inset:0). WebKit blurs an svg root but not a <g> or a nested svg, so each
-    // stratum is its own root here.
-    outer.style.position = 'absolute';
-    outer.style.left = '0';
-    outer.style.top = '0';
-    outer.style.width = '100%';
-    outer.style.height = '100%';
-    outer.style.overflow = 'visible'; // clip at the strata layer, as the bare <g> did
-    g = svgEl('g', { class: 'stratum-inner' });
-    outer.appendChild(g);
-    svg.appendChild(outer);
-  }
-  // A ring with the primary's manners says so on its root, for the styles:
-  // its lens label is larger, not bolder (Howell, 2026-09-14).
-  outer.classList?.toggle?.('labels-beside', Boolean(labelsBeside));
-  outer.setAttribute('x', '0');
-  outer.setAttribute('y', '0');
-  outer.setAttribute('width', String(viewport.width));
-  outer.setAttribute('height', String(viewport.height));
-  outer.dataset.signature = signature;
-
+  if (outer && outer.dataset.signature === membership && outer.dataset.pose === pose) return outer;
   const layout = computeStrataLayout(viewport, Math.max(1, items.length), selectedIndex, mirrored, { lensShift });
   if (!items.length) layout.nodes = [];   // the band and the lens, no seats
   const nodeR = viewport.SSd * NODE_RADIUS_RATIO;
   const magR = viewport.SSd * MAGNIFIER_RADIUS_RATIO;
+  let seats = outer && outer.dataset.signature === membership ? outer.__seats : null;
+  let g;
+  if (seats) {
+    g = outer.__inner;
+  } else {
+    if (outer) {
+      g = outer.querySelector('.stratum-inner') || outer.__inner;
+      while (g.firstChild) g.removeChild(g.firstChild);
+    } else {
+      // A nested <svg> per stratum, NOT a bare <g> (Howell 2026-07-27):
+      // iOS/WebKit honors a CSS `filter` on an <svg> element (as on the #app
+      // root and the HTML verse panel) but SILENTLY DROPS it on a <g>. So the
+      // recede BLUR rides this outer <svg>, and so does the recede TRANSFORM
+      // now (O-185: a CSS transform on the element the browser already
+      // composites, so a receding plane is a bitmap scaled on the GPU rather
+      // than a subtree re-rasterised every frame).
+      outer = svgEl('svg', { id, class: 'secondary-strata' });
+      // A TOP-LEVEL svg overlaying the strata-layer div (all strata stacked at
+      // inset:0). WebKit blurs an svg root but not a <g> or a nested svg, so
+      // each stratum is its own root here.
+      outer.style.position = 'absolute';
+      outer.style.left = '0';
+      outer.style.top = '0';
+      outer.style.width = '100%';
+      outer.style.height = '100%';
+      outer.style.overflow = 'visible'; // clip at the strata layer, as the bare <g> did
+      g = svgEl('g', { class: 'stratum-inner' });
+      outer.appendChild(g);
+      svg.appendChild(outer);
+    }
+    outer.__inner = g;
+    // A ring with the primary's manners says so on its root, for the styles:
+    // its lens label is larger, not bolder (Howell, 2026-09-14).
+    outer.classList?.toggle?.('labels-beside', Boolean(labelsBeside));
+    outer.setAttribute('x', '0');
+    outer.setAttribute('y', '0');
+    outer.setAttribute('width', String(viewport.width));
+    outer.setAttribute('height', String(viewport.height));
 
-  // The band is the sprocket-chain centreline (arc + straight tangents),
-  // shared with the primary. A mirrored stratum reflects it across the
-  // horizontal centreline, which turns the vertical-UP exit into vertical-DOWN
-  // and the SE tangent into NE — the mirror this stratum needs (Howell
-  // 2026-07-21). This matches the mirrored nodes from computeStrataLayout.
-  let bandPts = standardBandCenterline(viewport);
-  if (mirrored) bandPts = bandPts.map(([x, y]) => [x, viewport.height - y]);
-  g.appendChild(svgEl('path', {
-    d: pointsToPath(bandPts),
-    class: 'secondary-strata-band',
-    'stroke-width': (layout.arc.radius * BAND_THICKNESS_RATIO).toFixed(1)
-  }));
+    // The band is the sprocket-chain centreline (arc + straight tangents),
+    // shared with the primary. A mirrored stratum reflects it across the
+    // horizontal centreline, which turns the vertical-UP exit into vertical-DOWN
+    // and the SE tangent into NE — the mirror this stratum needs (Howell
+    // 2026-07-21). This matches the mirrored nodes from computeStrataLayout.
+    let bandPts = standardBandCenterline(viewport);
+    if (mirrored) bandPts = bandPts.map(([x, y]) => [x, viewport.height - y]);
+    g.appendChild(svgEl('path', {
+      d: pointsToPath(bandPts),
+      class: 'secondary-strata-band',
+      'stroke-width': (layout.arc.radius * BAND_THICKNESS_RATIO).toFixed(1)
+    }));
 
-  // The rotating nodes — all uniform, flowing THROUGH the lens. While turning,
-  // EVERY node is drawn (they stream through the empty lens, as on the primary);
-  // once settled, the node in the lens (magIndex) is omitted and the filled
+    // One circle and one label per seat, in seat order, made once. The
+    // label's TEXT is the seat's own and never changes with the pose; where
+    // it sits and how it is anchored does.
+    seats = items.map((item, index) => {
+      const circle = svgEl('circle', { class: `secondary-strata-node${classes?.[index] ? ` ${classes[index]}` : ''}` });
+      circle.dataset.index = String(index);
+      const label = svgEl('text', { class: 'secondary-strata-label', 'dominant-baseline': 'middle' });
+      const raw = typeof labelFor === 'function' ? labelFor(item, false) : item;
+      label.textContent = displayCase(String(raw ?? ''));
+      g.appendChild(circle);
+      g.appendChild(label);
+      return { circle, label, baseClass: `secondary-strata-node${classes?.[index] ? ` ${classes[index]}` : ''}` };
+    });
+    // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is
+    // a FIXED point at magA — the reference everything rotates around. Drawn
+    // last, so a node sliding through passes behind it.
+    const lens = svgEl('circle', { cx: layout.magnifier.x.toFixed(1), cy: layout.magnifier.y.toFixed(1), r: magR.toFixed(1) });
+    const lensLabel = svgEl('text', { y: '0', 'dominant-baseline': 'middle', class: 'secondary-strata-label is-magnified' });
+    g.appendChild(lens);
+    g.appendChild(lensLabel);
+    outer.__seats = seats;
+    outer.__lens = lens;
+    outer.__lensLabel = lensLabel;
+    outer.dataset.signature = membership;
+  }
+
+  // THE POSE: every seat to its place for this centre. While turning, EVERY
+  // node is drawn (they stream through the empty lens, as on the primary);
+  // settled, the node in the lens (magIndex) is hidden and the filled
   // lodestar shows it instead, so nothing floats where the lens is anchored.
   const sigma = getNodeSpacing(viewport) * LENS_SCALE_SIGMA;
   const magAngle = layout.magnifier?.angle ?? null;
+  const show = (el, on) => { if (on) el.removeAttribute('display'); else el.setAttribute('display', 'none'); };
+  const posed = new Set();
   layout.nodes.forEach(node => {
-    if (!rotating && node.index === layout.magIndex) return;
+    const seat = seats[node.index];
+    if (!seat) return;
+    posed.add(node.index);
+    const inLens = !rotating && node.index === layout.magIndex;
+    show(seat.circle, !inLens);
+    show(seat.label, !inLens);
+    if (inLens) return;
     // Passing the lens (labelsBeside only): the primary's bell, on the angle.
     let magScale = 1;
     if (labelsBeside && rotating && magAngle != null) {
       const dist = Math.abs(node.angle - magAngle);
       magScale = 1 + (LENS_SCALE_PEAK - 1) * Math.exp(-(dist * dist) / (2 * sigma * sigma));
     }
-    const circle = svgEl('circle', {
-      cx: node.x.toFixed(1), cy: node.y.toFixed(1), r: (nodeR * magScale).toFixed(1),
-      class: `secondary-strata-node${classes?.[node.index] ? ` ${classes[node.index]}` : ''}`
-    });
-    circle.dataset.index = String(node.index);
-    g.appendChild(circle);
+    seat.circle.setAttribute('cx', node.x.toFixed(1));
+    seat.circle.setAttribute('cy', node.y.toFixed(1));
+    seat.circle.setAttribute('r', (nodeR * magScale).toFixed(1));
     const rotDeg = (node.angle * 180) / Math.PI + 180;
-    const raw = typeof labelFor === 'function' ? labelFor(items[node.index], false) : items[node.index];
-    let label;
+    const label = seat.label;
     if (labelsBeside && magScale <= 1.01) {
       // Beside the node, left-aligned: the name starts just past the node and runs on.
       const lx = node.x + Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
       const ly = node.y + Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
-      label = svgEl('text', {
-        x: lx.toFixed(1), y: ly.toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle',
-        class: 'secondary-strata-label is-beside',
-        transform: `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`
-      });
+      label.setAttribute('x', lx.toFixed(1));
+      label.setAttribute('y', ly.toFixed(1));
+      label.setAttribute('text-anchor', 'start');
+      label.setAttribute('class', 'secondary-strata-label is-beside');
+      label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
     } else {
       // On the node — the numeral's seat, and the swelling name passing the lens.
-      label = svgEl('text', {
-        x: '0', y: '0', 'text-anchor': 'middle', 'dominant-baseline': 'middle',
-        class: `secondary-strata-label${magScale > 1.01 ? ' is-passing' : ''}`,
-        transform: `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`
-      });
+      label.setAttribute('x', '0');
+      label.setAttribute('y', '0');
+      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('class', `secondary-strata-label${magScale > 1.01 ? ' is-passing' : ''}`);
+      label.setAttribute('transform', `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`);
     }
-    label.textContent = displayCase(String(raw ?? ''));
-    g.appendChild(label);
   });
+  seats.forEach((seat, index) => { if (!posed.has(index)) { show(seat.circle, false); show(seat.label, false); } });
 
-  // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is a FIXED point
-  // at magA — the reference everything rotates around. It never moves. WHILE
-  // ROTATING it is an EMPTY hollow lens the nodes stream through (like the
-  // primary's); SETTLED it fills with the item nearest the lens (magIndex),
-  // magnified. Drawn last, so a node sliding through passes behind it.
-  const mag = layout.magnifier;
-  const magRotDeg = (mag.angle * 180) / Math.PI + 180;
+  // The lens: while ROTATING an EMPTY hollow lens the nodes stream through
+  // (like the primary's); SETTLED it fills with the item nearest the lens
+  // (magIndex), magnified.
+  const lens = outer.__lens, lensLabel = outer.__lensLabel;
   const magClass = !rotating && classes?.[layout.magIndex] ? ` ${classes[layout.magIndex]}` : '';
-  g.appendChild(svgEl('circle', {
-    cx: mag.x.toFixed(1), cy: mag.y.toFixed(1), r: magR.toFixed(1),
-    class: 'secondary-strata-node is-magnified' + (rotating || !items.length ? ' lens-empty' : '') + magClass
-  }));
+  lens.setAttribute('class', 'secondary-strata-node is-magnified' + (rotating || !items.length ? ' lens-empty' : '') + magClass);
   if (!rotating && items.length) {
+    const mag = layout.magnifier;
+    const magRotDeg = (mag.angle * 180) / Math.PI + 180;
     // Centred for a central magnifier (the tertiary's) and for a ring with the
     // primary's manners (the basement's), else start-anchored and pulled
     // inward off the left edge (the secondary's, hard against it).
     const pulled = !centerMagnified && !labelsBeside;
-    const magLabel = svgEl('text', {
-      x: (pulled ? -magR * MAG_LABEL_SPAN_PULL : 0).toFixed(1), y: '0',
-      'text-anchor': pulled ? 'start' : 'middle', 'dominant-baseline': 'middle',
-      class: 'secondary-strata-label is-magnified',
-      transform: `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`
-    });
+    lensLabel.setAttribute('x', (pulled ? -magR * MAG_LABEL_SPAN_PULL : 0).toFixed(1));
+    lensLabel.setAttribute('text-anchor', pulled ? 'start' : 'middle');
+    lensLabel.setAttribute('transform', `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`);
     const magRaw = typeof labelFor === 'function' ? labelFor(items[layout.magIndex], true) : items[layout.magIndex];
-    magLabel.textContent = displayCase(String(magRaw ?? ''));
-    g.appendChild(magLabel);
+    lensLabel.textContent = displayCase(String(magRaw ?? ''));
+    show(lensLabel, true);
+  } else {
+    show(lensLabel, false);
   }
+  outer.dataset.pose = pose;
 
   // Already appended on create; a reused stratum stays put so its DOM order
   // (and thus z-order: secondary below, tertiary above) holds without
-  // re-inserting. Return the OUTER <svg> — the blur rides it; callers pass it
-  // to setStratumVisual, which drives the transform on the inner <g>.
+  // re-inserting. Return the OUTER <svg> — the blur and the recede transform
+  // ride it (setStratumVisual).
   return outer;
 }

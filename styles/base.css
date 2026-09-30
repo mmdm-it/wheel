@@ -475,6 +475,12 @@ svg :focus-visible {
 
 /* The secondary strata (D.3) — identical colors, band, and font to the
    primary strata (Howell 2026-07-21). Color placeholder retired. */
+/* A stratum recedes as a composited layer (O-185): its scale is a CSS
+   transform on this element, so the browser keeps a bitmap of the ring and
+   scales that, instead of re-rasterising every name at every frame. */
+.secondary-strata { will-change: transform; }
+/* Names on a receding ring do not re-hint at every fractional scale. */
+.secondary-strata-label { text-rendering: geometricPrecision; }
 .secondary-strata-band {
   fill: none;
   stroke: var(--color-band);
