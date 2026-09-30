@@ -110,7 +110,16 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       const img = el('image', { x: x.toFixed(1), y: y.toFixed(1), width: w.toFixed(1), height: h.toFixed(1), preserveAspectRatio: 'xMidYMid meet' }, g);
       img.setAttribute('href', record.imageUrl);
       img.setAttributeNS(XLINK_NS, 'xlink:href', record.imageUrl);
-      try { const probe = new Image(); probe.src = record.imageUrl; waits.push(probe.decode().catch(() => {})); } catch { /* no decode: show on the cap */ }
+      // The picture is "in hand" when it has LOADED (a cached one fires at
+      // once); decode is asked for too, but a browser that defers decoding
+      // (a background tab) must not hold the card past the load.
+      try {
+        const probe = new Image();
+        const loaded = new Promise(res => { probe.onload = () => res(); probe.onerror = () => res(); });
+        probe.src = record.imageUrl;
+        if (probe.complete) loaded.then(() => {});
+        waits.push(Promise.race([loaded, probe.decode ? probe.decode().catch(() => {}) : loaded]));
+      } catch { /* no picture probe: show on the cap */ }
     }
     let title = null;
     if (record.title) {
