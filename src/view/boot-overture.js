@@ -165,7 +165,10 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
         if (ms < T.stepMs) { ensure(1); const e = easeIn(e1); glide.frameAt(e); drive.thumb?.(2 - e); }
         else { ensure(2); const e = easeOut(e2); glide.frameAt(e); drive.thumb?.(1 - e); }
       },
-      finish() { if (glide) { glide.frameAt(1); drive.setFront(0); glide.settle(); } else { drive.setFront(0); drive.render(); } drive.thumb?.(0); drive.arrive?.(); }
+      // The thumb is set home and the hand taken off BEFORE the settle: the
+      // settle un-presses the globe, and that step down must ride the
+      // globe's own transition, which the sliding hand suppresses.
+      finish() { if (glide) glide.frameAt(1); drive.thumb?.(0); drive.unslide?.(); drive.setFront(0); if (glide) glide.settle(); else drive.render(); drive.arrive?.(); }
     };
   };
   // The film from the card's last full frame: the reveal, the hold, the migration.

@@ -4516,7 +4516,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         // around independently"): its position IS the stratum, set per frame
         // with the snap transition off, and left at the text at the end.
         thumb: p => { if (!dimensionButton) return; dimensionButton.classList.add('is-sliding'); try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`); } catch (_) { /* stub DOM */ } },
-        arrive: () => { bootOvertureLive = null; dimensionButton?.classList?.remove('is-sliding'); arriveAt(1, 0); }
+        // The hand comes off before the settle, so the globe's step down from
+        // its pressed size rides its own transition instead of jumping
+        // (Howell 2026-09-30: "it seems to jump to a slightly smaller
+        // radius" at the end).
+        unslide: () => dimensionButton?.classList?.remove('is-sliding'),
+        arrive: () => { bootOvertureLive = null; arriveAt(1, 0); }
       } : null
     });
   }
