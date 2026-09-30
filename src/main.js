@@ -4511,7 +4511,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         setFront: f => { strataFront = f; },
         render: () => renderStack(),
         glide: (a, b) => { bootOvertureGliding = true; try { return beginGlide(a, b); } finally { bootOvertureGliding = false; } },
-        arrive: () => { bootOvertureLive = null; arriveAt(1, 0); }
+        // The globe rides the migration as it rides a drag (Howell
+        // 2026-09-30: it was "out of sync during the drill in and jumps
+        // around independently"): its position IS the stratum, set per frame
+        // with the snap transition off, and left at the text at the end.
+        thumb: p => { if (!dimensionButton) return; dimensionButton.classList.add('is-sliding'); try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`); } catch (_) { /* stub DOM */ } },
+        arrive: () => { bootOvertureLive = null; dimensionButton?.classList?.remove('is-sliding'); arriveAt(1, 0); }
       } : null
     });
   }

@@ -121,12 +121,15 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       step = want;
     };
     return {
-      stand() { if (standing) return; step = 0; glide = null; drive.setFront(2); drive.render(); standing = true; },   // at the language ring, still
+      stand() { if (standing) return; step = 0; glide = null; drive.setFront(2); drive.render(); drive.thumb?.(2); standing = true; },   // at the language ring, still
+      // The globe (the slider's thumb) rides the walk exactly as the floors
+      // do: two notches up at the language ring, home at the text.
       at(ms) {
         const e1 = Math.max(0, Math.min(1, ms / T.stepMs)), e2 = Math.max(0, Math.min(1, (ms - T.stepMs) / T.stepMs));
-        if (ms < T.stepMs) { ensure(1); glide.frameAt(easeIn(e1)); } else { ensure(2); glide.frameAt(easeOut(e2)); }
+        if (ms < T.stepMs) { ensure(1); const e = easeIn(e1); glide.frameAt(e); drive.thumb?.(2 - e); }
+        else { ensure(2); const e = easeOut(e2); glide.frameAt(e); drive.thumb?.(1 - e); }
       },
-      finish() { if (glide) { glide.frameAt(1); drive.setFront(0); glide.settle(); } else { drive.setFront(0); drive.render(); } drive.arrive?.(); }
+      finish() { if (glide) { glide.frameAt(1); drive.setFront(0); glide.settle(); } else { drive.setFront(0); drive.render(); } drive.thumb?.(0); drive.arrive?.(); }
     };
   };
   // The film from the card's last full frame: the reveal, the hold, the migration.
