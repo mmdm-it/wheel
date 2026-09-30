@@ -985,23 +985,26 @@ function setPrimaryVisual(scale, blurPx, away = null) {
 }
 function setStratumVisual(el, scale, blurPx, opacity = 1, offsetX = 0, offsetY = 0) {
   if (!el) return;
-  // THE RECEDE RIDES THE OUTER SVG AS A CSS TRANSFORM (O-185), beside the
-  // blur and the opacity that already did — WebKit honors a filter on an
-  // <svg>, not on a <g> (Howell 2026-07-27, the strata half of the iOS blur
-  // fix). The transform used to be an SVG attribute on the inner group,
-  // which re-rasterises the whole ring — long names and all — at every
-  // fractional scale, under a blur recomputed on the fresh raster: the
-  // shimmer Howell saw on the edition ring during the overture's migration.
-  // A CSS transform on the element the browser already composites scales a
-  // finished bitmap on the GPU, as the HTML verse panel is scaled — which is
-  // why the verse never shimmered.
+  // The recede TRANSFORM rides the inner <g>; the BLUR + opacity ride the
+  // outer <svg> — WebKit honors a filter on an <svg>, not on a <g> (Howell
+  // 2026-07-27, the strata half of the iOS blur fix).
+  //
+  // NOT A CSS TRANSFORM ON THE OUTER SVG (O-185 tried it, 2026-09-30, and
+  // O-187 withdrew it the same afternoon). Composited, the ring is rasterised
+  // at the scale it is shown at, and a ring flying in from six times scale
+  // is a layer no phone can tile: Howell's screenshots showed the band in
+  // fragments, the edition ring caught at twice its size with no band at
+  // all. The attribute re-rasterises the ring each frame into a
+  // viewport-sized layer, which is what the primary does and what the phone
+  // can afford; the names' shimmer is answered by geometricPrecision.
+  const inner = el.querySelector?.('.stratum-inner') || el.__inner || el;
   const still = Math.abs(offsetX) < 0.5 && Math.abs(offsetY) < 0.5;
   if (Math.abs(scale - 1) < 0.001 && blurPx < 0.01 && opacity > 0.999 && still) {   // at rest — and 2.6× is not rest
-    el.style.transform = ''; el.style.transformOrigin = ''; el.style.filter = ''; el.style.opacity = ''; return;
+    inner.removeAttribute('transform'); el.style.transform = ''; el.style.transformOrigin = ''; el.style.filter = ''; el.style.opacity = ''; return;
   }
-  const slide = still ? '' : `translate(${offsetX.toFixed(1)}px, ${offsetY.toFixed(1)}px) `;
-  el.style.transformOrigin = `${viewport.width / 2}px ${viewport.height / 2}px`;
-  el.style.transform = `${slide}scale(${scale})`;
+  const slide = still ? '' : `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) `;
+  inner.setAttribute('transform', `${slide}${scaleAboutCentre(scale)}`);
+  el.style.transform = ''; el.style.transformOrigin = '';
   el.style.filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
   el.style.opacity = String(opacity);
 }

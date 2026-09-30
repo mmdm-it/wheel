@@ -97,10 +97,10 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       // A nested <svg> per stratum, NOT a bare <g> (Howell 2026-07-27):
       // iOS/WebKit honors a CSS `filter` on an <svg> element (as on the #app
       // root and the HTML verse panel) but SILENTLY DROPS it on a <g>. So the
-      // recede BLUR rides this outer <svg>, and so does the recede TRANSFORM
-      // now (O-185: a CSS transform on the element the browser already
-      // composites, so a receding plane is a bitmap scaled on the GPU rather
-      // than a subtree re-rasterised every frame).
+      // recede BLUR rides this outer <svg>; the recede TRANSFORM rides the
+      // inner <g> (O-185 moved it to a CSS transform on this element and
+      // O-187 moved it back the same day: composited, a ring flying in from
+      // six times scale is a layer no phone can tile).
       outer = svgEl('svg', { id, class: 'secondary-strata' });
       // A TOP-LEVEL svg overlaying the strata-layer div (all strata stacked at
       // inset:0). WebKit blurs an svg root but not a <g> or a nested svg, so
