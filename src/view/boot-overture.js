@@ -24,10 +24,10 @@
 //   itself.
 //
 //     0 – 1500   the card                       (longer if the instrument is not ready)
-//  1500 – 1700   the card fades; the app stands at the language ring
-//  1700 – 2100   it holds there
-//  2100 – 4900   the migration in, two floors, one motion
-//  4900          the text
+//  1500 – 1850   the card fades; the app stands at the language ring
+//  1850 – 2250   it holds there
+//  2250 – 5050   the migration in, two floors, one motion
+//  5050          the text
 //
 // The volume declares the card's picture and words (display_config.splash);
 // the engine remembers them on the phone so a return visit's card is up
@@ -41,7 +41,7 @@ const SVG_NS = 'http://www.w3.org/2000/svg';
 const XLINK_NS = 'http://www.w3.org/1999/xlink';
 const T = {
   splashMs: 1500,     // the card's linger, at least (Howell 2026-09-30: two seconds, then "shorten ... to 1.5 seconds")
-  revealMs: 200,      // the card fading off the standing app
+  revealMs: 350,      // the card fading off the standing app (Howell 2026-09-30: 200, then 350)
   holdMs: 400,        // the app at its language ring
   stepMs: 1400,       // each floor of the migration
   quickOutMs: 400     // a volume with no floors to migrate through: the card simply lifts
