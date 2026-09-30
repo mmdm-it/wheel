@@ -224,8 +224,9 @@ const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 // the wrap carries the reader from the text back out to the languages. That
 // IS O-37 — "nesting and depth agree, narrowing inward" — so a comment
 // describing the outward order contradicted the ruling it was implementing.
-// `cycleStrata` decrements for exactly this reason, and
-// test/boot-smoke.test.js walks the real button 2 → 1 → 0 → 2.
+// `cycleStrata` decrements for exactly this reason (and never dips into the
+// basement, O-182), and test/boot-smoke.test.js walks the real button
+// 2 → 1 → 0 → 2.
 //
 // Each press pushes the stack one layer deeper — the front is full size,
 // one layer back recedes to 0.4, two layers back to 0.2 — each receding one
@@ -1501,11 +1502,18 @@ function arriveAt(from, to) {
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
   placeThumb();
 }
-// THE TAP'S ROUND (Howell, 2026-09-14): languages, editions, the text, the
-// basement, and round to the languages — one floor down per tap, the
-// basement included, the wrap from the bottom back to the top.
+// THE TAP'S ROUND (O-182, Howell 2026-09-30, retiring the round of
+// 2026-09-14 that took the basement in on the way): a tap never goes DOWN
+// into the basement — that is the slide's, below the fence (O-147) — so from
+// the text a tap goes all the way up to the languages, then one floor down
+// per tap: languages, editions, the text, and up again. From the basement a
+// tap simply returns the reader to the text, at the verse under the
+// basement's lens, a bookmark or a favourite (goToStratum's ascent already
+// carries it: jumpToChosen).
 function cycleStrata() {
-  goToStratum(strataFront <= minStrataFront() ? maxStrataFront() : strataFront - 1);
+  if (strataFront < 0) goToStratum(0);
+  else if (strataFront === 0) goToStratum(maxStrataFront());
+  else goToStratum(strataFront - 1);
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }

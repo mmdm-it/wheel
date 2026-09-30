@@ -96,12 +96,12 @@ describe('the tap\'s round from the text (O-143)', () => {
     assert.equal(D.front(), 0, 'the Primary (O-143)');
     assert.notEqual(D.here(), null);
   });
-  it('one tap goes down to the basement, the next rounds to the languages, then in to the editions and home', async () => {
-    await cycle(); assert.equal(D.front(), -1, 'the basement');
+  it('a tap from the text goes all the way up to the languages, then in to the editions and home (O-182)', async () => {
     await cycle(); assert.equal(D.front(), 2, 'the languages');
     assert.notEqual(D.here(), null, 'the filter stays on: a sideways move, not a launch question');
     await cycle(); assert.equal(D.front(), 1, 'the editions');
     await cycle(); assert.equal(D.front(), 0, 'home');
+    await cycle(); assert.equal(D.front(), 2, 'and up again — never down into the basement');
   });
 });
 // The SECOND bug of the day, guarded precisely rather than by smoke: boot used
