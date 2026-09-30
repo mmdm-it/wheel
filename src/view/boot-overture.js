@@ -10,9 +10,13 @@
 // the code for the app to see how that page is drawn and then just replicate
 // that math").
 //
-// THE TIMELINE, ms from the first frame (the drill waits for the instrument):
-//     0 –  800   the line-work fades in on the ground
-//   800 – 2200   it holds (longer if the instrument is not yet ready)
+// THE TIMELINE, ms from the film's first frame — which is the frame the
+// WHOLE wireframe can be drawn, the instrument standing and the verse set;
+// until then the reader sees the ground alone (Howell 2026-09-29: the rings
+// must not appear before their labels — "they should appear together. We
+// don't want too many separate elements"):
+//     0 –  800   the line-work fades in on the ground, all of it at once
+//   800 – 2200   it holds
 //  2200 – 3600   step one: the language ring leaves, the edition ring comes forward
 //  3600 – 5000   step two: the edition ring leaves, the text arrives
 //  3700 – 5000   the wireframe dissolves over the live app
@@ -118,10 +122,7 @@ export function beginBootOverture({ viewport = null } = {}) {
   ring(planes[2], 'boot-overture-languages', [], 0, { centerMagnified: true });
   document.body.appendChild(svg);
 
-  const t0 = performance.now();
-  let raf = 0, done = false, stage = 'in';
-  const fadeIn = now => { if (done || stage !== 'in') return; wire.style.opacity = String(Math.min(1, (now - t0) / T.fadeMs)); if (now - t0 < T.fadeMs) raf = requestAnimationFrame(fadeIn); };
-  raf = requestAnimationFrame(fadeIn);
+  let raf = 0, done = false;
   const remove = () => { done = true; cancelAnimationFrame(raf); try { svg.remove(); } catch { /* gone */ } };
 
   // ── STAGE B, at ready: the cast on the chooser rings ───────────────────
@@ -239,30 +240,31 @@ export function beginBootOverture({ viewport = null } = {}) {
     // The instrument stands: dress the wireframe from it, then drill.
     ready({ cast = null, drive = null, fetchText = null, scrub = false } = {}) {
       if (done) return;
-      stage = 'ready';
       fetcher = fetchText;
-      wire.style.opacity = '1';
       try { dressRings(cast); } catch (err) { console.warn('[wheel] overture rings', err); }
       const tryText = () => { if (!textDressed) { try { dressText(); } catch { /* next frame */ } } };
       tryText();
       if (!drive) { liftQuickly(); return; }
       driller = makeDriller(drive);
       if (scrub) { mountScrub(); return; }
-      // The drill waits for the hold, for a beat after ready, and for the
-      // verse to stand (it sets its type a moment after render-done — fonts,
-      // the wrap) — but not forever: a text floor with no verse drills all
-      // the same, three seconds on.
+      // The film starts the frame the whole wireframe stands — the verse sets
+      // its type a moment after render-done (fonts, the wrap), and the rings
+      // wait for it so everything appears together; but not forever: a text
+      // floor with no verse starts three seconds on. Then the fade, the hold,
+      // and the drill, on the storyboard's clock.
       const readyAt = performance.now();
-      let drillAt = 0;
+      let filmAt = 0;
       const tick = now => {
         if (done) return;
-        tryText();
-        if (!drillAt) {
-          const held = now >= t0 + T.holdUntil && now >= readyAt + 600;
-          if (held && (textDressed || now >= readyAt + 3000)) drillAt = now;
+        if (!filmAt) {
+          tryText();
+          if (textDressed || now >= readyAt + 3000) filmAt = now;
           else { raf = requestAnimationFrame(tick); return; }
         }
-        const ms = now - drillAt;
+        const t = now - filmAt;
+        wire.style.opacity = String(Math.min(1, t / T.fadeMs));
+        if (t < T.holdUntil) { raf = requestAnimationFrame(tick); return; }
+        const ms = t - T.holdUntil;
         render(ms);
         if (ms < 2 * T.stepMs) raf = requestAnimationFrame(tick);
         else { driller.finish(); remove(); }
