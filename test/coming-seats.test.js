@@ -61,11 +61,19 @@ describe('placeholder seats on the edition ring (O-184)', () => {
     assert.equal(ring.length, 1);
     assert.equal(ring[0], bare.comingSoonKey, 'the shelf dresses only a real ring');
   });
+  it('a seated edition the shelf forgot is appended, never lost', () => {
+    let state = { language: 'english', edition: 'ENG' };
+    const store = { getState: () => state, dispatch: () => {}, subscribe: () => () => {} };
+    const bridge = createDimensionBridge({ store, translationsMeta: { translations: TRANSLATIONS, coming: { english: ['King James'] } } });
+    assert.deepEqual(bridge.translationsOf('english').map(k => (bridge.isComing(k) ? '~' : k)), ['~', 'ENG']);
+  });
   it('THE DECLARED SHELF REACHES THE BRIDGE through the volume config (the field is the loader\'s, not the file\'s)', async () => {
     // The first build read `volume.display_config` where the loader exposes
     // `displayConfig`, and every cell above passed because they hand the
     // shelf straight to the bridge. This one walks the real path: the
-    // fixture volume's supplemental meta, as the boot builds it.
+    // fixture volume's supplemental meta, as the boot builds it. LAST in the
+    // file: installing the browser globals lifts the proofread gate for
+    // every cell after it, which changes what is servable.
     const { installBrowserGlobals } = await import('./helpers/browser-globals.mjs');
     installBrowserGlobals('?volume=bible&proofread=true');
     const { volumeConfigs } = await import('../src/volume-configs.js');
@@ -76,11 +84,5 @@ describe('placeholder seats on the edition ring (O-184)', () => {
     const shelves = Object.keys(declared).filter(k => !k.startsWith('_'));
     if (!shelves.length) return;   // a fixture declaring no shelf has nothing to carry
     for (const lang of shelves) assert.deepEqual(translationsMeta.coming[lang], declared[lang], `${lang}: the shelf as declared`);
-  });
-  it('a seated edition the shelf forgot is appended, never lost', () => {
-    let state = { language: 'english', edition: 'ENG' };
-    const store = { getState: () => state, dispatch: () => {}, subscribe: () => () => {} };
-    const bridge = createDimensionBridge({ store, translationsMeta: { translations: TRANSLATIONS, coming: { english: ['King James'] } } });
-    assert.deepEqual(bridge.translationsOf('english').map(k => (bridge.isComing(k) ? '~' : k)), ['~', 'ENG']);
   });
 });
