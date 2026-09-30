@@ -126,6 +126,10 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       // (a background tab) must not hold the card past the load.
       try {
         const probe = new Image();
+        // The crown goes to the head of the queue: on a first visit it leaves
+        // with the boot's whole wave of fetches (O-183) and the card waits on
+        // it alone (Howell's 4G log: 320 ms sharing the pipe).
+        try { probe.fetchPriority = 'high'; } catch { /* no hint: the browser's own order */ }
         const loaded = new Promise(res => { probe.onload = () => res(); probe.onerror = () => res(); });
         probe.src = record.imageUrl;
         if (probe.complete) loaded.then(() => {});
