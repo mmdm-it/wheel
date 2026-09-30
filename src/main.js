@@ -3715,6 +3715,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
     ? beginBootOverture({ viewport: measureViewport(), splash: rememberedSplash }) : null;
   bootOvertureShown = true;
+  // A FIRST VISIT'S CARD GOES UP THE MOMENT THE MANIFEST IS PARSED (O-181),
+  // not when the boot has also gathered its bundles: on Howell's phone over
+  // 4G the manifest was in hand at 0.4 s and the card waited until 2.3 s.
+  if (overture && !rememberedSplash) {
+    const cfg = volumeConfigs[bootVolumeId];
+    document.addEventListener('wheel:volume-early', e => {
+      const declared = splashRecord(e.detail, cfg?.assetBase);
+      if (declared) { overtureMark('splash-early'); overture.splash(declared); }
+    }, { once: true });
+  }
   if (playSplash) {
     if (svg) svg.style.opacity = '0';
     // Hide the copyright as early as possible — it is an index.html div,

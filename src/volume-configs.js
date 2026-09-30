@@ -111,6 +111,9 @@ const volumeConfigs = {
         base: BIBLE_VOLUME_BASE,
         version: BIBLE_VOLUME_VERSION,
         firstEdition: chooseFirst,
+        // The manifest, the moment it is parsed and before the bundles are
+        // waited for — the boot card listens (O-181).
+        onVolume: v => { try { document.dispatchEvent(new CustomEvent('wheel:volume-early', { detail: v })); } catch { /* no DOM */ } },
         fetchJson: async path => {
           const response = await fetch(path);
           if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);

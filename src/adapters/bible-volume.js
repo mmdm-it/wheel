@@ -34,12 +34,18 @@ import { projectContainers } from '../core/unit-source.js';
 // that must not happen is a botched increment looking finished. (The
 // REQUIRED_PER_UNIT set that stated this died with `loadUnit`, O-65.)
 
-export async function loadBibleVolume({ base, version, fetchJson, firstEdition = null } = {}) {
+export async function loadBibleVolume({ base, version, fetchJson, firstEdition = null, onVolume = null } = {}) {
   if (typeof fetchJson !== 'function') {
     throw new Error('bible-volume: needs a `fetchJson(path)` — the transport is the caller\'s');
   }
   const at = parts => resolvePath({ base, version, ...parts });
   const volume = await fetchJson(at({ kind: 'volume' }));
+  // THE MANIFEST IS IN HAND BEFORE THE BUNDLES ARE (O-181): whoever asked to
+  // hear of it hears now — the boot card reads the volume's splash from it
+  // and does not wait the megabyte of charts the loader fetches next
+  // (Howell's phone, 2026-09-30: the card at 2.3 s on a cleared cache, the
+  // manifest itself there at 0.4 s).
+  if (typeof onVolume === 'function') { try { onVolume(volume); } catch (err) { console.warn('[bible-volume] onVolume', err); } }
 
   const editions = (volume?.editions || []).filter(e => e?.code);
   if (!editions.length) {
