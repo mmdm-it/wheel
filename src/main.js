@@ -3556,7 +3556,7 @@ let currentVolumeId = null;
 let gatewayReturnContext = null;
 let interactionsWired = false;
 let firstBootDone = false; // the boot splash plays only on the initial load
-let bootOvertureShown = false; // the overture covers the first load only (O-177)
+let bootOvertureShown = false; // the overture covers the first load only (O-181)
 // The overture in progress, and whether the glide being begun is its own.
 // Any OTHER glide — the reader's slider, a tap, a test driving the floors —
 // ends the overture on the spot, and it leaves the floors to whoever moved
@@ -3694,9 +3694,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     && volumeConfigs[resolveVolumeId(volumeOverride, searchOverride)]?.bootSplash === true
     && bootSplashShouldPlay();
   firstBootDone = true;
-  // THE BOOT OVERTURE (O-177): the wheel's line-work draws itself while the
-  // volume loads and hands off the moment the instrument is ready. Not under
-  // the first-visit reveal, not on a gateway transit, not on a re-boot.
+  // THE BOOT OVERTURE (O-181): the card while the volume loads, then the
+  // app's own migration in from its language ring. Not under the first-visit
+  // reveal, not on a gateway transit, not on a re-boot.
   // THE CARD (O-180): the volume's emblem and name from the first frame. On a
   // return visit the card is remembered on the phone and is up before the
   // manifest is; on the first it goes up the moment the declaration arrives.
@@ -4497,17 +4497,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // used to be the one exception to a launch funnel that no longer exists.
   showVersion();
   performance.mark('wheel:render-done');
-  // THE OVERTURE'S DRILL IS THE APP'S OWN (O-177): the wireframe is dressed
-  // from the instrument now standing, and the live floors then glide under
-  // it exactly as they do when the globe is pressed.
+  // THE OVERTURE'S MIGRATION IS THE APP'S OWN (O-181): behind the card the
+  // instrument stands at its language ring, and the live floors then glide
+  // in exactly as they do when the slider is drawn.
   if (overture) {
     bootOvertureLive = overture;
     overture.ready({
-      cast: root?.display_config?.overture || null,
-      fetchText: url => fetch(url).then(r => (r.ok ? r.text() : null)),
       scrub: overtureScrubWanted(),
-      // The drill is the slider's own glide (O-126), driven by the overture's
-      // clock instead of the thumb; a volume with no floors gets no drill.
+      // The migration is the slider's own glide (O-126), driven by the
+      // overture's clock instead of the thumb; a volume with no floors gets
+      // the card alone.
       drive: (dimensionAvailable() && maxStrataFront() >= 2) ? {
         setFront: f => { strataFront = f; },
         render: () => renderStack(),
