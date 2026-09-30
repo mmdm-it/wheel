@@ -80,13 +80,39 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   // showing the id, which would be the filesystem speaking to the reader.
   const languages = [...new Set(editions.map(e => e.language).filter(Boolean))];
   const namesByLanguage = {};
-  await Promise.all(languages.map(async lang => {
+  // THE WAVE (O-183, Howell's boot log from the screening room over 4G,
+  // 2026-09-30): every fetch the boot needs that depends on nothing but the
+  // manifest leaves NOW, together — the names, the shelves, the first
+  // edition's chart bundle, the spine bundle, the ranks, the hits. They used
+  // to leave one stage after another, each paying a round trip the phone
+  // could not hide: a 400 ms hole between the manifest and the bundles, and
+  // two more trips after them. The awaits below keep the order the code
+  // needs; the network no longer waits on it.
+  const firstCode = typeof firstEdition === 'function' ? firstEdition(volume) : firstEdition;
+  const first = editions.find(e => e.code === firstCode) || null;
+  const namesWave = Promise.all(languages.map(async lang => {
     try {
       namesByLanguage[lang] = await fetchJson(at({ kind: 'names', lang }));
     } catch {
       namesByLanguage[lang] = null;      // a missing tongue is unnamed, not fatal
     }
   }));
+  const shelves = new Map();
+  const shelvesWave = Promise.all(editions.map(async edition => {
+    try {
+      shelves.set(edition.code, await fetchJson(at({ kind: 'chartIndex', edition: edition.code })));
+    } catch {
+      shelves.set(edition.code, null);
+    }
+  }));
+  const fetchBundle = edition => fetchJson(at({ kind: 'chartBundle', edition: edition.code }))
+    .then(b => ((b && b.edition === edition.code && b.charts && typeof b.charts === 'object') ? b.charts : null), () => null);
+  const firstBundleWave = first ? fetchBundle(first) : null;
+  const spineBundleWave = fetchJson(at({ kind: 'spineBundle' }))
+    .then(b => ((b && b.spines && typeof b.spines === 'object') ? b.spines : null), () => null);
+  const ranksWave = fetchJson(at({ kind: 'ranks' })).then(r => ((r && typeof r.leaves === 'object') ? r.leaves : {}), () => ({}));
+  const hitsWave = fetchJson(at({ kind: 'hits' })).then(h => (Array.isArray(h?.leaves) ? h.leaves.filter(x => typeof x === 'string') : []), () => []);
+  await namesWave;
 
   // CHARTS ARE IN HAND BEFORE ANYTHING WALKS (O-45's move 2, which survives).
   //
@@ -106,14 +132,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   // seats draw from. Divisions and groups ride it unchanged (H-26/H-29).
   // The stale-shelf tripwire this block used to carry died with the shared
   // list: there is no second enumeration left for an index to disagree with.
-  const shelves = new Map();
-  await Promise.all(editions.map(async edition => {
-    try {
-      shelves.set(edition.code, await fetchJson(at({ kind: 'chartIndex', edition: edition.code })));
-    } catch {
-      shelves.set(edition.code, null);
-    }
-  }));
+  await shelvesWave;   // the shelves left with the wave above
 
   // The books, per edition, in the edition's own order — and the book→edition
   // map that lets a caller name a book without saying whose it is (book ids
@@ -152,12 +171,8 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   // `ready(code)` and gets a promise; `allReady()` says when every shelf is
   // stocked. With no first edition named, every edition is awaited, which
   // is what the suites and the fixtures expect.
-  const loadEdition = async edition => {
-    let bundle = null;
-    try {
-      const b = await fetchJson(at({ kind: 'chartBundle', edition: edition.code }));
-      bundle = (b && b.edition === edition.code && b.charts && typeof b.charts === 'object') ? b.charts : null;
-    } catch { bundle = null; }
+  const loadEdition = async (edition, bundleWave = null) => {
+    const bundle = await (bundleWave || fetchBundle(edition));
     await Promise.all((bookMetaByEdition.get(edition.code) || []).map(async book => {
       const bundled = bundle?.[book.id];
       if (bundled && bundled.book === book.id) { charts.set(`${book.id}|${edition.code}`, bundled); return; }
@@ -177,13 +192,22 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     loaded.add(edition.code);
   };
   const loaded = new Set();
-  const editionLoads = new Map(editions.map(e => [e.code, loadEdition(e)]));
-  const firstCode = typeof firstEdition === 'function' ? firstEdition(volume) : firstEdition;
-  const first = editions.find(e => e.code === firstCode) || null;
+  // THE FIRST EDITION HAS THE PIPE TO ITSELF (O-183): its bundle left with
+  // the wave; the other editions' bundles leave only once it has landed, so
+  // a megabyte the reader is not waiting for does not slow the one they are.
+  // `ready(code)` still hands out each edition's promise; it simply begins
+  // later. With no first edition named, every edition loads together, which
+  // is what the suites and the fixtures expect.
+  const editionLoads = new Map();
   if (first) {
-    await editionLoads.get(first.code);
+    const firstLoad = loadEdition(first, firstBundleWave);
+    editionLoads.set(first.code, firstLoad);
+    const behind = firstLoad.catch(() => {});
+    for (const e of editions) if (e.code !== first.code) editionLoads.set(e.code, behind.then(() => loadEdition(e)));
+    await firstLoad;
     for (const [code, p] of editionLoads) if (code !== first.code) p.catch(() => { /* reported inside */ });
   } else {
+    for (const e of editions) editionLoads.set(e.code, loadEdition(e));
     await Promise.all(editionLoads.values());
   }
 
@@ -192,11 +216,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   // remains W-96's superset: every utterance any edition attests in that
   // shard, in no edition's sequence.
   const spines = new Map();
-  let spineBundle = null;
-  try {
-    const b = await fetchJson(at({ kind: 'spineBundle' }));
-    spineBundle = (b && b.spines && typeof b.spines === 'object') ? b.spines : null;
-  } catch { spineBundle = null; }
+  const spineBundle = await spineBundleWave;   // left with the wave
   await Promise.all(shards.map(async shard => {
     const bundled = spineBundle?.[shard.id];
     if (bundled) { spines.set(shard.id, bundled); return; }
@@ -267,20 +287,12 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   // since every edition seats the same leaves. Optional: a volume without the
   // file has a uniform sky. What the ranks measure (the lectionary, for the
   // Bible) is the corpus's business; this only reads them.
-  let leafRanks = {};
-  try {
-    const r = await fetchJson(at({ kind: 'ranks' }));
-    if (r && typeof r.leaves === 'object') leafRanks = r.leaves;
-  } catch { leafRanks = {}; }
+  const leafRanks = await ranksWave;   // left with the wave
   const rankedLeafCount = Object.keys(leafRanks).length;
   // THE GREATEST HITS (O-135, Howell 2026-09-15): leaves the basement's ring
   // shows permanently beside the reader's bookmarks. Optional, like the ranks;
   // which verses they are is the corpus's business.
-  let leafHits = [];
-  try {
-    const h = await fetchJson(at({ kind: 'hits' }));
-    if (Array.isArray(h?.leaves)) leafHits = h.leaves.filter(x => typeof x === 'string');
-  } catch { leafHits = []; }
+  const leafHits = await hitsWave;   // left with the wave
 
   return {
     version,

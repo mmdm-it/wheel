@@ -253,12 +253,13 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     lines.push('BOOT LOG  (ms from first byte)', '');
     for (const m of marks) lines.push(`${String(m.t).padStart(6)}  ${m.name}`);
     lines.push('', 'FETCHES  start→end  size');
-    const want = [['page', /\/(\?|$|index\.html)/], ['app.js', /dist\/app\.js/], ['manifest', /volume\.json/], ['charts bundle', /charts\/[^/]+\/all\.json/], ['spine bundle', /spine\/all\.json/], ['fonts css', /fonts\.googleapis/], ['garamond', /gstatic.*(garamond|ebgaramond)/i], ['crown png', /crown_of_thorns\.png|torah_scroll\.png/], ['text', /\/text\//]];
+    const want = [['page', /\/(\?|$|index\.html)/], ['app.js', /dist\/app\.js/], ['manifest', /volume\.json/], ['names', /\/names\//], ['shelves', /charts\/[^/]+\/index\.json/], ['bundle, first', /charts\/[^/]+\/all\.json/, 'first'], ['bundles, rest', /charts\/[^/]+\/all\.json/, 'rest'], ['spine bundle', /spine\/all\.json/], ['ranks', /ranks\.json/], ['hits', /hits\.json/], ['fonts css', /fonts\.googleapis/], ['garamond', /gstatic.*(garamond|ebgaramond)/i], ['crown png', /crown_of_thorns\.png|torah_scroll\.png/], ['text', /\/text\//]];
     const nav = performance.getEntriesByType('navigation')[0];
     if (nav) lines.push(`${String(rel(nav.startTime)).padStart(6)}→${String(rel(nav.responseEnd)).padEnd(6)} page  ${Math.round((nav.transferSize || 0) / 1024)}k`);
     const res = performance.getEntriesByType('resource');
-    for (const [label, re] of want.slice(1)) {
-      const hits = res.filter(r => re.test(r.name));
+    for (const [label, re, part] of want.slice(1)) {
+      let hits = res.filter(r => re.test(r.name)).sort((a, b) => a.startTime - b.startTime);
+      if (part === 'first') hits = hits.slice(0, 1); else if (part === 'rest') hits = hits.slice(1);
       if (!hits.length) { lines.push(`     —          ${label}  (not fetched)`); continue; }
       const first = hits.reduce((a, b) => (a.startTime < b.startTime ? a : b));
       const last = hits.reduce((a, b) => (a.responseEnd > b.responseEnd ? a : b));
