@@ -410,7 +410,10 @@ svg :focus-visible {
    a notch rides the transition, a drag sets it per frame with the
    transition off. */
 #dimension-button { transform: translateY(var(--thumb-y, 0px)); touch-action: none; /* the slider owns the vertical drag */ }
-#dimension-button[aria-pressed="true"] { opacity: 1; transform: translateY(var(--thumb-y, 0px)) scale(1.08); }
+/* ONE SIZE (Howell 2026-09-30: "is the globe still two different sizes? I
+   see no reason for it to be."). It used to swell to 1.08 while a stratum
+   was open; only its opacity marks the state now. */
+#dimension-button[aria-pressed="true"] { opacity: 1; }
 #dimension-button.is-sliding { transition: opacity 0.15s ease; }
 /* THE PHRASE beside the globe while the thumb is held in the overrun
    (O-128): the volume's own words, in the reader's tongue. */
