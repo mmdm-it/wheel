@@ -1074,13 +1074,10 @@ function renderStack() {
     // A receded plane shows its PREVIEW selection when one is running, so the
     // edition under the lens tracks the language being turned behind it.
     const shown = (pos !== strataFront && ch.previewSelected?.()) || ch.selected();
-    const g = renderStratum(strataLayer, {
-      id: ch.id, viewport, items,
-      selectedIndex: Math.max(0, items.indexOf(shown)),
-      mirrored: ch.mirrored,
-      labelFor: ch.label,
-      centerMagnified: ch.centerMag
-    });
+    // Through stratumOpts, as every other paint of a ring is (O-184): this
+    // site built its options by hand and so drew a placeholder seat filled
+    // on arrival, hollow only once the ring was touched.
+    const g = renderStratum(strataLayer, stratumOpts(ch, items, Math.max(0, items.indexOf(shown))));
     applyStratumDepth(g, strataFront - pos);
   });
   }
@@ -1375,12 +1372,7 @@ function beginGlide(fromFront, toFront) {
     const inFrom = pos <= fromFront, inTo = pos <= toFront;
     if (!inFrom && !inTo) { hideStratum(strataLayer, ch.id); return; }
     const items = ch.items();
-    groups[ch.id] = renderStratum(strataLayer, {
-      id: ch.id, viewport, items,
-      selectedIndex: Math.max(0, items.indexOf(ch.selected())),
-      mirrored: ch.mirrored, labelFor: ch.label,
-      centerMagnified: ch.centerMag
-    });
+    groups[ch.id] = renderStratum(strataLayer, stratumOpts(ch, items, Math.max(0, items.indexOf(ch.selected()))));   // one options builder for every paint (O-184)
     // Past the film plane the plane keeps scaling about the same centre — the
     // course the magnifier was already on — until it is off the frame. NO
     // DISSOLVE (Howell, phone check 2026-09-14: "There should be no change in
