@@ -185,15 +185,26 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:rgba(0,0,0,.6);color:#fff;padding:8px 12px 14px;font:14px Montserrat,sans-serif;pointer-events:auto;';
     bar.innerHTML = `<div style="font:700 20px/1.2 monospace"><span id="ov-ms">0</span> ms <small style="font:12px Montserrat,sans-serif;opacity:.8"> frame <span id="ov-fr">0</span> at 30/s</small></div>
       <input id="ov-t" type="range" min="0" max="${total}" step="10" value="0" style="width:100%;margin:6px 0">
-      <div><button data-d="-100">−100 ms</button><button data-d="-33">−1 fr</button><button data-d="33">+1 fr</button><button data-d="100">+100 ms</button><button id="ov-play">Play from here</button><button id="ov-go">Finish</button></div>`;
+      <div><button data-d="-100">−100 ms</button><button data-d="-33">−1 fr</button><button data-d="33">+1 fr</button><button data-d="100">+100 ms</button><button id="ov-play">Play from here</button><button id="ov-start">Start</button></div>`;
     bar.querySelectorAll('button').forEach(b => { b.style.cssText = 'font:inherit;padding:7px 11px;margin:0 5px 4px 0;background:rgba(255,255,255,.18);color:#fff;border:0;border-radius:6px'; });
     document.body.appendChild(bar);
+    // The hamburger (Howell 2026-09-30, as the storyboard's scrubber had it):
+    // hides and shows the panel, so a frame can be looked at clean.
+    const peek = document.createElement('button');
+    peek.textContent = '≡'; peek.title = 'Hide or show the controls';
+    peek.style.cssText = 'position:fixed;top:8px;right:8px;z-index:2147483001;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.35);color:#fff;border:0;font:700 16px/34px Montserrat,sans-serif;text-align:center;padding:0;pointer-events:auto;';
+    peek.addEventListener('click', () => { bar.hidden = !bar.hidden; });
+    document.body.appendChild(peek);
     const slider = bar.querySelector('#ov-t');
     const seek = ms => {
       ms = Math.max(0, Math.min(total, ms)); slider.value = ms;
       bar.querySelector('#ov-ms').textContent = Math.round(ms); bar.querySelector('#ov-fr').textContent = Math.round(ms / (1000 / 30));
       const t = ms - lead;
       if (t < 0) { svg.style.opacity = '1'; driller.stand(); } else render(t);
+      // At the very end the app is settled at the text and the sheet lets
+      // touches through, so the film can be scrubbed to its close and the
+      // instrument used; scrubbing back takes the sheet up again.
+      if (ms >= total) { driller.finish(); svg.style.pointerEvents = 'none'; } else svg.style.pointerEvents = 'auto';
     };
     let playing = 0;
     slider.addEventListener('input', () => { cancelAnimationFrame(playing); seek(Number(slider.value)); });
@@ -203,7 +214,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       const tick = now => { const ms = from + (now - start); if (ms >= total) { seek(total); return; } seek(ms); playing = requestAnimationFrame(tick); };
       playing = requestAnimationFrame(tick);
     });
-    bar.querySelector('#ov-go').addEventListener('click', () => { cancelAnimationFrame(playing); seek(total); driller.finish(); remove(); bar.remove(); });
+    bar.querySelector('#ov-start').addEventListener('click', () => { cancelAnimationFrame(playing); seek(0); });
     seek(0);
   }
 }
