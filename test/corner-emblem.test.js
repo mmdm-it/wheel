@@ -301,3 +301,34 @@ describe('each emblem at its own size, around the same circle (O-148)', () => {
     }
   });
 });
+
+// THE FENCE STANDS WHILE THE BADGE FLIES HOME (O-189, Howell's phone
+// 2026-10-01: a verse's star seated on top of the crown). The sky asks the
+// badge for the box to keep clear of; it used to be told nothing while the
+// badge was animating, and the drill-out now lays the sky mid-flight.
+describe('the corner box the sky keeps clear of (O-189)', () => {
+  const badge = async () => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 360, height: 800 });
+    logo.circle = {};   // a badge exists
+    return logo;
+  };
+  it('at rest in the corner: the box', async () => {
+    const logo = await badge();
+    const b = logo.getBounds();
+    assert.ok(b && b.right > b.left && b.bottom > b.top);
+    assert.ok(b.right <= 360 && b.top >= 0, 'in the top-right corner');
+  });
+  it('FLYING HOME (collapsing): still the box — the sky laid during the flight must avoid where the badge is going', async () => {
+    const logo = await badge();
+    logo._animating = true; logo._collapsing = true; logo._expanded = true;
+    assert.ok(logo.getBounds(), 'the destination, not the absence of one');
+  });
+  it('expanded, or flying out to expand: nothing to avoid', async () => {
+    const logo = await badge();
+    logo._expanded = true;
+    assert.equal(logo.getBounds(), null);
+    logo._expanded = false; logo._animating = true; logo._collapsing = false;
+    assert.equal(logo.getBounds(), null);
+  });
+});

@@ -95,7 +95,18 @@ export class VolumeLogo {
   getBounds() {
     if (!this.circle) return null;
     // While expanded or animating, logo is not in upper-right — no CPUA cropping
-    if (this._expanded || this._animating) return null;
+    // THE FENCE STANDS WHILE THE BADGE IS FLYING HOME (O-189, Howell's phone
+    // 2026-10-01: a verse's star seated on top of the crown). This answered
+    // nothing while the badge was animating — written when the sky was laid
+    // only at rest, and true then. The drill-out's rework (O-161: the verse
+    // folds into the badge over the flight; O-170: departing nodes fly
+    // straight to their sky seats) lays the sky at the start of that very
+    // flight, so the sky asked for a corner to avoid and was told there was
+    // none. The badge's DESTINATION is what the sky must avoid: collapsed, or
+    // collapsing, the corner box; expanded, or expanding, nothing — the sky
+    // is suppressed for an arriving sector anyway.
+    if (this._expanded && !this._collapsing) return null;
+    if (this._animating && !this._collapsing) return null;
 
     const shorterSide = Math.min(this.viewport.width, this.viewport.height);
     const radius = shorterSide * 0.12;
