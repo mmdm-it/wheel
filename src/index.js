@@ -2539,6 +2539,9 @@ export function createApp({
     migrateInGathered,
     // The sky's largest node, for the lens's down-swipe (O-132); -1 with no sky.
     largestPyramidIndex: () => largestChildIndex(lastPyramidData?.nodes || []),
+    // THE DRILL OUT IS A VERB OF THE APP, NOT A CLICK ON THE PARENT (O-191):
+    // the gesture layer calls it; the parent seat is a readout.
+    drillOut: () => shiftLayersOut(),
     handlePyramidNodeClick: idx => {
       if (isAnimating() && !instantMigration) return; // block clicks during migration animation
       if (!lastPyramidData) return;

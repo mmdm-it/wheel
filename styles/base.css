@@ -385,7 +385,11 @@ svg :focus-visible {
    the detail-sector color the search dims to. */
 :root[data-theme].search-mode .focus-ring-node { fill: var(--color-nodes); }
 :root[data-theme].search-mode .focus-ring-magnifier-circle { fill: var(--color-nodes); }
-:root.search-mode .child-pyramid-node {
+:root.search-mode /* A TAP ON A STAR ACKNOWLEDGES AND NOTHING MORE (O-191): the swell it wears
+   under the lens, for a beat — "pull me". */
+@keyframes star-nudge { 0% { transform: scale(1); } 40% { transform: scale(1.35); } 100% { transform: scale(1); } }
+.child-pyramid-node.is-nudged { transform-box: fill-box; transform-origin: center; animation: star-nudge 350ms ease-out; }
+.child-pyramid-node {
   fill: rgba(255, 255, 255, 0.14);
   stroke: rgba(255, 255, 255, 0.30);
 }

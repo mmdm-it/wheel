@@ -2,7 +2,7 @@
 // zones between them, on the Moto G 2025's page area (Northwest = 331°).
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { bearingOf, diagonalLean, compassBands, classifyBearing, axisFor } from '../src/core/stroke.js';
+import { bearingOf, diagonalLean, compassBands, classifyBearing, axisFor, nearestKind } from '../src/core/stroke.js';
 
 describe('the compass decides (O-152)', () => {
   it('bearings are a compass on the glass: north up, clockwise', () => {
@@ -76,5 +76,29 @@ describe('the bands cover the logged strokes (O-152, 2026-09-16 log)', () => {
     for (const x of [156, 166, 161, 143, 150]) assert.equal(at(x), 'ccw', `${x}`);
     for (const x of [39, 53, 60]) assert.equal(at(x), 'out', `${x}`);
     for (const x of [206, 228, 256]) assert.equal(at(x), 'in', `${x}`);
+  });
+});
+
+// NO DEAD ZONES (O-191): every stroke is the nearer of the four directions.
+describe('the nearer axis decides, and nothing is dead (O-191)', () => {
+  it('the four directions themselves', () => {
+    assert.equal(nearestKind(331, 29), 'cw');
+    assert.equal(nearestKind(151, 29), 'ccw');
+    assert.equal(nearestKind(61, 29), 'out');
+    assert.equal(nearestKind(241, 29), 'in');
+  });
+  it('the old dead zones now belong to their nearer neighbour', () => {
+    assert.equal(nearestKind(345, 29), 'cw', '14° from cw, 76° from out');
+    assert.equal(nearestKind(16, 29), 'cw', '45° each way: the first listed wins, which is turning');
+    assert.equal(nearestKind(17, 29), 'out');
+    assert.equal(nearestKind(135, 29), 'ccw');
+    assert.equal(nearestKind(196, 29), 'ccw'); assert.equal(nearestKind(197, 29), 'in');
+    assert.equal(nearestKind(285, 29), 'in'); assert.equal(nearestKind(286, 29), 'cw', 'the tie goes to turning');
+  });
+  it('the diagonals drill; straight up and down are nearer the band, and turn', () => {
+    assert.equal(nearestKind(225, 29), 'in', 'towards the south-west, where the lens is');
+    assert.equal(nearestKind(45, 29), 'out', 'towards the north-east, where the sky is');
+    assert.equal(nearestKind(180, 29), 'ccw', '29° from the band\'s tangent, 61° from the drill');
+    assert.equal(nearestKind(0, 29), 'cw');
   });
 });

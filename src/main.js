@@ -84,7 +84,7 @@ if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.loc
   window.__tapDebugLog('gesturelog-on', { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio, ua: navigator.userAgent.slice(0, 60) });
 }
 import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
-import { bearingOf, diagonalLean, classifyBearing, axisFor } from './core/stroke.js';
+import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -3091,7 +3091,6 @@ function wireInteractions(getApp) {
   // screen-vertical swipes are superseded by the compass below (O-152); a
   // press on either is still its control's tap if it never travels, and the
   // click that follows a stroke is swallowed by these timestamps.
-  let parentSwipeFiredAt = 0;
   // THE COMPASS DECIDES (O-152, Howell 2026-09-16), superseding O-142's angle
   // to the hub and the lens's and parent's own screen-vertical swipes (O-131,
   // O-132). Every drag on the glass — open ground, a ring node, the verse
@@ -3103,11 +3102,36 @@ function wireInteractions(getApp) {
   // 10° gaps between them do nothing until the finger lifts. At a leaf a
   // drill in does nothing; at the top a drill out does nothing. Once decided,
   // a stroke is measured only along its own axis. A press that never travels
-  // DECIDE_PX is the tap it always was. The pyramid's stars still drill on
-  // touch.
+  // DECIDE_PX is the tap it always was.
+  //
+  // ONE GESTURE FOR THE DRILL (O-191, Howell 2026-10-01): taps no longer
+  // drill, not on a star and not on the parent seat; the only taps are a ring
+  // node and the sector's page forward. A stroke towards the lens drills in,
+  // a stroke towards the sky drills out, wherever it begins — the parent
+  // seat is a readout. If the stroke began on a star, or within a thumb of
+  // one, THAT star comes to the lens; otherwise the sky's largest. And no
+  // dead zones: every stroke is the nearer of the two axes.
   // 8 px, the tap slop (O-152 amended: the log showed slow strokes taking
   // 350–800 ms to travel 14 px with nothing moving).
   const DECIDE_PX = 8;             // the stroke declares itself here; the ring waits that long
+  const THUMB_PX = 24;             // a star within this of the touch is "the star it began on" (O-191)
+  let pendingStarTap = null;       // the star a press landed on or near, for the tap's acknowledgement
+  // The nearest star to a touch, within a thumb's reach past its own rim.
+  const nearestStar = event => {
+    try {
+      const circles = svg.querySelectorAll('.child-pyramid-nodes circle');
+      let best = null;
+      for (const el of circles) {
+        const raw = el.dataset?.index ?? el.getAttribute?.('data-index');
+        const idx = Number.parseInt(raw, 10);
+        if (!Number.isFinite(idx)) continue;
+        const r = el.getBoundingClientRect?.(); if (!r || !r.width) continue;
+        const dist = Math.hypot(event.clientX - (r.left + r.width / 2), event.clientY - (r.top + r.height / 2));
+        if (dist <= r.width / 2 + THUMB_PX && (!best || dist < best.dist)) best = { idx, el, dist };
+      }
+      return best;
+    } catch (_) { return null; }
+  };
   let stroke = null;               // { x0, y0, decided, pendingDelta, dead } for the drag under way
   let freeDrill = null;            // { kind, x0, y0, ux, uy, ctl, travel, e, undo } — a drill a stroke began
   let controlPress = null;         // { x0, y0, isParent, dead } — a press on the lens or the parent button
@@ -3139,27 +3163,27 @@ function wireInteractions(getApp) {
   };
   // Begin a drill from a stroke that started at (x0, y0); false when there is
   // nothing to drill that way — which the compass rule reads as nothing at all.
-  const beginFreeDrill = (kind, event, x0, y0) => {
+  const beginFreeDrill = (kind, event, x0, y0, star = null) => {
     const app = getApp();
     if (!app) return false;
     const axis = axisFor(kind, lean());
     const fd = { kind, x0, y0, ux: axis.ux, uy: axis.uy, e: 0, pointerId: event?.pointerId ?? null };
     if (kind === 'in') {
-      const idx = app.largestPyramidIndex?.() ?? -1;
+      // The star the stroke began on (or within a thumb of), else the sky's
+      // largest — on a verse sky the day's lectionary standout (O-191).
+      const idx = Number.isFinite(star) && star >= 0 ? star : (app.largestPyramidIndex?.() ?? -1);
       if (idx < 0) return false;   // a leaf: nothing below
-      fd.undo = () => { const p = app.view?.parentButtonOuter; if (typeof p?.onclick === 'function') p.onclick(event); };
-      logTap('stroke-drill-in', { idx });
+      fd.undo = () => { app.drillOut?.(); };
+      logTap('stroke-drill-in', { idx, chosen: Number.isFinite(star) && star >= 0 ? 'star' : 'largest' });
       beginDrill(fd, app, () => app.handlePyramidNodeClick(idx));
     } else {
-      const p = app.view?.parentButtonOuter;
-      if (typeof p?.onclick !== 'function') return false;   // the top: nothing above
-      // A parent with no name is no parent (O-190): the gesture used to begin
-      // the flight and bring a phantom seat in before the adapter refused it.
+      if (typeof app.drillOut !== 'function') return false;
+      // A parent with no name is no parent (O-190): the top has nothing above.
       if (!String(app.view?.parentButtonOuterLabel?.textContent || '').trim()) return false;
       const wasAt = app.nav?.getCurrent?.() || null;
       fd.undo = () => { if (wasAt) app.drillIntoItem?.(wasAt); };
       logTap('stroke-drill-out', {});
-      beginDrill(fd, app, () => p.onclick(event));
+      beginDrill(fd, app, () => app.drillOut());
     }
     if (!fd.ctl) return false;
     freeDrill = fd;
@@ -3206,10 +3230,10 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       const press = controlPress;
       const bearing = bearingOf(vx, vy);
-      const kind = classifyBearing(bearing, lean(), bandOpts());
-      logTap('control-stroke', { kind, parent: press.isParent, bearing: Math.round(bearing) });
-      // Whatever it decides, the press is no longer a tap on its control.
-      if (press.isParent) parentSwipeFiredAt = Date.now(); else lensSwipeFiredAt = Date.now();
+      const kind = nearestKind(bearing, lean());   // no dead zones (O-191)
+      logTap('control-stroke', { kind, bearing: Math.round(bearing) });
+      // Whatever it decides, the press is no longer a tap on the lens.
+      lensSwipeFiredAt = Date.now();
       if (kind === 'cw' || kind === 'ccw') {
         controlPress = null;
         isDragging = true; recentMoves = []; gestureTravelPx = Math.hypot(vx, vy);
@@ -3274,12 +3298,12 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
       const bearing = bearingOf(vx, vy);
-      const kind = classifyBearing(bearing, lean(), bandOpts());
-      logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), bands: bandOpts() });
+      const kind = nearestKind(bearing, lean());   // no dead zones (O-191)
+      logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), star: stroke.star ?? null });
       if (kind === 'cw' || kind === 'ccw') { app.choreographer.rotate(stroke.pendingDelta); return; }
-      pendingTapNode = null; pendingAdvanceTap = false;
-      if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, stroke.x0, stroke.y0)) { isDragging = false; return; }
-      stroke.dead = true;
+      pendingTapNode = null; pendingAdvanceTap = false; pendingStarTap = null;
+      if (beginFreeDrill(kind, event, stroke.x0, stroke.y0, stroke.star)) { isDragging = false; return; }
+      stroke.dead = true;   // nothing to drill that way: a leaf below, or the top above
       return;
     }
     app.choreographer.rotate(delta);
@@ -3289,13 +3313,6 @@ function wireInteractions(getApp) {
   // browser's delayed native click so the same node doesn't rotate twice.
   svg.addEventListener('click', event => {
     const now = Date.now();
-    // A swipe that already migrated (O-131) must not be followed by the tap's click.
-    if (parentSwipeFiredAt && now - parentSwipeFiredAt < 700 && event.target?.closest?.('.focus-ring-parent-circle, .focus-ring-parent-label')) {
-      parentSwipeFiredAt = 0;
-      event.preventDefault();
-      event.stopPropagation();
-      return;
-    }
     if (now < suppressNativeClickUntil) {
       // Control taps (magnifier, parent button) rely on their NATIVE click
       // and their pointerdown path never arms a manual fire — suppressing
@@ -3352,7 +3369,12 @@ function wireInteractions(getApp) {
     // non-control tap arms the native-click suppressor at the line below,
     // which ate the glyph's click while its pointer events sailed through):
     // don't start drag, don't near-miss redirect, let native click run.
-    const isControlTarget = event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label, .world-glyph');
+    // The parent seat and the world glyph are READOUTS now (O-191): a press on
+    // them is a press on open ground. The lens alone is a control — its tap
+    // strikes a character or turns a verse's page — and even it strokes by
+    // the compass.
+    const onParentSeat = event.target && event.target.closest && event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label, .world-glyph');
+    const isControlTarget = !onParentSeat && event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
     if (isControlTarget) {
       isDragging = false;
       logTap('control-hit', {
@@ -3360,14 +3382,7 @@ function wireInteractions(getApp) {
         targetClass: event.target?.getAttribute?.('class') || null,
         targetId: event.target?.getAttribute?.('id') || null
       });
-      // The parent vessel (or its words): watch for the swipe (O-131). The
-      // capture goes on the CIRCLE, so a plain tap's click still lands on it.
-      const parentEl = event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label') ? app.view?.parentButtonOuter : null;
-      if (parentEl && typeof parentEl.onclick === 'function') {
-        // The parent's vessel: its stroke is decided by the compass (O-152).
-        controlPress = { x0: event.clientX, y0: event.clientY, isParent: true, dead: false };
-        try { parentEl.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
-      } else if (!searchRestore && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label')) {
+      if (!searchRestore) {
         // The lens (not in search): its stroke is decided by the compass (O-152).
         controlPress = { x0: event.clientX, y0: event.clientY, isParent: false, dead: false };
         try { app.view?.magnifierCircle?.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
@@ -3380,22 +3395,24 @@ function wireInteractions(getApp) {
     // so matching only the circle made a tap on the word itself fall through
     // to ring near-miss targeting (the multi-tap gateway bug on iOS browsers
     // whose touch-target adjustment doesn't rescue the miss).
+    // A STAR UNDER THE THUMB CHOOSES THE SEAT, IT DOES NOT DRILL (O-191). The
+    // press on a star (or its word, or within a thumb's reach of one) is
+    // remembered; a stroke towards the lens brings that star; a tap on it
+    // only acknowledges — the star swells for a beat, the way it does under
+    // the lens — so a newcomer learns "pull me" without a drill firing.
     const isPyramidNode = event.target && event.target.closest
       && event.target.closest('.child-pyramid-node, .child-pyramid-label');
+    let starIdx = null;
+    pendingStarTap = null;
     if (isPyramidNode) {
-      const attrIndex = isPyramidNode.getAttribute && isPyramidNode.getAttribute('data-index');
-      const rawIndex = isPyramidNode.dataset?.index ?? attrIndex;
+      const rawIndex = isPyramidNode.dataset?.index ?? (isPyramidNode.getAttribute && isPyramidNode.getAttribute('data-index'));
       const idx = Number.parseInt(rawIndex, 10);
-      logTap('pyramid-hit', { pointerType: event.pointerType, nodeIndex: Number.isFinite(idx) ? idx : null, rawIndex: rawIndex ?? null });
-      if (Number.isFinite(idx)) {
-        if (app.handlePyramidNodeClick) {
-          app.handlePyramidNodeClick(idx);
-        }
-        return; // don't start drag
-      }
-      // No valid index on this pyramid-shaped target (e.g. transient clone).
-      // Fall through to near-miss ring targeting instead of swallowing the tap.
-      logTap('pyramid-hit-no-index-fallback', { pointerType: event.pointerType });
+      if (Number.isFinite(idx)) { starIdx = idx; pendingStarTap = isPyramidNode; }
+      logTap('pyramid-hit', { pointerType: event.pointerType, nodeIndex: Number.isFinite(idx) ? idx : null });
+    }
+    if (starIdx === null) {
+      const near = nearestStar(event);
+      if (near) { starIdx = near.idx; pendingStarTap = near.el; logTap('star-near', { nodeIndex: near.idx, px: Math.round(near.dist) }); }
     }
 
     // THE NEXT GESTURE (Howell 2026-07-20): at a leaf, in volumes that ask
@@ -3418,7 +3435,7 @@ function wireInteractions(getApp) {
       || Boolean(isPyramidNode)
     );
     if ((event.pointerType === 'touch' || event.pointerType === 'pen') && isBackgroundLikeTarget
-      && !pendingTapNode && !pendingAdvanceTap) {
+      && !pendingTapNode && !pendingAdvanceTap && !pendingStarTap) {
       const nearby = nearestRingNode(event);
       if (nearby && typeof nearby.onclick === 'function') {
         // Same deferral as a direct node press: tap resolves at lift,
@@ -3437,7 +3454,7 @@ function wireInteractions(getApp) {
     recentMoves = [];
     gestureTravelPx = 0;
     pointerCaptured = false;
-    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false };
+    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false, star: starIdx };
     trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
     trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
     publishTrace();
@@ -3520,6 +3537,17 @@ function wireInteractions(getApp) {
       pendingTapNode = null;
       const advanceTap = pendingAdvanceTap;
       pendingAdvanceTap = false;
+      const starTap = pendingStarTap;
+      pendingStarTap = null;
+      if (starTap && !tapNode && !advanceTap) {
+        suppressNativeClickUntil = Date.now() + 450;
+        if (gestureTravelPx <= DRAG_SLOP_PX && type === 'pointerup') {
+          // A tap on a star: the swell, and nothing else (O-191).
+          logTap('star-tap-nudge', {});
+          try { starTap.classList.add('is-nudged'); setTimeout(() => starTap.classList?.remove('is-nudged'), 400); } catch (_) { /* stub DOM */ }
+          return;
+        }
+      }
       if (advanceTap && !tapNode) {
         suppressNativeClickUntil = Date.now() + 450;
         if (gestureTravelPx <= DRAG_SLOP_PX && type === 'pointerup') {

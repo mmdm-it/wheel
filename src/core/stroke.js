@@ -83,6 +83,24 @@ export function classifyBearing(bearing, d = 29, opts = {}) {
   return null;
 }
 
+/**
+ * NO DEAD ZONES (O-191, Howell 2026-10-01): two axes at right angles — the
+ * band's tangent for turning, the line to the lens for drilling — and every
+ * stroke is the nearer of the four directions. The bands above exist for the
+ * first ruling's four-band compass; the host decides by this now.
+ * @returns {'cw'|'ccw'|'out'|'in'}
+ */
+export function nearestKind(bearing, d = 29) {
+  const b = norm(bearing);
+  const dirs = [['cw', norm(360 - d)], ['ccw', norm(180 - d)], ['out', norm(90 - d)], ['in', norm(270 - d)]];
+  let best = 'cw', bestDist = 361;
+  for (const [kind, a] of dirs) {
+    const dist = Math.abs(((b - a + 540) % 360) - 180);
+    if (dist < bestDist) { bestDist = dist; best = kind; }
+  }
+  return best;
+}
+
 /** The unit vector on the glass pointing along a bearing. */
 export function unitOf(bearing) {
   return { ux: Math.sin(bearing * RAD), uy: -Math.cos(bearing * RAD) };
