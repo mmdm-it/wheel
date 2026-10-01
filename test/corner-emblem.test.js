@@ -336,3 +336,15 @@ describe('the corner box the sky keeps clear of (O-189)', () => {
     assert.equal(logo.getBounds(), null);
   });
 });
+
+// NOTHING ABOVE THE TOP (O-190, Howell 2026-10-01): a testaments ring whose
+// parent seat read the edition's own title, and a drill out that began
+// towards it. Without a gateway above, a testament has no parent to name.
+describe('a testament names no parent without a gateway above (O-190)', () => {
+  it('the parent label is empty, and would be the volume\'s title only under a gateway boot', () => {
+    const h = handlers(makeManifest(() => SPANNING.map(d => ({ ...d }))));
+    assert.equal(h.getParentLabel({ level: 'testament', parentName: 'The Holy Bible, translated from the Latin Vulgate' }), '');
+    assert.equal(typeof h.getParentActionable, 'function');
+    assert.equal(h.getParentActionable(), true, 'actionable at the book ring, where the boot stands');
+  });
+});

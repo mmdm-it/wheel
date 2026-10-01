@@ -1020,7 +1020,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // same contract as the calendar), not the gateway node came through.
     if (item.level === 'bibleRoot') return gatewayReturnLabel || gatewayLabel || '';
     // Testament ring under a gateway root: parent is the Biblia itself.
-    if (item.level === 'testament' && hasRoot) return namesMap?.title || 'BIBLIA SACRA LATINA';
+    // NOTHING ABOVE THE TOP (O-190, Howell 2026-10-01: a testaments ring
+    // whose parent seat read the edition's own title, and a drill out that
+    // began towards it — "We shouldn't be able to see anything above the
+    // root, which is normally Testament"). The root level above the
+    // testaments exists for the gateway alone; a standalone boot has no
+    // such level, and a testament then has no parent to name.
+    if (item.level === 'testament') return hasRoot ? (namesMap?.title || 'BIBLIA SACRA LATINA') : '';
     // Chapter ring: parent is the book name in the display language
     // (e.g. "MATTHAEUS" — namesMap carries the Latin names under VUL)
     if (item.level === 'chapter') {
@@ -1198,10 +1204,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     hitSeatsCache = { edition, seats };
     return seats;
   };
+  // The parent seat at the top is words alone (discless) and, with no
+  // gateway above, not even that (O-190).
+  const getParentActionable = () => !(bibleMode === 'testament' && !hasRoot);
   return {
     parentHandler,
     childrenHandler,
     getParentLabel,
+    getParentActionable,
     getParentLabelSuffix,
     getGapLabel,
     reseatOnEditionChange,

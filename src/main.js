@@ -3153,6 +3153,9 @@ function wireInteractions(getApp) {
     } else {
       const p = app.view?.parentButtonOuter;
       if (typeof p?.onclick !== 'function') return false;   // the top: nothing above
+      // A parent with no name is no parent (O-190): the gesture used to begin
+      // the flight and bring a phantom seat in before the adapter refused it.
+      if (!String(app.view?.parentButtonOuterLabel?.textContent || '').trim()) return false;
       const wasAt = app.nav?.getCurrent?.() || null;
       fd.undo = () => { if (wasAt) app.drillIntoItem?.(wasAt); };
       logTap('stroke-drill-out', {});
