@@ -313,11 +313,15 @@ describe('the corner box the sky keeps clear of (O-189)', () => {
     logo.circle = {};   // a badge exists
     return logo;
   };
-  it('at rest in the corner: the box', async () => {
+  it('at rest in the corner: the box, WHERE THE CIRCLE IS and as wide as the emblem', async () => {
     const logo = await badge();
+    logo._renderConfig = { default_image: 'crown_of_thorns', emblem_scale: { crown_of_thorns: 1.8 } };
     const b = logo.getBounds();
+    const g = logo._collapsedGeometry();
     assert.ok(b && b.right > b.left && b.bottom > b.top);
-    assert.ok(b.right <= 360 && b.top >= 0, 'in the top-right corner');
+    assert.ok(Math.abs((b.left + b.right) / 2 - g.centerX) < 1e-9 && Math.abs((b.top + b.bottom) / 2 - g.centerY) < 1e-9, 'centred on the circle the badge actually draws');
+    assert.ok(b.right - b.left >= g.logoWidth - 1e-9, 'as wide as the crown\'s thorns');
+    assert.ok(b.left < g.centerX - g.radius && b.bottom > g.centerY + g.radius, 'the circle itself lies inside the fence');
   });
   it('FLYING HOME (collapsing): still the box — the sky laid during the flight must avoid where the badge is going', async () => {
     const logo = await badge();
