@@ -154,7 +154,9 @@ export function getViewportWindow(viewport, nodeSpacing) {
   const arcLength = endAngle - startAngle;
   const spacing = nodeSpacing ?? getNodeSpacing(viewport);
   const maxNodes = Math.min(Math.floor(arcLength / spacing), 21);
-  return { startAngle, endAngle, arcLength, maxNodes };
+  // width and height ride along so a band built from this window can be
+  // bounded to what its floor can ever show (O-187).
+  return { startAngle, endAngle, arcLength, maxNodes, width, height };
 }
 
 // The sprocket chain, told honestly (Howell 2026-07-21). The focus ring is
@@ -169,7 +171,7 @@ export function getViewportWindow(viewport, nodeSpacing) {
 //
 // Returns the centreline as an ordered point list: far-SE tangent → lower
 // exit → arc → upper exit → far-up tangent. Stroke it with the band width.
-export function bandCenterlinePoints(arcParams, startAngle, endAngle) {
+export function bandCenterlinePoints(arcParams, startAngle, endAngle, bounds = null) {
   const { hubX, hubY, radius } = arcParams;
   const T = radius * 3; // tangent run; clipped at 1.0, reaches the edge by 0.2
   const pt = a => [hubX + radius * Math.cos(a), hubY + radius * Math.sin(a)];
@@ -183,16 +185,65 @@ export function bandCenterlinePoints(arcParams, startAngle, endAngle) {
   const N = 48;
   for (let i = 0; i <= N; i += 1) pts.push(pt(startAngle + ((endAngle - startAngle) * i) / N));
   pts.push([upper[0] + upDir[0] * T, upper[1] + upDir[1] * T]);
-  return pts;
+  // BOUNDED TO WHAT THE FLOOR CAN SHOW (O-187, Howell's phone 2026-09-30: the
+  // receded edition ring's band stopping inside the screen, the front ring's
+  // band in fragments, the receded text floor's sector cut by a straight
+  // line). Three radii of tangent past each exit make a path seven screens
+  // tall, and every layer carrying one — the strata, blurred and transformed;
+  // the primary under its blur — is that big for the compositor, which drops
+  // tiles it cannot afford. The run stays; the path is cut where it leaves
+  // the region its floor can ever bring into view.
+  return bounds ? clipPolylineToRect(pts, bounds) : pts;
+}
+
+// The region a floor can show, as a rect [x0, y0, x1, y1] about the viewport's
+// centre: `reach` viewports wide and tall. A floor receded to scale s shows
+// 1/s viewports, so the strata (0.4 at deepest) need 2.5 and the primary
+// (0.2, two floors back) needs 5; a little more than each, for the stroke.
+export const STRATA_REACH = 2.6;
+export const PRIMARY_REACH = 5.2;
+export function bandBounds(width, height, reach) {
+  const cx = width / 2, cy = height / 2;
+  return [cx - (reach * width) / 2, cy - (reach * height) / 2, cx + (reach * width) / 2, cy + (reach * height) / 2];
+}
+
+// A polyline cut at a rect: points inside are kept, a segment crossing the
+// edge is ended at the crossing. The band is an arc inside the viewport with
+// one straight run past each exit, so the cut lands on the runs and the
+// result is one polyline; a segment wholly outside is dropped.
+export function clipPolylineToRect(pts, [x0, y0, x1, y1]) {
+  const inside = ([x, y]) => x >= x0 && x <= x1 && y >= y0 && y <= y1;
+  const cross = (a, b) => {   // the point where a→b meets the rect, a inside xor b inside
+    let t0 = 0, t1 = 1;
+    const dx = b[0] - a[0], dy = b[1] - a[1];
+    for (const [p, q] of [[-dx, a[0] - x0], [dx, x1 - a[0]], [-dy, a[1] - y0], [dy, y1 - a[1]]]) {
+      if (p === 0) continue;
+      const r = q / p;
+      if (p < 0) t0 = Math.max(t0, r); else t1 = Math.min(t1, r);
+    }
+    const t = inside(a) ? t1 : t0;
+    return [a[0] + dx * t, a[1] + dy * t];
+  };
+  const out = [];
+  for (let i = 0; i < pts.length; i += 1) {
+    const p = pts[i], prev = pts[i - 1];
+    if (inside(p)) {
+      if (prev && !inside(prev)) out.push(cross(p, prev));
+      out.push(p);
+    } else if (prev && inside(prev)) {
+      out.push(cross(prev, p));
+    }
+  }
+  return out;
 }
 
 // The standard primary chain centreline for a viewport. A mirrored stratum
 // reflects these points across the horizontal centreline (y → height − y),
 // which turns the vertical-up exit into vertical-DOWN and the SE tangent into
 // NE — the mirror the secondary needs, for free.
-export function standardBandCenterline(viewport) {
+export function standardBandCenterline(viewport, { reach = STRATA_REACH } = {}) {
   const w = getViewportWindow(viewport);
-  return bandCenterlinePoints(getArcParameters(viewport), w.startAngle, w.endAngle);
+  return bandCenterlinePoints(getArcParameters(viewport), w.startAngle, w.endAngle, reach ? bandBounds(viewport.width, viewport.height, reach) : null);
 }
 
 export function pointsToPath(pts) {

@@ -127,11 +127,13 @@ describe('the slider and the basement (O-126)', () => {
     assert.equal(D.hold(), null);
   });
 
-  it('the tap goes round: languages, editions, the text, the basement, and back to the languages', async () => {
+  it('the tap never goes down into the basement, and from the basement it returns to the text (O-182)', async () => {
     D.slide(2); await settle();
     D.cycle(); await settle(); assert.equal(D.front(), 1, 'editions');
     D.cycle(); await settle(); assert.equal(D.front(), 0, 'the text');
-    D.cycle(); await settle(); assert.equal(D.front(), -1, 'the basement, one tap down from the text');
-    D.cycle(); await settle(); assert.equal(D.front(), 2, 'and round to the languages');
+    D.cycle(); await settle(); assert.equal(D.front(), 2, 'up to the languages — the basement is the slide\'s alone');
+    D.cycle(); await settle(); D.cycle(); await settle(); assert.equal(D.front(), 0, 'home again');
+    D.slide(-1); await settle(); assert.equal(D.front(), -1, 'the basement, by slide');
+    D.cycle(); await settle(); assert.equal(D.front(), 0, 'one tap up from the basement: the text');
   });
 });

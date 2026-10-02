@@ -83,13 +83,59 @@ if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.loc
   window.addEventListener('pagehide', flush);
   window.__tapDebugLog('gesturelog-on', { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio, ua: navigator.userAgent.slice(0, 60) });
 }
+// THE SWIPE LOG (Howell 2026-10-01): with ?swipelog=1 the last strokes are
+// painted in the bottom corner — the bearing measured at the deciding 8 px,
+// what the engine decided, and the bearing of the whole stroke at lift — so a
+// photograph of the glass says why a swipe went the way it did. A "<<" marks a
+// stroke whose first 8 px disagreed with its overall direction by more than
+// 25°, which is the wobble a curved stroke starts with. It READS the existing
+// decision and changes nothing about how the decision is made.
+let noteSwipe = () => {};
+let noteSwipeEnd = () => {};
+let noteStrokeless = () => {};
+if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('swipelog') === '1') {
+  const box = document.createElement('div');
+  box.id = 'swipe-log';
+  box.style.cssText = 'position:fixed;left:3px;bottom:3px;z-index:2147483646;font:11px/1.35 monospace;color:#fff;background:rgba(0,0,0,.82);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;max-width:97vw;';
+  const mount = () => document.body?.appendChild(box);
+  if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
+  const NAME = { cw: 'ROTATE cw ', ccw: 'ROTATE ccw', out: 'DRILL out ', in: 'DRILL in  ', null: 'DEAD      ' };
+  const norm360 = v => Math.round(((v % 360) + 360) % 360);
+  const deg = v => `${String(norm360(v)).padStart(3)}°`;
+  const rows = [];
+  let head = 'swipes: none yet';
+  let open = null;
+  const line = o => `${deg(o.bearing)} ${NAME[o.kind === null ? 'null' : o.kind] || o.kind}${o.note}`
+    + (o.end == null ? '' : `  end ${deg(o.end)}${Math.abs(((o.end - o.bearing + 540) % 360) - 180) > 25 ? ' <<' : ''}`);
+  const paint = () => { box.textContent = [head, ...rows].join('\n'); };
+  const render = () => { if (open) rows[0] = line(open); paint(); };
+  const push = text => { rows.unshift(text); if (rows.length > 8) rows.pop(); };
+  noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
+    head = 'out 5-80  ccw 95-170  in 185-260  cw 275-350   dead between';
+    open = { bearing, kind, note, x0, y0, end: null };
+    push('');
+    render();
+  };
+  noteSwipeEnd = (x, y) => {
+    if (!open) return;
+    if (Number.isFinite(x) && Number.isFinite(y)) {
+      const dx = x - open.x0, dy = y - open.y0;
+      if (Math.hypot(dx, dy) >= 8) { open.end = norm360(Math.atan2(dx, -dy) * 180 / Math.PI); render(); }
+    }
+    open = null;
+  };
+  noteStrokeless = () => { if (rows[0] !== 'ROTATE with no compass') { push('ROTATE with no compass'); paint(); } };
+  paint();
+}
 import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
-import { bearingOf, diagonalLean, classifyBearing, axisFor } from './core/stroke.js';
+import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind, sketchedKind, SKETCHED_WEDGES } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
+import { beginBootOverture, overtureShouldPlay, overtureScrubWanted, splashRecord, mark as overtureMark } from './view/boot-overture.js';
+import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
 import { renderStratum, hideStratum } from './view/secondary-strata-view.js';
 import { DetailPluginRegistry } from './view/detail/plugin-registry.js';
@@ -222,8 +268,9 @@ const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 // the wrap carries the reader from the text back out to the languages. That
 // IS O-37 — "nesting and depth agree, narrowing inward" — so a comment
 // describing the outward order contradicted the ruling it was implementing.
-// `cycleStrata` decrements for exactly this reason, and
-// test/boot-smoke.test.js walks the real button 2 → 1 → 0 → 2.
+// `cycleStrata` decrements for exactly this reason (and never dips into the
+// basement, O-182), and test/boot-smoke.test.js walks the real button
+// 2 → 1 → 0 → 2.
 //
 // Each press pushes the stack one layer deeper — the front is full size,
 // one layer back recedes to 0.4, two layers back to 0.2 — each receding one
@@ -300,6 +347,10 @@ const CHOOSERS = [
     // was not the one chosen; it remains one line away if he wants it.
     label: key => dimensionBridge.translationAbbrev(key, strataPreview?.language || null),
     selected: () => dimensionBridge.getSelection().translation,
+    // A placeholder seat (O-184) is drawn hollow, and the ring never settles
+    // on one: the snap passes it for the nearest real seat.
+    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : ''),
+    inert: key => Boolean(dimensionBridge.isComing?.(key)),
     select: key => {
       const ok = dimensionBridge.setTranslation(key);
       window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
@@ -346,6 +397,18 @@ const seatParts = key => { const at = key.lastIndexOf('@'); return at < 0 ? { id
 const keptSeat = key => { const { id, edition } = seatParts(key); return bookmarksOf(currentVolumeId).find(b => b.id === id && (b.edition ?? null) === edition) || null; };
 const currentEdition = () => dimensionBridge.getSelection()?.translation ?? null;
 const isHit = key => { const { id, edition } = seatParts(key); return hitSeats().some(h => h.id === id && (h.edition ?? null) === edition); };
+// THE MARKS AND THE LEGEND (O-188, Howell 2026-09-30, with a sketch: "a
+// simple legend with a symbol for both bookmarks and well-known verses ...
+// each verse in the focus ring would have this symbol next to it"; then,
+// seeing glyphs: "any symbol is too busy and we're just going to have to do
+// it with colors"). Every node wears one colour (O-164/O-178), so the NAME
+// carries the difference: a bookmark's in one colour, a landmark's in
+// another, the legend's two words in the same two. The words are the
+// tongue's own, from its naming kit (vocabulary.bookmark, .landmark), and a
+// tongue without them shows no legend rather than an English one.
+const MARK_BOOKMARK = 'is-bookmark';
+const MARK_LANDMARK = 'is-landmark';
+let basementWords = null;          // { bookmark, landmark } in the reader's tongue, or null
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
@@ -367,6 +430,9 @@ const BASEMENT = {
   // Kept: filled. A hit: its own fill, never mistaken for something kept.
   // Loose (arrived with, or dropped this visit): hollow, provisional.
   classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
+  markFor: key => (keptSeat(key) ? MARK_BOOKMARK : isHit(key) ? MARK_LANDMARK : null),
+  legend: () => (basementWords && (basementWords.bookmark || basementWords.landmark)
+    ? [[MARK_LANDMARK, basementWords.landmark], [MARK_BOOKMARK, basementWords.bookmark]] : null),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; }
 };
@@ -981,13 +1047,23 @@ function setStratumVisual(el, scale, blurPx, opacity = 1, offsetX = 0, offsetY =
   // The recede TRANSFORM rides the inner <g>; the BLUR + opacity ride the
   // outer <svg> — WebKit honors a filter on an <svg>, not on a <g> (Howell
   // 2026-07-27, the strata half of the iOS blur fix).
-  const inner = el.querySelector?.('.stratum-inner') || el;
+  //
+  // NOT A CSS TRANSFORM ON THE OUTER SVG (O-185 tried it, 2026-09-30, and
+  // O-187 withdrew it the same afternoon). Composited, the ring is rasterised
+  // at the scale it is shown at, and a ring flying in from six times scale
+  // is a layer no phone can tile: Howell's screenshots showed the band in
+  // fragments, the edition ring caught at twice its size with no band at
+  // all. The attribute re-rasterises the ring each frame into a
+  // viewport-sized layer, which is what the primary does and what the phone
+  // can afford; the names' shimmer is answered by geometricPrecision.
+  const inner = el.querySelector?.('.stratum-inner') || el.__inner || el;
   const still = Math.abs(offsetX) < 0.5 && Math.abs(offsetY) < 0.5;
   if (Math.abs(scale - 1) < 0.001 && blurPx < 0.01 && opacity > 0.999 && still) {   // at rest — and 2.6× is not rest
-    inner.removeAttribute('transform'); el.style.filter = ''; el.style.opacity = ''; return;
+    inner.removeAttribute('transform'); el.style.transform = ''; el.style.transformOrigin = ''; el.style.filter = ''; el.style.opacity = ''; return;
   }
   const slide = still ? '' : `translate(${offsetX.toFixed(1)} ${offsetY.toFixed(1)}) `;
   inner.setAttribute('transform', `${slide}${scaleAboutCentre(scale)}`);
+  el.style.transform = ''; el.style.transformOrigin = '';
   el.style.filter = blurPx > 0.01 ? `blur(${blurPx}px)` : '';
   el.style.opacity = String(opacity);
 }
@@ -1029,10 +1105,11 @@ const strataBelow = below => { if (strataLayer?.classList) strataLayer.classList
 const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
   mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
-  classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0
+  classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0,
+  markFor: ch.markFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
 });
 
-function renderStack() {
+function renderStack({ keepFront = false } = {}) {
   if (strataFront < 0) {
     // THE BASEMENT IS FRONT (O-126): the primary has left, the choosers are
     // not in play, and the basement's ring stands alone with nothing behind.
@@ -1063,17 +1140,18 @@ function renderStack() {
   CHOOSERS.forEach((ch, ci) => {
     const pos = ci + 1;
     if (pos > strataFront) { hideStratum(strataLayer, ch.id); return; }
+    // A ring under a finger is the finger's (O-185): repainting it at its
+    // committed seat mid-drag snapped it home for a frame at every node
+    // crossing, which read as a flicker.
+    if (keepFront && pos === strataFront) return;
     const items = ch.items();
     // A receded plane shows its PREVIEW selection when one is running, so the
     // edition under the lens tracks the language being turned behind it.
     const shown = (pos !== strataFront && ch.previewSelected?.()) || ch.selected();
-    const g = renderStratum(strataLayer, {
-      id: ch.id, viewport, items,
-      selectedIndex: Math.max(0, items.indexOf(shown)),
-      mirrored: ch.mirrored,
-      labelFor: ch.label,
-      centerMagnified: ch.centerMag
-    });
+    // Through stratumOpts, as every other paint of a ring is (O-184): this
+    // site built its options by hand and so drew a placeholder seat filled
+    // on arrival, hollow only once the ring was touched.
+    const g = renderStratum(strataLayer, stratumOpts(ch, items, Math.max(0, items.indexOf(shown))));
     applyStratumDepth(g, strataFront - pos);
   });
   }
@@ -1178,13 +1256,21 @@ function previewFromLens(ch, items, centerIndex) {
     // A language is passing: restock the edition plane and take its default,
     // exactly the edition committing this language would choose.
     const editions = dimensionBridge.translationsOf(item) || [];
-    strataPreview = { language: item, edition: editions[0] || null };
+    strataPreview = { language: item, edition: editions.find(k => !dimensionBridge.isComing?.(k)) || null };
   } else {
     strataPreview = { ...(strataPreview || {}), edition: item };
   }
-  renderStack();          // receded planes re-stock and re-seat
-  previewPrimary(strataPreview); // and the text behind the glass follows
+  // The ring under the finger paints in THIS frame; the receded planes and
+  // the verse behind the glass follow in the next (O-185), so a node
+  // crossing costs the turning ring nothing.
+  if (previewFollow) cancelAnimationFrame(previewFollow);
+  previewFollow = requestAnimationFrame(() => {
+    previewFollow = 0;
+    renderStack({ keepFront: true });   // receded planes re-stock and re-seat
+    previewPrimary(strataPreview);      // and the text behind the glass follows
+  });
 }
+let previewFollow = 0;
 
 // Ease the ring from wherever it settled (maybe out in the overrun) back to the
 // nearest real node — the SPRINGBACK that makes the last link go taut, and the
@@ -1249,12 +1335,19 @@ if (strataLayer) {
       strataDrag.center - (dx + dy) * STRATA_DRAG_SENSITIVITY / strataDrag.spacing,
       strataDrag.items.length
     );
-    renderFrontStratumAt(strataDrag.center);
+    // One paint per frame, at the latest centre (O-185): a fast finger sends
+    // several moves a frame, and each used to paint the ring.
+    if (!strataDrag.raf) strataDrag.raf = requestAnimationFrame(() => {
+      const d = strataDrag; if (!d) return;
+      d.raf = 0;
+      renderFrontStratumAt(d.center);
+    });
   });
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>
     strataLayer.addEventListener(type, event => {
       if (!strataDrag) return;
       const { items, center, moved } = strataDrag;
+      if (strataDrag.raf) cancelAnimationFrame(strataDrag.raf);
       strataDrag = null;
       const ch = activeChooser();
       // Tap (no drag) on a node → glide THAT node into the lens; a drag → snap
@@ -1269,6 +1362,14 @@ if (strataLayer) {
         else if (ch === BASEMENT && items.length && lensHit(event, ch)) toggleKeep(items[target]);
       }
       if (!items.length) return;   // an empty basement: nothing to settle
+      // A placeholder seat cannot be chosen (O-184): the ring settles on the
+      // nearest real seat instead, whichever side it lies.
+      if (typeof ch.inert === 'function' && ch.inert(items[target])) {
+        for (let d = 1; d < items.length; d += 1) {
+          if (target + d < items.length && !ch.inert(items[target + d])) { target += d; break; }
+          if (target - d >= 0 && !ch.inert(items[target - d])) { target -= d; break; }
+        }
+      }
       springbackStrata(center, target, ch, items);
     })
   );
@@ -1336,6 +1437,7 @@ function layerStates(front) {
 // release. Nothing about the state (strataFront, the funnel, the basement
 // visit) changes inside a glide; that is the caller's, at the settle.
 function beginGlide(fromFront, toFront) {
+  if (bootOvertureLive && !bootOvertureGliding) { const o = bootOvertureLive; bootOvertureLive = null; o.abort(); }
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
   // A truck begun while a chooser ring is mid-turn (a second finger, or a
   // springback still gliding) must not leave that turn dangling: its drag,
@@ -1359,12 +1461,7 @@ function beginGlide(fromFront, toFront) {
     const inFrom = pos <= fromFront, inTo = pos <= toFront;
     if (!inFrom && !inTo) { hideStratum(strataLayer, ch.id); return; }
     const items = ch.items();
-    groups[ch.id] = renderStratum(strataLayer, {
-      id: ch.id, viewport, items,
-      selectedIndex: Math.max(0, items.indexOf(ch.selected())),
-      mirrored: ch.mirrored, labelFor: ch.label,
-      centerMagnified: ch.centerMag
-    });
+    groups[ch.id] = renderStratum(strataLayer, stratumOpts(ch, items, Math.max(0, items.indexOf(ch.selected()))));   // one options builder for every paint (O-184)
     // Past the film plane the plane keeps scaling about the same centre — the
     // course the magnifier was already on — until it is off the frame. NO
     // DISSOLVE (Howell, phone check 2026-09-14: "There should be no change in
@@ -1498,11 +1595,18 @@ function arriveAt(from, to) {
   if (dimensionButton) dimensionButton.setAttribute('aria-pressed', String(isStrataOpen()));
   placeThumb();
 }
-// THE TAP'S ROUND (Howell, 2026-09-14): languages, editions, the text, the
-// basement, and round to the languages — one floor down per tap, the
-// basement included, the wrap from the bottom back to the top.
+// THE TAP'S ROUND (O-182, Howell 2026-09-30, retiring the round of
+// 2026-09-14 that took the basement in on the way): a tap never goes DOWN
+// into the basement — that is the slide's, below the fence (O-147) — so from
+// the text a tap goes all the way up to the languages, then one floor down
+// per tap: languages, editions, the text, and up again. From the basement a
+// tap simply returns the reader to the text, at the verse under the
+// basement's lens, a bookmark or a favourite (goToStratum's ascent already
+// carries it: jumpToChosen).
 function cycleStrata() {
-  goToStratum(strataFront <= minStrataFront() ? maxStrataFront() : strataFront - 1);
+  if (strataFront < 0) goToStratum(0);
+  else if (strataFront === 0) goToStratum(maxStrataFront());
+  else goToStratum(strataFront - 1);
 }
 function resetStrata() {
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
@@ -2308,7 +2412,9 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
     // a nicety: a volume behind its wall enumerates only what has migrated, so
     // a hard-coded starting address names something unreachable, and a default
     // that cannot resolve is a blank screen.
-    ...config.buildOptions({ params, startup, arrangements, root }),
+    // The reader's memory rides in so the volume may resume the verse last
+    // read (O-179); volumes that keep no place ignore it.
+    ...config.buildOptions({ params, startup, arrangements, root, memory: recall(resolvedVolume) }),
     debug: debugFlag
   };
   return { volume: resolvedVolume, config, manifest, root, options, supplemental };
@@ -2339,13 +2445,6 @@ function applyTheme(volume) {
   // the band's material — chain and links, one metal — while RADIAL travel
   // (parent vessel, pyramid) keeps the volume's node color. Derived from
   // whatever band the volume wears, so every volume follows automatically.
-  const darkenHex = (hex, f) => {
-    const m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim());
-    if (!m) return hex;
-    const n = parseInt(m[1], 16);
-    const ch = v => Math.max(0, Math.round(v * f)).toString(16).padStart(2, '0');
-    return `#${ch((n >> 16) & 255)}${ch((n >> 8) & 255)}${ch(n & 255)}`;
-  };
   // THE OVERRIDE THAT IS NOT YET READ, and the constraint that will bind it
   // when it is (O-3, recorded 2026-08-23 under W-139's sweep — the entry had
   // no home outside the ledger). When per-volume travel colours are chosen,
@@ -2361,15 +2460,17 @@ function applyTheme(volume) {
   // it. A declared override skips the derivation and therefore skips the
   // safety the derivation happens to give: whoever declares one owes the
   // second measurement.
-  // THE BAND IS THE DARKER, THE NODES THE LIGHTER (O-166, Howell 2026-09-18:
-  // "make the focus ring band the darker color. And all of the nodes, parent
-  // button, magnifier, focus ring, child pyramid, make all of these nodes the
-  // lighter color, which is the current focus ring band color"). The same
-  // pair of shades as before, swapped: the volume's declared band colour is
-  // the one colour every node wears, and the band is that colour one step
-  // darker — which overrides the band set above, once darkenHex exists.
-  root.style.setProperty('--theme-color-orbital', active.band);
-  root.style.setProperty('--theme-color-band', darkenHex(active.band, 0.78));
+  // EVERY NODE WEARS THE VOLUME'S OWN NODE COLOUR, AND THE BAND ITS OWN
+  // BAND COLOUR (O-178, Howell 2026-09-24: another volume's reveal "remains
+  // monochrome ... the yellow colors never come in at the end"). O-164 and
+  // O-166 were ruled looking at one volume — every node one colour, the band
+  // a step darker — and were written as a DERIVATION from the band, which
+  // put a second volume's gold on nothing and left it grey. The rule stands
+  // and the derivation goes: each volume DECLARES its node colour and its
+  // band colour in its palette; the first volume's palette now names the
+  // very shades Howell approved, and the second's gold is back on every node.
+  root.style.setProperty('--theme-color-orbital', active.node);
+  root.style.setProperty('--theme-color-band', active.band);
   root.style.setProperty('--theme-color-accent', active.accent);
   root.style.setProperty('--theme-color-magnifier-stroke', active.magnifierStroke);
   if (document.body) {
@@ -3034,7 +3135,6 @@ function wireInteractions(getApp) {
   // screen-vertical swipes are superseded by the compass below (O-152); a
   // press on either is still its control's tap if it never travels, and the
   // click that follows a stroke is swallowed by these timestamps.
-  let parentSwipeFiredAt = 0;
   // THE COMPASS DECIDES (O-152, Howell 2026-09-16), superseding O-142's angle
   // to the hub and the lens's and parent's own screen-vertical swipes (O-131,
   // O-132). Every drag on the glass — open ground, a ring node, the verse
@@ -3046,11 +3146,36 @@ function wireInteractions(getApp) {
   // 10° gaps between them do nothing until the finger lifts. At a leaf a
   // drill in does nothing; at the top a drill out does nothing. Once decided,
   // a stroke is measured only along its own axis. A press that never travels
-  // DECIDE_PX is the tap it always was. The pyramid's stars still drill on
-  // touch.
+  // DECIDE_PX is the tap it always was.
+  //
+  // ONE GESTURE FOR THE DRILL (O-191, Howell 2026-10-01): taps no longer
+  // drill, not on a star and not on the parent seat; the only taps are a ring
+  // node and the sector's page forward. A stroke towards the lens drills in,
+  // a stroke towards the sky drills out, wherever it begins — the parent
+  // seat is a readout. If the stroke began on a star, or within a thumb of
+  // one, THAT star comes to the lens; otherwise the sky's largest. And no
+  // dead zones: every stroke is the nearer of the two axes.
   // 8 px, the tap slop (O-152 amended: the log showed slow strokes taking
   // 350–800 ms to travel 14 px with nothing moving).
   const DECIDE_PX = 8;             // the stroke declares itself here; the ring waits that long
+  const THUMB_PX = 24;             // a star within this of the touch is "the star it began on" (O-191)
+  let pendingStarTap = null;       // the star a press landed on or near, for the tap's acknowledgement
+  // The nearest star to a touch, within a thumb's reach past its own rim.
+  const nearestStar = event => {
+    try {
+      const circles = svg.querySelectorAll('.child-pyramid-nodes circle');
+      let best = null;
+      for (const el of circles) {
+        const raw = el.dataset?.index ?? el.getAttribute?.('data-index');
+        const idx = Number.parseInt(raw, 10);
+        if (!Number.isFinite(idx)) continue;
+        const r = el.getBoundingClientRect?.(); if (!r || !r.width) continue;
+        const dist = Math.hypot(event.clientX - (r.left + r.width / 2), event.clientY - (r.top + r.height / 2));
+        if (dist <= r.width / 2 + THUMB_PX && (!best || dist < best.dist)) best = { idx, el, dist };
+      }
+      return best;
+    } catch (_) { return null; }
+  };
   let stroke = null;               // { x0, y0, decided, pendingDelta, dead } for the drag under way
   let freeDrill = null;            // { kind, x0, y0, ux, uy, ctl, travel, e, undo } — a drill a stroke began
   let controlPress = null;         // { x0, y0, isParent, dead } — a press on the lens or the parent button
@@ -3082,24 +3207,27 @@ function wireInteractions(getApp) {
   };
   // Begin a drill from a stroke that started at (x0, y0); false when there is
   // nothing to drill that way — which the compass rule reads as nothing at all.
-  const beginFreeDrill = (kind, event, x0, y0) => {
+  const beginFreeDrill = (kind, event, x0, y0, star = null) => {
     const app = getApp();
     if (!app) return false;
     const axis = axisFor(kind, lean());
     const fd = { kind, x0, y0, ux: axis.ux, uy: axis.uy, e: 0, pointerId: event?.pointerId ?? null };
     if (kind === 'in') {
-      const idx = app.largestPyramidIndex?.() ?? -1;
+      // The star the stroke began on (or within a thumb of), else the sky's
+      // largest — on a verse sky the day's lectionary standout (O-191).
+      const idx = Number.isFinite(star) && star >= 0 ? star : (app.largestPyramidIndex?.() ?? -1);
       if (idx < 0) return false;   // a leaf: nothing below
-      fd.undo = () => { const p = app.view?.parentButtonOuter; if (typeof p?.onclick === 'function') p.onclick(event); };
-      logTap('stroke-drill-in', { idx });
+      fd.undo = () => { app.drillOut?.(); };
+      logTap('stroke-drill-in', { idx, chosen: Number.isFinite(star) && star >= 0 ? 'star' : 'largest' });
       beginDrill(fd, app, () => app.handlePyramidNodeClick(idx));
     } else {
-      const p = app.view?.parentButtonOuter;
-      if (typeof p?.onclick !== 'function') return false;   // the top: nothing above
+      if (typeof app.drillOut !== 'function') return false;
+      // A parent with no name is no parent (O-190): the top has nothing above.
+      if (!String(app.view?.parentButtonOuterLabel?.textContent || '').trim()) return false;
       const wasAt = app.nav?.getCurrent?.() || null;
       fd.undo = () => { if (wasAt) app.drillIntoItem?.(wasAt); };
       logTap('stroke-drill-out', {});
-      beginDrill(fd, app, () => p.onclick(event));
+      beginDrill(fd, app, () => app.drillOut());
     }
     if (!fd.ctl) return false;
     freeDrill = fd;
@@ -3146,11 +3274,12 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       const press = controlPress;
       const bearing = bearingOf(vx, vy);
-      const kind = classifyBearing(bearing, lean(), bandOpts());
-      logTap('control-stroke', { kind, parent: press.isParent, bearing: Math.round(bearing) });
-      // Whatever it decides, the press is no longer a tap on its control.
-      if (press.isParent) parentSwipeFiredAt = Date.now(); else lensSwipeFiredAt = Date.now();
+      const kind = sketchedKind(bearing);   // the wedges as drawn; null is dead
+      logTap('control-stroke', { kind, bearing: Math.round(bearing) });
+      // Whatever it decides, the press is no longer a tap on the lens.
+      lensSwipeFiredAt = Date.now();
       if (kind === 'cw' || kind === 'ccw') {
+        noteSwipe(bearing, kind, lean(), press.x0, press.y0, ' lens');
         controlPress = null;
         isDragging = true; recentMoves = []; gestureTravelPx = Math.hypot(vx, vy);
         lastX = event.clientX; lastY = event.clientY; lastTime = event.timeStamp;
@@ -3160,11 +3289,13 @@ function wireInteractions(getApp) {
         return;
       }
       if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, press.x0, press.y0)) {
+        noteSwipe(bearing, kind, lean(), press.x0, press.y0, ' lens');
         controlPress = null;
         freeDrill.e = freeDrillProgress(freeDrill, event);
         freeDrill.ctl.scrubTo(freeDrill.e);
         return;
       }
+      noteSwipe(bearing, kind, lean(), press.x0, press.y0, kind === null ? ' lens' : ' lens, nothing there');
       press.dead = true;   // a dead zone, or nothing to drill that way: nothing until lift
       return;
     }
@@ -3214,14 +3345,17 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
       const bearing = bearingOf(vx, vy);
-      const kind = classifyBearing(bearing, lean(), bandOpts());
-      logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), bands: bandOpts() });
-      if (kind === 'cw' || kind === 'ccw') { app.choreographer.rotate(stroke.pendingDelta); return; }
-      pendingTapNode = null; pendingAdvanceTap = false;
-      if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, stroke.x0, stroke.y0)) { isDragging = false; return; }
-      stroke.dead = true;
+      const kind = sketchedKind(bearing);   // the wedges as drawn; null is dead
+      logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), star: stroke.star ?? null });
+      if (kind === null) { noteSwipe(bearing, null, lean(), stroke.x0, stroke.y0); stroke.dead = true; return; }   // a dead wedge: nothing until lift
+      if (kind === 'cw' || kind === 'ccw') { noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0); app.choreographer.rotate(stroke.pendingDelta); return; }
+      pendingTapNode = null; pendingAdvanceTap = false; pendingStarTap = null;
+      if (beginFreeDrill(kind, event, stroke.x0, stroke.y0, stroke.star)) { noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0); isDragging = false; return; }
+      noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0, ' nothing there');
+      stroke.dead = true;   // nothing to drill that way: a leaf below, or the top above
       return;
     }
+    if (!stroke) noteStrokeless();   // a turn no compass decided (swipelog only)
     app.choreographer.rotate(delta);
   };
 
@@ -3229,13 +3363,6 @@ function wireInteractions(getApp) {
   // browser's delayed native click so the same node doesn't rotate twice.
   svg.addEventListener('click', event => {
     const now = Date.now();
-    // A swipe that already migrated (O-131) must not be followed by the tap's click.
-    if (parentSwipeFiredAt && now - parentSwipeFiredAt < 700 && event.target?.closest?.('.focus-ring-parent-circle, .focus-ring-parent-label')) {
-      parentSwipeFiredAt = 0;
-      event.preventDefault();
-      event.stopPropagation();
-      return;
-    }
     if (now < suppressNativeClickUntil) {
       // Control taps (magnifier, parent button) rely on their NATIVE click
       // and their pointerdown path never arms a manual fire — suppressing
@@ -3292,7 +3419,12 @@ function wireInteractions(getApp) {
     // non-control tap arms the native-click suppressor at the line below,
     // which ate the glyph's click while its pointer events sailed through):
     // don't start drag, don't near-miss redirect, let native click run.
-    const isControlTarget = event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label, .world-glyph');
+    // The parent seat and the world glyph are READOUTS now (O-191): a press on
+    // them is a press on open ground. The lens alone is a control — its tap
+    // strikes a character or turns a verse's page — and even it strokes by
+    // the compass.
+    const onParentSeat = event.target && event.target.closest && event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label, .world-glyph');
+    const isControlTarget = !onParentSeat && event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
     if (isControlTarget) {
       isDragging = false;
       logTap('control-hit', {
@@ -3300,14 +3432,7 @@ function wireInteractions(getApp) {
         targetClass: event.target?.getAttribute?.('class') || null,
         targetId: event.target?.getAttribute?.('id') || null
       });
-      // The parent vessel (or its words): watch for the swipe (O-131). The
-      // capture goes on the CIRCLE, so a plain tap's click still lands on it.
-      const parentEl = event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label') ? app.view?.parentButtonOuter : null;
-      if (parentEl && typeof parentEl.onclick === 'function') {
-        // The parent's vessel: its stroke is decided by the compass (O-152).
-        controlPress = { x0: event.clientX, y0: event.clientY, isParent: true, dead: false };
-        try { parentEl.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
-      } else if (!searchRestore && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label')) {
+      if (!searchRestore) {
         // The lens (not in search): its stroke is decided by the compass (O-152).
         controlPress = { x0: event.clientX, y0: event.clientY, isParent: false, dead: false };
         try { app.view?.magnifierCircle?.setPointerCapture?.(event.pointerId); } catch (_) { /* unsupported */ }
@@ -3320,22 +3445,24 @@ function wireInteractions(getApp) {
     // so matching only the circle made a tap on the word itself fall through
     // to ring near-miss targeting (the multi-tap gateway bug on iOS browsers
     // whose touch-target adjustment doesn't rescue the miss).
+    // A STAR UNDER THE THUMB CHOOSES THE SEAT, IT DOES NOT DRILL (O-191). The
+    // press on a star (or its word, or within a thumb's reach of one) is
+    // remembered; a stroke towards the lens brings that star; a tap on it
+    // only acknowledges — the star swells for a beat, the way it does under
+    // the lens — so a newcomer learns "pull me" without a drill firing.
     const isPyramidNode = event.target && event.target.closest
       && event.target.closest('.child-pyramid-node, .child-pyramid-label');
+    let starIdx = null;
+    pendingStarTap = null;
     if (isPyramidNode) {
-      const attrIndex = isPyramidNode.getAttribute && isPyramidNode.getAttribute('data-index');
-      const rawIndex = isPyramidNode.dataset?.index ?? attrIndex;
+      const rawIndex = isPyramidNode.dataset?.index ?? (isPyramidNode.getAttribute && isPyramidNode.getAttribute('data-index'));
       const idx = Number.parseInt(rawIndex, 10);
-      logTap('pyramid-hit', { pointerType: event.pointerType, nodeIndex: Number.isFinite(idx) ? idx : null, rawIndex: rawIndex ?? null });
-      if (Number.isFinite(idx)) {
-        if (app.handlePyramidNodeClick) {
-          app.handlePyramidNodeClick(idx);
-        }
-        return; // don't start drag
-      }
-      // No valid index on this pyramid-shaped target (e.g. transient clone).
-      // Fall through to near-miss ring targeting instead of swallowing the tap.
-      logTap('pyramid-hit-no-index-fallback', { pointerType: event.pointerType });
+      if (Number.isFinite(idx)) { starIdx = idx; pendingStarTap = isPyramidNode; }
+      logTap('pyramid-hit', { pointerType: event.pointerType, nodeIndex: Number.isFinite(idx) ? idx : null });
+    }
+    if (starIdx === null) {
+      const near = nearestStar(event);
+      if (near) { starIdx = near.idx; pendingStarTap = near.el; logTap('star-near', { nodeIndex: near.idx, px: Math.round(near.dist) }); }
     }
 
     // THE NEXT GESTURE (Howell 2026-07-20): at a leaf, in volumes that ask
@@ -3358,7 +3485,7 @@ function wireInteractions(getApp) {
       || Boolean(isPyramidNode)
     );
     if ((event.pointerType === 'touch' || event.pointerType === 'pen') && isBackgroundLikeTarget
-      && !pendingTapNode && !pendingAdvanceTap) {
+      && !pendingTapNode && !pendingAdvanceTap && !pendingStarTap) {
       const nearby = nearestRingNode(event);
       if (nearby && typeof nearby.onclick === 'function') {
         // Same deferral as a direct node press: tap resolves at lift,
@@ -3377,7 +3504,7 @@ function wireInteractions(getApp) {
     recentMoves = [];
     gestureTravelPx = 0;
     pointerCaptured = false;
-    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false };
+    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false, star: starIdx };
     trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
     trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
     publishTrace();
@@ -3426,6 +3553,7 @@ function wireInteractions(getApp) {
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
       if (event.isPrimary === false) return;   // a second finger has no say (O-169)
+      if (type !== 'pointerleave') noteSwipeEnd(event.clientX, event.clientY);   // swipelog only
       if (controlPress && type !== 'pointerleave') controlPress = null;
       if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type); freeDrill = null; } }
       if (type !== 'pointerleave') stroke = null;
@@ -3460,6 +3588,17 @@ function wireInteractions(getApp) {
       pendingTapNode = null;
       const advanceTap = pendingAdvanceTap;
       pendingAdvanceTap = false;
+      const starTap = pendingStarTap;
+      pendingStarTap = null;
+      if (starTap && !tapNode && !advanceTap) {
+        suppressNativeClickUntil = Date.now() + 450;
+        if (gestureTravelPx <= DRAG_SLOP_PX && type === 'pointerup') {
+          // A tap on a star: the swell, and nothing else (O-191).
+          logTap('star-tap-nudge', {});
+          try { starTap.classList.add('is-nudged'); setTimeout(() => starTap.classList?.remove('is-nudged'), 400); } catch (_) { /* stub DOM */ }
+          return;
+        }
+      }
       if (advanceTap && !tapNode) {
         suppressNativeClickUntil = Date.now() + 450;
         if (gestureTravelPx <= DRAG_SLOP_PX && type === 'pointerup') {
@@ -3556,6 +3695,12 @@ let currentVolumeId = null;
 let gatewayReturnContext = null;
 let interactionsWired = false;
 let firstBootDone = false; // the boot splash plays only on the initial load
+let bootOvertureShown = false; // the overture covers the first load only (O-181)
+// The overture in progress, and whether the glide being begun is its own.
+// Any OTHER glide — the reader's slider, a tap, a test driving the floors —
+// ends the overture on the spot, and it leaves the floors to whoever moved
+// them: the sheet lifts, nothing is settled on the reader's behalf.
+let bootOvertureLive = null, bootOvertureGliding = false;
 
 // Sample points along the visible focus-ring arc — the first stroke the boot
 // splash inks. Ordered endAngle→startAngle so the self-draw sweeps from the
@@ -3688,6 +3833,29 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     && volumeConfigs[resolveVolumeId(volumeOverride, searchOverride)]?.bootSplash === true
     && bootSplashShouldPlay();
   firstBootDone = true;
+  // THE BOOT OVERTURE (O-181): the card while the volume loads, then the
+  // app's own migration in from its language ring. Not under the first-visit
+  // reveal, not on a gateway transit, not on a re-boot.
+  // THE CARD (O-180): the volume's emblem and name from the first frame. On a
+  // return visit the card is remembered on the phone and is up before the
+  // manifest is; on the first it goes up the moment the declaration arrives.
+  const bootVolumeId = resolveVolumeId(volumeOverride, searchOverride);
+  const splashKey = `wheel:splash:${bootVolumeId}`;
+  const rememberedSplash = (() => { try { return JSON.parse(localStorage.getItem(splashKey) || 'null'); } catch { return null; } })();
+  if (rememberedSplash) overtureMark('splash-remembered');
+  const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
+    ? beginBootOverture({ viewport: measureViewport(), splash: rememberedSplash }) : null;
+  bootOvertureShown = true;
+  // A FIRST VISIT'S CARD GOES UP THE MOMENT THE MANIFEST IS PARSED (O-181),
+  // not when the boot has also gathered its bundles: on Howell's phone over
+  // 4G the manifest was in hand at 0.4 s and the card waited until 2.3 s.
+  if (overture && !rememberedSplash) {
+    const cfg = volumeConfigs[bootVolumeId];
+    document.addEventListener('wheel:volume-early', e => {
+      const declared = splashRecord(e.detail, cfg?.assetBase);
+      if (declared) { overtureMark('splash-early'); overture.splash(declared); }
+    }, { once: true });
+  }
   if (playSplash) {
     if (svg) svg.style.opacity = '0';
     // Hide the copyright as early as possible — it is an index.html div,
@@ -3713,6 +3881,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
 
   let { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
+  {
+    const declared = splashRecord(root, config.assetBase);
+    if (declared) overtureMark('splash-declared');
+    if (overture && declared) overture.splash(declared);
+    try {
+      if (declared) localStorage.setItem(splashKey, JSON.stringify(declared));
+      else localStorage.removeItem(splashKey);
+    } catch { /* per-phone convenience only */ }
+  }
   const translationsMeta = supplemental?.translationsMeta || null;
   dimensionBridge.setTranslationsMeta(translationsMeta);
   dimensionBridge.setLanguagesMeta(supplemental?.languagesMeta || null);
@@ -3725,7 +3902,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // been withdrawn falls through to the default rather than stranding.
   if (!dimensionStore.getState().language) {
     const remembered = recall(volume).edition;
-    if (!(remembered && dimensionBridge.setTranslation(remembered)) && options.translation) {
+    // THE PHONE'S OWN TONGUE ON A FIRST VISIT (O-176): nothing remembered and
+    // no edition named on the address, so the languages the reader set on
+    // their phone choose — the first one the volume offers. After this the
+    // reader's own choice is remembered and wins.
+    const named = new URLSearchParams(window.location.search).get('edition');
+    const offered = (supplemental?.languagesMeta?.languages || []).map(l => l?.id).filter(Boolean);
+    const byTongue = (!remembered && !named) ? firstOfferedLanguage(phoneLanguages(), offered) : null;
+    if (!(remembered && dimensionBridge.setTranslation(remembered))
+        && !(byTongue && dimensionBridge.setLanguage(byTongue))
+        && options.translation) {
       dimensionBridge.setTranslation(options.translation);
     }
   }
@@ -3834,6 +4020,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // The naming kit is where a tongue's words for its levels live now; the
     // registry lookup stays as the belt for a volume that still has one.
     namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
+    // The basement's legend words ride the same vocabulary (O-188).
+    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null } : null;
     return namesMap;
   };
   refreshNamesMap();
@@ -4280,6 +4468,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (!current?.id || !isDetailLevel(current, adapterNormalized)) return;
     remember(volume, { itemId: current.id });
   };
+  // WHEN EVERY SHELF IS STOCKED (O-175), one quiet redraw seats whatever
+  // waited on another edition — a bookmark to its leaf, a hit on its ring.
+  manifest?.__wallVolume?.allReady?.().then(() => { if (currentApp === app) app?.refreshPyramid?.(); });
 
   // Detail renders resolve the translation LIVE (the sticky choice can
   // change between renders); the settle hook below regenerates the open
@@ -4351,7 +4542,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // the same index, and sometimes not the same number. A volume that returns
     // false (or declares no handler) keeps the reader exactly where they are,
     // which is the right answer whenever the editions agree.
-    editionSettlePromise = Promise.resolve(config.onEditionSettle?.(translation || null))
+    // THE SHELF MUST BE STOCKED BEFORE THE RESEAT (O-175): an edition's charts
+    // may still be arriving behind the boot; the reseat waits for them.
+    editionSettlePromise = Promise.resolve(currentManifest?.__wallVolume?.ready?.(translation))
+      .then(() => config.onEditionSettle?.(translation || null))
       .then(() => handlerSet.reseatOnEditionChange?.({
         selected: app?.nav?.getCurrent?.(), app
       }))
@@ -4412,7 +4606,13 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   previewPrimary = preview => {
     if (!preview) return;
     const edition = preview.edition;
-    if (!edition || edition === dimensionBridge.comingSoonKey) return;
+    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition)) return;
+    // A preview of an edition still arriving (O-175) waits for it, then
+    // shows it — unless the finger has moved on to another by then.
+    const vol = currentManifest?.__wallVolume;
+    if (vol?.isReady && !vol.isReady(edition) && typeof vol.ready === 'function') {
+      vol.ready(edition).then(() => { if (options.previewEdition === edition) previewPrimary(preview); });
+    }
     refreshNamesMap(preview.language);
     // WHICH EDITION IS UNDER THE LENS (O-94). The chain still holds the
     // committed edition's book ids, so whoever names a book during a preview
@@ -4450,6 +4650,34 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // used to be the one exception to a launch funnel that no longer exists.
   showVersion();
   performance.mark('wheel:render-done');
+  // THE OVERTURE'S MIGRATION IS THE APP'S OWN (O-181): behind the card the
+  // instrument stands at its language ring, and the live floors then glide
+  // in exactly as they do when the slider is drawn.
+  if (overture) {
+    bootOvertureLive = overture;
+    overture.ready({
+      scrub: overtureScrubWanted(),
+      // The migration is the slider's own glide (O-126), driven by the
+      // overture's clock instead of the thumb; a volume with no floors gets
+      // the card alone.
+      drive: (dimensionAvailable() && maxStrataFront() >= 2) ? {
+        setFront: f => { strataFront = f; },
+        render: () => renderStack(),
+        glide: (a, b) => { bootOvertureGliding = true; try { return beginGlide(a, b); } finally { bootOvertureGliding = false; } },
+        // The globe rides the migration as it rides a drag (Howell
+        // 2026-09-30: it was "out of sync during the drill in and jumps
+        // around independently"): its position IS the stratum, set per frame
+        // with the snap transition off, and left at the text at the end.
+        thumb: p => { if (!dimensionButton) return; dimensionButton.classList.add('is-sliding'); try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`); } catch (_) { /* stub DOM */ } },
+        // The hand comes off before the settle, so the globe's step down from
+        // its pressed size rides its own transition instead of jumping
+        // (Howell 2026-09-30: "it seems to jump to a slightly smaller
+        // radius" at the end).
+        unslide: () => dimensionButton?.classList?.remove('is-sliding'),
+        arrive: () => { bootOvertureLive = null; arriveAt(1, 0); }
+      } : null
+    });
+  }
   recordBootPhases(volume);
   if (options.debug) mountFeelHud();
   mountProbe(); // inert unless ?probe=1 — field diagnostics to the drop box

@@ -1,8 +1,8 @@
 :root[data-theme="bible"] {
   --theme-color-bg: #d4a574;
-  --theme-color-node: #8b6f47;
+  --theme-color-node: #8a6a49; /* O-178: the shades applyTheme sets, so nothing shifts when it runs */
   --theme-color-text: #000000;
-  --theme-color-band: #7a7979;
+  --theme-color-band: #6c5339;
   --theme-color-accent: #8b6f47;
   --theme-font-body: 'Montserrat', sans-serif;
   --theme-font-label: 'Montserrat', sans-serif;

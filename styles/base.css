@@ -355,8 +355,12 @@ svg :focus-visible {
      when sought, quiet when not (Howell 2026-07-22, tuned by eye). */
   color: #363636;
 }
-#dimension-button:hover,
 #search-button:hover { opacity: 1; }
+/* THE GLOBE HAS ONE BRIGHTNESS, AND A FAINT ONE (Howell 2026-09-30: "I really
+   don't want the globe to call attention to itself, so it should remain at
+   the more faint level and stay there... it can even be slightly dimmer than
+   it has been"). No hover, no pressed state, no swell — one size, one light. */
+#dimension-button, #dimension-button:hover, #dimension-button[aria-pressed="true"] { opacity: 0.7; }
 
 /* ── Search mode: the same room under a different light ───────────────────
    The ground dims for close work (computed from the ACTIVE theme in
@@ -381,7 +385,11 @@ svg :focus-visible {
    the detail-sector color the search dims to. */
 :root[data-theme].search-mode .focus-ring-node { fill: var(--color-nodes); }
 :root[data-theme].search-mode .focus-ring-magnifier-circle { fill: var(--color-nodes); }
-:root.search-mode .child-pyramid-node {
+:root.search-mode /* A TAP ON A STAR ACKNOWLEDGES AND NOTHING MORE (O-191): the swell it wears
+   under the lens, for a beat — "pull me". */
+@keyframes star-nudge { 0% { transform: scale(1); } 40% { transform: scale(1.35); } 100% { transform: scale(1); } }
+.child-pyramid-node.is-nudged { transform-box: fill-box; transform-origin: center; animation: star-nudge 350ms ease-out; }
+.child-pyramid-node {
   fill: rgba(255, 255, 255, 0.14);
   stroke: rgba(255, 255, 255, 0.30);
 }
@@ -410,7 +418,9 @@ svg :focus-visible {
    a notch rides the transition, a drag sets it per frame with the
    transition off. */
 #dimension-button { transform: translateY(var(--thumb-y, 0px)); touch-action: none; /* the slider owns the vertical drag */ }
-#dimension-button[aria-pressed="true"] { opacity: 1; transform: translateY(var(--thumb-y, 0px)) scale(1.08); }
+/* ONE SIZE, ONE LIGHT (Howell 2026-09-30): the globe used to swell to 1.08
+   and brighten to full while a stratum was open. Neither now — see the
+   brightness rule beside its base rule above. */
 #dimension-button.is-sliding { transition: opacity 0.15s ease; }
 /* THE PHRASE beside the globe while the thumb is held in the overrun
    (O-128): the volume's own words, in the reader's tongue. */
@@ -433,6 +443,11 @@ svg :focus-visible {
 /* The thumb's springback out of the overrun: eased, a touch longer than the
    snap between stops — the Focus Ring's own feel. */
 #dimension-button { transition: opacity 0.15s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1); }
+/* A PLACEHOLDER SEAT on the edition ring (O-184): an edition the shelf is
+   being built toward, not yet in the corpus — hollow, its name a shade
+   lighter, never chosen. */
+.secondary-strata-node.is-coming { fill: none; stroke: var(--color-orbital); stroke-width: 1.5; }
+.secondary-strata-node.is-coming + .secondary-strata-label { opacity: 0.62; }
 /* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
    with, not yet kept: hollow, so keeping it visibly fills it. */
 .secondary-strata-node.is-provisional { fill: none; stroke: var(--color-orbital); stroke-width: 2; }
@@ -464,6 +479,24 @@ svg :focus-visible {
 
 /* The secondary strata (D.3) — identical colors, band, and font to the
    primary strata (Howell 2026-07-21). Color placeholder retired. */
+/* NO will-change ON A STRATUM (O-187): composited, a ring flying in from
+   six times scale is a layer no phone can tile — the band came up in
+   fragments. The recede is an attribute on the inner group, re-rasterised
+   each frame into a viewport-sized layer, as the primary's is. */
+/* Names on a receding ring do not re-hint at every fractional scale. */
+.secondary-strata-label { text-rendering: geometricPrecision; }
+/* The basement's legend (O-188): the label's face and size, upright in the
+   open ground beside the ring; and THE COLOURS that tell a bookmark from a
+   landmark, on the legend's words and on the seats' names alike (Howell
+   2026-09-30: "a dark red and a dark blue"). Nodes keep their one colour. */
+.secondary-strata-legend {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  pointer-events: none;
+}
+.secondary-strata-label.is-landmark, .secondary-strata-legend.is-landmark { fill: #7f1d1d; }
+.secondary-strata-label.is-bookmark, .secondary-strata-legend.is-bookmark { fill: #16337a; }
 .secondary-strata-band {
   fill: none;
   stroke: var(--color-band);

@@ -94,34 +94,41 @@ export class VolumeLogo {
    */
   getBounds() {
     if (!this.circle) return null;
-    // While expanded or animating, logo is not in upper-right — no CPUA cropping
-    if (this._expanded || this._animating) return null;
+    // THE FENCE STANDS WHILE THE BADGE IS FLYING HOME (O-189, Howell's phone
+    // 2026-10-01: a verse's star seated on top of the crown). This answered
+    // nothing while the badge was animating — written when the sky was laid
+    // only at rest, and true then. The drill-out's rework (O-161: the verse
+    // folds into the badge over the flight; O-170: departing nodes fly
+    // straight to their sky seats) lays the sky at the start of that very
+    // flight, so the sky asked for a corner to avoid and was told there was
+    // none. The badge's DESTINATION is what the sky must avoid: collapsed, or
+    // collapsing, the corner box; expanded, or expanding, nothing — the sky
+    // is suppressed for an arriving sector anyway.
+    if (this._expanded && !this._collapsing) return null;
+    if (this._animating && !this._collapsing) return null;
 
-    const shorterSide = Math.min(this.viewport.width, this.viewport.height);
-    const radius = shorterSide * 0.12;
-    const margin = shorterSide * 0.03;
-    
-    // Square box size (80% of full logo size)
-    const fullSize = radius * 2 * LOGO_COLLAPSED_SCALE;
-    const boxSize = fullSize * 0.80;
-    const boxHalfSize = boxSize / 2;
-    
-    // Position from top-left origin (SVG default)
-    const centerX = this.viewport.width - boxHalfSize - margin;
-    const centerY = boxHalfSize + margin;
-    
+    // AND THE FENCE IS WHERE THE BADGE IS (O-189, the same morning: a seat
+    // of the sky inside the circle itself). This box was still computed from the
+    // badge's OLD seat and size — the one every emblem shared before O-148
+    // (2026-09-16) placed the circle by the largest emblem's box and let the
+    // crown ring it at 1.8 — so the sky was keeping clear of a corner the
+    // badge had left. The box is now the emblem's own, centred on the
+    // circle, the same geometry that draws it: for the crown, the thorns'
+    // full spread; for the scroll, a little past its circle.
+    const { centerX, centerY, radius, logoWidth, logoHeight } = this._collapsedGeometry();
+    const boxW = Math.max(logoWidth, radius * 2), boxH = Math.max(logoHeight, radius * 2);
     return {
       centerX,
       centerY,
       radius,
-      boxSize,
-      // Square bounds for intersection
-      left: centerX - boxHalfSize,
-      right: centerX + boxHalfSize,
-      top: centerY - boxHalfSize,
-      bottom: centerY + boxHalfSize
+      boxSize: Math.max(boxW, boxH),
+      left: centerX - boxW / 2,
+      right: centerX + boxW / 2,
+      top: centerY - boxH / 2,
+      bottom: centerY + boxH / 2
     };
   }
+
 
   /**
    * Render logo from volume configuration

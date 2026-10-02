@@ -301,3 +301,50 @@ describe('each emblem at its own size, around the same circle (O-148)', () => {
     }
   });
 });
+
+// THE FENCE STANDS WHILE THE BADGE FLIES HOME (O-189, Howell's phone
+// 2026-10-01: a verse's star seated on top of the crown). The sky asks the
+// badge for the box to keep clear of; it used to be told nothing while the
+// badge was animating, and the drill-out now lays the sky mid-flight.
+describe('the corner box the sky keeps clear of (O-189)', () => {
+  const badge = async () => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 360, height: 800 });
+    logo.circle = {};   // a badge exists
+    return logo;
+  };
+  it('at rest in the corner: the box, WHERE THE CIRCLE IS and as wide as the emblem', async () => {
+    const logo = await badge();
+    logo._renderConfig = { default_image: 'crown_of_thorns', emblem_scale: { crown_of_thorns: 1.8 } };
+    const b = logo.getBounds();
+    const g = logo._collapsedGeometry();
+    assert.ok(b && b.right > b.left && b.bottom > b.top);
+    assert.ok(Math.abs((b.left + b.right) / 2 - g.centerX) < 1e-9 && Math.abs((b.top + b.bottom) / 2 - g.centerY) < 1e-9, 'centred on the circle the badge actually draws');
+    assert.ok(b.right - b.left >= g.logoWidth - 1e-9, 'as wide as the crown\'s thorns');
+    assert.ok(b.left < g.centerX - g.radius && b.bottom > g.centerY + g.radius, 'the circle itself lies inside the fence');
+  });
+  it('FLYING HOME (collapsing): still the box — the sky laid during the flight must avoid where the badge is going', async () => {
+    const logo = await badge();
+    logo._animating = true; logo._collapsing = true; logo._expanded = true;
+    assert.ok(logo.getBounds(), 'the destination, not the absence of one');
+  });
+  it('expanded, or flying out to expand: nothing to avoid', async () => {
+    const logo = await badge();
+    logo._expanded = true;
+    assert.equal(logo.getBounds(), null);
+    logo._expanded = false; logo._animating = true; logo._collapsing = false;
+    assert.equal(logo.getBounds(), null);
+  });
+});
+
+// NOTHING ABOVE THE TOP (O-190, Howell 2026-10-01): a testaments ring whose
+// parent seat read the edition's own title, and a drill out that began
+// towards it. Without a gateway above, a testament has no parent to name.
+describe('a testament names no parent without a gateway above (O-190)', () => {
+  it('the parent label is empty, and would be the volume\'s title only under a gateway boot', () => {
+    const h = handlers(makeManifest(() => SPANNING.map(d => ({ ...d }))));
+    assert.equal(h.getParentLabel({ level: 'testament', parentName: 'The Holy Bible, translated from the Latin Vulgate' }), '');
+    assert.equal(typeof h.getParentActionable, 'function');
+    assert.equal(h.getParentActionable(), true, 'actionable at the book ring, where the boot stands');
+  });
+});

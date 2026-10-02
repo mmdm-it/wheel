@@ -1,6 +1,6 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
-import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from '../geometry/focus-ring-geometry.js';
+import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII, bandBounds, PRIMARY_REACH } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
 
 // How far outside the arc the section label sits, in MAGNIFIER RADII — so it
@@ -533,7 +533,7 @@ export class FocusRingView {
         if (this.parentWorldGlyph) {
           this.parentWorldGlyph.setAttribute('transform', `translate(${outerX} ${outerY})`);
           this.parentWorldGlyph.removeAttribute('display');
-          this.parentWorldGlyph.onclick = parentButtons?.onOuterClick || null;
+          this.parentWorldGlyph.onclick = null;   // a readout, not a control (O-191)
         }
       } else if (this.parentWorldGlyph) {
         this.parentWorldGlyph.setAttribute('display', 'none');
@@ -546,9 +546,12 @@ export class FocusRingView {
         this.parentButtonOuter.setAttribute('role', 'button');
         this.parentButtonOuter.setAttribute('tabindex', '0');
         this.parentButtonOuter.removeAttribute('display');
-        this.parentButtonOuter.onclick = parentButtons?.onOuterClick || null;
+        // NO POINTER CLICK ON THE PARENT (O-191, Howell 2026-10-01: taps no
+        // longer drill; a swipe towards the sky does). The keyboard keeps its
+        // Enter and Space, for the reader who has no thumb on the glass.
+        this.parentButtonOuter.onclick = null;
         this.#attachKeyActivation(this.parentButtonOuter, parentButtons?.onOuterClick || null);
-        this.parentButtonOuter.style.cursor = parentButtons?.onOuterClick ? 'pointer' : 'default';
+        this.parentButtonOuter.style.cursor = 'default';
         this.parentButtonOuter.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
         const ariaLabel = parentButtons?.outerLabel || 'Parent';
         this.parentButtonOuter.setAttribute('aria-label', ariaLabel);
@@ -588,9 +591,9 @@ export class FocusRingView {
           this.parentButtonOuterLabel.setAttribute('x', labelX);
           this.parentButtonOuterLabel.setAttribute('y', seat.labelY);
           this.parentButtonOuterLabel.removeAttribute('transform');
-          const labelClick = actionable ? (parentButtons?.onOuterClick || null) : null;
+          const labelClick = null;   // the parent's words are a readout (O-191)
           this.parentButtonOuterLabel.onclick = labelClick;
-          this.parentButtonOuterLabel.style.cursor = labelClick ? 'pointer' : 'default';
+          this.parentButtonOuterLabel.style.cursor = 'default';
           // Inline, belt-and-suspenders: the label's class family carries
           // pointer-events:none; the stylesheet override alone proved
           // fragile in the field (Howell 2026-07-23). Tappable iff live.
@@ -615,7 +618,10 @@ export class FocusRingView {
   // straight runs are honest lines, not a coil, when the ring recedes (Howell
   // 2026-07-21). Off-screen and clipped at full size.
   #ringPath(arcParams, viewportWindow) {
-    return pointsToPath(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle));
+    // Bounded to what the text floor can show at its deepest recede (O-187):
+    // a window that carries no size (a test's) gets the unbounded path.
+    const bounds = viewportWindow.width && viewportWindow.height ? bandBounds(viewportWindow.width, viewportWindow.height, PRIMARY_REACH) : null;
+    return pointsToPath(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, bounds));
   }
 
   #isNearMagnifier(angle, magnifierAngle, epsilon) {

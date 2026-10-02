@@ -7,7 +7,10 @@ import {
   getNodeSpacing,
   getViewportWindow,
   calculateNodePositions,
-  getMagnifierAngle
+  getMagnifierAngle,
+  standardBandCenterline,
+  clipPolylineToRect,
+  bandBounds
 } from '../src/geometry/focus-ring-geometry.js';
 
 test('getViewportInfo computes LSd/SSd and portrait flag', () => {
@@ -42,4 +45,22 @@ test('calculateNodePositions carries provided radius and respects viewport windo
     assert.ok(node.angle >= windowInfo.startAngle - 1e-9);
     assert.ok(node.angle <= windowInfo.endAngle + 1e-9);
   });
+});
+
+// THE BAND IS BOUNDED TO WHAT ITS FLOOR CAN SHOW (O-187).
+test('a polyline is cut at the rect, ending on its edge', () => {
+  const cut = clipPolylineToRect([[-100, 50], [50, 50], [50, 200]], [0, 0, 100, 100]);
+  assert.deepEqual(cut, [[0, 50], [50, 50], [50, 100]]);
+});
+test('the strata band stays within 2.6 viewports of the centre and reaches that edge; unbounded it runs seven screens', () => {
+  const vp = getViewportInfo(360, 800);
+  const box = pts => pts.reduce((b, [x, y]) => [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)], [Infinity, Infinity, -Infinity, -Infinity]);
+  const bounded = box(standardBandCenterline(vp));
+  const [x0, y0, x1, y1] = bandBounds(360, 800, 2.6);
+  assert.ok(bounded[0] >= x0 - 0.01 && bounded[1] >= y0 - 0.01 && bounded[2] <= x1 + 0.01 && bounded[3] <= y1 + 0.01, `within the reach: ${bounded}`);
+  const ends = standardBandCenterline(vp);
+  const onEdge = ([x, y]) => Math.abs(x - x0) < 0.01 || Math.abs(x - x1) < 0.01 || Math.abs(y - y0) < 0.01 || Math.abs(y - y1) < 0.01;
+  assert.ok(onEdge(ends[0]) && onEdge(ends[ends.length - 1]), 'both runs end on the edge of the reach, so the band still spans it');
+  const free = box(standardBandCenterline(vp, { reach: 0 }));
+  assert.ok(free[3] - free[1] > 5000, 'unbounded, the runs make it thousands of pixels tall');
 });

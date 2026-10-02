@@ -32,6 +32,19 @@ import { proofreadOverrideActive } from './lan-gate.js';
 // registry supplied at boot). Selecting it does nothing — no text to load.
 const COMING_SOON_KEY = '__coming_soon__';
 
+// PLACEHOLDER SEATS ON THE EDITION RING (O-184, Howell 2026-09-30, on the
+// English shelf's cast going with the wireframe: "I don't remember asking
+// for those to be removed" — and, offered the choice, the seats on the ring
+// itself, "inert 'coming' nodes that cannot be chosen"). The volume declares
+// a language's shelf in order (display_config.editions.coming, carried here
+// as `meta.coming[language]`): an entry that names a seated edition IS that
+// edition; any other entry is a placeholder, keyed with this prefix so the
+// host can tell it from a real one, labelled with its own name, drawn hollow
+// by the host, and never committed. A language with no seated edition keeps
+// its single "coming soon" sentinel; the shelf dresses only a real ring.
+const COMING_PREFIX = '__coming__:';
+const isComingKey = key => typeof key === 'string' && key.startsWith(COMING_PREFIX);
+
 // Script tags per language, for the rendered text's `lang` attribute (W-1).
 // The registry may override per edition (`lang`); this is the fallback map.
 // Only the tag matters — the CSS keys RTL on [lang="he"], and the browser
@@ -321,7 +334,7 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // commits nothing either: the lens shows its notice, the reader keeps
     // reading.
     setTranslation(translationKey) {
-      if (translationKey === COMING_SOON_KEY) return false;
+      if (translationKey === COMING_SOON_KEY || isComingKey(translationKey)) return false;
       const languageId = languageOf(translationKey);
       if (!languageId) return false;
       if (!isServable(meta?.translations?.[translationKey])) return false; // W-11: visible, never committed
@@ -384,6 +397,7 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // the key. Unselected nodes keep the abbreviation (Howell 2026-07-22).
     translationName(key, languageHint = null) {
       if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
+      if (isComingKey(key)) return key.slice(COMING_PREFIX.length);
       const t = meta?.translations?.[key];
       return t?.nativeName || t?.name || key;
     },
@@ -393,6 +407,7 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // sentinel key — it stays in the native phrase even scrubbed out of the lens
     // (there is no abbreviation for a promise — Howell 2026-07-22).
     translationAbbrev(key, languageHint = null) {
+      if (isComingKey(key)) return key.slice(COMING_PREFIX.length);   // a placeholder wears its own name (O-184)
       if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
       // THE RING SPEAKS SHORT, IN ITS OWN SCRIPT (O-97, Howell 2026-08-23),
       // choosing between three of his own rulings that had collided on this
@@ -536,8 +551,27 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       }
       if (!lang) return [];
       const seated = servableEditionsOf(lang);
-      return seated.length ? seated : [COMING_SOON_KEY];
+      if (!seated.length) return [COMING_SOON_KEY];
+      // The declared shelf, in its order (O-184): seated editions in place,
+      // placeholders between them; a declared edition not seated here (an
+      // edition the reader's position filters out, or one still arriving)
+      // is left out, and a seated edition the shelf forgot is appended.
+      const shelf = meta?.coming?.[lang];
+      if (!Array.isArray(shelf) || !shelf.length) return seated;
+      const out = [];
+      for (const entry of shelf) {
+        if (typeof entry !== 'string' || !entry) continue;
+        if (seated.includes(entry)) { if (!out.includes(entry)) out.push(entry); }
+        else if (meta?.translations?.[entry]) continue;   // a real edition, not on this ring today
+        else out.push(COMING_PREFIX + entry);
+      }
+      for (const code of seated) if (!out.includes(code)) out.push(code);
+      return out;
     },
+
+    // A placeholder seat (O-184): drawn hollow, labelled with its name,
+    // never committed. The host asks rather than knowing the prefix.
+    isComing(key) { return isComingKey(key); },
 
     // The substituted-verse footer, in the READER'S chosen tongue (W-6,
     // mark #3): the person who asked for Russian is told in Russian.

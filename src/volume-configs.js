@@ -6,6 +6,8 @@
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
 import { proofreadDeepLink } from './core/lan-gate.js';
+import { recall } from './core/session-memory.js';
+import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
@@ -85,9 +87,33 @@ const volumeConfigs = {
     // picture that asserts anything about a corpus.
     assetBase: `${BIBLE_VOLUME_BASE}/${BIBLE_VOLUME_VERSION}/`,
     loadManifest: async () => {
+      // WHICH EDITION THE BOOT WAITS FOR (O-175): the one the reader chose
+      // last time; failing that, on a proofread deep link, the one the address
+      // names; failing that, the one the phone's own languages point to
+      // (O-176); failing that, the volume's default. The same order the boot
+      // itself settles on below, so the edition shown is the edition waited
+      // for. Everything else is fetched behind it.
+      const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
+      const named = proofreadDeepLink(['book', 'chapter', 'verse']) ? params.get('edition') : null;
+      const chooseFirst = volumeJson => {
+        const cfg = volumeJson?.display_config || {};
+        const offered = new Set((volumeJson?.editions || []).map(e => e.code));
+        const remembered = recall('bible').edition;
+        if (remembered && offered.has(remembered)) return remembered;
+        if (named && offered.has(named)) return named;
+        const lang = firstOfferedLanguage(phoneLanguages(), Object.keys(cfg.editions?.available || {}));
+        const byTongue = lang ? cfg.editions?.default?.[lang] : null;
+        if (byTongue && offered.has(byTongue)) return byTongue;
+        const dflt = cfg.editions?.default?.[cfg.languages?.default];
+        return dflt && offered.has(dflt) ? dflt : null;
+      };
       const volume = await loadBibleVolume({
         base: BIBLE_VOLUME_BASE,
         version: BIBLE_VOLUME_VERSION,
+        firstEdition: chooseFirst,
+        // The manifest, the moment it is parsed and before the bundles are
+        // waited for — the boot card listens (O-181).
+        onVolume: v => { try { document.dispatchEvent(new CustomEvent('wheel:volume-early', { detail: v })); } catch { /* no DOM */ } },
         fetchJson: async path => {
           const response = await fetch(path);
           if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
@@ -131,9 +157,11 @@ const volumeConfigs = {
     theme: 'bible',
     palette: {
       bg: '#d4a574',
-      node: '#8b5a2b',
+      // O-166's shades, declared (O-178): every node the lighter brown, the
+      // band that brown one step darker.
+      node: '#8a6a49',
       text: '#2a1a0f',
-      band: '#8a6a49',
+      band: '#6c5339',
       accent: '#8b5a2b',
       magnifierStroke: '#2a1a0f'
     },
@@ -185,6 +213,10 @@ const volumeConfigs = {
       // normalisations below are the ones with a DEFAULT the engine depends on;
       // everything else is the volume's word, carried intact.
       const translationsMeta = {
+        // THE DECLARED SHELVES (O-184): per language, the edition ring's order
+        // with placeholder names between the seated editions. The volume's
+        // word; the `_` keys are its notes to itself.
+        coming: Object.fromEntries(Object.entries(volume.displayConfig?.editions?.coming || {}).filter(([k, v]) => !k.startsWith('_') && Array.isArray(v))),
         translations: Object.fromEntries(volume.editions.map(edition => [edition.code, {
           ...edition,
           name: edition.name || edition.code,
@@ -233,7 +265,7 @@ const volumeConfigs = {
       };
       return { translationsMeta, languagesMeta };
     },
-    buildOptions: ({ params, startup = {}, arrangements = {}, root = null }) => {
+    buildOptions: ({ params, startup = {}, arrangements = {}, root = null, memory = null }) => {
       // The parameters that together name one exact seat in THIS volume — the
       // proofreading bypass's key list (O-122). Named here because the engine
       // core may not speak a volume's level names (O-43).
@@ -242,45 +274,32 @@ const volumeConfigs = {
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
-      // RESUME IS SUSPENDED FOR THIS VOLUME UNTIL PHASE 4 COMPLETES
-      // (O-47, Howell 2026-08-12): "There is no need for the Bible to boot to
-      // a verse, other than the first verse... during development, it should
-      // boot to Genesis 1:1."
-      //
-      // This SUPERSEDES the resume half of ruling 3 of 2026-07-30 — first
-      // visit at Matthew 16:18, thereafter at the verse last read — for the
-      // development period. It returns as a ruling when the corpus can honour
-      // one, which is why the memory is left untouched rather than cleared:
-      // nothing is lost, it is simply not consulted.
-      //
-      // IT WAS ALREADY INERT AND NOBODY HAD NOTICED. `parseVerseId` requires
-      // an uppercase legacy book key, so a remembered opaque id
-      // (`bc22df_1_1`) never matched and resume had been silently falling
-      // through to the default since the wall went up. The ruling turns an
-      // accident into a decision, which is the difference between code that
-      // happens to work and code that says what it means.
-      //
-      // An EXPLICIT deep link still wins wholesale — if any of
+      // WHERE THE VOLUME OPENS (O-179, Howell 2026-09-29), three answers in
+      // order. An EXPLICIT deep link wins wholesale — if any of
       // book/chapter/verse is named in the URL it is honoured, because that is
       // the reader asking rather than the engine remembering, and it is how
-      // the volume is tested from a phone.
+      // the volume is tested from a phone. Then THE VERSE LAST READ (ruling 3
+      // of 2026-07-30, back in force): the seat main.js remembers on every
+      // landing, an id in the edition's own labels. Then THE FIRST VISIT'S
+      // VERSE, which the volume declares by utterance — Matthew 16:18 where
+      // the edition holds the New Testament, the psalm where it does not —
+      // resolved in buildBibleChain where the charts are in hand, because the
+      // same line wears a different number in each edition. O-47's
+      // development boot to the first verse (Genesis 1:1) is retired; it
+      // survives only as the last fallback, for a volume that declares no
+      // first visit.
+      //
+      // The remembered seat is consulted here and nowhere else: `parseSeatId`
+      // reads the id the chain itself mints (`<book>_<chapter>_<verse>`), so
+      // it cannot fall out of step with the chain the way the legacy parser
+      // O-47 removed once did.
       const deepLinked = params.get('book') || params.get('chapter') || params.get('verse');
-      const resumed = null;
+      const resumed = deepLinked ? null : parseSeatId(memory?.itemId);
       return {
         level,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
-        // THE VOLUME OPENS AT ITS FIRST VERSE (O-47, Howell 2026-08-12).
-        // `null` means "the volume's own first leaf", resolved in
-        // buildBibleChain where the enumeration is in hand.
-        //
-        // DERIVED RATHER THAN NAMED, and the distinction is the whole ruling.
-        // Writing `GENE`, `1`, `1` here would be a literal naming cargo that
-        // may not have landed — exactly the failure H-14 removes — whereas
-        // the first enumerated leaf resolves to something real however much
-        // has migrated. Today that IS Genesis 1:1, because Genesis is the
-        // only book; under H-14's canonical increment order it stays Genesis
-        // 1:1 as the rest arrive.
+        firstVisit: (root?.display_config?.boot?.first_visit || []).map(e => e?.utterance).filter(Boolean),
         bookId: params.get('book') || resumed?.bookId || null,
         testamentId: params.get('testament'),
         chapterId: params.get('chapter') || resumed?.chapterId || null,
@@ -654,6 +673,47 @@ function flattenEditionAxis(obj) {
   return Object.assign({}, ...values);
 }
 
+// A SEAT ID, READ BACK (O-179). The chain mints `<bookId>_<chapter>_<verse>`
+// for every seat (bible-volume's expandVolumeSeats); book ids carry no
+// underscore, so the first cut is the book and the last the verse, and a
+// chapter label is whatever lies between. Anything else is not a seat.
+export function parseSeatId(id) {
+  if (typeof id !== 'string') return null;
+  const a = id.indexOf('_'), b = id.lastIndexOf('_');
+  if (a <= 0 || b <= a + 1 || b === id.length - 1) return null;
+  return { bookId: id.slice(0, a), chapterId: id.slice(a + 1, b), verseId: id.slice(b + 1) };
+}
+
+// THE SEAT AN UTTERANCE HOLDS IN AN EDITION (O-179): walk the edition's own
+// books and charts for the seat carrying it, and name that seat in the
+// edition's own labels. Null when the edition does not seat it — the Hebrew
+// has no Matthew — and the caller tries the next.
+export function seatOfUtterance(volume, edition, utterance) {
+  if (!volume || !utterance || typeof volume.booksFor !== 'function' || typeof volume.chartFor !== 'function') return null;
+  for (const book of volume.booksFor(edition) || []) {
+    const chart = volume.chartFor(book.id, edition);
+    const seats = chart?.seats || [];
+    const idx = seats.findIndex(seat => Array.isArray(seat?.utterances) && seat.utterances.includes(utterance));
+    if (idx < 0) continue;
+    const group = (chart.groups || []).find(g => idx >= g.from - 1 && idx <= g.to - 1);
+    if (!group) return null;
+    return { bookId: book.id, testamentId: book.testamentId, chapterId: String(group.label), verseId: String(seats[idx].label) };
+  }
+  return null;
+}
+
+// THE FIRST VISIT'S VERSE (O-179): the first declared utterance this edition
+// seats — Matthew 16:18 for an edition holding the New Testament, the psalm
+// for one that does not. Null when the volume declares none.
+export function firstVisitSeat(manifest, edition, utterances) {
+  const volume = manifest?.__wallVolume;
+  for (const u of utterances || []) {
+    const seat = seatOfUtterance(volume, edition, u);
+    if (seat) return seat;
+  }
+  return null;
+}
+
 function firstLeafOf(manifest, edition) {
   const volume = manifest?.__wallVolume;
   // The first book is the EDITION'S first (O-92) — there is no volume book
@@ -679,7 +739,11 @@ function buildBibleChain(manifest, options, namesMap) {
   // Anything the URL or the reader's memory did not supply comes from the
   // volume itself, resolved here because this is where the enumeration is in
   // hand. A null that reached the builders below would paint a blank screen.
-  const fallback = firstLeafOf(manifest, options.activeEdition || options.translation || null);
+  // The first visit's verse where the volume declares one (O-179); the
+  // edition's first leaf where it does not.
+  const edition = options.activeEdition || options.translation || null;
+  const firstVisit = firstVisitSeat(manifest, edition, options.firstVisit);
+  const fallback = firstVisit || firstLeafOf(manifest, edition);
   options = {
     ...options,
     bookId: options.bookId || fallback.bookId,
@@ -730,6 +794,10 @@ function buildBibleChain(manifest, options, namesMap) {
       return Promise.resolve().then(() =>
         buildBibleVerseChain(manifest, {
           initialVerseId: `${bookId}_${chapterId}_${verseId}`,
+          // A remembered seat this edition no longer charts (the reader's
+          // edition changed under it) lands on the first visit's verse,
+          // never silently on the first verse (O-179).
+          fallbackVerseId: firstVisit ? `${firstVisit.bookId}_${firstVisit.chapterId}_${firstVisit.verseId}` : null,
           edition: options.activeEdition || options.translation || null
         }));
     }
