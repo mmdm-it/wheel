@@ -83,6 +83,50 @@ if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.loc
   window.addEventListener('pagehide', flush);
   window.__tapDebugLog('gesturelog-on', { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio, ua: navigator.userAgent.slice(0, 60) });
 }
+// THE SWIPE LOG (Howell 2026-10-01): with ?swipelog=1 the last strokes are
+// painted in the bottom corner — the bearing measured at the deciding 8 px,
+// what the engine decided, and the bearing of the whole stroke at lift — so a
+// photograph of the glass says why a swipe went the way it did. A "<<" marks a
+// stroke whose first 8 px disagreed with its overall direction by more than
+// 25°, which is the wobble a curved stroke starts with. It READS the existing
+// decision and changes nothing about how the decision is made.
+let noteSwipe = () => {};
+let noteSwipeEnd = () => {};
+let noteStrokeless = () => {};
+if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('swipelog') === '1') {
+  const box = document.createElement('div');
+  box.id = 'swipe-log';
+  box.style.cssText = 'position:fixed;left:3px;bottom:3px;z-index:2147483646;font:11px/1.35 monospace;color:#fff;background:rgba(0,0,0,.82);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;max-width:97vw;';
+  const mount = () => document.body?.appendChild(box);
+  if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
+  const NAME = { cw: 'ROTATE cw ', ccw: 'ROTATE ccw', out: 'DRILL out ', in: 'DRILL in  ' };
+  const norm360 = v => Math.round(((v % 360) + 360) % 360);
+  const deg = v => `${String(norm360(v)).padStart(3)}°`;
+  const rows = [];
+  let head = 'swipes: none yet';
+  let open = null;
+  const line = o => `${deg(o.bearing)} ${NAME[o.kind] || o.kind}${o.note}`
+    + (o.end == null ? '' : `  end ${deg(o.end)}${Math.abs(((o.end - o.bearing + 540) % 360) - 180) > 25 ? ' <<' : ''}`);
+  const paint = () => { box.textContent = [head, ...rows].join('\n'); };
+  const render = () => { if (open) rows[0] = line(open); paint(); };
+  const push = text => { rows.unshift(text); if (rows.length > 8) rows.pop(); };
+  noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
+    head = `lean ${Math.round(d)}°  cw ${norm360(360 - d)} out ${norm360(90 - d)} ccw ${norm360(180 - d)} in ${norm360(270 - d)}`;
+    open = { bearing, kind, note, x0, y0, end: null };
+    push('');
+    render();
+  };
+  noteSwipeEnd = (x, y) => {
+    if (!open) return;
+    if (Number.isFinite(x) && Number.isFinite(y)) {
+      const dx = x - open.x0, dy = y - open.y0;
+      if (Math.hypot(dx, dy) >= 8) { open.end = norm360(Math.atan2(dx, -dy) * 180 / Math.PI); render(); }
+    }
+    open = null;
+  };
+  noteStrokeless = () => { if (rows[0] !== 'ROTATE with no compass') { push('ROTATE with no compass'); paint(); } };
+  paint();
+}
 import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
 import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
@@ -3235,6 +3279,7 @@ function wireInteractions(getApp) {
       // Whatever it decides, the press is no longer a tap on the lens.
       lensSwipeFiredAt = Date.now();
       if (kind === 'cw' || kind === 'ccw') {
+        noteSwipe(bearing, kind, lean(), press.x0, press.y0, ' lens');
         controlPress = null;
         isDragging = true; recentMoves = []; gestureTravelPx = Math.hypot(vx, vy);
         lastX = event.clientX; lastY = event.clientY; lastTime = event.timeStamp;
@@ -3244,11 +3289,13 @@ function wireInteractions(getApp) {
         return;
       }
       if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, press.x0, press.y0)) {
+        noteSwipe(bearing, kind, lean(), press.x0, press.y0, ' lens');
         controlPress = null;
         freeDrill.e = freeDrillProgress(freeDrill, event);
         freeDrill.ctl.scrubTo(freeDrill.e);
         return;
       }
+      noteSwipe(bearing, kind, lean(), press.x0, press.y0, ' lens, nothing there');
       press.dead = true;   // a dead zone, or nothing to drill that way: nothing until lift
       return;
     }
@@ -3300,12 +3347,14 @@ function wireInteractions(getApp) {
       const bearing = bearingOf(vx, vy);
       const kind = nearestKind(bearing, lean());   // no dead zones (O-191)
       logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), star: stroke.star ?? null });
-      if (kind === 'cw' || kind === 'ccw') { app.choreographer.rotate(stroke.pendingDelta); return; }
+      if (kind === 'cw' || kind === 'ccw') { noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0); app.choreographer.rotate(stroke.pendingDelta); return; }
       pendingTapNode = null; pendingAdvanceTap = false; pendingStarTap = null;
-      if (beginFreeDrill(kind, event, stroke.x0, stroke.y0, stroke.star)) { isDragging = false; return; }
+      if (beginFreeDrill(kind, event, stroke.x0, stroke.y0, stroke.star)) { noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0); isDragging = false; return; }
+      noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0, ' nothing there');
       stroke.dead = true;   // nothing to drill that way: a leaf below, or the top above
       return;
     }
+    if (!stroke) noteStrokeless();   // a turn no compass decided (swipelog only)
     app.choreographer.rotate(delta);
   };
 
@@ -3503,6 +3552,7 @@ function wireInteractions(getApp) {
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type => {
     svg.addEventListener(type, event => {
       if (event.isPrimary === false) return;   // a second finger has no say (O-169)
+      if (type !== 'pointerleave') noteSwipeEnd(event.clientX, event.clientY);   // swipelog only
       if (controlPress && type !== 'pointerleave') controlPress = null;
       if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type); freeDrill = null; } }
       if (type !== 'pointerleave') stroke = null;
