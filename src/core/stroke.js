@@ -84,10 +84,19 @@ export function classifyBearing(bearing, d = 29, opts = {}) {
 }
 
 /**
- * NO DEAD ZONES (O-191, Howell 2026-10-01): two axes at right angles — the
- * band's tangent for turning, the line to the lens for drilling — and every
- * stroke is the nearer of the four directions. The bands above exist for the
- * first ruling's four-band compass; the host decides by this now.
+ * NO DEAD ZONES — THE SESSION'S ADDITION UNDER O-191, NOT HOWELL'S RULING.
+ * The comment here used to read "NO DEAD ZONES (O-191, Howell 2026-10-01)",
+ * which put his name on a choice he never made: what he ruled that day was
+ * where the drills point ("Any swipe going in a southwest to northeast
+ * direction would migrate out"), and the ledger row records the rest as
+ * "the session's additions — two axes and no dead zones" which he approved
+ * as a package with "Proceed." He said so himself on 2026-10-02: "I don't
+ * remember making a decision to remove the dead zones." Corrected here so
+ * the record says which half was his.
+ *
+ * Two axes at right angles, and every stroke is the nearer of the four
+ * directions. SUPERSEDED AS THE HOST'S RULE by sketchedKind below; kept
+ * because it is what the measuring axes are still built from.
  * @returns {'cw'|'ccw'|'out'|'in'}
  */
 export function nearestKind(bearing, d = 29) {
@@ -99,6 +108,49 @@ export function nearestKind(bearing, d = 29) {
     if (dist < bestDist) { bestDist = dist; best = kind; }
   }
   return best;
+}
+
+/**
+ * THE DEAD ZONES AS HOWELL DREW THEM (2026-10-02, a sketch of four red
+ * wedges on a compass rose; "I'm just curious to see how they feel as
+ * drawn"). FIXED SCREEN BEARINGS — no lean, no magnifier, no band tangent:
+ * the four actions own seventy-five degrees each, and the fifteen degrees
+ * at each midpoint between them are inert.
+ *
+ *   dead                    350 – 5     (straight up)
+ *   DRILL OUT                 5 – 80    (northeast)
+ *   dead                     80 – 95    (straight right)
+ *   rotate COUNTER-CLOCKWISE  95 – 170  (southeast)
+ *   dead                    170 – 185   (straight down)
+ *   DRILL IN                185 – 260   (southwest)
+ *   dead                    260 – 275   (straight left)
+ *   rotate CLOCKWISE        275 – 350   (northwest)
+ *
+ * The drills follow his O-191 words exactly: southwest to northeast migrates
+ * out, northeast to southwest migrates in. A wedge owns both its edges, so a
+ * stroke at 5 or 80 drills rather than dying — the dead run is 81–94, 171–184,
+ * 261–274, 351–4.
+ *
+ * WHAT THIS DELIBERATELY DOES NOT TOUCH: the axis each decided stroke then
+ * measures along is still axisFor(), built from the screen's diagonal lean.
+ * A wedge is centred on 42.5 while its measuring axis sits at 61, so a stroke
+ * down the middle of the wedge loses about five per cent of its travel, and
+ * one along the wedge's lower edge loses more. Changing that is a second
+ * decision and it is Howell's, not this session's — the lesson of O-191.
+ *
+ * @returns {'cw'|'ccw'|'out'|'in'|null} — null is dead: nothing until lift.
+ */
+export const SKETCHED_WEDGES = [
+  ['out', 5, 80],
+  ['ccw', 95, 170],
+  ['in', 185, 260],
+  ['cw', 275, 350],
+];
+
+export function sketchedKind(bearing) {
+  const b = norm(bearing);
+  for (const [kind, from, to] of SKETCHED_WEDGES) if (within(b, [from, to])) return kind;
+  return null;
 }
 
 /** The unit vector on the glass pointing along a bearing. */

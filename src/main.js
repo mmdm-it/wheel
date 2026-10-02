@@ -99,19 +99,19 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   box.style.cssText = 'position:fixed;left:3px;bottom:3px;z-index:2147483646;font:11px/1.35 monospace;color:#fff;background:rgba(0,0,0,.82);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;max-width:97vw;';
   const mount = () => document.body?.appendChild(box);
   if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
-  const NAME = { cw: 'ROTATE cw ', ccw: 'ROTATE ccw', out: 'DRILL out ', in: 'DRILL in  ' };
+  const NAME = { cw: 'ROTATE cw ', ccw: 'ROTATE ccw', out: 'DRILL out ', in: 'DRILL in  ', null: 'DEAD      ' };
   const norm360 = v => Math.round(((v % 360) + 360) % 360);
   const deg = v => `${String(norm360(v)).padStart(3)}°`;
   const rows = [];
   let head = 'swipes: none yet';
   let open = null;
-  const line = o => `${deg(o.bearing)} ${NAME[o.kind] || o.kind}${o.note}`
+  const line = o => `${deg(o.bearing)} ${NAME[o.kind === null ? 'null' : o.kind] || o.kind}${o.note}`
     + (o.end == null ? '' : `  end ${deg(o.end)}${Math.abs(((o.end - o.bearing + 540) % 360) - 180) > 25 ? ' <<' : ''}`);
   const paint = () => { box.textContent = [head, ...rows].join('\n'); };
   const render = () => { if (open) rows[0] = line(open); paint(); };
   const push = text => { rows.unshift(text); if (rows.length > 8) rows.pop(); };
   noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
-    head = `lean ${Math.round(d)}°  cw ${norm360(360 - d)} out ${norm360(90 - d)} ccw ${norm360(180 - d)} in ${norm360(270 - d)}`;
+    head = 'out 5-80  ccw 95-170  in 185-260  cw 275-350   dead between';
     open = { bearing, kind, note, x0, y0, end: null };
     push('');
     render();
@@ -128,7 +128,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   paint();
 }
 import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
-import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind } from './core/stroke.js';
+import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind, sketchedKind, SKETCHED_WEDGES } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -3274,7 +3274,7 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       const press = controlPress;
       const bearing = bearingOf(vx, vy);
-      const kind = nearestKind(bearing, lean());   // no dead zones (O-191)
+      const kind = sketchedKind(bearing);   // the wedges as drawn; null is dead
       logTap('control-stroke', { kind, bearing: Math.round(bearing) });
       // Whatever it decides, the press is no longer a tap on the lens.
       lensSwipeFiredAt = Date.now();
@@ -3295,7 +3295,7 @@ function wireInteractions(getApp) {
         freeDrill.ctl.scrubTo(freeDrill.e);
         return;
       }
-      noteSwipe(bearing, kind, lean(), press.x0, press.y0, ' lens, nothing there');
+      noteSwipe(bearing, kind, lean(), press.x0, press.y0, kind === null ? ' lens' : ' lens, nothing there');
       press.dead = true;   // a dead zone, or nothing to drill that way: nothing until lift
       return;
     }
@@ -3345,8 +3345,9 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
       const bearing = bearingOf(vx, vy);
-      const kind = nearestKind(bearing, lean());   // no dead zones (O-191)
+      const kind = sketchedKind(bearing);   // the wedges as drawn; null is dead
       logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), star: stroke.star ?? null });
+      if (kind === null) { noteSwipe(bearing, null, lean(), stroke.x0, stroke.y0); stroke.dead = true; return; }   // a dead wedge: nothing until lift
       if (kind === 'cw' || kind === 'ccw') { noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0); app.choreographer.rotate(stroke.pendingDelta); return; }
       pendingTapNode = null; pendingAdvanceTap = false; pendingStarTap = null;
       if (beginFreeDrill(kind, event, stroke.x0, stroke.y0, stroke.star)) { noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0); isDragging = false; return; }
