@@ -724,6 +724,19 @@ export function animateOut(opts) {
   const entry = animatedNodesStack.pop();
   if (_scrub) _scrub.popped = entry;   // a struck OUT puts it back (O-138)
   const { nodes: animEntries, overlay } = entry;
+  // A LAYER PUT BACK BY A STRUCK OUT MUST STILL HAVE ITS DRAWING (found on
+  // the phone, 2026-10-03, Judith and Philippians): the abort re-pushed the
+  // entry but this flight's own finisher, running a frame later, removed the
+  // overlay its clones live in. The next drill out then replayed a layer with
+  // nothing on the glass, and every ring node it carried vanished under the
+  // finger and came back on lift. Two guards: an overlay that was detached is
+  // re-attached before it is shown, and the finisher below keeps the overlay
+  // whenever the entry is back on the stack.
+  if (!overlay.isConnected && overlay.parentNode === null) {
+    const root = (nodesGroup && nodesGroup.ownerSVGElement) || null;
+    const host = (nodesGroup && nodesGroup.closest && nodesGroup.closest('.focus-content-group')) || root;
+    if (host) host.appendChild(overlay);
+  }
 
   // Hide real focus ring nodes + labels during animation
   if (nodesGroup) nodesGroup.style.opacity = '0';
@@ -756,7 +769,7 @@ export function animateOut(opts) {
       // are restored by animateRingInward's finisher.
       _animating = false;
       if (onComplete) onComplete();
-      txnSettle(txn, () => overlay.remove());
+      txnSettle(txn, () => { if (!animatedNodesStack.includes(entry)) overlay.remove(); });
     });
   });
 }

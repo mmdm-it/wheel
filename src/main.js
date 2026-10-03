@@ -90,9 +90,16 @@ if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.loc
 // stroke whose first 8 px disagreed with its overall direction by more than
 // 25°, which is the wobble a curved stroke starts with. It READS the existing
 // decision and changes nothing about how the decision is made.
-let noteSwipe = () => {};
+let noteSwipeBox = () => {};
 let noteSwipeEnd = () => {};
 let noteStrokeless = () => {};
+// THE SWIPE DECISION GOES TO THE MIGRATION LOG WHETHER OR NOT THE BOX IS ON
+// (Howell 2026-10-03: "I don't need the visual log on screen"). ?migrationlog=1
+// records without painting; ?swipelog=1 records and paints.
+const noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
+  try { const L = window.__wheelLog; if (L) { const l = L.lastLevel() || L.level(); L.push('swipe', { bearing: Math.round(bearing), kind, note: note.trim(), lens: l.lens, ring: l.ring, sky: l.sky, depth: l.depth }); } } catch (_) { /* log only */ }
+  noteSwipeBox(bearing, kind, d, x0, y0, note);
+};
 if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('swipelog') === '1') {
   const box = document.createElement('div');
   box.id = 'swipe-log';
@@ -110,7 +117,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   const paint = () => { box.textContent = [head, ...rows].join('\n'); };
   const render = () => { if (open) rows[0] = line(open); paint(); };
   const push = text => { rows.unshift(text); if (rows.length > 8) rows.pop(); };
-  noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
+  noteSwipeBox = (bearing, kind, d, x0, y0, note = '') => {
     head = 'out 5-80  ccw 95-170  in 185-260  cw 275-350   dead between';
     open = { bearing, kind, note, x0, y0, end: null };
     push('');
@@ -127,7 +134,8 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   noteStrokeless = () => { if (rows[0] !== 'ROTATE with no compass') { push('ROTATE with no compass'); paint(); } };
   paint();
 }
-import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
+import { beginScrubbedMigration, scrubDriver, getStackDepth } from './view/migration-animation.js';
+import { mountMigrationLog, migrationLogWanted } from './diagnostics/migration-log.js';
 import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind, sketchedKind, SKETCHED_WEDGES } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
@@ -156,6 +164,10 @@ import { mountSearchDividers } from './view/search-dividers.js';
 import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
 
 const svg = document.getElementById('app');
+// THE MIGRATION LOG (Howell 2026-10-03): with ?migrationlog=1 or ?swipelog=1,
+// every flight and every change of ring or sky is recorded on
+// window.__wheelLog, to be read over wireless debugging after he stops.
+if (typeof window !== 'undefined' && svg && migrationLogWanted()) mountMigrationLog({ svg, getStackDepth });
 
 // Viewport responsiveness, part one: measure the GENUINELY-visible area and
 // size the canvas from JS to the same numbers the geometry uses. window.inner*
