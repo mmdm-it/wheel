@@ -90,9 +90,16 @@ if (typeof window !== 'undefined' && isOnLan() && new URLSearchParams(window.loc
 // stroke whose first 8 px disagreed with its overall direction by more than
 // 25°, which is the wobble a curved stroke starts with. It READS the existing
 // decision and changes nothing about how the decision is made.
-let noteSwipe = () => {};
+let noteSwipeBox = () => {};
 let noteSwipeEnd = () => {};
 let noteStrokeless = () => {};
+// THE SWIPE DECISION GOES TO THE MIGRATION LOG WHETHER OR NOT THE BOX IS ON
+// (Howell 2026-10-03: "I don't need the visual log on screen"). ?migrationlog=1
+// records without painting; ?swipelog=1 records and paints.
+const noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
+  try { const L = window.__wheelLog; if (L) { const l = L.level(); L.push('swipe', { bearing: Math.round(bearing), kind, note: note.trim(), lens: l.lens, ring: l.ring, sky: l.sky, depth: l.depth }); } } catch (_) { /* log only */ }
+  noteSwipeBox(bearing, kind, d, x0, y0, note);
+};
 if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('swipelog') === '1') {
   const box = document.createElement('div');
   box.id = 'swipe-log';
@@ -110,8 +117,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   const paint = () => { box.textContent = [head, ...rows].join('\n'); };
   const render = () => { if (open) rows[0] = line(open); paint(); };
   const push = text => { rows.unshift(text); if (rows.length > 8) rows.pop(); };
-  noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
-    try { window.__wheelLog?.push('swipe', { bearing: Math.round(bearing), kind, note: note.trim() }); } catch (_) { /* log only */ }
+  noteSwipeBox = (bearing, kind, d, x0, y0, note = '') => {
     head = 'out 5-80  ccw 95-170  in 185-260  cw 275-350   dead between';
     open = { bearing, kind, note, x0, y0, end: null };
     push('');

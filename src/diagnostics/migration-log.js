@@ -85,9 +85,26 @@ export function mountMigrationLog({ svg, getStackDepth = () => null } = {}) {
     const labels = kids.map(txt).filter(Boolean);
     return { flight: flightName(ov), clones: kids.length, labels: labels.slice(0, 60) };
   };
+  // A REPLAYED LAYER IS AN OVERLAY THAT ALREADY EXISTS (found on the phone,
+  // 2026-10-03): the drill out shows again the clones the drill in saved, so
+  // no node is added — only opacities change. Record an existing overlay's
+  // clones becoming visible, so the stale snapshot shows up in the log.
+  const shownBefore = new WeakMap();
+  const noteReshown = ov => {
+    const kids = [...ov.children];
+    const vis = kids.filter(k => parseFloat(k.style.opacity || '1') > 0.05).length;
+    const was = shownBefore.get(ov) || 0;
+    shownBefore.set(ov, vis);
+    if (vis > 0 && was === 0) push('reshown', describe(ov));
+  };
   const observer = new MutationObserver(muts => {
     let levelTouched = false;
     for (const m of muts) {
+      if (m.type === 'attributes' && m.attributeName === 'style') {
+        const ov = m.target.closest && m.target.closest('.migration-animation-overlay');
+        if (ov) noteReshown(ov);
+        continue;
+      }
       for (const n of m.addedNodes) {
         if (isOverlay(n)) setTimeout(() => push('flight', describe(n)), 0);
         else if (n.nodeType === 1) levelTouched = true;
@@ -100,7 +117,7 @@ export function mountMigrationLog({ svg, getStackDepth = () => null } = {}) {
     }
     if (levelTouched) noteLevel('dom');
   });
-  observer.observe(svg, { childList: true, subtree: true, characterData: true });
+  observer.observe(svg, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['style'] });
 
   const api = {
     entries,
