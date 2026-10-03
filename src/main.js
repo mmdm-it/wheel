@@ -97,7 +97,7 @@ let noteStrokeless = () => {};
 // (Howell 2026-10-03: "I don't need the visual log on screen"). ?migrationlog=1
 // records without painting; ?swipelog=1 records and paints.
 const noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
-  try { const L = window.__wheelLog; if (L) { const l = L.level(); L.push('swipe', { bearing: Math.round(bearing), kind, note: note.trim(), lens: l.lens, ring: l.ring, sky: l.sky, depth: l.depth }); } } catch (_) { /* log only */ }
+  try { const L = window.__wheelLog; if (L) { const l = L.lastLevel() || L.level(); L.push('swipe', { bearing: Math.round(bearing), kind, note: note.trim(), lens: l.lens, ring: l.ring, sky: l.sky, depth: l.depth }); } } catch (_) { /* log only */ }
   noteSwipeBox(bearing, kind, d, x0, y0, note);
 };
 if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('swipelog') === '1') {

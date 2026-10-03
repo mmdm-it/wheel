@@ -63,6 +63,7 @@ export function mountMigrationLog({ svg, getStackDepth = () => null } = {}) {
     depth: getStackDepth(),
   });
   let lastLevel = '';
+  let lastLevelObj = null;
   let levelTimer = 0;
   const noteLevel = why => {
     if (levelTimer) return;
@@ -71,7 +72,7 @@ export function mountMigrationLog({ svg, getStackDepth = () => null } = {}) {
       const l = level();
       const sig = JSON.stringify([l.lens, l.ring, l.sky]);
       if (sig === lastLevel) return;
-      lastLevel = sig;
+      lastLevel = sig; lastLevelObj = l;
       push('level', { why, ...l });
     }, 60);
   };
@@ -123,6 +124,7 @@ export function mountMigrationLog({ svg, getStackDepth = () => null } = {}) {
     entries,
     push,
     level,
+    lastLevel: () => lastLevelObj,
     dump: () => JSON.stringify({ at: new Date().toISOString(), url: window.location.href, ua: navigator.userAgent, entries }, null, 1),
     clear: () => { entries.length = 0; lastLevel = ''; try { localStorage.removeItem(KEY); } catch { /* absent */ } },
     stop: () => observer.disconnect(),
