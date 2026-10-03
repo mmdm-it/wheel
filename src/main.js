@@ -111,6 +111,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   const render = () => { if (open) rows[0] = line(open); paint(); };
   const push = text => { rows.unshift(text); if (rows.length > 8) rows.pop(); };
   noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
+    try { window.__wheelLog?.push('swipe', { bearing: Math.round(bearing), kind, note: note.trim() }); } catch (_) { /* log only */ }
     head = 'out 5-80  ccw 95-170  in 185-260  cw 275-350   dead between';
     open = { bearing, kind, note, x0, y0, end: null };
     push('');
@@ -127,7 +128,8 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   noteStrokeless = () => { if (rows[0] !== 'ROTATE with no compass') { push('ROTATE with no compass'); paint(); } };
   paint();
 }
-import { beginScrubbedMigration, scrubDriver } from './view/migration-animation.js';
+import { beginScrubbedMigration, scrubDriver, getStackDepth } from './view/migration-animation.js';
+import { mountMigrationLog, migrationLogWanted } from './diagnostics/migration-log.js';
 import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind, sketchedKind, SKETCHED_WEDGES } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
@@ -156,6 +158,10 @@ import { mountSearchDividers } from './view/search-dividers.js';
 import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
 
 const svg = document.getElementById('app');
+// THE MIGRATION LOG (Howell 2026-10-03): with ?migrationlog=1 or ?swipelog=1,
+// every flight and every change of ring or sky is recorded on
+// window.__wheelLog, to be read over wireless debugging after he stops.
+if (typeof window !== 'undefined' && svg && migrationLogWanted()) mountMigrationLog({ svg, getStackDepth });
 
 // Viewport responsiveness, part one: measure the GENUINELY-visible area and
 // size the canvas from JS to the same numbers the geometry uses. window.inner*
