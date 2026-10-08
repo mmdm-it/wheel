@@ -2472,7 +2472,18 @@ export function topLayerIds() {
 export function discardTopLayer() {
   const top = animatedNodesStack.pop();
   if (!top) return false;
-  try { top.overlay?.remove(); } catch (e) { /* gone */ }
+  // A struck drill puts the discarded layer back exactly as animateOut's
+  // popped one (O-138): the stack is then as it was, so a spring-back
+  // restores the state in full. Its drawing goes at the barrier only if the
+  // entry is not back on the stack by then.
+  if (_scrub) _scrub.popped = top;
+  // Registered on the open transaction, NOT armed-and-settled: arming and
+  // settling with nothing else in flight drops pending to zero and closes
+  // the transaction before a single flight has joined it (measured: the
+  // layer retired 9 ms after the swipe, and every flight after it ran
+  // outside the barrier).
+  const retire = () => { if (!animatedNodesStack.includes(top)) { try { top.overlay?.remove(); } catch (e) { /* gone */ } } };
+  if (_txn && !_txn.done) _txn.finishers.push(retire); else retire();
   return true;
 }
 

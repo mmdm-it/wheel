@@ -76,6 +76,7 @@ const read = () => page.evaluate(() => {
   const ovs = [...document.querySelectorAll('#app .migration-animation-overlay')].map(o => ({
     flight: (o.getAttribute('class') || '').replace('migration-animation-overlay', '').trim() || 'plain',
     labels: [...o.children].map(txt).filter(Boolean),
+    shownLabels: [...o.children].filter(k => vis(k) > 0.05).map(txt).filter(Boolean),   // a hidden clone is not on the glass
     shown: [...o.children].filter(k => vis(k) > 0.05).length,
   }));
   const ringG = document.querySelector('#app .focus-ring-nodes'), skyG = document.querySelector('#app .child-pyramid');
@@ -129,7 +130,7 @@ const heldOutChecks = async (label) => {
   // it left, the sky it is going to, nor the sky that is leaving — a stale
   // layer replayed at seats that now belong to others.
   const known = new Set([...before, ...s.skyAtSwipe, ...s.sky]);
-  const ghosts = s.overlays.filter(o => !/ring-inward|parent|magnifier|merge/.test(o.flight)).flatMap(o => o.labels.filter(l => !known.has(l)).map(l => `${l}@${o.flight}`));
+  const ghosts = s.overlays.filter(o => !/ring-inward|parent|magnifier|merge/.test(o.flight)).flatMap(o => o.shownLabels.filter(l => !known.has(l)).map(l => `${l}@${o.flight}`));
   check(`${label}: no ghost clone in flight`, ghosts.length === 0, ghosts.join(' '));
   if (faded.length) findings.push({ step, name: `${label}: stragglers (fade by design, the windowing question)`, ok: true, detail: faded.join(' ') });
   grab(`step${String(step).padStart(2, '0')}-${label.replace(/[^a-z0-9]+/gi, '-')}`);

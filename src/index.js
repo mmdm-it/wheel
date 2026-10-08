@@ -1042,10 +1042,11 @@ export function createApp({
     // item the ring no longer shows — the ring was turned since the drill
     // in — the layer is discarded and the ring flies from scratch, every
     // node from the seat it really occupies.
+    let staleLayer = false;
     if (!noLayerToReverse) {
       const ringIdsNow = new Set(onScreenRing.map(n => n.item?.id).filter(id => id != null));
-      const stale = topLayerIds().some(id => id !== departingLensId && !ringIdsNow.has(id));
-      if (stale) { discardTopLayer(); noLayerToReverse = true; phase('out:stale-layer-discarded'); }
+      staleLayer = topLayerIds().some(id => id !== departingLensId && !ringIdsNow.has(id));
+      if (staleLayer) { noLayerToReverse = true; phase('out:stale-layer'); }
     }
     const layerIds = noLayerToReverse ? null : new Set(topLayerIds());
     phase('out:on-screen-ring', { n: onScreenRing.length, layer: !noLayerToReverse });
@@ -1144,6 +1145,9 @@ export function createApp({
         if (view.parentButtonOuter) view.parentButtonOuter.style.fill = '';
       }
     });
+    // The stale layer is discarded inside the transaction (O-197), so its
+    // drawing retires at the barrier and a struck drill can put it back.
+    if (staleLayer) discardTopLayer();
 
     // Child Pyramid: animate existing nodes to the hub (off-screen) simultaneously
     // with the reverse migration animation, instead of letting them pop off.
