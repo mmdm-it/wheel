@@ -2459,19 +2459,26 @@ export function topLayerIds() {
 }
 
 /**
- * THE NODES NO SEAT ACCOUNTS FOR FADE AS THEY GO (O-151 step five). A ring
+ * THE NODES NO SEAT ACCOUNTS FOR FADE WHERE THEY SIT (O-196, Howell
+ * 2026-10-07, on a screenshot of a leaf ring spilling past its container's
+ * edge into the neighbouring one, caught mid drill-out: those spilled nodes
+ * "begin to migrate and then fade away because they have nowhere to go. This
+ * seems strange to me. I think they shouldn't migrate at all. They should
+ * quickly fade away directly from the focus ring"). A ring
  * node the flight carries nowhere — no seat for it in the sky it is rising
- * into, or no clone in the layer being reversed — used to vanish at the first
- * frame with the rest of the ring. It now travels a third of the way toward
- * the hub, into the sky with its siblings, shrinking and fading to nothing
- * by the end of the flight, on the scrub clock like everything else.
+ * into, or no clone in the layer being reversed — stays on its seat and
+ * fades to nothing over the FIRST THIRD of the flight, on the scrub clock
+ * like everything else, so a spring-back brings it straight back.
+ *
+ * This retires O-151 step five's motion (a third of the way toward the hub,
+ * shrinking), which read as a flight to a place that does not exist.
  *
  * @param {Object} opts — { svgRoot, ringNodes: [{ item, x, y, angle, radius, label, labelCentered }], hubX, hubY }
  */
-// AND THE MIRROR, arrive: true (O-159 step four): a ring node the drill in's
-// flights do not carry — no star for it in the sky it came from — rises into
-// its seat from a third of the way toward the hub, growing from half size and
-// fading in, instead of appearing at landing.
+// AND THE MIRROR, arrive: true (O-159 step four, motion retired under O-196
+// the same way): a ring node the drill in's flights do not carry — no star
+// for it in the sky it came from — fades in on its seat over the LAST third
+// of the flight, no travel, no growth, so it appears as its siblings land.
 export function animateStragglers(opts) {
   const { svgRoot, ringNodes = [], hubX, hubY, onComplete, durationMs = null, arrive = false } = opts;
   const dur = durationMs || ANIM_DURATION;
@@ -2515,17 +2522,15 @@ export function animateStragglers(opts) {
     label.textContent = node.label ?? node.item?.name ?? '';
     g.appendChild(label);
     overlay.appendChild(g);
-    g.style.transformOrigin = `${node.x}px ${node.y}px`;
-    const tx = (hubX - node.x) / 3, ty = (hubY - node.y) / 3;
-    setTransform(g, arrive ? `translate(${tx}px, ${ty}px) scale(0.5)` : 'translate(0px, 0px) scale(1)');
-    g.style.opacity = arrive ? '0' : '1';
-    entries.push({ g, tx, ty });
+    g.style.opacity = arrive ? '0' : '1';   // seated exactly where the real node is; it never moves
+    entries.push({ g });
   });
   overlay.getBoundingClientRect();
+  const third = Math.round(dur / 3);
   afterPaint(() => {
     entries.forEach(e => {
-      setTransition(e.g, `transform ${dur}ms ease-in-out, opacity ${dur}ms ease-in-out`);
-      setTransform(e.g, arrive ? 'translate(0px, 0px) scale(1)' : `translate(${e.tx}px, ${e.ty}px) scale(0.5)`);
+      // Out: gone by a third of the way. In: absent until the last third, then here.
+      setTransition(e.g, arrive ? `opacity ${third}ms ease-in ${dur - third}ms` : `opacity ${third}ms ease-out`);
       e.g.style.opacity = arrive ? '1' : '0';
     });
     later(dur, () => {
