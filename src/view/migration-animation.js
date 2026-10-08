@@ -312,9 +312,15 @@ function _scrubAbort(scrub, onAbort) {
       a.g.style.opacity = '0';
     });
     animatedNodesStack.push(entry);
-    overlays.splice(overlays.indexOf(entry.overlay), 1);
   }
-  overlays.forEach(o => { try { o.remove(); } catch (e) { /* gone */ } });
+  // EVERY SAVED LAYER KEEPS ITS DRAWING (the sweep on the phone, 2026-10-07,
+  // two levels deep): only the layer being replayed was spared from this
+  // sweep, so a spring-back at depth two removed the drawing of the layer
+  // beneath it — hidden, waiting for a later drill out — leaving an entry on
+  // the stack with no clones on the glass. The overlays of all entries still
+  // on the stack stay; the flights this scrub launched go.
+  const kept = new Set(animatedNodesStack.map(e => e.overlay).filter(Boolean));
+  overlays.forEach(o => { if (kept.has(o)) return; try { o.remove(); } catch (e) { /* gone */ } });
   // Frame drivers (the detail sector) go back to their first frame — the
   // picture only; their state follows AFTER the navigation is undone, so the
   // renders that undo runs never see a sector half-committed (O-140).
