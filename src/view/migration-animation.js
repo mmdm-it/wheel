@@ -2457,6 +2457,24 @@ export function topLayerIds() {
   const top = animatedNodesStack[animatedNodesStack.length - 1];
   return top ? top.nodes.map(a => a.itemId).filter(id => id != null) : [];
 }
+/**
+ * A STALE LAYER IS NOT REPLAYED (O-197, from the sweep's visual pass on the
+ * phone, 2026-10-07, and Howell: "I do see the bug you describe with double
+ * nodes"). The layer a drill in saves is the ring's window at that moment,
+ * each clone parked at the seat it landed on. Turn the ring and the window
+ * moves: some of those items have left the arc and their seats now belong
+ * to others. Replaying the layer then drew the old occupants back onto the
+ * seats of the new ones — two interleaved runs of numbers, discs stacked on
+ * discs. The host discards such a layer here and flies the ring from
+ * scratch (the O-141 path), which seats every node where the ring really
+ * has it. The layers beneath stay for their own drill outs.
+ */
+export function discardTopLayer() {
+  const top = animatedNodesStack.pop();
+  if (!top) return false;
+  try { top.overlay?.remove(); } catch (e) { /* gone */ }
+  return true;
+}
 
 /**
  * THE NODES NO SEAT ACCOUNTS FOR FADE WHERE THEY SIT (O-196, Howell

@@ -88,7 +88,7 @@ const read = () => page.evaluate(() => {
   const skyLabels = skyTexts.map(t => t.label);
   const lensR = document.querySelector('#app .focus-ring-magnifier-circle')?.getBoundingClientRect();
   return {
-    lens: txt(document.querySelector('#app .focus-ring-magnifier-label')),
+    lens: txt(document.querySelector('#app .focus-ring-magnifier-label:not(.focus-ring-parent-label)')),   // the parent shares the class
     parent: txt(document.querySelector('#app .focus-ring-parent-label')),
     ring: [...document.querySelectorAll('#app .focus-ring-labels text')].map(txt).filter(Boolean),
     sky: skyLabels.filter(Boolean),
@@ -99,6 +99,7 @@ const read = () => page.evaluate(() => {
     skyOpacity: skyG ? getComputedStyle(skyG).opacity : '?',
     overlays: ovs,
     ringAtSwipe: lastSwipe?.ring || [],
+    skyAtSwipe: lastSwipe?.sky || [],
     lensAtSwipe: lastSwipe?.lens || '',
   };
 });
@@ -124,6 +125,12 @@ const heldOutChecks = async (label) => {
   check(`${label}: a flight launched`, s.overlays.length > 0, `overlays ${s.overlays.map(o => `${o.flight}(${o.labels.length})`).join(' ')}`);
   check(`${label}: every ring node has a clone in flight`, orphans.length === 0, orphans.length ? `no flight for: ${orphans.join(' ')}` : '');
   check(`${label}: the real ring is hidden under the clones`, s.ringOpacity === '0', `ring group opacity ${s.ringOpacity}`);
+  // GHOSTS (O-197): a clone in flight for an item that is on neither the ring
+  // it left, the sky it is going to, nor the sky that is leaving — a stale
+  // layer replayed at seats that now belong to others.
+  const known = new Set([...before, ...s.skyAtSwipe, ...s.sky]);
+  const ghosts = s.overlays.filter(o => !/ring-inward|parent|magnifier|merge/.test(o.flight)).flatMap(o => o.labels.filter(l => !known.has(l)).map(l => `${l}@${o.flight}`));
+  check(`${label}: no ghost clone in flight`, ghosts.length === 0, ghosts.join(' '));
   if (faded.length) findings.push({ step, name: `${label}: stragglers (fade by design, the windowing question)`, ok: true, detail: faded.join(' ') });
   grab(`step${String(step).padStart(2, '0')}-${label.replace(/[^a-z0-9]+/gi, '-')}`);
   return s;
@@ -196,7 +203,7 @@ try {
     await strokeFrom(star.x, star.y, deg, Math.min(COMMIT, Math.hypot(s1b.lensAt.x - star.x, s1b.lensAt.y - star.y) * 0.8));
     const s2 = await read();
     settledChecks('drill in (from a star)', s1b, s2, +1);
-    check('drill in (from a star): the star pressed is the one that came', s2.lens.endsWith(star.label), `pressed ${star.label}, lens ${s2.lens}`);
+    check('drill in (from a star): the star pressed is the one that came', s2.lens === star.label || s2.lens.endsWith(' ' + star.label), `pressed ${star.label}, lens ${s2.lens}`);
   } else {
     say('drill in from open ground (no star found to press)');
     const s1c = await read(); await stroke('in', COMMIT); settledChecks('drill in (open ground, level 2)', s1c, await read(), +1);

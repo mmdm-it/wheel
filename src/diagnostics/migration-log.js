@@ -56,7 +56,7 @@ export function mountMigrationLog({ svg, getStackDepth = () => null } = {}) {
   // THE LEVEL: lens, ring window, sky window, stack depth — whenever any of
   // them changes, debounced so one transition is one entry.
   const level = () => ({
-    lens: txt(svg.querySelector('.focus-ring-magnifier-label')),
+    lens: txt(svg.querySelector('.focus-ring-magnifier-label:not(.focus-ring-parent-label)')),   // the parent's label shares the class; take the lens itself
     parent: txt(svg.querySelector('.focus-ring-parent-label')),
     ring: labelsIn(svg.querySelector('.focus-ring-labels'), 'text'),
     sky: labelsIn(svg.querySelector('.child-pyramid'), 'text'),

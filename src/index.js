@@ -11,7 +11,7 @@ import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
-import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth, topLayerIds, animateStragglers } from './view/migration-animation.js';
+import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth, topLayerIds, animateStragglers, discardTopLayer } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
 
@@ -1032,12 +1032,21 @@ export function createApp({
     // reverse — the reader landed here by the boot, a bookmark or a link —
     // the departing ring's seats are snapshot now, every sibling on the arc
     // or implied beyond it, so they can fly to the new sky's seats below.
-    const noLayerToReverse = getStackDepth() === 0;
+    let noLayerToReverse = getStackDepth() === 0;
     const departingLensId = nav.getCurrent()?.id ?? null;
     // The ring nodes on screen, and which of them the reversal will carry
     // (O-151 step five): the rest fade as they go.
     const onScreenRing = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
       .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: node.item })) }));
+    // A STALE LAYER IS NOT REPLAYED (O-197): if the saved layer carries an
+    // item the ring no longer shows — the ring was turned since the drill
+    // in — the layer is discarded and the ring flies from scratch, every
+    // node from the seat it really occupies.
+    if (!noLayerToReverse) {
+      const ringIdsNow = new Set(onScreenRing.map(n => n.item?.id).filter(id => id != null));
+      const stale = topLayerIds().some(id => id !== departingLensId && !ringIdsNow.has(id));
+      if (stale) { discardTopLayer(); noLayerToReverse = true; phase('out:stale-layer-discarded'); }
+    }
     const layerIds = noLayerToReverse ? null : new Set(topLayerIds());
     phase('out:on-screen-ring', { n: onScreenRing.length, layer: !noLayerToReverse });
     // ONLY THE SEATS THE SKY WILL USE (O-154, from the gesture log: a drill
@@ -1187,7 +1196,12 @@ export function createApp({
       setPrimaryItems(items, selectedIndex, preserveOrder);
       phase('out:after-commit', { sky: lastPyramidData?.nodes?.length || 0 });
     };
-    animateOut({
+    // With no layer to reverse (never flown up, or the layer discarded as
+    // stale) animateOut would pop the layer BENEATH and replay the wrong
+    // level; it is not called, and the commit happens at once as its
+    // empty-stack path always did.
+    if (noLayerToReverse) commitOut();
+    else animateOut({
       nodesGroup: view.nodesGroup,
       labelsGroup: view.labelsGroup,
       onComplete: () => {
