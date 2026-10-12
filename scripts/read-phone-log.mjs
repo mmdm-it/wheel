@@ -56,7 +56,7 @@ console.log('log   ', result.source, result.text ? `${result.text.length} chars`
 
 // What is on the glass right now: the page's own state, and the phone's screen.
 const state = await page.evaluate(() => ({
-  lens: document.querySelector('#app .focus-ring-magnifier-label')?.textContent?.trim(),
+  lens: document.querySelector('#app .focus-ring-magnifier-label:not(.focus-ring-parent-label)')?.textContent?.trim(),
   parent: document.querySelector('#app .focus-ring-parent-label')?.textContent?.trim(),
   ring: [...document.querySelectorAll('#app .focus-ring-labels text')].map(t => t.textContent.trim()).filter(Boolean),
   sky: [...document.querySelectorAll('#app .child-pyramid text')].map(t => t.textContent.trim()).filter(Boolean),
