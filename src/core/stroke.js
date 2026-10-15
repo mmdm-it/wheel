@@ -70,3 +70,60 @@ export function axisOf(kind, axes) {
     default: return null;
   }
 }
+
+// THE TURN GATE (O-202, Howell 2026-10-15): "once it has been determined
+// that this swipe is rotational, only moves that are clearly within the
+// rotational direction should cause rotation ... the ring shouldn't move at
+// all unless there is clearly a movement in that direction. So whatever that
+// initial filter is of 8 pixels ... needs to constantly update and only look
+// for long movements in a direction that is the same as the initial
+// direction." The direction of the last `windowPx` of the thumb's path is
+// re-read at every move; the ring turns only while it lies within `coneDeg`
+// of the tangent, either way along it — that is how a turn reverses.
+
+/**
+ * The direction of the last `windowPx` of a path (points in order, the
+ * current position last): the vector from the point `windowPx` back along
+ * the path to the current point. Null until the path is that long, and
+ * null when the thumb has dithered — the straight-line distance over the
+ * window is under half of it — because that direction is noise.
+ */
+export function recentDirection(trail, windowPx) {
+  if (!trail || trail.length < 2) return null;
+  const now = trail[trail.length - 1];
+  let walked = 0;
+  for (let i = trail.length - 2; i >= 0; i--) {
+    walked += Math.hypot(trail[i + 1].x - trail[i].x, trail[i + 1].y - trail[i].y);
+    if (walked >= windowPx) {
+      const dx = now.x - trail[i].x, dy = now.y - trail[i].y;
+      const len = Math.hypot(dx, dy);
+      return len >= windowPx / 2 ? { dx, dy, len } : null;
+    }
+  }
+  return null;
+}
+
+/** Is the direction within `coneDeg` of the axis, either way along it? */
+export function withinCone(dir, axis, coneDeg) {
+  if (!dir || !(dir.len > 0)) return false;
+  const cos = Math.abs(dir.dx * axis.ux + dir.dy * axis.uy) / dir.len;
+  return cos >= Math.cos(coneDeg * Math.PI / 180) - 1e-12;
+}
+
+/**
+ * The gate itself, for a path with the current position last: open when the
+ * last `windowPx` of travel lies within the cone AND the latest movement,
+ * if it is long enough to have a direction of its own (2 px), does too —
+ * so the ring stops the moment the thumb turns across it, instead of a
+ * window later. Returns the direction's bearing for the instruments.
+ */
+export function turnGateOpen(trail, windowPx, coneDeg, axis) {
+  const dir = recentDirection(trail, windowPx);
+  let open = withinCone(dir, axis, coneDeg);
+  if (open && trail.length >= 2) {
+    const a = trail[trail.length - 2], b = trail[trail.length - 1];
+    const last = { dx: b.x - a.x, dy: b.y - a.y, len: Math.hypot(b.x - a.x, b.y - a.y) };
+    if (last.len >= 2 && !withinCone(last, axis, coneDeg)) open = false;
+  }
+  return { open, bearing: dir ? bearingOf(dir.dx, dir.dy) : null };
+}

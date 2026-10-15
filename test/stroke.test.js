@@ -1,6 +1,6 @@
 import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
-import { bearingOf, bearingOfUnit, localAxes, quadrantKind, axisOf } from '../src/core/stroke.js';
+import { bearingOf, bearingOfUnit, localAxes, quadrantKind, axisOf, recentDirection, withinCone, turnGateOpen } from '../src/core/stroke.js';
 
 // The Moto G's page area: 347 × 633 css px; the ring's centre by the v2
 // formula sits at (751, 0), just off the right edge at the top.
@@ -75,5 +75,58 @@ describe('the local compass (O-200)', () => {
   test('at the centre itself north and east stand in', () => {
     const a = axesAt(HUB.x, HUB.y);
     assert.deepEqual(a, { cw: { ux: 0, uy: -1 }, out: { ux: 1, uy: 0 } });
+  });
+});
+
+describe('the turn gate (O-202)', () => {
+  const axis = { ux: 1, uy: 0 };   // a horizontal tangent, for the arithmetic
+  const path = (...pts) => pts.map(([x, y]) => ({ x, y }));
+
+  test('no direction until the path is a window long', () => {
+    assert.equal(recentDirection(path([0, 0]), 8), null);
+    assert.equal(recentDirection(path([0, 0], [3, 0], [6, 0]), 8), null);
+    assert.deepEqual(recentDirection(path([0, 0], [4, 0], [8, 0]), 8), { dx: 8, dy: 0, len: 8 });
+  });
+
+  test('the direction is of the LAST window of the path, not of the whole stroke', () => {
+    const d = recentDirection(path([0, 0], [20, 0], [40, 0], [40, 4], [40, 8]), 8);
+    assert.deepEqual(d, { dx: 0, dy: 8, len: 8 });
+  });
+
+  test('a dithering thumb has no direction', () => {
+    assert.equal(recentDirection(path([0, 0], [3, 0], [0, 0], [3, 0], [0, 0]), 8), null);
+  });
+
+  test('the gate opens within the cone either way along the axis, and shuts across it', () => {
+    const along = b => ({ dx: 10 * Math.sin(b * Math.PI / 180), dy: -10 * Math.cos(b * Math.PI / 180), len: 10 });
+    assert.ok(withinCone(along(90), axis, 45), 'along the tangent');
+    assert.ok(withinCone(along(270), axis, 45), 'back along the tangent: that is how a turn reverses');
+    assert.ok(withinCone(along(90 + 44), axis, 45));
+    assert.ok(!withinCone(along(90 + 46), axis, 45));
+    assert.ok(!withinCone(along(0), axis, 45), 'across the ring: thrown away');
+    assert.ok(!withinCone(along(180), axis, 45));
+    assert.ok(!withinCone(null, axis, 45));
+    assert.ok(!withinCone(along(90 + 36), axis, 35), 'a narrower cone shuts sooner');
+  });
+});
+
+describe('the gate shuts the moment the thumb turns across the ring', () => {
+  const axis = { ux: 1, uy: 0 };
+  const path = (...pts) => pts.map(([x, y]) => ({ x, y }));
+  test('a long run along the tangent opens it', () => {
+    const g = turnGateOpen(path([0, 0], [5, 0], [10, 0], [15, 0]), 8, 45, axis);
+    assert.equal(g.open, true); assert.equal(g.bearing, 90);
+  });
+  test('the first move across the ring shuts it, though the window still points along', () => {
+    const g = turnGateOpen(path([0, 0], [5, 0], [10, 0], [15, 0], [15, 3]), 8, 45, axis);
+    assert.equal(g.open, false);
+  });
+  test('a sub-two-pixel wobble does not shut it', () => {
+    const g = turnGateOpen(path([0, 0], [5, 0], [10, 0], [15, 0], [15, 1]), 8, 45, axis);
+    assert.equal(g.open, true);
+  });
+  test('turning back along the tangent reopens it once the window has turned', () => {
+    assert.equal(turnGateOpen(path([0, 0], [10, 0], [20, 0], [20, 10], [20, 20], [15, 20]), 8, 45, axis).open, false, 'window still across');
+    assert.equal(turnGateOpen(path([0, 0], [10, 0], [20, 0], [20, 10], [20, 20], [15, 20], [10, 20]), 8, 45, axis).open, true, 'window now back along');
   });
 });

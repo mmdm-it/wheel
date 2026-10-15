@@ -139,10 +139,9 @@ export function mountCompassRose({ axesAt, kindOf, decidePx = 8 }) {
       const axis = axisOf(press.decided, press.axes);
       const along = dx * axis.ux + dy * axis.uy;
       const l = Math.max(-R1 - 6, Math.min(R1 + 6, along));
-      needle.setAttribute('x2', (l * axis.ux).toFixed(1));
-      needle.setAttribute('y2', (l * axis.uy).toFixed(1));
+      if (!isTurn(press.decided)) { needle.setAttribute('x2', (l * axis.ux).toFixed(1)); needle.setAttribute('y2', (l * axis.uy).toFixed(1)); }
       const thrown = Math.round(Math.sqrt(Math.max(0, len * len - along * along)));
-      readout.textContent = `${Math.round(along)} px along, ${thrown} px thrown away`;
+      if (!isTurn(press.decided)) readout.textContent = `${Math.round(along)} px along, ${thrown} px thrown away`;   // a turn's readout is the engine's gate()
       light(press.decided);
       return;
     }
@@ -164,13 +163,27 @@ export function mountCompassRose({ axesAt, kindOf, decidePx = 8 }) {
     verdict.textContent = `ENGINE: ${WORD[kind] || kind} at ${Math.round(bearing)}°${note ? ' ·' + note : ''}`;
   };
   const strokeless = () => { verdict.textContent = 'ENGINE: turn, no compass'; };
+  // THE TURN GATE (O-202): the engine says, at every move of a decided turn,
+  // whether the last window of travel was clearly along the ring. The needle
+  // follows that direction, white while the ring turns and grey while it is
+  // held.
+  const gate = (open, bearing) => {
+    if (!press || !isTurn(press.decided)) return;
+    needle.setAttribute('stroke', open ? '#fff' : '#888');
+    if (bearing != null) {
+      const l = R1 + 6;
+      needle.setAttribute('x2', (l * Math.sin(bearing * RAD)).toFixed(1));
+      needle.setAttribute('y2', (-l * Math.cos(bearing * RAD)).toFixed(1));
+    }
+    readout.textContent = bearing == null ? 'HELD · thumb dithering' : `${open ? 'TURNING' : 'HELD'} · last travel at ${Math.round(bearing)}°`;
+  };
 
   const primary = e => e.isPrimary !== false;
   window.addEventListener('pointerdown', e => { if (primary(e)) show(e.clientX, e.clientY); }, true);
   window.addEventListener('pointermove', e => { if (primary(e)) move(e.clientX, e.clientY); }, true);
   ['pointerup', 'pointercancel'].forEach(t => window.addEventListener(t, e => { if (primary(e)) up(); }, true));
 
-  const api = { show, move, up, decided, strokeless };
+  const api = { show, move, up, decided, strokeless, gate };
   window.__compassRose = api;
   return api;
 }

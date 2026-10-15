@@ -138,7 +138,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
 import { beginScrubbedMigration, scrubDriver, getStackDepth } from './view/migration-animation.js';
 import { mountMigrationLog, migrationLogWanted } from './diagnostics/migration-log.js';
 import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.js';
-import { bearingOf, localAxes, quadrantKind, axisOf } from './core/stroke.js';
+import { bearingOf, localAxes, quadrantKind, axisOf, turnGateOpen } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -3184,6 +3184,20 @@ function wireInteractions(getApp) {
   // 8 px, the tap slop (O-152 amended: the log showed slow strokes taking
   // 350–800 ms to travel 14 px with nothing moving).
   const DECIDE_PX = 8;             // the stroke declares itself here; the ring waits that long
+  // THE TURN GATE (O-202, Howell 2026-10-15): once a stroke is a turn, the
+  // direction of the last TURN_WINDOW_PX of the thumb's path is re-read at
+  // every move and the ring turns only while it lies within TURN_CONE_DEG of
+  // the tangent, either way along it. A thumb wandering across the ring
+  // moves nothing. Both are knobs on the query string for tuning on the
+  // glass: ?turnwindow=8&turncone=45.
+  const knob = (name, dflt) => { try { const v = parseFloat(new URLSearchParams(window.location.search).get(name)); return Number.isFinite(v) && v > 0 ? v : dflt; } catch (_) { return dflt; } };
+  const TURN_WINDOW_PX = knob('turnwindow', DECIDE_PX);
+  const TURN_CONE_DEG = knob('turncone', 45);
+  const turnGate = (st, x, y, tangent) => {
+    (st.trail ||= [{ x: st.x0, y: st.y0 }]).push({ x, y });
+    if (st.trail.length > 64) st.trail.splice(0, st.trail.length - 64);
+    return turnGateOpen(st.trail, TURN_WINDOW_PX, TURN_CONE_DEG, tangent);
+  };
   const THUMB_PX = 24;             // a star within this of the touch is "the star it began on" (O-191)
   let pendingStarTap = null;       // the star a press landed on or near, for the tap's acknowledgement
   // The nearest star to a touch, within a thumb's reach past its own rim.
@@ -3332,7 +3346,15 @@ function wireInteractions(getApp) {
     // Only movement along the tangent under the thumb turns the ring (O-152,
     // O-200): the radial part of the travel is thrown away.
     const rotAxis = axesAt(event.clientX, event.clientY).cw;
-    const delta = (dx * rotAxis.ux + dy * rotAxis.uy) * sensitivity * ROTATE_GAIN;
+    let delta = (dx * rotAxis.ux + dy * rotAxis.uy) * sensitivity * ROTATE_GAIN;
+    // A decided turn passes the gate or moves nothing (O-202).
+    if (stroke && stroke.decided && !stroke.dead) {
+      const gate = turnGate(stroke, event.clientX, event.clientY, rotAxis);
+      if (!gate.open) delta = 0;
+      try { window.__compassRose?.gate(gate.open, gate.bearing); } catch (_) { /* rose only */ }
+    } else if (stroke && !stroke.decided) {
+      (stroke.trail ||= [{ x: stroke.x0, y: stroke.y0 }]).push({ x: event.clientX, y: event.clientY });
+    }
     const t = event.timeStamp;
     recentMoves.push({ t, dist: distance, delta });
     while (recentMoves.length && t - recentMoves[0].t > VELOCITY_WINDOW_MS) recentMoves.shift();
