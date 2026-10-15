@@ -1,19 +1,30 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { roseSectors } from '../src/diagnostics/compass-rose.js';
-import { SKETCHED_WEDGES, sketchedKind } from '../src/core/stroke.js';
+import { roseQuarters } from '../src/diagnostics/compass-rose.js';
+import { localAxes, quadrantKind } from '../src/core/stroke.js';
 
-test('the rose tiles the full circle with the live wedges and the dead gaps between them', () => {
-  const s = roseSectors(SKETCHED_WEDGES);
-  assert.equal(s.length, 8);
-  assert.equal(s[0].from, 5);
-  assert.equal(s[s.length - 1].to, 365);
-  for (let i = 1; i < s.length; i++) assert.equal(s[i].from, s[i - 1].to);
-  assert.equal(s.reduce((sum, x) => sum + (x.to - x.from), 0), 360);
+const axes = localAxes(159, 463, 751, 0);   // the lens on the Moto G
+
+test('the rose has four quarters of ninety degrees that tile the circle', () => {
+  const q = roseQuarters(axes);
+  assert.deepEqual(q.map(x => x.kind), ['cw', 'out', 'ccw', 'in']);
+  for (let i = 0; i < 4; i++) {
+    assert.equal(q[i].to, q[(i + 1) % 4].from, `${q[i].kind} meets ${q[(i + 1) % 4].kind}`);
+    assert.ok(Math.abs(((q[i].to - q[i].from + 360) % 360) - 90) < 1e-9);
+  }
 });
 
-test('every sector of the rose agrees with the engine at its midpoint', () => {
-  for (const { kind, from, to } of roseSectors(SKETCHED_WEDGES)) {
-    assert.equal(sketchedKind(((from + to) / 2) % 360), kind);
+test('every quarter agrees with the engine at its middle and just inside each edge', () => {
+  const along = b => [10 * Math.sin(b * Math.PI / 180), -10 * Math.cos(b * Math.PI / 180)];
+  for (const { kind, mid, from, to } of roseQuarters(axes)) {
+    assert.equal(quadrantKind(...along(mid), axes), kind);
+    assert.equal(quadrantKind(...along(from + 0.5), axes), kind);
+    assert.equal(quadrantKind(...along(to - 0.5), axes), kind);
   }
+});
+
+test('the rose leans with the point of impact', () => {
+  const top = roseQuarters(localAxes(80, 250, 751, 0))[0].mid;
+  const low = roseQuarters(localAxes(330, 700, 751, 0))[0].mid;
+  assert.ok(top > low + 30, `top-left tangent ${top} vs lower-right ${low}`);
 });
