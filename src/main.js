@@ -99,6 +99,7 @@ let noteStrokeless = () => {};
 const noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
   try { const L = window.__wheelLog; if (L) { const l = L.lastLevel() || L.level(); L.push('swipe', { bearing: Math.round(bearing), kind, note: note.trim(), lens: l.lens, ring: l.ring, sky: l.sky, depth: l.depth }); } } catch (_) { /* log only */ }
   noteSwipeBox(bearing, kind, d, x0, y0, note);
+  try { window.__compassRose?.decided(bearing, kind, note); } catch (_) { /* rose only */ }
 };
 if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('swipelog') === '1') {
   const box = document.createElement('div');
@@ -136,6 +137,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
 }
 import { beginScrubbedMigration, scrubDriver, getStackDepth } from './view/migration-animation.js';
 import { mountMigrationLog, migrationLogWanted } from './diagnostics/migration-log.js';
+import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.js';
 import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind, sketchedKind, SKETCHED_WEDGES } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
@@ -168,6 +170,10 @@ const svg = document.getElementById('app');
 // every flight and every change of ring or sky is recorded on
 // window.__wheelLog, to be read over wireless debugging after he stops.
 if (typeof window !== 'undefined' && svg && migrationLogWanted()) mountMigrationLog({ svg, getStackDepth });
+// THE COMPASS ROSE (Howell 2026-10-15): with ?compass=1 a rose under the
+// finger paints the wedges the engine decides with — red drills, blue turns,
+// grey dead — and the engine's verdict beneath. Reads, never decides.
+if (typeof window !== 'undefined' && svg && compassRoseWanted()) mountCompassRose({ wedges: SKETCHED_WEDGES, kindOf: sketchedKind, bearingOf, decidePx: 8 });
 
 // Viewport responsiveness, part one: measure the GENUINELY-visible area and
 // size the canvas from JS to the same numbers the geometry uses. window.inner*
@@ -3367,7 +3373,7 @@ function wireInteractions(getApp) {
       stroke.dead = true;   // nothing to drill that way: a leaf below, or the top above
       return;
     }
-    if (!stroke) noteStrokeless();   // a turn no compass decided (swipelog only)
+    if (!stroke) { noteStrokeless(); try { window.__compassRose?.strokeless(); } catch (_) { /* rose only */ } }   // a turn no compass decided
     app.choreographer.rotate(delta);
   };
 
