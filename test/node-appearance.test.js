@@ -201,8 +201,10 @@ describe('pyramid node appearance', () => {
     const clones = read('src/view/migration-animation.js');
     assert.ok(live.includes('applyPyramidNodeAppearance'), 'the live pyramid dresses its nodes');
     // Every clone builder — animateIn, from-hub, to-hub, stars-away, and
-    // ring-to-sky (O-141) — must dress too, or a node changes face mid-flight.
+    // ring-to-sky (O-141) — must dress too, or a node changes face mid-flight;
+    // ring-to-sky dresses twice since O-204, once for the star and once for
+    // the landing name it cross-fades in.
     const dressed = clones.split('applyPyramidNodeAppearance(').length - 1;
-    assert.equal(dressed, 5, 'all five migration clone builders dress their nodes');
+    assert.equal(dressed, 6, 'all five migration clone builders dress their nodes, ring-to-sky its landing name too');
   });
 });

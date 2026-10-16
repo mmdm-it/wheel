@@ -110,7 +110,17 @@ function setTransition(el, value) {
  * (or null fields) means the take-off dress — the way back.
  */
 const _isNoStroke = v => !v || v === 'none' || v === 'transparent' || /^rgba\([^)]*,\s*0\)$/.test(v);
-function dressForFlight({ circle, label }) {
+// THE NAME CHANGES IN FLIGHT, NOT AT THE SEAT (O-204, Howell 2026-10-16: "the
+// abbreviated names pop on at the focus ring ... it doesn't feel smooth").
+// A sky star wears an abbreviation, a ring node the full name, and the
+// clone used to be born in the sky's dress while still on the ring (out)
+// or land in it and be swapped for the real at the barrier (in): one frame,
+// one pop. The clone now carries BOTH labels — the one it takes off with
+// and the one it lands with, each seated exactly where its real sits — and
+// cross-fades them over the last third of the flight, so by the barrier
+// the clone already reads as the real. Scrubbed, the fade follows the thumb;
+// struck, the take-off name comes back with everything else.
+function dressForFlight({ circle, label, landingLabel = null }) {
   const canStyle = typeof getComputedStyle === 'function';
   const cx = Number(circle.getAttribute('cx')) || 0, cy = Number(circle.getAttribute('cy')) || 0;
   const r0 = Number(circle.getAttribute('r')) || 1;
@@ -158,8 +168,33 @@ function dressForFlight({ circle, label }) {
       setTransition(wrapL, tr ? `transform ${tr}` : 'none');
       setTransform(wrapL, `scale(${kl})`);
     }
+    if (landingLabel && label) {
+      const swap = Boolean(d.swap);
+      const third = durMs > 0 ? Math.round(durMs / 3) : 0;
+      // Landing: the names cross over the LAST third. The way back: the first.
+      const fade = third ? (swap ? `opacity ${third}ms ease-in-out ${durMs - third}ms` : `opacity ${third}ms ease-in-out`) : 'none';
+      label.style.transition = fade;
+      landingLabel.style.transition = fade;
+      label.style.opacity = swap ? '0' : '1';
+      landingLabel.style.opacity = swap ? '1' : '0';
+    }
   };
+  if (landingLabel) landingLabel.style.opacity = '0';
   return { to: (dress, durMs) => apply(dress, durMs), snap: dress => apply(dress, 0) };
+}
+// Where a ring label sits beside its node (the view's own rule: 1.3 radii
+// toward the hub, anchored at its end), for a clone to seat its landing name.
+const RING_LABEL_OFFSET_RADII = -1.3;
+function ringLabelSeat(x, y, angle, radius) {
+  const offset = radius * RING_LABEL_OFFSET_RADII;
+  return { x: x + Math.cos(angle) * offset, y: y + Math.sin(angle) * offset };
+}
+// A point of the LANDING frame expressed in the clone's take-off frame: the
+// clone's group is translated by (tx, ty) and rotated by rotDelta about its
+// origin, so the inverse is applied to the offset from the landing centre.
+function inTakeoffFrame(ox, oy, offX, offY, rotDeltaDeg) {
+  const a = (-rotDeltaDeg * Math.PI) / 180;
+  return { x: ox + offX * Math.cos(a) - offY * Math.sin(a), y: oy + offX * Math.sin(a) + offY * Math.cos(a) };
 }
 
 /**
@@ -206,9 +241,28 @@ function _finishTransaction(txn) {
   try { if (txn.restore) txn.restore(); } catch (e) { /* restore must never throw */ }
   const finishers = txn.finishers;
   if (typeof requestAnimationFrame === 'function') {
-    requestAnimationFrame(() => { finishers.forEach(f => { try { f(); } catch (e) { /* ignore */ } }); });
+    const d = { finishers, raf: 0 };
+    d.raf = requestAnimationFrame(() => { const i = _deferred.indexOf(d); if (i >= 0) _deferred.splice(i, 1); _runFinishers(finishers); });
+    _deferred.push(d);
   } else {
-    finishers.forEach(f => { try { f(); } catch (e) { /* ignore */ } });
+    _runFinishers(finishers);
+  }
+}
+function _runFinishers(finishers) { finishers.forEach(f => { try { f(); } catch (e) { /* ignore */ } }); }
+// THE BARRIER'S ONE-FRAME DEFERRAL, AND WHEN IT MUST NOT WAIT (O-203). The
+// finishers retire the clones a frame after the reals return — and some of
+// them also restore what their flight hid (the ring groups, in the inward
+// flight). A depth drill that commits one level and launches the next in
+// the same task hides the reals again at once; the deferred finishers then
+// landed a frame later and showed them, doubled under the new clones for
+// the whole of the next flight. The host flushes the barrier between the
+// two: everything lands in one task, so no frame is painted in between.
+const _deferred = [];
+export function flushMigrationBarrier() {
+  while (_deferred.length) {
+    const d = _deferred.shift();
+    try { cancelAnimationFrame(d.raf); } catch (e) { /* gone */ }
+    _runFinishers(d.finishers);
   }
 }
 
@@ -498,6 +552,8 @@ export function isAnimating() {
  * @param {string|null} opts.clickedId     — id of the clicked pyramid node (will get magnifier radius)
  * @param {number}      opts.nodeRadius    — default focus-ring node radius
  * @param {number}      [opts.magnifierRadius] — magnifier circle radius (clicked node grows to this)
+ * @param {string}      [opts.lensLabel]   — the name the clicked node lands with in the lens (O-204);
+ *                                          the other targets' landing names ride on ringTargets[].label
  * @param {Function}    opts.onComplete    — called after animation finishes
  */
 export function animateIn(opts) {
@@ -509,6 +565,7 @@ export function animateIn(opts) {
     clickedId,
     nodeRadius = 10,
     magnifierRadius,
+    lensLabel = null,
     durationMs = null,
     onComplete
   } = opts;
@@ -604,6 +661,35 @@ export function animateIn(opts) {
     g.style.transformOrigin = `${pn.x}px ${pn.y}px`;
     g.style.transform = 'translate(0px, 0px) rotate(0deg)';
 
+    // THE LANDING NAME (O-204): the full name, seated where the real ring
+    // label will sit — beside the node for a ring label, on it for a numeral
+    // or the lens — cross-faded in over the last third. Only when it would
+    // differ from the take-off label in name or seat.
+    let landingLabel = null;
+    {
+      const landText = isClickedNode ? (lensLabel ?? target.label ?? null) : (target.label ?? null);
+      const landCentered = Boolean(isClickedNode || target.labelCentered);
+      const takeoffText = label.textContent;
+      if (landText != null && (String(landText) !== String(takeoffText) || !landCentered)) {
+        landingLabel = document.createElementNS(SVG_NS, 'text');
+        landingLabel.setAttribute('dominant-baseline', 'middle');
+        landingLabel.setAttribute('class', isClickedNode ? 'focus-ring-magnifier-label' : (landCentered ? 'focus-ring-label label-on-node' : 'focus-ring-label'));
+        landingLabel.style.fontSize = (isClickedNode && magnifierRadius) ? magLabelSize : ringLabelSize;
+        let sx = pn.x, sy = pn.y;
+        if (!landCentered) {
+          const seat = ringLabelSeat(target.x, target.y, target.angle, target.radius || nodeRadius);
+          const q = inTakeoffFrame(pn.x, pn.y, seat.x - target.x, seat.y - target.y, rotDelta);
+          sx = q.x; sy = q.y;
+        }
+        landingLabel.setAttribute('x', sx);
+        landingLabel.setAttribute('y', sy);
+        landingLabel.setAttribute('text-anchor', landCentered ? 'middle' : 'end');
+        landingLabel.setAttribute('transform', `rotate(${srcRot}, ${sx}, ${sy})`);
+        landingLabel.textContent = String(landText);
+        g.appendChild(landingLabel);
+      }
+    }
+
     // Snapshot the RESOLVED pyramid dress the clone took off in, so the
     // OUT reversal can fade it back into exactly what it left with.
     const takeoffStyle = typeof getComputedStyle === 'function' ? getComputedStyle(circle) : null;
@@ -611,11 +697,12 @@ export function animateIn(opts) {
     const pyramidFillNow = takeoffStyle ? takeoffStyle.fill : '';
     const pyramidStrokeNow = takeoffStyle ? takeoffStyle.stroke : '';
     const pyramidFontNow = takeoffLabelStyle ? takeoffLabelStyle.fontSize : '';
-    const dress = dressForFlight({ circle, label });
+    const dress = dressForFlight({ circle, label, landingLabel });
     const landing = {
       radius: endRadius,
       stroke: (isClickedNode && magnifierRadius) ? magnifierStroke : 'transparent',
-      fontPx: parseFloat((isClickedNode && magnifierRadius) ? magLabelSize : ringLabelSize) || 0
+      fontPx: parseFloat((isClickedNode && magnifierRadius) ? magLabelSize : ringLabelSize) || 0,
+      swap: Boolean(landingLabel)
     };
 
     animEntries.push({
@@ -854,7 +941,8 @@ export function animateRingToSky(opts) {
     // Dressed for the DESTINATION first, so the sky's face is what the
     // computed style answers; then the take-off dress is laid over it.
     applyPyramidNodeAppearance({ circle, label, instr: pn });
-    label.textContent = pn.label ?? pn.item?.name ?? '';
+    const skyText = pn.label ?? pn.item?.name ?? '';
+    label.textContent = skyText;
     g.appendChild(label);
     overlay.appendChild(g);
     const skyStyle = typeof getComputedStyle === 'function' ? getComputedStyle(circle) : null;
@@ -867,8 +955,37 @@ export function animateRingToSky(opts) {
       circle.style.stroke = fromLens ? magnifierStroke : 'transparent';
       const takeoffSize = fromLens ? magLabelSize : ringLabelSize;
       if (takeoffSize) label.style.fontSize = takeoffSize;
-      dress = dressForFlight({ circle, label });
-      landing = { radius: pn.r, stroke: fromLens ? skyStroke : null, fontPx: parseFloat(skyFontSize) || 0 };
+      // THE TAKE-OFF NAME (O-204): the clone leaves wearing the ring's full
+      // name in the ring's own seat — beside the node, or on it for a
+      // numeral or the lens — and the sky's abbreviation, seated on the star,
+      // fades in over the last third of the flight.
+      let landingLabel = null;
+      const ringText = origin.label ?? skyText;
+      const centred = fromLens || Boolean(origin.labelCentered);
+      if (String(ringText) !== String(skyText) || !centred) {
+        label.textContent = String(ringText);
+        label.setAttribute('class', fromLens ? 'focus-ring-magnifier-label' : (centred ? 'focus-ring-label label-on-node' : 'focus-ring-label'));
+        if (!centred) {
+          const seat = ringLabelSeat(fromX, fromY, origin.angle, nodeRadius);
+          label.setAttribute('x', seat.x);
+          label.setAttribute('y', seat.y);
+          label.setAttribute('text-anchor', 'end');
+          label.setAttribute('transform', `rotate(${srcRot}, ${seat.x}, ${seat.y})`);
+        }
+        landingLabel = document.createElementNS(SVG_NS, 'text');
+        landingLabel.setAttribute('x', fromX);
+        landingLabel.setAttribute('y', fromY);
+        landingLabel.setAttribute('text-anchor', 'middle');
+        landingLabel.setAttribute('dominant-baseline', 'middle');
+        landingLabel.setAttribute('class', 'child-pyramid-label');
+        landingLabel.setAttribute('transform', `rotate(${srcRot}, ${fromX}, ${fromY})`);
+        applyPyramidNodeAppearance({ label: landingLabel, instr: pn });
+        if (skyFontSize) landingLabel.style.fontSize = skyFontSize;
+        landingLabel.textContent = String(skyText);
+        g.appendChild(landingLabel);
+      }
+      dress = dressForFlight({ circle, label, landingLabel });
+      landing = { radius: pn.r, stroke: fromLens ? skyStroke : null, fontPx: parseFloat(skyFontSize) || 0, swap: Boolean(landingLabel) };
     }
     const dstRot = labelRotationDeg(pn.angle);
     let rotDelta = dstRot - srcRot;
