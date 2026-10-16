@@ -1,147 +1,132 @@
-// THE COMPASS DECIDES (O-152): Howell's bands for rotate and drill, with dead
-// zones between them, on the Moto G 2025's page area (Northwest = 331°).
+import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
-import { describe, it } from 'node:test';
-import { bearingOf, diagonalLean, compassBands, classifyBearing, axisFor, nearestKind, sketchedKind, SKETCHED_WEDGES } from '../src/core/stroke.js';
+import { bearingOf, bearingOfUnit, localAxes, quadrantKind, axisOf, recentDirection, withinCone, turnGateOpen } from '../src/core/stroke.js';
 
-describe('the compass decides (O-152)', () => {
-  it('bearings are a compass on the glass: north up, clockwise', () => {
+// The Moto G's page area: 347 × 633 css px; the ring's centre by the v2
+// formula sits at (751, 0), just off the right edge at the top.
+const HUB = { x: 751, y: 0 };
+const axesAt = (x, y) => localAxes(x, y, HUB.x, HUB.y);
+const near = (a, b, tol = 0.5) => Math.abs(((a - b + 540) % 360) - 180) <= tol;
+
+describe('the local compass (O-200)', () => {
+  test('bearings: north 0, east 90, south 180, west 270', () => {
     assert.equal(bearingOf(0, -10), 0);
     assert.equal(bearingOf(10, 0), 90);
     assert.equal(bearingOf(0, 10), 180);
     assert.equal(bearingOf(-10, 0), 270);
   });
-  it('the Moto G page area leans 29° and gives Howell\'s bands', () => {
-    const d = diagonalLean(720, 1314);
-    assert.ok(Math.abs(d - 28.7) < 0.1);
-    // The first ruling's numbers, with its original inner edges.
-    const b = compassBands(29, { cwInner: 10, ccwInner: 10 });
-    assert.deepEqual(b.cw, [321, 341]);
-    assert.deepEqual(b.out, [351, 131]);
-    assert.deepEqual(b.ccw, [141, 161]);
-    assert.deepEqual(b.in, [171, 311]);
+
+  test('at the lens the tangent points up-left and the radial line up-right, toward the centre', () => {
+    const a = axesAt(159, 463);   // the magnifier, 142° round the circle
+    assert.ok(near(bearingOfUnit(a.cw), 322, 1), `cw tangent ${bearingOfUnit(a.cw)}`);
+    assert.ok(near(bearingOfUnit(a.out), 52, 1), `out radial ${bearingOfUnit(a.out)}`);
+    assert.ok(Math.abs(a.cw.ux * a.out.ux + a.cw.uy * a.out.uy) < 1e-9, 'at right angles');
   });
-  it('each band decides its action, and the dead zones decide nothing', () => {
-    const at = x => classifyBearing(x, 29, { cwInner: 10, ccwInner: 10 });
-    for (const x of [321, 331, 341]) assert.equal(at(x), 'cw', `${x}`);
-    for (const x of [141, 151, 161]) assert.equal(at(x), 'ccw', `${x}`);
-    for (const x of [351, 0, 61, 90, 131]) assert.equal(at(x), 'out', `${x}`);
-    for (const x of [171, 180, 241, 270, 311]) assert.equal(at(x), 'in', `${x}`);
-    for (const x of [345, 135, 165, 315]) assert.equal(at(x), null, `${x} is dead`);
+
+  test('the axes turn with the point of impact: nearly vertical at the top left, leaning across the middle', () => {
+    assert.ok(near(bearingOfUnit(axesAt(80, 250).cw), 339, 1), 'top left: almost straight up');
+    assert.ok(near(bearingOfUnit(axesAt(220, 500).cw), 317, 1), 'middle: leaning');
+    assert.ok(near(bearingOfUnit(axesAt(330, 700).cw), 301, 1), 'lower right: leaning further');
   });
-  it('a stroke measures along its own axis, the two axes at right angles', () => {
-    const cw = axisFor('cw', 29), out = axisFor('out', 29);
-    assert.ok(Math.abs(cw.ux * out.ux + cw.uy * out.uy) < 1e-9, 'perpendicular');
-    assert.ok(cw.ux < 0 && cw.uy < 0, 'clockwise points up and to the left');
-    assert.ok(out.ux > 0 && out.uy < 0, 'drill out points up and to the right');
+
+  test('clockwise is the clockwise of a clock face around the centre', () => {
+    // Straight below the centre, 9 o\'clock seen from it is to the left; moving
+    // up on the left side of a clock is clockwise.
+    const left = axesAt(HUB.x - 500, HUB.y);
+    assert.ok(near(bearingOfUnit(left.cw), 0), 'left of the centre: clockwise is up');
+    const below = axesAt(HUB.x, HUB.y + 500);
+    assert.ok(near(bearingOfUnit(below.cw), 270), 'below the centre: clockwise is left');
+  });
+
+  test('the four quarters: the nearer axis wins, no stroke is dead', () => {
+    const a = axesAt(159, 463);
+    const along = (bearing, len = 10) => [len * Math.sin(bearing * Math.PI / 180), -len * Math.cos(bearing * Math.PI / 180)];
+    assert.equal(quadrantKind(...along(322), a), 'cw');
+    assert.equal(quadrantKind(...along(142), a), 'ccw');
+    assert.equal(quadrantKind(...along(52), a), 'out');
+    assert.equal(quadrantKind(...along(232), a), 'in');
+    // 44° off an axis is still that axis; 46° off is the neighbour.
+    assert.equal(quadrantKind(...along(322 + 44), a), 'cw');
+    assert.equal(quadrantKind(...along(322 + 46), a), 'out');
+    assert.equal(quadrantKind(...along(52 + 44), a), 'out');
+    assert.equal(quadrantKind(...along(52 + 46), a), 'ccw');
+    // Every whole degree is one of the four.
+    const seen = new Set();
+    for (let b = 0; b < 360; b++) seen.add(quadrantKind(...along(b), a));
+    assert.deepEqual([...seen].sort(), ['ccw', 'cw', 'in', 'out']);
+  });
+
+  test('a tie is a turn', () => {
+    const a = { cw: { ux: 1, uy: 0 }, out: { ux: 0, uy: -1 } };
+    assert.equal(quadrantKind(10, -10, a), 'cw');
+    assert.equal(quadrantKind(-10, 10, a), 'ccw');
+  });
+
+  test('the measuring axis of each kind, and the opposite kinds point opposite ways', () => {
+    const a = axesAt(159, 463);
+    assert.deepEqual(axisOf('cw', a), a.cw);
+    assert.deepEqual(axisOf('out', a), a.out);
+    const ccw = axisOf('ccw', a), inn = axisOf('in', a);
+    assert.ok(Math.abs(ccw.ux + a.cw.ux) < 1e-12 && Math.abs(ccw.uy + a.cw.uy) < 1e-12);
+    assert.ok(Math.abs(inn.ux + a.out.ux) < 1e-12 && Math.abs(inn.uy + a.out.uy) < 1e-12);
+    assert.equal(axisOf('tap', a), null);
+  });
+
+  test('at the centre itself north and east stand in', () => {
+    const a = axesAt(HUB.x, HUB.y);
+    assert.deepEqual(a, { cw: { ux: 0, uy: -1 }, out: { ux: 1, uy: 0 } });
   });
 });
 
-// THE ROTATION BANDS WIDEN BY THE MAGNIFIER'S CORNERS (O-152 amended): on the
-// Moto G page area the magnifier sees the upper-left corner at 341° and the
-// lower-right at 132.3°, so clockwise reaches 351° and counter-clockwise
-// starts at 122.3°; the dead zones keep 10°, drill out narrows.
-describe('the rotation bands widen by the magnifier\'s corners (O-152 amended)', () => {
-  const opts = { ul: 341, lr: 132.3, cwInner: 10, ccwInner: 10 };
-  it('clockwise 321–351, counter-clockwise 122.3–161, drill out 1–112.3, drill in unchanged', () => {
-    const b = compassBands(29, opts);
-    assert.deepEqual(b.cw, [321, 351]);
-    assert.deepEqual(b.ccw.map(x => Math.round(x * 10) / 10), [122.3, 161]);
-    assert.deepEqual(b.out.map(x => Math.round(x * 10) / 10), [1, 112.3]);
-    assert.deepEqual(b.in, [171, 311]);
+describe('the turn gate (O-202)', () => {
+  const axis = { ux: 1, uy: 0 };   // a horizontal tangent, for the arithmetic
+  const path = (...pts) => pts.map(([x, y]) => ({ x, y }));
+
+  test('no direction until the path is a window long', () => {
+    assert.equal(recentDirection(path([0, 0]), 8), null);
+    assert.equal(recentDirection(path([0, 0], [3, 0], [6, 0]), 8), null);
+    assert.deepEqual(recentDirection(path([0, 0], [4, 0], [8, 0]), 8), { dx: 8, dy: 0, len: 8 });
   });
-  it('the wider rotation and the gaps beside it decide as drawn', () => {
-    const at = x => classifyBearing(x, 29, opts);
-    assert.equal(at(348), 'cw', 'nearly straight up now turns');
-    assert.equal(at(125), 'ccw');
-    assert.equal(at(355), null, 'the gap past clockwise');
-    assert.equal(at(117), null, 'the gap before counter-clockwise');
-    assert.equal(at(45), 'out');
-    assert.equal(at(241), 'in');
+
+  test('the direction is of the LAST window of the path, not of the whole stroke', () => {
+    const d = recentDirection(path([0, 0], [20, 0], [40, 0], [40, 4], [40, 8]), 8);
+    assert.deepEqual(d, { dx: 0, dy: 8, len: 8 });
+  });
+
+  test('a dithering thumb has no direction', () => {
+    assert.equal(recentDirection(path([0, 0], [3, 0], [0, 0], [3, 0], [0, 0]), 8), null);
+  });
+
+  test('the gate opens within the cone either way along the axis, and shuts across it', () => {
+    const along = b => ({ dx: 10 * Math.sin(b * Math.PI / 180), dy: -10 * Math.cos(b * Math.PI / 180), len: 10 });
+    assert.ok(withinCone(along(90), axis, 45), 'along the tangent');
+    assert.ok(withinCone(along(270), axis, 45), 'back along the tangent: that is how a turn reverses');
+    assert.ok(withinCone(along(90 + 44), axis, 45));
+    assert.ok(!withinCone(along(90 + 46), axis, 45));
+    assert.ok(!withinCone(along(0), axis, 45), 'across the ring: thrown away');
+    assert.ok(!withinCone(along(180), axis, 45));
+    assert.ok(!withinCone(null, axis, 45));
+    assert.ok(!withinCone(along(90 + 36), axis, 35), 'a narrower cone shuts sooner');
   });
 });
 
-// AND INWARD TO THE THUMB (O-152 amended again): the gesture log's strokes.
-describe('the bands cover the logged strokes (O-152, 2026-09-16 log)', () => {
-  const opts = { ul: 341, lr: 132.3 };
-  it('clockwise 296–351, counter-clockwise 122.3–171, drill out 1–112.3, drill in 181–286', () => {
-    const b = compassBands(29, opts);
-    assert.deepEqual(b.cw, [296, 351]);
-    assert.deepEqual(b.ccw.map(x => Math.round(x * 10) / 10), [122.3, 171]);
-    assert.deepEqual(b.in, [181, 286]);
+describe('the gate shuts the moment the thumb turns across the ring', () => {
+  const axis = { ux: 1, uy: 0 };
+  const path = (...pts) => pts.map(([x, y]) => ({ x, y }));
+  test('a long run along the tangent opens it', () => {
+    const g = turnGateOpen(path([0, 0], [5, 0], [10, 0], [15, 0]), 8, 45, axis);
+    assert.equal(g.open, true); assert.equal(g.bearing, 90);
   });
-  it('every logged rotation and drill stroke decides as intended', () => {
-    const at = x => classifyBearing(x, 29, opts);
-    for (const x of [322, 318, 321, 314, 320, 300, 301, 305, 309, 316, 332]) assert.equal(at(x), 'cw', `${x}`);
-    for (const x of [156, 166, 161, 143, 150]) assert.equal(at(x), 'ccw', `${x}`);
-    for (const x of [39, 53, 60]) assert.equal(at(x), 'out', `${x}`);
-    for (const x of [206, 228, 256]) assert.equal(at(x), 'in', `${x}`);
+  test('the first move across the ring shuts it, though the window still points along', () => {
+    const g = turnGateOpen(path([0, 0], [5, 0], [10, 0], [15, 0], [15, 3]), 8, 45, axis);
+    assert.equal(g.open, false);
   });
-});
-
-// NO DEAD ZONES (O-191): every stroke is the nearer of the four directions.
-describe('the nearer axis decides, and nothing is dead (O-191)', () => {
-  it('the four directions themselves', () => {
-    assert.equal(nearestKind(331, 29), 'cw');
-    assert.equal(nearestKind(151, 29), 'ccw');
-    assert.equal(nearestKind(61, 29), 'out');
-    assert.equal(nearestKind(241, 29), 'in');
+  test('a sub-two-pixel wobble does not shut it', () => {
+    const g = turnGateOpen(path([0, 0], [5, 0], [10, 0], [15, 0], [15, 1]), 8, 45, axis);
+    assert.equal(g.open, true);
   });
-  it('the old dead zones now belong to their nearer neighbour', () => {
-    assert.equal(nearestKind(345, 29), 'cw', '14° from cw, 76° from out');
-    assert.equal(nearestKind(16, 29), 'cw', '45° each way: the first listed wins, which is turning');
-    assert.equal(nearestKind(17, 29), 'out');
-    assert.equal(nearestKind(135, 29), 'ccw');
-    assert.equal(nearestKind(196, 29), 'ccw'); assert.equal(nearestKind(197, 29), 'in');
-    assert.equal(nearestKind(285, 29), 'in'); assert.equal(nearestKind(286, 29), 'cw', 'the tie goes to turning');
-  });
-  it('the diagonals drill; straight up and down are nearer the band, and turn', () => {
-    assert.equal(nearestKind(225, 29), 'in', 'towards the south-west, where the lens is');
-    assert.equal(nearestKind(45, 29), 'out', 'towards the north-east, where the sky is');
-    assert.equal(nearestKind(180, 29), 'ccw', '29° from the band\'s tangent, 61° from the drill');
-    assert.equal(nearestKind(0, 29), 'cw');
-  });
-});
-
-// THE DEAD ZONES AS HOWELL DREW THEM (2026-10-02): four 75-degree wedges on
-// fixed SCREEN bearings with fifteen dead degrees at each midpoint. No lean.
-describe('the wedges as drawn (2026-10-02)', () => {
-  it('each wedge owns its own middle', () => {
-    assert.equal(sketchedKind(42), 'out', 'northeast drills out');
-    assert.equal(sketchedKind(132), 'ccw', 'southeast turns counter-clockwise');
-    assert.equal(sketchedKind(222), 'in', 'southwest drills in');
-    assert.equal(sketchedKind(312), 'cw', 'northwest turns clockwise');
-  });
-  it('the four midpoints are dead', () => {
-    for (const b of [0, 357, 4, 87, 90, 94, 177, 180, 184, 267, 270, 274]) {
-      assert.equal(sketchedKind(b), null, `${b} sits in a dead wedge`);
-    }
-  });
-  it('a wedge owns both its edges, so the dead runs are 81-94 and its kin', () => {
-    assert.equal(sketchedKind(5), 'out'); assert.equal(sketchedKind(4), null);
-    assert.equal(sketchedKind(80), 'out'); assert.equal(sketchedKind(81), null);
-    assert.equal(sketchedKind(95), 'ccw'); assert.equal(sketchedKind(94), null);
-    assert.equal(sketchedKind(350), 'cw'); assert.equal(sketchedKind(351), null);
-  });
-  it('the cluster the gesture log caught now reads one way, not two', () => {
-    // 2026-10-01 on the phone: 9, 16, 16, 17 and 30 degrees split between
-    // turning and drilling at a boundary that fell at 16.
-    for (const b of [9, 16, 17, 30, 59]) assert.equal(sketchedKind(b), 'out', `${b} drills out`);
-  });
-  it('the wedges and the dead zones tile the whole compass exactly once', () => {
-    const seen = new Map();
-    for (let b = 0; b < 360; b++) seen.set(b, sketchedKind(b));
-    const live = [...seen.values()].filter(Boolean).length;
-    assert.equal(live, 4 * 76, 'four wedges of 76 whole degrees, edges included');
-    assert.equal(360 - live, 4 * 14, 'and fourteen whole dead degrees at each midpoint');
-  });
-  it('bearings wrap, so the northwest wedge is not split by north', () => {
-    assert.equal(sketchedKind(-10), 'cw', '-10 is 350');
-    assert.equal(sketchedKind(365), 'out', '365 is 5');
-  });
-  it('the drills follow O-191: southwest to northeast out, the reverse in', () => {
-    assert.equal(sketchedKind(bearingOf(10, -10)), 'out', 'up and right');
-    assert.equal(sketchedKind(bearingOf(-10, 10)), 'in', 'down and left');
-    assert.equal(SKETCHED_WEDGES.length, 4);
+  test('turning back along the tangent reopens it once the window has turned', () => {
+    assert.equal(turnGateOpen(path([0, 0], [10, 0], [20, 0], [20, 10], [20, 20], [15, 20]), 8, 45, axis).open, false, 'window still across');
+    assert.equal(turnGateOpen(path([0, 0], [10, 0], [20, 0], [20, 10], [20, 20], [15, 20], [10, 20]), 8, 45, axis).open, true, 'window now back along');
   });
 });

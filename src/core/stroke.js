@@ -1,22 +1,25 @@
-// THE COMPASS DECIDES (O-152, Howell 2026-09-16), superseding the angle-to-
-// the-hub rule of O-142. Bearings are a compass: north 0, east 90, south 180,
-// west 270, clockwise, measured on the glass (up is north). The screen's own
-// diagonal fixes the axes — on the Moto G 2025's page area the lower-right to
-// upper-left diagonal points to 331°, "Northwest" — so another phone's shape
-// gets its own Northwest. With d = the diagonal's lean off vertical (29° there):
+// THE LOCAL COMPASS (O-200, Howell 2026-10-15), superseding the fixed screen
+// compass of O-152 and the dead wedges of O-192. The focus ring is an arc of
+// a circle; every point on the glass lies on a circle concentric with it, so
+// at the point where the thumb lands there is one tangent and one radial
+// line. "They should be tangential to the focus ring or a ring which is
+// concentric to the focus ring ... at the point of impact of the thumb."
 //
-//   rotate CLOCKWISE          Northwest ± 10°   321 – 341
-//   dead                      10°               341 – 351
-//   DRILL OUT                 140°              351 – 131  (through north and east)
-//   dead                      10°               131 – 141
-//   rotate COUNTER-CLOCKWISE  Southeast ± 10°   141 – 161
-//   dead                      10°               161 – 171
-//   DRILL IN                  140°              171 – 311  (through south and west)
-//   dead                      10°               311 – 321
+//   turn CLOCKWISE / COUNTER-CLOCKWISE   along the tangent, around the centre
+//   DRILL OUT / DRILL IN                  along the radial line, toward the
+//                                         centre and away from it
 //
-// Rotation runs along the Northwest–Southeast axis and drilling along the
-// axis at right angles to it (61° / 241° there); once a stroke is decided,
-// only movement along its own axis counts. Pure geometry, no DOM.
+// "Let's do away with the dead zones at point of impact and during the
+// initial reading of intended direction of travel": the first short piece of
+// travel is read against the four directions and the nearer axis wins; a tie
+// is a turn. "Once the direction of travel has been determined, then the dead
+// zones simply become an elimination of either radial travel or rotational
+// travel, as the case may be": a decided stroke keeps only the component
+// along its own axis — the host measures a turn along the tangent under the
+// thumb as it moves, a drill along the radial line from the press.
+//
+// Bearings, where they are quoted, are a compass on the glass: north 0, east
+// 90, clockwise, up is north. Pure geometry, no DOM.
 
 const norm = deg => ((deg % 360) + 360) % 360;
 const RAD = Math.PI / 180;
@@ -26,145 +29,101 @@ export function bearingOf(dx, dy) {
   return norm(Math.atan2(dx, -dy) / RAD);
 }
 
-/** How far the screen's diagonal leans off vertical, in degrees (29 on the Moto G page area). */
-export function diagonalLean(width, height) {
-  if (!(width > 0) || !(height > 0)) return 29;
-  return Math.atan(width / height) / RAD;
+/** The compass bearing a unit vector points along. */
+export function bearingOfUnit({ ux, uy }) {
+  return bearingOf(ux, uy);
 }
 
 /**
- * The bands, for a lean d: each [from, to] clockwise, in degrees.
- *
- * THE ROTATION BANDS WIDEN OUTWARD BY TWO REFERENCE ANGLES (O-152 amended,
- * Howell 2026-09-16, drawing on a screenshot: "measure from the magnifier to
- * the upper left corner, and again from the magnifier to the lower right
- * corner, and then add 10 degrees to the first angle, which is headed
- * northwest, and subtract 10 degrees from the second angle, which is towards
- * southeast"). When `ul` (the bearing from the magnifier to the upper-left
- * corner) and `lr` (to the lower-right corner) are given, the clockwise band
- * runs from the diagonal's inner edge up to ul + 10°, and the counter-
- * clockwise band from lr − 10° up to its inner edge; the 10° dead zones keep
- * their width, and drill out narrows between them. Without them, the
- * symmetric ± 10° bands of the first ruling.
+ * The two axes at a point on the glass, for a ring centred at (hubX, hubY):
+ * `cw`, the tangent in the clockwise sense around the centre, and `out`, the
+ * radial line toward the centre. Both unit vectors; (dy grows downward, so
+ * clockwise on the glass is the clockwise of a clock face). At the centre
+ * itself there is no tangent; north and east stand in.
  */
-//
-// AND INWARD TO WHERE THE THUMB ACTUALLY GOES (O-152 amended again, Howell
-// 2026-09-16: "go", after the gesture log showed his clockwise strokes along
-// the ring at 300–322° and his counter-clockwise at 143–166°, most of them
-// landing in the dead zones). The inner edges move: clockwise reaches down to
-// Northwest − 35° (296° there), counter-clockwise up to Southeast + 20° (171°);
-// the dead zones keep 10°, so drill in narrows to 181–286°.
-export function compassBands(d = 29, { rotateHalf = 10, cwInner = 35, ccwInner = 20, dead = 10, ul = null, lr = null } = {}) {
-  const nw = norm(360 - d), se = norm(180 - d);
-  const cwOuter = Number.isFinite(ul) ? norm(ul + rotateHalf) : norm(nw + rotateHalf);
-  const ccwOuter = Number.isFinite(lr) ? norm(lr - rotateHalf) : norm(se - rotateHalf);
-  const cwStart = norm(nw - cwInner), ccwEnd = norm(se + ccwInner);
-  return {
-    cw: [cwStart, cwOuter],
-    out: [norm(cwOuter + dead), norm(ccwOuter - dead)],
-    ccw: [ccwOuter, ccwEnd],
-    in: [norm(ccwEnd + dead), norm(cwStart - dead)],
-  };
-}
-
-// Is bearing b inside the clockwise arc [from, to]?
-const within = (b, [from, to]) => (from <= to ? b >= from && b <= to : b >= from || b <= to);
-
-/**
- * @returns {'cw'|'ccw'|'out'|'in'|null} — null is a dead zone: nothing happens.
- */
-export function classifyBearing(bearing, d = 29, opts = {}) {
-  const b = norm(bearing);
-  const bands = compassBands(d, opts);
-  if (within(b, bands.cw)) return 'cw';
-  if (within(b, bands.ccw)) return 'ccw';
-  if (within(b, bands.out)) return 'out';
-  if (within(b, bands.in)) return 'in';
-  return null;
+export function localAxes(x, y, hubX, hubY) {
+  const rx = x - hubX, ry = y - hubY;
+  const len = Math.hypot(rx, ry);
+  if (!(len > 0)) return { cw: { ux: 0, uy: -1 }, out: { ux: 1, uy: 0 } };
+  return { cw: { ux: -ry / len, uy: rx / len }, out: { ux: -rx / len, uy: -ry / len } };
 }
 
 /**
- * NO DEAD ZONES — THE SESSION'S ADDITION UNDER O-191, NOT HOWELL'S RULING.
- * The comment here used to read "NO DEAD ZONES (O-191, Howell 2026-10-01)",
- * which put his name on a choice he never made: what he ruled that day was
- * where the drills point ("Any swipe going in a southwest to northeast
- * direction would migrate out"), and the ledger row records the rest as
- * "the session's additions — two axes and no dead zones" which he approved
- * as a package with "Proceed." He said so himself on 2026-10-02: "I don't
- * remember making a decision to remove the dead zones." Corrected here so
- * the record says which half was his.
- *
- * Two axes at right angles, and every stroke is the nearer of the four
- * directions. SUPERSEDED AS THE HOST'S RULE by sketchedKind below; kept
- * because it is what the measuring axes are still built from.
+ * The nearer of the four directions for a movement (dx, dy) under the axes:
+ * the larger component wins, and an exact tie is a turn.
  * @returns {'cw'|'ccw'|'out'|'in'}
  */
-export function nearestKind(bearing, d = 29) {
-  const b = norm(bearing);
-  const dirs = [['cw', norm(360 - d)], ['ccw', norm(180 - d)], ['out', norm(90 - d)], ['in', norm(270 - d)]];
-  let best = 'cw', bestDist = 361;
-  for (const [kind, a] of dirs) {
-    const dist = Math.abs(((b - a + 540) % 360) - 180);
-    if (dist < bestDist) { bestDist = dist; best = kind; }
-  }
-  return best;
+export function quadrantKind(dx, dy, axes) {
+  const t = dx * axes.cw.ux + dy * axes.cw.uy;
+  const r = dx * axes.out.ux + dy * axes.out.uy;
+  if (Math.abs(r) > Math.abs(t)) return r > 0 ? 'out' : 'in';
+  return t >= 0 ? 'cw' : 'ccw';
 }
 
-/**
- * THE DEAD ZONES AS HOWELL DREW THEM (2026-10-02, a sketch of four red
- * wedges on a compass rose; "I'm just curious to see how they feel as
- * drawn"). FIXED SCREEN BEARINGS — no lean, no magnifier, no band tangent:
- * the four actions own seventy-five degrees each, and the fifteen degrees
- * at each midpoint between them are inert.
- *
- *   dead                    350 – 5     (straight up)
- *   DRILL OUT                 5 – 80    (northeast)
- *   dead                     80 – 95    (straight right)
- *   rotate COUNTER-CLOCKWISE  95 – 170  (southeast)
- *   dead                    170 – 185   (straight down)
- *   DRILL IN                185 – 260   (southwest)
- *   dead                    260 – 275   (straight left)
- *   rotate CLOCKWISE        275 – 350   (northwest)
- *
- * The drills follow his O-191 words exactly: southwest to northeast migrates
- * out, northeast to southwest migrates in. A wedge owns both its edges, so a
- * stroke at 5 or 80 drills rather than dying — the dead run is 81–94, 171–184,
- * 261–274, 351–4.
- *
- * WHAT THIS DELIBERATELY DOES NOT TOUCH: the axis each decided stroke then
- * measures along is still axisFor(), built from the screen's diagonal lean.
- * A wedge is centred on 42.5 while its measuring axis sits at 61, so a stroke
- * down the middle of the wedge loses about five per cent of its travel, and
- * one along the wedge's lower edge loses more. Changing that is a second
- * decision and it is Howell's, not this session's — the lesson of O-191.
- *
- * @returns {'cw'|'ccw'|'out'|'in'|null} — null is dead: nothing until lift.
- */
-export const SKETCHED_WEDGES = [
-  ['out', 5, 80],
-  ['ccw', 95, 170],
-  ['in', 185, 260],
-  ['cw', 275, 350],
-];
+/** The unit vector a decided stroke of this kind measures along. */
+export function axisOf(kind, axes) {
+  switch (kind) {
+    case 'cw': return axes.cw;
+    case 'ccw': return { ux: -axes.cw.ux, uy: -axes.cw.uy };
+    case 'out': return axes.out;
+    case 'in': return { ux: -axes.out.ux, uy: -axes.out.uy };
+    default: return null;
+  }
+}
 
-export function sketchedKind(bearing) {
-  const b = norm(bearing);
-  for (const [kind, from, to] of SKETCHED_WEDGES) if (within(b, [from, to])) return kind;
+// THE TURN GATE (O-202, Howell 2026-10-15): "once it has been determined
+// that this swipe is rotational, only moves that are clearly within the
+// rotational direction should cause rotation ... the ring shouldn't move at
+// all unless there is clearly a movement in that direction. So whatever that
+// initial filter is of 8 pixels ... needs to constantly update and only look
+// for long movements in a direction that is the same as the initial
+// direction." The direction of the last `windowPx` of the thumb's path is
+// re-read at every move; the ring turns only while it lies within `coneDeg`
+// of the tangent, either way along it — that is how a turn reverses.
+
+/**
+ * The direction of the last `windowPx` of a path (points in order, the
+ * current position last): the vector from the point `windowPx` back along
+ * the path to the current point. Null until the path is that long, and
+ * null when the thumb has dithered — the straight-line distance over the
+ * window is under half of it — because that direction is noise.
+ */
+export function recentDirection(trail, windowPx) {
+  if (!trail || trail.length < 2) return null;
+  const now = trail[trail.length - 1];
+  let walked = 0;
+  for (let i = trail.length - 2; i >= 0; i--) {
+    walked += Math.hypot(trail[i + 1].x - trail[i].x, trail[i + 1].y - trail[i].y);
+    if (walked >= windowPx) {
+      const dx = now.x - trail[i].x, dy = now.y - trail[i].y;
+      const len = Math.hypot(dx, dy);
+      return len >= windowPx / 2 ? { dx, dy, len } : null;
+    }
+  }
   return null;
 }
 
-/** The unit vector on the glass pointing along a bearing. */
-export function unitOf(bearing) {
-  return { ux: Math.sin(bearing * RAD), uy: -Math.cos(bearing * RAD) };
+/** Is the direction within `coneDeg` of the axis, either way along it? */
+export function withinCone(dir, axis, coneDeg) {
+  if (!dir || !(dir.len > 0)) return false;
+  const cos = Math.abs(dir.dx * axis.ux + dir.dy * axis.uy) / dir.len;
+  return cos >= Math.cos(coneDeg * Math.PI / 180) - 1e-12;
 }
 
-/** The axis each decided stroke measures along, for a lean d. */
-export function axisFor(kind, d = 29) {
-  switch (kind) {
-    case 'cw': return unitOf(360 - d);
-    case 'ccw': return unitOf(180 - d);
-    case 'out': return unitOf(90 - d);
-    case 'in': return unitOf(270 - d);
-    default: return null;
+/**
+ * The gate itself, for a path with the current position last: open when the
+ * last `windowPx` of travel lies within the cone AND the latest movement,
+ * if it is long enough to have a direction of its own (2 px), does too —
+ * so the ring stops the moment the thumb turns across it, instead of a
+ * window later. Returns the direction's bearing for the instruments.
+ */
+export function turnGateOpen(trail, windowPx, coneDeg, axis) {
+  const dir = recentDirection(trail, windowPx);
+  let open = withinCone(dir, axis, coneDeg);
+  if (open && trail.length >= 2) {
+    const a = trail[trail.length - 2], b = trail[trail.length - 1];
+    const last = { dx: b.x - a.x, dy: b.y - a.y, len: Math.hypot(b.x - a.x, b.y - a.y) };
+    if (last.len >= 2 && !withinCone(last, axis, coneDeg)) open = false;
   }
+  return { open, bearing: dir ? bearingOf(dir.dx, dir.dy) : null };
 }

@@ -16,6 +16,9 @@ describe('the largest child (O-132)', () => {
   it('ties within a tier go to the first sibling', () => {
     assert.equal(largestChildIndex([node(3, 1), node(1, 1), node(2, 2)]), 1);
   });
+  it('the node just drilled out from comes first, over the favourite (O-198: the reciprocal swipe)', () => {
+    assert.equal(largestChildIndex([node(0, 1), { ...node(7), standout: true }, node(2, 2)]), 1);
+  });
   it('nothing to drill into is -1', () => {
     assert.equal(largestChildIndex([]), -1);
     assert.equal(largestChildIndex(null), -1);

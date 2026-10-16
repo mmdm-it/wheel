@@ -315,11 +315,14 @@ export function relativeTiers(items, rankOf, { day = dayKey() } = {}) {
 }
 
 // THE LARGEST CHILD (O-132, Howell 2026-09-14): the node the down-swipe
-// drills into — the best prominence tier among the sky's nodes (the day's
-// standout, under O-134), ties to the first sibling, so a sky with no ranks
-// drills into its beginning.
+// drills into — the node just drilled out from when the sky holds one
+// (O-198: the reciprocal swipe), else the best prominence tier among the
+// sky's nodes (the favourite, under O-134), ties to the first sibling, so a
+// sky with no ranks drills into its beginning.
 export function largestChildIndex(nodes) {
   if (!Array.isArray(nodes) || !nodes.length) return -1;
+  const back = nodes.findIndex(n => n && n.standout);
+  if (back >= 0) return back;
   const tierOf = n => { const it = n?.item ?? n; const t = it?.prominence ?? it?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 5; };
   const orderOf = n => { const it = n?.item ?? n; return Number.isFinite(it?.order) ? it.order : Number.POSITIVE_INFINITY; };
   let best = -1;

@@ -96,9 +96,10 @@ let noteStrokeless = () => {};
 // THE SWIPE DECISION GOES TO THE MIGRATION LOG WHETHER OR NOT THE BOX IS ON
 // (Howell 2026-10-03: "I don't need the visual log on screen"). ?migrationlog=1
 // records without painting; ?swipelog=1 records and paints.
-const noteSwipe = (bearing, kind, d, x0, y0, note = '') => {
+const noteSwipe = (bearing, kind, x0, y0, note = '') => {
   try { const L = window.__wheelLog; if (L) { const l = L.lastLevel() || L.level(); L.push('swipe', { bearing: Math.round(bearing), kind, note: note.trim(), lens: l.lens, ring: l.ring, sky: l.sky, depth: l.depth }); } } catch (_) { /* log only */ }
-  noteSwipeBox(bearing, kind, d, x0, y0, note);
+  noteSwipeBox(bearing, kind, x0, y0, note);
+  try { window.__compassRose?.decided(bearing, kind, note); } catch (_) { /* rose only */ }
 };
 if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('swipelog') === '1') {
   const box = document.createElement('div');
@@ -106,7 +107,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   box.style.cssText = 'position:fixed;left:3px;bottom:3px;z-index:2147483646;font:11px/1.35 monospace;color:#fff;background:rgba(0,0,0,.82);padding:4px 6px;border-radius:4px;pointer-events:none;white-space:pre;max-width:97vw;';
   const mount = () => document.body?.appendChild(box);
   if (document.body) mount(); else window.addEventListener('DOMContentLoaded', mount, { once: true });
-  const NAME = { cw: 'ROTATE cw ', ccw: 'ROTATE ccw', out: 'DRILL out ', in: 'DRILL in  ', null: 'DEAD      ' };
+  const NAME = { cw: 'ROTATE cw ', ccw: 'ROTATE ccw', out: 'DRILL out ', in: 'DRILL in  ' };
   const norm360 = v => Math.round(((v % 360) + 360) % 360);
   const deg = v => `${String(norm360(v)).padStart(3)}°`;
   const rows = [];
@@ -117,8 +118,8 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   const paint = () => { box.textContent = [head, ...rows].join('\n'); };
   const render = () => { if (open) rows[0] = line(open); paint(); };
   const push = text => { rows.unshift(text); if (rows.length > 8) rows.pop(); };
-  noteSwipeBox = (bearing, kind, d, x0, y0, note = '') => {
-    head = 'out 5-80  ccw 95-170  in 185-260  cw 275-350   dead between';
+  noteSwipeBox = (bearing, kind, x0, y0, note = '') => {
+    head = 'local compass: tangent turns, radial drills, no dead zone';
     open = { bearing, kind, note, x0, y0, end: null };
     push('');
     render();
@@ -136,7 +137,8 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
 }
 import { beginScrubbedMigration, scrubDriver, getStackDepth } from './view/migration-animation.js';
 import { mountMigrationLog, migrationLogWanted } from './diagnostics/migration-log.js';
-import { bearingOf, diagonalLean, classifyBearing, axisFor, nearestKind, sketchedKind, SKETCHED_WEDGES } from './core/stroke.js';
+import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.js';
+import { bearingOf, localAxes, quadrantKind, axisOf, turnGateOpen } from './core/stroke.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -168,6 +170,10 @@ const svg = document.getElementById('app');
 // every flight and every change of ring or sky is recorded on
 // window.__wheelLog, to be read over wireless debugging after he stops.
 if (typeof window !== 'undefined' && svg && migrationLogWanted()) mountMigrationLog({ svg, getStackDepth });
+// THE COMPASS ROSE (Howell 2026-10-15): with ?compass=1 a rose under the
+// finger paints the wedges the engine decides with — red drills, blue turns,
+// grey dead — and the engine's verdict beneath. Reads, never decides.
+if (typeof window !== 'undefined' && svg && compassRoseWanted()) mountCompassRose({ axesAt: (x, y) => { const h = hubOnGlass(); return localAxes(x, y, h.x, h.y); }, kindOf: quadrantKind, decidePx: 8 });
 
 // Viewport responsiveness, part one: measure the GENUINELY-visible area and
 // size the canvas from JS to the same numbers the geometry uses. window.inner*
@@ -243,6 +249,14 @@ function pinCanvas(vp) {
 }
 let viewport = measureViewport();
 pinCanvas(viewport);
+// THE RING'S CENTRE ON THE GLASS (O-200): the local compass is built around
+// it. The svg draws in px with no viewBox, so the arc's hub plus the svg's
+// own offset is the centre in client coordinates.
+function hubOnGlass() {
+  const arc = getArcParameters(viewport);
+  const r = svg?.getBoundingClientRect?.();
+  return { x: (r?.left || 0) + arc.hubX, y: (r?.top || 0) + arc.hubY };
+}
 
 // O-84: memoised answers to "how many Detail Sector screens does this verse
 // need" — keyed by item, edition and viewport, cleared whenever the verse
@@ -3170,6 +3184,20 @@ function wireInteractions(getApp) {
   // 8 px, the tap slop (O-152 amended: the log showed slow strokes taking
   // 350–800 ms to travel 14 px with nothing moving).
   const DECIDE_PX = 8;             // the stroke declares itself here; the ring waits that long
+  // THE TURN GATE (O-202, Howell 2026-10-15): once a stroke is a turn, the
+  // direction of the last TURN_WINDOW_PX of the thumb's path is re-read at
+  // every move and the ring turns only while it lies within TURN_CONE_DEG of
+  // the tangent, either way along it. A thumb wandering across the ring
+  // moves nothing. Both are knobs on the query string for tuning on the
+  // glass: ?turnwindow=8&turncone=45.
+  const knob = (name, dflt) => { try { const v = parseFloat(new URLSearchParams(window.location.search).get(name)); return Number.isFinite(v) && v > 0 ? v : dflt; } catch (_) { return dflt; } };
+  const TURN_WINDOW_PX = knob('turnwindow', DECIDE_PX);
+  const TURN_CONE_DEG = knob('turncone', 45);
+  const turnGate = (st, x, y, tangent) => {
+    (st.trail ||= [{ x: st.x0, y: st.y0 }]).push({ x, y });
+    if (st.trail.length > 64) st.trail.splice(0, st.trail.length - 64);
+    return turnGateOpen(st.trail, TURN_WINDOW_PX, TURN_CONE_DEG, tangent);
+  };
   const THUMB_PX = 24;             // a star within this of the touch is "the star it began on" (O-191)
   let pendingStarTap = null;       // the star a press landed on or near, for the tap's acknowledgement
   // The nearest star to a touch, within a thumb's reach past its own rim.
@@ -3191,17 +3219,10 @@ function wireInteractions(getApp) {
   let stroke = null;               // { x0, y0, decided, pendingDelta, dead } for the drag under way
   let freeDrill = null;            // { kind, x0, y0, ux, uy, ctl, travel, e, undo } — a drill a stroke began
   let controlPress = null;         // { x0, y0, isParent, dead } — a press on the lens or the parent button
-  const lean = () => diagonalLean(viewport?.width, viewport?.height);
-  // The two reference bearings that widen rotation (O-152 amended): from the
-  // magnifier to the upper-left and to the lower-right corner of the page.
-  const bandOpts = () => {
-    try {
-      const vp = getViewportInfo(viewport.width, viewport.height);
-      const m = getMagnifierPosition(vp);
-      return { ul: bearingOf(0 - m.x, 0 - m.y), lr: bearingOf(vp.width - m.x, vp.height - m.y) };
-    } catch (_) { return {}; }
-  };
-  const ROTATE_GAIN = Math.SQRT2;  // a stroke along the Northwest axis turns the ring as the old diagonal drag did
+  // THE LOCAL COMPASS (O-200): the axes at a point of the glass — the tangent
+  // to the circle through it concentric with the ring, and the radial line.
+  const axesAt = (x, y) => { const h = hubOnGlass(); return localAxes(x, y, h.x, h.y); };
+  const ROTATE_GAIN = Math.SQRT2;  // a stroke along the tangent turns the ring as the old diagonal drag did
   // PROGRESS STARTS WHERE THE FINGER IS WHEN THE FLIGHTS ARE READY (O-152
   // amended: the log showed a first drill taking 447 ms to build its flights,
   // by which time the finger was 30% along and everything jumped there).
@@ -3222,7 +3243,7 @@ function wireInteractions(getApp) {
   const beginFreeDrill = (kind, event, x0, y0, star = null) => {
     const app = getApp();
     if (!app) return false;
-    const axis = axisFor(kind, lean());
+    const axis = axisOf(kind, axesAt(x0, y0));   // the radial line at the press (O-200)
     const fd = { kind, x0, y0, ux: axis.ux, uy: axis.uy, e: 0, pointerId: event?.pointerId ?? null };
     if (kind === 'in') {
       // The star the stroke began on (or within a thumb of), else the sky's
@@ -3286,29 +3307,29 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       const press = controlPress;
       const bearing = bearingOf(vx, vy);
-      const kind = sketchedKind(bearing);   // the wedges as drawn; null is dead
+      const kind = quadrantKind(vx, vy, axesAt(press.x0, press.y0));   // the nearer axis; nothing is dead (O-200)
       logTap('control-stroke', { kind, bearing: Math.round(bearing) });
       // Whatever it decides, the press is no longer a tap on the lens.
       lensSwipeFiredAt = Date.now();
       if (kind === 'cw' || kind === 'ccw') {
-        noteSwipe(bearing, kind, lean(), press.x0, press.y0, ' lens');
+        noteSwipe(bearing, kind, press.x0, press.y0, ' lens');
         controlPress = null;
         isDragging = true; recentMoves = []; gestureTravelPx = Math.hypot(vx, vy);
         lastX = event.clientX; lastY = event.clientY; lastTime = event.timeStamp;
         stroke = { x0: press.x0, y0: press.y0, decided: true, pendingDelta: 0 };
-        const axis = axisFor('cw', lean());
+        const axis = axesAt(event.clientX, event.clientY).cw;
         getApp()?.choreographer?.rotate((vx * axis.ux + vy * axis.uy) * sensitivity * ROTATE_GAIN);
         return;
       }
       if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, press.x0, press.y0)) {
-        noteSwipe(bearing, kind, lean(), press.x0, press.y0, ' lens');
+        noteSwipe(bearing, kind, press.x0, press.y0, ' lens');
         controlPress = null;
         freeDrill.e = freeDrillProgress(freeDrill, event);
         freeDrill.ctl.scrubTo(freeDrill.e);
         return;
       }
-      noteSwipe(bearing, kind, lean(), press.x0, press.y0, kind === null ? ' lens' : ' lens, nothing there');
-      press.dead = true;   // a dead zone, or nothing to drill that way: nothing until lift
+      noteSwipe(bearing, kind, press.x0, press.y0, ' lens, nothing there');
+      press.dead = true;   // nothing to drill that way: nothing until lift
       return;
     }
     if (!isDragging) return;
@@ -3322,9 +3343,18 @@ function wireInteractions(getApp) {
     lastTime = event.timeStamp;
 
     const distance = Math.abs(dx) + Math.abs(dy);
-    // Only movement along the rotation axis turns the ring (O-152).
-    const rotAxis = axisFor('cw', lean());
-    const delta = (dx * rotAxis.ux + dy * rotAxis.uy) * sensitivity * ROTATE_GAIN;
+    // Only movement along the tangent under the thumb turns the ring (O-152,
+    // O-200): the radial part of the travel is thrown away.
+    const rotAxis = axesAt(event.clientX, event.clientY).cw;
+    let delta = (dx * rotAxis.ux + dy * rotAxis.uy) * sensitivity * ROTATE_GAIN;
+    // A decided turn passes the gate or moves nothing (O-202).
+    if (stroke && stroke.decided && !stroke.dead) {
+      const gate = turnGate(stroke, event.clientX, event.clientY, rotAxis);
+      if (!gate.open) delta = 0;
+      try { window.__compassRose?.gate(gate.open, gate.bearing); } catch (_) { /* rose only */ }
+    } else if (stroke && !stroke.decided) {
+      (stroke.trail ||= [{ x: stroke.x0, y: stroke.y0 }]).push({ x: event.clientX, y: event.clientY });
+    }
     const t = event.timeStamp;
     recentMoves.push({ t, dist: distance, delta });
     while (recentMoves.length && t - recentMoves[0].t > VELOCITY_WINDOW_MS) recentMoves.shift();
@@ -3349,7 +3379,7 @@ function wireInteractions(getApp) {
     });
     // The stroke declares itself (O-152): until DECIDE_PX the turn is held
     // back; then the compass decides — a turn pays the held-back turn at
-    // once, a drill leaves the ring, a dead zone does nothing until lift.
+    // once, a drill leaves the ring; a drill with nowhere to go waits for lift.
     if (stroke && stroke.dead) return;
     if (stroke && !stroke.decided) {
       stroke.pendingDelta += delta;
@@ -3357,17 +3387,16 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
       const bearing = bearingOf(vx, vy);
-      const kind = sketchedKind(bearing);   // the wedges as drawn; null is dead
+      const kind = quadrantKind(vx, vy, axesAt(stroke.x0, stroke.y0));   // the nearer axis; nothing is dead (O-200)
       logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), star: stroke.star ?? null });
-      if (kind === null) { noteSwipe(bearing, null, lean(), stroke.x0, stroke.y0); stroke.dead = true; return; }   // a dead wedge: nothing until lift
-      if (kind === 'cw' || kind === 'ccw') { noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0); app.choreographer.rotate(stroke.pendingDelta); return; }
+      if (kind === 'cw' || kind === 'ccw') { noteSwipe(bearing, kind, stroke.x0, stroke.y0); app.choreographer.rotate(stroke.pendingDelta); return; }
       pendingTapNode = null; pendingAdvanceTap = false; pendingStarTap = null;
-      if (beginFreeDrill(kind, event, stroke.x0, stroke.y0, stroke.star)) { noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0); isDragging = false; return; }
-      noteSwipe(bearing, kind, lean(), stroke.x0, stroke.y0, ' nothing there');
+      if (beginFreeDrill(kind, event, stroke.x0, stroke.y0, stroke.star)) { noteSwipe(bearing, kind, stroke.x0, stroke.y0); isDragging = false; return; }
+      noteSwipe(bearing, kind, stroke.x0, stroke.y0, ' nothing there');
       stroke.dead = true;   // nothing to drill that way: a leaf below, or the top above
       return;
     }
-    if (!stroke) noteStrokeless();   // a turn no compass decided (swipelog only)
+    if (!stroke) { noteStrokeless(); try { window.__compassRose?.strokeless(); } catch (_) { /* rose only */ } }   // a turn no compass decided
     app.choreographer.rotate(delta);
   };
 
