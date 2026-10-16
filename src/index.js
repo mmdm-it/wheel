@@ -11,7 +11,7 @@ import { computeDayGridLayout } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
-import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth, topLayerIds, animateStragglers, discardTopLayer } from './view/migration-animation.js';
+import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth, animateStragglers, discardTopLayer } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
 
@@ -226,6 +226,12 @@ export function createApp({
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
   let lastPyramidData = null; // stashed for SVG-level click delegation
+  // THE DYNAMIC SKY (O-198, Howell 2026-10-08): after a drill out the sky is
+  // the ring that rose into it — every node that was on screen, the one
+  // that was in the lens as the standout — so a plain drill in brings that
+  // node straight back. { parentId, ids, standoutId }; dropped when the
+  // reader comes to rest on another item.
+  let dynamicSky = null;
   // THE SPRING-BACK'S INSTANT NAVIGATION (O-138): while this is set, a
   // migration in either direction is a bare data swap — no flight — so a
   // struck drill can be taken straight back inside one task.
@@ -1028,28 +1034,30 @@ export function createApp({
       if (!scrubbed) journey.play();
     }
 
-    // THE RING RISES INTO THE SKY (O-141): when no IN flight left a layer to
-    // reverse — the reader landed here by the boot, a bookmark or a link —
-    // the departing ring's seats are snapshot now, every sibling on the arc
-    // or implied beyond it, so they can fly to the new sky's seats below.
-    let noLayerToReverse = getStackDepth() === 0;
+    // THE RING RISES INTO THE SKY (O-141), ALWAYS (O-198): the departing
+    // ring's seats are snapshot now, so every node that was on screen can
+    // fly to its own seat in the new sky — which is made of exactly those
+    // nodes. A layer a drill in saved is never replayed: the sky the reader
+    // drilled into is not the sky they drill out onto.
+    let noLayerToReverse = true;
     const departingLensId = nav.getCurrent()?.id ?? null;
     // The ring nodes on screen, and which of them the reversal will carry
     // (O-151 step five): the rest fade as they go.
     const onScreenRing = calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing)
       .map(node => ({ ...node, label: formatLabel({ item: node.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: node.item })) }));
-    // A STALE LAYER IS NOT REPLAYED (O-197): if the saved layer carries an
-    // item the ring no longer shows — the ring was turned since the drill
-    // in — the layer is discarded and the ring flies from scratch, every
-    // node from the seat it really occupies.
-    let staleLayer = false;
-    if (!noLayerToReverse) {
-      const ringIdsNow = new Set(onScreenRing.map(n => n.item?.id).filter(id => id != null));
-      staleLayer = topLayerIds().some(id => id !== departingLensId && !ringIdsNow.has(id));
-      if (staleLayer) { noLayerToReverse = true; phase('out:stale-layer'); }
-    }
-    const layerIds = noLayerToReverse ? null : new Set(topLayerIds());
-    phase('out:on-screen-ring', { n: onScreenRing.length, layer: !noLayerToReverse });
+    // A saved layer is discarded (O-197's path, now the only path): inside
+    // the transaction below, restorably, so a struck drill can put it back.
+    const staleLayer = getStackDepth() > 0;
+    if (staleLayer) phase('out:stale-layer');
+    const layerIds = null;
+    phase('out:on-screen-ring', { n: onScreenRing.length, layer: false });
+    // THE DYNAMIC SKY (O-198): what rose is what the sky holds — every node
+    // that was on screen (the render keeps those that are the new lens's
+    // children; a cousin on the arc has no seat and fades), the departed
+    // lens node as the standout.
+    dynamicSky = tempSelected
+      ? { parentId: tempSelected.id, ids: new Set(onScreenRing.map(n => n.item?.id).filter(id => id != null)), standoutId: departingLensId }
+      : null;
     // ONLY THE SEATS THE SKY WILL USE (O-154, from the gesture log: a drill
     // out took 211–423 ms to set up against a drill in's 38–82). This placed
     // and labelled EVERY item of the departing chain — the whole volume's
@@ -1886,16 +1894,25 @@ export function createApp({
           children = pyramidConfig.getChildren({ selected: pyramidSelected });
           phase('r:children', { n: children.length });
         }
-        // Prominence: FOUR TIERS AND ONE STANDOUT (O-134, Howell 2026-09-15:
-        // "four, with one standout. Something like 100:60:45:30"). Tier 1 is
-        // the sky's one standout; 2 its equals; 3 the rest of the ranked; 4
-        // the never-read (the volume's own tiering, volume-pyramid.js). An
-        // editorial tier declared in the data (1 featured / 2 notable /
-        // absent) reads on the same scale, absent as 3. Prominent children
-        // claim the NEAR seats — the scatter hands out seats center-first —
-        // and draw larger. A set with no prominence declared is a uniform
-        // sky. The focus ring is untouched: prominence permutes pyramid
-        // seating only, never sibling order.
+        // THE DYNAMIC SKY (O-198): the sky a drill out rises into holds
+        // exactly the nodes the ring showed, in sibling order, the departed
+        // lens node as its standout. It stands while the lens holds that
+        // item; the ranked sky returns once the reader rests elsewhere.
+        let standoutId = null;
+        if (dynamicSky) {
+          if (pyramidSelected?.id === dynamicSky.parentId) {
+            children = children.filter(ch => dynamicSky.ids.has(ch?.id));
+            standoutId = dynamicSky.standoutId;
+          } else if (!isRotating) {
+            dynamicSky = null;
+          }
+        }
+        // Prominence: the volume's tiering (O-134, volume-pyramid.js) still
+        // names the sky's one FAVOURITE — tier 1, the day's standout among
+        // the ranked — and an editorial tier declared in the data reads on
+        // the same scale. Prominent children claim the NEAR seats — the
+        // scatter hands out seats center-first. The focus ring is untouched:
+        // prominence permutes pyramid seating only, never sibling order.
         const tierOf = ch => {
           const t = ch?.prominence ?? ch?.meta?.prominence;
           return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 3;
@@ -1925,37 +1942,20 @@ export function createApp({
           }
           seatPool = [...prominent, ...sampled];
         }
-        const seatOrder = seatPool.slice();
-        if (anyProminence) seatOrder.sort((a, b) => (tierOf(children[a]) - tierOf(children[b])) || (a - b));
-        else seatOrder.sort((a, b) => a - b);
-        // 100:60:45:30 on the standout (O-134); the standout itself 1.6 of
-        // a uniform star, so tier 2 sits just under uniform and tier 4 at
-        // half. Howell's eye converges these.
-        const scaleForTier = t => (!anyProminence ? 1 : (t === 1 ? 1.6 : t === 2 ? 0.96 : t === 3 ? 0.72 : 0.48));
-        // Depth taper (Howell 2026-07-19): an overloaded sky implies its own
-        // "etcetera" — past the first seats, stars shrink toward a smudge
-        // floor where labels stop being legible, and the tiny tail packs
-        // dense (spacing uses true radii), so far more children seat.
-        // Small families stay untouched.
-        const TAPER_AFTER = 10;
-        // Bigger families descend to the smudge floor FASTER: the walk seats
-        // in order, so mid-size stars must not exhaust the region before the
-        // tiny tail gets its chance.
-        const taperRate = children.length > 60 ? 0.86 : children.length > 30 ? 0.9 : 0.95;
-        const taperFor = j => (children.length <= 16 || j < TAPER_AFTER)
-          ? 1
-          : Math.max(0.3, Math.pow(taperRate, j - TAPER_AFTER));
-        // THE SMALLEST STAR IS VERSE 18'S (O-172, Howell 2026-09-20). First
-        // the floor was the sky's own second smallest size, which lifted the
-        // tail only a hair; measured on his photograph of Genesis 1 — the
-        // standout at 40 px, a full star at 24, the taper stepping down by
-        // ninths — verse 18 stood at 11.5 px, and he set that as the floor:
-        // "Verse 18 should be the smallest at its current size." It is an
-        // ABSOLUTE floor on the drawn size, under every tier and every taper
-        // step, so no star anywhere is smaller than 0.46 of the ring's own
-        // node. The taper still descends; it simply stops there.
-        const MIN_SCALE = 0.46;
-        const seatScales = seatOrder.map((i, j) => Math.max(MIN_SCALE, scaleForTier(tierOf(children[i])) * taperFor(j)));
+        // TWO SIZES OF STAR (O-199, Howell 2026-10-08): "only two sizes. The
+        // first will be the same size and radius as the magnifier node. And
+        // the second size will be 60% of the radius of the unselected focus
+        // ring nodes. There will only be two nodes at most in the larger
+        // size ... one, the favorite or most popular node ... and two, the
+        // node ... a user has just drilled out from." The large ones take
+        // the near seats, the standout first. This retires the four tiers'
+        // scales, the depth taper and the smudge floor (O-134, O-172).
+        const isLarge = ch => Boolean(ch && ((standoutId != null && ch.id === standoutId) || (anyProminence && tierOf(ch) === 1)));
+        const rankOfSeat = i => (standoutId != null && children[i]?.id === standoutId ? 0 : isLarge(children[i]) ? 1 : anyProminence ? 1 + tierOf(children[i]) : 2);
+        const seatOrder = seatPool.slice().sort((a, b) => (rankOfSeat(a) - rankOfSeat(b)) || (a - b));
+        const LARGE_SCALE = MAGNIFIER_RADIUS_RATIO / NODE_RADIUS_RATIO;
+        const SMALL_SCALE = 0.6;
+        const seatScales = seatOrder.map(i => (isLarge(children[i]) ? LARGE_SCALE : SMALL_SCALE));
         // Seat cap (Howell 2026-07-19): etcetera means etcetera — a 150-
         // chapter sky seats ~60, the smudge tail implying the rest (and the
         // processor thanks us at migration time). Tapping any star still
@@ -2009,6 +2009,7 @@ export function createApp({
                 r: nodeR * (slot.scale ?? 1),
                 labelScale: slot.scale ?? 1,
                 halo: anyProminence && tierOf(child) === 1, // Favorites only
+                standout: standoutId != null && child.id === standoutId,   // the node just drilled out from (O-198)
                 // A child that contains the present moment says so itself;
                 // the dresser paints it, and the migration clones inherit
                 // the same face so nothing pops on at settle.
