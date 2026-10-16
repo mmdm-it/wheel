@@ -667,7 +667,10 @@ export function createApp({
     // that were settling. A star whose seat is off screen now departs the way
     // stars have always departed on a filter change: to the flock point on
     // its own side of the chain, up-chain or down-chain, and out of frame.
-    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+    // Each target carries the name it lands with (O-204), so the flight can
+    // cross-fade the star's abbreviation into it on the way.
+    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing)
+      .map(t => ({ ...t, label: formatLabel({ item: t.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: t.item })) }));
     phase('in:ring-targets', { n: ringTargets.length });
     const seatedIds = new Set(ringTargets.map(t => String(t.item?.id ?? '')));
     const orderById = new Map(tempNormalized.filter(Boolean)
@@ -856,7 +859,8 @@ export function createApp({
       magnifierAngle: magnifier.angle,
       clickedId: selectedId,
       nodeRadius,
-      magnifierRadius
+      magnifierRadius,
+      lensLabel: tempSelected ? (formatLabel({ item: tempSelected, context: 'magnifier' }) || null) : null
       // All restores happen at the transaction barrier (5c), not here.
     });
 
