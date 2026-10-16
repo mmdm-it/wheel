@@ -206,9 +206,28 @@ function _finishTransaction(txn) {
   try { if (txn.restore) txn.restore(); } catch (e) { /* restore must never throw */ }
   const finishers = txn.finishers;
   if (typeof requestAnimationFrame === 'function') {
-    requestAnimationFrame(() => { finishers.forEach(f => { try { f(); } catch (e) { /* ignore */ } }); });
+    const d = { finishers, raf: 0 };
+    d.raf = requestAnimationFrame(() => { const i = _deferred.indexOf(d); if (i >= 0) _deferred.splice(i, 1); _runFinishers(finishers); });
+    _deferred.push(d);
   } else {
-    finishers.forEach(f => { try { f(); } catch (e) { /* ignore */ } });
+    _runFinishers(finishers);
+  }
+}
+function _runFinishers(finishers) { finishers.forEach(f => { try { f(); } catch (e) { /* ignore */ } }); }
+// THE BARRIER'S ONE-FRAME DEFERRAL, AND WHEN IT MUST NOT WAIT (O-203). The
+// finishers retire the clones a frame after the reals return — and some of
+// them also restore what their flight hid (the ring groups, in the inward
+// flight). A depth drill that commits one level and launches the next in
+// the same task hides the reals again at once; the deferred finishers then
+// landed a frame later and showed them, doubled under the new clones for
+// the whole of the next flight. The host flushes the barrier between the
+// two: everything lands in one task, so no frame is painted in between.
+const _deferred = [];
+export function flushMigrationBarrier() {
+  while (_deferred.length) {
+    const d = _deferred.shift();
+    try { cancelAnimationFrame(d.raf); } catch (e) { /* gone */ }
+    _runFinishers(d.finishers);
   }
 }
 
