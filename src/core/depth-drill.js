@@ -29,10 +29,12 @@
 //
 // Release settles the segment under the thumb: past halfway it goes through,
 // short of it, it springs back — the host animates both, as before. A FLICK
-// (a fast release along the segment's own direction) carries one level more
-// than the snap would: the segment goes through whatever its progress, and
-// when it has settled the next level opens and settles through on its own,
-// unless nothing lies beyond.
+// (a fast release along the segment's own direction) takes that segment
+// through whatever its progress, and NOTHING MORE: it never opens a level the
+// thumb did not reach. It did once, one level beyond the snap, and Howell
+// struck it the same day (2026-10-16): "A flick should only take the user up
+// or down one level ... It feels like the program is running away." The long
+// slow stroke is how one crosses several.
 
 const MAX_CROSSINGS = 6;   // a bound on one move event's level crossings
 const EPS = 1e-6;
@@ -43,7 +45,7 @@ const EPS = 1e-6;
  * @param {Function} o.launch        — (dir) → segment handle { scrubTo(e), captured() }, or null when nothing lies that way
  * @param {Function} o.commit        — (handle) finish a segment at its far end, instantly
  * @param {Function} o.abort         — (handle) strike a segment at its near end, instantly, undoing its navigation
- * @param {Function} o.settle        — (handle, commit, done) animate the release of the segment under the thumb; call done when it has settled
+ * @param {Function} o.settle        — (handle, commit) animate the release of the segment under the thumb
  */
 export function createDepthDrill({ notchPx, launch, commit, abort, settle }) {
   const notch = Number(notchPx) > 0 ? Number(notchPx) : 80;
@@ -98,32 +100,24 @@ export function createDepthDrill({ notchPx, launch, commit, abort, settle }) {
     /**
      * The thumb lifted: settle what is under it. `flick` is the direction of
      * a fast release (+1 out, -1 in, 0 none); along the segment's own
-     * direction it carries one level more. Returns { level, committed, e,
-     * carry } — `level` counts the segment under the thumb, not the carried
-     * one, which lands when its settle is done.
+     * direction it takes the segment through whatever its progress. Returns
+     * { level, committed, e, flicked }.
      */
     release({ cancelled = false, flick = 0 } = {}) {
       const s = seg;
       seg = null;
-      if (!s) return { level, committed: false, e: null, carry: false };
-      const carry = !cancelled && flick === s.dir;
-      const go = !cancelled && (s.e >= 0.5 || carry);
+      if (!s) return { level, committed: false, e: null, flicked: false };
+      const flicked = !cancelled && flick === s.dir;
+      const go = !cancelled && (s.e >= 0.5 || flicked);
       if (go) { level += s.dir; ends = { 1: false, [-1]: false }; }
-      const carryOn = () => {
-        if (seg) return;   // the thumb is back on the glass: it has its own say
-        if (!open(s.dir)) return;
-        const c = seg;
-        c.carried = true;
-        settle(c.handle, true, () => { if (seg === c) seg = null; level += c.dir; ends = { 1: false, [-1]: false }; });
-      };
-      settle(s.handle, go, carry ? carryOn : null);
-      return { level, committed: go, e: s.e, carry };
+      settle(s.handle, go);
+      return { level, committed: go, e: s.e, flicked };
     },
     /** Where the reader stands: whole levels crossed plus the segment's progress, +outward. */
     depth: () => level + (seg ? seg.dir * seg.e : 0),
     /** Whole levels crossed since the stroke began. */
     level: () => level,
     /** The segment under the thumb, or null between levels' flights. */
-    segment: () => (seg ? { dir: seg.dir, e: seg.e, held: typeof seg.handle.captured !== 'function' || seg.handle.captured(), carried: Boolean(seg.carried) } : null),
+    segment: () => (seg ? { dir: seg.dir, e: seg.e, held: typeof seg.handle.captured !== 'function' || seg.handle.captured() } : null),
   };
 }

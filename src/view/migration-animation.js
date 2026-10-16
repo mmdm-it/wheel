@@ -486,17 +486,12 @@ export function beginScrubbedMigration(root) {
         if (_frames) _frames.seeks.push(performance.now() - t);
       });
     },
-    release(commit, { onAbort = null, onSettled = null } = {}) {
+    release(commit, { onAbort = null } = {}) {
       if (_scrub !== scrub || scrub.settling) return;
       const target = commit ? 1 : 0;
       if (scrub.pending) { try { cancelAnimationFrame(scrub.pending); } catch (e) { /* gone */ } scrub.pending = 0; _scrubApply(scrub); }
       const startE = scrub.e, span = Math.abs(target - startE);
-      // onSettled: the moment the settle has landed, either way — a flicked
-      // depth drill opens its carried level then (O-203).
-      const finish = () => {
-        if (commit) _scrubFinishForward(scrub); else _scrubAbort(scrub, onAbort);
-        if (typeof onSettled === 'function') { try { onSettled(); } catch (e) { /* the host's own */ } }
-      };
+      const finish = () => { if (commit) _scrubFinishForward(scrub); else _scrubAbort(scrub, onAbort); };
       if (span < 0.001 || typeof requestAnimationFrame !== 'function') { finish(); return; }
       let start = 0;
       const step = now => {

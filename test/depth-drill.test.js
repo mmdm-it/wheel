@@ -19,12 +19,9 @@ function harness({ closed = {}, held = true, notchPx = 100 } = {}) {
     },
     commit: h => { log.push(`commit#${h.id}`); level += h.dir; },
     abort: h => { log.push(`abort#${h.id}`); },
-    settle: (h, go, done) => { log.push(`settle#${h.id} ${go ? 'through' : 'back'}`); if (go) level += h.dir; if (done) pending.push(done); },
+    settle: (h, go) => { log.push(`settle#${h.id} ${go ? 'through' : 'back'}`); if (go) level += h.dir; },
   });
-  const pending = [];
-  // The host's settle animates; `settled()` is the moment it ends.
-  const settled = () => { const d = pending.shift(); if (d) d(); };
-  return { drill, log, level: () => level, setHeld: v => { held = v; }, settled };
+  return { drill, log, level: () => level, setHeld: v => { held = v; } };
 }
 
 describe('the depth drill (O-203)', () => {
@@ -34,9 +31,9 @@ describe('the depth drill (O-203)', () => {
     assert.deepEqual(log, ['launch#1 out@0']);
     drill.move(30); drill.move(20);
     assert.equal(drill.depth(), 0.5);
-    assert.deepEqual(drill.segment(), { dir: 1, e: 0.5, held: true, carried: false });
+    assert.deepEqual(drill.segment(), { dir: 1, e: 0.5, held: true });
     const r = drill.release();
-    assert.deepEqual(r, { level: 1, committed: true, e: 0.5, carry: false });
+    assert.deepEqual(r, { level: 1, committed: true, e: 0.5, flicked: false });
     assert.equal(log.at(-1), 'settle#1 through');
   });
 
@@ -44,7 +41,7 @@ describe('the depth drill (O-203)', () => {
     const { drill, log } = harness();
     drill.begin(1); drill.move(40);
     const r = drill.release();
-    assert.deepEqual(r, { level: 0, committed: false, e: 0.4, carry: false });
+    assert.deepEqual(r, { level: 0, committed: false, e: 0.4, flicked: false });
     assert.equal(log.at(-1), 'settle#1 back');
   });
 
@@ -136,25 +133,18 @@ describe('the depth drill (O-203)', () => {
     drill.begin(1); drill.move(100);   // exactly one level: committed, nothing open
     assert.equal(drill.segment(), null);
     const r = drill.release();
-    assert.deepEqual(r, { level: 1, committed: false, e: null, carry: false });
+    assert.deepEqual(r, { level: 1, committed: false, e: null, flicked: false });
     assert.equal(log.filter(l => l.startsWith('settle')).length, 0);
   });
 
-  test('a flick along the segment carries one more: through whatever the progress, then the next level on its own', () => {
-    const { drill, log, level, settled } = harness();
+  test('a flick along the segment takes it through whatever the progress — and nothing more (Howell 2026-10-16)', () => {
+    const { drill, log, level } = harness();
     drill.begin(1); drill.move(30);                 // short of halfway
     const r = drill.release({ flick: 1 });
-    assert.equal(r.committed, true, 'a flick goes through');
-    assert.equal(r.carry, true);
-    assert.equal(r.level, 1);
+    assert.deepEqual(r, { level: 1, committed: true, e: 0.3, flicked: true });
     assert.equal(log.at(-1), 'settle#1 through');
-    assert.equal(log.filter(l => l.startsWith('launch')).length, 1, 'the carried level waits for the settle');
-    settled();                                       // the first settle lands
-    assert.deepEqual(log.slice(-2), ['launch#2 out@1', 'settle#2 through']);
-    assert.deepEqual(drill.segment(), { dir: 1, e: 0, held: true, carried: true });
-    settled();                                       // the carried settle lands
-    assert.equal(level(), 2);
-    assert.equal(drill.level(), 2);
+    assert.equal(level(), 1);
+    assert.equal(log.filter(l => l.startsWith('launch')).length, 1, 'no level opens that the thumb did not reach');
     assert.equal(drill.segment(), null);
   });
 
@@ -162,17 +152,8 @@ describe('the depth drill (O-203)', () => {
     const { drill, log } = harness();
     drill.begin(1); drill.move(70);
     const r = drill.release({ flick: -1 });
-    assert.deepEqual(r, { level: 1, committed: true, e: 0.7, carry: false });
+    assert.deepEqual(r, { level: 1, committed: true, e: 0.7, flicked: false });
     assert.equal(log.filter(l => l.startsWith('launch')).length, 1);
-  });
-
-  test('a flick at the end carries nothing: the launch declines', () => {
-    const { drill, log, settled } = harness({ closed: { 1: [1] } });
-    drill.begin(1); drill.move(60);
-    drill.release({ flick: 1 });
-    settled();
-    assert.equal(log.at(-1), 'decline out@1');
-    assert.equal(drill.segment(), null);
   });
 
   test('a cancelled release never flicks', () => {
@@ -180,7 +161,7 @@ describe('the depth drill (O-203)', () => {
     drill.begin(1); drill.move(70);
     const r = drill.release({ cancelled: true, flick: 1 });
     assert.equal(r.committed, false);
-    assert.equal(r.carry, false);
+    assert.equal(r.flicked, false);
     assert.equal(log.at(-1), 'settle#1 back');
   });
 });
