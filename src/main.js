@@ -3251,6 +3251,11 @@ function wireInteractions(getApp) {
   // handle the depth drill works — or null when nothing lies that way: a
   // leaf below, the top above, or flights that never took off.
   const launchSegment = (kind, app, star = null) => {
+    // The barrier's deferred clone retirement runs first: this launch hides
+    // the reals in this same task, and a finisher from the level just
+    // settled, landing a frame later, would show them again under the new
+    // clones for the whole flight.
+    flushMigrationBarrier();
     const sw = { kind };
     if (kind === 'in') {
       // The star the stroke began on (or within a thumb of), else the sky's
@@ -3276,13 +3281,11 @@ function wireInteractions(getApp) {
       captured: () => Boolean(sw.ctl.captured?.()),
       // At a boundary the segment ends in this same task — scrubbed to its
       // end and released there, so nothing animates and the next can open.
-      // The barrier's deferred clone retirement runs now too: the next level's
-      // launch hides the reals in this same task, and a finisher landing a
-      // frame later would show them again under the new clones.
-      commit: () => { sw.ctl.scrubTo(1); sw.ctl.release(true); flushMigrationBarrier(); },
-      abort: () => { sw.ctl.scrubTo(0); sw.ctl.release(false, { onAbort: undo }); flushMigrationBarrier(); },
-      // At the lift the segment under the thumb settles over the distance left.
-      settle: go => sw.ctl.release(go, { onAbort: undo }),
+      commit: () => { sw.ctl.scrubTo(1); sw.ctl.release(true); },
+      abort: () => { sw.ctl.scrubTo(0); sw.ctl.release(false, { onAbort: undo }); },
+      // At the lift the segment under the thumb settles over the distance
+      // left; `done` is told when it has landed (a flick's carried level).
+      settle: (go, done = null) => sw.ctl.release(go, { onAbort: undo, onSettled: done }),
     };
   };
   // Begin a depth drill from a stroke that started at (x0, y0) and was decided
@@ -3297,11 +3300,29 @@ function wireInteractions(getApp) {
       launch: dir => { const h = launchSegment(dir > 0 ? 'out' : 'in', app, first ? star : null); first = false; return h; },
       commit: h => h.commit(),
       abort: h => h.abort(),
-      settle: (h, go) => h.settle(go),
+      settle: (h, go, done) => h.settle(go, done),
     });
     if (!drill.begin(kind === 'out' ? 1 : -1)) return false;
-    freeDrill = { kind, drill, x: event.clientX, y: event.clientY, trail: [{ x: x0, y: y0 }, { x: event.clientX, y: event.clientY }], pointerId: event?.pointerId ?? null };
+    freeDrill = { kind, drill, x: event.clientX, y: event.clientY, trail: [{ x: x0, y: y0 }, { x: event.clientX, y: event.clientY }], moves: [], pointerId: event?.pointerId ?? null };
     return true;
+  };
+  // THE FLICK (O-203): a release at DRILL_FLICK_MIN_VELOCITY or more along the
+  // radial line carries one level more than the snap would. The speed is the
+  // gated radial travel of the moves inside the trailing VELOCITY_WINDOW_MS
+  // over the time they actually took (floored, so a single late sample
+  // cannot read as fast) — a thumb that pauses and then flicks the last
+  // centimetre is a flick; one that pauses before lifting is not.
+  const DRILL_FLICK_MIN_VELOCITY = 0.8;   // px/ms — a whole level in a tenth of a second
+  const DRILL_FLICK_MIN_SPAN_MS = 40;
+  const drillFlick = (fd, event) => {
+    const now = event?.timeStamp ?? performance.now();
+    const recent = (fd.moves || []).filter(m => now - m.t <= VELOCITY_WINDOW_MS);
+    if (!recent.length) return 0;
+    const travel = recent.reduce((sum, m) => sum + m.px, 0);
+    const span = Math.max(DRILL_FLICK_MIN_SPAN_MS, now - recent[0].t);
+    const v = Math.abs(travel) / span;
+    logTap('drill-flick-read', { v: Math.round(v * 100) / 100, recent: recent.length, span: Math.round(span) });
+    return v >= DRILL_FLICK_MIN_VELOCITY ? Math.sign(travel) : 0;
   };
   // A move of the thumb under a depth drill: its travel along the radial line
   // under the thumb goes to the drill, through the same gate as the turn
@@ -3314,6 +3335,8 @@ function wireInteractions(getApp) {
     const radial = axesAt(fd.x, fd.y).out;
     const gate = turnGateOpen(fd.trail, TURN_WINDOW_PX, TURN_CONE_DEG, radial);
     const px = gate.open ? dx * radial.ux + dy * radial.uy : 0;
+    (fd.moves ||= []).push({ t: event.timeStamp ?? performance.now(), px });
+    if (fd.moves.length > 32) fd.moves.splice(0, fd.moves.length - 32);
     const counted = fd.drill.move(px);
     const seg = fd.drill.segment();
     const depth = fd.drill.depth();
@@ -3588,10 +3611,11 @@ function wireInteractions(getApp) {
   // thumb goes through past halfway and springs back short of it, the
   // host's undo taking the navigation back in the same task; the levels
   // already crossed stand.
-  const releaseDrill = (sw, type) => {
+  const releaseDrill = (sw, type, event = null) => {
     if (!sw?.drill) return;
-    const r = sw.drill.release({ cancelled: type === 'pointercancel' });
-    logTap('drill-release', { levels: r.level, committed: r.committed, e: r.e == null ? null : Math.round(r.e * 100) / 100 });
+    const flick = type === 'pointerup' && event ? drillFlick(sw, event) : 0;
+    const r = sw.drill.release({ cancelled: type === 'pointercancel', flick });
+    logTap('drill-release', { levels: r.level, committed: r.committed, carry: r.carry, e: r.e == null ? null : Math.round(r.e * 100) / 100 });
   };
   // A DRILL WHOSE FINGER IS LOST IS SETTLED, NEVER LEFT HALF-FLOWN (O-169,
   // Howell 2026-09-18, three photographs of vanished nodes: clones frozen
@@ -3600,15 +3624,15 @@ function wireInteractions(getApp) {
   // drawing, a capture lost to the browser, a second finger, or the page
   // going to the background left the scrub open with everything it held.
   // Every such end now settles the drill by where the finger was.
-  const settleOrphanDrill = why => {
+  const settleOrphanDrill = (why, event = null) => {
     if (!freeDrill) return;
     logTap('drill-orphan-settled', { why, depth: Math.round(freeDrill.drill.depth() * 100) / 100 });
-    releaseDrill(freeDrill, why === 'pointercancel' ? 'pointercancel' : 'pointerup');
+    releaseDrill(freeDrill, why === 'pointercancel' ? 'pointercancel' : 'pointerup', why === 'pointerup' ? event : null);
     freeDrill = null; controlPress = null; stroke = null;
   };
   if (typeof window !== 'undefined') {
     ['pointerup', 'pointercancel'].forEach(type => window.addEventListener(type, event => {
-      if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill(type);
+      if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill(type, event);
     }, true));
     document.addEventListener('visibilitychange', () => { if (document.hidden) settleOrphanDrill('hidden'); });
     svg.addEventListener('lostpointercapture', event => {
@@ -3620,7 +3644,7 @@ function wireInteractions(getApp) {
       if (event.isPrimary === false) return;   // a second finger has no say (O-169)
       if (type !== 'pointerleave') noteSwipeEnd(event.clientX, event.clientY);   // swipelog only
       if (controlPress && type !== 'pointerleave') controlPress = null;
-      if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type); freeDrill = null; } }
+      if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type, event); freeDrill = null; } }
       if (type !== 'pointerleave') stroke = null;
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
