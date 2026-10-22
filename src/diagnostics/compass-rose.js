@@ -163,19 +163,22 @@ export function mountCompassRose({ axesAt, kindOf, decidePx = 8 }) {
     verdict.textContent = `ENGINE: ${WORD[kind] || kind} at ${Math.round(bearing)}°${note ? ' ·' + note : ''}`;
   };
   const strokeless = () => { verdict.textContent = 'ENGINE: turn, no compass'; };
-  // THE TURN GATE (O-202): the engine says, at every move of a decided turn,
-  // whether the last window of travel was clearly along the ring. The needle
-  // follows that direction, white while the ring turns and grey while it is
-  // held.
-  const gate = (open, bearing) => {
-    if (!press || !isTurn(press.decided)) return;
+  // THE GATE (O-202, O-203): the engine says, at every move of a decided
+  // stroke, whether the last window of travel was clearly along its axis —
+  // the ring for a turn, the radial line for a drill. The needle follows
+  // that direction, white while the stroke moves something and grey while
+  // it is held. A drill names its own verb and adds its depth.
+  const gate = (open, bearing, verb = null, note = '') => {
+    if (!press) return;
+    if (!verb && !isTurn(press.decided)) return;
     needle.setAttribute('stroke', open ? '#fff' : '#888');
     if (bearing != null) {
       const l = R1 + 6;
       needle.setAttribute('x2', (l * Math.sin(bearing * RAD)).toFixed(1));
       needle.setAttribute('y2', (-l * Math.cos(bearing * RAD)).toFixed(1));
     }
-    readout.textContent = bearing == null ? 'HELD · thumb dithering' : `${open ? 'TURNING' : 'HELD'} · last travel at ${Math.round(bearing)}°`;
+    const word = verb === 'LAUNCHING' ? verb : open ? (verb || 'TURNING') : 'HELD';
+    readout.textContent = (bearing == null ? 'HELD · thumb dithering' : `${word} · last travel at ${Math.round(bearing)}°`) + (note ? ` · ${note}` : '');
   };
 
   const primary = e => e.isPrimary !== false;

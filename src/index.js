@@ -229,9 +229,12 @@ export function createApp({
   // THE DYNAMIC SKY (O-198, Howell 2026-10-08): after a drill out the sky is
   // the ring that rose into it — every node that was on screen, the one
   // that was in the lens as the standout — so a plain drill in brings that
-  // node straight back. { parentId, ids, standoutId }; dropped when the
-  // reader comes to rest on another item.
-  let dynamicSky = null;
+  // node straight back. One per level the stroke has risen through, keyed
+  // by the item whose sky it is ({ parentId, ids, standoutId }), so a depth
+  // drill (O-203) that comes back down two levels finds at each the sky it
+  // left and returns the way it came. All dropped when the reader comes to
+  // rest on an item none of them belongs to.
+  const dynamicSkies = new Map();
   // THE SPRING-BACK'S INSTANT NAVIGATION (O-138): while this is set, a
   // migration in either direction is a bare data swap — no flight — so a
   // struck drill can be taken straight back inside one task.
@@ -664,7 +667,10 @@ export function createApp({
     // that were settling. A star whose seat is off screen now departs the way
     // stars have always departed on a filter change: to the flock point on
     // its own side of the chain, up-chain or down-chain, and out of frame.
-    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing);
+    // Each target carries the name it lands with (O-204), so the flight can
+    // cross-fade the star's abbreviation into it on the way.
+    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing)
+      .map(t => ({ ...t, label: formatLabel({ item: t.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: t.item })) }));
     phase('in:ring-targets', { n: ringTargets.length });
     const seatedIds = new Set(ringTargets.map(t => String(t.item?.id ?? '')));
     const orderById = new Map(tempNormalized.filter(Boolean)
@@ -853,7 +859,8 @@ export function createApp({
       magnifierAngle: magnifier.angle,
       clickedId: selectedId,
       nodeRadius,
-      magnifierRadius
+      magnifierRadius,
+      lensLabel: tempSelected ? (formatLabel({ item: tempSelected, context: 'magnifier' }) || null) : null
       // All restores happen at the transaction barrier (5c), not here.
     });
 
@@ -1055,9 +1062,7 @@ export function createApp({
     // that was on screen (the render keeps those that are the new lens's
     // children; a cousin on the arc has no seat and fades), the departed
     // lens node as the standout.
-    dynamicSky = tempSelected
-      ? { parentId: tempSelected.id, ids: new Set(onScreenRing.map(n => n.item?.id).filter(id => id != null)), standoutId: departingLensId }
-      : null;
+    if (tempSelected) dynamicSkies.set(tempSelected.id, { parentId: tempSelected.id, ids: new Set(onScreenRing.map(n => n.item?.id).filter(id => id != null)), standoutId: departingLensId });
     // ONLY THE SEATS THE SKY WILL USE (O-154, from the gesture log: a drill
     // out took 211–423 ms to set up against a drill in's 38–82). This placed
     // and labelled EVERY item of the departing chain — the whole volume's
@@ -1899,12 +1904,13 @@ export function createApp({
         // lens node as its standout. It stands while the lens holds that
         // item; the ranked sky returns once the reader rests elsewhere.
         let standoutId = null;
-        if (dynamicSky) {
-          if (pyramidSelected?.id === dynamicSky.parentId) {
+        if (dynamicSkies.size) {
+          const dynamicSky = pyramidSelected ? dynamicSkies.get(pyramidSelected.id) : null;
+          if (dynamicSky) {
             children = children.filter(ch => dynamicSky.ids.has(ch?.id));
             standoutId = dynamicSky.standoutId;
           } else if (!isRotating) {
-            dynamicSky = null;
+            dynamicSkies.clear();
           }
         }
         // Prominence: the volume's tiering (O-134, volume-pyramid.js) still

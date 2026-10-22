@@ -135,10 +135,11 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
   noteStrokeless = () => { if (rows[0] !== 'ROTATE with no compass') { push('ROTATE with no compass'); paint(); } };
   paint();
 }
-import { beginScrubbedMigration, scrubDriver, getStackDepth } from './view/migration-animation.js';
+import { beginScrubbedMigration, scrubDriver, getStackDepth, flushMigrationBarrier } from './view/migration-animation.js';
 import { mountMigrationLog, migrationLogWanted } from './diagnostics/migration-log.js';
 import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.js';
-import { bearingOf, localAxes, quadrantKind, axisOf, turnGateOpen } from './core/stroke.js';
+import { bearingOf, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
+import { createDepthDrill } from './core/depth-drill.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
@@ -3217,72 +3218,17 @@ function wireInteractions(getApp) {
     } catch (_) { return null; }
   };
   let stroke = null;               // { x0, y0, decided, pendingDelta, dead } for the drag under way
-  let freeDrill = null;            // { kind, x0, y0, ux, uy, ctl, travel, e, undo } — a drill a stroke began
+  let freeDrill = null;            // { kind, drill, x, y, trail, pointerId } — the depth drill a stroke began (O-203)
   let controlPress = null;         // { x0, y0, isParent, dead } — a press on the lens or the parent button
   // THE LOCAL COMPASS (O-200): the axes at a point of the glass — the tangent
   // to the circle through it concentric with the ring, and the radial line.
   const axesAt = (x, y) => { const h = hubOnGlass(); return localAxes(x, y, h.x, h.y); };
   const ROTATE_GAIN = Math.SQRT2;  // a stroke along the tangent turns the ring as the old diagonal drag did
-  // PROGRESS STARTS WHERE THE FINGER IS WHEN THE FLIGHTS ARE READY (O-152
-  // amended: the log showed a first drill taking 447 ms to build its flights,
-  // by which time the finger was 30% along and everything jumped there).
-  // Until every flight is caught the drill holds at its start; then the
-  // origin is re-based under the finger, so the drill always begins at zero.
-  const freeDrillProgress = (fd, event) => {
-    if (!fd.based) {
-      if (!fd.ctl?.captured?.()) return 0;
-      fd.x0 = event.clientX; fd.y0 = event.clientY; fd.based = true;
-      logTap('drill-based', {});
-      return 0;
-    }
-    const travelled = (event.clientX - fd.x0) * fd.ux + (event.clientY - fd.y0) * fd.uy;
-    return Math.max(0, Math.min(1, travelled / Math.max(40, fd.travel)));
-  };
-  // Begin a drill from a stroke that started at (x0, y0); false when there is
-  // nothing to drill that way — which the compass rule reads as nothing at all.
-  const beginFreeDrill = (kind, event, x0, y0, star = null) => {
-    const app = getApp();
-    if (!app) return false;
-    const axis = axisOf(kind, axesAt(x0, y0));   // the radial line at the press (O-200)
-    const fd = { kind, x0, y0, ux: axis.ux, uy: axis.uy, e: 0, pointerId: event?.pointerId ?? null };
-    if (kind === 'in') {
-      // The star the stroke began on (or within a thumb of), else the sky's
-      // largest — on a verse sky the day's lectionary standout (O-191).
-      const idx = Number.isFinite(star) && star >= 0 ? star : (app.largestPyramidIndex?.() ?? -1);
-      if (idx < 0) return false;   // a leaf: nothing below
-      fd.undo = () => { app.drillOut?.(); };
-      logTap('stroke-drill-in', { idx, chosen: Number.isFinite(star) && star >= 0 ? 'star' : 'largest' });
-      beginDrill(fd, app, () => app.handlePyramidNodeClick(idx));
-    } else {
-      if (typeof app.drillOut !== 'function') return false;
-      // A parent with no name is no parent (O-190): the top has nothing above.
-      if (!String(app.view?.parentButtonOuterLabel?.textContent || '').trim()) return false;
-      const wasAt = app.nav?.getCurrent?.() || null;
-      fd.undo = () => { if (wasAt) app.drillIntoItem?.(wasAt); };
-      logTap('stroke-drill-out', {});
-      beginDrill(fd, app, () => app.drillOut());
-    }
-    if (!fd.ctl) return false;
-    freeDrill = fd;
-    return true;
-  };
   // THE DRILL IS SCRUBBED (O-138, Howell 2026-09-15): "I don't like to have
-  // swipes that act like taps." Past the threshold the swipe LAUNCHES the
-  // drill exactly as the tap would — the same door — but under a scrub: the
-  // flights are caught at their first frame, and from there to the far
-  // vessel the finger owns their clock. Let go past halfway and they settle;
-  // short of it they spring back and the navigation is undone, unseen. The
-  // distance from lens to parent disc, on the glass, is the whole travel.
-  const drillTravelPx = app => {
-    const a = app?.view?.magnifierCircle?.getBoundingClientRect?.();
-    const b = app?.view?.parentButtonOuter?.getBoundingClientRect?.();
-    if (!a || !b || !a.width || !b.width) return 160;
-    const d = Math.hypot((a.left + a.width / 2) - (b.left + b.width / 2), (a.top + a.height / 2) - (b.top + b.height / 2));
-    return Math.max(80, d);
-  };
-  // Begin a scrubbed drill through `launch` (the tap's own path). If nothing
-  // took off — the guards spoke, no sky — the scrub is forgotten and the
-  // gesture is over.
+  // swipes that act like taps." The swipe LAUNCHES the drill exactly as the
+  // tap would — the same door — under a scrub: the flights are caught at
+  // their first frame, and from there the thumb owns their clock. If nothing
+  // took off — the guards spoke, no sky — the scrub is forgotten.
   const beginDrill = (sw, app, launch) => {
     const tLaunch = performance.now();
     logTap('phase', { name: 'drill-start', p: 0 });
@@ -3291,14 +3237,117 @@ function wireInteractions(getApp) {
     try { launch(); } catch (_) { /* the drill's own guards spoke */ }
     logTap('drill-launch', { ms: Math.round(performance.now() - tLaunch), launched: ctl.launched() });
     if (!ctl.launched()) { ctl.cancel(); return; }
-    sw.ctl = ctl; sw.travel = drillTravelPx(app); sw.e = 0;
+    sw.ctl = ctl;
+  };
+  // THE DEPTH DRILL (O-203, Howell 2026-10-15): one stroke, several levels.
+  // What the thumb scrubs is DEPTH: one level per DEPTH_NOTCH_PX of travel
+  // along the radial line — about a third of the thumb's radial run on a
+  // phone, so the whole volume is one long stroke. Crossing a level's
+  // boundary commits that level's flight at once and opens the next; coming
+  // back over it strikes the flight and opens the way back, nothing lifted.
+  // The arithmetic is core/depth-drill.js; this is its host.
+  const DEPTH_NOTCH_PX = 80;
+  // Launch one level's flight in a direction, under a scrub, and return the
+  // handle the depth drill works — or null when nothing lies that way: a
+  // leaf below, the top above, or flights that never took off.
+  const launchSegment = (kind, app, star = null) => {
+    // The barrier's deferred clone retirement runs first: this launch hides
+    // the reals in this same task, and a finisher from the level just
+    // settled, landing a frame later, would show them again under the new
+    // clones for the whole flight.
+    flushMigrationBarrier();
+    const sw = { kind };
+    if (kind === 'in') {
+      // The star the stroke began on (or within a thumb of), else the sky's
+      // largest — the node just drilled out from, or the favourite (O-191, O-199).
+      const idx = Number.isFinite(star) && star >= 0 ? star : (app.largestPyramidIndex?.() ?? -1);
+      if (idx < 0) return null;   // a leaf: nothing below
+      sw.undo = () => { app.drillOut?.(); };
+      logTap('stroke-drill-in', { idx, chosen: Number.isFinite(star) && star >= 0 ? 'star' : 'largest' });
+      beginDrill(sw, app, () => app.handlePyramidNodeClick(idx));
+    } else {
+      if (typeof app.drillOut !== 'function') return null;
+      // A parent with no name is no parent (O-190): the top has nothing above.
+      if (!String(app.view?.parentButtonOuterLabel?.textContent || '').trim()) return null;
+      const wasAt = app.nav?.getCurrent?.() || null;
+      sw.undo = () => { if (wasAt) app.drillIntoItem?.(wasAt); };
+      logTap('stroke-drill-out', {});
+      beginDrill(sw, app, () => app.drillOut());
+    }
+    if (!sw.ctl) return null;
+    const undo = () => { if (typeof sw.undo === 'function') app.withInstantMigration(sw.undo); };
+    return {
+      scrubTo: e => sw.ctl.scrubTo(e),
+      captured: () => Boolean(sw.ctl.captured?.()),
+      // At a boundary the segment ends in this same task — scrubbed to its
+      // end and released there, so nothing animates and the next can open.
+      commit: () => { sw.ctl.scrubTo(1); sw.ctl.release(true); },
+      abort: () => { sw.ctl.scrubTo(0); sw.ctl.release(false, { onAbort: undo }); },
+      // At the lift the segment under the thumb settles over the distance left.
+      settle: go => sw.ctl.release(go, { onAbort: undo }),
+    };
+  };
+  // Begin a depth drill from a stroke that started at (x0, y0) and was decided
+  // at `event`; false when there is nothing to drill that way — which the
+  // compass rule reads as nothing at all.
+  const beginFreeDrill = (kind, event, x0, y0, star = null) => {
+    const app = getApp();
+    if (!app) return false;
+    let first = true;
+    const drill = createDepthDrill({
+      notchPx: DEPTH_NOTCH_PX,
+      launch: dir => { const h = launchSegment(dir > 0 ? 'out' : 'in', app, first ? star : null); first = false; return h; },
+      commit: h => h.commit(),
+      abort: h => h.abort(),
+      settle: (h, go) => h.settle(go),
+    });
+    if (!drill.begin(kind === 'out' ? 1 : -1)) return false;
+    freeDrill = { kind, drill, x: event.clientX, y: event.clientY, trail: [{ x: x0, y: y0 }, { x: event.clientX, y: event.clientY }], moves: [], pointerId: event?.pointerId ?? null };
+    return true;
+  };
+  // THE FLICK (O-203): a release at DRILL_FLICK_MIN_VELOCITY or more along the
+  // radial line takes the level under the thumb through however little of it
+  // has been crossed — and only that level (Howell 2026-10-16: "A flick
+  // should only take the user up or down one level"). The speed is the
+  // gated radial travel of the moves inside the trailing VELOCITY_WINDOW_MS
+  // over the time they actually took (floored, so a single late sample
+  // cannot read as fast) — a thumb that pauses and then flicks the last
+  // centimetre is a flick; one that pauses before lifting is not.
+  const DRILL_FLICK_MIN_VELOCITY = 0.8;   // px/ms — a whole level in a tenth of a second
+  const DRILL_FLICK_MIN_SPAN_MS = 40;
+  const drillFlick = (fd, event) => {
+    const now = event?.timeStamp ?? performance.now();
+    const recent = (fd.moves || []).filter(m => now - m.t <= VELOCITY_WINDOW_MS);
+    if (!recent.length) return 0;
+    const travel = recent.reduce((sum, m) => sum + m.px, 0);
+    const span = Math.max(DRILL_FLICK_MIN_SPAN_MS, now - recent[0].t);
+    const v = Math.abs(travel) / span;
+    logTap('drill-flick-read', { v: Math.round(v * 100) / 100, recent: recent.length, span: Math.round(span) });
+    return v >= DRILL_FLICK_MIN_VELOCITY ? Math.sign(travel) : 0;
+  };
+  // A move of the thumb under a depth drill: its travel along the radial line
+  // under the thumb goes to the drill, through the same gate as the turn
+  // (O-202) — a wander across the line moves nothing. The rose is told.
+  const drillMove = (fd, event) => {
+    const dx = event.clientX - fd.x, dy = event.clientY - fd.y;
+    fd.x = event.clientX; fd.y = event.clientY;
+    fd.trail.push({ x: fd.x, y: fd.y });
+    if (fd.trail.length > 64) fd.trail.splice(0, fd.trail.length - 64);
+    const radial = axesAt(fd.x, fd.y).out;
+    const gate = turnGateOpen(fd.trail, TURN_WINDOW_PX, TURN_CONE_DEG, radial);
+    const px = gate.open ? dx * radial.ux + dy * radial.uy : 0;
+    (fd.moves ||= []).push({ t: event.timeStamp ?? performance.now(), px });
+    if (fd.moves.length > 32) fd.moves.splice(0, fd.moves.length - 32);
+    const counted = fd.drill.move(px);
+    const seg = fd.drill.segment();
+    const depth = fd.drill.depth();
+    try { window.__compassRose?.gate(gate.open, gate.bearing, seg && !seg.held ? 'LAUNCHING' : 'DRILLING', `depth ${depth >= 0 ? '+' : ''}${depth.toFixed(2)}`); } catch (_) { /* rose only */ }
+    if (!fd.probed && counted && Math.abs(depth) > 0.3 && typeof window.__probeRing === 'function') { fd.probed = true; setTimeout(() => window.__probeRing('drill ' + fd.kind), 50); }
   };
   const onPointerMove = event => {
     if (event.isPrimary === false) return;   // a second finger has no say (O-169)
     if (freeDrill) {
-      freeDrill.e = freeDrillProgress(freeDrill, event);
-      freeDrill.ctl.scrubTo(freeDrill.e);
-      if (!freeDrill.probed && freeDrill.e > 0.3 && typeof window.__probeRing === 'function') { freeDrill.probed = true; setTimeout(() => window.__probeRing('drill ' + freeDrill.kind), 50); }
+      drillMove(freeDrill, event);
       return;
     }
     if (controlPress) {
@@ -3324,8 +3373,7 @@ function wireInteractions(getApp) {
       if ((kind === 'in' || kind === 'out') && beginFreeDrill(kind, event, press.x0, press.y0)) {
         noteSwipe(bearing, kind, press.x0, press.y0, ' lens');
         controlPress = null;
-        freeDrill.e = freeDrillProgress(freeDrill, event);
-        freeDrill.ctl.scrubTo(freeDrill.e);
+        drillMove(freeDrill, event);
         return;
       }
       noteSwipe(bearing, kind, press.x0, press.y0, ' lens, nothing there');
@@ -3560,14 +3608,15 @@ function wireInteractions(getApp) {
 
   svg.addEventListener('pointermove', onPointerMove);
 
-  // A scrubbed drill settles on release (O-138): past halfway it goes
-  // through; short of it, it springs back and the host's undo takes the
-  // navigation back in the same task.
-  const releaseDrill = (sw, type) => {
-    if (!sw?.ctl) return;
-    const app = getApp();
-    const commit = type !== 'pointercancel' && sw.e >= 0.5;
-    sw.ctl.release(commit, { onAbort: () => { if (app && typeof sw.undo === 'function') app.withInstantMigration(sw.undo); } });
+  // A depth drill settles on release (O-138, O-203): the segment under the
+  // thumb goes through past halfway and springs back short of it, the
+  // host's undo taking the navigation back in the same task; the levels
+  // already crossed stand.
+  const releaseDrill = (sw, type, event = null) => {
+    if (!sw?.drill) return;
+    const flick = type === 'pointerup' && event ? drillFlick(sw, event) : 0;
+    const r = sw.drill.release({ cancelled: type === 'pointercancel', flick });
+    logTap('drill-release', { levels: r.level, committed: r.committed, flicked: r.flicked, e: r.e == null ? null : Math.round(r.e * 100) / 100 });
   };
   // A DRILL WHOSE FINGER IS LOST IS SETTLED, NEVER LEFT HALF-FLOWN (O-169,
   // Howell 2026-09-18, three photographs of vanished nodes: clones frozen
@@ -3576,15 +3625,15 @@ function wireInteractions(getApp) {
   // drawing, a capture lost to the browser, a second finger, or the page
   // going to the background left the scrub open with everything it held.
   // Every such end now settles the drill by where the finger was.
-  const settleOrphanDrill = why => {
+  const settleOrphanDrill = (why, event = null) => {
     if (!freeDrill) return;
-    logTap('drill-orphan-settled', { why, e: Math.round((freeDrill.e || 0) * 100) / 100 });
-    releaseDrill(freeDrill, why === 'pointercancel' ? 'pointercancel' : 'pointerup');
+    logTap('drill-orphan-settled', { why, depth: Math.round(freeDrill.drill.depth() * 100) / 100 });
+    releaseDrill(freeDrill, why === 'pointercancel' ? 'pointercancel' : 'pointerup', why === 'pointerup' ? event : null);
     freeDrill = null; controlPress = null; stroke = null;
   };
   if (typeof window !== 'undefined') {
     ['pointerup', 'pointercancel'].forEach(type => window.addEventListener(type, event => {
-      if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill(type);
+      if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill(type, event);
     }, true));
     document.addEventListener('visibilitychange', () => { if (document.hidden) settleOrphanDrill('hidden'); });
     svg.addEventListener('lostpointercapture', event => {
@@ -3596,7 +3645,7 @@ function wireInteractions(getApp) {
       if (event.isPrimary === false) return;   // a second finger has no say (O-169)
       if (type !== 'pointerleave') noteSwipeEnd(event.clientX, event.clientY);   // swipelog only
       if (controlPress && type !== 'pointerleave') controlPress = null;
-      if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type); freeDrill = null; } }
+      if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type, event); freeDrill = null; } }
       if (type !== 'pointerleave') stroke = null;
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
