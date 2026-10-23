@@ -1777,6 +1777,13 @@ function updateIncompleteMark() {
       : !editionFinished);
     }
   } catch (_) { show = false; }
+  // ONLY ONCE THE VERSE IS THERE (O-125, Howell 2026-10-23: "it should not
+  // appear during the drill in. We should not see the disclaimer until the
+  // detail sector has settled in and the verse appears"). The mark says
+  // CHAPTER, so it speaks only where a chapter's verse is on the glass: it
+  // follows the detail sector's own visibility, appearing with the text at
+  // the settle and going with it at the launch; above a leaf it says nothing.
+  show = show && detailSectorVisible;
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
     document.documentElement.classList.remove('incomplete-mark-showing');
@@ -1785,7 +1792,7 @@ function updateIncompleteMark() {
   if (!incompleteMarkEl) {
     incompleteMarkEl = document.createElement('div');
     incompleteMarkEl.id = 'incomplete-mark';
-    incompleteMarkEl.textContent = 'under review';   // O-125: the reader's mark, not the suite's
+    incompleteMarkEl.textContent = 'chapter under review';   // O-125: the reader's mark, not the suite's
     document.body.appendChild(incompleteMarkEl);
   }
   incompleteMarkEl.style.display = '';
@@ -2726,6 +2733,7 @@ window.addEventListener('detail-sector-change', (e) => {
       detailSectorVisible = false;
       updateDimensionButton();
       updateSearchButton();
+      updateIncompleteMark();   // the mark goes with the sector (O-125)
       return;
     }
   }
@@ -2746,6 +2754,7 @@ window.addEventListener('detail-sector-change', (e) => {
   detailSectorVisible = Boolean(visible);
   updateDimensionButton();
   updateSearchButton();
+  updateIncompleteMark();   // the mark follows the sector: with the verse, never before it (O-125)
 });
 
 let detailRenderSeq = 0; // stale-verify guard: each render invalidates pending checks
