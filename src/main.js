@@ -138,7 +138,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
 import { beginScrubbedMigration, scrubDriver, getStackDepth, flushMigrationBarrier } from './view/migration-animation.js';
 import { mountMigrationLog, migrationLogWanted } from './diagnostics/migration-log.js';
 import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.js';
-import { bearingOf, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
+import { alongCorridor, bearingOf, corridorAxis, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
 import { createDepthDrill } from './core/depth-drill.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
@@ -3200,6 +3200,15 @@ function wireInteractions(getApp) {
   const knob = (name, dflt) => { try { const v = parseFloat(new URLSearchParams(window.location.search).get(name)); return Number.isFinite(v) && v > 0 ? v : dflt; } catch (_) { return dflt; } };
   const TURN_WINDOW_PX = knob('turnwindow', DECIDE_PX);
   const TURN_CONE_DEG = knob('turncone', 45);
+  // THE CORRIDOR BETWEEN THE LENS AND THE PARENT BUTTON (O-209, Howell
+  // 2026-10-23): a stroke that begins on one control and heads at the
+  // other, within this cone, is a drill of one level — in from the lens,
+  // out from the parent — the thumb retracing the flight it has watched.
+  // The line runs close to the tangent, so the compass read it as a turn;
+  // the corridor is the two controls' own and the compass stands everywhere
+  // else. Its named casualty: a turn begun on either control toward the
+  // other, inside the cone. A knob for the glass: ?drillcorridor=20.
+  const CORRIDOR_CONE_DEG = knob('drillcorridor', 20);
   const turnGate = (st, x, y, tangent) => {
     (st.trail ||= [{ x: st.x0, y: st.y0 }]).push({ x, y });
     if (st.trail.length > 64) st.trail.splice(0, st.trail.length - 64);
@@ -3311,6 +3320,44 @@ function wireInteractions(getApp) {
     freeDrill = { kind, drill, x: event.clientX, y: event.clientY, trail: [{ x: x0, y: y0 }, { x: event.clientX, y: event.clientY }], moves: [], pointerId: event?.pointerId ?? null };
     return true;
   };
+  // The two controls' centres on the glass, or null for either that is not
+  // there to be struck: no lens, or a parent seat with no name (the top has
+  // nothing above, O-190) or no size (hidden).
+  const controlCentres = () => {
+    const view = getApp()?.view;
+    const centre = el => { const r = el?.getBoundingClientRect?.(); return r && r.width > 0 ? { x: r.left + r.width / 2, y: r.top + r.height / 2 } : null; };
+    const lens = centre(view?.magnifierCircle);
+    const parent = String(view?.parentButtonOuterLabel?.textContent || '').trim() ? centre(view?.parentButtonOuter) : null;
+    return { lens, parent };
+  };
+  // Begin the corridor's drill (O-209): one level, in from the lens or out
+  // from the parent, scrubbed along the chord between the two controls —
+  // one notch is the chord's whole length, so arriving at the other control
+  // completes the level, and the thumb may come back over it as in any
+  // drill. No level beyond the one is ever opened, whichever way the thumb
+  // goes on. False when nothing lies that way.
+  const beginCorridorDrill = (kind, event, x0, y0, axis) => {
+    const app = getApp();
+    if (!app || !axis) return false;
+    let drill = null;
+    drill = createDepthDrill({
+      notchPx: axis.len,
+      launch: dir => {
+        const level = drill ? drill.level() : 0;
+        if (Math.abs(level + dir) > 1) return null;   // one level, and the way back over it
+        return launchSegment(dir > 0 ? 'out' : 'in', app, null);
+      },
+      commit: h => h.commit(),
+      abort: h => h.abort(),
+      settle: (h, go) => h.settle(go),
+    });
+    if (!drill.begin(kind === 'out' ? 1 : -1)) return false;
+    // The drill's line is the corridor, signed so that + is outward: toward
+    // the lens from the parent, away from the parent at the lens.
+    const s = kind === 'out' ? 1 : -1;
+    freeDrill = { kind, drill, axis: { ux: s * axis.ux, uy: s * axis.uy }, corridor: true, x: event.clientX, y: event.clientY, trail: [{ x: x0, y: y0 }, { x: event.clientX, y: event.clientY }], moves: [], pointerId: event?.pointerId ?? null };
+    return true;
+  };
   // THE FLICK (O-203): a release at DRILL_FLICK_MIN_VELOCITY or more along the
   // radial line takes the level under the thumb through however little of it
   // has been crossed — and only that level (Howell 2026-10-16: "A flick
@@ -3339,7 +3386,9 @@ function wireInteractions(getApp) {
     fd.x = event.clientX; fd.y = event.clientY;
     fd.trail.push({ x: fd.x, y: fd.y });
     if (fd.trail.length > 64) fd.trail.splice(0, fd.trail.length - 64);
-    const radial = axesAt(fd.x, fd.y).out;
+    // The corridor's drill measures along the chord between the controls
+    // (O-209); every other drill along the radial line under the thumb.
+    const radial = fd.axis || axesAt(fd.x, fd.y).out;
     const gate = turnGateOpen(fd.trail, TURN_WINDOW_PX, TURN_CONE_DEG, radial);
     const px = gate.open ? dx * radial.ux + dy * radial.uy : 0;
     (fd.moves ||= []).push({ t: event.timeStamp ?? performance.now(), px });
@@ -3362,10 +3411,24 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       const press = controlPress;
       const bearing = bearingOf(vx, vy);
-      const kind = quadrantKind(vx, vy, axesAt(press.x0, press.y0));   // the nearer axis; nothing is dead (O-200)
-      logTap('control-stroke', { kind, bearing: Math.round(bearing) });
       // Whatever it decides, the press is no longer a tap on the lens.
       lensSwipeFiredAt = Date.now();
+      // THE CORRIDOR FIRST (O-209): from the lens straight at the parent
+      // button is the drill in, one level, whatever the compass would say.
+      // Nothing below (a leaf) leaves the stroke dead rather than a turn:
+      // the gesture keeps one meaning.
+      const centres = controlCentres();
+      const corridor = centres.parent && centres.lens ? corridorAxis(centres.lens, centres.parent) : null;
+      if (corridor && alongCorridor(vx, vy, corridor, CORRIDOR_CONE_DEG)) {
+        logTap('control-stroke', { kind: 'corridor-in', bearing: Math.round(bearing) });
+        controlPress = null;
+        if (beginCorridorDrill('in', event, press.x0, press.y0, corridor)) { noteSwipe(bearing, 'in', press.x0, press.y0, ' lens, corridor'); drillMove(freeDrill, event); return; }
+        noteSwipe(bearing, 'in', press.x0, press.y0, ' lens, corridor, nothing there');
+        press.dead = true; controlPress = press;
+        return;
+      }
+      const kind = quadrantKind(vx, vy, axesAt(press.x0, press.y0));   // the nearer axis; nothing is dead (O-200)
+      logTap('control-stroke', { kind, bearing: Math.round(bearing) });
       if (kind === 'cw' || kind === 'ccw') {
         noteSwipe(bearing, kind, press.x0, press.y0, ' lens');
         controlPress = null;
@@ -3441,6 +3504,22 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
       const bearing = bearingOf(vx, vy);
+      // THE CORRIDOR FIRST (O-209): a stroke that began on the parent seat
+      // and heads straight at the lens is the drill out, one level — the
+      // flight retraced the other way. The seat is otherwise open ground
+      // (O-191) and the compass decides as before.
+      if (stroke.fromParent) {
+        const centres = controlCentres();
+        const corridor = centres.parent && centres.lens ? corridorAxis(centres.parent, centres.lens) : null;
+        if (corridor && alongCorridor(vx, vy, corridor, CORRIDOR_CONE_DEG)) {
+          logTap('stroke-decided', { kind: 'corridor-out', bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy) });
+          pendingTapNode = null; pendingAdvanceTap = false; pendingStarTap = null;
+          if (beginCorridorDrill('out', event, stroke.x0, stroke.y0, corridor)) { noteSwipe(bearing, 'out', stroke.x0, stroke.y0, ' parent, corridor'); isDragging = false; drillMove(freeDrill, event); return; }
+          noteSwipe(bearing, 'out', stroke.x0, stroke.y0, ' parent, corridor, nothing there');
+          stroke.dead = true;
+          return;
+        }
+      }
       const kind = quadrantKind(vx, vy, axesAt(stroke.x0, stroke.y0));   // the nearer axis; nothing is dead (O-200)
       logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), star: stroke.star ?? null });
       if (kind === 'cw' || kind === 'ccw') { noteSwipe(bearing, kind, stroke.x0, stroke.y0); app.choreographer.rotate(stroke.pendingDelta); return; }
@@ -3599,7 +3678,11 @@ function wireInteractions(getApp) {
     recentMoves = [];
     gestureTravelPx = 0;
     pointerCaptured = false;
-    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false, star: starIdx };
+    // A press on the parent seat is open ground (O-191) — and remembered,
+    // because a stroke from it straight at the lens is the corridor's drill
+    // out (O-209). The world glyph is not the parent seat.
+    const fromParent = Boolean(onParentSeat) && !(event.target?.closest?.('.world-glyph'));
+    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false, star: starIdx, fromParent };
     trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
     trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
     publishTrace();

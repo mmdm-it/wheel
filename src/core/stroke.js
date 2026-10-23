@@ -127,3 +127,39 @@ export function turnGateOpen(trail, windowPx, coneDeg, axis) {
   }
   return { open, bearing: dir ? bearingOf(dir.dx, dir.dy) : null };
 }
+
+// THE CORRIDOR BETWEEN THE TWO CONTROLS (O-209, Howell 2026-10-23): "if the
+// user starts on the magnifier and swipes directly towards the parent
+// button, or inversely, if the user puts their thumb on the parent button
+// and swipes directly toward the magnifier, this should cause a drill in or
+// out of one level ... They see the animated node move between magnifier
+// and parent button. It only follows that retracing this animation with
+// thumb should have the same result." The line between the two controls is
+// not an axis of the compass — it runs close to the tangent, which is why
+// the compass read it as a turn — so it is a corridor of its own, owned by
+// the two controls: a stroke that BEGINS on one and heads at the other,
+// within the cone, is the drill, one level, the length of the stroke being
+// the length of the flight. Everywhere else the compass stands.
+
+/**
+ * The unit line from one control's centre to the other's, with its length —
+ * the chord the flight retraces. Null when the two coincide.
+ */
+export function corridorAxis(from, to) {
+  const dx = to.x - from.x, dy = to.y - from.y;
+  const len = Math.hypot(dx, dy);
+  if (!(len > 0)) return null;
+  return { ux: dx / len, uy: dy / len, len };
+}
+
+/**
+ * Whether a stroke's first travel (vx, vy) heads along the corridor, within
+ * coneDeg of it — ONE way: toward the other control. (The turn gate's cone
+ * admits both ways along an axis; a corridor has a far end.)
+ */
+export function alongCorridor(vx, vy, axis, coneDeg) {
+  const len = Math.hypot(vx, vy);
+  if (!axis || !(len > 0)) return false;
+  const cos = (vx * axis.ux + vy * axis.uy) / len;
+  return cos >= Math.cos(coneDeg * RAD) - 1e-12;
+}
