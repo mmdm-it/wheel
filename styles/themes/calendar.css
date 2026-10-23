@@ -1,6 +1,6 @@
 :root[data-theme="calendar"] {
   --theme-color-bg: #0c2c44;
-  --theme-color-node: #443300;
+  --theme-color-node: #143650; /* the band a step darker — O-212 */
   --theme-color-text: #f5f7fb;
   --theme-color-band: #194567;
   --theme-color-accent: #f5f7fb;

@@ -442,7 +442,14 @@ const volumeConfigs = {
     documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
     palette: {
       bg: '#0c2c44',
-      node: '#443300',
+      // The band a step darker (#194567 × 0.78), the shade the calendar's
+      // nodes wore when they were DERIVED from the band (O-164/O-166). When
+      // O-178 made every volume DECLARE its node colour, the Bible's palette
+      // was rewritten to the approved shades and this one was not, so the
+      // nodes fell back to the old radial brown. Howell, 2026-10-23, two
+      // photographs: "The dark blue for the nodes was correct. The brown for
+      // the nodes is incorrect." (O-212)
+      node: '#143650',
       text: '#f5f7fb',
       band: '#194567',
       accent: '#f5f7fb',
