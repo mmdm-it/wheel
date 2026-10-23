@@ -1013,7 +1013,7 @@ svg :focus-visible {
      and covers nothing — the copyright line keeps its place. */
   position: fixed;
   left: calc(14px * var(--iframe-scale, 1));
-  bottom: calc(10px * var(--iframe-scale, 1));
+  bottom: calc(4px * var(--iframe-scale, 1));   /* as low as the glass allows (Howell 2026-10-23) */
   z-index: 401;   /* with the margin's marks, above the sector */
   font-family: 'EB Garamond', Georgia, serif;
   font-size: calc(12px * var(--iframe-scale, 1));
@@ -1021,13 +1021,13 @@ svg :focus-visible {
   letter-spacing: 0.06em;
   color: var(--color-margin-note, rgba(30, 22, 16, 0.82));
   opacity: 0.85;
-  /* "chapter under review", on two lines if necessary (Howell 2026-10-23),
+  /* "chapter" over "under review", two lines by design (Howell 2026-10-23),
      upright, never italic. */
-  max-width: 7.5em;
-  white-space: normal;
+  white-space: nowrap;
   text-align: left;
   pointer-events: none;
 }
+.incomplete-mark-line { display: block; }
 
 /* THE NOTICE NO LONGER STANDS DOWN BENEATH IT (Howell, 2026-08-29). It used
    to: an opaque mark covered the notice's FIRST line and nothing else — the

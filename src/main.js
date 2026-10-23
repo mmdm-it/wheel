@@ -1792,7 +1792,10 @@ function updateIncompleteMark() {
   if (!incompleteMarkEl) {
     incompleteMarkEl = document.createElement('div');
     incompleteMarkEl.id = 'incomplete-mark';
-    incompleteMarkEl.textContent = 'chapter under review';   // O-125: the reader's mark, not the suite's
+    // Two lines by design, not by wrapping (Howell 2026-10-23: "chapter" on
+    // the first line and "under review" beneath it — a wrap crowded the
+    // parent vessel's label).
+    ['chapter', 'under review'].forEach(line => { const el = document.createElement('span'); el.className = 'incomplete-mark-line'; el.textContent = line; incompleteMarkEl.appendChild(el); });
     document.body.appendChild(incompleteMarkEl);
   }
   incompleteMarkEl.style.display = '';
