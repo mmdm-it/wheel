@@ -1084,7 +1084,11 @@ export function createApp({
           item, index, angle, radius: nodeRadius,
           x: arc.hubX + arc.radius * Math.cos(angle),
           y: arc.hubY + arc.radius * Math.sin(angle),
-          label: formatLabel({ item, context: 'node' })
+          label: formatLabel({ item, context: 'node' }),
+          // Where the label sits — on the node for a numeral, beside it for a
+          // name — travels with the seat, or the clone takes off with its
+          // numeral seated beside the node and lands it twice (2026-10-22).
+          labelCentered: Boolean(shouldCenterLabel?.({ item }))
         });
       }
       return out;

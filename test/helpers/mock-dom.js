@@ -53,7 +53,12 @@ export function createMockElement(tag) {
     setAttributeNS(ns, name, value) { this.attrs[name] = String(value); },
     removeAttribute(name) { delete this.attrs[name]; },
     getAttribute(name) { return Object.prototype.hasOwnProperty.call(this.attrs, name) ? this.attrs[name] : null; },
+    // A node has ONE parent: appending it here takes it out of wherever it
+    // was, as the real DOM does. The flight dresser moves a clone's circle
+    // into a wrapper it inserts beside it, and without this the circle was
+    // listed in both (found pinning the ring-to-sky labels, 2026-10-22).
     appendChild(node) {
+      if (node.parentNode && node.parentNode !== this) node.parentNode.removeChild?.(node);
       const idx = children.indexOf(node);
       if (idx >= 0) children.splice(idx, 1);
       children.push(node);
@@ -61,6 +66,7 @@ export function createMockElement(tag) {
       return node;
     },
     insertBefore(node, ref) {
+      if (node.parentNode && node.parentNode !== this) node.parentNode.removeChild?.(node);
       const idx = children.indexOf(node);
       if (idx >= 0) children.splice(idx, 1);
       const at = ref ? children.indexOf(ref) : -1;
@@ -79,6 +85,14 @@ export function createMockElement(tag) {
       if (idx >= 0) { children.splice(idx, 1); node.parentNode = null; }
     },
     remove() { this.parentNode?.removeChild?.(this); },
+    // A shallow copy, as the flight dresser takes of a clone's circle for its
+    // stroke rings: the tag, the attributes and the inline style, no children.
+    cloneNode() {
+      const copy = createMockElement(tag);
+      Object.assign(copy.attrs, this.attrs);
+      Object.assign(copy.style, this.style);
+      return copy;
+    },
     addEventListener(type, handler) { listeners[type] = handler; },
     dispatchEvent(event) { listeners[event.type]?.(event); }
   };
