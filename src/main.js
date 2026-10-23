@@ -2522,7 +2522,12 @@ function applyTheme(volume) {
   }
   const link = document.getElementById('volume-style');
   if (link) {
-    link.setAttribute('href', `./styles/themes/${theme}.css`);
+    // The engine's version rides the address (O-216): a phone that cached
+    // the old theme for a week under the bare name never asks for it
+    // again; a new address is a new file. The server now also tells
+    // browsers to revalidate stylesheets, as it does the bundle.
+    const stamp = typeof __WHEEL_VERSION__ === 'string' && __WHEEL_VERSION__ ? `?v=${encodeURIComponent(__WHEEL_VERSION__)}` : '';
+    link.setAttribute('href', `./styles/themes/${theme}.css${stamp}`);
   }
 }
 
