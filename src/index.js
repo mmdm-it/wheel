@@ -235,6 +235,19 @@ export function createApp({
   // left and returns the way it came. All dropped when the reader comes to
   // rest on an item none of them belongs to.
   const dynamicSkies = new Map();
+  // The sky a drill out rises into holds exactly the ring's nodes on screen,
+  // the departing lens as its standout (O-198). Noted BEFORE the commit, from
+  // the ring as it stands; the seats may be handed in when the caller has
+  // placed them already.
+  const rememberSkyFor = (nextLens, seats = null) => {
+    if (!nextLens) return;
+    const ring = seats || calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing);
+    dynamicSkies.set(nextLens.id, {
+      parentId: nextLens.id,
+      ids: new Set(ring.map(n => n.item?.id).filter(id => id != null)),
+      standoutId: nav.getCurrent()?.id ?? null
+    });
+  };
   // THE SPRING-BACK'S INSTANT NAVIGATION (O-138): while this is set, a
   // migration in either direction is a bare data swap — no flight — so a
   // struck drill can be taken straight back inside one task.
@@ -744,7 +757,15 @@ export function createApp({
       const opened = () => emitDetailSectorChange(true, 'after-animation');
       const scrubbed = scrubDriver(volumeLogo.duration, t => journey.frameAt(t, { linear: true }), {
         onCommit: () => { journey.finish(); opened(); },
-        onAbort: () => { journey.revert(); detailSectorShown = false; }
+        // THE SKY COMES BACK WITH THE RING (Howell 2026-10-22, a photograph
+        // of a drill out with an empty sky: "the verse nodes in the child
+        // pyramid have just popped off"). The host's undo runs BEFORE this
+        // abort by design (O-140, so its renders never see the sector half
+        // committed) — which means the level the strike returns to was
+        // drawn while the sector still counted as open, and the sky is
+        // suppressed under an open sector. Drawn again now that it is shut,
+        // the sky the ring flew up from is back.
+        onAbort: () => { journey.revert(); detailSectorShown = false; render(rotation); }
       });
       if (!scrubbed) journey.play(opened);
       // THE TEXT ARRIVES UNDER THE FINGER TOO (O-159 step three): the host is
@@ -990,6 +1011,17 @@ export function createApp({
   const migrateOut = (items, selectedIndex = 0, preserveOrder = false) => {
     phase('out:enter', { items: Array.isArray(items) ? items.length : 0 });
     if (instantMigration || isAnimating()) {
+      // THE SKY COMES BACK WITH THE RING (Howell 2026-10-22, a photograph
+      // of a drill out with an empty sky: "the verse nodes in the child
+      // pyramid have just popped off"). A struck drill in is undone here,
+      // instantly, and the level it returns to must get back the sky it
+      // had — the ring that flew up, as every drill out gives its new
+      // level (O-198). This path committed and returned without noting
+      // it, and the drill in's own render had already cleared the map, so
+      // the undone level came back with no sky at all; the next drill
+      // out then found nothing to fly to the hub.
+      const nextLens = normalizeItems(items, { preserveOrder })[selectedIndex] ?? null;
+      rememberSkyFor(nextLens);
       setPrimaryItems(items, selectedIndex, preserveOrder);
       return;
     }
@@ -1062,7 +1094,7 @@ export function createApp({
     // that was on screen (the render keeps those that are the new lens's
     // children; a cousin on the arc has no seat and fades), the departed
     // lens node as the standout.
-    if (tempSelected) dynamicSkies.set(tempSelected.id, { parentId: tempSelected.id, ids: new Set(onScreenRing.map(n => n.item?.id).filter(id => id != null)), standoutId: departingLensId });
+    rememberSkyFor(tempSelected, onScreenRing);
     // ONLY THE SEATS THE SKY WILL USE (O-154, from the gesture log: a drill
     // out took 211–423 ms to set up against a drill in's 38–82). This placed
     // and labelled EVERY item of the departing chain — the whole volume's
