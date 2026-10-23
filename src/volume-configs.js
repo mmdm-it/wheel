@@ -453,7 +453,11 @@ const volumeConfigs = {
       text: '#f5f7fb',
       band: '#194567',
       accent: '#f5f7fb',
-      magnifierStroke: '#f5f7fb'
+      // No strokes in the calendar (O-214, Howell 2026-10-23, against the
+      // July bundle: "there's no stroke. I would like to go with that and
+      // not have any strokes in the calendar"). The lens's always-drawn edge
+      // (O-84) serves the Bible's eclipse; here the vessels are fill alone.
+      magnifierStroke: 'none'
     },
     centerLabel: true,
     stampLetter: 'C', // the factory stamp's data line (W-7)
