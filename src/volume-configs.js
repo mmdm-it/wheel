@@ -858,5 +858,18 @@ export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE
 // strangers, under the CHECKED gate. This is the one file that may name a
 // site (H1); main.js declares it to lan-gate.
 export const VENUES = {
-  screeningRoom: { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/' }
+  screeningRoom: { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/' },
+  // THE DOORS (O-211, Howell 2026-10-23): an address that boots one volume,
+  // standing alone — no gateway, no catalog in front of it. Two doors in the
+  // room now; in Leicester Square each volume has a domain of its own, where
+  // the path is a bare slash and only the address can choose, so the choice
+  // is made here by address rather than by a word in the path. The longest
+  // matching prefix wins. bibliacatholica.com is registered, hosting
+  // pending; the root of mmdm.it joins the table the day the calendar goes
+  // up there and the archival catalog comes down.
+  doors: [
+    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/bible/', volume: 'bible' },
+    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/calendar/', volume: 'calendar' },
+    { hosts: ['bibliacatholica.com', 'www.bibliacatholica.com'], pathPrefix: '/', volume: 'bible' }
+  ]
 };

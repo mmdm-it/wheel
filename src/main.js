@@ -4,7 +4,7 @@ import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
-import { proofreadOverrideActive, declareVenues, isOnLan } from './core/lan-gate.js';
+import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
 // you see what's going on"). On the bench only — a private address and
@@ -2403,8 +2403,10 @@ function resolveVolumeId(volumeOverride = null, searchOverride = null) {
   const params = new URLSearchParams(searchOverride ?? window.location.search);
   const path = (window.location.pathname || '').toLowerCase();
   const paramVolume = params.get('volume');
+  // The address's own door (O-211) speaks before the path's word does: in
+  // Leicester Square the path is a bare slash and only the address can choose.
   return volumeConfigs[volumeOverride]?.id || volumeConfigs[paramVolume]?.id
-    || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
+    || volumeConfigs[doorVolume()]?.id || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
 }
 
 async function loadConfig(volumeOverride = null, searchOverride = null) {

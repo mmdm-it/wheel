@@ -86,7 +86,7 @@ describe('the proofread deep link, and the null that defeated it (O-122)', () =>
 // answers as it does in the house; the root of the same server (the archival
 // backup) and Leicester Square stay public. Every cell that matters is again
 // a FALSE YES.
-import { declareVenues, isScreeningRoom } from '../src/core/lan-gate.js';
+import { declareVenues, doorVolume, isScreeningRoom } from '../src/core/lan-gate.js';
 import { VENUES } from '../src/volume-configs.js';
 const at = (hostname, pathname, search = '') => ({ hostname, pathname, search });
 describe('lan-gate — the screening room (O-137)', () => {
@@ -117,5 +117,39 @@ describe('lan-gate — the screening room (O-137)', () => {
     declareVenues(null);
     assert.equal(isOnLan(at('mmdm.it', '/wheel-v3/bible/')), false, 'with no venue declared the room is public — it fails closed');
     declareVenues(VENUES);
+  });
+});
+
+// THE DOORS (O-211): an address boots one volume, standing alone. The room
+// has two; Leicester Square's Bible answers at its own domain, where the
+// path is a bare slash and only the address can choose.
+describe('lan-gate — the doors (O-211)', () => {
+  it('each door names its volume, the longest prefix winning', () => {
+    declareVenues(VENUES);
+    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/bible/')), 'bible');
+    assert.equal(doorVolume(at('www.mmdm.it', '/wheel-v3/calendar/')), 'calendar');
+    assert.equal(doorVolume(at('MMDM.IT', '/Wheel-V3/Calendar/index.html')), 'calendar', 'case and the page name are no distinction');
+    assert.equal(doorVolume(at('bibliacatholica.com', '/')), 'bible', 'Leicester Square: the address alone chooses');
+    assert.equal(doorVolume(at('www.bibliacatholica.com', '/index.html?level=book')), 'bible');
+  });
+  it('no door, no answer: the root of mmdm.it, the bench, look-alikes, no table', () => {
+    declareVenues(VENUES);
+    assert.equal(doorVolume(at('mmdm.it', '/')), null, 'the root is the archival backup until the calendar goes up');
+    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/')), null, 'the directory above the doors is not a door');
+    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/places/')), null);
+    assert.equal(doorVolume(at('127.0.0.1', '/index.html')), null, 'the bench chooses by parameter or path');
+    assert.equal(doorVolume(at('bibliacatholica.com.evil.com', '/')), null);
+    assert.equal(doorVolume(null), null);
+    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/bible/'), null), null, 'no venue table, no door');
+    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/bible/'), { doors: [{ hosts: ['mmdm.it'], pathPrefix: '/wheel-v3/bible/' }] }), null, 'a door with no volume is no door');
+  });
+  it('a door with the longer prefix beats a domain-wide one', () => {
+    const table = { doors: [
+      { hosts: ['x.it'], pathPrefix: '/', volume: 'calendar' },
+      { hosts: ['x.it'], pathPrefix: '/bible/', volume: 'bible' }
+    ] };
+    assert.equal(doorVolume(at('x.it', '/bible/'), table), 'bible');
+    assert.equal(doorVolume(at('x.it', '/'), table), 'calendar');
+    assert.equal(doorVolume(at('x.it', '/calendar/'), table), 'calendar');
   });
 });

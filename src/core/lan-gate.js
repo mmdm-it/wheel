@@ -101,6 +101,25 @@ export function isScreeningRoom(loc = (typeof window !== 'undefined' ? window.lo
   if (!room.hosts.includes(host)) return false;
   return loc.pathname.toLowerCase().startsWith(room.pathPrefix.toLowerCase());
 }
+/**
+ * The volume an address boots, by the venue table's doors (O-211): the door
+ * whose hosts name this hostname and whose path prefix is the longest one
+ * the pathname starts with. Null when no door stands here — the path's own
+ * word, or the default volume, decides as before.
+ */
+export function doorVolume(loc = (typeof window !== 'undefined' ? window.location : null), table = venues) {
+  const doors = Array.isArray(table?.doors) ? table.doors : [];
+  if (!loc || typeof loc.hostname !== 'string' || typeof loc.pathname !== 'string') return null;
+  const host = loc.hostname.trim().toLowerCase();
+  const path = loc.pathname.toLowerCase();
+  let best = null;
+  for (const d of doors) {
+    if (!d || !Array.isArray(d.hosts) || typeof d.pathPrefix !== 'string' || !d.volume) continue;
+    if (!d.hosts.includes(host) || !path.startsWith(d.pathPrefix.toLowerCase())) continue;
+    if (!best || d.pathPrefix.length > best.pathPrefix.length) best = d;
+  }
+  return best ? best.volume : null;
+}
 export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? window.location : null)) {
   try {
     if (!loc || typeof loc.search !== 'string') return false;
