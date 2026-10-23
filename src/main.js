@@ -1740,6 +1740,25 @@ function currentChapterId() {
   return chapterIdOf(currentApp?.nav?.getCurrent?.());
 }
 
+// THE MARK'S ELEMENT EXISTS BEFORE IT IS NEEDED (O-125, Howell 2026-10-23,
+// a photograph caught at boot: the mark sharp at the foot of the glass
+// while the whole plane stood receded behind the language ring). The
+// recede styles the overlays it finds on the page; a mark created on its
+// first showing, after the reveal had already receded the plane, was never
+// found and so never travelled. It is built hidden, the moment the volume
+// boots, and from then on every recede reaches it.
+function ensureIncompleteMarkEl() {
+  if (incompleteMarkEl || typeof document === 'undefined' || !document.body) return;
+  incompleteMarkEl = document.createElement('div');
+  incompleteMarkEl.id = 'incomplete-mark';
+  incompleteMarkEl.style.display = 'none';
+  // Two lines by design, not by wrapping (Howell 2026-10-23: "chapter" on
+  // the first line and "under review" beneath it — a wrap crowded the
+  // parent vessel's label).
+  ['chapter', 'under review'].forEach(line => { const el = document.createElement('span'); el.className = 'incomplete-mark-line'; el.textContent = line; incompleteMarkEl.appendChild(el); });
+  document.body.appendChild(incompleteMarkEl);
+}
+
 function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
   let show = false;
@@ -1793,19 +1812,11 @@ function updateIncompleteMark() {
   // follows the detail sector's own visibility, appearing with the text at
   // the settle and going with it at the launch; above a leaf it says nothing.
   show = show && detailSectorVisible;
+  ensureIncompleteMarkEl();
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
     document.documentElement.classList.remove('incomplete-mark-showing');
     return;
-  }
-  if (!incompleteMarkEl) {
-    incompleteMarkEl = document.createElement('div');
-    incompleteMarkEl.id = 'incomplete-mark';
-    // Two lines by design, not by wrapping (Howell 2026-10-23: "chapter" on
-    // the first line and "under review" beneath it — a wrap crowded the
-    // parent vessel's label).
-    ['chapter', 'under review'].forEach(line => { const el = document.createElement('span'); el.className = 'incomplete-mark-line'; el.textContent = line; incompleteMarkEl.appendChild(el); });
-    document.body.appendChild(incompleteMarkEl);
   }
   incompleteMarkEl.style.display = '';
   // The mark took the copyright's band (O-103); the notice stands down while
@@ -4601,6 +4612,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   });
   currentApp = app;
   currentManifest = manifest;
+  ensureIncompleteMarkEl();   // before the reveal recedes the plane (O-125)
   currentDetailRerender = part => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
     { translation: activeTranslation(), part });
   // THE MARK FOLLOWS THE READER (H-25). Before this it was re-evaluated on an
