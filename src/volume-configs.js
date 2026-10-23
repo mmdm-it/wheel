@@ -155,6 +155,7 @@ const volumeConfigs = {
       return manifest;
     },
     theme: 'bible',
+    documentTitle: 'Biblia Catholica',   // the tab's name at a standalone door (O-211)
     palette: {
       bg: '#d4a574',
       // O-166's shades, declared (O-178): every node the lighter brown, the
@@ -438,6 +439,7 @@ const volumeConfigs = {
     paths: ['/calendar'],
     manifestPath: './data/calendar/manifest.json',
     theme: 'calendar',
+    documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
     palette: {
       bg: '#0c2c44',
       node: '#443300',

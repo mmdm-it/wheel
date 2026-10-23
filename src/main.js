@@ -2469,6 +2469,12 @@ function applyTheme(volume) {
   const bg = active.bg;
   root.setAttribute('data-theme', theme);
   root.style.backgroundColor = bg;
+  // A standalone door is named for its volume (O-211): the page's own title
+  // is the old gateway's, and scripture that calls itself an exhaust
+  // manifold is the kind of seam the designer audience will notice first.
+  // A volume with no name of its own keeps the page's.
+  const title = volumeConfigs[volume]?.documentTitle;
+  if (title) document.title = title;
   // Set ALL theme CSS variables inline so the first render has correct
   // colors even before the async volume stylesheet finishes loading.
   root.style.setProperty('--theme-color-bg', bg);
