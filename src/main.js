@@ -4702,7 +4702,28 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   previewPrimary = preview => {
     if (!preview) return;
     const edition = preview.edition;
-    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition)) return;
+    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition)) {
+      // NOTHING TO PREVIEW, SO THE COMMITTED READING COMES BACK (O-208,
+      // Howell's photograph the evening the hollow tongues first stood on
+      // the ring: the Greek New Testament's books wearing their raw ids
+      // under THE NEW TESTAMENT in English). The lens had passed English —
+      // the names and the text went English — and then rested on a hollow
+      // Hebrew seat, which this returned from without undoing that: the
+      // English kit stayed over the Greek edition's book ids, and no name
+      // matched. Before the hollow tongues no language with nothing to read
+      // here could be under the lens, so the early return never had a
+      // stale preview to clear. Now it clears it: names, pyramid and text
+      // return to the committed edition, exactly as the settle would leave
+      // them. Nothing to clear, nothing repainted.
+      if (!options.previewEdition) return;
+      options.previewEdition = null;
+      refreshNamesMap();
+      if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
+      if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
+      renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+        { translation: activeTranslation(), part: 0 });
+      return;
+    }
     // A preview of an edition still arriving (O-175) waits for it, then
     // shows it — unless the finger has moved on to another by then.
     const vol = currentManifest?.__wallVolume;
