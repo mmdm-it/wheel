@@ -1057,7 +1057,11 @@ function setPrimaryVisual(scale, blurPx, away = null) {
   //
   // They are listed rather than discovered, so a NEW overlay is a deliberate
   // addition to this line and not a thing that silently fails to travel.
-  for (const id of ['detail-panel', 'margin-panel', 'margin-marks']) {
+  // The chapter's mark joined the list on 2026-10-23 (O-125): it stayed sharp
+  // and full-size at the foot of the glass while the ring receded behind the
+  // strata — Howell: "it should recede and get blurry in proportion with
+  // the rest of the primary stratum nodes and labels."
+  for (const id of ['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark']) {
   const panel = document.getElementById(id);
   if (panel) {
     const cx = viewport.width / 2, cy = viewport.height / 2;
@@ -1067,7 +1071,12 @@ function setPrimaryVisual(scale, blurPx, away = null) {
     // pre-transform, so it's stable across successive scales. (Reading
     // getBoundingClientRect here slid the origin on a second recede, Howell
     // 2026-07-21.)
-    panel.style.transformOrigin = `${cx}px ${cy}px`;
+    // A panel at inset:0 has the viewport's centre at (cx, cy) of its own
+    // box; the mark at the foot of the glass does not, so the origin is
+    // taken from its LAYOUT position (offsetLeft/Top ignore transforms, so
+    // it is stable across successive recedes, unlike the client rect).
+    const ox = cx - (panel.offsetLeft || 0), oy = cy - (panel.offsetTop || 0);
+    panel.style.transformOrigin = `${ox}px ${oy}px`;
     panel.style.transform = `${slid ? `translate(${offsetX.toFixed(1)}px, ${offsetY.toFixed(1)}px) ` : ''}${scaled ? `scale(${scale})` : ''}`.trim();
     panel.style.filter = filter;
     panel.style.opacity = opacity < 0.999 ? String(opacity) : '';
