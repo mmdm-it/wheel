@@ -516,6 +516,16 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // edition is never read merely because a config named it.
     isServableEdition(key) { return isServable(meta?.translations?.[key]); },
 
+    // The tongues with an edition offered in them, here (O-217). The
+    // registry's own list (languagesAvailable) carries hollow tongues too
+    // since O-208, so a phone's tongue is matched against THIS list: a tongue
+    // the reader can be seated in, not one that merely stands on the ring.
+    offeredLanguages() {
+      return [...new Set(Object.entries(meta?.translations || {})
+        .filter(([key, t]) => isServable(t) && isHere(key))
+        .map(([, t]) => t?.language).filter(Boolean))];
+    },
+
     // The RAW certification, ignoring the override — so the host can mark an
     // edition it is only showing because `?proofread=true` asked it to.
     isCertifiedEdition(key) { return meta?.translations?.[key]?.proofread === true; },

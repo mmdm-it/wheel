@@ -5,7 +5,7 @@
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
-import { proofreadDeepLink } from './core/lan-gate.js';
+import { proofreadDeepLink, proofreadOverrideActive } from './core/lan-gate.js';
 import { recall } from './core/session-memory.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
@@ -97,15 +97,33 @@ const volumeConfigs = {
       const named = proofreadDeepLink(['book', 'chapter', 'verse']) ? params.get('edition') : null;
       const chooseFirst = volumeJson => {
         const cfg = volumeJson?.display_config || {};
-        const offered = new Set((volumeJson?.editions || []).map(e => e.code));
+        // ONLY AN EDITION THE READER MAY BE SHOWN HERE (O-217, 2026-10-23).
+        // This set was every edition the volume enumerates, so on an English
+        // phone a stranger's boot waited for the Douay — which the CHECKED
+        // gate then refused — and seated the Hebrew, whose charts had not
+        // arrived: no seat, no items, the app failed to initialise. The gate
+        // is read here exactly as the dimension bridge reads it (isServable:
+        // proofread, else CHECKED where the build says, else a confirmed
+        // unit; the LAN's override lifts it), so the edition waited for is
+        // the edition shown. Keep the two in step.
+        const override = proofreadOverrideActive();
+        const servable = e => Boolean(e) && (override || e.proofread === true
+          || (e.checked !== undefined ? e.checked === true : (Array.isArray(e.proofreadUnits) && e.proofreadUnits.length > 0)));
+        const enumerated = volumeJson?.editions || [];
+        const offered = new Set(enumerated.filter(servable).map(e => e.code));
         const remembered = recall('bible').edition;
         if (remembered && offered.has(remembered)) return remembered;
         if (named && offered.has(named)) return named;
-        const lang = firstOfferedLanguage(phoneLanguages(), Object.keys(cfg.editions?.available || {}));
-        const byTongue = lang ? cfg.editions?.default?.[lang] : null;
+        const defaults = cfg.editions?.default || {};
+        const tonguesOffered = Object.keys(defaults).filter(l => offered.has(defaults[l]));
+        const lang = firstOfferedLanguage(phoneLanguages(), tonguesOffered);
+        const byTongue = lang ? defaults[lang] : null;
         if (byTongue && offered.has(byTongue)) return byTongue;
-        const dflt = cfg.editions?.default?.[cfg.languages?.default];
-        return dflt && offered.has(dflt) ? dflt : null;
+        const dflt = defaults[cfg.languages?.default];
+        if (dflt && offered.has(dflt)) return dflt;
+        // The first thing offered, in the volume's own order — the boot
+        // seats the same (main.js, the same number).
+        return enumerated.find(e => offered.has(e.code))?.code || null;
       };
       const volume = await loadBibleVolume({
         base: BIBLE_VOLUME_BASE,

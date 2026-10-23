@@ -1141,3 +1141,31 @@ describe('CHECKED opens the shelf; the pass does not (W-239)', () => {
     assert.equal(b.isServableEdition('E'), false);
   });
 });
+
+// O-217, 2026-10-23: a stranger's boot failed to initialise. The registry's
+// language list carries hollow tongues since O-208, so an English phone
+// matched a hollow English, chose a language and no edition, and the chain
+// built for no edition at all. The phone's tongue is matched against the
+// tongues with something OFFERED in them, and nothing else.
+describe('offeredLanguages (O-217) — the tongues a reader can be seated in', () => {
+  const bridgeOver = translations => createDimensionBridge({
+    store: createInteractionStore(), translationsMeta: { translations }
+  });
+  it('names only tongues with a servable edition, once each, in the editions\' order', () => {
+    const b = bridgeOver({
+      WLC: { language: 'hebrew', hasChart: true, checked: true, proofread: false },
+      LXX: { language: 'greek', hasChart: true, checked: false, proofread: false },
+      DRA: { language: 'english', hasChart: true, checked: false, proofread: false },
+      KJV: { language: 'english', hasChart: true, checked: true, proofread: false },
+      WLC2: { language: 'hebrew', hasChart: true, proofread: true }
+    });
+    assert.deepEqual(b.offeredLanguages(), ['hebrew', 'english']);
+  });
+  it('is empty when nothing is offered, and never names a hollow tongue', () => {
+    const b = bridgeOver({
+      DRA: { language: 'english', hasChart: true, checked: false, proofread: false }
+    });
+    assert.deepEqual(b.offeredLanguages(), []);
+    assert.deepEqual(b.offeredEditions(), []);
+  });
+});

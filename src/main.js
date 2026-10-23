@@ -1785,7 +1785,7 @@ function updateIncompleteMark() {
   if (!incompleteMarkEl) {
     incompleteMarkEl = document.createElement('div');
     incompleteMarkEl.id = 'incomplete-mark';
-    incompleteMarkEl.textContent = 'NOT PROOFREAD';
+    incompleteMarkEl.textContent = 'under review';   // O-125: the reader's mark, not the suite's
     document.body.appendChild(incompleteMarkEl);
   }
   incompleteMarkEl.style.display = '';
@@ -4117,12 +4117,27 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // their phone choose — the first one the volume offers. After this the
     // reader's own choice is remembered and wins.
     const named = new URLSearchParams(window.location.search).get('edition');
-    const offered = (supplemental?.languagesMeta?.languages || []).map(l => l?.id).filter(Boolean);
+    // ONLY A TONGUE WITH SOMETHING TO READ (O-217): the registry's list has
+    // held hollow tongues since O-208, and a phone's English matched against
+    // a hollow English chose a language and no edition — the boot then went
+    // on with no edition at all (below).
+    const offered = dimensionBridge.offeredLanguages();
     const byTongue = (!remembered && !named) ? firstOfferedLanguage(phoneLanguages(), offered) : null;
     if (!(remembered && dimensionBridge.setTranslation(remembered))
-        && !(byTongue && dimensionBridge.setLanguage(byTongue))
-        && options.translation) {
-      dimensionBridge.setTranslation(options.translation);
+        && !(byTongue && dimensionBridge.setLanguage(byTongue) && dimensionStore.getState().edition)
+        && !(options.translation && dimensionBridge.setTranslation(options.translation))) {
+      // THE FIRST EDITION OFFERED (O-217, 2026-10-23). The pinned default
+      // was refused because it is not servable HERE — a stranger's view
+      // under the CHECKED gate, where only the Hebrew stood — and nothing
+      // else chose, so the boot went on with no edition at all, the chain
+      // found no verse to seat, and the app failed to initialise: an empty
+      // ring, no message, for exactly the reader a letter would send here.
+      // A volume with anything offered opens in the first thing it offers;
+      // the first visit's verse then resolves for that edition (the psalm
+      // where there is no New Testament, O-179). A volume with nothing
+      // offered is the withheld state below, unchanged.
+      const first = dimensionBridge.offeredEditions()[0];
+      if (first) dimensionBridge.setTranslation(first);
     }
   }
   refreshDimensionButton(); // show the globe only where a dimension exists
