@@ -387,6 +387,12 @@ const CHOOSERS = [
     items: () => dimensionBridge.languagesAvailable(),
     label: id => dimensionBridge.languageLabel(id), // each tongue names itself
     selected: () => dimensionBridge.getSelection().language,
+    // A tongue on the roadmap with nothing to read here (O-208) is drawn
+    // hollow like a placeholder seat — but NOT inert: the lens may rest on
+    // it, so its hollow shelf can be seen on the plane behind. Settling on
+    // it is display-only (the bridge dispatches nothing); the reader keeps
+    // reading what they had.
+    classFor: id => (dimensionBridge.isComingLanguage?.(id) ? 'is-coming' : ''),
     select: id => {
       const ok = dimensionBridge.setLanguage(id);
       window.__wheelTapTrace?.push({ ev: 'select-lang', id, ok: ok ? 1 : 0 });

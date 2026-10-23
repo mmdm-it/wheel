@@ -49,7 +49,7 @@ describe('placeholder seats on the edition ring (O-184)', () => {
     assert.equal(store.getState().edition, 'ENG', 'the reader keeps reading the Douay');
     assert.equal(bridge.setTranslation('ENG'), true, 'the real seat commits as ever');
   });
-  it('a language with no declared shelf shows its seated editions alone; one with no seated edition keeps its sentinel', () => {
+  it('a language with no declared shelf shows its seated editions alone; one with no seated edition shows its shelf hollow (O-208)', () => {
     const { bridge } = makeBridge();
     assert.deepEqual(bridge.translationsOf('latin'), ['LAT']);
     const { bridge: bare } = (() => {
@@ -57,9 +57,64 @@ describe('placeholder seats on the edition ring (O-184)', () => {
       const store = { getState: () => state, dispatch: () => {}, subscribe: () => () => {} };
       return { bridge: createDimensionBridge({ store, translationsMeta: { translations: { GRC: { language: 'greek', proofread: false, hasChart: true } }, coming: { greek: ['Someday'] } } }) };
     })();
-    const ring = bare.translationsOf('greek');
-    assert.equal(ring.length, 1);
-    assert.equal(ring[0], bare.comingSoonKey, 'the shelf dresses only a real ring');
+    // Until 2026-10-23 this read "the shelf dresses only a real ring" and
+    // the answer was the sentinel. Howell, the hour the shelf became the
+    // roadmap: "I did not expect to see any of the actual text, but I did
+    // expect to see all of the editions."
+    assert.deepEqual(bare.translationsOf('greek').map(k => (bare.isComing(k) ? `~${bare.translationName(k)}` : k)), ['~Someday']);
+    // A shelf naming only real editions that are elsewhere still has
+    // nothing to show.
+    const { bridge: elsewhere } = (() => {
+      let state = { language: 'greek', edition: null };
+      const store = { getState: () => state, dispatch: () => {}, subscribe: () => () => {} };
+      return { bridge: createDimensionBridge({ store, translationsMeta: { translations: { GRC: { language: 'greek', proofread: false, hasChart: true } }, coming: { greek: ['GRC'] } } }) };
+    })();
+    assert.deepEqual(elsewhere.translationsOf('greek'), [elsewhere.comingSoonKey]);
+  });
+});
+
+// EVERY DECLARED TONGUE STANDS ON THE RING (O-208, Howell 2026-10-23): a
+// language with a declared shelf and nothing to read here is on the language
+// ring hollow — never absent — and settling on it leaves the reader where
+// they were. A tongue with neither text nor shelf is still absent (the
+// no-promises ruling of 2026-07-30 survives for it).
+describe('every declared tongue stands on the ring, hollow (O-208)', () => {
+  const TRANSLATIONS = {
+    ENG: { language: 'english', proofread: true, hasChart: true, name: 'Douay' },
+    HEB: { language: 'hebrew', proofread: true, hasChart: true, name: 'Leningrad' }
+  };
+  const COMING = { hebrew: ['HEB', 'Delitzsch'], english: ['King James', 'ENG'], french: ['Fillion', 'Jérusalem'], _note: 'ignored' };
+  const LANGS = { languages: [
+    { id: 'hebrew', autonym: 'עברית' }, { id: 'english', autonym: 'English' },
+    { id: 'french', autonym: 'Français' }, { id: 'finnish', autonym: 'Suomi' }
+  ] };
+  function make() {
+    let state = { language: 'english', edition: 'ENG' };
+    const dispatched = [];
+    const store = { getState: () => state, dispatch: a => { dispatched.push(a); }, subscribe: () => () => {} };
+    return { bridge: createDimensionBridge({ store, translationsMeta: { translations: TRANSLATIONS, coming: COMING }, languagesMeta: LANGS }), dispatched };
+  }
+  it('the ring holds the readable tongues and the promised ones, in registry order; a tongue with neither is absent', () => {
+    const { bridge } = make();
+    assert.deepEqual(bridge.languagesAvailable(), ['hebrew', 'english', 'french'], 'finnish has neither text nor shelf');
+    assert.equal(bridge.isComingLanguage('french'), true);
+    assert.equal(bridge.isComingLanguage('english'), false);
+    assert.equal(bridge.isComingLanguage('finnish'), false);
+  });
+  it('a hollow tongue shows its shelf hollow, and settling on it leaves the reader where they were', () => {
+    const { bridge, dispatched } = make();
+    assert.deepEqual(bridge.translationsOf('french').map(k => `~${bridge.translationName(k)}`), ['~Fillion', '~Jérusalem']);
+    assert.equal(bridge.setLanguage('french'), true, 'display-only, like any placeholder tongue');
+    assert.deepEqual(dispatched, [], 'nothing committed');
+    assert.equal(bridge.getSelection().translation, 'ENG');
+  });
+  it('a readable tongue whose every edition is elsewhere turns hollow rather than vanishing', () => {
+    const { bridge } = make();
+    bridge.setEditionsHere(['ENG']);
+    assert.deepEqual(bridge.languagesAvailable(), ['hebrew', 'english', 'french']);
+    assert.equal(bridge.isComingLanguage('hebrew'), true, 'Hebrew in the New Testament: on the ring, hollow');
+    assert.deepEqual(bridge.translationsOf('hebrew').map(k => (bridge.isComing(k) ? `~${bridge.translationName(k)}` : k)), ['~Delitzsch'],
+      'the seated edition that is elsewhere is left out; the placeholder shows');
   });
   it('a seated edition the shelf forgot is appended, never lost', () => {
     let state = { language: 'english', edition: 'ENG' };

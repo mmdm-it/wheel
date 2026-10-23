@@ -258,8 +258,15 @@ const volumeConfigs = {
       // QUOTATION (H-2): every autonym here is the volume's own word, and a
       // language the volume does not name gets no invented one.
       const langCfg = root?.display_config?.languages || {};
+      // EVERY DECLARED TONGUE IS ON THE RING (O-208, Howell 2026-10-23, the
+      // hour the shelf became scrutatio.it's: "I expected to see all of the
+      // editions"). The registry is the shelf's tongues in the shelf's own
+      // order — the acts, oldest first — with any served tongue the shelf
+      // forgot appended. A tongue still needs the volume's own word for its
+      // name; one without a label is not invented.
+      const shelfTongues = Object.keys(root?.display_config?.editions?.coming || {}).filter(id => !id.startsWith('_'));
       const languagesMeta = {
-        languages: (langCfg.available || [])
+        languages: [...new Set([...shelfTongues, ...(langCfg.available || [])])]
           .filter(id => langCfg.labels?.[id])
           .map(id => ({ id, autonym: langCfg.labels[id] }))
       };
