@@ -1006,12 +1006,13 @@ svg :focus-visible {
      "instead of a big red stripe across the top I'd rather see something
      small at the bottom. Perhaps a simple UR meaning under review"; settled
      2026-10-23: "a more subtle under review down in the lower right near the
-     notes section"). The red band across the top was the editing suite's
-     mark; this is the reader's. It wears the margin's own ink and type, sits
-     at the foot of the glass on the right where the margin's apparatus
-     lives, and covers nothing — the copyright line keeps its place. */
+     notes section", and the same evening, with a green mark on a photograph,
+     the LOWER LEFT corner, under the parent vessel). The red band across the
+     top was the editing suite's mark; this is the reader's. It wears the
+     margin's own ink and type, sits at the foot of the glass on the left,
+     and covers nothing — the copyright line keeps its place. */
   position: fixed;
-  right: calc(14px * var(--iframe-scale, 1));
+  left: calc(14px * var(--iframe-scale, 1));
   bottom: calc(10px * var(--iframe-scale, 1));
   z-index: 401;   /* with the margin's marks, above the sector */
   font-family: 'EB Garamond', Georgia, serif;
