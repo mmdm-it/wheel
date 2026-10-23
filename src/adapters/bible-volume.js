@@ -764,8 +764,45 @@ export function editionSeatsUtterance(volume, edition, bookId, utteranceId) {
 // Returns null rather than throwing when the edition does not hold the leaf:
 // that is a real answer (the reader is somewhere this edition never went),
 // and the caller keeps whatever name it already had.
+// THE SEAT INDEX (O-205, 2026-10-22). The lookup below walked every seat of
+// every book of the edition for one utterance — tens of thousands of
+// `includes` — and the host asks it on every navigation change, for every
+// edition, to light the globe. Measured at a fifth of a drill's launch. An
+// utterance belongs to exactly one unit, so the answer is a map, built once
+// per edition and kept beside the volume. The charts arrive over time (an
+// edition's shelf is stocked after boot, O-175), so the index remembers the
+// chart objects it was built from and rebuilds when any of them has changed
+// — a late chart is a new object. A fixture volume with no `booksFor` has
+// no shelf to index and keeps the walk.
+const seatIndexes = new WeakMap();
+function seatIndexFor(volume, edition) {
+  if (!volume || !edition || typeof volume.booksFor !== 'function' || typeof volume.chartFor !== 'function') return null;
+  const books = volume.booksFor(edition) || [];
+  const charts = books.map(b => volume.chartFor(b.id, edition));
+  let perVolume = seatIndexes.get(volume);
+  if (!perVolume) { perVolume = new Map(); seatIndexes.set(volume, perVolume); }
+  const kept = perVolume.get(edition);
+  if (kept && kept.charts.length === charts.length && kept.charts.every((c, i) => c === charts[i])) return kept.byUtterance;
+  const byUtterance = new Map();
+  books.forEach((book, i) => {
+    const seats = Array.isArray(charts[i]?.seats) ? charts[i].seats : [];
+    for (const seat of seats) {
+      if (!Array.isArray(seat?.utterances)) continue;
+      for (const u of seat.utterances) if (!byUtterance.has(u)) byUtterance.set(u, book.id);
+    }
+  });
+  perVolume.set(edition, { charts, byUtterance });
+  return byUtterance;
+}
+/** Build the edition's seat index now, at rest, so the first question is answered from it. */
+export function primeSeatIndex(volume, edition) {
+  return Boolean(seatIndexFor(volume, edition));
+}
+
 export function bookSeatingUtterance(volume, edition, bookId, utteranceId) {
   if (!utteranceId) return null;
+  const index = seatIndexFor(volume, edition);
+  if (index) return index.get(utteranceId) ?? null;
   // The caller's bookId is usually ANOTHER edition's word for where the
   // reader stands (O-92): the Hebrew's Nehemiah while asking whether the
   // Greek holds the verse. Book ids are per-edition now, so the asked

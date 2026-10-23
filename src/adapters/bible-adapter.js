@@ -5,7 +5,7 @@ import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cous
 import { buildUtteranceSeatIndex } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
-import { volumeHoldsUnit, editionSeatsUtterance, bookSeatingUtterance } from './bible-volume.js';
+import { volumeHoldsUnit, editionSeatsUtterance, bookSeatingUtterance, primeSeatIndex } from './bible-volume.js';
 
 // THE ADAPTER NO LONGER LOADS CARGO (H-14, 2026-08-12).
 //
@@ -431,10 +431,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // the fetched chart object, and under the wall there is no such object —
     // the edition names the chart the volume already holds.
     if (!chapterChainItems || chapterChainEdition !== edition) {
+      // The seats are the verse chain the ring already holds (O-205): asking
+      // the builder afresh expanded the whole volume a second time, under
+      // the thumb, on the first drill out of every session.
       chapterChainItems = buildBibleChapterChain(manifest, {
         edition,
         namesMap,
-        seats: buildBibleVerseChain(manifest, { edition }).items
+        seats: verseChain(null).items
       }).items;
       chapterChainEdition = edition;
     }
@@ -1084,12 +1087,40 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // featured verse, fetch the chapter's verse data and re-render the
   // Detail Sector with the verse text once it arrives. (Moved from the
   // host's bootVolume — Phase B audit, H1.)
+  // WARM AT REST (O-205, 2026-10-22; the dead start). The first drill of a
+  // session launched a third of a second after the thumb decided it, and
+  // most of that was work that has one answer for the whole session: the
+  // chapter chain, the verse index behind the sky, the seat index the globe
+  // asks. Each is built here instead, one per idle slot once the volume's
+  // shelves are stocked, so the thumb finds them ready. Each step is the
+  // same call the drill would make, so there is no second path to keep
+  // true; a step that throws is a step the drill will throw on too, and it
+  // is left to say so there.
+  const warmAtRest = () => {
+    const volume = manifest?.__wallVolume;
+    const edition = options?.activeEdition || options?.translation || null;
+    if (!volume || !edition) return;
+    const steps = [
+      () => verseChain(null),
+      () => chapterChain(null),
+      () => verseIndexFor(edition),
+      () => { for (const e of volume.editions || []) { const code = e?.code ?? e; if (code) primeSeatIndex(volume, code); } }
+    ];
+    const idle = typeof requestIdleCallback === 'function'
+      ? fn => requestIdleCallback(() => fn(), { timeout: 1500 })
+      : fn => { const t = setTimeout(fn, 50); if (typeof t?.unref === 'function') t.unref(); };
+    const run = i => { if (i >= steps.length) return; idle(() => { try { steps[i](); } catch (_) { /* the drill's own */ } run(i + 1); }); };
+    const ready = typeof volume.allReady === 'function' ? volume.allReady() : Promise.resolve();
+    Promise.resolve(ready).then(() => run(0), () => run(0));
+  };
+
   const onBoot = ({ app, items, selectedIndex, renderDetail }) => {
     // Held for the whole session: when a chapter's text lands, whatever
     // verse is under the magnifier repaints itself.
     if (typeof renderDetail === 'function') {
       _renderDetail = item => renderDetail(item || app?.nav?.getCurrent?.());
     }
+    warmAtRest();
     if (options?.level !== 'chapter' || !options?.verseId) return;
     const initialChapter = items[selectedIndex];
     if (!initialChapter?.meta?.externalFile) return;

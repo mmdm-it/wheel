@@ -47,6 +47,43 @@ function findBibleBook(manifest, bookId) {
  * from verse_count reproduces the old behaviour EXACTLY (proven by test) —
  * phantom seats included, by design: data first, engine tolerant.
  */
+// ONE EXPANSION PER EDITION (O-205, 2026-10-22). Expanding the whole
+// volume's seats — every leaf of every book, tens of thousands — and weaving
+// them is the single largest cost in the engine, and it was paid at boot,
+// again on the first drill out (the chapter chain asked for the seats
+// afresh), and again for the verse index behind the sky: three times for one
+// answer, and two of them under the reader's thumb. The woven chain is kept
+// here per volume and edition and handed out by identity, so every cache
+// downstream that compares chains finds the same one. The charts it was woven
+// from are remembered: a chart that lands later (O-175) is a new object, and
+// the chain is woven again. Nothing in the engine mutates a chain's items —
+// the adapter has shared one array across its callers since W-21.
+const chainMemo = new WeakMap();
+function chartStamp(volume, edition) {
+  const books = typeof volume.booksFor === 'function' ? (volume.booksFor(edition) || []) : (volume.units || []);
+  return typeof volume.chartFor === 'function' ? books.map(b => volume.chartFor(b.id, edition)) : [];
+}
+function wovenVerseChain(volume, edition) {
+  const proofread = proofreadOverrideActive();
+  const key = `${edition}|${proofread ? 1 : 0}`;
+  const stamp = chartStamp(volume, edition);
+  let perVolume = chainMemo.get(volume);
+  if (!perVolume) { perVolume = new Map(); chainMemo.set(volume, perVolume); }
+  const kept = perVolume.get(key);
+  if (kept && kept.stamp.length === stamp.length && kept.stamp.every((c, i) => c === stamp[i])) return kept.items;
+  const sorted = expandVolumeSeats(volume, edition, { includeUnconfirmed: proofread });
+  // The seats arrive in the EDITION'S OWN ORDER already: expandVolumeSeats
+  // walks bookOrderFor. Nothing to re-sort here, and a sort here was actively
+  // wrong — see the note on the book chain below.
+  const items = weaveCousinChain(sorted, [
+    item => item.chapterKey,
+    item => item.bookKey,
+    item => item.testamentKey
+  ]);
+  perVolume.set(key, { stamp, items });
+  return items;
+}
+
 export function buildBibleVerseChain(manifest, { initialVerseId = null, fallbackVerseId = null, edition = null } = {}) {
   // THE SEATS COME FROM THE VOLUME (H-14). This took a legacy chart and
   // expanded it against a manifest that stored chapters; both are gone, and
@@ -59,18 +96,8 @@ export function buildBibleVerseChain(manifest, { initialVerseId = null, fallback
   // chart a unit simply does not seat it, and the reader is shown nothing
   // rather than a fiction.
   const volume = manifest?.__wallVolume;
-  const sorted = volume ? expandVolumeSeats(volume, edition, { includeUnconfirmed: proofreadOverrideActive() }) : [];
-  if (!sorted.length) return { items: [], selectedIndex: 0, preserveOrder: true };
-
-  // The seats arrive in the EDITION'S OWN ORDER already: expandVolumeSeats
-  // walks bookOrderFor. Nothing to re-sort here, and a sort here was actively
-  // wrong — see the note on the book chain below.
-
-  const items = weaveCousinChain(sorted, [
-    item => item.chapterKey,
-    item => item.bookKey,
-    item => item.testamentKey
-  ]);
+  const items = volume ? wovenVerseChain(volume, edition) : [];
+  if (!items.length) return { items: [], selectedIndex: 0, preserveOrder: true };
 
   // The entry seat; failing that the fallback (the first visit's verse,
   // O-179); failing both, the first seat.
