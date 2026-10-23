@@ -652,14 +652,12 @@ function makeCalendarLabelFormatter({ locale }) {
   );
   return ({ item, context }) => {
     if (!item) return '';
-    // Month items: nodes carry the month name alone; the magnifier appends
-    // the year — on the continuous months chain every January looks alike.
-    if (item.level === 'month') {
-      const name = item?.name || item?.id || '';
-      const y = Number.isFinite(item?.yearNumber) ? item.yearNumber : Number.parseInt(item?.parentId, 10);
-      if (context === 'magnifier' && Number.isFinite(y)) return `${name} ${formatYear(y)}`;
-      return name;
-    }
+    // Month items carry the month name alone, in the lens too (O-215,
+    // Howell 2026-10-23, against the July bundle: "the screening room
+    // version has the year suffix in the magnifier, whereas the archive
+    // version does not"). The year stands in the parent vessel directly
+    // below the lens, so the suffix said twice what the glass already says.
+    if (item.level === 'month') return item?.name || item?.id || '';
     // Only year items get era formatting — composed ids ("2026:jan") would
     // otherwise fool the parseInt fallback.
     if (item.level && item.level !== 'year') return item?.name || item?.id || '';
