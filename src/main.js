@@ -3302,6 +3302,20 @@ function wireInteractions(getApp) {
       settle: go => sw.ctl.release(go, { onAbort: undo }),
     };
   };
+  // THE DRAWING HOLDS THE DRILL'S POINTER (O-210, 2026-10-23). A touch is
+  // captured by the element it lands on — the lens, the parent seat — and
+  // the flight a drill launches re-seats that element in the tree, which
+  // releases the capture; the orphan guard below (O-169) read the loss as a
+  // lost finger and settled the drill at depth 0 before the thumb had
+  // moved: the nodes vanished and nothing followed. Synthetic pointer
+  // events never capture, which is why the bench passed and the phone did
+  // not. So before a drill opens, the svg root — which no flight touches —
+  // takes the pointer, and a loss while it holds, or is about to hold, the
+  // pointer is no loss.
+  const holdDrillPointer = event => {
+    if (event?.pointerId == null) return;
+    try { svg.setPointerCapture(event.pointerId); pointerCaptured = true; } catch (_) { /* capture unsupported */ }
+  };
   // Begin a depth drill from a stroke that started at (x0, y0) and was decided
   // at `event`; false when there is nothing to drill that way — which the
   // compass rule reads as nothing at all.
@@ -3316,6 +3330,7 @@ function wireInteractions(getApp) {
       abort: h => h.abort(),
       settle: (h, go) => h.settle(go),
     });
+    holdDrillPointer(event);
     if (!drill.begin(kind === 'out' ? 1 : -1)) return false;
     freeDrill = { kind, drill, x: event.clientX, y: event.clientY, trail: [{ x: x0, y: y0 }, { x: event.clientX, y: event.clientY }], moves: [], pointerId: event?.pointerId ?? null };
     return true;
@@ -3351,6 +3366,7 @@ function wireInteractions(getApp) {
       abort: h => h.abort(),
       settle: (h, go) => h.settle(go),
     });
+    holdDrillPointer(event);
     if (!drill.begin(kind === 'out' ? 1 : -1)) return false;
     // The drill's line is the corridor, signed so that + is outward: toward
     // the lens from the parent, away from the parent at the lens.
@@ -3726,6 +3742,8 @@ function wireInteractions(getApp) {
     }, true));
     document.addEventListener('visibilitychange', () => { if (document.hidden) settleOrphanDrill('hidden'); });
     svg.addEventListener('lostpointercapture', event => {
+      // Handed from a control to the drawing itself (O-210): not lost.
+      try { if (svg.hasPointerCapture?.(event.pointerId)) return; } catch (_) { /* unsupported: judge by the loss alone */ }
       if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill('lostpointercapture');
     });
   }
