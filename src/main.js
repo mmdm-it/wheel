@@ -477,10 +477,21 @@ const BASEMENT = {
 // Read off the primary's own labels rather than rebuilt, so the seat says
 // exactly what the reader saw, in whatever form that edition writes it.
 function arrivalLabel(cur) {
+  // THE MODEL'S WORDS FIRST (O-220, Howell 2026-10-24: a King James bookmark
+  // read "GENESIS 1:LUCAS"). This read the glass — the first lens label in
+  // the document — and the glass is not always the verse: a flight's clone,
+  // a stratum's label mid-turn, a label another tongue painted (O-94) can
+  // stand first for a frame, and the frame the reader drags the thumb down
+  // in is the one that gets kept. The adapter names a verse's parent from
+  // the item itself, exactly as it labels the greatest hits; the glass is
+  // read only where the model has no word.
+  const named = (cur?.name ?? cur?.label ?? '').toString().trim();
+  const modelParent = (() => { try { return (currentParentLabel?.(cur) ?? '').toString().trim(); } catch (_) { return ''; } })();
+  if (modelParent && named) return `${modelParent}:${named}`;
   const text = sel => (document.querySelector(`#app ${sel}`)?.textContent || '').trim();
-  const parent = text('.focus-ring-parent-label');
-  const verse = text('.focus-ring-magnifier-label:not(.focus-ring-parent-label)') || cur?.name || cur?.label || '';
-  return parent && verse ? `${parent}:${verse}` : (verse || parent || cur?.name || cur?.label || cur?.id || '');
+  const parent = modelParent || text('.focus-ring-parent-label');
+  const verse = named || text('.focus-ring-magnifier-label:not(.focus-ring-parent-label)');
+  return parent && verse ? `${parent}:${verse}` : (verse || parent || cur?.id || '');
 }
 // A BOOKMARK IS THE LEAF. A ring item's id is one edition's word for a seat
 // (`<bookId>_<chapter>_<verse>`, and a book id is per edition — O-92); the
@@ -3931,6 +3942,10 @@ async function showVersion() {
 }
 
 let currentApp = null;
+// The running volume's own naming of a verse's parent (the adapter's
+// getParentLabel), kept beside the app so the basement can name an arrival
+// from the MODEL rather than off the glass (O-220).
+let currentParentLabel = null;
 // The booted volume's manifest, kept module-wide for the same reason
 // `currentApp` is: the section label (H-26) is updated from a nav callback
 // that has no path back into bootVolume's scope, and it needs the wall
@@ -4453,6 +4468,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const parentHandler = params => (handlerSet.parentHandler ? handlerSet.parentHandler({ ...params, app }) : false);
   const childrenHandler = params => (handlerSet.childrenHandler ? handlerSet.childrenHandler({ ...params, app }) : false);
   const adapterGetParentLabel = typeof handlerSet.getParentLabel === 'function' ? handlerSet.getParentLabel : null;
+  currentParentLabel = adapterGetParentLabel;
   // The volume declares what it appended to a parent label (a chapter
   // numeral), so the label can be seated by its NAME and the suffix hang
   // clear of the vessel. Volumes that append nothing need not define it.
