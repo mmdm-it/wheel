@@ -141,3 +141,23 @@ describe('unproofread is reachable, and marked (O-124)', () => {
       'even asked the way the old public path asked');
   });
 });
+
+// O-218, Howell 2026-10-23: CHECKED takes the mark off, at the grain the
+// build carries it — the whole edition. "If the checked granularity is at
+// the edition level, then our disclaimer needs to change from chapter to
+// edition."
+describe('CHECKED takes the mark off the whole edition (O-218)', () => {
+  const volumeWith = edition => ({ editions: [edition] });
+  it('a checked edition is confirmed at every grain, with nothing proofread', () => {
+    const v = volumeWith({ code: 'WLC', checked: true, proofread: false, proofreadUnits: [] });
+    assert.equal(isNodeConfirmed(v, 'WLC', { bookId: 'b1', chapterId: '3' }), true);
+    assert.equal(isNodeConfirmed(v, 'WLC', { bookId: 'b1' }), true);
+    assert.equal(isNodeConfirmed(v, 'WLC', {}), true);
+  });
+  it('an unchecked edition still answers from its chapter marks', () => {
+    const v = volumeWith({ code: 'LXX', checked: false, proofread: false, proofreadUnits: ['b1/3'] });
+    assert.equal(isNodeConfirmed(v, 'LXX', { bookId: 'b1', chapterId: 'b1/3' }), true, 'the proofread chapter');
+    assert.equal(isNodeConfirmed(v, 'LXX', { bookId: 'b1', chapterId: 'b1/4' }), false, 'its neighbour');
+    assert.equal(isNodeConfirmed(v, 'LXX', {}), false, 'the edition');
+  });
+});

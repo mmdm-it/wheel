@@ -1755,7 +1755,9 @@ function ensureIncompleteMarkEl() {
   // Two lines by design, not by wrapping (Howell 2026-10-23: "chapter" on
   // the first line and "under review" beneath it — a wrap crowded the
   // parent vessel's label).
-  ['chapter', 'under review'].forEach(line => { const el = document.createElement('span'); el.className = 'incomplete-mark-line'; el.textContent = line; incompleteMarkEl.appendChild(el); });
+  // EDITION, because CHECKED lifts the mark for the whole edition at once
+  // (O-218): the words follow the grain the record carries.
+  ['edition', 'under review'].forEach(line => { const el = document.createElement('span'); el.className = 'incomplete-mark-line'; el.textContent = line; incompleteMarkEl.appendChild(el); });
   document.body.appendChild(incompleteMarkEl);
 }
 
@@ -1807,8 +1809,9 @@ function updateIncompleteMark() {
   } catch (_) { show = false; }
   // ONLY ONCE THE VERSE IS THERE (O-125, Howell 2026-10-23: "it should not
   // appear during the drill in. We should not see the disclaimer until the
-  // detail sector has settled in and the verse appears"). The mark says
-  // CHAPTER, so it speaks only where a chapter's verse is on the glass: it
+  // detail sector has settled in and the verse appears"). The mark speaks
+  // only where a verse is on the glass (it said CHAPTER then, EDITION since
+  // O-218; the rule is the same): it
   // follows the detail sector's own visibility, appearing with the text at
   // the settle and going with it at the launch; above a leaf it says nothing.
   show = show && detailSectorVisible;
