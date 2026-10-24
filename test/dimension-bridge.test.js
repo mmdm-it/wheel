@@ -87,6 +87,28 @@ describe('dimension bridge — selection and defaults', () => {
       'lands on the servable edition — not the unproofread one, and not the uncharted one');
   });
 
+  it('setLanguage lands on the tongue\'s DECLARED default when it is servable, else the first servable (O-219)', () => {
+    // Two English editions, the declared default standing SECOND in the
+    // volume's order — the King James before the Douay (W-272). The boot
+    // waits for the declared default; committing the first servable here
+    // built the chain on an edition whose chart had not arrived.
+    const store = createInteractionStore();
+    const meta = {
+      defaults: { english: 'DRA', greek: 'NT' },
+      translations: {
+        KJV: { language: 'english', name: 'King James', proofread: true, hasChart: true },
+        DRA: { language: 'english', name: 'Douay-Rheims', proofread: true, hasChart: true },
+        LXX: { language: 'greek', name: 'Septuagint', proofread: true, hasChart: true },
+        NT: { language: 'greek', name: 'Patriarchal Text', proofread: false, hasChart: true }
+      }
+    };
+    const bridge = createDimensionBridge({ store, translationsMeta: meta });
+    assert.equal(bridge.setLanguage('english'), true);
+    assert.equal(bridge.getSelection().translation, 'DRA', 'the declared default, not the first in the volume\'s order');
+    assert.equal(bridge.setLanguage('greek'), true);
+    assert.equal(bridge.getSelection().translation, 'LXX', 'a declared default that is not servable here yields to the first servable');
+  });
+
   it('a language with NOTHING servable is DISPLAY-ONLY: the reader keeps its edition (W-11)', () => {
     // Howell ruled 2026-07-27 (superseding the earlier first-listed
     // fallback): a language whose every edition is held for licensing must

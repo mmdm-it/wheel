@@ -94,7 +94,11 @@ const volumeConfigs = {
       // itself settles on below, so the edition shown is the edition waited
       // for. Everything else is fetched behind it.
       const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
-      const named = proofreadDeepLink(['book', 'chapter', 'verse']) ? params.get('edition') : null;
+      // AN EDITION NAMED ON THE ADDRESS IS WAITED FOR AND SEATED (O-219): it
+      // used to count only inside a proofread deep link, while the boot's
+      // seeding read it unconditionally — `?edition=X` alone waited for the
+      // tongue's default and seated the volume's, and the chain had no chart.
+      const named = params.get('edition');
       const chooseFirst = volumeJson => {
         const cfg = volumeJson?.display_config || {};
         // ONLY AN EDITION THE READER MAY BE SHOWN HERE (O-217, 2026-10-23).
@@ -236,6 +240,12 @@ const volumeConfigs = {
         // with placeholder names between the seated editions. The volume's
         // word; the `_` keys are its notes to itself.
         coming: Object.fromEntries(Object.entries(volume.displayConfig?.editions?.coming || {}).filter(([k, v]) => !k.startsWith('_') && Array.isArray(v))),
+        // THE DECLARED DEFAULT PER TONGUE (O-219): the edition a tongue opens
+        // on when it holds more than one — the Douay for English beside the
+        // King James, the Patriarchal for Greek beside the Septuagint. The
+        // bridge reads it where it commits a language; the boot's waited-for
+        // edition (chooseFirst, above) reads the same key. Keep the two in step.
+        defaults: Object.fromEntries(Object.entries(volume.displayConfig?.editions?.default || {}).filter(([k]) => !k.startsWith('_'))),
         translations: Object.fromEntries(volume.editions.map(edition => [edition.code, {
           ...edition,
           name: edition.name || edition.code,
@@ -342,8 +352,11 @@ const volumeConfigs = {
           // override the address may simply say which edition it wants.
           // Gated by `proofreadDeepLink`, so a public URL naming an edition
           // is ignored exactly as before.
+          // O-219: an edition named on the address is honoured whenever it
+          // is named, as chooseFirst (above) honours it; a position is not
+          // required. An unservable name is refused downstream (setTranslation).
           const named = params.get('edition');
-          if (named && proofreadDeepLink(POSITION_KEYS)) return named;
+          if (named) return named;
           const editions = root?.display_config?.editions || {};
           const language = root?.display_config?.languages?.default;
           return editions.default?.[language]

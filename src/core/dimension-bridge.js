@@ -338,7 +338,19 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       // a real edition's name.
       const servable = servableEditionsOf(languageId);
       if (!servable.length) return true; // W-11: pending language, reader untouched
-      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition: servable[0] });
+      // THE TONGUE'S DECLARED DEFAULT, when it is servable (O-219, 2026-10-24).
+      // This committed the first servable edition in the volume's order, and
+      // the boot waited for the tongue's declared default (chooseFirst in
+      // volume-configs): one edition per tongue hid the difference, and the
+      // day a second English edition stood before the Douay the house boot
+      // built its chain on an edition whose chart had not arrived — no items,
+      // the app failed to initialise; Greek had failed so since its second
+      // edition. The declared default is the volume's word (the Douay for
+      // English, the Patriarchal for Greek); the first servable stands in
+      // only where the default is not servable here.
+      const declared = meta?.defaults?.[languageId];
+      const defaultEdition = declared && servable.includes(declared) ? declared : servable[0];
+      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition });
       return true;
     },
 
