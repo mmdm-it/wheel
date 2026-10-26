@@ -4750,6 +4750,21 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // WHEN EVERY SHELF IS STOCKED (O-175), one quiet redraw seats whatever
   // waited on another edition — a bookmark to its leaf, a hit on its ring.
   manifest?.__wallVolume?.allReady?.().then(() => { if (currentApp === app) app?.refreshPyramid?.(); });
+  // AND THE CHOOSER LEARNS EACH SHELF AS IT LANDS (O-223, Howell 2026-10-26,
+  // from the phone: the Synodal in the lens of the edition ring, the Douay
+  // still in the detail sector). "Which editions hold where the reader is
+  // standing" was asked once at boot, when only the first edition's charts
+  // were in hand, and asked again only on a change of position — so a
+  // reader who booted at a verse and went straight to the globe was offered
+  // every later edition HOLLOW, and settling on one committed nothing. Each
+  // edition's own promise re-asks the question the moment its charts arrive.
+  {
+    const vol = manifest?.__wallVolume;
+    const codes = (vol?.editions || []).map(e => e?.code).filter(Boolean);
+    for (const code of codes) {
+      vol?.ready?.(code)?.then?.(() => { if (currentApp === app) refreshEditionsHere(); });
+    }
+  }
 
   // Detail renders resolve the translation LIVE (the sticky choice can
   // change between renders); the settle hook below regenerates the open
