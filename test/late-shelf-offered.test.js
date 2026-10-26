@@ -22,7 +22,7 @@ const TWIN = 'DRB';
 const CHART_DELAY_MS = 250;
 
 describe('an edition whose shelf lands after boot is offered where the reader stands (O-223)', () => {
-  let hereAtBoot;
+  let hereAtBoot, arrivingAtBoot, ringAtBoot;
   let D;
   let volume;
 
@@ -69,8 +69,12 @@ describe('an edition whose shelf lands after boot is offered where the reader st
       if (D && D.front() === 0 && Array.isArray(D.here())) break;
       await new Promise(r => setTimeout(r, 20));
     }
-    console.error = realError;
+    // One instant, three readings: the list, the shelves still stocking,
+    // and the ring as it would be drawn — the twin lands 250 ms later.
     hereAtBoot = D?.here?.();
+    arrivingAtBoot = D?.arriving?.();
+    ringAtBoot = D?.ring?.('english');
+    console.error = realError;
     const { volumeConfigs } = await import('../src/volume-configs.js');
     volume = (await volumeConfigs.bible.loadManifest()).__wallVolume;
   });
@@ -82,12 +86,20 @@ describe('an edition whose shelf lands after boot is offered where the reader st
     assert.ok(!hereAtBoot.includes(TWIN), `the twin's charts had not landed at boot; here = ${JSON.stringify(hereAtBoot)}`);
   });
 
+  it('while its shelf is still stocking, the twin stands HOLLOW on the edition ring, in its place (O-224)', () => {
+    assert.ok(arrivingAtBoot.includes(TWIN), `the host names it as arriving; arriving = ${JSON.stringify(arrivingAtBoot)}`);
+    const hollowTwin = ringAtBoot.find(k => D.hollow(k) && k.endsWith(':' + TWIN));
+    assert.ok(hollowTwin, `the twin is on the ring, hollow; ring = ${JSON.stringify(ringAtBoot)}`);
+  });
+
   it('once the twin\'s shelf is stocked it is offered at the boot leaf — with no move since boot', async () => {
     assert.ok(volume.editions.some(e => e.code === TWIN), 'the stub declared the twin');
     await volume.allReady();
     await new Promise(r => setTimeout(r, 50));
     const here = D.here();
     assert.ok(here.includes(TWIN), `the twin holds the boot leaf and must be offered; here = ${JSON.stringify(here)}`);
+    assert.ok(!D.arriving().includes(TWIN), 'nothing is arriving any more');
+    assert.ok(D.ring('english').includes(TWIN), `and it stands FILLED on the ring; ring = ${JSON.stringify(D.ring('english'))}`);
     assert.equal(D.front(), 0, `and nothing moved: the reader is still at the text (front=${D.front()} min=${D.min?.()})`);
   });
 

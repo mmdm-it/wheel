@@ -141,3 +141,66 @@ describe('every declared tongue stands on the ring, hollow (O-208)', () => {
     for (const lang of shelves) assert.deepEqual(translationsMeta.coming[lang], declared[lang], `${lang}: the shelf as declared`);
   });
 });
+
+// AN EDITION STILL ARRIVING STANDS HOLLOW (O-224, Howell 2026-10-26). The
+// shelves stock after boot (O-175), and the overture's glide drew the edition
+// ring before the King James's charts had landed: not here, so left off —
+// "note that King James is missing ... but not on the initial migration in".
+// Unanswered is not absent: the host names the editions still arriving, and
+// the ring draws them hollow under their own names until they land.
+describe('an edition still arriving stands hollow under its own name (O-224)', () => {
+  const shelf = { english: ['KJV', 'Westminster', 'ENG', 'Revised Standard'], latin: [] };
+  const WITH_KJV = { KJV: { language: 'english', proofread: true, hasChart: true, name: 'King James', nativeName: 'King James Bible' }, ...TRANSLATIONS };
+  const make = () => {
+    let state = { language: 'english', edition: 'ENG' };
+    const store = {
+      getState: () => state,
+      dispatch: action => { if (action.type === 'SET_LANGUAGE') state = { language: action.language, edition: action.defaultEdition }; },
+      subscribe: () => () => {}
+    };
+    return { store, bridge: createDimensionBridge({ store, translationsMeta: { translations: WITH_KJV, coming: shelf } }) };
+  };
+  const shape = (bridge, lang = 'english') => bridge.translationsOf(lang).map(k => (bridge.isComing(k) ? `~${bridge.translationAbbrev(k)}` : k));
+
+  it('landed and not here: left off, as before', () => {
+    const { bridge } = make();
+    bridge.setEditionsHere(['ENG']);
+    assert.deepEqual(shape(bridge), ['~Westminster', 'ENG', '~Revised Standard']);
+  });
+  it('still arriving: hollow, in its place on the shelf, wearing its own name', () => {
+    const { bridge } = make();
+    bridge.setEditionsHere(['ENG']);
+    bridge.setEditionsArriving(['KJV']);
+    assert.deepEqual(shape(bridge), ['~King James Bible', '~Westminster', 'ENG', '~Revised Standard']);
+    const kj = bridge.translationsOf('english')[0];
+    assert.equal(bridge.translationName(kj), 'King James Bible');
+    assert.equal(bridge.setTranslation(kj), false, 'a hollow seat is never committed');
+  });
+  it('and fills when its shelf lands and the host re-asks', () => {
+    const { bridge } = make();
+    bridge.setEditionsHere(['ENG']);
+    bridge.setEditionsArriving(['KJV']);
+    bridge.setEditionsArriving([]);
+    bridge.setEditionsHere(['ENG', 'KJV']);
+    assert.deepEqual(shape(bridge), ['KJV', '~Westminster', 'ENG', '~Revised Standard']);
+    assert.equal(bridge.setTranslation('KJV'), true);
+  });
+  it('an arriving edition the shelf forgot is appended hollow, on its own tongue\'s ring', () => {
+    const { bridge } = make();
+    bridge.setEditionsHere(['ENG']);
+    bridge.setEditionsArriving(['LAT', 'KJV']);
+    assert.deepEqual(shape(bridge), ['~King James Bible', '~Westminster', 'ENG', '~Revised Standard'],
+      'the Latin is another tongue');
+    assert.deepEqual(shape(bridge, 'latin'), ['~Vulgata'], 'the Latin ring, with no declared shelf, shows its arriving edition hollow');
+  });
+  it('a tongue whose only edition is arriving stands hollow on the language ring', () => {
+    const { bridge } = make();
+    bridge.setEditionsHere(['ENG']);
+    bridge.setEditionsArriving(['LAT']);
+    assert.ok(bridge.languagesAvailable().includes('latin'));
+    assert.equal(bridge.isComingLanguage('latin'), true);
+    bridge.setEditionsArriving([]);
+    bridge.setEditionsHere(['ENG', 'LAT']);
+    assert.equal(bridge.isComingLanguage('latin'), false);
+  });
+});

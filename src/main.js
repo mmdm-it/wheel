@@ -2302,6 +2302,11 @@ if (typeof window !== 'undefined') {
     get: () => dimensionBridge.getSelection(),
     set: id => dimensionBridge.setTranslation(id) || dimensionBridge.setLanguage(id),
     languages: () => dimensionBridge.languagesAvailable(),
+    // The edition ring as the bridge would draw it, and the shelves still
+    // stocking (O-224) — for the bench and the boot tests.
+    ring: lang => dimensionBridge.translationsOf(lang || dimensionBridge.getSelection().language),
+    arriving: () => dimensionBridge.editionsArriving?.() || [],
+    hollow: key => Boolean(dimensionBridge.isComing?.(key)),
     // Null while the launch funnel is up (O-75), the reader's position after.
     here: () => dimensionBridge.editionsHere(),
     // IS THE LAUNCH FUNNEL STILL UP? (O-77.) Read-only, for the guard that
@@ -4758,11 +4763,26 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // reader who booted at a verse and went straight to the globe was offered
   // every later edition HOLLOW, and settling on one committed nothing. Each
   // edition's own promise re-asks the question the moment its charts arrive.
+  // AND UNTIL THEN THE LATE EDITIONS STAND HOLLOW (O-224, Howell 2026-10-26,
+  // the same morning, from the overture's glide on a cleared cache: "note
+  // that King James is missing ... after the animated truck in ends ... then
+  // I see King James, but not on the initial migration in"). An edition not
+  // here was left off the ring; one whose shelf had not landed was not
+  // absent, it was unanswered. The bridge draws it hollow under its own name
+  // until its promise resolves, and the ring repaints then — unless a glide
+  // is in flight, whose settle repaints anyway.
   {
     const vol = manifest?.__wallVolume;
     const codes = (vol?.editions || []).map(e => e?.code).filter(Boolean);
+    const stillArriving = () => codes.filter(c => !(typeof vol?.isReady === 'function' && vol.isReady(c)));
+    dimensionBridge.setEditionsArriving?.(stillArriving());
     for (const code of codes) {
-      vol?.ready?.(code)?.then?.(() => { if (currentApp === app) refreshEditionsHere(); });
+      vol?.ready?.(code)?.then?.(() => {
+        if (currentApp !== app) return;
+        dimensionBridge.setEditionsArriving?.(stillArriving());
+        refreshEditionsHere();
+        if (strataFront > 0 && !strataAnim && !bootOvertureGliding) renderStack({ keepFront: true });
+      });
     }
   }
 
