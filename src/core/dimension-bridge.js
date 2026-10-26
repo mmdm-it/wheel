@@ -268,6 +268,20 @@ export function createDimensionBridge({ store, translationsMeta = null, language
 
   const languageOf = translationKey => meta?.translations?.[translationKey]?.language || null;
 
+  // The tongues with something to read HERE — servable and present — and
+  // the tongues the volume declares a shelf for (O-184/O-208). The ring is
+  // the union; a tongue in the second set alone stands hollow.
+  const readableHere = () => {
+    const shown = new Set();
+    for (const [key, t] of Object.entries(meta?.translations || {})) {
+      if (t?.language && isServable(t) && isHere(key)) shown.add(t.language);
+    }
+    return shown;
+  };
+  const declaredShelves = () => new Set(Object.entries(meta?.coming || {})
+    .filter(([id, shelf]) => !id.startsWith('_') && Array.isArray(shelf) && shelf.length > 0)
+    .map(([id]) => id));
+
   // The chronological language registry supplied at boot. When present it is
   // the ONE source of the secondary ring's order and labels; without it we
   // fall back to whatever languages the translations happen to carry (tests).
@@ -324,7 +338,19 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       // a real edition's name.
       const servable = servableEditionsOf(languageId);
       if (!servable.length) return true; // W-11: pending language, reader untouched
-      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition: servable[0] });
+      // THE TONGUE'S DECLARED DEFAULT, when it is servable (O-219, 2026-10-24).
+      // This committed the first servable edition in the volume's order, and
+      // the boot waited for the tongue's declared default (chooseFirst in
+      // volume-configs): one edition per tongue hid the difference, and the
+      // day a second English edition stood before the Douay the house boot
+      // built its chain on an edition whose chart had not arrived — no items,
+      // the app failed to initialise; Greek had failed so since its second
+      // edition. The declared default is the volume's word (the Douay for
+      // English, the Patriarchal for Greek); the first servable stands in
+      // only where the default is not servable here.
+      const declared = meta?.defaults?.[languageId];
+      const defaultEdition = declared && servable.includes(declared) ? declared : servable[0];
+      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition });
       return true;
     },
 
@@ -366,20 +392,30 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // native "coming soon", no seat. When nothing is complete the ring is
     // empty, which is the honest picture of a volume with nothing to read.
     // (This supersedes W-11's placeholder-language display.)
+    //
+    // EXCEPT A DECLARED SHELF (O-208, Howell 2026-10-23, the hour the shelf
+    // became scrutatio.it's roadmap — "I don't see any new languages ... I
+    // did not expect to see any of the actual text, but I did expect to see
+    // all of the editions"). A tongue whose shelf the volume declares
+    // (`meta.coming[lang]`) stands on the ring HOLLOW when it has nothing to
+    // read here — the roadmap is the point — and its shelf shows hollow
+    // under the lens. The no-promises rule above still holds for a tongue
+    // with neither text nor shelf: it is absent, not promised. And "here"
+    // still counts: Hebrew at Matthew 5:16 is now hollow rather than gone.
     languagesAvailable() {
-      const shown = new Set();
-      // Filtered by WHERE THE READER STANDS as well as by servability (H-29's
-      // carry-out): a language whose every edition is elsewhere earns no seat,
-      // which is what removes Hebrew from the ring at Matthew 5:16.
-      for (const [key, t] of Object.entries(meta?.translations || {})) {
-        if (t?.language && isServable(t) && isHere(key)) shown.add(t.language);
-      }
+      const shown = readableHere();
+      const promised = declaredShelves();
       // Registry order when we have it — it is chronological and deliberate —
       // else whatever order the editions give.
       const entries = languageEntries();
-      if (entries.length) return entries.map(e => e.id).filter(id => shown.has(id));
-      return [...shown];
+      if (entries.length) return entries.map(e => e.id).filter(id => shown.has(id) || promised.has(id));
+      return [...new Set([...shown, ...promised])];
     },
+
+    // A hollow tongue (O-208): on the ring by its declared shelf, nothing to
+    // read here. The host draws it hollow; the lens may rest on it (the
+    // reader keeps reading what they had) so its shelf can be seen.
+    isComingLanguage(id) { return Boolean(id) && !readableHere().has(id) && declaredShelves().has(id); },
 
     // The language's own name, for the secondary stratum's labels. Registry
     // autonym first, then the built-in map, then the registry's English name,
@@ -492,6 +528,16 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // edition is never read merely because a config named it.
     isServableEdition(key) { return isServable(meta?.translations?.[key]); },
 
+    // The tongues with an edition offered in them, here (O-217). The
+    // registry's own list (languagesAvailable) carries hollow tongues too
+    // since O-208, so a phone's tongue is matched against THIS list: a tongue
+    // the reader can be seated in, not one that merely stands on the ring.
+    offeredLanguages() {
+      return [...new Set(Object.entries(meta?.translations || {})
+        .filter(([key, t]) => isServable(t) && isHere(key))
+        .map(([, t]) => t?.language).filter(Boolean))];
+    },
+
     // The RAW certification, ignoring the override — so the host can mark an
     // edition it is only showing because `?proofread=true` asked it to.
     isCertifiedEdition(key) { return meta?.translations?.[key]?.proofread === true; },
@@ -551,13 +597,17 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       }
       if (!lang) return [];
       const seated = servableEditionsOf(lang);
-      if (!seated.length) return [COMING_SOON_KEY];
+      const shelf = meta?.coming?.[lang];
+      const declared = Array.isArray(shelf) && shelf.length > 0;
+      // Nothing to read here and no shelf declared: the sentinel. With a
+      // shelf declared the ring shows it hollow (O-208) — a tongue on the
+      // roadmap has its editions to show even where it has no text.
+      if (!seated.length && !declared) return [COMING_SOON_KEY];
       // The declared shelf, in its order (O-184): seated editions in place,
       // placeholders between them; a declared edition not seated here (an
       // edition the reader's position filters out, or one still arriving)
       // is left out, and a seated edition the shelf forgot is appended.
-      const shelf = meta?.coming?.[lang];
-      if (!Array.isArray(shelf) || !shelf.length) return seated;
+      if (!declared) return seated;
       const out = [];
       for (const entry of shelf) {
         if (typeof entry !== 'string' || !entry) continue;
@@ -566,7 +616,9 @@ export function createDimensionBridge({ store, translationsMeta = null, language
         else out.push(COMING_PREFIX + entry);
       }
       for (const code of seated) if (!out.includes(code)) out.push(code);
-      return out;
+      // A shelf naming only real editions that are elsewhere leaves nothing
+      // to show: the sentinel, as before.
+      return out.length ? out : [COMING_SOON_KEY];
     },
 
     // A placeholder seat (O-184): drawn hollow, labelled with its name,

@@ -1996,7 +1996,10 @@ export function createApp({
         const rankOfSeat = i => (standoutId != null && children[i]?.id === standoutId ? 0 : isLarge(children[i]) ? 1 : anyProminence ? 1 + tierOf(children[i]) : 2);
         const seatOrder = seatPool.slice().sort((a, b) => (rankOfSeat(a) - rankOfSeat(b)) || (a - b));
         const LARGE_SCALE = MAGNIFIER_RADIUS_RATIO / NODE_RADIUS_RATIO;
-        const SMALL_SCALE = 0.6;
+        // A volume may name its lesser stars' size (O-213): one keeps the
+        // ring node's own. Unnamed, the 60% of O-199.
+        const declaredSmall = Number(pyramidConfig?.smallStarScale);
+        const SMALL_SCALE = Number.isFinite(declaredSmall) && declaredSmall > 0 ? declaredSmall : 0.6;
         const seatScales = seatOrder.map(i => (isLarge(children[i]) ? LARGE_SCALE : SMALL_SCALE));
         // Seat cap (Howell 2026-07-19): etcetera means etcetera — a 150-
         // chapter sky seats ~60, the smudge tail implying the rest (and the

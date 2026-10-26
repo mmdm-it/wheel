@@ -87,6 +87,28 @@ describe('dimension bridge — selection and defaults', () => {
       'lands on the servable edition — not the unproofread one, and not the uncharted one');
   });
 
+  it('setLanguage lands on the tongue\'s DECLARED default when it is servable, else the first servable (O-219)', () => {
+    // Two English editions, the declared default standing SECOND in the
+    // volume's order — the King James before the Douay (W-272). The boot
+    // waits for the declared default; committing the first servable here
+    // built the chain on an edition whose chart had not arrived.
+    const store = createInteractionStore();
+    const meta = {
+      defaults: { english: 'DRA', greek: 'NT' },
+      translations: {
+        KJV: { language: 'english', name: 'King James', proofread: true, hasChart: true },
+        DRA: { language: 'english', name: 'Douay-Rheims', proofread: true, hasChart: true },
+        LXX: { language: 'greek', name: 'Septuagint', proofread: true, hasChart: true },
+        NT: { language: 'greek', name: 'Patriarchal Text', proofread: false, hasChart: true }
+      }
+    };
+    const bridge = createDimensionBridge({ store, translationsMeta: meta });
+    assert.equal(bridge.setLanguage('english'), true);
+    assert.equal(bridge.getSelection().translation, 'DRA', 'the declared default, not the first in the volume\'s order');
+    assert.equal(bridge.setLanguage('greek'), true);
+    assert.equal(bridge.getSelection().translation, 'LXX', 'a declared default that is not servable here yields to the first servable');
+  });
+
   it('a language with NOTHING servable is DISPLAY-ONLY: the reader keeps its edition (W-11)', () => {
     // Howell ruled 2026-07-27 (superseding the earlier first-listed
     // fallback): a language whose every edition is held for licensing must
@@ -1139,5 +1161,33 @@ describe('CHECKED opens the shelf; the pass does not (W-239)', () => {
   it('checked without a chart is still refused', () => {
     const b = bridgeOver({ E: { language: 'greek', hasChart: false, proofread: false, checked: true } });
     assert.equal(b.isServableEdition('E'), false);
+  });
+});
+
+// O-217, 2026-10-23: a stranger's boot failed to initialise. The registry's
+// language list carries hollow tongues since O-208, so an English phone
+// matched a hollow English, chose a language and no edition, and the chain
+// built for no edition at all. The phone's tongue is matched against the
+// tongues with something OFFERED in them, and nothing else.
+describe('offeredLanguages (O-217) — the tongues a reader can be seated in', () => {
+  const bridgeOver = translations => createDimensionBridge({
+    store: createInteractionStore(), translationsMeta: { translations }
+  });
+  it('names only tongues with a servable edition, once each, in the editions\' order', () => {
+    const b = bridgeOver({
+      WLC: { language: 'hebrew', hasChart: true, checked: true, proofread: false },
+      LXX: { language: 'greek', hasChart: true, checked: false, proofread: false },
+      DRA: { language: 'english', hasChart: true, checked: false, proofread: false },
+      KJV: { language: 'english', hasChart: true, checked: true, proofread: false },
+      WLC2: { language: 'hebrew', hasChart: true, proofread: true }
+    });
+    assert.deepEqual(b.offeredLanguages(), ['hebrew', 'english']);
+  });
+  it('is empty when nothing is offered, and never names a hollow tongue', () => {
+    const b = bridgeOver({
+      DRA: { language: 'english', hasChart: true, checked: false, proofread: false }
+    });
+    assert.deepEqual(b.offeredLanguages(), []);
+    assert.deepEqual(b.offeredEditions(), []);
   });
 });

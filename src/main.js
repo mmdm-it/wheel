@@ -4,7 +4,7 @@ import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
-import { proofreadOverrideActive, declareVenues, isOnLan } from './core/lan-gate.js';
+import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
 // you see what's going on"). On the bench only — a private address and
@@ -138,7 +138,7 @@ if (typeof window !== 'undefined' && new URLSearchParams(window.location.search)
 import { beginScrubbedMigration, scrubDriver, getStackDepth, flushMigrationBarrier } from './view/migration-animation.js';
 import { mountMigrationLog, migrationLogWanted } from './diagnostics/migration-log.js';
 import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.js';
-import { bearingOf, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
+import { alongCorridor, bearingOf, corridorAxis, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
 import { createDepthDrill } from './core/depth-drill.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
@@ -387,6 +387,12 @@ const CHOOSERS = [
     items: () => dimensionBridge.languagesAvailable(),
     label: id => dimensionBridge.languageLabel(id), // each tongue names itself
     selected: () => dimensionBridge.getSelection().language,
+    // A tongue on the roadmap with nothing to read here (O-208) is drawn
+    // hollow like a placeholder seat — but NOT inert: the lens may rest on
+    // it, so its hollow shelf can be seen on the plane behind. Settling on
+    // it is display-only (the bridge dispatches nothing); the reader keeps
+    // reading what they had.
+    classFor: id => (dimensionBridge.isComingLanguage?.(id) ? 'is-coming' : ''),
     select: id => {
       const ok = dimensionBridge.setLanguage(id);
       window.__wheelTapTrace?.push({ ev: 'select-lang', id, ok: ok ? 1 : 0 });
@@ -471,10 +477,21 @@ const BASEMENT = {
 // Read off the primary's own labels rather than rebuilt, so the seat says
 // exactly what the reader saw, in whatever form that edition writes it.
 function arrivalLabel(cur) {
+  // THE MODEL'S WORDS FIRST (O-220, Howell 2026-10-24: a King James bookmark
+  // read "GENESIS 1:LUCAS"). This read the glass — the first lens label in
+  // the document — and the glass is not always the verse: a flight's clone,
+  // a stratum's label mid-turn, a label another tongue painted (O-94) can
+  // stand first for a frame, and the frame the reader drags the thumb down
+  // in is the one that gets kept. The adapter names a verse's parent from
+  // the item itself, exactly as it labels the greatest hits; the glass is
+  // read only where the model has no word.
+  const named = (cur?.name ?? cur?.label ?? '').toString().trim();
+  const modelParent = (() => { try { return (currentParentLabel?.(cur) ?? '').toString().trim(); } catch (_) { return ''; } })();
+  if (modelParent && named) return `${modelParent}:${named}`;
   const text = sel => (document.querySelector(`#app ${sel}`)?.textContent || '').trim();
-  const parent = text('.focus-ring-parent-label');
-  const verse = text('.focus-ring-magnifier-label:not(.focus-ring-parent-label)') || cur?.name || cur?.label || '';
-  return parent && verse ? `${parent}:${verse}` : (verse || parent || cur?.name || cur?.label || cur?.id || '');
+  const parent = modelParent || text('.focus-ring-parent-label');
+  const verse = named || text('.focus-ring-magnifier-label:not(.focus-ring-parent-label)');
+  return parent && verse ? `${parent}:${verse}` : (verse || parent || cur?.id || '');
 }
 // A BOOKMARK IS THE LEAF. A ring item's id is one edition's word for a seat
 // (`<bookId>_<chapter>_<verse>`, and a book id is per edition — O-92); the
@@ -1051,7 +1068,11 @@ function setPrimaryVisual(scale, blurPx, away = null) {
   //
   // They are listed rather than discovered, so a NEW overlay is a deliberate
   // addition to this line and not a thing that silently fails to travel.
-  for (const id of ['detail-panel', 'margin-panel', 'margin-marks']) {
+  // The chapter's mark joined the list on 2026-10-23 (O-125): it stayed sharp
+  // and full-size at the foot of the glass while the ring receded behind the
+  // strata — Howell: "it should recede and get blurry in proportion with
+  // the rest of the primary stratum nodes and labels."
+  for (const id of ['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark']) {
   const panel = document.getElementById(id);
   if (panel) {
     const cx = viewport.width / 2, cy = viewport.height / 2;
@@ -1061,7 +1082,12 @@ function setPrimaryVisual(scale, blurPx, away = null) {
     // pre-transform, so it's stable across successive scales. (Reading
     // getBoundingClientRect here slid the origin on a second recede, Howell
     // 2026-07-21.)
-    panel.style.transformOrigin = `${cx}px ${cy}px`;
+    // A panel at inset:0 has the viewport's centre at (cx, cy) of its own
+    // box; the mark at the foot of the glass does not, so the origin is
+    // taken from its LAYOUT position (offsetLeft/Top ignore transforms, so
+    // it is stable across successive recedes, unlike the client rect).
+    const ox = cx - (panel.offsetLeft || 0), oy = cy - (panel.offsetTop || 0);
+    panel.style.transformOrigin = `${ox}px ${oy}px`;
     panel.style.transform = `${slid ? `translate(${offsetX.toFixed(1)}px, ${offsetY.toFixed(1)}px) ` : ''}${scaled ? `scale(${scale})` : ''}`.trim();
     panel.style.filter = filter;
     panel.style.opacity = opacity < 0.999 ? String(opacity) : '';
@@ -1725,6 +1751,27 @@ function currentChapterId() {
   return chapterIdOf(currentApp?.nav?.getCurrent?.());
 }
 
+// THE MARK'S ELEMENT EXISTS BEFORE IT IS NEEDED (O-125, Howell 2026-10-23,
+// a photograph caught at boot: the mark sharp at the foot of the glass
+// while the whole plane stood receded behind the language ring). The
+// recede styles the overlays it finds on the page; a mark created on its
+// first showing, after the reveal had already receded the plane, was never
+// found and so never travelled. It is built hidden, the moment the volume
+// boots, and from then on every recede reaches it.
+function ensureIncompleteMarkEl() {
+  if (incompleteMarkEl || typeof document === 'undefined' || !document.body) return;
+  incompleteMarkEl = document.createElement('div');
+  incompleteMarkEl.id = 'incomplete-mark';
+  incompleteMarkEl.style.display = 'none';
+  // Two lines by design, not by wrapping (Howell 2026-10-23: "chapter" on
+  // the first line and "under review" beneath it — a wrap crowded the
+  // parent vessel's label).
+  // EDITION, because CHECKED lifts the mark for the whole edition at once
+  // (O-218): the words follow the grain the record carries.
+  ['edition', 'under review'].forEach(line => { const el = document.createElement('span'); el.className = 'incomplete-mark-line'; el.textContent = line; incompleteMarkEl.appendChild(el); });
+  document.body.appendChild(incompleteMarkEl);
+}
+
 function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
   let show = false;
@@ -1771,16 +1818,19 @@ function updateIncompleteMark() {
       : !editionFinished);
     }
   } catch (_) { show = false; }
+  // ONLY ONCE THE VERSE IS THERE (O-125, Howell 2026-10-23: "it should not
+  // appear during the drill in. We should not see the disclaimer until the
+  // detail sector has settled in and the verse appears"). The mark speaks
+  // only where a verse is on the glass (it said CHAPTER then, EDITION since
+  // O-218; the rule is the same): it
+  // follows the detail sector's own visibility, appearing with the text at
+  // the settle and going with it at the launch; above a leaf it says nothing.
+  show = show && detailSectorVisible;
+  ensureIncompleteMarkEl();
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
     document.documentElement.classList.remove('incomplete-mark-showing');
     return;
-  }
-  if (!incompleteMarkEl) {
-    incompleteMarkEl = document.createElement('div');
-    incompleteMarkEl.id = 'incomplete-mark';
-    incompleteMarkEl.textContent = 'NOT PROOFREAD';
-    document.body.appendChild(incompleteMarkEl);
   }
   incompleteMarkEl.style.display = '';
   // The mark took the copyright's band (O-103); the notice stands down while
@@ -2397,8 +2447,10 @@ function resolveVolumeId(volumeOverride = null, searchOverride = null) {
   const params = new URLSearchParams(searchOverride ?? window.location.search);
   const path = (window.location.pathname || '').toLowerCase();
   const paramVolume = params.get('volume');
+  // The address's own door (O-211) speaks before the path's word does: in
+  // Leicester Square the path is a bare slash and only the address can choose.
   return volumeConfigs[volumeOverride]?.id || volumeConfigs[paramVolume]?.id
-    || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
+    || volumeConfigs[doorVolume()]?.id || resolveVolumeFromPath(path) || DEFAULT_VOLUME;
 }
 
 async function loadConfig(volumeOverride = null, searchOverride = null) {
@@ -2461,6 +2513,12 @@ function applyTheme(volume) {
   const bg = active.bg;
   root.setAttribute('data-theme', theme);
   root.style.backgroundColor = bg;
+  // A standalone door is named for its volume (O-211): the page's own title
+  // is the old gateway's, and scripture that calls itself an exhaust
+  // manifold is the kind of seam the designer audience will notice first.
+  // A volume with no name of its own keeps the page's.
+  const title = volumeConfigs[volume]?.documentTitle;
+  if (title) document.title = title;
   // Set ALL theme CSS variables inline so the first render has correct
   // colors even before the async volume stylesheet finishes loading.
   root.style.setProperty('--theme-color-bg', bg);
@@ -2508,7 +2566,12 @@ function applyTheme(volume) {
   }
   const link = document.getElementById('volume-style');
   if (link) {
-    link.setAttribute('href', `./styles/themes/${theme}.css`);
+    // The engine's version rides the address (O-216): a phone that cached
+    // the old theme for a week under the bare name never asks for it
+    // again; a new address is a new file. The server now also tells
+    // browsers to revalidate stylesheets, as it does the bundle.
+    const stamp = typeof __WHEEL_VERSION__ === 'string' && __WHEEL_VERSION__ ? `?v=${encodeURIComponent(__WHEEL_VERSION__)}` : '';
+    link.setAttribute('href', `./styles/themes/${theme}.css${stamp}`);
   }
 }
 
@@ -2707,6 +2770,7 @@ window.addEventListener('detail-sector-change', (e) => {
       detailSectorVisible = false;
       updateDimensionButton();
       updateSearchButton();
+      updateIncompleteMark();   // the mark goes with the sector (O-125)
       return;
     }
   }
@@ -2727,6 +2791,7 @@ window.addEventListener('detail-sector-change', (e) => {
   detailSectorVisible = Boolean(visible);
   updateDimensionButton();
   updateSearchButton();
+  updateIncompleteMark();   // the mark follows the sector: with the verse, never before it (O-125)
 });
 
 let detailRenderSeq = 0; // stale-verify guard: each render invalidates pending checks
@@ -3194,6 +3259,15 @@ function wireInteractions(getApp) {
   const knob = (name, dflt) => { try { const v = parseFloat(new URLSearchParams(window.location.search).get(name)); return Number.isFinite(v) && v > 0 ? v : dflt; } catch (_) { return dflt; } };
   const TURN_WINDOW_PX = knob('turnwindow', DECIDE_PX);
   const TURN_CONE_DEG = knob('turncone', 45);
+  // THE CORRIDOR BETWEEN THE LENS AND THE PARENT BUTTON (O-209, Howell
+  // 2026-10-23): a stroke that begins on one control and heads at the
+  // other, within this cone, is a drill of one level — in from the lens,
+  // out from the parent — the thumb retracing the flight it has watched.
+  // The line runs close to the tangent, so the compass read it as a turn;
+  // the corridor is the two controls' own and the compass stands everywhere
+  // else. Its named casualty: a turn begun on either control toward the
+  // other, inside the cone. A knob for the glass: ?drillcorridor=20.
+  const CORRIDOR_CONE_DEG = knob('drillcorridor', 20);
   const turnGate = (st, x, y, tangent) => {
     (st.trail ||= [{ x: st.x0, y: st.y0 }]).push({ x, y });
     if (st.trail.length > 64) st.trail.splice(0, st.trail.length - 64);
@@ -3287,6 +3361,20 @@ function wireInteractions(getApp) {
       settle: go => sw.ctl.release(go, { onAbort: undo }),
     };
   };
+  // THE DRAWING HOLDS THE DRILL'S POINTER (O-210, 2026-10-23). A touch is
+  // captured by the element it lands on — the lens, the parent seat — and
+  // the flight a drill launches re-seats that element in the tree, which
+  // releases the capture; the orphan guard below (O-169) read the loss as a
+  // lost finger and settled the drill at depth 0 before the thumb had
+  // moved: the nodes vanished and nothing followed. Synthetic pointer
+  // events never capture, which is why the bench passed and the phone did
+  // not. So before a drill opens, the svg root — which no flight touches —
+  // takes the pointer, and a loss while it holds, or is about to hold, the
+  // pointer is no loss.
+  const holdDrillPointer = event => {
+    if (event?.pointerId == null) return;
+    try { svg.setPointerCapture(event.pointerId); pointerCaptured = true; } catch (_) { /* capture unsupported */ }
+  };
   // Begin a depth drill from a stroke that started at (x0, y0) and was decided
   // at `event`; false when there is nothing to drill that way — which the
   // compass rule reads as nothing at all.
@@ -3301,8 +3389,48 @@ function wireInteractions(getApp) {
       abort: h => h.abort(),
       settle: (h, go) => h.settle(go),
     });
+    holdDrillPointer(event);
     if (!drill.begin(kind === 'out' ? 1 : -1)) return false;
     freeDrill = { kind, drill, x: event.clientX, y: event.clientY, trail: [{ x: x0, y: y0 }, { x: event.clientX, y: event.clientY }], moves: [], pointerId: event?.pointerId ?? null };
+    return true;
+  };
+  // The two controls' centres on the glass, or null for either that is not
+  // there to be struck: no lens, or a parent seat with no name (the top has
+  // nothing above, O-190) or no size (hidden).
+  const controlCentres = () => {
+    const view = getApp()?.view;
+    const centre = el => { const r = el?.getBoundingClientRect?.(); return r && r.width > 0 ? { x: r.left + r.width / 2, y: r.top + r.height / 2 } : null; };
+    const lens = centre(view?.magnifierCircle);
+    const parent = String(view?.parentButtonOuterLabel?.textContent || '').trim() ? centre(view?.parentButtonOuter) : null;
+    return { lens, parent };
+  };
+  // Begin the corridor's drill (O-209): one level, in from the lens or out
+  // from the parent, scrubbed along the chord between the two controls —
+  // one notch is the chord's whole length, so arriving at the other control
+  // completes the level, and the thumb may come back over it as in any
+  // drill. No level beyond the one is ever opened, whichever way the thumb
+  // goes on. False when nothing lies that way.
+  const beginCorridorDrill = (kind, event, x0, y0, axis) => {
+    const app = getApp();
+    if (!app || !axis) return false;
+    let drill = null;
+    drill = createDepthDrill({
+      notchPx: axis.len,
+      launch: dir => {
+        const level = drill ? drill.level() : 0;
+        if (Math.abs(level + dir) > 1) return null;   // one level, and the way back over it
+        return launchSegment(dir > 0 ? 'out' : 'in', app, null);
+      },
+      commit: h => h.commit(),
+      abort: h => h.abort(),
+      settle: (h, go) => h.settle(go),
+    });
+    holdDrillPointer(event);
+    if (!drill.begin(kind === 'out' ? 1 : -1)) return false;
+    // The drill's line is the corridor, signed so that + is outward: toward
+    // the lens from the parent, away from the parent at the lens.
+    const s = kind === 'out' ? 1 : -1;
+    freeDrill = { kind, drill, axis: { ux: s * axis.ux, uy: s * axis.uy }, corridor: true, x: event.clientX, y: event.clientY, trail: [{ x: x0, y: y0 }, { x: event.clientX, y: event.clientY }], moves: [], pointerId: event?.pointerId ?? null };
     return true;
   };
   // THE FLICK (O-203): a release at DRILL_FLICK_MIN_VELOCITY or more along the
@@ -3333,7 +3461,9 @@ function wireInteractions(getApp) {
     fd.x = event.clientX; fd.y = event.clientY;
     fd.trail.push({ x: fd.x, y: fd.y });
     if (fd.trail.length > 64) fd.trail.splice(0, fd.trail.length - 64);
-    const radial = axesAt(fd.x, fd.y).out;
+    // The corridor's drill measures along the chord between the controls
+    // (O-209); every other drill along the radial line under the thumb.
+    const radial = fd.axis || axesAt(fd.x, fd.y).out;
     const gate = turnGateOpen(fd.trail, TURN_WINDOW_PX, TURN_CONE_DEG, radial);
     const px = gate.open ? dx * radial.ux + dy * radial.uy : 0;
     (fd.moves ||= []).push({ t: event.timeStamp ?? performance.now(), px });
@@ -3356,10 +3486,24 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       const press = controlPress;
       const bearing = bearingOf(vx, vy);
-      const kind = quadrantKind(vx, vy, axesAt(press.x0, press.y0));   // the nearer axis; nothing is dead (O-200)
-      logTap('control-stroke', { kind, bearing: Math.round(bearing) });
       // Whatever it decides, the press is no longer a tap on the lens.
       lensSwipeFiredAt = Date.now();
+      // THE CORRIDOR FIRST (O-209): from the lens straight at the parent
+      // button is the drill in, one level, whatever the compass would say.
+      // Nothing below (a leaf) leaves the stroke dead rather than a turn:
+      // the gesture keeps one meaning.
+      const centres = controlCentres();
+      const corridor = centres.parent && centres.lens ? corridorAxis(centres.lens, centres.parent) : null;
+      if (corridor && alongCorridor(vx, vy, corridor, CORRIDOR_CONE_DEG)) {
+        logTap('control-stroke', { kind: 'corridor-in', bearing: Math.round(bearing) });
+        controlPress = null;
+        if (beginCorridorDrill('in', event, press.x0, press.y0, corridor)) { noteSwipe(bearing, 'in', press.x0, press.y0, ' lens, corridor'); drillMove(freeDrill, event); return; }
+        noteSwipe(bearing, 'in', press.x0, press.y0, ' lens, corridor, nothing there');
+        press.dead = true; controlPress = press;
+        return;
+      }
+      const kind = quadrantKind(vx, vy, axesAt(press.x0, press.y0));   // the nearer axis; nothing is dead (O-200)
+      logTap('control-stroke', { kind, bearing: Math.round(bearing) });
       if (kind === 'cw' || kind === 'ccw') {
         noteSwipe(bearing, kind, press.x0, press.y0, ' lens');
         controlPress = null;
@@ -3435,6 +3579,22 @@ function wireInteractions(getApp) {
       if (Math.hypot(vx, vy) < DECIDE_PX) return;
       stroke.decided = true;
       const bearing = bearingOf(vx, vy);
+      // THE CORRIDOR FIRST (O-209): a stroke that began on the parent seat
+      // and heads straight at the lens is the drill out, one level — the
+      // flight retraced the other way. The seat is otherwise open ground
+      // (O-191) and the compass decides as before.
+      if (stroke.fromParent) {
+        const centres = controlCentres();
+        const corridor = centres.parent && centres.lens ? corridorAxis(centres.parent, centres.lens) : null;
+        if (corridor && alongCorridor(vx, vy, corridor, CORRIDOR_CONE_DEG)) {
+          logTap('stroke-decided', { kind: 'corridor-out', bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy) });
+          pendingTapNode = null; pendingAdvanceTap = false; pendingStarTap = null;
+          if (beginCorridorDrill('out', event, stroke.x0, stroke.y0, corridor)) { noteSwipe(bearing, 'out', stroke.x0, stroke.y0, ' parent, corridor'); isDragging = false; drillMove(freeDrill, event); return; }
+          noteSwipe(bearing, 'out', stroke.x0, stroke.y0, ' parent, corridor, nothing there');
+          stroke.dead = true;
+          return;
+        }
+      }
       const kind = quadrantKind(vx, vy, axesAt(stroke.x0, stroke.y0));   // the nearer axis; nothing is dead (O-200)
       logTap('stroke-decided', { kind, bearing: Math.round(bearing), vx: Math.round(vx), vy: Math.round(vy), star: stroke.star ?? null });
       if (kind === 'cw' || kind === 'ccw') { noteSwipe(bearing, kind, stroke.x0, stroke.y0); app.choreographer.rotate(stroke.pendingDelta); return; }
@@ -3593,7 +3753,11 @@ function wireInteractions(getApp) {
     recentMoves = [];
     gestureTravelPx = 0;
     pointerCaptured = false;
-    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false, star: starIdx };
+    // A press on the parent seat is open ground (O-191) — and remembered,
+    // because a stroke from it straight at the lens is the corridor's drill
+    // out (O-209). The world glyph is not the parent seat.
+    const fromParent = Boolean(onParentSeat) && !(event.target?.closest?.('.world-glyph'));
+    stroke = { x0: event.clientX, y0: event.clientY, decided: false, pendingDelta: 0, dead: false, star: starIdx, fromParent };
     trace.downTarget = event.target?.getAttribute?.('class') || event.target?.tagName || '?';
     trace.moves = 0; trace.endedBy = ''; trace.travel = 0; trace.captured = false; trace.cancels = 0;
     publishTrace();
@@ -3637,6 +3801,8 @@ function wireInteractions(getApp) {
     }, true));
     document.addEventListener('visibilitychange', () => { if (document.hidden) settleOrphanDrill('hidden'); });
     svg.addEventListener('lostpointercapture', event => {
+      // Handed from a control to the drawing itself (O-210): not lost.
+      try { if (svg.hasPointerCapture?.(event.pointerId)) return; } catch (_) { /* unsupported: judge by the loss alone */ }
       if (freeDrill && (freeDrill.pointerId == null || event.pointerId === freeDrill.pointerId)) settleOrphanDrill('lostpointercapture');
     });
   }
@@ -3776,6 +3942,10 @@ async function showVersion() {
 }
 
 let currentApp = null;
+// The running volume's own naming of a verse's parent (the adapter's
+// getParentLabel), kept beside the app so the basement can name an arrival
+// from the MODEL rather than off the glass (O-220).
+let currentParentLabel = null;
 // The booted volume's manifest, kept module-wide for the same reason
 // `currentApp` is: the section label (H-26) is updated from a nav callback
 // that has no path back into bootVolume's scope, and it needs the wall
@@ -3997,12 +4167,27 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // their phone choose — the first one the volume offers. After this the
     // reader's own choice is remembered and wins.
     const named = new URLSearchParams(window.location.search).get('edition');
-    const offered = (supplemental?.languagesMeta?.languages || []).map(l => l?.id).filter(Boolean);
+    // ONLY A TONGUE WITH SOMETHING TO READ (O-217): the registry's list has
+    // held hollow tongues since O-208, and a phone's English matched against
+    // a hollow English chose a language and no edition — the boot then went
+    // on with no edition at all (below).
+    const offered = dimensionBridge.offeredLanguages();
     const byTongue = (!remembered && !named) ? firstOfferedLanguage(phoneLanguages(), offered) : null;
     if (!(remembered && dimensionBridge.setTranslation(remembered))
-        && !(byTongue && dimensionBridge.setLanguage(byTongue))
-        && options.translation) {
-      dimensionBridge.setTranslation(options.translation);
+        && !(byTongue && dimensionBridge.setLanguage(byTongue) && dimensionStore.getState().edition)
+        && !(options.translation && dimensionBridge.setTranslation(options.translation))) {
+      // THE FIRST EDITION OFFERED (O-217, 2026-10-23). The pinned default
+      // was refused because it is not servable HERE — a stranger's view
+      // under the CHECKED gate, where only the Hebrew stood — and nothing
+      // else chose, so the boot went on with no edition at all, the chain
+      // found no verse to seat, and the app failed to initialise: an empty
+      // ring, no message, for exactly the reader a letter would send here.
+      // A volume with anything offered opens in the first thing it offers;
+      // the first visit's verse then resolves for that edition (the psalm
+      // where there is no New Testament, O-179). A volume with nothing
+      // offered is the withheld state below, unchanged.
+      const first = dimensionBridge.offeredEditions()[0];
+      if (first) dimensionBridge.setTranslation(first);
     }
   }
   refreshDimensionButton(); // show the globe only where a dimension exists
@@ -4283,6 +4468,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const parentHandler = params => (handlerSet.parentHandler ? handlerSet.parentHandler({ ...params, app }) : false);
   const childrenHandler = params => (handlerSet.childrenHandler ? handlerSet.childrenHandler({ ...params, app }) : false);
   const adapterGetParentLabel = typeof handlerSet.getParentLabel === 'function' ? handlerSet.getParentLabel : null;
+  currentParentLabel = adapterGetParentLabel;
   // The volume declares what it appended to a parent label (a chapter
   // numeral), so the label can be seated by its NAME and the suffix hang
   // clear of the vessel. Volumes that append nothing need not define it.
@@ -4445,6 +4631,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   });
   currentApp = app;
   currentManifest = manifest;
+  ensureIncompleteMarkEl();   // before the reveal recedes the plane (O-125)
   currentDetailRerender = part => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
     { translation: activeTranslation(), part });
   // THE MARK FOLLOWS THE READER (H-25). Before this it was re-evaluated on an
@@ -4696,7 +4883,28 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   previewPrimary = preview => {
     if (!preview) return;
     const edition = preview.edition;
-    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition)) return;
+    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition)) {
+      // NOTHING TO PREVIEW, SO THE COMMITTED READING COMES BACK (O-208,
+      // Howell's photograph the evening the hollow tongues first stood on
+      // the ring: the Greek New Testament's books wearing their raw ids
+      // under THE NEW TESTAMENT in English). The lens had passed English —
+      // the names and the text went English — and then rested on a hollow
+      // Hebrew seat, which this returned from without undoing that: the
+      // English kit stayed over the Greek edition's book ids, and no name
+      // matched. Before the hollow tongues no language with nothing to read
+      // here could be under the lens, so the early return never had a
+      // stale preview to clear. Now it clears it: names, pyramid and text
+      // return to the committed edition, exactly as the settle would leave
+      // them. Nothing to clear, nothing repainted.
+      if (!options.previewEdition) return;
+      options.previewEdition = null;
+      refreshNamesMap();
+      if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
+      if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
+      renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+        { translation: activeTranslation(), part: 0 });
+      return;
+    }
     // A preview of an edition still arriving (O-175) waits for it, then
     // shows it — unless the finger has moved on to another by then.
     const vol = currentManifest?.__wallVolume;

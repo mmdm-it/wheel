@@ -1002,33 +1002,32 @@ svg :focus-visible {
    mistaken for a reader-facing notice; the doctrine forbids asterisks in the
    product. */
 #incomplete-mark {
+  /* THE MARK GOES SMALL, AND TO THE BOTTOM (O-125, Howell 2026-09-02:
+     "instead of a big red stripe across the top I'd rather see something
+     small at the bottom. Perhaps a simple UR meaning under review"; settled
+     2026-10-23: "a more subtle under review down in the lower right near the
+     notes section", and the same evening, with a green mark on a photograph,
+     the LOWER LEFT corner, under the parent vessel). The red band across the
+     top was the editing suite's mark; this is the reader's. It wears the
+     margin's own ink and type, sits at the foot of the glass on the left,
+     and covers nothing — the copyright line keeps its place. */
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 400;   /* above the copyright strip's 300 */
-  padding: calc(6px * var(--iframe-scale, 1))
-           calc(10px * var(--iframe-scale, 1))
-           calc(6px * var(--iframe-scale, 1))
-           calc(10px * var(--iframe-scale, 1));
-  /* SEMI-TRANSPARENT, ON PURPOSE, AND THIS REVERSES AN EARLIER FIX (Howell,
-     2026-08-29: "make the NOT PROOFREAD banner semi-transparent so we can
-     discuss this further"). It was made solid because at 0.94 the copyright
-     notice read faintly through it and looked like a defect. It is now the
-     opposite of a defect: the sector raises its text to the notice's measured
-     edge (O-115), and the notice is invisible on the LAN build precisely
-     where the geometry needs judging — the mark is SHORTER than the furniture
-     it covers, so the air above the text is the dev tool's, not the reader's.
-     Seeing both at once is the only way to discuss where the text may sit. */
-  background: rgba(120, 20, 20, 0.55);
-  color: #fff;
-  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: calc(11px * var(--iframe-scale, 1));
-  text-align: center;
-  letter-spacing: 0.12em;
+  left: calc(14px * var(--iframe-scale, 1));
+  bottom: calc(4px * var(--iframe-scale, 1));   /* as low as the glass allows (Howell 2026-10-23) */
+  z-index: 401;   /* with the margin's marks, above the sector */
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: calc(12px * var(--iframe-scale, 1));
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  color: var(--color-margin-note, rgba(30, 22, 16, 0.82));
+  opacity: 0.85;
+  /* "chapter" over "under review", two lines by design (Howell 2026-10-23),
+     upright, never italic. */
   white-space: nowrap;
+  text-align: left;
   pointer-events: none;
 }
+.incomplete-mark-line { display: block; }
 
 /* THE NOTICE NO LONGER STANDS DOWN BENEATH IT (Howell, 2026-08-29). It used
    to: an opaque mark covered the notice's FIRST line and nothing else — the
@@ -1205,8 +1204,6 @@ svg :focus-visible {
 
 .margin-marks.margin-marks--visible { opacity: 1; }
 
-/* Over the proofread mark's red band, the same ink would vanish. */
-:root.incomplete-mark-showing .margin-marks { color: rgba(255, 255, 255, 0.92); }
 
 /* The marks are sigla and nothing else. They were briefly given their names
    underneath, and Howell's answer was that he still could not see the legend

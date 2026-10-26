@@ -83,6 +83,12 @@ const el = (tag, attrs = {}, parent = null) => {
   return e;
 };
 
+// The sheet's stacking level: above every overlay the app owns (the mark
+// and the margin's marks sit at 401, the sector below them), below the
+// desktop gate (99999), the splash's input blocker (100000) and the
+// diagnostic HUDs (9999 and up).
+export const BOOT_SHEET_Z = 1000;
+
 export function beginBootOverture({ viewport = null, splash = null } = {}) {
   if (typeof document === 'undefined') return { splash() {}, ready() {}, abort() {} };
   const vp = viewport || getViewportInfo(window.innerWidth, window.innerHeight);
@@ -91,8 +97,17 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   const ink = (cs.getPropertyValue('--color-text') || '').trim() || '#111';
 
   // ── THE SHEET: the ground, over everything, with the card on it ─────────
+  // OVER EVERYTHING THE READER CAN SEE (O-221, Howell 2026-10-25: "the
+  // disclaimer does appear very briefly on the splash page at boot"). The
+  // sheet stood at 340, above the strata and the ring, and that was over
+  // everything when it was drawn; the edition's mark and the margin's marks
+  // were then placed at 401 to clear the detail sector, and a boot that
+  // lands on a verse behind the card painted them THROUGH it. The sheet
+  // takes the top of the reader's own stack — under the desktop gate and
+  // the input blocker, under the diagnostic overlays, over every overlay
+  // the app owns. BOOT_SHEET_Z is exported so a test can hold the order.
   const svg = el('svg', { id: 'boot-overture', viewBox: `0 0 ${vp.width} ${vp.height}`, preserveAspectRatio: 'none', 'aria-hidden': 'true' });
-  svg.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:340;pointer-events:auto;';
+  svg.style.cssText = `position:fixed;inset:0;width:100%;height:100%;z-index:${BOOT_SHEET_Z};pointer-events:auto;`;
   el('rect', { width: vp.width, height: vp.height, fill: ground }, svg);
   document.body.appendChild(svg);
   mark('sheet-up');

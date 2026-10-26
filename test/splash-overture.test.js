@@ -66,3 +66,26 @@ describe('splash overture — data-declared, volume-agnostic', () => {
     assert.ok(names.includes(startup.initial_magnified_item), 'home item is in the chain');
   });
 });
+
+// THE SHEET IS OVER EVERYTHING THE READER CAN SEE (O-221). The card stood at
+// 340 and the edition's mark was later placed at 401 to clear the detail
+// sector, so a boot that landed on a verse behind the card painted "edition
+// under review" through it (Howell 2026-10-25: "the disclaimer does appear
+// very briefly on the splash page at boot"). The sheet's level is held above
+// every stacking level the stylesheet gives the reader's own overlays, and
+// below the gates and diagnostic HUDs, which belong above it.
+describe('the overture sheet covers every overlay the app owns', () => {
+  it('BOOT_SHEET_Z is above each reader-facing z-index in base.css and below the gates', async () => {
+    const { BOOT_SHEET_Z } = await import('../src/view/boot-overture.js');
+    const fs = await import('node:fs');
+    const css = fs.readFileSync(new URL('../styles/base.css', import.meta.url), 'utf8');
+    const levels = [...css.matchAll(/z-index:\s*(-?\d+)/g)].map(m => Number(m[1]));
+    assert.ok(levels.length > 5, 'the stylesheet declares stacking levels');
+    const GATE = 9999; // the diagnostic HUDs and the desktop gate start here
+    const reader = levels.filter(z => z < GATE);
+    const above = levels.filter(z => z >= GATE);
+    assert.ok(reader.includes(401), 'the mark and the margin marks sit at 401');
+    assert.ok(BOOT_SHEET_Z > Math.max(...reader), `sheet ${BOOT_SHEET_Z} over the reader's overlays (max ${Math.max(...reader)})`);
+    assert.ok(BOOT_SHEET_Z < Math.min(...above), 'sheet under the gates and HUDs');
+  });
+});

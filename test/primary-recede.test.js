@@ -53,6 +53,10 @@ describe('the primary plane recedes as one (W-179)', () => {
     assert.ok(ids.includes('detail-panel'), 'the verse panel does not recede');
     assert.ok(ids.includes('margin-panel'), 'the margin does not recede');
     assert.ok(ids.includes('margin-marks'), 'the marks beside the verse do not recede');
+    // O-125, Howell 2026-10-23: the chapter's mark "should recede and get
+    // blurry in proportion with the rest of the primary stratum nodes and
+    // labels" — it had stayed sharp at the foot of the glass under the strata.
+    assert.ok(ids.includes('incomplete-mark'), 'the chapter mark does not recede');
   });
 
   it('LEAVES NO FIXED OVERLAY BEHIND — the check that catches the next one', () => {
@@ -67,9 +71,9 @@ describe('the primary plane recedes as one (W-179)', () => {
       // from the reader, and the frame is where the reader is standing.
       'strata-layer',        // what the primary is receding BEHIND
       'copyright-notice',    // a statement about the app, not about the text
-      // (`incomplete-mark` is built in JS rather than declared here, and is
-      // frame too: a warning about the edition, which must not soften just
-      // because the reader has stepped into a dimension.)
+      // (`incomplete-mark` is built in JS rather than declared here. It was
+      // once called frame; since O-125 it is the chapter's own mark and
+      // travels with the plane — see the list above.)
     ]);
     const moving = new Set(recededIds() || []);
     const stranded = overlayIds().filter(id => !moving.has(id) && !STAYS_PUT.has(id));
@@ -83,7 +87,12 @@ describe('the primary plane recedes as one (W-179)', () => {
     // its place relative to the magnifier — which is the half of Howell's
     // instruction that is easy to miss: "while maintaining their positions
     // relative to the focus ring and magnifier".
-    assert.match(main, /transformOrigin = `\$\{cx\}px \$\{cy\}px`/);
+    // The origin is the viewport centre expressed in each overlay's OWN box:
+    // for a panel at inset:0 that is (cx, cy) itself; for the chapter mark at
+    // the foot of the glass it is offset by the mark's layout position, read
+    // from offsetLeft/Top so it is stable across successive recedes.
+    assert.match(main, /const ox = cx - \(panel\.offsetLeft \|\| 0\), oy = cy - \(panel\.offsetTop \|\| 0\)/);
+    assert.match(main, /transformOrigin = `\$\{ox\}px \$\{oy\}px`/);
     assert.match(main, /const cx = viewport\.width \/ 2, cy = viewport\.height \/ 2/);
   });
 });

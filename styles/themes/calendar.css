@@ -1,11 +1,25 @@
 :root[data-theme="calendar"] {
   --theme-color-bg: #0c2c44;
-  --theme-color-node: #443300;
+  --theme-color-node: #143650; /* the band a step darker — O-212 */
   --theme-color-text: #f5f7fb;
   --theme-color-band: #194567;
   --theme-color-accent: #f5f7fb;
-  --theme-color-magnifier-stroke: #f5f7fb;
+  --theme-color-magnifier-stroke: none; /* no strokes in the calendar — O-214 */
   --theme-font-body: 'Montserrat', sans-serif;
   --theme-font-label: 'Montserrat', sans-serif;
   --theme-font-magnifier: 'Montserrat', sans-serif;
 }
+
+/* THE CALENDAR'S SKY IS THE JULY SKY (O-216, Howell 2026-10-23: "I do want
+   the July day colors back on the calendar"). The days are translucent
+   black over the blue — darker than the ground, a faint dark rim — as the
+   engine's generic sky drew them until the one-colour rulings of
+   September (O-164, O-166, O-178), which were made looking at the Bible.
+   The Bible keeps one colour; this volume keeps its own sky. */
+:root[data-theme="calendar"] .child-pyramid-node,
+:root[data-theme="calendar"] .child-pyramid-node:hover {
+  fill: rgba(0, 0, 0, 0.14);
+  stroke: rgba(0, 0, 0, 0.32);
+  stroke-width: 1px;
+}
+

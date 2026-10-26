@@ -928,7 +928,22 @@ export function isBookConfirmed(volume, edition, bookId) {
 // A chapter in hand asks about the chapter; a book with no chapter in hand
 // asks about the book; nothing in hand asks about the edition. The host
 // supplies what it has and this picks the finest.
+// CHECKED TAKES THE MARK OFF (O-218, Howell 2026-10-23), reversing the one
+// clause of W-239 that said only PROOFREAD could: the verse-by-verse pass
+// he costed at eleven hundred hours an edition would never have cleared
+// the Hebrew, whose 39 books he checked by eye in September and which is
+// the Leningrad Codex as an established digital text, not our OCR. The
+// mark now means "not yet checked by us". The build carries CHECKED at
+// edition grain only — every charted book standing in the record — so the
+// mark reads EDITION, and lifts for the whole edition at once; a per-book
+// rung comes when the first typed edition is half checked. PROOFREAD stays
+// a rung of the record for the OCR-born editions, read beneath this.
+export function isEditionChecked(volume, edition) {
+  const declared = (volume?.editions || []).find(e => e?.code === edition);
+  return declared?.checked === true;
+}
 export function isNodeConfirmed(volume, edition, { bookId = null, chapterId = null } = {}) {
+  if (isEditionChecked(volume, edition)) return true;
   if (chapterId) return isChapterConfirmed(volume, edition, bookId, chapterId);
   if (bookId) return isBookConfirmed(volume, edition, bookId);
   return isEditionFullyConfirmed(volume, edition);

@@ -1,6 +1,6 @@
 import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
-import { bearingOf, bearingOfUnit, localAxes, quadrantKind, axisOf, recentDirection, withinCone, turnGateOpen } from '../src/core/stroke.js';
+import { bearingOf, bearingOfUnit, localAxes, quadrantKind, axisOf, recentDirection, withinCone, turnGateOpen, corridorAxis, alongCorridor } from '../src/core/stroke.js';
 
 // The Moto G's page area: 347 × 633 css px; the ring's centre by the v2
 // formula sits at (751, 0), just off the right edge at the top.
@@ -128,5 +128,40 @@ describe('the gate shuts the moment the thumb turns across the ring', () => {
   test('turning back along the tangent reopens it once the window has turned', () => {
     assert.equal(turnGateOpen(path([0, 0], [10, 0], [20, 0], [20, 10], [20, 20], [15, 20]), 8, 45, axis).open, false, 'window still across');
     assert.equal(turnGateOpen(path([0, 0], [10, 0], [20, 0], [20, 10], [20, 20], [15, 20], [10, 20]), 8, 45, axis).open, true, 'window now back along');
+  });
+});
+
+// THE CORRIDOR BETWEEN THE TWO CONTROLS (O-209): a stroke that begins on the
+// lens and heads at the parent button is a drill in, one level; from the
+// parent button at the lens, a drill out. The compass would read the same
+// line as a turn, because the parent sits along the ring from the lens
+// rather than on its radial line.
+describe('the corridor between the lens and the parent button (O-209)', () => {
+  // Howell's photograph of 2026-10-23: the lens at (108, 930), the parent
+  // seat at (345, 1070), on a 720-px-wide glass with the hub off to the
+  // upper right.
+  const LENS = { x: 108, y: 930 }, PARENT = { x: 345, y: 1070 };
+  const hub = { x: 1500, y: 0 };
+  test('the corridor is the chord between the controls, and it is not a compass axis', () => {
+    const c = corridorAxis(LENS, PARENT);
+    assert.ok(near(bearingOf(c.ux, c.uy), 120, 1), `bearing ${bearingOf(c.ux, c.uy)}`);
+    assert.ok(Math.abs(c.len - 275) < 1, `length ${c.len}`);
+    const axes = localAxes(LENS.x, LENS.y, hub.x, hub.y);
+    assert.equal(quadrantKind(PARENT.x - LENS.x, PARENT.y - LENS.y, axes), 'ccw', 'the compass reads the same line as a turn');
+    assert.equal(corridorAxis(LENS, LENS), null);
+  });
+  test('a stroke from the lens at the parent is along the corridor; one across it is not', () => {
+    const c = corridorAxis(LENS, PARENT);
+    assert.equal(alongCorridor(237, 140, c, 20), true, 'straight at the parent');
+    assert.equal(alongCorridor(200, 180, c, 20), true, 'a little off, inside the cone');
+    assert.equal(alongCorridor(100, 220, c, 20), false, 'well off, outside the cone');
+    assert.equal(alongCorridor(-237, -140, c, 20), false, 'away from the parent is not the corridor');
+    assert.equal(alongCorridor(0, 0, c, 20), false);
+    assert.equal(alongCorridor(10, 10, null, 20), false, 'no parent, no corridor');
+  });
+  test('the way back is the same corridor reversed: from the parent at the lens', () => {
+    const back = corridorAxis(PARENT, LENS);
+    assert.equal(alongCorridor(-237, -140, back, 20), true);
+    assert.equal(alongCorridor(237, 140, back, 20), false);
   });
 });

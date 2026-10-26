@@ -5,7 +5,7 @@
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
-import { proofreadDeepLink } from './core/lan-gate.js';
+import { proofreadDeepLink, proofreadOverrideActive } from './core/lan-gate.js';
 import { recall } from './core/session-memory.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
@@ -94,18 +94,40 @@ const volumeConfigs = {
       // itself settles on below, so the edition shown is the edition waited
       // for. Everything else is fetched behind it.
       const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
-      const named = proofreadDeepLink(['book', 'chapter', 'verse']) ? params.get('edition') : null;
+      // AN EDITION NAMED ON THE ADDRESS IS WAITED FOR AND SEATED (O-219): it
+      // used to count only inside a proofread deep link, while the boot's
+      // seeding read it unconditionally — `?edition=X` alone waited for the
+      // tongue's default and seated the volume's, and the chain had no chart.
+      const named = params.get('edition');
       const chooseFirst = volumeJson => {
         const cfg = volumeJson?.display_config || {};
-        const offered = new Set((volumeJson?.editions || []).map(e => e.code));
+        // ONLY AN EDITION THE READER MAY BE SHOWN HERE (O-217, 2026-10-23).
+        // This set was every edition the volume enumerates, so on an English
+        // phone a stranger's boot waited for the Douay — which the CHECKED
+        // gate then refused — and seated the Hebrew, whose charts had not
+        // arrived: no seat, no items, the app failed to initialise. The gate
+        // is read here exactly as the dimension bridge reads it (isServable:
+        // proofread, else CHECKED where the build says, else a confirmed
+        // unit; the LAN's override lifts it), so the edition waited for is
+        // the edition shown. Keep the two in step.
+        const override = proofreadOverrideActive();
+        const servable = e => Boolean(e) && (override || e.proofread === true
+          || (e.checked !== undefined ? e.checked === true : (Array.isArray(e.proofreadUnits) && e.proofreadUnits.length > 0)));
+        const enumerated = volumeJson?.editions || [];
+        const offered = new Set(enumerated.filter(servable).map(e => e.code));
         const remembered = recall('bible').edition;
         if (remembered && offered.has(remembered)) return remembered;
         if (named && offered.has(named)) return named;
-        const lang = firstOfferedLanguage(phoneLanguages(), Object.keys(cfg.editions?.available || {}));
-        const byTongue = lang ? cfg.editions?.default?.[lang] : null;
+        const defaults = cfg.editions?.default || {};
+        const tonguesOffered = Object.keys(defaults).filter(l => offered.has(defaults[l]));
+        const lang = firstOfferedLanguage(phoneLanguages(), tonguesOffered);
+        const byTongue = lang ? defaults[lang] : null;
         if (byTongue && offered.has(byTongue)) return byTongue;
-        const dflt = cfg.editions?.default?.[cfg.languages?.default];
-        return dflt && offered.has(dflt) ? dflt : null;
+        const dflt = defaults[cfg.languages?.default];
+        if (dflt && offered.has(dflt)) return dflt;
+        // The first thing offered, in the volume's own order — the boot
+        // seats the same (main.js, the same number).
+        return enumerated.find(e => offered.has(e.code))?.code || null;
       };
       const volume = await loadBibleVolume({
         base: BIBLE_VOLUME_BASE,
@@ -155,6 +177,7 @@ const volumeConfigs = {
       return manifest;
     },
     theme: 'bible',
+    documentTitle: 'Biblia Catholica',   // the tab's name at a standalone door (O-211)
     palette: {
       bg: '#d4a574',
       // O-166's shades, declared (O-178): every node the lighter brown, the
@@ -217,6 +240,12 @@ const volumeConfigs = {
         // with placeholder names between the seated editions. The volume's
         // word; the `_` keys are its notes to itself.
         coming: Object.fromEntries(Object.entries(volume.displayConfig?.editions?.coming || {}).filter(([k, v]) => !k.startsWith('_') && Array.isArray(v))),
+        // THE DECLARED DEFAULT PER TONGUE (O-219): the edition a tongue opens
+        // on when it holds more than one — the Douay for English beside the
+        // King James, the Patriarchal for Greek beside the Septuagint. The
+        // bridge reads it where it commits a language; the boot's waited-for
+        // edition (chooseFirst, above) reads the same key. Keep the two in step.
+        defaults: Object.fromEntries(Object.entries(volume.displayConfig?.editions?.default || {}).filter(([k]) => !k.startsWith('_'))),
         translations: Object.fromEntries(volume.editions.map(edition => [edition.code, {
           ...edition,
           name: edition.name || edition.code,
@@ -258,8 +287,15 @@ const volumeConfigs = {
       // QUOTATION (H-2): every autonym here is the volume's own word, and a
       // language the volume does not name gets no invented one.
       const langCfg = root?.display_config?.languages || {};
+      // EVERY DECLARED TONGUE IS ON THE RING (O-208, Howell 2026-10-23, the
+      // hour the shelf became scrutatio.it's: "I expected to see all of the
+      // editions"). The registry is the shelf's tongues in the shelf's own
+      // order — the acts, oldest first — with any served tongue the shelf
+      // forgot appended. A tongue still needs the volume's own word for its
+      // name; one without a label is not invented.
+      const shelfTongues = Object.keys(root?.display_config?.editions?.coming || {}).filter(id => !id.startsWith('_'));
       const languagesMeta = {
-        languages: (langCfg.available || [])
+        languages: [...new Set([...shelfTongues, ...(langCfg.available || [])])]
           .filter(id => langCfg.labels?.[id])
           .map(id => ({ id, autonym: langCfg.labels[id] }))
       };
@@ -316,8 +352,11 @@ const volumeConfigs = {
           // override the address may simply say which edition it wants.
           // Gated by `proofreadDeepLink`, so a public URL naming an edition
           // is ignored exactly as before.
+          // O-219: an edition named on the address is honoured whenever it
+          // is named, as chooseFirst (above) honours it; a position is not
+          // required. An unservable name is refused downstream (setTranslation).
           const named = params.get('edition');
-          if (named && proofreadDeepLink(POSITION_KEYS)) return named;
+          if (named) return named;
           const editions = root?.display_config?.editions || {};
           const language = root?.display_config?.languages?.default;
           return editions.default?.[language]
@@ -431,13 +470,25 @@ const volumeConfigs = {
     paths: ['/calendar'],
     manifestPath: './data/calendar/manifest.json',
     theme: 'calendar',
+    documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
     palette: {
       bg: '#0c2c44',
-      node: '#443300',
+      // The band a step darker (#194567 × 0.78), the shade the calendar's
+      // nodes wore when they were DERIVED from the band (O-164/O-166). When
+      // O-178 made every volume DECLARE its node colour, the Bible's palette
+      // was rewritten to the approved shades and this one was not, so the
+      // nodes fell back to the old radial brown. Howell, 2026-10-23, two
+      // photographs: "The dark blue for the nodes was correct. The brown for
+      // the nodes is incorrect." (O-212)
+      node: '#143650',
       text: '#f5f7fb',
       band: '#194567',
       accent: '#f5f7fb',
-      magnifierStroke: '#f5f7fb'
+      // No strokes in the calendar (O-214, Howell 2026-10-23, against the
+      // July bundle: "there's no stroke. I would like to go with that and
+      // not have any strokes in the calendar"). The lens's always-drawn edge
+      // (O-84) serves the Bible's eclipse; here the vessels are fill alone.
+      magnifierStroke: 'none'
     },
     centerLabel: true,
     stampLetter: 'C', // the factory stamp's data line (W-7)
@@ -632,14 +683,12 @@ function makeCalendarLabelFormatter({ locale }) {
   );
   return ({ item, context }) => {
     if (!item) return '';
-    // Month items: nodes carry the month name alone; the magnifier appends
-    // the year — on the continuous months chain every January looks alike.
-    if (item.level === 'month') {
-      const name = item?.name || item?.id || '';
-      const y = Number.isFinite(item?.yearNumber) ? item.yearNumber : Number.parseInt(item?.parentId, 10);
-      if (context === 'magnifier' && Number.isFinite(y)) return `${name} ${formatYear(y)}`;
-      return name;
-    }
+    // Month items carry the month name alone, in the lens too (O-215,
+    // Howell 2026-10-23, against the July bundle: "the screening room
+    // version has the year suffix in the magnifier, whereas the archive
+    // version does not"). The year stands in the parent vessel directly
+    // below the lens, so the suffix said twice what the glass already says.
+    if (item.level === 'month') return item?.name || item?.id || '';
     // Only year items get era formatting — composed ids ("2026:jan") would
     // otherwise fool the parseInt fallback.
     if (item.level && item.level !== 'year') return item?.name || item?.id || '';
@@ -851,5 +900,18 @@ export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE
 // strangers, under the CHECKED gate. This is the one file that may name a
 // site (H1); main.js declares it to lan-gate.
 export const VENUES = {
-  screeningRoom: { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/' }
+  screeningRoom: { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/' },
+  // THE DOORS (O-211, Howell 2026-10-23): an address that boots one volume,
+  // standing alone — no gateway, no catalog in front of it. Two doors in the
+  // room now; in Leicester Square each volume has a domain of its own, where
+  // the path is a bare slash and only the address can choose, so the choice
+  // is made here by address rather than by a word in the path. The longest
+  // matching prefix wins. bibliacatholica.com is registered, hosting
+  // pending; the root of mmdm.it joins the table the day the calendar goes
+  // up there and the archival catalog comes down.
+  doors: [
+    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/bible/', volume: 'bible' },
+    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/calendar/', volume: 'calendar' },
+    { hosts: ['bibliacatholica.com', 'www.bibliacatholica.com'], pathPrefix: '/', volume: 'bible' }
+  ]
 };
