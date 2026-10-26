@@ -581,6 +581,16 @@ function toggleKeep(keyOrId) {
 // state. Preview always ENDS in a commit (the springback settles the nearest
 // node), so what the reader watched is what they get.
 let strataPreview = null;                  // { language, edition } | null
+// THE OVERTURE'S TURNS LEAVE THE TEXT ALONE (O-225). A finger's turn
+// previews the verse behind the glass in each passing edition; the film's
+// turn passes five tongues in two and a half seconds, and each first paint
+// of the text in a new tongue cost the bench a 70-80 ms hitch at every seat
+// crossing (a phone is slower) — a turn that is meant to be watched should
+// not stutter at each seat. Behind two receded planes the text is a blur in
+// any case, so while the film turns only the planes ahead follow the lens;
+// the text is painted once, at the landing. Cleared by every glide and by
+// the film's own end, so a reader's turn is never muted.
+let previewTextMuted = false;
 const isStrataOpen = () => strataFront !== 0;
 const isSecondaryOpen = isStrataOpen;      // the primary pointer guard reads this
 // The dimension feature lives IN the detail sector: strata recede only when
@@ -1322,10 +1332,33 @@ function previewFromLens(ch, items, centerIndex) {
   previewFollow = requestAnimationFrame(() => {
     previewFollow = 0;
     renderStack({ keepFront: true });   // receded planes re-stock and re-seat
-    previewPrimary(strataPreview);      // and the text behind the glass follows
+    if (!previewTextMuted) previewPrimary(strataPreview);   // and the text behind the glass follows
   });
 }
 let previewFollow = 0;
+
+// THE OVERTURE'S TURN OF A FLOOR (O-225, Howell 2026-10-26: the truck in is
+// "our only mini tutorial", so before each truck the ring turns "slowly
+// enough to register what's happening"). The plan for one floor: the seat the
+// turn starts from and the seat it rests on — the committed selection, which
+// is where the truck must descend. The language ring turns from its FIRST
+// seat forward ("start with Hebrew, then go through Greek, Latin, and any
+// others to finally stop on English"); the edition ring from its LAST seat
+// backward ("reverse chronological order, rotating from Catholic public
+// domain to Douay Rheims" — forward would be one step, King James to Douay,
+// and teach nothing). Null when there is nothing to turn through: a ring of
+// one seat, or the reader resting at the far end already. The order of seats
+// is the ring's own, as the volume declares it; the resting seat is the
+// reader's, so a returning reader is walked to their own tongue and edition.
+function overtureTurn(front) {
+  const ch = CHOOSERS[front - 1];
+  if (!ch) return null;
+  const items = ch.items();
+  const to = items.indexOf(ch.selected());
+  if (to < 0 || items.length < 2) return null;
+  const from = ch.id === 'tertiary' ? 0 : items.length - 1;
+  return from === to ? null : { from, to };
+}
 
 // Ease the ring from wherever it settled (maybe out in the overrun) back to the
 // nearest real node — the SPRINGBACK that makes the last link go taut, and the
@@ -1491,7 +1524,11 @@ function layerStates(front) {
 // below); the SLIDER drives it from the thumb's position and settles on
 // release. Nothing about the state (strataFront, the funnel, the basement
 // visit) changes inside a glide; that is the caller's, at the settle.
-function beginGlide(fromFront, toFront) {
+// `lens` (O-225, the overture only): a chooser id → seat index, drawing that
+// plane with its lens on the given seat instead of the committed one, so an
+// arriving ring lands where the overture's next turn begins. Nothing is
+// committed by it; the next paint from committed state restores the seat.
+function beginGlide(fromFront, toFront, { lens = null } = {}) {
   if (bootOvertureLive && !bootOvertureGliding) { const o = bootOvertureLive; bootOvertureLive = null; o.abort(); }
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
   // A truck begun while a chooser ring is mid-turn (a second finger, or a
@@ -1503,6 +1540,7 @@ function beginGlide(fromFront, toFront) {
   strataDrag = null;
   strataPreview = null;
   lastPreviewKey = null;
+  previewTextMuted = false;
   if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
   if (strataHit) strataHit.style.pointerEvents = 'none';
   const from = layerStates(fromFront);
@@ -1516,7 +1554,8 @@ function beginGlide(fromFront, toFront) {
     const inFrom = pos <= fromFront, inTo = pos <= toFront;
     if (!inFrom && !inTo) { hideStratum(strataLayer, ch.id); return; }
     const items = ch.items();
-    groups[ch.id] = renderStratum(strataLayer, stratumOpts(ch, items, Math.max(0, items.indexOf(ch.selected()))));   // one options builder for every paint (O-184)
+    const seat = lens && Number.isInteger(lens[ch.id]) && lens[ch.id] >= 0 && lens[ch.id] < items.length ? lens[ch.id] : Math.max(0, items.indexOf(ch.selected()));
+    groups[ch.id] = renderStratum(strataLayer, stratumOpts(ch, items, seat));   // one options builder for every paint (O-184)
     // Past the film plane the plane keeps scaling about the same centre — the
     // course the magnifier was already on — until it is off the frame. NO
     // DISSOLVE (Howell, phone check 2026-09-14: "There should be no change in
@@ -2306,6 +2345,7 @@ if (typeof window !== 'undefined') {
     // stocking (O-224) — for the bench and the boot tests.
     ring: lang => dimensionBridge.translationsOf(lang || dimensionBridge.getSelection().language),
     arriving: () => dimensionBridge.editionsArriving?.() || [],
+    turnPlan: front => overtureTurn(front),   // the overture's turn of a floor (O-225): { from, to } or null
     hollow: key => Boolean(dimensionBridge.isComing?.(key)),
     // Null while the launch funnel is up (O-75), the reader's position after.
     here: () => dimensionBridge.editionsHere(),
@@ -4998,7 +5038,36 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       drive: (dimensionAvailable() && maxStrataFront() >= 2) ? {
         setFront: f => { strataFront = f; },
         render: () => renderStack(),
-        glide: (a, b) => { bootOvertureGliding = true; try { return beginGlide(a, b); } finally { bootOvertureGliding = false; } },
+        glide: (a, b, opts) => {
+          // The overture names the seat an arriving ring's lens lands on by
+          // FLOOR; the glide wants it by chooser id (O-225).
+          let lens = null;
+          for (const [f, i] of Object.entries(opts?.seatAt || {})) { const ch = CHOOSERS[Number(f) - 1]; if (ch) (lens ||= {})[ch.id] = i; }
+          bootOvertureGliding = true; try { return beginGlide(a, b, { lens }); } finally { bootOvertureGliding = false; }
+        },
+        // THE TURNS (O-225): the engine's own turn of the front ring, as a
+        // finger makes it — the hollow lens with the seats streaming
+        // through, the planes ahead and the text behind the glass following
+        // the seat under the lens (the live preview, Howell 2026-07-30).
+        // `turn` is the plan; `turnAt` a frame of the turn; `turnRest` the
+        // lens at rest, filled, with the planes ahead following; `turnEnd`
+        // drops the preview so a truck or the landing paints from committed
+        // state, repainting the text only if a pass had changed it.
+        turn: front => overtureTurn(front),
+        turnAt: (front, center) => { if (strataFront === front) { previewTextMuted = true; renderFrontStratumAt(center, true); } },
+        turnRest: (front, index) => {
+          if (strataFront !== front) return;
+          previewTextMuted = true;
+          renderFrontStratumAt(index, false);
+          const ch = activeChooser();
+          if (ch) previewFromLens(ch, ch.items(), index);
+        },
+        turnEnd: () => {
+          if (previewFollow) { cancelAnimationFrame(previewFollow); previewFollow = 0; }
+          strataPreview = null; lastPreviewKey = null; previewTextMuted = false;
+          if (options.previewEdition && options.previewEdition !== activeTranslation()) previewPrimary({ edition: null });
+          else options.previewEdition = null;
+        },
         // The globe rides the migration as it rides a drag (Howell
         // 2026-09-30: it was "out of sync during the drill in and jumps
         // around independently"): its position IS the stratum, set per frame
