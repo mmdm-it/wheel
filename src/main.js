@@ -921,7 +921,7 @@ function exitSearchMode() {
   searchRestore = null;
   searchStruck = '';
   app.setPrimaryItems(restore.items, restore.selectedIndex, true);
-  app.setParentButtons({ showOuter: true }); // the vessel returns with the browse chain
+  app.setParentButtons({ showOuter: true, absent: false }); // the vessel returns with the browse chain
   if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
   exitSearchLook({ svg }); // the lights come back up
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
@@ -962,8 +962,10 @@ function toggleSearchRing() {
   setSearchScopeLabel(svg, { text: lensLabel, x: seat.labelX, y: seat.labelY });
   app.setPrimaryItems(searchCharItems(searchOpeningAllowed), 0, true);
   // The parent button has no meaning over the character ring — no vessel,
-  // nothing to ascend to. It leaves entirely (Howell 2026-07-22).
-  app.setParentButtons({ showOuter: false });
+  // nothing to ascend to. It leaves entirely (Howell 2026-07-22) — the one
+  // seat the persistent vessel (O-222) does not keep, since the tool sits
+  // under the lens here.
+  app.setParentButtons({ showOuter: false, absent: true });
   if (searchButton) searchButton.setAttribute('aria-pressed', 'true');
 }
 if (searchButton) searchButton.addEventListener('click', toggleSearchRing);

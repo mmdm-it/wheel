@@ -466,6 +466,9 @@ export function createApp({
   const setParentButtons = config => {
     const next = {};
     if (typeof config?.showOuter === 'boolean') next.showOuter = config.showOuter;
+    // `absent`: the seat leaves entirely (the search ring). Otherwise an
+    // empty vessel stays drawn (O-222).
+    if (typeof config?.absent === 'boolean') next.absent = config.absent;
     parentButtonsVisibility = { ...parentButtonsVisibility, ...next };
     render(rotation);
   };
@@ -724,8 +727,10 @@ export function createApp({
       : '';
     const prevParentLabel = domParentLabel || getParentLabel(prevSelected) || '';
     // Was the DEPARTING parent a context-only label (no disc)? The DOM is
-    // the honest pre-state — the adapter has already advanced by now.
-    const departingParentDiscless = view.parentButtonOuter?.getAttribute('display') === 'none';
+    // the honest pre-state — the adapter has already advanced by now. The
+    // vessel itself is always drawn (O-222); EMPTY is the discless state.
+    const departingParentDiscless = view.parentButtonOuter?.getAttribute('display') === 'none'
+      || Boolean(view.parentButtonOuter?.classList?.contains('parent-empty'));
     // The split seat (Howell 2026-07-23): disc under the magnifier, label in
     // the corner. Flights carry the fill to the disc seat and the words to
     // the label seat.
@@ -2143,6 +2148,7 @@ export function createApp({
           onOuterClick: shiftLayersOut,
           isLayerOut,
           showOuter: parentButtonsVisibility.showOuter,
+          absent: parentButtonsVisibility.absent === true,
           actionable: typeof getParentActionable === 'function' ? Boolean(getParentActionable()) : true,
           icon: typeof getParentIcon === 'function' ? getParentIcon() : null
         },
