@@ -671,6 +671,41 @@ let searchOpeningAllowed = null;// characters the opening ring is pruned to when
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
 let bookmarkPrompt = null;   // O-128: the volume's own words for "bookmark this", per tongue
+let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
+let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
+
+// THE PAGE SPEAKS THE READER'S TONGUE (O-226, Howell 2026-10-27: "The 'edition
+// under review' disclaimer should appear in whatever language has been
+// selected for reading. When reading Latin, everything on the page should
+// appear in Latin. When reading Hebrew, everything on that page should appear
+// in Hebrew, and so on"). The engine holds no human words (O-43): every
+// phrase it shows beside the text is the VOLUME's, declared per tongue in
+// display_config, and picked here by the language the reader has chosen —
+// the bookmark prompt's road (O-128), now the road for all of them. A table
+// without the tongue falls back to its `default`; a volume without the table
+// keeps what the engine shipped with.
+function phraseFor(table) {
+  if (!table) return null;
+  if (typeof table === 'string' || Array.isArray(table)) return table;
+  const lang = dimensionBridge.getSelection()?.language || null;
+  return table[lang] ?? table.default ?? null;
+}
+function langDir() {
+  const lang = dimensionBridge.getSelection()?.language || null;
+  return ['hebrew', 'arabic', 'syriac'].includes(lang) ? 'rtl' : 'ltr';
+}
+// The copyright line as index.html ships it, kept so a volume without a table
+// (and every volume before its data loads) shows exactly what it always did.
+let copyrightShipped = null;
+function applyCopyrightTongue() {
+  if (typeof document === 'undefined') return;
+  const el = document.getElementById('copyright-notice');
+  if (!el) return;
+  if (copyrightShipped === null) copyrightShipped = el.textContent.trim();
+  const text = phraseFor(copyrightWords) || copyrightShipped;
+  if (el.textContent.trim() !== text) el.textContent = text;
+  el.setAttribute('dir', langDir());
+}
 let searchAllLabel = 'TUTTI';   // what the scope label says when nothing is filtered
 
 // IN SEARCH, the dividers take the parent disc's seat — directly under the
@@ -1809,8 +1844,18 @@ function ensureIncompleteMarkEl() {
   // parent vessel's label).
   // EDITION, because CHECKED lifts the mark for the whole edition at once
   // (O-218): the words follow the grain the record carries.
+  // The words are the volume's, in the reader's tongue (O-226); English is
+  // only what a volume without the table keeps.
   ['edition', 'under review'].forEach(line => { const el = document.createElement('span'); el.className = 'incomplete-mark-line'; el.textContent = line; incompleteMarkEl.appendChild(el); });
   document.body.appendChild(incompleteMarkEl);
+}
+function applyReviewMarkTongue() {
+  if (!incompleteMarkEl) return;
+  const words = phraseFor(reviewMarkWords);
+  const lines = Array.isArray(words) ? words : ['edition', 'under review'];
+  const spans = incompleteMarkEl.querySelectorAll ? incompleteMarkEl.querySelectorAll('.incomplete-mark-line') : [];
+  lines.forEach((line, i) => { if (spans[i] && spans[i].textContent !== line) spans[i].textContent = line; });
+  incompleteMarkEl.setAttribute('dir', langDir());
 }
 
 function updateIncompleteMark() {
@@ -1868,6 +1913,8 @@ function updateIncompleteMark() {
   // the settle and going with it at the launch; above a leaf it says nothing.
   show = show && detailSectorVisible;
   ensureIncompleteMarkEl();
+  applyReviewMarkTongue();
+  applyCopyrightTongue();
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
     document.documentElement.classList.remove('incomplete-mark-showing');
@@ -2169,13 +2216,7 @@ const bookmarkHint = (() => {
     return h;
   } catch (_) { return null; }
 })();
-const bookmarkPhrase = () => {
-  const lang = dimensionBridge.getSelection()?.language || null;
-  const p = bookmarkPrompt;
-  if (!p) return '';
-  if (typeof p === 'string') return p;
-  return p[lang] || p.default || '';
-};
+const bookmarkPhrase = () => phraseFor(bookmarkPrompt) || '';
 function showHint(text) {
   if (!bookmarkHint?.classList) return;
   bookmarkHint.textContent = text;
@@ -4449,6 +4490,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
   bookmarkPrompt = root?.display_config?.bookmark_prompt || null;
+  reviewMarkWords = root?.display_config?.review_mark || null;
+  copyrightWords = root?.display_config?.copyright_notice || null;
   if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
     const leafLevel = root?.display_config?.leaf_level || null;
     searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));
