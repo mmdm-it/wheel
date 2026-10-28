@@ -663,6 +663,9 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // A placeholder seat (O-184): drawn hollow, labelled with its name,
     // never committed. The host asks rather than knowing the prefix.
     isComing(key) { return isComingKey(key); },
+    // The edition a ring key names, hollow or not (O-228): a plan made while
+    // the shelves are still stocking sees most editions as hollow keys.
+    editionOfKey(key) { if (!key || key === COMING_SOON_KEY) return null; return isComingKey(key) ? key.slice(COMING_PREFIX.length) : key; },
 
     // The substituted-verse footer, in the READER'S chosen tongue (W-6,
     // mark #3): the person who asked for Russian is told in Russian.

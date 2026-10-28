@@ -5,7 +5,7 @@ import { buildBibleVerseChain, buildBibleChapterChain } from '../navigation/cous
 import { buildUtteranceSeatIndex } from '../navigation/seating-chart.js';
 import { buildBibleBookCousinChain } from '../navigation/cousin-builder.js';
 import { buildBiblePyramid } from '../pyramid/volume-pyramid.js';
-import { volumeHoldsUnit, editionSeatsUtterance, bookSeatingUtterance, primeSeatIndex } from './bible-volume.js';
+import { volumeHoldsUnit, editionSeatsUtterance, bookSeatingUtterance, seatOfUtterance, primeSeatIndex } from './bible-volume.js';
 
 // THE ADAPTER NO LONGER LOADS CARGO (H-14, 2026-08-12).
 //
@@ -240,6 +240,28 @@ function requestChapter(chapterId, bookId, externalFile) {
   );
 }
 
+// The seat another edition gives the verse under the magnifier: its own book
+// and key, or null when that edition is this book's own (the direct lookup
+// already applies) or does not seat the leaf.
+function otherSeatFor(manifest, edition, meta, externalFile) {
+  const volume = manifest?.__wallVolume;
+  const utterance = meta?.utterances?.[0];
+  if (!volume || !edition || !utterance) return null;
+  if (typeof volume.editionOf === 'function' && volume.editionOf(externalFile) === edition) return null;
+  return seatOfUtterance(volume, edition, utterance);
+}
+
+/**
+ * Warm the verse under the magnifier in another edition (O-228): the film's
+ * turn names the editions it will pass before it starts, so each seat paints
+ * its words as the lens crosses it rather than a fetch later. A no-op for an
+ * edition whose charts are not in hand yet, or that does not seat the leaf.
+ */
+function warmVerseIn(manifest, edition, item) {
+  const other = otherSeatFor(manifest, edition, item?.meta, item?.meta?.externalFile);
+  if (other && !getVerseTextResolved(other.book, other.key, [edition])) requestChapter(null, other.book, other.book);
+}
+
 function readAhead(selected, manifest) {
   const meta = selected?.meta;
   if (!meta?.externalFile) return;
@@ -354,10 +376,28 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       // By the seat's SPAN, not its label — see getVerseTextForSeat. The
       // two agree everywhere the edition counts as the spine does, and
       // differ exactly where this model exists to help.
-      const resolved = activeTranslation
+      let resolved = activeTranslation
         ? getVerseTextForSeat(externalFile, selected?.meta, [activeTranslation])
         : null;
       readAhead(selected, manifest);
+      // THROUGH THE LEAF WHEN THE EDITION IS NOT THIS BOOK'S (O-228). Under
+      // leaf-and-shard a book belongs to one edition and its text file holds
+      // that edition's words alone, so a verse previewed in ANOTHER edition —
+      // the ring turning under a finger, or the film's turn at boot — found
+      // nothing here and painted blank, every time, since the shard split
+      // (Howell, 2026-10-28, of the film: "It looks odd to see the ring
+      // rotate and the text not change behind it"). The leaf is the bridge
+      // (W-21): the other edition seats this utterance in a book of its own
+      // under a label of its own, and that book's text is read — or asked
+      // for, repainting when it lands. An edition that does not seat the
+      // leaf has no verse here, and the sector stays honestly empty.
+      if (!resolved && activeTranslation) {
+        const other = otherSeatFor(manifest, activeTranslation, selected?.meta, externalFile);
+        if (other) {
+          resolved = getVerseTextResolved(other.book, other.key, [activeTranslation]);
+          if (!resolved) requestChapter(null, other.book, other.book);
+        }
+      }
       // uniform: every verse shares the longest verse's type size (Howell
       // 2026-07-21) — a constant reading page, not size-by-length.
       if (resolved) return { type: 'text', text: resolved.text, uniform: true };
@@ -1492,6 +1532,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     normalize,
     layoutSpec,
     detailFor,
+    warmVerseIn,
     createHandlers,
     capabilities: {
       search: false,

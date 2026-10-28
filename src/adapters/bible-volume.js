@@ -813,6 +813,27 @@ function seatIndexFor(volume, edition) {
   perVolume.set(edition, { charts, byUtterance });
   return byUtterance;
 }
+/**
+ * THE SEAT AN EDITION GIVES A LEAF — its book AND its label (O-228). The seat
+ * index above answers the book; the label is the key the book's text file is
+ * read by, and a preview of another edition's verse needs both: the words
+ * live in THAT edition's own book, under THAT edition's own number. Null when
+ * the edition does not seat the leaf (the Hebrew at a verse of Matthew).
+ */
+export function seatOfUtterance(volume, edition, utteranceId) {
+  const book = bookSeatingUtterance(volume, edition, null, utteranceId);
+  if (!book) return null;
+  const chart = volume.chartFor?.(book, edition);
+  const seats = Array.isArray(chart?.seats) ? chart.seats : null;
+  if (!seats) return null;
+  const at = seats.findIndex(s => Array.isArray(s?.utterances) && s.utterances.includes(utteranceId));
+  if (at < 0) return null;
+  // The text file is keyed "group:seat" in the edition's own labels (the
+  // chart's groups are its chapters, from..to over the seats, 1-based).
+  const group = (chart.groups || []).find(g => g.from <= at + 1 && at + 1 <= g.to);
+  const label = String(seats[at].label);
+  return { book, key: group ? `${group.label}:${label}` : label };
+}
 /** Build the edition's seat index now, at rest, so the first question is answered from it. */
 export function primeSeatIndex(volume, edition) {
   return Boolean(seatIndexFor(volume, edition));

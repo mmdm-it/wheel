@@ -6,7 +6,7 @@ import _pathBible from 'node:path';
 
 import { describe, it } from 'node:test';
 import { bibleAdapter, normalize as normalizeBible, detailFor } from '../src/adapters/bible-adapter.js';
-import { setUnitTextLoader } from '../src/adapters/volume-helpers.js';
+import { setUnitTextLoader, seedVerseCache } from '../src/adapters/volume-helpers.js';
 import { buildBibleVerseChain } from '../src/navigation/cousin-builder.js';
 import { makeWallManifest } from './helpers/wall-volume.mjs';
 
@@ -368,5 +368,56 @@ describe('the read-ahead warms the next unit (O-67)', () => {
     detailFor(middle, manifest, { translation: 'ED' });
     assert.ok(!asked.includes('NEXT'),
       `mid-book must not prefetch the next unit; asked for ${JSON.stringify(asked)}`);
+  });
+});
+
+// THE PREVIEWED EDITION'S VERSE COMES THROUGH THE LEAF (O-228). A book's text
+// holds its own edition's words alone, so a verse shown in another edition is
+// read from THAT edition's book under THAT edition's label — or asked for.
+describe('a verse previewed in another edition resolves through the leaf (O-228)', () => {
+  const ED_BOOK = { groups: [{ label: '1', from: 1, to: 2 }], seats: [{ label: '1', utterances: ['u1'] }, { label: '2', utterances: ['u2'] }] };
+  const OT_BOOK = { groups: [{ label: '7', from: 1, to: 2 }], seats: [{ label: '1', utterances: ['u1'] }, { label: '2', utterances: ['u2'] }] };
+  const book = (id, leaves, order) => ({ id, leaves, order, testamentId: 'T1' });
+  const volume = {
+    testaments: [{ id: 'T1', order: 0, books: [book('EDB', 2, 0)] }],
+    units: [book('EDB', 2, 0), book('OTB', 2, 0)],
+    editions: [{ code: 'ED', language: 'english', hasChart: true }, { code: 'OT', language: 'latin', hasChart: true }],
+    namesByLanguage: { english: { testaments: {}, books: { EDB: 'Book' } }, latin: { testaments: {}, books: { OTB: 'Liber' } } },
+    displayConfig: {},
+    booksFor: ed => (ed === 'ED' ? [book('EDB', 2, 0)] : ed === 'OT' ? [book('OTB', 2, 0)] : []),
+    chartFor: (id, ed) => ((ed === 'ED' && id === 'EDB') ? ED_BOOK : (ed === 'OT' && id === 'OTB') ? OT_BOOK : null),
+    editionOf: id => (id === 'EDB' ? 'ED' : id === 'OTB' ? 'OT' : null),
+    spineFor: () => ({ utterances: ['u1', 'u2'] }),
+    has: id => id === 'EDB' || id === 'OTB',
+    isFullyConfirmed: () => true,
+    bookOrderFor: () => ['EDB'],
+    sectionOf: () => null,
+    toRoot: () => ({ display_config: {}, testaments: { T1: { sort_number: 0, books: { EDB: { sort_number: 0 } } } } })
+  };
+  const manifest = { Gutenberg_Bible: volume.toRoot() };
+  Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+  const verse = { id: 'EDB/1/1', level: 'verse', meta: { externalFile: 'EDB', bookId: 'EDB', verseKey: '1', utterances: ['u1'], unitOrdinal: 1 } };
+
+  it('reads the other edition’s own book under its own chapter and verse once that book’s text is in hand', () => {
+    seedVerseCache('OTB', { '7:1': { text: { OT: 'In principio' } }, '7:2': { text: { OT: 'Et' } } });
+    const got = detailFor(verse, manifest, { translation: 'OT' });
+    assert.equal(got?.text, 'In principio');
+  });
+
+  it('asks for the other edition’s book when its text is not in hand, and paints empty meanwhile', async () => {
+    const asked = [];
+    setUnitTextLoader(id => { asked.push(id); return new Promise(() => {}); });
+    const verse2 = { ...verse, meta: { ...verse.meta, utterances: ['u2'], verseKey: '2', unitOrdinal: 2 } };
+    const vol2 = { ...volume, editionOf: id => (id === 'EDB' ? 'ED' : id === 'OTB2' ? 'OT' : null), booksFor: ed => (ed === 'OT' ? [book('OTB2', 2, 0)] : volume.booksFor(ed)), chartFor: (id, ed) => ((ed === 'OT' && id === 'OTB2') ? OT_BOOK : volume.chartFor(id, ed)) };
+    const m2 = { Gutenberg_Bible: vol2.toRoot() };
+    Object.defineProperty(m2, '__wallVolume', { value: vol2, enumerable: false });
+    const got = detailFor(verse2, m2, { translation: 'OT' });
+    assert.equal(got?.text, '');
+    assert.ok(asked.includes('OTB2'), `the other edition’s book was asked for; asked = ${JSON.stringify(asked)}`);
+  });
+
+  it('has nothing to show for an edition that does not seat the leaf', () => {
+    const got = detailFor({ ...verse, meta: { ...verse.meta, utterances: ['nowhere'] } }, manifest, { translation: 'OT' });
+    assert.equal(got?.text, '');
   });
 });

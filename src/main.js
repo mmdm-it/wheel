@@ -581,15 +581,18 @@ function toggleKeep(keyOrId) {
 // state. Preview always ENDS in a commit (the springback settles the nearest
 // node), so what the reader watched is what they get.
 let strataPreview = null;                  // { language, edition } | null
-// THE OVERTURE'S TURNS LEAVE THE TEXT ALONE (O-225). A finger's turn
-// previews the verse behind the glass in each passing edition; the film's
-// turn passes five tongues in two and a half seconds, and each first paint
-// of the text in a new tongue cost the bench a 70-80 ms hitch at every seat
-// crossing (a phone is slower) — a turn that is meant to be watched should
-// not stutter at each seat. Behind two receded planes the text is a blur in
-// any case, so while the film turns only the planes ahead follow the lens;
-// the text is painted once, at the landing. Cleared by every glide and by
-// the film's own end, so a reader's turn is never muted.
+// THE OVERTURE'S TURNS CARRY THE TEXT WITH THEM (O-228, Howell 2026-10-28:
+// "we need to see the distant blurry text of the detail sector change as
+// the ring rotates from Hebrew to English, and then ... from public domain
+// Catholic to Douay Rheims. It's important to see this to illustrate what's
+// going on. It looks odd to see the ring rotate and the text not change
+// behind it"). O-225 had muted the preview during the film's turns because
+// each first paint of the text in a new tongue cost the bench a 70-80 ms
+// hitch at a seat crossing; Howell weighed that against the film's one job,
+// the mini tutorial, and chose the text. So the film's turn previews exactly
+// as a finger's does: the verse behind the glass follows the seat under the
+// lens, in the next frame. The mute survives only as a switch — every glide
+// and the film's end clear it — for a floor that must turn in silence.
 let previewTextMuted = false;
 const isStrataOpen = () => strataFront !== 0;
 const isSecondaryOpen = isStrataOpen;      // the primary pointer guard reads this
@@ -1392,7 +1395,48 @@ function overtureTurn(front) {
   const to = items.indexOf(ch.selected());
   if (to < 0 || items.length < 2) return null;
   const from = ch.id === 'tertiary' ? 0 : items.length - 1;
-  return from === to ? null : { from, to };
+  if (from === to) return null;
+  warmOvertureTurn(ch, items, from, to);
+  return { from, to };
+}
+
+// THE TURN'S TEXT IS ASKED FOR BEFORE THE TURN (O-228). The film's turn
+// previews the verse behind the glass in every edition it passes, as a
+// finger's does; a finger's preview fetches that edition's book when the
+// lens crosses the seat and paints when it lands, which on the room is
+// longer than the lens rests on a seat. The plan names the seats the turn
+// will pass, so their editions' books are asked for now — each as its charts
+// come to hand (the shelves are still stocking behind the boot, O-227) — and
+// the crossing paints from memory. An edition that does not seat the leaf
+// has nothing to warm and will paint empty, honestly.
+function warmOvertureTurn(ch, items, from, to) {
+  const vol = currentManifest?.__wallVolume;
+  const warm = currentAdapter?.warmVerseIn;
+  if (!vol || typeof warm !== 'function') return;
+  const lo = Math.min(from, to), hi = Math.max(from, to);
+  // The keys are read for their EDITION: at boot the shelves are still
+  // stocking, so most seats the turn will pass are hollow keys now and real
+  // ones by the time the lens crosses them. A language's seat previews its
+  // first edition; a placeholder names no edition and warms nothing.
+  const codeOf = k => dimensionBridge.editionOfKey?.(k) ?? null;
+  const declared = code => Boolean(code) && (vol.editions || []).some(e => e?.code === code);
+  const editions = new Set();
+  for (let i = lo; i <= hi; i++) {
+    const item = items[i];
+    if (ch.id === 'tertiary') {
+      // the first of the tongue's editions that is declared — a withheld
+      // seat (the Italian's 1471) names no edition the volume can serve
+      const e = (dimensionBridge.translationsOf(item) || []).map(codeOf).find(declared);
+      if (e) editions.add(e);
+    } else { const e = codeOf(item); if (declared(e)) editions.add(e); }
+  }
+  for (const edition of editions) {
+    Promise.resolve(vol.ready?.(edition)).then(() => {
+      const item = currentApp?.nav?.getCurrent?.();
+      window.__wheelTapTrace?.push({ ev: 'overture-warm', tr: edition, item: item?.id || '-' });
+      if (item) warm(currentManifest, edition, item);
+    }, () => {});
+  }
 }
 
 // Ease the ring from wherever it settled (maybe out in the overrun) back to the
@@ -4039,6 +4083,7 @@ let currentParentLabel = null;
 // that has no path back into bootVolume's scope, and it needs the wall
 // volume's own answer for which section holds a book.
 let currentManifest = null;
+let currentAdapter = null;   // the volume's adapter, for the film's warm (O-228)
 let currentVolumeId = null;
 let gatewayReturnContext = null;
 let interactionsWired = false;
@@ -4721,6 +4766,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   });
   currentApp = app;
   currentManifest = manifest;
+  currentAdapter = adapter;
   ensureIncompleteMarkEl();   // before the reveal recedes the plane (O-125)
   currentDetailRerender = part => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
     { translation: activeTranslation(), part });
@@ -4984,8 +5030,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       // The adapter repaints through this when a chapter's text lands, which
       // can happen while a reader is on the second half of a verse. It carries
       // the half for the same reason the wrap retry does.
+      // In the edition the reader is PREVIEWING, if one is under the lens
+      // (O-228): the text that lands during a turn is the previewed
+      // edition's, and painting it in the committed one would undo the turn.
       renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized,
-        { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 })
+        { translation: options?.previewEdition || activeTranslation(), part: app?.getVersePart?.() ?? 0 })
     });
   }
   if (!interactionsWired) {
@@ -5093,14 +5142,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         // through, the planes ahead and the text behind the glass following
         // the seat under the lens (the live preview, Howell 2026-07-30).
         // `turn` is the plan; `turnAt` a frame of the turn; `turnRest` the
-        // lens at rest, filled, with the planes ahead following; `turnEnd`
+        // lens at rest, filled, with the planes ahead and the text following
+        // (O-228: the text too, since the film is the tutorial); `turnEnd`
         // drops the preview so a truck or the landing paints from committed
         // state, repainting the text only if a pass had changed it.
         turn: front => overtureTurn(front),
-        turnAt: (front, center) => { if (strataFront === front) { previewTextMuted = true; renderFrontStratumAt(center, true); } },
+        turnAt: (front, center) => { if (strataFront === front) renderFrontStratumAt(center, true); },
         turnRest: (front, index) => {
           if (strataFront !== front) return;
-          previewTextMuted = true;
           renderFrontStratumAt(index, false);
           const ch = activeChooser();
           if (ch) previewFromLens(ch, ch.items(), index);
