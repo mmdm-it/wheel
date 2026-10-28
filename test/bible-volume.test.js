@@ -90,6 +90,42 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     assert.equal(typeof volume.ready('nobody').then, 'function', 'even for an edition it never heard of');
   });
 
+  it('holds the other editions’ bundles until the first verse text is in hand (O-227)', async () => {
+    // A twin of the Douay, declared in the volume and answered from the
+    // Douay's own files, so the fixture has a second shelf to stock.
+    const TWIN = 'TWN';
+    const twinFetch = touched => async p => {
+      touched.push(p);
+      if (p.includes(`/${TWIN}/`)) {
+        const relabel = o => { if (o && typeof o === 'object') { if (o.edition === 'DRA') o.edition = TWIN; for (const v of Object.values(o)) relabel(v); } return o; };
+        return relabel(JSON.parse(JSON.stringify(await fetchJson(p.replace(`/${TWIN}/`, '/DRA/')))));
+      }
+      const data = await fetchJson(p);
+      if (!p.endsWith('volume.json')) return data;
+      const vol = JSON.parse(JSON.stringify(data));
+      vol.editions.push({ ...vol.editions.find(e => e.code === 'DRA'), code: TWIN, name: 'Douay twin' });
+      return vol;
+    };
+    const touched = [];
+    const volume = await loadBibleVolume({ base: BASE, version: VERSION, firstEdition: 'DRA', fetchJson: twinFetch(touched) });
+    await new Promise(r => setTimeout(r, 30));
+    assert.ok(touched.some(p => p.endsWith('/charts/DRA/all.json')), 'the first edition’s bundle left with the wave');
+    assert.ok(!touched.some(p => p.endsWith(`/charts/${TWIN}/all.json`)), 'the twin’s bundle waits: nothing has asked for a verse yet (its index, the enumeration, may go)');
+    await volume.loadTextFor('bdra9e1');
+    await volume.allReady();
+    assert.ok(touched.some(p => p.endsWith(`/charts/${TWIN}/all.json`)), 'the first text in hand releases the twin’s bundle');
+    assert.equal(volume.isReady(TWIN), true);
+    // and a reader asking for the other edition is not kept waiting for a verse
+    const touched2 = [];
+    const volume2 = await loadBibleVolume({ base: BASE, version: VERSION, firstEdition: 'DRA', fetchJson: twinFetch(touched2) });
+    volume2.ready(TWIN);
+    await new Promise(r => setTimeout(r, 30));
+    assert.ok(!touched2.some(p => p.endsWith(`/charts/${TWIN}/all.json`)), 'ready(code) is a wish to be told and opens nothing');
+    await volume2.wake(TWIN);
+    assert.ok(touched2.some(p => p.endsWith(`/charts/${TWIN}/all.json`)), 'wake(code) opens the gate');
+    assert.equal(volume2.isReady(TWIN), true);
+  });
+
   it('with a chooser, asks it against the volume declaration (O-175)', async () => {
     let seen = null;
     const volume = await loadBibleVolume({

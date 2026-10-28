@@ -192,21 +192,33 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     loaded.add(edition.code);
   };
   const loaded = new Set();
-  // THE FIRST EDITION HAS THE PIPE TO ITSELF (O-183): its bundle left with
-  // the wave; the other editions' bundles leave only once it has landed, so
-  // a megabyte the reader is not waiting for does not slow the one they are.
-  // `ready(code)` still hands out each edition's promise; it simply begins
-  // later. With no first edition named, every edition loads together, which
-  // is what the suites and the fixtures expect.
+  // THE FIRST EDITION HAS THE PIPE TO ITSELF (O-183), AND SO DOES THE FIRST
+  // VERSE (O-227). O-183 held the other editions' bundles until the first
+  // edition's had landed — and released them half a second BEFORE the boot
+  // asked for the verse's own text. A browser opens six connections to a
+  // server; fourteen bundles of four megabytes took all six, and the 138 KB
+  // the reader was actually waiting for queued behind them: 2.1 s on the
+  // LAN, 1.8 s from the room, measured 2026-10-28 (Howell: "a very long
+  // delay at boot, waiting for the verse text to appear"). So the gate is
+  // now the first text file in hand — loadText opens it — or the first ask
+  // for another edition (`wake(code)`: a reader turning the edition ring
+  // is not kept waiting), or a fallback delay for a boot that lands on
+  // no verse at all. With no first edition named, every edition loads
+  // together, which is what the suites and the fixtures expect.
+  const BACKGROUND_FALLBACK_MS = 4000;
+  let releaseBackground = () => {};
+  const background = new Promise(resolve => { releaseBackground = resolve; });
   const editionLoads = new Map();
   if (first) {
     const firstLoad = loadEdition(first, firstBundleWave);
     editionLoads.set(first.code, firstLoad);
-    const behind = firstLoad.catch(() => {});
+    const behind = firstLoad.catch(() => {}).then(() => background);
     for (const e of editions) if (e.code !== first.code) editionLoads.set(e.code, behind.then(() => loadEdition(e)));
     await firstLoad;
     for (const [code, p] of editionLoads) if (code !== first.code) p.catch(() => { /* reported inside */ });
+    setTimeout(releaseBackground, BACKGROUND_FALLBACK_MS);
   } else {
+    releaseBackground();
     for (const e of editions) editionLoads.set(e.code, loadEdition(e));
     await Promise.all(editionLoads.values());
   }
@@ -263,6 +275,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     try {
       if (!chart) throw new Error(`no chart for ${bookId}`);
       const file = await fetchJson(at({ kind: 'text', unitId: bookId, edition: code }));
+      releaseBackground();   // the first verse is in hand: the other shelves may stock (O-227)
       records = normalizeUnitText({
         editions: { [code]: file },
         declared: [code],
@@ -299,7 +312,12 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     base,
     // THE SHELVES STILL STOCKING (O-175): the first edition is in hand when
     // this returns; the rest arrive behind it.
+    // `ready` and `allReady` are a wish to be TOLD — the boot subscribes to
+    // every edition before it has painted a verse — and open nothing. `wake`
+    // is a wish to START: a reader settling the edition ring on another
+    // edition, or previewing one, is not kept waiting for a verse (O-227).
     ready(code) { return editionLoads.get(code) || Promise.resolve(); },
+    wake(code) { if (code && code !== first?.code) releaseBackground(); return editionLoads.get(code) || Promise.resolve(); },
     allReady() { return Promise.all(editionLoads.values()).then(() => undefined); },
     isReady(code) { return loaded.has(code); },
     // The storage layer, named for what it is (O-92). No reader ever meets a

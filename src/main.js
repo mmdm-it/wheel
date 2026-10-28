@@ -4941,7 +4941,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // which is the right answer whenever the editions agree.
     // THE SHELF MUST BE STOCKED BEFORE THE RESEAT (O-175): an edition's charts
     // may still be arriving behind the boot; the reseat waits for them.
-    editionSettlePromise = Promise.resolve(currentManifest?.__wallVolume?.ready?.(translation))
+    editionSettlePromise = Promise.resolve((currentManifest?.__wallVolume?.wake || currentManifest?.__wallVolume?.ready)?.call(currentManifest?.__wallVolume, translation))
       .then(() => config.onEditionSettle?.(translation || null))
       .then(() => handlerSet.reseatOnEditionChange?.({
         selected: app?.nav?.getCurrent?.(), app
@@ -5029,7 +5029,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // shows it — unless the finger has moved on to another by then.
     const vol = currentManifest?.__wallVolume;
     if (vol?.isReady && !vol.isReady(edition) && typeof vol.ready === 'function') {
-      vol.ready(edition).then(() => { if (options.previewEdition === edition) previewPrimary(preview); });
+      (vol.wake || vol.ready).call(vol, edition).then(() => { if (options.previewEdition === edition) previewPrimary(preview); });
     }
     refreshNamesMap(preview.language);
     // WHICH EDITION IS UNDER THE LENS (O-94). The chain still holds the
