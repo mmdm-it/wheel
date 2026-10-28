@@ -197,7 +197,12 @@ export function splashRecord(root, assetBase) {
   const title = typeof sp?.title === 'string' ? sp.title : '';
   if (!image && !title) return null;
   const base = root?.display_config?.detail_sector?.logo_base_path || 'assets/';
-  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title };
+  // THE CIRCLE (Howell 2026-10-28): an emblem drawn on
+  // its badge — the disc the catalogue shows in its corner — rather than
+  // bare on the ground. Only its fill is declared; the proportions are the
+  // badge's own, so the card is that badge, enlarged.
+  const fill = typeof sp?.circle?.fill === 'string' && sp.circle.fill ? sp.circle.fill : null;
+  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(fill ? { circle: { fill } } : {}) };
 }
 
 const el = (tag, attrs = {}, parent = null) => {
@@ -212,6 +217,9 @@ const el = (tag, attrs = {}, parent = null) => {
 // desktop gate (99999), the splash's input blocker (100000) and the
 // diagnostic HUDs (9999 and up).
 export const BOOT_SHEET_Z = 1000;
+// The corner badge's proportions (volume-logo.js), for an emblem on a circle.
+const BADGE_EMBLEM_SCALE = 1.1;
+const BADGE_BOX_ASPECT = 154 / 134;
 
 export function beginBootOverture({ viewport = null, splash = null } = {}) {
   if (typeof document === 'undefined') return { splash() {}, ready() {}, abort() {} };
@@ -256,8 +264,18 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     const w = vp.width * 0.42, h = w, x = (vp.width - w) / 2, y = vp.height * 0.44 - h / 2;
     const px = (vp.width * 0.062).toFixed(1);
     const waits = [];
+    // On a circle the card is the corner badge enlarged: the disc is the
+    // card's square, and the picture's box is the badge's (volume-logo.js:
+    // 1.1 of the diameter wide, at its inherited 154:134 box), so a wide
+    // emblem overhangs the disc a little exactly as it does in the corner.
+    let ix = x, iy = y, iw = w, ih = h;
+    if (record.circle?.fill) {
+      el('circle', { cx: (x + w / 2).toFixed(1), cy: (y + h / 2).toFixed(1), r: (w / 2).toFixed(1), fill: record.circle.fill }, g);
+      iw = w * BADGE_EMBLEM_SCALE; ih = iw / BADGE_BOX_ASPECT;
+      ix = x + (w - iw) / 2; iy = y + (h - ih) / 2;
+    }
     if (record.imageUrl) {
-      const img = el('image', { x: x.toFixed(1), y: y.toFixed(1), width: w.toFixed(1), height: h.toFixed(1), preserveAspectRatio: 'xMidYMid meet' }, g);
+      const img = el('image', { x: ix.toFixed(1), y: iy.toFixed(1), width: iw.toFixed(1), height: ih.toFixed(1), preserveAspectRatio: 'xMidYMid meet' }, g);
       img.setAttribute('href', record.imageUrl);
       img.setAttributeNS(XLINK_NS, 'xlink:href', record.imageUrl);
       // The picture is "in hand" when it has LOADED (a cached one fires at

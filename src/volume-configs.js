@@ -471,6 +471,9 @@ const volumeConfigs = {
     id: 'calendar',
     paths: ['/calendar'],
     manifestPath: './data/calendar/manifest.json',
+    // W-114: the calendar's pictures sit with its data (its splash card's
+    // logo, 2026-10-28), at the volume root like the catalogue's.
+    assetBase: './data/calendar/',
     theme: 'calendar',
     documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
     palette: {

@@ -89,3 +89,17 @@ describe('the overture sheet covers every overlay the app owns', () => {
     assert.ok(BOOT_SHEET_Z < Math.min(...above), 'sheet under the gates and HUDs');
   });
 });
+
+describe('a card may set its emblem on a circle (the calendar, 2026-10-28)', () => {
+  it('splashRecord carries a declared circle, and only a declared one', async () => {
+    const { splashRecord } = await import('../src/view/boot-overture.js');
+    const onCircle = splashRecord({ display_config: { splash: { image: 'mmdm_logo', title: '', circle: { fill: '#5e5a78' } } } }, './data/calendar/');
+    assert.deepStrictEqual(onCircle, { imageUrl: './data/calendar/assets/mmdm_logo.png', title: '', circle: { fill: '#5e5a78' } });
+    const bare = splashRecord({ display_config: { splash: { image: 'crown_of_thorns', title: 'Biblia Catholica' } } }, '');
+    assert.strictEqual(bare.circle, undefined, 'the Bible card stays bare');
+  });
+  it('the calendar serves its pictures from its own data', async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    assert.strictEqual(volumeConfigs.calendar.assetBase, './data/calendar/');
+  });
+});
