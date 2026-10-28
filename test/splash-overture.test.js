@@ -98,6 +98,13 @@ describe('a card may set its emblem on a circle (the calendar, 2026-10-28)', () 
     const bare = splashRecord({ display_config: { splash: { image: 'crown_of_thorns', title: 'Biblia Catholica' } } }, '');
     assert.strictEqual(bare.circle, undefined, 'the Bible card stays bare');
   });
+  it('a ring may declare its width and size, the title its face and colour', async () => {
+    const { splashRecord } = await import('../src/view/boot-overture.js');
+    const r = splashRecord({ display_config: { splash: { image: 'mmdm_logo', title: 'T', title_font: 'Montserrat', title_color: '#f1b800', circle: { stroke: '#000000', width: 1, scale: 0.9 } } } }, '');
+    assert.deepStrictEqual(r.circle, { stroke: '#000000', width: 1, scale: 0.9 });
+    assert.strictEqual(r.font, 'Montserrat');
+    assert.strictEqual(r.color, '#f1b800');
+  });
   it('the calendar serves its pictures from its own data', async () => {
     const { volumeConfigs } = await import('../src/volume-configs.js');
     assert.strictEqual(volumeConfigs.calendar.assetBase, './data/calendar/');

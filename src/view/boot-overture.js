@@ -204,9 +204,16 @@ export function splashRecord(root, assetBase) {
   // A circle is a disc (`fill`) or a ring (`stroke`), or both; the ring's
   // width is the card's, not the volume's.
   const str = v => (typeof v === 'string' && v ? v : null);
+  const num = v => (Number.isFinite(Number(v)) && Number(v) > 0 ? Number(v) : null);
   const fill = str(sp?.circle?.fill), stroke = str(sp?.circle?.stroke);
-  const circle = fill || stroke ? { ...(fill ? { fill } : {}), ...(stroke ? { stroke } : {}) } : null;
-  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(circle ? { circle } : {}) };
+  // `width` is the ring's stroke in CSS pixels; `scale` sizes the circle
+  // against the badge's own disc (0.9 = a tenth smaller), the emblem unmoved.
+  const width = num(sp?.circle?.width), scale = num(sp?.circle?.scale);
+  const circle = fill || stroke ? { ...(fill ? { fill } : {}), ...(stroke ? { stroke } : {}), ...(width ? { width } : {}), ...(scale ? { scale } : {}) } : null;
+  // The title's face and colour may be the volume's own; else the card's
+  // (EB Garamond, the page's ink).
+  const font = str(sp?.title_font), color = str(sp?.title_color);
+  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(circle ? { circle } : {}), ...(font ? { font } : {}), ...(color ? { color } : {}) };
 }
 
 const el = (tag, attrs = {}, parent = null) => {
@@ -263,7 +270,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   // — and no later than a second: past that the title is pinned to the
   // stand-in face for this visit, so it never swaps under the reader.
   let card = null, cardAt = 0, cardPending = false;
-  const FACE = "'EB Garamond'", STAND_IN = 'Georgia, serif';
+  const CARD_FACE = "'EB Garamond'", CARD_STAND_IN = 'Georgia, serif';
   const showCard = record => {
     if (card || cardPending || done || !record || (!record.imageUrl && !record.title)) return;
     cardPending = true;
@@ -278,8 +285,9 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     // emblem overhangs the disc a little exactly as it does in the corner.
     let ix = x, iy = y, iw = w, ih = h;
     if (record.circle) {
-      const sw = record.circle.stroke ? w * CARD_RING_WIDTH : 0;
-      el('circle', { cx: (x + w / 2).toFixed(1), cy: (y + h / 2).toFixed(1), r: ((w - sw) / 2).toFixed(1), fill: record.circle.fill || 'none', stroke: record.circle.stroke || 'none', 'stroke-width': sw ? sw.toFixed(1) : undefined }, g);
+      const sw = record.circle.stroke ? (record.circle.width || w * CARD_RING_WIDTH) : 0;
+      const d = w * (record.circle.scale || 1);
+      el('circle', { cx: (x + w / 2).toFixed(1), cy: (y + h / 2).toFixed(1), r: ((d - sw) / 2).toFixed(1), fill: record.circle.fill || 'none', stroke: record.circle.stroke || 'none', 'stroke-width': sw ? sw.toFixed(1) : undefined }, g);
       iw = w * BADGE_EMBLEM_SCALE; ih = iw / BADGE_BOX_ASPECT;
       ix = x + (w - iw) / 2; iy = y + (h - ih) / 2;
     }
@@ -303,9 +311,11 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       } catch { /* no picture probe: show on the cap */ }
     }
     let title = null;
+    const FACE = record.font ? `'${record.font.replace(/'/g, '')}'` : CARD_FACE;
+    const STAND_IN = record.font ? 'sans-serif' : CARD_STAND_IN;   // a declared face is the app's sans
     if (record.title) {
       title = el('text', { x: (vp.width / 2).toFixed(1), y: (y + h + vp.height * 0.075).toFixed(1), 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, g);
-      title.style.cssText = `font-family:${FACE},${STAND_IN};font-size:${px}px;letter-spacing:.04em;fill:${ink}`;
+      title.style.cssText = `font-family:${FACE},${STAND_IN};font-size:${px}px;letter-spacing:.04em;fill:${record.color || ink}`;
       title.textContent = record.title;
       try { if (document.fonts?.load) waits.push(document.fonts.load(`${px}px ${FACE}`).catch(() => []).then(() => mark('face-ready'))); } catch { /* no font API: show on the cap */ }
     }
