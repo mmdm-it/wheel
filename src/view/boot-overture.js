@@ -201,8 +201,12 @@ export function splashRecord(root, assetBase) {
   // its badge — the disc the catalogue shows in its corner — rather than
   // bare on the ground. Only its fill is declared; the proportions are the
   // badge's own, so the card is that badge, enlarged.
-  const fill = typeof sp?.circle?.fill === 'string' && sp.circle.fill ? sp.circle.fill : null;
-  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(fill ? { circle: { fill } } : {}) };
+  // A circle is a disc (`fill`) or a ring (`stroke`), or both; the ring's
+  // width is the card's, not the volume's.
+  const str = v => (typeof v === 'string' && v ? v : null);
+  const fill = str(sp?.circle?.fill), stroke = str(sp?.circle?.stroke);
+  const circle = fill || stroke ? { ...(fill ? { fill } : {}), ...(stroke ? { stroke } : {}) } : null;
+  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(circle ? { circle } : {}) };
 }
 
 const el = (tag, attrs = {}, parent = null) => {
@@ -220,6 +224,10 @@ export const BOOT_SHEET_Z = 1000;
 // The corner badge's proportions (volume-logo.js), for an emblem on a circle.
 const BADGE_EMBLEM_SCALE = 1.1;
 const BADGE_BOX_ASPECT = 154 / 134;
+const CARD_RING_WIDTH = 0.03;   // a ring's stroke, as a fraction of the disc's diameter
+// A long name is set smaller rather than run off the phone: the title keeps
+// its size until it would pass this share of the screen's width.
+const CARD_TITLE_MAX_WIDTH = 0.88;
 
 export function beginBootOverture({ viewport = null, splash = null } = {}) {
   if (typeof document === 'undefined') return { splash() {}, ready() {}, abort() {} };
@@ -269,8 +277,9 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     // 1.1 of the diameter wide, at its inherited 154:134 box), so a wide
     // emblem overhangs the disc a little exactly as it does in the corner.
     let ix = x, iy = y, iw = w, ih = h;
-    if (record.circle?.fill) {
-      el('circle', { cx: (x + w / 2).toFixed(1), cy: (y + h / 2).toFixed(1), r: (w / 2).toFixed(1), fill: record.circle.fill }, g);
+    if (record.circle) {
+      const sw = record.circle.stroke ? w * CARD_RING_WIDTH : 0;
+      el('circle', { cx: (x + w / 2).toFixed(1), cy: (y + h / 2).toFixed(1), r: ((w - sw) / 2).toFixed(1), fill: record.circle.fill || 'none', stroke: record.circle.stroke || 'none', 'stroke-width': sw ? sw.toFixed(1) : undefined }, g);
       iw = w * BADGE_EMBLEM_SCALE; ih = iw / BADGE_BOX_ASPECT;
       ix = x + (w - iw) / 2; iy = y + (h - ih) / 2;
     }
@@ -308,6 +317,12 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       try { haveFace = !title || document.fonts?.check?.(`${px}px ${FACE}`) !== false; } catch { /* assume it */ }
       if (title && !haveFace) title.style.fontFamily = STAND_IN;
       svg.appendChild(g);
+      if (title) {
+        try {
+          const room = vp.width * CARD_TITLE_MAX_WIDTH, len = title.getComputedTextLength();
+          if (len > room) title.style.fontSize = `${(Number(px) * room / len).toFixed(1)}px`;
+        } catch { /* no measure: the declared size */ }
+      }
       card = g;
       cardAt = performance.now();
       mark(haveFace ? 'card-shown' : 'card-shown-stand-in-face');
