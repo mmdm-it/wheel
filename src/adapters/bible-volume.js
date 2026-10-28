@@ -192,21 +192,33 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     loaded.add(edition.code);
   };
   const loaded = new Set();
-  // THE FIRST EDITION HAS THE PIPE TO ITSELF (O-183): its bundle left with
-  // the wave; the other editions' bundles leave only once it has landed, so
-  // a megabyte the reader is not waiting for does not slow the one they are.
-  // `ready(code)` still hands out each edition's promise; it simply begins
-  // later. With no first edition named, every edition loads together, which
-  // is what the suites and the fixtures expect.
+  // THE FIRST EDITION HAS THE PIPE TO ITSELF (O-183), AND SO DOES THE FIRST
+  // VERSE (O-227). O-183 held the other editions' bundles until the first
+  // edition's had landed — and released them half a second BEFORE the boot
+  // asked for the verse's own text. A browser opens six connections to a
+  // server; fourteen bundles of four megabytes took all six, and the 138 KB
+  // the reader was actually waiting for queued behind them: 2.1 s on the
+  // LAN, 1.8 s from the room, measured 2026-10-28 (Howell: "a very long
+  // delay at boot, waiting for the verse text to appear"). So the gate is
+  // now the first text file in hand — loadText opens it — or the first ask
+  // for another edition (`wake(code)`: a reader turning the edition ring
+  // is not kept waiting), or a fallback delay for a boot that lands on
+  // no verse at all. With no first edition named, every edition loads
+  // together, which is what the suites and the fixtures expect.
+  const BACKGROUND_FALLBACK_MS = 4000;
+  let releaseBackground = () => {};
+  const background = new Promise(resolve => { releaseBackground = resolve; });
   const editionLoads = new Map();
   if (first) {
     const firstLoad = loadEdition(first, firstBundleWave);
     editionLoads.set(first.code, firstLoad);
-    const behind = firstLoad.catch(() => {});
+    const behind = firstLoad.catch(() => {}).then(() => background);
     for (const e of editions) if (e.code !== first.code) editionLoads.set(e.code, behind.then(() => loadEdition(e)));
     await firstLoad;
     for (const [code, p] of editionLoads) if (code !== first.code) p.catch(() => { /* reported inside */ });
+    setTimeout(releaseBackground, BACKGROUND_FALLBACK_MS);
   } else {
+    releaseBackground();
     for (const e of editions) editionLoads.set(e.code, loadEdition(e));
     await Promise.all(editionLoads.values());
   }
@@ -263,6 +275,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     try {
       if (!chart) throw new Error(`no chart for ${bookId}`);
       const file = await fetchJson(at({ kind: 'text', unitId: bookId, edition: code }));
+      releaseBackground();   // the first verse is in hand: the other shelves may stock (O-227)
       records = normalizeUnitText({
         editions: { [code]: file },
         declared: [code],
@@ -299,7 +312,12 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     base,
     // THE SHELVES STILL STOCKING (O-175): the first edition is in hand when
     // this returns; the rest arrive behind it.
+    // `ready` and `allReady` are a wish to be TOLD — the boot subscribes to
+    // every edition before it has painted a verse — and open nothing. `wake`
+    // is a wish to START: a reader settling the edition ring on another
+    // edition, or previewing one, is not kept waiting for a verse (O-227).
     ready(code) { return editionLoads.get(code) || Promise.resolve(); },
+    wake(code) { if (code && code !== first?.code) releaseBackground(); return editionLoads.get(code) || Promise.resolve(); },
     allReady() { return Promise.all(editionLoads.values()).then(() => undefined); },
     isReady(code) { return loaded.has(code); },
     // The storage layer, named for what it is (O-92). No reader ever meets a
@@ -367,9 +385,10 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
 
     // THE MARGIN COVERING AN ADDRESS, or null (W-165).
     //
-    // Null is the ORDINARY answer and carries no complaint: only one edition
-    // has an apparatus at all, only 47 of its books are captured, and 226 of
-    // its blocks are held for a reading the page has to settle. W-131 and
+    // Null is the ORDINARY answer and carries no complaint: two editions have
+    // an apparatus (the Septuagint's Swete, the German's Menge, W-286), and of
+    // the Septuagint only 47 books are captured and 226 of its blocks are held
+    // for a reading the page has to settle. W-131 and
     // W-133 put the margin on its own ladder precisely so its absence gates
     // nothing — an edition ships fully proofread with an empty margin, for as
     // long as that takes.
@@ -455,7 +474,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
       // the reader, which is the wrong half of the bargain.
       const standing = block.base ? [block.base, ...marks] : marks;
       const entries = entriesAt(block, address, order);
-      return { entries, manuscripts: manuscriptsIn(entries.map(e => e.text).join(' '), legendCached(), unitId) };
+      return { entries, manuscripts: manuscriptsIn(entries.map(e => e.text).join(' '), legendCached(edition), unitId) };
     },
 
     // The chart for a (unit, edition), or null. Null is a real answer here —
@@ -793,6 +812,27 @@ function seatIndexFor(volume, edition) {
   });
   perVolume.set(edition, { charts, byUtterance });
   return byUtterance;
+}
+/**
+ * THE SEAT AN EDITION GIVES A LEAF — its book AND its label (O-228). The seat
+ * index above answers the book; the label is the key the book's text file is
+ * read by, and a preview of another edition's verse needs both: the words
+ * live in THAT edition's own book, under THAT edition's own number. Null when
+ * the edition does not seat the leaf (the Hebrew at a verse of Matthew).
+ */
+export function seatOfUtterance(volume, edition, utteranceId) {
+  const book = bookSeatingUtterance(volume, edition, null, utteranceId);
+  if (!book) return null;
+  const chart = volume.chartFor?.(book, edition);
+  const seats = Array.isArray(chart?.seats) ? chart.seats : null;
+  if (!seats) return null;
+  const at = seats.findIndex(s => Array.isArray(s?.utterances) && s.utterances.includes(utteranceId));
+  if (at < 0) return null;
+  // The text file is keyed "group:seat" in the edition's own labels (the
+  // chart's groups are its chapters, from..to over the seats, 1-based).
+  const group = (chart.groups || []).find(g => g.from <= at + 1 && at + 1 <= g.to);
+  const label = String(seats[at].label);
+  return { book, key: group ? `${group.label}:${label}` : label };
 }
 /** Build the edition's seat index now, at rest, so the first question is answered from it. */
 export function primeSeatIndex(volume, edition) {

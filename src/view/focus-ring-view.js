@@ -511,10 +511,20 @@ export class FocusRingView {
       const outerY = seat.discY;
 
       const showOuter = parentButtons?.showOuter !== false;
-      // The disc is an AFFORDANCE (Howell 2026-07-23): it draws only when
-      // tapping it migrates data. A context-only label — the top ring's
-      // passing country — gets its words with no vessel.
+      // THE VESSEL IS PERSISTENT (O-222, Howell 2026-10-26: "This stroke
+      // should be persistent and never disappear. Even if it's empty, the
+      // parent button stroke should be there to indicate the parent button
+      // location and also to provide a destination for a drill in from the
+      // root"). It used to draw only when tapping it migrated data (Howell
+      // 2026-07-23), and that left the root — the top ring in the lens,
+      // nothing above — with no vessel at all until the first migration
+      // began. Now an EMPTY vessel is drawn: the outline, no words, no
+      // role, no key. The adapter's showOuter/actionable still say whether
+      // anything sits in it; `absent` is the one case the seat leaves
+      // entirely (the search ring, where the tool takes the seat).
       const actionable = parentButtons?.actionable !== false;
+      const absent = parentButtons?.absent === true;
+      const occupied = showOuter && actionable;
       // The seat can wear an ICON instead of vessel+words: the countries
       // ring's world globe — tap it and everything returns. The glyph is a
       // PERSISTENT element, reused across renders like the vessel disc — a
@@ -539,22 +549,32 @@ export class FocusRingView {
         this.parentWorldGlyph.setAttribute('display', 'none');
         this.parentWorldGlyph.onclick = null;
       }
-      if (showOuter && actionable && !worldIcon) {
+      if (!absent && !(showOuter && worldIcon)) {
         this.parentButtonOuter.setAttribute('cx', outerX);
         this.parentButtonOuter.setAttribute('cy', outerY);
         this.parentButtonOuter.setAttribute('r', magRadius);
-        this.parentButtonOuter.setAttribute('role', 'button');
-        this.parentButtonOuter.setAttribute('tabindex', '0');
         this.parentButtonOuter.removeAttribute('display');
+        this.parentButtonOuter.classList.toggle('parent-empty', !occupied);
         // NO POINTER CLICK ON THE PARENT (O-191, Howell 2026-10-01: taps no
         // longer drill; a swipe towards the sky does). The keyboard keeps its
         // Enter and Space, for the reader who has no thumb on the glass.
         this.parentButtonOuter.onclick = null;
-        this.#attachKeyActivation(this.parentButtonOuter, parentButtons?.onOuterClick || null);
         this.parentButtonOuter.style.cursor = 'default';
-        this.parentButtonOuter.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
-        const ariaLabel = parentButtons?.outerLabel || 'Parent';
-        this.parentButtonOuter.setAttribute('aria-label', ariaLabel);
+        if (occupied) {
+          this.parentButtonOuter.setAttribute('role', 'button');
+          this.parentButtonOuter.setAttribute('tabindex', '0');
+          this.#attachKeyActivation(this.parentButtonOuter, parentButtons?.onOuterClick || null);
+          this.parentButtonOuter.classList.toggle('shifted-out', Boolean(parentButtons?.isLayerOut));
+          const ariaLabel = parentButtons?.outerLabel || 'Parent';
+          this.parentButtonOuter.setAttribute('aria-label', ariaLabel);
+        } else {
+          // An empty vessel is scenery: no role, no focus stop, no name.
+          this.parentButtonOuter.removeAttribute('role');
+          this.parentButtonOuter.removeAttribute('tabindex');
+          this.parentButtonOuter.removeAttribute('aria-label');
+          this.#attachKeyActivation(this.parentButtonOuter, null);
+          this.parentButtonOuter.classList.toggle('shifted-out', false);
+        }
       } else {
         this.parentButtonOuter.setAttribute('display', 'none');
         this.parentButtonOuter.onclick = null;

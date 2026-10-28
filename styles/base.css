@@ -613,6 +613,12 @@ svg :focus-visible {
   stroke: var(--color-magnifier-stroke, #000);
   stroke-width: 1px;
 }
+/* THE EMPTY VESSEL (O-222, Howell 2026-10-26): at the root nothing sits in
+   the parent button, but the vessel stays drawn — the outline alone, as it
+   looks mid-flight before a node arrives — so the seat is always on the
+   glass and a drill from the lens has a destination. The fill is the data;
+   an empty vessel has none. */
+.focus-ring-parent-circle.parent-empty { fill: none; }
 
 .focus-ring-magnifier-label {
   fill: var(--color-text);

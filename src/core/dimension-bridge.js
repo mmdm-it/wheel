@@ -98,6 +98,13 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // reaches. The host pushes it; the adapter computes it; nothing here knows
   // what a chart is.
   let here = null;
+  // EDITIONS STILL ARRIVING (O-224, Howell 2026-10-26): the shelves stock
+  // after boot (O-175), so an edition whose charts have not landed cannot
+  // yet say whether it holds the reader's place. It is neither here nor
+  // absent: it stands on its ring HOLLOW under its own name until its
+  // shelf lands, like a placeholder, and fills when the host re-asks. The
+  // adapter knows which; the host pushes the list, as it pushes `here`.
+  let arriving = [];
 
   // Regenerate ON SETTLE only (Howell ruling 2026-07-20): one notification
   // per committed change, never a stream. The store is synchronous, so
@@ -278,9 +285,18 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     }
     return shown;
   };
-  const declaredShelves = () => new Set(Object.entries(meta?.coming || {})
-    .filter(([id, shelf]) => !id.startsWith('_') && Array.isArray(shelf) && shelf.length > 0)
-    .map(([id]) => id));
+  const declaredShelves = () => {
+    const promised = new Set(Object.entries(meta?.coming || {})
+      .filter(([id, shelf]) => !id.startsWith('_') && Array.isArray(shelf) && shelf.length > 0)
+      .map(([id]) => id));
+    // A tongue with an edition still arriving (O-224) stands hollow too,
+    // whether or not a shelf was declared for it.
+    for (const code of arriving) {
+      const t = meta?.translations?.[code];
+      if (t?.language && isServable(t)) promised.add(t.language);
+    }
+    return promised;
+  };
 
   // The chronological language registry supplied at boot. When present it is
   // the ONE source of the secondary ring's order and labels; without it we
@@ -310,6 +326,8 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // must not be confused (the same distinction `chartedUnitsOf` draws under
     // O-71, for the same reason).
     setEditionsHere(codes) { here = Array.isArray(codes) ? codes.slice() : null; },
+    setEditionsArriving(codes) { arriving = Array.isArray(codes) ? codes.filter(c => typeof c === 'string') : []; },
+    editionsArriving() { return arriving.slice(); },
 
     // The current position filter, for diagnostics and for the one cell that
     // can observe O-75: null means no restriction. Read-only — a copy, so a
@@ -433,7 +451,11 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // the key. Unselected nodes keep the abbreviation (Howell 2026-07-22).
     translationName(key, languageHint = null) {
       if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
-      if (isComingKey(key)) return key.slice(COMING_PREFIX.length);
+      if (isComingKey(key)) {
+        const inner = key.slice(COMING_PREFIX.length);
+        if (!meta?.translations?.[inner]) return inner;
+        key = inner;   // an arriving edition, hollow, under its own name (O-224)
+      }
       const t = meta?.translations?.[key];
       return t?.nativeName || t?.name || key;
     },
@@ -443,7 +465,11 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // sentinel key — it stays in the native phrase even scrubbed out of the lens
     // (there is no abbreviation for a promise — Howell 2026-07-22).
     translationAbbrev(key, languageHint = null) {
-      if (isComingKey(key)) return key.slice(COMING_PREFIX.length);   // a placeholder wears its own name (O-184)
+      if (isComingKey(key)) {
+        const inner = key.slice(COMING_PREFIX.length);
+        if (!meta?.translations?.[inner]) return inner;   // a placeholder wears its own name (O-184)
+        key = inner;   // an arriving edition, hollow, under its own short name (O-224)
+      }
       if (key === COMING_SOON_KEY) return comingSoonText(languageHint || currentLanguage());
       // THE RING SPEAKS SHORT, IN ITS OWN SCRIPT (O-97, Howell 2026-08-23),
       // choosing between three of his own rulings that had collided on this
@@ -602,20 +628,33 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       // Nothing to read here and no shelf declared: the sentinel. With a
       // shelf declared the ring shows it hollow (O-208) — a tongue on the
       // roadmap has its editions to show even where it has no text.
-      if (!seated.length && !declared) return [COMING_SOON_KEY];
+      // With no declared shelf the ring is the seated editions, then any
+      // still arriving, hollow (O-224); with nothing at all, the sentinel.
+      if (!declared) {
+        const hollow = arriving.filter(c => meta?.translations?.[c]?.language === lang && isServable(meta.translations[c]) && !seated.includes(c)).map(c => COMING_PREFIX + c);
+        const ring = seated.concat(hollow);
+        return ring.length ? ring : [COMING_SOON_KEY];
+      }
       // The declared shelf, in its order (O-184): seated editions in place,
-      // placeholders between them; a declared edition not seated here (an
-      // edition the reader's position filters out, or one still arriving)
-      // is left out, and a seated edition the shelf forgot is appended.
-      if (!declared) return seated;
+      // placeholders between them; a declared edition that has landed and is
+      // not seated here (the reader's position filters it out) is left out,
+      // and a seated edition the shelf forgot is appended.
       const out = [];
+      // A real edition still ARRIVING (O-224) stands hollow in its place,
+      // provided the gate would show it at all; a real edition that has
+      // landed and does not hold the reader's place is left out.
+      const hollowIfArriving = code => (arriving.includes(code) && isServable(meta?.translations?.[code]) ? COMING_PREFIX + code : null);
       for (const entry of shelf) {
         if (typeof entry !== 'string' || !entry) continue;
         if (seated.includes(entry)) { if (!out.includes(entry)) out.push(entry); }
-        else if (meta?.translations?.[entry]) continue;   // a real edition, not on this ring today
+        else if (meta?.translations?.[entry]) { const h = hollowIfArriving(entry); if (h && !out.includes(h)) out.push(h); }
         else out.push(COMING_PREFIX + entry);
       }
       for (const code of seated) if (!out.includes(code)) out.push(code);
+      for (const code of arriving) {
+        if (meta?.translations?.[code]?.language !== lang || seated.includes(code)) continue;
+        const h = hollowIfArriving(code); if (h && !out.includes(h)) out.push(h);
+      }
       // A shelf naming only real editions that are elsewhere leaves nothing
       // to show: the sentinel, as before.
       return out.length ? out : [COMING_SOON_KEY];
@@ -624,6 +663,9 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // A placeholder seat (O-184): drawn hollow, labelled with its name,
     // never committed. The host asks rather than knowing the prefix.
     isComing(key) { return isComingKey(key); },
+    // The edition a ring key names, hollow or not (O-228): a plan made while
+    // the shelves are still stocking sees most editions as hollow keys.
+    editionOfKey(key) { if (!key || key === COMING_SOON_KEY) return null; return isComingKey(key) ? key.slice(COMING_PREFIX.length) : key; },
 
     // The substituted-verse footer, in the READER'S chosen tongue (W-6,
     // mark #3): the person who asked for Russian is told in Russian.

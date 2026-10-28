@@ -25,9 +25,19 @@
 //
 //     0 – 1500   the card                       (longer if the instrument is not ready)
 //  1500 – 1850   the card fades; the app stands at the language ring
-//  1850 – 2250   it holds there
-//  2250 – 5050   the migration in, two floors, one motion
-//  5050          the text
+//  1850 – 2250   it holds there, the lens on the first tongue of the ring
+//  2250 –        the language ring TURNS to the reader's tongue (O-225), rests,
+//                trucks in to the editions; the edition ring turns from its
+//                newest seat back to the reader's edition, rests, trucks in
+//                to the text — see filmBeats for the clock
+//
+// Howell, 2026-10-26 (O-225): "the truck in really serves as our only mini
+// tutorial ... each focus ring rotates slowly enough to register what's
+// happening. In the case of the tertiary stratum, it would start with
+// Hebrew, then go through Greek, Latin, and any others to finally stop on
+// English. In the case of the secondary stratum ... I propose making an
+// exception there and going in reverse chronological order, rotating from
+// Catholic public domain to Douay Rheims." A tap ends the film.
 //
 // The volume declares the card's picture and words (display_config.splash);
 // the engine remembers them on the phone so a return visit's card is up
@@ -44,9 +54,123 @@ const T = {
   revealMs: 350,      // the card fading off the standing app (Howell 2026-09-30: 200, then 350)
   holdMs: 400,        // the app at its language ring
   stepMs: 1400,       // each floor of the migration
+  seatMs: 500,        // a turn's pace: one seat past the lens per half second (O-225)
+  restMs: 300,        // the lens at rest, filled, before the truck begins (O-225)
   quickOutMs: 400     // a volume with no floors to migrate through: the card simply lifts
 };
 const easeIn = t => t * t, easeOut = t => 1 - (1 - t) * (1 - t);
+const easeInOut = t => (t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2);
+
+// ── THE FILM'S BEATS (O-225, Howell 2026-10-26) ─────────────────────────
+// Before each truck the ring about to be left TURNS, with the engine's own
+// turn — the hollow lens, the seats streaming through it, the planes ahead
+// following whatever is under the lens — from the far end of the ring to
+// the seat the reader is resting on; rests there a beat, filled; and then
+// the truck begins. Which end is far, and whether there is a turn at all, is
+// the engine's plan (drive.turn(front)): the language ring turns from its
+// first seat forward (Hebrew to English), the edition ring from its last
+// seat backward (the newest promise to the Douay, which forward would have
+// been one step, King James to Douay, and taught nothing); null when the
+// ring has one seat or the reader rests at the far end.
+//
+// TURN, THEN TRUCK — not both at once as first proposed, and conceded. A
+// truck descends into whatever is in the lens, and the editions drawn inside
+// the language ring are the lens tongue's shelf: a ring still turning under
+// a truck lands on a shelf the reader saw for a frame. The join between the
+// two trucks, straight through when nothing turned, eases to a stop where a
+// turn waits.
+//
+// THE HOLLOW SEATS STAY HOLLOW through the film (the proposal to fill them
+// was withdrawn the same morning): six named hollow seats passing the lens
+// one after another are the one place a stranger learns what a hollow seat
+// means, and on a cleared cache the King James is hollow for a true reason
+// during these very seconds (O-224). The text's own levels are not walked.
+export function filmBeats({ turnA = null, turnB = null } = {}, t = T) {
+  const seats = p => (p ? Math.abs(p.to - p.from) : 0);
+  const beats = [];
+  if (turnA) beats.push({ kind: 'turn', front: 2, plan: turnA, ms: seats(turnA) * t.seatMs }, { kind: 'rest', front: 2, plan: turnA, ms: t.restMs });
+  // The arriving edition ring is drawn with its lens on the seat the next
+  // turn starts from, so the truck lands where the turn begins.
+  beats.push({ kind: 'truck', from: 2, to: 1, ms: t.stepMs, ease: turnB ? easeInOut : easeIn, seat: turnB ? { 1: turnB.from } : null });
+  if (turnB) beats.push({ kind: 'turn', front: 1, plan: turnB, ms: seats(turnB) * t.seatMs }, { kind: 'rest', front: 1, plan: turnB, ms: t.restMs });
+  beats.push({ kind: 'truck', from: 1, to: 0, ms: t.stepMs, ease: turnB ? easeInOut : easeOut, seat: null });
+  let at = 0;
+  for (const b of beats) { b.start = at; at += b.ms; }
+  return { beats, totalMs: at };
+}
+// A turn's pace: up to speed within three quarters of a seat, a steady seat
+// a beat through the middle, down again at the end — every seat passes the
+// lens at the same readable speed, where one ease over the whole turn would
+// rush the middle of a long ring.
+export function turnEase(u, seats) {
+  u = Math.max(0, Math.min(1, u));
+  const r = Math.min(0.5, 0.75 / Math.max(1, seats));
+  const v = 1 / (1 - r);
+  if (u < r) return v * u * u / (2 * r);
+  if (u > 1 - r) return 1 - v * (1 - u) * (1 - u) / (2 * r);
+  return v * (u - r / 2);
+}
+// THE DRILLER: the app walks its own floors on the film's clock. `drive` is
+// the engine's (main.js): setFront/render/glide for the trucks as before
+// (O-181); turn/turnAt/turnRest/turnEnd for the turns (O-225); thumb,
+// unslide and arrive for the globe and the landing. Exported so a fake drive
+// can be walked under a test.
+export function makeDriller(drive) {
+  const turnA = drive.turn?.(2) || null, turnB = drive.turn?.(1) || null;
+  const { beats, totalMs } = filmBeats({ turnA, turnB });
+  let current = -1, glide = null, standing = false;
+  const enter = (i, beat) => {
+    current = i;
+    if (beat.kind === 'truck') {
+      drive.turnEnd?.();
+      drive.setFront(beat.from);
+      glide = drive.glide(beat.from, beat.to, beat.seat ? { seatAt: beat.seat } : undefined);
+      return;
+    }
+    // A turn or a rest paints from the floor's settled state; a truck in
+    // flight (forward, or scrubbed back over) is left at its end first.
+    if (glide) { glide.frameAt(1); glide = null; }
+    drive.setFront(beat.front);
+    if (beat.kind === 'turn') drive.render();
+    drive.turnRest?.(beat.front, beat.kind === 'turn' ? beat.plan.from : beat.plan.to);
+    drive.thumb?.(beat.front);
+  };
+  return {
+    migrationMs: totalMs,
+    // At the language ring, still — the lens on the seat the first turn
+    // starts from, the planes ahead already following it.
+    stand() {
+      if (standing) return;
+      current = -1; glide = null; standing = true;
+      drive.setFront(2); drive.render();
+      if (turnA) drive.turnRest?.(2, turnA.from);
+      drive.thumb?.(2);
+    },
+    // The globe (the slider's thumb) rides the walk exactly as the floors
+    // do: two notches up at the language ring, home at the text.
+    at(ms) {
+      standing = false;
+      let i = beats.findIndex(b => ms < b.start + b.ms);
+      if (i < 0) i = beats.length - 1;
+      const beat = beats[i];
+      if (i !== current) enter(i, beat);
+      const u = beat.ms > 0 ? Math.max(0, Math.min(1, (ms - beat.start) / beat.ms)) : 1;
+      if (beat.kind === 'truck') { const e = beat.ease(u); glide.frameAt(e); drive.thumb?.(beat.from - e); }
+      else if (beat.kind === 'turn') { const { from, to } = beat.plan; drive.turnAt?.(beat.front, from + (to - from) * turnEase(u, Math.abs(to - from))); }
+    },
+    // The thumb is set home and the hand taken off BEFORE the settle: the
+    // settle un-presses the globe, and that step down must ride the globe's
+    // own transition, which the sliding hand suppresses. A preview left by a
+    // turn is ended first, so the text behind the glass is the committed one.
+    finish() {
+      drive.turnEnd?.();
+      if (glide) glide.frameAt(1);
+      drive.thumb?.(0); drive.unslide?.(); drive.setFront(0);
+      if (glide) glide.settle(); else drive.render();
+      drive.arrive?.();
+    }
+  };
+}
 
 export function overtureShouldPlay() {
   if (typeof window === 'undefined' || typeof document === 'undefined') return false;
@@ -176,32 +300,8 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   showCard(splash);
   const lingered = now => !cardPending && (!card || now >= cardAt + T.splashMs);
 
-  // ── THE MIGRATION: the app walks its own floors on this clock ──────────
+  // ── THE MIGRATION: the app walks its own floors on this clock (makeDriller above) ──
   let driller = null;
-  const makeDriller = drive => {
-    let step = 0, glide = null, standing = false;
-    const ensure = want => {
-      if (step === want && glide) return;
-      standing = false;
-      if (want === 1) { drive.setFront(2); drive.render(); glide = drive.glide(2, 1); }
-      else { drive.setFront(1); glide = drive.glide(1, 0); }
-      step = want;
-    };
-    return {
-      stand() { if (standing) return; step = 0; glide = null; drive.setFront(2); drive.render(); drive.thumb?.(2); standing = true; },   // at the language ring, still
-      // The globe (the slider's thumb) rides the walk exactly as the floors
-      // do: two notches up at the language ring, home at the text.
-      at(ms) {
-        const e1 = Math.max(0, Math.min(1, ms / T.stepMs)), e2 = Math.max(0, Math.min(1, (ms - T.stepMs) / T.stepMs));
-        if (ms < T.stepMs) { ensure(1); const e = easeIn(e1); glide.frameAt(e); drive.thumb?.(2 - e); }
-        else { ensure(2); const e = easeOut(e2); glide.frameAt(e); drive.thumb?.(1 - e); }
-      },
-      // The thumb is set home and the hand taken off BEFORE the settle: the
-      // settle un-presses the globe, and that step down must ride the
-      // globe's own transition, which the sliding hand suppresses.
-      finish() { if (glide) glide.frameAt(1); drive.thumb?.(0); drive.unslide?.(); drive.setFront(0); if (glide) glide.settle(); else drive.render(); drive.arrive?.(); }
-    };
-  };
   // The film from the card's last full frame: the reveal, the hold, the migration.
   const render = t => {
     svg.style.opacity = String(Math.max(0, 1 - t / T.revealMs));
@@ -209,7 +309,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     if (ms < 0) driller.stand(); else { if (!migrating) { migrating = true; mark('migration-start'); } driller.at(ms); }
   };
   let migrating = false;
-  const filmMs = T.revealMs + T.holdMs + 2 * T.stepMs;
+  let filmMs = 0;   // the reveal, the hold, and the migration's own beats — known once the driller is
   const liftQuickly = () => {   // no floors: the card lifts off the standing app after its linger
     const tick = now => {
       if (done) return;
@@ -230,8 +330,20 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       if (done) return;
       if (!drive) { liftQuickly(); return; }
       driller = makeDriller(drive);
+      filmMs = T.revealMs + T.holdMs + driller.migrationMs;
       mark('ready');
       if (scrub) { driller.stand(); mountScrub(); return; }
+      // A TAP ENDS THE FILM (O-225): the walk is for a stranger, and the
+      // hundredth launch need not sit through it. The sheet is over
+      // everything for the whole film, so it is the sheet that hears the tap;
+      // the app lands on the text at once, exactly as the film would have
+      // left it.
+      svg.addEventListener('pointerdown', () => {
+        if (done) return;
+        cancelAnimationFrame(raf);
+        mark('tapped-off');
+        driller.finish(); remove();
+      }, { once: true });
       // The floors are left at the text until the card is about to lift —
       // the app boots to the text (O-143) and anything reading it in the
       // meantime (the suites do) finds it there; standing at the language

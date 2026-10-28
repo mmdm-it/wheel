@@ -47,7 +47,7 @@ EX=(
   --exclude='.DS_Store' --exclude='*.swp' --exclude='*.log'
   --exclude='docs/' --exclude='art/' --exclude='src/' --exclude='*.map'
   --exclude='sync-to-server.sh' --exclude='bump-version.sh'
-  --exclude='CHANGELOG.md' --exclude='README.md'
+  --exclude='CHANGELOG.md' --exclude='README.md' --exclude='scripts/.scratch/'
   --exclude='data/' --filter='P data/'
 )
 

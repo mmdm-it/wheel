@@ -164,3 +164,53 @@ describe('FocusRingView accessibility', () => {
     });
   });
 });
+
+describe('the parent vessel is persistent (O-222)', () => {
+  let view, svgRoot, originalDocument;
+  const viewport = { SSd: 800, LSd: 800, height: 800 };
+  const renderWith = parentButtons => view.render([
+    { item: { id: 'a', name: 'Alpha' }, x: 10, y: 10, radius: 12, angle: 0, label: 'Alpha' }
+  ], { hubX: 100, hubY: 100, radius: 120 }, { startAngle: 0, endAngle: Math.PI }, { x: 0, y: 0, radius: 12, angle: 0 }, {
+    viewport, magnifierAngle: 0, labelMaskEpsilon: 0, parentButtons
+  });
+  beforeEach(() => {
+    originalDocument = globalThis.document;
+    globalThis.document = createMockDocument();
+    svgRoot = createMockElement('svg');
+    view = new FocusRingView(svgRoot);
+    view.init();
+  });
+  afterEach(() => { globalThis.document = originalDocument; });
+
+  it('draws an empty vessel at the root: outline on the glass, no role, no focus stop', () => {
+    renderWith({ showOuter: false, outerLabel: '' });
+    const outer = view.parentButtonOuter;
+    assert.notEqual(outer.getAttribute('display'), 'none', 'the vessel stays drawn with nothing above');
+    assert.ok(outer.classList.contains('parent-empty'));
+    assert.equal(outer.getAttribute('role'), null);
+    assert.equal(outer.getAttribute('tabindex'), null);
+    const evt = { key: 'Enter', prevented: false, preventDefault() { this.prevented = true; } };
+    if (typeof outer.onkeydown === 'function') outer.onkeydown(evt);
+    assert.equal(evt.prevented, false, 'Enter on an empty vessel does nothing');
+  });
+
+  it('a context-only seat (not actionable) keeps the vessel too', () => {
+    renderWith({ showOuter: true, actionable: false, outerLabel: 'Italy' });
+    assert.notEqual(view.parentButtonOuter.getAttribute('display'), 'none');
+    assert.ok(view.parentButtonOuter.classList.contains('parent-empty'));
+  });
+
+  it('an occupied seat is a button again, and the empty class is gone', () => {
+    renderWith({ showOuter: false });
+    renderWith({ showOuter: true, onOuterClick: () => {}, outerLabel: 'Parent' });
+    const outer = view.parentButtonOuter;
+    assert.equal(outer.classList.contains('parent-empty'), false);
+    assert.equal(outer.getAttribute('role'), 'button');
+    assert.equal(outer.getAttribute('tabindex'), '0');
+  });
+
+  it('only the search ring removes the seat entirely', () => {
+    renderWith({ showOuter: false, absent: true });
+    assert.equal(view.parentButtonOuter.getAttribute('display'), 'none');
+  });
+});

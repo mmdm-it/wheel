@@ -581,6 +581,19 @@ function toggleKeep(keyOrId) {
 // state. Preview always ENDS in a commit (the springback settles the nearest
 // node), so what the reader watched is what they get.
 let strataPreview = null;                  // { language, edition } | null
+// THE OVERTURE'S TURNS CARRY THE TEXT WITH THEM (O-228, Howell 2026-10-28:
+// "we need to see the distant blurry text of the detail sector change as
+// the ring rotates from Hebrew to English, and then ... from public domain
+// Catholic to Douay Rheims. It's important to see this to illustrate what's
+// going on. It looks odd to see the ring rotate and the text not change
+// behind it"). O-225 had muted the preview during the film's turns because
+// each first paint of the text in a new tongue cost the bench a 70-80 ms
+// hitch at a seat crossing; Howell weighed that against the film's one job,
+// the mini tutorial, and chose the text. So the film's turn previews exactly
+// as a finger's does: the verse behind the glass follows the seat under the
+// lens, in the next frame. The mute survives only as a switch — every glide
+// and the film's end clear it — for a floor that must turn in silence.
+let previewTextMuted = false;
 const isStrataOpen = () => strataFront !== 0;
 const isSecondaryOpen = isStrataOpen;      // the primary pointer guard reads this
 // The dimension feature lives IN the detail sector: strata recede only when
@@ -661,6 +674,41 @@ let searchOpeningAllowed = null;// characters the opening ring is pruned to when
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
 let bookmarkPrompt = null;   // O-128: the volume's own words for "bookmark this", per tongue
+let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
+let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
+
+// THE PAGE SPEAKS THE READER'S TONGUE (O-226, Howell 2026-10-27: "The 'edition
+// under review' disclaimer should appear in whatever language has been
+// selected for reading. When reading Latin, everything on the page should
+// appear in Latin. When reading Hebrew, everything on that page should appear
+// in Hebrew, and so on"). The engine holds no human words (O-43): every
+// phrase it shows beside the text is the VOLUME's, declared per tongue in
+// display_config, and picked here by the language the reader has chosen —
+// the bookmark prompt's road (O-128), now the road for all of them. A table
+// without the tongue falls back to its `default`; a volume without the table
+// keeps what the engine shipped with.
+function phraseFor(table) {
+  if (!table) return null;
+  if (typeof table === 'string' || Array.isArray(table)) return table;
+  const lang = dimensionBridge.getSelection()?.language || null;
+  return table[lang] ?? table.default ?? null;
+}
+function langDir() {
+  const lang = dimensionBridge.getSelection()?.language || null;
+  return ['hebrew', 'arabic', 'syriac'].includes(lang) ? 'rtl' : 'ltr';
+}
+// The copyright line as index.html ships it, kept so a volume without a table
+// (and every volume before its data loads) shows exactly what it always did.
+let copyrightShipped = null;
+function applyCopyrightTongue() {
+  if (typeof document === 'undefined') return;
+  const el = document.getElementById('copyright-notice');
+  if (!el) return;
+  if (copyrightShipped === null) copyrightShipped = el.textContent.trim();
+  const text = phraseFor(copyrightWords) || copyrightShipped;
+  if (el.textContent.trim() !== text) el.textContent = text;
+  el.setAttribute('dir', langDir());
+}
 let searchAllLabel = 'TUTTI';   // what the scope label says when nothing is filtered
 
 // IN SEARCH, the dividers take the parent disc's seat — directly under the
@@ -921,7 +969,7 @@ function exitSearchMode() {
   searchRestore = null;
   searchStruck = '';
   app.setPrimaryItems(restore.items, restore.selectedIndex, true);
-  app.setParentButtons({ showOuter: true }); // the vessel returns with the browse chain
+  app.setParentButtons({ showOuter: true, absent: false }); // the vessel returns with the browse chain
   if (searchStringEl) { searchStringEl.remove(); searchStringEl = null; }
   exitSearchLook({ svg }); // the lights come back up
   if (searchButton) searchButton.setAttribute('aria-pressed', 'false');
@@ -962,8 +1010,10 @@ function toggleSearchRing() {
   setSearchScopeLabel(svg, { text: lensLabel, x: seat.labelX, y: seat.labelY });
   app.setPrimaryItems(searchCharItems(searchOpeningAllowed), 0, true);
   // The parent button has no meaning over the character ring — no vessel,
-  // nothing to ascend to. It leaves entirely (Howell 2026-07-22).
-  app.setParentButtons({ showOuter: false });
+  // nothing to ascend to. It leaves entirely (Howell 2026-07-22) — the one
+  // seat the persistent vessel (O-222) does not keep, since the tool sits
+  // under the lens here.
+  app.setParentButtons({ showOuter: false, absent: true });
   if (searchButton) searchButton.setAttribute('aria-pressed', 'true');
 }
 if (searchButton) searchButton.addEventListener('click', toggleSearchRing);
@@ -1320,10 +1370,74 @@ function previewFromLens(ch, items, centerIndex) {
   previewFollow = requestAnimationFrame(() => {
     previewFollow = 0;
     renderStack({ keepFront: true });   // receded planes re-stock and re-seat
-    previewPrimary(strataPreview);      // and the text behind the glass follows
+    if (!previewTextMuted) previewPrimary(strataPreview);   // and the text behind the glass follows
   });
 }
 let previewFollow = 0;
+
+// THE OVERTURE'S TURN OF A FLOOR (O-225, Howell 2026-10-26: the truck in is
+// "our only mini tutorial", so before each truck the ring turns "slowly
+// enough to register what's happening"). The plan for one floor: the seat the
+// turn starts from and the seat it rests on — the committed selection, which
+// is where the truck must descend. The language ring turns from its FIRST
+// seat forward ("start with Hebrew, then go through Greek, Latin, and any
+// others to finally stop on English"); the edition ring from its LAST seat
+// backward ("reverse chronological order, rotating from Catholic public
+// domain to Douay Rheims" — forward would be one step, King James to Douay,
+// and teach nothing). Null when there is nothing to turn through: a ring of
+// one seat, or the reader resting at the far end already. The order of seats
+// is the ring's own, as the volume declares it; the resting seat is the
+// reader's, so a returning reader is walked to their own tongue and edition.
+function overtureTurn(front) {
+  const ch = CHOOSERS[front - 1];
+  if (!ch) return null;
+  const items = ch.items();
+  const to = items.indexOf(ch.selected());
+  if (to < 0 || items.length < 2) return null;
+  const from = ch.id === 'tertiary' ? 0 : items.length - 1;
+  if (from === to) return null;
+  warmOvertureTurn(ch, items, from, to);
+  return { from, to };
+}
+
+// THE TURN'S TEXT IS ASKED FOR BEFORE THE TURN (O-228). The film's turn
+// previews the verse behind the glass in every edition it passes, as a
+// finger's does; a finger's preview fetches that edition's book when the
+// lens crosses the seat and paints when it lands, which on the room is
+// longer than the lens rests on a seat. The plan names the seats the turn
+// will pass, so their editions' books are asked for now — each as its charts
+// come to hand (the shelves are still stocking behind the boot, O-227) — and
+// the crossing paints from memory. An edition that does not seat the leaf
+// has nothing to warm and will paint empty, honestly.
+function warmOvertureTurn(ch, items, from, to) {
+  const vol = currentManifest?.__wallVolume;
+  const warm = currentAdapter?.warmVerseIn;
+  if (!vol || typeof warm !== 'function') return;
+  const lo = Math.min(from, to), hi = Math.max(from, to);
+  // The keys are read for their EDITION: at boot the shelves are still
+  // stocking, so most seats the turn will pass are hollow keys now and real
+  // ones by the time the lens crosses them. A language's seat previews its
+  // first edition; a placeholder names no edition and warms nothing.
+  const codeOf = k => dimensionBridge.editionOfKey?.(k) ?? null;
+  const declared = code => Boolean(code) && (vol.editions || []).some(e => e?.code === code);
+  const editions = new Set();
+  for (let i = lo; i <= hi; i++) {
+    const item = items[i];
+    if (ch.id === 'tertiary') {
+      // the first of the tongue's editions that is declared — a withheld
+      // seat (the Italian's 1471) names no edition the volume can serve
+      const e = (dimensionBridge.translationsOf(item) || []).map(codeOf).find(declared);
+      if (e) editions.add(e);
+    } else { const e = codeOf(item); if (declared(e)) editions.add(e); }
+  }
+  for (const edition of editions) {
+    Promise.resolve(vol.ready?.(edition)).then(() => {
+      const item = currentApp?.nav?.getCurrent?.();
+      window.__wheelTapTrace?.push({ ev: 'overture-warm', tr: edition, item: item?.id || '-' });
+      if (item) warm(currentManifest, edition, item);
+    }, () => {});
+  }
+}
 
 // Ease the ring from wherever it settled (maybe out in the overrun) back to the
 // nearest real node — the SPRINGBACK that makes the last link go taut, and the
@@ -1489,7 +1603,11 @@ function layerStates(front) {
 // below); the SLIDER drives it from the thumb's position and settles on
 // release. Nothing about the state (strataFront, the funnel, the basement
 // visit) changes inside a glide; that is the caller's, at the settle.
-function beginGlide(fromFront, toFront) {
+// `lens` (O-225, the overture only): a chooser id → seat index, drawing that
+// plane with its lens on the given seat instead of the committed one, so an
+// arriving ring lands where the overture's next turn begins. Nothing is
+// committed by it; the next paint from committed state restores the seat.
+function beginGlide(fromFront, toFront, { lens = null } = {}) {
   if (bootOvertureLive && !bootOvertureGliding) { const o = bootOvertureLive; bootOvertureLive = null; o.abort(); }
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
   // A truck begun while a chooser ring is mid-turn (a second finger, or a
@@ -1501,6 +1619,7 @@ function beginGlide(fromFront, toFront) {
   strataDrag = null;
   strataPreview = null;
   lastPreviewKey = null;
+  previewTextMuted = false;
   if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
   if (strataHit) strataHit.style.pointerEvents = 'none';
   const from = layerStates(fromFront);
@@ -1514,7 +1633,8 @@ function beginGlide(fromFront, toFront) {
     const inFrom = pos <= fromFront, inTo = pos <= toFront;
     if (!inFrom && !inTo) { hideStratum(strataLayer, ch.id); return; }
     const items = ch.items();
-    groups[ch.id] = renderStratum(strataLayer, stratumOpts(ch, items, Math.max(0, items.indexOf(ch.selected()))));   // one options builder for every paint (O-184)
+    const seat = lens && Number.isInteger(lens[ch.id]) && lens[ch.id] >= 0 && lens[ch.id] < items.length ? lens[ch.id] : Math.max(0, items.indexOf(ch.selected()));
+    groups[ch.id] = renderStratum(strataLayer, stratumOpts(ch, items, seat));   // one options builder for every paint (O-184)
     // Past the film plane the plane keeps scaling about the same centre — the
     // course the magnifier was already on — until it is off the frame. NO
     // DISSOLVE (Howell, phone check 2026-09-14: "There should be no change in
@@ -1768,8 +1888,18 @@ function ensureIncompleteMarkEl() {
   // parent vessel's label).
   // EDITION, because CHECKED lifts the mark for the whole edition at once
   // (O-218): the words follow the grain the record carries.
+  // The words are the volume's, in the reader's tongue (O-226); English is
+  // only what a volume without the table keeps.
   ['edition', 'under review'].forEach(line => { const el = document.createElement('span'); el.className = 'incomplete-mark-line'; el.textContent = line; incompleteMarkEl.appendChild(el); });
   document.body.appendChild(incompleteMarkEl);
+}
+function applyReviewMarkTongue() {
+  if (!incompleteMarkEl) return;
+  const words = phraseFor(reviewMarkWords);
+  const lines = Array.isArray(words) ? words : ['edition', 'under review'];
+  const spans = incompleteMarkEl.querySelectorAll ? incompleteMarkEl.querySelectorAll('.incomplete-mark-line') : [];
+  lines.forEach((line, i) => { if (spans[i] && spans[i].textContent !== line) spans[i].textContent = line; });
+  incompleteMarkEl.setAttribute('dir', langDir());
 }
 
 function updateIncompleteMark() {
@@ -1827,6 +1957,8 @@ function updateIncompleteMark() {
   // the settle and going with it at the launch; above a leaf it says nothing.
   show = show && detailSectorVisible;
   ensureIncompleteMarkEl();
+  applyReviewMarkTongue();
+  applyCopyrightTongue();
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
     document.documentElement.classList.remove('incomplete-mark-showing');
@@ -2128,13 +2260,7 @@ const bookmarkHint = (() => {
     return h;
   } catch (_) { return null; }
 })();
-const bookmarkPhrase = () => {
-  const lang = dimensionBridge.getSelection()?.language || null;
-  const p = bookmarkPrompt;
-  if (!p) return '';
-  if (typeof p === 'string') return p;
-  return p[lang] || p.default || '';
-};
+const bookmarkPhrase = () => phraseFor(bookmarkPrompt) || '';
 function showHint(text) {
   if (!bookmarkHint?.classList) return;
   bookmarkHint.textContent = text;
@@ -2300,6 +2426,12 @@ if (typeof window !== 'undefined') {
     get: () => dimensionBridge.getSelection(),
     set: id => dimensionBridge.setTranslation(id) || dimensionBridge.setLanguage(id),
     languages: () => dimensionBridge.languagesAvailable(),
+    // The edition ring as the bridge would draw it, and the shelves still
+    // stocking (O-224) — for the bench and the boot tests.
+    ring: lang => dimensionBridge.translationsOf(lang || dimensionBridge.getSelection().language),
+    arriving: () => dimensionBridge.editionsArriving?.() || [],
+    turnPlan: front => overtureTurn(front),   // the overture's turn of a floor (O-225): { from, to } or null
+    hollow: key => Boolean(dimensionBridge.isComing?.(key)),
     // Null while the launch funnel is up (O-75), the reader's position after.
     here: () => dimensionBridge.editionsHere(),
     // IS THE LAUNCH FUNNEL STILL UP? (O-77.) Read-only, for the guard that
@@ -3951,6 +4083,7 @@ let currentParentLabel = null;
 // that has no path back into bootVolume's scope, and it needs the wall
 // volume's own answer for which section holds a book.
 let currentManifest = null;
+let currentAdapter = null;   // the volume's adapter, for the film's warm (O-228)
 let currentVolumeId = null;
 let gatewayReturnContext = null;
 let interactionsWired = false;
@@ -4402,6 +4535,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
   bookmarkPrompt = root?.display_config?.bookmark_prompt || null;
+  reviewMarkWords = root?.display_config?.review_mark || null;
+  copyrightWords = root?.display_config?.copyright_notice || null;
   if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
     const leafLevel = root?.display_config?.leaf_level || null;
     searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));
@@ -4631,6 +4766,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   });
   currentApp = app;
   currentManifest = manifest;
+  currentAdapter = adapter;
   ensureIncompleteMarkEl();   // before the reveal recedes the plane (O-125)
   currentDetailRerender = part => renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
     { translation: activeTranslation(), part });
@@ -4748,6 +4884,36 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // WHEN EVERY SHELF IS STOCKED (O-175), one quiet redraw seats whatever
   // waited on another edition — a bookmark to its leaf, a hit on its ring.
   manifest?.__wallVolume?.allReady?.().then(() => { if (currentApp === app) app?.refreshPyramid?.(); });
+  // AND THE CHOOSER LEARNS EACH SHELF AS IT LANDS (O-223, Howell 2026-10-26,
+  // from the phone: the Synodal in the lens of the edition ring, the Douay
+  // still in the detail sector). "Which editions hold where the reader is
+  // standing" was asked once at boot, when only the first edition's charts
+  // were in hand, and asked again only on a change of position — so a
+  // reader who booted at a verse and went straight to the globe was offered
+  // every later edition HOLLOW, and settling on one committed nothing. Each
+  // edition's own promise re-asks the question the moment its charts arrive.
+  // AND UNTIL THEN THE LATE EDITIONS STAND HOLLOW (O-224, Howell 2026-10-26,
+  // the same morning, from the overture's glide on a cleared cache: "note
+  // that King James is missing ... after the animated truck in ends ... then
+  // I see King James, but not on the initial migration in"). An edition not
+  // here was left off the ring; one whose shelf had not landed was not
+  // absent, it was unanswered. The bridge draws it hollow under its own name
+  // until its promise resolves, and the ring repaints then — unless a glide
+  // is in flight, whose settle repaints anyway.
+  {
+    const vol = manifest?.__wallVolume;
+    const codes = (vol?.editions || []).map(e => e?.code).filter(Boolean);
+    const stillArriving = () => codes.filter(c => !(typeof vol?.isReady === 'function' && vol.isReady(c)));
+    dimensionBridge.setEditionsArriving?.(stillArriving());
+    for (const code of codes) {
+      vol?.ready?.(code)?.then?.(() => {
+        if (currentApp !== app) return;
+        dimensionBridge.setEditionsArriving?.(stillArriving());
+        refreshEditionsHere();
+        if (strataFront > 0 && !strataAnim && !bootOvertureGliding) renderStack({ keepFront: true });
+      });
+    }
+  }
 
   // Detail renders resolve the translation LIVE (the sticky choice can
   // change between renders); the settle hook below regenerates the open
@@ -4821,7 +4987,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // which is the right answer whenever the editions agree.
     // THE SHELF MUST BE STOCKED BEFORE THE RESEAT (O-175): an edition's charts
     // may still be arriving behind the boot; the reseat waits for them.
-    editionSettlePromise = Promise.resolve(currentManifest?.__wallVolume?.ready?.(translation))
+    editionSettlePromise = Promise.resolve((currentManifest?.__wallVolume?.wake || currentManifest?.__wallVolume?.ready)?.call(currentManifest?.__wallVolume, translation))
       .then(() => config.onEditionSettle?.(translation || null))
       .then(() => handlerSet.reseatOnEditionChange?.({
         selected: app?.nav?.getCurrent?.(), app
@@ -4864,8 +5030,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       // The adapter repaints through this when a chapter's text lands, which
       // can happen while a reader is on the second half of a verse. It carries
       // the half for the same reason the wrap retry does.
+      // In the edition the reader is PREVIEWING, if one is under the lens
+      // (O-228): the text that lands during a turn is the previewed
+      // edition's, and painting it in the committed one would undo the turn.
       renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized,
-        { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 })
+        { translation: options?.previewEdition || activeTranslation(), part: app?.getVersePart?.() ?? 0 })
     });
   }
   if (!interactionsWired) {
@@ -4909,7 +5078,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // shows it — unless the finger has moved on to another by then.
     const vol = currentManifest?.__wallVolume;
     if (vol?.isReady && !vol.isReady(edition) && typeof vol.ready === 'function') {
-      vol.ready(edition).then(() => { if (options.previewEdition === edition) previewPrimary(preview); });
+      (vol.wake || vol.ready).call(vol, edition).then(() => { if (options.previewEdition === edition) previewPrimary(preview); });
     }
     refreshNamesMap(preview.language);
     // WHICH EDITION IS UNDER THE LENS (O-94). The chain still holds the
@@ -4961,7 +5130,36 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       drive: (dimensionAvailable() && maxStrataFront() >= 2) ? {
         setFront: f => { strataFront = f; },
         render: () => renderStack(),
-        glide: (a, b) => { bootOvertureGliding = true; try { return beginGlide(a, b); } finally { bootOvertureGliding = false; } },
+        glide: (a, b, opts) => {
+          // The overture names the seat an arriving ring's lens lands on by
+          // FLOOR; the glide wants it by chooser id (O-225).
+          let lens = null;
+          for (const [f, i] of Object.entries(opts?.seatAt || {})) { const ch = CHOOSERS[Number(f) - 1]; if (ch) (lens ||= {})[ch.id] = i; }
+          bootOvertureGliding = true; try { return beginGlide(a, b, { lens }); } finally { bootOvertureGliding = false; }
+        },
+        // THE TURNS (O-225): the engine's own turn of the front ring, as a
+        // finger makes it — the hollow lens with the seats streaming
+        // through, the planes ahead and the text behind the glass following
+        // the seat under the lens (the live preview, Howell 2026-07-30).
+        // `turn` is the plan; `turnAt` a frame of the turn; `turnRest` the
+        // lens at rest, filled, with the planes ahead and the text following
+        // (O-228: the text too, since the film is the tutorial); `turnEnd`
+        // drops the preview so a truck or the landing paints from committed
+        // state, repainting the text only if a pass had changed it.
+        turn: front => overtureTurn(front),
+        turnAt: (front, center) => { if (strataFront === front) renderFrontStratumAt(center, true); },
+        turnRest: (front, index) => {
+          if (strataFront !== front) return;
+          renderFrontStratumAt(index, false);
+          const ch = activeChooser();
+          if (ch) previewFromLens(ch, ch.items(), index);
+        },
+        turnEnd: () => {
+          if (previewFollow) { cancelAnimationFrame(previewFollow); previewFollow = 0; }
+          strataPreview = null; lastPreviewKey = null; previewTextMuted = false;
+          if (options.previewEdition && options.previewEdition !== activeTranslation()) previewPrimary({ edition: null });
+          else options.previewEdition = null;
+        },
         // The globe rides the migration as it rides a drag (Howell
         // 2026-09-30: it was "out of sync during the drill in and jumps
         // around independently"): its position IS the stratum, set per frame
