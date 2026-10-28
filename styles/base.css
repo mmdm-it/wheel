@@ -447,6 +447,8 @@ svg :focus-visible {
    being built toward, not yet in the corpus — hollow, its name a shade
    lighter, never chosen. */
 .secondary-strata-node.is-coming { fill: none; stroke: var(--color-orbital); stroke-width: 1.5; }
+/* O-231: an UNCLEARED edition — in the corpus, not yet ours to serve; LAN only, under ?uncleared=true */
+.secondary-strata-node.is-uncleared { fill: #e3170a; stroke: #e3170a; }
 .secondary-strata-node.is-coming + .secondary-strata-label { opacity: 0.62; }
 /* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
    with, not yet kept: hollow, so keeping it visibly fills it. */

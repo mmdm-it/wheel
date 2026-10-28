@@ -5,7 +5,7 @@
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
-import { proofreadDeepLink, proofreadOverrideActive } from './core/lan-gate.js';
+import { proofreadDeepLink, unclearedActive } from './core/lan-gate.js';
 import { recall } from './core/session-memory.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
@@ -110,9 +110,9 @@ const volumeConfigs = {
         // proofread, else CHECKED where the build says, else a confirmed
         // unit; the LAN's override lifts it), so the edition waited for is
         // the edition shown. Keep the two in step.
-        const override = proofreadOverrideActive();
-        const servable = e => Boolean(e) && (override || e.proofread === true
-          || (e.checked !== undefined ? e.checked === true : (Array.isArray(e.proofreadUnits) && e.proofreadUnits.length > 0)));
+        // O-229: the CHECKED gate is open — every edition the volume (and, on
+        // the LAN under ?uncleared=true, its sidecar) enumerates is offered.
+        const servable = e => Boolean(e) && e.hasChart !== false;
         const enumerated = volumeJson?.editions || [];
         const offered = new Set(enumerated.filter(servable).map(e => e.code));
         const remembered = recall('bible').edition;
@@ -130,6 +130,7 @@ const volumeConfigs = {
         return enumerated.find(e => offered.has(e.code))?.code || null;
       };
       const volume = await loadBibleVolume({
+        includeUncleared: unclearedActive(),   // O-231: the LAN's ?uncleared=true merges the sidecar
         base: BIBLE_VOLUME_BASE,
         version: BIBLE_VOLUME_VERSION,
         firstEdition: chooseFirst,
@@ -252,7 +253,8 @@ const volumeConfigs = {
           language: edition.language || null,
           direction: edition.direction || 'ltr',
           hasChart: edition.hasChart === true,
-          proofread: edition.proofread === true
+          proofread: edition.proofread === true,
+          cleared: edition.cleared !== false
         }])),
         names: Object.fromEntries(Object.entries(volume.namesByLanguage)
           .filter(([, names]) => names)

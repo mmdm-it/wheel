@@ -1,7 +1,6 @@
 import { weaveCousinChain } from '../adapters/volume-helpers.js';
 import { chaptersFromSeats } from './seating-chart.js';
 import { expandVolumeSeats, chartedUnitsOf } from '../adapters/bible-volume.js';
-import { proofreadOverrideActive } from '../core/lan-gate.js';
 
 const GAP = null;
 
@@ -64,7 +63,7 @@ function chartStamp(volume, edition) {
   return typeof volume.chartFor === 'function' ? books.map(b => volume.chartFor(b.id, edition)) : [];
 }
 function wovenVerseChain(volume, edition) {
-  const proofread = proofreadOverrideActive();
+  const proofread = false;   // O-229: the flag is retired; includeUnconfirmed was inert since O-124
   const key = `${edition}|${proofread ? 1 : 0}`;
   const stamp = chartStamp(volume, edition);
   let perVolume = chainMemo.get(volume);
@@ -316,7 +315,7 @@ export function buildBibleChapterChain(manifest, { initialChapterId = null, edit
   // there is nothing else to walk. One ring is derived from the other by
   // construction, which is what E3 was reaching for.
   const source = seats
-    || (manifest?.__wallVolume ? expandVolumeSeats(manifest.__wallVolume, edition, { includeUnconfirmed: proofreadOverrideActive() }) : null);
+    || (manifest?.__wallVolume ? expandVolumeSeats(manifest.__wallVolume, edition, { includeUnconfirmed: false }) : null);
   const fromSeats = source ? chaptersFromSeats(source) : null;
   if (!fromSeats) return { items: [], selectedIndex: 0, preserveOrder: true };
   return weaveChapters(fromSeats, initialChapterId);

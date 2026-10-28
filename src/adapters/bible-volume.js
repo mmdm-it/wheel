@@ -34,12 +34,32 @@ import { projectContainers } from '../core/unit-source.js';
 // that must not happen is a botched increment looking finished. (The
 // REQUIRED_PER_UNIT set that stated this died with `loadUnit`, O-65.)
 
-export async function loadBibleVolume({ base, version, fetchJson, firstEdition = null, onVolume = null } = {}) {
+export async function loadBibleVolume({ base, version, fetchJson, firstEdition = null, onVolume = null, includeUncleared = false } = {}) {
   if (typeof fetchJson !== 'function') {
     throw new Error('bible-volume: needs a `fetchJson(path)` — the transport is the caller\'s');
   }
   const at = parts => resolvePath({ base, version, ...parts });
-  const volume = await fetchJson(at({ kind: 'volume' }));
+  let volume = await fetchJson(at({ kind: 'volume' }));
+  // THE UNCLEARED SIDECAR (O-231): on the LAN under ?uncleared=true, the
+  // editions whose typing is not yet ours to serve are merged in, marked
+  // `cleared: false` (the ring draws them red). Nowhere else does this file
+  // exist — no deploy copies it — so a failed fetch is the ordinary answer.
+  if (includeUncleared) {
+    try {
+      const u = await fetchJson(at({ kind: 'uncleared' }));
+      if (u && Array.isArray(u.editions) && u.editions.length) {
+        const cfg = volume?.display_config || {}; const ed = cfg.editions || {};
+        const available = { ...(ed.available || {}) };
+        for (const e of u.editions) { const lang = e.language; available[lang] = [...new Set([...(available[lang] || []), e.code])]; }
+        for (const [lang, codes] of Object.entries(u.available || {})) available[lang] = [...new Set([...(available[lang] || []), ...codes])];
+        volume = {
+          ...volume,
+          editions: [...(volume.editions || []), ...u.editions.map(e => ({ ...e, cleared: false }))],
+          display_config: { ...cfg, editions: { ...ed, available, default: { ...(u.default || {}), ...(ed.default || {}) }, labels: { ...(ed.labels || {}), ...(u.labels || {}) } } },
+        };
+      }
+    } catch (_) { /* no sidecar here: nothing uncleared to show */ }
+  }
   // THE MANIFEST IS IN HAND BEFORE THE BUNDLES ARE (O-181): whoever asked to
   // hear of it hears now — the boot card reads the volume's splash from it
   // and does not wait the megabyte of charts the loader fetches next

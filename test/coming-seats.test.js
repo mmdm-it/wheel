@@ -11,7 +11,7 @@ import { createDimensionBridge } from '../src/core/dimension-bridge.js';
 const TRANSLATIONS = {
   ENG: { language: 'english', proofread: true, hasChart: true, name: 'Douay', nativeName: 'Douay-Rheims' },
   LAT: { language: 'latin', proofread: true, hasChart: true, name: 'Vulgata' },
-  OLD: { language: 'english', proofread: false, hasChart: true, name: 'Not yet servable' }
+  OLD: { language: 'english', proofread: false, hasChart: false, name: 'Not yet servable' }   // O-229: unservable now only for want of a chart
 };
 const COMING = {
   english: ['King James', 'Westminster', 'ENG', 'OLD', 'Revised Standard'],
@@ -55,7 +55,7 @@ describe('placeholder seats on the edition ring (O-184)', () => {
     const { bridge: bare } = (() => {
       let state = { language: 'greek', edition: null };
       const store = { getState: () => state, dispatch: () => {}, subscribe: () => () => {} };
-      return { bridge: createDimensionBridge({ store, translationsMeta: { translations: { GRC: { language: 'greek', proofread: false, hasChart: true } }, coming: { greek: ['Someday'] } } }) };
+      return { bridge: createDimensionBridge({ store, translationsMeta: { translations: { GRC: { language: 'greek', proofread: false, hasChart: false } }, coming: { greek: ['Someday'] } } }) };
     })();
     // Until 2026-10-23 this read "the shelf dresses only a real ring" and
     // the answer was the sentinel. Howell, the hour the shelf became the
@@ -67,7 +67,7 @@ describe('placeholder seats on the edition ring (O-184)', () => {
     const { bridge: elsewhere } = (() => {
       let state = { language: 'greek', edition: null };
       const store = { getState: () => state, dispatch: () => {}, subscribe: () => () => {} };
-      return { bridge: createDimensionBridge({ store, translationsMeta: { translations: { GRC: { language: 'greek', proofread: false, hasChart: true } }, coming: { greek: ['GRC'] } } }) };
+      return { bridge: createDimensionBridge({ store, translationsMeta: { translations: { GRC: { language: 'greek', proofread: false, hasChart: false } }, coming: { greek: ['GRC'] } } }) };
     })();
     assert.deepEqual(elsewhere.translationsOf('greek'), [elsewhere.comingSoonKey]);
   });

@@ -120,11 +120,23 @@ export function doorVolume(loc = (typeof window !== 'undefined' ? window.locatio
   }
   return best ? best.volume : null;
 }
-export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? window.location : null)) {
+// THE CHECKED GATE IS OPEN (O-229, Howell 2026-10-28: "That gate is now open
+// … there's no need for the 'proofread=true' flag"). The flag that lifted it
+// is retired; what it also unlocked on the LAN — the proofreading driver and
+// the deep links — answers on the LAN and in the room without it.
+export function proofreadOverrideActive() { return false; }
+
+/**
+ * THE CLEARED GATE (O-231, Howell 2026-10-28): `?uncleared=true` shows the
+ * editions whose typing is not yet ours to serve — on a PRIVATE address only.
+ * Not the screening room: "No uncleared edition should ever leave the LAN",
+ * and the room is a public server. Without the flag, and anywhere but the
+ * LAN, those editions do not exist.
+ */
+export function unclearedActive(loc = (typeof window !== 'undefined' ? window.location : null)) {
   try {
-    if (!loc || typeof loc.search !== 'string') return false;
-    if (!isOnLan(loc)) return false;
-    return new URLSearchParams(loc.search).get('proofread') === 'true';
+    if (!loc || typeof loc.search !== 'string' || !isPrivateHost(loc.hostname)) return false;
+    return new URLSearchParams(loc.search).get('uncleared') === 'true';
   } catch (_) { return false; }
 }
 
@@ -163,7 +175,7 @@ export function proofreadOverrideActive(loc = (typeof window !== 'undefined' ? w
  */
 export function proofreadDeepLink(keys, loc = (typeof window !== 'undefined' ? window.location : null)) {
   try {
-    if (!proofreadOverrideActive(loc)) return false;
+    if (!isOnLan(loc)) return false;   // O-229: the LAN and the room, no flag
     if (!Array.isArray(keys) || !keys.length) return false;
     const p = new URLSearchParams(loc.search);
     return keys.every(k => Boolean(p.get(k)));

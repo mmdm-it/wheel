@@ -126,6 +126,30 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     assert.equal(volume2.isReady(TWIN), true);
   });
 
+  it('merges the UNCLEARED sidecar only when asked, marked cleared:false (O-231)', async () => {
+    const UNC = 'UNC';
+    const withSidecar = async p => {
+      if (p.endsWith('uncleared.json')) {
+        const vol = await fetchJson(p.replace('uncleared.json', 'volume.json'));
+        const dra = vol.editions.find(e => e.code === 'DRA');
+        return { codes: [UNC], editions: [{ ...dra, code: UNC, name: 'Uncleared twin' }], available: { english: [UNC] }, default: {}, labels: { [UNC]: 'Uncleared' } };
+      }
+      if (p.includes(`/${UNC}/`)) {
+        const relabel = o => { if (o && typeof o === 'object') { if (o.edition === 'DRA') o.edition = UNC; for (const v of Object.values(o)) relabel(v); } return o; };
+        return relabel(JSON.parse(JSON.stringify(await fetchJson(p.replace(`/${UNC}/`, '/DRA/')))));
+      }
+      return fetchJson(p);
+    };
+    const asked = await loadBibleVolume({ base: BASE, version: VERSION, fetchJson: withSidecar, includeUncleared: true });
+    const e = asked.editions.find(x => x.code === UNC);
+    assert.ok(e, 'the uncleared edition is merged under the flag');
+    assert.equal(e.cleared, false);
+    const plain = await loadBibleVolume({ base: BASE, version: VERSION, fetchJson: withSidecar });
+    assert.equal(plain.editions.some(x => x.code === UNC), false, 'without the flag it does not exist');
+    const none = await loadBibleVolume({ base: BASE, version: VERSION, fetchJson: async p => { if (p.endsWith('uncleared.json')) throw new Error('404'); return fetchJson(p); }, includeUncleared: true });
+    assert.ok(none.editions.length > 0, 'no sidecar here (any public server) is the ordinary answer');
+  });
+
   it('with a chooser, asks it against the volume declaration (O-175)', async () => {
     let seen = null;
     const volume = await loadBibleVolume({

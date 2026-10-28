@@ -23,6 +23,7 @@
 #     scripts/mirror-room.sh         the mirror
 #     scripts/mirror-room.sh bible   one door
 #
+# The Bible's data goes through scripts/deploy-pd-filter.mjs first (O-231).
 # Data goes by CHECKSUM (-c): build-volume and precompress rewrite every
 # .gz's mtime, and a plain -a would re-send the whole corpus each time.
 set -euo pipefail
@@ -61,8 +62,15 @@ for door in "${DOORS[@]}"; do
   rsync -az -i --delete --delete-excluded "${DRY[@]}" "${EX[@]}" ./ "$REMOTE/$door/"
   case "$door" in
     bible)
-      echo "== $door: data/gutenberg/ (checksum)"
-      rsync -azc -i --delete "${DRY[@]}" data/gutenberg/ "$REMOTE/$door/data/gutenberg/" ;;
+      # THE CLEARED GATE (O-231): the room gets the filtered copy, never
+      # data/gutenberg itself — only the versioned folder the engine reads,
+      # nothing uncleared ("No uncleared edition should ever leave the LAN"),
+      # and none of the declaration, naming kits or staging. The filter
+      # refuses, and the mirror stops, if an uncleared code survives.
+      PUBLIC="$(mktemp -d)"; trap 'rm -rf "$PUBLIC"' EXIT
+      node scripts/deploy-pd-filter.mjs data/gutenberg "$PUBLIC/gutenberg"
+      echo "== $door: the cleared copy of data/gutenberg/ (checksum)"
+      rsync -azc -i --delete "${DRY[@]}" "$PUBLIC/gutenberg/" "$REMOTE/$door/data/gutenberg/" ;;
     calendar)
       echo "== $door: data/calendar/ (checksum, without sources/)"
       rsync -azc -i --delete "${DRY[@]}" --exclude='sources/' data/calendar/ "$REMOTE/$door/data/calendar/" ;;

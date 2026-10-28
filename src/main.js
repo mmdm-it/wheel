@@ -376,7 +376,8 @@ const CHOOSERS = [
     selected: () => dimensionBridge.getSelection().translation,
     // A placeholder seat (O-184) is drawn hollow, and the ring never settles
     // on one: the snap passes it for the nearest real seat.
-    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : ''),
+    // An UNCLEARED edition (O-231) is drawn red: in the corpus, not yet ours to serve.
+    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : dimensionBridge.isUncleared?.(key) ? 'is-uncleared' : ''),
     inert: key => Boolean(dimensionBridge.isComing?.(key)),
     select: key => {
       const ok = dimensionBridge.setTranslation(key);
@@ -2391,7 +2392,7 @@ if (dimensionButton) {
 // would proofread a screen no reader ever sees.
 //
 // Gated on the LAN proofread override, so it does not exist for a reader.
-if (typeof window !== 'undefined' && proofreadOverrideActive()) {
+if (typeof window !== 'undefined' && isOnLan()) {   // O-229: the LAN and the room, no flag
   window.__wheelProofread = {
     /** How many seats the ring holds. */
     count: () => currentApp?.nav?.items?.length ?? 0,

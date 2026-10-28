@@ -20,10 +20,19 @@ describe('a withheld volume goes dark, and dark is not failed', () => {
   let doc;
 
   before(async () => {
-    // NO `?proofread=true`. The corpus carries `proofread: false` for the one
-    // offered edition, so without the override there is nothing servable —
-    // which is H-14's ruled state, reached the way a reader reaches it.
+    // NOTHING SERVABLE. Until O-229 this was reached through `proofread:
+    // false` and no override; with the CHECKED gate open (Howell 2026-10-28)
+    // the one road left to a dark volume is an edition with no chart, so the
+    // fixture's volume is served with every edition uncharted.
     ({ byId, doc } = installBrowserGlobals('?volume=bible'));
+    const realFetch = globalThis.fetch;
+    globalThis.fetch = async (url, ...rest) => {
+      const res = await realFetch(url, ...rest);
+      if (!/volume\.json$/.test(String(url)) || !res.ok) return res;
+      const v = await res.json();
+      v.editions = (v.editions || []).map(e => ({ ...e, hasChart: false }));
+      return { ok: true, status: 200, json: async () => v, text: async () => JSON.stringify(v) };
+    };
     const realError = console.error;
     console.error = (...args) => { errors.push(args.join(' ')); };
     await import('../src/main.js');
