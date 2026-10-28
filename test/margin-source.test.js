@@ -16,7 +16,7 @@
 // (WF-14), and none is needed — the shapes are what is under test.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { addressOrder, blockAt, entriesAt, apparatusRuns, manuscriptsIn } from '../src/core/margin-source.js';
+import { addressOrder, blockAt, entriesAt, apparatusRuns, manuscriptsIn, loadMarginLegend, legendCached, clearMarginCache } from '../src/core/margin-source.js';
 import { settleRow, flow, renderMarginNote, marginPartCount } from '../src/view/margin-panel.js';
 
 const chart = {
@@ -345,5 +345,31 @@ describe('the italic witness reaches the glass (W-212/O-114)', () => {
       sigla: { D: 'Codex Cottonianus Geneseos' } }] };
     const out = manuscriptsIn('Μαδαν 𝐷E', legend, 'u1');
     assert.ok(out.some(m => m.siglum === 'D'), 'the italic D went unnamed');
+  });
+});
+
+// ONE LEGEND PER EDITION (W-286). The legend was a single slot, and the margin's
+// units are the shared book shards: whichever edition asked first set the key
+// for every other. Invented editions and sigla.
+describe('the margin legend is kept per edition', () => {
+  it('answers each edition with its own legend, in either order of asking', async () => {
+    clearMarginCache();
+    const legends = {
+      ed1: { volumes: [{ units: ['u1'], sigla: { V: 'Codex Inventus' } }] },
+      ed2: { volumes: [{ units: ['u1'], sigla: {} }] },
+    };
+    let asked = 0;
+    const fetchJson = async p => { asked += 1; const ed = Object.keys(legends).find(e => p.includes(`${e}-legend`)); if (!ed) throw new Error('404'); return legends[ed]; };
+    const two = await loadMarginLegend({ base: 'b', version: 'v', edition: 'ed2', fetchJson });
+    const one = await loadMarginLegend({ base: 'b', version: 'v', edition: 'ed1', fetchJson });
+    assert.equal(two, legends.ed2);
+    assert.equal(one, legends.ed1, 'the first edition asked set the legend for the next');
+    assert.equal(legendCached('ed1'), legends.ed1);
+    assert.equal(legendCached('ed2'), legends.ed2);
+    assert.deepEqual(manuscriptsIn('V.7', legendCached('ed2'), 'u1'), [], 'a siglum of another edition named under this one');
+    await loadMarginLegend({ base: 'b', version: 'v', edition: 'ed1', fetchJson });
+    assert.equal(asked, 2, 'a legend asked twice was fetched twice');
+    assert.equal(await loadMarginLegend({ base: 'b', version: 'v', edition: 'ed3', fetchJson }), null);
+    clearMarginCache();
   });
 });

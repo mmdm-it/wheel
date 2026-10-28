@@ -25,12 +25,18 @@
 import { resolvePath } from './identity.js';
 
 const cache = new Map();   // `${edition}|${unitId}` → { blocks, index } | null
-let legendCache;           // one per edition; undefined = not asked, null = none
+// ONE LEGEND PER EDITION, keyed by it (W-286). It was a single slot, which was
+// right while only the Septuagint had a margin and wrong the day the German
+// got one: the margin's units are shared across editions, so the Greek key
+// read against the German's Genesis would name a Greek manuscript under a
+// note of Menge's that cites a verse ("V.7"), and the German's empty key,
+// asked first, would strip the Greek of every manuscript name.
+const legendCache = new Map();   // edition → legend | null (none); absent = not asked
 
 /**
  * Load one unit's margin. Resolves to null when the unit has none — which is
- * the ordinary case for every edition but the Septuagint, and for the units of
- * that edition whose apparatus is still held.
+ * the ordinary case for every edition but the Septuagint and the German
+ * (W-286), and for the units of the Septuagint whose apparatus is still held.
  */
 export async function loadMargin({ base, version, edition, unitId, fetchJson, identityOf }) {
   if (!edition || !unitId) return null;
@@ -125,7 +131,7 @@ export function marginCached(edition, unitId) {
   return cache.get(`${edition}|${unitId}`) ?? null;
 }
 
-export function legendCached() { return legendCache ?? null; }
+export function legendCached(edition) { return legendCache.get(edition) ?? null; }
 
 /**
  * THE POEM'S LINES, fetched per unit like the apparatus (W-210/O-112). Swete
@@ -154,7 +160,7 @@ export async function loadPoetry({ base, version, edition, unitId, fetchJson, id
 }
 export function poetryCached(edition, unitId) { return poetryCache.get(`${edition}|${unitId}`) ?? null; }
 
-export function clearMarginCache() { cache.clear(); poetryCache.clear(); legendCache = undefined; }
+export function clearMarginCache() { cache.clear(); poetryCache.clear(); legendCache.clear(); }
 
 /**
  * The addresses a chart seats, in its own order, spelled the way a reader's
@@ -194,13 +200,14 @@ export function addressOrder(chart) {
  * manuscript every time, which is what makes the mistake invisible.
  */
 export async function loadMarginLegend({ base, version, edition, fetchJson }) {
-  if (legendCache !== undefined) return legendCache;
-  legendCache = null;
+  if (!edition) return null;
+  if (legendCache.has(edition)) return legendCache.get(edition);
+  legendCache.set(edition, null);
   try {
     const file = await fetchJson(resolvePath({ base, version, kind: 'marginLegend', edition }));
-    if (file && Array.isArray(file.volumes)) legendCache = file;
-  } catch { legendCache = null; }
-  return legendCache;
+    if (file && Array.isArray(file.volumes)) legendCache.set(edition, file);
+  } catch { legendCache.set(edition, null); }
+  return legendCache.get(edition);
 }
 
 /**

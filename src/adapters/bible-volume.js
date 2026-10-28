@@ -367,9 +367,10 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
 
     // THE MARGIN COVERING AN ADDRESS, or null (W-165).
     //
-    // Null is the ORDINARY answer and carries no complaint: only one edition
-    // has an apparatus at all, only 47 of its books are captured, and 226 of
-    // its blocks are held for a reading the page has to settle. W-131 and
+    // Null is the ORDINARY answer and carries no complaint: two editions have
+    // an apparatus (the Septuagint's Swete, the German's Menge, W-286), and of
+    // the Septuagint only 47 books are captured and 226 of its blocks are held
+    // for a reading the page has to settle. W-131 and
     // W-133 put the margin on its own ladder precisely so its absence gates
     // nothing — an edition ships fully proofread with an empty margin, for as
     // long as that takes.
@@ -455,7 +456,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
       // the reader, which is the wrong half of the bargain.
       const standing = block.base ? [block.base, ...marks] : marks;
       const entries = entriesAt(block, address, order);
-      return { entries, manuscripts: manuscriptsIn(entries.map(e => e.text).join(' '), legendCached(), unitId) };
+      return { entries, manuscripts: manuscriptsIn(entries.map(e => e.text).join(' '), legendCached(edition), unitId) };
     },
 
     // The chart for a (unit, edition), or null. Null is a real answer here —
