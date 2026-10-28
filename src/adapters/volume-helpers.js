@@ -974,10 +974,16 @@ export function seedVerseCache(cacheKey, rawVerses, items = []) {
 // stacked sub-slots lexical. An utterance ORDINAL indexes this sequence.
 export function slotKeyForOrdinal(rawVerses, ordinal) {
   if (!rawVerses || !Number.isInteger(ordinal) || ordinal < 1) return null;
+  // BY NUMBER, THEN BY NUMBER, THEN BY LETTER (O-228). This compared the
+  // part after the chapter as a STRING, so ":18" sorted before ":2" and the
+  // eighteenth key of a chapter of twenty-five came back as 16:25. Keys are
+  // the edition's own labels — "16:18", "7a", "0" for a psalm's title — so a
+  // key is read as its chapter, its verse, and whatever letters follow.
+  const parts = k => { const m = /^(\d+)(?::(\d+))?(.*)$/.exec(k) || []; return [Number(m[1] ?? NaN), Number(m[2] ?? -1), m[3] ?? k]; };
   const keys = Object.keys(rawVerses).sort((a, b) => {
-    const ai = parseInt(a, 10), bi = parseInt(b, 10);
-    if (ai !== bi) return ai - bi;
-    const as = a.slice(String(ai).length), bs = b.slice(String(bi).length);
+    const [ac, av, as] = parts(a), [bc, bv, bs] = parts(b);
+    if (ac !== bc) return (ac || 0) - (bc || 0);
+    if (av !== bv) return av - bv;
     return as < bs ? -1 : as > bs ? 1 : 0;
   });
   return keys[ordinal - 1] ?? null;

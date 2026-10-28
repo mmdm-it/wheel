@@ -6,7 +6,7 @@ import _pathBible from 'node:path';
 
 import { describe, it } from 'node:test';
 import { bibleAdapter, normalize as normalizeBible, detailFor } from '../src/adapters/bible-adapter.js';
-import { setUnitTextLoader, seedVerseCache } from '../src/adapters/volume-helpers.js';
+import { setUnitTextLoader, seedVerseCache, slotKeyForOrdinal } from '../src/adapters/volume-helpers.js';
 import { buildBibleVerseChain } from '../src/navigation/cousin-builder.js';
 import { makeWallManifest } from './helpers/wall-volume.mjs';
 
@@ -419,5 +419,15 @@ describe('a verse previewed in another edition resolves through the leaf (O-228)
   it('has nothing to show for an edition that does not seat the leaf', () => {
     const got = detailFor({ ...verse, meta: { ...verse.meta, utterances: ['nowhere'] } }, manifest, { translation: 'OT' });
     assert.equal(got?.text, '');
+  });
+});
+
+describe('the key for an ordinal counts verses as numbers (O-228)', () => {
+  it('answers the eighteenth key of a chapter of twenty-five with 16:18, and keeps a lettered half after its whole', () => {
+    const raw = {}; for (let v = 1; v <= 25; v++) raw[`16:${v}`] = {};
+    assert.equal(slotKeyForOrdinal(raw, 18), '16:18');
+    assert.equal(slotKeyForOrdinal(raw, 2), '16:2');
+    assert.equal(slotKeyForOrdinal({ '9:9': {}, '10:1': {}, '9:10': {}, '9:10a': {} }, 3), '9:10a');
+    assert.equal(slotKeyForOrdinal({ '9:9': {}, '10:1': {}, '9:10': {}, '9:10a': {} }, 4), '10:1');
   });
 });
