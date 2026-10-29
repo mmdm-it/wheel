@@ -429,7 +429,12 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
       if (!clearOfBand(angle, c)) continue;
       const date = serialToDate(serial);
       const inAnchor = !inGap && date.yearNumber === yearNumber && date.month === month;
-      pushCell(angle, c, date.day, !inAnchor, `d:${date.yearNumber}:${date.month}:${date.day}`,
+      // THE FIRST OF EVERY MONTH STANDS OUT (O-238, Howell 2026-10-29): full
+      // strength in the fall like the magnified month's own days, in the
+      // same white — a colour would distract — so each month's start is
+      // legible as it passes.
+      const firstOfMonth = date.day === 1;
+      pushCell(angle, c, date.day, !inAnchor && !firstOfMonth, `d:${date.yearNumber}:${date.month}:${date.day}`,
         { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day });
     }
     return { drawn: nodes.length - before, lo, hi };

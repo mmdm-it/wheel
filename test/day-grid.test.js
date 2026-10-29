@@ -148,6 +148,17 @@ describe('day grid arithmetic', () => {
     assert.ok(!settled.emblems?.length);
   });
 
+  it('the first of every month falls at full strength (O-238)', () => {
+    const vp = { width: 375, height: 700, SSd: 375, LSd: 700 };
+    const mag = { x: 178.2, y: 517.7 };
+    const arc = { hubX: 840.8, hubY: 0, radius: 840.8 };
+    const ribbon = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, fraction: 0.4, rotating: true });
+    const firsts = ribbon.nodes.filter(n => n.label === '1');
+    assert.ok(firsts.some(n => n.item.monthNumber !== 7), 'a neighbouring month\'s first is on the glass');
+    assert.ok(firsts.every(n => !n.dim), 'every first is full strength');
+    assert.ok(ribbon.nodes.some(n => n.dim && n.label === '2'), 'its neighbours still dim');
+  });
+
   it('honors Gregory: the ten days of October 1582 never happened', () => {
     GREGORIAN_REFORM.missingDays.forEach(d => {
       assert.equal(dayExists(1582, 10, d), false, `5-14 Oct 1582 is a ghost: ${d}`);
