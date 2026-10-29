@@ -238,6 +238,8 @@ const CARD_RING_WIDTH = 0.03;   // a ring's stroke, as a fraction of the disc's 
 // A long name is set smaller rather than run off the phone: the title keeps
 // its size until it would pass this share of the screen's width.
 const CARD_TITLE_MAX_WIDTH = 0.88;
+const CARD_TITLE_LINES_WIDTH = 0.8;
+const CARD_LINE_EM = 1.3;   // the step between a title's lines
 
 export function beginBootOverture({ viewport = null, splash = null } = {}) {
   if (typeof document === 'undefined') return { splash() {}, ready() {}, abort() {} };
@@ -320,7 +322,14 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     if (record.title) {
       title = el('text', { x: (vp.width / 2).toFixed(1), y: (y + h + vp.height * 0.075).toFixed(1), 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, g);
       title.style.cssText = `font-family:${FACE},${STAND_IN};font-size:${px}px;letter-spacing:.04em;fill:${record.color || ink}`;
-      title.textContent = record.title;
+      // A title may be set on lines ("\n" in the declaration, Howell
+      // 2026-10-28: a long name on two lines "can then be much larger").
+      const lines = record.title.split('\n');
+      if (lines.length === 1) title.textContent = record.title;
+      else lines.forEach((line, i) => {
+        const t = el('tspan', { x: (vp.width / 2).toFixed(1), dy: i === 0 ? `${(-(lines.length - 1) * CARD_LINE_EM / 2).toFixed(2)}em` : `${CARD_LINE_EM}em` }, title);
+        t.textContent = line;
+      });
       try { if (document.fonts?.load) waits.push(document.fonts.load(`${px}px ${FACE}`).catch(() => []).then(() => mark('face-ready'))); } catch { /* no font API: show on the cap */ }
     }
     let shown = false;
@@ -333,8 +342,12 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       svg.appendChild(g);
       if (title) {
         try {
-          const room = vp.width * CARD_TITLE_MAX_WIDTH, len = title.getComputedTextLength();
-          if (len > room) title.style.fontSize = `${(Number(px) * room / len).toFixed(1)}px`;
+          // One line keeps its size unless it would run off; a title set on
+          // lines is sized so its widest line fills CARD_TITLE_LINES_WIDTH.
+          const spans = [...title.querySelectorAll('tspan')];
+          const len = spans.length ? Math.max(...spans.map(t => t.getComputedTextLength())) : title.getComputedTextLength();
+          const room = vp.width * (spans.length ? CARD_TITLE_LINES_WIDTH : CARD_TITLE_MAX_WIDTH);
+          if (len > room || spans.length) title.style.fontSize = `${(Number(px) * room / len).toFixed(1)}px`;
         } catch { /* no measure: the declared size */ }
       }
       card = g;
