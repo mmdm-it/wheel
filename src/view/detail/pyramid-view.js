@@ -142,6 +142,9 @@ export class PyramidView {
         image.setAttribute('width', em.width);
         image.setAttribute('height', em.height);
         image.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+        // Half-strength, like the dimmed dates falling around it (Howell
+        // 2026-10-29: "a little less opaque, like the dates themselves").
+        image.setAttribute('opacity', '0.5');
         image.setAttribute('transform', `rotate(${labelRotationDeg(em.angle)}, ${em.x}, ${em.y})`);
         this.pyramidEmblemGroup.appendChild(image);
       });
