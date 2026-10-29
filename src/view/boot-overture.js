@@ -213,7 +213,10 @@ export function splashRecord(root, assetBase) {
   // The title's face and colour may be the volume's own; else the card's
   // (EB Garamond, the page's ink).
   const font = str(sp?.title_font), color = str(sp?.title_color);
-  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(circle ? { circle } : {}), ...(font ? { font } : {}), ...(color ? { color } : {}) };
+  // The card's linger, the volume's to set (Howell 2026-10-28: the calendar's
+  // 2.5 s); else the card's own (T.splashMs).
+  const holdMs = num(sp?.hold_ms);
+  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(circle ? { circle } : {}), ...(font ? { font } : {}), ...(color ? { color } : {}), ...(holdMs ? { holdMs } : {}) };
 }
 
 const el = (tag, attrs = {}, parent = null) => {
@@ -269,11 +272,12 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   // but shown only when both are in hand — a frame or two on a return visit
   // — and no later than a second: past that the title is pinned to the
   // stand-in face for this visit, so it never swaps under the reader.
-  let card = null, cardAt = 0, cardPending = false;
+  let card = null, cardAt = 0, cardPending = false, cardHoldMs = T.splashMs;
   const CARD_FACE = "'EB Garamond'", CARD_STAND_IN = 'Georgia, serif';
   const showCard = record => {
     if (card || cardPending || done || !record || (!record.imageUrl && !record.title)) return;
     cardPending = true;
+    if (record.holdMs) cardHoldMs = record.holdMs;
     mark('card-asked');
     const g = el('g', { id: 'boot-overture-card' });
     const w = vp.width * 0.42, h = w, x = (vp.width - w) / 2, y = vp.height * 0.44 - h / 2;
@@ -341,7 +345,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     Promise.all(waits).then(() => { clearTimeout(cap); show(); }, () => { clearTimeout(cap); show(); });
   };
   showCard(splash);
-  const lingered = now => !cardPending && (!card || now >= cardAt + T.splashMs);
+  const lingered = now => !cardPending && (!card || now >= cardAt + cardHoldMs);
 
   // ── THE MIGRATION: the app walks its own floors on this clock (makeDriller above) ──
   let driller = null;
@@ -457,7 +461,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
 
   // ── THE BENCH SCRUBBER (?overturescrub=1): the film held under a slider ──
   function mountScrub() {
-    const lead = card ? T.splashMs : 0;
+    const lead = card ? cardHoldMs : 0;
     const total = lead + filmMs;
     const bar = document.createElement('div');
     bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:rgba(0,0,0,.6);color:#fff;padding:8px 12px 14px;font:14px Montserrat,sans-serif;pointer-events:auto;';

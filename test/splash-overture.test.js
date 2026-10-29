@@ -104,6 +104,8 @@ describe('a card may set its emblem on a circle (the calendar, 2026-10-28)', () 
     assert.deepStrictEqual(r.circle, { stroke: '#000000', width: 1, scale: 0.9 });
     assert.strictEqual(r.font, 'Montserrat');
     assert.strictEqual(r.color, '#f1b800');
+    assert.strictEqual(r.holdMs, undefined, 'no hold declared: the card keeps its own');
+    assert.strictEqual(splashRecord({ display_config: { splash: { title: 'T', hold_ms: 2500 } } }, '').holdMs, 2500);
   });
   it('the calendar serves its pictures from its own data', async () => {
     const { volumeConfigs } = await import('../src/volume-configs.js');
