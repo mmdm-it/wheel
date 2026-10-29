@@ -213,8 +213,8 @@ export function splashRecord(root, assetBase) {
   // The title's face and colour may be the volume's own; else the card's
   // (EB Garamond, the page's ink).
   const font = str(sp?.title_font), color = str(sp?.title_color);
-  // The card's linger, the volume's to set (Howell 2026-10-28: the calendar's
-  // 2.5 s); else the card's own (T.splashMs).
+  // The card's linger, the volume's to set (Howell 2026-10-28: 2.5 s for one
+  // volume); else the card's own (T.splashMs).
   const holdMs = num(sp?.hold_ms);
   return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(circle ? { circle } : {}), ...(font ? { font } : {}), ...(color ? { color } : {}), ...(holdMs ? { holdMs } : {}) };
 }
