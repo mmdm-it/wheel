@@ -376,16 +376,43 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   const rowFloat = (serialFloat + 4) / 7; // week rows since the Sunday of serial 0
   const centerRow = Math.floor(rowFloat);
   const subRow = rowFloat - centerRow;
-  for (let dr = -5; dr <= 6; dr += 1) {
+  // The band is an edge too: a ribbon cell never sits on the ring. Laid
+  // edge to edge, the lower rows otherwise ran onto the band and its month
+  // names; a cell that would touch the band's inner edge is not drawn.
+  const ringHubX = arcParams.hubX;
+  const ringHubY = arcParams.hubY ?? 0;
+  const bandInner = Number.isFinite(arcParams.radius) ? arcParams.radius * 0.99 : Infinity;
+  const clearOfBand = (angle, weekday) => {
+    if (!Number.isFinite(ringHubX)) return true;
+    const p = lattice.pointAt(angle, lattice.radiusFor(weekday));
+    return Math.hypot(p.x - ringHubX, p.y - ringHubY) + nodeR <= bandInner;
+  };
+  const pushRow = dr => {
+    const before = nodes.length;
     const rowAbs = centerRow + dr;
     const angle = lattice.angleForRowOffset(dr - subRow + 2); // anchor near mid-fan
     const sundaySerial = rowAbs * 7 - 4;
     for (let c = 0; c < 7; c += 1) {
       const date = serialToDate(sundaySerial + c);
       const inAnchor = date.yearNumber === yearNumber && date.month === month;
+      if (!clearOfBand(angle, c)) continue;
       pushCell(angle, c, date.day, !inAnchor, `d:${date.yearNumber}:${date.month}:${date.day}`,
         { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day });
     }
+    return nodes.length - before;
+  };
+  // The ribbon runs EDGE TO EDGE (O-235, Howell 2026-10-29): it used to be
+  // a fixed twelve rows, so in a tall viewport the lower right sat empty
+  // ahead of the ribbon instead of feeding it days. Now rows are laid
+  // outward from the anchor in both directions until one falls wholly off
+  // the glass — days enter at the viewport's edge and leave at the top.
+  // The cap only bounds a pathological viewport; culling does the work.
+  const RIBBON_ROW_CAP = 48;
+  for (let dr = 0; dr <= RIBBON_ROW_CAP; dr += 1) {
+    if (pushRow(dr) === 0 && dr > 6) break;
+  }
+  for (let dr = -1; dr >= -RIBBON_ROW_CAP; dr -= 1) {
+    if (pushRow(dr) === 0 && dr < -5) break;
   }
   return { nodes, gridMode: true };
 }

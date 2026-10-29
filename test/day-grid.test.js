@@ -65,6 +65,24 @@ describe('day grid arithmetic', () => {
     assert.ok(ribbon.nodes.some(n => !n.dim), 'anchor month full-strength');
   });
 
+  it('the ribbon runs edge to edge: no empty lower right in a tall viewport (O-235)', async () => {
+    // A fixed twelve rows left the lower right of a phone empty mid-turn;
+    // days must enter from the viewport's edge. Real geometry, not a fixture.
+    const { getViewportInfo, getArcParameters, getMagnifierPosition } =
+      await import('../src/geometry/focus-ring-geometry.js');
+    for (const [w, h] of [[360, 800], [412, 915]]) {
+      const vp = getViewportInfo(w, h);
+      for (const fraction of [0, 0.5, 0.95]) {
+        const ribbon = computeDayGridLayout(vp, getMagnifierPosition(vp), getArcParameters(vp),
+          { yearNumber: 2027, month: 6, fraction, rotating: true });
+        const lowest = Math.max(...ribbon.nodes.map(n => n.y));
+        assert.ok(lowest > h * 0.85, `${w}x${h} @${fraction}: the ribbon stops at y=${Math.round(lowest)}`);
+        assert.ok(ribbon.nodes.some(n => n.x > w * 0.7 && n.y > h * 0.7),
+          `${w}x${h} @${fraction}: the lower right is empty`);
+      }
+    }
+  });
+
   it('honors Gregory: the ten days of October 1582 never happened', () => {
     GREGORIAN_REFORM.missingDays.forEach(d => {
       assert.equal(dayExists(1582, 10, d), false, `5-14 Oct 1582 is a ghost: ${d}`);
