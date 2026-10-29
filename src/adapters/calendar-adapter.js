@@ -180,6 +180,10 @@ export function layoutSpec(normalized, viewport) {
       // child pyramid have gotten smaller. This is incorrect. The old
       // version has the right size"). The standout keeps the large size.
       smallStarScale: 1,
+      // A SKY OF EQUALS (O-240, Howell 2026-10-29): every month of the
+      // year, January to December, one size — no featured node, no subset.
+      // The calendar diverges from the Bible's ranked, capped skies here.
+      equalSky: true,
       place: (siblings, viewport, opts) => placePyramidNodes(siblings, vp, { capacity: pyramidCapacity, logoBounds: opts?.logoBounds })
     },
   };

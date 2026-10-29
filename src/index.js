@@ -2006,11 +2006,19 @@ export function createApp({
         // exactly the nodes the ring showed, in sibling order, the departed
         // lens node as its standout. It stands while the lens holds that
         // item; the ranked sky returns once the reader rests elsewhere.
+        // A SKY OF EQUALS (O-240, Howell 2026-10-29: "There is no reason to
+        // have a featured or favored node in the child pyramid. All months
+        // are equal. And there's no reason to ever show fewer than all 12"):
+        // a volume that declares equalSky shows EVERY child, in sibling
+        // order, one size — no dynamic subset, no ranks, no large star, no
+        // cap. The node just drilled out from is still remembered, unseen,
+        // so a stroke straight back in returns to it.
+        const equalSky = pyramidConfig?.equalSky === true;
         let standoutId = null;
         if (dynamicSkies.size) {
           const dynamicSky = pyramidSelected ? dynamicSkies.get(pyramidSelected.id) : null;
           if (dynamicSky) {
-            children = children.filter(ch => dynamicSky.ids.has(ch?.id));
+            if (!equalSky) children = children.filter(ch => dynamicSky.ids.has(ch?.id));
             standoutId = dynamicSky.standoutId;
           } else if (!isRotating) {
             dynamicSkies.clear();
@@ -2026,13 +2034,13 @@ export function createApp({
           const t = ch?.prominence ?? ch?.meta?.prominence;
           return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 3;
         };
-        const anyProminence = children.some(ch => { const t = ch?.prominence ?? ch?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4; });
+        const anyProminence = !equalSky && children.some(ch => { const t = ch?.prominence ?? ch?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4; });
         // A volume may supply a per-sky policy: a number (the cap) or
         // { cap, spread } — spread SAMPLES the undeclared seats uniformly
         // across the whole sibling range instead of taking the alphabet's
         // head (Howell 2026-07-24: a head-only sky made every flock arrive
         // from one direction, and showed A–H as if it were the country).
-        const policy = typeof pyramidConfig?.getSeatCap === 'function'
+        const policy = equalSky ? { cap: Math.max(1, children.length) } : typeof pyramidConfig?.getSeatCap === 'function'
           ? pyramidConfig.getSeatCap({ selected: pyramidSelected, anyProminence, childCount: children.length })
           : null;
         const policyCap = typeof policy === 'object' && policy !== null ? policy.cap : policy;
@@ -2059,8 +2067,8 @@ export function createApp({
         // node ... a user has just drilled out from." The large ones take
         // the near seats, the standout first. This retires the four tiers'
         // scales, the depth taper and the smudge floor (O-134, O-172).
-        const isLarge = ch => Boolean(ch && ((standoutId != null && ch.id === standoutId) || (anyProminence && tierOf(ch) === 1)));
-        const rankOfSeat = i => (standoutId != null && children[i]?.id === standoutId ? 0 : isLarge(children[i]) ? 1 : anyProminence ? 1 + tierOf(children[i]) : 2);
+        const isLarge = ch => Boolean(!equalSky && ch && ((standoutId != null && ch.id === standoutId) || (anyProminence && tierOf(ch) === 1)));
+        const rankOfSeat = i => (equalSky ? 0 : standoutId != null && children[i]?.id === standoutId ? 0 : isLarge(children[i]) ? 1 : anyProminence ? 1 + tierOf(children[i]) : 2);
         const seatOrder = seatPool.slice().sort((a, b) => (rankOfSeat(a) - rankOfSeat(b)) || (a - b));
         const LARGE_SCALE = MAGNIFIER_RADIUS_RATIO / NODE_RADIUS_RATIO;
         // A volume may name its lesser stars' size (O-213): one keeps the
