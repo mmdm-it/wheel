@@ -443,6 +443,10 @@ export const calendarAdapter = {
     theming: true,
     // At the leaf the detail sector doubles as a NEXT button
     // (a date leads to the next date).
-    detailTapAdvances: true
+    detailTapAdvances: true,
+    // A tap drills (O-234, Howell 2026-10-28): a month or a date in the sky
+    // drills in, the parent seat drills out — the calendar reads by tapping.
+    // The strokes stay as well.
+    drillByTap: true
   }
 };

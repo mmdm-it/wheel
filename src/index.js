@@ -116,6 +116,12 @@ export function createApp({
   // The detail sector doubles as a NEXT button at the leaf, where a volume
   // asks for it (Howell 2026-07-20 — the e-reader gesture).
   detailTapAdvances = false,
+  // A TAP DRILLS, where a volume asks for it (O-234, Howell 2026-10-28:
+  // one volume "lends itself to tapping", and volumes may drill by
+  // different logic). The gesture layer
+  // reads it: a tap on a star drills in, a tap on the parent seat drills
+  // out, beside the strokes every volume keeps (O-191's taps, restored).
+  drillByTap = false,
   // Paint the detail sector for a specific item NOW, ahead of the ring's
   // arrival — the reader is looking at the text, not the ring (Howell
   // 2026-07-21). Used by the leaf-advance tap so the words don't wait out
@@ -2612,6 +2618,7 @@ export function createApp({
     // THE DRILL OUT IS A VERB OF THE APP, NOT A CLICK ON THE PARENT (O-191):
     // the gesture layer calls it; the parent seat is a readout.
     drillOut: () => shiftLayersOut(),
+    drillByTap: Boolean(drillByTap),
     handlePyramidNodeClick: idx => {
       if (isAnimating() && !instantMigration) return; // block clicks during migration animation
       if (!lastPyramidData) return;
