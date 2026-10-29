@@ -60,6 +60,14 @@ export function applyPyramidNodeAppearance({ circle = null, label = null, instr 
     if (circle) circle.setAttribute('opacity', DIM_OPACITY);
     if (label) label.setAttribute('opacity', DIM_OPACITY);
   }
+  // A node the layout asks to keep at FULL STRENGTH even while the ring
+  // turns (O-238: the first of each month in a day grid's fall). Inline, so
+  // it outranks the sky's turning fade in the stylesheet — and so a phone
+  // holding an older stylesheet still shows it.
+  if (instr.fullStrength) {
+    if (circle) circle.style.opacity = '1';
+    if (label) label.style.opacity = '1';
+  }
 
   if (instr.now) {
     if (circle) circle.style.fill = NOW_NODE_FILL;

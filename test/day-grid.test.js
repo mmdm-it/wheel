@@ -156,6 +156,7 @@ describe('day grid arithmetic', () => {
     const firsts = ribbon.nodes.filter(n => n.label === '1');
     assert.ok(firsts.some(n => n.item.monthNumber !== 7), 'a neighbouring month\'s first is on the glass');
     assert.ok(firsts.every(n => !n.dim), 'every first is full strength');
+    assert.ok(firsts.every(n => n.fullStrength), 'and stands clear of the turning fade');
     assert.ok(ribbon.nodes.some(n => n.dim && n.label === '2'), 'its neighbours still dim');
   });
 

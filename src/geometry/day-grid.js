@@ -436,6 +436,10 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
       const firstOfMonth = date.day === 1;
       pushCell(angle, c, date.day, !inAnchor && !firstOfMonth, `d:${date.yearNumber}:${date.month}:${date.day}`,
         { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day });
+      // …and stands clear of the fade the whole sky wears while the ring
+      // turns (.is-rotating, 0.35), which is what Howell actually saw: the
+      // first cut only undimmed the cell, and the turning fade hid that.
+      if (firstOfMonth && nodes.length && nodes[nodes.length - 1].label === '1') nodes[nodes.length - 1].fullStrength = true;
     }
     return { drawn: nodes.length - before, lo, hi };
   };
