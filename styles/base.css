@@ -593,6 +593,19 @@ svg :focus-visible {
 .focus-ring-magnifier-label { fill: var(--color-orbital-label); }
 .focus-ring-parent-label {
   fill: var(--color-text);
+  /* THE HALO (O-233, Howell 2026-10-28, a ring label running under "2027":
+     "some kind of halo around the parent button that perhaps doesn't mask
+     the focus ring label entirely"). A stroke in the GROUND's colour painted
+     under the letters: a ring label passing beneath is dimmed where it meets
+     the name and nowhere else. A stroke, not a blur — an SVG filter on a
+     <text> dies in WebKit (the blur saga, v3.22.0) — and on the label
+     itself, so it travels with every flight that moves the label. Two knobs:
+     how much it hides, and how far beyond the letters it reaches. */
+  paint-order: stroke fill;
+  stroke: var(--color-bg);
+  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke-width: var(--parent-halo-width, 0.6em);
+  stroke-linejoin: round;
   /* The corner label is TAPPABLE (its class family disables pointer-events;
      historically the disc sat under it so taps landed anyway — the split
      seat exposed the truth, Howell 2026-07-23). Its onclick is nulled when
