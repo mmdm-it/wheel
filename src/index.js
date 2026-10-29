@@ -122,6 +122,10 @@ export function createApp({
   // reads it: a tap on a star drills in, a tap on the parent seat drills
   // out, beside the strokes every volume keeps (O-191's taps, restored).
   drillByTap = false,
+  // THE EMBLEM IN A GRID'S GAP (O-237): the volume's artwork (its declared
+  // splash image) drawn in the empty water where a day grid's fall parts
+  // between years. No address, no emblem.
+  gapEmblemUrl = null,
   // Paint the detail sector for a specific item NOW, ahead of the ring's
   // arrival — the reader is looking at the text, not the ring (Howell
   // 2026-07-21). Used by the leaf-advance tap so the words don't wait out
@@ -1974,6 +1978,7 @@ export function createApp({
             });
             return {
               ...grid,
+              emblemUrl: gapEmblemUrl,
               fanLines: [],
               intersections: [],
               magnifierOrigin: null,

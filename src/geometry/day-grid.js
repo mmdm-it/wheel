@@ -451,5 +451,42 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     const row = pushRow(centerRow + dr);
     if (row.drawn === 0 && row.hi < -4) break;
   }
-  return { nodes, gridMode: true };
+  // THE EMBLEM IN THE GAP (O-237, Howell 2026-10-29): each gap's empty
+  // water carries the volume's own artwork, centred in it — midway between
+  // the last row before the seam and the first after, on the middle arc —
+  // and turned like the numerals around it, so it lines up on the hub and
+  // falls with the dates. Its box is the water's: the seven columns wide
+  // (along the ray) and the clear rows tall (across them).
+  const emblems = [];
+  for (const seam of seams) {
+    const lastPre = Math.floor(rowOfSerial(seam.serial - 1)) + seamShift(seam.serial - 1, seams);
+    const firstPost = Math.floor(rowOfSerial(seam.serial)) + seamShift(seam.serial, seams);
+    const clearRows = firstPost - lastPre - 1;
+    if (!(clearRows >= 1.5)) continue;
+    const angle = lattice.angleForRowOffset((lastPre + firstPost) / 2 - anchorRow + 2);
+    const h = clearRows * angularGap; // the row gap at the middle arc, as for the cells
+    // The band is an edge for the emblem as for the dates: its far end (the
+    // Sunday side) stops short of the ring along the centre line and both
+    // long edges, and the emblem shrinks rather than crossing it — rising
+    // up the fall it otherwise ran onto the band and its month names.
+    const rNear = lattice.radiusFor(6) - nodeR;
+    let rFar = lattice.radiusFor(0) + nodeR;
+    if (Number.isFinite(ringHubX)) {
+      const ux = Math.cos(angle), uy = Math.sin(angle);
+      const offRing = r => [-h / 2, 0, h / 2].some(t => {
+        const x = lattice.hub2.x + ux * r - uy * t, y = lattice.hub2.y + uy * r + ux * t;
+        return Math.hypot(x - ringHubX, y - ringHubY) > bandInner - nodeR * 0.5;
+      });
+      for (let r = rNear; r <= rFar; r += 1) {
+        if (offRing(r)) { rFar = r - 1; break; }
+      }
+    }
+    const w = rFar - rNear;
+    if (!(w >= lattice.step * 2)) continue;
+    const p = lattice.pointAt(angle, (rNear + rFar) / 2);
+    const reach = Math.max(w, h) / 2;
+    if (p.x < -reach || p.x > width + reach || p.y < -reach || p.y > height + reach) continue;
+    emblems.push({ x: p.x, y: p.y, angle, width: w, height: h });
+  }
+  return { nodes, emblems, gridMode: true };
 }

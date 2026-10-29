@@ -118,6 +118,36 @@ describe('day grid arithmetic', () => {
     assert.ok(a && b && Math.abs(a.x - b.x) < 0.01 && Math.abs(a.y - b.y) < 0.01, 'no jump entering the gap');
   });
 
+  it('the gap\'s empty water carries one emblem, turned like the dates (O-237)', async () => {
+    const { getViewportInfo, getArcParameters, getMagnifierPosition } =
+      await import('../src/geometry/focus-ring-geometry.js');
+    const { ribbonRowAt, daySerial, GAP_ROWS_PER_SLOT } = await import('../src/geometry/day-grid.js');
+    const vp = getViewportInfo(360, 800);
+    const mag = getMagnifierPosition(vp), arc = getArcParameters(vp);
+    const seams = [{ serial: daySerial(2027, 1, 1), rows: 2 * GAP_ROWS_PER_SLOT }];
+    const from = ribbonRowAt(2026, 12, 0.5, seams), to = ribbonRowAt(2027, 1, -0.5, seams);
+    const gap = computeDayGridLayout(vp, mag, arc, {
+      yearNumber: 2026, month: 12, rotating: true, seams, inGap: true,
+      anchorRow: (from + to) / 2, startSerial: daySerial(2027, 1, 1)
+    });
+    assert.equal(gap.emblems.length, 1, 'one emblem for the one gap');
+    const em = gap.emblems[0];
+    assert.ok(em.width > 0 && em.height > 0);
+    // It sits in the water: no date's centre falls inside its box.
+    const inside = gap.nodes.filter(n => {
+      const dx = n.x - em.x, dy = n.y - em.y;
+      const c = Math.cos(-em.angle), s = Math.sin(-em.angle);
+      const u = dx * c - dy * s, v = dx * s + dy * c; // into the ray's own frame
+      return Math.abs(u) < em.width / 2 && Math.abs(v) < em.height / 2;
+    });
+    assert.deepEqual(inside.map(n => n.id), [], 'the emblem covers no date');
+    // No seam, no emblem; settled, no emblem.
+    const plain = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, fraction: 0.2, rotating: true });
+    assert.equal(plain.emblems.length, 0);
+    const settled = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, rotating: false });
+    assert.ok(!settled.emblems?.length);
+  });
+
   it('honors Gregory: the ten days of October 1582 never happened', () => {
     GREGORIAN_REFORM.missingDays.forEach(d => {
       assert.equal(dayExists(1582, 10, d), false, `5-14 Oct 1582 is a ghost: ${d}`);

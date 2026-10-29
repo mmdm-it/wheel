@@ -55,6 +55,11 @@ export class PyramidView {
     this.pyramidHaloGroup = this.doc.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.pyramidHaloGroup.setAttribute('class', 'child-pyramid-halos');
 
+    // The emblem in a grid's gap (O-237): under the dates, never tappable.
+    this.pyramidEmblemGroup = this.doc.createElementNS('http://www.w3.org/2000/svg', 'g');
+    this.pyramidEmblemGroup.setAttribute('class', 'child-pyramid-emblems');
+    this.pyramidEmblemGroup.setAttribute('pointer-events', 'none');
+
     this.pyramidNodesGroup = this.doc.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.pyramidNodesGroup.setAttribute('class', 'child-pyramid-nodes');
 
@@ -63,6 +68,7 @@ export class PyramidView {
 
     this.pyramidGroup.appendChild(this.pyramidFanLinesGroup);
     this.pyramidGroup.appendChild(this.pyramidSpiralGroup);
+    this.pyramidGroup.appendChild(this.pyramidEmblemGroup);
     this.pyramidGroup.appendChild(this.pyramidHaloGroup); // halo under the circles
     this.pyramidGroup.appendChild(this.pyramidNodesGroup);
     this.pyramidGroup.appendChild(this.pyramidLabelsGroup);
@@ -91,13 +97,14 @@ export class PyramidView {
       this.#clear(this.pyramidFanLinesGroup);
       this.#clear(this.pyramidSpiralGroup);
       this.#clear(this.pyramidHaloGroup);
+      this.#clear(this.pyramidEmblemGroup);
       this.#clear(this.pyramidNodesGroup);
       this.#clear(this.pyramidLabelsGroup);
       this._signature = null;   // next real render must rebuild
       return;
     }
 
-    const { fanLines = [], spiral, intersections = [], nodes = [] } = data;
+    const { fanLines = [], spiral, intersections = [], nodes = [], emblems = [], emblemUrl = null } = data;
 
     // Q10: nothing visible changed → leave the subtree entirely alone.
     // Every render used to clear five groups and recreate every node and
@@ -110,7 +117,7 @@ export class PyramidView {
     // a second reason beyond speed: iOS Safari does not reliably apply a CSS
     // filter to freshly-inserted SVG content, and the pyramid IS blurred
     // during rotation. A subtree that persists keeps its filter.
-    const signature = JSON.stringify([nodes, spiral, intersections, fanLines]);
+    const signature = JSON.stringify([nodes, spiral, intersections, fanLines, emblemUrl ? emblems : null]);
     if (this._signature === signature) return;
     this._signature = signature;
 
@@ -118,8 +125,27 @@ export class PyramidView {
     this.#clear(this.pyramidFanLinesGroup);
     this.#clear(this.pyramidSpiralGroup);
     this.#clear(this.pyramidHaloGroup);
+    this.#clear(this.pyramidEmblemGroup);
     this.#clear(this.pyramidNodesGroup);
     this.#clear(this.pyramidLabelsGroup);
+
+    // THE EMBLEM IN THE GAP (O-237): the volume's own artwork, fitted to the
+    // box the layout found in the empty water and turned like the numerals
+    // around it. `meet` keeps the artwork's own proportions inside that box.
+    if (emblemUrl && Array.isArray(emblems)) {
+      emblems.forEach(em => {
+        const image = this.doc.createElementNS('http://www.w3.org/2000/svg', 'image');
+        image.setAttribute('class', 'child-pyramid-emblem');
+        image.setAttribute('href', emblemUrl);
+        image.setAttribute('x', em.x - em.width / 2);
+        image.setAttribute('y', em.y - em.height / 2);
+        image.setAttribute('width', em.width);
+        image.setAttribute('height', em.height);
+        image.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+        image.setAttribute('transform', `rotate(${labelRotationDeg(em.angle)}, ${em.x}, ${em.y})`);
+        this.pyramidEmblemGroup.appendChild(image);
+      });
+    }
 
     // THE FAN LINES ARE GONE (Howell 2026-07-25, permanent — the Tufte
     // erasure): convicted by their own absence. The program already hid
