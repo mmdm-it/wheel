@@ -141,6 +141,16 @@ describe('day grid arithmetic', () => {
       return Math.abs(u) < em.width / 2 && Math.abs(v) < em.height / 2;
     });
     assert.deepEqual(inside.map(n => n.id), [], 'the emblem covers no date');
+    // One size from entrance to exit: the same box at every point of the turn.
+    const sizes = new Set();
+    for (let t = 0; t <= 1; t += 0.1) {
+      const l = computeDayGridLayout(vp, mag, arc, {
+        yearNumber: 2026, month: 12, rotating: true, seams, inGap: true, emblemAspect: 2.5,
+        anchorRow: from + (to - from) * t, startSerial: daySerial(2027, 1, 1)
+      });
+      l.emblems.forEach(e => sizes.add(`${e.width.toFixed(2)}x${e.height.toFixed(2)}`));
+    }
+    assert.equal(sizes.size, 1, `the emblem changed size during the turn: ${[...sizes].join(', ')}`);
     // No seam, no emblem; settled, no emblem.
     const plain = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, fraction: 0.2, rotating: true });
     assert.equal(plain.emblems.length, 0);

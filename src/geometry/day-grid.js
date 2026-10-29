@@ -294,6 +294,9 @@ export function computeWedgeLattice(viewport, arcParams, magnifier) {
 // ribbon already runs at through December and January either side of it.
 export const GAP_ROWS_PER_SLOT = 31 / DAYS_PER_WEEK;
 
+// The emblem's fixed length per viewport (O-237), memoised across frames.
+const EMBLEM_LENGTHS = new Map();
+
 const rowOfSerial = serial => (serial + 4) / DAYS_PER_WEEK; // week rows since the Sunday of serial 0
 const seamShift = (serial, seams) => seams.reduce((n, seam) => (serial >= seam.serial ? n + seam.rows : n), 0);
 
@@ -467,6 +470,46 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   // falls with the dates. Its box is the water's: the seven columns wide
   // (along the ray) and the clear rows tall (across them).
   const emblems = [];
+  // The emblem's clear length along a ray of the given angle: from the
+  // Saturday side out to just short of the ring, along its centre line and
+  // both long edges, capped at the seven columns.
+  const rNear = lattice.radiusFor(6) - nodeR;
+  const rCap = lattice.radiusFor(0) + nodeR;
+  // Measured against the ARTWORK, not its box: the box is the whole
+  // water's height, but the artwork is fitted inside it at its own
+  // proportions (emblemAspect, width over height, when the host knows it),
+  // so its long edges sit only (length / aspect) apart.
+  const aspect = Number.isFinite(opts.emblemAspect) && opts.emblemAspect > 0 ? opts.emblemAspect : null;
+  const clearReach = (angle, h) => {
+    if (!Number.isFinite(ringHubX)) return rCap - rNear;
+    const ux = Math.cos(angle), uy = Math.sin(angle);
+    const offRing = r => {
+      const art = aspect ? Math.min(h, (r - rNear) / aspect) : h;
+      return [-art / 2, 0, art / 2].some(t => {
+        const x = lattice.hub2.x + ux * r - uy * t, y = lattice.hub2.y + uy * r + ux * t;
+        return Math.hypot(x - ringHubX, y - ringHubY) > bandInner - nodeR * 0.5;
+      });
+    };
+    for (let r = rNear; r <= rCap; r += 1) if (offRing(r)) return r - 1 - rNear;
+    return rCap - rNear;
+  };
+  // The least reach over every ray whose emblem centre is on the glass —
+  // a fixed length for this viewport, memoised across frames (the search
+  // walks a few hundred rays and must not run at every frame of a turn).
+  const emblemLength = h => {
+    const key = `${width}x${height}:${Math.round(ringHubX)}:${Math.round(h * 10)}:${aspect ?? '-'}`;
+    if (EMBLEM_LENGTHS.has(key)) return EMBLEM_LENGTHS.get(key);
+    let least = rCap - rNear;
+    for (let off = -30; off <= 40; off += 0.25) {
+      const a = lattice.angleForRowOffset(off);
+      const c = lattice.pointAt(a, rNear + (rCap - rNear) / 2);
+      if (c.x < 0 || c.x > width || c.y < 0 || c.y > height) continue;
+      least = Math.min(least, clearReach(a, h));
+    }
+    if (EMBLEM_LENGTHS.size > 64) EMBLEM_LENGTHS.clear();
+    EMBLEM_LENGTHS.set(key, least);
+    return least;
+  };
   for (const seam of seams) {
     const lastPre = Math.floor(rowOfSerial(seam.serial - 1)) + seamShift(seam.serial - 1, seams);
     const firstPost = Math.floor(rowOfSerial(seam.serial)) + seamShift(seam.serial, seams);
@@ -474,25 +517,15 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     if (!(clearRows >= 1.5)) continue;
     const angle = lattice.angleForRowOffset((lastPre + firstPost) / 2 - anchorRow + 2);
     const h = clearRows * angularGap; // the row gap at the middle arc, as for the cells
-    // The band is an edge for the emblem as for the dates: its far end (the
-    // Sunday side) stops short of the ring along the centre line and both
-    // long edges, and the emblem shrinks rather than crossing it — rising
-    // up the fall it otherwise ran onto the band and its month names.
-    const rNear = lattice.radiusFor(6) - nodeR;
-    let rFar = lattice.radiusFor(0) + nodeR;
-    if (Number.isFinite(ringHubX)) {
-      const ux = Math.cos(angle), uy = Math.sin(angle);
-      const offRing = r => [-h / 2, 0, h / 2].some(t => {
-        const x = lattice.hub2.x + ux * r - uy * t, y = lattice.hub2.y + uy * r + ux * t;
-        return Math.hypot(x - ringHubX, y - ringHubY) > bandInner - nodeR * 0.5;
-      });
-      for (let r = rNear; r <= rFar; r += 1) {
-        if (offRing(r)) { rFar = r - 1; break; }
-      }
-    }
-    const w = rFar - rNear;
+    // ONE SIZE FROM ENTRANCE TO EXIT (Howell 2026-10-29: "The Niagara is
+    // consistent from entrance to exit. The logo should remain the same
+    // size"). The band is an edge for the emblem as for the dates, so its
+    // length along the ray is the LEAST clear reach anywhere on its path
+    // across the glass — fixed for the viewport, never shrinking as it
+    // rises — and it rides at one radius.
+    const w = emblemLength(h);
     if (!(w >= lattice.step * 2)) continue;
-    const p = lattice.pointAt(angle, (rNear + rFar) / 2);
+    const p = lattice.pointAt(angle, rNear + w / 2);
     const reach = Math.max(w, h) / 2;
     if (p.x < -reach || p.x > width + reach || p.y < -reach || p.y > height + reach) continue;
     emblems.push({ x: p.x, y: p.y, angle, width: w, height: h });

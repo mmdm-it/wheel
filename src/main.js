@@ -4297,9 +4297,16 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   let { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
   let splashDeclared = null;
+  let gapEmblemAspect = null;
   {
     const declared = splashRecord(root, config.assetBase);
     splashDeclared = declared;
+    // The emblem's proportions, for keeping its artwork off the ring (O-237).
+    if (declared?.imageUrl && typeof Image === 'function') {
+      const probe = new Image();
+      probe.onload = () => { if (probe.naturalHeight > 0) gapEmblemAspect = probe.naturalWidth / probe.naturalHeight; };
+      probe.src = declared.imageUrl;
+    }
     if (declared) overtureMark('splash-declared');
     if (overture && declared) overture.splash(declared);
     try {
@@ -4740,6 +4747,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances),
     drillByTap: Boolean(adapter?.capabilities?.drillByTap),   // O-234
     gapEmblemUrl: splashDeclared?.imageUrl || null,            // O-237
+    getGapEmblemAspect: () => gapEmblemAspect,
     // Leaf-advance paints the text ahead of the ring's arrival — same
     // renderer the settle hook uses, resolving the translation live.
     onDetailPreview: (item, o) => renderDetail(item, adapter, manifest, adapterNormalized,

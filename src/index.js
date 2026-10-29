@@ -126,6 +126,10 @@ export function createApp({
   // splash image) drawn in the empty water where a day grid's fall parts
   // between years. No address, no emblem.
   gapEmblemUrl = null,
+  // Its proportions (width over height), read live: the host learns them
+  // when the image loads, and the layout keeps the ARTWORK, not its box,
+  // off the ring.
+  getGapEmblemAspect = null,
   // Paint the detail sector for a specific item NOW, ahead of the ring's
   // arrival — the reader is looking at the text, not the ring (Howell
   // 2026-07-21). Used by the leaf-advance tap so the words don't wait out
@@ -1973,6 +1977,7 @@ export function createApp({
               anchorRow: gridInfo.anchorRow,
               startSerial: gridInfo.startSerial,
               inGap: gridInfo.inGap,
+              emblemAspect: gapEmblemUrl && typeof getGapEmblemAspect === 'function' ? getGapEmblemAspect() : null,
               rotating: isRotating,
               logoBounds: volumeLogo.getBounds()
             });
