@@ -285,6 +285,28 @@ export function computeWedgeLattice(viewport, arcParams, magnifier) {
   };
 }
 
+// THE NIAGARA'S GAPS (O-236, Howell 2026-10-29): the ring of months parts
+// its years with empty slots, and the falling dates part with them rather
+// than vanishing. A SEAM is the first day after such a gap and the rows of
+// empty water that gap is worth; every date from the seam on sits that many
+// rows further down the fall, so each month's days stay level with the
+// month on the ring. One gap slot is worth a long month's rows, the pace the
+// ribbon already runs at through December and January either side of it.
+export const GAP_ROWS_PER_SLOT = 31 / DAYS_PER_WEEK;
+
+const rowOfSerial = serial => (serial + 4) / DAYS_PER_WEEK; // week rows since the Sunday of serial 0
+const seamShift = (serial, seams) => seams.reduce((n, seam) => (serial >= seam.serial ? n + seam.rows : n), 0);
+
+/**
+ * Where the fall stands, in (seam-shifted) week rows, with the magnifier a
+ * `fraction` of a slot off this month's seat — the ribbon's gearing, stated
+ * once so the host can ease between two months across a gap.
+ */
+export function ribbonRowAt(yearNumber, month, fraction = 0, seams = []) {
+  const start = daySerial(yearNumber, month, 1);
+  return rowOfSerial(start + fraction * monthDaySpan(yearNumber, month)) + seamShift(start, seams);
+}
+
 /**
  * Layout the day pyramid on the wedge lattice.
  *
@@ -368,14 +390,21 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   }
 
   // The rotating ribbon: week rows sweep about the second hub, geared to
-  // the ring via the fractional chain position.
+  // the ring via the fractional chain position. The ribbon is geared to
+  // REAL days, so scrubbing October 1582 travels the 21 days it held, not
+  // 31. In a gap between years the host passes the fall's position itself
+  // (anchorRow, eased between the months either side) and every date dims,
+  // since no month is under the glass.
+  const seams = Array.isArray(opts.seams) ? opts.seams : [];
+  const inGap = Boolean(opts.inGap);
   const monthStart = daySerial(yearNumber, month, 1);
-  // The ribbon is geared to REAL days, so scrubbing October 1582 travels
-  // the 21 days it held, not 31.
-  const serialFloat = monthStart + fraction * monthDaySpan(yearNumber, month);
-  const rowFloat = (serialFloat + 4) / 7; // week rows since the Sunday of serial 0
-  const centerRow = Math.floor(rowFloat);
-  const subRow = rowFloat - centerRow;
+  const startSerial = Number.isFinite(opts.startSerial)
+    ? opts.startSerial
+    : monthStart + fraction * monthDaySpan(yearNumber, month);
+  const anchorRow = Number.isFinite(opts.anchorRow)
+    ? opts.anchorRow
+    : ribbonRowAt(yearNumber, month, fraction, seams);
+  const centerRow = Math.floor(rowOfSerial(startSerial));
   // The band is an edge too: a ribbon cell never sits on the ring. Laid
   // edge to edge, the lower rows otherwise ran onto the band and its month
   // names; a cell that would touch the band's inner edge is not drawn.
@@ -387,32 +416,40 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     const p = lattice.pointAt(angle, lattice.radiusFor(weekday));
     return Math.hypot(p.x - ringHubX, p.y - ringHubY) + nodeR <= bandInner;
   };
-  const pushRow = dr => {
+  // Returns the row's cells drawn and its nearest and farthest offsets.
+  const pushRow = rowAbs => {
     const before = nodes.length;
-    const rowAbs = centerRow + dr;
-    const angle = lattice.angleForRowOffset(dr - subRow + 2); // anchor near mid-fan
     const sundaySerial = rowAbs * 7 - 4;
+    let lo = Infinity, hi = -Infinity;
     for (let c = 0; c < 7; c += 1) {
-      const date = serialToDate(sundaySerial + c);
-      const inAnchor = date.yearNumber === yearNumber && date.month === month;
+      const serial = sundaySerial + c;
+      const offset = rowAbs + seamShift(serial, seams) - anchorRow + 2; // anchor near mid-fan
+      lo = Math.min(lo, offset); hi = Math.max(hi, offset);
+      const angle = lattice.angleForRowOffset(offset);
       if (!clearOfBand(angle, c)) continue;
+      const date = serialToDate(serial);
+      const inAnchor = !inGap && date.yearNumber === yearNumber && date.month === month;
       pushCell(angle, c, date.day, !inAnchor, `d:${date.yearNumber}:${date.month}:${date.day}`,
         { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day });
     }
-    return nodes.length - before;
+    return { drawn: nodes.length - before, lo, hi };
   };
   // The ribbon runs EDGE TO EDGE (O-235, Howell 2026-10-29): it used to be
   // a fixed twelve rows, so in a tall viewport the lower right sat empty
   // ahead of the ribbon instead of feeding it days. Now rows are laid
   // outward from the anchor in both directions until one falls wholly off
-  // the glass — days enter at the viewport's edge and leave at the top.
-  // The cap only bounds a pathological viewport; culling does the work.
+  // the glass beyond the fan — days enter at the viewport's edge and leave
+  // at the top. A row lost in a gap's empty water draws nothing but does
+  // not end the fall; only a row past the fan does. The cap only bounds a
+  // pathological viewport; culling does the work.
   const RIBBON_ROW_CAP = 48;
   for (let dr = 0; dr <= RIBBON_ROW_CAP; dr += 1) {
-    if (pushRow(dr) === 0 && dr > 6) break;
+    const row = pushRow(centerRow + dr);
+    if (row.drawn === 0 && row.lo > 8) break;
   }
   for (let dr = -1; dr >= -RIBBON_ROW_CAP; dr -= 1) {
-    if (pushRow(dr) === 0 && dr < -5) break;
+    const row = pushRow(centerRow + dr);
+    if (row.drawn === 0 && row.hi < -4) break;
   }
   return { nodes, gridMode: true };
 }

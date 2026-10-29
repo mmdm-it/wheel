@@ -408,11 +408,19 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     }
   };
 
+  // THE GAP KEEPS THE NEARER SEAT'S NAME (O-168, extended to the calendar
+  // by O-236): turned into the gap between two years, the parent seat goes
+  // on naming the nearer month's year — 2026 to the middle of the gap, 2027
+  // from there — rather than going blank. The gaps in this ring only ever
+  // part years (or, among days, months), so the nearer side always has a name.
+  const getGapLabel = nearer => getParentLabel(nearer);
+
   return {
     parentHandler,
     childrenHandler,
     onBoot,
     getParentLabel,
+    getGapLabel,
     // Years stay centered on their nodes (numerals); MONTHS align like
     // manufacturers — magnifier centered, ring labels right-aligned
     // (Howell 2026-07-19).

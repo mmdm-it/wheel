@@ -7,7 +7,7 @@ import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-pyramid-geometry.js';
-import { computeDayGridLayout } from './geometry/day-grid.js';
+import { computeDayGridLayout, ribbonRowAt, daySerial, GAP_ROWS_PER_SLOT } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
@@ -1914,15 +1914,61 @@ export function createApp({
         // rotation the ribbon scrolls, geared to the ring via the fractional
         // chain position; at rest it hard-crops to the magnified month.
         if (typeof pyramidConfig.gridFor === 'function') {
-          const gridInfo = pyramidConfig.gridFor({ selected: pyramidSelected });
+          const slotFloat = rotation / nodeSpacing - 1;
+          const nearestSlot = Math.round(slotFloat);
+          // THE NIAGARA KEEPS FALLING THROUGH A GAP (O-236): the empty slots
+          // that part the ring's years become empty rows in the fall (seams),
+          // and with the glass in a gap the fall eases between the two months
+          // either side, so every month's days stay level with that month on
+          // the ring instead of the whole sky going dark.
+          let seams = [];
+          let gapFall = null;
+          if (isRotating) {
+            const monthAt = slot => {
+              const it = visible[slot];
+              return it && !it.placebo ? pyramidConfig.gridFor({ selected: it }) : null;
+            };
+            const lo = Math.max(0, nearestSlot - 12);
+            const hi = Math.min(visible.length - 1, nearestSlot + 12);
+            let lastReal = null, empty = 0, before = null, after = null;
+            for (let slot = lo; slot <= hi; slot += 1) {
+              const info = monthAt(slot);
+              if (!info) { if (lastReal !== null) empty += 1; continue; }
+              if (lastReal !== null && empty > 0) {
+                seams.push({ serial: daySerial(info.yearNumber, info.month, 1), rows: empty * GAP_ROWS_PER_SLOT });
+              }
+              if (slot < slotFloat) before = { slot, info };
+              else if (!after) after = { slot, info };
+              lastReal = slot; empty = 0;
+            }
+            if (pyramidSelected === null && before && after && after.slot - before.slot > 1) {
+              const from = ribbonRowAt(before.info.yearNumber, before.info.month, 0.5, seams);
+              const to = ribbonRowAt(after.info.yearNumber, after.info.month, -0.5, seams);
+              const span = (after.slot - 0.5) - (before.slot + 0.5);
+              const t = Math.min(1, Math.max(0, (slotFloat - (before.slot + 0.5)) / span));
+              const nearer = t < 0.5 ? before.info : after.info;
+              gapFall = {
+                yearNumber: nearer.yearNumber,
+                month: nearer.month,
+                weekdayLetters: nearer.weekdayLetters,
+                anchorRow: from + (to - from) * t,
+                startSerial: daySerial(after.info.yearNumber, after.info.month, 1),
+                inGap: true
+              };
+            }
+          }
+          const gridInfo = gapFall || pyramidConfig.gridFor({ selected: pyramidSelected });
           if (gridInfo) {
-            const slotFloat = rotation / nodeSpacing - 1;
-            const fraction = slotFloat - Math.round(slotFloat);
+            const fraction = slotFloat - nearestSlot;
             const grid = computeDayGridLayout(vp, magnifier, arcParams, {
               yearNumber: gridInfo.yearNumber,
               month: gridInfo.month,
               weekdayLetters: gridInfo.weekdayLetters,
               fraction,
+              seams,
+              anchorRow: gridInfo.anchorRow,
+              startSerial: gridInfo.startSerial,
+              inGap: gridInfo.inGap,
               rotating: isRotating,
               logoBounds: volumeLogo.getBounds()
             });

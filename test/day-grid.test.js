@@ -83,6 +83,41 @@ describe('day grid arithmetic', () => {
     }
   });
 
+  it('the Niagara parts at a gap between years instead of vanishing (O-236)', async () => {
+    const { getViewportInfo, getArcParameters, getMagnifierPosition } =
+      await import('../src/geometry/focus-ring-geometry.js');
+    const { ribbonRowAt, daySerial, GAP_ROWS_PER_SLOT } = await import('../src/geometry/day-grid.js');
+    const vp = getViewportInfo(360, 800);
+    const mag = getMagnifierPosition(vp), arc = getArcParameters(vp);
+    const seams = [{ serial: daySerial(2027, 1, 1), rows: 3 * GAP_ROWS_PER_SLOT }];
+    // Midway through a three-slot gap: the fall eases between December's
+    // last half-slot and January's first.
+    const from = ribbonRowAt(2026, 12, 0.5, seams), to = ribbonRowAt(2027, 1, -0.5, seams);
+    const gap = computeDayGridLayout(vp, mag, arc, {
+      yearNumber: 2026, month: 12, rotating: true, seams, inGap: true,
+      anchorRow: (from + to) / 2, startSerial: daySerial(2027, 1, 1)
+    });
+    assert.ok(gap.nodes.length > 0, 'the fall keeps falling in the gap');
+    assert.ok(gap.nodes.every(n => n.dim), 'no month is under the glass, so every date dims');
+    const dec31 = gap.nodes.find(n => n.id === 'd:2026:12:31');
+    const jan1 = gap.nodes.find(n => n.id === 'd:2027:1:1');
+    if (dec31 && jan1) {
+      // Same week, but January sits the gap's rows further down the fall.
+      assert.ok(jan1.angle < dec31.angle - (3 * Math.PI) / 180, 'empty water between December and January');
+    } else {
+      assert.ok(dec31 || jan1, 'one side of the seam is on the glass');
+    }
+    // Continuity: at the gap's near edge the fall stands where December's
+    // own gearing left it.
+    const edge = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 12, fraction: 0.5, rotating: true, seams });
+    const eased = computeDayGridLayout(vp, mag, arc, {
+      yearNumber: 2026, month: 12, rotating: true, seams, inGap: true, anchorRow: from, startSerial: daySerial(2027, 1, 1)
+    });
+    const at = (layout, id) => layout.nodes.find(n => n.id === id);
+    const a = at(edge, 'd:2026:12:22'), b = at(eased, 'd:2026:12:22');
+    assert.ok(a && b && Math.abs(a.x - b.x) < 0.01 && Math.abs(a.y - b.y) < 0.01, 'no jump entering the gap');
+  });
+
   it('honors Gregory: the ten days of October 1582 never happened', () => {
     GREGORIAN_REFORM.missingDays.forEach(d => {
       assert.equal(dayExists(1582, 10, d), false, `5-14 Oct 1582 is a ghost: ${d}`);
