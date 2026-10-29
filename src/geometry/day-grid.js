@@ -215,12 +215,14 @@ export const WEDGE = {
   // Seven rays: index 0 = the TOP ray, the WEEKDAY HEADER (S M T W T F S);
   // indices 1..6 = week rows 1..6. In this quadrant of the circle,
   // INCREASING angle moves UP the screen.
-  RAY_OFFSETS_DEG: [4, 2, 0, -2, -4, -6, -8]
+  RAY_OFFSETS_DEG: [4, 2, 0, -2, -4, -6, -8],
+  TILT_DEG: 4           // the whole lattice turned clockwise (O-239): the
+                        // most even Sunday-to-ring gap on every phone measured
 };
 
 export const WEEKDAY_LETTERS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
-export function computeWedgeLattice(viewport, arcParams, magnifier) {
+export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride = null) {
   const width = viewport.width ?? 0;
   const SSd = viewport.SSd ?? width;
   const magX = magnifier.x ?? magnifier.cx ?? 0;
@@ -235,7 +237,7 @@ export function computeWedgeLattice(viewport, arcParams, magnifier) {
     x: magX + (dx / d1) * d1 * WEDGE.HUB_DIST_MUL,
     y: magY + (dy / d1) * d1 * WEDGE.HUB_DIST_MUL
   };
-  const base = Math.atan2(magY - hub2.y, magX - hub2.x)
+  let base = Math.atan2(magY - hub2.y, magX - hub2.x)
     + (WEDGE.FAN_ROTATION_DEG * Math.PI) / 180;
 
   // Radii: derived from what is ON THE GLASS, canonically (volume-
@@ -265,6 +267,23 @@ export function computeWedgeLattice(viewport, arcParams, magnifier) {
     : 0;
   const rIn = Math.max(rCorner - step * 1.5, rEdge); // Saturday
 
+  // THE TILT (O-239, Howell 2026-10-29): the finished lattice turned
+  // clockwise as one rigid piece about its own centre — its shape, radii
+  // and spacing untouched, its hub moved a little down — so the Sunday
+  // column runs more evenly beside the ring instead of closing on it at
+  // the top of the glass. Applied after the radii are fixed, so it can
+  // only turn the lattice, never reshape it.
+  const tiltDeg = Number.isFinite(tiltOverride) ? tiltOverride : WEDGE.TILT_DEG;
+  if (tiltDeg) {
+    const t = (tiltDeg * Math.PI) / 180;
+    const pivotAngle = base + (WEDGE.RAY_OFFSETS_DEG[3] * Math.PI) / 180;
+    const pr = rIn + step * 3;
+    const px = hub2.x + Math.cos(pivotAngle) * pr, py = hub2.y + Math.sin(pivotAngle) * pr;
+    const dx2 = hub2.x - px, dy2 = hub2.y - py;
+    hub2.x = px + dx2 * Math.cos(t) - dy2 * Math.sin(t);
+    hub2.y = py + dx2 * Math.sin(t) + dy2 * Math.cos(t);
+    base += t;
+  }
 
   return {
     hub2,

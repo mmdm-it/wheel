@@ -170,6 +170,34 @@ describe('day grid arithmetic', () => {
     assert.ok(ribbon.nodes.some(n => n.dim && n.label === '2'), 'its neighbours still dim');
   });
 
+  it('the tilt turns the lattice rigidly and evens the Sundays beside the ring (O-239)', async () => {
+    const { getViewportInfo, getArcParameters, getMagnifierPosition } =
+      await import('../src/geometry/focus-ring-geometry.js');
+    const { computeWedgeLattice } = await import('../src/geometry/day-grid.js');
+    const vp = getViewportInfo(360, 655); // Howell's phone inside Chrome
+    const arc = getArcParameters(vp), mag = getMagnifierPosition(vp);
+    const flat = computeWedgeLattice(vp, arc, mag, 0);
+    const tilted = computeWedgeLattice(vp, arc, mag);
+    // Rigid: every distance between two lattice points is unchanged.
+    const pts = L => [[0, 0], [0, 6], [6, 0], [6, 6], [3, 3]].map(([ri, c]) => L.pointAt(L.rayAngle(ri), L.radiusFor(c)));
+    const a = pts(flat), b = pts(tilted);
+    for (let i = 0; i < a.length; i += 1) for (let j = i + 1; j < a.length; j += 1) {
+      const da = Math.hypot(a[i].x - a[j].x, a[i].y - a[j].y), db = Math.hypot(b[i].x - b[j].x, b[i].y - b[j].y);
+      assert.ok(Math.abs(da - db) < 1e-6, 'the tilt reshaped the calendar');
+    }
+    // Even: the Sunday column's distance to the ring varies less across the glass.
+    const spread = L => {
+      const gaps = [];
+      for (let off = -12; off <= 30; off += 0.5) {
+        const p = L.pointAt(L.angleForRowOffset(off), L.radiusFor(0));
+        if (p.x < 0 || p.x > vp.width || p.y < 0 || p.y > vp.height) continue;
+        gaps.push(arc.radius - Math.hypot(p.x - arc.hubX, p.y - arc.hubY));
+      }
+      return Math.max(...gaps) - Math.min(...gaps);
+    };
+    assert.ok(spread(tilted) < spread(flat) * 0.7, `Sunday gap spread ${spread(flat).toFixed(0)} → ${spread(tilted).toFixed(0)}`);
+  });
+
   it('honors Gregory: the ten days of October 1582 never happened', () => {
     GREGORIAN_REFORM.missingDays.forEach(d => {
       assert.equal(dayExists(1582, 10, d), false, `5-14 Oct 1582 is a ghost: ${d}`);
