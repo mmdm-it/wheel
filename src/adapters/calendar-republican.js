@@ -159,6 +159,7 @@ const DECADE = 10;
 const ROWS_PER_YEAR = 37;
 export const FRENCH_WEEK = Object.freeze({
   length: DECADE,
+  rows: 3, // a month is three décades; the festivals one short row
   columnOf: serial => { const { doy } = dayOfYear(serial); return doy < 360 ? doy % DECADE : doy - 360; },
   // Continuous: a fraction of a row for a fraction of a day.
   rowOf: serial => {

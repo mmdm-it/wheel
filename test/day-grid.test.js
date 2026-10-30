@@ -302,6 +302,7 @@ describe('day grid arithmetic', () => {
       dayId: (y, m, d) => `d:${y}:${m}:${d}@tens`,
       week: {
         length: 10,
+        rows: 3,
         columnOf: serial => serial % 10,
         rowOf: serial => serial / 10,
         rowAt: row => ({ serial: row * 10, length: 10 })
@@ -319,11 +320,18 @@ describe('day grid arithmetic', () => {
     const r7 = seven.nodes.find(n => n.item?.level === 'day').r;
     const r10 = cells[0].r;
     assert.ok(r10 < r7 && r10 > r7 * 0.6, `cells shrink to fit (${r10} vs ${r7})`);
-    // The first and last columns sit on the same arcs as Sunday and Saturday.
-    const dist = n => Math.hypot(n.x - 0, n.y - 0);
+    // The first column sits on Sunday's arc; the last reaches further toward
+    // the right margin than Saturday's, since three rows bind the edge
+    // where six did, and the cells stay on the glass.
     const outer7 = seven.nodes.find(n => n.id === 'wd:0'), inner7 = seven.nodes.find(n => n.id === 'wd:6');
     const outer10 = headers[0], inner10 = headers[9];
-    assert.ok(Math.abs(dist(outer7) - dist(outer10)) < 0.5 && Math.abs(dist(inner7) - dist(inner10)) < 0.5);
+    assert.ok(Math.abs(outer7.x - outer10.x) < 1 && Math.abs(outer7.y - outer10.y) < 1, 'the outer arc holds');
+    assert.ok(inner10.x > inner7.x + 10, `the inner column reaches further right (${inner10.x} vs ${inner7.x})`);
+    // Every cell on the glass: its disc inside the screen's edge, its top below the top.
+    assert.ok(cells.every(n => n.x + n.r <= vp.width && n.y - n.r >= 0), `every cell on the glass (${Math.max(...cells.map(n => n.x + n.r))})`);
+    let minDist = Infinity;
+    cells.forEach(a => cells.forEach(b => { if (a !== b) minDist = Math.min(minDist, Math.hypot(a.x - b.x, a.y - b.y)); }));
+    assert.ok(minDist > 2 * r10, 'no two cells touch');
     // In motion the ribbon's rows are the reckoning's own: ten a row.
     const ribbon = computeDayGridLayout(vp, mag, arc, { yearNumber: 2, month: 3, fraction: 0.3, rotating: true, reckoning: tens });
     const byRow = new Map();

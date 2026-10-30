@@ -36,6 +36,8 @@ const DAYS_PER_WEEK = 7;
 // serial and length of any row.
 const DEFAULT_WEEK = Object.freeze({
   length: DAYS_PER_WEEK,
+  rows: 6, // the most rows a month can take
+
   columnOf: serial => ((serial + 4) % DAYS_PER_WEEK + DAYS_PER_WEEK) % DAYS_PER_WEEK,
   rowOf: serial => (serial + 4) / DAYS_PER_WEEK, // rows since the Sunday of serial 0
   rowAt: rowAbs => ({ serial: rowAbs * DAYS_PER_WEEK - 4, length: DAYS_PER_WEEK })
@@ -282,7 +284,7 @@ export const WEDGE = {
 
 export const WEEKDAY_LETTERS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
-export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride = null, columns = DAYS_PER_WEEK) {
+export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride = null, columns = DAYS_PER_WEEK, rows = 6) {
   const width = viewport.width ?? 0;
   const SSd = viewport.SSd ?? width;
   const magX = magnifier.x ?? magnifier.cx ?? 0;
@@ -320,12 +322,20 @@ export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride
                                                 // draw inward)
   // Binding cell: the BOTTOM ray (most clockwise, furthest right at small
   // radii) at the innermost arc must stay on the glass — solve exactly.
-  const lowRayAngle = base + (WEDGE.RAY_OFFSETS_DEG[6] * Math.PI) / 180;
-  const cosLow = Math.cos(lowRayAngle);
-  const rEdge = cosLow < 0
-    ? (hub2.x - (width - SSd * 0.045)) / -cosLow
-    : 0;
-  const rIn = Math.max(rCorner - step * 1.5, rEdge); // Saturday
+  // The bottom ray is the last row a month can fill: the sixth of a
+  // seven-day week, the third of a ten-day one (Howell 2026-10-30, on the
+  // French grid: "extended towards the right, basically filling out the
+  // red box"), so a shorter month reaches further toward the margin.
+  const edgeReach = (row, margin) => {
+    const cosLow = Math.cos(base + (WEDGE.RAY_OFFSETS_DEG[row] * Math.PI) / 180);
+    return cosLow < 0 ? (hub2.x - (width - SSd * margin)) / -cosLow : 0;
+  };
+  const rIn = Math.max(rCorner - step * 1.5, edgeReach(6, 0.045)); // Saturday
+  // The OUTER arc holds where Sunday's is, whatever the week: a shorter
+  // month only lets the inner arc come out further toward the margin.
+  const lowRow = Math.min(6, Math.max(1, Number.isFinite(rows) ? Math.floor(rows) : 6));
+  const rOut = rIn + step * (DAYS_PER_WEEK - 1);
+  const rInner = Math.min(rIn, Math.max(rCorner - step * 1.5, edgeReach(lowRow, 0.06))); // more margin than Saturday: the turn carries these cells further right
 
   // THE TILT (O-239, Howell 2026-10-29): the finished lattice turned
   // clockwise as one rigid piece about its own centre — its shape, radii
@@ -349,7 +359,7 @@ export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride
   // stay where seven columns put them, and ten columns divide the same
   // span more finely — the cells shrink to fit, the lattice does not grow.
   const cols = Number.isFinite(columns) && columns >= 2 ? Math.floor(columns) : DAYS_PER_WEEK;
-  const colStep = (step * (DAYS_PER_WEEK - 1)) / (cols - 1);
+  const colStep = (rOut - rInner) / (cols - 1);
   return {
     hub2,
     base,
@@ -365,7 +375,7 @@ export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride
     // Weekday column (0 = Sunday … 6 = Saturday, or the first to the last
     // of a longer row) → radius; the FIRST column is the OUTERMOST arc
     // (greatest radius, nearest the ring band).
-    radiusFor: weekday => rIn + colStep * (cols - 1 - weekday),
+    radiusFor: weekday => rOut - colStep * weekday,
     pointAt(angle, radius) {
       return { x: hub2.x + Math.cos(angle) * radius, y: hub2.y + Math.sin(angle) * radius };
     }
@@ -423,13 +433,16 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     ? opts.weekdayLetters
     : (week.length === DAYS_PER_WEEK ? WEEKDAY_LETTERS : Array.from({ length: week.length }, (_, i) => String(i + 1)));
 
-  const lattice = computeWedgeLattice(viewport, arcParams, magnifier, null, week.length);
+  const lattice = computeWedgeLattice(viewport, arcParams, magnifier, null, week.length, week.rows);
 
   // Cell size from the lattice's own gaps: radial step vs angular gap at
-  // the middle radius, whichever is tighter.
+  // the middle radius, whichever is tighter. A wider row's cells take a
+  // tenth more of their gap (Howell 2026-10-30: "the nodes can be made
+  // slightly larger, perhaps 10%").
   const midR = lattice.radiusFor(Math.floor((week.length - 1) / 2));
   const angularGap = midR * (WEDGE.RAY_STEP_DEG * Math.PI) / 180;
-  const nodeR = Math.min(lattice.colStep, angularGap) * 0.38; // +15% then +10% (sittings)
+  const fill = week.length > DAYS_PER_WEEK ? 0.418 : 0.38; // +15% then +10% (sittings)
+  const nodeR = Math.min(lattice.colStep, angularGap) * fill;
   const labelFontPx = Math.max(11, Math.min(20, nodeR * 1.05));
 
   const nodes = [];

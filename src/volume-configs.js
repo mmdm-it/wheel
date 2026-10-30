@@ -716,8 +716,8 @@ function makeCalendarLabelFormatter({ locale }) {
     // In the item's own calendar's words (O-248): English for the Gregorian
     // and the Julian, Hebrew for the Hebrew.
     if (context === 'caption') {
-      // A day with a name of its own says it beside its numeral (O-251).
-      if (item.level === 'day') return String(item.dayWord || '').toUpperCase();
+      // A day's own name is said on its card, not beside the lens (Howell
+      // 2026-10-30: the two copies were redundant).
       if (item.level !== 'century') return '';
       return calendarSystemOf(item.system).centuryWord(item.era);
     }
