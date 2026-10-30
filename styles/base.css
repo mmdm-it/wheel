@@ -644,6 +644,12 @@ svg :focus-visible {
   stroke-width: 1px;
   cursor: pointer;
 }
+/* NOT A DISTRACTION (Howell 2026-10-30): "make it semi-transparent". Both
+   the disc and its word, so the two fade as one. */
+.focus-ring-now-circle,
+.focus-ring-now-label {
+  opacity: var(--now-button-opacity, 0.55);
+}
 .focus-ring-now-label {
   font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
   font-size: clamp(calc(15.75px * var(--iframe-scale, 1)), 1.8vmin, calc(29.25px * var(--iframe-scale, 1)));
