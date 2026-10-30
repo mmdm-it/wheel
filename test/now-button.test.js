@@ -70,6 +70,10 @@ describe('the host (O-243)', () => {
     assert.match(host, /pyramidData\?\.nodes\?\.some\(n => n\?\.now\)/);
     assert.match(host, /show: !nowOnGlass/);
   });
+  it('the word may be the chosen calendar\'s own (O-248): main hands the handler set\'s word, the host resolves it each render', () => {
+    assert.match(read('../src/main.js'), /nowButton: typeof handlerSet\.nowWord === 'function' \? handlerSet\.nowWord : /);
+    assert.match(host, /const nowWord = typeof nowButton === 'function' \? nowButton\(\) : nowButton;/);
+  });
   it('a tap keeps the level and turns the ring to the present item in one glide', () => {
     assert.match(host, /onClick: \(\) => rotateToIndex\(nowIndex, \{ durationMs: NOW_RETURN_MS \}\)/);
   });
@@ -79,7 +83,7 @@ describe('the host (O-243)', () => {
   it('a press on the disc is a plain button press in the gesture router', () => {
     const main = read('../src/main.js');
     assert.match(main, /closest\('\.focus-ring-now-circle, \.focus-ring-now-label'\)/);
-    assert.match(main, /nowButton: typeof config\?\.nowButton === 'string'/);
+    assert.match(main, /nowButton: typeof handlerSet\.nowWord === 'function' \? handlerSet\.nowWord : \(typeof config\?\.nowButton === 'string'/);
   });
 });
 

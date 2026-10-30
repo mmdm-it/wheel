@@ -4806,7 +4806,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     labelFormatter,
     levelCaptions: config?.levelCaptions === true,
     captionAfter: config?.captionAfter === true,
-    nowButton: typeof config?.nowButton === 'string' && config.nowButton ? config.nowButton : null,
+    nowButton: typeof handlerSet.nowWord === 'function' ? handlerSet.nowWord : (typeof config?.nowButton === 'string' && config.nowButton ? config.nowButton : null),
     // THE BUTTON STEPS ASIDE WHILE THE RING TURNS (O-244, Howell 2026-10-30:
     // "any rotation of the focus ring should cause the dimension button to
     // disappear. There's no need for it to be there") — and it would sit

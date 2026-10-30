@@ -2283,8 +2283,10 @@ export function createApp({
       if (pyramidData?.nodes?.some(n => n?.now)) return true;
       return false;
     })();
-    const nowButtonOptions = nowButton && !isLayerOut
-      ? { show: !nowOnGlass, label: String(nowButton), onClick: () => rotateToIndex(nowIndex, { durationMs: NOW_RETURN_MS }) }
+    // The word may be a function (O-248: the chosen system's own word).
+    const nowWord = typeof nowButton === 'function' ? nowButton() : nowButton;
+    const nowButtonOptions = nowWord && !isLayerOut
+      ? { show: !nowOnGlass, label: String(nowWord), onClick: () => rotateToIndex(nowIndex, { durationMs: NOW_RETURN_MS }) }
       : null;
 
     if (typeof onTurn === 'function' && Boolean(isRotating) !== lastTurning) {

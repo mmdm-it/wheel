@@ -144,6 +144,8 @@ describe('the Hebrew calendar (O-248)', () => {
     assert.equal(H.centuryPhrase(58, 1), 'המאה הנ״ח');
     assert.equal(H.centuryWord(1), 'המאה');
     assert.equal(H.nativeName, 'עברי');
+    assert.equal(H.nowWord, 'עכשיו');
+    assert.equal(G.nowWord, 'NOW');
     assert.equal(G.decadeWord(8), 'EIGHTIES');
     assert.equal(G.centuryLens(21, 1), '21st');
     assert.equal(G.centuryLabel(3, -1), '3rd B.C.');

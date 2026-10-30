@@ -37,6 +37,7 @@ describe('the calendars plane (O-244)', () => {
     assert.equal(plane.selected(), 'gregorian');
     assert.equal(plane.label('gregorian'), 'GREGORIAN');
     assert.equal(plane.label('republican'), 'FRENCH REPUBLICAN');
+    assert.equal(plane.label('hebrew'), 'עברי', 'its seat in its own script');
     const live = CALENDAR_SYSTEMS.filter(c => c.live).map(c => c.id);
     assert.deepEqual(live, ['gregorian', 'julian', 'hebrew']);
     for (const id of live) {

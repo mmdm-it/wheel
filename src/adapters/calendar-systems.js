@@ -16,7 +16,7 @@
 // than misreading it.
 import { GREGORIAN_RECKONING, JULIAN_RECKONING, daySerial } from '../geometry/day-grid.js';
 import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf, hebrewNumeral, HEBREW_WEEKDAYS, HEBREW_WEEKDAY_LETTERS,
-  HEBREW_DECADE_WORDS, HEBREW_CENTURY_WORD, hebrewCenturyLabel, hebrewCenturyPhrase, HEBREW_NAME } from './calendar-hebrew.js';
+  HEBREW_DECADE_WORDS, HEBREW_CENTURY_WORD, hebrewCenturyLabel, hebrewCenturyPhrase, HEBREW_NAME, HEBREW_NOW } from './calendar-hebrew.js';
 import { DECADE_WORDS, CENTURY_WORD, CENTURY_ERA_BC, ordinal, centuryShortLabel, centuryLongLabel } from './calendar-eras.js';
 
 export const GREGORIAN = 'gregorian';
@@ -61,13 +61,15 @@ const ENGLISH_ERAS = {
   centuryPhrase: (n, era) => centuryLongLabel(n, era),
   centuryWord: era => (era < 0 ? `${CENTURY_WORD} ${CENTURY_ERA_BC}` : CENTURY_WORD)
 };
-function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name }) {
+function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW' }) {
   const suffix = id === GREGORIAN ? '' : `@${id}`;
   return Object.freeze({
     id,
     name,
     // the name the calendar gives itself, in its own script — the watermark
+    // and its seat on the plane — and its word for the present (the NOW disc)
     nativeName,
+    nowWord,
     // the rings above the years, in the system's own words
     ...eras,
     reckoning,
@@ -119,6 +121,7 @@ export const SYSTEMS = Object.freeze({
     weekdayLetters: HEBREW_WEEKDAY_LETTERS,
     epochSerial: HEBREW_RECKONING.serialOf(1, 7, 1),
     nativeName: HEBREW_NAME,
+    nowWord: HEBREW_NOW,
     eras: {
       decadeWord: digit => HEBREW_DECADE_WORDS[digit] || '',
       centuryLens: n => hebrewCenturyLabel(n),

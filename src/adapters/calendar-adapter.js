@@ -540,6 +540,9 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     // The chosen calendar's script runs right to left or not (O-248): the
     // parent seat and the lens's caption take their side from it.
     textDirection: () => system.direction || 'ltr',
+    // The NOW disc's word in the chosen calendar's script (Howell: "The
+    // NOW button should be in Hebrew letters").
+    nowWord: () => system.nowWord || 'NOW',
     getParentLabel,
     getGapLabel,
     // Years stay centered on their nodes (numerals); MONTHS align like
@@ -616,7 +619,10 @@ export function onCalendarChosen(fn) { chosenListeners.add(fn); return () => cho
 export const calendarStrata = () => [
   { id: 'secondary', mirrored: true,
     items: () => CALENDARS.map(c => c.id),
-    label: id => calendarById(id)?.name || id,
+    // The seat in the calendar's own script where it has one (Howell: "the
+    // Hebrew label in the secondary stratum should also be written in
+    // Hebrew text"); the plane's English for the rest.
+    label: id => SYSTEMS[id]?.nativeName || calendarById(id)?.name || id,
     selected: () => chosenCalendar,
     classFor: id => (calendarById(id)?.live ? '' : 'is-coming'),
     inert: id => !calendarById(id)?.live,

@@ -159,6 +159,7 @@ export const HEBREW_CENTURY_WORD = 'המאה';
 export const hebrewCenturyLabel = n => `ה${hebrewNumeral(n)}`;
 export const hebrewCenturyPhrase = n => `${HEBREW_CENTURY_WORD} ${hebrewCenturyLabel(n)}`;
 export const HEBREW_NAME = 'עברי';
+export const HEBREW_NOW = 'עכשיו';
 export const hebrewMonthKeyOf = month => MONTH_NAMES[month]?.[0] || String(month);
 
 export const HEBREW_RECKONING = Object.freeze({
