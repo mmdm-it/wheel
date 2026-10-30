@@ -21,6 +21,9 @@ import { DECADE_WORDS, CENTURY_WORD, CENTURY_ERA_BC, ordinal, centuryShortLabel,
   decadeIdOf, decadeDigitOf, centuryIdOf, centuryNumberOf, millenniumIdOf } from './calendar-eras.js';
 import { MAYA_RECKONING, MAYA_EPOCH_SERIAL, MAYA_GROUPING, mayaMonthsOf, mayaMonthKeyOf, tunName, tzolkinLabel, haabLabel,
   MAYA_WEEKDAY_LETTERS, MAYA_DECADE_WORD, MAYA_CENTURY_WORD, MAYA_NAME, MAYA_NOW } from './calendar-maya.js';
+import { CHINESE_RECKONING, CHINESE_GROUPING, chineseMonthsOf, chineseMonthKeyOf, chineseYearName, chineseDayStemBranch,
+  chineseNumeral, chineseCycleLabel, warmChineseYear, CHINESE_WEEKDAYS, CHINESE_WEEKDAY_LETTERS, CHINESE_DECADE_WORDS,
+  CHINESE_CYCLE_WORD, CHINESE_NAME, CHINESE_NOW } from './calendar-chinese.js';
 import { ISLAMIC_RECKONING, islamicMonthsOf, islamicMonthKeyOf, arabicNumeral, ARABIC_WEEKDAYS, ARABIC_WEEKDAY_LETTERS,
   ARABIC_DECADE_WORDS, ARABIC_CENTURY_WORD, arabicOrdinal, arabicCenturyPhrase, ISLAMIC_NAME, ARABIC_NOW } from './calendar-islamic.js';
 import { FRENCH_RECKONING, frenchMonthsOf, frenchMonthKeyOf, frenchDayName, romanNumeral, romanOrdinal, FRENCH_WEEKDAYS,
@@ -87,7 +90,7 @@ const DECIMAL_GROUPING = Object.freeze({
 });
 // A day's parent seat on the days ring: the month's name before the year's.
 const MONTH_THEN_YEAR = (yearName, monthName) => `${String(monthName).toUpperCase()} ${yearName}`;
-function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW', dayWord = null, grouping = DECIMAL_GROUPING, dayTitle = null, monthPhrase = MONTH_THEN_YEAR, yearShort = null }) {
+function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW', dayWord = null, grouping = DECIMAL_GROUPING, dayTitle = null, monthPhrase = MONTH_THEN_YEAR, yearShort = null, warm = null }) {
   const suffix = id === GREGORIAN ? '' : `@${id}`;
   return Object.freeze({
     id,
@@ -105,6 +108,10 @@ function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearS
     // The parent seat above a day: the month's name and the year's, as the
     // system phrases them (13.0.14.1 for the Maya).
     monthPhrase,
+    // A system whose years cost astronomy (the Chinese) may be warmed a
+    // year at a time in idle moments, so the months ring opens without a
+    // stall; null means there is nothing to warm.
+    warm: typeof warm === 'function' ? warm : null,
     reckoning,
     // the script's direction, the week's names and the grid's header letters
     direction,
@@ -248,6 +255,34 @@ export const SYSTEMS = Object.freeze({
       centuryLabel: n => `${MAYA_CENTURY_WORD} ${n}`,
       centuryPhrase: n => `${MAYA_CENTURY_WORD} ${n}`,
       centuryWord: () => MAYA_CENTURY_WORD
+    }
+  }),
+  // The lunisolar year of the new moons and the solstice, named by the
+  // sexagenary cycle, counted from 2637 B.C.; sixty years to a cycle where
+  // the centuries go, six 旬 of ten inside it.
+  chinese: makeSystem({
+    id: 'chinese', name: 'CHINESE', reckoning: CHINESE_RECKONING,
+    monthsOf: chineseMonthsOf,
+    monthKeyOf: chineseMonthKeyOf,
+    yearName: chineseYearName,
+    yearSort: y => y,
+    noYearZero: false,
+    weekdays: CHINESE_WEEKDAYS,
+    weekdayLetters: CHINESE_WEEKDAY_LETTERS,
+    epochSerial: CHINESE_RECKONING.serialOf(1, 1, 1),
+    nativeName: CHINESE_NAME,
+    nowWord: CHINESE_NOW,
+    grouping: CHINESE_GROUPING,
+    dayWord: (y, m, d) => chineseDayStemBranch(CHINESE_RECKONING.serialOf(y, m, d)),
+    monthPhrase: (yearName, monthName) => `${yearName}年${monthName}`,
+    warm: warmChineseYear,
+    eras: {
+      decadeShort: () => '',
+      decadeWord: digit => CHINESE_DECADE_WORDS[digit] || '',
+      centuryLens: n => chineseNumeral(n),
+      centuryLabel: n => chineseCycleLabel(n),
+      centuryPhrase: n => chineseCycleLabel(n),
+      centuryWord: () => CHINESE_CYCLE_WORD
     }
   })
 });

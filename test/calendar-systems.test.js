@@ -12,6 +12,7 @@ import { isHebrewLeapYear, daysInHebrewYear, hebrewNumeral } from '../src/adapte
 import * as islamic from '../src/adapters/calendar-islamic.js';
 import * as french from '../src/adapters/calendar-republican.js';
 import * as maya from '../src/adapters/calendar-maya.js';
+import * as chinese from '../src/adapters/calendar-chinese.js';
 const { arabicNumeral } = islamic;
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, buildCalendarDecades, buildCalendarCenturies, getCalendarMonths, getCalendarCenturyDecades, getCalendarDecadeYears } from '../src/adapters/volume-helpers.js';
 
@@ -479,6 +480,110 @@ describe('the Maya calendar (O-252)', () => {
     assert.equal(now[0].name, String(p.day - 1));
     assert.equal(now[0].dayWord, M.dayWord(p.year, p.month, p.day));
     assert.ok(days.items.find(Boolean).serial >= M.epochSerial);
+  });
+});
+
+describe('the Chinese calendar (O-253)', () => {
+  const C = SYSTEMS.chinese;
+  const civil = s => { const d = serialToDate(s); return `${d.yearNumber}-${d.month}-${d.day}`; };
+  const yearOf = (y, m, d) => C.dateOf(daySerial(y, m, d)).year;
+  it('begins its years on the second new moon after the solstice, as the almanacs print them', () => {
+    const newYears = [[2026, '2026-2-17'], [2025, '2025-1-29'], [2024, '2024-2-10'], [2023, '2023-1-22'], [2020, '2020-1-25'],
+      [2000, '2000-2-5'], [1970, '1970-2-6'], [1900, '1900-1-31'], [2033, '2033-1-31'], [2034, '2034-2-19']];
+    for (const [gy, ny] of newYears) assert.equal(civil(chinese.chineseNewYearSerial(yearOf(gy, 6, 1))), ny, `New Year ${gy}`);
+    assert.equal(yearOf(2026, 6, 1), 4663, 'counted from 2637 BC');
+    assert.equal(C.yearName(4663), '丙午', 'the year of the Fire Horse');
+    assert.equal(C.yearName(4662), '乙巳');
+    assert.equal(C.yearName(1), '甲子');
+    assert.deepEqual(C.dateOf(daySerial(2026, 2, 17)), { year: 4663, month: 1, day: 1 });
+    assert.deepEqual(C.dateOf(daySerial(2026, 2, 16)), { year: 4662, month: 13, day: 29 }, 'the last day of a leap year of thirteen moons');
+  });
+  it('takes a leap month in a year of thirteen moons: the first without a major solar term', () => {
+    const { isChineseLeapYear } = chinese;
+    const leapOf = gy => C.monthsOf(yearOf(gy, 6, 1)).filter(m => m.name.startsWith('閏')).map(m => m.name).join(',');
+    assert.equal(isChineseLeapYear(yearOf(2025, 6, 1)), true);
+    assert.equal(leapOf(2025), '閏六月');
+    assert.equal(leapOf(2023), '閏二月');
+    assert.equal(leapOf(2020), '閏四月');
+    assert.equal(leapOf(1900), '閏八月');
+    assert.equal(leapOf(2033), '閏十一月', 'the famous year 2033');
+    assert.equal(leapOf(2026), '');
+    assert.equal(isChineseLeapYear(yearOf(2026, 6, 1)), false);
+    const months = C.monthsOf(4663);
+    assert.equal(months.length, 12);
+    assert.deepEqual(months.map(m => m.name), ['正月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']);
+    assert.ok(months.every(m => m.days === 29 || m.days === 30));
+    assert.equal(months.reduce((n, m) => n + m.days, 0), daySerial(2027, 2, 6) - daySerial(2026, 2, 17), 'to the New Year of 2027');
+    const leap = C.monthsOf(4662);
+    assert.equal(leap.length, 13);
+    assert.equal(leap[6].name, '閏六月');
+    assert.equal(leap[6].number, 7, 'a place of its own on the ring');
+    assert.equal(C.monthId(4662, 7), '4662:m7@chinese');
+    assert.equal(C.reckoning.monthSpan(4663, 1), 30);
+  });
+  it('names every day: the almanac\'s numerals, the week, the day\'s own stem and branch', () => {
+    const today = daySerial(2026, 10, 30);
+    const d = C.dateOf(today);
+    assert.deepEqual(d, { year: 4663, month: 9, day: 21 }, '九月廿一');
+    assert.equal(C.dayName(21), '廿一');
+    assert.equal(C.dayName(1), '初一');
+    assert.equal(C.dayName(10), '初十');
+    assert.equal(C.dayName(15), '十五');
+    assert.equal(C.dayName(20), '二十');
+    assert.equal(C.dayName(30), '三十');
+    assert.equal(C.dayWord(4663, 9, 21), '丁丑日');
+    assert.equal(C.dayWord(4636, 11, 25), '戊午日', '1 January 2000 was a 戊午 day');
+    assert.deepEqual(C.dateOf(daySerial(2000, 1, 1)), { year: 4636, month: 11, day: 25 }, '己卯年十一月廿五, the year before 庚辰');
+    assert.equal(C.weekdays[0], '星期日');
+    assert.deepEqual(C.weekdayLetters, ['日', '一', '二', '三', '四', '五', '六']);
+    assert.equal(C.weekdayOf(today), 5, 'a Friday');
+    assert.equal(C.monthPhrase('丙午', '九月'), '丙午年九月');
+    for (let s = daySerial(2024, 1, 1); s < daySerial(2027, 1, 1); s += 3) {
+      const x = C.dateOf(s);
+      assert.equal(C.serialOf(x.year, x.month, x.day), s);
+    }
+  });
+  it('groups its years by the cycle of sixty and the six 旬, and rings from the epoch', () => {
+    const { chineseNumeral } = chinese;
+    assert.equal(C.decadeKey(4663), 'dd:466');
+    assert.equal(C.decadeDigit(4663), 4, '丙午 lies in the 甲辰旬');
+    assert.equal(C.decadeWord(4), '甲辰旬');
+    assert.equal(C.centuryKey(4663), 'c:78');
+    assert.equal(C.centuryNumber(4663), 78);
+    assert.equal(C.centuryLens(78, 1), '七十八');
+    assert.equal(C.centuryLabel(78, 1), '第七十八甲子');
+    assert.equal(C.centuryWord(1), '甲子');
+    assert.equal(chineseNumeral(105), '一百零五');
+    assert.equal(chineseNumeral(110), '一百一十');
+    assert.equal(C.nativeName, '農曆');
+    assert.equal(C.nowWord, '現在');
+    assert.equal(typeof C.warm, 'function');
+    assert.equal(G.warm, null);
+    const years = buildCalendarYears(manifest, { initialItemId: '4663@chinese' });
+    const real = years.items.filter(Boolean);
+    assert.equal(real[0].id, '1@chinese', 'the ring starts at the epoch');
+    assert.equal(real[0].name, '甲子');
+    assert.equal(years.items[years.selectedIndex].name, '丙午');
+    const decades = buildCalendarDecades(manifest, { initialItemId: 'dd:466@chinese' });
+    const dec = decades.items[decades.selectedIndex];
+    assert.equal(dec.name, '甲辰旬');
+    assert.equal(dec.firstYear, 4661);
+    assert.equal(dec.lastYear, 4670);
+    assert.equal(getCalendarCenturyDecades(manifest, 'c:78@chinese').length, 6, 'six 旬 to a cycle');
+    assert.equal(getCalendarDecadeYears(manifest, 'dd:466@chinese').length, 10);
+    const centuries = buildCalendarCenturies(manifest, { initialItemId: 'c:78@chinese' });
+    assert.equal(centuries.items[centuries.selectedIndex].name, '第七十八甲子');
+    assert.equal(centuries.items[centuries.selectedIndex].firstYear, 4621);
+    const sky = getCalendarMonths(manifest, years.items[years.selectedIndex], 'year');
+    assert.equal(sky.length, 12);
+    assert.equal(sky[0].name, '正月');
+    const t = todaySerial();
+    const p = C.dateOf(t);
+    const days = buildCalendarDaysCousinChain(manifest, { centerId: C.dayId(p.year, p.month, p.day) });
+    const now = days.items.filter(i => i && i.now);
+    assert.equal(now.length, 1);
+    assert.equal(now[0].name, C.dayName(p.day));
+    assert.equal(now[0].dayWord, C.dayWord(p.year, p.month, p.day));
   });
 });
 

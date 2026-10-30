@@ -2,7 +2,7 @@ import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths,
   getCalendarWeekdayNames, getCalendarWeekdayLetters, buildCalendarDecades, buildCalendarCenturies,
-  getCalendarCenturyDecades, getCalendarDecadeYears } from './volume-helpers.js';
+  getCalendarCenturyDecades, getCalendarDecadeYears, yearNumbersForSystem } from './volume-helpers.js';
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
 import { SYSTEMS, GREGORIAN, systemOf, systemIdOf, todaySerial } from './calendar-systems.js';
 import { localSunTimes } from '../geometry/solar.js';
@@ -521,6 +521,26 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     if (chain?.items?.length) app.setPrimaryItems(chain.items, chain.selectedIndex, true);
   };
   onCalendarChosen(id => reexpress(systemOf(id)));
+  // WARMED IN IDLE MOMENTS (O-253): a calendar whose years cost astronomy
+  // (the Chinese: every month a new moon, every year a solstice) is walked
+  // a hundred years at a time between frames once it is chosen, so the
+  // months ring — every year's months on one chain — opens without a
+  // stall. Abandoned the moment another calendar is chosen.
+  let warming = 0;
+  const warmSystem = sys => {
+    const token = ++warming;
+    if (typeof sys?.warm !== 'function' || typeof setTimeout !== 'function') return;
+    const years = yearNumbersForSystem(manifest, sys);
+    let i = 0;
+    const step = () => {
+      if (token !== warming) return;
+      const end = Math.min(years.length, i + 100);
+      for (; i < end; i += 1) sys.warm(years[i]);
+      if (i < years.length) setTimeout(step, 0);
+    };
+    setTimeout(step, 0);
+  };
+  onCalendarChosen(id => warmSystem(systemOf(id)));
 
   const onBoot = ({ app, renderDetail }) => {
     bootedApp = app;
@@ -621,7 +641,7 @@ const CALENDARS = [
   { id: 'islamic', name: 'ISLAMIC', live: true },
   { id: 'republican', name: 'FRENCH REPUBLICAN', live: true },
   { id: 'maya', name: 'MAYA', live: true },
-  { id: 'chinese', name: 'CHINESE', live: false }
+  { id: 'chinese', name: 'CHINESE', live: true }
 ];
 const calendarById = id => CALENDARS.find(c => c.id === id) || null;
 let chosenCalendar = 'gregorian';

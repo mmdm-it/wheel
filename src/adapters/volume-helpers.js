@@ -311,6 +311,7 @@ const yearNumberOf = selected => {
 // authority: the Gregorian ring is exactly the years the manifest lists;
 // another system covers the same span in its own numbering (the same real
 // days, a few at either end aside). No years, no ring.
+export const yearNumbersForSystem = (manifest, sys) => yearNumbersFor(manifest, sys);
 function yearNumbersFor(manifest, sys) {
   const years = manifest?.Calendar?.years;
   if (!years) return [];
