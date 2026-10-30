@@ -2093,7 +2093,12 @@ export function createApp({
           // Label lengths and size scales in SEAT order: the star walk keeps
           // each child a safe distance from the right edge for ITS OWN
           // label's width, and spaces stars by their true drawn radii.
-          labelLengths: seatOrder.slice(0, seatCount).map(i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length),
+          // An equal sky reorders its seats top to bottom below, so every
+          // seat is walked for the longest label any child might take.
+          labelLengths: (() => {
+            const lens = seatOrder.slice(0, seatCount).map(i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length);
+            return equalSky ? lens.map(() => Math.max(0, ...lens)) : lens;
+          })(),
           sizeScales: seatScales.slice(0, seatCount),
           labelBaseFontPx: pyramidLabelBasePx
         });
@@ -2103,6 +2108,13 @@ export function createApp({
         let onNodeClick = null;
         if (children.length > 0 && geo.intersections.length > 0) {
             const slots = geo.intersections.slice(0, seatCount);
+            // A SKY OF EQUALS READS DOWNWARD (O-241, Howell 2026-10-29): the
+            // seats keep the star field's scatter, which still differs per
+            // parent and so still dances as the ring turns, but the children
+            // take them highest first in sibling order — the first child is
+            // always the highest star, the last the lowest, and none sits
+            // above a sibling that precedes it.
+            if (equalSky) slots.sort((a, b) => (a.y - b.y) || (a.x - b.x));
             const nodeR = vp.SSd * NODE_RADIUS_RATIO;
             nodes = slots.map((slot, j) => {
               const child = children[seatOrder[j] ?? j] ?? children[j];
