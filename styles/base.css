@@ -382,7 +382,7 @@ svg :focus-visible {
   letter-spacing: 0.06em;
   white-space: nowrap;
   color: var(--color-text);
-  opacity: var(--watermark-opacity, 0.26);
+  opacity: var(--watermark-opacity, 0.13);
   transform: rotate(-60deg);
 }
 #watermark[hidden] { display: none; }
