@@ -1,3 +1,4 @@
+import { buildCalendarDecades, buildCalendarYears } from '../adapters/volume-helpers.js';
 // How long a FAVORITE's name may be before the pyramid abbreviates it anyway
 // (2026-07-29). The sky's label law vetoes a star whose name would collide
 // with its neighbours', so one very long favorite can empty the field. Latin's
@@ -206,7 +207,7 @@ export function buildCalendarPyramid({
   const getChildren = ({ selected }) => (calendarModeRef?.() === 'day'
     ? [] // the days ring has no pyramid (its detail era comes with C.6's boot state)
     : getCalendarMonths(manifest, selected, calendarModeRef?.()))
-    .map(item => (item?.name
+    .map(item => (item?.name && item.level === 'month'
       ? { ...item, name: String(item.name).slice(0, 3).toUpperCase() }
       : item));
   const onClick = instr => {
@@ -225,6 +226,22 @@ export function buildCalendarPyramid({
         migrateOrSet(chain.items, chain.selectedIndex, true);
       }
       // After the migration starts (see buildCatalogPyramid).
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      return;
+    }
+    // A DECADE or A YEAR tapped in the sky (O-242): its ring pours in,
+    // entered at the tapped one.
+    const mode = calendarModeRef?.();
+    if (mode === 'century' || mode === 'decade') {
+      const chain = mode === 'century'
+        ? buildCalendarDecades(manifest, { initialItemId: instr.item.id })
+        : buildCalendarYears(manifest, { initialItemId: instr.item.id });
+      if (!chain?.items?.length) return;
+      if (typeof setCalendarMode === 'function') setCalendarMode(mode === 'century' ? 'decade' : 'year');
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateIn || app.setPrimaryItems;
+        migrateOrSet(chain.items, chain.selectedIndex, true);
+      }
       if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
       return;
     }

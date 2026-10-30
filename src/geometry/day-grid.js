@@ -215,12 +215,14 @@ export const WEDGE = {
   // Seven rays: index 0 = the TOP ray, the WEEKDAY HEADER (S M T W T F S);
   // indices 1..6 = week rows 1..6. In this quadrant of the circle,
   // INCREASING angle moves UP the screen.
-  RAY_OFFSETS_DEG: [4, 2, 0, -2, -4, -6, -8]
+  RAY_OFFSETS_DEG: [4, 2, 0, -2, -4, -6, -8],
+  TILT_DEG: 4           // the whole lattice turned clockwise (O-239): the
+                        // most even Sunday-to-ring gap on every phone measured
 };
 
 export const WEEKDAY_LETTERS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
-export function computeWedgeLattice(viewport, arcParams, magnifier) {
+export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride = null) {
   const width = viewport.width ?? 0;
   const SSd = viewport.SSd ?? width;
   const magX = magnifier.x ?? magnifier.cx ?? 0;
@@ -235,7 +237,7 @@ export function computeWedgeLattice(viewport, arcParams, magnifier) {
     x: magX + (dx / d1) * d1 * WEDGE.HUB_DIST_MUL,
     y: magY + (dy / d1) * d1 * WEDGE.HUB_DIST_MUL
   };
-  const base = Math.atan2(magY - hub2.y, magX - hub2.x)
+  let base = Math.atan2(magY - hub2.y, magX - hub2.x)
     + (WEDGE.FAN_ROTATION_DEG * Math.PI) / 180;
 
   // Radii: derived from what is ON THE GLASS, canonically (volume-
@@ -265,6 +267,23 @@ export function computeWedgeLattice(viewport, arcParams, magnifier) {
     : 0;
   const rIn = Math.max(rCorner - step * 1.5, rEdge); // Saturday
 
+  // THE TILT (O-239, Howell 2026-10-29): the finished lattice turned
+  // clockwise as one rigid piece about its own centre — its shape, radii
+  // and spacing untouched, its hub moved a little down — so the Sunday
+  // column runs more evenly beside the ring instead of closing on it at
+  // the top of the glass. Applied after the radii are fixed, so it can
+  // only turn the lattice, never reshape it.
+  const tiltDeg = Number.isFinite(tiltOverride) ? tiltOverride : WEDGE.TILT_DEG;
+  if (tiltDeg) {
+    const t = (tiltDeg * Math.PI) / 180;
+    const pivotAngle = base + (WEDGE.RAY_OFFSETS_DEG[3] * Math.PI) / 180;
+    const pr = rIn + step * 3;
+    const px = hub2.x + Math.cos(pivotAngle) * pr, py = hub2.y + Math.sin(pivotAngle) * pr;
+    const dx2 = hub2.x - px, dy2 = hub2.y - py;
+    hub2.x = px + dx2 * Math.cos(t) - dy2 * Math.sin(t);
+    hub2.y = py + dx2 * Math.sin(t) + dy2 * Math.cos(t);
+    base += t;
+  }
 
   return {
     hub2,
@@ -283,6 +302,31 @@ export function computeWedgeLattice(viewport, arcParams, magnifier) {
       return { x: hub2.x + Math.cos(angle) * radius, y: hub2.y + Math.sin(angle) * radius };
     }
   };
+}
+
+// THE NIAGARA'S GAPS (O-236, Howell 2026-10-29): the ring of months parts
+// its years with empty slots, and the falling dates part with them rather
+// than vanishing. A SEAM is the first day after such a gap and the rows of
+// empty water that gap is worth; every date from the seam on sits that many
+// rows further down the fall, so each month's days stay level with the
+// month on the ring. One gap slot is worth a long month's rows, the pace the
+// ribbon already runs at through December and January either side of it.
+export const GAP_ROWS_PER_SLOT = 31 / DAYS_PER_WEEK;
+
+// The emblem's fixed length per viewport (O-237), memoised across frames.
+const EMBLEM_LENGTHS = new Map();
+
+const rowOfSerial = serial => (serial + 4) / DAYS_PER_WEEK; // week rows since the Sunday of serial 0
+const seamShift = (serial, seams) => seams.reduce((n, seam) => (serial >= seam.serial ? n + seam.rows : n), 0);
+
+/**
+ * Where the fall stands, in (seam-shifted) week rows, with the magnifier a
+ * `fraction` of a slot off this month's seat — the ribbon's gearing, stated
+ * once so the host can ease between two months across a gap.
+ */
+export function ribbonRowAt(yearNumber, month, fraction = 0, seams = []) {
+  const start = daySerial(yearNumber, month, 1);
+  return rowOfSerial(start + fraction * monthDaySpan(yearNumber, month)) + seamShift(start, seams);
 }
 
 /**
@@ -368,24 +412,142 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   }
 
   // The rotating ribbon: week rows sweep about the second hub, geared to
-  // the ring via the fractional chain position.
+  // the ring via the fractional chain position. The ribbon is geared to
+  // REAL days, so scrubbing October 1582 travels the 21 days it held, not
+  // 31. In a gap between years the host passes the fall's position itself
+  // (anchorRow, eased between the months either side) and every date dims,
+  // since no month is under the glass.
+  const seams = Array.isArray(opts.seams) ? opts.seams : [];
+  const inGap = Boolean(opts.inGap);
   const monthStart = daySerial(yearNumber, month, 1);
-  // The ribbon is geared to REAL days, so scrubbing October 1582 travels
-  // the 21 days it held, not 31.
-  const serialFloat = monthStart + fraction * monthDaySpan(yearNumber, month);
-  const rowFloat = (serialFloat + 4) / 7; // week rows since the Sunday of serial 0
-  const centerRow = Math.floor(rowFloat);
-  const subRow = rowFloat - centerRow;
-  for (let dr = -5; dr <= 6; dr += 1) {
-    const rowAbs = centerRow + dr;
-    const angle = lattice.angleForRowOffset(dr - subRow + 2); // anchor near mid-fan
+  const startSerial = Number.isFinite(opts.startSerial)
+    ? opts.startSerial
+    : monthStart + fraction * monthDaySpan(yearNumber, month);
+  const anchorRow = Number.isFinite(opts.anchorRow)
+    ? opts.anchorRow
+    : ribbonRowAt(yearNumber, month, fraction, seams);
+  const centerRow = Math.floor(rowOfSerial(startSerial));
+  // The band is an edge too: a ribbon cell never sits on the ring. Laid
+  // edge to edge, the lower rows otherwise ran onto the band and its month
+  // names; a cell that would touch the band's inner edge is not drawn.
+  const ringHubX = arcParams.hubX;
+  const ringHubY = arcParams.hubY ?? 0;
+  const bandInner = Number.isFinite(arcParams.radius) ? arcParams.radius * 0.99 : Infinity;
+  const clearOfBand = (angle, weekday) => {
+    if (!Number.isFinite(ringHubX)) return true;
+    const p = lattice.pointAt(angle, lattice.radiusFor(weekday));
+    return Math.hypot(p.x - ringHubX, p.y - ringHubY) + nodeR <= bandInner;
+  };
+  // Returns the row's cells drawn and its nearest and farthest offsets.
+  const pushRow = rowAbs => {
+    const before = nodes.length;
     const sundaySerial = rowAbs * 7 - 4;
+    let lo = Infinity, hi = -Infinity;
     for (let c = 0; c < 7; c += 1) {
-      const date = serialToDate(sundaySerial + c);
-      const inAnchor = date.yearNumber === yearNumber && date.month === month;
-      pushCell(angle, c, date.day, !inAnchor, `d:${date.yearNumber}:${date.month}:${date.day}`,
+      const serial = sundaySerial + c;
+      const offset = rowAbs + seamShift(serial, seams) - anchorRow + 2; // anchor near mid-fan
+      lo = Math.min(lo, offset); hi = Math.max(hi, offset);
+      const angle = lattice.angleForRowOffset(offset);
+      if (!clearOfBand(angle, c)) continue;
+      const date = serialToDate(serial);
+      const inAnchor = !inGap && date.yearNumber === yearNumber && date.month === month;
+      // THE FIRST OF EVERY MONTH STANDS OUT (O-238, Howell 2026-10-29): full
+      // strength in the fall like the magnified month's own days, in the
+      // same white — a colour would distract — so each month's start is
+      // legible as it passes.
+      const firstOfMonth = date.day === 1;
+      pushCell(angle, c, date.day, !inAnchor && !firstOfMonth, `d:${date.yearNumber}:${date.month}:${date.day}`,
         { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day });
+      // …and stands clear of the fade the whole sky wears while the ring
+      // turns (.is-rotating, 0.35), which is what Howell actually saw: the
+      // first cut only undimmed the cell, and the turning fade hid that.
+      if (firstOfMonth && nodes.length && nodes[nodes.length - 1].label === '1') nodes[nodes.length - 1].fullStrength = true;
     }
+    return { drawn: nodes.length - before, lo, hi };
+  };
+  // The ribbon runs EDGE TO EDGE (O-235, Howell 2026-10-29): it used to be
+  // a fixed twelve rows, so in a tall viewport the lower right sat empty
+  // ahead of the ribbon instead of feeding it days. Now rows are laid
+  // outward from the anchor in both directions until one falls wholly off
+  // the glass beyond the fan — days enter at the viewport's edge and leave
+  // at the top. A row lost in a gap's empty water draws nothing but does
+  // not end the fall; only a row past the fan does. The cap only bounds a
+  // pathological viewport; culling does the work.
+  const RIBBON_ROW_CAP = 48;
+  for (let dr = 0; dr <= RIBBON_ROW_CAP; dr += 1) {
+    const row = pushRow(centerRow + dr);
+    if (row.drawn === 0 && row.lo > 8) break;
   }
-  return { nodes, gridMode: true };
+  for (let dr = -1; dr >= -RIBBON_ROW_CAP; dr -= 1) {
+    const row = pushRow(centerRow + dr);
+    if (row.drawn === 0 && row.hi < -4) break;
+  }
+  // THE EMBLEM IN THE GAP (O-237, Howell 2026-10-29): each gap's empty
+  // water carries the volume's own artwork, centred in it — midway between
+  // the last row before the seam and the first after, on the middle arc —
+  // and turned like the numerals around it, so it lines up on the hub and
+  // falls with the dates. Its box is the water's: the seven columns wide
+  // (along the ray) and the clear rows tall (across them).
+  const emblems = [];
+  // The emblem's clear length along a ray of the given angle: from the
+  // Saturday side out to just short of the ring, along its centre line and
+  // both long edges, capped at the seven columns.
+  const rNear = lattice.radiusFor(6) - nodeR;
+  const rCap = lattice.radiusFor(0) + nodeR;
+  // Measured against the ARTWORK, not its box: the box is the whole
+  // water's height, but the artwork is fitted inside it at its own
+  // proportions (emblemAspect, width over height, when the host knows it),
+  // so its long edges sit only (length / aspect) apart.
+  const aspect = Number.isFinite(opts.emblemAspect) && opts.emblemAspect > 0 ? opts.emblemAspect : null;
+  const clearReach = (angle, h) => {
+    if (!Number.isFinite(ringHubX)) return rCap - rNear;
+    const ux = Math.cos(angle), uy = Math.sin(angle);
+    const offRing = r => {
+      const art = aspect ? Math.min(h, (r - rNear) / aspect) : h;
+      return [-art / 2, 0, art / 2].some(t => {
+        const x = lattice.hub2.x + ux * r - uy * t, y = lattice.hub2.y + uy * r + ux * t;
+        return Math.hypot(x - ringHubX, y - ringHubY) > bandInner - nodeR * 0.5;
+      });
+    };
+    for (let r = rNear; r <= rCap; r += 1) if (offRing(r)) return r - 1 - rNear;
+    return rCap - rNear;
+  };
+  // The least reach over every ray whose emblem centre is on the glass —
+  // a fixed length for this viewport, memoised across frames (the search
+  // walks a few hundred rays and must not run at every frame of a turn).
+  const emblemLength = h => {
+    const key = `${width}x${height}:${Math.round(ringHubX)}:${Math.round(h * 10)}:${aspect ?? '-'}`;
+    if (EMBLEM_LENGTHS.has(key)) return EMBLEM_LENGTHS.get(key);
+    let least = rCap - rNear;
+    for (let off = -30; off <= 40; off += 0.25) {
+      const a = lattice.angleForRowOffset(off);
+      const c = lattice.pointAt(a, rNear + (rCap - rNear) / 2);
+      if (c.x < 0 || c.x > width || c.y < 0 || c.y > height) continue;
+      least = Math.min(least, clearReach(a, h));
+    }
+    if (EMBLEM_LENGTHS.size > 64) EMBLEM_LENGTHS.clear();
+    EMBLEM_LENGTHS.set(key, least);
+    return least;
+  };
+  for (const seam of seams) {
+    const lastPre = Math.floor(rowOfSerial(seam.serial - 1)) + seamShift(seam.serial - 1, seams);
+    const firstPost = Math.floor(rowOfSerial(seam.serial)) + seamShift(seam.serial, seams);
+    const clearRows = firstPost - lastPre - 1;
+    if (!(clearRows >= 1.5)) continue;
+    const angle = lattice.angleForRowOffset((lastPre + firstPost) / 2 - anchorRow + 2);
+    const h = clearRows * angularGap; // the row gap at the middle arc, as for the cells
+    // ONE SIZE FROM ENTRANCE TO EXIT (Howell 2026-10-29: "The Niagara is
+    // consistent from entrance to exit. The logo should remain the same
+    // size"). The band is an edge for the emblem as for the dates, so its
+    // length along the ray is the LEAST clear reach anywhere on its path
+    // across the glass — fixed for the viewport, never shrinking as it
+    // rises — and it rides at one radius.
+    const w = emblemLength(h);
+    if (!(w >= lattice.step * 2)) continue;
+    const p = lattice.pointAt(angle, rNear + w / 2);
+    const reach = Math.max(w, h) / 2;
+    if (p.x < -reach || p.x > width + reach || p.y < -reach || p.y > height + reach) continue;
+    emblems.push({ x: p.x, y: p.y, angle, width: w, height: h });
+  }
+  return { nodes, emblems, gridMode: true };
 }

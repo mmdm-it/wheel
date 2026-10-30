@@ -1,7 +1,9 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths,
-  getCalendarWeekdayNames, getCalendarWeekdayLetters } from './volume-helpers.js';
+  getCalendarWeekdayNames, getCalendarWeekdayLetters, buildCalendarDecades, buildCalendarCenturies,
+  getCalendarCenturyDecades, getCalendarDecadeYears } from './volume-helpers.js';
+import { DECADE_WORDS, centuryLongLabel, centuryIdOf, decadeIdOf, decadeDigitOf } from './calendar-eras.js';
 import { dayOfWeek } from '../geometry/day-grid.js';
 import { localSunTimes } from '../geometry/solar.js';
 import { buildCalendarPyramid } from '../pyramid/volume-pyramid.js';
@@ -116,7 +118,9 @@ export function normalize(raw) {
   const volumeName = volumeData?.display_config?.volume_name || volumeKey || 'calendar';
   addItem({ id: rootId, name: volumeName, level: 'root', parentId: null, order: 0 });
 
-  // Years are the top level (millennia removed 2026-07-17). Months live in
+  // Years are the top level OF THE DATA (millennia removed 2026-07-17); the
+  // decades and centuries above them are computed by the ring builders
+  // (O-242), as the months are below. Months live in
   // month_template and are synthesized per year on demand — normalize carries
   // year items only; leaf behavior comes from meta.leafLevel.
   const years = volumeData.years || {};
@@ -180,6 +184,10 @@ export function layoutSpec(normalized, viewport) {
       // child pyramid have gotten smaller. This is incorrect. The old
       // version has the right size"). The standout keeps the large size.
       smallStarScale: 1,
+      // A SKY OF EQUALS (O-240, Howell 2026-10-29): every month of the
+      // year, January to December, one size — no featured node, no subset.
+      // The calendar diverges from the Bible's ranked, capped skies here.
+      equalSky: true,
       place: (siblings, viewport, opts) => placePyramidNodes(siblings, vp, { capacity: pyramidCapacity, logoBounds: opts?.logoBounds })
     },
   };
@@ -275,13 +283,14 @@ export function detailFor(selected, manifest) {
 }
 
 export function createHandlers({ manifest, options, onGatewayReturn = null, gatewayLabel = '', gatewayReturnLabel = '' }) {
-  // Years are the top level (millennia removed 2026-07-17 — centuries/
-  // millennia are cousin-gap texture in the year chain, not a parent);
-  // backing out from years exits through the gateway, if any. The DEFAULT
+  // Centuries are the top level since O-242 (decades between them and the
+  // years; millennia stay cousin-gap texture, removed as a level 2026-07-17);
+  // backing out from centuries exits through the gateway, if any. The DEFAULT
   // BOOT lands one level down: the months ring on the current month
   // (Howell 2026-07-19), so the handlers must start in the ring the chain
   // builder actually delivered.
-  let calendarMode = options?.level === 'year' ? 'year' : 'month';
+  // Five rings since O-242: century, decade, year, month, day.
+  let calendarMode = ['century', 'decade', 'year'].includes(options?.level) ? options.level : 'month';
   let calendarMonthContext = null;
 
   // The ~86k-link months chain is identical on every entry; build it once
@@ -345,8 +354,26 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
         migrateOrSet(yearItems, yearSelected, true);
       }
       // After the migration starts — an earlier call renders the post-ascent
-      // parent state in full view before anything is hidden.
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: Boolean(gatewayReturnLabel) });
+      // parent state in full view before anything is hidden. A decade waits
+      // above every year now (O-242).
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      return true;
+    }
+    // Up through the decades and centuries (O-242), landing on the one that
+    // holds the magnified item.
+    if (calendarMode === 'year' || calendarMode === 'decade') {
+      const toDecades = calendarMode === 'year';
+      const y = toDecades ? selected?.yearNumber : selected?.firstYear;
+      if (!Number.isFinite(y)) return false;
+      const { items, selectedIndex } = toDecades
+        ? buildCalendarDecades(manifest, { initialItemId: decadeIdOf(y) })
+        : buildCalendarCenturies(manifest, { initialItemId: centuryIdOf(y) });
+      calendarMode = toDecades ? 'decade' : 'century';
+      if (app?.setPrimaryItems) {
+        const migrateOrSet = app.migrateOut || app.setPrimaryItems;
+        migrateOrSet(items, selectedIndex, true);
+      }
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: toDecades || Boolean(gatewayReturnLabel) });
       return true;
     }
     if (typeof onGatewayReturn === 'function') return Boolean(onGatewayReturn());
@@ -366,6 +393,13 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       const yearLabel = y < 0 ? `${Math.abs(y)} BC` : String(y);
       return `${String(item.monthName).toUpperCase()} ${yearLabel}`;
     }
+    // Years in the ring: the decade's word; decades: the century's (O-242).
+    if (calendarMode === 'year') {
+      return item && Number.isFinite(item.yearNumber) ? DECADE_WORDS[decadeDigitOf(item.yearNumber)] : '';
+    }
+    if (calendarMode === 'decade') {
+      return item && Number.isFinite(item.centuryNumber) ? centuryLongLabel(item.centuryNumber, item.era) : '';
+    }
     if (calendarMode !== 'month') return gatewayReturnLabel || '';
     if (!item) return '';
     const y = Number.isFinite(item.yearNumber) ? item.yearNumber : Number.parseInt(item.parentId, 10);
@@ -374,6 +408,20 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
   };
 
   const childrenHandler = ({ selected, app }) => {
+    // Down from a century or a decade (O-242), entering at its first child.
+    if ((calendarMode === 'century' || calendarMode === 'decade') && selected?.id) {
+      const sky = calendarMode === 'century'
+        ? getCalendarCenturyDecades(manifest, selected.id)
+        : getCalendarDecadeYears(manifest, selected.id);
+      if (!sky.length) return false;
+      const { items, selectedIndex } = calendarMode === 'century'
+        ? buildCalendarDecades(manifest, { initialItemId: sky[0].id })
+        : buildCalendarYears(manifest, { arrangement: options?.arrangement, initialItemId: sky[0].id });
+      calendarMode = calendarMode === 'century' ? 'decade' : 'year';
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: true });
+      if (app?.setPrimaryItems) app.setPrimaryItems(items, selectedIndex, true);
+      return true;
+    }
     if (calendarMode !== 'year') return false;
     if (!selected?.id) return false;
     // Months mode is the continuous cousin chain (every year's months, year
@@ -388,9 +436,9 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     return true;
   };
 
-  // Boot lands on the year ring — the top. Through a gateway, the parent
-  // button names the return destination; standalone there is nothing above,
-  // so no button.
+  // The centuries ring is the top (O-242). Through a gateway, its parent
+  // button names the return destination; standalone there is nothing above
+  // it, so no button. Every lower ring has an OUT.
   const onBoot = ({ app, renderDetail }) => {
     // Warm the ephemeris table (tides/moon/feasts from the wall calendar)
     // so the day card has it long before any leaf settles. If a slow fetch
@@ -401,22 +449,29 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       const settled = app?.nav?.getCurrent?.();
       if (settled?.level === 'day' && typeof renderDetail === 'function') renderDetail(settled);
     });
-    // Months mode always has an OUT (up to the years ring); the years ring
-    // only when a gateway waits behind it.
     if (app?.setParentButtons) {
-      app.setParentButtons({ showOuter: calendarMode === 'month' || Boolean(gatewayReturnLabel) });
+      app.setParentButtons({ showOuter: calendarMode !== 'century' || Boolean(gatewayReturnLabel) });
     }
   };
+
+  // THE GAP KEEPS THE NEARER SEAT'S NAME (O-168, extended to the calendar
+  // by O-236): turned into the gap between two years, the parent seat goes
+  // on naming the nearer month's year — 2026 to the middle of the gap, 2027
+  // from there — rather than going blank. The gaps in this ring only ever
+  // part years (or, among days, months), so the nearer side always has a name.
+  const getGapLabel = nearer => getParentLabel(nearer);
 
   return {
     parentHandler,
     childrenHandler,
     onBoot,
     getParentLabel,
+    getGapLabel,
     // Years stay centered on their nodes (numerals); MONTHS align like
     // manufacturers — magnifier centered, ring labels right-aligned
     // (Howell 2026-07-19).
-    shouldCenterLabel: ({ item } = {}) => item?.level !== 'month',
+    // Decades are words too, and align as the months do (O-242).
+    shouldCenterLabel: ({ item } = {}) => item?.level !== 'month' && item?.level !== 'decade',
     layoutBindings: {
       calendarModeRef: () => calendarMode,
       getCalendarMonthChain: monthId => monthChain(monthId),
@@ -424,7 +479,14 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       getWeekdayLetters: () => getCalendarWeekdayLetters(manifest),
       setCalendarMode: next => { calendarMode = next; },
       setCalendarMonthContext: ctx => { calendarMonthContext = ctx; },
-      getCalendarMonths: (m, selected, mode) => getCalendarMonths(m, selected, mode || calendarMode),
+      // THE SKY ABOVE ANY RING: a century's decades, a decade's years, a
+      // year's months (O-242). The name is the months' from before.
+      getCalendarMonths: (m, selected, mode) => {
+        const level = mode || calendarMode;
+        if (level === 'century') return selected?.id ? getCalendarCenturyDecades(manifest, selected.id) : [];
+        if (level === 'decade') return selected?.id ? getCalendarDecadeYears(manifest, selected.id) : [];
+        return getCalendarMonths(m, selected, level);
+      },
       pyramidBuilder: buildCalendarPyramid
     }
   };
@@ -443,6 +505,10 @@ export const calendarAdapter = {
     theming: true,
     // At the leaf the detail sector doubles as a NEXT button
     // (a date leads to the next date).
-    detailTapAdvances: true
+    detailTapAdvances: true,
+    // A tap drills (O-234, Howell 2026-10-28): a month or a date in the sky
+    // drills in, the parent seat drills out — the calendar reads by tapping.
+    // The strokes stay as well.
+    drillByTap: true
   }
 };

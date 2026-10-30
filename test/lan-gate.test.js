@@ -3,7 +3,7 @@
 // nothing and he says so within a minute.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { isPrivateHost, isOnLan, proofreadDeepLink, proofreadOverrideActive } from '../src/core/lan-gate.js';
+import { unclearedActive, isPrivateHost, isOnLan, proofreadDeepLink, proofreadOverrideActive } from '../src/core/lan-gate.js';
 
 describe('lan-gate — the house', () => {
   it('recognises the private ranges and loopback', () => {
@@ -107,13 +107,14 @@ describe('lan-gate — the screening room (O-137)', () => {
     assert.equal(isScreeningRoom({ hostname: 'mmdm.it' }), false, 'no path, no room');
     assert.equal(isScreeningRoom(at('mmdm.it', '/wheel-v3/bible/'), null), false, 'no venue table, no room');
   });
-  it('the room IS the LAN: the flag works there, and nowhere else public', () => {
+  it('the room IS the LAN for the bench; the ?proofread flag is retired (O-229); ?uncleared answers on a private address only (O-231)', () => {
     declareVenues(VENUES);
     assert.equal(isOnLan(at('mmdm.it', '/wheel-v3/bible/')), true);
-    assert.equal(proofreadOverrideActive(at('mmdm.it', '/wheel-v3/bible/', '?proofread=true')), true);
-    assert.equal(proofreadOverrideActive(at('mmdm.it', '/wheel-v3/bible/')), false, 'without the flag the room shows what a reader sees, as the bench does');
-    assert.equal(proofreadOverrideActive(at('mmdm.it', '/', '?proofread=true')), false, 'the flag is inert at the backup');
-    assert.equal(proofreadOverrideActive(at('bibliacatholica.com', '/wheel-v3/bible/', '?proofread=true')), false, 'and in Leicester Square');
+    assert.equal(proofreadOverrideActive(at('mmdm.it', '/wheel-v3/bible/', '?proofread=true')), false, 'O-229: the CHECKED gate is open; the flag lifts nothing');
+    assert.equal(unclearedActive(at('192.168.88.167', '/', '?uncleared=true')), true, 'the LAN, with the flag');
+    assert.equal(unclearedActive(at('192.168.88.167', '/')), false, 'the LAN, without it');
+    assert.equal(unclearedActive(at('mmdm.it', '/wheel-v3/bible/', '?uncleared=true')), false, '"No uncleared edition should ever leave the LAN" — not even the room');
+    assert.equal(unclearedActive(at('bibliacatholica.com', '/', '?uncleared=true')), false, 'and never Leicester Square');
     declareVenues(null);
     assert.equal(isOnLan(at('mmdm.it', '/wheel-v3/bible/')), false, 'with no venue declared the room is public — it fails closed');
     declareVenues(VENUES);

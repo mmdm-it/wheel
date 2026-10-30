@@ -77,7 +77,7 @@ describe('dimension bridge — selection and defaults', () => {
     // dropped either would still be caught here.
     const store = createInteractionStore();
     const meta = { translations: {
-      UNREAD: { language: 'english', name: 'Not proofread', proofread: false, hasChart: true },
+      UNREAD: { language: 'english', name: 'No chart either (O-229: an unproofread edition is servable now)', proofread: false, hasChart: false },
       UNCHARTED: { language: 'english', name: 'No chart', proofread: true, hasChart: false },
       DRA: { language: 'english', name: 'Douay-Rheims', proofread: true, hasChart: true }
     } };
@@ -99,7 +99,7 @@ describe('dimension bridge — selection and defaults', () => {
         KJV: { language: 'english', name: 'King James', proofread: true, hasChart: true },
         DRA: { language: 'english', name: 'Douay-Rheims', proofread: true, hasChart: true },
         LXX: { language: 'greek', name: 'Septuagint', proofread: true, hasChart: true },
-        NT: { language: 'greek', name: 'Patriarchal Text', proofread: false, hasChart: true }
+        NT: { language: 'greek', name: 'Patriarchal Text', proofread: false, hasChart: false }   // O-229: unservable now only for want of a chart
       }
     };
     const bridge = createDimensionBridge({ store, translationsMeta: meta });
@@ -118,7 +118,7 @@ describe('dimension bridge — selection and defaults', () => {
     const store = createInteractionStore();
     const meta = { translations: {
       VUL: { language: 'latin', name: 'Vulgate', proofread: true, hasChart: true },
-      A: { language: 'italian', name: 'Not proofread', proofread: false, hasChart: true },
+      A: { language: 'italian', name: 'No chart (O-229)', proofread: false, hasChart: false },
       B: { language: 'italian', name: 'No chart', proofread: true, hasChart: false }
     } };
     const bridge = createDimensionBridge({ store, translationsMeta: meta });
@@ -137,7 +137,7 @@ describe('dimension bridge — selection and defaults', () => {
     const meta = { translations: {
       VUL: { language: 'latin', name: 'Vulgate', proofread: true, hasChart: true },
       SOON: { language: 'latin', name: 'No chart', proofread: true, hasChart: false },
-      CEIX: { language: 'italian', name: 'Not proofread', nativeName: 'La Sacra Bibbia CEI', proofread: false, hasChart: true }
+      CEIX: { language: 'italian', name: 'No chart (O-229)', nativeName: 'La Sacra Bibbia CEI', proofread: false, hasChart: false }
     } };
     const langMeta = { languages: [
       { id: 'latin', autonym: 'Latina' },
@@ -484,12 +484,12 @@ describe('the servable gate (O-29)', () => {
     assert.deepEqual(b.translationsOf('latin'), ['GOOD']);
   });
 
-  it('an UNPROOFREAD edition is not servable, however charted', () => {
+  it('an UNPROOFREAD edition IS servable once charted — the gate is open (O-229)', () => {
     const b = bridgeOver({
       GOOD: { language: 'latin', proofread: true, hasChart: true },
       UNREAD: { language: 'latin', proofread: false, hasChart: true }
     });
-    assert.deepEqual(b.translationsOf('latin'), ['GOOD']);
+    assert.deepEqual(b.translationsOf('latin'), ['GOOD', 'UNREAD']);
   });
 
   it('THE RETIRED CONDITIONS HAVE NO EFFECT — this is the cell that proves the deletion', () => {
@@ -712,13 +712,13 @@ describe('per-book certification (H-25) — and the shelf that must not follow',
     assert.deepEqual(b.translationsOf('hebrew'), ['WLC']);
   });
 
-  it('an edition with NO confirmed book stays off the shelf', () => {
+  it('an edition with NO confirmed book is on the shelf too — the gate is open (O-229)', () => {
     const b = bridgeOver({
       NONE: { language: 'greek', hasChart: true, proofread: false, proofreadUnits: [] },
       NEVER: { language: 'greek', hasChart: true, proofread: false }
     });
-    assert.equal(b.isServableEdition('NONE'), false, 'an empty list is not a confirmation');
-    assert.equal(b.isServableEdition('NEVER'), false, 'and neither is no list at all');
+    assert.equal(b.isServableEdition('NONE'), true, 'O-229: proofreading no longer gates the shelf');
+    assert.equal(b.isServableEdition('NEVER'), true);
   });
 
   it('an uncharted edition is still refused, however many books are confirmed', () => {
@@ -1142,10 +1142,10 @@ describe('CHECKED opens the shelf; the pass does not (W-239)', () => {
     assert.equal(b.isServableEdition('E'), true, 'checked is the gate');
   });
 
-  it('a pass over some chapters does NOT open the shelf while a book is unchecked', () => {
+  it('an unchecked edition is on the shelf — the CHECKED gate is open (O-229); CHECKED only lifts the mark', () => {
     const b = bridgeOver({ E: { language: 'greek', hasChart: true, proofread: false, checked: false,
       proofreadUnits: ['bGEN/1', 'bGEN/2', 'bGEN/3'] } });
-    assert.equal(b.isServableEdition('E'), false, 'three proofread chapters are not a checked edition');
+    assert.equal(b.isServableEdition('E'), true, 'O-229');
   });
 
   it('the seam: with `checked` ABSENT the old one-unit rule still decides', () => {
@@ -1181,11 +1181,11 @@ describe('offeredLanguages (O-217) — the tongues a reader can be seated in', (
       KJV: { language: 'english', hasChart: true, checked: true, proofread: false },
       WLC2: { language: 'hebrew', hasChart: true, proofread: true }
     });
-    assert.deepEqual(b.offeredLanguages(), ['hebrew', 'english']);
+    assert.deepEqual(b.offeredLanguages(), ['hebrew', 'greek', 'english'], 'O-229: every charted edition is offered');
   });
   it('is empty when nothing is offered, and never names a hollow tongue', () => {
     const b = bridgeOver({
-      DRA: { language: 'english', hasChart: true, checked: false, proofread: false }
+      DRA: { language: 'english', hasChart: false, checked: false, proofread: false }   // O-229: only a missing chart refuses now
     });
     assert.deepEqual(b.offeredLanguages(), []);
     assert.deepEqual(b.offeredEditions(), []);

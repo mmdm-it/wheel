@@ -1,3 +1,4 @@
+import { DECADE_WORDS, centuryNumberOf, decadeDigitOf, centuryIdOf, decadeIdOf, millenniumIdOf } from './calendar-eras.js';
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
 import { projectContainers } from '../core/unit-source.js';
 import { chartedUnitsOf } from './bible-volume.js';
@@ -504,9 +505,7 @@ export function buildCatalogManufacturers(manifest, { initialItemId, dataStampLe
 // cousins (century/millennium shift up a rank), days will add month.
 export const COUSIN_GAP_LINKS = [2, 4, 6, 8];
 
-// Grouping keys. Historical numbering: no year zero, so centuries run
-// 1..100, 101..200 (and -100..-1); the era crossing -1 -> 1 is itself a
-// millennium boundary and gets that rank's gap.
+// Grouping keys: see calendar-eras.js (no year zero; the digits decide).
 // THE PRESENT MOMENT (Howell 2026-07-20): the year, the month and the day
 // we are living through carry a mark wherever they ride the focus ring, so
 // the reader can always find where they are standing at any depth. Only
@@ -521,8 +520,11 @@ const presentMoment = () => {
   };
 };
 
-const centuryKey = y => (y > 0 ? Math.ceil(y / 100) : -Math.ceil(-y / 100));
-const millenniumKey = y => (y > 0 ? Math.ceil(y / 1000) : -Math.ceil(-y / 1000));
+// BY THE DIGITS SINCE O-242: the centuries are the reader's levels now, and
+// a gap must fall where the parent seat changes its name — 1999 | 2000, not
+// 2000 | 2001. The era line is still a millennium crossing on both sides.
+const centuryKey = centuryIdOf;
+const millenniumKey = millenniumIdOf;
 
 // Weave sorted items into a chain with cousin gaps. rankKeys: one key
 // function per cousin rank, nearest first (e.g. [year, century, millennium]
@@ -583,14 +585,109 @@ export function buildCalendarYears(manifest, { arrangement, initialItemId } = {}
     return as - bs;
   });
 
-  // Years are the top level; centuries and millennia are cousin texture.
+  // Years hang from their decades (O-242): a decade crossing is a cousin
+  // gap, a century a second cousin, a millennium a third.
   const yearKey = item => (Number.isFinite(item.yearNumber) ? item.yearNumber : null);
   const items = weaveCousinChain(sorted, [
+    item => { const y = yearKey(item); return y === null ? null : decadeIdOf(y); },
     item => { const y = yearKey(item); return y === null ? null : centuryKey(y); },
     item => { const y = yearKey(item); return y === null ? null : millenniumKey(y); }
   ]);
 
   return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
+}
+
+// THE YEAR NUMBERS THE VOLUME HOLDS, in time order (no year zero).
+function calendarYearNumbers(manifest) {
+  const years = manifest?.Calendar?.years || {};
+  return Object.values(years).map(y => y?.year_number).filter(Number.isFinite).sort((a, b) => a - b);
+}
+
+// THE DECADES RING (O-242): every decade on one ring, the words repeating
+// century after century as month names repeat year after year; a century
+// crossing is a cousin gap, a millennium a second cousin.
+export function buildCalendarDecades(manifest, { initialItemId } = {}) {
+  const present = presentMoment();
+  const sorted = [];
+  let last = null;
+  calendarYearNumbers(manifest).forEach(y => {
+    const id = decadeIdOf(y);
+    if (last && last.id === id) { last.lastYear = y; return; }
+    last = {
+      id,
+      name: DECADE_WORDS[decadeDigitOf(y)],
+      level: 'decade',
+      decadeDigit: decadeDigitOf(y),
+      centuryNumber: centuryNumberOf(y),
+      era: y < 0 ? -1 : 1,
+      firstYear: y,
+      lastYear: y,
+      parentId: centuryIdOf(y),
+      now: decadeIdOf(present.yearNumber) === id
+    };
+    sorted.push(last);
+  });
+  const items = weaveCousinChain(sorted, [
+    item => centuryIdOf(item.firstYear),
+    item => millenniumIdOf(item.firstYear)
+  ]);
+  return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
+}
+
+// THE CENTURIES RING (O-242): the top level; a millennium crossing is the
+// one gap, and the era line is one.
+export function buildCalendarCenturies(manifest, { initialItemId } = {}) {
+  const present = presentMoment();
+  const sorted = [];
+  let last = null;
+  calendarYearNumbers(manifest).forEach(y => {
+    const id = centuryIdOf(y);
+    if (last && last.id === id) { last.lastYear = y; return; }
+    last = {
+      id,
+      name: String(centuryNumberOf(y)),
+      level: 'century',
+      centuryNumber: centuryNumberOf(y),
+      era: y < 0 ? -1 : 1,
+      firstYear: y,
+      lastYear: y,
+      parentId: null,
+      now: centuryIdOf(present.yearNumber) === id
+    };
+    sorted.push(last);
+  });
+  const items = weaveCousinChain(sorted, [item => millenniumIdOf(item.firstYear)]);
+  return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
+}
+
+// A CENTURY'S DECADES, or A DECADE'S YEARS — the sky above each new ring,
+// in time order (the sky of equals seats them highest first).
+// Grouped once per manifest: the sky is asked for every frame of a turn.
+const skyGroups = new WeakMap();
+function groupedSkies(manifest) {
+  let g = skyGroups.get(manifest);
+  if (!g) {
+    g = { decadesOf: new Map(), yearsOf: new Map() };
+    buildCalendarDecades(manifest).items.forEach(it => {
+      if (!it) return;
+      if (!g.decadesOf.has(it.parentId)) g.decadesOf.set(it.parentId, []);
+      g.decadesOf.get(it.parentId).push(it);
+    });
+    buildCalendarYears(manifest).items.forEach(it => {
+      if (!it || !Number.isFinite(it.yearNumber)) return;
+      const d = decadeIdOf(it.yearNumber);
+      if (!g.yearsOf.has(d)) g.yearsOf.set(d, []);
+      g.yearsOf.get(d).push(it);
+    });
+    if (manifest && typeof manifest === 'object') skyGroups.set(manifest, g);
+  }
+  return g;
+}
+export function getCalendarCenturyDecades(manifest, centuryId) {
+  return (groupedSkies(manifest).decadesOf.get(centuryId) || []).map((it, idx) => ({ ...it, order: idx }));
+}
+export function getCalendarDecadeYears(manifest, decadeId) {
+  return (groupedSkies(manifest).yearsOf.get(decadeId) || []).map((it, idx) => ({ ...it, parentId: decadeId, order: idx }));
 }
 
 // The months cousin chain: EVERY year's months on one ring, year crossings

@@ -89,3 +89,26 @@ describe('the overture sheet covers every overlay the app owns', () => {
     assert.ok(BOOT_SHEET_Z < Math.min(...above), 'sheet under the gates and HUDs');
   });
 });
+
+describe('a card may set its emblem on a circle (the calendar, 2026-10-28)', () => {
+  it('splashRecord carries a declared circle, and only a declared one', async () => {
+    const { splashRecord } = await import('../src/view/boot-overture.js');
+    const onCircle = splashRecord({ display_config: { splash: { image: 'mmdm_logo', title: '', circle: { stroke: '#194567' } } } }, './data/calendar/');
+    assert.deepStrictEqual(onCircle, { imageUrl: './data/calendar/assets/mmdm_logo.png', title: '', circle: { stroke: '#194567' } });
+    const bare = splashRecord({ display_config: { splash: { image: 'crown_of_thorns', title: 'Biblia Catholica' } } }, '');
+    assert.strictEqual(bare.circle, undefined, 'the Bible card stays bare');
+  });
+  it('a ring may declare its width and size, the title its face and colour', async () => {
+    const { splashRecord } = await import('../src/view/boot-overture.js');
+    const r = splashRecord({ display_config: { splash: { image: 'mmdm_logo', title: 'T', title_font: 'Montserrat', title_color: '#f1b800', circle: { stroke: '#000000', width: 1, scale: 0.9 } } } }, '');
+    assert.deepStrictEqual(r.circle, { stroke: '#000000', width: 1, scale: 0.9 });
+    assert.strictEqual(r.font, 'Montserrat');
+    assert.strictEqual(r.color, '#f1b800');
+    assert.strictEqual(r.holdMs, undefined, 'no hold declared: the card keeps its own');
+    assert.strictEqual(splashRecord({ display_config: { splash: { title: 'T', hold_ms: 2500 } } }, '').holdMs, 2500);
+  });
+  it('the calendar serves its pictures from its own data', async () => {
+    const { volumeConfigs } = await import('../src/volume-configs.js');
+    assert.strictEqual(volumeConfigs.calendar.assetBase, './data/calendar/');
+  });
+});

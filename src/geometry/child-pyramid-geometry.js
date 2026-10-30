@@ -72,6 +72,11 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   // nodeR * sizeScales[i]. Spacing and edge insets honor the true sizes.
   const sizeScales = Array.isArray(options.sizeScales) ? options.sizeScales : [];
   const logoBounds = options.logoBounds ?? null;
+  // STRIPS THE SKY MUST LEAVE CLEAR (O-242): a word drawn inside the ring —
+  // the lens's caption, when it follows the numeral — as {x1, y1, x2, y2,
+  // half}, a segment and its half-thickness. No star and no star's label
+  // may enter one.
+  const keepOut = Array.isArray(options.keepOut) ? options.keepOut : [];
   const hasDimButton = options.hasDimensionButton ?? true;
 
   const scaleMul = (typeof globalThis !== 'undefined' && globalThis.__starScaleMul != null)
@@ -85,7 +90,8 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     labelLengths.join(','),
     sizeScales.join(','),
     options.labelBaseFontPx ?? '',
-    logoBounds ? `${logoBounds.left},${logoBounds.top},${logoBounds.right},${logoBounds.bottom}` : ''
+    logoBounds ? `${logoBounds.left},${logoBounds.top},${logoBounds.right},${logoBounds.bottom}` : '',
+    keepOut.map(k => [k.x1, k.y1, k.x2, k.y2, k.half].map(v => Math.round(v)).join(',')).join(';')
   ].join('|');
   if (cacheKey === _geoCacheKey) return _geoCacheValue;
 
@@ -142,6 +148,16 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
           const sx = labelSeg.x2 + (labelSeg.x1 - labelSeg.x2) * t;
           const sy = labelSeg.y2 + (labelSeg.y1 - labelSeg.y2) * t;
           if (sx > lb.left && sx < lb.right && sy > lb.top && sy < lb.bottom) return false;
+        }
+      }
+    }
+    for (const k of keepOut) {
+      if (pointSegDist(x, y, k.x1, k.y1, k.x2, k.y2) < rSelf + k.half) return false;
+      if (labelSeg) {
+        for (const t of [0, 0.25, 0.5, 0.75, 1]) {
+          const sx = labelSeg.x2 + (labelSeg.x1 - labelSeg.x2) * t;
+          const sy = labelSeg.y2 + (labelSeg.y1 - labelSeg.y2) * t;
+          if (pointSegDist(sx, sy, k.x1, k.y1, k.x2, k.y2) < k.half * 1.6) return false;
         }
       }
     }

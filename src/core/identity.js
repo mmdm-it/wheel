@@ -167,6 +167,7 @@ export function resolvePath({ base = '', version = '', kind, edition, unitId, la
   const join = (...parts) => [root, ...parts].filter(Boolean).join('/');
   switch (kind) {
     case 'volume':      return join('volume.json');
+    case 'uncleared':   return join('uncleared.json');   // O-231: LAN only, never deployed
     case 'ranks':       return join('ranks.json');   // O-132: the leaves' ranks, one file for the whole volume
     case 'hits':        return join('hits.json');    // O-135: the Greatest Hits, leaves the basement shows permanently
     case 'spine':       return join('spine', `${req(unitId, 'unitId')}.json`);

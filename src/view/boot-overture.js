@@ -197,7 +197,26 @@ export function splashRecord(root, assetBase) {
   const title = typeof sp?.title === 'string' ? sp.title : '';
   if (!image && !title) return null;
   const base = root?.display_config?.detail_sector?.logo_base_path || 'assets/';
-  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title };
+  // THE CIRCLE (Howell 2026-10-28): an emblem drawn on
+  // its badge — the disc the catalogue shows in its corner — rather than
+  // bare on the ground. Only its fill is declared; the proportions are the
+  // badge's own, so the card is that badge, enlarged.
+  // A circle is a disc (`fill`) or a ring (`stroke`), or both; the ring's
+  // width is the card's, not the volume's.
+  const str = v => (typeof v === 'string' && v ? v : null);
+  const num = v => (Number.isFinite(Number(v)) && Number(v) > 0 ? Number(v) : null);
+  const fill = str(sp?.circle?.fill), stroke = str(sp?.circle?.stroke);
+  // `width` is the ring's stroke in CSS pixels; `scale` sizes the circle
+  // against the badge's own disc (0.9 = a tenth smaller), the emblem unmoved.
+  const width = num(sp?.circle?.width), scale = num(sp?.circle?.scale);
+  const circle = fill || stroke ? { ...(fill ? { fill } : {}), ...(stroke ? { stroke } : {}), ...(width ? { width } : {}), ...(scale ? { scale } : {}) } : null;
+  // The title's face and colour may be the volume's own; else the card's
+  // (EB Garamond, the page's ink).
+  const font = str(sp?.title_font), color = str(sp?.title_color);
+  // The card's linger, the volume's to set (Howell 2026-10-28: 2.5 s for one
+  // volume); else the card's own (T.splashMs).
+  const holdMs = num(sp?.hold_ms);
+  return { imageUrl: image ? `${assetBase || ''}${base}${image}.png` : null, title, ...(circle ? { circle } : {}), ...(font ? { font } : {}), ...(color ? { color } : {}), ...(holdMs ? { holdMs } : {}) };
 }
 
 const el = (tag, attrs = {}, parent = null) => {
@@ -212,6 +231,15 @@ const el = (tag, attrs = {}, parent = null) => {
 // desktop gate (99999), the splash's input blocker (100000) and the
 // diagnostic HUDs (9999 and up).
 export const BOOT_SHEET_Z = 1000;
+// The corner badge's proportions (volume-logo.js), for an emblem on a circle.
+const BADGE_EMBLEM_SCALE = 1.1;
+const BADGE_BOX_ASPECT = 154 / 134;
+const CARD_RING_WIDTH = 0.03;   // a ring's stroke, as a fraction of the disc's diameter
+// A long name is set smaller rather than run off the phone: the title keeps
+// its size until it would pass this share of the screen's width.
+const CARD_TITLE_MAX_WIDTH = 0.88;
+const CARD_TITLE_LINES_WIDTH = 0.8;
+const CARD_LINE_EM = 1.3;   // the step between a title's lines
 
 export function beginBootOverture({ viewport = null, splash = null } = {}) {
   if (typeof document === 'undefined') return { splash() {}, ready() {}, abort() {} };
@@ -246,18 +274,31 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
   // but shown only when both are in hand — a frame or two on a return visit
   // — and no later than a second: past that the title is pinned to the
   // stand-in face for this visit, so it never swaps under the reader.
-  let card = null, cardAt = 0, cardPending = false;
-  const FACE = "'EB Garamond'", STAND_IN = 'Georgia, serif';
+  let card = null, cardAt = 0, cardPending = false, cardHoldMs = T.splashMs;
+  const CARD_FACE = "'EB Garamond'", CARD_STAND_IN = 'Georgia, serif';
   const showCard = record => {
     if (card || cardPending || done || !record || (!record.imageUrl && !record.title)) return;
     cardPending = true;
+    if (record.holdMs) cardHoldMs = record.holdMs;
     mark('card-asked');
     const g = el('g', { id: 'boot-overture-card' });
     const w = vp.width * 0.42, h = w, x = (vp.width - w) / 2, y = vp.height * 0.44 - h / 2;
     const px = (vp.width * 0.062).toFixed(1);
     const waits = [];
+    // On a circle the card is the corner badge enlarged: the disc is the
+    // card's square, and the picture's box is the badge's (volume-logo.js:
+    // 1.1 of the diameter wide, at its inherited 154:134 box), so a wide
+    // emblem overhangs the disc a little exactly as it does in the corner.
+    let ix = x, iy = y, iw = w, ih = h;
+    if (record.circle) {
+      const sw = record.circle.stroke ? (record.circle.width || w * CARD_RING_WIDTH) : 0;
+      const d = w * (record.circle.scale || 1);
+      el('circle', { cx: (x + w / 2).toFixed(1), cy: (y + h / 2).toFixed(1), r: ((d - sw) / 2).toFixed(1), fill: record.circle.fill || 'none', stroke: record.circle.stroke || 'none', 'stroke-width': sw ? sw.toFixed(1) : undefined }, g);
+      iw = w * BADGE_EMBLEM_SCALE; ih = iw / BADGE_BOX_ASPECT;
+      ix = x + (w - iw) / 2; iy = y + (h - ih) / 2;
+    }
     if (record.imageUrl) {
-      const img = el('image', { x: x.toFixed(1), y: y.toFixed(1), width: w.toFixed(1), height: h.toFixed(1), preserveAspectRatio: 'xMidYMid meet' }, g);
+      const img = el('image', { x: ix.toFixed(1), y: iy.toFixed(1), width: iw.toFixed(1), height: ih.toFixed(1), preserveAspectRatio: 'xMidYMid meet' }, g);
       img.setAttribute('href', record.imageUrl);
       img.setAttributeNS(XLINK_NS, 'xlink:href', record.imageUrl);
       // The picture is "in hand" when it has LOADED (a cached one fires at
@@ -276,10 +317,19 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       } catch { /* no picture probe: show on the cap */ }
     }
     let title = null;
+    const FACE = record.font ? `'${record.font.replace(/'/g, '')}'` : CARD_FACE;
+    const STAND_IN = record.font ? 'sans-serif' : CARD_STAND_IN;   // a declared face is the app's sans
     if (record.title) {
       title = el('text', { x: (vp.width / 2).toFixed(1), y: (y + h + vp.height * 0.075).toFixed(1), 'text-anchor': 'middle', 'dominant-baseline': 'middle' }, g);
-      title.style.cssText = `font-family:${FACE},${STAND_IN};font-size:${px}px;letter-spacing:.04em;fill:${ink}`;
-      title.textContent = record.title;
+      title.style.cssText = `font-family:${FACE},${STAND_IN};font-size:${px}px;letter-spacing:.04em;fill:${record.color || ink}`;
+      // A title may be set on lines ("\n" in the declaration, Howell
+      // 2026-10-28: a long name on two lines "can then be much larger").
+      const lines = record.title.split('\n');
+      if (lines.length === 1) title.textContent = record.title;
+      else lines.forEach((line, i) => {
+        const t = el('tspan', { x: (vp.width / 2).toFixed(1), dy: i === 0 ? `${(-(lines.length - 1) * CARD_LINE_EM / 2).toFixed(2)}em` : `${CARD_LINE_EM}em` }, title);
+        t.textContent = line;
+      });
       try { if (document.fonts?.load) waits.push(document.fonts.load(`${px}px ${FACE}`).catch(() => []).then(() => mark('face-ready'))); } catch { /* no font API: show on the cap */ }
     }
     let shown = false;
@@ -290,6 +340,16 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
       try { haveFace = !title || document.fonts?.check?.(`${px}px ${FACE}`) !== false; } catch { /* assume it */ }
       if (title && !haveFace) title.style.fontFamily = STAND_IN;
       svg.appendChild(g);
+      if (title) {
+        try {
+          // One line keeps its size unless it would run off; a title set on
+          // lines is sized so its widest line fills CARD_TITLE_LINES_WIDTH.
+          const spans = [...title.querySelectorAll('tspan')];
+          const len = spans.length ? Math.max(...spans.map(t => t.getComputedTextLength())) : title.getComputedTextLength();
+          const room = vp.width * (spans.length ? CARD_TITLE_LINES_WIDTH : CARD_TITLE_MAX_WIDTH);
+          if (len > room || spans.length) title.style.fontSize = `${(Number(px) * room / len).toFixed(1)}px`;
+        } catch { /* no measure: the declared size */ }
+      }
       card = g;
       cardAt = performance.now();
       mark(haveFace ? 'card-shown' : 'card-shown-stand-in-face');
@@ -298,7 +358,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
     Promise.all(waits).then(() => { clearTimeout(cap); show(); }, () => { clearTimeout(cap); show(); });
   };
   showCard(splash);
-  const lingered = now => !cardPending && (!card || now >= cardAt + T.splashMs);
+  const lingered = now => !cardPending && (!card || now >= cardAt + cardHoldMs);
 
   // ── THE MIGRATION: the app walks its own floors on this clock (makeDriller above) ──
   let driller = null;
@@ -414,7 +474,7 @@ export function beginBootOverture({ viewport = null, splash = null } = {}) {
 
   // ── THE BENCH SCRUBBER (?overturescrub=1): the film held under a slider ──
   function mountScrub() {
-    const lead = card ? T.splashMs : 0;
+    const lead = card ? cardHoldMs : 0;
     const total = lead + filmMs;
     const bar = document.createElement('div');
     bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:rgba(0,0,0,.6);color:#fff;padding:8px 12px 14px;font:14px Montserrat,sans-serif;pointer-events:auto;';

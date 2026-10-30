@@ -21,7 +21,7 @@
 // first entry, is the default.
 
 import { interactionEvents } from './interaction-store.js';
-import { proofreadOverrideActive } from './lan-gate.js';
+import { proofreadOverrideActive } from './lan-gate.js';   // O-229: always false now; kept for the one reader below
 
 // (The engine's nine-language autonym table was deleted 2026-07-30: every one
 // of the registry's 29 languages carries its own `autonym`, so the table was
@@ -242,9 +242,11 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // corpus change; its presence here is the seam between two days.
   const isChecked = t => t?.checked === true;
   const gateOpen = t => t?.checked !== undefined ? isChecked(t) : hasConfirmedUnit(t);
-  const isServable = t => t
-    && (t.proofread === true || gateOpen(t) || overrideProofread)
-    && t.hasChart === true;
+  // THE GATE IS OPEN (O-229): every edition with charts is served; the mark
+  // still says which are not yet CHECKED. Uncleared editions never reach here
+  // unless the LAN's ?uncleared=true merged them in (O-231).
+  const isServable = t => Boolean(t) && t.hasChart === true;
+  void gateOpen; void overrideProofread;
 
   // IS THIS EDITION HERE? (H-29's carry-out.)
   //
@@ -566,6 +568,8 @@ export function createDimensionBridge({ store, translationsMeta = null, language
 
     // The RAW certification, ignoring the override — so the host can mark an
     // edition it is only showing because `?proofread=true` asked it to.
+    // AN UNCLEARED EDITION (O-231): on the LAN under ?uncleared=true only; red on the ring.
+    isUncleared(key) { return meta?.translations?.[key]?.cleared === false; },
     isCertifiedEdition(key) { return meta?.translations?.[key]?.proofread === true; },
 
     // PER BOOK, FOR THE BADGE ONLY (H-25, Howell 2026-08-15). He confirms one

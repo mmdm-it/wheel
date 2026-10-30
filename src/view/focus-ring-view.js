@@ -1,6 +1,6 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
-import { bandCenterlinePoints, pointsToPath, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII, bandBounds, PRIMARY_REACH } from '../geometry/focus-ring-geometry.js';
+import { bandCenterlinePoints, pointsToPath, getParentSeat, getNowSeat, getParentLabelLeftX, CAPTION_GAP_RADII, bandBounds, PRIMARY_REACH } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
 
 // How far outside the arc the section label sits, in MAGNIFIER RADII — so it
@@ -130,6 +130,21 @@ export class FocusRingView {
     this.parentButtonOuterLabel.setAttribute('dominant-baseline', 'middle');
     this.contentGroup.appendChild(this.parentButtonOuterLabel);
 
+    // THE WAY BACK TO THE PRESENT (O-243): a disc in the present moment's
+    // own colours, carrying one word, shown only while no node wearing
+    // those colours is on the glass. Its seat is the geometry's
+    // (getNowSeat); the host decides when it shows and what a tap does.
+    this.nowCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    this.nowCircle.setAttribute('class', 'focus-ring-now-circle');
+    this.nowCircle.setAttribute('display', 'none');
+    this.contentGroup.appendChild(this.nowCircle);
+    this.nowLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.nowLabel.setAttribute('class', 'focus-ring-now-label');
+    this.nowLabel.setAttribute('text-anchor', 'middle');
+    this.nowLabel.setAttribute('dominant-baseline', 'middle');
+    this.nowLabel.setAttribute('display', 'none');
+    this.contentGroup.appendChild(this.nowLabel);
+
     this.magnifierGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.magnifierGroup.setAttribute('class', 'focus-ring-magnifier');
     this.magnifierCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
@@ -229,6 +244,10 @@ export class FocusRingView {
     }
     if (this.parentWorldGlyph?.parentNode === this.contentGroup) {
       this.contentGroup.appendChild(this.parentWorldGlyph);
+    }
+    if (this.nowCircle?.parentNode === this.contentGroup) {
+      this.contentGroup.appendChild(this.nowCircle);
+      this.contentGroup.appendChild(this.nowLabel);
     }
     if (this.pyramidGroup?.parentNode === this.contentGroup) {
       this.contentGroup.appendChild(this.pyramidGroup);
@@ -477,12 +496,15 @@ export class FocusRingView {
         const theta = (magRotation * Math.PI) / 180;
         const gap = radius * CAPTION_GAP_RADII;
         const rtl = magnifier.captionDirection === 'rtl';
-        const sign = rtl ? 1 : -1;
+        // AFTER THE LABEL when the volume says so (O-242): the word is said
+        // after its numeral, so it sits past the lens's far side and reads on.
+        const after = Boolean(magnifier.captionAfter);
+        const sign = (rtl !== after) ? 1 : -1;
         const cx = magnifier.x + sign * Math.cos(theta) * (radius + gap);
         const cy = magnifier.y + sign * Math.sin(theta) * (radius + gap);
         this.magnifierCaption.setAttribute('x', cx);
         this.magnifierCaption.setAttribute('y', cy);
-        this.magnifierCaption.setAttribute('text-anchor', rtl ? 'start' : 'end');
+        this.magnifierCaption.setAttribute('text-anchor', (rtl !== after) ? 'start' : 'end');
         this.magnifierCaption.setAttribute('transform', `rotate(${magRotation}, ${cx}, ${cy})`);
         this.magnifierCaption.textContent = caption;
       }
@@ -629,6 +651,47 @@ export class FocusRingView {
       if (this.parentButtonOuter) this.parentButtonOuter.setAttribute('display', 'none');
       if (this.parentButtonOuterLabel) this.parentButtonOuterLabel.setAttribute('display', 'none');
     }
+
+    // THE WAY BACK TO THE PRESENT (O-243). The host says whether it shows
+    // (no node in the present's colours anywhere on the glass) and what a
+    // tap does; this seats it and dresses it. Toggled, never merely set:
+    // the two elements are permanent.
+    this.#renderNowButton(options.nowButton, magnifier, viewport);
+  }
+
+  #renderNowButton(nowButton, magnifier, viewport) {
+    if (!this.nowCircle || !this.nowLabel) return;
+    const show = Boolean(nowButton?.show && nowButton?.label);
+    if (!show) {
+      this.nowCircle.setAttribute('display', 'none');
+      this.nowLabel.setAttribute('display', 'none');
+      this.nowCircle.onclick = null;
+      this.nowLabel.onclick = null;
+      this.#attachKeyActivation(this.nowCircle, null);
+      return;
+    }
+    const seat = getNowSeat(viewport, magnifier?.radius);
+    const onClick = typeof nowButton.onClick === 'function' ? nowButton.onClick : null;
+    this.nowCircle.setAttribute('cx', seat.x);
+    this.nowCircle.setAttribute('cy', seat.y);
+    this.nowCircle.setAttribute('r', seat.radius);
+    // The present's own face (the ring node's, node-appearance), inline so
+    // the disc and the node it stands in for can never drift apart.
+    this.nowCircle.style.fill = NOW_NODE_FILL;
+    this.nowCircle.setAttribute('role', 'button');
+    this.nowCircle.setAttribute('tabindex', '0');
+    this.nowCircle.setAttribute('aria-label', nowButton.label);
+    this.nowCircle.onclick = onClick;
+    this.#attachKeyActivation(this.nowCircle, onClick);
+    this.nowCircle.removeAttribute('display');
+    this.nowLabel.setAttribute('x', seat.x);
+    this.nowLabel.setAttribute('y', seat.y);
+    this.nowLabel.style.fill = NOW_LABEL_FILL;
+    this.nowLabel.textContent = nowButton.label;
+    // The word is tappable too: its class family turns pointer events off.
+    this.nowLabel.style.pointerEvents = onClick ? 'auto' : 'none';
+    this.nowLabel.onclick = onClick;
+    this.nowLabel.removeAttribute('display');
   }
 
   // The band is the sprocket-chain centreline (focus-ring-geometry): the arc

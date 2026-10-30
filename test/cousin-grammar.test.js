@@ -57,8 +57,10 @@ describe('months cousin chain', () => {
   it('gaps by cousin rank: year 2, century 4, millennium 6', () => {
     assert.equal(gapRunBefore('1969:jan'), 2, 'Dec 1968 → Jan 1969 = cousins');
     assert.equal(gapRunBefore('1969:feb'), 0, 'no gap inside a year');
-    assert.equal(gapRunBefore('1901:jan'), 4, 'century crossing = second cousins');
-    assert.equal(gapRunBefore('2001:jan'), 6, 'millennium crossing = third cousins');
+    // By the digits since O-242: the century turns at 1899 | 1900.
+    assert.equal(gapRunBefore('1900:jan'), 4, 'century crossing = second cousins');
+    assert.equal(gapRunBefore('1901:jan'), 2, 'inside a century, a year crossing only');
+    assert.equal(gapRunBefore('2000:jan'), 6, 'millennium crossing = third cousins');
     assert.equal(gapRunBefore('1:jan'), 6, 'the BC/AD line is a millennium crossing');
   });
 

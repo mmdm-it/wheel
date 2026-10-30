@@ -447,6 +447,8 @@ svg :focus-visible {
    being built toward, not yet in the corpus — hollow, its name a shade
    lighter, never chosen. */
 .secondary-strata-node.is-coming { fill: none; stroke: var(--color-orbital); stroke-width: 1.5; }
+/* O-231: an UNCLEARED edition — in the corpus, not yet ours to serve; LAN only, under ?uncleared=true */
+.secondary-strata-node.is-uncleared { fill: #e3170a; stroke: #e3170a; }
 .secondary-strata-node.is-coming + .secondary-strata-label { opacity: 0.62; }
 /* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
    with, not yet kept: hollow, so keeping it visibly fills it. */
@@ -591,6 +593,19 @@ svg :focus-visible {
 .focus-ring-magnifier-label { fill: var(--color-orbital-label); }
 .focus-ring-parent-label {
   fill: var(--color-text);
+  /* THE HALO (O-233, Howell 2026-10-28, a ring label running under "2027":
+     "some kind of halo around the parent button that perhaps doesn't mask
+     the focus ring label entirely"). A stroke in the GROUND's colour painted
+     under the letters: a ring label passing beneath is dimmed where it meets
+     the name and nowhere else. A stroke, not a blur — an SVG filter on a
+     <text> dies in WebKit (the blur saga, v3.22.0) — and on the label
+     itself, so it travels with every flight that moves the label. Two knobs:
+     how much it hides, and how far beyond the letters it reaches. */
+  paint-order: stroke fill;
+  stroke: var(--color-bg);
+  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke-width: var(--parent-halo-width, 0.6em);
+  stroke-linejoin: round;
   /* The corner label is TAPPABLE (its class family disables pointer-events;
      historically the disc sat under it so taps landed anyway — the split
      seat exposed the truth, Howell 2026-07-23). Its onclick is nulled when
@@ -619,6 +634,28 @@ svg :focus-visible {
    glass and a drill from the lens has a destination. The fill is the data;
    an empty vessel has none. */
 .focus-ring-parent-circle.parent-empty { fill: none; }
+
+/* THE WAY BACK TO THE PRESENT (O-243, Howell 2026-10-30): a disc in the
+   present moment's colours (the fills are inline, the ring node's own) with
+   one word on it, shown only while nothing else on the glass is red. The
+   word is the lens label's face at a size that fits the disc. */
+.focus-ring-now-circle {
+  stroke: var(--color-magnifier-stroke, #000);
+  stroke-width: 1px;
+  cursor: pointer;
+}
+/* NOT A DISTRACTION (Howell 2026-10-30): "make it semi-transparent". Both
+   the disc and its word, so the two fade as one. */
+.focus-ring-now-circle,
+.focus-ring-now-label {
+  opacity: var(--now-button-opacity, 0.55);
+}
+.focus-ring-now-label {
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(15.75px * var(--iframe-scale, 1)), 1.8vmin, calc(29.25px * var(--iframe-scale, 1)));
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
 
 .focus-ring-magnifier-label {
   fill: var(--color-text);

@@ -376,7 +376,8 @@ const CHOOSERS = [
     selected: () => dimensionBridge.getSelection().translation,
     // A placeholder seat (O-184) is drawn hollow, and the ring never settles
     // on one: the snap passes it for the nearest real seat.
-    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : ''),
+    // An UNCLEARED edition (O-231) is drawn red: in the corpus, not yet ours to serve.
+    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : dimensionBridge.isUncleared?.(key) ? 'is-uncleared' : ''),
     inert: key => Boolean(dimensionBridge.isComing?.(key)),
     select: key => {
       const ok = dimensionBridge.setTranslation(key);
@@ -2391,7 +2392,7 @@ if (dimensionButton) {
 // would proofread a screen no reader ever sees.
 //
 // Gated on the LAN proofread override, so it does not exist for a reader.
-if (typeof window !== 'undefined' && proofreadOverrideActive()) {
+if (typeof window !== 'undefined' && isOnLan()) {   // O-229: the LAN and the room, no flag
   window.__wheelProofread = {
     /** How many seats the ring holds. */
     count: () => currentApp?.nav?.items?.length ?? 0,
@@ -3301,6 +3302,7 @@ function wireInteractions(getApp) {
   const publishTrace = () => { window.__wheelGestureTrace = { ...trace }; };
   const DRAG_SLOP_PX = 8;       // past this, it's a drag, not a tap
   let pendingAdvanceTap = false; // press landed in the sector's NEXT area
+  let pendingStarIdx = null;     // the pressed star's index, for a tap that drills (O-234)
   let pendingTapNode = null;    // ring node under the finger at pointerdown;
                                 // its click fires at lift IF travel stayed
                                 // within tap slop — a press is ambiguous
@@ -3804,6 +3806,14 @@ function wireInteractions(getApp) {
     // them is a press on open ground. The lens alone is a control — its tap
     // strikes a character or turns a verse's page — and even it strokes by
     // the compass.
+    // THE WAY BACK TO THE PRESENT (O-243) is a plain button: no drag, no
+    // near-miss redirect, no suppressed click — its own onclick runs.
+    const onNowButton = event.target && event.target.closest && event.target.closest('.focus-ring-now-circle, .focus-ring-now-label');
+    if (onNowButton) {
+      isDragging = false;
+      logTap('now-button-hit', { pointerType: event.pointerType });
+      return;
+    }
     const onParentSeat = event.target && event.target.closest && event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label, .world-glyph');
     const isControlTarget = !onParentSeat && event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
     if (isControlTarget) {
@@ -3835,6 +3845,7 @@ function wireInteractions(getApp) {
       && event.target.closest('.child-pyramid-node, .child-pyramid-label');
     let starIdx = null;
     pendingStarTap = null;
+    pendingStarIdx = null;
     if (isPyramidNode) {
       const rawIndex = isPyramidNode.dataset?.index ?? (isPyramidNode.getAttribute && isPyramidNode.getAttribute('data-index'));
       const idx = Number.parseInt(rawIndex, 10);
@@ -3845,6 +3856,7 @@ function wireInteractions(getApp) {
       const near = nearestStar(event);
       if (near) { starIdx = near.idx; pendingStarTap = near.el; logTap('star-near', { nodeIndex: near.idx, px: Math.round(near.dist) }); }
     }
+    pendingStarIdx = starIdx;
 
     // THE NEXT GESTURE (Howell 2026-07-20): at a leaf, in volumes that ask
     // for it, the detail sector is one large button — read the verse, tap
@@ -3944,6 +3956,7 @@ function wireInteractions(getApp) {
       if (type !== 'pointerleave') noteSwipeEnd(event.clientX, event.clientY);   // swipelog only
       if (controlPress && type !== 'pointerleave') controlPress = null;
       if (freeDrill) { if (type !== 'pointerleave') { releaseDrill(freeDrill, type, event); freeDrill = null; } }
+      const liftStroke = stroke;   // O-234: a tap on the parent seat is read from it below
       if (type !== 'pointerleave') stroke = null;
       // v0 parity: only snap after real drags. For taps/clicks, let the
       // target node's click handler run without a competing snap animation.
@@ -3978,8 +3991,25 @@ function wireInteractions(getApp) {
       pendingAdvanceTap = false;
       const starTap = pendingStarTap;
       pendingStarTap = null;
+      const starTapIdx = pendingStarIdx;
+      pendingStarIdx = null;
+      // A TAP ON THE PARENT SEAT DRILLS OUT where the volume drills by tap
+      // (O-234) — at lift, after a press that never travelled, so a stroke
+      // from the seat is still the corridor's (O-209).
+      if (app.drillByTap && liftStroke?.fromParent && !liftStroke.decided && gestureTravelPx <= DRAG_SLOP_PX && type === 'pointerup') {
+        suppressNativeClickUntil = Date.now() + 450;
+        logTap('parent-tap-drill-out', {});
+        app.drillOut?.();
+        return;
+      }
       if (starTap && !tapNode && !advanceTap) {
         suppressNativeClickUntil = Date.now() + 450;
+        if (gestureTravelPx <= DRAG_SLOP_PX && type === 'pointerup' && app.drillByTap && Number.isFinite(starTapIdx)) {
+          // A tap on a star drills where the volume drills by tap (O-234).
+          logTap('star-tap-drill-in', { nodeIndex: starTapIdx });
+          app.handlePyramidNodeClick?.(starTapIdx);
+          return;
+        }
         if (gestureTravelPx <= DRAG_SLOP_PX && type === 'pointerup') {
           // A tap on a star: the swell, and nothing else (O-191).
           logTap('star-tap-nudge', {});
@@ -4274,8 +4304,17 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
 
   let { volume, config, manifest, root, options, supplemental } = await loadConfig(volumeOverride, searchOverride);
   performance.mark('wheel:manifest-ready');
+  let splashDeclared = null;
+  let gapEmblemAspect = null;
   {
     const declared = splashRecord(root, config.assetBase);
+    splashDeclared = declared;
+    // The emblem's proportions, for keeping its artwork off the ring (O-237).
+    if (declared?.imageUrl && typeof Image === 'function') {
+      const probe = new Image();
+      probe.onload = () => { if (probe.naturalHeight > 0) gapEmblemAspect = probe.naturalWidth / probe.naturalHeight; };
+      probe.src = declared.imageUrl;
+    }
     if (declared) overtureMark('splash-declared');
     if (overture && declared) overture.splash(declared);
     try {
@@ -4700,6 +4739,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     preserveOrder,
     labelFormatter,
     levelCaptions: config?.levelCaptions === true,
+    captionAfter: config?.captionAfter === true,
+    nowButton: typeof config?.nowButton === 'string' && config.nowButton ? config.nowButton : null,
     shouldCenterLabel,
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,
@@ -4714,6 +4755,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     pyramidNormalized: adapterNormalized || normalized,
     pyramidAdapter: adapter,
     detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances),
+    drillByTap: Boolean(adapter?.capabilities?.drillByTap),   // O-234
+    gapEmblemUrl: splashDeclared?.imageUrl || null,            // O-237
+    getGapEmblemAspect: () => gapEmblemAspect,
     // Leaf-advance paints the text ahead of the ring's arrival — same
     // renderer the settle hook uses, resolving the translation live.
     onDetailPreview: (item, o) => renderDetail(item, adapter, manifest, adapterNormalized,

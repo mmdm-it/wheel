@@ -60,6 +60,17 @@ export function applyPyramidNodeAppearance({ circle = null, label = null, instr 
     if (circle) circle.setAttribute('opacity', DIM_OPACITY);
     if (label) label.setAttribute('opacity', DIM_OPACITY);
   }
+  // A node the layout asks to keep at FULL STRENGTH even while the ring
+  // turns (O-238: the first of each month in a day grid's fall). Inline, so
+  // it outranks the sky's turning fade in the stylesheet — and so a phone
+  // holding an older stylesheet still shows it.
+  // Only the NUMERAL goes to full strength: a full-strength disc reads as a
+  // dark hole punched in the faded fall (Howell's screenshot, 2026-10-29),
+  // so the circle keeps its neighbours' fade and the white figure alone
+  // stands out.
+  if (instr.fullStrength) {
+    if (label) label.style.opacity = '1';
+  }
 
   if (instr.now) {
     if (circle) circle.style.fill = NOW_NODE_FILL;

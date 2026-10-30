@@ -1,4 +1,8 @@
-import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX } from './geometry/focus-ring-geometry.js';
+import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from './geometry/focus-ring-geometry.js';
+// The return to the present is one deliberate glide, however far the ring
+// has travelled (O-243): the click's log-of-distance tempo would spin a day
+// ring for seconds from the deep past.
+const NOW_RETURN_MS = 900;
 import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
@@ -7,7 +11,7 @@ import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-pyramid-geometry.js';
-import { computeDayGridLayout } from './geometry/day-grid.js';
+import { computeDayGridLayout, ribbonRowAt, daySerial, GAP_ROWS_PER_SLOT } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
@@ -92,6 +96,13 @@ export function createApp({
   // volume that says so is asked; any other formatter answers an unknown
   // context with the item's name, which put LOCKWOOD-ASH beside the lens.
   levelCaptions = false,
+  // The caption follows the lens's label rather than leading it (O-242): a
+  // word said after its numeral ("18th CENTURY").
+  captionAfter = false,
+  // THE WAY BACK TO THE PRESENT (O-243): the word a volume gives its red
+  // disc — shown only while nothing on the glass wears the present's
+  // colours, a tap turns the ring to the item that does. Null: no disc.
+  nowButton = null,
   shouldCenterLabel,
   contextOptions = {},
   onParentClick,
@@ -116,6 +127,20 @@ export function createApp({
   // The detail sector doubles as a NEXT button at the leaf, where a volume
   // asks for it (Howell 2026-07-20 — the e-reader gesture).
   detailTapAdvances = false,
+  // A TAP DRILLS, where a volume asks for it (O-234, Howell 2026-10-28:
+  // one volume "lends itself to tapping", and volumes may drill by
+  // different logic). The gesture layer
+  // reads it: a tap on a star drills in, a tap on the parent seat drills
+  // out, beside the strokes every volume keeps (O-191's taps, restored).
+  drillByTap = false,
+  // THE EMBLEM IN A GRID'S GAP (O-237): the volume's artwork (its declared
+  // splash image) drawn in the empty water where a day grid's fall parts
+  // between years. No address, no emblem.
+  gapEmblemUrl = null,
+  // Its proportions (width over height), read live: the host learns them
+  // when the image loads, and the layout keeps the ARTWORK, not its box,
+  // off the ring.
+  getGapEmblemAspect = null,
   // Paint the detail sector for a specific item NOW, ahead of the ring's
   // arrival — the reader is looking at the text, not the ring (Howell
   // 2026-07-21). Used by the leaf-advance tap so the words don't wait out
@@ -441,6 +466,16 @@ export function createApp({
       window.__tapDebugLog('phase', { name, p: Math.round(performance.now() * 10) / 10, ...extra });
     }
   }
+  // The present item's index in a chain, found once per chain (O-243): the
+  // chain object is the key, so a new chain is searched and the same chain
+  // never twice.
+  let nowIndexMemo = { items: null, index: -1 };
+  const nowIndexOf = items => {
+    if (!Array.isArray(items)) return -1;
+    if (nowIndexMemo.items !== items) nowIndexMemo = { items, index: items.findIndex(it => it && it.now === true) };
+    return nowIndexMemo.index;
+  };
+
   const setPrimaryItems = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
     phase('set:enter', { n: Array.isArray(newItems) ? newItems.length : 0 });
     versePart = 0; // a new chain is a new reading position (O-84)
@@ -503,7 +538,11 @@ export function createApp({
     const underThis = view.band && view.band.parentNode === host ? view.band : host.firstChild;
     const cx = Number(real.getAttribute('x')) || 0, cy = Number(real.getAttribute('y')) || 0;
     const mx = magnifier.x, my = magnifier.y;
-    const hx = cx - arcParams.hubX, hy = cy - arcParams.hubY, hl = Math.hypot(hx, hy) || 1;
+    // A caption after the label leaves and arrives along its own line, away
+    // from the lens; one before it along the hub's line (O-242).
+    const hx = captionAfter ? cx - magnifier.x : cx - arcParams.hubX;
+    const hy = captionAfter ? cy - magnifier.y : cy - arcParams.hubY;
+    const hl = Math.hypot(hx, hy) || 1;
     const ux = hx / hl, uy = hy / hl;
     // JUST BEYOND THE EDGE, NOT FAR BEYOND IT (Howell 2026-09-17: "the
     // incoming chapter label lags well behind the incoming focus ring
@@ -1908,20 +1947,68 @@ export function createApp({
         // rotation the ribbon scrolls, geared to the ring via the fractional
         // chain position; at rest it hard-crops to the magnified month.
         if (typeof pyramidConfig.gridFor === 'function') {
-          const gridInfo = pyramidConfig.gridFor({ selected: pyramidSelected });
+          const slotFloat = rotation / nodeSpacing - 1;
+          const nearestSlot = Math.round(slotFloat);
+          // THE NIAGARA KEEPS FALLING THROUGH A GAP (O-236): the empty slots
+          // that part the ring's years become empty rows in the fall (seams),
+          // and with the glass in a gap the fall eases between the two months
+          // either side, so every month's days stay level with that month on
+          // the ring instead of the whole sky going dark.
+          let seams = [];
+          let gapFall = null;
+          if (isRotating) {
+            const monthAt = slot => {
+              const it = visible[slot];
+              return it && !it.placebo ? pyramidConfig.gridFor({ selected: it }) : null;
+            };
+            const lo = Math.max(0, nearestSlot - 12);
+            const hi = Math.min(visible.length - 1, nearestSlot + 12);
+            let lastReal = null, empty = 0, before = null, after = null;
+            for (let slot = lo; slot <= hi; slot += 1) {
+              const info = monthAt(slot);
+              if (!info) { if (lastReal !== null) empty += 1; continue; }
+              if (lastReal !== null && empty > 0) {
+                seams.push({ serial: daySerial(info.yearNumber, info.month, 1), rows: empty * GAP_ROWS_PER_SLOT });
+              }
+              if (slot < slotFloat) before = { slot, info };
+              else if (!after) after = { slot, info };
+              lastReal = slot; empty = 0;
+            }
+            if (pyramidSelected === null && before && after && after.slot - before.slot > 1) {
+              const from = ribbonRowAt(before.info.yearNumber, before.info.month, 0.5, seams);
+              const to = ribbonRowAt(after.info.yearNumber, after.info.month, -0.5, seams);
+              const span = (after.slot - 0.5) - (before.slot + 0.5);
+              const t = Math.min(1, Math.max(0, (slotFloat - (before.slot + 0.5)) / span));
+              const nearer = t < 0.5 ? before.info : after.info;
+              gapFall = {
+                yearNumber: nearer.yearNumber,
+                month: nearer.month,
+                weekdayLetters: nearer.weekdayLetters,
+                anchorRow: from + (to - from) * t,
+                startSerial: daySerial(after.info.yearNumber, after.info.month, 1),
+                inGap: true
+              };
+            }
+          }
+          const gridInfo = gapFall || pyramidConfig.gridFor({ selected: pyramidSelected });
           if (gridInfo) {
-            const slotFloat = rotation / nodeSpacing - 1;
-            const fraction = slotFloat - Math.round(slotFloat);
+            const fraction = slotFloat - nearestSlot;
             const grid = computeDayGridLayout(vp, magnifier, arcParams, {
               yearNumber: gridInfo.yearNumber,
               month: gridInfo.month,
               weekdayLetters: gridInfo.weekdayLetters,
               fraction,
+              seams,
+              anchorRow: gridInfo.anchorRow,
+              startSerial: gridInfo.startSerial,
+              inGap: gridInfo.inGap,
+              emblemAspect: gapEmblemUrl && typeof getGapEmblemAspect === 'function' ? getGapEmblemAspect() : null,
               rotating: isRotating,
               logoBounds: volumeLogo.getBounds()
             });
             return {
               ...grid,
+              emblemUrl: gapEmblemUrl,
               fanLines: [],
               intersections: [],
               magnifierOrigin: null,
@@ -1944,11 +2031,19 @@ export function createApp({
         // exactly the nodes the ring showed, in sibling order, the departed
         // lens node as its standout. It stands while the lens holds that
         // item; the ranked sky returns once the reader rests elsewhere.
+        // A SKY OF EQUALS (O-240, Howell 2026-10-29: "There is no reason to
+        // have a featured or favored node in the child pyramid. All months
+        // are equal. And there's no reason to ever show fewer than all 12"):
+        // a volume that declares equalSky shows EVERY child, in sibling
+        // order, one size — no dynamic subset, no ranks, no large star, no
+        // cap. The node just drilled out from is still remembered, unseen,
+        // so a stroke straight back in returns to it.
+        const equalSky = pyramidConfig?.equalSky === true;
         let standoutId = null;
         if (dynamicSkies.size) {
           const dynamicSky = pyramidSelected ? dynamicSkies.get(pyramidSelected.id) : null;
           if (dynamicSky) {
-            children = children.filter(ch => dynamicSky.ids.has(ch?.id));
+            if (!equalSky) children = children.filter(ch => dynamicSky.ids.has(ch?.id));
             standoutId = dynamicSky.standoutId;
           } else if (!isRotating) {
             dynamicSkies.clear();
@@ -1964,13 +2059,13 @@ export function createApp({
           const t = ch?.prominence ?? ch?.meta?.prominence;
           return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 3;
         };
-        const anyProminence = children.some(ch => { const t = ch?.prominence ?? ch?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4; });
+        const anyProminence = !equalSky && children.some(ch => { const t = ch?.prominence ?? ch?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4; });
         // A volume may supply a per-sky policy: a number (the cap) or
         // { cap, spread } — spread SAMPLES the undeclared seats uniformly
         // across the whole sibling range instead of taking the alphabet's
         // head (Howell 2026-07-24: a head-only sky made every flock arrive
         // from one direction, and showed A–H as if it were the country).
-        const policy = typeof pyramidConfig?.getSeatCap === 'function'
+        const policy = equalSky ? { cap: Math.max(1, children.length) } : typeof pyramidConfig?.getSeatCap === 'function'
           ? pyramidConfig.getSeatCap({ selected: pyramidSelected, anyProminence, childCount: children.length })
           : null;
         const policyCap = typeof policy === 'object' && policy !== null ? policy.cap : policy;
@@ -1997,8 +2092,8 @@ export function createApp({
         // node ... a user has just drilled out from." The large ones take
         // the near seats, the standout first. This retires the four tiers'
         // scales, the depth taper and the smudge floor (O-134, O-172).
-        const isLarge = ch => Boolean(ch && ((standoutId != null && ch.id === standoutId) || (anyProminence && tierOf(ch) === 1)));
-        const rankOfSeat = i => (standoutId != null && children[i]?.id === standoutId ? 0 : isLarge(children[i]) ? 1 : anyProminence ? 1 + tierOf(children[i]) : 2);
+        const isLarge = ch => Boolean(!equalSky && ch && ((standoutId != null && ch.id === standoutId) || (anyProminence && tierOf(ch) === 1)));
+        const rankOfSeat = i => (equalSky ? 0 : standoutId != null && children[i]?.id === standoutId ? 0 : isLarge(children[i]) ? 1 : anyProminence ? 1 + tierOf(children[i]) : 2);
         const seatOrder = seatPool.slice().sort((a, b) => (rankOfSeat(a) - rankOfSeat(b)) || (a - b));
         const LARGE_SCALE = MAGNIFIER_RADIUS_RATIO / NODE_RADIUS_RATIO;
         // A volume may name its lesser stars' size (O-213): one keeps the
@@ -2023,9 +2118,34 @@ export function createApp({
           // Label lengths and size scales in SEAT order: the star walk keeps
           // each child a safe distance from the right edge for ITS OWN
           // label's width, and spaces stars by their true drawn radii.
-          labelLengths: seatOrder.slice(0, seatCount).map(i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length),
+          // An equal sky reorders its seats top to bottom below, so every
+          // seat is walked for the longest label any child might take.
+          labelLengths: (() => {
+            const lens = seatOrder.slice(0, seatCount).map(i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length);
+            return equalSky ? lens.map(() => Math.max(0, ...lens)) : lens;
+          })(),
           sizeScales: seatScales.slice(0, seatCount),
-          labelBaseFontPx: pyramidLabelBasePx
+          labelBaseFontPx: pyramidLabelBasePx,
+          // A caption after the lens's label lies inside the ring, where the
+          // stars live, so the sky leaves its strip clear (O-242). Measured
+          // as the view draws it: along the lens's own line, just past the
+          // glass, at the caption's size (a capital ≈ 0.75 em with its
+          // tracking).
+          keepOut: (() => {
+            if (!levelCaptions || !captionAfter) return [];
+            const word = String(formatLabel({ item: nav.getCurrent(), context: 'caption' }) || '');
+            if (!word) return [];
+            const theta = (magnifier.angle || 0) + Math.PI;
+            const ux = Math.cos(theta), uy = Math.sin(theta);
+            const start = magnifierRadius * (1 + CAPTION_GAP_RADII);
+            const fontPx = Math.max(15.75, Math.min(29.25, 0.018 * Math.min(vp.width || 0, vp.height || 0)));
+            const len = word.length * fontPx * 0.75;
+            return [{
+              x1: magnifier.x + ux * start, y1: magnifier.y + uy * start,
+              x2: magnifier.x + ux * (start + len), y2: magnifier.y + uy * (start + len),
+              half: fontPx * 0.7
+            }];
+          })()
         });
         if (!geo) return null;
         // Map children onto intersection slots (seat j belongs to child seatOrder[j])
@@ -2033,6 +2153,13 @@ export function createApp({
         let onNodeClick = null;
         if (children.length > 0 && geo.intersections.length > 0) {
             const slots = geo.intersections.slice(0, seatCount);
+            // A SKY OF EQUALS READS DOWNWARD (O-241, Howell 2026-10-29): the
+            // seats keep the star field's scatter, which still differs per
+            // parent and so still dances as the ring turns, but the children
+            // take them highest first in sibling order — the first child is
+            // always the highest star, the last the lowest, and none sits
+            // above a sibling that precedes it.
+            if (equalSky) slots.sort((a, b) => (a.y - b.y) || (a.x - b.x));
             const nodeR = vp.SSd * NODE_RADIUS_RATIO;
             nodes = slots.map((slot, j) => {
               const child = children[seatOrder[j] ?? j] ?? children[j];
@@ -2121,11 +2248,32 @@ export function createApp({
       ? (parentLabel || lastSelectedLabelOut || selectedMagnifierLabel)
       : parentLabel;
 
+    // THE WAY BACK TO THE PRESENT (O-243, Howell 2026-10-30: "once the red
+    // node in the focus ring is rotated out of frame, the user is lost and
+    // has no way to get back to the present without rotating"). The disc
+    // shows when the chain holds a present item and NOTHING on the glass
+    // wears its colours: no red ring node in frame, no red star or date in
+    // the sky, and the lens not already holding it. A tap keeps the level
+    // and turns the ring to that item. The chain is searched once per chain,
+    // not per frame — a day chain is long.
+    const nowIndex = nowIndexOf(nav.items);
+    const nowOnGlass = (() => {
+      if (nowIndex < 0) return true;
+      if (selected?.now) return true;
+      const m = nodeRadius * 2;
+      if (nodes.some(n => n.item?.now && n.x >= -m && n.x <= vp.width + m && n.y >= -m && n.y <= vp.height + m)) return true;
+      if (pyramidData?.nodes?.some(n => n?.now)) return true;
+      return false;
+    })();
+    const nowButtonOptions = nowButton && !isLayerOut
+      ? { show: !nowOnGlass, label: String(nowButton), onClick: () => rotateToIndex(nowIndex, { durationMs: NOW_RETURN_MS }) }
+      : null;
+
     view.render(
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection() },
+      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection(), captionAfter: Boolean(captionAfter) },
       {
         isRotating,
         // O-84 (Howell's correction, 2026-08-22): a split verse settles as a
@@ -2153,6 +2301,7 @@ export function createApp({
           icon: typeof getParentIcon === 'function' ? getParentIcon() : null
         },
         pyramidData,
+        nowButton: nowButtonOptions,
         logoBounds: volumeLogo.getBounds()
       }
     );
@@ -2612,6 +2761,7 @@ export function createApp({
     // THE DRILL OUT IS A VERB OF THE APP, NOT A CLICK ON THE PARENT (O-191):
     // the gesture layer calls it; the parent seat is a readout.
     drillOut: () => shiftLayersOut(),
+    drillByTap: Boolean(drillByTap),
     handlePyramidNodeClick: idx => {
       if (isAnimating() && !instantMigration) return; // block clicks during migration animation
       if (!lastPyramidData) return;

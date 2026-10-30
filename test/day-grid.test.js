@@ -65,6 +65,139 @@ describe('day grid arithmetic', () => {
     assert.ok(ribbon.nodes.some(n => !n.dim), 'anchor month full-strength');
   });
 
+  it('the ribbon runs edge to edge: no empty lower right in a tall viewport (O-235)', async () => {
+    // A fixed twelve rows left the lower right of a phone empty mid-turn;
+    // days must enter from the viewport's edge. Real geometry, not a fixture.
+    const { getViewportInfo, getArcParameters, getMagnifierPosition } =
+      await import('../src/geometry/focus-ring-geometry.js');
+    for (const [w, h] of [[360, 800], [412, 915]]) {
+      const vp = getViewportInfo(w, h);
+      for (const fraction of [0, 0.5, 0.95]) {
+        const ribbon = computeDayGridLayout(vp, getMagnifierPosition(vp), getArcParameters(vp),
+          { yearNumber: 2027, month: 6, fraction, rotating: true });
+        const lowest = Math.max(...ribbon.nodes.map(n => n.y));
+        assert.ok(lowest > h * 0.85, `${w}x${h} @${fraction}: the ribbon stops at y=${Math.round(lowest)}`);
+        assert.ok(ribbon.nodes.some(n => n.x > w * 0.7 && n.y > h * 0.7),
+          `${w}x${h} @${fraction}: the lower right is empty`);
+      }
+    }
+  });
+
+  it('the Niagara parts at a gap between years instead of vanishing (O-236)', async () => {
+    const { getViewportInfo, getArcParameters, getMagnifierPosition } =
+      await import('../src/geometry/focus-ring-geometry.js');
+    const { ribbonRowAt, daySerial, GAP_ROWS_PER_SLOT } = await import('../src/geometry/day-grid.js');
+    const vp = getViewportInfo(360, 800);
+    const mag = getMagnifierPosition(vp), arc = getArcParameters(vp);
+    const seams = [{ serial: daySerial(2027, 1, 1), rows: 3 * GAP_ROWS_PER_SLOT }];
+    // Midway through a three-slot gap: the fall eases between December's
+    // last half-slot and January's first.
+    const from = ribbonRowAt(2026, 12, 0.5, seams), to = ribbonRowAt(2027, 1, -0.5, seams);
+    const gap = computeDayGridLayout(vp, mag, arc, {
+      yearNumber: 2026, month: 12, rotating: true, seams, inGap: true,
+      anchorRow: (from + to) / 2, startSerial: daySerial(2027, 1, 1)
+    });
+    assert.ok(gap.nodes.length > 0, 'the fall keeps falling in the gap');
+    assert.ok(gap.nodes.every(n => n.dim), 'no month is under the glass, so every date dims');
+    const dec31 = gap.nodes.find(n => n.id === 'd:2026:12:31');
+    const jan1 = gap.nodes.find(n => n.id === 'd:2027:1:1');
+    if (dec31 && jan1) {
+      // Same week, but January sits the gap's rows further down the fall.
+      assert.ok(jan1.angle < dec31.angle - (3 * Math.PI) / 180, 'empty water between December and January');
+    } else {
+      assert.ok(dec31 || jan1, 'one side of the seam is on the glass');
+    }
+    // Continuity: at the gap's near edge the fall stands where December's
+    // own gearing left it.
+    const edge = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 12, fraction: 0.5, rotating: true, seams });
+    const eased = computeDayGridLayout(vp, mag, arc, {
+      yearNumber: 2026, month: 12, rotating: true, seams, inGap: true, anchorRow: from, startSerial: daySerial(2027, 1, 1)
+    });
+    const at = (layout, id) => layout.nodes.find(n => n.id === id);
+    const a = at(edge, 'd:2026:12:22'), b = at(eased, 'd:2026:12:22');
+    assert.ok(a && b && Math.abs(a.x - b.x) < 0.01 && Math.abs(a.y - b.y) < 0.01, 'no jump entering the gap');
+  });
+
+  it('the gap\'s empty water carries one emblem, turned like the dates (O-237)', async () => {
+    const { getViewportInfo, getArcParameters, getMagnifierPosition } =
+      await import('../src/geometry/focus-ring-geometry.js');
+    const { ribbonRowAt, daySerial, GAP_ROWS_PER_SLOT } = await import('../src/geometry/day-grid.js');
+    const vp = getViewportInfo(360, 800);
+    const mag = getMagnifierPosition(vp), arc = getArcParameters(vp);
+    const seams = [{ serial: daySerial(2027, 1, 1), rows: 2 * GAP_ROWS_PER_SLOT }];
+    const from = ribbonRowAt(2026, 12, 0.5, seams), to = ribbonRowAt(2027, 1, -0.5, seams);
+    const gap = computeDayGridLayout(vp, mag, arc, {
+      yearNumber: 2026, month: 12, rotating: true, seams, inGap: true,
+      anchorRow: (from + to) / 2, startSerial: daySerial(2027, 1, 1)
+    });
+    assert.equal(gap.emblems.length, 1, 'one emblem for the one gap');
+    const em = gap.emblems[0];
+    assert.ok(em.width > 0 && em.height > 0);
+    // It sits in the water: no date's centre falls inside its box.
+    const inside = gap.nodes.filter(n => {
+      const dx = n.x - em.x, dy = n.y - em.y;
+      const c = Math.cos(-em.angle), s = Math.sin(-em.angle);
+      const u = dx * c - dy * s, v = dx * s + dy * c; // into the ray's own frame
+      return Math.abs(u) < em.width / 2 && Math.abs(v) < em.height / 2;
+    });
+    assert.deepEqual(inside.map(n => n.id), [], 'the emblem covers no date');
+    // One size from entrance to exit: the same box at every point of the turn.
+    const sizes = new Set();
+    for (let t = 0; t <= 1; t += 0.1) {
+      const l = computeDayGridLayout(vp, mag, arc, {
+        yearNumber: 2026, month: 12, rotating: true, seams, inGap: true, emblemAspect: 2.5,
+        anchorRow: from + (to - from) * t, startSerial: daySerial(2027, 1, 1)
+      });
+      l.emblems.forEach(e => sizes.add(`${e.width.toFixed(2)}x${e.height.toFixed(2)}`));
+    }
+    assert.equal(sizes.size, 1, `the emblem changed size during the turn: ${[...sizes].join(', ')}`);
+    // No seam, no emblem; settled, no emblem.
+    const plain = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, fraction: 0.2, rotating: true });
+    assert.equal(plain.emblems.length, 0);
+    const settled = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, rotating: false });
+    assert.ok(!settled.emblems?.length);
+  });
+
+  it('the first of every month falls at full strength (O-238)', () => {
+    const vp = { width: 375, height: 700, SSd: 375, LSd: 700 };
+    const mag = { x: 178.2, y: 517.7 };
+    const arc = { hubX: 840.8, hubY: 0, radius: 840.8 };
+    const ribbon = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, fraction: 0.4, rotating: true });
+    const firsts = ribbon.nodes.filter(n => n.label === '1');
+    assert.ok(firsts.some(n => n.item.monthNumber !== 7), 'a neighbouring month\'s first is on the glass');
+    assert.ok(firsts.every(n => !n.dim), 'every first is full strength');
+    assert.ok(firsts.every(n => n.fullStrength), 'and stands clear of the turning fade');
+    assert.ok(ribbon.nodes.some(n => n.dim && n.label === '2'), 'its neighbours still dim');
+  });
+
+  it('the tilt turns the lattice rigidly and evens the Sundays beside the ring (O-239)', async () => {
+    const { getViewportInfo, getArcParameters, getMagnifierPosition } =
+      await import('../src/geometry/focus-ring-geometry.js');
+    const { computeWedgeLattice } = await import('../src/geometry/day-grid.js');
+    const vp = getViewportInfo(360, 655); // Howell's phone inside Chrome
+    const arc = getArcParameters(vp), mag = getMagnifierPosition(vp);
+    const flat = computeWedgeLattice(vp, arc, mag, 0);
+    const tilted = computeWedgeLattice(vp, arc, mag);
+    // Rigid: every distance between two lattice points is unchanged.
+    const pts = L => [[0, 0], [0, 6], [6, 0], [6, 6], [3, 3]].map(([ri, c]) => L.pointAt(L.rayAngle(ri), L.radiusFor(c)));
+    const a = pts(flat), b = pts(tilted);
+    for (let i = 0; i < a.length; i += 1) for (let j = i + 1; j < a.length; j += 1) {
+      const da = Math.hypot(a[i].x - a[j].x, a[i].y - a[j].y), db = Math.hypot(b[i].x - b[j].x, b[i].y - b[j].y);
+      assert.ok(Math.abs(da - db) < 1e-6, 'the tilt reshaped the calendar');
+    }
+    // Even: the Sunday column's distance to the ring varies less across the glass.
+    const spread = L => {
+      const gaps = [];
+      for (let off = -12; off <= 30; off += 0.5) {
+        const p = L.pointAt(L.angleForRowOffset(off), L.radiusFor(0));
+        if (p.x < 0 || p.x > vp.width || p.y < 0 || p.y > vp.height) continue;
+        gaps.push(arc.radius - Math.hypot(p.x - arc.hubX, p.y - arc.hubY));
+      }
+      return Math.max(...gaps) - Math.min(...gaps);
+    };
+    assert.ok(spread(tilted) < spread(flat) * 0.7, `Sunday gap spread ${spread(flat).toFixed(0)} → ${spread(tilted).toFixed(0)}`);
+  });
+
   it('honors Gregory: the ten days of October 1582 never happened', () => {
     GREGORIAN_REFORM.missingDays.forEach(d => {
       assert.equal(dayExists(1582, 10, d), false, `5-14 Oct 1582 is a ghost: ${d}`);

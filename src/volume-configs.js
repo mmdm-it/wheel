@@ -5,7 +5,7 @@
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
 import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
-import { proofreadDeepLink, proofreadOverrideActive } from './core/lan-gate.js';
+import { proofreadDeepLink, unclearedActive } from './core/lan-gate.js';
 import { recall } from './core/session-memory.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
@@ -28,6 +28,8 @@ import { setUnitTextLoader } from './adapters/volume-helpers.js';
 const BIBLE_VOLUME_BASE = './data/gutenberg';
 const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
 import { calendarAdapter } from './adapters/calendar-adapter.js';
+import { buildCalendarDecades, buildCalendarCenturies } from './adapters/volume-helpers.js';
+import { CENTURY_WORD, CENTURY_ERA_BC, centuryShortLabel, ordinal, decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
 
 // `parseVerseId` lived here and is DELETED under O-47, not left for later.
 //
@@ -110,9 +112,9 @@ const volumeConfigs = {
         // proofread, else CHECKED where the build says, else a confirmed
         // unit; the LAN's override lifts it), so the edition waited for is
         // the edition shown. Keep the two in step.
-        const override = proofreadOverrideActive();
-        const servable = e => Boolean(e) && (override || e.proofread === true
-          || (e.checked !== undefined ? e.checked === true : (Array.isArray(e.proofreadUnits) && e.proofreadUnits.length > 0)));
+        // O-229: the CHECKED gate is open — every edition the volume (and, on
+        // the LAN under ?uncleared=true, its sidecar) enumerates is offered.
+        const servable = e => Boolean(e) && e.hasChart !== false;
         const enumerated = volumeJson?.editions || [];
         const offered = new Set(enumerated.filter(servable).map(e => e.code));
         const remembered = recall('bible').edition;
@@ -130,6 +132,7 @@ const volumeConfigs = {
         return enumerated.find(e => offered.has(e.code))?.code || null;
       };
       const volume = await loadBibleVolume({
+        includeUncleared: unclearedActive(),   // O-231: the LAN's ?uncleared=true merges the sidecar
         base: BIBLE_VOLUME_BASE,
         version: BIBLE_VOLUME_VERSION,
         firstEdition: chooseFirst,
@@ -252,7 +255,8 @@ const volumeConfigs = {
           language: edition.language || null,
           direction: edition.direction || 'ltr',
           hasChart: edition.hasChart === true,
-          proofread: edition.proofread === true
+          proofread: edition.proofread === true,
+          cleared: edition.cleared !== false
         }])),
         names: Object.fromEntries(Object.entries(volume.namesByLanguage)
           .filter(([, names]) => names)
@@ -466,9 +470,18 @@ const volumeConfigs = {
     hasSearch: true
   },
   calendar: {
+    // The word CENTURY rides beside the lens as the Bible's CHAPTER does
+    // (O-242), but AFTER the numeral — "18th CENTURY" is how it is said.
+    levelCaptions: true,
+    captionAfter: true,
+    // The red disc that turns the ring back to the present (O-243).
+    nowButton: 'NOW',
     id: 'calendar',
     paths: ['/calendar'],
     manifestPath: './data/calendar/manifest.json',
+    // W-114: the calendar's pictures sit with its data (its splash card's
+    // logo, 2026-10-28), at the volume root like the catalogue's.
+    assetBase: './data/calendar/',
     theme: 'calendar',
     documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
     palette: {
@@ -520,6 +533,13 @@ const volumeConfigs = {
     // hardcoded date that goes stale. Default entry: the months ring with
     // the CURRENT month magnified; ?level=year gives the years ring.
     buildChain: (manifest, options) => {
+      const thisYear = new Date().getFullYear();
+      if (options.level === 'decade') {
+        return buildCalendarDecades(manifest, { initialItemId: options.initialItemId || decadeIdOf(thisYear) });
+      }
+      if (options.level === 'century') {
+        return buildCalendarCenturies(manifest, { initialItemId: options.initialItemId || centuryIdOf(thisYear) });
+      }
       if (options.level === 'year') {
         return buildCalendarYears(manifest, {
           arrangement: options.arrangement,
@@ -683,12 +703,25 @@ function makeCalendarLabelFormatter({ locale }) {
   );
   return ({ item, context }) => {
     if (!item) return '';
+    // THE CENTURY'S WORD IS A CAPTION (O-242): the ring reads "18th" and
+    // "3rd B.C."; the lens reads "18th" with CENTURY after it, or "3rd" with
+    // CENTURY B.C., so the glass and its word say "3rd CENTURY B.C.".
+    // Every other level answers an empty caption.
+    if (context === 'caption') {
+      if (item.level !== 'century') return '';
+      return item.era < 0 ? `${CENTURY_WORD} ${CENTURY_ERA_BC}` : CENTURY_WORD;
+    }
+    if (item.level === 'century' && Number.isFinite(item.centuryNumber)) {
+      return context === 'magnifier' ? ordinal(item.centuryNumber) : centuryShortLabel(item.centuryNumber, item.era);
+    }
+    if (item.level === 'decade') return item.name || '';
     // Month items carry the month name alone, in the lens too (O-215,
     // Howell 2026-10-23, against the July bundle: "the screening room
     // version has the year suffix in the magnifier, whereas the archive
     // version does not"). The year stands in the parent vessel directly
     // below the lens, so the suffix said twice what the glass already says.
-    if (item.level === 'month') return item?.name || item?.id || '';
+    // In capitals here, since the theme no longer shouts for the volume (O-242).
+    if (item.level === 'month') return String(item?.name || item?.id || '').toUpperCase();
     // Only year items get era formatting — composed ids ("2026:jan") would
     // otherwise fool the parseInt fallback.
     if (item.level && item.level !== 'year') return item?.name || item?.id || '';
