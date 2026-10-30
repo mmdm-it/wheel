@@ -730,6 +730,9 @@ function makeCalendarLabelFormatter({ locale }) {
     // Only year items get era formatting — composed ids ("2026:jan") would
     // otherwise fool the parseInt fallback.
     if (item.level && item.level !== 'year') return item?.name || item?.id || '';
+    // A year of another calendar wears the name its system gave it (O-248:
+    // ה׳תשפ״ז); the era formatting below is the Gregorian's.
+    if (item.system && item.system !== 'gregorian') return String(item?.name || item?.id || '');
     const yearNumber = getYearNumber(item);
     if (!Number.isFinite(yearNumber)) return item?.name || item?.id || '';
     return formatYear(yearNumber);

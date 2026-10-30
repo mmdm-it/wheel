@@ -208,7 +208,9 @@ export function buildCalendarPyramid({
   const getChildren = ({ selected }) => (calendarModeRef?.() === 'day'
     ? [] // the days ring has no pyramid (its detail era comes with C.6's boot state)
     : getCalendarMonths(manifest, selected, calendarModeRef?.()))
-    .map(item => (item?.name && item.level === 'month'
+    // Only a LATIN name is clipped to three letters: a Hebrew month (O-248)
+    // is already short, and its letters are not the kind that abbreviate.
+    .map(item => (item?.name && item.level === 'month' && /^[A-Za-z]+$/.test(String(item.name))
       ? { ...item, name: String(item.name).slice(0, 3).toUpperCase() }
       : item));
   const onClick = instr => {
