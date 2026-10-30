@@ -148,6 +148,8 @@ export function mountDimensionGlobe(button) {
 // in the globe's seat; the caller tells it the ray it lies on (orient), as
 // the host tells every label in the sky. It has no spin — a logo does not
 // turn — so the globe's entrance and press cues are quietly nothing here.
+const EMBLEM_SCALE = 1.5;   // the art's long side, in button widths
+const EMBLEM_SHIFT = 14;    // viewBox units down the ray, away from the hub
 export function mountDimensionEmblem(button, url, aspect = null) {
   if (!button || typeof document === 'undefined' || !url) return null;
   const svg = el('svg', { viewBox: '-50 -50 100 100', 'aria-hidden': 'true', focusable: 'false', overflow: 'visible' });
@@ -156,11 +158,14 @@ export function mountDimensionEmblem(button, url, aspect = null) {
   const image = el('image', { href: url, preserveAspectRatio: 'xMidYMid meet' });
   g.appendChild(image);
   const fit = ratio => {
-    // The long side fills the button; the short side follows the art's
-    // own proportions, so the artwork is never squeezed into a square.
+    // The long side is HALF AGAIN the button's box (Howell 2026-10-30,
+    // "make it 50% larger"): the artwork spills past the hit disc on
+    // purpose, the button's box being the thumb's target rather than the
+    // art's frame. The short side follows the art's own proportions, so
+    // the artwork is never squeezed into a square.
     const r = Number.isFinite(ratio) && ratio > 0 ? ratio : 2.5;
-    const w = 100, h = r >= 1 ? 100 / r : 100;
-    const ww = r >= 1 ? w : 100 * r;
+    const w = 100 * EMBLEM_SCALE, h = r >= 1 ? w / r : w;
+    const ww = r >= 1 ? w : w * r;
     image.setAttribute('x', String(-ww / 2)); image.setAttribute('y', String(-h / 2));
     image.setAttribute('width', String(ww)); image.setAttribute('height', String(h));
   };
@@ -178,6 +183,9 @@ export function mountDimensionEmblem(button, url, aspect = null) {
     spin() { /* a logo does not turn */ },
     // The ray the artwork lies on, in degrees — the sky's own convention
     // (labelRotationDeg of the ray angle from the hub).
-    orient(deg) { if (Number.isFinite(deg)) g.setAttribute('transform', `rotate(${deg.toFixed(2)})`); }
+    // Turned onto the ray, then slid a little AWAY from the hub along it
+    // (the group's +x points at the hub once turned), so the far end of a
+    // larger artwork stays on the glass at the narrowest phone.
+    orient(deg) { if (Number.isFinite(deg)) g.setAttribute('transform', `rotate(${deg.toFixed(2)}) translate(${-EMBLEM_SHIFT} 0)`); }
   };
 }

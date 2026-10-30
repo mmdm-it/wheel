@@ -103,6 +103,10 @@ export function createApp({
   // disc — shown only while nothing on the glass wears the present's
   // colours, a tap turns the ring to the item that does. Null: no disc.
   nowButton = null,
+  // THE RING'S TURNING, TOLD ONCE PER CHANGE (O-244): a caller that wants to
+  // step aside while the ring moves — the dimension button does — hears
+  // true at the first turning frame and false at the settle.
+  onTurn = null,
   shouldCenterLabel,
   contextOptions = {},
   onParentClick,
@@ -243,6 +247,7 @@ export function createApp({
   
   let choreographer = null;
   let isRotating = false;
+  let lastTurning = false;   // what onTurn was last told (O-244)
   let rotation = 0;
   let snapId = null;
   let isLayerOut = false; // track layer migration state between parent button and magnifier
@@ -2268,6 +2273,11 @@ export function createApp({
     const nowButtonOptions = nowButton && !isLayerOut
       ? { show: !nowOnGlass, label: String(nowButton), onClick: () => rotateToIndex(nowIndex, { durationMs: NOW_RETURN_MS }) }
       : null;
+
+    if (typeof onTurn === 'function' && Boolean(isRotating) !== lastTurning) {
+      lastTurning = Boolean(isRotating);
+      try { onTurn(lastTurning); } catch (_) { /* a listener's error is its own */ }
+    }
 
     view.render(
       nodes,

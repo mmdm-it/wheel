@@ -361,6 +361,10 @@ svg :focus-visible {
    the more faint level and stay there... it can even be slightly dimmer than
    it has been"). No hover, no pressed state, no swell — one size, one light. */
 #dimension-button, #dimension-button:hover, #dimension-button[aria-pressed="true"] { opacity: 0.7; }
+/* GONE WHILE THE RING TURNS (O-244, Howell 2026-10-30): the host tells the
+   button when the ring is moving; it fades out for the turn and back at the
+   settle, untouchable in between. */
+#dimension-button.is-turning { opacity: 0; pointer-events: none; }
 
 /* ── Search mode: the same room under a different light ───────────────────
    The ground dims for close work (computed from the ACTIVE theme in

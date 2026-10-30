@@ -72,6 +72,15 @@ describe('the host (O-244)', () => {
   });
 });
 
+describe('the button steps aside while the ring turns (O-244)', () => {
+  it('the host tells a listener once per change; main fades the button; the stylesheet hides it', () => {
+    const host = read('../src/index.js');
+    assert.match(host, /if \(typeof onTurn === 'function' && Boolean\(isRotating\) !== lastTurning\) \{/);
+    assert.match(read('../src/main.js'), /onTurn: turning => \{ if \(dimensionButton\?\.classList\) dimensionButton\.classList\.toggle\('is-turning', Boolean\(turning\)\); \}/);
+    assert.match(read('../styles/base.css'), /#dimension-button\.is-turning \{ opacity: 0; pointer-events: none; \}/);
+  });
+});
+
 describe('the emblem mount (O-244)', () => {
   it('draws the artwork alone — no circle, no stroke — at the art\'s proportions, and turns on command', () => {
     const originalDocument = globalThis.document;
@@ -86,10 +95,11 @@ describe('the emblem mount (O-244)', () => {
       const image = g.children[0];
       assert.equal(g.children.length, 1, 'the artwork alone');
       assert.equal(image.getAttribute('href'), 'x/logo.png');
-      assert.equal(image.getAttribute('width'), '100');
-      assert.equal(image.getAttribute('height'), '40');
+      // Half again the button's box, at the art's proportions (2.5:1).
+      assert.equal(image.getAttribute('width'), '150');
+      assert.equal(image.getAttribute('height'), '60');
       art.orient(123.456);
-      assert.equal(g.getAttribute('transform'), 'rotate(123.46)');
+      assert.equal(g.getAttribute('transform'), 'rotate(123.46) translate(-14 0)');
       assert.doesNotThrow(() => art.spin());
     } finally {
       globalThis.document = originalDocument;

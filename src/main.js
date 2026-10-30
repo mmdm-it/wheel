@@ -4774,6 +4774,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     levelCaptions: config?.levelCaptions === true,
     captionAfter: config?.captionAfter === true,
     nowButton: typeof config?.nowButton === 'string' && config.nowButton ? config.nowButton : null,
+    // THE BUTTON STEPS ASIDE WHILE THE RING TURNS (O-244, Howell 2026-10-30:
+    // "any rotation of the focus ring should cause the dimension button to
+    // disappear. There's no need for it to be there") — and it would sit
+    // among the emblems falling through a day grid's gaps.
+    onTurn: turning => { if (dimensionButton?.classList) dimensionButton.classList.toggle('is-turning', Boolean(turning)); },
     shouldCenterLabel,
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,
