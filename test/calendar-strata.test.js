@@ -96,6 +96,12 @@ describe('the watermark (O-246)', () => {
   });
 });
 
+describe('a card rendered behind a forward stratum is centred on the panel\'s own width (O-246)', () => {
+  it('main measures the detail panel by its layout size, not the receded size it is drawn at', () => {
+    assert.match(read('../src/main.js'), /width: detailPanel\.offsetWidth \|\| panelRect\.width,\n\s+height: detailPanel\.offsetHeight \|\| panelRect\.height/);
+  });
+});
+
 describe('the button steps aside while the ring turns (O-244)', () => {
   it('the host tells a listener once per change; main fades the button; the stylesheet hides it', () => {
     const host = read('../src/index.js');

@@ -3026,8 +3026,17 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // innerHeight lie (Phase C audit M4; the DDG bottom-crop class of bug).
   const vpm = measureViewport();
   const arcBounds = computeDetailSectorBounds(vpm.width, vpm.height, null, copyrightBottomPx());
+  // THE PANEL'S LAYOUT SIZE, NOT ITS DRAWN SIZE (O-246's catch, Howell
+  // 2026-10-30: the weekday "shifts off to the left"). A card rendered while
+  // a stratum is forward measures the primary RECEDED — getBoundingClientRect
+  // reports the 40% it is drawn at — and centres its title in that; the
+  // offset sizes are the panel's own, whatever scale the stack wears.
   const panelRect = detailPanel.getBoundingClientRect();
-  const renderBounds = { ...arcBounds, width: panelRect.width, height: panelRect.height };
+  const renderBounds = {
+    ...arcBounds,
+    width: detailPanel.offsetWidth || panelRect.width,
+    height: detailPanel.offsetHeight || panelRect.height
+  };
 
 
   window.__wheelVerseBounds = renderBounds; // probe's verse-wrap autopsy reads this (?probe=1)
