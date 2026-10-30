@@ -136,6 +136,27 @@ describe('the Hebrew calendar (O-248)', () => {
     const cells = monthCells(5787, 8, H.reckoning).flat().filter(Boolean);
     assert.equal(H.reckoning.dayName(cells[18].day), 'י״ט');
   });
+  it('names the rings above the years in Hebrew, with the century\'s word first', () => {
+    assert.equal(H.decadeWord(8), 'שנות השמונים');
+    assert.equal(H.decadeWord(0), 'שנות האפס');
+    assert.equal(H.centuryLens(58, 1), 'הנ״ח');
+    assert.equal(H.centuryLabel(58, 1), 'הנ״ח');
+    assert.equal(H.centuryPhrase(58, 1), 'המאה הנ״ח');
+    assert.equal(H.centuryWord(1), 'המאה');
+    assert.equal(H.nativeName, 'עברי');
+    assert.equal(G.decadeWord(8), 'EIGHTIES');
+    assert.equal(G.centuryLens(21, 1), '21st');
+    assert.equal(G.centuryLabel(3, -1), '3rd B.C.');
+    assert.equal(G.centuryPhrase(8, -1), '8th CENTURY B.C.');
+    assert.equal(G.centuryWord(-1), 'CENTURY B.C.');
+    assert.equal(G.nativeName, 'GREGORIAN');
+    const decades = buildCalendarDecades(manifest, { initialItemId: 'dd:578@hebrew' });
+    assert.equal(decades.items[decades.selectedIndex].name, 'שנות השמונים');
+    const centuries = buildCalendarCenturies(manifest, { initialItemId: 'c:58@hebrew' });
+    assert.equal(centuries.items[centuries.selectedIndex].name, 'הנ״ח');
+    // The host keeps the word before the numeral for a right-to-left script.
+    assert.match(fs.readFileSync(new URL('../src/index.js', import.meta.url), 'utf8'), /const captionIsAfter = \(\) => Boolean\(captionAfter\) && textDirection\(\) !== 'rtl';/);
+  });
   it('builds the rings: ids suffixed @hebrew, months in civil order, the span 761 to 6761, today red at its Hebrew name', () => {
     const years = buildCalendarYears(manifest, { initialItemId: '5787@hebrew' });
     const real = years.items.filter(Boolean);

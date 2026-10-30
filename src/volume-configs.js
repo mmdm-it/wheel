@@ -29,7 +29,8 @@ const BIBLE_VOLUME_BASE = './data/gutenberg';
 const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
 import { calendarAdapter, calendarStrata } from './adapters/calendar-adapter.js';
 import { buildCalendarDecades, buildCalendarCenturies } from './adapters/volume-helpers.js';
-import { CENTURY_WORD, CENTURY_ERA_BC, centuryShortLabel, ordinal, decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
+import { decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
+import { systemOf as calendarSystemOf } from './adapters/calendar-systems.js';
 
 // `parseVerseId` lived here and is DELETED under O-47, not left for later.
 //
@@ -712,12 +713,15 @@ function makeCalendarLabelFormatter({ locale }) {
     // "3rd B.C."; the lens reads "18th" with CENTURY after it, or "3rd" with
     // CENTURY B.C., so the glass and its word say "3rd CENTURY B.C.".
     // Every other level answers an empty caption.
+    // In the item's own calendar's words (O-248): English for the Gregorian
+    // and the Julian, Hebrew for the Hebrew.
     if (context === 'caption') {
       if (item.level !== 'century') return '';
-      return item.era < 0 ? `${CENTURY_WORD} ${CENTURY_ERA_BC}` : CENTURY_WORD;
+      return calendarSystemOf(item.system).centuryWord(item.era);
     }
     if (item.level === 'century' && Number.isFinite(item.centuryNumber)) {
-      return context === 'magnifier' ? ordinal(item.centuryNumber) : centuryShortLabel(item.centuryNumber, item.era);
+      const sys = calendarSystemOf(item.system);
+      return context === 'magnifier' ? sys.centuryLens(item.centuryNumber, item.era) : sys.centuryLabel(item.centuryNumber, item.era);
     }
     if (item.level === 'decade') return item.name || '';
     // Month items carry the month name alone, in the lens too (O-215,

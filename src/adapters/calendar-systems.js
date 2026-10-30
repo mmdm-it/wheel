@@ -15,7 +15,9 @@
 // mistaken for another calendar's, and the old parsers refuse it rather
 // than misreading it.
 import { GREGORIAN_RECKONING, JULIAN_RECKONING, daySerial } from '../geometry/day-grid.js';
-import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf, hebrewNumeral, HEBREW_WEEKDAYS, HEBREW_WEEKDAY_LETTERS } from './calendar-hebrew.js';
+import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf, hebrewNumeral, HEBREW_WEEKDAYS, HEBREW_WEEKDAY_LETTERS,
+  HEBREW_DECADE_WORDS, HEBREW_CENTURY_WORD, hebrewCenturyLabel, hebrewCenturyPhrase, HEBREW_NAME } from './calendar-hebrew.js';
+import { DECADE_WORDS, CENTURY_WORD, CENTURY_ERA_BC, ordinal, centuryShortLabel, centuryLongLabel } from './calendar-eras.js';
 
 export const GREGORIAN = 'gregorian';
 const SUFFIX = /^(.*)@([a-z]+)$/;
@@ -49,11 +51,25 @@ const eraYearSort = y => (y < 0 ? y + 3001 : y + 3000);
 // A system from its parts: the reckoning, the months of a year (in ring
 // order, each with its own number, key and name), the year's name and
 // time order, and whether the count skips a year zero.
-function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null }) {
+// The English era words are the default: a decade by its digit, a century
+// as "21st" (lens), "3rd B.C." (ring), "21st CENTURY" (phrase), with the
+// word CENTURY (or CENTURY B.C.) as the lens's caption.
+const ENGLISH_ERAS = {
+  decadeWord: digit => DECADE_WORDS[digit] || '',
+  centuryLens: (n, era) => ordinal(n),
+  centuryLabel: (n, era) => centuryShortLabel(n, era),
+  centuryPhrase: (n, era) => centuryLongLabel(n, era),
+  centuryWord: era => (era < 0 ? `${CENTURY_WORD} ${CENTURY_ERA_BC}` : CENTURY_WORD)
+};
+function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name }) {
   const suffix = id === GREGORIAN ? '' : `@${id}`;
   return Object.freeze({
     id,
     name,
+    // the name the calendar gives itself, in its own script — the watermark
+    nativeName,
+    // the rings above the years, in the system's own words
+    ...eras,
     reckoning,
     // the script's direction, the week's names and the grid's header letters
     direction,
@@ -101,7 +117,15 @@ export const SYSTEMS = Object.freeze({
     direction: 'rtl',
     weekdays: HEBREW_WEEKDAYS,
     weekdayLetters: HEBREW_WEEKDAY_LETTERS,
-    epochSerial: HEBREW_RECKONING.serialOf(1, 7, 1)
+    epochSerial: HEBREW_RECKONING.serialOf(1, 7, 1),
+    nativeName: HEBREW_NAME,
+    eras: {
+      decadeWord: digit => HEBREW_DECADE_WORDS[digit] || '',
+      centuryLens: n => hebrewCenturyLabel(n),
+      centuryLabel: n => hebrewCenturyLabel(n),
+      centuryPhrase: n => hebrewCenturyPhrase(n),
+      centuryWord: () => HEBREW_CENTURY_WORD
+    }
   })
 });
 

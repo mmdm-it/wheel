@@ -147,6 +147,18 @@ export function hebrewMonthsOf(year) {
 // number, the seventh by its name.
 export const HEBREW_WEEKDAYS = ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'];
 export const HEBREW_WEEKDAY_LETTERS = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ש'];
+
+// THE RINGS ABOVE THE YEARS, IN HEBREW (Howell 2026-10-30: "translate
+// these labels into Hebrew as well"). The decades as Hebrew says them —
+// "the years of the eighties"; a century as its ordinal in gematria with
+// the article, so the lens and its word read "the century the 58th", the
+// word FIRST as Hebrew puts it. The calendar's own name for the watermark.
+export const HEBREW_DECADE_WORDS = ['שנות האפס', 'שנות העשר', 'שנות העשרים', 'שנות השלושים', 'שנות הארבעים',
+  'שנות החמישים', 'שנות השישים', 'שנות השבעים', 'שנות השמונים', 'שנות התשעים'];
+export const HEBREW_CENTURY_WORD = 'המאה';
+export const hebrewCenturyLabel = n => `ה${hebrewNumeral(n)}`;
+export const hebrewCenturyPhrase = n => `${HEBREW_CENTURY_WORD} ${hebrewCenturyLabel(n)}`;
+export const HEBREW_NAME = 'עברי';
 export const hebrewMonthKeyOf = month => MONTH_NAMES[month]?.[0] || String(month);
 
 export const HEBREW_RECKONING = Object.freeze({

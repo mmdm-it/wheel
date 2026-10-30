@@ -382,6 +382,11 @@ export function createApp({
   // actually ends with it, so a level change cannot mis-seat anything.
   let parentLabelSuffixHint = '';
   const textDirection = () => ((typeof externalGetTextDirection === 'function' && externalGetTextDirection()) === 'rtl' ? 'rtl' : 'ltr');
+  // THE WORD'S SIDE (O-248): a volume that says its word after the numeral
+  // ("18th CENTURY") does so in a left-to-right script; a right-to-left
+  // script of the same volume puts the word first, as Hebrew and Arabic do
+  // ("the century the 58th") — so the caption keeps the word-first side there.
+  const captionIsAfter = () => Boolean(captionAfter) && textDirection() !== 'rtl';
   const getParentLabel = typeof externalGetParentLabel === 'function'
     ? externalGetParentLabel
     : builtinGetParentLabel;
@@ -545,8 +550,9 @@ export function createApp({
     const mx = magnifier.x, my = magnifier.y;
     // A caption after the label leaves and arrives along its own line, away
     // from the lens; one before it along the hub's line (O-242).
-    const hx = captionAfter ? cx - magnifier.x : cx - arcParams.hubX;
-    const hy = captionAfter ? cy - magnifier.y : cy - arcParams.hubY;
+    const wordAfter = captionIsAfter();
+    const hx = wordAfter ? cx - magnifier.x : cx - arcParams.hubX;
+    const hy = wordAfter ? cy - magnifier.y : cy - arcParams.hubY;
     const hl = Math.hypot(hx, hy) || 1;
     const ux = hx / hl, uy = hy / hl;
     // JUST BEYOND THE EDGE, NOT FAR BEYOND IT (Howell 2026-09-17: "the
@@ -2141,7 +2147,10 @@ export function createApp({
           // glass, at the caption's size (a capital ≈ 0.75 em with its
           // tracking).
           keepOut: (() => {
-            if (!levelCaptions || !captionAfter) return [];
+            // The strip guards the word on the SKY'S side: where it is
+            // said after the numeral in a left-to-right script, or before
+            // it in a right-to-left one — the same physical side (O-248).
+            if (!levelCaptions || (textDirection() === 'rtl') === captionIsAfter()) return [];
             const word = String(formatLabel({ item: nav.getCurrent(), context: 'caption' }) || '');
             if (!word) return [];
             const theta = (magnifier.angle || 0) + Math.PI;
@@ -2287,7 +2296,7 @@ export function createApp({
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection(), captionAfter: Boolean(captionAfter) },
+      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection(), captionAfter: captionIsAfter() },
       {
         isRotating,
         // O-84 (Howell's correction, 2026-08-22): a split verse settles as a

@@ -83,6 +83,7 @@ describe('the watermark (O-246)', () => {
     const [plane] = calendarStrata();
     assert.equal(plane.watermark('gregorian'), '');
     assert.equal(plane.watermark('julian'), 'JULIAN');
+    assert.equal(plane.watermark('hebrew'), 'עברי');
     assert.equal(plane.watermark('republican'), 'FRENCH REPUBLICAN');
   });
   it('the host asks the planes for the word at boot and at every choice, and the stylesheet seats it', () => {

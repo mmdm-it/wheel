@@ -1,4 +1,4 @@
-import { DECADE_WORDS, centuryNumberOf, decadeDigitOf, centuryIdOf, decadeIdOf, millenniumIdOf } from './calendar-eras.js';
+import { centuryNumberOf, decadeDigitOf, centuryIdOf, decadeIdOf, millenniumIdOf } from './calendar-eras.js';
 import { SYSTEMS, GREGORIAN, systemOf, systemIdOf, splitSystemId, presentIn, todaySerial } from './calendar-systems.js';
 import { projectContainers } from '../core/unit-source.js';
 import { chartedUnitsOf } from './bible-volume.js';
@@ -628,7 +628,7 @@ export function buildCalendarDecades(manifest, { initialItemId, system = null } 
     last = {
       id: sys.decadeId(bare),
       bare,
-      name: DECADE_WORDS[decadeDigitOf(y)],
+      name: sys.decadeWord(decadeDigitOf(y)),
       level: 'decade',
       decadeDigit: decadeDigitOf(y),
       centuryNumber: centuryNumberOf(y),
@@ -662,7 +662,7 @@ export function buildCalendarCenturies(manifest, { initialItemId, system = null 
     last = {
       id: sys.centuryId(bare),
       bare,
-      name: String(centuryNumberOf(y)),
+      name: sys.centuryLabel(centuryNumberOf(y), y < 0 ? -1 : 1),
       level: 'century',
       centuryNumber: centuryNumberOf(y),
       era: y < 0 ? -1 : 1,

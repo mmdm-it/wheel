@@ -3,7 +3,7 @@ import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths,
   getCalendarWeekdayNames, getCalendarWeekdayLetters, buildCalendarDecades, buildCalendarCenturies,
   getCalendarCenturyDecades, getCalendarDecadeYears } from './volume-helpers.js';
-import { DECADE_WORDS, centuryLongLabel, centuryIdOf, decadeIdOf, decadeDigitOf } from './calendar-eras.js';
+import { centuryIdOf, decadeIdOf, decadeDigitOf } from './calendar-eras.js';
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
 import { SYSTEMS, GREGORIAN, systemOf, systemIdOf, todaySerial } from './calendar-systems.js';
 import { localSunTimes } from '../geometry/solar.js';
@@ -425,10 +425,10 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     }
     // Years in the ring: the decade's word; decades: the century's (O-242).
     if (calendarMode === 'year') {
-      return item && Number.isFinite(item.yearNumber) ? DECADE_WORDS[decadeDigitOf(item.yearNumber)] : '';
+      return item && Number.isFinite(item.yearNumber) ? systemOf(item.system).decadeWord(decadeDigitOf(item.yearNumber)) : '';
     }
     if (calendarMode === 'decade') {
-      return item && Number.isFinite(item.centuryNumber) ? centuryLongLabel(item.centuryNumber, item.era) : '';
+      return item && Number.isFinite(item.centuryNumber) ? systemOf(item.system).centuryPhrase(item.centuryNumber, item.era) : '';
     }
     if (calendarMode !== 'month') return gatewayReturnLabel || '';
     if (!item) return '';
@@ -623,7 +623,9 @@ export const calendarStrata = () => [
     // THE WATERMARK (O-246): any calendar but the Gregorian — "the standard
     // calendar, it doesn't need a watermark" — writes its name across the
     // glass while it is chosen.
-    watermark: id => (id === GREGORIAN ? '' : (calendarById(id)?.name || '')),
+    // In the calendar's own script where it has one (Howell: "the
+    // watermark should also be in Hebrew letters").
+    watermark: id => (id === GREGORIAN ? '' : (SYSTEMS[id]?.nativeName || calendarById(id)?.name || '')),
     select: id => {
       const c = calendarById(id);
       if (!c || !c.live) return false;
