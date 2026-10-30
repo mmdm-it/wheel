@@ -2155,7 +2155,11 @@ export function createApp({
             if (!word) return [];
             const theta = (magnifier.angle || 0) + Math.PI;
             const ux = Math.cos(theta), uy = Math.sin(theta);
-            const start = magnifierRadius * (1 + CAPTION_GAP_RADII);
+            // From the label's end where the name is wider than the glass
+            // (O-250): the lens label's width is estimated from its length.
+            const lensWord = String(formatLabel({ item: nav.getCurrent(), context: 'magnifier' }) || '');
+            const lensFontPx = Math.max(21, Math.min(39, 0.024 * Math.min(vp.width || 0, vp.height || 0)));
+            const start = Math.max(magnifierRadius, lensWord.length * lensFontPx * 0.3) + magnifierRadius * CAPTION_GAP_RADII;
             const fontPx = Math.max(15.75, Math.min(29.25, 0.018 * Math.min(vp.width || 0, vp.height || 0)));
             const len = word.length * fontPx * 0.75;
             return [{
