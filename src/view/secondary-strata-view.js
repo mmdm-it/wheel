@@ -221,6 +221,20 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.setAttribute('text-anchor', 'start');
       label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
+    } else if (mirrored && !centerMagnified && magScale <= 1.01) {
+      // TOWARD THE HUB (O-254, Howell 2026-10-30: "they should be offset
+      // toward the hub so that they are not clipped by the left side of the
+      // viewport"): the mirrored plane's seats sit against the left edge, so
+      // a name centred on its node lost its first half there. The name now
+      // starts just past the node on the hub's side and runs inward, the
+      // way the lens's own label is pulled.
+      const lx = node.x - Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
+      const ly = node.y - Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
+      label.setAttribute('x', lx.toFixed(1));
+      label.setAttribute('y', ly.toFixed(1));
+      label.setAttribute('text-anchor', 'start');
+      label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
+      label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
     } else {
       // On the node — the numeral's seat, and the swelling name passing the lens.
       label.setAttribute('x', '0');
