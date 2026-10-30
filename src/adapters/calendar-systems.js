@@ -17,7 +17,10 @@
 import { GREGORIAN_RECKONING, JULIAN_RECKONING, daySerial } from '../geometry/day-grid.js';
 import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf, hebrewNumeral, HEBREW_WEEKDAYS, HEBREW_WEEKDAY_LETTERS,
   HEBREW_DECADE_WORDS, HEBREW_CENTURY_WORD, hebrewCenturyLabel, hebrewCenturyPhrase, HEBREW_NAME, HEBREW_NOW } from './calendar-hebrew.js';
-import { DECADE_WORDS, CENTURY_WORD, CENTURY_ERA_BC, ordinal, centuryShortLabel, centuryLongLabel } from './calendar-eras.js';
+import { DECADE_WORDS, CENTURY_WORD, CENTURY_ERA_BC, ordinal, centuryShortLabel, centuryLongLabel,
+  decadeIdOf, decadeDigitOf, centuryIdOf, centuryNumberOf, millenniumIdOf } from './calendar-eras.js';
+import { MAYA_RECKONING, MAYA_EPOCH_SERIAL, MAYA_GROUPING, mayaMonthsOf, mayaMonthKeyOf, tunName, tzolkinLabel, haabLabel,
+  MAYA_WEEKDAY_LETTERS, MAYA_DECADE_WORD, MAYA_CENTURY_WORD, MAYA_NAME, MAYA_NOW } from './calendar-maya.js';
 import { ISLAMIC_RECKONING, islamicMonthsOf, islamicMonthKeyOf, arabicNumeral, ARABIC_WEEKDAYS, ARABIC_WEEKDAY_LETTERS,
   ARABIC_DECADE_WORDS, ARABIC_CENTURY_WORD, arabicOrdinal, arabicCenturyPhrase, ISLAMIC_NAME, ARABIC_NOW } from './calendar-islamic.js';
 import { FRENCH_RECKONING, frenchMonthsOf, frenchMonthKeyOf, frenchDayName, romanNumeral, romanOrdinal, FRENCH_WEEKDAYS,
@@ -69,7 +72,22 @@ const ENGLISH_ERAS = {
   centuryWord: era => (era < 0 ? `${CENTURY_WORD} ${CENTURY_ERA_BC}` : CENTURY_WORD)
 };
 const SEVEN_DAY_WEEKDAY = serial => ((serial + 4) % 7 + 7) % 7;
-function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW', dayWord = null }) {
+// THE RUNGS ABOVE THE YEAR ARE THE SYSTEM'S (O-252): ten years to a decade
+// and a hundred to a century by the digits (O-242) unless the count groups
+// otherwise — the Long Count's twenty tuns to a k'atun, twenty k'atuns to
+// a b'ak'tun. Each gives the bare id of a year's decade and century (and
+// the millennium the ring parts at), the decade's digit for its word, and
+// the century's number for its label.
+const DECIMAL_GROUPING = Object.freeze({
+  decadeKey: decadeIdOf,
+  decadeDigit: decadeDigitOf,
+  centuryKey: centuryIdOf,
+  centuryNumber: centuryNumberOf,
+  millenniumKey: millenniumIdOf
+});
+// A day's parent seat on the days ring: the month's name before the year's.
+const MONTH_THEN_YEAR = (yearName, monthName) => `${String(monthName).toUpperCase()} ${yearName}`;
+function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW', dayWord = null, grouping = DECIMAL_GROUPING, dayTitle = null, monthPhrase = MONTH_THEN_YEAR }) {
   const suffix = id === GREGORIAN ? '' : `@${id}`;
   return Object.freeze({
     id,
@@ -78,8 +96,15 @@ function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearS
     // and its seat on the plane — and its word for the present (the NOW disc)
     nativeName,
     nowWord,
-    // the rings above the years, in the system's own words
+    // the rings above the years, in the system's own words, and by its own count
     ...eras,
+    ...grouping,
+    // What the day's card is headed by, where it is not a weekday (the
+    // Tzolk'in day, O-252); null means the week's name.
+    dayTitle: typeof dayTitle === 'function' ? dayTitle : null,
+    // The parent seat above a day: the month's name and the year's, as the
+    // system phrases them (13.0.14.1 for the Maya).
+    monthPhrase,
     reckoning,
     // the script's direction, the week's names and the grid's header letters
     direction,
@@ -191,6 +216,33 @@ export const SYSTEMS = Object.freeze({
       centuryLabel: n => romanOrdinal(n),
       centuryPhrase: n => frenchCenturyPhrase(n),
       centuryWord: () => FRENCH_CENTURY_WORD
+    }
+  }),
+  // The Long Count: tuns for years from the creation, grouped by twenties;
+  // the Tzolk'in and Haab' naming the days.
+  maya: makeSystem({
+    id: 'maya', name: 'MAYA', reckoning: MAYA_RECKONING,
+    monthsOf: mayaMonthsOf,
+    monthKeyOf: mayaMonthKeyOf,
+    yearName: tunName,
+    yearSort: y => y,
+    noYearZero: false,
+    weekdays: ['', '', '', '', ''],
+    weekdayLetters: MAYA_WEEKDAY_LETTERS,
+    epochSerial: MAYA_EPOCH_SERIAL,
+    nativeName: MAYA_NAME,
+    nowWord: MAYA_NOW,
+    grouping: MAYA_GROUPING,
+    dayTitle: serial => tzolkinLabel(serial),
+    dayWord: (y, m, d) => haabLabel(MAYA_RECKONING.serialOf(y, m, d)),
+    monthPhrase: (yearName, monthName) => `${yearName}.${monthName}`,
+    eras: {
+      decadeShort: () => '',
+      decadeWord: digit => `${MAYA_DECADE_WORD} ${digit}`,
+      centuryLens: n => String(n),
+      centuryLabel: n => `${MAYA_CENTURY_WORD} ${n}`,
+      centuryPhrase: n => `${MAYA_CENTURY_WORD} ${n}`,
+      centuryWord: () => MAYA_CENTURY_WORD
     }
   })
 });

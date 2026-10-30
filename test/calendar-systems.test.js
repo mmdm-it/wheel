@@ -11,6 +11,7 @@ import { GREGORIAN_RECKONING, JULIAN_RECKONING, monthWeeks, monthCells, daySeria
 import { isHebrewLeapYear, daysInHebrewYear, hebrewNumeral } from '../src/adapters/calendar-hebrew.js';
 import * as islamic from '../src/adapters/calendar-islamic.js';
 import * as french from '../src/adapters/calendar-republican.js';
+import * as maya from '../src/adapters/calendar-maya.js';
 const { arabicNumeral } = islamic;
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, buildCalendarDecades, buildCalendarCenturies, getCalendarMonths, getCalendarCenturyDecades, getCalendarDecadeYears } from '../src/adapters/volume-helpers.js';
 
@@ -370,6 +371,109 @@ describe('the French Republican calendar (O-251)', () => {
     assert.equal(now[0].monthName, F.monthsOf(p.year)[p.month - 1].name);
     const first = days.items.find(Boolean);
     assert.ok(first.serial >= F.epochSerial, 'no day before the Republic');
+  });
+});
+
+describe('the Maya calendar (O-252)', () => {
+  const M = SYSTEMS.maya;
+  const lc = (y, m, d) => maya.longCountLabel(maya.longCountOf(daySerial(y, m, d)));
+  it('counts the Long Count from the creation by the standard correlation', () => {
+    assert.equal(lc(-3114, 9, 6), '0.0.0.0.0', '11 August 3114 BC proleptic Gregorian, 6 September Julian');
+    assert.equal(M.epochSerial, daySerial(-3114, 9, 6));
+    assert.equal(lc(2012, 12, 21), '13.0.0.0.0');
+    assert.equal(lc(1970, 1, 1), '12.17.16.7.5');
+    assert.equal(lc(2026, 10, 30), '13.0.14.1.1');
+    assert.equal(maya.MAYA_EPOCH_RD, 584283 - 1721425, 'Julian day 584283');
+  });
+  it('names every day by the Tzolk\'in and the Haab\'', () => {
+    const at = (y, m, d) => `${maya.tzolkinLabel(daySerial(y, m, d))} ${maya.haabLabel(daySerial(y, m, d))}`;
+    assert.equal(at(-3114, 9, 6), '4 Ajaw 8 Kumk\'u');
+    assert.equal(at(2012, 12, 21), '4 Ajaw 3 K\'ank\'in');
+    assert.equal(at(1970, 1, 1), '13 Chikchan 3 K\'ank\'in');
+    assert.equal(at(2026, 10, 30), '8 Imix 14 Sak');
+    // The Calendar Round: the same pair of names returns after 18,980 days.
+    const s = daySerial(2026, 10, 30);
+    assert.equal(at(2026, 10, 30), `${maya.tzolkinLabel(s + 18980)} ${maya.haabLabel(s + 18980)}`);
+    assert.notEqual(maya.tzolkinLabel(s), maya.tzolkinLabel(s + 260 * 3 + 1));
+    assert.equal(M.dayTitle(s), '8 Imix', 'the card is headed by the Tzolk\'in');
+    const d = M.dateOf(s);
+    assert.equal(M.dayWord(d.year, d.month, d.day), '14 Sak', 'and says the Haab\'');
+  });
+  it('is the engine\'s own ladder: tuns for years grouped by twenties, winals for months, k\'ins in rows of five', () => {
+    const s = daySerial(2026, 10, 30);
+    assert.deepEqual(M.dateOf(s), { year: 5214, month: 2, day: 2 }, 'tun 5214 since the creation, winal 1, k\'in 1 — shown from zero');
+    assert.equal(M.yearName(5214), '13.0.14');
+    assert.equal(M.yearName(0), '0.0.0');
+    assert.equal(M.yearName(5200), '13.0.0');
+    assert.equal(M.serialOf(5214, 2, 2), s);
+    assert.equal(M.monthsOf(5214).length, 18);
+    assert.equal(M.monthsOf(5214)[0].name, '0');
+    assert.equal(M.monthsOf(5214)[17].name, '17');
+    assert.equal(M.monthId(5214, 2), '5214:w1@maya');
+    assert.equal(M.dayName(1), '0');
+    assert.equal(M.dayName(20), '19');
+    assert.equal(M.monthPhrase(M.yearName(5214), '1'), '13.0.14.1');
+    // The rungs above the tun.
+    assert.equal(M.decadeKey(5214), 'dd:260');
+    assert.equal(M.decadeDigit(5214), 0, '13.0.14 is in k\'atun 0 of b\'ak\'tun 13');
+    assert.equal(M.decadeWord(M.decadeDigit(5214)), 'K\'ATUN 0');
+    assert.equal(M.decadeDigit(5199), 19, '12.19.19 is in k\'atun 19');
+    assert.equal(M.centuryKey(5214), 'c:13');
+    assert.equal(M.centuryNumber(5214), 13);
+    assert.equal(M.centuryLabel(13, 1), 'B\'AK\'TUN 13');
+    assert.equal(M.centuryLens(13, 1), '13');
+    assert.equal(M.centuryWord(1), 'B\'AK\'TUN');
+    assert.equal(G.decadeKey(2026), 'dd:202', 'the Gregorian keeps its digits');
+    assert.equal(G.centuryNumber(2026), 21);
+    // The grid: four rows of five, no header.
+    const rows = monthCells(5214, 2, maya.MAYA_RECKONING);
+    assert.equal(rows.length, 4);
+    assert.ok(rows.every(r => r.length === 5 && r.every(Boolean)));
+    assert.deepEqual(rows[0].map(c => c.day), [1, 2, 3, 4, 5]);
+    assert.deepEqual(M.weekdayLetters, ['', '', '', '', '']);
+    assert.equal(maya.MAYA_WEEK.rows, 4);
+    const week = maya.MAYA_WEEK;
+    for (let x = s - 30; x <= s + 30; x += 1) {
+      const row = week.rowAt(Math.floor(week.rowOf(x)));
+      assert.ok(x >= row.serial && x < row.serial + 5);
+      assert.equal(week.columnOf(x), x - row.serial);
+    }
+  });
+  it('rings from the creation, grouped by its own count, the present marked', () => {
+    assert.equal(M.nativeName, 'MAYA');
+    assert.equal(M.nowWord, 'BEJLA\'E\'');
+    // The creation is 3114 BC: inside the data's span since O-249 (3999 BC), not the test helper's default.
+    const manifest = calendarManifest(-3999, 3000);
+    const years = buildCalendarYears(manifest, { initialItemId: '5214@maya' });
+    const real = years.items.filter(Boolean);
+    assert.equal(real[0].id, '0@maya', 'the ring starts at the creation');
+    assert.equal(real[0].name, '0.0.0');
+    assert.equal(years.items[years.selectedIndex].name, '13.0.14');
+    assert.ok(real[real.length - 1].yearNumber > 6100, 'and runs to the span\'s end');
+    const decades = buildCalendarDecades(manifest, { initialItemId: 'dd:260@maya' });
+    const dec = decades.items[decades.selectedIndex];
+    assert.equal(dec.name, 'K\'ATUN 0');
+    assert.equal(dec.firstYear, 5200);
+    assert.equal(dec.lastYear, 5219);
+    assert.equal(dec.parentId, 'c:13@maya');
+    assert.equal(decades.items.filter(Boolean).filter(i => i.parentId === 'c:13@maya').length, 20, 'twenty k\'atuns to a b\'ak\'tun');
+    const centuries = buildCalendarCenturies(manifest, { initialItemId: 'c:13@maya' });
+    const cent = centuries.items[centuries.selectedIndex];
+    assert.equal(cent.name, 'B\'AK\'TUN 13');
+    assert.equal(cent.firstYear, 5200);
+    assert.equal(cent.lastYear, 5599);
+    assert.equal(centuries.items.filter(Boolean)[0].name, 'B\'AK\'TUN 0');
+    assert.equal(getCalendarCenturyDecades(manifest, 'c:13@maya').length, 20);
+    assert.equal(getCalendarDecadeYears(manifest, 'dd:260@maya').length, 20);
+    assert.equal(getCalendarMonths(manifest, years.items[years.selectedIndex], 'year').length, 18);
+    const t = todaySerial();
+    const p = M.dateOf(t);
+    const days = buildCalendarDaysCousinChain(manifest, { centerId: M.dayId(p.year, p.month, p.day) });
+    const now = days.items.filter(i => i && i.now);
+    assert.equal(now.length, 1);
+    assert.equal(now[0].name, String(p.day - 1));
+    assert.equal(now[0].dayWord, M.dayWord(p.year, p.month, p.day));
+    assert.ok(days.items.find(Boolean).serial >= M.epochSerial);
   });
 });
 

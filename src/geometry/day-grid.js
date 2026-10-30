@@ -480,7 +480,9 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   if (!rotating) {
     // The weekday header pops on WITH the settled month (S M T W T F S on
     // the top ray) and disappears during the scroll (Howell 2026-07-19).
+    // A week with no names (O-252) draws no header.
     weekdayLetters.forEach((letter, ci) => {
+      if (!letter) return;
       pushCell(lattice.rayAngle(0), ci, letter, false, `wd:${ci}`);
     });
     const rows = monthCells(yearNumber, month, reckoning);
@@ -544,7 +546,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
       // …and stands clear of the fade the whole sky wears while the ring
       // turns (.is-rotating, 0.35), which is what Howell actually saw: the
       // first cut only undimmed the cell, and the turning fade hid that.
-      if (firstOfMonth && nodes.length && nodes[nodes.length - 1].label === '1') nodes[nodes.length - 1].fullStrength = true;
+      if (firstOfMonth && nodes.length && nodes[nodes.length - 1].label === dayLabel(1)) nodes[nodes.length - 1].fullStrength = true;
     }
     return { drawn: nodes.length - before, lo, hi };
   };

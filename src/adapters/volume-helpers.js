@@ -1,4 +1,3 @@
-import { centuryNumberOf, decadeDigitOf, centuryIdOf, decadeIdOf, millenniumIdOf } from './calendar-eras.js';
 import { SYSTEMS, GREGORIAN, systemOf, systemIdOf, splitSystemId, presentIn, todaySerial } from './calendar-systems.js';
 import { projectContainers } from '../core/unit-source.js';
 import { chartedUnitsOf } from './bible-volume.js';
@@ -541,8 +540,7 @@ export const COUSIN_GAP_LINKS = [2, 4, 6, 8];
 // BY THE DIGITS SINCE O-242: the centuries are the reader's levels now, and
 // a gap must fall where the parent seat changes its name — 1999 | 2000, not
 // 2000 | 2001. The era line is still a millennium crossing on both sides.
-const centuryKey = centuryIdOf;
-const millenniumKey = millenniumIdOf;
+// The rungs above the year are the system's (O-252): see calendar-systems.
 
 // Weave sorted items into a chain with cousin gaps. rankKeys: one key
 // function per cousin rank, nearest first (e.g. [year, century, millennium]
@@ -606,9 +604,9 @@ export function buildCalendarYears(manifest, { arrangement, initialItemId, syste
   // gap, a century a second cousin, a millennium a third.
   const yearKey = item => (Number.isFinite(item.yearNumber) ? item.yearNumber : null);
   const items = weaveCousinChain(sorted, [
-    item => { const y = yearKey(item); return y === null ? null : decadeIdOf(y); },
-    item => { const y = yearKey(item); return y === null ? null : centuryKey(y); },
-    item => { const y = yearKey(item); return y === null ? null : millenniumKey(y); }
+    item => { const y = yearKey(item); return y === null ? null : sys.decadeKey(y); },
+    item => { const y = yearKey(item); return y === null ? null : sys.centuryKey(y); },
+    item => { const y = yearKey(item); return y === null ? null : sys.millenniumKey(y); }
   ]);
 
   return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
@@ -625,30 +623,30 @@ export function buildCalendarDecades(manifest, { initialItemId, system = null } 
   const sorted = [];
   let last = null;
   yearNumbersFor(manifest, sys).forEach(y => {
-    const bare = decadeIdOf(y);
+    const bare = sys.decadeKey(y);
     if (last && last.bare === bare) { last.lastYear = y; return; }
-    const short = typeof sys.decadeShort === 'function' ? sys.decadeShort(decadeDigitOf(y), y) : '';
+    const short = typeof sys.decadeShort === 'function' ? sys.decadeShort(sys.decadeDigit(y), y) : '';
     last = {
       id: sys.decadeId(bare),
       bare,
-      name: sys.decadeWord(decadeDigitOf(y)),
+      name: sys.decadeWord(sys.decadeDigit(y)),
       ...(short ? { short } : {}),
       level: 'decade',
-      decadeDigit: decadeDigitOf(y),
-      centuryNumber: centuryNumberOf(y),
+      decadeDigit: sys.decadeDigit(y),
+      centuryNumber: sys.centuryNumber(y),
       era: y < 0 ? -1 : 1,
       firstYear: y,
       lastYear: y,
-      parentId: sys.centuryId(centuryIdOf(y)),
+      parentId: sys.centuryId(sys.centuryKey(y)),
       system: sys.id,
-      now: decadeIdOf(present.yearNumber) === bare
+      now: sys.decadeKey(present.yearNumber) === bare
     };
     sorted.push(last);
   });
   sorted.forEach(it => { delete it.bare; });
   const items = weaveCousinChain(sorted, [
-    item => centuryIdOf(item.firstYear),
-    item => millenniumIdOf(item.firstYear)
+    item => sys.centuryKey(item.firstYear),
+    item => sys.millenniumKey(item.firstYear)
   ]);
   return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
 }
@@ -661,25 +659,25 @@ export function buildCalendarCenturies(manifest, { initialItemId, system = null 
   const sorted = [];
   let last = null;
   yearNumbersFor(manifest, sys).forEach(y => {
-    const bare = centuryIdOf(y);
+    const bare = sys.centuryKey(y);
     if (last && last.bare === bare) { last.lastYear = y; return; }
     last = {
       id: sys.centuryId(bare),
       bare,
-      name: sys.centuryLabel(centuryNumberOf(y), y < 0 ? -1 : 1),
+      name: sys.centuryLabel(sys.centuryNumber(y), y < 0 ? -1 : 1),
       level: 'century',
-      centuryNumber: centuryNumberOf(y),
+      centuryNumber: sys.centuryNumber(y),
       era: y < 0 ? -1 : 1,
       firstYear: y,
       lastYear: y,
       parentId: null,
       system: sys.id,
-      now: centuryIdOf(present.yearNumber) === bare
+      now: sys.centuryKey(present.yearNumber) === bare
     };
     sorted.push(last);
   });
   sorted.forEach(it => { delete it.bare; });
-  const items = weaveCousinChain(sorted, [item => millenniumIdOf(item.firstYear)]);
+  const items = weaveCousinChain(sorted, [item => sys.millenniumKey(item.firstYear)]);
   return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
 }
 
@@ -702,7 +700,7 @@ function groupedSkies(manifest, sys) {
     });
     buildCalendarYears(manifest, { system: sys }).items.forEach(it => {
       if (!it || !Number.isFinite(it.yearNumber)) return;
-      const d = sys.decadeId(decadeIdOf(it.yearNumber));
+      const d = sys.decadeId(sys.decadeKey(it.yearNumber));
       if (!g.yearsOf.has(d)) g.yearsOf.set(d, []);
       g.yearsOf.get(d).push(it);
     });
@@ -748,8 +746,8 @@ export function buildCalendarMonthsCousinChain(manifest, { initialItemId, system
 
   const items = weaveCousinChain(sorted, [
     item => (Number.isFinite(item.yearNumber) ? item.yearNumber : null),
-    item => (Number.isFinite(item.yearNumber) ? centuryKey(item.yearNumber) : null),
-    item => (Number.isFinite(item.yearNumber) ? millenniumKey(item.yearNumber) : null)
+    item => (Number.isFinite(item.yearNumber) ? sys.centuryKey(item.yearNumber) : null),
+    item => (Number.isFinite(item.yearNumber) ? sys.millenniumKey(item.yearNumber) : null)
   ]);
 
   return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
@@ -840,8 +838,8 @@ export function buildCalendarDaysCousinChain(manifest, { centerId, system = null
   const items = weaveCousinChain(sorted, [
     item => `${item.yearNumber}:${item.monthNumber}`,
     item => item.yearNumber,
-    item => centuryKey(item.yearNumber),
-    item => millenniumKey(item.yearNumber)
+    item => sys.centuryKey(item.yearNumber),
+    item => sys.millenniumKey(item.yearNumber)
   ]);
 
   return { items, selectedIndex: selectIndexIn(items, resolvedCenterId), preserveOrder: true };

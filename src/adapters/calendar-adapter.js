@@ -3,7 +3,6 @@ import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths,
   getCalendarWeekdayNames, getCalendarWeekdayLetters, buildCalendarDecades, buildCalendarCenturies,
   getCalendarCenturyDecades, getCalendarDecadeYears } from './volume-helpers.js';
-import { centuryIdOf, decadeIdOf, decadeDigitOf } from './calendar-eras.js';
 import { daySerial, serialToDate } from '../geometry/day-grid.js';
 import { SYSTEMS, GREGORIAN, systemOf, systemIdOf, todaySerial } from './calendar-systems.js';
 import { localSunTimes } from '../geometry/solar.js';
@@ -239,7 +238,9 @@ export function detailFor(selected, manifest) {
     // otherwise (the French décade, O-251).
     const daySystem = systemOf(systemIdOf(id));
     const dow = typeof daySystem.weekdayOf === 'function' ? daySystem.weekdayOf(serial) : ((serial + 4) % 7 + 7) % 7;
-    const weekday = (daySystem.id !== GREGORIAN && daySystem.weekdays?.[dow]) || getCalendarWeekdayNames(manifest)[dow] || '';
+    // A count with no week heads the card otherwise (the Tzolk'in day, O-252).
+    const weekday = (typeof daySystem.dayTitle === 'function' && daySystem.dayTitle(serial))
+      || (daySystem.id !== GREGORIAN && daySystem.weekdays?.[dow]) || getCalendarWeekdayNames(manifest)[dow] || '';
     if (!weekday) return null;
 
     // The wall calendar's day cell, as a card (docs/DETAIL_SECTOR_LOADS.md).
@@ -405,8 +406,8 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       if (!Number.isFinite(y)) return false;
       const sys = systemOf(selected?.system);
       const { items, selectedIndex } = toDecades
-        ? buildCalendarDecades(manifest, { initialItemId: sys.decadeId(decadeIdOf(y)) })
-        : buildCalendarCenturies(manifest, { initialItemId: sys.centuryId(centuryIdOf(y)) });
+        ? buildCalendarDecades(manifest, { initialItemId: sys.decadeId(sys.decadeKey(y)) })
+        : buildCalendarCenturies(manifest, { initialItemId: sys.centuryId(sys.centuryKey(y)) });
       calendarMode = toDecades ? 'decade' : 'century';
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
@@ -430,11 +431,13 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       const y = item.yearNumber;
       if (!Number.isFinite(y) || !item.monthName) return '';
       const yearLabel = item.yearName || (y < 0 ? `${Math.abs(y)} BC` : String(y));
-      return `${String(item.monthName).toUpperCase()} ${yearLabel}`;
+      // As the day's own system phrases it (13.0.14.1 for the Maya, O-252).
+      return systemOf(item.system).monthPhrase(yearLabel, item.monthName);
     }
     // Years in the ring: the decade's word; decades: the century's (O-242).
     if (calendarMode === 'year') {
-      return item && Number.isFinite(item.yearNumber) ? systemOf(item.system).decadeWord(decadeDigitOf(item.yearNumber)) : '';
+      const sys = systemOf(item?.system);
+      return item && Number.isFinite(item.yearNumber) ? sys.decadeWord(sys.decadeDigit(item.yearNumber)) : '';
     }
     if (calendarMode === 'decade') {
       return item && Number.isFinite(item.centuryNumber) ? systemOf(item.system).centuryPhrase(item.centuryNumber, item.era) : '';
@@ -513,8 +516,8 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     if (calendarMode === 'day') chain = getCalendarDayChain(next.dayId(d.year, d.month, d.day));
     else if (calendarMode === 'month') chain = monthChain(next.monthId(d.year, d.month));
     else if (calendarMode === 'year') chain = buildCalendarYears(manifest, { arrangement: options?.arrangement, initialItemId: next.yearId(d.year) });
-    else if (calendarMode === 'decade') chain = buildCalendarDecades(manifest, { initialItemId: next.decadeId(decadeIdOf(d.year)) });
-    else if (calendarMode === 'century') chain = buildCalendarCenturies(manifest, { initialItemId: next.centuryId(centuryIdOf(d.year)) });
+    else if (calendarMode === 'decade') chain = buildCalendarDecades(manifest, { initialItemId: next.decadeId(next.decadeKey(d.year)) });
+    else if (calendarMode === 'century') chain = buildCalendarCenturies(manifest, { initialItemId: next.centuryId(next.centuryKey(d.year)) });
     if (chain?.items?.length) app.setPrimaryItems(chain.items, chain.selectedIndex, true);
   };
   onCalendarChosen(id => reexpress(systemOf(id)));
@@ -617,7 +620,7 @@ const CALENDARS = [
   { id: 'hebrew', name: 'HEBREW', live: true },
   { id: 'islamic', name: 'ISLAMIC', live: true },
   { id: 'republican', name: 'FRENCH REPUBLICAN', live: true },
-  { id: 'maya', name: 'MAYA', live: false },
+  { id: 'maya', name: 'MAYA', live: true },
   { id: 'chinese', name: 'CHINESE', live: false }
 ];
 const calendarById = id => CALENDARS.find(c => c.id === id) || null;

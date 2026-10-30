@@ -29,7 +29,7 @@ describe('the calendars plane (O-244)', () => {
     assert.equal(planes[0].id, 'secondary');
     assert.equal(planes[0].mirrored, true);
   });
-  it('speaks the Gregorian, the Julian (O-245), the Hebrew (O-248), the Islamic (O-250) and the French Republican (O-251); the others are hollow, inert seats until their arithmetic lands', () => {
+  it('speaks the Gregorian, the Julian (O-245), the Hebrew (O-248), the Islamic (O-250), the French Republican (O-251) and the Maya (O-252); the Chinese is a hollow, inert seat until its arithmetic lands', () => {
     const [plane] = calendarStrata();
     const items = plane.items();
     assert.deepEqual(items, CALENDAR_SYSTEMS.map(c => c.id));
@@ -41,7 +41,7 @@ describe('the calendars plane (O-244)', () => {
     assert.equal(plane.label('hebrew'), 'עברי', 'its seat in its own script');
     assert.equal(plane.label('islamic'), 'هجري');
     const live = CALENDAR_SYSTEMS.filter(c => c.live).map(c => c.id);
-    assert.deepEqual(live, ['gregorian', 'julian', 'hebrew', 'islamic', 'republican']);
+    assert.deepEqual(live, ['gregorian', 'julian', 'hebrew', 'islamic', 'republican', 'maya']);
     for (const id of live) {
       assert.equal(plane.classFor(id), '', id);
       assert.equal(plane.inert(id), false, id);
