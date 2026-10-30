@@ -606,6 +606,10 @@ export const calendarStrata = () => [
     selected: () => chosenCalendar,
     classFor: id => (calendarById(id)?.live ? '' : 'is-coming'),
     inert: id => !calendarById(id)?.live,
+    // THE WATERMARK (O-246): any calendar but the Gregorian — "the standard
+    // calendar, it doesn't need a watermark" — writes its name across the
+    // glass while it is chosen.
+    watermark: id => (id === GREGORIAN ? '' : (calendarById(id)?.name || '')),
     select: id => {
       const c = calendarById(id);
       if (!c || !c.live) return false;

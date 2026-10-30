@@ -619,6 +619,28 @@ let detailSectorVisible = false;
 let cornerIconHold = false;
 let globeSpinMuted = false; // the crossing swap reveals the globe STATIC
 const dimensionButton = typeof document !== 'undefined' ? document.getElementById('dimension-button') : null;
+// THE WATERMARK (O-246): a plane whose choice must not go unnoticed says so
+// (`watermark(selected)` → the word, or '' for the one that needs none);
+// the word stands across the glass until the choice changes.
+const watermarkEl = typeof document !== 'undefined' ? document.getElementById('watermark') : null;
+function updateWatermark() {
+  if (!watermarkEl) return;
+  let text = '';
+  for (const ch of CHOOSERS) {
+    if (typeof ch.watermark !== 'function') continue;
+    const word = ch.watermark(ch.selected());
+    if (word) text = String(word);
+  }
+  watermarkEl.textContent = text;
+  watermarkEl.hidden = !text;
+  if (!text) return;
+  // Fitted to the word: the diagonal is the room it has, the long side a
+  // ceiling; the glyph width is taken as 0.68 em of a bold face.
+  const w = viewport?.width || window.innerWidth || 360;
+  const h = viewport?.height || window.innerHeight || 655;
+  const size = Math.min(0.42 * Math.min(w, h), (0.9 * Math.hypot(w, h)) / (text.length * 0.68 + 0.5));
+  try { watermarkEl.style.setProperty('--watermark-size', `${size.toFixed(1)}px`); } catch (_) { /* stub DOM */ }
+}
 // The button's wireframe globe, drawn by code so it can truly turn: once on
 // arrival, and once per press — settling exactly as the stratum recedes.
 // THE VOLUME MAY WEAR ITS OWN EMBLEM HERE (O-244): remounted at each boot.
@@ -1456,7 +1478,7 @@ function springbackStrata(fromCenter, toIndex, ch, items) {
   if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; }
   const commit = () => {
     renderFrontStratumAt(toIndex, false);
-    if (ch) ch.select(items[toIndex]);
+    if (ch) { ch.select(items[toIndex]); updateWatermark(); }
     // The preview has become the truth: drop it so every plane reads the
     // committed state again. The settle lands on the node the reader was
     // already watching, so nothing on screen changes at this instant.
@@ -4396,6 +4418,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     ? mountDimensionEmblem(dimensionButton, splashDeclared.imageUrl, gapEmblemAspect)
     : mountDimensionGlobe(dimensionButton);
   refreshDimensionButton(); // show the globe only where a dimension exists
+  updateWatermark();
   // The dividers only in volumes that declare search, only while browsing —
   // and never during the reveal (the blocker isn't up yet at this point, so
   // gate on the decision itself; the splash's finally() brings them in).

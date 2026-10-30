@@ -361,6 +361,32 @@ svg :focus-visible {
    the more faint level and stay there... it can even be slightly dimmer than
    it has been"). No hover, no pressed state, no swell — one size, one light. */
 #dimension-button, #dimension-button:hover, #dimension-button[aria-pressed="true"] { opacity: 0.7; }
+/* THE WATERMARK (O-246, Howell 2026-10-30: "a persistent watermark boldly
+   displayed to alert the user that they are not looking at a Gregorian
+   calendar"). The chosen plane's word, as he drew it: huge, translucent,
+   running up the glass from lower left to upper right, under nothing and
+   over everything, untouchable. Its size is set by the host to the word's
+   length, so FRENCH REPUBLICAN fits where JULIAN fills. */
+#watermark {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+  z-index: 255; /* over the strata, under the dimension button */
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-weight: 700;
+  font-size: var(--watermark-size, 26vmin);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  color: var(--color-text);
+  opacity: var(--watermark-opacity, 0.26);
+  transform: rotate(-60deg);
+}
+#watermark[hidden] { display: none; }
+
 /* GONE WHILE THE RING TURNS (O-244, Howell 2026-10-30): the host tells the
    button when the ring is moving; it fades out for the turn and back at the
    settle, untouchable in between. */
