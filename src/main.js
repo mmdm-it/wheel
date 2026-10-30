@@ -162,7 +162,8 @@ import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
-import { mountDimensionGlobe } from './view/dimension-globe.js';
+import { mountDimensionGlobe, mountDimensionEmblem } from './view/dimension-globe.js';
+import { labelRotationDeg } from './view/node-appearance.js';
 import { mountSearchDividers } from './view/search-dividers.js';
 import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
 
@@ -319,7 +320,7 @@ const STRATA_BLURS = [0, 1, 2];         // px local, same index — front sharp,
 // screen edge at each recede scale — the deeper the ring, the more of the
 // straight chain climbs into view (Howell 2026-07-21). Level 0 = arc-only.
 const STRATA_TANGENT_SPANS = [0, 1.1, 2.2];
-const CHOOSERS = [
+const BRIDGE_CHOOSERS = [
   // THE STRATA INVERTED (Howell 2026-07-30). The z-axis used to disagree with
   // itself: the SEQUENCE was right (language, then edition — an edition's
   // options depend on the language) but the DEPTH was backwards, seating the
@@ -400,6 +401,13 @@ const CHOOSERS = [
       return ok;
     } }
 ];
+// THE VOLUME'S OWN STRATA (O-244, Howell 2026-10-30). The two planes above
+// are the dimension bridge's — languages and editions of a text.
+// A volume that declares `strata` (a function returning choosers of the same
+// shape) brings its own planes instead, and the button shows wherever one
+// of them has something to offer. Reassigned at each volume boot.
+let CHOOSERS = BRIDGE_CHOOSERS;
+let volumeStrata = null;
 let strataFront = 0;                       // 0 = primary at front; -1 = the basement (O-126)
 // ── THE BASEMENT — the Zero Stratum (O-126, Howell 2026-09-14) ─────────────
 // "If you think of the app as a building, the Zero Stratum is the basement,
@@ -613,7 +621,8 @@ let globeSpinMuted = false; // the crossing swap reveals the globe STATIC
 const dimensionButton = typeof document !== 'undefined' ? document.getElementById('dimension-button') : null;
 // The button's wireframe globe, drawn by code so it can truly turn: once on
 // arrival, and once per press — settling exactly as the stratum recedes.
-const dimensionGlobe = mountDimensionGlobe(dimensionButton);
+// THE VOLUME MAY WEAR ITS OWN EMBLEM HERE (O-244): remounted at each boot.
+let dimensionArt = mountDimensionGlobe(dimensionButton);
 // The navigator's dividers — the search instrument's icon, sharing the
 // globe's corner: dividers while browsing, globe at a leaf.
 const searchButton = typeof document !== 'undefined' ? document.getElementById('search-button') : null;
@@ -1720,7 +1729,9 @@ function transitionStrata(fromFront, toFront) {
   strataAnim = { cancel: () => { cancelled = true; cancelAnimationFrame(raf); } };
 }
 
-const dimensionAvailable = () => dimensionBridge.languagesAvailable().length > 0;
+const dimensionAvailable = () => (volumeStrata
+  ? CHOOSERS.some(ch => (ch.items() || []).length > 0)
+  : dimensionBridge.languagesAvailable().length > 0);
 
 // EVERY language shows a tertiary stratum, even a single-translation one: the
 // reader wants to know WHICH translation they're reading — the Vulgate is a
@@ -2087,12 +2098,12 @@ function updateDimensionButton() {
   const show = dimensionAvailable();
   const arriving = show && dimensionButton.hidden;
   dimensionButton.hidden = !show;
-  if (show) placeThumb();   // measured while visible (O-126)
+  if (show) { placeThumb(); orientDimensionArt(); }   // measured while visible (O-126)
   // The entrance: the globe appears with a quick turn when the detail
   // sector brings it in (Howell 2026-07-22) — EXCEPT when a wipe reveals
   // it: then it arrives static, part of the image, and says hello only
   // once the sweep completes (the wipe block's onDone).
-  if (arriving && dimensionGlobe && !globeSpinMuted) dimensionGlobe.spin();
+  if (arriving && dimensionArt && !globeSpinMuted) dimensionArt.spin();
   if (!show && isStrataOpen()) resetStrata();
 }
 function refreshDimensionButton() {
@@ -2139,6 +2150,16 @@ const buttonPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'func
 const notchPx = () => buttonPx() * NOTCH_RATIO;
 // How far ABOVE the CSS rest the thumb sits at floor position p (fractional while held).
 const thumbRise = p => (p - minStrataFront() + SLIDER_OVERRUN) * notchPx() - BASEMENT_DROP * buttonPx();
+// The emblem lies on its ray to the hub (O-244), measured where the button
+// stands; the globe ignores the call.
+function orientDimensionArt() {
+  if (!dimensionButton || typeof dimensionArt?.orient !== 'function') return;
+  if (typeof dimensionButton.getBoundingClientRect !== 'function') return;
+  const r = dimensionButton.getBoundingClientRect();
+  if (!(r.width > 0)) return;
+  const arc = getArcParameters(viewport);
+  dimensionArt.orient(labelRotationDeg(Math.atan2(r.top + r.height / 2 - arc.hubY, r.left + r.width / 2 - arc.hubX)));
+}
 function placeThumb() {
   if (!dimensionButton || slide) return;   // a held thumb follows the finger, not the state
   try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(strataFront)).toFixed(1)}px`); } catch (_) { /* stub DOM */ }
@@ -4362,6 +4383,18 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       if (first) dimensionBridge.setTranslation(first);
     }
   }
+  // THE VOLUME'S OWN STRATA AND ITS OWN BUTTON (O-244): the planes behind
+  // the button are the volume's if it declares them, the bridge's otherwise;
+  // and the button wears the volume's emblem — the card's artwork, lying on
+  // its ray to the hub like everything in the sky — where the volume asks
+  // for it, the globe everywhere else. The old planes are put away first,
+  // under their own ids.
+  resetStrata();
+  volumeStrata = typeof config?.strata === 'function' ? (config.strata() || null) : null;
+  CHOOSERS = Array.isArray(volumeStrata) && volumeStrata.length ? volumeStrata : BRIDGE_CHOOSERS;
+  dimensionArt = (config?.dimensionEmblem === true && splashDeclared?.imageUrl)
+    ? mountDimensionEmblem(dimensionButton, splashDeclared.imageUrl, gapEmblemAspect)
+    : mountDimensionGlobe(dimensionButton);
   refreshDimensionButton(); // show the globe only where a dimension exists
   // The dividers only in volumes that declare search, only while browsing —
   // and never during the reveal (the blocker isn't up yet at this point, so
@@ -4900,8 +4933,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         },
         onDone: () => {
           cornerIconHold = false; // safety — onCross normally cleared it
-          if (transit.mode !== 'return' && dimensionButton && !dimensionButton.hidden && dimensionGlobe) {
-            dimensionGlobe.spin(); // "I'm here, hello"
+          if (transit.mode !== 'return' && dimensionButton && !dimensionButton.hidden && dimensionArt) {
+            dimensionArt.spin(); // "I'm here, hello"
           }
         }
       });

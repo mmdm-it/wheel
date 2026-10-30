@@ -512,3 +512,38 @@ export const calendarAdapter = {
     drillByTap: true
   }
 };
+
+// THE CALENDARS STRATUM (O-244, Howell 2026-10-30): "the secondary stratum
+// taking the user through different cultural calendars". One plane, in the
+// Bible's secondary geometry (the mirrored ring), holding the calendars the
+// volume can speak. The Gregorian is the one it speaks today; the rest are
+// placeholder seats — drawn hollow, inert, the snap passes them — until each
+// one's arithmetic lands and turns its seat live. The order is the order of
+// arrival I proposed: the ones with exact rules first, the astronomical
+// Chinese calendar last.
+const CALENDARS = [
+  { id: 'gregorian', name: 'GREGORIAN', live: true },
+  { id: 'julian', name: 'JULIAN', live: false },
+  { id: 'hebrew', name: 'HEBREW', live: false },
+  { id: 'islamic', name: 'ISLAMIC', live: false },
+  { id: 'republican', name: 'FRENCH REPUBLICAN', live: false },
+  { id: 'maya', name: 'MAYA', live: false },
+  { id: 'chinese', name: 'CHINESE', live: false }
+];
+const calendarById = id => CALENDARS.find(c => c.id === id) || null;
+let chosenCalendar = 'gregorian';
+export const calendarStrata = () => [
+  { id: 'secondary', mirrored: true,
+    items: () => CALENDARS.map(c => c.id),
+    label: id => calendarById(id)?.name || id,
+    selected: () => chosenCalendar,
+    classFor: id => (calendarById(id)?.live ? '' : 'is-coming'),
+    inert: id => !calendarById(id)?.live,
+    select: id => {
+      const c = calendarById(id);
+      if (!c || !c.live) return false;
+      chosenCalendar = id;
+      return true;
+    } }
+];
+export const CALENDAR_SYSTEMS = CALENDARS.map(c => ({ ...c }));

@@ -140,3 +140,44 @@ export function mountDimensionGlobe(button) {
     }
   };
 }
+
+// THE VOLUME'S OWN EMBLEM AS THE BUTTON (O-244, Howell 2026-10-30: "the
+// dimension button should be the logo … just the artwork itself with no
+// stroke and no fill circle, but it should be rotated to align with the
+// other child pyramid elements, angled toward the hub"). The artwork alone
+// in the globe's seat; the caller tells it the ray it lies on (orient), as
+// the host tells every label in the sky. It has no spin — a logo does not
+// turn — so the globe's entrance and press cues are quietly nothing here.
+export function mountDimensionEmblem(button, url, aspect = null) {
+  if (!button || typeof document === 'undefined' || !url) return null;
+  const svg = el('svg', { viewBox: '-50 -50 100 100', 'aria-hidden': 'true', focusable: 'false', overflow: 'visible' });
+  const g = el('g', { transform: 'rotate(0)' });
+  svg.appendChild(g);
+  const image = el('image', { href: url, preserveAspectRatio: 'xMidYMid meet' });
+  g.appendChild(image);
+  const fit = ratio => {
+    // The long side fills the button; the short side follows the art's
+    // own proportions, so the artwork is never squeezed into a square.
+    const r = Number.isFinite(ratio) && ratio > 0 ? ratio : 2.5;
+    const w = 100, h = r >= 1 ? 100 / r : 100;
+    const ww = r >= 1 ? w : 100 * r;
+    image.setAttribute('x', String(-ww / 2)); image.setAttribute('y', String(-h / 2));
+    image.setAttribute('width', String(ww)); image.setAttribute('height', String(h));
+  };
+  fit(aspect);
+  if (!Number.isFinite(aspect) && typeof Image === 'function') {
+    try {
+      const probe = new Image();
+      probe.onload = () => { if (probe.naturalHeight > 0) fit(probe.naturalWidth / probe.naturalHeight); };
+      probe.src = url;
+    } catch (_) { /* a stub DOM */ }
+  }
+  while (button.firstChild) button.removeChild(button.firstChild);
+  button.appendChild(svg);
+  return {
+    spin() { /* a logo does not turn */ },
+    // The ray the artwork lies on, in degrees — the sky's own convention
+    // (labelRotationDeg of the ray angle from the hub).
+    orient(deg) { if (Number.isFinite(deg)) g.setAttribute('transform', `rotate(${deg.toFixed(2)})`); }
+  };
+}

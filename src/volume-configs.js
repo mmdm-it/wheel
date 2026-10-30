@@ -27,7 +27,7 @@ import { setUnitTextLoader } from './adapters/volume-helpers.js';
 // rather than the world.
 const BIBLE_VOLUME_BASE = './data/gutenberg';
 const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
-import { calendarAdapter } from './adapters/calendar-adapter.js';
+import { calendarAdapter, calendarStrata } from './adapters/calendar-adapter.js';
 import { buildCalendarDecades, buildCalendarCenturies } from './adapters/volume-helpers.js';
 import { CENTURY_WORD, CENTURY_ERA_BC, centuryShortLabel, ordinal, decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
 
@@ -476,6 +476,11 @@ const volumeConfigs = {
     captionAfter: true,
     // The red disc that turns the ring back to the present (O-243).
     nowButton: 'NOW',
+    // THE DIMENSION (O-244): the volume's own stratum — a plane of calendars
+    // — behind the dimension button, which here is the volume's emblem (the
+    // card's artwork) rather than the globe.
+    strata: calendarStrata,
+    dimensionEmblem: true,
     id: 'calendar',
     paths: ['/calendar'],
     manifestPath: './data/calendar/manifest.json',
