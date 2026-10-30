@@ -18,6 +18,8 @@ import { GREGORIAN_RECKONING, JULIAN_RECKONING, daySerial } from '../geometry/da
 import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf, hebrewNumeral, HEBREW_WEEKDAYS, HEBREW_WEEKDAY_LETTERS,
   HEBREW_DECADE_WORDS, HEBREW_CENTURY_WORD, hebrewCenturyLabel, hebrewCenturyPhrase, HEBREW_NAME, HEBREW_NOW } from './calendar-hebrew.js';
 import { DECADE_WORDS, CENTURY_WORD, CENTURY_ERA_BC, ordinal, centuryShortLabel, centuryLongLabel } from './calendar-eras.js';
+import { ISLAMIC_RECKONING, islamicMonthsOf, islamicMonthKeyOf, arabicNumeral, ARABIC_WEEKDAYS, ARABIC_WEEKDAY_LETTERS,
+  ARABIC_DECADE_WORDS, ARABIC_CENTURY_WORD, arabicOrdinal, arabicCenturyPhrase, ISLAMIC_NAME, ARABIC_NOW } from './calendar-islamic.js';
 
 export const GREGORIAN = 'gregorian';
 const SUFFIX = /^(.*)@([a-z]+)$/;
@@ -128,6 +130,29 @@ export const SYSTEMS = Object.freeze({
       centuryLabel: n => hebrewCenturyLabel(n),
       centuryPhrase: n => hebrewCenturyPhrase(n),
       centuryWord: () => HEBREW_CENTURY_WORD
+    }
+  }),
+  // Anno Hegirae: counted from the Hijra, no era line; the tables' calendar,
+  // which the sighted moon may lead or trail by a day.
+  islamic: makeSystem({
+    id: 'islamic', name: 'ISLAMIC', reckoning: ISLAMIC_RECKONING,
+    monthsOf: islamicMonthsOf,
+    monthKeyOf: islamicMonthKeyOf,
+    yearName: arabicNumeral,
+    yearSort: y => y,
+    noYearZero: false,
+    direction: 'rtl',
+    weekdays: ARABIC_WEEKDAYS,
+    weekdayLetters: ARABIC_WEEKDAY_LETTERS,
+    epochSerial: ISLAMIC_RECKONING.serialOf(1, 1, 1),
+    nativeName: ISLAMIC_NAME,
+    nowWord: ARABIC_NOW,
+    eras: {
+      decadeWord: digit => ARABIC_DECADE_WORDS[digit] || '',
+      centuryLens: n => arabicOrdinal(n),
+      centuryLabel: n => arabicOrdinal(n),
+      centuryPhrase: n => arabicCenturyPhrase(n),
+      centuryWord: () => ARABIC_CENTURY_WORD
     }
   })
 });

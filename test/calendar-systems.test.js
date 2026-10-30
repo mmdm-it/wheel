@@ -9,6 +9,8 @@ import fs from 'node:fs';
 import { SYSTEMS, systemOf, splitSystemId, systemIdOf, presentIn, todaySerial } from '../src/adapters/calendar-systems.js';
 import { GREGORIAN_RECKONING, JULIAN_RECKONING, monthWeeks, monthCells, daySerial, serialToDate } from '../src/geometry/day-grid.js';
 import { isHebrewLeapYear, daysInHebrewYear, hebrewNumeral } from '../src/adapters/calendar-hebrew.js';
+import * as islamic from '../src/adapters/calendar-islamic.js';
+const { arabicNumeral } = islamic;
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, buildCalendarDecades, buildCalendarCenturies, getCalendarMonths, getCalendarCenturyDecades, getCalendarDecadeYears } from '../src/adapters/volume-helpers.js';
 
 import { calendarManifest } from './helpers/calendar-manifest.js';
@@ -184,6 +186,66 @@ describe('the Hebrew calendar (O-248)', () => {
     assert.equal(now[0].yearName, hebrewNumeral(p.year));
     assert.equal(now[0].name, hebrewNumeral(p.day));
     assert.equal(monthWeeks(5787, 8, H.reckoning).flat().filter(Boolean).length, 30, 'Heshvan 5787 is long');
+  });
+});
+
+describe('the Islamic calendar (O-250)', () => {
+  const I = SYSTEMS.islamic;
+  const at = (y, m, d) => I.dateOf(daySerial(y, m, d));
+  it('counts from the Hijra: the epoch, Ramadan 1447, 1970, today', () => {
+    assert.deepEqual(at(622, 7, 16), { year: 1, month: 1, day: 1 }, '1 Muharram 1 is 16 July 622');
+    assert.equal(((I.serialOf(1, 1, 1) + 4) % 7 + 7) % 7, 5, 'a Friday');
+    assert.deepEqual(at(2026, 2, 18), { year: 1447, month: 9, day: 1 }, '1 Ramadan 1447');
+    assert.deepEqual(I.dateOf(0), { year: 1389, month: 10, day: 22 }, '1 January 1970');
+    assert.deepEqual(at(2026, 10, 30), { year: 1448, month: 5, day: 18 });
+    assert.ok(Number.isFinite(I.epochSerial));
+    assert.equal(I.epochSerial, daySerial(622, 7, 16));
+  });
+  it('keeps the year: 354 or 355 days, eleven leap years in thirty, months of 30 and 29 by turns', () => {
+    const { isIslamicLeapYear, daysInIslamicYear } = islamic;
+    assert.equal(isIslamicLeapYear(1447), true);
+    assert.equal(isIslamicLeapYear(1448), false);
+    let leaps = 0;
+    for (let y = 1441; y <= 1470; y += 1) if (isIslamicLeapYear(y)) leaps += 1;
+    assert.equal(leaps, 11);
+    assert.equal(daysInIslamicYear(1447), 355);
+    assert.equal(daysInIslamicYear(1448), 354);
+    const months = I.monthsOf(1447);
+    assert.deepEqual(months.map(m => m.days), [30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 30]);
+    assert.deepEqual(I.monthsOf(1448).map(m => m.days).slice(-1), [29]);
+    assert.equal(months[8].name, 'رمضان');
+    assert.equal(months[0].key, 'muharram');
+    const first = I.serialOf(1447, 1, 1);
+    for (let s = first; s < first + 355; s += 5) {
+      const d = I.dateOf(s);
+      assert.equal(I.serialOf(d.year, d.month, d.day), s);
+      assert.equal(d.year, 1447);
+    }
+  });
+  it('writes Arabic: numerals, the week, the rings above the years, its name and its word for now, right to left', () => {
+    assert.equal(I.direction, 'rtl');
+    assert.equal(I.dayName(19), '١٩');
+    assert.equal(I.yearName(1448), '١٤٤٨');
+    assert.equal(I.weekdays[5], 'الجمعة');
+    assert.deepEqual(I.weekdayLetters, ['ح', 'ن', 'ث', 'ر', 'خ', 'ج', 'س']);
+    assert.equal(I.decadeWord(8), 'الثمانينيات');
+    assert.equal(I.centuryLens(15, 1), 'الخامس عشر');
+    assert.equal(I.centuryPhrase(15, 1), 'القرن الخامس عشر');
+    assert.equal(I.centuryWord(1), 'القرن');
+    assert.equal(I.centuryLens(31, 1), '٣١', 'beyond the words, the number');
+    assert.equal(I.nativeName, 'هجري');
+    assert.equal(I.nowWord, 'الآن');
+    const years = buildCalendarYears(manifest, { initialItemId: '1448@islamic' });
+    const real = years.items.filter(Boolean);
+    assert.equal(real[0].id, '1@islamic', 'the ring starts at the Hijra');
+    assert.equal(years.items[years.selectedIndex].name, '١٤٤٨');
+    const t = todaySerial();
+    const p = I.dateOf(t);
+    const days = buildCalendarDaysCousinChain(manifest, { centerId: I.dayId(p.year, p.month, p.day) });
+    const now = days.items.filter(i => i && i.now);
+    assert.equal(now.length, 1);
+    assert.equal(now[0].name, arabicNumeral(p.day));
+    assert.equal(now[0].monthName, I.monthsOf(p.year)[p.month - 1].name);
   });
 });
 
