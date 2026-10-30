@@ -89,6 +89,21 @@ export function getParentSeat(viewport, magnifierRadius = null) {
   };
 }
 
+// THE WAY BACK TO THE PRESENT (O-243, Howell 2026-10-30): a red disc with a
+// yellow word that turns the ring to the item living through this moment,
+// at whatever level the ring shows. Seated where he drew it — the outer side
+// of the ring, lower left, a little above the parent label — as fractions of
+// the viewport, in the parent seat's own dialect. It is the parent vessel's
+// size: one more fixed circle on the glass.
+export function getNowSeat(viewport, magnifierRadius = null) {
+  const magR = Number.isFinite(magnifierRadius) ? magnifierRadius : viewport.SSd * 0.06;
+  return {
+    x: viewport.SSd * 0.13,
+    y: viewport.LSd * 0.805,
+    radius: magR
+  };
+}
+
 // THE LABEL COMES HOME (Howell 2026-07-25): the parent label leaves the
 // corner and rejoins its vessel, placed by TEXT WIDTH under three rules —
 //   1. short labels center on the vessel (IHI);

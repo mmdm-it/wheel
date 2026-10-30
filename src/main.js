@@ -3806,6 +3806,14 @@ function wireInteractions(getApp) {
     // them is a press on open ground. The lens alone is a control — its tap
     // strikes a character or turns a verse's page — and even it strokes by
     // the compass.
+    // THE WAY BACK TO THE PRESENT (O-243) is a plain button: no drag, no
+    // near-miss redirect, no suppressed click — its own onclick runs.
+    const onNowButton = event.target && event.target.closest && event.target.closest('.focus-ring-now-circle, .focus-ring-now-label');
+    if (onNowButton) {
+      isDragging = false;
+      logTap('now-button-hit', { pointerType: event.pointerType });
+      return;
+    }
     const onParentSeat = event.target && event.target.closest && event.target.closest('.focus-ring-parent-circle, .focus-ring-parent-label, .world-glyph');
     const isControlTarget = !onParentSeat && event.target && event.target.closest && event.target.closest('.focus-ring-magnifier-circle, .focus-ring-magnifier-label');
     if (isControlTarget) {
@@ -4732,6 +4740,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     labelFormatter,
     levelCaptions: config?.levelCaptions === true,
     captionAfter: config?.captionAfter === true,
+    nowButton: typeof config?.nowButton === 'string' && config.nowButton ? config.nowButton : null,
     shouldCenterLabel,
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,

@@ -474,6 +474,8 @@ const volumeConfigs = {
     // (O-242), but AFTER the numeral — "18th CENTURY" is how it is said.
     levelCaptions: true,
     captionAfter: true,
+    // The red disc that turns the ring back to the present (O-243).
+    nowButton: 'NOW',
     id: 'calendar',
     paths: ['/calendar'],
     manifestPath: './data/calendar/manifest.json',

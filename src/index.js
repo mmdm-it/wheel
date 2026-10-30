@@ -1,4 +1,8 @@
 import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from './geometry/focus-ring-geometry.js';
+// The return to the present is one deliberate glide, however far the ring
+// has travelled (O-243): the click's log-of-distance tempo would spin a day
+// ring for seconds from the deep past.
+const NOW_RETURN_MS = 900;
 import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
@@ -95,6 +99,10 @@ export function createApp({
   // The caption follows the lens's label rather than leading it (O-242): a
   // word said after its numeral ("18th CENTURY").
   captionAfter = false,
+  // THE WAY BACK TO THE PRESENT (O-243): the word a volume gives its red
+  // disc — shown only while nothing on the glass wears the present's
+  // colours, a tap turns the ring to the item that does. Null: no disc.
+  nowButton = null,
   shouldCenterLabel,
   contextOptions = {},
   onParentClick,
@@ -458,6 +466,16 @@ export function createApp({
       window.__tapDebugLog('phase', { name, p: Math.round(performance.now() * 10) / 10, ...extra });
     }
   }
+  // The present item's index in a chain, found once per chain (O-243): the
+  // chain object is the key, so a new chain is searched and the same chain
+  // never twice.
+  let nowIndexMemo = { items: null, index: -1 };
+  const nowIndexOf = items => {
+    if (!Array.isArray(items)) return -1;
+    if (nowIndexMemo.items !== items) nowIndexMemo = { items, index: items.findIndex(it => it && it.now === true) };
+    return nowIndexMemo.index;
+  };
+
   const setPrimaryItems = (newItems, nextSelectedIndex = 0, nextPreserveOrder = preserveOrderFlag) => {
     phase('set:enter', { n: Array.isArray(newItems) ? newItems.length : 0 });
     versePart = 0; // a new chain is a new reading position (O-84)
@@ -2230,6 +2248,27 @@ export function createApp({
       ? (parentLabel || lastSelectedLabelOut || selectedMagnifierLabel)
       : parentLabel;
 
+    // THE WAY BACK TO THE PRESENT (O-243, Howell 2026-10-30: "once the red
+    // node in the focus ring is rotated out of frame, the user is lost and
+    // has no way to get back to the present without rotating"). The disc
+    // shows when the chain holds a present item and NOTHING on the glass
+    // wears its colours: no red ring node in frame, no red star or date in
+    // the sky, and the lens not already holding it. A tap keeps the level
+    // and turns the ring to that item. The chain is searched once per chain,
+    // not per frame — a day chain is long.
+    const nowIndex = nowIndexOf(nav.items);
+    const nowOnGlass = (() => {
+      if (nowIndex < 0) return true;
+      if (selected?.now) return true;
+      const m = nodeRadius * 2;
+      if (nodes.some(n => n.item?.now && n.x >= -m && n.x <= vp.width + m && n.y >= -m && n.y <= vp.height + m)) return true;
+      if (pyramidData?.nodes?.some(n => n?.now)) return true;
+      return false;
+    })();
+    const nowButtonOptions = nowButton && !isLayerOut
+      ? { show: !nowOnGlass, label: String(nowButton), onClick: () => rotateToIndex(nowIndex, { durationMs: NOW_RETURN_MS }) }
+      : null;
+
     view.render(
       nodes,
       arcParams,
@@ -2262,6 +2301,7 @@ export function createApp({
           icon: typeof getParentIcon === 'function' ? getParentIcon() : null
         },
         pyramidData,
+        nowButton: nowButtonOptions,
         logoBounds: volumeLogo.getBounds()
       }
     );
