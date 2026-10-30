@@ -388,6 +388,8 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   const SSd = viewport.SSd ?? width;
   const { yearNumber = 1, month = 1, fraction = 0, rotating = false } = opts;
   const reckoning = opts.reckoning && typeof opts.reckoning.serialOf === 'function' ? opts.reckoning : GREGORIAN_RECKONING;
+  // A cell's numeral in the reckoning's own script (Hebrew letters, O-248).
+  const dayLabel = typeof reckoning.dayName === 'function' ? reckoning.dayName : String;
   // Header letters come from the volume's own naming when it offers them
   // (so a translation moves the lattice and the prose together); the
   // built-in row is the fallback, and keeps this module volume-agnostic.
@@ -446,7 +448,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     rows.forEach((row, ri) => {
       row.forEach((cell, ci) => {
         if (cell === null) return; // hard crop — the month's own days only
-        pushCell(lattice.rayAngle(ri + 1), ci, cell.day, false, reckoning.dayId(yearNumber, month, cell.day),
+        pushCell(lattice.rayAngle(ri + 1), ci, dayLabel(cell.day), false, reckoning.dayId(yearNumber, month, cell.day),
           { yearNumber, monthNumber: month, dayNumber: cell.day, serial: cell.serial });
       });
     });
@@ -498,7 +500,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
       // same white — a colour would distract — so each month's start is
       // legible as it passes.
       const firstOfMonth = date.day === 1;
-      pushCell(angle, c, date.day, !inAnchor && !firstOfMonth, reckoning.dayId(date.yearNumber, date.month, date.day),
+      pushCell(angle, c, dayLabel(date.day), !inAnchor && !firstOfMonth, reckoning.dayId(date.yearNumber, date.month, date.day),
         { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day, serial });
       // …and stands clear of the fade the whole sky wears while the ring
       // turns (.is-rotating, 0.35), which is what Howell actually saw: the

@@ -234,7 +234,10 @@ export function detailFor(selected, manifest) {
     const yearNumber = civil.yearNumber;
     const monthNumber = civil.month;
     const dayNumber = civil.day;
-    const weekday = getCalendarWeekdayNames(manifest)[((serial + 4) % 7 + 7) % 7] || '';
+    // The weekday in the day's own calendar (Hebrew names for a Hebrew day, O-248).
+    const dow = ((serial + 4) % 7 + 7) % 7;
+    const daySystem = systemOf(systemIdOf(id));
+    const weekday = (daySystem.id !== GREGORIAN && daySystem.weekdays?.[dow]) || getCalendarWeekdayNames(manifest)[dow] || '';
     if (!weekday) return null;
 
     // The wall calendar's day cell, as a card (docs/DETAIL_SECTOR_LOADS.md).
@@ -429,6 +432,7 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     }
     if (calendarMode !== 'month') return gatewayReturnLabel || '';
     if (!item) return '';
+    if (item.yearName) return String(item.yearName);   // the year in its own calendar's script (O-248)
     const y = Number.isFinite(item.yearNumber) ? item.yearNumber : Number.parseInt(item.parentId, 10);
     if (!Number.isFinite(y)) return '';
     return y < 0 ? `${Math.abs(y)} BC` : String(y);
@@ -533,6 +537,9 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     parentHandler,
     childrenHandler,
     onBoot,
+    // The chosen calendar's script runs right to left or not (O-248): the
+    // parent seat and the lens's caption take their side from it.
+    textDirection: () => system.direction || 'ltr',
     getParentLabel,
     getGapLabel,
     // Years stay centered on their nodes (numerals); MONTHS align like
@@ -544,7 +551,8 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       calendarModeRef: () => calendarMode,
       getCalendarMonthChain: monthId => monthChain(monthId),
       getCalendarDayChain,
-      getWeekdayLetters: () => getCalendarWeekdayLetters(manifest),
+      // The grid's header letters in the chosen calendar's script (O-248).
+      getWeekdayLetters: () => (system.id !== GREGORIAN && system.weekdayLetters) || getCalendarWeekdayLetters(manifest),
       // The system an id belongs to (O-245), for the grid's reckoning.
       systemForId: id => systemOf(systemIdOf(id)),
       setCalendarMode: next => { calendarMode = next; },

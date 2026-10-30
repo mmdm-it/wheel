@@ -320,7 +320,8 @@ function yearNumbersFor(manifest, sys) {
   if (sys.id === GREGORIAN) return listed;
   // The same real days, in the other system's count: its year at the
   // span's first day to its year at the last.
-  const lo = sys.dateOf(SYSTEMS.gregorian.serialOf(listed[0], 1, 1)).year;
+  const floor = SYSTEMS.gregorian.serialOf(listed[0], 1, 1);
+  const lo = sys.dateOf(Number.isFinite(sys.epochSerial) ? Math.max(floor, sys.epochSerial) : floor).year;
   const hi = sys.dateOf(SYSTEMS.gregorian.serialOf(listed[listed.length - 1], 12, 31)).year;
   const out = [];
   for (let y = lo; y <= hi; y += 1) if (!(sys.noYearZero && y === 0)) out.push(y);
@@ -797,7 +798,8 @@ export function buildCalendarDaysCousinChain(manifest, { centerId, system = null
   const resolvedCenterId = sys.dayId(c.year, c.month, c.day);
   // The volume's span is the data's years, in the historical reckoning.
   const span = yearNumbersFor(manifest, SYSTEMS.gregorian);
-  const floor = span.length ? SYSTEMS.gregorian.serialOf(span[0], 1, 1) : -Infinity;
+  let floor = span.length ? SYSTEMS.gregorian.serialOf(span[0], 1, 1) : -Infinity;
+  if (Number.isFinite(sys.epochSerial)) floor = Math.max(floor, sys.epochSerial); // no day before the count began
   const ceil = span.length ? SYSTEMS.gregorian.serialOf(span[span.length - 1], 12, 31) : Infinity;
   const first = Math.max(center - HALF_SPAN_DAYS, floor);
   const last = Math.min(center + HALF_SPAN_DAYS, ceil);
@@ -813,7 +815,7 @@ export function buildCalendarDaysCousinChain(manifest, { centerId, system = null
     const d = sys.dateOf(serial);
     sorted.push({
       id: sys.dayId(d.year, d.month, d.day),
-      name: String(d.day),
+      name: sys.dayName(d.day),
       dayNumber: d.day,
       monthNumber: d.month,
       yearNumber: d.year,

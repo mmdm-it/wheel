@@ -15,7 +15,7 @@
 // mistaken for another calendar's, and the old parsers refuse it rather
 // than misreading it.
 import { GREGORIAN_RECKONING, JULIAN_RECKONING, daySerial } from '../geometry/day-grid.js';
-import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf } from './calendar-hebrew.js';
+import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf, hebrewNumeral, HEBREW_WEEKDAYS, HEBREW_WEEKDAY_LETTERS } from './calendar-hebrew.js';
 
 export const GREGORIAN = 'gregorian';
 const SUFFIX = /^(.*)@([a-z]+)$/;
@@ -33,6 +33,7 @@ const MONTHS = [
   ['sep', 'September'], ['oct', 'October'], ['nov', 'November'], ['dec', 'December']
 ];
 const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const WEEKDAY_LETTERS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
 // The Roman-month family (the historical Gregorian and the Julian share
 // everything but the leap rule and the reform).
@@ -48,17 +49,24 @@ const eraYearSort = y => (y < 0 ? y + 3001 : y + 3000);
 // A system from its parts: the reckoning, the months of a year (in ring
 // order, each with its own number, key and name), the year's name and
 // time order, and whether the count skips a year zero.
-function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero }) {
+function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null }) {
   const suffix = id === GREGORIAN ? '' : `@${id}`;
   return Object.freeze({
     id,
     name,
     reckoning,
-    weekdays: WEEKDAYS,
+    // the script's direction, the week's names and the grid's header letters
+    direction,
+    weekdays,
+    weekdayLetters,
     noYearZero: Boolean(noYearZero),
+    // A count that BEGINS (anno mundi: 1 Tishri 1) has no day before its
+    // epoch; the rings of such a system start there, whatever the data's span.
+    epochSerial: Number.isFinite(epochSerial) ? epochSerial : null,
     monthsOf,
     yearName,
     yearSort,
+    dayName: typeof reckoning.dayName === 'function' ? reckoning.dayName : String,
     serialOf: (y, m, d) => reckoning.serialOf(y, m, d),
     dateOf: serial => { const { yearNumber, month, day } = reckoning.dateOf(serial); return { year: yearNumber, month, day }; },
     // ids, in the volume's grammar
@@ -87,9 +95,13 @@ export const SYSTEMS = Object.freeze({
     id: 'hebrew', name: 'HEBREW', reckoning: HEBREW_RECKONING,
     monthsOf: hebrewMonthsOf,
     monthKeyOf: hebrewMonthKeyOf,
-    yearName: y => String(y),
+    yearName: hebrewNumeral,
     yearSort: y => y,
-    noYearZero: false
+    noYearZero: false,
+    direction: 'rtl',
+    weekdays: HEBREW_WEEKDAYS,
+    weekdayLetters: HEBREW_WEEKDAY_LETTERS,
+    epochSerial: HEBREW_RECKONING.serialOf(1, 7, 1)
   })
 });
 
