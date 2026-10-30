@@ -499,6 +499,19 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       serial = prev.serialOf(mid, 7, 1);
     }
     if (!Number.isFinite(serial)) return;
+    // A MOMENT THE CALENDAR CANNOT NAME (Howell 2026-10-30, from January
+    // 3999 BC through the Hebrew and back, arriving in October 3761 BC):
+    // before a count's epoch the switch lands on the count's first day,
+    // but REMEMBERS where the reader stood, so that switching on from that
+    // first day — without having moved — returns the remembered moment
+    // rather than the epoch. Any move from the landing forgets it.
+    if (unnamedMoment && cur.id === unnamedMoment.landedId) serial = unnamedMoment.serial;
+    unnamedMoment = null;
+    let landedId = null;
+    if (Number.isFinite(next.epochSerial) && serial < next.epochSerial) {
+      unnamedMoment = { serial, landedId: null };
+      serial = next.epochSerial;
+    }
     const d = next.dateOf(serial);
     let chain = null;
     if (calendarMode === 'day') chain = getCalendarDayChain(next.dayId(d.year, d.month, d.day));
@@ -506,8 +519,13 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     else if (calendarMode === 'year') chain = buildCalendarYears(manifest, { arrangement: options?.arrangement, initialItemId: next.yearId(d.year) });
     else if (calendarMode === 'decade') chain = buildCalendarDecades(manifest, { initialItemId: next.decadeId(decadeIdOf(d.year)) });
     else if (calendarMode === 'century') chain = buildCalendarCenturies(manifest, { initialItemId: next.centuryId(centuryIdOf(d.year)) });
-    if (chain?.items?.length) app.setPrimaryItems(chain.items, chain.selectedIndex, true);
+    if (chain?.items?.length) {
+      landedId = chain.items[chain.selectedIndex]?.id || null;
+      app.setPrimaryItems(chain.items, chain.selectedIndex, true);
+    }
+    if (unnamedMoment) unnamedMoment.landedId = landedId;
   };
+  let unnamedMoment = null;   // { serial, landedId } while standing on an epoch for want of a name
   onCalendarChosen(id => reexpress(systemOf(id)));
 
   const onBoot = ({ app, renderDetail }) => {

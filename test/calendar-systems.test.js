@@ -187,6 +187,20 @@ describe('the Hebrew calendar (O-248)', () => {
   });
 });
 
+describe('a moment the calendar cannot name (O-245 amended)', () => {
+  it('lands on the epoch but remembers where the reader stood until they move', () => {
+    const adapter = fs.readFileSync(new URL('../src/adapters/calendar-adapter.js', import.meta.url), 'utf8');
+    assert.match(adapter, /if \(unnamedMoment && cur\.id === unnamedMoment\.landedId\) serial = unnamedMoment\.serial;/);
+    assert.match(adapter, /if \(Number\.isFinite\(next\.epochSerial\) && serial < next\.epochSerial\) \{\n\s+unnamedMoment = \{ serial, landedId: null \};\n\s+serial = next\.epochSerial;/);
+    assert.match(adapter, /if \(unnamedMoment\) unnamedMoment\.landedId = landedId;/);
+    // The Hebrew count has no day before 1 Tishri 1; the Gregorian and Julian do.
+    assert.ok(Number.isFinite(H.epochSerial));
+    assert.equal(G.epochSerial, null);
+    assert.equal(J.epochSerial, null);
+    assert.deepEqual(serialToDate(H.epochSerial), { yearNumber: -3761, month: 10, day: 7 });
+  });
+});
+
 describe('the rings in another system (O-245)', () => {
   it('the Gregorian rings are what the data gave: ids, names and spans unchanged', () => {
     const { items } = buildCalendarYears(manifest, { initialItemId: '2026' });
