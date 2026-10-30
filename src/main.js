@@ -4731,6 +4731,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     preserveOrder,
     labelFormatter,
     levelCaptions: config?.levelCaptions === true,
+    captionAfter: config?.captionAfter === true,
     shouldCenterLabel,
     contextOptions: { ...options, locale: resolvedLocale },
     onParentClick: parentHandler,

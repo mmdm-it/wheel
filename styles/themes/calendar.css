@@ -8,6 +8,9 @@
   --theme-font-body: 'Montserrat', sans-serif;
   --theme-font-label: 'Montserrat', sans-serif;
   --theme-font-magnifier: 'Montserrat', sans-serif;
+  /* The volume sets its own casing (O-242): "21st", as Howell wrote it,
+     would read 21ST under the transform; the formatter shouts the months. */
+  --focus-label-transform: none;
 }
 
 /* THE CALENDAR'S SKY IS THE JULY SKY (O-216, Howell 2026-10-23: "I do want

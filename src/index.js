@@ -1,4 +1,4 @@
-import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX } from './geometry/focus-ring-geometry.js';
+import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from './geometry/focus-ring-geometry.js';
 import { NavigationState } from './navigation/navigation-state.js';
 import { buildBibleBookCousinChain } from './navigation/cousin-builder.js';
 import { RotationChoreographer } from './interaction/rotation-choreographer.js';
@@ -92,6 +92,9 @@ export function createApp({
   // volume that says so is asked; any other formatter answers an unknown
   // context with the item's name, which put LOCKWOOD-ASH beside the lens.
   levelCaptions = false,
+  // The caption follows the lens's label rather than leading it (O-242): a
+  // word said after its numeral ("18th CENTURY").
+  captionAfter = false,
   shouldCenterLabel,
   contextOptions = {},
   onParentClick,
@@ -517,7 +520,11 @@ export function createApp({
     const underThis = view.band && view.band.parentNode === host ? view.band : host.firstChild;
     const cx = Number(real.getAttribute('x')) || 0, cy = Number(real.getAttribute('y')) || 0;
     const mx = magnifier.x, my = magnifier.y;
-    const hx = cx - arcParams.hubX, hy = cy - arcParams.hubY, hl = Math.hypot(hx, hy) || 1;
+    // A caption after the label leaves and arrives along its own line, away
+    // from the lens; one before it along the hub's line (O-242).
+    const hx = captionAfter ? cx - magnifier.x : cx - arcParams.hubX;
+    const hy = captionAfter ? cy - magnifier.y : cy - arcParams.hubY;
+    const hl = Math.hypot(hx, hy) || 1;
     const ux = hx / hl, uy = hy / hl;
     // JUST BEYOND THE EDGE, NOT FAR BEYOND IT (Howell 2026-09-17: "the
     // incoming chapter label lags well behind the incoming focus ring
@@ -2100,7 +2107,27 @@ export function createApp({
             return equalSky ? lens.map(() => Math.max(0, ...lens)) : lens;
           })(),
           sizeScales: seatScales.slice(0, seatCount),
-          labelBaseFontPx: pyramidLabelBasePx
+          labelBaseFontPx: pyramidLabelBasePx,
+          // A caption after the lens's label lies inside the ring, where the
+          // stars live, so the sky leaves its strip clear (O-242). Measured
+          // as the view draws it: along the lens's own line, just past the
+          // glass, at the caption's size (a capital ≈ 0.75 em with its
+          // tracking).
+          keepOut: (() => {
+            if (!levelCaptions || !captionAfter) return [];
+            const word = String(formatLabel({ item: nav.getCurrent(), context: 'caption' }) || '');
+            if (!word) return [];
+            const theta = (magnifier.angle || 0) + Math.PI;
+            const ux = Math.cos(theta), uy = Math.sin(theta);
+            const start = magnifierRadius * (1 + CAPTION_GAP_RADII);
+            const fontPx = Math.max(15.75, Math.min(29.25, 0.018 * Math.min(vp.width || 0, vp.height || 0)));
+            const len = word.length * fontPx * 0.75;
+            return [{
+              x1: magnifier.x + ux * start, y1: magnifier.y + uy * start,
+              x2: magnifier.x + ux * (start + len), y2: magnifier.y + uy * (start + len),
+              half: fontPx * 0.7
+            }];
+          })()
         });
         if (!geo) return null;
         // Map children onto intersection slots (seat j belongs to child seatOrder[j])
@@ -2207,7 +2234,7 @@ export function createApp({
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection() },
+      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection(), captionAfter: Boolean(captionAfter) },
       {
         isRotating,
         // O-84 (Howell's correction, 2026-08-22): a split verse settles as a

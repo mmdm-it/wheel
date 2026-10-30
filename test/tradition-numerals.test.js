@@ -145,9 +145,26 @@ describe('casing follows the script, not the habit', () => {
 // with the item's own name, which drew LOCKWOOD-ASH and "September" beside
 // the lens. The Bible declares it; nothing else does.
 describe('the level caption is opt-in per volume (O-144)', () => {
-  it('only the Bible declares levelCaptions', () => {
+  // The calendar joined on O-242 (CENTURY beside the lens), its word after
+  // the numeral; the catalogue still has none.
+  it('only the Bible and the calendar declare levelCaptions, and only the calendar puts its word after', () => {
     for (const [id, cfg] of Object.entries(volumeConfigs)) {
-      assert.equal(cfg.levelCaptions === true, id === 'bible', `${id}: levelCaptions`);
+      assert.equal(cfg.levelCaptions === true, id === 'bible' || id === 'calendar', `${id}: levelCaptions`);
+      assert.equal(cfg.captionAfter === true, id === 'calendar', `${id}: captionAfter`);
     }
+  });
+
+  it('the calendar captions its centuries alone (O-242)', () => {
+    const fmt = volumeConfigs.calendar.formatLabel({ locale: null });
+    const c21 = { level: 'century', centuryNumber: 21, era: 1 };
+    const c3bc = { level: 'century', centuryNumber: 3, era: -1 };
+    assert.equal(fmt({ item: c21, context: 'caption' }), 'CENTURY');
+    assert.equal(fmt({ item: c21, context: 'magnifier' }), '21st');
+    assert.equal(fmt({ item: c3bc, context: 'caption' }), 'CENTURY B.C.');
+    assert.equal(fmt({ item: c3bc, context: 'magnifier' }), '3rd');
+    assert.equal(fmt({ item: c3bc, context: 'node' }), '3rd B.C.', 'a ring node keeps its era');
+    assert.equal(fmt({ item: { level: 'decade', name: 'TEENS' }, context: 'caption' }), '');
+    assert.equal(fmt({ item: { level: 'month', name: 'July' }, context: 'caption' }), '');
+    assert.equal(fmt({ item: { level: 'day' }, context: 'caption' }), '', 'the leaf keeps the margin clear');
   });
 });

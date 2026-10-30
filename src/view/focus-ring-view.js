@@ -477,12 +477,15 @@ export class FocusRingView {
         const theta = (magRotation * Math.PI) / 180;
         const gap = radius * CAPTION_GAP_RADII;
         const rtl = magnifier.captionDirection === 'rtl';
-        const sign = rtl ? 1 : -1;
+        // AFTER THE LABEL when the volume says so (O-242): the word is said
+        // after its numeral, so it sits past the lens's far side and reads on.
+        const after = Boolean(magnifier.captionAfter);
+        const sign = (rtl !== after) ? 1 : -1;
         const cx = magnifier.x + sign * Math.cos(theta) * (radius + gap);
         const cy = magnifier.y + sign * Math.sin(theta) * (radius + gap);
         this.magnifierCaption.setAttribute('x', cx);
         this.magnifierCaption.setAttribute('y', cy);
-        this.magnifierCaption.setAttribute('text-anchor', rtl ? 'start' : 'end');
+        this.magnifierCaption.setAttribute('text-anchor', (rtl !== after) ? 'start' : 'end');
         this.magnifierCaption.setAttribute('transform', `rotate(${magRotation}, ${cx}, ${cy})`);
         this.magnifierCaption.textContent = caption;
       }

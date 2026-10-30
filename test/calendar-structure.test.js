@@ -9,8 +9,9 @@ import { buildCalendarYears } from '../src/adapters/volume-helpers.js';
 //   - 3000 BC .. 3000 AD, no year zero (6000 years)
 //   - years are the top level: no millennia key
 //   - AD names are bare numbers; BC names carry the BC suffix
-//   - century crossings get a small cousin gap, millennium crossings a
-//     larger one (the BC/AD line is a millennium crossing)
+//   - decade crossings get a small cousin gap, centuries a larger one,
+//     millennia the largest (the BC/AD line is a millennium crossing), all
+//     by the digits since O-242
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // Small synthetic calendar (W-10): the crossing-years that exercise the
@@ -57,15 +58,23 @@ describe('calendar year chain (gap doctrine)', () => {
     assert.equal(items[selectedIndex]?.id, '2026');
   });
 
-  it('inserts a small gap at century crossings', () => {
-    assert.equal(gapRunBefore('1901'), 2, '1900 → 1901 is a century crossing');
-    assert.equal(gapRunBefore('1900'), 0, 'no gap inside a century');
+  // BY THE DIGITS, WITH DECADES ABOVE (O-242): a decade crossing is a
+  // cousin gap, a century a second cousin, a millennium a third — and the
+  // century turns at 1999 | 2000, where the parent seat changes its name.
+  it('inserts a small gap at decade crossings', () => {
+    assert.equal(gapRunBefore('1969'), 2, '1901 → 1969 crosses decades inside one century');
+    assert.equal(gapRunBefore('1901'), 0, 'no gap inside a decade');
   });
 
-  it('inserts a larger gap at millennium crossings, including BC/AD', () => {
-    assert.equal(gapRunBefore('2001'), 4, '2000 → 2001 is a millennium crossing');
-    assert.equal(gapRunBefore('1'), 4, '1 BC → 1 AD crosses the era line');
-    assert.equal(gapRunBefore('-1000'), 4, 'BC millennium crossings gap too');
+  it('inserts a larger gap at century crossings', () => {
+    assert.equal(gapRunBefore('1900'), 4, '1899 → 1900 is a century crossing by the digits');
+  });
+
+  it('inserts the largest gap at millennium crossings, including BC/AD', () => {
+    assert.equal(gapRunBefore('2000'), 6, '1999 → 2000 is a millennium crossing by the digits');
+    assert.equal(gapRunBefore('2001'), 0, '2000 and 2001 share a decade');
+    assert.equal(gapRunBefore('1'), 6, '1 BC → 1 AD crosses the era line');
+    assert.equal(gapRunBefore('-1000'), 6, 'BC millennium crossings gap too');
   });
 
   it('keeps both chain ends real (sprocket doctrine)', () => {

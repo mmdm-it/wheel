@@ -31,39 +31,42 @@ function stubApp(state) {
 }
 
 describe('gateway round trip (adapter contract)', () => {
-  it('calendar: the year ring names the gateway-return destination and OUT goes through the gateway', () => {
+  // THE CENTURIES ARE THE TOP SINCE O-242: month → year → decade → century,
+  // and only then out through the gateway.
+  it('calendar: the century ring names the gateway-return destination and OUT goes through the gateway', () => {
     let returned = 0;
     const handlers = createCalendarHandlers({
       manifest: calendarManifest,
-      options: { level: 'year' },
+      options: { level: 'month' },
       onGatewayReturn: () => { returned += 1; return true; },
       gatewayLabel: 'GREGORIO XIII',
       gatewayReturnLabel: 'MMdM CATALOGO'
     });
     const state = {};
     const app = stubApp(state);
-    assert.equal(handlers.getParentLabel({ id: 'y1', level: 'year' }), 'MMdM CATALOGO',
-      'year ring parent button names the volume OUT returns to');
-    handlers.childrenHandler({ selected: { id: 'y1', level: 'year' }, app });
-    assert.equal(state.parentButtons?.showOuter, true, 'months mode shows the parent button');
-    const up = handlers.parentHandler({ app });
-    assert.equal(up, true, 'month → year OUT should be handled');
-    assert.equal(state.parentButtons?.showOuter, true,
-      'through a gateway the year ring keeps its parent button');
+    assert.equal(handlers.parentHandler({ selected: { id: '1969:jul', parentId: '1969', yearNumber: 1969, level: 'month' }, app }), true, 'month → year');
+    assert.equal(state.parentButtons?.showOuter, true, 'a decade waits above the years');
+    assert.equal(handlers.getParentLabel({ id: '1969', yearNumber: 1969, level: 'year' }), 'SIXTIES', 'years name their decade');
+    assert.equal(handlers.parentHandler({ selected: { id: '1969', yearNumber: 1969, level: 'year' }, app }), true, 'year → decade');
+    assert.equal(handlers.getParentLabel({ id: 'dd:196', level: 'decade', centuryNumber: 20, era: 1, firstYear: 1960 }), '20th CENTURY', 'decades name their century');
+    assert.equal(handlers.getParentLabel({ id: 'dd:-75', level: 'decade', centuryNumber: 8, era: -1, firstYear: -759 }), '8th CENTURY B.C.', 'the era rides after the word');
+    assert.equal(handlers.parentHandler({ selected: { id: 'dd:196', level: 'decade', firstYear: 1960 }, app }), true, 'decade → century');
+    assert.equal(state.parentButtons?.showOuter, true, 'through a gateway the century ring keeps its parent button');
+    assert.equal(handlers.getParentLabel({ id: 'c:20', level: 'century' }), 'MMdM CATALOGO',
+      'century ring parent button names the volume OUT returns to');
     const out = handlers.parentHandler({ app });
     assert.equal(out, true, 'top-level OUT must be handled by the gateway return');
     assert.equal(returned, 1, 'onGatewayReturn must be invoked exactly once');
   });
 
-  it('calendar: standalone, the year ring has no parent button and top-level OUT is unhandled', () => {
-    const handlers = createCalendarHandlers({ manifest: calendarManifest, options: { level: 'year' } });
+  it('calendar: standalone, the century ring has no parent button and top-level OUT is unhandled', () => {
+    const handlers = createCalendarHandlers({ manifest: calendarManifest, options: { level: 'decade' } });
     const state = {};
     const app = stubApp(state);
-    assert.equal(handlers.getParentLabel({ id: 'y1', level: 'year' }), '',
-      'nothing above the year ring without a gateway');
-    handlers.childrenHandler({ selected: { id: 'y1', level: 'year' }, app });
-    handlers.parentHandler({ app });
+    handlers.parentHandler({ selected: { id: 'dd:196', level: 'decade', firstYear: 1960 }, app });
     assert.equal(state.parentButtons?.showOuter, false);
+    assert.equal(handlers.getParentLabel({ id: 'c:20', level: 'century' }), '',
+      'nothing above the century ring without a gateway');
     const out = handlers.parentHandler({ app });
     assert.equal(out, false, 'top-level OUT unhandled when there is no gateway');
   });

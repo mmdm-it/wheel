@@ -28,6 +28,8 @@ import { setUnitTextLoader } from './adapters/volume-helpers.js';
 const BIBLE_VOLUME_BASE = './data/gutenberg';
 const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
 import { calendarAdapter } from './adapters/calendar-adapter.js';
+import { buildCalendarDecades, buildCalendarCenturies } from './adapters/volume-helpers.js';
+import { CENTURY_WORD, CENTURY_ERA_BC, centuryShortLabel, ordinal, decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
 
 // `parseVerseId` lived here and is DELETED under O-47, not left for later.
 //
@@ -468,6 +470,10 @@ const volumeConfigs = {
     hasSearch: true
   },
   calendar: {
+    // The word CENTURY rides beside the lens as the Bible's CHAPTER does
+    // (O-242), but AFTER the numeral — "18th CENTURY" is how it is said.
+    levelCaptions: true,
+    captionAfter: true,
     id: 'calendar',
     paths: ['/calendar'],
     manifestPath: './data/calendar/manifest.json',
@@ -525,6 +531,13 @@ const volumeConfigs = {
     // hardcoded date that goes stale. Default entry: the months ring with
     // the CURRENT month magnified; ?level=year gives the years ring.
     buildChain: (manifest, options) => {
+      const thisYear = new Date().getFullYear();
+      if (options.level === 'decade') {
+        return buildCalendarDecades(manifest, { initialItemId: options.initialItemId || decadeIdOf(thisYear) });
+      }
+      if (options.level === 'century') {
+        return buildCalendarCenturies(manifest, { initialItemId: options.initialItemId || centuryIdOf(thisYear) });
+      }
       if (options.level === 'year') {
         return buildCalendarYears(manifest, {
           arrangement: options.arrangement,
@@ -688,12 +701,25 @@ function makeCalendarLabelFormatter({ locale }) {
   );
   return ({ item, context }) => {
     if (!item) return '';
+    // THE CENTURY'S WORD IS A CAPTION (O-242): the ring reads "18th" and
+    // "3rd B.C."; the lens reads "18th" with CENTURY after it, or "3rd" with
+    // CENTURY B.C., so the glass and its word say "3rd CENTURY B.C.".
+    // Every other level answers an empty caption.
+    if (context === 'caption') {
+      if (item.level !== 'century') return '';
+      return item.era < 0 ? `${CENTURY_WORD} ${CENTURY_ERA_BC}` : CENTURY_WORD;
+    }
+    if (item.level === 'century' && Number.isFinite(item.centuryNumber)) {
+      return context === 'magnifier' ? ordinal(item.centuryNumber) : centuryShortLabel(item.centuryNumber, item.era);
+    }
+    if (item.level === 'decade') return item.name || '';
     // Month items carry the month name alone, in the lens too (O-215,
     // Howell 2026-10-23, against the July bundle: "the screening room
     // version has the year suffix in the magnifier, whereas the archive
     // version does not"). The year stands in the parent vessel directly
     // below the lens, so the suffix said twice what the glass already says.
-    if (item.level === 'month') return item?.name || item?.id || '';
+    // In capitals here, since the theme no longer shouts for the volume (O-242).
+    if (item.level === 'month') return String(item?.name || item?.id || '').toUpperCase();
     // Only year items get era formatting — composed ids ("2026:jan") would
     // otherwise fool the parseInt fallback.
     if (item.level && item.level !== 'year') return item?.name || item?.id || '';
