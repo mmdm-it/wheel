@@ -4725,7 +4725,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     catalogModeRef: layoutBindings.catalogModeRef,
     setCatalogMode: layoutBindings.setCatalogMode,
     savePreInState: layoutBindings.savePreInState,
-    pyramidBuilder: layoutBindings.pyramidBuilder
+    pyramidBuilder: layoutBindings.pyramidBuilder,
+    systemForId: layoutBindings.systemForId
   });
   const volumePyramidConfig = {
     ...(layoutSpec?.pyramid || {}),

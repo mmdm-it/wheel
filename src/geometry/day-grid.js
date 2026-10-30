@@ -170,6 +170,44 @@ export function serialToDate(serial) {
   return civilFromDayOfYear(yoe + era * 400, doy);
 }
 
+// The Julian reckoning for ANY serial — the branch above, unconditioned.
+const julianToDate = serial => {
+  const z = serial - JULIAN_EPOCH_SHIFT;
+  const quad = Math.floor(z / 1461);
+  const rem = z - quad * 1461;
+  let yearOfQuad = Math.floor(rem / 365);
+  if (yearOfQuad === 4) yearOfQuad = 3;
+  return civilFromDayOfYear(quad * 4 + yearOfQuad, rem - yearOfQuad * 365);
+};
+const julianMonthSpan = (yearNumber, month) => {
+  const nextMonth = month === 12 ? 1 : month + 1;
+  let nextYear = month === 12 ? yearNumber + 1 : yearNumber;
+  if (month === 12 && nextYear === 0) nextYear = 1;
+  return julianSerial(nextYear, nextMonth, 1) - julianSerial(yearNumber, month, 1);
+};
+
+// A RECKONING (O-245): how the one line of real days is numbered into
+// years, months and days. The grid asks a reckoning for everything it
+// used to compute itself, so another reckoning's months fall through the
+// same lattice. The default is the historical one above — Julian to 4
+// October 1582, Gregorian from the 15th. The Julian reckoning is the Old
+// Style kept after the reform: every fourth year leap, no exceptions.
+// `dayId` is the cell's id, which must match the day chain's links.
+export const GREGORIAN_RECKONING = Object.freeze({
+  id: 'gregorian',
+  serialOf: daySerial,
+  dateOf: serialToDate,
+  monthSpan: monthDaySpan,
+  dayId: (y, m, d) => `d:${y}:${m}:${d}`
+});
+export const JULIAN_RECKONING = Object.freeze({
+  id: 'julian',
+  serialOf: julianSerial,
+  dateOf: julianToDate,
+  monthSpan: julianMonthSpan,
+  dayId: (y, m, d) => `d:${y}:${m}:${d}@julian`
+});
+
 /**
  * The settled view: the magnified month's own weeks, hard-cropped —
  * cells outside the month are absent (Howell: no dimmed neighbors).
@@ -179,14 +217,20 @@ export function serialToDate(serial) {
  * lays itself down as history did — ...3, 4, 15, 16... in adjacent seats,
  * the week unbroken and the jump living in the numerals.
  */
-export function monthWeeks(yearNumber, month) {
-  const first = daySerial(yearNumber, month, 1);
-  const last = first + monthDaySpan(yearNumber, month) - 1;
+export function monthWeeks(yearNumber, month, reckoning = GREGORIAN_RECKONING) {
+  return monthCells(yearNumber, month, reckoning).map(row => row.map(cell => (cell ? cell.day : null)));
+}
+// The same weeks with each cell's SERIAL beside its day number (O-245) —
+// the one fact that is the same in every reckoning, which is how a cell
+// knows it is today.
+export function monthCells(yearNumber, month, reckoning = GREGORIAN_RECKONING) {
+  const first = reckoning.serialOf(yearNumber, month, 1);
+  const last = first + reckoning.monthSpan(yearNumber, month) - 1;
   const rows = [];
   let row = new Array(DAYS_PER_WEEK).fill(null);
   let col = ((first + 4) % 7 + 7) % 7;
   for (let serial = first; serial <= last; serial += 1) {
-    row[col] = serialToDate(serial).day;
+    row[col] = { day: reckoning.dateOf(serial).day, serial };
     col += 1;
     if (col === DAYS_PER_WEEK) {
       rows.push(row);
@@ -324,9 +368,9 @@ const seamShift = (serial, seams) => seams.reduce((n, seam) => (serial >= seam.s
  * `fraction` of a slot off this month's seat — the ribbon's gearing, stated
  * once so the host can ease between two months across a gap.
  */
-export function ribbonRowAt(yearNumber, month, fraction = 0, seams = []) {
-  const start = daySerial(yearNumber, month, 1);
-  return rowOfSerial(start + fraction * monthDaySpan(yearNumber, month)) + seamShift(start, seams);
+export function ribbonRowAt(yearNumber, month, fraction = 0, seams = [], reckoning = GREGORIAN_RECKONING) {
+  const start = reckoning.serialOf(yearNumber, month, 1);
+  return rowOfSerial(start + fraction * reckoning.monthSpan(yearNumber, month)) + seamShift(start, seams);
 }
 
 /**
@@ -343,6 +387,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   const height = viewport.height ?? 0;
   const SSd = viewport.SSd ?? width;
   const { yearNumber = 1, month = 1, fraction = 0, rotating = false } = opts;
+  const reckoning = opts.reckoning && typeof opts.reckoning.serialOf === 'function' ? opts.reckoning : GREGORIAN_RECKONING;
   // Header letters come from the volume's own naming when it offers them
   // (so a translation moves the lattice and the prose together); the
   // built-in row is the fallback, and keeps this module volume-agnostic.
@@ -362,17 +407,14 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   const nodes = [];
   // TODAY wears the present moment's colors in the lattice (Howell
   // 2026-07-19): the one cell the reader is standing on.
+  // Today is a SERIAL (O-245): the wall clock's date in the historical
+  // reckoning, which every reckoning's cells can be measured against.
   const now = new Date();
-  const todayY = now.getFullYear();
-  const todayM = now.getMonth() + 1;
-  const todayD = now.getDate();
+  const todaySerial = daySerial(now.getFullYear(), now.getMonth() + 1, now.getDate());
   const pushCell = (angle, weekday, dayNum, dim, key, itemFields = null) => {
     const p = lattice.pointAt(angle, lattice.radiusFor(weekday));
     if (p.x < -nodeR || p.x > width + nodeR || p.y < -nodeR || p.y > height + nodeR) return;
-    const isToday = Boolean(itemFields
-      && itemFields.yearNumber === todayY
-      && itemFields.monthNumber === todayM
-      && itemFields.dayNumber === todayD);
+    const isToday = Boolean(itemFields && itemFields.serial === todaySerial);
     nodes.push({
       id: key,
       label: String(dayNum),
@@ -400,12 +442,12 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     weekdayLetters.forEach((letter, ci) => {
       pushCell(lattice.rayAngle(0), ci, letter, false, `wd:${ci}`);
     });
-    const rows = monthWeeks(yearNumber, month);
+    const rows = monthCells(yearNumber, month, reckoning);
     rows.forEach((row, ri) => {
-      row.forEach((dayNum, ci) => {
-        if (dayNum === null) return; // hard crop — the month's own days only
-        pushCell(lattice.rayAngle(ri + 1), ci, dayNum, false, `d:${yearNumber}:${month}:${dayNum}`,
-          { yearNumber, monthNumber: month, dayNumber: dayNum });
+      row.forEach((cell, ci) => {
+        if (cell === null) return; // hard crop — the month's own days only
+        pushCell(lattice.rayAngle(ri + 1), ci, cell.day, false, reckoning.dayId(yearNumber, month, cell.day),
+          { yearNumber, monthNumber: month, dayNumber: cell.day, serial: cell.serial });
       });
     });
     return { nodes, gridMode: true };
@@ -419,13 +461,13 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   // since no month is under the glass.
   const seams = Array.isArray(opts.seams) ? opts.seams : [];
   const inGap = Boolean(opts.inGap);
-  const monthStart = daySerial(yearNumber, month, 1);
+  const monthStart = reckoning.serialOf(yearNumber, month, 1);
   const startSerial = Number.isFinite(opts.startSerial)
     ? opts.startSerial
-    : monthStart + fraction * monthDaySpan(yearNumber, month);
+    : monthStart + fraction * reckoning.monthSpan(yearNumber, month);
   const anchorRow = Number.isFinite(opts.anchorRow)
     ? opts.anchorRow
-    : ribbonRowAt(yearNumber, month, fraction, seams);
+    : ribbonRowAt(yearNumber, month, fraction, seams, reckoning);
   const centerRow = Math.floor(rowOfSerial(startSerial));
   // The band is an edge too: a ribbon cell never sits on the ring. Laid
   // edge to edge, the lower rows otherwise ran onto the band and its month
@@ -449,15 +491,15 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
       lo = Math.min(lo, offset); hi = Math.max(hi, offset);
       const angle = lattice.angleForRowOffset(offset);
       if (!clearOfBand(angle, c)) continue;
-      const date = serialToDate(serial);
+      const date = reckoning.dateOf(serial);
       const inAnchor = !inGap && date.yearNumber === yearNumber && date.month === month;
       // THE FIRST OF EVERY MONTH STANDS OUT (O-238, Howell 2026-10-29): full
       // strength in the fall like the magnified month's own days, in the
       // same white — a colour would distract — so each month's start is
       // legible as it passes.
       const firstOfMonth = date.day === 1;
-      pushCell(angle, c, date.day, !inAnchor && !firstOfMonth, `d:${date.yearNumber}:${date.month}:${date.day}`,
-        { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day });
+      pushCell(angle, c, date.day, !inAnchor && !firstOfMonth, reckoning.dayId(date.yearNumber, date.month, date.day),
+        { yearNumber: date.yearNumber, monthNumber: date.month, dayNumber: date.day, serial });
       // …and stands clear of the fade the whole sky wears while the ring
       // turns (.is-rotating, 0.35), which is what Howell actually saw: the
       // first cut only undimmed the cell, and the turning fade hid that.

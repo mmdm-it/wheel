@@ -4,7 +4,8 @@ import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCo
   getCalendarWeekdayNames, getCalendarWeekdayLetters, buildCalendarDecades, buildCalendarCenturies,
   getCalendarCenturyDecades, getCalendarDecadeYears } from './volume-helpers.js';
 import { DECADE_WORDS, centuryLongLabel, centuryIdOf, decadeIdOf, decadeDigitOf } from './calendar-eras.js';
-import { dayOfWeek } from '../geometry/day-grid.js';
+import { daySerial, serialToDate } from '../geometry/day-grid.js';
+import { SYSTEMS, GREGORIAN, systemOf, systemIdOf, todaySerial } from './calendar-systems.js';
 import { localSunTimes } from '../geometry/solar.js';
 import { buildCalendarPyramid } from '../pyramid/volume-pyramid.js';
 
@@ -221,12 +222,19 @@ export function detailFor(selected, manifest) {
   // Fano are where this panel is headed, which is exactly why the sector
   // updates on SETTLE only and never mid-scrub.
   if (selected.level === 'day') {
+    // THE DAY IS A SERIAL (O-245): whatever calendar named it, the sun and
+    // the tides are looked up by the real day — its date in the historical
+    // reckoning. A link without a serial (an old-style id) is read as one.
     const parts = /^d:(-?\d+):(\d+):(\d+)$/.exec(id);
-    const yearNumber = Number.isFinite(selected.yearNumber) ? selected.yearNumber : Number(parts?.[1]);
-    const monthNumber = Number.isFinite(selected.monthNumber) ? selected.monthNumber : Number(parts?.[2]);
-    const dayNumber = Number.isFinite(selected.dayNumber) ? selected.dayNumber : Number(parts?.[3]);
-    if (![yearNumber, monthNumber, dayNumber].every(Number.isFinite)) return null;
-    const weekday = getCalendarWeekdayNames(manifest)[dayOfWeek(yearNumber, monthNumber, dayNumber)] || '';
+    const serial = Number.isFinite(selected.serial)
+      ? selected.serial
+      : (parts ? daySerial(Number(parts[1]), Number(parts[2]), Number(parts[3])) : NaN);
+    if (!Number.isFinite(serial)) return null;
+    const civil = serialToDate(serial);
+    const yearNumber = civil.yearNumber;
+    const monthNumber = civil.month;
+    const dayNumber = civil.day;
+    const weekday = getCalendarWeekdayNames(manifest)[((serial + 4) % 7 + 7) % 7] || '';
     if (!weekday) return null;
 
     // The wall calendar's day cell, as a card (docs/DETAIL_SECTOR_LOADS.md).
@@ -255,7 +263,7 @@ export function detailFor(selected, manifest) {
 
   if (selected.level === 'year') {
     const yearEntry = findYear(manifest, id) || {};
-    const yearNumber = yearEntry.year_number ?? selected.meta?.yearNumber ?? null;
+    const yearNumber = selected.yearNumber ?? yearEntry.year_number ?? selected.meta?.yearNumber ?? null;
     // Era rule: bare number for AD, "BC" suffix only across the line.
     const label = Number.isFinite(yearNumber)
       ? (yearNumber < 0 ? `${Math.abs(yearNumber)} BC` : String(yearNumber))
@@ -267,6 +275,10 @@ export function detailFor(selected, manifest) {
     };
   }
 
+  // A month of another calendar carries its own names (O-245).
+  if (selected.level === 'month' && selected.yearName) {
+    return { type: 'card', title: selected.name || id, body: String(selected.yearName) };
+  }
   const monthLookup = findMonth(manifest, id);
   if (monthLookup) {
     const { month, year } = monthLookup;
@@ -292,14 +304,22 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
   // Five rings since O-242: century, decade, year, month, day.
   let calendarMode = ['century', 'decade', 'year'].includes(options?.level) ? options.level : 'month';
   let calendarMonthContext = null;
+  // THE CALENDAR THE RINGS SPEAK (O-245): the Gregorian at boot; the
+  // dimension's plane changes it, and the rings are re-expressed in the new
+  // one at the same day. The app is kept from the boot for that.
+  let system = SYSTEMS[GREGORIAN];
+  let bootedApp = null;
+  chosenCalendar = GREGORIAN;
 
   // The ~86k-link months chain is identical on every entry; build it once
-  // per handler set and only re-locate the entry month.
-  let monthChainItems = null;
+  // per handler set AND SYSTEM, and only re-locate the entry month.
+  const monthChains = new Map();
   const monthChain = initialItemId => {
-    if (!monthChainItems) {
-      monthChainItems = buildCalendarMonthsCousinChain(manifest, {}).items;
+    const sys = initialItemId ? systemOf(systemIdOf(initialItemId)) : system;
+    if (!monthChains.has(sys.id)) {
+      monthChains.set(sys.id, buildCalendarMonthsCousinChain(manifest, { system: sys }).items);
     }
+    const monthChainItems = monthChains.get(sys.id);
     let selectedIndex = 0;
     if (initialItemId) {
       const idx = monthChainItems.findIndex(item => item && item.id === initialItemId);
@@ -365,9 +385,10 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       const toDecades = calendarMode === 'year';
       const y = toDecades ? selected?.yearNumber : selected?.firstYear;
       if (!Number.isFinite(y)) return false;
+      const sys = systemOf(selected?.system);
       const { items, selectedIndex } = toDecades
-        ? buildCalendarDecades(manifest, { initialItemId: decadeIdOf(y) })
-        : buildCalendarCenturies(manifest, { initialItemId: centuryIdOf(y) });
+        ? buildCalendarDecades(manifest, { initialItemId: sys.decadeId(decadeIdOf(y)) })
+        : buildCalendarCenturies(manifest, { initialItemId: sys.centuryId(centuryIdOf(y)) });
       calendarMode = toDecades ? 'decade' : 'century';
       if (app?.setPrimaryItems) {
         const migrateOrSet = app.migrateOut || app.setPrimaryItems;
@@ -390,7 +411,7 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       if (!item) return '';
       const y = item.yearNumber;
       if (!Number.isFinite(y) || !item.monthName) return '';
-      const yearLabel = y < 0 ? `${Math.abs(y)} BC` : String(y);
+      const yearLabel = item.yearName || (y < 0 ? `${Math.abs(y)} BC` : String(y));
       return `${String(item.monthName).toUpperCase()} ${yearLabel}`;
     }
     // Years in the ring: the decade's word; decades: the century's (O-242).
@@ -439,7 +460,48 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
   // The centuries ring is the top (O-242). Through a gateway, its parent
   // button names the return destination; standalone there is nothing above
   // it, so no button. Every lower ring has an OUT.
+  // RE-EXPRESSED (O-245): the ring the reader is on, rebuilt in the chosen
+  // calendar at the same moment — the day in the lens stays the same real
+  // day; a month, year, decade or century is re-entered at the one holding
+  // its first day. No migration: the names change, the place does not.
+  const reexpress = next => {
+    if (!next || next.id === system.id) return;
+    const prev = system;
+    system = next;
+    const app = bootedApp;
+    const cur = app?.nav?.getCurrent?.();
+    if (!app?.setPrimaryItems || !cur) return;
+    // The moment the lens holds: a day is its serial; a span (month, year,
+    // decade, century) is TODAY when it holds today, otherwise its MIDDLE —
+    // the first day would land a span early in a calendar that runs behind
+    // (1 February 1900 is 20 January in the Julian), the middle keeps the
+    // span whose name the reader is looking at.
+    let serial = null;
+    if (cur.level === 'day' && Number.isFinite(cur.serial)) serial = cur.serial;
+    else if (cur.now) serial = todaySerial();
+    else if (cur.level === 'month' && Number.isFinite(cur.yearNumber)) {
+      const m = cur.monthNumber || 1;
+      serial = prev.serialOf(cur.yearNumber, m, 1) + Math.floor(prev.reckoning.monthSpan(cur.yearNumber, m) / 2);
+    } else if (cur.level === 'year' && Number.isFinite(cur.yearNumber)) serial = prev.serialOf(cur.yearNumber, 7, 1);
+    else if ((cur.level === 'decade' || cur.level === 'century') && Number.isFinite(cur.firstYear) && Number.isFinite(cur.lastYear)) {
+      let mid = Math.floor((cur.firstYear + cur.lastYear) / 2);
+      if (mid === 0) mid = 1;
+      serial = prev.serialOf(mid, 7, 1);
+    }
+    if (!Number.isFinite(serial)) return;
+    const d = next.dateOf(serial);
+    let chain = null;
+    if (calendarMode === 'day') chain = getCalendarDayChain(next.dayId(d.year, d.month, d.day));
+    else if (calendarMode === 'month') chain = monthChain(next.monthId(d.year, d.month));
+    else if (calendarMode === 'year') chain = buildCalendarYears(manifest, { arrangement: options?.arrangement, initialItemId: next.yearId(d.year) });
+    else if (calendarMode === 'decade') chain = buildCalendarDecades(manifest, { initialItemId: next.decadeId(decadeIdOf(d.year)) });
+    else if (calendarMode === 'century') chain = buildCalendarCenturies(manifest, { initialItemId: next.centuryId(centuryIdOf(d.year)) });
+    if (chain?.items?.length) app.setPrimaryItems(chain.items, chain.selectedIndex, true);
+  };
+  onCalendarChosen(id => reexpress(systemOf(id)));
+
   const onBoot = ({ app, renderDetail }) => {
+    bootedApp = app;
     // Warm the ephemeris table (tides/moon/feasts from the wall calendar)
     // so the day card has it long before any leaf settles. If a slow fetch
     // loses that race, repaint the settled day when the table lands —
@@ -477,6 +539,8 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       getCalendarMonthChain: monthId => monthChain(monthId),
       getCalendarDayChain,
       getWeekdayLetters: () => getCalendarWeekdayLetters(manifest),
+      // The system an id belongs to (O-245), for the grid's reckoning.
+      systemForId: id => systemOf(systemIdOf(id)),
       setCalendarMode: next => { calendarMode = next; },
       setCalendarMonthContext: ctx => { calendarMonthContext = ctx; },
       // THE SKY ABOVE ANY RING: a century's decades, a decade's years, a
@@ -523,7 +587,7 @@ export const calendarAdapter = {
 // Chinese calendar last.
 const CALENDARS = [
   { id: 'gregorian', name: 'GREGORIAN', live: true },
-  { id: 'julian', name: 'JULIAN', live: false },
+  { id: 'julian', name: 'JULIAN', live: true },
   { id: 'hebrew', name: 'HEBREW', live: false },
   { id: 'islamic', name: 'ISLAMIC', live: false },
   { id: 'republican', name: 'FRENCH REPUBLICAN', live: false },
@@ -532,6 +596,9 @@ const CALENDARS = [
 ];
 const calendarById = id => CALENDARS.find(c => c.id === id) || null;
 let chosenCalendar = 'gregorian';
+// Whoever holds the rings hears the choice (the handler set, O-245).
+const chosenListeners = new Set();
+export function onCalendarChosen(fn) { chosenListeners.add(fn); return () => chosenListeners.delete(fn); }
 export const calendarStrata = () => [
   { id: 'secondary', mirrored: true,
     items: () => CALENDARS.map(c => c.id),
@@ -543,6 +610,7 @@ export const calendarStrata = () => [
       const c = calendarById(id);
       if (!c || !c.live) return false;
       chosenCalendar = id;
+      chosenListeners.forEach(fn => { try { fn(id); } catch (_) { /* a listener's error is its own */ } });
       return true;
     } }
 ];

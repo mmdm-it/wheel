@@ -29,7 +29,7 @@ describe('the calendars plane (O-244)', () => {
     assert.equal(planes[0].id, 'secondary');
     assert.equal(planes[0].mirrored, true);
   });
-  it('speaks the Gregorian today; the others are hollow, inert seats until their arithmetic lands', () => {
+  it('speaks the Gregorian and the Julian (O-245); the others are hollow, inert seats until their arithmetic lands', () => {
     const [plane] = calendarStrata();
     const items = plane.items();
     assert.deepEqual(items, CALENDAR_SYSTEMS.map(c => c.id));
@@ -37,14 +37,20 @@ describe('the calendars plane (O-244)', () => {
     assert.equal(plane.selected(), 'gregorian');
     assert.equal(plane.label('gregorian'), 'GREGORIAN');
     assert.equal(plane.label('republican'), 'FRENCH REPUBLICAN');
-    assert.equal(plane.classFor('gregorian'), '');
-    assert.equal(plane.inert('gregorian'), false);
-    for (const id of items.slice(1)) {
+    const live = CALENDAR_SYSTEMS.filter(c => c.live).map(c => c.id);
+    assert.deepEqual(live, ['gregorian', 'julian']);
+    for (const id of live) {
+      assert.equal(plane.classFor(id), '', id);
+      assert.equal(plane.inert(id), false, id);
+    }
+    for (const id of items.filter(id => !live.includes(id))) {
       assert.equal(plane.classFor(id), 'is-coming', id);
       assert.equal(plane.inert(id), true, id);
       assert.equal(plane.select(id), false, `${id} cannot be chosen yet`);
     }
     assert.equal(plane.selected(), 'gregorian');
+    assert.equal(plane.select('julian'), true);
+    assert.equal(plane.selected(), 'julian');
     assert.equal(plane.select('gregorian'), true);
   });
   it('names the calendars Howell asked for', () => {

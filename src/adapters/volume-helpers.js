@@ -1,5 +1,5 @@
 import { DECADE_WORDS, centuryNumberOf, decadeDigitOf, centuryIdOf, decadeIdOf, millenniumIdOf } from './calendar-eras.js';
-import { daySerial, serialToDate } from '../geometry/day-grid.js';
+import { SYSTEMS, GREGORIAN, systemOf, systemIdOf, splitSystemId, presentIn, todaySerial } from './calendar-systems.js';
 import { projectContainers } from '../core/unit-source.js';
 import { chartedUnitsOf } from './bible-volume.js';
 // Volume-specific chain/build helpers extracted from the host page.
@@ -299,35 +299,54 @@ export function getCatalogChildren(manifest, selected) {
     .map((child, idx) => ({ ...child, order: idx }));
 }
 
-export function getCalendarMonths(manifest, selected, calendarMode) {
+// THE SYSTEM AN ID BELONGS TO (O-245) — the Gregorian unless the id says
+// otherwise; see calendar-systems.js for the grammar.
+const systemForId = id => systemOf(systemIdOf(id));
+const yearNumberOf = selected => {
+  if (Number.isFinite(selected?.yearNumber)) return selected.yearNumber;
+  if (Number.isFinite(selected?.meta?.yearNumber)) return selected.meta.yearNumber;
+  const n = Number.parseInt(splitSystemId(selected?.id).bare, 10);
+  return Number.isFinite(n) ? n : null;
+};
+// THE YEARS A RING HOLDS, in time order. The data's years are the span's
+// authority: the Gregorian ring is exactly the years the manifest lists;
+// another system covers the same span in its own numbering (the same real
+// days, a few at either end aside). No years, no ring.
+function yearNumbersFor(manifest, sys) {
+  const years = manifest?.Calendar?.years;
+  if (!years) return [];
+  const listed = Object.values(years).map(y => y?.year_number).filter(Number.isFinite).sort((a, b) => a - b);
+  if (!listed.length) return [];
+  if (sys.id === GREGORIAN) return listed;
+  const out = [];
+  for (let y = listed[0]; y <= listed[listed.length - 1]; y += 1) if (y !== 0) out.push(y);
+  return out;
+}
+
+// A YEAR'S MONTHS — the sky above a year, in the year's own system (O-245).
+export function getCalendarMonths(manifest, selected, calendarMode, system = null) {
   if (calendarMode !== 'year') return [];
   const yearId = selected?.id;
   if (!yearId) return [];
-  const years = manifest?.Calendar?.years || {};
-  const yearEntry = years[yearId] || Object.values(years).find(y => String(y.id || '') === String(yearId));
-  if (!yearEntry) return [];
-  // Months live once in month_template and are synthesized per year
-  // (composed ids keep them unique across years); per-year months, if a
-  // manifest ever carries them, take precedence.
-  const months = yearEntry.months || manifest?.Calendar?.month_template;
-  if (!months) return [];
+  const sys = system || systemForId(yearId);
+  const y = yearNumberOf(selected);
+  if (!Number.isFinite(y) || !yearNumbersFor(manifest, sys).includes(y)) return [];
   // The month we are living through wears the present moment's colors in
   // the pyramid, exactly as today does in the day grid — but only inside
   // its own year (Howell 2026-07-20).
-  const present = presentMoment();
-  const isThisYear = yearEntry.year_number === present.yearNumber;
-  const currentMonthNumber = present.monthNumber;
-  return Object.entries(months).map(([monthKey, monthVal], idx) => ({
-    id: `${yearId}:${monthVal?.id || monthKey}`,
-    name: monthVal?.name || monthKey,
-    order: Number.isFinite(monthVal?.month_number) ? monthVal.month_number : idx,
+  const present = presentIn(sys);
+  return sys.monthsOf(y).map((m, idx) => ({
+    id: sys.monthId(y, m.number),
+    name: m.name,
+    order: idx,
     parentId: yearId,
     level: 'month',
-    now: isThisYear && monthVal?.month_number === currentMonthNumber
-  })).sort((a, b) => {
-    if (a.order === b.order) return (a.name || '').localeCompare(b.name || '');
-    return a.order - b.order;
-  }).map((item, idx) => ({ ...item, order: idx }));
+    yearNumber: y,
+    monthNumber: m.number,
+    yearName: sys.yearName(y),
+    system: sys.id,
+    now: y === present.yearNumber && m.number === present.monthNumber
+  }));
 }
 
 // THE CHAPTERS A BOOK ACTUALLY HAS, projected from the edition's chart
@@ -511,14 +530,6 @@ export const COUSIN_GAP_LINKS = [2, 4, 6, 8];
 // the reader can always find where they are standing at any depth. Only
 // ring NODES wear it — the magnifier stays its ordinary self, which is the
 // view's business, not the data's.
-const presentMoment = () => {
-  const wallClock = new Date();
-  return {
-    yearNumber: wallClock.getFullYear(),
-    monthNumber: wallClock.getMonth() + 1,
-    dayNumber: wallClock.getDate()
-  };
-};
 
 // BY THE DIGITS SINCE O-242: the centuries are the reader's levels now, and
 // a gap must fall where the parent seat changes its name — 1999 | 2000, not
@@ -558,22 +569,21 @@ function selectIndexIn(items, initialItemId) {
   return firstReal >= 0 ? firstReal : 0;
 }
 
-export function buildCalendarYears(manifest, { arrangement, initialItemId } = {}) {
-  const years = manifest?.Calendar?.years;
-  if (!years) return { items: [], selectedIndex: 0, preserveOrder: false };
-  const present = presentMoment();
-  const sorted = [];
-  Object.entries(years).forEach(([yearId, year]) => {
-    sorted.push({
-      id: yearId,
-      name: year.name || year.year_display || String(year.year_number || yearId),
-      sort: year?.sort_number || year?.year_number || sorted.length + 1,
-      yearNumber: year.year_number,
-      parentId: null,
-      level: 'year',
-      now: year.year_number === present.yearNumber
-    });
-  });
+export function buildCalendarYears(manifest, { arrangement, initialItemId, system = null } = {}) {
+  const sys = system || systemForId(initialItemId);
+  const yearNumbers = yearNumbersFor(manifest, sys);
+  if (!yearNumbers.length) return { items: [], selectedIndex: 0, preserveOrder: false };
+  const present = presentIn(sys);
+  const sorted = yearNumbers.map(y => ({
+    id: sys.yearId(y),
+    name: sys.yearName(y),
+    sort: sys.yearSort(y),
+    yearNumber: y,
+    parentId: null,
+    level: 'year',
+    system: sys.id,
+    now: y === present.yearNumber
+  }));
 
   sorted.sort((a, b) => {
     if ((arrangement || '').startsWith('descending')) {
@@ -598,23 +608,21 @@ export function buildCalendarYears(manifest, { arrangement, initialItemId } = {}
 }
 
 // THE YEAR NUMBERS THE VOLUME HOLDS, in time order (no year zero).
-function calendarYearNumbers(manifest) {
-  const years = manifest?.Calendar?.years || {};
-  return Object.values(years).map(y => y?.year_number).filter(Number.isFinite).sort((a, b) => a - b);
-}
 
 // THE DECADES RING (O-242): every decade on one ring, the words repeating
 // century after century as month names repeat year after year; a century
 // crossing is a cousin gap, a millennium a second cousin.
-export function buildCalendarDecades(manifest, { initialItemId } = {}) {
-  const present = presentMoment();
+export function buildCalendarDecades(manifest, { initialItemId, system = null } = {}) {
+  const sys = system || systemForId(initialItemId);
+  const present = presentIn(sys);
   const sorted = [];
   let last = null;
-  calendarYearNumbers(manifest).forEach(y => {
-    const id = decadeIdOf(y);
-    if (last && last.id === id) { last.lastYear = y; return; }
+  yearNumbersFor(manifest, sys).forEach(y => {
+    const bare = decadeIdOf(y);
+    if (last && last.bare === bare) { last.lastYear = y; return; }
     last = {
-      id,
+      id: sys.decadeId(bare),
+      bare,
       name: DECADE_WORDS[decadeDigitOf(y)],
       level: 'decade',
       decadeDigit: decadeDigitOf(y),
@@ -622,11 +630,13 @@ export function buildCalendarDecades(manifest, { initialItemId } = {}) {
       era: y < 0 ? -1 : 1,
       firstYear: y,
       lastYear: y,
-      parentId: centuryIdOf(y),
-      now: decadeIdOf(present.yearNumber) === id
+      parentId: sys.centuryId(centuryIdOf(y)),
+      system: sys.id,
+      now: decadeIdOf(present.yearNumber) === bare
     };
     sorted.push(last);
   });
+  sorted.forEach(it => { delete it.bare; });
   const items = weaveCousinChain(sorted, [
     item => centuryIdOf(item.firstYear),
     item => millenniumIdOf(item.firstYear)
@@ -636,15 +646,17 @@ export function buildCalendarDecades(manifest, { initialItemId } = {}) {
 
 // THE CENTURIES RING (O-242): the top level; a millennium crossing is the
 // one gap, and the era line is one.
-export function buildCalendarCenturies(manifest, { initialItemId } = {}) {
-  const present = presentMoment();
+export function buildCalendarCenturies(manifest, { initialItemId, system = null } = {}) {
+  const sys = system || systemForId(initialItemId);
+  const present = presentIn(sys);
   const sorted = [];
   let last = null;
-  calendarYearNumbers(manifest).forEach(y => {
-    const id = centuryIdOf(y);
-    if (last && last.id === id) { last.lastYear = y; return; }
+  yearNumbersFor(manifest, sys).forEach(y => {
+    const bare = centuryIdOf(y);
+    if (last && last.bare === bare) { last.lastYear = y; return; }
     last = {
-      id,
+      id: sys.centuryId(bare),
+      bare,
       name: String(centuryNumberOf(y)),
       level: 'century',
       centuryNumber: centuryNumberOf(y),
@@ -652,10 +664,12 @@ export function buildCalendarCenturies(manifest, { initialItemId } = {}) {
       firstYear: y,
       lastYear: y,
       parentId: null,
-      now: centuryIdOf(present.yearNumber) === id
+      system: sys.id,
+      now: centuryIdOf(present.yearNumber) === bare
     };
     sorted.push(last);
   });
+  sorted.forEach(it => { delete it.bare; });
   const items = weaveCousinChain(sorted, [item => millenniumIdOf(item.firstYear)]);
   return { items, selectedIndex: selectIndexIn(items, initialItemId), preserveOrder: true };
 }
@@ -663,66 +677,61 @@ export function buildCalendarCenturies(manifest, { initialItemId } = {}) {
 // A CENTURY'S DECADES, or A DECADE'S YEARS — the sky above each new ring,
 // in time order (the sky of equals seats them highest first).
 // Grouped once per manifest: the sky is asked for every frame of a turn.
+// Grouped once per manifest AND system: the sky is asked for every frame
+// of a turn.
 const skyGroups = new WeakMap();
-function groupedSkies(manifest) {
-  let g = skyGroups.get(manifest);
+function groupedSkies(manifest, sys) {
+  let bySystem = skyGroups.get(manifest);
+  if (!bySystem) { bySystem = new Map(); if (manifest && typeof manifest === 'object') skyGroups.set(manifest, bySystem); }
+  let g = bySystem.get(sys.id);
   if (!g) {
     g = { decadesOf: new Map(), yearsOf: new Map() };
-    buildCalendarDecades(manifest).items.forEach(it => {
+    buildCalendarDecades(manifest, { system: sys }).items.forEach(it => {
       if (!it) return;
       if (!g.decadesOf.has(it.parentId)) g.decadesOf.set(it.parentId, []);
       g.decadesOf.get(it.parentId).push(it);
     });
-    buildCalendarYears(manifest).items.forEach(it => {
+    buildCalendarYears(manifest, { system: sys }).items.forEach(it => {
       if (!it || !Number.isFinite(it.yearNumber)) return;
-      const d = decadeIdOf(it.yearNumber);
+      const d = sys.decadeId(decadeIdOf(it.yearNumber));
       if (!g.yearsOf.has(d)) g.yearsOf.set(d, []);
       g.yearsOf.get(d).push(it);
     });
-    if (manifest && typeof manifest === 'object') skyGroups.set(manifest, g);
+    bySystem.set(sys.id, g);
   }
   return g;
 }
 export function getCalendarCenturyDecades(manifest, centuryId) {
-  return (groupedSkies(manifest).decadesOf.get(centuryId) || []).map((it, idx) => ({ ...it, order: idx }));
+  return (groupedSkies(manifest, systemForId(centuryId)).decadesOf.get(centuryId) || []).map((it, idx) => ({ ...it, order: idx }));
 }
 export function getCalendarDecadeYears(manifest, decadeId) {
-  return (groupedSkies(manifest).yearsOf.get(decadeId) || []).map((it, idx) => ({ ...it, parentId: decadeId, order: idx }));
+  return (groupedSkies(manifest, systemForId(decadeId)).yearsOf.get(decadeId) || []).map((it, idx) => ({ ...it, parentId: decadeId, order: idx }));
 }
 
 // The months cousin chain: EVERY year's months on one ring, year crossings
 // as cousins, centuries as second cousins, millennia as third — the
 // hierarchy is one timeline at a deeper zoom, not a place you climb out of.
 // ~86k links for 6000 years; built on entry to months mode, not at boot.
-export function buildCalendarMonthsCousinChain(manifest, { initialItemId } = {}) {
-  const cal = manifest?.Calendar;
-  const years = cal?.years;
-  if (!years) return { items: [], selectedIndex: 0, preserveOrder: false };
-  const template = cal?.month_template || {};
-  const monthEntries = Object.entries(template)
-    .sort((a, b) => (a[1]?.month_number || 0) - (b[1]?.month_number || 0));
-  if (!monthEntries.length) return { items: [], selectedIndex: 0, preserveOrder: false };
-
-  const sortedYears = Object.values(years)
-    .filter(y => Number.isFinite(y?.year_number))
-    .sort((a, b) => (a.sort_number || 0) - (b.sort_number || 0));
-
-  const present = presentMoment();
+export function buildCalendarMonthsCousinChain(manifest, { initialItemId, system = null } = {}) {
+  const sys = system || systemForId(initialItemId);
+  const yearNumbers = yearNumbersFor(manifest, sys);
+  if (!yearNumbers.length) return { items: [], selectedIndex: 0, preserveOrder: false };
+  const present = presentIn(sys);
   const sorted = [];
-  sortedYears.forEach(year => {
-    const months = year.months
-      ? Object.entries(year.months).sort((a, b) => (a[1]?.month_number || 0) - (b[1]?.month_number || 0))
-      : monthEntries;
-    months.forEach(([monthKey, monthVal]) => {
+  yearNumbers.forEach(y => {
+    const yearId = sys.yearId(y);
+    const yearName = sys.yearName(y);
+    sys.monthsOf(y).forEach(m => {
       sorted.push({
-        id: `${year.id}:${monthVal?.id || monthKey}`,
-        name: monthVal?.name || monthKey,
-        parentId: year.id,
-        yearNumber: year.year_number,
-        monthNumber: monthVal?.month_number || 0,
+        id: sys.monthId(y, m.number),
+        name: m.name,
+        parentId: yearId,
+        yearNumber: y,
+        monthNumber: m.number,
+        yearName,
         level: 'month',
-        now: year.year_number === present.yearNumber
-          && (monthVal?.month_number || 0) === present.monthNumber
+        system: sys.id,
+        now: y === present.yearNumber && m.number === present.monthNumber
       });
     });
   });
@@ -766,44 +775,50 @@ export function getCalendarWeekdayLetters(manifest) {
  * month 2, year 4, century 6, millennium 8. Plain array (~3,900 links).
  * Ids match the wedge grid's cells: d:<year>:<month>:<day>.
  */
-export function buildCalendarDaysCousinChain(manifest, { centerId } = {}) {
-  const m = /^d:(-?\d+):(\d+):(\d+)$/.exec(centerId || '');
+export function buildCalendarDaysCousinChain(manifest, { centerId, system = null } = {}) {
+  const { system: sysId, bare } = splitSystemId(centerId);
+  const sys = system || systemOf(sysId);
+  const m = /^d:(-?\d+):(\d+):(\d+)$/.exec(bare || '');
   if (!m) return { items: [], selectedIndex: 0, preserveOrder: true };
   const cy = Number(m[1]);
   const cm = Number(m[2]);
   const cd = Number(m[3]);
 
-  const template = manifest?.Calendar?.month_template || {};
-  const monthNameByNumber = {};
-  Object.values(template).forEach(mv => {
-    if (Number.isFinite(mv?.month_number)) monthNameByNumber[mv.month_number] = mv?.name || '';
-  });
-
   const HALF_SPAN_DAYS = 1826; // five years, thumb-doctrine cap
-  const center = daySerial(cy, cm, cd);
+  const center = sys.serialOf(cy, cm, cd);
   // A date that never happened (Gregory's ten, or a hand-typed id) has no
   // link of its own; the serial resolves it to the day the count resumed,
   // and the ring must magnify THAT day rather than fall back to link zero.
-  const centerDate = serialToDate(center);
-  const resolvedCenterId = `d:${centerDate.yearNumber}:${centerDate.month}:${centerDate.day}`;
-  const first = Math.max(center - HALF_SPAN_DAYS, daySerial(-3000, 1, 1));
-  const last = Math.min(center + HALF_SPAN_DAYS, daySerial(3000, 12, 31));
+  const c = sys.dateOf(center);
+  const resolvedCenterId = sys.dayId(c.year, c.month, c.day);
+  // The volume's span is the data's years, in the historical reckoning.
+  const span = yearNumbersFor(manifest, SYSTEMS.gregorian);
+  const floor = span.length ? SYSTEMS.gregorian.serialOf(span[0], 1, 1) : -Infinity;
+  const ceil = span.length ? SYSTEMS.gregorian.serialOf(span[span.length - 1], 12, 31) : Infinity;
+  const first = Math.max(center - HALF_SPAN_DAYS, floor);
+  const last = Math.min(center + HALF_SPAN_DAYS, ceil);
 
-  const present = presentMoment();
+  const monthsByYear = new Map();
+  const monthNameOf = (y, mo) => {
+    if (!monthsByYear.has(y)) monthsByYear.set(y, sys.monthsOf(y));
+    return monthsByYear.get(y)[mo - 1]?.name || '';
+  };
+  const today = todaySerial();
   const sorted = [];
   for (let serial = first; serial <= last; serial += 1) {
-    const date = serialToDate(serial);
+    const d = sys.dateOf(serial);
     sorted.push({
-      id: `d:${date.yearNumber}:${date.month}:${date.day}`,
-      name: String(date.day),
-      dayNumber: date.day,
-      monthNumber: date.month,
-      yearNumber: date.yearNumber,
-      monthName: monthNameByNumber[date.month] || '',
+      id: sys.dayId(d.year, d.month, d.day),
+      name: String(d.day),
+      dayNumber: d.day,
+      monthNumber: d.month,
+      yearNumber: d.year,
+      monthName: monthNameOf(d.year, d.month),
+      yearName: sys.yearName(d.year),
+      serial,
       level: 'day',
-      now: date.yearNumber === present.yearNumber
-        && date.month === present.monthNumber
-        && date.day === present.dayNumber
+      system: sys.id,
+      now: serial === today
     });
   }
 

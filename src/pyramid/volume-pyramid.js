@@ -192,6 +192,7 @@ export function buildCalendarPyramid({
   getCalendarMonthChain,
   getCalendarDayChain,
   getWeekdayLetters,
+  systemForId = null,
   getApp,
   calendarModeRef,
   setCalendarMode,
@@ -284,9 +285,14 @@ export function buildCalendarPyramid({
       ? selected.yearNumber
       : Number.parseInt(selected.parentId, 10);
     if (!Number.isFinite(yearNumber)) return null;
+    // The month's own system, read off its id by the volume (O-245): the
+    // grid counts the month's days by that system's reckoning.
+    const system = typeof systemForId === 'function' ? systemForId(selected.id) : null;
     return {
       yearNumber,
       month: selected.monthNumber,
+      reckoning: system?.reckoning || null,
+      firstSerial: system ? system.serialOf(yearNumber, selected.monthNumber, 1) : null,
       // The lattice's column headers, named by the volume's own data.
       weekdayLetters: typeof getWeekdayLetters === 'function' ? getWeekdayLetters() : null
     };

@@ -1973,15 +1973,17 @@ export function createApp({
               const info = monthAt(slot);
               if (!info) { if (lastReal !== null) empty += 1; continue; }
               if (lastReal !== null && empty > 0) {
-                seams.push({ serial: daySerial(info.yearNumber, info.month, 1), rows: empty * GAP_ROWS_PER_SLOT });
+                seams.push({ serial: info.firstSerial ?? daySerial(info.yearNumber, info.month, 1), rows: empty * GAP_ROWS_PER_SLOT });
               }
               if (slot < slotFloat) before = { slot, info };
               else if (!after) after = { slot, info };
               lastReal = slot; empty = 0;
             }
             if (pyramidSelected === null && before && after && after.slot - before.slot > 1) {
-              const from = ribbonRowAt(before.info.yearNumber, before.info.month, 0.5, seams);
-              const to = ribbonRowAt(after.info.yearNumber, after.info.month, -0.5, seams);
+              // The months' own reckoning (O-245): a descriptor says how its
+              // days are counted, so another reckoning's months fall the same way.
+              const from = ribbonRowAt(before.info.yearNumber, before.info.month, 0.5, seams, before.info.reckoning);
+              const to = ribbonRowAt(after.info.yearNumber, after.info.month, -0.5, seams, after.info.reckoning);
               const span = (after.slot - 0.5) - (before.slot + 0.5);
               const t = Math.min(1, Math.max(0, (slotFloat - (before.slot + 0.5)) / span));
               const nearer = t < 0.5 ? before.info : after.info;
@@ -1990,7 +1992,8 @@ export function createApp({
                 month: nearer.month,
                 weekdayLetters: nearer.weekdayLetters,
                 anchorRow: from + (to - from) * t,
-                startSerial: daySerial(after.info.yearNumber, after.info.month, 1),
+                startSerial: after.info.firstSerial ?? daySerial(after.info.yearNumber, after.info.month, 1),
+                reckoning: nearer.reckoning,
                 inGap: true
               };
             }
@@ -2001,6 +2004,7 @@ export function createApp({
             const grid = computeDayGridLayout(vp, magnifier, arcParams, {
               yearNumber: gridInfo.yearNumber,
               month: gridInfo.month,
+              reckoning: gridInfo.reckoning,
               weekdayLetters: gridInfo.weekdayLetters,
               fraction,
               seams,
