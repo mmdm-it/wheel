@@ -1,0 +1,118 @@
+// THE HEBREW CALENDAR (O-248, Howell 2026-10-30): the fixed arithmetic
+// calendar of Hillel II, as every Jewish community has kept it since the
+// fourth century — a lunisolar year of twelve or thirteen months, the
+// months of 29 or 30 days, the year's start fixed by the molad of Tishri
+// and the four postponements, leap years in the 19-year cycle.
+//
+// The reckoning is Reingold and Dershowitz's ("Calendrical Calculations"),
+// stated on fixed day numbers (R.D., day 1 = 1 January 1 in the proleptic
+// Gregorian) and converted to the volume's serials (0 = 1 January 1970).
+// Months are numbered the traditional way, Nisan = 1 … Adar = 12, Adar II
+// = 13 in a leap year; the YEAR begins at Tishri (7), and the rings show
+// the months in that civil order. Years are counted from Creation (anno
+// mundi): the autumn of 2026 opened 5787.
+//
+// Pure arithmetic: numbers in, numbers out.
+
+const RD_OF_SERIAL_ZERO = 719163;           // 1 January 1970, R.D.
+const HEBREW_EPOCH_RD = -1373427;           // 1 Tishri 1 A.M. (Monday, 7 October 3761 B.C., Julian)
+
+export const TISHRI = 7, HESHVAN = 8, KISLEV = 9, TEVET = 10, SHEVAT = 11, ADAR = 12, ADAR_II = 13;
+export const NISAN = 1, IYYAR = 2, SIVAN = 3, TAMMUZ = 4, AV = 5, ELUL = 6;
+
+const mod = (a, b) => ((a % b) + b) % b;
+const rdOf = serial => serial + RD_OF_SERIAL_ZERO;
+const serialOfRd = rd => rd - RD_OF_SERIAL_ZERO;
+
+export const isHebrewLeapYear = year => mod(7 * year + 1, 19) < 7;
+export const lastMonthOfHebrewYear = year => (isHebrewLeapYear(year) ? ADAR_II : ADAR);
+
+// Days from the epoch to the molad-fixed New Year of `year`, before the
+// year-length corrections.
+function hebrewCalendarElapsedDays(year) {
+  const monthsElapsed = Math.floor((235 * year - 234) / 19);
+  const partsElapsed = 12084 + 13753 * monthsElapsed;
+  const day = monthsElapsed * 29 + Math.floor(partsElapsed / 25920);
+  return mod(3 * (day + 1), 7) < 3 ? day + 1 : day;
+}
+// The two postponements that keep a year from being 356 or 382 days.
+function hebrewYearLengthCorrection(year) {
+  const ny0 = hebrewCalendarElapsedDays(year - 1);
+  const ny1 = hebrewCalendarElapsedDays(year);
+  const ny2 = hebrewCalendarElapsedDays(year + 1);
+  if (ny2 - ny1 === 356) return 2;
+  if (ny1 - ny0 === 382) return 1;
+  return 0;
+}
+const hebrewNewYearRd = year => HEBREW_EPOCH_RD + hebrewCalendarElapsedDays(year) + hebrewYearLengthCorrection(year);
+export const daysInHebrewYear = year => hebrewNewYearRd(year + 1) - hebrewNewYearRd(year);
+const longHeshvan = year => [355, 385].includes(daysInHebrewYear(year));
+const shortKislev = year => [353, 383].includes(daysInHebrewYear(year));
+
+export function lastDayOfHebrewMonth(year, month) {
+  if ([IYYAR, TAMMUZ, ELUL, TEVET, ADAR_II].includes(month)) return 29;
+  if (month === ADAR && !isHebrewLeapYear(year)) return 29;
+  if (month === HESHVAN && !longHeshvan(year)) return 29;
+  if (month === KISLEV && shortKislev(year)) return 29;
+  return 30;
+}
+
+function fixedFromHebrew(year, month, day) {
+  let rd = hebrewNewYearRd(year) + day - 1;
+  if (month < TISHRI) {
+    // Before Tishri in the traditional numbering means AFTER it in the
+    // civil year: every month from Tishri to the year's last, then Nisan on.
+    const last = lastMonthOfHebrewYear(year);
+    for (let m = TISHRI; m <= last; m += 1) rd += lastDayOfHebrewMonth(year, m);
+    for (let m = NISAN; m < month; m += 1) rd += lastDayOfHebrewMonth(year, m);
+  } else {
+    for (let m = TISHRI; m < month; m += 1) rd += lastDayOfHebrewMonth(year, m);
+  }
+  return rd;
+}
+
+function hebrewFromFixed(rd) {
+  const approx = Math.floor(((rd - HEBREW_EPOCH_RD) * 98496) / 35975351) + 1;
+  let year = approx - 1;
+  while (hebrewNewYearRd(year + 1) <= rd) year += 1;
+  const start = rd < fixedFromHebrew(year, NISAN, 1) ? TISHRI : NISAN;
+  let month = start;
+  while (rd > fixedFromHebrew(year, month, lastDayOfHebrewMonth(year, month))) month += 1;
+  const day = rd - fixedFromHebrew(year, month, 1) + 1;
+  return { year, month, day };
+}
+
+// The volume's dialect: serials, and a date as {yearNumber, month, day}.
+export const hebrewSerialOf = (year, month, day) => serialOfRd(fixedFromHebrew(year, month, day));
+export function hebrewDateOf(serial) {
+  const { year, month, day } = hebrewFromFixed(rdOf(serial));
+  return { yearNumber: year, month, day };
+}
+export const hebrewMonthSpan = (year, month) => lastDayOfHebrewMonth(year, month);
+
+// The months of a year in CIVIL order, Tishri first; a leap year's Adar
+// is Adar I, followed by Adar II.
+const MONTH_NAMES = {
+  [NISAN]: ['nisan', 'Nisan'], [IYYAR]: ['iyyar', 'Iyyar'], [SIVAN]: ['sivan', 'Sivan'],
+  [TAMMUZ]: ['tammuz', 'Tammuz'], [AV]: ['av', 'Av'], [ELUL]: ['elul', 'Elul'],
+  [TISHRI]: ['tishri', 'Tishri'], [HESHVAN]: ['heshvan', 'Heshvan'], [KISLEV]: ['kislev', 'Kislev'],
+  [TEVET]: ['tevet', 'Tevet'], [SHEVAT]: ['shevat', 'Shevat'], [ADAR]: ['adar', 'Adar'], [ADAR_II]: ['adar2', 'Adar II']
+};
+export function hebrewMonthsOf(year) {
+  const leap = isHebrewLeapYear(year);
+  const order = [TISHRI, HESHVAN, KISLEV, TEVET, SHEVAT, ADAR, ...(leap ? [ADAR_II] : []), NISAN, IYYAR, SIVAN, TAMMUZ, AV, ELUL];
+  return order.map(m => {
+    const [key, plain] = MONTH_NAMES[m];
+    const name = (m === ADAR && leap) ? 'Adar I' : plain;
+    return { number: m, key, name, days: lastDayOfHebrewMonth(year, m) };
+  });
+}
+export const hebrewMonthKeyOf = month => MONTH_NAMES[month]?.[0] || String(month);
+
+export const HEBREW_RECKONING = Object.freeze({
+  id: 'hebrew',
+  serialOf: hebrewSerialOf,
+  dateOf: hebrewDateOf,
+  monthSpan: hebrewMonthSpan,
+  dayId: (y, m, d) => `d:${y}:${m}:${d}@hebrew`
+});

@@ -29,7 +29,7 @@ describe('the calendars plane (O-244)', () => {
     assert.equal(planes[0].id, 'secondary');
     assert.equal(planes[0].mirrored, true);
   });
-  it('speaks the Gregorian and the Julian (O-245); the others are hollow, inert seats until their arithmetic lands', () => {
+  it('speaks the Gregorian, the Julian (O-245) and the Hebrew (O-248); the others are hollow, inert seats until their arithmetic lands', () => {
     const [plane] = calendarStrata();
     const items = plane.items();
     assert.deepEqual(items, CALENDAR_SYSTEMS.map(c => c.id));
@@ -38,7 +38,7 @@ describe('the calendars plane (O-244)', () => {
     assert.equal(plane.label('gregorian'), 'GREGORIAN');
     assert.equal(plane.label('republican'), 'FRENCH REPUBLICAN');
     const live = CALENDAR_SYSTEMS.filter(c => c.live).map(c => c.id);
-    assert.deepEqual(live, ['gregorian', 'julian']);
+    assert.deepEqual(live, ['gregorian', 'julian', 'hebrew']);
     for (const id of live) {
       assert.equal(plane.classFor(id), '', id);
       assert.equal(plane.inert(id), false, id);

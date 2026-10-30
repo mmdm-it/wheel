@@ -8,6 +8,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { SYSTEMS, systemOf, splitSystemId, systemIdOf, presentIn, todaySerial } from '../src/adapters/calendar-systems.js';
 import { GREGORIAN_RECKONING, JULIAN_RECKONING, monthWeeks, monthCells, daySerial, serialToDate } from '../src/geometry/day-grid.js';
+import { isHebrewLeapYear, daysInHebrewYear } from '../src/adapters/calendar-hebrew.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, buildCalendarDecades, buildCalendarCenturies, getCalendarMonths, getCalendarCenturyDecades, getCalendarDecadeYears } from '../src/adapters/volume-helpers.js';
 
 const manifest = JSON.parse(fs.readFileSync(new URL('../data/calendar/manifest.json', import.meta.url), 'utf8'));
@@ -80,6 +81,68 @@ describe('the two reckonings (O-245)', () => {
     const civil = serialToDate(t);
     assert.equal(presentIn(G).yearNumber, civil.yearNumber);
     assert.equal(J.serialOf(presentIn(J).yearNumber, presentIn(J).monthNumber, presentIn(J).dayNumber), t);
+  });
+});
+
+describe('the Hebrew calendar (O-248)', () => {
+  const H = SYSTEMS.hebrew;
+  const at = (y, m, d) => H.dateOf(daySerial(y, m, d));
+  it('names the known days: the feasts of 5786–5787, the epoch, 1970, today', () => {
+    assert.deepEqual(at(2026, 9, 12), { year: 5787, month: 7, day: 1 }, 'Rosh Hashanah 5787');
+    assert.deepEqual(at(2026, 9, 21), { year: 5787, month: 7, day: 10 }, 'Yom Kippur 5787');
+    assert.deepEqual(at(2026, 4, 2), { year: 5786, month: 1, day: 15 }, 'Passover 5786');
+    assert.deepEqual(at(2024, 10, 3), { year: 5785, month: 7, day: 1 }, 'Rosh Hashanah 5785');
+    assert.deepEqual(at(2026, 10, 30), { year: 5787, month: 8, day: 19 }, '19 Heshvan 5787');
+    assert.deepEqual(H.dateOf(0), { year: 5730, month: 10, day: 23 }, '1 January 1970');
+    // 1 Tishri 1 A.M. is Monday, 7 October 3761 B.C. in the Julian reckoning the volume keeps before 1582.
+    assert.deepEqual(serialToDate(H.serialOf(1, 7, 1)), { yearNumber: -3761, month: 10, day: 7 });
+    assert.equal(((H.serialOf(1, 7, 1) + 4) % 7 + 7) % 7, 1, 'a Monday');
+  });
+  it('keeps the year: 12 or 13 months in the 19-year cycle, 353 to 385 days, Tishri first', () => {
+    assert.equal(isHebrewLeapYear(5787), true);
+    assert.equal(isHebrewLeapYear(5786), false);
+    assert.equal(isHebrewLeapYear(5784), true);
+    assert.equal(daysInHebrewYear(5787), 385);
+    assert.equal(daysInHebrewYear(5786), 354);
+    for (let y = 5700; y < 5800; y += 1) assert.ok([353, 354, 355, 383, 384, 385].includes(daysInHebrewYear(y)), String(y));
+    const months = H.monthsOf(5787);
+    assert.deepEqual(months.map(m => m.name), ['Tishri', 'Heshvan', 'Kislev', 'Tevet', 'Shevat', 'Adar I', 'Adar II', 'Nisan', 'Iyyar', 'Sivan', 'Tammuz', 'Av', 'Elul']);
+    assert.deepEqual(months.map(m => m.number), [7, 8, 9, 10, 11, 12, 13, 1, 2, 3, 4, 5, 6]);
+    assert.equal(months.reduce((n, m) => n + m.days, 0), 385);
+    assert.equal(H.monthsOf(5786).length, 12);
+    assert.equal(H.monthsOf(5786).find(m => m.number === 12).name, 'Adar');
+    // Every serial of a year round-trips and the months tile the year.
+    const first = H.serialOf(5787, 7, 1);
+    for (let s = first; s < first + 385; s += 7) {
+      const d = H.dateOf(s);
+      assert.equal(H.serialOf(d.year, d.month, d.day), s);
+      assert.equal(d.year, 5787);
+    }
+  });
+  it('builds the rings: ids suffixed @hebrew, months in civil order, the span 761 to 6761, today red at its Hebrew name', () => {
+    const years = buildCalendarYears(manifest, { initialItemId: '5787@hebrew' });
+    const real = years.items.filter(Boolean);
+    assert.equal(real[0].id, '761@hebrew');
+    assert.equal(real[real.length - 1].id, '6761@hebrew');
+    const y = years.items[years.selectedIndex];
+    assert.equal(y.name, '5787');
+    assert.equal(y.now, true);
+    const sky = getCalendarMonths(manifest, y, 'year');
+    assert.equal(sky[0].id, '5787:tishri@hebrew');
+    assert.equal(sky[1].id, '5787:heshvan@hebrew');
+    assert.equal(sky.filter(m => m.now).map(m => m.name).join(), 'Heshvan');
+    const chain = buildCalendarMonthsCousinChain(manifest, { initialItemId: '5787:heshvan@hebrew' });
+    const m = chain.items[chain.selectedIndex];
+    assert.equal(m.monthNumber, 8);
+    assert.equal(chain.items[chain.selectedIndex - 1].name, 'Tishri');
+    const t = todaySerial();
+    const p = H.dateOf(t);
+    const days = buildCalendarDaysCousinChain(manifest, { centerId: H.dayId(p.year, p.month, p.day) });
+    const now = days.items.filter(i => i && i.now);
+    assert.equal(now.length, 1);
+    assert.equal(now[0].monthName, H.monthsOf(p.year).find(mm => mm.number === p.month).name);
+    assert.equal(now[0].yearName, String(p.year));
+    assert.equal(monthWeeks(5787, 8, H.reckoning).flat().filter(Boolean).length, 30, 'Heshvan 5787 is long');
   });
 });
 

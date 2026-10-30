@@ -318,8 +318,12 @@ function yearNumbersFor(manifest, sys) {
   const listed = Object.values(years).map(y => y?.year_number).filter(Number.isFinite).sort((a, b) => a - b);
   if (!listed.length) return [];
   if (sys.id === GREGORIAN) return listed;
+  // The same real days, in the other system's count: its year at the
+  // span's first day to its year at the last.
+  const lo = sys.dateOf(SYSTEMS.gregorian.serialOf(listed[0], 1, 1)).year;
+  const hi = sys.dateOf(SYSTEMS.gregorian.serialOf(listed[listed.length - 1], 12, 31)).year;
   const out = [];
-  for (let y = listed[0]; y <= listed[listed.length - 1]; y += 1) if (y !== 0) out.push(y);
+  for (let y = lo; y <= hi; y += 1) if (!(sys.noYearZero && y === 0)) out.push(y);
   return out;
 }
 
@@ -801,7 +805,7 @@ export function buildCalendarDaysCousinChain(manifest, { centerId, system = null
   const monthsByYear = new Map();
   const monthNameOf = (y, mo) => {
     if (!monthsByYear.has(y)) monthsByYear.set(y, sys.monthsOf(y));
-    return monthsByYear.get(y)[mo - 1]?.name || '';
+    return monthsByYear.get(y).find(m => m.number === mo)?.name || '';
   };
   const today = todaySerial();
   const sorted = [];

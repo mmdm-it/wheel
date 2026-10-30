@@ -15,6 +15,7 @@
 // mistaken for another calendar's, and the old parsers refuse it rather
 // than misreading it.
 import { GREGORIAN_RECKONING, JULIAN_RECKONING, daySerial } from '../geometry/day-grid.js';
+import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf } from './calendar-hebrew.js';
 
 export const GREGORIAN = 'gregorian';
 const SUFFIX = /^(.*)@([a-z]+)$/;
@@ -44,33 +45,52 @@ const eraYearName = y => (y < 0 ? `${Math.abs(y)} BC` : String(y));
 // Time order of a year number with no zero (the data's sort_number).
 const eraYearSort = y => (y < 0 ? y + 3001 : y + 3000);
 
-function romanSystem(id, name, reckoning) {
+// A system from its parts: the reckoning, the months of a year (in ring
+// order, each with its own number, key and name), the year's name and
+// time order, and whether the count skips a year zero.
+function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero }) {
   const suffix = id === GREGORIAN ? '' : `@${id}`;
   return Object.freeze({
     id,
     name,
     reckoning,
     weekdays: WEEKDAYS,
-    // the span of years the volume holds, in this system's own numbering
-    firstYear: -3000,
-    lastYear: 3000,
-    monthsOf: romanMonths(reckoning),
-    yearName: eraYearName,
-    yearSort: eraYearSort,
+    noYearZero: Boolean(noYearZero),
+    monthsOf,
+    yearName,
+    yearSort,
     serialOf: (y, m, d) => reckoning.serialOf(y, m, d),
     dateOf: serial => { const { yearNumber, month, day } = reckoning.dateOf(serial); return { year: yearNumber, month, day }; },
     // ids, in the volume's grammar
     yearId: y => `${y}${suffix}`,
-    monthId: (y, m) => `${y}:${MONTHS[m - 1]?.[0] || m}${suffix}`,
+    monthId: (y, m) => `${y}:${monthKeyOf(m)}${suffix}`,
     dayId: (y, m, d) => reckoning.dayId(y, m, d),
     decadeId: bare => `${bare}${suffix}`,
     centuryId: bare => `${bare}${suffix}`
   });
 }
+const romanSystem = (id, name, reckoning) => makeSystem({
+  id, name, reckoning,
+  monthsOf: romanMonths(reckoning),
+  monthKeyOf: m => MONTHS[m - 1]?.[0] || String(m),
+  yearName: eraYearName,
+  yearSort: eraYearSort,
+  noYearZero: true
+});
 
 export const SYSTEMS = Object.freeze({
   gregorian: romanSystem(GREGORIAN, 'GREGORIAN', GREGORIAN_RECKONING),
-  julian: romanSystem('julian', 'JULIAN', JULIAN_RECKONING)
+  julian: romanSystem('julian', 'JULIAN', JULIAN_RECKONING),
+  // Anno mundi: counted from Creation, no era line, no year zero to skip
+  // inside the volume's span (its first year is 761).
+  hebrew: makeSystem({
+    id: 'hebrew', name: 'HEBREW', reckoning: HEBREW_RECKONING,
+    monthsOf: hebrewMonthsOf,
+    monthKeyOf: hebrewMonthKeyOf,
+    yearName: y => String(y),
+    yearSort: y => y,
+    noYearZero: false
+  })
 });
 
 export const systemOf = id => SYSTEMS[id] || SYSTEMS[GREGORIAN];

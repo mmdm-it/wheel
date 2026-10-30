@@ -594,7 +594,7 @@ export const calendarAdapter = {
 const CALENDARS = [
   { id: 'gregorian', name: 'GREGORIAN', live: true },
   { id: 'julian', name: 'JULIAN', live: true },
-  { id: 'hebrew', name: 'HEBREW', live: false },
+  { id: 'hebrew', name: 'HEBREW', live: true },
   { id: 'islamic', name: 'ISLAMIC', live: false },
   { id: 'republican', name: 'FRENCH REPUBLICAN', live: false },
   { id: 'maya', name: 'MAYA', live: false },
