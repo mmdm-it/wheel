@@ -646,7 +646,6 @@ svg :focus-visible {
 }
 .focus-ring-now-label {
   font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
-  font-weight: 600;
   font-size: clamp(calc(15.75px * var(--iframe-scale, 1)), 1.8vmin, calc(29.25px * var(--iframe-scale, 1)));
   letter-spacing: 0.04em;
   cursor: pointer;
