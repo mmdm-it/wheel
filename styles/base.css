@@ -985,9 +985,25 @@ svg :focus-visible {
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
 }
 
-/* Feast days wear the print's red numeral color on the weekday. */
-.detail-ephemeris-title--festivo {
-  color: #d10000;
+/* TODAY'S CARD WEARS THE NOW COLOURS (O-247, Howell 2026-10-30): the
+   weekday in yellow on a red disc behind it — the fills are inline, the
+   ring node's own — the one red thing on the glass at the leaf. The feast
+   days' red (the print's) is retired: "there should be no other colored
+   label than the one for the current day". */
+.detail-ephemeris-title--now .detail-now-word {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.detail-ephemeris-title--now .detail-now-disc {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.9em;
+  height: 1.9em;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 /* The numbers: twice the old tier-6 (Howell 2026-07-20). */

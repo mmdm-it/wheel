@@ -83,6 +83,45 @@ describe('the host (O-243)', () => {
   });
 });
 
+describe('the present reaches the leaf (O-247)', () => {
+  it('today\'s card says now; no card is ever marked festive', async () => {
+    const { detailFor } = await import('../src/adapters/calendar-adapter.js');
+    const { todaySerial, SYSTEMS } = await import('../src/adapters/calendar-systems.js');
+    const manifest = JSON.parse(fs.readFileSync(new URL('../data/calendar/manifest.json', import.meta.url), 'utf8'));
+    const t = todaySerial();
+    const d = SYSTEMS.gregorian.dateOf(t);
+    const today = detailFor({ id: SYSTEMS.gregorian.dayId(d.year, d.month, d.day), level: 'day', serial: t, now: true }, manifest);
+    assert.equal(today.type, 'ephemeris');
+    assert.equal(today.now, true);
+    assert.equal('festivo' in today, false);
+    const sunday = detailFor({ id: 'd:2026:10:25', level: 'day', serial: SYSTEMS.gregorian.serialOf(2026, 10, 25) }, manifest);
+    assert.equal(sunday.title, 'SUNDAY');
+    assert.equal(sunday.now, false);
+    assert.equal('festivo' in sunday, false);
+    // An old-style link without a serial is still today when it is today.
+    const bare = detailFor({ id: SYSTEMS.gregorian.dayId(d.year, d.month, d.day), level: 'day' }, manifest);
+    assert.equal(bare.now, true);
+  });
+  it('the card dresses the weekday in the present\'s colours: a red disc behind, the word in yellow', async () => {
+    const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
+    const plugin = new EphemerisDetailPlugin();
+    const create = tag => createMockElement(tag);
+    const card = plugin.render({ type: 'ephemeris', title: 'FRIDAY', titleAlign: 'center', now: true, rows: ['↑ 6:41    ↓ 17:02'] }, {}, { createElement: create });
+    const title = card.children[0];
+    assert.match(title.className, /detail-ephemeris-title--now/);
+    assert.doesNotMatch(title.className, /festivo/);
+    const [disc, word] = title.children;
+    assert.equal(disc.className, 'detail-now-disc');
+    assert.equal(disc.style.background, NOW_NODE_FILL);
+    assert.equal(word.className, 'detail-now-word');
+    assert.equal(word.textContent, 'FRIDAY');
+    assert.equal(word.style.color, NOW_LABEL_FILL);
+    const plain = plugin.render({ type: 'ephemeris', title: 'SUNDAY', titleAlign: 'center', now: false, rows: [] }, {}, { createElement: create });
+    assert.equal(plain.children[0].children.length, 0);
+    assert.equal(plain.children[0].textContent, 'SUNDAY');
+  });
+});
+
 describe('who declares it (O-243)', () => {
   it('the calendar says NOW; no other volume has a present to return to', () => {
     for (const [id, cfg] of Object.entries(volumeConfigs)) {

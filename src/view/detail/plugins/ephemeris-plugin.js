@@ -1,4 +1,5 @@
 import { BaseDetailPlugin } from '../plugin-registry.js';
+import { NOW_NODE_FILL, NOW_LABEL_FILL } from '../../node-appearance.js';
 import { makeLineSpan } from './line-layout.js';
 
 // The day ephemeris card — the wall print's day cell as a Detail Sector
@@ -22,9 +23,26 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
     if (!create) throw new Error('EphemerisDetailPlugin.render: no createElement available');
 
     const titleText = item?.title ?? '';
-    const titleClass = item?.festivo
-      ? 'detail-ephemeris-title detail-ephemeris-title--festivo'
+    // TODAY'S CARD WEARS THE NOW COLOURS (O-247): the weekday in yellow on
+    // a red disc — the same two fills the ring node and the star wear — and
+    // nothing else on the card is ever coloured (the Sunday red is retired).
+    const titleClass = item?.now
+      ? 'detail-ephemeris-title detail-ephemeris-title--now'
       : 'detail-ephemeris-title';
+    const dressNow = span => {
+      if (!item?.now || !span?.style) return span;
+      const word = create('span');
+      word.className = 'detail-now-word';
+      word.textContent = span.textContent;
+      word.style.color = NOW_LABEL_FILL;
+      const disc = create('span');
+      disc.className = 'detail-now-disc';
+      disc.style.background = NOW_NODE_FILL;
+      span.textContent = '';
+      span.appendChild(disc);
+      span.appendChild(word);
+      return span;
+    };
     const rows = Array.isArray(item?.rows) ? item.rows : [];
     const lineTable = bounds?.lineTable;
 
@@ -42,10 +60,10 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
       }
       let lineIdx = 0;
       if (titleText && lineIdx < lineTable.length) {
-        container.appendChild(
+        container.appendChild(dressNow(
           makeLineSpan(create, titleText, titleClass, lineTable[lineIdx],
             { centerWidth: item?.titleAlign === 'center' ? (bounds?.width || 0) : 0 })
-        );
+        ));
         lineIdx += 2 + SECTION_GAP; // the parent-size weekday spans ~2 pitches
       }
       rows.forEach(text => {
@@ -74,7 +92,7 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
     title.className = titleClass;
     title.textContent = titleText;
     if (item?.titleAlign === 'center' && title.style) title.style.textAlign = 'center';
-    card.appendChild(title);
+    card.appendChild(dressNow(title));
     rows.forEach(text => {
       const row = create('div');
       row.className = 'detail-ephemeris-row';

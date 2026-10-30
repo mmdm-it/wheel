@@ -252,11 +252,17 @@ export function detailFor(selected, manifest) {
       rows.push(`▽ ${eph.bassa[0]}  ${h(eph.bassa[1])} m`);
       if (eph.luna && MOON_PRINT[eph.luna]) rows.push(MOON_PRINT[eph.luna]);
     }
+    // THE PRESENT REACHES THE LEAF (O-247, Howell 2026-10-30): today's card
+    // wears the NOW colours — a red disc behind the weekday, the word in
+    // yellow — as the one red thing on the glass, the way the ring node and
+    // the sky's star do at every other level. No other day is coloured: the
+    // Sunday red is gone with it ("there should be no other colored label
+    // than the one for the current day").
     return {
       type: 'ephemeris',
       title: weekday.toUpperCase(),
       titleAlign: 'center',
-      festivo: Boolean(eph?.festivo),
+      now: selected.now === true || serial === todaySerial(),
       rows
     };
   }
