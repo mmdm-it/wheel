@@ -1,5 +1,6 @@
 // The day grid: a 7-column, Sunday-start week-grid pyramid — the one child
-// pyramid that is an ARRAY, not a star field (Howell 2026-07-19). Its dance
+// pyramid that is an ARRAY, not a star field (Howell 2026-07-19) — or as
+// many columns as the reckoning's week has (O-251). Its dance
 // is a RIBBON: the infinite week-grid of the whole timeline scrolling
 // through the CPUA window, mechanically coupled to ring rotation (the
 // sprocket doctrine — a second chain geared to the ring). On settle, the
@@ -26,6 +27,20 @@
 import { computeCPUA } from './usable-areas.js';
 
 const DAYS_PER_WEEK = 7;
+
+// THE WEEK IS THE RECKONING'S (O-251): seven days in an unbroken cycle by
+// default — a row is a week, a column a weekday, Sunday first. A reckoning
+// whose rows are counted otherwise (ten-day rows begun afresh each year,
+// with a short row of festivals closing it) carries its own `week`: the
+// row's length, the column and the CONTINUOUS row of a serial, and the first
+// serial and length of any row.
+const DEFAULT_WEEK = Object.freeze({
+  length: DAYS_PER_WEEK,
+  columnOf: serial => ((serial + 4) % DAYS_PER_WEEK + DAYS_PER_WEEK) % DAYS_PER_WEEK,
+  rowOf: serial => (serial + 4) / DAYS_PER_WEEK, // rows since the Sunday of serial 0
+  rowAt: rowAbs => ({ serial: rowAbs * DAYS_PER_WEEK - 4, length: DAYS_PER_WEEK })
+});
+export const weekOf = reckoning => (reckoning?.week && Number.isFinite(reckoning.week.length) ? reckoning.week : DEFAULT_WEEK);
 
 // Astronomical year for arithmetic: the timeline has no year zero, so
 // 1 BC (yearNumber -1) is astronomical 0, 2 BC is -1, etc.
@@ -226,15 +241,16 @@ export function monthWeeks(yearNumber, month, reckoning = GREGORIAN_RECKONING) {
 export function monthCells(yearNumber, month, reckoning = GREGORIAN_RECKONING) {
   const first = reckoning.serialOf(yearNumber, month, 1);
   const last = first + reckoning.monthSpan(yearNumber, month) - 1;
+  const week = weekOf(reckoning);
   const rows = [];
-  let row = new Array(DAYS_PER_WEEK).fill(null);
-  let col = ((first + 4) % 7 + 7) % 7;
+  let row = new Array(week.length).fill(null);
+  let col = week.columnOf(first);
   for (let serial = first; serial <= last; serial += 1) {
     row[col] = { day: reckoning.dateOf(serial).day, serial };
     col += 1;
-    if (col === DAYS_PER_WEEK) {
+    if (col === week.length) {
       rows.push(row);
-      row = new Array(DAYS_PER_WEEK).fill(null);
+      row = new Array(week.length).fill(null);
       col = 0;
     }
   }
@@ -266,7 +282,7 @@ export const WEDGE = {
 
 export const WEEKDAY_LETTERS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
-export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride = null) {
+export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride = null, columns = DAYS_PER_WEEK) {
   const width = viewport.width ?? 0;
   const SSd = viewport.SSd ?? width;
   const magX = magnifier.x ?? magnifier.cx ?? 0;
@@ -329,19 +345,27 @@ export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride
     base += t;
   }
 
+  // MORE COLUMNS, THE SAME ARCS (O-251): the outermost and innermost arcs
+  // stay where seven columns put them, and ten columns divide the same
+  // span more finely — the cells shrink to fit, the lattice does not grow.
+  const cols = Number.isFinite(columns) && columns >= 2 ? Math.floor(columns) : DAYS_PER_WEEK;
+  const colStep = (step * (DAYS_PER_WEEK - 1)) / (cols - 1);
   return {
     hub2,
     base,
     step,
+    columns: cols,
+    colStep,
     // Ray index 0 = the weekday header; weeks 1..6 sit on rays 1..6.
     rayAngle: idx => base + ((WEDGE.RAY_OFFSETS_DEG[idx] ?? 0) * Math.PI) / 180,
     // Continuous version for the rotating ribbon: fractional rows allowed;
     // rowOffset 0 = week row 1's ray; later weeks descend (decreasing angle).
     angleForRowOffset: rowOffset => base
       + ((WEDGE.RAY_OFFSETS_DEG[1] - rowOffset * WEDGE.RAY_STEP_DEG) * Math.PI) / 180,
-    // Weekday column (0 = Sunday … 6 = Saturday) → radius; SUNDAY is the
-    // OUTERMOST arc (greatest radius, nearest the ring band).
-    radiusFor: weekday => rIn + step * (6 - weekday),
+    // Weekday column (0 = Sunday … 6 = Saturday, or the first to the last
+    // of a longer row) → radius; the FIRST column is the OUTERMOST arc
+    // (greatest radius, nearest the ring band).
+    radiusFor: weekday => rIn + colStep * (cols - 1 - weekday),
     pointAt(angle, radius) {
       return { x: hub2.x + Math.cos(angle) * radius, y: hub2.y + Math.sin(angle) * radius };
     }
@@ -356,11 +380,12 @@ export function computeWedgeLattice(viewport, arcParams, magnifier, tiltOverride
 // month on the ring. One gap slot is worth a long month's rows, the pace the
 // ribbon already runs at through December and January either side of it.
 export const GAP_ROWS_PER_SLOT = 31 / DAYS_PER_WEEK;
+// The same, for a reckoning whose rows are not seven days long (O-251).
+export const gapRowsPerSlot = reckoning => 31 / weekOf(reckoning).length;
 
 // The emblem's fixed length per viewport (O-237), memoised across frames.
 const EMBLEM_LENGTHS = new Map();
 
-const rowOfSerial = serial => (serial + 4) / DAYS_PER_WEEK; // week rows since the Sunday of serial 0
 const seamShift = (serial, seams) => seams.reduce((n, seam) => (serial >= seam.serial ? n + seam.rows : n), 0);
 
 /**
@@ -370,7 +395,7 @@ const seamShift = (serial, seams) => seams.reduce((n, seam) => (serial >= seam.s
  */
 export function ribbonRowAt(yearNumber, month, fraction = 0, seams = [], reckoning = GREGORIAN_RECKONING) {
   const start = reckoning.serialOf(yearNumber, month, 1);
-  return rowOfSerial(start + fraction * reckoning.monthSpan(yearNumber, month)) + seamShift(start, seams);
+  return weekOf(reckoning).rowOf(start + fraction * reckoning.monthSpan(yearNumber, month)) + seamShift(start, seams);
 }
 
 /**
@@ -393,17 +418,18 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   // Header letters come from the volume's own naming when it offers them
   // (so a translation moves the lattice and the prose together); the
   // built-in row is the fallback, and keeps this module volume-agnostic.
-  const weekdayLetters = Array.isArray(opts.weekdayLetters) && opts.weekdayLetters.length === 7
+  const week = weekOf(reckoning);
+  const weekdayLetters = Array.isArray(opts.weekdayLetters) && opts.weekdayLetters.length === week.length
     ? opts.weekdayLetters
-    : WEEKDAY_LETTERS;
+    : (week.length === DAYS_PER_WEEK ? WEEKDAY_LETTERS : Array.from({ length: week.length }, (_, i) => String(i + 1)));
 
-  const lattice = computeWedgeLattice(viewport, arcParams, magnifier);
+  const lattice = computeWedgeLattice(viewport, arcParams, magnifier, null, week.length);
 
   // Cell size from the lattice's own gaps: radial step vs angular gap at
   // the middle radius, whichever is tighter.
-  const midR = lattice.radiusFor(3);
+  const midR = lattice.radiusFor(Math.floor((week.length - 1) / 2));
   const angularGap = midR * (WEDGE.RAY_STEP_DEG * Math.PI) / 180;
-  const nodeR = Math.min(lattice.step, angularGap) * 0.38; // +15% then +10% (sittings)
+  const nodeR = Math.min(lattice.colStep, angularGap) * 0.38; // +15% then +10% (sittings)
   const labelFontPx = Math.max(11, Math.min(20, nodeR * 1.05));
 
   const nodes = [];
@@ -470,7 +496,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   const anchorRow = Number.isFinite(opts.anchorRow)
     ? opts.anchorRow
     : ribbonRowAt(yearNumber, month, fraction, seams, reckoning);
-  const centerRow = Math.floor(rowOfSerial(startSerial));
+  const centerRow = Math.floor(week.rowOf(startSerial));
   // The band is an edge too: a ribbon cell never sits on the ring. Laid
   // edge to edge, the lower rows otherwise ran onto the band and its month
   // names; a cell that would touch the band's inner edge is not drawn.
@@ -485,10 +511,10 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   // Returns the row's cells drawn and its nearest and farthest offsets.
   const pushRow = rowAbs => {
     const before = nodes.length;
-    const sundaySerial = rowAbs * 7 - 4;
+    const { serial: rowStart, length: rowLength } = week.rowAt(rowAbs);
     let lo = Infinity, hi = -Infinity;
-    for (let c = 0; c < 7; c += 1) {
-      const serial = sundaySerial + c;
+    for (let c = 0; c < rowLength; c += 1) {
+      const serial = rowStart + c;
       const offset = rowAbs + seamShift(serial, seams) - anchorRow + 2; // anchor near mid-fan
       lo = Math.min(lo, offset); hi = Math.max(hi, offset);
       const angle = lattice.angleForRowOffset(offset);
@@ -536,7 +562,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   // The emblem's clear length along a ray of the given angle: from the
   // Saturday side out to just short of the ring, along its centre line and
   // both long edges, capped at the seven columns.
-  const rNear = lattice.radiusFor(6) - nodeR;
+  const rNear = lattice.radiusFor(week.length - 1) - nodeR;
   const rCap = lattice.radiusFor(0) + nodeR;
   // Measured against the ARTWORK, not its box: the box is the whole
   // water's height, but the artwork is fitted inside it at its own
@@ -560,7 +586,7 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
   // a fixed length for this viewport, memoised across frames (the search
   // walks a few hundred rays and must not run at every frame of a turn).
   const emblemLength = h => {
-    const key = `${width}x${height}:${Math.round(ringHubX)}:${Math.round(h * 10)}:${aspect ?? '-'}`;
+    const key = `${width}x${height}:${Math.round(ringHubX)}:${Math.round(h * 10)}:${aspect ?? '-'}:${week.length}`;
     if (EMBLEM_LENGTHS.has(key)) return EMBLEM_LENGTHS.get(key);
     let least = rCap - rNear;
     for (let off = -30; off <= 40; off += 0.25) {
@@ -574,8 +600,8 @@ export function computeDayGridLayout(viewport, magnifier, arcParams = {}, opts =
     return least;
   };
   for (const seam of seams) {
-    const lastPre = Math.floor(rowOfSerial(seam.serial - 1)) + seamShift(seam.serial - 1, seams);
-    const firstPost = Math.floor(rowOfSerial(seam.serial)) + seamShift(seam.serial, seams);
+    const lastPre = Math.floor(week.rowOf(seam.serial - 1)) + seamShift(seam.serial - 1, seams);
+    const firstPost = Math.floor(week.rowOf(seam.serial)) + seamShift(seam.serial, seams);
     const clearRows = firstPost - lastPre - 1;
     if (!(clearRows >= 1.5)) continue;
     const angle = lattice.angleForRowOffset((lastPre + firstPost) / 2 - anchorRow + 2);

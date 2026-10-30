@@ -10,6 +10,7 @@ import { SYSTEMS, systemOf, splitSystemId, systemIdOf, presentIn, todaySerial } 
 import { GREGORIAN_RECKONING, JULIAN_RECKONING, monthWeeks, monthCells, daySerial, serialToDate } from '../src/geometry/day-grid.js';
 import { isHebrewLeapYear, daysInHebrewYear, hebrewNumeral } from '../src/adapters/calendar-hebrew.js';
 import * as islamic from '../src/adapters/calendar-islamic.js';
+import * as french from '../src/adapters/calendar-republican.js';
 const { arabicNumeral } = islamic;
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, buildCalendarDecades, buildCalendarCenturies, getCalendarMonths, getCalendarCenturyDecades, getCalendarDecadeYears } from '../src/adapters/volume-helpers.js';
 
@@ -246,6 +247,129 @@ describe('the Islamic calendar (O-250)', () => {
     assert.equal(now.length, 1);
     assert.equal(now[0].name, arabicNumeral(p.day));
     assert.equal(now[0].monthName, I.monthsOf(p.year)[p.month - 1].name);
+  });
+});
+
+describe('the French Republican calendar (O-251)', () => {
+  const F = SYSTEMS.republican;
+  const at = (y, m, d) => F.dateOf(daySerial(y, m, d));
+  const on = (y, m, d) => serialToDate(F.serialOf(y, m, d));
+  it('begins at the equinox of 1792 and keeps the Convention\'s own dates', () => {
+    assert.deepEqual(at(1792, 9, 22), { year: 1, month: 1, day: 1 }, '1 Vendémiaire An I');
+    assert.equal(F.epochSerial, daySerial(1792, 9, 22));
+    assert.deepEqual(on(2, 11, 9), { yearNumber: 1794, month: 7, day: 27 }, '9 Thermidor An II');
+    assert.deepEqual(on(8, 2, 18), { yearNumber: 1799, month: 11, day: 9 }, '18 Brumaire An VIII');
+    assert.deepEqual(on(14, 4, 10), { yearNumber: 1805, month: 12, day: 31 }, '10 Nivôse An XIV, the last day it was kept');
+    // The fourteen New Years as the almanacs printed them.
+    const newYears = [[1792, 22], [1793, 22], [1794, 22], [1795, 23], [1796, 22], [1797, 22], [1798, 22], [1799, 23], [1800, 23], [1801, 23], [1802, 23], [1803, 24], [1804, 23], [1805, 23]];
+    newYears.forEach(([y, d], i) => assert.deepEqual(on(i + 1, 1, 1), { yearNumber: y, month: 9, day: d }, `An ${i + 1}`));
+  });
+  it('takes its leap years from the true equinox at Paris: III, VII, XI, and 235 begins on 23 September 2026', () => {
+    const { isFrenchLeapYear, daysInFrenchYear, solarLongitude } = french;
+    assert.deepEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].filter(isFrenchLeapYear), [3, 7, 11]);
+    assert.equal(daysInFrenchYear(3), 366);
+    assert.equal(daysInFrenchYear(4), 365);
+    // The Sun's longitude at three published equinoxes, to a ten-thousandth of a degree.
+    const rd = (y, m, d, h) => daySerial(y, m, d) + 719163 + h / 24;
+    assert.ok(Math.abs(solarLongitude(rd(2026, 9, 23, 5 / 60)) - 180) < 0.001, 'autumn 2026: 23 September 00:05 UT');
+    assert.ok(Math.abs(solarLongitude(rd(2025, 9, 22, 18 + 19 / 60)) - 180) < 0.001, 'autumn 2025');
+    assert.ok(solarLongitude(rd(2000, 3, 20, 7 + 35 / 60)) < 0.001, 'spring 2000');
+    assert.deepEqual(at(2026, 9, 23), { year: 235, month: 1, day: 1 });
+    assert.deepEqual(at(2026, 9, 22), { year: 234, month: 13, day: 6 }, 'the last festival of 234, a sextile year (22 Sep 2025 to 23 Sep 2026)');
+    assert.equal(daysInFrenchYear(234), 366);
+    assert.equal(daysInFrenchYear(235), 365);
+    assert.deepEqual(at(2026, 10, 30), { year: 235, month: 2, day: 8 }, '8 Brumaire 235 (Romme\'s rule would say the 9th)');
+    const first = F.serialOf(234, 1, 1);
+    for (let s = first; s < first + 365; s += 3) {
+      const d = F.dateOf(s);
+      assert.equal(F.serialOf(d.year, d.month, d.day), s);
+    }
+  });
+  it('has twelve months of thirty and the festivals: five, six in a leap year, each with a name', () => {
+    const months = F.monthsOf(235);
+    assert.equal(months.length, 13);
+    assert.deepEqual(months.slice(0, 12).map(m => m.days), new Array(12).fill(30));
+    assert.equal(months[12].days, 5);
+    assert.equal(F.monthsOf(3)[12].days, 6, 'An III was sextile');
+    assert.equal(months[0].name, 'Vendémiaire');
+    assert.equal(months[0].short, 'VEND');
+    assert.equal(months[10].name, 'Thermidor');
+    assert.equal(months[12].name, 'Sansculottides');
+    assert.equal(F.monthId(235, 2), '235:brumaire@republican');
+    assert.equal(F.dayWord(235, 1, 1), 'Raisin');
+    assert.equal(F.dayWord(235, 2, 8), 'Scorsonère');
+    assert.equal(F.dayWord(235, 12, 14), 'Noix');
+    assert.equal(F.dayWord(235, 1, 10), 'Cuve', 'every décadi a tool');
+    assert.equal(F.dayWord(235, 1, 5), 'Cheval', 'every quintidi an animal');
+    assert.equal(F.dayWord(3, 13, 6), 'La Révolution');
+    assert.equal(F.dayWord(235, 13, 5), 'Les Récompenses');
+    for (let m = 1; m <= 12; m += 1) for (let d = 1; d <= 30; d += 1) assert.ok(F.dayWord(235, m, d), `${m}/${d} named`);
+  });
+  it('counts the week in décades: ten columns headed I to X, begun afresh each year', () => {
+    const { FRENCH_RECKONING } = french;
+    assert.equal(FRENCH_RECKONING.week.length, 10);
+    assert.deepEqual(F.weekdayLetters, ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']);
+    assert.equal(F.weekdays[9], 'Décadi');
+    assert.equal(F.weekdayOf(F.serialOf(235, 1, 1)), 0, 'the first of the year is a primidi');
+    assert.equal(F.weekdayOf(F.serialOf(235, 2, 8)), 7, 'the 8th an octidi');
+    assert.equal(F.weekdayOf(F.serialOf(235, 2, 10)), 9, 'the 10th a décadi');
+    assert.equal(F.weekdayOf(F.serialOf(235, 2, 11)), 0, 'and the 11th a primidi again');
+    const rows = monthCells(235, 2, FRENCH_RECKONING);
+    assert.equal(rows.length, 3, 'three rows');
+    assert.ok(rows.every(r => r.length === 10 && r.every(Boolean)), 'of ten, all full');
+    assert.deepEqual(rows[2].map(c => c.day), [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]);
+    const fetes = monthCells(235, 13, FRENCH_RECKONING);
+    assert.equal(fetes.length, 1);
+    assert.deepEqual(fetes[0].map(c => c && c.day), [1, 2, 3, 4, 5, null, null, null, null, null]);
+    // The rows are consistent with themselves across a New Year: a serial
+    // lies in the row its continuous row number names.
+    const week = FRENCH_RECKONING.week;
+    for (let s = F.serialOf(234, 12, 25); s <= F.serialOf(235, 1, 12); s += 1) {
+      const row = week.rowAt(Math.floor(week.rowOf(s)));
+      assert.ok(s >= row.serial && s < row.serial + row.length, `serial ${s} in its row`);
+      assert.equal(week.columnOf(s), s - row.serial);
+    }
+    assert.equal(week.rowAt(Math.floor(week.rowOf(F.serialOf(234, 13, 1)))).length, 6, 'the festivals are one short row (six in 234)');
+    assert.equal(week.rowAt(Math.floor(week.rowOf(F.serialOf(235, 13, 1)))).length, 5, 'five in 235');
+    assert.equal(monthWeeks(2026, 7).length, 5, 'the seven-day grid is untouched');
+  });
+  it('writes French: Roman years, the rings above them, its name, its word for now; and the sky wears its short months', () => {
+    const { romanNumeral } = french;
+    assert.equal(F.direction, 'ltr');
+    assert.equal(F.yearName(14), 'XIV');
+    assert.equal(F.yearName(235), 'CCXXXV');
+    assert.equal(romanNumeral(1208), 'MCCVIII');
+    assert.equal(F.dayName(8), '8');
+    assert.equal(F.decadeWord(3), 'ANNÉES TRENTE');
+    assert.equal(F.decadeShort(9, 295), 'CCXC', 'the sky names a decade by its first year in Roman numerals');
+    assert.equal(F.decadeShort(0, 3), 'I', 'the first decade of the Republic');
+    assert.equal(G.decadeShort(9, 1995), '', 'the English words are short already');
+    const decades = buildCalendarDecades(manifest, { initialItemId: 'dd:23@republican' });
+    assert.equal(decades.items[decades.selectedIndex].short, 'CCXXX');
+    assert.equal(decades.items[decades.selectedIndex].name, 'ANNÉES TRENTE');
+    assert.equal(F.centuryLens(3, 1), 'IIIᵉ');
+    assert.equal(F.centuryLens(1, 1), 'Iᵉʳ');
+    assert.equal(F.centuryPhrase(3, 1), 'IIIᵉ SIÈCLE');
+    assert.equal(F.centuryWord(1), 'SIÈCLE');
+    assert.equal(F.nativeName, 'RÉPUBLICAIN');
+    assert.equal(F.nowWord, 'PRÉSENT');
+    const years = buildCalendarYears(manifest, { initialItemId: '235@republican' });
+    const real = years.items.filter(Boolean);
+    assert.equal(real[0].id, '1@republican', 'the ring starts at the Republic');
+    assert.equal(years.items[years.selectedIndex].name, 'CCXXXV');
+    const sky = getCalendarMonths(manifest, years.items[years.selectedIndex], 'year');
+    assert.equal(sky.length, 13);
+    assert.equal(sky[0].short, 'VEND');
+    assert.equal(sky[12].short, 'FÊTES');
+    const t = todaySerial();
+    const p = F.dateOf(t);
+    const days = buildCalendarDaysCousinChain(manifest, { centerId: F.dayId(p.year, p.month, p.day) });
+    const now = days.items.filter(i => i && i.now);
+    assert.equal(now.length, 1);
+    assert.equal(now[0].dayWord, F.dayWord(p.year, p.month, p.day));
+    assert.equal(now[0].monthName, F.monthsOf(p.year)[p.month - 1].name);
+    const first = days.items.find(Boolean);
+    assert.ok(first.serial >= F.epochSerial, 'no day before the Republic');
   });
 });
 

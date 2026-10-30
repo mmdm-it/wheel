@@ -343,6 +343,8 @@ export function getCalendarMonths(manifest, selected, calendarMode, system = nul
   return sys.monthsOf(y).map((m, idx) => ({
     id: sys.monthId(y, m.number),
     name: m.name,
+    // The sky's short form, where the system states one (O-251).
+    ...(m.short ? { short: m.short } : {}),
     order: idx,
     parentId: yearId,
     level: 'month',
@@ -625,10 +627,12 @@ export function buildCalendarDecades(manifest, { initialItemId, system = null } 
   yearNumbersFor(manifest, sys).forEach(y => {
     const bare = decadeIdOf(y);
     if (last && last.bare === bare) { last.lastYear = y; return; }
+    const short = typeof sys.decadeShort === 'function' ? sys.decadeShort(decadeDigitOf(y), y) : '';
     last = {
       id: sys.decadeId(bare),
       bare,
       name: sys.decadeWord(decadeDigitOf(y)),
+      ...(short ? { short } : {}),
       level: 'decade',
       decadeDigit: decadeDigitOf(y),
       centuryNumber: centuryNumberOf(y),
@@ -730,6 +734,7 @@ export function buildCalendarMonthsCousinChain(manifest, { initialItemId, system
       sorted.push({
         id: sys.monthId(y, m.number),
         name: m.name,
+        ...(m.short ? { short: m.short } : {}),
         parentId: yearId,
         yearNumber: y,
         monthNumber: m.number,
@@ -813,9 +818,13 @@ export function buildCalendarDaysCousinChain(manifest, { centerId, system = null
   const sorted = [];
   for (let serial = first; serial <= last; serial += 1) {
     const d = sys.dateOf(serial);
+    // The day's own name where the system gives every day one (O-251): the
+    // lens's caption and the card say it.
+    const word = typeof sys.dayWord === 'function' ? sys.dayWord(d.year, d.month, d.day) : '';
     sorted.push({
       id: sys.dayId(d.year, d.month, d.day),
       name: sys.dayName(d.day),
+      ...(word ? { dayWord: word } : {}),
       dayNumber: d.day,
       monthNumber: d.month,
       yearNumber: d.year,

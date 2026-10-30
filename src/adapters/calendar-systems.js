@@ -20,6 +20,8 @@ import { HEBREW_RECKONING, hebrewMonthsOf, hebrewMonthKeyOf, hebrewNumeral, HEBR
 import { DECADE_WORDS, CENTURY_WORD, CENTURY_ERA_BC, ordinal, centuryShortLabel, centuryLongLabel } from './calendar-eras.js';
 import { ISLAMIC_RECKONING, islamicMonthsOf, islamicMonthKeyOf, arabicNumeral, ARABIC_WEEKDAYS, ARABIC_WEEKDAY_LETTERS,
   ARABIC_DECADE_WORDS, ARABIC_CENTURY_WORD, arabicOrdinal, arabicCenturyPhrase, ISLAMIC_NAME, ARABIC_NOW } from './calendar-islamic.js';
+import { FRENCH_RECKONING, frenchMonthsOf, frenchMonthKeyOf, frenchDayName, romanNumeral, romanOrdinal, FRENCH_WEEKDAYS,
+  FRENCH_WEEKDAY_LETTERS, FRENCH_DECADE_WORDS, frenchDecadeShort, FRENCH_CENTURY_WORD, frenchCenturyPhrase, REPUBLICAN_NAME, FRENCH_NOW } from './calendar-republican.js';
 
 export const GREGORIAN = 'gregorian';
 const SUFFIX = /^(.*)@([a-z]+)$/;
@@ -58,12 +60,16 @@ const eraYearSort = y => (y < 0 ? y + 3001 : y + 3000);
 // word CENTURY (or CENTURY B.C.) as the lens's caption.
 const ENGLISH_ERAS = {
   decadeWord: digit => DECADE_WORDS[digit] || '',
+  // The decade's short form for the sky, where its word is long (O-251),
+  // given the decade's digit and a year in it; empty means the word itself.
+  decadeShort: () => '',
   centuryLens: (n, era) => ordinal(n),
   centuryLabel: (n, era) => centuryShortLabel(n, era),
   centuryPhrase: (n, era) => centuryLongLabel(n, era),
   centuryWord: era => (era < 0 ? `${CENTURY_WORD} ${CENTURY_ERA_BC}` : CENTURY_WORD)
 };
-function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW' }) {
+const SEVEN_DAY_WEEKDAY = serial => ((serial + 4) % 7 + 7) % 7;
+function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW', dayWord = null }) {
   const suffix = id === GREGORIAN ? '' : `@${id}`;
   return Object.freeze({
     id,
@@ -79,6 +85,12 @@ function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearS
     direction,
     weekdays,
     weekdayLetters,
+    // Which of the week's names a real day wears (O-251): the seven-day
+    // cycle unless the reckoning counts its rows otherwise (the décade).
+    weekdayOf: typeof reckoning.week?.columnOf === 'function' ? reckoning.week.columnOf : SEVEN_DAY_WEEKDAY,
+    // A day's own name, where the system gives every day one (the French
+    // rural names, O-251); empty elsewhere.
+    dayWord: typeof dayWord === 'function' ? dayWord : () => '',
     noYearZero: Boolean(noYearZero),
     // A count that BEGINS (anno mundi: 1 Tishri 1) has no day before its
     // epoch; the rings of such a system start there, whatever the data's span.
@@ -125,6 +137,7 @@ export const SYSTEMS = Object.freeze({
     nativeName: HEBREW_NAME,
     nowWord: HEBREW_NOW,
     eras: {
+      decadeShort: () => '',
       decadeWord: digit => HEBREW_DECADE_WORDS[digit] || '',
       centuryLens: n => hebrewCenturyLabel(n),
       centuryLabel: n => hebrewCenturyLabel(n),
@@ -148,11 +161,36 @@ export const SYSTEMS = Object.freeze({
     nativeName: ISLAMIC_NAME,
     nowWord: ARABIC_NOW,
     eras: {
+      decadeShort: () => '',
       decadeWord: digit => ARABIC_DECADE_WORDS[digit] || '',
       centuryLens: n => arabicOrdinal(n),
       centuryLabel: n => arabicOrdinal(n),
       centuryPhrase: n => arabicCenturyPhrase(n),
       centuryWord: () => ARABIC_CENTURY_WORD
+    }
+  }),
+  // The Republic's count: from the equinox of 1792, no era line, the year
+  // in Roman numerals, the ten-day décade for a week, and a name on every day.
+  republican: makeSystem({
+    id: 'republican', name: 'FRENCH REPUBLICAN', reckoning: FRENCH_RECKONING,
+    monthsOf: frenchMonthsOf,
+    monthKeyOf: frenchMonthKeyOf,
+    yearName: romanNumeral,
+    yearSort: y => y,
+    noYearZero: false,
+    weekdays: FRENCH_WEEKDAYS,
+    weekdayLetters: FRENCH_WEEKDAY_LETTERS,
+    epochSerial: FRENCH_RECKONING.serialOf(1, 1, 1),
+    nativeName: REPUBLICAN_NAME,
+    nowWord: FRENCH_NOW,
+    dayWord: (y, m, d) => frenchDayName(m, d),
+    eras: {
+      decadeWord: digit => FRENCH_DECADE_WORDS[digit] || '',
+      decadeShort: (digit, year) => frenchDecadeShort(digit, year),
+      centuryLens: n => romanOrdinal(n),
+      centuryLabel: n => romanOrdinal(n),
+      centuryPhrase: n => frenchCenturyPhrase(n),
+      centuryWord: () => FRENCH_CENTURY_WORD
     }
   })
 });

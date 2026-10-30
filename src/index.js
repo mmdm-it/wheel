@@ -11,7 +11,7 @@ import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-pyramid-geometry.js';
-import { computeDayGridLayout, ribbonRowAt, daySerial, GAP_ROWS_PER_SLOT } from './geometry/day-grid.js';
+import { computeDayGridLayout, ribbonRowAt, daySerial, gapRowsPerSlot } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
@@ -1979,7 +1979,7 @@ export function createApp({
               const info = monthAt(slot);
               if (!info) { if (lastReal !== null) empty += 1; continue; }
               if (lastReal !== null && empty > 0) {
-                seams.push({ serial: info.firstSerial ?? daySerial(info.yearNumber, info.month, 1), rows: empty * GAP_ROWS_PER_SLOT });
+                seams.push({ serial: info.firstSerial ?? daySerial(info.yearNumber, info.month, 1), rows: empty * gapRowsPerSlot(info.reckoning) });
               }
               if (slot < slotFloat) before = { slot, info };
               else if (!after) after = { slot, info };

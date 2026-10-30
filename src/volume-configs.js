@@ -716,6 +716,8 @@ function makeCalendarLabelFormatter({ locale }) {
     // In the item's own calendar's words (O-248): English for the Gregorian
     // and the Julian, Hebrew for the Hebrew.
     if (context === 'caption') {
+      // A day with a name of its own says it beside its numeral (O-251).
+      if (item.level === 'day') return String(item.dayWord || '').toUpperCase();
       if (item.level !== 'century') return '';
       return calendarSystemOf(item.system).centuryWord(item.era);
     }

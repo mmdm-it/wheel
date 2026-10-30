@@ -701,6 +701,18 @@ export class FocusRingView {
     this.nowLabel.setAttribute('y', seat.y);
     this.nowLabel.style.fill = NOW_LABEL_FILL;
     this.nowLabel.textContent = nowButton.label;
+    // THE WORD STAYS ON THE GLASS (O-251): a long word for now (the French
+    // PRÉSENT) is set smaller so that, centred on the disc, it neither
+    // leaves the screen's edge nor reaches far past the disc on the other
+    // side, where the ring's labels pass; a short word (NOW) keeps the
+    // face's own size. Measured as drawn, not estimated: the face is wide.
+    this.nowLabel.style.fontSize = '';
+    try {
+      const drawn = typeof this.nowLabel.getComputedTextLength === 'function' ? this.nowLabel.getComputedTextLength() : 0;
+      const basePx = Number.parseFloat(typeof getComputedStyle === 'function' ? getComputedStyle(this.nowLabel).fontSize : '') || 15.75;
+      const room = Math.max(8, Math.min(seat.x - 6, seat.radius * 1.6));
+      if (drawn > room * 2) this.nowLabel.style.fontSize = `${(basePx * (room * 2) / drawn).toFixed(2)}px`;
+    } catch (_) { /* a face that cannot be measured keeps its size */ }
     // The word is tappable too: its class family turns pointer events off.
     this.nowLabel.style.pointerEvents = onClick ? 'auto' : 'none';
     this.nowLabel.onclick = onClick;

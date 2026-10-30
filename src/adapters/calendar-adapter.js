@@ -234,9 +234,11 @@ export function detailFor(selected, manifest) {
     const yearNumber = civil.yearNumber;
     const monthNumber = civil.month;
     const dayNumber = civil.day;
-    // The weekday in the day's own calendar (Hebrew names for a Hebrew day, O-248).
-    const dow = ((serial + 4) % 7 + 7) % 7;
+    // The weekday in the day's own calendar (Hebrew names for a Hebrew day,
+    // O-248) — by the day's own week, where the calendar counts its rows
+    // otherwise (the French décade, O-251).
     const daySystem = systemOf(systemIdOf(id));
+    const dow = typeof daySystem.weekdayOf === 'function' ? daySystem.weekdayOf(serial) : ((serial + 4) % 7 + 7) % 7;
     const weekday = (daySystem.id !== GREGORIAN && daySystem.weekdays?.[dow]) || getCalendarWeekdayNames(manifest)[dow] || '';
     if (!weekday) return null;
 
@@ -245,6 +247,13 @@ export function detailFor(selected, manifest) {
     // Sun computed for any date on the chain; tides/moon/festivo only
     // inside the extracted print window.
     const rows = [];
+    // The day's own name, where its calendar gives every day one (the
+    // French rural names, O-251), first on the card.
+    if (typeof daySystem.dayWord === 'function') {
+      const own = daySystem.dateOf(serial);
+      const word = daySystem.dayWord(own.year, own.month, own.day);
+      if (word) rows.push(String(word));
+    }
     const sun = localSunTimes(yearNumber, monthNumber, dayNumber, FANO.lat, FANO.lon, FANO.zoneSince);
     if (sun) rows.push(`↑ ${sun.alba}    ↓ ${sun.tramonto}`);
     const key = `${yearNumber}-${String(monthNumber).padStart(2, '0')}-${String(dayNumber).padStart(2, '0')}`;
@@ -607,7 +616,7 @@ const CALENDARS = [
   { id: 'julian', name: 'JULIAN', live: true },
   { id: 'hebrew', name: 'HEBREW', live: true },
   { id: 'islamic', name: 'ISLAMIC', live: true },
-  { id: 'republican', name: 'FRENCH REPUBLICAN', live: false },
+  { id: 'republican', name: 'FRENCH REPUBLICAN', live: true },
   { id: 'maya', name: 'MAYA', live: false },
   { id: 'chinese', name: 'CHINESE', live: false }
 ];

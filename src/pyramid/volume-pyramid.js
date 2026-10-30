@@ -210,9 +210,14 @@ export function buildCalendarPyramid({
     : getCalendarMonths(manifest, selected, calendarModeRef?.()))
     // Only a LATIN name is clipped to three letters: a Hebrew month (O-248)
     // is already short, and its letters are not the kind that abbreviate.
-    .map(item => (item?.name && item.level === 'month' && /^[A-Za-z]+$/.test(String(item.name))
-      ? { ...item, name: String(item.name).slice(0, 3).toUpperCase() }
-      : item));
+    // A month or a decade that states its own short form (the French,
+    // O-251) wears it in the sky.
+    .map(item => {
+      if (!item?.name) return item;
+      if (item.short && (item.level === 'month' || item.level === 'decade')) return { ...item, name: String(item.short).toUpperCase() };
+      if (item.level !== 'month') return item;
+      return /^[A-Za-z]+$/.test(String(item.name)) ? { ...item, name: String(item.name).slice(0, 3).toUpperCase() } : item;
+    });
   const onClick = instr => {
     if (!instr?.item) return;
     const app = typeof getApp === 'function' ? getApp() : null;
