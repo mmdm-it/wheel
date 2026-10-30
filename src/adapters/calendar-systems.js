@@ -87,7 +87,7 @@ const DECIMAL_GROUPING = Object.freeze({
 });
 // A day's parent seat on the days ring: the month's name before the year's.
 const MONTH_THEN_YEAR = (yearName, monthName) => `${String(monthName).toUpperCase()} ${yearName}`;
-function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW', dayWord = null, grouping = DECIMAL_GROUPING, dayTitle = null, monthPhrase = MONTH_THEN_YEAR }) {
+function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearSort, noYearZero, direction = 'ltr', weekdays = WEEKDAYS, weekdayLetters = WEEKDAY_LETTERS, epochSerial = null, eras = ENGLISH_ERAS, nativeName = name, nowWord = 'NOW', dayWord = null, grouping = DECIMAL_GROUPING, dayTitle = null, monthPhrase = MONTH_THEN_YEAR, yearShort = null }) {
   const suffix = id === GREGORIAN ? '' : `@${id}`;
   return Object.freeze({
     id,
@@ -122,6 +122,9 @@ function makeSystem({ id, name, reckoning, monthsOf, monthKeyOf, yearName, yearS
     epochSerial: Number.isFinite(epochSerial) ? epochSerial : null,
     monthsOf,
     yearName,
+    // The year's short form for the sky, where its name is long (a tun's
+    // 13.0.16 in a k'atun's sky of twenty, O-252); empty means the name.
+    yearShort: typeof yearShort === 'function' ? yearShort : () => '',
     yearSort,
     dayName: typeof reckoning.dayName === 'function' ? reckoning.dayName : String,
     serialOf: (y, m, d) => reckoning.serialOf(y, m, d),
@@ -236,8 +239,10 @@ export const SYSTEMS = Object.freeze({
     dayTitle: serial => tzolkinLabel(serial),
     dayWord: (y, m, d) => haabLabel(MAYA_RECKONING.serialOf(y, m, d)),
     monthPhrase: (yearName, monthName) => `${yearName}.${monthName}`,
+    // In the skies of twenty, the tun and the k'atun by their place alone.
+    yearShort: y => String(((y % 20) + 20) % 20),
     eras: {
-      decadeShort: () => '',
+      decadeShort: digit => String(digit),
       decadeWord: digit => `${MAYA_DECADE_WORD} ${digit}`,
       centuryLens: n => String(n),
       centuryLabel: n => `${MAYA_CENTURY_WORD} ${n}`,

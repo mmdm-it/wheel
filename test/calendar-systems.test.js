@@ -465,6 +465,11 @@ describe('the Maya calendar (O-252)', () => {
     assert.equal(centuries.items.filter(Boolean)[0].name, 'B\'AK\'TUN 0');
     assert.equal(getCalendarCenturyDecades(manifest, 'c:13@maya').length, 20);
     assert.equal(getCalendarDecadeYears(manifest, 'dd:260@maya').length, 20);
+    // In the skies of twenty, short forms: the place alone.
+    assert.equal(getCalendarCenturyDecades(manifest, 'c:13@maya')[11].short, '11');
+    assert.equal(getCalendarDecadeYears(manifest, 'dd:260@maya')[16].short, '16');
+    assert.equal(getCalendarDecadeYears(manifest, 'dd:260@maya')[16].name, '13.0.16', 'the ring keeps the Long Count');
+    assert.equal(G.yearShort(2026), '', 'the Gregorian year is short already');
     assert.equal(getCalendarMonths(manifest, years.items[years.selectedIndex], 'year').length, 18);
     const t = todaySerial();
     const p = M.dateOf(t);

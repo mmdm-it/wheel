@@ -582,6 +582,7 @@ export function buildCalendarYears(manifest, { arrangement, initialItemId, syste
   const sorted = yearNumbers.map(y => ({
     id: sys.yearId(y),
     name: sys.yearName(y),
+    ...(sys.yearShort(y) ? { short: sys.yearShort(y) } : {}),
     sort: sys.yearSort(y),
     yearNumber: y,
     parentId: null,
