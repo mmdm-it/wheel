@@ -196,17 +196,17 @@ describe('the day card carries the manifold the index names for the day (O-256)'
       { lineTable, SSd: 360, width: 360, deckTop: 240 }, { createElement: create });
     const img = card.children.find(c => c.tagName === 'img');
     assert.equal(img.src, './data/calendar/manifolds/g342.svg');
-    assert.equal(img.style.top, '130px', 'the line after the weekday\'s two pitches and gap');
+    assert.equal(img.style.top, '150px', 'two lines under the weekday\'s two pitches and gap');
     const tables = card.children.filter(c => /detail-ephemeris-table/.test(c.className));
     assert.deepEqual(tables.map(t => t.style.top), ['220px', '230px']);
     // The room runs to a pitch above the first table; the arc's innermost
-    // edge over it is the lowest line's; the box is pulled left by 5% of the
-    // panel (18px). Its proportion would make it 160px tall, but the room
-    // (130..210) less the label's two lines leaves 60.
-    const left = 60 - 18, width = 300 - 18 - left;
+    // edge over it is the lowest line's; the box is pulled left by a tenth
+    // of the panel (36px). Its proportion would make it 160px tall, but the
+    // room (150..210) less the label's two lines leaves 40.
+    const left = 60 - 36, width = 300 - 36 - left;
     assert.equal(img.style.left, `${left}px`);
     assert.equal(img.style.width, `${width}px`);
-    assert.equal(img.style.height, '60px');
+    assert.equal(img.style.height, '40px');
     const label = card.children.find(c => /detail-figure-label/.test(c.className));
     assert.equal(label.textContent, 'Caterpillar G342', 'the capitals are the stylesheet\'s');
     assert.equal(label.style.top, '190px', 'the first line clear of the drawing');

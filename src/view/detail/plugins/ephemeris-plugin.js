@@ -17,8 +17,10 @@ import { makeLineSpan } from './line-layout.js';
 
 /** Blank-line gap after the title. */
 const SECTION_GAP = 1;
-/** The figure's box is pulled left of the glass's edge by this share of the panel's width. */
-const FIGURE_INSET = 0.05;
+/** Lines left blank between the weekday's gap and the drawing (Howell 2026-10-31: "a little further down"). */
+const FIGURE_TOP_GAP = 2;
+/** The figure's box is pulled left of the glass's edge by this share of the panel's width ("and to the left"). */
+const FIGURE_INSET = 0.10;
 /** Lines kept under the drawing for its label (the card tier spans two pitches). */
 const FIGURE_LABEL_LINES = 2;
 /** The drawings' proportion (width over height) when the index does not state one. */
@@ -109,8 +111,8 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
       // the top; its label in capitals on the line beneath it, centred on
       // it ("put that underneath the line drawing and make it all caps").
       // The HTML image blurs and scales with the panel.
-      if (item?.figure?.src && lineIdx < lineTable.length) {
-        const roomTop = lineTable[lineIdx].y;
+      if (item?.figure?.src && lineIdx + FIGURE_TOP_GAP < lineTable.length) {
+        const roomTop = lineTable[lineIdx + FIGURE_TOP_GAP].y;
         const roomEnd = tableLines.length ? tableLines[0].y - pitch : Math.min(deckTop, bounds?.height || Infinity);
         const room = lineTable.filter(line => line.y >= roomTop && line.y + pitch <= roomEnd);
         if (room.length) {
