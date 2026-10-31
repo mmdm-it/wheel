@@ -500,8 +500,21 @@ export class FocusRingView {
         // after its numeral, so it sits past the lens's far side and reads on.
         const after = Boolean(magnifier.captionAfter);
         const sign = (rtl !== after) ? 1 : -1;
-        const cx = magnifier.x + sign * Math.cos(theta) * (radius + gap);
-        const cy = magnifier.y + sign * Math.sin(theta) * (radius + gap);
+        // PAST THE LABEL, NOT JUST THE GLASS (O-250, the Arabic centuries:
+        // "the fifteenth" is wider than the lens, and the word printed over
+        // it). The seat is measured from whichever reaches further — the
+        // lens's edge or the label's end — so a long name pushes its word out.
+        const shown = isRotating ? '' : (eclipsed ? '' : (magnifier.label || ''));
+        this.magnifierLabel.textContent = shown;
+        let labelHalf = 0;
+        if (shown && typeof this.magnifierLabel.getComputedTextLength === 'function') {
+          try { labelHalf = this.magnifierLabel.getComputedTextLength() / 2; } catch { labelHalf = 0; }
+        }
+        // A label wider than the glass gets the breath the glass's edge
+        // gives a short one (about a third of a radius), not the bare gap.
+        const reach = labelHalf > radius ? labelHalf + radius * 0.3 + gap : radius + gap;
+        const cx = magnifier.x + sign * Math.cos(theta) * reach;
+        const cy = magnifier.y + sign * Math.sin(theta) * reach;
         this.magnifierCaption.setAttribute('x', cx);
         this.magnifierCaption.setAttribute('y', cy);
         this.magnifierCaption.setAttribute('text-anchor', (rtl !== after) ? 'start' : 'end');
@@ -688,6 +701,18 @@ export class FocusRingView {
     this.nowLabel.setAttribute('y', seat.y);
     this.nowLabel.style.fill = NOW_LABEL_FILL;
     this.nowLabel.textContent = nowButton.label;
+    // THE WORD STAYS ON THE GLASS (O-251): a long word for now (the French
+    // PRÉSENT) is set smaller so that, centred on the disc, it neither
+    // leaves the screen's edge nor reaches far past the disc on the other
+    // side, where the ring's labels pass; a short word (NOW) keeps the
+    // face's own size. Measured as drawn, not estimated: the face is wide.
+    this.nowLabel.style.fontSize = '';
+    try {
+      const drawn = typeof this.nowLabel.getComputedTextLength === 'function' ? this.nowLabel.getComputedTextLength() : 0;
+      const basePx = Number.parseFloat(typeof getComputedStyle === 'function' ? getComputedStyle(this.nowLabel).fontSize : '') || 15.75;
+      const room = Math.max(8, Math.min(seat.x - 6, seat.radius * 1.6));
+      if (drawn > room * 2) this.nowLabel.style.fontSize = `${(basePx * (room * 2) / drawn).toFixed(2)}px`;
+    } catch (_) { /* a face that cannot be measured keeps its size */ }
     // The word is tappable too: its class family turns pointer events off.
     this.nowLabel.style.pointerEvents = onClick ? 'auto' : 'none';
     this.nowLabel.onclick = onClick;

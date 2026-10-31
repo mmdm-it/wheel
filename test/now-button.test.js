@@ -70,6 +70,10 @@ describe('the host (O-243)', () => {
     assert.match(host, /pyramidData\?\.nodes\?\.some\(n => n\?\.now\)/);
     assert.match(host, /show: !nowOnGlass/);
   });
+  it('the word may be the chosen calendar\'s own (O-248): main hands the handler set\'s word, the host resolves it each render', () => {
+    assert.match(read('../src/main.js'), /nowButton: typeof handlerSet\.nowWord === 'function' \? handlerSet\.nowWord : /);
+    assert.match(host, /const nowWord = typeof nowButton === 'function' \? nowButton\(\) : nowButton;/);
+  });
   it('a tap keeps the level and turns the ring to the present item in one glide', () => {
     assert.match(host, /onClick: \(\) => rotateToIndex\(nowIndex, \{ durationMs: NOW_RETURN_MS \}\)/);
   });
@@ -79,7 +83,47 @@ describe('the host (O-243)', () => {
   it('a press on the disc is a plain button press in the gesture router', () => {
     const main = read('../src/main.js');
     assert.match(main, /closest\('\.focus-ring-now-circle, \.focus-ring-now-label'\)/);
-    assert.match(main, /nowButton: typeof config\?\.nowButton === 'string'/);
+    assert.match(main, /nowButton: typeof handlerSet\.nowWord === 'function' \? handlerSet\.nowWord : \(typeof config\?\.nowButton === 'string'/);
+  });
+});
+
+describe('the present reaches the leaf (O-247)', () => {
+  it('today\'s card says now; no card is ever marked festive', async () => {
+    const { detailFor } = await import('../src/adapters/calendar-adapter.js');
+    const { todaySerial, SYSTEMS } = await import('../src/adapters/calendar-systems.js');
+    const { calendarManifest } = await import('./helpers/calendar-manifest.js');
+    const manifest = calendarManifest(2020, 2030);
+    const t = todaySerial();
+    const d = SYSTEMS.gregorian.dateOf(t);
+    const today = detailFor({ id: SYSTEMS.gregorian.dayId(d.year, d.month, d.day), level: 'day', serial: t, now: true }, manifest);
+    assert.equal(today.type, 'ephemeris');
+    assert.equal(today.now, true);
+    assert.equal('festivo' in today, false);
+    const sunday = detailFor({ id: 'd:2026:10:25', level: 'day', serial: SYSTEMS.gregorian.serialOf(2026, 10, 25) }, manifest);
+    assert.equal(sunday.title, 'SUNDAY');
+    assert.equal(sunday.now, false);
+    assert.equal('festivo' in sunday, false);
+    // An old-style link without a serial is still today when it is today.
+    const bare = detailFor({ id: SYSTEMS.gregorian.dayId(d.year, d.month, d.day), level: 'day' }, manifest);
+    assert.equal(bare.now, true);
+  });
+  it('the card dresses the weekday in the present\'s colours: a red disc behind, the word in yellow', async () => {
+    const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
+    const plugin = new EphemerisDetailPlugin();
+    const create = tag => createMockElement(tag);
+    const card = plugin.render({ type: 'ephemeris', title: 'FRIDAY', titleAlign: 'center', now: true, rows: ['↑ 6:41    ↓ 17:02'] }, {}, { createElement: create });
+    const title = card.children[0];
+    assert.match(title.className, /detail-ephemeris-title--now/);
+    assert.doesNotMatch(title.className, /festivo/);
+    const [disc, word] = title.children;
+    assert.equal(disc.className, 'detail-now-disc');
+    assert.equal(disc.style.background, NOW_NODE_FILL);
+    assert.equal(word.className, 'detail-now-word');
+    assert.equal(word.textContent, 'FRIDAY');
+    assert.equal(word.style.color, NOW_LABEL_FILL);
+    const plain = plugin.render({ type: 'ephemeris', title: 'SUNDAY', titleAlign: 'center', now: false, rows: [] }, {}, { createElement: create });
+    assert.equal(plain.children[0].children.length, 0);
+    assert.equal(plain.children[0].textContent, 'SUNDAY');
   });
 });
 

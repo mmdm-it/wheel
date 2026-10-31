@@ -93,3 +93,38 @@ describe('the stratum renderer keeps its elements (O-185)', () => {
     void cx;
   });
 });
+
+// THE MIRRORED PLANE'S NAMES (O-254, Howell 2026-10-30): start-anchored over
+// the node, running inward, settled AND passing the lens; never centred, and
+// fixed to the node wherever it is (no shift at the glass's edge).
+describe("the mirrored plane's names start over their nodes and are never centred (O-254)", () => {
+  const seats = ['alpha', 'beta', 'gamma', 'delta', 'epsilon'];
+  const startOf = label => label.getAttribute('transform').match(/translate\(([-\d.]+), ([-\d.]+)\)/).slice(1).map(Number);
+  it('settled: every unselected name is start-anchored, beginning outward of its node', () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(seats, 2, { mirrored: true }));
+    outer.__seats.forEach((seat, i) => {
+      if (i === 2) return;
+      assert.equal(seat.label.getAttribute('text-anchor'), 'start', `${seats[i]} start-anchored`);
+      const [lx] = startOf(seat.label);
+      const cx = Number(seat.circle.getAttribute('cx')), r = Number(seat.circle.getAttribute('r'));
+      assert.ok(lx < cx && lx > cx - r, `${seats[i]} starts over its node, outward of centre (${lx} vs ${cx}±${r})`);
+    });
+  });
+  it('passing the lens: the swelling name keeps its start anchor and scales about it', () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(seats, 2.15, { mirrored: true, rotating: true }));
+    const passing = outer.__seats.filter(s => (s.label.getAttribute('class') || '').includes('is-passing'));
+    assert.ok(passing.length >= 1, 'a seat is swelling past the lens');
+    for (const seat of passing) {
+      assert.equal(seat.label.getAttribute('text-anchor'), 'start');
+      assert.match(seat.label.getAttribute('transform'), /^translate\([-\d.]+, [-\d.]+\) rotate\([-\d.]+\) scale\(1\.\d+\)$/);
+    }
+    assert.ok(outer.__seats.every(s => s.label.getAttribute('text-anchor') === 'start'), 'none centred while turning');
+  });
+  it("a central lens (the tertiary's) keeps its centred names", () => {
+    const svg = container();
+    const outer = renderStratum(svg, opts(seats, 2, { mirrored: false, centerMagnified: true }));
+    assert.ok(outer.__seats.filter((s, i) => i !== 2).every(s => s.label.getAttribute('text-anchor') === 'middle'));
+  });
+});

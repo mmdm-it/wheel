@@ -11,7 +11,7 @@ import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
 import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-pyramid-geometry.js';
-import { computeDayGridLayout, ribbonRowAt, daySerial, GAP_ROWS_PER_SLOT } from './geometry/day-grid.js';
+import { computeDayGridLayout, ribbonRowAt, daySerial, gapRowsPerSlot } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
 import { largestChildIndex } from './pyramid/volume-pyramid.js';
@@ -103,6 +103,10 @@ export function createApp({
   // disc — shown only while nothing on the glass wears the present's
   // colours, a tap turns the ring to the item that does. Null: no disc.
   nowButton = null,
+  // THE RING'S TURNING, TOLD ONCE PER CHANGE (O-244): a caller that wants to
+  // step aside while the ring moves — the dimension button does — hears
+  // true at the first turning frame and false at the settle.
+  onTurn = null,
   shouldCenterLabel,
   contextOptions = {},
   onParentClick,
@@ -243,6 +247,7 @@ export function createApp({
   
   let choreographer = null;
   let isRotating = false;
+  let lastTurning = false;   // what onTurn was last told (O-244)
   let rotation = 0;
   let snapId = null;
   let isLayerOut = false; // track layer migration state between parent button and magnifier
@@ -377,6 +382,11 @@ export function createApp({
   // actually ends with it, so a level change cannot mis-seat anything.
   let parentLabelSuffixHint = '';
   const textDirection = () => ((typeof externalGetTextDirection === 'function' && externalGetTextDirection()) === 'rtl' ? 'rtl' : 'ltr');
+  // THE WORD'S SIDE (O-248): a volume that says its word after the numeral
+  // ("18th CENTURY") does so in a left-to-right script; a right-to-left
+  // script of the same volume puts the word first, as Hebrew and Arabic do
+  // ("the century the 58th") — so the caption keeps the word-first side there.
+  const captionIsAfter = () => Boolean(captionAfter) && textDirection() !== 'rtl';
   const getParentLabel = typeof externalGetParentLabel === 'function'
     ? externalGetParentLabel
     : builtinGetParentLabel;
@@ -540,8 +550,9 @@ export function createApp({
     const mx = magnifier.x, my = magnifier.y;
     // A caption after the label leaves and arrives along its own line, away
     // from the lens; one before it along the hub's line (O-242).
-    const hx = captionAfter ? cx - magnifier.x : cx - arcParams.hubX;
-    const hy = captionAfter ? cy - magnifier.y : cy - arcParams.hubY;
+    const wordAfter = captionIsAfter();
+    const hx = wordAfter ? cx - magnifier.x : cx - arcParams.hubX;
+    const hy = wordAfter ? cy - magnifier.y : cy - arcParams.hubY;
     const hl = Math.hypot(hx, hy) || 1;
     const ux = hx / hl, uy = hy / hl;
     // JUST BEYOND THE EDGE, NOT FAR BEYOND IT (Howell 2026-09-17: "the
@@ -1968,15 +1979,17 @@ export function createApp({
               const info = monthAt(slot);
               if (!info) { if (lastReal !== null) empty += 1; continue; }
               if (lastReal !== null && empty > 0) {
-                seams.push({ serial: daySerial(info.yearNumber, info.month, 1), rows: empty * GAP_ROWS_PER_SLOT });
+                seams.push({ serial: info.firstSerial ?? daySerial(info.yearNumber, info.month, 1), rows: empty * gapRowsPerSlot(info.reckoning) });
               }
               if (slot < slotFloat) before = { slot, info };
               else if (!after) after = { slot, info };
               lastReal = slot; empty = 0;
             }
             if (pyramidSelected === null && before && after && after.slot - before.slot > 1) {
-              const from = ribbonRowAt(before.info.yearNumber, before.info.month, 0.5, seams);
-              const to = ribbonRowAt(after.info.yearNumber, after.info.month, -0.5, seams);
+              // The months' own reckoning (O-245): a descriptor says how its
+              // days are counted, so another reckoning's months fall the same way.
+              const from = ribbonRowAt(before.info.yearNumber, before.info.month, 0.5, seams, before.info.reckoning);
+              const to = ribbonRowAt(after.info.yearNumber, after.info.month, -0.5, seams, after.info.reckoning);
               const span = (after.slot - 0.5) - (before.slot + 0.5);
               const t = Math.min(1, Math.max(0, (slotFloat - (before.slot + 0.5)) / span));
               const nearer = t < 0.5 ? before.info : after.info;
@@ -1985,7 +1998,8 @@ export function createApp({
                 month: nearer.month,
                 weekdayLetters: nearer.weekdayLetters,
                 anchorRow: from + (to - from) * t,
-                startSerial: daySerial(after.info.yearNumber, after.info.month, 1),
+                startSerial: after.info.firstSerial ?? daySerial(after.info.yearNumber, after.info.month, 1),
+                reckoning: nearer.reckoning,
                 inGap: true
               };
             }
@@ -1996,6 +2010,7 @@ export function createApp({
             const grid = computeDayGridLayout(vp, magnifier, arcParams, {
               yearNumber: gridInfo.yearNumber,
               month: gridInfo.month,
+              reckoning: gridInfo.reckoning,
               weekdayLetters: gridInfo.weekdayLetters,
               fraction,
               seams,
@@ -2132,12 +2147,19 @@ export function createApp({
           // glass, at the caption's size (a capital ≈ 0.75 em with its
           // tracking).
           keepOut: (() => {
-            if (!levelCaptions || !captionAfter) return [];
+            // The strip guards the word on the SKY'S side: where it is
+            // said after the numeral in a left-to-right script, or before
+            // it in a right-to-left one — the same physical side (O-248).
+            if (!levelCaptions || (textDirection() === 'rtl') === captionIsAfter()) return [];
             const word = String(formatLabel({ item: nav.getCurrent(), context: 'caption' }) || '');
             if (!word) return [];
             const theta = (magnifier.angle || 0) + Math.PI;
             const ux = Math.cos(theta), uy = Math.sin(theta);
-            const start = magnifierRadius * (1 + CAPTION_GAP_RADII);
+            // From the label's end where the name is wider than the glass
+            // (O-250): the lens label's width is estimated from its length.
+            const lensWord = String(formatLabel({ item: nav.getCurrent(), context: 'magnifier' }) || '');
+            const lensFontPx = Math.max(21, Math.min(39, 0.024 * Math.min(vp.width || 0, vp.height || 0)));
+            const start = Math.max(magnifierRadius, lensWord.length * lensFontPx * 0.3) + magnifierRadius * CAPTION_GAP_RADII;
             const fontPx = Math.max(15.75, Math.min(29.25, 0.018 * Math.min(vp.width || 0, vp.height || 0)));
             const len = word.length * fontPx * 0.75;
             return [{
@@ -2265,15 +2287,22 @@ export function createApp({
       if (pyramidData?.nodes?.some(n => n?.now)) return true;
       return false;
     })();
-    const nowButtonOptions = nowButton && !isLayerOut
-      ? { show: !nowOnGlass, label: String(nowButton), onClick: () => rotateToIndex(nowIndex, { durationMs: NOW_RETURN_MS }) }
+    // The word may be a function (O-248: the chosen system's own word).
+    const nowWord = typeof nowButton === 'function' ? nowButton() : nowButton;
+    const nowButtonOptions = nowWord && !isLayerOut
+      ? { show: !nowOnGlass, label: String(nowWord), onClick: () => rotateToIndex(nowIndex, { durationMs: NOW_RETURN_MS }) }
       : null;
+
+    if (typeof onTurn === 'function' && Boolean(isRotating) !== lastTurning) {
+      lastTurning = Boolean(isRotating);
+      try { onTurn(lastTurning); } catch (_) { /* a listener's error is its own */ }
+    }
 
     view.render(
       nodes,
       arcParams,
       windowInfo,
-      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection(), captionAfter: Boolean(captionAfter) },
+      { ...magnifier, radius: magnifierRadius, label: magnifierLabel, caption: (isLayerOut || !levelCaptions) ? '' : (formatLabel({ item: selected, context: 'caption' }) || ''), captionDirection: textDirection(), captionAfter: captionIsAfter() },
       {
         isRotating,
         // O-84 (Howell's correction, 2026-08-22): a split verse settles as a

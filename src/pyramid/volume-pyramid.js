@@ -192,6 +192,7 @@ export function buildCalendarPyramid({
   getCalendarMonthChain,
   getCalendarDayChain,
   getWeekdayLetters,
+  systemForId = null,
   getApp,
   calendarModeRef,
   setCalendarMode,
@@ -207,9 +208,16 @@ export function buildCalendarPyramid({
   const getChildren = ({ selected }) => (calendarModeRef?.() === 'day'
     ? [] // the days ring has no pyramid (its detail era comes with C.6's boot state)
     : getCalendarMonths(manifest, selected, calendarModeRef?.()))
-    .map(item => (item?.name && item.level === 'month'
-      ? { ...item, name: String(item.name).slice(0, 3).toUpperCase() }
-      : item));
+    // Only a LATIN name is clipped to three letters: a Hebrew month (O-248)
+    // is already short, and its letters are not the kind that abbreviate.
+    // A month or a decade that states its own short form (the French,
+    // O-251) wears it in the sky.
+    .map(item => {
+      if (!item?.name) return item;
+      if (item.short && ['month', 'decade', 'year'].includes(item.level)) return { ...item, name: String(item.short).toUpperCase() };
+      if (item.level !== 'month') return item;
+      return /^[A-Za-z]+$/.test(String(item.name)) ? { ...item, name: String(item.name).slice(0, 3).toUpperCase() } : item;
+    });
   const onClick = instr => {
     if (!instr?.item) return;
     const app = typeof getApp === 'function' ? getApp() : null;
@@ -284,9 +292,14 @@ export function buildCalendarPyramid({
       ? selected.yearNumber
       : Number.parseInt(selected.parentId, 10);
     if (!Number.isFinite(yearNumber)) return null;
+    // The month's own system, read off its id by the volume (O-245): the
+    // grid counts the month's days by that system's reckoning.
+    const system = typeof systemForId === 'function' ? systemForId(selected.id) : null;
     return {
       yearNumber,
       month: selected.monthNumber,
+      reckoning: system?.reckoning || null,
+      firstSerial: system ? system.serialOf(yearNumber, selected.monthNumber, 1) : null,
       // The lattice's column headers, named by the volume's own data.
       weekdayLetters: typeof getWeekdayLetters === 'function' ? getWeekdayLetters() : null
     };

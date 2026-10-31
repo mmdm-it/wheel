@@ -31,7 +31,8 @@ export function createVolumeLayoutSpec({
   setCatalogMode,
   savePreInState,
   pyramidBuilder,
-  launchGateway
+  launchGateway,
+  systemForId
 } = {}) {
   const pyramid = createVolumePyramidConfig({
     volume,
@@ -63,7 +64,8 @@ export function createVolumeLayoutSpec({
     setCatalogMode,
     savePreInState,
     pyramidBuilder,
-    launchGateway
+    launchGateway,
+    systemForId
   });
   return pyramid ? { pyramid } : {};
 }

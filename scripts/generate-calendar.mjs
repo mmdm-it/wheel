@@ -13,7 +13,10 @@ import { writeFileSync } from 'node:fs';
 
 const OUT = new URL('../data/calendar/manifest.json', import.meta.url).pathname;
 
-const START_YEAR = -3000;
+// 3999 BC: a whole millennium by the digits, as the rings count — past 1 Tishri 1 A.M., the Hebrew calendar's first day (7 October 3761 BC)
+// (O-249, Howell 2026-10-30) — the furthest back any calendar the volume
+// speaks can count.
+const START_YEAR = -3999;
 const END_YEAR = 3000;
 
 const MONTHS = [
@@ -50,7 +53,7 @@ const manifest = {
       structure_type: 'calendar',
       volume_type: 'wheel_hierarchical',
       volume_name: 'Calendar (Dev)',
-      volume_description: 'Gregorian year/month dataset, 3000 BC – 3000 AD',
+      volume_description: 'Gregorian year/month dataset, 3999 BC – 3000 AD',
       leaf_level: 'month',
       focus_ring_startup: {
         // no initial_magnified_item: the chain builder lands on the actual

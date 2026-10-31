@@ -287,6 +287,59 @@ describe('day grid arithmetic', () => {
       ['S', 'M', 'T', 'W', 'T', 'F', 'S'], 'a malformed row is refused, not drawn');
   });
 
+  it('lays a ten-column week on the same arcs, the cells smaller (O-251)', () => {
+    const vp = { width: 375, height: 700, SSd: 375, LSd: 700 };
+    const mag = { x: 178.2, y: 517.7 };
+    const arc = { hubX: 840.8, hubY: 0, radius: 840.8 };
+    // A reckoning of thirty-day months in rows of ten, begun afresh at each
+    // of its 360-day years, with the row model the grid reads.
+    const yearStart = y => (y - 1) * 360;
+    const dateOf = serial => { const y = Math.floor(serial / 360) + 1; const doy = serial - yearStart(y); return { yearNumber: y, month: Math.floor(doy / 30) + 1, day: (doy % 30) + 1 }; };
+    const tens = {
+      serialOf: (y, m, d) => yearStart(y) + 30 * (m - 1) + d - 1,
+      dateOf,
+      monthSpan: () => 30,
+      dayId: (y, m, d) => `d:${y}:${m}:${d}@tens`,
+      week: {
+        length: 10,
+        rows: 3,
+        columnOf: serial => serial % 10,
+        rowOf: serial => serial / 10,
+        rowAt: row => ({ serial: row * 10, length: 10 })
+      }
+    };
+    const seven = computeDayGridLayout(vp, mag, arc, { yearNumber: 2026, month: 7, rotating: false });
+    const ten = computeDayGridLayout(vp, mag, arc, { yearNumber: 2, month: 3, rotating: false, reckoning: tens, weekdayLetters: ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'] });
+    const headers = ten.nodes.filter(n => n.id.startsWith('wd:'));
+    assert.equal(headers.length, 10);
+    assert.equal(headers[9].label, 'X');
+    const cells = ten.nodes.filter(n => n.item?.level === 'day');
+    assert.equal(cells.length, 30, 'three rows of ten');
+    const rows = new Set(cells.map(n => Math.round(n.angle * 1000)));
+    assert.equal(rows.size, 3);
+    const r7 = seven.nodes.find(n => n.item?.level === 'day').r;
+    const r10 = cells[0].r;
+    assert.ok(r10 < r7 && r10 > r7 * 0.6, `cells shrink to fit (${r10} vs ${r7})`);
+    // The first column sits on Sunday's arc; the last reaches further toward
+    // the right margin than Saturday's, since three rows bind the edge
+    // where six did, and the cells stay on the glass.
+    const outer7 = seven.nodes.find(n => n.id === 'wd:0'), inner7 = seven.nodes.find(n => n.id === 'wd:6');
+    const outer10 = headers[0], inner10 = headers[9];
+    assert.ok(Math.abs(outer7.x - outer10.x) < 1 && Math.abs(outer7.y - outer10.y) < 1, 'the outer arc holds');
+    assert.ok(inner10.x > inner7.x + 10, `the inner column reaches further right (${inner10.x} vs ${inner7.x})`);
+    // Every cell on the glass: its disc inside the screen's edge, its top below the top.
+    assert.ok(cells.every(n => n.x + n.r <= vp.width && n.y - n.r >= 0), `every cell on the glass (${Math.max(...cells.map(n => n.x + n.r))})`);
+    let minDist = Infinity;
+    cells.forEach(a => cells.forEach(b => { if (a !== b) minDist = Math.min(minDist, Math.hypot(a.x - b.x, a.y - b.y)); }));
+    assert.ok(minDist > 2 * r10, 'no two cells touch');
+    // In motion the ribbon's rows are the reckoning's own: ten a row.
+    const ribbon = computeDayGridLayout(vp, mag, arc, { yearNumber: 2, month: 3, fraction: 0.3, rotating: true, reckoning: tens });
+    const byRow = new Map();
+    ribbon.nodes.forEach(n => { const k = Math.round(n.angle * 10000); byRow.set(k, (byRow.get(k) || 0) + 1); });
+    assert.ok([...byRow.values()].some(c => c === 10), 'full rows of ten in the fall');
+    assert.ok(ribbon.nodes.every(n => n.label !== '31'));
+  });
+
   it('marks today — and only today — in its own month', () => {
     const vp = { width: 375, height: 700, SSd: 375, LSd: 700 };
     const mag = { x: 178.2, y: 517.7 };
