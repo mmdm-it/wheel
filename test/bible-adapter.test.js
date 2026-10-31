@@ -431,3 +431,13 @@ describe('the key for an ordinal counts verses as numbers (O-228)', () => {
     assert.equal(slotKeyForOrdinal({ '9:9': {}, '10:1': {}, '9:10': {}, '9:10a': {} }, 4), '10:1');
   });
 });
+
+describe('the verse follows the ring while it turns (O-256, Bible)', () => {
+  it('declares the live card, and still turns the leaf into a NEXT button', () => {
+    // Howell, 2026-10-31, after seeing the calendar's drawings follow the
+    // ring: "let's try" it on the Bible. The engine reads this flag once at
+    // boot; without it the text waits for the settle as it always did.
+    assert.equal(bibleAdapter.capabilities.detailPreviewsWhileTurning, true);
+    assert.equal(bibleAdapter.capabilities.detailTapAdvances, true);
+  });
+});

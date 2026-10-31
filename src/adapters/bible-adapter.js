@@ -1540,6 +1540,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       theming: true,
       // At the leaf the detail sector doubles as a NEXT button
       // (the e-reader gesture: tap the verse, read the next).
-      detailTapAdvances: true
+      detailTapAdvances: true,
+      // The verse follows the ring while it turns, as the calendar's drawing
+      // does (O-256; Howell 2026-10-31: "let's try" it on the Bible too). The
+      // text is in cache for the ring's own chapter, so each repaint is a
+      // synchronous layout; the engine caps the rate at about ten a second.
+      detailPreviewsWhileTurning: true
     }
   };
