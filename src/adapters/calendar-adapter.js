@@ -34,6 +34,31 @@ function loadEphemeris() {
   return ephemerisFetch;
 }
 
+// THE MANIFOLD OF THE DAY (O-256, Howell 2026-10-31: "a random 'Manifold
+// of the Day'"): the corpus names, day by day, which of its line drawings
+// the card carries — the index lists the drawings and maps a day serial to
+// one. Warmed at boot like the ephemeris; a day the index does not name
+// shows none. Each drawing is one hand, one view, white on the ground.
+const figuresUrl = './data/calendar/manifolds/index.json';
+let figuresIndex = null;
+let figuresFetch = null;
+// Test seam: inject the index directly.
+export function primeFigures(index) { figuresIndex = index || null; }
+function loadFigures() {
+  if (!isBrowser || figuresFetch) return figuresFetch;
+  figuresFetch = fetch(figuresUrl)
+    .then(r => (r.ok ? r.json() : null))
+    .then(json => { figuresIndex = json || null; })
+    .catch(() => { figuresIndex = null; });
+  return figuresFetch;
+}
+function figureOfDay(serial) {
+  const key = figuresIndex?.days?.[String(serial)];
+  const drawing = key ? figuresIndex?.drawings?.[key] : null;
+  if (!drawing?.file) return null;
+  return { src: `./data/calendar/manifolds/${drawing.file}`, label: drawing.label || `${drawing.maker || ''} ${drawing.model || ''}`.trim() };
+}
+
 let manifestPath = null;
 let schemaPath = null;
 let nodeReadFile = null;
@@ -283,6 +308,7 @@ export function detailFor(selected, manifest) {
       titleAlign: 'center',
       now: selected.now === true || serial === todaySerial(),
       rows,
+      figure: figureOfDay(serial),
       tables
     };
   }
@@ -556,10 +582,13 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     // loses that race, repaint the settled day when the table lands —
     // otherwise a sun-only card sits stale until the user scrubs
     // (Phase C audit L1).
-    loadEphemeris()?.then(() => {
+    const repaintDay = () => {
       const settled = app?.nav?.getCurrent?.();
       if (settled?.level === 'day' && typeof renderDetail === 'function') renderDetail(settled);
-    });
+    };
+    loadEphemeris()?.then(repaintDay);
+    // The drawings' index likewise (O-256): the day's figure lands when it lands.
+    loadFigures()?.then(repaintDay);
     if (app?.setParentButtons) {
       app.setParentButtons({ showOuter: calendarMode !== 'century' || Boolean(gatewayReturnLabel) });
     }

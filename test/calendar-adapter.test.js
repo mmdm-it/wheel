@@ -162,3 +162,50 @@ describe('the day card seats Fano\'s tables at the foot (O-255)', () => {
     assert.deepEqual(tables.map(t => t.style.top), ['280px', '290px']);
   });
 });
+
+// THE MANIFOLD OF THE DAY (O-256, Howell 2026-10-31).
+describe('the day card carries the manifold the index names for the day (O-256)', () => {
+  const create = tag => {
+    const el = { tagName: tag, className: '', textContent: '', style: {}, children: [], appendChild(c) { this.children.push(c); return c; } };
+    return el;
+  };
+  const lineTable = Array.from({ length: 20 }, (_, i) => ({ y: 100 + i * 10, leftX: 50 + i, rightX: 300, availableWidth: 250 - i, maxChars: 30 }));
+  it('the adapter names the drawing by the day serial, and none for a day the index leaves out', async () => {
+    const { primeFigures, detailFor } = await import('../src/adapters/calendar-adapter.js');
+    const manifest = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
+    primeFigures({
+      drawings: { 'cat:g342': { maker: 'Caterpillar', model: 'G342', label: 'Caterpillar G342', file: 'g342.svg' } },
+      days: { '20757': 'cat:g342' }
+    });
+    try {
+      const named = detailFor({ id: 'd:2026:10:31', level: 'day' }, manifest);
+      assert.deepEqual(named.figure, { src: './data/calendar/manifolds/g342.svg', label: 'Caterpillar G342' });
+      const bare = detailFor({ id: 'd:2026:10:30', level: 'day' }, manifest);
+      assert.equal(bare.figure, null);
+    } finally {
+      primeFigures(null);
+    }
+  });
+  it('the plugin seats the label under the weekday and the drawing in the room above the tables', async () => {
+    const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
+    const card = new EphemerisDetailPlugin().render(
+      { type: 'ephemeris', title: 'SATURDAY', titleAlign: 'center', rows: [],
+        figure: { src: './data/calendar/manifolds/g342.svg', label: 'Caterpillar G342' },
+        tables: ['↑ 6:34    ↓ 17:09', '▲ 10:36  1,0 m'] },
+      { lineTable, SSd: 360, width: 360, deckTop: 240 }, { createElement: create });
+    const label = card.children.find(c => /detail-figure-label/.test(c.className));
+    assert.equal(label.textContent, 'Caterpillar G342');
+    assert.equal(label.style.top, '130px', 'the line after the weekday\'s two pitches and gap');
+    const img = card.children.find(c => c.tagName === 'img');
+    assert.equal(img.src, './data/calendar/manifolds/g342.svg');
+    assert.equal(img.style.top, '160px', 'three lines under the label');
+    const tables = card.children.filter(c => /detail-ephemeris-table/.test(c.className));
+    assert.deepEqual(tables.map(t => t.style.top), ['220px', '230px']);
+    // The drawing's room ends a pitch above the first table line.
+    assert.equal(img.style.height, `${210 - 160}px`);
+    // Within the arc's innermost edge over that room (leftX grows down the table).
+    assert.equal(img.style.left, '60px');
+    assert.equal(img.style.width, `${300 - 60}px`);
+  });
+});

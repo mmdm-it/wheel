@@ -1049,6 +1049,23 @@ svg :focus-visible {
   line-height: 1.4;
 }
 
+/* THE MANIFOLD OF THE DAY (O-256, Howell 2026-10-31): the drawing's label
+   under the weekday at the card tier, the drawing itself fitted whole in
+   the room beneath and hung from its top — a line drawing, white on the
+   ground, so it needs no frame. */
+.detail-figure-label {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: calc(4.5 / 100 * var(--detail-SSd, 650px));
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.detail-figure {
+  display: block;
+  object-fit: contain;
+  object-position: center top;
+  pointer-events: none;
+}
+
 /* The dossier's inline media (the Twin 6 HP film, and photos to come) */
 .detail-card-video {
   display: block;
