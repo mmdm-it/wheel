@@ -38,14 +38,16 @@ const BESIDE_OFFSET = 1.3;           // node radii, along the node's angle (outw
 // that they overlap the focus ring node and extend a bit past it." The name
 // starts the same fraction of a radius back from its node's centre as the
 // lens label does from the lens's (MAG_LABEL_SPAN_PULL), so the seats and
-// the lens share one manner; and it never starts off the glass — a seat
-// whose node is itself half off the left edge (the lowest calendars on a
-// short phone) keeps its whole name. No centring on this plane at any time,
-// not passing the lens either: "the magnifier in the secondary stratum is a
-// little closer to the viewport edge and therefore should not be centered
-// at all at any time."
+// the lens share one manner — and it stays there even where the node has
+// gone half off the left edge (the lowest calendars on a short phone): a
+// first cut clamped the start to the glass, and Howell struck it the same
+// night: "Don't bother shifting the Secondary Stratum Focus Ring Labels as
+// they approach the bottom of the screen. All label should remain fixed
+// over their nodes except when passing through the magnifier." No centring
+// on this plane at any time, not passing the lens either: "the magnifier in
+// the secondary stratum is a little closer to the viewport edge and
+// therefore should not be centered at all at any time."
 const COVER_PULL = MAG_LABEL_SPAN_PULL; // node radii, outward from the centre: the name starts here and runs over the node
-const GLASS_MARGIN = 2;              // px: no name starts nearer the left edge than this
 const LENS_SCALE_PEAK = 2.0;
 const LENS_SCALE_SIGMA = 0.3;        // × node spacing
 
@@ -240,10 +242,10 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
     } else if (mirrored && !centerMagnified) {
-      // Over the node, from COVER_PULL radii out toward the hub, never off
-      // the glass. Passing the lens it swells about that same start, never
-      // centred.
-      const lx = Math.max(GLASS_MARGIN, node.x + Math.cos(node.angle) * nodeR * COVER_PULL);
+      // Over the node, from COVER_PULL radii out toward the hub, wherever
+      // the node is. Passing the lens it swells about that same start,
+      // never centred.
+      const lx = node.x + Math.cos(node.angle) * nodeR * COVER_PULL;
       const ly = node.y + Math.sin(node.angle) * nodeR * COVER_PULL;
       label.setAttribute('x', '0');
       label.setAttribute('y', '0');

@@ -1171,7 +1171,17 @@ function setPrimaryVisual(scale, blurPx, away = null) {
     const ox = cx - (panel.offsetLeft || 0), oy = cy - (panel.offsetTop || 0);
     panel.style.transformOrigin = `${ox}px ${oy}px`;
     panel.style.transform = `${slid ? `translate(${offsetX.toFixed(1)}px, ${offsetY.toFixed(1)}px) ` : ''}${scaled ? `scale(${scale})` : ''}`.trim();
-    panel.style.filter = filter;
+    // THE BLUR IS UNDONE BY THE SCALE unless it is divided out (O-254,
+    // Howell 2026-10-30: "The Primary Stratum Detail Sector does not blur
+    // as much as the Primary Stratum Child Pyramid and Focus Ring do when
+    // the Secondary Stratum is visible"). A CSS filter is rendered in the
+    // element's OWN space and the transform applied to the result, so a
+    // panel receded to 0.4 showed 0.4 of the blur the ring wore — the ring's
+    // blur rides the unscaled #app root, above its scaled groups. The panel
+    // asks for blurPx / scale so that, scaled, it lands at blurPx on the
+    // glass like everything else on the plane.
+    const panelBlur = blurPx / Math.max(scaled ? scale : 1, 0.05);
+    panel.style.filter = panelBlur > 0.01 ? `blur(${panelBlur.toFixed(2)}px)` : '';
     panel.style.opacity = opacity < 0.999 ? String(opacity) : '';
     panel.style.pointerEvents = gone ? 'none' : '';
   }
