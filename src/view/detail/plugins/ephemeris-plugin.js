@@ -17,8 +17,12 @@ import { makeLineSpan } from './line-layout.js';
 
 /** Blank-line gap after the title. */
 const SECTION_GAP = 1;
-/** Lines the figure's label takes (tier 4.5 spans two pitches) plus a gap. */
-const FIGURE_LABEL_STRIDE = 3;
+/** The figure's box is pulled left of the glass's edge by this share of the panel's width. */
+const FIGURE_INSET = 0.05;
+/** Lines kept under the drawing for its label (the card tier spans two pitches). */
+const FIGURE_LABEL_LINES = 2;
+/** The drawings' proportion (width over height) when the index does not state one. */
+const FIGURE_ASPECT = 1.5;
 
 export class EphemerisDetailPlugin extends BaseDetailPlugin {
   canHandle(item) {
@@ -97,21 +101,26 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
       const pitch = lineTable.length > 1 ? lineTable[1].y - lineTable[0].y : 0;
       const clear = lineTable.filter((line, i) => i >= lineIdx && line.y + pitch <= deckTop);
       const tableLines = clear.slice(-tables.length);
-      // THE DAY'S FIGURE (O-256): its label on the line under the weekday,
-      // then the drawing in the clear room beneath, down to the tables —
-      // within the arc's innermost edge over that room, fitted whole, hung
-      // from the top. The HTML image blurs and scales with the panel.
+      // THE DAY'S FIGURE (O-256): the drawing in the clear room under the
+      // weekday, down to the tables — as wide as the arc's innermost edge
+      // over that room allows, pulled a little left of the glass's edge
+      // (Howell 2026-10-31: "get it away from the right edge of the
+      // viewport"), only as tall as its own proportion makes it, hung from
+      // the top; its label in capitals on the line beneath it, centred on
+      // it ("put that underneath the line drawing and make it all caps").
+      // The HTML image blurs and scales with the panel.
       if (item?.figure?.src && lineIdx < lineTable.length) {
-        const labelLine = lineTable[lineIdx];
-        container.appendChild(makeLineSpan(create, item.figure.label || '', 'detail-figure-label', labelLine,
-          { centerWidth: bounds?.width || 0 }));
-        lineIdx += FIGURE_LABEL_STRIDE;
-        const roomTop = lineTable[lineIdx]?.y;
+        const roomTop = lineTable[lineIdx].y;
         const roomEnd = tableLines.length ? tableLines[0].y - pitch : Math.min(deckTop, bounds?.height || Infinity);
         const room = lineTable.filter(line => line.y >= roomTop && line.y + pitch <= roomEnd);
         if (room.length) {
-          const left = Math.max(...room.map(line => line.leftX));
-          const right = Math.min(...room.map(line => line.rightX ?? line.leftX + line.availableWidth));
+          const inset = (bounds?.width || 0) * FIGURE_INSET;
+          const left = Math.max(...room.map(line => line.leftX)) - inset;
+          const right = Math.min(...room.map(line => line.rightX ?? line.leftX + line.availableWidth)) - inset;
+          const width = Math.max(0, right - left);
+          const aspect = item.figure.aspect > 0 ? item.figure.aspect : FIGURE_ASPECT;
+          // The label's own lines are kept back from the room first.
+          const height = Math.max(0, Math.min(roomEnd - roomTop - FIGURE_LABEL_LINES * pitch, width / aspect));
           const img = create('img');
           img.className = 'detail-figure';
           img.src = item.figure.src;
@@ -120,10 +129,24 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
             img.style.position = 'absolute';
             img.style.top = `${roomTop}px`;
             img.style.left = `${left}px`;
-            img.style.width = `${Math.max(0, right - left)}px`;
-            img.style.height = `${Math.max(0, roomEnd - roomTop)}px`;
+            img.style.width = `${width}px`;
+            img.style.height = `${height}px`;
           }
           container.appendChild(img);
+          const labelLine = room.find(line => line.y >= roomTop + height);
+          if (labelLine) {
+            const label = create('span');
+            label.className = 'detail-text-line detail-figure-label';
+            label.textContent = item.figure.label || '';
+            if (label.style) {
+              label.style.position = 'absolute';
+              label.style.top = `${labelLine.y}px`;
+              label.style.left = `${left}px`;
+              label.style.width = `${width}px`;
+              label.style.textAlign = 'center';
+            }
+            container.appendChild(label);
+          }
         }
       }
       tableLines.forEach((line, i) => {
@@ -157,15 +180,15 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
       card.appendChild(row);
     });
     if (item?.figure?.src) {
-      const label = create('div');
-      label.className = 'detail-figure-label';
-      label.textContent = item.figure.label || '';
-      card.appendChild(label);
       const img = create('img');
       img.className = 'detail-figure';
       img.src = item.figure.src;
       img.alt = item.figure.label || '';
       card.appendChild(img);
+      const label = create('div');
+      label.className = 'detail-figure-label';
+      label.textContent = item.figure.label || '';
+      card.appendChild(label);
     }
     (Array.isArray(item?.tables) ? item.tables : []).forEach(text => {
       const row = create('div');

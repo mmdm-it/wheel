@@ -56,7 +56,11 @@ function figureOfDay(serial) {
   const key = figuresIndex?.days?.[String(serial)];
   const drawing = key ? figuresIndex?.drawings?.[key] : null;
   if (!drawing?.file) return null;
-  return { src: `./data/calendar/manifolds/${drawing.file}`, label: drawing.label || `${drawing.maker || ''} ${drawing.model || ''}`.trim() };
+  return {
+    src: `./data/calendar/manifolds/${drawing.file}`,
+    label: drawing.label || `${drawing.maker || ''} ${drawing.model || ''}`.trim(),
+    aspect: drawing.aspect > 0 ? drawing.aspect : 1.5
+  };
 }
 
 let manifestPath = null;

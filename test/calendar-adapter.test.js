@@ -180,32 +180,38 @@ describe('the day card carries the manifold the index names for the day (O-256)'
     });
     try {
       const named = detailFor({ id: 'd:2026:10:31', level: 'day' }, manifest);
-      assert.deepEqual(named.figure, { src: './data/calendar/manifolds/g342.svg', label: 'Caterpillar G342' });
+      assert.deepEqual(named.figure, { src: './data/calendar/manifolds/g342.svg', label: 'Caterpillar G342', aspect: 1.5 });
       const bare = detailFor({ id: 'd:2026:10:30', level: 'day' }, manifest);
       assert.equal(bare.figure, null);
     } finally {
       primeFigures(null);
     }
   });
-  it('the plugin seats the label under the weekday and the drawing in the room above the tables', async () => {
+  it('the plugin seats the drawing under the weekday, pulled in from the edge, and its label beneath it', async () => {
     const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
     const card = new EphemerisDetailPlugin().render(
       { type: 'ephemeris', title: 'SATURDAY', titleAlign: 'center', rows: [],
-        figure: { src: './data/calendar/manifolds/g342.svg', label: 'Caterpillar G342' },
+        figure: { src: './data/calendar/manifolds/g342.svg', label: 'Caterpillar G342', aspect: 1.5 },
         tables: ['↑ 6:34    ↓ 17:09', '▲ 10:36  1,0 m'] },
       { lineTable, SSd: 360, width: 360, deckTop: 240 }, { createElement: create });
-    const label = card.children.find(c => /detail-figure-label/.test(c.className));
-    assert.equal(label.textContent, 'Caterpillar G342');
-    assert.equal(label.style.top, '130px', 'the line after the weekday\'s two pitches and gap');
     const img = card.children.find(c => c.tagName === 'img');
     assert.equal(img.src, './data/calendar/manifolds/g342.svg');
-    assert.equal(img.style.top, '160px', 'three lines under the label');
+    assert.equal(img.style.top, '130px', 'the line after the weekday\'s two pitches and gap');
     const tables = card.children.filter(c => /detail-ephemeris-table/.test(c.className));
     assert.deepEqual(tables.map(t => t.style.top), ['220px', '230px']);
-    // The drawing's room ends a pitch above the first table line.
-    assert.equal(img.style.height, `${210 - 160}px`);
-    // Within the arc's innermost edge over that room (leftX grows down the table).
-    assert.equal(img.style.left, '60px');
-    assert.equal(img.style.width, `${300 - 60}px`);
+    // The room runs to a pitch above the first table; the arc's innermost
+    // edge over it is the lowest line's; the box is pulled left by 5% of the
+    // panel (18px). Its proportion would make it 160px tall, but the room
+    // (130..210) less the label's two lines leaves 60.
+    const left = 60 - 18, width = 300 - 18 - left;
+    assert.equal(img.style.left, `${left}px`);
+    assert.equal(img.style.width, `${width}px`);
+    assert.equal(img.style.height, '60px');
+    const label = card.children.find(c => /detail-figure-label/.test(c.className));
+    assert.equal(label.textContent, 'Caterpillar G342', 'the capitals are the stylesheet\'s');
+    assert.equal(label.style.top, '190px', 'the first line clear of the drawing');
+    assert.equal(label.style.left, `${left}px`);
+    assert.equal(label.style.width, `${width}px`);
+    assert.equal(label.style.textAlign, 'center');
   });
 });
