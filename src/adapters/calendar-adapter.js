@@ -51,9 +51,22 @@ function loadFigures() {
   if (!isBrowser || figuresFetch) return figuresFetch;
   figuresFetch = fetch(figuresUrl)
     .then(r => (r.ok ? r.json() : null))
-    .then(json => { figuresIndex = json || null; })
+    .then(json => { figuresIndex = json || null; preloadFigures(figuresIndex); })
     .catch(() => { figuresIndex = null; });
   return figuresFetch;
+}
+// Every drawing is fetched once at boot so a turn never shows a blank frame
+// while the next one decodes (O-256: the card follows the ring live). Half a
+// megabyte for the month; the browser's cache keeps it.
+export function preloadFigures(index, makeImage = (typeof Image === 'function' ? () => new Image() : null)) {
+  if (!index?.drawings || typeof makeImage !== 'function') return 0;
+  let n = 0;
+  for (const drawing of Object.values(index.drawings)) {
+    if (!drawing?.file) continue;
+    const img = makeImage();
+    if (img) { img.src = `./data/calendar/manifolds/${drawing.file}`; n += 1; }
+  }
+  return n;
 }
 function figureOfDay(serial, dayOfMonth) {
   const key = figuresIndex?.days?.[String(serial)] ?? figuresIndex?.byDayOfMonth?.[String(dayOfMonth)];
@@ -665,7 +678,10 @@ export const calendarAdapter = {
     // A tap drills (O-234, Howell 2026-10-28): a month or a date in the sky
     // drills in, the parent seat drills out — the calendar reads by tapping.
     // The strokes stay as well.
-    drillByTap: true
+    drillByTap: true,
+    // The card follows the ring while it turns (O-256, Howell 2026-10-31):
+    // the day's drawing changes under the thumb, not only at the settle.
+    detailPreviewsWhileTurning: true
   }
 };
 

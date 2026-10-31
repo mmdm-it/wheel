@@ -10,6 +10,7 @@ import { FocusRingView } from './view/focus-ring-view.js';
 import { VolumeLogo } from './view/volume-logo.js';
 import { validateVolumeRoot } from './data/volume-validator.js';
 import { safeEmit } from './core/telemetry.js';
+import { nearestDetent } from './core/nearest-detent.js';
 import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-pyramid-geometry.js';
 import { computeDayGridLayout, ribbonRowAt, daySerial, gapRowsPerSlot } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
@@ -151,6 +152,12 @@ export function createApp({
   // the catch-up rotation. Receives (item, { part }) since O-84: a split
   // verse previews the half the ring is about to seat.
   onDetailPreview = null,
+  // The sector follows the ring WHILE IT TURNS (O-256, Howell 2026-10-31: the
+  // drawings "update live in real time as the focus ring of days is rotated"):
+  // each frame of a turn previews the node nearest the magnifier. Off by
+  // default; a volume that reads by the leaf keeps its text still until the
+  // ring settles.
+  previewWhileTurning = false,
   // O-84: how many Detail Sector screens does this item need — 1 or 2?
   // Answered by the host, which owns the detail bounds; no answer means 1.
   versePartsFor = null
@@ -247,6 +254,9 @@ export function createApp({
   
   let choreographer = null;
   let isRotating = false;
+  let lastPreviewed = null;   // `${index}:${part}` last painted ahead of arrival during a turn
+  let lastPreviewAt = 0;      // when; a fast flick is a blur, not a projector (Howell 2026-10-31)
+  const PREVIEW_MIN_MS = 90;  // about ten repaints a second at most
   let lastTurning = false;   // what onTurn was last told (O-244)
   let rotation = 0;
   let snapId = null;
@@ -1864,6 +1874,23 @@ export function createApp({
       label: formatLabel({ item: node.item, context: 'node' }),
       labelCentered: Boolean(shouldCenterLabel?.({ item: node.item }))
     }));
+    // LIVE CARD DURING A TURN (O-256): while the ring moves, the node nearest
+    // the magnifier's seat is painted into the sector ahead of arrival — the
+    // same preview the reading tap uses — once per change of nearest node,
+    // never faster than the frame. The settle render repaints it anyway.
+    if (previewWhileTurning && isRotating && typeof onDetailPreview === 'function') {
+      const near = nearestDetent(nodes, (item, part) => magnifier.angle + settleOffsetFor(item, part), partsOf);
+      const key = near ? `${near.index}:${near.part}` : null;
+      const now = canTime ? performance.now() : Date.now();
+      if (key && key !== lastPreviewed && now - lastPreviewAt >= PREVIEW_MIN_MS) {
+        lastPreviewed = key;
+        lastPreviewAt = now;
+        const item = visible[near.index] ?? nav.items?.[near.index];
+        if (item) onDetailPreview(item, { part: near.part });
+      }
+    } else if (!isRotating) {
+      lastPreviewed = null;
+    }
 
     // Detail Sector leaf detection — expand/collapse based on selected item level.
     // forcedDetailOpen allows external callers (e.g. startup featured verse) to
@@ -2684,7 +2711,6 @@ export function createApp({
     cancelSnap();
     if (!nav.items.length) return;
     let closestIdx = nav.getCurrentIndex();
-    let closestDiff = Infinity;
     let closestDelta = null;
     let closestPart = 0;
     // The node nearest the magnifier is always on-screen, so only the visible
@@ -2694,24 +2720,11 @@ export function createApp({
     // O-84: a split verse offers TWO detents — one either side of the
     // Magnifier's centre — so a scrubbing thumb feels the halves exactly as
     // the reading tap steps them, and releasing near a long verse settles on
-    // whichever half the finger left the ring closer to.
+    // whichever half the finger left the ring closer to. The same search
+    // paints the sector live during a turn (O-256): see nearestDetent.
     const visibleNodes = calculateNodePositions(nav.items, vp, rotation, nodeRadius, nodeSpacing);
-    visibleNodes.forEach(node => {
-      if (node.item?.placebo) return; // the version footnote is never a seat
-      const parts = partsOf(node.item);
-      for (let p = 0; p < parts; p += 1) {
-        const detentAngle = magnifier.angle + settleOffsetFor(node.item, p);
-        const diff = Math.abs(node.angle - detentAngle);
-        if (diff < closestDiff) {
-          closestDiff = diff;
-          closestIdx = node.index;
-          closestDelta = detentAngle - node.angle;
-          closestPart = p;
-        }
-      }
-    });
-    pendingSelectionIndex = null; // a thumb overrides any journey in flight
-    // A HALF-STEP IS NOT A SELECTION CHANGE, AND THAT WAS THE WHOLE BUG.
+    const near = nearestDetent(visibleNodes, (item, p) => magnifier.angle + settleOffsetFor(item, p), partsOf);
+    if (near) { closestIdx = near.index; closestDelta = near.delta; closestPart = near.part; }
     // `selectIndex` returns early when the index is unchanged, so carrying an
     // eclipsed node from one side of the Magnifier to the other — the same
     // node, the other half — notified nobody and the Detail Sector never

@@ -4843,6 +4843,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     pyramidAdapter: adapter,
     detailTapAdvances: Boolean(adapter?.capabilities?.detailTapAdvances),
     drillByTap: Boolean(adapter?.capabilities?.drillByTap),   // O-234
+    previewWhileTurning: Boolean(adapter?.capabilities?.detailPreviewsWhileTurning),   // O-256
     gapEmblemUrl: splashDeclared?.imageUrl || null,            // O-237
     getGapEmblemAspect: () => gapEmblemAspect,
     // Leaf-advance paints the text ahead of the ring's arrival — same

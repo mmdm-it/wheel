@@ -209,6 +209,15 @@ describe('the day card carries the manifold the index names for the day (O-256)'
       primeFigures(null);
     }
   });
+  it('the card follows the ring while it turns, and every drawing is fetched once at boot (Howell 2026-10-31)', async () => {
+    const { calendarAdapter, preloadFigures } = await import('../src/adapters/calendar-adapter.js');
+    assert.equal(calendarAdapter.capabilities.detailPreviewsWhileTurning, true);
+    const made = [];
+    const n = preloadFigures({ drawings: { a: { file: 'a.svg' }, b: { file: 'b.svg' }, c: {} } }, () => { const im = {}; made.push(im); return im; });
+    assert.equal(n, 2);
+    assert.deepEqual(made.map(im => im.src), ['./data/calendar/manifolds/a.svg', './data/calendar/manifolds/b.svg']);
+    assert.equal(preloadFigures(null, () => ({})), 0);
+  });
   it('the plugin seats the drawing under the weekday, pulled in from the edge, and its label beneath it', async () => {
     const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
     const card = new EphemerisDetailPlugin().render(
