@@ -1038,6 +1038,16 @@ svg :focus-visible {
   font-size: calc(6.0 / 100 * var(--detail-SSd, 650px));
   line-height: 1.4;
 }
+/* FANO'S TABLES AT THE FOOT (O-255, Howell 2026-10-30): half the rows'
+   size — the small tier the line table is calibrated for — "It can be
+   very small". Placed by the plugin on the last lines above the deck. */
+.detail-ephemeris-table {
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.5px;
+  font-variant-numeric: tabular-nums;
+  font-size: calc(3.0 / 100 * var(--detail-SSd, 650px));
+  line-height: 1.4;
+}
 
 /* The dossier's inline media (the Twin 6 HP film, and photos to come) */
 .detail-card-video {

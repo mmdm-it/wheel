@@ -3042,10 +3042,16 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   // reports the 40% it is drawn at — and centres its title in that; the
   // offset sizes are the panel's own, whatever scale the stack wears.
   const panelRect = detailPanel.getBoundingClientRect();
+  // THE DECK'S TOP (O-255): the slider's own top less one of its heights —
+  // the "safe distance" the foot of the sector keeps from it. The thumb
+  // is fixed and unscaled, so its rect is honest whatever the stack wears.
+  const thumb = document.getElementById('dimension-button');
+  const thumbRect = thumb && !thumb.hidden ? thumb.getBoundingClientRect() : null;
   const renderBounds = {
     ...arcBounds,
     width: detailPanel.offsetWidth || panelRect.width,
-    height: detailPanel.offsetHeight || panelRect.height
+    height: detailPanel.offsetHeight || panelRect.height,
+    deckTop: thumbRect && thumbRect.height > 0 ? thumbRect.top - thumbRect.height : undefined
   };
 
 

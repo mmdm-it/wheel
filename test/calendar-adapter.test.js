@@ -131,3 +131,34 @@ describe('calendar front door (volume config)', () => {
       'the current month arrives magnified');
   });
 });
+
+// FANO'S TABLES AT THE FOOT OF THE SECTOR (O-255, Howell 2026-10-30).
+describe('the day card seats Fano\'s tables at the foot (O-255)', () => {
+  const create = tag => {
+    const el = { tagName: tag, className: '', textContent: '', style: {}, children: [], appendChild(c) { this.children.push(c); return c; } };
+    return el;
+  };
+  const lineTable = Array.from({ length: 20 }, (_, i) => ({ y: 100 + i * 10, leftX: 50 + i, rightX: 300, availableWidth: 250 - i, maxChars: 30 }));
+  it('the sun and tide lines take the last lines above the deck, in order, small', async () => {
+    const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
+    const card = new EphemerisDetailPlugin().render(
+      { type: 'ephemeris', title: 'FRIDAY', titleAlign: 'center', rows: ['14 Sak'], tables: ['↑ 6:41    ↓ 17:02', '▲ 12:59  0,9 m', '▽ 20:07  0,1 m'] },
+      { lineTable, SSd: 360, width: 360, deckTop: 240 }, { createElement: create });
+    const tables = card.children.filter(c => /detail-ephemeris-table/.test(c.className));
+    assert.equal(tables.length, 3);
+    assert.deepEqual(tables.map(t => t.textContent), ['↑ 6:41    ↓ 17:02', '▲ 12:59  0,9 m', '▽ 20:07  0,1 m'], 'in the print\'s order');
+    // Lines at y 100..290, pitch 10: the last whose bottom clears a deck at 240 is y 230, so the three sit at 210, 220, 230.
+    assert.deepEqual(tables.map(t => t.style.top), ['210px', '220px', '230px']);
+    const row = card.children.find(c => /detail-ephemeris-row/.test(c.className));
+    assert.equal(row.textContent, '14 Sak', 'the day\'s own name stays under the weekday');
+    assert.ok(parseFloat(row.style.top) < 210, 'above the tables');
+  });
+  it('with no deck given, the tables take the very last lines', async () => {
+    const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
+    const card = new EphemerisDetailPlugin().render(
+      { type: 'ephemeris', title: 'FRIDAY', rows: [], tables: ['a', 'b'] },
+      { lineTable, SSd: 360, width: 360 }, { createElement: create });
+    const tables = card.children.filter(c => /detail-ephemeris-table/.test(c.className));
+    assert.deepEqual(tables.map(t => t.style.top), ['280px', '290px']);
+  });
+});

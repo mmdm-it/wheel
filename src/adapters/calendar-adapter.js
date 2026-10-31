@@ -255,15 +255,21 @@ export function detailFor(selected, manifest) {
       const word = daySystem.dayWord(own.year, own.month, own.day);
       if (word) rows.push(String(word));
     }
+    // FANO'S TABLES GO TO THE FOOT OF THE SECTOR (O-255, Howell 2026-10-30:
+    // "take all of the sunrise and tide tables for Fano and move them down
+    // to the bottom of the detail sector, staying a safe distance away from
+    // the dimension slider, and make the font about half as big"). They
+    // ride a field of their own; the day's own name stays under the weekday.
+    const tables = [];
     const sun = localSunTimes(yearNumber, monthNumber, dayNumber, FANO.lat, FANO.lon, FANO.zoneSince);
-    if (sun) rows.push(`↑ ${sun.alba}    ↓ ${sun.tramonto}`);
+    if (sun) tables.push(`↑ ${sun.alba}    ↓ ${sun.tramonto}`);
     const key = `${yearNumber}-${String(monthNumber).padStart(2, '0')}-${String(dayNumber).padStart(2, '0')}`;
     const eph = ephemerisDays?.[key];
     if (eph) {
       const h = v => Number(v).toFixed(1).replace('.', ',');
-      rows.push(`▲ ${eph.alta[0]}  ${h(eph.alta[1])} m`);
-      rows.push(`▽ ${eph.bassa[0]}  ${h(eph.bassa[1])} m`);
-      if (eph.luna && MOON_PRINT[eph.luna]) rows.push(MOON_PRINT[eph.luna]);
+      tables.push(`▲ ${eph.alta[0]}  ${h(eph.alta[1])} m`);
+      tables.push(`▽ ${eph.bassa[0]}  ${h(eph.bassa[1])} m`);
+      if (eph.luna && MOON_PRINT[eph.luna]) tables.push(MOON_PRINT[eph.luna]);
     }
     // THE PRESENT REACHES THE LEAF (O-247, Howell 2026-10-30): today's card
     // wears the NOW colours — a red disc behind the weekday, the word in
@@ -276,7 +282,8 @@ export function detailFor(selected, manifest) {
       title: weekday.toUpperCase(),
       titleAlign: 'center',
       now: selected.now === true || serial === todaySerial(),
-      rows
+      rows,
+      tables
     };
   }
 

@@ -4,10 +4,16 @@ import { makeLineSpan } from './line-layout.js';
 
 // The day ephemeris card — the wall print's day cell as a Detail Sector
 // payload (docs/DETAIL_SECTOR_LOADS.md). Weekday at the top (NO date — the
-// magnifier already carries it; Howell: no redundancy), then the ephemeris
-// rows: alba/tramonto, alta/bassa marea, moon quarter when the print names
-// one. Feast days wear the print's red on the weekday. Pure display: in
-// this volume the sector tap means NEXT, so nothing here is interactive.
+// magnifier already carries it; Howell: no redundancy), then the day's own
+// rows (another reckoning's name for the day), and AT THE FOOT of the sector
+// Fano's tables: alba/tramonto, alta/bassa marea, moon quarter when the
+// print names one (O-255, Howell 2026-10-30: "move them down to the bottom
+// of the detail sector, staying a safe distance away from the dimension
+// slider, and make the font about half as big. It can be very small"). The
+// tables take the LAST lines of the table that lie above the deck — the
+// host passes the slider's top, less a safe distance, as bounds.deckTop —
+// one pitch apart, at the small tier. Pure display: in this volume the
+// sector tap means NEXT, so nothing here is interactive.
 
 /** Blank-line gap after the title. */
 const SECTION_GAP = 1;
@@ -82,6 +88,25 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
         container.appendChild(span);
         lineIdx += 2; // double-size rows breathe two pitches apart
       });
+      // Fano's tables at the foot: the last lines above the deck, in order,
+      // never climbing into the rows above.
+      const tables = Array.isArray(item?.tables) ? item.tables : [];
+      const deckTop = Number.isFinite(bounds?.deckTop) ? bounds.deckTop : Infinity;
+      const pitch = lineTable.length > 1 ? lineTable[1].y - lineTable[0].y : 0;
+      const clear = lineTable.filter((line, i) => i >= lineIdx && line.y + pitch <= deckTop);
+      clear.slice(-tables.length).forEach((line, i) => {
+        const span = create('span');
+        span.className = 'detail-text-line detail-ephemeris-table';
+        span.textContent = tables[tables.length - Math.min(tables.length, clear.length) + i];
+        if (span.style) {
+          span.style.position = 'absolute';
+          span.style.top = `${line.y}px`;
+          span.style.left = `${line.leftX}px`;
+          span.style.width = `${line.availableWidth}px`;
+          span.style.textAlign = 'center';
+        }
+        container.appendChild(span);
+      });
       return container;
     }
 
@@ -96,6 +121,12 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
     rows.forEach(text => {
       const row = create('div');
       row.className = 'detail-ephemeris-row';
+      row.textContent = text;
+      card.appendChild(row);
+    });
+    (Array.isArray(item?.tables) ? item.tables : []).forEach(text => {
+      const row = create('div');
+      row.className = 'detail-ephemeris-table';
       row.textContent = text;
       card.appendChild(row);
     });
