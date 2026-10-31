@@ -560,17 +560,17 @@ svg :focus-visible {
      here re-uppercased the native scripts (Русский → РУССКИЙ) — removed. */
   pointer-events: none;
 }
-/* The magnified language's label is larger, as in the primary strata. Its
-   anchoring (offset + start) is set in the view so the name spans the node
-   weighted inward, off the left edge — like the catalog's unselected nodes. */
+/* The magnified label is larger, as in the primary strata — and NOT bold,
+   on every plane (O-254, Howell 2026-10-30: "Nothing should be bold. The
+   label for the magnifier in the secondary stratum should not be bold").
+   The basement's lens had already been given the plain weight (O-128,
+   Howell 2026-09-14: "Look again at the primary stratum magnifier. You'll
+   see the font is larger, but it is not bold"); the other planes kept 700
+   until tonight. Its anchoring (offset + start) is set in the view. */
 .secondary-strata-label.is-magnified {
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
-  font-weight: 700;
+  font-weight: 400;
 }
-/* The basement's lens label (O-128): the primary's manners — larger, not
-   bold. "Look again at the primary stratum magnifier. You'll see the font
-   is larger, but it is not bold." (Howell, 2026-09-14) */
-.secondary-strata.labels-beside .secondary-strata-label.is-magnified { font-weight: 400; }
 
 .focus-ring-band {
   /* A stroked centreline now (sprocket chain: arc + straight tangents), not a
