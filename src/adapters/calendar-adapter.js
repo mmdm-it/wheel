@@ -37,8 +37,11 @@ function loadEphemeris() {
 // THE MANIFOLD OF THE DAY (O-256, Howell 2026-10-31: "a random 'Manifold
 // of the Day'"): the corpus names, day by day, which of its line drawings
 // the card carries — the index lists the drawings and maps a day serial to
-// one. Warmed at boot like the ephemeris; a day the index does not name
-// shows none. Each drawing is one hand, one view, white on the ground.
+// one. Warmed at boot like the ephemeris. The index names a drawing for a
+// serial (`days`) or, failing that, for a day of the month (`byDayOfMonth`:
+// Howell 2026-10-31, "a picture on the 1st through the 28th day of every
+// month from the beginning of time"); a day neither names shows none. Each
+// drawing is one hand, one view, white on the ground.
 const figuresUrl = './data/calendar/manifolds/index.json';
 let figuresIndex = null;
 let figuresFetch = null;
@@ -52,8 +55,8 @@ function loadFigures() {
     .catch(() => { figuresIndex = null; });
   return figuresFetch;
 }
-function figureOfDay(serial) {
-  const key = figuresIndex?.days?.[String(serial)];
+function figureOfDay(serial, dayOfMonth) {
+  const key = figuresIndex?.days?.[String(serial)] ?? figuresIndex?.byDayOfMonth?.[String(dayOfMonth)];
   const drawing = key ? figuresIndex?.drawings?.[key] : null;
   if (!drawing?.file) return null;
   return {
@@ -312,7 +315,7 @@ export function detailFor(selected, manifest) {
       titleAlign: 'center',
       now: selected.now === true || serial === todaySerial(),
       rows,
-      figure: figureOfDay(serial),
+      figure: figureOfDay(serial, dayNumber),
       tables
     };
   }

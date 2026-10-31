@@ -187,6 +187,28 @@ describe('the day card carries the manifold the index names for the day (O-256)'
       primeFigures(null);
     }
   });
+  it('a day no serial names falls back to the day of the month — every 1st, every 31st — and an explicit day wins (Howell 2026-10-31)', async () => {
+    const { primeFigures, detailFor } = await import('../src/adapters/calendar-adapter.js');
+    const manifest = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
+    primeFigures({
+      drawings: {
+        'cat:g342': { label: 'Caterpillar G342', file: 'g342.svg' },
+        'cat:c18': { label: 'Caterpillar C18', file: 'cat-c18.svg' },
+        'odd:one': { label: 'Odd One', file: 'odd.svg' }
+      },
+      days: { '20757': 'odd:one' },
+      byDayOfMonth: { '1': 'cat:c18', '31': 'cat:g342' }
+    });
+    try {
+      assert.equal(detailFor({ id: 'd:1999:5:1', level: 'day' }, manifest).figure.label, 'Caterpillar C18');
+      assert.equal(detailFor({ id: 'd:1517:10:31', level: 'day' }, manifest).figure.label, 'Caterpillar G342');
+      assert.equal(detailFor({ id: 'd:2026:10:31', level: 'day' }, manifest).figure.label, 'Odd One');
+      assert.equal(detailFor({ id: 'd:1999:5:2', level: 'day' }, manifest).figure, null);
+    } finally {
+      primeFigures(null);
+    }
+  });
   it('the plugin seats the drawing under the weekday, pulled in from the edge, and its label beneath it', async () => {
     const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
     const card = new EphemerisDetailPlugin().render(
