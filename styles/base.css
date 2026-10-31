@@ -742,6 +742,18 @@ svg :focus-visible {
    back where it was." */
 :root[data-theme="calendar"] .focus-ring-magnifier-label:not(.focus-ring-parent-label) {
   font-size: clamp(calc(27.3px * var(--iframe-scale, 1)), 3.12vmin, calc(50.7px * var(--iframe-scale, 1)));
+  /* AND WEARS THE PARENT LABEL'S HALO (O-254, Howell 2026-10-30, the lens
+     reading ANNÉES QUATRE-VINGT across a pyramid node's CLXXXIX: "Do you
+     want to put some kind of pad around the magnifier label where it
+     overlaps child pyramid nodes... It's up to you"). The same stroke in
+     the ground's colour, the same two knobs (O-233), so a pyramid name
+     passing under the lens's word is dimmed where they meet and nowhere
+     else. Calendar only: the Bible's lens is untouched. */
+  paint-order: stroke fill;
+  stroke: var(--color-bg);
+  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke-width: var(--parent-halo-width, 0.6em);
+  stroke-linejoin: round;
 }
 
 .focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
