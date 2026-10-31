@@ -28,6 +28,24 @@ const MAG_LABEL_SPAN_PULL = 0.7;
 // the node and scaled with it; settled in the lens it wears the magnified
 // label, centred, at the lens's own size.
 const BESIDE_OFFSET = 1.3;           // node radii, along the node's angle (outward): the name starts here and runs on
+// THE MIRRORED PLANE'S LABEL MANNERS (O-254, Howell 2026-10-30): the plane's
+// seats sit against the left edge, so a name centred on its node lost its
+// first half there. Every name is start-anchored at the node's OUTWARD rim
+// and runs inward toward the hub, covering the node and spilling past it on
+// the hub's side — the primary ring's unselected-node look, mirrored. His
+// first cut started the name past the node on the hub's side: "none of the
+// labels even touch the focus ring nodes... They need to be moved back such
+// that they overlap the focus ring node and extend a bit past it." The name
+// starts the same fraction of a radius back from its node's centre as the
+// lens label does from the lens's (MAG_LABEL_SPAN_PULL), so the seats and
+// the lens share one manner; and it never starts off the glass — a seat
+// whose node is itself half off the left edge (the lowest calendars on a
+// short phone) keeps its whole name. No centring on this plane at any time,
+// not passing the lens either: "the magnifier in the secondary stratum is a
+// little closer to the viewport edge and therefore should not be centered
+// at all at any time."
+const COVER_PULL = MAG_LABEL_SPAN_PULL; // node radii, outward from the centre: the name starts here and runs over the node
+const GLASS_MARGIN = 2;              // px: no name starts nearer the left edge than this
 const LENS_SCALE_PEAK = 2.0;
 const LENS_SCALE_SIGMA = 0.3;        // × node spacing
 
@@ -221,20 +239,17 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.setAttribute('text-anchor', 'start');
       label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
-    } else if (mirrored && !centerMagnified && magScale <= 1.01) {
-      // TOWARD THE HUB (O-254, Howell 2026-10-30: "they should be offset
-      // toward the hub so that they are not clipped by the left side of the
-      // viewport"): the mirrored plane's seats sit against the left edge, so
-      // a name centred on its node lost its first half there. The name now
-      // starts just past the node on the hub's side and runs inward, the
-      // way the lens's own label is pulled.
-      const lx = node.x - Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
-      const ly = node.y - Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
-      label.setAttribute('x', lx.toFixed(1));
-      label.setAttribute('y', ly.toFixed(1));
+    } else if (mirrored && !centerMagnified) {
+      // Over the node, from COVER_PULL radii out toward the hub, never off
+      // the glass. Passing the lens it swells about that same start, never
+      // centred.
+      const lx = Math.max(GLASS_MARGIN, node.x + Math.cos(node.angle) * nodeR * COVER_PULL);
+      const ly = node.y + Math.sin(node.angle) * nodeR * COVER_PULL;
+      label.setAttribute('x', '0');
+      label.setAttribute('y', '0');
       label.setAttribute('text-anchor', 'start');
-      label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
-      label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
+      label.setAttribute('class', `secondary-strata-label is-beside${magScale > 1.01 ? ' is-passing' : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
+      label.setAttribute('transform', `translate(${lx.toFixed(1)}, ${ly.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`);
     } else {
       // On the node — the numeral's seat, and the swelling name passing the lens.
       label.setAttribute('x', '0');
