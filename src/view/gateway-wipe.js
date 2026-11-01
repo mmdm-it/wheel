@@ -83,6 +83,19 @@ export function captureGatewaySnapshot(svg) {
     if (node.tagName && node.tagName.toLowerCase() === 'defs') return; // avoid duplicate ids
     const clone = node.cloneNode(true);
     freezeStyles(node, clone);
+    // THE HALO COPIES FOLLOW THEIR LABELS BY ID (O-257), and a snapshot's
+    // copies must follow the snapshot's own frozen labels — not the live
+    // ones about to change under it, which the duplicate ids would resolve
+    // to. Each frozen label takes a new id and its halo is pointed at it.
+    const halos = typeof clone.querySelectorAll === 'function' ? clone.querySelectorAll('use.label-halo') : [];
+    halos.forEach(halo => {
+      const id = String(halo.getAttribute('href') || '').replace(/^#/, '');
+      const src = id ? clone.querySelector(`#${id}`) : null;
+      if (!src) { halo.remove(); return; }
+      src.setAttribute('id', `${id}-wipe`);
+      halo.setAttribute('href', `#${id}-wipe`);
+      halo.removeAttribute('xlink:href');
+    });
     g.appendChild(clone);
   });
 

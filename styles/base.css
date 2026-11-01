@@ -630,12 +630,18 @@ svg :focus-visible {
      the name and nowhere else. A stroke, not a blur — an SVG filter on a
      <text> dies in WebKit (the blur saga, v3.22.0) — and on the label
      itself, so it travels with every flight that moves the label. Two knobs:
-     how much it hides, and how far beyond the letters it reaches. */
+     how much it hides, and how far beyond the letters it reaches.
+     AND IT IS DRAWN ONLY ON THE HALO COPY (O-257, Howell 2026-10-31: the
+     stroke lay across the vessel's own disc — "I only want this glowing
+     outline to be visible or work beyond the node itself"). The label's
+     stroke is off here and on in the `.label-halo` <use> of it, which sits
+     under the disc; see src/view/label-halo.js. */
   paint-order: stroke fill;
   stroke: var(--color-bg);
-  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke-opacity: var(--label-halo-opacity, 0);
   stroke-width: var(--parent-halo-width, 0.6em);
   stroke-linejoin: round;
+  fill-opacity: var(--label-ink-opacity, 1);
   /* The corner label is TAPPABLE (its class family disables pointer-events;
      historically the disc sat under it so taps landed anyway — the split
      seat exposed the truth, Howell 2026-07-23). Its onclick is nulled when
@@ -748,13 +754,29 @@ svg :focus-visible {
      overlaps child pyramid nodes... It's up to you"). The same stroke in
      the ground's colour, the same two knobs (O-233), so a pyramid name
      passing under the lens's word is dimmed where they meet and nowhere
-     else. Calendar only: the Bible's lens is untouched. */
+     else. Calendar only: the Bible's lens is untouched. The stroke is on
+     only in the `.label-halo` copy under the glass (O-257). */
   paint-order: stroke fill;
   stroke: var(--color-bg);
-  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke-opacity: var(--label-halo-opacity, 0);
   stroke-width: var(--parent-halo-width, 0.6em);
   stroke-linejoin: round;
+  fill-opacity: var(--label-ink-opacity, 1);
 }
+
+/* THE HALO COPY (O-257): a <use> of the label, placed before its disc, so
+   the disc paints over the glow and under the letters. The copy inherits
+   these two values from the <use>; the label itself never sees them, so
+   its own stroke stays off and its ink stays on. It is never a tap target. */
+.label-halo {
+  --label-halo-opacity: var(--parent-halo-opacity, 0.85);
+  --label-ink-opacity: 0;
+  fill-opacity: 0;   /* a label with no halo rule (the Bible's lens) copies as nothing */
+  pointer-events: none;
+}
+/* The lens label hides while the ring turns; its halo copy, which sits in
+   the light DOM beside it, hides by its own rule. */
+.focus-ring-magnifier.rotating .label-halo { display: none; }
 
 .focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
   fill: none;

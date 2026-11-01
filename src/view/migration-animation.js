@@ -20,6 +20,7 @@
  */
 
 import { applyPyramidNodeAppearance, labelRotationDeg } from './node-appearance.js';
+import { attachLabelHalo } from './label-halo.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const ANIM_DURATION = 600; // ms
@@ -1969,6 +1970,7 @@ export function animateVolumeParentMerge(opts) {
   staticBase.textContent = baseLabel;
   staticBase.style.fill = dressMerge.groundInk; // corner label: ground ink, not lens ink
   overlay.appendChild(staticBase);
+  attachLabelHalo(staticBase, staticDisc);   // the corner name's halo, under its disc (O-257)
 
   const baseAdvance = typeof staticBase.getComputedTextLength === 'function'
     ? staticBase.getComputedTextLength()
@@ -2103,6 +2105,7 @@ export function animateVolumeParentUnmerge(opts) {
   staticBase.setAttribute('class', 'focus-ring-magnifier-label');
   staticBase.textContent = baseLabel;
   overlay.appendChild(staticBase);
+  attachLabelHalo(staticBase, staticDisc);   // the corner name's halo, under its disc (O-257)
 
   const baseAdvance = typeof staticBase.getComputedTextLength === 'function'
     ? staticBase.getComputedTextLength()
