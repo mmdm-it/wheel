@@ -21,8 +21,10 @@ const SECTION_GAP = 1;
 const FIGURE_TOP_GAP = 2;
 /** The figure's box is pulled left of the glass's edge by this share of the panel's width ("and to the left"). */
 const FIGURE_INSET = 0.10;
-/** Lines kept under the drawing for its label (the card tier spans two pitches). */
-const FIGURE_LABEL_LINES = 2;
+/** Lines kept under the drawing for its label: the card tier spans two pitches,
+ * and a long name wraps onto a second line (Howell 2026-10-31: "several models
+ * have names that are too long. They should be spread across two lines"). */
+const FIGURE_LABEL_LINES = 3;
 /** The drawings' proportion (width over height) when the index does not state one. */
 const FIGURE_ASPECT = 1.5;
 

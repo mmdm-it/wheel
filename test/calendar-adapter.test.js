@@ -257,14 +257,15 @@ describe('the day card carries the manifold the index names for the day (O-256)'
     // The room runs to a pitch above the first table; the arc's innermost
     // edge over it is the lowest line's; the box is pulled left by a tenth
     // of the panel (36px). Its proportion would make it 160px tall, but the
-    // room (150..210) less the label's two lines leaves 40.
+    // room (150..210) less the label's three lines (a long name wraps onto
+    // a second, Howell 2026-10-31) leaves 30.
     const left = 60 - 36, width = 300 - 36 - left;
     assert.equal(img.style.left, `${left}px`);
     assert.equal(img.style.width, `${width}px`);
-    assert.equal(img.style.height, '40px');
+    assert.equal(img.style.height, '30px');
     const label = card.children.find(c => /detail-figure-label/.test(c.className));
     assert.equal(label.textContent, 'Caterpillar G342', 'the capitals are the stylesheet\'s');
-    assert.equal(label.style.top, '190px', 'the first line clear of the drawing');
+    assert.equal(label.style.top, '180px', 'the first line clear of the drawing');
     assert.equal(label.style.left, `${left}px`);
     assert.equal(label.style.width, `${width}px`);
     assert.equal(label.style.textAlign, 'center');

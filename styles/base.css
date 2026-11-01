@@ -1074,14 +1074,18 @@ svg :focus-visible {
 /* THE MANIFOLD OF THE DAY (O-256, Howell 2026-10-31): the drawing under
    the weekday, fitted whole and hung from the top of its room — a line
    drawing, white on the ground, so it needs no frame — and its label in
-   capitals beneath it, centred on it, at the card tier. */
+   capitals beneath it, centred on it, at the card tier. A name wider than
+   the drawing breaks onto a second line, the two lines kept even (Howell
+   2026-10-31: "spread across two lines"); the plugin keeps the room for it. */
 .detail-figure-label {
   color: rgba(255, 255, 255, 0.88);
   font-size: calc(4.5 / 100 * var(--detail-SSd, 650px));
-  line-height: 1.4;
+  line-height: 1.25;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 .detail-figure {
   display: block;
