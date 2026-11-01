@@ -209,6 +209,30 @@ describe('the day card carries the manifold the index names for the day (O-256)'
       primeFigures(null);
     }
   });
+  it('even months take the second set, and fall back to the first where it has no drawing yet (Howell 2026-10-31, "2 months worth")', async () => {
+    const { primeFigures, detailFor } = await import('../src/adapters/calendar-adapter.js');
+    const manifest = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
+    primeFigures({
+      drawings: {
+        'cat:c18': { label: 'Caterpillar C18', file: 'cat-c18.svg' },
+        'cat:g342': { label: 'Caterpillar G342', file: 'g342.svg' },
+        'lockwood:twin': { label: 'Lockwood-Ash Twin', file: 'lockwood.svg' },
+        'odd:one': { label: 'Odd One', file: 'odd.svg' }
+      },
+      days: { '20758': 'odd:one' },
+      byDayOfMonth: { '1': 'cat:c18', '2': 'cat:g342' },
+      byDayOfMonthEvenMonths: { '1': 'lockwood:twin' }
+    });
+    try {
+      assert.equal(detailFor({ id: 'd:1999:5:1', level: 'day' }, manifest).figure.label, 'Caterpillar C18', 'May, odd: the first set');
+      assert.equal(detailFor({ id: 'd:1999:6:1', level: 'day' }, manifest).figure.label, 'Lockwood-Ash Twin', 'June, even: the second set');
+      assert.equal(detailFor({ id: 'd:1999:6:2', level: 'day' }, manifest).figure.label, 'Caterpillar G342', 'June the 2nd: not yet in the second set, so the first');
+      assert.equal(detailFor({ id: 'd:2026:11:1', level: 'day' }, manifest).figure.label, 'Odd One', 'an explicit day still wins');
+    } finally {
+      primeFigures(null);
+    }
+  });
   it('the card follows the ring while it turns, and every drawing is fetched once at boot (Howell 2026-10-31)', async () => {
     const { calendarAdapter, preloadFigures } = await import('../src/adapters/calendar-adapter.js');
     assert.equal(calendarAdapter.capabilities.detailPreviewsWhileTurning, true);

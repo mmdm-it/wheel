@@ -42,6 +42,11 @@ function loadEphemeris() {
 // Howell 2026-10-31, "a picture on the 1st through the 28th day of every
 // month from the beginning of time"); a day neither names shows none. Each
 // drawing is one hand, one view, white on the ground.
+// TWO MONTHS' WORTH (Howell the same evening: "Let's do 2 months worth of
+// manifold of the day"): a second table, `byDayOfMonthEvenMonths`, serves
+// the even-numbered months — February, April, ... December — so the sets
+// alternate month by month; a day the second table has not filled yet falls
+// back to the first, so the calendar is never blank while the set grows.
 const figuresUrl = './data/calendar/manifolds/index.json';
 let figuresIndex = null;
 let figuresFetch = null;
@@ -68,8 +73,10 @@ export function preloadFigures(index, makeImage = (typeof Image === 'function' ?
   }
   return n;
 }
-function figureOfDay(serial, dayOfMonth) {
-  const key = figuresIndex?.days?.[String(serial)] ?? figuresIndex?.byDayOfMonth?.[String(dayOfMonth)];
+function figureOfDay(serial, dayOfMonth, month) {
+  const dom = String(dayOfMonth);
+  const evenSet = month % 2 === 0 ? figuresIndex?.byDayOfMonthEvenMonths?.[dom] : undefined;
+  const key = figuresIndex?.days?.[String(serial)] ?? evenSet ?? figuresIndex?.byDayOfMonth?.[dom];
   const drawing = key ? figuresIndex?.drawings?.[key] : null;
   if (!drawing?.file) return null;
   return {
@@ -328,7 +335,7 @@ export function detailFor(selected, manifest) {
       titleAlign: 'center',
       now: selected.now === true || serial === todaySerial(),
       rows,
-      figure: figureOfDay(serial, dayNumber),
+      figure: figureOfDay(serial, dayNumber, monthNumber),
       tables
     };
   }
