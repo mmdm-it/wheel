@@ -6,6 +6,7 @@ import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
 import { portalRecord, renderLandscapePortal } from './view/landscape-portal.js';
+import { armOrientationReboot } from './core/orientation-reboot.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
 // you see what's going on"). On the bench only — a private address and
@@ -4834,6 +4835,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // browser's address bar (if any) is present, so the visible viewport is
   // accurate. Re-pin the canvas to it so layout and canvas agree with reality.
   viewport = measureViewport();
+  // A wheel booted sideways is laid out sideways; when the phone comes
+  // upright the page reboots for the viewport it is in (O-259).
+  armOrientationReboot({ bootPortrait: viewport.isPortrait });
   pinCanvas(viewport);
 
   app = createApp({
