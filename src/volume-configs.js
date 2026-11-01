@@ -182,6 +182,23 @@ const volumeConfigs = {
     },
     theme: 'bible',
     documentTitle: 'Biblia Catholica',   // the tab's name at a standalone door (O-211)
+    // THE LANDSCAPE PAGE (O-258, Howell 2026-11-01): a phone turned sideways
+    // shows the volume's one plain page — here a welcome, the two addresses
+    // (a mistake in the text goes to corrections@, anything else to info@),
+    // and, small, the company's name as the door back to the calendar (the
+    // links are reciprocal, O-211 amended). The words beside the addresses
+    // are the volume's, per tongue (display_config.landscape); the addresses
+    // and the door are named here because this is the one file that may
+    // name a site (H1). The door's public address is bibliacatholica.com's
+    // sibling, mmdm.it; in the room and on the LAN the venue table finds the
+    // nearer door (src/view/landscape-portal.js).
+    landscape: {
+      mails: [
+        { address: 'corrections@bibliacatholica.com', purpose: 'corrections' },
+        { address: 'info@bibliacatholica.com', purpose: 'info' }
+      ],
+      link: { volume: 'calendar', href: 'https://mmdm.it/', label: 'Meccanismi Marittimi delle Marche' }
+    },
     palette: {
       bg: '#d4a574',
       // O-166's shades, declared (O-178): every node the lighter brown, the
@@ -490,6 +507,19 @@ const volumeConfigs = {
     assetBase: './data/calendar/',
     theme: 'calendar',
     documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
+    // THE LANDSCAPE PAGE (O-258, Howell 2026-11-01: "they see one email,
+    // info@mmdm.it. They see the name of the company, and they see the Crown
+    // of Thorns logo, which is a link to take them to the Bible"). The crown
+    // is the Bible's emblem and resolves against THIS volume's data root
+    // (W-114: the engine ships no picture that asserts anything about a
+    // corpus), so the corpus places a copy at calendar/assets/. The public
+    // door is bibliacatholica.com; the room and the LAN find the nearer one.
+    landscape: {
+      mails: [{ address: 'info@mmdm.it' }],
+      // `tone: 'light'`: the crown is dark line art and this ground is navy,
+      // so the page draws it inverted.
+      link: { volume: 'bible', href: 'https://bibliacatholica.com/', image: 'crown_of_thorns', tone: 'light', label: 'Biblia Catholica' }
+    },
     palette: {
       bg: '#0c2c44',
       // The band a step darker (#194567 × 0.78), the shade the calendar's

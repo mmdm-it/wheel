@@ -166,6 +166,143 @@ svg :focus-visible {
     text-transform: uppercase;
     max-width: 80vw;
   }
+
+  /* THE LANDSCAPE PORTAL (O-258, Howell 2026-11-01): once the boot has the
+     volume in hand, the rotate prompt above becomes the volume's one plain
+     page — its name in the splash card's face, the welcome, the house's
+     addresses, the door to the other volume, and the turn-it-upright line
+     last. Sized in vmin, which in landscape is the phone's HEIGHT, so the
+     page fits a short screen without scrolling. The volume's palette
+     dresses it: ground and ink are the theme's. */
+  #portrait-gate.landscape-portal {
+    justify-content: stretch;
+    gap: 0;
+    padding: 4vmin 6vmin 3vmin;
+    text-align: center;
+  }
+  .portal-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 88vw;
+    height: 100%;
+    margin: 0 auto;
+  }
+  /* The body is centred in what the rotate line leaves. */
+  .portal-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.6vmin;
+    width: 100%;
+  }
+  .portal-title {
+    margin: 0;
+    /* The card's face unless the volume declares its own (inline). */
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 6.4vmin;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  .portal-greeting {
+    max-width: 78vw;
+    font-size: 3.5vmin;
+    line-height: 1.4;
+  }
+  .portal-greeting p {
+    margin: 0 0 0.45em;
+    text-wrap: balance;   /* no one-word last line (the Spanish at 800 × 360) */
+  }
+  .portal-greeting p:last-child {
+    margin-bottom: 0;
+  }
+  .portal-mails {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vmin;
+    font-size: 3.3vmin;
+    letter-spacing: 0.03em;
+  }
+  .portal-mail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 1.4em;
+    margin: 0;
+  }
+  /* Purposed rows are two aligned columns, so the gutter runs straight down
+     the page instead of zigzagging with each phrase's length; the grid
+     mirrors itself under dir=rtl. */
+  .portal-mails--purposed {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1.4em;
+    row-gap: 1.2vmin;
+    align-items: baseline;
+  }
+  .portal-mails--purposed .portal-mail {
+    display: contents;
+  }
+  .portal-mails--purposed .portal-mail-purpose {
+    text-align: end;
+  }
+  .portal-mails--purposed .portal-mail-address {
+    text-align: start;
+    justify-self: start;
+  }
+  .portal-mail-purpose {
+    opacity: 0.72;
+  }
+  .portal-mail-address,
+  .portal-door {
+    color: inherit;
+    text-decoration: none;
+  }
+  .portal-mail-address {
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+  .portal-door {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6vmin;
+  }
+  .portal-door-image {
+    height: 26vmin;
+    width: auto;
+    display: block;
+  }
+  /* Dark line art on a dark ground: drawn in the negative, so the lines
+     carry the page as the caption does. */
+  .portal-door-image--light {
+    filter: invert(1);
+  }
+  .portal-door-label {
+    font-size: 3.1vmin;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  /* The door back from the Bible is a name, not an emblem: small, under the
+     addresses, in the card's face. */
+  .portal-door--name .portal-door-label {
+    font-family: 'EB Garamond', Georgia, serif;
+    text-transform: none;
+    letter-spacing: 0.06em;
+    font-size: 3.2vmin;
+    opacity: 0.8;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+  .portal-rotate {
+    margin: auto 0 0;
+    font-size: 2.7vmin;
+    letter-spacing: 0.06em;
+    opacity: 0.6;
+  }
 }
 
 /* Desktop gate: the instrument is a phone instrument — a mouse-driven

@@ -5,6 +5,7 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUE
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
+import { portalRecord, renderLandscapePortal } from './view/landscape-portal.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
 // you see what's going on"). On the bench only — a private address and
@@ -708,6 +709,8 @@ let searchStringEl = null;      // the carriage — SVG text left of the lens
 let bookmarkPrompt = null;   // O-128: the volume's own words for "bookmark this", per tongue
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
 let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
+let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
+let landscapeRendered = '';  // the record last drawn on the sheet, so a repaint only follows a change
 
 // THE PAGE SPEAKS THE READER'S TONGUE (O-226, Howell 2026-10-27: "The 'edition
 // under review' disclaimer should appear in whatever language has been
@@ -1945,6 +1948,22 @@ function applyReviewMarkTongue() {
   lines.forEach((line, i) => { if (spans[i] && spans[i].textContent !== line) spans[i].textContent = line; });
   incompleteMarkEl.setAttribute('dir', langDir());
 }
+// THE LANDSCAPE PAGE SPEAKS THE READING TONGUE TOO (O-258): the sheet a
+// sideways phone shows is rebuilt from the volume's words whenever the record
+// changes — at the volume's boot and at every change of reading language,
+// on the review mark's own road (O-226).
+function applyLandscapePortal() {
+  if (typeof document === 'undefined' || !currentVolumeId) return;
+  const sheet = document.getElementById('portrait-gate');
+  if (!sheet) return;
+  const lang = dimensionBridge.getSelection()?.language || null;
+  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location });
+  if (!record) return;
+  const key = JSON.stringify(record);
+  if (key === landscapeRendered) return;
+  landscapeRendered = key;
+  renderLandscapePortal(sheet, record);
+}
 
 function updateIncompleteMark() {
   if (typeof document === 'undefined') return;
@@ -2003,6 +2022,7 @@ function updateIncompleteMark() {
   ensureIncompleteMarkEl();
   applyReviewMarkTongue();
   applyCopyrightTongue();
+  applyLandscapePortal();
   if (!show) {
     if (incompleteMarkEl) incompleteMarkEl.style.display = 'none';
     document.documentElement.classList.remove('incomplete-mark-showing');
@@ -4657,6 +4677,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   bookmarkPrompt = root?.display_config?.bookmark_prompt || null;
   reviewMarkWords = root?.display_config?.review_mark || null;
   copyrightWords = root?.display_config?.copyright_notice || null;
+  landscapeRoot = root || null;
+  landscapeRendered = '';
+  applyLandscapePortal();
   if (config.hasSearch && Array.isArray(adapterNormalized?.items)) {
     const leafLevel = root?.display_config?.leaf_level || null;
     searchGraphById = new Map(adapterNormalized.items.map(i => [i.id, i]));

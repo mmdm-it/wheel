@@ -120,6 +120,19 @@ export function doorVolume(loc = (typeof window !== 'undefined' ? window.locatio
   }
   return best ? best.volume : null;
 }
+/**
+ * The door to `volume` on THIS host (O-258): where a page here may send the
+ * reader to the other volume without leaving the house — the screening room
+ * has a door for each. Null when the host has no such door, and the caller
+ * falls back to the LAN's word or the public address.
+ */
+export function doorHref(volume, loc = (typeof window !== 'undefined' ? window.location : null), table = venues) {
+  const doors = Array.isArray(table?.doors) ? table.doors : [];
+  if (!volume || !loc || typeof loc.hostname !== 'string') return null;
+  const host = loc.hostname.trim().toLowerCase();
+  const door = doors.find(d => d && Array.isArray(d.hosts) && d.hosts.includes(host) && d.volume === volume && typeof d.pathPrefix === 'string');
+  return door ? door.pathPrefix : null;
+}
 // THE CHECKED GATE IS OPEN (O-229, Howell 2026-10-28: "That gate is now open
 // … there's no need for the 'proofread=true' flag"). The flag that lifted it
 // is retired; what it also unlocked on the LAN — the proofreading driver and
