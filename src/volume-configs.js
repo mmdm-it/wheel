@@ -543,6 +543,9 @@ const volumeConfigs = {
       // In capitals in the upper left corner (Howell 2026-11-02, drawn on
       // his screenshot), not under the name.
       aboutCorner: true,
+      // And the town in the upper right, balancing it (Howell 2026-11-02:
+      // "FANO (PU)… visual balance, and … a little additional sense of place").
+      place: 'place',
       mails: [{ address: 'info@mmdm.it', purpose: 'info' }],
       mailsAs: 'words',
       // `tone: 'light'`: the crown is dark line art and this ground is navy,

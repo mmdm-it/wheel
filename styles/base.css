@@ -232,6 +232,25 @@ svg :focus-visible {
     letter-spacing: 0.1em;
     line-height: 1.5;
   }
+  /* The town in the upper right, mirroring the description (Howell
+     2026-11-02: "visual balance, and ... a little additional sense of
+     place"). */
+  .portal-place {
+    position: absolute;
+    top: 10vmin;
+    right: 5vw;
+    margin: 0;
+    font-size: 3.3vmin;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    opacity: 0.85;
+    text-transform: uppercase;
+    text-align: end;
+  }
+  [dir="rtl"] .portal-place {
+    right: auto;
+    left: 5vw;
+  }
   [dir="rtl"] .portal-about.portal-about--corner {
     left: auto;
     right: 5vw;

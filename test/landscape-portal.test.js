@@ -27,6 +27,7 @@ const CALENDAR_ROOT = {
     landscape: {
       emblem: { image: 'mmdm_logo' },
       info: { default: 'info', italian: 'info' },
+      place: { default: 'Fano (PU)' },
       trade: { default: 'Exhaust manifolds for all types of marine engines', english: 'Exhaust manifolds for all types of marine engines', italian: 'Collettori di scarico per motori marini di ogni tipo' }
     }
   }
@@ -190,6 +191,7 @@ describe('landscape portal — the sheet', () => {
     assert.equal(title.children.filter(c => c.tag === 'br').length, 0, 'one line, though the card sets two');
     const about = page.children.find(c => c.className === 'portal-about portal-about--corner');
     assert.equal(about.textContent, 'Exhaust manifolds for all types of marine engines', 'in the upper left corner, the capitals are CSS’s');
+    assert.equal(page.children.find(c => c.className === 'portal-place').textContent, 'Fano (PU)', 'the town in the upper right; the capitals are CSS’s');
     const list = body.children[2];
     assert.equal(list.className, 'portal-mails portal-mails--words');
     const links = list.children.map(row => row.children.find(c => c.tag === 'a'));

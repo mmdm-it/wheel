@@ -109,6 +109,8 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *            own number, under display_config.landscape.phone, wins)
  *   titleOneLine  true — the card's name on one line
  *   aboutCorner   true — the about line in the upper left corner, in capitals
+ *   place    the name of the volume's word table saying where the house is,
+ *            set in the upper right corner in capitals
  *   a mail's `subject: true` pre-composes its email with `subject` — the
  *            reader's place as main.js names it (Howell 2026-11-01: a
  *            correction is only useful if it says where the mistake is)
@@ -137,6 +139,8 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '' } : null;
   // What the business is, in the reader's tongue (the volume's words).
   const about = decl.about ? pick(words?.[decl.about], lang) : null;
+  // Where the house is, in the upper right corner balancing the about line.
+  const place = decl.place ? pick(words?.[decl.place], lang) : null;
   // The telephone sits beside the mail words, written as the volume writes
   // it. The number is the corpus's (display_config.landscape.phone), so it
   // travels only with the private data and reaches the public tree never;
@@ -182,6 +186,7 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     // `aboutCorner`: the line sits in the upper left corner, in capitals,
     // instead of under the name (Howell 2026-11-02, drawn on his screenshot).
     aboutCorner: decl.aboutCorner === true,
+    place: typeof place === 'string' && place.trim() ? place.trim() : null,
     link,
     rotate: decl.hint === false ? null : (pick(words?.rotate, lang) || FALLBACK_ROTATE),
     // THE COPYRIGHT LINE LIVES HERE NOW (Howell 2026-11-01: "move the
@@ -251,6 +256,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     const line = make(doc, 'p', record.aboutCorner ? 'portal-about portal-about--corner' : 'portal-about', record.about);
     (record.aboutCorner ? page : body).appendChild(line);
   }
+  if (record.place) page.appendChild(make(doc, 'p', 'portal-place', record.place));
   if (record.mails.length || record.phone) {
     // Words sit in one row; addresses with purposes are two aligned columns
     // (purpose, address) so the gutter runs straight; bare addresses are
