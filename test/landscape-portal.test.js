@@ -182,14 +182,15 @@ describe('landscape portal — the sheet', () => {
     const page = sheet.children[0];
     assert.equal(page.className, 'portal-page portal-page--emblem', 'a page headed by an emblem spreads down the height');
     const body = page.children[0];
-    assert.deepEqual(body.children.map(c => c.className.split(' ')[0]), ['portal-emblem', 'portal-title', 'portal-about', 'portal-mails']);
+    assert.deepEqual(body.children.map(c => c.className.split(' ')[0]), ['portal-emblem', 'portal-title', 'portal-mails']);
     assert.equal(body.children[0].getAttribute('src'), './data/calendar/assets/mmdm_logo.png');
     const title = body.children[1];
     assert.equal(title.style.fontFamily, "'Montserrat', sans-serif");
     assert.equal(title.style.color, '#f1b800');
     assert.equal(title.children.filter(c => c.tag === 'br').length, 0, 'one line, though the card sets two');
-    assert.equal(body.children[2].textContent, 'Exhaust manifolds for all types of marine engines');
-    const list = body.children[3];
+    const about = page.children.find(c => c.className === 'portal-about portal-about--corner');
+    assert.equal(about.textContent, 'Exhaust manifolds for all types of marine engines', 'in the upper left corner, the capitals are CSS’s');
+    const list = body.children[2];
     assert.equal(list.className, 'portal-mails portal-mails--words');
     const links = list.children.map(row => row.children.find(c => c.tag === 'a'));
     assert.deepEqual(links.map(a => [a.textContent, a.getAttribute('href')]), [['info', 'mailto:info@mmdm.it'], ['+39 071 000 000', 'tel:+39071000000']]);

@@ -108,6 +108,7 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *   phone    { number } — a telephone beside the mail words (the volume's
  *            own number, under display_config.landscape.phone, wins)
  *   titleOneLine  true — the card's name on one line
+ *   aboutCorner   true — the about line in the upper left corner, in capitals
  *   a mail's `subject: true` pre-composes its email with `subject` — the
  *            reader's place as main.js names it (Howell 2026-11-01: a
  *            correction is only useful if it says where the mistake is)
@@ -178,6 +179,9 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     mails,
     phone,
     about: typeof about === 'string' && about.trim() ? about.trim() : null,
+    // `aboutCorner`: the line sits in the upper left corner, in capitals,
+    // instead of under the name (Howell 2026-11-02, drawn on his screenshot).
+    aboutCorner: decl.aboutCorner === true,
     link,
     rotate: decl.hint === false ? null : (pick(words?.rotate, lang) || FALLBACK_ROTATE),
     // THE COPYRIGHT LINE LIVES HERE NOW (Howell 2026-11-01: "move the
@@ -243,7 +247,10 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     if (record.titleScale && record.titleScale !== 1) title.style.fontSize = `calc(var(--portal-title-size) * ${record.titleScale})`;
     body.appendChild(title);
   }
-  if (record.about) body.appendChild(make(doc, 'p', 'portal-about', record.about));
+  if (record.about) {
+    const line = make(doc, 'p', record.aboutCorner ? 'portal-about portal-about--corner' : 'portal-about', record.about);
+    (record.aboutCorner ? page : body).appendChild(line);
+  }
   if (record.mails.length || record.phone) {
     // Words sit in one row; addresses with purposes are two aligned columns
     // (purpose, address) so the gutter runs straight; bare addresses are

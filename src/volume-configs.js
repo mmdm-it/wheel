@@ -540,6 +540,9 @@ const volumeConfigs = {
       // The name on one line here (Howell 2026-11-02), though the card sets it on two.
       titleOneLine: true,
       about: 'trade',
+      // In capitals in the upper left corner (Howell 2026-11-02, drawn on
+      // his screenshot), not under the name.
+      aboutCorner: true,
       mails: [{ address: 'info@mmdm.it', purpose: 'info' }],
       mailsAs: 'words',
       // `tone: 'light'`: the crown is dark line art and this ground is navy,

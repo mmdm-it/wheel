@@ -219,6 +219,23 @@ svg :focus-visible {
     padding: 1.5vmin 0 10vmin;
     box-sizing: border-box;
   }
+  /* ...or in the upper left corner, in capitals, wrapped into a short
+     block (Howell 2026-11-02: "Make the descriptive line all caps and move
+     it to the upper left corner"); mirrored under rtl. */
+  .portal-about.portal-about--corner {
+    position: absolute;
+    top: 10vmin;
+    left: 5vw;
+    max-width: 23vw;
+    text-align: start;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+  }
+  [dir="rtl"] .portal-about.portal-about--corner {
+    left: auto;
+    right: 5vw;
+  }
   /* What the business is: one quiet line under the name. */
   .portal-about {
     margin: 0;
