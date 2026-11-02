@@ -229,13 +229,6 @@ export function layoutSpec(normalized, viewport) {
     colorByLevel: level => palette[level] || '#666',
     pyramid: {
       capacity: pyramidCapacity,
-      // The calendar's sky keeps ONE size for its lesser stars: the ring
-      // node's own. The two sizes of star (O-199) were ruled looking at
-      // the Bible's ranked skies; a year's twelve months at 60% read too
-      // small (Howell 2026-10-23, two photographs: "the node labels in the
-      // child pyramid have gotten smaller. This is incorrect. The old
-      // version has the right size"). The standout keeps the large size.
-      smallStarScale: 1,
       // A SKY OF EQUALS (O-240, Howell 2026-10-29): every month of the
       // year, January to December, one size — no featured node, no subset.
       // The calendar diverges from the Bible's ranked, capped skies here.

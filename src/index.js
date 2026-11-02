@@ -2138,10 +2138,14 @@ export function createApp({
         const rankOfSeat = i => (equalSky ? 0 : standoutId != null && children[i]?.id === standoutId ? 0 : isLarge(children[i]) ? 1 : anyProminence ? 1 + tierOf(children[i]) : 2);
         const seatOrder = seatPool.slice().sort((a, b) => (rankOfSeat(a) - rankOfSeat(b)) || (a - b));
         const LARGE_SCALE = MAGNIFIER_RADIUS_RATIO / NODE_RADIUS_RATIO;
-        // A volume may name its lesser stars' size (O-213): one keeps the
-        // ring node's own. Unnamed, the 60% of O-199.
+        // THE LESSER STARS ARE THE RING'S OWN SIZE (O-261, Howell 2026-11-02:
+        // "Make the child pyramid nodes the same size as the unselected focus
+        // ring nodes. So there should only be two sizes of nodes"): the large
+        // size for the lens, the parent and the sky's preferred star; the
+        // ring's size for everything else. Retires O-199's 60%. A volume may
+        // still name another size (O-213); none does.
         const declaredSmall = Number(pyramidConfig?.smallStarScale);
-        const SMALL_SCALE = Number.isFinite(declaredSmall) && declaredSmall > 0 ? declaredSmall : 0.6;
+        const SMALL_SCALE = Number.isFinite(declaredSmall) && declaredSmall > 0 ? declaredSmall : 1;
         const seatScales = seatOrder.map(i => (isLarge(children[i]) ? LARGE_SCALE : SMALL_SCALE));
         // Seat cap (Howell 2026-07-19): etcetera means etcetera — a 150-
         // chapter sky seats ~60, the smudge tail implying the rest (and the
