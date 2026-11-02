@@ -155,18 +155,6 @@ svg :focus-visible {
     font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
     text-align: center;
   }
-  #portrait-gate .portrait-gate-icon {
-    width: 22vmin;
-    height: 22vmin;
-  }
-  #portrait-gate .portrait-gate-text {
-    margin: 0;
-    font-size: 4.5vmin;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    max-width: 80vw;
-  }
-
   /* THE LANDSCAPE PORTAL (O-258, Howell 2026-11-01): once the boot has the
      volume in hand, the rotate prompt above becomes the volume's one plain
      page — its name in the splash card's face, the welcome, the house's
