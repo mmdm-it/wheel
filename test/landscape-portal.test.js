@@ -37,6 +37,7 @@ describe('landscape portal — the Bible’s page (the minimum, Howell’s notes
   it('is the name, two link words in the reading tongue, and the company’s mark in the corner — no line of its own', () => {
     const r = portalRecord({ volume: 'bible', config, root: BIBLE_ROOT, lang: 'latin', loc: SQUARE, table: VENUES });
     assert.equal(r.title, 'Biblia Catholica');
+    assert.equal(r.titleScale, 2.5, 'the name two and a half times the standard');
     assert.equal(r.mailsAs, 'words');
     assert.deepEqual(r.mails, [
       { address: 'corrections@bibliacatholica.com', text: 'correctiones', purpose: null },
@@ -154,6 +155,7 @@ describe('landscape portal — the sheet', () => {
     assert.equal(title.className, 'portal-title');
     assert.equal(title.style.fontFamily, "'Montserrat', sans-serif");
     assert.equal(title.style.color, '#f1b800');
+    assert.equal(title.style.fontSize, undefined, 'the calendar keeps the standard size');
     assert.equal(title.children.filter(c => c.tag === 'br').length, 1, 'two lines, as the card sets them');
     assert.equal(body.children.find(c => c.className.startsWith('portal-mails')).className, 'portal-mails', 'one address, no purpose: simply centred');
     const door = body.children.find(c => c.tag === 'a');

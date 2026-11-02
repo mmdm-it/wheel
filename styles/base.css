@@ -195,7 +195,8 @@ svg :focus-visible {
     margin: 0;
     /* The card's face unless the volume declares its own (inline). */
     font-family: 'EB Garamond', Georgia, serif;
-    font-size: 6.4vmin;
+    --portal-title-size: 6.4vmin;
+    font-size: var(--portal-title-size);
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
@@ -239,7 +240,8 @@ svg :focus-visible {
   /* Words alone, in one row (the scripture volume: corrections · info). */
   .portal-mails--words {
     flex-direction: row;
-    gap: 0 2.4em;
+    /* Howell: "put more space between the two email links" (was 2.4em). */
+    gap: 0 6em;
     font-size: 3.6vmin;
     letter-spacing: 0.08em;
   }

@@ -202,6 +202,7 @@ const volumeConfigs = {
         { address: 'info@bibliacatholica.com', purpose: 'info' }
       ],
       mailsAs: 'words',
+      titleScale: 2.5,   // Howell: "Make the name the Biblia Catholica 2.5 times larger"
       link: { volume: 'calendar', href: 'https://mmdm.it/', image: 'mmdm_logo', corner: true, label: 'Meccanismi Marittimi delle Marche' },
       hint: false
     },

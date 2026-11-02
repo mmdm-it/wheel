@@ -118,6 +118,9 @@ export function portalRecord({ volume, config, root, lang = null, loc, table } =
     title: splash.title || config?.documentTitle || '',
     titleFont: splash.font || null,
     titleColor: splash.color || null,
+    // The name's size against the page's standard (Howell 2026-11-01, on the
+    // minimum page: "Make the name ... 2.5 times larger").
+    titleScale: Number.isFinite(Number(decl.titleScale)) && Number(decl.titleScale) > 0 ? Number(decl.titleScale) : 1,
     mailsAs: asWords ? 'words' : 'addresses',
     mails,
     link,
@@ -162,6 +165,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     });
     if (record.titleFont) title.style.fontFamily = `'${record.titleFont.replace(/'/g, '')}', sans-serif`;
     if (record.titleColor) title.style.color = record.titleColor;
+    if (record.titleScale && record.titleScale !== 1) title.style.fontSize = `calc(var(--portal-title-size) * ${record.titleScale})`;
     body.appendChild(title);
   }
   if (record.mails.length) {
