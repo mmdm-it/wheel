@@ -530,10 +530,21 @@ const volumeConfigs = {
     // corpus), so the corpus places a copy at calendar/assets/. The public
     // door is bibliacatholica.com; the room and the LAN find the nearer one.
     landscape: {
-      mails: [{ address: 'info@mmdm.it' }],
+      // AMENDED (Howell 2026-11-02): the company's mark centred and large,
+      // its full name beneath, a line on what the business is, "the email
+      // link should just be the single word info", his telephone, and the
+      // door to the Bible in the lower right corner, as the Bible's door here
+      // sits — the crown alone, not the crown and the name ("It should not be
+      // both"). The words are the corpus's, in the phone's tongue.
+      emblem: { image: 'mmdm_logo', label: 'MMdM' },
+      about: 'trade',
+      mails: [{ address: 'info@mmdm.it', purpose: 'info' }],
+      mailsAs: 'words',
+      // Nothing is drawn until the number is set.
+      phone: { number: '' },
       // `tone: 'light'`: the crown is dark line art and this ground is navy,
       // so the page draws it inverted.
-      link: { volume: 'bible', href: 'https://bibliacatholica.com/', image: 'crown_of_thorns', tone: 'light', label: 'Biblia Catholica' },
+      link: { volume: 'bible', href: 'https://bibliacatholica.com/', image: 'crown_of_thorns', tone: 'light', corner: true, label: 'Biblia Catholica' },
       // No turn-it-upright line (Howell 2026-11-01: "I don't like the idea of
       // keeping the old rotate the phone to vertical"); the copyright takes the foot.
       hint: false

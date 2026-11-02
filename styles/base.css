@@ -200,6 +200,22 @@ svg :focus-visible {
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
+  /* The volume's mark at the head of the page, centred and large (the
+     company's page, Howell 2026-11-02). */
+  .portal-emblem {
+    height: 34vmin;
+    width: auto;
+    display: block;
+  }
+  /* What the business is: one quiet line under the name. */
+  .portal-about {
+    margin: 0;
+    font-size: 3.3vmin;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+    text-align: center;
+    text-wrap: balance;
+  }
   .portal-mails {
     display: flex;
     flex-direction: column;

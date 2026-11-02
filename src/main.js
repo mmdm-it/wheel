@@ -5,7 +5,7 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUE
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
-import { portalRecord, renderLandscapePortal } from './view/landscape-portal.js';
+import { landscapeTongues, portalRecord, renderLandscapePortal } from './view/landscape-portal.js';
 import { armOrientationReboot } from './core/orientation-reboot.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
@@ -1982,7 +1982,8 @@ function applyLandscapePortal() {
   if (typeof document === 'undefined' || !currentVolumeId) return;
   const sheet = document.getElementById('portrait-gate');
   if (!sheet) return;
-  const lang = dimensionBridge.getSelection()?.language || null;
+  // A volume with no language ring reads its page in the phone's tongue.
+  const lang = dimensionBridge.getSelection()?.language || firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || null;
   const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);

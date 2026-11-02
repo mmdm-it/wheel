@@ -4,7 +4,8 @@
 // reading tongue. These tests hold the model and where the door leads.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref } from '../src/view/landscape-portal.js';
+import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref } from '../src/view/landscape-portal.js';
+import { firstOfferedLanguage } from '../src/core/tongue.js';
 import { doorHref } from '../src/core/lan-gate.js';
 import { volumeConfigs, VENUES } from '../src/volume-configs.js';
 import { createMockElement } from './helpers/mock-dom.js';
@@ -22,7 +23,12 @@ const BIBLE_ROOT = {
 };
 const CALENDAR_ROOT = {
   display_config: {
-    splash: { image: 'mmdm_logo', title: 'MECCANISMI MARITTIMI\ndelle MARCHE', title_font: 'Montserrat', title_color: '#f1b800' }
+    splash: { image: 'mmdm_logo', title: 'MECCANISMI MARITTIMI\ndelle MARCHE', title_font: 'Montserrat', title_color: '#f1b800' },
+    landscape: {
+      emblem: { image: 'mmdm_logo' },
+      info: { default: 'info', italian: 'info' },
+      trade: { default: 'Exhaust manifolds for all types of marine engines', english: 'Exhaust manifolds for all types of marine engines', italian: 'Collettori di scarico per motori marini di ogni tipo' }
+    }
   }
 };
 const SQUARE = { hostname: 'bibliacatholica.com', pathname: '/', protocol: 'https:' };
@@ -68,18 +74,34 @@ describe('landscape portal — the Bible’s page (the minimum, Howell’s notes
 describe('landscape portal — the calendar’s page', () => {
   const config = volumeConfigs.calendar;
 
-  it('shows the company’s name in the card’s face and colour, one address, and the crown as the door to the Bible', () => {
-    const r = portalRecord({ volume: 'calendar', config, root: CALENDAR_ROOT, lang: null, loc: MMDM_ROOT, table: VENUES });
+  it('is the company’s mark, its name in the card’s face and colour, the trade line, the word info, and the crown in the corner as the door to the Bible', () => {
+    const r = portalRecord({ volume: 'calendar', config, root: CALENDAR_ROOT, lang: 'italian', loc: MMDM_ROOT, table: VENUES });
+    assert.equal(r.emblem.imageUrl, './data/calendar/assets/mmdm_logo.png', 'the mark resolves against the calendar’s own data root (W-114)');
     assert.equal(r.title, 'MECCANISMI MARITTIMI\ndelle MARCHE');
     assert.equal(r.titleFont, 'Montserrat');
     assert.equal(r.titleColor, '#f1b800');
-    assert.equal(r.mailsAs, 'addresses');
-    assert.deepEqual(r.mails, [{ address: 'info@mmdm.it', href: 'mailto:info@mmdm.it', text: 'info@mmdm.it', purpose: null }]);
+    assert.equal(r.about, 'Collettori di scarico per motori marini di ogni tipo');
+    assert.equal(r.mailsAs, 'words');
+    assert.deepEqual(r.mails, [{ address: 'info@mmdm.it', href: 'mailto:info@mmdm.it', text: 'info', purpose: null }]);
+    assert.equal(r.phone, null, 'no telephone is drawn until the number is set');
     assert.equal(r.link.href, 'https://bibliacatholica.com/');
-    assert.equal(r.link.imageUrl, './data/calendar/assets/crown_of_thorns.png', 'the crown resolves against the calendar’s own data root (W-114)');
-    assert.equal(r.link.corner, false);
-    assert.equal(r.link.label, 'Biblia Catholica');
+    assert.equal(r.link.imageUrl, './data/calendar/assets/crown_of_thorns.png');
+    assert.equal(r.link.corner, true);
     assert.equal(r.rotate, null, 'no turn-it-upright line on either page any more');
+  });
+
+  it('reads in the phone’s tongue where the volume has no language ring, from the tongues its words are declared in', () => {
+    assert.deepEqual(landscapeTongues(CALENDAR_ROOT).sort(), ['english', 'italian']);
+    assert.deepEqual(landscapeTongues(null), []);
+    assert.equal(firstOfferedLanguage(['de-DE', 'it-IT'], landscapeTongues(CALENDAR_ROOT)), 'italian');
+    const r = portalRecord({ volume: 'calendar', config, root: CALENDAR_ROOT, lang: null, loc: MMDM_ROOT, table: VENUES });
+    assert.equal(r.about, 'Exhaust manifolds for all types of marine engines', 'a tongue not declared reads the default');
+  });
+
+  it('writes a tel: link from the number as written', () => {
+    assert.equal(telHref('+39 071 123 4567'), 'tel:+390711234567');
+    assert.equal(telHref('071-123'), 'tel:071123');
+    assert.equal(telHref(''), null);
   });
 });
 
@@ -145,26 +167,32 @@ describe('landscape portal — the sheet', () => {
     assert.ok(texts(sheet.children[0]).includes('תיקונים'));
   });
 
-  it('draws the calendar’s crown as an image inside the door, captioned, with the company’s face on the title', () => {
+  it('draws the company’s mark above the name, the trade line, info and the telephone in one row, and the crown alone in the corner', () => {
     const sheet = createMockElement('div');
-    const r = portalRecord({ volume: 'calendar', config: volumeConfigs.calendar, root: CALENDAR_ROOT, loc: ROOM_CALENDAR, table: VENUES });
+    const config = { ...volumeConfigs.calendar, landscape: { ...volumeConfigs.calendar.landscape, phone: { number: '+39 071 000 000' } } };
+    const r = portalRecord({ volume: 'calendar', config, root: CALENDAR_ROOT, lang: 'english', loc: ROOM_CALENDAR, table: VENUES });
     renderLandscapePortal(sheet, r, doc);
     const page = sheet.children[0];
     const body = page.children[0];
-    const title = body.children[0];
-    assert.equal(title.className, 'portal-title');
+    assert.deepEqual(body.children.map(c => c.className.split(' ')[0]), ['portal-emblem', 'portal-title', 'portal-about', 'portal-mails']);
+    assert.equal(body.children[0].getAttribute('src'), './data/calendar/assets/mmdm_logo.png');
+    const title = body.children[1];
     assert.equal(title.style.fontFamily, "'Montserrat', sans-serif");
     assert.equal(title.style.color, '#f1b800');
-    assert.equal(title.style.fontSize, undefined, 'the calendar keeps the standard size');
     assert.equal(title.children.filter(c => c.tag === 'br').length, 1, 'two lines, as the card sets them');
-    assert.equal(body.children.find(c => c.className.startsWith('portal-mails')).className, 'portal-mails', 'one address, no purpose: simply centred');
-    const door = body.children.find(c => c.tag === 'a');
+    assert.equal(body.children[2].textContent, 'Exhaust manifolds for all types of marine engines');
+    const list = body.children[3];
+    assert.equal(list.className, 'portal-mails portal-mails--words');
+    const links = list.children.map(row => row.children.find(c => c.tag === 'a'));
+    assert.deepEqual(links.map(a => [a.textContent, a.getAttribute('href')]), [['info', 'mailto:info@mmdm.it'], ['+39 071 000 000', 'tel:+39071000000']]);
+    assert.equal(links[1].getAttribute('dir'), 'ltr', 'a number reads left to right in every tongue');
+    const door = page.children.find(c => c.tag === 'a');
+    assert.equal(door.className, 'portal-door portal-door--corner');
     assert.equal(door.getAttribute('href'), '/wheel-v3/bible/');
     const img = door.children.find(c => c.tag === 'img');
     assert.equal(img.getAttribute('src'), './data/calendar/assets/crown_of_thorns.png');
-    assert.equal(img.getAttribute('alt'), 'Biblia Catholica');
     assert.equal(img.className, 'portal-door-image portal-door-image--light', 'dark line art on the navy is drawn in the negative');
-    assert.equal(door.children.find(c => c.tag === 'span').textContent, 'Biblia Catholica');
+    assert.equal(door.children.some(c => c.tag === 'span'), false, 'the crown or the name, not both: the crown alone');
     assert.equal(page.children.some(c => c.className === 'portal-rotate'), false);
   });
 

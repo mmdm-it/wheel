@@ -7,8 +7,10 @@
 // hidden from the reader in the instrument itself (O-211: "I suppose we can
 // hide these links in the landscape mode"):
 //
-//   the company's volume — its name, one address (info@), and the other
-//     volume's emblem, which is the door to it;
+//   the company's volume — its mark centred and large, its full name
+//     beneath, one line saying what the business is, the word info (its
+//     one address) and the telephone, with the other volume's emblem in the
+//     lower right corner as the door to it (Howell 2026-11-02);
 //   the scripture volume — its name and two link WORDS (corrections, info),
 //     each opening the mail client on its address, with the company's mark
 //     in the lower right corner as the door back. His notes on the first
@@ -38,6 +40,31 @@ const RTL = new Set(['hebrew', 'arabic', 'syriac']);
 // What the engine says when a volume declares nothing: the line the sheet
 // carried since the portrait gate was built (shipped text, Italian).
 const FALLBACK_ROTATE = 'Ruota il dispositivo in verticale';
+
+/**
+ * The tongues the volume's landscape words are declared in. A volume with no
+ * language ring of its own (the company's) reads its page in the phone's
+ * tongue, picked from these (O-176's bridge).
+ */
+export function landscapeTongues(root) {
+  const words = root?.display_config?.landscape;
+  const out = new Set();
+  if (!words || typeof words !== 'object') return [];
+  for (const [key, table] of Object.entries(words)) {
+    // The pictures' tables name images, not tongues.
+    if (key === 'door' || key === 'emblem') continue;
+    if (!table || typeof table !== 'object' || Array.isArray(table)) continue;
+    for (const k of Object.keys(table)) if (k !== 'default' && typeof table[k] === 'string') out.add(k);
+  }
+  return [...out];
+}
+
+/** A tel: link from a written number: the digits and a leading plus only. */
+export function telHref(number) {
+  const s = String(number || '').trim();
+  const digits = s.replace(/[^0-9]/g, '');
+  return digits ? `tel:${s.startsWith('+') ? '+' : ''}${digits}` : null;
+}
 
 function pick(table, lang) {
   if (!table) return null;
@@ -76,6 +103,9 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *   link     { volume, href, image?, tone?, corner?, label } — the door;
  *            `corner` seats it in the lower right instead of in the flow
  *   hint     false — no turn-it-upright line
+ *   emblem   { image } — the volume's mark, centred and large, above the name
+ *   about    the name of the volume's word table saying what it is
+ *   phone    { number } — a telephone beside the mail words
  *   a mail's `subject: true` pre-composes its email with `subject` — the
  *            reader's place as main.js names it (Howell 2026-11-01: a
  *            correction is only useful if it says where the mistake is)
@@ -96,10 +126,21 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
         ? { address: m.address, href, text: word, purpose: null }
         : { address: m.address, href, text: m.address, purpose: typeof purpose === 'string' && purpose ? purpose : null };
     });
+  const base = root?.display_config?.detail_sector?.logo_base_path || 'assets/';
+  // The volume's mark at the head of the page, the volume naming its picture
+  // before the engine's config does (W-114).
+  const emblemName = typeof words?.emblem?.image === 'string' && words.emblem.image ? words.emblem.image
+    : (typeof decl.emblem?.image === 'string' && decl.emblem.image ? decl.emblem.image : null);
+  const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '' } : null;
+  // What the business is, in the reader's tongue (the volume's words).
+  const about = decl.about ? pick(words?.[decl.about], lang) : null;
+  // The telephone sits beside the mail words, written as the venue table
+  // writes it; nothing is drawn until a number is set.
+  const phoneText = typeof decl.phone?.number === 'string' ? decl.phone.number.trim() : '';
+  const phone = phoneText && telHref(phoneText) ? { href: telHref(phoneText), text: phoneText } : null;
   let link = null;
   if (decl.link && decl.link.volume) {
     const href = crossLinkHref(decl.link.volume, decl.link.href, loc, table);
-    const base = root?.display_config?.detail_sector?.logo_base_path || 'assets/';
     // The door's picture is the volume's to name (display_config.landscape
     // .door.image — the picture is the corpus's, W-114); the engine's config
     // names one only for a volume that has not.
@@ -119,6 +160,7 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   }
   return {
     volume,
+    emblem,
     title: splash.title || config?.documentTitle || '',
     titleFont: splash.font || null,
     titleColor: splash.color || null,
@@ -127,6 +169,8 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     titleScale: Number.isFinite(Number(decl.titleScale)) && Number(decl.titleScale) > 0 ? Number(decl.titleScale) : 1,
     mailsAs: asWords ? 'words' : 'addresses',
     mails,
+    phone,
+    about: typeof about === 'string' && about.trim() ? about.trim() : null,
     link,
     rotate: decl.hint === false ? null : (pick(words?.rotate, lang) || FALLBACK_ROTATE),
     // THE COPYRIGHT LINE LIVES HERE NOW (Howell 2026-11-01: "move the
@@ -175,6 +219,12 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   const body = make(doc, 'div', 'portal-body');
   if (record.lift) body.style.transform = `translateY(-${record.lift}vmin)`;
   page.appendChild(body);
+  if (record.emblem) {
+    const img = make(doc, 'img', 'portal-emblem');
+    img.setAttribute('src', record.emblem.imageUrl);
+    img.setAttribute('alt', record.emblem.label || '');
+    body.appendChild(img);
+  }
   if (record.title) {
     const title = make(doc, 'p', 'portal-title');
     record.title.split('\n').forEach((line, i) => {
@@ -186,7 +236,8 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     if (record.titleScale && record.titleScale !== 1) title.style.fontSize = `calc(var(--portal-title-size) * ${record.titleScale})`;
     body.appendChild(title);
   }
-  if (record.mails.length) {
+  if (record.about) body.appendChild(make(doc, 'p', 'portal-about', record.about));
+  if (record.mails.length || record.phone) {
     // Words sit in one row; addresses with purposes are two aligned columns
     // (purpose, address) so the gutter runs straight; bare addresses are
     // simply centred.
@@ -201,6 +252,15 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       row.appendChild(a);
       list.appendChild(row);
     });
+    if (record.phone) {
+      const row = make(doc, 'p', 'portal-mail portal-phone');
+      const a = make(doc, 'a', 'portal-mail-address', record.phone.text);
+      a.setAttribute('href', record.phone.href);
+      // A number reads left to right in every tongue.
+      a.setAttribute('dir', 'ltr');
+      row.appendChild(a);
+      list.appendChild(row);
+    }
     body.appendChild(list);
   }
   if (record.link) {
