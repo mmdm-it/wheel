@@ -46,6 +46,14 @@ describe('orientation reboot', () => {
     assert.equal(r.reason, 'fine pointer');
   });
 
+  it('covers the sideways wheel before the reload, so nothing cropped shows in between', () => {
+    const { win, queries } = fakeWindow();
+    const order = [];
+    armOrientationReboot({ bootPortrait: false, win, cover: () => order.push('cover'), reload: () => order.push('reload') });
+    queries['(orientation: portrait)'].fire(true);
+    assert.deepEqual(order, ['cover', 'reload']);
+  });
+
   it('a phone that turned upright during the load reloads at once', () => {
     const { win } = fakeWindow({ portrait: true });
     let reloads = 0;

@@ -24,9 +24,12 @@
 /**
  * Arm the reboot. Returns a description of what was done, for the tests:
  * `{ armed, reason }`. `reload` is called when the orientation comes to
- * portrait from a landscape boot.
+ * portrait from a landscape boot; `cover` first, so the sideways wheel is
+ * hidden for the frames between the turn and the new page (Howell saw it,
+ * cropped, "briefly" — the sheet goes with the media query the instant the
+ * phone turns, and the reload lands a few frames later).
  */
-export function armOrientationReboot({ bootPortrait, win = (typeof window !== 'undefined' ? window : null), reload } = {}) {
+export function armOrientationReboot({ bootPortrait, win = (typeof window !== 'undefined' ? window : null), reload, cover } = {}) {
   if (!win || typeof win.matchMedia !== 'function') return { armed: false, reason: 'no matchMedia' };
   if (bootPortrait) return { armed: false, reason: 'booted upright' };
   let coarse = null;
@@ -35,7 +38,10 @@ export function armOrientationReboot({ bootPortrait, win = (typeof window !== 'u
   let portrait = null;
   try { portrait = win.matchMedia('(orientation: portrait)'); } catch { portrait = null; }
   if (!portrait) return { armed: false, reason: 'no orientation query' };
-  const go = reload || (() => { try { win.location.reload(); } catch { /* nothing to do */ } });
+  const go = () => {
+    if (typeof cover === 'function') { try { cover(); } catch { /* the reload still goes */ } }
+    if (reload) reload(); else { try { win.location.reload(); } catch { /* nothing to do */ } }
+  };
   const onChange = e => { if (e && e.matches) go(); };
   if (typeof portrait.addEventListener === 'function') portrait.addEventListener('change', onChange);
   else if (typeof portrait.addListener === 'function') portrait.addListener(onChange);

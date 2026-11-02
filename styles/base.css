@@ -136,24 +136,28 @@ svg :focus-visible {
    broken. Gated on pointer:coarse so desktop (landscape by nature) is never
    affected. Hidden by default. */
 #portrait-gate {
+  /* The sheet's dress lives OUTSIDE the media query so the engine can hold
+     the sheet up in portrait for the frames between a turn and the reboot
+     it triggers (O-259: a wheel booted sideways would otherwise show,
+     cropped, before the page reloads). Only `display` is the query's. */
   display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vmin;
+  padding: 8vmin;
+  box-sizing: border-box;
+  background: var(--color-bg, #868686);
+  color: var(--color-text, #000);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  text-align: center;
 }
 @media (orientation: landscape) and (pointer: coarse) {
   #portrait-gate {
     display: flex;
-    position: fixed;
-    inset: 0;
-    z-index: 99999;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5vmin;
-    padding: 8vmin;
-    box-sizing: border-box;
-    background: var(--color-bg, #868686);
-    color: var(--color-text, #000);
-    font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-    text-align: center;
   }
   /* THE LANDSCAPE PORTAL (O-258, Howell 2026-11-01): once the boot has the
      volume in hand, the rotate prompt above becomes the volume's one plain

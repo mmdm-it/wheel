@@ -4837,7 +4837,17 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   viewport = measureViewport();
   // A wheel booted sideways is laid out sideways; when the phone comes
   // upright the page reboots for the viewport it is in (O-259).
-  armOrientationReboot({ bootPortrait: viewport.isPortrait });
+  armOrientationReboot({
+    bootPortrait: viewport.isPortrait,
+    // Hold the sheet up, bare, over the sideways wheel until the new page
+    // lands: its dress is outside the media query for exactly this.
+    cover: () => {
+      const sheet = document.getElementById('portrait-gate');
+      if (!sheet) return;
+      while (sheet.firstChild) sheet.removeChild(sheet.firstChild);
+      sheet.style.display = 'flex';
+    }
+  });
   pinCanvas(viewport);
 
   app = createApp({
