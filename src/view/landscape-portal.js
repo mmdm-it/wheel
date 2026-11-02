@@ -76,8 +76,11 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *   link     { volume, href, image?, tone?, corner?, label } — the door;
  *            `corner` seats it in the lower right instead of in the flow
  *   hint     false — no turn-it-upright line
+ *   a mail's `subject: true` pre-composes its email with `subject` — the
+ *            reader's place as main.js names it (Howell 2026-11-01: a
+ *            correction is only useful if it says where the mistake is)
  */
-export function portalRecord({ volume, config, root, lang = null, loc, table } = {}) {
+export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null } = {}) {
   const decl = config?.landscape;
   if (!decl) return null;
   const words = root?.display_config?.landscape || null;
@@ -88,9 +91,10 @@ export function portalRecord({ volume, config, root, lang = null, loc, table } =
     .map(m => {
       const purpose = m.purpose ? pick(words?.[m.purpose], lang) : null;
       const word = typeof purpose === 'string' && purpose ? purpose : m.address.split('@')[0];
+      const href = mailtoHref(m.address, m.subject === true ? subject : null);
       return asWords
-        ? { address: m.address, text: word, purpose: null }
-        : { address: m.address, text: m.address, purpose: typeof purpose === 'string' && purpose ? purpose : null };
+        ? { address: m.address, href, text: word, purpose: null }
+        : { address: m.address, href, text: m.address, purpose: typeof purpose === 'string' && purpose ? purpose : null };
     });
   let link = null;
   if (decl.link && decl.link.volume) {
@@ -127,6 +131,12 @@ export function portalRecord({ volume, config, root, lang = null, loc, table } =
     rotate: decl.hint === false ? null : (pick(words?.rotate, lang) || FALLBACK_ROTATE),
     dir: RTL.has(lang) ? 'rtl' : 'ltr'
   };
+}
+
+/** A mailto, with the subject pre-composed when there is one. */
+export function mailtoHref(address, subject) {
+  const s = typeof subject === 'string' ? subject.trim() : '';
+  return s ? `mailto:${address}?subject=${encodeURIComponent(s)}` : `mailto:${address}`;
 }
 
 function make(doc, tag, className, text) {
@@ -179,7 +189,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       const row = make(doc, 'p', 'portal-mail');
       if (m.purpose) row.appendChild(make(doc, 'span', 'portal-mail-purpose', m.purpose));
       const a = make(doc, 'a', 'portal-mail-address', m.text);
-      a.setAttribute('href', `mailto:${m.address}`);
+      a.setAttribute('href', m.href || `mailto:${m.address}`);
       row.appendChild(a);
       list.appendChild(row);
     });

@@ -198,7 +198,11 @@ const volumeConfigs = {
     // (src/view/landscape-portal.js).
     landscape: {
       mails: [
-        { address: 'corrections@bibliacatholica.com', purpose: 'corrections' },
+        // The correction email arrives pre-composed: its subject names the
+        // edition and the verse in the lens when the phone was turned
+        // (Howell 2026-11-01: "I had the same thought of a pre-composed
+        // email. Go ahead and do it.").
+        { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true },
         { address: 'info@bibliacatholica.com', purpose: 'info' }
       ],
       mailsAs: 'words',

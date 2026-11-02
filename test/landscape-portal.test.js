@@ -4,7 +4,7 @@
 // reading tongue. These tests hold the model and where the door leads.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { portalRecord, renderLandscapePortal, crossLinkHref } from '../src/view/landscape-portal.js';
+import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref } from '../src/view/landscape-portal.js';
 import { doorHref } from '../src/core/lan-gate.js';
 import { volumeConfigs, VENUES } from '../src/volume-configs.js';
 import { createMockElement } from './helpers/mock-dom.js';
@@ -40,8 +40,8 @@ describe('landscape portal — the Bible’s page (the minimum, Howell’s notes
     assert.equal(r.titleScale, 2.5, 'the name two and a half times the standard');
     assert.equal(r.mailsAs, 'words');
     assert.deepEqual(r.mails, [
-      { address: 'corrections@bibliacatholica.com', text: 'correctiones', purpose: null },
-      { address: 'info@bibliacatholica.com', text: 'info', purpose: null }
+      { address: 'corrections@bibliacatholica.com', href: 'mailto:corrections@bibliacatholica.com', text: 'correctiones', purpose: null },
+      { address: 'info@bibliacatholica.com', href: 'mailto:info@bibliacatholica.com', text: 'info', purpose: null }
     ]);
     assert.equal(r.rotate, null, 'no turn-it-upright line');
     assert.equal(r.link.href, 'https://mmdm.it/', 'in Leicester Square the door is the other domain');
@@ -74,7 +74,7 @@ describe('landscape portal — the calendar’s page', () => {
     assert.equal(r.titleFont, 'Montserrat');
     assert.equal(r.titleColor, '#f1b800');
     assert.equal(r.mailsAs, 'addresses');
-    assert.deepEqual(r.mails, [{ address: 'info@mmdm.it', text: 'info@mmdm.it', purpose: null }]);
+    assert.deepEqual(r.mails, [{ address: 'info@mmdm.it', href: 'mailto:info@mmdm.it', text: 'info@mmdm.it', purpose: null }]);
     assert.equal(r.link.href, 'https://bibliacatholica.com/');
     assert.equal(r.link.imageUrl, './data/calendar/assets/crown_of_thorns.png', 'the crown resolves against the calendar’s own data root (W-114)');
     assert.equal(r.link.corner, false);
@@ -171,5 +171,25 @@ describe('landscape portal — the sheet', () => {
   it('refuses quietly without a sheet or a record', () => {
     assert.equal(renderLandscapePortal(null, {}, doc), false);
     assert.equal(renderLandscapePortal(createMockElement('div'), null, doc), false);
+  });
+});
+
+describe('landscape portal — the pre-composed correction', () => {
+  it('the corrections email carries the reader’s place as its subject; info carries none', () => {
+    const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'english', loc: SQUARE, table: VENUES, subject: '1769eng MATTHEW 16:18' });
+    assert.equal(r.mails[0].href, 'mailto:corrections@bibliacatholica.com?subject=1769eng%20MATTHEW%2016%3A18');
+    assert.equal(r.mails[1].href, 'mailto:info@bibliacatholica.com');
+    const sheet = createMockElement('div');
+    renderLandscapePortal(sheet, r, { createElement: tag => createMockElement(tag) });
+    const words = sheet.children[0].children[0].children.find(c => c.className.startsWith('portal-mails'));
+    assert.equal(words.children[0].children[0].getAttribute('href'), r.mails[0].href);
+  });
+
+  it('without a place the address stands bare, and the subject is escaped', () => {
+    assert.equal(mailtoHref('a@b.c', null), 'mailto:a@b.c');
+    assert.equal(mailtoHref('a@b.c', '   '), 'mailto:a@b.c');
+    assert.equal(mailtoHref('a@b.c', 'ΓΕΝΕΣΙΣ α\':12 & more'), 'mailto:a@b.c?subject=' + encodeURIComponent("ΓΕΝΕΣΙΣ α':12 & more"));
+    const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, loc: SQUARE, table: VENUES });
+    assert.equal(r.mails[0].href, 'mailto:corrections@bibliacatholica.com');
   });
 });

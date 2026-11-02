@@ -1953,12 +1953,37 @@ function applyReviewMarkTongue() {
 // sideways phone shows is rebuilt from the volume's words whenever the record
 // changes — at the volume's boot and at every change of reading language,
 // on the review mark's own road (O-226).
+// THE READER'S PLACE, for a pre-composed email (Howell 2026-11-01): the
+// edition and, at a leaf, the address the instrument was showing — the same
+// words a bookmark keeps (arrivalLabel), e.g. "1769eng MATTHEW 16:18".
+// Above a leaf it is the edition alone.
+function landscapeSubject() {
+  try {
+    const edition = currentEdition() || '';
+    const cur = currentApp?.nav?.getCurrent?.();
+    const place = cur && detailSectorVisible ? arrivalLabel(cur) : '';
+    return [edition, place].filter(Boolean).join(' ') || null;
+  } catch (_) { return null; }
+}
+// The place is read again the moment the phone turns sideways, so the
+// subject names the verse that was in the lens then, not at the last settle.
+let landscapeWatch = null;
+function watchLandscapeTurn() {
+  if (landscapeWatch || typeof window === 'undefined' || typeof window.matchMedia !== 'function') return;
+  try {
+    landscapeWatch = window.matchMedia('(orientation: landscape)');
+    const onTurn = e => { if (e && e.matches) applyLandscapePortal(); };
+    if (typeof landscapeWatch.addEventListener === 'function') landscapeWatch.addEventListener('change', onTurn);
+    else if (typeof landscapeWatch.addListener === 'function') landscapeWatch.addListener(onTurn);
+  } catch (_) { landscapeWatch = null; }
+}
 function applyLandscapePortal() {
+  watchLandscapeTurn();
   if (typeof document === 'undefined' || !currentVolumeId) return;
   const sheet = document.getElementById('portrait-gate');
   if (!sheet) return;
   const lang = dimensionBridge.getSelection()?.language || null;
-  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location });
+  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject() });
   if (!record) return;
   const key = JSON.stringify(record);
   if (key === landscapeRendered) return;
