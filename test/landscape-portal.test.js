@@ -40,8 +40,8 @@ describe('landscape portal — the Bible’s page (the minimum, Howell’s notes
     assert.equal(r.titleScale, 2.5, 'the name two and a half times the standard');
     assert.equal(r.mailsAs, 'words');
     assert.deepEqual(r.mails, [
-      { address: 'corrections@bibliacatholica.com', href: 'mailto:corrections@bibliacatholica.com', text: 'correctiones', purpose: null },
-      { address: 'info@bibliacatholica.com', href: 'mailto:info@bibliacatholica.com', text: 'info', purpose: null }
+      { address: 'info@bibliacatholica.com', href: 'mailto:info@bibliacatholica.com', text: 'info', purpose: null },
+      { address: 'corrections@bibliacatholica.com', href: 'mailto:corrections@bibliacatholica.com', text: 'correctiones', purpose: null }
     ]);
     assert.equal(r.rotate, null, 'no turn-it-upright line');
     assert.equal(r.link.href, 'https://mmdm.it/', 'in Leicester Square the door is the other domain');
@@ -53,11 +53,11 @@ describe('landscape portal — the Bible’s page (the minimum, Howell’s notes
 
   it('falls back to the table’s default where the tongue has no word, to the address’s own word where there is no table, and reads right to left for Hebrew', () => {
     const r = portalRecord({ volume: 'bible', config, root: BIBLE_ROOT, lang: 'hebrew', loc: SQUARE, table: VENUES });
-    assert.equal(r.mails[0].text, 'תיקונים');
-    assert.equal(r.mails[1].text, 'info', 'the default');
+    assert.equal(r.mails[1].text, 'תיקונים');
+    assert.equal(r.mails[0].text, 'info', 'the default');
     assert.equal(r.dir, 'rtl');
     const none = portalRecord({ volume: 'bible', config, root: { display_config: { splash: { title: 'Biblia Catholica' } } }, lang: 'latin', loc: SQUARE, table: VENUES });
-    assert.deepEqual(none.mails.map(m => m.text), ['corrections', 'info'], 'the word before the @');
+    assert.deepEqual(none.mails.map(m => m.text), ['info', 'corrections'], 'the word before the @, info first');
   });
 
   it('answers nothing for a volume that declares no landscape page', () => {
@@ -119,7 +119,7 @@ describe('landscape portal — the sheet', () => {
     assert.ok(sheet.classList.contains('landscape-portal'));
     assert.equal(sheet.children.length, 1, 'the old rotate icon is gone');
     const page = sheet.children[0];
-    assert.deepEqual(texts(page), ['Biblia Catholica', 'correctiones', 'info'], 'nothing else on the page');
+    assert.deepEqual(texts(page), ['Biblia Catholica', 'info', 'correctiones'], 'nothing else on the page, info read first');
     assert.equal(page.children.length, 2, 'the body, then the corner door; no rotate line');
     const body = page.children[0];
     assert.equal(body.className, 'portal-body');
@@ -127,8 +127,8 @@ describe('landscape portal — the sheet', () => {
     assert.equal(mails.className, 'portal-mails portal-mails--words');
     const links = mails.children.map(row => row.children.find(c => c.tag === 'a'));
     assert.deepEqual(links.map(a => [a.textContent, a.getAttribute('href')]), [
-      ['correctiones', 'mailto:corrections@bibliacatholica.com'],
-      ['info', 'mailto:info@bibliacatholica.com']
+      ['info', 'mailto:info@bibliacatholica.com'],
+      ['correctiones', 'mailto:corrections@bibliacatholica.com']
     ]);
     const door = page.children[1];
     assert.equal(door.className, 'portal-door portal-door--corner');
@@ -177,12 +177,12 @@ describe('landscape portal — the sheet', () => {
 describe('landscape portal — the pre-composed correction', () => {
   it('the corrections email carries the reader’s place as its subject; info carries none', () => {
     const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'english', loc: SQUARE, table: VENUES, subject: '1769eng MATTHEW 16:18' });
-    assert.equal(r.mails[0].href, 'mailto:corrections@bibliacatholica.com?subject=1769eng%20MATTHEW%2016%3A18');
-    assert.equal(r.mails[1].href, 'mailto:info@bibliacatholica.com');
+    assert.equal(r.mails[1].href, 'mailto:corrections@bibliacatholica.com?subject=1769eng%20MATTHEW%2016%3A18');
+    assert.equal(r.mails[0].href, 'mailto:info@bibliacatholica.com');
     const sheet = createMockElement('div');
     renderLandscapePortal(sheet, r, { createElement: tag => createMockElement(tag) });
     const words = sheet.children[0].children[0].children.find(c => c.className.startsWith('portal-mails'));
-    assert.equal(words.children[0].children[0].getAttribute('href'), r.mails[0].href);
+    assert.equal(words.children[1].children[0].getAttribute('href'), r.mails[1].href);
   });
 
   it('without a place the address stands bare, and the subject is escaped', () => {
@@ -190,7 +190,7 @@ describe('landscape portal — the pre-composed correction', () => {
     assert.equal(mailtoHref('a@b.c', '   '), 'mailto:a@b.c');
     assert.equal(mailtoHref('a@b.c', 'ΓΕΝΕΣΙΣ α\':12 & more'), 'mailto:a@b.c?subject=' + encodeURIComponent("ΓΕΝΕΣΙΣ α':12 & more"));
     const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, loc: SQUARE, table: VENUES });
-    assert.equal(r.mails[0].href, 'mailto:corrections@bibliacatholica.com');
+    assert.equal(r.mails[1].href, 'mailto:corrections@bibliacatholica.com');
   });
 });
 

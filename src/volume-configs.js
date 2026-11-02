@@ -202,8 +202,11 @@ const volumeConfigs = {
         // edition and the verse in the lens when the phone was turned
         // (Howell 2026-11-01: "I had the same thought of a pre-composed
         // email. Go ahead and do it.").
-        { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true },
-        { address: 'info@bibliacatholica.com', purpose: 'info' }
+        // info FIRST (Howell 2026-11-01: "people read from left to right, and
+        // we don't want the first word they see to be corrections"); under a
+        // right-to-left tongue the row mirrors, so info is still read first.
+        { address: 'info@bibliacatholica.com', purpose: 'info' },
+        { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true }
       ],
       mailsAs: 'words',
       titleScale: 2.5,   // Howell: "Make the name the Biblia Catholica 2.5 times larger"
