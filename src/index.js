@@ -2115,7 +2115,31 @@ export function createApp({
         const SEAT_CAP = Number.isFinite(policyCap) && policyCap > 0 ? policyCap : 28;
         const seatCount = Math.min(children.length, SEAT_CAP);
 
+        // ONE LARGE STAR, AND ONLY A LANDMARK EARNS IT (O-262, Howell
+        // 2026-11-02: "the child pyramid should only have one large node.
+        // And it should be based on the landmarks, not the lectionary"): the
+        // tier-1 child is the sky's one large star; the node just drilled
+        // out from keeps its place as the drill's way back (O-198) but no
+        // longer its size.
+        const isLarge = ch => Boolean(!equalSky && anyProminence && ch && tierOf(ch) === 1);
+        // THE SKY IS ONE RUN (O-262): where the children overflow the
+        // seats, the sky holds one CONTIGUOUS RUN of them centred on its
+        // anchor — the landmark, else the node just drilled out from, else
+        // the first child — never the head alone, never a sampling. Seats
+        // are handed out nearest the anchor first, so a sky that fits fewer
+        // stars than the cap still shows a run around it.
+        const anchor = (() => {
+          if (equalSky) return 0;
+          const lead = children.findIndex(ch => isLarge(ch));
+          if (lead >= 0) return lead;
+          const back = standoutId != null ? children.findIndex(ch => ch?.id === standoutId) : -1;
+          return back >= 0 ? back : 0;
+        })();
         let seatPool = children.map((_, i) => i);
+        if (!policySpread && !equalSky && children.length > seatCount) {
+          const start = Math.max(0, Math.min(children.length - seatCount, anchor - Math.floor(seatCount / 2)));
+          seatPool = seatPool.slice(start, start + seatCount);
+        }
         if (policySpread && children.length > seatCount) {
           const prominent = seatPool.filter(i => tierOf(children[i]) < 3);
           const rest = seatPool.filter(i => tierOf(children[i]) >= 3);
@@ -2134,8 +2158,9 @@ export function createApp({
         // node ... a user has just drilled out from." The large ones take
         // the near seats, the standout first. This retires the four tiers'
         // scales, the depth taper and the smudge floor (O-134, O-172).
-        const isLarge = ch => Boolean(!equalSky && ch && ((standoutId != null && ch.id === standoutId) || (anyProminence && tierOf(ch) === 1)));
-        const rankOfSeat = i => (equalSky ? 0 : standoutId != null && children[i]?.id === standoutId ? 0 : isLarge(children[i]) ? 1 : anyProminence ? 1 + tierOf(children[i]) : 2);
+        // O-262 has since narrowed the large size to ONE star, the landmark
+        // (isLarge, above).
+        const rankOfSeat = i => (equalSky ? 0 : policySpread ? (isLarge(children[i]) ? 0 : anyProminence ? 1 + tierOf(children[i]) : 2) : Math.abs(i - anchor));
         const seatOrder = seatPool.slice().sort((a, b) => (rankOfSeat(a) - rankOfSeat(b)) || (a - b));
         const LARGE_SCALE = MAGNIFIER_RADIUS_RATIO / NODE_RADIUS_RATIO;
         // THE LESSER STARS ARE THE RING'S OWN SIZE (O-261, Howell 2026-11-02:
