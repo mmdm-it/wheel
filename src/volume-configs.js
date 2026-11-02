@@ -183,21 +183,27 @@ const volumeConfigs = {
     theme: 'bible',
     documentTitle: 'Biblia Catholica',   // the tab's name at a standalone door (O-211)
     // THE LANDSCAPE PAGE (O-258, Howell 2026-11-01): a phone turned sideways
-    // shows the volume's one plain page — here a welcome, the two addresses
-    // (a mistake in the text goes to corrections@, anything else to info@),
-    // and, small, the company's name as the door back to the calendar (the
-    // links are reciprocal, O-211 amended). The words beside the addresses
-    // are the volume's, per tongue (display_config.landscape); the addresses
-    // and the door are named here because this is the one file that may
-    // name a site (H1). The door's public address is bibliacatholica.com's
-    // sibling, mmdm.it; in the room and on the LAN the venue table finds the
-    // nearer door (src/view/landscape-portal.js).
+    // shows the volume's one plain page — here the name and two link WORDS
+    // (corrections, info), each opening the mail client on its address, and
+    // the company's mark in the lower right corner as the door back to the
+    // calendar (the links are reciprocal, O-211 amended). His notes on the
+    // first draft, the same afternoon: "much, much too wordy … simply as a
+    // link, as links. One link would be the word corrections. The other link
+    // would be the word info … I would rather just have the MMDM logo in the
+    // lower right corner. Let's take it down to the minimum." The words are
+    // the volume's, per tongue (display_config.landscape); the addresses and
+    // the door are named here because this is the one file that may name a
+    // site (H1). The mark is placed with the Bible's own art (W-114). In the
+    // room and on the LAN the venue table finds the nearer door
+    // (src/view/landscape-portal.js).
     landscape: {
       mails: [
         { address: 'corrections@bibliacatholica.com', purpose: 'corrections' },
         { address: 'info@bibliacatholica.com', purpose: 'info' }
       ],
-      link: { volume: 'calendar', href: 'https://mmdm.it/', label: 'Meccanismi Marittimi delle Marche' }
+      mailsAs: 'words',
+      link: { volume: 'calendar', href: 'https://mmdm.it/', image: 'mmdm_logo', corner: true, label: 'Meccanismi Marittimi delle Marche' },
+      hint: false
     },
     palette: {
       bg: '#d4a574',

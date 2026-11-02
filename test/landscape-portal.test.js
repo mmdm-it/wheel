@@ -14,9 +14,8 @@ const BIBLE_ROOT = {
     splash: { image: 'crown_of_thorns', title: 'Biblia Catholica' },
     detail_sector: { logo_base_path: 'assets/' },
     landscape: {
-      greeting: { default: ['Welcome.', 'A short line.'], latin: ['Salvete.'], hebrew: ['ברוכים הבאים.'] },
-      corrections: { default: 'A mistake in the text', latin: 'Mendum in textu' },
-      info: { default: 'Anything else', latin: 'Cetera' },
+      corrections: { default: 'corrections', latin: 'correctiones', hebrew: 'תיקונים' },
+      info: { default: 'info', latin: 'info' },
       rotate: { default: 'Turn the telephone upright to read', latin: 'Telephonum erige ad legendum' }
     }
   }
@@ -32,33 +31,32 @@ const ROOM_BIBLE = { hostname: 'mmdm.it', pathname: '/wheel-v3/bible/', protocol
 const ROOM_CALENDAR = { hostname: 'mmdm.it', pathname: '/wheel-v3/calendar/', protocol: 'https:' };
 const LAN = { hostname: '192.168.88.167', pathname: '/', protocol: 'http:' };
 
-describe('landscape portal — the Bible’s page', () => {
+describe('landscape portal — the Bible’s page (the minimum, Howell’s notes)', () => {
   const config = volumeConfigs.bible;
 
-  it('carries the welcome, both addresses with their purposes, and the door back, in the reading tongue', () => {
+  it('is the name, two link words in the reading tongue, and the company’s mark in the corner — no line of its own', () => {
     const r = portalRecord({ volume: 'bible', config, root: BIBLE_ROOT, lang: 'latin', loc: SQUARE, table: VENUES });
     assert.equal(r.title, 'Biblia Catholica');
-    assert.deepEqual(r.greeting, ['Salvete.']);
-    assert.deepEqual(r.mails.map(m => [m.purpose, m.address]), [
-      ['Mendum in textu', 'corrections@bibliacatholica.com'],
-      ['Cetera', 'info@bibliacatholica.com']
+    assert.equal(r.mailsAs, 'words');
+    assert.deepEqual(r.mails, [
+      { address: 'corrections@bibliacatholica.com', text: 'correctiones', purpose: null },
+      { address: 'info@bibliacatholica.com', text: 'info', purpose: null }
     ]);
-    assert.equal(r.rotate, 'Telephonum erige ad legendum');
+    assert.equal(r.rotate, null, 'no turn-it-upright line');
     assert.equal(r.link.href, 'https://mmdm.it/', 'in Leicester Square the door is the other domain');
-    assert.equal(r.link.imageUrl, null, 'the door back is a name, not an emblem');
+    assert.equal(r.link.corner, true);
+    assert.equal(r.link.imageUrl, `${config.assetBase}assets/mmdm_logo.png`, 'the mark travels with the Bible’s own art (W-114)');
     assert.equal(r.link.label, 'Meccanismi Marittimi delle Marche');
     assert.equal(r.dir, 'ltr');
   });
 
-  it('falls back to the table’s default where the tongue has no words, and reads right to left for Hebrew', () => {
+  it('falls back to the table’s default where the tongue has no word, to the address’s own word where there is no table, and reads right to left for Hebrew', () => {
     const r = portalRecord({ volume: 'bible', config, root: BIBLE_ROOT, lang: 'hebrew', loc: SQUARE, table: VENUES });
-    assert.deepEqual(r.greeting, ['ברוכים הבאים.']);
-    assert.equal(r.mails[0].purpose, 'A mistake in the text');
+    assert.equal(r.mails[0].text, 'תיקונים');
+    assert.equal(r.mails[1].text, 'info', 'the default');
     assert.equal(r.dir, 'rtl');
     const none = portalRecord({ volume: 'bible', config, root: { display_config: { splash: { title: 'Biblia Catholica' } } }, lang: 'latin', loc: SQUARE, table: VENUES });
-    assert.deepEqual(none.greeting, [], 'a volume without words greets with nothing');
-    assert.equal(none.mails[0].purpose, null);
-    assert.equal(none.rotate, 'Ruota il dispositivo in verticale', 'the sheet’s old line stands');
+    assert.deepEqual(none.mails.map(m => m.text), ['corrections', 'info'], 'the word before the @');
   });
 
   it('answers nothing for a volume that declares no landscape page', () => {
@@ -74,11 +72,13 @@ describe('landscape portal — the calendar’s page', () => {
     assert.equal(r.title, 'MECCANISMI MARITTIMI\ndelle MARCHE');
     assert.equal(r.titleFont, 'Montserrat');
     assert.equal(r.titleColor, '#f1b800');
-    assert.deepEqual(r.greeting, []);
-    assert.deepEqual(r.mails, [{ address: 'info@mmdm.it', purpose: null }]);
+    assert.equal(r.mailsAs, 'addresses');
+    assert.deepEqual(r.mails, [{ address: 'info@mmdm.it', text: 'info@mmdm.it', purpose: null }]);
     assert.equal(r.link.href, 'https://bibliacatholica.com/');
     assert.equal(r.link.imageUrl, './data/calendar/assets/crown_of_thorns.png', 'the crown resolves against the calendar’s own data root (W-114)');
+    assert.equal(r.link.corner, false);
     assert.equal(r.link.label, 'Biblia Catholica');
+    assert.equal(r.rotate, 'Ruota il dispositivo in verticale', 'the sheet’s old line stands for a volume without words');
   });
 });
 
@@ -108,7 +108,7 @@ describe('landscape portal — the sheet', () => {
   const doc = { createElement: tag => createMockElement(tag) };
   const texts = node => (node.children.length ? node.children.flatMap(texts) : [node.textContent]).filter(Boolean);
 
-  it('is rebuilt whole from the record, the rotate line last, and the tongue can change', () => {
+  it('is rebuilt whole from the record — the body, then the corner door; the tongue can change', () => {
     const sheet = createMockElement('div');
     sheet.appendChild(createMockElement('svg'));
     const first = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'latin', loc: SQUARE, table: VENUES });
@@ -118,35 +118,38 @@ describe('landscape portal — the sheet', () => {
     assert.ok(sheet.classList.contains('landscape-portal'));
     assert.equal(sheet.children.length, 1, 'the old rotate icon is gone');
     const page = sheet.children[0];
-    const words = texts(page);
-    assert.equal(words[0], 'Biblia Catholica');
-    assert.ok(words.includes('Salvete.'));
-    assert.ok(words.includes('corrections@bibliacatholica.com'));
-    assert.equal(words[words.length - 1], 'Telephonum erige ad legendum');
-    assert.equal(page.children.length, 2, 'the body, then the rotate line pinned to the foot');
+    assert.deepEqual(texts(page), ['Biblia Catholica', 'correctiones', 'info'], 'nothing else on the page');
+    assert.equal(page.children.length, 2, 'the body, then the corner door; no rotate line');
     const body = page.children[0];
     assert.equal(body.className, 'portal-body');
-    assert.equal(page.children[1].className, 'portal-rotate');
     const mails = body.children.find(c => c.className.startsWith('portal-mails'));
-    assert.equal(mails.className, 'portal-mails portal-mails--purposed', 'purposed rows are two aligned columns');
-    const mailto = mails.children[0].children.find(c => c.tag === 'a');
-    assert.equal(mailto.getAttribute('href'), 'mailto:corrections@bibliacatholica.com');
-    const door = body.children.find(c => c.tag === 'a');
+    assert.equal(mails.className, 'portal-mails portal-mails--words');
+    const links = mails.children.map(row => row.children.find(c => c.tag === 'a'));
+    assert.deepEqual(links.map(a => [a.textContent, a.getAttribute('href')]), [
+      ['correctiones', 'mailto:corrections@bibliacatholica.com'],
+      ['info', 'mailto:info@bibliacatholica.com']
+    ]);
+    const door = page.children[1];
+    assert.equal(door.className, 'portal-door portal-door--corner');
     assert.equal(door.getAttribute('href'), 'https://mmdm.it/');
-    assert.equal(door.children.some(c => c.tag === 'img'), false);
+    const img = door.children.find(c => c.tag === 'img');
+    assert.equal(img.getAttribute('src'), `${volumeConfigs.bible.assetBase}assets/mmdm_logo.png`);
+    assert.equal(img.getAttribute('alt'), 'Meccanismi Marittimi delle Marche');
+    assert.equal(door.children.some(c => c.tag === 'span'), false, 'the mark alone, no caption');
 
     const second = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'hebrew', loc: SQUARE, table: VENUES });
     renderLandscapePortal(sheet, second, doc);
     assert.equal(sheet.getAttribute('dir'), 'rtl');
     assert.equal(sheet.children.length, 1);
-    assert.ok(texts(sheet.children[0]).includes('ברוכים הבאים.'));
+    assert.ok(texts(sheet.children[0]).includes('תיקונים'));
   });
 
-  it('draws the calendar’s crown as an image inside the door, with the company’s face on the title', () => {
+  it('draws the calendar’s crown as an image inside the door, captioned, with the company’s face on the title and the rotate line last', () => {
     const sheet = createMockElement('div');
     const r = portalRecord({ volume: 'calendar', config: volumeConfigs.calendar, root: CALENDAR_ROOT, loc: ROOM_CALENDAR, table: VENUES });
     renderLandscapePortal(sheet, r, doc);
-    const body = sheet.children[0].children[0];
+    const page = sheet.children[0];
+    const body = page.children[0];
     const title = body.children[0];
     assert.equal(title.className, 'portal-title');
     assert.equal(title.style.fontFamily, "'Montserrat', sans-serif");
@@ -159,6 +162,8 @@ describe('landscape portal — the sheet', () => {
     assert.equal(img.getAttribute('src'), './data/calendar/assets/crown_of_thorns.png');
     assert.equal(img.getAttribute('alt'), 'Biblia Catholica');
     assert.equal(img.className, 'portal-door-image portal-door-image--light', 'dark line art on the navy is drawn in the negative');
+    assert.equal(door.children.find(c => c.tag === 'span').textContent, 'Biblia Catholica');
+    assert.equal(page.children[page.children.length - 1].className, 'portal-rotate');
   });
 
   it('refuses quietly without a sheet or a record', () => {

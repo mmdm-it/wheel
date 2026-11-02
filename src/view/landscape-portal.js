@@ -9,20 +9,21 @@
 //
 //   the company's volume — its name, one address (info@), and the other
 //     volume's emblem, which is the door to it;
-//   the scripture volume — a welcome, two addresses (corrections@ for a
-//     mistake in the text, info@ for anything else), and, small, the
-//     company's name as the door back (the links are reciprocal, O-211
-//     amended).
+//   the scripture volume — its name and two link WORDS (corrections, info),
+//     each opening the mail client on its address, with the company's mark
+//     in the lower right corner as the door back. His notes on the first
+//     draft: "much, much too wordy … Let's take it down to the minimum, and
+//     then we'll see how barren it looks."
 //
-// WHOSE WORDS. The engine holds no human words (O-43): the welcome, the two
-// addresses' purposes and the turn-it-upright line are the VOLUME's, declared
-// per tongue in display_config.landscape and picked by the reading language
-// as the review mark's are (O-226). The volume's name on the page is the
-// splash card's title in the card's own face and colour, so the page wears
-// the brand the boot showed. The addresses and the public door are the
-// venue table's business (H1: volume-configs.js is the one file that may
-// name a site); the door's picture resolves against the volume's own data
-// root like every other emblem (W-114).
+// WHOSE WORDS. The engine holds no human words (O-43): the link words and
+// the turn-it-upright line are the VOLUME's, declared per tongue in
+// display_config.landscape and picked by the reading language as the
+// review mark's are (O-226). The volume's name on the page is the splash
+// card's title in the card's own face and colour, so the page wears the
+// brand the boot showed. The addresses and the public door are the venue
+// table's business (H1: volume-configs.js is the one file that may name a
+// site); a door's picture resolves against the volume's own data root like
+// every other emblem (W-114).
 //
 // WHERE THE DOOR LEADS. In Leicester Square each volume has a domain, so the
 // door is the other domain. In the screening room the volumes are two doors
@@ -34,7 +35,7 @@ import { splashRecord } from './boot-overture.js';
 
 const RTL = new Set(['hebrew', 'arabic', 'syriac']);
 
-// What the engine says when a volume declares nothing: the line the sheet has
+// What the engine says when a volume declares nothing: the line the sheet
 // carried since the portrait gate was built (shipped text, Italian).
 const FALLBACK_ROTATE = 'Ruota il dispositivo in verticale';
 
@@ -66,34 +67,61 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  * @param root     the volume's root (display_config.splash, display_config.landscape)
  * @param lang     the reading language, or null
  * @param loc      the address, for the cross-link
+ *
+ * config.landscape:
+ *   mails    [{ address, purpose? }] — `purpose` names the volume's word table
+ *   mailsAs  'words' — each address is shown as its word alone (the word is
+ *            the link; the address is only where it leads), else the address
+ *            is shown, with its purpose beside it if it has one
+ *   link     { volume, href, image?, tone?, corner?, label } — the door;
+ *            `corner` seats it in the lower right instead of in the flow
+ *   hint     false — no turn-it-upright line
  */
 export function portalRecord({ volume, config, root, lang = null, loc, table } = {}) {
   const decl = config?.landscape;
   if (!decl) return null;
   const words = root?.display_config?.landscape || null;
   const splash = splashRecord(root, config?.assetBase) || {};
-  const greeting = pick(words?.greeting, lang);
+  const asWords = decl.mailsAs === 'words';
   const mails = (Array.isArray(decl.mails) ? decl.mails : [])
     .filter(m => m && typeof m.address === 'string' && m.address.includes('@'))
-    .map(m => ({ address: m.address, purpose: m.purpose ? pick(words?.[m.purpose], lang) : null }));
+    .map(m => {
+      const purpose = m.purpose ? pick(words?.[m.purpose], lang) : null;
+      const word = typeof purpose === 'string' && purpose ? purpose : m.address.split('@')[0];
+      return asWords
+        ? { address: m.address, text: word, purpose: null }
+        : { address: m.address, text: m.address, purpose: typeof purpose === 'string' && purpose ? purpose : null };
+    });
   let link = null;
   if (decl.link && decl.link.volume) {
     const href = crossLinkHref(decl.link.volume, decl.link.href, loc, table);
     const base = root?.display_config?.detail_sector?.logo_base_path || 'assets/';
-    const imageUrl = decl.link.image && config?.assetBase ? `${config.assetBase}${base}${decl.link.image}.png` : null;
+    // The door's picture is the volume's to name (display_config.landscape
+    // .door.image — the picture is the corpus's, W-114); the engine's config
+    // names one only for a volume that has not.
+    const image = typeof words?.door?.image === 'string' && words.door.image ? words.door.image : decl.link.image;
+    const imageUrl = image && config?.assetBase ? `${config.assetBase}${base}${image}.png` : null;
     // `tone: 'light'` — the emblem is dark line art and the ground is dark, so
     // it is drawn inverted (the crown on the company's navy).
-    if (href) link = { href, imageUrl, tone: decl.link.tone === 'light' ? 'light' : null, label: typeof decl.link.label === 'string' ? decl.link.label : '' };
+    if (href) {
+      link = {
+        href,
+        imageUrl,
+        tone: decl.link.tone === 'light' ? 'light' : null,
+        corner: decl.link.corner === true,
+        label: typeof decl.link.label === 'string' ? decl.link.label : ''
+      };
+    }
   }
   return {
     volume,
     title: splash.title || config?.documentTitle || '',
     titleFont: splash.font || null,
     titleColor: splash.color || null,
-    greeting: Array.isArray(greeting) ? greeting.filter(l => typeof l === 'string' && l) : (typeof greeting === 'string' && greeting ? [greeting] : []),
+    mailsAs: asWords ? 'words' : 'addresses',
     mails,
     link,
-    rotate: pick(words?.rotate, lang) || FALLBACK_ROTATE,
+    rotate: decl.hint === false ? null : (pick(words?.rotate, lang) || FALLBACK_ROTATE),
     dir: RTL.has(lang) ? 'rtl' : 'ltr'
   };
 }
@@ -136,19 +164,17 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     if (record.titleColor) title.style.color = record.titleColor;
     body.appendChild(title);
   }
-  if (record.greeting.length) {
-    const greeting = make(doc, 'div', 'portal-greeting');
-    record.greeting.forEach(line => greeting.appendChild(make(doc, 'p', null, line)));
-    body.appendChild(greeting);
-  }
   if (record.mails.length) {
-    // With purposes the rows are two aligned columns (purpose, address), so
-    // the gutter runs straight; without, each address is simply centred.
-    const list = make(doc, 'div', record.mails.some(m => m.purpose) ? 'portal-mails portal-mails--purposed' : 'portal-mails');
+    // Words sit in one row; addresses with purposes are two aligned columns
+    // (purpose, address) so the gutter runs straight; bare addresses are
+    // simply centred.
+    const cls = record.mailsAs === 'words' ? 'portal-mails portal-mails--words'
+      : record.mails.some(m => m.purpose) ? 'portal-mails portal-mails--purposed' : 'portal-mails';
+    const list = make(doc, 'div', cls);
     record.mails.forEach(m => {
       const row = make(doc, 'p', 'portal-mail');
       if (m.purpose) row.appendChild(make(doc, 'span', 'portal-mail-purpose', m.purpose));
-      const a = make(doc, 'a', 'portal-mail-address', m.address);
+      const a = make(doc, 'a', 'portal-mail-address', m.text);
       a.setAttribute('href', `mailto:${m.address}`);
       row.appendChild(a);
       list.appendChild(row);
@@ -156,7 +182,8 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     body.appendChild(list);
   }
   if (record.link) {
-    const a = make(doc, 'a', record.link.imageUrl ? 'portal-door portal-door--emblem' : 'portal-door portal-door--name');
+    const kind = record.link.corner ? 'portal-door portal-door--corner' : record.link.imageUrl ? 'portal-door portal-door--emblem' : 'portal-door portal-door--name';
+    const a = make(doc, 'a', kind);
     a.setAttribute('href', record.link.href);
     if (record.link.imageUrl) {
       const img = make(doc, 'img', record.link.tone === 'light' ? 'portal-door-image portal-door-image--light' : 'portal-door-image');
@@ -164,11 +191,11 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       img.setAttribute('alt', record.link.label || '');
       a.appendChild(img);
     }
-    if (record.link.label) a.appendChild(make(doc, 'span', 'portal-door-label', record.link.label));
-    body.appendChild(a);
+    // A corner door is its picture alone; the label is its alt.
+    if (record.link.label && !record.link.corner) a.appendChild(make(doc, 'span', 'portal-door-label', record.link.label));
+    (record.link.corner ? page : body).appendChild(a);
   }
-  const hint = make(doc, 'p', 'portal-rotate', record.rotate);
-  page.appendChild(hint);
+  if (record.rotate) page.appendChild(make(doc, 'p', 'portal-rotate', record.rotate));
   sheet.appendChild(page);
   return true;
 }

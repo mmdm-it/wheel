@@ -199,18 +199,6 @@ svg :focus-visible {
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
-  .portal-greeting {
-    max-width: 78vw;
-    font-size: 3.5vmin;
-    line-height: 1.4;
-  }
-  .portal-greeting p {
-    margin: 0 0 0.45em;
-    text-wrap: balance;   /* no one-word last line (the Spanish at 800 × 360) */
-  }
-  .portal-greeting p:last-child {
-    margin-bottom: 0;
-  }
   .portal-mails {
     display: flex;
     flex-direction: column;
@@ -247,6 +235,13 @@ svg :focus-visible {
   }
   .portal-mail-purpose {
     opacity: 0.72;
+  }
+  /* Words alone, in one row (the scripture volume: corrections · info). */
+  .portal-mails--words {
+    flex-direction: row;
+    gap: 0 2.4em;
+    font-size: 3.6vmin;
+    letter-spacing: 0.08em;
   }
   .portal-mail-address,
   .portal-door {
@@ -288,6 +283,19 @@ svg :focus-visible {
     opacity: 0.8;
     border-bottom: 1px solid currentColor;
     padding-bottom: 1px;
+  }
+  /* The door in the lower right corner: the picture alone, no caption. */
+  .portal-door--corner {
+    position: absolute;
+    right: 4vmin;
+    bottom: 3.5vmin;
+  }
+  [dir="rtl"] .portal-door--corner {
+    right: auto;
+    left: 4vmin;
+  }
+  .portal-door--corner .portal-door-image {
+    height: 13vmin;
   }
   .portal-rotate {
     margin: auto 0 0;
