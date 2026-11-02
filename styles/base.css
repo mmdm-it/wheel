@@ -203,9 +203,21 @@ svg :focus-visible {
   /* The volume's mark at the head of the page, centred and large (the
      company's page, Howell 2026-11-02). */
   .portal-emblem {
-    height: 34vmin;
+    height: 27vmin;
     width: auto;
     display: block;
+  }
+  /* A page headed by an emblem spreads its pieces down the height rather
+     than huddling in the middle (Howell 2026-11-02, from his phone, with
+     the browser's bar eating the top: "very crowded at the bottom. So
+     things need to be distributed vertically, even if it means reducing
+     the size of the logo art slightly"). The foot is kept clear for the
+     copyright line. */
+  .portal-page--emblem .portal-body {
+    justify-content: space-evenly;
+    gap: 0;
+    padding: 1.5vmin 0 10vmin;
+    box-sizing: border-box;
   }
   /* What the business is: one quiet line under the name. */
   .portal-about {

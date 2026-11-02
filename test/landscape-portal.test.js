@@ -180,6 +180,7 @@ describe('landscape portal — the sheet', () => {
     const r = portalRecord({ volume: 'calendar', config, root: CALENDAR_ROOT, lang: 'english', loc: ROOM_CALENDAR, table: VENUES });
     renderLandscapePortal(sheet, r, doc);
     const page = sheet.children[0];
+    assert.equal(page.className, 'portal-page portal-page--emblem', 'a page headed by an emblem spreads down the height');
     const body = page.children[0];
     assert.deepEqual(body.children.map(c => c.className.split(' ')[0]), ['portal-emblem', 'portal-title', 'portal-about', 'portal-mails']);
     assert.equal(body.children[0].getAttribute('src'), './data/calendar/assets/mmdm_logo.png');

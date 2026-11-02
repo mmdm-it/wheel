@@ -219,7 +219,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   sheet.removeAttribute('aria-hidden');
   sheet.classList.add('landscape-portal');
 
-  const page = make(doc, 'div', 'portal-page');
+  const page = make(doc, 'div', record.emblem ? 'portal-page portal-page--emblem' : 'portal-page');
   // The body sits centred in the height; the turn-it-upright line alone is
   // pinned to the foot (the first photographs had the body hugging the top
   // with a bare band above the line).
