@@ -80,7 +80,7 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *            reader's place as main.js names it (Howell 2026-11-01: a
  *            correction is only useful if it says where the mistake is)
  */
-export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null } = {}) {
+export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null } = {}) {
   const decl = config?.landscape;
   if (!decl) return null;
   const words = root?.display_config?.landscape || null;
@@ -129,6 +129,13 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     mails,
     link,
     rotate: decl.hint === false ? null : (pick(words?.rotate, lang) || FALLBACK_ROTATE),
+    // THE COPYRIGHT LINE LIVES HERE NOW (Howell 2026-11-01: "move the
+    // copyright disclaimer from the portrait mode to the landscape mode").
+    // Its words are the volume's, in the reading tongue, handed in by main.js.
+    copyright: typeof copyright === 'string' && copyright.trim() ? copyright.trim() : null,
+    // How far the body is raised above centre, in vmin (Howell: the name
+    // "looks a little awkward centered vertically, so shift it up").
+    lift: Number.isFinite(Number(decl.lift)) && Number(decl.lift) > 0 ? Number(decl.lift) : 0,
     dir: RTL.has(lang) ? 'rtl' : 'ltr'
   };
 }
@@ -166,6 +173,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   // pinned to the foot (the first photographs had the body hugging the top
   // with a bare band above the line).
   const body = make(doc, 'div', 'portal-body');
+  if (record.lift) body.style.transform = `translateY(-${record.lift}vmin)`;
   page.appendChild(body);
   if (record.title) {
     const title = make(doc, 'p', 'portal-title');
@@ -210,6 +218,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     (record.link.corner ? page : body).appendChild(a);
   }
   if (record.rotate) page.appendChild(make(doc, 'p', 'portal-rotate', record.rotate));
+  if (record.copyright) page.appendChild(make(doc, 'p', 'portal-copyright', record.copyright));
   sheet.appendChild(page);
   return true;
 }

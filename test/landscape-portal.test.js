@@ -79,7 +79,7 @@ describe('landscape portal — the calendar’s page', () => {
     assert.equal(r.link.imageUrl, './data/calendar/assets/crown_of_thorns.png', 'the crown resolves against the calendar’s own data root (W-114)');
     assert.equal(r.link.corner, false);
     assert.equal(r.link.label, 'Biblia Catholica');
-    assert.equal(r.rotate, 'Ruota il dispositivo in verticale', 'the sheet’s old line stands for a volume without words');
+    assert.equal(r.rotate, null, 'no turn-it-upright line on either page any more');
   });
 });
 
@@ -145,7 +145,7 @@ describe('landscape portal — the sheet', () => {
     assert.ok(texts(sheet.children[0]).includes('תיקונים'));
   });
 
-  it('draws the calendar’s crown as an image inside the door, captioned, with the company’s face on the title and the rotate line last', () => {
+  it('draws the calendar’s crown as an image inside the door, captioned, with the company’s face on the title', () => {
     const sheet = createMockElement('div');
     const r = portalRecord({ volume: 'calendar', config: volumeConfigs.calendar, root: CALENDAR_ROOT, loc: ROOM_CALENDAR, table: VENUES });
     renderLandscapePortal(sheet, r, doc);
@@ -165,7 +165,7 @@ describe('landscape portal — the sheet', () => {
     assert.equal(img.getAttribute('alt'), 'Biblia Catholica');
     assert.equal(img.className, 'portal-door-image portal-door-image--light', 'dark line art on the navy is drawn in the negative');
     assert.equal(door.children.find(c => c.tag === 'span').textContent, 'Biblia Catholica');
-    assert.equal(page.children[page.children.length - 1].className, 'portal-rotate');
+    assert.equal(page.children.some(c => c.className === 'portal-rotate'), false);
   });
 
   it('refuses quietly without a sheet or a record', () => {
@@ -191,5 +191,27 @@ describe('landscape portal — the pre-composed correction', () => {
     assert.equal(mailtoHref('a@b.c', 'ΓΕΝΕΣΙΣ α\':12 & more'), 'mailto:a@b.c?subject=' + encodeURIComponent("ΓΕΝΕΣΙΣ α':12 & more"));
     const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, loc: SQUARE, table: VENUES });
     assert.equal(r.mails[0].href, 'mailto:corrections@bibliacatholica.com');
+  });
+});
+
+describe('landscape portal — the copyright line and the lift', () => {
+  const doc = { createElement: tag => createMockElement(tag) };
+  it('carries the copyright at the foot, in the words handed in, and raises the Bible’s body off centre', () => {
+    const line = '© 2026 Meccanismi Marittimi delle Marche. Omnia iura reservata.';
+    const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'latin', loc: SQUARE, table: VENUES, copyright: line });
+    assert.equal(r.copyright, line);
+    assert.equal(r.lift, 7);
+    const sheet = createMockElement('div');
+    renderLandscapePortal(sheet, r, doc);
+    const page = sheet.children[0];
+    const last = page.children[page.children.length - 1];
+    assert.equal(last.className, 'portal-copyright');
+    assert.equal(last.textContent, line);
+    assert.equal(page.children[0].style.transform, 'translateY(-7vmin)');
+  });
+  it('no line without words, and the calendar is not lifted', () => {
+    const r = portalRecord({ volume: 'calendar', config: volumeConfigs.calendar, root: CALENDAR_ROOT, loc: MMDM_ROOT, table: VENUES, copyright: '  ' });
+    assert.equal(r.copyright, null);
+    assert.equal(r.lift, 0);
   });
 });

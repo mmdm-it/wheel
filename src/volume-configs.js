@@ -207,6 +207,7 @@ const volumeConfigs = {
       ],
       mailsAs: 'words',
       titleScale: 2.5,   // Howell: "Make the name the Biblia Catholica 2.5 times larger"
+      lift: 7,           // Howell: "shift it up a little bit" — the name off dead centre
       link: { volume: 'calendar', href: 'https://mmdm.it/', image: 'mmdm_logo', corner: true, label: 'Meccanismi Marittimi delle Marche' },
       hint: false
     },
@@ -529,7 +530,10 @@ const volumeConfigs = {
       mails: [{ address: 'info@mmdm.it' }],
       // `tone: 'light'`: the crown is dark line art and this ground is navy,
       // so the page draws it inverted.
-      link: { volume: 'bible', href: 'https://bibliacatholica.com/', image: 'crown_of_thorns', tone: 'light', label: 'Biblia Catholica' }
+      link: { volume: 'bible', href: 'https://bibliacatholica.com/', image: 'crown_of_thorns', tone: 'light', label: 'Biblia Catholica' },
+      // No turn-it-upright line (Howell 2026-11-01: "I don't like the idea of
+      // keeping the old rotate the phone to vertical"); the copyright takes the foot.
+      hint: false
     },
     palette: {
       bg: '#0c2c44',
