@@ -52,7 +52,7 @@ export function landscapeTongues(root) {
   if (!words || typeof words !== 'object') return [];
   for (const [key, table] of Object.entries(words)) {
     // The pictures' tables name images, not tongues.
-    if (key === 'door' || key === 'emblem') continue;
+    if (key === 'door' || key === 'emblem' || key === 'phone') continue;
     if (!table || typeof table !== 'object' || Array.isArray(table)) continue;
     for (const k of Object.keys(table)) if (k !== 'default' && typeof table[k] === 'string') out.add(k);
   }
@@ -105,7 +105,9 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *   hint     false — no turn-it-upright line
  *   emblem   { image } — the volume's mark, centred and large, above the name
  *   about    the name of the volume's word table saying what it is
- *   phone    { number } — a telephone beside the mail words
+ *   phone    { number } — a telephone beside the mail words (the volume's
+ *            own number, under display_config.landscape.phone, wins)
+ *   titleOneLine  true — the card's name on one line
  *   a mail's `subject: true` pre-composes its email with `subject` — the
  *            reader's place as main.js names it (Howell 2026-11-01: a
  *            correction is only useful if it says where the mistake is)
@@ -134,9 +136,12 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '' } : null;
   // What the business is, in the reader's tongue (the volume's words).
   const about = decl.about ? pick(words?.[decl.about], lang) : null;
-  // The telephone sits beside the mail words, written as the venue table
-  // writes it; nothing is drawn until a number is set.
-  const phoneText = typeof decl.phone?.number === 'string' ? decl.phone.number.trim() : '';
+  // The telephone sits beside the mail words, written as the volume writes
+  // it. The number is the corpus's (display_config.landscape.phone), so it
+  // travels only with the private data and reaches the public tree never;
+  // nothing is drawn until one is set.
+  const phoneRaw = typeof words?.phone?.number === 'string' ? words.phone.number : decl.phone?.number;
+  const phoneText = typeof phoneRaw === 'string' ? phoneRaw.trim() : '';
   const phone = phoneText && telHref(phoneText) ? { href: telHref(phoneText), text: phoneText } : null;
   let link = null;
   if (decl.link && decl.link.volume) {
@@ -161,7 +166,9 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   return {
     volume,
     emblem,
-    title: splash.title || config?.documentTitle || '',
+    // `titleOneLine`: the card's name set on one line (Howell 2026-11-02, the
+    // company's page: "all on one line").
+    title: decl.titleOneLine === true ? String(splash.title || config?.documentTitle || '').split('\n').map(t => t.trim()).filter(Boolean).join(' ') : (splash.title || config?.documentTitle || ''),
     titleFont: splash.font || null,
     titleColor: splash.color || null,
     // The name's size against the page's standard (Howell 2026-11-01, on the

@@ -77,7 +77,7 @@ describe('landscape portal — the calendar’s page', () => {
   it('is the company’s mark, its name in the card’s face and colour, the trade line, the word info, and the crown in the corner as the door to the Bible', () => {
     const r = portalRecord({ volume: 'calendar', config, root: CALENDAR_ROOT, lang: 'italian', loc: MMDM_ROOT, table: VENUES });
     assert.equal(r.emblem.imageUrl, './data/calendar/assets/mmdm_logo.png', 'the mark resolves against the calendar’s own data root (W-114)');
-    assert.equal(r.title, 'MECCANISMI MARITTIMI\ndelle MARCHE');
+    assert.equal(r.title, 'MECCANISMI MARITTIMI delle MARCHE', 'the card’s name on one line here');
     assert.equal(r.titleFont, 'Montserrat');
     assert.equal(r.titleColor, '#f1b800');
     assert.equal(r.about, 'Collettori di scarico per motori marini di ogni tipo');
@@ -96,6 +96,13 @@ describe('landscape portal — the calendar’s page', () => {
     assert.equal(firstOfferedLanguage(['de-DE', 'it-IT'], landscapeTongues(CALENDAR_ROOT)), 'italian');
     const r = portalRecord({ volume: 'calendar', config, root: CALENDAR_ROOT, lang: null, loc: MMDM_ROOT, table: VENUES });
     assert.equal(r.about, 'Exhaust manifolds for all types of marine engines', 'a tongue not declared reads the default');
+  });
+
+  it('takes the telephone from the volume’s own words before the engine’s config', () => {
+    const root = { display_config: { ...CALENDAR_ROOT.display_config, landscape: { ...CALENDAR_ROOT.display_config.landscape, phone: { number: '+39 071 111 222' } } } };
+    const r = portalRecord({ volume: 'calendar', config, root, lang: 'italian', loc: MMDM_ROOT, table: VENUES });
+    assert.deepEqual(r.phone, { href: 'tel:+39071111222', text: '+39 071 111 222' });
+    assert.deepEqual(landscapeTongues(root).sort(), ['english', 'italian'], 'the number is not a tongue');
   });
 
   it('writes a tel: link from the number as written', () => {
@@ -179,7 +186,7 @@ describe('landscape portal — the sheet', () => {
     const title = body.children[1];
     assert.equal(title.style.fontFamily, "'Montserrat', sans-serif");
     assert.equal(title.style.color, '#f1b800');
-    assert.equal(title.children.filter(c => c.tag === 'br').length, 1, 'two lines, as the card sets them');
+    assert.equal(title.children.filter(c => c.tag === 'br').length, 0, 'one line, though the card sets two');
     assert.equal(body.children[2].textContent, 'Exhaust manifolds for all types of marine engines');
     const list = body.children[3];
     assert.equal(list.className, 'portal-mails portal-mails--words');
