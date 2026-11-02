@@ -1541,6 +1541,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // At the leaf the detail sector doubles as a NEXT button
       // (the e-reader gesture: tap the verse, read the next).
       detailTapAdvances: true,
+      // A tap drills, as in the calendar (Howell 2026-11-02: "the calendar
+      // is correct and the Bible is incorrect ... use all the drill-in,
+      // drill-out logic from the calendar and apply it to the Bible"): a
+      // star tapped drills in, the parent seat tapped drills out, and the
+      // strokes stay. Narrows O-191's "taps no longer drill" to no volume
+      // that reads.
+      drillByTap: true,
       // The verse follows the ring while it turns, as the calendar's drawing
       // does (O-256; Howell 2026-10-31: "let's try" it on the Bible too). The
       // text is in cache for the ring's own chapter, so each repaint is a

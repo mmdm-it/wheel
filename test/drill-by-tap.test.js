@@ -10,11 +10,16 @@ describe('drilling by tap is a volume\'s declared choice (O-234)', () => {
     const { calendarAdapter } = await import('../src/adapters/calendar-adapter.js');
     assert.strictEqual(calendarAdapter.capabilities.drillByTap, true);
   });
-  it('the Bible does not — its drill stays the stroke (O-191)', async () => {
+  it('and so does the Bible, since Howell 2026-11-02 ("the calendar is correct and the Bible is incorrect")', async () => {
     const mod = await import('../src/adapters/bible-adapter.js');
     const adapter = mod.bibleAdapter || mod.default || Object.values(mod).find(v => v && typeof v === 'object' && 'capabilities' in v);
     assert.ok(adapter, 'found the Bible adapter');
-    assert.notStrictEqual(adapter.capabilities?.drillByTap, true);
+    assert.strictEqual(adapter.capabilities?.drillByTap, true);
+  });
+  it('the corridor between the lens and the parent button is gone (O-209 retired): a stroke is the compass\'s everywhere', async () => {
+    const fs = await import('node:fs');
+    const main = fs.readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+    assert.doesNotMatch(main, /beginCorridorDrill|alongCorridor|drillcorridor/);
   });
   it('the gesture layer reads the flag, not a volume', async () => {
     const fs = await import('node:fs');
