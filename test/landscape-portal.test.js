@@ -189,9 +189,11 @@ describe('landscape portal — the sheet', () => {
     assert.equal(title.style.fontFamily, "'Montserrat', sans-serif");
     assert.equal(title.style.color, '#f1b800');
     assert.equal(title.children.filter(c => c.tag === 'br').length, 0, 'one line, though the card sets two');
-    const about = page.children.find(c => c.className === 'portal-about portal-about--corner');
+    const corner = page.children.find(c => c.className === 'portal-corner');
+    assert.deepEqual(corner.children.map(c => c.className), ['portal-about portal-about--corner', 'portal-place'], 'the town under the description, in one corner block');
+    const about = corner.children[0];
     assert.equal(about.textContent, 'Exhaust manifolds for all types of marine engines', 'in the upper left corner, the capitals are CSS’s');
-    assert.equal(page.children.find(c => c.className === 'portal-place').textContent, 'Fano (PU)', 'the town in the upper right; the capitals are CSS’s');
+    assert.equal(corner.children[1].textContent, 'Fano (PU)', 'the capitals are CSS’s');
     const list = body.children[2];
     assert.equal(list.className, 'portal-mails portal-mails--words');
     const links = list.children.map(row => row.children.find(c => c.tag === 'a'));

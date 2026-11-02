@@ -110,7 +110,7 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *   titleOneLine  true — the card's name on one line
  *   aboutCorner   true — the about line in the upper left corner, in capitals
  *   place    the name of the volume's word table saying where the house is,
- *            set in the upper right corner in capitals
+ *            set under the about line after a blank line, in capitals
  *   a mail's `subject: true` pre-composes its email with `subject` — the
  *            reader's place as main.js names it (Howell 2026-11-01: a
  *            correction is only useful if it says where the mistake is)
@@ -139,7 +139,9 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '' } : null;
   // What the business is, in the reader's tongue (the volume's words).
   const about = decl.about ? pick(words?.[decl.about], lang) : null;
-  // Where the house is, in the upper right corner balancing the about line.
+  // Where the house is, under the about line after a blank line (Howell
+  // 2026-11-02: first in the upper right, then "Move it over to the left
+  // under the company description ... a blank line in between").
   const place = decl.place ? pick(words?.[decl.place], lang) : null;
   // The telephone sits beside the mail words, written as the volume writes
   // it. The number is the corpus's (display_config.landscape.phone), so it
@@ -252,11 +254,12 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     if (record.titleScale && record.titleScale !== 1) title.style.fontSize = `calc(var(--portal-title-size) * ${record.titleScale})`;
     body.appendChild(title);
   }
-  if (record.about) {
-    const line = make(doc, 'p', record.aboutCorner ? 'portal-about portal-about--corner' : 'portal-about', record.about);
-    (record.aboutCorner ? page : body).appendChild(line);
-  }
-  if (record.place) page.appendChild(make(doc, 'p', 'portal-place', record.place));
+  // The about line and the town: one block in the upper left corner, or
+  // under the name.
+  const corner = record.aboutCorner ? make(doc, 'div', 'portal-corner') : null;
+  if (record.about) (corner || body).appendChild(make(doc, 'p', record.aboutCorner ? 'portal-about portal-about--corner' : 'portal-about', record.about));
+  if (record.place) (corner || body).appendChild(make(doc, 'p', 'portal-place', record.place));
+  if (corner && corner.children.length) page.appendChild(corner);
   if (record.mails.length || record.phone) {
     // Words sit in one row; addresses with purposes are two aligned columns
     // (purpose, address) so the gutter runs straight; bare addresses are

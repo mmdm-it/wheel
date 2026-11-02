@@ -222,38 +222,31 @@ svg :focus-visible {
   /* ...or in the upper left corner, in capitals, wrapped into a short
      block (Howell 2026-11-02: "Make the descriptive line all caps and move
      it to the upper left corner"); mirrored under rtl. */
-  .portal-about.portal-about--corner {
+  .portal-corner {
     position: absolute;
     top: 10vmin;
     left: 5vw;
     max-width: 23vw;
+  }
+  [dir="rtl"] .portal-corner {
+    left: auto;
+    right: 5vw;
+  }
+  .portal-about.portal-about--corner,
+  .portal-place {
+    margin: 0;
+    font-size: 3.3vmin;
+    opacity: 0.85;
     text-align: start;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     line-height: 1.5;
   }
-  /* The town in the upper right, mirroring the description (Howell
-     2026-11-02: "visual balance, and ... a little additional sense of
-     place"). */
-  .portal-place {
-    position: absolute;
-    top: 10vmin;
-    right: 5vw;
-    margin: 0;
-    font-size: 3.3vmin;
-    letter-spacing: 0.1em;
-    line-height: 1.5;
-    opacity: 0.85;
-    text-transform: uppercase;
-    text-align: end;
-  }
-  [dir="rtl"] .portal-place {
-    right: auto;
-    left: 5vw;
-  }
-  [dir="rtl"] .portal-about.portal-about--corner {
-    left: auto;
-    right: 5vw;
+  /* The town under the description, a blank line between (Howell
+     2026-11-02, drawn on his screenshot: "Move it over to the left under
+     the company description ... a blank line in between"). */
+  .portal-about--corner + .portal-place {
+    margin-top: 1.5em;
   }
   /* What the business is: one quiet line under the name. */
   .portal-about {
