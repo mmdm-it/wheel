@@ -242,6 +242,11 @@ svg :focus-visible {
     flex-direction: row;
     /* Howell: "put more space between the two email links" (was 2.4em). */
     gap: 0 6em;
+    /* Lowered from the name without moving it (Howell: "Keep the ... name
+       as is and where is, but lower the two email links slightly"): a
+       relative nudge leaves the centred block, and so the name, in place. */
+    position: relative;
+    top: 3vmin;
     font-size: 3.6vmin;
     letter-spacing: 0.08em;
   }
@@ -298,6 +303,7 @@ svg :focus-visible {
   }
   .portal-door--corner .portal-door-image {
     height: 13vmin;
+    opacity: 0.5;   /* Howell: "give it 50% opacity so it's not so bright" */
   }
   .portal-rotate {
     margin: auto 0 0;
