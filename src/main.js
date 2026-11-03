@@ -5043,7 +5043,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         if (currentApp !== app) return;
         dimensionBridge.setEditionsArriving?.(stillArriving());
         refreshEditionsHere();
-        if (strataFront > 0 && !strataAnim && !bootOvertureGliding) renderStack({ keepFront: true });
+        // Not while the overture's film runs either (Howell 2026-11-03: on
+        // the phone a shelf landed mid-truck and repainted the arriving
+        // edition ring at the committed Douay-Rheims, until the edition turn
+        // put it back on the Catholic Public Domain Version). The film's own
+        // paints, and its landing, repaint from the fresh shelves.
+        if (strataFront > 0 && !strataAnim && !bootOvertureGliding && !bootOvertureLive) renderStack({ keepFront: true });
       });
     }
   }

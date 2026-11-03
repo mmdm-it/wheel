@@ -27,3 +27,14 @@ describe('the overture lands the edition ring where it already stood', () => {
     assert.match(film, /seat: turnB \? \{ 1: turnB\.from \} : null/);
   });
 });
+
+// AND A SHELF LANDING MID-FILM DOES NOT REPAINT IT (Howell 2026-11-03, the
+// same morning, on the phone): a shelf that landed during the first truck
+// repainted the arriving edition ring at the committed Douay-Rheims until
+// the edition turn put it back. Reproduced on the bench by holding one
+// unrelated shelf back so it lands mid-truck.
+describe('a shelf landing during the film leaves the film\'s rings alone', () => {
+  it('the arrival repaint waits while the overture is live', () => {
+    assert.match(main, /if \(strataFront > 0 && !strataAnim && !bootOvertureGliding && !bootOvertureLive\) renderStack\(\{ keepFront: true \}\);/);
+  });
+});
