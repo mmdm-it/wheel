@@ -130,7 +130,6 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   const firstBundleWave = first ? fetchBundle(first) : null;
   const spineBundleWave = fetchJson(at({ kind: 'spineBundle' }))
     .then(b => ((b && b.spines && typeof b.spines === 'object') ? b.spines : null), () => null);
-  const ranksWave = fetchJson(at({ kind: 'ranks' })).then(r => ((r && typeof r.leaves === 'object') ? r.leaves : {}), () => ({}));
   const hitsWave = fetchJson(at({ kind: 'hits' })).then(h => (Array.isArray(h?.leaves) ? h.leaves.filter(x => typeof x === 'string') : []), () => []);
   await namesWave;
 
@@ -315,17 +314,15 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   };
 
   const allBookIds = new Set([...editionOfBook.keys()]);
-  // THE RANKS (O-132, Howell 2026-09-14): how much each LEAF is used, one
-  // number per leaf for the whole volume — edition-agnostic by construction,
-  // since every edition seats the same leaves. Optional: a volume without the
-  // file has a uniform sky. What the ranks measure (the lectionary, for the
-  // Bible) is the corpus's business; this only reads them.
-  const leafRanks = await ranksWave;   // left with the wave
-  const rankedLeafCount = Object.keys(leafRanks).length;
-  // THE GREATEST HITS (O-135, Howell 2026-09-15): leaves the basement's ring
-  // shows permanently beside the reader's bookmarks. Optional, like the ranks;
-  // which verses they are is the corpus's business.
+  // THE LANDMARKS (O-135; ORDERED, O-262, Howell 2026-11-02: "the child
+  // pyramid should only have one large node. And it should be based on the
+  // landmarks, not the lectionary"): leaves the basement's ring shows
+  // permanently, and — by their place in the corpus's list, 1 the first —
+  // the one large star of every sky that holds one. Optional; which verses
+  // they are, and in what order, is the corpus's business. The lectionary
+  // ranks (O-132) are no longer read.
   const leafHits = await hitsWave;   // left with the wave
+  const landmarkRank = new Map(leafHits.map((leaf, i) => [leaf, i + 1]));
 
   return {
     version,
@@ -345,13 +342,10 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     shards,
     editions,
     namesByLanguage,
-    // A leaf's rank (1 is the most used), or null (O-132).
-    rankOf(leaf) { const r = leafRanks[leaf]; return Number.isFinite(r) ? r : null; },
-    // Answered once (O-157): this listed every ranked leaf — ten thousand
-    // keys — each time it was asked, and the sky asks for every star, so a
-    // Psalms sky spent ~280 ms counting the same keys 150 times.
-    hasRanks() { return rankedLeafCount > 0; },
-    // The Greatest Hits, as leaves, in the corpus's order (O-135).
+    // A leaf's place on the landmark list (1 is the first), or null (O-262).
+    landmarkOf(leaf) { return landmarkRank.get(leaf) ?? null; },
+    hasLandmarks() { return landmarkRank.size > 0; },
+    // The landmarks, as leaves, in the corpus's order (O-135, O-262).
     hits() { return leafHits.slice(); },
     displayConfig: volume?.display_config || {},
     // Every edition's book ids, plus the shard ids — the two id spaces the

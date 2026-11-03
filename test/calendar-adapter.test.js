@@ -162,3 +162,112 @@ describe('the day card seats Fano\'s tables at the foot (O-255)', () => {
     assert.deepEqual(tables.map(t => t.style.top), ['280px', '290px']);
   });
 });
+
+// THE MANIFOLD OF THE DAY (O-256, Howell 2026-10-31).
+describe('the day card carries the manifold the index names for the day (O-256)', () => {
+  const create = tag => {
+    const el = { tagName: tag, className: '', textContent: '', style: {}, children: [], appendChild(c) { this.children.push(c); return c; } };
+    return el;
+  };
+  const lineTable = Array.from({ length: 20 }, (_, i) => ({ y: 100 + i * 10, leftX: 50 + i, rightX: 300, availableWidth: 250 - i, maxChars: 30 }));
+  it('the adapter names the drawing by the day serial, and none for a day the index leaves out', async () => {
+    const { primeFigures, detailFor } = await import('../src/adapters/calendar-adapter.js');
+    const manifest = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
+    primeFigures({
+      drawings: { 'cat:g342': { maker: 'Caterpillar', model: 'G342', label: 'Caterpillar G342', file: 'g342.svg' } },
+      days: { '20757': 'cat:g342' }
+    });
+    try {
+      const named = detailFor({ id: 'd:2026:10:31', level: 'day' }, manifest);
+      assert.deepEqual(named.figure, { src: './data/calendar/manifolds/g342.svg', label: 'Caterpillar G342', aspect: 1.5 });
+      const bare = detailFor({ id: 'd:2026:10:30', level: 'day' }, manifest);
+      assert.equal(bare.figure, null);
+    } finally {
+      primeFigures(null);
+    }
+  });
+  it('a day no serial names falls back to the day of the month — every 1st, every 31st — and an explicit day wins (Howell 2026-10-31)', async () => {
+    const { primeFigures, detailFor } = await import('../src/adapters/calendar-adapter.js');
+    const manifest = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
+    primeFigures({
+      drawings: {
+        'cat:g342': { label: 'Caterpillar G342', file: 'g342.svg' },
+        'cat:c18': { label: 'Caterpillar C18', file: 'cat-c18.svg' },
+        'odd:one': { label: 'Odd One', file: 'odd.svg' }
+      },
+      days: { '20757': 'odd:one' },
+      byDayOfMonth: { '1': 'cat:c18', '31': 'cat:g342' }
+    });
+    try {
+      assert.equal(detailFor({ id: 'd:1999:5:1', level: 'day' }, manifest).figure.label, 'Caterpillar C18');
+      assert.equal(detailFor({ id: 'd:1517:10:31', level: 'day' }, manifest).figure.label, 'Caterpillar G342');
+      assert.equal(detailFor({ id: 'd:2026:10:31', level: 'day' }, manifest).figure.label, 'Odd One');
+      assert.equal(detailFor({ id: 'd:1999:5:2', level: 'day' }, manifest).figure, null);
+    } finally {
+      primeFigures(null);
+    }
+  });
+  it('even months take the second set, and fall back to the first where it has no drawing yet (Howell 2026-10-31, "2 months worth")', async () => {
+    const { primeFigures, detailFor } = await import('../src/adapters/calendar-adapter.js');
+    const manifest = JSON.parse(readFileSync(
+      path.resolve(__dirname, '../test/fixtures/data/calendar/manifest.json'), 'utf-8'));
+    primeFigures({
+      drawings: {
+        'cat:c18': { label: 'Caterpillar C18', file: 'cat-c18.svg' },
+        'cat:g342': { label: 'Caterpillar G342', file: 'g342.svg' },
+        'lockwood:twin': { label: 'Lockwood-Ash Twin', file: 'lockwood.svg' },
+        'odd:one': { label: 'Odd One', file: 'odd.svg' }
+      },
+      days: { '20758': 'odd:one' },
+      byDayOfMonth: { '1': 'cat:c18', '2': 'cat:g342' },
+      byDayOfMonthEvenMonths: { '1': 'lockwood:twin' }
+    });
+    try {
+      assert.equal(detailFor({ id: 'd:1999:5:1', level: 'day' }, manifest).figure.label, 'Caterpillar C18', 'May, odd: the first set');
+      assert.equal(detailFor({ id: 'd:1999:6:1', level: 'day' }, manifest).figure.label, 'Lockwood-Ash Twin', 'June, even: the second set');
+      assert.equal(detailFor({ id: 'd:1999:6:2', level: 'day' }, manifest).figure.label, 'Caterpillar G342', 'June the 2nd: not yet in the second set, so the first');
+      assert.equal(detailFor({ id: 'd:2026:11:1', level: 'day' }, manifest).figure.label, 'Odd One', 'an explicit day still wins');
+    } finally {
+      primeFigures(null);
+    }
+  });
+  it('the card follows the ring while it turns, and every drawing is fetched once at boot (Howell 2026-10-31)', async () => {
+    const { calendarAdapter, preloadFigures } = await import('../src/adapters/calendar-adapter.js');
+    assert.equal(calendarAdapter.capabilities.detailPreviewsWhileTurning, true);
+    const made = [];
+    const n = preloadFigures({ drawings: { a: { file: 'a.svg' }, b: { file: 'b.svg' }, c: {} } }, () => { const im = {}; made.push(im); return im; });
+    assert.equal(n, 2);
+    assert.deepEqual(made.map(im => im.src), ['./data/calendar/manifolds/a.svg', './data/calendar/manifolds/b.svg']);
+    assert.equal(preloadFigures(null, () => ({})), 0);
+  });
+  it('the plugin seats the drawing under the weekday, pulled in from the edge, and its label beneath it', async () => {
+    const { EphemerisDetailPlugin } = await import('../src/view/detail/plugins/ephemeris-plugin.js');
+    const card = new EphemerisDetailPlugin().render(
+      { type: 'ephemeris', title: 'SATURDAY', titleAlign: 'center', rows: [],
+        figure: { src: './data/calendar/manifolds/g342.svg', label: 'Caterpillar G342', aspect: 1.5 },
+        tables: ['↑ 6:34    ↓ 17:09', '▲ 10:36  1,0 m'] },
+      { lineTable, SSd: 360, width: 360, deckTop: 240 }, { createElement: create });
+    const img = card.children.find(c => c.tagName === 'img');
+    assert.equal(img.src, './data/calendar/manifolds/g342.svg');
+    assert.equal(img.style.top, '150px', 'two lines under the weekday\'s two pitches and gap');
+    const tables = card.children.filter(c => /detail-ephemeris-table/.test(c.className));
+    assert.deepEqual(tables.map(t => t.style.top), ['220px', '230px']);
+    // The room runs to a pitch above the first table; the arc's innermost
+    // edge over it is the lowest line's; the box is pulled left by a tenth
+    // of the panel (36px). Its proportion would make it 160px tall, but the
+    // room (150..210) less the label's three lines (a long name wraps onto
+    // a second, Howell 2026-10-31) leaves 30.
+    const left = 60 - 36, width = 300 - 36 - left;
+    assert.equal(img.style.left, `${left}px`);
+    assert.equal(img.style.width, `${width}px`);
+    assert.equal(img.style.height, '30px');
+    const label = card.children.find(c => /detail-figure-label/.test(c.className));
+    assert.equal(label.textContent, 'Caterpillar G342', 'the capitals are the stylesheet\'s');
+    assert.equal(label.style.top, '180px', 'the first line clear of the drawing');
+    assert.equal(label.style.left, `${left}px`);
+    assert.equal(label.style.width, `${width}px`);
+    assert.equal(label.style.textAlign, 'center');
+  });
+});

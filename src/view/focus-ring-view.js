@@ -2,6 +2,7 @@ import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
 import { bandCenterlinePoints, pointsToPath, getParentSeat, getNowSeat, getParentLabelLeftX, CAPTION_GAP_RADII, bandBounds, PRIMARY_REACH } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
+import { attachLabelHalo } from './label-halo.js';
 
 // How far outside the arc the section label sits, in MAGNIFIER RADII — so it
 // holds its distance across viewports rather than being pinned to one screen.
@@ -37,6 +38,8 @@ export class FocusRingView {
     this.band = null;
     this.parentButtonOuter = null;
     this.parentButtonOuterLabel = null;
+    this.parentLabelHalo = null;
+    this.magnifierLabelHalo = null;
   }
 
   // Q12 (0c), ruled 2026-08-09: THE MAGNIFIER SPEAKS ON SETTLE, AND SAYS
@@ -129,6 +132,8 @@ export class FocusRingView {
     this.parentButtonOuterLabel.setAttribute('text-anchor', 'start');
     this.parentButtonOuterLabel.setAttribute('dominant-baseline', 'middle');
     this.contentGroup.appendChild(this.parentButtonOuterLabel);
+    // The name's halo paints under the vessel, never across it (O-257).
+    this.parentLabelHalo = attachLabelHalo(this.parentButtonOuterLabel, this.parentButtonOuter);
 
     // THE WAY BACK TO THE PRESENT (O-243): a disc in the present moment's
     // own colours, carrying one word, shown only while no node wearing
@@ -168,6 +173,8 @@ export class FocusRingView {
     this.contentGroup.insertBefore(this.magnifierCaption, this.band);
     this.magnifierGroup.appendChild(this.magnifierCircle);
     this.magnifierGroup.appendChild(this.magnifierLabel);
+    // The lens label's halo paints under the glass, never across it (O-257).
+    this.magnifierLabelHalo = attachLabelHalo(this.magnifierLabel, this.magnifierCircle);
     this.contentGroup.appendChild(this.magnifierGroup);
 
     // THE SECTION LABEL (H-26), seated where Howell drew it: OUTSIDE the ring,
@@ -236,6 +243,9 @@ export class FocusRingView {
     // rotating node labels sweep across the seat's ground and must pass
     // UNDER the vessel and its name, never over them (Howell 2026-07-25) —
     // then pyramid group, then magnifier on top.
+    if (this.parentLabelHalo?.parentNode === this.contentGroup) {
+      this.contentGroup.appendChild(this.parentLabelHalo);   // under the vessel (O-257)
+    }
     if (this.parentButtonOuter?.parentNode === this.contentGroup) {
       this.contentGroup.appendChild(this.parentButtonOuter);
     }

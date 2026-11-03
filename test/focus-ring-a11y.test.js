@@ -214,3 +214,47 @@ describe('the parent vessel is persistent (O-222)', () => {
     assert.equal(view.parentButtonOuter.getAttribute('display'), 'none');
   });
 });
+
+describe('the halo paints under the vessel, never across it (O-257)', () => {
+  let view, svgRoot, originalDocument;
+  beforeEach(() => {
+    originalDocument = globalThis.document;
+    globalThis.document = createMockDocument();
+    svgRoot = createMockElement('svg');
+    view = new FocusRingView(svgRoot);
+    view.init();
+  });
+  afterEach(() => { globalThis.document = originalDocument; });
+
+  it('draws each label a second time, as a <use> of itself, before its disc', () => {
+    // Howell 2026-10-31: the stroke that dims a ring label passing under the
+    // name also lay across the vessel's own disc. The halo is now a copy of
+    // the label under the disc: disc over halo, letters over disc.
+    for (const [label, halo, disc] of [
+      [view.parentButtonOuterLabel, view.parentLabelHalo, view.parentButtonOuter],
+      [view.magnifierLabel, view.magnifierLabelHalo, view.magnifierCircle]
+    ]) {
+      assert.ok(halo, 'the halo exists');
+      assert.equal(halo.tag, 'use');
+      assert.equal(halo.getAttribute('class'), 'label-halo');
+      assert.ok(label.getAttribute('id'), 'the label has an id for the halo to follow');
+      assert.equal(halo.getAttribute('href'), `#${label.getAttribute('id')}`);
+      const kids = disc.parentNode.children;
+      assert.ok(kids.indexOf(halo) < kids.indexOf(disc), 'halo before disc');
+      assert.ok(kids.indexOf(disc) < kids.indexOf(label), 'disc before label');
+    }
+  });
+
+  it('keeps the halo under the parent vessel after a render re-orders the seat', () => {
+    const viewport = { SSd: 800, LSd: 800, height: 800 };
+    view.render([
+      { item: { id: 'a', name: 'Alpha' }, x: 10, y: 10, radius: 12, angle: 0, label: 'Alpha' }
+    ], { hubX: 100, hubY: 100, radius: 120 }, { startAngle: 0, endAngle: Math.PI }, { x: 0, y: 0, radius: 12, angle: 0 }, {
+      viewport, magnifierAngle: 0, labelMaskEpsilon: 0,
+      parentButtons: { outerLabel: 'Up', onOuterClick: () => {} }
+    });
+    const kids = view.contentGroup.children;
+    assert.ok(kids.indexOf(view.parentLabelHalo) < kids.indexOf(view.parentButtonOuter), 'halo before disc');
+    assert.ok(kids.indexOf(view.parentButtonOuter) < kids.indexOf(view.parentButtonOuterLabel), 'disc before label');
+  });
+});

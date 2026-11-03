@@ -34,6 +34,58 @@ function loadEphemeris() {
   return ephemerisFetch;
 }
 
+// THE MANIFOLD OF THE DAY (O-256, Howell 2026-10-31: "a random 'Manifold
+// of the Day'"): the corpus names, day by day, which of its line drawings
+// the card carries — the index lists the drawings and maps a day serial to
+// one. Warmed at boot like the ephemeris. The index names a drawing for a
+// serial (`days`) or, failing that, for a day of the month (`byDayOfMonth`:
+// Howell 2026-10-31, "a picture on the 1st through the 28th day of every
+// month from the beginning of time"); a day neither names shows none. Each
+// drawing is one hand, one view, white on the ground.
+// TWO MONTHS' WORTH (Howell the same evening: "Let's do 2 months worth of
+// manifold of the day"): a second table, `byDayOfMonthEvenMonths`, serves
+// the even-numbered months — February, April, ... December — so the sets
+// alternate month by month; a day the second table has not filled yet falls
+// back to the first, so the calendar is never blank while the set grows.
+const figuresUrl = './data/calendar/manifolds/index.json';
+let figuresIndex = null;
+let figuresFetch = null;
+// Test seam: inject the index directly.
+export function primeFigures(index) { figuresIndex = index || null; }
+function loadFigures() {
+  if (!isBrowser || figuresFetch) return figuresFetch;
+  figuresFetch = fetch(figuresUrl)
+    .then(r => (r.ok ? r.json() : null))
+    .then(json => { figuresIndex = json || null; preloadFigures(figuresIndex); })
+    .catch(() => { figuresIndex = null; });
+  return figuresFetch;
+}
+// Every drawing is fetched once at boot so a turn never shows a blank frame
+// while the next one decodes (O-256: the card follows the ring live). Half a
+// megabyte for the month; the browser's cache keeps it.
+export function preloadFigures(index, makeImage = (typeof Image === 'function' ? () => new Image() : null)) {
+  if (!index?.drawings || typeof makeImage !== 'function') return 0;
+  let n = 0;
+  for (const drawing of Object.values(index.drawings)) {
+    if (!drawing?.file) continue;
+    const img = makeImage();
+    if (img) { img.src = `./data/calendar/manifolds/${drawing.file}`; n += 1; }
+  }
+  return n;
+}
+function figureOfDay(serial, dayOfMonth, month) {
+  const dom = String(dayOfMonth);
+  const evenSet = month % 2 === 0 ? figuresIndex?.byDayOfMonthEvenMonths?.[dom] : undefined;
+  const key = figuresIndex?.days?.[String(serial)] ?? evenSet ?? figuresIndex?.byDayOfMonth?.[dom];
+  const drawing = key ? figuresIndex?.drawings?.[key] : null;
+  if (!drawing?.file) return null;
+  return {
+    src: `./data/calendar/manifolds/${drawing.file}`,
+    label: drawing.label || `${drawing.maker || ''} ${drawing.model || ''}`.trim(),
+    aspect: drawing.aspect > 0 ? drawing.aspect : 1.5
+  };
+}
+
 let manifestPath = null;
 let schemaPath = null;
 let nodeReadFile = null;
@@ -177,13 +229,6 @@ export function layoutSpec(normalized, viewport) {
     colorByLevel: level => palette[level] || '#666',
     pyramid: {
       capacity: pyramidCapacity,
-      // The calendar's sky keeps ONE size for its lesser stars: the ring
-      // node's own. The two sizes of star (O-199) were ruled looking at
-      // the Bible's ranked skies; a year's twelve months at 60% read too
-      // small (Howell 2026-10-23, two photographs: "the node labels in the
-      // child pyramid have gotten smaller. This is incorrect. The old
-      // version has the right size"). The standout keeps the large size.
-      smallStarScale: 1,
       // A SKY OF EQUALS (O-240, Howell 2026-10-29): every month of the
       // year, January to December, one size — no featured node, no subset.
       // The calendar diverges from the Bible's ranked, capped skies here.
@@ -283,6 +328,7 @@ export function detailFor(selected, manifest) {
       titleAlign: 'center',
       now: selected.now === true || serial === todaySerial(),
       rows,
+      figure: figureOfDay(serial, dayNumber, monthNumber),
       tables
     };
   }
@@ -556,10 +602,13 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
     // loses that race, repaint the settled day when the table lands —
     // otherwise a sun-only card sits stale until the user scrubs
     // (Phase C audit L1).
-    loadEphemeris()?.then(() => {
+    const repaintDay = () => {
       const settled = app?.nav?.getCurrent?.();
       if (settled?.level === 'day' && typeof renderDetail === 'function') renderDetail(settled);
-    });
+    };
+    loadEphemeris()?.then(repaintDay);
+    // The drawings' index likewise (O-256): the day's figure lands when it lands.
+    loadFigures()?.then(repaintDay);
     if (app?.setParentButtons) {
       app.setParentButtons({ showOuter: calendarMode !== 'century' || Boolean(gatewayReturnLabel) });
     }
@@ -629,7 +678,10 @@ export const calendarAdapter = {
     // A tap drills (O-234, Howell 2026-10-28): a month or a date in the sky
     // drills in, the parent seat drills out — the calendar reads by tapping.
     // The strokes stay as well.
-    drillByTap: true
+    drillByTap: true,
+    // The card follows the ring while it turns (O-256, Howell 2026-10-31):
+    // the day's drawing changes under the thumb, not only at the settle.
+    detailPreviewsWhileTurning: true
   }
 };
 

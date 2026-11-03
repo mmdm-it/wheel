@@ -136,16 +136,12 @@
        EXISTING accessible label and never any new text — an announcement is a
        label, and labels are quotations (H-2, ruled 2026-08-09). -->
   <div id="a11y-announcer" aria-live="polite" aria-atomic="true" class="visually-hidden"></div>
-  <div id="portrait-gate" aria-hidden="true">
-    <svg class="portrait-gate-icon" viewBox="0 0 120 120" role="img" aria-label="Rotate to portrait"
-         fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="45" y="32" width="30" height="56" rx="5" />
-      <line x1="55" y1="81" x2="65" y2="81" />
-      <path d="M30 46 A32 32 0 0 1 60 20" />
-      <polyline points="49,17 60,20 57,31" />
-    </svg>
-    <p class="portrait-gate-text">Ruota il dispositivo in verticale</p>
-  </div>
+  <!-- THE LANDSCAPE SHEET (O-258). Shown by CSS alone on a touch device
+       held sideways; EMPTY until the engine fills it with the volume's own
+       page, so the ground is all a sideways boot shows while the volume
+       loads (Howell 2026-11-01: the old "turn the phone" card, which stood
+       here as markup, flashed before the page). -->
+  <div id="portrait-gate" aria-hidden="true"></div>
   <div id="desktop-gate" aria-hidden="true">
     <p class="desktop-gate-title">MECCANISMI MARITTIMI delle MARCHE</p>
     <img class="desktop-gate-qr" src="./assets/qr.png" alt="Codice QR per mmdm.it" />

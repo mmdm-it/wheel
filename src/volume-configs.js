@@ -182,6 +182,38 @@ const volumeConfigs = {
     },
     theme: 'bible',
     documentTitle: 'Biblia Catholica',   // the tab's name at a standalone door (O-211)
+    // THE LANDSCAPE PAGE (O-258, Howell 2026-11-01): a phone turned sideways
+    // shows the volume's one plain page — here the name and two link WORDS
+    // (corrections, info), each opening the mail client on its address, and
+    // the company's mark in the lower right corner as the door back to the
+    // calendar (the links are reciprocal, O-211 amended). His notes on the
+    // first draft, the same afternoon: "much, much too wordy … simply as a
+    // link, as links. One link would be the word corrections. The other link
+    // would be the word info … I would rather just have the MMDM logo in the
+    // lower right corner. Let's take it down to the minimum." The words are
+    // the volume's, per tongue (display_config.landscape); the addresses and
+    // the door are named here because this is the one file that may name a
+    // site (H1). The mark is placed with the Bible's own art (W-114). In the
+    // room and on the LAN the venue table finds the nearer door
+    // (src/view/landscape-portal.js).
+    landscape: {
+      mails: [
+        // The correction email arrives pre-composed: its subject names the
+        // edition and the verse in the lens when the phone was turned
+        // (Howell 2026-11-01: "I had the same thought of a pre-composed
+        // email. Go ahead and do it.").
+        // info FIRST (Howell 2026-11-01: "people read from left to right, and
+        // we don't want the first word they see to be corrections"); under a
+        // right-to-left tongue the row mirrors, so info is still read first.
+        { address: 'info@bibliacatholica.com', purpose: 'info' },
+        { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true }
+      ],
+      mailsAs: 'words',
+      titleScale: 2.5,   // Howell: "Make the name the Biblia Catholica 2.5 times larger"
+      lift: 7,           // Howell: "shift it up a little bit" — the name off dead centre
+      link: { volume: 'calendar', href: 'https://mmdm.it/', image: 'mmdm_logo', corner: true, label: 'Meccanismi Marittimi delle Marche' },
+      hint: false
+    },
     palette: {
       bg: '#d4a574',
       // O-166's shades, declared (O-178): every node the lighter brown, the
@@ -490,6 +522,40 @@ const volumeConfigs = {
     assetBase: './data/calendar/',
     theme: 'calendar',
     documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
+    // THE LANDSCAPE PAGE (O-258, Howell 2026-11-01: "they see one email,
+    // info@mmdm.it. They see the name of the company, and they see the Crown
+    // of Thorns logo, which is a link to take them to the Bible"). The crown
+    // is the Bible's emblem and resolves against THIS volume's data root
+    // (W-114: the engine ships no picture that asserts anything about a
+    // corpus), so the corpus places a copy at calendar/assets/. The public
+    // door is bibliacatholica.com; the room and the LAN find the nearer one.
+    landscape: {
+      // AMENDED (Howell 2026-11-02): the company's mark centred and large,
+      // its full name beneath, a line on what the business is, "the email
+      // link should just be the single word info", his telephone (the number
+      // is the corpus's, so it stays in the private tree), and the door to
+      // the Bible in the lower right corner, as the Bible's door here sits — the crown alone, not the crown and the name ("It should not be
+      // both"). The words are the corpus's, in the phone's tongue.
+      emblem: { image: 'mmdm_logo', label: 'MMdM' },
+      // The name on one line here (Howell 2026-11-02), though the card sets it on two.
+      titleOneLine: true,
+      about: 'trade',
+      // In capitals in the upper left corner (Howell 2026-11-02, drawn on
+      // his screenshot), not under the name.
+      aboutCorner: true,
+      // And the town beneath it after a blank line (Howell 2026-11-02:
+      // "a little additional sense of place"; first set in the upper right,
+      // then moved under the description).
+      place: 'place',
+      mails: [{ address: 'info@mmdm.it', purpose: 'info' }],
+      mailsAs: 'words',
+      // `tone: 'light'`: the crown is dark line art and this ground is navy,
+      // so the page draws it inverted.
+      link: { volume: 'bible', href: 'https://bibliacatholica.com/', image: 'crown_of_thorns', tone: 'light', corner: true, label: 'Biblia Catholica' },
+      // No turn-it-upright line (Howell 2026-11-01: "I don't like the idea of
+      // keeping the old rotate the phone to vertical"); the copyright takes the foot.
+      hint: false
+    },
     palette: {
       bg: '#0c2c44',
       // The band a step darker (#194567 × 0.78), the shade the calendar's

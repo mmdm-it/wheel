@@ -1184,26 +1184,26 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     });
   };
 
-  // PROMINENCE FROM USE (O-132, Howell 2026-09-14): a pyramid node draws
-  // larger the more its leaves are used. This answers the node's BEST RANK
-  // among the leaves it holds — a verse its own leaf's, a chapter the best in
-  // its seats, a book the best in its chart — so the most read verse lifts
-  // its chapter and its book with it, in every edition, because the ranks
-  // are on the leaves (leaf-and-shard, W-129). Which rank makes a large star
-  // is decided AMONG SIBLINGS by the pyramid (O-133): the ranks are the
-  // lectionary's, global to the volume, and only the Psalter reaches the top
-  // of them. The book scan is cached per edition and book.
+  // PROMINENCE FROM THE LANDMARKS (O-262, Howell 2026-11-02: "Just because
+  // it's read at Mass doesn't necessarily make it noteworthy"; retires
+  // O-132's lectionary ranks). This answers the node's BEST LANDMARK among
+  // the leaves it holds — a verse its own, a chapter the best in its seats,
+  // a book the best in its chart — so the landmark lifts its chapter and its
+  // book with it, in every edition, because the list is of leaves. Among
+  // siblings the pyramid makes the best one the sky's one large star
+  // (O-133); landmarks are distinct leaves, so there is never a tie, and a
+  // sky holding none has no large star. Cached per edition and book.
   const prominenceOf = (() => {
     const bookBest = new Map();
     const tier = r => (r == null ? undefined : r);
     const best = (volume, utterances) => {
       let b = null;
-      for (const u of utterances || []) { const r = volume.rankOf(u); if (r != null && (b == null || r < b)) b = r; }
+      for (const u of utterances || []) { const r = volume.landmarkOf(u); if (r != null && (b == null || r < b)) b = r; }
       return b;
     };
     return item => {
       const volume = manifest?.__wallVolume;
-      if (!volume?.rankOf || !volume.hasRanks?.() || !item) return undefined;
+      if (!volume?.landmarkOf || !volume.hasLandmarks?.() || !item) return undefined;
       const edition = options?.activeEdition || options?.translation || null;
       if (item.level === 'verse') return tier(best(volume, item.meta?.utterances));
       if (item.level === 'chapter') {
@@ -1540,6 +1540,18 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       theming: true,
       // At the leaf the detail sector doubles as a NEXT button
       // (the e-reader gesture: tap the verse, read the next).
-      detailTapAdvances: true
+      detailTapAdvances: true,
+      // A tap drills, as in the calendar (Howell 2026-11-02: "the calendar
+      // is correct and the Bible is incorrect ... use all the drill-in,
+      // drill-out logic from the calendar and apply it to the Bible"): a
+      // star tapped drills in, the parent seat tapped drills out, and the
+      // strokes stay. Narrows O-191's "taps no longer drill" to no volume
+      // that reads.
+      drillByTap: true,
+      // The verse follows the ring while it turns, as the calendar's drawing
+      // does (O-256; Howell 2026-10-31: "let's try" it on the Bible too). The
+      // text is in cache for the ring's own chapter, so each repaint is a
+      // synchronous layout; the engine caps the rate at about ten a second.
+      detailPreviewsWhileTurning: true
     }
   };

@@ -136,35 +136,250 @@ svg :focus-visible {
    broken. Gated on pointer:coarse so desktop (landscape by nature) is never
    affected. Hidden by default. */
 #portrait-gate {
+  /* The sheet's dress lives OUTSIDE the media query so the engine can hold
+     the sheet up in portrait for the frames between a turn and the reboot
+     it triggers (O-259: a wheel booted sideways would otherwise show,
+     cropped, before the page reloads). Only `display` is the query's. */
   display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vmin;
+  padding: 8vmin;
+  box-sizing: border-box;
+  background: var(--color-bg, #868686);
+  color: var(--color-text, #000);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  text-align: center;
 }
 @media (orientation: landscape) and (pointer: coarse) {
   #portrait-gate {
     display: flex;
-    position: fixed;
-    inset: 0;
-    z-index: 99999;
+  }
+  /* THE LANDSCAPE PORTAL (O-258, Howell 2026-11-01): once the boot has the
+     volume in hand, the rotate prompt above becomes the volume's one plain
+     page — its name in the splash card's face, the welcome, the house's
+     addresses, the door to the other volume, and the turn-it-upright line
+     last. Sized in vmin, which in landscape is the phone's HEIGHT, so the
+     page fits a short screen without scrolling. The volume's palette
+     dresses it: ground and ink are the theme's. */
+  #portrait-gate.landscape-portal {
+    justify-content: stretch;
+    gap: 0;
+    padding: 4vmin 6vmin 3vmin;
+    text-align: center;
+  }
+  .portal-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 88vw;
+    height: 100%;
+    margin: 0 auto;
+  }
+  /* The body is centred in what the rotate line leaves. */
+  .portal-body {
+    flex: 1 1 auto;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5vmin;
-    padding: 8vmin;
-    box-sizing: border-box;
-    background: var(--color-bg, #868686);
-    color: var(--color-text, #000);
-    font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-    text-align: center;
+    gap: 2.6vmin;
+    width: 100%;
   }
-  #portrait-gate .portrait-gate-icon {
-    width: 22vmin;
-    height: 22vmin;
-  }
-  #portrait-gate .portrait-gate-text {
+  .portal-title {
     margin: 0;
-    font-size: 4.5vmin;
-    letter-spacing: 0.08em;
+    /* The card's face unless the volume declares its own (inline). */
+    font-family: 'EB Garamond', Georgia, serif;
+    --portal-title-size: 6.4vmin;
+    font-size: var(--portal-title-size);
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  /* The volume's mark at the head of the page, centred and large (the
+     company's page, Howell 2026-11-02). */
+  .portal-emblem {
+    height: 27vmin;
+    width: auto;
+    display: block;
+  }
+  /* A page headed by an emblem spreads its pieces down the height rather
+     than huddling in the middle (Howell 2026-11-02, from his phone, with
+     the browser's bar eating the top: "very crowded at the bottom. So
+     things need to be distributed vertically, even if it means reducing
+     the size of the logo art slightly"). The foot is kept clear for the
+     copyright line. */
+  .portal-page--emblem .portal-body {
+    justify-content: space-evenly;
+    gap: 0;
+    padding: 1.5vmin 0 10vmin;
+    box-sizing: border-box;
+  }
+  /* ...or in the upper left corner, in capitals, wrapped into a short
+     block (Howell 2026-11-02: "Make the descriptive line all caps and move
+     it to the upper left corner"); mirrored under rtl. */
+  .portal-corner {
+    position: absolute;
+    top: 10vmin;
+    left: 5vw;
+    max-width: 23vw;
+  }
+  [dir="rtl"] .portal-corner {
+    left: auto;
+    right: 5vw;
+  }
+  .portal-about.portal-about--corner,
+  .portal-place {
+    margin: 0;
+    font-size: 3.3vmin;
+    opacity: 0.85;
+    text-align: start;
     text-transform: uppercase;
-    max-width: 80vw;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+  }
+  /* The town under the description, a blank line between (Howell
+     2026-11-02, drawn on his screenshot: "Move it over to the left under
+     the company description ... a blank line in between"). */
+  .portal-about--corner + .portal-place {
+    margin-top: 1.5em;
+  }
+  /* What the business is: one quiet line under the name. */
+  .portal-about {
+    margin: 0;
+    font-size: 3.3vmin;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .portal-mails {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vmin;
+    font-size: 3.3vmin;
+    letter-spacing: 0.03em;
+  }
+  .portal-mail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 1.4em;
+    margin: 0;
+  }
+  /* Purposed rows are two aligned columns, so the gutter runs straight down
+     the page instead of zigzagging with each phrase's length; the grid
+     mirrors itself under dir=rtl. */
+  .portal-mails--purposed {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1.4em;
+    row-gap: 1.2vmin;
+    align-items: baseline;
+  }
+  .portal-mails--purposed .portal-mail {
+    display: contents;
+  }
+  .portal-mails--purposed .portal-mail-purpose {
+    text-align: end;
+  }
+  .portal-mails--purposed .portal-mail-address {
+    text-align: start;
+    justify-self: start;
+  }
+  .portal-mail-purpose {
+    opacity: 0.72;
+  }
+  /* Words alone, in one row (the scripture volume: corrections · info). */
+  .portal-mails--words {
+    flex-direction: row;
+    /* Howell: "put more space between the two email links" (was 2.4em). */
+    gap: 0 6em;
+    /* Lowered from the name without moving it (Howell: "Keep the ... name
+       as is and where is, but lower the two email links slightly"): a
+       relative nudge leaves the centred block, and so the name, in place. */
+    position: relative;
+    top: 3vmin;
+    font-size: 3.6vmin;
+    letter-spacing: 0.08em;
+  }
+  .portal-mail-address,
+  .portal-door {
+    color: inherit;
+    text-decoration: none;
+  }
+  .portal-mail-address {
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+  .portal-door {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6vmin;
+  }
+  .portal-door-image {
+    height: 26vmin;
+    width: auto;
+    display: block;
+  }
+  /* Dark line art on a dark ground: drawn in the negative, so the lines
+     carry the page as the caption does. */
+  .portal-door-image--light {
+    filter: invert(1);
+  }
+  .portal-door-label {
+    font-size: 3.1vmin;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  /* The door back from the Bible is a name, not an emblem: small, under the
+     addresses, in the card's face. */
+  .portal-door--name .portal-door-label {
+    font-family: 'EB Garamond', Georgia, serif;
+    text-transform: none;
+    letter-spacing: 0.06em;
+    font-size: 3.2vmin;
+    opacity: 0.8;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+  /* The door in the lower right corner: the picture alone, no caption. */
+  .portal-door--corner {
+    position: absolute;
+    right: 4vmin;
+    bottom: 3.5vmin;
+  }
+  [dir="rtl"] .portal-door--corner {
+    right: auto;
+    left: 4vmin;
+  }
+  .portal-door--corner .portal-door-image {
+    height: 13vmin;
+    opacity: 0.5;   /* Howell: "give it 50% opacity so it's not so bright" */
+  }
+  /* The copyright at the foot, in the face and spacing of the link words. */
+  .portal-copyright {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3.5vmin;
+    margin: 0 auto;
+    max-width: 60vw;
+    font-size: 2.6vmin;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  .portal-rotate {
+    margin: auto 0 0;
+    font-size: 2.7vmin;
+    letter-spacing: 0.06em;
+    opacity: 0.6;
   }
 }
 
@@ -236,6 +451,14 @@ svg :focus-visible {
   #desktop-gate .desktop-gate-mail a:hover {
     opacity: 1;
   }
+}
+
+/* THE COPYRIGHT LINE MOVED TO THE LANDSCAPE PAGE (O-258, Howell 2026-11-01).
+   Hidden, not removed: the detail sector measures its real bottom edge to
+   know where the glass's furniture ends (O-115), so it keeps its box and
+   the reader's layout does not move by a pixel. */
+#copyright-notice {
+  visibility: hidden;
 }
 
 .copyright-notice {
@@ -630,12 +853,18 @@ svg :focus-visible {
      the name and nowhere else. A stroke, not a blur — an SVG filter on a
      <text> dies in WebKit (the blur saga, v3.22.0) — and on the label
      itself, so it travels with every flight that moves the label. Two knobs:
-     how much it hides, and how far beyond the letters it reaches. */
+     how much it hides, and how far beyond the letters it reaches.
+     AND IT IS DRAWN ONLY ON THE HALO COPY (O-257, Howell 2026-10-31: the
+     stroke lay across the vessel's own disc — "I only want this glowing
+     outline to be visible or work beyond the node itself"). The label's
+     stroke is off here and on in the `.label-halo` <use> of it, which sits
+     under the disc; see src/view/label-halo.js. */
   paint-order: stroke fill;
   stroke: var(--color-bg);
-  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke-opacity: var(--label-halo-opacity, 0);
   stroke-width: var(--parent-halo-width, 0.6em);
   stroke-linejoin: round;
+  fill-opacity: var(--label-ink-opacity, 1);
   /* The corner label is TAPPABLE (its class family disables pointer-events;
      historically the disc sat under it so taps landed anyway — the split
      seat exposed the truth, Howell 2026-07-23). Its onclick is nulled when
@@ -748,13 +977,29 @@ svg :focus-visible {
      overlaps child pyramid nodes... It's up to you"). The same stroke in
      the ground's colour, the same two knobs (O-233), so a pyramid name
      passing under the lens's word is dimmed where they meet and nowhere
-     else. Calendar only: the Bible's lens is untouched. */
+     else. Calendar only: the Bible's lens is untouched. The stroke is on
+     only in the `.label-halo` copy under the glass (O-257). */
   paint-order: stroke fill;
   stroke: var(--color-bg);
-  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke-opacity: var(--label-halo-opacity, 0);
   stroke-width: var(--parent-halo-width, 0.6em);
   stroke-linejoin: round;
+  fill-opacity: var(--label-ink-opacity, 1);
 }
+
+/* THE HALO COPY (O-257): a <use> of the label, placed before its disc, so
+   the disc paints over the glow and under the letters. The copy inherits
+   these two values from the <use>; the label itself never sees them, so
+   its own stroke stays off and its ink stays on. It is never a tap target. */
+.label-halo {
+  --label-halo-opacity: var(--parent-halo-opacity, 0.85);
+  --label-ink-opacity: 0;
+  fill-opacity: 0;   /* a label with no halo rule (the Bible's lens) copies as nothing */
+  pointer-events: none;
+}
+/* The lens label hides while the ring turns; its halo copy, which sits in
+   the light DOM beside it, hides by its own rule. */
+.focus-ring-magnifier.rotating .label-halo { display: none; }
 
 .focus-ring-magnifier.rotating .focus-ring-magnifier-circle {
   fill: none;
@@ -1047,6 +1292,29 @@ svg :focus-visible {
   font-variant-numeric: tabular-nums;
   font-size: calc(3.0 / 100 * var(--detail-SSd, 650px));
   line-height: 1.4;
+}
+
+/* THE MANIFOLD OF THE DAY (O-256, Howell 2026-10-31): the drawing under
+   the weekday, fitted whole and hung from the top of its room — a line
+   drawing, white on the ground, so it needs no frame — and its label in
+   capitals beneath it, centred on it, at the card tier. A name wider than
+   the drawing breaks onto a second line, the two lines kept even (Howell
+   2026-10-31: "spread across two lines"); the plugin keeps the room for it. */
+.detail-figure-label {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: calc(4.5 / 100 * var(--detail-SSd, 650px));
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+.detail-figure {
+  display: block;
+  object-fit: contain;
+  object-position: center top;
+  pointer-events: none;
 }
 
 /* The dossier's inline media (the Twin 6 HP film, and photos to come) */
