@@ -1405,7 +1405,15 @@ function previewFromLens(ch, items, centerIndex) {
     // A language is passing: restock the edition plane and take its default,
     // exactly the edition committing this language would choose.
     const editions = dimensionBridge.translationsOf(item) || [];
-    strataPreview = { language: item, edition: editions.find(k => !dimensionBridge.isComing?.(k)) || null };
+    // In the overture, the tongue the film rests on shows the edition ring
+    // already on the seat the next turn starts from (Howell 2026-11-03: King
+    // James stood in the lens for an instant, then jumped to the Catholic
+    // Public Domain Version as the truck began).
+    // By EDITION, not key: the plan is made while the shelves are still
+    // stocking (O-227), when the seat is a hollow key the real one replaces.
+    const landing = bootOvertureLive && overtureLanding?.language === item
+      ? editions.find(k => dimensionBridge.editionOfKey?.(k) === overtureLanding.edition) : null;
+    strataPreview = { language: item, edition: landing || editions.find(k => !dimensionBridge.isComing?.(k)) || null };
   } else {
     strataPreview = { ...(strataPreview || {}), edition: item };
   }
@@ -1439,8 +1447,16 @@ function overtureTurn(front) {
   if (!ch) return null;
   const items = ch.items();
   const to = items.indexOf(ch.selected());
-  if (to < 0 || items.length < 2) return null;
   const from = ch.id === 'tertiary' ? 0 : items.length - 1;
+  // The edition the truck will land on, for the language turn's last seat
+  // and its rest: the seat this turn starts from, or the reader's own when
+  // there is nothing to turn through. Without it the receded ring showed the
+  // tongue's FIRST edition and jumped as the truck began.
+  if (ch.id === 'secondary' && to >= 0) {
+    const tongue = CHOOSERS.find(c => c.id === 'tertiary')?.selected?.();
+    overtureLanding = tongue ? { language: tongue, edition: dimensionBridge.editionOfKey?.(items[items.length >= 2 && from !== to ? from : to]) ?? null } : null;
+  }
+  if (to < 0 || items.length < 2) return null;
   if (from === to) return null;
   warmOvertureTurn(ch, items, from, to);
   return { from, to };
@@ -4160,6 +4176,7 @@ let bootOvertureShown = false; // the overture covers the first load only (O-181
 // ends the overture on the spot, and it leaves the floors to whoever moved
 // them: the sheet lifts, nothing is settled on the reader's behalf.
 let bootOvertureLive = null, bootOvertureGliding = false;
+let overtureLanding = null;   // { language, edition }: where the film's first truck lands the edition ring
 
 // Sample points along the visible focus-ring arc — the first stroke the boot
 // splash inks. Ordered endAngle→startAngle so the self-draw sweeps from the
@@ -5269,6 +5286,10 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
           renderFrontStratumAt(index, false);
           const ch = activeChooser();
           if (ch) previewFromLens(ch, ch.items(), index);
+          // At rest the planes behind follow in THIS paint, not the next
+          // frame: the film's first frame showed the committed edition under
+          // Hebrew before the preview caught up (Howell 2026-11-03).
+          if (previewFollow) { cancelAnimationFrame(previewFollow); previewFollow = 0; renderStack({ keepFront: true }); if (!previewTextMuted) previewPrimary(strataPreview); }
         },
         turnEnd: () => {
           if (previewFollow) { cancelAnimationFrame(previewFollow); previewFollow = 0; }
