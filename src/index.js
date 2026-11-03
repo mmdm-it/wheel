@@ -2093,7 +2093,10 @@ export function createApp({
           : null;
         const policyCap = typeof policy === 'object' && policy !== null ? policy.cap : policy;
         const policySpread = Boolean(typeof policy === 'object' && policy !== null && policy.spread);
-        const SEAT_CAP = Number.isFinite(policyCap) && policyCap > 0 ? policyCap : 28;
+        // The default ask is 40 (O-263): an honest sky seats only what has
+        // room — about 37 numerals or 27 book names on Howell's phone — so
+        // the ask is a bound on the work, not a promise of the count.
+        const SEAT_CAP = Number.isFinite(policyCap) && policyCap > 0 ? policyCap : (equalSky ? 28 : 40);
         const seatCount = Math.min(children.length, SEAT_CAP);
 
         // ONE LARGE STAR, AND ONLY A LANDMARK EARNS IT (O-262, Howell
@@ -2198,8 +2201,16 @@ export function createApp({
             }];
           })()
         };
-        const labelLenOf = i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length;
+        // The room a label needs is the label the star WEARS — the node's
+        // short form ("1 THESS"), not the item's full name ("1 Thessalonians"),
+        // which reserved twice the room and halved a book sky (2026-11-03).
+        const labelLenOf = i => {
+          const ch = children[i];
+          if (!ch) return 0;
+          return String(formatLabel({ item: ch, context: 'node' }) || ch.name || ch.label || ch.id || '').length;
+        };
         let geo = null;
+        let skyPasses = 0;
         let slots = [];   // each seat, with the index of the child it holds
         if (policySpread) {
           // A sampled sky (a volume's country skies, O-242's spread) keeps its ranked
@@ -2245,58 +2256,29 @@ export function createApp({
           if (skyLayoutCache && skyLayoutCache.key === key) {
             ({ geo, slots } = skyLayoutCache);
           } else {
-            // Each pass lays the sky with one placement seat large (none on
-            // the first), reads it downward and asks where the large seat
-            // landed against where the landmark reads. Enlarging a seat
-            // reshuffles every seat placed after it, so the pass that makes
-            // them meet is hunted: the seat that reads as the landmark's is
-            // tried next, then the seats beside it. The nearest miss is kept
-            // when none meets in six, and then the landmark takes the large
-            // seat and the rest read on in order — one star a rank out.
-            const lay = bigSeat => {
-              const sizeScales = Array.from({ length: seatCount }, (_, seat) => (seat === bigSeat ? LARGE_SCALE : SMALL_SCALE));
-              const g = computeChildPyramidGeometry(vp, magnifier, arcParams, {
-                ...geoOptions, childCount: seatCount, labelLengths: Array(seatCount).fill(maxLen), sizeScales
-              });
-              if (!g) return null;
-              const placed = g.intersections.slice(0, seatCount);
-              const seated = seatOrder.slice(0, placed.length).sort((a, b) => a - b);
-              const byY = placed.slice().sort((a, b) => (a.y - b.y) || (a.x - b.x));
-              const want = seated.findIndex(i => isLarge(children[i]));        // the rank the landmark reads at
-              const got = bigSeat < 0 ? -1 : byY.findIndex(sl => sl.fanId === bigSeat);   // the rank the large seat landed at
-              return { geo: g, byY, seated, want, got, miss: want < 0 ? 0 : got < 0 ? Infinity : Math.abs(got - want) };
-            };
-            const tried = new Set();
-            const queue = [-1];
-            let best = null;
-            while (queue.length && tried.size < 6) {
-              const bigSeat = queue.shift();
-              if (tried.has(bigSeat)) continue;
-              tried.add(bigSeat);
-              const r = lay(bigSeat);
-              if (!r) continue;
-              if (r.want < 0) { best = r; break; }                 // no landmark seated: one pass
-              if (bigSeat >= 0 && (!best || r.miss < best.miss)) best = r;
-              if (best && best.miss === 0) break;
-              const at = k => (k >= 0 && k < r.byY.length ? r.byY[k].fanId : null);
-              for (const f of [at(r.want), at(r.want - 1), at(r.want + 1), at(r.want - 2), at(r.want + 2)]) {
-                if (f != null && !tried.has(f)) queue.push(f);
-              }
-            }
-            if (!best) return null;
-            geo = best.geo;
-            if (best.want < 0) {
-              slots = best.byY.map((slot, j) => ({ ...slot, child: best.seated[j] }));
-            } else {
-              const landmark = best.seated[best.want];
-              const others = best.seated.filter(i => i !== landmark);
-              const bigRank = best.got;
-              let k = 0;
-              slots = best.byY.map((slot, j) => ({ ...slot, child: j === bigRank ? landmark : others[k++] }));
-            }
+            // ONE LAYING (O-263, 2026-11-03). Every seat makes room for the
+            // longest name the run might seat — the honest field packs close
+            // enough to afford it — and the geometry reads the sky downward,
+            // enlarging the seat where the landmark reads. The children are
+            // then handed out in order: around the landmark where it is
+            // seated, else as the run centred on the anchor.
+            skyPasses = 1;
+            const lm = equalSky ? -1 : children.findIndex(ch => isLarge(ch));
+            geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
+              ...geoOptions, childCount: seatCount, honest: !equalSky,
+              labelLengths: Array(seatCount).fill(maxLen), sizeScales: Array(seatCount).fill(SMALL_SCALE),
+              downward: { landmark: lm, total: children.length, anchor, bigScale: LARGE_SCALE / SMALL_SCALE, bigLabelLen: lm >= 0 ? labelLenOf(lm) : 0 }
+            });
+            if (!geo) return null;
+            const S = geo.intersections;
+            const first = geo.bigRank >= 0
+              ? lm - geo.bigRank
+              : Math.max(0, Math.min(children.length - S.length, anchor - Math.floor(S.length / 2)));
+            slots = S.map((slot, j) => ({ ...slot, scale: slot.big ? LARGE_SCALE : (slot.scale ?? SMALL_SCALE), child: first + j }));
             skyLayoutCache = { key, geo, slots };
           }
         }
+        phase('r:seats-laid', { children: children.length, asked: seatCount, seated: slots.length, passes: skyPasses });
         // Map children onto the seats
         let nodes = [];
         let onNodeClick = null;
