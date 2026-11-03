@@ -312,6 +312,18 @@ export function chainPointAt(arc, startAngle, endAngle, a) {
   return { x: hubX + radius * Math.cos(a), y: hubY + radius * Math.sin(a), tangentAngle: a, onArc: true };
 }
 
+// A SEAT ON THE CHAIN, REACH-LIMITED (O-263, Howell 2026-11-02): chainPointAt
+// with the straight run past either exit cut at `reach` px — a migration's
+// target for a sibling whose seat is far along the tangent. Every sibling has
+// a seat, on screen or off, and flies straight to it; the cut keeps a seat a
+// hundred links out near enough that the star is seen leaving rather than
+// gone in a frame.
+export function chainSeatAt(arc, windowInfo, a, reach = Infinity) {
+  const { startAngle, endAngle } = windowInfo;
+  const span = Number.isFinite(reach) ? reach / arc.radius : Infinity;
+  return chainPointAt(arc, startAngle, endAngle, Math.max(startAngle - span, Math.min(endAngle + span, a)));
+}
+
 // tangentSpan (radians, default 0) widens the window past both exits so the
 // beyond-arc links populate the STRAIGHT tangent runs — the chain climbing
 // vertically overhead when the ring recedes (Howell 2026-07-21). 0 keeps the

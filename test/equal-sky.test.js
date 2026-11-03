@@ -18,13 +18,12 @@ describe('a volume may declare a sky of equals (O-240)', () => {
   it('the host shows every child, one size, with no subset, rank or cap', () => {
     const host = read('../src/index.js');
     assert.match(host, /const equalSky = pyramidConfig\?\.equalSky === true;/);
-    assert.match(host, /if \(!equalSky\) children = children\.filter/);
     assert.match(host, /const policy = equalSky \? \{ cap: Math\.max\(1, children\.length\) \}/);
     assert.match(host, /const isLarge = ch => Boolean\(!equalSky &&/);
   });
 
   it('an equal sky seats its children highest first, in sibling order (O-241)', () => {
     const host = read('../src/index.js');
-    assert.match(host, /if \(equalSky\) slots\.sort\(\(a, b\) => \(a\.y - b\.y\) \|\| \(a\.x - b\.x\)\);/);
+    assert.match(host, /placed\.slice\(\)\.sort\(\(a, b\) => \(a\.y - b\.y\) \|\| \(a\.x - b\.x\)\)/);
   });
 });

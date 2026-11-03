@@ -1,4 +1,4 @@
-import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from './geometry/focus-ring-geometry.js';
+import { getViewportInfo, calculateNodePositions, calculateAllNodePositions, chainSeatAt, getArcParameters, getViewportWindow, getBaseAngleForOrder, getMagnifierPosition, getNodeSpacing, getParentSeat, getParentLabelLeftX, CAPTION_GAP_RADII } from './geometry/focus-ring-geometry.js';
 // The return to the present is one deliberate glide, however far the ring
 // has travelled (O-243): the click's log-of-distance tempo would spin a day
 // ring for seconds from the deep past.
@@ -266,6 +266,7 @@ export function createApp({
   let lastSelectedLabelOut = '';
   const pyramidConfig = pyramid || null;
   let lastPyramidData = null; // stashed for SVG-level click delegation
+  let skyLayoutCache = null;  // the last sky laid, read downward (O-263)
   // THE DYNAMIC SKY (O-198, Howell 2026-10-08): after a drill out the sky is
   // the ring that rose into it — every node that was on screen, the one
   // that was in the lens as the standout — so a plain drill in brings that
@@ -279,12 +280,16 @@ export function createApp({
   // the departing lens as its standout (O-198). Noted BEFORE the commit, from
   // the ring as it stands; the seats may be handed in when the caller has
   // placed them already.
-  const rememberSkyFor = (nextLens, seats = null) => {
+  // THE SKY IS FULL (O-263, Howell 2026-11-02: "I was wrong to limit the
+  // number of nodes in the child pyramid to what's visible in the focus
+  // ring. And this is what creates the odd winnowing"): the sky after a
+  // drill out holds the parent's whole set, like any other sky. What is
+  // remembered is only the node just left — the run's anchor where the set
+  // overflows, and the drill's way back.
+  const rememberSkyFor = nextLens => {
     if (!nextLens) return;
-    const ring = seats || calculateNodePositions(buildVisibleItems(), vp, rotation, nodeRadius, nodeSpacing);
     dynamicSkies.set(nextLens.id, {
       parentId: nextLens.id,
-      ids: new Set(ring.map(n => n.item?.id).filter(id => id != null)),
       standoutId: nav.getCurrent()?.id ?? null
     });
   };
@@ -727,34 +732,20 @@ export function createApp({
       const tMaxRot = windowInfo.endAngle - getBaseAngleForOrder(tLast, vp, nodeSpacing);
       tempRotation = Math.max(tMinRot, Math.min(tMaxRot, desiredTempRotation));
     }
-    // Use calculateAllNodePositions (no visible-window filter) so every
-    // sibling gets a target — nodes beyond the visible arc animate to their
-    // implied off-screen positions on the focus ring.
-    // ONLY THE SKY'S OWN NODES NEED A TARGET (O-158): animateIn flies the
-    // pyramid's nodes and nothing else, and placing every item of the new
-    // chain — the whole volume's verses on a drill into one — cost 13–31 ms
-    // on the phone for a few dozen flights.
-    // ONLY THE SEATS ON SCREEN ARE FLOWN TO (O-165, Howell 2026-09-17, on
-    // three photographs of a drill into the Psalms' chapters). A book's sky
-    // holds a spread of the whole book — 28 stars out of 151 chapters — while
-    // its ring shows about a dozen seats at a time. Every star was flown to
-    // its true seat, so the ones seated far up or down the chain streaked
-    // clear across the face on their way off the edge, crossing the dozen
-    // that were settling. A star whose seat is off screen now departs the way
-    // stars have always departed on a filter change: to the flock point on
-    // its own side of the chain, up-chain or down-chain, and out of frame.
-    // Each target carries the name it lands with (O-204), so the flight can
-    // cross-fade the star's abbreviation into it on the way.
-    const ringTargets = calculateNodePositions(tempNormalized, vp, tempRotation, nodeRadius, nodeSpacing)
-      .map(t => ({ ...t, label: formatLabel({ item: t.item, context: 'node' }), labelCentered: Boolean(shouldCenterLabel?.({ item: t.item })) }));
+    // EVERY SIBLING HAS A SEAT, ON SCREEN OR OFF (O-263, Howell 2026-11-02,
+    // retiring O-165's flock): the chain runs dead straight along its
+    // tangent past each exit, and a star whose seat lies out there flies
+    // straight to it — leaving the frame on the way and never crossing the
+    // face, since the tangent runs away from the screen. One walk of the new
+    // chain, for the sky's own ids alone (O-158). Each target carries the
+    // name it lands with (O-204), so the flight can cross-fade the star's
+    // abbreviation into it on the way.
+    const ringTargets = seatsOnChain(tempNormalized, tempRotation, new Set(pyramidNodes.map(pn => String(pn.item?.id ?? pn.id ?? ''))));
+    // ON A DRILL IN THE NODE JUST LEFT IS FORGOTTEN (O-263): the run centres
+    // on the node just left only in the sky a drill out rises into; a sky
+    // reached by drilling in centres on its landmark.
+    dynamicSkies.clear();
     phase('in:ring-targets', { n: ringTargets.length });
-    const seatedIds = new Set(ringTargets.map(t => String(t.item?.id ?? '')));
-    const orderById = new Map(tempNormalized.filter(Boolean)
-      .map((it, i) => [String(it.id), Number.isFinite(it.order) ? it.order : i]));
-    const seatedOrders = ringTargets.map(t => orderById.get(String(t.item?.id ?? ''))).filter(Number.isFinite);
-    const minSeatedOrder = seatedOrders.length ? Math.min(...seatedOrders) : 0;
-    const arrivingStars = pyramidNodes.filter(pn => seatedIds.has(String(pn.item?.id ?? pn.id ?? '')));
-    const distantStars = pyramidNodes.filter(pn => !seatedIds.has(String(pn.item?.id ?? pn.id ?? '')));
 
     // 3. Snapshot current focus-ring node positions before they vanish.
     //    These will animate radially outward while new nodes animate in.
@@ -927,20 +918,9 @@ export function createApp({
       }
     }
 
-    if (distantStars.length) {
-      const { upper: flockUpper, lower: flockLower } = flockOrigins();
-      animateStarsAway({
-        svgRoot: view.contentGroup || view.svgRoot,
-        stars: distantStars.map(s => ({
-          ...s,
-          to: (orderById.get(String(s.item?.id ?? s.id ?? '')) ?? Infinity) < minSeatedOrder ? flockUpper : flockLower
-        }))
-      });
-    }
-
     animateIn({
       svgRoot: view.contentGroup || view.svgRoot,
-      pyramidNodes: arrivingStars,
+      pyramidNodes,
       ringTargets,
       magnifierAngle: magnifier.angle,
       clickedId: selectedId,
@@ -1138,11 +1118,12 @@ export function createApp({
       if (!scrubbed) journey.play();
     }
 
-    // THE RING RISES INTO THE SKY (O-141), ALWAYS (O-198): the departing
-    // ring's seats are snapshot now, so every node that was on screen can
-    // fly to its own seat in the new sky — which is made of exactly those
-    // nodes. A layer a drill in saved is never replayed: the sky the reader
-    // drilled into is not the sky they drill out onto.
+    // THE RING RISES INTO THE SKY (O-141), ALWAYS (O-198, O-263): every node
+    // of the departing chain that has a seat in the new sky flies to it —
+    // from its ring seat on screen, or from its seat on the straight tangent
+    // run past the exit if it was not. A layer a drill in saved is never
+    // replayed: the sky the reader drilled into is not the sky they drill
+    // out onto.
     let noLayerToReverse = true;
     const departingLensId = nav.getCurrent()?.id ?? null;
     // The ring nodes on screen, and which of them the reversal will carry
@@ -1155,11 +1136,10 @@ export function createApp({
     if (staleLayer) phase('out:stale-layer');
     const layerIds = null;
     phase('out:on-screen-ring', { n: onScreenRing.length, layer: false });
-    // THE DYNAMIC SKY (O-198): what rose is what the sky holds — every node
-    // that was on screen (the render keeps those that are the new lens's
-    // children; a cousin on the arc has no seat and fades), the departed
-    // lens node as the standout.
-    rememberSkyFor(tempSelected, onScreenRing);
+    // The node just left is remembered (O-198, narrowed by O-263): the run's
+    // anchor where the new sky overflows, and the drill's way back. A cousin
+    // on the arc has no seat in the sky and fades.
+    rememberSkyFor(tempSelected);
     // ONLY THE SEATS THE SKY WILL USE (O-154, from the gesture log: a drill
     // out took 211–423 ms to set up against a drill in's 38–82). This placed
     // and labelled EVERY item of the departing chain — the whole volume's
@@ -1168,28 +1148,7 @@ export function createApp({
     // the commit, for the sky's own ids alone.
     const departingChain = noLayerToReverse ? normalizedItems : null;
     const departingRotation = rotation;
-    const departingSeatsFor = ids => {
-      if (!departingChain || !ids.size) return [];
-      const arc = arcParams;
-      const out = [];
-      for (let index = 0; index < departingChain.length && out.length < ids.size; index += 1) {
-        const item = departingChain[index];
-        if (!item || !ids.has(item.id)) continue;
-        const order = Number.isFinite(item.order) ? item.order : index;
-        const angle = getBaseAngleForOrder(order, vp, nodeSpacing) + departingRotation;
-        out.push({
-          item, index, angle, radius: nodeRadius,
-          x: arc.hubX + arc.radius * Math.cos(angle),
-          y: arc.hubY + arc.radius * Math.sin(angle),
-          label: formatLabel({ item, context: 'node' }),
-          // Where the label sits — on the node for a numeral, beside it for a
-          // name — travels with the seat, or the clone takes off with its
-          // numeral seated beside the node and lands it twice (2026-10-22).
-          labelCentered: Boolean(shouldCenterLabel?.({ item }))
-        });
-      }
-      return out;
-    };
+    const departingSeatsFor = ids => (departingChain ? seatsOnChain(departingChain, departingRotation, ids) : []);
 
     // The caption beside the lens cross-fades to the parent level's word (O-151).
     slideCaption(tempSelected, 'out');
@@ -1303,9 +1262,9 @@ export function createApp({
     // The new sky must be known to say which departing node has a seat in
     // it, so the data commit lands now in both cases, the real sky held
     // hidden until the barrier; then every departing node the layer does
-    // not carry flies to its own sky seat — from its ring seat if it is on
-    // screen, from the hub if it is not — and only a node with no seat at
-    // all fades away.
+    // not carry flies to its own sky seat — from its seat on the chain, on
+    // screen or on the tangent past the exit (O-263) — and only a node with
+    // no seat at all fades away.
     let committed = false;
     const commitOut = () => {
       if (committed) return;
@@ -1438,6 +1397,29 @@ export function createApp({
   // chain's unseen links arrive from and depart to. Up-chain: above the
   // upper-left corner on the y-axis. Down-chain: the lower tangent's
   // extension past the lower-right exit. Both at ¼·LSd out.
+  // A seat for each of the named ids on a chain — on the arc, or on the
+  // straight tangent run past either exit, cut a screen's length out
+  // (chainSeatAt, O-263) — found in one walk of the chain.
+  const seatsOnChain = (chain, rotationOffset, ids) => {
+    if (!Array.isArray(chain) || !ids?.size) return [];
+    const out = [];
+    for (let index = 0; index < chain.length && out.length < ids.size; index += 1) {
+      const item = chain[index];
+      if (!item || !(ids.has(item.id) || ids.has(String(item.id)))) continue;
+      const order = Number.isFinite(item.order) ? item.order : index;
+      const angle = getBaseAngleForOrder(order, vp, nodeSpacing) + rotationOffset;
+      const p = chainSeatAt(arcParams, windowInfo, angle, vp.LSd);
+      out.push({
+        item, index, angle: p.tangentAngle, x: p.x, y: p.y, radius: nodeRadius, onTangent: !p.onArc,
+        label: formatLabel({ item, context: 'node' }),
+        // Where the label sits — on the node for a numeral, beside it for a
+        // name — travels with the seat, or the clone takes off with its
+        // numeral seated beside the node and lands it twice (2026-10-22).
+        labelCentered: Boolean(shouldCenterLabel?.({ item }))
+      });
+    }
+    return out;
+  };
   const flockOrigins = () => {
     const upper = { x: 0, y: -vp.LSd * 0.25, angle: windowInfo.endAngle };
     const ex = arcParams.hubX + arcParams.radius * Math.cos(windowInfo.startAngle);
@@ -2085,8 +2067,7 @@ export function createApp({
         if (dynamicSkies.size) {
           const dynamicSky = pyramidSelected ? dynamicSkies.get(pyramidSelected.id) : null;
           if (dynamicSky) {
-            if (!equalSky) children = children.filter(ch => dynamicSky.ids.has(ch?.id));
-            standoutId = dynamicSky.standoutId;
+            standoutId = dynamicSky.standoutId;   // the sky itself is the whole set (O-263)
           } else if (!isRotating) {
             dynamicSkies.clear();
           }
@@ -2122,18 +2103,21 @@ export function createApp({
         // out from keeps its place as the drill's way back (O-198) but no
         // longer its size.
         const isLarge = ch => Boolean(!equalSky && anyProminence && ch && tierOf(ch) === 1);
-        // THE SKY IS ONE RUN (O-262): where the children overflow the
+        // THE SKY IS ONE RUN (O-262, O-263): where the children overflow the
         // seats, the sky holds one CONTIGUOUS RUN of them centred on its
-        // anchor — the landmark, else the node just drilled out from, else
-        // the first child — never the head alone, never a sampling. Seats
+        // anchor — never the head alone, never a sampling. After a drill
+        // out the anchor is the node just left, so every ring node on
+        // screen has a seat in the sky to fly to (Howell 2026-11-02); on a
+        // drill in or a turn it is the landmark, and failing both the first
+        // child. The landmark is large only where it falls in the run. Seats
         // are handed out nearest the anchor first, so a sky that fits fewer
         // stars than the cap still shows a run around it.
         const anchor = (() => {
           if (equalSky) return 0;
-          const lead = children.findIndex(ch => isLarge(ch));
-          if (lead >= 0) return lead;
           const back = standoutId != null ? children.findIndex(ch => ch?.id === standoutId) : -1;
-          return back >= 0 ? back : 0;
+          if (back >= 0) return back;
+          const lead = children.findIndex(ch => isLarge(ch));
+          return lead >= 0 ? lead : 0;
         })();
         let seatPool = children.map((_, i) => i);
         if (!policySpread && !equalSky && children.length > seatCount) {
@@ -2180,22 +2164,11 @@ export function createApp({
         // ride the policy above.
 
         phase('r:seats');
-        const geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
+        const geoOptions = {
           logoBounds: volumeLogo.getBounds(),
           magnifierAngle: magnifier.angle,
           parentId: pyramidSelected?.id ?? '',
           parentSortNumber: pyramidSelected?.order ?? 0,
-          childCount: seatCount,
-          // Label lengths and size scales in SEAT order: the star walk keeps
-          // each child a safe distance from the right edge for ITS OWN
-          // label's width, and spaces stars by their true drawn radii.
-          // An equal sky reorders its seats top to bottom below, so every
-          // seat is walked for the longest label any child might take.
-          labelLengths: (() => {
-            const lens = seatOrder.slice(0, seatCount).map(i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length);
-            return equalSky ? lens.map(() => Math.max(0, ...lens)) : lens;
-          })(),
-          sizeScales: seatScales.slice(0, seatCount),
           labelBaseFontPx: pyramidLabelBasePx,
           // A caption after the lens's label lies inside the ring, where the
           // stars live, so the sky leaves its strip clear (O-242). Measured
@@ -2224,23 +2197,113 @@ export function createApp({
               half: fontPx * 0.7
             }];
           })()
-        });
-        if (!geo) return null;
-        // Map children onto intersection slots (seat j belongs to child seatOrder[j])
+        };
+        const labelLenOf = i => String(children[i]?.name ?? children[i]?.label ?? children[i]?.id ?? '').length;
+        let geo = null;
+        let slots = [];   // each seat, with the index of the child it holds
+        if (policySpread) {
+          // A sampled sky (a volume's country skies, O-242's spread) keeps its ranked
+          // seating: the prominent nearest the lens, in seat order. Label
+          // lengths and size scales in SEAT order: the star walk keeps each
+          // child a safe distance from the right edge for ITS OWN label's
+          // width, and spaces stars by their true drawn radii.
+          geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
+            ...geoOptions,
+            childCount: seatCount,
+            labelLengths: seatOrder.slice(0, seatCount).map(labelLenOf),
+            sizeScales: seatScales.slice(0, seatCount)
+          });
+          if (!geo) return null;
+          slots = geo.intersections.slice(0, seatCount).map((slot, j) => ({ ...slot, child: seatOrder[j] ?? j }));
+        } else {
+          // THE SKY READS DOWNWARD (O-241 for the equal sky; every sky since
+          // O-263, Howell 2026-11-02: "lower numbers at the top and higher
+          // numbers at the bottom, so that no higher number sits above a
+          // lower number"): the seats keep the star field's scatter, which
+          // still differs per parent and so still dances as the ring turns,
+          // but the children take them highest first in sibling order. The
+          // seated set is the run nearest the anchor that fit. Every seat is
+          // walked for the longest label any child might take, since which
+          // child lands where is only known once the sky is laid.
+          //
+          // The large star's seat is likewise only known after the sky is
+          // read, and giving a seat the large size moves its neighbours — so
+          // the sky is laid again with that seat large, until the seat that
+          // reads as the landmark's IS the large one (two passes as a rule).
+          // Laid once per sky: the render asks every frame of a turn.
+          const seatIds = seatOrder.slice(0, seatCount).map(i => children[i]?.id ?? i);
+          const maxLen = Math.max(0, ...seatOrder.slice(0, seatCount).map(labelLenOf));
+          const lb = geoOptions.logoBounds;
+          const key = [
+            vp.width, vp.height, vp.SSd, Math.round(magnifier.x), Math.round(magnifier.y),
+            pyramidSelected?.id ?? '', pyramidSelected?.order ?? 0, seatIds.join(','),
+            seatOrder.slice(0, seatCount).map(i => (isLarge(children[i]) ? 1 : 0)).join(''),
+            maxLen, pyramidLabelBasePx, SMALL_SCALE,
+            lb ? [lb.left, lb.top, lb.right, lb.bottom].map(Math.round).join(',') : '',
+            geoOptions.keepOut.map(k => [k.x1, k.y1, k.x2, k.y2, k.half].map(Math.round).join(',')).join(';')
+          ].join('|');
+          if (skyLayoutCache && skyLayoutCache.key === key) {
+            ({ geo, slots } = skyLayoutCache);
+          } else {
+            // Each pass lays the sky with one placement seat large (none on
+            // the first), reads it downward and asks where the large seat
+            // landed against where the landmark reads. Enlarging a seat
+            // reshuffles every seat placed after it, so the pass that makes
+            // them meet is hunted: the seat that reads as the landmark's is
+            // tried next, then the seats beside it. The nearest miss is kept
+            // when none meets in six, and then the landmark takes the large
+            // seat and the rest read on in order — one star a rank out.
+            const lay = bigSeat => {
+              const sizeScales = Array.from({ length: seatCount }, (_, seat) => (seat === bigSeat ? LARGE_SCALE : SMALL_SCALE));
+              const g = computeChildPyramidGeometry(vp, magnifier, arcParams, {
+                ...geoOptions, childCount: seatCount, labelLengths: Array(seatCount).fill(maxLen), sizeScales
+              });
+              if (!g) return null;
+              const placed = g.intersections.slice(0, seatCount);
+              const seated = seatOrder.slice(0, placed.length).sort((a, b) => a - b);
+              const byY = placed.slice().sort((a, b) => (a.y - b.y) || (a.x - b.x));
+              const want = seated.findIndex(i => isLarge(children[i]));        // the rank the landmark reads at
+              const got = bigSeat < 0 ? -1 : byY.findIndex(sl => sl.fanId === bigSeat);   // the rank the large seat landed at
+              return { geo: g, byY, seated, want, got, miss: want < 0 ? 0 : got < 0 ? Infinity : Math.abs(got - want) };
+            };
+            const tried = new Set();
+            const queue = [-1];
+            let best = null;
+            while (queue.length && tried.size < 6) {
+              const bigSeat = queue.shift();
+              if (tried.has(bigSeat)) continue;
+              tried.add(bigSeat);
+              const r = lay(bigSeat);
+              if (!r) continue;
+              if (r.want < 0) { best = r; break; }                 // no landmark seated: one pass
+              if (bigSeat >= 0 && (!best || r.miss < best.miss)) best = r;
+              if (best && best.miss === 0) break;
+              const at = k => (k >= 0 && k < r.byY.length ? r.byY[k].fanId : null);
+              for (const f of [at(r.want), at(r.want - 1), at(r.want + 1), at(r.want - 2), at(r.want + 2)]) {
+                if (f != null && !tried.has(f)) queue.push(f);
+              }
+            }
+            if (!best) return null;
+            geo = best.geo;
+            if (best.want < 0) {
+              slots = best.byY.map((slot, j) => ({ ...slot, child: best.seated[j] }));
+            } else {
+              const landmark = best.seated[best.want];
+              const others = best.seated.filter(i => i !== landmark);
+              const bigRank = best.got;
+              let k = 0;
+              slots = best.byY.map((slot, j) => ({ ...slot, child: j === bigRank ? landmark : others[k++] }));
+            }
+            skyLayoutCache = { key, geo, slots };
+          }
+        }
+        // Map children onto the seats
         let nodes = [];
         let onNodeClick = null;
-        if (children.length > 0 && geo.intersections.length > 0) {
-            const slots = geo.intersections.slice(0, seatCount);
-            // A SKY OF EQUALS READS DOWNWARD (O-241, Howell 2026-10-29): the
-            // seats keep the star field's scatter, which still differs per
-            // parent and so still dances as the ring turns, but the children
-            // take them highest first in sibling order — the first child is
-            // always the highest star, the last the lowest, and none sits
-            // above a sibling that precedes it.
-            if (equalSky) slots.sort((a, b) => (a.y - b.y) || (a.x - b.x));
+        if (children.length > 0 && slots.length > 0) {
             const nodeR = vp.SSd * NODE_RADIUS_RATIO;
             nodes = slots.map((slot, j) => {
-              const child = children[seatOrder[j] ?? j] ?? children[j];
+              const child = children[slot.child] ?? children[j];
               // Compute angle from hub (focus ring center) to slot for label rotation
               const dx = slot.x - arcParams.hubX;
               const dy = slot.y - arcParams.hubY;
