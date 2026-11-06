@@ -50,6 +50,18 @@
 // THE BOX ASPECT IS INHERITED AND WRONG, and is left alone deliberately —
 // see the note where it is used.
 const LOGO_COLLAPSED_SCALE = 1.1;
+
+// THE SOFT EDGE (O-266). The disc is solid to its radius and fades to nothing
+// across a band beyond it, `disc_feather` of that radius wide. The fade's
+// shape, as [fraction of the band, opacity]: an ease that leaves the solid
+// part without a visible shoulder and arrives at nothing without a rim.
+const FEATHER_CURVE = [[0, 1], [0.15, 0.94], [0.3, 0.8], [0.5, 0.5], [0.7, 0.2], [0.85, 0.06], [1, 0]];
+// The edge hardens over the first part of an expand and softens over the last
+// part of a collapse — while the disc is still small, so the repaint a
+// gradient change costs is a small one (O-160 keeps the flight itself to
+// transforms).
+const FEATHER_WINDOW = 0.25;
+const FEATHER_ID = 'volume-logo-feather';
 const LOGO_EXPANDED_SCALE = 0.9;
 
 // Inherited from the v0 artwork, and no image we ship has this aspect —
@@ -186,6 +198,7 @@ export class VolumeLogo {
         this.circle.setAttribute('cx', s.circleCx);
         this.circle.setAttribute('cy', s.circleCy);
         this.circle.setAttribute('r', s.circleR); // each emblem's own disc (O-265)
+        this._setFeather(s.circleFeather); // and its own edge (O-266)
       }
       if (this.clickTarget && typeof this.clickTarget.setAttribute === 'function') {
         this.clickTarget.setAttribute('cx', s.circleCx);
@@ -224,7 +237,7 @@ export class VolumeLogo {
     // mismatch H-31 was written to end. `setImage` does not wait either, for
     // the same reason. `_applyFrame` animates geometry and opacity and never
     // touches fill, so a swap mid-animation is safe.
-    if (this.circle) this.circle.setAttribute('fill', color);
+    this._paintDisc();
     return true;
   }
 
@@ -254,8 +267,9 @@ export class VolumeLogo {
     this.circle.style.willChange = 'transform, opacity'; // composited in flight (O-160)
     this.circle.setAttribute('cx', centerX);
     this.circle.setAttribute('cy', centerY);
-    this.circle.setAttribute('r', discRadius);
-    this.circle.setAttribute('fill', config.color_scheme?.detail_sector || '#362e6a');
+    this.circle.setAttribute('r', discRadius * (1 + this._discFeather()));
+    this._featherNow = null;
+    this._setFeather(this._discFeather());
     this.circle.setAttribute('opacity', config.color_scheme?.detail_sector_opacity || '0.5');
     // NO OUTLINE (Howell, 2026-08-17: "I'd like to try removing the dark
     // stroke"). The badge was a 1px black ring over a 50%-opacity fill, which
@@ -346,6 +360,70 @@ export class VolumeLogo {
     return Number.isFinite(declared) && declared > 0 ? declared : 1;
   }
 
+  // AND ITS OWN EDGE (O-266, Howell 2026-11-06: "the hard edge of the blue
+  // circle just feels lazy to me. I would try doing a blurred edge... I want
+  // the blur to begin where the current hard edge is. In other words, I want
+  // the circle to get larger overall"). Per emblem again, a fraction of the
+  // disc's radius (display_config.detail_sector.disc_feather); an emblem not
+  // named keeps its hard edge. A GRADIENT, not a filter: an SVG blur dies on
+  // WebKit below the top-level svg, and a gradient also says exactly where
+  // the fade begins, which a blur cannot.
+  _discFeather() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.disc_feather?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : 0;
+  }
+
+  _discColour() {
+    return this._renderConfig?.color_scheme?.detail_sector || '#362e6a';
+  }
+
+  // The disc's fill, in whatever state its edge is in.
+  _paintDisc() {
+    if (!this.circle) return;
+    const colour = this._discColour();
+    if (this._featherNow > 0 && this._gradientStops) {
+      for (const stop of this._gradientStops) stop.setAttribute('stop-color', colour);
+      this.circle.setAttribute('fill', `url(#${FEATHER_ID})`);
+    } else {
+      this.circle.setAttribute('fill', colour);
+    }
+  }
+
+  // `f` is the fade band as a fraction of the solid radius; the circle's `r`
+  // is the OUTER radius, solid * (1 + f), so the solid part ends at 1 / (1 + f)
+  // of the gradient.
+  _setFeather(f) {
+    if (!this.circle) return;
+    const want = f > 0 ? f : 0;
+    if (this._featherNow === want) return;
+    this._featherNow = want;
+    if (want > 0 && !this._gradientStops && this.group && typeof document !== 'undefined') {
+      const defs = document.createElementNS(SVG_NS, 'defs');
+      const gradient = document.createElementNS(SVG_NS, 'radialGradient');
+      gradient.setAttribute('id', FEATHER_ID);
+      this._gradientStops = [null, ...FEATHER_CURVE].map(() => gradient.appendChild(document.createElementNS(SVG_NS, 'stop')));
+      this._gradientStops[0].setAttribute('offset', 0);
+      this._gradientStops[0].setAttribute('stop-opacity', 1);
+      FEATHER_CURVE.forEach(([, alpha], i) => this._gradientStops[i + 1].setAttribute('stop-opacity', alpha));
+      defs.appendChild(gradient);
+      this.group.insertBefore(defs, this.group.firstChild);
+    }
+    if (want > 0 && this._gradientStops) {
+      const solid = 1 / (1 + want);
+      FEATHER_CURVE.forEach(([u], i) => this._gradientStops[i + 1].setAttribute('offset', solid + (1 - solid) * u));
+    }
+    this._paintDisc();
+  }
+
+  // Where the edge is, between two states: soft only at the collapsed end.
+  _featherAt(from, to, t) {
+    const a = from.circleFeather || 0, b = to.circleFeather || 0;
+    if (!a && !b) return 0;
+    if (a > 0) return a * (1 - Math.min(1, t / FEATHER_WINDOW));
+    return b * Math.max(0, (t - (1 - FEATHER_WINDOW)) / FEATHER_WINDOW);
+  }
+
   _collapsedGeometry() {
     const vw = this.viewport.width;
     const vh = this.viewport.height;
@@ -384,7 +462,8 @@ export class VolumeLogo {
     return {
       circleCx: cx,
       circleCy: cy,
-      circleR: discRadius,
+      circleR: discRadius * (1 + this._discFeather()),
+      circleFeather: this._discFeather(),
       circleOpacity: 0.5,
       logoX: cx - logoWidth / 2,
       logoY: cy - logoHeight / 2,
@@ -423,6 +502,7 @@ export class VolumeLogo {
       circleCx: arcParams.hubX,
       circleCy: arcParams.hubY,
       circleR: endCircleR,
+      circleFeather: 0,
       circleOpacity: circleEndOpacity,
       logoX: logoCenterX - logoWidth / 2,
       logoY: logoCenterY - logoHeight / 2,
@@ -480,9 +560,7 @@ export class VolumeLogo {
     if (this.clickTarget) this.clickTarget.parentNode.setAttribute('display', 'none');
     const start = this._getStartState();
     const end = this._getEndState(arcParams, magnifierAngle);
-    // Apply detail_sector color if configured
-    const detailColor = this._renderConfig?.color_scheme?.detail_sector;
-    if (detailColor && this.circle) this.circle.setAttribute('fill', detailColor);
+    this._paintDisc();
     return this._journey(start, end, {
       finish: () => {
         this._applyFrame(start, end, 1);
@@ -514,9 +592,7 @@ export class VolumeLogo {
     return this._journey(start, end, {
       finish: () => {
         this._applyFrame(start, end, 1);
-        // Reset fill to default after collapse
-        const defaultFill = this._renderConfig?.color_scheme?.detail_sector || '#362e6a';
-        if (this.circle) this.circle.setAttribute('fill', defaultFill);
+        this._paintDisc();
         if (this.logo) this.logo.removeAttribute('transform');
         this._animating = false;
         this._collapsing = false;
@@ -595,6 +671,7 @@ export class VolumeLogo {
     // geometry now stays at the FROM state and a transform carries it; only
     // the ends (t = 0, t = 1) write the real attributes, so everything that
     // reads them sees a settled sector.
+    this._setFeather(this._featherAt(from, to, t));
     if (t > 0 && t < 1) { this._applyTransformFrame(from, to, t); return; }
     this._frameBase = null;
     if (this.circle) { this.circle.style.transform = ''; this.circle.style.opacity = ''; }
@@ -663,6 +740,8 @@ export class VolumeLogo {
       this.group = null;
       this.circle = null;
       this.logo = null;
+      this._gradientStops = null;
+      this._featherNow = null;
     }
     if (this.clickTarget) {
       this.clickTarget.parentNode.remove();

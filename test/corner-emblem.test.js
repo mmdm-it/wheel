@@ -351,6 +351,75 @@ describe("each emblem's disc at its own size (O-265)", () => {
   });
 });
 
+// EACH EMBLEM'S DISC WITH ITS OWN EDGE (O-266, Howell 2026-11-06): "the hard
+// edge of the blue circle just feels lazy to me. I would try doing a blurred
+// edge... I want the blur to begin where the current hard edge is. In other
+// words, I want the circle to get larger overall." The disc stays solid to the
+// radius it had and fades across a band beyond it; the leaf's background, which
+// is the same circle grown, keeps its hard edge.
+describe("each emblem's disc with its own edge (O-266)", () => {
+  const badge = async config => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 720, height: 1600 });
+    logo._renderConfig = config;
+    return logo;
+  };
+  const config = { emblem_scale: { crown_of_thorns: 1.8, torah_scroll: 1.8 }, disc_feather: { torah_scroll: 0.12 } };
+  const arc = { hubX: 900, hubY: 900, radius: 800 };
+  it('THE FADE BEGINS WHERE THE HARD EDGE WAS: the circle grows by the band, the solid part does not move', async () => {
+    const scroll = await badge({ default_image: 'torah_scroll', ...config });
+    const crown = await badge({ default_image: 'crown_of_thorns', ...config });
+    const base = crown.collapsedCentre().radius;
+    const s = scroll._getStartState(), c = crown._getStartState();
+    assert.equal(c.circleFeather, 0, 'an emblem that declares none keeps its hard edge');
+    assert.ok(Math.abs(c.circleR - base) < 1e-9);
+    assert.equal(s.circleFeather, 0.12);
+    assert.ok(Math.abs(s.circleR - base * 1.12) < 1e-9, 'larger overall, by the band');
+    assert.ok(Math.abs(s.circleR / (1 + s.circleFeather) - base) < 1e-9, 'and solid exactly to the old edge');
+  });
+  it('it compounds with a declared disc size rather than replacing it', async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config, disc_scale: { torah_scroll: 1.1 } });
+    const base = logo.collapsedCentre().radius;
+    assert.ok(Math.abs(logo._getStartState().circleR - base * 1.1 * 1.12) < 1e-9);
+  });
+  it("THE LEAF'S BACKGROUND KEEPS ITS HARD EDGE: the open sector declares no fade", async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config });
+    assert.equal(logo._getEndState(arc, Math.PI)?.circleFeather, 0);
+  });
+  it('the edge hardens early in an expand and softens late in a collapse, while the disc is small', async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config });
+    const shut = logo._getStartState(), open = logo._getEndState(arc, Math.PI);
+    assert.equal(logo._featherAt(shut, open, 0), 0.12);
+    assert.ok(logo._featherAt(shut, open, 0.1) > 0 && logo._featherAt(shut, open, 0.1) < 0.12);
+    assert.equal(logo._featherAt(shut, open, 0.25), 0, 'hard by a quarter of the way out');
+    assert.equal(logo._featherAt(shut, open, 0.6), 0);
+    assert.equal(logo._featherAt(open, shut, 0.4), 0, 'hard for most of the way home');
+    assert.equal(logo._featherAt(open, shut, 0.75), 0);
+    assert.ok(logo._featherAt(open, shut, 0.9) > 0);
+    assert.equal(logo._featherAt(open, shut, 1), 0.12);
+    const hard = await badge({ default_image: 'crown_of_thorns', ...config });
+    assert.equal(hard._featherAt(hard._getStartState(), hard._getEndState(arc, Math.PI), 0), 0, 'and a hard-edged emblem never asks for a gradient');
+  });
+  it('THE SWAP CHANGES THE EDGE: crossing a testament at rest resizes the circle for the new emblem\'s band', async () => {
+    const logo = await badge({ logo_base_path: 'assets/', default_image: 'crown_of_thorns', ...config });
+    const circle = {}, img = {};
+    logo.circle = { setAttribute: (k, v) => { circle[k] = v; } };
+    logo.logo = { style: {}, setAttribute: (k, v) => { img[k] = v; }, setAttributeNS: (_n, k, v) => { img[k] = v; } };
+    const base = logo.collapsedCentre().radius;
+    logo.setImage('torah_scroll');
+    assert.ok(Math.abs(circle.r - base * 1.12) < 1e-9);
+    logo.setImage('crown_of_thorns');
+    assert.ok(Math.abs(circle.r - base) < 1e-9);
+    assert.equal(circle.fill, logo._discColour(), 'and the hard-edged disc is a plain fill again');
+  });
+  it('a nonsense declaration is a hard edge', async () => {
+    for (const bad of [0, -0.2, 'soft', null]) {
+      const logo = await badge({ default_image: 'torah_scroll', ...config, disc_feather: { torah_scroll: bad } });
+      assert.equal(logo._getStartState().circleFeather, 0);
+    }
+  });
+});
+
 // THE FENCE STANDS WHILE THE BADGE FLIES HOME (O-189, Howell's phone
 // 2026-10-01: a verse's star seated on top of the crown). The sky asks the
 // badge for the box to keep clear of; it used to be told nothing while the
