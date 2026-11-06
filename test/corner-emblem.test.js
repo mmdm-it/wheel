@@ -302,6 +302,55 @@ describe('each emblem at its own size, around the same circle (O-148)', () => {
   });
 });
 
+// EACH EMBLEM'S DISC AT ITS OWN SIZE (O-265, Howell 2026-11-06): "for the
+// first time, the colored disc in the upper right corner will be a different
+// size for each testament, in addition to each one having its own artwork."
+// A ring hides the disc's hard edge only by lying ACROSS it, and two rings of
+// different widths cannot both straddle one radius — so the volume declares
+// the disc per emblem, and nothing but the drawn disc moves.
+describe("each emblem's disc at its own size (O-265)", () => {
+  const badge = async config => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 720, height: 1600 });
+    logo._renderConfig = config;
+    return logo;
+  };
+  const scales = { emblem_scale: { crown_of_thorns: 1.8, torah_scroll: 1.8 } };
+  it('an emblem that declares none keeps the base disc; one that declares takes its own', async () => {
+    const config = { ...scales, disc_scale: { torah_scroll: 1.1 } };
+    const scroll = await badge({ default_image: 'torah_scroll', ...config });
+    const crown = await badge({ default_image: 'crown_of_thorns', ...config });
+    const base = crown.collapsedCentre().radius;
+    assert.ok(Math.abs(crown._getStartState().circleR - base) < 1e-9, 'the crown of thorns is untouched');
+    assert.ok(Math.abs(scroll._getStartState().circleR - base * 1.1) < 1e-9, 'the scroll takes the disc it declared');
+  });
+  it('ONLY THE DISC MOVES: the place, the emblem and the base radius are what they were', async () => {
+    const plain = await badge({ default_image: 'torah_scroll', ...scales });
+    const grown = await badge({ default_image: 'torah_scroll', ...scales, disc_scale: { torah_scroll: 1.1 } });
+    const a = plain._getStartState(), b = grown._getStartState();
+    for (const k of ['circleCx', 'circleCy', 'logoX', 'logoY', 'logoWidth', 'logoHeight']) assert.equal(a[k], b[k], k);
+    assert.equal(plain.collapsedCentre().radius, grown.collapsedCentre().radius, 'what folds back to the badge still aims at the base circle');
+    assert.deepEqual(plain.getBounds?.() ?? null, grown.getBounds?.() ?? null, 'and the sky keeps clear of the same box');
+  });
+  it('a nonsense declaration is the base disc, not a vanished one', async () => {
+    for (const bad of [0, -1, 'wide', null]) {
+      const logo = await badge({ default_image: 'torah_scroll', ...scales, disc_scale: { torah_scroll: bad } });
+      assert.equal(logo._getStartState().circleR, logo.collapsedCentre().radius);
+    }
+  });
+  it('THE SWAP RESIZES THE DISC: crossing a testament at rest redraws the circle at the new emblem\'s size', async () => {
+    const logo = await badge({ logo_base_path: 'assets/', default_image: 'crown_of_thorns', ...scales, disc_scale: { torah_scroll: 1.1 } });
+    const circle = {}, img = {};
+    logo.circle = { setAttribute: (k, v) => { circle[k] = v; } };
+    logo.logo = { style: {}, setAttribute: (k, v) => { img[k] = v; }, setAttributeNS: (_n, k, v) => { img[k] = v; } };
+    const base = logo.collapsedCentre().radius;
+    assert.equal(logo.setImage('torah_scroll'), true);
+    assert.ok(Math.abs(circle.r - base * 1.1) < 1e-9, 'grown for the scroll');
+    assert.equal(logo.setImage('crown_of_thorns'), true);
+    assert.ok(Math.abs(circle.r - base) < 1e-9, 'and back for the thorns');
+  });
+});
+
 // THE FENCE STANDS WHILE THE BADGE FLIES HOME (O-189, Howell's phone
 // 2026-10-01: a verse's star seated on top of the crown). The sky asks the
 // badge for the box to keep clear of; it used to be told nothing while the

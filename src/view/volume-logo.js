@@ -185,6 +185,7 @@ export class VolumeLogo {
       if (this.circle && typeof this.circle.setAttribute === 'function') {
         this.circle.setAttribute('cx', s.circleCx);
         this.circle.setAttribute('cy', s.circleCy);
+        this.circle.setAttribute('r', s.circleR); // each emblem's own disc (O-265)
       }
       if (this.clickTarget && typeof this.clickTarget.setAttribute === 'function') {
         this.clickTarget.setAttribute('cx', s.circleCx);
@@ -241,7 +242,7 @@ export class VolumeLogo {
     const radius = shorterSide * 0.12;
     const margin = shorterSide * 0.03;
     
-    const { centerX, centerY, logoWidth, logoHeight } = this._collapsedGeometry();
+    const { centerX, centerY, logoWidth, logoHeight, discRadius } = this._collapsedGeometry();
     
     // Create group
     this.group = document.createElementNS(SVG_NS, 'g');
@@ -253,7 +254,7 @@ export class VolumeLogo {
     this.circle.style.willChange = 'transform, opacity'; // composited in flight (O-160)
     this.circle.setAttribute('cx', centerX);
     this.circle.setAttribute('cy', centerY);
-    this.circle.setAttribute('r', radius);
+    this.circle.setAttribute('r', discRadius);
     this.circle.setAttribute('fill', config.color_scheme?.detail_sector || '#362e6a');
     this.circle.setAttribute('opacity', config.color_scheme?.detail_sector_opacity || '0.5');
     // NO OUTLINE (Howell, 2026-08-17: "I'd like to try removing the dark
@@ -329,6 +330,22 @@ export class VolumeLogo {
     return Number.isFinite(declared) && declared > 0 ? declared : LOGO_COLLAPSED_SCALE;
   }
 
+  // THE DISC HAS ITS OWN SIZE PER EMBLEM TOO (O-265, Howell 2026-11-06: for
+  // the first time the coloured disc in the upper right corner is a different
+  // size for each emblem, in addition to each one having its own artwork). An
+  // emblem drawn to ring the circle hides the circle's hard
+  // edge only if its band lies ACROSS that edge, and two rings of different
+  // widths cannot both straddle one radius. So the volume may declare, per
+  // emblem, a multiple of the base disc (display_config.detail_sector
+  // .disc_scale); an emblem not named keeps the base. Only the DRAWN disc
+  // changes: the badge's place, the emblem's size and the tap target are
+  // still reckoned from the base radius, so nothing else moves.
+  _discScale() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.disc_scale?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : 1;
+  }
+
   _collapsedGeometry() {
     const vw = this.viewport.width;
     const vh = this.viewport.height;
@@ -352,7 +369,7 @@ export class VolumeLogo {
     const centerY = margin + placeHeight / 2;
     const logoWidth = radius * 2 * this._emblemScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
-    return { radius, margin, centerX, centerY, logoWidth, logoHeight };
+    return { radius, discRadius: radius * this._discScale(), margin, centerX, centerY, logoWidth, logoHeight };
   }
 
   /** The badge's centre when collapsed, in viewport px — where the sector's contents fold back to (O-161). */
@@ -363,11 +380,11 @@ export class VolumeLogo {
   }
 
   _getStartState() {
-    const { radius, centerX: cx, centerY: cy, logoWidth, logoHeight } = this._collapsedGeometry();
+    const { discRadius, centerX: cx, centerY: cy, logoWidth, logoHeight } = this._collapsedGeometry();
     return {
       circleCx: cx,
       circleCy: cy,
-      circleR: radius,
+      circleR: discRadius,
       circleOpacity: 0.5,
       logoX: cx - logoWidth / 2,
       logoY: cy - logoHeight / 2,
