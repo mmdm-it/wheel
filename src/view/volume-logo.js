@@ -177,6 +177,7 @@ export class VolumeLogo {
       if (this._renderConfig?.default_image === '') return false;
       if (this.logo.style) this.logo.style.display = 'none';
       if (this._renderConfig) this._renderConfig.default_image = '';
+      this._hrefSurround(); // no emblem, so no surround either
       return true;
     }
     if (this.logo.style) this.logo.style.display = '';
@@ -186,15 +187,18 @@ export class VolumeLogo {
     if (this._renderConfig.default_image === imageName) return false;
     this._renderConfig.default_image = imageName;
     this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${imageName}.png`);
+    this._hrefSurround();
     // Each emblem at its own size and place (O-148): a collapsed badge is
     // re-boxed now, circle with it; an expanded or moving one takes it from
     // its next journey's first frame.
     if (!this._expanded && !this._animating && typeof this.logo.setAttribute === 'function') {
       const s = this._getStartState();
-      this.logo.setAttribute('x', s.logoX);
-      this.logo.setAttribute('y', s.logoY);
-      this.logo.setAttribute('width', s.logoWidth);
-      this.logo.setAttribute('height', s.logoHeight);
+      for (const [el, k] of this._layers()) {
+        el.setAttribute('x', s[`${k}X`]);
+        el.setAttribute('y', s[`${k}Y`]);
+        el.setAttribute('width', s[`${k}Width`]);
+        el.setAttribute('height', s[`${k}Height`]);
+      }
       if (this.circle && typeof this.circle.setAttribute === 'function') {
         this.circle.setAttribute('cx', s.circleCx);
         this.circle.setAttribute('cy', s.circleCy);
@@ -211,11 +215,13 @@ export class VolumeLogo {
       // the edition changing under the reader — would otherwise leave the new
       // emblem at the old one's zoom until the sector next closed.
       const e = this._getEndState(this._openAt.arcParams, this._openAt.magnifierAngle);
-      this.logo.setAttribute('x', e.logoX);
-      this.logo.setAttribute('y', e.logoY);
-      this.logo.setAttribute('width', e.logoWidth);
-      this.logo.setAttribute('height', e.logoHeight);
-      this.logo.setAttribute('transform', `rotate(${e.logoRotation}, ${e.logoCenterX}, ${e.logoCenterY})`);
+      for (const [el, k] of this._layers()) {
+        el.setAttribute('x', e[`${k}X`]);
+        el.setAttribute('y', e[`${k}Y`]);
+        el.setAttribute('width', e[`${k}Width`]);
+        el.setAttribute('height', e[`${k}Height`]);
+        el.setAttribute('transform', `rotate(${e.logoRotation}, ${e.logoCenterX}, ${e.logoCenterY})`);
+      }
     } else if (this._animating && this._flight) {
       // AND A FLIGHT UNDER WAY IS RE-AIMED (O-267). A boot at a leaf opens
       // the sector on the volume's default emblem and learns the reader's
@@ -328,6 +334,15 @@ export class VolumeLogo {
       this._sectorClipCircle = clip.appendChild(document.createElementNS(SVG_NS, 'circle'));
       clipDefs.appendChild(clip);
       this.group.appendChild(clipDefs);
+      // THE SURROUND, where the emblem declares one (O-268): a second picture
+      // on the emblem's own box, in the same clipped wrapper.
+      this.surround = document.createElementNS(SVG_NS, 'image');
+      this.surround.setAttribute('id', 'volume-logo-surround');
+      this.surround.style.willChange = 'transform, opacity';
+      this.surround.style.pointerEvents = 'none';
+      for (const k of ['x', 'y', 'width', 'height', 'opacity']) this.surround.setAttribute(k, this.logo.getAttribute(k));
+      this._hrefSurround();
+      this.logoClip.appendChild(this.surround);
       this.logoClip.appendChild(this.logo);
       this.group.appendChild(this.logoClip);
     }
@@ -408,6 +423,45 @@ export class VolumeLogo {
     const name = this._renderConfig?.default_image;
     const declared = Number(this._renderConfig?.watermark_scale?.[name]);
     return Number.isFinite(declared) && declared > 0 ? declared : LOGO_EXPANDED_SCALE;
+  }
+
+  // AN EMBLEM MAY BE TWO PICTURES THAT PART COMPANY (O-268, Howell 2026-11-06,
+  // on seeing O-267: "I don't want to crop the Torah scroll with the focus
+  // ring … I want the Torah scroll to stop enlarging before it's too big to
+  // fit within the details sector. This may require some cheating to make
+  // the olive wreath go away under the focus ring"). One zoom cannot do both:
+  // far enough for the ring around a centrepiece to leave the sector is too
+  // far for the centrepiece to stay inside it. So the volume may name a
+  // SURROUND for an emblem (display_config.detail_sector.emblem_surround) —
+  // a second image on the same box, indistinguishable from one picture in the
+  // corner — and how far the surround grows when the sector opens
+  // (surround_watermark_scale); the emblem itself stops at watermark_scale.
+  _surroundName() {
+    const name = this._renderConfig?.default_image;
+    const declared = this._renderConfig?.emblem_surround?.[name];
+    return typeof declared === 'string' && declared ? declared : null;
+  }
+
+  _surroundExpandedScale() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.surround_watermark_scale?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : this._expandedScale();
+  }
+
+  _hrefSurround() {
+    if (!this.surround) return;
+    const name = this._surroundName(), base = this._renderConfig?.logo_base_path;
+    if (name && base) {
+      this.surround.setAttributeNS(XLINK_NS, 'href', `${base}${name}.png`);
+      this.surround.style.display = '';
+    } else {
+      this.surround.style.display = 'none';
+    }
+  }
+
+  // The emblem and its surround, each with the prefix its box rides under in a state.
+  _layers() {
+    return [[this.logo, 'logo'], [this.surround, 'surround']].filter(([el]) => el && typeof el.setAttribute === 'function');
   }
 
   // AND ITS OWN EDGE (O-266, Howell 2026-11-06: "the hard edge of the blue
@@ -540,6 +594,11 @@ export class VolumeLogo {
       logoY: cy - logoHeight / 2,
       logoWidth,
       logoHeight,
+      // one picture in the corner: the surround lies on the emblem's box
+      surroundX: cx - logoWidth / 2,
+      surroundY: cy - logoHeight / 2,
+      surroundWidth: logoWidth,
+      surroundHeight: logoHeight,
       logoOpacity: 0.5,
       logoRotation: 0
     };
@@ -560,6 +619,8 @@ export class VolumeLogo {
     // In v3's top-left origin, screen center is (width/2, height/2).
     const logoWidth = frRadius * this._expandedScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
+    const surroundWidth = frRadius * this._surroundExpandedScale();
+    const surroundHeight = surroundWidth / LOGO_BOX_ASPECT;
     const logoCenterRadius = frRadius * -0.35;
     const screenCenterX = this.viewport.width / 2;
     const screenCenterY = this.viewport.height / 2;
@@ -579,6 +640,11 @@ export class VolumeLogo {
       logoY: logoCenterY - logoHeight / 2,
       logoWidth,
       logoHeight,
+      // same centre and tilt, grown further (O-268)
+      surroundX: logoCenterX - surroundWidth / 2,
+      surroundY: logoCenterY - surroundHeight / 2,
+      surroundWidth,
+      surroundHeight,
       logoOpacity: 0.10,    // watermark
       logoRotation: rotationDeg,
       logoCenterX,
@@ -672,7 +738,7 @@ export class VolumeLogo {
         this._applyFrame(start, end, 1);
         this._paintDisc();
         this._setSectorClip(null);
-        if (this.logo) this.logo.removeAttribute('transform');
+        for (const [el] of this._layers()) if (typeof el.removeAttribute === 'function') el.removeAttribute('transform');
         this._animating = false;
         this._collapsing = false;
         this._expanded = false;
@@ -754,28 +820,28 @@ export class VolumeLogo {
     if (t > 0 && t < 1) { this._applyTransformFrame(from, to, t); return; }
     this._frameBase = null;
     if (this.circle) { this.circle.style.transform = ''; this.circle.style.opacity = ''; }
-    if (this.logo) { this.logo.style.transform = ''; this.logo.style.opacity = ''; }
+    for (const [el] of this._layers()) if (el.style) { el.style.transform = ''; el.style.opacity = ''; }
     if (this.circle) {
       this.circle.setAttribute('cx', lerp(from.circleCx, to.circleCx));
       this.circle.setAttribute('cy', lerp(from.circleCy, to.circleCy));
       this.circle.setAttribute('r', lerp(from.circleR, to.circleR));
       this.circle.setAttribute('opacity', lerp(from.circleOpacity, to.circleOpacity));
     }
-    if (this.logo) {
-      const x = lerp(from.logoX, to.logoX);
-      const y = lerp(from.logoY, to.logoY);
-      const w = lerp(from.logoWidth, to.logoWidth);
-      const h = lerp(from.logoHeight, to.logoHeight);
+    for (const [el, k] of this._layers()) {
+      const x = lerp(from[`${k}X`], to[`${k}X`]);
+      const y = lerp(from[`${k}Y`], to[`${k}Y`]);
+      const w = lerp(from[`${k}Width`], to[`${k}Width`]);
+      const h = lerp(from[`${k}Height`], to[`${k}Height`]);
       const rot = lerp(from.logoRotation, to.logoRotation);
       const opacity = lerp(from.logoOpacity, to.logoOpacity);
-      this.logo.setAttribute('x', x);
-      this.logo.setAttribute('y', y);
-      this.logo.setAttribute('width', w);
-      this.logo.setAttribute('height', h);
-      this.logo.setAttribute('opacity', opacity);
+      el.setAttribute('x', x);
+      el.setAttribute('y', y);
+      el.setAttribute('width', w);
+      el.setAttribute('height', h);
+      el.setAttribute('opacity', opacity);
       const cx = x + w / 2;
       const cy = y + h / 2;
-      this.logo.setAttribute('transform', `rotate(${rot}, ${cx}, ${cy})`);
+      el.setAttribute('transform', `rotate(${rot}, ${cx}, ${cy})`);
     }
   }
 
@@ -792,20 +858,23 @@ export class VolumeLogo {
       this.circle.style.transform = `translate(${cx - k * from.circleCx}px, ${cy - k * from.circleCy}px) scale(${k})`;
       this.circle.style.opacity = String(lerp(from.circleOpacity, to.circleOpacity));
     }
-    if (this.logo) {
+    for (const [el, p] of this._layers()) {
+      const fx = from[`${p}X`], fy = from[`${p}Y`], fw = from[`${p}Width`], fh = from[`${p}Height`];
       if (this._frameBase !== from) {
-        this.logo.setAttribute('x', from.logoX);
-        this.logo.setAttribute('y', from.logoY);
-        this.logo.setAttribute('width', from.logoWidth);
-        this.logo.setAttribute('height', from.logoHeight);
+        el.setAttribute('x', fx);
+        el.setAttribute('y', fy);
+        el.setAttribute('width', fw);
+        el.setAttribute('height', fh);
       }
-      const x = lerp(from.logoX, to.logoX), y = lerp(from.logoY, to.logoY);
-      const w = lerp(from.logoWidth, to.logoWidth), h = lerp(from.logoHeight, to.logoHeight);
-      const kx = from.logoWidth ? w / from.logoWidth : 1, ky = from.logoHeight ? h / from.logoHeight : 1;
+      const x = lerp(fx, to[`${p}X`]), y = lerp(fy, to[`${p}Y`]);
+      const w = lerp(fw, to[`${p}Width`]), h = lerp(fh, to[`${p}Height`]);
+      const kx = fw ? w / fw : 1, ky = fh ? h / fh : 1;
       const rot = lerp(from.logoRotation, to.logoRotation);
       const cx = x + w / 2, cy = y + h / 2;
-      this.logo.style.transform = `translate(${cx}px, ${cy}px) rotate(${rot}deg) translate(${-cx}px, ${-cy}px) translate(${x - kx * from.logoX}px, ${y - ky * from.logoY}px) scale(${kx}, ${ky})`;
-      this.logo.style.opacity = String(lerp(from.logoOpacity, to.logoOpacity));
+      if (el.style) {
+        el.style.transform = `translate(${cx}px, ${cy}px) rotate(${rot}deg) translate(${-cx}px, ${-cy}px) translate(${x - kx * fx}px, ${y - ky * fy}px) scale(${kx}, ${ky})`;
+        el.style.opacity = String(lerp(from.logoOpacity, to.logoOpacity));
+      }
     }
     this._frameBase = from;
   }
@@ -823,6 +892,7 @@ export class VolumeLogo {
       this._featherNow = null;
       this.logoClip = null;
       this._sectorClipCircle = null;
+      this.surround = null;
     }
     if (this.clickTarget) {
       this.clickTarget.parentNode.remove();

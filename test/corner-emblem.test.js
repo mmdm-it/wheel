@@ -482,6 +482,81 @@ describe("each emblem at its own size as the leaf's watermark (O-267)", () => {
   });
 });
 
+// AN EMBLEM MAY BE TWO PICTURES THAT PART COMPANY (O-268, Howell 2026-11-06,
+// on seeing the scroll grown until its ring left the sector): "I don't want to
+// crop the Torah scroll with the focus ring … I want the Torah scroll to stop
+// enlarging before it's too big to fit within the details sector. This may
+// require some cheating to make the olive wreath go away under the focus
+// ring." One zoom cannot do both, so the ring is a second image on the
+// emblem's box: one picture in the corner, two speeds on the way in.
+describe('an emblem and its surround part company as the sector opens (O-268)', () => {
+  const el = () => {
+    const a = {}; const o = { style: {}, attrs: a, setAttribute: (k, v) => { a[k] = v; }, setAttributeNS: (_n, k, v) => { a[k] = v; }, removeAttribute: k => { delete a[k]; } };
+    return o;
+  };
+  const badge = async config => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 720, height: 1600 });
+    logo._renderConfig = config;
+    return logo;
+  };
+  const config = {
+    logo_base_path: 'assets/', emblem_scale: { crown_of_thorns: 1.8, torah_scroll: 1.8 },
+    watermark_scale: { torah_scroll: 1.7 }, emblem_surround: { torah_scroll: 'torah_wreath' }, surround_watermark_scale: { torah_scroll: 2.4 }
+  };
+  const arc = { hubX: 1700, hubY: 0, radius: 1680 }, angle = 2.48;
+  it('ONE PICTURE IN THE CORNER: the surround lies exactly on the emblem\'s box', async () => {
+    const s = (await badge({ default_image: 'torah_scroll', ...config }))._getStartState();
+    for (const k of ['X', 'Y', 'Width', 'Height']) assert.equal(s[`surround${k}`], s[`logo${k}`], k);
+  });
+  it('TWO SIZES BEHIND THE TEXT, about one centre: the emblem stops, the surround goes on', async () => {
+    const e = (await badge({ default_image: 'torah_scroll', ...config }))._getEndState(arc, angle);
+    assert.ok(Math.abs(e.logoWidth - arc.radius * 1.7) < 1e-9, 'the emblem stops where it still fits');
+    assert.ok(Math.abs(e.surroundWidth - arc.radius * 2.4) < 1e-9, 'the surround grows past the sector');
+    assert.ok(Math.abs(e.surroundX + e.surroundWidth / 2 - e.logoCenterX) < 1e-9);
+    assert.ok(Math.abs(e.surroundY + e.surroundHeight / 2 - e.logoCenterY) < 1e-9);
+  });
+  it('an emblem with no surround is one picture at one size, as it always was', async () => {
+    const logo = await badge({ default_image: 'crown_of_thorns', ...config });
+    assert.equal(logo._surroundName(), null);
+    const e = logo._getEndState(arc, angle);
+    assert.equal(e.surroundWidth, e.logoWidth);
+    assert.ok(Math.abs(e.logoWidth - arc.radius * 0.9) < 1e-9);
+  });
+  it('a surround with no size of its own grows with its emblem', async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config, surround_watermark_scale: {} });
+    const e = logo._getEndState(arc, angle);
+    assert.equal(e.surroundWidth, e.logoWidth);
+  });
+  it('THE FLIGHT CARRIES BOTH, and home again they are one picture', async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config });
+    logo.circle = el(); logo.logo = el(); logo.surround = el();
+    const out = logo.beginExpand(arc, angle);
+    out.frameAt(0.5);
+    assert.match(logo.surround.style.transform, /scale\(/, 'the surround is in flight, as a transform');
+    assert.notEqual(logo.surround.style.transform, logo.logo.style.transform, 'and already ahead of the emblem');
+    out.finish();
+    assert.ok(Math.abs(logo.logo.attrs.width - arc.radius * 1.7) < 1e-9);
+    assert.ok(Math.abs(logo.surround.attrs.width - arc.radius * 2.4) < 1e-9);
+    assert.equal(logo.surround.attrs.transform, logo.logo.attrs.transform, 'tilted together about the one centre');
+    const home = logo.beginCollapse(arc, angle);
+    home.finish();
+    for (const k of ['x', 'y', 'width', 'height']) assert.ok(Math.abs(logo.surround.attrs[k] - logo.logo.attrs[k]) < 1e-9, k);
+    assert.equal(logo.surround.attrs.transform, undefined);
+  });
+  it('THE SWAP TAKES THE SURROUND WITH IT: an emblem that has none hides it, one that has one names its file', async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config });
+    logo.circle = el(); logo.logo = el(); logo.surround = el();
+    assert.equal(logo.setImage('crown_of_thorns'), true);
+    assert.equal(logo.surround.style.display, 'none');
+    assert.equal(logo.setImage('torah_scroll'), true);
+    assert.equal(logo.surround.style.display, '');
+    assert.equal(logo.surround.attrs.href, 'assets/torah_wreath.png');
+    assert.equal(logo.setImage(''), true);
+    assert.equal(logo.surround.style.display, 'none', 'and no emblem means no surround');
+  });
+});
+
 // THE FENCE STANDS WHILE THE BADGE FLIES HOME (O-189, Howell's phone
 // 2026-10-01: a verse's star seated on top of the crown). The sky asks the
 // badge for the box to keep clear of; it used to be told nothing while the
