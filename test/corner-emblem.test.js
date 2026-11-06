@@ -544,6 +544,45 @@ describe('an emblem and its surround part company as the sector opens (O-268)', 
     for (const k of ['x', 'y', 'width', 'height']) assert.ok(Math.abs(logo.surround.attrs[k] - logo.logo.attrs[k]) < 1e-9, k);
     assert.equal(logo.surround.attrs.transform, undefined);
   });
+  // O-269 (Howell 2026-11-06, with the flight caught half way: the wreath
+  // "gets kind of noisy. Perhaps it would be better if the wreath just faded
+  // away").
+  it('THE SURROUND MAY FADE AWAY, and does it early: gone within a quarter of the way out, back in the last quarter home', async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config, surround_watermark_opacity: { torah_scroll: 0 } });
+    const shut = logo._getStartState(), open = logo._getEndState(arc, angle);
+    assert.equal(shut.surroundOpacity, 0.5, 'whole in the corner');
+    assert.equal(open.surroundOpacity, 0, 'gone behind the text');
+    assert.equal(logo._surroundOpacityAt(shut, open, 0), 0.5);
+    assert.ok(logo._surroundOpacityAt(shut, open, 0.1) < 0.5 && logo._surroundOpacityAt(shut, open, 0.1) > 0);
+    assert.equal(logo._surroundOpacityAt(shut, open, 0.25), 0, 'gone while it is still small and close');
+    assert.equal(logo._surroundOpacityAt(shut, open, 0.6), 0);
+    assert.equal(logo._surroundOpacityAt(open, shut, 0.5), 0, 'and not back until the badge is nearly home');
+    assert.equal(logo._surroundOpacityAt(open, shut, 0.75), 0);
+    assert.ok(logo._surroundOpacityAt(open, shut, 0.9) > 0);
+    assert.equal(logo._surroundOpacityAt(open, shut, 1), 0.5);
+    logo.circle = el(); logo.logo = el(); logo.surround = el();
+    const out = logo.beginExpand(arc, angle);
+    out.frameAt(0.8);
+    assert.equal(logo.surround.style.opacity, '0');
+    assert.notEqual(logo.logo.style.opacity, '0', 'the emblem itself is still on its way to a watermark');
+    out.finish();
+    assert.equal(logo.surround.attrs.opacity, 0);
+    assert.ok(Math.abs(logo.logo.attrs.opacity - 0.1) < 1e-9);
+  });
+  it('an undeclared or nonsense fade leaves the surround a watermark like its emblem', async () => {
+    for (const bad of [undefined, null, '', 'faint', -1, 2]) {
+      const logo = await badge({ default_image: 'torah_scroll', ...config, surround_watermark_opacity: { torah_scroll: bad } });
+      assert.equal(logo._getEndState(arc, angle).surroundOpacity, 0.10);
+    }
+  });
+  it('a swap INTO an emblem with a faded surround, in an open sector, does not show it', async () => {
+    const logo = await badge({ default_image: 'crown_of_thorns', ...config, surround_watermark_opacity: { torah_scroll: 0 } });
+    logo.circle = el(); logo.logo = el(); logo.surround = el();
+    logo._expanded = true; logo._animating = false; logo._openAt = { arcParams: arc, magnifierAngle: angle };
+    assert.equal(logo.setImage('torah_scroll'), true);
+    assert.equal(logo.surround.attrs.opacity, 0);
+    assert.ok(Math.abs(logo.logo.attrs.opacity - 0.1) < 1e-9);
+  });
   it('THE SWAP TAKES THE SURROUND WITH IT: an emblem that has none hides it, one that has one names its file', async () => {
     const logo = await badge({ default_image: 'torah_scroll', ...config });
     logo.circle = el(); logo.logo = el(); logo.surround = el();

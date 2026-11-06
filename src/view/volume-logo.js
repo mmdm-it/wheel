@@ -63,6 +63,10 @@ const FEATHER_CURVE = [[0, 1], [0.15, 0.94], [0.3, 0.8], [0.5, 0.5], [0.7, 0.2],
 const FEATHER_WINDOW = 0.25;
 const FEATHER_ID = 'volume-logo-feather';
 const SECTOR_CLIP_ID = 'volume-logo-sector';
+// A surround's opacity moves only in the part of a flight nearest the corner
+// (O-269): gone early in an expand, back late in a collapse, while it is
+// still close around its emblem.
+const SURROUND_WINDOW = 0.25;
 const LOGO_EXPANDED_SCALE = 0.9;
 
 // Inherited from the v0 artwork, and no image we ship has this aspect —
@@ -198,6 +202,7 @@ export class VolumeLogo {
         el.setAttribute('y', s[`${k}Y`]);
         el.setAttribute('width', s[`${k}Width`]);
         el.setAttribute('height', s[`${k}Height`]);
+        el.setAttribute('opacity', k === 'surround' ? s.surroundOpacity : s.logoOpacity);
       }
       if (this.circle && typeof this.circle.setAttribute === 'function') {
         this.circle.setAttribute('cx', s.circleCx);
@@ -220,6 +225,7 @@ export class VolumeLogo {
         el.setAttribute('y', e[`${k}Y`]);
         el.setAttribute('width', e[`${k}Width`]);
         el.setAttribute('height', e[`${k}Height`]);
+        el.setAttribute('opacity', k === 'surround' ? e.surroundOpacity : e.logoOpacity);
         el.setAttribute('transform', `rotate(${e.logoRotation}, ${e.logoCenterX}, ${e.logoCenterY})`);
       }
     } else if (this._animating && this._flight) {
@@ -448,6 +454,33 @@ export class VolumeLogo {
     return Number.isFinite(declared) && declared > 0 ? declared : this._expandedScale();
   }
 
+  // HOW MUCH OF THE SURROUND IS LEFT BEHIND THE TEXT (O-269, Howell 2026-11-06,
+  // with a screenshot of the flight half way: as the wreath enlarges faster
+  // than the disc "it gets kind of noisy. Perhaps it would be better if the
+  // wreath just faded away"). The volume may declare the surround's opacity in
+  // the open sector (surround_watermark_opacity), 0 for gone; undeclared it is
+  // the watermark's. Whatever it is, it is reached within SURROUND_WINDOW of
+  // leaving the corner, not across the whole flight: a surround that is going
+  // goes while it is still small and close, rather than swelling across the
+  // ground first.
+  _surroundExpandedOpacity() {
+    const name = this._renderConfig?.default_image;
+    const raw = this._renderConfig?.surround_watermark_opacity?.[name];
+    const declared = Number(raw);
+    return raw !== null && raw !== undefined && raw !== '' && Number.isFinite(declared) && declared >= 0 && declared <= 1 ? declared : 0.10;
+  }
+
+  _surroundOpacityAt(from, to, t) {
+    const a = from.surroundOpacity ?? from.logoOpacity, b = to.surroundOpacity ?? to.logoOpacity;
+    const opening = to.circleR > from.circleR;
+    const u = opening ? Math.min(1, t / SURROUND_WINDOW) : Math.max(0, (t - (1 - SURROUND_WINDOW)) / SURROUND_WINDOW);
+    return a + (b - a) * u;
+  }
+
+  _layerOpacityAt(prefix, from, to, t) {
+    return prefix === 'surround' ? this._surroundOpacityAt(from, to, t) : from.logoOpacity + (to.logoOpacity - from.logoOpacity) * t;
+  }
+
   _hrefSurround() {
     if (!this.surround) return;
     const name = this._surroundName(), base = this._renderConfig?.logo_base_path;
@@ -599,6 +632,7 @@ export class VolumeLogo {
       surroundY: cy - logoHeight / 2,
       surroundWidth: logoWidth,
       surroundHeight: logoHeight,
+      surroundOpacity: 0.5,
       logoOpacity: 0.5,
       logoRotation: 0
     };
@@ -645,6 +679,7 @@ export class VolumeLogo {
       surroundY: logoCenterY - surroundHeight / 2,
       surroundWidth,
       surroundHeight,
+      surroundOpacity: this._surroundExpandedOpacity(),
       logoOpacity: 0.10,    // watermark
       logoRotation: rotationDeg,
       logoCenterX,
@@ -833,7 +868,7 @@ export class VolumeLogo {
       const w = lerp(from[`${k}Width`], to[`${k}Width`]);
       const h = lerp(from[`${k}Height`], to[`${k}Height`]);
       const rot = lerp(from.logoRotation, to.logoRotation);
-      const opacity = lerp(from.logoOpacity, to.logoOpacity);
+      const opacity = this._layerOpacityAt(k, from, to, t);
       el.setAttribute('x', x);
       el.setAttribute('y', y);
       el.setAttribute('width', w);
@@ -873,7 +908,7 @@ export class VolumeLogo {
       const cx = x + w / 2, cy = y + h / 2;
       if (el.style) {
         el.style.transform = `translate(${cx}px, ${cy}px) rotate(${rot}deg) translate(${-cx}px, ${-cy}px) translate(${x - kx * fx}px, ${y - ky * fy}px) scale(${kx}, ${ky})`;
-        el.style.opacity = String(lerp(from.logoOpacity, to.logoOpacity));
+        el.style.opacity = String(this._layerOpacityAt(p, from, to, t));
       }
     }
     this._frameBase = from;
