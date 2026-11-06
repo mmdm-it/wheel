@@ -420,6 +420,68 @@ describe("each emblem's disc with its own edge (O-266)", () => {
   });
 });
 
+// EACH EMBLEM AT ITS OWN SIZE BEHIND THE TEXT (O-267, Howell 2026-11-06): the
+// open sector's watermark is the same picture grown, and how far it grows is
+// the emblem's own — far enough, for one drawn inside a ring, that the ring
+// leaves the sector and the centrepiece is left alone. Same centre, same tilt.
+describe("each emblem at its own size as the leaf's watermark (O-267)", () => {
+  const badge = async config => {
+    const { VolumeLogo } = await import('../src/view/volume-logo.js');
+    const logo = new VolumeLogo(null, { width: 720, height: 1600 });
+    logo._renderConfig = config;
+    return logo;
+  };
+  const config = { logo_base_path: 'assets/', emblem_scale: { crown_of_thorns: 1.8, torah_scroll: 1.8 }, watermark_scale: { torah_scroll: 2.25 } };
+  const arc = { hubX: 1700, hubY: 0, radius: 1680 }, angle = 2.48;
+  it('an emblem that declares none grows to the base; one that declares grows to its own', async () => {
+    const crown = (await badge({ default_image: 'crown_of_thorns', ...config }))._getEndState(arc, angle);
+    const scroll = (await badge({ default_image: 'torah_scroll', ...config }))._getEndState(arc, angle);
+    assert.ok(Math.abs(crown.logoWidth - arc.radius * 0.9) < 1e-9, 'the crown of thorns is untouched');
+    assert.ok(Math.abs(scroll.logoWidth - arc.radius * 2.25) < 1e-9);
+  });
+  it('SAME CENTRE, SAME TILT, SAME DISC: only the size differs', async () => {
+    const crown = (await badge({ default_image: 'crown_of_thorns', ...config }))._getEndState(arc, angle);
+    const scroll = (await badge({ default_image: 'torah_scroll', ...config }))._getEndState(arc, angle);
+    for (const k of ['logoCenterX', 'logoCenterY', 'logoRotation', 'circleCx', 'circleCy', 'circleR', 'logoOpacity']) assert.equal(scroll[k], crown[k], k);
+    assert.ok(Math.abs(scroll.logoX + scroll.logoWidth / 2 - scroll.logoCenterX) < 1e-9, 'centred where it always was');
+  });
+  it('A SWAP IN AN OPEN SECTOR RE-BOXES THE WATERMARK, so the new emblem is not left at the old one\'s zoom', async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config });
+    const img = {};
+    logo.circle = { setAttribute() {} };
+    logo.logo = { style: {}, setAttribute: (k, v) => { img[k] = v; }, setAttributeNS: (_n, k, v) => { img[k] = v; } };
+    logo._expanded = true; logo._animating = false; logo._openAt = { arcParams: arc, magnifierAngle: angle };
+    assert.equal(logo.setImage('crown_of_thorns'), true);
+    assert.ok(Math.abs(img.width - arc.radius * 0.9) < 1e-9, 'the thorns at the thorns\' size');
+    assert.equal(logo.setImage('torah_scroll'), true);
+    assert.ok(Math.abs(img.width - arc.radius * 2.25) < 1e-9, 'and the scroll back at its own');
+    assert.match(String(img.transform), /^rotate\(/, 'still tilted with the ring');
+  });
+  it('A SWAP DURING THE OPENING FLIGHT RE-AIMS IT: the boot opens on the default emblem and learns the division a moment later', async () => {
+    const logo = await badge({ default_image: 'torah_scroll', ...config });
+    const img = {}, disc = {};
+    logo.circle = { style: {}, setAttribute: (k, v) => { disc[k] = v; } };
+    logo.logo = { style: {}, setAttribute: (k, v) => { img[k] = v; }, setAttributeNS: (_n, k, v) => { img[k] = v; }, removeAttribute: k => { delete img[k]; } };
+    const flight = logo.beginExpand(arc, angle);
+    flight.frameAt(0.3);
+    assert.equal(logo.setImage('crown_of_thorns'), true);
+    flight.frameAt(0.6);
+    flight.finish();
+    assert.ok(Math.abs(img.width - arc.radius * 0.9) < 1e-9, 'it lands at the thorns\' size, not the scroll\'s');
+    const back = logo.beginCollapse(arc, angle);
+    back.frameAt(0.5);
+    logo.setImage('torah_scroll');
+    back.finish();
+    assert.ok(Math.abs(img.width - logo._getStartState().logoWidth) < 1e-9, 'and a flight home lands on the new emblem\'s badge');
+  });
+  it('a nonsense declaration is the base size', async () => {
+    for (const bad of [0, -2, 'huge', null]) {
+      const logo = await badge({ default_image: 'torah_scroll', ...config, watermark_scale: { torah_scroll: bad } });
+      assert.ok(Math.abs(logo._getEndState(arc, angle).logoWidth - arc.radius * 0.9) < 1e-9);
+    }
+  });
+});
+
 // THE FENCE STANDS WHILE THE BADGE FLIES HOME (O-189, Howell's phone
 // 2026-10-01: a verse's star seated on top of the crown). The sky asks the
 // badge for the box to keep clear of; it used to be told nothing while the

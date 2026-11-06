@@ -62,6 +62,7 @@ const FEATHER_CURVE = [[0, 1], [0.15, 0.94], [0.3, 0.8], [0.5, 0.5], [0.7, 0.2],
 // transforms).
 const FEATHER_WINDOW = 0.25;
 const FEATHER_ID = 'volume-logo-feather';
+const SECTOR_CLIP_ID = 'volume-logo-sector';
 const LOGO_EXPANDED_SCALE = 0.9;
 
 // Inherited from the v0 artwork, and no image we ship has this aspect —
@@ -204,6 +205,27 @@ export class VolumeLogo {
         this.clickTarget.setAttribute('cx', s.circleCx);
         this.clickTarget.setAttribute('cy', s.circleCy);
       }
+    } else if (this._expanded && !this._animating && this._openAt && typeof this.logo.setAttribute === 'function') {
+      // AN OPEN SECTOR IS RE-BOXED TOO (O-267): the watermark's size is the
+      // emblem's own now, so the crossing H-31 was written for — at a leaf,
+      // the edition changing under the reader — would otherwise leave the new
+      // emblem at the old one's zoom until the sector next closed.
+      const e = this._getEndState(this._openAt.arcParams, this._openAt.magnifierAngle);
+      this.logo.setAttribute('x', e.logoX);
+      this.logo.setAttribute('y', e.logoY);
+      this.logo.setAttribute('width', e.logoWidth);
+      this.logo.setAttribute('height', e.logoHeight);
+      this.logo.setAttribute('transform', `rotate(${e.logoRotation}, ${e.logoCenterX}, ${e.logoCenterY})`);
+    } else if (this._animating && this._flight) {
+      // AND A FLIGHT UNDER WAY IS RE-AIMED (O-267). A boot at a leaf opens
+      // the sector on the volume's default emblem and learns the reader's
+      // division a moment later; the flight's two ends were reckoned for the
+      // first emblem, and with a size per emblem it would land the second at
+      // the first one's zoom. The ends are rewritten in place, so the journey
+      // already playing carries on toward the right ones.
+      Object.assign(this._flight.shut, this._getStartState());
+      if (this._openAt) Object.assign(this._flight.open, this._getEndState(this._openAt.arcParams, this._openAt.magnifierAngle));
+      this._frameBase = null;
     }
     return true;
   }
@@ -296,7 +318,18 @@ export class VolumeLogo {
       this.logo.setAttribute('height', logoHeight);
       this.logo.setAttribute('opacity', '0.5'); // START state: 50% opacity (matches v0)
       this.logo.style.pointerEvents = 'none';
-      this.group.appendChild(this.logo);
+      // THE WATERMARK IS DRAWN ONLY INSIDE THE SECTOR (O-267). The emblem sits
+      // in a wrapper of its own so a clip can be put on the WRAPPER: the image
+      // carries a rotation, and a clip on the image itself would turn with it.
+      this.logoClip = document.createElementNS(SVG_NS, 'g');
+      const clipDefs = document.createElementNS(SVG_NS, 'defs');
+      const clip = document.createElementNS(SVG_NS, 'clipPath');
+      clip.setAttribute('id', SECTOR_CLIP_ID);
+      this._sectorClipCircle = clip.appendChild(document.createElementNS(SVG_NS, 'circle'));
+      clipDefs.appendChild(clip);
+      this.group.appendChild(clipDefs);
+      this.logoClip.appendChild(this.logo);
+      this.group.appendChild(this.logoClip);
     }
     
     // Insert at beginning so it renders behind everything
@@ -360,6 +393,23 @@ export class VolumeLogo {
     return Number.isFinite(declared) && declared > 0 ? declared : 1;
   }
 
+  // AND ITS OWN SIZE AS THE LEAF'S WATERMARK (O-267, Howell 2026-11-06, with
+  // two open sectors side by side: the open sector of one emblem is to differ
+  // from the other's "simply in terms of the amount of zoom … enlarge faster
+  // and further so that the olive branch ring … disappears under the focus
+  // ring, and … we are left with just the tilted Torah scroll alone"). An
+  // emblem drawn as a centrepiece inside a ring is two pictures: all of it in
+  // the corner, the centrepiece alone behind the text. Which one the open
+  // sector shows is only a matter of how far it grows, so the volume declares
+  // that per emblem (display_config.detail_sector.watermark_scale, a fraction
+  // of the focus ring's radius), else the base. Same centre, same tilt, same
+  // clock: a larger end is a faster flight.
+  _expandedScale() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.watermark_scale?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : LOGO_EXPANDED_SCALE;
+  }
+
   // AND ITS OWN EDGE (O-266, Howell 2026-11-06: "the hard edge of the blue
   // circle just feels lazy to me. I would try doing a blurred edge... I want
   // the blur to begin where the current hard edge is. In other words, I want
@@ -414,6 +464,27 @@ export class VolumeLogo {
       FEATHER_CURVE.forEach(([u], i) => this._gradientStops[i + 1].setAttribute('offset', solid + (1 - solid) * u));
     }
     this._paintDisc();
+  }
+
+  // THE OPEN SECTOR'S OUTLINE CLIPS THE EMBLEM, from the moment it begins to
+  // open until it is shut again (O-267). An emblem that grows past the base
+  // size reaches beyond the focus ring, and what lies beyond it is the bare
+  // ground: the first build of the per-emblem size left its ring showing on
+  // the far side of the band, behind the parent's name. Clipped for the whole
+  // flight rather than at its end, so nothing appears or vanishes on landing
+  // — but only where the corner badge already lies inside the open sector,
+  // or the clip would bite the badge itself at the first frame.
+  _setSectorClip(open) {
+    if (!this.logoClip || !this._sectorClipCircle) return;
+    if (!open) { this.logoClip.removeAttribute('clip-path'); return; }
+    const shut = this._getStartState();
+    const far = Math.max(...[[0, 0], [1, 0], [0, 1], [1, 1]].map(([i, j]) =>
+      Math.hypot(shut.logoX + i * shut.logoWidth - open.circleCx, shut.logoY + j * shut.logoHeight - open.circleCy)));
+    if (far > open.circleR) { this.logoClip.removeAttribute('clip-path'); return; }
+    this._sectorClipCircle.setAttribute('cx', open.circleCx);
+    this._sectorClipCircle.setAttribute('cy', open.circleCy);
+    this._sectorClipCircle.setAttribute('r', open.circleR);
+    this.logoClip.setAttribute('clip-path', `url(#${SECTOR_CLIP_ID})`);
   }
 
   // Where the edge is, between two states: soft only at the collapsed end.
@@ -487,7 +558,7 @@ export class VolumeLogo {
     // v0 positions logo relative to screen center (0,0 in center-origin SVG),
     // NOT relative to the hub (which is far off-screen right).
     // In v3's top-left origin, screen center is (width/2, height/2).
-    const logoWidth = frRadius * LOGO_EXPANDED_SCALE;
+    const logoWidth = frRadius * this._expandedScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
     const logoCenterRadius = frRadius * -0.35;
     const screenCenterX = this.viewport.width / 2;
@@ -558,8 +629,11 @@ export class VolumeLogo {
     this._animating = true;
     this._collapsing = false;
     if (this.clickTarget) this.clickTarget.parentNode.setAttribute('display', 'none');
+    this._openAt = { arcParams, magnifierAngle };
     const start = this._getStartState();
     const end = this._getEndState(arcParams, magnifierAngle);
+    this._flight = { shut: start, open: end };
+    this._setSectorClip(end);
     this._paintDisc();
     return this._journey(start, end, {
       finish: () => {
@@ -570,6 +644,7 @@ export class VolumeLogo {
       },
       revert: () => {
         this._applyFrame(start, end, 0);
+        this._setSectorClip(null);
         this._animating = false;
         this._collapsing = false;
         this._expanded = false;
@@ -583,8 +658,11 @@ export class VolumeLogo {
     if (this._animationId) { cancelAnimationFrame(this._animationId); this._animationId = null; }
     this._animating = true;
     this._collapsing = true;
+    if (arcParams) this._openAt = { arcParams, magnifierAngle };
     const start = this._getEndState(arcParams, magnifierAngle); // current = expanded
     const end = this._getStartState();                           // target = collapsed
+    this._flight = { shut: end, open: start };
+    this._setSectorClip(start);
     // The emblem shrinks from the watermark it IS (0.10) up to the badge's
     // opacity. A v0-parity line here set the start to 1.0 — the scroll went
     // solid the instant a collapse began — unseen at 600 ms, glaring once
@@ -593,6 +671,7 @@ export class VolumeLogo {
       finish: () => {
         this._applyFrame(start, end, 1);
         this._paintDisc();
+        this._setSectorClip(null);
         if (this.logo) this.logo.removeAttribute('transform');
         this._animating = false;
         this._collapsing = false;
@@ -742,6 +821,8 @@ export class VolumeLogo {
       this.logo = null;
       this._gradientStops = null;
       this._featherNow = null;
+      this.logoClip = null;
+      this._sectorClipCircle = null;
     }
     if (this.clickTarget) {
       this.clickTarget.parentNode.remove();
