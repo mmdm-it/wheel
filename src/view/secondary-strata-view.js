@@ -167,7 +167,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     // every pose, since the chain turns with the seats. A tongue with one
     // edition is one bead on bare sprocket, which is the fact.
     const bandWidth = layout.arc.radius * BAND_THICKNESS_RATIO;
-    const ink = Math.max(1, layout.arc.radius * 0.002);
+    const ink = 1; // one pixel, as on the primary (Howell 2026-11-07)
     const hollow = svgEl('path', {
       d: bandEdges(bandPts, bandWidth / 2 - ink / 2 - 0.3).map(pointsToPath).join(' '),
       class: 'secondary-strata-band-hollow',
