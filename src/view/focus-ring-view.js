@@ -116,7 +116,8 @@ export class FocusRingView {
     this.contentGroup.setAttribute('class', 'focus-content-group');
     this.svgRoot.appendChild(this.contentGroup);
     // THE CHAIN HAS ENDS (O-271): the sprocket's path beyond the chain's
-    // first and last link is drawn hollow — its two edges only — under the
+    // first and last link (ending under their centres) is drawn hollow — its
+    // two edges only — under the
     // solid band, which is cut to where the chain is. Hidden while both
     // ends are off the glass, which is nearly always.
     this.bandHollow = document.createElementNS('http://www.w3.org/2000/svg', 'path');

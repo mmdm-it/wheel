@@ -263,8 +263,8 @@ export function standardBandCenterline(viewport, { reach = STRATA_REACH } = {}) 
 
 // THE CHAIN HAS ENDS (O-271, Howell 2026-11-06): "the focus ring is not a
 // wheel, but rather a sprocket with a chain that has ends." The band is the
-// chain, and a chain is drawn only where it is: from half a link before the
-// first link to half a link past the last. Beyond those the sprocket runs on
+// chain, and a chain is drawn only where it is: up to the centre of the
+// first link and of the last, never past them. Beyond those the sprocket runs on
 // empty, and the band goes HOLLOW there — the outline alone, as an empty
 // vessel is drawn — so the reader turning up from the first leaf sees the
 // chain's end slide past the lens, not a band promising more. The span is

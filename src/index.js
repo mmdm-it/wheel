@@ -470,12 +470,14 @@ export function createApp({
     return {
       minRotation: magnifier.angle - overrun - firstAngle,
       maxRotation: magnifier.angle + overrun - lastAngle,
-      // The chain's two ends as base angles (O-271): the band is solid from
-      // half a link before the first link to half a link past the last, and
-      // hollow beyond. Display angle = base + rotation; the first link sits
-      // at the HIGHER angle (orders run down the arc).
-      chainUpper: firstAngle + nodeSpacing / 2,
-      chainLower: lastAngle - nodeSpacing / 2
+      // The chain's two ends as base angles (O-271): the band is solid up
+      // to the CENTRE of the first link and of the last, and hollow beyond —
+      // Howell 2026-11-06: "the focus ring fill should not extend at all
+      // past the first or last node. It should end underneath the center".
+      // Display angle = base + rotation; the first link sits at the HIGHER
+      // angle (orders run down the arc).
+      chainUpper: firstAngle,
+      chainLower: lastAngle
     };
   };
 

@@ -1,7 +1,7 @@
 // THE CHAIN HAS ENDS (O-271, Howell 2026-11-06): "the focus ring is not a
 // wheel, but rather a sprocket with a chain that has ends." The band is solid
-// only where the chain is — half a link before the first link to half a link
-// past the last — and hollow beyond, at every level, in display angles that
+// only where the chain is — up to the centre of the first link and of the
+// last, never past them (Howell's note the same evening) — and hollow beyond, at every level, in display angles that
 // turn with the links.
 import { describe, it } from 'node:test';
 import assert from 'node:assert';
@@ -62,9 +62,9 @@ describe('the band is drawn only where the chain is (O-271)', () => {
 describe('the ring carries its chain span to the view (O-271)', () => {
   const index = fs.readFileSync(new URL('../src/index.js', import.meta.url), 'utf8');
   const view = fs.readFileSync(new URL('../src/view/focus-ring-view.js', import.meta.url), 'utf8');
-  it('the bounds name the chain\'s ends half a link beyond the end links', () => {
-    assert.match(index, /chainUpper: firstAngle \+ nodeSpacing \/ 2/);
-    assert.match(index, /chainLower: lastAngle - nodeSpacing \/ 2/);
+  it('the bounds name the chain\'s ends at the centres of the end links, not past them', () => {
+    assert.match(index, /chainUpper: firstAngle,/);
+    assert.match(index, /chainLower: lastAngle$/m);
   });
   it('the span sent to the view is in display angles (base + rotation)', () => {
     assert.match(index, /chainSpan: .*lower: bounds\.chainLower \+ rotation, upper: bounds\.chainUpper \+ rotation/);
