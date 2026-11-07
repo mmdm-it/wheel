@@ -5,7 +5,7 @@
 // applied to the group by the stack (main.js). Rotation comes next.
 
 import { computeStrataLayout } from '../geometry/secondary-strata-geometry.js';
-import { standardBandCenterline, pointsToPath, getNodeSpacing } from '../geometry/focus-ring-geometry.js';
+import { standardBandCenterline, pointsToPath, getNodeSpacing, chainSpanPoints, bandEdges, bandBounds, STRATA_REACH } from '../geometry/focus-ring-geometry.js';
 
 const NS = 'http://www.w3.org/2000/svg';
 const NODE_RADIUS_RATIO = 0.035;      // matches the primary (index.js)
@@ -159,11 +159,30 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     // 2026-07-21). This matches the mirrored nodes from computeStrataLayout.
     let bandPts = standardBandCenterline(viewport);
     if (mirrored) bandPts = bandPts.map(([x, y]) => [x, viewport.height - y]);
-    g.appendChild(svgEl('path', {
+    // THE CHAIN HAS ENDS HERE TOO (O-272, Howell 2026-11-07, after O-271 on
+    // the primary: "do we apply it to the secondary and tertiary strata? …
+    // I agree. Proceed."): the bare sprocket — the band's two edges, inked
+    // like an empty vessel and lying wholly inside the band's width — is
+    // drawn once under the band; the band itself is cut to the chain at
+    // every pose, since the chain turns with the seats. A tongue with one
+    // edition is one bead on bare sprocket, which is the fact.
+    const bandWidth = layout.arc.radius * BAND_THICKNESS_RATIO;
+    const ink = Math.max(1, layout.arc.radius * 0.002);
+    const hollow = svgEl('path', {
+      d: bandEdges(bandPts, bandWidth / 2 - ink / 2 - 0.3).map(pointsToPath).join(' '),
+      class: 'secondary-strata-band-hollow',
+      'stroke-width': ink.toFixed(2)
+    });
+    g.appendChild(hollow);
+    const band = svgEl('path', {
       d: pointsToPath(bandPts),
       class: 'secondary-strata-band',
-      'stroke-width': (layout.arc.radius * BAND_THICKNESS_RATIO).toFixed(1)
-    }));
+      'stroke-width': bandWidth.toFixed(1)
+    });
+    g.appendChild(band);
+    outer.__band = band;
+    outer.__bandHollow = hollow;
+    outer.__bandWhole = pointsToPath(bandPts);
 
     // One circle and one label per seat, in seat order, made once. The
     // label's TEXT is the seat's own and never changes with the pose; where
@@ -201,13 +220,30 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     outer.dataset.signature = membership;
   }
 
+  // THE POSE, first the chain itself (O-272): solid from the centre of the
+  // first seat to the centre of the last, in this pose's angles; hollow
+  // beyond. A chain that reaches past both exits is the whole band, drawn
+  // as before; an empty ring (the basement before its first bookmark) is
+  // all bare sprocket.
+  const show = (el, on) => { if (on) el.removeAttribute('display'); else el.setAttribute('display', 'none'); };
+  if (outer.__band) {
+    const n = items.length;
+    const span = n
+      ? chainSpanPoints(layout.arc, layout.startAngle, layout.endAngle,
+          layout.magA - (n - 1 - selectedIndex) * layout.spacing,
+          layout.magA + selectedIndex * layout.spacing,
+          bandBounds(viewport.width, viewport.height, STRATA_REACH))
+      : { whole: false, points: [] };
+    outer.__band.setAttribute('d', span.whole ? outer.__bandWhole : pointsToPath(span.points));
+    show(outer.__bandHollow, !span.whole);
+  }
+
   // THE POSE: every seat to its place for this centre. While turning, EVERY
   // node is drawn (they stream through the empty lens, as on the primary);
   // settled, the node in the lens (magIndex) is hidden and the filled
   // lodestar shows it instead, so nothing floats where the lens is anchored.
   const sigma = getNodeSpacing(viewport) * LENS_SCALE_SIGMA;
   const magAngle = layout.magnifier?.angle ?? null;
-  const show = (el, on) => { if (on) el.removeAttribute('display'); else el.setAttribute('display', 'none'); };
   const posed = new Set();
   layout.nodes.forEach(node => {
     const seat = seats[node.index];

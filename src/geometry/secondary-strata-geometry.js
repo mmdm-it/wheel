@@ -56,5 +56,5 @@ export function computeStrataLayout(viewport, itemCount, centerIndex = 0, mirror
   }
   const magP = chainPointAt(arc, startAngle, endAngle, magA);
   const magnifier = { x: magP.x, y: magP.y, angle: magP.tangentAngle };
-  return { arc, spacing, magA, magnifier, nodes, magIndex };
+  return { arc, spacing, magA, magnifier, nodes, magIndex, startAngle, endAngle };
 }

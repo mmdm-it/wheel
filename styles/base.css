@@ -752,6 +752,12 @@ svg :focus-visible {
 }
 .secondary-strata-label.is-landmark, .secondary-strata-legend.is-landmark { fill: #7f1d1d; }
 .secondary-strata-label.is-bookmark, .secondary-strata-legend.is-bookmark { fill: #16337a; }
+/* THE BARE SPROCKET on a chooser ring (O-272): beyond the chain's first and
+   last seat the band is its two edges only, inked like the empty vessel. */
+.secondary-strata-band-hollow {
+  fill: none;
+  stroke: var(--color-magnifier-stroke, #000);
+}
 .secondary-strata-band {
   fill: none;
   stroke: var(--color-band);
