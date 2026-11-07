@@ -46,6 +46,18 @@ function pointSegDist(px, py, x1, y1, x2, y2) {
   return Math.hypot(px - (x1 + t * dx), py - (y1 + t * dy));
 }
 
+// Distance between segments a and b (0 where they cross).
+function segSegDist(a, b) {
+  const cross = (p, q, r) => (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]);
+  const A1 = [a.x1, a.y1], A2 = [a.x2, a.y2], B1 = [b.x1, b.y1], B2 = [b.x2, b.y2];
+  const d1 = cross(A1, A2, B1), d2 = cross(A1, A2, B2), d3 = cross(B1, B2, A1), d4 = cross(B1, B2, A2);
+  if (((d1 > 0) !== (d2 > 0)) && ((d3 > 0) !== (d4 > 0))) return 0;
+  return Math.min(
+    pointSegDist(a.x1, a.y1, b.x1, b.y1, b.x2, b.y2), pointSegDist(a.x2, a.y2, b.x1, b.y1, b.x2, b.y2),
+    pointSegDist(b.x1, b.y1, a.x1, a.y1, a.x2, a.y2), pointSegDist(b.x2, b.y2, a.x1, a.y1, a.x2, a.y2)
+  );
+}
+
 const NODE_RADIUS_RATIO = 0.04;   // matches the render's pyramid node size
 const FILL_FRACTION = 0.55;       // how much of the usable area the field aims to cover
 const MIN_SPACING_RADII = 2.3;    // min center-to-center distance, in node radii
@@ -86,7 +98,8 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   const cacheKey = [
     width, height, SSd, magnifierX, magnifierY,
     arcParams?.hubX, arcParams?.hubY, arcParams?.radius,
-    childCount, parentSortNumber, hasDimButton, scaleMul,
+    childCount, parentSortNumber, hasDimButton, scaleMul, options.honest === true,
+    options.downward ? JSON.stringify(options.downward) : '',
     labelLengths.join(','),
     sizeScales.join(','),
     options.labelBaseFontPx ?? '',
@@ -115,6 +128,10 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   // A candidate must be a member of the canonical CPUA (one verdict: rect,
   // arc — LAW, never relaxes — logo, vessel), then satisfy the engine's own
   // laws: label endpoints, spacing, fan separation.
+  // AN HONEST SKY (O-263) keeps labels clear of each other too, not only of
+  // stars: packed closer, long names lay across their neighbours' names.
+  const honest = options.honest === true;
+  const labelGap = labelBaseFontPx * 0.9;
   const isValid = (x, y, placed, relax = 1, labelHalf = 0, scale = 1, fanRelax = 1) => {
     const rSelf = nodeR * scale;
     if (!cpua.contains(x, y, rSelf)) return false;
@@ -176,6 +193,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
       if (p.labelSeg
         && pointSegDist(x, y, p.labelSeg.x1, p.labelSeg.y1, p.labelSeg.x2, p.labelSeg.y2)
            < rSelf + labelPad) return false;
+      if (honest && labelSeg && p.labelSeg && segSegDist(labelSeg, p.labelSeg) < labelGap) return false;
       // Fan lines share the magnifier origin; without an angular floor,
       // near-collinear stars stack their lines into one thick stroke.
       let da = Math.abs(candAngle - Math.atan2(p.y - magnifierY, p.x - magnifierX));
@@ -271,9 +289,21 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   // and the label law can veto all but one (the single-sibling sky,
   // 2026-07-19). Densifying multiplies candidates; first pass keeps the
   // roomy layout wherever it suffices.
-  for (let cCur = c; ; cCur *= 0.65) {
+  //
+  // AN HONEST SKY NEVER SQUEEZES (O-263, 2026-11-03: the widest sky seated
+  // twelve stars on Howell's phone where twenty fit). A sky that seats a run
+  // of a larger set asks for `honest`: spacing never relaxes — a star that
+  // cannot have its room is left to the run's far end, not crowded in — and
+  // the field densifies in finer steps and further, since the first sprinkle
+  // of candidates runs out long before the room does. The best walk is kept.
+  const ladder = honest
+    ? [[1, 1], [1, 0.5], [1, 0]]
+    : [[1, 1], [0.8, 0.8], [0.6, 0.6], [0.45, 0.45], [0.3, 0.3], [0.3, 0]];
+  let best = [];
+  let stale = 0;
+  for (let cCur = c; ; cCur *= honest ? 0.85 : 0.65) {
     intersections = [];
-    for (const [relax, fanRelax] of [[1, 1], [0.8, 0.8], [0.6, 0.6], [0.45, 0.45], [0.3, 0.3], [0.3, 0]]) {
+    for (const [relax, fanRelax] of ladder) {
       if (intersections.length >= childCount) break;
       for (let k = 1; k <= maxK && intersections.length < childCount; k += 1) {
         const r = cCur * Math.sqrt(k);
@@ -289,7 +319,14 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
         intersections.push({ x, y, k, fanId: seat, scale, labelSeg: ok.labelSeg });
       }
     }
+    if (intersections.length > best.length) { best = intersections; stale = 0; } else stale += 1;
     if (intersections.length >= childCount) break;
+    if (honest) {
+      // Three finer fields in a row that seat no more than the best: the room
+      // is full, and a fourth would only spend the phone's time.
+      if (cCur <= minSpacing * 0.3 || stale >= 3) { intersections = best; break; }
+      continue;
+    }
     // The densify floor follows the SMALLEST star in the set: a tapered
     // smudge tier (0.3x) can seat on a 0.3x candidate grid — stopping at
     // the full-size spacing capped overloaded skies at ~22 seats.
@@ -298,6 +335,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
       : 1;
     if (cCur <= minSpacing * minScale) break; // densest honest field — take what seats
   }
+  if (intersections.length < best.length) intersections = best;
 
   // ── At-least-one guarantee ───────────────────────────────────────────
   // Tapping ANY node migrates the complete sibling set, so a single star
@@ -305,6 +343,79 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
   // nothing (a truly crushed viewport), take the region centroid.
   if (childCount > 0 && intersections.length === 0) {
     intersections.push({ x: centerX, y: centerY, k: 0, fanId: null, synthetic: true });
+  }
+
+  // THE SKY READS DOWNWARD, AND THE LARGE STAR IS WHERE ITS CHILD READS
+  // (O-263). With `downward`, the seats come back sorted top to bottom. With
+  // a landmark among them ({ landmark, total, anchor } — child indices), the
+  // seat at the landmark's rank in the run is enlarged where it stands, and
+  // only the seats its larger room now crowds are let go; the caller then
+  // hands out the children in order around the landmark — so the order is
+  // exact by construction, in one laying. The landmark's rank is clamped so
+  // the run never reaches past either end of the set; where the enlarged
+  // seat cannot stand (the region, the band, the logo), the ranks beside it
+  // are tried.
+  let bigRank = -1;
+  const down = options.downward;
+  if (down) {
+    let S = intersections.slice().sort((a, b) => (a.y - b.y) || (a.x - b.x));
+    const n = S.length;
+    const { landmark = -1, total = n, anchor = 0, bigScale = 1, bigLabelLen = 0 } = down;
+    if (landmark >= 0 && n > 0 && bigScale > 1) {
+      const start = Math.max(0, Math.min(total - n, anchor - Math.floor(n / 2)));
+      const want = landmark - start;
+      if (want >= 0 && want < n) {
+        const lo = Math.max(0, n - 1 - (total - 1 - landmark));
+        const hi = Math.min(n - 1, landmark);
+        const tries = [];
+        for (let d = 0; d < n; d += 1) for (const r of d ? [want - d, want + d] : [want]) if (r >= lo && r <= hi) tries.push(r);
+        const labelHalfBig = (bigLabelLen * charWidth * dampLabelScale(bigScale)) / 2;
+        const pairOk = (a, b) => {
+          if (Math.hypot(a.x - b.x, a.y - b.y) < nodeR * (MIN_SPACING_RADII / 2) * ((a.scale ?? 1) + (b.scale ?? 1))) return false;
+          if (a.labelSeg && pointSegDist(b.x, b.y, a.labelSeg.x1, a.labelSeg.y1, a.labelSeg.x2, a.labelSeg.y2) < nodeR * (b.scale ?? 1) + nodeR * 0.35) return false;
+          if (b.labelSeg && pointSegDist(a.x, a.y, b.labelSeg.x1, b.labelSeg.y1, b.labelSeg.x2, b.labelSeg.y2) < nodeR * (a.scale ?? 1) + nodeR * 0.35) return false;
+          if (honest && a.labelSeg && b.labelSeg && segSegDist(a.labelSeg, b.labelSeg) < labelGap) return false;
+          return true;
+        };
+        // Where a rank's own seat cannot take the large star, the field is
+        // searched for a spot BETWEEN its neighbours' heights that can,
+        // costing the fewest seats; the spot keeps the reading order.
+        const place = r => {
+          const cand = S[r];
+          const ok = isValid(cand.x, cand.y, [], 1, labelHalfBig, bigScale, 0);
+          if (ok) {
+            const big = { ...cand, scale: bigScale, labelSeg: ok.labelSeg, big: true };
+            return { big, kept: S.filter((p, i) => i !== r && pairOk(big, p)) };
+          }
+          const yLo = r > 0 ? S[r - 1].y : -Infinity;
+          const yHi = r < n - 1 ? S[r + 1].y : Infinity;
+          const rest = S.filter((_, i) => i !== r);
+          let found = null;
+          for (let k = 1; k <= 1200; k += 1) {
+            const rr = c * 0.5 * Math.sqrt(k);
+            const a = phase + k * GOLDEN_ANGLE_RAD;
+            const x = centerX + rr * Math.cos(a);
+            const y = centerY + rr * Math.sin(a);
+            if (!(y > yLo && y < yHi)) continue;
+            const v = isValid(x, y, [], 1, labelHalfBig, bigScale, 0);
+            if (!v) continue;
+            const big = { x, y, k, fanId: cand.fanId, scale: bigScale, labelSeg: v.labelSeg, big: true };
+            const kept = rest.filter(p => pairOk(big, p));
+            if (!found || kept.length > found.kept.length) found = { big, kept };
+            if (found.kept.length >= rest.length - 1) break;
+          }
+          return found;
+        };
+        for (const r of tries.slice(0, 5)) {
+          const got = place(r);
+          if (!got) continue;
+          S = [...got.kept, got.big].sort((a, b) => (a.y - b.y) || (a.x - b.x));
+          bigRank = S.indexOf(got.big);
+          break;
+        }
+      }
+    }
+    intersections = S;
   }
 
   // Fan lines are presentational (magnifier → each star); the view draws
@@ -319,6 +430,7 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
     fanLines,
     spiral: { path: '', points: [] }, // retired with the ray×spiral engine
     intersections,
+    bigRank,
     magnifierOrigin: { x: magnifierX, y: magnifierY }
   };
   _geoCacheKey = cacheKey;

@@ -50,6 +50,23 @@
 // THE BOX ASPECT IS INHERITED AND WRONG, and is left alone deliberately —
 // see the note where it is used.
 const LOGO_COLLAPSED_SCALE = 1.1;
+
+// THE SOFT EDGE (O-266). The disc is solid to its radius and fades to nothing
+// across a band beyond it, `disc_feather` of that radius wide. The fade's
+// shape, as [fraction of the band, opacity]: an ease that leaves the solid
+// part without a visible shoulder and arrives at nothing without a rim.
+const FEATHER_CURVE = [[0, 1], [0.15, 0.94], [0.3, 0.8], [0.5, 0.5], [0.7, 0.2], [0.85, 0.06], [1, 0]];
+// The edge hardens over the first part of an expand and softens over the last
+// part of a collapse — while the disc is still small, so the repaint a
+// gradient change costs is a small one (O-160 keeps the flight itself to
+// transforms).
+const FEATHER_WINDOW = 0.25;
+const FEATHER_ID = 'volume-logo-feather';
+const SECTOR_CLIP_ID = 'volume-logo-sector';
+// A surround's opacity moves only in the part of a flight nearest the corner
+// (O-269): gone early in an expand, back late in a collapse, while it is
+// still close around its emblem.
+const SURROUND_WINDOW = 0.25;
 const LOGO_EXPANDED_SCALE = 0.9;
 
 // Inherited from the v0 artwork, and no image we ship has this aspect —
@@ -164,6 +181,7 @@ export class VolumeLogo {
       if (this._renderConfig?.default_image === '') return false;
       if (this.logo.style) this.logo.style.display = 'none';
       if (this._renderConfig) this._renderConfig.default_image = '';
+      this._hrefSurround(); // no emblem, so no surround either
       return true;
     }
     if (this.logo.style) this.logo.style.display = '';
@@ -173,23 +191,53 @@ export class VolumeLogo {
     if (this._renderConfig.default_image === imageName) return false;
     this._renderConfig.default_image = imageName;
     this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${imageName}.png`);
+    this._hrefSurround();
     // Each emblem at its own size and place (O-148): a collapsed badge is
     // re-boxed now, circle with it; an expanded or moving one takes it from
     // its next journey's first frame.
     if (!this._expanded && !this._animating && typeof this.logo.setAttribute === 'function') {
       const s = this._getStartState();
-      this.logo.setAttribute('x', s.logoX);
-      this.logo.setAttribute('y', s.logoY);
-      this.logo.setAttribute('width', s.logoWidth);
-      this.logo.setAttribute('height', s.logoHeight);
+      for (const [el, k] of this._layers()) {
+        el.setAttribute('x', s[`${k}X`]);
+        el.setAttribute('y', s[`${k}Y`]);
+        el.setAttribute('width', s[`${k}Width`]);
+        el.setAttribute('height', s[`${k}Height`]);
+        el.setAttribute('opacity', k === 'surround' ? s.surroundOpacity : s.logoOpacity);
+      }
       if (this.circle && typeof this.circle.setAttribute === 'function') {
         this.circle.setAttribute('cx', s.circleCx);
         this.circle.setAttribute('cy', s.circleCy);
+        this.circle.setAttribute('r', s.circleR); // each emblem's own disc (O-265)
+        this._setFeather(s.circleFeather); // and its own edge (O-266)
       }
       if (this.clickTarget && typeof this.clickTarget.setAttribute === 'function') {
         this.clickTarget.setAttribute('cx', s.circleCx);
         this.clickTarget.setAttribute('cy', s.circleCy);
       }
+    } else if (this._expanded && !this._animating && this._openAt && typeof this.logo.setAttribute === 'function') {
+      // AN OPEN SECTOR IS RE-BOXED TOO (O-267): the watermark's size is the
+      // emblem's own now, so the crossing H-31 was written for — at a leaf,
+      // the edition changing under the reader — would otherwise leave the new
+      // emblem at the old one's zoom until the sector next closed.
+      const e = this._getEndState(this._openAt.arcParams, this._openAt.magnifierAngle);
+      for (const [el, k] of this._layers()) {
+        el.setAttribute('x', e[`${k}X`]);
+        el.setAttribute('y', e[`${k}Y`]);
+        el.setAttribute('width', e[`${k}Width`]);
+        el.setAttribute('height', e[`${k}Height`]);
+        el.setAttribute('opacity', k === 'surround' ? e.surroundOpacity : e.logoOpacity);
+        el.setAttribute('transform', `rotate(${e.logoRotation}, ${e.logoCenterX}, ${e.logoCenterY})`);
+      }
+    } else if (this._animating && this._flight) {
+      // AND A FLIGHT UNDER WAY IS RE-AIMED (O-267). A boot at a leaf opens
+      // the sector on the volume's default emblem and learns the reader's
+      // division a moment later; the flight's two ends were reckoned for the
+      // first emblem, and with a size per emblem it would land the second at
+      // the first one's zoom. The ends are rewritten in place, so the journey
+      // already playing carries on toward the right ones.
+      Object.assign(this._flight.shut, this._getStartState());
+      if (this._openAt) Object.assign(this._flight.open, this._getEndState(this._openAt.arcParams, this._openAt.magnifierAngle));
+      this._frameBase = null;
     }
     return true;
   }
@@ -223,7 +271,7 @@ export class VolumeLogo {
     // mismatch H-31 was written to end. `setImage` does not wait either, for
     // the same reason. `_applyFrame` animates geometry and opacity and never
     // touches fill, so a swap mid-animation is safe.
-    if (this.circle) this.circle.setAttribute('fill', color);
+    this._paintDisc();
     return true;
   }
 
@@ -241,7 +289,7 @@ export class VolumeLogo {
     const radius = shorterSide * 0.12;
     const margin = shorterSide * 0.03;
     
-    const { centerX, centerY, logoWidth, logoHeight } = this._collapsedGeometry();
+    const { centerX, centerY, logoWidth, logoHeight, discRadius } = this._collapsedGeometry();
     
     // Create group
     this.group = document.createElementNS(SVG_NS, 'g');
@@ -253,8 +301,9 @@ export class VolumeLogo {
     this.circle.style.willChange = 'transform, opacity'; // composited in flight (O-160)
     this.circle.setAttribute('cx', centerX);
     this.circle.setAttribute('cy', centerY);
-    this.circle.setAttribute('r', radius);
-    this.circle.setAttribute('fill', config.color_scheme?.detail_sector || '#362e6a');
+    this.circle.setAttribute('r', discRadius * (1 + this._discFeather()));
+    this._featherNow = null;
+    this._setFeather(this._discFeather());
     this.circle.setAttribute('opacity', config.color_scheme?.detail_sector_opacity || '0.5');
     // NO OUTLINE (Howell, 2026-08-17: "I'd like to try removing the dark
     // stroke"). The badge was a 1px black ring over a 50%-opacity fill, which
@@ -281,7 +330,27 @@ export class VolumeLogo {
       this.logo.setAttribute('height', logoHeight);
       this.logo.setAttribute('opacity', '0.5'); // START state: 50% opacity (matches v0)
       this.logo.style.pointerEvents = 'none';
-      this.group.appendChild(this.logo);
+      // THE WATERMARK IS DRAWN ONLY INSIDE THE SECTOR (O-267). The emblem sits
+      // in a wrapper of its own so a clip can be put on the WRAPPER: the image
+      // carries a rotation, and a clip on the image itself would turn with it.
+      this.logoClip = document.createElementNS(SVG_NS, 'g');
+      const clipDefs = document.createElementNS(SVG_NS, 'defs');
+      const clip = document.createElementNS(SVG_NS, 'clipPath');
+      clip.setAttribute('id', SECTOR_CLIP_ID);
+      this._sectorClipCircle = clip.appendChild(document.createElementNS(SVG_NS, 'circle'));
+      clipDefs.appendChild(clip);
+      this.group.appendChild(clipDefs);
+      // THE SURROUND, where the emblem declares one (O-268): a second picture
+      // on the emblem's own box, in the same clipped wrapper.
+      this.surround = document.createElementNS(SVG_NS, 'image');
+      this.surround.setAttribute('id', 'volume-logo-surround');
+      this.surround.style.willChange = 'transform, opacity';
+      this.surround.style.pointerEvents = 'none';
+      for (const k of ['x', 'y', 'width', 'height', 'opacity']) this.surround.setAttribute(k, this.logo.getAttribute(k));
+      this._hrefSurround();
+      this.logoClip.appendChild(this.surround);
+      this.logoClip.appendChild(this.logo);
+      this.group.appendChild(this.logoClip);
     }
     
     // Insert at beginning so it renders behind everything
@@ -329,6 +398,190 @@ export class VolumeLogo {
     return Number.isFinite(declared) && declared > 0 ? declared : LOGO_COLLAPSED_SCALE;
   }
 
+  // THE DISC HAS ITS OWN SIZE PER EMBLEM TOO (O-265, Howell 2026-11-06: for
+  // the first time the coloured disc in the upper right corner is a different
+  // size for each emblem, in addition to each one having its own artwork). An
+  // emblem drawn to ring the circle hides the circle's hard
+  // edge only if its band lies ACROSS that edge, and two rings of different
+  // widths cannot both straddle one radius. So the volume may declare, per
+  // emblem, a multiple of the base disc (display_config.detail_sector
+  // .disc_scale); an emblem not named keeps the base. Only the DRAWN disc
+  // changes: the badge's place, the emblem's size and the tap target are
+  // still reckoned from the base radius, so nothing else moves.
+  _discScale() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.disc_scale?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : 1;
+  }
+
+  // AND ITS OWN SIZE AS THE LEAF'S WATERMARK (O-267, Howell 2026-11-06, with
+  // two open sectors side by side: the open sector of one emblem is to differ
+  // from the other's "simply in terms of the amount of zoom … enlarge faster
+  // and further so that the olive branch ring … disappears under the focus
+  // ring, and … we are left with just the tilted Torah scroll alone"). An
+  // emblem drawn as a centrepiece inside a ring is two pictures: all of it in
+  // the corner, the centrepiece alone behind the text. Which one the open
+  // sector shows is only a matter of how far it grows, so the volume declares
+  // that per emblem (display_config.detail_sector.watermark_scale, a fraction
+  // of the focus ring's radius), else the base. Same centre, same tilt, same
+  // clock: a larger end is a faster flight.
+  _expandedScale() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.watermark_scale?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : LOGO_EXPANDED_SCALE;
+  }
+
+  // AN EMBLEM MAY BE TWO PICTURES THAT PART COMPANY (O-268, Howell 2026-11-06,
+  // on seeing O-267: "I don't want to crop the Torah scroll with the focus
+  // ring … I want the Torah scroll to stop enlarging before it's too big to
+  // fit within the details sector. This may require some cheating to make
+  // the olive wreath go away under the focus ring"). One zoom cannot do both:
+  // far enough for the ring around a centrepiece to leave the sector is too
+  // far for the centrepiece to stay inside it. So the volume may name a
+  // SURROUND for an emblem (display_config.detail_sector.emblem_surround) —
+  // a second image on the same box, indistinguishable from one picture in the
+  // corner — and how far the surround grows when the sector opens
+  // (surround_watermark_scale); the emblem itself stops at watermark_scale.
+  _surroundName() {
+    const name = this._renderConfig?.default_image;
+    const declared = this._renderConfig?.emblem_surround?.[name];
+    return typeof declared === 'string' && declared ? declared : null;
+  }
+
+  _surroundExpandedScale() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.surround_watermark_scale?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : this._expandedScale();
+  }
+
+  // HOW MUCH OF THE SURROUND IS LEFT BEHIND THE TEXT (O-269, Howell 2026-11-06,
+  // with a screenshot of the flight half way: as the wreath enlarges faster
+  // than the disc "it gets kind of noisy. Perhaps it would be better if the
+  // wreath just faded away"). The volume may declare the surround's opacity in
+  // the open sector (surround_watermark_opacity), 0 for gone; undeclared it is
+  // the watermark's. Whatever it is, it is reached within SURROUND_WINDOW of
+  // leaving the corner, not across the whole flight: a surround that is going
+  // goes while it is still small and close, rather than swelling across the
+  // ground first.
+  _surroundExpandedOpacity() {
+    const name = this._renderConfig?.default_image;
+    const raw = this._renderConfig?.surround_watermark_opacity?.[name];
+    const declared = Number(raw);
+    return raw !== null && raw !== undefined && raw !== '' && Number.isFinite(declared) && declared >= 0 && declared <= 1 ? declared : 0.10;
+  }
+
+  _surroundOpacityAt(from, to, t) {
+    const a = from.surroundOpacity ?? from.logoOpacity, b = to.surroundOpacity ?? to.logoOpacity;
+    const opening = to.circleR > from.circleR;
+    const u = opening ? Math.min(1, t / SURROUND_WINDOW) : Math.max(0, (t - (1 - SURROUND_WINDOW)) / SURROUND_WINDOW);
+    return a + (b - a) * u;
+  }
+
+  _layerOpacityAt(prefix, from, to, t) {
+    return prefix === 'surround' ? this._surroundOpacityAt(from, to, t) : from.logoOpacity + (to.logoOpacity - from.logoOpacity) * t;
+  }
+
+  _hrefSurround() {
+    if (!this.surround) return;
+    const name = this._surroundName(), base = this._renderConfig?.logo_base_path;
+    if (name && base) {
+      this.surround.setAttributeNS(XLINK_NS, 'href', `${base}${name}.png`);
+      this.surround.style.display = '';
+    } else {
+      this.surround.style.display = 'none';
+    }
+  }
+
+  // The emblem and its surround, each with the prefix its box rides under in a state.
+  _layers() {
+    return [[this.logo, 'logo'], [this.surround, 'surround']].filter(([el]) => el && typeof el.setAttribute === 'function');
+  }
+
+  // AND ITS OWN EDGE (O-266, Howell 2026-11-06: "the hard edge of the blue
+  // circle just feels lazy to me. I would try doing a blurred edge... I want
+  // the blur to begin where the current hard edge is. In other words, I want
+  // the circle to get larger overall"). Per emblem again, a fraction of the
+  // disc's radius (display_config.detail_sector.disc_feather); an emblem not
+  // named keeps its hard edge. A GRADIENT, not a filter: an SVG blur dies on
+  // WebKit below the top-level svg, and a gradient also says exactly where
+  // the fade begins, which a blur cannot.
+  _discFeather() {
+    const name = this._renderConfig?.default_image;
+    const declared = Number(this._renderConfig?.disc_feather?.[name]);
+    return Number.isFinite(declared) && declared > 0 ? declared : 0;
+  }
+
+  _discColour() {
+    return this._renderConfig?.color_scheme?.detail_sector || '#362e6a';
+  }
+
+  // The disc's fill, in whatever state its edge is in.
+  _paintDisc() {
+    if (!this.circle) return;
+    const colour = this._discColour();
+    if (this._featherNow > 0 && this._gradientStops) {
+      for (const stop of this._gradientStops) stop.setAttribute('stop-color', colour);
+      this.circle.setAttribute('fill', `url(#${FEATHER_ID})`);
+    } else {
+      this.circle.setAttribute('fill', colour);
+    }
+  }
+
+  // `f` is the fade band as a fraction of the solid radius; the circle's `r`
+  // is the OUTER radius, solid * (1 + f), so the solid part ends at 1 / (1 + f)
+  // of the gradient.
+  _setFeather(f) {
+    if (!this.circle) return;
+    const want = f > 0 ? f : 0;
+    if (this._featherNow === want) return;
+    this._featherNow = want;
+    if (want > 0 && !this._gradientStops && this.group && typeof document !== 'undefined') {
+      const defs = document.createElementNS(SVG_NS, 'defs');
+      const gradient = document.createElementNS(SVG_NS, 'radialGradient');
+      gradient.setAttribute('id', FEATHER_ID);
+      this._gradientStops = [null, ...FEATHER_CURVE].map(() => gradient.appendChild(document.createElementNS(SVG_NS, 'stop')));
+      this._gradientStops[0].setAttribute('offset', 0);
+      this._gradientStops[0].setAttribute('stop-opacity', 1);
+      FEATHER_CURVE.forEach(([, alpha], i) => this._gradientStops[i + 1].setAttribute('stop-opacity', alpha));
+      defs.appendChild(gradient);
+      this.group.insertBefore(defs, this.group.firstChild);
+    }
+    if (want > 0 && this._gradientStops) {
+      const solid = 1 / (1 + want);
+      FEATHER_CURVE.forEach(([u], i) => this._gradientStops[i + 1].setAttribute('offset', solid + (1 - solid) * u));
+    }
+    this._paintDisc();
+  }
+
+  // THE OPEN SECTOR'S OUTLINE CLIPS THE EMBLEM, from the moment it begins to
+  // open until it is shut again (O-267). An emblem that grows past the base
+  // size reaches beyond the focus ring, and what lies beyond it is the bare
+  // ground: the first build of the per-emblem size left its ring showing on
+  // the far side of the band, behind the parent's name. Clipped for the whole
+  // flight rather than at its end, so nothing appears or vanishes on landing
+  // — but only where the corner badge already lies inside the open sector,
+  // or the clip would bite the badge itself at the first frame.
+  _setSectorClip(open) {
+    if (!this.logoClip || !this._sectorClipCircle) return;
+    if (!open) { this.logoClip.removeAttribute('clip-path'); return; }
+    const shut = this._getStartState();
+    const far = Math.max(...[[0, 0], [1, 0], [0, 1], [1, 1]].map(([i, j]) =>
+      Math.hypot(shut.logoX + i * shut.logoWidth - open.circleCx, shut.logoY + j * shut.logoHeight - open.circleCy)));
+    if (far > open.circleR) { this.logoClip.removeAttribute('clip-path'); return; }
+    this._sectorClipCircle.setAttribute('cx', open.circleCx);
+    this._sectorClipCircle.setAttribute('cy', open.circleCy);
+    this._sectorClipCircle.setAttribute('r', open.circleR);
+    this.logoClip.setAttribute('clip-path', `url(#${SECTOR_CLIP_ID})`);
+  }
+
+  // Where the edge is, between two states: soft only at the collapsed end.
+  _featherAt(from, to, t) {
+    const a = from.circleFeather || 0, b = to.circleFeather || 0;
+    if (!a && !b) return 0;
+    if (a > 0) return a * (1 - Math.min(1, t / FEATHER_WINDOW));
+    return b * Math.max(0, (t - (1 - FEATHER_WINDOW)) / FEATHER_WINDOW);
+  }
+
   _collapsedGeometry() {
     const vw = this.viewport.width;
     const vh = this.viewport.height;
@@ -352,7 +605,7 @@ export class VolumeLogo {
     const centerY = margin + placeHeight / 2;
     const logoWidth = radius * 2 * this._emblemScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
-    return { radius, margin, centerX, centerY, logoWidth, logoHeight };
+    return { radius, discRadius: radius * this._discScale(), margin, centerX, centerY, logoWidth, logoHeight };
   }
 
   /** The badge's centre when collapsed, in viewport px — where the sector's contents fold back to (O-161). */
@@ -363,16 +616,23 @@ export class VolumeLogo {
   }
 
   _getStartState() {
-    const { radius, centerX: cx, centerY: cy, logoWidth, logoHeight } = this._collapsedGeometry();
+    const { discRadius, centerX: cx, centerY: cy, logoWidth, logoHeight } = this._collapsedGeometry();
     return {
       circleCx: cx,
       circleCy: cy,
-      circleR: radius,
+      circleR: discRadius * (1 + this._discFeather()),
+      circleFeather: this._discFeather(),
       circleOpacity: 0.5,
       logoX: cx - logoWidth / 2,
       logoY: cy - logoHeight / 2,
       logoWidth,
       logoHeight,
+      // one picture in the corner: the surround lies on the emblem's box
+      surroundX: cx - logoWidth / 2,
+      surroundY: cy - logoHeight / 2,
+      surroundWidth: logoWidth,
+      surroundHeight: logoHeight,
+      surroundOpacity: 0.5,
       logoOpacity: 0.5,
       logoRotation: 0
     };
@@ -391,8 +651,10 @@ export class VolumeLogo {
     // v0 positions logo relative to screen center (0,0 in center-origin SVG),
     // NOT relative to the hub (which is far off-screen right).
     // In v3's top-left origin, screen center is (width/2, height/2).
-    const logoWidth = frRadius * LOGO_EXPANDED_SCALE;
+    const logoWidth = frRadius * this._expandedScale();
     const logoHeight = logoWidth / LOGO_BOX_ASPECT;
+    const surroundWidth = frRadius * this._surroundExpandedScale();
+    const surroundHeight = surroundWidth / LOGO_BOX_ASPECT;
     const logoCenterRadius = frRadius * -0.35;
     const screenCenterX = this.viewport.width / 2;
     const screenCenterY = this.viewport.height / 2;
@@ -406,11 +668,18 @@ export class VolumeLogo {
       circleCx: arcParams.hubX,
       circleCy: arcParams.hubY,
       circleR: endCircleR,
+      circleFeather: 0,
       circleOpacity: circleEndOpacity,
       logoX: logoCenterX - logoWidth / 2,
       logoY: logoCenterY - logoHeight / 2,
       logoWidth,
       logoHeight,
+      // same centre and tilt, grown further (O-268)
+      surroundX: logoCenterX - surroundWidth / 2,
+      surroundY: logoCenterY - surroundHeight / 2,
+      surroundWidth,
+      surroundHeight,
+      surroundOpacity: this._surroundExpandedOpacity(),
       logoOpacity: 0.10,    // watermark
       logoRotation: rotationDeg,
       logoCenterX,
@@ -461,11 +730,12 @@ export class VolumeLogo {
     this._animating = true;
     this._collapsing = false;
     if (this.clickTarget) this.clickTarget.parentNode.setAttribute('display', 'none');
+    this._openAt = { arcParams, magnifierAngle };
     const start = this._getStartState();
     const end = this._getEndState(arcParams, magnifierAngle);
-    // Apply detail_sector color if configured
-    const detailColor = this._renderConfig?.color_scheme?.detail_sector;
-    if (detailColor && this.circle) this.circle.setAttribute('fill', detailColor);
+    this._flight = { shut: start, open: end };
+    this._setSectorClip(end);
+    this._paintDisc();
     return this._journey(start, end, {
       finish: () => {
         this._applyFrame(start, end, 1);
@@ -475,6 +745,7 @@ export class VolumeLogo {
       },
       revert: () => {
         this._applyFrame(start, end, 0);
+        this._setSectorClip(null);
         this._animating = false;
         this._collapsing = false;
         this._expanded = false;
@@ -488,8 +759,11 @@ export class VolumeLogo {
     if (this._animationId) { cancelAnimationFrame(this._animationId); this._animationId = null; }
     this._animating = true;
     this._collapsing = true;
+    if (arcParams) this._openAt = { arcParams, magnifierAngle };
     const start = this._getEndState(arcParams, magnifierAngle); // current = expanded
     const end = this._getStartState();                           // target = collapsed
+    this._flight = { shut: end, open: start };
+    this._setSectorClip(start);
     // The emblem shrinks from the watermark it IS (0.10) up to the badge's
     // opacity. A v0-parity line here set the start to 1.0 — the scroll went
     // solid the instant a collapse began — unseen at 600 ms, glaring once
@@ -497,10 +771,9 @@ export class VolumeLogo {
     return this._journey(start, end, {
       finish: () => {
         this._applyFrame(start, end, 1);
-        // Reset fill to default after collapse
-        const defaultFill = this._renderConfig?.color_scheme?.detail_sector || '#362e6a';
-        if (this.circle) this.circle.setAttribute('fill', defaultFill);
-        if (this.logo) this.logo.removeAttribute('transform');
+        this._paintDisc();
+        this._setSectorClip(null);
+        for (const [el] of this._layers()) if (typeof el.removeAttribute === 'function') el.removeAttribute('transform');
         this._animating = false;
         this._collapsing = false;
         this._expanded = false;
@@ -578,31 +851,32 @@ export class VolumeLogo {
     // geometry now stays at the FROM state and a transform carries it; only
     // the ends (t = 0, t = 1) write the real attributes, so everything that
     // reads them sees a settled sector.
+    this._setFeather(this._featherAt(from, to, t));
     if (t > 0 && t < 1) { this._applyTransformFrame(from, to, t); return; }
     this._frameBase = null;
     if (this.circle) { this.circle.style.transform = ''; this.circle.style.opacity = ''; }
-    if (this.logo) { this.logo.style.transform = ''; this.logo.style.opacity = ''; }
+    for (const [el] of this._layers()) if (el.style) { el.style.transform = ''; el.style.opacity = ''; }
     if (this.circle) {
       this.circle.setAttribute('cx', lerp(from.circleCx, to.circleCx));
       this.circle.setAttribute('cy', lerp(from.circleCy, to.circleCy));
       this.circle.setAttribute('r', lerp(from.circleR, to.circleR));
       this.circle.setAttribute('opacity', lerp(from.circleOpacity, to.circleOpacity));
     }
-    if (this.logo) {
-      const x = lerp(from.logoX, to.logoX);
-      const y = lerp(from.logoY, to.logoY);
-      const w = lerp(from.logoWidth, to.logoWidth);
-      const h = lerp(from.logoHeight, to.logoHeight);
+    for (const [el, k] of this._layers()) {
+      const x = lerp(from[`${k}X`], to[`${k}X`]);
+      const y = lerp(from[`${k}Y`], to[`${k}Y`]);
+      const w = lerp(from[`${k}Width`], to[`${k}Width`]);
+      const h = lerp(from[`${k}Height`], to[`${k}Height`]);
       const rot = lerp(from.logoRotation, to.logoRotation);
-      const opacity = lerp(from.logoOpacity, to.logoOpacity);
-      this.logo.setAttribute('x', x);
-      this.logo.setAttribute('y', y);
-      this.logo.setAttribute('width', w);
-      this.logo.setAttribute('height', h);
-      this.logo.setAttribute('opacity', opacity);
+      const opacity = this._layerOpacityAt(k, from, to, t);
+      el.setAttribute('x', x);
+      el.setAttribute('y', y);
+      el.setAttribute('width', w);
+      el.setAttribute('height', h);
+      el.setAttribute('opacity', opacity);
       const cx = x + w / 2;
       const cy = y + h / 2;
-      this.logo.setAttribute('transform', `rotate(${rot}, ${cx}, ${cy})`);
+      el.setAttribute('transform', `rotate(${rot}, ${cx}, ${cy})`);
     }
   }
 
@@ -619,20 +893,23 @@ export class VolumeLogo {
       this.circle.style.transform = `translate(${cx - k * from.circleCx}px, ${cy - k * from.circleCy}px) scale(${k})`;
       this.circle.style.opacity = String(lerp(from.circleOpacity, to.circleOpacity));
     }
-    if (this.logo) {
+    for (const [el, p] of this._layers()) {
+      const fx = from[`${p}X`], fy = from[`${p}Y`], fw = from[`${p}Width`], fh = from[`${p}Height`];
       if (this._frameBase !== from) {
-        this.logo.setAttribute('x', from.logoX);
-        this.logo.setAttribute('y', from.logoY);
-        this.logo.setAttribute('width', from.logoWidth);
-        this.logo.setAttribute('height', from.logoHeight);
+        el.setAttribute('x', fx);
+        el.setAttribute('y', fy);
+        el.setAttribute('width', fw);
+        el.setAttribute('height', fh);
       }
-      const x = lerp(from.logoX, to.logoX), y = lerp(from.logoY, to.logoY);
-      const w = lerp(from.logoWidth, to.logoWidth), h = lerp(from.logoHeight, to.logoHeight);
-      const kx = from.logoWidth ? w / from.logoWidth : 1, ky = from.logoHeight ? h / from.logoHeight : 1;
+      const x = lerp(fx, to[`${p}X`]), y = lerp(fy, to[`${p}Y`]);
+      const w = lerp(fw, to[`${p}Width`]), h = lerp(fh, to[`${p}Height`]);
+      const kx = fw ? w / fw : 1, ky = fh ? h / fh : 1;
       const rot = lerp(from.logoRotation, to.logoRotation);
       const cx = x + w / 2, cy = y + h / 2;
-      this.logo.style.transform = `translate(${cx}px, ${cy}px) rotate(${rot}deg) translate(${-cx}px, ${-cy}px) translate(${x - kx * from.logoX}px, ${y - ky * from.logoY}px) scale(${kx}, ${ky})`;
-      this.logo.style.opacity = String(lerp(from.logoOpacity, to.logoOpacity));
+      if (el.style) {
+        el.style.transform = `translate(${cx}px, ${cy}px) rotate(${rot}deg) translate(${-cx}px, ${-cy}px) translate(${x - kx * fx}px, ${y - ky * fy}px) scale(${kx}, ${ky})`;
+        el.style.opacity = String(this._layerOpacityAt(p, from, to, t));
+      }
     }
     this._frameBase = from;
   }
@@ -646,6 +923,11 @@ export class VolumeLogo {
       this.group = null;
       this.circle = null;
       this.logo = null;
+      this._gradientStops = null;
+      this._featherNow = null;
+      this.logoClip = null;
+      this._sectorClipCircle = null;
+      this.surround = null;
     }
     if (this.clickTarget) {
       this.clickTarget.parentNode.remove();

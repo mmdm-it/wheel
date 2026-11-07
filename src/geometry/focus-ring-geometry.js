@@ -261,6 +261,58 @@ export function standardBandCenterline(viewport, { reach = STRATA_REACH } = {}) 
   return bandCenterlinePoints(getArcParameters(viewport), w.startAngle, w.endAngle, reach ? bandBounds(viewport.width, viewport.height, reach) : null);
 }
 
+// THE CHAIN HAS ENDS (O-271, Howell 2026-11-06): "the focus ring is not a
+// wheel, but rather a sprocket with a chain that has ends." The band is the
+// chain, and a chain is drawn only where it is: up to the centre of the
+// first link and of the last, never past them. Beyond those the sprocket runs on
+// empty, and the band goes HOLLOW there — the outline alone, as an empty
+// vessel is drawn — so the reader turning up from the first leaf sees the
+// chain's end slide past the lens, not a band promising more. The span is
+// in display angles (a link's base angle plus the rotation), so the solid
+// part turns with the links and the overrun shows the bare sprocket.
+//
+// The chain's path reaches a tangent run of three radii past each exit of
+// the arc; `lower`/`upper` are cut to that reach, and a span covering all of
+// it returns the full centreline unchanged (`whole: true`), so the common
+// case — both ends far off the glass — costs nothing new.
+export function chainSpanPoints(arcParams, startAngle, endAngle, lower, upper, bounds = null) {
+  const reach = 3; // radians of tangent run, as bandCenterlinePoints' T = 3r
+  const a = Math.max(lower, startAngle - reach);
+  const b = Math.min(upper, endAngle + reach);
+  if (lower <= startAngle - reach && upper >= endAngle + reach) {
+    return { whole: true, points: bandCenterlinePoints(arcParams, startAngle, endAngle, bounds) };
+  }
+  if (!(b > a)) return { whole: false, points: [] };
+  const pts = [];
+  const at = ang => { const p = chainPointAt(arcParams, startAngle, endAngle, ang); return [p.x, p.y]; };
+  if (a < startAngle) pts.push(at(a));
+  const arcFrom = Math.max(a, startAngle), arcTo = Math.min(b, endAngle);
+  if (arcTo >= arcFrom) {
+    const N = Math.max(2, Math.ceil(48 * (arcTo - arcFrom) / Math.max(1e-9, endAngle - startAngle)));
+    for (let i = 0; i <= N; i += 1) pts.push(at(arcFrom + ((arcTo - arcFrom) * i) / N));
+  }
+  if (b > endAngle) pts.push(at(b));
+  return { whole: false, points: bounds ? clipPolylineToRect(pts, bounds) : pts };
+}
+
+// The two edges of a band drawn hollow: the centreline offset by half the
+// band's width to either side. Each point's normal is taken from the
+// direction between its neighbours, so the edges follow the arc and run
+// straight along the tangents. Returns [outer, inner] polylines.
+export function bandEdges(pts, halfWidth) {
+  if (pts.length < 2) return [[], []];
+  const left = [], right = [];
+  for (let i = 0; i < pts.length; i += 1) {
+    const p0 = pts[Math.max(0, i - 1)], p1 = pts[Math.min(pts.length - 1, i + 1)];
+    let dx = p1[0] - p0[0], dy = p1[1] - p0[1];
+    const len = Math.hypot(dx, dy) || 1;
+    dx /= len; dy /= len;
+    left.push([pts[i][0] - dy * halfWidth, pts[i][1] + dx * halfWidth]);
+    right.push([pts[i][0] + dy * halfWidth, pts[i][1] - dx * halfWidth]);
+  }
+  return [left, right];
+}
+
 export function pointsToPath(pts) {
   return pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
 }

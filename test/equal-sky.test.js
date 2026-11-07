@@ -24,6 +24,7 @@ describe('a volume may declare a sky of equals (O-240)', () => {
 
   it('an equal sky seats its children highest first, in sibling order (O-241)', () => {
     const host = read('../src/index.js');
-    assert.match(host, /placed\.slice\(\)\.sort\(\(a, b\) => \(a\.y - b\.y\) \|\| \(a\.x - b\.x\)\)/);
+    assert.match(read('../src/geometry/child-pyramid-geometry.js'), /let S = intersections\.slice\(\)\.sort\(\(a, b\) => \(a\.y - b\.y\) \|\| \(a\.x - b\.x\)\);/);
+    assert.match(host, /downward: \{ landmark: lm, total: children\.length, anchor,/);
   });
 });
