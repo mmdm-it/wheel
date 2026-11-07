@@ -311,13 +311,17 @@ const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 // ("behind the user's head"). Selection is still tap-for-now — rotation
 // (magnifier-as-selection) is the next build.
 const STRATA_DEPTHS = [1.0, 0.4, 0.2];  // scale, indexed by levels behind the front
-const STRATA_BLURS = [0, 1, 2];         // px local, same index — front sharp,
+const STRATA_BLURS = [0, 0.5, 1];       // px local, same index — front sharp,
 // one back a soft rack-focus, two back twice that so it reads further away.
 // Kept GENTLE on purpose: a receded plane's nodes must stay legible, never
 // dissolve into a smear (Howell 2026-07-27). Eased again 2026-07-30 (1.5/3 →
 // 1/2) now that the deepest plane is the app's FIRST screen: the boot funnel
 // is a stranger's introduction, so what waits behind the glass has to be
-// legible enough to be worth travelling toward.
+// legible enough to be worth travelling toward. Halved again 2026-11-07
+// (1/2 → 0.5/1), Howell with the language ring in front: "sharp enough to
+// see the nodes clearly in the distant primary strata, but … blurry enough
+// that the effect of distance is still apparent" — at 0.2 scale a node is
+// five pixels across, and two pixels of blur dissolved it.
 // Tangent fill span (radians past each viewport exit), sized to reach the
 // screen edge at each recede scale — the deeper the ring, the more of the
 // straight chain climbs into view (Howell 2026-07-21). Level 0 = arc-only.
