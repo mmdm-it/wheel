@@ -469,7 +469,13 @@ export function createApp({
     const overrun = 3 * nodeSpacing;
     return {
       minRotation: magnifier.angle - overrun - firstAngle,
-      maxRotation: magnifier.angle + overrun - lastAngle
+      maxRotation: magnifier.angle + overrun - lastAngle,
+      // The chain's two ends as base angles (O-271): the band is solid from
+      // half a link before the first link to half a link past the last, and
+      // hollow beyond. Display angle = base + rotation; the first link sits
+      // at the HIGHER angle (orders run down the arc).
+      chainUpper: firstAngle + nodeSpacing / 2,
+      chainLower: lastAngle - nodeSpacing / 2
     };
   };
 
@@ -2417,6 +2423,9 @@ export function createApp({
         debug,
         magnifierAngle: magnifier.angle,
         labelMaskEpsilon,
+        // O-271: where the chain is, in display angles, so the band is drawn
+        // solid only there and hollow beyond the chain's ends.
+        chainSpan: Number.isFinite(bounds.chainLower) ? { lower: bounds.chainLower + rotation, upper: bounds.chainUpper + rotation } : null,
         onNodeClick: node => rotateNodeIntoMagnifier(node),
         selectedId: selected?.id,
         parentButtons: {

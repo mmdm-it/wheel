@@ -1,6 +1,6 @@
 import { PyramidView } from './detail/pyramid-view.js';
 import { NOW_NODE_FILL, NOW_LABEL_FILL } from './node-appearance.js';
-import { bandCenterlinePoints, pointsToPath, getParentSeat, getNowSeat, getParentLabelLeftX, CAPTION_GAP_RADII, bandBounds, PRIMARY_REACH } from '../geometry/focus-ring-geometry.js';
+import { bandCenterlinePoints, chainSpanPoints, bandEdges, pointsToPath, getParentSeat, getNowSeat, getParentLabelLeftX, CAPTION_GAP_RADII, bandBounds, PRIMARY_REACH } from '../geometry/focus-ring-geometry.js';
 import { appendGlobeGlyph } from './dimension-globe.js';
 import { attachLabelHalo } from './label-halo.js';
 
@@ -36,6 +36,7 @@ export class FocusRingView {
     this.magnifierCircle = null;
     this.magnifierLabel = null;
     this.band = null;
+    this.bandHollow = null;
     this.parentButtonOuter = null;
     this.parentButtonOuterLabel = null;
     this.parentLabelHalo = null;
@@ -114,6 +115,14 @@ export class FocusRingView {
     this.contentGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     this.contentGroup.setAttribute('class', 'focus-content-group');
     this.svgRoot.appendChild(this.contentGroup);
+    // THE CHAIN HAS ENDS (O-271): the sprocket's path beyond the chain's
+    // first and last link is drawn hollow — its two edges only — under the
+    // solid band, which is cut to where the chain is. Hidden while both
+    // ends are off the glass, which is nearly always.
+    this.bandHollow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    this.bandHollow.setAttribute('class', 'focus-ring-band-hollow');
+    this.bandHollow.style.display = 'none';
+    this.contentGroup.appendChild(this.bandHollow);
     this.band = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.band.setAttribute('class', 'focus-ring-band');
     this.contentGroup.appendChild(this.band);
@@ -291,9 +300,27 @@ export class FocusRingView {
     }
 
     if (this.band && arcParams && viewportWindow) {
-      this.band.setAttribute('d', this.#ringPath(arcParams, viewportWindow));
       // Stroked centreline: the band width is the old 0.99r–1.01r annulus.
-      this.band.setAttribute('stroke-width', (arcParams.radius * 0.02).toFixed(1));
+      const bandWidth = arcParams.radius * 0.02;
+      const span = options.chainSpan;
+      const bounds = this.#bandBounds(viewportWindow);
+      const chain = span && Number.isFinite(span.lower) && Number.isFinite(span.upper)
+        ? chainSpanPoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, span.lower, span.upper, bounds)
+        : { whole: true, points: bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, bounds) };
+      this.band.setAttribute('d', pointsToPath(chain.points));
+      this.band.setAttribute('stroke-width', bandWidth.toFixed(1));
+      if (this.bandHollow) {
+        if (chain.whole) {
+          this.bandHollow.style.display = 'none';
+        } else {
+          // The bare sprocket, as two edges along the whole path; the solid
+          // band paints over its own stretch of them.
+          const edges = bandEdges(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, bounds), bandWidth / 2);
+          this.bandHollow.setAttribute('d', edges.map(pointsToPath).join(' '));
+          this.bandHollow.setAttribute('stroke-width', Math.max(1, arcParams.radius * 0.002).toFixed(2));
+          this.bandHollow.style.display = '';
+        }
+      }
     }
 
     const existingNodes = new Map();
@@ -735,11 +762,10 @@ export class FocusRingView {
   // lower-right. Stroked (not a filled annulus) at the band width, so the
   // straight runs are honest lines, not a coil, when the ring recedes (Howell
   // 2026-07-21). Off-screen and clipped at full size.
-  #ringPath(arcParams, viewportWindow) {
-    // Bounded to what the text floor can show at its deepest recede (O-187):
-    // a window that carries no size (a test's) gets the unbounded path.
-    const bounds = viewportWindow.width && viewportWindow.height ? bandBounds(viewportWindow.width, viewportWindow.height, PRIMARY_REACH) : null;
-    return pointsToPath(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, bounds));
+  // Bounded to what the text floor can show at its deepest recede (O-187):
+  // a window that carries no size (a test's) gets the unbounded path.
+  #bandBounds(viewportWindow) {
+    return viewportWindow.width && viewportWindow.height ? bandBounds(viewportWindow.width, viewportWindow.height, PRIMARY_REACH) : null;
   }
 
   #isNearMagnifier(angle, magnifierAngle, epsilon) {
