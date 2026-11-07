@@ -802,6 +802,15 @@ svg :focus-visible {
   stroke: var(--color-band);
   opacity: 1;
 }
+/* THE BARE SPROCKET (O-271, Howell 2026-11-06): beyond the chain's first and
+   last link the band is hollow — its two edges only, inked like an empty
+   vessel — so the chain visibly ends at the first leaf and the last. */
+.focus-ring-band-hollow {
+  fill: none;
+  stroke: var(--color-magnifier-stroke, #000);
+  opacity: 1;
+}
+#app.boot-colorize .focus-ring-band-hollow { opacity: var(--boot-paint, 1); }
 
 /* ── The boot overture's ink (the splash's rotation beat) ─────────────────
    The LIVE wheel performs in wireframe: hollow nodes with black outlines and
