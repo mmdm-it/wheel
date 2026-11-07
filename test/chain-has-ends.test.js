@@ -73,6 +73,9 @@ describe('the ring carries its chain span to the view (O-271)', () => {
     assert.match(view, /focus-ring-band-hollow/);
     assert.match(view, /if \(chain\.whole\) \{\s*this\.bandHollow\.style\.display = 'none';/);
   });
+  it('the hollow band\'s ink lies wholly inside the band\'s width', () => {
+    assert.match(view, /bandWidth \/ 2 - ink \/ 2 - 0\.3/);
+  });
   it('the hollow band is inked like an empty vessel', () => {
     const css = fs.readFileSync(new URL('../styles/base.css', import.meta.url), 'utf8');
     assert.match(css, /\.focus-ring-band-hollow \{[^}]*fill: none;[^}]*stroke: var\(--color-magnifier-stroke, #000\)/s);

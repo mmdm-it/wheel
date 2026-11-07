@@ -315,10 +315,14 @@ export class FocusRingView {
           this.bandHollow.style.display = 'none';
         } else {
           // The bare sprocket, as two edges along the whole path; the solid
-          // band paints over its own stretch of them.
-          const edges = bandEdges(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, bounds), bandWidth / 2);
+          // band paints over its own stretch of them. The ink lies WHOLLY
+          // inside the band's width (Howell 2026-11-06: "I don't want to see
+          // any hint of black next to the normal brown focus ring band"), so
+          // each edge is inset by half its own stroke and a hair more.
+          const ink = Math.max(1, arcParams.radius * 0.002);
+          const edges = bandEdges(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, bounds), bandWidth / 2 - ink / 2 - 0.3);
           this.bandHollow.setAttribute('d', edges.map(pointsToPath).join(' '));
-          this.bandHollow.setAttribute('stroke-width', Math.max(1, arcParams.radius * 0.002).toFixed(2));
+          this.bandHollow.setAttribute('stroke-width', ink.toFixed(2));
           this.bandHollow.style.display = '';
         }
       }
