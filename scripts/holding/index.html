@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="la">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biblia Catholica</title>
+<meta name="theme-color" content="#d4a574">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
+<style>
+/* The app's own splash card, standing alone while the document root waits
+   for the app (Howell 2026-11-08). The proportions are the overture's
+   (src/view/boot-overture.js, showCard): a square 0.42 of the width, centred
+   at 0.44 of the height; the name 0.075 of the height below it, in letters
+   0.062 of the width, EB Garamond, the page's ink on the volume's ground. */
+html, body { margin: 0; height: 100%; background: #d4a574; overflow: hidden; }
+body { position: relative; height: 100vh; height: 100dvh; }
+.card { position: absolute; left: 50%; top: 44vh; top: 44dvh; width: 42vw; height: 42vw; transform: translate(-50%, -50%); }
+.card img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.name { position: absolute; left: 0; right: 0; top: calc(44vh + 21vw + 7.5vh); top: calc(44dvh + 21vw + 7.5dvh); transform: translateY(-50%);
+  text-align: center; font-family: 'EB Garamond', Georgia, serif; font-size: 6.2vw; letter-spacing: .04em; color: #000; white-space: nowrap; }
+@media (orientation: landscape) {
+  .card { width: 42vh; height: 42vh; width: 42dvh; height: 42dvh; }
+  .name { top: calc(44vh + 21vh + 7.5vh); top: calc(44dvh + 21dvh + 7.5dvh); font-size: 6.2vh; font-size: 6.2dvh; }
+}
+</style>
+</head>
+<body>
+<div class="card"><img src="crown_of_thorns.png" alt=""></div>
+<div class="name">Biblia Catholica</div>
+</body>
+</html>
