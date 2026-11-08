@@ -1233,6 +1233,16 @@ svg :focus-visible {
   text-align: right;
 }
 
+/* THE LATIN KEEPS ITS U. EB Garamond's `locl` table for lang="la" sets every
+   u as v (Dominvs, tvvm) — a classical-inscription conceit of the font, not
+   the Clementine's orthography, which prints Deus and tuum. The canvas that
+   measures the lines knows no language and measured the u, so the drawn text
+   was also narrower than its measurement. Howell caught it in the first
+   rehearsal for the film (2026-11-08). */
+.detail-text--arc[lang="la"] {
+  font-feature-settings: "locl" 0;
+}
+
 /* ── Arc-following card layout ───────────────────────────────────────── */
 /* Container identical to .detail-text--arc: full-layer, lines are spans
    absolutely positioned by the JS line table. */
