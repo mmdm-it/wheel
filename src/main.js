@@ -2245,7 +2245,14 @@ const BASEMENT_DROP = 1.25;  // the LOWEST point of travel, in button heights be
 const SLIDER_OVERRUN = 0.5;  // stops, below the basement stop
 const OVERRUN_GIVE = 0.5;    // the spring: the thumb moves this fraction of the finger's travel past the stop
 let slide = null;           // { startY, startFront, lastY, moved }
-let suppressClick = false;  // a drag's release must not also count as a tap
+// A drag's release must not also count as a tap — but the click a drag
+// suppresses may NEVER COME. A mouse fires click after any press released on
+// the button, moved or not; a FINGER fires click only for a tap, so a thumb
+// stroke to the basement set this flag and nothing consumed it, and the next
+// honest tap paid for it: the first tap on the globe from the basement did
+// nothing, the second worked (Howell, 2026-11-08, after every slide). The
+// flag is therefore good for one press only: cleared at the next pointerdown.
+let suppressClick = false;
 const buttonPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64);
 const notchPx = () => buttonPx() * NOTCH_RATIO;
 // How far ABOVE the CSS rest the thumb sits at floor position p (fractional while held).
@@ -2437,6 +2444,7 @@ function holdKeep() {
 
 if (dimensionButton) {
   dimensionButton.addEventListener('pointerdown', event => {
+    suppressClick = false;   // a new press owes nothing to the last stroke's missing click
     if (!dimensionAvailable()) return;
     if (strataAnim && !scrub) return;   // a tap's own glide is running: let it land
     if (scrubSettle) { cancelAnimationFrame(scrubSettle); scrubSettle = null; }   // caught mid-settle: the thumb takes over
