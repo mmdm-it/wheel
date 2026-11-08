@@ -1,4 +1,5 @@
 import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
+import { declareHomeScreen } from './core/home-screen.js';
 import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
@@ -2772,6 +2773,14 @@ function applyTheme(volume) {
   // A volume with no name of its own keeps the page's.
   const title = volumeConfigs[volume]?.documentTitle;
   if (title) document.title = title;
+  // The home-screen door (O-273): the manifest and icon the volume declares,
+  // and the status bar in its ground colour once installed.
+  declareHomeScreen(document, {
+    manifestHref: volumeConfigs[volume]?.webManifest,
+    icon: volumeConfigs[volume]?.homeIcon,
+    themeColor: bg,
+    title
+  });
   // Set ALL theme CSS variables inline so the first render has correct
   // colors even before the async volume stylesheet finishes loading.
   root.style.setProperty('--theme-color-bg', bg);

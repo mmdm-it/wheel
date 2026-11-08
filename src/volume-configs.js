@@ -182,6 +182,11 @@ const volumeConfigs = {
     },
     theme: 'bible',
     documentTitle: 'Biblia Catholica',   // the tab's name at a standalone door (O-211)
+    // THE DOOR ONTO THE HOME SCREEN (O-273, Howell 2026-11-07): the volume's
+    // own web app manifest and home-screen icon, under its data root like its
+    // emblem (W-114). The engine links what is declared and names nothing.
+    webManifest: `${BIBLE_VOLUME_BASE}/${BIBLE_VOLUME_VERSION}/manifest.json`,
+    homeIcon: `${BIBLE_VOLUME_BASE}/${BIBLE_VOLUME_VERSION}/assets/icon-192.png`,
     // THE LANDSCAPE PAGE (O-258, Howell 2026-11-01): a phone turned sideways
     // shows the volume's one plain page — here the name and two link WORDS
     // (corrections, info), each opening the mail client on its address, and
