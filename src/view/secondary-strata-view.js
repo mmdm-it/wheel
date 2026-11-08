@@ -49,6 +49,13 @@ const BESIDE_OFFSET = 1.3;           // node radii, along the node's angle (outw
 // therefore should not be centered at all at any time."
 const COVER_PULL = MAG_LABEL_SPAN_PULL; // node radii, outward from the centre: the name starts here and runs over the node
 const LENS_SCALE_PEAK = 2.0;
+// The legend's arcs (O-276): gap from the band's edge in node radii, where
+// each word is centred in node spacings from the lens, and the half-span of
+// the arc it rides (room for a long tongue's word).
+const LEGEND_GAP = 2.5;
+const LEGEND_ABOVE = 2.5;   // the outer word, up the arc from the lens
+const LEGEND_BELOW = 4;     // the inner word, down the arc from the lens
+const LEGEND_SPAN = 3;
 const LENS_SCALE_SIGMA = 0.3;        // × node spacing
 
 const svgEl = (tag, attrs) => {
@@ -213,20 +220,32 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     g.appendChild(lens);
     g.appendChild(lensLabel);
     if (legendRows && legendRows.length) {
-      // Two lines in the open ground right of the ring, upright, in the
-      // label's own face; black as the app's other text.
-      const lx = viewport.width * 0.42, ly = viewport.height * 0.66, lh = Math.min(26, Math.max(14, 0.016 * viewport.SSd)) * 1.5;
-      // Sided rows stand about an axis at lx as the names stand about the
-      // ring's line: the inward word ends a little left of it, the outward
-      // word starts a little right. Rows without a side start at lx as before.
-      const sided = legendRows.some(r => r[2] != null);
-      const gap = nodeR * 0.6;
+      // THE LEGEND RUNS ALONG THE BAND (O-276, Howell's sketch 2026-11-08:
+      // the two words "on either side of the focus ring band, rotated ...
+      // curved to follow the arc"). Each word rides an arc concentric with
+      // the ring, read UP the arc with its letters' tops away from the hub,
+      // on the side of the band its names lie on: a bookmark's name runs
+      // hubward of its disc, so its word is on the inner arc, below the
+      // lens, where that side is open; the other word on the outer arc,
+      // above the lens, where the outer side is. The same gap from the
+      // band's edge on both sides — the inner word hangs from its arc, the
+      // outer stands on it.
+      const { hubX, hubY, radius } = layout.arc;
+      const half = bandWidth / 2 + nodeR * LEGEND_GAP;
+      const at = (r, a) => `${(hubX + r * Math.cos(a)).toFixed(1)} ${(hubY + r * Math.sin(a)).toFixed(1)}`;
       legendRows.forEach(([mark, word, side], row) => {
-        const text = displayCase(String(word));
-        const inward = sided && Number(side) < 0;
-        const x = sided ? (inward ? lx - gap : lx + gap) : lx;
-        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, x: x.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': inward ? 'end' : 'start', 'dominant-baseline': 'middle' });
-        t.textContent = text;
+        const inner = Number(side) > 0;
+        const r = inner ? radius - half : radius + half;
+        const centre = layout.magA + (inner ? -LEGEND_BELOW : LEGEND_ABOVE) * layout.spacing;
+        const a0 = centre - LEGEND_SPAN * layout.spacing, a1 = centre + LEGEND_SPAN * layout.spacing;
+        const pid = `${id}-legend-${row}`;
+        const path = svgEl('path', { id: pid, class: 'stratum-legend-arc', d: `M ${at(r, a0)} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${at(r, a1)}`, fill: 'none' });
+        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, 'dominant-baseline': inner ? 'hanging' : 'alphabetic' });
+        t.dataset.side = inner ? 'inner' : 'outer';
+        const tp = svgEl('textPath', { href: `#${pid}`, startOffset: '50%', 'text-anchor': 'middle' });
+        tp.textContent = displayCase(String(word));
+        t.appendChild(tp);
+        g.appendChild(path);
         g.appendChild(t);
       });
     }

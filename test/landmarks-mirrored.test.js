@@ -45,19 +45,28 @@ test('the view mirrors an inward name about the ring\'s line and anchors its end
   assert.ok(kr > 1 && Math.abs(kr - hr) < 0.5, `same distance from the disc (${kr.toFixed(1)} vs ${hr.toFixed(1)})`);
   // Opposite sides: the two offsets point against each other along their own radii (dot product negative).
   assert.ok((k.dx * h.dx + k.dy * h.dy) < 0 || (Math.sign(k.dx) !== Math.sign(h.dx)), 'the landmark\'s anchor is on the mirror side');
-  const legend = [...outer.__inner.children].filter(n => (n.getAttribute('class') || '').includes('secondary-strata-legend'));
+  // The legend's words ride arcs on the names' own sides of the band (O-276):
+  // the bookmark word on the inner arc, hanging, below the lens; the other
+  // word on the outer arc, standing, above it.
+  const legend = [...outer.__inner.children].filter(n => (n.getAttribute('class') || '') === 'secondary-strata-legend' || (n.getAttribute('class') || '').startsWith('secondary-strata-legend '));
   assert.equal(legend.length, 2);
   const [land, book] = legend;
-  assert.equal(land.getAttribute('text-anchor'), 'end');
-  assert.equal(book.getAttribute('text-anchor'), 'start');
-  assert.ok(num(land, 'x') < num(book, 'x'), 'the landmark word ends left of the axis the bookmark word starts right of');
+  assert.equal(land.dataset.side, 'outer');
+  assert.equal(book.dataset.side, 'inner');
+  assert.equal(land.getAttribute('dominant-baseline'), 'alphabetic');
+  assert.equal(book.getAttribute('dominant-baseline'), 'hanging');
+  const arcOf = t => [...outer.__inner.children].find(n => n.getAttribute('id') === t.firstChild.getAttribute('href').slice(1));
+  const radiusOf = t => Number(arcOf(t).getAttribute('d').split(' A ')[1].split(' ')[0]);
+  assert.ok(radiusOf(land) > radiusOf(book), 'the outer word\'s arc is the larger');
+  assert.equal(land.firstChild.getAttribute('startOffset'), '50%');
+  assert.equal(land.firstChild.textContent, 'LANDMARK');
 });
 
-test('a legend without sides stands as it did', async () => {
+test('a legend row without a side rides the outer arc', async () => {
   installBrowserGlobals();
   const { renderStratum } = await import('../src/view/secondary-strata-view.js');
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   const outer = renderStratum(svg, { id: 'b2', viewport: getViewportInfo(420, 800), items: ['a', 'b'], selectedIndex: 0, labelsBeside: true, labelFor: k => k, legend: [['x', 'One'], ['y', 'Two']] });
-  const legend = [...outer.__inner.children].filter(n => (n.getAttribute('class') || '').includes('secondary-strata-legend'));
-  assert.deepEqual(legend.map(n => [n.getAttribute('text-anchor'), n.getAttribute('x')]), [['start', '176.4'], ['start', '176.4']]);
+  const legend = [...outer.__inner.children].filter(n => (n.getAttribute('class') || '').startsWith('secondary-strata-legend '));
+  assert.deepEqual(legend.map(n => [n.dataset.side, n.textContent]), [['outer', 'ONE'], ['outer', 'TWO']]);
 });

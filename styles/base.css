@@ -750,12 +750,18 @@ svg :focus-visible {
    italicized in the basement" — the slant tried first did not read). The
    dark red and dark blue of 2026-09-30 are retired: every label is the
    app's ink. Nodes keep their one colour. */
+/* The legend's words ride arcs beside the band (O-276): a running title's
+   size and spacing, smaller than Howell's sketch asked ("The font should be
+   smaller than is shown"), larger than a seat's name. */
 .secondary-strata-legend {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  font-size: clamp(calc(22px * var(--iframe-scale, 1)), 2.6vmin, calc(38px * var(--iframe-scale, 1)));
+  font-weight: 700;
+  letter-spacing: 0.08em;
   pointer-events: none;
 }
+.stratum-legend-arc { fill: none; stroke: none; }
 /* THE BARE SPROCKET on a chooser ring (O-272): beyond the chain's first and
    last seat the band is its two edges only, inked like the empty vessel. */
 .secondary-strata-band-hollow {
