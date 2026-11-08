@@ -745,19 +745,17 @@ svg :focus-visible {
    THE SIDE OF THE RING'S LINE (O-275, Howell's sketch 2026-11-08: "the
    landmarks should be shifted far to the left ... mirrored about the focus
    ring line"), which the view places — a bookmark's name outward from its
-   disc, a landmark's inward, ending at the disc — and, kept from the first
-   try of the evening, a face: a landmark's name and legend word slant, a
-   bookmark's stand upright; a script with no italic (Hebrew, Arabic,
-   Syriac) stays upright. The dark red and dark blue of 2026-09-30 are
-   retired: every label is the app's ink. Nodes keep their one colour. */
+   disc, a landmark's inward, ending at the disc. Nothing in the basement
+   is italic (Howell, the same evening: "remove the italics so nothing is
+   italicized in the basement" — the slant tried first did not read). The
+   dark red and dark blue of 2026-09-30 are retired: every label is the
+   app's ink. Nodes keep their one colour. */
 .secondary-strata-legend {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
   pointer-events: none;
 }
-.secondary-strata-label.is-landmark, .secondary-strata-legend.is-landmark { font-style: italic; }
-.secondary-strata-label.is-upright-script, .secondary-strata-legend.is-upright-script { font-style: normal; }
 /* THE BARE SPROCKET on a chooser ring (O-272): beyond the chain's first and
    last seat the band is its two edges only, inked like the empty vessel. */
 .secondary-strata-band-hollow {

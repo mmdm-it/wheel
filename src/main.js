@@ -455,10 +455,10 @@ const isHit = key => { const { id, edition } = seatParts(key); return hitSeats()
 // 2026-11-08: "I want all the labels to be black") it is the SIDE OF THE
 // RING'S LINE — a bookmark's name outward from its disc as every beside-name
 // has stood, a landmark's mirrored about the line, "shifted far to the
-// left" (his sketch) — and a face, a landmark's italic, kept from the first
-// try of the evening because it costs nothing. The legend's two words stand
-// the same two ways about one axis. The mark classes below are hooks; the
-// view places, the stylesheet faces. The words are the
+// left" (his sketch). No face: the italic tried first that evening was
+// struck ("nothing is italicized in the basement"). The legend's two words
+// stand the same two ways about one axis. The mark classes below are hooks
+// that colour and face nothing; the view places. The words are the
 // tongue's own, from its naming kit (vocabulary.bookmark, .landmark), and a
 // tongue without them shows no legend rather than an English one.
 const MARK_BOOKMARK = 'is-bookmark';

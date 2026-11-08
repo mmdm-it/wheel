@@ -66,13 +66,6 @@ const svgEl = (tag, attrs) => {
 // Vietnamese, Turkish, Czech, Welsh, \u2026), otherwise leave it untouched.
 const LATIN_SCRIPT_ONLY = /^[\u0020-\u024F\u0300-\u036F\u1E00-\u1EFF]+$/;
 const displayCase = s => (LATIN_SCRIPT_ONLY.test(s) ? s.toUpperCase() : s);
-// A name that must not slant (O-275): the basement tells a landmark by an
-// italic face, and Hebrew, Arabic and Syriac have none — a browser would
-// invent an oblique those scripts never use. Such a name wears a class that
-// keeps it upright, and its disc alone says what it is.
-const NO_ITALIC_SCRIPT = /[\u0590-\u05FF\u0600-\u06FF\u0700-\u074F\u0750-\u077F\uFB1D-\uFB4F\uFB50-\uFDFF\uFE70-\uFEFF]/;
-const uprightClass = s => (NO_ITALIC_SCRIPT.test(s) ? ' is-upright-script' : '');
-
 export function hideStratum(svg, id) {
   const g = svg?.querySelector?.(`#${id}`);
   if (g) g.remove();
@@ -106,10 +99,11 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // THE MARKS (O-188, Howell 2026-09-30): a seat's NAME may wear a class of
   // its own — on the basement's ring, one for a bookmark and one for a
   // landmark ("any symbol is too busy"). They were colours; since O-275
-  // (2026-11-08) they are FACES, italic against upright, and every label is
-  // the app's ink. The legend, in the volume's own words and the same faces,
-  // sits in the open ground beside the ring. Both are the host's to name;
-  // this only draws — and adds the upright class where a script has no italic.
+  // (2026-11-08) they colour nothing and face nothing — the SIDE below is
+  // what the reader sees — and every label is the app's ink. The legend, in
+  // the volume's own words, sits in the open ground beside the ring. Both
+  // are the host's to name;
+  // this only draws.
   // THE SIDE (O-275, Howell's sketch 2026-11-08): a name beside its disc may
   // stand on either side of the ring's line — a bookmark's outward, starting
   // at the disc and running on; a landmark's MIRRORED about the line, ending
@@ -209,7 +203,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.textContent = displayCase(String(raw ?? ''));
       g.appendChild(circle);
       g.appendChild(label);
-      return { circle, label, mark: (marks?.[index] || '') + (marks?.[index] ? uprightClass(label.textContent) : ''), side: sides?.[index] ?? 1 };
+      return { circle, label, mark: marks?.[index] || '', side: sides?.[index] ?? 1 };
     });
     // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is
     // a FIXED point at magA — the reference everything rotates around. Drawn
@@ -231,7 +225,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
         const text = displayCase(String(word));
         const inward = sided && Number(side) < 0;
         const x = sided ? (inward ? lx - gap : lx + gap) : lx;
-        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}${uprightClass(text)}` : ''}`, x: x.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': inward ? 'end' : 'start', 'dominant-baseline': 'middle' });
+        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, x: x.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': inward ? 'end' : 'start', 'dominant-baseline': 'middle' });
         t.textContent = text;
         g.appendChild(t);
       });
@@ -342,7 +336,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     lensLabel.setAttribute('transform', `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`);
     const magRaw = typeof labelFor === 'function' ? labelFor(items[layout.magIndex], true) : items[layout.magIndex];
     lensLabel.textContent = displayCase(String(magRaw ?? ''));
-    lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}${uprightClass(lensLabel.textContent)}` : ''}`);
+    lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}` : ''}`);
     show(lensLabel, true);
   } else {
     show(lensLabel, false);
