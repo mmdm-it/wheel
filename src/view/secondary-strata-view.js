@@ -66,19 +66,22 @@ const svgEl = (tag, attrs) => {
 // Vietnamese, Turkish, Czech, Welsh, \u2026), otherwise leave it untouched.
 const LATIN_SCRIPT_ONLY = /^[\u0020-\u024F\u0300-\u036F\u1E00-\u1EFF]+$/;
 const displayCase = s => (LATIN_SCRIPT_ONLY.test(s) ? s.toUpperCase() : s);
-// A name that must not slant (O-275): the basement tells a landmark by an
-// italic face, and Hebrew, Arabic and Syriac have none — a browser would
-// invent an oblique those scripts never use. Such a name wears a class that
-// keeps it upright, and its disc alone says what it is.
-const NO_ITALIC_SCRIPT = /[\u0590-\u05FF\u0600-\u06FF\u0700-\u074F\u0750-\u077F\uFB1D-\uFB4F\uFB50-\uFDFF\uFE70-\uFEFF]/;
-const uprightClass = s => (NO_ITALIC_SCRIPT.test(s) ? ' is-upright-script' : '');
+// THE INDENT (O-275, Howell 2026-11-08): a name may start a little further
+// along its line than its neighbours' — on the basement's ring a landmark's
+// does, a bookmark's starts flush at its disc, and that is how the two are
+// told apart, "one to the left, the other to the right". The host says how
+// far, in ems (indentFor), so it scales with the face; the view sets it as
+// the text's dx, which runs along the name's own baseline however the name
+// is rotated. Zero is no attribute at all.
+const dxAttr = em => (em ? `${Number(em).toFixed(2)}em` : null);
+const setDx = (text, em) => { const v = dxAttr(em); if (v) text.setAttribute('dx', v); else text.removeAttribute('dx'); };
 
 export function hideStratum(svg, id) {
   const g = svg?.querySelector?.(`#${id}`);
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, legend = null } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, indentFor = null, legend = null } = {}) {
   if (!svg || !Array.isArray(items)) return null;
   // An EMPTY ring is a real state for the basement (O-126): a reader with no
   // bookmarks yet sees the band and the hollow lens and nothing on them —
@@ -109,10 +112,13 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // (2026-11-08) they are FACES, italic against upright, and every label is
   // the app's ink. The legend, in the volume's own words and the same faces,
   // sits in the open ground beside the ring. Both are the host's to name;
-  // this only draws — and adds the upright class where a script has no italic.
+  // this only draws. Since O-275 the marks carry no colour and no face; the
+  // difference the reader sees is the INDENT (indentFor, ems; legend rows may
+  // carry one as a third element), drawn as dx on the name.
   const marks = typeof markFor === 'function' ? items.map(it => markFor(it) || '') : null;
+  const indents = typeof indentFor === 'function' ? items.map(it => Number(indentFor(it)) || 0) : null;
   const legendRows = Array.isArray(legend) ? legend.filter(r => Array.isArray(r) && r[1]) : null;
-  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, legendRows]);
+  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, indents, legendRows]);
   const pose = JSON.stringify([selectedIndex, Boolean(rotating)]);
   let outer = svg.querySelector(`#${id}`);
   if (outer && outer.dataset.signature === membership && outer.dataset.pose === pose) return outer;
@@ -202,7 +208,8 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.textContent = displayCase(String(raw ?? ''));
       g.appendChild(circle);
       g.appendChild(label);
-      return { circle, label, mark: (marks?.[index] || '') + (marks?.[index] ? uprightClass(label.textContent) : '') };
+      setDx(label, indents?.[index]);
+      return { circle, label, mark: marks?.[index] || '' };
     });
     // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is
     // a FIXED point at magA — the reference everything rotates around. Drawn
@@ -215,10 +222,10 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       // Two lines in the open ground right of the ring, upright, in the
       // label's own face; black as the app's other text.
       const lx = viewport.width * 0.42, ly = viewport.height * 0.66, lh = Math.min(26, Math.max(14, 0.016 * viewport.SSd)) * 1.5;
-      legendRows.forEach(([mark, word], row) => {
-        const text = displayCase(String(word));
-        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}${uprightClass(text)}` : ''}`, x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
-        t.textContent = text;
+      legendRows.forEach(([mark, word, indent], row) => {
+        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
+        setDx(t, Number(indent) || 0);
+        t.textContent = displayCase(String(word));
         g.appendChild(t);
       });
     }
@@ -325,7 +332,8 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     lensLabel.setAttribute('transform', `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`);
     const magRaw = typeof labelFor === 'function' ? labelFor(items[layout.magIndex], true) : items[layout.magIndex];
     lensLabel.textContent = displayCase(String(magRaw ?? ''));
-    lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}${uprightClass(lensLabel.textContent)}` : ''}`);
+    lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}` : ''}`);
+    setDx(lensLabel, indents?.[layout.magIndex]);   // the indent follows the name into the lens
     show(lensLabel, true);
   } else {
     show(lensLabel, false);

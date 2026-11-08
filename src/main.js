@@ -452,15 +452,17 @@ const isHit = key => { const { id, edition } = seatParts(key); return hitSeats()
 // seeing glyphs: "any symbol is too busy and we're just going to have to do
 // it with colors"). Every node wears one colour (O-164/O-178), so the NAME
 // carries the difference. It was a colour each; since O-275 (Howell
-// 2026-11-08: "I want all the labels to be black") it is a FACE each — a
-// landmark's name italic, a bookmark's upright, the legend's two words in
-// the same two faces; the view keeps scripts without an italic upright. The
-// mark classes below are the same; the stylesheet gives them their meaning.
-// The words are the
+// 2026-11-08: "I want all the labels to be black ... one to the left, the
+// other to the right") it is WHERE THE NAME STARTS — a bookmark's flush at
+// its disc, a landmark's indented LANDMARK_INDENT_EM along the same line,
+// the legend's two words standing the same way. (Italics were tried first
+// the same evening and did not read.) The mark classes stay as hooks and
+// colour nothing. The words are the
 // tongue's own, from its naming kit (vocabulary.bookmark, .landmark), and a
 // tongue without them shows no legend rather than an English one.
 const MARK_BOOKMARK = 'is-bookmark';
 const MARK_LANDMARK = 'is-landmark';
+const LANDMARK_INDENT_EM = 1.6;    // how far a landmark's name starts past a bookmark's (O-275)
 let basementWords = null;          // { bookmark, landmark } in the reader's tongue, or null
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
@@ -484,8 +486,9 @@ const BASEMENT = {
   // Loose (arrived with, or dropped this visit): hollow, provisional.
   classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
   markFor: key => (keptSeat(key) ? MARK_BOOKMARK : isHit(key) ? MARK_LANDMARK : null),
+  indentFor: key => (!keptSeat(key) && isHit(key) ? LANDMARK_INDENT_EM : 0),   // a kept hit is a bookmark, flush
   legend: () => (basementWords && (basementWords.bookmark || basementWords.landmark)
-    ? [[MARK_LANDMARK, basementWords.landmark], [MARK_BOOKMARK, basementWords.bookmark]] : null),
+    ? [[MARK_LANDMARK, basementWords.landmark, LANDMARK_INDENT_EM], [MARK_BOOKMARK, basementWords.bookmark]] : null),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; }
 };
@@ -1264,7 +1267,7 @@ const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
   mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
   classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0,
-  markFor: ch.markFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
+  markFor: ch.markFor || null, indentFor: ch.indentFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
 });
 
 function renderStack({ keepFront = false } = {}) {

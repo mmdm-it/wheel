@@ -741,13 +741,14 @@ svg :focus-visible {
 /* Names on a receding ring do not re-hint at every fractional scale. */
 .secondary-strata-label { text-rendering: geometricPrecision; }
 /* The basement's legend (O-188): the label's face and size, upright in the
-   open ground beside the ring. WHAT TELLS A LANDMARK FROM A BOOKMARK is the
-   FACE, not a colour (O-275, Howell 2026-11-08: "I want all the labels to
-   be black"; the dark red and dark blue of 2026-09-30 are retired): a
-   landmark's name and its legend word slant, a bookmark's stand upright —
-   the given thing set in the volume's furniture against the reader's own.
-   A name in a script that has no italic (Hebrew, Arabic, Syriac) stays
-   upright and its disc alone carries the distinction. Every label is the
+   open ground beside the ring. WHAT TELLS A LANDMARK FROM A BOOKMARK is
+   WHERE THE NAME STARTS, not a colour and not a face (O-275, Howell
+   2026-11-08: "I want all the labels to be black ... one to the left, the
+   other to the right"): a bookmark's name starts flush beside its disc, a
+   landmark's is indented along the same line, and the legend's two words
+   stand the same way. The dark red and dark blue of 2026-09-30 are retired;
+   the italics tried the same evening did not read. The indent is the view's
+   (a dx on the text, in ems, so it scales with the face); every label is the
    app's ink. Nodes keep their one colour. */
 .secondary-strata-legend {
   fill: var(--color-text);
@@ -755,8 +756,6 @@ svg :focus-visible {
   font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
   pointer-events: none;
 }
-.secondary-strata-label.is-landmark, .secondary-strata-legend.is-landmark { font-style: italic; }
-.secondary-strata-label.is-upright-script, .secondary-strata-legend.is-upright-script { font-style: normal; }
 /* THE BARE SPROCKET on a chooser ring (O-272): beyond the chain's first and
    last seat the band is its two edges only, inked like the empty vessel. */
 .secondary-strata-band-hollow {
