@@ -49,12 +49,18 @@ const BESIDE_OFFSET = 1.3;           // node radii, along the node's angle (outw
 // therefore should not be centered at all at any time."
 const COVER_PULL = MAG_LABEL_SPAN_PULL; // node radii, outward from the centre: the name starts here and runs over the node
 const LENS_SCALE_PEAK = 2.0;
-// The legend's arcs (O-276): gap from the band's edge in node radii, where
-// each word is centred in node spacings from the lens, and the half-span of
-// the arc it rides (room for a long tongue's word).
-const LEGEND_GAP = 2.5;
-const LEGEND_ABOVE = 2.5;   // the outer word, up the arc from the lens
-const LEGEND_BELOW = 4;     // the inner word, down the arc from the lens
+// The legend's arcs (O-276), measured off Howell's second sketch (2026-11-08,
+// red strokes over the basement on his phone, read back against the ring's
+// hub and radius for that viewport): each word's arc stands so far from the
+// ring's centreline, as a fraction of the short side, and each word is
+// centred so many seats from the lens along the arc. The outer word sits
+// level with the lens, well clear of the names; the inner word four and a
+// half seats below it, deep in the open hub side. The half-span is the room
+// a long tongue's word may take.
+const LEGEND_OUTER_REACH = 0.33;   // × SSd outward from the centreline
+const LEGEND_INNER_REACH = 0.55;   // × SSd inward
+const LEGEND_ABOVE = 0;            // the outer word, in seats up the arc from the lens
+const LEGEND_BELOW = 4.6;          // the inner word, in seats down the arc
 const LEGEND_SPAN = 3;
 const LENS_SCALE_SIGMA = 0.3;        // × node spacing
 
@@ -227,15 +233,14 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       // on the side of the band its names lie on: a bookmark's name runs
       // hubward of its disc, so its word is on the inner arc, below the
       // lens, where that side is open; the other word on the outer arc,
-      // above the lens, where the outer side is. The same gap from the
-      // band's edge on both sides — the inner word hangs from its arc, the
-      // outer stands on it.
+      // level with the lens, where the outer side is. Each at the reach his
+      // sketch gave it — the inner word hangs from its arc, the outer stands
+      // on it.
       const { hubX, hubY, radius } = layout.arc;
-      const half = bandWidth / 2 + nodeR * LEGEND_GAP;
       const at = (r, a) => `${(hubX + r * Math.cos(a)).toFixed(1)} ${(hubY + r * Math.sin(a)).toFixed(1)}`;
       legendRows.forEach(([mark, word, side], row) => {
         const inner = Number(side) > 0;
-        const r = inner ? radius - half : radius + half;
+        const r = inner ? radius - viewport.SSd * LEGEND_INNER_REACH : radius + viewport.SSd * LEGEND_OUTER_REACH;
         const centre = layout.magA + (inner ? -LEGEND_BELOW : LEGEND_ABOVE) * layout.spacing;
         const a0 = centre - LEGEND_SPAN * layout.spacing, a1 = centre + LEGEND_SPAN * layout.spacing;
         const pid = `${id}-legend-${row}`;
