@@ -451,8 +451,12 @@ const isHit = key => { const { id, edition } = seatParts(key); return hitSeats()
 // each verse in the focus ring would have this symbol next to it"; then,
 // seeing glyphs: "any symbol is too busy and we're just going to have to do
 // it with colors"). Every node wears one colour (O-164/O-178), so the NAME
-// carries the difference: a bookmark's in one colour, a landmark's in
-// another, the legend's two words in the same two. The words are the
+// carries the difference. It was a colour each; since O-275 (Howell
+// 2026-11-08: "I want all the labels to be black") it is a FACE each — a
+// landmark's name italic, a bookmark's upright, the legend's two words in
+// the same two faces; the view keeps scripts without an italic upright. The
+// mark classes below are the same; the stylesheet gives them their meaning.
+// The words are the
 // tongue's own, from its naming kit (vocabulary.bookmark, .landmark), and a
 // tongue without them shows no legend rather than an English one.
 const MARK_BOOKMARK = 'is-bookmark';

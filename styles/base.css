@@ -741,17 +741,22 @@ svg :focus-visible {
 /* Names on a receding ring do not re-hint at every fractional scale. */
 .secondary-strata-label { text-rendering: geometricPrecision; }
 /* The basement's legend (O-188): the label's face and size, upright in the
-   open ground beside the ring; and THE COLOURS that tell a bookmark from a
-   landmark, on the legend's words and on the seats' names alike (Howell
-   2026-09-30: "a dark red and a dark blue"). Nodes keep their one colour. */
+   open ground beside the ring. WHAT TELLS A LANDMARK FROM A BOOKMARK is the
+   FACE, not a colour (O-275, Howell 2026-11-08: "I want all the labels to
+   be black"; the dark red and dark blue of 2026-09-30 are retired): a
+   landmark's name and its legend word slant, a bookmark's stand upright —
+   the given thing set in the volume's furniture against the reader's own.
+   A name in a script that has no italic (Hebrew, Arabic, Syriac) stays
+   upright and its disc alone carries the distinction. Every label is the
+   app's ink. Nodes keep their one colour. */
 .secondary-strata-legend {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
   pointer-events: none;
 }
-.secondary-strata-label.is-landmark, .secondary-strata-legend.is-landmark { fill: #7f1d1d; }
-.secondary-strata-label.is-bookmark, .secondary-strata-legend.is-bookmark { fill: #16337a; }
+.secondary-strata-label.is-landmark, .secondary-strata-legend.is-landmark { font-style: italic; }
+.secondary-strata-label.is-upright-script, .secondary-strata-legend.is-upright-script { font-style: normal; }
 /* THE BARE SPROCKET on a chooser ring (O-272): beyond the chain's first and
    last seat the band is its two edges only, inked like the empty vessel. */
 .secondary-strata-band-hollow {

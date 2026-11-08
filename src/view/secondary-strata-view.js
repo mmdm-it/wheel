@@ -66,6 +66,12 @@ const svgEl = (tag, attrs) => {
 // Vietnamese, Turkish, Czech, Welsh, \u2026), otherwise leave it untouched.
 const LATIN_SCRIPT_ONLY = /^[\u0020-\u024F\u0300-\u036F\u1E00-\u1EFF]+$/;
 const displayCase = s => (LATIN_SCRIPT_ONLY.test(s) ? s.toUpperCase() : s);
+// A name that must not slant (O-275): the basement tells a landmark by an
+// italic face, and Hebrew, Arabic and Syriac have none — a browser would
+// invent an oblique those scripts never use. Such a name wears a class that
+// keeps it upright, and its disc alone says what it is.
+const NO_ITALIC_SCRIPT = /[\u0590-\u05FF\u0600-\u06FF\u0700-\u074F\u0750-\u077F\uFB1D-\uFB4F\uFB50-\uFDFF\uFE70-\uFEFF]/;
+const uprightClass = s => (NO_ITALIC_SCRIPT.test(s) ? ' is-upright-script' : '');
 
 export function hideStratum(svg, id) {
   const g = svg?.querySelector?.(`#${id}`);
@@ -99,10 +105,11 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   const classes = typeof classFor === 'function' ? items.map(it => classFor(it) || '') : null;
   // THE MARKS (O-188, Howell 2026-09-30): a seat's NAME may wear a class of
   // its own — on the basement's ring, one for a bookmark and one for a
-  // landmark, each a colour ("any symbol is too busy and we're just going to
-  // have to do it with colors"). The legend, in the volume's own words and
-  // the same colours, sits in the open ground beside the ring. Both are the
-  // host's to name; this only draws.
+  // landmark ("any symbol is too busy"). They were colours; since O-275
+  // (2026-11-08) they are FACES, italic against upright, and every label is
+  // the app's ink. The legend, in the volume's own words and the same faces,
+  // sits in the open ground beside the ring. Both are the host's to name;
+  // this only draws — and adds the upright class where a script has no italic.
   const marks = typeof markFor === 'function' ? items.map(it => markFor(it) || '') : null;
   const legendRows = Array.isArray(legend) ? legend.filter(r => Array.isArray(r) && r[1]) : null;
   const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, legendRows]);
@@ -195,7 +202,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.textContent = displayCase(String(raw ?? ''));
       g.appendChild(circle);
       g.appendChild(label);
-      return { circle, label, mark: marks?.[index] || '' };
+      return { circle, label, mark: (marks?.[index] || '') + (marks?.[index] ? uprightClass(label.textContent) : '') };
     });
     // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is
     // a FIXED point at magA — the reference everything rotates around. Drawn
@@ -209,8 +216,9 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       // label's own face; black as the app's other text.
       const lx = viewport.width * 0.42, ly = viewport.height * 0.66, lh = Math.min(26, Math.max(14, 0.016 * viewport.SSd)) * 1.5;
       legendRows.forEach(([mark, word], row) => {
-        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
-        t.textContent = displayCase(String(word));
+        const text = displayCase(String(word));
+        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}${uprightClass(text)}` : ''}`, x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
+        t.textContent = text;
         g.appendChild(t);
       });
     }
@@ -317,7 +325,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     lensLabel.setAttribute('transform', `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${magRotDeg.toFixed(1)})`);
     const magRaw = typeof labelFor === 'function' ? labelFor(items[layout.magIndex], true) : items[layout.magIndex];
     lensLabel.textContent = displayCase(String(magRaw ?? ''));
-    lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}` : ''}`);
+    lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}${uprightClass(lensLabel.textContent)}` : ''}`);
     show(lensLabel, true);
   } else {
     show(lensLabel, false);
