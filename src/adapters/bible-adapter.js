@@ -1236,10 +1236,16 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     const edition = volume.editionOf?.(bookId) || options?.activeEdition || options?.translation || null;
     const shelf = volume.booksFor?.(edition) || [];
     const book = shelf.find(b => b.id === bookId);
-    const shardIds = (volume.shards || volume.units || []).map(sh => sh?.id ?? sh);
-    // The shard's place in the volume; failing that (a volume that declares
-    // no shards), the book's place on its own edition's shelf.
-    let bookRank = book?.shards?.[0] ? shardIds.indexOf(book.shards[0]) : -1;
+    // THE BOOK'S PLACE IS ITS PLACE ON A SHELF (O-275, 2026-11-08). The
+    // first cut ranked it by its shard's place in the volume's shard list,
+    // and that list stands in NO order — it is the superset of W-96, in no
+    // edition's sequence — so the basement sorted its seats by chance and
+    // two Maccabees bookmarks sat below the Epistles. The shelf is ordered:
+    // the edition UP's where it holds the book's shard, so every seat on the
+    // ring is measured on one shelf; the book's own edition's otherwise.
+    const up = options?.activeEdition || options?.translation || null;
+    const onShelf = (list, sh) => { const i = (list || []).findIndex(b => Array.isArray(b.shards) && b.shards.includes(sh)); return i < 0 ? -1 : (Number.isFinite(list[i].order) ? list[i].order : i); };
+    let bookRank = book?.shards?.[0] && up && up !== edition ? onShelf(volume.booksFor?.(up), book.shards[0]) : -1;
     if (bookRank < 0 && book) bookRank = Number.isFinite(book.order) ? book.order : shelf.indexOf(book);
     const label = String(item.name ?? '');
     const m = /^(\d+)([a-z]*)$/.exec(label);
@@ -1274,6 +1280,22 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     }
     hitSeatsCache = { edition, seats };
     return seats;
+  };
+  // WHERE A LEAF STANDS ON THE EDITION UP (O-275): the seat holding it on
+  // this edition's whole-volume chain, placed as a hit is; null when this
+  // edition does not seat it. The basement asks this for every kept seat at
+  // each paint, so the answers are cached per edition.
+  let placeCache = null;
+  const seatPlace = leaf => {
+    if (!leaf) return null;
+    const edition = options?.activeEdition || options?.translation || null;
+    if (!placeCache || placeCache.edition !== edition) placeCache = { edition, places: new Map() };
+    if (placeCache.places.has(leaf)) return placeCache.places.get(leaf);
+    const { items } = verseChain(null);
+    const item = (items || []).find(it => it && Array.isArray(it.meta?.utterances) && it.meta.utterances.includes(leaf));
+    const at = item ? seatOrderOf(item) : null;
+    placeCache.places.set(leaf, at);
+    return at;
   };
   // The parent seat at the top is words alone (discless) and, with no
   // gateway above, not even that (O-190).
@@ -1431,12 +1453,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     //
     prominenceOf,
     // WHERE A SEAT STANDS, for the basement's order (O-128): the book ranked
-    // by the shard its leaf lives in — shared by every edition, in the
-    // volume's declared order — then the chapter and verse numbers the seat
+    // by its place on the shelf (the edition up's where it holds the book,
+    // its own edition's otherwise — O-275; the shard list ranked it before
+    // and stands in no order), then the chapter and verse numbers the seat
     // was kept under, then the edition's place among the volume's editions.
     // A lettered verse (62a) carries its letter as the tail; a heading
     // (head) counts as 0.
     seatOrder: item => seatOrderOf(item),
+    seatPlace,
     hitSeats,
     // Which way the edition up writes (O-139): the view and the flights seat a
     // suffixed parent label by it — the numeral leads a Hebrew name to the eye.

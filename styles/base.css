@@ -741,14 +741,15 @@ svg :focus-visible {
 /* Names on a receding ring do not re-hint at every fractional scale. */
 .secondary-strata-label { text-rendering: geometricPrecision; }
 /* The basement's legend (O-188): the label's face and size, upright in the
-   open ground beside the ring. WHAT TELLS A LANDMARK FROM A BOOKMARK is the
-   FACE, not a colour (O-275, Howell 2026-11-08: "I want all the labels to
-   be black"; the dark red and dark blue of 2026-09-30 are retired): a
-   landmark's name and its legend word slant, a bookmark's stand upright —
-   the given thing set in the volume's furniture against the reader's own.
-   A name in a script that has no italic (Hebrew, Arabic, Syriac) stays
-   upright and its disc alone carries the distinction. Every label is the
-   app's ink. Nodes keep their one colour. */
+   open ground beside the ring. WHAT TELLS A LANDMARK FROM A BOOKMARK is
+   THE SIDE OF THE RING'S LINE (O-275, Howell's sketch 2026-11-08: "the
+   landmarks should be shifted far to the left ... mirrored about the focus
+   ring line"), which the view places — a bookmark's name outward from its
+   disc, a landmark's inward, ending at the disc — and, kept from the first
+   try of the evening, a face: a landmark's name and legend word slant, a
+   bookmark's stand upright; a script with no italic (Hebrew, Arabic,
+   Syriac) stays upright. The dark red and dark blue of 2026-09-30 are
+   retired: every label is the app's ink. Nodes keep their one colour. */
 .secondary-strata-legend {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;

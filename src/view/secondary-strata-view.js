@@ -78,7 +78,7 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, legend = null } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, sideFor = null, legend = null } = {}) {
   if (!svg || !Array.isArray(items)) return null;
   // An EMPTY ring is a real state for the basement (O-126): a reader with no
   // bookmarks yet sees the band and the hollow lens and nothing on them —
@@ -110,9 +110,16 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // the app's ink. The legend, in the volume's own words and the same faces,
   // sits in the open ground beside the ring. Both are the host's to name;
   // this only draws — and adds the upright class where a script has no italic.
+  // THE SIDE (O-275, Howell's sketch 2026-11-08): a name beside its disc may
+  // stand on either side of the ring's line — a bookmark's outward, starting
+  // at the disc and running on; a landmark's MIRRORED about the line, ending
+  // at the disc and running inward, "shifted far to the left". The host says
+  // which (sideFor: +1 outward, -1 inward; a legend row's third element the
+  // same), and the legend's words stand the same way about one axis.
   const marks = typeof markFor === 'function' ? items.map(it => markFor(it) || '') : null;
+  const sides = typeof sideFor === 'function' ? items.map(it => (Number(sideFor(it)) < 0 ? -1 : 1)) : null;
   const legendRows = Array.isArray(legend) ? legend.filter(r => Array.isArray(r) && r[1]) : null;
-  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, legendRows]);
+  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, sides, legendRows]);
   const pose = JSON.stringify([selectedIndex, Boolean(rotating)]);
   let outer = svg.querySelector(`#${id}`);
   if (outer && outer.dataset.signature === membership && outer.dataset.pose === pose) return outer;
@@ -202,7 +209,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.textContent = displayCase(String(raw ?? ''));
       g.appendChild(circle);
       g.appendChild(label);
-      return { circle, label, mark: (marks?.[index] || '') + (marks?.[index] ? uprightClass(label.textContent) : '') };
+      return { circle, label, mark: (marks?.[index] || '') + (marks?.[index] ? uprightClass(label.textContent) : ''), side: sides?.[index] ?? 1 };
     });
     // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is
     // a FIXED point at magA — the reference everything rotates around. Drawn
@@ -215,9 +222,16 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       // Two lines in the open ground right of the ring, upright, in the
       // label's own face; black as the app's other text.
       const lx = viewport.width * 0.42, ly = viewport.height * 0.66, lh = Math.min(26, Math.max(14, 0.016 * viewport.SSd)) * 1.5;
-      legendRows.forEach(([mark, word], row) => {
+      // Sided rows stand about an axis at lx as the names stand about the
+      // ring's line: the inward word ends a little left of it, the outward
+      // word starts a little right. Rows without a side start at lx as before.
+      const sided = legendRows.some(r => r[2] != null);
+      const gap = nodeR * 0.6;
+      legendRows.forEach(([mark, word, side], row) => {
         const text = displayCase(String(word));
-        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}${uprightClass(text)}` : ''}`, x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
+        const inward = sided && Number(side) < 0;
+        const x = sided ? (inward ? lx - gap : lx + gap) : lx;
+        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}${uprightClass(text)}` : ''}`, x: x.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': inward ? 'end' : 'start', 'dominant-baseline': 'middle' });
         t.textContent = text;
         g.appendChild(t);
       });
@@ -276,24 +290,27 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     seat.circle.setAttribute('r', (nodeR * magScale).toFixed(1));
     const rotDeg = (node.angle * 180) / Math.PI + 180;
     const label = seat.label;
+    const side = seat.side ?? 1;   // +1 outward from the disc, -1 mirrored about the ring's line (O-275)
     if (labelsBeside && magScale <= 1.01) {
-      // Beside the node, left-aligned: the name starts just past the node and runs on.
-      const lx = node.x + Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
-      const ly = node.y + Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
+      // Beside the node: outward, the name starts just past the node and
+      // runs on; inward (side -1), it ends just short of the node and runs
+      // the other way — the same distance, the mirror anchor.
+      const lx = node.x + side * Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
+      const ly = node.y + side * Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
       label.setAttribute('x', lx.toFixed(1));
       label.setAttribute('y', ly.toFixed(1));
-      label.setAttribute('text-anchor', 'start');
+      label.setAttribute('text-anchor', side < 0 ? 'end' : 'start');
       label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
     } else if (mirrored && !centerMagnified) {
       // Over the node, from COVER_PULL radii out toward the hub, wherever
       // the node is. Passing the lens it swells about that same start,
       // never centred.
-      const lx = node.x + Math.cos(node.angle) * nodeR * COVER_PULL;
-      const ly = node.y + Math.sin(node.angle) * nodeR * COVER_PULL;
+      const lx = node.x + side * Math.cos(node.angle) * nodeR * COVER_PULL;
+      const ly = node.y + side * Math.sin(node.angle) * nodeR * COVER_PULL;
       label.setAttribute('x', '0');
       label.setAttribute('y', '0');
-      label.setAttribute('text-anchor', 'start');
+      label.setAttribute('text-anchor', side < 0 ? 'end' : 'start');
       label.setAttribute('class', `secondary-strata-label is-beside${magScale > 1.01 ? ' is-passing' : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `translate(${lx.toFixed(1)}, ${ly.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`);
     } else {

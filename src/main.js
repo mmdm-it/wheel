@@ -452,11 +452,13 @@ const isHit = key => { const { id, edition } = seatParts(key); return hitSeats()
 // seeing glyphs: "any symbol is too busy and we're just going to have to do
 // it with colors"). Every node wears one colour (O-164/O-178), so the NAME
 // carries the difference. It was a colour each; since O-275 (Howell
-// 2026-11-08: "I want all the labels to be black") it is a FACE each — a
-// landmark's name italic, a bookmark's upright, the legend's two words in
-// the same two faces; the view keeps scripts without an italic upright. The
-// mark classes below are the same; the stylesheet gives them their meaning.
-// The words are the
+// 2026-11-08: "I want all the labels to be black") it is the SIDE OF THE
+// RING'S LINE — a bookmark's name outward from its disc as every beside-name
+// has stood, a landmark's mirrored about the line, "shifted far to the
+// left" (his sketch) — and a face, a landmark's italic, kept from the first
+// try of the evening because it costs nothing. The legend's two words stand
+// the same two ways about one axis. The mark classes below are hooks; the
+// view places, the stylesheet faces. The words are the
 // tongue's own, from its naming kit (vocabulary.bookmark, .landmark), and a
 // tongue without them shows no legend rather than an English one.
 const MARK_BOOKMARK = 'is-bookmark';
@@ -472,9 +474,18 @@ const BASEMENT = {
     // (the arrival, anything dropped this visit) after them. A hit is seated
     // in the edition up, with the label the primary would show; a hit the
     // reader has also kept is one seat, drawn kept.
-    const kept = bookmarksOf(currentVolumeId);
+    // A KEPT SEAT'S PLACE IS ASKED AGAIN, on the edition up (O-275, Howell's
+    // sketch 2026-11-08: two Maccabees bookmarks sat below the Epistles —
+    // "They should be further up the ring as the last of the Old Testament
+    // books"). The place a bookmark was kept with ranked its book by the
+    // shard list, which stands in no order (W-96); the adapter now ranks by
+    // the shelf, and a seat the edition up holds is ranked on THAT shelf, so
+    // every seat on the ring is measured with one rule. A seat the edition up
+    // does not hold keeps the place it was kept with.
+    const kept = bookmarksOf(currentVolumeId).map(b => { let at = null; try { at = seatPlace(b.id); } catch (_) { at = null; } return at ? { ...b, at } : b; });
     const hits = hitSeats().filter(h => !kept.some(b => b.id === h.id && (b.edition ?? null) === (h.edition ?? null)));
     for (const h of hits) { const k = seatKey(h.id, h.edition); basementLabels[k] = h.label; basementPlaces[k] = h.at; }
+    for (const b of kept) if (b.at) basementPlaces[seatKey(b.id, b.edition)] = b.at;
     const keys = inOrder([...kept, ...hits]).map(b => seatKey(b.id, b.edition));
     for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
     return keys;
@@ -484,8 +495,9 @@ const BASEMENT = {
   // Loose (arrived with, or dropped this visit): hollow, provisional.
   classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
   markFor: key => (keptSeat(key) ? MARK_BOOKMARK : isHit(key) ? MARK_LANDMARK : null),
+  sideFor: key => (!keptSeat(key) && isHit(key) ? -1 : 1),   // a landmark's name inward of the line; a kept hit is a bookmark
   legend: () => (basementWords && (basementWords.bookmark || basementWords.landmark)
-    ? [[MARK_LANDMARK, basementWords.landmark], [MARK_BOOKMARK, basementWords.bookmark]] : null),
+    ? [[MARK_LANDMARK, basementWords.landmark, -1], [MARK_BOOKMARK, basementWords.bookmark, 1]] : null),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; }
 };
@@ -1264,7 +1276,7 @@ const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
   mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
   classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0,
-  markFor: ch.markFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
+  markFor: ch.markFor || null, sideFor: ch.sideFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
 });
 
 function renderStack({ keepFront = false } = {}) {
@@ -1880,6 +1892,7 @@ function resetStrata() {
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
 let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
+let seatPlace = () => null;     // O-275: where a LEAF stands on the edition up, or null if it does not hold it
 let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
 let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
@@ -4746,6 +4759,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
   seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
+  seatPlace = typeof handlerSet.seatPlace === 'function' ? handlerSet.seatPlace : () => null;
   hitSeats = typeof handlerSet.hitSeats === 'function' ? handlerSet.hitSeats : () => [];
   // The chooser offers the editions that hold where the reader stands (H-29).
   editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;
