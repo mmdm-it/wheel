@@ -20,14 +20,20 @@
 // exactly as it returns — the reader passes through into a darker room,
 // rather than watching the room darken around a floor still under foot.
 //
-// It writes the legacy `--color-bg` on the root, which the body and every
-// knock-out stroke already read; the theme's own `--theme-color-bg` is left
-// alone and re-read at every call, so a volume change under the basement
-// deepens the new ground and not the old.
+// WHAT IT PAINTS: the INLINE background colour of the root and the body —
+// the two the theme itself paints inline (applyTheme), which is why they,
+// and not a variable, are the ground the reader sees. The first cut wrote
+// the legacy `--color-bg` variable instead: the inline paint beat it under
+// the basement, and the one thing that read the variable was the sideways
+// page, which came up dark while the basement stayed tan (Howell,
+// 2026-11-08: "Instead of the basement background, you've made landscape
+// background darker"). The primary's own svg is left alone: it is the floor
+// that dissolves, and the ground shows through it. The theme's
+// `--theme-color-bg` is re-read at every call, so a volume change under
+// the basement deepens the new ground and not the old; at depth 0 the
+// theme's own colour is painted back.
 
 const BASEMENT_DIM = 0.5;    // how far the ground travels toward black at full depth
-// legacy variable → the theme variable it is scaled from
-const DIMMED = [['--color-bg', '--theme-color-bg']];
 
 function parseColor(raw) {
   const s = String(raw || '').trim();
@@ -59,12 +65,11 @@ export function setBasementDepth(depth, root = typeof document !== 'undefined' ?
   if (!root?.style) return;
   const d = Math.max(0, Math.min(1, Number(depth) || 0));
   lastDepth = d;
-  if (d <= 0.001) { for (const [v] of DIMMED) root.style.removeProperty(v); return; }
-  const cs = typeof getComputedStyle === 'function' ? getComputedStyle(root) : null;
-  for (const [v, from] of DIMMED) {
-    const theme = root.style.getPropertyValue(from) || (cs ? cs.getPropertyValue(from) : '');
-    const dimmed = basementGround(theme, d);
-    if (dimmed) root.style.setProperty(v, dimmed); else root.style.removeProperty(v);
-  }
+  const theme = root.style.getPropertyValue('--theme-color-bg')
+    || (typeof getComputedStyle === 'function' ? getComputedStyle(root).getPropertyValue('--theme-color-bg') : '');
+  const ground = basementGround(theme, d);
+  if (!ground) return;   // no theme yet: nothing to deepen, nothing to restore
+  const body = typeof document !== 'undefined' ? document.body : null;
+  for (const el of [root, body]) if (el?.style) el.style.backgroundColor = ground;
 }
 export const basementDepth = () => lastDepth;

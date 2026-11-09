@@ -27,20 +27,21 @@ test('the ground deepens in its own hue: every channel scaled alike, the theme u
   assert.equal(basementGround('', 1), null, 'no theme, no ground');
 });
 
-test('the depth dims the ground alone on the root — the band and the nodes keep the theme\'s colours — and clears it on the floors above', () => {
+test('the depth paints the root\'s inline ground — the one the theme paints — and the theme\'s own colour back on the floors above', () => {
   const root = { style: (() => { const s = {}; Object.defineProperties(s, {
     setProperty: { value(n, v) { s[n] = v; } }, getPropertyValue: { value(n) { return s[n] ?? ''; } }, removeProperty: { value(n) { delete s[n]; } } }); return s; })() };
   root.style.setProperty('--theme-color-bg', '#d9a877');
   root.style.setProperty('--theme-color-band', '#8b6f47');
   root.style.setProperty('--theme-color-orbital', '#8b6f47');
   root.style.setProperty('--theme-color-node', '#8b6f47');
+  root.style.backgroundColor = '#d9a877';   // as applyTheme paints it
   setBasementDepth(1, root);
-  assert.equal(root.style['--color-bg'], basementGround('#d9a877', 1));
-  for (const v of ['--color-band', '--color-orbital', '--color-nodes']) assert.equal(root.style[v], undefined, `${v} is the theme's own (Howell: "It should return to its original setting")`);
+  assert.equal(root.style.backgroundColor, basementGround('#d9a877', 1));
+  for (const v of ['--color-bg', '--color-band', '--color-orbital', '--color-nodes']) assert.equal(root.style[v], undefined, `${v} untouched: the band and nodes are the theme's own, and the sideways page reads --color-bg`);
   setBasementDepth(0.25, root);
-  assert.equal(root.style['--color-bg'], basementGround('#d9a877', 0.25));
+  assert.equal(root.style.backgroundColor, basementGround('#d9a877', 0.25));
   setBasementDepth(0, root);
-  assert.equal(root.style['--color-bg'], undefined, 'the theme speaks again');
+  assert.equal(root.style.backgroundColor, 'rgb(217, 168, 119)', 'the theme\'s own colour painted back');
 });
 
 test('the host hands the glide the floor\'s dissolve and the settle the floor it stands on', () => {
