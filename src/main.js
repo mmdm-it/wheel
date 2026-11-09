@@ -2487,6 +2487,7 @@ if (dimensionButton) {
       if (Math.abs(dy) <= STRATA_TAP_SLOP) return;
       slide.moved = true;
       dimensionButton.classList.add('is-sliding');
+      cancelPendingTap();   // a slide begun after a tap is a slide, not a double (O-281)
     }
     const raw = slide.startFront + dy / notchPx();
     const min = minStrataFront();
@@ -2518,8 +2519,29 @@ if (dimensionButton) {
   ['pointerup', 'pointercancel'].forEach(type => dimensionButton.addEventListener(type, release));
   dimensionButton.addEventListener('click', () => {
     if (suppressClick) { suppressClick = false; return; }
-    cycleStrata();
+    tapGlobe();
   });
+}
+// THE DOUBLE TAP GOES DOWN (O-281, Howell 2026-11-09: "What's missing is a
+// tap on the dimension button from the primary stratum to take you down to
+// the basement. So I propose a double tap ... a single tap on the dimension
+// button takes that user up to languages and editions. A double tap on that
+// same primary stratum dimension button takes the user down into the
+// basement"). Swipe up and tap both go up; swipe down and double tap both go
+// down; the pause at the text stays the rule for both. A double can only be
+// told from a single by WAITING for the second, so from the text — the one
+// floor with two ways to go — a tap is held back DOUBLE_TAP_MS before it
+// climbs; the glide itself takes twice that, so the tap reads as a touch
+// heavier rather than slow. From every other floor a tap acts at once, and a
+// double there is two taps. A slide begun after a first tap cancels the held
+// tap. The window is a knob for the glass: ?doubletap=280.
+const DOUBLE_TAP_MS = (() => { try { const v = parseFloat(new URLSearchParams(window.location.search).get('doubletap')); return Number.isFinite(v) && v > 0 ? v : 280; } catch (_) { return 280; } })();
+let tapPending = null;   // the timer of a single tap from the text, held back while a second might come
+function cancelPendingTap() { if (tapPending) { clearTimeout(tapPending); tapPending = null; } }
+function tapGlobe() {
+  if (strataFront !== 0 || minStrataFront() >= 0) { cycleStrata(); return; }   // only the text has two ways to go
+  if (tapPending) { cancelPendingTap(); goToStratum(minStrataFront()); return; }   // the second tap: down
+  tapPending = setTimeout(() => { tapPending = null; cycleStrata(); }, DOUBLE_TAP_MS);
 }
 
 // THE PROOFREADER'S SHORTCUT (O-123, Howell 2026-08-31: "I want you to cheat,
@@ -2587,6 +2609,7 @@ if (typeof window !== 'undefined') {
     // How far the strata have travelled: 0 = the reader is at the text.
     front: () => strataFront,
     cycle: cycleStrata,
+    tap: tapGlobe,            // O-281: the globe's tap as the finger gives it — held back from the text, a double goes down
     // O-126: the slider's address, and the basement's state.
     slide: goToStratum,
     scrub: scrubTo,
