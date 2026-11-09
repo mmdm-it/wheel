@@ -65,14 +65,23 @@ const LENS_SCALE_PEAK = 2.0;
 // on whatever phone is in hand; the faintness is the stylesheet's. The
 // outer word's reach came in from the sketch's 0.33 — a watermark lies
 // under the names rather than beside them, and the corner wedge at 0.33
-// has room for a title, not a watermark.
-const LEGEND_OUTER_REACH = 0.2;    // × SSd outward from the centreline
-const LEGEND_INNER_REACH = 0.55;   // × SSd inward
-const LEGEND_FILL = 0.92;          // of the visible arc the word may take
+// has room for a title, not a watermark. His third sketch (the same
+// evening) brought the inner word nearer the band and put the outer one
+// on two lines: a word breaks at its spaces and after its hyphens, each
+// line on its own concentric arc, the first line farthest from the hub
+// (the top line as the reader holds the phone, on either side), all at
+// the one size the narrowest line's run allows.
+const LEGEND_OUTER_REACH = 0.2;    // × SSd outward from the centreline, the line nearest the band
+const LEGEND_INNER_REACH = 0.34;   // × SSd inward, likewise
+const LEGEND_FILL = 0.92;          // of the visible arc a line may take
 const LEGEND_EM_PER_GLYPH = 0.8;   // a bold capital's advance plus the tracking, in em
 const LEGEND_CAP = 0.72;           // a capital's height, in em
-const LEGEND_MAX_EM = 0.2;         // × SSd — the ceiling on a wide glass
+const LEGEND_LINE_PITCH = 1.15;    // em, arc to arc
+const LEGEND_MAX_EM = 0.17;        // × SSd — the ceiling on a wide glass
 const LEGEND_MIN_EM = 0.05;        // × SSd — the floor, a running title's size
+// "Oft-quoted" → ["OFT-", "QUOTED"]; "Usein lainatut" → two lines; no lookbehind (older WebKit).
+export const legendLines = word => String(word).split(/\s+/).filter(Boolean)
+  .flatMap(w => w.split('-').map((part, i, all) => (i < all.length - 1 ? `${part}-` : part)).filter(Boolean));
 
 // The stretch of a circle about (hubX, hubY) of radius r that lies on a
 // w × h glass: the longest run of angles whose points fall inside it, as
@@ -277,26 +286,35 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       legendRows.forEach(([mark, word, side], row) => {
         const inner = Number(side) > 0;
         const r = inner ? radius - viewport.SSd * LEGEND_INNER_REACH : radius + viewport.SSd * LEGEND_OUTER_REACH;
-        const text = displayCase(String(word));
-        // Sized to the visible run of the arc where the letters' BODY lies
-        // (outward of the path for the standing word, inward for the
-        // hanging one), which takes one pass more than the path itself.
-        const glyphs = Math.max(1, [...text].length) * LEGEND_EM_PER_GLYPH;
-        const fit = rr => { const v = visibleArc(hubX, hubY, rr, viewport.width, viewport.height); return v ? (LEGEND_FILL * rr * (v[1] - v[0])) / glyphs : 0; };
-        const bodyR = size => (inner ? r - size * LEGEND_CAP / 2 : r + size * LEGEND_CAP / 2);
+        const lines = legendLines(displayCase(String(word)));
+        if (!lines.length) return;
+        // Each line's arc: the first farthest from the hub, the rest a line
+        // pitch nearer each — outward of the base for the standing word,
+        // inward for the hanging one. Sized to the visible run of the arc
+        // where each line's letters' BODY lies (outward of its path standing,
+        // inward hanging), the narrowest line ruling; the radii depend on the
+        // size through the pitch, so the fit is taken a few times over.
         const clampEm = s => Math.max(LEGEND_MIN_EM * viewport.SSd, Math.min(LEGEND_MAX_EM * viewport.SSd, s));
-        const size = clampEm(fit(bodyR(clampEm(fit(r)))));
-        const run = visibleArc(hubX, hubY, bodyR(size), viewport.width, viewport.height)
-          || [layout.magA - 2 * layout.spacing, layout.magA + 2 * layout.spacing];
-        const pid = `${id}-legend-${row}`;
-        const path = svgEl('path', { id: pid, class: 'stratum-legend-arc', d: `M ${at(r, run[0])} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${at(r, run[1])}`, fill: 'none' });
+        const lineR = (i, size) => { const pitch = size * LEGEND_LINE_PITCH; return inner ? r - i * pitch : r + (lines.length - 1 - i) * pitch; };
+        const bodyR = (rr, size) => (inner ? rr - size * LEGEND_CAP / 2 : rr + size * LEGEND_CAP / 2);
+        const fit = (rr, line) => { const v = visibleArc(hubX, hubY, rr, viewport.width, viewport.height); return v ? (LEGEND_FILL * rr * (v[1] - v[0])) / (Math.max(1, [...line].length) * LEGEND_EM_PER_GLYPH) : 0; };
+        let size = clampEm(Math.min(...lines.map(line => fit(r, line))));
+        for (let pass = 0; pass < 3; pass++) size = clampEm(Math.min(...lines.map((line, i) => fit(bodyR(lineR(i, size), size), line))));
         const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, 'dominant-baseline': inner ? 'hanging' : 'alphabetic' });
         t.dataset.side = inner ? 'inner' : 'outer';
+        t.dataset.lines = String(lines.length);
         t.style.fontSize = `${size.toFixed(1)}px`;
-        const tp = svgEl('textPath', { href: `#${pid}`, startOffset: '50%', 'text-anchor': 'middle' });
-        tp.textContent = text;
-        t.appendChild(tp);
-        g.insertBefore(path, first);
+        lines.forEach((line, i) => {
+          const ri = lineR(i, size);
+          const run = visibleArc(hubX, hubY, bodyR(ri, size), viewport.width, viewport.height)
+            || [layout.magA - 2 * layout.spacing, layout.magA + 2 * layout.spacing];
+          const pid = `${id}-legend-${row}-${i}`;
+          const path = svgEl('path', { id: pid, class: 'stratum-legend-arc', d: `M ${at(ri, run[0])} A ${ri.toFixed(1)} ${ri.toFixed(1)} 0 0 1 ${at(ri, run[1])}`, fill: 'none' });
+          const tp = svgEl('textPath', { href: `#${pid}`, startOffset: '50%', 'text-anchor': 'middle' });
+          tp.textContent = line;
+          t.appendChild(tp);
+          g.insertBefore(path, first);
+        });
         g.insertBefore(t, first);
       });
     }

@@ -4,22 +4,31 @@
 // The basement is a perfect name for it, and basements are generally
 // darker").
 //
-// The same tan, a few shades deeper — never a second hue the reader has to
+// The same tan, a good deal deeper — never a second hue the reader has to
 // learn. The ground is the volume's own declared colour scaled toward black,
 // which keeps its hue and saturation exactly (search mode dims the same way,
-// for close work; this is the floor below). It is driven by DEPTH, 0 on the
+// for close work; this is the floor below). THE RING DIMS WITH THE ROOM: the
+// band and the nodes are scaled by the same factor, because the band is
+// barely darker than the tan it crosses — a sixth off the ground (the first
+// cut; Howell: "doesn't look much darker at all. Try and make it a lot
+// darker") was the most it could lose before the band sank into it, and a
+// room dimmed by a third would have swallowed the ring whole. One factor on
+// ground, band and nodes keeps every relation the reader learned upstairs;
+// the ink stays black. It is driven by DEPTH, 0 on the
 // floors above and 1 in the basement, and a glide hands it the floor's own
 // dissolve, so the ground deepens exactly as the floor goes and lightens
 // exactly as it returns — the reader passes through into a darker room,
 // rather than watching the room darken around a floor still under foot.
 //
-// It writes the legacy `--color-bg` on the root, which the body and every
-// knock-out stroke already read; the theme's own `--theme-color-bg` is left
+// It writes the legacy `--color-bg`, `--color-band`, `--color-orbital` and
+// `--color-nodes` on the root, which the body, the band, the seats and every
+// knock-out stroke already read; the theme's own `--theme-color-*` are left
 // alone and re-read at every call, so a volume change under the basement
-// deepens the new ground and not the old.
+// deepens the new palette and not the old.
 
-const BASEMENT_DIM = 0.16;   // how far the ground travels toward black at full depth
-const VAR = '--color-bg';
+const BASEMENT_DIM = 0.38;   // how far the room travels toward black at full depth
+// legacy variable → the theme variable it is scaled from
+const DIMMED = [['--color-bg', '--theme-color-bg'], ['--color-band', '--theme-color-band'], ['--color-orbital', '--theme-color-orbital'], ['--color-nodes', '--theme-color-node']];
 
 function parseColor(raw) {
   const s = String(raw || '').trim();
@@ -51,10 +60,12 @@ export function setBasementDepth(depth, root = typeof document !== 'undefined' ?
   if (!root?.style) return;
   const d = Math.max(0, Math.min(1, Number(depth) || 0));
   lastDepth = d;
-  if (d <= 0.001) { root.style.removeProperty(VAR); return; }
-  const theme = root.style.getPropertyValue('--theme-color-bg')
-    || (typeof getComputedStyle === 'function' ? getComputedStyle(root).getPropertyValue('--theme-color-bg') : '');
-  const ground = basementGround(theme, d);
-  if (ground) root.style.setProperty(VAR, ground);
+  if (d <= 0.001) { for (const [v] of DIMMED) root.style.removeProperty(v); return; }
+  const cs = typeof getComputedStyle === 'function' ? getComputedStyle(root) : null;
+  for (const [v, from] of DIMMED) {
+    const theme = root.style.getPropertyValue(from) || (cs ? cs.getPropertyValue(from) : '');
+    const dimmed = basementGround(theme, d);
+    if (dimmed) root.style.setProperty(v, dimmed); else root.style.removeProperty(v);
+  }
 }
 export const basementDepth = () => lastDepth;

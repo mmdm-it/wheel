@@ -10,6 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { installBrowserGlobals } from './helpers/browser-globals.mjs';
 import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
 import { basementGround, setBasementDepth } from '../src/view/basement-light.js';
+import { legendLines } from '../src/view/secondary-strata-view.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const read = p => fs.readFileSync(path.join(here, '..', p), 'utf8');
@@ -19,23 +20,29 @@ test('the ground deepens in its own hue: every channel scaled alike, the theme u
   const deep = basementGround('#d9a877', 1).match(/\d+/g).map(Number);
   const ratio = deep.map((v, i) => v / [217, 168, 119][i]);
   assert.ok(ratio.every(r => Math.abs(r - ratio[0]) < 0.01), `one scale for all channels (${ratio.map(r => r.toFixed(3))})`);
-  assert.ok(ratio[0] > 0.8 && ratio[0] < 0.88, `a sixth darker, about (${ratio[0].toFixed(3)})`);
+  assert.ok(ratio[0] > 0.55 && ratio[0] < 0.7, `a lot darker — over a third off (${ratio[0].toFixed(3)})`);
   // Halfway through the dissolve, halfway down.
   const mid = basementGround('rgb(217, 168, 119)', 0.5).match(/\d+/g).map(Number);
   assert.ok(mid[0] > deep[0] && mid[0] < 217);
   assert.equal(basementGround('', 1), null, 'no theme, no ground');
 });
 
-test('the depth writes the legacy ground variable on the root and clears it on the floors above', () => {
+test('the depth dims ground, band and nodes alike on the root and clears them on the floors above', () => {
   const root = { style: (() => { const s = {}; Object.defineProperties(s, {
     setProperty: { value(n, v) { s[n] = v; } }, getPropertyValue: { value(n) { return s[n] ?? ''; } }, removeProperty: { value(n) { delete s[n]; } } }); return s; })() };
   root.style.setProperty('--theme-color-bg', '#d9a877');
+  root.style.setProperty('--theme-color-band', '#8b6f47');
+  root.style.setProperty('--theme-color-orbital', '#8b6f47');
+  root.style.setProperty('--theme-color-node', '#8b6f47');
   setBasementDepth(1, root);
   assert.equal(root.style['--color-bg'], basementGround('#d9a877', 1));
+  assert.equal(root.style['--color-band'], basementGround('#8b6f47', 1), 'the band dims with the room, so it never sinks into it');
+  assert.equal(root.style['--color-orbital'], basementGround('#8b6f47', 1));
+  assert.equal(root.style['--color-nodes'], basementGround('#8b6f47', 1));
   setBasementDepth(0.25, root);
   assert.equal(root.style['--color-bg'], basementGround('#d9a877', 0.25));
   setBasementDepth(0, root);
-  assert.equal(root.style['--color-bg'], undefined, 'the theme speaks again');
+  for (const v of ['--color-bg', '--color-band', '--color-orbital', '--color-nodes']) assert.equal(root.style[v], undefined, `${v}: the theme speaks again`);
 });
 
 test('the host hands the glide the floor\'s dissolve and the settle the floor it stands on', () => {
@@ -43,6 +50,13 @@ test('the host hands the glide the floor\'s dissolve and the settle the floor it
   assert.match(main, /if \(toFront < 0 \|\| fromFront < 0\) setBasementDepth\(1 - primaryOpacity\);/, 'the ground rides the floor\'s own dissolve');
   assert.match(main, /setBasementDepth\(1\);/, 'deep when the basement is front');
   assert.match(main, /setBasementDepth\(0\);/, 'the theme\'s own above it');
+});
+
+test('a word breaks at its spaces and after its hyphens', () => {
+  assert.deepEqual(legendLines('OFT-QUOTED'), ['OFT-', 'QUOTED']);
+  assert.deepEqual(legendLines('USEIN LAINATUT'), ['USEIN', 'LAINATUT']);
+  assert.deepEqual(legendLines('BOOKMARKS'), ['BOOKMARKS']);
+  assert.deepEqual(legendLines('  '), []);
 });
 
 test('each word fills the visible stretch of its arc, is sized by the view, and lies under the ring', async () => {
@@ -60,17 +74,29 @@ test('each word fills the visible stretch of its arc, is sized by the view, and 
   // Much larger than the title they replace, and set by the view, not the sheet.
   const px = n => parseFloat(n.style.fontSize);
   assert.ok(px(oft) > 40 && px(book) > 40, `watermark sizes (${px(oft)}, ${px(book)})`);
-  assert.ok(px(oft) <= 0.2 * vp.SSd + 0.1 && px(book) <= 0.2 * vp.SSd + 0.1, 'under the ceiling');
-  // Each arc's ends lie on the glass: the word is centred on what the reader can see.
-  const arcOf = t => kids.find(n => n.getAttribute('id') === t.firstChild.getAttribute('href').slice(1));
-  const ends = t => { const d = arcOf(t).getAttribute('d'); const m = d.match(/M ([\d.-]+) ([\d.-]+) A [\d.]+ [\d.]+ 0 0 1 ([\d.-]+) ([\d.-]+)/); return [[+m[1], +m[2]], [+m[3], +m[4]]]; };
-  for (const t of words) for (const [x, y] of ends(t)) {
+  assert.ok(px(oft) <= 0.17 * vp.SSd + 0.1 && px(book) <= 0.17 * vp.SSd + 0.1, 'under the ceiling');
+  // The hyphenated word is two lines, each on its own arc; the first line's arc is the farther from the hub.
+  assert.equal(oft.dataset.lines, '2');
+  assert.equal(book.dataset.lines, '1');
+  assert.deepEqual([...oft.children].map(tp => tp.textContent), ['OFT-', 'QUOTED']);
+  const arcs = t => [...t.children].map(tp => kids.find(n => n.getAttribute('id') === tp.getAttribute('href').slice(1)));
+  const radiusOf = a => Number(a.getAttribute('d').split(' A ')[1].split(' ')[0]);
+  const [oftTop, oftLow] = arcs(oft).map(radiusOf);
+  assert.ok(oftTop > oftLow, 'OFT- rides the outer of the two arcs');
+  assert.ok(oftTop - oftLow > px(oft) && oftTop - oftLow < 1.5 * px(oft), 'one line pitch apart');
+  // Nearer the band than the first cut (0.55 of the short side): the inner word's arc within 0.4 of it.
+  const bookR = radiusOf(arcs(book)[0]);
+  const { radius } = (await import('../src/geometry/secondary-strata-geometry.js')).computeStrataLayout(vp, 20, 5, true, { lensShift: 0 }).arc;
+  assert.ok(radius - bookR < 0.4 * vp.SSd && radius - bookR > 0.25 * vp.SSd, `bookmarks ${(radius - bookR).toFixed(0)} px inside the band`);
+  // Each arc's ends lie on the glass: every line is centred on what the reader can see.
+  const ends = a => { const m = a.getAttribute('d').match(/M ([\d.-]+) ([\d.-]+) A [\d.]+ [\d.]+ 0 0 1 ([\d.-]+) ([\d.-]+)/); return [[+m[1], +m[2]], [+m[3], +m[4]]]; };
+  for (const t of words) for (const a of arcs(t)) for (const [x, y] of ends(a)) {
     assert.ok(x >= -1 && x <= vp.width + 1 && y >= -1 && y <= vp.height + 1, `${t.textContent} arc end (${x}, ${y}) on the glass`);
   }
   // Under everything: both words and their arcs come before the first disc.
   const firstDisc = kids.findIndex(n => n.tag === 'circle');
   assert.ok(firstDisc > 0);
-  for (const t of words) assert.ok(kids.indexOf(t) < firstDisc && kids.indexOf(arcOf(t)) < firstDisc, `${t.textContent} lies under the ring`);
+  for (const t of words) assert.ok(kids.indexOf(t) < firstDisc && arcs(t).every(a => kids.indexOf(a) < firstDisc), `${t.textContent} lies under the ring`);
   // The run finder itself: a circle wholly off the glass has no run.
   assert.equal(visibleArc(5000, 5000, 10, 411, 802), null);
 });
@@ -78,6 +104,6 @@ test('each word fills the visible stretch of its arc, is sized by the view, and 
 test('the sheet makes the words faint and leaves their size to the view', () => {
   const css = read('styles/base.css');
   const rule = css.match(/\.secondary-strata-legend\s*\{([^}]*)\}/)[1];
-  assert.match(rule, /opacity:\s*var\(--basement-watermark-opacity,\s*0?\.1\)/);
+  assert.match(rule, /opacity:\s*var\(--basement-watermark-opacity,\s*0?\.1\d?\)/);
   assert.doesNotMatch(rule, /clamp\(/, 'no clamp: the view measures the glass');
 });

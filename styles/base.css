@@ -756,7 +756,8 @@ svg :focus-visible {
    in the other volume): the view sizes each word to the stretch of its arc
    the glass shows and draws it under the band and the names; this is its
    faintness — that volume's watermark stands at a twentieth, search's at a
-   tenth, and this one, on a deeper ground, at a tenth. The font-size here is
+   tenth, and this one, on a much deeper ground, a little above a tenth. The
+   font-size here is
    the fallback for a word the view did not measure. */
 .secondary-strata-legend {
   fill: var(--color-text);
@@ -764,7 +765,7 @@ svg :focus-visible {
   font-size: calc(22px * var(--iframe-scale, 1));
   font-weight: 700;
   letter-spacing: 0.08em;
-  opacity: var(--basement-watermark-opacity, 0.1);
+  opacity: var(--basement-watermark-opacity, 0.14);
   pointer-events: none;
 }
 .stratum-legend-arc { fill: none; stroke: none; }
