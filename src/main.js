@@ -169,6 +169,7 @@ import { mountDimensionGlobe, mountDimensionEmblem } from './view/dimension-glob
 import { labelRotationDeg } from './view/node-appearance.js';
 import { mountSearchDividers } from './view/search-dividers.js';
 import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
+import { setBasementDepth } from './view/basement-light.js';
 
 const svg = document.getElementById('app');
 // THE MIGRATION LOG (Howell 2026-10-03): with ?migrationlog=1 or ?swipelog=1,
@@ -1289,6 +1290,7 @@ function renderStack({ keepFront = false } = {}) {
     // settle" — Howell, 2026-09-14); nothing must change at the settle.
     const gone = PRIMARY_GONE();
     setPrimaryVisual(gone.scale, gone.blur, gone);
+    setBasementDepth(1);   // the basement's light (O-277): the ground a few shades deeper
     // SETTLED, the layer comes back ABOVE the (now invisible) primary. Under
     // it, the primary's own nodes — which set pointer-events of their own —
     // took every touch meant for the basement's ring, and it would not turn
@@ -1303,6 +1305,7 @@ function renderStack({ keepFront = false } = {}) {
   } else {
   hideStratum(strataLayer, BASEMENT.id);
   strataBelow(false);
+  setBasementDepth(0);   // the floors above keep the theme's own ground
   applyPrimaryDepth(strataFront); // primary is stack position 0; its level == front
   // Choosers are positions 1..N. Render (front to back so the SVG z-order —
   // last child on top — puts the front stratum highest) any at or ahead of
@@ -1773,6 +1776,10 @@ function beginGlide(fromFront, toFront, { lens = null } = {}) {
       setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
         opacity: primaryOpacity
       });
+      // THE BASEMENT'S LIGHT (O-277) rides the floor's own dissolve: the
+      // ground deepens as the floor thins on the way down, lightens as it
+      // thickens on the way up, and is untouched by a glide between floors.
+      if (toFront < 0 || fromFront < 0) setBasementDepth(1 - primaryOpacity);
       [...CHOOSERS, BASEMENT].forEach(ch => {
         const g = groups[ch.id]; if (!g) return;
         const f = from[ch.id], t = to[ch.id];

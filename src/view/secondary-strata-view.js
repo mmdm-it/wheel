@@ -57,11 +57,42 @@ const LENS_SCALE_PEAK = 2.0;
 // level with the lens, well clear of the names; the inner word four and a
 // half seats below it, deep in the open hub side. The half-span is the room
 // a long tongue's word may take.
-const LEGEND_OUTER_REACH = 0.33;   // × SSd outward from the centreline
+// THEN MADE WATERMARKS (O-277, Howell the same evening, with the words in
+// place: "Much larger letters, as big as they can be and still fit on the
+// page, but at 50% opacity. Similar to the way we did language watermarks"
+// in the other volume): each word is centred on the stretch of its arc that the
+// glass shows and sized to fill it, so it is as large as its field allows
+// on whatever phone is in hand; the faintness is the stylesheet's. The
+// outer word's reach came in from the sketch's 0.33 — a watermark lies
+// under the names rather than beside them, and the corner wedge at 0.33
+// has room for a title, not a watermark.
+const LEGEND_OUTER_REACH = 0.2;    // × SSd outward from the centreline
 const LEGEND_INNER_REACH = 0.55;   // × SSd inward
-const LEGEND_ABOVE = 0;            // the outer word, in seats up the arc from the lens
-const LEGEND_BELOW = 4.6;          // the inner word, in seats down the arc
-const LEGEND_SPAN = 3;
+const LEGEND_FILL = 0.92;          // of the visible arc the word may take
+const LEGEND_EM_PER_GLYPH = 0.8;   // a bold capital's advance plus the tracking, in em
+const LEGEND_CAP = 0.72;           // a capital's height, in em
+const LEGEND_MAX_EM = 0.2;         // × SSd — the ceiling on a wide glass
+const LEGEND_MIN_EM = 0.05;        // × SSd — the floor, a running title's size
+
+// The stretch of a circle about (hubX, hubY) of radius r that lies on a
+// w × h glass: the longest run of angles whose points fall inside it, as
+// [a0, a1] with a1 > a0 (the direction the legend reads), or null if none.
+export function visibleArc(hubX, hubY, r, w, h, steps = 720) {
+  const inside = a => { const x = hubX + r * Math.cos(a), y = hubY + r * Math.sin(a); return x >= 0 && x <= w && y >= 0 && y <= h; };
+  const step = (2 * Math.PI) / steps;
+  let best = null, start = null;
+  // Walk twice round so a run crossing the seam is seen whole.
+  for (let i = 0; i <= steps * 2; i++) {
+    const a = -Math.PI + i * step;
+    if (i < steps * 2 && inside(a)) { if (start === null) start = a; continue; }
+    if (start !== null) {
+      const run = [start, a - step];
+      if (!best || run[1] - run[0] > best[1] - best[0]) best = run;
+      start = null;
+    }
+  }
+  return best && best[1] - best[0] >= step ? best : null;
+}
 const LENS_SCALE_SIGMA = 0.3;        // × node spacing
 
 const svgEl = (tag, attrs) => {
@@ -236,22 +267,37 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       // level with the lens, where the outer side is. Each at the reach his
       // sketch gave it — the inner word hangs from its arc, the outer stands
       // on it.
+      //
+      // AS WATERMARKS (O-277): each word fills the stretch of its arc the
+      // glass shows, and is drawn FIRST in the group, under the band and
+      // every name — a watermark lies beneath the page, never on it.
       const { hubX, hubY, radius } = layout.arc;
       const at = (r, a) => `${(hubX + r * Math.cos(a)).toFixed(1)} ${(hubY + r * Math.sin(a)).toFixed(1)}`;
+      const first = g.firstChild;
       legendRows.forEach(([mark, word, side], row) => {
         const inner = Number(side) > 0;
         const r = inner ? radius - viewport.SSd * LEGEND_INNER_REACH : radius + viewport.SSd * LEGEND_OUTER_REACH;
-        const centre = layout.magA + (inner ? -LEGEND_BELOW : LEGEND_ABOVE) * layout.spacing;
-        const a0 = centre - LEGEND_SPAN * layout.spacing, a1 = centre + LEGEND_SPAN * layout.spacing;
+        const text = displayCase(String(word));
+        // Sized to the visible run of the arc where the letters' BODY lies
+        // (outward of the path for the standing word, inward for the
+        // hanging one), which takes one pass more than the path itself.
+        const glyphs = Math.max(1, [...text].length) * LEGEND_EM_PER_GLYPH;
+        const fit = rr => { const v = visibleArc(hubX, hubY, rr, viewport.width, viewport.height); return v ? (LEGEND_FILL * rr * (v[1] - v[0])) / glyphs : 0; };
+        const bodyR = size => (inner ? r - size * LEGEND_CAP / 2 : r + size * LEGEND_CAP / 2);
+        const clampEm = s => Math.max(LEGEND_MIN_EM * viewport.SSd, Math.min(LEGEND_MAX_EM * viewport.SSd, s));
+        const size = clampEm(fit(bodyR(clampEm(fit(r)))));
+        const run = visibleArc(hubX, hubY, bodyR(size), viewport.width, viewport.height)
+          || [layout.magA - 2 * layout.spacing, layout.magA + 2 * layout.spacing];
         const pid = `${id}-legend-${row}`;
-        const path = svgEl('path', { id: pid, class: 'stratum-legend-arc', d: `M ${at(r, a0)} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${at(r, a1)}`, fill: 'none' });
+        const path = svgEl('path', { id: pid, class: 'stratum-legend-arc', d: `M ${at(r, run[0])} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${at(r, run[1])}`, fill: 'none' });
         const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, 'dominant-baseline': inner ? 'hanging' : 'alphabetic' });
         t.dataset.side = inner ? 'inner' : 'outer';
+        t.style.fontSize = `${size.toFixed(1)}px`;
         const tp = svgEl('textPath', { href: `#${pid}`, startOffset: '50%', 'text-anchor': 'middle' });
-        tp.textContent = displayCase(String(word));
+        tp.textContent = text;
         t.appendChild(tp);
-        g.appendChild(path);
-        g.appendChild(t);
+        g.insertBefore(path, first);
+        g.insertBefore(t, first);
       });
     }
     outer.__seats = seats;

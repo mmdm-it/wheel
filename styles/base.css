@@ -750,15 +750,21 @@ svg :focus-visible {
    italicized in the basement" — the slant tried first did not read). The
    dark red and dark blue of 2026-09-30 are retired: every label is the
    app's ink. Nodes keep their one colour. */
-/* The legend's words ride arcs beside the band (O-276): a running title's
-   size and spacing, smaller than Howell's sketch asked ("The font should be
-   smaller than is shown"), larger than a seat's name. */
+/* The legend's words ride arcs beside the band (O-276), and are WATERMARKS
+   (O-277, Howell 2026-11-08: "Much larger letters, as big as they can be and
+   still fit on the page ... Similar to the way we did language watermarks"
+   in the other volume): the view sizes each word to the stretch of its arc
+   the glass shows and draws it under the band and the names; this is its
+   faintness — that volume's watermark stands at a twentieth, search's at a
+   tenth, and this one, on a deeper ground, at a tenth. The font-size here is
+   the fallback for a word the view did not measure. */
 .secondary-strata-legend {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: clamp(calc(22px * var(--iframe-scale, 1)), 2.6vmin, calc(38px * var(--iframe-scale, 1)));
+  font-size: calc(22px * var(--iframe-scale, 1));
   font-weight: 700;
   letter-spacing: 0.08em;
+  opacity: var(--basement-watermark-opacity, 0.1);
   pointer-events: none;
 }
 .stratum-legend-arc { fill: none; stroke: none; }
