@@ -464,7 +464,7 @@ const isHit = key => { const { id, edition } = seatParts(key); return hitSeats()
 // tongue without them shows no legend rather than an English one.
 const MARK_BOOKMARK = 'is-bookmark';
 const MARK_LANDMARK = 'is-landmark';
-let basementWords = null;          // { bookmark, landmark, and, keep, discard, one } in the reader's tongue, or null
+let basementWords = null;          // { bookmark, landmark, and, bookmarkVerb, discard } in the reader's tongue, or null
 // THE CONJUNCTION (O-277, Howell 2026-11-08, with both watermarks on his
 // phone: "We need to add an ampersand above bookmarks, otherwise it reads as
 // 'oft-quoted bookmarks'"): the bookmarks word is led by a line of its own
@@ -530,8 +530,8 @@ const BASEMENT = {
   // disappear as necessary when the basement focus ring is rotated"). The
   // lens's name is the middle line; the verb above says what a tap on the
   // lens will do to the seat under it, the word below names what it is. In
-  // the tongue's own words (vocabulary.keep, .discard, .bookmark_one); a
-  // tongue without all three shows no caption, and the tap still keeps. It
+  // the tongue's own words; a tongue without them shows no caption, and
+  // the tap still keeps. It
   // retired the slider's hold in the overrun (O-128): the globe now trucks
   // and nothing else, and keeping is the lens's alone.
   // KEEP IS THE CANDIDATE'S ALONE (Howell, the same day, seeing KEEP over an
@@ -542,11 +542,20 @@ const BASEMENT = {
   // DISCARD; an oft-quoted seat is already stored and offers nothing; only
   // the hollow dashed candidate offers KEEP — so the message is never seen
   // anywhere but the lens, and only when the lens holds something to decide.
+  // ONE UPRIGHT WORD (Howell, the same evening, two screenshots with the
+  // word drawn in beside the lens: "I don't like adding rotated labels along
+  // the focus ring. They clutter the verse labels and are confusing" — and
+  // on the pair: "I am happy with bookmark as the verb for creating a
+  // bookmark and discard as the verb for removing that bookmark"). The
+  // tongue's verb for marking (vocabulary.bookmark_verb — the word its old
+  // hold-to-keep phrase began with) or its verb for discarding
+  // (vocabulary.discard); the view stands it upright to the right of the
+  // lens. A tongue without both shows no word, and the tap still keeps.
   caption: key => {
-    if (!(basementWords?.keep && basementWords.discard && basementWords.one)) return null;
-    if (keptSeat(key)) return { above: basementWords.discard, below: basementWords.one };
+    if (!(basementWords?.bookmarkVerb && basementWords.discard)) return null;
+    if (keptSeat(key)) return basementWords.discard;
     if (isHit(key)) return null;
-    return { above: basementWords.keep, below: basementWords.one };
+    return basementWords.bookmarkVerb;
   }
 };
 // The seat's label is the verse's full address as the instrument was showing
@@ -1449,13 +1458,16 @@ function lensHit(event, ch) {
   const x = event.clientX - rect.left, y = event.clientY - rect.top;
   const reach = viewport.SSd * 0.09;
   if (Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= reach) return true;
-  // The caption's lines (O-280) are the lens's too: a tap on KEEP or on
-  // BOOKMARK is a tap on the lens. Each line carries its centre on the glass.
-  const lines = strataLayer.querySelectorAll?.(`#${ch.id} .secondary-strata-caption:not([display="none"])`) || [];
-  for (const line of lines) {
-    if (Math.hypot(Number(line.dataset?.cx) - x, Number(line.dataset?.cy) - y) <= reach) return true;
-  }
-  return false;
+  // The word beside the lens (O-280) is the lens's too: a tap on BOOKMARK or
+  // DISCARD is a tap on the lens. Its box, padded by a finger's slack; where
+  // the glass cannot measure text, its anchor and a reach.
+  const word = strataLayer.querySelector?.(`#${ch.id} .secondary-strata-caption:not([display="none"])`);
+  if (!word) return false;
+  const pad = viewport.SSd * 0.03;
+  let box = null;
+  try { box = typeof word.getBBox === 'function' ? word.getBBox() : null; } catch (_) { box = null; }
+  if (box && box.width > 0) return x >= box.x - pad && x <= box.x + box.width + pad && y >= box.y - pad && y <= box.y + box.height + pad;
+  return Math.hypot(Number(word.dataset?.cx) - x, Number(word.dataset?.cy) - y) <= reach * 2;
 }
 
 // Re-render ONLY the front stratum at a (fractional) center index, front depth.
@@ -4556,7 +4568,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // registry lookup stays as the belt for a volume that still has one.
     namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
     // The basement's legend words ride the same vocabulary (O-188).
-    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null, and: namesMap.vocabulary.and || null, keep: namesMap.vocabulary.keep || null, discard: namesMap.vocabulary.discard || null, one: namesMap.vocabulary.bookmark_one || null } : null;
+    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null, and: namesMap.vocabulary.and || null, bookmarkVerb: namesMap.vocabulary.bookmark_verb || null, discard: namesMap.vocabulary.discard || null } : null;
     return namesMap;
   };
   refreshNamesMap();

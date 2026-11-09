@@ -804,20 +804,20 @@ svg :focus-visible {
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
   font-weight: 400;
 }
-/* THE CAPTION ON THE LENS (O-280, Howell 2026-11-09, his sketch: KEEP /
-   name / BOOKMARK, or DISCARD / name / BOOKMARK): a line above the lens's
-   name and one below, in the ordinary label's size and the room's ink; the
-   verb is the one bold word on the basement's glass. The view places them
-   along the lens's tangent and hides them while the ring turns. A tap on
-   either line is a tap on the lens (the host's lensHit). */
+/* THE WORD BESIDE THE LENS (O-280, Howell 2026-11-09, his screenshots:
+   BOOKMARK or DISCARD drawn upright in the open ground right of the lens):
+   the one upright text on the basement's glass, in the lens label's size,
+   bold, the room's ink. The view places it at the lens's height and hides
+   it while the ring turns; a tap on it is a tap on the lens (the host's
+   lensHit). */
 .secondary-strata-caption {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
+  font-weight: 700;
   letter-spacing: 0.06em;
   pointer-events: none;
 }
-.secondary-strata-caption.is-verb { font-weight: 700; }
 
 .focus-ring-band {
   /* A stroked centreline now (sprocket chain: arc + straight tangents), not a
