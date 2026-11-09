@@ -575,8 +575,10 @@ svg :focus-visible {
   pointer-events: none;
   user-select: none;
   /* The globe's line-work rides currentColor — dark grey, not ink: present
-     when sought, quiet when not (Howell 2026-07-22, tuned by eye). */
-  color: #363636;
+     when sought, quiet when not (Howell 2026-07-22, tuned by eye). In the
+     basement it takes the room's ink (O-278): the basement light sets
+     --color-globe with the depth and removes it on the floors above. */
+  color: var(--color-globe, #363636);
 }
 #search-button:hover { opacity: 1; }
 /* THE GLOBE HAS ONE BRIGHTNESS, AND A FAINT ONE (Howell 2026-09-30: "I really
@@ -754,18 +756,21 @@ svg :focus-visible {
    (O-277, Howell 2026-11-08: "Much larger letters, as big as they can be and
    still fit on the page ... Similar to the way we did language watermarks"
    in the other volume): the view sizes each word to the stretch of its arc
-   the glass shows and draws it under the band and the names; this is its
-   faintness — that volume's watermark stands at a twentieth, search's at a
-   tenth, and this one, black on a ground half way to black, nearer a fifth.
-   The font-size here is
-   the fallback for a word the view did not measure. */
+   the glass shows and draws it under the band and the names; its faintness
+   is the band's own tone (below). The font-size here is the fallback for a
+   word the view did not measure. */
 .secondary-strata-legend {
-  fill: var(--color-text);
+  /* THE WATERMARK'S TONE IS THE BAND'S (O-278, Howell 2026-11-09: "Perhaps
+     the focus ring band should be the same color as the watermarks"). The
+     basement light computes the band as the theme's ink laid on the deep
+     ground at the watermark's faintness, and the words are painted in that
+     very colour, opaque — the same by construction. Upstairs no legend is
+     drawn, so the fallback is only for a sheet without a theme. */
+  fill: var(--color-band, var(--color-text));
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: calc(22px * var(--iframe-scale, 1));
   font-weight: 700;
   letter-spacing: 0.08em;
-  opacity: var(--basement-watermark-opacity, 0.18);
   pointer-events: none;
 }
 .stratum-legend-arc { fill: none; stroke: none; }
