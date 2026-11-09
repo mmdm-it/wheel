@@ -479,10 +479,19 @@ const BASEMENT = {
   items: () => {
     // Kept seats and THE GREATEST HITS (O-135, Howell 2026-09-15: "add
     // Greatest Hits permanently to the bookmarks ring") together in the
-    // volume's order — book, chapter, verse, edition — and the loose ones
-    // (the arrival, anything dropped this visit) after them. A hit is seated
-    // in the edition up, with the label the primary would show; a hit the
-    // reader has also kept is one seat, drawn kept.
+    // volume's order — book, chapter, verse, edition — AND THE LOOSE ONES
+    // (the arrival, anything dropped this visit) IN THAT SAME ORDER (O-279,
+    // Howell 2026-11-09: the verse the reader brings down "should appear in
+    // the magnifier, not at the end of the focus ring chain as it does
+    // now"). The loose seats were appended after the ordered ones, so the
+    // arrival stood under the lens as the chain's last seat, nothing beyond
+    // it — read as tacked on, not as a seat among its neighbours. Each loose
+    // seat has the place it was seated or kept with (basementPlaces), and
+    // takes it; one with no place known comes last, as before. A hit is
+    // seated in the edition up, with the label the primary would show; a hit
+    // the reader has also kept is one seat, drawn kept; an arrival that is
+    // already a hit or kept is that seat, under the lens, and nothing is
+    // added.
     // A KEPT SEAT'S PLACE IS ASKED AGAIN, on the edition up (O-275, Howell's
     // sketch 2026-11-08: two Maccabees bookmarks sat below the Epistles —
     // "They should be further up the ring as the last of the Old Testament
@@ -495,9 +504,15 @@ const BASEMENT = {
     const hits = hitSeats().filter(h => !kept.some(b => b.id === h.id && (b.edition ?? null) === (h.edition ?? null)));
     for (const h of hits) { const k = seatKey(h.id, h.edition); basementLabels[k] = h.label; basementPlaces[k] = h.at; }
     for (const b of kept) if (b.at) basementPlaces[seatKey(b.id, b.edition)] = b.at;
-    const keys = inOrder([...kept, ...hits]).map(b => seatKey(b.id, b.edition));
-    for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
-    return keys;
+    const seated = [...kept, ...hits];
+    const have = new Set(seated.map(b => seatKey(b.id, b.edition)));
+    for (const k of basementLoose) {
+      if (have.has(k)) continue;
+      const { id, edition } = seatParts(k);
+      seated.push({ id, edition, at: basementPlaces[k] ?? null, kept: '' });
+      have.add(k);
+    }
+    return inOrder(seated).map(b => seatKey(b.id, b.edition));
   },
   label: key => keptSeat(key)?.label || basementLabels[key] || seatParts(key).id,
   // Kept: filled. A hit: its own fill, never mistaken for something kept.
