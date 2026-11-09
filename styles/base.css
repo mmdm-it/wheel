@@ -809,13 +809,25 @@ svg :focus-visible {
    the one upright text on the basement's glass, in the lens label's size,
    bold, the room's ink. The view places it at the lens's height and hides
    it while the ring turns; a tap on it is a tap on the lens (the host's
-   lensHit). */
+   lensHit). AND IT WEARS THE PARENT LABEL'S HALO (Howell, DISCARD running
+   through the name of the seat above the lens: "I'd rather create a halo
+   around the discard or bookmark label, the same way we put a halo around
+   the parent button label"): the O-233 stroke in the ground's colour under
+   the letters, so a name passing beneath is dimmed where it meets the word
+   and nowhere else. The ground here is the basement's deep tan, which the
+   basement light sets as --color-ground; no disc lies under this word, so
+   the stroke sits on the word itself (no O-257 copy is needed). */
 .secondary-strata-caption {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
   font-weight: 700;
   letter-spacing: 0.06em;
+  paint-order: stroke fill;
+  stroke: var(--color-ground, var(--color-bg));
+  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke-width: var(--parent-halo-width, 0.6em);
+  stroke-linejoin: round;
   pointer-events: none;
 }
 

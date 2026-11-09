@@ -53,6 +53,7 @@ test('the depth paints the root\'s inline ground â€” the one the theme paints â€
   assert.equal(root.style['--color-text'], 'rgb(217, 168, 119)');
   assert.equal(root.style['--color-globe'], 'rgb(217, 168, 119)');
   assert.equal(root.style['--color-orbital-label'], '#2a1a0f');
+  assert.equal(root.style['--color-ground'], root.style.backgroundColor, 'the ground as a variable too, for the halo on the word beside the lens');
   assert.ok(lum(root.style['--color-text']) / lum(root.style.backgroundColor) > 1.9, 'the names stand well off the ground');
   // Halfway: every value between its theme and its basement, so the glide is continuous at both ends.
   setBasementDepth(0.5, root);
@@ -64,7 +65,7 @@ test('the depth paints the root\'s inline ground â€” the one the theme paints â€
   assert.equal(basementPalette(theme, 0).band, 'rgb(108, 83, 57)', 'the theme\'s own band at depth 0');
   setBasementDepth(0, root);
   assert.equal(root.style.backgroundColor, 'rgb(217, 168, 119)', 'the theme\'s own colour painted back');
-  for (const v of ['--color-band', '--color-text', '--color-orbital-label', '--color-globe']) assert.equal(root.style[v], undefined, `${v} is the theme's own again`);
+  for (const v of ['--color-band', '--color-text', '--color-orbital-label', '--color-globe', '--color-ground']) assert.equal(root.style[v], undefined, `${v} is the theme's own again`);
   // A theme without a band or text still gets its ground, and nothing else is painted.
   const bare = basementPalette({ bg: '#d9a877' }, 1);
   assert.ok(bare.ground && !bare.band && !bare.ink);

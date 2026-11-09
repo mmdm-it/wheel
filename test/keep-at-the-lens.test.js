@@ -63,26 +63,6 @@ test('the view stands one upright word right of the lens, words it per seat, and
   assert.equal(wordOf(treeOf(renderStratum(svg, opts(2, false, () => null))))[0].getAttribute('display'), 'none');
 });
 
-test('a seat name that would run through the word steps aside while the word shows, and only such a name', async () => {
-  installBrowserGlobals();
-  const { renderStratum } = await import('../src/view/secondary-strata-view.js');
-  const vp = getViewportInfo(411, 802);
-  const items = ['Exodus 20:3', 'Leviticus 1:5', 'Numbers 1:5', 'Psalms 22:1', 'Psalms 50:3'];
-  const render = (word, sides) => {
-    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    const outer = renderStratum(svg, { id: 'basement', viewport: vp, items, selectedIndex: 2, mirrored: true, labelFor: k => k, allowEmpty: true, labelsBeside: true, lensShift: -4, rotating: false, caption: () => word, sideFor: k => sides[items.indexOf(k)] });
-    const all = []; (function walk(n) { for (const c of n.children || n.childNodes || []) { all.push(c); walk(c); } })(outer);
-    return all.filter(n => (n.getAttribute?.('class') || '').includes('secondary-strata-label') && !(n.getAttribute('class') || '').includes('is-magnified'))
-      .filter(l => l.getAttribute('display') === 'none').map(l => l.textContent);
-  };
-  // Every seat a bookmark (names toward the hub): the seat above the lens would cross the word and steps aside; the lens seat's own name is the lens label's, hidden as always.
-  assert.deepEqual(render('Discard', [1, 1, 1, 1, 1]), ['LEVITICUS 1:5', 'NUMBERS 1:5']);
-  // No word: nothing steps aside.
-  assert.deepEqual(render(null, [1, 1, 1, 1, 1]), ['NUMBERS 1:5']);
-  // The seat above an oft-quoted one (its name mirrored, away from the hub): nothing crosses, nothing hides.
-  assert.deepEqual(render('Discard', [-1, -1, 1, -1, -1]), ['NUMBERS 1:5']);
-});
-
 test('the host words it from the tongue — BOOKMARK for the candidate alone, DISCARD for a kept seat, nothing for an oft-quoted one — counts a tap on it as the lens, and the slider only trucks', () => {
   const main = read('src/main.js');
   const cap = main.slice(main.indexOf('caption: key => {'), main.indexOf('\n};', main.indexOf('caption: key => {')));
@@ -107,5 +87,12 @@ test('the host words it from the tongue — BOOKMARK for the candidate alone, DI
   const rule = css.match(/\.secondary-strata-caption\s*\{([^}]*)\}/)[1];
   assert.match(rule, /fill: var\(--color-text\)/);
   assert.match(rule, /font-weight: 700/);
+  // The parent label's halo on the word (Howell: "a halo around the discard or bookmark label, the same way we put a halo around the parent button label"): a name passing beneath is dimmed, not hidden.
+  assert.match(rule, /paint-order: stroke fill/);
+  assert.match(rule, /stroke: var\(--color-ground, var\(--color-bg\)\)/);
+  assert.match(rule, /stroke-opacity: var\(--parent-halo-opacity, 0\.85\)/);
+  assert.match(rule, /stroke-width: var\(--parent-halo-width, 0\.6em\)/);
+  const view = read('src/view/secondary-strata-view.js');
+  assert.ok(!view.includes('clearWordPath'), 'no name is hidden for the word');
   assert.ok(!css.includes('#bookmark-hint'), 'the phrase beside the globe is gone with the hold');
 });

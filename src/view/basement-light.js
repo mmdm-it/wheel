@@ -36,7 +36,7 @@
 // so the glide is continuous at both ends.
 //
 // WHAT IT PAINTS: the legacy `--color-band`, `--color-text`,
-// `--color-orbital-label` and `--color-globe` on the root, and the INLINE
+// `--color-orbital-label`, `--color-globe` and `--color-ground` on the root, and the INLINE
 // background colour of the root and the body — the two the theme itself
 // paints inline (applyTheme), which is why they, and not a variable, are the
 // ground the reader sees. The first cut wrote the legacy `--color-bg`
@@ -116,6 +116,11 @@ export function setBasementDepth(depth, root = typeof document !== 'undefined' ?
   paint('--color-text', room.ink);
   paint('--color-orbital-label', room.ink ? theme.text : null);   // on-seat lettering keeps the theme's ink
   paint('--color-globe', room.globe);
+  // The ground as a VARIABLE too (O-280): the halo on the word beside the
+  // basement's lens strokes in the ground's colour, and a stroke cannot read
+  // an inline paint. Its own name, never `--color-bg`, which the sideways
+  // page reads and which must stay the theme's.
+  paint('--color-ground', room.ground);
   if (!room.ground) return;   // no theme yet: nothing to deepen, nothing to restore
   const body = typeof document !== 'undefined' ? document.body : null;
   for (const el of [root, body]) if (el?.style) el.style.backgroundColor = room.ground;

@@ -26,15 +26,15 @@ const CAPTION_REACH = 2.2;
 const CAPTION_EM_PER_GLYPH = 0.82;   // bold caps with the sheet's letter-spacing
 const CAPTION_MARGIN = 0.03;         // of the short side, kept clear at the right edge
 const CAPTION_MIN_PX = 12;
-// A NAME THAT WOULD RUN THROUGH THE WORD STEPS ASIDE (Howell, seeing DISCARD
-// through LEVITICUS 1:5, the seat above the lens, whose name runs toward
-// the hub straight across where the word stands): while the word shows, a
-// beside-name whose run crosses the word's box is hidden, and comes back at
-// the next turn. Measured, not assumed — the name's run is sampled against
-// the box, so only a name that would actually cross goes.
-const CAPTION_CLEARANCE = 4;          // px either side of the word's box
-const LABEL_EM_PER_GLYPH = 0.72;      // the beside-name's face, for its run's length
-const LABEL_RUN_SAMPLES = 12;
+// A NAME THAT RUNS THROUGH THE WORD IS DIMMED WHERE THEY MEET, NOT HIDDEN
+// (Howell, seeing DISCARD through LEVITICUS 1:5, the bookmark above the
+// lens, whose name runs toward the hub: "I don't like removing the
+// offending label entirely. I'd rather create a halo around the discard or
+// bookmark label, the same way we put a halo around the parent button
+// label"). The word is drawn after the names and wears the parent label's
+// halo — a stroke in the ground's colour under its letters (O-233), set in
+// the sheet — so a name passing beneath is dimmed where it meets the word
+// and nowhere else, and every name stays on the glass.
 const BAND_THICKNESS_RATIO = 0.02;    // the primary band spans 0.99r–1.01r
 // The magnified label starts one fraction-of-a-node BACK from its centre and
 // runs inward (start-anchored), so the name spans the node weighted to one
@@ -367,8 +367,8 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // lens's centre, at the lens's height. It records its anchor on the glass
   // (data-cx/data-cy) so the host can count a tap on it as a tap on the lens.
   const placeCaption = (el, word, mag, magR) => {
-    if (!el) return null;
-    if (!word) { show(el, false); return null; }
+    if (!el) return;
+    if (!word) { show(el, false); return; }
     const x = mag.x + magR * CAPTION_REACH, y = mag.y;
     el.setAttribute('x', x.toFixed(1));
     el.setAttribute('y', y.toFixed(1));
@@ -385,34 +385,6 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     el.dataset.cy = y.toFixed(1);
     el.textContent = text;
     show(el, true);
-    return { x, y: y - size / 2, w: glyphs * CAPTION_EM_PER_GLYPH * size, h: size };
-  };
-  // Hide every beside-name whose run crosses the word's box (see
-  // CAPTION_CLEARANCE above). A name runs from its anchor along its rotated
-  // baseline — start-anchored forward, end-anchored back — for about
-  // LABEL_EM_PER_GLYPH of its face per glyph.
-  const clearWordPath = (box, nodes) => {
-    if (!box || !labelsBeside) return;
-    const labelPx = Math.max(14, Math.min(26, 0.016 * viewport.SSd));
-    const pad = labelPx / 2 + CAPTION_CLEARANCE;
-    const x0 = box.x - pad, x1 = box.x + box.w + pad, y0 = box.y - pad, y1 = box.y + box.h + pad;
-    nodes.forEach(node => {
-      const seat = seats[node.index];
-      if (!seat || node.index === layout.magIndex) return;
-      const label = seat.label;
-      if (label.getAttribute('display') === 'none') return;
-      const ax = Number(label.getAttribute('x')), ay = Number(label.getAttribute('y'));
-      if (!Number.isFinite(ax) || !Number.isFinite(ay)) return;
-      const theta = node.angle + Math.PI;   // the baseline's rotation (rotDeg above)
-      const dx = Math.cos(theta), dy = Math.sin(theta);
-      const run = Math.max(1, Array.from(label.textContent || '').length) * LABEL_EM_PER_GLYPH * labelPx;
-      const sign = label.getAttribute('text-anchor') === 'end' ? -1 : 1;
-      for (let i = 0; i <= LABEL_RUN_SAMPLES; i += 1) {
-        const t = sign * run * (i / LABEL_RUN_SAMPLES);
-        const px = ax + dx * t, py = ay + dy * t;
-        if (px >= x0 && px <= x1 && py >= y0 && py <= y1) { show(label, false); return; }
-      }
-    });
   };
   if (outer.__band) {
     const n = items.length;
@@ -510,8 +482,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     lensLabel.textContent = displayCase(String(magRaw ?? ''));
     lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}` : ''}`);
     show(lensLabel, true);
-    const wordBox = placeCaption(g.__caption, typeof caption === 'function' ? caption(items[layout.magIndex]) : null, mag, magR);
-    clearWordPath(wordBox, layout.nodes);
+    placeCaption(g.__caption, typeof caption === 'function' ? caption(items[layout.magIndex]) : null, mag, magR);
   } else {
     show(lensLabel, false);
     placeCaption(g.__caption, null);
