@@ -7,20 +7,21 @@
 // The same tan, a good deal deeper — never a second hue the reader has to
 // learn. The ground is the volume's own declared colour scaled toward black,
 // which keeps its hue and saturation exactly (search mode dims the same way,
-// for close work; this is the floor below). THE GROUND ALONE: the band and
-// the nodes keep the theme's own colours (Howell, the same evening, after a
-// cut that dimmed them with the room: "You've been changing the darkness of
-// the focus ring band. It should return to its original setting. We want to
-// darken the background"). The band is barely darker than the tan upstairs,
-// so on a ground this deep it reads LIGHTER than its room — the ring lit in
-// a dark basement — and the depth is set past the point where the two would
-// match and the ring vanish. It is driven by DEPTH, 0 on the
+// for close work; this is the floor below). AND THE BAND GOES DARKER STILL:
+// the band is barely darker than the tan upstairs, so a ground half way to
+// black erased it (Howell, the same evening: "the dark background seems
+// fine, but it has erased the focus ring band. The focus ring band needs to
+// be given a new darker color as well"); it is scaled further toward black
+// than the ground, to stand against it as it stands against the tan
+// upstairs. The seats keep the theme's own colour, beads on a dark band. It
+// is driven by DEPTH, 0 on the
 // floors above and 1 in the basement, and a glide hands it the floor's own
 // dissolve, so the ground deepens exactly as the floor goes and lightens
 // exactly as it returns — the reader passes through into a darker room,
 // rather than watching the room darken around a floor still under foot.
 //
-// WHAT IT PAINTS: the INLINE background colour of the root and the body —
+// WHAT IT PAINTS: the band's legacy `--color-band` on the root (the band
+// strokes read it), and the INLINE background colour of the root and the body —
 // the two the theme itself paints inline (applyTheme), which is why they,
 // and not a variable, are the ground the reader sees. The first cut wrote
 // the legacy `--color-bg` variable instead: the inline paint beat it under
@@ -34,6 +35,7 @@
 // theme's own colour is painted back.
 
 const BASEMENT_DIM = 0.5;    // how far the ground travels toward black at full depth
+const BAND_DIM = 0.7;        // and the band, further, to stand against it
 
 function parseColor(raw) {
   const s = String(raw || '').trim();
@@ -52,10 +54,10 @@ function parseColor(raw) {
 }
 
 // The ground at a depth, as rgb(), or null when the theme has not spoken.
-export function basementGround(themeBg, depth) {
+export function basementGround(themeBg, depth, dim = BASEMENT_DIM) {
   const bg = parseColor(themeBg);
   if (!bg) return null;
-  const t = Math.max(0, Math.min(1, Number(depth) || 0)) * BASEMENT_DIM;
+  const t = Math.max(0, Math.min(1, Number(depth) || 0)) * dim;
   const c = bg.map(v => Math.round(v * (1 - t)));
   return `rgb(${c[0]}, ${c[1]}, ${c[2]})`;
 }
@@ -65,11 +67,14 @@ export function setBasementDepth(depth, root = typeof document !== 'undefined' ?
   if (!root?.style) return;
   const d = Math.max(0, Math.min(1, Number(depth) || 0));
   lastDepth = d;
-  const theme = root.style.getPropertyValue('--theme-color-bg')
-    || (typeof getComputedStyle === 'function' ? getComputedStyle(root).getPropertyValue('--theme-color-bg') : '');
-  const ground = basementGround(theme, d);
+  const cs = typeof getComputedStyle === 'function' ? getComputedStyle(root) : null;
+  const themed = name => root.style.getPropertyValue(name) || (cs ? cs.getPropertyValue(name) : '');
+  const band = basementGround(themed('--theme-color-band'), d, BAND_DIM);
+  if (band && d > 0.001) root.style.setProperty('--color-band', band); else root.style.removeProperty('--color-band');
+  const ground = basementGround(themed('--theme-color-bg'), d);
   if (!ground) return;   // no theme yet: nothing to deepen, nothing to restore
   const body = typeof document !== 'undefined' ? document.body : null;
   for (const el of [root, body]) if (el?.style) el.style.backgroundColor = ground;
 }
+export const basementBand = (themeBand, depth) => basementGround(themeBand, depth, BAND_DIM);
 export const basementDepth = () => lastDepth;

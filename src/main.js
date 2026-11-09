@@ -464,7 +464,15 @@ const isHit = key => { const { id, edition } = seatParts(key); return hitSeats()
 // tongue without them shows no legend rather than an English one.
 const MARK_BOOKMARK = 'is-bookmark';
 const MARK_LANDMARK = 'is-landmark';
-let basementWords = null;          // { bookmark, landmark } in the reader's tongue, or null
+let basementWords = null;          // { bookmark, landmark, and } in the reader's tongue, or null
+// THE CONJUNCTION (O-277, Howell 2026-11-08, with both watermarks on his
+// phone: "We need to add an ampersand above bookmarks, otherwise it reads as
+// 'oft-quoted bookmarks'"): the bookmarks word is led by a line of its own
+// holding the tongue's "and" — the kit's vocabulary.and where one is given,
+// the ampersand otherwise — so the two watermarks read as a pair of
+// headings and not one phrase. It rides the same row, as the word's first
+// line; the view breaks a word at its spaces.
+const BASEMENT_AND = '&';
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
@@ -498,7 +506,7 @@ const BASEMENT = {
   markFor: key => (keptSeat(key) ? MARK_BOOKMARK : isHit(key) ? MARK_LANDMARK : null),
   sideFor: key => (!keptSeat(key) && isHit(key) ? -1 : 1),   // a landmark's name inward of the line; a kept hit is a bookmark
   legend: () => (basementWords && (basementWords.bookmark || basementWords.landmark)
-    ? [[MARK_LANDMARK, basementWords.landmark, -1], [MARK_BOOKMARK, basementWords.bookmark, 1]] : null),
+    ? [[MARK_LANDMARK, basementWords.landmark, -1], [MARK_BOOKMARK, basementWords.bookmark ? `${basementWords.and || BASEMENT_AND} ${basementWords.bookmark}` : null, 1]] : null),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; }
 };
@@ -4579,7 +4587,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // registry lookup stays as the belt for a volume that still has one.
     namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
     // The basement's legend words ride the same vocabulary (O-188).
-    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null } : null;
+    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null, and: namesMap.vocabulary.and || null } : null;
     return namesMap;
   };
   refreshNamesMap();

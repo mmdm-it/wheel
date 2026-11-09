@@ -288,14 +288,16 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
         const r = inner ? radius - viewport.SSd * LEGEND_INNER_REACH : radius + viewport.SSd * LEGEND_OUTER_REACH;
         const lines = legendLines(displayCase(String(word)));
         if (!lines.length) return;
-        // Each line's arc: the first farthest from the hub, the rest a line
-        // pitch nearer each — outward of the base for the standing word,
-        // inward for the hanging one. Sized to the visible run of the arc
+        // Each line's arc: the LAST line on the base arc at the word's reach,
+        // each earlier line a pitch farther from the hub — so a lead line (the
+        // "&" before the bookmarks word, O-277) stands between the word and
+        // the band, and the word itself keeps the place his sketch gave it,
+        // on either side. Sized to the visible run of the arc
         // where each line's letters' BODY lies (outward of its path standing,
         // inward hanging), the narrowest line ruling; the radii depend on the
         // size through the pitch, so the fit is taken a few times over.
         const clampEm = s => Math.max(LEGEND_MIN_EM * viewport.SSd, Math.min(LEGEND_MAX_EM * viewport.SSd, s));
-        const lineR = (i, size) => { const pitch = size * LEGEND_LINE_PITCH; return inner ? r - i * pitch : r + (lines.length - 1 - i) * pitch; };
+        const lineR = (i, size) => r + (lines.length - 1 - i) * size * LEGEND_LINE_PITCH;
         const bodyR = (rr, size) => (inner ? rr - size * LEGEND_CAP / 2 : rr + size * LEGEND_CAP / 2);
         const fit = (rr, line) => { const v = visibleArc(hubX, hubY, rr, viewport.width, viewport.height); return v ? (LEGEND_FILL * rr * (v[1] - v[0])) / (Math.max(1, [...line].length) * LEGEND_EM_PER_GLYPH) : 0; };
         let size = clampEm(Math.min(...lines.map(line => fit(r, line))));

@@ -19,7 +19,7 @@ const read = f => readFileSync(join(here, '..', f), 'utf8');
 test('the host sends a landmark inward, a bookmark outward, and the legend the same way', () => {
   const main = read('src/main.js');
   assert.match(main, /sideFor: key => \(!keptSeat\(key\) && isHit\(key\) \? -1 : 1\)/, 'a kept hit is a bookmark, outward');
-  assert.match(main, /\[MARK_LANDMARK, basementWords\.landmark, -1\], \[MARK_BOOKMARK, basementWords\.bookmark, 1\]/);
+  assert.match(main, /\[MARK_LANDMARK, basementWords\.landmark, -1\], \[MARK_BOOKMARK, basementWords\.bookmark \? .* : null, 1\]/);
   assert.match(main, /sideFor: ch\.sideFor \|\| null/, 'the options builder passes it to the view');
 });
 
