@@ -534,8 +534,20 @@ const BASEMENT = {
   // tongue without all three shows no caption, and the tap still keeps. It
   // retired the slider's hold in the overrun (O-128): the globe now trucks
   // and nothing else, and keeping is the lens's alone.
-  caption: key => (basementWords?.keep && basementWords.discard && basementWords.one
-    ? { above: keptSeat(key) ? basementWords.discard : basementWords.keep, below: basementWords.one } : null)
+  // KEEP IS THE CANDIDATE'S ALONE (Howell, the same day, seeing KEEP over an
+  // oft-quoted seat: "The keep bookmark label should only apply to those
+  // nodes which have not yet been bookmarked, nor do they exist as
+  // oft-quoted verses ... a node that indicates whatever verse the user was
+  // reading when they trucked down into the basement"). A kept seat offers
+  // DISCARD; an oft-quoted seat is already stored and offers nothing; only
+  // the hollow dashed candidate offers KEEP — so the message is never seen
+  // anywhere but the lens, and only when the lens holds something to decide.
+  caption: key => {
+    if (!(basementWords?.keep && basementWords.discard && basementWords.one)) return null;
+    if (keptSeat(key)) return { above: basementWords.discard, below: basementWords.one };
+    if (isHit(key)) return null;
+    return { above: basementWords.keep, below: basementWords.one };
+  }
 };
 // The seat's label is the verse's full address as the instrument was showing
 // it at that moment — the Parent Button's words (book and chapter, in the
@@ -636,6 +648,9 @@ function toggleKeep(keyOrId) {
     dropBookmark(vol, id, edition);
     if (!basementLoose.includes(key)) basementLoose.push(key);
   } else {
+    // An oft-quoted seat is already stored (O-280): the lens offers it no
+    // KEEP, and the tap does what the message says — nothing.
+    if (isHit(key)) return false;
     keepBookmark(vol, { id, label: BASEMENT.label(key), edition, at: basementPlaces[key] ?? null });
   }
   return true;

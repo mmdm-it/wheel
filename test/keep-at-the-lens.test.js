@@ -1,7 +1,8 @@
 // KEEPING IS THE LENS'S ALONE (O-280, Howell 2026-11-09): the basement's
 // lens wears a caption — KEEP or DISCARD above the verse's name, BOOKMARK
-// below — in the tongue's own words, present at every settle and gone while
-// the ring turns; a tap on the lens or on either line keeps or drops the
+// below — KEEP for the hollow dashed candidate alone, DISCARD for a kept
+// seat, nothing for an oft-quoted one — in the tongue's own words, present at
+// every settle and gone while the ring turns; a tap on the lens or on either line keeps or drops the
 // seat under it. The slider's hold in the overrun below the basement is
 // retired: the globe trucks, and nothing else.
 import { test } from 'node:test';
@@ -63,7 +64,13 @@ test('the view sets the two lines on the lens\'s own frame, words it per seat, a
 
 test('the host words the caption from the tongue, counts a tap on it as the lens, and the slider only trucks', () => {
   const main = read('src/main.js');
-  assert.match(main, /caption: key => \(basementWords\?\.keep && basementWords\.discard && basementWords\.one\s*\? \{ above: keptSeat\(key\) \? basementWords\.discard : basementWords\.keep, below: basementWords\.one \} : null\)/);
+  const cap = main.slice(main.indexOf('caption: key => {'), main.indexOf('\n};', main.indexOf('caption: key => {')));
+  assert.match(cap, /if \(keptSeat\(key\)\) return \{ above: basementWords\.discard, below: basementWords\.one \};/, 'a kept seat offers DISCARD');
+  assert.match(cap, /if \(isHit\(key\)\) return null;/, 'an oft-quoted seat offers nothing');
+  assert.match(cap, /return \{ above: basementWords\.keep, below: basementWords\.one \};/, 'the candidate alone offers KEEP');
+  assert.ok(cap.indexOf('keptSeat(key)') < cap.indexOf('isHit(key)') && cap.indexOf('isHit(key)') < cap.indexOf('basementWords.keep'), 'in that order');
+  const keep = main.slice(main.indexOf('function toggleKeep'), main.indexOf('// THE LIVE PREVIEW'));
+  assert.match(keep, /if \(isHit\(key\)\) return false;\s*keepBookmark\(/, 'and the tap keeps no oft-quoted seat');
   assert.match(main, /keep: namesMap\.vocabulary\.keep \|\| null, discard: namesMap\.vocabulary\.discard \|\| null, one: namesMap\.vocabulary\.bookmark_one \|\| null/);
   assert.match(main, /caption: typeof ch\.caption === 'function' \? ch\.caption : null/, 'handed to the view through the one options builder');
   assert.match(main, /\.secondary-strata-caption:not\(\[display="none"\]\)/, 'a tap on a shown line is a tap on the lens');
