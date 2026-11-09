@@ -5,7 +5,7 @@
 // applied to the group by the stack (main.js). Rotation comes next.
 
 import { computeStrataLayout } from '../geometry/secondary-strata-geometry.js';
-import { standardBandCenterline, pointsToPath, getNodeSpacing } from '../geometry/focus-ring-geometry.js';
+import { standardBandCenterline, pointsToPath, getNodeSpacing, chainSpanPoints, bandEdges, bandBounds, STRATA_REACH } from '../geometry/focus-ring-geometry.js';
 
 const NS = 'http://www.w3.org/2000/svg';
 const NODE_RADIUS_RATIO = 0.035;      // matches the primary (index.js)
@@ -49,6 +49,59 @@ const BESIDE_OFFSET = 1.3;           // node radii, along the node's angle (outw
 // therefore should not be centered at all at any time."
 const COVER_PULL = MAG_LABEL_SPAN_PULL; // node radii, outward from the centre: the name starts here and runs over the node
 const LENS_SCALE_PEAK = 2.0;
+// The legend's arcs (O-276), measured off Howell's second sketch (2026-11-08,
+// red strokes over the basement on his phone, read back against the ring's
+// hub and radius for that viewport): each word's arc stands so far from the
+// ring's centreline, as a fraction of the short side, and each word is
+// centred so many seats from the lens along the arc. The outer word sits
+// level with the lens, well clear of the names; the inner word four and a
+// half seats below it, deep in the open hub side. The half-span is the room
+// a long tongue's word may take.
+// THEN MADE WATERMARKS (O-277, Howell the same evening, with the words in
+// place: "Much larger letters, as big as they can be and still fit on the
+// page, but at 50% opacity. Similar to the way we did language watermarks"
+// in the other volume): each word is centred on the stretch of its arc that the
+// glass shows and sized to fill it, so it is as large as its field allows
+// on whatever phone is in hand; the faintness is the stylesheet's. The
+// outer word's reach came in from the sketch's 0.33 — a watermark lies
+// under the names rather than beside them, and the corner wedge at 0.33
+// has room for a title, not a watermark. His third sketch (the same
+// evening) brought the inner word nearer the band and put the outer one
+// on two lines: a word breaks at its spaces and after its hyphens, each
+// line on its own concentric arc, the first line farthest from the hub
+// (the top line as the reader holds the phone, on either side), all at
+// the one size the narrowest line's run allows.
+const LEGEND_OUTER_REACH = 0.2;    // × SSd outward from the centreline, the line nearest the band
+const LEGEND_INNER_REACH = 0.34;   // × SSd inward, likewise
+const LEGEND_FILL = 0.92;          // of the visible arc a line may take
+const LEGEND_EM_PER_GLYPH = 0.8;   // a bold capital's advance plus the tracking, in em
+const LEGEND_CAP = 0.72;           // a capital's height, in em
+const LEGEND_LINE_PITCH = 1.15;    // em, arc to arc
+const LEGEND_MAX_EM = 0.17;        // × SSd — the ceiling on a wide glass
+const LEGEND_MIN_EM = 0.05;        // × SSd — the floor, a running title's size
+// "Oft-quoted" → ["OFT-", "QUOTED"]; "Usein lainatut" → two lines; no lookbehind (older WebKit).
+export const legendLines = word => String(word).split(/\s+/).filter(Boolean)
+  .flatMap(w => w.split('-').map((part, i, all) => (i < all.length - 1 ? `${part}-` : part)).filter(Boolean));
+
+// The stretch of a circle about (hubX, hubY) of radius r that lies on a
+// w × h glass: the longest run of angles whose points fall inside it, as
+// [a0, a1] with a1 > a0 (the direction the legend reads), or null if none.
+export function visibleArc(hubX, hubY, r, w, h, steps = 720) {
+  const inside = a => { const x = hubX + r * Math.cos(a), y = hubY + r * Math.sin(a); return x >= 0 && x <= w && y >= 0 && y <= h; };
+  const step = (2 * Math.PI) / steps;
+  let best = null, start = null;
+  // Walk twice round so a run crossing the seam is seen whole.
+  for (let i = 0; i <= steps * 2; i++) {
+    const a = -Math.PI + i * step;
+    if (i < steps * 2 && inside(a)) { if (start === null) start = a; continue; }
+    if (start !== null) {
+      const run = [start, a - step];
+      if (!best || run[1] - run[0] > best[1] - best[0]) best = run;
+      start = null;
+    }
+  }
+  return best && best[1] - best[0] >= step ? best : null;
+}
 const LENS_SCALE_SIGMA = 0.3;        // × node spacing
 
 const svgEl = (tag, attrs) => {
@@ -66,13 +119,12 @@ const svgEl = (tag, attrs) => {
 // Vietnamese, Turkish, Czech, Welsh, \u2026), otherwise leave it untouched.
 const LATIN_SCRIPT_ONLY = /^[\u0020-\u024F\u0300-\u036F\u1E00-\u1EFF]+$/;
 const displayCase = s => (LATIN_SCRIPT_ONLY.test(s) ? s.toUpperCase() : s);
-
 export function hideStratum(svg, id) {
   const g = svg?.querySelector?.(`#${id}`);
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, legend = null } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, sideFor = null, legend = null } = {}) {
   if (!svg || !Array.isArray(items)) return null;
   // An EMPTY ring is a real state for the basement (O-126): a reader with no
   // bookmarks yet sees the band and the hollow lens and nothing on them —
@@ -99,13 +151,22 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   const classes = typeof classFor === 'function' ? items.map(it => classFor(it) || '') : null;
   // THE MARKS (O-188, Howell 2026-09-30): a seat's NAME may wear a class of
   // its own — on the basement's ring, one for a bookmark and one for a
-  // landmark, each a colour ("any symbol is too busy and we're just going to
-  // have to do it with colors"). The legend, in the volume's own words and
-  // the same colours, sits in the open ground beside the ring. Both are the
-  // host's to name; this only draws.
+  // landmark ("any symbol is too busy"). They were colours; since O-275
+  // (2026-11-08) they colour nothing and face nothing — the SIDE below is
+  // what the reader sees — and every label is the app's ink. The legend, in
+  // the volume's own words, sits in the open ground beside the ring. Both
+  // are the host's to name;
+  // this only draws.
+  // THE SIDE (O-275, Howell's sketch 2026-11-08): a name beside its disc may
+  // stand on either side of the ring's line — a bookmark's outward, starting
+  // at the disc and running on; a landmark's MIRRORED about the line, ending
+  // at the disc and running inward, "shifted far to the left". The host says
+  // which (sideFor: +1 outward, -1 inward; a legend row's third element the
+  // same), and the legend's words stand the same way about one axis.
   const marks = typeof markFor === 'function' ? items.map(it => markFor(it) || '') : null;
+  const sides = typeof sideFor === 'function' ? items.map(it => (Number(sideFor(it)) < 0 ? -1 : 1)) : null;
   const legendRows = Array.isArray(legend) ? legend.filter(r => Array.isArray(r) && r[1]) : null;
-  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, legendRows]);
+  const membership = JSON.stringify([items, mirrored, Boolean(centerMagnified), viewport.width, viewport.height, classes, Boolean(labelsBeside), lensShift, marks, sides, legendRows]);
   const pose = JSON.stringify([selectedIndex, Boolean(rotating)]);
   let outer = svg.querySelector(`#${id}`);
   if (outer && outer.dataset.signature === membership && outer.dataset.pose === pose) return outer;
@@ -159,11 +220,30 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     // 2026-07-21). This matches the mirrored nodes from computeStrataLayout.
     let bandPts = standardBandCenterline(viewport);
     if (mirrored) bandPts = bandPts.map(([x, y]) => [x, viewport.height - y]);
-    g.appendChild(svgEl('path', {
+    // THE CHAIN HAS ENDS HERE TOO (O-272, Howell 2026-11-07, after O-271 on
+    // the primary: "do we apply it to the secondary and tertiary strata? …
+    // I agree. Proceed."): the bare sprocket — the band's two edges, inked
+    // like an empty vessel and lying wholly inside the band's width — is
+    // drawn once under the band; the band itself is cut to the chain at
+    // every pose, since the chain turns with the seats. A tongue with one
+    // edition is one bead on bare sprocket, which is the fact.
+    const bandWidth = layout.arc.radius * BAND_THICKNESS_RATIO;
+    const ink = 1; // one pixel, as on the primary (Howell 2026-11-07)
+    const hollow = svgEl('path', {
+      d: bandEdges(bandPts, bandWidth / 2 - ink / 2 - 0.3).map(pointsToPath).join(' '),
+      class: 'secondary-strata-band-hollow',
+      'stroke-width': ink.toFixed(2)
+    });
+    g.appendChild(hollow);
+    const band = svgEl('path', {
       d: pointsToPath(bandPts),
       class: 'secondary-strata-band',
-      'stroke-width': (layout.arc.radius * BAND_THICKNESS_RATIO).toFixed(1)
-    }));
+      'stroke-width': bandWidth.toFixed(1)
+    });
+    g.appendChild(band);
+    outer.__band = band;
+    outer.__bandHollow = hollow;
+    outer.__bandWhole = pointsToPath(bandPts);
 
     // One circle and one label per seat, in seat order, made once. The
     // label's TEXT is the seat's own and never changes with the pose; where
@@ -176,7 +256,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.textContent = displayCase(String(raw ?? ''));
       g.appendChild(circle);
       g.appendChild(label);
-      return { circle, label, mark: marks?.[index] || '' };
+      return { circle, label, mark: marks?.[index] || '', side: sides?.[index] ?? 1 };
     });
     // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is
     // a FIXED point at magA — the reference everything rotates around. Drawn
@@ -186,13 +266,58 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     g.appendChild(lens);
     g.appendChild(lensLabel);
     if (legendRows && legendRows.length) {
-      // Two lines in the open ground right of the ring, upright, in the
-      // label's own face; black as the app's other text.
-      const lx = viewport.width * 0.42, ly = viewport.height * 0.66, lh = Math.min(26, Math.max(14, 0.016 * viewport.SSd)) * 1.5;
-      legendRows.forEach(([mark, word], row) => {
-        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, x: lx.toFixed(1), y: (ly + row * lh).toFixed(1), 'text-anchor': 'start', 'dominant-baseline': 'middle' });
-        t.textContent = displayCase(String(word));
-        g.appendChild(t);
+      // THE LEGEND RUNS ALONG THE BAND (O-276, Howell's sketch 2026-11-08:
+      // the two words "on either side of the focus ring band, rotated ...
+      // curved to follow the arc"). Each word rides an arc concentric with
+      // the ring, read UP the arc with its letters' tops away from the hub,
+      // on the side of the band its names lie on: a bookmark's name runs
+      // hubward of its disc, so its word is on the inner arc, below the
+      // lens, where that side is open; the other word on the outer arc,
+      // level with the lens, where the outer side is. Each at the reach his
+      // sketch gave it — the inner word hangs from its arc, the outer stands
+      // on it.
+      //
+      // AS WATERMARKS (O-277): each word fills the stretch of its arc the
+      // glass shows, and is drawn FIRST in the group, under the band and
+      // every name — a watermark lies beneath the page, never on it.
+      const { hubX, hubY, radius } = layout.arc;
+      const at = (r, a) => `${(hubX + r * Math.cos(a)).toFixed(1)} ${(hubY + r * Math.sin(a)).toFixed(1)}`;
+      const first = g.firstChild;
+      legendRows.forEach(([mark, word, side], row) => {
+        const inner = Number(side) > 0;
+        const r = inner ? radius - viewport.SSd * LEGEND_INNER_REACH : radius + viewport.SSd * LEGEND_OUTER_REACH;
+        const lines = legendLines(displayCase(String(word)));
+        if (!lines.length) return;
+        // Each line's arc: the LAST line on the base arc at the word's reach,
+        // each earlier line a pitch farther from the hub — so a lead line (the
+        // "&" before the bookmarks word, O-277) stands between the word and
+        // the band, and the word itself keeps the place his sketch gave it,
+        // on either side. Sized to the visible run of the arc
+        // where each line's letters' BODY lies (outward of its path standing,
+        // inward hanging), the narrowest line ruling; the radii depend on the
+        // size through the pitch, so the fit is taken a few times over.
+        const clampEm = s => Math.max(LEGEND_MIN_EM * viewport.SSd, Math.min(LEGEND_MAX_EM * viewport.SSd, s));
+        const lineR = (i, size) => r + (lines.length - 1 - i) * size * LEGEND_LINE_PITCH;
+        const bodyR = (rr, size) => (inner ? rr - size * LEGEND_CAP / 2 : rr + size * LEGEND_CAP / 2);
+        const fit = (rr, line) => { const v = visibleArc(hubX, hubY, rr, viewport.width, viewport.height); return v ? (LEGEND_FILL * rr * (v[1] - v[0])) / (Math.max(1, [...line].length) * LEGEND_EM_PER_GLYPH) : 0; };
+        let size = clampEm(Math.min(...lines.map(line => fit(r, line))));
+        for (let pass = 0; pass < 3; pass++) size = clampEm(Math.min(...lines.map((line, i) => fit(bodyR(lineR(i, size), size), line))));
+        const t = svgEl('text', { class: `secondary-strata-legend${mark ? ` ${mark}` : ''}`, 'dominant-baseline': inner ? 'hanging' : 'alphabetic' });
+        t.dataset.side = inner ? 'inner' : 'outer';
+        t.dataset.lines = String(lines.length);
+        t.style.fontSize = `${size.toFixed(1)}px`;
+        lines.forEach((line, i) => {
+          const ri = lineR(i, size);
+          const run = visibleArc(hubX, hubY, bodyR(ri, size), viewport.width, viewport.height)
+            || [layout.magA - 2 * layout.spacing, layout.magA + 2 * layout.spacing];
+          const pid = `${id}-legend-${row}-${i}`;
+          const path = svgEl('path', { id: pid, class: 'stratum-legend-arc', d: `M ${at(ri, run[0])} A ${ri.toFixed(1)} ${ri.toFixed(1)} 0 0 1 ${at(ri, run[1])}`, fill: 'none' });
+          const tp = svgEl('textPath', { href: `#${pid}`, startOffset: '50%', 'text-anchor': 'middle' });
+          tp.textContent = line;
+          t.appendChild(tp);
+          g.insertBefore(path, first);
+        });
+        g.insertBefore(t, first);
       });
     }
     outer.__seats = seats;
@@ -201,13 +326,30 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     outer.dataset.signature = membership;
   }
 
+  // THE POSE, first the chain itself (O-272): solid from the centre of the
+  // first seat to the centre of the last, in this pose's angles; hollow
+  // beyond. A chain that reaches past both exits is the whole band, drawn
+  // as before; an empty ring (the basement before its first bookmark) is
+  // all bare sprocket.
+  const show = (el, on) => { if (on) el.removeAttribute('display'); else el.setAttribute('display', 'none'); };
+  if (outer.__band) {
+    const n = items.length;
+    const span = n
+      ? chainSpanPoints(layout.arc, layout.startAngle, layout.endAngle,
+          layout.magA - (n - 1 - selectedIndex) * layout.spacing,
+          layout.magA + selectedIndex * layout.spacing,
+          bandBounds(viewport.width, viewport.height, STRATA_REACH))
+      : { whole: false, points: [] };
+    outer.__band.setAttribute('d', span.whole ? outer.__bandWhole : pointsToPath(span.points));
+    show(outer.__bandHollow, !span.whole);
+  }
+
   // THE POSE: every seat to its place for this centre. While turning, EVERY
   // node is drawn (they stream through the empty lens, as on the primary);
   // settled, the node in the lens (magIndex) is hidden and the filled
   // lodestar shows it instead, so nothing floats where the lens is anchored.
   const sigma = getNodeSpacing(viewport) * LENS_SCALE_SIGMA;
   const magAngle = layout.magnifier?.angle ?? null;
-  const show = (el, on) => { if (on) el.removeAttribute('display'); else el.setAttribute('display', 'none'); };
   const posed = new Set();
   layout.nodes.forEach(node => {
     const seat = seats[node.index];
@@ -232,24 +374,27 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     seat.circle.setAttribute('r', (nodeR * magScale).toFixed(1));
     const rotDeg = (node.angle * 180) / Math.PI + 180;
     const label = seat.label;
+    const side = seat.side ?? 1;   // +1 outward from the disc, -1 mirrored about the ring's line (O-275)
     if (labelsBeside && magScale <= 1.01) {
-      // Beside the node, left-aligned: the name starts just past the node and runs on.
-      const lx = node.x + Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
-      const ly = node.y + Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
+      // Beside the node: outward, the name starts just past the node and
+      // runs on; inward (side -1), it ends just short of the node and runs
+      // the other way — the same distance, the mirror anchor.
+      const lx = node.x + side * Math.cos(node.angle) * nodeR * BESIDE_OFFSET;
+      const ly = node.y + side * Math.sin(node.angle) * nodeR * BESIDE_OFFSET;
       label.setAttribute('x', lx.toFixed(1));
       label.setAttribute('y', ly.toFixed(1));
-      label.setAttribute('text-anchor', 'start');
+      label.setAttribute('text-anchor', side < 0 ? 'end' : 'start');
       label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
     } else if (mirrored && !centerMagnified) {
       // Over the node, from COVER_PULL radii out toward the hub, wherever
       // the node is. Passing the lens it swells about that same start,
       // never centred.
-      const lx = node.x + Math.cos(node.angle) * nodeR * COVER_PULL;
-      const ly = node.y + Math.sin(node.angle) * nodeR * COVER_PULL;
+      const lx = node.x + side * Math.cos(node.angle) * nodeR * COVER_PULL;
+      const ly = node.y + side * Math.sin(node.angle) * nodeR * COVER_PULL;
       label.setAttribute('x', '0');
       label.setAttribute('y', '0');
-      label.setAttribute('text-anchor', 'start');
+      label.setAttribute('text-anchor', side < 0 ? 'end' : 'start');
       label.setAttribute('class', `secondary-strata-label is-beside${magScale > 1.01 ? ' is-passing' : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `translate(${lx.toFixed(1)}, ${ly.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`);
     } else {

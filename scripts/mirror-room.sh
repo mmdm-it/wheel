@@ -22,6 +22,16 @@
 #     scripts/mirror-room.sh -n      dry run, both doors, itemised
 #     scripts/mirror-room.sh         the mirror
 #     scripts/mirror-room.sh bible   one door
+#     scripts/mirror-room.sh public  LEICESTER SQUARE — see below
+#
+# THE THIRD DOOR IS NOT THE ROOM (2026-11-08). bibliacatholica.com is the
+# Bible's public address (O-137's Leicester Square; the engine's VENUES table
+# already names it as a door at the bare slash). It is the same copy the
+# room's bible door gets — the engine and the filtered corpus, nothing else —
+# sent to that domain's document root instead. It is never in the default
+# run: a public deploy is deliberate, named on the command line, on Howell's
+# word, the target said back first. Its document root keeps cPanel's cgi-bin
+# and the certificate client's .well-known, which the sync must not delete.
 #
 # The Bible's data goes through scripts/deploy-pd-filter.mjs first (O-231).
 # Data goes by CHECKSUM (-c): build-volume and precompress rewrite every
@@ -30,15 +40,20 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 REMOTE="${ROOM_REMOTE:-namecheap:~/public_html/mmdm/wheel-v3}"
+PUBLIC_REMOTE="${PUBLIC_REMOTE:-namecheap:~/bibliacatholica.com}"
 DRY=()
 DOORS=(bible calendar)
 for arg in "$@"; do
   case "$arg" in
     -n|--dry-run) DRY=(-n) ;;
-    bible|calendar) DOORS=("$arg") ;;
+    bible|calendar|public) DOORS=("$arg") ;;
     *) echo "mirror-room: unknown argument '$arg'" >&2; exit 2 ;;
   esac
 done
+
+# Where each door lives and the address that proves what it serves.
+target() { case "$1" in public) echo "$PUBLIC_REMOTE/" ;; *) echo "$REMOTE/$1/" ;; esac; }
+address() { case "$1" in public) echo "https://bibliacatholica.com/" ;; *) echo "https://mmdm.it/wheel-v3/$1/" ;; esac; }
 
 # The public deploy's excludes, kept in step with sync-to-server.sh, plus:
 # no data in the engine pass (it goes by door below), and the data already
@@ -50,6 +65,7 @@ EX=(
   --exclude='sync-to-server.sh' --exclude='bump-version.sh'
   --exclude='CHANGELOG.md' --exclude='README.md' --exclude='scripts/.scratch/'
   --exclude='data/' --filter='P data/'
+  --exclude='crops'   # a workspace symlink, not the app's
 )
 
 if [[ ! -f dist/app.js || dist/app.js -ot src/main.js ]]; then
@@ -58,10 +74,13 @@ if [[ ! -f dist/app.js || dist/app.js -ot src/main.js ]]; then
 fi
 
 for door in "${DOORS[@]}"; do
-  echo "== $door: engine → $REMOTE/$door/"
-  rsync -az -i --delete --delete-excluded "${DRY[@]}" "${EX[@]}" ./ "$REMOTE/$door/"
+  DEST="$(target "$door")"
+  KEEP=()
+  [[ "$door" == public ]] && KEEP=(--exclude='cgi-bin/' --filter='P cgi-bin/' --exclude='.well-known/' --filter='P .well-known/')
+  echo "== $door: engine → $DEST"
+  rsync -az -i --delete --delete-excluded "${DRY[@]}" "${EX[@]}" "${KEEP[@]}" ./ "$DEST"
   case "$door" in
-    bible)
+    bible|public)
       # THE CLEARED GATE (O-231): the room gets the filtered copy, never
       # data/gutenberg itself — only the versioned folder the engine reads,
       # nothing uncleared ("No uncleared edition should ever leave the LAN"),
@@ -70,17 +89,17 @@ for door in "${DOORS[@]}"; do
       PUBLIC="$(mktemp -d)"; trap 'rm -rf "$PUBLIC"' EXIT
       node scripts/deploy-pd-filter.mjs data/gutenberg "$PUBLIC/gutenberg"
       echo "== $door: the cleared copy of data/gutenberg/ (checksum)"
-      rsync -azc -i --delete "${DRY[@]}" "$PUBLIC/gutenberg/" "$REMOTE/$door/data/gutenberg/" ;;
+      rsync -azc -i --delete "${DRY[@]}" "$PUBLIC/gutenberg/" "${DEST}data/gutenberg/" ;;
     calendar)
       echo "== $door: data/calendar/ (checksum, without sources/)"
-      rsync -azc -i --delete "${DRY[@]}" --exclude='sources/' data/calendar/ "$REMOTE/$door/data/calendar/" ;;
+      rsync -azc -i --delete "${DRY[@]}" --exclude='sources/' data/calendar/ "${DEST}data/calendar/" ;;
   esac
 done
 
 if [[ ${#DRY[@]} -eq 0 ]]; then
   local_sha=$(sha256sum dist/app.js | cut -c1-16)
   for door in "${DOORS[@]}"; do
-    served=$(curl -s "https://mmdm.it/wheel-v3/$door/dist/app.js" | sha256sum | cut -c1-16)
+    served=$(curl -s "$(address "$door")dist/app.js" | sha256sum | cut -c1-16)
     [[ "$served" == "$local_sha" ]] && echo "== $door serves the local bundle ($local_sha)" || { echo "== $door serves $served, local is $local_sha — NOT the same" >&2; exit 1; }
   done
 fi

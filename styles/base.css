@@ -741,17 +741,40 @@ svg :focus-visible {
 /* Names on a receding ring do not re-hint at every fractional scale. */
 .secondary-strata-label { text-rendering: geometricPrecision; }
 /* The basement's legend (O-188): the label's face and size, upright in the
-   open ground beside the ring; and THE COLOURS that tell a bookmark from a
-   landmark, on the legend's words and on the seats' names alike (Howell
-   2026-09-30: "a dark red and a dark blue"). Nodes keep their one colour. */
+   open ground beside the ring. WHAT TELLS A LANDMARK FROM A BOOKMARK is
+   THE SIDE OF THE RING'S LINE (O-275, Howell's sketch 2026-11-08: "the
+   landmarks should be shifted far to the left ... mirrored about the focus
+   ring line"), which the view places — a bookmark's name outward from its
+   disc, a landmark's inward, ending at the disc. Nothing in the basement
+   is italic (Howell, the same evening: "remove the italics so nothing is
+   italicized in the basement" — the slant tried first did not read). The
+   dark red and dark blue of 2026-09-30 are retired: every label is the
+   app's ink. Nodes keep their one colour. */
+/* The legend's words ride arcs beside the band (O-276), and are WATERMARKS
+   (O-277, Howell 2026-11-08: "Much larger letters, as big as they can be and
+   still fit on the page ... Similar to the way we did language watermarks"
+   in the other volume): the view sizes each word to the stretch of its arc
+   the glass shows and draws it under the band and the names; this is its
+   faintness — that volume's watermark stands at a twentieth, search's at a
+   tenth, and this one, black on a ground half way to black, nearer a fifth.
+   The font-size here is
+   the fallback for a word the view did not measure. */
 .secondary-strata-legend {
   fill: var(--color-text);
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  font-size: calc(22px * var(--iframe-scale, 1));
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: var(--basement-watermark-opacity, 0.18);
   pointer-events: none;
 }
-.secondary-strata-label.is-landmark, .secondary-strata-legend.is-landmark { fill: #7f1d1d; }
-.secondary-strata-label.is-bookmark, .secondary-strata-legend.is-bookmark { fill: #16337a; }
+.stratum-legend-arc { fill: none; stroke: none; }
+/* THE BARE SPROCKET on a chooser ring (O-272): beyond the chain's first and
+   last seat the band is its two edges only, inked like the empty vessel. */
+.secondary-strata-band-hollow {
+  fill: none;
+  stroke: var(--color-magnifier-stroke, #000);
+}
 .secondary-strata-band {
   fill: none;
   stroke: var(--color-band);
@@ -1225,6 +1248,16 @@ svg :focus-visible {
 .detail-text--arc[lang="he"] .detail-text-line,
 .detail-text--arc[lang="ar"] .detail-text-line {
   text-align: right;
+}
+
+/* THE LATIN KEEPS ITS U. EB Garamond's `locl` table for lang="la" sets every
+   u as v (Dominvs, tvvm) — a classical-inscription conceit of the font, not
+   the Clementine's orthography, which prints Deus and tuum. The canvas that
+   measures the lines knows no language and measured the u, so the drawn text
+   was also narrower than its measurement. Howell caught it in the first
+   rehearsal for the film (2026-11-08). */
+.detail-text--arc[lang="la"] {
+  font-feature-settings: "locl" 0;
 }
 
 /* ── Arc-following card layout ───────────────────────────────────────── */

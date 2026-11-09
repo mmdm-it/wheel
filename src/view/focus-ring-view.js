@@ -319,7 +319,7 @@ export class FocusRingView {
           // inside the band's width (Howell 2026-11-06: "I don't want to see
           // any hint of black next to the normal brown focus ring band"), so
           // each edge is inset by half its own stroke and a hair more.
-          const ink = Math.max(1, arcParams.radius * 0.002);
+          const ink = 1; // one pixel: Howell 2026-11-07, "push it toward the floor" (it was 0.2% of the radius, 1.56 on his phone)
           const edges = bandEdges(bandCenterlinePoints(arcParams, viewportWindow.startAngle, viewportWindow.endAngle, bounds), bandWidth / 2 - ink / 2 - 0.3);
           this.bandHollow.setAttribute('d', edges.map(pointsToPath).join(' '));
           this.bandHollow.setAttribute('stroke-width', ink.toFixed(2));

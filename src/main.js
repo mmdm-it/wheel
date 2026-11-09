@@ -1,4 +1,5 @@
 import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRoot } from './index.js';
+import { declareHomeScreen } from './core/home-screen.js';
 import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
@@ -168,6 +169,7 @@ import { mountDimensionGlobe, mountDimensionEmblem } from './view/dimension-glob
 import { labelRotationDeg } from './view/node-appearance.js';
 import { mountSearchDividers } from './view/search-dividers.js';
 import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
+import { setBasementDepth } from './view/basement-light.js';
 
 const svg = document.getElementById('app');
 // THE MIGRATION LOG (Howell 2026-10-03): with ?migrationlog=1 or ?swipelog=1,
@@ -311,13 +313,17 @@ const dimensionBridge = createDimensionBridge({ store: dimensionStore });
 // ("behind the user's head"). Selection is still tap-for-now — rotation
 // (magnifier-as-selection) is the next build.
 const STRATA_DEPTHS = [1.0, 0.4, 0.2];  // scale, indexed by levels behind the front
-const STRATA_BLURS = [0, 1, 2];         // px local, same index — front sharp,
+const STRATA_BLURS = [0, 0.5, 1];       // px local, same index — front sharp,
 // one back a soft rack-focus, two back twice that so it reads further away.
 // Kept GENTLE on purpose: a receded plane's nodes must stay legible, never
 // dissolve into a smear (Howell 2026-07-27). Eased again 2026-07-30 (1.5/3 →
 // 1/2) now that the deepest plane is the app's FIRST screen: the boot funnel
 // is a stranger's introduction, so what waits behind the glass has to be
-// legible enough to be worth travelling toward.
+// legible enough to be worth travelling toward. Halved again 2026-11-07
+// (1/2 → 0.5/1), Howell with the language ring in front: "sharp enough to
+// see the nodes clearly in the distant primary strata, but … blurry enough
+// that the effect of distance is still apparent" — at 0.2 scale a node is
+// five pixels across, and two pixels of blur dissolved it.
 // Tangent fill span (radians past each viewport exit), sized to reach the
 // screen edge at each recede scale — the deeper the ring, the more of the
 // straight chain climbs into view (Howell 2026-07-21). Level 0 = arc-only.
@@ -446,13 +452,27 @@ const isHit = key => { const { id, edition } = seatParts(key); return hitSeats()
 // each verse in the focus ring would have this symbol next to it"; then,
 // seeing glyphs: "any symbol is too busy and we're just going to have to do
 // it with colors"). Every node wears one colour (O-164/O-178), so the NAME
-// carries the difference: a bookmark's in one colour, a landmark's in
-// another, the legend's two words in the same two. The words are the
+// carries the difference. It was a colour each; since O-275 (Howell
+// 2026-11-08: "I want all the labels to be black") it is the SIDE OF THE
+// RING'S LINE — a bookmark's name outward from its disc as every beside-name
+// has stood, a landmark's mirrored about the line, "shifted far to the
+// left" (his sketch). No face: the italic tried first that evening was
+// struck ("nothing is italicized in the basement"). The legend's two words
+// stand the same two ways about one axis. The mark classes below are hooks
+// that colour and face nothing; the view places. The words are the
 // tongue's own, from its naming kit (vocabulary.bookmark, .landmark), and a
 // tongue without them shows no legend rather than an English one.
 const MARK_BOOKMARK = 'is-bookmark';
 const MARK_LANDMARK = 'is-landmark';
-let basementWords = null;          // { bookmark, landmark } in the reader's tongue, or null
+let basementWords = null;          // { bookmark, landmark, and } in the reader's tongue, or null
+// THE CONJUNCTION (O-277, Howell 2026-11-08, with both watermarks on his
+// phone: "We need to add an ampersand above bookmarks, otherwise it reads as
+// 'oft-quoted bookmarks'"): the bookmarks word is led by a line of its own
+// holding the tongue's "and" — the kit's vocabulary.and where one is given,
+// the ampersand otherwise — so the two watermarks read as a pair of
+// headings and not one phrase. It rides the same row, as the word's first
+// line; the view breaks a word at its spaces.
+const BASEMENT_AND = '&';
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
@@ -463,9 +483,18 @@ const BASEMENT = {
     // (the arrival, anything dropped this visit) after them. A hit is seated
     // in the edition up, with the label the primary would show; a hit the
     // reader has also kept is one seat, drawn kept.
-    const kept = bookmarksOf(currentVolumeId);
+    // A KEPT SEAT'S PLACE IS ASKED AGAIN, on the edition up (O-275, Howell's
+    // sketch 2026-11-08: two Maccabees bookmarks sat below the Epistles —
+    // "They should be further up the ring as the last of the Old Testament
+    // books"). The place a bookmark was kept with ranked its book by the
+    // shard list, which stands in no order (W-96); the adapter now ranks by
+    // the shelf, and a seat the edition up holds is ranked on THAT shelf, so
+    // every seat on the ring is measured with one rule. A seat the edition up
+    // does not hold keeps the place it was kept with.
+    const kept = bookmarksOf(currentVolumeId).map(b => { let at = null; try { at = seatPlace(b.id); } catch (_) { at = null; } return at ? { ...b, at } : b; });
     const hits = hitSeats().filter(h => !kept.some(b => b.id === h.id && (b.edition ?? null) === (h.edition ?? null)));
     for (const h of hits) { const k = seatKey(h.id, h.edition); basementLabels[k] = h.label; basementPlaces[k] = h.at; }
+    for (const b of kept) if (b.at) basementPlaces[seatKey(b.id, b.edition)] = b.at;
     const keys = inOrder([...kept, ...hits]).map(b => seatKey(b.id, b.edition));
     for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
     return keys;
@@ -475,8 +504,9 @@ const BASEMENT = {
   // Loose (arrived with, or dropped this visit): hollow, provisional.
   classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
   markFor: key => (keptSeat(key) ? MARK_BOOKMARK : isHit(key) ? MARK_LANDMARK : null),
+  sideFor: key => (!keptSeat(key) && isHit(key) ? -1 : 1),   // a landmark's name inward of the line; a kept hit is a bookmark
   legend: () => (basementWords && (basementWords.bookmark || basementWords.landmark)
-    ? [[MARK_LANDMARK, basementWords.landmark], [MARK_BOOKMARK, basementWords.bookmark]] : null),
+    ? [[MARK_LANDMARK, basementWords.landmark, -1], [MARK_BOOKMARK, basementWords.bookmark ? `${basementWords.and || BASEMENT_AND} ${basementWords.bookmark}` : null, 1]] : null),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; }
 };
@@ -1255,7 +1285,7 @@ const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
   mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
   classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0,
-  markFor: ch.markFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
+  markFor: ch.markFor || null, sideFor: ch.sideFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
 });
 
 function renderStack({ keepFront = false } = {}) {
@@ -1268,6 +1298,7 @@ function renderStack({ keepFront = false } = {}) {
     // settle" — Howell, 2026-09-14); nothing must change at the settle.
     const gone = PRIMARY_GONE();
     setPrimaryVisual(gone.scale, gone.blur, gone);
+    setBasementDepth(1);   // the basement's light (O-277): the ground a few shades deeper
     // SETTLED, the layer comes back ABOVE the (now invisible) primary. Under
     // it, the primary's own nodes — which set pointer-events of their own —
     // took every touch meant for the basement's ring, and it would not turn
@@ -1282,6 +1313,7 @@ function renderStack({ keepFront = false } = {}) {
   } else {
   hideStratum(strataLayer, BASEMENT.id);
   strataBelow(false);
+  setBasementDepth(0);   // the floors above keep the theme's own ground
   applyPrimaryDepth(strataFront); // primary is stack position 0; its level == front
   // Choosers are positions 1..N. Render (front to back so the SVG z-order —
   // last child on top — puts the front stratum highest) any at or ahead of
@@ -1752,6 +1784,10 @@ function beginGlide(fromFront, toFront, { lens = null } = {}) {
       setPrimaryVisual(lerp(from.__primary.scale, to.__primary.scale, e), toFront < 0 ? to.__primary.blur : from.__primary.blur, {
         opacity: primaryOpacity
       });
+      // THE BASEMENT'S LIGHT (O-277) rides the floor's own dissolve: the
+      // ground deepens as the floor thins on the way down, lightens as it
+      // thickens on the way up, and is untouched by a glide between floors.
+      if (toFront < 0 || fromFront < 0) setBasementDepth(1 - primaryOpacity);
       [...CHOOSERS, BASEMENT].forEach(ch => {
         const g = groups[ch.id]; if (!g) return;
         const f = from[ch.id], t = to[ch.id];
@@ -1871,6 +1907,7 @@ function resetStrata() {
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
 let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
+let seatPlace = () => null;     // O-275: where a LEAF stands on the edition up, or null if it does not hold it
 let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
 let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
@@ -2240,7 +2277,14 @@ const BASEMENT_DROP = 1.25;  // the LOWEST point of travel, in button heights be
 const SLIDER_OVERRUN = 0.5;  // stops, below the basement stop
 const OVERRUN_GIVE = 0.5;    // the spring: the thumb moves this fraction of the finger's travel past the stop
 let slide = null;           // { startY, startFront, lastY, moved }
-let suppressClick = false;  // a drag's release must not also count as a tap
+// A drag's release must not also count as a tap — but the click a drag
+// suppresses may NEVER COME. A mouse fires click after any press released on
+// the button, moved or not; a FINGER fires click only for a tap, so a thumb
+// stroke to the basement set this flag and nothing consumed it, and the next
+// honest tap paid for it: the first tap on the globe from the basement did
+// nothing, the second worked (Howell, 2026-11-08, after every slide). The
+// flag is therefore good for one press only: cleared at the next pointerdown.
+let suppressClick = false;
 const buttonPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64);
 const notchPx = () => buttonPx() * NOTCH_RATIO;
 // How far ABOVE the CSS rest the thumb sits at floor position p (fractional while held).
@@ -2432,6 +2476,7 @@ function holdKeep() {
 
 if (dimensionButton) {
   dimensionButton.addEventListener('pointerdown', event => {
+    suppressClick = false;   // a new press owes nothing to the last stroke's missing click
     if (!dimensionAvailable()) return;
     if (strataAnim && !scrub) return;   // a tap's own glide is running: let it land
     if (scrubSettle) { cancelAnimationFrame(scrubSettle); scrubSettle = null; }   // caught mid-settle: the thumb takes over
@@ -2768,6 +2813,14 @@ function applyTheme(volume) {
   // A volume with no name of its own keeps the page's.
   const title = volumeConfigs[volume]?.documentTitle;
   if (title) document.title = title;
+  // The home-screen door (O-273): the manifest and icon the volume declares,
+  // and the status bar in its ground colour once installed.
+  declareHomeScreen(document, {
+    manifestHref: volumeConfigs[volume]?.webManifest,
+    icon: volumeConfigs[volume]?.homeIcon,
+    themeColor: bg,
+    title
+  });
   // Set ALL theme CSS variables inline so the first render has correct
   // colors even before the async volume stylesheet finishes loading.
   root.style.setProperty('--theme-color-bg', bg);
@@ -4534,7 +4587,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // registry lookup stays as the belt for a volume that still has one.
     namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
     // The basement's legend words ride the same vocabulary (O-188).
-    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null } : null;
+    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null, and: namesMap.vocabulary.and || null } : null;
     return namesMap;
   };
   refreshNamesMap();
@@ -4721,6 +4774,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
   seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
+  seatPlace = typeof handlerSet.seatPlace === 'function' ? handlerSet.seatPlace : () => null;
   hitSeats = typeof handlerSet.hitSeats === 'function' ? handlerSet.hitSeats : () => [];
   // The chooser offers the editions that hold where the reader stands (H-29).
   editionsHoldingItem = typeof handlerSet.editionsHoldingItem === 'function' ? handlerSet.editionsHoldingItem : () => null;

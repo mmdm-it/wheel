@@ -40,7 +40,12 @@ export function createMockElement(tag) {
       };
     })(),
     parentNode: null,
-    textContent: '',
+    // Text reads THROUGH children, as the real DOM's does — a <text> holding
+    // a <textPath> answers the word on the path (the basement's legend,
+    // O-276) — and setting it empties the node, as the real DOM's does.
+    _text: '',
+    get textContent() { return this._text + children.map(c => c?.textContent ?? '').join(''); },
+    set textContent(v) { this._text = String(v ?? ''); children.length = 0; },
     onclick: null,
     onkeydown: null,
     get children() { return children; },
