@@ -16,8 +16,16 @@ const MAGNIFIER_RADIUS_RATIO = 0.060; // matches the primary
 // — BOOKMARK for the candidate under the lens, DISCARD for a kept seat — in
 // the open ground to the right of the lens at the lens's height, the only
 // upright text on the glass, so it reads as a control and not as a seat.
-// Its left edge stands this many lens radii right of the lens's centre.
-const CAPTION_REACH = 2.4;
+// Its left edge stands this many lens radii right of the lens's centre, and
+// it is SIZED TO THE ROOM between there and the glass's right edge (Howell,
+// the first look: "it runs a little wide for 'bookmark'" — the word's end
+// was off the phone): the lens label's size where the word fits at it, and
+// smaller where it does not, so BOOKMARK, ENTFERNEN and the Russian word
+// all land whole on any phone.
+const CAPTION_REACH = 2.2;
+const CAPTION_EM_PER_GLYPH = 0.82;   // bold caps with the sheet's letter-spacing
+const CAPTION_MARGIN = 0.03;         // of the short side, kept clear at the right edge
+const CAPTION_MIN_PX = 12;
 const BAND_THICKNESS_RATIO = 0.02;    // the primary band spans 0.99r–1.01r
 // The magnified label starts one fraction-of-a-node BACK from its centre and
 // runs inward (start-anchored), so the name spans the node weighted to one
@@ -356,6 +364,14 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     el.setAttribute('x', x.toFixed(1));
     el.setAttribute('y', y.toFixed(1));
     el.removeAttribute('transform');
+    // The size: the lens label's (the sheet's clamp, 21..39 px at 2.4 of
+    // the short side's hundredths), cut to what the room allows.
+    const text = displayCase(String(word));
+    const glyphs = Math.max(1, Array.from(text).length);
+    const base = Math.max(21, Math.min(39, 0.024 * viewport.SSd));
+    const room = viewport.width - x - viewport.SSd * CAPTION_MARGIN;
+    const size = Math.max(CAPTION_MIN_PX, Math.min(base, room / (glyphs * CAPTION_EM_PER_GLYPH)));
+    el.style.fontSize = `${size.toFixed(1)}px`;
     el.dataset.cx = x.toFixed(1);
     el.dataset.cy = y.toFixed(1);
     el.textContent = displayCase(String(word));

@@ -42,6 +42,16 @@ test('the view stands one upright word right of the lens, words it per seat, and
   assert.equal(Number(word.getAttribute('y')), Number(cy.toFixed(1)), 'at the lens\'s height');
   assert.ok(Number(word.getAttribute('x')) > cx + 2 * magR, 'to the right of the lens, clear of the disc');
   assert.ok(Number(word.getAttribute('x')) < cx + 3 * magR, 'and not far from it');
+  // Sized to the room (Howell: "it runs a little wide for 'bookmark'"): the word ends on the glass.
+  const size = parseFloat(word.style.fontSize);
+  assert.ok(size > 12 && size <= 21.01, `the lens label's size or less (${size})`);
+  assert.ok(Number(word.getAttribute('x')) + 8 * 0.82 * size <= vp.width - 0.03 * vp.SSd + 0.5, 'BOOKMARK lands whole');
+  // A long word in a narrow glass is cut smaller still.
+  const narrow = getViewportInfo(320, 640);
+  const longWord = wordOf(treeOf(renderStratum(svg, { ...opts(0, false, () => 'Entfernen'), viewport: narrow })))[0];
+  const ls = parseFloat(longWord.style.fontSize);
+  assert.ok(ls < size, `smaller where there is less room (${ls})`);
+  assert.ok(Number(longWord.getAttribute('x')) + 9 * 0.82 * ls <= narrow.width - 0.03 * narrow.SSd + 0.5, 'and still whole');
   assert.equal(word.dataset.cx, word.getAttribute('x'), 'its anchor on the glass, for the host\'s tap');
   assert.equal(word.dataset.cy, word.getAttribute('y'));
   assert.equal(word.getAttribute('display'), null, 'shown at the settle');
