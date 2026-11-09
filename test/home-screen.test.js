@@ -65,11 +65,19 @@ describe('the home-screen door (O-273)', () => {
     assert.deepEqual(declareHomeScreen(null, {}), { manifest: false, themeColor: false, icon: false });
   });
 
-  it('the volume that declares a manifest declares one that exists, installs standalone, and whose icons exist', async () => {
+  it('the volume that declares a manifest declares one that exists, installs standalone, and whose icons exist', async t => {
     const cfg = volumeConfigs.bible;
     assert.ok(cfg.webManifest, 'the volume declares a manifest');
+    assert.ok(cfg.homeIcon, 'the touch icon is declared');
     assert.ok(cfg.webManifest.startsWith(cfg.assetBase.replace(/\/$/, '')), 'the manifest lives under the volume\'s own data root, as its emblem does (W-114)');
-    const file = path.join(repoRoot, cfg.webManifest);
+    // The files live in the CORPUS, reached through the gitignored data/
+    // window — symlinks into the private checkout on the bench, nothing in
+    // the engine's CI, which has no credential for that tree. The
+    // declaration is checked everywhere; the files only where the window is
+    // open. WHEEL_REPO_ROOT lets the bench rehearse the closed window.
+    const root = process.env.WHEEL_REPO_ROOT || repoRoot;
+    const file = path.join(root, cfg.webManifest);
+    try { await fs.access(path.join(root, cfg.assetBase)); } catch { t.skip('the corpus window data/ is not checked out here; the manifest and icons are read where it is'); return; }
     const m = JSON.parse(await fs.readFile(file, 'utf8'));
     assert.equal(m.display, 'standalone', 'installed, it opens with no browser bar');
     assert.ok(m.name && m.start_url && m.scope, 'name, start_url and scope are what makes a page installable');
@@ -83,7 +91,6 @@ describe('the home-screen door (O-273)', () => {
       await fs.access(p);
     }
     assert.ok(m.icons.some(i => /maskable/.test(i.purpose || '')), 'one icon is maskable for Android launchers');
-    assert.ok(cfg.homeIcon, 'the touch icon is declared');
-    await fs.access(path.join(repoRoot, cfg.homeIcon));
+    await fs.access(path.join(root, cfg.homeIcon));
   });
 });
