@@ -677,24 +677,6 @@ svg :focus-visible {
    and brighten to full while a stratum was open. Neither now — see the
    brightness rule beside its base rule above. */
 #dimension-button.is-sliding { transition: opacity 0.15s ease; }
-/* THE PHRASE beside the globe while the thumb is held in the overrun
-   (O-128): the volume's own words, in the reader's tongue. */
-#bookmark-hint {
-  position: fixed;
-  transform: translateY(-50%);
-  max-width: 60vw;
-  text-align: right;
-  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-weight: 700;
-  font-size: clamp(14px, 2.2vmin, 22px);
-  letter-spacing: 0.06em;
-  color: var(--color-text, #000);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  pointer-events: none;
-  z-index: 261;
-}
-#bookmark-hint.is-showing { opacity: 1; }
 /* The thumb's springback out of the overrun: eased, a touch longer than the
    snap between stops — the Focus Ring's own feel. */
 #dimension-button { transition: opacity 0.15s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1); }
@@ -822,6 +804,20 @@ svg :focus-visible {
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
   font-weight: 400;
 }
+/* THE CAPTION ON THE LENS (O-280, Howell 2026-11-09, his sketch: KEEP /
+   name / BOOKMARK, or DISCARD / name / BOOKMARK): a line above the lens's
+   name and one below, in the ordinary label's size and the room's ink; the
+   verb is the one bold word on the basement's glass. The view places them
+   along the lens's tangent and hides them while the ring turns. A tap on
+   either line is a tap on the lens (the host's lensHit). */
+.secondary-strata-caption {
+  fill: var(--color-text);
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(14px * var(--iframe-scale, 1)), 1.6vmin, calc(26px * var(--iframe-scale, 1)));
+  letter-spacing: 0.06em;
+  pointer-events: none;
+}
+.secondary-strata-caption.is-verb { font-weight: 700; }
 
 .focus-ring-band {
   /* A stroked centreline now (sprocket chain: arc + straight tangents), not a

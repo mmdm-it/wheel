@@ -10,6 +10,12 @@ import { standardBandCenterline, pointsToPath, getNodeSpacing, chainSpanPoints, 
 const NS = 'http://www.w3.org/2000/svg';
 const NODE_RADIUS_RATIO = 0.035;      // matches the primary (index.js)
 const MAGNIFIER_RADIUS_RATIO = 0.060; // matches the primary
+// THE CAPTION ON THE LENS (O-280, Howell 2026-11-09): a line above the lens's
+// name and a line below it, read along the lens's own tangent, so the three
+// together say KEEP / name / BOOKMARK (or DISCARD / name / BOOKMARK). Their
+// centres stand this many lens radii off the lens's centre, clear of the
+// disc and of the larger name across it.
+const CAPTION_REACH = 1.6;
 const BAND_THICKNESS_RATIO = 0.02;    // the primary band spans 0.99r–1.01r
 // The magnified label starts one fraction-of-a-node BACK from its centre and
 // runs inward (start-anchored), so the name spans the node weighted to one
@@ -124,7 +130,7 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, sideFor = null, legend = null } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, sideFor = null, legend = null, caption = null } = {}) {
   if (!svg || !Array.isArray(items)) return null;
   // An EMPTY ring is a real state for the basement (O-126): a reader with no
   // bookmarks yet sees the band and the hollow lens and nothing on them —
@@ -265,6 +271,13 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     const lensLabel = svgEl('text', { y: '0', 'dominant-baseline': 'middle', class: 'secondary-strata-label is-magnified' });
     g.appendChild(lens);
     g.appendChild(lensLabel);
+    // The caption's two lines (O-280): above and below the name, placed and
+    // worded at every settle below; hidden while the ring turns.
+    const captionAbove = svgEl('text', { 'dominant-baseline': 'middle', 'text-anchor': 'middle', class: 'secondary-strata-caption is-verb', display: 'none' });
+    const captionBelow = svgEl('text', { 'dominant-baseline': 'middle', 'text-anchor': 'middle', class: 'secondary-strata-caption', display: 'none' });
+    g.appendChild(captionAbove);
+    g.appendChild(captionBelow);
+    g.__caption = [captionAbove, captionBelow];
     if (legendRows && legendRows.length) {
       // THE LEGEND RUNS ALONG THE BAND (O-276, Howell's sketch 2026-11-08:
       // the two words "on either side of the focus ring band, rotated ...
@@ -332,6 +345,32 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // as before; an empty ring (the basement before its first bookmark) is
   // all bare sprocket.
   const show = (el, on) => { if (on) el.removeAttribute('display'); else el.setAttribute('display', 'none'); };
+  // THE CAPTION (O-280): `words` is { above, below } or null. Each line
+  // rides the lens label's own frame — translated to the lens, rotated to
+  // its tangent — at ±CAPTION_REACH lens radii along the frame's y, so
+  // "above" is above the name as it is read. A pulled (start-anchored)
+  // name's lines start where it starts. Each line records its own centre
+  // on the glass (data-cx/data-cy) so the host can count a tap on it as a
+  // tap on the lens.
+  const placeCaption = (lines, words, mag, rotDeg, magR, pulled) => {
+    if (!lines) return;
+    const [above, below] = lines;
+    if (!words || !words.above || !words.below) { show(above, false); show(below, false); return; }
+    const rad = (rotDeg * Math.PI) / 180;
+    const x = pulled ? -magR * MAG_LABEL_SPAN_PULL : 0;
+    [[above, words.above, -1], [below, words.below, 1]].forEach(([el, word, dir]) => {
+      const y = dir * magR * CAPTION_REACH;
+      el.setAttribute('x', x.toFixed(1));
+      el.setAttribute('y', y.toFixed(1));
+      el.setAttribute('text-anchor', pulled ? 'start' : 'middle');
+      el.setAttribute('transform', `translate(${mag.x.toFixed(1)}, ${mag.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})`);
+      // The line's centre on the glass: the frame's (x, y) rotated by rotDeg about the lens.
+      el.dataset.cx = (mag.x + x * Math.cos(rad) - y * Math.sin(rad)).toFixed(1);
+      el.dataset.cy = (mag.y + x * Math.sin(rad) + y * Math.cos(rad)).toFixed(1);
+      el.textContent = displayCase(String(word));
+      show(el, true);
+    });
+  };
   if (outer.__band) {
     const n = items.length;
     const span = n
@@ -428,8 +467,10 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     lensLabel.textContent = displayCase(String(magRaw ?? ''));
     lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}` : ''}`);
     show(lensLabel, true);
+    placeCaption(g.__caption, typeof caption === 'function' ? caption(items[layout.magIndex]) : null, mag, magRotDeg, magR, pulled);
   } else {
     show(lensLabel, false);
+    placeCaption(g.__caption, null);
   }
   outer.dataset.pose = pose;
 

@@ -118,13 +118,13 @@ describe('the slider and the basement (O-126)', () => {
     D.slide(0); await settle();
   });
 
-  it('the hold in the overrun keeps nothing from the front door — no verse in hand', async () => {
+  it('the slider has no hold and no overrun (O-280): the globe trucks, and keeping is the lens\'s alone', async () => {
     D.slide(-1); await settle();
     assert.equal(D.front(), -1);
-    D.holdBegin();
-    assert.equal(D.hold(), null, 'nothing came down with the reader, so there is nothing to keep');
-    D.holdCancel();
-    assert.equal(D.hold(), null);
+    assert.equal(D.holdBegin, undefined, 'the hold in the overrun is retired');
+    assert.equal(D.hold, undefined);
+    D.scrub(-1.4); await settle();
+    assert.equal(D.front(), -1, 'pulled past the basement the thumb stops at the basement');
   });
 
   it('the tap never goes down into the basement, and from the basement it returns to the text (O-182)', async () => {
