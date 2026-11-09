@@ -4590,8 +4590,25 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // The naming kit is where a tongue's words for its levels live now; the
     // registry lookup stays as the belt for a volume that still has one.
     namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
-    // The basement's legend words ride the same vocabulary (O-188).
-    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null, and: namesMap.vocabulary.and || null, bookmarkVerb: namesMap.vocabulary.bookmark_verb || null, discard: namesMap.vocabulary.discard || null } : null;
+    // THE ROOM'S OWN WORDS FOLLOW THE PHONE, NOT THE EDITION (O-282, Howell
+    // 2026-11-09, with the Greek up: "all of the oft-quoted verses all switch
+    // to Greek names ... switching a language or an edition within the corpus
+    // should only affect the labels and the verse displayed in the details
+    // sector. It should not affect watermarks"). The watermarks and the word
+    // beside the lens are the room's signage, not part of any edition — like
+    // the sideways page's labels — so they are read from the kit of the
+    // phone's own tongue (O-176's bridge), whole, and from the English kit
+    // where the phone's tongue has none or its kit lacks the pair. The seats'
+    // NAMES stay the edition's: a kept seat says the edition it was kept in,
+    // an oft-quoted seat says the page it will open. They rode the edition's
+    // vocabulary from O-188 until tonight.
+    const roomKit = (() => {
+      const kits = translationsMeta?.names || {};
+      const phone = firstOfferedLanguage(phoneLanguages(), Object.keys(kits));
+      const own = phone ? kits[phone]?.vocabulary : null;
+      return own?.bookmark && own?.landmark ? own : (kits.english?.vocabulary || null);
+    })();
+    basementWords = roomKit ? { bookmark: roomKit.bookmark || null, landmark: roomKit.landmark || null, and: roomKit.and || null, bookmarkVerb: roomKit.bookmark_verb || null, discard: roomKit.discard || null } : null;
     return namesMap;
   };
   refreshNamesMap();

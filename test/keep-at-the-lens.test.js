@@ -71,7 +71,7 @@ test('the host words it from the tongue — BOOKMARK for the candidate alone, DI
   assert.match(cap, /if \(isHit\(key\)\) return null;/, 'an oft-quoted seat offers nothing');
   assert.match(cap, /return basementWords\.bookmarkVerb;/, 'the candidate alone offers BOOKMARK');
   assert.ok(cap.indexOf('keptSeat(key)') < cap.indexOf('isHit(key)') && cap.indexOf('isHit(key)') < cap.indexOf('return basementWords.bookmarkVerb'), 'in that order');
-  assert.match(main, /bookmarkVerb: namesMap\.vocabulary\.bookmark_verb \|\| null, discard: namesMap\.vocabulary\.discard \|\| null/);
+  assert.match(main, /bookmarkVerb: roomKit\.bookmark_verb \|\| null, discard: roomKit\.discard \|\| null/, 'from the phone\'s kit (O-282)');
   const keep = main.slice(main.indexOf('function toggleKeep'), main.indexOf('// THE LIVE PREVIEW'));
   assert.match(keep, /if \(isHit\(key\)\) return false;\s*keepBookmark\(/, 'and the tap keeps no oft-quoted seat');
   assert.match(main, /caption: typeof ch\.caption === 'function' \? ch\.caption : null/, 'handed to the view through the one options builder');

@@ -71,6 +71,15 @@ test('the depth paints the root\'s inline ground â€” the one the theme paints â€
   assert.ok(bare.ground && !bare.band && !bare.ink);
 });
 
+test('the room\'s words follow the phone\'s tongue, whole, with English where it has none (O-282)', () => {
+  const main = read('src/main.js');
+  const block = main.slice(main.indexOf('const roomKit = (() => {'), main.indexOf('basementWords = roomKit ?'));
+  assert.match(block, /firstOfferedLanguage\(phoneLanguages\(\), Object\.keys\(kits\)\)/, 'the phone\'s first tongue the volume has a kit for');
+  assert.match(block, /return own\?\.bookmark && own\?\.landmark \? own : \(kits\.english\?\.vocabulary \|\| null\);/, 'the whole kit, or English');
+  assert.match(main, /basementWords = roomKit \? \{ bookmark: roomKit\.bookmark \|\| null, landmark: roomKit\.landmark \|\| null, and: roomKit\.and \|\| null, bookmarkVerb: roomKit\.bookmark_verb \|\| null, discard: roomKit\.discard \|\| null \} : null;/);
+  assert.ok(!/basementWords = namesMap\.vocabulary/.test(main), 'no longer the edition\'s vocabulary');
+});
+
 test('the host hands the glide the floor\'s dissolve and the settle the floor it stands on', () => {
   const main = read('src/main.js');
   assert.match(main, /if \(toFront < 0 \|\| fromFront < 0\) setBasementDepth\(1 - primaryOpacity\);/, 'the ground rides the floor\'s own dissolve');
@@ -82,7 +91,7 @@ test('the host leads the bookmarks word with the tongue\'s "and", the ampersand 
   const main = read('src/main.js');
   assert.match(main, /const BASEMENT_AND = '&';/);
   assert.match(main, /\[MARK_BOOKMARK, basementWords\.bookmark \? `\$\{basementWords\.and \|\| BASEMENT_AND\} \$\{basementWords\.bookmark\}` : null, 1\]/);
-  assert.match(main, /and: namesMap\.vocabulary\.and \|\| null/);
+  assert.match(main, /and: roomKit\.and \|\| null/, 'from the phone\'s kit (O-282)');
 });
 
 test('a word breaks at its spaces and after its hyphens', () => {
