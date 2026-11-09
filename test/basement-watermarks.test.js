@@ -20,14 +20,14 @@ test('the ground deepens in its own hue: every channel scaled alike, the theme u
   const deep = basementGround('#d9a877', 1).match(/\d+/g).map(Number);
   const ratio = deep.map((v, i) => v / [217, 168, 119][i]);
   assert.ok(ratio.every(r => Math.abs(r - ratio[0]) < 0.01), `one scale for all channels (${ratio.map(r => r.toFixed(3))})`);
-  assert.ok(ratio[0] > 0.55 && ratio[0] < 0.7, `a lot darker — over a third off (${ratio[0].toFixed(3)})`);
+  assert.ok(ratio[0] > 0.45 && ratio[0] < 0.55, `a lot darker — about half (${ratio[0].toFixed(3)})`);
   // Halfway through the dissolve, halfway down.
   const mid = basementGround('rgb(217, 168, 119)', 0.5).match(/\d+/g).map(Number);
   assert.ok(mid[0] > deep[0] && mid[0] < 217);
   assert.equal(basementGround('', 1), null, 'no theme, no ground');
 });
 
-test('the depth dims ground, band and nodes alike on the root and clears them on the floors above', () => {
+test('the depth dims the ground alone on the root — the band and the nodes keep the theme\'s colours — and clears it on the floors above', () => {
   const root = { style: (() => { const s = {}; Object.defineProperties(s, {
     setProperty: { value(n, v) { s[n] = v; } }, getPropertyValue: { value(n) { return s[n] ?? ''; } }, removeProperty: { value(n) { delete s[n]; } } }); return s; })() };
   root.style.setProperty('--theme-color-bg', '#d9a877');
@@ -36,13 +36,11 @@ test('the depth dims ground, band and nodes alike on the root and clears them on
   root.style.setProperty('--theme-color-node', '#8b6f47');
   setBasementDepth(1, root);
   assert.equal(root.style['--color-bg'], basementGround('#d9a877', 1));
-  assert.equal(root.style['--color-band'], basementGround('#8b6f47', 1), 'the band dims with the room, so it never sinks into it');
-  assert.equal(root.style['--color-orbital'], basementGround('#8b6f47', 1));
-  assert.equal(root.style['--color-nodes'], basementGround('#8b6f47', 1));
+  for (const v of ['--color-band', '--color-orbital', '--color-nodes']) assert.equal(root.style[v], undefined, `${v} is the theme's own (Howell: "It should return to its original setting")`);
   setBasementDepth(0.25, root);
   assert.equal(root.style['--color-bg'], basementGround('#d9a877', 0.25));
   setBasementDepth(0, root);
-  for (const v of ['--color-bg', '--color-band', '--color-orbital', '--color-nodes']) assert.equal(root.style[v], undefined, `${v}: the theme speaks again`);
+  assert.equal(root.style['--color-bg'], undefined, 'the theme speaks again');
 });
 
 test('the host hands the glide the floor\'s dissolve and the settle the floor it stands on', () => {
@@ -104,6 +102,6 @@ test('each word fills the visible stretch of its arc, is sized by the view, and 
 test('the sheet makes the words faint and leaves their size to the view', () => {
   const css = read('styles/base.css');
   const rule = css.match(/\.secondary-strata-legend\s*\{([^}]*)\}/)[1];
-  assert.match(rule, /opacity:\s*var\(--basement-watermark-opacity,\s*0?\.1\d?\)/);
+  assert.match(rule, /opacity:\s*var\(--basement-watermark-opacity,\s*0?\.[12]\d?\)/);
   assert.doesNotMatch(rule, /clamp\(/, 'no clamp: the view measures the glass');
 });

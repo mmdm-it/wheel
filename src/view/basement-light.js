@@ -7,28 +7,27 @@
 // The same tan, a good deal deeper — never a second hue the reader has to
 // learn. The ground is the volume's own declared colour scaled toward black,
 // which keeps its hue and saturation exactly (search mode dims the same way,
-// for close work; this is the floor below). THE RING DIMS WITH THE ROOM: the
-// band and the nodes are scaled by the same factor, because the band is
-// barely darker than the tan it crosses — a sixth off the ground (the first
-// cut; Howell: "doesn't look much darker at all. Try and make it a lot
-// darker") was the most it could lose before the band sank into it, and a
-// room dimmed by a third would have swallowed the ring whole. One factor on
-// ground, band and nodes keeps every relation the reader learned upstairs;
-// the ink stays black. It is driven by DEPTH, 0 on the
+// for close work; this is the floor below). THE GROUND ALONE: the band and
+// the nodes keep the theme's own colours (Howell, the same evening, after a
+// cut that dimmed them with the room: "You've been changing the darkness of
+// the focus ring band. It should return to its original setting. We want to
+// darken the background"). The band is barely darker than the tan upstairs,
+// so on a ground this deep it reads LIGHTER than its room — the ring lit in
+// a dark basement — and the depth is set past the point where the two would
+// match and the ring vanish. It is driven by DEPTH, 0 on the
 // floors above and 1 in the basement, and a glide hands it the floor's own
 // dissolve, so the ground deepens exactly as the floor goes and lightens
 // exactly as it returns — the reader passes through into a darker room,
 // rather than watching the room darken around a floor still under foot.
 //
-// It writes the legacy `--color-bg`, `--color-band`, `--color-orbital` and
-// `--color-nodes` on the root, which the body, the band, the seats and every
-// knock-out stroke already read; the theme's own `--theme-color-*` are left
+// It writes the legacy `--color-bg` on the root, which the body and every
+// knock-out stroke already read; the theme's own `--theme-color-bg` is left
 // alone and re-read at every call, so a volume change under the basement
-// deepens the new palette and not the old.
+// deepens the new ground and not the old.
 
-const BASEMENT_DIM = 0.38;   // how far the room travels toward black at full depth
+const BASEMENT_DIM = 0.5;    // how far the ground travels toward black at full depth
 // legacy variable → the theme variable it is scaled from
-const DIMMED = [['--color-bg', '--theme-color-bg'], ['--color-band', '--theme-color-band'], ['--color-orbital', '--theme-color-orbital'], ['--color-nodes', '--theme-color-node']];
+const DIMMED = [['--color-bg', '--theme-color-bg']];
 
 function parseColor(raw) {
   const s = String(raw || '').trim();
