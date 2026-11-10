@@ -85,12 +85,11 @@ test('the host words it from the tongue — BOOKMARK for the candidate alone, DI
   assert.match(main, /const TRAVEL_LIFT = 0\.5;/, 'the stops stay where the thumb learned them');
   const css = read('styles/base.css');
   const rule = css.match(/\.secondary-strata-caption\s*\{([^}]*)\}/)[1];
-  assert.match(rule, /fill: var\(--color-text\)/);
+  assert.match(rule, /fill: var\(--caption-ink, var\(--color-text\)\)/);
   assert.match(rule, /font-weight: 700/);
-  // The parent label's halo on the word (Howell: "a halo around the discard or bookmark label, the same way we put a halo around the parent button label"): a name passing beneath is dimmed, not hidden.
+  // The parent label's halo on the word (Howell: "a halo around the discard or bookmark label, the same way we put a halo around the parent button label"): a name passing beneath is dimmed, not hidden — as a mask on the names since O-289 (test/halo-on-the-names-alone.test.js); the word itself paints no stroke.
   assert.match(rule, /paint-order: stroke fill/);
-  assert.match(rule, /stroke: var\(--color-ground, var\(--color-bg\)\)/);
-  assert.match(rule, /stroke-opacity: var\(--parent-halo-opacity, 0\.85\)/);
+  assert.match(rule, /stroke-opacity: var\(--caption-halo-opacity, 0\)/);
   assert.match(rule, /stroke-width: var\(--parent-halo-width, 0\.6em\)/);
   const view = read('src/view/secondary-strata-view.js');
   assert.ok(!view.includes('clearWordPath'), 'no name is hidden for the word');

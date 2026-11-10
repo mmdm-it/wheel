@@ -686,7 +686,10 @@ svg :focus-visible {
 .secondary-strata-node.is-coming { fill: none; stroke: var(--color-orbital); stroke-width: 1.5; }
 /* O-231: an UNCLEARED edition — in the corpus, not yet ours to serve; LAN only, under ?uncleared=true */
 .secondary-strata-node.is-uncleared { fill: #e3170a; stroke: #e3170a; }
-.secondary-strata-node.is-coming + .secondary-strata-label { opacity: 0.62; }
+/* The name wears the seat's class as the disc does — the names stand in a
+   group of their own after every disc (O-289), no longer the disc's next
+   sibling. */
+.secondary-strata-label.is-coming { opacity: 0.62; }
 /* AN EDITION THAT IS ELSEWHERE (O-284): real and servable, not holding the
    verse under the reader — hollow like a placeholder, a door and not a page;
    its name at full strength, because it can be chosen, and choosing it leads
@@ -818,23 +821,38 @@ svg :focus-visible {
    lensHit). AND IT WEARS THE PARENT LABEL'S HALO (Howell, DISCARD running
    through the name of the seat above the lens: "I'd rather create a halo
    around the discard or bookmark label, the same way we put a halo around
-   the parent button label"): the O-233 stroke in the ground's colour under
-   the letters, so a name passing beneath is dimmed where it meets the word
-   and nowhere else. The ground here is the basement's deep tan, which the
-   basement light sets as --color-ground; no disc lies under this word, so
-   the stroke sits on the word itself (no O-257 copy is needed). */
+   the parent button label"): the O-233 halo, so a name passing beneath is
+   dimmed where it meets the word and nowhere else.
+   THE HALO IS A MASK ON THE NAMES, NOT PAINT ON THE WORD (O-289, Howell
+   2026-11-10, the word standing in the arc of its own watermark: "That
+   watermark should not be affected by the halo. The halo around the
+   bookmark label exists only to prevent a collision with adjacent bookmark
+   labels"). A stroke in the ground's colour on the word covered whatever
+   lay under it — the watermark, the band, a disc. Now the word itself has
+   no stroke: the view draws it once more, as a <use>, into a luminance mask
+   the names' groups wear — see .caption-halo-cut below, where the copy's
+   letters and stroke turn black. The knobs are the parent label's. */
 .secondary-strata-caption {
-  fill: var(--color-text);
+  fill: var(--caption-ink, var(--color-text));
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
   font-weight: 700;
   letter-spacing: 0.06em;
   paint-order: stroke fill;
-  stroke: var(--color-ground, var(--color-bg));
-  stroke-opacity: var(--parent-halo-opacity, 0.85);
+  stroke: #000;
+  stroke-opacity: var(--caption-halo-opacity, 0);
   stroke-width: var(--parent-halo-width, 0.6em);
   stroke-linejoin: round;
   pointer-events: none;
+}
+/* THE WORD'S COPY IN THE MASK (O-289): black letters, and the black stroke
+   at the halo's opacity over the mask's white — so a name under the stroke
+   shows through at the remainder (dimmed, not hidden, as O-233 asked) and
+   nothing under the letters themselves, where the word's own ink lies. The
+   copy inherits these from its <use>; the word on the glass never sees them. */
+.caption-halo-cut {
+  --caption-ink: #000;
+  --caption-halo-opacity: var(--parent-halo-opacity, 0.85);
 }
 
 .focus-ring-band {

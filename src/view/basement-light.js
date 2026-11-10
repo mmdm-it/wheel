@@ -116,11 +116,10 @@ export function setBasementDepth(depth, root = typeof document !== 'undefined' ?
   paint('--color-text', room.ink);
   paint('--color-orbital-label', room.ink ? theme.text : null);   // on-seat lettering keeps the theme's ink
   paint('--color-globe', room.globe);
-  // The ground as a VARIABLE too (O-280): the halo on the word beside the
-  // basement's lens strokes in the ground's colour, and a stroke cannot read
-  // an inline paint. Its own name, never `--color-bg`, which the sideways
-  // page reads and which must stay the theme's.
-  paint('--color-ground', room.ground);
+  // (The ground was a variable too, `--color-ground`, from O-280 to O-289:
+  // the halo on the word beside the basement's lens stroked in its colour.
+  // That halo is a mask now and paints nothing; the ground is inline alone.
+  // `--color-bg` stays the theme's: the sideways page reads it.)
   if (!room.ground) return;   // no theme yet: nothing to deepen, nothing to restore
   const body = typeof document !== 'undefined' ? document.body : null;
   for (const el of [root, body]) if (el?.style) el.style.backgroundColor = room.ground;

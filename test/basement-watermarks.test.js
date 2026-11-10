@@ -53,7 +53,7 @@ test('the depth paints the root\'s inline ground â€” the one the theme paints â€
   assert.equal(root.style['--color-text'], 'rgb(217, 168, 119)');
   assert.equal(root.style['--color-globe'], 'rgb(217, 168, 119)');
   assert.equal(root.style['--color-orbital-label'], '#2a1a0f');
-  assert.equal(root.style['--color-ground'], root.style.backgroundColor, 'the ground as a variable too, for the halo on the word beside the lens');
+  assert.equal(root.style['--color-ground'], undefined, 'no ground variable: the halo on the word beside the lens is a mask now (O-289), not paint');
   assert.ok(lum(root.style['--color-text']) / lum(root.style.backgroundColor) > 1.9, 'the names stand well off the ground');
   // Halfway: every value between its theme and its basement, so the glide is continuous at both ends.
   setBasementDepth(0.5, root);
