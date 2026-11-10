@@ -114,6 +114,10 @@ for door in "${DOORS[@]}"; do
       PUBLIC="$(mktemp -d)"; trap 'rm -rf "$PUBLIC"' EXIT
       node scripts/deploy-pd-filter.mjs data/gutenberg "$PUBLIC/gutenberg"
       echo "== $door: the cleared copy of data/gutenberg/ (checksum)"
+      # A fresh document root has no data/ yet, and the host's rsync (3.1.3)
+      # cannot make two levels at once (the public door's first deploy,
+      # 2026-11-10, stopped here with the engine up and no data beside it).
+      [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/gutenberg"
       rsync -azc -i --delete "${DRY[@]}" "$PUBLIC/gutenberg/" "${DEST}data/gutenberg/"
       if [[ "$door" == public ]]; then
         echo "== $door: the page with the door's own head"
@@ -122,6 +126,7 @@ for door in "${DOORS[@]}"; do
       fi ;;
     calendar|root)
       echo "== $door: data/calendar/ (checksum, without sources/)"
+      [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/calendar"
       rsync -azc -i --delete "${DRY[@]}" --exclude='sources/' data/calendar/ "${DEST}data/calendar/"
       if [[ "$door" == root && ${#DRY[@]} -eq 0 ]]; then
         echo "== $door: the archival catalog's data folders come down"
