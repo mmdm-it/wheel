@@ -6,8 +6,8 @@
 // place on its tongue's ring — a door, not a page — and a tongue whose every
 // edition is elsewhere stands hollow on the language ring. Choosing the
 // hollow edition takes the reader to the volume's top ring first and commits
-// the edition there, so they arrive at its shelf and never at a verse it
-// lacks. Nothing apologises: the seat said beforehand what it was.
+// the edition there, where nothing is filtered, so they arrive at its shelf
+// and never at a verse it lacks. Nothing apologises: the seat said beforehand what it was.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -56,15 +56,16 @@ test('a tongue whose every edition is elsewhere stands hollow on the language ri
   assert.deepEqual(shape(bridge, 'greek'), ['○LXX', 'NTG']);
 });
 
-test('settling the language ring on a hollow tongue is display-only; the position filter still refuses the edition; the one door is named', () => {
+test('settling the language ring on a hollow tongue is display-only; the filter refuses the edition at the leaf and commits it at the top, where nothing is filtered', () => {
   const { bridge, dispatched } = make();
   bridge.setEditionsHere(['NTG', 'LAT']);
   assert.equal(bridge.setLanguage('hebrew'), true, 'the lens may rest on it');
   assert.deepEqual(dispatched, [], 'nothing committed by the tongue alone');
-  assert.equal(bridge.setTranslation('HEB'), false, 'the filter stands for every ordinary caller (a stale preview, a deep link)');
-  assert.equal(bridge.commitElsewhere('LAT'), false, 'the door opens only for an edition that is elsewhere');
-  assert.equal(bridge.commitElsewhere('HEB'), true);
-  assert.deepEqual(dispatched.map(a => a.defaultEdition), ['HEB'], 'committed through the door');
+  assert.equal(bridge.setTranslation('HEB'), false, 'the filter stands at the leaf for every caller (a stale preview, a deep link, the door before it has moved)');
+  bridge.setEditionsHere(null);   // the host has seated the primary at the top ring
+  assert.equal(bridge.isElsewhere('HEB'), false, 'nothing is elsewhere at the top');
+  assert.equal(bridge.setTranslation('HEB'), true, 'so the ordinary commit is the door');
+  assert.deepEqual(dispatched.map(a => a.defaultEdition), ['HEB']);
   assert.equal(bridge.getSelection().translation, 'HEB');
 });
 
@@ -78,7 +79,7 @@ test('the host draws the door, keeps it live, previews around it, and walks thro
   assert.match(tertiary, /dimensionBridge\.isElsewhereLanguage\?\.\(id\) \? 'is-elsewhere'/, 'hollow on the language ring');
   const door = main.slice(main.indexOf('function goToShelf'), main.indexOf('function leaveBasement'));
   assert.match(door, /seatAtShelf\(currentApp\)/, 'the top ring first, in the edition being left');
-  assert.match(door, /if \(!shelved\) return false;\s*return dimensionBridge\.commitElsewhere\(key\);/, 'then the commit, so the reseat refills the top ring in the new edition');
+  assert.match(door, /if \(!shelved\) return false;[\s\S]*refreshEditionsHere\(\);\s*return dimensionBridge\.setTranslation\(key\);/, 'then the position re-asked and the ordinary commit, so the reseat refills the top ring in the new edition');
   assert.match(main, /seatAtShelf = typeof handlerSet\.seatAtShelf === 'function' \? handlerSet\.seatAtShelf : \(\) => false;/, 'the adapter\'s, bound per volume');
   // The preview never paints the reader's place in an edition that lacks it.
   assert.match(main, /editions\.find\(k => !dimensionBridge\.isComing\?\.\(k\) && !dimensionBridge\.isElsewhere\?\.\(k\)\)/, 'a passing tongue previews a filled seat first');
@@ -88,6 +89,7 @@ test('the host draws the door, keeps it live, previews around it, and walks thro
   assert.match(shelf, /buildBibleTestaments\(manifest, namesMap, \{ translationName, edition \}\)/, 'the volume\'s top ring');
   assert.match(shelf, /app\.setPrimaryItems\(items, 0, true\)/, 'set, not migrated');
   assert.match(shelf, /verseChainItems = null;/, 'the old edition\'s chains dropped');
+  assert.match(shelf, /bibleMode = 'testament';/, 'and the level travels with the ring, so the sky fills with the division\'s books');
   const css = read('styles/base.css');
   assert.match(css, /\.secondary-strata-node\.is-elsewhere \{ fill: none; stroke: var\(--color-orbital\); stroke-width: 1\.5; \}/, 'hollow');
   assert.doesNotMatch(css, /\.is-elsewhere \+ \.secondary-strata-label/, 'its name at full strength: it can be chosen');

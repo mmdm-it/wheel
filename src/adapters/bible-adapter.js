@@ -1490,10 +1490,17 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const edition = options?.activeEdition || options?.translation || null;
       const { items } = buildBibleTestaments(manifest, namesMap, { translationName, edition });
       if (!items.length) return false;
+      // The level travels with the ring (the bench, 2026-11-09: the ring
+      // stood at the divisions with the sky empty, because the pyramid asks
+      // the MODE which level it draws for, and the mode still said verse).
+      bibleMode = 'testament';
+      bibleVerseContext = null;
+      bibleChapterContext = null;
       verseChainItems = null;
       verseChainEdition = null;
       chapterChainItems = null;
       app.setPrimaryItems(items, 0, true);
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: hasRoot });
       return true;
     },
     seatAtLeaf: (leaf, app) => {

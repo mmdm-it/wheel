@@ -670,7 +670,8 @@ function jumpToChosen() {
 // A HOLLOW EDITION LEADS TO ITS SHELF (O-284, Howell 2026-11-09). An edition
 // that does not hold the reader's place stands hollow on its ring; chosen,
 // the reader is taken to the volume's top ring FIRST, in the edition they
-// are leaving, and the edition is committed there — so the ordinary reseat
+// are leaving, and the edition is committed there, where nothing is
+// filtered, by the ordinary commit — so the ordinary reseat
 // at the top (O-95) refills the ring with the new edition's divisions and
 // the reader arrives at its shelf, two strokes from any book. Never at a
 // verse the edition lacks, and never with a word of apology: the hollow
@@ -682,7 +683,14 @@ function goToShelf(key) {
   let shelved = false;
   try { shelved = Boolean(seatAtShelf(currentApp)); } catch (_) { shelved = false; }
   if (!shelved) return false;
-  return dimensionBridge.commitElsewhere(key);
+  // At the top ring nothing is filtered (the adapter answers null there), so
+  // the ORDINARY commit is the door: re-ask the position first, in case the
+  // move has not yet been noticed, and then commit as any filled seat would.
+  // The bench found the first cut refusing here — it asked the bridge to
+  // commit "an edition that is elsewhere" AFTER the move had made nothing
+  // elsewhere.
+  refreshEditionsHere();
+  return dimensionBridge.setTranslation(key);
 }
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
@@ -2647,6 +2655,9 @@ if (typeof window !== 'undefined') {
     turnPlan: front => overtureTurn(front),   // the overture's turn of a floor (O-225): { from, to } or null
     hollow: key => Boolean(dimensionBridge.isComing?.(key)),
     elsewhere: key => Boolean(dimensionBridge.isElsewhere?.(key)),   // O-284: real, hollow here, a door to its shelf
+    door: key => goToShelf(key),                                      // O-284: walk through it, for the bench and the boot tests
+    current: () => currentApp?.nav?.getCurrent?.() ?? null,          // where the primary stands
+    app: () => currentApp,                                            // the bench's hand on the primary
     // Null while the launch funnel is up (O-75), the reader's position after.
     here: () => dimensionBridge.editionsHere(),
     // IS THE LAUNCH FUNNEL STILL UP? (O-77.) Read-only, for the guard that
