@@ -23,6 +23,7 @@
 #     scripts/mirror-room.sh         the mirror
 #     scripts/mirror-room.sh bible   one door
 #     scripts/mirror-room.sh public  LEICESTER SQUARE — see below
+#     scripts/mirror-room.sh root    THE CALENDAR'S PUBLIC DOOR — see below
 #
 # THE THIRD DOOR IS NOT THE ROOM (2026-11-08). bibliacatholica.com is the
 # Bible's public address (O-137's Leicester Square; the engine's VENUES table
@@ -33,6 +34,23 @@
 # word, the target said back first. Its document root keeps cPanel's cgi-bin
 # and the certificate client's .well-known, which the sync must not delete.
 #
+# THE PUBLIC DOOR'S OWN HEAD. The tree's index.html carries the catalog's
+# title, description and link-preview tags, written for the root of mmdm.it;
+# the app retitles the tab once it runs, but a crawler and a share card read
+# the static head. The public door therefore gets the page stamped by
+# scripts/stamp-door-head.mjs, sent over the tree's copy after the engine
+# pass. The root keeps the page's own head: it is that site's.
+#
+# THE FOURTH DOOR IS THE ROOT OF mmdm.it (O-211; opened 2026-11-10 on
+# Howell's "I'm ready to go live with the calendar on mmdm.it"). The calendar
+# stands at the root of its server, where the archival catalog stood from
+# July to November 2026 (a copy of that is kept on the server at
+# ~/site-backups/mmdm-root-2026.11.10, and it lives in git). The root is the
+# PARENT of the room: wheel-v3/ must be protected or --delete wipes the room's
+# doors (this happened on 2026-07-17). The catalog's own data folders
+# (data/mmdm, data/gutenberg's old layout) are removed by name once the
+# calendar's data is in place — the engine pass protects data/ as a whole.
+#
 # The Bible's data goes through scripts/deploy-pd-filter.mjs first (O-231).
 # Data goes by CHECKSUM (-c): build-volume and precompress rewrite every
 # .gz's mtime, and a plain -a would re-send the whole corpus each time.
@@ -41,19 +59,20 @@ cd "$(dirname "$0")/.."
 
 REMOTE="${ROOM_REMOTE:-namecheap:~/public_html/mmdm/wheel-v3}"
 PUBLIC_REMOTE="${PUBLIC_REMOTE:-namecheap:~/bibliacatholica.com}"
+ROOT_REMOTE="${ROOT_REMOTE:-namecheap:~/public_html/mmdm}"
 DRY=()
 DOORS=(bible calendar)
 for arg in "$@"; do
   case "$arg" in
     -n|--dry-run) DRY=(-n) ;;
-    bible|calendar|public) DOORS=("$arg") ;;
+    bible|calendar|public|root) DOORS=("$arg") ;;
     *) echo "mirror-room: unknown argument '$arg'" >&2; exit 2 ;;
   esac
 done
 
 # Where each door lives and the address that proves what it serves.
-target() { case "$1" in public) echo "$PUBLIC_REMOTE/" ;; *) echo "$REMOTE/$1/" ;; esac; }
-address() { case "$1" in public) echo "https://bibliacatholica.com/" ;; *) echo "https://mmdm.it/wheel-v3/$1/" ;; esac; }
+target() { case "$1" in public) echo "$PUBLIC_REMOTE/" ;; root) echo "$ROOT_REMOTE/" ;; *) echo "$REMOTE/$1/" ;; esac; }
+address() { case "$1" in public) echo "https://bibliacatholica.com/" ;; root) echo "https://mmdm.it/" ;; *) echo "https://mmdm.it/wheel-v3/$1/" ;; esac; }
 
 # The public deploy's excludes, kept in step with sync-to-server.sh, plus:
 # no data in the engine pass (it goes by door below), and the data already
@@ -80,6 +99,9 @@ for door in "${DOORS[@]}"; do
   # THE MANIFEST IS THE BIBLE'S (O-285): it names Biblia Catholica and the
   # crown, so the calendar's door does not carry it.
   [[ "$door" == calendar ]] && KEEP+=(--exclude='manifest.webmanifest')
+  # THE ROOT IS THE ROOM'S PARENT: the room's directory is protected, and the
+  # manifest is the Bible's here too.
+  [[ "$door" == root ]] && KEEP+=(--exclude='wheel-v3/' --filter='P wheel-v3/' --exclude='manifest.webmanifest')
   echo "== $door: engine → $DEST"
   rsync -az -i --delete --delete-excluded "${DRY[@]}" "${EX[@]}" "${KEEP[@]}" ./ "$DEST"
   case "$door" in
@@ -92,10 +114,19 @@ for door in "${DOORS[@]}"; do
       PUBLIC="$(mktemp -d)"; trap 'rm -rf "$PUBLIC"' EXIT
       node scripts/deploy-pd-filter.mjs data/gutenberg "$PUBLIC/gutenberg"
       echo "== $door: the cleared copy of data/gutenberg/ (checksum)"
-      rsync -azc -i --delete "${DRY[@]}" "$PUBLIC/gutenberg/" "${DEST}data/gutenberg/" ;;
-    calendar)
+      rsync -azc -i --delete "${DRY[@]}" "$PUBLIC/gutenberg/" "${DEST}data/gutenberg/"
+      if [[ "$door" == public ]]; then
+        echo "== $door: the page with the door's own head"
+        node scripts/stamp-door-head.mjs public index.html "$PUBLIC/index.html"
+        rsync -az -i "${DRY[@]}" "$PUBLIC/index.html" "${DEST}index.html"
+      fi ;;
+    calendar|root)
       echo "== $door: data/calendar/ (checksum, without sources/)"
-      rsync -azc -i --delete "${DRY[@]}" --exclude='sources/' data/calendar/ "${DEST}data/calendar/" ;;
+      rsync -azc -i --delete "${DRY[@]}" --exclude='sources/' data/calendar/ "${DEST}data/calendar/"
+      if [[ "$door" == root && ${#DRY[@]} -eq 0 ]]; then
+        echo "== $door: the archival catalog's data folders come down"
+        ssh "${ROOT_REMOTE%%:*}" "rm -rf ${ROOT_REMOTE#*:}/data/mmdm ${ROOT_REMOTE#*:}/data/gutenberg"
+      fi ;;
   esac
 done
 
