@@ -25,7 +25,7 @@ test('the host seats the loose ones by their places and puts the arrival under t
   const main = read('src/main.js');
   const items = main.slice(main.indexOf('const BASEMENT = {'), main.indexOf('label: key => keptSeat(key)'));
   assert.match(items, /seated\.push\(\{ id, edition, at: basementPlaces\[k\] \?\? null, kept: '' \}\)/, 'a loose seat enters the order with its place');
-  assert.match(items, /return inOrder\(seated\)\.map\(b => seatKey\(b\.id, b\.edition\)\);/, 'one order for every seat on the ring');
+  assert.match(items, /return inOrder\(ranked\)\.map\(b => seatKey\(b\.id, b\.edition\)\);/, 'one order for every seat on the ring (ranked by the rings since O-283)');
   assert.doesNotMatch(items, /keys\.push\(k\)/, 'nothing is appended after the order');
   assert.match(main, /selected: \(\) => basementLens \?\? basementArrival\?\.key/, 'the lens goes to the arrival');
   // An arrival that is already a hit or kept is that seat: the key is the same, and it is not added twice.

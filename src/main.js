@@ -473,6 +473,20 @@ let basementWords = null;          // { bookmark, landmark, and, bookmarkVerb, d
 // headings and not one phrase. It rides the same row, as the word's first
 // line; the view breaks a word at its spaces.
 const BASEMENT_AND = '&';
+// THE SEATS OF ONE VERSE STAND IN THE RINGS' ORDER (O-283, Howell 2026-11-09,
+// a verse kept in nine tongues: "the same verse, bookmarked in several
+// different languages, does not sort in the basement focus ring the same way
+// languages sort in the tertiary stratum focus ring"). The adapter ranked a
+// seat's edition by its place in the volume's declaration — a list no reader
+// sees — so the nine stood in a sequence the floors above never show. The
+// order the reader has learned is the language ring's, and within a tongue
+// the edition ring's; the bridge, which owns both rings, hands the rank
+// (editionRank), and every placed seat takes it before the sort.
+function basementEditionRank() {
+  // The bridge owns both rings, so it owns their order; without it every
+  // edition ranks alike and the seats fall back to their codes.
+  try { return dimensionBridge.editionRank?.() || (() => Number.POSITIVE_INFINITY); } catch (_) { return () => Number.POSITIVE_INFINITY; }
+}
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
@@ -512,7 +526,11 @@ const BASEMENT = {
       seated.push({ id, edition, at: basementPlaces[k] ?? null, kept: '' });
       have.add(k);
     }
-    return inOrder(seated).map(b => seatKey(b.id, b.edition));
+    // The edition's rank is the rings' (O-283); a bare edition is the one up.
+    const rankEdition = basementEditionRank();
+    const up = dimensionBridge.getSelection?.()?.translation ?? null;
+    const ranked = seated.map(b => (b.at ? { ...b, at: { ...b.at, edition: rankEdition(b.edition ?? up) } } : b));
+    return inOrder(ranked).map(b => seatKey(b.id, b.edition));
   },
   label: key => keptSeat(key)?.label || basementLabels[key] || seatParts(key).id,
   // Kept: filled. A hit: its own fill, never mistaken for something kept.
@@ -2597,6 +2615,7 @@ if (typeof window !== 'undefined') {
     // The edition ring as the bridge would draw it, and the shelves still
     // stocking (O-224) — for the bench and the boot tests.
     ring: lang => dimensionBridge.translationsOf(lang || dimensionBridge.getSelection().language),
+    editionRank: () => basementEditionRank(),   // O-283: the basement's rank for an edition code, from the two rings
     arriving: () => dimensionBridge.editionsArriving?.() || [],
     turnPlan: front => overtureTurn(front),   // the overture's turn of a floor (O-225): { from, to } or null
     hollow: key => Boolean(dimensionBridge.isComing?.(key)),

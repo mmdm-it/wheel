@@ -550,6 +550,40 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       return Object.entries(meta?.translations || {})
         .filter(([, t]) => isServable(t)).map(([k]) => k);
     },
+    // The tongue an edition is in (O-283): the host ranks the basement's
+    // seats by the language ring, and a seat kept in an edition the edition
+    // ring leaves out here still has a tongue to be ranked under.
+    editionLanguage(key) { return meta?.translations?.[key]?.language ?? null; },
+    // THE RINGS' ORDER, AS ONE NUMBER PER EDITION (O-283, Howell 2026-11-09:
+    // a verse kept in nine tongues sorted on the basement ring "not the same
+    // way languages sort in the tertiary stratum focus ring"). The language
+    // ring's order first, the edition ring's within each tongue — the order
+    // the reader has learned on the floors above, which the basement
+    // borrows for the seats of one verse. An edition of a known tongue that
+    // its ring leaves out here (it does not hold the reader's place) stands
+    // after its tongue's ring, in the order the editions are offered; an
+    // edition of no known tongue has no rank (infinity) and comes last.
+    editionRank() {
+      const SLOT = 1000;
+      const ranks = new Map();
+      // The registry's order of tongues whole, not only the tongues readable
+      // here: the ring is always that order filtered, and a seat kept in a
+      // tongue the reader has left still ranks where the ring would put it.
+      const langs = [...new Set([...languageEntries().map(e => e.id), ...this.languagesAvailable()])];
+      langs.forEach((lang, i) => {
+        this.translationsOf(lang).map(k => this.editionOfKey(k)).filter(Boolean)
+          .forEach((code, j) => { if (!ranks.has(code)) ranks.set(code, i * SLOT + j); });
+      });
+      const offered = Object.keys(meta?.translations || {});
+      return code => {
+        if (!code) return Number.POSITIVE_INFINITY;
+        if (ranks.has(code)) return ranks.get(code);
+        const i = langs.indexOf(meta?.translations?.[code]?.language);
+        if (i < 0) return Number.POSITIVE_INFINITY;
+        const j = offered.indexOf(code);
+        return i * SLOT + SLOT / 2 + (j < 0 ? SLOT / 4 : j);
+      };
+    },
 
     // Is this edition offered to the reader at all? (NO ASTERISKS.) The host
     // asks before honouring a volume's pinned default, so an uncertified

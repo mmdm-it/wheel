@@ -1249,6 +1249,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (bookRank < 0 && book) bookRank = Number.isFinite(book.order) ? book.order : shelf.indexOf(book);
     const label = String(item.name ?? '');
     const m = /^(\d+)([a-z]*)$/.exec(label);
+    // The declaration's order, as a floor: the host re-ranks every placed
+    // seat's edition by the language ring and the edition ring (O-283),
+    // since the declaration's list is one no reader ever sees.
     const editionRank = (volume.editions || []).findIndex(e => (e?.code ?? e) === edition);
     // The host's store speaks no volume vocabulary (O-43): the place is a
     // rank per level, widest first — [book, chapter, verse] here.
