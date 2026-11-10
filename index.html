@@ -30,9 +30,20 @@
       var r = document.documentElement;
       r.style.background = g;
       r.style.setProperty('--theme-color-bg', g);
+      // THE INSTALLED APP'S STATUS BAR (O-285): the ground's colour, so the
+      // standalone window has no black band above the page.
+      try { var m = document.createElement('meta'); m.name = 'theme-color'; m.content = g; document.head.appendChild(m); } catch (e) { /* no head yet: the browser's default */ }
       try { localStorage.setItem('wheel:last-volume', v); } catch (e) { /* per-phone convenience only */ }
     }
   })();</script>
+  <!-- THE INSTALLED APP (O-285, Howell 2026-11-09: Chrome's Install on the
+       room showed three crowns before the glide in — the launcher's, the
+       browser's improvised splash, then the card). The manifest gives the
+       browser's splash its name, ground and icons, so it IS the card; the
+       page then skips its own card when it runs installed. The room's
+       mirror puts this file beside the Bible's door and keeps it out of the
+       calendar's. -->
+  <link rel="manifest" href="manifest.webmanifest" />
   <meta charset="UTF-8" />
   <meta name="google" content="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />

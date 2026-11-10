@@ -77,6 +77,9 @@ for door in "${DOORS[@]}"; do
   DEST="$(target "$door")"
   KEEP=()
   [[ "$door" == public ]] && KEEP=(--exclude='cgi-bin/' --filter='P cgi-bin/' --exclude='.well-known/' --filter='P .well-known/')
+  # THE MANIFEST IS THE BIBLE'S (O-285): it names Biblia Catholica and the
+  # crown, so the calendar's door does not carry it.
+  [[ "$door" == calendar ]] && KEEP+=(--exclude='manifest.webmanifest')
   echo "== $door: engine → $DEST"
   rsync -az -i --delete --delete-excluded "${DRY[@]}" "${EX[@]}" "${KEEP[@]}" ./ "$DEST"
   case "$door" in

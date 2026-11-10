@@ -4405,6 +4405,16 @@ function restoredGatewayReturn() {
   return null;
 }
 
+// Is the page running as an installed app (O-285)? Chrome's Install on
+// Android opens it in a standalone window, and only there the browser
+// paints a splash of its own before the page. ?card=1 shows the card
+// anyway, for a look at it on the phone.
+function installedDisplay() {
+  try {
+    if (new URLSearchParams(window.location.search).get('card') === '1') return false;
+    return typeof window.matchMedia === 'function' && window.matchMedia('(display-mode: standalone)').matches;
+  } catch (_) { return false; }
+}
 async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null, transit = null) {
   performance.mark('wheel:boot-start');
   // Arm the corner-icon hold BEFORE anything in this boot can show an icon
@@ -4434,13 +4444,21 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const splashKey = `wheel:splash:${bootVolumeId}`;
   const rememberedSplash = (() => { try { return JSON.parse(localStorage.getItem(splashKey) || 'null'); } catch { return null; } })();
   if (rememberedSplash) overtureMark('splash-remembered');
+  // THE INSTALLED APP SHOWS NO CARD (O-285, Howell 2026-11-09: three crowns
+  // before the glide in). Installed, the browser's own splash — the
+  // manifest's name, ground and icon — is up before the page's first frame
+  // and fades off it; the card would be that same crown and name a second
+  // time, so the sheet goes up bare and lifts into the glide the moment the
+  // instrument is ready. In a browser tab the card is as it was.
+  const installed = installedDisplay();
+  if (installed) overtureMark('installed-no-card');
   const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
-    ? beginBootOverture({ viewport: measureViewport(), splash: rememberedSplash }) : null;
+    ? beginBootOverture({ viewport: measureViewport(), splash: installed ? null : rememberedSplash }) : null;
   bootOvertureShown = true;
   // A FIRST VISIT'S CARD GOES UP THE MOMENT THE MANIFEST IS PARSED (O-181),
   // not when the boot has also gathered its bundles: on Howell's phone over
   // 4G the manifest was in hand at 0.4 s and the card waited until 2.3 s.
-  if (overture && !rememberedSplash) {
+  if (overture && !rememberedSplash && !installed) {
     const cfg = volumeConfigs[bootVolumeId];
     document.addEventListener('wheel:volume-early', e => {
       const declared = splashRecord(e.detail, cfg?.assetBase);
