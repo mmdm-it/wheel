@@ -287,6 +287,24 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     }
     return shown;
   };
+  // ELSEWHERE (O-284, Howell 2026-11-09): a real, servable edition that does
+  // not hold the place the reader is standing on. Until today it was left
+  // off the ring at a leaf — his rule of 2026-08-19, which stands for the
+  // FILLED seats: offering it as readable would commit the reader to text
+  // that cannot show them where they stand. It now stands HOLLOW in its
+  // place, drawn as a door and not a page: choosing it leads to that
+  // edition's shelf, never to a verse it does not have. A tongue whose every
+  // edition is elsewhere stands hollow on the language ring the same way.
+  // At the root nothing is elsewhere, since nothing is filtered.
+  const isElsewhereCode = code => {
+    const t = meta?.translations?.[code];
+    return Boolean(t) && isServable(t) && !isHere(code) && !arriving.includes(code);
+  };
+  const elsewhereTongues = () => {
+    const out = new Set();
+    for (const [code, t] of Object.entries(meta?.translations || {})) if (t?.language && isElsewhereCode(code)) out.add(t.language);
+    return out;
+  };
   const declaredShelves = () => {
     const promised = new Set(Object.entries(meta?.coming || {})
       .filter(([id, shelf]) => !id.startsWith('_') && Array.isArray(shelf) && shelf.length > 0)
@@ -425,17 +443,37 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     languagesAvailable() {
       const shown = readableHere();
       const promised = declaredShelves();
+      const elsewhere = elsewhereTongues();   // O-284: hollow, a door to its shelf
       // Registry order when we have it — it is chronological and deliberate —
       // else whatever order the editions give.
       const entries = languageEntries();
-      if (entries.length) return entries.map(e => e.id).filter(id => shown.has(id) || promised.has(id));
-      return [...new Set([...shown, ...promised])];
+      if (entries.length) return entries.map(e => e.id).filter(id => shown.has(id) || promised.has(id) || elsewhere.has(id));
+      return [...new Set([...shown, ...promised, ...elsewhere])];
     },
 
     // A hollow tongue (O-208): on the ring by its declared shelf, nothing to
     // read here. The host draws it hollow; the lens may rest on it (the
     // reader keeps reading what they had) so its shelf can be seen.
     isComingLanguage(id) { return Boolean(id) && !readableHere().has(id) && declaredShelves().has(id); },
+    // A tongue with editions, none of them holding the reader's place (O-284):
+    // hollow on the ring; its editions stand hollow on the plane behind, and
+    // choosing one leads to its shelf.
+    isElsewhereLanguage(id) { return Boolean(id) && !readableHere().has(id) && elsewhereTongues().has(id); },
+    // An edition on the ring that is real and not here (O-284).
+    isElsewhere(key) { return isElsewhereCode(key); },
+    // COMMIT AN EDITION THAT IS NOT HERE (O-284) — the one door past the
+    // position filter, and it is named for what it does. The host takes the
+    // reader to the volume's top ring first, so the edition arrives at its
+    // shelf and never at a verse it does not hold; setTranslation's refusal
+    // stands for every other caller.
+    commitElsewhere(key) {
+      if (!isElsewhereCode(key)) return false;
+      const languageId = languageOf(key);
+      if (!languageId) return false;
+      displayLanguage = languageId;
+      store.dispatch({ type: interactionEvents.SET_LANGUAGE, language: languageId, defaultEdition: key });
+      return true;
+    },
 
     // The language's own name, for the secondary stratum's labels. Registry
     // autonym first, then the built-in map, then the registry's English name,
@@ -669,8 +707,16 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       // With no declared shelf the ring is the seated editions, then any
       // still arriving, hollow (O-224); with nothing at all, the sentinel.
       if (!declared) {
-        const hollow = arriving.filter(c => meta?.translations?.[c]?.language === lang && isServable(meta.translations[c]) && !seated.includes(c)).map(c => COMING_PREFIX + c);
-        const ring = seated.concat(hollow);
+        // In the editions' own order: seated by its code, arriving hollow,
+        // and an edition that is ELSEWHERE — real, servable, not holding the
+        // reader's place — by its code too, in its usual place (O-284).
+        const ring = [];
+        for (const [code, t] of Object.entries(meta?.translations || {})) {
+          if (t?.language !== lang || !isServable(t)) continue;
+          if (seated.includes(code)) ring.push(code);
+          else if (arriving.includes(code)) ring.push(COMING_PREFIX + code);
+          else if (isElsewhereCode(code)) ring.push(code);
+        }
         return ring.length ? ring : [COMING_SOON_KEY];
       }
       // The declared shelf, in its order (O-184): seated editions in place,
@@ -685,13 +731,22 @@ export function createDimensionBridge({ store, translationsMeta = null, language
       for (const entry of shelf) {
         if (typeof entry !== 'string' || !entry) continue;
         if (seated.includes(entry)) { if (!out.includes(entry)) out.push(entry); }
-        else if (meta?.translations?.[entry]) { const h = hollowIfArriving(entry); if (h && !out.includes(h)) out.push(h); }
+        else if (meta?.translations?.[entry]) {
+          const h = hollowIfArriving(entry);
+          if (h && !out.includes(h)) out.push(h);
+          // Landed, and not here: in its place on the shelf, hollow (O-284) —
+          // until 2026-11-09 it was left out.
+          else if (!h && isElsewhereCode(entry) && !out.includes(entry)) out.push(entry);
+        }
         else out.push(COMING_PREFIX + entry);
       }
       for (const code of seated) if (!out.includes(code)) out.push(code);
       for (const code of arriving) {
         if (meta?.translations?.[code]?.language !== lang || seated.includes(code)) continue;
         const h = hollowIfArriving(code); if (h && !out.includes(h)) out.push(h);
+      }
+      for (const [code, t] of Object.entries(meta?.translations || {})) {
+        if (t?.language === lang && isElsewhereCode(code) && !out.includes(code)) out.push(code);
       }
       // A shelf naming only real editions that are elsewhere leaves nothing
       // to show: the sentinel, as before.

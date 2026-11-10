@@ -44,15 +44,21 @@ test('the rank follows the language ring, then the edition ring within a tongue,
   assert.equal(rank(null), Number.POSITIVE_INFINITY);
 });
 
-test('an edition the ring leaves out here still ranks under its tongue, after the ring', () => {
+test('an edition that is elsewhere ranks in its place on the ring (O-284); one on no ring at all still ranks under its tongue, after the ring', () => {
   const bridge = makeBridge();
   bridge.setEditionsHere(['HEB', 'ENG2', 'ENG3']);   // the reader's place: not in ENG1, nor Greek, Latin, Syriac
   const rank = bridge.editionRank();
-  assert.ok(rank('HEB') < rank('GRC'), 'Greek is absent from the rings here, yet stands after Hebrew');
+  assert.ok(rank('HEB') < rank('GRC'), 'Greek holds nothing here and stands hollow, yet after Hebrew');
   assert.ok(rank('GRC') < rank('LAT') && rank('LAT') < rank('SYC'), 'in the registry\'s order of tongues');
-  assert.ok(rank('SYC') < rank('ENG2') && rank('ENG2') < rank('ENG3'), 'and the English ring in its order');
-  assert.ok(rank('ENG3') < rank('ENG1'), 'the English edition without the reader\'s place comes after its tongue\'s ring');
-  assert.ok(rank('ENG1') < Number.POSITIVE_INFINITY, 'but it has a rank, under its tongue');
+  assert.ok(rank('SYC') < rank('ENG1') && rank('ENG1') < rank('ENG2') && rank('ENG2') < rank('ENG3'), 'the English ring in its order, the hollow seat in its place');
+  // An edition on no ring (nothing to serve yet) still has a tongue to be ranked under: after that tongue's ring.
+  let state = { language: 'english', edition: 'ENG1' };
+  const store = { getState: () => state, dispatch: a => { state = { language: a.language, edition: a.defaultEdition }; }, subscribe: () => () => {} };
+  const withUnserved = createDimensionBridge({ store, translationsMeta: { translations: { ...TRANSLATIONS, ENG0: { language: 'english', proofread: false, hasChart: false, name: 'Unserved English' } } }, languagesMeta: LANGUAGES });
+  withUnserved.setEditionsHere(null);
+  const r = withUnserved.editionRank();
+  assert.ok(r('ENG3') < r('ENG0'), 'after its tongue\'s ring');
+  assert.ok(Number.isFinite(r('ENG0')), 'but ranked, under its tongue');
 });
 
 test('seats of one verse, shuffled, come out in the rings\' order through the bookmarks\' sort', () => {

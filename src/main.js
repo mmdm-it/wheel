@@ -386,10 +386,14 @@ const BRIDGE_CHOOSERS = [
     // A placeholder seat (O-184) is drawn hollow, and the ring never settles
     // on one: the snap passes it for the nearest real seat.
     // An UNCLEARED edition (O-231) is drawn red: in the corpus, not yet ours to serve.
-    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : dimensionBridge.isUncleared?.(key) ? 'is-uncleared' : ''),
+    // AN EDITION THAT IS ELSEWHERE (O-284, Howell 2026-11-09: from Hebrew
+    // Genesis there was no way to the Greek Mark but out to the root or
+    // through a third edition) is drawn hollow too — a door, not a page —
+    // and is NOT inert: choosing it leads to that edition's shelf.
+    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : dimensionBridge.isElsewhere?.(key) ? 'is-elsewhere' : dimensionBridge.isUncleared?.(key) ? 'is-uncleared' : ''),
     inert: key => Boolean(dimensionBridge.isComing?.(key)),
     select: key => {
-      const ok = dimensionBridge.setTranslation(key);
+      const ok = dimensionBridge.isElsewhere?.(key) ? goToShelf(key) : dimensionBridge.setTranslation(key);
       window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
       return ok;
     } },
@@ -402,7 +406,10 @@ const BRIDGE_CHOOSERS = [
     // it, so its hollow shelf can be seen on the plane behind. Settling on
     // it is display-only (the bridge dispatches nothing); the reader keeps
     // reading what they had.
-    classFor: id => (dimensionBridge.isComingLanguage?.(id) ? 'is-coming' : ''),
+    // A tongue whose every edition is elsewhere (O-284) stands hollow the
+    // same way; settling on it is display-only too, and the plane behind
+    // shows its editions hollow, each a door to its shelf.
+    classFor: id => (dimensionBridge.isComingLanguage?.(id) ? 'is-coming' : dimensionBridge.isElsewhereLanguage?.(id) ? 'is-elsewhere' : ''),
     select: id => {
       const ok = dimensionBridge.setLanguage(id);
       window.__wheelTapTrace?.push({ ev: 'select-lang', id, ok: ok ? 1 : 0 });
@@ -659,6 +666,23 @@ function jumpToChosen() {
   if (!committed) { refreshEditionsHere(); return; }
   if (!seated) editionSettlePromise.then(() => { seatHere(); refreshEditionsHere(); }).catch(() => {});
   else editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
+}
+// A HOLLOW EDITION LEADS TO ITS SHELF (O-284, Howell 2026-11-09). An edition
+// that does not hold the reader's place stands hollow on its ring; chosen,
+// the reader is taken to the volume's top ring FIRST, in the edition they
+// are leaving, and the edition is committed there — so the ordinary reseat
+// at the top (O-95) refills the ring with the new edition's divisions and
+// the reader arrives at its shelf, two strokes from any book. Never at a
+// verse the edition lacks, and never with a word of apology: the hollow
+// seat said beforehand what it was. His image, the hour it was ruled: an
+// open book is one thing, a bookshelf another; this seat is the shelf,
+// reached from inside the book.
+function goToShelf(key) {
+  if (!currentApp || !dimensionBridge.isElsewhere?.(key)) return false;
+  let shelved = false;
+  try { shelved = Boolean(seatAtShelf(currentApp)); } catch (_) { shelved = false; }
+  if (!shelved) return false;
+  return dimensionBridge.commitElsewhere(key);
 }
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
@@ -1525,7 +1549,9 @@ function previewFromLens(ch, items, centerIndex) {
     // stocking (O-227), when the seat is a hollow key the real one replaces.
     const landing = bootOvertureLive && overtureLanding?.language === item
       ? editions.find(k => dimensionBridge.editionOfKey?.(k) === overtureLanding.edition) : null;
-    strataPreview = { language: item, edition: landing || editions.find(k => !dimensionBridge.isComing?.(k)) || null };
+    // A filled seat before a hollow one (O-284): the preview paints the
+    // reader's place, which an edition that is elsewhere cannot show.
+    strataPreview = { language: item, edition: landing || editions.find(k => !dimensionBridge.isComing?.(k) && !dimensionBridge.isElsewhere?.(k)) || editions.find(k => !dimensionBridge.isComing?.(k)) || null };
   } else {
     strataPreview = { ...(strataPreview || {}), edition: item };
   }
@@ -1986,6 +2012,7 @@ function resetStrata() {
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
+let seatAtShelf = () => false;  // O-284: the adapter sets the primary at the volume's top ring, for a hollow edition's door
 let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
 let seatPlace = () => null;     // O-275: where a LEAF stands on the edition up, or null if it does not hold it
 let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
@@ -2619,6 +2646,7 @@ if (typeof window !== 'undefined') {
     arriving: () => dimensionBridge.editionsArriving?.() || [],
     turnPlan: front => overtureTurn(front),   // the overture's turn of a floor (O-225): { from, to } or null
     hollow: key => Boolean(dimensionBridge.isComing?.(key)),
+    elsewhere: key => Boolean(dimensionBridge.isElsewhere?.(key)),   // O-284: real, hollow here, a door to its shelf
     // Null while the launch funnel is up (O-75), the reader's position after.
     here: () => dimensionBridge.editionsHere(),
     // IS THE LAUNCH FUNNEL STILL UP? (O-77.) Read-only, for the guard that
@@ -4812,6 +4840,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
+  seatAtShelf = typeof handlerSet.seatAtShelf === 'function' ? handlerSet.seatAtShelf : () => false;
   seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
   seatPlace = typeof handlerSet.seatPlace === 'function' ? handlerSet.seatPlace : () => null;
   hitSeats = typeof handlerSet.hitSeats === 'function' ? handlerSet.hitSeats : () => [];
@@ -5283,7 +5312,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   previewPrimary = preview => {
     if (!preview) return;
     const edition = preview.edition;
-    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition)) {
+    // An edition that is elsewhere (O-284) has nothing to show here either:
+    // the committed reading stays, as for a hollow placeholder.
+    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition) || dimensionBridge.isElsewhere?.(edition)) {
       // NOTHING TO PREVIEW, SO THE COMMITTED READING COMES BACK (O-208,
       // Howell's photograph the evening the hollow tongues first stood on
       // the ring: the Greek New Testament's books wearing their raw ids

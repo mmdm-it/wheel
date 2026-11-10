@@ -1479,6 +1479,23 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // with no migration — the caller wants it unseen. The contexts the OUT
     // gesture needs are taken from the item itself. False when this edition
     // does not seat the leaf, and the ring stays as it was.
+    // THE SHELF (O-284, Howell 2026-11-09): the volume's top ring — its
+    // divisions in the committed edition — set with no migration, landing on
+    // the first. The host calls it before committing a hollow edition chosen
+    // at a place that edition does not hold; the edition change's reseat
+    // then refills the ring with the new edition's divisions (O-95), so the
+    // reader arrives at that edition's shelf and never at a verse it lacks.
+    seatAtShelf: app => {
+      if (!app?.setPrimaryItems) return false;
+      const edition = options?.activeEdition || options?.translation || null;
+      const { items } = buildBibleTestaments(manifest, namesMap, { translationName, edition });
+      if (!items.length) return false;
+      verseChainItems = null;
+      verseChainEdition = null;
+      chapterChainItems = null;
+      app.setPrimaryItems(items, 0, true);
+      return true;
+    },
     seatAtLeaf: (leaf, app) => {
       if (!leaf || !app?.setPrimaryItems) return false;
       const edition = options?.activeEdition || options?.translation || null;

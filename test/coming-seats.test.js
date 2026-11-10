@@ -113,8 +113,9 @@ describe('every declared tongue stands on the ring, hollow (O-208)', () => {
     bridge.setEditionsHere(['ENG']);
     assert.deepEqual(bridge.languagesAvailable(), ['hebrew', 'english', 'french']);
     assert.equal(bridge.isComingLanguage('hebrew'), true, 'Hebrew in the New Testament: on the ring, hollow');
-    assert.deepEqual(bridge.translationsOf('hebrew').map(k => (bridge.isComing(k) ? `~${bridge.translationName(k)}` : k)), ['~Delitzsch'],
-      'the seated edition that is elsewhere is left out; the placeholder shows');
+    // Until O-284 (2026-11-09) the seated edition that was elsewhere was left out; it now stands hollow in its place, a door to its shelf.
+    assert.deepEqual(bridge.translationsOf('hebrew').map(k => (bridge.isComing(k) ? `~${bridge.translationName(k)}` : bridge.isElsewhere(k) ? `○${k}` : k)), ['○HEB', '~Delitzsch'],
+      'the seated edition that is elsewhere stands hollow; the placeholder shows');
   });
   it('a seated edition the shelf forgot is appended, never lost', () => {
     let state = { language: 'english', edition: 'ENG' };
@@ -162,10 +163,12 @@ describe('an edition still arriving stands hollow under its own name (O-224)', (
   };
   const shape = (bridge, lang = 'english') => bridge.translationsOf(lang).map(k => (bridge.isComing(k) ? `~${bridge.translationAbbrev(k)}` : k));
 
-  it('landed and not here: left off, as before', () => {
+  it('landed and not here: hollow in its place, a door to its shelf (O-284; left off before 2026-11-09)', () => {
     const { bridge } = make();
     bridge.setEditionsHere(['ENG']);
-    assert.deepEqual(shape(bridge), ['~Westminster', 'ENG', '~Revised Standard']);
+    assert.deepEqual(shape(bridge), ['KJV', '~Westminster', 'ENG', '~Revised Standard']);
+    assert.equal(bridge.isElsewhere('KJV'), true, 'real, and not here');
+    assert.equal(bridge.isComing('KJV'), false, 'not a placeholder');
   });
   it('still arriving: hollow, in its place on the shelf, wearing its own name', () => {
     const { bridge } = make();
