@@ -92,6 +92,10 @@ if [[ ! -f dist/app.js || dist/app.js -ot src/main.js ]]; then
   exit 1
 fi
 
+# The copies that leave — the cleared corpus, the calendar without its
+# notes, the public door's page — are made here and gone at exit.
+WORK="$(mktemp -d)"; trap 'rm -rf "$WORK"' EXIT
+
 for door in "${DOORS[@]}"; do
   DEST="$(target "$door")"
   KEEP=()
@@ -111,23 +115,26 @@ for door in "${DOORS[@]}"; do
       # nothing uncleared ("No uncleared edition should ever leave the LAN"),
       # and none of the declaration, naming kits or staging. The filter
       # refuses, and the mirror stops, if an uncleared code survives.
-      PUBLIC="$(mktemp -d)"; trap 'rm -rf "$PUBLIC"' EXIT
-      node scripts/deploy-pd-filter.mjs data/gutenberg "$PUBLIC/gutenberg"
+      node scripts/deploy-pd-filter.mjs data/gutenberg "$WORK/gutenberg"
       echo "== $door: the cleared copy of data/gutenberg/ (checksum)"
       # A fresh document root has no data/ yet, and the host's rsync (3.1.3)
       # cannot make two levels at once (the public door's first deploy,
       # 2026-11-10, stopped here with the engine up and no data beside it).
       [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/gutenberg"
-      rsync -azc -i --delete "${DRY[@]}" "$PUBLIC/gutenberg/" "${DEST}data/gutenberg/"
+      rsync -azc -i --delete "${DRY[@]}" "$WORK/gutenberg/" "${DEST}data/gutenberg/"
       if [[ "$door" == public ]]; then
         echo "== $door: the page with the door's own head"
-        node scripts/stamp-door-head.mjs public index.html "$PUBLIC/index.html"
-        rsync -az -i "${DRY[@]}" "$PUBLIC/index.html" "${DEST}index.html"
+        node scripts/stamp-door-head.mjs public index.html "$WORK/index.html"
+        rsync -az -i "${DRY[@]}" "$WORK/index.html" "${DEST}index.html"
       fi ;;
     calendar|root)
-      echo "== $door: data/calendar/ (checksum, without sources/)"
+      # THE NOTES STAY ON THE LAN (2026-11-10): the calendar's data goes
+      # through scripts/scrub-notes.mjs, which drops every `_` key (the
+      # corpus's reasons, quoting Howell) and leaves sources/ behind.
+      node scripts/scrub-notes.mjs data/calendar "$WORK/calendar"
+      echo "== $door: data/calendar/ without its notes (checksum)"
       [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/calendar"
-      rsync -azc -i --delete "${DRY[@]}" --exclude='sources/' data/calendar/ "${DEST}data/calendar/"
+      rsync -azc -i --delete "${DRY[@]}" "$WORK/calendar/" "${DEST}data/calendar/"
       if [[ "$door" == root && ${#DRY[@]} -eq 0 ]]; then
         echo "== $door: the archival catalog's data folders come down"
         ssh "${ROOT_REMOTE%%:*}" "rm -rf ${ROOT_REMOTE#*:}/data/mmdm ${ROOT_REMOTE#*:}/data/gutenberg"

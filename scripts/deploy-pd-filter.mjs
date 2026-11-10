@@ -19,9 +19,10 @@
 // behind inside it: uncleared.json, and every charts/ text/ margin/ poetry/
 // entry of an edition volume.json does not name. Rewritten: volume.json's
 // shelf ("coming") names an uncleared edition by its shelf name, never its
-// code; the names files lose any entry keyed by an uncleared code and every
-// note (the corpus's record, never the engine's input), and a tongue with no
-// published edition loses its names file. THE GUARD: the finished copy is searched for every
+// code, and volume.json loses every note; the names files lose any entry
+// keyed by an uncleared code and every note (a note — any key beginning
+// `_` — is the corpus's record, never the engine's input), and a tongue with
+// no published edition loses its names file. THE GUARD: the finished copy is searched for every
 // uncleared code, and one found anywhere refuses the deploy.
 import { readdirSync, statSync, readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'node:fs';
 import { gzipSync } from 'node:zlib';
@@ -92,7 +93,12 @@ for (const file of walk(vdir)) {
     const v = JSON.parse(buf.toString('utf8'));
     const coming = v.display_config?.editions?.coming;
     if (coming) for (const [lang, list] of Object.entries(coming)) if (Array.isArray(list)) coming[lang] = list.map(x => (UNCLEARED.includes(x) ? shelfName(x) : x));
-    buf = Buffer.from(`${JSON.stringify(v, null, 2)}\n`);
+    // THE VOLUME'S NOTES STAY BEHIND TOO (2026-11-10, found in the served
+    // copy the day the public door opened: twenty-one `_` notes — the
+    // reasons for the review mark, the shelf, the landscape page, quoting
+    // Howell — were leaving with it). A note is the corpus's record, never
+    // the engine's input (WF-14); the engine reads no key that begins so.
+    buf = Buffer.from(`${JSON.stringify(scrub(v), null, 2)}\n`);
   } else if (/^names[\\/].+\.json$/.test(rel)) {
     buf = Buffer.from(`${JSON.stringify(scrub(JSON.parse(buf.toString('utf8'))), null, 1)}\n`);
   }

@@ -24,7 +24,7 @@ const w = (rel, obj) => { const p = path.join(src(), rel); mkdirSync(path.dirnam
 
 function build({ published = ['PUB'], uncleared = ['UNC'], textOf = {}, namesNote = 'a note', leak = null } = {}) {
   rmSync(src(), { recursive: true, force: true }); rmSync(dest(), { recursive: true, force: true });
-  w(`${V}/volume.json`, { editions: published.map(code => ({ code, language: 'latin', hasChart: true })), display_config: { editions: { coming: { latin: [...published, ...uncleared, 'Someday'] } } } });
+  w(`${V}/volume.json`, { _note: 'why the volume is so', editions: published.map(code => ({ code, language: 'latin', hasChart: true })), display_config: { _review_mark: 'what he said about the mark', editions: { _coming: 'and the shelf', coming: { latin: [...published, ...uncleared, 'Someday'] } } } });
   w(`${V}/uncleared.json`, { codes: uncleared, editions: uncleared.map(code => ({ code, map: 'Shelf name' })) });
   for (const code of [...published, ...uncleared]) {
     w(`${V}/charts/${code}/index.json`, { edition: code, books: [] });
@@ -67,6 +67,13 @@ describe('deploy filter — the CLEARED gate at the door (O-231)', () => {
     build(); run();
     const v = JSON.parse(readFileSync(path.join(dest(), V, 'volume.json'), 'utf-8'));
     assert.deepEqual(v.display_config.editions.coming.latin, ['PUB', 'Shelf name', 'Someday']);
+  });
+  it('strips volume.json of every note (2026-11-10: twenty-one were leaving with the public copy)', () => {
+    build(); run();
+    const v = JSON.parse(readFileSync(path.join(dest(), V, 'volume.json'), 'utf-8'));
+    assert.equal(v._note, undefined); assert.equal(v.display_config._review_mark, undefined); assert.equal(v.display_config.editions._coming, undefined);
+    assert.equal(v.editions[0].code, 'PUB');
+    assert.doesNotMatch(readFileSync(path.join(dest(), V, 'volume.json'), 'utf-8'), /what he said|why the volume|and the shelf/);
   });
   it('strips the names files of uncleared entries and of every note; a tongue with nothing published loses its file', () => {
     build(); run();

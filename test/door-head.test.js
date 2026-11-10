@@ -44,6 +44,9 @@ test('the mirror stamps the public door\'s page and protects the room under the 
   assert.match(sh, /ROOT_REMOTE="\$\{ROOT_REMOTE:-namecheap:~\/public_html\/mmdm\}"/);
   assert.match(sh, /\[\[ "\$door" == root \]\] && KEEP\+=\(--exclude='wheel-v3\/' --filter='P wheel-v3\/' --exclude='manifest\.webmanifest'\)/);
   assert.match(sh, /root\) echo "https:\/\/mmdm\.it\/"/);
+  // the calendar's data leaves without the corpus's notes, by either door
+  assert.match(sh, /node scripts\/scrub-notes\.mjs data\/calendar "\$WORK\/calendar"/);
+  assert.match(sh, /rsync -azc -i --delete "\$\{DRY\[@\]\}" "\$WORK\/calendar\/" "\$\{DEST\}data\/calendar\/"/);
 });
 
 test('the ground script knows the public doors by address', () => {
