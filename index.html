@@ -62,46 +62,21 @@
   <meta property="og:url" content="https://mmdm.it/" />
   <meta property="og:locale" content="it_IT" />
   <meta property="og:locale:alternate" content="en_US" />
-  <!-- THESE FACES COME FROM GOOGLE AT RUNTIME, AND THAT IS A DEBT, NOT A
-       CHOICE (O-50; comment landed 2026-08-23 under W-139's sweep, where the
-       entry was found to have no home outside the ledger).
-
-       Found because Howell's phone fell back to a substitute typeface after a
-       cache clear — the mildest form this failure takes. Three consequences,
-       worsening in order:
-         1. A LAN-served reader depends on the public internet for its
-            typeface. The instrument is meant to work on a phone at a kitchen
-            table, and EB Garamond is what scripture is SET IN, not chrome.
-         2. Phase 5 is an Android port. A packaged app fetching fonts from a
-            CDN fails offline by construction, which is where the reader
-            lives.
-         3. Every visit sends the reader's IP and user-agent to Google. For
-            someone opening scripture that is a disclosure nobody asked for,
-            and it falls under the same care as NOTICE §0.
-
-       NOT FIXED HERE ON PURPOSE. Self-hosting is small but it is font
-       surgery: a wrong weight or subset changes how every glyph in the volume
-       renders, which is what the phase-1 freeze exists to prevent. It belongs
-       to H-12 phase 3's pre-public checklist, beside the immutable versioned
-       URLs and the real cache headers (see .htaccess, O-38), verified by the
-       same eye. Whoever self-hosts these: the weights actually used are
-       below, and the check is Howell's phone with its cache cleared and the
-       network off. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Load the REAL bold (700) faces: four CSS rules use font-weight:700
-       (magnified ring labels, card/ephemeris titles). Without the 700 face the
-       browser SYNTHESISES bold from 500, and iOS Safari's faux-bold is ugly
-       (Howell 2026-07-21). -->
-  <!-- O-93: Montserrat carries NO Greek and NO Hebrew (Google ships it in
-       latin/latin-ext/cyrillic/vietnamese only — measured 2026-08-23), so
-       every non-Latin label has always fallen to the system font. The Noto
-       faces are the CHOSEN companions for the scripts Montserrat cannot
-       speak; the browser fetches only the subsets a page actually uses.
-       No italic faces: the basement slanted a landmark's name for one
-       evening (2026-11-08) and Howell struck it — nothing in the basement
-       is italic; the side of the ring tells a landmark (O-275). -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@500;700&family=Noto+Sans+Hebrew:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <!-- THE FACES TRAVEL WITH THE PAGE (O-286, 2026-11-09). Until today they
+       came from Google at runtime, and O-50 named that a debt: every visit
+       sent the reader's address and user-agent to Google for a typeface,
+       and a phone offline fell back to a substitute. The debt is paid before
+       the public door opens: styles/fonts.css declares the same faces, the
+       same weights and the same unicode ranges Google served for this page,
+       from files in assets/fonts/google/ (SIL Open Font License 1.1, see
+       assets/fonts/Licenses.txt). Nothing renders differently; only where
+       the glyphs come from. The weights are the ones the sheets use: the
+       real 700 (synthesised bold is ugly on iOS, Howell 2026-07-21), 500 for
+       the ring and sky, EB Garamond 400/600/700 and its 400 italic for the
+       text. Montserrat speaks no Greek or Hebrew (O-93), so the Noto faces
+       carry those scripts. No italic Noto or Montserrat: nothing in the
+       basement is italic (O-275). -->
+  <link rel="stylesheet" href="./styles/fonts.css?v=3.28.0" />
   <link rel="stylesheet" href="./styles/theme-tokens.css?v=3.28.0" />
   <link rel="stylesheet" href="./styles/base.css?v=3.28.0" />
   <link id="volume-style" rel="stylesheet" href="" />
