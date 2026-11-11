@@ -144,6 +144,7 @@ import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.
 import { bearingOf, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
 import { createDepthDrill } from './core/depth-drill.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
+import { playSealSwap, ghostOverlays, rectOf } from './view/seal-swap.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
@@ -841,6 +842,8 @@ let searchStringEl = null;      // the carriage — SVG text left of the lens
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
 let sealUrl = null;   // W-301: the volume's seal, drawn at the foot of the glass on the left; null for a volume without one
 let sealEl = null;
+let sealDoor = null;   // O-292: the volume the seal opens (each half's seal opens the other half); null = a mark only
+let sealSwapping = false;
 // THE SEAL ARRIVES WITH THE PRIMARY STRATUM (Howell, 2026-11-11): always
 // present and never moved by a truck, with one exception. On a fresh boot it
 // rides the boot film as part of the primary plane, receded and blurred with
@@ -855,7 +858,9 @@ function sealRest() {
   if (el) for (const k of ['transform', 'transformOrigin', 'filter', 'opacity']) el.style[k] = '';
 }
 // The seal is built once and pointed at the volume's drawing; a volume without
-// one leaves the element hidden. Never a link, never a target: it is a mark.
+// one leaves the element hidden. It was a mark only (W-301) until it became
+// the door between the app's two halves (O-292): a volume that declares a
+// `door` makes it a target, and a tap swaps the two halves.
 function applySeal() {
   if (typeof document === 'undefined' || !document.body) return;
   if (!sealEl) {
@@ -864,8 +869,10 @@ function applySeal() {
     sealEl.alt = '';
     sealEl.setAttribute('aria-hidden', 'true');
     sealEl.draggable = false;
+    sealEl.addEventListener('click', e => { e.stopPropagation(); swapThroughSeal(); });
     document.body.appendChild(sealEl);
   }
+  sealEl.classList.toggle('is-door', Boolean(sealUrl && sealDoor));
   if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; }
   else { sealEl.hidden = true; sealEl.removeAttribute('src'); }
 }
@@ -4429,6 +4436,44 @@ function returnThroughGateway() {
   return true;
 }
 
+// THROUGH THE SEAL (O-292): the swap between the app's two halves. The
+// old screen is frozen at the tap (SVG snapshot + copies of the HTML
+// overlays), the two drawings are read where they stand, and the other half
+// boots beneath them; the boot then plays the swap instead of a wipe. A
+// volume keeps the reader's place by itself (its resume), so the way back is
+// a plain boot of the volume left.
+function swapThroughSeal() {
+  const to = sealDoor;
+  if (!to || !volumeConfigs[to] || sealSwapping || sealRides || bootOvertureLive) return;
+  sealSwapping = true;
+  const logoImg = document.getElementById('volume-logo-image');
+  const logoHref = logoImg?.getAttribute('href') || logoImg?.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href') || null;
+  const opacityOf = el => { try { return Number(getComputedStyle(el).opacity); } catch (_) { return 1; } };
+  const transit = {
+    mode: 'swap',
+    snapshot: captureGatewaySnapshot(svg),
+    ghosts: ghostOverlays(['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark']),
+    from: {
+      seal: { rect: rectOf(sealEl), src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl) },
+      logo: { rect: rectOf(logoImg), src: logoHref ? new URL(logoHref, document.baseURI).href : null, opacity: logoImg ? opacityOf(logoImg) : 1 }
+    }
+  };
+  // The frozen copy carries the old badge's drawing too; the flying one
+  // replaces it, so the copy's is put out.
+  transit.snapshot?.querySelectorAll?.('image').forEach(im => { if (im.getAttribute('id') === 'volume-logo-image') im.style.visibility = 'hidden'; });
+  if (sealEl) sealEl.style.visibility = 'hidden';
+  const search = `?volume=${encodeURIComponent(to)}`;
+  bootVolume(to, search, null, transit)
+    .then(() => { try { window.history.pushState({ wheelGateway: true }, '', search); } catch (_) { /* file:// */ } })
+    .catch(err => {
+      sealSwapping = false;
+      transit.snapshot?.remove();
+      transit.ghosts.forEach(g => g.remove());
+      if (sealEl) sealEl.style.visibility = '';
+      showBootError(`swap failed: ${err.message}`);
+    });
+}
+
 // Browser Back across a gateway pushState: reload resolves the URL cleanly.
 window.addEventListener('popstate', () => window.location.reload());
 
@@ -4833,8 +4878,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // mirror of the emblem in its sector upper right. Its file is the volume's,
   // assets/<seal>.svg beside its other artwork.
   sealUrl = root?.display_config?.seal && config?.assetBase
-    ? `${config.assetBase}${root.display_config?.detail_sector?.logo_base_path || 'assets/'}${root.display_config.seal}.svg`
+    ? `${config.assetBase}${root.display_config?.detail_sector?.logo_base_path || 'assets/'}${/\.[a-z0-9]+$/i.test(root.display_config.seal) ? root.display_config.seal : `${root.display_config.seal}.svg`}`
     : null;
+  sealDoor = config?.door && volumeConfigs[config.door] ? config.door : null;
   applySeal();
   copyrightWords = root?.display_config?.copyright_notice || null;
   landscapeRoot = root || null;
@@ -5150,7 +5196,32 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // Gateway transit: the new volume is fully rendered — lay the frozen old
   // screen over it and sweep the wipe line, hub-centered, top → lower right.
   // Same tick as the render above, so the swap itself never paints.
-  if (transit && wipeSnapshot) {
+  if (transit?.mode === 'swap') {
+    try {
+      playSealSwap({
+        snapshot: wipeSnapshot,
+        ghosts: transit.ghosts || [],
+        from: transit.from,
+        toSeal: sealUrl ? sealEl : null,
+        toLogo: document.getElementById('volume-logo-image'),
+        onDone: () => {
+          sealSwapping = false;
+          cornerIconHold = false;
+          updateDimensionButton();
+          updateSearchButton();
+        }
+      });
+    } catch (err) {
+      console.warn('[wheel] seal swap failed', err);
+      wipeSnapshot?.remove();
+      (transit.ghosts || []).forEach(g => g.remove());
+      if (sealEl) sealEl.style.visibility = '';
+      sealSwapping = false;
+      cornerIconHold = false;
+      updateDimensionButton();
+      updateSearchButton();
+    }
+  } else if (transit && wipeSnapshot) {
     try {
       // Launch wipes downward; return wipes back up — the wipe always flows
       // away from where you are going. The corner icons are PART OF THE

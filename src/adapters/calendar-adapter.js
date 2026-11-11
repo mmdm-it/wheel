@@ -86,6 +86,12 @@ function figureOfDay(serial, dayOfMonth, month) {
   };
 }
 
+// THE DAY'S EXTRAS ARE THE COMPANY'S (O-292): the drawing of the day and
+// Fano's sun and tide tables belong to the calendar as a company's calendar.
+// A volume that shows these days under another dress declares
+// `day_extras: false` and its day card is the day alone. Set per boot by
+// createHandlers from the volume's own declaration.
+let dayExtras = true;
 let manifestPath = null;
 let schemaPath = null;
 let nodeReadFile = null;
@@ -306,10 +312,10 @@ export function detailFor(selected, manifest) {
     // the dimension slider, and make the font about half as big"). They
     // ride a field of their own; the day's own name stays under the weekday.
     const tables = [];
-    const sun = localSunTimes(yearNumber, monthNumber, dayNumber, FANO.lat, FANO.lon, FANO.zoneSince);
+    const sun = dayExtras && localSunTimes(yearNumber, monthNumber, dayNumber, FANO.lat, FANO.lon, FANO.zoneSince);
     if (sun) tables.push(`↑ ${sun.alba}    ↓ ${sun.tramonto}`);
     const key = `${yearNumber}-${String(monthNumber).padStart(2, '0')}-${String(dayNumber).padStart(2, '0')}`;
-    const eph = ephemerisDays?.[key];
+    const eph = dayExtras ? ephemerisDays?.[key] : null;
     if (eph) {
       const h = v => Number(v).toFixed(1).replace('.', ',');
       tables.push(`▲ ${eph.alta[0]}  ${h(eph.alta[1])} m`);
@@ -328,7 +334,7 @@ export function detailFor(selected, manifest) {
       titleAlign: 'center',
       now: selected.now === true || serial === todaySerial(),
       rows,
-      figure: figureOfDay(serial, dayNumber, monthNumber),
+      figure: dayExtras ? figureOfDay(serial, dayNumber, monthNumber) : null,
       tables
     };
   }
@@ -367,6 +373,7 @@ export function detailFor(selected, manifest) {
 }
 
 export function createHandlers({ manifest, options, onGatewayReturn = null, gatewayLabel = '', gatewayReturnLabel = '' }) {
+  dayExtras = manifest?.Calendar?.display_config?.day_extras !== false;
   // Centuries are the top level since O-242 (decades between them and the
   // years; millennia stay cousin-gap texture, removed as a level 2026-07-17);
   // backing out from centuries exits through the gateway, if any. The DEFAULT
@@ -606,9 +613,9 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       const settled = app?.nav?.getCurrent?.();
       if (settled?.level === 'day' && typeof renderDetail === 'function') renderDetail(settled);
     };
-    loadEphemeris()?.then(repaintDay);
+    if (dayExtras) loadEphemeris()?.then(repaintDay);
     // The drawings' index likewise (O-256): the day's figure lands when it lands.
-    loadFigures()?.then(repaintDay);
+    if (dayExtras) loadFigures()?.then(repaintDay);
     if (app?.setParentButtons) {
       app.setParentButtons({ showOuter: calendarMode !== 'century' || Boolean(gatewayReturnLabel) });
     }

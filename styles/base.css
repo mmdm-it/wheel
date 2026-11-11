@@ -1516,6 +1516,14 @@ svg :focus-visible {
   user-select: none;
 }
 
+/* THE SEAL IS THE DOOR between the Bible and the Church (O-292): a volume
+   that declares a door makes it a target. */
+#seal.is-door {
+  pointer-events: auto;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* THE NOTICE NO LONGER STANDS DOWN BENEATH IT (Howell, 2026-08-29). It used
    to: an opaque mark covered the notice's FIRST line and nothing else — the
    copyright wraps to two lines on a phone, so "riservati." sat below the band

@@ -27,6 +27,10 @@
  * Collapse: reverse of expand
  */
 
+// A drawing named without an extension is a PNG, as every emblem was until
+// the Church (O-292) wore St Peter's, which is drawn as an SVG.
+export const withExtension = name => (/\.[a-z0-9]+$/i.test(name) ? name : `${name}.png`);
+
 // THE LOGO'S SIZE, in the two states, as named knobs (FN-4, 2026-08-17).
 //
 // Both numbers were literals repeated inside the render and the animation's
@@ -190,7 +194,7 @@ export class VolumeLogo {
     if (!base) return false;
     if (this._renderConfig.default_image === imageName) return false;
     this._renderConfig.default_image = imageName;
-    this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${imageName}.png`);
+    this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${withExtension(imageName)}`);
     this._hrefSurround();
     // Each emblem at its own size and place (O-148): a collapsed badge is
     // re-boxed now, circle with it; an expanded or moving one takes it from
@@ -316,7 +320,7 @@ export class VolumeLogo {
     const defaultImage = config.default_image;
     
     if (logoBasePath && defaultImage) {
-      const logoPath = logoBasePath + defaultImage + '.png';
+      const logoPath = logoBasePath + withExtension(defaultImage);
       const logoX = centerX - (logoWidth / 2);
       const logoY = centerY - (logoHeight / 2);
       

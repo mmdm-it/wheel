@@ -48,6 +48,7 @@ const adapterRegistry = createAdapterRegistry();
 adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
 adapterRegistry.register('bible', () => ({ ...bibleAdapter, volumeId: 'bible' }));
 adapterRegistry.register('calendar', () => ({ ...calendarAdapter, volumeId: 'calendar' }));
+adapterRegistry.register('church', () => ({ ...calendarAdapter, volumeId: 'church' }));
 const adapterLoader = createAdapterLoader(adapterRegistry);
 
 // Shared handler factory — the four volume blocks used to carry identical
@@ -999,6 +1000,51 @@ function buildBibleChain(manifest, options, namesMap) {
   return { items, selectedIndex, preserveOrder: false };
 }
 
+
+// THE CHURCH (O-292, Howell 2026-11-11). The app has two halves, the Bible and
+// the Church, and the seal at the foot of the glass is the door between them:
+// tapping it swaps the two drawings across the diagonal while the ring stays
+// and its contents drain and refill. The Church's first division is the
+// calendar ("the first thing we see when we go to the church is the
+// calendar"), so until a second division exists the Church IS the calendar's
+// days, in the Bible's dress rather than the company's: the parchment ground
+// (the ring does not change colour across the swap), St Peter's in the corner
+// badge where the crown stood, the crown at the foot of the glass as the way
+// home, the globe for its dimension (Gregorian and Julian) and no card. The
+// dress is declared here because the calendar's own declaration is the
+// company's; the drawings are read from the Bible's data root (W-114: the
+// engine ships no picture). The ring of divisions (calendar, atlas,
+// catechism, who's who, prayers, dictionary) comes with the second division.
+function dressForTheChurch(cal) {
+  if (!cal || cal.__church) return cal;
+  const dc = { ...(cal.display_config || {}) };
+  delete dc.splash;
+  dc.volume_name = 'Biblia Catholica';
+  dc.detail_sector = { ...(dc.detail_sector || {}), logo_base_path: 'assets/', default_image: 'st_peters.svg' };
+  dc.seal = 'crown_of_thorns.png';
+  dc.day_extras = false;   // no drawing of the day, no Fano tables: those are the company's
+  const dressed = { ...cal, display_config: dc };
+  Object.defineProperty(dressed, '__church', { value: true });
+  return dressed;
+}
+volumeConfigs.church = {
+  ...volumeConfigs.calendar,
+  id: 'church',
+  paths: ['/church'],
+  door: 'bible',
+  dimensionEmblem: false,
+  assetBase: volumeConfigs.bible.assetBase,
+  theme: 'bible',
+  palette: { ...volumeConfigs.bible.palette },
+  documentTitle: 'Biblia Catholica',
+  landscape: null,
+  extractRoot: manifest => {
+    if (manifest?.Calendar) manifest.Calendar = dressForTheChurch(manifest.Calendar);
+    return manifest?.Calendar;
+  },
+  createHandlers: makeAdapterHandlers('church')
+};
+volumeConfigs.bible.door = 'church';
 
 // The probe's drop box (telemetry.php on the production host). Deployment
 // layout is a literal like any other — it lives here, not in diagnostics.

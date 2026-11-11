@@ -14,9 +14,11 @@ import { createMockElement, createMockDocument } from './helpers/mock-dom.js';
 const read = rel => fs.readFileSync(new URL(rel, import.meta.url), 'utf8');
 
 describe('who declares a dimension of its own (O-244)', () => {
-  it('the calendar declares its strata and asks for its emblem as the button; no other volume does', () => {
+  // The Church (O-292) is the calendar's days in the Bible's dress, so it
+  // declares the same strata, under the globe rather than the company's emblem.
+  it('the calendar declares its strata and asks for its emblem as the button; only the Church shares the strata', () => {
     for (const [id, cfg] of Object.entries(volumeConfigs)) {
-      assert.equal(typeof cfg.strata === 'function', id === 'calendar', `${id}: strata`);
+      assert.equal(typeof cfg.strata === 'function', id === 'calendar' || id === 'church', `${id}: strata`);
       assert.equal(cfg.dimensionEmblem === true, id === 'calendar', `${id}: dimensionEmblem`);
     }
   });
