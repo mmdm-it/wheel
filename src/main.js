@@ -839,6 +839,23 @@ let searchOpeningAllowed = null;// characters the opening ring is pruned to when
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
+let sealUrl = null;   // W-301: the volume's seal, drawn at the foot of the glass on the left; null for a volume without one
+let sealEl = null;
+// The seal is built once and pointed at the volume's drawing; a volume without
+// one leaves the element hidden. Never a link, never a target: it is a mark.
+function applySeal() {
+  if (typeof document === 'undefined' || !document.body) return;
+  if (!sealEl) {
+    sealEl = document.createElement('img');
+    sealEl.id = 'seal';
+    sealEl.alt = '';
+    sealEl.setAttribute('aria-hidden', 'true');
+    sealEl.draggable = false;
+    document.body.appendChild(sealEl);
+  }
+  if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; }
+  else { sealEl.hidden = true; sealEl.removeAttribute('src'); }
+}
 let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
 let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
 let landscapeRendered = '';  // the record last drawn on the sheet, so a repaint only follows a change
@@ -2214,6 +2231,12 @@ function updateIncompleteMark() {
   // follows the detail sector's own visibility, appearing with the text at
   // the settle and going with it at the launch; above a leaf it says nothing.
   show = show && detailSectorVisible;
+  // THE SEAL STANDS WHERE THE MARK STOOD (W-301, Howell 2026-11-11: "replace
+  // the edition under review text in the lower left with a small line drawing
+  // ... present on every page"): while the volume declares a seal the mark
+  // stays silent. Its words and its rule (O-218, O-226) are kept for the day
+  // he decides between them.
+  show = show && !sealUrl;
   ensureIncompleteMarkEl();
   applyReviewMarkTongue();
   applyCopyrightTongue();
@@ -4790,6 +4813,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
   reviewMarkWords = root?.display_config?.review_mark || null;
+  // THE SEAL (W-301): a volume may declare a small drawing that stands fixed
+  // at the foot of the glass on the left, on every page, doing nothing — the
+  // mirror of the emblem in its sector upper right. Its file is the volume's,
+  // assets/<seal>.svg beside its other artwork.
+  sealUrl = root?.display_config?.seal && config?.assetBase
+    ? `${config.assetBase}${root.display_config?.detail_sector?.logo_base_path || 'assets/'}${root.display_config.seal}.svg`
+    : null;
+  applySeal();
   copyrightWords = root?.display_config?.copyright_notice || null;
   landscapeRoot = root || null;
   landscapeRendered = '';

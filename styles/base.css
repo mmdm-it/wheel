@@ -1499,6 +1499,23 @@ svg :focus-visible {
 }
 .incomplete-mark-line { display: block; }
 
+/* THE SEAL (W-301, Howell 2026-11-11): the volume's small line drawing at the
+   foot of the glass on the left, the mirror of the emblem in its sector
+   upper right — smaller than the emblem (the sector's collapsed emblem is
+   about 26 hundredths of the short side wide; this is 15), at the emblem's
+   own half-light, inert. Present on every page; a link to nothing. */
+#seal {
+  position: fixed;
+  left: calc(10px * var(--iframe-scale, 1));
+  bottom: calc(6px * var(--iframe-scale, 1));
+  width: 15vmin;
+  height: auto;
+  z-index: 401;   /* with the margin's marks, above the sector */
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+
 /* THE NOTICE NO LONGER STANDS DOWN BENEATH IT (Howell, 2026-08-29). It used
    to: an opaque mark covered the notice's FIRST line and nothing else — the
    copyright wraps to two lines on a phone, so "riservati." sat below the band
