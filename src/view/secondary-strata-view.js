@@ -10,6 +10,48 @@ import { standardBandCenterline, pointsToPath, getNodeSpacing, chainSpanPoints, 
 const NS = 'http://www.w3.org/2000/svg';
 const NODE_RADIUS_RATIO = 0.035;      // matches the primary (index.js)
 const MAGNIFIER_RADIUS_RATIO = 0.060; // matches the primary
+// THE WORD BESIDE THE LENS (O-280, Howell 2026-11-09, two screenshots with
+// the word drawn in: "I don't like adding rotated labels along the focus
+// ring. They clutter the verse labels and are confusing"). ONE upright word
+// — BOOKMARK for the candidate under the lens, DISCARD for a kept seat — in
+// the open ground to the right of the lens at the lens's height, the only
+// upright text on the glass, so it reads as a control and not as a seat.
+// Its left edge stands this many lens radii right of the lens's centre, and
+// it is SIZED TO THE ROOM between there and the glass's right edge (Howell,
+// the first look: "it runs a little wide for 'bookmark'" — the word's end
+// was off the phone): the lens label's size where the word fits at it, and
+// smaller where it does not, so BOOKMARK, ENTFERNEN and the Russian word
+// all land whole on any phone.
+const CAPTION_REACH = 2.2;
+const CAPTION_EM_PER_GLYPH = 0.82;   // bold caps with the sheet's letter-spacing
+const CAPTION_MARGIN = 0.03;         // of the short side, kept clear at the right edge
+const CAPTION_MIN_PX = 12;
+// A NAME THAT RUNS THROUGH THE WORD IS DIMMED WHERE THEY MEET, NOT HIDDEN
+// (Howell, seeing DISCARD through LEVITICUS 1:5, the bookmark above the
+// lens, whose name runs toward the hub: "I don't like removing the
+// offending label entirely. I'd rather create a halo around the discard or
+// bookmark label, the same way we put a halo around the parent button
+// label"). The word is drawn after the names and wears the parent label's
+// halo (O-233) — so a name passing beneath is dimmed where it meets the
+// word and nowhere else, and every name stays on the glass.
+//
+// AND THE HALO TOUCHES THE NAMES ALONE (O-289, Howell 2026-11-10, his
+// screenshot of BOOKMARK standing in the arc of its own watermark: "the
+// halo around the bookmark label is covering the bookmark's watermark in
+// the basement. That watermark should not be affected by the halo. The
+// halo around the bookmark label exists only to prevent a collision with
+// adjacent bookmark labels"). The first cut painted the halo as a stroke in
+// the ground's colour on the word itself, and paint covers whatever lies
+// under it — the watermark, the band, a disc. So the halo is now a MASK on
+// the names: a luminance mask of the glass, white everywhere, with the word
+// drawn into it once more — a <use> of the caption, black letters and the
+// black stroke at the halo's own opacity — and the names' groups wear it
+// while the word stands. Only what the mask is applied to can be dimmed by
+// it; the word itself keeps its ink and no stroke. The mask is worn only at
+// a settle where a name actually meets the word (measured on the glass,
+// where it can be): a masked group is rasterised again at every repaint,
+// which the basement's descent and the ring's turning cannot afford.
+const CAPTION_HALO_EM = 0.3;   // half the sheet's 0.6em stroke, beyond the letters' outline
 const BAND_THICKNESS_RATIO = 0.02;    // the primary band spans 0.99r–1.01r
 // The magnified label starts one fraction-of-a-node BACK from its centre and
 // runs inward (start-anchored), so the name spans the node weighted to one
@@ -124,7 +166,7 @@ export function hideStratum(svg, id) {
   if (g) g.remove();
 }
 
-export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, sideFor = null, legend = null } = {}) {
+export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mirrored = false, labelFor, centerMagnified = false, rotating = false, classFor = null, allowEmpty = false, labelsBeside = false, lensShift = 0, markFor = null, sideFor = null, legend = null, caption = null } = {}) {
   if (!svg || !Array.isArray(items)) return null;
   // An EMPTY ring is a real state for the basement (O-126): a reader with no
   // bookmarks yet sees the band and the hollow lens and nothing on them —
@@ -248,23 +290,53 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     // One circle and one label per seat, in seat order, made once. The
     // label's TEXT is the seat's own and never changes with the pose; where
     // it sits and how it is anchored does.
+    // The names stand in a group of their own after every disc — as on the
+    // primary ring — so the word's halo can be laid on them and on nothing
+    // else (O-289). A seat's class (a placeholder, a hollow door, an
+    // uncleared edition, a provisional seat) is worn by its name as well as
+    // its disc, since the two are no longer neighbours in the drawing.
+    const names = svgEl('g', { class: 'secondary-strata-names' });
     seats = items.map((item, index) => {
-      const circle = svgEl('circle', { class: `secondary-strata-node${classes?.[index] ? ` ${classes[index]}` : ''}` });
+      const cls = classes?.[index] || '';
+      const circle = svgEl('circle', { class: `secondary-strata-node${cls ? ` ${cls}` : ''}` });
       circle.dataset.index = String(index);
-      const label = svgEl('text', { class: 'secondary-strata-label', 'dominant-baseline': 'middle' });
+      const label = svgEl('text', { class: `secondary-strata-label${cls ? ` ${cls}` : ''}`, 'dominant-baseline': 'middle' });
       const raw = typeof labelFor === 'function' ? labelFor(item, false) : item;
       label.textContent = displayCase(String(raw ?? ''));
       g.appendChild(circle);
-      g.appendChild(label);
-      return { circle, label, mark: marks?.[index] || '', side: sides?.[index] ?? 1 };
+      names.appendChild(label);
+      return { circle, label, cls, mark: marks?.[index] || '', side: sides?.[index] ?? 1 };
     });
+    g.appendChild(names);
     // THE LODESTAR (docs/archive/DESIGN_CLARIFICATIONS.md): the magnifier is
     // a FIXED point at magA — the reference everything rotates around. Drawn
     // last, so a node sliding through passes behind it.
     const lens = svgEl('circle', { cx: layout.magnifier.x.toFixed(1), cy: layout.magnifier.y.toFixed(1), r: magR.toFixed(1) });
     const lensLabel = svgEl('text', { y: '0', 'dominant-baseline': 'middle', class: 'secondary-strata-label is-magnified' });
+    // The lens's own name in a group of its own too, for the same mask: a
+    // mask on the text itself would be laid in the text's rotated space.
+    const lensName = svgEl('g', { class: 'secondary-strata-lens-name' });
+    lensName.appendChild(lensLabel);
     g.appendChild(lens);
-    g.appendChild(lensLabel);
+    g.appendChild(lensName);
+    // The word beside the lens (O-280): placed and worded at every settle
+    // below; hidden while the ring turns.
+    const captionWord = svgEl('text', { id: `${id}-caption`, 'dominant-baseline': 'middle', 'text-anchor': 'start', class: 'secondary-strata-caption', display: 'none' });
+    g.appendChild(captionWord);
+    g.__caption = captionWord;
+    // THE WORD'S HALO, AS A MASK ON THE NAMES (O-289): white glass, the word
+    // drawn into it black with its stroke. A <use> follows the caption live —
+    // its place, its size, its word, its hiding — so nothing here is kept in
+    // step by hand; the black comes from the sheet (.caption-halo-cut).
+    const defs = svgEl('defs', {});
+    const cut = svgEl('mask', { id: `${id}-halo-cut`, maskUnits: 'userSpaceOnUse', x: '-20000', y: '-20000', width: '40000', height: '40000' });
+    cut.appendChild(svgEl('rect', { x: '-20000', y: '-20000', width: '40000', height: '40000', fill: '#fff' }));
+    const copy = svgEl('use', { class: 'caption-halo-cut', href: `#${id}-caption` });
+    copy.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', `#${id}-caption`);
+    cut.appendChild(copy);
+    defs.appendChild(cut);
+    outer.insertBefore(defs, g);
+    outer.__cut = [names, lensName];
     if (legendRows && legendRows.length) {
       // THE LEGEND RUNS ALONG THE BAND (O-276, Howell's sketch 2026-11-08:
       // the two words "on either side of the focus ring band, rotated ...
@@ -332,6 +404,30 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // as before; an empty ring (the basement before its first bookmark) is
   // all bare sprocket.
   const show = (el, on) => { if (on) el.removeAttribute('display'); else el.setAttribute('display', 'none'); };
+  // THE WORD BESIDE THE LENS (O-280): `word` is a string or null. Upright,
+  // start-anchored, its left edge CAPTION_REACH lens radii right of the
+  // lens's centre, at the lens's height. It records its anchor on the glass
+  // (data-cx/data-cy) so the host can count a tap on it as a tap on the lens.
+  const placeCaption = (el, word, mag, magR) => {
+    if (!el) return;
+    if (!word) { show(el, false); return; }
+    const x = mag.x + magR * CAPTION_REACH, y = mag.y;
+    el.setAttribute('x', x.toFixed(1));
+    el.setAttribute('y', y.toFixed(1));
+    el.removeAttribute('transform');
+    // The size: the lens label's (the sheet's clamp, 21..39 px at 2.4 of
+    // the short side's hundredths), cut to what the room allows.
+    const text = displayCase(String(word));
+    const glyphs = Math.max(1, Array.from(text).length);
+    const base = Math.max(21, Math.min(39, 0.024 * viewport.SSd));
+    const room = viewport.width - x - viewport.SSd * CAPTION_MARGIN;
+    const size = Math.max(CAPTION_MIN_PX, Math.min(base, room / (glyphs * CAPTION_EM_PER_GLYPH)));
+    el.style.fontSize = `${size.toFixed(1)}px`;
+    el.dataset.cx = x.toFixed(1);
+    el.dataset.cy = y.toFixed(1);
+    el.textContent = text;
+    show(el, true);
+  };
   if (outer.__band) {
     const n = items.length;
     const span = n
@@ -384,7 +480,7 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.setAttribute('x', lx.toFixed(1));
       label.setAttribute('y', ly.toFixed(1));
       label.setAttribute('text-anchor', side < 0 ? 'end' : 'start');
-      label.setAttribute('class', `secondary-strata-label is-beside${seat.mark ? ` ${seat.mark}` : ''}`);
+      label.setAttribute('class', `secondary-strata-label is-beside${seat.cls ? ` ${seat.cls}` : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `rotate(${rotDeg.toFixed(1)}, ${lx.toFixed(1)}, ${ly.toFixed(1)})`);
     } else if (mirrored && !centerMagnified) {
       // Over the node, from COVER_PULL radii out toward the hub, wherever
@@ -395,14 +491,14 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
       label.setAttribute('x', '0');
       label.setAttribute('y', '0');
       label.setAttribute('text-anchor', side < 0 ? 'end' : 'start');
-      label.setAttribute('class', `secondary-strata-label is-beside${magScale > 1.01 ? ' is-passing' : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
+      label.setAttribute('class', `secondary-strata-label is-beside${magScale > 1.01 ? ' is-passing' : ''}${seat.cls ? ` ${seat.cls}` : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `translate(${lx.toFixed(1)}, ${ly.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`);
     } else {
       // On the node — the numeral's seat, and the swelling name passing the lens.
       label.setAttribute('x', '0');
       label.setAttribute('y', '0');
       label.setAttribute('text-anchor', 'middle');
-      label.setAttribute('class', `secondary-strata-label${magScale > 1.01 ? ' is-passing' : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
+      label.setAttribute('class', `secondary-strata-label${magScale > 1.01 ? ' is-passing' : ''}${seat.cls ? ` ${seat.cls}` : ''}${seat.mark ? ` ${seat.mark}` : ''}`);
       label.setAttribute('transform', `translate(${node.x.toFixed(1)}, ${node.y.toFixed(1)}) rotate(${rotDeg.toFixed(1)})${magScale > 1.01 ? ` scale(${magScale.toFixed(3)})` : ''}`);
     }
   });
@@ -428,9 +524,12 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
     lensLabel.textContent = displayCase(String(magRaw ?? ''));
     lensLabel.setAttribute('class', `secondary-strata-label is-magnified${marks?.[layout.magIndex] ? ` ${marks[layout.magIndex]}` : ''}`);
     show(lensLabel, true);
+    placeCaption(g.__caption, typeof caption === 'function' ? caption(items[layout.magIndex]) : null, mag, magR);
   } else {
     show(lensLabel, false);
+    placeCaption(g.__caption, null);
   }
+  wearHalo(outer, id, g.__caption, [...seats.map(seat => seat.label), lensLabel]);
   outer.dataset.pose = pose;
 
   // Already appended on create; a reused stratum stays put so its DOM order
@@ -438,4 +537,32 @@ export function renderStratum(svg, { id, viewport, items, selectedIndex = 0, mir
   // re-inserting. Return the OUTER <svg> — the blur and the recede transform
   // ride it (setStratumVisual).
   return outer;
+}
+
+// THE NAMES WEAR THE WORD'S HALO ONLY WHERE ONE MEETS IT (O-289). The mask
+// is correct whether or not any name crosses the word — white everywhere
+// else — but a masked group costs a raster at every repaint, so it is put
+// on at a settle where the word stands and a shown name's box on the glass
+// meets the word's box grown by the stroke, and taken off otherwise. Where
+// the glass cannot be measured (a document without layout) the names wear
+// it whenever the word stands.
+export function wearHalo(outer, id, word, names) {
+  const groups = outer?.__cut || [];
+  const on = Boolean(word) && word.getAttribute('display') !== 'none' && namesMeet(word, names);
+  for (const grp of groups) {
+    if (on) grp.setAttribute('mask', `url(#${id}-halo-cut)`); else grp.removeAttribute('mask');
+  }
+  return on;
+}
+function namesMeet(word, names) {
+  if (typeof word.getBoundingClientRect !== 'function') return true;
+  const w = word.getBoundingClientRect();
+  if (!(w.width > 0)) return true;   // not laid out yet: the mask is right either way
+  const reach = (parseFloat(word.style?.fontSize) || 0) * CAPTION_HALO_EM;
+  const box = { left: w.left - reach, right: w.right + reach, top: w.top - reach, bottom: w.bottom + reach };
+  return names.some(name => {
+    if (!name || name.getAttribute('display') === 'none' || typeof name.getBoundingClientRect !== 'function') return false;
+    const r = name.getBoundingClientRect();
+    return r.width > 0 && r.left < box.right && r.right > box.left && r.top < box.bottom && r.bottom > box.top;
+  });
 }

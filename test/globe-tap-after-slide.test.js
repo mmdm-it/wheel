@@ -21,5 +21,5 @@ test('the globe\'s pointerdown clears suppressClick before anything can return e
 
 test('a drag\'s release still suppresses the click a mouse will send', () => {
   assert.match(src, /if \(moved\) suppressClick = true;/);
-  assert.match(src, /if \(suppressClick\) \{ suppressClick = false; return; \}\n\s*cycleStrata\(\);/);
+  assert.match(src, /if \(suppressClick\) \{ suppressClick = false; return; \}\n\s*tapGlobe\(\);/);
 });

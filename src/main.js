@@ -386,10 +386,14 @@ const BRIDGE_CHOOSERS = [
     // A placeholder seat (O-184) is drawn hollow, and the ring never settles
     // on one: the snap passes it for the nearest real seat.
     // An UNCLEARED edition (O-231) is drawn red: in the corpus, not yet ours to serve.
-    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : dimensionBridge.isUncleared?.(key) ? 'is-uncleared' : ''),
+    // AN EDITION THAT IS ELSEWHERE (O-284, Howell 2026-11-09: from Hebrew
+    // Genesis there was no way to the Greek Mark but out to the root or
+    // through a third edition) is drawn hollow too — a door, not a page —
+    // and is NOT inert: choosing it leads to that edition's shelf.
+    classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : dimensionBridge.isElsewhere?.(key) ? 'is-elsewhere' : dimensionBridge.isUncleared?.(key) ? 'is-uncleared' : ''),
     inert: key => Boolean(dimensionBridge.isComing?.(key)),
     select: key => {
-      const ok = dimensionBridge.setTranslation(key);
+      const ok = dimensionBridge.isElsewhere?.(key) ? goToShelf(key) : dimensionBridge.setTranslation(key);
       window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
       return ok;
     } },
@@ -402,7 +406,10 @@ const BRIDGE_CHOOSERS = [
     // it, so its hollow shelf can be seen on the plane behind. Settling on
     // it is display-only (the bridge dispatches nothing); the reader keeps
     // reading what they had.
-    classFor: id => (dimensionBridge.isComingLanguage?.(id) ? 'is-coming' : ''),
+    // A tongue whose every edition is elsewhere (O-284) stands hollow the
+    // same way; settling on it is display-only too, and the plane behind
+    // shows its editions hollow, each a door to its shelf.
+    classFor: id => (dimensionBridge.isComingLanguage?.(id) ? 'is-coming' : dimensionBridge.isElsewhereLanguage?.(id) ? 'is-elsewhere' : ''),
     select: id => {
       const ok = dimensionBridge.setLanguage(id);
       window.__wheelTapTrace?.push({ ev: 'select-lang', id, ok: ok ? 1 : 0 });
@@ -464,7 +471,7 @@ const isHit = key => { const { id, edition } = seatParts(key); return hitSeats()
 // tongue without them shows no legend rather than an English one.
 const MARK_BOOKMARK = 'is-bookmark';
 const MARK_LANDMARK = 'is-landmark';
-let basementWords = null;          // { bookmark, landmark, and } in the reader's tongue, or null
+let basementWords = null;          // { bookmark, landmark, and, bookmarkVerb, discard } in the reader's tongue, or null
 // THE CONJUNCTION (O-277, Howell 2026-11-08, with both watermarks on his
 // phone: "We need to add an ampersand above bookmarks, otherwise it reads as
 // 'oft-quoted bookmarks'"): the bookmarks word is led by a line of its own
@@ -473,16 +480,39 @@ let basementWords = null;          // { bookmark, landmark, and } in the reader'
 // headings and not one phrase. It rides the same row, as the word's first
 // line; the view breaks a word at its spaces.
 const BASEMENT_AND = '&';
+// THE SEATS OF ONE VERSE STAND IN THE RINGS' ORDER (O-283, Howell 2026-11-09,
+// a verse kept in nine tongues: "the same verse, bookmarked in several
+// different languages, does not sort in the basement focus ring the same way
+// languages sort in the tertiary stratum focus ring"). The adapter ranked a
+// seat's edition by its place in the volume's declaration — a list no reader
+// sees — so the nine stood in a sequence the floors above never show. The
+// order the reader has learned is the language ring's, and within a tongue
+// the edition ring's; the bridge, which owns both rings, hands the rank
+// (editionRank), and every placed seat takes it before the sort.
+function basementEditionRank() {
+  // The bridge owns both rings, so it owns their order; without it every
+  // edition ranks alike and the seats fall back to their codes.
+  try { return dimensionBridge.editionRank?.() || (() => Number.POSITIVE_INFINITY); } catch (_) { return () => Number.POSITIVE_INFINITY; }
+}
 const BASEMENT = {
   id: 'basement', mirrored: true, allowEmpty: true, labelsBeside: true,   // the primary's label manners (O-128)
   lensShift: -4,   // the lens four nodes up the arc, clear of the left edge, so a whole name fits in it (Howell, 2026-09-14)
   items: () => {
     // Kept seats and THE GREATEST HITS (O-135, Howell 2026-09-15: "add
     // Greatest Hits permanently to the bookmarks ring") together in the
-    // volume's order — book, chapter, verse, edition — and the loose ones
-    // (the arrival, anything dropped this visit) after them. A hit is seated
-    // in the edition up, with the label the primary would show; a hit the
-    // reader has also kept is one seat, drawn kept.
+    // volume's order — book, chapter, verse, edition — AND THE LOOSE ONES
+    // (the arrival, anything dropped this visit) IN THAT SAME ORDER (O-279,
+    // Howell 2026-11-09: the verse the reader brings down "should appear in
+    // the magnifier, not at the end of the focus ring chain as it does
+    // now"). The loose seats were appended after the ordered ones, so the
+    // arrival stood under the lens as the chain's last seat, nothing beyond
+    // it — read as tacked on, not as a seat among its neighbours. Each loose
+    // seat has the place it was seated or kept with (basementPlaces), and
+    // takes it; one with no place known comes last, as before. A hit is
+    // seated in the edition up, with the label the primary would show; a hit
+    // the reader has also kept is one seat, drawn kept; an arrival that is
+    // already a hit or kept is that seat, under the lens, and nothing is
+    // added.
     // A KEPT SEAT'S PLACE IS ASKED AGAIN, on the edition up (O-275, Howell's
     // sketch 2026-11-08: two Maccabees bookmarks sat below the Epistles —
     // "They should be further up the ring as the last of the Old Testament
@@ -495,9 +525,19 @@ const BASEMENT = {
     const hits = hitSeats().filter(h => !kept.some(b => b.id === h.id && (b.edition ?? null) === (h.edition ?? null)));
     for (const h of hits) { const k = seatKey(h.id, h.edition); basementLabels[k] = h.label; basementPlaces[k] = h.at; }
     for (const b of kept) if (b.at) basementPlaces[seatKey(b.id, b.edition)] = b.at;
-    const keys = inOrder([...kept, ...hits]).map(b => seatKey(b.id, b.edition));
-    for (const k of basementLoose) if (!keys.includes(k)) keys.push(k);
-    return keys;
+    const seated = [...kept, ...hits];
+    const have = new Set(seated.map(b => seatKey(b.id, b.edition)));
+    for (const k of basementLoose) {
+      if (have.has(k)) continue;
+      const { id, edition } = seatParts(k);
+      seated.push({ id, edition, at: basementPlaces[k] ?? null, kept: '' });
+      have.add(k);
+    }
+    // The edition's rank is the rings' (O-283); a bare edition is the one up.
+    const rankEdition = basementEditionRank();
+    const up = dimensionBridge.getSelection?.()?.translation ?? null;
+    const ranked = seated.map(b => (b.at ? { ...b, at: { ...b.at, edition: rankEdition(b.edition ?? up) } } : b));
+    return inOrder(ranked).map(b => seatKey(b.id, b.edition));
   },
   label: key => keptSeat(key)?.label || basementLabels[key] || seatParts(key).id,
   // Kept: filled. A hit: its own fill, never mistaken for something kept.
@@ -508,7 +548,40 @@ const BASEMENT = {
   legend: () => (basementWords && (basementWords.bookmark || basementWords.landmark)
     ? [[MARK_LANDMARK, basementWords.landmark, -1], [MARK_BOOKMARK, basementWords.bookmark ? `${basementWords.and || BASEMENT_AND} ${basementWords.bookmark}` : null, 1]] : null),
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
-  select: key => { basementLens = key; return true; }
+  select: key => { basementLens = key; return true; },
+  // THE CAPTION ON THE LENS (O-280, Howell 2026-11-09, his sketch: "KEEP /
+  // (NAME OF VERSE) / BOOKMARK", and for a kept seat "DISCARD / (NAME OF
+  // VERSE) / BOOKMARK"; "These buttons and messages would appear and
+  // disappear as necessary when the basement focus ring is rotated"). The
+  // lens's name is the middle line; the verb above says what a tap on the
+  // lens will do to the seat under it, the word below names what it is. In
+  // the tongue's own words; a tongue without them shows no caption, and
+  // the tap still keeps. It
+  // retired the slider's hold in the overrun (O-128): the globe now trucks
+  // and nothing else, and keeping is the lens's alone.
+  // KEEP IS THE CANDIDATE'S ALONE (Howell, the same day, seeing KEEP over an
+  // oft-quoted seat: "The keep bookmark label should only apply to those
+  // nodes which have not yet been bookmarked, nor do they exist as
+  // oft-quoted verses ... a node that indicates whatever verse the user was
+  // reading when they trucked down into the basement"). A kept seat offers
+  // DISCARD; an oft-quoted seat is already stored and offers nothing; only
+  // the hollow dashed candidate offers KEEP — so the message is never seen
+  // anywhere but the lens, and only when the lens holds something to decide.
+  // ONE UPRIGHT WORD (Howell, the same evening, two screenshots with the
+  // word drawn in beside the lens: "I don't like adding rotated labels along
+  // the focus ring. They clutter the verse labels and are confusing" — and
+  // on the pair: "I am happy with bookmark as the verb for creating a
+  // bookmark and discard as the verb for removing that bookmark"). The
+  // tongue's verb for marking (vocabulary.bookmark_verb — the word its old
+  // hold-to-keep phrase began with) or its verb for discarding
+  // (vocabulary.discard); the view stands it upright to the right of the
+  // lens. A tongue without both shows no word, and the tap still keeps.
+  caption: key => {
+    if (!(basementWords?.bookmarkVerb && basementWords.discard)) return null;
+    if (keptSeat(key)) return basementWords.discard;
+    if (isHit(key)) return null;
+    return basementWords.bookmarkVerb;
+  }
 };
 // The seat's label is the verse's full address as the instrument was showing
 // it at that moment — the Parent Button's words (book and chapter, in the
@@ -594,6 +667,31 @@ function jumpToChosen() {
   if (!seated) editionSettlePromise.then(() => { seatHere(); refreshEditionsHere(); }).catch(() => {});
   else editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
 }
+// A HOLLOW EDITION LEADS TO ITS SHELF (O-284, Howell 2026-11-09). An edition
+// that does not hold the reader's place stands hollow on its ring; chosen,
+// the reader is taken to the volume's top ring FIRST, in the edition they
+// are leaving, and the edition is committed there, where nothing is
+// filtered, by the ordinary commit — so the ordinary reseat
+// at the top (O-95) refills the ring with the new edition's divisions and
+// the reader arrives at its shelf, two strokes from any book. Never at a
+// verse the edition lacks, and never with a word of apology: the hollow
+// seat said beforehand what it was. His image, the hour it was ruled: an
+// open book is one thing, a bookshelf another; this seat is the shelf,
+// reached from inside the book.
+function goToShelf(key) {
+  if (!currentApp || !dimensionBridge.isElsewhere?.(key)) return false;
+  let shelved = false;
+  try { shelved = Boolean(seatAtShelf(currentApp)); } catch (_) { shelved = false; }
+  if (!shelved) return false;
+  // At the top ring nothing is filtered (the adapter answers null there), so
+  // the ORDINARY commit is the door: re-ask the position first, in case the
+  // move has not yet been noticed, and then commit as any filled seat would.
+  // The bench found the first cut refusing here — it asked the bridge to
+  // commit "an edition that is elsewhere" AFTER the move had made nothing
+  // elsewhere.
+  refreshEditionsHere();
+  return dimensionBridge.setTranslation(key);
+}
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
 }
@@ -609,6 +707,9 @@ function toggleKeep(keyOrId) {
     dropBookmark(vol, id, edition);
     if (!basementLoose.includes(key)) basementLoose.push(key);
   } else {
+    // An oft-quoted seat is already stored (O-280): the lens offers it no
+    // KEEP, and the tap does what the message says — nothing.
+    if (isHit(key)) return false;
     keepBookmark(vol, { id, label: BASEMENT.label(key), edition, at: basementPlaces[key] ?? null });
   }
   return true;
@@ -737,7 +838,6 @@ let searchScopedCorpus = [];    // the active subset: leaves under the ring the 
 let searchOpeningAllowed = null;// characters the opening ring is pruned to when scoped (any position)
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
-let bookmarkPrompt = null;   // O-128: the volume's own words for "bookmark this", per tongue
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
 let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
 let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
@@ -1285,7 +1385,8 @@ const stratumOpts = (ch, items, selectedIndex, rotating = false) => ({
   id: ch.id, viewport, items, selectedIndex,
   mirrored: ch.mirrored, labelFor: ch.label, centerMagnified: ch.centerMag, rotating,
   classFor: ch.classFor || null, allowEmpty: Boolean(ch.allowEmpty), labelsBeside: Boolean(ch.labelsBeside), lensShift: ch.lensShift || 0,
-  markFor: ch.markFor || null, sideFor: ch.sideFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null
+  markFor: ch.markFor || null, sideFor: ch.sideFor || null, legend: typeof ch.legend === 'function' ? ch.legend() : null,
+  caption: typeof ch.caption === 'function' ? ch.caption : null
 });
 
 function renderStack({ keepFront = false } = {}) {
@@ -1405,7 +1506,18 @@ function lensHit(event, ch) {
   if (!lens) return false;
   const rect = strataLayer.getBoundingClientRect();
   const x = event.clientX - rect.left, y = event.clientY - rect.top;
-  return Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= viewport.SSd * 0.09;
+  const reach = viewport.SSd * 0.09;
+  if (Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= reach) return true;
+  // The word beside the lens (O-280) is the lens's too: a tap on BOOKMARK or
+  // DISCARD is a tap on the lens. Its box, padded by a finger's slack; where
+  // the glass cannot measure text, its anchor and a reach.
+  const word = strataLayer.querySelector?.(`#${ch.id} .secondary-strata-caption:not([display="none"])`);
+  if (!word) return false;
+  const pad = viewport.SSd * 0.03;
+  let box = null;
+  try { box = typeof word.getBBox === 'function' ? word.getBBox() : null; } catch (_) { box = null; }
+  if (box && box.width > 0) return x >= box.x - pad && x <= box.x + box.width + pad && y >= box.y - pad && y <= box.y + box.height + pad;
+  return Math.hypot(Number(word.dataset?.cx) - x, Number(word.dataset?.cy) - y) <= reach * 2;
 }
 
 // Re-render ONLY the front stratum at a (fractional) center index, front depth.
@@ -1445,7 +1557,9 @@ function previewFromLens(ch, items, centerIndex) {
     // stocking (O-227), when the seat is a hollow key the real one replaces.
     const landing = bootOvertureLive && overtureLanding?.language === item
       ? editions.find(k => dimensionBridge.editionOfKey?.(k) === overtureLanding.edition) : null;
-    strataPreview = { language: item, edition: landing || editions.find(k => !dimensionBridge.isComing?.(k)) || null };
+    // A filled seat before a hollow one (O-284): the preview paints the
+    // reader's place, which an edition that is elsewhere cannot show.
+    strataPreview = { language: item, edition: landing || editions.find(k => !dimensionBridge.isComing?.(k) && !dimensionBridge.isElsewhere?.(k)) || editions.find(k => !dimensionBridge.isComing?.(k)) || null };
   } else {
     strataPreview = { ...(strataPreview || {}), edition: item };
   }
@@ -1906,6 +2020,7 @@ function resetStrata() {
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
+let seatAtShelf = () => false;  // O-284: the adapter sets the primary at the volume's top ring, for a hollow edition's door
 let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
 let seatPlace = () => null;     // O-275: where a LEAF stands on the edition up, or null if it does not hold it
 let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
@@ -2270,12 +2385,16 @@ function refreshDimensionButton() {
 // sits higher than before. The thumb's offset is measured from that rest.
 const NOTCH_RATIO = 1.5625;  // stop spacing, in button heights
 const BASEMENT_DROP = 1.25;  // the LOWEST point of travel, in button heights below the CSS rest
-// THE OVERRUN (O-128, Howell 2026-09-14): below the basement stop the thumb
-// can be pulled half a stop further against a spring — the Focus Ring's own
-// springback feel — and HELD there to bookmark (below). The travel shifted
-// up by the overrun so its lowest point stays where it was.
-const SLIDER_OVERRUN = 0.5;  // stops, below the basement stop
-const OVERRUN_GIVE = 0.5;    // the spring: the thumb moves this fraction of the finger's travel past the stop
+// THE OVERRUN IS GONE (O-280, Howell 2026-11-09: "remove the bookmark
+// function from the dimension slider, the overshoot pulling down past the
+// basement, so that the dimension button is purely for trucking in and out
+// between strata and the basement"). O-128 had let the thumb be pulled half
+// a stop below the basement against a spring and held there to bookmark;
+// the hold moved to the lens's caption. The thumb now stops AT the basement.
+// The travel had been shifted up by the overrun's half stop so its lowest
+// point stayed put; the shift is kept, so every stop stays where the thumb
+// learned it, and the basement stop is simply the lowest point now.
+const TRAVEL_LIFT = 0.5;     // stops, the room the overrun used to take below the basement stop
 let slide = null;           // { startY, startFront, lastY, moved }
 // A drag's release must not also count as a tap — but the click a drag
 // suppresses may NEVER COME. A mouse fires click after any press released on
@@ -2288,7 +2407,7 @@ let suppressClick = false;
 const buttonPx = () => ((typeof dimensionButton?.getBoundingClientRect === 'function' ? dimensionButton.getBoundingClientRect().height : 0) || 64);
 const notchPx = () => buttonPx() * NOTCH_RATIO;
 // How far ABOVE the CSS rest the thumb sits at floor position p (fractional while held).
-const thumbRise = p => (p - minStrataFront() + SLIDER_OVERRUN) * notchPx() - BASEMENT_DROP * buttonPx();
+const thumbRise = p => (p - minStrataFront() + TRAVEL_LIFT) * notchPx() - BASEMENT_DROP * buttonPx();
 // The emblem lies on its ray to the hub (O-244), measured where the button
 // stands; the globe ignores the call.
 function orientDimensionArt() {
@@ -2396,83 +2515,11 @@ function releaseScrub() {
   };
   scrubSettle = requestAnimationFrame(step);
 }
-// ── HOLD TO BOOKMARK (O-128, Howell 2026-09-14) ─────────────────────────────
-// "The user must hold the button in the extreme position longer to bookmark
-// the verse. A quick pull down of the button to the bottom only takes the
-// user to the basement without bookmarking." While the thumb is held in the
-// overrun with the basement front and a verse in hand (the provisional seat
-// under the lens), the volume's phrase shows beside the globe and the seat
-// FILLS as the hold runs — the filling is the progress — and at HOLD_MS it
-// is kept. Let go sooner and nothing happened: the seat empties, the phrase
-// goes, the thumb springs back. The phrase is the VOLUME's, in the reader's
-// tongue (display_config.bookmark_prompt): the engine has no word for what a
-// leaf is called. From the front door there is no verse in hand, so the
-// overrun is only a spring.
-const HOLD_MS = 1100;
-const HOLD_DEPTH = 0.15;   // stops into the overrun before the hold is a hold
-let hold = null;           // { id, start, timer, raf } while the thumb is held in the overrun
-const bookmarkHint = (() => {
-  if (!dimensionButton || typeof document === 'undefined') return null;
-  try {
-    const h = document.createElement('div');
-    h.id = 'bookmark-hint';
-    h.setAttribute('aria-live', 'polite');
-    dimensionButton.parentNode?.insertBefore?.(h, dimensionButton);
-    return h;
-  } catch (_) { return null; }
-})();
-const bookmarkPhrase = () => phraseFor(bookmarkPrompt) || '';
-function showHint(text) {
-  if (!bookmarkHint?.classList) return;
-  bookmarkHint.textContent = text;
-  if (typeof dimensionButton.getBoundingClientRect === 'function') {
-    const r = dimensionButton.getBoundingClientRect();
-    bookmarkHint.style.top = `${(r.top + r.height / 2).toFixed(0)}px`;
-    bookmarkHint.style.right = `${(window.innerWidth - r.left + 12).toFixed(0)}px`;
-  }
-  bookmarkHint.classList.toggle('is-showing', Boolean(text));
-}
-function hideHint() { if (bookmarkHint?.classList) bookmarkHint.classList.remove('is-showing'); }
-// The provisional seat under the lens fills with the hold.
-function fillProvisional(f) {
-  const lens = strataLayer?.querySelector?.('#basement .secondary-strata-node.is-magnified.is-provisional');
-  if (!lens) return;
-  lens.style.fill = f > 0 ? 'var(--color-orbital)' : '';
-  lens.style.fillOpacity = f > 0 ? String(f) : '';
-}
-function holdBegin() {
-  if (hold || strataFront !== -1 || scrub || !basementArrival) return;
-  const { key, id, edition } = basementArrival;
-  if (isBookmarked(currentVolumeId, id, edition)) return;
-  if (BASEMENT.selected() !== key) return;   // the hold keeps the seat UNDER THE LENS, and that is the arrival
-  hold = { key, id, edition, start: (typeof performance !== 'undefined' ? performance.now() : Date.now()), timer: setTimeout(() => holdKeep(), HOLD_MS), raf: 0 };
-  showHint(bookmarkPhrase());
-  const tick = () => {
-    if (!hold) return;
-    const now = typeof performance !== 'undefined' ? performance.now() : Date.now();
-    fillProvisional(Math.min(1, (now - hold.start) / HOLD_MS));
-    hold.raf = requestAnimationFrame(tick);
-  };
-  hold.raf = requestAnimationFrame(tick);
-}
-function holdCancel() {
-  if (!hold) return;
-  clearTimeout(hold.timer);
-  cancelAnimationFrame(hold.raf);
-  hold = null;
-  hideHint();
-  fillProvisional(0);
-}
-function holdKeep() {
-  if (!hold) return;
-  const { key, id, edition } = hold;
-  cancelAnimationFrame(hold.raf);
-  hold = null;
-  hideHint();
-  keepBookmark(currentVolumeId, { id, label: BASEMENT.label(key), edition, at: basementPlaces[key] ?? basementArrival?.at ?? null });
-  basementLens = key;
-  renderStack();   // the seat is drawn kept: filled, for good
-}
+// HOLD TO BOOKMARK (O-128) RETIRED BY O-280: the thumb held in the overrun
+// below the basement used to keep the seat under the lens, with the volume's
+// phrase beside the globe and the seat filling as the hold ran. Keeping is
+// the lens's alone now — a tap on it, or on its caption — and the globe only
+// trucks. The phrase (display_config.bookmark_prompt) is no longer read.
 
 if (dimensionButton) {
   dimensionButton.addEventListener('pointerdown', event => {
@@ -2493,6 +2540,7 @@ if (dimensionButton) {
       if (Math.abs(dy) <= STRATA_TAP_SLOP) return;
       slide.moved = true;
       dimensionButton.classList.add('is-sliding');
+      cancelPendingTap();   // a slide begun after a tap is a slide, not a double (O-281)
     }
     const raw = slide.startFront + dy / notchPx();
     const min = minStrataFront();
@@ -2502,20 +2550,11 @@ if (dimensionButton) {
     const { lo, hi } = strokeBounds(raw);
     if (lo > min && raw < lo) {
       dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(lo)).toFixed(1)}px`);
-      holdCancel();
       scrubTo(lo);
       return;
     }
-    if (raw < min && lo === min) {
-      // Into the overrun: the thumb follows against the spring, the floors do
-      // not go below the basement, and a deep enough hold is a hold.
-      const over = Math.min(SLIDER_OVERRUN, (min - raw) * OVERRUN_GIVE);
-      dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(min - over)).toFixed(1)}px`);
-      scrubTo(min);
-      if (over >= HOLD_DEPTH) holdBegin(); else holdCancel();
-      return;
-    }
-    holdCancel();
+    // Below the basement there is nothing (O-280): the thumb stops at the
+    // lowest floor and the stroke's clamp below holds it there.
     const p = Math.max(lo, Math.min(hi, raw));
     dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`);
     scrubTo(p);
@@ -2526,7 +2565,6 @@ if (dimensionButton) {
     slide = null;
     dimensionButton.classList.remove('is-sliding');
     if (moved) suppressClick = true;
-    holdCancel();     // a hold that has not reached HOLD_MS is nothing
     releaseScrub();   // clears the stroke's side too (O-147)
     strokeSide = 0;
     placeThumb();     // the springback from the overrun rides the thumb's transition
@@ -2534,8 +2572,29 @@ if (dimensionButton) {
   ['pointerup', 'pointercancel'].forEach(type => dimensionButton.addEventListener(type, release));
   dimensionButton.addEventListener('click', () => {
     if (suppressClick) { suppressClick = false; return; }
-    cycleStrata();
+    tapGlobe();
   });
+}
+// THE DOUBLE TAP GOES DOWN (O-281, Howell 2026-11-09: "What's missing is a
+// tap on the dimension button from the primary stratum to take you down to
+// the basement. So I propose a double tap ... a single tap on the dimension
+// button takes that user up to languages and editions. A double tap on that
+// same primary stratum dimension button takes the user down into the
+// basement"). Swipe up and tap both go up; swipe down and double tap both go
+// down; the pause at the text stays the rule for both. A double can only be
+// told from a single by WAITING for the second, so from the text — the one
+// floor with two ways to go — a tap is held back DOUBLE_TAP_MS before it
+// climbs; the glide itself takes twice that, so the tap reads as a touch
+// heavier rather than slow. From every other floor a tap acts at once, and a
+// double there is two taps. A slide begun after a first tap cancels the held
+// tap. The window is a knob for the glass: ?doubletap=280.
+const DOUBLE_TAP_MS = (() => { try { const v = parseFloat(new URLSearchParams(window.location.search).get('doubletap')); return Number.isFinite(v) && v > 0 ? v : 280; } catch (_) { return 280; } })();
+let tapPending = null;   // the timer of a single tap from the text, held back while a second might come
+function cancelPendingTap() { if (tapPending) { clearTimeout(tapPending); tapPending = null; } }
+function tapGlobe() {
+  if (strataFront !== 0 || minStrataFront() >= 0) { cycleStrata(); return; }   // only the text has two ways to go
+  if (tapPending) { cancelPendingTap(); goToStratum(minStrataFront()); return; }   // the second tap: down
+  tapPending = setTimeout(() => { tapPending = null; cycleStrata(); }, DOUBLE_TAP_MS);
 }
 
 // THE PROOFREADER'S SHORTCUT (O-123, Howell 2026-08-31: "I want you to cheat,
@@ -2591,9 +2650,14 @@ if (typeof window !== 'undefined') {
     // The edition ring as the bridge would draw it, and the shelves still
     // stocking (O-224) — for the bench and the boot tests.
     ring: lang => dimensionBridge.translationsOf(lang || dimensionBridge.getSelection().language),
+    editionRank: () => basementEditionRank(),   // O-283: the basement's rank for an edition code, from the two rings
     arriving: () => dimensionBridge.editionsArriving?.() || [],
     turnPlan: front => overtureTurn(front),   // the overture's turn of a floor (O-225): { from, to } or null
     hollow: key => Boolean(dimensionBridge.isComing?.(key)),
+    elsewhere: key => Boolean(dimensionBridge.isElsewhere?.(key)),   // O-284: real, hollow here, a door to its shelf
+    door: key => goToShelf(key),                                      // O-284: walk through it, for the bench and the boot tests
+    current: () => currentApp?.nav?.getCurrent?.() ?? null,          // where the primary stands
+    app: () => currentApp,                                            // the bench's hand on the primary
     // Null while the launch funnel is up (O-75), the reader's position after.
     here: () => dimensionBridge.editionsHere(),
     // IS THE LAUNCH FUNNEL STILL UP? (O-77.) Read-only, for the guard that
@@ -2603,13 +2667,11 @@ if (typeof window !== 'undefined') {
     // How far the strata have travelled: 0 = the reader is at the text.
     front: () => strataFront,
     cycle: cycleStrata,
+    tap: tapGlobe,            // O-281: the globe's tap as the finger gives it — held back from the text, a double goes down
     // O-126: the slider's address, and the basement's state.
     slide: goToStratum,
     scrub: scrubTo,
     release: releaseScrub,
-    // O-128: the hold in the overrun, and its state.
-    holdBegin, holdCancel,
-    hold: () => (hold ? { id: hold.id, key: hold.key } : null),
     min: minStrataFront,
     basement: () => ({ arrival: basementArrival, lens: basementLens, items: BASEMENT.items(), kept: bookmarksOf(currentVolumeId).map(b => seatKey(b.id, b.edition)) }),
     keep: toggleKeep
@@ -4343,6 +4405,16 @@ function restoredGatewayReturn() {
   return null;
 }
 
+// Is the page running as an installed app (O-285)? Chrome's Install on
+// Android opens it in a standalone window, and only there the browser
+// paints a splash of its own before the page. ?card=1 shows the card
+// anyway, for a look at it on the phone.
+function installedDisplay() {
+  try {
+    if (new URLSearchParams(window.location.search).get('card') === '1') return false;
+    return typeof window.matchMedia === 'function' && window.matchMedia('(display-mode: standalone)').matches;
+  } catch (_) { return false; }
+}
 async function bootVolume(volumeOverride = null, searchOverride = null, gatewayReturn = null, transit = null) {
   performance.mark('wheel:boot-start');
   // Arm the corner-icon hold BEFORE anything in this boot can show an icon
@@ -4372,13 +4444,21 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const splashKey = `wheel:splash:${bootVolumeId}`;
   const rememberedSplash = (() => { try { return JSON.parse(localStorage.getItem(splashKey) || 'null'); } catch { return null; } })();
   if (rememberedSplash) overtureMark('splash-remembered');
+  // THE INSTALLED APP SHOWS NO CARD (O-285, Howell 2026-11-09: three crowns
+  // before the glide in). Installed, the browser's own splash — the
+  // manifest's name, ground and icon — is up before the page's first frame
+  // and fades off it; the card would be that same crown and name a second
+  // time, so the sheet goes up bare and lifts into the glide the moment the
+  // instrument is ready. In a browser tab the card is as it was.
+  const installed = installedDisplay();
+  if (installed) overtureMark('installed-no-card');
   const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
-    ? beginBootOverture({ viewport: measureViewport(), splash: rememberedSplash }) : null;
+    ? beginBootOverture({ viewport: measureViewport(), splash: installed ? null : rememberedSplash }) : null;
   bootOvertureShown = true;
   // A FIRST VISIT'S CARD GOES UP THE MOMENT THE MANIFEST IS PARSED (O-181),
   // not when the boot has also gathered its bundles: on Howell's phone over
   // 4G the manifest was in hand at 0.4 s and the card waited until 2.3 s.
-  if (overture && !rememberedSplash) {
+  if (overture && !rememberedSplash && !installed) {
     const cfg = volumeConfigs[bootVolumeId];
     document.addEventListener('wheel:volume-early', e => {
       const declared = splashRecord(e.detail, cfg?.assetBase);
@@ -4586,8 +4666,25 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // The naming kit is where a tongue's words for its levels live now; the
     // registry lookup stays as the belt for a volume that still has one.
     namesMap.vocabulary = ln.vocabulary || dimensionBridge.languageVocabulary(lang);
-    // The basement's legend words ride the same vocabulary (O-188).
-    basementWords = namesMap.vocabulary ? { bookmark: namesMap.vocabulary.bookmark || null, landmark: namesMap.vocabulary.landmark || null, and: namesMap.vocabulary.and || null } : null;
+    // THE ROOM'S OWN WORDS FOLLOW THE PHONE, NOT THE EDITION (O-282, Howell
+    // 2026-11-09, with the Greek up: "all of the oft-quoted verses all switch
+    // to Greek names ... switching a language or an edition within the corpus
+    // should only affect the labels and the verse displayed in the details
+    // sector. It should not affect watermarks"). The watermarks and the word
+    // beside the lens are the room's signage, not part of any edition — like
+    // the sideways page's labels — so they are read from the kit of the
+    // phone's own tongue (O-176's bridge), whole, and from the English kit
+    // where the phone's tongue has none or its kit lacks the pair. The seats'
+    // NAMES stay the edition's: a kept seat says the edition it was kept in,
+    // an oft-quoted seat says the page it will open. They rode the edition's
+    // vocabulary from O-188 until tonight.
+    const roomKit = (() => {
+      const kits = translationsMeta?.names || {};
+      const phone = firstOfferedLanguage(phoneLanguages(), Object.keys(kits));
+      const own = phone ? kits[phone]?.vocabulary : null;
+      return own?.bookmark && own?.landmark ? own : (kits.english?.vocabulary || null);
+    })();
+    basementWords = roomKit ? { bookmark: roomKit.bookmark || null, landmark: roomKit.landmark || null, and: roomKit.and || null, bookmarkVerb: roomKit.bookmark_verb || null, discard: roomKit.discard || null } : null;
     return namesMap;
   };
   refreshNamesMap();
@@ -4692,7 +4789,6 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchCorpusEntries = [];
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
-  bookmarkPrompt = root?.display_config?.bookmark_prompt || null;
   reviewMarkWords = root?.display_config?.review_mark || null;
   copyrightWords = root?.display_config?.copyright_notice || null;
   landscapeRoot = root || null;
@@ -4773,6 +4869,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
+  seatAtShelf = typeof handlerSet.seatAtShelf === 'function' ? handlerSet.seatAtShelf : () => false;
   seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
   seatPlace = typeof handlerSet.seatPlace === 'function' ? handlerSet.seatPlace : () => null;
   hitSeats = typeof handlerSet.hitSeats === 'function' ? handlerSet.hitSeats : () => [];
@@ -5244,7 +5341,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   previewPrimary = preview => {
     if (!preview) return;
     const edition = preview.edition;
-    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition)) {
+    // An edition that is elsewhere (O-284) has nothing to show here either:
+    // the committed reading stays, as for a hollow placeholder.
+    if (!edition || edition === dimensionBridge.comingSoonKey || dimensionBridge.isComing?.(edition) || dimensionBridge.isElsewhere?.(edition)) {
       // NOTHING TO PREVIEW, SO THE COMMITTED READING COMES BACK (O-208,
       // Howell's photograph the evening the hollow tongues first stood on
       // the ring: the Greek New Testament's books wearing their raw ids

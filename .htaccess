@@ -75,3 +75,10 @@
     Header set X-Robots-Tag "noindex"
   </FilesMatch>
 </IfModule>
+
+# THE MANIFEST'S OWN TYPE (O-285): the host served .webmanifest as octet-stream.
+AddType application/manifest+json .webmanifest
+
+# THE FACES' OWN TYPE (O-286): the page's typefaces are served from
+# assets/fonts/google/; a host without the type registered sends octet-stream.
+AddType font/woff2 .woff2

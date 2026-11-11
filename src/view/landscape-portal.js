@@ -65,6 +65,29 @@ export function telHref(number) {
   const digits = s.replace(/[^0-9]/g, '');
   return digits ? `tel:${s.startsWith('+') ? '+' : ''}${digits}` : null;
 }
+/**
+ * An sms: link from a written number (Howell 2026-11-10: the scripture volume's number
+ * is for text messages, "not dial a phone number, but rather send an SMS"),
+ * with the message begun when there is a `body` — the reader's place, as the
+ * correction email's subject is. `?body=` is what both phones' messaging
+ * apps read.
+ */
+export function smsHref(number, body = null) {
+  const tel = telHref(number);
+  if (!tel) return null;
+  const b = typeof body === 'string' ? body.trim() : '';
+  return b ? `sms:${tel.slice(4)}?body=${encodeURIComponent(b)}` : `sms:${tel.slice(4)}`;
+}
+/**
+ * A WhatsApp chat link for a written number: wa.me takes the number in
+ * international form without the plus, and `text` begins the message.
+ */
+export function whatsappHref(number, text = null) {
+  const digits = String(number || '').replace(/[^0-9]/g, '');
+  if (!digits) return null;
+  const t = typeof text === 'string' ? text.trim() : '';
+  return t ? `https://wa.me/${digits}?text=${encodeURIComponent(t)}` : `https://wa.me/${digits}`;
+}
 
 function pick(table, lang) {
   if (!table) return null;
@@ -105,8 +128,12 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *   hint     false — no turn-it-upright line
  *   emblem   { image } — the volume's mark, centred and large, above the name
  *   about    the name of the volume's word table saying what it is
- *   phone    { number } — a telephone beside the mail words (the volume's
- *            own number, under display_config.landscape.phone, wins)
+ *   phone    { number, link?, subject?, whatsapp? } — a telephone beside the
+ *            mail words (the volume's own entry, under
+ *            display_config.landscape.phone, wins whole); `link: 'sms'`
+ *            opens a text message instead of a call, `subject: true` begins
+ *            it with the reader's place, `whatsapp: true` adds the word
+ *            WhatsApp as a chat link on the same number
  *   titleOneLine  true — the card's name on one line
  *   aboutCorner   true — the about line in the upper left corner, in capitals
  *   place    the name of the volume's word table saying where the house is,
@@ -146,10 +173,27 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   // The telephone sits beside the mail words, written as the volume writes
   // it. The number is the corpus's (display_config.landscape.phone), so it
   // travels only with the private data and reaches the public tree never;
-  // nothing is drawn until one is set.
-  const phoneRaw = typeof words?.phone?.number === 'string' ? words.phone.number : decl.phone?.number;
-  const phoneText = typeof phoneRaw === 'string' ? phoneRaw.trim() : '';
-  const phone = phoneText && telHref(phoneText) ? { href: telHref(phoneText), text: phoneText } : null;
+  // nothing is drawn until one is set. The volume's entry wins whole — the
+  // number and how its link behaves.
+  const ph = words?.phone && typeof words.phone === 'object' ? words.phone
+    : (decl.phone && typeof decl.phone === 'object' ? decl.phone : null);
+  const phoneText = typeof ph?.number === 'string' ? ph.number.trim() : '';
+  // `link: 'sms'` — the number opens a text message, not a call (Howell
+  // 2026-11-10, moving the number from the company's page to the scripture volume's:
+  // "the link to not dial a phone number, but rather send an SMS"); with
+  // `subject: true` the message opens with the reader's place written in,
+  // as the correction email does.
+  const sms = ph?.link === 'sms';
+  const phoneBody = ph?.subject === true ? subject : null;
+  const phoneHref = phoneText ? (sms ? smsHref(phoneText, phoneBody) : telHref(phoneText)) : null;
+  const phone = phoneHref ? { href: phoneHref, text: phoneText, kind: sms ? 'sms' : 'tel' } : null;
+  // `whatsapp: true` — the same number answers on WhatsApp (Howell
+  // 2026-11-10: "More people communicate with WhatsApp than by email"),
+  // drawn as the word WhatsApp under the number, a link that opens a chat
+  // with the house. Nothing is drawn until the volume says the account
+  // exists.
+  const whatsappUrl = phoneText && ph?.whatsapp === true ? whatsappHref(phoneText, phoneBody) : null;
+  const whatsapp = whatsappUrl ? { href: whatsappUrl, text: 'WhatsApp' } : null;
   let link = null;
   if (decl.link && decl.link.volume) {
     const href = crossLinkHref(decl.link.volume, decl.link.href, loc, table);
@@ -184,6 +228,7 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     mailsAs: asWords ? 'words' : 'addresses',
     mails,
     phone,
+    whatsapp,
     about: typeof about === 'string' && about.trim() ? about.trim() : null,
     // `aboutCorner`: the line sits in the upper left corner, in capitals,
     // instead of under the name (Howell 2026-11-02, drawn on his screenshot).
@@ -223,6 +268,13 @@ function make(doc, tag, className, text) {
 export function renderLandscapePortal(sheet, record, doc = (typeof document !== 'undefined' ? document : null)) {
   if (!sheet || !record || !doc) return false;
   while (sheet.firstChild) sheet.removeChild(sheet.firstChild);
+  // THE SHEET'S VISIBILITY GOES BACK TO CSS (Howell 2026-11-10, a photograph
+  // of the company's page booted sideways: the town cut off at the top, the
+  // crown enormous and dark, nothing in capitals — the sheet shown by an
+  // inline `display` the reboot's cover had set, so the media query's dress
+  // never reached the page that was then drawn into it). A page drawn here
+  // is shown by the query alone, in the query's dress.
+  if (sheet.style && typeof sheet.style === 'object') sheet.style.display = '';
   sheet.setAttribute('dir', record.dir);
   sheet.setAttribute('data-volume', record.volume);
   // The sheet was a picture of a turning phone, hidden from assistive
@@ -260,7 +312,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   if (record.about) (corner || body).appendChild(make(doc, 'p', record.aboutCorner ? 'portal-about portal-about--corner' : 'portal-about', record.about));
   if (record.place) (corner || body).appendChild(make(doc, 'p', 'portal-place', record.place));
   if (corner && corner.children.length) page.appendChild(corner);
-  if (record.mails.length || record.phone) {
+  if (record.mails.length || record.phone || record.whatsapp) {
     // Words sit in one row; addresses with purposes are two aligned columns
     // (purpose, address) so the gutter runs straight; bare addresses are
     // simply centred.
@@ -280,6 +332,14 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       const a = make(doc, 'a', 'portal-mail-address', record.phone.text);
       a.setAttribute('href', record.phone.href);
       // A number reads left to right in every tongue.
+      a.setAttribute('dir', 'ltr');
+      row.appendChild(a);
+      list.appendChild(row);
+    }
+    if (record.whatsapp) {
+      const row = make(doc, 'p', 'portal-mail portal-whatsapp');
+      const a = make(doc, 'a', 'portal-mail-address', record.whatsapp.text);
+      a.setAttribute('href', record.whatsapp.href);
       a.setAttribute('dir', 'ltr');
       row.appendChild(a);
       list.appendChild(row);

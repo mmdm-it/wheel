@@ -575,8 +575,10 @@ svg :focus-visible {
   pointer-events: none;
   user-select: none;
   /* The globe's line-work rides currentColor — dark grey, not ink: present
-     when sought, quiet when not (Howell 2026-07-22, tuned by eye). */
-  color: #363636;
+     when sought, quiet when not (Howell 2026-07-22, tuned by eye). In the
+     basement it takes the room's ink (O-278): the basement light sets
+     --color-globe with the depth and removes it on the floors above. */
+  color: var(--color-globe, #363636);
 }
 #search-button:hover { opacity: 1; }
 /* THE GLOBE HAS ONE BRIGHTNESS, AND A FAINT ONE (Howell 2026-09-30: "I really
@@ -675,24 +677,6 @@ svg :focus-visible {
    and brighten to full while a stratum was open. Neither now — see the
    brightness rule beside its base rule above. */
 #dimension-button.is-sliding { transition: opacity 0.15s ease; }
-/* THE PHRASE beside the globe while the thumb is held in the overrun
-   (O-128): the volume's own words, in the reader's tongue. */
-#bookmark-hint {
-  position: fixed;
-  transform: translateY(-50%);
-  max-width: 60vw;
-  text-align: right;
-  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
-  font-weight: 700;
-  font-size: clamp(14px, 2.2vmin, 22px);
-  letter-spacing: 0.06em;
-  color: var(--color-text, #000);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  pointer-events: none;
-  z-index: 261;
-}
-#bookmark-hint.is-showing { opacity: 1; }
 /* The thumb's springback out of the overrun: eased, a touch longer than the
    snap between stops — the Focus Ring's own feel. */
 #dimension-button { transition: opacity 0.15s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1); }
@@ -702,7 +686,16 @@ svg :focus-visible {
 .secondary-strata-node.is-coming { fill: none; stroke: var(--color-orbital); stroke-width: 1.5; }
 /* O-231: an UNCLEARED edition — in the corpus, not yet ours to serve; LAN only, under ?uncleared=true */
 .secondary-strata-node.is-uncleared { fill: #e3170a; stroke: #e3170a; }
-.secondary-strata-node.is-coming + .secondary-strata-label { opacity: 0.62; }
+/* The name wears the seat's class as the disc does — the names stand in a
+   group of their own after every disc (O-289), no longer the disc's next
+   sibling. */
+.secondary-strata-label.is-coming { opacity: 0.62; }
+/* AN EDITION THAT IS ELSEWHERE (O-284): real and servable, not holding the
+   verse under the reader — hollow like a placeholder, a door and not a page;
+   its name at full strength, because it can be chosen, and choosing it leads
+   to that edition's shelf. On the language ring, a tongue whose every edition
+   is elsewhere wears the same. */
+.secondary-strata-node.is-elsewhere { fill: none; stroke: var(--color-orbital); stroke-width: 1.5; }
 /* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
    with, not yet kept: hollow, so keeping it visibly fills it. */
 .secondary-strata-node.is-provisional { fill: none; stroke: var(--color-orbital); stroke-width: 2; }
@@ -754,18 +747,21 @@ svg :focus-visible {
    (O-277, Howell 2026-11-08: "Much larger letters, as big as they can be and
    still fit on the page ... Similar to the way we did language watermarks"
    in the other volume): the view sizes each word to the stretch of its arc
-   the glass shows and draws it under the band and the names; this is its
-   faintness — that volume's watermark stands at a twentieth, search's at a
-   tenth, and this one, black on a ground half way to black, nearer a fifth.
-   The font-size here is
-   the fallback for a word the view did not measure. */
+   the glass shows and draws it under the band and the names; its faintness
+   is the band's own tone (below). The font-size here is the fallback for a
+   word the view did not measure. */
 .secondary-strata-legend {
-  fill: var(--color-text);
+  /* THE WATERMARK'S TONE IS THE BAND'S (O-278, Howell 2026-11-09: "Perhaps
+     the focus ring band should be the same color as the watermarks"). The
+     basement light computes the band as the theme's ink laid on the deep
+     ground at the watermark's faintness, and the words are painted in that
+     very colour, opaque — the same by construction. Upstairs no legend is
+     drawn, so the fallback is only for a sheet without a theme. */
+  fill: var(--color-band, var(--color-text));
   font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
   font-size: calc(22px * var(--iframe-scale, 1));
   font-weight: 700;
   letter-spacing: 0.08em;
-  opacity: var(--basement-watermark-opacity, 0.18);
   pointer-events: none;
 }
 .stratum-legend-arc { fill: none; stroke: none; }
@@ -816,6 +812,47 @@ svg :focus-visible {
 .secondary-strata-label.is-magnified {
   font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
   font-weight: 400;
+}
+/* THE WORD BESIDE THE LENS (O-280, Howell 2026-11-09, his screenshots:
+   BOOKMARK or DISCARD drawn upright in the open ground right of the lens):
+   the one upright text on the basement's glass, in the lens label's size,
+   bold, the room's ink. The view places it at the lens's height and hides
+   it while the ring turns; a tap on it is a tap on the lens (the host's
+   lensHit). AND IT WEARS THE PARENT LABEL'S HALO (Howell, DISCARD running
+   through the name of the seat above the lens: "I'd rather create a halo
+   around the discard or bookmark label, the same way we put a halo around
+   the parent button label"): the O-233 halo, so a name passing beneath is
+   dimmed where it meets the word and nowhere else.
+   THE HALO IS A MASK ON THE NAMES, NOT PAINT ON THE WORD (O-289, Howell
+   2026-11-10, the word standing in the arc of its own watermark: "That
+   watermark should not be affected by the halo. The halo around the
+   bookmark label exists only to prevent a collision with adjacent bookmark
+   labels"). A stroke in the ground's colour on the word covered whatever
+   lay under it — the watermark, the band, a disc. Now the word itself has
+   no stroke: the view draws it once more, as a <use>, into a luminance mask
+   the names' groups wear — see .caption-halo-cut below, where the copy's
+   letters and stroke turn black. The knobs are the parent label's. */
+.secondary-strata-caption {
+  fill: var(--caption-ink, var(--color-text));
+  font-family: var(--focus-node-font, 'Montserrat'), sans-serif;
+  font-size: clamp(calc(21px * var(--iframe-scale, 1)), 2.4vmin, calc(39px * var(--iframe-scale, 1)));
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  paint-order: stroke fill;
+  stroke: #000;
+  stroke-opacity: var(--caption-halo-opacity, 0);
+  stroke-width: var(--parent-halo-width, 0.6em);
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+/* THE WORD'S COPY IN THE MASK (O-289): black letters, and the black stroke
+   at the halo's opacity over the mask's white — so a name under the stroke
+   shows through at the remainder (dimmed, not hidden, as O-233 asked) and
+   nothing under the letters themselves, where the word's own ink lies. The
+   copy inherits these from its <use>; the word on the glass never sees them. */
+.caption-halo-cut {
+  --caption-ink: #000;
+  --caption-halo-opacity: var(--parent-halo-opacity, 0.85);
 }
 
 .focus-ring-band {

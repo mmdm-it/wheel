@@ -1249,6 +1249,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (bookRank < 0 && book) bookRank = Number.isFinite(book.order) ? book.order : shelf.indexOf(book);
     const label = String(item.name ?? '');
     const m = /^(\d+)([a-z]*)$/.exec(label);
+    // The declaration's order, as a floor: the host re-ranks every placed
+    // seat's edition by the language ring and the edition ring (O-283),
+    // since the declaration's list is one no reader ever sees.
     const editionRank = (volume.editions || []).findIndex(e => (e?.code ?? e) === edition);
     // The host's store speaks no volume vocabulary (O-43): the place is a
     // rank per level, widest first — [book, chapter, verse] here.
@@ -1476,6 +1479,30 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // with no migration — the caller wants it unseen. The contexts the OUT
     // gesture needs are taken from the item itself. False when this edition
     // does not seat the leaf, and the ring stays as it was.
+    // THE SHELF (O-284, Howell 2026-11-09): the volume's top ring — its
+    // divisions in the committed edition — set with no migration, landing on
+    // the first. The host calls it before committing a hollow edition chosen
+    // at a place that edition does not hold; the edition change's reseat
+    // then refills the ring with the new edition's divisions (O-95), so the
+    // reader arrives at that edition's shelf and never at a verse it lacks.
+    seatAtShelf: app => {
+      if (!app?.setPrimaryItems) return false;
+      const edition = options?.activeEdition || options?.translation || null;
+      const { items } = buildBibleTestaments(manifest, namesMap, { translationName, edition });
+      if (!items.length) return false;
+      // The level travels with the ring (the bench, 2026-11-09: the ring
+      // stood at the divisions with the sky empty, because the pyramid asks
+      // the MODE which level it draws for, and the mode still said verse).
+      bibleMode = 'testament';
+      bibleVerseContext = null;
+      bibleChapterContext = null;
+      verseChainItems = null;
+      verseChainEdition = null;
+      chapterChainItems = null;
+      app.setPrimaryItems(items, 0, true);
+      if (app?.setParentButtons) app.setParentButtons({ showOuter: hasRoot });
+      return true;
+    },
     seatAtLeaf: (leaf, app) => {
       if (!leaf || !app?.setPrimaryItems) return false;
       const edition = options?.activeEdition || options?.translation || null;

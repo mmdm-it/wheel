@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { installBrowserGlobals } from './helpers/browser-globals.mjs';
 import { getViewportInfo } from '../src/geometry/focus-ring-geometry.js';
-import { basementGround, basementBand, setBasementDepth } from '../src/view/basement-light.js';
+import { basementGround, basementPalette, setBasementDepth } from '../src/view/basement-light.js';
 import { legendLines } from '../src/view/secondary-strata-view.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -31,22 +31,53 @@ test('the depth paints the root\'s inline ground — the one the theme paints �
   const root = { style: (() => { const s = {}; Object.defineProperties(s, {
     setProperty: { value(n, v) { s[n] = v; } }, getPropertyValue: { value(n) { return s[n] ?? ''; } }, removeProperty: { value(n) { delete s[n]; } } }); return s; })() };
   root.style.setProperty('--theme-color-bg', '#d9a877');
-  root.style.setProperty('--theme-color-band', '#8b6f47');
+  root.style.setProperty('--theme-color-band', '#6c5339');
+  root.style.setProperty('--theme-color-text', '#2a1a0f');
   root.style.setProperty('--theme-color-orbital', '#8b6f47');
   root.style.setProperty('--theme-color-node', '#8b6f47');
   root.style.backgroundColor = '#d9a877';   // as applyTheme paints it
   setBasementDepth(1, root);
   assert.equal(root.style.backgroundColor, basementGround('#d9a877', 1));
   for (const v of ['--color-bg', '--color-orbital', '--color-nodes']) assert.equal(root.style[v], undefined, `${v} untouched: the seats are the theme's own, and the sideways page reads --color-bg`);
-  // The band goes darker than the ground it crosses, to stand against it.
-  assert.equal(root.style['--color-band'], basementBand('#8b6f47', 1));
+  const theme = { bg: '#d9a877', band: '#6c5339', text: '#2a1a0f' };
+  const deep = basementPalette(theme, 1);
   const lum = c => c.match(/\d+/g).map(Number).reduce((a, v, i) => a + v * [0.2126, 0.7152, 0.0722][i], 0);
-  assert.ok(lum(root.style['--color-band']) < 0.6 * lum(root.style.backgroundColor), `the band well darker than the ground (${root.style['--color-band']} on ${root.style.backgroundColor})`);
-  setBasementDepth(0.25, root);
-  assert.equal(root.style.backgroundColor, basementGround('#d9a877', 0.25));
+  // THE BAND IS THE WATERMARK'S TONE (O-278): the theme's ink on the deep ground at the watermark's faintness — a little darker than the ground, not nearly black.
+  assert.equal(root.style['--color-band'], deep.band);
+  const bandRatio = lum(deep.band) / lum(root.style.backgroundColor);
+  assert.ok(bandRatio > 0.75 && bandRatio < 0.95, `the band a quiet shade under the ground (${bandRatio.toFixed(3)})`);
+  const ground = root.style.backgroundColor.match(/\d+/g).map(Number);
+  const wm = ground.map((g, i) => Math.round(g + ([42, 26, 15][i] - g) * 0.18));
+  assert.equal(deep.band, `rgb(${wm.join(', ')})`, 'exactly the ink at 0.18 over the ground');
+  // THE INK INVERTS: the names and the globe take the tan the floors above are painted with; the on-seat lettering keeps the theme's ink.
+  assert.equal(root.style['--color-text'], 'rgb(217, 168, 119)');
+  assert.equal(root.style['--color-globe'], 'rgb(217, 168, 119)');
+  assert.equal(root.style['--color-orbital-label'], '#2a1a0f');
+  assert.equal(root.style['--color-ground'], undefined, 'no ground variable: the halo on the word beside the lens is a mask now (O-289), not paint');
+  assert.ok(lum(root.style['--color-text']) / lum(root.style.backgroundColor) > 1.9, 'the names stand well off the ground');
+  // Halfway: every value between its theme and its basement, so the glide is continuous at both ends.
+  setBasementDepth(0.5, root);
+  assert.equal(root.style.backgroundColor, basementGround('#d9a877', 0.5));
+  const mid = basementPalette(theme, 0.5);
+  assert.equal(root.style['--color-band'], mid.band);
+  assert.ok(lum(mid.band) > lum(deep.band) && lum(mid.band) < lum('rgb(108, 83, 57)'));
+  assert.ok(lum(mid.ink) > lum('rgb(42, 26, 15)') && lum(mid.ink) < lum('rgb(217, 168, 119)'));
+  assert.equal(basementPalette(theme, 0).band, 'rgb(108, 83, 57)', 'the theme\'s own band at depth 0');
   setBasementDepth(0, root);
   assert.equal(root.style.backgroundColor, 'rgb(217, 168, 119)', 'the theme\'s own colour painted back');
-  assert.equal(root.style['--color-band'], undefined, 'the band is the theme\'s own again');
+  for (const v of ['--color-band', '--color-text', '--color-orbital-label', '--color-globe', '--color-ground']) assert.equal(root.style[v], undefined, `${v} is the theme's own again`);
+  // A theme without a band or text still gets its ground, and nothing else is painted.
+  const bare = basementPalette({ bg: '#d9a877' }, 1);
+  assert.ok(bare.ground && !bare.band && !bare.ink);
+});
+
+test('the room\'s words follow the phone\'s tongue, whole, with English where it has none (O-282)', () => {
+  const main = read('src/main.js');
+  const block = main.slice(main.indexOf('const roomKit = (() => {'), main.indexOf('basementWords = roomKit ?'));
+  assert.match(block, /firstOfferedLanguage\(phoneLanguages\(\), Object\.keys\(kits\)\)/, 'the phone\'s first tongue the volume has a kit for');
+  assert.match(block, /return own\?\.bookmark && own\?\.landmark \? own : \(kits\.english\?\.vocabulary \|\| null\);/, 'the whole kit, or English');
+  assert.match(main, /basementWords = roomKit \? \{ bookmark: roomKit\.bookmark \|\| null, landmark: roomKit\.landmark \|\| null, and: roomKit\.and \|\| null, bookmarkVerb: roomKit\.bookmark_verb \|\| null, discard: roomKit\.discard \|\| null \} : null;/);
+  assert.ok(!/basementWords = namesMap\.vocabulary/.test(main), 'no longer the edition\'s vocabulary');
 });
 
 test('the host hands the glide the floor\'s dissolve and the settle the floor it stands on', () => {
@@ -60,7 +91,7 @@ test('the host leads the bookmarks word with the tongue\'s "and", the ampersand 
   const main = read('src/main.js');
   assert.match(main, /const BASEMENT_AND = '&';/);
   assert.match(main, /\[MARK_BOOKMARK, basementWords\.bookmark \? `\$\{basementWords\.and \|\| BASEMENT_AND\} \$\{basementWords\.bookmark\}` : null, 1\]/);
-  assert.match(main, /and: namesMap\.vocabulary\.and \|\| null/);
+  assert.match(main, /and: roomKit\.and \|\| null/, 'from the phone\'s kit (O-282)');
 });
 
 test('a word breaks at its spaces and after its hyphens', () => {
@@ -114,9 +145,11 @@ test('each word fills the visible stretch of its arc, is sized by the view, and 
   assert.equal(visibleArc(5000, 5000, 10, 411, 802), null);
 });
 
-test('the sheet makes the words faint and leaves their size to the view', () => {
+test('the sheet paints the words in the band\'s own tone, leaves their size to the view, and lets the globe take the room\'s ink', () => {
   const css = read('styles/base.css');
   const rule = css.match(/\.secondary-strata-legend\s*\{([^}]*)\}/)[1];
-  assert.match(rule, /opacity:\s*var\(--basement-watermark-opacity,\s*0?\.[12]\d?\)/);
+  assert.match(rule, /fill:\s*var\(--color-band\b/, 'the watermark is the band\'s colour by construction');
+  assert.doesNotMatch(rule, /opacity:/, 'opaque: its faintness is the band\'s tone, not a translucency');
   assert.doesNotMatch(rule, /clamp\(/, 'no clamp: the view measures the glass');
+  assert.match(css, /#dimension-button svg,\s*#search-button svg\s*\{[^}]*color:\s*var\(--color-globe,\s*#363636\)/, 'the globe reads --color-globe');
 });

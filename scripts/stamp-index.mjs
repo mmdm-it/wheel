@@ -14,6 +14,6 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const version = JSON.parse(readFileSync(path.join(root, 'package.json'), 'utf8')).version;
 const file = path.join(root, 'index.html');
 const before = readFileSync(file, 'utf8');
-const after = before.replace(/href="\.\/styles\/(theme-tokens|base)\.css(?:\?v=[^"]*)?"/g, (_, name) => `href="./styles/${name}.css?v=${encodeURIComponent(version)}"`);
+const after = before.replace(/href="\.\/styles\/(theme-tokens|base|fonts)\.css(?:\?v=[^"]*)?"/g, (_, name) => `href="./styles/${name}.css?v=${encodeURIComponent(version)}"`);
 if (after !== before) { writeFileSync(file, after); console.log(`stamp-index: stylesheets stamped v${version}`); }
 else console.log(`stamp-index: already v${version}`);

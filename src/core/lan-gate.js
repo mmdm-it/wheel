@@ -75,17 +75,18 @@ export function isOnLan(loc = (typeof window !== 'undefined' ? window.location :
 // named for what it does: `proofreadOverrideActive`, `includeUnconfirmed`.
 // THE SCREENING ROOM IS THE LAN (O-137, Howell 2026-09-15: "everything we
 // see on the local network, we should be able to see on the screening room
-// server"). Three sites are online: the ARCHIVAL BACKUP at the root of its
-// server, never touched again; THE SCREENING ROOM, a directory on that same
-// server, for friends and family; and LEICESTER SQUARE, the launch site, for
-// strangers. The room is the bench reached over the internet: the flag, the
+// server"). Three sites are online: the other volume's public door at the root of
+// its server (the archival site stood there until 2026-11-10, O-211); THE
+// SCREENING ROOM, a directory on that same server, for friends and family;
+// and LEICESTER SQUARE, the launch site, for strangers. The room is
+// the bench reached over the internet: the flag, the
 // deep links and the driver's shortcuts work there exactly as on the LAN,
 // and without the flag it shows what a reader sees. It serves the same tree
 // the LAN serves — what may not be on a public server is not on the bench
 // either (the corpus withholds it, W-266) — so nothing here is a hole.
 //
 // The room is named by hostname AND path, because it shares a server with
-// the backup: the root of that server is not the room. A hostname that
+// the other volume's public door: the root of that server is not the room. A hostname that
 // merely ends like the room's is not the room either — the same false-yes
 // the private-range test above refuses. THE NAMES COME FROM THE HOST: this
 // file is engine core and names no site (as proofreadDeepLink names no

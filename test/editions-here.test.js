@@ -17,6 +17,12 @@
 // halves separately AND test that the strings one produces are the strings the
 // other consumes — the seam is where a defect of this kind would live.
 //
+// AMENDED UNDER O-284 (Howell 2026-11-09): the rule above now governs the
+// FILLED seats. An edition that is real and does not hold the place stands
+// on the ring HOLLOW — a door to its shelf, never a page — and a tongue whose
+// every edition is elsewhere stands hollow on the language ring. So "offered"
+// below means filled: on the ring and readable here.
+//
 // NULL IS NOT THE EMPTY ARRAY. Null means no restriction (the root); an empty
 // array would mean the reader is somewhere no edition reaches. Confusing them
 // empties the language ring at the root, which is the same failure O-71's
@@ -96,6 +102,9 @@ const makeBridge = () => {
   return createDimensionBridge({ store, translationsMeta: { translations: TRANSLATIONS } });
 };
 
+const filled = bridge => bridge.languagesAvailable().filter(id => !bridge.isElsewhereLanguage(id)).sort();
+const hollow = bridge => bridge.languagesAvailable().filter(id => bridge.isElsewhereLanguage(id)).sort();
+
 describe('the chooser offers the editions that hold where you stand', () => {
   it('AT ROOT EVERY LANGUAGE IS OFFERED — null is no restriction', () => {
     const bridge = makeBridge();
@@ -103,24 +112,27 @@ describe('the chooser offers the editions that hold where you stand', () => {
     assert.deepEqual(bridge.languagesAvailable().sort(), ['greek', 'hebrew', 'latin']);
   });
 
-  it('IN THE FIRST BOOK THE HEBREW IS OFFERED AND THE GREEK IS NOT', () => {
+  it('IN THE FIRST BOOK THE HEBREW IS OFFERED AND THE GREEK IS NOT — the Greek stands hollow (O-284)', () => {
     const bridge = makeBridge();
     bridge.setEditionsHere(['LAT', 'HEB']);
-    assert.deepEqual(bridge.languagesAvailable().sort(), ['hebrew', 'latin']);
+    assert.deepEqual(filled(bridge), ['hebrew', 'latin']);
+    assert.deepEqual(hollow(bridge), ['greek'], 'on the ring, hollow: a door to its shelf');
   });
 
-  it('IN THE SECOND THE GREEK IS OFFERED AND THE HEBREW IS NOT', () => {
+  it('IN THE SECOND THE GREEK IS OFFERED AND THE HEBREW IS NOT — the Hebrew stands hollow (O-284)', () => {
     const bridge = makeBridge();
     bridge.setEditionsHere(['LAT', 'GRC']);
-    assert.deepEqual(bridge.languagesAvailable().sort(), ['greek', 'latin']);
+    assert.deepEqual(filled(bridge), ['greek', 'latin']);
+    assert.deepEqual(hollow(bridge), ['hebrew']);
   });
 
   it('the EDITION plane is filtered by the same answer, not just the language ring', () => {
     const bridge = makeBridge();
     bridge.setEditionsHere(['LAT']);
-    assert.deepEqual(bridge.translationsOf('hebrew'), [bridge.comingSoonKey],
-      'a language with no edition here has nothing on its shelf');
+    assert.deepEqual(bridge.translationsOf('hebrew'), ['HEB'], 'a language with no edition here shows its edition hollow (O-284)');
+    assert.equal(bridge.isElsewhere('HEB'), true);
     assert.deepEqual(bridge.translationsOf('latin'), ['LAT']);
+    assert.equal(bridge.isElsewhere('LAT'), false, 'filled');
   });
 
   it('AN EDITION THAT IS NOT HERE CANNOT BE COMMITTED, even if asked directly', () => {
@@ -134,8 +146,9 @@ describe('the chooser offers the editions that hold where you stand', () => {
   it('AN EMPTY LIST IS A MEASUREMENT; NULL IS THE ABSENCE OF ONE', () => {
     const bridge = makeBridge();
     bridge.setEditionsHere([]);
-    assert.deepEqual(bridge.languagesAvailable(), [],
+    assert.deepEqual(filled(bridge), [],
       'nowhere reaches here — honest, and different from the root');
+    assert.deepEqual(hollow(bridge), ['greek', 'hebrew', 'latin'], 'every tongue a door, none a page (O-284)');
     bridge.setEditionsHere(null);
     assert.equal(bridge.languagesAvailable().length, 3,
       'and null restores everything rather than sticking at empty');
@@ -232,7 +245,7 @@ describe('the adapter answers where the reader is standing', () => {
     });
     const bridge = makeBridge();
     bridge.setEditionsHere(codes);
-    assert.deepEqual(bridge.languagesAvailable().sort(), ['greek', 'latin'],
+    assert.deepEqual(filled(bridge), ['greek', 'latin'],
       'edition CODES on one side, edition KEYS on the other — if those ever '
       + 'stop being the same string the ring empties and both halves stay green');
   });

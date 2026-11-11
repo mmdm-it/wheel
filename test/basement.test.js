@@ -118,13 +118,29 @@ describe('the slider and the basement (O-126)', () => {
     D.slide(0); await settle();
   });
 
-  it('the hold in the overrun keeps nothing from the front door — no verse in hand', async () => {
+  it('the slider has no hold and no overrun (O-280): the globe trucks, and keeping is the lens\'s alone', async () => {
     D.slide(-1); await settle();
     assert.equal(D.front(), -1);
-    D.holdBegin();
-    assert.equal(D.hold(), null, 'nothing came down with the reader, so there is nothing to keep');
-    D.holdCancel();
-    assert.equal(D.hold(), null);
+    assert.equal(D.holdBegin, undefined, 'the hold in the overrun is retired');
+    assert.equal(D.hold, undefined);
+    D.scrub(-1.4); await settle();
+    assert.equal(D.front(), -1, 'pulled past the basement the thumb stops at the basement');
+  });
+
+  it('from the text a double tap on the globe goes down to the basement, a single tap waits and then goes up (O-281)', async () => {
+    D.slide(0); await settle();
+    assert.equal(D.front(), 0);
+    D.tap(); D.tap();
+    await settle(950);   // the held tap's window would have climbed by now; the second tap went down instead
+    assert.equal(D.front(), -1, 'the double tap is the way down');
+    D.tap(); await settle();
+    assert.equal(D.front(), 0, 'from the basement a tap returns to the text at once');
+    D.tap();
+    await settle(100);
+    assert.equal(D.front(), 0, 'a single tap from the text is held back');
+    await settle(950);
+    assert.equal(D.front(), D.max?.() ?? 2, 'and then climbs to the top as before');
+    D.slide(0); await settle();
   });
 
   it('the tap never goes down into the basement, and from the basement it returns to the text (O-182)', async () => {

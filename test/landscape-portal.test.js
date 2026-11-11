@@ -4,7 +4,7 @@
 // reading tongue. These tests hold the model and where the door leads.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref } from '../src/view/landscape-portal.js';
+import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref } from '../src/view/landscape-portal.js';
 import { firstOfferedLanguage } from '../src/core/tongue.js';
 import { doorHref } from '../src/core/lan-gate.js';
 import { volumeConfigs, VENUES } from '../src/volume-configs.js';
@@ -102,7 +102,8 @@ describe('landscape portal — the calendar’s page', () => {
   it('takes the telephone from the volume’s own words before the engine’s config', () => {
     const root = { display_config: { ...CALENDAR_ROOT.display_config, landscape: { ...CALENDAR_ROOT.display_config.landscape, phone: { number: '+39 071 111 222' } } } };
     const r = portalRecord({ volume: 'calendar', config, root, lang: 'italian', loc: MMDM_ROOT, table: VENUES });
-    assert.deepEqual(r.phone, { href: 'tel:+39071111222', text: '+39 071 111 222' });
+    assert.deepEqual(r.phone, { href: 'tel:+39071111222', text: '+39 071 111 222', kind: 'tel' });
+    assert.equal(r.whatsapp, null, 'no WhatsApp link until the volume says the account exists');
     assert.deepEqual(landscapeTongues(root).sort(), ['english', 'italian'], 'the number is not a tongue');
   });
 
@@ -110,6 +111,25 @@ describe('landscape portal — the calendar’s page', () => {
     assert.equal(telHref('+39 071 123 4567'), 'tel:+390711234567');
     assert.equal(telHref('071-123'), 'tel:071123');
     assert.equal(telHref(''), null);
+  });
+
+  // Howell 2026-11-10: the number moves from the company's page to the
+  // Bible's, "the link to not dial a phone number, but rather send an SMS",
+  // and WhatsApp beside it once the account exists.
+  it('the Bible’s number opens a text message begun with the reader’s place, and WhatsApp when the volume says so', () => {
+    const phone = { number: '+39 071 111 222', link: 'sms', subject: true };
+    const root = { display_config: { ...BIBLE_ROOT.display_config, landscape: { ...BIBLE_ROOT.display_config.landscape, phone } } };
+    const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'latin', loc: SQUARE, table: VENUES, subject: 'Douay Genesis 1:1' });
+    assert.deepEqual(r.phone, { href: 'sms:+39071111222?body=Douay%20Genesis%201%3A1', text: '+39 071 111 222', kind: 'sms' });
+    assert.equal(r.whatsapp, null);
+    const r2 = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: { display_config: { ...root.display_config, landscape: { ...root.display_config.landscape, phone: { ...phone, whatsapp: true } } } }, lang: 'latin', loc: SQUARE, table: VENUES, subject: 'Douay Genesis 1:1' });
+    assert.deepEqual(r2.whatsapp, { href: 'https://wa.me/39071111222?text=Douay%20Genesis%201%3A1', text: 'WhatsApp' });
+    const bare = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'latin', loc: SQUARE, table: VENUES, subject: null });
+    assert.equal(bare.phone.href, 'sms:+39071111222', 'no place, no body');
+    assert.equal(smsHref('+39 071 111 222'), 'sms:+39071111222');
+    assert.equal(smsHref(''), null);
+    assert.equal(whatsappHref('+39 071 111 222'), 'https://wa.me/39071111222');
+    assert.equal(whatsappHref(''), null);
   });
 });
 
@@ -249,6 +269,26 @@ describe('landscape portal — the copyright line and the lift', () => {
     assert.equal(last.className, 'portal-copyright');
     assert.equal(last.textContent, line);
     assert.equal(page.children[0].style.transform, 'translateY(-7vmin)');
+  });
+  // Howell 2026-11-10, a photograph of the company's page booted sideways:
+  // the sheet shown by the reboot cover's inline display, so the media
+  // query's dress never reached it. A page drawn into the sheet hands its
+  // visibility back to CSS; and the WhatsApp word sits under the number.
+  it('a page drawn into the sheet clears the inline display, and WhatsApp follows the number', () => {
+    const phone = { number: '+39 071 111 222', link: 'sms', subject: true, whatsapp: true };
+    const root = { display_config: { ...BIBLE_ROOT.display_config, landscape: { ...BIBLE_ROOT.display_config.landscape, phone } } };
+    const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'latin', loc: SQUARE, table: VENUES, subject: 'Douay Genesis 1:1' });
+    const sheet = createMockElement('div');
+    sheet.style.display = 'flex';
+    renderLandscapePortal(sheet, r, doc);
+    assert.equal(sheet.style.display, '', 'the sheet is shown by the media query alone');
+    const body = sheet.children[0].children[0];
+    const list = body.children.find(c => c.className.startsWith('portal-mails'));
+    const rows = list.children.map(c => c.className);
+    assert.deepEqual(rows, ['portal-mail', 'portal-mail', 'portal-mail portal-phone', 'portal-mail portal-whatsapp']);
+    assert.equal(list.children[2].children[0].getAttribute('href'), 'sms:+39071111222?body=Douay%20Genesis%201%3A1');
+    assert.equal(list.children[3].children[0].getAttribute('href'), 'https://wa.me/39071111222?text=Douay%20Genesis%201%3A1');
+    assert.equal(list.children[3].children[0].textContent, 'WhatsApp');
   });
   it('no line without words, and the calendar is not lifted', () => {
     const r = portalRecord({ volume: 'calendar', config: volumeConfigs.calendar, root: CALENDAR_ROOT, loc: MMDM_ROOT, table: VENUES, copyright: '  ' });

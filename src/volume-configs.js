@@ -1010,13 +1010,14 @@ const PROBE_SINK = {
 
 export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE_SINK };
 
-// THE THREE VENUES (O-136, O-137, Howell 2026-09-15): the catalog at the root
-// of mmdm.it, with its Gutenberg gateway, is the ARCHIVAL BACKUP and is not
-// synced again; the wheel-v3 directory on the same server is THE SCREENING
-// ROOM, for friends and family — the LAN bench reached over the internet,
-// serving the same tree; and bibliacatholica.com is LEICESTER SQUARE, for
-// strangers, under the CHECKED gate. This is the one file that may name a
-// site (H1); main.js declares it to lan-gate.
+// THE THREE VENUES (O-136, O-137, Howell 2026-09-15; the root re-let under
+// O-211, 2026-11-10): the root of mmdm.it is the CALENDAR's public door (the
+// archival catalog that stood there until 2026-11-10 lives on in git); the
+// wheel-v3 directory on the same server is THE SCREENING ROOM, for friends
+// and family — the LAN bench reached over the internet, serving the same
+// tree; and bibliacatholica.com is LEICESTER SQUARE, the Bible's public
+// door, for strangers, under the CHECKED gate. This is the one file that may
+// name a site (H1); main.js declares it to lan-gate.
 export const VENUES = {
   screeningRoom: { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/' },
   // THE DOORS (O-211, Howell 2026-10-23): an address that boots one volume,
@@ -1024,12 +1025,14 @@ export const VENUES = {
   // room now; in Leicester Square each volume has a domain of its own, where
   // the path is a bare slash and only the address can choose, so the choice
   // is made here by address rather than by a word in the path. The longest
-  // matching prefix wins. bibliacatholica.com is registered, hosting
-  // pending; the root of mmdm.it joins the table the day the calendar goes
-  // up there and the archival catalog comes down.
+  // matching prefix wins. THE ROOT OF mmdm.it IS THE CALENDAR (O-211; went
+  // up 2026-11-10 on Howell's "I'm ready to go live"): the archival catalog
+  // that stood there came down the same day, and the room's two doors under
+  // /wheel-v3/ are the longer prefixes, so they still win on that host.
   doors: [
     { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/bible/', volume: 'bible' },
     { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/calendar/', volume: 'calendar' },
+    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/', volume: 'calendar' },
     { hosts: ['bibliacatholica.com', 'www.bibliacatholica.com'], pathPrefix: '/', volume: 'bible' }
   ]
 };

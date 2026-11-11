@@ -132,12 +132,15 @@ describe('lan-gate — the doors (O-211)', () => {
     assert.equal(doorVolume(at('MMDM.IT', '/Wheel-V3/Calendar/index.html')), 'calendar', 'case and the page name are no distinction');
     assert.equal(doorVolume(at('bibliacatholica.com', '/')), 'bible', 'Leicester Square: the address alone chooses');
     assert.equal(doorVolume(at('www.bibliacatholica.com', '/index.html?level=book')), 'bible');
+    // THE ROOT OF mmdm.it IS THE CALENDAR'S PUBLIC DOOR (O-211, up 2026-11-10);
+    // the room's doors under /wheel-v3/ are the longer prefixes and still win.
+    assert.equal(doorVolume(at('mmdm.it', '/')), 'calendar', 'the root of mmdm.it is the calendar');
+    assert.equal(doorVolume(at('www.mmdm.it', '/index.html?level=month')), 'calendar');
+    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/')), 'calendar', 'the directory above the room\'s doors falls to the root\'s');
+    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/places/')), 'calendar');
   });
-  it('no door, no answer: the root of mmdm.it, the bench, look-alikes, no table', () => {
+  it('no door, no answer: the bench, look-alikes, no table', () => {
     declareVenues(VENUES);
-    assert.equal(doorVolume(at('mmdm.it', '/')), null, 'the root is the archival backup until the calendar goes up');
-    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/')), null, 'the directory above the doors is not a door');
-    assert.equal(doorVolume(at('mmdm.it', '/wheel-v3/places/')), null);
     assert.equal(doorVolume(at('127.0.0.1', '/index.html')), null, 'the bench chooses by parameter or path');
     assert.equal(doorVolume(at('bibliacatholica.com.evil.com', '/')), null);
     assert.equal(doorVolume(null), null);
