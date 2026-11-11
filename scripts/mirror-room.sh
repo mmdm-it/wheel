@@ -137,6 +137,14 @@ for door in "${DOORS[@]}"; do
       # 2026-11-10, stopped here with the engine up and no data beside it).
       [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/gutenberg"
       rsync -azc -i --delete "${DRY[@]}" "$WORK/gutenberg/" "${DEST}data/gutenberg/"
+      # THE CHURCH RIDES THE BIBLE'S DOOR (O-292): its first division is the
+      # calendar's days, so the door carries the calendar's manifest, without
+      # its notes, and without the company's drawings, tide tables or
+      # pictures, which the Church does not show.
+      node scripts/scrub-notes.mjs data/calendar "$WORK/church-days"
+      echo "== $door: the calendar's days for the Church (checksum)"
+      [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/calendar"
+      rsync -azc -i --delete --delete-excluded --exclude='manifolds/' --exclude='ephemeris-*' --exclude='assets/' "${DRY[@]}" "$WORK/church-days/" "${DEST}data/calendar/"
       if [[ "$door" == public ]]; then
         echo "== $door: the page with the door's own head"
         node scripts/stamp-door-head.mjs public index.html "$WORK/index.html"
