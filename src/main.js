@@ -841,6 +841,13 @@ let searchStringEl = null;      // the carriage — SVG text left of the lens
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
 let sealUrl = null;   // W-301: the volume's seal, drawn at the foot of the glass on the left; null for a volume without one
 let sealEl = null;
+// THE SEAL RISES WITH THE FILM (Howell, 2026-11-11): always present, never
+// moved by a truck, with one exception: on a fresh boot it is not there before
+// the boot verse, and it rises into its corner with the primary stratum on
+// the film's last truck in. 0 = below the glass, 1 = at rest.
+function sealRise(v) {
+  try { document.documentElement.style.setProperty('--seal-rise', String(Math.max(0, Math.min(1, v)))); } catch (_) { /* stub DOM */ }
+}
 // The seal is built once and pointed at the volume's drawing; a volume without
 // one leaves the element hidden. Never a link, never a target: it is a mark.
 function applySeal() {
@@ -1833,7 +1840,7 @@ function layerStates(front) {
 // arriving ring lands where the overture's next turn begins. Nothing is
 // committed by it; the next paint from committed state restores the seat.
 function beginGlide(fromFront, toFront, { lens = null } = {}) {
-  if (bootOvertureLive && !bootOvertureGliding) { const o = bootOvertureLive; bootOvertureLive = null; o.abort(); }
+  if (bootOvertureLive && !bootOvertureGliding) { const o = bootOvertureLive; bootOvertureLive = null; o.abort(); sealRise(1); }
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
   // A truck begun while a chooser ring is mid-turn (a second finger, or a
   // springback still gliding) must not leave that turn dangling: its drag,
@@ -4478,6 +4485,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
     ? beginBootOverture({ viewport: measureViewport(), splash: installed ? null : rememberedSplash }) : null;
   bootOvertureShown = true;
+  if (overture) sealRise(0);
   // A FIRST VISIT'S CARD GOES UP THE MOMENT THE MANIFEST IS PARSED (O-181),
   // not when the boot has also gathered its bundles: on Howell's phone over
   // 4G the manifest was in hand at 0.4 s and the card waited until 2.3 s.
@@ -5490,15 +5498,17 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         // 2026-09-30: it was "out of sync during the drill in and jumps
         // around independently"): its position IS the stratum, set per frame
         // with the snap transition off, and left at the text at the end.
-        thumb: p => { if (!dimensionButton) return; dimensionButton.classList.add('is-sliding'); try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`); } catch (_) { /* stub DOM */ } },
+        thumb: p => { sealRise(1 - p); if (!dimensionButton) return; dimensionButton.classList.add('is-sliding'); try { dimensionButton.style.setProperty('--thumb-y', `${(-thumbRise(p)).toFixed(1)}px`); } catch (_) { /* stub DOM */ } },
         // The hand comes off before the settle, so the globe's step down from
         // its pressed size rides its own transition instead of jumping
         // (Howell 2026-09-30: "it seems to jump to a slightly smaller
         // radius" at the end).
         unslide: () => dimensionButton?.classList?.remove('is-sliding'),
-        arrive: () => { bootOvertureLive = null; arriveAt(1, 0); }
+        arrive: () => { bootOvertureLive = null; sealRise(1); arriveAt(1, 0); }
       } : null
     });
+    // A volume with no floors gets the card alone, and no truck to rise with.
+    if (!(dimensionAvailable() && maxStrataFront() >= 2)) sealRise(1);
   }
   recordBootPhases(volume);
   if (options.debug) mountFeelHud();

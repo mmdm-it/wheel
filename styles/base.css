@@ -1511,7 +1511,10 @@ svg :focus-visible {
   width: 15vmin;
   height: auto;
   z-index: 401;   /* with the margin's marks, above the sector */
-  opacity: 0.5;
+  /* --seal-rise: 1 at rest; the boot film runs it from 0 on its last truck
+     in, so the seal comes up from below the glass with the primary stratum. */
+  opacity: calc(0.5 * var(--seal-rise, 1));
+  transform: translateY(calc((1 - var(--seal-rise, 1)) * 120%));
   pointer-events: none;
   user-select: none;
 }
