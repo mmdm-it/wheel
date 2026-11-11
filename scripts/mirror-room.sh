@@ -70,6 +70,21 @@ for arg in "$@"; do
   esac
 done
 
+# A PUBLIC ROOT NEEDS HOWELL'S SAFE WORD (2026-11-11, his ruling: "I want
+# deploys to the public server that is the root for each website (I'm not
+# talking about the screening room) to be a decision made by me and
+# authorized by me using a unique safe word"). The word lives outside both
+# repositories in ~/.config/wheel/public-word, his to set; the public and
+# root doors refuse without PUBLIC_WORD=<word> on the command, and refuse
+# everything while the file is missing or empty. The room's doors need none.
+WORD_FILE="${HOME}/.config/wheel/public-word"
+for door in "${DOORS[@]}"; do
+  if [[ "$door" == public || "$door" == root ]]; then
+    if [[ ! -s "$WORD_FILE" ]]; then echo "mirror-room: $door REFUSED — Howell's safe word is not set ($WORD_FILE)" >&2; exit 3; fi
+    if [[ "${PUBLIC_WORD:-}" != "$(head -n1 "$WORD_FILE" | tr -d '\r\n')" ]]; then echo "mirror-room: $door REFUSED — a public root is Howell's decision, spoken in his safe word (PUBLIC_WORD)" >&2; exit 3; fi
+  fi
+done
+
 # Where each door lives and the address that proves what it serves.
 target() { case "$1" in public) echo "$PUBLIC_REMOTE/" ;; root) echo "$ROOT_REMOTE/" ;; *) echo "$REMOTE/$1/" ;; esac; }
 address() { case "$1" in public) echo "https://bibliacatholica.com/" ;; root) echo "https://mmdm.it/" ;; *) echo "https://mmdm.it/wheel-v3/$1/" ;; esac; }
