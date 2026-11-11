@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Not found</title>
+  <!-- THE PAGE THAT IS NOT THERE (O-290, Howell 2026-11-11: "We need a clever 404
+       page for both sites"). One file for every door, served by Apache's
+       ErrorDocument at any path, so every address in it is root-absolute. The
+       door is read off the hostname: the scripture volume's public address
+       gets the lost sheep of the Psalter — the verse FETCHED from the served
+       Latin at runtime, never written here (WF-14: the engine is public, the
+       text is the corpus's) — and every other door the day Gregory XIII
+       struck from October 1582, which the calendar volume is about. -->
+  <style>
+    @font-face { font-family: 'EB Garamond'; font-weight: 400; src: url('/assets/fonts/google/eb-garamond-400-latin.woff2') format('woff2'); font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+    @font-face { font-family: 'EB Garamond'; font-weight: 400; font-style: italic; src: url('/assets/fonts/google/eb-garamond-400-italic-latin.woff2') format('woff2'); font-display: swap; }
+    @font-face { font-family: 'EB Garamond'; font-weight: 600; src: url('/assets/fonts/google/eb-garamond-600-latin.woff2') format('woff2'); font-display: swap; }
+    @font-face { font-family: 'Montserrat'; font-weight: 500; src: url('/assets/fonts/google/montserrat-500-latin.woff2') format('woff2'); font-display: swap; }
+    @font-face { font-family: 'Montserrat'; font-weight: 700; src: url('/assets/fonts/google/montserrat-700-latin.woff2') format('woff2'); font-display: swap; }
+    :root { --bg: #d4a574; --fg: #2a1a0f; --band: #6c5339; --node: #8a6a49; }
+    body[data-door="days"] { --bg: #0c2c44; --fg: #f5f7fb; --band: #194567; --node: #5f7fa0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body { background: var(--bg); color: var(--fg); font-family: 'EB Garamond', Georgia, serif; font-size: 20px; line-height: 1.4; display: flex; align-items: center; justify-content: center; padding: 32px 20px; padding-top: calc(32px + env(safe-area-inset-top, 0px)); padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px)); }
+    main { max-width: 34rem; width: 100%; }
+    .door { display: none; }
+    body[data-door="book"] .book, body[data-door="days"] .days { display: block; }
+    .eyebrow { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--node); margin: 0 0 18px; }
+    .eyebrow b { font-size: 34px; letter-spacing: .08em; display: block; color: var(--fg); margin-bottom: 4px; }
+    h1 { font-weight: 400; font-size: 34px; line-height: 1.15; margin: 0 0 14px; text-wrap: balance; }
+    h1 .verse { font-style: italic; }
+    .ref { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--node); margin: 0 0 24px; }
+    p { margin: 0 0 14px; }
+    .quiet { color: var(--band); }
+    body[data-door="days"] .quiet { color: #b9c7d6; }
+    a.door-link { display: inline-block; margin-top: 10px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--fg); text-decoration: none; border: 2px solid var(--fg); border-radius: 999px; padding: 12px 22px; }
+    a.door-link:hover, a.door-link:focus-visible { background: var(--fg); color: var(--bg); outline: none; }
+    .crown { width: 84px; height: 84px; margin: 0 0 22px; display: block; }
+    /* October 1582 as Rome lived it: Thursday the 4th, then Friday the 15th. */
+    .month { font-family: 'Montserrat', sans-serif; font-weight: 500; margin: 26px 0 22px; }
+    .month .name { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--node); margin: 0 0 10px; }
+    .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; font-variant-numeric: tabular-nums; }
+    .grid span { display: block; text-align: center; padding: 8px 0; border: 1px solid var(--band); font-size: 15px; }
+    .grid .dow { border: none; padding: 0 0 6px; font-size: 11px; letter-spacing: .1em; color: var(--node); }
+    .grid .seam { border-color: var(--fg); font-weight: 700; }
+    .struck { margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+    .struck span { display: block; padding: 4px 8px; font-size: 13px; color: var(--node); text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: var(--fg); border: 1px dashed var(--band); }
+    .struck em { font-family: 'EB Garamond', serif; font-size: 15px; font-style: italic; color: #b9c7d6; width: 100%; margin-top: 6px; }
+    @media (prefers-reduced-motion: no-preference) { a.door-link { transition: background .15s, color .15s; } }
+  </style>
+</head>
+<body data-door="book">
+  <main>
+    <section class="door book" lang="la">
+      <img class="crown" src="/data/gutenberg/2026.08.22/assets/crown_of_thorns.png" alt="">
+      <p class="eyebrow"><b>CDIV</b>Pagina non inventa</p>
+      <h1 id="verse" hidden><span class="verse"></span></h1>
+      <p class="ref" id="ref" hidden>Psalmus CXVIII, 176 · Vulgata Clementina</p>
+      <p lang="en">This page has wandered off. The Book is where you left it.</p>
+      <p class="quiet" lang="en">If you followed a link here, the address was mistyped or has moved. Every verse still answers at the door.</p>
+      <a class="door-link" href="/">Ad librum</a>
+    </section>
+    <section class="door days" lang="it">
+      <p class="eyebrow"><b>404</b>Questo giorno non esiste</p>
+      <h1>Sei arrivato al 10 ottobre 1582.</h1>
+      <p>Papa Gregorio XIII tolse dieci giorni all’ottobre di quell’anno per rimettere il calendario in pari con il sole: a giovedì 4 seguì venerdì 15. La pagina che cercavi è caduta in quel vuoto.</p>
+      <p class="quiet" lang="en">Pope Gregory XIII struck ten days from October 1582 to bring the calendar back to the sun: Thursday the 4th was followed by Friday the 15th. The page you asked for fell into that gap.</p>
+      <div class="month" aria-label="October 1582 in Rome">
+        <p class="name">Ottobre MDLXXXII · Roma</p>
+        <div class="grid">
+          <span class="dow">L</span><span class="dow">M</span><span class="dow">M</span><span class="dow">G</span><span class="dow">V</span><span class="dow">S</span><span class="dow">D</span>
+          <span>1</span><span>2</span><span>3</span><span class="seam">4</span><span class="seam">15</span><span>16</span><span>17</span>
+          <span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+          <span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+        </div>
+        <div class="struck" aria-label="the ten days that were never lived">
+          <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span>
+          <em>I dieci giorni che nessuno ha vissuto · The ten days nobody lived</em>
+        </div>
+      </div>
+      <a class="door-link" href="/">Torna al calendario · Back to the calendar</a>
+    </section>
+  </main>
+  <script>
+    // The door is the hostname's: the scripture volume's public address, and
+    // any address carrying its path word, get the Psalter; the rest, the days.
+    (function () {
+      var host = (location.hostname || '').toLowerCase(), path = (location.pathname || '').toLowerCase();
+      var book = /(^|\.)bibliacatholica\.(com|org|net)$/.test(host) || /\/bible(\/|$)/.test(path);
+      document.body.setAttribute('data-door', book ? 'book' : 'days');
+      if (!book) return;
+      // Psalm 118:176 of the Clementine, read from the served Latin: the Psalter's
+      // shard in the volume the engine serves. The words never live in this file.
+      var url = '/data/gutenberg/2026.08.22/text/1592lat/bc0f0d278.json';
+      fetch(url, { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+        var t = j && j.text && j.text['118:176'];
+        if (!t) return;
+        var cut = t.indexOf(', quia');            // the plea alone; the clause after it stays in the book
+        var words = (cut > 0 ? t.slice(0, cut) : t).replace(/\s+:/g, ':').replace(/\s*[.;:,]\s*$/, '');
+        var h = document.getElementById('verse');
+        h.querySelector('.verse').textContent = words + '.';
+        h.hidden = false; document.getElementById('ref').hidden = false;
+      }).catch(function () {});
+    })();
+  </script>
+</body>
+</html>
