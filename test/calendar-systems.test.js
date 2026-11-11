@@ -165,23 +165,28 @@ describe('the Hebrew calendar (O-248)', () => {
     assert.match(fs.readFileSync(new URL('../src/index.js', import.meta.url), 'utf8'), /const captionIsAfter = \(\) => Boolean\(captionAfter\) && textDirection\(\) !== 'rtl';/);
   });
   it('builds the rings: ids suffixed @hebrew, months in civil order, the span 761 to 6761, today red at its Hebrew name', () => {
-    const years = buildCalendarYears(manifest, { initialItemId: '5787@hebrew' });
+    // TODAY IS READ OFF THE CLOCK, never pinned: this test said Cheshvan until
+    // Kislev began at sunset on 2026-11-10 and CI went red at 02:38 the next
+    // morning. The year under the lens and the month drawn red are whatever
+    // the Hebrew calendar says today is; the fixed facts below (the span, the
+    // civil order, Heshvan 5787's length) stay fixed.
+    const t = todaySerial();
+    const p = H.dateOf(t);
+    const years = buildCalendarYears(manifest, { initialItemId: `${p.year}@hebrew` });
     const real = years.items.filter(Boolean);
     assert.equal(real[0].id, '761@hebrew');
     assert.equal(real[real.length - 1].id, '6761@hebrew');
     const y = years.items[years.selectedIndex];
-    assert.equal(y.name, 'ה׳תשפ״ז');
+    assert.equal(y.name, hebrewNumeral(p.year));
     assert.equal(y.now, true);
     const sky = getCalendarMonths(manifest, y, 'year');
-    assert.equal(sky[0].id, '5787:tishri@hebrew');
-    assert.equal(sky[1].id, '5787:heshvan@hebrew');
-    assert.equal(sky.filter(m => m.now).map(m => m.name).join(), 'חשון');
+    assert.equal(sky[0].id, `${p.year}:tishri@hebrew`);
+    assert.equal(sky[1].id, `${p.year}:heshvan@hebrew`);
+    assert.equal(sky.filter(m => m.now).map(m => m.name).join(), H.monthsOf(p.year).find(mm => mm.number === p.month).name);
     const chain = buildCalendarMonthsCousinChain(manifest, { initialItemId: '5787:heshvan@hebrew' });
     const m = chain.items[chain.selectedIndex];
     assert.equal(m.monthNumber, 8);
     assert.equal(chain.items[chain.selectedIndex - 1].name, 'תשרי');
-    const t = todaySerial();
-    const p = H.dateOf(t);
     const days = buildCalendarDaysCousinChain(manifest, { centerId: H.dayId(p.year, p.month, p.day) });
     const now = days.items.filter(i => i && i.now);
     assert.equal(now.length, 1);
