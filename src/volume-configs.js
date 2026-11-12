@@ -1083,7 +1083,9 @@ function dressForTheChurch(cal) {
   const dc = { ...(cal.display_config || {}) };
   delete dc.splash;
   dc.volume_name = 'Biblia Catholica';
-  dc.detail_sector = { ...(dc.detail_sector || {}), logo_base_path: 'assets/', default_image: 'st_peters.svg' };
+  // St Peter's stands on the bare ground in the corner (O-295, Howell: "the
+  // St. Peter's artwork does not need any circle behind it in either corner").
+  dc.detail_sector = { ...(dc.detail_sector || {}), logo_base_path: 'assets/', default_image: 'st_peters.svg', disc: false };
   dc.seal = 'crown_of_thorns.png';
   dc.day_extras = false;   // no drawing of the day, no Fano tables: those are the company's
   const dressed = { ...cal, display_config: dc };

@@ -2863,6 +2863,8 @@ export function createApp({
     setCornerColor: color => volumeLogo.setColor(color),
     // O-293: the badge's own journey, landed now (the swap flies to its end).
     landCorner: () => volumeLogo.land(),
+    // O-295: the badge's disc, its colour and size, for the seal of the other half.
+    cornerDisc: () => volumeLogo.discInfo(),
     nav,
     // The journey a click makes, reachable by name. It is the same call the
     // ring already makes for every tap; naming it lets the proofreading

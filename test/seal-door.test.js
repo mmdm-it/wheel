@@ -100,6 +100,30 @@ describe('the contents migrate', () => {
   });
 });
 
+// THE DISC TRAVELS WITH ITS EMBLEM (O-295, Howell 2026-11-11: "the purple
+// circle, or blue circle as the case may be, needs to travel with the crown
+// of thorns or the Torah scroll. For now, the St. Peter's artwork does not
+// need any circle behind it in either corner").
+describe('the disc travels with its emblem', () => {
+  const swap = readFileSync(new URL('../src/view/seal-swap.js', import.meta.url), 'utf8');
+  const logo = readFileSync(new URL('../src/view/volume-logo.js', import.meta.url), 'utf8');
+  it('St Peter\'s stands bare in the Church\'s corner, and the badge can be declared without a disc', () => {
+    const root = volumeConfigs.church.extractRoot({ Calendar: { display_config: {} } });
+    assert.equal(root.display_config.detail_sector.disc, false);
+    assert.match(logo, /circleOpacity: this\._renderConfig\?\.disc === false \? 0 : 0\.5,/);
+    assert.match(logo, /discInfo\(\) \{\s*if \(!this\._renderConfig \|\| this\._renderConfig\.disc === false\) return null;/);
+  });
+  it('the seal wears the departing emblem on its disc, remembered for the half it opens', () => {
+    assert.match(main, /if \(logoSrc\) remember\(to, \{ sealArt: logoSrc, sealDisc: cornerDisc \? \{ colour: cornerDisc\.colour, ratio: cornerDisc\.ratio \} : null \}\);/);
+    assert.match(main, /sealEl\.style\.background = sealDisc\?\.colour/);
+  });
+  it('the disc flies from where it stood to where it lands, and the discs in place stand aside', () => {
+    assert.match(swap, /discFlight\.el\.setAttribute\('r', /);
+    assert.match(swap, /if \(oldCircle\) oldCircle\.style\.visibility = 'hidden';/);
+    assert.match(swap, /liveDisc\.style\.visibility = 'hidden';/);
+  });
+});
+
 describe('the wiring', () => {
   it('a drawing name may carry its own type; a bare name is a PNG', () => {
     assert.equal(withExtension('crown_of_thorns'), 'crown_of_thorns.png');

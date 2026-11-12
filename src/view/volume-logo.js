@@ -308,7 +308,7 @@ export class VolumeLogo {
     this.circle.setAttribute('r', discRadius * (1 + this._discFeather()));
     this._featherNow = null;
     this._setFeather(this._discFeather());
-    this.circle.setAttribute('opacity', config.color_scheme?.detail_sector_opacity || '0.5');
+    this.circle.setAttribute('opacity', config.disc === false ? '0' : (config.color_scheme?.detail_sector_opacity || '0.5'));
     // NO OUTLINE (Howell, 2026-08-17: "I'd like to try removing the dark
     // stroke"). The badge was a 1px black ring over a 50%-opacity fill, which
     // drew a hard edge around a deliberately soft shape. Removed rather than
@@ -515,6 +515,18 @@ export class VolumeLogo {
     return Number.isFinite(declared) && declared > 0 ? declared : 0;
   }
 
+  /**
+   * The corner badge's disc, for whoever must draw it elsewhere (O-295: the
+   * seal at the foot of the other half wears the departing emblem on its
+   * disc): its colour and its diameter as a fraction of the emblem's width
+   * in the corner. Null for a badge declared without a disc.
+   */
+  discInfo() {
+    if (!this._renderConfig || this._renderConfig.disc === false) return null;
+    const g = this._collapsedGeometry();
+    return { colour: this._discColour(), ratio: g.logoWidth > 0 ? (2 * g.discRadius) / g.logoWidth : 0.5 };
+  }
+
   _discColour() {
     return this._renderConfig?.color_scheme?.detail_sector || '#362e6a';
   }
@@ -626,7 +638,10 @@ export class VolumeLogo {
       circleCy: cy,
       circleR: discRadius * (1 + this._discFeather()),
       circleFeather: this._discFeather(),
-      circleOpacity: 0.5,
+      // A volume may declare its corner badge without a disc (O-295: the
+      // Church's St Peter's stands on the bare ground); it still opens into
+      // a coloured sector at a leaf, the disc fading in as it grows.
+      circleOpacity: this._renderConfig?.disc === false ? 0 : 0.5,
       logoX: cx - logoWidth / 2,
       logoY: cy - logoHeight / 2,
       logoWidth,
