@@ -390,11 +390,12 @@ const BRIDGE_CHOOSERS = [
     // AN EDITION THAT IS ELSEWHERE (O-284, Howell 2026-11-09: from Hebrew
     // Genesis there was no way to the Greek Mark but out to the root or
     // through a third edition) is drawn hollow too — a door, not a page —
-    // and is NOT inert: choosing it leads to that edition's shelf.
+    // and is NOT inert: choosing it crosses to that edition at the reader's
+    // own level (O-294).
     classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : dimensionBridge.isElsewhere?.(key) ? 'is-elsewhere' : dimensionBridge.isUncleared?.(key) ? 'is-uncleared' : ''),
     inert: key => Boolean(dimensionBridge.isComing?.(key)),
     select: key => {
-      const ok = dimensionBridge.isElsewhere?.(key) ? goToShelf(key) : dimensionBridge.setTranslation(key);
+      const ok = dimensionBridge.isElsewhere?.(key) ? crossToEdition(key) : dimensionBridge.setTranslation(key);
       window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
       return ok;
     } },
@@ -409,7 +410,8 @@ const BRIDGE_CHOOSERS = [
     // reading what they had.
     // A tongue whose every edition is elsewhere (O-284) stands hollow the
     // same way; settling on it is display-only too, and the plane behind
-    // shows its editions hollow, each a door to its shelf.
+    // shows its editions hollow, each a door (O-294: crossed to where the
+    // reader stands).
     classFor: id => (dimensionBridge.isComingLanguage?.(id) ? 'is-coming' : dimensionBridge.isElsewhereLanguage?.(id) ? 'is-elsewhere' : ''),
     select: id => {
       const ok = dimensionBridge.setLanguage(id);
@@ -668,30 +670,22 @@ function jumpToChosen() {
   if (!seated) editionSettlePromise.then(() => { seatHere(); refreshEditionsHere(); }).catch(() => {});
   else editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
 }
-// A HOLLOW EDITION LEADS TO ITS SHELF (O-284, Howell 2026-11-09). An edition
-// that does not hold the reader's place stands hollow on its ring; chosen,
-// the reader is taken to the volume's top ring FIRST, in the edition they
-// are leaving, and the edition is committed there, where nothing is
-// filtered, by the ordinary commit — so the ordinary reseat
-// at the top (O-95) refills the ring with the new edition's divisions and
-// the reader arrives at its shelf, two strokes from any book. Never at a
-// verse the edition lacks, and never with a word of apology: the hollow
-// seat said beforehand what it was. His image, the hour it was ruled: an
-// open book is one thing, a bookshelf another; this seat is the shelf,
-// reached from inside the book.
-function goToShelf(key) {
+// A HOLLOW EDITION IS CROSSED TO AT THE READER'S OWN LEVEL (O-294, Howell
+// 2026-11-11, superseding O-284's shelf). An edition that does not hold the
+// reader's place stands hollow on its ring. Chosen, it used to take the
+// reader up to the volume's top ring first: a change of level nobody asked
+// for ("the only way that nodes can be drilled in or out is by tapping the
+// parent button, tapping a child pyramid node, or swiping. Nothing else
+// should ever change levels"), and the empty parent button he found there.
+// Now the edition simply commits, by the bridge's one door past the position
+// filter, and the ordinary reseat lands the reader on the same level at the
+// chosen verse of the division the edition offers (the adapter's landing
+// rule); the filter is read again once it has.
+function crossToEdition(key) {
   if (!currentApp || !dimensionBridge.isElsewhere?.(key)) return false;
-  let shelved = false;
-  try { shelved = Boolean(seatAtShelf(currentApp)); } catch (_) { shelved = false; }
-  if (!shelved) return false;
-  // At the top ring nothing is filtered (the adapter answers null there), so
-  // the ORDINARY commit is the door: re-ask the position first, in case the
-  // move has not yet been noticed, and then commit as any filled seat would.
-  // The bench found the first cut refusing here — it asked the bridge to
-  // commit "an edition that is elsewhere" AFTER the move had made nothing
-  // elsewhere.
-  refreshEditionsHere();
-  return dimensionBridge.setTranslation(key);
+  if (!dimensionBridge.commitElsewhere?.(key)) return false;
+  editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
+  return true;
 }
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
@@ -2058,7 +2052,6 @@ function resetStrata() {
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
-let seatAtShelf = () => false;  // O-284: the adapter sets the primary at the volume's top ring, for a hollow edition's door
 let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
 let seatPlace = () => null;     // O-275: where a LEAF stands on the edition up, or null if it does not hold it
 let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
@@ -2698,8 +2691,8 @@ if (typeof window !== 'undefined') {
     arriving: () => dimensionBridge.editionsArriving?.() || [],
     turnPlan: front => overtureTurn(front),   // the overture's turn of a floor (O-225): { from, to } or null
     hollow: key => Boolean(dimensionBridge.isComing?.(key)),
-    elsewhere: key => Boolean(dimensionBridge.isElsewhere?.(key)),   // O-284: real, hollow here, a door to its shelf
-    door: key => goToShelf(key),                                      // O-284: walk through it, for the bench and the boot tests
+    elsewhere: key => Boolean(dimensionBridge.isElsewhere?.(key)),   // O-284/O-294: real, hollow here, a door
+    door: key => crossToEdition(key),                                 // O-294: walk through it, at the reader's own level
     current: () => currentApp?.nav?.getCurrent?.() ?? null,          // where the primary stands
     app: () => currentApp,                                            // the bench's hand on the primary
     // Null while the launch funnel is up (O-75), the reader's position after.
@@ -4962,7 +4955,6 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
-  seatAtShelf = typeof handlerSet.seatAtShelf === 'function' ? handlerSet.seatAtShelf : () => false;
   seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
   seatPlace = typeof handlerSet.seatPlace === 'function' ? handlerSet.seatPlace : () => null;
   hitSeats = typeof handlerSet.hitSeats === 'function' ? handlerSet.hitSeats : () => [];
@@ -5287,9 +5279,18 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // resuming there would be resuming mid-gesture. Written on every nav
   // change (cheap: session-memory skips no-op writes), so a battery death
   // loses nothing.
+  // AND WHERE THEY WERE STANDING (O-294, Howell 2026-11-11: "if the user
+  // leaves a stratum, that stratum should always be as it was when the user
+  // left, when the user returns"). The leaf above is the text; this is the
+  // ring and the lens, at any level, so a return rebuilds the ring the reader
+  // left instead of drilling to the last leaf ("the computer did a drill that
+  // wasn't requested"). The volume reads it back in its own buildOptions; the
+  // engine stores the item's own level and id and never interprets them.
   const rememberReadingPosition = () => {
     const current = app?.nav?.getCurrent?.();
-    if (!current?.id || !isDetailLevel(current, adapterNormalized)) return;
+    if (!current?.id) return;
+    remember(volume, { placeLevel: typeof current.level === 'string' ? current.level : null, placeItem: current.id });
+    if (!isDetailLevel(current, adapterNormalized)) return;
     remember(volume, { itemId: current.id });
   };
   // WHEN EVERY SHELF IS STOCKED (O-175), one quiet redraw seats whatever

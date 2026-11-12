@@ -3,8 +3,8 @@
 // path, theme, option parsing, label formatting, and chain building — is
 // declared here; src/main.js stays volume-agnostic and is scanned by
 // test/forbidden-literals.test.js (Phase B audit, H1/M5).
-import { buildBibleVerseChain, buildBibleBookCousinChain } from './navigation/cousin-builder.js';
-import { buildCalendarYears, buildCalendarMonthsCousinChain, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
+import { buildBibleVerseChain, buildBibleBookCousinChain, buildBibleChapterChain } from './navigation/cousin-builder.js';
+import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, buildBibleTestaments, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
 import { proofreadDeepLink, unclearedActive } from './core/lan-gate.js';
 import { recall } from './core/session-memory.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
@@ -374,8 +374,18 @@ const volumeConfigs = {
       // O-47 removed once did.
       const deepLinked = params.get('book') || params.get('chapter') || params.get('verse');
       const resumed = deepLinked ? null : parseSeatId(memory?.itemId);
+      // THE READER'S LEVEL TOO (O-294, Howell 2026-11-11: "if the user leaves
+      // a stratum, that stratum should always be as it was when the user
+      // left, when the user returns"). The verse above is where they were
+      // READING; this is where they were STANDING — a chapters ring, the
+      // books, the two divisions — and boot rebuilds that ring rather than
+      // drilling to the verse (buildBibleChain). A verse is the verse above.
+      const place = (!deepLinked && !params.get('level') && !params.get('item')
+        && ['testament', 'book', 'chapter'].includes(memory?.placeLevel) && memory?.placeItem)
+        ? { level: memory.placeLevel, itemId: memory.placeItem } : null;
       return {
         level,
+        place,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
         firstVisit: (root?.display_config?.boot?.first_visit || []).map(e => e?.utterance).filter(Boolean),
@@ -585,7 +595,7 @@ const volumeConfigs = {
     stampLetter: 'C', // the factory stamp's data line (W-7)
     extractRoot: manifest => manifest?.Calendar,
     async loadSupplemental() { return { translationsMeta: null }; },
-    buildOptions: ({ params, startup = {}, arrangements = {} }) => {
+    buildOptions: ({ params, startup = {}, arrangements = {}, memory = null }) => {
       // Default entry is the MONTHS ring on the current month (Howell
       // 2026-07-19) — gateway transits arrive with level=root, which is
       // "the volume's front door", not a level request. ?level=year still
@@ -594,14 +604,23 @@ const volumeConfigs = {
       // (years) — it does not pick the front door, so it is deliberately
       // not consulted here.
       const rawLevel = params.get('level');
-      const level = (rawLevel && rawLevel !== 'root') ? rawLevel : 'month';
+      // THE PLACE THE READER LEFT (O-294): the ring and the lens they were
+      // on, when the address names neither. In the Gregorian only for now:
+      // a place in another calendar would need that calendar chosen on the
+      // dimension before the ring is built, which the boot does not yet do,
+      // and it opens on today instead.
+      const remembered = (!rawLevel && !params.get('item')
+        && ['century', 'decade', 'year', 'month', 'day'].includes(memory?.placeLevel)
+        && typeof memory?.placeItem === 'string' && !memory.placeItem.includes('@'))
+        ? memory : null;
+      const level = (rawLevel && rawLevel !== 'root') ? rawLevel : (remembered?.placeLevel || 'month');
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
       return {
         level,
         arrangement,
-        initialItemId: params.get('item') || startup.initial_magnified_item || null,
+        initialItemId: params.get('item') || remembered?.placeItem || startup.initial_magnified_item || null,
         locale: params.get('lang') || null,
         cousinMode
       };
@@ -612,6 +631,12 @@ const volumeConfigs = {
     // the CURRENT month magnified; ?level=year gives the years ring.
     buildChain: (manifest, options) => {
       const thisYear = new Date().getFullYear();
+      if (options.level === 'day' && options.initialItemId) {
+        const days = buildCalendarDaysCousinChain(manifest, { centerId: options.initialItemId });
+        if (days?.items?.[days.selectedIndex]?.id === options.initialItemId) return days;
+        options.level = 'month';
+        options.initialItemId = null;
+      }
       if (options.level === 'decade') {
         return buildCalendarDecades(manifest, { initialItemId: options.initialItemId || decadeIdOf(thisYear) });
       }
@@ -901,9 +926,47 @@ function firstLeafOf(manifest, edition) {
   };
 }
 
+function seatBiblePlace(manifest, options, namesMap) {
+  const { level, itemId } = options.place;
+  const edition = options.activeEdition || options.translation || null;
+  if (level === 'testament') {
+    const chain = buildBibleTestaments(manifest, namesMap, { edition });
+    const at = chain.items.findIndex(it => it?.id === itemId);
+    if (at < 0) return null;
+    options.level = 'testament';
+    return { items: chain.items, selectedIndex: at, preserveOrder: true };
+  }
+  if (level === 'book') {
+    const chain = buildBibleBookCousinChain(manifest, { bookId: itemId, initialItemId: itemId, names: namesMap, edition });
+    if (!chain?.items?.length || chain.items[chain.selectedIndex]?.id !== itemId) return null;
+    options.level = 'book';
+    options.bookId = itemId;
+    return chain;
+  }
+  if (level === 'chapter') {
+    const seats = buildBibleVerseChain(manifest, { edition }).items;
+    const items = buildBibleChapterChain(manifest, { edition, namesMap, seats }).items;
+    const at = items.findIndex(it => it?.id === itemId);
+    if (at < 0) return null;
+    options.level = 'chapter';
+    options.bookId = items[at].meta?.bookId || items[at].parentId || null;
+    options.placeContext = { testamentId: items[at].meta?.testamentId || null, sectionId: items[at].meta?.sectionId || null };
+    return { items, selectedIndex: at, preserveOrder: true };
+  }
+  return null;
+}
+
 function buildBibleChain(manifest, options, namesMap) {
   // Gateway entry: BIBLIA SACRA LATINA alone on the ring, testaments in the pyramid.
   if (options.level === 'root') return buildBibleRootChain(namesMap);
+  // A REMEMBERED PLACE ABOVE THE LEAVES (O-294) is rebuilt as the ring it was,
+  // with the same builders the parent button uses to reach it; the level
+  // and its context are written back on the options, which the handlers read
+  // next. A place this edition cannot seat falls through to the verse.
+  if (options.place) {
+    const seated = seatBiblePlace(manifest, options, namesMap);
+    if (seated) return seated;
+  }
   // Anything the URL or the reader's memory did not supply comes from the
   // volume itself, resolved here because this is where the enumeration is in
   // hand. A null that reached the builders below would paint a blank screen.

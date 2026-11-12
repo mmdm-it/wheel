@@ -692,8 +692,9 @@ svg :focus-visible {
 .secondary-strata-label.is-coming { opacity: 0.62; }
 /* AN EDITION THAT IS ELSEWHERE (O-284): real and servable, not holding the
    verse under the reader — hollow like a placeholder, a door and not a page;
-   its name at full strength, because it can be chosen, and choosing it leads
-   to that edition's shelf. On the language ring, a tongue whose every edition
+   its name at full strength, because it can be chosen, and choosing it crosses
+   to that edition where the reader stands (O-294). On the language ring, a
+   tongue whose every edition
    is elsewhere wears the same. */
 .secondary-strata-node.is-elsewhere { fill: none; stroke: var(--color-orbital); stroke-width: 1.5; }
 /* A PROVISIONAL seat on the basement's ring — the verse the reader arrived
