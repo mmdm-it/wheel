@@ -4444,9 +4444,20 @@ function returnThroughGateway() {
 // volume keeps the reader's place by itself (its resume), so the way back is
 // a plain boot of the volume left.
 const SWAP_OVERLAYS = ['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark'];
+// THE SWAP IS MADE FROM THE PRIMARY STRATUM ONLY (O-296, Howell 2026-11-11:
+// switching between the app's two halves "can only be done at the primary
+// stratum"; the strata above and the basement "are all selectors for
+// options. They're not where the app's primary purpose of being a reader is
+// fulfilled", and a swap out of the basement has no picture). The seal stays
+// where it is and as it is, always present (O-291); away from the primary,
+// or while a stratum is still travelling, it simply does not answer, as it
+// does not during the boot film. It does not truck the reader home first:
+// that would be a move nobody asked for (O-294).
+const swapAllowedHere = () => strataFront === 0 && !strataAnim;
 function swapThroughSeal() {
   const to = sealDoor;
   if (!to || !volumeConfigs[to] || sealSwapping || sealRides || bootOvertureLive) return;
+  if (!swapAllowedHere()) return;
   sealSwapping = true;
   const logoImg = document.getElementById('volume-logo-image');
   const logoHref = logoImg?.getAttribute('href') || logoImg?.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href') || null;

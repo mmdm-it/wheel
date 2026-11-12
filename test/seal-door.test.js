@@ -124,6 +124,17 @@ describe('the disc travels with its emblem', () => {
   });
 });
 
+// O-296: the swap is made from the primary stratum only; elsewhere the seal
+// stays, inert, and never trucks the reader home on its own.
+describe('the swap is made from the primary stratum only', () => {
+  it('away from the primary, or while a stratum travels, the seal does not answer', () => {
+    assert.match(main, /const swapAllowedHere = \(\) => strataFront === 0 && !strataAnim;/);
+    const swap = main.slice(main.indexOf('function swapThroughSeal() {'), main.indexOf('// Browser Back across a gateway pushState'));
+    assert.match(swap, /if \(!swapAllowedHere\(\)\) return;/);
+    assert.doesNotMatch(swap, /strataFront\s*=[^=]|renderStack|truck/i, 'it never moves the strata itself');
+  });
+});
+
 describe('the wiring', () => {
   it('a drawing name may carry its own type; a bare name is a PNG', () => {
     assert.equal(withExtension('crown_of_thorns'), 'crown_of_thorns.png');
