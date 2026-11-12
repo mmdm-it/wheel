@@ -5,7 +5,7 @@ import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { volumeConfigs } from '../src/volume-configs.js';
-import { flightFrame } from '../src/view/seal-swap.js';
+import { flightFrame, swapAxis, contentShift, SWAP_MS } from '../src/view/seal-swap.js';
 import { withExtension } from '../src/view/volume-logo.js';
 
 const main = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
@@ -50,6 +50,44 @@ describe('the flight', () => {
   });
 });
 
+// NOTHING FADES (O-293): the contents of both halves travel the drawings'
+// diagonal, the old half out ahead of the badge's drawing and the new half in
+// behind the seal.
+describe('the contents migrate', () => {
+  const axis = swapAxis(390, 844);
+  it('they travel from the upper right toward the lower left', () => {
+    assert.ok(axis.ux < 0 && axis.uy > 0);
+    assert.ok(Math.abs(Math.hypot(axis.ux, axis.uy) - 1) < 1e-9);
+  });
+  it('the old half starts at rest and ends clear of the glass, whatever corner it stood in', () => {
+    assert.deepEqual(contentShift(axis, 0, 'out'), { x: 0, y: 0 });
+    const end = contentShift(axis, 1, 'out');
+    for (const [x, y] of [[0, 0], [390, 0], [0, 844], [390, 844]]) {
+      const px = x + end.x, py = y + end.y;
+      assert.ok(px <= 0 || py >= 844, `corner ${x},${y} still on the glass at ${px},${py}`);
+    }
+  });
+  it('the new half starts clear of the glass and ends at rest', () => {
+    const start = contentShift(axis, 0, 'in');
+    assert.deepEqual(start, contentShift(axis, 1, 'out'));
+    const end = contentShift(axis, 1, 'in');
+    assert.ok(Math.abs(end.x) < 1e-9 && Math.abs(end.y) < 1e-9);
+  });
+  it('the contents outrun the drawing behind them: pushed, not overtaken', () => {
+    assert.ok(axis.reach > Math.hypot(390, 844));
+  });
+  it('the crossing is slow enough to follow', () => {
+    assert.ok(SWAP_MS >= 1500);
+  });
+  it('the swap carries the live half and never sets its ink', () => {
+    const swap = readFileSync(new URL('../src/view/seal-swap.js', import.meta.url), 'utf8');
+    assert.match(swap, /content\?\.setAttribute\('transform'/);
+    assert.match(swap, /outgoing\?\.setAttribute\('transform'/);
+    assert.doesNotMatch(swap, /(content|outgoing|carried\.forEach\(el => \{ el)\.style\.opacity/);
+    assert.match(main, /content: liveTop\.find\(el => el\.classList\.contains\('focus-content-group'\)\)/);
+  });
+});
+
 describe('the wiring', () => {
   it('a drawing name may carry its own type; a bare name is a PNG', () => {
     assert.equal(withExtension('crown_of_thorns'), 'crown_of_thorns.png');
@@ -60,6 +98,6 @@ describe('the wiring', () => {
     assert.match(main, /if \(!to \|\| !volumeConfigs\[to\] \|\| sealSwapping \|\| sealRides \|\| bootOvertureLive\) return;/);
   });
   it('a swap transit plays the swap, not the wipe', () => {
-    assert.match(main, /if \(transit\?\.mode === 'swap'\) \{\s*try \{\s*playSealSwap\(/);
+    assert.match(main, /if \(transit\?\.mode === 'swap'\) \{\s*try \{[^]{0,400}?playSealSwap\(/);
   });
 });

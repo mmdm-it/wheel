@@ -4442,6 +4442,7 @@ function returnThroughGateway() {
 // boots beneath them; the boot then plays the swap instead of a wipe. A
 // volume keeps the reader's place by itself (its resume), so the way back is
 // a plain boot of the volume left.
+const SWAP_OVERLAYS = ['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark'];
 function swapThroughSeal() {
   const to = sealDoor;
   if (!to || !volumeConfigs[to] || sealSwapping || sealRides || bootOvertureLive) return;
@@ -4452,7 +4453,7 @@ function swapThroughSeal() {
   const transit = {
     mode: 'swap',
     snapshot: captureGatewaySnapshot(svg),
-    ghosts: ghostOverlays(['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark']),
+    ghosts: ghostOverlays(SWAP_OVERLAYS),
     from: {
       seal: { rect: rectOf(sealEl), src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl) },
       logo: { rect: rectOf(logoImg), src: logoHref ? new URL(logoHref, document.baseURI).href : null, opacity: logoImg ? opacityOf(logoImg) : 1 }
@@ -5198,12 +5199,19 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // Same tick as the render above, so the swap itself never paints.
   if (transit?.mode === 'swap') {
     try {
+      // The snapshot still holds copies under the live ids, and it is ahead
+      // of the live drawing in the document, so the live badge and content
+      // group are found among the svg's own children, never by id.
+      const liveTop = Array.from(svg.children).filter(el => el !== wipeSnapshot);
       playSealSwap({
+        svg,
         snapshot: wipeSnapshot,
         ghosts: transit.ghosts || [],
         from: transit.from,
         toSeal: sealUrl ? sealEl : null,
-        toLogo: document.getElementById('volume-logo-image'),
+        toLogo: liveTop.find(el => el.id === 'volume-logo-group')?.querySelector('#volume-logo-image') || null,
+        content: liveTop.find(el => el.classList.contains('focus-content-group')) || null,
+        overlays: SWAP_OVERLAYS.map(id => document.getElementById(id)),
         durationMs: Number(new URLSearchParams(location.search).get('swapms')) || undefined,
         onDone: () => {
           sealSwapping = false;
