@@ -739,3 +739,50 @@ export const calendarStrata = () => [
     } }
 ];
 export const CALENDAR_SYSTEMS = CALENDARS.map(c => ({ ...c }));
+
+// THE CHAPELS (O-297, Howell 2026-11-12). The Church is not one instrument
+// but several rooms — "Chapel is a different kind of sorting. It's not a
+// layer in a hierarchy. It's a room" — so they are not nodes on the focus
+// ring (whose lens would have to say the chapel and the month at once) but a
+// STRATUM: the tertiary, as the Bible's tongues are; its secondary is the
+// chosen chapel's own option, as the Bible's is the tongue's edition; the
+// primary is the chapel itself. Changing room is a selection, never a drill
+// (O-294). Only the calendar is built; the others stand hollow on the ring,
+// and the lens may rest on one to see that it is coming, as on a tongue still
+// on the roadmap: settling there is display-only, the secondary behind it is
+// empty, and the reader keeps the calendar. Order approved by Howell.
+const CHAPELS = [
+  { id: 'calendar', name: 'CALENDAR', live: true },
+  { id: 'prayers', name: 'PRAYERS', live: false },
+  { id: 'catechism', name: 'CATECHISM', live: false },
+  { id: 'dictionary', name: 'DICTIONARY', live: false },
+  { id: 'atlas', name: 'ATLAS', live: false },
+  { id: 'whoswho', name: "WHO'S WHO", live: false }
+];
+const chapelById = id => CHAPELS.find(c => c.id === id) || null;
+let chosenChapel = 'calendar';    // the room the reader is in
+let shownChapel = 'calendar';     // the room under the tertiary lens: the plane behind shows ITS options
+export const churchStrata = () => {
+  chosenChapel = 'calendar';
+  shownChapel = 'calendar';
+  const [systems] = calendarStrata();
+  return [
+    { ...systems,
+      // The plane behind the chapels is the shown chapel's: the calendar's
+      // reckonings under the calendar, nothing yet under a room not built.
+      allowEmpty: true,
+      items: () => (shownChapel === 'calendar' ? systems.items() : []) },
+    { id: 'tertiary', mirrored: false, centerMag: true,
+      items: () => CHAPELS.map(c => c.id),
+      label: id => chapelById(id)?.name || id,
+      selected: () => shownChapel,
+      classFor: id => (chapelById(id)?.live ? '' : 'is-coming'),
+      select: id => {
+        if (!chapelById(id)) return false;
+        shownChapel = id;
+        if (chapelById(id).live) chosenChapel = id;
+        return true;
+      } }
+  ];
+};
+export const CHURCH_CHAPELS = CHAPELS.map(c => ({ ...c }));

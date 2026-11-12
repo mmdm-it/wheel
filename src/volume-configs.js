@@ -27,7 +27,7 @@ import { setUnitTextLoader } from './adapters/volume-helpers.js';
 // rather than the world.
 const BIBLE_VOLUME_BASE = './data/gutenberg';
 const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
-import { calendarAdapter, calendarStrata } from './adapters/calendar-adapter.js';
+import { calendarAdapter, calendarStrata, churchStrata } from './adapters/calendar-adapter.js';
 import { buildCalendarDecades, buildCalendarCenturies } from './adapters/volume-helpers.js';
 import { decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
 import { systemOf as calendarSystemOf } from './adapters/calendar-systems.js';
@@ -1078,6 +1078,21 @@ function buildBibleChain(manifest, options, namesMap) {
 // company's; the drawings are read from the Bible's data root (W-114: the
 // engine ships no picture). The ring of divisions (calendar, atlas,
 // catechism, who's who, prayers, dictionary) comes with the second division.
+// THE CHURCH'S OWN COLOURS (O-297, Howell 2026-11-12: "dramatically different
+// than the Bible, so it's obvious to anyone that they've moved to a different
+// location"). His to choose: three candidates, tried on the phone in the
+// screening room with ?dress=marble, ?dress=cardinal or ?dress=nave; the
+// choice becomes the only dress and the switch goes.
+export const CHURCH_DRESSES = {
+  cardinal: { bg: '#7a1724', node: '#9a3540', text: '#f8ecd6', band: '#4f0c15', accent: '#e2bf6a', magnifierStroke: '#f8ecd6', dark: true },
+  marble: { bg: '#efeae0', node: '#d6c293', text: '#231c12', band: '#b0904f', accent: '#9a7a3c', magnifierStroke: '#231c12', dark: false },
+  nave: { bg: '#1b1a18', node: '#3b342b', text: '#e6cb80', band: '#0c0b0a', accent: '#e6cb80', magnifierStroke: '#e6cb80', dark: true }
+};
+const churchDress = () => {
+  try { return CHURCH_DRESSES[new URLSearchParams(window.location.search).get('dress')] || CHURCH_DRESSES.cardinal; }
+  catch (_) { return CHURCH_DRESSES.cardinal; }
+};
+
 function dressForTheChurch(cal) {
   if (!cal || cal.__church) return cal;
   const dc = { ...(cal.display_config || {}) };
@@ -1100,13 +1115,15 @@ volumeConfigs.church = {
   dimensionEmblem: false,
   assetBase: volumeConfigs.bible.assetBase,
   theme: 'bible',
-  palette: { ...volumeConfigs.bible.palette },
+  get palette() { return churchDress(); },
   documentTitle: 'Biblia Catholica',
   landscape: null,
   extractRoot: manifest => {
     if (manifest?.Calendar) manifest.Calendar = dressForTheChurch(manifest.Calendar);
     return manifest?.Calendar;
   },
+  // The chapels and the chosen chapel's options (O-297).
+  strata: churchStrata,
   createHandlers: makeAdapterHandlers('church')
 };
 volumeConfigs.bible.door = 'church';

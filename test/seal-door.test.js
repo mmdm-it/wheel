@@ -17,7 +17,7 @@ describe('the two halves name each other as doors', () => {
     assert.equal(b.door, 'bible');
   });
   it('the second half wears the first half\'s ground, so the ring does not change colour', () => {
-    assert.deepEqual(volumeConfigs.church.palette, volumeConfigs.bible.palette);
+    assert.notEqual(volumeConfigs.church.palette.bg, volumeConfigs.bible.palette.bg, 'the Church wears its own colours (O-297)');
     assert.equal(volumeConfigs.church.theme, volumeConfigs.bible.theme);
   });
   it('its drawings are read from the first half\'s data root, and its dress swaps the corners', () => {

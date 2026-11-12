@@ -100,7 +100,7 @@ describe('a level changes only by the parent button, a child pyramid node or a s
   it('the swap between the halves names no level: each half opens where it was left', () => {
     const main = read('src/main.js');
     const swap = main.slice(main.indexOf('function swapThroughSeal() {'), main.indexOf('// Browser Back across a gateway pushState'));
-    assert.match(swap, /const search = `\?volume=\$\{encodeURIComponent\(to\)\}`;/);
+    assert.match(swap, /const search = `\?volume=\$\{encodeURIComponent\(to\)\}/);
     assert.doesNotMatch(swap, /level=/);
   });
 });

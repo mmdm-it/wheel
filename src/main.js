@@ -2913,6 +2913,9 @@ function applyTheme(volume) {
   };
   const bg = active.bg;
   root.setAttribute('data-theme', theme);
+  // A palette may say it is a dark dress (O-297): the labels the theme sheet
+  // paints black follow the palette's text colour instead.
+  if (active.dark) root.setAttribute('data-dress', 'dark'); else root.removeAttribute('data-dress');
   root.style.backgroundColor = bg;
   // A standalone door is named for its volume (O-211): the page's own title
   // is the old gateway's, and scripture that calls itself an exhaust
@@ -4490,7 +4493,10 @@ function swapThroughSeal() {
   // replaces it, so the copy's is put out.
   transit.snapshot?.querySelectorAll?.('image').forEach(im => { if (im.getAttribute('id') === 'volume-logo-image') im.style.visibility = 'hidden'; });
   if (sealEl) sealEl.style.visibility = 'hidden';
-  const search = `?volume=${encodeURIComponent(to)}`;
+  // A trial dress on the address (O-297) rides across, so the half tried in
+  // one colour is tried in it both ways.
+  const dress = new URLSearchParams(location.search).get('dress');
+  const search = `?volume=${encodeURIComponent(to)}${dress ? `&dress=${encodeURIComponent(dress)}` : ''}`;
   bootVolume(to, search, null, transit)
     .then(() => { try { window.history.pushState({ wheelGateway: true }, '', search); } catch (_) { /* file:// */ } })
     .catch(err => {

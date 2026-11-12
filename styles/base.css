@@ -1726,3 +1726,14 @@ svg :focus-visible {
   white-space: nowrap;
   pointer-events: none;
 }
+
+/* A DARK DRESS (O-297): the Church's candidate colours include dark grounds,
+   where the theme sheet's black labels would vanish; they wear the
+   palette's text colour instead. */
+/* (the theme attribute too: the theme sheet loads after this one and names it) */
+:root[data-dress="dark"][data-theme] .child-pyramid-label,
+:root[data-dress="dark"][data-theme] .focus-ring-label,
+:root[data-dress="dark"][data-theme] .focus-ring-magnifier-label,
+:root[data-dress="dark"][data-theme] .focus-ring-parent-label { fill: var(--theme-color-text); }
+/* The corner's line drawing is dark ink; on a dark ground it is drawn light. */
+:root[data-dress="dark"] #app > #volume-logo-group #volume-logo-image { filter: invert(0.9); }
