@@ -5204,6 +5204,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         from: transit.from,
         toSeal: sealUrl ? sealEl : null,
         toLogo: document.getElementById('volume-logo-image'),
+        durationMs: Number(new URLSearchParams(location.search).get('swapms')) || undefined,
         onDone: () => {
           sealSwapping = false;
           cornerIconHold = false;

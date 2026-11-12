@@ -13,7 +13,9 @@
 // the frozen SVG snapshot (gateway-wipe.js) plus copies of the HTML overlays
 // that the boot clears, so the verse does not vanish a frame before the fade.
 
-export const SWAP_MS = 750;
+// Doubled from 750 on Howell's word (2026-11-11, "at least twice as long"),
+// so the eye can follow the crossing; ?swapms= tries other lengths.
+export const SWAP_MS = 1500;
 
 const ease = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
