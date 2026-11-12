@@ -806,6 +806,9 @@ export class VolumeLogo {
       finish() { if (done) return; done = true; self._animationId = null; finish(); },
       revert() { if (done) return; done = true; self._animationId = null; revert(); },
       play(onComplete) {
+        // A played journey can be landed from outside (land(), below): it
+        // ends where it was going and keeps its promise to the caller.
+        self._landing = () => { if (done) return; if (self._animationId) cancelAnimationFrame(self._animationId); this.frameAt(1); this.finish(); if (onComplete) onComplete(); };
         const t0 = performance.now();
         const step = now => {
           if (done) return;
@@ -817,6 +820,17 @@ export class VolumeLogo {
         self._animationId = requestAnimationFrame(step);
       }
     };
+  }
+
+  /**
+   * Land a journey playing on its own clock at once, where it was going
+   * (O-293: the swap between the app's two halves is the badge's move, and
+   * its drawing flies to where the badge will stand, not where it stood).
+   */
+  land() {
+    const landing = this._landing;
+    this._landing = null;
+    if (typeof landing === 'function') landing();
   }
 
   _nullJourney() {

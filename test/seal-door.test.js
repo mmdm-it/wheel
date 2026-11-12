@@ -5,7 +5,7 @@ import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { volumeConfigs } from '../src/volume-configs.js';
-import { flightFrame, swapAxis, contentShift, SWAP_MS } from '../src/view/seal-swap.js';
+import { flightFrame, swapAxis, contentShift, flightInk, SWAP_MS } from '../src/view/seal-swap.js';
 import { withExtension } from '../src/view/volume-logo.js';
 
 const main = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
@@ -76,6 +76,17 @@ describe('the contents migrate', () => {
   it('the contents outrun the drawing behind them: pushed, not overtaken', () => {
     assert.ok(axis.reach > Math.hypot(390, 844));
   });
+  it('a drawing\'s ink follows its size: the sky shrinking to the seal is never a dark blot', () => {
+    // the Bible's sky (1540 px at a tenth) down to the Church's seal (60 px at a half)
+    const mid = flightInk(1540, 60, 0.1, 0.5, 0.5, 390);
+    assert.ok(mid < 0.25, `half way down the sky is inked ${mid}`);
+    assert.ok(Math.abs(flightInk(1540, 60, 0.1, 0.5, 1, 390) - 0.5) < 1e-9);
+    assert.equal(flightInk(60, 100, 0.5, 0.5, 0.3), 0.5, 'two drawings of one ink keep it');
+  });
+  it('a drawing wider than the glass hands over to itself in place at either end', () => {
+    assert.equal(flightInk(1540, 60, 0.1, 0.5, 0, 390), 0);
+    assert.equal(flightInk(60, 1540, 0.5, 0.1, 1, 390), 0);
+  });
   it('the crossing is slow enough to follow', () => {
     assert.ok(SWAP_MS >= 1500);
   });
@@ -84,6 +95,7 @@ describe('the contents migrate', () => {
     assert.match(swap, /content\?\.setAttribute\('transform'/);
     assert.match(swap, /outgoing\?\.setAttribute\('transform'/);
     assert.doesNotMatch(swap, /(content|outgoing|carried\.forEach\(el => \{ el)\.style\.opacity/);
+    assert.match(main, /land: \(\) => app\?\.landCorner\?\.\(\)/);
     assert.match(main, /content: liveTop\.find\(el => el\.classList\.contains\('focus-content-group'\)\)/);
   });
 });

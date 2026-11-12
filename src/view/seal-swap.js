@@ -26,7 +26,11 @@
 
 export const SWAP_MS = 1500;
 
-const ease = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+// A sine in and out, gentler than the cubic the first build used: the cubic
+// held everything still for the first fifth of the crossing and had it all
+// landed by four fifths, which left the eye nothing to follow at either end.
+const ease = t => (1 - Math.cos(Math.PI * t)) / 2;
+const clamp01 = x => Math.max(0, Math.min(1, x));
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
@@ -73,19 +77,49 @@ export function ghostOverlays(ids) {
   return ghosts;
 }
 
-// A flying copy of a drawing, laid exactly over where it stood.
-function flyer(src, r, opacity) {
-  const img = document.createElement('img');
-  img.src = src;
-  img.alt = '';
+// A flying copy of a drawing, laid exactly over where it stood. It flies IN
+// the glass, beneath the contents, so the pushed and pulled nodes and the
+// leaf's text are always drawn over it; the svg draws in px with no viewBox,
+// so a page rectangle is an svg rectangle.
+function flyer(src, r) {
+  const img = document.createElementNS(SVG_NS, 'image');
+  img.setAttribute('href', src);
+  img.setAttribute('x', String(r.left));
+  img.setAttribute('y', String(r.top));
+  img.setAttribute('width', String(r.width));
+  img.setAttribute('height', String(r.height));
+  img.setAttribute('preserveAspectRatio', 'none');
   img.setAttribute('aria-hidden', 'true');
-  Object.assign(img.style, {
-    position: 'fixed', left: `${r.left}px`, top: `${r.top}px`, width: `${r.width}px`, height: `${r.height}px`,
-    margin: '0', zIndex: '1001', pointerEvents: 'none', transformOrigin: '0 0', willChange: 'transform, opacity',
-    opacity: String(opacity)
-  });
-  document.body.appendChild(img);
+  img.style.pointerEvents = 'none';
   return img;
+}
+
+// How inked a drawing is at eased progress e. A drawing that changes size
+// changes ink with its size, not with the clock: the badge's drawing on a
+// leaf is the whole sky at a tenth of its ink, and at the seal's half ink it
+// would black out the glass half way down. A drawing wider than the glass
+// (that sky) is not flown at its full size, which would spill past the band:
+// the drawing in place hands over to the flyer in the first quarter of the
+// flight, and the flyer to the drawing in place in the last.
+export function flightInk(fromW, toW, fromOp, toOp, e, glassW = Infinity) {
+  // The ink is a property of the size alone, the same whichever way the
+  // drawing travels: s runs 0 at the smaller end to 1 at the larger on a
+  // scale of size, and the ink leans to the larger end's, so a drawing half
+  // way grown is already nearly as faint as the sky (the first build's
+  // straight line left it as dark as a node at middle sizes).
+  let op;
+  if (fromW > 0 && toW > 0 && Math.abs(Math.log(toW / fromW)) > 1e-6) {
+    const small = Math.min(fromW, toW), large = Math.max(fromW, toW);
+    const w = fromW + (toW - fromW) * e;
+    const sz = clamp01(Math.log(w / small) / Math.log(large / small));
+    const inkSmall = fromW < toW ? fromOp : toOp, inkLarge = fromW < toW ? toOp : fromOp;
+    op = inkSmall + (inkLarge - inkSmall) * (1 - (1 - sz) * (1 - sz));
+  } else {
+    op = fromOp + (toOp - fromOp) * e;
+  }
+  if (fromW > glassW) op *= clamp01(e / 0.25);
+  if (toW > glassW) op *= clamp01((1 - e) / 0.25);
+  return op;
 }
 
 // The frame of a flight at eased progress e: where the copy stands, how large,
@@ -130,12 +164,11 @@ const VESSELS = 'circle.focus-ring-magnifier-circle';   // the lens and the pare
  * `content` is the new half's live content group and `overlays` its live HTML
  * overlays: they are carried in while `snapshot` and `ghosts` are carried out.
  */
-export function playSealSwap({ svg = null, snapshot = null, ghosts = [], from, toSeal = null, toLogo = null, content = null, overlays = [], durationMs = SWAP_MS, onDone = null }) {
+export function playSealSwap({ land = null, svg = null, snapshot = null, ghosts = [], from, toSeal = null, toLogo = null, content = null, overlays = [], durationMs = SWAP_MS, onDone = null }) {
   const targets = [
     { from: from?.seal, to: toLogo },
     { from: from?.logo, to: toSeal }
   ];
-  const live = [toSeal, toLogo].filter(Boolean);
   const flights = [];
   const made = [];      // what the swap put on the glass, taken off at the end
   const undo = [];      // what it changed on the live half, put back at the end
@@ -153,18 +186,27 @@ export function playSealSwap({ svg = null, snapshot = null, ghosts = [], from, t
     ghosts.forEach(el => el.remove());
     undo.forEach(fn => { try { fn(); } catch (_) { /* the element is gone */ } });
     content?.removeAttribute('transform');
-    live.forEach(el => { el.style.visibility = ''; });
     onDone?.();
   };
 
   const box = svg?.getBoundingClientRect?.();
-  const axis = swapAxis(box?.width || window.innerWidth, box?.height || window.innerHeight);
+  const glassW = box?.width || window.innerWidth;
+  const axis = swapAxis(glassW, box?.height || window.innerHeight);
+  let oldBadgeSmall = false, newBadgeSmall = false, oldBadge = null, oldSky = null, oldSkyInk = 1;
   const frame = u => {
     const e = ease(u);
     for (const f of flights) {
+      // The landing is read every frame: the new half can still settle its
+      // badge after the swap began (the emblem's own scale arrives with the
+      // host's first render), and a flight aimed once would land beside it.
+      const at = rectOf(f.to);
+      if (at) f.toRect = at;
       const { dx, dy, sx, sy } = flightFrame(f.fromRect, f.toRect, e);
-      f.el.style.transform = `translate(${dx.toFixed(1)}px, ${dy.toFixed(1)}px) scale(${sx.toFixed(4)}, ${sy.toFixed(4)})`;
-      f.el.style.opacity = String(f.fromOp + (f.toOp - f.fromOp) * e);
+      const ox = f.fromRect.left, oy = f.fromRect.top;
+      f.el.setAttribute('transform', `translate(${(ox + dx).toFixed(1)} ${(oy + dy).toFixed(1)}) scale(${sx.toFixed(4)} ${sy.toFixed(4)}) translate(${-ox} ${-oy})`);
+      f.el.style.opacity = flightInk(f.fromRect.width, f.toRect.width, f.fromOp, f.toOp, e, glassW).toFixed(3);
+      // A drawing wider than the glass is taken over by its own self in place.
+      if (f.to && f.toRect.width > glassW) f.to.style.opacity = (f.toOp * clamp01(1 - (1 - e) / 0.25)).toFixed(3);
     }
     const out = contentShift(axis, e, 'out');
     const inn = contentShift(axis, e, 'in');
@@ -172,19 +214,54 @@ export function playSealSwap({ svg = null, snapshot = null, ghosts = [], from, t
     ghosts.forEach(el => { el.style.transform = `translate(${out.x.toFixed(1)}px, ${out.y.toFixed(1)}px)`; });
     content?.setAttribute('transform', `translate(${inn.x.toFixed(1)} ${inn.y.toFixed(1)})`);
     carried.forEach(el => { el.style.transform = `translate(${inn.x.toFixed(1)}px, ${inn.y.toFixed(1)}px)`; });
-    // The scenery changes hands a little ahead of the crossing.
+    // The scenery changes hands a little ahead of the crossing, except a
+    // corner badge's disc, which empties as its drawing leaves it and fills
+    // as its drawing arrives: a seat is never seen empty and waiting.
     const o = Math.min(1, u / 0.7);
     fading.forEach(el => { el.style.opacity = String(1 - o); });
-    if (disc) disc.style.opacity = String(discInk * o);
+    if (oldSky) oldSky.style.opacity = (oldSkyInk * (1 - clamp01(e / 0.25))).toFixed(3);
+    if (oldBadge) oldBadge.style.opacity = String(oldBadgeSmall ? 1 - clamp01(e / 0.12) : 1 - o);
+    if (disc) disc.style.opacity = String(discInk * (newBadgeSmall ? clamp01((e - 0.88) / 0.12) : o));
   };
 
   try {
-    live.forEach(el => { el.style.visibility = 'hidden'; });
+    const top = svg ? Array.from(svg.children) : [];
+    const liveLogo = top.find(el => el.getAttribute('id') === 'volume-logo-group') || null;
+
+    // THE NEW BADGE LANDS AT ONCE. A badge that changes size between the two
+    // halves (a leaf's whole sky, the other half's corner) eases there on its own
+    // clock, which would leave the flight aimed at where it started. The swap
+    // is that move: the journey is landed (`land`) and any transition put out
+    // for the swap's length.
+    try { land?.(); } catch (_) { /* nothing was moving */ }
+    if (liveLogo) {
+      for (const el of [liveLogo, ...liveLogo.querySelectorAll('*')]) {
+        const was = el.style.transition;
+        el.style.transition = 'none';
+        undo.push(() => { el.style.transition = was; });
+      }
+      liveLogo.getBoundingClientRect();   // the jump to the end, now
+    }
+
+    const inkOf = el => {
+      const v = el && typeof getComputedStyle === 'function' ? Number(getComputedStyle(el).opacity) : NaN;
+      return Number.isFinite(v) ? v : 1;
+    };
     for (const t of targets) {
       if (!t.from?.rect || !t.from.src) continue;
       const toRect = rectOf(t.to);
-      const toOpacity = t.to && typeof getComputedStyle === 'function' ? Number(getComputedStyle(t.to).opacity) || 1 : 0;
-      flights.push({ el: flyer(t.from.src, t.from.rect, t.from.opacity ?? 1), fromRect: t.from.rect, toRect: toRect || t.from.rect, fromOp: t.from.opacity ?? 1, toOp: toRect ? toOpacity : 0 });
+      const toOp = toRect ? inkOf(t.to) : 0;
+      if (t.to) {
+        // The landing is shown at the end, whatever hid it before the swap
+        // (the tap puts the old seal out, and the seal is the same element).
+        const op = t.to.style.opacity;
+        undo.push(() => { t.to.style.visibility = ''; t.to.style.opacity = op; });
+        // The drawing in place is the flyer's landing: put out until it lands,
+        // or, wider than the glass, taken over in the last quarter.
+        if (toRect && toRect.width > glassW) t.to.style.opacity = '0';
+        else t.to.style.visibility = 'hidden';
+      }
+      flights.push({ el: flyer(t.from.src, t.from.rect), to: t.to, fromRect: t.from.rect, toRect: toRect || t.from.rect, fromOp: t.from.opacity ?? 1, toOp });
     }
 
     // Nothing takes the finger while the halves change places.
@@ -195,9 +272,6 @@ export function playSealSwap({ svg = null, snapshot = null, ghosts = [], from, t
       .forEach(type => shield.addEventListener(type, swallow, { passive: false }));
     document.body.appendChild(shield);
     made.push(shield);
-
-    const top = svg ? Array.from(svg.children) : [];
-    const liveLogo = top.find(el => el.getAttribute('id') === 'volume-logo-group') || null;
 
     // THE NEW HALF. The band and the two seats' outlines are copied where
     // they stand and the live ones put out, so the group can travel without
@@ -229,7 +303,8 @@ export function playSealSwap({ svg = null, snapshot = null, ghosts = [], from, t
     carried.forEach(el => { const was = el.style.transform; undo.push(() => { el.style.transform = was; }); });
     disc = liveLogo?.querySelector('circle') || null;
     if (disc) {
-      discInk = typeof getComputedStyle === 'function' ? Number(getComputedStyle(disc).opacity) || 1 : 1;
+      discInk = inkOf(disc);
+      newBadgeSmall = (rectOf(disc)?.width || Infinity) < glassW;
       const was = disc.style.opacity;
       undo.push(() => { disc.style.opacity = was; });
     }
@@ -245,15 +320,30 @@ export function playSealSwap({ svg = null, snapshot = null, ghosts = [], from, t
       ground.style.pointerEvents = 'none';
       for (const child of Array.from(snapshot.children)) {
         if (child.tagName.toLowerCase() === 'rect') { svg.insertBefore(child, svg.firstChild); made.push(child); fading.push(child); }
-        else if (child.getAttribute('id') === 'volume-logo-group') ground.appendChild(child);
+        else if (child.getAttribute('id') === 'volume-logo-group') { ground.appendChild(child); oldBadge = child; }
       }
       snapshot.querySelectorAll(BANDS).forEach(el => el.remove());
       snapshot.querySelectorAll(VESSELS).forEach(el => { el.style.stroke = 'none'; });
       svg.insertBefore(ground, liveLogo ? liveLogo.nextSibling : svg.firstChild);
       made.push(ground);
-      fading.push(ground);
+      oldBadgeSmall = (rectOf(oldBadge?.querySelector('circle'))?.width || Infinity) < glassW;
+      // The old sky's drawing stays in place, clipped to its sector as it
+      // stood, and hands over to its flyer in the first quarter.
+      if ((from?.logo?.rect?.width || 0) > glassW) {
+        oldSky = oldBadge?.querySelector('image#volume-logo-image') || null;
+        if (oldSky) { oldSky.style.visibility = ''; oldSkyInk = from.logo.opacity ?? 1; }
+      }
       svg.appendChild(snapshot);
       outgoing = snapshot;
+    }
+    // The drawings fly over the ground and under everything else.
+    if (svg) {
+      const sky = document.createElementNS(SVG_NS, 'g');
+      sky.style.pointerEvents = 'none';
+      flights.forEach(f => sky.appendChild(f.el));
+      const after = svg.contains(oldBadge) ? oldBadge.parentNode : liveLogo;
+      svg.insertBefore(sky, after ? after.nextSibling : svg.firstChild);
+      made.push(sky);
     }
     // The first frame is laid now: the new half must not be seen at rest
     // before it has travelled.

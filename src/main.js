@@ -5204,6 +5204,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       // group are found among the svg's own children, never by id.
       const liveTop = Array.from(svg.children).filter(el => el !== wipeSnapshot);
       playSealSwap({
+        land: () => app?.landCorner?.(),
         svg,
         snapshot: wipeSnapshot,
         ghosts: transit.ghosts || [],
