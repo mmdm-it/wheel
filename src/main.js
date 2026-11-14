@@ -3482,6 +3482,16 @@ async function renderMargin(selected, translation, seq, part = 0) {
   if (!bookId || !address || !translation || typeof volume?.marginAt !== 'function') { clear(); return; }
   const hadIt = typeof volume.marginAtSync === 'function'
     && volume.marginAtSync(bookId, translation, address) !== null;
+  // WHAT THE PAINT KNEW IS ASKED BEFORE ANYTHING IS AWAITED (O-300). This
+  // function is called in the same breath as the paint, so the answer here is
+  // the paint's own. Asked after the apparatus had been awaited, it was the
+  // answer of a later moment: on a slow line the lines could land - fetched by
+  // an earlier call, since superseded - while this one was still waiting on
+  // its apparatus, and it then found them already there, concluded nothing
+  // had arrived, and repainted nothing. The entry stayed prose, whole on one
+  // screen, until the reader moved (the screening room, question 1, cold).
+  const hadPoem = typeof volume.poemAtSync === 'function'
+    && volume.poemAtSync(bookId, translation, address) !== null;
   let found = null;
   try {
     found = await volume.marginAt(bookId, translation, address);
@@ -3505,8 +3515,6 @@ async function renderMargin(selected, translation, seq, part = 0) {
   // O-112: the poem rides the same wire. Fetched beside the apparatus so a
   // poem verse reached cold learns its lines the same way it learns its
   // notes - and the same reflex re-asks the ring and repaints the text.
-  const hadPoem = typeof volume.poemAtSync === 'function'
-    && volume.poemAtSync(bookId, translation, address) !== null;
   let poemArrived = false;
   if (typeof volume.poemAt === 'function') {
     try { poemArrived = !hadPoem && (await volume.poemAt(bookId, translation, address)) !== null; }

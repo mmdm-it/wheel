@@ -7,6 +7,7 @@
 // and an overflowing half steps down to a 0.7 floor — never truncating.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
+import { readFileSync } from 'node:fs';
 import { layoutPoem, poemPartCount } from '../src/view/detail/plugins/line-layout.js';
 
 // The REAL shape of the sector in miniature: the arc intrudes rightward
@@ -118,5 +119,24 @@ describe('a declared second screen', () => {
       assert.equal(poemPartCount(card, bounds, bad), 1, `verso ${bad}`);
       assert.equal(layoutPoem(card, bounds, 0, bad).parts, 1, `verso ${bad}`);
     }
+  });
+});
+
+
+// O-300: the repaint that follows an entry's lines arriving asks "did the
+// paint have them?" - and must ask it before it waits for anything, or the
+// answer belongs to a later moment than the paint. Read from the source,
+// because the host has no seam to drive this through and the fault only shows
+// on a line slow enough for the two fetches to cross.
+describe('the lines-arrived repaint', () => {
+  it('asks what the paint knew before its first await', () => {
+    const src = readFileSync(new URL('../src/main.js', import.meta.url), 'utf-8');
+    const from = src.indexOf('async function renderMargin(');
+    assert.ok(from > 0, 'the host still has the function');
+    const body = src.slice(from, src.indexOf('\nasync function ', from + 1) > 0 ? src.indexOf('\nasync function ', from + 1) : undefined);
+    const asked = body.indexOf('const hadPoem');
+    const waited = body.indexOf('await ');
+    assert.ok(asked > 0, 'it still asks');
+    assert.ok(asked < waited, 'and asks before anything is awaited');
   });
 });
