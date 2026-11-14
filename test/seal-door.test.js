@@ -16,19 +16,39 @@ describe('the two halves name each other as doors', () => {
     assert.equal(a.door, 'church');
     assert.equal(b.door, 'bible');
   });
-  it('the second half wears the first half\'s ground, so the ring does not change colour', () => {
+  it('the second half wears its own ground, marble, over the first half\'s theme', () => {
     assert.notEqual(volumeConfigs.church.palette.bg, volumeConfigs.bible.palette.bg, 'the Church wears its own colours (O-297)');
     assert.equal(volumeConfigs.church.theme, volumeConfigs.bible.theme);
+    assert.equal(volumeConfigs.church.palette.dark, undefined, 'no dark dress is left to try (O-299)');
   });
-  it('its drawings are read from the first half\'s data root, and its dress swaps the corners', () => {
-    assert.equal(volumeConfigs.church.assetBase, volumeConfigs.bible.assetBase);
-    const m = { Calendar: { display_config: { splash: { x: 1 }, volume_name: 'x' }, years: {} } };
-    const root = volumeConfigs.church.extractRoot(m);
-    assert.equal(root.display_config.detail_sector.default_image, 'st_peters.svg');
-    assert.equal(root.display_config.seal, 'crown_of_thorns.png');
-    assert.equal(root.display_config.splash, undefined, 'no card on arrival');
-    assert.equal(root.display_config.day_extras, false, 'no drawing of the day and no Fano tables');
-    assert.equal(volumeConfigs.church.extractRoot(m), root, 'dressing twice is dressing once');
+  // THE CHURCH IS THE CATECHISM, READ BY THE FIRST HALF'S OWN READER (O-299).
+  it('the second half is the first half\'s reader over a data root of its own', () => {
+    const a = volumeConfigs.bible, b = volumeConfigs.church;
+    for (const k of ['extractRoot', 'loadSupplemental', 'buildOptions', 'formatLabel', 'pruneToOffered', 'buildChain', 'activate']) {
+      assert.equal(b[k], a[k], `${k} is the reader's, not a second copy`);
+    }
+    assert.notEqual(b.loadManifest, a.loadManifest, 'each loads its own cargo');
+    assert.notEqual(b.manifestPath, a.manifestPath);
+    assert.ok(b.assetBase.startsWith(`${b.manifestPath}/`), 'its drawings come from its own root');
+    assert.notEqual(b.assetBase, a.assetBase);
+    assert.equal(b.id, 'church');
+    assert.equal(b.landscape, null, 'the sideways page is the first half\'s own words');
+    assert.equal(b.stampLetter, undefined, 'one volume answers to a stamp letter');
+    assert.equal(b.strata, undefined); assert.equal(b.nowButton, undefined);
+  });
+  it('a volume points the text loader at itself each time it takes the glass', () => {
+    assert.match(main, /const manifest = await fetchManifest\(resolvedVolume\);\n(\s*\/\/[^\n]*\n)*\s*config\.activate\?\.\(manifest\);/);
+    const configs = readFileSync(new URL('../src/volume-configs.js', import.meta.url), 'utf8');
+    const loader = configs.slice(configs.indexOf('function wallLoader('), configs.indexOf("const DEFAULT_VOLUME"));
+    assert.doesNotMatch(loader, /setUnitTextLoader\(/, 'a manifest is loaded once and kept: the loader may not register anything');
+    assert.match(loader, /recall\(volumeId\)\.edition/, 'the remembered edition is the volume\'s own');
+  });
+  it('crossing seeds the arriving half\'s own edition, and the leaving half\'s hook is dropped first', () => {
+    const seed = main.slice(main.indexOf('const reseed = '), main.indexOf('const remembered = recall(volume).edition;'));
+    assert.match(seed, /dimensionsSeededFor !== volume/);
+    assert.ok(seed.indexOf('dimensionBridge.onSettle(null);') > 0, 'the hook is dropped');
+    assert.ok(seed.indexOf('dimensionBridge.onSettle(null);') < seed.indexOf('if (reseed || !dimensionStore.getState().language)'), 'before the store moves');
+    assert.doesNotMatch(main, /data-dress|[?&]dress=/, 'the trial dresses are gone');
   });
   it('no other volume has a door', () => {
     for (const [id, cfg] of Object.entries(volumeConfigs)) if (id !== 'bible' && id !== 'church') assert.equal(cfg.door, undefined, id);
@@ -107,9 +127,7 @@ describe('the contents migrate', () => {
 describe('the disc travels with its emblem', () => {
   const swap = readFileSync(new URL('../src/view/seal-swap.js', import.meta.url), 'utf8');
   const logo = readFileSync(new URL('../src/view/volume-logo.js', import.meta.url), 'utf8');
-  it('St Peter\'s stands bare in the Church\'s corner, and the badge can be declared without a disc', () => {
-    const root = volumeConfigs.church.extractRoot({ Calendar: { display_config: {} } });
-    assert.equal(root.display_config.detail_sector.disc, false);
+  it('the badge can be declared without a disc (the Church\'s declaration, in its own cargo, says so)', () => {
     assert.match(logo, /circleOpacity: this\._renderConfig\?\.disc === false \? 0 : 0\.5,/);
     assert.match(logo, /discInfo\(\) \{\s*if \(!this\._renderConfig \|\| this\._renderConfig\.disc === false\) return null;/);
   });

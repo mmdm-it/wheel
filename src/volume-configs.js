@@ -27,7 +27,7 @@ import { setUnitTextLoader } from './adapters/volume-helpers.js';
 // rather than the world.
 const BIBLE_VOLUME_BASE = './data/gutenberg';
 const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
-import { calendarAdapter, calendarStrata, churchStrata } from './adapters/calendar-adapter.js';
+import { calendarAdapter, calendarStrata } from './adapters/calendar-adapter.js';
 import { buildCalendarDecades, buildCalendarCenturies } from './adapters/volume-helpers.js';
 import { decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
 import { systemOf as calendarSystemOf } from './adapters/calendar-systems.js';
@@ -48,7 +48,7 @@ const adapterRegistry = createAdapterRegistry();
 adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
 adapterRegistry.register('bible', () => ({ ...bibleAdapter, volumeId: 'bible' }));
 adapterRegistry.register('calendar', () => ({ ...calendarAdapter, volumeId: 'calendar' }));
-adapterRegistry.register('church', () => ({ ...calendarAdapter, volumeId: 'church' }));
+adapterRegistry.register('church', () => ({ ...bibleAdapter, volumeId: 'church' }));
 const adapterLoader = createAdapterLoader(adapterRegistry);
 
 // Shared handler factory — the four volume blocks used to carry identical
@@ -57,6 +57,96 @@ function makeAdapterHandlers(volumeId) {
   return params => {
     const adapter = adapterLoader.load(volumeId);
     return adapter?.createHandlers ? adapter.createHandlers(params) : { parentHandler: () => false, childrenHandler: () => false, layoutBindings: {} };
+  };
+}
+
+// ONE READER, MORE THAN ONE VOLUME (O-299). A leaf-and-shard volume loads
+// itself from its own data root; this was the Bible's loader, written inline,
+// and is lifted out so the Church's half — the catechism, the same shape —
+// loads the same way from another root. What differs is named: whose memory
+// holds the remembered edition, and where the cargo lives.
+function wallLoader({ volumeId, base, version }) {
+  return async () => {
+    // WHICH EDITION THE BOOT WAITS FOR (O-175): the one the reader chose
+    // last time; failing that, on a proofread deep link, the one the address
+    // names; failing that, the one the phone's own languages point to
+    // (O-176); failing that, the volume's default. The same order the boot
+    // itself settles on below, so the edition shown is the edition waited
+    // for. Everything else is fetched behind it.
+    const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
+    // AN EDITION NAMED ON THE ADDRESS IS WAITED FOR AND SEATED (O-219): it
+    // used to count only inside a proofread deep link, while the boot's
+    // seeding read it unconditionally — `?edition=X` alone waited for the
+    // tongue's default and seated the volume's, and the chain had no chart.
+    const named = params.get('edition');
+    const chooseFirst = volumeJson => {
+      const cfg = volumeJson?.display_config || {};
+      // ONLY AN EDITION THE READER MAY BE SHOWN HERE (O-217, 2026-10-23).
+      // This set was every edition the volume enumerates, so on an English
+      // phone a stranger's boot waited for the Douay — which the CHECKED
+      // gate then refused — and seated the Hebrew, whose charts had not
+      // arrived: no seat, no items, the app failed to initialise. The gate
+      // is read here exactly as the dimension bridge reads it (isServable:
+      // proofread, else CHECKED where the build says, else a confirmed
+      // unit; the LAN's override lifts it), so the edition waited for is
+      // the edition shown. Keep the two in step.
+      // O-229: the CHECKED gate is open — every edition the volume (and, on
+      // the LAN under ?uncleared=true, its sidecar) enumerates is offered.
+      const servable = e => Boolean(e) && e.hasChart !== false;
+      const enumerated = volumeJson?.editions || [];
+      const offered = new Set(enumerated.filter(servable).map(e => e.code));
+      const remembered = recall(volumeId).edition;
+      if (remembered && offered.has(remembered)) return remembered;
+      if (named && offered.has(named)) return named;
+      const defaults = cfg.editions?.default || {};
+      const tonguesOffered = Object.keys(defaults).filter(l => offered.has(defaults[l]));
+      const lang = firstOfferedLanguage(phoneLanguages(), tonguesOffered);
+      const byTongue = lang ? defaults[lang] : null;
+      if (byTongue && offered.has(byTongue)) return byTongue;
+      const dflt = defaults[cfg.languages?.default];
+      if (dflt && offered.has(dflt)) return dflt;
+      // The first thing offered, in the volume's own order — the boot
+      // seats the same (main.js, the same number).
+      return enumerated.find(e => offered.has(e.code))?.code || null;
+    };
+    const volume = await loadBibleVolume({
+      includeUncleared: unclearedActive(),   // O-231: the LAN's ?uncleared=true merges the sidecar
+      base,
+      version,
+      firstEdition: chooseFirst,
+      // The manifest, the moment it is parsed and before the bundles are
+      // waited for — the boot card listens (O-181).
+      onVolume: v => { try { document.dispatchEvent(new CustomEvent('wheel:volume-early', { detail: v })); } catch { /* no DOM */ } },
+      fetchJson: async path => {
+        const response = await fetch(path);
+        if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
+        return response.json();
+      }
+    });
+    // The wall volume rides along so the builders can reach charts, spines
+    // and text without a second load. It is not a manifest wearing a new
+    // name: `toRoot()` brings back nothing H-14 retired, and the suite
+    // asserts that rather than trusting the comment.
+    //
+    // IT RIDES NON-ENUMERABLY, and that is not fastidiousness — it is a
+    // defect Howell's phone found. `index.js` decides whether a manifest
+    // needs unwrapping by COUNTING ITS KEYS: exactly one means "this is a
+    // wrapper, take what is inside". Adding a plain sibling key made the
+    // count two, so it stopped unwrapping, `display_config` came back
+    // undefined, and the volume logo and the colour scheme disappeared
+    // together — they are read from adjacent lines.
+    //
+    // Non-enumerable says what is true: this is a handle for the builders,
+    // not part of the manifest's content. Nothing that walks, counts or
+    // serialises the manifest can see it.
+    // THE ROOT IS PER EDITION (H-29), and this call cannot know which one:
+    // the manifest loads before the reader's choice is committed. So it
+    // builds the SCAFFOLD from the first declared edition, and every ring
+    // that shows divisions asks the volume live with the edition in hand.
+    // Nothing downstream reads a division off this tree.
+    const manifest = { Gutenberg_Bible: volume.toRoot() };
+    Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
+    return manifest;
   };
 }
 
@@ -90,96 +180,20 @@ const volumeConfigs = {
     // cacheable forever at its data-version URL — and the engine ships no
     // picture that asserts anything about a corpus.
     assetBase: `${BIBLE_VOLUME_BASE}/${BIBLE_VOLUME_VERSION}/`,
-    loadManifest: async () => {
-      // WHICH EDITION THE BOOT WAITS FOR (O-175): the one the reader chose
-      // last time; failing that, on a proofread deep link, the one the address
-      // names; failing that, the one the phone's own languages point to
-      // (O-176); failing that, the volume's default. The same order the boot
-      // itself settles on below, so the edition shown is the edition waited
-      // for. Everything else is fetched behind it.
-      const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
-      // AN EDITION NAMED ON THE ADDRESS IS WAITED FOR AND SEATED (O-219): it
-      // used to count only inside a proofread deep link, while the boot's
-      // seeding read it unconditionally — `?edition=X` alone waited for the
-      // tongue's default and seated the volume's, and the chain had no chart.
-      const named = params.get('edition');
-      const chooseFirst = volumeJson => {
-        const cfg = volumeJson?.display_config || {};
-        // ONLY AN EDITION THE READER MAY BE SHOWN HERE (O-217, 2026-10-23).
-        // This set was every edition the volume enumerates, so on an English
-        // phone a stranger's boot waited for the Douay — which the CHECKED
-        // gate then refused — and seated the Hebrew, whose charts had not
-        // arrived: no seat, no items, the app failed to initialise. The gate
-        // is read here exactly as the dimension bridge reads it (isServable:
-        // proofread, else CHECKED where the build says, else a confirmed
-        // unit; the LAN's override lifts it), so the edition waited for is
-        // the edition shown. Keep the two in step.
-        // O-229: the CHECKED gate is open — every edition the volume (and, on
-        // the LAN under ?uncleared=true, its sidecar) enumerates is offered.
-        const servable = e => Boolean(e) && e.hasChart !== false;
-        const enumerated = volumeJson?.editions || [];
-        const offered = new Set(enumerated.filter(servable).map(e => e.code));
-        const remembered = recall('bible').edition;
-        if (remembered && offered.has(remembered)) return remembered;
-        if (named && offered.has(named)) return named;
-        const defaults = cfg.editions?.default || {};
-        const tonguesOffered = Object.keys(defaults).filter(l => offered.has(defaults[l]));
-        const lang = firstOfferedLanguage(phoneLanguages(), tonguesOffered);
-        const byTongue = lang ? defaults[lang] : null;
-        if (byTongue && offered.has(byTongue)) return byTongue;
-        const dflt = defaults[cfg.languages?.default];
-        if (dflt && offered.has(dflt)) return dflt;
-        // The first thing offered, in the volume's own order — the boot
-        // seats the same (main.js, the same number).
-        return enumerated.find(e => offered.has(e.code))?.code || null;
-      };
-      const volume = await loadBibleVolume({
-        includeUncleared: unclearedActive(),   // O-231: the LAN's ?uncleared=true merges the sidecar
-        base: BIBLE_VOLUME_BASE,
-        version: BIBLE_VOLUME_VERSION,
-        firstEdition: chooseFirst,
-        // The manifest, the moment it is parsed and before the bundles are
-        // waited for — the boot card listens (O-181).
-        onVolume: v => { try { document.dispatchEvent(new CustomEvent('wheel:volume-early', { detail: v })); } catch { /* no DOM */ } },
-        fetchJson: async path => {
-          const response = await fetch(path);
-          if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
-          return response.json();
-        }
-      });
-      // THE TEXT ARRIVES ONE UNIT AT A TIME (O-52). This seeded every unit
-      // here, which was right for a one-book fixture and wrong the moment the
-      // volume became 39 books: 1,413 KB gzipped before the first frame, all
-      // but one book of it unread.
-      //
-      // Registering the loader keeps the dependency pointing the way the
-      // layering does — the host's cache machinery is volume-agnostic and asks
-      // the volume, rather than importing its way across.
-      setUnitTextLoader(unitId => volume.loadTextFor(unitId));
-      // The wall volume rides along so the builders can reach charts, spines
-      // and text without a second load. It is not a manifest wearing a new
-      // name: `toRoot()` brings back nothing H-14 retired, and the suite
-      // asserts that rather than trusting the comment.
-      //
-      // IT RIDES NON-ENUMERABLY, and that is not fastidiousness — it is a
-      // defect Howell's phone found. `index.js` decides whether a manifest
-      // needs unwrapping by COUNTING ITS KEYS: exactly one means "this is a
-      // wrapper, take what is inside". Adding a plain sibling key made the
-      // count two, so it stopped unwrapping, `display_config` came back
-      // undefined, and the volume logo and the colour scheme disappeared
-      // together — they are read from adjacent lines.
-      //
-      // Non-enumerable says what is true: this is a handle for the builders,
-      // not part of the manifest's content. Nothing that walks, counts or
-      // serialises the manifest can see it.
-      // THE ROOT IS PER EDITION (H-29), and this call cannot know which one:
-      // the manifest loads before the reader's choice is committed. So it
-      // builds the SCAFFOLD from the first declared edition, and every ring
-      // that shows divisions asks the volume live with the edition in hand.
-      // Nothing downstream reads a division off this tree.
-      const manifest = { Gutenberg_Bible: volume.toRoot() };
-      Object.defineProperty(manifest, '__wallVolume', { value: volume, enumerable: false });
-      return manifest;
+    loadManifest: wallLoader({ volumeId: 'bible', base: BIBLE_VOLUME_BASE, version: BIBLE_VOLUME_VERSION }),
+    // THE TEXT ARRIVES ONE UNIT AT A TIME (O-52), and the loader that fetches
+    // it is re-pointed AT EVERY BOOT (O-299). It was registered once, inside
+    // the manifest's load — right while one page held one such volume, and
+    // wrong the day it held two: a manifest is loaded once and kept, so the
+    // half booted second would have gone on asking the first half's volume
+    // for its text.
+    //
+    // Registering the loader keeps the dependency pointing the way the
+    // layering does — the host's cache machinery is volume-agnostic and asks
+    // the volume, rather than importing its way across.
+    activate: manifest => {
+      const volume = manifest?.__wallVolume;
+      if (volume) setUnitTextLoader(unitId => volume.loadTextFor(unitId));
     },
     theme: 'bible',
     documentTitle: 'Biblia Catholica',   // the tab's name at a standalone door (O-211)
@@ -1067,63 +1081,40 @@ function buildBibleChain(manifest, options, namesMap) {
 // THE CHURCH (O-292, Howell 2026-11-11). The app has two halves, the Bible and
 // the Church, and the seal at the foot of the glass is the door between them:
 // tapping it swaps the two drawings across the diagonal while the ring stays
-// and its contents drain and refill. The Church's first division is the
-// calendar ("the first thing we see when we go to the church is the
-// calendar"), so until a second division exists the Church IS the calendar's
-// days, in the Bible's dress rather than the company's: the parchment ground
-// (the ring does not change colour across the swap), St Peter's in the corner
-// badge where the crown stood, the crown at the foot of the glass as the way
-// home, the globe for its dimension (Gregorian and Julian) and no card. The
-// dress is declared here because the calendar's own declaration is the
-// company's; the drawings are read from the Bible's data root (W-114: the
-// engine ships no picture). The ring of divisions (calendar, atlas,
-// catechism, who's who, prayers, dictionary) comes with the second division.
-// THE CHURCH'S OWN COLOURS (O-297, Howell 2026-11-12: "dramatically different
-// than the Bible, so it's obvious to anyone that they've moved to a different
-// location"). His to choose: three candidates, tried on the phone in the
-// screening room with ?dress=marble, ?dress=cardinal or ?dress=nave; the
-// choice becomes the only dress and the switch goes.
-export const CHURCH_DRESSES = {
-  cardinal: { bg: '#7a1724', node: '#9a3540', text: '#f8ecd6', band: '#4f0c15', accent: '#e2bf6a', magnifierStroke: '#f8ecd6', dark: true },
-  marble: { bg: '#efeae0', node: '#d6c293', text: '#231c12', band: '#b0904f', accent: '#9a7a3c', magnifierStroke: '#231c12', dark: false },
-  nave: { bg: '#1b1a18', node: '#3b342b', text: '#e6cb80', band: '#0c0b0a', accent: '#e6cb80', magnifierStroke: '#e6cb80', dark: true }
-};
-const churchDress = () => {
-  try { return CHURCH_DRESSES[new URLSearchParams(window.location.search).get('dress')] || CHURCH_DRESSES.cardinal; }
-  catch (_) { return CHURCH_DRESSES.cardinal; }
-};
-
-function dressForTheChurch(cal) {
-  if (!cal || cal.__church) return cal;
-  const dc = { ...(cal.display_config || {}) };
-  delete dc.splash;
-  dc.volume_name = 'Biblia Catholica';
-  // St Peter's stands on the bare ground in the corner (O-295, Howell: "the
-  // St. Peter's artwork does not need any circle behind it in either corner").
-  dc.detail_sector = { ...(dc.detail_sector || {}), logo_base_path: 'assets/', default_image: 'st_peters.svg', disc: false };
-  dc.seal = 'crown_of_thorns.png';
-  dc.day_extras = false;   // no drawing of the day, no Fano tables: those are the company's
-  const dressed = { ...cal, display_config: dc };
-  Object.defineProperty(dressed, '__church', { value: true });
-  return dressed;
-}
+// and its contents drain and refill.
+//
+// FOR RELEASE THE CHURCH HOLDS THE CATECHISM ALONE (O-298, Howell 2026-11-13:
+// "for purposes of release and beta testing, I just want to see the Bible and
+// the Catechism, with the Catechism being under the Vatican button"). A
+// catechism is the Bible's own shape with other words on its levels — one
+// book, its lessons, their numbered questions — so the Church is the Bible's
+// configuration and the Bible's reader pointed at a second data root (O-299),
+// and everything the reader does for a verse it does for a question: the
+// bookmark, the place kept, the three gestures. The volume says what its
+// levels are called and which drawings it wears: St Peter's bare in the
+// corner (O-295), the crown at the foot of the glass as the way home.
+//
+// What it does not inherit: the Bible's page for a phone turned sideways
+// (its words are the Bible's), and the Bible's ground. THE CHURCH WEARS
+// MARBLE (O-297, O-298: "I prefer the marble color scheme for the church,
+// but it does need some fine tuning. It's okay for now").
+//
+// The chapels (O-297) and the calendar's days under this door (O-292) are
+// withdrawn with this: the chapels deferred, the calendar the company's
+// volume at its own door.
+const CHURCH_VOLUME_BASE = './data/catechism';
+const CHURCH_VOLUME_VERSION = '2026.11.13';
 volumeConfigs.church = {
-  ...volumeConfigs.calendar,
+  ...volumeConfigs.bible,
   id: 'church',
   paths: ['/church'],
   door: 'bible',
-  dimensionEmblem: false,
-  assetBase: volumeConfigs.bible.assetBase,
-  theme: 'bible',
-  get palette() { return churchDress(); },
-  documentTitle: 'Biblia Catholica',
+  manifestPath: CHURCH_VOLUME_BASE,
+  assetBase: `${CHURCH_VOLUME_BASE}/${CHURCH_VOLUME_VERSION}/`,
+  loadManifest: wallLoader({ volumeId: 'church', base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION }),
+  palette: { bg: '#efeae0', node: '#d6c293', text: '#231c12', band: '#b0904f', accent: '#9a7a3c', magnifierStroke: '#231c12' },
   landscape: null,
-  extractRoot: manifest => {
-    if (manifest?.Calendar) manifest.Calendar = dressForTheChurch(manifest.Calendar);
-    return manifest?.Calendar;
-  },
-  // The chapels and the chosen chapel's options (O-297).
-  strata: churchStrata,
+  stampLetter: undefined,
   createHandlers: makeAdapterHandlers('church')
 };
 volumeConfigs.bible.door = 'church';

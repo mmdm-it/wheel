@@ -86,12 +86,6 @@ function figureOfDay(serial, dayOfMonth, month) {
   };
 }
 
-// THE DAY'S EXTRAS ARE THE COMPANY'S (O-292): the drawing of the day and
-// Fano's sun and tide tables belong to the calendar as a company's calendar.
-// A volume that shows these days under another dress declares
-// `day_extras: false` and its day card is the day alone. Set per boot by
-// createHandlers from the volume's own declaration.
-let dayExtras = true;
 let manifestPath = null;
 let schemaPath = null;
 let nodeReadFile = null;
@@ -312,10 +306,10 @@ export function detailFor(selected, manifest) {
     // the dimension slider, and make the font about half as big"). They
     // ride a field of their own; the day's own name stays under the weekday.
     const tables = [];
-    const sun = dayExtras && localSunTimes(yearNumber, monthNumber, dayNumber, FANO.lat, FANO.lon, FANO.zoneSince);
+    const sun = localSunTimes(yearNumber, monthNumber, dayNumber, FANO.lat, FANO.lon, FANO.zoneSince);
     if (sun) tables.push(`↑ ${sun.alba}    ↓ ${sun.tramonto}`);
     const key = `${yearNumber}-${String(monthNumber).padStart(2, '0')}-${String(dayNumber).padStart(2, '0')}`;
-    const eph = dayExtras ? ephemerisDays?.[key] : null;
+    const eph = ephemerisDays?.[key];
     if (eph) {
       const h = v => Number(v).toFixed(1).replace('.', ',');
       tables.push(`▲ ${eph.alta[0]}  ${h(eph.alta[1])} m`);
@@ -334,7 +328,7 @@ export function detailFor(selected, manifest) {
       titleAlign: 'center',
       now: selected.now === true || serial === todaySerial(),
       rows,
-      figure: dayExtras ? figureOfDay(serial, dayNumber, monthNumber) : null,
+      figure: figureOfDay(serial, dayNumber, monthNumber),
       tables
     };
   }
@@ -373,7 +367,6 @@ export function detailFor(selected, manifest) {
 }
 
 export function createHandlers({ manifest, options, onGatewayReturn = null, gatewayLabel = '', gatewayReturnLabel = '' }) {
-  dayExtras = manifest?.Calendar?.display_config?.day_extras !== false;
   // Centuries are the top level since O-242 (decades between them and the
   // years; millennia stay cousin-gap texture, removed as a level 2026-07-17);
   // backing out from centuries exits through the gateway, if any. The DEFAULT
@@ -613,9 +606,9 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       const settled = app?.nav?.getCurrent?.();
       if (settled?.level === 'day' && typeof renderDetail === 'function') renderDetail(settled);
     };
-    if (dayExtras) loadEphemeris()?.then(repaintDay);
+    loadEphemeris()?.then(repaintDay);
     // The drawings' index likewise (O-256): the day's figure lands when it lands.
-    if (dayExtras) loadFigures()?.then(repaintDay);
+    loadFigures()?.then(repaintDay);
     if (app?.setParentButtons) {
       app.setParentButtons({ showOuter: calendarMode !== 'century' || Boolean(gatewayReturnLabel) });
     }
@@ -739,50 +732,3 @@ export const calendarStrata = () => [
     } }
 ];
 export const CALENDAR_SYSTEMS = CALENDARS.map(c => ({ ...c }));
-
-// THE CHAPELS (O-297, Howell 2026-11-12). The Church is not one instrument
-// but several rooms — "Chapel is a different kind of sorting. It's not a
-// layer in a hierarchy. It's a room" — so they are not nodes on the focus
-// ring (whose lens would have to say the chapel and the month at once) but a
-// STRATUM: the tertiary, as the Bible's tongues are; its secondary is the
-// chosen chapel's own option, as the Bible's is the tongue's edition; the
-// primary is the chapel itself. Changing room is a selection, never a drill
-// (O-294). Only the calendar is built; the others stand hollow on the ring,
-// and the lens may rest on one to see that it is coming, as on a tongue still
-// on the roadmap: settling there is display-only, the secondary behind it is
-// empty, and the reader keeps the calendar. Order approved by Howell.
-const CHAPELS = [
-  { id: 'calendar', name: 'CALENDAR', live: true },
-  { id: 'prayers', name: 'PRAYERS', live: false },
-  { id: 'catechism', name: 'CATECHISM', live: false },
-  { id: 'dictionary', name: 'DICTIONARY', live: false },
-  { id: 'atlas', name: 'ATLAS', live: false },
-  { id: 'whoswho', name: "WHO'S WHO", live: false }
-];
-const chapelById = id => CHAPELS.find(c => c.id === id) || null;
-let chosenChapel = 'calendar';    // the room the reader is in
-let shownChapel = 'calendar';     // the room under the tertiary lens: the plane behind shows ITS options
-export const churchStrata = () => {
-  chosenChapel = 'calendar';
-  shownChapel = 'calendar';
-  const [systems] = calendarStrata();
-  return [
-    { ...systems,
-      // The plane behind the chapels is the shown chapel's: the calendar's
-      // reckonings under the calendar, nothing yet under a room not built.
-      allowEmpty: true,
-      items: () => (shownChapel === 'calendar' ? systems.items() : []) },
-    { id: 'tertiary', mirrored: false, centerMag: true,
-      items: () => CHAPELS.map(c => c.id),
-      label: id => chapelById(id)?.name || id,
-      selected: () => shownChapel,
-      classFor: id => (chapelById(id)?.live ? '' : 'is-coming'),
-      select: id => {
-        if (!chapelById(id)) return false;
-        shownChapel = id;
-        if (chapelById(id).live) chosenChapel = id;
-        return true;
-      } }
-  ];
-};
-export const CHURCH_CHAPELS = CHAPELS.map(c => ({ ...c }));

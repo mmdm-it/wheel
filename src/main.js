@@ -2064,6 +2064,7 @@ let seatOrder = () => null;     // O-128: where a seat stands, for the basement'
 let seatPlace = () => null;     // O-275: where a LEAF stands on the edition up, or null if it does not hold it
 let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
 let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
+let dimensionsSeededFor = null;                 // the volume whose editions the store's choice belongs to (O-299)
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
 let cornerImageAt = () => null;
@@ -2874,6 +2875,9 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
     : null;
 
   const manifest = await fetchManifest(resolvedVolume);
+  // A manifest is fetched once and kept; whatever a volume must point at
+  // itself each time it takes the glass, it does here (O-299).
+  config.activate?.(manifest);
   const root = config.extractRoot(manifest);
   const validation = validateVolumeRoot(root);
   if (!validation.ok) {
@@ -2913,9 +2917,6 @@ function applyTheme(volume) {
   };
   const bg = active.bg;
   root.setAttribute('data-theme', theme);
-  // A palette may say it is a dark dress (O-297): the labels the theme sheet
-  // paints black follow the palette's text colour instead.
-  if (active.dark) root.setAttribute('data-dress', 'dark'); else root.removeAttribute('data-dress');
   root.style.backgroundColor = bg;
   // A standalone door is named for its volume (O-211): the page's own title
   // is the old gateway's, and scripture that calls itself an exhaust
@@ -4493,10 +4494,7 @@ function swapThroughSeal() {
   // replaces it, so the copy's is put out.
   transit.snapshot?.querySelectorAll?.('image').forEach(im => { if (im.getAttribute('id') === 'volume-logo-image') im.style.visibility = 'hidden'; });
   if (sealEl) sealEl.style.visibility = 'hidden';
-  // A trial dress on the address (O-297) rides across, so the half tried in
-  // one colour is tried in it both ways.
-  const dress = new URLSearchParams(location.search).get('dress');
-  const search = `?volume=${encodeURIComponent(to)}${dress ? `&dress=${encodeURIComponent(dress)}` : ''}`;
+  const search = `?volume=${encodeURIComponent(to)}`;
   bootVolume(to, search, null, transit)
     .then(() => { try { window.history.pushState({ wheelGateway: true }, '', search); } catch (_) { /* file:// */ } })
     .catch(err => {
@@ -4635,7 +4633,24 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // again); else the volume's pinned default. `setTranslation` refuses an
   // edition that is no longer servable, so a remembered choice that has since
   // been withdrawn falls through to the default rather than stranding.
-  if (!dimensionStore.getState().language) {
+  //
+  // THE CHOICE IS THE VOLUME'S OWN (O-299). One page now holds two volumes
+  // that each have editions — the two halves the seal joins — and the store
+  // holds one choice: crossing between them, the sticky choice is the OTHER
+  // half's and names nothing here. So a volume with editions of its own is
+  // seeded afresh whenever it is not the one seeded last — by its own
+  // remembered edition first, which is how each half is found as it was
+  // left. The leaving volume's settle hook is dropped BEFORE the store
+  // moves: it remembers a committed edition under its own volume's name, and
+  // would have written this half's edition into the other half's memory.
+  const reseed = Boolean(translationsMeta) && dimensionsSeededFor !== null && dimensionsSeededFor !== volume;
+  if (reseed) {
+    dimensionBridge.onSettle(null);
+    dimensionBridge.setEditionsHere(null);
+    dimensionBridge.setEditionsArriving([]);
+  }
+  if (translationsMeta) dimensionsSeededFor = volume;
+  if (reseed || !dimensionStore.getState().language) {
     const remembered = recall(volume).edition;
     // THE PHONE'S OWN TONGUE ON A FIRST VISIT (O-176): nothing remembered and
     // no edition named on the address, so the languages the reader set on

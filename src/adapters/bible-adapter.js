@@ -189,6 +189,7 @@ const byDeclaredOrder = (a, b) => {
 let _renderDetail = null;          // captured at boot; repaints when text lands
 const _requestedChapters = new Set(); // asked-for files, so a failure is not re-asked forever
 let _chapterOrder = null;          // flat reading order, memoized
+let _chapterOrderOf = null;        // …for this volume: one page may hold two (O-299)
 
 // THE READING ORDER, FROM THE ENUMERATION (H-14).
 //
@@ -202,8 +203,8 @@ let _chapterOrder = null;          // flat reading order, memoized
 // the units the volume enumerates, and the read-ahead warms the next unit
 // rather than the next chapter file.
 function chaptersInReadingOrder(manifest) {
-  if (_chapterOrder) return _chapterOrder;
   const volume = manifest?.__wallVolume;
+  if (_chapterOrder && _chapterOrderOf === volume) return _chapterOrder;
   // FLAT, because the enumeration is flat now (H-29). This walked
   // `testaments[].books[]`; the volume no longer says which division a book is
   // in, and the read-ahead never needed to know — it warms the NEXT unit, and
@@ -228,6 +229,7 @@ function chaptersInReadingOrder(manifest) {
       verseCount: Number.isFinite(book.leaves) ? book.leaves : 0
     }));
   _chapterOrder = order;
+  _chapterOrderOf = volume;
   return order;
 }
 
