@@ -3245,6 +3245,8 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
     if (Array.isArray(offs) && offs.length > 1 && typeof payload.text === 'string') {
       const txt = payload.text;
       payload.poemLines = offs.map((o, i) => txt.slice(o, i + 1 < offs.length ? offs[i + 1] : txt.length).trim()).filter(Boolean);
+      // O-300: the line the edition says opens the second screen, if any.
+      payload.verso = pv?.versoAtSync?.(selected?.meta?.externalFile, translation, selected?.meta?.verseKey) ?? null;
     }
     // O-84: which half of a split verse to show. An explicit part rides a
     // preview (the reading tap paints ahead of the ring); otherwise the
@@ -5176,7 +5178,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
           if (Array.isArray(offs) && offs.length > 1) {
             const txt = payload.text;
             const pls = offs.map((o, i) => txt.slice(o, i + 1 < offs.length ? offs[i + 1] : txt.length).trim()).filter(Boolean);
-            parts = poemPartCount(pls, bounds);
+            // O-300: a declared second screen is two screens at any length.
+            const verso = volumeForParts()?.versoAtSync?.(item?.meta?.externalFile, translation, item?.meta?.verseKey) ?? null;
+            parts = poemPartCount(pls, bounds, verso);
           } else {
             parts = versePartCount(payload.text, bounds);
           }

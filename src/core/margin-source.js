@@ -141,6 +141,9 @@ export function legendCached(edition) { return legendCache.get(edition) ?? null;
  * verse with no entry here simply reads as prose.
  */
 const poetryCache = new Map();
+// O-300: the same file may name, per address, the line at which the second
+// screen begins (`verso`). It lands and is dropped with the lines it indexes.
+const versoCache = new Map();
 export async function loadPoetry({ base, version, edition, unitId, fetchJson, identityOf }) {
   if (!edition || !unitId) return null;
   const key = `${edition}|${unitId}`;
@@ -151,6 +154,7 @@ export async function loadPoetry({ base, version, edition, unitId, fetchJson, id
     const declared = typeof identityOf === 'function' ? identityOf(file) : undefined;
     if (file && declared === unitId && file.poetry && typeof file.poetry === 'object') {
       value = file.poetry;
+      if (file.verso && typeof file.verso === 'object') versoCache.set(key, file.verso);
     }
   } catch {
     value = null;   // prose is a state, not a failure
@@ -159,8 +163,9 @@ export async function loadPoetry({ base, version, edition, unitId, fetchJson, id
   return value;
 }
 export function poetryCached(edition, unitId) { return poetryCache.get(`${edition}|${unitId}`) ?? null; }
+export function versoCached(edition, unitId) { return versoCache.get(`${edition}|${unitId}`) ?? null; }
 
-export function clearMarginCache() { cache.clear(); poetryCache.clear(); legendCache.clear(); }
+export function clearMarginCache() { cache.clear(); poetryCache.clear(); versoCache.clear(); legendCache.clear(); }
 
 /**
  * The addresses a chart seats, in its own order, spelled the way a reader's

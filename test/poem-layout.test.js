@@ -68,3 +68,55 @@ describe('the poem cascades along the arc', () => {
     assert.ok(a.fontPx >= uniform * 0.7 - 0.01, 'the floor was breached');
   });
 });
+
+// O-300 (Howell, 2026-11-13: "I want them like flashcards across the half
+// step"). The edition may name the line that opens the second screen; where
+// it does, the entry is two screens at any length and is cut there only.
+describe('a declared second screen', () => {
+  const card = ['one short line for the front', 'and one short line for the back'];
+  const words = t => t.split(/\s+/).filter(Boolean).length;
+
+  it('makes two screens of an entry that would sit whole on one', () => {
+    assert.equal(poemPartCount(card, bounds), 1);
+    assert.equal(layoutPoem(card, bounds).parts, 1);
+    assert.equal(poemPartCount(card, bounds, 1), 2);
+    const front = layoutPoem(card, bounds, 0, 1), back = layoutPoem(card, bounds, 1, 1);
+    assert.equal(front.parts, 2);
+    assert.equal(back.parts, 2);
+    assert.equal(front.lines.map(l => l.text).join(' '), card[0]);
+    assert.equal(back.lines.map(l => l.text).join(' '), card[1]);
+    assert.equal(front.fontPx, back.fontPx, 'a short card changed size between its faces');
+  });
+
+  it('cuts where it is told, not where the balance falls', () => {
+    const lopsided = ['a front', ...Array.from({ length: 6 }, (_, i) => `item ${i + 1} of the list on the back of the card`)];
+    const front = layoutPoem(lopsided, bounds, 0, 1), back = layoutPoem(lopsided, bounds, 1, 1);
+    assert.equal(front.lines.map(l => l.text).join(' '), 'a front');
+    assert.equal(back.lines.filter(l => l.head).length, 6);
+    assert.equal(back.lines.reduce((n, l) => n + words(l.text), 0), lopsided.slice(1).reduce((n, l) => n + words(l), 0));
+  });
+
+  it('sets a long back smaller rather than past the bottom, every word seated', () => {
+    const long = ['a front', Array.from({ length: 100 }, (_, i) => `word${i}`).join(' ')];
+    const whole = layoutPoem(long, bounds, 0);
+    const back = layoutPoem(long, bounds, 1, 1);
+    assert.ok(back.fontPx < whole.fontPx * 0.7, 'the declared cut never went under the balance cut\'s floor');
+    assert.ok(back.fontPx >= layoutPoem(card, bounds, 0, 1).fontPx * 0.45 - 0.01, 'stepped under its own floor');
+    assert.equal(back.lines.reduce((n, l) => n + words(l.text), 0), 100);
+    const lineH = back.fontPx * 1.3;
+    for (const l of back.lines) assert.ok(l.y + lineH <= bounds.bottomY + 0.5, `a row at y=${Math.round(l.y)} is past the bottom`);
+  });
+
+  it('drops no word of a back that no size can hold', () => {
+    const endless = ['a front', Array.from({ length: 400 }, (_, i) => `word${i}`).join(' ')];
+    const back = layoutPoem(endless, bounds, 1, 1);
+    assert.equal(back.lines.reduce((n, l) => n + words(l.text), 0), 400);
+  });
+
+  it('ignores a line that is not inside the entry', () => {
+    for (const bad of [0, 2, 7, -1, 1.5, '1', null, undefined]) {
+      assert.equal(poemPartCount(card, bounds, bad), 1, `verso ${bad}`);
+      assert.equal(layoutPoem(card, bounds, 0, bad).parts, 1, `verso ${bad}`);
+    }
+  });
+});

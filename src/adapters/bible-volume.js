@@ -24,7 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
-import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, marksAt, addressOrder, manuscriptsIn, loadPoetry, poetryCached } from '../core/margin-source.js';
+import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, marksAt, addressOrder, manuscriptsIn, loadPoetry, poetryCached, versoCached } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
 
@@ -467,6 +467,12 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     poemAtSync(unitId, edition, address) {
       const p = poetryCached(edition, unitId);
       return p?.[address] ?? null;
+    },
+    // O-300: the line that opens the second screen, where the edition
+    // declares one for this address; null leaves the cut to the layout.
+    versoAtSync(unitId, edition, address) {
+      const v = versoCached(edition, unitId)?.[address];
+      return Number.isInteger(v) ? v : null;
     },
 
     marginAtSync(unitId, edition, address) {
