@@ -27,6 +27,10 @@
  * Collapse: reverse of expand
  */
 
+// A drawing named without an extension is a PNG, as every emblem was until
+// the Church (O-292) wore St Peter's, which is drawn as an SVG.
+export const withExtension = name => (/\.[a-z0-9]+$/i.test(name) ? name : `${name}.png`);
+
 // THE LOGO'S SIZE, in the two states, as named knobs (FN-4, 2026-08-17).
 //
 // Both numbers were literals repeated inside the render and the animation's
@@ -190,7 +194,7 @@ export class VolumeLogo {
     if (!base) return false;
     if (this._renderConfig.default_image === imageName) return false;
     this._renderConfig.default_image = imageName;
-    this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${imageName}.png`);
+    this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${withExtension(imageName)}`);
     this._hrefSurround();
     // Each emblem at its own size and place (O-148): a collapsed badge is
     // re-boxed now, circle with it; an expanded or moving one takes it from
@@ -304,7 +308,7 @@ export class VolumeLogo {
     this.circle.setAttribute('r', discRadius * (1 + this._discFeather()));
     this._featherNow = null;
     this._setFeather(this._discFeather());
-    this.circle.setAttribute('opacity', config.color_scheme?.detail_sector_opacity || '0.5');
+    this.circle.setAttribute('opacity', config.disc === false ? '0' : (config.color_scheme?.detail_sector_opacity || '0.5'));
     // NO OUTLINE (Howell, 2026-08-17: "I'd like to try removing the dark
     // stroke"). The badge was a 1px black ring over a 50%-opacity fill, which
     // drew a hard edge around a deliberately soft shape. Removed rather than
@@ -316,7 +320,7 @@ export class VolumeLogo {
     const defaultImage = config.default_image;
     
     if (logoBasePath && defaultImage) {
-      const logoPath = logoBasePath + defaultImage + '.png';
+      const logoPath = logoBasePath + withExtension(defaultImage);
       const logoX = centerX - (logoWidth / 2);
       const logoY = centerY - (logoHeight / 2);
       
@@ -511,6 +515,18 @@ export class VolumeLogo {
     return Number.isFinite(declared) && declared > 0 ? declared : 0;
   }
 
+  /**
+   * The corner badge's disc, for whoever must draw it elsewhere (O-295: the
+   * seal at the foot of the other half wears the departing emblem on its
+   * disc): its colour and its diameter as a fraction of the emblem's width
+   * in the corner. Null for a badge declared without a disc.
+   */
+  discInfo() {
+    if (!this._renderConfig || this._renderConfig.disc === false) return null;
+    const g = this._collapsedGeometry();
+    return { colour: this._discColour(), ratio: g.logoWidth > 0 ? (2 * g.discRadius) / g.logoWidth : 0.5 };
+  }
+
   _discColour() {
     return this._renderConfig?.color_scheme?.detail_sector || '#362e6a';
   }
@@ -622,7 +638,10 @@ export class VolumeLogo {
       circleCy: cy,
       circleR: discRadius * (1 + this._discFeather()),
       circleFeather: this._discFeather(),
-      circleOpacity: 0.5,
+      // A volume may declare its corner badge without a disc (O-295: the
+      // Church's St Peter's stands on the bare ground); it still opens into
+      // a coloured sector at a leaf, the disc fading in as it grows.
+      circleOpacity: this._renderConfig?.disc === false ? 0 : 0.5,
       logoX: cx - logoWidth / 2,
       logoY: cy - logoHeight / 2,
       logoWidth,
@@ -802,6 +821,9 @@ export class VolumeLogo {
       finish() { if (done) return; done = true; self._animationId = null; finish(); },
       revert() { if (done) return; done = true; self._animationId = null; revert(); },
       play(onComplete) {
+        // A played journey can be landed from outside (land(), below): it
+        // ends where it was going and keeps its promise to the caller.
+        self._landing = () => { if (done) return; if (self._animationId) cancelAnimationFrame(self._animationId); this.frameAt(1); this.finish(); if (onComplete) onComplete(); };
         const t0 = performance.now();
         const step = now => {
           if (done) return;
@@ -813,6 +835,17 @@ export class VolumeLogo {
         self._animationId = requestAnimationFrame(step);
       }
     };
+  }
+
+  /**
+   * Land a journey playing on its own clock at once, where it was going
+   * (O-293: the swap between the app's two halves is the badge's move, and
+   * its drawing flies to where the badge will stand, not where it stood).
+   */
+  land() {
+    const landing = this._landing;
+    this._landing = null;
+    if (typeof landing === 'function') landing();
   }
 
   _nullJourney() {

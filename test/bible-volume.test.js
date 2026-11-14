@@ -545,3 +545,30 @@ describe('the division carries its colour (O-79)', () => {
       'null, not undefined: the absence is answered rather than left blank');
   });
 });
+
+// O-300: the side file that carries an entry's lines may also name the line
+// at which its second screen begins. Asked through the VOLUME, because the
+// first build of this passed every layout test and died in the browser on a
+// name the volume never imported.
+describe('the line that opens the second screen (O-300)', () => {
+  const sideFile = { book: 'bdra9e1', edition: 'DRA', poetry: { '1:1': [0, 17], '1:2': [0, 9, 30] }, verso: { '1:1': 1, '1:2': 'two' } };
+  const withSide = () => loadBibleVolume({
+    base: BASE, version: VERSION,
+    fetchJson: async p => (/[\\/]poetry[\\/]/.test(p) ? sideFile : fetchJson(p))
+  });
+
+  it('is null until the side file has landed, then what the file declares', async () => {
+    const volume = await withSide();
+    assert.equal(volume.versoAtSync('bdra9e1', 'DRA', '1:1'), null);
+    assert.deepEqual(await volume.poemAt('bdra9e1', 'DRA', '1:1'), [0, 17]);
+    assert.equal(volume.versoAtSync('bdra9e1', 'DRA', '1:1'), 1);
+  });
+
+  it('is null where the file names none, or names something that is not a line', async () => {
+    const volume = await withSide();
+    await volume.poemAt('bdra9e1', 'DRA', '1:2');
+    assert.equal(volume.versoAtSync('bdra9e1', 'DRA', '1:2'), null);
+    assert.equal(volume.versoAtSync('bdra9e1', 'DRA', '1:3'), null);
+    assert.equal(volume.versoAtSync('bdra9e1', 'VUL', '1:1'), null);
+  });
+});

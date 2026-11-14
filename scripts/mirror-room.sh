@@ -70,6 +70,21 @@ for arg in "$@"; do
   esac
 done
 
+# A PUBLIC ROOT NEEDS HOWELL'S SAFE WORD (2026-11-11, his ruling: "I want
+# deploys to the public server that is the root for each website (I'm not
+# talking about the screening room) to be a decision made by me and
+# authorized by me using a unique safe word"). The word lives outside both
+# repositories in ~/.config/wheel/public-word, his to set; the public and
+# root doors refuse without PUBLIC_WORD=<word> on the command, and refuse
+# everything while the file is missing or empty. The room's doors need none.
+WORD_FILE="${HOME}/.config/wheel/public-word"
+for door in "${DOORS[@]}"; do
+  if [[ "$door" == public || "$door" == root ]]; then
+    if [[ ! -s "$WORD_FILE" ]]; then echo "mirror-room: $door REFUSED — Howell's safe word is not set ($WORD_FILE)" >&2; exit 3; fi
+    if [[ "${PUBLIC_WORD:-}" != "$(head -n1 "$WORD_FILE" | tr -d '\r\n')" ]]; then echo "mirror-room: $door REFUSED — a public root is Howell's decision, spoken in his safe word (PUBLIC_WORD)" >&2; exit 3; fi
+  fi
+done
+
 # Where each door lives and the address that proves what it serves.
 target() { case "$1" in public) echo "$PUBLIC_REMOTE/" ;; root) echo "$ROOT_REMOTE/" ;; *) echo "$REMOTE/$1/" ;; esac; }
 address() { case "$1" in public) echo "https://bibliacatholica.com/" ;; root) echo "https://mmdm.it/" ;; *) echo "https://mmdm.it/wheel-v3/$1/" ;; esac; }
@@ -91,6 +106,11 @@ if [[ ! -f dist/app.js || dist/app.js -ot src/main.js ]]; then
   echo "mirror-room: dist/app.js is missing or older than src/main.js — run npm run build first" >&2
   exit 1
 fi
+
+# The Church's volume version is the engine's own declaration, read rather
+# than repeated, so a new cargo version cannot leave the mirror behind.
+CHURCH_VOLUME_VERSION="$(sed -n "s/^const CHURCH_VOLUME_VERSION = '\([^']*\)';$/\1/p" src/volume-configs.js)"
+[[ -n "$CHURCH_VOLUME_VERSION" ]] || { echo "mirror-room: src/volume-configs.js declares no CHURCH_VOLUME_VERSION" >&2; exit 1; }
 
 # The copies that leave — the cleared corpus, the calendar without its
 # notes, the public door's page — are made here and gone at exit.
@@ -122,6 +142,20 @@ for door in "${DOORS[@]}"; do
       # 2026-11-10, stopped here with the engine up and no data beside it).
       [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/gutenberg"
       rsync -azc -i --delete "${DRY[@]}" "$WORK/gutenberg/" "${DEST}data/gutenberg/"
+      # THE CHURCH RIDES THE BIBLE'S DOOR (O-292), AND THE CHURCH IS THE
+      # CATECHISM (O-299): a second volume of the Bible's own shape, so it
+      # leaves through the same cleared gate, from its own root and under its
+      # own version (the filter's default is the Bible's). The calendar's
+      # days, which this door carried for the Church until then, are removed
+      # by name: the Church no longer reads them, and the calendar has a door
+      # of its own.
+      node scripts/deploy-pd-filter.mjs data/catechism "$WORK/catechism" "$CHURCH_VOLUME_VERSION"
+      echo "== $door: the cleared copy of data/catechism/ (checksum)"
+      [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/catechism"
+      rsync -azc -i --delete "${DRY[@]}" "$WORK/catechism/" "${DEST}data/catechism/"
+      if [[ ${#DRY[@]} -eq 0 ]]; then
+        ssh "${DEST%%:*}" "rm -rf ${DEST#*:}data/calendar"
+      fi
       if [[ "$door" == public ]]; then
         echo "== $door: the page with the door's own head"
         node scripts/stamp-door-head.mjs public index.html "$WORK/index.html"
