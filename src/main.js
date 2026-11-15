@@ -4791,6 +4791,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     namesMap.books = ln.books || ln || {};
     namesMap.testaments = ln.testaments || {};
     namesMap.bookAbbreviations = ln.book_abbreviations || {};
+    namesMap.chapters = ln.chapters || {};   // O-302: a chapter's own name, where the edition gives one
     // THE VOLUME TITLE (W-27, 2026-07-31): the door's name in the reader's
     // tongue — the last engine-held human language. Registry-first; consumers
     // fall back to their own default when a language has no title yet.

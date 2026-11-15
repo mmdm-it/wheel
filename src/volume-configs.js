@@ -327,6 +327,10 @@ const volumeConfigs = {
             books: flattenEditionAxis(names.books),
             testaments: names.testaments || {},
             book_abbreviations: flattenEditionAxis(names.book_abbreviations),
+            // A CHAPTER MAY HAVE A NAME OF ITS OWN (O-302): a catechism's
+            // lessons are headed with words, not only numbered. Same axis,
+            // same flattening: chapters[editionCode][bookId][chapterLabel].
+            chapters: flattenEditionAxis(names.chapters),
             title: names.title || null
           }]))
       };

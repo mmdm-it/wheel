@@ -205,6 +205,20 @@ describe('reading on through the volume', () => {
     assert.equal(h.getParentLabel(pick('GAMM_1_1')), 'GAMMA I');
   });
 
+  it('a chapter with a name of its own is called by it (O-302)', () => {
+    // A catechism's lessons are headed with words. Where the names carry one
+    // for this chapter of this book, the label is that name alone and declares
+    // no numeral suffix; every other chapter reads as before.
+    const h = inVerseMode({ locale: 'latin', books: { ALPH: 'Alpha', BETH: 'Beta', GAMM: 'Gamma' }, testaments: {}, chapters: { ALPH: { 2: 'The Second Thing' } } });
+    const chain = h.layoutBindings.getBibleVerseChain('ALPH_1_1');
+    const pick = id => chain.items.find(v => v && v.id === id);
+    assert.equal(h.getParentLabel(pick('ALPH_2_1')), 'THE SECOND THING');
+    assert.equal(h.getParentLabelSuffix(pick('ALPH_2_1')), '', 'a name ends in no numeral, so none is declared');
+    assert.equal(h.getParentLabel(pick('ALPH_1_1')), 'ALPHA I', 'a chapter without a name keeps the book and the numeral');
+    assert.equal(h.getParentLabelSuffix(pick('ALPH_1_1')), 'I');
+    assert.equal(h.getParentLabel(pick('BETH_1_1')), 'BETA I', 'and another book\'s chapter of the same number is not renamed');
+  });
+
   it('the parent button counts in the reader\'s own letters', () => {
     // From the phone, 2026-08-02: 'Αʹ ΣΑΜΟΥΗΛ XVII' — a Greek book name and
     // a Latin numeral in one label, because this site baked Roman. The book

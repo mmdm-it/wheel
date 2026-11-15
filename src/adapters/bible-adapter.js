@@ -1069,8 +1069,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (!chapterKey) return '';
     const n = Number.parseInt(chapterKey, 10);
     const numeral = Number.isFinite(n) ? toTraditionNumeral(n, namesMap?.locale) : String(chapterKey);
-    // Only a suffix if the label actually carries a name in front of it.
-    return getParentLabel(item) === numeral ? '' : numeral;
+    // Only a suffix if the label actually carries a name in front of it —
+    // and ends in the numeral at all: a chapter called by its own name
+    // (O-302) appended nothing.
+    const label = getParentLabel(item);
+    return label === numeral || !label.endsWith(` ${numeral}`) ? '' : numeral;
   };
 
   // WHOSE BOOK IS BEING NAMED? (O-94, Howell 2026-08-23.)
@@ -1176,6 +1179,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // polytonic Greek's breathings and accents, and means nothing at all
       // for Hebrew. Latin-script names still shout; every other script is
       // left in the form its own tradition writes it.
+      // A CHAPTER WITH A NAME IS CALLED BY IT (O-302, Howell 2026-11-15, asked
+      // where a catechism's lesson titles should show: the parent label while
+      // the reader is inside the lesson). Where the names carry a name for
+      // this chapter of this book it stands alone — the book and the numeral
+      // give way to it, as a book's name stands alone over its chapters. The
+      // Bible's names carry none, and it reads as before.
+      const chapterName = namesMap?.chapters?.[bookId]?.[chapterKey];
+      if (chapterName) return toDisplayCase(chapterName);
       const bookName = toDisplayCase(bookNameFor(bookId));
       return bookName ? `${bookName} ${chapterLabel}` : chapterLabel;
     }
