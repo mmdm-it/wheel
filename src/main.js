@@ -164,7 +164,7 @@ import { computeMarginArea, setMarginKeepOut } from './geometry/margin-area.js';
 import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
-import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
+import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat, setParentLabelCornerOccupied } from './geometry/focus-ring-geometry.js';
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 import { mountDimensionGlobe, mountDimensionEmblem } from './view/dimension-globe.js';
 import { labelRotationDeg } from './view/node-appearance.js';
@@ -846,6 +846,7 @@ let sealSwapping = false;
 // into view with the rest of the primary stratum"; rising from the bottom of
 // the glass was the first try, and wrong). While `sealRides` it is one of the
 // primary's overlays in setPrimaryVisual; sealRest() takes it off the plane.
+const SEAL_LABEL_GAP_PX = 6;   // O-301: clear glass between the seal and a label seated beside it
 let sealRides = false;
 function sealRest() {
   sealRides = false;
@@ -877,6 +878,13 @@ function applySeal() {
     : '';
   if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; }
   else { sealEl.hidden = true; sealEl.removeAttribute('src'); }
+  // THE PARENT'S LABEL STOPS SHORT OF THE SEAL (O-301): a label long enough to
+  // start in the corner ran across the drawing that now stands there. The
+  // seal's width is the stylesheet's, known before the drawing has loaded, so
+  // its right edge is measured here and handed to the geometry every seat and
+  // flight reads; a volume without a seal hands the corner back.
+  const sealRight = sealUrl ? sealEl.getBoundingClientRect().right : 0;
+  setParentLabelCornerOccupied(sealRight > 0 ? sealRight + SEAL_LABEL_GAP_PX : 0);
 }
 let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
 let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
