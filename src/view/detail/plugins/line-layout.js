@@ -475,9 +475,21 @@ function flowPoemAt(poemLines, bounds, fontPx, { unbounded = false } = {}) {
   }
 }
 
+// THE EDITION MAY DECLARE WHERE THE SECOND SCREEN BEGINS (O-300, Howell
+// 2026-11-13: "I want them like flashcards across the half step"). `verso`
+// is the index of the line that opens the second screen — the back of the
+// leaf. Where an entry has one, it is ALWAYS two screens, however short, and
+// it is cut there and nowhere else; an entry without one is cut where the
+// layout finds the balance, as before.
+const VERSO_FLOOR = 0.45;
+function versoOf(poemLines, verso) {
+  return Number.isInteger(verso) && verso > 0 && verso < poemLines.length ? verso : 0;
+}
+
 /** How many screens a poem needs — 1 or 2, the eclipse's own cap. Counted at
  *  the uniform size; the fitting inside layoutPoem never changes the count. */
-export function poemPartCount(poemLines, bounds) {
+export function poemPartCount(poemLines, bounds, verso) {
+  if (versoOf(poemLines, verso)) return 2;
   return flowPoemAt(poemLines, bounds, uniformVerseFontPx(bounds)).overflow ? 2 : 1;
 }
 
@@ -485,23 +497,36 @@ export function poemPartCount(poemLines, bounds) {
  *  mid-line — and a half that still overflows steps its size down to a floor
  *  of 0.7×, Howell's own smaller-register instinct applied only where a poem
  *  needs the room. Past the floor every word seats anyway: scripture is
- *  never truncated. */
-export function layoutPoem(poemLines, bounds, part = 0) {
+ *  never truncated.
+ *
+ *  A DECLARED CUT CANNOT MOVE, so its floor is lower (O-300). The balance
+ *  cut puts half the words on each screen and 0.7× has always been room
+ *  enough; a declared one may put nearly all of them on the second, and the
+ *  choice there is smaller type or words set past the bottom of the glass.
+ *  Smaller type it is, down to 0.45× — about 16 px on a phone, an ordinary
+ *  reading size beside a register chosen to be large. */
+export function layoutPoem(poemLines, bounds, part = 0, verso) {
   const fontPx = uniformVerseFontPx(bounds);
-  const whole = flowPoemAt(poemLines, bounds, fontPx);
-  if (!whole.overflow) { markFace(fontPx, whole.lines); return { fontPx, lines: whole.lines, parts: 1, part: 0 }; }
-  const total = poemLines.join(' ').length;
-  let acc = 0, cut = 1, best = Infinity;
-  for (let i = 1; i < poemLines.length; i += 1) {
-    acc += poemLines[i - 1].length + 1;
-    const d = Math.abs(acc - (total - acc));
-    if (d < best) { best = d; cut = i; }
+  const declared = versoOf(poemLines, verso);
+  let cut = declared;
+  if (!declared) {
+    const whole = flowPoemAt(poemLines, bounds, fontPx);
+    if (!whole.overflow) { markFace(fontPx, whole.lines); return { fontPx, lines: whole.lines, parts: 1, part: 0 }; }
+    const total = poemLines.join(' ').length;
+    let acc = 0, best = Infinity;
+    cut = 1;
+    for (let i = 1; i < poemLines.length; i += 1) {
+      acc += poemLines[i - 1].length + 1;
+      const d = Math.abs(acc - (total - acc));
+      if (d < best) { best = d; cut = i; }
+    }
   }
+  const floor = fontPx * (declared ? VERSO_FLOOR : 0.7);
   const chosen = part === 1 ? poemLines.slice(cut) : poemLines.slice(0, cut);
   let px = fontPx;
   let flow = flowPoemAt(chosen, bounds, px);
-  while (flow.overflow && px > fontPx * 0.7 + 0.01) {
-    px = Math.max(px * 0.95, fontPx * 0.7);   // the floor is a floor, not a fence to step over
+  while (flow.overflow && px > floor + 0.01) {
+    px = Math.max(px * 0.95, floor);   // the floor is a floor, not a fence to step over
     flow = flowPoemAt(chosen, bounds, px);
   }
   if (flow.overflow) flow = flowPoemAt(chosen, bounds, px, { unbounded: true });

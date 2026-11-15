@@ -292,8 +292,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // off the ring at a leaf — his rule of 2026-08-19, which stands for the
   // FILLED seats: offering it as readable would commit the reader to text
   // that cannot show them where they stand. It now stands HOLLOW in its
-  // place, drawn as a door and not a page: choosing it leads to that
-  // edition's shelf, never to a verse it does not have. A tongue whose every
+  // place, drawn as a door and not a page: choosing it crosses to that
+  // edition at the reader's own level, landing on the chosen verse of the
+  // division it offers (O-294, which retired the shelf on 2026-11-11), never
+  // on a verse it does not have. A tongue whose every
   // edition is elsewhere stands hollow on the language ring the same way.
   // At the root nothing is elsewhere, since nothing is filtered.
   const isElsewhereCode = code => {
@@ -443,7 +445,7 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     languagesAvailable() {
       const shown = readableHere();
       const promised = declaredShelves();
-      const elsewhere = elsewhereTongues();   // O-284: hollow, a door to its shelf
+      const elsewhere = elsewhereTongues();   // O-284: hollow, a door
       // Registry order when we have it — it is chronological and deliberate —
       // else whatever order the editions give.
       const entries = languageEntries();
@@ -462,10 +464,10 @@ export function createDimensionBridge({ store, translationsMeta = null, language
     // An edition on the ring that is real and not here (O-284).
     isElsewhere(key) { return isElsewhereCode(key); },
     // COMMIT AN EDITION THAT IS NOT HERE (O-284) — the one door past the
-    // position filter, and it is named for what it does. The host takes the
-    // reader to the volume's top ring first, so the edition arrives at its
-    // shelf and never at a verse it does not hold; setTranslation's refusal
-    // stands for every other caller.
+    // position filter, and it is named for what it does. The host's reseat
+    // lands the reader at their own level on the chosen verse of the division
+    // the edition offers (O-294), never at a verse it does not hold;
+    // setTranslation's refusal stands for every other caller.
     commitElsewhere(key) {
       if (!isElsewhereCode(key)) return false;
       const languageId = languageOf(key);

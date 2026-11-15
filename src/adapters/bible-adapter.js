@@ -189,6 +189,7 @@ const byDeclaredOrder = (a, b) => {
 let _renderDetail = null;          // captured at boot; repaints when text lands
 const _requestedChapters = new Set(); // asked-for files, so a failure is not re-asked forever
 let _chapterOrder = null;          // flat reading order, memoized
+let _chapterOrderOf = null;        // …for this volume: one page may hold two (O-299)
 
 // THE READING ORDER, FROM THE ENUMERATION (H-14).
 //
@@ -202,8 +203,8 @@ let _chapterOrder = null;          // flat reading order, memoized
 // the units the volume enumerates, and the read-ahead warms the next unit
 // rather than the next chapter file.
 function chaptersInReadingOrder(manifest) {
-  if (_chapterOrder) return _chapterOrder;
   const volume = manifest?.__wallVolume;
+  if (_chapterOrder && _chapterOrderOf === volume) return _chapterOrder;
   // FLAT, because the enumeration is flat now (H-29). This walked
   // `testaments[].books[]`; the volume no longer says which division a book is
   // in, and the read-ahead never needed to know — it warms the NEXT unit, and
@@ -228,6 +229,7 @@ function chaptersInReadingOrder(manifest) {
       verseCount: Number.isFinite(book.leaves) ? book.leaves : 0
     }));
   _chapterOrder = order;
+  _chapterOrderOf = volume;
   return order;
 }
 
@@ -429,9 +431,10 @@ export const buildBibleRootChain = (namesMap = null) => ({
 export function createHandlers({ manifest, namesMap, options, translationsMeta, chainMeta, translationName = '', onGatewayReturn = null, gatewayLabel = '', gatewayReturnLabel = '' }) {
   const initialLevel = options?.level;
   const hasRoot = initialLevel === 'root';
-  let bibleMode = (initialLevel === 'chapter' || initialLevel === 'verse') ? initialLevel : (hasRoot ? 'root' : 'book');
+  // A remembered place (O-294) may also open on the divisions ring.
+  let bibleMode = (initialLevel === 'chapter' || initialLevel === 'verse' || initialLevel === 'testament') ? initialLevel : (hasRoot ? 'root' : 'book');
   let bibleChapterContext = (initialLevel === 'chapter' && options?.bookId)
-    ? { bookId: options.bookId, testamentId: null, sectionId: null }
+    ? { bookId: options.bookId, testamentId: options.placeContext?.testamentId || null, sectionId: options.placeContext?.sectionId || null }
     : null;
   let bibleVerseContext = null;
   // Pre-populate verse context at startup so OUT navigation works immediately.
@@ -562,8 +565,48 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // we never show half of one. And under `convention: true` no choreography
   // is played at all — those books share coordinates by convention only, and
   // the animation asserts "same words, different seat", which would be a lie.
+  // THE EDITION THE READER STANDS IN, kept here because by the time the
+  // reseat runs the new one has already committed: the landing below asks
+  // which division the reader was in, and that is the OLD edition's answer.
+  let standingEdition = options?.activeEdition || options?.translation || null;
+
+  // WHERE A CROSSING LANDS WHEN THE NEW EDITION DOES NOT HOLD THE READER'S
+  // PLACE (O-294, Howell 2026-11-11). The hollow edition used to take the
+  // reader up to the top ring (O-284) — a change of level nobody asked for,
+  // and "the only way that nodes can be drilled in or out is by tapping the
+  // parent button, tapping a child pyramid node, or swiping." Now the reader
+  // stays on their level and lands on the chosen verse of the division the
+  // new edition offers: "For the New Testament, it's Matthew 16:18. For the
+  // Old Testament, it's Genesis 1:1." Said in the volume's own terms: the
+  // division the reader was in, if the new edition has it (its books share
+  // a first verse with the new division's), else the new edition's first;
+  // and in that division, the volume's first declared first-visit verse if
+  // the division seats it (Matthew 16:18), else the division's own first
+  // verse (Genesis 1:1). Returns { division, divisions, utterance } or null.
+  const landingFor = (edition, fromEdition, readerBookId) => {
+    const volume = manifest?.__wallVolume;
+    const divisions = buildBibleTestaments(manifest, namesMap, { translationName, edition }).items.filter(Boolean);
+    if (!divisions.length) return null;
+    let division = null;
+    if (fromEdition && readerBookId) {
+      const old = buildBibleTestaments(manifest, namesMap, { translationName, edition: fromEdition }).items
+        .find(d => (d?.meta?.books || []).includes(readerBookId));
+      const theirs = new Set(old?.meta?.utterances || []);
+      if (theirs.size) division = divisions.find(d => (d.meta?.utterances || []).some(u => theirs.has(u))) || null;
+    }
+    if (!division) division = divisions[0];
+    const declared = (options?.firstVisit || [])[0] || null;
+    const declaredBook = declared && volume ? bookSeatingUtterance(volume, edition, null, declared) : null;
+    const utterance = declaredBook && (division.meta?.books || []).includes(declaredBook)
+      ? declared
+      : (division.meta?.utterances || [])[0] || null;
+    return { division, divisions, utterance };
+  };
+
   const reseatOnEditionChange = ({ selected, app }) => {
     if (!selected || !app?.setPrimaryItems) return false;
+    const fromEdition = standingEdition;
+    standingEdition = options?.activeEdition || options?.translation || null;
     const level = selected.level;
 
     // AT ROOT THE VESSELS EMPTY AND REFILL (O-95, Howell 2026-08-23).
@@ -601,10 +644,12 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
           if (target >= 0) break;
         }
       }
-      // AND IF IT SHARES NOTHING AT ALL, THE READER LANDS AT ITS BEGINNING —
-      // O-76's rule, for the same reason: they asked for this edition, and an
-      // edition's beginning is where an arrival belongs.
-      if (target < 0) target = 0;
+      // AND IF IT SHARES NOTHING, THE DIVISION OF THE CROSSING (O-294): the
+      // reader's own division where the new edition has it, else its first.
+      if (target < 0) {
+        const landing = landingFor(edition, fromEdition, (selected.meta?.books || [])[0] || null);
+        target = landing ? Math.max(0, items.findIndex(it => it?.id === landing.division.id)) : 0;
+      }
       // THE CACHED CHAINS ARE THE OLD EDITION'S (Howell, 2026-09-14, from the
       // phone: Latin to Apocalypsis 22:21, out to root, the Greek chosen
       // there, drilled to Genesis 1 — "No verses are visible"). The verse
@@ -638,7 +683,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
         || volume.chartFor?.(selected.id, ownEdition)?.seats?.[0]?.utterances?.[0] || null;
       const divisions = buildBibleTestaments(manifest, namesMap, { translationName, edition }).items.filter(Boolean);
       if (!divisions.length) return false;
-      const landedBook = probe ? bookSeatingUtterance(volume, edition, null, probe) : null;
+      let landedBook = probe ? bookSeatingUtterance(volume, edition, null, probe) : null;
+      // A BOOK THE NEW EDITION DOES NOT HOLD turns the ring to the book of the
+      // crossing's verse (O-294): Exodus in the lens, a New Testament chosen,
+      // and the ring turns to Matthew.
+      if (!landedBook) {
+        const landing = landingFor(edition, fromEdition, selected.id);
+        landedBook = landing?.utterance ? bookSeatingUtterance(volume, edition, null, landing.utterance) : null;
+      }
       const division = (landedBook && divisions.find(d => (d.meta?.books || []).includes(landedBook))) || divisions[0];
       const bookId = landedBook && (division.meta?.books || []).includes(landedBook) ? landedBook : (division.meta?.books || [])[0];
       const { items, selectedIndex, preserveOrder } = buildBibleBookCousinChain(manifest, {
@@ -729,12 +781,24 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     if (target < 0 && level === 'chapter') {
       for (const u of anchor.meta.utterances) { const at = seatOf.get(u); if (at !== undefined) { target = at; break; } }
     }
+    // The walk stays in the reader's BOOK (O-294): a gap in the numbering is
+    // met nearby, but a book the new edition does not hold is not walked out
+    // of into whatever book happens to lie beside it.
+    const readerBook = anchor.bookKey || anchor.meta?.bookId || selected.meta?.bookId || null;
     if (target < 0 && previousSeats.length) {
       const at = previousSeats.findIndex(it => it && it.id === anchor.id);
+      const sameBook = it => it && (!readerBook || (it.bookKey || it.meta?.bookId) === readerBook);
       if (at >= 0) {
-        for (let i = at - 1; i >= 0 && target < 0; i -= 1) target = seatFor(previousSeats[i]);
-        for (let i = at + 1; i < previousSeats.length && target < 0; i += 1) target = seatFor(previousSeats[i]);
+        for (let i = at - 1; i >= 0 && target < 0 && sameBook(previousSeats[i]); i -= 1) target = seatFor(previousSeats[i]);
+        for (let i = at + 1; i < previousSeats.length && target < 0 && sameBook(previousSeats[i]); i += 1) target = seatFor(previousSeats[i]);
       }
+    }
+    // THE NEW EDITION DOES NOT HOLD THE READER'S PLACE: the crossing's verse
+    // (O-294), at the reader's own level.
+    if (target < 0) {
+      const landing = landingFor(edition, fromEdition, readerBook);
+      const at = landing?.utterance ? seatOf.get(landing.utterance) : undefined;
+      if (at !== undefined) target = at;
     }
     // AND IF IT SHARES NOTHING AT ALL, THE READER LANDS AT ITS BEGINNING
     // (O-76). This returned false — "stay put" — and the comment above said
@@ -1161,7 +1225,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       _renderDetail = item => renderDetail(item || app?.nav?.getCurrent?.());
     }
     warmAtRest();
-    if (options?.level !== 'chapter' || !options?.verseId) return;
+    // A chapter ring the reader LEFT (O-294) opens as they left it: no verse
+    // in the sector. Only an address naming a chapter and a verse opens one.
+    if (options?.level !== 'chapter' || !options?.verseId || options?.place) return;
     const initialChapter = items[selectedIndex];
     if (!initialChapter?.meta?.externalFile) return;
     prefetchBibleVerses(initialChapter, {
@@ -1479,30 +1545,6 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // with no migration — the caller wants it unseen. The contexts the OUT
     // gesture needs are taken from the item itself. False when this edition
     // does not seat the leaf, and the ring stays as it was.
-    // THE SHELF (O-284, Howell 2026-11-09): the volume's top ring — its
-    // divisions in the committed edition — set with no migration, landing on
-    // the first. The host calls it before committing a hollow edition chosen
-    // at a place that edition does not hold; the edition change's reseat
-    // then refills the ring with the new edition's divisions (O-95), so the
-    // reader arrives at that edition's shelf and never at a verse it lacks.
-    seatAtShelf: app => {
-      if (!app?.setPrimaryItems) return false;
-      const edition = options?.activeEdition || options?.translation || null;
-      const { items } = buildBibleTestaments(manifest, namesMap, { translationName, edition });
-      if (!items.length) return false;
-      // The level travels with the ring (the bench, 2026-11-09: the ring
-      // stood at the divisions with the sky empty, because the pyramid asks
-      // the MODE which level it draws for, and the mode still said verse).
-      bibleMode = 'testament';
-      bibleVerseContext = null;
-      bibleChapterContext = null;
-      verseChainItems = null;
-      verseChainEdition = null;
-      chapterChainItems = null;
-      app.setPrimaryItems(items, 0, true);
-      if (app?.setParentButtons) app.setParentButtons({ showOuter: hasRoot });
-      return true;
-    },
     seatAtLeaf: (leaf, app) => {
       if (!leaf || !app?.setPrimaryItems) return false;
       const edition = options?.activeEdition || options?.translation || null;

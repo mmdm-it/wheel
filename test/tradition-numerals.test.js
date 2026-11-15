@@ -147,9 +147,10 @@ describe('casing follows the script, not the habit', () => {
 describe('the level caption is opt-in per volume (O-144)', () => {
   // The calendar joined on O-242 (CENTURY beside the lens), its word after
   // the numeral; the catalogue still has none.
-  it('only the Bible and the calendar declare levelCaptions, and only the calendar puts its word after', () => {
+  // The Church (O-299) is the Bible's reader over the catechism, so it captions as the Bible does.
+  it('only the Bible, the Church and the calendar declare levelCaptions, and only the calendar puts the word after', () => {
     for (const [id, cfg] of Object.entries(volumeConfigs)) {
-      assert.equal(cfg.levelCaptions === true, id === 'bible' || id === 'calendar', `${id}: levelCaptions`);
+      assert.equal(cfg.levelCaptions === true, id === 'bible' || id === 'calendar' || id === 'church', `${id}: levelCaptions`);
       assert.equal(cfg.captionAfter === true, id === 'calendar', `${id}: captionAfter`);
     }
   });

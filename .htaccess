@@ -82,3 +82,7 @@ AddType application/manifest+json .webmanifest
 # THE FACES' OWN TYPE (O-286): the page's typefaces are served from
 # assets/fonts/google/; a host without the type registered sends octet-stream.
 AddType font/woff2 .woff2
+
+# THE PAGE THAT IS NOT THERE (O-290): one error page for every door, root-
+# absolute so it stands at any path; it reads the door off the hostname.
+ErrorDocument 404 /404.html

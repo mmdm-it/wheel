@@ -29,7 +29,7 @@ export class TextDetailPlugin extends BaseDetailPlugin {
         // from the seated text by the side-file's offsets.
         const poem = Array.isArray(item.poemLines) && item.poemLines.length > 1;
         const { fontPx, lines, parts } = poem
-          ? layoutPoem(item.poemLines, bounds, item.part === 1 ? 1 : 0)
+          ? layoutPoem(item.poemLines, bounds, item.part === 1 ? 1 : 0, item.verso)
           : layoutVerse(text, bounds, item.part === 1 ? 1 : 0);
         const container = create('div');
         container.className = 'detail-sector-content detail-text detail-text--arc';

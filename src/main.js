@@ -144,6 +144,7 @@ import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.
 import { bearingOf, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
 import { createDepthDrill } from './core/depth-drill.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
+import { playSealSwap, ghostOverlays, rectOf } from './view/seal-swap.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
@@ -389,11 +390,12 @@ const BRIDGE_CHOOSERS = [
     // AN EDITION THAT IS ELSEWHERE (O-284, Howell 2026-11-09: from Hebrew
     // Genesis there was no way to the Greek Mark but out to the root or
     // through a third edition) is drawn hollow too — a door, not a page —
-    // and is NOT inert: choosing it leads to that edition's shelf.
+    // and is NOT inert: choosing it crosses to that edition at the reader's
+    // own level (O-294).
     classFor: key => (dimensionBridge.isComing?.(key) ? 'is-coming' : dimensionBridge.isElsewhere?.(key) ? 'is-elsewhere' : dimensionBridge.isUncleared?.(key) ? 'is-uncleared' : ''),
     inert: key => Boolean(dimensionBridge.isComing?.(key)),
     select: key => {
-      const ok = dimensionBridge.isElsewhere?.(key) ? goToShelf(key) : dimensionBridge.setTranslation(key);
+      const ok = dimensionBridge.isElsewhere?.(key) ? crossToEdition(key) : dimensionBridge.setTranslation(key);
       window.__wheelTapTrace?.push({ ev: 'select-tr', key, ok: ok ? 1 : 0 });
       return ok;
     } },
@@ -408,7 +410,8 @@ const BRIDGE_CHOOSERS = [
     // reading what they had.
     // A tongue whose every edition is elsewhere (O-284) stands hollow the
     // same way; settling on it is display-only too, and the plane behind
-    // shows its editions hollow, each a door to its shelf.
+    // shows its editions hollow, each a door (O-294: crossed to where the
+    // reader stands).
     classFor: id => (dimensionBridge.isComingLanguage?.(id) ? 'is-coming' : dimensionBridge.isElsewhereLanguage?.(id) ? 'is-elsewhere' : ''),
     select: id => {
       const ok = dimensionBridge.setLanguage(id);
@@ -667,30 +670,22 @@ function jumpToChosen() {
   if (!seated) editionSettlePromise.then(() => { seatHere(); refreshEditionsHere(); }).catch(() => {});
   else editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
 }
-// A HOLLOW EDITION LEADS TO ITS SHELF (O-284, Howell 2026-11-09). An edition
-// that does not hold the reader's place stands hollow on its ring; chosen,
-// the reader is taken to the volume's top ring FIRST, in the edition they
-// are leaving, and the edition is committed there, where nothing is
-// filtered, by the ordinary commit — so the ordinary reseat
-// at the top (O-95) refills the ring with the new edition's divisions and
-// the reader arrives at its shelf, two strokes from any book. Never at a
-// verse the edition lacks, and never with a word of apology: the hollow
-// seat said beforehand what it was. His image, the hour it was ruled: an
-// open book is one thing, a bookshelf another; this seat is the shelf,
-// reached from inside the book.
-function goToShelf(key) {
+// A HOLLOW EDITION IS CROSSED TO AT THE READER'S OWN LEVEL (O-294, Howell
+// 2026-11-11, superseding O-284's shelf). An edition that does not hold the
+// reader's place stands hollow on its ring. Chosen, it used to take the
+// reader up to the volume's top ring first: a change of level nobody asked
+// for ("the only way that nodes can be drilled in or out is by tapping the
+// parent button, tapping a child pyramid node, or swiping. Nothing else
+// should ever change levels"), and the empty parent button he found there.
+// Now the edition simply commits, by the bridge's one door past the position
+// filter, and the ordinary reseat lands the reader on the same level at the
+// chosen verse of the division the edition offers (the adapter's landing
+// rule); the filter is read again once it has.
+function crossToEdition(key) {
   if (!currentApp || !dimensionBridge.isElsewhere?.(key)) return false;
-  let shelved = false;
-  try { shelved = Boolean(seatAtShelf(currentApp)); } catch (_) { shelved = false; }
-  if (!shelved) return false;
-  // At the top ring nothing is filtered (the adapter answers null there), so
-  // the ORDINARY commit is the door: re-ask the position first, in case the
-  // move has not yet been noticed, and then commit as any filled seat would.
-  // The bench found the first cut refusing here — it asked the bridge to
-  // commit "an edition that is elsewhere" AFTER the move had made nothing
-  // elsewhere.
-  refreshEditionsHere();
-  return dimensionBridge.setTranslation(key);
+  if (!dimensionBridge.commitElsewhere?.(key)) return false;
+  editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
+  return true;
 }
 function leaveBasement() {
   basementArrival = null; basementLens = null; basementLoose = [];
@@ -839,6 +834,50 @@ let searchOpeningAllowed = null;// characters the opening ring is pruned to when
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
+let sealUrl = null;   // W-301: the volume's seal, drawn at the foot of the glass on the left; null for a volume without one
+let sealEl = null;
+let sealDisc = null;   // O-295: the seal's disc, { colour, ratio } of the emblem it wears, or null for a bare drawing
+let sealDoor = null;   // O-292: the volume the seal opens (each half's seal opens the other half); null = a mark only
+let sealSwapping = false;
+// THE SEAL ARRIVES WITH THE PRIMARY STRATUM (Howell, 2026-11-11): always
+// present and never moved by a truck, with one exception. On a fresh boot it
+// rides the boot film as part of the primary plane, receded and blurred with
+// the ring and arriving in its corner as the ring does ("I want to see it come
+// into view with the rest of the primary stratum"; rising from the bottom of
+// the glass was the first try, and wrong). While `sealRides` it is one of the
+// primary's overlays in setPrimaryVisual; sealRest() takes it off the plane.
+let sealRides = false;
+function sealRest() {
+  sealRides = false;
+  const el = document.getElementById('seal');
+  if (el) for (const k of ['transform', 'transformOrigin', 'filter', 'opacity']) el.style[k] = '';
+}
+// The seal is built once and pointed at the volume's drawing; a volume without
+// one leaves the element hidden. It was a mark only (W-301) until it became
+// the door between the app's two halves (O-292): a volume that declares a
+// `door` makes it a target, and a tap swaps the two halves.
+function applySeal() {
+  if (typeof document === 'undefined' || !document.body) return;
+  if (!sealEl) {
+    sealEl = document.createElement('img');
+    sealEl.id = 'seal';
+    sealEl.alt = '';
+    sealEl.setAttribute('aria-hidden', 'true');
+    sealEl.draggable = false;
+    sealEl.addEventListener('click', e => { e.stopPropagation(); swapThroughSeal(); });
+    document.body.appendChild(sealEl);
+  }
+  sealEl.classList.toggle('is-door', Boolean(sealUrl && sealDoor));
+  // THE DISC TRAVELS WITH ITS EMBLEM (O-295, Howell 2026-11-11: "the purple
+  // circle, or blue circle as the case may be, needs to travel with the crown
+  // of thorns or the Torah scroll"). Drawn as the seal's own background, a
+  // circle centred on the drawing at the size it has in the corner badge.
+  sealEl.style.background = sealDisc?.colour
+    ? `radial-gradient(circle closest-side, ${sealDisc.colour} ${(100 * Math.min(1, sealDisc.ratio || 0.5)).toFixed(1)}%, transparent ${(100 * Math.min(1, sealDisc.ratio || 0.5) + 0.8).toFixed(1)}%)`
+    : '';
+  if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; }
+  else { sealEl.hidden = true; sealEl.removeAttribute('src'); }
+}
 let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
 let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
 let landscapeRendered = '';  // the record last drawn on the sheet, so a repaint only follows a change
@@ -1288,8 +1327,9 @@ function setPrimaryVisual(scale, blurPx, away = null) {
   // and full-size at the foot of the glass while the ring receded behind the
   // strata — Howell: "it should recede and get blurry in proportion with
   // the rest of the primary stratum nodes and labels."
-  for (const id of ['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark']) {
+  for (const id of ['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark', 'seal']) {
   const panel = document.getElementById(id);
+  if (id === 'seal' && !sealRides) continue;   // the seal rides the boot film only (sealRides)
   if (panel) {
     const cx = viewport.width / 2, cy = viewport.height / 2;
     // Scale about the viewport CENTRE — the point the SVG ring/logo scale
@@ -1316,8 +1356,8 @@ function setPrimaryVisual(scale, blurPx, away = null) {
     // glass like everything else on the plane.
     const panelBlur = blurPx / Math.max(scaled ? scale : 1, 0.05);
     panel.style.filter = panelBlur > 0.01 ? `blur(${panelBlur.toFixed(2)}px)` : '';
-    panel.style.opacity = opacity < 0.999 ? String(opacity) : '';
-    panel.style.pointerEvents = gone ? 'none' : '';
+    panel.style.opacity = opacity < 0.999 ? String(id === 'seal' ? 0.5 * opacity : opacity) : '';
+    if (id !== 'seal') panel.style.pointerEvents = gone ? 'none' : '';
   }
   }
 }
@@ -1816,7 +1856,7 @@ function layerStates(front) {
 // arriving ring lands where the overture's next turn begins. Nothing is
 // committed by it; the next paint from committed state restores the seat.
 function beginGlide(fromFront, toFront, { lens = null } = {}) {
-  if (bootOvertureLive && !bootOvertureGliding) { const o = bootOvertureLive; bootOvertureLive = null; o.abort(); }
+  if (bootOvertureLive && !bootOvertureGliding) { const o = bootOvertureLive; bootOvertureLive = null; o.abort(); sealRest(); }
   if (strataAnim) { strataAnim.cancel(); strataAnim = null; }
   // A truck begun while a chooser ring is mid-turn (a second finger, or a
   // springback still gliding) must not leave that turn dangling: its drag,
@@ -2020,11 +2060,11 @@ function resetStrata() {
 // the suite forbids it naming one.
 let editionsHoldingItem = () => null;
 let seatAtLeaf = () => false;   // O-129: the adapter seats the primary at a leaf the ring up does not hold
-let seatAtShelf = () => false;  // O-284: the adapter sets the primary at the volume's top ring, for a hollow edition's door
 let seatOrder = () => null;     // O-128: where a seat stands, for the basement's order
 let seatPlace = () => null;     // O-275: where a LEAF stands on the edition up, or null if it does not hold it
 let hitSeats = () => [];        // O-135: the Greatest Hits, seated in the edition up
 let editionSettlePromise = Promise.resolve();   // the last edition change's reseat, for whoever must follow it
+let dimensionsSeededFor = null;                 // the volume whose editions the store's choice belongs to (O-299)
 // WHICH EMBLEM BELONGS WHERE THE READER IS STANDING (H-31), the adapter's
 // answer, bound per volume. Null from a volume that declares none.
 let cornerImageAt = () => null;
@@ -2214,6 +2254,12 @@ function updateIncompleteMark() {
   // follows the detail sector's own visibility, appearing with the text at
   // the settle and going with it at the launch; above a leaf it says nothing.
   show = show && detailSectorVisible;
+  // THE SEAL STANDS WHERE THE MARK STOOD (W-301, Howell 2026-11-11: "replace
+  // the edition under review text in the lower left with a small line drawing
+  // ... present on every page"): while the volume declares a seal the mark
+  // stays silent. Its words and its rule (O-218, O-226) are kept for the day
+  // he decides between them.
+  show = show && !sealUrl;
   ensureIncompleteMarkEl();
   applyReviewMarkTongue();
   applyCopyrightTongue();
@@ -2654,8 +2700,8 @@ if (typeof window !== 'undefined') {
     arriving: () => dimensionBridge.editionsArriving?.() || [],
     turnPlan: front => overtureTurn(front),   // the overture's turn of a floor (O-225): { from, to } or null
     hollow: key => Boolean(dimensionBridge.isComing?.(key)),
-    elsewhere: key => Boolean(dimensionBridge.isElsewhere?.(key)),   // O-284: real, hollow here, a door to its shelf
-    door: key => goToShelf(key),                                      // O-284: walk through it, for the bench and the boot tests
+    elsewhere: key => Boolean(dimensionBridge.isElsewhere?.(key)),   // O-284/O-294: real, hollow here, a door
+    door: key => crossToEdition(key),                                 // O-294: walk through it, at the reader's own level
     current: () => currentApp?.nav?.getCurrent?.() ?? null,          // where the primary stands
     app: () => currentApp,                                            // the bench's hand on the primary
     // Null while the launch funnel is up (O-75), the reader's position after.
@@ -2829,6 +2875,9 @@ async function loadConfig(volumeOverride = null, searchOverride = null) {
     : null;
 
   const manifest = await fetchManifest(resolvedVolume);
+  // A manifest is fetched once and kept; whatever a volume must point at
+  // itself each time it takes the glass, it does here (O-299).
+  config.activate?.(manifest);
   const root = config.extractRoot(manifest);
   const validation = validateVolumeRoot(root);
   if (!validation.ok) {
@@ -3196,6 +3245,8 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
     if (Array.isArray(offs) && offs.length > 1 && typeof payload.text === 'string') {
       const txt = payload.text;
       payload.poemLines = offs.map((o, i) => txt.slice(o, i + 1 < offs.length ? offs[i + 1] : txt.length).trim()).filter(Boolean);
+      // O-300: the line the edition says opens the second screen, if any.
+      payload.verso = pv?.versoAtSync?.(selected?.meta?.externalFile, translation, selected?.meta?.verseKey) ?? null;
     }
     // O-84: which half of a split verse to show. An explicit part rides a
     // preview (the reading tap paints ahead of the ring); otherwise the
@@ -3431,6 +3482,16 @@ async function renderMargin(selected, translation, seq, part = 0) {
   if (!bookId || !address || !translation || typeof volume?.marginAt !== 'function') { clear(); return; }
   const hadIt = typeof volume.marginAtSync === 'function'
     && volume.marginAtSync(bookId, translation, address) !== null;
+  // WHAT THE PAINT KNEW IS ASKED BEFORE ANYTHING IS AWAITED (O-300). This
+  // function is called in the same breath as the paint, so the answer here is
+  // the paint's own. Asked after the apparatus had been awaited, it was the
+  // answer of a later moment: on a slow line the lines could land - fetched by
+  // an earlier call, since superseded - while this one was still waiting on
+  // its apparatus, and it then found them already there, concluded nothing
+  // had arrived, and repainted nothing. The entry stayed prose, whole on one
+  // screen, until the reader moved (the screening room, question 1, cold).
+  const hadPoem = typeof volume.poemAtSync === 'function'
+    && volume.poemAtSync(bookId, translation, address) !== null;
   let found = null;
   try {
     found = await volume.marginAt(bookId, translation, address);
@@ -3454,8 +3515,6 @@ async function renderMargin(selected, translation, seq, part = 0) {
   // O-112: the poem rides the same wire. Fetched beside the apparatus so a
   // poem verse reached cold learns its lines the same way it learns its
   // notes - and the same reflex re-asks the ring and repaints the text.
-  const hadPoem = typeof volume.poemAtSync === 'function'
-    && volume.poemAtSync(bookId, translation, address) !== null;
   let poemArrived = false;
   if (typeof volume.poemAt === 'function') {
     try { poemArrived = !hadPoem && (await volume.poemAt(bookId, translation, address)) !== null; }
@@ -4392,6 +4451,71 @@ function returnThroughGateway() {
   return true;
 }
 
+// THROUGH THE SEAL (O-292): the swap between the app's two halves. The
+// old screen is frozen at the tap (SVG snapshot + copies of the HTML
+// overlays), the two drawings are read where they stand, and the other half
+// boots beneath them; the boot then plays the swap instead of a wipe. A
+// volume keeps the reader's place by itself (its resume), so the way back is
+// a plain boot of the volume left.
+const SWAP_OVERLAYS = ['detail-panel', 'margin-panel', 'margin-marks', 'incomplete-mark'];
+// THE SWAP IS MADE FROM THE PRIMARY STRATUM ONLY (O-296, Howell 2026-11-11:
+// switching between the app's two halves "can only be done at the primary
+// stratum"; the strata above and the basement "are all selectors for
+// options. They're not where the app's primary purpose of being a reader is
+// fulfilled", and a swap out of the basement has no picture). The seal stays
+// where it is and as it is, always present (O-291); away from the primary,
+// or while a stratum is still travelling, it simply does not answer, as it
+// does not during the boot film. It does not truck the reader home first:
+// that would be a move nobody asked for (O-294).
+const swapAllowedHere = () => strataFront === 0 && !strataAnim;
+function swapThroughSeal() {
+  const to = sealDoor;
+  if (!to || !volumeConfigs[to] || sealSwapping || sealRides || bootOvertureLive) return;
+  if (!swapAllowedHere()) return;
+  sealSwapping = true;
+  const logoImg = document.getElementById('volume-logo-image');
+  const logoHref = logoImg?.getAttribute('href') || logoImg?.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href') || null;
+  const logoSrc = logoHref ? new URL(logoHref, document.baseURI).href : null;
+  const opacityOf = el => { try { return Number(getComputedStyle(el).opacity); } catch (_) { return 1; } };
+  // The corner's emblem and its disc go down to the other half's seal
+  // (O-295), remembered for it before it boots, so its seal is them.
+  const cornerDisc = currentApp?.cornerDisc?.() || null;
+  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: cornerDisc ? { colour: cornerDisc.colour, ratio: cornerDisc.ratio } : null });
+  // And the disc itself travels: where it stands now, as a circle on the page.
+  const discEl = document.getElementById('volume-logo-circle');
+  const discBox = discEl ? rectOf(discEl) : null;
+  const sealBox = rectOf(sealEl);
+  const discFrom = (cornerDisc && discBox && opacityOf(discEl) > 0)
+    ? { cx: discBox.left + discBox.width / 2, cy: discBox.top + discBox.height / 2, r: discBox.width / 2, colour: cornerDisc.colour, ink: opacityOf(discEl) }
+    : (sealDisc?.colour && sealBox)
+      ? { cx: sealBox.left + sealBox.width / 2, cy: sealBox.top + sealBox.height / 2, r: Math.min(sealBox.width, sealBox.height) / 2 * Math.min(1, sealDisc.ratio || 0.5), colour: sealDisc.colour, ink: opacityOf(sealEl) }
+      : null;
+  const transit = {
+    mode: 'swap',
+    snapshot: captureGatewaySnapshot(svg),
+    ghosts: ghostOverlays(SWAP_OVERLAYS),
+    from: {
+      seal: { rect: sealBox, src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl) },
+      logo: { rect: rectOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1 },
+      disc: discFrom
+    }
+  };
+  // The frozen copy carries the old badge's drawing too; the flying one
+  // replaces it, so the copy's is put out.
+  transit.snapshot?.querySelectorAll?.('image').forEach(im => { if (im.getAttribute('id') === 'volume-logo-image') im.style.visibility = 'hidden'; });
+  if (sealEl) sealEl.style.visibility = 'hidden';
+  const search = `?volume=${encodeURIComponent(to)}`;
+  bootVolume(to, search, null, transit)
+    .then(() => { try { window.history.pushState({ wheelGateway: true }, '', search); } catch (_) { /* file:// */ } })
+    .catch(err => {
+      sealSwapping = false;
+      transit.snapshot?.remove();
+      transit.ghosts.forEach(g => g.remove());
+      if (sealEl) sealEl.style.visibility = '';
+      showBootError(`swap failed: ${err.message}`);
+    });
+}
+
 // Browser Back across a gateway pushState: reload resolves the URL cleanly.
 window.addEventListener('popstate', () => window.location.reload());
 
@@ -4455,6 +4579,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const overture = (!playSplash && !transit && !bootOvertureShown && overtureShouldPlay())
     ? beginBootOverture({ viewport: measureViewport(), splash: installed ? null : rememberedSplash }) : null;
   bootOvertureShown = true;
+  if (overture) sealRides = true;
   // A FIRST VISIT'S CARD GOES UP THE MOMENT THE MANIFEST IS PARSED (O-181),
   // not when the boot has also gathered its bundles: on Howell's phone over
   // 4G the manifest was in hand at 0.4 s and the card waited until 2.3 s.
@@ -4518,7 +4643,24 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // again); else the volume's pinned default. `setTranslation` refuses an
   // edition that is no longer servable, so a remembered choice that has since
   // been withdrawn falls through to the default rather than stranding.
-  if (!dimensionStore.getState().language) {
+  //
+  // THE CHOICE IS THE VOLUME'S OWN (O-299). One page now holds two volumes
+  // that each have editions — the two halves the seal joins — and the store
+  // holds one choice: crossing between them, the sticky choice is the OTHER
+  // half's and names nothing here. So a volume with editions of its own is
+  // seeded afresh whenever it is not the one seeded last — by its own
+  // remembered edition first, which is how each half is found as it was
+  // left. The leaving volume's settle hook is dropped BEFORE the store
+  // moves: it remembers a committed edition under its own volume's name, and
+  // would have written this half's edition into the other half's memory.
+  const reseed = Boolean(translationsMeta) && dimensionsSeededFor !== null && dimensionsSeededFor !== volume;
+  if (reseed) {
+    dimensionBridge.onSettle(null);
+    dimensionBridge.setEditionsHere(null);
+    dimensionBridge.setEditionsArriving([]);
+  }
+  if (translationsMeta) dimensionsSeededFor = volume;
+  if (reseed || !dimensionStore.getState().language) {
     const remembered = recall(volume).edition;
     // THE PHONE'S OWN TONGUE ON A FIRST VISIT (O-176): nothing remembered and
     // no edition named on the address, so the languages the reader set on
@@ -4790,6 +4932,26 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
   reviewMarkWords = root?.display_config?.review_mark || null;
+  // THE SEAL (W-301): a volume may declare a small drawing that stands fixed
+  // at the foot of the glass on the left, on every page, doing nothing — the
+  // mirror of the emblem in its sector upper right. Its file is the volume's,
+  // assets/<seal>.svg beside its other artwork.
+  sealUrl = root?.display_config?.seal && config?.assetBase
+    ? `${config.assetBase}${root.display_config?.detail_sector?.logo_base_path || 'assets/'}${/\.[a-z0-9]+$/i.test(root.display_config.seal) ? root.display_config.seal : `${root.display_config.seal}.svg`}`
+    : null;
+  sealDoor = config?.door && volumeConfigs[config.door] ? config.door : null;
+  // A DOOR'S SEAL WEARS THE OTHER HALF'S EMBLEM AS IT WAS LEFT (O-295): the
+  // drawing that flew down from the other half's corner badge, on its disc if
+  // it had one: the crown of thorns on purple, the Torah scroll on blue. The
+  // swap remembers it for the half it opens; until one has, the volume's own
+  // declared seal stands, bare.
+  sealDisc = null;
+  if (sealDoor) {
+    const worn = recall(volume);
+    if (typeof worn.sealArt === 'string' && worn.sealArt) sealUrl = worn.sealArt;
+    if (worn.sealDisc && typeof worn.sealDisc === 'object' && worn.sealDisc.colour) sealDisc = worn.sealDisc;
+  }
+  applySeal();
   copyrightWords = root?.display_config?.copyright_notice || null;
   landscapeRoot = root || null;
   landscapeRendered = '';
@@ -4869,7 +5031,6 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // The volume's dimension front door, if its adapter declares one (the
   // globe-at-the-threshold rule — see updateDimensionButton).
   seatAtLeaf = typeof handlerSet.seatAtLeaf === 'function' ? handlerSet.seatAtLeaf : () => false;
-  seatAtShelf = typeof handlerSet.seatAtShelf === 'function' ? handlerSet.seatAtShelf : () => false;
   seatOrder = typeof handlerSet.seatOrder === 'function' ? handlerSet.seatOrder : () => null;
   seatPlace = typeof handlerSet.seatPlace === 'function' ? handlerSet.seatPlace : () => null;
   hitSeats = typeof handlerSet.hitSeats === 'function' ? handlerSet.hitSeats : () => [];
@@ -5025,7 +5186,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
           if (Array.isArray(offs) && offs.length > 1) {
             const txt = payload.text;
             const pls = offs.map((o, i) => txt.slice(o, i + 1 < offs.length ? offs[i + 1] : txt.length).trim()).filter(Boolean);
-            parts = poemPartCount(pls, bounds);
+            // O-300: a declared second screen is two screens at any length.
+            const verso = volumeForParts()?.versoAtSync?.(item?.meta?.externalFile, translation, item?.meta?.verseKey) ?? null;
+            parts = poemPartCount(pls, bounds, verso);
           } else {
             parts = versePartCount(payload.text, bounds);
           }
@@ -5104,7 +5267,42 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // Gateway transit: the new volume is fully rendered — lay the frozen old
   // screen over it and sweep the wipe line, hub-centered, top → lower right.
   // Same tick as the render above, so the swap itself never paints.
-  if (transit && wipeSnapshot) {
+  if (transit?.mode === 'swap') {
+    try {
+      // The snapshot still holds copies under the live ids, and it is ahead
+      // of the live drawing in the document, so the live badge and content
+      // group are found among the svg's own children, never by id.
+      const liveTop = Array.from(svg.children).filter(el => el !== wipeSnapshot);
+      playSealSwap({
+        land: () => app?.landCorner?.(),
+        svg,
+        snapshot: wipeSnapshot,
+        ghosts: transit.ghosts || [],
+        from: transit.from,
+        toSeal: sealUrl ? sealEl : null,
+        toLogo: liveTop.find(el => el.id === 'volume-logo-group')?.querySelector('#volume-logo-image') || null,
+        toSealDisc: sealUrl && sealDisc ? sealDisc : null,
+        content: liveTop.find(el => el.classList.contains('focus-content-group')) || null,
+        overlays: SWAP_OVERLAYS.map(id => document.getElementById(id)),
+        durationMs: Number(new URLSearchParams(location.search).get('swapms')) || undefined,
+        onDone: () => {
+          sealSwapping = false;
+          cornerIconHold = false;
+          updateDimensionButton();
+          updateSearchButton();
+        }
+      });
+    } catch (err) {
+      console.warn('[wheel] seal swap failed', err);
+      wipeSnapshot?.remove();
+      (transit.ghosts || []).forEach(g => g.remove());
+      if (sealEl) sealEl.style.visibility = '';
+      sealSwapping = false;
+      cornerIconHold = false;
+      updateDimensionButton();
+      updateSearchButton();
+    }
+  } else if (transit && wipeSnapshot) {
     try {
       // Launch wipes downward; return wipes back up — the wipe always flows
       // away from where you are going. The corner icons are PART OF THE
@@ -5160,9 +5358,18 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // resuming there would be resuming mid-gesture. Written on every nav
   // change (cheap: session-memory skips no-op writes), so a battery death
   // loses nothing.
+  // AND WHERE THEY WERE STANDING (O-294, Howell 2026-11-11: "if the user
+  // leaves a stratum, that stratum should always be as it was when the user
+  // left, when the user returns"). The leaf above is the text; this is the
+  // ring and the lens, at any level, so a return rebuilds the ring the reader
+  // left instead of drilling to the last leaf ("the computer did a drill that
+  // wasn't requested"). The volume reads it back in its own buildOptions; the
+  // engine stores the item's own level and id and never interprets them.
   const rememberReadingPosition = () => {
     const current = app?.nav?.getCurrent?.();
-    if (!current?.id || !isDetailLevel(current, adapterNormalized)) return;
+    if (!current?.id) return;
+    remember(volume, { placeLevel: typeof current.level === 'string' ? current.level : null, placeItem: current.id });
+    if (!isDetailLevel(current, adapterNormalized)) return;
     remember(volume, { itemId: current.id });
   };
   // WHEN EVERY SHELF IS STOCKED (O-175), one quiet redraw seats whatever
@@ -5465,9 +5672,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         // (Howell 2026-09-30: "it seems to jump to a slightly smaller
         // radius" at the end).
         unslide: () => dimensionButton?.classList?.remove('is-sliding'),
-        arrive: () => { bootOvertureLive = null; arriveAt(1, 0); }
+        arrive: () => { bootOvertureLive = null; sealRest(); arriveAt(1, 0); }
       } : null
     });
+    // A volume with no floors gets the card alone, and no truck to rise with.
+    if (!(dimensionAvailable() && maxStrataFront() >= 2)) sealRest();
   }
   recordBootPhases(volume);
   if (options.debug) mountFeelHud();
