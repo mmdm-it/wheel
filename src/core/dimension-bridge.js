@@ -298,7 +298,13 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // on a verse it does not have. A tongue whose every
   // edition is elsewhere stands hollow on the language ring the same way.
   // At the root nothing is elsewhere, since nothing is filtered.
+  // NOT WHERE THE BOOKS ARE SEPARATE WORKS (O-303). A volume of catechisms
+  // declares that its editions share no leaf; an edition that does not hold
+  // the reader's place there is another book, not another reading of this
+  // one, and a door to it on the language ring would be the arrangement the
+  // ruling refused — the globe offers the languages THIS book exists in.
   const isElsewhereCode = code => {
+    if (meta?.booksAcrossEditions === true) return false;
     const t = meta?.translations?.[code];
     return Boolean(t) && isServable(t) && !isHere(code) && !arriving.includes(code);
   };

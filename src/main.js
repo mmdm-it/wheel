@@ -2378,6 +2378,26 @@ function updateCornerImage() {
   } catch (_) { /* a volume that cannot answer keeps whatever it painted */ }
 }
 
+// THE EDITION FOLLOWS THE BOOK, WHERE THE BOOKS ARE SEPARATE WORKS (O-303).
+// On a ring of catechisms each book belongs to an edition of its own, and
+// the reader who turns the ring to one has chosen it: the edition that holds
+// it is committed, by the road a bookmark's return already takes (O-72's
+// position filter lifted for the commit and read again after the reseat),
+// so its lessons, its words and its tongue are what the next gesture meets.
+// A volume whose editions seat one set of leaves declares nothing and never
+// comes here.
+function followBookEdition() {
+  const wall = currentManifest?.__wallVolume;
+  if (wall?.displayConfig?.books_across_editions !== true) return;
+  const item = currentApp?.nav?.getCurrent?.();
+  if (item?.level !== 'book') return;
+  const own = wall.editionOf?.(item.id) || null;
+  if (!own || own === currentEdition()) return;
+  dimensionBridge.setEditionsHere(null);
+  if (!dimensionBridge.setTranslation(own)) { refreshEditionsHere(); return; }
+  editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
+}
+
 function refreshEditionsHere() {
   let codes = null;
   try { codes = editionsHoldingItem(currentApp?.nav?.getCurrent?.()); } catch (_) { codes = null; }
@@ -5443,6 +5463,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
     updateDimensionButton();
     rememberReadingPosition();
+    followBookEdition();   // O-303: on a ring of separate works the edition follows the book
   });
   dimensionBridge.onSettle(translation => {
     // THE FUNNEL IS NOT CLOSED BY A COMMIT (O-77). It used to be — "a

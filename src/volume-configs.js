@@ -302,6 +302,9 @@ const volumeConfigs = {
         // bridge reads it where it commits a language; the boot's waited-for
         // edition (chooseFirst, above) reads the same key. Keep the two in step.
         defaults: Object.fromEntries(Object.entries(volume.displayConfig?.editions?.default || {}).filter(([k]) => !k.startsWith('_'))),
+        // O-303: the volume's books are separate works, one per edition's
+        // book, and the rings are told so (the bridge names no volume).
+        booksAcrossEditions: volume.displayConfig?.books_across_editions === true,
         translations: Object.fromEntries(volume.editions.map(edition => [edition.code, {
           ...edition,
           name: edition.name || edition.code,
