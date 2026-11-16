@@ -16,7 +16,7 @@ describe('the two halves name each other as doors', () => {
     assert.equal(a.door, 'church');
     assert.equal(b.door, 'bible');
   });
-  it('the second half wears its own ground, marble, over the first half\'s theme', () => {
+  it('the second half wears its own ground, green, over the first half\'s theme', () => {
     assert.notEqual(volumeConfigs.church.palette.bg, volumeConfigs.bible.palette.bg, 'the Church wears its own colours (O-297)');
     assert.equal(volumeConfigs.church.theme, volumeConfigs.bible.theme);
     assert.equal(volumeConfigs.church.palette.dark, undefined, 'no dark dress is left to try (O-299)');

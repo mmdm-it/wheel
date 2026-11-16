@@ -1103,8 +1103,16 @@ function buildBibleChain(manifest, options, namesMap) {
 //
 // What it does not inherit: the Bible's page for a phone turned sideways
 // (its words are the Bible's), and the Bible's ground. THE CHURCH WEARS
-// MARBLE (O-297, O-298: "I prefer the marble color scheme for the church,
-// but it does need some fine tuning. It's okay for now").
+// GREEN (O-304, Howell 2026-11-16, retiring the marble of O-297 and O-298 as
+// "too harsh, it's too bright. The white and gold is not at all subtle").
+// His scheme is the first volume's own, in another hue: "A soft background
+// with a focus ring and nodes in a deeper shade, and then a contrasting
+// detail sector color." The ground is the paint chip he named,
+// Sherwin-Williams SW 0013 Majolica Green; the node and the band are that
+// green taken down by the steps the first volume's tan is taken down to its
+// browns (0.65, then 0.78), so the two halves keep one set of contrasts:
+// ground to node 2.2 to 1, label on node 3.4, label on ground 7.4. The
+// contrasting colour is the volume's own declaration, in the corpus.
 //
 // The chapels (O-297) and the calendar's days under this door (O-292) are
 // withdrawn with this: the chapels deferred, the calendar the company's
@@ -1119,7 +1127,7 @@ volumeConfigs.church = {
   manifestPath: CHURCH_VOLUME_BASE,
   assetBase: `${CHURCH_VOLUME_BASE}/${CHURCH_VOLUME_VERSION}/`,
   loadManifest: wallLoader({ volumeId: 'church', base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION }),
-  palette: { bg: '#efeae0', node: '#d6c293', text: '#231c12', band: '#b0904f', accent: '#9a7a3c', magnifierStroke: '#231c12' },
+  palette: { bg: '#aeb08f', node: '#71725d', text: '#1d2014', band: '#585949', accent: '#585949', magnifierStroke: '#1d2014' },
   landscape: null,
   stampLetter: undefined,
   createHandlers: makeAdapterHandlers('church')
