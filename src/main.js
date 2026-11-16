@@ -144,7 +144,7 @@ import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.
 import { bearingOf, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
 import { createDepthDrill } from './core/depth-drill.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
-import { playSealSwap, ghostOverlays, rectOf } from './view/seal-swap.js';
+import { playSealSwap, ghostOverlays, rectOf, boxOf } from './view/seal-swap.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
@@ -4531,7 +4531,7 @@ function swapThroughSeal() {
     ghosts: ghostOverlays(SWAP_OVERLAYS),
     from: {
       seal: { rect: sealBox, src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl) },
-      logo: { rect: rectOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1 },
+      logo: { rect: rectOf(logoImg), box: boxOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1 },
       discs: discFrom
     }
   };

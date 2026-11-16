@@ -5,7 +5,7 @@ import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { volumeConfigs } from '../src/volume-configs.js';
-import { flightFrame, swapAxis, contentShift, flightInk, discAt, SWAP_MS } from '../src/view/seal-swap.js';
+import { boxAt, swapAxis, contentShift, flightInk, discAt, SWAP_MS } from '../src/view/seal-swap.js';
 import { withExtension } from '../src/view/volume-logo.js';
 
 const main = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
@@ -56,17 +56,28 @@ describe('the two halves name each other as doors', () => {
 });
 
 describe('the flight', () => {
-  const from = { left: 10, top: 790, width: 60, height: 45 }, to = { left: 290, top: 12, width: 100, height: 100 };
+  const from = { cx: 40, cy: 812, w: 60, h: 45, rot: 0 }, to = { cx: 340, cy: 62, w: 100, h: 100, rot: 0 };
   it('starts where the drawing stood and ends where the other one stands', () => {
-    assert.deepEqual(flightFrame(from, to, 0), { dx: 0, dy: 0, sx: 1, sy: 1 });
-    const end = flightFrame(from, to, 1);
-    assert.equal(end.dx, 280); assert.equal(end.dy, -778);
-    assert.ok(Math.abs(end.sx * from.width - to.width) < 1e-9);
-    assert.ok(Math.abs(end.sy * from.height - to.height) < 1e-9);
+    assert.deepEqual(boxAt(from, to, 0), from);
+    const end = boxAt(from, to, 1);
+    for (const k of ['cx', 'cy', 'w', 'h', 'rot']) assert.ok(Math.abs(end[k] - to[k]) < 1e-9, k);
   });
   it('crosses the middle of the diagonal half way', () => {
-    const mid = flightFrame(from, to, 0.5);
-    assert.equal(from.left + mid.dx, 150); assert.equal(from.top + mid.dy, 401);
+    const mid = boxAt(from, to, 0.5);
+    assert.equal(mid.cx, 190); assert.equal(mid.cy, 437);
+  });
+  // O-306: "the crown of thorns has a life of its own. It separates from the
+  // blue circle." A drawing and its disc shrink by the same rule, so the
+  // drawing stays about as large against its disc all the way down, and
+  // untwists as it goes.
+  it('a leaf\'s drawing shrinks in step with its disc, and comes upright', () => {
+    const sky = { cx: 180, cy: 380, w: 1365, h: 1342, rot: -129 }, seal = { cx: 37, cy: 733, w: 54, h: 41, rot: 0 };
+    const sector = { cx: 981, cy: 0, r: 971, ink: 0.5 }, sealDisc = { cx: 37, cy: 733, r: 15, ink: 0.5 };
+    const ratio = e => boxAt(sky, seal, e).w / (2 * discAt(sector, sealDisc, { x: sky.cx, y: sky.cy }, { x: seal.cx, y: seal.cy }, e).r);
+    for (const e of [0.25, 0.5, 0.75]) assert.ok(ratio(e) > 0.6 && ratio(e) < 2, `at ${e} the drawing is ${ratio(e).toFixed(2)} of its disc`);
+    assert.equal(boxAt(sky, seal, 1).rot, 0);
+    const back = boxAt(seal, sky, 0.3), out = boxAt(sky, seal, 0.7);
+    for (const k of ['cx', 'cy', 'w', 'h', 'rot']) assert.ok(Math.abs(back[k] - out[k]) < 1e-6, `${k} is its own mirror`);
   });
 });
 
@@ -168,7 +179,7 @@ describe('the disc travels with its emblem', () => {
   });
   it('the disc flies from where it stood to where it lands, and the discs in place stand aside', () => {
     assert.match(swap, /d\.el\.setAttribute\('r', /);
-    assert.match(swap, /const c = discAt\(d\.a, d\.end\.disc, d\.anchorA, d\.end\.anchor, e\);/, 'both discs are walked by the one reciprocal rule (O-306)');
+    assert.match(swap, /d\.now = discAt\(d\.a, d\.end\.disc, d\.anchorA, d\.end\.anchor, e\);/, 'both discs are walked by the one reciprocal rule (O-306)');
     assert.match(swap, /if \(oldCircle\) oldCircle\.style\.visibility = 'hidden';/);
     assert.match(swap, /liveDisc\.style\.visibility = 'hidden';/);
   });

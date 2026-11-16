@@ -77,17 +77,33 @@ export function ghostOverlays(ids) {
   return ghosts;
 }
 
+// A drawing as it stands: its centre, its own width and height, and its turn.
+// A leaf's watermark is a turned image (O-268), and its bounding rectangle is
+// neither its size nor its shape; the image's own box and angle are read from
+// its attributes. Anything else is its rectangle, unturned.
+export function boxOf(el) {
+  const r = rectOf(el);
+  if (!r) return null;
+  const centre = { cx: r.left + r.width / 2, cy: r.top + r.height / 2 };
+  const w = Number(el.getAttribute?.('width')), h = Number(el.getAttribute?.('height'));
+  const m = /rotate\(\s*(-?[\d.]+)/.exec(el.getAttribute?.('transform') || '');
+  const rot = m ? Number(m[1]) : 0;
+  if (rot && w > 0 && h > 0) return { ...centre, w, h, rot };
+  return { ...centre, w: r.width, h: r.height, rot: 0 };
+}
+
 // A flying copy of a drawing, laid exactly over where it stood. It flies IN
 // the glass, beneath the contents, so the pushed and pulled nodes and the
 // leaf's text are always drawn over it; the svg draws in px with no viewBox,
-// so a page rectangle is an svg rectangle.
-function flyer(src, r) {
+// so a page position is an svg position. It is drawn once, at `base`, and
+// carried from there by a transform.
+function flyer(src, base) {
   const img = document.createElementNS(SVG_NS, 'image');
   img.setAttribute('href', src);
-  img.setAttribute('x', String(r.left));
-  img.setAttribute('y', String(r.top));
-  img.setAttribute('width', String(r.width));
-  img.setAttribute('height', String(r.height));
+  img.setAttribute('x', String(base.cx - base.w / 2));
+  img.setAttribute('y', String(base.cy - base.h / 2));
+  img.setAttribute('width', String(base.w));
+  img.setAttribute('height', String(base.h));
   img.setAttribute('preserveAspectRatio', 'none');
   img.setAttribute('aria-hidden', 'true');
   img.style.pointerEvents = 'none';
@@ -109,9 +125,9 @@ export function flightInk(fromW, toW, fromOp, toOp, e, glassW = Infinity) {
   // straight line left it as dark as a node at middle sizes).
   let op;
   if (fromW > 0 && toW > 0 && Math.abs(Math.log(toW / fromW)) > 1e-6) {
-    const small = Math.min(fromW, toW), large = Math.max(fromW, toW);
-    const w = fromW + (toW - fromW) * e;
-    const sz = clamp01(Math.log(w / small) / Math.log(large / small));
+    // The drawing's size runs geometrically (boxAt), so on a scale of size
+    // it is simply as far along as the crossing is.
+    const sz = fromW < toW ? clamp01(e) : clamp01(1 - e);
     const inkSmall = fromW < toW ? fromOp : toOp, inkLarge = fromW < toW ? toOp : fromOp;
     op = inkSmall + (inkLarge - inkSmall) * (1 - (1 - sz) * (1 - sz));
   } else {
@@ -122,14 +138,23 @@ export function flightInk(fromW, toW, fromOp, toOp, e, glassW = Infinity) {
   return op;
 }
 
-// The frame of a flight at eased progress e: where the copy stands, how large,
-// how inked. Pure, so a test can walk it.
-export function flightFrame(from, to, e) {
-  const x = from.left + (to.left - from.left) * e;
-  const y = from.top + (to.top - from.top) * e;
-  const sx = (from.width + (to.width - from.width) * e) / from.width;
-  const sy = (from.height + (to.height - from.height) * e) / from.height;
-  return { dx: x - from.left, dy: y - from.top, sx, sy };
+// A drawing in flight at eased progress e, between two boxes ({cx, cy, w, h,
+// rot}): its centre runs straight, its turn evenly, and ITS SIZE
+// GEOMETRICALLY, the way its disc's radius does (discAt) — so a drawing and
+// the disc behind it shrink and grow together (O-306, Howell 2026-11-16, of
+// a size that ran evenly while the disc's ran geometrically: "the crown of
+// thorns has a life of its own. It separates from the blue circle ... they
+// should stay generally aligned as they head down to the lower left corner
+// and become concentric again"). Its own mirror, as discAt is. Pure.
+export function boxAt(a, b, e) {
+  const geo = (x, y) => (x > 0 && y > 0 ? x * Math.pow(y / x, e) : x + (y - x) * e);
+  return {
+    cx: a.cx + (b.cx - a.cx) * e,
+    cy: a.cy + (b.cy - a.cy) * e,
+    w: geo(a.w, b.w),
+    h: geo(a.h, b.h),
+    rot: a.rot + (b.rot - a.rot) * e
+  };
 }
 
 // THE SECTOR'S GROUND IS A CIRCLE THAT TRAVELS WITH ITS DRAWING (O-306,
@@ -230,18 +255,47 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
   const discFlights = [];
   const frame = u => {
     const e = ease(u);
+    // The discs first: a drawing that left or lands in a sector is seen
+    // through its disc, and needs to know where the disc is.
+    for (const d of discFlights) {
+      // The landing is read every frame, as the drawings' landings are.
+      const end = d.target();
+      if (end) d.end = end;
+      d.now = discAt(d.a, d.end.disc, d.anchorA, d.end.anchor, e);
+      d.el.setAttribute('cx', d.now.cx.toFixed(1));
+      d.el.setAttribute('cy', d.now.cy.toFixed(1));
+      d.el.setAttribute('r', Math.max(0, d.now.r).toFixed(1));
+      d.el.style.opacity = d.now.ink.toFixed(3);
+    }
     for (const f of flights) {
       // The landing is read every frame: the new half can still settle its
       // badge after the swap began (the emblem's own scale arrives with the
       // host's first render), and a flight aimed once would land beside it.
-      const at = rectOf(f.to);
-      if (at) f.toRect = at;
-      const { dx, dy, sx, sy } = flightFrame(f.fromRect, f.toRect, e);
-      const ox = f.fromRect.left, oy = f.fromRect.top;
-      f.el.setAttribute('transform', `translate(${(ox + dx).toFixed(1)} ${(oy + dy).toFixed(1)}) scale(${sx.toFixed(4)} ${sy.toFixed(4)}) translate(${-ox} ${-oy})`);
-      f.el.style.opacity = flightInk(f.fromRect.width, f.toRect.width, f.fromOp, f.toOp, e, glassW).toFixed(3);
+      const at = boxOf(f.to);
+      if (at) f.toBox = at;
+      const k = boxAt(f.fromBox, f.toBox, e);
+      const base = f.base;
+      f.el.setAttribute('transform', `translate(${k.cx.toFixed(1)} ${k.cy.toFixed(1)}) rotate(${k.rot.toFixed(2)}) scale(${(k.w / base.w).toFixed(4)} ${(k.h / base.h).toFixed(4)}) translate(${-base.cx} ${-base.cy})`);
+      if (f.window) {
+        // SEEN THROUGH ITS DISC (O-306). At a leaf the drawing shows only
+        // inside its sector; in a corner it stands out past its disc. So the
+        // window is the disc itself at the leaf's end of the flight and has
+        // opened to the whole drawing by the corner's end: the drawing never
+        // spills over the band at a leaf, and never has to be handed over
+        // from a copy standing still while its disc has already left.
+        const d = f.window.disc, t = f.window.leaving ? e : 1 - e;
+        const small = f.window.leaving ? f.toBox : f.fromBox;
+        const rSmall = f.window.leaving ? d.end.disc.r : d.a.r;
+        const open = Math.max(0, Math.hypot(small.w, small.h) / 2 * 1.05 - rSmall);
+        f.window.el.setAttribute('cx', d.now.cx.toFixed(1));
+        f.window.el.setAttribute('cy', d.now.cy.toFixed(1));
+        f.window.el.setAttribute('r', (d.now.r + open * t).toFixed(1));
+        f.el.style.opacity = flightInk(f.fromBox.w, f.toBox.w, f.fromOp, f.toOp, e).toFixed(3);
+        continue;
+      }
+      f.el.style.opacity = flightInk(f.fromBox.w, f.toBox.w, f.fromOp, f.toOp, e, glassW).toFixed(3);
       // A drawing wider than the glass is taken over by its own self in place.
-      if (f.to && f.toRect.width > glassW) f.to.style.opacity = (f.toOp * clamp01(1 - (1 - e) / 0.25)).toFixed(3);
+      if (f.to && f.toBox.w > glassW) f.to.style.opacity = (f.toOp * clamp01(1 - (1 - e) / 0.25)).toFixed(3);
     }
     const out = contentShift(axis, e, 'out');
     const inn = contentShift(axis, e, 'in');
@@ -256,17 +310,6 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
     fading.forEach(el => { el.style.opacity = String(1 - o); });
     if (oldSky) oldSky.style.opacity = (oldSkyInk * (1 - clamp01(e / 0.25))).toFixed(3);
     if (discFlights.length) {
-      // EACH DISC FLIES WITH ITS OWN EMBLEM (O-295, O-306): the landing is
-      // read every frame, as the drawings' landings are.
-      for (const d of discFlights) {
-        const end = d.target();
-        if (end) d.end = end;
-        const c = discAt(d.a, d.end.disc, d.anchorA, d.end.anchor, e);
-        d.el.setAttribute('cx', c.cx.toFixed(1));
-        d.el.setAttribute('cy', c.cy.toFixed(1));
-        d.el.setAttribute('r', Math.max(0, c.r).toFixed(1));
-        d.el.style.opacity = c.ink.toFixed(3);
-      }
       if (oldBadge) oldBadge.style.opacity = String(1 - o);
     } else {
       if (oldBadge) oldBadge.style.opacity = String(oldBadgeSmall ? 1 - clamp01(e / 0.12) : 1 - o);
@@ -299,19 +342,24 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
     };
     for (const t of targets) {
       if (!t.from?.rect || !t.from.src) continue;
-      const toRect = rectOf(t.to);
-      const toOp = toRect ? inkOf(t.to) : 0;
+      const r = t.from.rect;
+      const fromBox = t.from.box || { cx: r.left + r.width / 2, cy: r.top + r.height / 2, w: r.width, h: r.height, rot: 0 };
+      const toBox = boxOf(t.to);
+      const toOp = toBox ? inkOf(t.to) : 0;
+      let toStyleOpacity = '';
       if (t.to) {
         // The landing is shown at the end, whatever hid it before the swap
         // (the tap puts the old seal out, and the seal is the same element).
-        const op = t.to.style.opacity;
+        const op = toStyleOpacity = t.to.style.opacity;
         undo.push(() => { t.to.style.visibility = ''; t.to.style.opacity = op; });
         // The drawing in place is the flyer's landing: put out until it lands,
         // or, wider than the glass, taken over in the last quarter.
-        if (toRect && toRect.width > glassW) t.to.style.opacity = '0';
+        if (toBox && toBox.w > glassW) t.to.style.opacity = '0';
         else t.to.style.visibility = 'hidden';
       }
-      flights.push({ el: flyer(t.from.src, t.from.rect), to: t.to, fromRect: t.from.rect, toRect: toRect || t.from.rect, fromOp: t.from.opacity ?? 1, toOp });
+      // Drawn once at the larger of its two sizes, so it is only ever carried down.
+      const base = toBox && toBox.w > fromBox.w ? { ...toBox } : { ...fromBox };
+      flights.push({ el: flyer(t.from.src, base), base, to: t.to, down: t.to === toSeal, fromBox, toBox: toBox || fromBox, fromOp: t.from.opacity ?? 1, toOp, toStyleOpacity });
     }
 
     // Nothing takes the finger while the halves change places.
@@ -379,7 +427,7 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
       oldBadgeSmall = (rectOf(oldBadge?.querySelector('circle'))?.width || Infinity) < glassW;
       // The old sky's drawing stays in place, clipped to its sector as it
       // stood, and hands over to its flyer in the first quarter.
-      if ((from?.logo?.rect?.width || 0) > glassW) {
+      if ((from?.logo?.rect?.width || 0) > glassW && !from?.discs?.logo) {
         oldSky = oldBadge?.querySelector('image#volume-logo-image') || null;
         if (oldSky) { oldSky.style.visibility = ''; oldSkyInk = from.logo.opacity ?? 1; }
       }
@@ -415,7 +463,7 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
       };
       // With nowhere to land, it closes where it stands.
       const fallback = { disc: { cx: a.cx, cy: a.cy, r: 0, ink: a.ink }, anchor: anchorA };
-      discFlights.push({ el: circleEl(discs.logo.colour), a, anchorA, end: target() || fallback, target });
+      discFlights.push({ el: circleEl(discs.logo.colour), a, anchorA, end: target() || fallback, target, leaving: true });
       const oldCircle = oldBadge?.querySelector('circle');
       if (oldCircle) oldCircle.style.visibility = 'hidden';
     }
@@ -435,7 +483,7 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
         const a = discs.seal
           ? { cx: discs.seal.cx, cy: discs.seal.cy, r: discs.seal.r, ink: discs.seal.ink ?? discInk }
           : { cx: start.x, cy: start.y, r: 0, ink: discInk };
-        discFlights.push({ el: circleEl(discs.seal?.colour || toDiscColour), a, anchorA: start || { x: a.cx, y: a.cy }, end: first, target });
+        discFlights.push({ el: circleEl(discs.seal?.colour || toDiscColour), a, anchorA: start || { x: a.cx, y: a.cy }, end: first, target, leaving: false });
         liveDisc.style.visibility = 'hidden';
         undo.push(() => { liveDisc.style.visibility = ''; });
       }
@@ -445,7 +493,31 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
       const sky = document.createElementNS(SVG_NS, 'g');
       sky.style.pointerEvents = 'none';
       discFlights.forEach(d => sky.appendChild(d.el));
-      flights.forEach(f => sky.appendChild(f.el));
+      for (const f of flights) {
+        // A drawing wider than the glass at one end stands in a sector there.
+        // Where that sector's disc is flying too, the drawing is seen through
+        // it (see frame), and the copy in place stays out for the whole
+        // flight; no hand-over between a still drawing and a moving one.
+        const wideFrom = f.fromBox.w > glassW, wideTo = f.toBox.w > glassW;
+        const d = (wideFrom || wideTo) ? discFlights.find(x => x.leaving === f.down) : null;
+        if (d && (f.down ? wideFrom : wideTo)) {
+          const id = `seal-swap-window-${f.down ? 'down' : 'up'}`;
+          const clip = document.createElementNS(SVG_NS, 'clipPath');
+          clip.setAttribute('id', id);
+          clip.setAttribute('clipPathUnits', 'userSpaceOnUse');
+          const hole = document.createElementNS(SVG_NS, 'circle');
+          clip.appendChild(hole);
+          const pane = document.createElementNS(SVG_NS, 'g');
+          pane.setAttribute('clip-path', `url(#${id})`);
+          pane.appendChild(f.el);
+          sky.appendChild(clip);
+          sky.appendChild(pane);
+          f.window = { el: hole, disc: d, leaving: f.down };
+          if (!f.down && f.to) { f.to.style.opacity = f.toStyleOpacity; f.to.style.visibility = 'hidden'; }
+          continue;
+        }
+        sky.appendChild(f.el);
+      }
       const after = svg.contains(oldBadge) ? oldBadge.parentNode : liveLogo;
       svg.insertBefore(sky, after ? after.nextSibling : svg.firstChild);
       made.push(sky);
