@@ -4513,11 +4513,18 @@ function swapThroughSeal() {
   const discEl = document.getElementById('volume-logo-circle');
   const discBox = discEl ? rectOf(discEl) : null;
   const sealBox = rectOf(sealEl);
-  const discFrom = (cornerDisc && discBox && opacityOf(discEl) > 0)
-    ? { cx: discBox.left + discBox.width / 2, cy: discBox.top + discBox.height / 2, r: discBox.width / 2, colour: cornerDisc.colour, ink: opacityOf(discEl) }
-    : (sealDisc?.colour && sealBox)
+  // Two discs can be standing at the tap (O-306): the one behind the corner's
+  // drawing (a corner disc, or the whole sector at a leaf — which a badge
+  // declared without a disc still has), and the one behind the seal.
+  const sectorColour = cornerDisc?.colour || currentApp?.sectorColour?.() || null;
+  const discFrom = {
+    logo: (sectorColour && discBox && opacityOf(discEl) > 0)
+      ? { cx: discBox.left + discBox.width / 2, cy: discBox.top + discBox.height / 2, r: discBox.width / 2, colour: sectorColour, ink: opacityOf(discEl) }
+      : null,
+    seal: (sealDisc?.colour && sealBox)
       ? { cx: sealBox.left + sealBox.width / 2, cy: sealBox.top + sealBox.height / 2, r: Math.min(sealBox.width, sealBox.height) / 2 * Math.min(1, sealDisc.ratio || 0.5), colour: sealDisc.colour, ink: opacityOf(sealEl) }
-      : null;
+      : null
+  };
   const transit = {
     mode: 'swap',
     snapshot: captureGatewaySnapshot(svg),
@@ -4525,7 +4532,7 @@ function swapThroughSeal() {
     from: {
       seal: { rect: sealBox, src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl) },
       logo: { rect: rectOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1 },
-      disc: discFrom
+      discs: discFrom
     }
   };
   // The frozen copy carries the old badge's drawing too; the flying one
@@ -5311,6 +5318,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         toSeal: sealUrl ? sealEl : null,
         toLogo: liveTop.find(el => el.id === 'volume-logo-group')?.querySelector('#volume-logo-image') || null,
         toSealDisc: sealUrl && sealDisc ? sealDisc : null,
+        toDiscColour: app?.sectorColour?.() || null,
         content: liveTop.find(el => el.classList.contains('focus-content-group')) || null,
         overlays: SWAP_OVERLAYS.map(id => document.getElementById(id)),
         durationMs: Number(new URLSearchParams(location.search).get('swapms')) || undefined,

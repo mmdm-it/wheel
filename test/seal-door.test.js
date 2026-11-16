@@ -5,7 +5,7 @@ import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { volumeConfigs } from '../src/volume-configs.js';
-import { flightFrame, swapAxis, contentShift, flightInk, SWAP_MS } from '../src/view/seal-swap.js';
+import { flightFrame, swapAxis, contentShift, flightInk, discAt, SWAP_MS } from '../src/view/seal-swap.js';
 import { withExtension } from '../src/view/volume-logo.js';
 
 const main = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
@@ -107,6 +107,35 @@ describe('the contents migrate', () => {
     assert.equal(flightInk(1540, 60, 0.1, 0.5, 0, 390), 0);
     assert.equal(flightInk(60, 1540, 0.5, 0.1, 1, 390), 0);
   });
+  // THE SECTOR'S GROUND IS A TRAVELLING CIRCLE, THE SAME BOTH WAYS (O-306).
+  it('a sector\'s circle leaving is its arriving played backwards', () => {
+    const sector = { cx: 900, cy: -300, r: 800, ink: 1 }, foot = { cx: 40, cy: 700, r: 0, ink: 1 };
+    const corner = { x: 300, y: 60 }, seal = { x: 40, y: 700 };
+    for (const e of [0, 0.1, 0.25, 0.5, 0.75, 0.9, 1]) {
+      const out = discAt(sector, foot, corner, seal, e), back = discAt(foot, sector, seal, corner, 1 - e);
+      for (const k of ['cx', 'cy', 'r', 'ink']) assert.ok(Math.abs(out[k] - back[k]) < 1e-6, `${k} at ${e}`);
+    }
+  });
+  it('it starts as the sector and ends on its drawing, and is small by the middle of the crossing', () => {
+    const sector = { cx: 900, cy: -300, r: 800, ink: 1 }, foot = { cx: 40, cy: 700, r: 20, ink: 0.5 };
+    const corner = { x: 300, y: 60 }, seal = { x: 40, y: 700 };
+    assert.deepEqual(discAt(sector, foot, corner, seal, 0), sector);
+    const end = discAt(sector, foot, corner, seal, 1);
+    for (const k of ['cx', 'cy', 'r', 'ink']) assert.ok(Math.abs(end[k] - foot[k]) < 1e-6, k);
+    const mid = discAt(sector, foot, corner, seal, 0.5);
+    assert.ok(mid.r < 800 / 5, `half way across the leaving circle is still ${mid.r} px`);
+    // two grounds are never both large: one closing and one opening, at any moment
+    for (const e of [0.2, 0.4, 0.5, 0.6, 0.8]) {
+      const closing = discAt(sector, foot, corner, seal, e).r, opening = discAt({ ...foot, r: 0 }, sector, seal, corner, e).r;
+      assert.ok(Math.min(closing, opening) < 800 / 5, `at ${e}: ${closing} and ${opening}`);
+    }
+  });
+  it('a disc with no seat of its own closes to nothing and never fades', () => {
+    const sector = { cx: 900, cy: -300, r: 800, ink: 1 }, none = { cx: 40, cy: 700, r: 0, ink: 1 };
+    const at = e => discAt(sector, none, { x: 300, y: 60 }, { x: 40, y: 700 }, e);
+    assert.equal(at(1).r, 0);
+    for (const e of [0, 0.3, 0.6, 1]) assert.equal(at(e).ink, 1);
+  });
   it('the crossing is slow enough to follow', () => {
     assert.ok(SWAP_MS >= 1500);
   });
@@ -128,7 +157,9 @@ describe('the disc travels with its emblem', () => {
   const swap = readFileSync(new URL('../src/view/seal-swap.js', import.meta.url), 'utf8');
   const logo = readFileSync(new URL('../src/view/volume-logo.js', import.meta.url), 'utf8');
   it('the badge can be declared without a disc (the Church\'s declaration, in its own cargo, says so)', () => {
-    assert.match(logo, /circleOpacity: this\._renderConfig\?\.disc === false \? 0 : 0\.5,/);
+    // O-306: with no disc, the sector's circle grows from nothing at its full ink; it does not fade in.
+    assert.match(logo, /circleR: bare \? 0 : discRadius \* \(1 \+ this\._discFeather\(\)\),/);
+    assert.match(logo, /circleOpacity: bare \? this\._sectorInk\(\) : 0\.5,/);
     assert.match(logo, /discInfo\(\) \{\s*if \(!this\._renderConfig \|\| this\._renderConfig\.disc === false\) return null;/);
   });
   it('the seal wears the departing emblem on its disc, remembered for the half it opens', () => {
@@ -136,7 +167,8 @@ describe('the disc travels with its emblem', () => {
     assert.match(main, /sealEl\.style\.background = sealDisc\?\.colour/);
   });
   it('the disc flies from where it stood to where it lands, and the discs in place stand aside', () => {
-    assert.match(swap, /discFlight\.el\.setAttribute\('r', /);
+    assert.match(swap, /d\.el\.setAttribute\('r', /);
+    assert.match(swap, /const c = discAt\(d\.a, d\.end\.disc, d\.anchorA, d\.end\.anchor, e\);/, 'both discs are walked by the one reciprocal rule (O-306)');
     assert.match(swap, /if \(oldCircle\) oldCircle\.style\.visibility = 'hidden';/);
     assert.match(swap, /liveDisc\.style\.visibility = 'hidden';/);
   });

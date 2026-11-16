@@ -2865,6 +2865,7 @@ export function createApp({
     landCorner: () => volumeLogo.land(),
     // O-295: the badge's disc, its colour and size, for the seal of the other half.
     cornerDisc: () => volumeLogo.discInfo(),
+    sectorColour: () => volumeLogo._discColour(),   // O-306: the leaf's ground, which a badge without a disc still has
     nav,
     // The journey a click makes, reachable by name. It is the same call the
     // ring already makes for every tap; naming it lets the proofreading

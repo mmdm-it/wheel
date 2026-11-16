@@ -132,6 +132,40 @@ export function flightFrame(from, to, e) {
   return { dx: x - from.left, dy: y - from.top, sx, sy };
 }
 
+// THE SECTOR'S GROUND IS A CIRCLE THAT TRAVELS WITH ITS DRAWING (O-306,
+// Howell 2026-11-16, of the crossing between two leaves: "In one direction it
+// fades away, and in the other direction it is a moving, enlarging circle.
+// As you know, I'm not fond of fades generally, so I like the moving,
+// enlarging circle, but it needs to be reciprocal and mirror the action in
+// each direction").
+//
+// Each half's circle belongs to that half's drawing and rides it across the
+// glass. `a` and `b` are the circle at the two ends ({cx, cy, r, ink}), and
+// `anchorA` and `anchorB` the centre of its drawing at the same two ends. The
+// radius runs geometrically, so a sector closing has shrunk to a small disc
+// well before the crossing's middle and a sector opening is still small well
+// after it: the two grounds are never both large. Where the circle is not
+// centred on its drawing (a sector is centred on the ring's hub), it closes
+// onto the drawing as it shrinks.
+//
+// RECIPROCAL BY CONSTRUCTION: discAt(a, b, A, B, e) is discAt(b, a, B, A,
+// 1 - e), so arriving is leaving played backwards and neither needs a rule
+// of its own. Pure, so a test can walk it.
+const DISC_FLOOR = 0.5;   // px: the "nothing" a circle with no disc grows from
+export function discAt(a, b, anchorA, anchorB, e) {
+  const ra = Math.max(a.r, DISC_FLOOR), rb = Math.max(b.r, DISC_FLOOR);
+  const r = ra * Math.pow(rb / ra, e);
+  const p = Math.abs(rb - ra) > 1e-9 ? (r - ra) / (rb - ra) : e;
+  const ax = anchorA.x + (anchorB.x - anchorA.x) * e, ay = anchorA.y + (anchorB.y - anchorA.y) * e;
+  return {
+    cx: ax + (a.cx - anchorA.x) * (1 - p) + (b.cx - anchorB.x) * p,
+    cy: ay + (a.cy - anchorA.y) * (1 - p) + (b.cy - anchorB.y) * p,
+    r: r <= DISC_FLOOR ? 0 : r,
+    ink: a.ink + (b.ink - a.ink) * p
+  };
+}
+const centreOf = r => (r ? { x: r.left + r.width / 2, y: r.top + r.height / 2 } : null);
+
 // A copy of a fixed vessel that stays at its seat while the live one travels
 // inside the content group. It is laid in the frame of the original's parent
 // and wears the original's outline inline, since it stands outside the groups
@@ -164,7 +198,7 @@ const VESSELS = 'circle.focus-ring-magnifier-circle';   // the lens and the pare
  * `content` is the new half's live content group and `overlays` its live HTML
  * overlays: they are carried in while `snapshot` and `ghosts` are carried out.
  */
-export function playSealSwap({ land = null, toSealDisc = null, svg = null, snapshot = null, ghosts = [], from, toSeal = null, toLogo = null, content = null, overlays = [], durationMs = SWAP_MS, onDone = null }) {
+export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = null, svg = null, snapshot = null, ghosts = [], from, toSeal = null, toLogo = null, content = null, overlays = [], durationMs = SWAP_MS, onDone = null }) {
   const targets = [
     { from: from?.seal, to: toLogo },
     { from: from?.logo, to: toSeal }
@@ -193,7 +227,7 @@ export function playSealSwap({ land = null, toSealDisc = null, svg = null, snaps
   const glassW = box?.width || window.innerWidth;
   const axis = swapAxis(glassW, box?.height || window.innerHeight);
   let oldBadgeSmall = false, newBadgeSmall = false, oldBadge = null, oldSky = null, oldSkyInk = 1;
-  let discFlight = null;
+  const discFlights = [];
   const frame = u => {
     const e = ease(u);
     for (const f of flights) {
@@ -221,16 +255,18 @@ export function playSealSwap({ land = null, toSealDisc = null, svg = null, snaps
     const o = Math.min(1, u / 0.7);
     fading.forEach(el => { el.style.opacity = String(1 - o); });
     if (oldSky) oldSky.style.opacity = (oldSkyInk * (1 - clamp01(e / 0.25))).toFixed(3);
-    if (discFlight) {
-      // THE DISC FLIES WITH ITS EMBLEM (O-295), centre and radius along the
-      // same eased line, its ink from one seat's to the other's.
-      const to = discFlight.target();
-      if (to) discFlight.to = to;
-      const a = discFlight.from, b = discFlight.to;
-      discFlight.el.setAttribute('cx', (a.cx + (b.cx - a.cx) * e).toFixed(1));
-      discFlight.el.setAttribute('cy', (a.cy + (b.cy - a.cy) * e).toFixed(1));
-      discFlight.el.setAttribute('r', Math.max(0, a.r + (b.r - a.r) * e).toFixed(1));
-      discFlight.el.style.opacity = (a.ink + (b.ink - a.ink) * e).toFixed(3);
+    if (discFlights.length) {
+      // EACH DISC FLIES WITH ITS OWN EMBLEM (O-295, O-306): the landing is
+      // read every frame, as the drawings' landings are.
+      for (const d of discFlights) {
+        const end = d.target();
+        if (end) d.end = end;
+        const c = discAt(d.a, d.end.disc, d.anchorA, d.end.anchor, e);
+        d.el.setAttribute('cx', c.cx.toFixed(1));
+        d.el.setAttribute('cy', c.cy.toFixed(1));
+        d.el.setAttribute('r', Math.max(0, c.r).toFixed(1));
+        d.el.style.opacity = c.ink.toFixed(3);
+      }
       if (oldBadge) oldBadge.style.opacity = String(1 - o);
     } else {
       if (oldBadge) oldBadge.style.opacity = String(oldBadgeSmall ? 1 - clamp01(e / 0.12) : 1 - o);
@@ -350,34 +386,56 @@ export function playSealSwap({ land = null, toSealDisc = null, svg = null, snaps
       svg.appendChild(snapshot);
       outgoing = snapshot;
     }
-    // THE DISC (O-295). Where it lands: the new corner badge's own disc when
-    // it has one (shown), else the new seal's, centred on the drawing at its
-    // corner size. Read every frame, as the drawings' landings are.
-    const fromDisc = from?.disc || null;
-    if (svg && fromDisc && Number.isFinite(fromDisc.cx)) {
-      const liveDisc = disc && inkOf(disc) > 0 && Number(disc.getAttribute('opacity') ?? 1) > 0 ? disc : null;
-      const target = () => {
-        if (liveDisc) {
-          const r = rectOf(liveDisc);
-          return r ? { cx: r.left + r.width / 2, cy: r.top + r.height / 2, r: r.width / 2, ink: discInk } : null;
-        }
-        if (toSeal && toSealDisc) {
-          const r = rectOf(toSeal);
-          return r ? { cx: r.left + r.width / 2, cy: r.top + r.height / 2, r: Math.min(r.width, r.height) / 2 * Math.min(1, toSealDisc.ratio || 0.5), ink: inkOf(toSeal) } : null;
-        }
-        return null;
-      };
+    // THE DISCS (O-295, O-306). Two can be on the glass: the leaving half's,
+    // behind the drawing that goes down to the foot, and the arriving half's,
+    // behind the drawing that comes up to the corner. Each lands where its
+    // own drawing lands, never on the other half's disc: a disc that had
+    // nowhere of its own to land used to be sent to the other half's sector,
+    // which painted one half's ground in the other's colour for the length
+    // of the crossing.
+    const discs = from?.discs || (from?.disc ? { logo: from.disc } : {});
+    const circleEl = colour => {
       const el = document.createElementNS(SVG_NS, 'circle');
-      el.setAttribute('fill', fromDisc.colour || '#362e6a');
+      el.setAttribute('fill', colour || '#362e6a');
       el.style.pointerEvents = 'none';
-      const first = target();
-      // With nowhere to land, it goes down to the seal's corner and out.
-      const fallback = { cx: fromDisc.cx, cy: fromDisc.cy, r: 0, ink: 0 };
-      discFlight = { el, from: { cx: fromDisc.cx, cy: fromDisc.cy, r: fromDisc.r, ink: fromDisc.ink ?? 0.5 }, to: first || fallback, target };
-      // The disc in place is the flyer's: put out where it was, and where it lands, until it lands.
+      return el;
+    };
+    const liveDisc = disc && rectOf(disc) && inkOf(disc) > 0 && Number(disc.getAttribute('opacity') ?? 1) > 0 ? disc : null;
+    if (svg && discs.logo && Number.isFinite(discs.logo.cx)) {
+      // LEAVING: from where it stands (a corner disc, or a whole sector) to
+      // the new seal's disc, or to nothing at the new seal where that seal
+      // stands bare.
+      const a = { cx: discs.logo.cx, cy: discs.logo.cy, r: discs.logo.r, ink: discs.logo.ink ?? 0.5 };
+      const anchorA = centreOf(from?.logo?.rect) || { x: a.cx, y: a.cy };
+      const target = () => {
+        const c = centreOf(rectOf(toSeal));
+        if (!c) return null;
+        const r = toSealDisc ? Math.min(rectOf(toSeal).width, rectOf(toSeal).height) / 2 * Math.min(1, toSealDisc.ratio || 0.5) : 0;
+        return { disc: { cx: c.x, cy: c.y, r, ink: toSealDisc ? inkOf(toSeal) : a.ink }, anchor: c };
+      };
+      // With nowhere to land, it closes where it stands.
+      const fallback = { disc: { cx: a.cx, cy: a.cy, r: 0, ink: a.ink }, anchor: anchorA };
+      discFlights.push({ el: circleEl(discs.logo.colour), a, anchorA, end: target() || fallback, target });
       const oldCircle = oldBadge?.querySelector('circle');
       if (oldCircle) oldCircle.style.visibility = 'hidden';
-      if (liveDisc) {
+    }
+    if (svg && liveDisc && (discs.seal || toDiscColour)) {
+      // ARRIVING: from the old seal's disc, or from nothing at the old seal
+      // where it stood bare, to the new half's own disc as it stands (a
+      // corner disc, or a whole sector).
+      const start = centreOf(from?.seal?.rect);
+      const target = () => {
+        const r = rectOf(liveDisc);
+        if (!r) return null;
+        const c = centreOf(r);
+        return { disc: { cx: c.x, cy: c.y, r: r.width / 2, ink: discInk }, anchor: centreOf(rectOf(toLogo)) || c };
+      };
+      const first = target();
+      if (first && (discs.seal || start)) {
+        const a = discs.seal
+          ? { cx: discs.seal.cx, cy: discs.seal.cy, r: discs.seal.r, ink: discs.seal.ink ?? discInk }
+          : { cx: start.x, cy: start.y, r: 0, ink: discInk };
+        discFlights.push({ el: circleEl(discs.seal?.colour || toDiscColour), a, anchorA: start || { x: a.cx, y: a.cy }, end: first, target });
         liveDisc.style.visibility = 'hidden';
         undo.push(() => { liveDisc.style.visibility = ''; });
       }
@@ -386,7 +444,7 @@ export function playSealSwap({ land = null, toSealDisc = null, svg = null, snaps
     if (svg) {
       const sky = document.createElementNS(SVG_NS, 'g');
       sky.style.pointerEvents = 'none';
-      if (discFlight) sky.appendChild(discFlight.el);
+      discFlights.forEach(d => sky.appendChild(d.el));
       flights.forEach(f => sky.appendChild(f.el));
       const after = svg.contains(oldBadge) ? oldBadge.parentNode : liveLogo;
       svg.insertBefore(sky, after ? after.nextSibling : svg.firstChild);

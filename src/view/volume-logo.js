@@ -631,17 +631,44 @@ export class VolumeLogo {
     return { x: centerX, y: centerY, radius };
   }
 
+  // The ink the sector's ground is drawn at, as the volume declares it.
+  _sectorInk() {
+    const declared = parseFloat(this._renderConfig?.color_scheme?.detail_sector_opacity);
+    return Number.isFinite(declared) ? declared : 1.0;
+  }
+
+  // THE EMBLEM MAY KEEP ITS CORNER AT A LEAF (O-306, Howell 2026-11-16, of
+  // the second volume's drawing: it "should not appear rotated and large
+  // under the details sector the way" the first volume's does; it "should
+  // remain in the upper right corner at all levels from root to leaf ...
+  // less opaque, and allow the text to appear over it"). Declared
+  // by the volume (display_config.detail_sector.emblem_at_leaf: 'corner',
+  // with emblem_leaf_opacity for how faint); a volume that declares nothing
+  // gets the watermark as before.
+  _emblemKeepsCorner() {
+    return this._renderConfig?.emblem_at_leaf === 'corner';
+  }
+  _emblemLeafInk() {
+    const declared = Number(this._renderConfig?.emblem_leaf_opacity);
+    return Number.isFinite(declared) && declared >= 0 && declared <= 1 ? declared : 0.25;
+  }
+
   _getStartState() {
     const { discRadius, centerX: cx, centerY: cy, logoWidth, logoHeight } = this._collapsedGeometry();
+    const bare = this._renderConfig?.disc === false;
     return {
       circleCx: cx,
       circleCy: cy,
-      circleR: discRadius * (1 + this._discFeather()),
+      circleR: bare ? 0 : discRadius * (1 + this._discFeather()),
       circleFeather: this._discFeather(),
       // A volume may declare its corner badge without a disc (O-295: the
       // Church's St Peter's stands on the bare ground); it still opens into
-      // a coloured sector at a leaf, the disc fading in as it grows.
-      circleOpacity: this._renderConfig?.disc === false ? 0 : 0.5,
+      // a coloured sector at a leaf. THE SECTOR'S GROUND NEVER FADES (O-306,
+      // Howell 2026-11-16: "I'm not fond of fades generally, so I like the
+      // moving, enlarging circle"): with no disc to start from, the circle
+      // grows out of nothing behind the emblem at the ink it will end at,
+      // where it used to grow from the disc's size at no ink and fade in.
+      circleOpacity: bare ? this._sectorInk() : 0.5,
       logoX: cx - logoWidth / 2,
       logoY: cy - logoHeight / 2,
       logoWidth,
@@ -683,6 +710,24 @@ export class VolumeLogo {
     const rotationDeg = (magnifierAngle * 180 / Math.PI) - 180;
     const configOpacity = this._renderConfig?.color_scheme?.detail_sector_opacity;
     const circleEndOpacity = configOpacity ? parseFloat(configOpacity) : 1.0;
+    if (this._emblemKeepsCorner()) {
+      // The corner state's own boxes, fainter: nothing grows, nothing turns.
+      const shut = this._getStartState();
+      const ink = this._emblemLeafInk();
+      return {
+        ...shut,
+        circleCx: arcParams.hubX,
+        circleCy: arcParams.hubY,
+        circleR: endCircleR,
+        circleFeather: 0,
+        circleOpacity: circleEndOpacity,
+        surroundOpacity: Math.min(shut.surroundOpacity, ink),
+        logoOpacity: ink,
+        logoRotation: 0,
+        logoCenterX: shut.logoX + shut.logoWidth / 2,
+        logoCenterY: shut.logoY + shut.logoHeight / 2
+      };
+    }
     return {
       circleCx: arcParams.hubX,
       circleCy: arcParams.hubY,
@@ -916,14 +961,18 @@ export class VolumeLogo {
   _applyTransformFrame(from, to, t) {
     const lerp = (a, b) => a + (b - a) * t;
     if (this.circle) {
+      // The circle is carried from the FROM state — unless that state is no
+      // circle at all (O-306: a badge with no disc opens from nothing), where
+      // there is nothing to scale up from and the TO state is carried down.
+      const base = from.circleR > 0 ? from : to;
       if (this._frameBase !== from) {
-        this.circle.setAttribute('cx', from.circleCx);
-        this.circle.setAttribute('cy', from.circleCy);
-        this.circle.setAttribute('r', from.circleR);
+        this.circle.setAttribute('cx', base.circleCx);
+        this.circle.setAttribute('cy', base.circleCy);
+        this.circle.setAttribute('r', base.circleR);
       }
-      const k = from.circleR ? lerp(from.circleR, to.circleR) / from.circleR : 1;
+      const k = base.circleR ? lerp(from.circleR, to.circleR) / base.circleR : 1;
       const cx = lerp(from.circleCx, to.circleCx), cy = lerp(from.circleCy, to.circleCy);
-      this.circle.style.transform = `translate(${cx - k * from.circleCx}px, ${cy - k * from.circleCy}px) scale(${k})`;
+      this.circle.style.transform = `translate(${cx - k * base.circleCx}px, ${cy - k * base.circleCy}px) scale(${k})`;
       this.circle.style.opacity = String(lerp(from.circleOpacity, to.circleOpacity));
     }
     for (const [el, p] of this._layers()) {
