@@ -1129,8 +1129,10 @@ volumeConfigs.church = {
   loadManifest: wallLoader({ volumeId: 'church', base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION }),
   palette: { bg: '#aeb08f', node: '#71725d', text: '#1d2014', band: '#585949', accent: '#585949', magnifierStroke: '#1d2014',
     // O-309 (Howell 2026-11-16): over the umber text ground the grey globe
-    // "doesn't stand out as well as it did"; at a leaf only, it is solid black.
-    globeAtLeaf: '#000000' },
+    // "doesn't stand out as well as it did"; solid black then stood out "too
+    // much ... split the difference": half way from the grey to black, and
+    // (styles/base.css) half way from its 0.7 ink to full.
+    globeAtLeaf: '#1b1b1b' },
   landscape: null,
   stampLetter: undefined,
   createHandlers: makeAdapterHandlers('church')
