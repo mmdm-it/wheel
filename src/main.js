@@ -844,6 +844,7 @@ let searchStringEl = null;      // the carriage — SVG text left of the lens
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
 let sealUrl = null;   // W-301: the volume's seal, drawn at the foot of the glass on the left; null for a volume without one
 let sealEl = null;
+let sealSurround = null;   // O-312: the second picture of an emblem in two (its surround), worn by the seal behind the first
 let sealDisc = null;   // O-295: the seal's disc, { colour, ratio } of the emblem it wears, or null for a bare drawing
 let sealDoor = null;   // O-292: the volume the seal opens (each half's seal opens the other half); null = a mark only
 let sealSwapping = false;
@@ -883,6 +884,9 @@ function applySeal() {
   sealEl.style.background = sealDisc?.colour
     ? `radial-gradient(circle closest-side, ${sealDisc.colour} ${(100 * Math.min(1, sealDisc.ratio || 0.5)).toFixed(1)}%, transparent ${(100 * Math.min(1, sealDisc.ratio || 0.5) + 0.8).toFixed(1)}%)`
     : '';
+  // AN EMBLEM IN TWO PICTURES IS ONE PIECE AT THE FOOT TOO (O-312): its
+  // surround lies on the same box behind it, as it does in the corner badge.
+  if (sealSurround && !sealDisc?.colour) { sealEl.style.background = `url("${sealSurround}") center / 100% 100% no-repeat`; primeAspect(sealSurround); }
   if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; primeAspect(sealUrl); }
   else { sealEl.hidden = true; sealEl.removeAttribute('src'); }
   // THE PARENT'S LABEL STOPS SHORT OF THE SEAL (O-301): a label long enough to
@@ -4524,7 +4528,11 @@ function swapThroughSeal() {
   // (O-307): no disc goes with it, and a disc remembered by an older build
   // is cleared from the record here.
   const cornerDisc = currentApp?.cornerDisc?.() || null;
-  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: null });
+  // An emblem in two pictures goes down whole (O-312): its surround with it.
+  const surroundImg = document.getElementById('volume-logo-surround');
+  const surroundHref = surroundImg && surroundImg.style.display !== 'none' ? (surroundImg.getAttribute('href') || surroundImg.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href') || null) : null;
+  const surroundSrc = surroundHref ? new URL(surroundHref, document.baseURI).href : null;
+  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: null, sealSurround: surroundSrc });
   // And the disc itself travels: where it stands now, as a circle on the page.
   const discEl = document.getElementById('volume-logo-circle');
   const discBox = discEl ? rectOf(discEl) : null;
@@ -4546,14 +4554,15 @@ function swapThroughSeal() {
     snapshot: captureGatewaySnapshot(svg),
     ghosts: ghostOverlays(SWAP_OVERLAYS),
     from: {
-      seal: { rect: sealBox, src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl) },
-      logo: { rect: rectOf(logoImg), box: boxOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1 },
+      seal: { rect: sealBox, src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl), surround: sealSurround },
+      logo: { rect: rectOf(logoImg), box: boxOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1,
+        surround: surroundSrc ? { rect: rectOf(surroundImg), box: boxOf(surroundImg), src: surroundSrc, opacity: opacityOf(surroundImg) } : null },
       discs: discFrom
     }
   };
   // The frozen copy carries the old badge's drawing too; the flying one
   // replaces it, so the copy's is put out.
-  transit.snapshot?.querySelectorAll?.('image').forEach(im => { if (im.getAttribute('id') === 'volume-logo-image') im.style.visibility = 'hidden'; });
+  transit.snapshot?.querySelectorAll?.('image').forEach(im => { if (im.getAttribute('id') === 'volume-logo-image' || (surroundSrc && im.getAttribute('id') === 'volume-logo-surround')) im.style.visibility = 'hidden'; });
   if (sealEl) sealEl.style.visibility = 'hidden';
   const search = `?volume=${encodeURIComponent(to)}`;
   bootVolume(to, search, null, transit)
@@ -5001,9 +5010,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // and is gone before the corner, and one remembered by an older build is
   // not read.
   sealDisc = null;
+  sealSurround = null;
   if (sealDoor) {
     const worn = recall(volume);
     if (typeof worn.sealArt === 'string' && worn.sealArt) sealUrl = worn.sealArt;
+    if (sealUrl === worn.sealArt && typeof worn.sealSurround === 'string' && worn.sealSurround) sealSurround = worn.sealSurround;
   }
   applySeal();
   copyrightWords = root?.display_config?.copyright_notice || null;
@@ -5336,6 +5347,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         toSeal: sealUrl ? sealEl : null,
         toLogo: liveTop.find(el => el.id === 'volume-logo-group')?.querySelector('#volume-logo-image') || null,
         toSealDisc: sealUrl && sealDisc ? sealDisc : null,
+        toSurround: liveTop.find(el => el.id === 'volume-logo-group')?.querySelector('#volume-logo-surround') || null,
         toDiscColour: app?.sectorColour?.() || null,
         content: liveTop.find(el => el.classList.contains('focus-content-group')) || null,
         overlays: SWAP_OVERLAYS.map(id => document.getElementById(id)),
