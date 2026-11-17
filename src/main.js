@@ -2965,6 +2965,12 @@ function applyTheme(volume) {
   root.style.setProperty('--theme-color-node', active.node);
   root.style.setProperty('--theme-color-text', active.text);
   root.style.setProperty('--theme-color-band', active.band);
+  // THE GLOBE OVER A TEXT GROUND (O-309): a volume may declare the globe's
+  // colour for the leaf alone, where it stands on the text ground and not on
+  // the volume's own; undeclared, the globe is the one grey everywhere.
+  if (active.globeAtLeaf) root.style.setProperty('--theme-globe-leaf', active.globeAtLeaf);
+  else root.style.removeProperty('--theme-globe-leaf');
+  root.classList.remove('detail-open');   // a new volume opens its own sector and says so
   // ORBITAL = the band's own gray, a step darker (Howell 2026-07-23,
   // retiring the demo red as too distracting): the ring's nodes are made of
   // the band's material — chain and links, one metal — while RADIAL travel
@@ -3083,6 +3089,7 @@ window.addEventListener('detail-sector-arriving', () => {
 
 window.addEventListener('detail-sector-change', (e) => {
   const { visible } = e.detail || {};
+  document.documentElement.classList.toggle('detail-open', Boolean(visible));   // O-309: the globe's leaf colour hangs on this
   // THE TEXT LEAVES UNDER THE FINGER (O-151 step two, Howell 2026-09-16: "All
   // of the text pops off suddenly soon after the animation begins"). The
   // verse, its notes and the manuscript key are page elements outside the

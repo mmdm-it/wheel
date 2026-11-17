@@ -1127,7 +1127,10 @@ volumeConfigs.church = {
   manifestPath: CHURCH_VOLUME_BASE,
   assetBase: `${CHURCH_VOLUME_BASE}/${CHURCH_VOLUME_VERSION}/`,
   loadManifest: wallLoader({ volumeId: 'church', base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION }),
-  palette: { bg: '#aeb08f', node: '#71725d', text: '#1d2014', band: '#585949', accent: '#585949', magnifierStroke: '#1d2014' },
+  palette: { bg: '#aeb08f', node: '#71725d', text: '#1d2014', band: '#585949', accent: '#585949', magnifierStroke: '#1d2014',
+    // O-309 (Howell 2026-11-16): over the umber text ground the grey globe
+    // "doesn't stand out as well as it did"; at a leaf only, it is solid black.
+    globeAtLeaf: '#000000' },
   landscape: null,
   stampLetter: undefined,
   createHandlers: makeAdapterHandlers('church')
