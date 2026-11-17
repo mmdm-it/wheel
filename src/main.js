@@ -548,8 +548,16 @@ const BASEMENT = {
   classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
   markFor: key => (keptSeat(key) ? MARK_BOOKMARK : isHit(key) ? MARK_LANDMARK : null),
   sideFor: key => (!keptSeat(key) && isHit(key) ? -1 : 1),   // a landmark's name inward of the line; a kept hit is a bookmark
-  legend: () => (basementWords && (basementWords.bookmark || basementWords.landmark)
-    ? [[MARK_LANDMARK, basementWords.landmark, -1], [MARK_BOOKMARK, basementWords.bookmark ? `${basementWords.and || BASEMENT_AND} ${basementWords.bookmark}` : null, 1]] : null),
+  // THE "&" JOINS TWO WORDS OR IS NOT WRITTEN (O-311, Howell 2026-11-17, of
+  // a room with bookmarks and no landmarks reading "& BOOKMARKS": "Remove
+  // the ampersand ... It makes no sense"). The landmarks' word stands only
+  // in a room that has a word for them and landmarks to show.
+  legend: () => {
+    if (!(basementWords && (basementWords.bookmark || basementWords.landmark))) return null;
+    const landmark = basementWords.landmark && hitSeats().length ? basementWords.landmark : null;
+    const bookmark = basementWords.bookmark ? (landmark ? `${basementWords.and || BASEMENT_AND} ${basementWords.bookmark}` : basementWords.bookmark) : null;
+    return [[MARK_LANDMARK, landmark, -1], [MARK_BOOKMARK, bookmark, 1]];
+  },
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; },
   // THE CAPTION ON THE LENS (O-280, Howell 2026-11-09, his sketch: "KEEP /

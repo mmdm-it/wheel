@@ -90,7 +90,9 @@ test('the host hands the glide the floor\'s dissolve and the settle the floor it
 test('the host leads the bookmarks word with the tongue\'s "and", the ampersand by default', () => {
   const main = read('src/main.js');
   assert.match(main, /const BASEMENT_AND = '&';/);
-  assert.match(main, /\[MARK_BOOKMARK, basementWords\.bookmark \? `\$\{basementWords\.and \|\| BASEMENT_AND\} \$\{basementWords\.bookmark\}` : null, 1\]/);
+  // O-311: the "&" is written only where the landmarks' word stands before it.
+  assert.match(main, /const landmark = basementWords\.landmark && hitSeats\(\)\.length \? basementWords\.landmark : null;/);
+  assert.match(main, /const bookmark = basementWords\.bookmark \? \(landmark \? `\$\{basementWords\.and \|\| BASEMENT_AND\} \$\{basementWords\.bookmark\}` : basementWords\.bookmark\) : null;/);
   assert.match(main, /and: roomKit\.and \|\| null/, 'from the phone\'s kit (O-282)');
 });
 
