@@ -15,7 +15,7 @@
 // exactly as before — and only the corner floor still applies.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { getViewportInfo, getParentSeat, getParentLabelLeftX } from '../src/geometry/focus-ring-geometry.js';
+import { getViewportInfo, getParentSeat, getParentLabelLeftX, setParentLabelCornerOccupied } from '../src/geometry/focus-ring-geometry.js';
 
 const vp = getViewportInfo(720, 1400);
 const magR = vp.SSd * 0.06;
@@ -91,5 +91,35 @@ describe('the suffixed parent label, right to left (O-139)', () => {
   it('the corner is still the floor when the numeral itself is too wide', () => {
     const nameW = magR, w = nameW + vp.SSd * 2;
     assert.equal(getParentLabelLeftX(vp, magR, w, nameW, 'rtl'), seat.labelX);
+  });
+});
+
+// THE CORNER IS NOT ALWAYS EMPTY (O-301). A seal stands in the lower left
+// now, and a label long enough to start in the corner ran across it.
+describe('the parent label stops short of what stands in the corner', () => {
+  const occupiedTo = seat.labelX + 110;
+  const withSeal = fn => { setParentLabelCornerOccupied(occupiedTo); try { return fn(); } finally { setParentLabelCornerOccupied(0); } };
+
+  it('starts a corner label at the declared edge, not across it', () => {
+    assert.equal(withSeal(() => place(480)), occupiedTo);
+  });
+  it('leaves a label that never reached the corner where it was', () => {
+    assert.equal(withSeal(() => place(60)), place(60));
+    assert.equal(withSeal(() => place(220)), place(220));
+  });
+  it('slides a label too long for the room back toward the corner, never off the right edge', () => {
+    const w = vp.width - seat.labelX - 40;   // fits from the corner, not from the seal
+    const x = withSeal(() => place(w));
+    assert.ok(x >= seat.labelX && x < occupiedTo, `between the corner and the seal, got ${x}`);
+    assert.ok(x + w <= vp.width, 'ends inside the glass');
+    assert.equal(withSeal(() => place(vp.width * 2)), seat.labelX, 'the longest keep the old corner');
+  });
+  it('holds for a suffixed label and for right-to-left', () => {
+    assert.equal(withSeal(() => place(480, 440)), occupiedTo);
+    assert.equal(withSeal(() => getParentLabelLeftX(vp, magR, 480, 40, 'rtl')), occupiedTo);
+  });
+  it('hands the corner back when nothing is declared', () => {
+    setParentLabelCornerOccupied(occupiedTo); setParentLabelCornerOccupied(null);
+    assert.equal(place(560), seat.labelX);
   });
 });

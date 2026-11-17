@@ -76,7 +76,12 @@ export function toTraditionNumeral(n, locale) {
 // NOTE: src/view/secondary-strata-view.js carries the Latin rule locally,
 // where the view layer cannot reach across into the adapters; the strata
 // ring's edition names are O-97's business and are not changed here.
-const LATIN_SCRIPT_ONLY = /^[ -ɏ̀-ͯḀ-ỿ]+$/;
+// A PRINTER'S APOSTROPHE IS NOT ANOTHER SCRIPT (O-305, Howell's phone,
+// 2026-11-16: a chapter named with one was the only label on the glass not
+// in capitals). The rule's range stopped at the Latin letters and their
+// marks, so one curled apostrophe, dash or quotation mark (U+2010 to U+2027)
+// sent a wholly Latin name down the "leave it as written" road.
+const LATIN_SCRIPT_ONLY = /^[ -ɏ̀-ͯḀ-ỿ\u2010-\u2027]+$/;
 const HAS_GREEK = /[\u0370-\u03FF\u1F00-\u1FFF]/;
 const greekCaps = str => str.normalize('NFD').replace(/\p{M}/gu, '').normalize('NFC').toUpperCase();
 export const toDisplayCase = s => {

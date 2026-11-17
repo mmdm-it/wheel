@@ -586,6 +586,15 @@ svg :focus-visible {
    the more faint level and stay there... it can even be slightly dimmer than
    it has been"). No hover, no pressed state, no swell — one size, one light. */
 #dimension-button, #dimension-button:hover, #dimension-button[aria-pressed="true"] { opacity: 0.7; }
+/* OVER A TEXT GROUND THE GLOBE MAY BE SOLID (O-309, Howell 2026-11-16, of the
+   second volume's umber: "doesn't stand out as well as it did ... we should
+   make it solid black. This would be for the detail sector (leaf) only").
+   Only where the volume declares a leaf colour, only while the sector is
+   open; the basement's own ink still wins there. */
+:root.detail-open #dimension-button svg { color: var(--color-globe, var(--theme-globe-leaf, #363636)); }
+:root.detail-open[style*="--theme-globe-leaf"] #dimension-button,
+:root.detail-open[style*="--theme-globe-leaf"] #dimension-button:hover,
+:root.detail-open[style*="--theme-globe-leaf"] #dimension-button[aria-pressed="true"] { opacity: 0.78; /* a quarter of the way from 0.7 to solid: solid "stands out too much", half way was still a little dark */ }
 /* THE WATERMARK (O-246, Howell 2026-10-30: "a persistent watermark boldly
    displayed to alert the user that they are not looking at a Gregorian
    calendar"). The chosen plane's word, as he drew it: huge, translucent,
@@ -1013,6 +1022,16 @@ svg :focus-visible {
 :root[data-theme="calendar"] .focus-ring-parent-label,
 :root[data-theme="bible"] .focus-ring-parent-label {
   text-transform: none;
+}
+/* AND THE HALO COPY MUST HEAR IT TOO (O-305, Howell's phone, 2026-11-16: a
+   name drawn in lower case wore a glow shaped like its capitals, running on
+   past the last letter). The halo is a <use> of the label, and a copy inside
+   a <use> is not matched by a rule that reaches it through an ancestor: the
+   rule above never applied to it, the bare class rule's `uppercase` did, and
+   the glow was set in capitals whatever the label wore. A custom property is
+   inherited into the copy, so the theme says it that way as well. */
+:root[data-theme="bible"] {
+  --focus-label-transform: none;
 }
 
 /* CASING BELONGS TO THE VOLUME, NOT TO CSS (2026-08-02). `text-transform:

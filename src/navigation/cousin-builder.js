@@ -217,6 +217,49 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
         });
       });
     });
+    // EVERY BOOK OF EVERY EDITION STANDS ON THIS RING, WHERE THE VOLUME SAYS
+    // ITS BOOKS ARE SEPARATE WORKS (O-303, Howell 2026-11-15: each catechism
+    // is its own book in the Church, and the globe chooses the language
+    // within it). The Bible's editions seat one set of leaves, so its ring
+    // shows the books of the edition up and nothing else (O-71, above) — a
+    // rule that stands untouched, because the Bible declares nothing here. A
+    // volume of catechisms is the other case: its editions share no leaf, a
+    // book is a work of its own, and a ring that showed only the edition up
+    // would change its books whenever the reader changed language — the
+    // arrangement the ruling refused. So the volume declares
+    // `books_across_editions`, and the ring is the union, in the volume's own
+    // order of editions and never the reader's, so that it is the same ring
+    // whatever tongue is up.
+    //
+    // A work is known by its first leaf: two editions seating the same first
+    // leaf are two tongues of one book and take one seat, held by the edition
+    // up if it has the work, else by one in the reader's tongue, else by the
+    // first declared. (Until an edition's chart has arrived its book stands
+    // for itself; no two editions share a leaf today.)
+    if (wall.displayConfig?.books_across_editions === true) {
+      const firstLeaf = (id, code) => wall.chartFor?.(id, code)?.seats?.[0]?.utterances?.[0] || `book:${id}`;
+      const tongueOf = code => (wall.editions || []).find(e => e?.code === code)?.language || null;
+      const mine = new Map(sorted.map(b => [firstLeaf(b.id, edition), b]));
+      const home = liveDivisions[0];
+      const foreign = (id, code) => ({
+        id, section: null, name: bookNames?.[id] || null, level: 'book',
+        testamentId: 'division-0', parentName: home?.label || null, prominence: undefined
+      });
+      const union = [];
+      for (const e of wall.editions || []) {
+        for (const unit of wall.booksFor(e.code) || []) {
+          const work = firstLeaf(unit.id, e.code);
+          const at = union.findIndex(u => u.work === work);
+          if (at < 0) {
+            union.push(mine.has(work) ? { work, code: edition, item: mine.get(work) } : { work, code: e.code, item: foreign(unit.id, e.code) });
+          } else if (!mine.has(work) && tongueOf(e.code) === tongueOf(edition) && tongueOf(union[at].code) !== tongueOf(edition)) {
+            union[at] = { work, code: e.code, item: foreign(unit.id, e.code) };
+          }
+        }
+      }
+      sorted.length = 0;
+      union.forEach((u, i) => sorted.push({ ...u.item, sort: i }));
+    }
   } else {
     Object.entries(bible.testaments || {}).sort(bySortNumber).forEach(([testamentKey, testament]) => {
       const testamentName = testamentNames[testamentKey] || null;
@@ -263,7 +306,9 @@ export function buildBibleBookCousinChain(manifest, { testamentId, bookId, initi
   const shelfOrder = edition && manifest?.__wallVolume?.bookOrderFor
     ? manifest.__wallVolume.bookOrderFor(edition)
     : null;
-  if (shelfOrder) {
+  // A ring of separate works keeps the volume's order (O-303): the shelf is
+  // one edition's, and would pull that edition's books to the front.
+  if (shelfOrder && wall?.displayConfig?.books_across_editions !== true) {
     const rank = new Map(shelfOrder.map((id, i) => [id, i]));
     const tail = shelfOrder.length;
     const rankOf = it => (rank.has(it.id) ? rank.get(it.id) : tail + (it.sort || 0));

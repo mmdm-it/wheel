@@ -144,7 +144,7 @@ import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.
 import { bearingOf, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
 import { createDepthDrill } from './core/depth-drill.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
-import { playSealSwap, ghostOverlays, rectOf } from './view/seal-swap.js';
+import { playSealSwap, ghostOverlays, rectOf, boxOf, primeAspect } from './view/seal-swap.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
@@ -164,7 +164,7 @@ import { computeMarginArea, setMarginKeepOut } from './geometry/margin-area.js';
 import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
-import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat } from './geometry/focus-ring-geometry.js';
+import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat, setParentLabelCornerOccupied } from './geometry/focus-ring-geometry.js';
 import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 import { mountDimensionGlobe, mountDimensionEmblem } from './view/dimension-globe.js';
 import { labelRotationDeg } from './view/node-appearance.js';
@@ -846,6 +846,7 @@ let sealSwapping = false;
 // into view with the rest of the primary stratum"; rising from the bottom of
 // the glass was the first try, and wrong). While `sealRides` it is one of the
 // primary's overlays in setPrimaryVisual; sealRest() takes it off the plane.
+const SEAL_LABEL_GAP_PX = 6;   // O-301: clear glass between the seal and a label seated beside it
 let sealRides = false;
 function sealRest() {
   sealRides = false;
@@ -868,15 +869,21 @@ function applySeal() {
     document.body.appendChild(sealEl);
   }
   sealEl.classList.toggle('is-door', Boolean(sealUrl && sealDoor));
-  // THE DISC TRAVELS WITH ITS EMBLEM (O-295, Howell 2026-11-11: "the purple
-  // circle, or blue circle as the case may be, needs to travel with the crown
-  // of thorns or the Torah scroll"). Drawn as the seal's own background, a
-  // circle centred on the drawing at the size it has in the corner badge.
+  // A seal that is given a disc draws it as its own background, a circle
+  // centred on the drawing at the size it has in the corner badge. None is
+  // given one today (O-307 withdrew O-295's travelling disc at the foot).
   sealEl.style.background = sealDisc?.colour
     ? `radial-gradient(circle closest-side, ${sealDisc.colour} ${(100 * Math.min(1, sealDisc.ratio || 0.5)).toFixed(1)}%, transparent ${(100 * Math.min(1, sealDisc.ratio || 0.5) + 0.8).toFixed(1)}%)`
     : '';
-  if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; }
+  if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; primeAspect(sealUrl); }
   else { sealEl.hidden = true; sealEl.removeAttribute('src'); }
+  // THE PARENT'S LABEL STOPS SHORT OF THE SEAL (O-301): a label long enough to
+  // start in the corner ran across the drawing that now stands there. The
+  // seal's width is the stylesheet's, known before the drawing has loaded, so
+  // its right edge is measured here and handed to the geometry every seat and
+  // flight reads; a volume without a seal hands the corner back.
+  const sealRight = sealUrl ? sealEl.getBoundingClientRect().right : 0;
+  setParentLabelCornerOccupied(sealRight > 0 ? sealRight + SEAL_LABEL_GAP_PX : 0);
 }
 let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
 let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
@@ -2370,6 +2377,26 @@ function updateCornerImage() {
   } catch (_) { /* a volume that cannot answer keeps whatever it painted */ }
 }
 
+// THE EDITION FOLLOWS THE BOOK, WHERE THE BOOKS ARE SEPARATE WORKS (O-303).
+// On a ring of catechisms each book belongs to an edition of its own, and
+// the reader who turns the ring to one has chosen it: the edition that holds
+// it is committed, by the road a bookmark's return already takes (O-72's
+// position filter lifted for the commit and read again after the reseat),
+// so its lessons, its words and its tongue are what the next gesture meets.
+// A volume whose editions seat one set of leaves declares nothing and never
+// comes here.
+function followBookEdition() {
+  const wall = currentManifest?.__wallVolume;
+  if (wall?.displayConfig?.books_across_editions !== true) return;
+  const item = currentApp?.nav?.getCurrent?.();
+  if (item?.level !== 'book') return;
+  const own = wall.editionOf?.(item.id) || null;
+  if (!own || own === currentEdition()) return;
+  dimensionBridge.setEditionsHere(null);
+  if (!dimensionBridge.setTranslation(own)) { refreshEditionsHere(); return; }
+  editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
+}
+
 function refreshEditionsHere() {
   let codes = null;
   try { codes = editionsHoldingItem(currentApp?.nav?.getCurrent?.()); } catch (_) { codes = null; }
@@ -2938,6 +2965,12 @@ function applyTheme(volume) {
   root.style.setProperty('--theme-color-node', active.node);
   root.style.setProperty('--theme-color-text', active.text);
   root.style.setProperty('--theme-color-band', active.band);
+  // THE GLOBE OVER A TEXT GROUND (O-309): a volume may declare the globe's
+  // colour for the leaf alone, where it stands on the text ground and not on
+  // the volume's own; undeclared, the globe is the one grey everywhere.
+  if (active.globeAtLeaf) root.style.setProperty('--theme-globe-leaf', active.globeAtLeaf);
+  else root.style.removeProperty('--theme-globe-leaf');
+  root.classList.remove('detail-open');   // a new volume opens its own sector and says so
   // ORBITAL = the band's own gray, a step darker (Howell 2026-07-23,
   // retiring the demo red as too distracting): the ring's nodes are made of
   // the band's material — chain and links, one metal — while RADIAL travel
@@ -3056,6 +3089,7 @@ window.addEventListener('detail-sector-arriving', () => {
 
 window.addEventListener('detail-sector-change', (e) => {
   const { visible } = e.detail || {};
+  document.documentElement.classList.toggle('detail-open', Boolean(visible));   // O-309: the globe's leaf colour hangs on this
   // THE TEXT LEAVES UNDER THE FINGER (O-151 step two, Howell 2026-09-16: "All
   // of the text pops off suddenly soon after the animation begins"). The
   // verse, its notes and the manuscript key are page elements outside the
@@ -4477,27 +4511,36 @@ function swapThroughSeal() {
   const logoHref = logoImg?.getAttribute('href') || logoImg?.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href') || null;
   const logoSrc = logoHref ? new URL(logoHref, document.baseURI).href : null;
   const opacityOf = el => { try { return Number(getComputedStyle(el).opacity); } catch (_) { return 1; } };
-  // The corner's emblem and its disc go down to the other half's seal
-  // (O-295), remembered for it before it boots, so its seal is them.
+  // The corner's emblem goes down to the other half's seal (O-295),
+  // remembered for it before it boots, so its seal is that drawing. BARE
+  // (O-307): no disc goes with it, and a disc remembered by an older build
+  // is cleared from the record here.
   const cornerDisc = currentApp?.cornerDisc?.() || null;
-  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: cornerDisc ? { colour: cornerDisc.colour, ratio: cornerDisc.ratio } : null });
+  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: null });
   // And the disc itself travels: where it stands now, as a circle on the page.
   const discEl = document.getElementById('volume-logo-circle');
   const discBox = discEl ? rectOf(discEl) : null;
   const sealBox = rectOf(sealEl);
-  const discFrom = (cornerDisc && discBox && opacityOf(discEl) > 0)
-    ? { cx: discBox.left + discBox.width / 2, cy: discBox.top + discBox.height / 2, r: discBox.width / 2, colour: cornerDisc.colour, ink: opacityOf(discEl) }
-    : (sealDisc?.colour && sealBox)
+  // Two discs can be standing at the tap (O-306): the one behind the corner's
+  // drawing (a corner disc, or the whole sector at a leaf — which a badge
+  // declared without a disc still has), and the one behind the seal.
+  const sectorColour = cornerDisc?.colour || currentApp?.sectorColour?.() || null;
+  const discFrom = {
+    logo: (sectorColour && discBox && opacityOf(discEl) > 0)
+      ? { cx: discBox.left + discBox.width / 2, cy: discBox.top + discBox.height / 2, r: discBox.width / 2, colour: sectorColour, ink: opacityOf(discEl) }
+      : null,
+    seal: (sealDisc?.colour && sealBox)
       ? { cx: sealBox.left + sealBox.width / 2, cy: sealBox.top + sealBox.height / 2, r: Math.min(sealBox.width, sealBox.height) / 2 * Math.min(1, sealDisc.ratio || 0.5), colour: sealDisc.colour, ink: opacityOf(sealEl) }
-      : null;
+      : null
+  };
   const transit = {
     mode: 'swap',
     snapshot: captureGatewaySnapshot(svg),
     ghosts: ghostOverlays(SWAP_OVERLAYS),
     from: {
       seal: { rect: sealBox, src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl) },
-      logo: { rect: rectOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1 },
-      disc: discFrom
+      logo: { rect: rectOf(logoImg), box: boxOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1 },
+      discs: discFrom
     }
   };
   // The frozen copy carries the old badge's drawing too; the flying one
@@ -4783,6 +4826,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     namesMap.books = ln.books || ln || {};
     namesMap.testaments = ln.testaments || {};
     namesMap.bookAbbreviations = ln.book_abbreviations || {};
+    namesMap.chapters = ln.chapters || {};   // O-302: a chapter's own name, where the edition gives one
     // THE VOLUME TITLE (W-27, 2026-07-31): the door's name in the reader's
     // tongue — the last engine-held human language. Registry-first; consumers
     // fall back to their own default when a language has no title yet.
@@ -4941,15 +4985,17 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     : null;
   sealDoor = config?.door && volumeConfigs[config.door] ? config.door : null;
   // A DOOR'S SEAL WEARS THE OTHER HALF'S EMBLEM AS IT WAS LEFT (O-295): the
-  // drawing that flew down from the other half's corner badge, on its disc if
-  // it had one: the crown of thorns on purple, the Torah scroll on blue. The
-  // swap remembers it for the half it opens; until one has, the volume's own
-  // declared seal stands, bare.
+  // drawing that flew down from the other half's corner badge. The swap
+  // remembers it for the half it opens; until one has, the volume's own
+  // declared seal stands. EVERY SEAL STANDS BARE (O-307, Howell 2026-11-16:
+  // "the crown of thorns doesn't need a color circle either when it's in the
+  // lower left"): the disc it used to bring down with it closes on the way
+  // and is gone before the corner, and one remembered by an older build is
+  // not read.
   sealDisc = null;
   if (sealDoor) {
     const worn = recall(volume);
     if (typeof worn.sealArt === 'string' && worn.sealArt) sealUrl = worn.sealArt;
-    if (worn.sealDisc && typeof worn.sealDisc === 'object' && worn.sealDisc.colour) sealDisc = worn.sealDisc;
   }
   applySeal();
   copyrightWords = root?.display_config?.copyright_notice || null;
@@ -5282,6 +5328,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         toSeal: sealUrl ? sealEl : null,
         toLogo: liveTop.find(el => el.id === 'volume-logo-group')?.querySelector('#volume-logo-image') || null,
         toSealDisc: sealUrl && sealDisc ? sealDisc : null,
+        toDiscColour: app?.sectorColour?.() || null,
         content: liveTop.find(el => el.classList.contains('focus-content-group')) || null,
         overlays: SWAP_OVERLAYS.map(id => document.getElementById(id)),
         durationMs: Number(new URLSearchParams(location.search).get('swapms')) || undefined,
@@ -5434,6 +5481,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
     updateDimensionButton();
     rememberReadingPosition();
+    followBookEdition();   // O-303: on a ring of separate works the edition follows the book
   });
   dimensionBridge.onSettle(translation => {
     // THE FUNNEL IS NOT CLOSED BY A COMMIT (O-77). It used to be — "a

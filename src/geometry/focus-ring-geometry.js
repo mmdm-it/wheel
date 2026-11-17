@@ -139,16 +139,39 @@ export function getNowSeat(viewport, magnifierRadius = null) {
 // its one constant. The corner floor still applies.
 const NAME_CLEARS_STROKE = 1.06; // radii: the stroke is at 1.0, just past it
 
+// THE CORNER IS NOT ALWAYS EMPTY (O-301). Rule 3's corner start was written
+// when nothing stood in the lower left. A volume's seal stands there now
+// (W-301), and a label long enough to fall back to the corner ran across it:
+// the catechism's "CHRISTIAN DOCTRINE" lay over the crown of thorns by 20 to
+// 48 px, measured at 412, 390 and 360 px wide. Whoever draws something in the
+// corner declares its right edge here, and the floor moves to it — but only
+// as far as the label still ends inside the glass; a label too long for the
+// room that is left slides back toward the old corner rather than off the
+// right edge, since a letter over the seal is still a letter that can be read.
+// Module state rather than an argument, because the live render and every
+// flight must agree on the seat and they reach this function by four roads.
+let cornerOccupiedTo = 0;
+const LABEL_RIGHT_MARGIN = 0.02; // of the short side, kept clear at the right edge
+export function setParentLabelCornerOccupied(rightEdgeX) {
+  cornerOccupiedTo = Number.isFinite(rightEdgeX) && rightEdgeX > 0 ? rightEdgeX : 0;
+}
+function cornerFloor(viewport, cornerX, textWidth) {
+  if (!(cornerOccupiedTo > cornerX)) return cornerX;
+  const lastFit = viewport.width - viewport.SSd * LABEL_RIGHT_MARGIN - textWidth;
+  return Math.max(cornerX, Math.min(cornerOccupiedTo, lastFit));
+}
+
 export function getParentLabelLeftX(viewport, magnifierRadius, textWidth, nameWidth = null, direction = 'ltr') {
   const magR = Number.isFinite(magnifierRadius) ? magnifierRadius : viewport.SSd * 0.06;
   const seat = getParentSeat(viewport, magR);
   const w = Number.isFinite(textWidth) ? textWidth : 0;
+  const floor = cornerFloor(viewport, seat.labelX, w);
   if (Number.isFinite(nameWidth) && nameWidth > 0 && nameWidth < w) {
-    if (direction === 'rtl') return Math.max(seat.labelX, seat.discX - magR * NAME_CLEARS_STROKE - (w - nameWidth));
-    return Math.max(seat.labelX, seat.discX + magR * NAME_CLEARS_STROKE - nameWidth);
+    if (direction === 'rtl') return Math.max(floor, seat.discX - magR * NAME_CLEARS_STROKE - (w - nameWidth));
+    return Math.max(floor, seat.discX + magR * NAME_CLEARS_STROKE - nameWidth);
   }
   return Math.max(
-    seat.labelX,
+    floor,
     Math.min(seat.discX - w / 2, seat.discX + magR * 1.3 - w)
   );
 }
