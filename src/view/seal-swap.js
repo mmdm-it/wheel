@@ -283,10 +283,12 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
         // opened to the whole drawing by the corner's end: the drawing never
         // spills over the band at a leaf, and never has to be handed over
         // from a copy standing still while its disc has already left.
+        // The opening is measured on the drawing AS IT IS NOW (O-307): its
+        // disc closes to nothing well before the corner, and a window that
+        // opened by the corner's small measure would crop the drawing to a
+        // dot on the way.
         const d = f.window.disc, t = f.window.leaving ? e : 1 - e;
-        const small = f.window.leaving ? f.toBox : f.fromBox;
-        const rSmall = f.window.leaving ? d.end.disc.r : d.a.r;
-        const open = Math.max(0, Math.hypot(small.w, small.h) / 2 * 1.05 - rSmall);
+        const open = Math.hypot(k.w, k.h) / 2 * 1.05;
         f.window.el.setAttribute('cx', d.now.cx.toFixed(1));
         f.window.el.setAttribute('cy', d.now.cy.toFixed(1));
         f.window.el.setAttribute('r', (d.now.r + open * t).toFixed(1));

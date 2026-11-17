@@ -869,10 +869,9 @@ function applySeal() {
     document.body.appendChild(sealEl);
   }
   sealEl.classList.toggle('is-door', Boolean(sealUrl && sealDoor));
-  // THE DISC TRAVELS WITH ITS EMBLEM (O-295, Howell 2026-11-11: "the purple
-  // circle, or blue circle as the case may be, needs to travel with the crown
-  // of thorns or the Torah scroll"). Drawn as the seal's own background, a
-  // circle centred on the drawing at the size it has in the corner badge.
+  // A seal that is given a disc draws it as its own background, a circle
+  // centred on the drawing at the size it has in the corner badge. None is
+  // given one today (O-307 withdrew O-295's travelling disc at the foot).
   sealEl.style.background = sealDisc?.colour
     ? `radial-gradient(circle closest-side, ${sealDisc.colour} ${(100 * Math.min(1, sealDisc.ratio || 0.5)).toFixed(1)}%, transparent ${(100 * Math.min(1, sealDisc.ratio || 0.5) + 0.8).toFixed(1)}%)`
     : '';
@@ -4505,10 +4504,12 @@ function swapThroughSeal() {
   const logoHref = logoImg?.getAttribute('href') || logoImg?.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href') || null;
   const logoSrc = logoHref ? new URL(logoHref, document.baseURI).href : null;
   const opacityOf = el => { try { return Number(getComputedStyle(el).opacity); } catch (_) { return 1; } };
-  // The corner's emblem and its disc go down to the other half's seal
-  // (O-295), remembered for it before it boots, so its seal is them.
+  // The corner's emblem goes down to the other half's seal (O-295),
+  // remembered for it before it boots, so its seal is that drawing. BARE
+  // (O-307): no disc goes with it, and a disc remembered by an older build
+  // is cleared from the record here.
   const cornerDisc = currentApp?.cornerDisc?.() || null;
-  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: cornerDisc ? { colour: cornerDisc.colour, ratio: cornerDisc.ratio } : null });
+  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: null });
   // And the disc itself travels: where it stands now, as a circle on the page.
   const discEl = document.getElementById('volume-logo-circle');
   const discBox = discEl ? rectOf(discEl) : null;
@@ -4977,15 +4978,17 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     : null;
   sealDoor = config?.door && volumeConfigs[config.door] ? config.door : null;
   // A DOOR'S SEAL WEARS THE OTHER HALF'S EMBLEM AS IT WAS LEFT (O-295): the
-  // drawing that flew down from the other half's corner badge, on its disc if
-  // it had one: the crown of thorns on purple, the Torah scroll on blue. The
-  // swap remembers it for the half it opens; until one has, the volume's own
-  // declared seal stands, bare.
+  // drawing that flew down from the other half's corner badge. The swap
+  // remembers it for the half it opens; until one has, the volume's own
+  // declared seal stands. EVERY SEAL STANDS BARE (O-307, Howell 2026-11-16:
+  // "the crown of thorns doesn't need a color circle either when it's in the
+  // lower left"): the disc it used to bring down with it closes on the way
+  // and is gone before the corner, and one remembered by an older build is
+  // not read.
   sealDisc = null;
   if (sealDoor) {
     const worn = recall(volume);
     if (typeof worn.sealArt === 'string' && worn.sealArt) sealUrl = worn.sealArt;
-    if (worn.sealDisc && typeof worn.sealDisc === 'object' && worn.sealDisc.colour) sealDisc = worn.sealDisc;
   }
   applySeal();
   copyrightWords = root?.display_config?.copyright_notice || null;

@@ -173,9 +173,12 @@ describe('the disc travels with its emblem', () => {
     assert.match(logo, /circleOpacity: bare \? this\._sectorInk\(\) : 0\.5,/);
     assert.match(logo, /discInfo\(\) \{\s*if \(!this\._renderConfig \|\| this\._renderConfig\.disc === false\) return null;/);
   });
-  it('the seal wears the departing emblem on its disc, remembered for the half it opens', () => {
-    assert.match(main, /if \(logoSrc\) remember\(to, \{ sealArt: logoSrc, sealDisc: cornerDisc \? \{ colour: cornerDisc\.colour, ratio: cornerDisc\.ratio \} : null \}\);/);
-    assert.match(main, /sealEl\.style\.background = sealDisc\?\.colour/);
+  it('the seal wears the departing emblem, remembered for the half it opens, and stands bare (O-307)', () => {
+    // Howell 2026-11-16: "the crown of thorns doesn't need a color circle
+    // either when it's in the lower left". No disc is remembered for a seal,
+    // and one an older build remembered is not read back.
+    assert.match(main, /if \(logoSrc\) remember\(to, \{ sealArt: logoSrc, sealDisc: null \}\);/);
+    assert.doesNotMatch(main, /sealDisc = worn\.sealDisc/);
   });
   it('the disc flies from where it stood to where it lands, and the discs in place stand aside', () => {
     assert.match(swap, /d\.el\.setAttribute\('r', /);
