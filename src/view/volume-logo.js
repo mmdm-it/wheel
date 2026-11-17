@@ -29,6 +29,8 @@
 
 // A drawing named without an extension is a PNG, as every emblem was until
 // the Church (O-292) wore St Peter's, which is drawn as an SVG.
+import { primeAspect } from './seal-swap.js';
+
 export const withExtension = name => (/\.[a-z0-9]+$/i.test(name) ? name : `${name}.png`);
 
 // THE LOGO'S SIZE, in the two states, as named knobs (FN-4, 2026-08-17).
@@ -195,6 +197,7 @@ export class VolumeLogo {
     if (this._renderConfig.default_image === imageName) return false;
     this._renderConfig.default_image = imageName;
     this.logo.setAttributeNS(XLINK_NS, 'href', `${base}${withExtension(imageName)}`);
+    primeAspect(`${base}${withExtension(imageName)}`);   // the crossing flies the drawing at its own proportions (O-308)
     this._hrefSurround();
     // Each emblem at its own size and place (O-148): a collapsed badge is
     // re-boxed now, circle with it; an expanded or moving one takes it from
@@ -328,6 +331,7 @@ export class VolumeLogo {
       this.logo.style.willChange = 'transform, opacity'; // composited in flight (O-160)
       this.logo.setAttribute('id', 'volume-logo-image');
       this.logo.setAttributeNS(XLINK_NS, 'href', logoPath);
+      primeAspect(logoPath);
       this.logo.setAttribute('x', logoX);
       this.logo.setAttribute('y', logoY);
       this.logo.setAttribute('width', logoWidth);

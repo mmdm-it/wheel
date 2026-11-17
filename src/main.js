@@ -144,7 +144,7 @@ import { mountCompassRose, compassRoseWanted } from './diagnostics/compass-rose.
 import { bearingOf, localAxes, quadrantKind, turnGateOpen } from './core/stroke.js';
 import { createDepthDrill } from './core/depth-drill.js';
 import { captureGatewaySnapshot, playGatewayWipe } from './view/gateway-wipe.js';
-import { playSealSwap, ghostOverlays, rectOf, boxOf } from './view/seal-swap.js';
+import { playSealSwap, ghostOverlays, rectOf, boxOf, primeAspect } from './view/seal-swap.js';
 import { clearStack as clearMigrationStack } from './view/migration-animation.js';
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
@@ -875,7 +875,7 @@ function applySeal() {
   sealEl.style.background = sealDisc?.colour
     ? `radial-gradient(circle closest-side, ${sealDisc.colour} ${(100 * Math.min(1, sealDisc.ratio || 0.5)).toFixed(1)}%, transparent ${(100 * Math.min(1, sealDisc.ratio || 0.5) + 0.8).toFixed(1)}%)`
     : '';
-  if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; }
+  if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; primeAspect(sealUrl); }
   else { sealEl.hidden = true; sealEl.removeAttribute('src'); }
   // THE PARENT'S LABEL STOPS SHORT OF THE SEAL (O-301): a label long enough to
   // start in the corner ran across the drawing that now stands there. The

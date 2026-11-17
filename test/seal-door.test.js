@@ -199,6 +199,26 @@ describe('the swap is made from the primary stratum only', () => {
   });
 });
 
+// O-308: the flight is reckoned on the drawing as drawn, not the box it sits in.
+describe('a drawing in flight keeps its own proportions', () => {
+  it('a box is fitted to the drawing, centred, whichever side is the tight one', async () => {
+    const { contentBox } = await import('../src/view/seal-swap.js');
+    const sky = contentBox({ cx: 450, cy: 168, w: 1031, h: 897, rot: -38 }, 527 / 512);
+    assert.ok(Math.abs(sky.w - 897 * 527 / 512) < 1e-9 && sky.h === 897 && sky.cx === 450 && sky.rot === -38);
+    const tall = contentBox({ cx: 0, cy: 0, w: 54, h: 80, rot: 0 }, 527 / 512);
+    assert.ok(tall.w === 54 && Math.abs(tall.h - 54 * 512 / 527) < 1e-9);
+    const box = { cx: 1, cy: 2, w: 3, h: 4, rot: 0 };
+    assert.equal(contentBox(box, null), box, 'a drawing whose shape is not yet known flies by its box');
+  });
+  it('both ends of a flight are fitted, the landing on every frame, and the badge primes its drawing', () => {
+    const swap = readFileSync(new URL('../src/view/seal-swap.js', import.meta.url), 'utf8');
+    const logo = readFileSync(new URL('../src/view/volume-logo.js', import.meta.url), 'utf8');
+    assert.match(swap, /const toBox = contentBox\(boxOf\(t\.to\), aspect\);/);
+    assert.match(swap, /const at = contentBox\(boxOf\(f\.to\), f\.aspect\);/);
+    assert.match(logo, /primeAspect\(logoPath\);/);
+  });
+});
+
 describe('the wiring', () => {
   it('a drawing name may carry its own type; a bare name is a PNG', () => {
     assert.equal(withExtension('crown_of_thorns'), 'crown_of_thorns.png');

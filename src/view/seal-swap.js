@@ -92,6 +92,44 @@ export function boxOf(el) {
   return { ...centre, w: r.width, h: r.height, rot: 0 };
 }
 
+// A DRAWING KEEPS ITS OWN PROPORTIONS INSIDE ITS BOX (O-308). The badge's
+// image and the seal both fit their drawing whole inside the box they are
+// given, centred, and the box is seldom the drawing's shape: a leaf's sky is
+// boxed about a seventh wider than the crown drawn in it. A flyer stretched
+// to the box was therefore wider than the drawing it took over from, and
+// Howell saw it (2026-11-16: "an annoying jump in the crown of thorns at the
+// beginning of the transition ... does not settle at the end in the same
+// position as the established crown"). The flight is reckoned on the drawing
+// as drawn: its box fitted to the drawing's own width over height. Pure.
+export function contentBox(box, aspect) {
+  if (!box || !(aspect > 0) || !(box.w > 0) || !(box.h > 0)) return box;
+  const w = Math.min(box.w, box.h * aspect);
+  return { ...box, w, h: w / aspect };
+}
+
+// A drawing's own width over height, learnt by loading it once; null until
+// it is known. The badge primes it when it is given its drawing, so it is in
+// hand long before a tap on the seal.
+const aspects = new Map();
+const absolute = src => { try { return new URL(src, document.baseURI).href; } catch (_) { return String(src); } };
+export function primeAspect(src) {
+  if (!src || typeof Image !== 'function' || typeof document === 'undefined') return;
+  const key = absolute(src);
+  if (aspects.has(key)) return;
+  aspects.set(key, null);
+  const probe = new Image();
+  const learn = () => { if (probe.naturalWidth > 0 && probe.naturalHeight > 0) aspects.set(key, probe.naturalWidth / probe.naturalHeight); };
+  probe.addEventListener('load', learn);
+  probe.src = key;
+  if (probe.complete) learn();
+}
+export function aspectOf(src) {
+  if (!src || typeof document === 'undefined') return null;
+  const key = absolute(src);
+  if (!aspects.has(key)) primeAspect(src);
+  return aspects.get(key) || null;
+}
+
 // A flying copy of a drawing, laid exactly over where it stood. It flies IN
 // the glass, beneath the contents, so the pushed and pulled nodes and the
 // leaf's text are always drawn over it; the svg draws in px with no viewBox,
@@ -271,7 +309,7 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
       // The landing is read every frame: the new half can still settle its
       // badge after the swap began (the emblem's own scale arrives with the
       // host's first render), and a flight aimed once would land beside it.
-      const at = boxOf(f.to);
+      const at = contentBox(boxOf(f.to), f.aspect);
       if (at) f.toBox = at;
       const k = boxAt(f.fromBox, f.toBox, e);
       const base = f.base;
@@ -345,8 +383,10 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
     for (const t of targets) {
       if (!t.from?.rect || !t.from.src) continue;
       const r = t.from.rect;
-      const fromBox = t.from.box || { cx: r.left + r.width / 2, cy: r.top + r.height / 2, w: r.width, h: r.height, rot: 0 };
-      const toBox = boxOf(t.to);
+      // Both ends are the drawing as drawn there, not the box it sits in (O-308).
+      const aspect = aspectOf(t.from.src);
+      const fromBox = contentBox(t.from.box || { cx: r.left + r.width / 2, cy: r.top + r.height / 2, w: r.width, h: r.height, rot: 0 }, aspect);
+      const toBox = contentBox(boxOf(t.to), aspect);
       const toOp = toBox ? inkOf(t.to) : 0;
       let toStyleOpacity = '';
       if (t.to) {
@@ -361,7 +401,7 @@ export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = nu
       }
       // Drawn once at the larger of its two sizes, so it is only ever carried down.
       const base = toBox && toBox.w > fromBox.w ? { ...toBox } : { ...fromBox };
-      flights.push({ el: flyer(t.from.src, base), base, to: t.to, down: t.to === toSeal, fromBox, toBox: toBox || fromBox, fromOp: t.from.opacity ?? 1, toOp, toStyleOpacity });
+      flights.push({ el: flyer(t.from.src, base), base, aspect, to: t.to, down: t.to === toSeal, fromBox, toBox: toBox || fromBox, fromOp: t.from.opacity ?? 1, toOp, toStyleOpacity });
     }
 
     // Nothing takes the finger while the halves change places.
