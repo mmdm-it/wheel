@@ -90,6 +90,44 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     assert.equal(typeof volume.ready('nobody').then, 'function', 'even for an edition it never heard of');
   });
 
+  it('stocks the waiting shelves one at a time, and a shelf the reader asks for leaves out of turn (O-310)', async () => {
+    // Two twins of the Douay; a twin's bundle is held open until the test lets it land.
+    const TWINS = ['TWA', 'TWB', 'TWC'];
+    const touched = [], held = new Map();
+    const twinOf = p => TWINS.find(t => p.includes(`/${t}/`));
+    const fetchTwin = async p => {
+      touched.push(p);
+      const twin = twinOf(p);
+      if (twin) {
+        if (p.endsWith('/all.json')) await new Promise(resolve => held.set(twin, resolve));
+        const relabel = o => { if (o && typeof o === 'object') { if (o.edition === 'DRA') o.edition = twin; for (const v of Object.values(o)) relabel(v); } return o; };
+        return relabel(JSON.parse(JSON.stringify(await fetchJson(p.replace(`/${twin}/`, '/DRA/')))));
+      }
+      const data = await fetchJson(p);
+      if (!p.endsWith('volume.json')) return data;
+      const vol = JSON.parse(JSON.stringify(data));
+      for (const t of TWINS) vol.editions.push({ ...vol.editions.find(e => e.code === 'DRA'), code: t, name: t });
+      return vol;
+    };
+    const asked = t => touched.some(p => p.endsWith(`/charts/${t}/all.json`));
+    const tick = () => new Promise(r => setTimeout(r, 20));
+    const until = async cond => { for (let i = 0; i < 200 && !cond(); i += 1) await tick(); };
+    const volume = await loadBibleVolume({ base: BASE, version: VERSION, firstEdition: 'DRA', fetchJson: fetchTwin });
+    await volume.loadTextFor('bdra9e1');
+    await until(() => asked('TWA'));   // the fixture's own shelves go first, in turn
+    await tick();
+    assert.deepEqual(TWINS.map(asked), [true, false, false], 'only the first waiting shelf has left');
+    volume.wake('TWC');
+    await tick();
+    assert.deepEqual(TWINS.map(asked), [true, false, true], 'the shelf the reader asked for left at once, out of turn');
+    held.get('TWA')();
+    await until(() => asked('TWB'));
+    assert.deepEqual(TWINS.map(asked), [true, true, true], 'and the next in line left when the one before landed');
+    held.get('TWB')(); held.get('TWC')();
+    await volume.allReady();
+    assert.ok(TWINS.every(t => volume.isReady(t)));
+  });
+
   it('holds the other editions’ bundles until the first verse text is in hand (O-227)', async () => {
     // A twin of the Douay, declared in the volume and answered from the
     // Douay's own files, so the fixture has a second shelf to stock.

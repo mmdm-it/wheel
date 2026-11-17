@@ -228,11 +228,34 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   let releaseBackground = () => {};
   const background = new Promise(resolve => { releaseBackground = resolve; });
   const editionLoads = new Map();
+  const starts = new Map();   // O-310: each waiting shelf's own gate
   if (first) {
     const firstLoad = loadEdition(first, firstBundleWave);
     editionLoads.set(first.code, firstLoad);
+    // ONE SHELF AT A TIME (O-310). Released together, the other editions'
+    // bundles are some five megabytes on the line at once, and whatever the
+    // reader asks for next waits behind all of it: measured from the room on
+    // 2026-11-17, the door to the other volume took 16 to 26 seconds to open
+    // because its two-kilobyte manifest queued behind twenty-three bundles
+    // (Howell: "an extremely long wait. I'd say 15 seconds or more"). So the
+    // shelves stock in turn, each leaving when the one before has landed, and
+    // an ask from the reader never has more than one bundle ahead of it. An
+    // edition the reader asks for (`wake`) leaves at once, out of turn.
     const behind = firstLoad.catch(() => {}).then(() => background);
-    for (const e of editions) if (e.code !== first.code) editionLoads.set(e.code, behind.then(() => loadEdition(e)));
+    for (const e of editions) {
+      if (e.code === first.code) continue;
+      let go = () => {};
+      const gate = new Promise(resolve => { go = resolve; });
+      starts.set(e.code, go);
+      editionLoads.set(e.code, gate.then(() => loadEdition(e)));
+    }
+    behind.then(async () => {
+      for (const e of editions) {
+        if (e.code === first.code) continue;
+        starts.get(e.code)();
+        await editionLoads.get(e.code).catch(() => {});
+      }
+    });
     await firstLoad;
     for (const [code, p] of editionLoads) if (code !== first.code) p.catch(() => { /* reported inside */ });
     setTimeout(releaseBackground, BACKGROUND_FALLBACK_MS);
@@ -334,7 +357,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     // is a wish to START: a reader settling the edition ring on another
     // edition, or previewing one, is not kept waiting for a verse (O-227).
     ready(code) { return editionLoads.get(code) || Promise.resolve(); },
-    wake(code) { if (code && code !== first?.code) releaseBackground(); return editionLoads.get(code) || Promise.resolve(); },
+    wake(code) { if (code && code !== first?.code) { releaseBackground(); starts.get(code)?.(); } return editionLoads.get(code) || Promise.resolve(); },
     allReady() { return Promise.all(editionLoads.values()).then(() => undefined); },
     isReady(code) { return loaded.has(code); },
     // The storage layer, named for what it is (O-92). No reader ever meets a
