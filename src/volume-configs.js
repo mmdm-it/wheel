@@ -1132,7 +1132,8 @@ volumeConfigs.church = {
     // "doesn't stand out as well as it did"; solid black then stood out "too
     // much ... split the difference": half way from the grey to black, and
     // (styles/base.css) half way from its 0.7 ink to full.
-    globeAtLeaf: '#1b1b1b' },
+    // "A little bit lighter still": a quarter of the way, not half.
+    globeAtLeaf: '#282828' },
   landscape: null,
   stampLetter: undefined,
   createHandlers: makeAdapterHandlers('church')

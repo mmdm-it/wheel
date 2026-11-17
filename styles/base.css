@@ -594,7 +594,7 @@ svg :focus-visible {
 :root.detail-open #dimension-button svg { color: var(--color-globe, var(--theme-globe-leaf, #363636)); }
 :root.detail-open[style*="--theme-globe-leaf"] #dimension-button,
 :root.detail-open[style*="--theme-globe-leaf"] #dimension-button:hover,
-:root.detail-open[style*="--theme-globe-leaf"] #dimension-button[aria-pressed="true"] { opacity: 0.85; /* half way from 0.7 to solid: solid "stands out too much" */ }
+:root.detail-open[style*="--theme-globe-leaf"] #dimension-button[aria-pressed="true"] { opacity: 0.78; /* a quarter of the way from 0.7 to solid: solid "stands out too much", half way was still a little dark */ }
 /* THE WATERMARK (O-246, Howell 2026-10-30: "a persistent watermark boldly
    displayed to alert the user that they are not looking at a Gregorian
    calendar"). The chosen plane's word, as he drew it: huge, translucent,
