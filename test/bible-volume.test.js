@@ -71,7 +71,9 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
       fetchJson: async p => { touched.push(p); return fetchJson(p); }
     });
     assert.ok(touched.some(p => p.endsWith('/charts/DRA/all.json')), 'the edition chart bundle is asked for');
-    assert.ok(touched.some(p => p.endsWith('/spine/all.json')), 'the spine bundle is asked for');
+    assert.ok(!touched.some(p => p.includes('/spine/')), 'no spine is on the line at boot: nothing reads one (O-317)');
+    await volume.loadSpines();
+    assert.ok(touched.some(p => p.endsWith('/spine/all.json')), 'the spine bundle is asked for when someone asks');
     assert.deepEqual(touched.filter(p => /\/charts\/DRA\/b[0-9a-f]+\.json$/.test(p)), [], 'no chart is fetched on its own when the bundle holds it');
     assert.deepEqual(touched.filter(p => /\/spine\/b[0-9a-f]+\.json$/.test(p)), [], 'no spine is fetched on its own when the bundle holds it');
     assert.equal(volume.chartFor('bdra9e1', 'DRA')?.book, 'bdra9e1', 'the bundled chart is the book itself');
@@ -234,6 +236,7 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
       fetchJson: async p => { touched.push(p); if (p.endsWith('/all.json')) throw new Error('404'); return fetchJson(p); }
     });
     assert.ok(touched.some(p => p.endsWith('/charts/DRA/bdra9e1.json')), 'the chart is fetched on its own');
+    await volume.loadSpines();
     assert.ok(touched.some(p => p.endsWith('/spine/bc22df.json')), 'the spine is fetched on its own');
     assert.equal(volume.chartFor('bdra9e1', 'DRA')?.book, 'bdra9e1');
   });
@@ -302,6 +305,8 @@ describe('the wall reader — a unit resolves all-or-nothing, loudly', () => {
   // never partially).
   it('loads Genesis 1 whole through the live path: spine, chart, text agree', async () => {
     const volume = await load();
+    assert.equal(volume.spineFor('bc22df'), null, 'not fetched until asked for (O-317)');
+    await volume.loadSpines();
     const spine = volume.spineFor('bc22df');
     const chart = volume.chartFor('bdra9e1', 'DRA');
     const records = await volume.loadTextFor('bdra9e1');

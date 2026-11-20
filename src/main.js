@@ -169,6 +169,8 @@ import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 import { mountDimensionGlobe, mountDimensionEmblem } from './view/dimension-globe.js';
 import { labelRotationDeg } from './view/node-appearance.js';
 import { mountSearchDividers } from './view/search-dividers.js';
+// The app has the boot from here: an early loader arriving after this does nothing (O-317).
+if (typeof window !== 'undefined') window.__wheelBooting = true;
 import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
 import { setBasementDepth } from './view/basement-light.js';
 

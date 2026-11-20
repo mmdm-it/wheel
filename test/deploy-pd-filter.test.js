@@ -95,7 +95,7 @@ describe('deploy filter — the CLEARED gate at the door (O-231)', () => {
     build(); assert.notEqual(run('1999.01.01').code, 0);
   });
   it('falls back to the ENGINE\'s declared version when none is passed', () => {
-    const m = /BIBLE_VOLUME_VERSION\s*=\s*['"]([^'"]+)['"]/.exec(readFileSync(path.join(root, 'src/volume-configs.js'), 'utf-8'));
+    const m = /BIBLE_VOLUME_VERSION\s*=\s*['"]([^'"]+)['"]/.exec(readFileSync(path.join(root, 'src/volume-roots.js'), 'utf-8'));
     assert.ok(m, 'the engine declares its volume version');
   });
 });

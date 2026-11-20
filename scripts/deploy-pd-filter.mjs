@@ -33,12 +33,12 @@ const [src, dest, versionArg] = process.argv.slice(2);
 if (!src || !dest) { console.error('usage: node deploy-pd-filter.mjs <srcDir> <destDir> [version]'); process.exit(1); }
 const die = (...lines) => { for (const l of lines) console.error(l); process.exit(1); };
 function readEngineVolumeVersion() {
-  try { const m = /BIBLE_VOLUME_VERSION\s*=\s*['"]([^'"]+)['"]/.exec(readFileSync(new URL('../src/volume-configs.js', import.meta.url), 'utf8')); return m ? m[1] : null; } catch { return null; }
+  try { const m = /BIBLE_VOLUME_VERSION\s*=\s*['"]([^'"]+)['"]/.exec(readFileSync(new URL('../src/volume-roots.js', import.meta.url), 'utf8')); return m ? m[1] : null; } catch { return null; }
 }
 function* walk(dir) { for (const entry of readdirSync(dir)) { const full = join(dir, entry); if (statSync(full).isDirectory()) yield* walk(full); else yield full; } }
 
 const version = versionArg || readEngineVolumeVersion();
-if (!version) die('deploy-pd-filter: cannot determine the volume version. Pass it as the third argument, or leave src/volume-configs.js declaring BIBLE_VOLUME_VERSION.');
+if (!version) die('deploy-pd-filter: cannot determine the volume version. Pass it as the third argument, or leave src/volume-roots.js declaring BIBLE_VOLUME_VERSION.');
 const vdir = join(src, version);
 const volumePath = join(vdir, 'volume.json');
 if (!existsSync(volumePath)) die(`deploy-pd-filter: no volume.json at ${relative(src, volumePath)}.`);

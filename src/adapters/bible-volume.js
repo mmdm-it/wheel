@@ -127,7 +127,8 @@ export async function loadBibleVolume({ base, version, fetchJson: transport, fir
   // THE WAVE (O-183, Howell's boot log from the screening room over 4G,
   // 2026-09-30): every fetch the boot needs that depends on nothing but the
   // manifest leaves NOW, together — the names, the shelves, the first
-  // edition's chart bundle, the spine bundle, the ranks, the hits. They used
+  // edition's chart bundle, the ranks, the hits (the spine bundle left with
+  // them until O-317 found nothing reading it). They used
   // to leave one stage after another, each paying a round trip the phone
   // could not hide: a 400 ms hole between the manifest and the bundles, and
   // two more trips after them. The awaits below keep the order the code
@@ -152,8 +153,6 @@ export async function loadBibleVolume({ base, version, fetchJson: transport, fir
   const fetchBundle = (edition, opts) => fetchJson(at({ kind: 'chartBundle', edition: edition.code }), opts)
     .then(b => ((b && b.edition === edition.code && b.charts && typeof b.charts === 'object') ? b.charts : null), () => null);
   const firstBundleWave = first ? fetchBundle(first) : null;
-  const spineBundleWave = fetchJson(at({ kind: 'spineBundle' }))
-    .then(b => ((b && b.spines && typeof b.spines === 'object') ? b.spines : null), () => null);
   const hitsWave = fetchJson(at({ kind: 'hits' })).then(h => (Array.isArray(h?.leaves) ? h.leaves.filter(x => typeof x === 'string') : []), () => []);
   await namesWave;
 
@@ -312,17 +311,35 @@ export async function loadBibleVolume({ base, version, fetchJson: transport, fir
   // as when the shard was called a book; only the claim changed. The spine
   // remains W-96's superset: every utterance any edition attests in that
   // shard, in no edition's sequence.
+  //
+  // AND NO READER WAITS FOR THEM ANY MORE (O-317). The bundle left with the
+  // boot's wave and the boot awaited it: a quarter of a megabyte on the
+  // line beside the first edition's charts, on every fresh load — and
+  // nothing in the engine has read a spine since the edition's chart became
+  // the order (W-96) and the seat index took over membership. Measured from
+  // the screening room on a 4 Mbit line, 2026-11-20, the two bundles took
+  // 2.5 s together where the charts alone are a third of that. So the
+  // spines are fetched when someone asks (`loadSpines`), once; `spineFor`
+  // answers from what has landed, and null before.
   const spines = new Map();
-  const spineBundle = await spineBundleWave;   // left with the wave
-  await Promise.all(shards.map(async shard => {
-    const bundled = spineBundle?.[shard.id];
-    if (bundled) { spines.set(shard.id, bundled); return; }
-    try {
-      spines.set(shard.id, await fetchJson(at({ kind: 'spine', unitId: shard.id })));
-    } catch {
-      spines.set(shard.id, null);
-    }
-  }));
+  let spinesLoad = null;
+  const loadSpines = () => {
+    if (spinesLoad) return spinesLoad;
+    spinesLoad = (async () => {
+      const spineBundle = await fetchJson(at({ kind: 'spineBundle' }), { background: true })
+        .then(b => ((b && b.spines && typeof b.spines === 'object') ? b.spines : null), () => null);
+      await Promise.all(shards.map(async shard => {
+        const bundled = spineBundle?.[shard.id];
+        if (bundled) { spines.set(shard.id, bundled); return; }
+        try {
+          spines.set(shard.id, await fetchJson(at({ kind: 'spine', unitId: shard.id }), { background: true }));
+        } catch {
+          spines.set(shard.id, null);
+        }
+      }));
+    })();
+    return spinesLoad;
+  };
   // THE TEXT IS LAZY, ONE UNIT AT A TIME (O-52, 2026-08-14).
   //
   // It used to be fetched and converted for EVERY unit here, before the first
@@ -449,6 +466,8 @@ export async function loadBibleVolume({ base, version, fetchJson: transport, fir
     spineFor(unitId) {
       return spines.get(unitId) || null;
     },
+    // Fetch every shard's spine, once (O-317); `spineFor` answers after.
+    loadSpines() { return loadSpines(); },
 
     // One record per address, every enumerated edition merged. SYNCHRONOUS and
     // cache-only: null means "not fetched yet", which is a different fact from

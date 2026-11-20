@@ -109,8 +109,8 @@ fi
 
 # The Church's volume version is the engine's own declaration, read rather
 # than repeated, so a new cargo version cannot leave the mirror behind.
-CHURCH_VOLUME_VERSION="$(sed -n "s/^const CHURCH_VOLUME_VERSION = '\([^']*\)';$/\1/p" src/volume-configs.js)"
-[[ -n "$CHURCH_VOLUME_VERSION" ]] || { echo "mirror-room: src/volume-configs.js declares no CHURCH_VOLUME_VERSION" >&2; exit 1; }
+CHURCH_VOLUME_VERSION="$(sed -n "s/^const CHURCH_VOLUME_VERSION = '\([^']*\)';$/\1/p" src/volume-roots.js)"
+[[ -n "$CHURCH_VOLUME_VERSION" ]] || { echo "mirror-room: src/volume-roots.js declares no CHURCH_VOLUME_VERSION" >&2; exit 1; }
 
 # The copies that leave — the cleared corpus, the calendar without its
 # notes, the public door's page — are made here and gone at exit.
