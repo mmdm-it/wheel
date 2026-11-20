@@ -233,6 +233,36 @@ function chaptersInReadingOrder(manifest) {
   return order;
 }
 
+// A RING PASSING OVER A BOOK IS NOT A READER IN IT (O-317). The verse ring
+// runs the whole volume, and a flick or a glide to its end carries the lens
+// across book after book; each one the live preview painted asked for its
+// whole text, so the double flick from Matthew to Genesis put ten books on
+// the line ahead of the one it was going to (measured from the screening
+// room, 2026-11-20). So: a book asked for while another, different, book was
+// asked for a moment ago is HELD a beat, and fetched only if the lens is
+// still in it when the beat is over. The first book of a run is never held,
+// so a boot, a settle and a slow crossing cost nothing; `warmItem` (the
+// gesture naming where it is going) is never held either.
+const SKIM_WINDOW_MS = 300;   // two different books inside this is a skim
+const SKIM_HOLD_MS = 140;     // how long the lens must stay in a book to be in it
+let _wantedFile = null;
+let _wantedAt = 0;
+let _wantedTimer = null;
+function requestChapterUnlessSkimming(chapterId, bookId, externalFile) {
+  if (!externalFile || _requestedChapters.has(externalFile)) return;
+  const now = Date.now();
+  const skimming = _wantedFile && _wantedFile !== externalFile && now - _wantedAt < SKIM_WINDOW_MS;
+  _wantedFile = externalFile;
+  _wantedAt = now;
+  if (_wantedTimer) { clearTimeout(_wantedTimer); _wantedTimer = null; }
+  if (!skimming) { requestChapter(chapterId, bookId, externalFile); return; }
+  _wantedTimer = setTimeout(() => {
+    _wantedTimer = null;
+    if (_wantedFile === externalFile) requestChapter(chapterId, bookId, externalFile);
+  }, SKIM_HOLD_MS);
+  if (typeof _wantedTimer?.unref === 'function') _wantedTimer.unref();
+}
+
 function requestChapter(chapterId, bookId, externalFile) {
   if (!externalFile || _requestedChapters.has(externalFile)) return;
   _requestedChapters.add(externalFile);
@@ -267,7 +297,7 @@ function warmVerseIn(manifest, edition, item) {
 function readAhead(selected, manifest) {
   const meta = selected?.meta;
   if (!meta?.externalFile) return;
-  requestChapter(meta.chapterId, meta.bookId, meta.externalFile);
+  requestChapterUnlessSkimming(meta.chapterId, meta.bookId, meta.externalFile);
   const order = chaptersInReadingOrder(manifest);
   // BY THE UNIT, NOT THE CONTAINER (O-67, the second of two defects here and
   // the more absolute of them). This matched `meta.chapterId` — which is a
@@ -300,7 +330,13 @@ function readAhead(selected, manifest) {
   }
 }
 
-export function detailFor(selected, manifest, { normalized, translation } = {}) {
+// `measuring` is the ring asking how many screens a seat needs (O-84), which
+// it asks of every seat near the lens on every frame of a turn. That is a
+// question about text ALREADY in hand and must never fetch any (O-317): it
+// did, through the read-ahead below, and a glide across the volume asked for
+// the whole text of each book it crossed. A seat whose text is not here
+// measures as one screen, and is measured again when the text lands.
+export function detailFor(selected, manifest, { normalized, translation, measuring = false } = {}) {
   if (!selected) return null;
   const id = selected.id || '';
   const level = selected.level || '';
@@ -381,7 +417,7 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       let resolved = activeTranslation
         ? getVerseTextForSeat(externalFile, selected?.meta, [activeTranslation])
         : null;
-      readAhead(selected, manifest);
+      if (!measuring) readAhead(selected, manifest);
       // THROUGH THE LEAF WHEN THE EDITION IS NOT THIS BOOK'S (O-228). Under
       // leaf-and-shard a book belongs to one edition and its text file holds
       // that edition's words alone, so a verse previewed in ANOTHER edition —
@@ -397,7 +433,7 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
         const other = otherSeatFor(manifest, activeTranslation, selected?.meta, externalFile);
         if (other) {
           resolved = getVerseTextResolved(other.book, other.key, [activeTranslation]);
-          if (!resolved) requestChapter(null, other.book, other.book);
+          if (!resolved && !measuring) requestChapter(null, other.book, other.book);
         }
       }
       // uniform: every verse shares the longest verse's type size (Howell
@@ -1411,9 +1447,17 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // A full title is not a row's worth of words: only a short name is shown.
     return name && [...name].length <= 32 ? toDisplayCase(name) : '';
   };
+  // WHERE A GESTURE IS GOING, NAMED BEFORE IT GETS THERE (O-317): the text of
+  // the item's book is asked for now, so it is on the line for the whole of
+  // the glide rather than from its end.
+  const warmItem = (item) => {
+    const meta = item?.meta;
+    if (meta?.externalFile) requestChapter(meta.chapterId, meta.bookId, meta.externalFile);
+  };
   return {
     parentHandler,
     getWatermark,
+    warmItem,
     childrenHandler,
     getParentLabel,
     getParentActionable,

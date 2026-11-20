@@ -34,10 +34,34 @@ import { projectContainers } from '../core/unit-source.js';
 // that must not happen is a botched increment looking finished. (The
 // REQUIRED_PER_UNIT set that stated this died with `loadUnit`, O-65.)
 
-export async function loadBibleVolume({ base, version, fetchJson, firstEdition = null, onVolume = null, includeUncleared = false } = {}) {
-  if (typeof fetchJson !== 'function') {
+export async function loadBibleVolume({ base, version, fetchJson: transport, firstEdition = null, onVolume = null, includeUncleared = false, readerIdle = null } = {}) {
+  if (typeof transport !== 'function') {
     throw new Error('bible-volume: needs a `fetchJson(path)` — the transport is the caller\'s');
   }
+  // ONE FETCH PER FILE AT A TIME (O-317). Every cache in this loader and under
+  // it (the text, the margin, the poem) is written when its file LANDS, so a
+  // second ask made while the first was still on the line found nothing and
+  // fetched again: measured from the screening room on 2026-11-20, one book's
+  // margin was asked for eleven times and its poem seven during a single turn
+  // of the ring, each a request of its own ahead of the verse the reader was
+  // waiting for. An ask for a file already on the line now joins it. Nothing
+  // is remembered past the landing — what a file means, and whether a failure
+  // is final, stays with the caller's own cache.
+  const onTheLine = new Map();
+  // What the reader is waiting for, as opposed to what is being stocked
+  // behind them (the other editions' shelves, below).
+  let foreground = 0;
+  const fetchJson = (path, { background = false } = {}) => {
+    const joined = onTheLine.get(path);
+    if (joined) return joined;
+    if (!background) foreground++;
+    const p = Promise.resolve().then(() => transport(path)).finally(() => {
+      onTheLine.delete(path);
+      if (!background) foreground--;
+    });
+    onTheLine.set(path, p);
+    return p;
+  };
   const at = parts => resolvePath({ base, version, ...parts });
   let volume = await fetchJson(at({ kind: 'volume' }));
   // THE UNCLEARED SIDECAR (O-231): on the LAN under ?uncleared=true, the
@@ -125,7 +149,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
       shelves.set(edition.code, null);
     }
   }));
-  const fetchBundle = edition => fetchJson(at({ kind: 'chartBundle', edition: edition.code }))
+  const fetchBundle = (edition, opts) => fetchJson(at({ kind: 'chartBundle', edition: edition.code }), opts)
     .then(b => ((b && b.edition === edition.code && b.charts && typeof b.charts === 'object') ? b.charts : null), () => null);
   const firstBundleWave = first ? fetchBundle(first) : null;
   const spineBundleWave = fetchJson(at({ kind: 'spineBundle' }))
@@ -229,6 +253,17 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
   const background = new Promise(resolve => { releaseBackground = resolve; });
   const editionLoads = new Map();
   const starts = new Map();   // O-310: each waiting shelf's own gate
+  const woken = new Set();    // O-317: editions the reader asked for, never held
+  // Resolves when nothing the reader asked for is on the line and the host's
+  // `readerIdle` (if it gave one) says they are at rest; bounded, so a fetch
+  // that never settles cannot keep the shelves from ever stocking.
+  const quiet = async () => {
+    for (let waited = 0; waited < 100; waited++) {
+      if (typeof readerIdle === 'function') { try { await readerIdle(); } catch (_) { /* the host's */ } }
+      if (foreground === 0) return;
+      await new Promise(resolve => setTimeout(resolve, 150));
+    }
+  };
   if (first) {
     const firstLoad = loadEdition(first, firstBundleWave);
     editionLoads.set(first.code, firstLoad);
@@ -247,11 +282,19 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
       let go = () => {};
       const gate = new Promise(resolve => { go = resolve; });
       starts.set(e.code, go);
-      editionLoads.set(e.code, gate.then(() => loadEdition(e)));
+      editionLoads.set(e.code, gate.then(() => loadEdition(e, fetchBundle(e, { background: !woken.has(e.code) }))));
     }
     behind.then(async () => {
       for (const e of editions) {
         if (e.code === first.code) continue;
+        // THE READER GOES FIRST (O-317, Howell 2026-11-20, of a fresh load
+        // and a double flick from Matthew to Genesis: "a very, very long
+        // time for the verse to load"). A shelf is a quarter of a megabyte
+        // on the line and several megabytes to parse, on the one thread the
+        // ring is drawn from; so the next one leaves only when nothing the
+        // reader asked for is still on the line and the host says the
+        // reader is at rest. An edition they ask for is not held (`wake`).
+        if (!woken.has(e.code)) await quiet();
         starts.get(e.code)();
         await editionLoads.get(e.code).catch(() => {});
       }
@@ -357,7 +400,7 @@ export async function loadBibleVolume({ base, version, fetchJson, firstEdition =
     // is a wish to START: a reader settling the edition ring on another
     // edition, or previewing one, is not kept waiting for a verse (O-227).
     ready(code) { return editionLoads.get(code) || Promise.resolve(); },
-    wake(code) { if (code && code !== first?.code) { releaseBackground(); starts.get(code)?.(); } return editionLoads.get(code) || Promise.resolve(); },
+    wake(code) { if (code && code !== first?.code) { woken.add(code); releaseBackground(); starts.get(code)?.(); } return editionLoads.get(code) || Promise.resolve(); },
     allReady() { return Promise.all(editionLoads.values()).then(() => undefined); },
     isReady(code) { return loaded.has(code); },
     // The storage layer, named for what it is (O-92). No reader ever meets a

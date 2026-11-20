@@ -4313,6 +4313,15 @@ function wireInteractions(getApp) {
         const limit = dir > 0 ? ch.maxRotation : ch.minRotation;
         if (Number.isFinite(limit)) {
           logTap('double-flick', { dir, limit });
+          // The end of the chain is where this is going: its text leaves
+          // now, with the glide, not after it (O-317).
+          try {
+            const chain = app.nav?.items || [];
+            let end = null;
+            if (dir > 0) { for (let i = chain.length - 1; i >= 0 && !end; i--) if (chain[i] && !chain[i].placebo) end = chain[i]; }
+            else { for (let i = 0; i < chain.length && !end; i++) if (chain[i] && !chain[i].placebo) end = chain[i]; }
+            if (end) app.warmItem?.(end);
+          } catch (_) { /* a warm-up is never worth a failed gesture */ }
           ch.glideTo(limit, GLIDE_TO_LIMIT_MS, () => app.selectNearest());
           return;
         }
@@ -5196,6 +5205,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
     getWatermark: typeof handlerSet.getWatermark === 'function' ? handlerSet.getWatermark : null,
+    warmItem: typeof handlerSet.warmItem === 'function' ? handlerSet.warmItem : null,
     pyramid: pyramidConfig,
     pyramidLayoutSpec: pyramidLayout,
     pyramidNormalized: adapterNormalized || normalized,
@@ -5221,7 +5231,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         const hit = versePartsCache.get(key);
         if (hit !== undefined) return hit;
         const payload = adapter?.detailFor
-          ? adapter.detailFor(item, manifest, { normalized: adapterNormalized, translation })
+          ? adapter.detailFor(item, manifest, { normalized: adapterNormalized, translation, measuring: true })
           : null;
         let parts = 1;
         if (payload?.uniform && typeof payload.text === 'string') {

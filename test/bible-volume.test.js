@@ -121,11 +121,40 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     await tick();
     assert.deepEqual(TWINS.map(asked), [true, false, true], 'the shelf the reader asked for left at once, out of turn');
     held.get('TWA')();
+    for (let i = 0; i < 15; i += 1) await tick();
+    // THE READER GOES FIRST (O-317): the shelf they asked for is still on the
+    // line, so the next in turn is held behind it.
+    assert.deepEqual(TWINS.map(asked), [true, false, true], 'the next in line waits while what the reader asked for is on the line');
+    held.get('TWC')();
     await until(() => asked('TWB'));
-    assert.deepEqual(TWINS.map(asked), [true, true, true], 'and the next in line left when the one before landed');
-    held.get('TWB')(); held.get('TWC')();
+    assert.deepEqual(TWINS.map(asked), [true, true, true], 'and leaves when it has landed');
+    held.get('TWB')();
     await volume.allReady();
     assert.ok(TWINS.every(t => volume.isReady(t)));
+  });
+
+  it('an ask for a file already on the line joins it, and the shelves wait for the reader to be at rest (O-317)', async () => {
+    const touched = [];
+    let release = () => {};
+    const slow = async p => { touched.push(p); if (p.includes('/margin/')) await new Promise(r => { release = r; }); return fetchJson(p); };
+    let idle = () => {};
+    const readerIdle = () => new Promise(r => { idle = r; });
+    const volume = await loadBibleVolume({ base: BASE, version: VERSION, firstEdition: 'DRA', fetchJson: slow, readerIdle });
+    await volume.loadTextFor('bdra9e1');
+    const tick = () => new Promise(r => setTimeout(r, 20));
+    for (let i = 0; i < 5; i += 1) await tick();
+    const bundles = () => touched.filter(p => p.endsWith('/all.json') && !p.includes('/DRA/') && p.includes('/charts/')).length;
+    assert.equal(bundles(), 0, 'no waiting shelf leaves while the host says the reader is busy');
+    const asks = [1, 2, 3].map(() => volume.marginAt('bdra9e1', 'DRA', '1:1'));
+    for (let i = 0; i < 3; i += 1) await tick();
+    assert.equal(touched.filter(p => p.includes('/margin/')).length, 1, 'three asks for one file while it is on the line are one fetch');
+    idle();
+    for (let i = 0; i < 5; i += 1) await tick();
+    assert.equal(bundles(), 0, 'nor while something the reader asked for is still on the line');
+    release();
+    await Promise.all(asks);
+    for (let i = 0; i < 20 && bundles() === 0; i += 1) { idle(); await tick(); }
+    assert.ok(bundles() >= 1 || (volume.editions || []).length === 1, 'the shelves stock once both are clear');
   });
 
   it('holds the other editions’ bundles until the first verse text is in hand (O-227)', async () => {

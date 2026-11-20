@@ -128,6 +128,9 @@ export function createApp({
   // The word the ring lays faintly across the glass for the item in the
   // lens (O-315), or '' for none.
   getWatermark = null,
+  // Ask the volume to have an item's content in hand before the ring gets
+  // there (O-317); a volume with nothing to fetch gives none.
+  warmItem = null,
   pyramid,
   pyramidLayoutSpec = null,
   pyramidAdapter = null,
@@ -260,6 +263,8 @@ export function createApp({
   let lastPreviewed = null;   // `${index}:${part}` last painted ahead of arrival during a turn
   let lastPreviewAt = 0;      // when; a fast flick is a blur, not a projector (Howell 2026-10-31)
   const PREVIEW_MIN_MS = 90;  // about ten repaints a second at most
+  const PREVIEW_MAX_SEATS = 12; // seats between two samples beyond which the ring is flying, not turning (O-317)
+  let lastPreviewIndex = null;
   let lastTurning = false;   // what onTurn was last told (O-244)
   let rotation = 0;
   let snapId = null;
@@ -1876,13 +1881,23 @@ export function createApp({
       const key = near ? `${near.index}:${near.part}` : null;
       const now = canTime ? performance.now() : Date.now();
       if (key && key !== lastPreviewed && now - lastPreviewAt >= PREVIEW_MIN_MS) {
+        // A RING FLYING PAST IS NOT PREVIEWED (O-317). A flick or a glide to
+        // the chain's end carries the lens over hundreds of seats between
+        // two samples; painting one of them shows a card nobody can read and
+        // asks the volume for whatever that seat needs — on the verse ring a
+        // whole book's text, for each book passed. When the lens has moved
+        // more than a few seats since the last sample the card holds what it
+        // had; the sample is still taken, so the first slow one paints.
+        const jumped = lastPreviewIndex === null ? 0 : Math.abs(near.index - lastPreviewIndex);
         lastPreviewed = key;
         lastPreviewAt = now;
+        lastPreviewIndex = near.index;
         const item = visible[near.index] ?? nav.items?.[near.index];
-        if (item) onDetailPreview(item, { part: near.part });
+        if (item && jumped <= PREVIEW_MAX_SEATS) onDetailPreview(item, { part: near.part });
       }
     } else if (!isRotating) {
       lastPreviewed = null;
+      lastPreviewIndex = null;
     }
 
     // Detail Sector leaf detection — expand/collapse based on selected item level.
@@ -2900,6 +2915,7 @@ export function createApp({
     // THE DRILL OUT IS A VERB OF THE APP, NOT A CLICK ON THE PARENT (O-191):
     // the gesture layer calls it; the parent seat is a readout.
     drillOut: () => shiftLayersOut(),
+    warmItem: item => { if (typeof warmItem === 'function') warmItem(item); },
     drillByTap: Boolean(drillByTap),
     handlePyramidNodeClick: idx => {
       if (isAnimating() && !instantMigration) return; // block clicks during migration animation

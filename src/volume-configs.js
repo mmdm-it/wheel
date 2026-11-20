@@ -48,6 +48,27 @@ const adapterRegistry = createAdapterRegistry();
 adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
 adapterRegistry.register('bible', () => ({ ...bibleAdapter, volumeId: 'bible' }));
 adapterRegistry.register('calendar', () => ({ ...calendarAdapter, volumeId: 'calendar' }));
+// THE READER AT REST (O-317). The loader stocks the shelves the reader has
+// not asked for only while this says they are not using the glass: no touch,
+// stroke, wheel or key for a little over a second — a glide outlasts its
+// stroke by 600 ms — or the strata open, where the editions are what they
+// came to see and holding them back would be the wait.
+let lastTouchAt = 0;
+if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+  for (const type of ['pointerdown', 'pointermove', 'touchstart', 'touchmove', 'wheel', 'keydown']) {
+    window.addEventListener(type, () => { lastTouchAt = Date.now(); }, { capture: true, passive: true });
+  }
+}
+const READER_IDLE_MS = 1200;
+const readerIdle = () => new Promise(resolve => {
+  const check = () => {
+    const strataOpen = typeof document !== 'undefined' && document.getElementById('dimension-button')?.getAttribute('aria-pressed') === 'true';
+    const left = READER_IDLE_MS - (Date.now() - lastTouchAt);
+    if (strataOpen || left <= 0) resolve(); else setTimeout(check, left + 20);
+  };
+  check();
+});
+
 adapterRegistry.register('church', () => ({ ...bibleAdapter, volumeId: 'church' }));
 const adapterLoader = createAdapterLoader(adapterRegistry);
 
@@ -117,6 +138,7 @@ function wallLoader({ volumeId, base, version }) {
       // The manifest, the moment it is parsed and before the bundles are
       // waited for — the boot card listens (O-181).
       onVolume: v => { try { document.dispatchEvent(new CustomEvent('wheel:volume-early', { detail: v })); } catch { /* no DOM */ } },
+      readerIdle,
       fetchJson: async path => {
         const response = await fetch(path);
         if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
