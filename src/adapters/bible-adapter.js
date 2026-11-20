@@ -1457,6 +1457,9 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   return {
     parentHandler,
     getWatermark,
+    // A lesson's name is centred on the row; an edition's ends at its foot,
+    // by the globe that changes it (O-318).
+    watermarkRest: topLevel ? 'middle' : 'foot',
     warmItem,
     childrenHandler,
     getParentLabel,

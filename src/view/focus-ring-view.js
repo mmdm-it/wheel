@@ -52,7 +52,13 @@ const glassRun = (hubX, hubY, r, w, y0, y1, steps = 720) => {
   }
   return best && best[1] > best[0] ? best : null;
 };
-export function layWatermark(word, arcParams, w, h, ssd) {
+// WHERE THE NAME RESTS ON THE ROW (O-318, Howell 2026-11-20, with the edition's
+// name drawn in red down by the globe: "rotate the edition label ...
+// counterclockwise so its last letter falls near the dimension button").
+// 'middle' centres it on the row, as a lesson's name is; 'foot'
+// ends it at the row's foot, the same margin short of it that the longest
+// name is given at each end.
+export function layWatermark(word, arcParams, w, h, ssd, rest = 'middle') {
   const text = String(word || '').trim().replace(/\s+/g, ' ');
   const { hubX, hubY, radius } = arcParams || {};
   if (!text || ![hubX, hubY, radius, w, h, ssd].every(Number.isFinite) || !(w > 0 && h > 0)) return null;
@@ -68,7 +74,9 @@ export function layWatermark(word, arcParams, w, h, ssd) {
   const at = a => `${(hubX + r * Math.cos(a)).toFixed(1)} ${(hubY + r * Math.sin(a)).toFixed(1)}`;
   // From the larger angle to the smaller: down the glass along the ring,
   // which puts the letters' tops on the hub's side.
-  return { size, text, d: `M ${at(run[1])} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 0 ${at(run[0])}` };
+  const foot = rest === 'foot';
+  const offset = foot ? `${(100 - (1 - WATERMARK_FILL) * 50).toFixed(1)}%` : '50%';
+  return { size, text, offset, anchor: foot ? 'end' : 'middle', d: `M ${at(run[1])} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 0 ${at(run[0])}` };
 }
 
 export class FocusRingView {
@@ -374,13 +382,15 @@ export class FocusRingView {
     }
 
     if (this.watermark) {
-      const laid = arcParams ? layWatermark(String(options.watermark || ''), arcParams, viewportWidth, viewportHeight, viewportSSd) : null;
+      const laid = arcParams ? layWatermark(String(options.watermark || ''), arcParams, viewportWidth, viewportHeight, viewportSSd, options.watermarkRest) : null;
       if (!laid) {
         this.watermark.style.display = 'none';
       } else {
         this.watermark.style.display = '';
         this.watermark.style.fontSize = `${laid.size.toFixed(1)}px`;
         this.watermarkLine.textContent = laid.text;
+        this.watermarkLine.setAttribute('startOffset', laid.offset);
+        this.watermarkLine.setAttribute('text-anchor', laid.anchor);
         this.watermarkPath.setAttribute('d', laid.d);
       }
     }

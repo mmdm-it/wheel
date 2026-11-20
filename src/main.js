@@ -5207,6 +5207,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
     getWatermark: typeof handlerSet.getWatermark === 'function' ? handlerSet.getWatermark : null,
+    watermarkRest: handlerSet.watermarkRest || 'middle',
     warmItem: typeof handlerSet.warmItem === 'function' ? handlerSet.warmItem : null,
     pyramid: pyramidConfig,
     pyramidLayoutSpec: pyramidLayout,

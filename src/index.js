@@ -128,6 +128,7 @@ export function createApp({
   // The word the ring lays faintly across the glass for the item in the
   // lens (O-315), or '' for none.
   getWatermark = null,
+  watermarkRest = 'middle',
   // Ask the volume to have an item's content in hand before the ring gets
   // there (O-317); a volume with nothing to fetch gives none.
   warmItem = null,
@@ -2450,6 +2451,7 @@ export function createApp({
         // sky is (Howell 2026-11-20: "update in real time during rotation of
         // the focus ring as the child pyramid nodes do"); a gap names nothing.
         watermark: typeof getWatermark === 'function' ? (getWatermark(pyramidSelected) || '') : '',
+        watermarkRest,
         onNodeClick: node => rotateNodeIntoMagnifier(node),
         selectedId: selected?.id,
         parentButtons: {

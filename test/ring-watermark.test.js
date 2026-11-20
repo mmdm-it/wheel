@@ -41,4 +41,12 @@ describe('the ring\'s watermark is one row on an arc about the hub (O-315)', () 
     assert.ok(y1 > y0, 'read down the glass');
     assert.ok(y0 >= 0.1 * 707 - 5 && y1 <= 0.8 * 707 + 5, 'between the top margin and the foot of the sky');
   });
+  it('a lesson\'s name is centred on the row and an edition\'s ends at its foot (O-318)', () => {
+    const mid = layWatermark('MATRIMONY', arc, 360, 707, 360);
+    const foot = layWatermark('KING JAMES', arc, 360, 707, 360, 'foot');
+    assert.deepEqual([mid.anchor, mid.offset], ['middle', '50%']);
+    assert.deepEqual([foot.anchor, foot.offset], ['end', '97.0%']);
+    assert.equal(foot.size, mid.size, 'the one size either way');
+    assert.equal(foot.d, mid.d, 'and the one row');
+  });
 });
