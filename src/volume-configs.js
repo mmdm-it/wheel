@@ -371,7 +371,14 @@ const volumeConfigs = {
       // proofreading bypass's key list (O-122). Named here because the engine
       // core may not speak a volume's level names (O-43).
       const POSITION_KEYS = ['book', 'chapter', 'verse'];
-      const level = params.get('level') || startup.top_navigation_level || 'verse';
+      // THE VOLUME MAY DECLARE ITS OUTERMOST RING (O-314, Howell 2026-11-19:
+      // "make each catechism the root"). Where it does, nothing above that
+      // ring is ever built: an address or a remembered place naming a level
+      // above it is not honoured, and the parent handler stops there.
+      const topLevel = root?.display_config?.top_level || null;
+      const ABOVE = { chapter: ['root', 'testament', 'book'], book: ['root', 'testament'] }[topLevel] || [];
+      const asked = params.get('level');
+      const level = (asked && !ABOVE.includes(asked) ? asked : null) || startup.top_navigation_level || 'verse';
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
@@ -403,10 +410,11 @@ const volumeConfigs = {
       // books, the two divisions — and boot rebuilds that ring rather than
       // drilling to the verse (buildBibleChain). A verse is the verse above.
       const place = (!deepLinked && !params.get('level') && !params.get('item')
-        && ['testament', 'book', 'chapter'].includes(memory?.placeLevel) && memory?.placeItem)
+        && ['testament', 'book', 'chapter'].includes(memory?.placeLevel) && !ABOVE.includes(memory.placeLevel) && memory?.placeItem)
         ? { level: memory.placeLevel, itemId: memory.placeItem } : null;
       return {
         level,
+        topLevel,
         place,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,

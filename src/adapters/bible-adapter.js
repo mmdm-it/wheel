@@ -924,7 +924,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     }));
   };
 
+  // THE OUTERMOST RING THE VOLUME DECLARES (O-314): the catechisms stop at
+  // their chapters, with the book's own name in the parent seat and nothing
+  // further out. Absent, the top is the divisions ring as before (O-190).
+  const topLevel = options?.topLevel || null;
   const parentHandler = ({ selected, app }) => {
+    // Handled, and nothing done: a refusal here would let the ring fall back
+    // to its own layer-out, which draws a level this volume does not have.
+    if (topLevel && bibleMode === topLevel) return true;
     if (bibleMode === 'verse') {
       // The verse ring spans the whole volume, so the reader may be far
       // from the chapter they entered at. Land on the MAGNIFIED verse's

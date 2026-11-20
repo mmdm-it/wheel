@@ -642,3 +642,27 @@ describe('a testament names no parent without a gateway above (O-190)', () => {
     assert.equal(h.getParentActionable(), true, 'actionable at the book ring, where the boot stands');
   });
 });
+
+// THE VOLUME MAY DECLARE ITS OUTERMOST RING (O-314, Howell 2026-11-19: "make
+// each catechism the root"). At that ring the drill out is taken and nothing
+// is built: no ring of books, no division above it.
+describe('a declared top level is the furthest out the reader goes (O-314)', () => {
+  const at = (level, topLevel) => bibleAdapter.createHandlers({
+    manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: {},
+    options: { activeEdition: 'LAT', translation: 'LAT', level, topLevel }
+  });
+  it('at the declared ring the drill out is handled and sets no items', () => {
+    let set = 0;
+    const app = { setPrimaryItems: () => { set++; }, migrateOut: () => { set++; }, setParentButtons: () => { set++; } };
+    assert.equal(at('chapter', 'chapter').parentHandler({ selected: { level: 'chapter', meta: { bookId: 'B' } }, app }), true);
+    assert.equal(set, 0, 'nothing was built above the declared top');
+  });
+  it('a volume that declares none still climbs from its chapters', () => {
+    let set = 0;
+    const app = { setPrimaryItems: () => { set++; }, migrateOut: () => { set++; }, setParentButtons: () => {} };
+    const taken = at('chapter', null).parentHandler({ selected: { level: 'chapter', meta: { bookId: 'B' } }, app });
+    // This fixture seats no ring of books, so the climb is refused rather
+    // than made; what it must never be is taken with nothing built.
+    assert.ok(set > 0 || taken === false, 'the climb is attempted as before, not swallowed');
+  });
+});
