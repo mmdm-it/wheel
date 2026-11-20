@@ -37,3 +37,11 @@ export const WALL_ROOTS = {
   bible: { base: BIBLE_VOLUME_BASE, version: BIBLE_VOLUME_VERSION },
   church: { base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION }
 };
+
+// THE WORDS OF A LEAF-AND-SHARD VOLUME'S ADDRESS, for the early loader, which
+// is engine-general and may not speak them (O-43): the parameters that name a
+// place — an address carrying one opens where it says, and the app settles
+// that — and the rings above the leaves a reader may have left the volume on,
+// where no verse is opened at boot (O-294).
+export const WALL_ADDRESS_KEYS = ['book', 'chapter', 'verse', 'item', 'level', 'testament'];
+export const WALL_RINGS_ABOVE_THE_LEAF = ['testament', 'book', 'chapter'];
