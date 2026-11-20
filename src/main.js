@@ -2,7 +2,7 @@ import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRo
 import { declareHomeScreen } from './core/home-screen.js';
 import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
-import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
+import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES, readerIdle } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
@@ -5755,6 +5755,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     }
   } catch (err) { /* diagnostics never break boot */ }
   prefetchGatewayTargets(manifest);
+  // THE DOOR IS WARMED WHILE THE READER RESTS (O-317): the other half's
+  // manifest, names and first charts are fetched once the glass has been
+  // still a moment, so the tap on the seal crosses on what is already here
+  // (1.4 s cold from the room on a 4 Mbit line). The same cache the crossing
+  // reads; a failure is simply fetched again at the tap.
+  if (sealDoor) {
+    const door = sealDoor;
+    readerIdle().then(() => { if (sealDoor === door) fetchManifest(door).catch(() => {}); });
+  }
   // Adapters that rebuild the top chain (the globe's homecoming) re-invoke
   // this through the hook so rebuilt stamp lines resolve again.
   app.refreshDataStamps = () => refreshDataStamps(app);

@@ -55,14 +55,17 @@ adapterRegistry.register('calendar', () => ({ ...calendarAdapter, volumeId: 'cal
 // stroke, wheel or key for a little over a second — a glide outlasts its
 // stroke by 600 ms — or the strata open, where the editions are what they
 // came to see and holding them back would be the wait.
-let lastTouchAt = 0;
+// The clock starts ahead of the page: a reader who has just been shown their
+// first verse is about to touch the glass, and a shelf landing under that
+// first stroke is several megabytes parsed on the thread that draws it.
+let lastTouchAt = Date.now() + 2500;
 if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
   for (const type of ['pointerdown', 'pointermove', 'touchstart', 'touchmove', 'wheel', 'keydown']) {
     window.addEventListener(type, () => { lastTouchAt = Date.now(); }, { capture: true, passive: true });
   }
 }
 const READER_IDLE_MS = 1200;
-const readerIdle = () => new Promise(resolve => {
+export const readerIdle = () => new Promise(resolve => {
   const check = () => {
     const strataOpen = typeof document !== 'undefined' && document.getElementById('dimension-button')?.getAttribute('aria-pressed') === 'true';
     const left = READER_IDLE_MS - (Date.now() - lastTouchAt);
