@@ -60,7 +60,10 @@ export function layWatermark(word, arcParams, w, h, ssd) {
   if (!(r > 0)) return null;
   const run = glassRun(hubX, hubY, r, w, h * WATERMARK_TOP, h * WATERMARK_FOOT);
   if (!run) return null;
-  const size = Math.min(WATERMARK_MAX_EM * ssd, (WATERMARK_FILL * r * (run[1] - run[0])) / (WATERMARK_GLYPHS * WATERMARK_EM_PER_GLYPH));
+  // The one size — and, for the rare name longer than the row was sized
+  // for, the largest that still fits it.
+  const room = WATERMARK_FILL * r * (run[1] - run[0]);
+  const size = Math.min(WATERMARK_MAX_EM * ssd, room / (Math.max(WATERMARK_GLYPHS, [...text].length) * WATERMARK_EM_PER_GLYPH));
   if (!(size > 4)) return null;
   const at = a => `${(hubX + r * Math.cos(a)).toFixed(1)} ${(hubY + r * Math.sin(a)).toFixed(1)}`;
   // From the larger angle to the smaller: down the glass along the ring,

@@ -683,3 +683,24 @@ describe('the watermark names the chapter in the lens on a declared top ring (O-
     assert.equal(at('verse', 'chapter').getWatermark(lesson), '');
   });
 });
+
+// THE EDITION BEING READ IS NAMED BESIDE THE RING AT EVERY LEVEL (O-316), in
+// a volume that declares no top; a volume that does keeps its own rule.
+describe('the watermark names the edition at every level of a volume with no declared top (O-316)', () => {
+  const translationsMeta = { translations: { LAT: { name: 'A long title of the edition, with its printer and its year, far too long for a row', nativeName: 'Vulgata' }, LONG: { name: 'A long title of the edition, with its printer and its year, far too long for a row' } } };
+  const at = (level, topLevel, edition = 'LAT') => bibleAdapter.createHandlers({
+    manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: { chapters: { B: { 26: 'Matrimony' } } }, translationsMeta,
+    options: { activeEdition: edition, translation: edition, level, topLevel }
+  });
+  it('the short name its ring seat wears, whatever is in the lens', () => {
+    for (const level of ['testament', 'book', 'chapter', 'verse']) {
+      assert.equal(at(level, null).getWatermark({ level, meta: { bookId: 'B', chapterKey: '26' } }).toUpperCase(), 'VULGATA', level);
+    }
+  });
+  it('an edition with only its full title names nothing rather than run off the row', () => {
+    assert.equal(at('book', null, 'LONG').getWatermark({ level: 'book' }), '');
+  });
+  it('a volume with a declared top never shows the edition there', () => {
+    assert.equal(at('verse', 'chapter').getWatermark({ level: 'verse', meta: { bookId: 'B' } }), '');
+  });
+});

@@ -20,6 +20,13 @@ describe('the ring\'s watermark is one row on an arc about the hub (O-315)', () 
     assert.equal(b.text, 'SACRIFICE OF THE MASS', 'one row, never broken');
     assert.ok(a.size <= 0.09 * 360 + 1e-9);
   });
+  it('a name longer than the row was sized for is the one that is set smaller, and still fits', () => {
+    const usual = layWatermark('DOUAY-RHEIMS', arc, 360, 707, 360);
+    const long = layWatermark('BIBLIA SACRA VULGATAE EDITIONIS', arc, 360, 707, 360);
+    assert.ok(long.size < usual.size);
+    const [x0, y0, r, x1, y1] = ends(long.d);
+    assert.ok(31 * 0.74 * long.size <= 2 * r * Math.asin(Math.hypot(x1 - x0, y1 - y0) / (2 * r)));
+  });
   it('the longest name the volume carries fits the row at that size', () => {
     const { size, d } = layWatermark('SACRIFICE OF THE MASS', arc, 360, 707, 360);
     const [x0, y0, r, x1, y1] = ends(d);

@@ -634,6 +634,17 @@ svg :focus-visible {
   user-select: none;
 }
 
+/* OVER THE READING GROUND THE ROW IS LIGHT (O-316, Howell 2026-11-20: "The
+   only decision is how the watermark differs between the background sepia
+   and the detail sector blue/purple"). On the open ground it is the ink at a
+   tenth; over the sector, where dark ink on a dark ground is lost, it is the
+   reading text's own white at the same strength, so it stands the same step
+   off its ground in both places and stays well under the words. */
+:root.detail-open .focus-ring-watermark {
+  fill: #ffffff;
+  opacity: var(--ring-watermark-leaf-opacity, 0.1);
+}
+
 /* GONE WHILE THE RING TURNS (O-244, Howell 2026-10-30): the host tells the
    button when the ring is moving; it fades out for the turn and back at the
    settle, untouchable in between. */

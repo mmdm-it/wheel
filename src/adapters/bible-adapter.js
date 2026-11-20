@@ -1387,17 +1387,29 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // The parent seat at the top is words alone (discless) and, with no
   // gateway above, not even that (O-190).
   const getParentActionable = () => !(bibleMode === 'testament' && !hasRoot);
-  // THE NAME OF THE CHAPTER IN THE LENS, ACROSS THE GLASS (O-315, Howell
-  // 2026-11-20, of the Church's outermost ring, where a lesson is a bare
-  // number until it is entered: "only at the root, which is where the user
-  // needs it most"). Only on a declared top ring of chapters, and only where
-  // the names carry a name for the chapter (O-302); '' everywhere else.
+  // THE ROW BESIDE THE RING (O-315, O-316). Two uses, and the volume's own
+  // shape picks between them:
+  //  - a volume that declares its chapters the top (the catechisms) names
+  //    THE CHAPTER IN THE LENS on that ring and nothing anywhere else
+  //    (Howell 2026-11-20: "only at the root, which is where the user needs
+  //    it most"), where the names carry a name for it (O-302);
+  //  - every other volume names THE EDITION BEING READ, at every level from
+  //    the top to the leaf (Howell the same day: "currently the user has no
+  //    obvious idea of what edition they're reading"), under the short name
+  //    its ring seat wears, in its own script.
   const getWatermark = (item) => {
-    if (!topLevel || topLevel !== 'chapter' || bibleMode !== topLevel || item?.level !== 'chapter') return '';
-    const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || item.parentId || '');
-    const key = item.meta?.chapterLabel ?? item.meta?.chapterKey;
-    const name = namesMap?.chapters?.[bookId]?.[key];
-    return name ? toDisplayCase(name) : '';
+    if (topLevel) {
+      if (topLevel !== 'chapter' || bibleMode !== topLevel || item?.level !== 'chapter') return '';
+      const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || item.parentId || '');
+      const key = item.meta?.chapterLabel ?? item.meta?.chapterKey;
+      const name = namesMap?.chapters?.[bookId]?.[key];
+      return name ? toDisplayCase(name) : '';
+    }
+    const code = options?.activeEdition || options?.translation || null;
+    const edition = code ? translationsMeta?.translations?.[code] : null;
+    const name = edition?.nativeName || edition?.name || '';
+    // A full title is not a row's worth of words: only a short name is shown.
+    return name && [...name].length <= 32 ? toDisplayCase(name) : '';
   };
   return {
     parentHandler,
