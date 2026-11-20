@@ -2431,7 +2431,10 @@ export function createApp({
         // O-271: where the chain is, in display angles, so the band is drawn
         // solid only there and hollow beyond the chain's ends.
         chainSpan: Number.isFinite(bounds.chainLower) ? { lower: bounds.chainLower + rotation, upper: bounds.chainUpper + rotation } : null,
-        watermark: typeof getWatermark === 'function' ? (getWatermark(selected) || '') : '',
+        // Named for the node nearest the lens while the ring turns, as the
+        // sky is (Howell 2026-11-20: "update in real time during rotation of
+        // the focus ring as the child pyramid nodes do"); a gap names nothing.
+        watermark: typeof getWatermark === 'function' ? (getWatermark(pyramidSelected) || '') : '',
         onNodeClick: node => rotateNodeIntoMagnifier(node),
         selectedId: selected?.id,
         parentButtons: {
