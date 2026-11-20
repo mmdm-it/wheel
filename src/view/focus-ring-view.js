@@ -32,7 +32,7 @@ const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
 // glass and the foot of the sky. ONE size for every name: what lets the
 // longest name the volume may carry (WATERMARK_GLYPHS) fill that stretch,
 // under a ceiling — never fitted to the word in hand.
-const WATERMARK_REACH = 0.17;         // × SSd hubward of the ring's centreline, the row's middle
+const WATERMARK_REACH = 0.125;        // × SSd hubward of the ring's centreline, the row's middle
 const WATERMARK_TOP = 0.1;            // × height: the row begins below this
 const WATERMARK_FOOT = 0.8;           // × height: and ends above this, clear of the parent label
 const WATERMARK_FILL = 0.94;          // of that stretch the longest name may take
