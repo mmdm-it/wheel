@@ -21,6 +21,67 @@ const SECTION_LABEL_RADII = 5;
 // Peak scale factor applied to the node circle and label closest to the magnifier during rotation.
 const MAGNIFIER_NODE_SCALE_PEAK = 2.0;
 
+// THE RING'S WATERMARK (O-315, Howell 2026-11-20, with a sketch of a lesson's
+// name struck straight and dark across the sky: "much too dark, and is
+// straight instead of curved, but gives you the idea"). The word rides an
+// arc concentric with the ring, hubward of it through the field the sky
+// fills, read down the glass with its letters' tops toward the hub, as large
+// as the visible run of its arc allows. A long name takes two arcs, broken
+// at the space nearest its middle, the first line nearer the hub.
+const WATERMARK_REACH = 0.42;         // × SSd hubward of the ring's centreline, the word's middle
+const WATERMARK_FILL = 0.86;          // of the visible arc a line may take
+const WATERMARK_EM_PER_GLYPH = 0.74;  // a bold capital's advance plus tracking, in em
+const WATERMARK_MAX_EM = 0.2;         // × SSd
+const WATERMARK_LINE_PITCH = 1.3;     // em, arc to arc
+const WATERMARK_ONE_LINE = 14;        // glyphs a single line may hold before it breaks
+export const watermarkLines = word => {
+  const text = String(word || '').trim().replace(/\s+/g, ' ');
+  if (!text) return [];
+  if ([...text].length <= WATERMARK_ONE_LINE || !text.includes(' ')) return [text];
+  let best = -1;
+  for (let i = text.indexOf(' '); i >= 0; i = text.indexOf(' ', i + 1)) {
+    if (best < 0 || Math.abs(i - text.length / 2) < Math.abs(best - text.length / 2)) best = i;
+  }
+  return [text.slice(0, best), text.slice(best + 1)];
+};
+// The run of angles a circle of radius r about the hub spends on the glass,
+// as [a0, a1] with a1 > a0, or null.
+const glassRun = (hubX, hubY, r, w, h, steps = 720) => {
+  const inside = a => { const x = hubX + r * Math.cos(a), y = hubY + r * Math.sin(a); return x >= 0 && x <= w && y >= 0 && y <= h; };
+  const step = (2 * Math.PI) / steps;
+  let best = null, start = null;
+  for (let i = 0; i <= steps * 2; i++) {
+    const a = -Math.PI + i * step;
+    if (i < steps * 2 && inside(a)) { if (start === null) start = a; continue; }
+    if (start !== null) { if (!best || a - step - start > best[1] - best[0]) best = [start, a - step]; start = null; }
+  }
+  return best && best[1] > best[0] ? best : null;
+};
+export function layWatermark(word, arcParams, w, h, ssd) {
+  const lines = watermarkLines(word);
+  const { hubX, hubY, radius } = arcParams || {};
+  if (!lines.length || ![hubX, hubY, radius, w, h, ssd].every(Number.isFinite) || !(w > 0 && h > 0)) return null;
+  const mid = radius - ssd * WATERMARK_REACH;
+  if (!(mid > 0)) return null;
+  // Line i's arc: the first nearest the hub (the top line as it is read).
+  const radiusOf = (i, size) => mid + (i - (lines.length - 1) / 2) * size * WATERMARK_LINE_PITCH;
+  const fit = (r, line) => { const v = glassRun(hubX, hubY, r, w, h); return v ? (WATERMARK_FILL * r * (v[1] - v[0])) / ([...line].length * WATERMARK_EM_PER_GLYPH) : 0; };
+  let size = Math.min(WATERMARK_MAX_EM * ssd, ...lines.map(line => fit(mid, line)));
+  for (let pass = 0; pass < 3; pass++) size = Math.min(WATERMARK_MAX_EM * ssd, ...lines.map((line, i) => fit(radiusOf(i, size), line)));
+  if (!(size > 4)) return null;
+  const at = (r, a) => `${(hubX + r * Math.cos(a)).toFixed(1)} ${(hubY + r * Math.sin(a)).toFixed(1)}`;
+  return {
+    size,
+    lines: lines.map((text, i) => {
+      const r = radiusOf(i, size);
+      const run = glassRun(hubX, hubY, r, w, h);
+      // From the larger angle to the smaller: down the glass along the ring,
+      // which puts the letters' tops on the hub's side.
+      return run ? { text, d: `M ${at(r, run[1])} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 0 ${at(r, run[0])}` } : null;
+    }).filter(Boolean)
+  };
+}
+
 export class FocusRingView {
   constructor(svgRoot) {
     this.svgRoot = svgRoot;
@@ -120,6 +181,28 @@ export class FocusRingView {
     // two edges only — under the
     // solid band, which is cut to where the chain is. Hidden while both
     // ends are off the glass, which is nearly always.
+    // THE RING'S WATERMARK (O-315): one word or two on arcs concentric with
+    // the ring, hubward of it, under everything the ring draws.
+    this.watermarkPaths = [0, 1].map(i => {
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('id', `focus-ring-watermark-arc-${i}`);
+      path.setAttribute('fill', 'none');
+      this.contentGroup.appendChild(path);
+      return path;
+    });
+    this.watermark = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.watermark.setAttribute('class', 'focus-ring-watermark');
+    this.watermark.setAttribute('dominant-baseline', 'central');
+    this.watermark.style.display = 'none';
+    this.watermarkLines = this.watermarkPaths.map((path, i) => {
+      const tp = document.createElementNS('http://www.w3.org/2000/svg', 'textPath');
+      tp.setAttribute('href', `#focus-ring-watermark-arc-${i}`);
+      tp.setAttribute('startOffset', '50%');
+      tp.setAttribute('text-anchor', 'middle');
+      this.watermark.appendChild(tp);
+      return tp;
+    });
+    this.contentGroup.appendChild(this.watermark);
     this.bandHollow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.bandHollow.setAttribute('class', 'focus-ring-band-hollow');
     this.bandHollow.style.display = 'none';
@@ -298,6 +381,21 @@ export class FocusRingView {
       [this.pyramidNodesGroup, this.pyramidLabelsGroup].forEach(g => {
         if (g) g.removeAttribute('filter');
       });
+    }
+
+    if (this.watermark) {
+      const laid = arcParams ? layWatermark(String(options.watermark || ''), arcParams, viewportWidth, viewportHeight, viewportSSd) : null;
+      if (!laid) {
+        this.watermark.style.display = 'none';
+      } else {
+        this.watermark.style.display = '';
+        this.watermark.style.fontSize = `${laid.size.toFixed(1)}px`;
+        this.watermarkLines.forEach((tp, i) => {
+          const line = laid.lines[i];
+          tp.textContent = line ? line.text : '';
+          if (line) this.watermarkPaths[i].setAttribute('d', line.d);
+        });
+      }
     }
 
     if (this.band && arcParams && viewportWindow) {

@@ -1387,8 +1387,21 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // The parent seat at the top is words alone (discless) and, with no
   // gateway above, not even that (O-190).
   const getParentActionable = () => !(bibleMode === 'testament' && !hasRoot);
+  // THE NAME OF THE CHAPTER IN THE LENS, ACROSS THE GLASS (O-315, Howell
+  // 2026-11-20, of the Church's outermost ring, where a lesson is a bare
+  // number until it is entered: "only at the root, which is where the user
+  // needs it most"). Only on a declared top ring of chapters, and only where
+  // the names carry a name for the chapter (O-302); '' everywhere else.
+  const getWatermark = (item) => {
+    if (!topLevel || topLevel !== 'chapter' || bibleMode !== topLevel || item?.level !== 'chapter') return '';
+    const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || item.parentId || '');
+    const key = item.meta?.chapterLabel ?? item.meta?.chapterKey;
+    const name = namesMap?.chapters?.[bookId]?.[key];
+    return name ? toDisplayCase(name) : '';
+  };
   return {
     parentHandler,
+    getWatermark,
     childrenHandler,
     getParentLabel,
     getParentActionable,

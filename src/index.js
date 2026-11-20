@@ -125,6 +125,9 @@ export function createApp({
   // Optional icon replacing the parent vessel+label at its seat (the
   // countries ring wears the world globe there — Howell 2026-07-23).
   getParentIcon = null,
+  // The word the ring lays faintly across the glass for the item in the
+  // lens (O-315), or '' for none.
+  getWatermark = null,
   pyramid,
   pyramidLayoutSpec = null,
   pyramidAdapter = null,
@@ -2428,6 +2431,7 @@ export function createApp({
         // O-271: where the chain is, in display angles, so the band is drawn
         // solid only there and hollow beyond the chain's ends.
         chainSpan: Number.isFinite(bounds.chainLower) ? { lower: bounds.chainLower + rotation, upper: bounds.chainUpper + rotation } : null,
+        watermark: typeof getWatermark === 'function' ? (getWatermark(selected) || '') : '',
         onNodeClick: node => rotateNodeIntoMagnifier(node),
         selectedId: selected?.id,
         parentButtons: {

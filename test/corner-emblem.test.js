@@ -666,3 +666,20 @@ describe('a declared top level is the furthest out the reader goes (O-314)', () 
     assert.ok(set > 0 || taken === false, 'the climb is attempted as before, not swallowed');
   });
 });
+
+// THE CHAPTER IN THE LENS IS NAMED ACROSS THE GLASS, AT A DECLARED TOP ONLY (O-315).
+describe('the watermark names the chapter in the lens on a declared top ring (O-315)', () => {
+  const at = (level, topLevel) => bibleAdapter.createHandlers({
+    manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: { chapters: { B: { 26: 'Matrimony' } } },
+    options: { activeEdition: 'LAT', translation: 'LAT', level, topLevel }
+  });
+  const lesson = { level: 'chapter', meta: { bookId: 'B', chapterKey: '26' } };
+  it('names it where the volume declares its chapters the top', () => {
+    assert.equal(at('chapter', 'chapter').getWatermark(lesson).toUpperCase(), 'MATRIMONY');
+  });
+  it('says nothing where no top is declared, for a chapter with no name, or below the top', () => {
+    assert.equal(at('chapter', null).getWatermark(lesson), '');
+    assert.equal(at('chapter', 'chapter').getWatermark({ level: 'chapter', meta: { bookId: 'B', chapterKey: '3' } }), '');
+    assert.equal(at('verse', 'chapter').getWatermark(lesson), '');
+  });
+});

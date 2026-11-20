@@ -621,6 +621,19 @@ svg :focus-visible {
 }
 #watermark[hidden] { display: none; }
 
+/* THE RING'S WATERMARK (O-315, Howell 2026-11-20): the name of the chapter in
+   the lens on the Church's outermost ring, curved with the ring and faint —
+   his sketch's dark umber was "much too dark". The view sizes and places it. */
+.focus-ring-watermark {
+  fill: var(--color-text);
+  opacity: var(--ring-watermark-opacity, 0.1);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  user-select: none;
+}
+
 /* GONE WHILE THE RING TURNS (O-244, Howell 2026-10-30): the host tells the
    button when the ring is moving; it fades out for the turn and back at the
    settle, untouchable in between. */
