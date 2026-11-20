@@ -33,12 +33,14 @@ describe('which edition the boot waits for, asked once for the app and the early
 });
 
 describe('the early loader, run against a page that is not there', () => {
-  const run = async ({ search = '', hostname = 'localhost', pathname = '/', memory = null, booting = false } = {}) => {
+  const run = async ({ search = '', hostname = 'localhost', pathname = '/', memory = null, booting = false, extraFiles = {}, without = [] } = {}) => {
     const asked = [];
     const files = {
-      [`${R}/volume.json`]: { ...volume, display_config: { ...volume.display_config, boot: { first_visit: [{ utterance: 'u-first' }] } } },
-      [`${R}/charts/ENG/all.json`]: { edition: 'ENG', charts: { bone: { seats: [{ utterances: ['u-a'] }] }, btwo: { seats: [{ utterances: ['u-first'] }] } } },
-      [`${R}/charts/ITA/all.json`]: { edition: 'ITA', charts: { bita: { seats: [{ utterances: ['u-first'] }] } } }
+      [`${R}/volume.json`]: { ...volume, display_config: { ...volume.display_config, boot: { first_visit: [{ utterance: 'u0f1e2d3c' }] } } },
+      // Packs (W-307): bone seats u0000000a; btwo and bita seat the first visit's utterance, u0f1e2d3c.
+      [`${R}/charts/ENG/pack/all.json`]: { edition: 'ENG', pack: 1, charts: { bone: { labels: [[1, 1]], b: 'AAAACg==' }, btwo: { labels: [[1, 1]], b: 'Dx4tPA==' } } },
+      [`${R}/charts/ITA/pack/all.json`]: { edition: 'ITA', pack: 1, charts: { bita: { labels: [[1, 1]], b: 'Dx4tPA==' } } },
+      ...extraFiles
     };
     const saved = { window: globalThis.window, fetch: globalThis.fetch, navigator: Object.getOwnPropertyDescriptor(globalThis, 'navigator') };
     globalThis.window = {
@@ -47,7 +49,7 @@ describe('the early loader, run against a page that is not there', () => {
       ...(booting ? { __wheelBooting: true } : {})
     };
     Object.defineProperty(globalThis, 'navigator', { value: { languages: ['en-US'] }, configurable: true });
-    globalThis.fetch = async path => { asked.push(path); const body = files[path]; return { ok: Boolean(body), status: body ? 200 : 404, json: async () => body }; };
+    globalThis.fetch = async path => { asked.push(path); const body = without.some(w => path.includes(w)) ? null : files[path]; return { ok: Boolean(body), status: body ? 200 : 404, json: async () => body }; };
     try {
       await import(`../src/early.js?case=${Math.random()}`);
       for (let i = 0; i < 10; i += 1) await new Promise(r => setTimeout(r, 2));
@@ -62,15 +64,20 @@ describe('the early loader, run against a page that is not there', () => {
     assert.deepEqual(asked, [
       `${R}/volume.json`,
       `${R}/charts/ENG/index.json`,
-      `${R}/charts/ENG/all.json`,
+      `${R}/charts/ENG/pack/all.json`,
       `${R}/text/ENG/btwo.json`
     ]);
     assert.equal(early.size, 4, 'each waits under its path for the app\'s loader');
   });
   it('a reader coming back: the edition and the book they were reading', async () => {
     const { asked } = await run({ search: '?volume=bible', memory: { edition: 'ITA', itemId: 'bita_3_4', placeLevel: 'verse' } });
-    assert.ok(asked.includes(`${R}/charts/ITA/all.json`));
+    assert.ok(asked.includes(`${R}/charts/ITA/pack/all.json`));
     assert.ok(asked.includes(`${R}/text/ITA/bita.json`));
+  });
+  it('a corpus with no pack: the bundle is asked for instead, as the app\'s loader will', async () => {
+    const { asked } = await run({ search: '?volume=bible', without: ['/pack/'] });
+    assert.ok(asked.includes(`${R}/charts/ENG/pack/all.json`) && asked.includes(`${R}/charts/ENG/all.json`));
+    assert.ok(asked.indexOf(`${R}/charts/ENG/pack/all.json`) < asked.indexOf(`${R}/charts/ENG/all.json`));
   });
   it('no text where the app will open on a ring above the verses, or the address names a place', async () => {
     const left = await run({ search: '?volume=bible', memory: { edition: 'ENG', itemId: 'bone_1_1', placeLevel: 'chapter' } });

@@ -98,6 +98,7 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     const touched = [], held = new Map();
     const twinOf = p => TWINS.find(t => p.includes(`/${t}/`));
     const fetchTwin = async p => {
+      if (p.includes('/pack/')) throw new Error('this corpus has no packs (W-307): the bundles are what is stocked');
       touched.push(p);
       const twin = twinOf(p);
       if (twin) {

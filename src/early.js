@@ -19,6 +19,7 @@ import { chooseFirstEdition } from './core/first-edition.js';
 import { phoneLanguages } from './core/tongue.js';
 import { recall } from './core/session-memory.js';
 import { resolvePath } from './core/identity.js';
+import { isChartPack, unitSeatingUtterance } from './adapters/chart-pack.js';
 
 (function early() {
   try {
@@ -47,7 +48,11 @@ import { resolvePath } from './core/identity.js';
       });
       if (!code) return;
       get(at({ kind: 'chartIndex', edition: code }));
-      get(at({ kind: 'chartBundle', edition: code })).then(bundle => {
+      // The charts in their short form (W-307); where a corpus has none,
+      // the bundle, which the app's loader falls back to in the same order.
+      const pack = get(at({ kind: 'chartPack', edition: code }));
+      pack.catch(() => { get(at({ kind: 'chartBundle', edition: code })); });
+      pack.then(packed => {
         // THE FIRST LEAF'S OWN UNIT, the moment its charts say which it is.
         // The app asked for this text only after every name and shelf had
         // landed and the rings were built — about a second after the charts.
@@ -55,24 +60,18 @@ import { resolvePath } from './core/identity.js';
         // one last read, or the first visit's. An address that names a
         // place, or a reader who left a ring above the leaves, is the app's
         // to settle.
-        const charts = (bundle && bundle.edition === code && bundle.charts) || null;
-        if (!charts) return;
+        if (!isChartPack(packed) || packed.edition !== code) return;
         if (WALL_ADDRESS_KEYS.some(k => params.get(k))) return;
         const memory = recall(volumeId);
         if (WALL_RINGS_ABOVE_THE_LEAF.includes(memory.placeLevel)) return;
-        let bookId = null;
+        let unitId = null;
         const last = typeof memory.itemId === 'string' ? memory.itemId.slice(0, Math.max(0, memory.itemId.indexOf('_'))) : '';
-        if (last && charts[last]) bookId = last;
-        if (!bookId && !memory.itemId) {
+        if (last && packed.charts[last]) unitId = last;
+        if (!unitId && !memory.itemId) {
           const wanted = (volume?.display_config?.boot?.first_visit || []).map(e => e?.utterance).filter(Boolean);
-          for (const u of wanted) {
-            for (const id of Object.keys(charts)) {
-              if ((charts[id]?.seats || []).some(seat => (seat.utterances || []).includes(u))) { bookId = id; break; }
-            }
-            if (bookId) break;
-          }
+          for (const u of wanted) { unitId = unitSeatingUtterance(packed, u); if (unitId) break; }
         }
-        if (bookId) get(at({ kind: 'text', unitId: bookId, edition: code }));
+        if (unitId) get(at({ kind: 'text', unitId, edition: code }));
       }, () => {});
     }, () => {});
   } catch (_) { /* the app boots without it */ }

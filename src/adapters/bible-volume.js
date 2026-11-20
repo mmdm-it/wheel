@@ -24,6 +24,7 @@
 // shape in memory — `chapters` maps, `_external_file`, `book_key` — which is
 // the hub in its last costume. None of those appears below.
 import { resolvePath } from '../core/identity.js';
+import { isChartPack, unpackCharts } from './chart-pack.js';
 import { loadMargin, loadMarginLegend, marginCached, legendCached, blockAt, entriesAt, marksAt, addressOrder, manuscriptsIn, loadPoetry, poetryCached, versoCached } from '../core/margin-source.js';
 import { normalizeUnitText } from '../core/unit-text.js';
 import { projectContainers } from '../core/unit-source.js';
@@ -150,8 +151,15 @@ export async function loadBibleVolume({ base, version, fetchJson: transport, fir
       shelves.set(edition.code, null);
     }
   }));
-  const fetchBundle = (edition, opts) => fetchJson(at({ kind: 'chartBundle', edition: edition.code }), opts)
+  // THE PACK FIRST, THEN THE BUNDLE (W-307): the pack is the same charts in
+  // about half the bytes on the line and a tenth of the text to parse; a
+  // corpus that predates it answers with nothing there, and the bundle is
+  // read as before (and after it, the files one by one).
+  const fetchWholeBundle = (edition, opts) => fetchJson(at({ kind: 'chartBundle', edition: edition.code }), opts)
     .then(b => ((b && b.edition === edition.code && b.charts && typeof b.charts === 'object') ? b.charts : null), () => null);
+  const fetchBundle = (edition, opts) => fetchJson(at({ kind: 'chartPack', edition: edition.code }), opts)
+    .then(p => ((isChartPack(p) && p.edition === edition.code) ? unpackCharts(p) : null))
+    .then(charts => charts || fetchWholeBundle(edition, opts), () => fetchWholeBundle(edition, opts));
   const firstBundleWave = first ? fetchBundle(first) : null;
   const hitsWave = fetchJson(at({ kind: 'hits' })).then(h => (Array.isArray(h?.leaves) ? h.leaves.filter(x => typeof x === 'string') : []), () => []);
   await namesWave;
