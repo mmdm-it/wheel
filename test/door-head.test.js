@@ -28,7 +28,23 @@ test('the public door\'s page introduces Biblia Catholica, not the catalog', () 
   assert.match(body, /<noscript>\s*<h1>Biblia Catholica<\/h1>/);
   assert.match(body, /<p class="desktop-gate-title">BIBLIA CATHOLICA<\/p>/);
   assert.match(body, /<a href="mailto:info@bibliacatholica\.com">info@bibliacatholica\.com<\/a>/);
-  assert.doesNotMatch(body, /desktop-gate-qr/, 'the catalog\'s QR does not stand at the Bible\'s door');
+  // O-321: the door's own QR, drawn in the page, and the gate's two lines in the visitor's tongue
+  assert.doesNotMatch(body, /qr\.png/, 'the catalog\'s QR does not stand at the Bible\'s door');
+  assert.match(body, /<svg class="desktop-gate-qr"[^>]*aria-label="QR: bibliacatholica\.com"/);
+  assert.match(body, /<p class="desktop-gate-sub">Scan the code with your phone to continue<\/p>/);
+  const script = /<script id="wheel:gate-words">([\s\S]*?)<\/script>/.exec(body);
+  assert.ok(script && body.indexOf(script[0]) > body.indexOf('desktop-gate-mail'), 'the words follow the gate they change');
+  const say = languages => {
+    const node = () => ({ textContent: '', attrs: {}, setAttribute(k, v) { this.attrs[k] = v; } });
+    const text = node(), sub = node(), gate = { ...node(), querySelector: sel => (sel === '.desktop-gate-text' ? text : sub) };
+    new Function('navigator', 'document', script[1])({ languages }, { getElementById: () => gate });
+    return [text.textContent, sub.textContent, text.attrs.dir || ''];
+  };
+  assert.deepEqual(say(['fi-FI', 'en']), ['BIBLIA CATHOLICA ON TEHTY PUHELIMELLE', 'Jatka skannaamalla koodi puhelimellasi', '']);
+  assert.deepEqual(say(['en-US', 'fi']), ['', '', ''], 'English first keeps the page\'s own words');
+  assert.deepEqual(say(['ja', 'it-IT']), ['BIBLIA CATHOLICA È FATTA PER IL TELEFONO', 'Inquadra il codice con il telefono per continuare', ''], 'the first language the table knows');
+  assert.equal(say(['ar'])[2], 'rtl');
+  assert.deepEqual(say(['ja']), ['', '', ''], 'an unknown tongue keeps the English');
   assert.doesNotMatch(body, /Meccanismi|MMdM|collettor|mmdm\.it|Tutti i diritti/);
   assert.match(body, /<div id="copyright-notice" class="copyright-notice" aria-label="Copyright"><\/div>/);
 });
