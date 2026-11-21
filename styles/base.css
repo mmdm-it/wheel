@@ -657,6 +657,19 @@ svg :focus-visible {
   user-select: none;
 }
 
+/* A QUIET LINE BESIDE THE WATERMARK (O-325, Howell 2026-11-21: "a whispered
+   sotto voce disclaimer"): the volume's word for an edition it stamps, in
+   lower case as the volume wrote it, red, one step hubward of the name. */
+.focus-ring-watermark-note {
+  fill: rgb(214, 62, 62);
+  opacity: var(--ring-watermark-note-opacity, 0.75);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  user-select: none;
+}
+
 /* OVER THE READING GROUND THE ROW IS LIGHT (O-316, Howell 2026-11-20: "The
    only decision is how the watermark differs between the background sepia
    and the detail sector blue/purple"). On the open ground it is the ink at a
@@ -1306,21 +1319,6 @@ svg :focus-visible {
   inset: 0;
   white-space: nowrap;
   overflow: hidden;
-}
-
-/* THE VOLUME'S STAMP ACROSS AN EDITION'S TEXT (O-325): red, slantwise, over the
-   lines and light enough to read through. Placed and sized by the engine. */
-#edition-stamp {
-  position: absolute;
-  display: none;
-  white-space: nowrap;
-  pointer-events: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  color: rgba(196, 30, 30, 0.6);
-  z-index: 2;
 }
 
 /* Individual arc-positioned text lines */

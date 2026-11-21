@@ -79,6 +79,27 @@ export function layWatermark(word, arcParams, w, h, ssd, rest = 'middle') {
   return { size, text, offset, anchor: foot ? 'end' : 'middle', d: `M ${at(run[1])} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 0 ${at(run[0])}` };
 }
 
+// A QUIET LINE BESIDE THE WATERMARK (O-325): the same row, one step hubward of
+// the watermark's letters, at a smaller size, resting where the watermark
+// rests. Laid from the watermark's own arc so the two read as one caption;
+// where no watermark is drawn it takes the row a watermark would have had.
+export const WATERMARK_NOTE_SIZE = 0.56;   // of the watermark's size
+export const WATERMARK_NOTE_STEP = 0.82;   // of the watermark's size, hubward, centre to centre
+export function layWatermarkNote(note, arcParams, w, h, ssd, rest = 'middle') {
+  const text = String(note || '').trim().replace(/\s+/g, ' ');
+  if (!text) return null;
+  const base = layWatermark('M', arcParams, w, h, ssd, rest);
+  if (!base) return null;
+  const { hubX, hubY, radius } = arcParams;
+  const r0 = radius - ssd * WATERMARK_REACH;
+  const r = r0 - base.size * WATERMARK_NOTE_STEP;
+  if (!(r > 0)) return null;
+  const run = glassRun(hubX, hubY, r0, w, h * WATERMARK_TOP, h * WATERMARK_FOOT);
+  if (!run) return null;
+  const at = a => `${(hubX + r * Math.cos(a)).toFixed(1)} ${(hubY + r * Math.sin(a)).toFixed(1)}`;
+  return { size: base.size * WATERMARK_NOTE_SIZE, text, offset: base.offset, anchor: base.anchor, d: `M ${at(run[1])} A ${r.toFixed(1)} ${r.toFixed(1)} 0 0 0 ${at(run[0])}` };
+}
+
 export class FocusRingView {
   constructor(svgRoot) {
     this.svgRoot = svgRoot;
@@ -201,6 +222,22 @@ export class FocusRingView {
     this.watermarkLine.setAttribute('pointer-events', 'none');
     this.watermark.appendChild(this.watermarkLine);
     this.contentGroup.appendChild(this.watermark);
+    this.watermarkNotePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    this.watermarkNotePath.setAttribute('id', 'focus-ring-watermark-note-arc');
+    this.watermarkNotePath.setAttribute('fill', 'none');
+    this.watermarkNotePath.setAttribute('pointer-events', 'none');
+    this.contentGroup.appendChild(this.watermarkNotePath);
+    this.watermarkNote = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    this.watermarkNote.setAttribute('class', 'focus-ring-watermark-note');
+    this.watermarkNote.setAttribute('dominant-baseline', 'central');
+    this.watermarkNote.setAttribute('pointer-events', 'none');
+    this.watermarkNote.setAttribute('aria-hidden', 'true');
+    this.watermarkNote.style.display = 'none';
+    this.watermarkNoteLine = document.createElementNS('http://www.w3.org/2000/svg', 'textPath');
+    this.watermarkNoteLine.setAttribute('href', '#focus-ring-watermark-note-arc');
+    this.watermarkNoteLine.setAttribute('pointer-events', 'none');
+    this.watermarkNote.appendChild(this.watermarkNoteLine);
+    this.contentGroup.appendChild(this.watermarkNote);
     this.bandHollow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     this.bandHollow.setAttribute('class', 'focus-ring-band-hollow');
     this.bandHollow.style.display = 'none';
@@ -392,6 +429,20 @@ export class FocusRingView {
         this.watermarkLine.setAttribute('startOffset', laid.offset);
         this.watermarkLine.setAttribute('text-anchor', laid.anchor);
         this.watermarkPath.setAttribute('d', laid.d);
+      }
+    }
+
+    if (this.watermarkNote) {
+      const note = arcParams ? layWatermarkNote(String(options.watermarkNote || ''), arcParams, viewportWidth, viewportHeight, viewportSSd, options.watermarkRest) : null;
+      if (!note) {
+        this.watermarkNote.style.display = 'none';
+      } else {
+        this.watermarkNote.style.display = '';
+        this.watermarkNote.style.fontSize = `${note.size.toFixed(1)}px`;
+        this.watermarkNoteLine.textContent = note.text;
+        this.watermarkNoteLine.setAttribute('startOffset', note.offset);
+        this.watermarkNoteLine.setAttribute('text-anchor', note.anchor);
+        this.watermarkNotePath.setAttribute('d', note.d);
       }
     }
 

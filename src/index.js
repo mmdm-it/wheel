@@ -129,6 +129,7 @@ export function createApp({
   // lens (O-315), or '' for none.
   getWatermark = null,
   watermarkRest = 'middle',
+  getWatermarkNote = null,
   // Ask the volume to have an item's content in hand before the ring gets
   // there (O-317); a volume with nothing to fetch gives none.
   warmItem = null,
@@ -2452,6 +2453,7 @@ export function createApp({
         // the focus ring as the child pyramid nodes do"); a gap names nothing.
         watermark: typeof getWatermark === 'function' ? (getWatermark(pyramidSelected) || '') : '',
         watermarkRest,
+        watermarkNote: typeof getWatermarkNote === 'function' ? (getWatermarkNote(pyramidSelected) || '') : '',
         onNodeClick: node => rotateNodeIntoMagnifier(node),
         selectedId: selected?.id,
         parentButtons: {
