@@ -91,6 +91,19 @@ html, body {
   -webkit-user-select: none;
   user-select: none;
 }
+/* AND PIN IT ON EVERYTHING UNDER THE BODY TOO (O-322, Howell 2026-11-21, an
+   iPhone in DuckDuckGo: the verse ran off the right of the glass). That
+   browser's own Text Size setting is applied as an inline text-size-adjust on
+   the BODY element, which outranks the rule above, so the painted verse was
+   inflated past the size its wrap was measured at. An inline style on the
+   body can only reach its descendants by inheritance, and a rule that names
+   the descendants ends the inheritance whatever the inline style's weight.
+   The verse is fitted to its sector by measurement; a larger size than the
+   one measured can only crop it. */
+body * {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 body {
   position: fixed;
   inset: 0;
