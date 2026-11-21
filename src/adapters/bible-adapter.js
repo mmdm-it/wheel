@@ -1165,8 +1165,10 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     }
     return findBook(manifest, bookId)?.book_name || '';
   };
-  const getParentLabel = (item) => {
+  const getParentLabel = (item, plain = false) => {
     if (!item) return '';
+    // `plain`: the name as its edition writes it, for a line of prose (O-319).
+    const cased = plain ? (s => String(s ?? '')) : toDisplayCase;
     // Gateway root ring: parent button points back through the gateway.
     // Top of this volume: the parent button is the way back through the
     // gateway, so it names the DESTINATION volume (Howell 2026-07-18 —
@@ -1229,8 +1231,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // give way to it, as a book's name stands alone over its chapters. The
       // Bible's names carry none, and it reads as before.
       const chapterName = namesMap?.chapters?.[bookId]?.[chapterKey];
-      if (chapterName) return toDisplayCase(chapterName);
-      const bookName = toDisplayCase(bookNameFor(bookId));
+      if (chapterName) return cased(chapterName);
+      const bookName = cased(bookNameFor(bookId));
       return bookName ? `${bookName} ${chapterLabel}` : chapterLabel;
     }
     // Book ring: parent is the testament name (stored mixed-case on items as
@@ -1433,6 +1435,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   //    the top to the leaf (Howell the same day: "currently the user has no
   //    obvious idea of what edition they're reading"), under the short name
   //    its ring seat wears, in its own script.
+  // A full title is not a row's worth of words: only a short name is shown.
+  const editionName = () => {
+    const code = options?.activeEdition || options?.translation || null;
+    const edition = code ? translationsMeta?.translations?.[code] : null;
+    const name = edition?.nativeName || edition?.name || '';
+    return name && [...name].length <= 32 ? name : '';
+  };
   const getWatermark = (item) => {
     if (topLevel) {
       if (topLevel !== 'chapter' || bibleMode !== topLevel || item?.level !== 'chapter') return '';
@@ -1441,11 +1450,29 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const name = namesMap?.chapters?.[bookId]?.[key];
       return name ? toDisplayCase(name) : '';
     }
-    const code = options?.activeEdition || options?.translation || null;
-    const edition = code ? translationsMeta?.translations?.[code] : null;
-    const name = edition?.nativeName || edition?.name || '';
-    // A full title is not a row's worth of words: only a short name is shown.
-    return name && [...name].length <= 32 ? toDisplayCase(name) : '';
+    const name = editionName();
+    return name ? toDisplayCase(name) : '';
+  };
+  // THE READER'S PLACE IN THE READER'S OWN WORDS (O-319, Howell 2026-11-20,
+  // of a correction that opened "1899eng MATTHEW 16:18": "we use our key ...
+  // a code name that means nothing to a user and looks awkward as an email
+  // subject"; and of a subject in a script he cannot read: "don't translate
+  // anything for my sake"). The edition under the name its ring seat wears,
+  // then, at a leaf, the address as the parent label and the lens say it,
+  // in ordinary capitals: "Douay-Rheims, Matthew 16:18". A chapter with a
+  // name of its own (O-302) is called by it: "Baltimore Catechism,
+  // Matrimony, 3". Edition names are distinct, so the line still says
+  // exactly which text is meant.
+  const getPlaceLine = (item, { leaf = true } = {}) => {
+    const parts = [editionName()];
+    if (leaf && item?.level === 'verse') {
+      const above = getParentLabel(item, true);
+      const own = String(item.name ?? '').trim();
+      const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || '');
+      const named = Boolean(namesMap?.chapters?.[bookId]?.[item.meta?.chapterLabel]);
+      if (above && own) parts.push(named ? `${above}, ${own}` : `${above}:${own}`);
+    }
+    return parts.filter(Boolean).join(', ');
   };
   // WHERE A GESTURE IS GOING, NAMED BEFORE IT GETS THERE (O-317): the text of
   // the item's book is asked for now, so it is on the line for the whole of
@@ -1457,6 +1484,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   return {
     parentHandler,
     getWatermark,
+    getPlaceLine,
     // A lesson's name is centred on the row; an edition's ends at its foot,
     // by the globe that changes it (O-318).
     watermarkRest: topLevel ? 'middle' : 'foot',

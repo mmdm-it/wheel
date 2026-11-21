@@ -2183,13 +2183,18 @@ function applyReviewMarkTongue() {
 // changes — at the volume's boot and at every change of reading language,
 // on the review mark's own road (O-226).
 // THE READER'S PLACE, for a pre-composed email (Howell 2026-11-01): the
-// edition and, at a leaf, the address the instrument was showing — the same
-// words a bookmark keeps (arrivalLabel), e.g. "1769eng MATTHEW 16:18".
-// Above a leaf it is the edition alone.
+// edition and, at a leaf, the address the instrument was showing. A volume
+// that can say it in the reader's own words does (O-319: "Douay-Rheims,
+// Matthew 16:18"); one that cannot falls back on the words a bookmark keeps
+// (arrivalLabel). Above a leaf it is the edition alone.
 function landscapeSubject() {
   try {
-    const edition = currentEdition() || '';
     const cur = currentApp?.nav?.getCurrent?.();
+    if (typeof currentPlaceLine === 'function') {
+      const line = currentPlaceLine(cur, { leaf: Boolean(detailSectorVisible) });
+      if (line) return line;
+    }
+    const edition = currentEdition() || '';
     const place = cur && detailSectorVisible ? arrivalLabel(cur) : '';
     return [edition, place].filter(Boolean).join(' ') || null;
   } catch (_) { return null; }
@@ -4371,6 +4376,7 @@ let currentApp = null;
 // getParentLabel), kept beside the app so the basement can name an arrival
 // from the MODEL rather than off the glass (O-220).
 let currentParentLabel = null;
+let currentPlaceLine = null;
 // The booted volume's manifest, kept module-wide for the same reason
 // `currentApp` is: the section label (H-26) is updated from a nav callback
 // that has no path back into bootVolume's scope, and it needs the wall
@@ -5079,6 +5085,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const childrenHandler = params => (handlerSet.childrenHandler ? handlerSet.childrenHandler({ ...params, app }) : false);
   const adapterGetParentLabel = typeof handlerSet.getParentLabel === 'function' ? handlerSet.getParentLabel : null;
   currentParentLabel = adapterGetParentLabel;
+  currentPlaceLine = typeof handlerSet.getPlaceLine === 'function' ? handlerSet.getPlaceLine : null;
   // The volume declares what it appended to a parent label (a chapter
   // numeral), so the label can be seated by its NAME and the suffix hang
   // clear of the vessel. Volumes that append nothing need not define it.

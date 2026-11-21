@@ -703,4 +703,14 @@ describe('the watermark names the edition at every level of a volume with no dec
   it('a volume with a declared top never shows the edition there', () => {
     assert.equal(at('verse', 'chapter').getWatermark({ level: 'verse', meta: { bookId: 'B' } }), '');
   });
+  // THE READER'S PLACE IN THE READER'S OWN WORDS (O-319).
+  it('a correction opens with the edition by name and the address in plain words, never the code', () => {
+    const verse = { level: 'verse', name: '18', meta: { bookId: 'B', chapterLabel: '16' } };
+    const line = at('verse', null).getPlaceLine(verse);
+    assert.match(line, /^Vulgata, .+:18$/);
+    assert.ok(!line.includes('LAT'), 'the code is not in it');
+    assert.equal(at('verse', null).getPlaceLine(verse, { leaf: false }), 'Vulgata', 'above a leaf, the edition alone');
+    assert.equal(at('book', null).getPlaceLine({ level: 'book' }), 'Vulgata');
+    assert.equal(at('verse', null).getPlaceLine({ ...verse, meta: { bookId: 'B', chapterLabel: '26' } }), 'Vulgata, Matrimony, 18', 'a named chapter is called by its name');
+  });
 });

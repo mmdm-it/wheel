@@ -75,7 +75,7 @@ export function telHref(number) {
 export function smsHref(number, body = null) {
   const tel = telHref(number);
   if (!tel) return null;
-  const b = typeof body === 'string' ? body.trim() : '';
+  const b = typeof body === 'string' && body.trim() ? body.trimStart() : '';
   return b ? `sms:${tel.slice(4)}?body=${encodeURIComponent(b)}` : `sms:${tel.slice(4)}`;
 }
 /**
@@ -85,7 +85,7 @@ export function smsHref(number, body = null) {
 export function whatsappHref(number, text = null) {
   const digits = String(number || '').replace(/[^0-9]/g, '');
   if (!digits) return null;
-  const t = typeof text === 'string' ? text.trim() : '';
+  const t = typeof text === 'string' && text.trim() ? text.trimStart() : '';
   return t ? `https://wa.me/${digits}?text=${encodeURIComponent(t)}` : `https://wa.me/${digits}`;
 }
 
@@ -184,7 +184,9 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   // `subject: true` the message opens with the reader's place written in,
   // as the correction email does.
   const sms = ph?.link === 'sms';
-  const phoneBody = ph?.subject === true ? subject : null;
+  // A message has no subject line, so the place stands on a line of its own
+  // and the reader begins beneath it (O-319).
+  const phoneBody = ph?.subject === true && subject ? `${subject}\n` : null;
   const phoneHref = phoneText ? (sms ? smsHref(phoneText, phoneBody) : telHref(phoneText)) : null;
   const phone = phoneHref ? { href: phoneHref, text: phoneText, kind: sms ? 'sms' : 'tel' } : null;
   // `whatsapp: true` — the same number answers on WhatsApp (Howell
