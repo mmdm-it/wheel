@@ -1231,6 +1231,15 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // give way to it, as a book's name stands alone over its chapters. The
       // Bible's names carry none, and it reads as before.
       const chapterName = namesMap?.chapters?.[bookId]?.[chapterKey];
+      // AND WHERE THE VOLUME HAS A WORD FOR ITS CHAPTERS, THE BUTTON COUNTS
+      // THEM AND THE NAME GOES TO THE ROW BESIDE THE RING (O-320, Howell
+      // 2026-11-20, with "LESSON 26" drawn over the button and the lesson's
+      // name down the row by the globe): the reader is told which lesson by
+      // number where the way out is, and what it is about where the edition
+      // is named in the other volume. With no such word the name stands on
+      // the button as before.
+      const chapterWord = chapterName ? String(namesMap?.vocabulary?.chapter || '').trim() : '';
+      if (chapterWord) return `${cased(chapterWord)} ${chapterLabel}`;
       if (chapterName) return cased(chapterName);
       const bookName = cased(bookNameFor(bookId));
       return bookName ? `${bookName} ${chapterLabel}` : chapterLabel;
@@ -1444,7 +1453,13 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   };
   const getWatermark = (item) => {
     if (topLevel) {
-      if (topLevel !== 'chapter' || bibleMode !== topLevel || item?.level !== 'chapter') return '';
+      if (topLevel !== 'chapter') return '';
+      // On the declared top ring, the chapter in the lens; beneath it, the
+      // chapter the reader is inside, once the button counts it instead of
+      // naming it (O-320).
+      const onTop = bibleMode === topLevel && item?.level === 'chapter';
+      const inside = item?.level === 'verse' && Boolean(String(namesMap?.vocabulary?.chapter || '').trim());
+      if (!onTop && !inside) return '';
       const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || item.parentId || '');
       const key = item.meta?.chapterLabel ?? item.meta?.chapterKey;
       const name = namesMap?.chapters?.[bookId]?.[key];
@@ -1470,7 +1485,8 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const own = String(item.name ?? '').trim();
       const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || '');
       const named = Boolean(namesMap?.chapters?.[bookId]?.[item.meta?.chapterLabel]);
-      if (above && own) parts.push(named ? `${above}, ${own}` : `${above}:${own}`);
+      const leafWord = named ? String(namesMap?.vocabulary?.verse || '').trim() : '';
+      if (above && own) parts.push(named ? `${above}, ${leafWord ? `${leafWord} ` : ''}${own}` : `${above}:${own}`);
     }
     return parts.filter(Boolean).join(', ');
   };
@@ -1485,9 +1501,10 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     parentHandler,
     getWatermark,
     getPlaceLine,
-    // A lesson's name is centred on the row; an edition's ends at its foot,
-    // by the globe that changes it (O-318).
-    watermarkRest: topLevel ? 'middle' : 'foot',
+    // The name ends at the row's foot, by the globe (O-318), a lesson's as
+    // an edition's (O-320: drawn there by Howell), so it does not move when
+    // the reader drills from the lessons into one.
+    watermarkRest: 'foot',
     warmItem,
     childrenHandler,
     getParentLabel,

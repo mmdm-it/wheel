@@ -682,6 +682,18 @@ describe('the watermark names the chapter in the lens on a declared top ring (O-
     assert.equal(at('chapter', 'chapter').getWatermark({ level: 'chapter', meta: { bookId: 'B', chapterKey: '3' } }), '');
     assert.equal(at('verse', 'chapter').getWatermark(lesson), '');
   });
+  it('inside a lesson the row names it, once the button counts it instead (O-320)', () => {
+    const counted = bibleAdapter.createHandlers({
+      manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: { chapters: { B: { 26: 'Matrimony' } }, vocabulary: { chapter: 'Lesson', verse: 'Question' } },
+      options: { activeEdition: 'LAT', translation: 'LAT', level: 'verse', topLevel: 'chapter' }
+    });
+    const question = { level: 'verse', name: '287', meta: { bookId: 'B', chapterLabel: '26' } };
+    assert.equal(counted.getWatermark(question).toUpperCase(), 'MATRIMONY');
+    assert.equal(counted.getWatermark({ ...question, meta: { bookId: 'B', chapterLabel: '3' } }), '', 'a lesson with no name names nothing');
+    assert.equal(at('verse', 'chapter').getWatermark(question), '', 'with no word for a chapter the name stays on the button, not here');
+    assert.equal(counted.watermarkRest, 'foot');
+    assert.equal(counted.getPlaceLine(question), 'Lesson 26, Question 287', 'and a correction counts both');
+  });
 });
 
 // THE EDITION BEING READ IS NAMED BESIDE THE RING AT EVERY LEVEL (O-316), in
