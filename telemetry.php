@@ -15,7 +15,11 @@ $line = json_encode([
 ]);
 
 // public_html/mmdm/telemetry.php -> $HOME/wheel-probe.log (not web-accessible)
-$log = dirname(__DIR__, 2) . '/wheel-probe.log';
+// The account's HOME, read off this file's own path. Counting directories up
+// from here (as this did) lands inside a web root on one venue and outside
+// the account on another (O-322).
+$home = preg_match('#^(/home\d*/[^/]+)#', __DIR__, $m) ? $m[1] : dirname(__DIR__, 2);
+$log = $home . '/wheel-probe.log';
 $cap = 5 * 1024 * 1024;
 if (!file_exists($log) || filesize($log) < $cap) {
   file_put_contents($log, $line . "\n", FILE_APPEND | LOCK_EX);

@@ -1164,7 +1164,10 @@ volumeConfigs.bible.door = 'church';
 // The probe's drop box (telemetry.php on the production host). Deployment
 // layout is a literal like any other — it lives here, not in diagnostics.
 const PROBE_SINK = {
-  relative: '/mmdm/telemetry.php',
+  // Beside the page, wherever the page is served (O-322): the old absolute
+  // path named a directory that exists on none of today's three venues, so a
+  // report from the field went to a 404.
+  relative: 'telemetry.php',
   absolute: 'https://howellgibbens.com/mmdm/telemetry.php',
   lan: '/probe-drop' // the LAN dev server writes these to files (2026-07-27)
 };
