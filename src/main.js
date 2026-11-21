@@ -3401,7 +3401,21 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
         { translation, wrapAttempt, part });
     });
   }
-  if (wrapAttempt < 3 && typeof requestAnimationFrame === 'function') {
+  // AND THE WATCH OUTLIVES ITS OWN ATTEMPTS, AND A SLOW NETWORK (O-322).
+  // Howell, 2026-11-21, an iPhone in a browser whose cache he empties before
+  // every visit: the verse stood wrapped one word too long on three lines,
+  // running off the glass, and stayed that way. The phone's own report from
+  // a second load showed the same verse measured and painted correctly, so
+  // the wrap was honest for a face that was not yet the painted one, and
+  // nothing was still looking when the real face arrived. Two holes: the
+  // schedule below ended three seconds after the render, which a cold cache
+  // on a poor connection outlasts; and a render that had spent its three
+  // attempts set no watch at all. So the schedule now runs to half a minute,
+  // and an exhausted render keeps the two questions only the paint can
+  // answer (a line past its box, the first line's width moved), under one
+  // budget for the life of the page so nothing can loop.
+  const exhausted = wrapAttempt >= 3;
+  if ((!exhausted || lateWrapBudget > 0) && typeof requestAnimationFrame === 'function') {
     // AND THE WATCH OUTLASTS THE FRAME (O-121). Two frames is ~32ms and the
     // real face can reach layout hundreds of milliseconds later — which is
     // exactly the boot case, and exactly why rotating the ring "fixed" it:
@@ -3475,7 +3489,11 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       // This asks nothing about fonts. It compares a number to itself across
       // two frames. If it moved, the face moved under the layout and every
       // break in it is stale.
-      if (!overflows && !faceMarkDrifted() && !underfilled()) return false;
+      if (!overflows && !faceMarkDrifted() && (exhausted || !underfilled())) return false;
+      if (exhausted) {
+        if (lateWrapBudget <= 0) return false;
+        lateWrapBudget -= 1;
+      }
       invalidateVerseMeasurement();
       versePartsCache.clear(); // part counts derive from the measurement (O-84)
       // KEEPING THE HALF IT WAS DRAWING. The retry re-wraps the same text
@@ -3483,17 +3501,21 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       // silently snapped a reader on the second half back to the first, in a
       // repaint they never asked for and could not have attributed.
       renderDetail(selected, adapterInstance, manifest, adapterNormalized,
-        { translation, wrapAttempt: wrapAttempt + 1, part });
+        { translation, wrapAttempt: exhausted ? wrapAttempt : wrapAttempt + 1, part });
       return true;
     };
     requestAnimationFrame(() => requestAnimationFrame(() => {
       if (verify()) return;
-      for (const ms of [250, 750, 1500, 3000]) {
+      for (const ms of [250, 750, 1500, 3000, 6000, 12000, 20000, 30000]) {
         setTimeout(() => { if (seq === detailRenderSeq) verify(); }, ms);
       }
     }));
   }
 }
+
+// How many times a render past its attempts may still be re-laid because the
+// paint disagreed with it, for the life of the page (O-322).
+let lateWrapBudget = 8;
 
 let marginRenderSeq = 0;
 const seqOfMargin = () => ++marginRenderSeq;
