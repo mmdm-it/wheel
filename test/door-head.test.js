@@ -34,7 +34,7 @@ test('the public door\'s page introduces Biblia Catholica, not the catalog', () 
   assert.match(body, /<div id="desktop-gate" style="background: #d4a574"/, 'the card stands on the volume\'s sepia');
   assert.match(body, /<svg class="desktop-gate-qr"[^>]*>\s*<rect[^>]*fill="#d4a574"\/>/, 'and so does the code');
   assert.doesNotMatch(body, /fill="#fff"/);
-  assert.match(body, /<p class="desktop-gate-title">BIBLIA CATHOLICA<\/p>\s*<p class="desktop-gate-about">A free reader of the Bible and the Roman Catholic Catechism<\/p>/, 'what it is, under its name');
+  assert.match(body, /<p class="desktop-gate-title">BIBLIA CATHOLICA<\/p>\s*<p class="desktop-gate-about">A free reader of the Bible and the Roman Catholic catechism<\/p>/, 'what it is, under its name');
   assert.match(body, /<p class="desktop-gate-text">MADE FOR THE PHONE<\/p>/);
   assert.match(body, /<p class="desktop-gate-sub">Scan the code with your phone to open it<\/p>/);
   const script = /<script id="wheel:gate-words">([\s\S]*?)<\/script>/.exec(body);

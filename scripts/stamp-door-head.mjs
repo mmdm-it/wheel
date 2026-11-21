@@ -32,8 +32,10 @@ export const HEADS = {
       title: 'BIBLIA CATHOLICA',
       // What it is, before what to do (Howell 2026-11-20, asking whether
       // the card was too blunt for a first visitor at a desk; the line is
-      // his: "A free reader of the Bible and the Roman Catholic Catechism").
-      about: 'A free reader of the Bible and the Roman Catholic Catechism',
+      // his: "A free reader of the Bible and the Roman Catholic Catechism", the
+      // last word then set small at his word, so it names a kind of book and
+      // not the one modern Catechism, which the door does not carry).
+      about: 'A free reader of the Bible and the Roman Catholic catechism',
       text: 'MADE FOR THE PHONE',
       sub: 'Scan the code with your phone to open it',
       mail: 'info@bibliacatholica.com',
@@ -64,10 +66,10 @@ export const GATE_QR = '<svg class="desktop-gate-qr" xmlns="http://www.w3.org/20
 // this table knows. The name is the name in every tongue. [what it is,
 // made for the phone, scan to open it, right-to-left]. Drafts for Howell's veto.
 export const GATE_WORDS = {
-  it: ['Un lettore gratuito della Bibbia e del Catechismo cattolico romano', 'FATTO PER IL TELEFONO', 'Inquadra il codice con il telefono per aprirlo'],
-  fr: ['Un lecteur gratuit de la Bible et du Catéchisme catholique romain', 'CONÇU POUR LE TÉLÉPHONE', 'Scannez le code avec votre téléphone pour l’ouvrir'],
-  es: ['Un lector gratuito de la Biblia y del Catecismo católico romano', 'HECHO PARA EL TELÉFONO', 'Escanea el código con tu teléfono para abrirlo'],
-  pt: ['Um leitor gratuito da Bíblia e do Catecismo católico romano', 'FEITO PARA O TELEFONE', 'Leia o código com o telefone para o abrir'],
+  it: ['Un lettore gratuito della Bibbia e del catechismo cattolico romano', 'FATTO PER IL TELEFONO', 'Inquadra il codice con il telefono per aprirlo'],
+  fr: ['Un lecteur gratuit de la Bible et du catéchisme catholique romain', 'CONÇU POUR LE TÉLÉPHONE', 'Scannez le code avec votre téléphone pour l’ouvrir'],
+  es: ['Un lector gratuito de la Biblia y del catecismo católico romano', 'HECHO PARA EL TELÉFONO', 'Escanea el código con tu teléfono para abrirlo'],
+  pt: ['Um leitor gratuito da Bíblia e do catecismo católico romano', 'FEITO PARA O TELEFONE', 'Leia o código com o telefone para o abrir'],
   de: ['Ein kostenloses Leseprogramm für die Bibel und den römisch-katholischen Katechismus', 'FÜR DAS HANDY GEMACHT', 'Scannen Sie den Code mit Ihrem Handy, um es zu öffnen'],
   fi: ['Maksuton Raamatun ja roomalaiskatolisen katekismuksen lukusovellus', 'TEHTY PUHELIMELLE', 'Avaa se skannaamalla koodi puhelimellasi'],
   sv: ['En kostnadsfri läsare för Bibeln och den romersk-katolska katekesen', 'GJORD FÖR MOBILEN', 'Skanna koden med mobilen för att öppna den'],
@@ -76,9 +78,9 @@ export const GATE_WORDS = {
   pl: ['Bezpłatna aplikacja do czytania Biblii i katechizmu rzymskokatolickiego', 'STWORZONA Z MYŚLĄ O TELEFONIE', 'Zeskanuj kod telefonem, aby ją otworzyć'],
   hr: ['Besplatan čitač Biblije i rimokatoličkog katekizma', 'NAPRAVLJEN ZA MOBITEL', 'Skenirajte kôd mobitelom da ga otvorite'],
   hu: ['Ingyenes olvasó a Bibliához és a római katolikus katekizmushoz', 'TELEFONRA KÉSZÜLT', 'A megnyitásához olvassa be a kódot a telefonjával'],
-  el: ['Δωρεάν εφαρμογή ανάγνωσης της Βίβλου και της Ρωμαιοκαθολικής Κατήχησης', 'ΦΤΙΑΓΜΕΝΗ ΓΙΑ ΤΟ ΚΙΝΗΤΟ', 'Σαρώστε τον κωδικό με το κινητό σας για να την ανοίξετε'],
-  tr: ['Kutsal Kitap ve Roma Katolik İlmihali için ücretsiz bir okuyucu', 'TELEFON İÇİN YAPILDI', 'Açmak için kodu telefonunuzla tarayın'],
-  tl: ['Isang libreng pambasa ng Bibliya at ng Katesismong Katoliko Romano', 'GINAWA PARA SA TELEPONO', 'I-scan ang code gamit ang iyong telepono upang buksan ito'],
+  el: ['Δωρεάν εφαρμογή ανάγνωσης της Βίβλου και της ρωμαιοκαθολικής κατήχησης', 'ΦΤΙΑΓΜΕΝΗ ΓΙΑ ΤΟ ΚΙΝΗΤΟ', 'Σαρώστε τον κωδικό με το κινητό σας για να την ανοίξετε'],
+  tr: ['Kutsal Kitap ve Roma Katolik ilmihali için ücretsiz bir okuyucu', 'TELEFON İÇİN YAPILDI', 'Açmak için kodu telefonunuzla tarayın'],
+  tl: ['Isang libreng pambasa ng Bibliya at ng katesismong Katoliko Romano', 'GINAWA PARA SA TELEPONO', 'I-scan ang code gamit ang iyong telepono upang buksan ito'],
   ar: ['قارئ مجاني للكتاب المقدس والتعليم المسيحي للكنيسة الرومانية الكاثوليكية', 'مصمَّم للهاتف', 'امسح الرمز بهاتفك لفتحه', 1],
   he: ['קורא חינמי של כתבי הקודש ושל הקטכיזם הרומי-קתולי', 'נבנה לטלפון', 'סרקו את הקוד בטלפון כדי לפתוח אותו', 1]
 };
