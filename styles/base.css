@@ -1308,6 +1308,21 @@ svg :focus-visible {
   overflow: hidden;
 }
 
+/* THE VOLUME'S STAMP ACROSS AN EDITION'S TEXT (O-325): red, slantwise, over the
+   lines and light enough to read through. Placed and sized by the engine. */
+#edition-stamp {
+  position: absolute;
+  display: none;
+  white-space: nowrap;
+  pointer-events: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: rgba(196, 30, 30, 0.6);
+  z-index: 2;
+}
+
 /* Individual arc-positioned text lines */
 .detail-text-line {
   display: block;

@@ -843,6 +843,7 @@ let searchScopedCorpus = [];    // the active subset: leaves under the ring the 
 let searchOpeningAllowed = null;// characters the opening ring is pruned to when scoped (any position)
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
+let editionStampWords = null;   // O-325: the volume's words for an edition it stamps, per tongue
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
 let sealUrl = null;   // W-301: the volume's seal, drawn at the foot of the glass on the left; null for a volume without one
 let sealEl = null;
@@ -3272,6 +3273,50 @@ window.addEventListener('detail-sector-change', (e) => {
 });
 
 let detailRenderSeq = 0; // stale-verify guard: each render invalidates pending checks
+// AN EDITION THE VOLUME STAMPS WEARS THE STAMP ACROSS ITS TEXT (O-325, Howell
+// 2026-11-21, with the words drawn in red, slantwise, over a verse: "brand
+// [them] clearly"). Which editions, and the words in each tongue, are the
+// volume's (`stamp: true` on the edition, `edition_stamp` in display_config;
+// the engine holds no human words, O-43). The stamp speaks the tongue of the
+// edition it is on, so a previewed edition is stamped in its own. It lives in
+// the text's panel, so it recedes, blurs and fades with the text; it is laid
+// over the lines actually drawn, corner to corner, and an empty page wears
+// none.
+let editionStampEl = null;
+function updateEditionStamp(translation) {
+  if (!detailPanel || !detailContent || typeof document === 'undefined') return;
+  const hide = () => { if (editionStampEl) editionStampEl.style.display = 'none'; };
+  const edition = translation ? (currentManifest?.__wallVolume?.editions || []).find(e => e?.code === translation) : null;
+  const table = editionStampWords;
+  const word = edition?.stamp === true && table
+    ? String(typeof table === 'string' ? table : (table[edition.language] ?? table.default ?? '')) : '';
+  const lines = word ? Array.from(detailContent.querySelectorAll('.detail-text-line')) : [];
+  if (!word || !lines.length) { hide(); return; }
+  // The lines' own layout boxes, in the panel's coordinates: offsets are the
+  // panel's whatever scale the stack wears (O-246).
+  let l = Infinity, t = Infinity, r = -Infinity, b = -Infinity;
+  for (const el of lines) {
+    const x = el.offsetLeft, y = el.offsetTop;
+    l = Math.min(l, x); t = Math.min(t, y); r = Math.max(r, x + el.offsetWidth); b = Math.max(b, y + el.offsetHeight);
+  }
+  const w = r - l, h = b - t;
+  if (!(w > 0 && h > 0)) { hide(); return; }
+  if (!editionStampEl) {
+    editionStampEl = document.createElement('div');
+    editionStampEl.id = 'edition-stamp';
+    editionStampEl.setAttribute('aria-hidden', 'true');
+    detailPanel.appendChild(editionStampEl);
+  }
+  const deg = Math.max(18, Math.min(38, Math.atan2(h, w) * 180 / Math.PI * 0.85));
+  const run = Math.hypot(w, h * 0.85) * 0.9;
+  const px = Math.max(14, Math.min(viewport.SSd * 0.11, run / (Math.max(4, [...word].length) * 0.78)));
+  editionStampEl.textContent = word;
+  editionStampEl.style.left = `${(l + w / 2).toFixed(1)}px`;
+  editionStampEl.style.top = `${(t + h / 2).toFixed(1)}px`;
+  editionStampEl.style.fontSize = `${px.toFixed(1)}px`;
+  editionStampEl.style.transform = `translate(-50%, -50%) rotate(${(-deg).toFixed(1)}deg)`;
+  editionStampEl.style.display = 'block';
+}
 // AN EMPTY PAGE (O-323): the seat under the lens has nothing to read here, so
 // the sector is cleared, with any margin, and every pending check of the text
 // that stood there is cancelled.
@@ -3279,6 +3324,7 @@ function blankDetail() {
   if (!detailContent) return;
   detailRenderSeq += 1;
   while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
+  updateEditionStamp(null);
   renderMargin(null, null, seqOfMargin());
 }
 // Whether the page behind the glass is standing empty under a hollow seat's
@@ -3296,6 +3342,7 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   }
   window.__wheelTapTrace?.push({ ev: 'render-detail', lvl: selected?.level || '?', tr: translation || '' });
   while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
+  updateEditionStamp(null);   // nothing drawn yet: no stamp until there are lines to lay it over
   if (!selected) return;
 
   const payload = adapterInstance?.detailFor
@@ -3363,6 +3410,7 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
   window.__wheelVerseBounds = renderBounds; // probe's verse-wrap autopsy reads this (?probe=1)
   const node = plugin.render(payload, renderBounds, { createElement: tag => document.createElement(tag) });
   if (node) detailContent.appendChild(node);
+  updateEditionStamp(translation);
   // THE PAINT IS THE TRUTH FOR THE PART COUNT TOO (Howell, 2026-09-14, the
   // English Esther 8:9 "appears to be truncated... It's not a split verse").
   // It was: the layout drew the first of two halves, but the ring's cached
@@ -5055,6 +5103,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
   reviewMarkWords = root?.display_config?.review_mark || null;
+  editionStampWords = root?.display_config?.edition_stamp || null;   // O-325
   // THE SEAL (W-301): a volume may declare a small drawing that stands fixed
   // at the foot of the glass on the left, on every page, doing nothing — the
   // mirror of the emblem in its sector upper right. Its file is the volume's,
