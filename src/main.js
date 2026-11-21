@@ -1889,6 +1889,9 @@ function beginGlide(fromFront, toFront, { lens = null } = {}) {
   strataPreview = null;
   lastPreviewKey = null;
   previewTextMuted = false;
+  // A page left empty under a hollow seat's name (O-323) is no preview a
+  // commit will replace: the reading comes back before the floors move.
+  if (hollowPreviewShown) previewPrimary({ edition: null });
   if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
   if (strataHit) strataHit.style.pointerEvents = 'none';
   const from = layerStates(fromFront);
@@ -3241,6 +3244,18 @@ window.addEventListener('detail-sector-change', (e) => {
 });
 
 let detailRenderSeq = 0; // stale-verify guard: each render invalidates pending checks
+// AN EMPTY PAGE (O-323): the seat under the lens has nothing to read here, so
+// the sector is cleared, with any margin, and every pending check of the text
+// that stood there is cancelled.
+function blankDetail() {
+  if (!detailContent) return;
+  detailRenderSeq += 1;
+  while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
+  renderMargin(null, null, seqOfMargin());
+}
+// Whether the page behind the glass is standing empty under a hollow seat's
+// name, so a truck begun from that seat knows to bring the reading back.
+let hollowPreviewShown = false;
 function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation, wrapAttempt = 0, part } = {}) {
   if (!detailPanel || !detailContent) return;
   // Only the leaf is described here. Note this returns WITHOUT clearing:
@@ -5564,6 +5579,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // preview edition would send every later name through a crossing that is
     // no longer happening (O-94).
     options.previewEdition = null;
+    options.previewHollow = null;
+    hollowPreviewShown = false;
     // THE READER IS CARRIED ACROSS, NOT LEFT BEHIND. Once whatever the volume
     // needs has landed, give it the chance to RE-SEAT: the reader is standing
     // on a particular thing, and a volume whose editions divide their contents
@@ -5601,6 +5618,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // immediately (harmless re-render) if the face was already loaded.
   onVerseFontReady(() => {
     versePartsCache.clear(); // the real serif re-measures everything (O-84)
+    if (options?.previewHollow) return;   // a page standing empty stays empty (O-323)
     renderDetail(
       app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
       { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
@@ -5619,8 +5637,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       // In the edition the reader is PREVIEWING, if one is under the lens
       // (O-228): the text that lands during a turn is the previewed
       // edition's, and painting it in the committed one would undo the turn.
-      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized,
-        { translation: options?.previewEdition || activeTranslation(), part: app?.getVersePart?.() ?? 0 })
+      // And not at all over a page standing empty under a hollow seat (O-323).
+      renderDetail: item => { if (options?.previewHollow) return; renderDetail(item, adapter, manifest, adapterNormalized,
+        { translation: options?.previewEdition || activeTranslation(), part: app?.getVersePart?.() ?? 0 }); }
     });
   }
   if (!interactionsWired) {
@@ -5653,15 +5672,61 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       // stale preview to clear. Now it clears it: names, pyramid and text
       // return to the committed edition, exactly as the settle would leave
       // them. Nothing to clear, nothing repainted.
-      if (!options.previewEdition) return;
+      //
+      // AND THE PAGE STANDS EMPTY UNDER THE SEAT'S OWN NAME (O-323, Howell
+      // 2026-11-21: "Empty nodes should present blank verses and an empty
+      // Detail Sector (other than the watermark)"). Returning the committed
+      // reading here made five hollow seats in a row show the edition the
+      // boot film ends on, which read as the film knowing its own ending.
+      // The NAMES still return to the committed edition, as above; only the
+      // verse is withheld, and the watermark says whose seat this is. A call
+      // that names neither an edition nor a tongue is the turn's end asking
+      // for the reading back, and gets it.
+      const hollowKey = edition && edition !== dimensionBridge.comingSoonKey ? edition
+        : (preview.language ? (dimensionBridge.translationsOf(preview.language) || []).find(k => k && k !== dimensionBridge.comingSoonKey) || '' : null);
+      const wasHollow = Boolean(options.previewHollow);
+      if (hollowKey === null) {
+        if (!options.previewEdition && !wasHollow) return;
+      }
+      const hadPreview = Boolean(options.previewEdition);
       options.previewEdition = null;
-      refreshNamesMap();
+      options.previewHollow = hollowKey === null ? null
+        : { name: hollowKey ? (dimensionBridge.translationName(hollowKey, preview.language || null) || '') : '' };
+      hollowPreviewShown = Boolean(options.previewHollow);
+      if (hadPreview) refreshNamesMap();
       if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
       if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
-      renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      // A SEAT THAT IS HOLLOW ONLY BECAUSE ITS EDITION IS STILL ARRIVING is
+      // asked for now, and shown the moment it lands if the lens has not
+      // moved on: at boot the shelves are still stocking while the film
+      // turns, and a finger can rest on such a seat.
+      // A passing TONGUE asks for every edition it has on the way, and shows
+      // the first that seats the reader's place, which need not be the first
+      // on its shelf (the Greek of a Gospel is not the Septuagint).
+      const shelf = currentManifest?.__wallVolume;
+      const declared = code => Boolean(code) && (shelf?.editions || []).some(e => e?.code === code);
+      const ofTongue = !edition && preview.language ? (dimensionBridge.translationsOf(preview.language) || []) : [];
+      const waiting = (ofTongue.length ? ofTongue : [hollowKey])
+        .filter(k => k && dimensionBridge.isComing?.(k)).map(k => dimensionBridge.editionOfKey?.(k)).filter(declared);
+      if (waiting.length && typeof shelf?.ready === 'function') {
+        const mine = options.previewHollow;
+        for (const code of waiting) {
+          Promise.resolve((shelf.wake || shelf.ready).call(shelf, code)).then(() => {
+            if (options.previewHollow !== mine) return;
+            if (!ofTongue.length) { previewPrimary({ language: preview.language, edition: code }); return; }
+            const now = dimensionBridge.translationsOf(preview.language) || [];
+            const best = now.find(k => !dimensionBridge.isComing?.(k) && !dimensionBridge.isElsewhere?.(k));
+            if (best) previewPrimary({ language: preview.language, edition: best });
+          }, () => {});
+        }
+      }
+      if (options.previewHollow) blankDetail();
+      else renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
         { translation: activeTranslation(), part: 0 });
       return;
     }
+    options.previewHollow = null;
+    hollowPreviewShown = false;
     // A preview of an edition still arriving (O-175) waits for it, then
     // shows it — unless the finger has moved on to another by then.
     const vol = currentManifest?.__wallVolume;
@@ -5749,7 +5814,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         turnEnd: () => {
           if (previewFollow) { cancelAnimationFrame(previewFollow); previewFollow = 0; }
           strataPreview = null; lastPreviewKey = null; previewTextMuted = false;
-          if (options.previewEdition && options.previewEdition !== activeTranslation()) previewPrimary({ edition: null });
+          if ((options.previewEdition && options.previewEdition !== activeTranslation()) || options.previewHollow) previewPrimary({ edition: null });
           else options.previewEdition = null;
         },
         // The globe rides the migration as it rides a drag (Howell

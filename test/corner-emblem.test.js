@@ -709,6 +709,21 @@ describe('the watermark names the edition at every level of a volume with no dec
       assert.equal(at(level, null).getWatermark({ level, meta: { bookId: 'B', chapterKey: '26' } }).toUpperCase(), 'VULGATA', level);
     }
   });
+  it('while a ring turns, the edition under the lens names itself; a hollow seat names itself over an empty page (O-323)', () => {
+    const turning = extra => bibleAdapter.createHandlers({
+      manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: {},
+      translationsMeta: { translations: { LAT: { nativeName: 'Vulgata' }, ENG: { nativeName: 'Douay-Rheims' } } },
+      options: { activeEdition: 'LAT', translation: 'LAT', level: 'verse', topLevel: null, ...extra }
+    });
+    const verse = { level: 'verse', meta: { bookId: 'B', chapterKey: '26' } };
+    assert.equal(turning({ previewEdition: 'ENG' }).getWatermark(verse).toUpperCase(), 'DOUAY-RHEIMS');
+    assert.equal(turning({ previewHollow: { name: 'Westminster' } }).getWatermark(verse).toUpperCase(), 'WESTMINSTER');
+    assert.equal(turning({ previewHollow: { name: '' } }).getWatermark(verse), '', 'a seat with no name names nothing, never the committed edition');
+    assert.equal(turning({ previewEdition: 'ENG', previewHollow: { name: 'Westminster' } }).getWatermark(verse).toUpperCase(), 'WESTMINSTER');
+    assert.equal(turning({}).getWatermark(verse).toUpperCase(), 'VULGATA', 'at rest, the edition being read');
+    // The reader's place in a correction is never the previewed edition's.
+    assert.match(turning({ previewEdition: 'ENG' }).getPlaceLine(verse, { leaf: false }), /^Vulgata/);
+  });
   it('an edition with only its full title names nothing rather than run off the row', () => {
     assert.equal(at('book', null, 'LONG').getWatermark({ level: 'book' }), '');
   });

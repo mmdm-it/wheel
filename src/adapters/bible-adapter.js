@@ -1451,6 +1451,22 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     const name = edition?.nativeName || edition?.name || '';
     return name && [...name].length <= 32 ? name : '';
   };
+  // THE EDITION UNDER THE LENS, WHILE A RING IS TURNING (O-323, Howell
+  // 2026-11-21, of the boot film passing eight editions over a page that
+  // named the last of them throughout: it "seems rather predictive"). A
+  // previewed edition names itself; a seat with nothing to read here names
+  // itself too, over an empty page, under the name its seat wears.
+  const watermarkEditionName = () => {
+    const hollow = options?.previewHollow;
+    if (hollow) {
+      const name = String(hollow.name || '');
+      return name && [...name].length <= 32 ? name : '';
+    }
+    const code = options?.previewEdition || null;
+    const edition = code ? translationsMeta?.translations?.[code] : null;
+    const name = edition?.nativeName || edition?.name || '';
+    return name && [...name].length <= 32 ? name : editionName();
+  };
   const getWatermark = (item) => {
     if (topLevel) {
       if (topLevel !== 'chapter') return '';
@@ -1465,7 +1481,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const name = namesMap?.chapters?.[bookId]?.[key];
       return name ? toDisplayCase(name) : '';
     }
-    const name = editionName();
+    const name = watermarkEditionName();
     return name ? toDisplayCase(name) : '';
   };
   // THE READER'S PLACE IN THE READER'S OWN WORDS (O-319, Howell 2026-11-20,
