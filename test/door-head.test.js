@@ -6,7 +6,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { stampHead, HEADS } from '../scripts/stamp-door-head.mjs';
+import { stampHead, HEADS, GATE_WORDS } from '../scripts/stamp-door-head.mjs';
 
 const read = p => readFileSync(new URL('../' + p, import.meta.url), 'utf8');
 
@@ -34,20 +34,24 @@ test('the public door\'s page introduces Biblia Catholica, not the catalog', () 
   assert.match(body, /<div id="desktop-gate" style="background: #d4a574"/, 'the card stands on the volume\'s sepia');
   assert.match(body, /<svg class="desktop-gate-qr"[^>]*>\s*<rect[^>]*fill="#d4a574"\/>/, 'and so does the code');
   assert.doesNotMatch(body, /fill="#fff"/);
-  assert.match(body, /<p class="desktop-gate-sub">Scan the code with your phone to continue<\/p>/);
+  assert.match(body, /<p class="desktop-gate-title">BIBLIA CATHOLICA<\/p>\s*<p class="desktop-gate-about">A free reader of the Bible and the Roman Catholic Catechism<\/p>/, 'what it is, under its name');
+  assert.match(body, /<p class="desktop-gate-text">MADE FOR THE PHONE<\/p>/);
+  assert.match(body, /<p class="desktop-gate-sub">Scan the code with your phone to open it<\/p>/);
   const script = /<script id="wheel:gate-words">([\s\S]*?)<\/script>/.exec(body);
   assert.ok(script && body.indexOf(script[0]) > body.indexOf('desktop-gate-mail'), 'the words follow the gate they change');
   const say = languages => {
     const node = () => ({ textContent: '', attrs: {}, setAttribute(k, v) { this.attrs[k] = v; } });
-    const text = node(), sub = node(), gate = { ...node(), querySelector: sel => (sel === '.desktop-gate-text' ? text : sub) };
+    const about = node(), text = node(), sub = node();
+    const gate = { ...node(), querySelector: sel => ({ '.desktop-gate-about': about, '.desktop-gate-text': text, '.desktop-gate-sub': sub })[sel] };
     new Function('navigator', 'document', script[1])({ languages }, { getElementById: () => gate });
-    return [text.textContent, sub.textContent, text.attrs.dir || ''];
+    return [about.textContent, text.textContent, sub.textContent, about.attrs.dir || ''];
   };
-  assert.deepEqual(say(['fi-FI', 'en']), ['BIBLIA CATHOLICA ON TEHTY PUHELIMELLE', 'Jatka skannaamalla koodi puhelimellasi', '']);
-  assert.deepEqual(say(['en-US', 'fi']), ['', '', ''], 'English first keeps the page\'s own words');
-  assert.deepEqual(say(['ja', 'it-IT']), ['BIBLIA CATHOLICA È FATTA PER IL TELEFONO', 'Inquadra il codice con il telefono per continuare', ''], 'the first language the table knows');
-  assert.equal(say(['ar'])[2], 'rtl');
-  assert.deepEqual(say(['ja']), ['', '', ''], 'an unknown tongue keeps the English');
+  assert.deepEqual(say(['fi-FI', 'en']), ['Maksuton Raamatun ja roomalaiskatolisen katekismuksen lukusovellus', 'TEHTY PUHELIMELLE', 'Avaa se skannaamalla koodi puhelimellasi', '']);
+  assert.deepEqual(say(['en-US', 'fi']), ['', '', '', ''], 'English first keeps the page\'s own words');
+  assert.equal(say(['ja', 'it-IT'])[1], 'FATTO PER IL TELEFONO', 'the first language the table knows');
+  assert.equal(say(['ar'])[3], 'rtl');
+  assert.deepEqual(say(['ja']), ['', '', '', ''], 'an unknown tongue keeps the English');
+  for (const [k, w] of Object.entries(GATE_WORDS)) assert.ok(w.slice(0, 3).every(x => typeof x === 'string' && x.length > 5), `${k} says all three lines`);
   assert.doesNotMatch(body, /Meccanismi|MMdM|collettor|mmdm\.it|Tutti i diritti/);
   assert.match(body, /<div id="copyright-notice" class="copyright-notice" aria-label="Copyright"><\/div>/);
 });

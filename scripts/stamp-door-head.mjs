@@ -30,8 +30,12 @@ export const HEADS = {
     noscript: '<h1>Biblia Catholica</h1>\n    <p>A free reader of the Bible in Hebrew, Greek, Latin and the languages of the world. Made for the phone. No advertising.</p>',
     gate: {
       title: 'BIBLIA CATHOLICA',
-      text: 'BIBLIA CATHOLICA IS MADE FOR THE PHONE',
-      sub: 'Scan the code with your phone to continue',
+      // What it is, before what to do (Howell 2026-11-20, asking whether
+      // the card was too blunt for a first visitor at a desk; the line is
+      // his: "A free reader of the Bible and the Roman Catholic Catechism").
+      about: 'A free reader of the Bible and the Roman Catholic Catechism',
+      text: 'MADE FOR THE PHONE',
+      sub: 'Scan the code with your phone to open it',
       mail: 'info@bibliacatholica.com',
       // The volume's own ground, the page's `wheel:ground` sepia, under the
       // card and under the code alike (Howell 2026-11-20, seeing the first
@@ -57,26 +61,26 @@ export const GATE_QR = '<svg class="desktop-gate-qr" xmlns="http://www.w3.org/20
 // it was English alone). The page's static words stay English, for a
 // crawler and a browser with no script; a few lines of script beside the
 // gate then say the two lines in the first of the browser's languages
-// this table knows. The name is the name in every tongue. [made for the
-// phone, scan to continue, right-to-left]. Drafts for Howell's veto.
+// this table knows. The name is the name in every tongue. [what it is,
+// made for the phone, scan to open it, right-to-left]. Drafts for Howell's veto.
 export const GATE_WORDS = {
-  it: ['BIBLIA CATHOLICA È FATTA PER IL TELEFONO', 'Inquadra il codice con il telefono per continuare'],
-  fr: ['BIBLIA CATHOLICA EST CONÇUE POUR LE TÉLÉPHONE', 'Scannez le code avec votre téléphone pour continuer'],
-  es: ['BIBLIA CATHOLICA ESTÁ HECHA PARA EL TELÉFONO', 'Escanea el código con tu teléfono para continuar'],
-  pt: ['BIBLIA CATHOLICA É FEITA PARA O TELEFONE', 'Leia o código com o telefone para continuar'],
-  de: ['BIBLIA CATHOLICA IST FÜR DAS HANDY GEMACHT', 'Scannen Sie den Code mit Ihrem Handy, um fortzufahren'],
-  fi: ['BIBLIA CATHOLICA ON TEHTY PUHELIMELLE', 'Jatka skannaamalla koodi puhelimellasi'],
-  sv: ['BIBLIA CATHOLICA ÄR GJORD FÖR MOBILEN', 'Skanna koden med mobilen för att fortsätta'],
-  ru: ['BIBLIA CATHOLICA СОЗДАНА ДЛЯ ТЕЛЕФОНА', 'Отсканируйте код телефоном, чтобы продолжить'],
-  uk: ['BIBLIA CATHOLICA СТВОРЕНА ДЛЯ ТЕЛЕФОНУ', 'Відскануйте код телефоном, щоб продовжити'],
-  pl: ['BIBLIA CATHOLICA POWSTAŁA Z MYŚLĄ O TELEFONIE', 'Zeskanuj kod telefonem, aby kontynuować'],
-  hr: ['BIBLIA CATHOLICA NAPRAVLJENA JE ZA MOBITEL', 'Skenirajte kôd mobitelom za nastavak'],
-  hu: ['A BIBLIA CATHOLICA TELEFONRA KÉSZÜLT', 'A folytatáshoz olvassa be a kódot a telefonjával'],
-  el: ['Η BIBLIA CATHOLICA ΕΙΝΑΙ ΦΤΙΑΓΜΕΝΗ ΓΙΑ ΤΟ ΚΙΝΗΤΟ', 'Σαρώστε τον κωδικό με το κινητό σας για να συνεχίσετε'],
-  tr: ['BIBLIA CATHOLICA TELEFON İÇİN YAPILDI', 'Devam etmek için kodu telefonunuzla tarayın'],
-  tl: ['ANG BIBLIA CATHOLICA AY GINAWA PARA SA TELEPONO', 'I-scan ang code gamit ang iyong telepono upang magpatuloy'],
-  ar: ['Biblia Catholica مصمَّم للهاتف', 'امسح الرمز بهاتفك للمتابعة', 1],
-  he: ['Biblia Catholica נבנתה לטלפון', 'סרקו את הקוד בטלפון כדי להמשיך', 1]
+  it: ['Un lettore gratuito della Bibbia e del Catechismo cattolico romano', 'FATTO PER IL TELEFONO', 'Inquadra il codice con il telefono per aprirlo'],
+  fr: ['Un lecteur gratuit de la Bible et du Catéchisme catholique romain', 'CONÇU POUR LE TÉLÉPHONE', 'Scannez le code avec votre téléphone pour l’ouvrir'],
+  es: ['Un lector gratuito de la Biblia y del Catecismo católico romano', 'HECHO PARA EL TELÉFONO', 'Escanea el código con tu teléfono para abrirlo'],
+  pt: ['Um leitor gratuito da Bíblia e do Catecismo católico romano', 'FEITO PARA O TELEFONE', 'Leia o código com o telefone para o abrir'],
+  de: ['Ein kostenloses Leseprogramm für die Bibel und den römisch-katholischen Katechismus', 'FÜR DAS HANDY GEMACHT', 'Scannen Sie den Code mit Ihrem Handy, um es zu öffnen'],
+  fi: ['Maksuton Raamatun ja roomalaiskatolisen katekismuksen lukusovellus', 'TEHTY PUHELIMELLE', 'Avaa se skannaamalla koodi puhelimellasi'],
+  sv: ['En kostnadsfri läsare för Bibeln och den romersk-katolska katekesen', 'GJORD FÖR MOBILEN', 'Skanna koden med mobilen för att öppna den'],
+  ru: ['Бесплатное приложение для чтения Библии и римско-католического катехизиса', 'СОЗДАНО ДЛЯ ТЕЛЕФОНА', 'Отсканируйте код телефоном, чтобы открыть его'],
+  uk: ['Безкоштовний застосунок для читання Біблії та римо-католицького катехизму', 'СТВОРЕНО ДЛЯ ТЕЛЕФОНУ', 'Відскануйте код телефоном, щоб відкрити його'],
+  pl: ['Bezpłatna aplikacja do czytania Biblii i katechizmu rzymskokatolickiego', 'STWORZONA Z MYŚLĄ O TELEFONIE', 'Zeskanuj kod telefonem, aby ją otworzyć'],
+  hr: ['Besplatan čitač Biblije i rimokatoličkog katekizma', 'NAPRAVLJEN ZA MOBITEL', 'Skenirajte kôd mobitelom da ga otvorite'],
+  hu: ['Ingyenes olvasó a Bibliához és a római katolikus katekizmushoz', 'TELEFONRA KÉSZÜLT', 'A megnyitásához olvassa be a kódot a telefonjával'],
+  el: ['Δωρεάν εφαρμογή ανάγνωσης της Βίβλου και της Ρωμαιοκαθολικής Κατήχησης', 'ΦΤΙΑΓΜΕΝΗ ΓΙΑ ΤΟ ΚΙΝΗΤΟ', 'Σαρώστε τον κωδικό με το κινητό σας για να την ανοίξετε'],
+  tr: ['Kutsal Kitap ve Roma Katolik İlmihali için ücretsiz bir okuyucu', 'TELEFON İÇİN YAPILDI', 'Açmak için kodu telefonunuzla tarayın'],
+  tl: ['Isang libreng pambasa ng Bibliya at ng Katesismong Katoliko Romano', 'GINAWA PARA SA TELEPONO', 'I-scan ang code gamit ang iyong telepono upang buksan ito'],
+  ar: ['قارئ مجاني للكتاب المقدس والتعليم المسيحي للكنيسة الرومانية الكاثوليكية', 'مصمَّم للهاتف', 'امسح الرمز بهاتفك لفتحه', 1],
+  he: ['קורא חינמי של כתבי הקודש ושל הקטכיזם הרומי-קתולי', 'נבנה לטלפון', 'סרקו את הקוד בטלפון כדי לפתוח אותו', 1]
 };
 // English is the page's own; a visitor whose first language it is keeps it.
 export const gateScript = words => `<script id="wheel:gate-words">(function () {
@@ -88,10 +92,13 @@ export const gateScript = words => `<script id="wheel:gate-words">(function () {
         if (k === 'en') return;
         if (!w) continue;
         var g = document.getElementById('desktop-gate');
-        g.querySelector('.desktop-gate-text').textContent = w[0];
-        g.querySelector('.desktop-gate-sub').textContent = w[1];
+        var lines = ['.desktop-gate-about', '.desktop-gate-text', '.desktop-gate-sub'];
+        for (var n = 0; n < lines.length; n++) {
+          var el = g.querySelector(lines[n]);
+          el.textContent = w[n];
+          if (w[3]) el.setAttribute('dir', 'rtl');
+        }
         g.setAttribute('lang', k);
-        if (w[2]) { g.querySelector('.desktop-gate-text').setAttribute('dir', 'rtl'); g.querySelector('.desktop-gate-sub').setAttribute('dir', 'rtl'); }
         return;
       }
     } catch (_) { /* the English stands */ }
@@ -108,7 +115,7 @@ export function stampHead(html, door) {
   const out = html
     .replace(/<noscript>[\s\S]*?<\/noscript>/, `<noscript>\n    ${h.noscript}\n  </noscript>`)
     .replace(/(<div id="copyright-notice"[^>]*>)[\s\S]*?(<\/div>)/, '$1$2')
-    .replace(/<p class="desktop-gate-title">[^<]*<\/p>/, `<p class="desktop-gate-title">${h.gate.title}</p>`)
+    .replace(/<p class="desktop-gate-title">[^<]*<\/p>/, `<p class="desktop-gate-title">${h.gate.title}</p>\n    <p class="desktop-gate-about">${h.gate.about}</p>`)
     .replace(/<img class="desktop-gate-qr"[^>]*\/>/, () => GATE_QR.replace('fill="#fff"', `fill="${h.gate.ground}"`))
     .replace(/<div id="desktop-gate"/, `<div id="desktop-gate" style="background: ${h.gate.ground}"`)
     .replace(/<p class="desktop-gate-text">[^<]*<\/p>/, `<p class="desktop-gate-text">${h.gate.text}</p>`)

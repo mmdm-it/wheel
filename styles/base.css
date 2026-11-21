@@ -423,6 +423,16 @@ svg :focus-visible {
     letter-spacing: 0.1em;
     max-width: 90vw;
   }
+  /* What the door is, in one line under its name (O-321): only a door
+     whose stamped page carries the line has one. Drawn up under the name,
+     whose own margin keeps the code clear below. */
+  #desktop-gate .desktop-gate-about {
+    margin: -30px 0 20px;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+    max-width: 90vw;
+  }
   /* Case is set in the markup, never transformed: the mark is "MMdM",
      and "delle" rides lowercase inside the full name. */
   #desktop-gate .desktop-gate-text {
