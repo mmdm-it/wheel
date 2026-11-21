@@ -32,7 +32,13 @@ export const HEADS = {
       title: 'BIBLIA CATHOLICA',
       text: 'BIBLIA CATHOLICA IS MADE FOR THE PHONE',
       sub: 'Scan the code with your phone to continue',
-      mail: 'info@bibliacatholica.com'
+      mail: 'info@bibliacatholica.com',
+      // The volume's own ground, the page's `wheel:ground` sepia, under the
+      // card and under the code alike (Howell 2026-11-20, seeing the first
+      // one on the catalog's gray with a white square on it: "The
+      // background should be sepia rather than gray, and the QR code should
+      // have a matching background").
+      ground: '#d4a574'
     }
   }
 };
@@ -103,7 +109,8 @@ export function stampHead(html, door) {
     .replace(/<noscript>[\s\S]*?<\/noscript>/, `<noscript>\n    ${h.noscript}\n  </noscript>`)
     .replace(/(<div id="copyright-notice"[^>]*>)[\s\S]*?(<\/div>)/, '$1$2')
     .replace(/<p class="desktop-gate-title">[^<]*<\/p>/, `<p class="desktop-gate-title">${h.gate.title}</p>`)
-    .replace(/<img class="desktop-gate-qr"[^>]*\/>/, () => GATE_QR)
+    .replace(/<img class="desktop-gate-qr"[^>]*\/>/, () => GATE_QR.replace('fill="#fff"', `fill="${h.gate.ground}"`))
+    .replace(/<div id="desktop-gate"/, `<div id="desktop-gate" style="background: ${h.gate.ground}"`)
     .replace(/<p class="desktop-gate-text">[^<]*<\/p>/, `<p class="desktop-gate-text">${h.gate.text}</p>`)
     .replace(/<p class="desktop-gate-sub">[^<]*<\/p>/, `<p class="desktop-gate-sub">${h.gate.sub}</p>`)
     .replace(/<p class="desktop-gate-mail"><a href="mailto:[^"]*">[^<]*<\/a><\/p>/, () => `<p class="desktop-gate-mail"><a href="mailto:${h.gate.mail}">${h.gate.mail}</a></p>`)

@@ -31,6 +31,9 @@ test('the public door\'s page introduces Biblia Catholica, not the catalog', () 
   // O-321: the door's own QR, drawn in the page, and the gate's two lines in the visitor's tongue
   assert.doesNotMatch(body, /qr\.png/, 'the catalog\'s QR does not stand at the Bible\'s door');
   assert.match(body, /<svg class="desktop-gate-qr"[^>]*aria-label="QR: bibliacatholica\.com"/);
+  assert.match(body, /<div id="desktop-gate" style="background: #d4a574"/, 'the card stands on the volume\'s sepia');
+  assert.match(body, /<svg class="desktop-gate-qr"[^>]*>\s*<rect[^>]*fill="#d4a574"\/>/, 'and so does the code');
+  assert.doesNotMatch(body, /fill="#fff"/);
   assert.match(body, /<p class="desktop-gate-sub">Scan the code with your phone to continue<\/p>/);
   const script = /<script id="wheel:gate-words">([\s\S]*?)<\/script>/.exec(body);
   assert.ok(script && body.indexOf(script[0]) > body.indexOf('desktop-gate-mail'), 'the words follow the gate they change');
