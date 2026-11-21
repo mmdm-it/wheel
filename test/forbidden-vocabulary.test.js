@@ -31,6 +31,7 @@ const skipPaths = new Set([
   path.join('src', 'pyramid'),
   path.join('src', 'navigation', 'cousin-builder.js'),
   path.join('src', 'volume-configs.js'),
+  path.join('src', 'volume-roots.js'),   // volume-configs.js continued (O-317): the data roots and the words of their addresses
   'index.html'
 ]);
 const allowedExtensions = new Set(['.js', '.mjs']);

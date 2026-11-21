@@ -261,10 +261,18 @@ const VESSELS = 'circle.focus-ring-magnifier-circle';   // the lens and the pare
  * `content` is the new half's live content group and `overlays` its live HTML
  * overlays: they are carried in while `snapshot` and `ghosts` are carried out.
  */
-export function playSealSwap({ land = null, toSealDisc = null, toDiscColour = null, svg = null, snapshot = null, ghosts = [], from, toSeal = null, toLogo = null, content = null, overlays = [], durationMs = SWAP_MS, onDone = null }) {
+export function playSealSwap({ land = null, toSurround = null, toSealDisc = null, toDiscColour = null, svg = null, snapshot = null, ghosts = [], from, toSeal = null, toLogo = null, content = null, overlays = [], durationMs = SWAP_MS, onDone = null }) {
   const targets = [
     { from: from?.seal, to: toLogo },
-    { from: from?.logo, to: toSeal }
+    { from: from?.logo, to: toSeal },
+    // AN EMBLEM IN TWO PICTURES CROSSES AS ONE PIECE (O-312, Howell
+    // 2026-11-17: "the olive wreath does not follow the Torah scroll ...
+    // The olive wreath and Torah scroll should be treated as one piece of
+    // art"). Its surround flies with it, to the seal and back from it; a
+    // badge showing no surround has nowhere for one to land, and none flies.
+    { from: from?.logo?.surround, to: toSeal },
+    { from: from?.seal?.surround && toSurround && toSurround.style.display !== 'none' && rectOf(toSurround)
+      ? { rect: from.seal.rect, src: from.seal.surround, opacity: from.seal.opacity } : null, to: toSurround }
   ];
   const flights = [];
   const made = [];      // what the swap put on the glass, taken off at the end

@@ -188,6 +188,9 @@ export function resolvePath({ base = '', version = '', kind, edition, unitId, la
     // The per-file kinds above stay the truth on disk and the fallback when a
     // corpus predates the bundles; a bundle is the same data, fetched once.
     case 'chartBundle': return join('charts', req(edition, 'edition'), 'all.json');
+    // The bundle's short form (W-307), one directory down so no listing of
+    // an edition's charts can take it for a unit's.
+    case 'chartPack':   return join('charts', req(edition, 'edition'), 'pack', 'all.json');
     case 'spineBundle': return join('spine', 'all.json');
     case 'names':       return join('names', `${req(lang, 'lang')}.json`);
     case 'container':

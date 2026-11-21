@@ -71,7 +71,9 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
       fetchJson: async p => { touched.push(p); return fetchJson(p); }
     });
     assert.ok(touched.some(p => p.endsWith('/charts/DRA/all.json')), 'the edition chart bundle is asked for');
-    assert.ok(touched.some(p => p.endsWith('/spine/all.json')), 'the spine bundle is asked for');
+    assert.ok(!touched.some(p => p.includes('/spine/')), 'no spine is on the line at boot: nothing reads one (O-317)');
+    await volume.loadSpines();
+    assert.ok(touched.some(p => p.endsWith('/spine/all.json')), 'the spine bundle is asked for when someone asks');
     assert.deepEqual(touched.filter(p => /\/charts\/DRA\/b[0-9a-f]+\.json$/.test(p)), [], 'no chart is fetched on its own when the bundle holds it');
     assert.deepEqual(touched.filter(p => /\/spine\/b[0-9a-f]+\.json$/.test(p)), [], 'no spine is fetched on its own when the bundle holds it');
     assert.equal(volume.chartFor('bdra9e1', 'DRA')?.book, 'bdra9e1', 'the bundled chart is the book itself');
@@ -88,6 +90,74 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
     await volume.allReady();
     assert.equal(typeof volume.ready('DRA').then, 'function', 'ready() answers a promise');
     assert.equal(typeof volume.ready('nobody').then, 'function', 'even for an edition it never heard of');
+  });
+
+  it('stocks the waiting shelves one at a time, and a shelf the reader asks for leaves out of turn (O-310)', async () => {
+    // Two twins of the Douay; a twin's bundle is held open until the test lets it land.
+    const TWINS = ['TWA', 'TWB', 'TWC'];
+    const touched = [], held = new Map();
+    const twinOf = p => TWINS.find(t => p.includes(`/${t}/`));
+    const fetchTwin = async p => {
+      if (p.includes('/pack/')) throw new Error('this corpus has no packs (W-307): the bundles are what is stocked');
+      touched.push(p);
+      const twin = twinOf(p);
+      if (twin) {
+        if (p.endsWith('/all.json')) await new Promise(resolve => held.set(twin, resolve));
+        const relabel = o => { if (o && typeof o === 'object') { if (o.edition === 'DRA') o.edition = twin; for (const v of Object.values(o)) relabel(v); } return o; };
+        return relabel(JSON.parse(JSON.stringify(await fetchJson(p.replace(`/${twin}/`, '/DRA/')))));
+      }
+      const data = await fetchJson(p);
+      if (!p.endsWith('volume.json')) return data;
+      const vol = JSON.parse(JSON.stringify(data));
+      for (const t of TWINS) vol.editions.push({ ...vol.editions.find(e => e.code === 'DRA'), code: t, name: t });
+      return vol;
+    };
+    const asked = t => touched.some(p => p.endsWith(`/charts/${t}/all.json`));
+    const tick = () => new Promise(r => setTimeout(r, 20));
+    const until = async cond => { for (let i = 0; i < 200 && !cond(); i += 1) await tick(); };
+    const volume = await loadBibleVolume({ base: BASE, version: VERSION, firstEdition: 'DRA', fetchJson: fetchTwin });
+    await volume.loadTextFor('bdra9e1');
+    await until(() => asked('TWA'));   // the fixture's own shelves go first, in turn
+    await tick();
+    assert.deepEqual(TWINS.map(asked), [true, false, false], 'only the first waiting shelf has left');
+    volume.wake('TWC');
+    await tick();
+    assert.deepEqual(TWINS.map(asked), [true, false, true], 'the shelf the reader asked for left at once, out of turn');
+    held.get('TWA')();
+    for (let i = 0; i < 15; i += 1) await tick();
+    // THE READER GOES FIRST (O-317): the shelf they asked for is still on the
+    // line, so the next in turn is held behind it.
+    assert.deepEqual(TWINS.map(asked), [true, false, true], 'the next in line waits while what the reader asked for is on the line');
+    held.get('TWC')();
+    await until(() => asked('TWB'));
+    assert.deepEqual(TWINS.map(asked), [true, true, true], 'and leaves when it has landed');
+    held.get('TWB')();
+    await volume.allReady();
+    assert.ok(TWINS.every(t => volume.isReady(t)));
+  });
+
+  it('an ask for a file already on the line joins it, and the shelves wait for the reader to be at rest (O-317)', async () => {
+    const touched = [];
+    let release = () => {};
+    const slow = async p => { touched.push(p); if (p.includes('/margin/')) await new Promise(r => { release = r; }); return fetchJson(p); };
+    let idle = () => {};
+    const readerIdle = () => new Promise(r => { idle = r; });
+    const volume = await loadBibleVolume({ base: BASE, version: VERSION, firstEdition: 'DRA', fetchJson: slow, readerIdle });
+    await volume.loadTextFor('bdra9e1');
+    const tick = () => new Promise(r => setTimeout(r, 20));
+    for (let i = 0; i < 5; i += 1) await tick();
+    const bundles = () => touched.filter(p => p.endsWith('/all.json') && !p.includes('/DRA/') && p.includes('/charts/')).length;
+    assert.equal(bundles(), 0, 'no waiting shelf leaves while the host says the reader is busy');
+    const asks = [1, 2, 3].map(() => volume.marginAt('bdra9e1', 'DRA', '1:1'));
+    for (let i = 0; i < 3; i += 1) await tick();
+    assert.equal(touched.filter(p => p.includes('/margin/')).length, 1, 'three asks for one file while it is on the line are one fetch');
+    idle();
+    for (let i = 0; i < 5; i += 1) await tick();
+    assert.equal(bundles(), 0, 'nor while something the reader asked for is still on the line');
+    release();
+    await Promise.all(asks);
+    for (let i = 0; i < 20 && bundles() === 0; i += 1) { idle(); await tick(); }
+    assert.ok(bundles() >= 1 || (volume.editions || []).length === 1, 'the shelves stock once both are clear');
   });
 
   it('holds the other editions’ bundles until the first verse text is in hand (O-227)', async () => {
@@ -167,6 +237,7 @@ describe('the wall reader — volume.json is the sole enumeration', () => {
       fetchJson: async p => { touched.push(p); if (p.endsWith('/all.json')) throw new Error('404'); return fetchJson(p); }
     });
     assert.ok(touched.some(p => p.endsWith('/charts/DRA/bdra9e1.json')), 'the chart is fetched on its own');
+    await volume.loadSpines();
     assert.ok(touched.some(p => p.endsWith('/spine/bc22df.json')), 'the spine is fetched on its own');
     assert.equal(volume.chartFor('bdra9e1', 'DRA')?.book, 'bdra9e1');
   });
@@ -235,6 +306,8 @@ describe('the wall reader — a unit resolves all-or-nothing, loudly', () => {
   // never partially).
   it('loads Genesis 1 whole through the live path: spine, chart, text agree', async () => {
     const volume = await load();
+    assert.equal(volume.spineFor('bc22df'), null, 'not fetched until asked for (O-317)');
+    await volume.loadSpines();
     const spine = volume.spineFor('bc22df');
     const chart = volume.chartFor('bdra9e1', 'DRA');
     const records = await volume.loadTextFor('bdra9e1');

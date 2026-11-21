@@ -423,6 +423,16 @@ svg :focus-visible {
     letter-spacing: 0.1em;
     max-width: 90vw;
   }
+  /* What the door is, in one line under its name (O-321): only a door
+     whose stamped page carries the line has one. Drawn up under the name,
+     whose own margin keeps the code clear below. */
+  #desktop-gate .desktop-gate-about {
+    margin: -30px 0 20px;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+    max-width: 90vw;
+  }
   /* Case is set in the markup, never transformed: the mark is "MMdM",
      and "delle" rides lowercase inside the full name. */
   #desktop-gate .desktop-gate-text {
@@ -620,6 +630,30 @@ svg :focus-visible {
   transform: rotate(-60deg);
 }
 #watermark[hidden] { display: none; }
+
+/* THE RING'S WATERMARK (O-315, Howell 2026-11-20): the name of the chapter in
+   the lens on the Church's outermost ring, curved with the ring and faint —
+   his sketch's dark umber was "much too dark". The view sizes and places it. */
+.focus-ring-watermark {
+  fill: var(--color-text);
+  opacity: var(--ring-watermark-opacity, 0.1);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* OVER THE READING GROUND THE ROW IS LIGHT (O-316, Howell 2026-11-20: "The
+   only decision is how the watermark differs between the background sepia
+   and the detail sector blue/purple"). On the open ground it is the ink at a
+   tenth; over the sector, where dark ink on a dark ground is lost, it is the
+   reading text's own white at the same strength, so it stands the same step
+   off its ground in both places and stays well under the words. */
+:root.detail-open .focus-ring-watermark {
+  fill: #ffffff;
+  opacity: var(--ring-watermark-leaf-opacity, 0.1);
+}
 
 /* GONE WHILE THE RING TURNS (O-244, Howell 2026-10-30): the host tells the
    button when the ring is moving; it fades out for the turn and back at the

@@ -7,7 +7,7 @@ import { buildBibleVerseChain, buildBibleBookCousinChain, buildBibleChapterChain
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, buildBibleTestaments, buildBibleBooks, buildCatalogManufacturers, getBibleChapters, toTraditionNumeral, toDisplayCase } from './adapters/volume-helpers.js';
 import { proofreadDeepLink, unclearedActive } from './core/lan-gate.js';
 import { recall } from './core/session-memory.js';
-import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
+import { phoneLanguages } from './core/tongue.js';
 import { createAdapterRegistry, createAdapterLoader } from './adapters/registry.js';
 
 import { catalogAdapter } from './adapters/catalog-adapter.js';
@@ -25,8 +25,10 @@ import { setUnitTextLoader } from './adapters/volume-helpers.js';
 //
 // The data version rides the path (H-11 item 4), so a push changes a path
 // rather than the world.
-const BIBLE_VOLUME_BASE = './data/gutenberg';
-const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
+import { VENUES, WALL_ROOTS } from './volume-roots.js';
+import { chooseFirstEdition } from './core/first-edition.js';
+const BIBLE_VOLUME_BASE = WALL_ROOTS.bible.base;
+const BIBLE_VOLUME_VERSION = WALL_ROOTS.bible.version;
 import { calendarAdapter, calendarStrata } from './adapters/calendar-adapter.js';
 import { buildCalendarDecades, buildCalendarCenturies } from './adapters/volume-helpers.js';
 import { decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
@@ -48,6 +50,30 @@ const adapterRegistry = createAdapterRegistry();
 adapterRegistry.register('catalog', () => ({ ...catalogAdapter, volumeId: 'catalog' }));
 adapterRegistry.register('bible', () => ({ ...bibleAdapter, volumeId: 'bible' }));
 adapterRegistry.register('calendar', () => ({ ...calendarAdapter, volumeId: 'calendar' }));
+// THE READER AT REST (O-317). The loader stocks the shelves the reader has
+// not asked for only while this says they are not using the glass: no touch,
+// stroke, wheel or key for a little over a second — a glide outlasts its
+// stroke by 600 ms — or the strata open, where the editions are what they
+// came to see and holding them back would be the wait.
+// The clock starts ahead of the page: a reader who has just been shown their
+// first verse is about to touch the glass, and a shelf landing under that
+// first stroke is several megabytes parsed on the thread that draws it.
+let lastTouchAt = Date.now() + 2500;
+if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+  for (const type of ['pointerdown', 'pointermove', 'touchstart', 'touchmove', 'wheel', 'keydown']) {
+    window.addEventListener(type, () => { lastTouchAt = Date.now(); }, { capture: true, passive: true });
+  }
+}
+const READER_IDLE_MS = 1200;
+export const readerIdle = () => new Promise(resolve => {
+  const check = () => {
+    const strataOpen = typeof document !== 'undefined' && document.getElementById('dimension-button')?.getAttribute('aria-pressed') === 'true';
+    const left = READER_IDLE_MS - (Date.now() - lastTouchAt);
+    if (strataOpen || left <= 0) resolve(); else setTimeout(check, left + 20);
+  };
+  check();
+});
+
 adapterRegistry.register('church', () => ({ ...bibleAdapter, volumeId: 'church' }));
 const adapterLoader = createAdapterLoader(adapterRegistry);
 
@@ -79,36 +105,13 @@ function wallLoader({ volumeId, base, version }) {
     // seeding read it unconditionally — `?edition=X` alone waited for the
     // tongue's default and seated the volume's, and the chain had no chart.
     const named = params.get('edition');
-    const chooseFirst = volumeJson => {
-      const cfg = volumeJson?.display_config || {};
-      // ONLY AN EDITION THE READER MAY BE SHOWN HERE (O-217, 2026-10-23).
-      // This set was every edition the volume enumerates, so on an English
-      // phone a stranger's boot waited for the Douay — which the CHECKED
-      // gate then refused — and seated the Hebrew, whose charts had not
-      // arrived: no seat, no items, the app failed to initialise. The gate
-      // is read here exactly as the dimension bridge reads it (isServable:
-      // proofread, else CHECKED where the build says, else a confirmed
-      // unit; the LAN's override lifts it), so the edition waited for is
-      // the edition shown. Keep the two in step.
-      // O-229: the CHECKED gate is open — every edition the volume (and, on
-      // the LAN under ?uncleared=true, its sidecar) enumerates is offered.
-      const servable = e => Boolean(e) && e.hasChart !== false;
-      const enumerated = volumeJson?.editions || [];
-      const offered = new Set(enumerated.filter(servable).map(e => e.code));
-      const remembered = recall(volumeId).edition;
-      if (remembered && offered.has(remembered)) return remembered;
-      if (named && offered.has(named)) return named;
-      const defaults = cfg.editions?.default || {};
-      const tonguesOffered = Object.keys(defaults).filter(l => offered.has(defaults[l]));
-      const lang = firstOfferedLanguage(phoneLanguages(), tonguesOffered);
-      const byTongue = lang ? defaults[lang] : null;
-      if (byTongue && offered.has(byTongue)) return byTongue;
-      const dflt = defaults[cfg.languages?.default];
-      if (dflt && offered.has(dflt)) return dflt;
-      // The first thing offered, in the volume's own order — the boot
-      // seats the same (main.js, the same number).
-      return enumerated.find(e => offered.has(e.code))?.code || null;
-    };
+    // The rule itself is core/first-edition.js, shared with the early loader
+    // (O-317) so the charts it puts on the line are this boot's own.
+    const chooseFirst = volumeJson => chooseFirstEdition(volumeJson, {
+      remembered: recall(volumeId).edition,
+      named,
+      languages: phoneLanguages()
+    });
     const volume = await loadBibleVolume({
       includeUncleared: unclearedActive(),   // O-231: the LAN's ?uncleared=true merges the sidecar
       base,
@@ -117,7 +120,16 @@ function wallLoader({ volumeId, base, version }) {
       // The manifest, the moment it is parsed and before the bundles are
       // waited for — the boot card listens (O-181).
       onVolume: v => { try { document.dispatchEvent(new CustomEvent('wheel:volume-early', { detail: v })); } catch { /* no DOM */ } },
+      readerIdle,
       fetchJson: async path => {
+        // What the early loader already put on the line (O-317) is taken
+        // from it, once; a failure there is fetched again here.
+        const early = typeof window !== 'undefined' ? window.__wheelEarly : null;
+        const waiting = early?.get?.(path);
+        if (waiting) {
+          early.delete(path);
+          try { return await waiting; } catch (_) { /* fetched below */ }
+        }
         const response = await fetch(path);
         if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
         return response.json();
@@ -302,8 +314,9 @@ const volumeConfigs = {
         // bridge reads it where it commits a language; the boot's waited-for
         // edition (chooseFirst, above) reads the same key. Keep the two in step.
         defaults: Object.fromEntries(Object.entries(volume.displayConfig?.editions?.default || {}).filter(([k]) => !k.startsWith('_'))),
-        // O-303: the volume's books are separate works, one per edition's
-        // book, and the rings are told so (the bridge names no volume).
+        // The volume's editions share no leaf (declared under O-303), and the
+        // edition and language rings are told so (O-313; the bridge names no
+        // volume).
         booksAcrossEditions: volume.displayConfig?.books_across_editions === true,
         translations: Object.fromEntries(volume.editions.map(edition => [edition.code, {
           ...edition,
@@ -370,7 +383,14 @@ const volumeConfigs = {
       // proofreading bypass's key list (O-122). Named here because the engine
       // core may not speak a volume's level names (O-43).
       const POSITION_KEYS = ['book', 'chapter', 'verse'];
-      const level = params.get('level') || startup.top_navigation_level || 'verse';
+      // THE VOLUME MAY DECLARE ITS OUTERMOST RING (O-314, Howell 2026-11-19:
+      // "make each catechism the root"). Where it does, nothing above that
+      // ring is ever built: an address or a remembered place naming a level
+      // above it is not honoured, and the parent handler stops there.
+      const topLevel = root?.display_config?.top_level || null;
+      const ABOVE = { chapter: ['root', 'testament', 'book'], book: ['root', 'testament'] }[topLevel] || [];
+      const asked = params.get('level');
+      const level = (asked && !ABOVE.includes(asked) ? asked : null) || startup.top_navigation_level || 'verse';
       const arrangement = params.get('arrangement') || arrangements[level] || startup.arrangement || 'cousins-with-gaps';
       const cousinParam = params.get('cousins');
       const cousinMode = cousinParam === null ? arrangement !== 'siblings-only' : cousinParam === '1';
@@ -402,10 +422,11 @@ const volumeConfigs = {
       // books, the two divisions — and boot rebuilds that ring rather than
       // drilling to the verse (buildBibleChain). A verse is the verse above.
       const place = (!deepLinked && !params.get('level') && !params.get('item')
-        && ['testament', 'book', 'chapter'].includes(memory?.placeLevel) && memory?.placeItem)
+        && ['testament', 'book', 'chapter'].includes(memory?.placeLevel) && !ABOVE.includes(memory.placeLevel) && memory?.placeItem)
         ? { level: memory.placeLevel, itemId: memory.placeItem } : null;
       return {
         level,
+        topLevel,
         place,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
@@ -1117,8 +1138,8 @@ function buildBibleChain(manifest, options, namesMap) {
 // The chapels (O-297) and the calendar's days under this door (O-292) are
 // withdrawn with this: the chapels deferred, the calendar the company's
 // volume at its own door.
-const CHURCH_VOLUME_BASE = './data/catechism';
-const CHURCH_VOLUME_VERSION = '2026.11.13';
+const CHURCH_VOLUME_BASE = WALL_ROOTS.church.base;
+const CHURCH_VOLUME_VERSION = WALL_ROOTS.church.version;
 volumeConfigs.church = {
   ...volumeConfigs.bible,
   id: 'church',
@@ -1158,21 +1179,4 @@ export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE
 // tree; and bibliacatholica.com is LEICESTER SQUARE, the Bible's public
 // door, for strangers, under the CHECKED gate. This is the one file that may
 // name a site (H1); main.js declares it to lan-gate.
-export const VENUES = {
-  screeningRoom: { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/' },
-  // THE DOORS (O-211, Howell 2026-10-23): an address that boots one volume,
-  // standing alone — no gateway, no catalog in front of it. Two doors in the
-  // room now; in Leicester Square each volume has a domain of its own, where
-  // the path is a bare slash and only the address can choose, so the choice
-  // is made here by address rather than by a word in the path. The longest
-  // matching prefix wins. THE ROOT OF mmdm.it IS THE CALENDAR (O-211; went
-  // up 2026-11-10 on Howell's "I'm ready to go live"): the archival catalog
-  // that stood there came down the same day, and the room's two doors under
-  // /wheel-v3/ are the longer prefixes, so they still win on that host.
-  doors: [
-    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/bible/', volume: 'bible' },
-    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/calendar/', volume: 'calendar' },
-    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/', volume: 'calendar' },
-    { hosts: ['bibliacatholica.com', 'www.bibliacatholica.com'], pathPrefix: '/', volume: 'bible' }
-  ]
-};
+export { VENUES };

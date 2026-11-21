@@ -177,7 +177,10 @@ describe('the disc travels with its emblem', () => {
     // Howell 2026-11-16: "the crown of thorns doesn't need a color circle
     // either when it's in the lower left". No disc is remembered for a seal,
     // and one an older build remembered is not read back.
-    assert.match(main, /if \(logoSrc\) remember\(to, \{ sealArt: logoSrc, sealDisc: null \}\);/);
+    assert.match(main, /if \(logoSrc\) remember\(to, \{ sealArt: logoSrc, sealDisc: null, sealSurround: surroundSrc \}\);/);
+    // O-312: an emblem in two pictures goes down whole, and comes back whole.
+    assert.match(main, /sealEl\.style\.background = `url\("\$\{sealSurround\}"\) center \/ 100% 100% no-repeat`/);
+    assert.match(swap, /\{ from: from\?\.logo\?\.surround, to: toSeal \},/);
     assert.doesNotMatch(main, /sealDisc = worn\.sealDisc/);
   });
   it('the disc flies from where it stood to where it lands, and the discs in place stand aside', () => {

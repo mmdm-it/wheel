@@ -267,7 +267,15 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // NOTHING HERE KNOWS WHICH VOLUME THAT IS, and the suite enforces it: this
   // file may not name one. The adapter computes the list, the host pushes it,
   // and this compares strings.
-  const isHere = key => !here || here.includes(key);
+  //
+  // WHERE THE EDITIONS SHARE NO LEAF, NOTHING IS FILTERED (O-313, Howell
+  // 2026-11-18, retiring O-303's ring of every edition's books: "Switching
+  // between languages or editions should only be allowed in the secondary
+  // and tertiary strata"). In such a volume no other edition ever holds the
+  // reader's place, so a filter by place would leave these rings with one
+  // seat each and no way across. Every tongue and edition is offered, and
+  // the host's reseat lands the reader at their own level in the one chosen.
+  const isHere = key => !here || meta?.booksAcrossEditions === true || here.includes(key);
 
   // Servable AND here. The default-edition pick reads this, so a language
   // chosen at a leaf lands on an edition that actually holds that leaf.
@@ -298,13 +306,7 @@ export function createDimensionBridge({ store, translationsMeta = null, language
   // on a verse it does not have. A tongue whose every
   // edition is elsewhere stands hollow on the language ring the same way.
   // At the root nothing is elsewhere, since nothing is filtered.
-  // NOT WHERE THE BOOKS ARE SEPARATE WORKS (O-303). A volume of catechisms
-  // declares that its editions share no leaf; an edition that does not hold
-  // the reader's place there is another book, not another reading of this
-  // one, and a door to it on the language ring would be the arrangement the
-  // ruling refused — the globe offers the languages THIS book exists in.
   const isElsewhereCode = code => {
-    if (meta?.booksAcrossEditions === true) return false;
     const t = meta?.translations?.[code];
     return Boolean(t) && isServable(t) && !isHere(code) && !arriving.includes(code);
   };

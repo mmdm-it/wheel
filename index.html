@@ -6,6 +6,11 @@
 <html lang="it" translate="no" style="background:#868686">
 <head>
   <script>performance.mark('wheel:html-start');</script>
+  <!-- THE EARLY LOADER (O-317): a few kilobytes that put the volume's
+       manifest and the first edition's charts on the line while the app's
+       own script is still arriving. Async, so it holds up nothing; the app
+       boots the same without it. -->
+  <script src="./dist/early.js" async></script>
   <!-- THE GROUND IS PAINTED BEFORE ANYTHING ELSE ARRIVES (O-174, Howell
        2026-09-22: "an annoying flash of a white screen before the tan
        background appears"). The body's ground is the theme's colour, and the

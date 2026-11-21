@@ -6,7 +6,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { stampHead, HEADS } from '../scripts/stamp-door-head.mjs';
+import { stampHead, HEADS, GATE_WORDS } from '../scripts/stamp-door-head.mjs';
 
 const read = p => readFileSync(new URL('../' + p, import.meta.url), 'utf8');
 
@@ -27,8 +27,31 @@ test('the public door\'s page introduces Biblia Catholica, not the catalog', () 
   const body = out.slice(out.indexOf('<body>'));
   assert.match(body, /<noscript>\s*<h1>Biblia Catholica<\/h1>/);
   assert.match(body, /<p class="desktop-gate-title">BIBLIA CATHOLICA<\/p>/);
-  assert.match(body, /<a href="mailto:info@bibliacatholica\.com">info@bibliacatholica\.com<\/a>/);
-  assert.doesNotMatch(body, /desktop-gate-qr/, 'the catalog\'s QR does not stand at the Bible\'s door');
+  assert.match(body, /<p class="desktop-gate-mail"><a href="mailto:info@bibliacatholica\.com">info@bibliacatholica\.com<\/a> &nbsp;&middot;&nbsp; <a href="mailto:corrections@bibliacatholica\.com">corrections@bibliacatholica\.com<\/a><\/p>/, 'both addresses, info first');
+  // O-321: the door's own QR, drawn in the page, and the gate's two lines in the visitor's tongue
+  assert.doesNotMatch(body, /qr\.png/, 'the catalog\'s QR does not stand at the Bible\'s door');
+  assert.match(body, /<svg class="desktop-gate-qr"[^>]*aria-label="QR: bibliacatholica\.com"/);
+  assert.match(body, /<div id="desktop-gate" style="background: #d4a574"/, 'the card stands on the volume\'s sepia');
+  assert.match(body, /<svg class="desktop-gate-qr"[^>]*>\s*<rect[^>]*fill="#d4a574"\/>/, 'and so does the code');
+  assert.doesNotMatch(body, /fill="#fff"/);
+  assert.match(body, /<p class="desktop-gate-title">BIBLIA CATHOLICA<\/p>\s*<p class="desktop-gate-about">A free reader of the Bible and the Roman Catholic catechism<\/p>/, 'what it is, under its name');
+  assert.match(body, /<p class="desktop-gate-text">MADE FOR THE PHONE<\/p>/);
+  assert.match(body, /<p class="desktop-gate-sub">Scan the code with your phone to open it<\/p>/);
+  const script = /<script id="wheel:gate-words">([\s\S]*?)<\/script>/.exec(body);
+  assert.ok(script && body.indexOf(script[0]) > body.indexOf('desktop-gate-mail'), 'the words follow the gate they change');
+  const say = languages => {
+    const node = () => ({ textContent: '', attrs: {}, setAttribute(k, v) { this.attrs[k] = v; } });
+    const about = node(), text = node(), sub = node();
+    const gate = { ...node(), querySelector: sel => ({ '.desktop-gate-about': about, '.desktop-gate-text': text, '.desktop-gate-sub': sub })[sel] };
+    new Function('navigator', 'document', script[1])({ languages }, { getElementById: () => gate });
+    return [about.textContent, text.textContent, sub.textContent, about.attrs.dir || ''];
+  };
+  assert.deepEqual(say(['fi-FI', 'en']), ['Maksuton Raamatun ja roomalaiskatolisen katekismuksen lukusovellus', 'TEHTY PUHELIMELLE', 'Avaa se skannaamalla koodi puhelimellasi', '']);
+  assert.deepEqual(say(['en-US', 'fi']), ['', '', '', ''], 'English first keeps the page\'s own words');
+  assert.equal(say(['ja', 'it-IT'])[1], 'FATTO PER IL TELEFONO', 'the first language the table knows');
+  assert.equal(say(['ar'])[3], 'rtl');
+  assert.deepEqual(say(['ja']), ['', '', '', ''], 'an unknown tongue keeps the English');
+  for (const [k, w] of Object.entries(GATE_WORDS)) assert.ok(w.slice(0, 3).every(x => typeof x === 'string' && x.length > 5), `${k} says all three lines`);
   assert.doesNotMatch(body, /Meccanismi|MMdM|collettor|mmdm\.it|Tutti i diritti/);
   assert.match(body, /<div id="copyright-notice" class="copyright-notice" aria-label="Copyright"><\/div>/);
 });

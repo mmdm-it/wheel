@@ -46,6 +46,7 @@ const skipPaths = new Set([
   path.join('src', 'navigation', 'cousin-builder.js'),
   // The ONE declared home for volume literals — main.js is scanned (H1).
   path.join('src', 'volume-configs.js'),
+  path.join('src', 'volume-roots.js'),   // volume-configs.js continued: the venue table and the data roots (O-317)
   'index.html'
 ]);
 

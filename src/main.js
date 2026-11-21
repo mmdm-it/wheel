@@ -2,7 +2,7 @@ import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRo
 import { declareHomeScreen } from './core/home-screen.js';
 import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
-import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES } from './volume-configs.js';
+import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES, readerIdle } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
@@ -169,6 +169,8 @@ import { bootSplashShouldPlay, playBootSplash } from './view/boot-splash.js';
 import { mountDimensionGlobe, mountDimensionEmblem } from './view/dimension-globe.js';
 import { labelRotationDeg } from './view/node-appearance.js';
 import { mountSearchDividers } from './view/search-dividers.js';
+// The app has the boot from here: an early loader arriving after this does nothing (O-317).
+if (typeof window !== 'undefined') window.__wheelBooting = true;
 import { enterSearchLook, exitSearchLook, setSearchScopeLabel } from './view/search-mode.js';
 import { setBasementDepth } from './view/basement-light.js';
 
@@ -548,8 +550,16 @@ const BASEMENT = {
   classFor: key => (keptSeat(key) ? '' : isHit(key) ? 'is-hit' : 'is-provisional'),
   markFor: key => (keptSeat(key) ? MARK_BOOKMARK : isHit(key) ? MARK_LANDMARK : null),
   sideFor: key => (!keptSeat(key) && isHit(key) ? -1 : 1),   // a landmark's name inward of the line; a kept hit is a bookmark
-  legend: () => (basementWords && (basementWords.bookmark || basementWords.landmark)
-    ? [[MARK_LANDMARK, basementWords.landmark, -1], [MARK_BOOKMARK, basementWords.bookmark ? `${basementWords.and || BASEMENT_AND} ${basementWords.bookmark}` : null, 1]] : null),
+  // THE "&" JOINS TWO WORDS OR IS NOT WRITTEN (O-311, Howell 2026-11-17, of
+  // a room with bookmarks and no landmarks reading "& BOOKMARKS": "Remove
+  // the ampersand ... It makes no sense"). The landmarks' word stands only
+  // in a room that has a word for them and landmarks to show.
+  legend: () => {
+    if (!(basementWords && (basementWords.bookmark || basementWords.landmark))) return null;
+    const landmark = basementWords.landmark && hitSeats().length ? basementWords.landmark : null;
+    const bookmark = basementWords.bookmark ? (landmark ? `${basementWords.and || BASEMENT_AND} ${basementWords.bookmark}` : basementWords.bookmark) : null;
+    return [[MARK_LANDMARK, landmark, -1], [MARK_BOOKMARK, bookmark, 1]];
+  },
   selected: () => basementLens ?? basementArrival?.key ?? BASEMENT.items()[0] ?? null,
   select: key => { basementLens = key; return true; },
   // THE CAPTION ON THE LENS (O-280, Howell 2026-11-09, his sketch: "KEEP /
@@ -836,6 +846,7 @@ let searchStringEl = null;      // the carriage — SVG text left of the lens
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
 let sealUrl = null;   // W-301: the volume's seal, drawn at the foot of the glass on the left; null for a volume without one
 let sealEl = null;
+let sealSurround = null;   // O-312: the second picture of an emblem in two (its surround), worn by the seal behind the first
 let sealDisc = null;   // O-295: the seal's disc, { colour, ratio } of the emblem it wears, or null for a bare drawing
 let sealDoor = null;   // O-292: the volume the seal opens (each half's seal opens the other half); null = a mark only
 let sealSwapping = false;
@@ -875,6 +886,9 @@ function applySeal() {
   sealEl.style.background = sealDisc?.colour
     ? `radial-gradient(circle closest-side, ${sealDisc.colour} ${(100 * Math.min(1, sealDisc.ratio || 0.5)).toFixed(1)}%, transparent ${(100 * Math.min(1, sealDisc.ratio || 0.5) + 0.8).toFixed(1)}%)`
     : '';
+  // AN EMBLEM IN TWO PICTURES IS ONE PIECE AT THE FOOT TOO (O-312): its
+  // surround lies on the same box behind it, as it does in the corner badge.
+  if (sealSurround && !sealDisc?.colour) { sealEl.style.background = `url("${sealSurround}") center / 100% 100% no-repeat`; primeAspect(sealSurround); }
   if (sealUrl) { if (sealEl.getAttribute('src') !== sealUrl) sealEl.setAttribute('src', sealUrl); sealEl.hidden = false; primeAspect(sealUrl); }
   else { sealEl.hidden = true; sealEl.removeAttribute('src'); }
   // THE PARENT'S LABEL STOPS SHORT OF THE SEAL (O-301): a label long enough to
@@ -2169,13 +2183,18 @@ function applyReviewMarkTongue() {
 // changes — at the volume's boot and at every change of reading language,
 // on the review mark's own road (O-226).
 // THE READER'S PLACE, for a pre-composed email (Howell 2026-11-01): the
-// edition and, at a leaf, the address the instrument was showing — the same
-// words a bookmark keeps (arrivalLabel), e.g. "1769eng MATTHEW 16:18".
-// Above a leaf it is the edition alone.
+// edition and, at a leaf, the address the instrument was showing. A volume
+// that can say it in the reader's own words does (O-319: "Douay-Rheims,
+// Matthew 16:18"); one that cannot falls back on the words a bookmark keeps
+// (arrivalLabel). Above a leaf it is the edition alone.
 function landscapeSubject() {
   try {
-    const edition = currentEdition() || '';
     const cur = currentApp?.nav?.getCurrent?.();
+    if (typeof currentPlaceLine === 'function') {
+      const line = currentPlaceLine(cur, { leaf: Boolean(detailSectorVisible) });
+      if (line) return line;
+    }
+    const edition = currentEdition() || '';
     const place = cur && detailSectorVisible ? arrivalLabel(cur) : '';
     return [edition, place].filter(Boolean).join(' ') || null;
   } catch (_) { return null; }
@@ -2375,26 +2394,6 @@ function updateCornerImage() {
     const color = cornerColorAt(at);
     if (color) currentApp?.setCornerColor?.(color);
   } catch (_) { /* a volume that cannot answer keeps whatever it painted */ }
-}
-
-// THE EDITION FOLLOWS THE BOOK, WHERE THE BOOKS ARE SEPARATE WORKS (O-303).
-// On a ring of catechisms each book belongs to an edition of its own, and
-// the reader who turns the ring to one has chosen it: the edition that holds
-// it is committed, by the road a bookmark's return already takes (O-72's
-// position filter lifted for the commit and read again after the reseat),
-// so its lessons, its words and its tongue are what the next gesture meets.
-// A volume whose editions seat one set of leaves declares nothing and never
-// comes here.
-function followBookEdition() {
-  const wall = currentManifest?.__wallVolume;
-  if (wall?.displayConfig?.books_across_editions !== true) return;
-  const item = currentApp?.nav?.getCurrent?.();
-  if (item?.level !== 'book') return;
-  const own = wall.editionOf?.(item.id) || null;
-  if (!own || own === currentEdition()) return;
-  dimensionBridge.setEditionsHere(null);
-  if (!dimensionBridge.setTranslation(own)) { refreshEditionsHere(); return; }
-  editionSettlePromise.then(() => refreshEditionsHere()).catch(() => {});
 }
 
 function refreshEditionsHere() {
@@ -4321,6 +4320,15 @@ function wireInteractions(getApp) {
         const limit = dir > 0 ? ch.maxRotation : ch.minRotation;
         if (Number.isFinite(limit)) {
           logTap('double-flick', { dir, limit });
+          // The end of the chain is where this is going: its text leaves
+          // now, with the glide, not after it (O-317).
+          try {
+            const chain = app.nav?.items || [];
+            let end = null;
+            if (dir > 0) { for (let i = chain.length - 1; i >= 0 && !end; i--) if (chain[i] && !chain[i].placebo) end = chain[i]; }
+            else { for (let i = 0; i < chain.length && !end; i++) if (chain[i] && !chain[i].placebo) end = chain[i]; }
+            if (end) app.warmItem?.(end);
+          } catch (_) { /* a warm-up is never worth a failed gesture */ }
           ch.glideTo(limit, GLIDE_TO_LIMIT_MS, () => app.selectNearest());
           return;
         }
@@ -4368,6 +4376,7 @@ let currentApp = null;
 // getParentLabel), kept beside the app so the basement can name an arrival
 // from the MODEL rather than off the glass (O-220).
 let currentParentLabel = null;
+let currentPlaceLine = null;
 // The booted volume's manifest, kept module-wide for the same reason
 // `currentApp` is: the section label (H-26) is updated from a nav callback
 // that has no path back into bootVolume's scope, and it needs the wall
@@ -4516,7 +4525,11 @@ function swapThroughSeal() {
   // (O-307): no disc goes with it, and a disc remembered by an older build
   // is cleared from the record here.
   const cornerDisc = currentApp?.cornerDisc?.() || null;
-  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: null });
+  // An emblem in two pictures goes down whole (O-312): its surround with it.
+  const surroundImg = document.getElementById('volume-logo-surround');
+  const surroundHref = surroundImg && surroundImg.style.display !== 'none' ? (surroundImg.getAttribute('href') || surroundImg.getAttributeNS?.('http://www.w3.org/1999/xlink', 'href') || null) : null;
+  const surroundSrc = surroundHref ? new URL(surroundHref, document.baseURI).href : null;
+  if (logoSrc) remember(to, { sealArt: logoSrc, sealDisc: null, sealSurround: surroundSrc });
   // And the disc itself travels: where it stands now, as a circle on the page.
   const discEl = document.getElementById('volume-logo-circle');
   const discBox = discEl ? rectOf(discEl) : null;
@@ -4538,14 +4551,15 @@ function swapThroughSeal() {
     snapshot: captureGatewaySnapshot(svg),
     ghosts: ghostOverlays(SWAP_OVERLAYS),
     from: {
-      seal: { rect: sealBox, src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl) },
-      logo: { rect: rectOf(logoImg), box: boxOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1 },
+      seal: { rect: sealBox, src: sealEl?.currentSrc || sealEl?.src || null, opacity: opacityOf(sealEl), surround: sealSurround },
+      logo: { rect: rectOf(logoImg), box: boxOf(logoImg), src: logoSrc, opacity: logoImg ? opacityOf(logoImg) : 1,
+        surround: surroundSrc ? { rect: rectOf(surroundImg), box: boxOf(surroundImg), src: surroundSrc, opacity: opacityOf(surroundImg) } : null },
       discs: discFrom
     }
   };
   // The frozen copy carries the old badge's drawing too; the flying one
   // replaces it, so the copy's is put out.
-  transit.snapshot?.querySelectorAll?.('image').forEach(im => { if (im.getAttribute('id') === 'volume-logo-image') im.style.visibility = 'hidden'; });
+  transit.snapshot?.querySelectorAll?.('image').forEach(im => { if (im.getAttribute('id') === 'volume-logo-image' || (surroundSrc && im.getAttribute('id') === 'volume-logo-surround')) im.style.visibility = 'hidden'; });
   if (sealEl) sealEl.style.visibility = 'hidden';
   const search = `?volume=${encodeURIComponent(to)}`;
   bootVolume(to, search, null, transit)
@@ -4993,9 +5007,11 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // and is gone before the corner, and one remembered by an older build is
   // not read.
   sealDisc = null;
+  sealSurround = null;
   if (sealDoor) {
     const worn = recall(volume);
     if (typeof worn.sealArt === 'string' && worn.sealArt) sealUrl = worn.sealArt;
+    if (sealUrl === worn.sealArt && typeof worn.sealSurround === 'string' && worn.sealSurround) sealSurround = worn.sealSurround;
   }
   applySeal();
   copyrightWords = root?.display_config?.copyright_notice || null;
@@ -5069,6 +5085,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   const childrenHandler = params => (handlerSet.childrenHandler ? handlerSet.childrenHandler({ ...params, app }) : false);
   const adapterGetParentLabel = typeof handlerSet.getParentLabel === 'function' ? handlerSet.getParentLabel : null;
   currentParentLabel = adapterGetParentLabel;
+  currentPlaceLine = typeof handlerSet.getPlaceLine === 'function' ? handlerSet.getPlaceLine : null;
   // The volume declares what it appended to a parent label (a chapter
   // numeral), so the label can be seated by its NAME and the suffix hang
   // clear of the vessel. Volumes that append nothing need not define it.
@@ -5196,6 +5213,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getTextDirection: typeof handlerSet.textDirection === 'function' ? handlerSet.textDirection : null,
     getParentActionable: typeof handlerSet.getParentActionable === 'function' ? handlerSet.getParentActionable : null,
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
+    getWatermark: typeof handlerSet.getWatermark === 'function' ? handlerSet.getWatermark : null,
+    watermarkRest: handlerSet.watermarkRest || 'middle',
+    warmItem: typeof handlerSet.warmItem === 'function' ? handlerSet.warmItem : null,
     pyramid: pyramidConfig,
     pyramidLayoutSpec: pyramidLayout,
     pyramidNormalized: adapterNormalized || normalized,
@@ -5221,7 +5241,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         const hit = versePartsCache.get(key);
         if (hit !== undefined) return hit;
         const payload = adapter?.detailFor
-          ? adapter.detailFor(item, manifest, { normalized: adapterNormalized, translation })
+          ? adapter.detailFor(item, manifest, { normalized: adapterNormalized, translation, measuring: true })
           : null;
         let parts = 1;
         if (payload?.uniform && typeof payload.text === 'string') {
@@ -5328,6 +5348,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         toSeal: sealUrl ? sealEl : null,
         toLogo: liveTop.find(el => el.id === 'volume-logo-group')?.querySelector('#volume-logo-image') || null,
         toSealDisc: sealUrl && sealDisc ? sealDisc : null,
+        toSurround: liveTop.find(el => el.id === 'volume-logo-group')?.querySelector('#volume-logo-surround') || null,
         toDiscColour: app?.sectorColour?.() || null,
         content: liveTop.find(el => el.classList.contains('focus-content-group')) || null,
         overlays: SWAP_OVERLAYS.map(id => document.getElementById(id)),
@@ -5481,7 +5502,6 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
     updateDimensionButton();
     rememberReadingPosition();
-    followBookEdition();   // O-303: on a ring of separate works the edition follows the book
   });
   dimensionBridge.onSettle(translation => {
     // THE FUNNEL IS NOT CLOSED BY A COMMIT (O-77). It used to be — "a
@@ -5743,6 +5763,15 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     }
   } catch (err) { /* diagnostics never break boot */ }
   prefetchGatewayTargets(manifest);
+  // THE DOOR IS WARMED WHILE THE READER RESTS (O-317): the other half's
+  // manifest, names and first charts are fetched once the glass has been
+  // still a moment, so the tap on the seal crosses on what is already here
+  // (1.4 s cold from the room on a 4 Mbit line). The same cache the crossing
+  // reads; a failure is simply fetched again at the tap.
+  if (sealDoor) {
+    const door = sealDoor;
+    readerIdle().then(() => { if (sealDoor === door) fetchManifest(door).catch(() => {}); });
+  }
   // Adapters that rebuild the top chain (the globe's homecoming) re-invoke
   // this through the hook so rebuilt stamp lines resolve again.
   app.refreshDataStamps = () => refreshDataStamps(app);

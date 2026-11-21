@@ -219,6 +219,15 @@ describe('reading on through the volume', () => {
     assert.equal(h.getParentLabel(pick('BETH_1_1')), 'BETA I', 'and another book\'s chapter of the same number is not renamed');
   });
 
+  it('and where the volume has a word for its chapters, the button counts the named chapter (O-320)', () => {
+    const h = inVerseMode({ locale: 'latin', books: { ALPH: 'Alpha', BETH: 'Beta', GAMM: 'Gamma' }, testaments: {}, chapters: { ALPH: { 2: 'The Second Thing' } }, vocabulary: { chapter: 'Lesson' } });
+    const chain = h.layoutBindings.getBibleVerseChain('ALPH_1_1');
+    const pick = id => chain.items.find(v => v && v.id === id);
+    assert.equal(h.getParentLabel(pick('ALPH_2_1')), 'LESSON II');
+    assert.equal(h.getParentLabelSuffix(pick('ALPH_2_1')), 'II', 'the numeral hangs clear of the vessel as a book\'s does');
+    assert.equal(h.getParentLabel(pick('ALPH_1_1')), 'ALPHA I', 'a chapter without a name is untouched by the word');
+  });
+
   it('the parent button counts in the reader\'s own letters', () => {
     // From the phone, 2026-08-02: 'Αʹ ΣΑΜΟΥΗΛ XVII' — a Greek book name and
     // a Latin numeral in one label, because this site baked Roman. The book

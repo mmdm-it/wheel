@@ -642,3 +642,87 @@ describe('a testament names no parent without a gateway above (O-190)', () => {
     assert.equal(h.getParentActionable(), true, 'actionable at the book ring, where the boot stands');
   });
 });
+
+// THE VOLUME MAY DECLARE ITS OUTERMOST RING (O-314, Howell 2026-11-19: "make
+// each catechism the root"). At that ring the drill out is taken and nothing
+// is built: no ring of books, no division above it.
+describe('a declared top level is the furthest out the reader goes (O-314)', () => {
+  const at = (level, topLevel) => bibleAdapter.createHandlers({
+    manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: {},
+    options: { activeEdition: 'LAT', translation: 'LAT', level, topLevel }
+  });
+  it('at the declared ring the drill out is handled and sets no items', () => {
+    let set = 0;
+    const app = { setPrimaryItems: () => { set++; }, migrateOut: () => { set++; }, setParentButtons: () => { set++; } };
+    assert.equal(at('chapter', 'chapter').parentHandler({ selected: { level: 'chapter', meta: { bookId: 'B' } }, app }), true);
+    assert.equal(set, 0, 'nothing was built above the declared top');
+  });
+  it('a volume that declares none still climbs from its chapters', () => {
+    let set = 0;
+    const app = { setPrimaryItems: () => { set++; }, migrateOut: () => { set++; }, setParentButtons: () => {} };
+    const taken = at('chapter', null).parentHandler({ selected: { level: 'chapter', meta: { bookId: 'B' } }, app });
+    // This fixture seats no ring of books, so the climb is refused rather
+    // than made; what it must never be is taken with nothing built.
+    assert.ok(set > 0 || taken === false, 'the climb is attempted as before, not swallowed');
+  });
+});
+
+// THE CHAPTER IN THE LENS IS NAMED ACROSS THE GLASS, AT A DECLARED TOP ONLY (O-315).
+describe('the watermark names the chapter in the lens on a declared top ring (O-315)', () => {
+  const at = (level, topLevel) => bibleAdapter.createHandlers({
+    manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: { chapters: { B: { 26: 'Matrimony' } } },
+    options: { activeEdition: 'LAT', translation: 'LAT', level, topLevel }
+  });
+  const lesson = { level: 'chapter', meta: { bookId: 'B', chapterKey: '26' } };
+  it('names it where the volume declares its chapters the top', () => {
+    assert.equal(at('chapter', 'chapter').getWatermark(lesson).toUpperCase(), 'MATRIMONY');
+  });
+  it('says nothing where no top is declared, for a chapter with no name, or below the top', () => {
+    assert.equal(at('chapter', null).getWatermark(lesson), '');
+    assert.equal(at('chapter', 'chapter').getWatermark({ level: 'chapter', meta: { bookId: 'B', chapterKey: '3' } }), '');
+    assert.equal(at('verse', 'chapter').getWatermark(lesson), '');
+  });
+  it('inside a lesson the row names it, once the button counts it instead (O-320)', () => {
+    const counted = bibleAdapter.createHandlers({
+      manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: { chapters: { B: { 26: 'Matrimony' } }, vocabulary: { chapter: 'Lesson', verse: 'Question' } },
+      options: { activeEdition: 'LAT', translation: 'LAT', level: 'verse', topLevel: 'chapter' }
+    });
+    const question = { level: 'verse', name: '287', meta: { bookId: 'B', chapterLabel: '26' } };
+    assert.equal(counted.getWatermark(question).toUpperCase(), 'MATRIMONY');
+    assert.equal(counted.getWatermark({ ...question, meta: { bookId: 'B', chapterLabel: '3' } }), '', 'a lesson with no name names nothing');
+    assert.equal(at('verse', 'chapter').getWatermark(question), '', 'with no word for a chapter the name stays on the button, not here');
+    assert.equal(counted.watermarkRest, 'foot');
+    assert.equal(counted.getPlaceLine(question), 'Lesson 26, Question 287', 'and a correction counts both');
+  });
+});
+
+// THE EDITION BEING READ IS NAMED BESIDE THE RING AT EVERY LEVEL (O-316), in
+// a volume that declares no top; a volume that does keeps its own rule.
+describe('the watermark names the edition at every level of a volume with no declared top (O-316)', () => {
+  const translationsMeta = { translations: { LAT: { name: 'A long title of the edition, with its printer and its year, far too long for a row', nativeName: 'Vulgata' }, LONG: { name: 'A long title of the edition, with its printer and its year, far too long for a row' } } };
+  const at = (level, topLevel, edition = 'LAT') => bibleAdapter.createHandlers({
+    manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: { chapters: { B: { 26: 'Matrimony' } } }, translationsMeta,
+    options: { activeEdition: edition, translation: edition, level, topLevel }
+  });
+  it('the short name its ring seat wears, whatever is in the lens', () => {
+    for (const level of ['testament', 'book', 'chapter', 'verse']) {
+      assert.equal(at(level, null).getWatermark({ level, meta: { bookId: 'B', chapterKey: '26' } }).toUpperCase(), 'VULGATA', level);
+    }
+  });
+  it('an edition with only its full title names nothing rather than run off the row', () => {
+    assert.equal(at('book', null, 'LONG').getWatermark({ level: 'book' }), '');
+  });
+  it('a volume with a declared top never shows the edition there', () => {
+    assert.equal(at('verse', 'chapter').getWatermark({ level: 'verse', meta: { bookId: 'B' } }), '');
+  });
+  // THE READER'S PLACE IN THE READER'S OWN WORDS (O-319).
+  it('a correction opens with the edition by name and the address in plain words, never the code', () => {
+    const verse = { level: 'verse', name: '18', meta: { bookId: 'B', chapterLabel: '16' } };
+    const line = at('verse', null).getPlaceLine(verse);
+    assert.match(line, /^Vulgata, .+:18$/);
+    assert.ok(!line.includes('LAT'), 'the code is not in it');
+    assert.equal(at('verse', null).getPlaceLine(verse, { leaf: false }), 'Vulgata', 'above a leaf, the edition alone');
+    assert.equal(at('book', null).getPlaceLine({ level: 'book' }), 'Vulgata');
+    assert.equal(at('verse', null).getPlaceLine({ ...verse, meta: { bookId: 'B', chapterLabel: '26' } }), 'Vulgata, Matrimony, 18', 'a named chapter is called by its name');
+  });
+});

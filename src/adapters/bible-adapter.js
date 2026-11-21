@@ -233,6 +233,36 @@ function chaptersInReadingOrder(manifest) {
   return order;
 }
 
+// A RING PASSING OVER A BOOK IS NOT A READER IN IT (O-317). The verse ring
+// runs the whole volume, and a flick or a glide to its end carries the lens
+// across book after book; each one the live preview painted asked for its
+// whole text, so the double flick from Matthew to Genesis put ten books on
+// the line ahead of the one it was going to (measured from the screening
+// room, 2026-11-20). So: a book asked for while another, different, book was
+// asked for a moment ago is HELD a beat, and fetched only if the lens is
+// still in it when the beat is over. The first book of a run is never held,
+// so a boot, a settle and a slow crossing cost nothing; `warmItem` (the
+// gesture naming where it is going) is never held either.
+const SKIM_WINDOW_MS = 300;   // two different books inside this is a skim
+const SKIM_HOLD_MS = 140;     // how long the lens must stay in a book to be in it
+let _wantedFile = null;
+let _wantedAt = 0;
+let _wantedTimer = null;
+function requestChapterUnlessSkimming(chapterId, bookId, externalFile) {
+  if (!externalFile || _requestedChapters.has(externalFile)) return;
+  const now = Date.now();
+  const skimming = _wantedFile && _wantedFile !== externalFile && now - _wantedAt < SKIM_WINDOW_MS;
+  _wantedFile = externalFile;
+  _wantedAt = now;
+  if (_wantedTimer) { clearTimeout(_wantedTimer); _wantedTimer = null; }
+  if (!skimming) { requestChapter(chapterId, bookId, externalFile); return; }
+  _wantedTimer = setTimeout(() => {
+    _wantedTimer = null;
+    if (_wantedFile === externalFile) requestChapter(chapterId, bookId, externalFile);
+  }, SKIM_HOLD_MS);
+  if (typeof _wantedTimer?.unref === 'function') _wantedTimer.unref();
+}
+
 function requestChapter(chapterId, bookId, externalFile) {
   if (!externalFile || _requestedChapters.has(externalFile)) return;
   _requestedChapters.add(externalFile);
@@ -267,7 +297,7 @@ function warmVerseIn(manifest, edition, item) {
 function readAhead(selected, manifest) {
   const meta = selected?.meta;
   if (!meta?.externalFile) return;
-  requestChapter(meta.chapterId, meta.bookId, meta.externalFile);
+  requestChapterUnlessSkimming(meta.chapterId, meta.bookId, meta.externalFile);
   const order = chaptersInReadingOrder(manifest);
   // BY THE UNIT, NOT THE CONTAINER (O-67, the second of two defects here and
   // the more absolute of them). This matched `meta.chapterId` — which is a
@@ -300,7 +330,13 @@ function readAhead(selected, manifest) {
   }
 }
 
-export function detailFor(selected, manifest, { normalized, translation } = {}) {
+// `measuring` is the ring asking how many screens a seat needs (O-84), which
+// it asks of every seat near the lens on every frame of a turn. That is a
+// question about text ALREADY in hand and must never fetch any (O-317): it
+// did, through the read-ahead below, and a glide across the volume asked for
+// the whole text of each book it crossed. A seat whose text is not here
+// measures as one screen, and is measured again when the text lands.
+export function detailFor(selected, manifest, { normalized, translation, measuring = false } = {}) {
   if (!selected) return null;
   const id = selected.id || '';
   const level = selected.level || '';
@@ -381,7 +417,7 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
       let resolved = activeTranslation
         ? getVerseTextForSeat(externalFile, selected?.meta, [activeTranslation])
         : null;
-      readAhead(selected, manifest);
+      if (!measuring) readAhead(selected, manifest);
       // THROUGH THE LEAF WHEN THE EDITION IS NOT THIS BOOK'S (O-228). Under
       // leaf-and-shard a book belongs to one edition and its text file holds
       // that edition's words alone, so a verse previewed in ANOTHER edition —
@@ -397,7 +433,7 @@ export function detailFor(selected, manifest, { normalized, translation } = {}) 
         const other = otherSeatFor(manifest, activeTranslation, selected?.meta, externalFile);
         if (other) {
           resolved = getVerseTextResolved(other.book, other.key, [activeTranslation]);
-          if (!resolved) requestChapter(null, other.book, other.book);
+          if (!resolved && !measuring) requestChapter(null, other.book, other.book);
         }
       }
       // uniform: every verse shares the longest verse's type size (Howell
@@ -924,7 +960,14 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     }));
   };
 
+  // THE OUTERMOST RING THE VOLUME DECLARES (O-314): the catechisms stop at
+  // their chapters, with the book's own name in the parent seat and nothing
+  // further out. Absent, the top is the divisions ring as before (O-190).
+  const topLevel = options?.topLevel || null;
   const parentHandler = ({ selected, app }) => {
+    // Handled, and nothing done: a refusal here would let the ring fall back
+    // to its own layer-out, which draws a level this volume does not have.
+    if (topLevel && bibleMode === topLevel) return true;
     if (bibleMode === 'verse') {
       // The verse ring spans the whole volume, so the reader may be far
       // from the chapter they entered at. Land on the MAGNIFIED verse's
@@ -1122,8 +1165,10 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     }
     return findBook(manifest, bookId)?.book_name || '';
   };
-  const getParentLabel = (item) => {
+  const getParentLabel = (item, plain = false) => {
     if (!item) return '';
+    // `plain`: the name as its edition writes it, for a line of prose (O-319).
+    const cased = plain ? (s => String(s ?? '')) : toDisplayCase;
     // Gateway root ring: parent button points back through the gateway.
     // Top of this volume: the parent button is the way back through the
     // gateway, so it names the DESTINATION volume (Howell 2026-07-18 —
@@ -1186,8 +1231,17 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       // give way to it, as a book's name stands alone over its chapters. The
       // Bible's names carry none, and it reads as before.
       const chapterName = namesMap?.chapters?.[bookId]?.[chapterKey];
-      if (chapterName) return toDisplayCase(chapterName);
-      const bookName = toDisplayCase(bookNameFor(bookId));
+      // AND WHERE THE VOLUME HAS A WORD FOR ITS CHAPTERS, THE BUTTON COUNTS
+      // THEM AND THE NAME GOES TO THE ROW BESIDE THE RING (O-320, Howell
+      // 2026-11-20, with "LESSON 26" drawn over the button and the lesson's
+      // name down the row by the globe): the reader is told which lesson by
+      // number where the way out is, and what it is about where the edition
+      // is named in the other volume. With no such word the name stands on
+      // the button as before.
+      const chapterWord = chapterName ? String(namesMap?.vocabulary?.chapter || '').trim() : '';
+      if (chapterWord) return `${cased(chapterWord)} ${chapterLabel}`;
+      if (chapterName) return cased(chapterName);
+      const bookName = cased(bookNameFor(bookId));
       return bookName ? `${bookName} ${chapterLabel}` : chapterLabel;
     }
     // Book ring: parent is the testament name (stored mixed-case on items as
@@ -1380,8 +1434,78 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   // The parent seat at the top is words alone (discless) and, with no
   // gateway above, not even that (O-190).
   const getParentActionable = () => !(bibleMode === 'testament' && !hasRoot);
+  // THE ROW BESIDE THE RING (O-315, O-316). Two uses, and the volume's own
+  // shape picks between them:
+  //  - a volume that declares its chapters the top (the catechisms) names
+  //    THE CHAPTER IN THE LENS on that ring and nothing anywhere else
+  //    (Howell 2026-11-20: "only at the root, which is where the user needs
+  //    it most"), where the names carry a name for it (O-302);
+  //  - every other volume names THE EDITION BEING READ, at every level from
+  //    the top to the leaf (Howell the same day: "currently the user has no
+  //    obvious idea of what edition they're reading"), under the short name
+  //    its ring seat wears, in its own script.
+  // A full title is not a row's worth of words: only a short name is shown.
+  const editionName = () => {
+    const code = options?.activeEdition || options?.translation || null;
+    const edition = code ? translationsMeta?.translations?.[code] : null;
+    const name = edition?.nativeName || edition?.name || '';
+    return name && [...name].length <= 32 ? name : '';
+  };
+  const getWatermark = (item) => {
+    if (topLevel) {
+      if (topLevel !== 'chapter') return '';
+      // On the declared top ring, the chapter in the lens; beneath it, the
+      // chapter the reader is inside, once the button counts it instead of
+      // naming it (O-320).
+      const onTop = bibleMode === topLevel && item?.level === 'chapter';
+      const inside = item?.level === 'verse' && Boolean(String(namesMap?.vocabulary?.chapter || '').trim());
+      if (!onTop && !inside) return '';
+      const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || item.parentId || '');
+      const key = item.meta?.chapterLabel ?? item.meta?.chapterKey;
+      const name = namesMap?.chapters?.[bookId]?.[key];
+      return name ? toDisplayCase(name) : '';
+    }
+    const name = editionName();
+    return name ? toDisplayCase(name) : '';
+  };
+  // THE READER'S PLACE IN THE READER'S OWN WORDS (O-319, Howell 2026-11-20,
+  // of a correction that opened "1899eng MATTHEW 16:18": "we use our key ...
+  // a code name that means nothing to a user and looks awkward as an email
+  // subject"; and of a subject in a script he cannot read: "don't translate
+  // anything for my sake"). The edition under the name its ring seat wears,
+  // then, at a leaf, the address as the parent label and the lens say it,
+  // in ordinary capitals: "Douay-Rheims, Matthew 16:18". A chapter with a
+  // name of its own (O-302) is called by it: "Baltimore Catechism,
+  // Matrimony, 3". Edition names are distinct, so the line still says
+  // exactly which text is meant.
+  const getPlaceLine = (item, { leaf = true } = {}) => {
+    const parts = [editionName()];
+    if (leaf && item?.level === 'verse') {
+      const above = getParentLabel(item, true);
+      const own = String(item.name ?? '').trim();
+      const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || '');
+      const named = Boolean(namesMap?.chapters?.[bookId]?.[item.meta?.chapterLabel]);
+      const leafWord = named ? String(namesMap?.vocabulary?.verse || '').trim() : '';
+      if (above && own) parts.push(named ? `${above}, ${leafWord ? `${leafWord} ` : ''}${own}` : `${above}:${own}`);
+    }
+    return parts.filter(Boolean).join(', ');
+  };
+  // WHERE A GESTURE IS GOING, NAMED BEFORE IT GETS THERE (O-317): the text of
+  // the item's book is asked for now, so it is on the line for the whole of
+  // the glide rather than from its end.
+  const warmItem = (item) => {
+    const meta = item?.meta;
+    if (meta?.externalFile) requestChapter(meta.chapterId, meta.bookId, meta.externalFile);
+  };
   return {
     parentHandler,
+    getWatermark,
+    getPlaceLine,
+    // The name ends at the row's foot, by the globe (O-318), a lesson's as
+    // an edition's (O-320: drawn there by Howell), so it does not move when
+    // the reader drills from the lessons into one.
+    watermarkRest: 'foot',
+    warmItem,
     childrenHandler,
     getParentLabel,
     getParentActionable,

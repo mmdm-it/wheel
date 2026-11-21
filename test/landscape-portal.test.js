@@ -120,10 +120,10 @@ describe('landscape portal — the calendar’s page', () => {
     const phone = { number: '+39 071 111 222', link: 'sms', subject: true };
     const root = { display_config: { ...BIBLE_ROOT.display_config, landscape: { ...BIBLE_ROOT.display_config.landscape, phone } } };
     const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'latin', loc: SQUARE, table: VENUES, subject: 'Douay Genesis 1:1' });
-    assert.deepEqual(r.phone, { href: 'sms:+39071111222?body=Douay%20Genesis%201%3A1', text: '+39 071 111 222', kind: 'sms' });
+    assert.deepEqual(r.phone, { href: 'sms:+39071111222?body=Douay%20Genesis%201%3A1%0A', text: '+39 071 111 222', kind: 'sms' });
     assert.equal(r.whatsapp, null);
     const r2 = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: { display_config: { ...root.display_config, landscape: { ...root.display_config.landscape, phone: { ...phone, whatsapp: true } } } }, lang: 'latin', loc: SQUARE, table: VENUES, subject: 'Douay Genesis 1:1' });
-    assert.deepEqual(r2.whatsapp, { href: 'https://wa.me/39071111222?text=Douay%20Genesis%201%3A1', text: 'WhatsApp' });
+    assert.deepEqual(r2.whatsapp, { href: 'https://wa.me/39071111222?text=Douay%20Genesis%201%3A1%0A', text: 'WhatsApp' });
     const bare = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'latin', loc: SQUARE, table: VENUES, subject: null });
     assert.equal(bare.phone.href, 'sms:+39071111222', 'no place, no body');
     assert.equal(smsHref('+39 071 111 222'), 'sms:+39071111222');
@@ -286,8 +286,8 @@ describe('landscape portal — the copyright line and the lift', () => {
     const list = body.children.find(c => c.className.startsWith('portal-mails'));
     const rows = list.children.map(c => c.className);
     assert.deepEqual(rows, ['portal-mail', 'portal-mail', 'portal-mail portal-phone', 'portal-mail portal-whatsapp']);
-    assert.equal(list.children[2].children[0].getAttribute('href'), 'sms:+39071111222?body=Douay%20Genesis%201%3A1');
-    assert.equal(list.children[3].children[0].getAttribute('href'), 'https://wa.me/39071111222?text=Douay%20Genesis%201%3A1');
+    assert.equal(list.children[2].children[0].getAttribute('href'), 'sms:+39071111222?body=Douay%20Genesis%201%3A1%0A');
+    assert.equal(list.children[3].children[0].getAttribute('href'), 'https://wa.me/39071111222?text=Douay%20Genesis%201%3A1%0A');
     assert.equal(list.children[3].children[0].textContent, 'WhatsApp');
   });
   it('no line without words, and the calendar is not lifted', () => {

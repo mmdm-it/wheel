@@ -1,14 +1,12 @@
-// EACH BOOK IS ITS OWN WORK, AND THE RING SHOWS THEM ALL (O-303, Howell
-// 2026-11-15: each catechism is its own book in the Church, and the globe
-// chooses the language within it).
+// WHERE THE EDITIONS SHARE NO LEAF (O-313, Howell 2026-11-18, retiring
+// O-303's ring of every edition's books: "Switching between languages or
+// editions should only be allowed in the secondary and tertiary strata").
 //
-// A volume whose editions share one set of leaves shows the books of the
-// edition up and nothing else (O-71, O-87) — held by its own tests and
-// re-asserted here on the same fixture. A volume that declares
-// `books_across_editions` is the other case: its editions share no leaf, so
-// the ring is the union, in the volume's order, the same ring whatever
-// edition is up; and the language ring offers no door to an edition that
-// does not hold the reader's place, because that edition is another book.
+// A volume that declares `books_across_editions` has editions that share no
+// leaf. Its ring of books is the edition's own, as in every volume (O-71,
+// O-87); what the declaration changes is the edition and language rings,
+// which offer every edition wherever the reader stands, since a filter by
+// place would leave them with one seat each.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { loadBibleVolume } from '../src/adapters/bible-volume.js';
@@ -55,30 +53,18 @@ async function ringFor({ across, edition }) {
   return { volume, items: items.filter(i => i && i.id), selectedIndex };
 }
 
-describe('a ring of separate works shows every edition\'s books (O-303)', () => {
-  it('is the union, in the volume\'s order, whichever edition is up', async () => {
-    const english = await ringFor({ across: true, edition: 'ENG' });
-    const italian = await ringFor({ across: true, edition: 'ITA' });
-    assert.deepEqual(english.items.map(i => i.id), ['e1', 'i1', 'i2']);
-    assert.deepEqual(italian.items.map(i => i.id), ['e1', 'i1', 'i2'], 'the ring does not change with the language');
-    assert.deepEqual(english.items.map(i => i.name), ['First', 'Primo', 'Secondo'], 'a book of another edition is still named');
-    for (const i of [...english.items, ...italian.items]) assert.equal(i.level, 'book');
-  });
-
-  it('knows which edition each book belongs to, so the edition can follow the book', async () => {
-    const { volume, items } = await ringFor({ across: true, edition: 'ENG' });
-    assert.deepEqual(items.map(i => volume.editionOf(i.id)), ['ENG', 'ITA', 'ITA']);
-  });
-
-  it('leaves a volume that declares nothing exactly as it was', async () => {
-    const english = await ringFor({ across: false, edition: 'ENG' });
-    const italian = await ringFor({ across: false, edition: 'ITA' });
-    assert.deepEqual(english.items.map(i => i.id), ['e1']);
-    assert.deepEqual(italian.items.map(i => i.id), ['i1', 'i2']);
-  });
+describe('the ring of books is the edition\'s own, whatever the volume declares (O-313)', () => {
+  for (const across of [true, false]) {
+    it(`shows only the books of the edition up (declared: ${across})`, async () => {
+      const english = await ringFor({ across, edition: 'ENG' });
+      const italian = await ringFor({ across, edition: 'ITA' });
+      assert.deepEqual(english.items.map(i => i.id), ['e1']);
+      assert.deepEqual(italian.items.map(i => i.id), ['i1', 'i2']);
+    });
+  }
 });
 
-describe('the language ring offers no door to another book (O-303)', () => {
+describe('the edition and language rings offer every edition where no leaf is shared (O-313)', () => {
   const meta = across => ({
     booksAcrossEditions: across,
     translations: {
@@ -86,13 +72,14 @@ describe('the language ring offers no door to another book (O-303)', () => {
       ITA: { code: 'ITA', language: 'italian', hasChart: true, cleared: true }
     }
   });
-  it('an edition that does not hold the place is a door in a shared volume and absent in a volume of works', () => {
+  it('an edition that does not hold the place is a door in a shared volume and a plain seat where no leaf is shared', () => {
     for (const across of [false, true]) {
       const bridge = createDimensionBridge({ store: createInteractionStore(), translationsMeta: meta(across) });
       bridge.setEditionsHere(['ENG']);
-      assert.equal(bridge.isElsewhere('ITA'), !across, across ? 'no door where the books are separate works' : 'a door, as before');
+      assert.equal(bridge.isElsewhere('ITA'), !across);
       assert.equal(bridge.isElsewhereLanguage('italian'), !across);
-      assert.equal(bridge.isElsewhere('ENG'), false, 'the edition that holds the place is never elsewhere');
+      assert.deepEqual([...bridge.languagesAvailable()].sort(), ['english', 'italian'], 'both tongues stand on the ring');
+      assert.equal(bridge.setTranslation('ITA'), across, across ? 'the other edition commits from the ring' : 'refused, as before: it is crossed to by its door');
     }
   });
 });
