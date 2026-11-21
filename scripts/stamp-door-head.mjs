@@ -38,7 +38,10 @@ export const HEADS = {
       about: 'A free reader of the Bible and the Roman Catholic catechism',
       text: 'MADE FOR THE PHONE',
       sub: 'Scan the code with your phone to open it',
-      mail: 'info@bibliacatholica.com',
+      // Both of the door's addresses, info first as on the sideways page
+      // (Howell 2026-11-20: "The Bible desktop page should have both the info
+      // and the corrections email addresses").
+      mails: ['info@bibliacatholica.com', 'corrections@bibliacatholica.com'],
       // The volume's own ground, the page's `wheel:ground` sepia, under the
       // card and under the code alike (Howell 2026-11-20, seeing the first
       // one on the catalog's gray with a white square on it: "The
@@ -122,7 +125,7 @@ export function stampHead(html, door) {
     .replace(/<div id="desktop-gate"/, `<div id="desktop-gate" style="background: ${h.gate.ground}"`)
     .replace(/<p class="desktop-gate-text">[^<]*<\/p>/, `<p class="desktop-gate-text">${h.gate.text}</p>`)
     .replace(/<p class="desktop-gate-sub">[^<]*<\/p>/, `<p class="desktop-gate-sub">${h.gate.sub}</p>`)
-    .replace(/<p class="desktop-gate-mail"><a href="mailto:[^"]*">[^<]*<\/a><\/p>/, () => `<p class="desktop-gate-mail"><a href="mailto:${h.gate.mail}">${h.gate.mail}</a></p>`)
+    .replace(/<p class="desktop-gate-mail"><a href="mailto:[^"]*">[^<]*<\/a><\/p>/, () => `<p class="desktop-gate-mail">${h.gate.mails.map(m => `<a href="mailto:${m}">${m}</a>`).join(' &nbsp;&middot;&nbsp; ')}</p>`)
     .replace(/(<div id="desktop-gate"[\s\S]*?<\/div>)/, (m) => `${m}\n  ${gateScript(GATE_WORDS)}`)
     .replace(/<html lang="[^"]*"/, `<html lang="${h.lang}"`)
     .replace(/<title>[^<]*<\/title>/, `<title>${h.title}</title>`)

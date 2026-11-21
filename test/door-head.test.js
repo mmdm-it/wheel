@@ -27,7 +27,7 @@ test('the public door\'s page introduces Biblia Catholica, not the catalog', () 
   const body = out.slice(out.indexOf('<body>'));
   assert.match(body, /<noscript>\s*<h1>Biblia Catholica<\/h1>/);
   assert.match(body, /<p class="desktop-gate-title">BIBLIA CATHOLICA<\/p>/);
-  assert.match(body, /<a href="mailto:info@bibliacatholica\.com">info@bibliacatholica\.com<\/a>/);
+  assert.match(body, /<p class="desktop-gate-mail"><a href="mailto:info@bibliacatholica\.com">info@bibliacatholica\.com<\/a> &nbsp;&middot;&nbsp; <a href="mailto:corrections@bibliacatholica\.com">corrections@bibliacatholica\.com<\/a><\/p>/, 'both addresses, info first');
   // O-321: the door's own QR, drawn in the page, and the gate's two lines in the visitor's tongue
   assert.doesNotMatch(body, /qr\.png/, 'the catalog\'s QR does not stand at the Bible\'s door');
   assert.match(body, /<svg class="desktop-gate-qr"[^>]*aria-label="QR: bibliacatholica\.com"/);
