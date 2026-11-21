@@ -95,3 +95,17 @@ test('the host words it from the tongue — BOOKMARK for the candidate alone, DI
   assert.ok(!view.includes('clearWordPath'), 'no name is hidden for the word');
   assert.ok(!css.includes('#bookmark-hint'), 'the phrase beside the globe is gone with the hold');
 });
+
+// O-324 (Howell 2026-11-21): on the edition and language rings a single tap on
+// the lens, at rest, carries the reader to the text behind the glass.
+test('a tap on the lens of the edition or language ring enters the text: at rest only, never from a seat with nothing to read, never in the basement', () => {
+  const main = fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), '../src/main.js'), 'utf8');
+  const up = main.slice(main.indexOf("['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>\n    strataLayer"), main.indexOf('// ── The strata transition tween'));
+  assert.match(up, /const onLens = ch !== BASEMENT && items\.length > 0 && \(tapped == null \|\| tapped === target\) && lensHit\(event, ch\);/, 'the seat under the lens counts as the lens; the basement keeps its own tap');
+  assert.match(up, /enter = !caught && canEnterFromLens\(ch, items\[target\]\);/, 'a ring caught mid-glide has chosen nothing yet');
+  assert.ok(up.indexOf('springbackStrata(center, target, ch, items);') < up.indexOf('goToStratum(0)'), 'the seat is committed before the floors move');
+  const can = main.slice(main.indexOf('function canEnterFromLens'), main.indexOf('// Is the press on the lodestar itself?'));
+  assert.match(can, /ch\.inert\(item\)\) return false/);
+  assert.match(can, /isComingLanguage\?\.\(item\) \|\| dimensionBridge\.isElsewhereLanguage\?\.\(item\)/);
+  assert.match(main, /const caught = Boolean\(strataSnap\);/);
+});

@@ -1561,6 +1561,16 @@ function nodeIndexNearPoint(event, ch) {
   return best != null && bd <= viewport.SSd * 0.14 ? best : null;
 }
 
+// May a tap on the lens carry the reader to the text from this seat (O-324)?
+// Not from a placeholder, and not from a tongue with nothing to read here:
+// there is no page behind the glass to go to.
+function canEnterFromLens(ch, item) {
+  if (item === undefined || item === null) return false;
+  if (typeof ch.inert === 'function' && ch.inert(item)) return false;
+  if (ch.id === 'tertiary') return !(dimensionBridge.isComingLanguage?.(item) || dimensionBridge.isElsewhereLanguage?.(item));
+  return item !== dimensionBridge.comingSoonKey;
+}
+
 // Is the press on the lodestar itself?
 function lensHit(event, ch) {
   const lens = strataLayer?.querySelector(`#${ch.id} .secondary-strata-node.is-magnified`);
@@ -1739,10 +1749,11 @@ if (strataLayer) {
   strataLayer.addEventListener('pointerdown', event => {
     const ch = activeChooser();
     if (!ch || strataAnim) return; // nothing to rotate at the primary or mid-glide
+    const caught = Boolean(strataSnap);   // the ring was still gliding when the finger landed
     if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; } // catch a springback
     const items = ch.items();
     strataDrag = {
-      items,
+      items, caught,
       center: clampCenter(items.indexOf(ch.selected()), items.length),
       spacing: getNodeSpacing(viewport), // rad per node — constant through the drag
       lastX: event.clientX, lastY: event.clientY,
@@ -1782,20 +1793,36 @@ if (strataLayer) {
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>
     strataLayer.addEventListener(type, event => {
       if (!strataDrag) return;
-      const { items, center, moved } = strataDrag;
+      const { items, center, moved, caught } = strataDrag;
       if (strataDrag.raf) cancelAnimationFrame(strataDrag.raf);
       strataDrag = null;
       const ch = activeChooser();
       // Tap (no drag) on a node → glide THAT node into the lens; a drag → snap
       // to the nearest. Either way springbackStrata eases it home and commits.
       let target = clampCenter(Math.round(center), items.length);
+      let enter = false;
       if (!moved && type === 'pointerup') {
         const tapped = nodeIndexNearPoint(event, ch);
+        // The chosen seat sits under the lens, so a tap there can name that
+        // seat as readily as the lens: both are a tap on the lens (O-324).
+        const onLens = ch !== BASEMENT && items.length > 0 && (tapped == null || tapped === target) && lensHit(event, ch);
         if (tapped != null) target = tapped;
         // THE LENS KEEPS (O-126): in the basement, a tap on the lens itself
         // keeps the seat under it, or drops a kept one — the one gesture the
         // basement adds, on the one control that means "here".
         else if (ch === BASEMENT && items.length && lensHit(event, ch)) toggleKeep(items[target]);
+        // THE LENS ENTERS (O-324, Howell 2026-11-21, of a reader's request:
+        // "rotates to their new language or edition, and then ... taps on
+        // the magnifier to go back to the primary stratum in that newly
+        // selected edition"; a single tap, at his word, on these two rings
+        // only). The seat was chosen when the ring settled; the tap only
+        // carries the reader to what stands behind the glass, as the globe
+        // does. At rest alone: a ring caught mid-glide has chosen nothing
+        // yet. A seat with nothing to read here enters nothing.
+        if (onLens) {
+          enter = !caught && canEnterFromLens(ch, items[target]);
+          window.__wheelTapTrace?.push({ ev: 'lens-tap', ring: ch.id, caught: caught ? 1 : 0, enter: enter ? 1 : 0 });
+        }
       }
       if (!items.length) return;   // an empty basement: nothing to settle
       // A placeholder seat cannot be chosen (O-184): the ring settles on the
@@ -1807,6 +1834,7 @@ if (strataLayer) {
         }
       }
       springbackStrata(center, target, ch, items);
+      if (enter) { const went = goToStratum(0); window.__wheelTapTrace?.push({ ev: 'lens-enter', went: went ? 1 : 0, anim: strataAnim ? 1 : 0 }); }
     })
   );
 }
