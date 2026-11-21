@@ -78,7 +78,7 @@ test('the host words it from the tongue — BOOKMARK for the candidate alone, DI
   const hit = main.slice(main.indexOf('function lensHit'), main.indexOf('// Re-render ONLY the front stratum'));
   assert.match(hit, /\.secondary-strata-caption:not\(\[display="none"\]\)/, 'a shown word is the lens\'s');
   assert.match(hit, /getBBox/, 'its box where the glass can measure it');
-  assert.match(main, /lensHit\(event, ch\)\) toggleKeep\(items\[target\]\)/, 'and the lens tap keeps or drops');
+  assert.match(main, /lensHit\(event, ch, 'word'\)\) toggleKeep\(items\[target\]\)/, 'and a tap on the word keeps or drops (the glass no longer does, O-326)');
   for (const gone of ['holdBegin', 'HOLD_MS', 'HOLD_DEPTH', 'SLIDER_OVERRUN', 'OVERRUN_GIVE', 'bookmarkPrompt', 'bookmarkHint']) {
     assert.ok(!main.includes(gone), `${gone} is retired`);
   }
@@ -98,14 +98,31 @@ test('the host words it from the tongue — BOOKMARK for the candidate alone, DI
 
 // O-324 (Howell 2026-11-21): on the edition and language rings a single tap on
 // the lens, at rest, carries the reader to the text behind the glass.
-test('a tap on the lens of the edition or language ring enters the text: at rest only, never from a seat with nothing to read, never in the basement', () => {
+test('a tap on the lens of the edition or language ring enters the text: at rest only, never from a seat with nothing to read', () => {
   const main = fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), '../src/main.js'), 'utf8');
   const up = main.slice(main.indexOf("['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>\n    strataLayer"), main.indexOf('// ── The strata transition tween'));
-  assert.match(up, /const onLens = ch !== BASEMENT && items\.length > 0 && \(tapped == null \|\| tapped === target\) && lensHit\(event, ch\);/, 'the seat under the lens counts as the lens; the basement keeps its own tap');
+  assert.match(up, /const onLens = items\.length > 0 && \(tapped == null \|\| tapped === target\) && lensHit\(event, ch, ch === BASEMENT \? 'glass' : null\);/, 'the seat under the lens counts as the lens; in the basement the glass alone does (O-326)');
   assert.match(up, /enter = !caught && canEnterFromLens\(ch, items\[target\]\);/, 'a ring caught mid-glide has chosen nothing yet');
   assert.ok(up.indexOf('springbackStrata(center, target, ch, items);') < up.indexOf('goToStratum(0)'), 'the seat is committed before the floors move');
   const can = main.slice(main.indexOf('function canEnterFromLens'), main.indexOf('// Is the press on the lodestar itself?'));
   assert.match(can, /ch\.inert\(item\)\) return false/);
   assert.match(can, /isComingLanguage\?\.\(item\) \|\| dimensionBridge\.isElsewhereLanguage\?\.\(item\)/);
   assert.match(main, /const caught = Boolean\(strataSnap\);/);
+});
+
+// O-326 (Howell 2026-11-21): the tap on the lens is extended to the main ring
+// and to the basement.
+test('a tap on the lens drills one level in on the main ring, and in the basement goes to the verse; the word beside the lens still marks', () => {
+  const main = fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), '../src/main.js'), 'utf8');
+  const click = main.slice(main.indexOf("app.view.magnifierCircle.addEventListener('click'"), main.indexOf('// Expose app to window for console API'));
+  assert.ok(click.indexOf('strikeSettledChar()') < click.indexOf('app.toggleVersePart?.()') && click.indexOf('app.toggleVersePart?.()') < click.indexOf('app.largestPyramidIndex?.()'), 'search first, then the half of a divided verse, then the drill');
+  assert.match(click, /if \(app\.toggleVersePart\?\.\(\)\) return;/, 'a divided verse keeps its own tap');
+  assert.match(click, /if \(star < 0\) return;/, 'a leaf has nothing below and the tap is inert');
+  assert.match(click, /app\.handlePyramidNodeClick\?\.\(star\);/, 'by the same door a tapped star uses, which refuses while a migration flies');
+  assert.match(click, /lensSwipeFiredAt && Date\.now\(\) - lensSwipeFiredAt < 700/, 'a stroke begun on the lens is not a tap');
+  const hit = main.slice(main.indexOf('function lensHit'), main.indexOf('// Re-render ONLY the front stratum'));
+  assert.match(hit, /if \(part !== 'word' && Math\.hypot/, 'the word alone can be asked for');
+  assert.match(hit, /if \(part === 'glass'\) return false;/, 'and the glass alone');
+  const up = main.slice(main.indexOf("['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>\n    strataLayer"), main.indexOf('// ── The strata transition tween'));
+  assert.match(up, /if \(enter\) \{ if \(ch === BASEMENT\) BASEMENT\.select\(items\[target\]\); const went = goToStratum\(0\);/, 'the basement names its seat, then rises by the ordinary ascent');
 });

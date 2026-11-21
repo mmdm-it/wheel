@@ -1572,17 +1572,21 @@ function canEnterFromLens(ch, item) {
   return item !== dimensionBridge.comingSoonKey;
 }
 
-// Is the press on the lodestar itself?
-function lensHit(event, ch) {
+// Is the press on the lodestar itself? `part` narrows the question to the
+// glass alone or to the word beside it alone: in the basement the two are
+// different buttons (O-326), the glass going to the verse and the word
+// marking it.
+function lensHit(event, ch, part = null) {
   const lens = strataLayer?.querySelector(`#${ch.id} .secondary-strata-node.is-magnified`);
   if (!lens) return false;
   const rect = strataLayer.getBoundingClientRect();
   const x = event.clientX - rect.left, y = event.clientY - rect.top;
   const reach = viewport.SSd * 0.09;
-  if (Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= reach) return true;
-  // The word beside the lens (O-280) is the lens's too: a tap on BOOKMARK or
-  // DISCARD is a tap on the lens. Its box, padded by a finger's slack; where
-  // the glass cannot measure text, its anchor and a reach.
+  if (part !== 'word' && Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= reach) return true;
+  if (part === 'glass') return false;
+  // The word beside the lens (O-280): BOOKMARK or DISCARD. Its box, padded
+  // by a finger's slack; where the glass cannot measure text, its anchor and
+  // a reach.
   const word = strataLayer.querySelector?.(`#${ch.id} .secondary-strata-caption:not([display="none"])`);
   if (!word) return false;
   const pad = viewport.SSd * 0.03;
@@ -1806,12 +1810,16 @@ if (strataLayer) {
         const tapped = nodeIndexNearPoint(event, ch);
         // The chosen seat sits under the lens, so a tap there can name that
         // seat as readily as the lens: both are a tap on the lens (O-324).
-        const onLens = ch !== BASEMENT && items.length > 0 && (tapped == null || tapped === target) && lensHit(event, ch);
+        // In the basement the glass alone is the lens; the word beside it is
+        // its own button (O-326).
+        const onLens = items.length > 0 && (tapped == null || tapped === target) && lensHit(event, ch, ch === BASEMENT ? 'glass' : null);
         if (tapped != null) target = tapped;
-        // THE LENS KEEPS (O-126): in the basement, a tap on the lens itself
-        // keeps the seat under it, or drops a kept one — the one gesture the
-        // basement adds, on the one control that means "here".
-        else if (ch === BASEMENT && items.length && lensHit(event, ch)) toggleKeep(items[target]);
+        // THE WORD MARKS (O-126, O-280; narrowed by O-326, Howell 2026-11-21:
+        // "these taps are detected on the words themselves and not on the
+        // lens. The lens is merely an indicator"): in the basement a tap on
+        // BOOKMARK or DISCARD keeps the seat under the lens, or drops a kept
+        // one. The glass no longer does.
+        else if (ch === BASEMENT && items.length && lensHit(event, ch, 'word')) toggleKeep(items[target]);
         // THE LENS ENTERS (O-324, Howell 2026-11-21, of a reader's request:
         // "rotates to their new language or edition, and then ... taps on
         // the magnifier to go back to the primary stratum in that newly
@@ -1820,6 +1828,10 @@ if (strataLayer) {
         // carries the reader to what stands behind the glass, as the globe
         // does. At rest alone: a ring caught mid-glide has chosen nothing
         // yet. A seat with nothing to read here enters nothing.
+        // AND IN THE BASEMENT (O-326, Howell the same day: "a single tap
+        // taking the user directly to that verse, whether bookmarked, oft
+        // quoted, or neither"): the same tap on the glass goes up to the
+        // verse under it, by the ordinary ascent.
         if (onLens) {
           enter = !caught && canEnterFromLens(ch, items[target]);
           window.__wheelTapTrace?.push({ ev: 'lens-tap', ring: ch.id, caught: caught ? 1 : 0, enter: enter ? 1 : 0 });
@@ -1835,7 +1847,7 @@ if (strataLayer) {
         }
       }
       springbackStrata(center, target, ch, items);
-      if (enter) { const went = goToStratum(0); window.__wheelTapTrace?.push({ ev: 'lens-enter', went: went ? 1 : 0, anim: strataAnim ? 1 : 0 }); }
+      if (enter) { if (ch === BASEMENT) BASEMENT.select(items[target]); const went = goToStratum(0); window.__wheelTapTrace?.push({ ev: 'lens-enter', went: went ? 1 : 0, anim: strataAnim ? 1 : 0 }); }
     })
   );
 }
@@ -5410,7 +5422,18 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     app.view.magnifierCircle.addEventListener('click', () => {
       if (lensSwipeFiredAt && Date.now() - lensSwipeFiredAt < 700) { lensSwipeFiredAt = 0; return; }   // the swipe already drilled (O-132)
       if (searchRestore) { strikeSettledChar(); return; }
-      app.toggleVersePart?.();
+      if (app.toggleVersePart?.()) return;
+      // THE LENS DRILLS IN (O-326, Howell 2026-11-21, extending the tap of
+      // O-324 to this ring: "tapping on the magnifier would migrate the
+      // child pyramid nodes into the focus ring"). One level, to the node a
+      // swipe in would take: the sky's largest. A leaf has no sky and the
+      // tap stays inert there; a migration still in flight refuses it, so
+      // two quick taps cannot skip a level. It amends O-294: the lens is a
+      // fourth way to change level, beside the parent, a star and the swipe.
+      const star = app.largestPyramidIndex?.() ?? -1;
+      if (star < 0) return;
+      try { window.__tapDebugLog?.('lens-tap-drill-in', { idx: star }); } catch (_) { /* log only */ }
+      app.handlePyramidNodeClick?.(star);
     });
   }
   // Expose app to window for console API
