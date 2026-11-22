@@ -33,6 +33,7 @@ export {
 
 const NODE_RADIUS_RATIO = 0.035; // 3.5% of shorter side
 const MAGNIFIER_RADIUS_RATIO = 0.060; // larger than nodes
+const LARGE_STAR_BOOST = 1.2; // the sky's one large star, over the lens's size (O-328)
 
 const logOnceFactory = logger => {
   let logged = false;
@@ -2200,7 +2201,11 @@ export function createApp({
         // (isLarge, above).
         const rankOfSeat = i => (equalSky ? 0 : policySpread ? (isLarge(children[i]) ? 0 : anyProminence ? 1 + tierOf(children[i]) : 2) : Math.abs(i - anchor));
         const seatOrder = seatPool.slice().sort((a, b) => (rankOfSeat(a) - rankOfSeat(b)) || (a - b));
-        const LARGE_SCALE = MAGNIFIER_RADIUS_RATIO / NODE_RADIUS_RATIO;
+        // THE LARGE STAR IS A FIFTH LARGER THAN THE LENS (O-328, Howell
+        // 2026-11-22: "I have gotten feedback from a trusted user that the
+        // large nodes are too small. Let's try making them 20% bigger and
+        // see what we think"). A trial; one number.
+        const LARGE_SCALE = (MAGNIFIER_RADIUS_RATIO / NODE_RADIUS_RATIO) * LARGE_STAR_BOOST;
         // THE LESSER STARS ARE THE RING'S OWN SIZE (O-261, Howell 2026-11-02:
         // "Make the child pyramid nodes the same size as the unselected focus
         // ring nodes. So there should only be two sizes of nodes"): the large

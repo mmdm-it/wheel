@@ -39,6 +39,31 @@ describe('the sky\'s one large star (O-327)', async () => {
     assert.equal(largeChildIndex([kid('a'), kid('b', 1), kid('c', 1)]), 1);
     assert.equal(largeChildIndex([kid('a', 2), kid('b', 1)], { standoutId: 'gone' }), 1);
   });
+  it('a visit is permanent and supersedes the landmark; the latest visit wins (O-328)', () => {
+    assert.equal(largeChildIndex([kid('a'), kid('b', 1), { id: 'c', visited: 3 }]), 2);
+    assert.equal(largeChildIndex([{ id: 'a', visited: 9 }, kid('b', 1), { id: 'c', visited: 3 }]), 0);
+    // the node just drilled out from still comes first
+    assert.equal(largeChildIndex([{ id: 'a', visited: 9 }, kid('b', 1), kid('c')], { standoutId: 'c' }), 2);
+    // an unvisited sky keeps its landmark
+    assert.equal(largeChildIndex([{ id: 'a', visited: 0 }, kid('b', 1)]), 1);
+  });
+  it('the record: latest per leaf, a chapter keeps one place, volumes apart', async () => {
+    const store = new Map();
+    globalThis.window = { localStorage: { getItem: k => store.get(k) ?? null, setItem: (k, v) => store.set(k, String(v)), removeItem: k => store.delete(k) } };
+    try {
+      const { visitedSeq, visitedVersion, markVisited, forgetVisited } = await import('../src/core/visited.js');
+      forgetVisited();
+      const v0 = visitedVersion();
+      markVisited('one', ['u1'], ['u1', 'u2', 'u3']);
+      markVisited('one', ['u3', 'u3b'], ['u1', 'u2', 'u3']);
+      assert.equal(visitedSeq('one', 'u1'), 0, 'superseded by the later visit in its chapter');
+      assert.equal(visitedSeq('one', 'u3'), 2);
+      assert.equal(visitedSeq('one', 'u3b'), 2);
+      assert.equal(visitedSeq('two', 'u3'), 0);
+      assert.ok(visitedVersion() > v0);
+      assert.match(store.get('wheel-visited-v1'), /"u3":2/);
+    } finally { delete globalThis.window; }
+  });
   it('else the first: a lesser rank earns nothing, and a sky is never without one', () => {
     assert.equal(largeChildIndex([kid('a'), kid('b', 2), kid('c')]), 0);
     assert.equal(largeChildIndex([kid('only')]), 0);

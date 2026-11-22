@@ -149,6 +149,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
+import { visitedSeq, visitedVersion, markVisited } from './core/visited.js';
 import { beginBootOverture, overtureShouldPlay, overtureScrubWanted, splashRecord, mark as overtureMark } from './view/boot-overture.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
@@ -5224,6 +5225,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     setCalendarMonthContext: layoutBindings.setCalendarMonthContext,
     bibleModeRef: layoutBindings.bibleModeRef,
     prominenceOf: layoutBindings.prominenceOf,
+    visitedOf: layoutBindings.visitedOf,
     setBibleMode: layoutBindings.setBibleMode,
     setBibleChapterContext: layoutBindings.setBibleChapterContext,
     setBibleVerseContext: layoutBindings.setBibleVerseContext,
@@ -5548,6 +5550,25 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (!isDetailLevel(current, adapterNormalized)) return;
     remember(volume, { itemId: current.id });
   };
+  // AND WHERE THEY HAVE BEEN, FOR GOOD (O-328, Howell 2026-11-22): a leaf the
+  // reader comes to REST on is marked, and its branch shows it large from
+  // then on. A leaf passing under the lens while the ring turns is not a
+  // visit, so the mark waits for the lens to hold still; and the place the
+  // boot put the reader is not one either (noteVisit is not called there).
+  const VISIT_DWELL_MS = 700;
+  let visitTimer = 0;
+  handlerSet.setVisitedReader?.({ seq: leaf => visitedSeq(volume, leaf), version: visitedVersion });
+  const noteVisit = () => {
+    clearTimeout(visitTimer);
+    if (typeof handlerSet.leavesUnder !== 'function') return;
+    const at = app?.nav?.getCurrent?.();
+    if (!at?.id || !isDetailLevel(at, adapterNormalized)) return;
+    visitTimer = setTimeout(() => {
+      if (currentApp !== app || app?.nav?.getCurrent?.()?.id !== at.id) return;
+      const leaves = handlerSet.leavesUnder(at)?.leaves;
+      if (leaves?.length) markVisited(volume, leaves, handlerSet.chapterLeavesOf?.(at) || []);
+    }, VISIT_DWELL_MS);
+  };
   // WHEN EVERY SHELF IS STOCKED (O-175), one quiet redraw seats whatever
   // waited on another edition — a bookmark to its leaf, a hit on its ring.
   manifest?.__wallVolume?.allReady?.().then(() => { if (currentApp === app) app?.refreshPyramid?.(); });
@@ -5610,6 +5631,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
     updateDimensionButton();
     rememberReadingPosition();
+    noteVisit();
   });
   dimensionBridge.onSettle(translation => {
     // THE FUNNEL IS NOT CLOSED BY A COMMIT (O-77). It used to be — "a

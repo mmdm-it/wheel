@@ -353,12 +353,21 @@ export function relativeTiers(items, rankOf, { day = dayKey() } = {}) {
 // visited, else the landmark (tier 1; the first where several tie), else the
 // first child. Every sky with a child has exactly one. Over the CHILDREN, in
 // sibling order; -1 only for an empty sky.
+// A VISIT IS PERMANENT (O-328, Howell 2026-11-22: "for a particular book or
+// chapter, a visited node supersedes a landmark node"): after the node just
+// drilled out from comes the child the reader last rested on a leaf under,
+// whenever that was, and only a sky never visited shows its landmark or its
+// first. One look for all of them: "superseded nodes and original
+// oft-quoted nodes can look the same."
 export function largeChildIndex(children, { standoutId = null } = {}) {
   if (!Array.isArray(children) || !children.length) return -1;
   if (standoutId != null) {
     const back = children.findIndex(ch => ch && ch.id === standoutId);
     if (back >= 0) return back;
   }
+  let last = -1;
+  children.forEach((ch, i) => { const at = Number(ch?.visited); if (at > 0 && (last < 0 || at > Number(children[last].visited))) last = i; });
+  if (last >= 0) return last;
   const lead = children.findIndex(ch => (ch?.prominence ?? ch?.meta?.prominence) === 1);
   if (lead >= 0) return lead;
   const first = children.findIndex(Boolean);
@@ -412,6 +421,7 @@ export function buildBiblePyramid({
   getApp,
   bibleModeRef,
   prominenceOf,
+  visitedOf,
   setBibleMode,
   setBibleChapterContext,
   setBibleVerseContext
@@ -421,7 +431,15 @@ export function buildBiblePyramid({
   // volume how well-read it is, and the most-read verse lifts its chapter and
   // its book. A volume without ranks answers undefined and the sky is uniform.
   const ranked = items => (typeof prominenceOf !== 'function' ? items : relativeTiers(items, prominenceOf));
-  const getChildren = args => ranked(getChildrenRaw(args));
+  // AND MARKED BY THE READER'S OWN VISITS (O-328): each child says when the
+  // reader last rested on a leaf under it, so the sky's large star is where
+  // they left off in that branch. The record is the host's; a volume without
+  // one marks nothing.
+  const marked = items => {
+    if (typeof visitedOf !== 'function') return items;
+    return items.map(it => { const at = it ? visitedOf(it) : 0; return at > 0 ? { ...it, visited: at } : it; });
+  };
+  const getChildren = args => marked(ranked(getChildrenRaw(args)));
   const getChildrenRaw = ({ selected }) => {
     const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
     if (mode === 'root') {
