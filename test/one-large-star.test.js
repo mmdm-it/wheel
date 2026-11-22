@@ -24,9 +24,10 @@ describe('one large star, from the landmarks (O-262)', () => {
     assert.doesNotMatch(v, /kind: 'ranks'|rankOf\(leaf\)/);
     assert.match(src('adapters/bible-adapter.js'), /volume\.landmarkOf\(u\)/);
   });
-  it('the node just drilled out from is not large; a crowded sky is one run around its anchor', () => {
+  it('the large star is one decision (O-327: the node just left has its size back); a crowded sky is one run around it', () => {
     const s = src('index.js');
-    assert.match(s, /const isLarge = ch => Boolean\(!equalSky && anyProminence && ch && tierOf\(ch\) === 1\);/);
+    assert.match(s, /const largeIdx = largeChildIndex\(children, \{ standoutId \}\);/);
+    assert.match(s, /const isLarge = ch => Boolean\(ch && largeIdx >= 0 && ch === children\[largeIdx\]\);/);
     assert.match(s, /seatPool = seatPool\.slice\(start, start \+ seatCount\)/);
   });
 });

@@ -15,11 +15,11 @@ describe('a volume may declare a sky of equals (O-240)', () => {
   it('the Bible does not — its skies stay ranked and capped (O-133, O-198, O-199)', () => {
     assert.doesNotMatch(read('../src/adapters/bible-adapter.js'), /equalSky/);
   });
-  it('the host shows every child, one size, with no subset, rank or cap', () => {
+  it('the host shows every child with no subset, rank or cap; one of them large since O-327', () => {
     const host = read('../src/index.js');
     assert.match(host, /const equalSky = pyramidConfig\?\.equalSky === true;/);
     assert.match(host, /const policy = equalSky \? \{ cap: Math\.max\(1, children\.length\) \}/);
-    assert.match(host, /const isLarge = ch => Boolean\(!equalSky &&/);
+    assert.match(host, /const isLarge = ch => Boolean\(ch && largeIdx >= 0 && ch === children\[largeIdx\]\);/, 'a sky of equals has its one large star too (O-327 amends O-240)');
   });
 
   it('an equal sky seats its children highest first, in sibling order (O-241)', () => {

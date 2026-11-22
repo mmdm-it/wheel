@@ -15,7 +15,7 @@ import { computeChildPyramidGeometry, dampLabelScale } from './geometry/child-py
 import { computeDayGridLayout, ribbonRowAt, daySerial, gapRowsPerSlot } from './geometry/day-grid.js';
 import './geometry/pyramid-tuning-knobs.js';
 import { placePyramidNodes } from './geometry/child-pyramid.js';
-import { largestChildIndex } from './pyramid/volume-pyramid.js';
+import { largestChildIndex, largeChildIndex, largeGridNode, GRID_LARGE_SCALE, EQUAL_LARGE_SCALE } from './pyramid/volume-pyramid.js';
 import { animateIn, animateOut, animateStarsAway, animateNodesEmerge, isAnimating, hasActiveTransaction, clearStack as clearAnimationStack, animatePyramidFromHub, animatePyramidToHub, animateRingOutward, animateRingInward, animateRingPartition, animateMagnifierToParent, animateParentToMagnifier, animateParentButtonOutward, animateParentButtonInward, animateVolumeParentMerge, animateVolumeParentUnmerge, beginMigrationTransaction, scrubDriver, animateRingToSky, getStackDepth, animateStragglers, discardTopLayer } from './view/migration-animation.js';
 import './diagnostics/child-pyramid-bounds.js'; // Exposes showPyramidBounds/hidePyramidBounds to console
 import { computeDSUA } from './geometry/usable-areas.js';
@@ -2058,6 +2058,19 @@ export function createApp({
               rotating: isRotating,
               logoBounds: volumeLogo.getBounds()
             });
+            // THE MONTH'S LATTICE HAS ITS ONE LARGE DAY TOO (O-327): the day
+            // just visited, else the month's first. Settled months only; the
+            // scrolling ribbon belongs to no month.
+            if (!isRotating && !gridInfo.inGap) {
+              const leftId = pyramidSelected ? dynamicSkies.get(pyramidSelected.id)?.standoutId ?? null : null;
+              const big = largeGridNode(grid.nodes, leftId);
+              if (big) {
+                big.large = true;
+                big.r *= GRID_LARGE_SCALE;
+                big.labelScale = (big.labelScale ?? 1) * GRID_LARGE_SCALE;
+                if (Number.isFinite(big.labelFontPx)) big.labelFontPx = Math.round(big.labelFontPx * GRID_LARGE_SCALE * 10) / 10;
+              }
+            }
             return {
               ...grid,
               emblemUrl: gapEmblemUrl,
@@ -2090,6 +2103,8 @@ export function createApp({
         // order, one size — no dynamic subset, no ranks, no large star, no
         // cap. The node just drilled out from is still remembered, unseen,
         // so a stroke straight back in returns to it.
+        // (O-327 has since given this sky one large star as well; the
+        // rest of the ruling stands.)
         const equalSky = pyramidConfig?.equalSky === true;
         let standoutId = null;
         if (dynamicSkies.size) {
@@ -2133,7 +2148,16 @@ export function createApp({
         // tier-1 child is the sky's one large star; the node just drilled
         // out from keeps its place as the drill's way back (O-198) but no
         // longer its size.
-        const isLarge = ch => Boolean(!equalSky && anyProminence && ch && tierOf(ch) === 1);
+        // EVERY SKY HAS ONE LARGE STAR, AND THE LENS'S TAP TAKES IT (O-327,
+        // Howell 2026-11-21: "every child pyramid has one large node and
+        // only one ... the user would always know before they tap on the
+        // magnifier which node is going into the magnifier"). Which one, in
+        // his order as ruled the same hour: the node just visited, else the
+        // landmark, else the first. It amends O-262 (the node just left has
+        // its size back) and O-240 (a sky of equals has one large star too:
+        // still every child, still in sibling order).
+        const largeIdx = largeChildIndex(children, { standoutId });
+        const isLarge = ch => Boolean(ch && largeIdx >= 0 && ch === children[largeIdx]);
         // THE SKY IS ONE RUN (O-262, O-263): where the children overflow the
         // seats, the sky holds one CONTIGUOUS RUN of them centred on its
         // anchor — never the head alone, never a sampling. After a drill
@@ -2145,10 +2169,9 @@ export function createApp({
         // stars than the cap still shows a run around it.
         const anchor = (() => {
           if (equalSky) return 0;
-          const back = standoutId != null ? children.findIndex(ch => ch?.id === standoutId) : -1;
-          if (back >= 0) return back;
-          const lead = children.findIndex(ch => isLarge(ch));
-          return lead >= 0 ? lead : 0;
+          // The large star (O-327) is the node just left, else the
+          // landmark, else the first: the same three, in the same order.
+          return largeIdx >= 0 ? largeIdx : 0;
         })();
         let seatPool = children.map((_, i) => i);
         if (!policySpread && !equalSky && children.length > seatCount) {
@@ -2156,8 +2179,8 @@ export function createApp({
           seatPool = seatPool.slice(start, start + seatCount);
         }
         if (policySpread && children.length > seatCount) {
-          const prominent = seatPool.filter(i => tierOf(children[i]) < 3);
-          const rest = seatPool.filter(i => tierOf(children[i]) >= 3);
+          const prominent = seatPool.filter(i => tierOf(children[i]) < 3 || i === largeIdx);   // the large star is always seated (O-327)
+          const rest = seatPool.filter(i => tierOf(children[i]) >= 3 && i !== largeIdx);
           const room = Math.max(0, seatCount - prominent.length);
           const sampled = [];
           for (let k = 0; k < room && rest.length; k += 1) {
@@ -2291,7 +2314,7 @@ export function createApp({
             // then handed out in order: around the landmark where it is
             // seated, else as the run centred on the anchor.
             skyPasses = 1;
-            const lm = equalSky ? -1 : children.findIndex(ch => isLarge(ch));
+            const lm = equalSky ? -1 : largeIdx;   // a sky of equals keeps every seat: its large star swells in place, below (O-327)
             geo = computeChildPyramidGeometry(vp, magnifier, arcParams, {
               ...geoOptions, childCount: seatCount, honest: !equalSky,
               labelLengths: Array(seatCount).fill(maxLen), sizeScales: Array(seatCount).fill(SMALL_SCALE),
@@ -2303,6 +2326,11 @@ export function createApp({
               ? lm - geo.bigRank
               : Math.max(0, Math.min(children.length - S.length, anchor - Math.floor(S.length / 2)));
             slots = S.map((slot, j) => ({ ...slot, scale: slot.big ? LARGE_SCALE : (slot.scale ?? SMALL_SCALE), child: first + j }));
+            // A SKY OF EQUALS SHOWS EVERY CHILD (O-240), so its large star
+            // (O-327) takes no room from the others: it swells where it
+            // sits, by the lattice's measure, inside the spacing every seat
+            // already keeps.
+            if (equalSky && largeIdx >= 0) slots = slots.map(slot => (slot.child === largeIdx ? { ...slot, scale: (slot.scale ?? SMALL_SCALE) * EQUAL_LARGE_SCALE } : slot));
             skyLayoutCache = { key, geo, slots };
           }
         }
@@ -2338,6 +2366,7 @@ export function createApp({
                 labelScale: slot.scale ?? 1,
                 halo: anyProminence && tierOf(child) === 1, // Favorites only
                 standout: standoutId != null && child.id === standoutId,   // the node just drilled out from (O-198)
+                large: isLarge(child),   // the sky's one large star, and the lens tap's answer (O-327)
                 // A child that contains the present moment says so itself;
                 // the dresser paints it, and the migration clones inherit
                 // the same face so nothing pops on at settle.

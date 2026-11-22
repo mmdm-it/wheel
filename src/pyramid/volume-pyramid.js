@@ -349,8 +349,41 @@ export function relativeTiers(items, rankOf, { day = dayKey() } = {}) {
 // (O-198: the reciprocal swipe), else the best prominence tier among the
 // sky's nodes (the favourite, under O-134), ties to the first sibling, so a
 // sky with no ranks drills into its beginning.
+// THE SKY'S ONE LARGE STAR (O-327, Howell 2026-11-21): the child just
+// visited, else the landmark (tier 1; the first where several tie), else the
+// first child. Every sky with a child has exactly one. Over the CHILDREN, in
+// sibling order; -1 only for an empty sky.
+export function largeChildIndex(children, { standoutId = null } = {}) {
+  if (!Array.isArray(children) || !children.length) return -1;
+  if (standoutId != null) {
+    const back = children.findIndex(ch => ch && ch.id === standoutId);
+    if (back >= 0) return back;
+  }
+  const lead = children.findIndex(ch => (ch?.prominence ?? ch?.meta?.prominence) === 1);
+  if (lead >= 0) return lead;
+  const first = children.findIndex(Boolean);
+  return first;
+}
+// The month's lattice (O-327): the day just visited, else the month's first
+// day. Header cells and dimmed days are never it.
+// The lattice's cells sit close to the ring's own names, so its large day
+// swells less than a star in a sky of equals does (bench, 2026-11-21: at 1.3
+// the first of the month touched a ring label).
+export const GRID_LARGE_SCALE = 1.2;
+export const EQUAL_LARGE_SCALE = 1.3;
+export function largeGridNode(nodes, standoutId = null) {
+  const days = (Array.isArray(nodes) ? nodes : []).filter(n => n?.item?.level === 'day' && !n.dim);
+  if (!days.length) return null;
+  const back = standoutId != null ? days.find(n => n.id === standoutId || n.item.id === standoutId) : null;
+  if (back) return back;
+  return days.reduce((a, b) => ((b.item.serial ?? Infinity) < (a.item.serial ?? Infinity) ? b : a));
+}
 export function largestChildIndex(nodes) {
   if (!Array.isArray(nodes) || !nodes.length) return -1;
+  // The star drawn large is the answer (O-327): the picture and the tap are
+  // one decision. The rest is the fallback for a sky drawn without one.
+  const drawn = nodes.findIndex(n => n && n.large);
+  if (drawn >= 0) return drawn;
   const back = nodes.findIndex(n => n && n.standout);
   if (back >= 0) return back;
   const tierOf = n => { const it = n?.item ?? n; const t = it?.prominence ?? it?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 5; };

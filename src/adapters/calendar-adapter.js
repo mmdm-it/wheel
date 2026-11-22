@@ -232,6 +232,9 @@ export function layoutSpec(normalized, viewport) {
       // A SKY OF EQUALS (O-240, Howell 2026-10-29): every month of the
       // year, January to December, one size — no featured node, no subset.
       // The calendar diverges from the Bible's ranked, capped skies here.
+      // Since O-327 one of them is large all the same (the node just
+      // visited, else the first): the lens's tap takes it. Still every
+      // month, still in order.
       equalSky: true,
       place: (siblings, viewport, opts) => placePyramidNodes(siblings, vp, { capacity: pyramidCapacity, logoBounds: opts?.logoBounds })
     },
