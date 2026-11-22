@@ -413,6 +413,38 @@ export function computeChildPyramidGeometry(viewport = {}, magnifier = {}, arcPa
           bigRank = S.indexOf(got.big);
           break;
         }
+        // NO SKY IS WITHOUT ITS LARGE STAR (O-327; found by Howell on the
+        // phone, 2026-11-22: three full skies with none). Where the set is
+        // seated whole, the landmark has exactly one rank, and when that
+        // seat could not take the larger star nothing was enlarged at all.
+        // So the field is searched without the height bound, and the seats
+        // that would then read out of order (above a first child, below a
+        // last) are let go with the crowded ones; the spot that keeps the
+        // most seats wins.
+        if (bigRank < 0) {
+          let best = null;
+          for (let k = 1; k <= 1200; k += 1) {
+            const rr = c * 0.5 * Math.sqrt(k);
+            const a = phase + k * GOLDEN_ANGLE_RAD;
+            const x = centerX + rr * Math.cos(a);
+            const y = centerY + rr * Math.sin(a);
+            const v = isValid(x, y, [], 1, labelHalfBig, bigScale, 0);
+            if (!v) continue;
+            const big = { x, y, k, fanId: null, scale: bigScale, labelSeg: v.labelSeg, big: true };
+            const kept = S.filter(p => pairOk(big, p));
+            let above = kept.filter(p => p.y < y || (p.y === y && p.x < x));
+            let below = kept.filter(p => !above.includes(p));
+            if (above.length > landmark) above = above.slice(above.length - landmark);
+            const room = total - 1 - landmark;
+            if (below.length > room) below = below.slice(0, room);
+            const count = above.length + below.length;
+            if (!best || count > best.count) best = { big, above, below, count };
+          }
+          if (best) {
+            S = [...best.above, best.big, ...best.below];
+            bigRank = best.above.length;
+          }
+        }
       }
     }
     intersections = S;

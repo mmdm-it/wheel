@@ -2335,6 +2335,11 @@ export function createApp({
             // (O-327) takes no room from the others: it swells where it
             // sits, by the lattice's measure, inside the spacing every seat
             // already keeps.
+            // And where even the field's search seated no large star, the
+            // child swells where it sits: a sky is never without one (O-327).
+            if (!equalSky && largeIdx >= 0 && !slots.some(slot => slot.big) && slots.some(slot => slot.child === largeIdx)) {
+              slots = slots.map(slot => (slot.child === largeIdx ? { ...slot, scale: (slot.scale ?? SMALL_SCALE) * EQUAL_LARGE_SCALE } : slot));
+            }
             if (equalSky && largeIdx >= 0) slots = slots.map(slot => (slot.child === largeIdx ? { ...slot, scale: (slot.scale ?? SMALL_SCALE) * EQUAL_LARGE_SCALE } : slot));
             skyLayoutCache = { key, geo, slots };
           }
