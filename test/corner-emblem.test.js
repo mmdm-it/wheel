@@ -667,6 +667,38 @@ describe('a declared top level is the furthest out the reader goes (O-314)', () 
   });
 });
 
+// THE BOOK ITSELF AS THE TOP (O-332, Howell 2026-11-22): the catechism's name
+// goes into the lens "with an empty parent button below, just as the Bible
+// has an empty parent button when testaments are in the focus ring", so that
+// its chapters stand in the pyramid, where the reader's last place is marked.
+describe('a ring of books declared the top has an empty seat below it (O-332)', () => {
+  const at = (level, topLevel) => bibleAdapter.createHandlers({
+    manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: { chapters: { B: { 26: 'Matrimony' } } },
+    options: { activeEdition: 'LAT', translation: 'LAT', level, topLevel }
+  });
+  const book = { level: 'book', id: 'B', parentName: 'Christian Doctrine' };
+  it('names nothing above the book, and the seat is not a button', () => {
+    const h = at('book', 'book');
+    assert.equal(h.getParentLabel(book), '');
+    assert.equal(h.getParentActionable(), false);
+    assert.equal(h.getWatermark(book), '', 'the lens says the name; the row says nothing');
+  });
+  it('the drill out there is taken and builds nothing', () => {
+    let set = 0;
+    const app = { setPrimaryItems: () => { set++; }, migrateOut: () => { set++; }, setParentButtons: () => { set++; } };
+    assert.equal(at('book', 'book').parentHandler({ selected: book, app }), true);
+    assert.equal(set, 0);
+  });
+  it('a volume that declares no top still names the division over its books', () => {
+    const h = at('book', null);
+    assert.equal(h.getParentLabel(book).toUpperCase(), 'CHRISTIAN DOCTRINE');
+    assert.equal(h.getParentActionable(), true);
+  });
+  it('one ring in, the chapter in the lens is still named beside the ring', () => {
+    assert.equal(at('chapter', 'book').getWatermark({ level: 'chapter', meta: { bookId: 'B', chapterKey: '26' } }).toUpperCase(), 'MATRIMONY');
+  });
+});
+
 // THE CHAPTER IN THE LENS IS NAMED ACROSS THE GLASS, AT A DECLARED TOP ONLY (O-315).
 describe('the watermark names the chapter in the lens on a declared top ring (O-315)', () => {
   const at = (level, topLevel) => bibleAdapter.createHandlers({

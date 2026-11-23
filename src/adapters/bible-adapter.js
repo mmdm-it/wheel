@@ -1182,6 +1182,10 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // testaments exists for the gateway alone; a standalone boot has no
     // such level, and a testament then has no parent to name.
     if (item.level === 'testament') return hasRoot ? (namesMap?.title || 'BIBLIA SACRA LATINA') : '';
+    // AND NOTHING ABOVE A DECLARED TOP EITHER (O-332): where the volume makes
+    // its books the outermost ring, the book in the lens has an empty seat
+    // below it, as the divisions have.
+    if (item.level === 'book' && topLevel === 'book') return '';
     // Chapter ring: parent is the book name in the display language
     // (e.g. "MATTHAEUS" — namesMap carries the Latin names under VUL)
     if (item.level === 'chapter') {
@@ -1495,7 +1499,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   };
   // The parent seat at the top is words alone (discless) and, with no
   // gateway above, not even that (O-190).
-  const getParentActionable = () => !(bibleMode === 'testament' && !hasRoot);
+  const getParentActionable = () => !(bibleMode === 'testament' && !hasRoot) && !(topLevel === 'book' && bibleMode === 'book');
   // THE ROW BESIDE THE RING (O-315, O-316). Two uses, and the volume's own
   // shape picks between them:
   //  - a volume that declares its chapters the top (the catechisms) names
@@ -1531,11 +1535,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   };
   const getWatermark = (item) => {
     if (topLevel) {
-      if (topLevel !== 'chapter') return '';
-      // On the declared top ring, the chapter in the lens; beneath it, the
+      // On the ring of chapters, the chapter in the lens; beneath it, the
       // chapter the reader is inside, once the button counts it instead of
-      // naming it (O-320).
-      const onTop = bibleMode === topLevel && item?.level === 'chapter';
+      // naming it (O-320). On a ring of books declared the top (O-332) the
+      // lens says the book's own name and the row says nothing.
+      const onTop = bibleMode === 'chapter' && item?.level === 'chapter';
       const inside = item?.level === 'verse' && Boolean(String(namesMap?.vocabulary?.chapter || '').trim());
       if (!onTop && !inside) return '';
       const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || item.parentId || '');
