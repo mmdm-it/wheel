@@ -4831,6 +4831,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const byTongue = (!remembered && !named) ? firstOfferedLanguage(phoneLanguages(), offered) : null;
     if (!(remembered && dimensionBridge.setTranslation(remembered))
         && !(byTongue && dimensionBridge.setLanguage(byTongue) && dimensionStore.getState().edition)
+        // A PHONE THAT SPEAKS NONE OF THE SHELF'S TONGUES (O-335, Howell
+        // 2026-11-23): on a first visit it opens in the tongue the volume
+        // declares for a stranger, where that tongue has something to read,
+        // and not in the first edition of the shelf.
+        && !(!remembered && !named && !byTongue && options.strangerLanguage && offered.includes(options.strangerLanguage)
+             && dimensionBridge.setLanguage(options.strangerLanguage) && dimensionStore.getState().edition)
         && !(options.translation && dimensionBridge.setTranslation(options.translation))) {
       // THE FIRST EDITION OFFERED (O-217, 2026-10-23). The pinned default
       // was refused because it is not servable HERE — a stranger's view

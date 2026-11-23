@@ -439,6 +439,8 @@ const volumeConfigs = {
         // from a literal: under the wall the Vulgate is not enumerated, and
         // naming it here would pin the reader to an edition that does not
         // exist. Language default first, then the single offered edition.
+        // THE TONGUE FOR A PHONE THAT SPEAKS NONE OF THE SHELF'S (O-335).
+        strangerLanguage: root?.display_config?.languages?.stranger || null,
         translation: (() => {
           // NAMED OUTRIGHT ON A PROOFREAD DEEP LINK (O-122). The driver used
           // to boot into the volume's default tongue and then commit the

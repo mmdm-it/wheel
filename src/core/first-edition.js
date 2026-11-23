@@ -1,6 +1,7 @@
 // WHICH EDITION THE BOOT WAITS FOR (O-175): the one the reader chose last
 // time; failing that, the one the address names (O-219); failing that, the
-// one the phone's own languages point to (O-176); failing that, the volume's
+// one the phone's own languages point to (O-176); failing that, the tongue
+// the volume declares for a stranger (O-335); failing that, the volume's
 // default; failing that, the first thing offered. The same order the boot
 // itself settles on, so the edition shown is the edition waited for.
 //
@@ -23,6 +24,11 @@ export function chooseFirstEdition(volumeJson, { remembered = null, named = null
   const lang = firstOfferedLanguage(languages, tonguesOffered);
   const byTongue = lang ? defaults[lang] : null;
   if (byTongue && offered.has(byTongue)) return byTongue;
+  // A PHONE THAT SPEAKS NONE OF THE SHELF'S TONGUES (O-335, Howell
+  // 2026-11-23) opens in the tongue the volume declares for a stranger,
+  // not in the shelf's first edition. The boot settles the same (main.js).
+  const stranger = defaults[cfg.languages?.stranger];
+  if (stranger && offered.has(stranger)) return stranger;
   const dflt = defaults[cfg.languages?.default];
   if (dflt && offered.has(dflt)) return dflt;
   // The first thing offered, in the volume's own order — the boot seats the
