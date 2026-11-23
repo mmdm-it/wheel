@@ -4979,6 +4979,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       return own?.bookmark && own?.landmark ? own : (kits.english?.vocabulary || null);
     })();
     basementWords = roomKit ? { bookmark: roomKit.bookmark || null, landmark: roomKit.landmark || null, and: roomKit.and || null, bookmarkVerb: roomKit.bookmark_verb || null, discard: roomKit.discard || null } : null;
+    // A VOLUME WITHOUT A NAMING KIT SAYS ITS OWN (O-331, Howell 2026-11-22,
+    // of a volume with no kit, whose basement had "no button for bookmarking
+    // or discarding bookmarks"). Since O-326 the word beside the lens is the
+    // only way to keep or let go, so a room with no word could do neither.
+    if (!basementWords) {
+      const own = root?.display_config?.basement_words;
+      if (own && typeof own === 'object') basementWords = { bookmark: own.bookmark || null, landmark: own.landmark || null, and: own.and || null, bookmarkVerb: own.bookmark_verb || null, discard: own.discard || null };
+    }
     return namesMap;
   };
   refreshNamesMap();
