@@ -2261,8 +2261,13 @@ function applyLandscapePortal() {
   if (typeof document === 'undefined' || !currentVolumeId) return;
   const sheet = document.getElementById('portrait-gate');
   if (!sheet) return;
-  // A volume with no language ring reads its page in the phone's tongue.
-  const lang = dimensionBridge.getSelection()?.language || firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || null;
+  // THE PAGE SPEAKS TO THE PHONE BEFORE IT SPEAKS OF THE EDITION (O-334,
+  // 2026-11-23). A phone whose tongue has no edition on the shelf opens on
+  // the first edition offered, and the page then took THAT edition's
+  // language: a phone set to Turkish was shown its two links in Hebrew.
+  // The phone's own tongue comes first wherever the page has words in it;
+  // the edition's language answers only where it has none.
+  const lang = firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || dimensionBridge.getSelection()?.language || null;
   const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);
