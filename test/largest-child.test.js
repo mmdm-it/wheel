@@ -35,17 +35,17 @@ describe('the sky\'s one large star (O-327)', async () => {
   it('the node just visited wins over the landmark', () => {
     assert.equal(largeChildIndex([kid('a'), kid('b', 1), kid('c')], { standoutId: 'c' }), 2);
   });
-  it('else the landmark; the first where several tie', () => {
-    assert.equal(largeChildIndex([kid('a'), kid('b', 1), kid('c', 1)]), 1);
-    assert.equal(largeChildIndex([kid('a', 2), kid('b', 1)], { standoutId: 'gone' }), 1);
+  it('a landmark earns nothing (O-329): unvisited, the first child is large', () => {
+    assert.equal(largeChildIndex([kid('a'), kid('b', 1), kid('c', 1)]), 0);
+    assert.equal(largeChildIndex([kid('a', 2), kid('b', 1)], { standoutId: 'gone' }), 0);
   });
   it('a visit is permanent and supersedes the landmark; the latest visit wins (O-328)', () => {
     assert.equal(largeChildIndex([kid('a'), kid('b', 1), { id: 'c', visited: 3 }]), 2);
     assert.equal(largeChildIndex([{ id: 'a', visited: 9 }, kid('b', 1), { id: 'c', visited: 3 }]), 0);
     // the node just drilled out from still comes first
     assert.equal(largeChildIndex([{ id: 'a', visited: 9 }, kid('b', 1), kid('c')], { standoutId: 'c' }), 2);
-    // an unvisited sky keeps its landmark
-    assert.equal(largeChildIndex([{ id: 'a', visited: 0 }, kid('b', 1)]), 1);
+    // an unvisited sky shows its first child, landmark or no (O-329)
+    assert.equal(largeChildIndex([{ id: 'a', visited: 0 }, kid('b', 1)]), 0);
   });
   it('the record: latest per leaf, a chapter keeps one place, volumes apart', async () => {
     const store = new Map();
