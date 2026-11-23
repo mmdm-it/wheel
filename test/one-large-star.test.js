@@ -26,7 +26,7 @@ describe('one large star, from the landmarks (O-262)', () => {
   });
   it('the large star is one decision (O-327: the node just left has its size back); a crowded sky is one run around it', () => {
     const s = src('index.js');
-    assert.match(s, /const largeIdx = largeChildIndex\(children, \{ standoutId \}\);/);
+    assert.match(s, /const largeIdx = largeChildIndex\(children, \{ standoutId: pyramidConfig\?\.leafVisitsOnly \? null : standoutId \}\);/);
     assert.match(s, /const isLarge = ch => Boolean\(ch && largeIdx >= 0 && ch === children\[largeIdx\]\);/);
     assert.match(s, /seatPool = seatPool\.slice\(start, start \+ seatCount\)/);
   });

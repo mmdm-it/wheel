@@ -44,6 +44,6 @@ describe('the full sky and the seats on the chain (O-263)', () => {
     const i = host.indexOf('const anchor = (() => {');
     const body = host.slice(i, i + 400);
     assert.match(body, /return largeIdx >= 0 \? largeIdx : 0;/, 'the run is anchored on the large star');
-    assert.match(host, /const largeIdx = largeChildIndex\(children, \{ standoutId \}\);/, 'which asks the node just left first (O-327)');
+    assert.match(host, /const largeIdx = largeChildIndex\(children, \{ standoutId: pyramidConfig\?\.leafVisitsOnly \? null : standoutId \}\);/, 'which asks the node just left first (O-327), unless only a leaf is a visit (O-330)');
   });
 });

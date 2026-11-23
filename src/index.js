@@ -2157,7 +2157,10 @@ export function createApp({
         // landmark, else the first. It amends O-262 (the node just left has
         // its size back) and O-240 (a sky of equals has one large star too:
         // still every child, still in sibling order).
-        const largeIdx = largeChildIndex(children, { standoutId });
+        // Where a volume says only a leaf is a visit (O-330), the node
+        // just drilled out from earns nothing: the large star is the
+        // reader's last leaf on the branch, else its first child.
+        const largeIdx = largeChildIndex(children, { standoutId: pyramidConfig?.leafVisitsOnly ? null : standoutId });
         const isLarge = ch => Boolean(ch && largeIdx >= 0 && ch === children[largeIdx]);
         // THE SKY IS ONE RUN (O-262, O-263): where the children overflow the
         // seats, the sky holds one CONTIGUOUS RUN of them centred on its

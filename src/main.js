@@ -5553,8 +5553,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // AND WHERE THEY HAVE BEEN, FOR GOOD (O-328, Howell 2026-11-22): a leaf the
   // reader comes to REST on is marked, and its branch shows it large from
   // then on. A leaf passing under the lens while the ring turns is not a
-  // visit, so the mark waits for the lens to hold still; and the place the
-  // boot put the reader is not one either (noteVisit is not called there).
+  // visit, so the mark waits for the lens to hold still. The leaf a boot
+  // opens on IS one (O-330: from a clean boot, the book opened on is the
+  // large one "as it should be").
   const VISIT_DWELL_MS = 700;
   let visitTimer = 0;
   handlerSet.setVisitedReader?.({ seq: leaf => visitedSeq(volume, leaf), version: visitedVersion });
@@ -5614,6 +5615,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
     { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
   rememberReadingPosition(); // the boot position counts too
+  noteVisit(); // and a leaf the reader is opened on is a leaf they are reading (O-330)
   // The globe follows the magnifier: at the volume's front door it appears,
   // one step of descent hides it (nav change), the leaf brings it back
   // (detail-sector-change). This call catches the boot/gateway arrival.

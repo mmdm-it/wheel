@@ -643,5 +643,9 @@ export function buildBiblePyramid({
       }
     }
   };
-  return { getChildren, onClick };
+  // ONLY A LEAF IS A VISIT (O-330, Howell 2026-11-22: "the only thing that
+  // should trigger last visited is a leaf. Going to a branch ... should not
+  // be enough"): this volume's large star never follows the node merely
+  // drilled out from.
+  return { getChildren, onClick, leafVisitsOnly: true };
 }
