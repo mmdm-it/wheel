@@ -65,6 +65,8 @@ const LANGUAGE_TAGS = {
   // public door is Latin, and the reading font sets a Latin u as v.
   finnish: 'fi',
   swedish: 'sv',
+  danish: 'da',
+  norwegian: 'nb',
   german: 'de',
   hungarian: 'hu',
   tagalog: 'tl',

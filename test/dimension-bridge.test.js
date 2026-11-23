@@ -201,7 +201,7 @@ describe('dimension bridge — selection and defaults', () => {
     assert.equal(bridge.editionLang('VUL'), 'la');
     // O-333: no tongue on the shelf is left to inherit the page's language.
     const src = readFileSync(new URL('../src/core/dimension-bridge.js', import.meta.url), 'utf8');
-    for (const tongue of ['finnish', 'swedish', 'german', 'hungarian', 'tagalog', 'arabic', 'syriac']) {
+    for (const tongue of ['finnish', 'swedish', 'danish', 'norwegian', 'german', 'hungarian', 'tagalog', 'arabic', 'syriac']) {
       assert.match(src, new RegExp(`\\b${tongue}: '[a-z]{2,3}'`), `${tongue} has a tag`);
     }
     const css = readFileSync(new URL('../styles/base.css', import.meta.url), 'utf8');
