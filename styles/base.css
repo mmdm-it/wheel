@@ -1376,6 +1376,14 @@ svg :focus-visible {
 .detail-text--arc[lang="la"] {
   font-feature-settings: "locl" 0;
 }
+/* AND NOTHING ELSE ON A LATIN PAGE LOSES ITS U EITHER (O-333, 2026-11-23).
+   The public door's page is declared Latin, so any text with no language of
+   its own inherited it and was set u-as-v: a reader in Helsinki saw the
+   whole Finnish of 1933/38 that way. Whatever inherits Latin, anywhere,
+   keeps the letters it was given. */
+:lang(la) {
+  font-feature-settings: "locl" 0;
+}
 
 /* ── Arc-following card layout ───────────────────────────────────────── */
 /* Container identical to .detail-text--arc: full-layer, lines are spans
