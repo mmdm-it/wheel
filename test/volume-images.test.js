@@ -31,6 +31,8 @@ const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'
 const AGNOSTIC = new Map([
   ['dimension-sphere.png', 'UI chrome — the dimension button\'s globe. True of every volume.'],
   ['qr.png', 'Marketing. Points at the app, not into a corpus.'],
+  ['lost-column.png', 'The not-found page\'s own art (O-337): a ruin lost in sand. Belongs to 404.html, which the engine ships; quotes no volume.'],
+  ['lost-column-portrait.png', 'The same drawing cropped for an upright phone (O-337).'],
   ['fonts', 'A font is HOW you render, never WHAT you say (and §1c: not ours to license either way).']
 ]);
 

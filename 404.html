@@ -37,7 +37,12 @@
     body[data-door="days"] .quiet { color: #b9c7d6; }
     a.door-link { display: inline-block; margin-top: 10px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--fg); text-decoration: none; border: 2px solid var(--fg); border-radius: 999px; padding: 12px 22px; }
     a.door-link:hover, a.door-link:focus-visible { background: var(--fg); color: var(--bg); outline: none; }
-    .crown { width: 84px; height: 84px; margin: 0 0 22px; display: block; }
+    /* THE LOST COLUMN (O-337, Howell 2026-11-23: "the new art for the 404 page ...
+       cropped for portrait view ... transparent so that you can add our sepia
+       background"). Ink on nothing, so the page's own ground shows through;
+       an upright phone gets the crop, and it runs to the screen's edges. */
+    .ruin { display: block; width: 100%; height: auto; margin: 0 0 22px; }
+    @media (orientation: portrait) { .ruin { width: calc(100% + 40px); max-width: none; margin-left: -20px; margin-right: -20px; } }
     /* October 1582 as Rome lived it: Thursday the 4th, then Friday the 15th. */
     .month { font-family: 'Montserrat', sans-serif; font-weight: 500; margin: 26px 0 22px; }
     .month .name { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--node); margin: 0 0 10px; }
@@ -54,7 +59,10 @@
 <body data-door="book">
   <main>
     <section class="door book" lang="la">
-      <img class="crown" src="/data/gutenberg/2026.08.22/assets/crown_of_thorns.png" alt="">
+      <picture>
+        <source media="(orientation: portrait)" srcset="/assets/lost-column-portrait.png" width="720" height="588">
+        <img class="ruin" src="/assets/lost-column.png" width="1280" height="588" alt="">
+      </picture>
       <p class="eyebrow"><b>CDIV</b>Pagina non inventa</p>
       <h1 id="verse" hidden><span class="verse"></span></h1>
       <p class="ref" id="ref" hidden>Psalmus CXVIII, 176 · Vulgata Clementina</p>
