@@ -243,7 +243,10 @@ const volumeConfigs = {
       mailsAs: 'words',
       titleScale: 2.5,   // Howell: "Make the name the Biblia Catholica 2.5 times larger"
       lift: 7,           // Howell: "shift it up a little bit" — the name off dead centre
-      link: { volume: 'calendar', href: 'https://mmdm.it/', image: 'mmdm_logo', corner: true, label: 'Meccanismi Marittimi delle Marche' },
+      // O-339 (Howell 2026-11-24): NO door to the calendar from here. The
+      // letters of introduction say the Bible carries no advertising, and a
+      // company's mark in the corner that leads to its trade line and its
+      // telephone is one. The calendar keeps its door to the Bible.
       hint: false
     },
     palette: {

@@ -41,7 +41,7 @@ const LAN = { hostname: '192.168.88.167', pathname: '/', protocol: 'http:' };
 describe('landscape portal — the Bible’s page (the minimum, Howell’s notes)', () => {
   const config = volumeConfigs.bible;
 
-  it('is the name, two link words in the reading tongue, and the company’s mark in the corner — no line of its own', () => {
+  it('is the name and two link words in the reading tongue — no company mark, no line of its own', () => {
     const r = portalRecord({ volume: 'bible', config, root: BIBLE_ROOT, lang: 'latin', loc: SQUARE, table: VENUES });
     assert.equal(r.title, 'Biblia Catholica');
     assert.equal(r.titleScale, 2.5, 'the name two and a half times the standard');
@@ -51,10 +51,7 @@ describe('landscape portal — the Bible’s page (the minimum, Howell’s notes
       { address: 'corrections@bibliacatholica.com', href: 'mailto:corrections@bibliacatholica.com', text: 'correctiones', purpose: null }
     ]);
     assert.equal(r.rotate, null, 'no turn-it-upright line');
-    assert.equal(r.link.href, 'https://mmdm.it/', 'in Leicester Square the door is the other domain');
-    assert.equal(r.link.corner, true);
-    assert.equal(r.link.imageUrl, `${config.assetBase}assets/mmdm_logo.png`, 'the mark travels with the Bible’s own art (W-114)');
-    assert.equal(r.link.label, 'Meccanismi Marittimi delle Marche');
+    assert.equal(r.link, null, 'O-339: no company mark and no door to the calendar; the Bible advertises nothing');
     assert.equal(r.dir, 'ltr');
   });
 
@@ -159,7 +156,7 @@ describe('landscape portal — the sheet', () => {
   const doc = { createElement: tag => createMockElement(tag) };
   const texts = node => (node.children.length ? node.children.flatMap(texts) : [node.textContent]).filter(Boolean);
 
-  it('is rebuilt whole from the record — the body, then the corner door; the tongue can change', () => {
+  it('is rebuilt whole from the record — the body alone, no corner door (O-339); the tongue can change', () => {
     const sheet = createMockElement('div');
     sheet.appendChild(createMockElement('svg'));
     const first = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'latin', loc: SQUARE, table: VENUES });
@@ -170,7 +167,7 @@ describe('landscape portal — the sheet', () => {
     assert.equal(sheet.children.length, 1, 'the old rotate icon is gone');
     const page = sheet.children[0];
     assert.deepEqual(texts(page), ['Biblia Catholica', 'info', 'correctiones'], 'nothing else on the page, info read first');
-    assert.equal(page.children.length, 2, 'the body, then the corner door; no rotate line');
+    assert.equal(page.children.length, 1, 'the body alone: no corner door (O-339), no rotate line');
     const body = page.children[0];
     assert.equal(body.className, 'portal-body');
     const mails = body.children.find(c => c.className.startsWith('portal-mails'));
@@ -180,13 +177,7 @@ describe('landscape portal — the sheet', () => {
       ['info', 'mailto:info@bibliacatholica.com'],
       ['correctiones', 'mailto:corrections@bibliacatholica.com']
     ]);
-    const door = page.children[1];
-    assert.equal(door.className, 'portal-door portal-door--corner');
-    assert.equal(door.getAttribute('href'), 'https://mmdm.it/');
-    const img = door.children.find(c => c.tag === 'img');
-    assert.equal(img.getAttribute('src'), `${volumeConfigs.bible.assetBase}assets/mmdm_logo.png`);
-    assert.equal(img.getAttribute('alt'), 'Meccanismi Marittimi delle Marche');
-    assert.equal(door.children.some(c => c.tag === 'span'), false, 'the mark alone, no caption');
+    assert.equal(JSON.stringify(texts(page)).includes('mmdm'), false);
 
     const second = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'hebrew', loc: SQUARE, table: VENUES });
     renderLandscapePortal(sheet, second, doc);
