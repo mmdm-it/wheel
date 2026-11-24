@@ -67,6 +67,7 @@ const LANGUAGE_TAGS = {
   swedish: 'sv',
   danish: 'da',
   norwegian: 'nb',
+  chinese: 'zh-Hant',   // the Union Version is typed in traditional characters (O-336)
   german: 'de',
   hungarian: 'hu',
   tagalog: 'tl',

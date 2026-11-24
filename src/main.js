@@ -162,7 +162,7 @@ import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js'
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { apparatusRuns } from './core/margin-source.js';
 import { computeMarginArea, setMarginKeepOut } from './geometry/margin-area.js';
-import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted } from './view/detail/plugins/line-layout.js';
+import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted, breakUnits, glue } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat, setParentLabelCornerOccupied } from './geometry/focus-ring-geometry.js';
@@ -3545,9 +3545,9 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
           for (let i = 0; i < els.length - 1; i += 1) {
             const box = parseFloat(els[i].style?.maxWidth || els[i].style?.width || '0');
             const here = (els[i].textContent || '').trim();
-            const next = (els[i + 1].textContent || '').trim().split(/\s+/)[0];
+            const next = breakUnits((els[i + 1].textContent || '').trim())[0];
             if (!box || !here || !next) continue;
-            probe.textContent = `${here} ${next}`;
+            probe.textContent = glue(here, next);
             if (probe.getBoundingClientRect().width <= box - 1) return true;
           }
         } catch (_) { return false; } finally { try { probe?.remove(); } catch (_) { /* detached */ } }

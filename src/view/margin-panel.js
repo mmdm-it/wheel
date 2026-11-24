@@ -24,7 +24,7 @@
 // Sector uses, so joining the halves with one space reproduces the notes
 // exactly. Presentation only: nothing renumbered, nothing cut.
 import { computeMarginArea, MARGIN_SPEC } from '../geometry/margin-area.js';
-import { splitVerse } from './detail/plugins/line-layout.js';
+import { splitVerse, breakUnits, glue, textWeight } from './detail/plugins/line-layout.js';
 import { siglumRun, SIGLUM_SPLIT, GREEK_LOWER, apparatusRuns } from '../core/margin-source.js';
 
 /** The footer is set smaller than the note, and this is the largest size that
@@ -84,7 +84,7 @@ function makeFits(area) {
       }
     } catch { /* fall through to the estimate */ }
   }
-  return (text, width) => text.length <= Math.max(4, Math.floor(width / (area.fontPx * 0.46)));
+  return (text, width) => textWeight(text) <= Math.max(4, Math.floor(width / (area.fontPx * 0.46)));
 }
 
 /** Greedy wrap into the lens's rows, from a given first row.
@@ -92,14 +92,14 @@ function makeFits(area) {
  *  breaks it — the page prints διχοτομη-/ματα — instead of painting past the
  *  row's edge into the clip. Display only: the data never carries the hyphen. */
 export function flow(text, area, fromRow, fits = makeFits(area)) {
-  const words = String(text).split(/\s+/).filter(Boolean);
+  const words = breakUnits(text);
   const lines = [];
   let i = 0;
   for (let r = fromRow; r < area.lineTable.length; r++) {
     const row = area.lineTable[r];
     let line = '';
     while (i < words.length) {
-      const next = line ? `${line} ${words[i]}` : words[i];
+      const next = glue(line, words[i]);
       if (!fits(next, row.availableWidth)) {
         if (line) break;
         // A lone word too long for the row: the longest prefix that fits
@@ -117,7 +117,7 @@ export function flow(text, area, fromRow, fits = makeFits(area)) {
     if (!line) break;
     lines.push({ row, text: line });
   }
-  return { lines, remaining: words.slice(i).join(' ') };
+  return { lines, remaining: words.slice(i).reduce((acc, u) => glue(acc, u), '') };
 }
 
 /**
