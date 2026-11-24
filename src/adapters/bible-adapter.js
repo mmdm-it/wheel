@@ -1182,6 +1182,10 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // testaments exists for the gateway alone; a standalone boot has no
     // such level, and a testament then has no parent to name.
     if (item.level === 'testament') return hasRoot ? (namesMap?.title || 'BIBLIA SACRA LATINA') : '';
+    // AND NOTHING ABOVE A DECLARED TOP EITHER (O-332): where the volume makes
+    // its books the outermost ring, the book in the lens has an empty seat
+    // below it, as the divisions have.
+    if (item.level === 'book' && topLevel === 'book') return '';
     // Chapter ring: parent is the book name in the display language
     // (e.g. "MATTHAEUS" — namesMap carries the Latin names under VUL)
     if (item.level === 'chapter') {
@@ -1360,6 +1364,68 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       return undefined;
     };
   })();
+  // THE LEAVES UNDER AN ITEM (O-328): a verse's own, a chapter's, a book's,
+  // as the volume's leaves, so "has the reader been here" is asked of the
+  // text and not of an edition's numbering. The host owns the record; this
+  // only says which leaves an item stands for. A chart not yet landed
+  // answers null and is asked again.
+  const leavesUnder = (() => {
+    const memo = new Map();
+    return item => {
+      const volume = manifest?.__wallVolume;
+      if (!volume?.chartFor || !item) return null;
+      if (item.level === 'verse') {
+        const own = item.meta?.utterances;
+        return Array.isArray(own) && own.length ? { key: `v|${own[0]}|${own.length}`, leaves: own } : null;
+      }
+      if (item.level !== 'chapter' && item.level !== 'book') return null;
+      const edition = options?.activeEdition || options?.translation || null;
+      const key = `${edition}|${item.id}`;
+      const had = memo.get(key);
+      if (had) return had;
+      const bookId = item.level === 'book' ? item.id : (item.meta?.bookId ?? item.parentId);
+      const chart = volume.chartFor(bookId, edition);
+      if (!Array.isArray(chart?.seats)) return null;
+      let from = 1, to = chart.seats.length;
+      if (item.level === 'chapter') {
+        const label = String(item.meta?.chapterLabel ?? item.meta?.chapterKey ?? item.name ?? '');
+        const g = chart.groups?.find(x => String(x.label) === label);
+        if (!g) return null;
+        from = g.from; to = g.to;
+      }
+      const leaves = [];
+      for (let i = from; i <= to; i += 1) for (const u of chart.seats[i - 1]?.utterances || []) leaves.push(u);
+      if (!leaves.length) return null;
+      const got = { key, leaves };
+      memo.set(key, got);
+      return got;
+    };
+  })();
+  // The chapter a verse stands in, as leaves: what a visit to it supersedes.
+  const chapterLeavesOf = verse => {
+    if (!verse || verse.level !== 'verse') return [];
+    const m = verse.meta || {};
+    return leavesUnder({ level: 'chapter', id: m.chapterId ?? verse.parentId, parentId: m.bookId, meta: { bookId: m.bookId, chapterLabel: m.chapterLabel } })?.leaves || [];
+  };
+  // WHEN THE READER WAS LAST UNDER AN ITEM (O-328): the host hands in its
+  // record's reader; without one nothing is marked visited.
+  let visitedReader = null;
+  const visitedOf = (() => {
+    const memo = new Map();
+    let memoAt = -1;
+    return item => {
+      if (!visitedReader) return 0;
+      const got = leavesUnder(item);
+      if (!got) return 0;
+      const at = visitedReader.version();
+      if (at !== memoAt) { memo.clear(); memoAt = at; }
+      if (memo.has(got.key)) return memo.get(got.key);
+      let last = 0;
+      for (const leaf of got.leaves) { const n = visitedReader.seq(leaf); if (n > last) last = n; }
+      memo.set(got.key, last);
+      return last;
+    };
+  })();
   const seatOrderOf = item => {
     const volume = manifest?.__wallVolume;
     if (!volume || !item) return null;
@@ -1433,7 +1499,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
   };
   // The parent seat at the top is words alone (discless) and, with no
   // gateway above, not even that (O-190).
-  const getParentActionable = () => !(bibleMode === 'testament' && !hasRoot);
+  const getParentActionable = () => !(bibleMode === 'testament' && !hasRoot) && !(topLevel === 'book' && bibleMode === 'book');
   // THE ROW BESIDE THE RING (O-315, O-316). Two uses, and the volume's own
   // shape picks between them:
   //  - a volume that declares its chapters the top (the catechisms) names
@@ -1451,13 +1517,29 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     const name = edition?.nativeName || edition?.name || '';
     return name && [...name].length <= 32 ? name : '';
   };
+  // THE EDITION UNDER THE LENS, WHILE A RING IS TURNING (O-323, Howell
+  // 2026-11-21, of the boot film passing eight editions over a page that
+  // named the last of them throughout: it "seems rather predictive"). A
+  // previewed edition names itself; a seat with nothing to read here names
+  // itself too, over an empty page, under the name its seat wears.
+  const watermarkEditionName = () => {
+    const hollow = options?.previewHollow;
+    if (hollow) {
+      const name = String(hollow.name || '');
+      return name && [...name].length <= 32 ? name : '';
+    }
+    const code = options?.previewEdition || null;
+    const edition = code ? translationsMeta?.translations?.[code] : null;
+    const name = edition?.nativeName || edition?.name || '';
+    return name && [...name].length <= 32 ? name : editionName();
+  };
   const getWatermark = (item) => {
     if (topLevel) {
-      if (topLevel !== 'chapter') return '';
-      // On the declared top ring, the chapter in the lens; beneath it, the
+      // On the ring of chapters, the chapter in the lens; beneath it, the
       // chapter the reader is inside, once the button counts it instead of
-      // naming it (O-320).
-      const onTop = bibleMode === topLevel && item?.level === 'chapter';
+      // naming it (O-320). On a ring of books declared the top (O-332) the
+      // lens says the book's own name and the row says nothing.
+      const onTop = bibleMode === 'chapter' && item?.level === 'chapter';
       const inside = item?.level === 'verse' && Boolean(String(namesMap?.vocabulary?.chapter || '').trim());
       if (!onTop && !inside) return '';
       const bookId = displayBookIdFor(item, item.meta?.bookEntryId || item.meta?.bookId || item.parentId || '');
@@ -1465,7 +1547,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       const name = namesMap?.chapters?.[bookId]?.[key];
       return name ? toDisplayCase(name) : '';
     }
-    const name = editionName();
+    const name = watermarkEditionName();
     return name ? toDisplayCase(name) : '';
   };
   // THE READER'S PLACE IN THE READER'S OWN WORDS (O-319, Howell 2026-11-20,
@@ -1656,6 +1738,11 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
     // half; the globe is at every level now, so the host asks nothing here.
     //
     prominenceOf,
+    // The reader's own record of where they have been (O-328).
+    leavesUnder,
+    chapterLeavesOf,
+    visitedOf,
+    setVisitedReader: reader => { visitedReader = reader && typeof reader.seq === 'function' && typeof reader.version === 'function' ? reader : null; },
     // WHERE A SEAT STANDS, for the basement's order (O-128): the book ranked
     // by its place on the shelf (the edition up's where it holds the book,
     // its own edition's otherwise — O-275; the shard list ranked it before
@@ -1713,6 +1800,7 @@ export function createHandlers({ manifest, namesMap, options, translationsMeta, 
       }),
       bibleModeRef: () => bibleMode,
       prominenceOf,
+      visitedOf,
       setBibleMode: next => { bibleMode = next; },
       setBibleChapterContext: ctx => { bibleChapterContext = ctx; },
       setBibleVerseContext: ctx => { bibleVerseContext = ctx; },

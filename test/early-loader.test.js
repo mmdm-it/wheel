@@ -27,6 +27,14 @@ describe('which edition the boot waits for, asked once for the app and the early
     assert.equal(chooseFirstEdition(volume, { languages: ['ja'] }), 'ENG');
     assert.equal(chooseFirstEdition({ editions: [{ code: 'OFF', hasChart: false }, { code: 'X' }] }, {}), 'X');
   });
+  it('a phone that speaks none of the shelf\'s tongues gets the tongue declared for a stranger, before the default (O-335)', () => {
+    const shelf = { ...volume, display_config: { languages: { default: 'hebrew', stranger: 'english' }, editions: volume.display_config.editions } };
+    assert.equal(chooseFirstEdition(shelf, { languages: ['tr-TR'] }), 'ENG');
+    assert.equal(chooseFirstEdition(shelf, { languages: ['it-IT'] }), 'ITA', 'a tongue on the shelf still wins');
+    assert.equal(chooseFirstEdition(shelf, { remembered: 'HEB', languages: ['tr-TR'] }), 'HEB', 'and so does what the reader chose');
+    const none = { ...shelf, display_config: { ...shelf.display_config, languages: { default: 'hebrew', stranger: 'danish' } } };
+    assert.equal(chooseFirstEdition(none, { languages: ['tr-TR'] }), 'HEB', 'a stranger\'s tongue with nothing to read falls through');
+  });
   it('never an edition the volume does not offer', () => {
     assert.equal(chooseFirstEdition(volume, { remembered: 'OFF', named: 'GONE', languages: [] }), 'ENG');
   });

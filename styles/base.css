@@ -91,6 +91,19 @@ html, body {
   -webkit-user-select: none;
   user-select: none;
 }
+/* AND PIN IT ON EVERYTHING UNDER THE BODY TOO (O-322, Howell 2026-11-21, an
+   iPhone in DuckDuckGo: the verse ran off the right of the glass). That
+   browser's own Text Size setting is applied as an inline text-size-adjust on
+   the BODY element, which outranks the rule above, so the painted verse was
+   inflated past the size its wrap was measured at. An inline style on the
+   body can only reach its descendants by inheritance, and a rule that names
+   the descendants ends the inheritance whatever the inline style's weight.
+   The verse is fitted to its sector by measurement; a larger size than the
+   one measured can only crop it. */
+body * {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 body {
   position: fixed;
   inset: 0;
@@ -640,6 +653,19 @@ svg :focus-visible {
   font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
   font-weight: 700;
   letter-spacing: 0.04em;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* A QUIET LINE BESIDE THE WATERMARK (O-325, Howell 2026-11-21: "a whispered
+   sotto voce disclaimer"): the volume's word for an edition it stamps, in
+   lower case as the volume wrote it, red, one step hubward of the name. */
+.focus-ring-watermark-note {
+  fill: rgb(214, 62, 62);
+  opacity: var(--ring-watermark-note-opacity, 0.75);
+  font-family: var(--magnifier-font, 'Montserrat'), sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   pointer-events: none;
   user-select: none;
 }
@@ -1348,6 +1374,14 @@ svg :focus-visible {
    was also narrower than its measurement. Howell caught it in the first
    rehearsal for the film (2026-11-08). */
 .detail-text--arc[lang="la"] {
+  font-feature-settings: "locl" 0;
+}
+/* AND NOTHING ELSE ON A LATIN PAGE LOSES ITS U EITHER (O-333, 2026-11-23).
+   The public door's page is declared Latin, so any text with no language of
+   its own inherited it and was set u-as-v: a reader in Helsinki saw the
+   whole Finnish of 1933/38 that way. Whatever inherits Latin, anywhere,
+   keeps the letters it was given. */
+:lang(la) {
   font-feature-settings: "locl" 0;
 }
 

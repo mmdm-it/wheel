@@ -149,6 +149,7 @@ import { clearStack as clearMigrationStack } from './view/migration-animation.js
 import { createInteractionStore } from './core/interaction-store.js';
 import { createDimensionBridge } from './core/dimension-bridge.js';
 import { recall, remember } from './core/session-memory.js';
+import { visitedSeq, visitedVersion, markVisited } from './core/visited.js';
 import { beginBootOverture, overtureShouldPlay, overtureScrubWanted, splashRecord, mark as overtureMark } from './view/boot-overture.js';
 import { firstOfferedLanguage, phoneLanguages } from './core/tongue.js';
 import { bookmarksOf, keep as keepBookmark, drop as dropBookmark, isBookmarked, inOrder } from './core/bookmarks.js';
@@ -843,6 +844,7 @@ let searchScopedCorpus = [];    // the active subset: leaves under the ring the 
 let searchOpeningAllowed = null;// characters the opening ring is pruned to when scoped (any position)
 let searchGraphById = new Map();// the adapter graph, for walking a leaf up to the ring level
 let searchStringEl = null;      // the carriage — SVG text left of the lens
+let editionStampWords = null;   // O-325: the volume's words for an edition it stamps, per tongue
 let reviewMarkWords = null;  // O-226: the volume's words for the review mark, per tongue — [line 1, line 2]
 let sealUrl = null;   // W-301: the volume's seal, drawn at the foot of the glass on the left; null for a volume without one
 let sealEl = null;
@@ -1561,17 +1563,31 @@ function nodeIndexNearPoint(event, ch) {
   return best != null && bd <= viewport.SSd * 0.14 ? best : null;
 }
 
-// Is the press on the lodestar itself?
-function lensHit(event, ch) {
+// May a tap on the lens carry the reader to the text from this seat (O-324)?
+// Not from a placeholder, and not from a tongue with nothing to read here:
+// there is no page behind the glass to go to.
+function canEnterFromLens(ch, item) {
+  if (item === undefined || item === null) return false;
+  if (typeof ch.inert === 'function' && ch.inert(item)) return false;
+  if (ch.id === 'tertiary') return !(dimensionBridge.isComingLanguage?.(item) || dimensionBridge.isElsewhereLanguage?.(item));
+  return item !== dimensionBridge.comingSoonKey;
+}
+
+// Is the press on the lodestar itself? `part` narrows the question to the
+// glass alone or to the word beside it alone: in the basement the two are
+// different buttons (O-326), the glass going to the verse and the word
+// marking it.
+function lensHit(event, ch, part = null) {
   const lens = strataLayer?.querySelector(`#${ch.id} .secondary-strata-node.is-magnified`);
   if (!lens) return false;
   const rect = strataLayer.getBoundingClientRect();
   const x = event.clientX - rect.left, y = event.clientY - rect.top;
   const reach = viewport.SSd * 0.09;
-  if (Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= reach) return true;
-  // The word beside the lens (O-280) is the lens's too: a tap on BOOKMARK or
-  // DISCARD is a tap on the lens. Its box, padded by a finger's slack; where
-  // the glass cannot measure text, its anchor and a reach.
+  if (part !== 'word' && Math.hypot(Number(lens.getAttribute('cx')) - x, Number(lens.getAttribute('cy')) - y) <= reach) return true;
+  if (part === 'glass') return false;
+  // The word beside the lens (O-280): BOOKMARK or DISCARD. Its box, padded
+  // by a finger's slack; where the glass cannot measure text, its anchor and
+  // a reach.
   const word = strataLayer.querySelector?.(`#${ch.id} .secondary-strata-caption:not([display="none"])`);
   if (!word) return false;
   const pad = viewport.SSd * 0.03;
@@ -1739,10 +1755,11 @@ if (strataLayer) {
   strataLayer.addEventListener('pointerdown', event => {
     const ch = activeChooser();
     if (!ch || strataAnim) return; // nothing to rotate at the primary or mid-glide
+    const caught = Boolean(strataSnap);   // the ring was still gliding when the finger landed
     if (strataSnap) { cancelAnimationFrame(strataSnap); strataSnap = null; } // catch a springback
     const items = ch.items();
     strataDrag = {
-      items,
+      items, caught,
       center: clampCenter(items.indexOf(ch.selected()), items.length),
       spacing: getNodeSpacing(viewport), // rad per node — constant through the drag
       lastX: event.clientX, lastY: event.clientY,
@@ -1782,20 +1799,44 @@ if (strataLayer) {
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(type =>
     strataLayer.addEventListener(type, event => {
       if (!strataDrag) return;
-      const { items, center, moved } = strataDrag;
+      const { items, center, moved, caught } = strataDrag;
       if (strataDrag.raf) cancelAnimationFrame(strataDrag.raf);
       strataDrag = null;
       const ch = activeChooser();
       // Tap (no drag) on a node → glide THAT node into the lens; a drag → snap
       // to the nearest. Either way springbackStrata eases it home and commits.
       let target = clampCenter(Math.round(center), items.length);
+      let enter = false;
       if (!moved && type === 'pointerup') {
         const tapped = nodeIndexNearPoint(event, ch);
+        // The chosen seat sits under the lens, so a tap there can name that
+        // seat as readily as the lens: both are a tap on the lens (O-324).
+        // In the basement the glass alone is the lens; the word beside it is
+        // its own button (O-326).
+        const onLens = items.length > 0 && (tapped == null || tapped === target) && lensHit(event, ch, ch === BASEMENT ? 'glass' : null);
         if (tapped != null) target = tapped;
-        // THE LENS KEEPS (O-126): in the basement, a tap on the lens itself
-        // keeps the seat under it, or drops a kept one — the one gesture the
-        // basement adds, on the one control that means "here".
-        else if (ch === BASEMENT && items.length && lensHit(event, ch)) toggleKeep(items[target]);
+        // THE WORD MARKS (O-126, O-280; narrowed by O-326, Howell 2026-11-21:
+        // "these taps are detected on the words themselves and not on the
+        // lens. The lens is merely an indicator"): in the basement a tap on
+        // BOOKMARK or DISCARD keeps the seat under the lens, or drops a kept
+        // one. The glass no longer does.
+        else if (ch === BASEMENT && items.length && lensHit(event, ch, 'word')) toggleKeep(items[target]);
+        // THE LENS ENTERS (O-324, Howell 2026-11-21, of a reader's request:
+        // "rotates to their new language or edition, and then ... taps on
+        // the magnifier to go back to the primary stratum in that newly
+        // selected edition"; a single tap, at his word, on these two rings
+        // only). The seat was chosen when the ring settled; the tap only
+        // carries the reader to what stands behind the glass, as the globe
+        // does. At rest alone: a ring caught mid-glide has chosen nothing
+        // yet. A seat with nothing to read here enters nothing.
+        // AND IN THE BASEMENT (O-326, Howell the same day: "a single tap
+        // taking the user directly to that verse, whether bookmarked, oft
+        // quoted, or neither"): the same tap on the glass goes up to the
+        // verse under it, by the ordinary ascent.
+        if (onLens) {
+          enter = !caught && canEnterFromLens(ch, items[target]);
+          window.__wheelTapTrace?.push({ ev: 'lens-tap', ring: ch.id, caught: caught ? 1 : 0, enter: enter ? 1 : 0 });
+        }
       }
       if (!items.length) return;   // an empty basement: nothing to settle
       // A placeholder seat cannot be chosen (O-184): the ring settles on the
@@ -1807,6 +1848,7 @@ if (strataLayer) {
         }
       }
       springbackStrata(center, target, ch, items);
+      if (enter) { if (ch === BASEMENT) BASEMENT.select(items[target]); const went = goToStratum(0); window.__wheelTapTrace?.push({ ev: 'lens-enter', went: went ? 1 : 0, anim: strataAnim ? 1 : 0 }); }
     })
   );
 }
@@ -1889,6 +1931,9 @@ function beginGlide(fromFront, toFront, { lens = null } = {}) {
   strataPreview = null;
   lastPreviewKey = null;
   previewTextMuted = false;
+  // A page left empty under a hollow seat's name (O-323) is no preview a
+  // commit will replace: the reading comes back before the floors move.
+  if (hollowPreviewShown) previewPrimary({ edition: null });
   if (strataLayer) strataLayer.style.pointerEvents = 'none'; // no rotating mid-glide
   if (strataHit) strataHit.style.pointerEvents = 'none';
   const from = layerStates(fromFront);
@@ -2216,8 +2261,13 @@ function applyLandscapePortal() {
   if (typeof document === 'undefined' || !currentVolumeId) return;
   const sheet = document.getElementById('portrait-gate');
   if (!sheet) return;
-  // A volume with no language ring reads its page in the phone's tongue.
-  const lang = dimensionBridge.getSelection()?.language || firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || null;
+  // THE PAGE SPEAKS TO THE PHONE BEFORE IT SPEAKS OF THE EDITION (O-334,
+  // 2026-11-23). A phone whose tongue has no edition on the shelf opens on
+  // the first edition offered, and the page then took THAT edition's
+  // language: a phone set to Turkish was shown its two links in Hebrew.
+  // The phone's own tongue comes first wherever the page has words in it;
+  // the edition's language answers only where it has none.
+  const lang = firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || dimensionBridge.getSelection()?.language || null;
   const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);
@@ -3241,6 +3291,33 @@ window.addEventListener('detail-sector-change', (e) => {
 });
 
 let detailRenderSeq = 0; // stale-verify guard: each render invalidates pending checks
+// AN EDITION THE VOLUME STAMPS IS NAMED SO, QUIETLY, BESIDE ITS OWN NAME
+// (O-325, Howell 2026-11-21). The first build laid the words in red across
+// the verse, as he had drawn them; having seen it he moved them: "down to
+// just above the watermark ... lowercase. This is more of a whispered sotto
+// voce disclaimer that doesn't presume to stamp across the Word of God."
+// Which editions, and the words in each tongue, are the volume's (`stamp:
+// true` on the edition, `edition_stamp` in display_config; the engine holds
+// no human words, O-43). The words speak the tongue of the edition they are
+// on. A seat with nothing to read here carries none.
+function editionStampWord(code) {
+  const edition = code ? (currentManifest?.__wallVolume?.editions || []).find(e => e?.code === code) : null;
+  const table = editionStampWords;
+  if (edition?.stamp !== true || !table) return '';
+  return String(typeof table === 'string' ? table : (table[edition.language] ?? table.default ?? ''));
+}
+// AN EMPTY PAGE (O-323): the seat under the lens has nothing to read here, so
+// the sector is cleared, with any margin, and every pending check of the text
+// that stood there is cancelled.
+function blankDetail() {
+  if (!detailContent) return;
+  detailRenderSeq += 1;
+  while (detailContent.firstChild) detailContent.removeChild(detailContent.firstChild);
+  renderMargin(null, null, seqOfMargin());
+}
+// Whether the page behind the glass is standing empty under a hollow seat's
+// name, so a truck begun from that seat knows to bring the reading back.
+let hollowPreviewShown = false;
 function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { translation, wrapAttempt = 0, part } = {}) {
   if (!detailPanel || !detailContent) return;
   // Only the leaf is described here. Note this returns WITHOUT clearing:
@@ -3401,7 +3478,21 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
         { translation, wrapAttempt, part });
     });
   }
-  if (wrapAttempt < 3 && typeof requestAnimationFrame === 'function') {
+  // AND THE WATCH OUTLIVES ITS OWN ATTEMPTS, AND A SLOW NETWORK (O-322).
+  // Howell, 2026-11-21, an iPhone in a browser whose cache he empties before
+  // every visit: the verse stood wrapped one word too long on three lines,
+  // running off the glass, and stayed that way. The phone's own report from
+  // a second load showed the same verse measured and painted correctly, so
+  // the wrap was honest for a face that was not yet the painted one, and
+  // nothing was still looking when the real face arrived. Two holes: the
+  // schedule below ended three seconds after the render, which a cold cache
+  // on a poor connection outlasts; and a render that had spent its three
+  // attempts set no watch at all. So the schedule now runs to half a minute,
+  // and an exhausted render keeps the two questions only the paint can
+  // answer (a line past its box, the first line's width moved), under one
+  // budget for the life of the page so nothing can loop.
+  const exhausted = wrapAttempt >= 3;
+  if ((!exhausted || lateWrapBudget > 0) && typeof requestAnimationFrame === 'function') {
     // AND THE WATCH OUTLASTS THE FRAME (O-121). Two frames is ~32ms and the
     // real face can reach layout hundreds of milliseconds later — which is
     // exactly the boot case, and exactly why rotating the ring "fixed" it:
@@ -3475,7 +3566,11 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       // This asks nothing about fonts. It compares a number to itself across
       // two frames. If it moved, the face moved under the layout and every
       // break in it is stale.
-      if (!overflows && !faceMarkDrifted() && !underfilled()) return false;
+      if (!overflows && !faceMarkDrifted() && (exhausted || !underfilled())) return false;
+      if (exhausted) {
+        if (lateWrapBudget <= 0) return false;
+        lateWrapBudget -= 1;
+      }
       invalidateVerseMeasurement();
       versePartsCache.clear(); // part counts derive from the measurement (O-84)
       // KEEPING THE HALF IT WAS DRAWING. The retry re-wraps the same text
@@ -3483,17 +3578,21 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
       // silently snapped a reader on the second half back to the first, in a
       // repaint they never asked for and could not have attributed.
       renderDetail(selected, adapterInstance, manifest, adapterNormalized,
-        { translation, wrapAttempt: wrapAttempt + 1, part });
+        { translation, wrapAttempt: exhausted ? wrapAttempt : wrapAttempt + 1, part });
       return true;
     };
     requestAnimationFrame(() => requestAnimationFrame(() => {
       if (verify()) return;
-      for (const ms of [250, 750, 1500, 3000]) {
+      for (const ms of [250, 750, 1500, 3000, 6000, 12000, 20000, 30000]) {
         setTimeout(() => { if (seq === detailRenderSeq) verify(); }, ms);
       }
     }));
   }
 }
+
+// How many times a render past its attempts may still be re-laid because the
+// paint disagreed with it, for the life of the page (O-322).
+let lateWrapBudget = 8;
 
 let marginRenderSeq = 0;
 const seqOfMargin = () => ++marginRenderSeq;
@@ -4732,6 +4831,12 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     const byTongue = (!remembered && !named) ? firstOfferedLanguage(phoneLanguages(), offered) : null;
     if (!(remembered && dimensionBridge.setTranslation(remembered))
         && !(byTongue && dimensionBridge.setLanguage(byTongue) && dimensionStore.getState().edition)
+        // A PHONE THAT SPEAKS NONE OF THE SHELF'S TONGUES (O-335, Howell
+        // 2026-11-23): on a first visit it opens in the tongue the volume
+        // declares for a stranger, where that tongue has something to read,
+        // and not in the first edition of the shelf.
+        && !(!remembered && !named && !byTongue && options.strangerLanguage && offered.includes(options.strangerLanguage)
+             && dimensionBridge.setLanguage(options.strangerLanguage) && dimensionStore.getState().edition)
         && !(options.translation && dimensionBridge.setTranslation(options.translation))) {
       // THE FIRST EDITION OFFERED (O-217, 2026-10-23). The pinned default
       // was refused because it is not servable HERE — a stranger's view
@@ -4885,6 +4990,14 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       return own?.bookmark && own?.landmark ? own : (kits.english?.vocabulary || null);
     })();
     basementWords = roomKit ? { bookmark: roomKit.bookmark || null, landmark: roomKit.landmark || null, and: roomKit.and || null, bookmarkVerb: roomKit.bookmark_verb || null, discard: roomKit.discard || null } : null;
+    // A VOLUME WITHOUT A NAMING KIT SAYS ITS OWN (O-331, Howell 2026-11-22,
+    // of a volume with no kit, whose basement had "no button for bookmarking
+    // or discarding bookmarks"). Since O-326 the word beside the lens is the
+    // only way to keep or let go, so a room with no word could do neither.
+    if (!basementWords) {
+      const own = root?.display_config?.basement_words;
+      if (own && typeof own === 'object') basementWords = { bookmark: own.bookmark || null, landmark: own.landmark || null, and: own.and || null, bookmarkVerb: own.bookmark_verb || null, discard: own.discard || null };
+    }
     return namesMap;
   };
   refreshNamesMap();
@@ -4990,6 +5103,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   searchGraphById = new Map();
   searchAllLabel = root?.display_config?.search_all_label || 'TUTTI';
   reviewMarkWords = root?.display_config?.review_mark || null;
+  editionStampWords = root?.display_config?.edition_stamp || null;   // O-325
   // THE SEAL (W-301): a volume may declare a small drawing that stands fixed
   // at the foot of the glass on the left, on every page, doing nothing — the
   // mirror of the emblem in its sector upper right. Its file is the volume's,
@@ -5130,6 +5244,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     setCalendarMonthContext: layoutBindings.setCalendarMonthContext,
     bibleModeRef: layoutBindings.bibleModeRef,
     prominenceOf: layoutBindings.prominenceOf,
+    visitedOf: layoutBindings.visitedOf,
     setBibleMode: layoutBindings.setBibleMode,
     setBibleChapterContext: layoutBindings.setBibleChapterContext,
     setBibleVerseContext: layoutBindings.setBibleVerseContext,
@@ -5215,6 +5330,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     getParentIcon: typeof handlerSet.getParentIcon === 'function' ? handlerSet.getParentIcon : null,
     getWatermark: typeof handlerSet.getWatermark === 'function' ? handlerSet.getWatermark : null,
     watermarkRest: handlerSet.watermarkRest || 'middle',
+    // The quiet line beside the watermark (O-325): for the edition under the
+    // lens while a ring turns, else the one being read; none over an empty page.
+    getWatermarkNote: () => (options?.previewHollow ? '' : editionStampWord(options?.previewEdition || options?.activeEdition || options?.translation || null)),
     warmItem: typeof handlerSet.warmItem === 'function' ? handlerSet.warmItem : null,
     pyramid: pyramidConfig,
     pyramidLayoutSpec: pyramidLayout,
@@ -5325,7 +5443,18 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     app.view.magnifierCircle.addEventListener('click', () => {
       if (lensSwipeFiredAt && Date.now() - lensSwipeFiredAt < 700) { lensSwipeFiredAt = 0; return; }   // the swipe already drilled (O-132)
       if (searchRestore) { strikeSettledChar(); return; }
-      app.toggleVersePart?.();
+      if (app.toggleVersePart?.()) return;
+      // THE LENS DRILLS IN (O-326, Howell 2026-11-21, extending the tap of
+      // O-324 to this ring: "tapping on the magnifier would migrate the
+      // child pyramid nodes into the focus ring"). One level, to the node a
+      // swipe in would take: the sky's largest. A leaf has no sky and the
+      // tap stays inert there; a migration still in flight refuses it, so
+      // two quick taps cannot skip a level. It amends O-294: the lens is a
+      // fourth way to change level, beside the parent, a star and the swipe.
+      const star = app.largestPyramidIndex?.() ?? -1;
+      if (star < 0) return;
+      try { window.__tapDebugLog?.('lens-tap-drill-in', { idx: star }); } catch (_) { /* log only */ }
+      app.handlePyramidNodeClick?.(star);
     });
   }
   // Expose app to window for console API
@@ -5440,6 +5569,26 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     if (!isDetailLevel(current, adapterNormalized)) return;
     remember(volume, { itemId: current.id });
   };
+  // AND WHERE THEY HAVE BEEN, FOR GOOD (O-328, Howell 2026-11-22): a leaf the
+  // reader comes to REST on is marked, and its branch shows it large from
+  // then on. A leaf passing under the lens while the ring turns is not a
+  // visit, so the mark waits for the lens to hold still. The leaf a boot
+  // opens on IS one (O-330: from a clean boot, the book opened on is the
+  // large one "as it should be").
+  const VISIT_DWELL_MS = 700;
+  let visitTimer = 0;
+  handlerSet.setVisitedReader?.({ seq: leaf => visitedSeq(volume, leaf), version: visitedVersion });
+  const noteVisit = () => {
+    clearTimeout(visitTimer);
+    if (typeof handlerSet.leavesUnder !== 'function') return;
+    const at = app?.nav?.getCurrent?.();
+    if (!at?.id || !isDetailLevel(at, adapterNormalized)) return;
+    visitTimer = setTimeout(() => {
+      if (currentApp !== app || app?.nav?.getCurrent?.()?.id !== at.id) return;
+      const leaves = handlerSet.leavesUnder(at)?.leaves;
+      if (leaves?.length) markVisited(volume, leaves, handlerSet.chapterLeavesOf?.(at) || []);
+    }, VISIT_DWELL_MS);
+  };
   // WHEN EVERY SHELF IS STOCKED (O-175), one quiet redraw seats whatever
   // waited on another edition — a bookmark to its leaf, a hit on its ring.
   manifest?.__wallVolume?.allReady?.().then(() => { if (currentApp === app) app?.refreshPyramid?.(); });
@@ -5485,6 +5634,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
     { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
   rememberReadingPosition(); // the boot position counts too
+  noteVisit(); // and a leaf the reader is opened on is a leaf they are reading (O-330)
   // The globe follows the magnifier: at the volume's front door it appears,
   // one step of descent hides it (nav change), the leaf brings it back
   // (detail-sector-change). This call catches the boot/gateway arrival.
@@ -5502,6 +5652,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
     updateDimensionButton();
     rememberReadingPosition();
+    noteVisit();
   });
   dimensionBridge.onSettle(translation => {
     // THE FUNNEL IS NOT CLOSED BY A COMMIT (O-77). It used to be — "a
@@ -5542,6 +5693,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
     // preview edition would send every later name through a crossing that is
     // no longer happening (O-94).
     options.previewEdition = null;
+    options.previewHollow = null;
+    hollowPreviewShown = false;
     // THE READER IS CARRIED ACROSS, NOT LEFT BEHIND. Once whatever the volume
     // needs has landed, give it the chance to RE-SEAT: the reader is standing
     // on a particular thing, and a volume whose editions divide their contents
@@ -5579,6 +5732,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // immediately (harmless re-render) if the face was already loaded.
   onVerseFontReady(() => {
     versePartsCache.clear(); // the real serif re-measures everything (O-84)
+    if (options?.previewHollow) return;   // a page standing empty stays empty (O-323)
     renderDetail(
       app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
       { translation: activeTranslation(), part: app?.getVersePart?.() ?? 0 });
@@ -5597,8 +5751,9 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       // In the edition the reader is PREVIEWING, if one is under the lens
       // (O-228): the text that lands during a turn is the previewed
       // edition's, and painting it in the committed one would undo the turn.
-      renderDetail: item => renderDetail(item, adapter, manifest, adapterNormalized,
-        { translation: options?.previewEdition || activeTranslation(), part: app?.getVersePart?.() ?? 0 })
+      // And not at all over a page standing empty under a hollow seat (O-323).
+      renderDetail: item => { if (options?.previewHollow) return; renderDetail(item, adapter, manifest, adapterNormalized,
+        { translation: options?.previewEdition || activeTranslation(), part: app?.getVersePart?.() ?? 0 }); }
     });
   }
   if (!interactionsWired) {
@@ -5631,15 +5786,61 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
       // stale preview to clear. Now it clears it: names, pyramid and text
       // return to the committed edition, exactly as the settle would leave
       // them. Nothing to clear, nothing repainted.
-      if (!options.previewEdition) return;
+      //
+      // AND THE PAGE STANDS EMPTY UNDER THE SEAT'S OWN NAME (O-323, Howell
+      // 2026-11-21: "Empty nodes should present blank verses and an empty
+      // Detail Sector (other than the watermark)"). Returning the committed
+      // reading here made five hollow seats in a row show the edition the
+      // boot film ends on, which read as the film knowing its own ending.
+      // The NAMES still return to the committed edition, as above; only the
+      // verse is withheld, and the watermark says whose seat this is. A call
+      // that names neither an edition nor a tongue is the turn's end asking
+      // for the reading back, and gets it.
+      const hollowKey = edition && edition !== dimensionBridge.comingSoonKey ? edition
+        : (preview.language ? (dimensionBridge.translationsOf(preview.language) || []).find(k => k && k !== dimensionBridge.comingSoonKey) || '' : null);
+      const wasHollow = Boolean(options.previewHollow);
+      if (hollowKey === null) {
+        if (!options.previewEdition && !wasHollow) return;
+      }
+      const hadPreview = Boolean(options.previewEdition);
       options.previewEdition = null;
-      refreshNamesMap();
+      options.previewHollow = hollowKey === null ? null
+        : { name: hollowKey ? (dimensionBridge.translationName(hollowKey, preview.language || null) || '') : '' };
+      hollowPreviewShown = Boolean(options.previewHollow);
+      if (hadPreview) refreshNamesMap();
       if (typeof app?.refreshPyramid === 'function') app.refreshPyramid();
       if (typeof app?.setParentButtons === 'function') app.setParentButtons({ showOuter: true });
-      renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
+      // A SEAT THAT IS HOLLOW ONLY BECAUSE ITS EDITION IS STILL ARRIVING is
+      // asked for now, and shown the moment it lands if the lens has not
+      // moved on: at boot the shelves are still stocking while the film
+      // turns, and a finger can rest on such a seat.
+      // A passing TONGUE asks for every edition it has on the way, and shows
+      // the first that seats the reader's place, which need not be the first
+      // on its shelf (the Greek of a Gospel is not the Septuagint).
+      const shelf = currentManifest?.__wallVolume;
+      const declared = code => Boolean(code) && (shelf?.editions || []).some(e => e?.code === code);
+      const ofTongue = !edition && preview.language ? (dimensionBridge.translationsOf(preview.language) || []) : [];
+      const waiting = (ofTongue.length ? ofTongue : [hollowKey])
+        .filter(k => k && dimensionBridge.isComing?.(k)).map(k => dimensionBridge.editionOfKey?.(k)).filter(declared);
+      if (waiting.length && typeof shelf?.ready === 'function') {
+        const mine = options.previewHollow;
+        for (const code of waiting) {
+          Promise.resolve((shelf.wake || shelf.ready).call(shelf, code)).then(() => {
+            if (options.previewHollow !== mine) return;
+            if (!ofTongue.length) { previewPrimary({ language: preview.language, edition: code }); return; }
+            const now = dimensionBridge.translationsOf(preview.language) || [];
+            const best = now.find(k => !dimensionBridge.isComing?.(k) && !dimensionBridge.isElsewhere?.(k));
+            if (best) previewPrimary({ language: preview.language, edition: best });
+          }, () => {});
+        }
+      }
+      if (options.previewHollow) blankDetail();
+      else renderDetail(app?.nav?.getCurrent?.(), adapter, manifest, adapterNormalized,
         { translation: activeTranslation(), part: 0 });
       return;
     }
+    options.previewHollow = null;
+    hollowPreviewShown = false;
     // A preview of an edition still arriving (O-175) waits for it, then
     // shows it — unless the finger has moved on to another by then.
     const vol = currentManifest?.__wallVolume;
@@ -5727,7 +5928,7 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
         turnEnd: () => {
           if (previewFollow) { cancelAnimationFrame(previewFollow); previewFollow = 0; }
           strataPreview = null; lastPreviewKey = null; previewTextMuted = false;
-          if (options.previewEdition && options.previewEdition !== activeTranslation()) previewPrimary({ edition: null });
+          if ((options.previewEdition && options.previewEdition !== activeTranslation()) || options.previewHollow) previewPrimary({ edition: null });
           else options.previewEdition = null;
         },
         // The globe rides the migration as it rides a drag (Howell

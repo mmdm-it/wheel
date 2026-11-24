@@ -58,7 +58,20 @@ const LANGUAGE_TAGS = {
   french: 'fr',
   italian: 'it',
   spanish: 'es',
-  portuguese: 'pt'
+  portuguese: 'pt',
+  // EVERY TONGUE ON THE SHELF IS TAGGED (O-333, 2026-11-23). A reader in
+  // Helsinki reported the Finnish of 1933/38 with every u drawn as v: these
+  // tongues had no tag, so their text took the PAGE's language, which on the
+  // public door is Latin, and the reading font sets a Latin u as v.
+  finnish: 'fi',
+  swedish: 'sv',
+  danish: 'da',
+  norwegian: 'nb',
+  german: 'de',
+  hungarian: 'hu',
+  tagalog: 'tl',
+  arabic: 'ar',
+  syriac: 'syc'
 };
 
 // W-6's substitution footer (Howell ruled 2026-07-27, mark #3): the notice

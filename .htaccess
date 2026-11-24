@@ -6,6 +6,12 @@
 # All guarded so a missing module degrades to the plain .json, never a 500.
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # THE SECURE ADDRESS, ALWAYS (O-322, Howell 2026-11-21: a phone browser
+  # warned that the site was not safe). The certificate was sound; the plain
+  # http address simply answered 200 instead of sending the visitor on, and a
+  # browser that is handed a bare domain tries http first.
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
   RewriteCond %{HTTP:Accept-Encoding} gzip
   RewriteCond %{REQUEST_FILENAME}.gz -f
   RewriteRule ^(.+)\.json$ $1.json.gz [L]

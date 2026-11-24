@@ -439,6 +439,8 @@ const volumeConfigs = {
         // from a literal: under the wall the Vulgate is not enumerated, and
         // naming it here would pin the reader to an edition that does not
         // exist. Language default first, then the single offered edition.
+        // THE TONGUE FOR A PHONE THAT SPEAKS NONE OF THE SHELF'S (O-335).
+        strangerLanguage: root?.display_config?.languages?.stranger || null,
         translation: (() => {
           // NAMED OUTRIGHT ON A PROOFREAD DEEP LINK (O-122). The driver used
           // to boot into the volume's default tongue and then commit the
@@ -1164,7 +1166,10 @@ volumeConfigs.bible.door = 'church';
 // The probe's drop box (telemetry.php on the production host). Deployment
 // layout is a literal like any other — it lives here, not in diagnostics.
 const PROBE_SINK = {
-  relative: '/mmdm/telemetry.php',
+  // Beside the page, wherever the page is served (O-322): the old absolute
+  // path named a directory that exists on none of today's three venues, so a
+  // report from the field went to a 404.
+  relative: 'telemetry.php',
   absolute: 'https://howellgibbens.com/mmdm/telemetry.php',
   lan: '/probe-drop' // the LAN dev server writes these to files (2026-07-27)
 };

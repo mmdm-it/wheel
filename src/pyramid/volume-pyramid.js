@@ -349,8 +349,54 @@ export function relativeTiers(items, rankOf, { day = dayKey() } = {}) {
 // (O-198: the reciprocal swipe), else the best prominence tier among the
 // sky's nodes (the favourite, under O-134), ties to the first sibling, so a
 // sky with no ranks drills into its beginning.
+// THE SKY'S ONE LARGE STAR (O-327, Howell 2026-11-21): the child just
+// visited, else the landmark (tier 1; the first where several tie), else the
+// first child. Every sky with a child has exactly one. Over the CHILDREN, in
+// sibling order; -1 only for an empty sky.
+// A VISIT IS PERMANENT (O-328, Howell 2026-11-22: "for a particular book or
+// chapter, a visited node supersedes a landmark node"): after the node just
+// drilled out from comes the child the reader last rested on a leaf under,
+// whenever that was, and only a sky never visited shows its landmark or its
+// first. One look for all of them: "superseded nodes and original
+// oft-quoted nodes can look the same."
+export function largeChildIndex(children, { standoutId = null } = {}) {
+  if (!Array.isArray(children) || !children.length) return -1;
+  if (standoutId != null) {
+    const back = children.findIndex(ch => ch && ch.id === standoutId);
+    if (back >= 0) return back;
+  }
+  let last = -1;
+  children.forEach((ch, i) => { const at = Number(ch?.visited); if (at > 0 && (last < 0 || at > Number(children[last].visited))) last = i; });
+  if (last >= 0) return last;
+  // THE LANDMARK NO LONGER COUNTS (O-329, Howell 2026-11-22: "disconnecting
+  // the large pyramid nodes ... from oft-quoted verses, certainly ... if
+  // someone wants to see an oft-quoted verse, they can go to the basement
+  // and find it. We don't need to make it special in the reader itself").
+  // The large star is a breadcrumb: where the reader last was on this
+  // branch, else its first child.
+  const first = children.findIndex(Boolean);
+  return first;
+}
+// The month's lattice (O-327): the day just visited, else the month's first
+// day. Header cells and dimmed days are never it.
+// The lattice's cells sit close to the ring's own names, so its large day
+// swells less than a star in a sky of equals does (bench, 2026-11-21: at 1.3
+// the first of the month touched a ring label).
+export const GRID_LARGE_SCALE = 1.2;
+export const EQUAL_LARGE_SCALE = 1.3;
+export function largeGridNode(nodes, standoutId = null) {
+  const days = (Array.isArray(nodes) ? nodes : []).filter(n => n?.item?.level === 'day' && !n.dim);
+  if (!days.length) return null;
+  const back = standoutId != null ? days.find(n => n.id === standoutId || n.item.id === standoutId) : null;
+  if (back) return back;
+  return days.reduce((a, b) => ((b.item.serial ?? Infinity) < (a.item.serial ?? Infinity) ? b : a));
+}
 export function largestChildIndex(nodes) {
   if (!Array.isArray(nodes) || !nodes.length) return -1;
+  // The star drawn large is the answer (O-327): the picture and the tap are
+  // one decision. The rest is the fallback for a sky drawn without one.
+  const drawn = nodes.findIndex(n => n && n.large);
+  if (drawn >= 0) return drawn;
   const back = nodes.findIndex(n => n && n.standout);
   if (back >= 0) return back;
   const tierOf = n => { const it = n?.item ?? n; const t = it?.prominence ?? it?.meta?.prominence; return Number.isInteger(t) && t >= 1 && t <= 4 ? t : 5; };
@@ -379,6 +425,7 @@ export function buildBiblePyramid({
   getApp,
   bibleModeRef,
   prominenceOf,
+  visitedOf,
   setBibleMode,
   setBibleChapterContext,
   setBibleVerseContext
@@ -387,8 +434,20 @@ export function buildBiblePyramid({
   // THE SKY IS RANKED BY USE (O-132): every child the pyramid shows asks the
   // volume how well-read it is, and the most-read verse lifts its chapter and
   // its book. A volume without ranks answers undefined and the sky is uniform.
-  const ranked = items => (typeof prominenceOf !== 'function' ? items : relativeTiers(items, prominenceOf));
-  const getChildren = args => ranked(getChildrenRaw(args));
+  // THE READER'S SKY IS NOT RANKED BY USE ANY MORE (O-329, retiring O-132
+  // and O-262 here): the oft-quoted verses are the basement's, and the sky
+  // marks only where the reader has been. `prominenceOf` is still handed in
+  // and is deliberately not read.
+  const ranked = items => items;
+  // AND MARKED BY THE READER'S OWN VISITS (O-328): each child says when the
+  // reader last rested on a leaf under it, so the sky's large star is where
+  // they left off in that branch. The record is the host's; a volume without
+  // one marks nothing.
+  const marked = items => {
+    if (typeof visitedOf !== 'function') return items;
+    return items.map(it => { const at = it ? visitedOf(it) : 0; return at > 0 ? { ...it, visited: at } : it; });
+  };
+  const getChildren = args => marked(ranked(getChildrenRaw(args)));
   const getChildrenRaw = ({ selected }) => {
     const mode = typeof bibleModeRef === 'function' ? bibleModeRef() : 'book';
     if (mode === 'root') {
@@ -584,5 +643,9 @@ export function buildBiblePyramid({
       }
     }
   };
-  return { getChildren, onClick };
+  // ONLY A LEAF IS A VISIT (O-330, Howell 2026-11-22: "the only thing that
+  // should trigger last visited is a leaf. Going to a branch ... should not
+  // be enough"): this volume's large star never follows the node merely
+  // drilled out from.
+  return { getChildren, onClick, leafVisitsOnly: true };
 }

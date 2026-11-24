@@ -667,6 +667,38 @@ describe('a declared top level is the furthest out the reader goes (O-314)', () 
   });
 });
 
+// THE BOOK ITSELF AS THE TOP (O-332, Howell 2026-11-22): the catechism's name
+// goes into the lens "with an empty parent button below, just as the Bible
+// has an empty parent button when testaments are in the focus ring", so that
+// its chapters stand in the pyramid, where the reader's last place is marked.
+describe('a ring of books declared the top has an empty seat below it (O-332)', () => {
+  const at = (level, topLevel) => bibleAdapter.createHandlers({
+    manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: { chapters: { B: { 26: 'Matrimony' } } },
+    options: { activeEdition: 'LAT', translation: 'LAT', level, topLevel }
+  });
+  const book = { level: 'book', id: 'B', parentName: 'Christian Doctrine' };
+  it('names nothing above the book, and the seat is not a button', () => {
+    const h = at('book', 'book');
+    assert.equal(h.getParentLabel(book), '');
+    assert.equal(h.getParentActionable(), false);
+    assert.equal(h.getWatermark(book), '', 'the lens says the name; the row says nothing');
+  });
+  it('the drill out there is taken and builds nothing', () => {
+    let set = 0;
+    const app = { setPrimaryItems: () => { set++; }, migrateOut: () => { set++; }, setParentButtons: () => { set++; } };
+    assert.equal(at('book', 'book').parentHandler({ selected: book, app }), true);
+    assert.equal(set, 0);
+  });
+  it('a volume that declares no top still names the division over its books', () => {
+    const h = at('book', null);
+    assert.equal(h.getParentLabel(book).toUpperCase(), 'CHRISTIAN DOCTRINE');
+    assert.equal(h.getParentActionable(), true);
+  });
+  it('one ring in, the chapter in the lens is still named beside the ring', () => {
+    assert.equal(at('chapter', 'book').getWatermark({ level: 'chapter', meta: { bookId: 'B', chapterKey: '26' } }).toUpperCase(), 'MATRIMONY');
+  });
+});
+
 // THE CHAPTER IN THE LENS IS NAMED ACROSS THE GLASS, AT A DECLARED TOP ONLY (O-315).
 describe('the watermark names the chapter in the lens on a declared top ring (O-315)', () => {
   const at = (level, topLevel) => bibleAdapter.createHandlers({
@@ -708,6 +740,21 @@ describe('the watermark names the edition at every level of a volume with no dec
     for (const level of ['testament', 'book', 'chapter', 'verse']) {
       assert.equal(at(level, null).getWatermark({ level, meta: { bookId: 'B', chapterKey: '26' } }).toUpperCase(), 'VULGATA', level);
     }
+  });
+  it('while a ring turns, the edition under the lens names itself; a hollow seat names itself over an empty page (O-323)', () => {
+    const turning = extra => bibleAdapter.createHandlers({
+      manifest: makeManifest(() => SPANNING.map(d => ({ ...d }))), namesMap: {},
+      translationsMeta: { translations: { LAT: { nativeName: 'Vulgata' }, ENG: { nativeName: 'Douay-Rheims' } } },
+      options: { activeEdition: 'LAT', translation: 'LAT', level: 'verse', topLevel: null, ...extra }
+    });
+    const verse = { level: 'verse', meta: { bookId: 'B', chapterKey: '26' } };
+    assert.equal(turning({ previewEdition: 'ENG' }).getWatermark(verse).toUpperCase(), 'DOUAY-RHEIMS');
+    assert.equal(turning({ previewHollow: { name: 'Westminster' } }).getWatermark(verse).toUpperCase(), 'WESTMINSTER');
+    assert.equal(turning({ previewHollow: { name: '' } }).getWatermark(verse), '', 'a seat with no name names nothing, never the committed edition');
+    assert.equal(turning({ previewEdition: 'ENG', previewHollow: { name: 'Westminster' } }).getWatermark(verse).toUpperCase(), 'WESTMINSTER');
+    assert.equal(turning({}).getWatermark(verse).toUpperCase(), 'VULGATA', 'at rest, the edition being read');
+    // The reader's place in a correction is never the previewed edition's.
+    assert.match(turning({ previewEdition: 'ENG' }).getPlaceLine(verse, { leaf: false }), /^Vulgata/);
   });
   it('an edition with only its full title names nothing rather than run off the row', () => {
     assert.equal(at('book', null, 'LONG').getWatermark({ level: 'book' }), '');
