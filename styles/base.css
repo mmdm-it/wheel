@@ -474,6 +474,13 @@ svg :focus-visible {
   #desktop-gate .desktop-gate-mail a:hover {
     opacity: 1;
   }
+  /* O-339: the public door's copyright line, under the addresses. */
+  #desktop-gate .desktop-gate-copyright {
+    margin: 28px 0 0;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+  }
 }
 
 /* THE COPYRIGHT LINE MOVED TO THE LANDSCAPE PAGE (O-258, Howell 2026-11-01).
