@@ -97,6 +97,9 @@
     (function () {
       var host = (location.hostname || '').toLowerCase(), path = (location.pathname || '').toLowerCase();
       var book = /(^|\.)bibliacatholica\.(com|org|net)$/.test(host) || /\/bible(\/|$)/.test(path);
+      // A look before a deploy (O-337): ?door=book or ?door=days shows either door at any address.
+      var ask = (/[?&]door=(book|days)\b/.exec(location.search) || [])[1];
+      if (ask) book = ask === 'book';
       document.body.setAttribute('data-door', book ? 'book' : 'days');
       if (!book) return;
       // Psalm 118:176 of the Clementine, read from the served Latin: the Psalter's
