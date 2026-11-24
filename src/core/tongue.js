@@ -16,6 +16,8 @@ const TAG_TO_LANGUAGE = {
   hu: 'hungarian', ru: 'russian', pl: 'polish', sv: 'swedish', da: 'danish', no: 'norwegian', nb: 'norwegian',
   cs: 'czech', sk: 'slovak', ro: 'romanian', hr: 'croatian', sl: 'slovenian', uk: 'ukrainian', ar: 'arabic',
   tr: 'turkish', ja: 'japanese', zh: 'chinese', ko: 'korean',
+  // O-338: a Filipino phone says 'fil' (Android, iOS) or the older 'tl'; both are the Tagalog shelf.
+  tl: 'tagalog', fil: 'tagalog',
 };
 
 /** The primary subtag of a language tag: 'it-IT' → 'it', 'zh-Hant-TW' → 'zh'. */
