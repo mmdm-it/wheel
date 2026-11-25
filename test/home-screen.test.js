@@ -111,3 +111,9 @@ describe('the home-screen door (O-273)', () => {
     await fs.access(path.join(root, cfg.homeIcon));
   });
 });
+
+it('the public calendar is not installable: the root door leaves the app file and its icons behind (O-340)', async () => {
+  const sh = await fs.readFile(path.join(repoRoot, 'scripts/mirror-room.sh'), 'utf8');
+  assert.ok(sh.includes(`[[ "$door" == root ]] && NOAPP=(--exclude='/webapp.json' --exclude='/webapp.json.gz' --exclude='/assets/icon-*.png')`));
+  assert.ok(sh.includes('"${NOAPP[@]}" "$WORK/calendar/"'));
+});

@@ -168,7 +168,14 @@ for door in "${DOORS[@]}"; do
       node scripts/scrub-notes.mjs data/calendar "$WORK/calendar"
       echo "== $door: data/calendar/ without its notes (checksum)"
       [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/calendar"
-      rsync -azc -i --delete "${DRY[@]}" "$WORK/calendar/" "${DEST}data/calendar/"
+      # THE PUBLIC CALENDAR IS NOT INSTALLABLE (O-340, Howell 2026-11-24:
+      # "I don't want to make the online Calendar installable"): the app
+      # file and its icons reach the screening room's door and never the
+      # root of mmdm.it, where the page's manifest link then finds nothing
+      # and the browser offers no install.
+      NOAPP=()
+      [[ "$door" == root ]] && NOAPP=(--exclude='/webapp.json' --exclude='/webapp.json.gz' --exclude='/assets/icon-*.png')
+      rsync -azc -i --delete --delete-excluded "${DRY[@]}" "${NOAPP[@]}" "$WORK/calendar/" "${DEST}data/calendar/"
       if [[ "$door" == root && ${#DRY[@]} -eq 0 ]]; then
         echo "== $door: the archival catalog's data folders come down"
         ssh "${ROOT_REMOTE%%:*}" "rm -rf ${ROOT_REMOTE#*:}/data/mmdm ${ROOT_REMOTE#*:}/data/gutenberg"
