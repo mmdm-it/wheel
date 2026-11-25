@@ -241,9 +241,9 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     // `doorsBelow`: the row of doors sits under the name, not over it.
     // `mailsCorners`: the mail words leave the centre for the two lower
     // corners, the first read at the start of the line (Howell 2026-11-25,
-    // arrows drawn on his screenshot: "swap the positions of the calendar
-    // icon and the Biblia Catholica banner, and move the info and
-    // corrections links to the lower left and right corners").
+    // arrows drawn on his screenshot: the icon and the name swap places,
+    // "and move the info and corrections links to the lower left and right
+    // corners").
     doorsBelow: decl.doorsBelow === true,
     mailsCorners: decl.mailsCorners === true,
     emblem,
