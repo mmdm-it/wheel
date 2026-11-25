@@ -320,6 +320,21 @@ svg :focus-visible {
     font-size: 3.6vmin;
     letter-spacing: 0.08em;
   }
+  /* The mail words in the two lower corners, on the copyright's line; the
+     first at the start of the line in either direction of reading. */
+  .portal-mails--corners {
+    position: absolute;
+    top: auto;
+    left: 7vmin;
+    right: 7vmin;
+    bottom: 3vmin;
+    justify-content: space-between;
+    gap: 0;
+  }
+  /* The doors under the name instead of over it. */
+  .portal-doors--below {
+    margin: 4vmin 0 0;
+  }
   .portal-mail-address,
   .portal-door {
     color: inherit;

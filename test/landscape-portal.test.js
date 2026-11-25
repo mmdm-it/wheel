@@ -168,12 +168,15 @@ describe('landscape portal — the sheet', () => {
     const page = sheet.children[0];
     // The door to the Catholic calendar above the name (O-341); this made-up
     // volume names no picture for it, so it is drawn as its name.
-    assert.deepEqual(texts(page), ['Calendarium Catholicum', 'Biblia Catholica', 'info', 'correctiones'], 'nothing else on the page, info read first');
-    assert.equal(page.children.length, 1, 'the body alone: no corner door (O-339), no rotate line');
+    // Under the name since the same day, and the two mail words out of the
+    // body, in the lower corners.
+    assert.deepEqual(texts(page), ['Biblia Catholica', 'Calendarium Catholicum', 'info', 'correctiones'], 'nothing else on the page, info read first');
+    assert.equal(page.children.length, 2, 'the body and the mail words: no corner door (O-339), no rotate line');
     const body = page.children[0];
     assert.equal(body.className, 'portal-body');
-    const mails = body.children.find(c => c.className.startsWith('portal-mails'));
-    assert.equal(mails.className, 'portal-mails portal-mails--words');
+    assert.deepEqual(body.children.map(c => c.className), ['portal-title', 'portal-doors portal-doors--below']);
+    const mails = page.children.find(c => c.className.startsWith('portal-mails'));
+    assert.equal(mails.className, 'portal-mails portal-mails--words portal-mails--corners');
     const links = mails.children.map(row => row.children.find(c => c.tag === 'a'));
     assert.deepEqual(links.map(a => [a.textContent, a.getAttribute('href')]), [
       ['info', 'mailto:info@bibliacatholica.com'],
@@ -235,7 +238,7 @@ describe('landscape portal — the pre-composed correction', () => {
     assert.equal(r.mails[0].href, 'mailto:info@bibliacatholica.com');
     const sheet = createMockElement('div');
     renderLandscapePortal(sheet, r, { createElement: tag => createMockElement(tag) });
-    const words = sheet.children[0].children[0].children.find(c => c.className.startsWith('portal-mails'));
+    const words = sheet.children[0].children.find(c => c.className.startsWith('portal-mails'));
     assert.equal(words.children[1].children[0].getAttribute('href'), r.mails[1].href);
   });
 
@@ -275,8 +278,7 @@ describe('landscape portal — the copyright line and the lift', () => {
     sheet.style.display = 'flex';
     renderLandscapePortal(sheet, r, doc);
     assert.equal(sheet.style.display, '', 'the sheet is shown by the media query alone');
-    const body = sheet.children[0].children[0];
-    const list = body.children.find(c => c.className.startsWith('portal-mails'));
+    const list = sheet.children[0].children.find(c => c.className.startsWith('portal-mails'));
     const rows = list.children.map(c => c.className);
     assert.deepEqual(rows, ['portal-mail', 'portal-mail', 'portal-mail portal-phone', 'portal-mail portal-whatsapp']);
     assert.equal(list.children[2].children[0].getAttribute('href'), 'sms:+39071111222?body=Douay%20Genesis%201%3A1%0A');

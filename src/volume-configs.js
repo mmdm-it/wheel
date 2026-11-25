@@ -257,6 +257,10 @@ const volumeConfigs = {
       // "The calendar, the atlas, the who's who of clergy"). One today — the
       // Catholic calendar, which rides this door as the Church does; the
       // other two take their places when they are built.
+      // UNDER the name, and the two mail words in the lower corners (Howell
+      // 2026-11-25, on the first photograph of the door above the name).
+      doorsBelow: true,
+      mailsCorners: true,
       // The picture is the volume's to name (W-114).
       doors: [{ volume: 'calendarium', href: './?volume=calendarium', label: 'Calendarium Catholicum' }],
       // O-339 (Howell 2026-11-24): NO door to the COMPANY'S calendar from

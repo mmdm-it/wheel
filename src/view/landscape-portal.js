@@ -238,6 +238,14 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   return {
     volume,
     doors,
+    // `doorsBelow`: the row of doors sits under the name, not over it.
+    // `mailsCorners`: the mail words leave the centre for the two lower
+    // corners, the first read at the start of the line (Howell 2026-11-25,
+    // arrows drawn on his screenshot: "swap the positions of the calendar
+    // icon and the Biblia Catholica banner, and move the info and
+    // corrections links to the lower left and right corners").
+    doorsBelow: decl.doorsBelow === true,
+    mailsCorners: decl.mailsCorners === true,
     emblem,
     // `titleOneLine`: the card's name set on one line (Howell 2026-11-02, the
     // company's page: "all on one line").
@@ -311,8 +319,9 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   const body = make(doc, 'div', 'portal-body');
   if (record.lift) body.style.transform = `translateY(-${record.lift}vmin)`;
   page.appendChild(body);
-  if (record.doors && record.doors.length) {
-    const row = make(doc, 'div', 'portal-doors');
+  const drawDoors = () => {
+    if (!record.doors || !record.doors.length) return;
+    const row = make(doc, 'div', record.doorsBelow ? 'portal-doors portal-doors--below' : 'portal-doors');
     record.doors.forEach(d => {
       const a = make(doc, 'a', 'portal-doors-door');
       a.setAttribute('href', d.href);
@@ -328,7 +337,8 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       row.appendChild(a);
     });
     body.appendChild(row);
-  }
+  };
+  if (!record.doorsBelow) drawDoors();
   if (record.emblem) {
     const img = make(doc, 'img', 'portal-emblem');
     img.setAttribute('src', record.emblem.imageUrl);
@@ -346,6 +356,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     if (record.titleScale && record.titleScale !== 1) title.style.fontSize = `calc(var(--portal-title-size) * ${record.titleScale})`;
     body.appendChild(title);
   }
+  if (record.doorsBelow) drawDoors();
   // The about line and the town: one block in the upper left corner, or
   // under the name.
   const corner = record.aboutCorner ? make(doc, 'div', 'portal-corner') : null;
@@ -356,7 +367,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     // Words sit in one row; addresses with purposes are two aligned columns
     // (purpose, address) so the gutter runs straight; bare addresses are
     // simply centred.
-    const cls = record.mailsAs === 'words' ? 'portal-mails portal-mails--words'
+    const cls = record.mailsAs === 'words' ? (record.mailsCorners ? 'portal-mails portal-mails--words portal-mails--corners' : 'portal-mails portal-mails--words')
       : record.mails.some(m => m.purpose) ? 'portal-mails portal-mails--purposed' : 'portal-mails';
     const list = make(doc, 'div', cls);
     record.mails.forEach(m => {
@@ -384,7 +395,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       row.appendChild(a);
       list.appendChild(row);
     }
-    body.appendChild(list);
+    (record.mailsCorners ? page : body).appendChild(list);
   }
   if (record.link) {
     const kind = record.link.corner ? 'portal-door portal-door--corner' : record.link.imageUrl ? 'portal-door portal-door--emblem' : 'portal-door portal-door--name';

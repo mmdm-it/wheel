@@ -166,7 +166,7 @@ describe('the Catholic calendar as a volume (O-341)', () => {
     assert.equal(volumeConfigs.calendar.landscape.emblem.image, 'mmdm_logo');
   });
 
-  it('the Bible\'s sideways page has a door to it above the name, and its own page a door back', () => {
+  it('the Bible\'s sideways page has a door to it under the name, and its own page a door back', () => {
     const SQUARE = { hostname: 'bibliacatholica.com', pathname: '/', protocol: 'https:' };
     const LAN = { hostname: '192.168.88.167', pathname: '/', protocol: 'http:' };
     const root = { display_config: { splash: { title: 'Biblia Catholica' }, detail_sector: { logo_base_path: 'assets/' }, landscape: { info: { default: 'info' }, corrections: { default: 'corrections' }, doors: { calendarium: { image: 'calendarium_door' } } } } };
@@ -176,14 +176,15 @@ describe('the Catholic calendar as a volume (O-341)', () => {
     assert.equal(r.doors[0].href, './?volume=calendarium');
     assert.match(r.doors[0].imageUrl, /assets\/calendarium_door\.png$/, 'the picture is the one the volume names (W-114)');
     assert.equal(portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'english', loc: LAN, table: VENUES }).doors[0].href, '/?volume=calendarium');
-    // Drawn before the name.
+    // Drawn under the name (Howell, the same day, on the first photograph).
     const sheet = createMockElement('div');
     const doc = { createElement: tag => createMockElement(tag) };
     assert.equal(renderLandscapePortal(sheet, r, doc), true);
     const body = sheet.children[0].children[0];
-    assert.equal(body.children[0].className, 'portal-doors');
-    assert.equal(body.children[0].children[0].getAttribute('href'), './?volume=calendarium');
-    assert.equal(body.children[1].className, 'portal-title');
+    assert.equal(body.children[0].className, 'portal-title');
+    assert.equal(body.children[1].className, 'portal-doors portal-doors--below');
+    assert.equal(body.children[1].children[0].getAttribute('href'), './?volume=calendarium');
+    assert.equal(r.mailsCorners, true, 'and the mail words go to the lower corners');
     // And back.
     const back = portalRecord({ volume: 'calendarium', config: volumeConfigs.calendarium, root: { display_config: { splash: { title: 'Calendarium\nCatholicum' }, landscape: { info: { default: 'info' }, door: { image: 'crown_of_thorns' } } } }, lang: 'english', loc: SQUARE, table: VENUES });
     assert.equal(back.link.href, './?volume=bible');
