@@ -174,7 +174,10 @@ describe('landscape portal — the sheet', () => {
     assert.equal(page.children.length, 2, 'the body and the mail words: no corner door (O-339), no rotate line');
     const body = page.children[0];
     assert.equal(body.className, 'portal-body');
-    assert.deepEqual(body.children.map(c => c.className), ['portal-title', 'portal-doors portal-doors--below']);
+    // The crown over the name, small (Howell 2026-11-25), and the page keeps its centred body.
+    assert.deepEqual(body.children.map(c => c.className), ['portal-emblem portal-emblem--crest', 'portal-title', 'portal-doors portal-doors--below']);
+    assert.equal(body.children[0].getAttribute('src'), './data/gutenberg/2026.08.22/assets/crown_of_thorns.png');
+    assert.equal(page.className, 'portal-page');
     const mails = page.children.find(c => c.className.startsWith('portal-mails'));
     assert.equal(mails.className, 'portal-mails portal-mails--words portal-mails--corners');
     const links = mails.children.map(row => row.children.find(c => c.tag === 'a'));

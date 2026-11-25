@@ -163,7 +163,10 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   // before the engine's config does (W-114).
   const emblemName = typeof words?.emblem?.image === 'string' && words.emblem.image ? words.emblem.image
     : (typeof decl.emblem?.image === 'string' && decl.emblem.image ? decl.emblem.image : null);
-  const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '' } : null;
+  // `crest: true` — a small mark over the name, not the page's large head:
+  // the page keeps its centred body (Howell 2026-11-25, a circle drawn over
+  // the name: "add our crown of thorns art above the ... banner").
+  const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '', crest: decl.emblem?.crest === true } : null;
   // What the business is, in the reader's tongue (the volume's words).
   const about = decl.about ? pick(words?.[decl.about], lang) : null;
   // Where the house is, under the about line after a blank line (Howell
@@ -232,7 +235,10 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     return {
       href,
       imageUrl: doorImage(d) && config?.assetBase ? `${config.assetBase}${base}${doorImage(d)}.png` : null,
-      label: typeof d.label === 'string' ? d.label : ''
+      label: typeof d.label === 'string' ? d.label : '',
+      // The word under the picture, in the reader's tongue: the volume's
+      // (display_config.landscape.doors.<volume>.label). None, no word.
+      caption: (c => (typeof c === 'string' && c.trim() ? c.trim() : null))(pick(words?.doors?.[d.volume]?.label, lang))
     };
   }).filter(Boolean);
   return {
@@ -312,7 +318,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   sheet.removeAttribute('aria-hidden');
   sheet.classList.add('landscape-portal');
 
-  const page = make(doc, 'div', record.emblem ? 'portal-page portal-page--emblem' : 'portal-page');
+  const page = make(doc, 'div', record.emblem && !record.emblem.crest ? 'portal-page portal-page--emblem' : 'portal-page');
   // The body sits centred in the height; the turn-it-upright line alone is
   // pinned to the foot (the first photographs had the body hugging the top
   // with a bare band above the line).
@@ -334,13 +340,14 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       } else {
         a.appendChild(make(doc, 'span', 'portal-door-label', d.label));
       }
+      if (d.caption) a.appendChild(make(doc, 'span', 'portal-doors-caption', d.caption));
       row.appendChild(a);
     });
     body.appendChild(row);
   };
   if (!record.doorsBelow) drawDoors();
   if (record.emblem) {
-    const img = make(doc, 'img', 'portal-emblem');
+    const img = make(doc, 'img', record.emblem.crest ? 'portal-emblem portal-emblem--crest' : 'portal-emblem');
     img.setAttribute('src', record.emblem.imageUrl);
     img.setAttribute('alt', record.emblem.label || '');
     body.appendChild(img);

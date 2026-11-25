@@ -169,7 +169,7 @@ describe('the Catholic calendar as a volume (O-341)', () => {
   it('the Bible\'s sideways page has a door to it under the name, and its own page a door back', () => {
     const SQUARE = { hostname: 'bibliacatholica.com', pathname: '/', protocol: 'https:' };
     const LAN = { hostname: '192.168.88.167', pathname: '/', protocol: 'http:' };
-    const root = { display_config: { splash: { title: 'Biblia Catholica' }, detail_sector: { logo_base_path: 'assets/' }, landscape: { info: { default: 'info' }, corrections: { default: 'corrections' }, doors: { calendarium: { image: 'calendarium_door' } } } } };
+    const root = { display_config: { splash: { title: 'Biblia Catholica' }, detail_sector: { logo_base_path: 'assets/' }, landscape: { info: { default: 'info' }, corrections: { default: 'corrections' }, doors: { calendarium: { image: 'calendarium_door', label: { default: 'Calendar', latin: 'Calendarium' } } } } } };
     const r = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'english', loc: SQUARE, table: VENUES });
     assert.equal(r.link, null, 'no door to the company\'s calendar (O-339)');
     assert.equal(r.doors.length, 1);
@@ -181,9 +181,14 @@ describe('the Catholic calendar as a volume (O-341)', () => {
     const doc = { createElement: tag => createMockElement(tag) };
     assert.equal(renderLandscapePortal(sheet, r, doc), true);
     const body = sheet.children[0].children[0];
-    assert.equal(body.children[0].className, 'portal-title');
-    assert.equal(body.children[1].className, 'portal-doors portal-doors--below');
-    assert.equal(body.children[1].children[0].getAttribute('href'), './?volume=calendarium');
+    assert.equal(body.children[1].className, 'portal-title');
+    assert.equal(body.children[2].className, 'portal-doors portal-doors--below');
+    const door = body.children[2].children[0];
+    assert.equal(door.getAttribute('href'), './?volume=calendarium');
+    // The word under the picture is the volume's, in the reader's tongue.
+    assert.equal(r.doors[0].caption, 'Calendar');
+    assert.deepEqual(door.children.map(c => [c.className, c.textContent]), [['portal-doors-image', ''], ['portal-doors-caption', 'Calendar']]);
+    assert.equal(portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'latin', loc: SQUARE, table: VENUES }).doors[0].caption, 'Calendarium');
     assert.equal(r.mailsCorners, true, 'and the mail words go to the lower corners');
     // And back.
     const back = portalRecord({ volume: 'calendarium', config: volumeConfigs.calendarium, root: { display_config: { splash: { title: 'Calendarium\nCatholicum' }, landscape: { info: { default: 'info' }, door: { image: 'crown_of_thorns' } } } }, lang: 'english', loc: SQUARE, table: VENUES });

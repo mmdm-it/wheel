@@ -220,6 +220,10 @@ svg :focus-visible {
     width: auto;
     display: block;
   }
+  /* A small mark over the name (the crown over the Bible's). */
+  .portal-emblem--crest {
+    height: 20vmin;
+  }
   /* A page headed by an emblem spreads its pieces down the height rather
      than huddling in the middle (Howell 2026-11-02, from his phone, with
      the browser's bar eating the top: "very crowded at the bottom. So
@@ -385,8 +389,19 @@ svg :focus-visible {
     margin: 0 0 4vmin;
   }
   .portal-doors-door {
-    display: block;
-    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2vmin;
+    line-height: 1;
+    color: inherit;
+    text-decoration: none;
+  }
+  /* The word under a door's picture, in the name's own face. */
+  .portal-doors-caption {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 5vmin;
+    letter-spacing: 0.04em;
   }
   .portal-doors-image {
     height: 16vmin;

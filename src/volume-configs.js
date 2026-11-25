@@ -250,6 +250,9 @@ const volumeConfigs = {
         { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true }
       ],
       mailsAs: 'words',
+      // The crown over the name (Howell 2026-11-25: "add our crown of thorns
+      // art above the Biblia Catholica banner"): the card's own picture, small.
+      emblem: { image: 'crown_of_thorns', label: 'Biblia Catholica', crest: true },
       titleScale: 2.5,   // Howell: "Make the name the Biblia Catholica 2.5 times larger"
       lift: 7,           // Howell: "shift it up a little bit" — the name off dead centre
       // THE DOORS TO THE OTHER VOLUMES, above the name (O-341, Howell
