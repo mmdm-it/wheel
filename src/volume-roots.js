@@ -43,5 +43,5 @@ export const WALL_ROOTS = {
 // place — an address carrying one opens where it says, and the app settles
 // that — and the rings above the leaves a reader may have left the volume on,
 // where no verse is opened at boot (O-294).
-export const WALL_ADDRESS_KEYS = ['book', 'chapter', 'verse', 'item', 'level', 'testament'];
+export const WALL_ADDRESS_KEYS = ['book', 'chapter', 'verse', 'utterance', 'item', 'level', 'testament'];
 export const WALL_RINGS_ABOVE_THE_LEAF = ['testament', 'book', 'chapter'];

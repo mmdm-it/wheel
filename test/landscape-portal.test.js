@@ -166,7 +166,9 @@ describe('landscape portal — the sheet', () => {
     assert.ok(sheet.classList.contains('landscape-portal'));
     assert.equal(sheet.children.length, 1, 'the old rotate icon is gone');
     const page = sheet.children[0];
-    assert.deepEqual(texts(page), ['Biblia Catholica', 'info', 'correctiones'], 'nothing else on the page, info read first');
+    // The door to the Catholic calendar above the name (O-341); this made-up
+    // volume names no picture for it, so it is drawn as its name.
+    assert.deepEqual(texts(page), ['Calendarium Catholicum', 'Biblia Catholica', 'info', 'correctiones'], 'nothing else on the page, info read first');
     assert.equal(page.children.length, 1, 'the body alone: no corner door (O-339), no rotate line');
     const body = page.children[0];
     assert.equal(body.className, 'portal-body');

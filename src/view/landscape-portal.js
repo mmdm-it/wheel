@@ -216,8 +216,28 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
       };
     }
   }
+  // THE DOORS ABOVE THE NAME (O-341, Howell 2026-11-25, drawn on his
+  // screenshot as three circles over the name: "positions for icons that will
+  // take the user to the other volumes"). One door per volume that EXISTS —
+  // an unbuilt volume gets no position. Each is its picture, which the
+  // volume names (display_config.landscape.doors.<volume>.image — the art is
+  // the corpus's, W-114), and leads where the single door does.
+  const doorImage = d => {
+    const named = words?.doors?.[d.volume]?.image;
+    return typeof named === 'string' && named ? named : (typeof d.image === 'string' ? d.image : null);
+  };
+  const doors = (Array.isArray(decl.doors) ? decl.doors : []).map(d => {
+    const href = d && d.volume ? crossLinkHref(d.volume, d.href, loc, table) : null;
+    if (!href) return null;
+    return {
+      href,
+      imageUrl: doorImage(d) && config?.assetBase ? `${config.assetBase}${base}${doorImage(d)}.png` : null,
+      label: typeof d.label === 'string' ? d.label : ''
+    };
+  }).filter(Boolean);
   return {
     volume,
+    doors,
     emblem,
     // `titleOneLine`: the card's name set on one line (Howell 2026-11-02, the
     // company's page: "all on one line").
@@ -291,6 +311,24 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   const body = make(doc, 'div', 'portal-body');
   if (record.lift) body.style.transform = `translateY(-${record.lift}vmin)`;
   page.appendChild(body);
+  if (record.doors && record.doors.length) {
+    const row = make(doc, 'div', 'portal-doors');
+    record.doors.forEach(d => {
+      const a = make(doc, 'a', 'portal-doors-door');
+      a.setAttribute('href', d.href);
+      if (d.label) a.setAttribute('aria-label', d.label);
+      if (d.imageUrl) {
+        const img = make(doc, 'img', 'portal-doors-image');
+        img.setAttribute('src', d.imageUrl);
+        img.setAttribute('alt', d.label || '');
+        a.appendChild(img);
+      } else {
+        a.appendChild(make(doc, 'span', 'portal-door-label', d.label));
+      }
+      row.appendChild(a);
+    });
+    body.appendChild(row);
+  }
   if (record.emblem) {
     const img = make(doc, 'img', 'portal-emblem');
     img.setAttribute('src', record.emblem.imageUrl);

@@ -130,7 +130,7 @@ describe('the present reaches the leaf (O-247)', () => {
 describe('who declares it (O-243)', () => {
   it('the calendar says NOW; no other volume has a present to return to (the Church held the calendar until O-299)', () => {
     for (const [id, cfg] of Object.entries(volumeConfigs)) {
-      assert.equal(cfg.nowButton, id === 'calendar' ? 'NOW' : undefined, `${id}: nowButton`);
+      assert.equal(cfg.nowButton, id === 'calendar' || id === 'calendarium' ? 'NOW' : undefined, `${id}: nowButton`);
     }
   });
 });

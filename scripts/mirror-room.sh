@@ -153,6 +153,14 @@ for door in "${DOORS[@]}"; do
       echo "== $door: the cleared copy of data/catechism/ (checksum)"
       [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/catechism"
       rsync -azc -i --delete "${DRY[@]}" "$WORK/catechism/" "${DEST}data/catechism/"
+      # THE CATHOLIC CALENDAR RIDES THE BIBLE'S DOOR TOO (O-341): reached from
+      # the Bible's sideways page, so it travels with the Bible. Its data goes
+      # through the same scrub as the company calendar's (no `_` keys, no
+      # sources/). The company's own days stay off this door, as below.
+      node scripts/scrub-notes.mjs data/calendarium "$WORK/calendarium"
+      echo "== $door: data/calendarium/ without its notes (checksum)"
+      [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/calendarium"
+      rsync -azc -i --delete "${DRY[@]}" "$WORK/calendarium/" "${DEST}data/calendarium/"
       if [[ ${#DRY[@]} -eq 0 ]]; then
         ssh "${DEST%%:*}" "rm -rf ${DEST#*:}data/calendar"
       fi

@@ -98,13 +98,49 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
         container.appendChild(span);
         lineIdx += 2; // double-size rows breathe two pitches apart
       });
+      // THE FEAST AND ITS VERSE (O-341): the day's name on its short lines,
+      // one pitch apart, then the first verse of its Gospel as a link — the
+      // one thing on this card that is touched for itself: it leaves for the
+      // volume that holds the verse, where a tap anywhere else on the card
+      // still means the next day.
+      const feast = Array.isArray(item?.feast) ? item.feast : [];
+      const place = (node, line) => {
+        if (node.style) {
+          node.style.position = 'absolute';
+          node.style.top = `${line.y}px`;
+          node.style.left = `${line.leftX}px`;
+          node.style.width = `${line.availableWidth}px`;
+          node.style.textAlign = 'center';
+        }
+        container.appendChild(node);
+      };
+      if (feast.length) lineIdx += 1;
+      feast.forEach(text => {
+        if (lineIdx >= lineTable.length) return;
+        const span = create('span');
+        span.className = 'detail-text-line detail-ephemeris-feast';
+        span.textContent = text;
+        place(span, lineTable[lineIdx]);
+        lineIdx += 1;
+      });
+      if (item?.link?.href && lineIdx + 1 < lineTable.length) {
+        lineIdx += 1;
+        const a = create('a');
+        a.className = 'detail-text-line detail-ephemeris-link';
+        a.textContent = item.link.text || '';
+        if (typeof a.setAttribute === 'function') a.setAttribute('href', item.link.href);
+        else a.href = item.link.href;
+        place(a, lineTable[lineIdx]);
+        lineIdx += 2;
+      }
       // Fano's tables at the foot: the last lines above the deck, in order,
       // never climbing into the rows above.
       const tables = Array.isArray(item?.tables) ? item.tables : [];
       const deckTop = Number.isFinite(bounds?.deckTop) ? bounds.deckTop : Infinity;
       const pitch = lineTable.length > 1 ? lineTable[1].y - lineTable[0].y : 0;
       const clear = lineTable.filter((line, i) => i >= lineIdx && line.y + pitch <= deckTop);
-      const tableLines = clear.slice(-tables.length);
+      // (`slice(-0)` is the whole list: a card with no tables takes no lines.)
+      const tableLines = tables.length ? clear.slice(-tables.length) : [];
       // THE DAY'S FIGURE (O-256): the drawing in the clear room under the
       // weekday, down to the tables — as wide as the arc's innermost edge
       // over that room allows, pulled a little left of the glass's edge
@@ -183,6 +219,20 @@ export class EphemerisDetailPlugin extends BaseDetailPlugin {
       row.textContent = text;
       card.appendChild(row);
     });
+    (Array.isArray(item?.feast) ? item.feast : []).forEach(text => {
+      const row = create('div');
+      row.className = 'detail-ephemeris-feast';
+      row.textContent = text;
+      card.appendChild(row);
+    });
+    if (item?.link?.href) {
+      const a = create('a');
+      a.className = 'detail-ephemeris-link';
+      a.textContent = item.link.text || '';
+      if (typeof a.setAttribute === 'function') a.setAttribute('href', item.link.href);
+      else a.href = item.link.href;
+      card.appendChild(a);
+    }
     if (item?.figure?.src) {
       const img = create('img');
       img.className = 'detail-figure';

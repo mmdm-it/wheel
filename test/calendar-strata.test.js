@@ -18,8 +18,8 @@ describe('who declares a dimension of its own (O-244)', () => {
   // the catechism now (O-299), and its planes are the reader's own.
   it('the calendar alone declares its strata and asks for its emblem as the button', () => {
     for (const [id, cfg] of Object.entries(volumeConfigs)) {
-      assert.equal(typeof cfg.strata === 'function', id === 'calendar', `${id}: strata`);
-      assert.equal(cfg.dimensionEmblem === true, id === 'calendar', `${id}: dimensionEmblem`);
+      assert.equal(typeof cfg.strata === 'function', id === 'calendar' || id === 'calendarium', `${id}: strata`);
+      assert.equal(cfg.dimensionEmblem === true, id === 'calendar' || id === 'calendarium', `${id}: dimensionEmblem`);
     }
   });
 });
