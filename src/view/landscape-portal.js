@@ -32,7 +32,7 @@
 // on one host, so the link stays on the host and crosses to the other door.
 // On the LAN there are no doors: the same address with the other volume's
 // word. The venue table decides, never the page.
-import { doorHref, isOnLan, isScreeningRoom } from '../core/lan-gate.js';
+import { doorAt, doorHref, isOnLan, isScreeningRoom } from '../core/lan-gate.js';
 import { splashRecord } from './boot-overture.js';
 
 const RTL = new Set(['hebrew', 'arabic', 'syriac']);
@@ -153,7 +153,9 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  */
 export function studioWord(loc = (typeof window !== 'undefined' ? window.location : null), table) {
   if (!loc || !(isOnLan(loc) || isScreeningRoom(loc, table))) return null;
-  try { return new URLSearchParams(loc.search || '').get('studio') || null; } catch (_) { return null; }
+  // The studio's own address needs no word: it opens on the first volume listed.
+  const standing = doorAt(loc, table)?.studio === true ? '1' : null;
+  try { return new URLSearchParams(loc.search || '').get('studio') || standing; } catch (_) { return standing; }
 }
 
 export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null } = {}) {

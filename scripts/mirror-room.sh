@@ -164,6 +164,20 @@ for door in "${DOORS[@]}"; do
       if [[ ${#DRY[@]} -eq 0 ]]; then
         ssh "${DEST%%:*}" "rm -rf ${DEST#*:}data/calendar"
       fi
+      # THE STUDIO IS A THIRD ADDRESS IN THE ROOM, AND ONLY A PAGE (O-342,
+      # Howell 2026-11-25, of the word on the address: "Whenever I try to save
+      # it ... it opens without all the new icons"). A bookmark keeps a path
+      # where it loses a word, so the studio gets a path of its own: this
+      # door's page with its base set on this door, so it reads this door's
+      # engine and data and carries no copy of either, and without the app
+      # file, so a phone saves the address and not the Bible's app.
+      if [[ "$door" == bible ]]; then
+        echo "== $door: the studio's page beside it"
+        sed -e 's|<head>|<head>\n  <base href="../bible/" />|' -e '/rel="manifest"/d' index.html > "$WORK/studio.html"
+        grep -q '<base href="../bible/" />' "$WORK/studio.html" || { echo "mirror-room: the studio's page took no base" >&2; exit 1; }
+        [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}../studio"
+        rsync -az -i "${DRY[@]}" "$WORK/studio.html" "${DEST}../studio/index.html"
+      fi
       if [[ "$door" == public ]]; then
         echo "== $door: the page with the door's own head"
         node scripts/stamp-door-head.mjs public index.html "$WORK/index.html"

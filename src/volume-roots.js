@@ -19,6 +19,10 @@ export const VENUES = {
   doors: [
     { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/bible/', volume: 'bible' },
     { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/calendar/', volume: 'calendar' },
+    // THE STUDIO (O-342): the room's third address, the Bible's own door seen
+    // with the sideways page that is being worked out. Listed after the
+    // Bible's, so a link to the Bible still leads to the Bible's door.
+    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/studio/', volume: 'bible', studio: true },
     { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/', volume: 'calendar' },
     { hosts: ['bibliacatholica.com', 'www.bibliacatholica.com'], pathPrefix: '/', volume: 'bible' }
   ]

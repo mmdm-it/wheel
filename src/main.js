@@ -5,7 +5,7 @@ import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES, readerIdle } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
-import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
+import { doorAt, proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
 import { landscapeTongues, portalRecord, renderLandscapePortal, studioWord } from './view/landscape-portal.js';
 import { armOrientationReboot } from './core/orientation-reboot.js';
 
@@ -3002,8 +3002,13 @@ function applyTheme(volume) {
   if (title) document.title = title;
   // The home-screen door (O-273): the manifest and icon the volume declares,
   // and the status bar in its ground colour once installed.
+  // THE STUDIO INSTALLS NOTHING (O-342): its address is a bench, and a phone
+  // that saved it as an app would be handed this volume's own app, which
+  // opens at this volume's door. With no app file the phone saves the address.
+  const atStudio = doorAt(window.location)?.studio === true;
+  if (atStudio) document.querySelectorAll('link[rel="manifest"]').forEach(l => l.remove());
   declareHomeScreen(document, {
-    manifestHref: volumeConfigs[volume]?.webManifest,
+    manifestHref: atStudio ? undefined : volumeConfigs[volume]?.webManifest,
     icon: volumeConfigs[volume]?.homeIcon,
     themeColor: bg,
     title
@@ -4564,7 +4569,7 @@ function launchGateway(gateway) {
   bootVolume(gateway.volume, search, returnContext, transit)
     .then(() => {
       try {
-        window.history.pushState({ wheelGateway: true, gatewayReturn: returnContext }, '', search);
+        window.history.pushState({ wheelGateway: true, gatewayReturn: returnContext }, '', `${window.location.pathname}${search || ''}`);
       } catch (err) { /* history unavailable (e.g. file://) */ }
     })
     .catch(err => {
@@ -4584,7 +4589,7 @@ function returnThroughGateway() {
   const transit = { mode: 'return', snapshot: captureGatewaySnapshot(svg) };
   bootVolume(ctx.volume, search, null, transit)
     .then(() => {
-      try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* ignore */ }
+      try { window.history.pushState({ wheelGateway: true }, '', `${window.location.pathname}${search || ''}`); } catch (err) { /* ignore */ }
     })
     .catch(err => {
       if (transit.snapshot) transit.snapshot.remove();
@@ -4662,7 +4667,7 @@ function swapThroughSeal() {
   if (sealEl) sealEl.style.visibility = 'hidden';
   const search = `?volume=${encodeURIComponent(to)}`;
   bootVolume(to, search, null, transit)
-    .then(() => { try { window.history.pushState({ wheelGateway: true }, '', search); } catch (_) { /* file:// */ } })
+    .then(() => { try { window.history.pushState({ wheelGateway: true }, '', `${window.location.pathname}${search || ''}`); } catch (_) { /* file:// */ } })
     .catch(err => {
       sealSwapping = false;
       transit.snapshot?.remove();
