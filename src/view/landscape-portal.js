@@ -142,7 +142,21 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *            reader's place as main.js names it (Howell 2026-11-01: a
  *            correction is only useful if it says where the mistake is)
  */
-export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null } = {}) {
+/**
+ * THE STUDIO (O-342, Howell 2026-11-25: "a separate screening room ... a
+ * mock-up that shows ... other volumes, even though they're empty"). The word
+ * `studio` on the address draws the sideways page in the grammar being worked
+ * out — the volume on the glass large at the head, the others small in a row
+ * beneath — from the list the corpus keeps (display_config.landscape.studio).
+ * Heard in the screening room and on the LAN only: a public page never
+ * shows a volume that does not exist.
+ */
+export function studioWord(loc = (typeof window !== 'undefined' ? window.location : null), table) {
+  if (!loc || !(isOnLan(loc) || isScreeningRoom(loc, table))) return null;
+  try { return new URLSearchParams(loc.search || '').get('studio') || null; } catch (_) { return null; }
+}
+
+export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null } = {}) {
   const decl = config?.landscape;
   if (!decl) return null;
   const words = root?.display_config?.landscape || null;
@@ -246,7 +260,7 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
       caption: (c => (typeof c === 'string' && c.trim() ? c.trim() : null))(pick(words?.doors?.[d.volume]?.label, lang))
     };
   }).filter(Boolean);
-  return {
+  const record = {
     volume,
     doors,
     // `doorsBelow`: the row of doors sits under the name, not over it.
@@ -290,6 +304,31 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     lift: Number.isFinite(Number(decl.lift)) && Number(decl.lift) > 0 ? Number(decl.lift) : 0,
     dir: RTL.has(lang) ? 'rtl' : 'ltr'
   };
+  // The studio's page: the same record with its head and its row replaced.
+  const bench = studio && Array.isArray(words?.studio?.volumes) && words.studio.volumes.length && config?.assetBase ? words.studio : null;
+  if (!bench) return record;
+  const art = n => (typeof n === 'string' && n ? `${config.assetBase}${base}${/\.[a-z]+$/.test(n) ? n : `${n}.png`}` : null);
+  const said = v => (c => (typeof c === 'string' && c.trim() ? c.trim() : v.id))(pick(v.label, lang));
+  const here = bench.volumes.find(v => v.id === studio) || bench.volumes[0];
+  const path = loc && typeof loc.pathname === 'string' ? loc.pathname : './';
+  return {
+    ...record,
+    studio: here.id,
+    emblem: { imageUrl: art(here.image), label: said(here), crest: true, tone: record.emblem?.tone || null, size: null },
+    title: said(here),
+    titleScale: 2,
+    doorsBelow: true,
+    mailsCorners: true,
+    link: null,
+    doors: bench.volumes.filter(v => v !== here).map(v => ({
+      href: `${path}?volume=${encodeURIComponent(volume)}&studio=${encodeURIComponent(v.id)}`,
+      imageUrl: art(v.image), label: said(v), tone: record.emblem?.tone || null, caption: said(v)
+    })),
+    // The site's own mark, faint behind the whole page, and its name at the
+    // foot beside the copyright: the site, not any one volume.
+    watermarkUrl: art(bench.watermark),
+    site: typeof bench.site === 'string' && bench.site.trim() ? bench.site.trim() : null
+  };
 }
 
 /** A mailto, with the subject pre-composed when there is one. */
@@ -327,7 +366,14 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   sheet.removeAttribute('aria-hidden');
   sheet.classList.add('landscape-portal');
 
-  const page = make(doc, 'div', record.emblem && !record.emblem.crest ? 'portal-page portal-page--emblem' : 'portal-page');
+  const page = make(doc, 'div', record.emblem && !record.emblem.crest ? 'portal-page portal-page--emblem' : (record.studio ? 'portal-page portal-page--studio' : 'portal-page'));
+  if (record.watermarkUrl) {
+    const mark = make(doc, 'img', 'portal-watermark');
+    mark.setAttribute('src', record.watermarkUrl);
+    mark.setAttribute('alt', '');
+    mark.setAttribute('aria-hidden', 'true');
+    page.appendChild(mark);
+  }
   // The body sits centred in the height; the turn-it-upright line alone is
   // pinned to the foot (the first photographs had the body hugging the top
   // with a bare band above the line).
@@ -429,7 +475,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     (record.link.corner ? page : body).appendChild(a);
   }
   if (record.rotate) page.appendChild(make(doc, 'p', 'portal-rotate', record.rotate));
-  if (record.copyright) page.appendChild(make(doc, 'p', 'portal-copyright', record.copyright));
+  if (record.copyright || record.site) page.appendChild(make(doc, 'p', 'portal-copyright', [record.site, record.copyright].filter(Boolean).join(' · ')));
   sheet.appendChild(page);
   return true;
 }

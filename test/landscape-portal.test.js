@@ -4,7 +4,7 @@
 // reading tongue. These tests hold the model and where the door leads.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref } from '../src/view/landscape-portal.js';
+import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref, studioWord } from '../src/view/landscape-portal.js';
 import { firstOfferedLanguage } from '../src/core/tongue.js';
 import { doorHref } from '../src/core/lan-gate.js';
 import { volumeConfigs, VENUES } from '../src/volume-configs.js';
@@ -292,5 +292,40 @@ describe('landscape portal — the copyright line and the lift', () => {
     const r = portalRecord({ volume: 'calendar', config: volumeConfigs.calendar, root: CALENDAR_ROOT, loc: MMDM_ROOT, table: VENUES, copyright: '  ' });
     assert.equal(r.copyright, null);
     assert.equal(r.lift, 0);
+  });
+});
+
+// THE STUDIO (O-342): the grammar being worked out, on the screening room and
+// the LAN only.
+describe('the studio page (O-342)', () => {
+  const root = { display_config: { landscape: { studio: { site: 'The Site', watermark: 'mark', volumes: [
+    { id: 'one', image: 'one_art', label: { default: 'One', italian: 'Uno' } },
+    { id: 'two', image: 'two_art.svg', label: { default: 'Two' } },
+    { id: 'three', image: 'three_art', label: { default: 'Three' } }
+  ] } } } };
+  const config = { assetBase: './data/x/', landscape: { mails: [] } };
+  const loc = { pathname: '/', search: '', hostname: 'localhost' };
+  it('draws nothing of it without the word', () => {
+    const r = portalRecord({ volume: 'x', config, root, loc });
+    assert.equal(r.studio, undefined);
+    assert.equal(r.doors.length, 0);
+  });
+  it('heads the page with the named volume and rows the others beneath', () => {
+    const r = portalRecord({ volume: 'x', config, root, loc, studio: 'two', lang: 'italian' });
+    assert.equal(r.studio, 'two');
+    assert.equal(r.title, 'Two');
+    assert.equal(r.emblem.imageUrl, './data/x/assets/two_art.svg');
+    assert.deepEqual(r.doors.map(d => d.caption), ['Uno', 'Three']);
+    assert.equal(r.doors[0].imageUrl, './data/x/assets/one_art.png');
+    assert.equal(r.doors[0].href, '/?volume=x&studio=one');
+    assert.equal(r.watermarkUrl, './data/x/assets/mark.png');
+    assert.equal(r.site, 'The Site');
+  });
+  it('an unknown word opens on the first volume listed', () => {
+    assert.equal(portalRecord({ volume: 'x', config, root, loc, studio: '1' }).studio, 'one');
+  });
+  it('is heard on the LAN and never on a public host', () => {
+    assert.equal(studioWord({ hostname: 'localhost', search: '?studio=two', pathname: '/' }), 'two');
+    assert.equal(studioWord({ hostname: 'example.org', search: '?studio=two', pathname: '/' }), null);
   });
 });

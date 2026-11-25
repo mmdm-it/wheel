@@ -6,7 +6,7 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUE
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
-import { landscapeTongues, portalRecord, renderLandscapePortal } from './view/landscape-portal.js';
+import { landscapeTongues, portalRecord, renderLandscapePortal, studioWord } from './view/landscape-portal.js';
 import { armOrientationReboot } from './core/orientation-reboot.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
@@ -2268,7 +2268,7 @@ function applyLandscapePortal() {
   // The phone's own tongue comes first wherever the page has words in it;
   // the edition's language answers only where it has none.
   const lang = firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || dimensionBridge.getSelection()?.language || null;
-  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
+  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);
   if (key === landscapeRendered) return;

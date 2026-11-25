@@ -335,6 +335,41 @@ svg :focus-visible {
     justify-content: space-between;
     gap: 0;
   }
+  /* THE STUDIO (O-342): the volume on the glass large at the head, the
+     others small in a row beneath, the site's mark faint behind it all. */
+  .portal-watermark {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 94vmin;
+    width: auto;
+    transform: translate(-50%, -50%);
+    opacity: 0.07;
+    pointer-events: none;
+  }
+  .portal-page--studio .portal-body {
+    position: relative;
+    gap: 1.6vmin;
+  }
+  .portal-page--studio .portal-emblem--crest {
+    height: 22vmin;
+  }
+  .portal-page--studio .portal-doors {
+    gap: 3vmin;
+    margin-top: 5vmin;
+  }
+  /* Equal columns, so the pictures stand at even intervals whatever the
+     length of the words under them. */
+  .portal-page--studio .portal-doors-door {
+    width: 34vmin;
+  }
+  .portal-page--studio .portal-doors-image {
+    height: 11vmin;
+  }
+  .portal-page--studio .portal-doors-caption {
+    font-size: 4vmin;
+    white-space: nowrap;
+  }
   /* The doors under the name instead of over it. */
   .portal-doors--below {
     margin: 4vmin 0 0;
