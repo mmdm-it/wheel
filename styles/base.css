@@ -376,7 +376,6 @@ svg :focus-visible {
   .portal-doors-image {
     height: 16vmin;
     width: auto;
-    opacity: 0.8;
   }
   .portal-door--corner {
     position: absolute;
