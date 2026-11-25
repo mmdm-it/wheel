@@ -190,11 +190,25 @@ describe('the Catholic calendar as a volume (O-341)', () => {
     assert.deepEqual(door.children.map(c => [c.className, c.textContent]), [['portal-doors-image', ''], ['portal-doors-caption', 'Calendar']]);
     assert.equal(portalRecord({ volume: 'bible', config: volumeConfigs.bible, root, lang: 'latin', loc: SQUARE, table: VENUES }).doors[0].caption, 'Calendarium');
     assert.equal(r.mailsCorners, true, 'and the mail words go to the lower corners');
-    // And back.
-    const back = portalRecord({ volume: 'calendarium', config: volumeConfigs.calendarium, root: { display_config: { splash: { title: 'Calendarium\nCatholicum' }, landscape: { info: { default: 'info' }, door: { image: 'crown_of_thorns' } } } }, lang: 'english', loc: SQUARE, table: VENUES });
-    assert.equal(back.link.href, './?volume=bible');
-    assert.equal(back.link.corner, true);
-    assert.deepEqual(back.doors, []);
+    // And back: the calendar's page mirrors this one (Howell, the same day).
+    const own = { display_config: { splash: { title: 'Calendarium\nCatholicum' }, landscape: {
+      emblem: { image: 'calendarium_door' }, title: { default: 'Calendar', italian: 'Calendario' },
+      info: { default: 'info' }, corrections: { default: 'corrections' },
+      doors: { bible: { image: 'crown_of_thorns', label: { default: 'Biblia Catholica' } } } } } };
+    const back = portalRecord({ volume: 'calendarium', config: volumeConfigs.calendarium, root: own, lang: 'italian', loc: SQUARE, table: VENUES, subject: 'a day' });
+    assert.equal(back.title, 'Calendario', 'the one word, in the reader\'s tongue');
+    assert.equal(portalRecord({ volume: 'calendarium', config: volumeConfigs.calendarium, root: own, lang: 'english', loc: SQUARE, table: VENUES }).title, 'Calendar');
+    assert.equal(back.link, null, 'no door in the corner any more');
+    assert.deepEqual(back.emblem, { imageUrl: './data/calendarium/assets/calendarium_door.png', label: 'Calendarium Catholicum', crest: true, tone: 'light', size: 24 });
+    assert.deepEqual(back.doors, [{ href: './?volume=bible', imageUrl: './data/calendarium/assets/crown_of_thorns.png', label: 'Biblia Catholica', tone: 'light', caption: 'Biblia Catholica' }]);
+    assert.deepEqual(back.mails.map(m => m.text), ['info', 'corrections']);
+    assert.match(back.mails[1].href, /^mailto:corrections@bibliacatholica\.com\?subject=/);
+    assert.equal(back.mailsCorners, true);
+    const mirror = createMockElement('div');
+    renderLandscapePortal(mirror, back, doc);
+    const mb = mirror.children[0].children[0];
+    assert.deepEqual(mb.children.map(c => c.className), ['portal-emblem portal-emblem--crest portal-door-image--light', 'portal-title', 'portal-doors portal-doors--below']);
+    assert.equal(mb.children[2].children[0].children[0].className, 'portal-doors-image portal-door-image--light');
   });
 
   it('the Bible opens at a verse named by its utterance on the address', () => {

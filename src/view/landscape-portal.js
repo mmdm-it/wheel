@@ -166,7 +166,11 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   // `crest: true` — a small mark over the name, not the page's large head:
   // the page keeps its centred body (Howell 2026-11-25, a circle drawn over
   // the name: "add our crown of thorns art above the ... banner").
-  const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '', crest: decl.emblem?.crest === true } : null;
+  const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '', crest: decl.emblem?.crest === true,
+    // `tone: 'light'` draws dark line art inverted, for a dark ground;
+    // `size` is the crest's height in vmin where the standard is not wanted.
+    tone: decl.emblem?.tone === 'light' ? 'light' : null,
+    size: Number.isFinite(Number(decl.emblem?.size)) && Number(decl.emblem?.size) > 0 ? Number(decl.emblem.size) : null } : null;
   // What the business is, in the reader's tongue (the volume's words).
   const about = decl.about ? pick(words?.[decl.about], lang) : null;
   // Where the house is, under the about line after a blank line (Howell
@@ -236,6 +240,7 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
       href,
       imageUrl: doorImage(d) && config?.assetBase ? `${config.assetBase}${base}${doorImage(d)}.png` : null,
       label: typeof d.label === 'string' ? d.label : '',
+      tone: d.tone === 'light' ? 'light' : null,
       // The word under the picture, in the reader's tongue: the volume's
       // (display_config.landscape.doors.<volume>.label). None, no word.
       caption: (c => (typeof c === 'string' && c.trim() ? c.trim() : null))(pick(words?.doors?.[d.volume]?.label, lang))
@@ -255,7 +260,11 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     emblem,
     // `titleOneLine`: the card's name set on one line (Howell 2026-11-02, the
     // company's page: "all on one line").
-    title: decl.titleOneLine === true ? String(splash.title || config?.documentTitle || '').split('\n').map(t => t.trim()).filter(Boolean).join(' ') : (splash.title || config?.documentTitle || ''),
+    // `titleFrom` names the volume's word table for a name said in the
+    // reader's tongue (Howell 2026-11-25: "Make the banner simply the word
+    // ... in the phone's own language"); the card's name otherwise.
+    title: (said => (typeof said === 'string' && said.trim() ? said.trim() : null))(decl.titleFrom ? pick(words?.[decl.titleFrom], lang) : null)
+      || (decl.titleOneLine === true ? String(splash.title || config?.documentTitle || '').split('\n').map(t => t.trim()).filter(Boolean).join(' ') : (splash.title || config?.documentTitle || '')),
     titleFont: splash.font || null,
     titleColor: splash.color || null,
     // The name's size against the page's standard (Howell 2026-11-01, on the
@@ -333,7 +342,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       a.setAttribute('href', d.href);
       if (d.label) a.setAttribute('aria-label', d.label);
       if (d.imageUrl) {
-        const img = make(doc, 'img', 'portal-doors-image');
+        const img = make(doc, 'img', d.tone === 'light' ? 'portal-doors-image portal-door-image--light' : 'portal-doors-image');
         img.setAttribute('src', d.imageUrl);
         img.setAttribute('alt', d.label || '');
         a.appendChild(img);
@@ -347,7 +356,8 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   };
   if (!record.doorsBelow) drawDoors();
   if (record.emblem) {
-    const img = make(doc, 'img', record.emblem.crest ? 'portal-emblem portal-emblem--crest' : 'portal-emblem');
+    const img = make(doc, 'img', `${record.emblem.crest ? 'portal-emblem portal-emblem--crest' : 'portal-emblem'}${record.emblem.tone === 'light' ? ' portal-door-image--light' : ''}`);
+    if (record.emblem.size && img.style) img.style.height = `${record.emblem.size}vmin`;
     img.setAttribute('src', record.emblem.imageUrl);
     img.setAttribute('alt', record.emblem.label || '');
     body.appendChild(img);

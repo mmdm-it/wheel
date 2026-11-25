@@ -1225,12 +1225,29 @@ volumeConfigs.calendarium = {
   documentTitle: 'Calendarium Catholicum',
   webManifest: undefined,
   homeIcon: undefined,
+  // ITS SIDEWAYS PAGE MIRRORS THE BIBLE'S (Howell 2026-11-25: "make it
+  // reciprocal so that the calendar's landscape page mirrors the Bible
+  // landscape page. Make the banner simply the word calendar in the phone's
+  // own language, and put our calendar icon above it large. And the Crown of
+  // Thorns logo needs to move now from the lower right corner to directly
+  // below the banner, with the label Biblia Catholica ... add the
+  // 'corrections' link to the lower right, and with 'info' on the lower
+  // left under the assumption that the calendar may also need an occasional
+  // correction"). The pictures are dark line art and the ground is navy, so
+  // both are drawn light.
   landscape: {
-    mails: [{ address: 'info@bibliacatholica.com', purpose: 'info' }],
+    mails: [
+      { address: 'info@bibliacatholica.com', purpose: 'info' },
+      { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true }
+    ],
     mailsAs: 'words',
-    titleScale: 2,
+    mailsCorners: true,
+    emblem: { image: 'calendarium_door', label: 'Calendarium Catholicum', crest: true, tone: 'light', size: 24 },
+    titleFrom: 'title',
+    titleScale: 2.5,
     lift: 7,
-    link: { volume: 'bible', href: './?volume=bible', image: 'crown_of_thorns', tone: 'light', corner: true, label: 'Biblia Catholica' },
+    doorsBelow: true,
+    doors: [{ volume: 'bible', href: './?volume=bible', label: 'Biblia Catholica', tone: 'light' }],
     hint: false
   },
   createHandlers: makeAdapterHandlers('calendarium')
