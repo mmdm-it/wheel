@@ -93,4 +93,21 @@ describe('the home-screen door (O-273)', () => {
     assert.ok(m.icons.some(i => /maskable/.test(i.purpose || '')), 'one icon is maskable for Android launchers');
     await fs.access(path.join(root, cfg.homeIcon));
   });
+  it('the calendar declares its own manifest too (O-340): standalone, on its navy, two folders under the root', async t => {
+    const cfg = volumeConfigs.calendar;
+    assert.equal(cfg.webManifest, './data/calendar/webapp.json');
+    assert.equal(cfg.homeIcon, './data/calendar/assets/icon-192.png');
+    const root = process.env.WHEEL_REPO_ROOT || repoRoot;
+    const file = path.join(root, cfg.webManifest);
+    try { await fs.access(path.join(root, cfg.assetBase)); } catch { t.skip('the corpus window data/ is not checked out here'); return; }
+    const m = JSON.parse(await fs.readFile(file, 'utf8'));
+    assert.equal(m.display, 'standalone');
+    assert.equal(m.scope, '../../');
+    assert.ok(m.start_url.startsWith(m.scope), 'start_url is inside scope');
+    assert.equal(m.background_color, cfg.themes?.default?.bg ?? m.background_color);
+    assert.doesNotMatch(JSON.stringify(m), /Biblia|crown/i, 'nothing of the Bible in the calendar\'s app');
+    for (const icon of m.icons) await fs.access(path.join(path.dirname(file), icon.src));
+    assert.ok(m.icons.some(i => /maskable/.test(i.purpose || '')));
+    await fs.access(path.join(root, cfg.homeIcon));
+  });
 });

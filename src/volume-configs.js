@@ -585,6 +585,12 @@ const volumeConfigs = {
     assetBase: './data/calendar/',
     theme: 'calendar',
     documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
+    // THE DOOR ONTO THE HOME SCREEN (O-340, Howell 2026-11-24: "I would like
+    // to install the calendar as a standalone app on my Android"), as the
+    // Bible has (O-273): the volume's own manifest and icon, under its data
+    // root. Named webapp.json because manifest.json there is the volume.
+    webManifest: './data/calendar/webapp.json',
+    homeIcon: './data/calendar/assets/icon-192.png',
     // THE LANDSCAPE PAGE (O-258, Howell 2026-11-01: "they see one email,
     // info@mmdm.it. They see the name of the company, and they see the Crown
     // of Thorns logo, which is a link to take them to the Bible"). The crown
