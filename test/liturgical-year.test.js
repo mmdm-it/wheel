@@ -38,6 +38,9 @@ describe('the liturgical year (O-341)', () => {
     assert.equal(temporalKey(2026, 12, 16), 'Adv3-3');
     assert.equal(temporalKey(2026, 12, 27), 'Nat1-0');
     assert.equal(temporalKey(2026, 12, 25), null, 'Christmas is the date\'s own feast');
+    assert.equal(temporalKey(2026, 12, 28), null, 'the feasts after Christmas are the dates\' own');
+    assert.equal(temporalKey(2026, 12, 30), 'Nat30', 'the sixth day within the octave of Christmas has a Mass of its own');
+    assert.equal(temporalKey(2028, 12, 31), 'Nat1-0', 'unless it is the octave\'s Sunday');
     assert.equal(temporalKey(2027, 1, 3), 'Nat2-0', 'the Sunday between the 2nd and the 5th');
     assert.equal(temporalKey(2027, 1, 6), null);
     assert.equal(temporalKey(2027, 1, 10), 'Epi1-0');
@@ -79,6 +82,12 @@ describe('the liturgical year (O-341)', () => {
     assert.equal(kept(sunday2, second, { sunday: true }), sunday2);
     assert.equal(kept(sunday2, lord, { sunday: true }), lord, 'a feast of the Lord takes a Sunday of the second class');
     assert.equal(kept(feria, third), third);
+    const commemoration = { rank: 1.1 };
+    assert.equal(kept(feria, commemoration), feria, 'a commemoration never takes the day from the season');
+    assert.equal(kept(null, commemoration), commemoration, 'it is the day only where the season has none');
+    // The Vigil of Christmas on a Sunday (2028): both of the first class, and the Vigil is kept.
+    const advent4 = { rank: 6.01 }, vigil = { rank: 6.1, overAdvent: true };
+    assert.equal(kept(advent4, vigil, { sunday: true, advent: true }), vigil);
     assert.equal(kept(lent, third), lent, 'a weekday of Lent outranks a feast of the third class');
     assert.equal(kept(null, third), third);
     assert.equal(kept(feria, null), feria);

@@ -57,7 +57,9 @@ export function temporalKey(year, month, day) {
   if (month === 10 && dow === 0 && day >= 25) return '10-DU';
   const advent = adventStart(year);
   if (n >= advent) {
-    if (month === 12 && day >= 25) return dow === 0 ? 'Nat1-0' : null;
+    // Within the octave of Christmas: its Sunday; and the fifth, sixth and
+    // seventh days (29 to 31 December), which have a Mass of their own.
+    if (month === 12 && day >= 25) return dow === 0 ? 'Nat1-0' : (day >= 29 ? `Nat${day}` : null);
     return `Adv${Math.floor((n - advent) / 7) + 1}-${dow}`;
   }
   const e = easter(year);
@@ -103,9 +105,13 @@ export function kept(seasonDay, feast, { sunday = false, advent = false } = {}) 
   if (!feast) return seasonDay;
   const t = seasonDay.rank ?? 1;
   const s = feast.rank ?? 1;
+  // Below rank 2 the table's feast is a commemoration: it is remembered in
+  // the day's Mass and never takes the day from the season.
+  if (s < 2) return seasonDay;
   if (t >= 6) {
     // A day of the first class keeps itself; Christmas and the Epiphany are
-    // above every Sunday, and the Immaculate Conception above Advent's.
+    // above every Sunday, and the Immaculate Conception and the Vigil of
+    // Christmas above Advent's.
     if (s >= 7 && s > t) return feast;
     if (feast.overAdvent && advent && s >= 6) return feast;
     return seasonDay;
