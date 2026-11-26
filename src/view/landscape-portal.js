@@ -158,7 +158,7 @@ export function studioWord(loc = (typeof window !== 'undefined' ? window.locatio
   try { return new URLSearchParams(loc.search || '').get('studio') || standing; } catch (_) { return standing; }
 }
 
-export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null, studioRow = null } = {}) {
+export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null } = {}) {
   const decl = config?.landscape;
   if (!decl) return null;
   const words = root?.display_config?.landscape || null;
@@ -322,12 +322,11 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     doorsBelow: true,
     mailsCorners: true,
     link: null,
-    // The row's order: the list's own, or the order the reader's switches
-    // have left it in (`studioRow`, ids; a volume it does not name goes last).
-    doors: bench.volumes.filter(v => v !== here).sort((a, b) => {
-      const at = v => { const i = Array.isArray(studioRow) ? studioRow.indexOf(v.id) : -1; return i < 0 ? Infinity : i; };
-      return at(a) - at(b);
-    }).map(v => ({
+    // THE VOLUMES ARE A WHEEL (Howell 2026-11-26: "The whole row should turn
+    // like a wheel"): the row is the list read on from the head and round
+    // again, so the order of the volumes never changes, only which of them
+    // stands at the head. One turn brings the row's last picture up.
+    doors: bench.volumes.map((_, i, all) => all[(all.indexOf(here) + 1 + i) % all.length]).filter(v => v !== here).map(v => ({
       id: v.id,
       href: `${path}?volume=${encodeURIComponent(volume)}&studio=${encodeURIComponent(v.id)}`,
       imageUrl: art(v.image), label: said(v), tone: record.emblem?.tone || null, caption: said(v)
@@ -492,10 +491,12 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
 
 // THE STUDIO'S SWITCH IS SEEN (Howell 2026-11-26, arrows drawn on his
 // screenshot: "I would prefer the switch be animated, so the user can clearly
-// see the loading of a new volume"). The picture that was tapped rises to the
-// head, the head's drops to the left end of the row, and the pictures between
-// slide one place right; each carries its word with it, the word growing into
-// the name or shrinking into a caption. The page is redrawn at once in its
+// see the loading of a new volume"; then, of the row: "should turn like a
+// wheel"). One turn: the row's last picture rises to the head, the head's
+// drops to the left end of the row, and every picture between slides one
+// place right; each carries its word with it, the word growing into the name
+// or shrinking into a caption. A picture further back is reached by as many
+// turns as it stands from the row's end. The page is redrawn at once in its
 // new order and every piece is then played from where it stood to where it
 // now stands, so the motion ends exactly on the page as drawn.
 //

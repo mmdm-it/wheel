@@ -905,7 +905,7 @@ let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
 let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
 let landscapeRendered = '';  // the record last drawn on the sheet, so a repaint only follows a change
 let landscapeRecord = null;       // that record itself, for the studio's switch (O-342)
-let landscapeStudioRow = null;    // the order the studio's row was left in by the reader's switches
+let landscapeStudioTurning = false; // the studio's wheel is mid-turn: further taps wait
 let landscapeStudioWired = false; // the sheet hears the studio's taps once
 
 // THE PAGE SPEAKS THE READER'S TONGUE (O-226, Howell 2026-10-27: "The 'edition
@@ -2271,7 +2271,7 @@ function applyLandscapePortal() {
   // The phone's own tongue comes first wherever the page has words in it;
   // the edition's language answers only where it has none.
   const lang = firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || dimensionBridge.getSelection()?.language || null;
-  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), studioRow: landscapeStudioRow, copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
+  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);
   if (key === landscapeRendered) return;
@@ -2291,22 +2291,39 @@ function applyLandscapePortal() {
     });
   }
 }
-// The head drops to the left end of the row, the tapped picture leaves the
-// row for the head, and the address is rewritten so a saved page reopens here.
+// THE STUDIO'S WHEEL TURNS (Howell 2026-11-26: "The whole row should turn like
+// a wheel"). One turn brings the row's last picture to the head and drops the
+// head to the row's left end; a picture further back takes as many turns as
+// it stands from the end, each seen, quicker when there are several. The
+// address is rewritten at every turn so a saved page reopens where it stopped.
 function switchStudio(sheet, id) {
   const row = (landscapeRecord?.doors || []).map(d => d.id);
-  if (!id || !row.includes(id)) return;
-  const before = studioPlaces(sheet);
-  landscapeStudioRow = [landscapeRecord.studio, ...row.filter(v => v !== id)];
-  try {
-    const params = new URLSearchParams(window.location.search || '');
-    params.set('studio', id);
-    window.history.replaceState(window.history.state, '', `${window.location.pathname}?${params.toString()}`);
-  } catch (_) { /* file://: the page still switches, the address stays */ }
-  applyLandscapePortal();
+  const at = row.indexOf(id);
+  if (!id || at < 0 || landscapeStudioTurning) return;
+  let turns = row.length - at;
   let still = false;
   try { still = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (_) { /* no media queries */ }
-  if (!still) playStudioSwitch(sheet, before);
+  const ms = turns > 1 ? 340 : 520;
+  const show = next => {
+    try {
+      const params = new URLSearchParams(window.location.search || '');
+      params.set('studio', next);
+      window.history.replaceState(window.history.state, '', `${window.location.pathname}?${params.toString()}`);
+    } catch (_) { return false; /* file://: no address to rewrite, so no turn */ }
+    applyLandscapePortal();
+    return true;
+  };
+  if (still) { show(id); return; }
+  landscapeStudioTurning = true;
+  const turn = () => {
+    const doors = (landscapeRecord?.doors || []).map(d => d.id);
+    const before = studioPlaces(sheet);
+    if (!doors.length || !show(doors[doors.length - 1])) { landscapeStudioTurning = false; return; }
+    playStudioSwitch(sheet, before, ms);
+    turns -= 1;
+    if (turns > 0) setTimeout(turn, ms + 40); else setTimeout(() => { landscapeStudioTurning = false; }, ms);
+  };
+  turn();
 }
 
 function updateIncompleteMark() {

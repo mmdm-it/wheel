@@ -315,22 +315,20 @@ describe('the studio page (O-342)', () => {
     assert.equal(r.studio, 'two');
     assert.equal(r.title, 'Two');
     assert.equal(r.emblem.imageUrl, './data/x/assets/two_art.svg');
-    assert.deepEqual(r.doors.map(d => d.caption), ['Uno', 'Three']);
-    assert.equal(r.doors[0].imageUrl, './data/x/assets/one_art.png');
-    assert.equal(r.doors[0].href, '/?volume=x&studio=one');
+    assert.deepEqual(r.doors.map(d => d.caption), ['Three', 'Uno'], 'the list read on from the head and round again');
+    assert.equal(r.doors[1].imageUrl, './data/x/assets/one_art.png');
+    assert.equal(r.doors[1].href, '/?volume=x&studio=one');
     assert.equal(r.watermarkUrl, './data/x/assets/mark.png');
     assert.equal(r.site, 'The Site');
   });
   it('an unknown word opens on the first volume listed', () => {
     assert.equal(portalRecord({ volume: 'x', config, root, loc, studio: '1' }).studio, 'one');
   });
-  it('keeps the row in the order the reader\'s switches left it', () => {
-    // From "one" at the head, a tap on "three": the head drops to the left end.
-    const r = portalRecord({ volume: 'x', config, root, loc, studio: 'three', studioRow: ['one', 'two'] });
-    assert.deepEqual(r.doors.map(d => d.id), ['one', 'two']);
-    const back = portalRecord({ volume: 'x', config, root, loc, studio: 'one', studioRow: ['three', 'two'] });
-    assert.deepEqual(back.doors.map(d => d.id), ['three', 'two'], 'the old head stands first, not in the list\'s own place');
-    assert.deepEqual(portalRecord({ volume: 'x', config, root, loc, studio: 'one', studioRow: ['three'] }).doors.map(d => d.id), ['three', 'two'], 'a volume the order does not name goes last');
+  it('the volumes are a wheel: one turn brings the row\'s last picture to the head and drops the head to the left end', () => {
+    const ids = studio => portalRecord({ volume: 'x', config, root, loc, studio }).doors.map(d => d.id);
+    assert.deepEqual(ids('one'), ['two', 'three']);
+    assert.deepEqual(ids('three'), ['one', 'two'], 'three rose, one dropped to the left end, two slid right');
+    assert.deepEqual(ids('two'), ['three', 'one']);
   });
   it('plays each picture and word from where it stood to where it stands', () => {
     const box = (left, top, width, height) => ({ left, top, width, height });
@@ -359,7 +357,7 @@ describe('the studio page (O-342)', () => {
     const sheet = el('div'); sheet.firstChild = null; sheet.removeChild = () => {};
     renderLandscapePortal(sheet, portalRecord({ volume: 'x', config, root, loc, studio: 'two' }), doc);
     assert.equal(made.find(e => e.attrs['data-studio-head']).attrs['data-studio-head'], 'two');
-    assert.deepEqual(made.filter(e => e.attrs['data-studio-door']).map(e => e.attrs['data-studio-door']), ['one', 'three']);
+    assert.deepEqual(made.filter(e => e.attrs['data-studio-door']).map(e => e.attrs['data-studio-door']), ['three', 'one']);
   });
   it('is heard on the LAN and never on a public host', () => {
     assert.equal(studioWord({ hostname: 'localhost', search: '?studio=two', pathname: '/' }), 'two');
