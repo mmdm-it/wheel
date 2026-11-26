@@ -2322,8 +2322,8 @@ function switchStudio(sheet, id) {
     if (!doors.length || !show(doors[doors.length - 1])) return;
     if (step < turns - 1) stages.push(studioPlaces(sheet));
   }
-  const ms = 520 + (turns - 1) * 300;
-  if (!playStudioTurn(sheet, stages, ms)) playStudioSwitch(sheet, stages[0], 520);
+  const ms = 1300 + (turns - 1) * 750;   // Howell 2026-11-26: "slow it down 2.5x" (from 520 and 300)
+  if (!playStudioTurn(sheet, stages, ms)) playStudioSwitch(sheet, stages[0], 1300);
   landscapeStudioTurning = true;
   setTimeout(() => { landscapeStudioTurning = false; }, ms);
 }

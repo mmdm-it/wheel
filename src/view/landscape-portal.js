@@ -514,7 +514,7 @@ export function studioPlaces(sheet) {
   for (const place of places.values()) { place.imageBox = box(place.image); place.wordBox = box(place.word); }
   return places;
 }
-export const STUDIO_SWITCH_MS = 520;
+export const STUDIO_SWITCH_MS = 1300;
 export function playStudioSwitch(sheet, before, ms = STUDIO_SWITCH_MS) {
   const after = studioPlaces(sheet);
   const moved = [];
