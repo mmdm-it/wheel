@@ -2322,7 +2322,7 @@ function switchStudio(sheet, id) {
     if (!doors.length || !show(doors[doors.length - 1])) return;
     if (step < turns - 1) stages.push(studioPlaces(sheet));
   }
-  const ms = 1300 + (turns - 1) * 750;   // Howell 2026-11-26: "slow it down 2.5x" (from 520 and 300)
+  const ms = 1300 + (turns - 1) * 1000;   // Howell 2026-11-26: "slow it down 2.5x", then each further place "to 1 second, so a three-place turn takes 3.3 seconds"
   if (!playStudioTurn(sheet, stages, ms)) playStudioSwitch(sheet, stages[0], 1300);
   landscapeStudioTurning = true;
   setTimeout(() => { landscapeStudioTurning = false; }, ms);
