@@ -4,7 +4,7 @@
 // reading tongue. These tests hold the model and where the door leads.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref, studioWord, studioPlaces, playStudioSwitch } from '../src/view/landscape-portal.js';
+import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref, studioWord, studioPlaces, playStudioSwitch, playStudioTurn } from '../src/view/landscape-portal.js';
 import { firstOfferedLanguage } from '../src/core/tongue.js';
 import { doorHref } from '../src/core/lan-gate.js';
 import { volumeConfigs, VENUES } from '../src/volume-configs.js';
@@ -349,6 +349,16 @@ describe('the studio page (O-342)', () => {
     assert.equal(last.as[0].image.style.transform, 'translate(55px, -55px) scale(2)', 'the old head starts from the head');
     assert.equal(last.as[1].image.style.transform, 'translate(-100px, 0px) scale(1)', 'the picture between starts one place left');
     assert.equal(playStudioSwitch(last, studioPlaces(last), 10), 0, 'nothing moves when nothing changed');
+    // A turn of two places is ONE run through both stages, never two runs.
+    const runs = [];
+    const lively = pg => { for (const el of [pg.head, pg.title, ...pg.as.flatMap(a => [a.image, a.word])]) el.animate = (frames, opts) => runs.push({ el, frames, opts }); return pg; };
+    const middle = page('two', box(90, 0, 20, 20), box(50, 30, 100, 10), [['three', box(40, 60, 10, 10), box(35, 75, 20, 5)], ['one', box(140, 60, 10, 10), box(135, 75, 20, 5)]]);
+    const end = lively(page('three', box(90, 0, 20, 20), box(50, 30, 100, 10), [['one', box(40, 60, 10, 10), box(35, 75, 20, 5)], ['two', box(140, 60, 10, 10), box(135, 75, 20, 5)]]));
+    assert.equal(playStudioTurn(end, [before, studioPlaces(middle)], 10), 6, 'every piece runs once');
+    const head = runs.find(r => r.el === end.head);
+    assert.deepEqual(head.frames.map(f => f.transform), ['translate(45px, 55px) scale(0.5)', 'translate(-55px, 55px) scale(0.5)', 'translate(0px, 0px) scale(1)'], 'the new head passes through the place between on its way up');
+    assert.equal(head.opts.duration, 10);
+    assert.equal(playStudioTurn(end, [studioPlaces(end)], 10), 0, 'nothing runs when nothing changed');
   });
   it('marks the head and the row so a tap can be heard and the pieces found', () => {
     const made = [];

@@ -6,7 +6,7 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUE
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { doorAt, proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
-import { landscapeTongues, portalRecord, renderLandscapePortal, studioWord, studioPlaces, playStudioSwitch } from './view/landscape-portal.js';
+import { landscapeTongues, portalRecord, renderLandscapePortal, studioWord, studioPlaces, playStudioSwitch, playStudioTurn } from './view/landscape-portal.js';
 import { armOrientationReboot } from './core/orientation-reboot.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
@@ -2300,10 +2300,9 @@ function switchStudio(sheet, id) {
   const row = (landscapeRecord?.doors || []).map(d => d.id);
   const at = row.indexOf(id);
   if (!id || at < 0 || landscapeStudioTurning) return;
-  let turns = row.length - at;
+  const turns = row.length - at;
   let still = false;
   try { still = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (_) { /* no media queries */ }
-  const ms = turns > 1 ? 340 : 520;
   const show = next => {
     try {
       const params = new URLSearchParams(window.location.search || '');
@@ -2314,16 +2313,19 @@ function switchStudio(sheet, id) {
     return true;
   };
   if (still) { show(id); return; }
-  landscapeStudioTurning = true;
-  const turn = () => {
+  // The whole turn is ONE motion (Howell 2026-11-26: "the intermediate icons
+  // should rotate around without stopping"): every step is drawn and read at
+  // once, nothing painted between, and the pieces then run through them all.
+  const stages = [studioPlaces(sheet)];
+  for (let step = 0; step < turns; step += 1) {
     const doors = (landscapeRecord?.doors || []).map(d => d.id);
-    const before = studioPlaces(sheet);
-    if (!doors.length || !show(doors[doors.length - 1])) { landscapeStudioTurning = false; return; }
-    playStudioSwitch(sheet, before, ms);
-    turns -= 1;
-    if (turns > 0) setTimeout(turn, ms + 40); else setTimeout(() => { landscapeStudioTurning = false; }, ms);
-  };
-  turn();
+    if (!doors.length || !show(doors[doors.length - 1])) return;
+    if (step < turns - 1) stages.push(studioPlaces(sheet));
+  }
+  const ms = 520 + (turns - 1) * 300;
+  if (!playStudioTurn(sheet, stages, ms)) playStudioSwitch(sheet, stages[0], 520);
+  landscapeStudioTurning = true;
+  setTimeout(() => { landscapeStudioTurning = false; }, ms);
 }
 
 function updateIncompleteMark() {

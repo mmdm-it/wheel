@@ -543,3 +543,39 @@ export function playStudioSwitch(sheet, before, ms = STUDIO_SWITCH_MS) {
   setTimeout(() => moved.forEach(el => { el.style.transition = ''; el.style.transformOrigin = ''; }), ms + 120);
   return moved.length;
 }
+
+// A turn of several places in ONE motion (Howell 2026-11-26: "the
+// intermediate icons should rotate around without stopping"). `stages` are the
+// places read at each step of the turn, the first before anything moved; the
+// sheet stands at the last. Each piece travels through every stage's place as
+// one keyframed run, so it rounds the wheel rather than cutting across it.
+export function playStudioTurn(sheet, stages, ms = STUDIO_SWITCH_MS) {
+  const path = (stages || []).filter(Boolean);
+  if (!path.length) return 0;
+  const after = studioPlaces(sheet);
+  let moved = 0;
+  const run = (el, boxes, now) => {
+    if (!el || !now || !now.width || !now.height) return;
+    if (typeof el.animate !== 'function') return;
+    let last = 'translate(0px, 0px) scale(1)';
+    const frames = boxes.map(was => {
+      if (was && was.height) {
+        const dx = (was.left + was.width / 2) - (now.left + now.width / 2);
+        const dy = (was.top + was.height / 2) - (now.top + now.height / 2);
+        last = `translate(${dx}px, ${dy}px) scale(${was.height / now.height})`;
+      }
+      return { transform: last, transformOrigin: '50% 50%' };
+    });
+    frames.push({ transform: 'translate(0px, 0px) scale(1)', transformOrigin: '50% 50%' });
+    if (frames.every(f => f.transform === frames[frames.length - 1].transform)) return;
+    el.animate(frames, { duration: ms, easing: 'cubic-bezier(0.3, 0, 0.2, 1)' });
+    moved += 1;
+  };
+  for (const [id, now] of after) {
+    const seen = path.map(stage => stage.get(id) || null);
+    if (!seen[0]) continue;
+    run(now.image, seen.map(s => s && s.imageBox), now.imageBox);
+    run(now.word, seen.map(s => s && s.wordBox), now.wordBox);
+  }
+  return moved;
+}
