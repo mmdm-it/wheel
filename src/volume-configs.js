@@ -75,6 +75,8 @@ export const readerIdle = () => new Promise(resolve => {
 });
 
 adapterRegistry.register('church', () => ({ ...bibleAdapter, volumeId: 'church' }));
+// O-343: the 1913 encyclopedia is read by the same reader, a first draft.
+adapterRegistry.register('encyclopedia', () => ({ ...bibleAdapter, volumeId: 'encyclopedia' }));
 // THE CATHOLIC CALENDAR (O-341) is the calendar's own reader with another
 // day card: no station and no drawings, the volume's table of days instead.
 const CALENDARIUM_BASE = './data/calendarium/';
@@ -1203,6 +1205,29 @@ volumeConfigs.church = {
   createHandlers: makeAdapterHandlers('church')
 };
 volumeConfigs.bible.door = 'church';
+
+// THE 1913 CATHOLIC ENCYCLOPEDIA (O-343, Howell 2026-11-25: "just build
+// something and I'll look at it"). A first draft: the leaf-and-shard reader
+// on a third data root — a letter where a Testament stands, an article where
+// a book stands, a passage where a verse stands. It has no door of its own
+// and no page links to it: it is opened by its word on the address, on the
+// LAN and in the screening room.
+const ENCYCLOPEDIA_VOLUME_BASE = WALL_ROOTS.encyclopedia.base;
+const ENCYCLOPEDIA_VOLUME_VERSION = WALL_ROOTS.encyclopedia.version;
+volumeConfigs.encyclopedia = {
+  ...volumeConfigs.church,
+  id: 'encyclopedia',
+  paths: ['/encyclopedia'],
+  door: undefined,
+  documentTitle: 'The Catholic Encyclopedia',
+  webManifest: undefined,
+  homeIcon: undefined,
+  manifestPath: ENCYCLOPEDIA_VOLUME_BASE,
+  assetBase: `${ENCYCLOPEDIA_VOLUME_BASE}/${ENCYCLOPEDIA_VOLUME_VERSION}/`,
+  loadManifest: wallLoader({ volumeId: 'encyclopedia', base: ENCYCLOPEDIA_VOLUME_BASE, version: ENCYCLOPEDIA_VOLUME_VERSION }),
+  palette: { bg: '#5b1a18', node: '#8c3b33', text: '#f3ead8', band: '#3c100f', accent: '#d9b98a', magnifierStroke: '#f3ead8', globeAtLeaf: '#282828' },
+  createHandlers: makeAdapterHandlers('encyclopedia')
+};
 
 // THE CATHOLIC CALENDAR (O-341, Howell 2026-11-25: "I want to bring the
 // calendar back, not as a manifold company calendar, but as a Catholic

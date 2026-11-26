@@ -37,9 +37,13 @@ const BIBLE_VOLUME_BASE = './data/gutenberg';
 const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
 const CHURCH_VOLUME_BASE = './data/catechism';
 const CHURCH_VOLUME_VERSION = '2026.11.13';
+// O-343: the 1913 encyclopedia, a first draft in the same shape.
+const ENCYCLOPEDIA_VOLUME_BASE = './data/encyclopedia';
+const ENCYCLOPEDIA_VOLUME_VERSION = '2026.11.25';
 export const WALL_ROOTS = {
   bible: { base: BIBLE_VOLUME_BASE, version: BIBLE_VOLUME_VERSION },
-  church: { base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION }
+  church: { base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION },
+  encyclopedia: { base: ENCYCLOPEDIA_VOLUME_BASE, version: ENCYCLOPEDIA_VOLUME_VERSION }
 };
 
 // THE WORDS OF A LEAF-AND-SHARD VOLUME'S ADDRESS, for the early loader, which
