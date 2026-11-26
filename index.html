@@ -30,7 +30,7 @@
     var v = null;
     try {
       v = new URLSearchParams(location.search).get('volume');
-      if (!v) { var p = location.pathname.toLowerCase(); for (var k in grounds) { if (p.indexOf('/' + k) >= 0) { v = k; break; } } }
+      if (!v) { var p = location.pathname.toLowerCase(); for (var k in grounds) { if (p.indexOf('/' + k) >= 0) { v = k; break; } } if (!v && p.indexOf('/studio/') >= 0) v = 'bible'; }
       if (!v) { var doors = { 'bibliacatholica.com': 'bible', 'www.bibliacatholica.com': 'bible', 'mmdm.it': 'calendar', 'www.mmdm.it': 'calendar' }; v = doors[location.hostname.toLowerCase()] || null; }
       if (!v) v = localStorage.getItem('wheel:last-volume');
     } catch (e) { /* storage or URL refused: the default ground stands */ }

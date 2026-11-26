@@ -82,5 +82,8 @@ test('the ground script knows the public doors by address', () => {
   assert.match(ground, /'www\.mmdm\.it': 'calendar'/);
   // the path's word still speaks first: the room's bible door on mmdm.it
   assert.ok(ground.indexOf("p.indexOf('/' + k)") < ground.indexOf('doors['), 'path before address');
+  // the studio is the Bible's door at another path of mmdm.it: without its
+  // word the address answered, and the page opened on the calendar's blue
+  assert.ok(ground.indexOf("p.indexOf('/studio/') >= 0) v = 'bible'") > 0 && ground.indexOf("'/studio/'") < ground.indexOf('doors['), 'the studio before address');
   assert.ok(ground.indexOf('doors[') < ground.indexOf("localStorage.getItem('wheel:last-volume')"), 'address before memory');
 });

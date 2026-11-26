@@ -6,7 +6,7 @@ import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUE
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { doorAt, proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
-import { landscapeTongues, portalRecord, renderLandscapePortal, studioWord } from './view/landscape-portal.js';
+import { landscapeTongues, portalRecord, renderLandscapePortal, studioWord, studioPlaces, playStudioSwitch } from './view/landscape-portal.js';
 import { armOrientationReboot } from './core/orientation-reboot.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
@@ -904,6 +904,9 @@ function applySeal() {
 let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
 let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
 let landscapeRendered = '';  // the record last drawn on the sheet, so a repaint only follows a change
+let landscapeRecord = null;       // that record itself, for the studio's switch (O-342)
+let landscapeStudioRow = null;    // the order the studio's row was left in by the reader's switches
+let landscapeStudioWired = false; // the sheet hears the studio's taps once
 
 // THE PAGE SPEAKS THE READER'S TONGUE (O-226, Howell 2026-10-27: "The 'edition
 // under review' disclaimer should appear in whatever language has been
@@ -2268,12 +2271,42 @@ function applyLandscapePortal() {
   // The phone's own tongue comes first wherever the page has words in it;
   // the edition's language answers only where it has none.
   const lang = firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || dimensionBridge.getSelection()?.language || null;
-  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
+  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), studioRow: landscapeStudioRow, copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);
   if (key === landscapeRendered) return;
   landscapeRendered = key;
+  landscapeRecord = record;
   renderLandscapePortal(sheet, record);
+  // THE STUDIO SWITCHES ON THE PAGE (O-342): a tap on one of the row's
+  // pictures does not leave for a new address and a blank screen; the page
+  // is redrawn where it stands and the pictures are seen changing places.
+  if (!landscapeStudioWired && typeof sheet.addEventListener === 'function') {
+    landscapeStudioWired = true;
+    sheet.addEventListener('click', event => {
+      const door = event.target && typeof event.target.closest === 'function' ? event.target.closest('[data-studio-door]') : null;
+      if (!door || !landscapeRecord?.studio) return;
+      event.preventDefault();
+      switchStudio(sheet, door.getAttribute('data-studio-door'));
+    });
+  }
+}
+// The head drops to the left end of the row, the tapped picture leaves the
+// row for the head, and the address is rewritten so a saved page reopens here.
+function switchStudio(sheet, id) {
+  const row = (landscapeRecord?.doors || []).map(d => d.id);
+  if (!id || !row.includes(id)) return;
+  const before = studioPlaces(sheet);
+  landscapeStudioRow = [landscapeRecord.studio, ...row.filter(v => v !== id)];
+  try {
+    const params = new URLSearchParams(window.location.search || '');
+    params.set('studio', id);
+    window.history.replaceState(window.history.state, '', `${window.location.pathname}?${params.toString()}`);
+  } catch (_) { /* file://: the page still switches, the address stays */ }
+  applyLandscapePortal();
+  let still = false;
+  try { still = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (_) { /* no media queries */ }
+  if (!still) playStudioSwitch(sheet, before);
 }
 
 function updateIncompleteMark() {

@@ -158,7 +158,7 @@ export function studioWord(loc = (typeof window !== 'undefined' ? window.locatio
   try { return new URLSearchParams(loc.search || '').get('studio') || standing; } catch (_) { return standing; }
 }
 
-export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null } = {}) {
+export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null, studioRow = null } = {}) {
   const decl = config?.landscape;
   if (!decl) return null;
   const words = root?.display_config?.landscape || null;
@@ -322,7 +322,13 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     doorsBelow: true,
     mailsCorners: true,
     link: null,
-    doors: bench.volumes.filter(v => v !== here).map(v => ({
+    // The row's order: the list's own, or the order the reader's switches
+    // have left it in (`studioRow`, ids; a volume it does not name goes last).
+    doors: bench.volumes.filter(v => v !== here).sort((a, b) => {
+      const at = v => { const i = Array.isArray(studioRow) ? studioRow.indexOf(v.id) : -1; return i < 0 ? Infinity : i; };
+      return at(a) - at(b);
+    }).map(v => ({
+      id: v.id,
       href: `${path}?volume=${encodeURIComponent(volume)}&studio=${encodeURIComponent(v.id)}`,
       imageUrl: art(v.image), label: said(v), tone: record.emblem?.tone || null, caption: said(v)
     })),
@@ -388,6 +394,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     record.doors.forEach(d => {
       const a = make(doc, 'a', 'portal-doors-door');
       a.setAttribute('href', d.href);
+      if (record.studio && d.id) a.setAttribute('data-studio-door', d.id);
       if (d.label) a.setAttribute('aria-label', d.label);
       if (d.imageUrl) {
         const img = make(doc, 'img', d.tone === 'light' ? 'portal-doors-image portal-door-image--light' : 'portal-doors-image');
@@ -408,6 +415,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     if (record.emblem.size && img.style) img.style.height = `${record.emblem.size}vmin`;
     img.setAttribute('src', record.emblem.imageUrl);
     img.setAttribute('alt', record.emblem.label || '');
+    if (record.studio) img.setAttribute('data-studio-head', record.studio);
     body.appendChild(img);
   }
   if (record.title) {
@@ -480,4 +488,57 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   if (record.copyright || record.site) page.appendChild(make(doc, 'p', 'portal-copyright', [record.site, record.copyright].filter(Boolean).join(' · ')));
   sheet.appendChild(page);
   return true;
+}
+
+// THE STUDIO'S SWITCH IS SEEN (Howell 2026-11-26, arrows drawn on his
+// screenshot: "I would prefer the switch be animated, so the user can clearly
+// see the loading of a new volume"). The picture that was tapped rises to the
+// head, the head's drops to the left end of the row, and the pictures between
+// slide one place right; each carries its word with it, the word growing into
+// the name or shrinking into a caption. The page is redrawn at once in its
+// new order and every piece is then played from where it stood to where it
+// now stands, so the motion ends exactly on the page as drawn.
+//
+// `studioPlaces` reads where each volume's picture and word stand;
+// `playStudioSwitch` takes the places read BEFORE the redraw.
+export function studioPlaces(sheet) {
+  const places = new Map();
+  if (!sheet || typeof sheet.querySelector !== 'function') return places;
+  const box = el => (el && typeof el.getBoundingClientRect === 'function' ? el.getBoundingClientRect() : null);
+  const head = sheet.querySelector('[data-studio-head]');
+  if (head) places.set(head.getAttribute('data-studio-head'), { image: head, word: sheet.querySelector('.portal-title') });
+  sheet.querySelectorAll('[data-studio-door]').forEach(a => {
+    places.set(a.getAttribute('data-studio-door'), { image: a.querySelector('.portal-doors-image'), word: a.querySelector('.portal-doors-caption') });
+  });
+  for (const place of places.values()) { place.imageBox = box(place.image); place.wordBox = box(place.word); }
+  return places;
+}
+export const STUDIO_SWITCH_MS = 520;
+export function playStudioSwitch(sheet, before, ms = STUDIO_SWITCH_MS) {
+  const after = studioPlaces(sheet);
+  const moved = [];
+  const from = (el, was, now) => {
+    if (!el || !el.style || !was || !now || !now.width || !now.height) return;
+    const dx = (was.left + was.width / 2) - (now.left + now.width / 2);
+    const dy = (was.top + was.height / 2) - (now.top + now.height / 2);
+    const scale = was.height / now.height;
+    if (Math.abs(dx) < 0.5 && Math.abs(dy) < 0.5 && Math.abs(scale - 1) < 0.01) return;
+    el.style.transition = 'none';
+    el.style.transformOrigin = '50% 50%';
+    el.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
+    moved.push(el);
+  };
+  for (const [id, now] of after) {
+    const was = before && before.get(id);
+    if (!was) continue;
+    from(now.image, was.imageBox, now.imageBox);
+    from(now.word, was.wordBox, now.wordBox);
+  }
+  if (!moved.length) return 0;
+  // The starting places are painted, then let go.
+  void sheet.offsetWidth;
+  const go = () => moved.forEach(el => { el.style.transition = `transform ${ms}ms cubic-bezier(0.3, 0, 0.2, 1)`; el.style.transform = ''; });
+  if (typeof requestAnimationFrame === 'function') requestAnimationFrame(() => requestAnimationFrame(go)); else setTimeout(go, 0);
+  setTimeout(() => moved.forEach(el => { el.style.transition = ''; el.style.transformOrigin = ''; }), ms + 120);
+  return moved.length;
 }

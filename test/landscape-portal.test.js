@@ -4,7 +4,7 @@
 // reading tongue. These tests hold the model and where the door leads.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref, studioWord } from '../src/view/landscape-portal.js';
+import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref, studioWord, studioPlaces, playStudioSwitch } from '../src/view/landscape-portal.js';
 import { firstOfferedLanguage } from '../src/core/tongue.js';
 import { doorHref } from '../src/core/lan-gate.js';
 import { volumeConfigs, VENUES } from '../src/volume-configs.js';
@@ -323,6 +323,43 @@ describe('the studio page (O-342)', () => {
   });
   it('an unknown word opens on the first volume listed', () => {
     assert.equal(portalRecord({ volume: 'x', config, root, loc, studio: '1' }).studio, 'one');
+  });
+  it('keeps the row in the order the reader\'s switches left it', () => {
+    // From "one" at the head, a tap on "three": the head drops to the left end.
+    const r = portalRecord({ volume: 'x', config, root, loc, studio: 'three', studioRow: ['one', 'two'] });
+    assert.deepEqual(r.doors.map(d => d.id), ['one', 'two']);
+    const back = portalRecord({ volume: 'x', config, root, loc, studio: 'one', studioRow: ['three', 'two'] });
+    assert.deepEqual(back.doors.map(d => d.id), ['three', 'two'], 'the old head stands first, not in the list\'s own place');
+    assert.deepEqual(portalRecord({ volume: 'x', config, root, loc, studio: 'one', studioRow: ['three'] }).doors.map(d => d.id), ['three', 'two'], 'a volume the order does not name goes last');
+  });
+  it('plays each picture and word from where it stood to where it stands', () => {
+    const box = (left, top, width, height) => ({ left, top, width, height });
+    const piece = b => ({ style: {}, getBoundingClientRect: () => b });
+    const page = (headId, headBox, titleBox, doors) => {
+      const head = { ...piece(headBox), getAttribute: () => headId };
+      const title = piece(titleBox);
+      const as = doors.map(([id, ib, wb]) => { const image = piece(ib), word = piece(wb); return { getAttribute: () => id, querySelector: q => (/image/.test(q) ? image : word), image, word }; });
+      return { head, title, as, offsetWidth: 0, querySelector: q => (/head/.test(q) ? head : title), querySelectorAll: () => as };
+    };
+    const first = page('one', box(90, 0, 20, 20), box(50, 30, 100, 10), [['two', box(40, 60, 10, 10), box(35, 75, 20, 5)], ['three', box(140, 60, 10, 10), box(135, 75, 20, 5)]]);
+    const before = studioPlaces(first);
+    // "three" was tapped: it stands at the head now, "one" at the left end, "two" one place right.
+    const last = page('three', box(90, 0, 20, 20), box(50, 30, 100, 10), [['one', box(40, 60, 10, 10), box(35, 75, 20, 5)], ['two', box(140, 60, 10, 10), box(135, 75, 20, 5)]]);
+    const moved = playStudioSwitch(last, before, 10);
+    assert.equal(moved, 6, 'three pictures and three words');
+    assert.equal(last.head.style.transform, 'translate(45px, 55px) scale(0.5)', 'the new head starts from its old place in the row, at its old size');
+    assert.equal(last.as[0].image.style.transform, 'translate(55px, -55px) scale(2)', 'the old head starts from the head');
+    assert.equal(last.as[1].image.style.transform, 'translate(-100px, 0px) scale(1)', 'the picture between starts one place left');
+    assert.equal(playStudioSwitch(last, studioPlaces(last), 10), 0, 'nothing moves when nothing changed');
+  });
+  it('marks the head and the row so a tap can be heard and the pieces found', () => {
+    const made = [];
+    const el = tag => { const e = { tag, className: '', style: {}, children: [], attrs: {}, classList: { add() {} }, setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute() {}, appendChild(c) { this.children.push(c); return c; } }; made.push(e); return e; };
+    const doc = { createElement: el };
+    const sheet = el('div'); sheet.firstChild = null; sheet.removeChild = () => {};
+    renderLandscapePortal(sheet, portalRecord({ volume: 'x', config, root, loc, studio: 'two' }), doc);
+    assert.equal(made.find(e => e.attrs['data-studio-head']).attrs['data-studio-head'], 'two');
+    assert.deepEqual(made.filter(e => e.attrs['data-studio-door']).map(e => e.attrs['data-studio-door']), ['one', 'three']);
   });
   it('is heard on the LAN and never on a public host', () => {
     assert.equal(studioWord({ hostname: 'localhost', search: '?studio=two', pathname: '/' }), 'two');
