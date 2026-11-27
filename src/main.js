@@ -2,7 +2,7 @@ import { createApp, getViewportInfo, buildBibleBookCousinChain, validateVolumeRo
 import { declareHomeScreen } from './core/home-screen.js';
 import { buildCalendarYears, buildBibleBooks, buildCatalogManufacturers, getCatalogChildren, getCalendarMonths, getBibleChapters, toRomanNumeral, bookIdOf, chapterIdOf } from './adapters/volume-helpers.js';
 import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
-import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES, readerIdle } from './volume-configs.js';
+import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES, readerIdle, STUDIO_SHELF } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
 import { doorAt, proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
@@ -2254,7 +2254,7 @@ function watchLandscapeTurn() {
   if (landscapeWatch || typeof window === 'undefined' || typeof window.matchMedia !== 'function') return;
   try {
     landscapeWatch = window.matchMedia('(orientation: landscape)');
-    const onTurn = e => { if (e && e.matches) applyLandscapePortal(); };
+    const onTurn = e => { if (e && e.matches) { studioWaiting(false); applyLandscapePortal(); } else if (e) studioUpright(); };
     if (typeof landscapeWatch.addEventListener === 'function') landscapeWatch.addEventListener('change', onTurn);
     else if (typeof landscapeWatch.addListener === 'function') landscapeWatch.addListener(onTurn);
   } catch (_) { landscapeWatch = null; }
@@ -2271,12 +2271,13 @@ function applyLandscapePortal() {
   // The phone's own tongue comes first wherever the page has words in it;
   // the edition's language answers only where it has none.
   const lang = firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || dimensionBridge.getSelection()?.language || null;
-  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
+  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), bench: studioBenchLent(), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);
   if (key === landscapeRendered) return;
   landscapeRendered = key;
   landscapeRecord = record;
+  keepStudioBench(record);
   renderLandscapePortal(sheet, record);
   // THE STUDIO SWITCHES ON THE PAGE (O-342): a tap on one of the row's
   // pictures does not leave for a new address and a blank screen; the page
@@ -2290,6 +2291,124 @@ function applyLandscapePortal() {
       switchStudio(sheet, door.getAttribute('data-studio-door'));
     });
   }
+}
+// THE STUDIO'S LIST FOLLOWS THE READER (Howell 2026-11-26: "put something
+// behind these icons"). Only the scripture volume keeps the list of volumes, so
+// a page that drew it remembers it for the visit, and a volume opened cold in
+// the studio reads it off that volume's root once. `artBase` is where the
+// list's pictures stand, which is that volume's shelf whoever is showing them.
+const STUDIO_BENCH_KEY = 'wheel.studio.bench';
+let studioBenchKept = null;
+let studioBenchAsked = false;
+function studioBenchLent() {
+  if (studioBenchKept) return studioBenchKept;
+  try {
+    const kept = JSON.parse(window.sessionStorage.getItem(STUDIO_BENCH_KEY) || 'null');
+    if (kept && Array.isArray(kept.volumes) && typeof kept.artBase === 'string') studioBenchKept = kept;
+  } catch (_) { /* no storage: the list is asked for below */ }
+  return studioBenchKept;
+}
+function keepStudioBench(record) {
+  if (record?.studioBench) {
+    studioBenchKept = record.studioBench;
+    try { window.sessionStorage.setItem(STUDIO_BENCH_KEY, JSON.stringify(studioBenchKept)); } catch (_) { /* kept for this page only */ }
+    return;
+  }
+  if (studioBenchAsked || !studioWord(window.location) || typeof fetch !== 'function') return;
+  studioBenchAsked = true;
+  const shelf = STUDIO_SHELF;
+  fetch(`${shelf}volume.json`).then(r => (r.ok ? r.json() : null)).then(root => {
+    const bench = root?.display_config?.landscape?.studio;
+    if (!bench || !Array.isArray(bench.volumes) || !bench.volumes.length) return;
+    const base = root.display_config?.detail_sector?.logo_base_path || 'assets/';
+    studioBenchKept = { volumes: bench.volumes, site: bench.site || null, watermark: bench.watermark || null, artBase: `${shelf}${base}` };
+    try { window.sessionStorage.setItem(STUDIO_BENCH_KEY, JSON.stringify(studioBenchKept)); } catch (_) { /* kept for this page only */ }
+    landscapeRendered = '';
+    applyLandscapePortal();
+  }).catch(() => { /* the volume's own sideways page stands */ });
+}
+// TURNING THE WHEEL CHOOSES, TURNING THE PHONE ENTERS (Howell 2026-11-26:
+// "something should change when the phone is rotated back to portrait"). The
+// volume at the head of the studio's page is the one the phone opens upright:
+// another volume is a new page; a volume not yet built is a plain sheet
+// saying so, which is taken down when the phone goes sideways again.
+function studioEntry() {
+  if (!landscapeRecord?.studio || !studioWord(window.location)) return null;
+  const target = landscapeRecord.studioVolume;
+  if (!target || target === currentVolumeId || !volumeConfigs[target]) return null;
+  return `${window.location.pathname}?volume=${encodeURIComponent(target)}&studio=${encodeURIComponent(landscapeRecord.studio)}`;
+}
+// A volume the list names may not be on this shelf: the screening room is
+// sent cleared editions only, so a draft that has never left the laptop is
+// "in preparation" there and a working volume here. Asked once per volume.
+const studioShelved = new Map();
+function studioOnShelf(target) {
+  if (studioShelved.has(target)) return studioShelved.get(target);
+  const config = volumeConfigs[target];
+  const root = typeof config?.manifestPath === 'string' && /\.json$/.test(config.manifestPath) ? config.manifestPath
+    : (typeof config?.assetBase === 'string' ? `${config.assetBase}volume.json` : null);
+  const asked = !root || typeof fetch !== 'function' ? Promise.resolve(false)
+    : fetch(root, { method: 'HEAD' }).then(r => r.ok).catch(() => false);
+  studioShelved.set(target, asked);
+  return asked;
+}
+function studioUpright() {
+  if (!landscapeRecord?.studio || !studioWord(window.location)) return false;
+  const entry = studioEntry();
+  if (!entry) {
+    if (!landscapeRecord.studioVolume) studioWaiting(true);
+    return !landscapeRecord.studioVolume;
+  }
+  const upright = () => { try { return window.matchMedia('(orientation: portrait)').matches; } catch (_) { return true; } };
+  studioOnShelf(landscapeRecord.studioVolume).then(there => {
+    if (!upright()) return;   // turned back while the shelf was being asked
+    if (there) { coverForReboot(); window.location.replace(entry); } else studioWaiting(true);
+  });
+  return true;
+}
+function coverForReboot() {
+  const sheet = document.getElementById('portrait-gate');
+  if (!sheet) return;
+  while (sheet.firstChild) sheet.removeChild(sheet.firstChild);
+  sheet.style.display = 'flex';
+}
+function studioWaiting(on) {
+  if (typeof document === 'undefined') return;
+  let card = document.getElementById('studio-waiting');
+  if (!on) {
+    if (!card) return;
+    card.remove();
+    // The sheet may have been bared for a reload that did not come.
+    const bared = document.getElementById('portrait-gate');
+    if (bared) bared.style.display = '';
+    landscapeRendered = '';
+    return;
+  }
+  if (card || !landscapeRecord) return;
+  const sheet = document.getElementById('portrait-gate');
+  const worn = sheet && typeof getComputedStyle === 'function' ? getComputedStyle(sheet) : null;
+  card = document.createElement('div');
+  card.id = 'studio-waiting';
+  card.style.cssText = 'position:fixed;inset:0;z-index:2147483000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4vmin;text-align:center;padding:8vmin;';
+  card.style.background = worn?.backgroundColor && worn.backgroundColor !== 'rgba(0, 0, 0, 0)' ? worn.backgroundColor : '#e8dcc0';
+  card.style.color = worn?.color || '#2a1a0f';
+  card.style.fontFamily = worn?.fontFamily || 'serif';
+  if (landscapeRecord.emblem?.imageUrl) {
+    const img = document.createElement('img');
+    img.src = landscapeRecord.emblem.imageUrl;
+    img.alt = '';
+    img.style.cssText = 'width:38vmin;height:38vmin;object-fit:contain;';
+    card.appendChild(img);
+  }
+  const name = document.createElement('div');
+  name.textContent = landscapeRecord.title || '';
+  name.style.cssText = 'font-size:8vmin;line-height:1.15;';
+  const line = document.createElement('div');
+  line.textContent = 'In preparation';   // English only, as the studio's other words are
+  line.style.cssText = 'font-size:4.5vmin;opacity:0.7;';
+  card.appendChild(name);
+  card.appendChild(line);
+  document.body.appendChild(card);
 }
 // THE STUDIO'S WHEEL TURNS (Howell 2026-11-26: "The whole row should turn like
 // a wheel"). One turn brings the row's last picture to the head and drops the
@@ -5350,6 +5469,8 @@ async function bootVolume(volumeOverride = null, searchOverride = null, gatewayR
   // upright the page reboots for the viewport it is in (O-259).
   armOrientationReboot({
     bootPortrait: viewport.isPortrait,
+    // In the studio the head of the sideways page says which volume opens.
+    reload: () => { if (!studioUpright()) window.location.reload(); },
     // Hold the sheet up, bare, over the sideways wheel until the new page
     // lands: its dress is outside the media query for exactly this.
     cover: () => {

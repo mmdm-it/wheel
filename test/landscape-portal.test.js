@@ -330,6 +330,24 @@ describe('the studio page (O-342)', () => {
     assert.deepEqual(ids('three'), ['one', 'two'], 'three rose, one dropped to the left end, two slid right');
     assert.deepEqual(ids('two'), ['three', 'one']);
   });
+  it('the head names the volume the phone opens upright, and none where it is not built (O-344)', () => {
+    const built = { display_config: { landscape: { studio: { volumes: [
+      { id: 'one', volume: 'x', image: 'a', label: { default: 'One' } },
+      { id: 'two', volume: 'y', image: 'b', label: { default: 'Two' } },
+      { id: 'three', image: 'c', label: { default: 'Three' } }
+    ] } } } };
+    const r = portalRecord({ volume: 'x', config, root: built, loc, studio: 'two' });
+    assert.equal(r.studioVolume, 'y');
+    assert.deepEqual(r.doors.map(d => d.volume), [null, 'x']);
+    assert.equal(portalRecord({ volume: 'x', config, root: built, loc, studio: 'three' }).studioVolume, null, 'an unbuilt volume opens nothing');
+    assert.equal(r.studioBench.artBase, './data/x/assets/', 'the list is handed on with the address of its pictures');
+    // A volume with no list of its own is lent the keeper's, pictures and all.
+    const bare = { display_config: {} };
+    const lent = portalRecord({ volume: 'y', config: { assetBase: './data/y/', landscape: { mails: [] } }, root: bare, loc, studio: '1', bench: r.studioBench });
+    assert.equal(lent.studio, 'two', 'on a volume\'s own page the head is that volume');
+    assert.equal(lent.emblem.imageUrl, './data/x/assets/b.png', 'the pictures stay on the lender\'s shelf');
+    assert.equal(portalRecord({ volume: 'y', config: { assetBase: './data/y/', landscape: { mails: [] } }, root: bare, loc, bench: r.studioBench }).studio, undefined, 'and never without the word');
+  });
   it('plays each picture and word from where it stood to where it stands', () => {
     const box = (left, top, width, height) => ({ left, top, width, height });
     const piece = b => ({ style: {}, getBoundingClientRect: () => b });

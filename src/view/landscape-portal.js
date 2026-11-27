@@ -158,7 +158,7 @@ export function studioWord(loc = (typeof window !== 'undefined' ? window.locatio
   try { return new URLSearchParams(loc.search || '').get('studio') || standing; } catch (_) { return standing; }
 }
 
-export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null } = {}) {
+export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null, bench: lent = null } = {}) {
   const decl = config?.landscape;
   if (!decl) return null;
   const words = root?.display_config?.landscape || null;
@@ -307,15 +307,29 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     dir: RTL.has(lang) ? 'rtl' : 'ltr'
   };
   // The studio's page: the same record with its head and its row replaced.
-  const bench = studio && Array.isArray(words?.studio?.volumes) && words.studio.volumes.length && config?.assetBase ? words.studio : null;
+  // The list is the scripture volume's to keep, and it FOLLOWS THE READER into the
+  // other volumes (Howell 2026-11-26: "put something behind these icons"): a
+  // volume with no list of its own is lent one, with the address its
+  // pictures stand at (`artBase`), by whoever read it there.
+  const own = Array.isArray(words?.studio?.volumes) && words.studio.volumes.length && config?.assetBase ? words.studio : null;
+  const borrowed = !own && lent && Array.isArray(lent.volumes) && lent.volumes.length && typeof lent.artBase === 'string' ? lent : null;
+  const bench = studio ? (own || borrowed) : null;
   if (!bench) return record;
-  const art = n => (typeof n === 'string' && n ? `${config.assetBase}${base}${/\.[a-z]+$/.test(n) ? n : `${n}.png`}` : null);
+  const artBase = own ? `${config.assetBase}${base}` : borrowed.artBase;
+  const art = n => (typeof n === 'string' && n ? `${artBase}${/\.[a-z]+$/.test(n) ? n : `${n}.png`}` : null);
+  const opens = v => (typeof v.volume === 'string' && v.volume ? v.volume : null);
   const said = v => (c => (typeof c === 'string' && c.trim() ? c.trim() : v.id))(pick(v.label, lang));
-  const here = bench.volumes.find(v => v.id === studio) || bench.volumes[0];
+  // On a volume's own page the head is that volume, whatever the word says.
+  const here = bench.volumes.find(v => v.id === studio) || bench.volumes.find(v => opens(v) === volume) || bench.volumes[0];
   const path = loc && typeof loc.pathname === 'string' ? loc.pathname : './';
   return {
     ...record,
     studio: here.id,
+    // THE HEAD IS THE VOLUME THE PHONE OPENS UPRIGHT: turning the wheel
+    // chooses, turning the phone enters. Null where the volume is not built.
+    studioVolume: opens(here),
+    // What a volume lent this list needs to lend it on.
+    studioBench: { volumes: bench.volumes, site: bench.site || null, watermark: bench.watermark || null, artBase },
     emblem: { imageUrl: art(here.image), label: said(here), crest: true, tone: record.emblem?.tone || null, size: null },
     title: said(here),
     titleScale: 2,
@@ -328,6 +342,7 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     // stands at the head. One turn brings the row's last picture up.
     doors: bench.volumes.map((_, i, all) => all[(all.indexOf(here) + 1 + i) % all.length]).filter(v => v !== here).map(v => ({
       id: v.id,
+      volume: opens(v),
       href: `${path}?volume=${encodeURIComponent(volume)}&studio=${encodeURIComponent(v.id)}`,
       imageUrl: art(v.image), label: said(v), tone: record.emblem?.tone || null, caption: said(v)
     })),

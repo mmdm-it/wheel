@@ -1226,6 +1226,24 @@ volumeConfigs.encyclopedia = {
   assetBase: `${ENCYCLOPEDIA_VOLUME_BASE}/${ENCYCLOPEDIA_VOLUME_VERSION}/`,
   loadManifest: wallLoader({ volumeId: 'encyclopedia', base: ENCYCLOPEDIA_VOLUME_BASE, version: ENCYCLOPEDIA_VOLUME_VERSION }),
   palette: { bg: '#5b1a18', node: '#8c3b33', text: '#f3ead8', band: '#3c100f', accent: '#d9b98a', magnifierStroke: '#f3ead8', globeAtLeaf: '#282828' },
+  // ITS SIDEWAYS PAGE (O-344): the calendar's, with its own picture, so the
+  // studio's wheel of volumes has a page to stand on here and a reader
+  // outside the studio has the door back. The ground is dark: drawn light.
+  landscape: {
+    mails: [
+      { address: 'info@bibliacatholica.com', purpose: 'info' },
+      { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true }
+    ],
+    mailsAs: 'words',
+    mailsCorners: true,
+    emblem: { image: 'spines', label: 'The Catholic Encyclopedia', crest: true, tone: 'light', size: 24 },
+    titleFrom: 'title',
+    titleScale: 2.5,
+    lift: 7,
+    doorsBelow: true,
+    doors: [{ volume: 'bible', href: './?volume=bible', label: 'Biblia Catholica', tone: 'light' }],
+    hint: false
+  },
   createHandlers: makeAdapterHandlers('encyclopedia')
 };
 
@@ -1300,3 +1318,6 @@ export { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, PROBE
 // door, for strangers, under the CHECKED gate. This is the one file that may
 // name a site (H1); main.js declares it to lan-gate.
 export { VENUES };
+// The shelf the studio's list of volumes is read off, and its pictures with
+// it (O-344): the scripture volume keeps it for the whole site.
+export const STUDIO_SHELF = `${BIBLE_VOLUME_BASE}/${BIBLE_VOLUME_VERSION}/`;
