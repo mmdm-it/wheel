@@ -220,6 +220,10 @@ svg :focus-visible {
     width: auto;
     display: block;
   }
+  /* A small mark over the name (the crown over the Bible's). */
+  .portal-emblem--crest {
+    height: 20vmin;
+  }
   /* A page headed by an emblem spreads its pieces down the height rather
      than huddling in the middle (Howell 2026-11-02, from his phone, with
      the browser's bar eating the top: "very crowded at the bottom. So
@@ -320,6 +324,56 @@ svg :focus-visible {
     font-size: 3.6vmin;
     letter-spacing: 0.08em;
   }
+  /* The mail words in the two lower corners, on the copyright's line; the
+     first at the start of the line in either direction of reading. */
+  .portal-mails--corners {
+    position: absolute;
+    top: auto;
+    left: 7vmin;
+    right: 7vmin;
+    bottom: 3vmin;
+    justify-content: space-between;
+    gap: 0;
+  }
+  /* THE STUDIO (O-342): the volume on the glass large at the head, the
+     others small in a row beneath, the site's mark faint behind it all. */
+  .portal-watermark {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 94vmin;
+    width: auto;
+    transform: translate(-50%, -50%);
+    opacity: 0.07;
+    pointer-events: none;
+  }
+  .portal-page--studio .portal-body {
+    position: relative;
+    gap: 1.6vmin;
+  }
+  .portal-page--studio .portal-emblem--crest {
+    height: 22vmin;
+  }
+  .portal-page--studio .portal-doors {
+    gap: 3vmin;
+    margin-top: 5vmin;
+  }
+  /* Equal columns, so the pictures stand at even intervals whatever the
+     length of the words under them. */
+  .portal-page--studio .portal-doors-door {
+    width: 34vmin;
+  }
+  .portal-page--studio .portal-doors-image {
+    height: 11vmin;
+  }
+  .portal-page--studio .portal-doors-caption {
+    font-size: 4vmin;
+    white-space: nowrap;
+  }
+  /* The doors under the name instead of over it. */
+  .portal-doors--below {
+    margin: 4vmin 0 0;
+  }
   .portal-mail-address,
   .portal-door {
     color: inherit;
@@ -362,6 +416,32 @@ svg :focus-visible {
     padding-bottom: 1px;
   }
   /* The door in the lower right corner: the picture alone, no caption. */
+  /* The doors to the other volumes, in a row above the name (O-341). */
+  .portal-doors {
+    display: flex;
+    justify-content: center;
+    gap: 14vmin;
+    margin: 0 0 4vmin;
+  }
+  .portal-doors-door {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2vmin;
+    line-height: 1;
+    color: inherit;
+    text-decoration: none;
+  }
+  /* The word under a door's picture, in the name's own face. */
+  .portal-doors-caption {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 5vmin;
+    letter-spacing: 0.04em;
+  }
+  .portal-doors-image {
+    height: 16vmin;
+    width: auto;
+  }
   .portal-door--corner {
     position: absolute;
     right: 4vmin;
@@ -473,6 +553,13 @@ svg :focus-visible {
   }
   #desktop-gate .desktop-gate-mail a:hover {
     opacity: 1;
+  }
+  /* O-339: the public door's copyright line, under the addresses. */
+  #desktop-gate .desktop-gate-copyright {
+    margin: 28px 0 0;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
   }
 }
 
@@ -1440,6 +1527,25 @@ svg :focus-visible {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
+}
+
+/* The Catholic calendar's day (O-341): the feast's name on short lines, and
+   under it the first verse of its Gospel, the card's one link. The link takes
+   the tap for itself; everywhere else on the card a tap still means NEXT. */
+.detail-ephemeris-feast {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: calc(4.2 / 100 * var(--detail-SSd, 650px));
+  line-height: 1.2;
+}
+.detail-ephemeris-link {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: calc(4.2 / 100 * var(--detail-SSd, 650px));
+  line-height: 1.2;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 /* The numbers: twice the old tier-6 (Howell 2026-07-20). */

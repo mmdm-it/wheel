@@ -153,8 +153,30 @@ for door in "${DOORS[@]}"; do
       echo "== $door: the cleared copy of data/catechism/ (checksum)"
       [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/catechism"
       rsync -azc -i --delete "${DRY[@]}" "$WORK/catechism/" "${DEST}data/catechism/"
+      # THE CATHOLIC CALENDAR RIDES THE BIBLE'S DOOR TOO (O-341): reached from
+      # the Bible's sideways page, so it travels with the Bible. Its data goes
+      # through the same scrub as the company calendar's (no `_` keys, no
+      # sources/). The company's own days stay off this door, as below.
+      node scripts/scrub-notes.mjs data/calendarium "$WORK/calendarium"
+      echo "== $door: data/calendarium/ without its notes (checksum)"
+      [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/calendarium"
+      rsync -azc -i --delete "${DRY[@]}" "$WORK/calendarium/" "${DEST}data/calendarium/"
       if [[ ${#DRY[@]} -eq 0 ]]; then
         ssh "${DEST%%:*}" "rm -rf ${DEST#*:}data/calendar"
+      fi
+      # THE STUDIO IS A THIRD ADDRESS IN THE ROOM, AND ONLY A PAGE (O-342,
+      # Howell 2026-11-25, of the word on the address: "Whenever I try to save
+      # it ... it opens without all the new icons"). A bookmark keeps a path
+      # where it loses a word, so the studio gets a path of its own: this
+      # door's page with its base set on this door, so it reads this door's
+      # engine and data and carries no copy of either, and without the app
+      # file, so a phone saves the address and not the Bible's app.
+      if [[ "$door" == bible ]]; then
+        echo "== $door: the studio's page beside it"
+        sed -e 's|<head>|<head>\n  <base href="../bible/" />|' -e '/rel="manifest"/d' index.html > "$WORK/studio.html"
+        grep -q '<base href="../bible/" />' "$WORK/studio.html" || { echo "mirror-room: the studio's page took no base" >&2; exit 1; }
+        [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}../studio"
+        rsync -az -i "${DRY[@]}" "$WORK/studio.html" "${DEST}../studio/index.html"
       fi
       if [[ "$door" == public ]]; then
         echo "== $door: the page with the door's own head"
@@ -168,7 +190,14 @@ for door in "${DOORS[@]}"; do
       node scripts/scrub-notes.mjs data/calendar "$WORK/calendar"
       echo "== $door: data/calendar/ without its notes (checksum)"
       [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/calendar"
-      rsync -azc -i --delete "${DRY[@]}" "$WORK/calendar/" "${DEST}data/calendar/"
+      # THE PUBLIC CALENDAR IS NOT INSTALLABLE (O-340, Howell 2026-11-24:
+      # "I don't want to make the online Calendar installable"): the app
+      # file and its icons reach the screening room's door and never the
+      # root of mmdm.it, where the page's manifest link then finds nothing
+      # and the browser offers no install.
+      NOAPP=()
+      [[ "$door" == root ]] && NOAPP=(--exclude='/webapp.json' --exclude='/webapp.json.gz' --exclude='/assets/icon-*.png')
+      rsync -azc -i --delete --delete-excluded "${DRY[@]}" "${NOAPP[@]}" "$WORK/calendar/" "${DEST}data/calendar/"
       if [[ "$door" == root && ${#DRY[@]} -eq 0 ]]; then
         echo "== $door: the archival catalog's data folders come down"
         ssh "${ROOT_REMOTE%%:*}" "rm -rf ${ROOT_REMOTE#*:}/data/mmdm ${ROOT_REMOTE#*:}/data/gutenberg"

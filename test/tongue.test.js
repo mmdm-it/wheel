@@ -33,3 +33,10 @@ describe('tongue — the phone settings, not the address', () => {
     assert.equal(firstOfferedLanguage(['fi-FI', 'en'], [...offered, 'finnish']), 'finnish');
   });
 });
+
+describe('a Filipino phone finds the Tagalog shelf (O-338)', () => {
+  it("matches both 'fil' and 'tl'", () => {
+    assert.equal(firstOfferedLanguage(['fil-PH', 'en-PH'], ['english', 'tagalog']), 'tagalog');
+    assert.equal(firstOfferedLanguage(['tl'], ['english', 'tagalog']), 'tagalog');
+  });
+});

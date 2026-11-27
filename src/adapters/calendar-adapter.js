@@ -1,4 +1,5 @@
 import { getViewportInfo } from '../geometry/focus-ring-geometry.js';
+import { liturgicalDay } from './liturgical-year.js';
 import { calculatePyramidCapacity, sampleSiblings, placePyramidNodes } from '../geometry/child-pyramid.js';
 import { buildCalendarYears, buildCalendarMonthsCousinChain, buildCalendarDaysCousinChain, getCalendarMonths,
   getCalendarWeekdayNames, getCalendarWeekdayLetters, buildCalendarDecades, buildCalendarCenturies,
@@ -260,6 +261,62 @@ function findMonth(manifest, monthId) {
   return month ? { month, year } : null;
 }
 
+// THE CATHOLIC CALENDAR'S TABLE OF DAYS (O-341): each day of the seasons and
+// each feast, with its rank and the first verse of its Gospel — the volume's
+// own, fetched at boot like the wall calendar's tables are for the company's.
+let liturgyTable = null;
+let liturgyFetch = null;
+export function primeLiturgy(table) { liturgyTable = table || null; }
+function loadLiturgy(url) {
+  if (!isBrowser || !url || liturgyFetch) return liturgyFetch;
+  liturgyFetch = fetch(url)
+    .then(res => (res.ok ? res.json() : null))
+    .then(json => { liturgyTable = json || null; })
+    .catch(() => { liturgyTable = null; });
+  return liturgyFetch;
+}
+// The words of a feast's name set on short lines, for the card's narrow arc.
+export function feastLines(name, budget = 22) {
+  const lines = [];
+  for (const word of String(name || '').split(/\s+/).filter(Boolean)) {
+    const last = lines[lines.length - 1];
+    if (last !== undefined && (last.length + 1 + word.length) <= budget) lines[lines.length - 1] = `${last} ${word}`;
+    else lines.push(word);
+  }
+  return lines;
+}
+
+/**
+ * THE DAY'S CARD IN THE CATHOLIC CALENDAR (O-341, Howell 2026-11-25:
+ * "Obviously, we would have to get rid of the tide tables and the manifold
+ * pictures ... a leaf or day in the calendar, taking the user to a specific
+ * Bible verse"). The company calendar's card with Fano's tables and the
+ * day's drawing taken off; in their place what the day keeps — the season's
+ * day or the date's feast — and the first verse of its Gospel as a door into
+ * the Bible. The verse is named by its utterance, the one id every edition
+ * shares, so the Bible opens it in whatever edition the reader holds.
+ */
+export function liturgicalDetailFor(selected, manifest, context) {
+  const card = detailFor(selected, manifest, context);
+  if (card?.type !== 'ephemeris') return card;
+  const parts = /^d:(-?\d+):(\d+):(\d+)$/.exec(selected.id || '');
+  const serial = Number.isFinite(selected.serial)
+    ? selected.serial
+    : (parts ? daySerial(Number(parts[1]), Number(parts[2]), Number(parts[3])) : NaN);
+  const civil = Number.isFinite(serial) ? serialToDate(serial) : null;
+  const found = civil ? liturgicalDay(liturgyTable, civil.yearNumber, civil.month, civil.day) : null;
+  const name = found?.day?.name?.english || found?.day?.name?.latin || '';
+  return {
+    ...card,
+    figure: null,
+    tables: [],
+    feast: feastLines(name),
+    link: found?.day?.u
+      ? { text: found.day.gospel || '', href: `./?volume=bible&utterance=${encodeURIComponent(found.day.u)}` }
+      : null
+  };
+}
+
 export function detailFor(selected, manifest) {
   if (!selected) return null;
   const id = selected.id || '';
@@ -369,7 +426,7 @@ export function detailFor(selected, manifest) {
   return { type: 'text', text: selected.name || id || '' };
 }
 
-export function createHandlers({ manifest, options, onGatewayReturn = null, gatewayLabel = '', gatewayReturnLabel = '' }) {
+export function createHandlers({ manifest, options, onGatewayReturn = null, gatewayLabel = '', gatewayReturnLabel = '', almanac = true, liturgyUrl = null }) {
   // Centuries are the top level since O-242 (decades between them and the
   // years; millennia stay cousin-gap texture, removed as a level 2026-07-17);
   // backing out from centuries exits through the gateway, if any. The DEFAULT
@@ -609,9 +666,14 @@ export function createHandlers({ manifest, options, onGatewayReturn = null, gate
       const settled = app?.nav?.getCurrent?.();
       if (settled?.level === 'day' && typeof renderDetail === 'function') renderDetail(settled);
     };
-    loadEphemeris()?.then(repaintDay);
-    // The drawings' index likewise (O-256): the day's figure lands when it lands.
-    loadFigures()?.then(repaintDay);
+    // `almanac: false` (O-341): a calendar with no station and no drawings
+    // fetches neither; `liturgyUrl` names the table of days it reads instead.
+    if (almanac) {
+      loadEphemeris()?.then(repaintDay);
+      // The drawings' index likewise (O-256): the day's figure lands when it lands.
+      loadFigures()?.then(repaintDay);
+    }
+    if (liturgyUrl) loadLiturgy(liturgyUrl)?.then(repaintDay);
     if (app?.setParentButtons) {
       app.setParentButtons({ showOuter: calendarMode !== 'century' || Boolean(gatewayReturnLabel) });
     }

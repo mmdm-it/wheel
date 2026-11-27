@@ -150,8 +150,8 @@ describe('the level caption is opt-in per volume (O-144)', () => {
   // The Church (O-299) is the Bible's reader over the catechism, so it captions as the Bible does.
   it('only the Bible, the Church and the calendar declare levelCaptions, and only the calendar puts the word after', () => {
     for (const [id, cfg] of Object.entries(volumeConfigs)) {
-      assert.equal(cfg.levelCaptions === true, id === 'bible' || id === 'calendar' || id === 'church', `${id}: levelCaptions`);
-      assert.equal(cfg.captionAfter === true, id === 'calendar', `${id}: captionAfter`);
+      assert.equal(cfg.levelCaptions === true, id === 'bible' || id === 'calendar' || id === 'church' || id === 'calendarium' || id === 'encyclopedia', `${id}: levelCaptions`);
+      assert.equal(cfg.captionAfter === true, id === 'calendar' || id === 'calendarium', `${id}: captionAfter`);
     }
   });
 

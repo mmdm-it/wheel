@@ -36,6 +36,72 @@ export const CARD_FONT_TIERS = [
 ];
 
 /**
+ * WHERE A LINE MAY BREAK (O-336). Every flow in this file used to cut text at
+ * its spaces, and a script written without them — Chinese, Japanese — is then
+ * one word as long as the verse, which the flows keep whole and paint off the
+ * edge of the sector. `breakUnits` is the one tokeniser they all share now:
+ *   - text with spaces yields its words, exactly as before;
+ *   - an ideograph is a unit by itself, so a line may end after any of them;
+ *   - a closing mark (，。、」…) rides with the unit before it and an opening
+ *     mark (「（) with the unit after, so no line begins with a comma or ends
+ *     on an open bracket — the compositor's rule, kinsoku;
+ *   - the ideographic space the Union Version sets before a divine name stays
+ *     with the name it honours.
+ * `glue` is the other half: units are rejoined with a space, except where
+ * either side of the seam is an ideograph, which takes none. Latin text is
+ * untouched by both. Presentation only — nothing is renumbered or cut.
+ */
+const CJK = /[⺀-鿿豈-﫿︰-﹏＀-￯\u{20000}-\u{3FFFF}]/u;
+const NO_LINE_START = new Set('，。、；：？！）」』》〉】〕…—‧·,.;:?!)]}”’'.split(''));
+const NO_LINE_END = new Set('（「『《〈【〔“‘([{　'.split(''));
+const isCjk = ch => !!ch && CJK.test(ch);
+
+export function breakUnits(text) {
+  const str = String(text || '');
+  if (!CJK.test(str)) return str.split(/\s+/).filter(Boolean);
+  const units = [];
+  // The ideographic space is kept (it is typography, not a word gap).
+  for (const word of str.split(/[^\S　]+/).filter(Boolean)) {
+    if (!CJK.test(word)) { units.push(word); continue; }
+    let cur = '';       // the unit being built
+    let open = false;   // cur ends on an opening mark and must take the next character
+    let latin = false;  // cur is a run of non-ideographs (a numeral, a Latin word)
+    for (const ch of Array.from(word)) {
+      const cjk = isCjk(ch);
+      if (!cur) { cur = ch; open = NO_LINE_END.has(ch); latin = !cjk; continue; }
+      if (open || NO_LINE_START.has(ch) || (latin && !cjk)) {
+        cur += ch;
+        open = NO_LINE_END.has(ch);
+        if (cjk && !NO_LINE_END.has(ch)) latin = false;
+        continue;
+      }
+      units.push(cur);
+      cur = ch; open = NO_LINE_END.has(ch); latin = !cjk;
+    }
+    if (cur) units.push(cur);
+  }
+  return units;
+}
+
+/** The seam between two units: a space, unless an ideograph stands on either side. */
+export function glue(before, unit) {
+  if (!before) return unit;
+  const a = Array.from(before);
+  const b = Array.from(unit);
+  return isCjk(a[a.length - 1]) || isCjk(b[0]) ? `${before}${unit}` : `${before} ${unit}`;
+}
+
+const glueAll = units => units.reduce((acc, u) => glue(acc, u), '');
+
+/** Width in Latin-letter widths, for the estimates that count characters:
+ *  an ideograph is a full em, about two letters. */
+export function textWeight(text) {
+  let n = 0;
+  for (const ch of String(text || '')) n += isCjk(ch) ? 2 : 1;
+  return n;
+}
+
+/**
  * Estimate how many lines are needed to render `words` at a given font tier.
  *
  * `lineTable[].maxChars` is calibrated for tier-6 (3% SSd).
@@ -53,9 +119,9 @@ export function estimateLineCount(words, lineTable, tierPercent) {
 
   for (const word of words) {
     if (lineIdx >= lineTable.length) return Infinity;
-    const test = current ? `${current} ${word}` : word;
+    const test = glue(current, word);
     const maxChars = Math.floor(lineTable[lineIdx].maxChars * scale);
-    if (test.length <= maxChars) {
+    if (textWeight(test) <= maxChars) {
       current = test;
     } else {
       lineIdx++;
@@ -315,19 +381,19 @@ function flowVerseAt(text, bounds, fontPx, { seated = true, unbounded = false } 
   // follows the raise; everything that RENDERS measures against the seat.
   const top = seated ? seatTopFor(bounds, fontPx) : bounds.topY;
   const bottom = top + (bounds.bottomY - top) * VERSE_FILL;
-  const words = text.split(/\s+/).filter(Boolean);
+  const words = breakUnits(text);
   const lines = [];
   let y = top, cur = '';
   if (y + lineH > bottom && !unbounded) return { lines, overflow: true }; // sector too short for one line
   // One measurer for this whole pass — created at THIS fontPx, styled before
   // it enters the DOM (see makeMeasurer). Estimate fallback for node/tests.
   const meas = makeMeasurer(fontPx);
-  const widthOf = meas ? t => meas.width(t) : t => t.length * fontPx * VERSE_CHAR_EM;
+  const widthOf = meas ? t => meas.width(t) : t => textWeight(t) * fontPx * VERSE_CHAR_EM;
   try {
     const seat = () => { const m = sectorMetricAt(lt, y); lines.push({ text: cur, y, leftX: m.leftX, availableWidth: m.width }); };
     for (const w of words) {
       const m = sectorMetricAt(lt, y);
-      const test = cur ? `${cur} ${w}` : w;
+      const test = glue(cur, w);
       if (widthOf(test) <= m.width) { cur = test; continue; }
       if (!cur) { cur = w; continue; } // a lone word wider than its column: keep it (never loop)
       seat();
@@ -346,18 +412,22 @@ function flowVerseAt(text, bounds, fontPx, { seated = true, unbounded = false } 
 // line-wrapping: nothing is renumbered, nothing is cut, and joining the parts
 // with one space reproduces the verse exactly (O-84).
 export function splitVerse(text) {
-  const words = String(text || '').split(/\s+/).filter(Boolean);
-  if (words.length < 2) return [words.join(' '), ''];
-  const total = words.join(' ').length;
+  const words = breakUnits(text);
+  if (words.length < 2) return [glueAll(words), ''];
+  // Balanced by weight at a unit boundary: a word boundary where the script
+  // has words, between two ideographs where it has none (O-336).
+  const total = textWeight(glueAll(words));
   let best = 1;
   let bestDiff = Infinity;
-  let lenA = 0;
+  let head = '';
   for (let i = 1; i < words.length; i += 1) {
-    lenA += words[i - 1].length + (i > 1 ? 1 : 0);
-    const diff = Math.abs(lenA - (total - lenA - 1));
+    head = glue(head, words[i - 1]);
+    const lenA = textWeight(head);
+    const seam = glue(head, words[i]).length - head.length - words[i].length; // 1 where a space sits
+    const diff = Math.abs(lenA - (total - lenA - seam));
     if (diff < bestDiff) { bestDiff = diff; best = i; }
   }
-  return [words.slice(0, best).join(' '), words.slice(best).join(' ')];
+  return [glueAll(words.slice(0, best)), glueAll(words.slice(best))];
 }
 
 // The sizing reference is the LONGER HALF of the longest verse (O-84) — the
@@ -434,7 +504,7 @@ function flowPoemAt(poemLines, bounds, fontPx, { unbounded = false } = {}) {
   }
   const bottom = unbounded ? Infinity : fence;
   const meas = makeMeasurer(fontPx);
-  const widthOf = meas ? t => meas.width(t) : t => t.length * fontPx * VERSE_CHAR_EM;
+  const widthOf = meas ? t => meas.width(t) : t => textWeight(t) * fontPx * VERSE_CHAR_EM;
   const hang = fontPx * 1.1;
   try {
     const lines = [];
@@ -442,7 +512,7 @@ function flowPoemAt(poemLines, bounds, fontPx, { unbounded = false } = {}) {
     let y = top;
     for (const poemLine of poemLines) {
       if (overflow) break;
-      const words = String(poemLine).split(/\s+/).filter(Boolean);
+      const words = breakUnits(poemLine);
       let cur = '';
       let firstRow = true;
       let headX = 0;
@@ -454,7 +524,7 @@ function flowPoemAt(poemLines, bounds, fontPx, { unbounded = false } = {}) {
         // head, and text never enters the ring's band.
         const left = firstRow ? headX : Math.max(headX + hang, m.leftX);
         const avail = m.leftX + m.width - left;
-        const test = cur ? `${cur} ${w}` : w;
+        const test = glue(cur, w);
         if (widthOf(test) <= avail || !cur) { cur = test; continue; }
         lines.push({ text: cur, y, leftX: left, availableWidth: avail, head: firstRow });
         y += lineH; firstRow = false; cur = w;
@@ -634,10 +704,10 @@ export function layoutVerse(text, bounds, part = 0) {
     const bOver = flowVerseAt(b, bounds, fontPx).overflow;
     if (!aOver && !bOver) break;
     if (aOver && bOver) break; // both overfull: nothing to trade
-    const from = aOver ? a.split(/\s+/) : b.split(/\s+/);
+    const from = breakUnits(aOver ? a : b);
     if (from.length < 2) break; // one word left: nothing to move
-    if (aOver) { b = `${from[from.length - 1]} ${b}`; a = from.slice(0, -1).join(' '); }
-    else { a = `${a} ${from[0]}`; b = from.slice(1).join(' '); }
+    if (aOver) { b = glue(from[from.length - 1], b); a = glueAll(from.slice(0, -1)); }
+    else { a = glue(a, from[0]); b = glueAll(from.slice(1)); }
   }
   // A VERSE TOO LONG FOR TWO SCREENS AT THE SHARED SIZE steps its size down,
   // both halves together so they match, to the same floor a long poem is
@@ -665,7 +735,7 @@ export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {
     const fb = tiers[tiers.length - 1];
     return [fb[0], fb[1], tierStride(fb[1])];
   }
-  const words = text.split(/\s+/).filter(Boolean);
+  const words = breakUnits(text);
   const linePitch = lineTable.length > 1 ? lineTable[1].y - lineTable[0].y : 0;
   for (const tier of tiers) {
     const [cssClass, pct] = tier;
@@ -705,7 +775,7 @@ export function selectFontTier(text, lineTable, tiers = FONT_TIERS) {
  */
 export function wrapLines(text, lineTable, tierPercent) {
   const scale = 3.0 / tierPercent;
-  const words = text.split(/\s+/).filter(Boolean);
+  const words = breakUnits(text);
   const lines = [];
   let lineIdx = 0;
   let current = '';
@@ -715,9 +785,9 @@ export function wrapLines(text, lineTable, tierPercent) {
       if (lines.length > 0) lines[lines.length - 1] = lines[lines.length - 1].trimEnd() + '…';
       break;
     }
-    const test = current ? `${current} ${word}` : word;
+    const test = glue(current, word);
     const maxChars = Math.floor(lineTable[lineIdx].maxChars * scale);
-    if (test.length <= maxChars) {
+    if (textWeight(test) <= maxChars) {
       current = test;
     } else {
       if (current) {

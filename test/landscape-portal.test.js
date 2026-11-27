@@ -4,7 +4,7 @@
 // reading tongue. These tests hold the model and where the door leads.
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref } from '../src/view/landscape-portal.js';
+import { portalRecord, renderLandscapePortal, crossLinkHref, mailtoHref, landscapeTongues, telHref, smsHref, whatsappHref, studioWord, studioPlaces, playStudioSwitch, playStudioTurn } from '../src/view/landscape-portal.js';
 import { firstOfferedLanguage } from '../src/core/tongue.js';
 import { doorHref } from '../src/core/lan-gate.js';
 import { volumeConfigs, VENUES } from '../src/volume-configs.js';
@@ -41,7 +41,7 @@ const LAN = { hostname: '192.168.88.167', pathname: '/', protocol: 'http:' };
 describe('landscape portal — the Bible’s page (the minimum, Howell’s notes)', () => {
   const config = volumeConfigs.bible;
 
-  it('is the name, two link words in the reading tongue, and the company’s mark in the corner — no line of its own', () => {
+  it('is the name and two link words in the reading tongue — no company mark, no line of its own', () => {
     const r = portalRecord({ volume: 'bible', config, root: BIBLE_ROOT, lang: 'latin', loc: SQUARE, table: VENUES });
     assert.equal(r.title, 'Biblia Catholica');
     assert.equal(r.titleScale, 2.5, 'the name two and a half times the standard');
@@ -51,10 +51,7 @@ describe('landscape portal — the Bible’s page (the minimum, Howell’s notes
       { address: 'corrections@bibliacatholica.com', href: 'mailto:corrections@bibliacatholica.com', text: 'correctiones', purpose: null }
     ]);
     assert.equal(r.rotate, null, 'no turn-it-upright line');
-    assert.equal(r.link.href, 'https://mmdm.it/', 'in Leicester Square the door is the other domain');
-    assert.equal(r.link.corner, true);
-    assert.equal(r.link.imageUrl, `${config.assetBase}assets/mmdm_logo.png`, 'the mark travels with the Bible’s own art (W-114)');
-    assert.equal(r.link.label, 'Meccanismi Marittimi delle Marche');
+    assert.equal(r.link, null, 'O-339: no company mark and no door to the calendar; the Bible advertises nothing');
     assert.equal(r.dir, 'ltr');
   });
 
@@ -159,7 +156,7 @@ describe('landscape portal — the sheet', () => {
   const doc = { createElement: tag => createMockElement(tag) };
   const texts = node => (node.children.length ? node.children.flatMap(texts) : [node.textContent]).filter(Boolean);
 
-  it('is rebuilt whole from the record — the body, then the corner door; the tongue can change', () => {
+  it('is rebuilt whole from the record — the body alone, no corner door (O-339); the tongue can change', () => {
     const sheet = createMockElement('div');
     sheet.appendChild(createMockElement('svg'));
     const first = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'latin', loc: SQUARE, table: VENUES });
@@ -169,24 +166,26 @@ describe('landscape portal — the sheet', () => {
     assert.ok(sheet.classList.contains('landscape-portal'));
     assert.equal(sheet.children.length, 1, 'the old rotate icon is gone');
     const page = sheet.children[0];
-    assert.deepEqual(texts(page), ['Biblia Catholica', 'info', 'correctiones'], 'nothing else on the page, info read first');
-    assert.equal(page.children.length, 2, 'the body, then the corner door; no rotate line');
+    // The door to the Catholic calendar above the name (O-341); this made-up
+    // volume names no picture for it, so it is drawn as its name.
+    // Under the name since the same day, and the two mail words out of the
+    // body, in the lower corners.
+    assert.deepEqual(texts(page), ['Biblia Catholica', 'Calendarium Catholicum', 'info', 'correctiones'], 'nothing else on the page, info read first');
+    assert.equal(page.children.length, 2, 'the body and the mail words: no corner door (O-339), no rotate line');
     const body = page.children[0];
     assert.equal(body.className, 'portal-body');
-    const mails = body.children.find(c => c.className.startsWith('portal-mails'));
-    assert.equal(mails.className, 'portal-mails portal-mails--words');
+    // The crown over the name, small (Howell 2026-11-25), and the page keeps its centred body.
+    assert.deepEqual(body.children.map(c => c.className), ['portal-emblem portal-emblem--crest', 'portal-title', 'portal-doors portal-doors--below']);
+    assert.equal(body.children[0].getAttribute('src'), './data/gutenberg/2026.08.22/assets/crown_of_thorns.png');
+    assert.equal(page.className, 'portal-page');
+    const mails = page.children.find(c => c.className.startsWith('portal-mails'));
+    assert.equal(mails.className, 'portal-mails portal-mails--words portal-mails--corners');
     const links = mails.children.map(row => row.children.find(c => c.tag === 'a'));
     assert.deepEqual(links.map(a => [a.textContent, a.getAttribute('href')]), [
       ['info', 'mailto:info@bibliacatholica.com'],
       ['correctiones', 'mailto:corrections@bibliacatholica.com']
     ]);
-    const door = page.children[1];
-    assert.equal(door.className, 'portal-door portal-door--corner');
-    assert.equal(door.getAttribute('href'), 'https://mmdm.it/');
-    const img = door.children.find(c => c.tag === 'img');
-    assert.equal(img.getAttribute('src'), `${volumeConfigs.bible.assetBase}assets/mmdm_logo.png`);
-    assert.equal(img.getAttribute('alt'), 'Meccanismi Marittimi delle Marche');
-    assert.equal(door.children.some(c => c.tag === 'span'), false, 'the mark alone, no caption');
+    assert.equal(JSON.stringify(texts(page)).includes('mmdm'), false);
 
     const second = portalRecord({ volume: 'bible', config: volumeConfigs.bible, root: BIBLE_ROOT, lang: 'hebrew', loc: SQUARE, table: VENUES });
     renderLandscapePortal(sheet, second, doc);
@@ -242,7 +241,7 @@ describe('landscape portal — the pre-composed correction', () => {
     assert.equal(r.mails[0].href, 'mailto:info@bibliacatholica.com');
     const sheet = createMockElement('div');
     renderLandscapePortal(sheet, r, { createElement: tag => createMockElement(tag) });
-    const words = sheet.children[0].children[0].children.find(c => c.className.startsWith('portal-mails'));
+    const words = sheet.children[0].children.find(c => c.className.startsWith('portal-mails'));
     assert.equal(words.children[1].children[0].getAttribute('href'), r.mails[1].href);
   });
 
@@ -282,8 +281,7 @@ describe('landscape portal — the copyright line and the lift', () => {
     sheet.style.display = 'flex';
     renderLandscapePortal(sheet, r, doc);
     assert.equal(sheet.style.display, '', 'the sheet is shown by the media query alone');
-    const body = sheet.children[0].children[0];
-    const list = body.children.find(c => c.className.startsWith('portal-mails'));
+    const list = sheet.children[0].children.find(c => c.className.startsWith('portal-mails'));
     const rows = list.children.map(c => c.className);
     assert.deepEqual(rows, ['portal-mail', 'portal-mail', 'portal-mail portal-phone', 'portal-mail portal-whatsapp']);
     assert.equal(list.children[2].children[0].getAttribute('href'), 'sms:+39071111222?body=Douay%20Genesis%201%3A1%0A');
@@ -294,5 +292,85 @@ describe('landscape portal — the copyright line and the lift', () => {
     const r = portalRecord({ volume: 'calendar', config: volumeConfigs.calendar, root: CALENDAR_ROOT, loc: MMDM_ROOT, table: VENUES, copyright: '  ' });
     assert.equal(r.copyright, null);
     assert.equal(r.lift, 0);
+  });
+});
+
+// THE STUDIO (O-342): the grammar being worked out, on the screening room and
+// the LAN only.
+describe('the studio page (O-342)', () => {
+  const root = { display_config: { landscape: { studio: { site: 'The Site', watermark: 'mark', volumes: [
+    { id: 'one', image: 'one_art', label: { default: 'One', italian: 'Uno' } },
+    { id: 'two', image: 'two_art.svg', label: { default: 'Two' } },
+    { id: 'three', image: 'three_art', label: { default: 'Three' } }
+  ] } } } };
+  const config = { assetBase: './data/x/', landscape: { mails: [] } };
+  const loc = { pathname: '/', search: '', hostname: 'localhost' };
+  it('draws nothing of it without the word', () => {
+    const r = portalRecord({ volume: 'x', config, root, loc });
+    assert.equal(r.studio, undefined);
+    assert.equal(r.doors.length, 0);
+  });
+  it('heads the page with the named volume and rows the others beneath', () => {
+    const r = portalRecord({ volume: 'x', config, root, loc, studio: 'two', lang: 'italian' });
+    assert.equal(r.studio, 'two');
+    assert.equal(r.title, 'Two');
+    assert.equal(r.emblem.imageUrl, './data/x/assets/two_art.svg');
+    assert.deepEqual(r.doors.map(d => d.caption), ['Three', 'Uno'], 'the list read on from the head and round again');
+    assert.equal(r.doors[1].imageUrl, './data/x/assets/one_art.png');
+    assert.equal(r.doors[1].href, '/?volume=x&studio=one');
+    assert.equal(r.watermarkUrl, './data/x/assets/mark.png');
+    assert.equal(r.site, 'The Site');
+  });
+  it('an unknown word opens on the first volume listed', () => {
+    assert.equal(portalRecord({ volume: 'x', config, root, loc, studio: '1' }).studio, 'one');
+  });
+  it('the volumes are a wheel: one turn brings the row\'s last picture to the head and drops the head to the left end', () => {
+    const ids = studio => portalRecord({ volume: 'x', config, root, loc, studio }).doors.map(d => d.id);
+    assert.deepEqual(ids('one'), ['two', 'three']);
+    assert.deepEqual(ids('three'), ['one', 'two'], 'three rose, one dropped to the left end, two slid right');
+    assert.deepEqual(ids('two'), ['three', 'one']);
+  });
+  it('plays each picture and word from where it stood to where it stands', () => {
+    const box = (left, top, width, height) => ({ left, top, width, height });
+    const piece = b => ({ style: {}, getBoundingClientRect: () => b });
+    const page = (headId, headBox, titleBox, doors) => {
+      const head = { ...piece(headBox), getAttribute: () => headId };
+      const title = piece(titleBox);
+      const as = doors.map(([id, ib, wb]) => { const image = piece(ib), word = piece(wb); return { getAttribute: () => id, querySelector: q => (/image/.test(q) ? image : word), image, word }; });
+      return { head, title, as, offsetWidth: 0, querySelector: q => (/head/.test(q) ? head : title), querySelectorAll: () => as };
+    };
+    const first = page('one', box(90, 0, 20, 20), box(50, 30, 100, 10), [['two', box(40, 60, 10, 10), box(35, 75, 20, 5)], ['three', box(140, 60, 10, 10), box(135, 75, 20, 5)]]);
+    const before = studioPlaces(first);
+    // "three" was tapped: it stands at the head now, "one" at the left end, "two" one place right.
+    const last = page('three', box(90, 0, 20, 20), box(50, 30, 100, 10), [['one', box(40, 60, 10, 10), box(35, 75, 20, 5)], ['two', box(140, 60, 10, 10), box(135, 75, 20, 5)]]);
+    const moved = playStudioSwitch(last, before, 10);
+    assert.equal(moved, 6, 'three pictures and three words');
+    assert.equal(last.head.style.transform, 'translate(45px, 55px) scale(0.5)', 'the new head starts from its old place in the row, at its old size');
+    assert.equal(last.as[0].image.style.transform, 'translate(55px, -55px) scale(2)', 'the old head starts from the head');
+    assert.equal(last.as[1].image.style.transform, 'translate(-100px, 0px) scale(1)', 'the picture between starts one place left');
+    assert.equal(playStudioSwitch(last, studioPlaces(last), 10), 0, 'nothing moves when nothing changed');
+    // A turn of two places is ONE run through both stages, never two runs.
+    const runs = [];
+    const lively = pg => { for (const el of [pg.head, pg.title, ...pg.as.flatMap(a => [a.image, a.word])]) el.animate = (frames, opts) => runs.push({ el, frames, opts }); return pg; };
+    const middle = page('two', box(90, 0, 20, 20), box(50, 30, 100, 10), [['three', box(40, 60, 10, 10), box(35, 75, 20, 5)], ['one', box(140, 60, 10, 10), box(135, 75, 20, 5)]]);
+    const end = lively(page('three', box(90, 0, 20, 20), box(50, 30, 100, 10), [['one', box(40, 60, 10, 10), box(35, 75, 20, 5)], ['two', box(140, 60, 10, 10), box(135, 75, 20, 5)]]));
+    assert.equal(playStudioTurn(end, [before, studioPlaces(middle)], 10), 6, 'every piece runs once');
+    const head = runs.find(r => r.el === end.head);
+    assert.deepEqual(head.frames.map(f => f.transform), ['translate(45px, 55px) scale(0.5)', 'translate(-55px, 55px) scale(0.5)', 'translate(0px, 0px) scale(1)'], 'the new head passes through the place between on its way up');
+    assert.equal(head.opts.duration, 10);
+    assert.equal(playStudioTurn(end, [studioPlaces(end)], 10), 0, 'nothing runs when nothing changed');
+  });
+  it('marks the head and the row so a tap can be heard and the pieces found', () => {
+    const made = [];
+    const el = tag => { const e = { tag, className: '', style: {}, children: [], attrs: {}, classList: { add() {} }, setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute() {}, appendChild(c) { this.children.push(c); return c; } }; made.push(e); return e; };
+    const doc = { createElement: el };
+    const sheet = el('div'); sheet.firstChild = null; sheet.removeChild = () => {};
+    renderLandscapePortal(sheet, portalRecord({ volume: 'x', config, root, loc, studio: 'two' }), doc);
+    assert.equal(made.find(e => e.attrs['data-studio-head']).attrs['data-studio-head'], 'two');
+    assert.deepEqual(made.filter(e => e.attrs['data-studio-door']).map(e => e.attrs['data-studio-door']), ['three', 'one']);
+  });
+  it('is heard on the LAN and never on a public host', () => {
+    assert.equal(studioWord({ hostname: 'localhost', search: '?studio=two', pathname: '/' }), 'two');
+    assert.equal(studioWord({ hostname: 'example.org', search: '?studio=two', pathname: '/' }), null);
   });
 });

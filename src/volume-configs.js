@@ -29,7 +29,7 @@ import { VENUES, WALL_ROOTS } from './volume-roots.js';
 import { chooseFirstEdition } from './core/first-edition.js';
 const BIBLE_VOLUME_BASE = WALL_ROOTS.bible.base;
 const BIBLE_VOLUME_VERSION = WALL_ROOTS.bible.version;
-import { calendarAdapter, calendarStrata } from './adapters/calendar-adapter.js';
+import { calendarAdapter, calendarStrata, liturgicalDetailFor } from './adapters/calendar-adapter.js';
 import { buildCalendarDecades, buildCalendarCenturies } from './adapters/volume-helpers.js';
 import { decadeIdOf, centuryIdOf } from './adapters/calendar-eras.js';
 import { systemOf as calendarSystemOf } from './adapters/calendar-systems.js';
@@ -75,6 +75,17 @@ export const readerIdle = () => new Promise(resolve => {
 });
 
 adapterRegistry.register('church', () => ({ ...bibleAdapter, volumeId: 'church' }));
+// O-343: the 1913 encyclopedia is read by the same reader, a first draft.
+adapterRegistry.register('encyclopedia', () => ({ ...bibleAdapter, volumeId: 'encyclopedia' }));
+// THE CATHOLIC CALENDAR (O-341) is the calendar's own reader with another
+// day card: no station and no drawings, the volume's table of days instead.
+const CALENDARIUM_BASE = './data/calendarium/';
+adapterRegistry.register('calendarium', () => ({
+  ...calendarAdapter,
+  volumeId: 'calendarium',
+  detailFor: liturgicalDetailFor,
+  createHandlers: params => calendarAdapter.createHandlers({ ...params, almanac: false, liturgyUrl: `${CALENDARIUM_BASE}days.json` })
+}));
 const adapterLoader = createAdapterLoader(adapterRegistry);
 
 // Shared handler factory — the four volume blocks used to carry identical
@@ -241,9 +252,27 @@ const volumeConfigs = {
         { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true }
       ],
       mailsAs: 'words',
+      // The crown over the name (Howell 2026-11-25: "add our crown of thorns
+      // art above the Biblia Catholica banner"): the card's own picture, small.
+      emblem: { image: 'crown_of_thorns', label: 'Biblia Catholica', crest: true },
       titleScale: 2.5,   // Howell: "Make the name the Biblia Catholica 2.5 times larger"
       lift: 7,           // Howell: "shift it up a little bit" — the name off dead centre
-      link: { volume: 'calendar', href: 'https://mmdm.it/', image: 'mmdm_logo', corner: true, label: 'Meccanismi Marittimi delle Marche' },
+      // THE DOORS TO THE OTHER VOLUMES, above the name (O-341, Howell
+      // 2026-11-25, three circles drawn over the name on his screenshot:
+      // "The calendar, the atlas, the who's who of clergy"). One today — the
+      // Catholic calendar, which rides this door as the Church does; the
+      // other two take their places when they are built.
+      // UNDER the name, and the two mail words in the lower corners (Howell
+      // 2026-11-25, on the first photograph of the door above the name).
+      doorsBelow: true,
+      mailsCorners: true,
+      // The picture is the volume's to name (W-114).
+      doors: [{ volume: 'calendarium', href: './?volume=calendarium', label: 'Calendarium Catholicum' }],
+      // O-339 (Howell 2026-11-24): NO door to the COMPANY'S calendar from
+      // here. The letters of introduction say the Bible carries no
+      // advertising, and a company's mark in the corner that leads to its
+      // trade line and its telephone is one. That calendar keeps its door to
+      // the Bible; the door above leads to the Catholic one (O-341).
       hint: false
     },
     palette: {
@@ -413,7 +442,7 @@ const volumeConfigs = {
       // reads the id the chain itself mints (`<book>_<chapter>_<verse>`), so
       // it cannot fall out of step with the chain the way the legacy parser
       // O-47 removed once did.
-      const deepLinked = params.get('book') || params.get('chapter') || params.get('verse');
+      const deepLinked = params.get('book') || params.get('chapter') || params.get('verse') || params.get('utterance');
       const resumed = deepLinked ? null : parseSeatId(memory?.itemId);
       // THE READER'S LEVEL TOO (O-294, Howell 2026-11-11: "if the user leaves
       // a stratum, that stratum should always be as it was when the user
@@ -430,6 +459,14 @@ const volumeConfigs = {
         place,
         arrangement,
         initialItemId: params.get('item') || startup.initial_magnified_item || null,
+        // A VERSE NAMED BY ITS UTTERANCE ON THE ADDRESS (O-341): the door the
+        // Catholic calendar's day opens — `?utterance=<id>`, the one id every
+        // edition's chart shares, so the verse is found in whatever edition
+        // the reader holds. It is tried ahead of the first visit's verses when
+        // buildBibleChain settles the boot's verse, which already resolves the
+        // first visit's against the edition in hand; an edition that does not
+        // hold the verse falls through to the volume's own first visit.
+        addressedUtterance: params.get('utterance') || null,
         firstVisit: (root?.display_config?.boot?.first_visit || []).map(e => e?.utterance).filter(Boolean),
         bookId: params.get('book') || resumed?.bookId || null,
         testamentId: params.get('testament'),
@@ -582,6 +619,12 @@ const volumeConfigs = {
     assetBase: './data/calendar/',
     theme: 'calendar',
     documentTitle: 'Meccanismi Marittimi delle Marche',   // the virtual company's calendar (O-211)
+    // THE DOOR ONTO THE HOME SCREEN (O-340, Howell 2026-11-24: "I would like
+    // to install the calendar as a standalone app on my Android"), as the
+    // Bible has (O-273): the volume's own manifest and icon, under its data
+    // root. Named webapp.json because manifest.json there is the volume.
+    webManifest: './data/calendar/webapp.json',
+    homeIcon: './data/calendar/assets/icon-192.png',
     // THE LANDSCAPE PAGE (O-258, Howell 2026-11-01: "they see one email,
     // info@mmdm.it. They see the name of the company, and they see the Crown
     // of Thorns logo, which is a link to take them to the Bible"). The crown
@@ -1017,7 +1060,7 @@ function buildBibleChain(manifest, options, namesMap) {
   // The first visit's verse where the volume declares one (O-179); the
   // edition's first leaf where it does not.
   const edition = options.activeEdition || options.translation || null;
-  const firstVisit = firstVisitSeat(manifest, edition, options.firstVisit);
+  const firstVisit = firstVisitSeat(manifest, edition, [options.addressedUtterance, ...(options.firstVisit || [])].filter(Boolean));
   const fallback = firstVisit || firstLeafOf(manifest, edition);
   options = {
     ...options,
@@ -1162,6 +1205,78 @@ volumeConfigs.church = {
   createHandlers: makeAdapterHandlers('church')
 };
 volumeConfigs.bible.door = 'church';
+
+// THE 1913 CATHOLIC ENCYCLOPEDIA (O-343, Howell 2026-11-25: "just build
+// something and I'll look at it"). A first draft: the leaf-and-shard reader
+// on a third data root — a letter where a Testament stands, an article where
+// a book stands, a passage where a verse stands. It has no door of its own
+// and no page links to it: it is opened by its word on the address, on the
+// LAN and in the screening room.
+const ENCYCLOPEDIA_VOLUME_BASE = WALL_ROOTS.encyclopedia.base;
+const ENCYCLOPEDIA_VOLUME_VERSION = WALL_ROOTS.encyclopedia.version;
+volumeConfigs.encyclopedia = {
+  ...volumeConfigs.church,
+  id: 'encyclopedia',
+  paths: ['/encyclopedia'],
+  door: undefined,
+  documentTitle: 'The Catholic Encyclopedia',
+  webManifest: undefined,
+  homeIcon: undefined,
+  manifestPath: ENCYCLOPEDIA_VOLUME_BASE,
+  assetBase: `${ENCYCLOPEDIA_VOLUME_BASE}/${ENCYCLOPEDIA_VOLUME_VERSION}/`,
+  loadManifest: wallLoader({ volumeId: 'encyclopedia', base: ENCYCLOPEDIA_VOLUME_BASE, version: ENCYCLOPEDIA_VOLUME_VERSION }),
+  palette: { bg: '#5b1a18', node: '#8c3b33', text: '#f3ead8', band: '#3c100f', accent: '#d9b98a', magnifierStroke: '#f3ead8', globeAtLeaf: '#282828' },
+  createHandlers: makeAdapterHandlers('encyclopedia')
+};
+
+// THE CATHOLIC CALENDAR (O-341, Howell 2026-11-25: "I want to bring the
+// calendar back, not as a manifold company calendar, but as a Catholic
+// calendar. And I want to access it through the landscape page"; and, the
+// next morning: "This new Catholic calendar is a copy, not a move. And we now
+// have 2 calendars on 2 websites serving 2 purposes"). The company calendar's
+// configuration and reader — its rings, its colours ("I'm happy with the
+// colors, the blue and white with red dots") — pointed at a second data root,
+// as the Church is the Bible's pointed at a second. What differs is named:
+// no tide tables and no drawings (the adapter's day card), the volume's own
+// name, no home-screen manifest, and a sideways page whose door is the crown,
+// back to the Bible. It rides the Bible's door: it is reached from the
+// Bible's sideways page and by `?volume=calendarium`.
+volumeConfigs.calendarium = {
+  ...volumeConfigs.calendar,
+  id: 'calendarium',
+  paths: [],
+  manifestPath: `${CALENDARIUM_BASE}manifest.json`,
+  assetBase: CALENDARIUM_BASE,
+  documentTitle: 'Calendarium Catholicum',
+  webManifest: undefined,
+  homeIcon: undefined,
+  // ITS SIDEWAYS PAGE MIRRORS THE BIBLE'S (Howell 2026-11-25: "make it
+  // reciprocal so that the calendar's landscape page mirrors the Bible
+  // landscape page. Make the banner simply the word calendar in the phone's
+  // own language, and put our calendar icon above it large. And the Crown of
+  // Thorns logo needs to move now from the lower right corner to directly
+  // below the banner, with the label Biblia Catholica ... add the
+  // 'corrections' link to the lower right, and with 'info' on the lower
+  // left under the assumption that the calendar may also need an occasional
+  // correction"). The pictures are dark line art and the ground is navy, so
+  // both are drawn light.
+  landscape: {
+    mails: [
+      { address: 'info@bibliacatholica.com', purpose: 'info' },
+      { address: 'corrections@bibliacatholica.com', purpose: 'corrections', subject: true }
+    ],
+    mailsAs: 'words',
+    mailsCorners: true,
+    emblem: { image: 'calendarium_door', label: 'Calendarium Catholicum', crest: true, tone: 'light', size: 24 },
+    titleFrom: 'title',
+    titleScale: 2.5,
+    lift: 7,
+    doorsBelow: true,
+    doors: [{ volume: 'bible', href: './?volume=bible', label: 'Biblia Catholica', tone: 'light' }],
+    hint: false
+  },
+  createHandlers: makeAdapterHandlers('calendarium')
+};
 
 // The probe's drop box (telemetry.php on the production host). Deployment
 // layout is a literal like any other — it lives here, not in diagnostics.

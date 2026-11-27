@@ -32,12 +32,14 @@ test('one page, two doors, chosen by the hostname; every address in it root-abso
   assert.match(html, /<meta name="robots" content="noindex">/);
 });
 
-test('the Psalter’s verse is fetched from the served Latin, never written here (WF-14)', () => {
+test('the scripture door is the heading, the lost column and the way home (O-337)', () => {
   const html = read('404.html');
-  assert.match(html, /\/data\/gutenberg\/2026\.08\.22\/text\/1592lat\/bc0f0d278\.json/, 'the Psalter’s shard in the served volume');
-  assert.match(html, /j\.text\['118:176'\]/, 'Psalm 118:176 by address');
+  // O-337 (Howell 2026-11-23): the scripture door is three things and no more — the heading, the lost column, a Home button; no verse is fetched.
+  assert.doesNotMatch(html, /\/data\/gutenberg\/[^'"]*\/text\//, 'the page reads no text of the corpus');
   assert.doesNotMatch(html, /Erravi|ovis|quære|periit/i, 'no word of the verse in the public tree');
-  assert.match(html, /Psalmus CXVIII, 176/, 'the address is shown, for the reader who wants the rest');
+  assert.match(html, /<b>CDIV<\/b>Page not found/, 'the heading, above the column');
+  assert.match(html, /\/assets\/lost-column-portrait\.png/, 'the column, cropped for an upright phone');
+  assert.match(html, /<a class="door-link" href="\/">Home<\/a>/, 'and the way home');
   assert.match(html, /CDIV/, 'four hundred and four, as the Psalter would number it');
 });
 

@@ -109,6 +109,11 @@ export function isScreeningRoom(loc = (typeof window !== 'undefined' ? window.lo
  * word, or the default volume, decides as before.
  */
 export function doorVolume(loc = (typeof window !== 'undefined' ? window.location : null), table = venues) {
+  const door = doorAt(loc, table);
+  return door ? door.volume : null;
+}
+/** The door an address stands at, whole — its volume and whatever else the venue table says of it. */
+export function doorAt(loc = (typeof window !== 'undefined' ? window.location : null), table = venues) {
   const doors = Array.isArray(table?.doors) ? table.doors : [];
   if (!loc || typeof loc.hostname !== 'string' || typeof loc.pathname !== 'string') return null;
   const host = loc.hostname.trim().toLowerCase();
@@ -119,7 +124,7 @@ export function doorVolume(loc = (typeof window !== 'undefined' ? window.locatio
     if (!d.hosts.includes(host) || !path.startsWith(d.pathPrefix.toLowerCase())) continue;
     if (!best || d.pathPrefix.length > best.pathPrefix.length) best = d;
   }
-  return best ? best.volume : null;
+  return best;
 }
 /**
  * The door to `volume` on THIS host (O-258): where a page here may send the

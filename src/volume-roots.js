@@ -19,6 +19,10 @@ export const VENUES = {
   doors: [
     { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/bible/', volume: 'bible' },
     { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/calendar/', volume: 'calendar' },
+    // THE STUDIO (O-342): the room's third address, the Bible's own door seen
+    // with the sideways page that is being worked out. Listed after the
+    // Bible's, so a link to the Bible still leads to the Bible's door.
+    { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/wheel-v3/studio/', volume: 'bible', studio: true },
     { hosts: ['mmdm.it', 'www.mmdm.it'], pathPrefix: '/', volume: 'calendar' },
     { hosts: ['bibliacatholica.com', 'www.bibliacatholica.com'], pathPrefix: '/', volume: 'bible' }
   ]
@@ -33,9 +37,13 @@ const BIBLE_VOLUME_BASE = './data/gutenberg';
 const BIBLE_VOLUME_VERSION = '2026.08.22'; // leaf-and-shard (O-92/W-129)
 const CHURCH_VOLUME_BASE = './data/catechism';
 const CHURCH_VOLUME_VERSION = '2026.11.13';
+// O-343: the 1913 encyclopedia, a first draft in the same shape.
+const ENCYCLOPEDIA_VOLUME_BASE = './data/encyclopedia';
+const ENCYCLOPEDIA_VOLUME_VERSION = '2026.11.25';
 export const WALL_ROOTS = {
   bible: { base: BIBLE_VOLUME_BASE, version: BIBLE_VOLUME_VERSION },
-  church: { base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION }
+  church: { base: CHURCH_VOLUME_BASE, version: CHURCH_VOLUME_VERSION },
+  encyclopedia: { base: ENCYCLOPEDIA_VOLUME_BASE, version: ENCYCLOPEDIA_VOLUME_VERSION }
 };
 
 // THE WORDS OF A LEAF-AND-SHARD VOLUME'S ADDRESS, for the early loader, which
@@ -43,5 +51,5 @@ export const WALL_ROOTS = {
 // place — an address carrying one opens where it says, and the app settles
 // that — and the rings above the leaves a reader may have left the volume on,
 // where no verse is opened at boot (O-294).
-export const WALL_ADDRESS_KEYS = ['book', 'chapter', 'verse', 'item', 'level', 'testament'];
+export const WALL_ADDRESS_KEYS = ['book', 'chapter', 'verse', 'utterance', 'item', 'level', 'testament'];
 export const WALL_RINGS_ABOVE_THE_LEAF = ['testament', 'book', 'chapter'];

@@ -5,8 +5,8 @@ import { createVolumeLayoutSpec } from './adapters/volume-layout.js';
 import { adapterLoader, volumeConfigs, DEFAULT_VOLUME, makeLabelFormatter, VENUES, readerIdle } from './volume-configs.js';
 import { mountFeelHud } from './view/feel-hud.js';
 import { mountProbe } from './diagnostics/probe.js';
-import { proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
-import { landscapeTongues, portalRecord, renderLandscapePortal } from './view/landscape-portal.js';
+import { doorAt, proofreadOverrideActive, declareVenues, doorVolume, isOnLan } from './core/lan-gate.js';
+import { landscapeTongues, portalRecord, renderLandscapePortal, studioWord, studioPlaces, playStudioSwitch, playStudioTurn } from './view/landscape-portal.js';
 import { armOrientationReboot } from './core/orientation-reboot.js';
 
 // THE GESTURE LOG (O-153, Howell 2026-09-16: "I suggest we do some logging and
@@ -162,7 +162,7 @@ import { computeDetailSectorBounds } from './geometry/detail-sector-geometry.js'
 import { renderMarginNote, marginPartCount } from './view/margin-panel.js';
 import { apparatusRuns } from './core/margin-source.js';
 import { computeMarginArea, setMarginKeepOut } from './geometry/margin-area.js';
-import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted } from './view/detail/plugins/line-layout.js';
+import { onVerseFontReady, invalidateVerseMeasurement, versePartCount , poemPartCount, verseFaceReady, faceMarkDrifted, breakUnits, glue } from './view/detail/plugins/line-layout.js';
 import { isDetailLevel } from './view/detail/detail-level.js';
 import { computeFlickRotation, FLICK_GLIDE_MS } from './interaction/gesture-tiers.js';
 import { getArcParameters, getViewportWindow, getNodeSpacing, getMagnifierPosition, getMagnifierAngle, getParentSeat, setParentLabelCornerOccupied } from './geometry/focus-ring-geometry.js';
@@ -904,6 +904,9 @@ function applySeal() {
 let copyrightWords = null;   // O-226: the volume's copyright line, per tongue
 let landscapeRoot = null;    // O-258: the volume root the landscape page reads its words and card from
 let landscapeRendered = '';  // the record last drawn on the sheet, so a repaint only follows a change
+let landscapeRecord = null;       // that record itself, for the studio's switch (O-342)
+let landscapeStudioTurning = false; // the studio's wheel is mid-turn: further taps wait
+let landscapeStudioWired = false; // the sheet hears the studio's taps once
 
 // THE PAGE SPEAKS THE READER'S TONGUE (O-226, Howell 2026-10-27: "The 'edition
 // under review' disclaimer should appear in whatever language has been
@@ -2268,12 +2271,61 @@ function applyLandscapePortal() {
   // The phone's own tongue comes first wherever the page has words in it;
   // the edition's language answers only where it has none.
   const lang = firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || dimensionBridge.getSelection()?.language || null;
-  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
+  const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);
   if (key === landscapeRendered) return;
   landscapeRendered = key;
+  landscapeRecord = record;
   renderLandscapePortal(sheet, record);
+  // THE STUDIO SWITCHES ON THE PAGE (O-342): a tap on one of the row's
+  // pictures does not leave for a new address and a blank screen; the page
+  // is redrawn where it stands and the pictures are seen changing places.
+  if (!landscapeStudioWired && typeof sheet.addEventListener === 'function') {
+    landscapeStudioWired = true;
+    sheet.addEventListener('click', event => {
+      const door = event.target && typeof event.target.closest === 'function' ? event.target.closest('[data-studio-door]') : null;
+      if (!door || !landscapeRecord?.studio) return;
+      event.preventDefault();
+      switchStudio(sheet, door.getAttribute('data-studio-door'));
+    });
+  }
+}
+// THE STUDIO'S WHEEL TURNS (Howell 2026-11-26: "The whole row should turn like
+// a wheel"). One turn brings the row's last picture to the head and drops the
+// head to the row's left end; a picture further back takes as many turns as
+// it stands from the end, each seen, quicker when there are several. The
+// address is rewritten at every turn so a saved page reopens where it stopped.
+function switchStudio(sheet, id) {
+  const row = (landscapeRecord?.doors || []).map(d => d.id);
+  const at = row.indexOf(id);
+  if (!id || at < 0 || landscapeStudioTurning) return;
+  const turns = row.length - at;
+  let still = false;
+  try { still = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (_) { /* no media queries */ }
+  const show = next => {
+    try {
+      const params = new URLSearchParams(window.location.search || '');
+      params.set('studio', next);
+      window.history.replaceState(window.history.state, '', `${window.location.pathname}?${params.toString()}`);
+    } catch (_) { return false; /* file://: no address to rewrite, so no turn */ }
+    applyLandscapePortal();
+    return true;
+  };
+  if (still) { show(id); return; }
+  // The whole turn is ONE motion (Howell 2026-11-26: "the intermediate icons
+  // should rotate around without stopping"): every step is drawn and read at
+  // once, nothing painted between, and the pieces then run through them all.
+  const stages = [studioPlaces(sheet)];
+  for (let step = 0; step < turns; step += 1) {
+    const doors = (landscapeRecord?.doors || []).map(d => d.id);
+    if (!doors.length || !show(doors[doors.length - 1])) return;
+    if (step < turns - 1) stages.push(studioPlaces(sheet));
+  }
+  const ms = 1300 + (turns - 1) * 1000;   // Howell 2026-11-26: "slow it down 2.5x", then each further place "to 1 second, so a three-place turn takes 3.3 seconds"
+  if (!playStudioTurn(sheet, stages, ms)) playStudioSwitch(sheet, stages[0], 1300);
+  landscapeStudioTurning = true;
+  setTimeout(() => { landscapeStudioTurning = false; }, ms);
 }
 
 function updateIncompleteMark() {
@@ -3002,8 +3054,13 @@ function applyTheme(volume) {
   if (title) document.title = title;
   // The home-screen door (O-273): the manifest and icon the volume declares,
   // and the status bar in its ground colour once installed.
+  // THE STUDIO INSTALLS NOTHING (O-342): its address is a bench, and a phone
+  // that saved it as an app would be handed this volume's own app, which
+  // opens at this volume's door. With no app file the phone saves the address.
+  const atStudio = doorAt(window.location)?.studio === true;
+  if (atStudio) document.querySelectorAll('link[rel="manifest"]').forEach(l => l.remove());
   declareHomeScreen(document, {
-    manifestHref: volumeConfigs[volume]?.webManifest,
+    manifestHref: atStudio ? undefined : volumeConfigs[volume]?.webManifest,
     icon: volumeConfigs[volume]?.homeIcon,
     themeColor: bg,
     title
@@ -3545,9 +3602,9 @@ function renderDetail(selected, adapterInstance, manifest, adapterNormalized, { 
           for (let i = 0; i < els.length - 1; i += 1) {
             const box = parseFloat(els[i].style?.maxWidth || els[i].style?.width || '0');
             const here = (els[i].textContent || '').trim();
-            const next = (els[i + 1].textContent || '').trim().split(/\s+/)[0];
+            const next = breakUnits((els[i + 1].textContent || '').trim())[0];
             if (!box || !here || !next) continue;
-            probe.textContent = `${here} ${next}`;
+            probe.textContent = glue(here, next);
             if (probe.getBoundingClientRect().width <= box - 1) return true;
           }
         } catch (_) { return false; } finally { try { probe?.remove(); } catch (_) { /* detached */ } }
@@ -4564,7 +4621,7 @@ function launchGateway(gateway) {
   bootVolume(gateway.volume, search, returnContext, transit)
     .then(() => {
       try {
-        window.history.pushState({ wheelGateway: true, gatewayReturn: returnContext }, '', search);
+        window.history.pushState({ wheelGateway: true, gatewayReturn: returnContext }, '', `${window.location.pathname}${search || ''}`);
       } catch (err) { /* history unavailable (e.g. file://) */ }
     })
     .catch(err => {
@@ -4584,7 +4641,7 @@ function returnThroughGateway() {
   const transit = { mode: 'return', snapshot: captureGatewaySnapshot(svg) };
   bootVolume(ctx.volume, search, null, transit)
     .then(() => {
-      try { window.history.pushState({ wheelGateway: true }, '', search); } catch (err) { /* ignore */ }
+      try { window.history.pushState({ wheelGateway: true }, '', `${window.location.pathname}${search || ''}`); } catch (err) { /* ignore */ }
     })
     .catch(err => {
       if (transit.snapshot) transit.snapshot.remove();
@@ -4662,7 +4719,7 @@ function swapThroughSeal() {
   if (sealEl) sealEl.style.visibility = 'hidden';
   const search = `?volume=${encodeURIComponent(to)}`;
   bootVolume(to, search, null, transit)
-    .then(() => { try { window.history.pushState({ wheelGateway: true }, '', search); } catch (_) { /* file:// */ } })
+    .then(() => { try { window.history.pushState({ wheelGateway: true }, '', `${window.location.pathname}${search || ''}`); } catch (_) { /* file:// */ } })
     .catch(err => {
       sealSwapping = false;
       transit.snapshot?.remove();

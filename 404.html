@@ -9,10 +9,9 @@
        page for both sites"). One file for every door, served by Apache's
        ErrorDocument at any path, so every address in it is root-absolute. The
        door is read off the hostname: the scripture volume's public address
-       gets the lost sheep of the Psalter — the verse FETCHED from the served
-       Latin at runtime, never written here (WF-14: the engine is public, the
-       text is the corpus's) — and every other door the day Gregory XIII
-       struck from October 1582, which the calendar volume is about. -->
+       gets the lost column (O-337: a heading, the drawing, a Home button, and
+       no other word), and every other door the day Gregory XIII struck from
+       October 1582, which the calendar volume is about. -->
   <style>
     @font-face { font-family: 'EB Garamond'; font-weight: 400; src: url('/assets/fonts/google/eb-garamond-400-latin.woff2') format('woff2'); font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
     @font-face { font-family: 'EB Garamond'; font-weight: 400; font-style: italic; src: url('/assets/fonts/google/eb-garamond-400-italic-latin.woff2') format('woff2'); font-display: swap; }
@@ -30,14 +29,28 @@
     .eyebrow { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--node); margin: 0 0 18px; }
     .eyebrow b { font-size: 34px; letter-spacing: .08em; display: block; color: var(--fg); margin-bottom: 4px; }
     h1 { font-weight: 400; font-size: 34px; line-height: 1.15; margin: 0 0 14px; text-wrap: balance; }
-    h1 .verse { font-style: italic; }
     .ref { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--node); margin: 0 0 24px; }
     p { margin: 0 0 14px; }
     .quiet { color: var(--band); }
     body[data-door="days"] .quiet { color: #b9c7d6; }
     a.door-link { display: inline-block; margin-top: 10px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--fg); text-decoration: none; border: 2px solid var(--fg); border-radius: 999px; padding: 12px 22px; }
     a.door-link:hover, a.door-link:focus-visible { background: var(--fg); color: var(--bg); outline: none; }
-    .crown { width: 84px; height: 84px; margin: 0 0 22px; display: block; }
+    /* THE LOST COLUMN (O-337, Howell 2026-11-23: "the new art for the 404 page ...
+       cropped for portrait view ... transparent so that you can add our sepia
+       background"). Ink on nothing, so the page's own ground shows through;
+       an upright phone gets the crop, and it runs to the screen's edges. */
+    .ruin { display: block; width: 100%; height: auto; margin: 0 0 22px; }
+    @media (orientation: portrait) { .ruin { width: calc(100% + 40px); max-width: none; margin-left: -20px; margin-right: -20px; } }
+    /* THREE THINGS AND NO MORE (Howell 2026-11-23: "eliminate all text except
+       for the 'CDIV' and 'PAGE NOT FOUND'. These should be above the column.
+       At the bottom of the page there should be a 'HOME' button"). The door
+       fills the screen: the words at the top, the column, the button at the foot. */
+    body[data-door="book"] { align-items: stretch; }
+    body[data-door="book"] main { display: flex; }
+    body[data-door="book"] .book { display: flex; flex-direction: column; align-items: center; justify-content: space-between; width: 100%; min-height: calc(100vh - 64px); min-height: calc(100dvh - 64px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); text-align: center; }
+    body[data-door="book"] .eyebrow { margin: 0; }
+    body[data-door="book"] .ruin { margin-top: 0; margin-bottom: 0; }
+    body[data-door="book"] a.door-link { margin-top: 0; }
     /* October 1582 as Rome lived it: Thursday the 4th, then Friday the 15th. */
     .month { font-family: 'Montserrat', sans-serif; font-weight: 500; margin: 26px 0 22px; }
     .month .name { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--node); margin: 0 0 10px; }
@@ -53,14 +66,13 @@
 </head>
 <body data-door="book">
   <main>
-    <section class="door book" lang="la">
-      <img class="crown" src="/data/gutenberg/2026.08.22/assets/crown_of_thorns.png" alt="">
-      <p class="eyebrow"><b>CDIV</b>Pagina non inventa</p>
-      <h1 id="verse" hidden><span class="verse"></span></h1>
-      <p class="ref" id="ref" hidden>Psalmus CXVIII, 176 · Vulgata Clementina</p>
-      <p lang="en">This page has wandered off. The Book is where you left it.</p>
-      <p class="quiet" lang="en">If you followed a link here, the address was mistyped or has moved. Every verse still answers at the door.</p>
-      <a class="door-link" href="/">Ad librum</a>
+    <section class="door book" lang="en">
+      <p class="eyebrow"><b>CDIV</b>Page not found</p>
+      <picture>
+        <source media="(orientation: portrait)" srcset="/assets/lost-column-portrait.png" width="720" height="588">
+        <img class="ruin" src="/assets/lost-column.png" width="1280" height="588" alt="">
+      </picture>
+      <a class="door-link" href="/">Home</a>
     </section>
     <section class="door days" lang="it">
       <p class="eyebrow"><b>404</b>Questo giorno non esiste</p>
@@ -89,20 +101,10 @@
     (function () {
       var host = (location.hostname || '').toLowerCase(), path = (location.pathname || '').toLowerCase();
       var book = /(^|\.)bibliacatholica\.(com|org|net)$/.test(host) || /\/bible(\/|$)/.test(path);
+      // A look before a deploy (O-337): ?door=book or ?door=days shows either door at any address.
+      var ask = (/[?&]door=(book|days)\b/.exec(location.search) || [])[1];
+      if (ask) book = ask === 'book';
       document.body.setAttribute('data-door', book ? 'book' : 'days');
-      if (!book) return;
-      // Psalm 118:176 of the Clementine, read from the served Latin: the Psalter's
-      // shard in the volume the engine serves. The words never live in this file.
-      var url = '/data/gutenberg/2026.08.22/text/1592lat/bc0f0d278.json';
-      fetch(url, { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
-        var t = j && j.text && j.text['118:176'];
-        if (!t) return;
-        var cut = t.indexOf(', quia');            // the plea alone; the clause after it stays in the book
-        var words = (cut > 0 ? t.slice(0, cut) : t).replace(/\s+:/g, ':').replace(/\s*[.;:,]\s*$/, '');
-        var h = document.getElementById('verse');
-        h.querySelector('.verse').textContent = words + '.';
-        h.hidden = false; document.getElementById('ref').hidden = false;
-      }).catch(function () {});
     })();
   </script>
 </body>

@@ -32,7 +32,7 @@
 // on one host, so the link stays on the host and crosses to the other door.
 // On the LAN there are no doors: the same address with the other volume's
 // word. The venue table decides, never the page.
-import { doorHref, isOnLan, isScreeningRoom } from '../core/lan-gate.js';
+import { doorAt, doorHref, isOnLan, isScreeningRoom } from '../core/lan-gate.js';
 import { splashRecord } from './boot-overture.js';
 
 const RTL = new Set(['hebrew', 'arabic', 'syriac']);
@@ -142,7 +142,23 @@ export function crossLinkHref(volume, publicHref, loc = (typeof window !== 'unde
  *            reader's place as main.js names it (Howell 2026-11-01: a
  *            correction is only useful if it says where the mistake is)
  */
-export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null } = {}) {
+/**
+ * THE STUDIO (O-342, Howell 2026-11-25: "a separate screening room ... a
+ * mock-up that shows ... other volumes, even though they're empty"). The word
+ * `studio` on the address draws the sideways page in the grammar being worked
+ * out — the volume on the glass large at the head, the others small in a row
+ * beneath — from the list the corpus keeps (display_config.landscape.studio).
+ * Heard in the screening room and on the LAN only: a public page never
+ * shows a volume that does not exist.
+ */
+export function studioWord(loc = (typeof window !== 'undefined' ? window.location : null), table) {
+  if (!loc || !(isOnLan(loc) || isScreeningRoom(loc, table))) return null;
+  // The studio's own address needs no word: it opens on the first volume listed.
+  const standing = doorAt(loc, table)?.studio === true ? '1' : null;
+  try { return new URLSearchParams(loc.search || '').get('studio') || standing; } catch (_) { return standing; }
+}
+
+export function portalRecord({ volume, config, root, lang = null, loc, table, subject = null, copyright = null, studio = null } = {}) {
   const decl = config?.landscape;
   if (!decl) return null;
   const words = root?.display_config?.landscape || null;
@@ -163,7 +179,14 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
   // before the engine's config does (W-114).
   const emblemName = typeof words?.emblem?.image === 'string' && words.emblem.image ? words.emblem.image
     : (typeof decl.emblem?.image === 'string' && decl.emblem.image ? decl.emblem.image : null);
-  const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '' } : null;
+  // `crest: true` — a small mark over the name, not the page's large head:
+  // the page keeps its centred body (Howell 2026-11-25, a circle drawn over
+  // the name: "add our crown of thorns art above the ... banner").
+  const emblem = emblemName && config?.assetBase ? { imageUrl: `${config.assetBase}${base}${emblemName}.png`, label: decl.emblem?.label || '', crest: decl.emblem?.crest === true,
+    // `tone: 'light'` draws dark line art inverted, for a dark ground;
+    // `size` is the crest's height in vmin where the standard is not wanted.
+    tone: decl.emblem?.tone === 'light' ? 'light' : null,
+    size: Number.isFinite(Number(decl.emblem?.size)) && Number(decl.emblem?.size) > 0 ? Number(decl.emblem.size) : null } : null;
   // What the business is, in the reader's tongue (the volume's words).
   const about = decl.about ? pick(words?.[decl.about], lang) : null;
   // Where the house is, under the about line after a blank line (Howell
@@ -216,12 +239,48 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
       };
     }
   }
-  return {
+  // THE DOORS ABOVE THE NAME (O-341, Howell 2026-11-25, drawn on his
+  // screenshot as three circles over the name: "positions for icons that will
+  // take the user to the other volumes"). One door per volume that EXISTS —
+  // an unbuilt volume gets no position. Each is its picture, which the
+  // volume names (display_config.landscape.doors.<volume>.image — the art is
+  // the corpus's, W-114), and leads where the single door does.
+  const doorImage = d => {
+    const named = words?.doors?.[d.volume]?.image;
+    return typeof named === 'string' && named ? named : (typeof d.image === 'string' ? d.image : null);
+  };
+  const doors = (Array.isArray(decl.doors) ? decl.doors : []).map(d => {
+    const href = d && d.volume ? crossLinkHref(d.volume, d.href, loc, table) : null;
+    if (!href) return null;
+    return {
+      href,
+      imageUrl: doorImage(d) && config?.assetBase ? `${config.assetBase}${base}${doorImage(d)}.png` : null,
+      label: typeof d.label === 'string' ? d.label : '',
+      tone: d.tone === 'light' ? 'light' : null,
+      // The word under the picture, in the reader's tongue: the volume's
+      // (display_config.landscape.doors.<volume>.label). None, no word.
+      caption: (c => (typeof c === 'string' && c.trim() ? c.trim() : null))(pick(words?.doors?.[d.volume]?.label, lang))
+    };
+  }).filter(Boolean);
+  const record = {
     volume,
+    doors,
+    // `doorsBelow`: the row of doors sits under the name, not over it.
+    // `mailsCorners`: the mail words leave the centre for the two lower
+    // corners, the first read at the start of the line (Howell 2026-11-25,
+    // arrows drawn on his screenshot: the icon and the name swap places,
+    // "and move the info and corrections links to the lower left and right
+    // corners").
+    doorsBelow: decl.doorsBelow === true,
+    mailsCorners: decl.mailsCorners === true,
     emblem,
     // `titleOneLine`: the card's name set on one line (Howell 2026-11-02, the
     // company's page: "all on one line").
-    title: decl.titleOneLine === true ? String(splash.title || config?.documentTitle || '').split('\n').map(t => t.trim()).filter(Boolean).join(' ') : (splash.title || config?.documentTitle || ''),
+    // `titleFrom` names the volume's word table for a name said in the
+    // reader's tongue (Howell 2026-11-25: "Make the banner simply the word
+    // ... in the phone's own language"); the card's name otherwise.
+    title: (said => (typeof said === 'string' && said.trim() ? said.trim() : null))(decl.titleFrom ? pick(words?.[decl.titleFrom], lang) : null)
+      || (decl.titleOneLine === true ? String(splash.title || config?.documentTitle || '').split('\n').map(t => t.trim()).filter(Boolean).join(' ') : (splash.title || config?.documentTitle || '')),
     titleFont: splash.font || null,
     titleColor: splash.color || null,
     // The name's size against the page's standard (Howell 2026-11-01, on the
@@ -246,6 +305,36 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     // "looks a little awkward centered vertically, so shift it up").
     lift: Number.isFinite(Number(decl.lift)) && Number(decl.lift) > 0 ? Number(decl.lift) : 0,
     dir: RTL.has(lang) ? 'rtl' : 'ltr'
+  };
+  // The studio's page: the same record with its head and its row replaced.
+  const bench = studio && Array.isArray(words?.studio?.volumes) && words.studio.volumes.length && config?.assetBase ? words.studio : null;
+  if (!bench) return record;
+  const art = n => (typeof n === 'string' && n ? `${config.assetBase}${base}${/\.[a-z]+$/.test(n) ? n : `${n}.png`}` : null);
+  const said = v => (c => (typeof c === 'string' && c.trim() ? c.trim() : v.id))(pick(v.label, lang));
+  const here = bench.volumes.find(v => v.id === studio) || bench.volumes[0];
+  const path = loc && typeof loc.pathname === 'string' ? loc.pathname : './';
+  return {
+    ...record,
+    studio: here.id,
+    emblem: { imageUrl: art(here.image), label: said(here), crest: true, tone: record.emblem?.tone || null, size: null },
+    title: said(here),
+    titleScale: 2,
+    doorsBelow: true,
+    mailsCorners: true,
+    link: null,
+    // THE VOLUMES ARE A WHEEL (Howell 2026-11-26: "The whole row should turn
+    // like a wheel"): the row is the list read on from the head and round
+    // again, so the order of the volumes never changes, only which of them
+    // stands at the head. One turn brings the row's last picture up.
+    doors: bench.volumes.map((_, i, all) => all[(all.indexOf(here) + 1 + i) % all.length]).filter(v => v !== here).map(v => ({
+      id: v.id,
+      href: `${path}?volume=${encodeURIComponent(volume)}&studio=${encodeURIComponent(v.id)}`,
+      imageUrl: art(v.image), label: said(v), tone: record.emblem?.tone || null, caption: said(v)
+    })),
+    // The site's own mark, faint behind the whole page, and its name at the
+    // foot beside the copyright: the site, not any one volume.
+    watermarkUrl: art(bench.watermark),
+    site: typeof bench.site === 'string' && bench.site.trim() ? bench.site.trim() : null
   };
 }
 
@@ -284,17 +373,48 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
   sheet.removeAttribute('aria-hidden');
   sheet.classList.add('landscape-portal');
 
-  const page = make(doc, 'div', record.emblem ? 'portal-page portal-page--emblem' : 'portal-page');
+  const page = make(doc, 'div', record.emblem && !record.emblem.crest ? 'portal-page portal-page--emblem' : (record.studio ? 'portal-page portal-page--studio' : 'portal-page'));
+  if (record.watermarkUrl) {
+    const mark = make(doc, 'img', 'portal-watermark');
+    mark.setAttribute('src', record.watermarkUrl);
+    mark.setAttribute('alt', '');
+    mark.setAttribute('aria-hidden', 'true');
+    page.appendChild(mark);
+  }
   // The body sits centred in the height; the turn-it-upright line alone is
   // pinned to the foot (the first photographs had the body hugging the top
   // with a bare band above the line).
   const body = make(doc, 'div', 'portal-body');
   if (record.lift) body.style.transform = `translateY(-${record.lift}vmin)`;
   page.appendChild(body);
+  const drawDoors = () => {
+    if (!record.doors || !record.doors.length) return;
+    const row = make(doc, 'div', record.doorsBelow ? 'portal-doors portal-doors--below' : 'portal-doors');
+    record.doors.forEach(d => {
+      const a = make(doc, 'a', 'portal-doors-door');
+      a.setAttribute('href', d.href);
+      if (record.studio && d.id) a.setAttribute('data-studio-door', d.id);
+      if (d.label) a.setAttribute('aria-label', d.label);
+      if (d.imageUrl) {
+        const img = make(doc, 'img', d.tone === 'light' ? 'portal-doors-image portal-door-image--light' : 'portal-doors-image');
+        img.setAttribute('src', d.imageUrl);
+        img.setAttribute('alt', d.label || '');
+        a.appendChild(img);
+      } else {
+        a.appendChild(make(doc, 'span', 'portal-door-label', d.label));
+      }
+      if (d.caption) a.appendChild(make(doc, 'span', 'portal-doors-caption', d.caption));
+      row.appendChild(a);
+    });
+    body.appendChild(row);
+  };
+  if (!record.doorsBelow) drawDoors();
   if (record.emblem) {
-    const img = make(doc, 'img', 'portal-emblem');
+    const img = make(doc, 'img', `${record.emblem.crest ? 'portal-emblem portal-emblem--crest' : 'portal-emblem'}${record.emblem.tone === 'light' ? ' portal-door-image--light' : ''}`);
+    if (record.emblem.size && img.style) img.style.height = `${record.emblem.size}vmin`;
     img.setAttribute('src', record.emblem.imageUrl);
     img.setAttribute('alt', record.emblem.label || '');
+    if (record.studio) img.setAttribute('data-studio-head', record.studio);
     body.appendChild(img);
   }
   if (record.title) {
@@ -308,6 +428,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     if (record.titleScale && record.titleScale !== 1) title.style.fontSize = `calc(var(--portal-title-size) * ${record.titleScale})`;
     body.appendChild(title);
   }
+  if (record.doorsBelow) drawDoors();
   // The about line and the town: one block in the upper left corner, or
   // under the name.
   const corner = record.aboutCorner ? make(doc, 'div', 'portal-corner') : null;
@@ -318,7 +439,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     // Words sit in one row; addresses with purposes are two aligned columns
     // (purpose, address) so the gutter runs straight; bare addresses are
     // simply centred.
-    const cls = record.mailsAs === 'words' ? 'portal-mails portal-mails--words'
+    const cls = record.mailsAs === 'words' ? (record.mailsCorners ? 'portal-mails portal-mails--words portal-mails--corners' : 'portal-mails portal-mails--words')
       : record.mails.some(m => m.purpose) ? 'portal-mails portal-mails--purposed' : 'portal-mails';
     const list = make(doc, 'div', cls);
     record.mails.forEach(m => {
@@ -346,7 +467,7 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
       row.appendChild(a);
       list.appendChild(row);
     }
-    body.appendChild(list);
+    (record.mailsCorners ? page : body).appendChild(list);
   }
   if (record.link) {
     const kind = record.link.corner ? 'portal-door portal-door--corner' : record.link.imageUrl ? 'portal-door portal-door--emblem' : 'portal-door portal-door--name';
@@ -363,7 +484,98 @@ export function renderLandscapePortal(sheet, record, doc = (typeof document !== 
     (record.link.corner ? page : body).appendChild(a);
   }
   if (record.rotate) page.appendChild(make(doc, 'p', 'portal-rotate', record.rotate));
-  if (record.copyright) page.appendChild(make(doc, 'p', 'portal-copyright', record.copyright));
+  if (record.copyright || record.site) page.appendChild(make(doc, 'p', 'portal-copyright', [record.site, record.copyright].filter(Boolean).join(' · ')));
   sheet.appendChild(page);
   return true;
+}
+
+// THE STUDIO'S SWITCH IS SEEN (Howell 2026-11-26, arrows drawn on his
+// screenshot: "I would prefer the switch be animated, so the user can clearly
+// see the loading of a new volume"; then, of the row: "should turn like a
+// wheel"). One turn: the row's last picture rises to the head, the head's
+// drops to the left end of the row, and every picture between slides one
+// place right; each carries its word with it, the word growing into the name
+// or shrinking into a caption. A picture further back is reached by as many
+// turns as it stands from the row's end. The page is redrawn at once in its
+// new order and every piece is then played from where it stood to where it
+// now stands, so the motion ends exactly on the page as drawn.
+//
+// `studioPlaces` reads where each volume's picture and word stand;
+// `playStudioSwitch` takes the places read BEFORE the redraw.
+export function studioPlaces(sheet) {
+  const places = new Map();
+  if (!sheet || typeof sheet.querySelector !== 'function') return places;
+  const box = el => (el && typeof el.getBoundingClientRect === 'function' ? el.getBoundingClientRect() : null);
+  const head = sheet.querySelector('[data-studio-head]');
+  if (head) places.set(head.getAttribute('data-studio-head'), { image: head, word: sheet.querySelector('.portal-title') });
+  sheet.querySelectorAll('[data-studio-door]').forEach(a => {
+    places.set(a.getAttribute('data-studio-door'), { image: a.querySelector('.portal-doors-image'), word: a.querySelector('.portal-doors-caption') });
+  });
+  for (const place of places.values()) { place.imageBox = box(place.image); place.wordBox = box(place.word); }
+  return places;
+}
+export const STUDIO_SWITCH_MS = 1300;
+export function playStudioSwitch(sheet, before, ms = STUDIO_SWITCH_MS) {
+  const after = studioPlaces(sheet);
+  const moved = [];
+  const from = (el, was, now) => {
+    if (!el || !el.style || !was || !now || !now.width || !now.height) return;
+    const dx = (was.left + was.width / 2) - (now.left + now.width / 2);
+    const dy = (was.top + was.height / 2) - (now.top + now.height / 2);
+    const scale = was.height / now.height;
+    if (Math.abs(dx) < 0.5 && Math.abs(dy) < 0.5 && Math.abs(scale - 1) < 0.01) return;
+    el.style.transition = 'none';
+    el.style.transformOrigin = '50% 50%';
+    el.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
+    moved.push(el);
+  };
+  for (const [id, now] of after) {
+    const was = before && before.get(id);
+    if (!was) continue;
+    from(now.image, was.imageBox, now.imageBox);
+    from(now.word, was.wordBox, now.wordBox);
+  }
+  if (!moved.length) return 0;
+  // The starting places are painted, then let go.
+  void sheet.offsetWidth;
+  const go = () => moved.forEach(el => { el.style.transition = `transform ${ms}ms cubic-bezier(0.3, 0, 0.2, 1)`; el.style.transform = ''; });
+  if (typeof requestAnimationFrame === 'function') requestAnimationFrame(() => requestAnimationFrame(go)); else setTimeout(go, 0);
+  setTimeout(() => moved.forEach(el => { el.style.transition = ''; el.style.transformOrigin = ''; }), ms + 120);
+  return moved.length;
+}
+
+// A turn of several places in ONE motion (Howell 2026-11-26: "the
+// intermediate icons should rotate around without stopping"). `stages` are the
+// places read at each step of the turn, the first before anything moved; the
+// sheet stands at the last. Each piece travels through every stage's place as
+// one keyframed run, so it rounds the wheel rather than cutting across it.
+export function playStudioTurn(sheet, stages, ms = STUDIO_SWITCH_MS) {
+  const path = (stages || []).filter(Boolean);
+  if (!path.length) return 0;
+  const after = studioPlaces(sheet);
+  let moved = 0;
+  const run = (el, boxes, now) => {
+    if (!el || !now || !now.width || !now.height) return;
+    if (typeof el.animate !== 'function') return;
+    let last = 'translate(0px, 0px) scale(1)';
+    const frames = boxes.map(was => {
+      if (was && was.height) {
+        const dx = (was.left + was.width / 2) - (now.left + now.width / 2);
+        const dy = (was.top + was.height / 2) - (now.top + now.height / 2);
+        last = `translate(${dx}px, ${dy}px) scale(${was.height / now.height})`;
+      }
+      return { transform: last, transformOrigin: '50% 50%' };
+    });
+    frames.push({ transform: 'translate(0px, 0px) scale(1)', transformOrigin: '50% 50%' });
+    if (frames.every(f => f.transform === frames[frames.length - 1].transform)) return;
+    el.animate(frames, { duration: ms, easing: 'cubic-bezier(0.3, 0, 0.2, 1)' });
+    moved += 1;
+  };
+  for (const [id, now] of after) {
+    const seen = path.map(stage => stage.get(id) || null);
+    if (!seen[0]) continue;
+    run(now.image, seen.map(s => s && s.imageBox), now.imageBox);
+    run(now.word, seen.map(s => s && s.wordBox), now.wordBox);
+  }
+  return moved;
 }

@@ -140,3 +140,27 @@ describe('the lines-arrived repaint', () => {
     assert.ok(asked < waited, 'and asks before anything is awaited');
   });
 });
+
+// O-336: a script written without spaces breaks between its characters.
+import { breakUnits as _bu, glue as _glue, splitVerse as _sv, wrapLines as _wl } from '../src/view/detail/plugins/line-layout.js';
+it('breakUnits leaves spaced text as its words', () => {
+  assert.deepEqual(_bu('In principio  creavit Deus'), ['In', 'principio', 'creavit', 'Deus']);
+});
+it('breakUnits gives one unit per ideograph, marks riding with their neighbours', () => {
+  // Fixture: Genesis 1:1 in the Union Version's wording is not quoted; these are invented characters.
+  const units = _bu('天地：「山水」，日月。');
+  assert.deepEqual(units, ['天', '地：', '「山', '水」，', '日', '月。']);
+  assert.equal(units.reduce((a, u) => _glue(a, u), ''), '天地：「山水」，日月。');
+});
+it('splitVerse cuts ideographic text between characters and loses nothing', () => {
+  const t = '天地山水日月星辰風雨雷電';
+  const [a, b] = _sv(t);
+  assert.equal(a + b, t);
+  assert.ok(a.length > 0 && b.length > 0);
+});
+it('wrapLines wraps ideographic text instead of keeping it as one word', () => {
+  const table = Array.from({ length: 6 }, () => ({ maxChars: 8 }));
+  const lines = _wl('天地山水日月星辰風雨雷電', table, 3);
+  assert.ok(lines.length >= 3);
+  assert.equal(lines.join(''), '天地山水日月星辰風雨雷電');
+});

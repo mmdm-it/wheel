@@ -28,6 +28,7 @@ test('the public door\'s page introduces Biblia Catholica, not the catalog', () 
   assert.match(body, /<noscript>\s*<h1>Biblia Catholica<\/h1>/);
   assert.match(body, /<p class="desktop-gate-title">BIBLIA CATHOLICA<\/p>/);
   assert.match(body, /<p class="desktop-gate-mail"><a href="mailto:info@bibliacatholica\.com">info@bibliacatholica\.com<\/a> &nbsp;&middot;&nbsp; <a href="mailto:corrections@bibliacatholica\.com">corrections@bibliacatholica\.com<\/a><\/p>/, 'both addresses, info first');
+  assert.match(body, /<p class="desktop-gate-copyright">© 2026 Howell Gibbens\. All rights reserved\.<\/p>/, 'O-339: the card carries the copyright in his name');
   // O-321: the door's own QR, drawn in the page, and the gate's two lines in the visitor's tongue
   assert.doesNotMatch(body, /qr\.png/, 'the catalog\'s QR does not stand at the Bible\'s door');
   assert.match(body, /<svg class="desktop-gate-qr"[^>]*aria-label="QR: bibliacatholica\.com"/);
@@ -69,7 +70,7 @@ test('the mirror stamps the public door\'s page and protects the room under the 
   assert.match(sh, /root\) echo "https:\/\/mmdm\.it\/"/);
   // the calendar's data leaves without the corpus's notes, by either door
   assert.match(sh, /node scripts\/scrub-notes\.mjs data\/calendar "\$WORK\/calendar"/);
-  assert.match(sh, /rsync -azc -i --delete "\$\{DRY\[@\]\}" "\$WORK\/calendar\/" "\$\{DEST\}data\/calendar\/"/);
+  assert.match(sh, /rsync -azc -i --delete --delete-excluded "\$\{DRY\[@\]\}" "\$\{NOAPP\[@\]\}" "\$WORK\/calendar\/" "\$\{DEST\}data\/calendar\/"/);
 });
 
 test('the ground script knows the public doors by address', () => {
@@ -81,5 +82,8 @@ test('the ground script knows the public doors by address', () => {
   assert.match(ground, /'www\.mmdm\.it': 'calendar'/);
   // the path's word still speaks first: the room's bible door on mmdm.it
   assert.ok(ground.indexOf("p.indexOf('/' + k)") < ground.indexOf('doors['), 'path before address');
+  // the studio is the Bible's door at another path of mmdm.it: without its
+  // word the address answered, and the page opened on the calendar's blue
+  assert.ok(ground.indexOf("p.indexOf('/studio/') >= 0) v = 'bible'") > 0 && ground.indexOf("'/studio/'") < ground.indexOf('doors['), 'the studio before address');
   assert.ok(ground.indexOf('doors[') < ground.indexOf("localStorage.getItem('wheel:last-volume')"), 'address before memory');
 });
