@@ -111,6 +111,8 @@ fi
 # than repeated, so a new cargo version cannot leave the mirror behind.
 CHURCH_VOLUME_VERSION="$(sed -n "s/^const CHURCH_VOLUME_VERSION = '\([^']*\)';$/\1/p" src/volume-roots.js)"
 [[ -n "$CHURCH_VOLUME_VERSION" ]] || { echo "mirror-room: src/volume-roots.js declares no CHURCH_VOLUME_VERSION" >&2; exit 1; }
+ENCYCLOPEDIA_VOLUME_VERSION="$(sed -n "s/^const ENCYCLOPEDIA_VOLUME_VERSION = '\([^']*\)';$/\1/p" src/volume-roots.js)"
+[[ -n "$ENCYCLOPEDIA_VOLUME_VERSION" ]] || { echo "mirror-room: src/volume-roots.js declares no ENCYCLOPEDIA_VOLUME_VERSION" >&2; exit 1; }
 
 # The copies that leave — the cleared corpus, the calendar without its
 # notes, the public door's page — are made here and gone at exit.
@@ -163,6 +165,18 @@ for door in "${DOORS[@]}"; do
       rsync -azc -i --delete "${DRY[@]}" "$WORK/calendarium/" "${DEST}data/calendarium/"
       if [[ ${#DRY[@]} -eq 0 ]]; then
         ssh "${DEST%%:*}" "rm -rf ${DEST#*:}data/calendar"
+      fi
+      # THE ENCYCLOPEDIA DRAFT GOES TO THE ROOM AND NOWHERE ELSE (O-346,
+      # Howell 2026-11-28: "Send the Encyclopedia draft to the screening room
+      # only"). It is a first draft nobody has read, so it has no place in the
+      # cleared gate above, which also feeds the public door: this block is
+      # the room's alone, and the public door is never handed the folder. Its
+      # notes stay on the LAN as the calendar's do.
+      if [[ "$door" == bible ]]; then
+        node scripts/scrub-notes.mjs "data/encyclopedia/$ENCYCLOPEDIA_VOLUME_VERSION" "$WORK/encyclopedia/$ENCYCLOPEDIA_VOLUME_VERSION"
+        echo "== $door: the encyclopedia draft, the room only (checksum)"
+        [[ ${#DRY[@]} -eq 0 ]] && ssh "${DEST%%:*}" "mkdir -p ${DEST#*:}data/encyclopedia"
+        rsync -azc --delete "${DRY[@]}" --stats "$WORK/encyclopedia/" "${DEST}data/encyclopedia/" | grep -E 'Number of (regular )?files transferred|Total transferred file size' || true
       fi
       # THE STUDIO IS A THIRD ADDRESS IN THE ROOM, AND ONLY A PAGE (O-342,
       # Howell 2026-11-25, of the word on the address: "Whenever I try to save

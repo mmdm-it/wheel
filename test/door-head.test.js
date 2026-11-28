@@ -87,3 +87,16 @@ test('the ground script knows the public doors by address', () => {
   assert.ok(ground.indexOf("p.indexOf('/studio/') >= 0) v = 'bible'") > 0 && ground.indexOf("'/studio/'") < ground.indexOf('doors['), 'the studio before address');
   assert.ok(ground.indexOf('doors[') < ground.indexOf("localStorage.getItem('wheel:last-volume')"), 'address before memory');
 });
+
+// O-346 (Howell 2026-11-28: "Send the Encyclopedia draft to the screening
+// room only"): an unread draft never reaches a public door.
+test('the encyclopedia draft leaves by the room\'s door and no other', () => {
+  const sh = read('scripts/mirror-room.sh');
+  const named = sh.split('\n').filter(l => !/^\s*#/.test(l) && /data\/encyclopedia/.test(l));
+  assert.ok(named.length >= 2, 'the mirror sends the draft');
+  const at = sh.indexOf('if [[ "$door" == bible ]]; then\n        node scripts/scrub-notes.mjs "data/encyclopedia/');
+  assert.ok(at > 0, 'the draft is sent inside a guard that names the room\'s door alone');
+  const block = sh.slice(at, sh.indexOf('\n      fi\n', at));
+  for (const l of named) assert.ok(block.includes(l.trim()), `outside the guard: ${l.trim()}`);
+  assert.doesNotMatch(sh, /deploy-pd-filter\.mjs data\/encyclopedia/, 'it is not passed through the gate that feeds the public door');
+});
