@@ -341,6 +341,12 @@ describe('the studio page (O-342)', () => {
     assert.deepEqual(r.doors.map(d => d.volume), [null, 'x']);
     assert.equal(portalRecord({ volume: 'x', config, root: built, loc, studio: 'three' }).studioVolume, null, 'an unbuilt volume opens nothing');
     assert.equal(r.studioBench.artBase, './data/x/assets/', 'the list is handed on with the address of its pictures');
+    // The waiting line is the list's, in the reader's tongue, and is lent with it (O-345).
+    const worded = { display_config: { landscape: { studio: { waiting: { default: 'In preparation', italian: 'In preparazione' }, volumes: built.display_config.landscape.studio.volumes } } } };
+    const w = portalRecord({ volume: 'x', config, root: worded, loc, studio: 'three', lang: 'italian' });
+    assert.equal(w.studioWaiting, 'In preparazione');
+    assert.equal(w.studioBench.waiting.italian, 'In preparazione');
+    assert.equal(r.studioWaiting, 'In preparation', 'English where the list has no line');
     // A volume with no list of its own is lent the keeper's, pictures and all.
     const bare = { display_config: {} };
     const lent = portalRecord({ volume: 'y', config: { assetBase: './data/y/', landscape: { mails: [] } }, root: bare, loc, studio: '1', bench: r.studioBench });

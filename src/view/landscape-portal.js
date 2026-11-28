@@ -329,7 +329,10 @@ export function portalRecord({ volume, config, root, lang = null, loc, table, su
     // chooses, turning the phone enters. Null where the volume is not built.
     studioVolume: opens(here),
     // What a volume lent this list needs to lend it on.
-    studioBench: { volumes: bench.volumes, site: bench.site || null, watermark: bench.watermark || null, artBase },
+    studioBench: { volumes: bench.volumes, site: bench.site || null, watermark: bench.watermark || null, waiting: bench.waiting || null, artBase },
+    // The line a volume not yet built shows upright, in the reader's tongue
+    // (O-345); the list's, with the English where it has none.
+    studioWaiting: (w => (typeof w === 'string' && w.trim() ? w.trim() : 'In preparation'))(pick(bench.waiting, lang)),
     emblem: { imageUrl: art(here.image), label: said(here), crest: true, tone: record.emblem?.tone || null, size: null },
     title: said(here),
     titleScale: 2,

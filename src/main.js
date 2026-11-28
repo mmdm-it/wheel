@@ -2270,7 +2270,10 @@ function applyLandscapePortal() {
   // language: a phone set to Turkish was shown its two links in Hebrew.
   // The phone's own tongue comes first wherever the page has words in it;
   // the edition's language answers only where it has none.
-  const lang = firstOfferedLanguage(phoneLanguages(), landscapeTongues(landscapeRoot)) || dimensionBridge.getSelection()?.language || null;
+  // In the studio the list of volumes speaks too, and it speaks every tongue
+  // the keeper's page does, whichever volume is showing it (O-345).
+  const lentTongues = studioWord(window.location) ? Object.keys(studioBenchLent()?.waiting || {}).filter(k => k !== 'default') : [];
+  const lang = firstOfferedLanguage(phoneLanguages(), [...new Set([...landscapeTongues(landscapeRoot), ...lentTongues])]) || dimensionBridge.getSelection()?.language || null;
   const record = portalRecord({ volume: currentVolumeId, config: volumeConfigs[currentVolumeId], root: landscapeRoot, lang, loc: window.location, subject: landscapeSubject(), studio: studioWord(window.location), bench: studioBenchLent(), copyright: phraseFor(copyrightWords) || copyrightShipped || document.getElementById('copyright-notice')?.textContent || null });
   if (!record) return;
   const key = JSON.stringify(record);
@@ -2321,7 +2324,7 @@ function keepStudioBench(record) {
     const bench = root?.display_config?.landscape?.studio;
     if (!bench || !Array.isArray(bench.volumes) || !bench.volumes.length) return;
     const base = root.display_config?.detail_sector?.logo_base_path || 'assets/';
-    studioBenchKept = { volumes: bench.volumes, site: bench.site || null, watermark: bench.watermark || null, artBase: `${shelf}${base}` };
+    studioBenchKept = { volumes: bench.volumes, site: bench.site || null, watermark: bench.watermark || null, waiting: bench.waiting || null, artBase: `${shelf}${base}` };
     try { window.sessionStorage.setItem(STUDIO_BENCH_KEY, JSON.stringify(studioBenchKept)); } catch (_) { /* kept for this page only */ }
     landscapeRendered = '';
     applyLandscapePortal();
@@ -2404,7 +2407,8 @@ function studioWaiting(on) {
   name.textContent = landscapeRecord.title || '';
   name.style.cssText = 'font-size:8vmin;line-height:1.15;';
   const line = document.createElement('div');
-  line.textContent = 'In preparation';   // English only, as the studio's other words are
+  line.textContent = landscapeRecord.studioWaiting || 'In preparation';
+  card.dir = landscapeRecord.dir || 'ltr';
   line.style.cssText = 'font-size:4.5vmin;opacity:0.7;';
   card.appendChild(name);
   card.appendChild(line);
